@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00a2xv884 Centre for Cellular Biology and Signalling, Zhejiang University-University of Edinburgh (ZJU-UoE) Institute Haining China
-2. https://ror.org/03e3kts03 Lifelong Health, South Australian Health & Medical Research Institute Adelaide Australia
-3. https://ror.org/01nrxwf90 University of Edinburgh Medical School, Biomedical Sciences, College of Medicine & Veterinary Medicine, University of Edinburgh Edinburgh United Kingdom
+1. Centre for Cellular Biology and Signalling, Zhejiang University-University of Edinburgh (ZJU-UoE) Institute Haining China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+2. Lifelong Health, South Australian Health & Medical Research Institute Adelaide Australia ([ROR:03e3kts03](https://ror.org/03e3kts03))
+3. University of Edinburgh Medical School, Biomedical Sciences, College of Medicine & Veterinary Medicine, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
 
 † Corresponding author
 
@@ -33,13 +33,21 @@ By combining the MS-CETSA method with multiple metabolic perturbations induced b
 
 ## Results
 
-## TPP identifies proteins responding to metabolic stresses
+### TPP identifies proteins responding to metabolic stresses
 
 To systematically identify alterations in thermal stability of proteins after metabolic perturbations, we treated 143B osteosarcoma cells, a common model system to study mitochondrial functionality, with several small-molecule inhibitors (Figure 1A). These treatments were selected to target oxidative phosphorylation (OxPhos complex (C)I=rotenone, CIII = antimycin A, CV = oligomycin, uncoupler CCCP), glucose uptake (2-deoxyglucose), mitochondrial division (Mdivi-1), or cholesterol synthesis (rosuvastatin). We also included the CDK4/6 inhibitor palbociclib as our positive control (Miettinen et al., 2018). For proteomics, we used an experimental strategy where samples treated at different temperatures are pooled (Gaetani et al., 2019), thereby compressing individual thermal melting curves into an area under the curve (AUC) quantity. We reasoned that treating intact cells with the drugs for only 30 min would allow us to observe rapid and direct effects related to metabolic flux and/or signaling related to mitochondrial dysfunction in the absence of major changes in protein expression levels. We lysed the drug-treated cells and heated the lysates at 12 different temperatures below and above the median proteome melting temperature (Tm), which is ~50°C in human cells (Miettinen et al., 2018; Jarzab et al., 2020). We pooled the 45–50°C and 51–56°C temperature samples separately and used a non-heated lysate as a reference point for thermal stabilization (Figure 1A). After removing heat-denatured proteins by centrifugation, the samples were labeled with tandem mass tags (TMT10) and analyzed by mass spectrometry.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/102852/elife-102852-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of thermal proteome profiling approach. Eight different drugs, including CDK4/6 inhibitor as the positive control, were used to target metabolism in 143B cells. After heating the samples at 12 different temperatures, temperatures below and above the global proteome melting temperature (50°C) were pooled, heat-denatured proteins removed my centrifugation and analyzed by mass spectrometry. Unheated (37°C) samples and DMSO solvent control were included. (B) Schematic showing the expected thermal denaturation curves for control and palbociclib-treated cells. The green and pink area between the curves shows the integral of the thermal shift detected as difference in CDK4 protein levels in the lower and higher temperature pool. (C) Histograms showing the observed CDK4 ranking in palbociclib-treated cells in the pools heated at different temperature ranges. The overall ranking was obtained using the analysis of independent differences (AID) multivariate analysis. (D) Venn diagram showing the overlap between thermally stabilized proteins with different drugs. A 5% false discovery rate was used to identify the hits. (E) Specificity of protein state alterations illustrated as AID scores (-log10pval) across different drug treatments for selected hits. Note the similarity between oligomycin and antimycin A treatments. (F) Validation of PEBP1 thermal stabilization by oligomycin. Western blot is representative from at least three experiments. (G) Integrated stress response induction after a 30 min treatment with 1 µM rotenone, antimycin A, CCCP, or oligomycin as well as 5 µM tunicamycin or 25 µM sodium arsenite.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/102852/elife-102852-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Ranking of oligomycin-induced protein state changes based on the analysis of independent differences (AID) score. Mitochondrial ATP synthase subunits are indicated with orange. (B) Effect of ATP synthase inhibitors oligomycin and bedaquiline on mitochondrial membrane potential measured as tetramethylrhodamine ethyl ester (TMRE) fluorescence. 1 µM oligomycin and 5 µM bedaquiline were used. For uncoupling, 0.5 µM BAM15 was used. Right panel: Quantification of the flow cytometry data for mitochondrial membrane potential (ΔΨm) normalized to DMSO control. Data shown in mean ± SD, n=3. ANOVA, followed by Tukey’s post hoc test. (C) Thermal shift assay using oligomycin and bedaquiline in 143B cells. (D) In vitro thermal shift assay with 1 µM purified recombinant PEBP1. Representative melting curves for DMSO control (blue) and the indicated concentrations of oligomycin are shown together with the ΔTm between DMSO and drug-treated sample from three technical replicates. The dot chart displays ΔTm from two different experiments. Note the increased fluorescence with higher oligomycin concentration, which may complicate the interpretation of this data. (E) Lysate cellular thermal shift assay (CETSA) of PEBP1 treated with 10 µM oligomycin and 10 µM ferrostatin1. (F) Integrated stress response (ISR) induction after a 4 hr treatment with the same drugs as in Figure 1G. (G) Schematic for chemical inhibition and activation of either PEBP1 function as RAF kinase inhibitor (left) or the ISR (right). The various compounds used throughout the manuscript are shown in blue with arrows indicating activation and bars inhibition. The four ISR kinases are indicated in orange.
+
 Our positive control, CDK4, was thermally stabilized upon binding of palbociclib, as expected (Miettinen et al., 2018; Figure 1B). CDK4, which has a Tm of ~45°C, ranked as the fifth most stabilized protein in the 45–50°C pool when comparing palbociclib-treated and control cells, while in the 51–56°C pool the stabilization was not quite as strong as expected (Figure 1C). Among the ~3700 proteins detected across all treatments, many proteins were identified as being thermally stabilized by one or more drugs, indicating overlap in the cellular responses to the different metabolic perturbations (Figure 1D). However, most of these changes are relatively small. To focus our analysis on the most significant and biologically relevant changes regardless of whether the Tm of each protein fell within the 45–50°C or 51–56°C temperature range, we aggregated the data from each protein into a single multivariate normal observation score using analysis of independent differences (AID; see Materials and methods, Supplementary file 1, table S1). This statistical analysis ranked the proteins into the most likely thermally shifted ones using a single number. For example, CDK4 was ranked as the third most stabilized protein in palbociclib-treated cells (Figure 1C, Supplementary file 1, table S1).
 
-## Mitochondrial ISR induction occurs concomitant with thermal stabilization of PEBP1
+### Mitochondrial ISR induction occurs concomitant with thermal stabilization of PEBP1
 
 Having validated our proteomics approach, we focused our analysis on the oligomycin treatment as this drug stabilized multiple subunits of the intended target, the mitochondrial ATP synthase (e.g. ATP5PF, Figure 1—figure supplement 1A). Other proteins affected by oligomycin included BANF1, which binds DNA in an ATP-dependent manner (Sridharan et al., 2019), and has also identified as an oligomycin stabilized protein in a previous MS-CETA experiment (Sun et al., 2019), as well as mtHSP10/HSPE1, a mitochondrial heat-shock protein, suggested to be an activator of OMA1, a stress-responsive mitochondrial protease (Yeung et al., 2023). The top hit in the oligomycin stabilized proteome was PEBP1, an abundant cytoplasmic protein in most human tissues (based on the ProteinAtlas database; Uhlén et al., 2015). PEBP1, ATP5PF, and HSPE1 were also thermally stabilized by antimycin A (Figure 1E), but not by the other drugs.
 
@@ -47,17 +55,37 @@ Western blot-based thermal shift assay validated thermal stabilization of PEBP1 
 
 Previous work has reported that oligomycin and antimycin are the most efficient electron transport chain targeting compounds in activating ISR target genes (Bao et al., 2016). A 30 min treatment with antimycin A or oligomycin that stabilized PEBP1 was also sufficient to induce eIF2α phosphorylation, the core event in the ISR (Pakos-Zebrucka et al., 2016; Figure 1G). Tunicamycin and sodium arsenite, used as positive controls, induced robust eIF2α phosphorylation. Rotenone increased eIF2α phosphorylation only after 4 hr while CCCP at the concentration used did not do so noticeably even at that time (Figure 1—figure supplement 1F), demonstrating that the mitochondrial ISR kinetics and intensity varies depending on the inducer (Condon et al., 2021; Mick et al., 2020). Therefore, this data suggested that stabilization of PEBP1 occurs concomitant with induction of the mitochondrial ISR (see Figure 1—figure supplement 1G for summary of drugs used to target PEBP1 and ISR in this manuscript).
 
-## Loss of PEBP1 attenuates mitochondrial ISR gene expression in cultured cells and in vivo
+### Loss of PEBP1 attenuates mitochondrial ISR gene expression in cultured cells and in vivo
 
 PEBP1 has not been previously linked to mitochondrial dysfunction in mammalian cells. We performed RNA sequencing (RNAseq) with non-targeting sgRNA control KO and PEBP1 sgRNA KO cells treated with and without oligomycin for 6 hr. The first dimension of the principal component analysis (PCA) separated the control KO and PEBP1 KO cells (Figure 2A), PEBP1 being one of the top genes with negative PCA loadings (Figure 2—figure supplement 1A). The transcriptional response to oligomycin observed in control KO cells was attenuated in the PEBP1 KO cells as seen collectively in the second dimension of the PCA plot (y axis) and by single genes in a heatmap and a volcano plot (Figure 2B and C). Top PCA loadings (Figure 2—figure supplement 1A) and the volcano plot (Figure 2C) indicated that oligomycin induced the ISR in control KO cells as expected (Pakos-Zebrucka et al., 2016; Condon et al., 2021; Fessler et al., 2020; Guo et al., 2020; Mick et al., 2020; Quirós et al., 2017; Ryan et al., 2021).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/102852/elife-102852-fig2-v1.jpg)
+
+**Figure 2.:** (A) PEBP1 expression in control and PEBP1 knockout (KO) cells as well as principal component analysis of RNAseq samples treated with and without 1 μm oligomycin for 6 hr. Three replicates were used for each group. (B) Heatmap of significantly changing genes in RNAseq. (C) Comparison of oligomycin-induced gene expression effects using volcano plots of Ctrl and PEBP1 KO cells. ISR genes are highlighted in red. (D) Gene ontology analysis of oligomycin-induced responses in control KO cells (blue) and PEBP1 KO cell (red). (E) Comparison of PEBP1 and mitochondrial ISR signaling component (ATF4, DELE1, HRI) expression in single-cell RNAseq from liver based on publicly available UMAP analysis from ProteinAtlas. For the names of the cell types in other clusters, see here. (F) ISR gene expression from public RNAseq data of bone marrow macrophages isolated from WT and Pebp1 KO mice. Two unfolded protein response (UPR) genes Ern1 and Atf6 are also shown. HRI, heme-regulated inhibitor kinase.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/102852/elife-102852-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Top principal component analysis (PCA) loadings showing the individual genes with largest influence on PCA1 and PCA2 dimensions in RPE1 PEBP1 KO cell data treated with oligomycin. PEBP1 and known ISR genes are highlighted in red. (B) Enrichment of oxidative phosphorylation genes by gene set enrichment analysis (GSEA) in bone marrow macrophage RNAseq data.
 
 While known ISR-induced genes including TRIB3, ASNS, ATF4, CEBPG, DDIT3/CHOP, and DDIT4 were upregulated by oligomycin in control cells, PEBP1 KO cells displayed a highly attenuated ISR response at the RNA level. In control cells, gene ontology (GO) analysis indicated enrichment of groups such as ‘Response of EIF2AK1 (HRI) to heme deficiency’ and ‘Eukaryotic Translation Initiation’, consistent with activation of HRI-mediated mitochondrial ISR. These GO groups were not enriched in PEBP1 KO cells (Figure 2D). In contrast, thioredoxin interacting protein (TXNIP) as well as genes involved in cholesterol biosynthesis (e.g. INSIG1, HMGCS1), which are unrelated to ISR and known to be repressed by oligomycin and other OxPhos inhibitors (Mick et al., 2020), remained downregulated in both control and PEBP1 KO cells (Figure 2C). Therefore, the ability of PEBP1 KO to attenuate expression of ISR genes but not cholesterol biosynthesis genes suggested that PEBP1 might be specifically involved in ISR signaling.
 
 Consistent with the possibility of PEBP1 being involved in ISR signaling, single-cell RNAseq data from ProteinAtlas database suggested that PEBP1 is expressed similarly to ATF4, HRI, and DELE1 in the liver, particularly in hepatocytes, plasma cells, and Kupffer cells (Figure 2E). We also analyzed a publicly available RNAseq dataset (GSE264092) of bone marrow macrophages from WT and Pebp1 KO mice. Bone marrow is a naturally occurring low-oxygen environment (Spencer et al., 2014) where mitochondrial respiration may become compromised. Gene set enrichment analysis showed that there was a tendency of OxPhos genes to be downregulated in Pebp1 KO bone marrow macrophages (Figure 2—figure supplement 1B). The cells from Pebp1 KO animals displayed reduced expression of common ISR genes (Figure 2F), while there was a mild upregulation of unfolded protein response genes Ern1 (Ire1α) and Atf6. This gene expression data therefore suggests that the reduced expression of common ISR genes is less likely to be mediated by changes in PERK, the third UPR arm, and more likely due to suppression of ISR by Pebp1 KO in vivo.
 
-## PEBP1 amplifies the intensity of mitochondrial but not ER stress signaling
+### PEBP1 amplifies the intensity of mitochondrial but not ER stress signaling
 
 Western blotting indicated reduced phosphorylation of eIF2α in RPE1 cells lacking PEBP1 (Figure 3A). The reduction of eIF2α phosphorylation by loss of PEBP1 was observed regardless of the approach used to activate mitochondrial ISR by targeting ATP synthase as shown by the effects of treatments with oligomycin, bedaquiline, and ATP5F1A siRNA (Figure 3—figure supplement 1). Treatment of cells with the MEK inhibitor trametinib did not rescue eIF2α phosphorylation (Figure 3A) or ISR target gene activation (Figure 3—figure supplement 2A and B) although PEBP1 KO cells displayed increased ERK activation consistent with the role of PEBP1 as a RAF kinase inhibitor. Therefore, PEBP1 affects the mitochondrial ISR independently of its role in the RAF/MEK/ERK pathway (Yeung et al., 1999).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/102852/elife-102852-fig3-v1.jpg)
+
+**Figure 3.:** (A) Western blot analysis of integrated stress response (ISR) activation in RPE1 control and PEBP1 knockout (KO) cells treated with and without MEK inhibitor trametinib. (B) ATF4 luciferase reporter assay in PEBP1 KO cells. Cells were transfected with the dual luciferase reporter (upper panel) in the presence or absence of the indicated genes (either co-expressing with GFP or HRI). Data shown in mean ± SD, n=3. Statistical analysis by ANOVA followed by Tukey’s post hoc test. (C) Effect of PEBP1 on protein synthesis assayed by incorporation of a methionine analog, L-homopropargylglycine (HPG), followed by a Click-reaction with fluorescent Azide-647. Cells were treated with 1 µM cycloheximide (CHX), 5 µM oligomycin, or 5 µM tunicamycin to inhibit protein synthesis. Right panel shows quantification of oligomycin effect from three biological replicates (individual experiments highlighted with dot color). (D) Time-course analysis of ISR activation in RPE1 control and PEBP1 KO cells treated with 1 µM oligomycin. (E) Time-course of cells treated with 1 mM deferoxamine mesylate (DFOM). (F) Time-course of cells treated with 1 µM tunicamycin. The specific time points in panels D–F are 0, 2, 4, 8, 16, and 24 hr. Western blots are representative examples from two to three experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/102852/elife-102852-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Western blot (WB) analysis of cells treated with control and two different PEBP1 siRNA in RPE1 cells. (B) WB analysis of control and PEBP1 KO cells treated with oligomycin and bedaquiline at the concentrations indicated. (C) WB analysis of bedaquiline-induced eukaryotic translation initiation factor 2α (eIF2α) phosphorylation using KO cell lines generated with two independent sgRNAs. (D) WB analysis of eIF2α phosphorylation in response to ATP synthase subunit ATP5F1A knockdown.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/102852/elife-102852-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) CHOP/DDIT3 expression by qPCR in trametinib-treated control and PEBP1 knockout (KO) cells. (B) DDIT4 expression by qPCR in trametinib-treated control and PEBP1 KO cells. Data shown for panels C and D are mean ± SD, n=3. (C) Dose-dependent activation of ISR by oligomycin (0, 0.1, 0.25, 0.5, 1, and 2 µM final conc.) in RPE1 control and PEBP1 KO cells. (D) Dose-dependent activation of ISR by the iron chelator deferoxamine mesylate (DFOM) (0, 0.05, 0.1, 0.25, 0.5, and 1 mM final conc). (E) Time-course (0, 2, 4, 8, 16, and 24 hr) of cells treated with 0.5 µM rotenone. (F) Dose-dependent induction of ISR with poly(I:C) for 4 hr. The specific concentrations used were 0, 1, 5, 10, 25, and 50 µg/ml. (G) Dose-dependent activation of ISR with tunicamycin (0, 0.25, 0.5, 1, 2.5, and 5 µM final conc.) for 4 hr. (H) Effect of 20 µM Sephin-1 (S) and 10 µM Raphin-1 (R) phosphatase inhibitors on oligomycin-induced eukaryotic translation initiation factor 2α (eIF2α) phosphorylation in control, PEBP1, and heme-regulated inhibitor (HRI) KO cells. Phosphatase inhibitors were added 1 hr before adding 1 µM oligomycin, and ISR was induced for 4 hr before cell lysis. All experiments were repeated two to three times with representative data shown.
 
 We next tested if expression of PEBP1 amplifies ISR signaling by using a luciferase-based ATF4 reporter assay (Figure 3B). Since PEBP1 is an abundant protein, we performed these experiments in PEBP1 KO cells as its overexpression in WT cells leads to only a minor increase in total cellular PEBP1 levels. This assay demonstrated that although PEBP1 is not necessary for HRI-mediated ATF4 reporter activation, it can amplify this HRI-induced signal. In addition, PEBP1 itself is not sufficient to induce reporter activity in the absence of HRI co-expression indicating that it acts as an auxiliary protein in the ISR signal transduction. PEBP1 S153D mutant, which mimics the PKC-catalyzed phosphorylation event that converts PEBP1 from a RAF inhibitor to an inhibitor of G protein-coupled receptor kinase 2 (GRK2) inhibitor (Skinner et al., 2017), slightly increased reporter activity, while P112E mutant which abolishes the interaction with lipooxygenases in ferroptosis (Wenzel et al., 2017) activated the reporter similarly to WT PEBP1. As a control, DELE1 lacking the mitochondria targeting sequence (DELE1-ΔMTS) which can directly interact with HRI in the cytoplasm to activate ISR (Fessler et al., 2020) had similar effect to WT PEBP1.
 
@@ -65,21 +93,29 @@ Since ISR activation involves eIF2α phosphorylation and consequent downregulati
 
 The intensity and the duration of the stress determine the adaptive and cell death inducing outcomes of the ISR (Batjargal et al., 2023). To test whether PEBP1 affects the amplitude or the kinetics of the stress response, we performed a time-course analysis. The phosphorylation of eIF2α induced by oligomycin was attenuated in PEBP1 KO cells at all time points (Figure 3D) and concentrations (Figure 3—figure supplement 2C), indicating that PEBP1 alters the amplitude; however, it did not affect the kinetics or the duration of mitochondrial stress signaling. Since the dynamic range of P-eIF2α immunoblotting is limited (Krzyzosiak et al., 2022), we also checked expression of ATF4 and its transcriptional target CHOP, both of which were increased by oligomycin in control, but not in PEBP1 KO cells (Figure 3D). Phosphorylation of eIF2α induced by deferoxamine mesylate (DFOM), which chelates iron and induces the ISR via the OMA1-DELE1-HRI pathway (Sekine et al., 2023), was also attenuated in PEBP1 KO cells (Figure 3E and Figure 3—figure supplement 2D). Similar results were obtained by stress induced by complex I inhibitor rotenone as well as viral nucleic acid mimicking poly(I:C), which activates ISR via the kinase PKR (Figure 3—figure supplement 2E and F). However, consistent with the protein synthesis assay, the phosphorylation of eIF2α induced by tunicamycin, a strong inducer of ER stress, was not prevented in PEBP1 KO cells (Figure 3F, Figure 3—figure supplement 2G). Note that in PEBP1 KO cells there was a small increase in the expression of the stress-inducible eIF2α phosphatase subunit GADD34 (PPP1R15A) as well as the constitutively expressed PPP1R15B subunit. However, this increase in phosphatase levels could not explain the reduction of eIF2α phosphorylation in PEBP1 KO cells as Sephin-1 and Raphin-1, inhibitors of PPP1R15A and PPP1R15B, respectively, did not rescue eIF2α phosphorylation (Figure 3—figure supplement 2H). Overall, these results indicate that PEBP1 is involved in amplifying the ISR to a variety of stimuli, particularly those that induce mitochondrial dysfunction.
 
-## Loss of PEBP1 interferes with mitochondrial stress signaling without affecting OMA1 or DELE1
+### Loss of PEBP1 interferes with mitochondrial stress signaling without affecting OMA1 or DELE1
 
 We next sought to understand how PEBP1 is linked to mito-ISR signaling mediated by the OMA1-DELE1-HRI pathway (Fessler et al., 2020; Guo et al., 2020). Activation of OMA1 leads to mitochondrial fragmentation (Baker et al., 2014). Oligomycin fragmented mitochondria in both control and PEBP1 KO cells (Figure 4A). The mitochondrial oxygen consumption rate (OCR) was also reduced after oligomycin addition in both control and PEBP1 KO cells. Compared to control cells, we observed only a minor reduction in basal respiration and oligomycin-sensitive ATP production in PEBP1 KO cells (Figure 4B and C). Mitochondrial coupling efficiency and the respiratory control ratio were also similar to control cells. There was no increase in the extracellular acidification rate (ECAR), a parameter used to measure glycolytic activity. Overall, this data indicates that PEBP1 does not have a major effect on metabolic activity in these cells.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/102852/elife-102852-fig4-v1.jpg)
 
-**Figure 4.:** (A) A representative example of mitochondrial fragmentation in 143B cells treated with or without PEBP1 siRNA and 1 µM oligomycin. Mitochondria are shown in yellow, DNA in blue. (B) Seahorse oxygen consumption rate (OCR) and extracellular acidification rate (ECAR) analysis in RPE1 knockout (KO) cells. (C) Quantification of the respiratory parameters from the Seahorse analysis. Data shown in B and C is mean ± SD, n=7. The p-value is from a two-sided t test. (D) Mitochondrial membrane potential after treating control and PEBP1 silenced 143B cells with 1 µM oligomycin or oligomycin with 0.5 µM uncoupler BAM15. (E) Schematic of mitochondrial stress signal transduction. (F) Activation of DELE1-HA in 143B endogenous knock-in cells treated with PEBP1 and DELE1 siRNAs. The long uncleaved form (DELE1L-HA) and the proteolytically processed short form (DELE1S-HA) are indicated.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) A representative example of mitochondrial fragmentation in 143B cells treated with or without PEBP1 siRNA and 1 µM oligomycin. Mitochondria are shown in yellow, DNA in blue. (B) Seahorse oxygen consumption rate (OCR) and extracellular acidification rate (ECAR) analysis in RPE1 knockout (KO) cells. (C) Quantification of the respiratory parameters from the Seahorse analysis. Data shown in B and C is mean ± SD, n=7. The p-value is from a two-sided t test. (D) Mitochondrial membrane potential after treating control and PEBP1 silenced 143B cells with 1 µM oligomycin or oligomycin with 0.5 µM uncoupler BAM15. (E) Schematic of mitochondrial stress signal transduction. (F) Activation of DELE1-HA in 143B endogenous knock-in cells treated with PEBP1 and DELE1 siRNAs. The long uncleaved form (DELE1L-HA) and the proteolytically processed short form (DELE1S-HA) are indicated.
 
 Previous work identified that mitochondrial hyperpolarization mediates oligomycin-induced ISR signaling (Mick et al., 2020). TMRE staining confirmed that mitochondrial membrane potential was increased with oligomycin treatment, but this hyperpolarization was not reduced by PEBP1 knockdown (Figure 4D), while the uncoupler BAM15 readily depolarized mitochondria. We then checked whether PEBP1 influences activation of DELE1 (Figure 4E). Upon mitochondrial stress, OMA1 proteolytically cleaves and activates mitochondria-localized DELE1. DELE1-HA knock-in RPE1 cells showed the expected cleavage of DELE1 in response to oligomycin, but this cleavage was not influenced by PEBP1 knockdown (Figure 4F).
 
-## Phosphorylation modulates interaction of PEBP1 with eIF2α
+### Phosphorylation modulates interaction of PEBP1 with eIF2α
 
 PEBP1 is thought to act as a scaffold protein for regulating cellular signaling (Wenzel et al., 2017; Burack and Shaw, 2000). Scaffolds are typically used for spatial organization of signaling components to achieve efficient and specific signal transduction (Burack and Shaw, 2000; Good et al., 2011). For example, activation of the eIF2α kinase GCN2 requires GCN1 and GCN20 as accessory proteins (Wang and Proud, 2022) and these proteins can be considered as scaffolds. It was also recently suggested that DELE1 oligomerization could serve as a scaffold for HRI activation (Yang et al., 2023).
 
 Scaffold proteins typically function either stoichiometrically (Heinrich et al., 2002; Levchenko et al., 2000) or in excess relative to the partner kinase to allow signal amplification (Witzel et al., 2012). Using data from mass spectrometry-based quantification in HeLa cells (Itzhak et al., 2016), roughly equimolar concentrations of PEBP1 and eIF2α were observed. Instead, PEBP1 is ~10–1000 times more abundant than any of the ISR kinases and ~6000 times more abundant than DELE1 in HeLa cells (Figure 5A). Publicly available spatial transcriptomics data (Chen et al., 2022) show that PEBP1 mRNA is highly expressed in most if not all mouse tissues, particularly in the brain (Figure 5—figure supplement 1A). Given the abundances of the mitochondrial ISR signaling components and the observed reduction in eIF2α phosphorylation in PEBP1 KO cells, we reasoned that among the mitochondrial ISR signaling components, PEBP1 might most likely interact with eIF2α. However, co-immunoprecipitation assays failed to show an interaction between these proteins (data not shown). Since many protein interactions may be too weak or transient for detection by co-immunoprecipitation assay, we used NanoBiT luminescence complementation assay where a pair of interacting proteins brings the large (LgBiT) and small (SmBiT) luciferase fragments together to catalyze bioluminescence (Dixon et al., 2016). HEK293T cells expressing PEBP1-LgBiT displayed luminescence when co-transfected with eIF2α-SmBiT but not with an empty SmBiT vector (Figure 5B). Phorbol ester (PMA) treatment, which leads to phosphorylation of PEBP1 at Ser153, enhanced luminescence in cells transfected with WT PEBP1, but not in cells transfected with a non-phosphorylatable S153A PEBP1. This suggested a specific interaction between PEBP1-eIF2α which is enhanced by PEBP1-S153 phosphorylation. This data is consistent with the modest increase of ISR signaling by PEBP1 S153D in the ATF4 reporter assay. As a control, WB analysis demonstrated S153 phosphorylation and that expression levels of the PEBP1 and eIF2α remained unchanged by the PMA treatment (Figure 5B). The phosphomimetic S153D PEBP1 mutant also displayed an increased interaction with eIF2α further supporting a specific interaction between PEBP1 and eIF2α (Figure 5—figure supplement 1B). While these point mutations suggested specificity, we wanted to further demonstrate the effect of PEBP1 S153 phosphorylation on the interaction between PEBP1 and eIF2α. We therefore monitored bioluminescence changes in 5 min intervals upon drug-induced phosphorylation (Figure 5C). PMA treatment of cells transfected with WT PEBP1 but not with the S153A mutant displayed increased luminescence (Figure 5D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/102852/elife-102852-fig5-v1.jpg)
+
+**Figure 5.:** (A) Protein concentrations for PEBP1 and integrated stress response (ISR) components in HeLa cells based on Itzhak et al., 2016. Note the log10 scale. (B) Nanobit interaction assay for PEBP1 and eIF2α in 293T cells. Cells were transfected with the indicated constructs; after 24 hr, cells were treated with and without 50 nM PMA for 4 hr before adding luciferase substrate. Right panel shows the expression levels in cells transfected with WT and S153A PEBP1-LgBiT. Data is representative of three independent biological experiments. (C) Schematic of the real-time interaction monitoring. (D) Real-time analysis of PEBP1 phosphorylation-dependent interaction with eIF2α using WT and S153A PEBP1. Cells were treated with 50 nM PMA. The red and blue traces show data from individual wells, n=3. (E) Effect of eIF2α-S51 mutations on PEBP1-eIF2α interaction. Western blot (WB) (right) shows expression of endogenous and exogenous eIF2α and PEBP1 levels. (F) Real-time analysis of PEBP1 interaction with WT and S51A eIF2α. Cells were treated with 25 µM sodium arsenite. Data is representative of three independent biological experiments with three replicate wells in each experiment. (G) AlphaFold prediction of the putative complex structure between PEBP1 and eIF2α. The KGYID kinase recognition motif and eIF2α-Ser51 location are indicated. (G) Schematic of PEBP1 in mediating mitochondrial ISR amplification. For panels B and E, data shown is mean ± SD, n=3. Statistical analysis by ANOVA, followed by Tukey’s post hoc test. For panels D and F, area under curves were calculated and significance tested with two-sided t test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/102852/elife-102852-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Expression of Pebp1, integrated stress response (ISR) components, and the two ribosomal subunits (Rps6. Rpl10) mRNAs in the mouse brain (E16.5) based on Chen et al., 2022. (B) Nanobit interaction assay for PEBP1 and eIF2α in 293T cells. Cells were transfected with the indicated constructs. Luminescence was measured after 24 hr. Right panel shows the expression levels in cells transfected with WT and S153D PEBP1-LgBiT. Data shown is mean ± SD, n=3. Statistical analysis by ANOVA, followed by Tukey’s post hoc test.
 
 We then tested if phosphorylation of S51 in eIF2α affects the interaction between PEBP1 and eIF2α. A phosphomimic S51D but not an S51A point mutant abolished luminescence signal suggesting that the interaction between PEBP1 and eIF2α could be terminated by S51 phosphorylation of eIF2α (Figure 5E). However, this low luminescence signal was explained by loss of PEBP1-LgBiT expression as S51D eIF2α-SmBiT expression likely mimicked ISR shutting down protein synthesis. To resolve this, we performed real-time assay of PEBP1 binding to WT and S51A mutant eIF2α after inducing ISR-mediated eIF2α phosphorylation with sodium arsenite. Compared to DMSO-treated controls, arsenite treatment decreased the luminescence in cells expressing PEBP1 with WT eIF2α but not with the S51A mutant (Figure 5F). The lack of effect in the S51A mutant suggests that lack of S51 phosphorylation of eIF2α is indeed critical for weaking the interaction between PEBP1 and eIF2α. The S51 phosphorylation-dependent loss of protein-protein interaction is consistent with thermal stabilization of PEBP1 upon mitochondrial stress as proteins in larger complexes are generally less thermally stable. Finally, AlphaFold-Multimer analysis predicted that PEBP1 may bind eIF2α close to the S51 and the KGYID kinase recognition motif of eIF2α (Dey et al., 2005; Figure 5G), suggesting a structural basis for how PEBP1 could influence the phosphorylation of eIF2α. Taken together, these results indicate that PEBP1 acts as an amplifier of the mitochondrial ISR by interacting with eIF2α (Figure 5H).
 
@@ -99,87 +135,472 @@ In conclusion, by identifying PEBP1 as an amplifier of mitochondrial stress sign
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 Human cell lines 143B (CRL-8303; RRID:CVCL_2270) and hTERT RPE-1 (CRL-4000; RRID:CVCL_4388) were obtained from ATCC. Human HEK293T (RRID:CVCL_0063) cells were from GeneCopoeia, Guangzhou, China. 143B, RPE1, and HEK293T cells were cultured in 10% FBS (Cat.No. VIS368948, VisTech) in DMEM containing pyruvate and L-alanyl-L-glutamine (FI101-01, Transgenbiotech, Beijing). All cell lines were cultured in the presence of penicillin and streptomycin and tested negative for mycoplasma.
 
-## siRNA silencing
+### siRNA silencing
 
 For siRNA knockdown, 143B or RPE1 cells (50,000 cells/ml) were plated in six-well plates (2 ml/well) the day before transfection. 25 nM SiRNA was transfected using Lipofectamine 3000 (L3000-015, Thermo Fisher) prepared in OptiMEM medium (Thermo Fisher). After 48 hr, cells (60,000 cells/ml) were reseeded into six-well plates (2 ml/well) for drug treatment. The following sequences were synthesized by Tsingke (Beijing) and used for the experiments. A proprietary non-targeting siRNA (Cat.No. TSGXS101) from Tsingke was used as a negative control.
 
-## Oligonucleotides
+### Oligonucleotides
 
 siRNA sequences:
 
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Forward primer sequence (5'- 3')</th>
+      <th>Reverse primer sequence (5'-3')</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>siDELE1-1</td>
+      <td>CAGCGACCUGACAGUUACA(dT)(dT)</td>
+      <td>UGUAACUGUCAGGUCGCUG(dT)(dT)</td>
+    </tr>
+    <tr>
+      <td>siPEBP1-1</td>
+      <td>GCACAGUCCUCUCCGAUUA(dT)(dT)</td>
+      <td>UAAUCGGAGAGGACUGUGC(dT)(dT)</td>
+    </tr>
+    <tr>
+      <td>siPEBP1-2</td>
+      <td>GAUUCAGGGAAGCUCUACA(dT)(dT)</td>
+      <td>UGUAGAGCUUCCCUGAAUC(dT)(dT)</td>
+    </tr>
+    <tr>
+      <td>siATP5F1A-1</td>
+      <td>GAUCAUCUAUGACGACUUA(dT)(dT)</td>
+      <td>UAAGUCGUCAUAGAUGAUC(dT)(dT)</td>
+    </tr>
+  </tbody>
+</table>
+
 Sequences for generating KO cell lines:
+
+<table>
+  <tbody>
+    <tr>
+      <td>PEBP1 KO sgRNA1</td>
+      <td>GCATGTCACCTACGCCGGGGCGG</td>
+    </tr>
+    <tr>
+      <td>PEBP1 KO sgRNA2</td>
+      <td>CCCGGATGCTCCCAGCAGGAAGG</td>
+    </tr>
+    <tr>
+      <td>Non-targeting control sgRNA</td>
+      <td>TGAGCATTCGTAGCCCAGCA</td>
+    </tr>
+  </tbody>
+</table>
 
 Sequences for endogenous HA tagging of DELE1:
 
+<table>
+  <tbody>
+    <tr>
+      <td>DELE1 KI sgRNA</td>
+      <td>GAAAGGAGTGTTGTAAGACTAGG</td>
+    </tr>
+    <tr>
+      <td>ATP1A1 sgRNA</td>
+      <td>GAGTTCTGTAATTCAGCATA</td>
+    </tr>
+  </tbody>
+</table>
+
 The qRT-PCR primers used were the following:
 
-## CRISPR/Cas9
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward primer sequence (5'- 3')</th>
+      <th>Reverse primer sequence (5'-3')</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DDIT4</td>
+      <td>TGAGGATGAACACTTGTGTGC</td>
+      <td>CCAACTGGCTAGGCATCAGC</td>
+    </tr>
+    <tr>
+      <td>DDIT3</td>
+      <td>GGAAACAGAGTGGTCATTCCC</td>
+      <td>CTGCTTGAGCCGTTCATTCTC</td>
+    </tr>
+    <tr>
+      <td>β-Actin</td>
+      <td>CACCATTGGCAATGAGCGGTTC</td>
+      <td>AGGTCTTTGCGGATGTCCACGT</td>
+    </tr>
+  </tbody>
+</table>
+
+### CRISPR/Cas9
 
 KO cell lines were generated by transfecting RPE1 cells with the plasmid pLentiCRISPRV2 (a gift from Feng Zhang, Addgene, #52961; RRID:Addgene_52961) containing the sgRNAs. Puromycin selection was started 24 hr after transfection and continued for 7 days after which the selection medium was replaced with normal culture medium, and the cells cultured for 2–3 days before diluting ~1 cell/100 µl in a 96-well plate. Wells with single clones were expanded and sgRNA target region sequenced. Western blotting was used to confirm the KO.
 
 To generate DELE1 HA knock-in cells, a combination of three different plasmids were electroporated using the Neon electroporation system (Thermo Fisher) as follows: 10 µg eSpCas9(1.1)_No_FLAG_ATP1A1_G3_Dual_sgRNA (a gift from Yannick Doyon, Addgene, #86613; RRID:Addgene_86613) with the guide RNA specific for the target gene and ATP1A1, 10 µg pBM16A-backbone with a glycine and serine linker and 3×HA tag, flanked on either side by the homology arms mapping to around 250 bp upstream and downstream of the stop codon of the targeted gene and 10 µg pMK-ATP1A1_Q118RN129D plasmid as the selection marker. Electroporation was performed at a voltage of 1400 V with 1 pulse, 30 ms width on 5 million cells in resuspension buffer R for a 100 µL Neon tip. After electroporation, the cells were cultured for 3 days after which 100 µM ouabain (TargetMol) was added for 5 days. Single-cell clones were obtained by limiting dilution and clones analyzed by PCR and Sanger sequencing.
 
-## ATF4 reporter assay
+### ATF4 reporter assay
 
 A 363 bp fragment of the ATF4 5’ untranslated region (sequence TTTCTACTTTGCC…TTTGGGGGCTGA) was cloned before firefly luciferase driven by CMV promoter in pEZX-FR01 plasmid (Genecopoeia). For transfections, 50 ng ATF4 reporter+30 ng Flag-HRI or GFP-Flag+70 ng untagged PEBP1, GFP-Flag, or DELE1-ΔMTS overexpression plasmids were mixed with 0.15 µl Plus Reagent and 0.3 µl Lipofectamine LTX (Thermo Fisher) in OptiMEM medium and added to each well plated with 12,000 PEBP1 KO cells/well the day before. After 24 hr, dual luciferase assay was performed using Dual-Lumi reagents (RG088M, Beyotime, China). Luminescence values were normalized by dividing firefly luminescence values with Renilla luciferase signal and setting ATF4 reporter activity co-transfected with GFP as 1.
 
-## NanoBiT protein interaction assay
+### NanoBiT protein interaction assay
 
 Full-length ORFs of PEBP1 and EIF2S1 (eIF2α) were amplified from RPE1 cDNA, cloned into pcDNA3.1+vector and tagged C-terminally with SmBiT and LgBiT (Dixon et al., 2016), respectively. The LgBiT was synthesized at SynbioB (Tianjin, China). Point mutations were generated by standard site-directed mutagenesis and validated by sequencing. For transfection, 293T cells (180,000 cells/ml) were plated in white 96-well tissue culture plates (Biosharp, BS-MP-96W) in a total volume of 100 µl/well. The next day, 50 ng SmBiT and 50 ng of LgBiT expression constructs were mixed with 0.4 µl of 1 mg/ml polyethylenimine (PEI, Cat.No. 408727, Sigma-Aldrich) and added to each well. After 24 hr, cells were either left untreated or treated as indicated. Finally, 0.5 µl Nano-Glo Vivazine Live Cell substrate (Promega, N2581) diluted in a total volume of 10 µl DMEM was added to each well and luminescence measured with Spark Multimode Microplate Reader (Tecan).
 
 For the real-time monitoring, Nano-Glo Vivazine Live Cell substrate was added in 1× final concentration in 90 µl complete medium supplemented with 25 mM HEPES, pH 7.3. Cells were incubated for 30–45 min at 37°C, before adding the drugs in 10 µl volume. Luminescence was monitored with 5 min interval at 37°C using SpectraMax iD5 (Molecular Devices). Data was normalized to the initial luminescence value after adding the drugs.
 
-## Chemical compounds
+### Chemical compounds
 
 The following small molecules were used. The concentrations used are indicated separately for each data figure.
 
-## MS-CETSA/TPP
+<table>
+  <thead>
+    <tr>
+      <th>Compound</th>
+      <th>Supplier</th>
+      <th>Catalogue number</th>
+      <th>CAS number</th>
+      <th>Used for</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Oligomycin A</td>
+      <td>SelleckChem</td>
+      <td>S1478</td>
+      <td>579-13-5</td>
+      <td>Complex V inhibition</td>
+    </tr>
+    <tr>
+      <td>Bedaquiline</td>
+      <td>Aladdin</td>
+      <td>B413184</td>
+      <td>845533-86-0</td>
+      <td>Complex V inhibition</td>
+    </tr>
+    <tr>
+      <td>Antimycin A</td>
+      <td>Abcam</td>
+      <td>AB141904</td>
+      <td>1397-94-0</td>
+      <td>Complex III inhibition</td>
+    </tr>
+    <tr>
+      <td>Rotenone</td>
+      <td>Solarbio</td>
+      <td>R8130</td>
+      <td>83-79-4</td>
+      <td>Complex I inhibition</td>
+    </tr>
+    <tr>
+      <td>2-Deoxy-D-glucose</td>
+      <td>Macklin</td>
+      <td>D807272</td>
+      <td>154-17-6</td>
+      <td>Glycolysis inhibition</td>
+    </tr>
+    <tr>
+      <td>CCCP</td>
+      <td>Solarbio</td>
+      <td>C6700</td>
+      <td>555-60-2</td>
+      <td>ETC uncoupler</td>
+    </tr>
+    <tr>
+      <td>FCCP</td>
+      <td>TargetMol</td>
+      <td>T6834</td>
+      <td>370-86-5</td>
+      <td>ETC uncoupler</td>
+    </tr>
+    <tr>
+      <td>Rosuvastatin</td>
+      <td>Solarbio</td>
+      <td>IR0150</td>
+      <td>147098-20-2</td>
+      <td>Inhibitor of cholesterol synthesis</td>
+    </tr>
+    <tr>
+      <td>Mdivi-1</td>
+      <td>Beyotime</td>
+      <td>SC8028</td>
+      <td>338967-87-6</td>
+      <td>Inhibitor of mitochondrial division</td>
+    </tr>
+    <tr>
+      <td>PD 0332991 isethionate - Palbociclib</td>
+      <td>Sigma-Aldrich</td>
+      <td>PZ0199</td>
+      <td>827022-33-3</td>
+      <td>Cdk4/6 inhibitor used as positive control for MS-CETSA</td>
+    </tr>
+    <tr>
+      <td>Tunicamycin</td>
+      <td>Cell Signaling Technology</td>
+      <td>12819s</td>
+      <td>11089-65-9</td>
+      <td>Induces ER stress and eIF2a phosphorylation via PERK kinase</td>
+    </tr>
+    <tr>
+      <td>Puromycin</td>
+      <td>BBI-Life Sciences</td>
+      <td>A610593-0026</td>
+      <td>58-58-2</td>
+      <td>Used for puromycin selection for stable cell lines</td>
+    </tr>
+    <tr>
+      <td>BAM15</td>
+      <td>MedChemExpress</td>
+      <td>HY-110284</td>
+      <td>210302-17-3</td>
+      <td>Electron transport chain uncoupler which does not depolarize plasma membrane</td>
+    </tr>
+    <tr>
+      <td>DFOM Deferoxamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>D9533</td>
+      <td>138-14-7</td>
+      <td>Chelates iron and induces ISR via HRI kinase</td>
+    </tr>
+    <tr>
+      <td>Poly(I:C)</td>
+      <td>MedChemExpress</td>
+      <td>HY-107202</td>
+      <td>24939-03-5</td>
+      <td>Mimics viral infection and activates ISR via PKR kinase</td>
+    </tr>
+    <tr>
+      <td>Sodium (meta)arsenite</td>
+      <td>Sigma-Aldrich</td>
+      <td>S7400</td>
+      <td>7784-46-5</td>
+      <td>Induces oxidative stress and induces ISR via HRI kinase</td>
+    </tr>
+    <tr>
+      <td>Trametinib</td>
+      <td>MedChemExpress</td>
+      <td>HY-10999</td>
+      <td>871700-17-3</td>
+      <td>MEK inhibitor used to test if PEBP1-mediated effect on ISR is related to PEBP1 function as a Raf kinase inhibitor</td>
+    </tr>
+    <tr>
+      <td>Phorbol-12-myristate-13-acetate (PMA)</td>
+      <td>Rhawn</td>
+      <td>R038872</td>
+      <td>16561-29-8</td>
+      <td>Induction of PEBP1 phosphorylation at Ser153</td>
+    </tr>
+    <tr>
+      <td>Sephin-1</td>
+      <td>Sigma-Aldrich</td>
+      <td>SML1356</td>
+      <td>951441-04-6</td>
+      <td>Inhibitor of GADD34 (PPP1R15A), the stress-inducible eIF2α phosphatase subunit</td>
+    </tr>
+    <tr>
+      <td>Raphin-1</td>
+      <td>Aladdin</td>
+      <td>R287653</td>
+      <td>2022961-17-5</td>
+      <td>Inhibitor of CREP (PPP1R15B), the constitutively expressed eIF2α phosphatase subunit</td>
+    </tr>
+  </tbody>
+</table>
+
+### MS-CETSA/TPP
 
 Three sub-confluent 10 cm dishes of 143B were treated with each of the compounds or DMSO for 30 min. All compounds were assayed in biological duplicates. Culture medium was removed and cells washed with ice-cold PBS. Each plate was lysed with 1 ml 1% NP40 (IGEPAL CA-630, Cat.No. I8896, Sigma-Aldrich) in PBS containing 1× proteinase inhibitor cocktail (Cat.No. P1008, Beyotime) and the respective drugs. Lysates were transferred to 1.5 ml tubes, centrifuged at 16 000 × g for 10 min at 4°C and the lysates from the three plates were pooled. 800 µl of each lysate was snap-frozen in liquid nitrogen as total proteome to assess any protein level changes. The remaining lysate was divided into 130 µl aliquots in 12 thin-walled PCR tubes, heated in a gradient thermal cycler (Eppendorf Mastercycler X50s) for 7 min at temperatures ranging between 45–50°C (45.0, 45.8, 46.9, 48.0, 48.9, and 50.0°C) and 51–56°C (51.0, 51.8, 52.9, 54.0, 54.9, 56.0°C). Equal volumes from each temperature point were combined into the 45–50°C and 51–56°C pools and the precipitated proteins removed by centrifugation at 16,000 × g for 10 min at 4°C. The soluble supernatants were frozen in liquid nitrogen and stored at –80°C until processed for mass spectrometry. Briefly, trypsin digested peptides were desalted and lyophilized, reconstituted in 0.5 M TEAB and labeled with TMTs. Pooled samples were run using Q Exactive Plus (Thermo Fisher). The MS/MS data were processed using MaxQuant (version 1.5.2.8). Tandem mass spectra were searched against human Uniprot database concatenated with reverse decoy peptides. The peptide search allowed up to four missing trypsin cleavages with mass tolerance for precursor ions 20 ppm in the first search and 5 ppm in the main search. Mass tolerance for fragment ions was 0.02 Da. FDR was adjusted to <1% and minimum score for modified peptides to 40. Sample preparation and proteomics was performed at PTM Biolabs (Hangzhou, China).
 
-## In vitro protein thermal shift assay
+### In vitro protein thermal shift assay
 
 100× SYPRO Orange Protein Gel Stain (Sigma-Aldrich, S5692) was mixed with 1 µM purified recombinant PEBP1 (Cat.No. 14582-HNAE, Sino Biological), and aliquoted it into each well of the 96-well plate in 11.5 µl total volume. 1 µl of oligomycin A were added to obtain the indicated final concentrations. Thermal melt curves were obtained using CFX96 Touch Real-Time PCR System (Bio-Rad) using the manufacturer’s instructions (available here).
 
-## RNAseq
+### RNAseq
 
 RPE1 control KO and PEBP1 KO cells were seeded at the density of 0.6×105 cells/ml in a 10 cm dish. Cells were incubated at 37°C 5% CO2 for 42 hr to reach ~90% confluence. Three dishes of control and PEBP1 KO cells were treated with 1 µM oligomycin A or equal volume of DMSO as control for 6 hr, washed twice with PBS and lysed in 1 ml TRIzol on ice. Lysates were frozen in liquid nitrogen and stored at –80°C. RNA library preparation and sequencing was performed at Novogene (Beijing). Briefly, sequencing libraries were generated from total RNA using NEBNext Ultra RNA Library Prep Kit for Illumina (NEB, Cat.No. E7530L) following the manufacturer’s recommendations. After random fragmentation, 370–420 bp cDNA fragments were selected for paired end sequencing of 150 bp. After removal of poor-quality reads, the remaining reads were mapped against human transcriptome (Ensembl v109) using Salmon (version 1.3.0) to obtain transcript abundances. Gene level summaries were generated by tximport. Differential gene expression analysis for RPE1 cells (accession: GSE247262) and bone marrow macrophage (accession: GSE264092) were performed using DESeq2 from variance stabilizing transformation (vst) normalized counts. Heatmap was drawn using pheatmap and ggplot2 packages in R (R version 4.2.0). For functional profiling of RNAseq data, we analyzed the enrichment of differentially expressed genes (using p.adj<0.001 as the cut-off).
 
-## Western blotting
+### Western blotting
 
 143B or RPE1 cells (60,000 cells/ml) were plated in six-well plates (2 ml/well) a day before treatments as indicated in each figure legend. Cells were washed with PBS and lysed with 1% NP40-PBS for WB, containing protease and phosphatase inhibitors (Beyotime, Cat.No. P1051). Equal amount of total protein (typically 20 or 30 µg/sample) were separated either on 4–12% or 4–20% SurePAGE Bis-Tris gels (GenScript) and transferred on nitrocellulose membrane (Merck Millipore) using the eBlot L1 transfer system (GenScript). Membranes were blocked with QuickBlock Blocking Buffer (Beyotime, P0252), incubated with primary antibodies in QuickBlock Primary Antibody Dilution Buffer (Beyotime, P0256) or SignalUp Western Blot sensitizer (Beyotime, P0272), followed by HRP (CST, #7074) or AlexaFluor Plus 680/800 conjugated secondary antibodies (Invitrogen, A32735 and A32729). The signals were detected with Li-COR Odyssey imager and processed and using LI-COR ImageStudio software. Only blots probed with fluorescent secondary antibodies were used for quantitation.
 
 For protein synthesis assay using HPG and click-chemistry, RPE1 cells (50,000 cells/ml) were plated in six-well plates (2 ml/well) and cultured for 48 hr. Cells were treated with oligomycin or tunicamycin for 4 hr, washed once with PBS, then incubated with 1 ml/well pre-warmed L-methionine-free DMEM (D0422, Sigma-Aldrich) supplemented with 200 µM L-cystine, 2 mM L-glutamine, and 10 mM HEPES for 30 min. Oligomycin or tunicamycin were maintained during this and the subsequent period. HPG (ST2057, Beyotime) was added to 50 µM final concentration and incubated for 2 hr, cells were washed twice with ice-cold PBS and lysed with 50 µl 1% NP40-PBS containing protease and phosphatase inhibitors. Equal amounts of total protein in 50 µl volume were mixed with 150 µl Click-reaction cocktail containing fluorescent Azide-647 (Beyotime, C0081) and incubated for 30 min at room temperature. SDS-PAGE sample buffer was added, and the samples heated and separated on a 4–20% SDS-PAGE gel and transferred on nitrocellulose membrane. Azide-647 was visualized with the 700 nm channel on the Li-COR Odyssey.
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used:
 
-## Quantitative RT-PCR
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Supplier</th>
+      <th>Cat.No.</th>
+      <th>Host species</th>
+      <th>Used dilution</th>
+      <th>Lot number</th>
+      <th>RRID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RKIP/PEBP1</td>
+      <td>Abcam</td>
+      <td>ab76582</td>
+      <td>Rabbit</td>
+      <td>1:5000</td>
+      <td>GR3257923-2</td>
+      <td>AB_1267285</td>
+    </tr>
+    <tr>
+      <td>PEBP1 Phospho-Ser153</td>
+      <td>Diagbio</td>
+      <td>db13954</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+      <td>X0630P</td>
+      <td>AB_3371705</td>
+    </tr>
+    <tr>
+      <td>Total OXPHOS Human WB Antibody Cocktail (to detect ATP5F1A)</td>
+      <td>Abcam</td>
+      <td>ab110411</td>
+      <td>Mouse</td>
+      <td>1:1000</td>
+      <td>M5406</td>
+      <td>AB_2756818</td>
+    </tr>
+    <tr>
+      <td>P-eIF2a</td>
+      <td>Cell Signaling Technology</td>
+      <td>#3398</td>
+      <td>Rabbit</td>
+      <td>1:2000</td>
+      <td>8</td>
+      <td>AB_2096481</td>
+    </tr>
+    <tr>
+      <td>eIF2a</td>
+      <td>Cell Signaling Technology</td>
+      <td>#5324</td>
+      <td>Rabbit</td>
+      <td>1:2000</td>
+      <td>8</td>
+      <td>AB_10692650</td>
+    </tr>
+    <tr>
+      <td>ATF-4</td>
+      <td>Cell Signaling Technology</td>
+      <td>#11815</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+      <td>5</td>
+      <td>AB_2616025</td>
+    </tr>
+    <tr>
+      <td>b-Actin</td>
+      <td>GenScript</td>
+      <td>A00702</td>
+      <td>Mouse</td>
+      <td>1:3000</td>
+      <td>19G001892</td>
+      <td>AB_914102</td>
+    </tr>
+    <tr>
+      <td>HA</td>
+      <td>GenScript</td>
+      <td>A01244</td>
+      <td>Mouse</td>
+      <td>0.5 µg/ml</td>
+      <td>H2210004-A</td>
+      <td>AB_1289306</td>
+    </tr>
+    <tr>
+      <td>CHOP</td>
+      <td>Proteintech</td>
+      <td>15204-1-AP</td>
+      <td>Rabbit</td>
+      <td>1:2000</td>
+      <td>00132291</td>
+      <td>AB_2292610</td>
+    </tr>
+    <tr>
+      <td>GADD34/PPP1R15A</td>
+      <td>Proteintech</td>
+      <td>10449-1-AP</td>
+      <td>Rabbit</td>
+      <td>1:2000</td>
+      <td>00102093</td>
+      <td>AB_2168724</td>
+    </tr>
+    <tr>
+      <td>CREP/PPP1R15B</td>
+      <td>Proteintech</td>
+      <td>14634-1-AP</td>
+      <td>Rabbit</td>
+      <td>1:5000</td>
+      <td>00123911</td>
+      <td>AB_2300036</td>
+    </tr>
+    <tr>
+      <td>HRI</td>
+      <td>Proteintech</td>
+      <td>20499-1-AP</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+      <td>00105271</td>
+      <td>AB_10697665</td>
+    </tr>
+    <tr>
+      <td>ERK1/2</td>
+      <td>Proteintech</td>
+      <td>11257-1-AP</td>
+      <td>Rabbit</td>
+      <td>1:5000</td>
+      <td>00135728</td>
+      <td>AB_2139822</td>
+    </tr>
+    <tr>
+      <td>P-ERK1/2</td>
+      <td>Proteintech</td>
+      <td>28733-1-AP</td>
+      <td>Rabbit</td>
+      <td>1:5000</td>
+      <td>00124649</td>
+      <td>AB_2881202</td>
+    </tr>
+  </tbody>
+</table>
+
+### Quantitative RT-PCR
 
 143B or RPE1 cells (60,000 cells/ml) were plated in six-well plates (2 ml/well) a day before treatment. Total RNA was extracted using FastPure cell/tissue total RNA isolation Kit (Vazyme). First-strand cDNA was synthesized using the HiScript Q select RT SuperMix for qPCR (Vazyme) and qPCR was performed with ChamQ Universal SYBR qPCR master Mix (Vazyme). Fold changes in expression were calculated using 2-ΔΔCt method normalizing the Ct values to β-actin.
 
-## Confocal microscopy
+### Confocal microscopy
 
 143B cells (40,000 cells/ml) were plated in 24-well plates a day before transfection. 25 nM siRNA was transfected using Lipofectamine 3000 (L3000-015, Invitrogen). After 48 hr, cells were reseeded into an eight-well chambered cover glass (Cellvis, Cat.No. C8-1.5H-N) (300 µl/well). Cells were incubated with 1 µM oligomycin A for 1 hr and stained with Hoechst 33342 (1:2000 dilution, Beyotime, C1022) and Mito-Tracker Red CMXRos (1:2000, Beyotime, C1049B) for 30 min. Images were captured with a spinning-disk confocal microscopy (Nikon) equipped with 60×/1.4 numerical aperture objective. Maximum intensity projection images were generated using Fiji (version 2.14.0/1.54f).
 
-## Flow cytometry
+### Flow cytometry
 
 143B cells were treated for 1 hr with 1 µM oligomycin A and 0.5 µM BAM15 as indicated and stained with tetramethylrhodamine ethyl ester (TMRE, 10 nM, Solarbio, T7910) for 30 min at 37°C. Cells were trypsinized, washed twice with HBSS, and analyzed with Cytek Aurora flow cytometer (Cytek Biosciences, Fremont, CA, USA). Data was processed with FlowJo software (BD Biosciences).
 
-## Oxygen consumption rate
+### Oxygen consumption rate
 
 OCR and ECAR were measured using Seahorse XFe96 Analyzer (Agilent Technologies) following the manufacturer’s instructions. RPE1 cells (1×104) of the indicated genotypes were seeded in 96-well Seahorse XFe96 cell culture microplates (Agilent Technologies) for 24 hr in eight replicate wells. The culture medium was changed to Seahorse XF DMEM medium (Agilent Technologies, 103575-100) supplemented with 10 mM glucose, 1 mM pyruvate, and 2 mM L-glutamine 1 hr prior to the assay by washing once with this medium followed by addition of 180 μl medium per well. Mitochondrial stress test was performed following the standard protocol with final concentrations of 1.5 μM oligomycin A (Selleck, Cat.No. S1478), 1.5 μM FCCP (TargetMol, T6834), and 0.5 μM rotenone (Solarbio, R8130) plus antimycin A (Abcam, AB141904) (Rot/AA). To determine the cell numbers, 5 μg/ml Hoechst 33342 (Beyotime, C1022) was added into each well after the OCR measurement and fluorescence images of the wells were taken using High-Content Imaging System IXM-C (Molecular Devices). The calculated cell numbers were imported into the Seahorse Wave Controller software (version 2.6.3.8) for data normalization.
 
-## AlphaFold-Multimer prediction
+### AlphaFold-Multimer prediction
 
 The potential complex between eIF2α and PEBP1 (UniProt IDs P05198 and P30086, respectively) was predicted from the amino acid sequences based on AlphaFold structure prediction model v2.3.2 implemented with ColabFold 1.5.3. at https://www.tamarind.bio/. The settings used were five models, MSA Mode: mmseqs2_uniref_env, 3 recycles without relaxations in an unpaired_paired mode without a template. The resulting ‘top’ model had pLDDT = 85.6, pTM = 0.501, and ipTM = 0.155.
 
-## Statistical analysis
+### Statistical analysis
 
 The proteome data was analyzed using AID, available from https://gygi.med.harvard.edu/software and https://github.com/alex-bio/TPP (Panov, 2019), and run locally using R environment. The protein abundances from the duplicate measurements were averaged for AID. This software ranks most likely shifted proteins by the logarithm of the Multivariate Normal p-value ‘log_Multiv_Norm_pval’, the descending ‘pval_count’ (i.e. in how many pools the protein shows p-value<0.05), and the decreasing magnitude of ‘sum_of_signs’ (i.e. thermal stabilization or destabilization). The AID method does not explicitly use log2 fold changes, but it does consider the relative abundance of proteins compared to all other proteins under different temperature fractions. Since the largest shift for each protein can be at any temperature, this combined pooling and multivariate approach indicates the proteins with most likely changes across the range of temperatures used.
 

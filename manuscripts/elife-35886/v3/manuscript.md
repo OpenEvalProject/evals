@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.35886.001 Type III protein secretion systems (T3SS) are encoded by several pathogenic or symbiotic bacteria. The central component of this nanomachine is the needle complex. Here we show in a Salmonella Typhimurium T3SS that assembly of the needle filament of this structure requires OrgC, a protein encoded within the T3SS gene cluster. Absence of OrgC results in significantly reduced number of needle substructures but does not affect needle length. We show that OrgC is secreted by the T3SS and that exogenous addition of OrgC can complement a ∆orgC mutation. We also show that OrgC interacts with the needle filament subunit PrgI and accelerates its polymerization into filaments in vitro. The structure of OrgC shows a novel fold with a shared topology with a domain from flagellar capping proteins. These findings identify a novel component of T3SS and provide new insight into the assembly of the type III secretion machine.
+Type III protein secretion systems (T3SS) are encoded by several pathogenic or symbiotic bacteria. The central component of this nanomachine is the needle complex. Here we show in a Salmonella Typhimurium T3SS that assembly of the needle filament of this structure requires OrgC, a protein encoded within the T3SS gene cluster. Absence of OrgC results in significantly reduced number of needle substructures but does not affect needle length. We show that OrgC is secreted by the T3SS and that exogenous addition of OrgC can complement a ∆orgC mutation. We also show that OrgC interacts with the needle filament subunit PrgI and accelerates its polymerization into filaments in vitro. The structure of OrgC shows a novel fold with a shared topology with a domain from flagellar capping proteins. These findings identify a novel component of T3SS and provide new insight into the assembly of the type III secretion machine.
 
 ## Introduction
 
@@ -27,19 +27,33 @@ Type III protein secretion systems (T3SSs) are highly conserved molecular machin
 
 ## Results
 
-## OrgC is an early substrate of the S. Typhimurium T3SS encoded within its pathogenicity island 1
+### OrgC is an early substrate of the S. Typhimurium T3SS encoded within its pathogenicity island 1
 
 OrgC (oxygen regulated gene C) is encoded within and co-regulated with the cluster of genes that encode the core components of the S. Typhimurium T3SS located within the pathogenicity island 1 (SPI-1) (Figure 1A) (Jones and Falkow, 1994; Klein et al., 2000). Previous studies have shown that OrgC is secreted by the SPI-1 T3SS and since it was reported to be non-essential for type III secretion function, it was hypothesized to be an effector protein of this system (Aguirre et al., 2006; Day and Lee, 2003). However, its translocation into host cells could not be detected (Day and Lee, 2003). Homologs of OrgC encoded within T3SS gene clusters with high degree of synteny can be detected in several bacterial species (Figure 1B and Figure 1—figure supplement 1), suggesting a potentially conserved function in type III secretion.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/35886/elife-35886-fig1-v3.jpg)
+
+**Figure 1.:** (A) Gene organization of the orgC locus within the S. Typhimurium pathogenicity island 1. (B) Amino acid sequence alignment of OrgC homologs. The sequences used in the alignment are: OrgC (S. Typhymurium), MxiL (Shigella flexneri), and hypothetical proteins from Chromobacterium violaceum and Providencia alcalifaciens. (C) Whole cell lysates (w. c. l.) or culture supernatants (c. s.) of wild-type S. Typhimurium, or the isogenic mutants ∆invC (T3SS-defective), ∆invJ, or spaSN258A (both mutant strains are able to secrete only early substrates), all expressing 3xFlag tagged OrgC, were analyzed by immunoblot with antibodies directed to the FLAG tag or the protein translocase SipB (as a control).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35886/elife-35886-fig1-figsupp1-v3.jpg)
+
 In an effort to clarify the function of OrgC, we investigated its secretion in specific T3SS mutant backgrounds. Type III secretion occurs in a hierarchical manner and the order in which a protein is engaged by the secretion machine has predictive value about its potential function (Galán et al., 2014). Proteins involved in the assembly of the secretion machine are engaged first (early substrates), followed by the proteins translocases (middle substrates), and finally the effector proteins (late substrates). In the S. Typhimurium SPI-1 T3SS at least two regulatory proteins, InvJ and SpaS, are involved in regulating the ‘substrate switching’ of the secretion machine from early to middle and late substrates (Kubori et al., 2000; Monjarás Feria et al., 2015). Absence of InvJ results in secretion machines ‘locked’ in the early substrate mode thus leading to long needles and inability to secrete middle and late substrates (Kubori et al., 2000). Similarly, a mutation in the catalytic site of the export apparatus component SpaS (spaSN258A) results in a secretion machine unable to secrete middle and late substrates (Monjarás Feria et al., 2015). As previously reported (Day and Lee, 2003), we found that OrgC is secreted into the S. Typhimurium culture supernatant in a SPI-1 T3SS-dependent manner (Figure 1C). Importantly, we found that OrgC is also secreted in the ∆invJ (Figure 1C) or spaSN258A (Figure 1D) mutant strains, indicating that it is an early substrate of the SPI-1 T3SS. As early substrates are not injected into target host cells, these observations are consistent with previous reports failed to detect the translocation of OrgC into mammalian cells (Day and Lee, 2003), and suggest that it may be involved in the assembly of the secretion machine.
 
-## OrgC is required for efficient needle assembly
+### OrgC is required for efficient needle assembly
 
 We investigated the secretion of early, late and middle substrates in a ∆orgC S. Typhimurium mutant strain. We found that the ∆orgC mutant exhibited reduced secretion of middle (i. e. SipB) and late (i. e. SptP) substrates (Figure 2A and B). Notably, the ∆orgC mutant exhibited significantly increased level of secretion of the needle and inner rod subunit proteins PrgI and PrgJ. These observations suggest that the ∆orgC mutant must have a defect in needle or inner rod assembly because secretion of middle and late substrates requires substrate switching, which can only occur upon completion of the needle filament and its subsequent attachment to the inner rod (Lefebre and Galán, 2014; Marlovits et al., 2006). The presence of increased levels of needle and inner rod subunits in the culture supernatant, presumably the result of their non-productive secretion, is consistent with this hypothesis.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/35886/elife-35886-fig2-v3.jpg)
+
+**Figure 2.:** (A) S. Typhimurium ΔorgC secretes elevated amount of early and reduced amount of middle/late substrates. Proteins in bacterial culture supernatants (c. s.) were concentrated by TCA precipitation and analyzed by SDS-PAGE, followed by immunoblot using specific antibodies for PrgI, PrgJ, InvJ (early substrates), SipB, SipC (middle substrates) and SptP (late substrate). The secretion phenotype of ΔorgC was complemented by introducing a plasmid expressing OrgC but not by introducing the empty plasmid vector alone. Expression levels of the indicated proteins in whole-cell lysates (w. c. l.) were also evaluated. (B) Western-blot band intensities from three independent experiments were quantified. Values were normalized to the wild-type parent strain and log2 transformed. The dotted horizontal line corresponds to the levels of the different proteins in wild type S. Typhimurium. (C) A bacterial cell-clumping assay implicates OrgC in needle assembly. Cultures of the S. Typhimurium ∆invJ mutant strain, which display long needle filaments, clump and precipitate to the bottom of the tube (left panel) resulting in drastically decreased OD600 (right panel, grey bars), which can be recovered by vortexing the samples (right panel, black bars). Bacterial cell clumping is abolished by introduction of a ∆orgC mutation (left and right panels), which can be complemented by introducing a plasmid encoding orgC (pWSK-orgC) but not by introducing the vector alone (pWSK) (right panel). Values represent OD600 before (grey bars) and after (black bars) vortexing and are the mean ± SEM (standard error of the mean) of three independent measurements. Asterisks indicate statistically significant differences from the values of the vortexed sample (p<0.001, Student t test). (D) Western blot analysis of the NC base components InvG, PrgH, and PrgK in whole cell lysates of the ∆invJ and ∆invJ ∆orgC S. Typhimurium mutant strains. (E) Electron micrographs of negatively stained S. Typhimurium showing the presence (∆invJ) or absence (∆invJ ∆orgC) of long T3SS needle filaments. Scale bar = 200 nm, (∆invJ); 100 nm (∆invJ ∆orgC). (F) Electron micrographs of negatively stained needle complexes isolated from wild type (WT) or ∆orgC S. Typhimurium. Scale bar = 100 nm. (G) Percentage of needle complexes exhibiting the needle filament in preparations obtained from wild type (WT) or ∆orgC S. Typhimurium (number of particles analyzed: w. t. = 1105; ∆orgC = 1273). (H) Needle length of needle complexes isolated from S. Typhimurium wild type or ∆orgC mutant strains. The percentage of needle complexes exhibiting the indicated length (in nm, x axis) is indicated (number of needle complexes analyzed: w. t. = 314; ∆orgC = 339.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35886/elife-35886-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Typhimurium wild-type, ΔorgC, ΔinvJ, and ΔorgC/ΔinvJ mutant strains. Culture supernatant from S. Typhimurium or its isogenic mutants were examined by western-blot for the presence of PrgI.
+
 To more directly test the potential involvement of OrgC in needle assembly we used an assay we previously developed to monitor needle length (Lefebre and Galán, 2014). We have previously observed that the absence of InvJ leads to the production of extremely long needles, which in turn result in the clumping of the bacterial culture due to needle tangling (Lefebre and Galán, 2014; Kubori et al., 2000). We therefore investigated the role of OrgC in needle formation by introducing a ∆orgC deletion in a ∆invJ S. Typhimurium mutant strain, and examining its effect on needle-dependent bacterial clumping. We found that the deletion of orgC completely abolished the ∆invJ S. Typhimurium cell clumping (Figure 2C) even though it did not alter the levels of the core components of the T3SS NC (Figure 2D). Consistent with this hypothesis and in sharp contrast with the ∆invJ mutant, very few longer needles were observed on the surface of the S. Typhimurium ∆orgC ∆invJ mutant when examined by electron microscopy (Figure 2E). Furthermore, we found that while PrgI secretion was increased in the ∆orgC mutant strain, introduction of a ∆invJ mutation into this mutant background reduced the levels of secretion (Figure 2—figure supplement 1), presumably because in the absence of InvJ more PrgI subunits assemble into long needles. These results suggested that OrgC might be involved in needle formation. To further explore this hypothesis we isolated NCs from wild type and the ∆orgC S. Typhimurium mutants and compared them by electron microscopy. We found that the proportion of fully assembled NCs (i. e. NC bases with needle substructures) vs. NCs without needle substructures was significantly reduced in the S. Typhimurium ∆orgC mutant (Figure 2F and G). However, both the average length of the needles and the distribution of needle lengths in fully assembled NCs were indistinguishable in both strains (Figure 2H). Taken together, these results indicate that OrgC plays a role in the initiation of needle assembly but does not influence needle elongation or needle length.
 
-## OrgC can exert its function when exogenously applied to bacterial cells
+### OrgC can exert its function when exogenously applied to bacterial cells
 
 It is well established that type III secretion machines recognize substrates through signals located at their amino termini (Michiels and Cornelis, 1991; Sory and Cornelis, 1994; Rüssmann et al., 2002). Therefore to investigate whether the function of OrgC requires its secretion through the T3SS we constructed a mutant that lacks its first 21 amino acids. In addition, we constructed a mutant in which a maltose-binding protein (MBP) tag was placed at the amino terminus of OrgC, an arrangement that interferes with type III protein secretion (Kubori and Galán, 2002). Both mutant constructs were stably expressed in a S. Typhimurium ∆orgC mutant strain but, in contrast to wild type OrgC, they were not detected in the culture supernatants indicating that their secretion was abolished (Figure 3A and B). The ability of both mutant constructs to complement a ∆orgC mutant strain was then tested by examining their ability to complement the OrgC-dependent bacterial cell clumping phenotype observed in the ∆invJ S. Typhimurium mutant strain. We found that although introduction of a plasmid encoding wild type OrgC was able to complement the clumping phenotype of the S. Typhimurium ∆orgC ∆invJ mutant, plasmids encoding either of the non-secreted forms of OrgC did not (Figure 3C). These results indicate that OrgC secretion is necessary for its function.
 
@@ -53,7 +67,7 @@ The observation that OrgC must be secreted to exert its role in needle assembly 
 
 **Figure 4.:** (A) His-OrgC was purified by Ni-affinity, ion exchange, and gel-filtration chromatography analyzed by SDS-PAGE and coomassie blue staining. (B – D) Administration of purified OrgC to bacterial cell culture can complement a ∆orgC mutation. S. Typhimurium ∆orgC ∆invJ (B) or the indicated S. Typhimurium strains (C and D) were grown in the presence of the indicated protein preparations and the clumping of the bacterial cells was measured as indicated in Figure 2. Values represent OD600 before (grey bars) and after (black bars) vortexing and are the mean ± SEM of three independent measurements. Asterisks indicate statistically significant differences from the values of the vortexed sample [*p<0.001 (B), p<0.005 (C and D), Student t test]. (E) The secretion profile abnormality of the ΔorgC mutant can be reversed by addition of purified OrgC. Secretion profile of ΔorgC S. Typhimurium grown in the presence or absence of purified OrgC. Proteins in the bacterial culture supernatant were concentrated by TCA precipitation and analyzed by Western blotting using specific antibodies directed to the early T3SS substreate InvJ. Numbers below the different lanes are the average ± SEM of the western-blot band intensities of InvJ in culture supernatants relative to wild-type (-)from three independent secretion assays. (F) Electron micrographs of negatively stained S. Typhimurium ∆orgC ∆invJ grown in the presence (+OrgC) or in the absence (−OrgC) of purified OrgC. Note the presence of long filaments when bacteria are grown in the presence of purified OrgC protein. Scale bar: 100 nm. (G) Western blot analysis of the NC base components InvG, PrgH, and PrgK in whole cell lysates of S. Typhimurium ∆invJ ∆orgC grown in the presence or absence of purified OrgC. (H) Electron micrographs of negatively stained needle complexes isolated from wild-type (WT), and ΔorgC S. Typhimurium mutant strains grown in the absence (−OrgC) or in the presence (+OrgC) of purified OrgC protein. Scale bar: 100 nm. (I) The proportion of needle complexes displaying the needle filament in the indicated strains was determined. Values are expressed as the mean percentage (±SEM) of needle complexes per micrograph exhibiting the needle filament. Number of particles analyzed from 28 micrographs: w. t. = 2979; ΔorgC (−OrgC) = 3334; ΔorgC (+OrgC) = 3957.
 
-## OrgC interacts with PrgI and accelerates needle polymerization in vitro
+### OrgC interacts with PrgI and accelerates needle polymerization in vitro
 
 The observation indicating that OrgC contributes to efficient needle filament assembly prompted us to investigate its potential interaction with the needle subunit PrgI in S. Typhimurium cells. Using an affinity purification assay with a tagged version of OrgC we detected the interaction of OrgC with PrgI but not with the other type III secretion early substrates PrgJ and InvJ (Figure 5A). To investigate whether the interaction of OrgC with PrgI was direct, we used a bacterial two-hybrid system in a heterologous host (E. coli). Using this approach we readily detected the interaction between OrgC and PrgI∆C5 (Figure 5B), a mutant that lacks its last five residues and consequently is unable to polymerize thus preventing protein agregation (Poyraz et al., 2010). These results indicate that the interaction between OrgC and PrgI is direct. We hypothesized that if this direct interaction enhances the efficiency of needle filament assembly, overexpression of PrgI might suppress the ∆orgC phenotype. Consistent with this hypothesis, when prgI was over-expressed in a ∆invJ ∆orgC background, the cell clumping was recovered despite the absence of OrgC (Figure 5C). These results indicate that the mechanism by which OrgC promotes needle assembly involves its direct interaction with the needle filament protein itself.
 
@@ -63,17 +77,51 @@ The observation indicating that OrgC contributes to efficient needle filament as
 
 It is well established that purified T3SS needle proteins can self-polymerize in vitro and that polymerization can be monitored by dynamic light scattering (DLS) (Poyraz et al., 2010). We therefore examined the effect of adding purified OrgC to a PrgI needle protein polymerization reaction in vitro using DLS. We found that OrgC significantly accelerated the polymerization of PrgI into needle filaments (Figure 5D). Under the assay conditions used, recombinant PrgI polymerized into needles at about 120 min after initiation of the reaction. In contrast, in the presence of recombinant OrgC, PrgI polymerization could be detected as early as 30 min after initiation of the reaction (Figure 5D). Taken together, these results indicate that OrgC directly facilitates the assembly of the PrgI needle filaments.
 
-## The interaction of OrgC with PrgI is required for its function
+### The interaction of OrgC with PrgI is required for its function
 
 To further characterize the interaction between OrgC and PrgI we used NMR spectroscopy. Titrations of OrgC with PrgI showed direct and specific protein-protein interaction between OrgC and PrgI (Figure 6A–D and Figure 6—figure supplement 1). The primary sites of interaction involved the OrgC residues 134–141 at the C-terminal region, and the PrgI residues K37, S39, Q48, and K66 at the head group of the alpha-helical hairpin and the C-terminal helix of PrgI (Figure 6A–6E). These residues showed the largest changes in the NMR peak positions of the backbone amides during the titration of PrgI (Figure 6A and C and Figure 6—figure supplement 1). The change in peak positions during the titration indicated that the interaction occurred at fast exchange NMR time scale, which is suggestive of weak binding interaction typically seen for binding interactions with micromolar binding affinities. Interestingly, amino acid sequence comparison of needle filament proteins showed a higher degree of conservation of amino acids involved in OrgC binding in the T3SSs that have homologs of OrgC relative to needle filament proteins from those that do not (Figure 6—figure supplement 2). Taken together, these results indicate that OrgC directly interact with PrgI through a discrete domain at its carboxy terminus and identified critical PrgI residues involved in this interaction.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/35886/elife-35886-fig6-v3.jpg)
+
+**Figure 6.:** (A) Selected 1H-15N peaks of 15N labeled OrgC that showed the largest changes upon titration with unlabeled PrgI. (B) Plot of the weighted chemical shift deviation of 15N OrgC titrated with PrgI. (C) Selected 1H-15N peaks of 15N labeled PrgI that showed the largest changes upon titration with unlabeled OrgC. (D) Plot of the weighted chemical shift deviation of 15N PrgI titrated with OrgC. In (A) and (C), peaks are colored according to the molar ratios of 15N protein: unlabeled binding partner as follows: black (1:0), red (1:0.5), blue (1:1), green (1:2), and pink (1:4). In (B) and (D), dashed lines show the average and average plus one standard deviation (σ) of the chemical shift deviation. (E) Location in the atomic structure of PrgI residues that showed the largest changes in the NMR peak positions of the backbone amides upon titration with OrgC. (F) Effect of mutations in the interacting residues in OrgC and PrgI. The indicated S. Typhimurium mutant strains were analyzed by the clumping assay as indicated in Figure 2. Values represent OD600 before (grey bars) and after (black bars) vortexing and are the mean ± SEM of three independent measurements. Asterisks indicate statistically significant differences from the values of the vortexed sample (*p<0.001, Student t test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/35886/elife-35886-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) 15N labeled OrgC titrated with unlabeled PrgI. (B) 15N PrgI titrated with unlabeled OrgC. The titrations were monitored by acquiring 2D 1H-15N HSQC spectra.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/35886/elife-35886-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** Multiple sequence alignment of different needle proteins from several bacteria carrying T3SSs. Ser39 and Ser52 are marked with filled black arrowheads. NCBI accession numbers for the needle proteins: Salmonella enterica (PrgI, CBW18951), Chromobacterium violaceum (OQS28935), Providencia alcalifaciens (EUC99172), Pseudomonas fluorescens (MxiH, AKV07676), Pseudogulbenkiania ferrooxidans (ERD99717), enteropathogenic Escherichia coli (EscF, CAS11480), Bordetella pertussis (BscF, CAC79556), Vibrio parahaemolyticus (PscF, KIT21774), Photorhabdus luminescens (LscF, AAO18031), Yersinia enterocolitica (YscF, AAD16839), Yersinia pestis (YscF, NP_395189). The alignment was carried out using Muscle and prepared for visualization using BioEdit. Residues identical are indicated in a black background whereas similar residues are marked gray if they are present in ≥80% of the sequences.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/35886/elife-35886-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** Whole cell lysates (w. c. l.) or culture supernatants (c. s.) of S. Typhimurium ΔinvJ ΔorgC mutant strains carrying the empty vector pWSK129 (empty) or expressing the indicated carboxy-terminal FLAG-epitope-tagged OrgC deletion mutants were analyzed by immunodetection using antibodies directed to the FLAG tag. All variants were produced and secreted at equivalent levels.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/35886/elife-35886-fig6-figsupp4-v3.jpg)
+
+**Figure 6—figure supplement 4.:** Proteins in the bacterial culture supernatant were concentrated by TCA precipitation and analyzed by SDS-PAGE, followed by immunoblot using specific antibodies to the indicated proteins.
+
 To determine if the interaction between OrgC with PrgI is required for OrgC function, we mutated the residues in both proteins mapped by the NMR titration experiments and examined the resulting mutants in functional assays for needle filament assembly. Introduction of small deletions (∆134–136 and ∆137–140) within the predicted PrgI-binding site of OrgC abolished its ability to complement bacterial cell clumping of a ∆orgC ∆invJ mutant strain (Figure 6F), even though introduction of the mutations did not affect the stability of OrgC (Figure 6—figure supplement 3). Similarly, introduction of mutations in the PrgI residues that showed significant changes in the NMR peak positions (Q48, S52 and N55) during the titration of OrgC reduced PrgI-mediated bacterial cell clumping (Figure 6F). The inability of the PrgI mutants to interact with OrgC would be expected to result in increased secretion of early substrates and decrease secretion of middle and late substrates. However, we found that introduction of the multiple mutations in PrgI did not significantly alter type III secretion (Figure 6—figure supplement 4). We hypothesize that the rather complex interface between OrgC and PrgI may be difficult to disrupt by discrete mutagenesis without globally altering needle polymerization. Consequently, the disruption of the OrgC/PrgI interface by introducing mutations in selected amino acids, while sufficient to result in a phenotype measurable by the more sensitive bacterial cell-clumping assay, it was insufficient to result in a phenotype that can be observed with the less sensitive secretion assay. In any case, these results indicate that the introduction of the PrgI mutations did not alter needle assembly. Taken together, these results validate the NMR titration experiments and demonstrate that the interaction of OrgC with PrgI is essential for its function.
 
-## OrgC forms a 4-helix structure with a novel fold
+### OrgC forms a 4-helix structure with a novel fold
 
 To further understand the structural basis for the function of OrgC we sought to determine its atomic structure. Attempts at crystallization of OrgC did not yield crystals suitable for high-resolution X-ray structure determination. Therefore, we determined the 3D structure of OrgC by NMR methods. Full-length recombinant OrgC expressed poorly, showed poor solubility in NMR solution conditions, and the quality of NMR spectra showed poor resolution and heterogeneity in peak intensities suggestive of non-uniform protein conformations (Figure 7—figure supplement 1). Consequently, to facilitate structural determination we removed the first 20 amino acids from OrgC, which harbors its secretion signal and therefore is predicted to be disordered. The truncated form of OrgC showed excellent quality of NMR spectra (Figure 7—figure supplement 1) with well-resolved peaks of homogenous intensities that enabled the NMR structure determination. NMR peak assignments were obtained from 2D 15N HSQC (Grzesiek and Bax, 1993a) and 3D HNCACB (Wittekind and Mueller, 1993), HNCA (Grzesiek et al., 1992), CACBCONH (Grzesiek et al., 1992), and HBHA(CO)NH (Grzesiek and Bax, 1993b). Analysis of the 13Cα, 13Cβ and 1Hα secondary chemical shifts (Wishart and Nip, 1998) identified the helical regions of OrgC (Figure 7—figure supplement 2). For structure calculations, distance restraints were obtained from nuclear Overhauser effects (NOEs) assigned from 3D 15N-edited HSQC NOESY (tmix120 ms) and 3D 13C-edited HMQC NOESY (tmix120 ms). Using intra-residue NOEs as internal standards, the NOEs were categorized based on peak intensities into strong, medium, and weak NOEs, and assigned upper distance limits of 2.7 Å, 3.5 Å, and 5.5 Å, respectively. Dihedral angle restraints of phi −60 ± 20° and psi −40 ± 20° were used for alpha helical regions identified by the secondary chemical shifts. The iterative calculation of multiple structures by simulated annealing and molecular dynamics followed by energy minimization yielded a high-confidence structural model for OrgC. The structure was derived from 1170 non-redundant NOEs, with an average of about nine restraints per residue, and the packing of the hydrophobic core of the protein was defined by 173 long range NOEs. The 20 low energy NMR structures showed good convergence into a single family of structures with low violations in distance and dihedral angle restraints (Figure 7—figure supplement 3). Finally, over 99% of the residues are in the allowed phi and psi regions of the Ramachandran plot (Supplementary file 1).
 
 The overall structure of OrgC comprises a central region with four helices – helix α1 (residues 46–57), helix α2 (residues 55–78), helix α3 (residues 92–105), and helix α4 (residues 111–126) (Figure 7A) – bounded by partially disordered regions at its amino and carboxy terminal boundaries. The four helices pack into a volume that resembles a triangular prism with a length shorter than the base or height of the two triangular faces of this prism. Helix α1 and α2 form one face that defines the base and height of this triangular prism. Helix α3 and α4 form the second triangular face, and the packing of helix α1/α2 to helix α3/α4 defines the short length of this triangular prism-shaped domain. The N-terminal region from residues 25 to 36 has partial helical character based on the small Cα secondary chemical shifts (Figure 7—figure supplement 3). This partially folded region is connected by a loop (residues 37–45) to the core 4-helix domain of OrgC.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/35886/elife-35886-fig7-v3.jpg)
+
+**Figure 7.:** (A and B) The structured domain of OrgC consists of a 4-helix bundle and the PrgI-binding region is located at the C-terminus of the OrgC domain (A). The surface of the PrgI-binding region of OrgC is electronegative (B), which complements the electropositive surface on its binding partner, PrgI (C). (D and E). A model of OrgC with the assembled PrgI needle filament. The tip of the assembled PrgI needle is shown as a ribbon (D), and as a surface representation (E). The structure of the needle filament was from Loquet et al (Loquet et al., 2012). Two adjacent PrgI monomers at the needle tip are shown in green ribbon and the residues identified to be involved in binding OrgC are shown in red. There are spaces between the PrgI monomers at the needle tip that expose some of the PrgI residues (i.e. S39 and L51) involved in the interaction with OrgC. Residues near F68 are involved in PrgI-PrgI contacts in the assembled needle.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/35886/elife-35886-fig7-figsupp1-v3.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/35886/elife-35886-fig7-figsupp2-v3.jpg)
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/35886/elife-35886-fig7-figsupp3-v3.jpg)
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/35886/elife-35886-fig7-figsupp4-v3.jpg)
+
+**Figure 7—figure supplement 4.:** The OrgC fold is depicted similar to the topology fold of FliD as reported by Song et al (Song et al., 2017). Shown in colors are the similarity in the folding topology of OrgC and FliD.
 
 The PrgI-binding region of OrgC (residues 134–141) falls within an 8-residue flexible loop that is dangling from the 4-helix central core domain of OrgC (Figure 7A). Within this loop, residues 133–139 have a somewhat partial helical character as indicated by the small Cα secondary chemical shifts (Figure 7—figure supplement 2). Nevertheless, this PrgI-binding region is essentially lacking in tertiary structure. Further analysis of the electrostatic surface of OrgC indicated that the PrgI-binding region is mostly electronegative (Figure 7B). The corresponding surface in PrgI involved in OrgC binding is mostly electropositive (Figure 7C), suggesting a role for electrostatic interactions in the binding mechanisms.
 
@@ -93,44 +141,187 @@ In summary, we have described an as of yet unidentified component of non-flagell
 
 ## Materials and methods
 
-## Strains and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species)</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB300</td>
+      <td>Nature, 291:238</td>
+      <td>wild type</td>
+      <td>Mouse isolate of SL1344</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB2942</td>
+      <td>This study</td>
+      <td>orgC 3xFlag invC::kan</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB2943</td>
+      <td>This study</td>
+      <td>orgC 3xFlag invJ::kan</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB2946</td>
+      <td>This study</td>
+      <td>orgC 3xFlag spaS-3xFlag</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB2947</td>
+      <td>This study</td>
+      <td>orgC 3xFlag spaSN258A-3xFlag</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB2326</td>
+      <td>This study</td>
+      <td>∆invJ flhD::Tn10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB2939</td>
+      <td>This study</td>
+      <td>∆invJ∆orgC flhD::Tn10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB3079</td>
+      <td>This study</td>
+      <td>mbp-prgH flhD::tet</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB3275</td>
+      <td>This study</td>
+      <td>mbp-prgH flhD::tet ∆orgC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB762</td>
+      <td>Infect. Immun. 68:2335</td>
+      <td>flhD::Tn10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB1679</td>
+      <td>This study</td>
+      <td>∆orgC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB2639</td>
+      <td>This study</td>
+      <td>∆invJ flhD::Tn10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB2944</td>
+      <td>This study</td>
+      <td>∆orgC flhD::Tn10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB3272</td>
+      <td>This study</td>
+      <td>∆invJ invA::kan flhD::Tn10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB3273</td>
+      <td>This study</td>
+      <td>∆invJ invG::kan flhD::Tn10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB3274</td>
+      <td>This study</td>
+      <td>∆invJ ∆prgI flhD::Tn10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>SB3289</td>
+      <td>This study</td>
+      <td>∆invJ ∆orgC ∆prgI flhD::Tn10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>M2</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>Mouse monoclonal antibody to the FLAG epitope</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and plasmids
 
 All Salmonella enterica serovar Typhimurium strains used in this study are derived from the strain SL1344 (Hoiseth and Stocker, 1981) and are listed in Supplementary file 2. Genetic modifications were introduced into S. Typhimurium by allelic exchange using R6K suicide vectors or phage transduction as previously described (Kaniga et al., 1994). All plasmids used in these studies were constructed using standard recombinant DNA techniques and are listed in Supplementary file 3.
 
-## Bacterial clumping assay
+### Bacterial clumping assay
 
 The clumping assay was carried out as previously described (Lefebre and Galán, 2014). The background strain used in this assay had ∆invJ (leading to the production of long needles) and ∆flhD (eliminating motility and thus enhancing clumping) mutations, and carried a plasmid with arabinose-inducible hilA to ensure homogenous expression of the T3SS. For exogenous complementation of the ∆orgC mutant strain with OrgC proteins, purified OrgC (60 µg per ml culture) was added at the beginning of the growth period.
 
-## Purification of the Needle Complex
+### Purification of the Needle Complex
 
 The S. Typhimurium SPI-1 encoded T3SS needle complex was isolated as previously described (Kubori et al., 1998; Marlovits et al., 2006).
 
-## Bacterial two-hybrid assay
+### Bacterial two-hybrid assay
 
 Protein-protein interactions by the bacterial two-hybrid assay were carried out as previously described (Karimova et al., 1998; Akeda and Galán, 2004). Briefly, E. coli DHP1 strains transformed with two plasmids expressing the indicated proteins fused to divided adenylate cyclase were pre-cultured in LB broth containing antibiotics and 0.5 mM IPTG at 30˚C overnight. The culture was spotted onto LB plates containing X-Gal (40 ug/ml), 1 mM IPTG and antibiotics, and the plates were incubated at 30˚C for 16 hr to develop the color indicator. For this assay, a mutant of PrgI lacking its last five amino acids was used as this mutant has been shown to be soluble and unable to polymerize (Poyraz et al., 2010), a requirement to be suitable for the bacterial two hybrid assay.
 
-## Pull down assay
+### Pull down assay
 
 S. Typhimurium ∆orgC strain carrying pWSK129-based plasmids (Wang and Kushner, 1991) expressing either maltose-binding protein (MBP) or MBP-OrgC were grown overnight and cultures were lysed in 20 mM Tris (pH7.4) and 150 mM NaCl by a One Shot (Constant Systems Ltd) cell disruption system. MBP or MBP-OrgC in the cleared lysate was bound to amylose resin, washed and eluted by 10 mM maltose in the same buffer. The final samples were concentrated by TCA precipitation and analyzed by SDS-PAGE followed by immunoblot.
 
-## EM analyses
+### EM analyses
 
 Bacterial cells or purified NCs were applied to glow-discharged carbon-coated Cu grids and stained with 2% uranyl acetate. Images were acquired with Digital Micrograph (Gatan Inc.) on a FEI Tecnai T12 electron microscope (120 kV) equipped with a US4000 CCD camera (Gatan Inc.).
 
-## Expression and purification of recombinant OrgC proteins from E. coli
+### Expression and purification of recombinant OrgC proteins from E. coli
 
 Unless noted, all orgC construct (OrgC wild type or mutants carrying a 6 x His or FLAG epitope tag at their amino termini) were cloned in a pET15 vector so that they could be expressed under a T7 promoter, and the resulting plasmid were transformed into E. coli BL21(DE3). Bacterial cultures were grown at 37˚C in LB broth containing ampicillin until an OD600 of 0.6–0.8 and expression of OrgC was induced by adding 0.15 mM IPTG and subsequently grown overnight at 25˚C (to maximize protein solubility). Bacterial cells were collected by centrifugation, resuspended in a buffer containing 20 mM Tris (pH7.4), 150 mM NaCl, 10 mM imidazole, 10 µg/ml DNase, 0.5 mM MgSO4 and a protease inhibitor cocktail (complete EDTA-free, Roche), and lysed in a One Shot (Constant Systems Ltd) cell disruption system. The clarified cell lysate was bound to Ni-NTA agarose resin (Qiagen), washed in 20 mM Tris (pH7.4), 150 mM NaCl, and eluted in elution buffer [20 mM Tris (pH7.4), 150 mM NaCl and 250 mM imidazole]. The eluted OrgC protein was further purified by ion-exchange chromatography (Hi-trap Q, GE Health Life Sciences) in 20 mM Tris (pH 8.0) using a gradient of 0–1M NaCl. The OrgC containing fractions were applied to a size exchange chromatography column (Superdex 75, GE Health Life Sciences) in 20 mM Tris (pH 7.4) and 150 mM NaCl. The OrgC protein eluted as a single peak. OrgC tagged with MBP at the N-terminus was constructed in the pMAL-c5x vector (NEB), transformed into E. coli BL21(DE3), grown in LB broth at 37 ˚C until an OD600 of 0.6–0.7, when expression of MBP-OrgC was induced by addition of 0.3 mM IPTG and further incubation at 37 ˚C for 4.5 hs. Bacterial cells were disrupted as indicated above and MBP-OrgC was isolated using amylose resin (NEB) following the manufacture’s instruction, and further purified by ion-exchange and size-exclusion chromatography as described above.
 
-## Dynamic light scattering (DLS)
+### Dynamic light scattering (DLS)
 
 DLS was used to monitor the polymerization of PrgI needles in vitro following the method described by Poyraz et al. (Poyraz et al., 2010). DLS data was acquired using a PD2000 DLS instrument (Precision Detectors, Bellingham, MA) and analyzed using the manufacturer's software (Precision Deconvolve Version 4.5). The DLS acquisition parameters used were 5 us and 30 us sampling times; four repetitions; and 60 scans per repetition. For DLS, a PrgI double mutant (PrgIV65A/V67A), which was used by Poyraz et al. (Poyraz et al., 2010) in the DLS assay, was expressed and purified as a fusion protein (His-tag-GB1-PrgIV65A/V67A) similar to the expression and purification of His-tag-GB1-OrgC described below. After nickel affinity chromatography and digestion with TEV protease (to remove the tag), PrgIV65A/V67A was dialyzed in DLS buffer (20 mM HEPES pH 7.5, 50 mM NaCl) and concentrated to about 4 mg/mL. Full-length recombinant OrgC was expressed and purified by nickel affinity chromatography as described above and dialyzed in DLS buffer. Samples for DLS typically contained 300 µL of 4 mg/mL PrgI solution in DLS buffer PrgIV65A/V67A (Poyraz et al., 2010). Prior to the DLS experiment, protein samples were passed through 0.45 µm syringe filter, and DLS data was acquired at 30 min interval from 0 to 180 min.
 
-## Protein NMR spectroscopy
+### Protein NMR spectroscopy
 
 To express OrgC for NMR experiments, a deletion construct of the first N-terminal 21 amino acids was sub-cloned into pDZ1 (Zhong et al., 2012) to create a fusion protein (His-tag-GB1-OrgC) consisting of the N-terminal deletion of OrgC, a His-tag for protein purification, the B1 immunoglobulin-binding domain of Streptococcus protein G (GB1) as solubility enhancer, and a tobacco etch virus (TEV) protease cleavage site. PrgI was expressed and purified for NMR studies as previously described (Wang et al., 2007). For protein expression, plasmid expressing His-tag-GB1-OrgC or PrgI was transformed in E. coli BL21(DE3). OrgC and PrgI uniformly labeled with 15N were obtained by cell growth in 1L M9 minimal media supplemented with 15NH4Cl, antibiotics, trace minerals (ATCC MD-TMS), and vitamins (ATCC MD-VS). Unlabeled OrgC and PrgI were obtained by cell growth in 1L LB media. Typically, cells were grown to OD600 ~0.8 at 37°C, induced with 1 mM IPTG, and protein expression was continued by cell growth at 15°C. Cells were lysed by sonication and the recombinant protein was purified by nickel affinity chromatography as described (McShan et al., 2016). The His-tag-GB1-OrgC fusion protein was digested with TEV protease, followed by a second round of nickel affinity chromatography to yield recombinant OrgC.
 
 The assignment of the NMR peaks of PrgI has been reported previously (Wang et al., 2007), and the NMR assignments for OrgC followed essentially the methods used in assigning PrgI (Wang et al., 2007). Purified 15N-labeled OrgC and unlabeled PrgI were dialyzed in NMR buffer (20 mM sodium phosphate, 20 mM NaCl, pH 7), and several samples of 15N OrgC:PrgI complexes at varying molar ratios were prepared. Likewise, 15N PrgI was titrated with unlabeled OrgC in a similar manner. The titration was monitored by acquiring 2D 1H-15N heteronuclear single quantum coherence (HSQC) spectra for each titration point at room temperature using a Bruker Avance 800 MHz spectrometer equipped with a cryoprobe. The NMR spectra were processed by NMRPipe (Delaglio et al., 1995) and analyzed by NMRView (Johnson, 2004). Weighted chemical shift deviations were calculated and plotted as described (McShan et al., 2016).
 
-## NMR structure determination of OrgC
+### NMR structure determination of OrgC
 
 NMR samples for structure determination consisted of 500 μL volume of 1.2 mM 15N- or 15N/13C-labeled OrgC (residues 21–150) in 2 mM 2-(N-morpholino)ethanesulfonic acid buffer (pH 6.5) and 75 mM NaCl. Typical NMR samples were dissolved in 10% D2O, however, for 3D 13C-edited HMQC NOESY (see below), the NMR sample was lyophilized, and re-dissolved in 100% D2O. NMR spectra were acquired at 25°C using a Bruker Avance 800 MHz NMR equipped with a triple-resonance cryoprobe or a Bruker Avance 600 MHz NMR equipped with a room-temperature triple resonance probe. NMR data were processed with NMRPipe (Delaglio et al., 1995) and analyzed with NMRView (Johnson, 2004). NMR peak assignments were obtained from 2D 15N HSQC (Grzesiek and Bax, 1993a) and 3D HNCACB (Wittekind and Mueller, 1993), HNCA (Grzesiek et al., 1992), CACBCONH (Grzesiek et al., 1992), and HBHA(CO)NH (Grzesiek and Bax, 1993b). Analysis of the 13Cα, 13Cβ and 1Hα secondary chemical shifts (Wishart and Nip, 1998) identified the helical regions of OrgC. For structure calculations, distance restraints were obtained from NOEs (nuclear Overhauser effect) assigned from 3D 15N-edited HSQC NOESY (tmix120 ms) and 3D 13C-edited HMQC NOESY (tmix120 ms). Using intra-residue NOEs as internal standards, the NOEs were categorized based on peak intensities into strong, medium, and weak NOEs, and assigned upper distance limits of 2.7 Å, 3.5 Å, and 5.5 Å, respectively. Dihedral angle restraints of phi −60 ± 20° and psi −40 ± 20° were used for alpha helical regions identified by the secondary chemical shifts. Structure calculations were done using CYANA (Güntert, 2004), typically, as follows: 170 structures were calculated by simulated annealing and molecular dynamics followed by energy minimization of 100 structures with the lowest energies. The 20 lowest energy structures were analyzed to identify violations in distance and dihedral restraints. Structure calculations were repeated iteratively by addition of newly identified NOEs until the global fold of the protein emerged. The 40 CYANA structures with the lowest target functions were used as starting models for further structural calculations and refinement using AMBER7 (Case, 2002) following a similar protocol described earlier (Dames et al., 2002). Briefly, the AMBER7 structure calculation was initiated with 1000 steps of energy minimization, followed by simulated annealing in vacuo for 20 ps at 1000 K, a second round of simulated annealing for 20 ps at 500 K, and a final energy minimization of 1000 steps. In the final stages of the structural refinements, AMBER7 with the generalized Born potential (Xia et al., 2002) was used as implicit water model in NMR structure calculations. The twenty lowest energy structures were used for structural analysis using Pymol. The 20 PDB coordinates, the assigned chemical shifts, and the restraints used in the NMR structure determination were deposited at the RCSB Protein Data Bank with the accession code PDB ID 6CJD and BMRB ID 30417. The above data were used to generate Figure 7, Figure 6—figure supplement 1, Figure 7—figure supplements 1, 2, 3 and 4, and Supplementary file 1.

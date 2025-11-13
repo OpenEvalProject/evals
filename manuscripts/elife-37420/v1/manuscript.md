@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.37420.001 The colon hosts gut microbes and glucagon-like peptide 1 secreting cells, both of which influence glucose homeostasis. We tested whether colectomy is associated with development of type 2 diabetes. Using nationwide register data, we identified patients who had undergone total colectomy, partial colectomy, or proctectomy. For each colectomy patient, we selected 15 non-colectomy patients who had undergone other surgeries. Compared with non-colectomy patients, patients with total colectomy (n = 3,793) had a hazard ratio (HR) of clinically recorded type 2 diabetes of 1.40 (95% confidence interval [CI], 1.21 to 1.62; p<0.001). Corresponding HRs after right hemicolectomy (n = 10,989), left hemicolectomy (n = 2,513), and sigmoidectomy (n = 13,927) were 1.08 (95% CI, 0.99 to 1.19; p=0.10), 1.41 (95% CI, 1.19 to 1.67; p<0.001) and 1.30 (95% CI, 1.21 to 1.40; p<0.001), respectively. Although we were not able to adjust for several potential confounders, our findings suggest that the left colon may contribute to maintenance of glucose homeostasis.
+The colon hosts gut microbes and glucagon-like peptide 1 secreting cells, both of which influence glucose homeostasis. We tested whether colectomy is associated with development of type 2 diabetes. Using nationwide register data, we identified patients who had undergone total colectomy, partial colectomy, or proctectomy. For each colectomy patient, we selected 15 non-colectomy patients who had undergone other surgeries. Compared with non-colectomy patients, patients with total colectomy (n = 3,793) had a hazard ratio (HR) of clinically recorded type 2 diabetes of 1.40 (95% confidence interval [CI], 1.21 to 1.62; p<0.001). Corresponding HRs after right hemicolectomy (n = 10,989), left hemicolectomy (n = 2,513), and sigmoidectomy (n = 13,927) were 1.08 (95% CI, 0.99 to 1.19; p=0.10), 1.41 (95% CI, 1.19 to 1.67; p<0.001) and 1.30 (95% CI, 1.21 to 1.40; p<0.001), respectively. Although we were not able to adjust for several potential confounders, our findings suggest that the left colon may contribute to maintenance of glucose homeostasis.
 
 ## Introduction
 
@@ -41,6 +41,124 @@ We identified 8946 individuals with total colectomy and 90,594 individuals with 
 
 **Figure 1.:** The chart illustrates the number of eligible patients, number of patients excluded and reasons for exclusions, and the final number of patients included. For each colectomy patient, 15 non-colectomy patients were selected among (1) patients who had undergone orthopedic surgery, (2) patients who had undergone abdominal surgery leaving the gastrointestinal tract intact, and (3) patients who had undergone other surgery, unrelated to the gastrointestinal tract. Five non-colectomy patients were selected from each surgery group resulting in inclusion of a total of 694,110 non-colectomy patients matched on age, sex, and year of surgery. Non-colectomy patients were selected using sampling with replacement wherefore the total number of matches are slightly lower than the total number of colectomy patients times 15. Total colectomy includes colectomy and proctocolectomy. T2D: clinically recorded type 2 diabetes.
 
+**Table 1.**
+ Characteristics of the study population.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Patients with colectomy or proctectomy</th>
+      <th colspan="8">Non-colectomy patients</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="2">All</th>
+      <th colspan="2">Orthopedic surgery</th>
+      <th colspan="2">Abdominal surgery leaving the GI tract intact</th>
+      <th colspan="2">Other surgery unrelated to the GI tract</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>No. (% women)</td>
+      <td>Age, years</td>
+      <td>No. (% women)</td>
+      <td>Age, years</td>
+      <td>No. (% women)</td>
+      <td>Age, years</td>
+      <td>No. (% women)</td>
+      <td>Age, years</td>
+      <td>No. (% women)</td>
+      <td>Age, years</td>
+    </tr>
+    <tr>
+      <td>Total colectomy</td>
+      <td>3793 (50)</td>
+      <td>54.6 (15)</td>
+      <td>56,895 (50)</td>
+      <td>54.6 (15)</td>
+      <td>18,965 (50)</td>
+      <td>54.6 (15)</td>
+      <td>18,965 (50)</td>
+      <td>54.6 (15)</td>
+      <td>18,965 (50)</td>
+      <td>54.6 (15)</td>
+    </tr>
+    <tr>
+      <td>Right hemicolectomy</td>
+      <td>10,989 (61)</td>
+      <td>68.1 (13)</td>
+      <td>164,815 (60)</td>
+      <td>68.0 (13)</td>
+      <td>54,940 (60)</td>
+      <td>68.0 (13)</td>
+      <td>54,940 (60)</td>
+      <td>68.0 (13)</td>
+      <td>54,935 (60)</td>
+      <td>67.9 (13)</td>
+    </tr>
+    <tr>
+      <td>Resection of colon transversum</td>
+      <td>673 (61)</td>
+      <td>66.6 (14)</td>
+      <td>10,085 (60)</td>
+      <td>66.5 (14)</td>
+      <td>3365 (61)</td>
+      <td>66.5 (14)</td>
+      <td>3360 (60)</td>
+      <td>66.5 (13)</td>
+      <td>3360 (60)</td>
+      <td>66.5 (14)</td>
+    </tr>
+    <tr>
+      <td>Left hemicolectomy</td>
+      <td>2513 (53)</td>
+      <td>66.4 (12)</td>
+      <td>37,685 (53)</td>
+      <td>66.3 (12)</td>
+      <td>12,560 (53)</td>
+      <td>66.3 (12)</td>
+      <td>12,560 (53)</td>
+      <td>66.3 (12)</td>
+      <td>12,565 (53)</td>
+      <td>66.2 (12)</td>
+    </tr>
+    <tr>
+      <td>Sigmoidectomy</td>
+      <td>13,927 (53)</td>
+      <td>65.0 (13)</td>
+      <td>208,880 (53)</td>
+      <td>64.9 (13)</td>
+      <td>69,635 (53)</td>
+      <td>65.0 (13)</td>
+      <td>69,620 (53)</td>
+      <td>64.9 (13)</td>
+      <td>69,625 (53)</td>
+      <td>64.9 (13)</td>
+    </tr>
+    <tr>
+      <td>Proctectomy</td>
+      <td>14,384 (48)</td>
+      <td>65.7 (12)</td>
+      <td>215,750 (48)</td>
+      <td>65.6 (12)</td>
+      <td>71,920 (48)</td>
+      <td>65.6 (12)</td>
+      <td>71,915 (48)</td>
+      <td>65.6 (12)</td>
+      <td>71,915 (48)</td>
+      <td>65.6 (12)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Total colectomy includes colectomy and proctocolectomy. Age is mean (SD). GI: Gastrointestinal tract_
+
 The outcome was routinely clinically diagnosed type 2 diabetes (hereafter denoted ‘diabetes’) as recorded in the Danish National Patient Register. Figure 2 shows the time-corresponding cumulative hazards (double Nelson-Aalen plot) of diabetes for colectomy patients vs. non-colectomy patients. The slopes of the curves equalize the hazard ratios (a slope of 1.00 corresponds to a HR of 1.00). The cumulative hazard of diabetes was greater among patients who had undergone total colectomy compared with non-colectomy patients. Correspondingly, the HR of diabetes was 1.40 (95% confidence interval [CI], 1.21 to 1.62; p<0.001) (Figure 3). The analysis of the risk of diabetes after partial colectomy revealed that the highest cumulative hazard was observed among patients who had undergone left hemicolectomy or sigmoidectomy. Accordingly, the HR was 1.41 (95% CI, 1.19 to 1.67; p<0.001) for patients who had undergone left hemicolectomy and 1.30 (95% CI, 1.21 to 1.40; p<0.001) for patients who had undergone sigmoidectomy. Right hemicolectomy was not statistically significantly associated with increased risk of diabetes (HR 1.08 [95% CI, 0.99 to 1.19; p=0.10]). Resection of the transverse colon was infrequent, but showed the same estimate, although with wider confidence interval; HR 1.08 (95% CI, 0.76 to 1.54; p=0.66), whereas proctectomy was not associated with increased risk of diabetes; HR 0.98 (95% CI, 0.91 to 1.07; p=0.71).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/37420/elife-37420-fig2-v1.jpg)
@@ -52,6 +170,89 @@ The outcome was routinely clinically diagnosed type 2 diabetes (hereafter denote
 **Figure 3.:** Hazard ratios are presented for total colectomy, right hemicolectomy, resection of colon transversum, left hemicolectomy, sigmoidectomy, and proctectomy. Total colectomy includes colectomy and proctocolectomy. Hazard ratios are adjusted for age, sex, and year of surgery. T2D: clinically recorded type 2 diabetes.
 
 We stratified patients with colectomy into a group of colorectal cancer patients and a group with other colorectal diseases (Supplementary file 1 lists the most common diagnoses for the patients with other colorectal diseases). In both groups of patients, total colectomy was associated with increased risk of diabetes (Table 2). The HR of diabetes after total colectomy associated with colorectal cancer was 1.61 (95% CI, 1.22 to 2.11, p<0.001), whereas the HR for total colectomy associated with other colorectal disease was 1.34 (95% CI, 1.13 to 1.59, p<0.001). Corresponding HRs were 1.24 (95% CI, 1.01 to 1.53, p=0.04) and 1.88 (95% CI, 1.41 to 2.50, p<0.001) for left hemicolectomy, and 1.11 (95% CI, 0.997 to 1.24, p=0.06) and 1.47 (95% CI, 1.34 to 1.62, p<0.001) for sigmoidectomy.
+
+**Table 2.**
+ Hazard ratio of clinically recorded type 2 diabetes after total colectomy, left hemicolctomy, and sigmoidectomy for patients with co-occurring colon cancer and patients with other colorectal diseases.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Patients with colectomy (T2D/total)</th>
+      <th>Non-colectomy patients (T2D/total)</th>
+      <th>Hazard ratio (95% CI)</th>
+      <th>P-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total colectomy</td>
+      <td>201/3793</td>
+      <td>2323/56,895</td>
+      <td>1.40 (1.21–1.62)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Colorectal cancer</td>
+      <td>56/993</td>
+      <td>620/14,895</td>
+      <td>1.61 (1.22–2.11)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Other colorectal diseases</td>
+      <td>145/2800</td>
+      <td>1703/42,000</td>
+      <td>1.34 (1.13–1.59)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Left hemicolectomy</td>
+      <td>145/2513</td>
+      <td>1754/37,685</td>
+      <td>1.41 (1.19–1.67)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Colorectal cancer</td>
+      <td>93/1804</td>
+      <td>1271/27,050</td>
+      <td>1.24 (1.01–1.53)</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Other colorectal diseases</td>
+      <td>52/709</td>
+      <td>483/10,635</td>
+      <td>1.88 (1.41–2.50)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Sigmoidectomy</td>
+      <td>829/13,927</td>
+      <td>10,504/208,880</td>
+      <td>1.30 (1.21–1.40)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Colorectal cancer</td>
+      <td>334/6903</td>
+      <td>5071/103,520</td>
+      <td>1.11 (0.997–1.24)</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Other colorectal diseases</td>
+      <td>495/7024</td>
+      <td>5433/105,360</td>
+      <td>1.47 (1.34–1.62)</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_Total colectomy includes colectomy and proctocolectomy. T2D: clinically recorded type 2 diabetes._
 
 If we, instead of following the patients from 1000 days after surgery, followed the patients from the date of surgery, we found a somewhat higher HR of diabetes after total colectomy: HR = 1.72 (95% CI, 1.56 to 1.89), which, however, should be interpreted with caution due to non-proportional hazards. In contrast, HRs of diabetes after left hemicolectomy and sigmoidectomy remained similar to results from the main analyses (Supplementary file 2). When follow-up time began 500 days after surgery or 1500 days after surgery we observed similar HRs of diabetes as compared to the main analyses (Supplementary file 2).
 
@@ -73,7 +274,7 @@ In conclusion, we observed an increased risk of clinically recorded type 2 diabe
 
 ## Materials and methods
 
-## Study population and design
+### Study population and design
 
 The study is based on data from the Danish National Patient Register, which covers hospital inpatient and outpatient contacts for Danish patients from 1994 and onwards (Lynge et al., 2011). Based on the Nordic Classification of Surgical Procedures (NCSP, 1996 – 2015) and the Danish Surgical Procedure and Treatment Classification version 3 (DOTC, 1994 – 1995), we identified patients who had undergone total colectomy (with and without resection of rectum), partial colectomy, or resection of the rectum (proctectomy). We grouped partial colectomies into right hemicolectomy, resection of the transverse colon, left hemicolectomy, and sigmoidectomy (Supplementary file 3). We considered patients who had total colectomy (without resection of rectum) followed by resection of rectum as having a proctocolectomy at the date of rectum resection. For patients who had partial and later total colectomy, we disregarded the preceding partial removals.
 
@@ -83,6 +284,6 @@ The outcome, clinically recorded type 2 diabetes, was defined as the Internation
 
 The project has been reported to the Danish Data Protection Agency (ref 2015-54-0939) and the data extraction has been approved and delivered by Statens Serum Institut (ref FSEID-00001627). Informed consent and assessment of the proposal in scientific ethical committees are not required for registry-based research in Denmark.
 
-## Statistical analysis
+### Statistical analysis
 
 We analyzed the data using the ‘surv package’ in R version 3.2.2, and two-sided p-values<0.05 were considered statistically significant. The cumulative hazard of diabetes was estimated using the Nelson-Aalen estimator. Cox proportional hazards regression models were used to estimate hazard ratios (HRs) of diabetes. A linear relationship between the time-corresponding Nelson-Aalen estimators indicates fulfillment of the assumption of proportional hazards. We based our main analyses on those who were alive and who did not have a diagnosis of diabetes recorded during the first 1000 days after the surgery, for two reasons. First, as expected, colectomy patients had an increased hazard rate of death after surgery, which may reflect postsurgical morbidity possibly influencing diabetes risk for other reasons than effects of colectomy as such; the mortality among patients with total colectomy decreased during this period and stabilized from about 1000 days after surgery (Supplementary file 5). Second, diabetes may be associated with the diseases leading to colectomy, and may still be undiagnosed or not recorded at the time of surgery, but possibly so during the first years following surgery. The follow-up time for each participant ended at occurrence of diabetes, death, or at the end of the study, December 18th 2015, whichever came first, and the underlying time scale was time from 1000 days after surgery. None of the participants were lost during follow-up. In supplementary analyses, we examined the risk of diabetes when follow-up time was started at the date of surgery, 500 days after surgery, and 1500 days after surgery. To optimize the efficiency and minimize bias (Sjölander and Greenland, 2013) of the comparisons of the colectomy and non-colectomy patients, the Cox regression models included adjustment for the matching variables, sex, age and year of surgery. Separate models were fitted for total colectomy and for each type of partial colectomy and proctectomy and their respective non-colectomy patients. To elucidate whether the underlying disease, for which the colectomy was performed, influenced the subsequent risk of diabetes, the study population was stratified into two groups: a group including patients with co-occurrence of colorectal cancer (ICD-10 codes C18-C20) at the date of colectomy and a group including the remaining patients (Supplementary file 1).

@@ -27,7 +27,7 @@
 
 ## Abstract
 
-Plasmodium falciparum is a causative agent of human malaria. Sixty percent of mRNAs from its extremely AT-rich (81%) genome harbor long polyadenosine (polyA) runs within their ORFs, distinguishing the parasite from its hosts and other sequenced organisms. Recent studies indicate polyA runs cause ribosome stalling and frameshifting, triggering mRNA surveillance pathways and attenuating protein synthesis. Here, we show that P. falciparum is an exception to this rule. We demonstrate that both endogenous genes and reporter sequences containing long polyA runs are efficiently and accurately translated in P. falciparum cells. We show that polyA runs do not elicit any response from No Go Decay (NGD) or result in the production of frameshifted proteins. This is in stark contrast to what we observe in human cells or T. thermophila , an organism with similar AT-content. Finally, using stalling reporters we show that Plasmodium cells evolved not to have a fully functional NGD pathway.
+Plasmodium falciparum is a causative agent of human malaria. Sixty percent of mRNAs from its extremely AT-rich (81%) genome harbor long polyadenosine (polyA) runs within their ORFs, distinguishing the parasite from its hosts and other sequenced organisms. Recent studies indicate polyA runs cause ribosome stalling and frameshifting, triggering mRNA surveillance pathways and attenuating protein synthesis. Here, we show that P. falciparum is an exception to this rule. We demonstrate that both endogenous genes and reporter sequences containing long polyA runs are efficiently and accurately translated in P. falciparum cells. We show that polyA runs do not elicit any response from No Go Decay (NGD) or result in the production of frameshifted proteins. This is in stark contrast to what we observe in human cells or T. thermophila, an organism with similar AT-content. Finally, using stalling reporters we show that Plasmodium cells evolved not to have a fully functional NGD pathway.
 
 ## Introduction
 
@@ -39,9 +39,17 @@ Here we present data that indicate that the P. falciparum translational machiner
 
 ## Results
 
-## Plasmodium species: A paradigm-breaking genus
+### Plasmodium species: A paradigm-breaking genus
 
 Previous studies indicated that polyA runs in the coding sequences serve as hurdles to translation (Ito-Harashima et al., 2007; Arthur et al., 2015; Arthur et al., 2017; Arthur and Djuranovic, 2018; Koutmou et al., 2015; Garzia et al., 2017; Juszkiewicz and Hegde, 2017; Sundaramoorthy et al., 2017; Tournu et al., 2019; Szádeczky-Kardoss et al., 2018) that efficiently reduce protein yield and initiate NGD to degrade the mRNA. Given the very high AT-content in certain eukaryotic species (Glöckner, 2000) we sought to explore the association between coding region AT-content and transcript polyA-tract-motif abundance. In doing so, we analyzed 152 eukaryotic genomes (Figure 1A). We focused on stretches of polyadenosine nucleotides, or as defined previously 12A-1 motifs; sequences with a minimal length of 12 A’s allowing for one mismatched base (Arthur et al., 2015). We settled on 12A-1 sequence pattern since the presence of this motif reduces protein production by 40–60% in multiple human genes (Arthur et al., 2015; Arthur et al., 2017; Tuck et al., 2020). Subsequent analyses indicated that the reduction in protein amounts for genes with 12A-1 motif could be attributed to ribosome stalling and frameshifting (Arthur et al., 2017; Koutmou et al., 2015). Analyses of the selected set of eukaryotic genomes indicate that P. falciparum and other members of the Plasmodium genus have a much higher ratio of polyA tract genes when normalized to genomic AT-content (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig1-v2.jpg)
+
+**Figure 1.:** (A) The plot of 152 species representing a comparison of the ratio of polyA-affected transcripts (over a total number of transcripts) to the AT content of the coding region for each organism. H. sapiens, T. thermophila, and P. falciparum, as organisms pertinent to this paper are in black. For reference, other model organisms of interest are displayed in gray, including a position of high (65% average) and low (35%) AT-content Plasmodium spp. (B) Transcript counts for genes with 6 to 36 consecutive adenosines for H. sapiens, T. thermophila, and P. falciparum. H. sapiens and T. thermophila are limited to a single transcript at length of ≤17 As. The longest P. falciparum 3D7 transcript reaches maximal 65As, with multiple transcripts of ≤36 As. (C) Violin plot of lysine codon usage distribution in tracts of four lysine residues for 152 organisms. 3AAG+1AAA, 2AAG+2AAA and 1AAG+3AAA indicate different ratios of AAG and AAA codons in runs of four consecutive lysine codons. 4AAG and 4AAA indicate poly-lysine runs with only AAG or AAA codons, respectively. H. sapiens (circle), T. thermophila (triangle), and P. falciparum (square) are specifically noted.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Number of genes was calculated as percentage of total number of genes with ≥12 or≥12A-1 consecutive adenosine nucleotides over total number of genes for each organism.
 
 Interestingly, this feature of Plasmodium species is conserved regardless of their genomic AT-content, resulting in two groups (low and high AT-content Plasmodium spp.) with unusually large portions of polyA tract genes ranging from 35 to over 65% of the total transcriptome (Figure 1A; Erath et al., 2019). These two groups, which also appear to be separated geographically, demonstrate that even with a reduction in genomic AT-content, selective pressure exists for Plasmodium spp. to maintain polyA tract motifs. However, regardless of a selective reduction of AT-content in some Plasmodium species, or an almost complete lack thereof in the case of avian Plasmodium counterparts (Videvall, 2018), the trend of harboring a high ratio of polyA-affected transcripts given a particular AT-richness, as well as their conservation within a significant number of genes across species, remains a paradigm-breaking hallmark of the genus.
 
@@ -49,9 +57,23 @@ To further emphasize the differences between P. falciparum and other organisms, 
 
 The disparity in the number of genes with polyA tracts could be due to previously observed codon biases in P. falciparum (Saul and Battistutta, 1988). However, it was already shown that codon bias and tRNA abundance do not correlate with codon selection in genes coding for lysine repeats (Arthur et al., 2015; Koutmou et al., 2015). The poly-lysine repeats in proteins of the analyzed model organisms are usually encoded by AAG codons. To investigate the distribution of AAA and AAG codons in poly-lysine tracts in more detail, we analyzed transcripts from P. falciparum and 152 other eukaryotic genomes (Figure 1C). We observed a complete reversal of the trend exhibited in other organisms, including humans and the AT-rich T. thermophila. P. falciparum had the highest abundance of transcripts hosting four consecutive AAA codons in runs of four lysine residues (Figure 1C). This divergence from other analyzed transcriptomes is preserved in other members of Plasmodium spp., with P. berghei being an extreme example using only AAA codons in 68% of transcripts coding for poly-lysine runs. Finally, we analyzed the biological function and essentiality of the polyA tract and poly-lysine containing genes in P. falciparum genome. Previous analysis indicated that 70–85% of orthologs of polyA tract carrying genes from P. falciparum have the same polyA motifs in genes from other Plasmodium species, regardless of their genomic AT content (Habich et al., 2016). The high degree of the conservation of polyA tracts has also been noted for other eukaryotic organisms (Arthur et al., 2015). A majority of Plasmodium polyA tracts genes and poly-lysine proteins fall into the group of essential genes based on the recent mutagenesis studies (Zhang, 2018). This outcome is expected given that gene ontology results indicate enrichment in gene products involved in crucial cellular processes such as protein synthesis, RNA biogenesis, and chromosome segregation. The same gene ontology groups were previously observed in poly-lysine repeats and polyA tract genes of the other organisms (Arthur et al., 2015). In addition to these groups, Plasmodium species also had enrichment of polyA tract motifs in a group of genes defined as the cellular and pathological cell adhesion ontology group (Supplementary file 1). As such, our overall bioinformatic analyses demonstrate that Plasmodium genomes represent a unique set of organisms that have an enrichment of polyA tracts in the coding sequences. The overall conservation of both polyA tracts in the transcriptome and poly-lysine repeats in the proteome of P. falciparum has been evolutionary selected and conserved due to possible benefits for the parasite.
 
-## Reporters with polyA tracts are not a problem for P. falciparum
+### Reporters with polyA tracts are not a problem for P. falciparum
 
 As mentioned earlier, polyA tracts and poly-lysine repeats cause a reduction in mRNA stability and protein amounts, respectively, due to the ribosomal stalling and frameshifting on such motifs (Ito-Harashima et al., 2007; Arthur et al., 2015; Arthur et al., 2017; Arthur and Djuranovic, 2018; Koutmou et al., 2015; Garzia et al., 2017; Juszkiewicz and Hegde, 2017; Sundaramoorthy et al., 2017; Tournu et al., 2019; Szádeczky-Kardoss et al., 2018; Tesina et al., 2020). To investigate further how the AU-rich P. falciparum transcriptome with multiple polyA tracts gets effectively translated, we used double HA-tagged reporter constructs. The 36 adenosine nucleotide (36 As) insertion, coding for 12 lysine residues, was inserted between the sequence of double HA-tag and a fluorescent protein (+polyA36, Figure 2—figure supplement 1). As a control, we used a reporter that had only double HA-tag in front of the fluorescent-protein sequence (-polyA36, Figure 2—figure supplement 1). We expressed our reporter constructs from plasmid vectors in the P. falciparum Dd2 lab strain. In parallel, we expressed the same constructs in human dermal fibroblasts (HDFs) and T. thermophila cells (Figure 2A and B). We followed mRNA abundance of each construct by qRT-PCR (Figure 2A), and expression of the reporter protein was followed by western blot detection of the double HA-tag in all three organisms (Figure 2B). We observed robust changes in normalized mRNA levels (Figure 2A) and substantial losses in protein expression (Figure 2B) for reporters with polyA tracts (+polyA36) in both HDFs and AT-rich T. thermophila (Arthur et al., 2017; Arthur and Djuranovic, 2018). In comparison to HDFs and T. thermophila, we observed minimal, if any, effects from polyA tract insertion on reporter mRNA and protein expression in P. falciparum cells (Figure 2A and B). Further analysis of P. falciparum cells by live-fluorescence microscopy confirms the equivalent expression of mCherry reporter, judging by the intensity of fluorescence between constructs with and without polyA tract (+polyA36 and –polyA36, Figure 2C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig2-v2.jpg)
+
+**Figure 2.:** (A) mRNA abundance of reporter constructs (+polyA36) by qRT-PCR relative to their counterpart lacking polyA stretches (-polyA36) in H. sapiens, T. thermophila, and P. falciparum cells. Data represent three biological replicates with a standard deviation. (B) Expression of reporter constructs in H. sapiens, T. thermophila, and P. falciparum followed by western blot analysis with αHA or αGFP antisera. Samples from two integrated clones for the -polyA36 control (-A) and the +polyA36 reporter (+A) are shown for T. thermophila. αβ-actin, α-Histone H3 trimethyl-lysine (H3kM) and αhDHFR are used as loading controls for western blot analysis from H. sapiens, T. thermophila and P. falciparum cells, respectively. (C) Images from live fluorescence microscopy of P. falciparum expression of reporter constructs with (+polyA36) and without (-polyA36) polyA tracts as well as parent (non-transfected) line, 2.5 µm scale bar. (D) Quantification of protein amounts for Thioredoxin-2HA-NanoLuciferase (Trx-2HA-NLuc) reporter without (-polyA36) and with 36 adenosine stretch (+polyA36) expressed in P. falciparum cells. Western blot analysis of Trx-2HA-NLuc reporter (Figure 2—figure supplement 2) and luminescence measurements were normalized to hDHFR or cell number, respectively. Luminescence data represent the mean value of three biological replicates with standard deviation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Lower: Western blot analysis of Trx-2HA-Nluc reporter expression in P. falciparum without (-polyA36) and with 36 adenosine stretch (+polyA36). Human DHFR (hDHFR) expressed from the same plasmid is used as loading and transfection control. Untransfected P. falciparum control cells (con) and Biorad Precision Plus Protein molecular weight markers (MWM) are indicated.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The input samples and the elution fractions were examined by western blot using anti-HA antibody HRP labeled (sc-7392HRP) anti-hDHFR (sc-377091). The HA-pull down was done using HA-magnetic beads (ThermoScientific, 88836) at 4°C over night. Bound proteins were eluted with sample buffer (BioRad).There is an equal amount of –polyA36, +polyA36 tagged reporter gene. The HA-tagged proteins were episomally expressed in HA-tagged pelota P. falciparum Dd2 strain.
 
 To assess whether the efficiency of protein synthesis is altered when the polyA tract is located further downstream of the start codon, we designed a construct with thioredoxin (Trx) and nano-luciferase (nanoluc) proteins separated with a double HA-tag and 36As coding for a poly-lysine run (Figure 2—figure supplement 2). Measurement of nanoluc luminescence from the same number of drug-selected parasites indicates similar expression of a reporter with a polyA tract (+polyA36) compared with the control reporter (-polyA36, Figure 2D). We observed the same ratio when we analyzed the expression of reporters using western blot analysis (Figure 2D and Figure 2—figure supplement 2), arguing that the position of polyA tracts in coding sequence does not influence the efficiency of protein synthesis in P. falciparum cells.
 
@@ -59,11 +81,33 @@ Since polyA tracts cause ribosomal frameshifting (Arthur et al., 2015; Koutmou e
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig3-v2.jpg)
 
-**Figure 3.:** P. falciparum cells.(A) 2D gel analysis of HA-IP samples of wild type reporter (-polyA36). The western blots show isoelectric point (pI) at 6.25 and 6.5 (arrows). (B) 2D gel of reporter with polyA tract (+polyA36) sample indicates pI 7.25 and 7.4 (arrows).( C) 2D gel analyses of reporter with twelve lysines coded by AAG codons (12 x AAG) indicates the same effect on pI value, pI is 7.25 and 7.4 (arrows). Overlay of images of PVDF membranes stained with Coomassie Brilliant Blue, and images of western blots probed with HA-antibody. The scale with pH is on the bottom. Coomassie-stained membranes show markers (right side) and tropomyosin (33 kDa) and pI at 5.2 (arrow) as an internal standard for Isoelectric focusing (IEF).
+**Figure 3.:** (A) 2D gel analysis of HA-IP samples of wild type reporter (-polyA36). The western blots show isoelectric point (pI) at 6.25 and 6.5 (arrows). (B) 2D gel of reporter with polyA tract (+polyA36) sample indicates pI 7.25 and 7.4 (arrows).( C) 2D gel analyses of reporter with twelve lysines coded by AAG codons (12 x AAG) indicates the same effect on pI value, pI is 7.25 and 7.4 (arrows). Overlay of images of PVDF membranes stained with Coomassie Brilliant Blue, and images of western blots probed with HA-antibody. The scale with pH is on the bottom. Coomassie-stained membranes show markers (right side) and tropomyosin (33 kDa) and pI at 5.2 (arrow) as an internal standard for Isoelectric focusing (IEF).
 
-## Endogenous polyA tract genes are efficiently expressed in P. falciparum
+### Endogenous polyA tract genes are efficiently expressed in P. falciparum
 
 Due to the potential for negative selection against polyA tracts (Guler et al., 2013), particularly in laboratory conditions, we also wanted to investigate how P. falciparum translates endogenous genes with polyA tracts. With as much as 60% of the parasite transcriptome harboring polyA tract motifs, we performed a comparative analysis of ribosome profiling data from P. falciparum (Caro et al., 2014) and aggregated data for human tissues conveniently harmonized at GWIPS database (Michel et al., 2014). We analyzed whether endogenous polyA tracts and poly-lysine sequences induce translational pausing in both sets of data. Ribosome stalling can be observed in the ribosome profiling data as an increase in the abundance of ribosome footprints on sequences that cause ribosomes to pause during translation (Ingolia et al., 2014). Cumulative data for all transcripts with polyA tracts from human cells indicate substantial translational pausing on these sequences (Figure 4A). The same effect was noted on poly-lysine sequences that contained more than four consecutive lysine residues in multiple other studies using S. cerevisiae ribosome profiling datasets without cycloheximide treatment or datasets from human tissue cultures regardless of cycloheximide treatment (Arthur et al., 2015; Guydosh and Green, 2017; Requião et al., 2016; Charneski and Hurst, 2013). However, analyses of previously published P. falciparum ribosome profiling dataset (Caro et al., 2014) indicated no evidence for ribosome stalling in P. falciparum transcripts containing polyA tracts. Normalized ribosome occupancy for P. falciparum transcripts with a length of less than or equal to 22 consecutive adenosine nucleotides (≤22As), that code for more than seven consecutive lysines, indicated more or less equal ribosome occupancy over polyA tract (Figure 4B). We limited our ribosome profiling analyses of P. falciparum transcripts to polyA tracts of ≤22As, since the cumulative transcript analyses become hindered by the low sequence complexity of the region, or reduced number of reads, for the long polyA tracts (Figure 4—figure supplement 1). As such, the dip in P. falciparum occupancy plot is a result of a reads mapping artifacts. The longer polyA segment, the harder it is to uniquely map a read - typically such reads are discarded. This artifact is clearly seen in the Figure 4—figure supplement 1, where the occupancy is shown per length of polyA segment - the larger polyA track, the larger symmetrical gap around position 0. The correlation holds true to about 30nt, which is the read length in the original experiment by Caro et al., 2014.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig4-v2.jpg)
+
+**Figure 4.:** Occupancy is shown on the same scale. In both cases, to avoid the inclusion of sparsely mapped segments, regions with average occupancy below the mean for the whole dataset were excluded. In the case of P. falciparum gene segments with polyA tracts shorter than 22 adenosine nucleotides were taken into account. Centerlines show the medians; box limits indicate the 25th and 75th percentiles; whiskers extend 1.5 times the interquartile range from the 25th and 75th percentiles. Dip in around position 0 in the P. falciparum plot is an artifact of the reads mapping procedure shown in Figure 4—figure supplement 1. It is not observed in human data, because of shorter polyA segments and lower occupancy overall around these segments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Scale preserved from the main figures. In all cases, to avoid inclusion of sparsely mapped segments, regions with average occupancy below the mean for the particular dataset were excluded. Genes with segments shorter than 22 adenosine nucleotides were taken into account. In all cases data were normalized by dividing by a mean occupancy of a randomly selected gene segments equally numbered as polyA set from the same dataset. Centerlines show the medians; box limits indicate the 25th and 75th percentiles; whiskers extend 1.5 times the interquartile range from the 25th and 75th percentiles.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** PolyA tracts are indicated in red color and the longest continues stretch of adenosine nucleotides is underlined. Sequence of P. falciparum GAPDH gene (PF3D7_1462800), that was used for normalization of gene expression is also indicated.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** 2-ΔΔCt values represent mRNA abundance enrichment of genes with polyA stretches over PfGAPDH mRNA levels.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Centerlines show the medians; box limits indicate the 25th and 75th percentiles; whiskers extend 1.5 times the interquartile range from the 25th and 75th percentiles; outliers are represented by dots; numbers below plots are the number of coding sequences for each species. (B) Box and whisker plots showing the distribution of mean z-score values (measures standard deviations more stable native sequence RNA structure is vs. random) calculated for each coding sequence from H. sapiens, T. thermophila, and P. falciparum, resulting from a scanning window analysis (see Materials and methods). Plots are structured as in A.
 
 Since there is a massive increase in protein synthesis in P. falciparum cells during the trophozoite and schizont stage of IDC (Caro et al., 2014; Bunnik et al., 2013) we analyzed whether there is a different distribution of ribosome profiling reads surrounding polyA tracts at different stages of P. falciparum development. We found that the translation of endogenous polyA tracts is independent of different stages of P. falciparum IDC, as we did not notice any significant difference in the distribution of ribosome protected fragments (Figure 4—figure supplement 2) and ostensibly irrespective of the length of polyA tracts or poly-lysine runs. While we observe a relatively small increase in the number of elongating ribosomes on polyA segments in the late trophozoite and schizont stages of IDC (Figure 4—figure supplement 2), it is unclear if these indicate higher protein expression or are just an artifact of a general increase in protein synthesis at this IDC stages.
 
@@ -73,17 +117,37 @@ Finally, mRNA translation could also be affected by the ability of RNA to fold i
 
 Interestingly transcriptome z-scores revealed no significant differences between P. falciparum and T. thermophila (Figure 4—figure supplement 5). This result indicates that while RNA folding stability varies between species, following from skews in nucleotide content, the potential occurrence of ordered, structured motifs does not. This suggests that globally, P. falciparum coding sequences do not appear ordered to adopt structures any more stable than would be expected for random sequences or with the same nucleotide content found in T. thermophila. However, expression of reporters with polyA-tracts in T. thermophila is strongly attenuated (Figure 2). This computational effort does not take into account the most recent work describing the m6A mRNA methylation dynamics within P. falciparum coding sequences (Baumgarten et al., 2019). The m6A modification may impact RNA structure and association of P. falciparum mRNAs with certain RNA binding proteins (Liu et al., 2015). However, previous work has demonstrated that m6A methylation does not affect the ability of the ribosome to decode mRNAs but instead has a modest impact on the rate of translation (Hudson and Zaher, 2015; Choi et al., 2016), which could in-turn reduce the rate of protein synthesis in P. falciparum. Taken together, our analyses of the P. falciparum transcriptome and translation of genes with endogenous polyA tracts, as well as in silico assessment of overall structure and stability of AU-rich transcripts indicates that the P. falciparum translation machinery adapted to long and numerous polyA tracts in coding sequences of the majority of genes.
 
-## NGD pathway is not connected to mRNA degradation in P. falciparum
+### NGD pathway is not connected to mRNA degradation in P. falciparum
 
 PolyA tracts and poly-lysine repeats are highly efficient at causing ribosome stalling and frameshifting in bacteria and most eukaryotes (Ito-Harashima et al., 2007; Arthur et al., 2015; Arthur et al., 2017; Arthur and Djuranovic, 2018; Koutmou et al., 2015; Garzia et al., 2017; Juszkiewicz and Hegde, 2017; Sundaramoorthy et al., 2017; Tournu et al., 2019; Szádeczky-Kardoss et al., 2018; Chandrasekaran et al., 2019; Tuck et al., 2020; Tesina et al., 2020). However, our analyses of endogenous P. falciparum genes and reporters with long polyA runs, as well as immunoprecipitations did not indicate any changes in either mRNA stability, protein amounts, or protein quality (Figures 2 and 3) that was previously observed in E. coli, yeast, and human cells (Arthur et al., 2015; Arthur et al., 2017; Koutmou et al., 2015; Tuck et al., 2020). So, we turned towards analyses of mRNA surveillance pathways in P. falciparum cells and their contribution to the synthesis of poly-lysine peptides from long polyA tracts. The NMD pathway seems to be intact in Plasmodium cells (Sorber et al., 2011), while the existence of the NGD pathway has not been previously tested. We initially focused our analysis on two proteins that have been documented to be crucial for NGD pathways in eukaryotes, Hbs1 and Pelota (Shoemaker and Green, 2012). The Pelota protein in complex with Hbs1 recognizes and rescues stalled ribosomes with an empty A site on long polyA stretches, absence of tRNAs during starvation, damaged mRNAs, or stable RNA structures (Shoemaker and Green, 2012; Guydosh and Green, 2017; Tsuboi et al., 2012; Hilal et al., 2016; Becker et al., 2011). Our bioinformatics search of the P. falciparum genome did not identify an apparent homolog of Hbs1 nor the recently reported S. cerevisiae endonuclease Cue2 (NONU-1 in C. elegans) (D'Orazio et al., 2019; Glover, 2019; Navickas, 2019) in P. falciparum (Supplementary file 2). To explore whether changes in the NGD pathway are potential adaptations of P. falciparum to polyA tracts and poly-lysine repeats, we first used CRISPR/Cas9 technology (Ghorbal et al., 2014; Nasamu et al., 2017) to HA-tag the endogenous Pelota homolog (PfPelo, PF3D7_0722100, (Figure 5—figure supplement 1) in P. falciparum Dd2 cells.
 
 Since polyA-containing reporters, as well as endogenous genes, were efficiently and correctly translated in P. falciparum cells, we decided to test the P. falciparum NGD pathway with a common NGD substrate (Shoemaker and Green, 2012; Doma and Parker, 2006). We inserted a 78 bp long RNA stem-loop into the fluorescent reporter sequence (StL, Figure 5—figure supplement 2). The same stem-loop was previously described to stall ribosomes and induce NGD response with subsequent endonucleolytic cleavage in various reporters and multiple organisms (Arthur et al., 2015; Doma and Parker, 2006; Simms et al., 2017; Passos et al., 2009; Dimitrova et al., 2009). We followed both protein synthesis and mRNA abundance from the StL construct in P. falciparum cells (Figure 5A and B). Insertion of the RNA stem-loop resulted in a severe reduction of reporter protein levels (Figure 5A, Figure 5—figure supplement 2), but moderate increase in mRNA levels (Figure 5B). While we could not detect any HA-tagged StL reporter using western blot analyses (Figure 5A), we did notice the small but detectable amount of fluorescent reporter in the P. falciparum cells during live imaging (Figure 5—figure supplement 2). To test whether stem-loop structure caused ribosomes to stall, we analyzed the distribution of StL transcript in polysome profile (Figure 5C). We used constructs with and without polyA tracts as controls. Polysome profile analyses indicated that mRNA of StL construct was associated mostly with polysome fractions 7–9 that correspond to the disome peak. Such mRNA distribution was in sharp contrast with the distribution of mRNAs for constructs with and without polyA tracts (±polyA36) and argues for the potential translational stall (Figure 5C). mRNAs for constructs with and without polyA tracts (±polyA36) and for PfGAPDH were distributed more evenly along the polysome fractions (fractions 9–16). These experiments argue that stable RNA structures in mRNAs stall P. falciparum ribosomes, reducing protein synthesis from such transcript, however without significant impact on mRNA stability.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig5-v2.jpg)
+
+**Figure 5.:** (A) The western blot of –polyA36, +polyA36, and stem-loop (StL) tagged reporter gene. The blot was probed with anti-HA antibody HRP labeled (sc-7392HRP). The HA-tagged proteins were episomally expressed in HA-tagged pelota P. falciparum Dd2 strain. HA-tagged Pelota protein serves as normalization control. (*) denotes human hemoglobin as 15kD contaminant band appearing and causing cross-reactivity in western blot analyses. (B) qRT-PCR measured mRNA levels of of reporter constructs with polyA tract and stem-loop insertions (polyA36, +polyA36, Stl). In each case, data represent the mean value of three biological replicates with standard deviation. (C) Distributions of mRNA (GAPDH, -polyA36, +polyA36, Stl) and rRNA, in polysome gradients as determined by RT-qPCR. Error bars represent measurement variability as determined by two qPCR replicates. The position of monosome and disome peaks is indicated in each analyzed sample (gray shade).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic of CRISPR/Cas9 engineering of P. falciparum Pelo (PF3D7_0722100 gene; human Pelo homolog). Two sets of gRNAs creating clone 1 and clone 2(red) were used to create independent clones 1 and 2. Recombined sections of PfPelo gene are indicated in purple and gray, respectively. Primers used for creation of recombinant DNA and target sequences of gRNAs are indicated in teal, yellow and red, respectively. (B) Western blot analysis of endogenous HA-tagged PfPelo protein from two Cas9 engineered clonal lines (Clone one and Clone 2) of P. falciparum Dd2 cells. Control (con) represents non-engineered P. falciparum Dd2 parent line. Biorad Precision Plus Protein molecular weight markers (MWM) are indicated.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Sequence of the inserted stem-loop is indicated. Below – live fluorescence microscopy of P. falciparum Dd2 parent (non-transfected) line as well as cells transfected with wild type (ctrl) or –polyA36 StL reporter constructs, 2.5 µm scale bar is shown.
+
 To further test whether global arrest of translation leads to the activation of RQC and NGD mechanisms, we used isoleucine (Ile) starvation (Figure 6A) to induce widespread ribosome pausing on Ile-codons (Babbitt et al., 2012; Liu et al., 2006). Parasites rely on extensive proteolysis of human serum proteins to supplement Ile, which is found in 99% of all P. falciparum proteins (Liu et al., 2006). As such, the majority of ribosomes will have either a reduced rate of protein synthesis or will be stalled on runs of Ile-residues encoded in endogenous P. falciparum transcripts. Ile starvation in P. falciparum was previously reported to induce a state of hibernation through the arrest of protein synthesis with phosphorylation of eIF2α, but in a GCN2-independent fashion, and without existing TOR-nutrient sensing pathway nor activation of ATF4 homologue (Babbitt et al., 2012). Surprisingly, during the metabolically induced hibernation, parasites maintain their morphology while slowing down protein synthesis, and importantly more than 50% of parasites recover even after 4 days of starvation (Babbitt et al., 2012). By analyzing P. falciparum cells 72 hr into Ile-starvation, we found that expression of PfPelo and PfHsp70 chaperone were upregulated in starved cells (Figure 6B and C). The mRNA and protein levels of PfPelo were moderately increased (approximately two-fold), while levels of PfHsp70 were strongly induced (five-fold increase) in response to the Ile-starvation. This increase in PfPelo levels is reminiscent of the recently reported increased human Pelo expression during elevated ribosome stalling and the absence of recycling during the developmental transition from reticulocyte to erythrocyte (Mills et al., 2016). The substantial increase in Hsp70 levels upon starvation in human cells was associated with cell protective mechanisms against global protein misfolding (Wu et al., 1985; Rosenzweig et al., 2019).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig6-v2.jpg)
+
+**Figure 6.:** (A) The schematic presentation of the starvation experiment design. The cells were incubated for 48 hr in medium with and without Ile (+ / - Ile). After 48 hr samples were collected and protein and total RNA was isolated. (B) Relative mRNA of P. falciparum GAPDH (PF3D7_1462800), HSP70 (PF3D7_0818900), Pelo (PF3D7_0722100) transcripts after 48 hr isoleucine (Ile) starvation of the P. falciparum cells. Levels of each transcript are normalized to total GAPDH levels and represented as a ratio of transcript levels under Ile starvation (-Ile) over the control conditions (+Ile). In each case, data represent the mean value of three biological replicates with standard deviation. (C) Levels of P. falciparum HSP70 and Pelo proteins after 48 hr of Ile starvation. Western blot analysis of Ile starved (-Ile), and control (+Ile) sample are normalized to PfHAD1 (PF3D7_1033400) levels. HA-tagged P. falciparum Pelo protein was CRISPR/Cas9 engineered and detected using mouse HA-antibody. The molecular weight of each protein is indicated. (D) qRT-PCR measured mRNA levels of genes containing 3–7 Ile. PF3D7_0322300, PF3D7_0512700, PF3D7_0110600, PF3D7_0903400, PF3D7_1450600, PF3D7_1364700, PF3D7_1121000, PF3D7_1341600, PF3D7_1321400, PF3D7_1138600. Levels of each transcript are normalized to total GAPDH level and represented as a ratio of transcript levels under Ile starvation (-Ile) over the control conditions (+Ile). In each case, data represent the mean value of three biological replicates with standard deviation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Positions of Ile and lysine (Lys) runs are illustrated for each gene. Total number of Ile residues, as well as number of Ile in each run are indicated next to P. falciparum genes.
 
 To test whether Ile-rich transcripts were targeted specifically by the RQC and NGD pathway during Ile-starvation, we examined transcripts that encode Ile-rich proteins in the P. falciparum genome. Previous studies indicated that while protein levels did not drastically change throughout starvation, protein synthesis was significantly reduced (Babbitt et al., 2012). The microarray analyses of mRNAs in Ile-starvation samples also showed similar overall levels for the majority of mRNA transcripts when compared to non-starved controls. To specifically test transcripts with three and more consecutive Ile-codons, we analyzed mRNA abundance for nine P. falciparum genes during Ile-starvation (Figure 6—figure supplement 1). We did not observe the general reduction in mRNA levels for Ile-rich P. falciparum genes when we compared starved to non-starved control samples. We, instead found a slight increase in mRNA abundance for several Ile-rich transcripts during starvation (Figure 6C). This result is rather similar to Leu- and Arg-starvation in mammalian cells, where no overall change in mRNA stability is observed during amino acid starvation (Darnell et al., 2018). However, our result indicated that both increase in expression of NGD-associated factor, Pelota, and protein chaperone HSP70 may contribute to cell survival, ribosome recycling and mRNA stabilization during amino acid starvation in P. falciparum. This result is opposite to the recently reported role of human Pelo protein in the regulation of global mRNA decay on stalled mRNAs in platelets (Mills et al., 2017). Transgenic overexpression of human Pelo protein potentially releases unrecycled ribosomes and stimulates mRNA degradation during translational arrest in platelet differentiation. This is not the case in P. falciparum, where the production of the PfPelo protein is increased during the P. falciparum Ile-starvation; however, there was a lack of targeted mRNA degradation (Figure 6C). We observed, rather, stabilization of mRNAs that should cause ribosomal stalling, like in the case of StL construct (Figure 5B). These results may indicate that RQC and NGD pathway in P. falciparum cells are not connected, at least directly, to targeted mRNA degradation.
 
-## Plasmodium ribosome structure accommodates poly-lysine repeats
+### Plasmodium ribosome structure accommodates poly-lysine repeats
 
 In the light of our data with different reporters and analyses of endogenous P. falciparum genes (Figures 2–6), we were still interested as to how the P. falciparum translation machinery deals with polyA tracts and poly-lysine sequences. Ribosomal stalling on long poly-lysine runs (Arthur et al., 2015; Juszkiewicz and Hegde, 2017; Sundaramoorthy et al., 2017; Dimitrova et al., 2009; Kuroha et al., 2010; Brandman et al., 2012; Lu and Deutsch, 2008) was classically explained by electrostatic interactions of the polybasic peptide and the exit tunnel of the ribosome (Lu and Deutsch, 2008). More recent studies revealed that polyA tracts and mRNA directly contribute to ribosomal stalling and frameshifting (Arthur et al., 2015; Koutmou et al., 2015; Chandrasekaran et al., 2019; Tesina et al., 2020). Consecutive adenosines are engaged by the ribosome decoding center nucleotides and are stabilized on both sides by rRNA base stacking interactions (Chandrasekaran et al., 2019; Tesina et al., 2020), and adopt a helical conformation typical for single-stranded polyA stretches (Tang et al., 2019). Based on these reports, we analyzed P. falciparum ribosomes as the principal components that could accommodate translation of long polyA stretches.
 
@@ -92,6 +156,22 @@ The retention and conservation of polyA tracts, as well as the stage-independent
 On the other hand, while being essential and one of the most well-expressed proteins in P. falciparum cells (Wang et al., 2015; Blomqvist et al., 2017), the absence of RACK1 protein on Plasmodium ribosomes could be the most prominent features regarding the translation of polyA tracts and poly-lysine repeats (Wong et al., 2014; Sun et al., 2015; Figure 7—figure supplement 1). Asc1 (yeast RACK1 homolog) is required for endonucleolytic cleavage of stalled mRNAs in yeast cells (Matsuo et al., 2017; Ikeuchi and Inada, 2016). The deletion of RACK1/Asc1 in human or yeast cells was also shown to increase the production of proteins with polybasic peptides, however, at the cost of increased frameshifting (Sundaramoorthy et al., 2017; Kuroha et al., 2010; Wolf and Grayhack, 2015). The recent report has shown that the absence of Asc1 in yeast generally slows down elongation, promoting frameshifting on problematic CGA-CGA pairs (Tesina et al., 2020). However, the mechanisms proposed for the polyA-induced ribosome stalling involves the inhibitory conformation of polyA tract mRNA in the A site of the ribosome (Chandrasekaran et al., 2019; Tesina et al., 2020). This proposed mechanism for polyA stalling induction should not depend on species, because ribosome nucleotides interacting with π-stacked polyA sequences are universally conserved (A1756 and C1634, Figure 7—figure supplement 2). No significant differences in the mRNA tunnel have been observed in P. falciparum ribosome structures (Wong et al., 2014; Sun et al., 2015). However, differences in the resolution and absence of mRNA in P. falciparum ribosome cryo-EM structures do not allow for precise comparison of the conformation of rRNA between Plasmodium and either yeast or mammalian ribosomes (Wong et al., 2014; Sun et al., 2015). Altogether these observations do not explain why the mRNA tunnel and interactors of the P. falciparum ribosome could influence the efficient translation of polyA tracts.
 
 Recently it was postulated that the stalling on the polyA tracts is an effect of a synergy between polyA-induced suboptimal geometry at PTC and poly-lysine interactions with ribosome exit tunnel (Chandrasekaran et al., 2019).To further investigate whether additional differences in the ribosome structure contributed to P. falciparum adaptation to long polyA tracts and poly-lysine repeats, we analyzed the ribosome peptide exit tunnel of P. falciparum as predicted by the MOLE 2.5 toolkit (Figure 7; Sehnal et al., 2013). While a recent study found no differences in charge pattern along the peptide tunnel in eukaryotes, notably between P. falciparum and human (Dao Duc et al., 2019), we observed changes in hydrophobicity across the tunnel (Figure 7 and Figure 7—figure supplement 3). Interactions between clusters of positive charges and hydrophobic environments are generally unfavorable even during protein translocation (Fujita et al., 2011). Along this line, the ribosome exit tunnel of P. falciparum seems to be generally more hydrophilic, including the constriction site. Given a substantial length of poly-lysine peptide required to induce stalling on downstream polyA tracts (6 to 11, depending on the experimental system) (Chandrasekaran et al., 2019) it is plausible that the upper and the central tunnel are contributing to the observed effects. This is what is observed in other organisms. The free energy profile of lysine across the H. marismortui ribosome exit tunnel, which also has a hydrophobic region between the PTC and constriction site (Figure 7—figure supplement 3), indicates the presence of a significant energy barrier after the constriction site, not before (Petrone et al., 2008). Indeed, in vitro translation of poly-lysine and poly-phenylalanine using E. coli ribosomes resulted in rather different paths and rates of the extension of nascent peptide due to postulated hydrophobic entry to the ribosome exit tunnel (Picking et al., 1991). Moreover, in a recent structure of the polyA stalled yeast ribosome, the unresolved density was also indicated in this part of the exit tunnel next to the PTC and above the constriction site (Tesina et al., 2020). Taken together, it seems that the ribosome peptide exit tunnel of parasites adapted to accommodate synthesis of long runs of poly-lysine residues by reducing electrostatic barriers below the PTC and at the constriction site. The resulting dynamics of translation of poly-lysine might be high enough to reduce the chances for unfavorable interactions between mRNA and ribosome.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig7-v2.jpg)
+
+**Figure 7.:** The constriction site flanked by L22 and L4 is marked in the orange clamp, and lining residues in both cases are marked with ball-and-stick visualization. Vertical plot outline hydrophobicity (left) and charge (right) profiles across the tunnel (Pravda et al., 2018). The width of the tunnel is indicated on the scale at the bottom of the plot. The total lengths of the tunnel are indicated at the top of the plots.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Lower: Model of P. falciparum ribosome displaying small subunit ribosomal RNA sequence extensions (28S and 5S rRNAs in gray, 18S rRNA in cyan, tRNAs in yellow and orange, mRNA in red, extended sequences ES7S and ES9S in magenta). The ES7S and ES9S regions distinguish P. falciparum from other organisms. ES7S is located next to the binding pocket for ribosome GTPases and is adjacent to ribosome GTPase center.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (*) indicate invariant positions in alignment. Nucleotides A1756 and C1634 involved in π-stacking with polyA sequences are underlined and represented by bold letters.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/57799/elife-57799-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Lining residues in both cases are marked with ball-and-stick visualization. Vertical plot outline hydrophobicity (left) and charge (right) profiles across the tunnel. The width of the tunnel is indicated on the scale at the bottom of the plot. The total lengths of the tunnel are indicated at the top of the plots.
 
 ## Discussion
 
@@ -109,63 +189,206 @@ In conclusion, to adapt to polyA tract translation for the production of the pol
 
 ## Materials and methods
 
-## Parasite culturing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Plasmodium falciparum)</td>
+      <td>Pelota gene</td>
+      <td>This paper</td>
+      <td>PF3D7_0722100</td>
+      <td>CRISPR/Cas9 engineered with C-terminal 3xHA tag</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>Dd2 strain</td>
+      <td>Goldberg lab</td>
+      <td>http://neurolex.com/wiki/NCBITaxon:57267</td>
+      <td>P. falciparum strain used for all experiments</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Dermal fibroblast (normal, Adult)</td>
+      <td>ATCC</td>
+      <td>PCS-201–012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Adult erythrocytes (primary cell line)</td>
+      <td>Goldberg lab and BJCIH Children Hospital</td>
+      <td></td>
+      <td>Deidentified human blood. 50% haematocrit, washed in complete medium (MCM)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Tetrahymena thermophila)</td>
+      <td>strain B2086 (II)</td>
+      <td>Chalker Lab</td>
+      <td>http://neurolex.com/wiki/NCBITaxon:5911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBSICY-gtw (plasmid)</td>
+      <td>Chalker Lab</td>
+      <td></td>
+      <td>• PMCID:PMC3232721 • T. thermophila transfection plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pc-DNA-DEST40 (plasmid)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:Addgene_45597</td>
+      <td>HDF transfection plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHHT-TK (plasmid)</td>
+      <td>Goldberg Lab</td>
+      <td></td>
+      <td>Plasmid for standard CRISPR/Cas9 knock out approach in P. falciparum cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pyDHOD-2A-Cas9 (plasmid)</td>
+      <td>Goldberg lab</td>
+      <td></td>
+      <td>All-in-one Cas9+gRNA cassette vector DSM-1 resistance</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA antibody (mouse monoclonal antibody)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-7392, RRID:AB_627809</td>
+      <td>WB (1:5000), used also as HRP conjugated</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse (horse unknown clonality)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat# 7076, RRID:AB_330924)</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit (goat polyclonal antibody)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat# 7074, RRID:AB_2099233</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSP70 (rabbit polyclonal antibody)</td>
+      <td>AgriSera</td>
+      <td>Cat# AS08 371, RRID:AB_2248616</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PfHAD1 rabbit</td>
+      <td>Odom lab</td>
+      <td></td>
+      <td>WB (1:10000) PMID:25058848</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# C1988</td>
+      <td>200 uM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>WR99210</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# W1770</td>
+      <td>10 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSM1</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#533304</td>
+      <td>DHODH Inhibitor 1.5 uM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>llustra triplePrep Kit</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 28942544</td>
+      <td>DNA, RNA and protein isolation kit</td>
+    </tr>
+  </tbody>
+</table>
+
+### Parasite culturing
 
 P. falciparum line Dd2 was cultured at 2–5% hematocrit in O+ erythrocytes in RPMI 1640 supplemented with 5 g/l Albumax II (Gibco), 0.12 mM hypoxanthine (1.2 ml 0.1M hypoxanthine in 1 M NaOH), 10 μg/mL gentamicin (Trager and Jensen, 2005). Cultures were grown statically in a candle jar atmosphere. As required, cultures were synchronized with 5% (wt/vol) sorbitol. Medium for Isoleucine starvation: 16.1 g RPMI medium 1640 per l (ME011232P1 Gibco), 2 g of sodium bicarbonate,0.12 mM hypoxanthine, 10 μg/mL gentamicin, and with and w/o 100 uM Isoleucine.
 
 Generation of mCherry-GFP–Expressing plasmids with and without 12 lysines coded with 36 As in a row (polyA- and polyA+) mCherry with and without polyA was amplified from plasmids previously created (Arthur et al., 2015) pBttlysforXhoI 5′-gcgcctcgagatgggctacccatacga-3′ (XhoI site underlined) and mCherryrevAvrII 5′-gcgccctaggcttgtacagctcgtccatgccg3′ (AvrII site highlighted) digested with XhoI and AvrII, and ligated into the same sites of the episomal over-expression (EOE) a containing the promoter region for PfHsp86, a C-terminal GFP tag, and a human dihydrofolate reductase (hDHFR) drug-selection cassette (Russo et al., 2009). mCherry reporter in pc-DNA-DEST40 previously published Arthur et al., 2015; Arthur et al., 2017 used to transfect HDF cells.
 
-## HDF cells culturing and transfection
+### HDF cells culturing and transfection
 
 HDF cells (ATCC PCS-201–012) were cultured in Dulbecco’s modified Eagle’s medium (DMEM) (Gibco) and supplemented with 10% fetal bovine serum, 5% minimum essential medium nonessential amino acids (100×, Gibco), 5% penicillin and streptomycin (Gibco), and L-glutamine (Gibco). HDF cells were Mycoplasm-free based on PCR-tests using Venor GeM Mycoplasma Detection Kit (Sigma Aldrich).
 
 mCherry reporter in pc-DNA-DEST40 plasmid (1 ug) was introduced to the cells by the Neon Transfection System (Invitrogen) with 100 μl tips according to cell-specific protocols (www.lifetechnologies.com/us/en/home/life-science/cell-culture/transfection/transfection---selection-misc/neon-transfection-system/neon-protocols-cell-line-data.html). Cells electroporated with DNA plasmids were harvested after 48 hr if not indicated differently (Arthur et al., 2015).
 
-## Parasite transfection
+### Parasite transfection
 
 Asynchronous Dd2 parasites were incubated with 100 μg of maxi-prep DNA of each of the EOE constructs described above encoding mCherry-GFP (with and w/o polyA), transfected in Bio-Rad Gene Pulser cuvette (0.2 cm), 0.31 kV, 950 up, infinity resistance. 10 nM WR99210 was added to parasite 48 hr after transfection and used to select resistant parasites (Fidock and Wellems, 1997).
 
-## Saponin lysis of infected red blood cells (iRBC)
+### Saponin lysis of infected red blood cells (iRBC)
 
 The cell iRBCs were resuspended in two volumes of PBS containing 0.15% saponin, and incubated on ice for 10 min, with vigorous mixing every 3 min. Afterward, the samples were centrifuged 7000 g, 5 min, 4°C, and the pellets were washed three times more with the same buffer.
 
-## Genomic DNA (gDNA) extraction
+### Genomic DNA (gDNA) extraction
 
 The extraction of gDNA was done from samples pretreated with a saponin lysis buffer, and we followed the protocol of the DNeasy Qiagen kit.
 
-## RNA extraction and qRT-PCR
+### RNA extraction and qRT-PCR
 
 Total RNA was extracted from iRBCs using the RiboZol RNA extraction reagent (Amresco) with some changes (protocol from Jabos-Lorrrena Laboratory at Johns Hopkins School of Public Health), or we used Illustra triplePrep Kit GE Health Care. In 1 ml of pelleted iRBCs (500 g, 5 min, room temperature), parasitemia 5–7%, 5 ml of RiboZol was added. It was mixed thoroughly that all cells lysed. At this step, the sample can be snap-frozen and stored at −80°C or proceed further. Add 1 ml of chloroform and mix for 20 s. Transfer the aqueous phase to a new tube, and add 1/10th of the volume of 3 M sodium acetate, mix well and add 10 µl GlycoBlue. Add 2.5 ml of cold iso-propanol and leave overnight at −80°C. After overnight precipitation, the samples were centrifuged at 16000xg, 1 hr, 4°C. The supernatant was discarded and washed twice with 5 and 1 ml of cold ethanol. The pellets were dried and resuspended in pure water. RNA concentration was measured by NanoDrop (OD260/280). For total RNA extraction using Illustra TriplePrep Kit (item# 28942544 GE Health Care), we used 200 µl of iRBCs, parasitemia 5–7%. The cell pellet was resuspended in 600 µl PBS buffer containing 0.15% saponin (item# 47036–50 G-F Sigma), cOmplete Protease Inhibitor Cocktail without EDTA (item# 11873580001 Roche), RNase OUT 1 µl/ml (item# 10777019 Invitrogen), and incubated at RT for 10 min on ice. Afterward, it was centrifuged 7000xg, 5 min, 4°C, and the pellets were washed three times more with the same buffer. After this pretreatment to get rid of hemoglobin pellets were used for total RNA isolation following Illustra TriplePrep Kit protocol. iScript Adv cDNAkit for RT-qPCR (item# 172–5037, Bio-Rad) or SuperScript IV VILO Master Mix(item# 11756050 Life Technologies Corporation), was used with 100–200 ng of total RNA following the manufacturer’s protocol. iQ SYBR Green Supermix (item# 1708886, Bio-Rad) protocol was used for qRT-PCR on the CFX96 Real-Time system with Bio-Rad CFX Manager 3.0 software (Arthur et al., 2015). Cycle threshold (Ct) values were normalized to the hDHFR resistance gene expressed from the same plasmid or HSP86, GAPDH genes.
 
-## qRT-PCR primers
+### qRT-PCR primers
 
-## Immunoblotting and antibodies
+### Immunoblotting and antibodies
 
 Samples pretreated with lysis buffer supplemented with cOmplete Protease Inhibitor Cocktail without EDTA were prepared with passive lysis buffer (Promega), BioRad sample buffer and BioRad reducing buffer. For immunoblotting, the PVDF membranes were blocked in 5% milk in PBS. The membranes were probed with anti-HA, or Anti-HA HRP (sc-7392, sc-7392HRP, Santa Cruz) or anti-HA mouse or rabbit antibody (7076 s, 7074 s respectively, Cell Signaling) diluted in 2.5% milk in PBS-Tween20 0.1% PBST) 1: 5000, an anti-hDHFR mouse antibody (sc-377091, Santa Cruz) diluted 1:5000 in 2.5% milk in PBST, anti-HSP70 mouse(AS08 371, Agrisera, generous gift of Goldberg lab) 1:1000 in 2.5% milk in PBST, anti-PfHAD1 rabbit antibody (generous gift of Odom lab) 1:10000 in 2.5% milk PBST. Secondary HRP-labeled anti-mouse or anti-rabbit antibodies are diluted 1:5000 in 2.5% milk in PBST and incubated for an hour. After incubation with the primary antibody, the PVDF membranes were washed three times for 5 min in PBST, Prepare Working Solution by mixing equal parts of the Stable Peroxide Solution and the Luminol/Enhancer Solution (34577 SUPERSIGNAL WEST PICO PLUS, 34096 SUPERSIGNAL WEST FEMTO MAXIMUM SENSITIVITY SUBSTRATE respectively). We incubate the blot in Working Solution for 5 min. Remove the blot from Working Solution and drain excess reagent. Afterward we tookimages were generated by BioRad Molecular Imager CHemiDoc XRS System with Image Lab software.
 
-## Starvation assay
+### Starvation assay
 
 Asynchronous P. falciparum Dd2 parasites clones, with HA-tagged Pelota gene cultured in complete RPMI at 5% hematocrit and grown to ∼3–5% parasitemia. The parasites were washed twice in PBS, equally partitioned, and washed in complete, isoleucine-free, and then were replated in their respective medium. Parasite cultures were incubated at 37°C, in a candle jar atmosphere for 48 hr. After incubation, parasites were harvested. After harvesting, infected RBCs were lysed for total RNA/protein isolation or polysome profiling (Babbitt et al., 2012).
 
-## Polysome-associated RNA isolation
+### Polysome-associated RNA isolation
 
 For polysome/RNA isolation we did according to published protocols (Bunnik et al., 2013; Lacsina et al., 2011). Shortly, cycloheximide (100 mM) was added to parasite-infected red blood cell cultures to a final concentration of 200 μM. The culture was incubated for 10 min at 37°C following with pelleting erythrocytes (5 min at 500 x g at room temperature) and washed twice in PBS containing 200 μM cycloheximide. After the last wash, pellets were kept on ice and were subsequently lysed by adding 2.2 volumes of lysis buffer (1% (v/v) Nonident P-40% and 0.5% (w/v) sodium deoxycholate in polysome buffer (400 mM potassium acetate, 25 mM potassium HEPES pH 7.2, 15 mM magnesium acetate, 200 μM cycloheximide, 1 mM dithiothreitol (DTT), and 1 mM 4-(2-aminoethyl) benzenesulfonyl fluoride HCl (AEBSF))) or cOmplete Protease Inhibitor Cocktail without EDTA (Roche), RNase OUT 1 µl/ml (Invitrogen). After 10 min incubation on ice, lysates were centrifuged for 15 min at 20,000xg at 4°C, at this point, the pellets were flash-freeze and stored at −80°C. The clarified lysates were then loaded on top of a sucrose cushion (35% sucrose in polysome buffer) to concentrate the ribosomes (4 ml polycarbonate ultracentrifuge tubes and then centrifuged for two h at 150000xg at 4°C in a Type 100.3 Ti rotor (Beckman Coulter, Brea, CA, USA). Ribosome pellets were resuspended in polysome buffer. Afterward, the ribosome suspension was layered on top of a 15 ml continuous linear 15% to 60% sucrose (w/v) 2 hr 40 min 260343xg (Beckman Optima XPN-90 and the swinging bucket rotor SW41 Ti). Fractions of 500 μl were collected using a UA-5 UV detector and model 185 gradient fractionator (ISCO, Lincoln, NE, USA). RNA was extracted with acid-phenol: chloroform pH 4.5 (Life Technologies), extracted twice with chloroform, and then precipitated using isopropanol.
 
-## Plasmodium falciparum sucrose cushion for polysome profiling
+### Plasmodium falciparum sucrose cushion for polysome profiling
 
 This prep is used to isolate crude ribosome pellet, removing hemoglobin, which can then be later used for polysome profiling. We used 2 ml 100% hematocrit erythrocytes 8% parasitemia. The pellets were washed with 10 ml PBS and flash freeze in liquid nitrogen. Samples were stored at −80C before further use. Reagents: To make 10 ml Plasmodium falciparum Polysome Lysis Buffer (2.2 V/sample), we used 25 mM K-HEPES (1 M stock) 250 μL, 400 mM K-OAc (4 M stock) 1000 μL, 15 mM Mg-OAc (1 M stock) 150 μL, 1% Igepal CA-360 (100% stock), 100 μL 0.5% Na Deoxycholate (10% stock) 500 μL, 200 μM cycloheximide (100 mM stock) 20 μL, 1 mM AEBSF (200 mM stock) 50 μL, 1 mM DTT (1 M stock) 10 μL, RNase Inhibitory (40 U/μL stock) 10 μL, Molecular Grade Water 7 mL, 910 μL. Plasmodium falciparum Sucrose Cushion for Polysome Profiling (15 ml), 25 mM K-HEPES (1 M stock) 375 μL, 400 mM K-OAc (4 M stock) 1500 μL, 15 mM Mg-OAc (1 M stock) 225 μL, 200 μM cycloheximide (100 mM stock) 30 μL, 1 mM AEBSF (200 mM stock) 75 μL, 1 mM DTT (1 M stock) 15 μL, 40 U/mL RNase Inhibitory (40 U/μL stock) 15 μL, Ultrapure sucrose 5.135 g, Molecular Grade Water (to start, complete to 15 mL after dissolved and all components added) 7.5 mL. Plasmodium falciparum Polysome Wash Buffer (1.5 mL/sample) 25 mL. 25 mM K-HEPES (1 M stock) 625 μL, 400 mM K-OAc (4 M stock) 2500 μL, 15 mM Mg-OAc (1 M stock) 375 μL, 200 μM cycloheximide (100 mM stock) 50 μL, 0.1 mM AEBSF (200 mM stock) 12.5 μL, 1 mM DTT (1 M stock) 25 μL, 10 U/mL RNase Inhibitory (40 U/μL stock) 6.25 μL, Molecular Grade Water 21 mL. 406.25 μL Plasmodium falciparum Polysome Lysis Buffer (500 μL/sample) 2.5 mL 25 mM K-HEPES (1 M stock) 62.5 μL 400 mM K-OAc (4 M stock) 250 μL, Plasmodium falciparum Sucrose Cushion for Polysome Profiling - 15 mM Mg-OAc (1 M stock) 37.5 μL, 1% Igepal CA-360 (100% stock) 25 μL, 200 μM cycloheximide (100 mM stock) 5 μL, 1 mM AEBSF (200 mM stock) 12.5 μL, 1 mM DTT (1 M stock) 2.5 μL, 40 U/mL RNase Inhibitory (40 U/μL stock) 2.5 μL, Molecular Grade Water 2 mL and 102.5 μL. All steps were performed on ice. Pellets, 2 ml, were lysed with 2.2 V of lysis buffer, vortex to mix well. Incubate at 4 °C for 10 mins while rocking or rotating. Centrifuge 11,800 x g, move lysate to the fresh tube (~6.2 mL) For Sucrose Cushion Setup, we needed three cushions per sample. We were using 1 mL cushion per ~2 mL lysate. Add 1 mL sucrose to each tube. Layer sample lysates over sucrose cushion. Add 2 mL to each, then split the remainder (usually a few hundred microliters) over the three tubes. We used TLA 100.3 rotor (kept cold in the refrigerator) for ultracentrifugation. Speed: 100,000 x g, Time: 1 hr 30 mins 15 c. Temp: 4 °C When the centrifugation is finished, carefully aspirate off supernatant without touching sides so as not to disrupt pellets. Wash pellet 3X with 500 μL wash buffer, gently pipetting on the side opposite the pellet near the bottom of the tube. Resuspend and combine pellets for each sample in a total of 500 μL ribosome resuspension buffer. Pipet to disperse pellet. Use 200 μL tips to further disperse. Move to 1.5 mL microcentrifuge tube Incubate at 4 °C, rotating end-over-end, for at least 10 min. To remove remaining hemoglobin, set up another 1 mL sucrose cushion for each sample as previously. 23. A quick spin to collect samples to the bottom of the tube. Layer ribosome suspension over sucrose cushion, balance using ribosome resuspension buffer. Centrifuge as previously. Wash 3X with 500 μL wash buffer as previously. Resuspend in 500 μL ribosome resuspension buffer as previously. If not, proceed to the next steps immediately, flash-freeze in liquid nitrogen and store at −80 °C.
 
-## Parasite live imaging
+### Parasite live imaging
 
 To image P. falciparum Dd2 strain episomally expressing polyA- and polyA+ constructs, we used 50 µl of infected erythrocytes, washed two times in PBS. The nucleus was stained with 1:1000 dilution of Hoechst 33342 for 10 min at room temperature. The cells were washed two times with PBS (500xg, 5 min, room temperature). After the washing step, the cells were resuspended in PBS (500 µl), 5 µl of cell resuspension was put on positively charged slides and put Zeiss cover glasses (item number:474030-9000-000). The cover glasses were sealed with nail polish, and subsequently, microscopy was performed.
 
 Samples were visualized using an upright Zeiss Examiner.Z1-based 880 LSM with a 100x/1.46 oil-immersion objective. DAPI was excited using a 405 nm diode laser, mCherry was excited with a 561 nm DPSS laser, and GFP was excited with an Argon laser tuned to 488 nm. Optical sections (0.3 µm) were acquired with an Airyscan super-resolution detector and were processed using ZEN Blue v. 2.3.
 
-## Generating Tetrahymena thermophila expressing YFP plasmids without (polyA-) and with (polyA+) coding for 12 lysines
+### Generating Tetrahymena thermophila expressing YFP plasmids without (polyA-) and with (polyA+) coding for 12 lysines
 
 Tetrahymena thermophila strain B2086 (II) was used for all experiments reported. Similar results were obtained with strain CU428 [(VII) mpr1-1/mpr1-1]. To assess the effect of LysAAA codons on protein accumulation, we modified a fluorescent protein tagging vector, pBSICY-gtw (Motl and Chalker, 2011) so as to fuse YFP to the carboxyl-terminus of a macronucleus-localized protein of unknown function (TTHERM_00384860), separated by a Gateway recombination cassette (Invitrogen/Life Technologies, Inc), and expressed from the cadmium inducible MTT1 promoter (Shang et al., 2002). The TTHERM_00384860 coding region was amplified with oligonucleotides 5’ ALM Bsi’ 5’ - CAC CCG TAC GAA TAA AAT GAG CAT TAA TAA AGA AGA AGT-3’ and 3’ ALM RV 5’- GAT ATC TTC AAT TTT AAT TTT TCT TCG AAG TTG C 3’ and cloned into pENTR-D in a topoisomerase mediated reaction prior to digesting with BsiWI and EcoRV and inserting into BsiWI/PmeI digested pBSICY-gtw. Subsequently, LR Clonase II was used to insert a linker containing the sequence coding for an HA epitope tag alone (N) or the tag plus 36 adenosines (K12) in place of the Gateway cassette. The expression cassette is located within the 5’ flanking region of a cycloheximide resistant allele of the rpL29 gene to direct its integration into this genomic locus. These constructs were linearized with PvuI and SacI in the region flanking the Tetrahymena rpl29 sequences and introduced into starved Tetrahymena cells by biolistic transformation (Bruns and Cassidy-Hanley, 2000; Cassidy-Hanley, 1997). Transformants were selected in 1x SPP medium containing 12.5 μg/ml cycloheximide. To control for copy number, PCR assays with primers MTT2386 5’- tc tta gct acg tga ttc acg −3’and Chx-117, 5’- ATG TGT TAT TAA TCG ATT GAT −3’ and Chx85r, 5’- TCT CTT TCA TGC ATG CTA GC – 3’ verified that all rpL29 loci contained the integrated expression construct. Transgene expression was induced by addition of 0.4 μg/ml CdCl2 and cells were grown 12–16 hr before monitoring protein accumulation. YFP accumulation was visualized by epifluorescence microscopy as previously described (Matsuda et al., 2010). Whole cells extracts were generated by boiling concentrated cell pellets in 1x Laemmli sample buffer, followed by were fractionation on 10% SDS polyacrylamide gels and transferred to nitrocellulose. YFP accumulation was a monitored with mouse anti-GFP antisera (G28R anti-GFP (OAEA00007) antibody, Aviva Systems Biology) and normalized to acetylated Rabbit anti-Histone H3 trimethyl-lysine (Upstate Biotechnologies/Millipore, NY, 07–473). Accumulation of transcripts was assessed on Northern blots as previously described using a 32P-random-primer-labeled YFP probe (Chalker and Yao, 2001).
 
-## 2D-electrophoresis
+### 2D-electrophoresis
 
 2 ml (100% hct) of P. falciparum infected erytrocyes (HA-pelo Dd2 strain, parasitemia 7–9%) were treated with PBS saponin 0.15%, and protease inhibitor w/o EDTA. The pellets were washed in PBS-saponin bufer three times. Afterwards, the samples were used to do immunoprecipitation (IP). We used Pierce HA-magnetic beads 25 µl and further proceeded with cell lysis:Lysis Buffer:150 mM NaCl, 50 mM Tris pH 7.5, 1% IGPAL-CA-630 (Sigma, #I8896), 5% Glycerol, Protease (1 mM PMSF) and phosphatase inhibitors. Sample wash: Wash Buffer: 150 mM NaCl, 50 mM Tris pH 7.5, 5% Glycerol. After the washing step the samples were snap frozen in liquid nitrogen for 2D gel analysis.
 
@@ -173,15 +396,19 @@ Two-dimensional electrophoresis was performed according to the carrier ampholine
 
 After equilibration for 10 min in Buffer 'O' (10% glycerol, 50 mM dithiothreitol, 2.3% SDS and 0.0625 M tris, pH 6.8), each tube gel was sealed to the top of a stacking gel that overlaid a 10% acrylamide slab gel (0.75 mm thick). SDS slab gel electrophoresis was carried out for about 4 hr at 15 mA/gel. After slab gel electrophoresis, the duplicate gel for blotting was placed in transfer buffer (10mMCaps, pH 11.0, 10% MeOH) and transblotted onto a PVDF membrane overnight at 200 mA and approximately 100 volts/two gels. The following proteins (Millipore Sigma) were used as molecular weight standards: myosin (220,000), phosphorylase A (94,000), catalase (60,000), actin (43,000) carbonic anhydrase (29,000) and lysozyme (14,000). These standards appear as bands at the basic edge of the Coomassie Brilliant Blue R-250-stained membrane.
 
-## Coding sequence metrics
+### Coding sequence metrics
 
-Coding sequences for each organism (Plasmodium falciparum 3D7 - EPr 1, Tetrahymena thermophila – JCVI-TTA1-2.2, and human - GRCh38.p7) were downloaded from their respective Ensembl BioMart pages (accessed on March 19th 2018). Each set of genes was filtered to include only the longest coding sequence variant. The resulting sequences were each analyzed using a folding window approach; a window of 120 nt was scanned across each sequence with a single nucleotide step size. Each window sequence was folded (using RNAfold) to determine its minimum free energy structure/value (MFEnative) (Lorenz et al., 2011). At the same time, MFE values were calculated for 30 randomized versions of the native window sequence (MFErandom). The mean of MFErandom values were compared to that of the native in a method adapted from Clote et al., 2005 and illustrated in the following equation:z−score= MFEnative−MFErandom¯Std DevMFE
+Coding sequences for each organism (Plasmodium falciparum 3D7 - EPr 1, Tetrahymena thermophila – JCVI-TTA1-2.2, and human - GRCh38.p7) were downloaded from their respective Ensembl BioMart pages (accessed on March 19th 2018). Each set of genes was filtered to include only the longest coding sequence variant. The resulting sequences were each analyzed using a folding window approach; a window of 120 nt was scanned across each sequence with a single nucleotide step size. Each window sequence was folded (using RNAfold) to determine its minimum free energy structure/value (MFEnative) (Lorenz et al., 2011). At the same time, MFE values were calculated for 30 randomized versions of the native window sequence (MFErandom). The mean of MFErandom values were compared to that of the native in a method adapted from Clote et al., 2005 and illustrated in the following equation:
+
+$$
+z−score= \frac{MFE_{native}−MFE_{random}¯}{Std Dev_{MFE}}
+$$
 
 The mean window MFE and z-score values of each gene were calculated and compiled in separate spreadsheets. Box and whisker plots (generated using BoxPlotR Spitzer et al., 2014) are shown, depicting the distribution of these means for each organism.
 
-## Bioinformatics analyses
+### Bioinformatics analyses
 
-## Ribosome profiling
+#### Ribosome profiling
 
 GWIPS database was used as the source of ribosome profiling data. We downloaded Caro et al., 2014 dataset for Plasmodium falciparum (the only dataset available for that species), while for humans, we used aggregate for all deposited studies. In both cases, we took a dataset for elongating ribosomes mapped to A-site.
 
@@ -189,10 +416,10 @@ The definition of polyA-tracts was taken from Arthur et al., 2015, which are twe
 
 To make occupancy plots between different life stages comparable (Figure 4—figure supplement 2), we have introduced a normalization mechanism, where occupancy of polyA region was divided by a mean from similarly sized distribution of random fragments of the same length that had the 0 position within the coding region. Randomization was preserving chromosome distribution of the original polyA-carrying genes dataset. All the analyses were done using R language.
 
-## Gene ontology analysis
+#### Gene ontology analysis
 
 Gene Ontology analysis was done using the Gene Ontology Enrichment tool at PlasmoDB website (Aurrecoechea et al., 2009), using default options. For Supplementary file 1 we took only those terms that had Bonferroni-adjusted p-value better than 0.05.
 
-## Structural analyses
+#### Structural analyses
 
 Structural analyses were done using MOLEonline service version 2.5 (Pravda et al., 2018) using default parameters, with manual selection of the proper tunnel among all predicted by this service. Due to limits of the method, it was not possible to enforce the same length of the tunnel in all structures, yet the hydrophobic patches formed by interaction with rRNA and L4/L22 proteins were easy to observe in all structures.

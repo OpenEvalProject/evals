@@ -33,9 +33,21 @@ There has been substantial progress in characterizing the diverse neuronal circu
 
 ## Results
 
-## Brain-wide rs-fMRI associates STN with trait impulsivity
+### Brain-wide rs-fMRI associates STN with trait impulsivity
 
 To screen for brain circuitry underlying trait impulsivity, we modeled variant impulsive behaviors in isogenic strains as proxy (Isles et al., 2004; Loos et al., 2015; Loos et al., 2010). Compared to more complex scenarios addressed by between strain comparisons, this strategy was designed to identify basic functional differences emerging from a single genetic and neuroanatomical context, here C57BL/6. We chose a free-moving variant of a GNG task (Gubner et al., 2010) with signaled trials. This assay allowed us to monitor a broad range of behavioral characteristics within a given task session, from general motor behavior to several impulsivity-related parameters, which was not possible with head-fixed or port-fixed variants of this task (Allen et al., 2017; Bathellier et al., 2012; Berdichevskaia and Cazé, 2016; Montijn et al., 2015). Each trial of the task was automatically initiated by a light cue that signaled the beginning of the precue period (Figure 1A). Responses during this period were recorded (precue response rate), but neither rewarded nor penalized. After a randomized time period, an auditory cue was presented signaling either a Go or a No-Go (NG) trial. Correct reresponses to both Go (response) and NG (withhold) cues were rewarded. Conversely, incorrect Go and NG trials were noted as omission and false alarm (FA), respectively, and no reward was delivered (see Materials and methods for details). Precue response rate and FAs provide two important but distinct parameters of impulsivity in this task. FA responses in the port during the presentation of the NG cue indicate the capacity to restrain prepotent motor responses (called stopping impulsivity), indicating cognitive executions; they are thus an index of failure in cue-related withhold behavior. Precue responses, by contrast, reflect impulsive action in the preparatory phase of the task, indicating how long an animal is willing to withhold a response (called waiting impulsivity) before a cue appears (Dalley and Robbins, 2017; Gubner et al., 2010; Moschak et al., 2013; Moschak et al., 2012; Moschak and Mitchell, 2012). These forms of impulsivity may have different translational implications for psychiatric symptoms, as their involvement in pathobiology for obsessive compulsive and addiction-related conditions, respectively, has been shown (Broos et al., 2012; Eagle et al., 2008a).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic description of the Go/No-Go (GNG) task. The start of each trial is cued by the light turning on (precue period). Precue responses are recorded. Correct Go responses and No-Go (NG) withholds are rewarded. Incorrect Go and NG responses are recorded as an omission and false alarm (FA), respectively, with no reward delivery (see Materials and methods for details). (B) Example of behavioral recording of individual animals from either the high impulsive (HI) or low impulsive (LI) group. Each row represents a single trial. Correct responses to a Go (Go) or NG trial, and FA responses to a NG trial (FA) are grouped. (C) Behavioral split into HI (N = 5) and LI (N = 5) animals (see Figure 1—figure supplement 1A) showing stable differences in (i) precue response rate (main effect of impulsivity F1,8 = 11.69, p = 0.009, no main effect of session F2,16 = 1.454, p = 0.263 and no interaction F2,16 = 0.389, p = 0.684). (ii) FAs (main effect of impulsivity F1,8 = 17.82, p = 0.003, no effect of session F2,16 = 1.511, p = 0.251 and no interaction F2,16 = 0.710, p = 0.507) in three consecutive sessions (S18–S20). (iii) A significant main effect for session was found for % of correct Go trials (F2,16 = 4.558, p = 0.027), but no main effect of impulsivity (F2,16 = 0.207, p = 0.815) or interaction (F2,16 = 0.207, p = 0.815). Group means ± SEM and single animal data in the background in the last three training sessions. (D, E) Brain-wide rs-fMRI identifies differences in functional connectivity. (D) 3D visualization of the node-wise one-sample t-tests from node-wise connectivity difference between HI vs. LI showing the STN as the node with the highest functional connectivity in LI animals when compared to HI. Color indicates that the mean node connectivity is higher in the HI group (red) or in LI animals (blue); size correlates with t-value. Only significantly different nodes are shown. (E) Ordered, normalized one-sample t-test t-values from node-wise connectivity strength measurements for splits based on (i) impulsivity parameters, (ii) total distance traveled, and (iii) number of licks in the GNG task. Gray bars indicate that the p value did not reach significance. Bonferroni corrected for multiple comparisons. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. ACB – nucleus accumbens; AI – agranular insular area; AMY – amygdalar nuclei; Csm – superior central nucleus raphe; HIP – hippocampus; ILA – infralimbic area; MRN – MB reticular nucleus; ORB – orbital area; PAG – periaqueductal gray; RHP – retrohippocampal region; STN – subthalamic nucleus.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Behavioral split into high impulsive (HI, N = 5) and low impulsive (LI, N = 5) animals, grouped into HI/LI based on precue response and false alarm (FA) rates. Mean single animal data for each category over the last three training sessions. (B) No difference in either distribution of latency to poke in incorrect No-Go (NG) trials (Kolmogorov-Smirnov test, D = 0.1177, p = 0.966) or correct Go trials (Kolmogorov-Smirnov test, D = 0.1426, p = 0.1316). Data shown as cumulative plots for all animals from a representative training session. (C) No difference between HI and LI animals in total number of licks in reward/inter-trial interval (ITI) periods per session, averaged across the last three training sessions (two-tailed t-test t8 = 0.8255, p = 0.433). (D) (i) Behavioral split of animals based on high (HD) and low (LD) distance traveled in the Go/No-Go (GNG) task (two-tailed t-test t8 = 2.996, p = 0.0172). N = 5 per group. (ii) Behavioral split of animals based on high (HL) and low (LL) number of licks during reward/ITI period in the GNG task (two-tailed t-test t8 = 2.654, p = 0.0291). *p < 0.05. N = 5 per group.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Depiction of the position and area range for the top three candidate regions with the highest correlation measures in LI animals compared to their HI littermates. Note, only left hemisphere is shown. Scale bar = 5 mm. (B) Difference in mean cross-correlation in HI and LI groups of animals. (C) Node-wise difference of Fisher Z-transform of correlation between (i) impulsivity levels (HI vs. LI), (ii) distance traveled (high [HD] vs. low [LD]), and (iii) licks (high [HL] vs. low [LL]). Box–whisker plots display median, interquartile range, and tenth to ninetieth percentiles of the distribution, dot indicates mean. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. ACA – anterior cingulate area; ACB – nucleus accumbens; AI – agranular insular area; AMY – amygdalar nuclei; AUD – auditory area; CB – cerebellum; COA – amygdala cortex; CP – caudoputamen; Csm – superior central nucleus raphe; ECT – ectorhinal area; ENT – entorhinal area; FRP – frontal pole; FS – fundus of striatum; GU – gustatory areas; HIP – hippocampus; HT – hypothalamus; IC – colliculi inferior; ILA – infralimbic area; LSX – lateral septal complex; MO – somatomotor areas; MRN – MB reticular nucleus; MY – rostromedial medulla; NBM – nucleus basalis of Meynert; OLF – olfactory area; ORB – orbital area; OT – olfactory tubercle; PAG – periaqueductal gray; PALc – pallidum caudal; PALd – pallidum dorsal; PALm – pallidum medial; PALv – pallidum ventral; PB – parabrachial nucleus; PERI – perirhinal area; PIR – piriform; PL – prelimbic area; PRNr – pontine reticular nucleus; PTLp – post parietal association area; RHP – retrohippocampal region; RSP – retrosplenial area; SC – superior colliculus; SNr – substantia nigra; SS – somatosensory areas; STN – subthalamic nucleus; TEa – temporal association area; TH – thalamus; VIS – visual area; VISC – visceral area; VTA – ventral tegmental area; ZI – zona incerta.
 
 To map hotspots in trait impulsivity within brain networks, we first trained an initial cohort of mice in our cued GNG task (Figure 1A). We then set a behavioral contrast between the top 75th percentiles and bottom 25th percentiles on a compound impulsivity measure of both precue response rate and incorrect NG responses (FA) (Figure 1—figure supplement 1A). This served as a boundary for high and low impulsive (HI and LI) animals, respectively (Figure 1B), which expressed stable impulsive traits over the course of at least three sessions (Figure 1Ci,ii). To isolate variance in impulsive behavior, independent of motivational state or performance in task execution, HI/LI groups were filtered for similar levels of correct Go responses (>95%, Figure 1Ciii and Figure 1—figure supplement 1B) and total number of licks at reward delivery (Figure 1—figure supplement 1C).
 
@@ -47,9 +59,25 @@ To contrast functional networks for trait impulsivity with those from other beha
 
 Taken together, the rs-fMRI screen identified the STN as a modulatory hub with comparably high specificity for trait impulsivity. This suggests that the STN, in addition to its canonical role in basic motor control, is also the main site of naturally occurring variance in trait impulsivity.
 
-## STN differentially encodes impulsive features and motor states
+### STN differentially encodes impulsive features and motor states
 
 To dissect further the specific roles of the STN in impulsivity and motor function, we performed in vivo extracellular recordings during the GNG task (Figure 2—figure supplement 1, Figure 2—figure supplement 2A-B). We found mild responses in the STN in response to the light cue that signaled the beginning of the precue period (Figure 2Ai), indicating specific activity in the waiting period of the task. As expected, we also found responses to the Go sound onset (Figure 2Aii), but we saw no significant response to the auditory cue signaling an NG trial, whether the animals responded with an FA (Figure 2Aiii) or with a correct withhold (Figure 2—figure supplement 2C). Consistent with the role of the STN in reward processing (Breysse et al., 2015; Espinosa-Parrilla et al., 2013; Lardeux et al., 2009), several units modulated their activity upon reward (Figure 2Aiv). Surprisingly, reward-related information is processed by units separate from those potentially gating Go responses (Figure 2—figure supplement 2B, Figure 2—figure supplement 2E). From these data, we conclude that responses to the Go cue and to the reward are encoded by separate channels in the STN. Using distinct channels may uncouple reward value from response control during conditional responding. Our analysis also revealed STN responses coupled to the precue, Go, and FA pokes (Figure 2Bi-iii), and we detected unit populations within the STN that responded to the onset of immobility (Figure 2Biv) and movement (Figure 2—figure supplement 2D). These immobility onsets were spread across various task periods; the majority occurred either in the precue or ITI periods of the task, and fewer than 5% occurred during presentation of the NG sound (Figure 2—figure supplement 2F). These data indicate that the STN encodes preparatory withholding, akin to behavioral inhibition, rather than cognitive control of Go vs. NG cue-dependent behavioral discrimination (Gubner et al., 2010).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig2-v2.jpg)
+
+**Figure 2.:** (A, B) Population traces of excited (up) and inhibited (down) units. (A) Peri-event data of unit responses aligned to stimulus onsets: light onset (Ai, nUp = 7, nDown = 15 from NAnimals = 3), Go sound followed by correct response (Aii), nUp = 13, nDown = 21 from NAnimals = 3), No-Go (NG) sound followed by false alarm (FA) (Aiii, nUp = 3, nDown = 14 from NAnimals = 3), reward (Aiv, nUp = 23, nDown = 28 from NAnimals = 3) and behavioral onsets (B) of precue poke (Bi, nUp = 18, nDown = 25), Go poke (Bii, nUp = 21, nDown = 31 from NAnimals = 3), FA poke (Biii, nUp = 11, nDown = 22 from NAnimals = 3), immobility (Biv, nUp = 12,nDown = 23 from NAnimals = 3). Horizontal colored bars at the top of each panel indicate time bins with a significantly different firing rate to the baseline firing rate (p < 0.05, cluster-based permutation tests). Circles represent the proportion of cells excited (red), inhibited (blue), or non-responsive to a given event (* given population reached significance in the permutation test). (C) Population activity vectors in PCA space for stimulus-driven peri-events in panel (A) (i) and behavior-driven peri-events shown in panel (B) (ii) in a –5 to 5 s time window. (D) Alluvial plot of individual STN units to precue poke, Go sound with correct response, NG sound followed by FA and immobility onsets. The width of the ribbon is proportional to the fraction of units with a given response pattern. Ribbons are color coded according to precue poke responses. (E) Change in mean firing rate during the entire precue period of unit populations (split by response to precue poke) on trials with no precue poke, low (<0.15), mid (0.15–0.3), and high (>0.3) precue response rate (nUp = 18, nDown = 25, nNon-responder = 31 from NAnimals = 3). *p < 0.05, ***p < 0.001. (F) LFP power spectra in STN during precue, Go sound, NG sound, and immobility periods (Nanimals = 3). (G) Within frequency Z-scored LFP spectrogram (i) and frequency band-averaged, 2s-binned time course thereof (ii) in the STN, both centered around precue pokes. Mean Z-score ± SEM from nChannels = 48, NAnimals = 3. Colored lines indicate significant differences to the baseline (BL) period in the respective frequency band, as determined by two-way ANOVA (significant main effect of time (F4.438,625.8 = 65.59, p < 0.0001) and time × frequency band interaction (F14,987 = 2.926, p = 0.0002) and Dunnet post hoc analysis (p < 0.05)).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Electrode placement in electrophysiology experiments for subthalamic nucleus (STN). Each line represents one animal.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Example of waveforms and unit sorting in principal component analysis (PCA) space done on concatenated data from three behavioral sessions. (B) Representative waveforms for units shown in Figure 2. (C–D) Peri-event data showing unit responses aligned to onsets of sound in No-Go (NG) trials followed by withhold (C, nUp = 2, nDown = 15 from NAnimals = 3) and movement (D, nUp = 7, nDown = 27 from NAnimals = 3). Horizontal colored bars at the top of each panel indicate bins with a significantly different firing rate vs. baseline firing (p < 0.05, cluster-based permutation test). Circles represent the proportion of cells excited (red), inhibited (blue), or non-responding to a given event (* given population reached significance in permutation test). (E) Alluvial plot showing the variety of response patterns of STN units to Go sound and NG sound followed by poke, reward, and light onsets. The width of the ribbon is proportional to the fraction of units with a given response pattern. Ribbons are color-coded according to Go sound responses. (F) Distribution of immobility onsets across the different task periods. (G) Population activity vectors in PCA space for given peri-events from Figure 2Cii, split by time relative to event onset.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Within-frequency Z-scored LFP power spectra (upper) and frequency band-averaged, 2s-binned (lower) time courses in the STN aligned to Go pokes (i), false alarm (FA) pokes (ii) and immobility onset (iii). Two-way repeated measures (RM) ANOVA revealed significant main effects of time (F2.697,380.3 = 110.6, p < 0.0001) and frequency band (F2,141 = 11.62, p < 0.0001), and a significant time × frequency band interaction (F14,987 = 18.78, p < 0.0001) for (i), significant main effects of time (F3.805,536.6 = 18.69, p < 0.0001) and frequency band (F2,141 = 4.06, p = 0.019), and a significant time × frequency band interaction (F14,987 = 3.505, p < 0.0001) for (ii), and a significant main effect of time (F7,987 = 23.14, p < 0.0001), no main effect of frequency band (F2,141 = 0.824, p = 0.441), but a significant time × frequency band interaction (F14,987 = 16.97, p < 0.0001) for (iii). (B) Within-frequency Z-scored LFP power spectra (upper) and frequency band-averaged, 2s-binned (lower) time courses in the STN aligned to light onset (i), Go sound onset (ii) and No-Go (NG) sound onset (iii). Two-way RM ANOVA revealed a significant main effect of time (F4.571,644.5 = 21.10, p < 0.0001), no main effect of frequency band (F2,141 = 1.933, p = 0.149), but a significant time × frequency band interaction (F14,987 = 4.772, p < 0.0001) for (i), significant main effects of time (F2.960,417.3 = 56.93, p < 0.0001) and frequency band (F2,141 = 16.16, p < 0.0001), and a significant time × frequency band interaction (F14,987 = 13.00, p < 0.0001) for (ii), and a significant main effect of time (F4.620,651.4 = 15.04, p < 0.0001), no main effect of frequency band (F2,141 = 0.0417, p = 0.959), and no time × frequency band interaction (F14,987 = 0.956, p = 0.498) for (iii). Mean Z-score ± SEM from nChannels = 48, NAnimals = 3. Colored lines indicate significant differences to the baseline (BL) period in the respective frequency band, as determined by two-way RM ANOVA and Dunnet post hoc analysis (p < 0.05).
 
 We next explored the encoding of these features in the principal component analysis (PCA) space of the population vector activity in the STN. We found distinct vector paths for subsets of these parameters, which suggests rather rigid separation of some stimulus and behavior variables. Responses to the Go sound and reward onset had similar trajectories in PCA space (Figure 2Ci), with weak general response to both light and NG sound onsets. Moreover, cell-by-cell analysis revealed that these states were encoded across STN units and each unit carried multiple signals (Figure 2—figure supplement 2E). Precue poke trajectories (and to a lesser extent FA pokes) were separated from the trajectories for immobility and Go pokes (Figure 2Cii, Figure 2—figure supplement 2G). These data indicate that the STN encodes features of impulsivity, particularly those associated with precue pokes, as a behavioral state distinct and dissociable from Go responses. The sets of units that responded to precue pokes with decreased firing rates, varied in their firing patterns for other behavioral variables, for example, non-responding, increasing, or decreasing upon Go poke or immobility onsets (Figure 2D). Taken together, these findings suggest multiplexed encoding of impulsivity and motor features in the GNG task at the unit level.
 
@@ -57,27 +85,71 @@ Since many of the investigated units were bound to a precue poke event, we exami
 
 Local units are bound by time-locked oscillations that organize functional coupling to intra-STN and mesoscale brain networks. Specifically, beta-range coupling in the STN is associated with action inhibition (Leventhal, 2012; Schmidt et al., 2013), whereas gamma-range coupling is associated with action execution (Jenkinson et al., 2013). To study the oscillatory activity during the GNG task, we compared event- (precue, Go and NG sound periods) and behavior- (immobility) related spectral powers in the task (Figure 2F). High theta power during immobility might reflect pre-decision-making for action selection (Heikenfeld et al., 2020; Zavala et al., 2015). As expected from the role of STN in action inhibition, the immobility period showed the strongest LFP power in the beta band (Figure 2F inset), while the highest gamma power was bound to the Go sound cue (Figure 2F inset), reflecting beta- and gamma-related behavioral inhibition and execution, respectively. To investigate these patterns in more detail, we used time-resolved power spectrograms centered around the onset of events and behaviors. This analysis revealed action-locked STN activity probably linked to reward expectation/consumption (Figure 2—figure supplement 3Bii/Ai). This signal was absent from NG-cued and non-reinforced FA pokes (Figure 2—figure supplement 2Aii). By contrast, immobility onset correlated with an overall increase in theta power, followed by a drop of beta and gamma activity (Figure 2—figure supplement 3Aiii). Unlike the ITI periods, trial onsets significantly reduced theta and beta bands, suggesting behavioral disinhibition and lower action thresholds during the precue period (Figure 2—figure supplement 3Bi). This pattern was less pronounced during the NG sound, indicating a bias toward waiting impulsivity in the STN (Figure 2—figure supplement 3Biii). Consequently, by analyzing the power spectra around precue pokes, we found a strong decrease in the theta, beta, and gamma bands prior to a precue poke (Figure 2G), suggesting that neuronal decoupling of STN from its intra-STN and mesoscale networks results in impulsive choice. Overall, this picture recapitulates the decoupling of the STN from global networks in HI animals (Figure 1Ei).
 
-## Optogenetic perturbation of the STN modulates impulsivity
+### Optogenetic perturbation of the STN modulates impulsivity
 
 To assess the gatekeeping function of the STN in the GNG task, we used an optogenetic approach. By using adeno-associated viral vectors, we expressed the light-sensitive opsins channelrhodopsin-2 (ChR2) or archaerhodopsin (Arch) in the STN and implanted an optical fiber above the STN for light activation (Figure 3—figure supplement 1). Prior to behavioral testing, we functionally validated this approach by patch clamp recordings to measure activation and inhibition of the STN (Figure 3—figure supplement 2A).
 
 The temporal resolution of optogenetics allowed us to investigate STN function specifically in the precue and cue phases of the task. Inhibition of the STN during the precue phase significantly increased the precue response rate, whereas activation had the opposite trend (Figure 3A and Bi, Figure 3—figure supplement 2Bi). These opposite effects strongly suggest bidirectional control of impulsivity by the STN. Under this stimulation regime, we also observed post-laser effects: the latency to respond to both Go (Figure 3—figure supplement 2Bii) and NG (Figure 3—figure supplement 2Cii) cues was prolonged in the manipulations, however, it did not strongly impact the number of responses in either the Go or NG trials (Figure 3Bii, Figure 3—figure supplement 2Ci).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig3-v2.jpg)
+
+**Figure 3.:** Manipulation of STN activity during the precue period (A–B) or cue period (C–D) in the Go/No-Go (GNG) task. (A, C) Example behavioral traces for single animals from control (AAV::GFP), STN activation (AAV::ChR2), and STN inhibition (AAV::Arch) groups in the correct Go (Go), correct No-Go (NG), and NG trials with false alarm (FA). Top shows a no laser session. Bottom shows a behavior session with laser during the respective task period. Each row represents a single trial. (B) STN manipulation during the precue period (i) affects impulsivity parameters (two-way repeated measures (RM) MANOVA main effect of laser time F1,22 = 5.921, p = 0.0087, main effect of virus group F2,46 = 4.691, p = 0.0029, and interaction between the two F2,46 = 4.821, p = 0.0025). Two-way RM ANOVA on % correct Go trials (ii) showed a significant main effect of laser time (F1,23 = 6.985, p = 0.0145), but no significant main effect of virus group (F2,23 = 2.584, p = 0.097) and no significant interaction between the two (F2,23 = 2.613, p = 0.095). NControl = 7, NAAV::ChR2 = 11 and NAAV::Arch = 8. (D) Manipulation of the STN during the cue period (i) affects GNG task parameters (two-way RM MANOVA main effect of laser time F1,23 = 23.52, p < 0.0001, main effect of virus group F2,48 = 4.309, p = 0.0029, and interaction between the two F2,48 = 3.673, p = 0.0109). Two-way RM ANOVA on precue response rate (ii) showed no significant main effect of laser time (F1,24 = 2.089, p = 0.161), no significant main effect of virus group (F2,24 = 1.08, p = 0.356) and no interaction between the two (F2,24 = 1.1, p = 0.349). NControl = 10, NAAV::ChR2 = 7 and NAAV::Arch = 10. **p < 0.01, ***p < 0.001, ****p < 0.0001, #p vs. AAV::GFP during the same behavioral session (treatment level). On the scatterplot # indicates the axis-bound parameter.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Histological evaluation for all animals used for optogenetic interrogation in Go/No-Go (GNG) and/or open field (OF), with center of viral injection (i) and fiber tip placement (ii). (B) Top, STN targeted viral expression across experimental groups (i–iii). The fiber placement has been marked in red and overlaid with quantification of the viral expression. Note that viral fluorescence also spreads into known STN projection fields zona incerta (ZI) (asterisks) and substantia nigra pars reticulata (SNr), driven by neurite targeting of Channelrhodopsin-2 (ChR2) and Archaerhodopsin (Arch) proteins (Han et al., 2011). Optogenetic illumination and modulation, however, is restricted to neurons in STN proper, up to 500 μm ventral to optical fiber (dotted red lines). Bottom, low and high magnification images of virally infected cells in the STN (arrows) and their projection targets (arrowheads) in ZI and SNr. Infected cell bodies are much more restricted to STN (bottom), reflecting the group averages of the fluorescent signals (top). Scale bar = 200 µm for low magnification injection/projection site images. Scale bar = 20 µm for high magnification injection/projection site images.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Whole cell patch clamp recordings from neurons in the STN (left) show their responsiveness to optogenetic manipulation. 473 nm Laser pulses (5, 10, 20, 40, 80 Hz) induced action potentials with high fidelity in neurons infected with AAV::ChR2 (middle) whereas a 563 nm laser pulse (20 Hz) induced hyperpolarization in depolarized AAV::Arch infected neurons (right). (B–C) Laser in precue. NControl = 7, NAAV::ChR2 = 11, and NAAV::Arch = 8. (B) (i) Two-way repeated measures (RM) ANOVA on precue response rate revealed significant main effect of laser time (F1,23 = 7.122, p = 0.0137), significant main effect of virus group (F2,23 = 10.14, p = 0.0007), and an interaction between the two (F2,23 = 10.73, p = 0.0005). Cumulative distribution of latency to poke in correct Go trials (ii). (C) Two-way RM ANOVA on % of No-Go (NG) trials with false alarm (FA) (i) revealed no significant main effect of laser time (F1,23 = 3.336, p = 0.081), no significant main effect of virus group (F2,23 = 2.255, p = 0.128), but significant interaction between the two (F2,23 = 3.454, p = 0.0488). Cumulative distribution of latency to poke in incorrect NG trials (ii). (D–E) Laser in cue. NControl = 10, NAAV::ChR2 = 7, and NAAV::Arch = 10. (D) (i) Two-way RM ANOVA on % of correct Go trials (i) revealed a significant main effect of laser time (F1,24 = 21.79, p < 0.0001), a significant main effect of virus group (F2,24 = 5.221, p = 0.0131), and a significant interaction between the two (F2,24 = 7.691, p = 0.0026). Laser manipulation effect in the distribution of response latency in correct Go trials (Kolmogorov-Smirnov test) (ii). (E) Two-way RM ANOVA on % of NG trials with FA (i) revealed a significant main effect of laser time (F1,24 = 9.127, p = 0.006), no significant main effect of virus group (F2,24 = 1.964, p = 0.162), and no interaction between the two (F2,24 = 0.246, p = 0.784). Cumulative distribution of latency to poke in incorrect NG trials (ii). *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, #p vs. AAV::GFP during same behavioral session (treatment level).
+
 As expected, cue-bound optogenetic manipulation of STN function did not affect the precue response rate (Figure 3C and Dii), however, it did reduce the fraction of Go responses in both the ChR2 and Arch groups (Figure 3Di, Figure 3—figure supplement 2Di), with alterations in latency to respond (Figure 3—figure supplement 2Dii). We speculate that this unidirectional effect indicates that activation or inhibition of the STN impacts general task performance (as measured by the Go parameter). Consistent with this, STN lesions in animals and deep brain stimulation (DBS) in humans altered the number of cue responses (Baunez and Robbins, 1997; Hershey et al., 2010). Also, studies in which STN activity was increased by blocking GABA-ergic inputs resulted in abnormal movements and decreased behavioral performance (Karachi et al., 2009; Périer et al., 2002). Optogenetic activation or inhibition of STN function had no effect in NG trials on either response numbers (Figure 3—figure supplement 2Ei) or their latency (Figure 3—figure supplement 2Eii), thus dissociating precue effects on waiting from cue effects stopping impulsivity. This suggests that, at lower intensity regimes (see below, Figure 6—figure supplement 4A), STN function mainly affects waiting impulsivity and, to a lesser extent, cue-related responses, even though we found precue responses and FA responses were both represented in the STN (Figure 2Cii, FA-related trajectories).
 
 Taken together, our findings from optogenetics and electrophysiological recordings show that the STN encodes and controls impulsive action, especially related to precue waiting impulsivity.
 
-## Pharmacological manipulation of mGlu4 interacts with trait impulsivity at STN
+### Pharmacological manipulation of mGlu4 interacts with trait impulsivity at STN
 
 Altered glutamatergic neurotransmission is implicated in the pathobiology of impulsivity-related mental disorders (Javitt, 2004; Jun et al., 2014; Sanacora et al., 2012). Moreover, pharmacological modulation of both ionotropic and metabotropic glutamate receptors affects impulsivity (Nikiforuk et al., 2010; Paine et al., 2007; Semenova and Markou, 2007; Sukhotina et al., 2008). The metabotropic glutamate receptor 4 (mGlu4) emerged as a strong candidate, as it is widely expressed in the STN and the globus pallidus, which are both elements of the indirect pathway of movement in the basal ganglia (Bradley et al., 1999; Corti et al., 2002; Iskhakova and Smith, 2016; Kristensen et al., 1993; Messenger et al., 2002; Testa et al., 1994). Presynaptic activation of mGlu4 reduces, but does not abrogate, neurotransmitter release, making fast glutamatergic neurotransmission accessible to neuromodulatory therapeutic intervention. In fact, positive allosteric modulators (PAMs) of mGlu4 show promising results in pre-clinical and clinical trials as potential therapeutic agents to reverse motor dysfunction in Parkinson’s disease (PD) (reviewed in Charvin, 2018; Hopkins et al., 2009), but can increase impulsivity in rats (Isherwood, 2017). We hypothesized that mGlu4 can specifically gate impulsive action via glutamatergic modulation of STN output and in consequence the expression of impulsive traits.
 
 To investigate the possible role of mGlu4 in impulsivity, we used a PAM specific for this receptor, 4-((E)-styryl)-pyrimidin-2-ylamine (mGlu4 PAM; East et al., 2010; Isherwood, 2017). We delivered mGlu4 PAM to HI/LI animals and assayed for trait-dependent modulation of impulsivity (Figure 4—figure supplement 1A). This PAM increased the precue response rate (Figure 4A–Ci), without overtly affecting FA (Figure 4A–Cii, Figure 4—figure supplement 1B,C left) or Go responses (Figure 4Ciii, Figure 4—figure supplement 1B,C right) in the GNG task predominantly in LI animals. Thus, the effect appears to depend on baseline trait impulsivity.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig4-v2.jpg)
+
+**Figure 4.:** (A–B) Example behavioral traces upon vehicle (A) or mGlu4 PAM (B) treatment in the correct Go (Go), correct No-Go (NG), and NG trials with false alarm (FA). For each example, top graph shows no treatment session, and bottom shows a behavior session with drug treatment for a single animal. Each row represents a single trial. (C) Systemic administration of mGlu4 PAM increases waiting impulsivity (i) in low impulsive (LI) animals (three-way repeated measure (RM) ANOVA with a main effect on impulsivity (F1,50 = 62.72, p < 0.0001) and a phase × treatment interaction (F1,50 = 4.217, p = 0.045)), without affecting the FA rate (three-way RM ANOVA with a main effect on impulsivity (F1,50 = 14.34, p = 0.0004)) (ii) and % correct Go responses (three-way RM ANOVA with a phase × impulsivity interaction (F1,49 = 6.507, p = 0.0139)) (iii). HI NVehicle = 13 and NmGlu4 PAM = 13, LI NVehicle = 17 and NmGlu4 PAM = 11. One animal each was removed in (i, HI/mGlu4 PAM) and (iii, LI/mGlu4 PAM) after Grubb’s outlier test (alpha = 0.0001). (D–E) Brain-wide resting-state functional magnetic resonance imaging (rs-fMRI) screen for the interaction between mGlu4 PAM treatment and selected behavioral parameters in functional connectivity. (D) 3D visualization of the node-wise interaction score from a two-way RM ANOVA on treatment × impulsivity (size is correlated to F value) showing STN as the hotspot between the two. Only significantly scored nodes are shown. (E) Ordered, normalized two-way RM ANOVA F values from node-wise connectivity difference on interactions between treatment and group split by either impulsivity parameters (top), total distance traveled (middle), or number of licks (bottom) in the GNG task. Gray bars indicate that the p-value did not reach significance (Bonferroni corrected for multiple comparisons), whereas increased and significant differences are indicated in red. *p < 0.05, ****p < 0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Behavioral split into high impulsive (HI) (NVeh = 13, NmGlu4 PAM = 17) and low impulsive (LI) (NVeh = 17, NmGlu4 PAM = 11) animals based on the precue response rate. Mean single animal data over the last three training sessions. (B–C) Cumulative distribution of latency to poke for false alarm (FA) (left) and correct Go trials (right) in HI (B) and LI (C) animals.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Mean cross-correlation heatmap for high impulsive (HI) and low impulsive (LI) groups of mice following vehicle and mGlu4 PAM treatment. (B) Ordered F values of main effects of impulsivity from two-way repeated measures (RM) ANOVA on treatment × impulsivity from node-wise connectivity. Gray bars indicate that the p-value did not reach significance, Bonferroni corrected for multiple comparisons. (C) Ordered F values of main effects of treatment from two-way RM ANOVA on treatment × impulsivity from node-wise connectivity. Gray bars mean that the p-value did not reach significance, Bonferroni corrected for multiple comparisons. (D) Node-wise Fisher Z-transform in HI vs. LI animals. Nodes ordered according to increasing F score of interaction of treatment × impulsivity of two-way RM ANOVA split on impulsivity, distance, and licks. Box–whisker plots display median, interquartile range, and tenth to ninetieth percentiles of the distribution, dots indicate mean. ACA – anterior cingulate area; ACB – nucleus accumbens; AI – agranular insular area; AMY – amygdalar nuclei; AUD – auditory area; CB – cerebellum; COA – amygdala cortex; CP – caudoputamen; Csm – superior central nucleus raphe; ECT – ectorhinal area; ENT – entorhinal area; FRP – frontal pole; FS – fundus of striatum; GU – gustatory areas; HIP – hippocampus; HT – hypothalamus; IC – colliculi inferior; ILA – infralimbic area; LSX – lateral septal complex; MO – somatomotor areas; MRN – MB reticular nucleus; MY – rostromedial medulla; NBM – nucleus basalis of Meynert; OLF – olfactory area; ORB – orbital Area; OT – olfactory tubercle; PAG – periaqueductal gray; PALc – pallidum caudal; PALd – pallidum dorsal; PALm – pallidum medial; PALv – pallidum ventral; PB – parabrachial nucleus; PERI – perirhinal area; PIR – piriform; PL – prelimbic area; PRNr – pontine reticular nucleus; PTLp – post parietal association area; RHP – retrohippocampal region; RSP – retrosplenial area; SC – superior colliculus; SNr – substantia nigra; SS – somatosensory areas; STN – subthalamic nucleus; TEa – temporal association area; TH – thalamus; VIS – visual area; VISC – visceral area; VTA – ventral tegmental area; ZI – zona incerta.
+
 To investigate the possible neuromodulatory interaction of mGlu4 with trait impulsivity in the STN circuitry, we treated HI and LI animals with mGlu4 PAM and then evaluated its effects throughout the brain by rs-fMRI. As for the comparison of HI and LI animals (Figure 1), we used a node-centric approach to rank-order hotspots of mGlu4 x HI/LI interaction. Again, rather than reporting p-value statistics, we reported the data as F values of the interactions and filtered for significance of the small sample size. Using this approach, we could directly map the interaction between mGlu4 modulation of brain functional connectivity and impulsive behavioral traits. As expected from the broad distribution of mGlu4 in the limbic system, mGlu4 PAM affected many brain areas (Figure 4—figure supplement 2), resulting from drug action on this distributed mGlu4 expression. Thus, this method should be sensitive to monitor the interaction of mGlu4 PAM treatment and HI/LI animals, which should reveal hotspots relevant for mGlu4 modulation of trait impulsivity. This node-wise analysis of functional connectivity ranked the STN as the brain node with the highest impulsivity x treatment interaction (Figure 4D–Ei, Figure 4—figure supplement 2A-Di). Rank analysis of this interaction, together with group splits for distance traveled (Figure 4—figure supplement 1Dii) and licks (Figure 4—figure supplement 1Diii), showed that the effect on the STN is specific for impulsivity (Figure 4E). Both the AMY and ZI ranked much lower in the interaction score for impulsivity than in the HI/LI functional connectivity split, indicating another role for mGlu4 in these structures.
 
-## Pharmacological activation of mGlut4 modulates neuronal activity in the STN and SNr
+### Pharmacological activation of mGlut4 modulates neuronal activity in the STN and SNr
 
 To assess how the mGlu4 PAM network effects are reflected at the cellular level, we compared STN activity between vehicle and mGlu4 PAM treatment. The mGlu4 PAM reduced the fraction of units inhibited upon precue poke when compared to the controls (Figure 5A and C), and this fraction correlated negatively with waiting impulsivity (putative behavioral gating units; Figure 2Bi, D–E). We observed no such effect in units gating the onset of immobility (Figure 5B–C). These data suggest that mGlu4 PAM specifically antagonizes STN activity to gate impulsive behavior.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig5-v2.jpg)
+
+**Figure 5.:** (A–B) Peri-event data from in vivo extracellular recordings during the Go/No-Go (GNG) task showing unit responses aligned to onset of precue poke (A) or immobility (B) for vehicle (i) and mGlu4 PAM (ii) treatment. Population traces of excited and inhibited units for each line (nPrecue, Vehicle, Up = 6, nPrecue, Vehicle, Down = 8, nPrecue, mGlu4 PAM, Up = 11, nPrecue, mGlu4 PAM, Down = 5; nImmobility, vehicle, Up = 6, nImmobility, Vehicle, Down = 8, nImmobility, mGlu4 PAM, Up = 4, nImmobility, mGlu4 PAM, Down = 10, from NAnimals = 3). The circles represent the proportion of cells excited (red), inhibited (blue) or non-responding to given event (* given population reached significance in permutation test). (C) Alluvial plot for individual STN units to precue, Go and false alarm (FA) pokes, and immobility onsets upon treatment. The width of the ribbon is proportional to the fraction of units with the given response pattern. Ribbons are color coded according to precue poke responses. (D) (i) LFP power spectra in STN during precue periods during vehicle or mGlu4 PAM treatment. (ii) Within-frequency Z-scored LFP power spectra (upper) and frequency band-averaged, 2s-binned (lower) time courses aligned to precue pokes during vehicle (left) or mGlu4 PAM treatment (right). Two-way repeated measures (RM) ANOVA revealed a significant main effect of time (F7,966 = 43.23, p < 0.0001), no main effect of frequency band (F2,138 = 1.449, p = 0.238), but a significant time × frequency band interaction (F14,966 = 2.054, p = 0.012) for vehicle, and a significant main effect of time (F7,966 = 30.65, p < 0.0001), no main effect of frequency band (F2,138 = 1.724, p = 0.182), but a significant time × frequency band interaction (F14,966 = 2.734, p = 0.0006) for mGlu4 PAM treatment. Mean Z-score ± SEM from nChannels = 48, NAnimals = 3. Colored lines indicate significant differences to the baseline (BL) period in the respective frequency band, as determined by two-way RM ANOVA and Dunnet post hoc analysis (p < 0.05). (iii) LFP power of the time bin preceding precue pokes (left axis) and LFP power variance of the entire time range in (ii) (right axis) in the STN during vehicle and mGlu4 PAM treatment for theta, beta, and gamma frequency bands, respectively. Wilcoxon paired signed rank test (*p < 0.05, ****p < 0.0001). (E) (i) LFP power spectra in SNr during precue periods during vehicle or mGlu4 PAM treatment. (ii) Within-frequency Z-scored LFP power spectra (upper) and frequency band-averaged, 2s-binned (lower) time courses aligned to precue pokes during vehicle (left) or mGlu4 PAM treatment (right). Two-way RM ANOVA revealed a significant main effect of time (F7,651 = 126.2, p < 0.0001), no main effect of frequency band (F2,93 = 1.395, p = 0.253), but a significant time × frequency band interaction (F14,651 = 10.34, p < 0.0001) for vehicle, and significant main effects of time (F7, 651 = 25.87, p < 0.0001) and frequency band F2,93 = 3.772, p = 0.027), and a significant time × frequency band interaction (F14,651 = 11.99, p < 0.0001) for mGlu4 PAM treatment. Mean Z-score ± SEM from nChannels = 32, NAnimals = 2. Colored lines indicate significant differences to the baseline (BL) period in the respective frequency band, as determined by two-way RM ANOVA and Dunnet post hoc analysis (p < 0.05). (iii) LFP power of the time bin preceding precue pokes (left axis) and LFP power variance of the entire time range in (ii) (right axis) during vehicle and mGlu4 PAM treatment in the SNr for theta, beta, and gamma frequency bands, respectively. Wilcoxon paired signed rank test (*p < 0.05, ****p < 0.0001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Electrode placement in electrophysiology experiments for substantia nigra pars reticulata (SNr). Each line represents one animal.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–D) Population traces of excited and inhibited units, respectively, for each line. Horizontal colored bars at the top of each panel indicate bins with a significantly different firing rate vs. baseline firing (p < 0.05, cluster-based permutation test). Circles represent the proportion of cells excited (red), inhibited (blue), or non-responding to given event (* given population reached significance in permutation test). (A) Peri-event data showing SNr unit responses aligned to stimulus events, such as light onset (i, nUp = 3, nDown = 8 from NAnimals = 2), Go sound (ii, nUp = 2, nDown = 15 from NAnimals = 2), sound onset in No-Go (NG) trials with false alarm (FA) (iii, nUp = 0, nDown = 18 from NAnimals = 2), reward delivery onset (iv, nUp = 4, nDown = 31 from NAnimals = 2). (B) Peri-event data showing SNr unit responses aligned to behavioral events, such as precue poke (i, nUp = 3, nDown = 24 from NAnimals = 2), Go sound poke (ii, nUp = 5, nDown = 29 from NAnimals = 2), FA poke (iii, nUp = 2, nDown = 24 from NAnimals = 2), immobility onset (iv, nUp = 0, nDown = 23 from NAnimals = 2). (C) Peri-event data for sound onset in correct NG trials (NUp = 5, NDown = 4). (D) Peri-event data for movement onset (nUp = 20, nDown = 2 from NAnimals = 2). (E) No change in the mean firing rate during the entire precue period of unit populations (split by response to precue poke) on trials with no precue poke, low (<0.15), mid (0.15–0.3), and high ( > 0.3) precue response rate. (F) Population activity vectors in PCA space for behavior-driven peri-events (i), as well as split by time relative to event onset (ii–iv). (G) Alluvial plot showing the variety of response patterns of SNr units to precue poke, Go poke, FA poke, and immobility onsets. The width of the ribbon is proportional to the fraction of units with a given response pattern. Ribbons are color coded according to precue poke responses. (H) Population activity vectors in PCA space for stimulus-driven peri-events (left), as well as split by time relative to event onset (right). (I) Alluvial plot showing the variety of response patterns of SNr units to Go sound onset, NG sound onset followed by FA, reward, and light onsets. The width of the ribbon is proportional to the fraction of units with given response pattern. Ribbons are color coded according to Go sound responses.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) LFP power spectra in SNr during precue, Go sound, No-Go (NG) sound and immobility periods. (B) Within frequency Z-scored LFP spectrogram (left) and frequency band-averaged, 2s-binned time course thereof (right), both centered around precue pokes. Two-way repeated measures (RM) ANOVA revealed significant main effects of time (F2.729,253.8 = 99.29, p < 0.0001) and frequency band (F2,93 = 11.28, p < 0.0001), and a significant time × frequency band interaction (F14,651 = 37.46, p < 0.0001). (C) Within-frequency Z-scored LFP power spectra (upper) and frequency band-averaged, 2s-binned (lower) time courses in SNr aligned to Go pokes (i), false alarm (FA) pokes (ii) and immobility onset (iii). Two-way RM ANOVA revealed significant main effects of time (F1.359,126.4 = 836.9, p < 0.0001) and frequency band (F2,93 = 16.02, p < 0.0001), and a significant time × frequency band interaction (F14,651 = 66.47, p < 0.0001) for (i), significant main effects of time (F1.654,153.8 = 45.07, p < 0.0001) and frequency band (F2,93 = 13.18, p < 0.0001), and a significant time × frequency band interaction (F14,651 = 15.05, p < 0.0001) for (ii), and significant main effects of time (F2.446,227.5 = 396.2, p < 0.0001) and frequency band (F2,93 = 10.02, p = 0.0001), and a significant time × frequency band interaction (F14,651 = 27.53, p < 0.0001) for (iii). (D) Within-frequency Z-scored LFP power spectra (upper) and frequency band-averaged, 2s-binned (lower) time courses in SNr aligned to light onset (i), Go sound onset (ii) and NG sound onset (iii). Two-way RM ANOVA revealed significant main effects of time (F2.698,250.9 = 14.81, p < 0.0001) and frequency band (F2,93 = 8.456, p = 0.0004), and a significant time × frequency band interaction (F14,651 = 13.55, p < 0.0001) for (i), significant main effects of time (F2.357,219.2 = 907.8, p < 0.0001) and frequency band (F2,93 = 14.88, p < 0.0001), and a significant time × frequency band interaction (F14,651 = 46.50, p < 0.0001) for (ii), and a significant main effect of time (F2.000,186.0 = 51.74, p < 0.0001), no significant main effect for frequency band (F2,93 = 0.464, p = 0.630), but a significant time × frequency band interaction (F14,651 = 4.519, p < 0.0001) for (iii). Colored lines indicate significant differences to the baseline (BL) period in the respective frequency band, as determined by Dunnet post hoc analysis (p < 0.05). Mean Z-score ± SEM from nChannels = 32, NAnimals = 2 for all graphs.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A–B) Peri-event data showing SNr unit responses aligned to onsets of precue poke (A, NVehicle, Up = 2, NVehicle, Down = 6, NmGlu4 PAM, Up = 0, NmGlu4 PAM, Down = 4) or immobility (B, NVehicle, Up = 0, NVehicle, Down = 7, NmGlu4 PAM, Up = 0, NmGlu4 PAM, Down = 4) for vehicle (left) and mGlu4 PAM treatment (right). Population traces of excited and inhibited units, respectively, for each line. The circles represent the proportion of cells excited (red), inhibited (blue), or non-responding to given event (* given population reached significance in permutation test). (C) Alluvial plot showing the variety of response patterns of SNr units to precue, Go, and false alarm (FA) pokes immobility onsets. The width of the ribbon is proportional to the fraction of units with a given response pattern. Ribbons are color coded according to precue poke responses.
 
 A drop in LFP power in the STN correlates with precue pokes (Figure 2G). Thus, we reasoned that mGlu4 PAM should decrease LFP power in the STN. Consistent with the elevated precue response rateupon treatment with mGlu4 PAM (Figure 4Ci), LFP power in the beta and gamma band was reduced during the precue phase when compared to the vehicle control (Figure 5Di, inset). In the vehicle control, STN LFP power dropped prior to precue pokes (Figure 5Dii left), as observed above (baseline, Figure 2Gi), whereas after mGlu4 PAM treatment beta and gamma power were uncoupled from precue pokes (Figure 5Dii right). This mGlu4 PAM-mediated uncoupling was most evident when we compared the non-normalized absolute LFP power preceding precue pokes (left axes) in the vehicle control and after mGlu4 PAM treatment, and when analyzing the variance in raw LFP power around precue pokes (right axes, Figure 5Diii). This showed a significant reduction in STN LFP modulation during mGlu4 PAM treatment upon impulsive action. We propose that these changes reflect intra-STN modulation of STN neural activity and locally generated LFP (Alavi et al., 2013) by mGlu4.
 
@@ -89,13 +161,43 @@ Since the mGlu4 receptor is known to modulate synaptic transmission between the 
 
 The LFP power spectra and their modulation by mGlu4 PAM (Figure 5Di, Ei) explain the dominant interaction of STN with impulsive choice, compared to SNr (Figure 1Ei) and its interaction with mGlu4 modulation (Figure 4Ei). Together, these data suggest that mGlu4 modulates the control of impulsive action by the STN and SNr, without altering activity bound to motor output.
 
-## STN mGlu4 dissociates impulsive traits from motor function
+### STN mGlu4 dissociates impulsive traits from motor function
 
 We found that the STN is a hotspot for the interaction of mGlu4 PAM activity with trait impulsivity, strongly suggesting that mGlu4 expression in the STN modulates this behavioral trait directly. We examined animals with the HI or LI phenotype (similar group separation to our rs-fMRI experiment) in our GNG task (Figure 6—figure supplement 1A) and performed high-resolution in situ hybridization to locate areas of mGlu4 expression in samples from both groups (Figure 6A). Quantification of the in situ hybridization signal revealed a statistically significant difference in Grm4 mRNA expression in the STNs of HI and LI animals, but not in the other brain regions we analyzed, including the ZI, thalamus, and AMY (Figure 6B). As expected, the predominant signal in the perinuclear portion (Figure 6—figure supplement 1Bi) and in VGlut+ neurons (detected by a probe mix for Slc17a6 and Slc17a7; Figure 6—figure supplement 1Bii) covaried most strongly with the HI and LI phenotypes. This suggests that locally synthesized mGlu4 is closely linked to trait impulsivity (as opposed to STN afferents also expressing mGlu4).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig6-v2.jpg)
+
+**Figure 6.:** (A) STN brain sections from high impulsive (HI) and low impulsive (LI) animals analyzed by in situ mRNA hybridization using probes against vesicular glutamate transporter (VGlut (Slc17a6/Slc17a7), green) and mGlu4 (red) transcripts. White arrows mark positive cells for receptor expression. Scale bars = 40 μm. (B) Two-way repeated measures (RM) ANOVA of the signal quantification between somatosensory cortex (CX), basolateral nucleus of amygdala (AMY), ventral anterior-lateral complex of the thalamus (TH), STN, and zona incerta (ZI) revealed no significant main effect of impulsivity level (F1,40 = 2.927, p = 0.118), but a significant main effect of brain area (F4,40 = 2.841, p = 0.037), and interaction between the two (F4,40 = 2.841, p = 0.037), with a significant increase of mGlu4 receptor only in the STN of HI animals compared to their LI littermates (nsections = 6, Nanimals = 3 per group). (C–D) Exemplary behavioral traces of single HI (C) and LI (D) animals, part of either the control group (top panels) or mirE-mGlu4 group (lower panels), in correct Go (Go), correct No-Go (NG), and NG trials with false alarm (FA). Top shows a session prior to surgery. Bottom shows a post-surgery behavior session. Each row represents a single trial. (E) mirE-mediated knockdown of mGlu4 decreases waiting impulsivity with a phase × impulsivity × virus interaction (three-way RM ANOVA, F1,28 = 4.375, p = 0.046) (i), without significantly affecting FA rate (three-way RM ANOVA, main impulsivity effect (F1,28 = 24.18, p < 0.0001)) (ii) or correct Go responses (three-way RM ANOVA, no main impulsivity effect (F1,28 = 2.471, p = 0.127)) (iii). HI NControl = 10 and NmirE-mGlu4 = 8, LI NControl = 6 and NmirE-mGlu4 = 8. No animals were removed after Grubb’s outlier test (alpha = 0.0001).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Behavioral parameters of HI/LI animals used for the in situ hybridization assay, N = 3 per group. Mean of the last three sessions was significantly different across groups for precue response rate (two-tailed t-test t4 = 7.927, p = 0.0014) (i,ii) and % of No-Go (NG) trials with false alarm (FA) (two-tailed t-test t4 = 7.726, p = 0.0015) (i,iii), but not for % of correct Go responses (two-tailed t-test t4 = 1.031, p = 0. 361) (iv). (B) mGlu4 signals enriched in VGlut+ cells in a trait-dependent manner. (i) Two-way repeated measures (RM) ANOVA of the mGlu4 signal in STN split between perinuclear and non-perinuclear (outside) foci revealed significant main effect of impulsivity level (F1,10 = 7.796, p = 0.0191), significant main effect of area (F1,10 = 279.0, p <0.0001), and an interaction between the two (F1,40 = 5.084, p = 0.0478), with a significant increase of mGlu4 only in the perinuclear signal in HI animals, as compared to their LI littermates (nsections = 6, Nanimals = 3 per group). ####p < 0.0001 for perinuclear vs. outside for the same impulsivity level. (ii) mGlu4 perinuclear signal in VGlut+ and VGlut- cells in STN of HI and LI animals with a main effect of impulsivity level (F1,10 = 5.262, p = 0.0447), a main effect of VGlut expression (F1,10 = 287.6, p <0.0001), and interaction between the two (F1,40 = 23.30, p = 0.0007), with a significant increase of mGlu4 in the perinuclear signal in HI animals, as compared to their LI littermates (nsections = 6, Nanimals = 3 per group). VGlut+ and VGlut- cells were defined as cells with above and below average VGlut expression in a given section, respectively. (C) mGlu4 expression upon mirE-mGlu4 virus infection in Neuro-2a cells. (Left) Quantification of Western blot signals (two-tailed t-test t10 = 2.983, p = 0.0137; N = 6 infection/Western blot experiments). (Right) Exemplary Western blot with three replicates of one of such experiments.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Histological evaluation for all animals used for metabotropic glutamate receptor 4 (mGlu4) knockdown experiments in the Go/No-Go (GNG) and open-field (OF) experiments, showing the center of viral injection. (B) Mean viral spread across mirE-Renilla (control) (i) and mirE-mGlu4 (ii) experimental groups (top) and representative viral expression images from each group (bottom). AU – arbitrary units. Scale bar = 200 µm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Behavioral split into HI (NControl = 10, NmirE-mGlu4 = 8) and LI animals (NControl = 6, NmirE-mGlu4 = 8) based on the precue response rate. Mean single animal data over the last three training sessions. (B) HI animals. NControl = 10 and NmirE-mGlu4 = 8. (i) Two-way repeated measures (RM) ANOVA on precue response rate across experimental sessions revealed a significant main effect of time (F5,80 = 11.48, p < 0.0001), a significant main effect of virus group (F1,16 = 8.397, p = 0.0105), but no interaction between the two (F5,80 = 1.775, p = 0.1275). (ii) (left) Cumulative distribution of latency to poke in incorrect No-Go (NG) trials. (Right) Cumulative distribution of latency to poke in correct Go trials. (C) LI animals. NControl = 6 and NmirE-mGlu4 = 8. (i) Two-way RM ANOVA on precue response rate across experimental session revealed a significant main effect of time (F5,60 = 5.5, p = 0.0003), but no significant main effect of virus group (F1,12 = 0.301, p = 0.5933), and no interaction between the two (F5,60 = 0.439, p = 0.8195). (ii) (Left) Cumulative distribution of latency to poke in incorrect NG trials. (Right) Cumulative distribution of latency to poke in correct Go trials. *p < 0.05.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A–C) Total distance traveled in Open Field (OF) experiments. (A) Optogenetic interrogation. Two-way RM ANOVA on total distance traveled in the OF revealed a significant main effect of laser time (F1,41 = 6.245, p = 0.0166), significant main effect of virus group (F3,41 = 10.07, p < 0.0001), and interaction between the two (F3,41 = 3.553, p = 0.0224). NControl = 11, NAAV::ChR2 = 8, NAAV::ChR2 3mW = 8, NAAV::Arch = 18. (B) mGlu4 PAM treatment did not affect the measure when considering all animals (two-tailed t-test; t19 = 0.016, p = 0.9871). N = 20 per group. No significant difference in the measure was also seen when splitting the animals into HI and LI groups as revealed by two-way RM ANOVA on distance traveled, as no main effect of treatment session (F1,18 = 0.0002, p = 0.9878), no main effect of group (F1,18 = 0.8124, p = 0.3793), and no interaction between the two (F1,18 = 2.199, p = 0.1554) was discovered. N = 10 per group. (C) Two-way RM ANOVA on distance traveled in the OF for mirE-mGlu4 groups showed no main effect of time (F1,28 = 0.5372, p = 0.4697), no main effect of impulsivity level (F1,28 = 0.5372, p = 0.4697), and no interaction between the two (F1,28 = 0.6171, p = 0.4387). NHI, Control = 10, NHI mirE-mGlu4 = 8, NHI, Control = 6, NHI mirE-mGlu4 = 8. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, #p vs. control during the same behavioral session (treatment level). (D–E) Scatterplot for distance traveled in OF and impulsivity parameters showed no correlation between the measure and precue response rate (D) nor % of No-Go (NG) trials with false alarm (FA) (E). (F–H) Correlation between parameters in the Go/No-Go (GNG) task in animals from all experiments from no treatment sessions. (F) Significant correlation between precue response rate and % of trials with FA. (G) No correlation between precue response rate and % of correct Go responses. (H) No correlation between % of correct Go responses and % of trials with FA.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig6-figsupp5-v2.jpg)
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** (Left) Motor function (mobility) and impulsive action (precue pokes) are differentially encoded in STN (Figure 2). Low-level modulation of STN affects primarily impulsive traits but not general motor function. (Right) STN might influence substantia nigra pars reticulata (SNr) to modulate both impulsive and motor action. Note that motor function is less dissociated from impulsive traits in SNr, potentially due to SNr’s proximity to basal ganglia motor output.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/62123/elife-62123-fig6-figsupp7-v2.jpg)
+
+**Figure 6—figure supplement 7.:** (A) Whisker plots for precue response rate from all behavioral cohorts used, including the pre-surgery group used for electrophysiological assessment, split for HI/LI when appropriate. (B) Precue response rate for animals used for STN electrophysiological analysis. Data shown as mean ± SEM. Each line shows a single animal (N = 3).
+
 To study the function of mGlu4 in trait impulsivity, we used adeno-associated viral vectors expressing short hairpin (sh)RNAs against the receptor (mirE-mGlu4) (Fellmann et al., 2013; Groessl et al., 2018). First, we tested the efficacy of the vectors in Neuro-2a cell culture, a cell type known to express mGlu4 endogenously (Hruz et al., 2008). The shRNAs effectively lowered mGlu4 protein levels, as assayed by Western blot (Figure 6—figure supplement 1C). We injected the validated vectors into the STN (Figure 6—figure supplement 2) of HI and LI animals (Figure 6—figure supplement 3A). HI animals injected with mirE-mGlu4 showed a persistent decrease in precue response rate when compared with the control group post-surgery (Figure 6Ei, Figure 6—figure supplement 3Bi); this effect was absent in LI animals (Figure 6Ei, Figure 6—figure supplement 3Ci). As with pharmacological inhibition, we saw no changes in FA (Figure 6Eii) or Go responses (Figure 6Eiii, Figure 6—figure supplement 3Bii,Cii). Taken together, the data from our optogenetic, pharmacological, mGlu4 expression, and silencing experiments show complementary phenotypes in re-occurring patterns in HI and LI animals. These are consistent with mGlu4 in the STN modulating (waiting) impulsivity traits.
 
-## mGlu4 manipulation in the STN does not affect general motor function
+### mGlu4 manipulation in the STN does not affect general motor function
 
 To compare the consequences of modulation of STN activity on impulsive behavior with those on general motor function (Andrén et al., 1995; Eagle et al., 2008b; Karachi et al., 2009; Yasoshima et al., 2005), we performed a series of open-field experiments using various means to manipulate STN function, as above. As expected, high-power optogenetic activation of the STN suppressed motor output (Figure 6—figure supplement 4A). However, low-power optogenetic activation of the STN, as used in the GNG task and akin to pharmacologically blocking GABA transmission to the STN (Périer et al., 2002), did not alter motor behavior. Optogenetic inhibition, which might be expected to be less effective than complete STN lesions (Andrén et al., 1995), modulated impulsivity in the GNG task independent of general motor effects (Figure 6—figure supplement 4A). Furthermore, both pharmacological (Figure 6—figure supplement 4B) and shRNA-mediated inhibition of mGlu4 activity (Figure 6—figure supplement 4C) affected impulsivity without affecting general motor behavior. Moreover, in a separate, untreated cohort of animals, we found no significant correlation between distance traveled in OF and either precue response rate (Figure 6—figure supplement 4D) or percent of trials with FA (Figure 6—figure supplement 4E). This finding is consistent with reports that general motor activity does not clearly correlate with impulsivity in different mouse strains (Gubner et al., 2010; Molander et al., 2011). Thus, we conclude that weak manipulations that specifically target impulsivity but not motor functions lead to the observed phenotype in the GNG task. We speculate that this differential behavioral effect reflects the separation of motor and impulsivity-related stimuli and behaviors in different regimes of STN activity (Figure 2C, Figure 2—figure supplement 2G, Figure 6—figure supplement 6).
 
@@ -111,9 +213,93 @@ Previous pharmacological studies using systemic administration of an mGlu4 PAM f
 
 The gene encoding human mGlu4, Grm4, has not previously been implicated in impulsivity phenotypes, neither by findings of single nucleotide polymorphisms associated with impulsive disorders nor by differences in expression levels in humans. Meta-analyses and genome-wide association studies (GWAS), however, have found associations between Grm4 and several psychiatric disorders that share the impulsivity domain (see Table 1), such as PD, bipolar disorder, and ADHD (Carvalho-Silva et al., 2019; Fliers et al., 2012; Pletscher-Frankild et al., 2015). Some of these studies link to SNPs at miRNA binding sites at mGlu4 or miR (micro-RNA) of which mGlu4 is target of, while both could affect gene expression. These data, together with human fMRI studies, suggest that mGlu4 modulation of STN function may contribute to impulsivity in humans. Here, we demonstrate that silencing of Grm4 specifically in the STN decreases the impulsive behavior of HI animals (Figure 6C and E; Figure 6—figure supplement 3B). While we cannot exclude the contributions of upstream mGlu4 PAM target regions, our results indicate a presynaptic site of action downstream of STN driving the impulsivity phenotype. In this regard, we observed significantly lower mGlu4 levels in rodents selected for low trait impulsivity compared to HI rodents (Figure 6B). As mGlu4 modulation of STN efferent activity has been demonstrated in vitro, we speculate that high mGlu4 expression decreases STN signaling and fine-tunes the inhibition of impulsivity by the STN.
 
+**Table 1.**
+ Disease association score.The disease-gene association scores for Grm4, filtered for psychiatric disorders that share the impulsivity domain. Data extracted from Open targets database (Carvalho-Silva et al., 2019) and DISEASES (Pletscher-Frankild et al., 2015). N.D. – not determined.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Disorder</th>
+      <th colspan="2">Data sources</th>
+    </tr>
+    <tr>
+      <th>Open targets(Overall association score)</th>
+      <th>Diseases(Z-score)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Parkinson’s disease</td>
+      <td>0.070</td>
+      <td>4.7</td>
+    </tr>
+    <tr>
+      <td>Schizophrenia</td>
+      <td>0.061</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Mood disorder</td>
+      <td>0.064</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>Anxiety disorder</td>
+      <td>0.066</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>Autistic disorder</td>
+      <td>0.015</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Schizoaffective disorder</td>
+      <td>0.015</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Movement disease</td>
+      <td>0.058</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Drug/alcohol dependence</td>
+      <td>0.016</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>Alzheimer’s disease</td>
+      <td>N.D.</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Withdrawal disorder</td>
+      <td>N.D.</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Unipolar depression</td>
+      <td>0.063</td>
+      <td>N.D.</td>
+    </tr>
+    <tr>
+      <td>Nervousness</td>
+      <td>0.040</td>
+      <td>N.D.</td>
+    </tr>
+    <tr>
+      <td>Bipolar disorder</td>
+      <td>0.019</td>
+      <td>N.D.</td>
+    </tr>
+  </tbody>
+</table>
+
 In summary, by combining rs-fMRI, electrophysiology, optogenetics, pharmacology, and genetics, we have discovered a previously unknown role of mGlu4 function in the STN as a crucial modulator of trait impulsivity. Synaptic modulation by metabotropic glutamate in the STN dissociates and fine-tunes impulsive traits independent of general motor function. We propose that mGlu4-driven neuromodulation of STN activity regulates impulsive states and biases toward impulsive action, while remaining subthreshold for affecting representation and execution of gross motor gating (Figure 2Cii). In this way, the brain independently and selectively modulates a cognitive behavioral trait within a basic motor circuit by using metabotropic glutamate signaling (Figure 6—figure supplement 6). This demonstrates that multiplexing of different functions (here, impulse control and general motor gating) within the same network via neuromodulation (Bargmann, 2012) allows the brain to control and adapt multiple behaviors with limited circuitry. From a translational perspective, the STN, mGlu4, and metabotropic glutamate may emerge as potential targets for impulsivity treatments. This opens opportunities for therapeutic interventions that selectively target pathological impulsivity without affecting general motor performance.
 
-## Limitations of the study
+### Limitations of the study
 
 Trait differences within an isogenic strain allow us to discover environmental factors and/or epigenetic changes that play a role in behavior. We focused in this study on mGlu4 because human GWAS indirectly linked the GRM4 gene with impulsivity and provided a rationale for our investigations (Table 1). Exploring inter-individual variation in impulsive behavior in an isogenic animal model, however, cannot address the entire spectrum of genomic variations that might influence impulsive traits, particularly in the human context.
 
@@ -123,27 +309,268 @@ Finally, additional data on the effects of mGlu4 PAM delivered directly to the b
 
 ## Materials and methods
 
-## Subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male)</td>
+      <td>Wild-type</td>
+      <td>Jackson Laboratory</td>
+      <td></td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Neuro-2a</td>
+      <td>ATCC</td>
+      <td>CCL-131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>mGlu4-shRNA(mirE-mGlu4)</td>
+      <td>This paper</td>
+      <td>AAV2/5.SFFV.GFP.mGlu4-miR-E.WPRE</td>
+      <td>AAV vectors to transduce brain tissue; Titer: 4.24 × 1013</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Renilla-Control shRNA(mirE-Renilla)</td>
+      <td>This paper</td>
+      <td>AAV2/5.SFFV.GFP.Renilla-miR-E.WPRE</td>
+      <td>AAV vectors to transduce brain tissue; Titer: 1.86 × 1013</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>syn-GFP</td>
+      <td>Penn Vector Core</td>
+      <td>AAV5.hsyn.eGFP.WPRE.hGH</td>
+      <td>AAV vectors to transduce brain tissue; Titer: 1.15 × 1013</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>syn-ChR2</td>
+      <td>Penn Vector Core/Addgene</td>
+      <td>AAV2/5.hsyn.hChR2(H134R).eYFP.WPRE</td>
+      <td>AAV vectors to transduce brain tissue; Titer: 1.3 × 1013</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>syn-Arch</td>
+      <td>Penn Vector Core</td>
+      <td>AAV5.hsyn.ArchT.YFP.WPRE.hGH</td>
+      <td>AAV vectors to transduce brain tissue; Titer: 4.68 × 1012</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Life Technologies</td>
+      <td>DAPI</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mGlu4 PAM</td>
+      <td>Boehringer Ingelheim</td>
+      <td>4-((E)-styryl)-pyrimidin-2-ylamine</td>
+      <td>80 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Multiplex Fluorescent v2 kit</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat no. 323100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Proprietary probes againstGmr4 (mGlu4)</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat no. 480991</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Proprietary probes against Slc17a6+ Slc17 a7 (VGlut2 +1)</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat no. 416631 and 319171</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TMR Fluorescein Evaluation kit</td>
+      <td>Perkin Elmer</td>
+      <td>Cat no. NEL 760001KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7&amp;8</td>
+      <td>GraphPad Software, Inc</td>
+      <td>Version 8.1.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scikit-learn package</td>
+      <td>doi:10.1007/s13398-014-0173-7.2</td>
+      <td>Python 3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>R2015b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ethovision</td>
+      <td>Noldus Information Technology</td>
+      <td>XT 8 and 12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AnyMaze</td>
+      <td>Stoelting</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TSE VideoMot 3D</td>
+      <td>TSE Systems</td>
+      <td>Version 7.01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Offline Sorter</td>
+      <td>Plexon</td>
+      <td>Version 4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CinePlex Studio &amp; Editor</td>
+      <td>Plexon</td>
+      <td>Version 3.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neuroexplorer</td>
+      <td>Plexon</td>
+      <td>Version 5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit software</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Omniplex</td>
+      <td>Plexon</td>
+      <td>Version 1.16.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>The R Project</td>
+      <td>Version 3.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DPABI</td>
+      <td>DPABI R-fMRI Network</td>
+      <td>Version 2.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Paravision</td>
+      <td>Bruker</td>
+      <td>Version 6.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Grm4.1332</td>
+      <td>EntrezID: 268,934Guide: TTCTGATGTACTTAAGCAGCTG</td>
+      <td>Gene-specific sequences for mGlu4-shRNA knock down</td>
+      <td>97mer: TGCTGTTGACAGTGAGCGAAGCTGCTTAAGTACATCAGAATAGTGAAGCCACAGATGTATTCTGATGTACTTAAGCAGCTGTGCCTACTGCCTCGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Grm4.337</td>
+      <td>EntrezID: 268,934Guide:TTAGAGACCCATGAATAGCGGG</td>
+      <td>Gene-specific sequences for mGlu4-shRNA knock down</td>
+      <td>97mer: TGCTGTTGACAGTGAGCGACCGCTATTCATGGGTCTCTAATAGTGAAGCCACAGATGTATTAGAGACCCATGAATAGCGGGTGCCTACTGCCTCGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Grm4.2087</td>
+      <td>EntrezID: 268,934Guide: TTGACAATGGGTATGGGCTGGC</td>
+      <td>Gene-specific sequences for mGlu4-shRNA knock down</td>
+      <td>97mer: TGCTGTTGACAGTGAGCGACCAGCCCATACCCATTGTCAATAGTGAAGCCACAGATGTATTGACAATGGGTATGGGCTGGCTGCCTACTGCCTCGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Grm4.788</td>
+      <td>EntrezID: 268,934Guide: TTTGATGATCTTGTCAAACTCC</td>
+      <td>Gene-specific sequences for mGlu4-shRNA knock down</td>
+      <td>97mer: TGCTGTTGACAGTGAGCGAGAGTTTGACAAGATCATCAAATAGTGAAGCCACAGATGTATTTGATGATCTTGTCAAACTCCTGCCTACTGCCTCGGA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Subjects
 
 C57Bl6/J male mice purchased from Jackson Laboratory were used in all experiments. Animals were housed in groups of max 5 and kept under a 12:12 hr light:dark cycle with food and water ad libitum. Experiments were conducted during the light period. Water deprivation was practiced over the period of GNG behavioral testing with exception of the post-surgery recovery period. All animal experiments were performed in accordance with institutional guidelines and were approved by the respective Austrian (BGBl nr 501/1988, idF BGBl I no 162/2005) and European (Directive 86/609/EEC of November 24, 1986, European Community) authorities and covered by the license GZ2452882016/6. Overall animal history is shown in Figure 6—figure supplement 5.
 
-## Ex vivo electrophysiology
+### Ex vivo electrophysiology
 
 Male wild-type mice (2–3 months of age) were deeply anesthetized with isofluorane, decapitated, and their brains quickly chilled in sucrose-based dissection buffer, bubbled with 95% O2/5% CO2 containing the following (in mM): 220 sucrose, 26 NaHCO3, 2.4 KCl, 10 MgSO4, 0.5 CaCl2, 3 sodium pyruvate, 5 sodium ascorbate, and 10 glucose. Transverse coronal brain slices (300 µm) were cut in dissection buffer using a Vibratome (Leica, VT1000S) and immediately incubated for 15 min recovery phase in oxygenated artificial cerebrospinal fluid (aCSF) 126 NaCl, 2.5 KCl, 1.25 NaH2PO4, 26 NaHCO3, 2.5 CaCl2, 2.5 MgCl2, and 25 glucose in 95% O2/5% CO2 at 32°C. This was followed by a slice resting phase with oxygenated aCSF for at least 45 min at room temperature (RT).
 
 Individual brain slices containing STN were placed on the stage of an upright, infrared-differential interference contrast microscope (Olympus BX50WI) mounted on a X-Y table (Olympus) and visualized with a 40× water immersion objective by an infrared sensitive digital camera (Hamamatsu, ORCA-03). Slices were fully submerged and continuously perfused at a rate of 1–2 ml/min with oxygenated aCSF. Neurons, either infected by AAV::Arch or AAV::ChR2, were identified by the presence of YFP fluorescence. Patch pipettes were pulled on a Flaming/Brown micropipette puller (Sutter, P-97) from borosilicate glass (1.5 mm outer and 0.86 mm inner diameter, Sutter) to final resistances ranging from 3 to 5 MΩ. Internal solution for voltage-clamp recordings of responses to optogenetic stimulation contained (in mM): potassium gluconate, 135; KCl, 5; HEPES, 10; MgCl2, 2; EGTA, 0.2; MgATP, 4; Na3GTP, 0.4; K3-phosphocreatine, 10; biocytin, 0.1; pH 7.2 (with KOH). Cells were held at –70 mV. Cells were allowed to reestablish constant activity during 5 min waiting time after breaking the seal. In case of AAV::ChR2: Increasing frequencies (5, 10, 20, 40, 80 Hz) of optogenetic pulses (473 nM) were applied to test for opto fidelity. In case of AAV::Arch, cells were subjected to an increasing ramp of 1 s depolarizing current pulses, each one accompanied by 400 ms of 20 Hz optogenetic pulses (563 nM) after 300 ms.
 
-## Stereotaxic surgery
+### Stereotaxic surgery
 
 Surgeries were performed using a Model 1900 Stereotactic Alignment Instrument (David Kopf Instruments) and a Model 1911 stereotactic drill (David Kopf Instruments). For injections, a Nanoliter 2000 injector, driven by a Micro4 MicroSyringe Pump Controller (World Precision Instruments), was used. Needles for virus injection were pulled from 3.5 nl glass capillaries (World Precision Instruments) on a Micropipette Puller (Model P-97, Sutter Instruments). The surgical protocol was adapted from Athos and Storm, 2001: Mice were deeply anesthetized in the stereotactic frame with isofluorane (1.7%, IsoFlo, Abbot Laboratories) and anesthesia was verified by testing deep plantar reflexes. Gentamicin ointment (Refobacin 3 mg/g, Merck) was used to protect the animals’ eyes, and their body temperature was kept constant at 36°C using a heating pad. For optogenetic manipulation, one of the following viral constructs (see Key resources table) was bilaterally injected directly into the STN at –1.85 mm AP/ ±1.60 mm ML/–4.70 mm DV from bregma at a speed of 20 nl/min followed by a 5 min waiting period where the needle was kept in place in order to avoid leakage. Final injected volume was 100 nl in case of AAV::GFP and AAV::ChR2 groups, with 200 nl used for the rest of experimental groups. After the injection optic fibers (MFC_200/245-.053_5.0 mm_ZF1.25(G)_FLT from Doric Lenses) were implanted at –2.18 mm AP/±1.60 mm ML/–4.55 mm DV from bregma. For electrophysiological assessment, the animals were trained in GNG task till achieving performance and silicone electrodes (A1 × 16 poly2 50 × 375; Neuronexus) were implanted at STN (–1.85 mm AP/±1.60 mm ML/–4.70 mm DV from bregma) or SNr (–3.14 mm AP/±1.50 mm ML/–4.70 mm DV from bregma). Ground screws were mounted above the contralateral prefrontal cortex and cerebellum. All implants were fixed to the skull with dental cement (SuperBond C&B kit, Prestige Dental Products). Animals were given enrofloxacin (100 mg/ml, Baytril, Bayer Austria) and carprofen (Rimadyl, 50 mg/ml; Pﬁzer Austria) via drinking water for at least 7 days and were granted a resting period of at least 14 days before behavioral retraining commenced.
 
-## Viral knockdown of mGlu4
+### Viral knockdown of mGlu4
 
 To suppress mGlu4 expression in the STN, we constructed an AAV-based vector expressing GFP and miRNA-adapted shRNAs in the optimized miR-E backbone (under control of the SFFV promoter; AAV-SFFV-GFP-miR; ASGE), as described elsewhere (Groessl et al., 2018). Four independent shRNAs targeting mGlu4 (guide sequences: 5’-TAGTA) were designed based on optimized design rules (see Key resources table) and cloned into miR-E (Fellmann et al., 2013) and the mix was used to make viral preparation for surgical injection.
 
 To test the knockdown efficiency, mouse neuroblastoma cell line (Neuro-2a, ATCC CCL-131) were transfected with the constructs mix or control plasmid using Lipofectamine 3000 according to manufacturer’s instructions. Cells were harvested 72 hr after transfection, cell pellet was resuspended in extraction buffer consisting of 20 mM Tris–HCl (pH 7.5), 100 mM NaCl, 5 mM MgCl, 2 mM NaF, 10% glycerol, 1% NP40, 0.5 mM DTT, supplemented with protease inhibitor cocktail (Complete EDTA‐free, Roche) and lysed on ice for 5 min. Input lysates and immunoprecipitates were resuspended in SDS sample buffer and heated to 95°C for 2 min. Total protein amount was assessed using Pierce BCA Protein Assay Kit according to manufacturer’s instructions (Thermo Fisher Scientific). Pre-cast NuPAGE Novex 4–12% Bis-Tris midi gels (Invitrogen, XP04122BOX) were run in NuPAGE MOPS SDS running buffer (Thermo Fisher Scientific, NO0001). The protein samples were transferred onto a cellulose membrane using semi-wet transfer. The membranes were blotted with rabbit polyclonal antibody against mGlu4 (1:500 ab53088, Abcam) and mouse monoclonal anti-β-actin (1:5000 A5441; Sigma). The mGlu4 expression was assessed with ImageJ and normalized to β-actin signal for each sample.
 
-## GNG task and performance criteria
+### GNG task and performance criteria
 
 The protocol was based on published material (Gubner et al., 2010; McDonald et al., 1998; Moschak et al., 2012). All animals were water deprived over-night to increase their motivation for a milk reward (10% condensed milk in water). The experiments were conducted in, in-house customized, Coulbourn behavioral testing boxes. For the experimental setup, a custom-built port with rectangular entrance in which the animal can insert the entire head was used. This port was equipped with a liquid delivery system and a blue/yellow (balanced) LED behind the port which can illuminate the port. Furthermore, it possessed two IR beams, first one to detect nose pokes (visits to port) and an additional one to detect licks at the liquid delivery system tube. The cage was cleaned with 70% ethanol before each mouse. Prior to GNG training, animals were habituated for one session in which the reward was dispensed in the port at variable intervals. Each reward occurrence was associated with a click sound that was then used throughout the entire behavioral experiment. The habituation session contained 60 reward deliveries without cue presentation, with house light on and separated by light off inter-trial interval (ITI) of 10 s.
 
@@ -157,7 +584,7 @@ Passing these criteria, animals were assigned to HI/LI groups based on 25th/75th
 
 Behavioral data was processed using MATLAB programs (R2015b, MathWorks, Natick, MA), videos were analyzed in Ethovision XT 8 (Noldus Information Technology, Wageningen, The Netherlands), both data types were then merged and processed using custom-made Python scripts (Python 3.3) with the final analysis being done in GraphPad Prism (Version 7).
 
-## Open-field test
+### Open-field test
 
 Before each experiment, mice were allowed to habituate to the experimental room for at least 30 min prior to any testing.
 
@@ -167,11 +594,11 @@ The open-field evaluation of shRNA knockdown for mGlu4 was done at the preclinic
 
 In all cases light conditions were about 300 lux in the center zone. After each trial, the apparatus was cleaned with water and 70% ethanol. Open-field experiments were performed in the morning (10:00 am–01:00 pm). The time spent in each zone, distance traveled, and number of center visits were recorded as readout parameters.
 
-## mGlu4 PAM pharmacology
+### mGlu4 PAM pharmacology
 
 4-((E)-styryl)-pyrimidin-2-ylamine (mGlu4 PAM, Cmp 11) was synthesized at Boehringer Ingelheim, Germany. The compound was dissolved in one volume of 0.1% Tween-80 (v/v) and nine volumes of 0.5% Natrosol and administered orally at 10 ml/kg, for a final dose of 80 mg/kg, 30 min before testing. The dose was chosen based on previous studies (East et al., 2010; Isherwood, 2017).
 
-## In vivo electrophysiology
+### In vivo electrophysiology
 
 After the surgery and recovery period, animals were handled and habituated to the recording room for several days prior experimental recordings. Electrodes were connected via an Omnetics connector to a 16-channel unity-gain headstage (Plexon) and the animal was left in the homecage for 10 min thereafter. The headstage was connected to a pre-amplifier where the signal was band-pass filtered (3 Hz – 8 kHz) and amplified. Neural activity was digitized at 40 kHz and highpass-filtered for spikes (800 Hz) and LFPs (3–200 Hz) for offline analysis. All recording sessions per mouse were merged. In general, three no treatment sessions, two vehicle, and two mGlu4 PAM sessions were concatenated together and split accordingly to type after unit sorting. Single units were sorted manually with Offline Sorter v4 (OFS, Plexon) in 3D PC feature space on unsorted waveforms (Figure 2—figure supplement 2A) and declared a single unit if the spike cluster was separable from noise and other clusters and no refractory period infringements were present. To avoid multi-sampling of single units, cross-correlograms of units from adjacent channels were inspected for co-firing and respective units removed from analysis. Simultaneously to neuronal data acquisition, animal behavior was recorded using both the sensor state (as described in the GNG task section) and image, with a video camera located on top of the cage, using CinePlex Studio. Video analysis and synchronization with neuronal recordings was then performed using CinePlex Editor. For the extraction of the immobility episodes, the motion measure data was averaged with the moving average window of 2 s, with the minimum duration of an immobility state set at 1 s (threshold 80). Episodes less than 0.5 s apart were merged. Finally, Neuroexplorer 5 was used to reconstruct the behavioral paradigm and treatment sessions.
 
@@ -179,15 +606,15 @@ Unit activity is reported either as frequency (Hz) or normalized activity (Z-sco
 
 Three mice were implanted for STN. Each animal was recorded for two to four independent non-treatment sessions resulting in a total of 74 units (average eight units per session), two sessions under vehicle resulting in a total of 27 units (average five units per session) and three sessions under mGlu4 PAM resulting in a total of 34 units (average of four units per session). Session-averaged precue response rates for each animal used for the STN electrophysiological analysis are presented in Figure 6—figure supplement 7B. Two animals were implanted for SNr. Each animal was recorded for four independent non-treatment sessions resulting in a total of 41 units (average five units per session), one session under vehicle resulting in a total of 11 units (average five units per session) and one session under mGlu4 PAM resulting in a total of seven units (average of three units per session).
 
-## Optogenetic manipulation
+### Optogenetic manipulation
 
 Animals injected with optogenetic AAV for later neuronal modulation during behavior underwent habituation for attaching a fiber-optic patch cord (Doric lenses) onto the implanted optical fibers. For ChR2 activation, laser trains of blue light (473 nm) consisting of 20 ms pulses with a frequency of 20 Hz (if not noted otherwise) were delivered at an intensity of 1–1.5 mW at the fiber tip, unless stated otherwise. For Arch-mediated silencing, laser trains of constant yellow light (568 nm) were delivered at an intensity of 8–10 mW. Intensity of all laser stimulations was measured before every experiment at the tip of the optic fiber via Power Meter (Thorlabs, PM100D). Laser stimulation was controlled by MATLAB scripts during GNG experiments and by Arduino boards running customized scripts executed by Any-maze software (Stoelting) during open-field test.
 
-## mGlu4 PAM pharmacology
+### mGlu4 PAM pharmacology
 
 4-((E)-styryl)-pyrimidin-2-ylamine (mGlu4 PAM, Cmp 11) was synthesized at Boehringer Ingelheim, Germany. The compound was dissolved in one volume of 0.1% Tween-80 (v/v) and nine volumes of 0.5% Natrosol and administered orally at 10 ml/kg, for a final dose of 80 mg/kg, 30 min before testing. The dose was chosen based on previous studies (East et al., 2010; Isherwood, 2017).
 
-## Resting-state functional magnetic resonance imaging
+### Resting-state functional magnetic resonance imaging
 
 Animals were administered vehicle or 80 mg/kg mGlu4 PAM (see Pharmacology) and were left undisturbed for 30 min prior any MRI measurements. MRI was performed on a 15.2T Bruker system (Bruker BioSpec, Ettlingen Germany) with a four-channel phase array coil for mouse heads (Bruker, Biospec). Prior to imaging all mice were anesthetized with 4% isoflurane, while care was taken to adjust the isoflurane levels immediately so that respiration did not go below 100 beats per minute (bpm) at any time. During imaging, respiration was kept between 110 and 140 bpm. For the rs-fMRI study, single shot echo planar imaging sequence with spin echo readout was used (TR = 2000 ms, TE = 19.7 ms, FOV = 16 × 16 mm2, voxel size = 250 × 250 µm2, 30 slices 0.5 mm thick, 1 average, 240 repetitions, 8 min total imaging time). Following resting-state scan, a high-resolution T1-weighted anatomical scan was acquired using gradient echo sequence (TR = 500 ms, TE = 3 ms, FOV = 16 × 16 mm2, voxel size = 125 × 125 µm2, 30 slices 0.5 mm thick, 4 averages).
 
@@ -195,21 +622,21 @@ rs-fMRI data were first bias-field corrected using N4ITK algorithm (Tustison et 
 
 Functional connectivity (FC) patterns were compared between each group, by extracting the mean time-series BOLD signal of each of 102 brain regions. In order to investigate the general effect of impulsivity across all annotated brain regions, mean FC correlations were calculated for each animal under vehicle treatment, and the mean correlation matrices for each impulsivity group were subtracted from each other. Next, for each brain node, a one-sample t-test was performed against 0 if no difference on impulsivity levels, using Bonferroni for multiple correction. To assess the interaction effect between mGlu4 PAM treatment and impulsivity levels, FC correlation matrices were calculated for each animal under vehicle or compound treatment as before, followed, by two-way repeated-measures ANOVA on each of the respective brain node, using Bonferroni for multiple correction.
 
-## Histological analysis
+### Histological analysis
 
 To verify virus expression (see Key resources table for viral constructs) and correct locations of optical fiber tips and cannulae, animals were sacrificed using a mixture of 10 mg/ml ketamine (OGRIS Pharma) and 1 mg/ml medetomidine hydrochloride (Domitor, ORION Pharma) in 1× PBS and transcardially perfused with 40 ml of cold 1× PBS/heparine followed by 40 ml of 4% (PFA) in 1× PBS. Brains were immediately removed, post-fixed in 4% PFA at 4°C overnight, transferred to 30% sucrose solution for 24 hr and subsequently frozen in Tissue Tech O.C.T. on dry ice and stored at –80°C until sectioning. Coronal cryosections were cut at 20 µm thickness. Selected sections were counterstained with DAPI and mounted in Fluorescence Mounting Medium (Dako, S3023). Whole slides were then scanned using an automated widefield microscope (Pannoramic 250 Flash, 3D HISTECH Ltd.). Once images were acquired, regions of interest (ROIs) were marked by hand within Pannoramic Viewer (3D HISTECH Ltd). Expression of viral constructs and location of optical fiber tips/cannulae were then assessed for correct targeting (Figure 3—figure supplement 1A).
 
 Viral expression was quantified using a custom ImageJ script, using an overlay of the appropriate sections from all animals within the experimental group and averaging the signal.
 
-## In situ hybridization
+### In situ hybridization
 
 The mGlu4 expression analysis was done on cryosections with tissue prepared as described for the histological analysis extracted from GNG trained animals. The multiplexed in situ hybridization staining was done using the RNAscope system (RNAscope Multiplex Fluorescent v2 kit Cat no. 323100, Advanced Cell Diagnostics) according to manufacturer’s protocol. The tissue was co-hybridized with proprietary probes against Grm4 (Cat no. 480991), probe mix against Slc17a6+ Slc17 a7 (Cat no. 416631 and 319171) followed by differential fluorescence tagging (TSA Cy 3, 5, TMR Fluorescein Evaluation kit Cat no. NEL 760001KT, Perkin Elmer). Slides were imaged as described in the Histological analysis section. Images were processed using ImageJ, quantifying the total number of mGlu4 foci, and normalizing each ROI to the total number of detected nuclei using DAPI staining. For each brain region, ROIs at least two sections were selected for left and right hemispheres, averaged, and treated as independent samples. mGlu4 expression quantification was performed on these ROIs by automated analyses based on custom ImageJ scripts. The signal for each ROI was normalized to the average signal in the LI group for regional analyses. For cellular analyses, perisomatic cellular signals and cell type (VGlut) were identified using custom scripts. Cells were defined as VGlut+ if their perisomatic signal was above the ROI section average for a conservative classification of VGlut+ glutamatergic projection neurons.
 
-## Statistical data analysis
+### Statistical data analysis
 
 Sample sizes are in line with estimates derived from previous experiments, using G*Power Version 3.1.9.6. For behavioral experiments, target sample size was in the range of 6–10 animals (effect size 0.45, Groessl et al., 2018). Animals were assigned randomly to all experimental cohorts. The behavioral experimenter was blind to the treatment of respective groups, wherever possible. All behavioral and data analyses were carried out blinded and using automated computational pipelines, wherever applicable. Establishing of the behavioral assay, neural recordings, and circuit manipulation were performed in independent experiments, with separate animal cohorts, wherever applicable. Basic behavior was replicated across experiments for control groups. Optogenetic manipulations were replicated on separate experiments and cohorts (biological replicates). All behavioral statistics were performed in GraphPad Prism (Version 7), unless otherwise indicated, and all statistical tests used are indicated in the figure legends. Experimental designs with one categorical independent variable were assessed by Shapiro-Wilk normality tests. If normality test passed, parametric statistics (t-test, one-way ANOVA) were applied. In case of non-normal distributions, non-parametric statics (Mann-Whitney U-test and Wilcoxon signed rank test) were planned. Experimental designs with two categorical independent variables were assumed to be normal and analyzed by two-way (optional: repeated) ANOVA without formally testing normality, followed by Sidak’s multiple comparison test. All significance levels are given as two-sided and were corrected for multiple comparisons, wherever applicable. The HI/LI split for pharmacological and shRNAi knockdown experiments was done by pooling the non-treatment data from both groups and performing a median split, treating the grouping as factor for subsequent statistical analysis, as described elsewhere (Iacobucci et al., 2015). For all behavioral cohorts, a Grubb’s outlier test was performed at alpha = 0.0001 for the main parameters in the GNG task (precue poke rate, FA, and correct Go responses). In case of comparing distributions (i.e., precue response rate, latency to poke), a two-sample Kolmogorov-Smirnov test was used where data from all trials and all animals within a given group were pooled for analysis ( Figure 1—figure supplement 1—source data 1, Figure 3—source data 1, Figure 4—figure supplement 1—source data 1 and Figure 6—figure supplement 3—source data 1). The multivariate comparison of behavioral experiments (i.e., precue response rate and % of NG trials with FA) were assessed by multivariate ANOVA (with repeated measures if applicable) followed by ANOVA in case of significance for the given measure. Data for rs-fMRI were analyzed as reported in the Resting-state functional magnetic resonance imaging section, one-sample t-test, and two-way ANOVA results are reported in Figure 1—source data 1 and Figure 4—figure supplement 2—source data 1, respectively. Omnibus significance values were rounded up for values p < 0.0001. Post hoc significance values were rounded up and given as * for values p < 0.05, ** for values p < 0.01, *** for values p < 0.001, and **** for values p < 0.0001; where no significance was made explicit, the test did not reach a significance level of p < 0.05. Unless stated otherwise, data are shown as mean ± SEM.
 
-## Data exclusion
+### Data exclusion
 
 For behavioral experiments, animals were excluded based on the following criteria. Note that some animals might fit more than one exclusion criteria.
 
@@ -231,18 +658,18 @@ In the GNG task during laser manipulation in the cue period, from the remaining 
 
 mGlu4 PAM cohorts: In the GNG task 4 out of 31 animals from mGlu4 PAM and 2 out of 31 animals from vehicle treatment groups were excluded due to malaise. Further, from the remaining animals, one animal from the mGlu4 PAM group was excluded for non-performance in the task. Finally, two animals from the HI/precue and LI/Go parameter were excluded as statistical outlier (Grubb’s).
 
-## Behavior scripts
+#### Behavior scripts
 
 Code for assessing behavioral parameters. MATLAB and Python scripts to extract all animal behavioral data from sensor data from the cage/behavior operating software, such as precue response rate, % of correct Go responses. Used to generate main figures: Figure 1B and C; Figure 3A–D; Figures 4A–C–6C–E.
 
-## Electrophysiology scripts
+#### Electrophysiology scripts
 
 Code for post-processing in vivo electrophysiological data. A set of R scripts to process and combine the electrophysiological data exported from Neuroexplorer for further analysis and visualization, with additional options to perform cluster permutation statistical tests. Used to generate main figures: Figures 2A–E–5A–C.
 
-## fMRI data plus scripts
+#### fMRI data plus scripts
 
 Data and code for fMRI. A set of R scripts to process the time-series BOLD signal from the fMRI datasets exported from DPABI, applied to generate correlation matrices, perform one-sample t-test and ANOVAs. Used to generate main figures: Figures 1D, E, 4D–E.
 
-## Histology scripts
+#### Histology scripts
 
 Code for cell counting from histological images. A custom-made ImageJ script to evaluate in situ hybridization signals from images obtained using an automated widefield microscope. Used to generate main figures: Figure 6B.

@@ -24,18 +24,18 @@
 
 ### Affiliations
 
-1. https://ror.org/054pv6659 Department of Pharmacology and Toxicology, Institute of Pharmacy, Center for Molecular Biosciences Innsbruck, University of Innsbruck Innsbruck Austria
+1. Department of Pharmacology and Toxicology, Institute of Pharmacy, Center for Molecular Biosciences Innsbruck, University of Innsbruck Innsbruck Austria ([ROR:054pv6659](https://ror.org/054pv6659))
 2. Department of Drug Science, NIS Centre, University of Torino Torino Italy
-3. https://ror.org/032000t02 Institute of Applied Physiology, University of Ulm, Ulm, Germany Ulm Germany
-4. https://ror.org/052gg0110 Linacre College & New College, University of Oxford Oxford United Kingdom
-5. https://ror.org/00rcxh774 Institute for Zoology, Biocenter, University of Cologne Cologne Germany
-6. https://ror.org/00rcxh774 Institute of Neurophysiology, University of Cologne Cologne Germany
+3. Institute of Applied Physiology, University of Ulm, Ulm, Germany Ulm Germany ([ROR:032000t02](https://ror.org/032000t02))
+4. Linacre College & New College, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+5. Institute for Zoology, Biocenter, University of Cologne Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))
+6. Institute of Neurophysiology, University of Cologne Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))
 
 † Corresponding author
 
 ## Abstract
 
-In dopaminergic (DA) Substantia nigra (SN) neurons Cav2.3 R-type Ca 2+ -currents contribute to somatodendritic Ca 2+ -oscillations. This activity may contribute to the selective degeneration of these neurons in Parkinson’s disease (PD) since Cav2.3-knockout is neuroprotective in a PD mouse model. Here, we show that in tsA-201-cells the membrane-anchored β2-splice variants β2a and β2e are required to stabilize Cav2.3 gating properties allowing sustained Cav2.3 availability during simulated pacemaking and enhanced Ca 2+ -currents during bursts. We confirmed the expression of β2a- and β2e-subunit transcripts in the mouse SN and in identified SN DA neurons. Patch-clamp recordings of mouse DA midbrain neurons in culture and SN DA neurons in brain slices revealed SNX-482-sensitive R-type Ca 2+ -currents with voltage-dependent gating properties that suggest modulation by β2a- and/or β2e-subunits. Thus, β-subunit alternative splicing may prevent a fraction of Cav2.3 channels from inactivation in continuously active, highly vulnerable SN DA neurons, thereby also supporting Ca 2+ signals contributing to the (patho)physiological role of Cav2.3 channels in PD.
+In dopaminergic (DA) Substantia nigra (SN) neurons Cav2.3 R-type Ca2+-currents contribute to somatodendritic Ca2+-oscillations. This activity may contribute to the selective degeneration of these neurons in Parkinson’s disease (PD) since Cav2.3-knockout is neuroprotective in a PD mouse model. Here, we show that in tsA-201-cells the membrane-anchored β2-splice variants β2a and β2e are required to stabilize Cav2.3 gating properties allowing sustained Cav2.3 availability during simulated pacemaking and enhanced Ca2+-currents during bursts. We confirmed the expression of β2a- and β2e-subunit transcripts in the mouse SN and in identified SN DA neurons. Patch-clamp recordings of mouse DA midbrain neurons in culture and SN DA neurons in brain slices revealed SNX-482-sensitive R-type Ca2+-currents with voltage-dependent gating properties that suggest modulation by β2a- and/or β2e-subunits. Thus, β-subunit alternative splicing may prevent a fraction of Cav2.3 channels from inactivation in continuously active, highly vulnerable SN DA neurons, thereby also supporting Ca2+ signals contributing to the (patho)physiological role of Cav2.3 channels in PD.
 
 ## Introduction
 
@@ -53,29 +53,245 @@ Here, we directly addressed the question if association of Cav2.3 channels with 
 
 To explore how Cav2.3 channels can contribute to DA neuron Ca2+-entry during sustained neuronal activity we expressed Cav2.3 α1-subunits together with its accessory α2δ1 and different β-subunits in tsA-201 cells under near-physiological conditions (Figure 1). For this purpose, we employed physiological extracellular Ca2+ (2 mM), weak intracellular Ca2+-buffering (0.5 mM EGTA, see methods), and, in addition to square pulse protocols, used typical AP waveforms previously recorded from SN DA neurons in mouse midbrain slices (2.5 Hz) or simulated bursts as command voltages as described (Ortner et al., 2017; see methods). Moreover, we specifically employed the Cav2.3e α1-subunit splice variant for our recordings, which among the six major Cav2.3 α1-subunit splice variants, was the only one detected in UV laser-microdissected mouse SN DA neurons in experiments using a qualitative single-cell RT-qPCR approach (Figure 1—figure supplement 1A, B).
 
-## β-subunit isoform-dependent regulation of Cav2.3 channel gating
+![Figure 1.](https://cdn.elifesciences.org/articles/67464/elife-67464-fig1-v3.jpg)
+
+**Figure 1.:** (A) Current densities (pA/pF) with or without (gray) co-transfection of indicated β-subunits. Color code and n-numbers are given in the graphs. (B) Voltage-dependence of steady-state activation (normalized conductance G, right axis, solid lines) and inactivation (normalized ICa of test pulses, left axis, dashed lines, left n-numbers in parentheses). (C) Inactivation time course during 5 s depolarizing pulses to Vmax starting from a holding potential of –119 mV. Inset shows the first 200 ms of the 5 s pulse. Respective stimulation protocols are shown above each graph. The curves represent the means ± SEM for the indicated number of experiments (N = β2a: 5; β2d, β2e: 2; β3, β4, no β: 3). For statistics see Table 1. Vmax, voltage of maximal inward current. (D) Window currents measured in the presence of the indicated β-subunits were calculated by multiplying mean current densities (pA/pF) of I-V-relationships by the fractional current inactivation from steady-state inactivation curves at the indicated voltages. Data represent the means ± SEM for the indicated number of experiments (N = β2a: 5; β2d, β2e: 2; β3, β4: 3). Statistical significance was determined using one-way ANOVA with Bonferroni post-hoc test and is indicated: *** p<0.001; ** p<0.01; * p<0.05. Source data provided in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67464/elife-67464-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Cartoon of the exon structure of all Cav2.3 splice variants. The murine Cacna1e gene, coding for the Cav2.3 α1-subunits contains 48 exons with six major alternative splice variants (right panel). The splicing events include the variable use of exon 19, 21 nucleotides of exon 20 and exon 45. The outer and inner primer pairs chosen for identification of the different splice variants are located in the II-III loop and the C-terminus, covering the three described splicing sites. Expressed exons are shown as white boxes and splicing sites are indicated in red. (B). Agarose gel electrophoresis image showing two PCR products (363 bp II-III loop nested PCR fragment and 498 bp C-terminus nested PCR fragment) coding for the Cav2.3e splice variant of Cav2.3 (Cacna1e) found in mouse laser-dissected SN DA neuron derived cDNA (n=40, left). In contrast, all five PCR products (363 bp, 399 bp, and 420 bp in the II-III loop and 369 bp and 498 bp in the C-terminus nested PCR fragments) coding for all six major splice variants were found in whole brain tissue-derived cDNA (as positive control, right panel).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67464/elife-67464-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Since palmitoylation is reversible and regulated in an activity-dependent localized manner (Bijlmakers and Marsh, 2003; Matt et al., 2019), we also investigated the contribution of palmitoylation of β2a for Cav2.3e modulation under our experimental conditions. To mimic the de-palmitoylated form, we replaced the two N-terminal cysteines to serines (C3S/C4Sβ2a) which prevents plasma membrane anchoring of β2a (Gebhart et al., 2010; Qin et al., 1998). Data are shown for Cav1.3 (C-terminally long splice variant, Bock et al., 2011) or Cav2.3 α1-subunits co-expressed with α2δ1 and β2a (orange), C3S/C4Sβ2a (red) or β3 (green). Respective command voltages are given in each panel. To disrupt palmitoylation-mediated membrane anchoring, the two N-terminal cysteines of β2a (see Figure 2—figure supplement 1) were replaced by serines in C3S/C4Sβ2a. (A, B) Inactivation kinetics during a 5 s long depolarizing step to Vmax for Cav1.3L (A), 15 mM Ca2+, holding potential –89 mV or Cav2.3 (B), 2 mM Ca2+, holding potential –119 mV. Curves represent means ± SEM for the indicated number of experiments. For statistics see Table 1 and Supplementary file 6. (C, D) Voltage-dependence of activation (solid lines, normalized conductance G) and inactivation (dashed lines, normalized ICa of 20-ms test pulses) for Cav1.3L (C) 15 mM Ca2+, holding potential –89 mV or Cav2.3 (D), 2 mM Ca2+, holding potential –119 mV. Means ± SEM. For statistics see Table 1 and Supplementary file 6. C3S/C4Sβ2a significantly shifted V0.5,inact of Cav2.3 to more positive voltages as compared to β3 but to a much smaller extent (<14 mV) than β2a (+35 mV) (Table 1). Due to this prominent role of palmitoylation on the V0.5,inact of Cav2.3 channels, the palmitoylation state of β2a should allow further fine-tuning of non-inactivating current components of Cav2.3 channels in SN DA neurons. The effects of β2a palmitoylation on the inactivation kinetics and inactivation voltage of Cav1.3 L-type channels (A, C) were different from Cav2.3, suggesting that palmitoylation/depalmitoylation events would regulate Ca2+ channel function in a subtype-selective manner. Unlike β2a, C3S/C4Sβ2a was unable to slow the inactivation time course of Cav1.3, thus stabilizing faster inactivation similar to β3 (Supplementary file 6, Gebhart et al., 2010). In contrast, preventing palmitoylation of β2a did not affect the inactivation time course of Cav2.3e (Table 1). Moreover, unlike observed for Cav2.3, steady-state inactivation was not significantly different for Cav1.3 co-transfected with β2a, β3, or C3S/C4Sβ2a (Supplementary file 6). Source data provided in Figure 1—figure supplement 2—source data 1.
+
+### β-subunit isoform-dependent regulation of Cav2.3 channel gating
 
 We first used standard square pulse protocols to quantify the effect of different β-subunits on the voltage-dependence of channel gating under our experimental conditions. In addition to β3, β4, and β2a analyzed in previous studies (Jones et al., 1998; Yasuda et al., 2004), we also included membrane-anchored β2e and β2d, a cytosolic β2 splice variant, in our head-to-head comparison (Figure 1). In agreement with earlier studies (Jones et al., 1998; Yasuda et al., 2004), we found that recombinant Cav2.3 channels when associated with cytosolic β3 or β4 subunits inactivate at negative voltages (V0.5,inact < –70 mV) and with a rapid inactivation time course (≥50% within 50 ms, Figure 1B–C, Table 1). The cytosolic β2d splice variant also showed a gating behavior very similar to β4. In contrast, β2a, which is anchored to the plasma membrane through N-terminal palmitoylation, slowed the inactivation time course and shifted Cav2.3 voltage-dependent inactivation by ~30 mV to more positive potentials compared to β4 (and β3). Likewise, with co-expressed β2e, which is membrane anchored through N-terminal phospholipid interaction (Buraei and Yang, 2010; Miranda-Laferte et al., 2014), gating properties were similar to β2a-containing Cav2.3 channel complexes (Figure 1A–C, Table 1). In the case of β2a, the shift in the voltage-dependence of inactivation, but not the slowing of the inactivation time course, was largely dependent on N-terminal palmitoylation as shown with the palmitoylation-deficient mutant C3S/C4Sβ2a (Figure 1—figure supplement 2). The voltage-dependence of activation was similar for all tested β-subunits (Figure 1A, Table 1). Due to the voltage-dependent inactivation at more depolarized potentials and the resulting overlap of the steady-state activation and inactivation curves (Figure 1B), β2a and β2e subunits induce window currents, i.e. steady-state Ca2+ influx, at negative potentials (Figure 1D). Our findings confirm and extend previous observations that membrane-anchored β2 subunits give rise to slowly inactivating Cav2.3 currents available at more positive voltages that could participate in the formation of such SNX-482-sensitive current components in neurons.
+
+**Table 1.**
+ Voltage-dependence of activation and inactivation, and time course of inactivation of Cav2.3 co-transfected with α2δ1 and different β subunits in tsA-201 cells.Table 1—source data 1.Source data for data shown in Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">β-subunit</th>
+      <th colspan="6">Cav2.3 - Activation 2 mM Ca2+</th>
+      <th colspan="4">Cav2.3 - Inactivation 2 mM Ca2+</th>
+    </tr>
+    <tr>
+      <th>V0.5[mV]</th>
+      <th>k[mV]</th>
+      <th>Vrev[mV]</th>
+      <th>act thresh[mV]</th>
+      <th>current density[pA/pF]</th>
+      <th>n</th>
+      <th>V0.5, inact[mV]</th>
+      <th>kinact[mV]</th>
+      <th>plateau[%]</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>no β</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>–10.7±1.1</td>
+      <td>23</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>β2a</td>
+      <td>–14.8±1.2</td>
+      <td>4.8±0.2</td>
+      <td>37.1±0.9</td>
+      <td>–32.0±0.9</td>
+      <td>–130.0+++±15.2</td>
+      <td>26</td>
+      <td>–40.6±1.6</td>
+      <td>7.3±0.5</td>
+      <td>0.4±1.1</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>C3S/C4Sβ2a</td>
+      <td>–13.9±1.7</td>
+      <td>4.7±0.3</td>
+      <td>38.2±1.1</td>
+      <td>–30.9±0.7</td>
+      <td>–105.7+++±21.4</td>
+      <td>12</td>
+      <td>–62.6***/###/§§§±1.6</td>
+      <td>8.3##±0.4</td>
+      <td>3.8±1.6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>β2d</td>
+      <td>–15.9§±1.1</td>
+      <td>4.6±0.2</td>
+      <td>37.2±1.1</td>
+      <td>–32.1§±0.7</td>
+      <td>–107.7+++±13.4</td>
+      <td>17</td>
+      <td>–69.9***/###±2.0</td>
+      <td>8.2##±0.2</td>
+      <td>2.0±0.7</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>β2e</td>
+      <td>–14.1±0.9</td>
+      <td>4.8±0.2</td>
+      <td>40.3*±0.6</td>
+      <td>–31.5±0.7</td>
+      <td>–96.8+++±14.3</td>
+      <td>32</td>
+      <td>–39.9±1.9</td>
+      <td>6.5±0.3</td>
+      <td>3.8±1.2</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>β3</td>
+      <td>–10.5±0.7</td>
+      <td>5.2±0.2</td>
+      <td>39.8±0.9</td>
+      <td>–29.2±0.7</td>
+      <td>–64.6++±12.8</td>
+      <td>17</td>
+      <td>–76.2***/###±1.0</td>
+      <td>7.0±0.1</td>
+      <td>4.1±0.7</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>β4</td>
+      <td>–13.1±0.7</td>
+      <td>5.0±0.2</td>
+      <td>38.5±0.5</td>
+      <td>–31.0±0.5</td>
+      <td>–74.8+++±11.9</td>
+      <td>17</td>
+      <td>–70.3***/###±1.2</td>
+      <td>7.5±0.1</td>
+      <td>2.4±0.4</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td colspan="8">Cav2.3–5 s Inactivation time course 2 mM Ca2+</td>
+    </tr>
+    <tr>
+      <td>β-subunit</td>
+      <td>r50 [%]</td>
+      <td>r100 [%]</td>
+      <td>r250 [%]</td>
+      <td>r500 [%]</td>
+      <td>r1000 [%]</td>
+      <td>r5000 [%]</td>
+      <td>n</td>
+    </tr>
+    <tr>
+      <td>β2a</td>
+      <td>71.3±2.1</td>
+      <td>52.4±2.8</td>
+      <td>27.8±2.9</td>
+      <td>14.3±2.3</td>
+      <td>6.5±1.2</td>
+      <td>1.3±0.3</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>C3S/C4Sβ2a</td>
+      <td>67.4§§§/%±5.2</td>
+      <td>47.3#/§§§/%%±6.4</td>
+      <td>23.4§±5.3</td>
+      <td>11.6±3.3</td>
+      <td>6.2±1.7</td>
+      <td>3.4±1.1</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>β2d</td>
+      <td>57.4*/###/§§§±2.8</td>
+      <td>32.6***/###/§§±2.4</td>
+      <td>11.3*/###±1.7</td>
+      <td>4.4**/###±0.9</td>
+      <td>2.4**/###±0.6</td>
+      <td>1.7±0.5</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>β2e</td>
+      <td>77.5±2.9</td>
+      <td>64.2±3.3</td>
+      <td>41.1±3.2</td>
+      <td>22.3±2.8</td>
+      <td>10.1±2.0</td>
+      <td>3.3±0.8</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>β3</td>
+      <td>32.9***/###±2.9</td>
+      <td>14.2***/###±1.5</td>
+      <td>6.1***/###±1.0</td>
+      <td>4.4**/###±0.7</td>
+      <td>2.9#±0.5</td>
+      <td>1.6±0.3</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>β4</td>
+      <td>50.3***/###/§§±2.7</td>
+      <td>27.1***/###±2.5</td>
+      <td>8.6**/###±1.4</td>
+      <td>3.7**/###±0.8</td>
+      <td>2.0**/###±0.5</td>
+      <td>1.0±0.2</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
 
 Since Cav2.3 α1-subunits have also been reported to mediate ICa even when expressed in the absence of β-subunits (Jones et al., 1998; Yasuda et al., 2004), we also tested to which extent β-subunit modulated channels are expected to contribute to Cav2.3 currents. In our experiments, all five tested β-subunits (β2a, β2d, β2e, β3, β4) caused a robust and highly significant (6–12-fold; Figure 1A, Table 1) increase in current densities. This implies that β-associated Cav2.3 channels contribute more to overall Cav2.3-mediated currents than channel complexes devoid of β-subunits and thus can be subject to differential modulation by β-subunits.
 
 Taken together, these data suggest that through their effect on inactivation gating β2a- and β2e-subunits could contribute to sustained Cav2.3 activity and AP-associated Ca2+ transients previously recorded in SN DA neurons (Benkert et al., 2019).
 
-## β-subunit transcripts in mouse SN and VTA
+### β-subunit transcripts in mouse SN and VTA
 
 This prompted us to investigate if β2a and β2e splice variants are indeed expressed in SN tissue. First, we investigated β1 - β4 subunit expression patterns in the SN (and VTA for comparison, Figure 2A) dissected from brain slices of 12- to 14-week-old male C57Bl/6 N mice (Figure 2C) using a standard-curve-based absolute RT-qPCR assay (Schlick et al., 2010; Figure 2—figure supplement 1, Supplementary file 1, Supplementary file 2, Supplementary file 3). In both SN and VTA tissue, β4 (SN:~64%; VTA:~57%) and β2 (SN:~27%; VTA:~29%) represented the most abundant β-subunit transcripts, followed by β1 and β3 (~4–7%) (Figure 2A). Our findings are in excellent agreement (β2: 31–35%, β4: 41–45%) with cell-type-specific RNA sequencing data from identified mouse midbrain DA neurons (Brichta et al., 2015; Shin, 2015).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67464/elife-67464-fig2-v3.jpg)
+
+**Figure 2.:** (A) Expression of β1-β4 subunit transcripts in SN (n=3, N=3) (left) and VTA (n=3, N=3) (right) determined by RT-qPCR as described in Methods. (B) Expression of β2a-β2e subunit transcripts in SN (n=3, N=3) (left) and VTA (n=3, N=3) (right). Data are shown as the mean ± SEM. Statistical significance was determined using one-way ANOVA followed by Bonferroni post-hoc test: *** p<0.001; *p P<0.01; * p<0.05. Data was normalized to Gapdh and Tfrc determined by geNorm. (C) Example for four SN (left) and two VTA (right) tissue punches obtained for cDNA preparation with diameters of 0.5 mm each (left) or 0.8 mm each (right) from 7 to 8 successive 100-μm-sections between Bregma –3.00 mm and –3.80 mm, stained with Cresyl violet. Source data provided in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67464/elife-67464-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Alignment of the N-terminal amino acid sequence of the investigated β-subunits (β2a, β2d, β2e, β3, or β4). Residues responsible for membrane anchoring of β2a (palmitoylated cysteine residues are highlighted in orange) and β2e (positively charged amino acids forming a lipid binding motif are highlighted in blue) are indicated. Homologous exons are shaded in gray. Sequence accession numbers (human CACNB2 (β2) splice variants): β2a (NP_000715.2), β2d (NP_963887.2), β2e (NP_963864.1), β3 (NP_000716.2), β4e (NP_001307651.1). (B) The indicated β-subunit isoforms (β1-β4; n=3; gene names in parenthesis) and β2 splice variants (n=3) were recognized with high specificity (low CT value) by the corresponding RT-qPCR assay even in the presence of a 10-fold higher concentration of the mismatching DNA fragments corresponding to other isoforms/splice variants (β1–4: n=1; β2 splice variants: n=1). High binding specificity was confirmed by inefficient detection (high CT value) of all non-matching DNA fragments. We additionally performed experiments with a mixture of the specific with mismatching β-subunit DNA at ratios of 1:1, 1:2, and 1:5, and only the 1:10 mix is shown (similar CT values for all combinations). (C) Average expression stability of endogenous control genes in SN and VTA tissue. All reference genes maintained comparable cDNA concentrations throughout the experiments. Data were normalized to the expression of Glyceraldehyde 3-phosphate dehydrogenase (Gapdh) and Transferrin receptor (Tfrc) determined by geNorm. Data are given as means ± SEM (n=6, N=6). Source data provided in Figure 2—figure supplement 1—source data 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67464/elife-67464-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Left: Overview of a cresyl violet (CV) stained coronal midbrain section of a juvenile wildtype mouse after UV-LMD of 10 SN DA neurons (scale bar: 250 μm, upper). Image of one CV stained SN DA neuron of a juvenile wildtype mouse before and after UV-LMD (scale bar: 10 μm, lower). Middle: β2-subunit transcript relative mRNA quantification by reverse transcription quantitative PCR-based in UV-LMD mouse SN DA neurons (n=10). Right: Capillary gel electrophoresis image illustrating PCR products of β2-subunit (Cacnb2) splice variants amplified from a UV-LMD cDNA template corresponding to 2.9 cells. (B) Left: Representative images showing β2a and β2e (red) or tyrosine hydroxylase (TH (Th), green) RNAscope fluorescence signals (combined with nuclear DAPI staining, blue) of individual SN DA neurons from an adult wildtype mouse. Scale bar: 5 μm. Right: Absolute mRNA transcript numbers per cell for β2 (Cacnb2) - variants β2a or β2e in adult SN DA and VTA DA neurons of adult wildtype mice (N=6, each), as indicated. Tukey’s boxplots are shown. Significances are indicated by asterisks: *** p<0.001, **** p<0.0001. For statistics see details in Supplementary file 4. Source data provided in Figure 2—figure supplement 2—source data 1.
 
 Since the relative abundance of β2-subunit splice variants in the brain is unknown, we used our standard curve-based RT-qPCR assay to specifically quantify their expression in the SN and VTA (Figure 2B; for alignment of N-terminal β2 splice variants see Figure 2—figure supplement 1A). Assays were designed to specifically discriminate between β2a, β2b, and β2e. β2c and β2d N-termini were detected together (the β2d N-terminus is also present in β2c but with different alternative splicing in the HOOK region; Buraei and Yang, 2010; see methods). In SN and VTA, β2a (~30%) and β2e (~26%) transcripts together comprised about half of all tested β2-subunit splice variants, cytosolic β2c and β2d-species about 42% and β2b only about 3% (Figure 2B). Therefore, β2a and β2e together should be able to form a substantial fraction of Cav2.3 channel complexes in these neurons.
 
 We further confirmed the presence of the various N-terminal β2 splice variants in individual UV-laser microdissected mouse SN DA neurons at the mRNA level using a qualitative PCR approach (Figure 2—figure supplement 2, Supplementary file 4, Supplementary file 5). Moreover, quantitative RNAscope analysis confirmed the expression of β2e and β2a in identified mouse SN and VTA DA neurons with β2e more abundantly expressed compared to β2a (Figure 2—figure supplement 2).
 
-## β2 splice variant-dependent regulation of Cav2.3 activity during SN DA neuron-like regular pacemaking activity
+### β2 splice variant-dependent regulation of Cav2.3 activity during SN DA neuron-like regular pacemaking activity
 
 To test a possible role of β-subunits for Cav2.3 channel availability in SN DA neurons, we mimicked their electrical activity in tsA-201 cells because individual Ca2+-current components arising from Cav2.3 channel complexes associated with different β-subunits or even different splice variants cannot be isolated during continuous pacemaking in patch-clamp recordings of identified SN DA neurons. With co-expressed β3 and β4 isoforms simulated SN DA neuron regular pacemaker activity (initiated from a holding potential of –89 mV) induced large inward currents in response to single AP waveforms (Figure 3A and B). Cav2.3 channels conducted ICa during the repolarization phase of the AP (IAP) without evidence for inward current during the interspike interval (ISI, Figure 3A and B bottom inset). However, IAP decreased rapidly during continuous activity and almost completely disappeared after 1 (co-transfected β3)–2 min (co-transfected β4; Figure 3A, B, E and F). The time course of IAP decrease was best fitted by a bi-exponential function (see legend to Figure 3). Our data, therefore, suggest that Cav2.3e α1-subunits, in complex with α2δ1 and β3 or β4, cannot support substantial inward currents during continuous SN DA neuron pacemaking activity. This is in contrast to our previously published finding of stable Cav1.3 Ca2+-channel activity persisting under near identical experimental conditions (Cav1.3 α1/α2δ1/β3 previously published data; Ortner et al., 2017; illustrated for comparison in Figure 3E and F, in gray).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/67464/elife-67464-fig3-v3.jpg)
 
-**Figure 3.:** (A–D) Top panel: The SN DA neuron-derived command voltage was applied with a frequency of 2.5 Hz (only a time interval around the AP-spike is shown). Middle panel: Corresponding representative Ca2+ current traces (2 mM charge carrier) for Cav2.3 channels co-expressed with α2δ1 and β3 (A, green), β4 (B, purple), β2a (C, orange), or β2e (D, blue) are shown for the indicated sweep number (1st, 10th, 100th, 295th, 720th). Cav2.3 currents were completely blocked by 100 μM Cadmium (Cd2+), and remaining Cd2+-insensitive current components were subtracted off-line (bottom panel). ISI, interspike interval. (E) Current decay during simulated 2.5 Hz SN DA neuron pacemaking. Normalized peak inward current during APs (IAP) is plotted against time as mean ± SEM for the indicated number of experiments. IAP amplitudes were normalized to the IAP amplitude of the first AP after holding the cell at –89 mV. Cav1.3L co-expressed with α2δ1 and β3 (gray, mean only) is shown for comparison (data taken from Ortner et al., 2017). The IAP decay was fitted to a bi-exponential function (Cav2.3 β3: Aslow = 39.4% ± 0.65 %, τslow = 22.2 ± 0.15 min, Afast = 54.2 ± 0.76 %, τfast = 2.86 ± 0.07 min, non-inactivating=4.47% ± 0.13%; β4: Aslow = 48.5 ± 0.26 %, τslow = 90.3 ± 1.07 min, Afast = 41.8 ± 0.40 %, τfast = 8.39 ± 0.16 min, non-inactivating=5.12% ± 0.12%; β2a: Aslow = 52.6 ± 0.47 %, τslow = 299.3 ± 10.2 min, Afast = 13.4 ± 0.53 %, τfast = 18.2 ± 1.47 min, non-inactivating=32.3% ± 0.77%; β2e: Aslow = 67.7 ± 0.11 %, τslow = 294.1 ± 1.77 min, Afast = 7.10.0±0.27 %, τfast = 16.6 ± 1.24 min, non-inactivating=25.0% ± 0.12%). Curves represent the means ± SEM for the indicated number of experiments (independent transfections, N=Cav2.3/β3: 4; Cav2.3/β4: 2; Cav2.3/β2a: 4; Cav2.3/β2e: 2; Cav1.3L/β3: 6). (F) Normalized IAP decay after predefined time points for Cav2.3 with β3, β4, β2a or β2e, and Cav1.3L (with β3). Color-code and n-numbers as in panel E. Statistical significance was determined using one-way ANOVA followed by Bonferroni post-hoc test: *** p<0.001; ** p<0.01; * p<0.05. Source data provided in Figure 3—source data 1.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A–D) Top panel: The SN DA neuron-derived command voltage was applied with a frequency of 2.5 Hz (only a time interval around the AP-spike is shown). Middle panel: Corresponding representative Ca2+ current traces (2 mM charge carrier) for Cav2.3 channels co-expressed with α2δ1 and β3 (A, green), β4 (B, purple), β2a (C, orange), or β2e (D, blue) are shown for the indicated sweep number (1st, 10th, 100th, 295th, 720th). Cav2.3 currents were completely blocked by 100 μM Cadmium (Cd2+), and remaining Cd2+-insensitive current components were subtracted off-line (bottom panel). ISI, interspike interval. (E) Current decay during simulated 2.5 Hz SN DA neuron pacemaking. Normalized peak inward current during APs (IAP) is plotted against time as mean ± SEM for the indicated number of experiments. IAP amplitudes were normalized to the IAP amplitude of the first AP after holding the cell at –89 mV. Cav1.3L co-expressed with α2δ1 and β3 (gray, mean only) is shown for comparison (data taken from Ortner et al., 2017). The IAP decay was fitted to a bi-exponential function (Cav2.3 β3: Aslow = 39.4% ± 0.65 %, τslow = 22.2 ± 0.15 min, Afast = 54.2 ± 0.76 %, τfast = 2.86 ± 0.07 min, non-inactivating=4.47% ± 0.13%; β4: Aslow = 48.5 ± 0.26 %, τslow = 90.3 ± 1.07 min, Afast = 41.8 ± 0.40 %, τfast = 8.39 ± 0.16 min, non-inactivating=5.12% ± 0.12%; β2a: Aslow = 52.6 ± 0.47 %, τslow = 299.3 ± 10.2 min, Afast = 13.4 ± 0.53 %, τfast = 18.2 ± 1.47 min, non-inactivating=32.3% ± 0.77%; β2e: Aslow = 67.7 ± 0.11 %, τslow = 294.1 ± 1.77 min, Afast = 7.10.0±0.27 %, τfast = 16.6 ± 1.24 min, non-inactivating=25.0% ± 0.12%). Curves represent the means ± SEM for the indicated number of experiments (independent transfections, N=Cav2.3/β3: 4; Cav2.3/β4: 2; Cav2.3/β2a: 4; Cav2.3/β2e: 2; Cav1.3L/β3: 6). (F) Normalized IAP decay after predefined time points for Cav2.3 with β3, β4, β2a or β2e, and Cav1.3L (with β3). Color-code and n-numbers as in panel E. Statistical significance was determined using one-way ANOVA followed by Bonferroni post-hoc test: *** p<0.001; ** p<0.01; * p<0.05. Source data provided in Figure 3—source data 1.
 
 In contrast, the depolarizing shifts in steady-state inactivation and the slowing of inactivation kinetics by β2a and β2e subunits are sufficient to stabilize Cav2.3e currents during simulated regular pacemaking activity. When analyzed in parallel under identical experimental conditions IAP decreased with a much slower time course with about 40% of the maximal initial IAP still remaining even after 5 min of continuous activity (Figure 3C–F). The time course of IAP decrease could be fitted by a bi-exponential function predicting a steady-state reached at 32.3% ± 0.77% (n=12) of the initial IAP for β2a and 25.0% ± 0.12% (n=9) for β2e (see legend to Figure 3). Similar to co-transfected β3 or β4 subunits, β2a or β2e supported Cav2.3 ICa predominantly during the repolarization phase after the AP spike. However, in accordance with enhanced window currents at negative voltages (Figure 1D) these subunits also supported an inward current during the interspike interval (ISI) as evident from the first few sweeps (with the largest current amplitudes) (Figure 3C and D, bottom insets). IAP persisting after 2 min (β3, β4) or 5 min (β2a, β2e) of pacemaking was completely blocked by 100 µM Cd2+ with almost complete recovery upon washout (Figure 3A–E).
 
@@ -83,31 +299,145 @@ Irreversible loss of ICa, a phenomenon also known as current "run-down" widely d
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/67464/elife-67464-fig4-v3.jpg)
 
-**Figure 4.:** 2+ current in tsA-201 cells.Data for Cav2.3 co-expressed with α2δ1 and β2a (orange) or β3 (green) are shown. (A). Run-down during a 0.1 Hz square pulse protocol (20 ms to Vmax, holding potential –89 mV). Currents were normalized to the ICa of the sweep with the maximal peak inward current observed during the recording. After a full block with 100 µM Cd2+ currents recovered to the amplitude preceding the Cd2+ application. (B) Cells were held at –89 mV and then stimulated using the regular SN DA neuron pacemaking protocol for 30 s, 1 min, and 2 min each followed by 20 s long pauses (vertical dashed lines) at hyperpolarized potentials (–89 mV) to allow channel recovery from inactivation. IAP of individual APs was normalized to the inward current of the first AP. The current run-down component can be estimated from the non-recovering current component (horizontal dashed lines). Traces represent means ± SEM from the indicated number of experiments (N=2). BS, bath solution.
+**Figure 4.:** Data for Cav2.3 co-expressed with α2δ1 and β2a (orange) or β3 (green) are shown. (A). Run-down during a 0.1 Hz square pulse protocol (20 ms to Vmax, holding potential –89 mV). Currents were normalized to the ICa of the sweep with the maximal peak inward current observed during the recording. After a full block with 100 µM Cd2+ currents recovered to the amplitude preceding the Cd2+ application. (B) Cells were held at –89 mV and then stimulated using the regular SN DA neuron pacemaking protocol for 30 s, 1 min, and 2 min each followed by 20 s long pauses (vertical dashed lines) at hyperpolarized potentials (–89 mV) to allow channel recovery from inactivation. IAP of individual APs was normalized to the inward current of the first AP. The current run-down component can be estimated from the non-recovering current component (horizontal dashed lines). Traces represent means ± SEM from the indicated number of experiments (N=2). BS, bath solution.
 
 These data clearly demonstrate that the IAP decrease in response to simulated SN DA neuron pacemaking (2.5 Hz) is almost completely due to the reversible accumulation of Cav2.3 channels in inactivated states, an effect partially prevented by β2a and β2e.
 
-## Cav2.3 Ca2+ currents during simulated SN DA burst firing activity
+### Cav2.3 Ca2+ currents during simulated SN DA burst firing activity
 
 In addition to regular pacemaking activity (in vitro) or irregular single spike mode (in vivo), burst firing with transient increases in intracellular Ca2+-load has been associated with neurodegeneration and selective neuronal vulnerability in Parkinson’s disease (Dragicevic et al., 2015; Schiemann et al., 2012). Thus, we investigated to which extent Cav2.3 Ca2+-channels can contribute to Ca2+-entry during bursts and after post-burst hyperpolarizing pauses of SN DA neurons. After reaching steady-state IAP during simulated SN DA neuron pacemaking (β4: 1–2 min, β2a/β2e: 5–6 min, see also Figure 3E and F) we applied a computer modeled typical three-spike burst, followed by a 1.5 s long afterhyperpolarization-induced pause at more negative potentials as a command voltage as previously described (Ortner et al., 2017; Figure 5A). First, we quantified to which extent total burst Ca2+-charge, that is ICa integrated over the duration of the burst, changes as compared to total Ca2+-charge during the same duration of a single AP in steady-state (calculated as the mean of 3 APs preceding the burst). Integrated ICa during the burst was four- to sixfold higher than the mean integrated ICa during a steady-state AP with all co-expressed β-subunits (β2a, β2e, β4) (Figure 5B, left panel). However, it has to be considered that with co-expressed β4 only ~6% of the initial IAP remained in steady-state during regular pacemaking (Figure 3E and F). Therefore, this relative increase will cause a much smaller rise in absolute Ca2+ charge compared to β2a/β2e-associated Cav2.3 where ~ 40% of IAP persisted in steady-state (Figure 5B, Figure 3E and F).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/67464/elife-67464-fig5-v3.jpg)
 
-**Figure 5.:** The burst command voltage was elicited after ~5–6 min (β2a, β2e) or ~1–2 min (β4) of regular pacemaking to reach steady-state IAP (β2a and β2e:~30% of the initial IAP, β4:~6% of the initial IAP, see Figure 3). (A) Normalized current responses of Cav2.3 channels co-expressed with β2a, β2e or β4 subunits (and α2δ1) induced by a command voltage (top panel) simulating a typical three-spike burst followed by a hyperpolarization phase at hyperpolarized potentials (lowest voltage: –82 mV) for 1.5 seconds. Remaining Cd2+-insensitive current components (100 µM Cd2+) were subtracted off-line to extract pure Cav2.3 mediated ICa. One of at least four experiments with similar results is shown. (B) The integrated ICa during a single AP before the burst (obtained as the mean of the three preceding APs) was set to 100% and compared with ICa during the three-spike burst integrated over the time period equivalent to one AP (left) or the first APs after the pause (right). All investigated β-subunits resulted in increased integrated ICa during the burst. Data represent the means ± SEM for the indicated number of experiments (N = β2a: 4; β2e: 2; β4: 2). Statistical significance was determined using one-way ANOVA followed by Bonferroni post-test (whole burst) or Kruskal-Wallis followed by Dunn’s multiple comparison test (post-burst APs): *** p<0.001; ** p<0.01; * p<0.05. (C) Square-pulse protocol (top) used to determine recovery from inactivation after the indicated time intervals for β2a and β4-associated Cav2.3 channels (see Materials and methods for details). Data represent the means ± SEM for the indicated number of experiments (N=3). For statistics see Table 2. Source data provided in Figure 5—source data 1.Figure 5—source data 1.Figure 5.
+**Figure 5.:** The burst command voltage was elicited after ~5–6 min (β2a, β2e) or ~1–2 min (β4) of regular pacemaking to reach steady-state IAP (β2a and β2e:~30% of the initial IAP, β4:~6% of the initial IAP, see Figure 3). (A) Normalized current responses of Cav2.3 channels co-expressed with β2a, β2e or β4 subunits (and α2δ1) induced by a command voltage (top panel) simulating a typical three-spike burst followed by a hyperpolarization phase at hyperpolarized potentials (lowest voltage: –82 mV) for 1.5 seconds. Remaining Cd2+-insensitive current components (100 µM Cd2+) were subtracted off-line to extract pure Cav2.3 mediated ICa. One of at least four experiments with similar results is shown. (B) The integrated ICa during a single AP before the burst (obtained as the mean of the three preceding APs) was set to 100% and compared with ICa during the three-spike burst integrated over the time period equivalent to one AP (left) or the first APs after the pause (right). All investigated β-subunits resulted in increased integrated ICa during the burst. Data represent the means ± SEM for the indicated number of experiments (N = β2a: 4; β2e: 2; β4: 2). Statistical significance was determined using one-way ANOVA followed by Bonferroni post-test (whole burst) or Kruskal-Wallis followed by Dunn’s multiple comparison test (post-burst APs): *** p<0.001; ** p<0.01; * p<0.05. (C) Square-pulse protocol (top) used to determine recovery from inactivation after the indicated time intervals for β2a and β4-associated Cav2.3 channels (see Materials and methods for details). Data represent the means ± SEM for the indicated number of experiments (N=3). For statistics see Table 2. Source data provided in Figure 5—source data 1.
 
 We also investigated if post-burst afterhyperpolarizations would allow Cav2.3 channels to recover from inactivation and thus mediate increased Ca2+-entry during the first APs after the burst. We first determined the recovery from inactivation of Cav2.3 channels co-expressed with α2δ1 and β4 or β2a using a square-pulse protocol (Figure 5C, Table 2; 1 s conditioning prepulse to Vmax to inactivate Cav2.3 channels followed by a 10 ms step to Vmax after different time periods at –89 mV). About 30% of currents recovered under these experimental conditions after 1.5 s at –89 mV with both co-expressed β4 and β2a (~sixfold increase of the remaining ICa after 1 s at Vmax). In contrast, recovery during the hyperpolarizing pause after the burst of the AP protocol was much less pronounced (β4) or absent (β2a, β2e; Figure 5B, right panel). This may be due to the different pulse protocols inducing channel inactivation over different time periods and may stabilize inactivated states with different recovery times.
 
+**Table 2.**
+ Recovery from inactivation of Cav2.3 channels co-transfected with either β2a or β4 in combination with α2δ1 in tsA-201 cells.Table 2—source data 1.Source data for data shown in Table 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Cav2.3 - recovery from inactivation 2 mM Ca2+</th>
+    </tr>
+    <tr>
+      <th>β-subunit</th>
+      <th>r100 [%]</th>
+      <th>r1500 [%]</th>
+      <th>r4000 [%]</th>
+      <th>r10000 [%]</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>β2a</td>
+      <td>15.7±2.4</td>
+      <td>39.3±4.6</td>
+      <td>53.4±4.5</td>
+      <td>74.2±3.6</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>β4</td>
+      <td>12.7±1.7</td>
+      <td>35.6±2.4</td>
+      <td>51.3±2.8</td>
+      <td>72.0±1.9</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
 Taken together, these data predict that β2a- and β2e-associated Cav2.3 channels can contribute to enhanced Ca2+-entry during brief burst activity but not during post-burst APs.
 
-## Steady-state activation and inactivation of R-type currents in mouse DA neurons
+### Steady-state activation and inactivation of R-type currents in mouse DA neurons
 
 We have recently shown in whole-cell patch-clamp recordings that 100 nM SNX-482 inhibit ~30% of total Cav currents in mouse SN DA neurons (Benkert et al., 2019) when stimulated from a negative holding potential of –70 mV. If V0.5,inact of Cav2.3 channels in SN DA neurons is indeed stabilized at more positive potentials, then the voltage-dependent inactivation of the R-type currents should allow a fraction of channels to be available even at voltages positive to –40 mV.
 
 Using whole-cell patch-clamp recordings (Figure 6), we therefore measured the steady-state inactivation of R-type ICa in identified SN DA neurons in mouse midbrain slices. First, R-type current (i.e. current reminaing after blocking other Cav channels) was isolated as reported in previous publications by preincubation of slices with selective inhibitors of Cav1 (1 µM ISR), Cav2 (Cav2.1, Cav2.2; 1 µM ω-conotoxin MVIIC) and Cav3 (10 µM Z941) (Figure 6A, blue traces/symbols, see also methods section). R-type current evoked from –100 mV activated at ~8 mV more positive voltages than total ICa (Figure 6A, Table 3 for statistics). This observation is in accordance with the positive activation voltage-range of Cav2.3e channels measured in tsA-201 cells. The R-type current V0.5,inact was ~5 mV more positive compared to total ICa (–47.5 mV vs. –52.7 mV; Figure 6A, Table 3) and therefore ~7 mV more negative than recombinant Cav2.3 currents expressed with β2a or β2e subunits (~ –40 mV, Table 1) and ~23–29 mV more positive than recombinant Cav2.3 currents expressed with β4 or β3. Since R-type currents may include current components not mediated by Cav2.3 (Newcomb et al., 1998; Sochivko et al., 2002; Tottene et al., 2000; Wilson et al., 2000), we also isolated SNX-482-sensitive currents, which must be mediated by Cav2.3 (Zamponi et al., 2015) by subtracting current remaining in the presence of SNX-482 from control current (Figure 6B). Although the slope of the voltage-dependence of activation was different for the SNX-482-sensitive current as compared to R-type current, steady-state inactivation was again observed at significantly more positive voltages as compared to control current (–44.6 mV vs. –52.9 mV, Figure 6B, Table 3), and ~5 mV more negative than recombinant Cav2.3 currents associated with β4 or β3 (Table 3). Although these experiments do not directly prove the contribution of β2a and/or β2e to R-type current in SN DA neurons, the strong requirement of β-subunits for Cav2.3 channel activity and the inability of other cytosolic β-subunit variants to account for the observed voltage-dependence of R-type current (Figure 1A and B) strongly suggests a contribution of these membrane-associated β-subunits for preventing complete inactivation of Cav2.3-mediated currents during typical activity patterns in these cells.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/67464/elife-67464-fig6-v3.jpg)
+
+**Figure 6.:** (A) ICa recorded in SN DA neurons without (Control, black, n=16) or after preincubation ("R-type", blue, n=19) of slices with a Cav channel blocker cocktail to inhibit Cav3 (10 µM Z941), Cav1 (1 µM I), Cav2.1 and Cav2.2 (1 µM ω-conotoxin-MVIIC) (see Methods). Left panel: representative current traces of recordings at –20 mV test potentials (holding potential –100 mV); notice that similar amplitudes of control and R-type current were chosen to facilitate comparison of current kinetics. Right panel: voltage-dependence of steady-state activation and inactivation, curve fits to a Boltzman equation of all individual data points are shown. Data are means ± SEM. For parameters and statistics see Table 3. (B). SNX-482-sensitive currents (light blue) were obtained by subtracting current measured in the presence of SNX-482 (green) from the respective control ICa before addition of SNX-482 (black) (n=9). Left panel: Representative recording of a SNX-482 sensitive current component compared to the respective control (holding potential –100 mV, –10 mV test potential). Steady-state activation and inactivation of control and SNX-482-sensitive current. Test protocols: holding potential –100 mV; voltage-dependence of activation: 150 ms test potentials to indicated voltages; voltage-dependence of inactivation: 5 s conditioning pulses to indicated voltages preceded (Icontrol) and followed by 20 ms test pulses to Vmax. (C) Exemplary neuron as seen under the patch-clamp microscope with patch pipette next to it (left; BF, brightfield) and a neuron after histochemical staining for tyrosine hydroxylase (TH, green) and neurobiotin (Nb, red). Detailed parameters and statistics are given in Table 3. Source data provided in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67464/elife-67464-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** To further prove the presence of SNX-482-sensitive R-type currents in SN DA neurons, we performed perforated-patch recordings. These allow stable recordings over a long period of time and to test for reversibility of channel block by 100 nM SNX-482. Recordings were performed with the pulse protocol shown in A (holding potential –60 mV) after blocking IA K+-currents known to be present in these cells to exclude block of IA by SNX-482 (Kimm and Bean, 2014) as described previously (Benkert et al., 2019). 100 nM SNX-482 significantly reduced current to 87% ± 4% of control ICa (n=8, p=0.012, one-sample t-test, for statistics see Supplementary file 7) and this inhibition was slowly reversible. (A) ICa before (black), during (red) and after (blue) SNX-482 application. (B) Example of peak ICa plotted over time during SNX-482 application. The asterisks mark the time points of the recordings shown on the left. Single depolarizing voltage steps to 0 mV were applied from a holding potential of –60 mV every 10 s. (C) Mean effect of SNX-482 on peak ICa. *, p<0.05 (n=8; two-tailed paired t-test). (D) Remaining peak ICa after SNX-482 inhibition. *, p<0.05 (two-tailed one sample t-test). Box plots: Whiskers indicate minimal and maximal values, ‘+’-sign: mean, horizontal line: median. No complete concentration-response curves were generated since higher concentrations of SNX-482 are known to also inhibit other Cav channels (Bourinet et al., 2001; Newcomb et al., 1998). Therefore, our experiments may underestimate the overall contribution of Cav2.3 channel to total ICa, also because a fraction of channels must already be inactivated at the selected holding potential (–60 mV) of these experiments. (E–H) Under identical experimental conditions, nifedipine reduced ICa to 90% ± 1.4% of control (p=0.031, Wilcoxon-test, for statistics see Supplementary file 7), and this inhibition was fully reversible. (E) Perforated patch-clamp recording of ICa before (black), during (red) and after (blue) nifedipine application. (F) Example of peak ICa plotted over time during nifedipine application. The asterisks mark the time points of the recordings shown on the left. Single depolarizing voltage steps to –10 mV were applied from a holding potential of –60 mV every 10 s. (G) Mean effect of nifedipine on peak ICa. *, p<0.05 (n=6; two-tailed paired t-test). (H) Remaining peak ICa under nifedipine. p<0.05 (two-tailed Wilcoxon signed-rank test). Box plots: Whiskers indicate minimal and maximal values, ‘+’-sign: mean, horizontal line: median. For statistics see Supplementary file 7. (I) Current clamp recording of a DA neuron in the SN pars compacta to demonstrate the pre-identifying electrophysiological properties including sag potential during hyperpolarization, broad action potentials, and regular pacemaking. Arrowhead: largely reduced slow afterhyperpolarization due to partial block of K+ channels by Cs+ diffusion into the neuron during the perforation process. (J) Post-recording analysis shows co-localization of biocytin (recorded neuron; magenta) and tyrosine hydroxylase (TH, green). Source data provided in Figure 6—figure supplement 1—source data 1.
+
+**Table 3.**
+ Voltage-dependence of activation and inactivation of Ca2+-currents in SN DA neurons.Table 3—source data 1.Source data for data shown in Table 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">Activation</th>
+      <th colspan="3">Inactivation</th>
+    </tr>
+    <tr>
+      <th>V0.5,act (95% CI) [mV]</th>
+      <th>kact (95% CI) [mV]</th>
+      <th>n/N</th>
+      <th>V0.5, inact (95% CI) [mV]</th>
+      <th>kinact (95% CI) [mV]</th>
+      <th>n/N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control A(without Cav-blocker cocktail)</td>
+      <td>–37.8 (−39.3,–36.3)</td>
+      <td>9.17 (7.90, 10.6)</td>
+      <td>16/8</td>
+      <td>–52.7 (−53.9,–51.5)</td>
+      <td>10.5 (−11.6,–9.48)</td>
+      <td>16/8</td>
+    </tr>
+    <tr>
+      <td>+Cav blocker cocktail("R-type")</td>
+      <td>–29.9 (−30.8,–29.1)***</td>
+      <td>5.49 (4.73, 6.30)***</td>
+      <td>19/5</td>
+      <td>–47.5 (−48.7,–46.4)***</td>
+      <td>9.15 (−10.2,–8.16)</td>
+      <td>19/5</td>
+    </tr>
+    <tr>
+      <td>Control B(before SNX-482)</td>
+      <td>–34.4 (−35.7,–33.2)</td>
+      <td>9.68 (8.59, 10.8)</td>
+      <td>9/6</td>
+      <td>–52.9 (−53.7,–52.1)</td>
+      <td>9.30 (−10.9,–8.61)</td>
+      <td>9/6</td>
+    </tr>
+    <tr>
+      <td>SNX-482 - sensitive current</td>
+      <td>–34.9 (−37.7,–32.0)</td>
+      <td>10.6 (8.26, 13.3)</td>
+      <td>9/6</td>
+      <td>–44.6 (−46.9,–42.2)+++</td>
+      <td>10.1 (−12.1,–8.24)</td>
+      <td>9/6</td>
+    </tr>
+  </tbody>
+</table>
+
 We independently also tested the availability of SNX-482-sensitive R-type currents at more depolarized voltages using perforated patch recordings (Figure 6—figure supplement 1), which allow very stable recordings in identified SN DA neurons (Figure 6—figure supplement 1I, J). We held cells at a more positive holding potential of –60 mV, a voltage within the spontaneous depolarization phase of the ISI, where a substantial fraction of Cav2.3 channels must already be inactivated (Figure 6). Indeed, under these conditions still about 13% of the total ICa was inhibited by acute bath application of SNX-482 and inhibition was partially reversible upon washout (Figure 6—figure supplement 1A-D, Supplementary file 7). Under these conditions, about 10% of current were blocked reversibly by the L-type channel blocker nifedipine (10 µM, Figure 6—figure supplement 1E-H).
 
 To further confirm the presence of inactivation-resistant R-type currents, we also recorded SNX-482-sensitive Ca2+ currents elicited from a holding potential of –70 mV in primary cultures of mouse DA midbrain neurons after 8–9 days in vitro. When added after the complete block of LTCC currents by 3 µM isradipine (comprising 24.7% ± 4.2% of total Ca2+-current, n=15), 100 nM SNX-482 significantly reduced non-LTCC currents by 41% ± 4% (95% CI: 33–49, n=20, N=4, paired Student’s t-test; P<0.001) (Figure 7A–D). All residual ICa components were blocked by adding 2 μM Cd2+ to the bath solution (Figure 7A and B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/67464/elife-67464-fig7-v3.jpg)
+
+**Figure 7.:** (A) Representative traces illustrating the inhibition of non-L-type ICa by 100 nM SNX-482 (red). Cells were initially perfused with a bath solution containing 3 μM isradipine (black). Full block was obtained using 2 μM Cd2+ (blue). Square pulses (50 ms) were applied to 0 mV from a holding potential of –70 mV (top) (B) Current amplitude values plotted as a function of time. After stabilization of ICa with ISR (black circles), 100 nM SNX-482 was applied. The remaining currents was blocked by 2 μM Cd2+. Current run-down in the absence of drugs during 150 s was less than 1% (0.48 ± 0.18%; n=4 cells). (C) SNX-482 inhibition expressed as % of control ICa after LTCC block using 3 μM ISR. (D) Mean current amplitude at the end of ISR application and at the end of SNX-482 application. Absolute current amplitude decreased from 529±57 pA (95% CI: 409–649) to 313±33 pA (95% CI: 245–381, n=20, p<0.01, paired Students t-test). Data represent the means ± SEM for the indicated number of experiments (N=4). Statistical significance was determined using paired Student’s t-test: *** p<0.001; **p<0.01; *p<0.05. (E) Left: Depolarizations of 50 ms were repeated every 10 s to the indicated potentials from a holding potential of –70 mV (inset). The voltage dependence of the conductance, g(V), was calculated with the equation g(V)=ICa/(V− ECa) with ECa=+65 mV for the currents recorded in the presence of 3 µM ISR (control; black squares; n=9–14 per voltage) and after subtraction of the currents insensitive to 100 nM SNX-482 (n=4–7) to yield (SNX-sensitive R-type; blue circles). Data were fitted to a Boltzman function. At each test potential (V) ICa was estimated at the peak of the current trace. Right: representative current traces recorded during pulses to −50, –40, –30 and 0 mV. (F). Left: To determine the voltage-dependence of steady-state inactivation, test pulses of 50 ms to 0 mV were preceded by 1 min prepulses to voltages from –80 to –10 mV. This stimulation protocol (inset) was better tolerated by cultured DA midbrain neurons than the classical protocol used previously with other cells (Calorio et al., 2019; Pinggera et al., 2015). SNX-sensitive R-type currents (blue) were obtained after subtraction of the currents insensitive to 100 nM SNX-482 (n=3–8 per voltage) from non-L control current (black, n=8–15). Right: representative traces recorded at 0 mV from a holding potential of −20,–40, –60, and –80 mV. Inactivation curves could be best fit to Boltzman functions with the following parameters: R-type: V0.5,inact = -58.1±0.6 mV, k=–7.1 ± 1.2 mV; control: V0.5,inact = -48.0±0.9 mV, k=-11.1 ± 1.2 mV. The R-type currents (E, F) appear smaller than expected from the data in panels B and C (30–40% of non-L-type currents). This is due to a run-down of SNX-sensitive current during the repeated depolarizations used to determine the voltage-dependence of gating. This has only minimal effects on gating parameters. When accounting for a linear run-down of 40%, the V0.5,act would shift only from –58 to –56 mV. Source data provided in Figure 7—source data 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/67464/elife-67464-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Representative recording of spontaneous firing activity of cultured midbrain dopaminergic neurons before, during and after the application (wash-out) of 100 nM SNX-482. Below, enlargements of action potentials within the highlighted regions are shown. (B) Firing frequency [Hz], coefficient of variation of the interspike interval [%], and AHP peak [mV] before (control) and during the application of 100 nM SNX-482. Data represent the means ± SEM for the indicated number of experiments. Statistical significance was determined using paired Student’s t-test.: *** p<0.001; ** p<0.01; * p<0.05. (C) Left panel: Phase-plane plot analysis (time derivative of voltage (dV/dt) vs. voltage (V)) before (control) and during the application of 100 nM SNX-482. Right panel: corresponding AP trace in control and in the presence of SNX-482 (obtained from trace in panel A, as indicated by the asterisks). SNX-482 significantly reduced the spontaneous firing frequency from 4.1±0.8 Hz (control, n=10, N=3; 95% CI: 2.1–6.1) to 1.1±0.2 Hz (SNX-482, n=10, 95% CI: 0.2–2.1, p=0.0036, paired Student’s t-test) and decreased the regularity of pacemaking coefficient of variation of the mean interspike interval increased from 0.25±0.06 (control, 95% CI: 0.15–0.39) to 0.78±0.13 (SNX-482, 95% CI: 0.49–1.09, p=0.0032, paired Student’s t-test). Slowing of firing was associated with hyperpolarization of the most negative voltage reached during the afterhyperpolarization (AHP) immediately after the spike (AHP peak), which decreased from –43.2±1.3 mV (control, 95% CI: –45.8––40.7) to –47.0±1.2 mV (SNX-482, 95% CI: –49.4 to –44.6, p=0.0005, paired Student’s t-test). Other changes in the AP waveform, which could represent indirect effects from the slowing of AP frequency or result from inhibition of Cav2.3 channels, were also noted: a reduced mean AP half-width (control: 5.1±0.3ms, 95% CI: 4.4–5.8; SNX-482: 4.2±0.3ms, 95% CI: 3.7–4.8; p=0.0050, paired Student’s t-test), and a trend toward increased maximum time-derivative of voltage (control: 45.3±4.9 mV/ms, 95% CI: 34.4–56.3; SNX-482: 74.3±13.5 mV/ms, 95% CI: 47.0–101.5, p=0.0625, paired Student’s t-test, estimated from the phase-plane plot of in C). The latter is likely due to the recruitment of more voltage-gated Na+-channels during the AP onset from the more hyperpolarized interspike membrane potential (Guarina et al., 2018; Tomagra et al., 2019). Source data provided in Figure 7—figure supplement 1—source data 1.
 
 We also determined the voltage-dependence of steady-state activation (Figure 7E) and inactivation (Figure 7F) before (non-L, control) and during application of 100 nM SNX-482 and calculated parameters for the SNX-482-sensitive R-type current by subtracting the current resistant to 100 nM SNX-482 from the control current (legend to Figure 7 for details). SNX-482-sensitive currents (blue) activated with a half maximal activation voltage (V0.5,act –9.2±0.6 mV) slightly more positive than non-LTCC current (V0.5,inact = -12.5 ± 0.6 mV). To determine the steady-state inactivation, test pulses of 50 ms to 0 mV were preceded by 1 min prepulses to voltages from –80 to –10 mV (Figure 7F). SNX-482-sensitive current inactivation was best fit with a V0.5,inact of –58.1±0.6 mV, which was 12–18 mV more positive than recombinant Cav2.3 currents expressed with β4 or β3 (Table 1). Despite an ~13 mV more negative inactivation range compared to SN DA neurons (Figure 6, Table 3), this still allowed substantial channel availability at voltages positive to –50 mV (Figure 7F, in contrast to currents with co-expressed cytosolic β-subunits Figure 1D).
 
@@ -139,11 +469,210 @@ Despite providing no direct biochemical evidence, we here show the first example
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse strain:C57Bl/6N, C57Bl/6J</td>
+      <td>C57Bl/6N, C57Bl/6J</td>
+      <td>Charles River</td>
+      <td>C57Bl/6N, C57Bl/6J</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse strain:C57Bl/6-TH-GFP mice</td>
+      <td>C57Bl/6-TH-GFP</td>
+      <td>Matsushita et al., 2002; Sawamoto et al., 2001</td>
+      <td></td>
+      <td>GFP-expression under TH-promotor</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Human Cav1.3L α1-subunit (C-terminally long Cav1.3 splice variant)</td>
+      <td>Koschak et al., 2001</td>
+      <td>GenBank accession number EU363339</td>
+      <td>Cloned into proprietary vector lacking GFP ("GFPminus"), described in Grabner et al., 1998</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Human Cav2.3 α1-subunit</td>
+      <td>Pereverzev et al., 2002</td>
+      <td></td>
+      <td>Cloned into pcDNA3 vector</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Rat β3-subunit</td>
+      <td>Koschak et al., 2001</td>
+      <td>GenBank: NM_012828,</td>
+      <td>Cloned into pCMV6 vector</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Rat β2a-subunit</td>
+      <td>Koschak et al., 2001</td>
+      <td>GenBank: M80545</td>
+      <td>Cloned into pCMV6 vector</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Mouse β2d-subunit</td>
+      <td>β2aN1, Link et al., 2009</td>
+      <td>GenBank: FM872408.1</td>
+      <td>Cloned into pCAGGS vector</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Mouse β2e-subunit</td>
+      <td>β2aN5, Link et al., 2009</td>
+      <td>GenBank: FM872407</td>
+      <td>Cloned into pCAGGS vector</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>C3S/C4Sβ2a</td>
+      <td>Cysteine residues in position 3 and 4 of β2a replaced by serines, Gebhart et al., 2010</td>
+      <td></td>
+      <td>Cloned into pCMV6 vector</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Rat β4-subunit (splice variant β4e)</td>
+      <td>Etemad et al., 2014</td>
+      <td></td>
+      <td>Cloned into pβA vector</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>TsA-201 cells</td>
+      <td>European Collection of Authenticated Cell Cultures</td>
+      <td>ECACC, catalogue # 96121229, lot # 13D034</td>
+      <td>Tested Mycoplasma negative</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tyrosine hydroxylase (TH; rabbit polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Cat#: 657012,</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Lipid Tissue Mini Kit</td>
+      <td>Qiagen GmbH, Germany</td>
+      <td>catalog # 1023539</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phenol/guanidine-based Qiazol lysis reagent</td>
+      <td>Qiagen GmbH, Germany,</td>
+      <td>catalog # 79,306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Maxima H Minus First Strand cDNA synthesis kit</td>
+      <td>Thermo Fisher Scientific, Waltham, MA, USA</td>
+      <td>catalog # K1682</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quant-IT PicoGreen dsDNA Assay Kit</td>
+      <td>Thermo Fisher Scientific, Waltham, MA, USA</td>
+      <td>catalog # P7589</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mycoplasma Detection Kit</td>
+      <td>ATCC</td>
+      <td>Universal Mycoplasma Detection Kit 30–1012 K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Universal PCR Master Mix</td>
+      <td>Thermo Fisher Scientific, Waltham, MA, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope technology</td>
+      <td>Advanced Cell Diagnostics (ACD)</td>
+      <td>RNAscope Fluorescent Multiplex Detection Kit (ACD, Cat# 320851)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Neurobiotin-labeling reagent: Streptavidin Alexa Fluor conjugate 647</td>
+      <td>Thermo Fisher Scientific, Waltham, MA, USA</td>
+      <td>catalog # S21374</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>SNX-482</td>
+      <td>Alomone Labs, Jerusalem, Israel</td>
+      <td>catalog # RTS-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit</td>
+      <td>Clampfit</td>
+      <td>Version 10.0 or 10.7, RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuantStudioTM</td>
+      <td>Thermo Fisher Scientific, Waltham, MA, USA</td>
+      <td>Quantstudio 3 Software</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>https://imagej.net/Fiji, Schindelin et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>GraphPad Prism Ver 5, 7.04 and 8 (RRID:SCR_002798)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SigmaPlot</td>
+      <td>Systat Software, Germany</td>
+      <td>SigmaPlot Ver 14, RRID:SCR_003210</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 For quantitative real-time PCR (RT-qPCR) experiments, male C57Bl/6 N mice were bred in the animal facility of the Centre for Chemistry and Biomedicine (CCB) of the University of Innsbruck (approved by the Austrian Animal Experimentation Ethics Board). For electrophysiological experiments of cultured midbrain DA neurons, C57Bl/6 TH-GFP mice (Matsushita et al., 2002; Sawamoto et al., 2001) were kept heterozygous via breeding them with C57Bl/6 mice (in accordance with the European Community’s Council Directive 2010/63/UE and approved by the Italian Ministry of Health and the Local Organism responsible for animal welfare at the University of Torino; authorization DGSAF 0011710 P-26/07/2017). All animals were housed under a 12 hr light/dark cycle with food and water ad libitum. For whole cell voltage-clamp recordings of SN DA neurons in acute brain slices, as well as single-cell RT-qPCR, juvenile male C57Bl/6J mice (PN11-13) were bred at the animal facility of Ulm University. For RNAscope analysis, adult male C57Bl/6J mice and Cav2.3 WT mice were bred at the animal facility of Ulm University. Animal procedures at the Universities of Ulm (Regierungspräsidium Tübingen, Ref: 35/9185.81–3; Reg. Nr. o.147) and Cologne (LANUV NRW, Recklinghausen, Germany (84–02.05.20.12.254) were approved by the local authorities).
 
-## RNA isolation and cDNA synthesis for tissue RT-qPCR
+### RNA isolation and cDNA synthesis for tissue RT-qPCR
 
 Tissue was dissected after mice had been sacrificed by cervical dislocation under isoflurane (Vetflurane, Vibac UK, 1000 mg/g) anesthesia. The freshly extracted mouse brains from 12 to 14 weeks old male mice were snap-frozen in isopentane (Carl Roth, catalog #3926.2) that was pre-cooled with dry ice (–40 °C). To dissect VTA and SN tissue, 100-µm-thick sections were cut on a cryostat (CM1950, Leica, Germany) and collected on glass coverslips. After cooling the coverslips on dry ice, regions of interest were punched under a dissection microscope using a pre-cooled sample corer (Fine Science Tools, Germany) (VTA: inner diameter 0.8 mm, 1 punch per hemisphere; SN: inner diameter 0.5 mm, 2 punches per hemisphere). For each brain region, tissue punches from both hemispheres of 7–8 successive 100 µm sections between Bregma –3.00 mm and –3.80 mm (according to Paxinos and Franklin, 2004) were collected in the sample corer. The tissue punches were transferred into an Eppendorf tube and again snap-frozen in liquid nitrogen. The punched brain sections were stained with cresyl violet (Nissl’s staining) for histological verification. Briefly, the slides with the punched sections were incubated in 4% PFA overnight. On the next day, the sections were rinsed in H2O and the following staining steps were performed: H2O 1 min, 70% ethanol 5 min, 100% EtOH 5 min, 0.5% cresyl violet solution pH 3.9 (2.5 g cresyl violet acetate, 30 ml 1 M Na-acetate*3 H2O and 170 ml 1 M acetic acid) 10 min, 70% ethanol 2 min, 100% ethanol 2 min, Xylol 1 min. The sections were coverslipped immediately with Eukitt (Sigma-Aldrich, catalog #03989), left to harden overnight and imaged on a bright-field microscope at 2 x.
 
@@ -151,51 +680,63 @@ RNeasy Lipid Tissue Mini Kit (Qiagen GmbH, Germany, catalog #1023539) was used t
 
 RNA was reverse transcribed using Maxima H Minus First Strand cDNA synthesis kit with random hexamer primers following the manufacturer’s instructions (Thermo Fisher Scientific, Waltham, MA, USA). One µg or 13 μl of total RNA were used as template for reverse transcription. One µl cDNA corresponds to 0.65 x the amount of RNA equivalent.
 
-## Standard curve method-based RT-qPCR for quantification of β-subunit expression in SN and VTA
+### Standard curve method-based RT-qPCR for quantification of β-subunit expression in SN and VTA
 
 In order to generate DNA templates of known concentrations for RT-qPCR standard curves, the concentration of the digested fragments was determined using the Quant-IT PicoGreen dsDNA Assay Kit (Invitrogen, Carlsbad, CA, USA). Subsequently, standard curves were generated using a serial dilution ranging from 107 to 101 DNA molecules in water containing 1 μg/ml of poly-dC DNA (Midland Certified Reagent Company Inc, Midland, TX, USA). RT-qPCRs of standard curves and samples were performed as described previously (Ortner et al., 2020; Schlick et al., 2010). Samples for RT-qPCR quantification (50 cycles) contained 5 ng of total RNA equivalent of cDNA, the respective TaqMan gene expression assay, and TaqMan Universal PCR Master Mix (Thermo Fisher Scientific). Specificity of all assays was confirmed using different DNA ratios of corresponding and mismatched DNA fragments for the β1–4 and for the β2a-2e assays, respectively. Importantly, all assays specifically recognized the corresponding fragment even in the presence of a 10-fold higher concentration of other splice variants (Figure 2—figure supplement 1). RT-qPCR was performed in duplicates from three independent RNA preparations from three biological replicates. Samples without template served as negative controls. No RT RNA controls could not be included since all obtained RNA was transcribed into cDNA due to low yields. The expression of seven different endogenous control genes was routinely measured and used for data normalization as previously described (Vandesompele et al., 2002; Figure 2—figure supplement 1, Supplementary file 1): Actb (β-actin), B2m (β2-microglobulin), Gapdh (Glyceraldehyde 3-phosphate dehydrogenase), Hprt1 (Hypoxanthine phosphoribosyltransferase 1), Tbp (TATA box-binding protein), Tfrc (Transferrin receptor), and Sdha (Succinate dehydrogenase subunit A) (Ortner et al., 2020; Schlick et al., 2010). Briefly, data were normalized to the most stably expressed endogenous control genes (Gapdh and Tfrc) determined by geNorm (Figure 2—figure supplement 1, Supplementary file 1). Normalized molecule numbers were calculated for each assay based on their respective standard curve. Standard curve parameters are given in (Supplementary file 3). qPCR analyses were performed using the 7,500 Fast System (Applied Biosystems, Foster Systems, CA, USA).
 
-## Quantitative RT-qPCR of mouse brain tissue samples
+### Quantitative RT-qPCR of mouse brain tissue samples
 
 Fragments of β-subunits and β2 splice variants were amplified from mouse whole brain cDNA utilizing specific primers (Supplementary file 2) and subcloned into the Cav1.3 8 a 42 pGFPminus vector after restriction enzyme digestion using SalI and HindIII. Primer sequences for β1-β4 have been described previously (Schlick et al., 2010), but additional SalI and HindIII restriction enzyme sites (underlined in Supplementary file 2) were inserted to allow subsequent ligation of fragments into the digested vector. TaqMan gene expression assays (Thermo Fisher Scientific, Waltham, MA, USA) and custom-made TaqMan gene expression assays were designed to span exon-exon boundaries (Supplementary file 2) as already described (Ortner et al., 2020).
 
 The expression of β1, β2, β3, β4, β2a, β2b, β2c-d, and β2e was assessed using a standard curve method-based on PCR fragments of known concentration (Ortner et al., 2020; Schlick et al., 2010). β2c and β2d were detected by a common assay as selective primer design failed due to high sequence similarity. This assay binds at the exon-exon boundary of exons 2 A and 3 of β2c and β2d and also recognizes a number of splice variants comprising the β2d N-terminus but with different alternative splicing in the HOOK region of the subunit (Buraei and Yang, 2010). Details about assay specificity are given in Figure 2—figure supplement 1 and Supplementary file 3.
 
-## cDNA constructs
+### cDNA constructs
 
 For transient transfections hCav2.3e (cloned into pcDNA3, Pereverzev et al., 2002) or hCav1.3L (human C-terminally long Cav1.3 splice variant; GenBank accession number EU363339) α1 subunits were transfected together with the previously described accessory subunit constructs: β3 (rat, NM_012828, Koschak et al., 2001), β2a (rat, M80545, Koschak et al., 2001), β2d (mouse, β2aN1, FM872408.1; Link et al., 2009), β2e (mouse, β2aN5, FM872407; Link et al., 2009, where β2d and β2e were kindly provided by V. Flockerzi, Saarland University, Homburg), C3S/C4Sβ2a (cysteine residues in position 3 and 4 of β2a replaced by serines, Gebhart et al., 2010) or β4 (rat, splice variant β4e, kindly provided by Dr. Bernhard Flucher, Medical University Innsbruck; Etemad et al., 2014) and α2δ1 (rabbit, NM_001082276, Koschak et al., 2001).
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 TsA-201 cells were obtained from the European Collection of Authenticated Cell Cultures (ECACC, catalogue number 96121229, lot number 13D034) at passage 6. Cell stocks of passage 8 were frozen and cultures were re-expanded from stocks for not more than 20 passages. Cell cultures were tested negative (Universal Mycoplasma Detection Kit 30–1012 K, American Type Culture Collection) for mycoplasma infection. TsA-201 cells were cultured as described (Ortner et al., 2020) in Dulbecco’s modified Eagle’s medium (DMEM; Sigma-Aldrich, catalog #D6546) that was supplemented with 10% fetal bovine serum (FBS, Gibco, catalog #10270–106), 2 mM L-glutamine (Gibco, catalog #25030–032), penicillin (10 units/ml, Sigma, P-3032) and streptomycin (10 μg/ml, Sigma, S-6501). Cells were maintained at 37 °C and 5% CO2 in a humidified incubator and were subjected to a splitting procedure after reaching ~80% confluency. For splitting, cells were dissociated using 0.05% trypsin after implementing a washing step using 1 x phosphate buffered saline (PBS). TsA-201 cells were replaced and freshly thawed when they exceeded passage no. 21. For electrophysiology, cells were plated on 10 cm culture dishes and subjected to transient transfections on the following day. Cells were transiently transfected using Ca2+-phosphate as previously described (Ortner et al., 2014) with 3 μg of α1 subunits, 2 μg of β subunits, 2.5 μg of α2δ1 subunits and 1.5 µg of eGFP to visualize transfected cells. On the next day, cells were plated onto 35 mm culture dishes that were coated with poly-L-lysine, kept at 30 °C and 5% CO2 and were then subjected to whole-cell patch-clamp experiments after 24–72 hr.
 
-## Primary cell culture of midbrain DA neurons
+### Primary cell culture of midbrain DA neurons
 
 As described in Tomagra et al., 2019, the methods for the primary culture of mesencephalic dopamine neurons from Substantia nigra (SN) were adapted from Pruszak et al., 2009. Briefly, the ventral mesencephalon area was dissected from embryonic (E15) C57Bl/6 TH-GFP mice (Matsushita et al., 2002; Sawamoto et al., 2001) that were kept heterozygous via breeding them with C57Bl/6 J mice. HBSS (Hank’s balanced salt solution, without CaCl2 and MgCl2), enriched with 0.18% glucose, 1% BSA, 60% papain (Worthington, Lakewood, NJ, United States), 20% DNase (Sigma-Aldrich) was stored at 4 °C and used as digestion buffer. Neurons were plated at final densities of 600 cells per mm2 on Petri dishes. Cultured neurons were used at 8–9 days in vitro (DIV) for current-clamp and voltage-clamp experiments. Petri dishes were coated with poly-L-Lysine (0.1 mg/ml) as substrate adhesion. Cells were incubated at 37 °C in a 5% CO2 atmosphere, with Neurobasal Medium containing 1% pen-strep, 1% ultra-glutamine, 2% B-27, and 2.5% FBS dialyzed (pH 7.4) (as previously described in Tomagra et al., 2019).
 
-## Whole-cell patch-clamp recordings in tsA-201 cells
+### Whole-cell patch-clamp recordings in tsA-201 cells
 
 For whole-cell patch-clamp recordings, patch pipettes with a resistance of 1.5–3.5 MΩ were pulled from glass capillaries (Borosilicate glass, catalog #64–0792, Harvard Apparatus, USA) using a micropipette puller (Sutter Instruments) and fire-polished with a MF-830 microforge (Narishige, Japan). Recordings were obtained in the whole-cell configuration using an Axopatch 200B amplifier (Axon Instruments, Foster City, CA), digitized (Digidata 1,322 A digitizer, Axon Instruments) at 50 kHz, low-pass filtered at 5 kHz and subsequently analyzed using Clampfit 10.7 Software (Molecular Devices). Linear leak and capacitive currents were subtracted online using the P/4 protocol (20 ms I-V protocol) or offline using a 50 ms hyperpolarizing voltage step from –89 to –99 mV or –119 to –129 mV. All voltages were corrected for a liquid junction potential (JP) of –9 mV (Lieb et al., 2014). Compensation was applied for 70–90% of the series resistance.
 
 The pipette internal solution for recordings of Cav2.3 contained (in mM): 144.5 CsCl, 10 HEPES, 0.5 Cs-EGTA, 1 MgCl2, 4 Na2ATP adjusted to pH 7.4 with CsOH (299 mOsm/kg). The pipette internal solution for recordings of Cav1.3 contained (in mM): 135 CsCl, 10 HEPES, 10 Cs-EGTA, 1 MgCl2, 4 Na2ATP adjusted to pH 7.4 with CsOH (275 mOsm/kg). The bath solution for recordings of Cav2.3 contained (in mM): 2 CaCl2, 10 HEPES, 170 Choline-Cl and 1 MgCl2 adjusted to pH 7.4 with CsOH. The bath solution for recordings of Cav1.3 contained (in mM): 15 CaCl2, 10 HEPES, 150 Choline-Cl and 1 MgCl2 adjusted to pH 7.4 with CsOH.
 
-Current-voltage (I-V) relationships were obtained by applying a 20 ms long square pulse protocol to various test potentials (5 mV voltage steps) starting from a holding potential of –119 mV or –89 mV (recovery of inactivation). The resulting I-V curves were fitted to the following equation:I=Gmax(V-Vrev)/(1+exp⁡-V-V0.5k)
+Current-voltage (I-V) relationships were obtained by applying a 20 ms long square pulse protocol to various test potentials (5 mV voltage steps) starting from a holding potential of –119 mV or –89 mV (recovery of inactivation). The resulting I-V curves were fitted to the following equation:
 
-where I is the peak current amplitude, Gmax is the maximum conductance, V is the test potential, Vrev is the extrapolated reversal potential, V0.5 is the half-maximal activation voltage, and k is the slope factor. The voltage dependence of Ca2+-conductance was fitted using the following Boltzmann relationship:G=Gmax/(1+exp⁡-V-V0.5k)
+$$
+I=G_{max}(V-V_{rev})/(1+exp⁡-\frac{V-V_{0.5}}{k})
+$$
 
-The voltage dependence of inactivation was assessed by application of 20 ms test pulses to the voltage of maximal activation (Vmax) before and after holding the cell at various conditioning test potentials for 5 s (30 s inter-sweep interval; 10 mV voltage steps; holding potential –119 mV). Inactivation was calculated as the ratio between the current amplitudes of the 20 ms test pulses. Steady-state inactivation parameters were obtained by fitting the data to a modified Boltzmann equation:I=(1-Ini)/(1+exp⁡V-V0.5,   inactkinact+Ini)
+where I is the peak current amplitude, Gmax is the maximum conductance, V is the test potential, Vrev is the extrapolated reversal potential, V0.5 is the half-maximal activation voltage, and k is the slope factor. The voltage dependence of Ca2+-conductance was fitted using the following Boltzmann relationship:
+
+$$
+G=G_{max}/(1+exp⁡-\frac{V-V_{0.5}}{k})
+$$
+
+The voltage dependence of inactivation was assessed by application of 20 ms test pulses to the voltage of maximal activation (Vmax) before and after holding the cell at various conditioning test potentials for 5 s (30 s inter-sweep interval; 10 mV voltage steps; holding potential –119 mV). Inactivation was calculated as the ratio between the current amplitudes of the 20 ms test pulses. Steady-state inactivation parameters were obtained by fitting the data to a modified Boltzmann equation:
+
+$$
+I=(1-I_{ni})/(1+exp⁡\frac{V-V_{0.5,   inact}}{k_{inact}}+I_{ni})
+$$
 
 where V0.5, inact is the half-maximal inactivation voltage, kinact is the inactivation slope factor and Ini is the fraction of non-inactivating current in steady-state.
 
 The amount of inactivation during a 5 s depolarizing pulse from a holding potential of –119 mV to the Vmax was quantified by calculating the remaining current fraction after 50, 100, 250, 500, 1000, and 5000 ms. Recovery from inactivation was determined by 10 ms test pulses to Vmax at different time-points (in s: 0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 0.6, 1, 1.5, 2, 3, 4, 6, 8, 10, 15, 20) after a 1 s conditioning pulse to Vmax (holding potential –89 mV). Window current was determined by multiplying mean current densities by fractional currents form steady-state inactivation curves to obtain the fraction of available channels at a given potential as described previously (Hofer et al., 2020). The SN DA regular pacemaking command voltage protocol obtained from an identified TH+ SN DA neuron in a mouse brain slice (male, P12) and the SN DA burst firing protocol were generated as previously described (Ortner et al., 2017). Cells were perfused by an air pressure-driven perfusion system (BPS-8 Valve Control System, ALA Scientific Instruments) with bath solution and a flow rate of 0.6 ml/min. For Cd2+-block, cells were perfused with 100 µM Cd2+ to achieve full block, followed by wash-out with bath solution. A complete exchange of the solution around the cell was achieved within <50 ms. All experiments were performed at room temperature (~22 °C).
 
-## Voltage- and current-clamp recordings in cultured midbrain DA neurons
+### Voltage- and current-clamp recordings in cultured midbrain DA neurons
 
 Macroscopic whole-cell currents and APs were recorded using an EPC 10 USB HEKA amplifier and Patchmaster software (HEKA Elektronik GmbH) following the procedures described previously (Baldelli et al., 2005; Gavello et al., 2018). Traces were sampled at 10 kHz and filtered using a low-pass Bessel filter set at 2 kHz. Borosilicate glass pipettes (Kimble Chase life science, Vineland, NJ, USA) with a resistance of 7–8 MΩ were used. Uncompensated capacitive currents were reduced by subtracting the averaged currents in response to P/4 hyperpolarizing pulses. Off-line data analysis was performed with pClamp 10.0 software for current clamp recordings. Ca2+ currents were evoked by applying a single depolarization step (50 ms duration), from a holding of –70 mV to 0 mV. Fast capacitive transients due to the depolarizing pulse were minimized online by the patch-clamp analog compensation. Series resistance was compensated by 80% and monitored during the experiment.
 
 For current-clamp experiments the pipette internal solution contained in mM: 135 gluconic acid (potassium salt: K-gluconate), 10 HEPES, 0.5 EGTA, 2 MgCl2, 5 NaCl, 2 ATP-Tris and 0.4 Tris-GTP (Tomagra et al., 2019). For voltage-clamp recordings the pipette internal solution contained in mM: 90 CsCl, 20 TEA-Cl, 10 EGTA, 10 glucose, 1 MgCl2, 4 ATP, 0.5 GTP and 15 phosphocreatine adjusted to pH 7.4. The extracellular solution for current/voltage-clamp recordings (Tyrode’s solution) contained in mM: 2 CaCl2, 10 HEPES, 130 NaCl, 4 KCl, 2 MgCl2, 10 glucose adjusted to pH 7.4. Patch-clamp experiments were performed using pClamp software (Molecular Devices, Silicon Valley, CA, United States). All experiments were performed at a temperature of 22–24°C. Data analysis was performed using Clampfit software. To study the contribution of Cav2.3 channels to the total Ca2+ current, cells were perfused with recording solution (containing in mM: 135 TEA, 2 CaCl2, 2 MgCl2, 10 HEPES, 10 glucose adjusted to pH 7.4) complemented with 300 nM TTX and 3 µM ISR to block voltage-dependent Na+ and L-type Ca2+ channels. SNX-482 (100 nM) was used in current- and voltage-clamp experiments. Furthermore, kynurenic acid (1 mM), 6,7-dinitroquinoxaline-2,3-dione (DNQX) (20 µM) and picrotoxin (100 µM) were present in the extracellular solution for current- and voltage-clamp experiments.
 
-## Whole cell voltage-clamp recordings of SN DA neurons in ex vivo brain slices
+### Whole cell voltage-clamp recordings of SN DA neurons in ex vivo brain slices
 
 Whole-cell patch-clamp recordings were performed essentially as previously described (Benkert et al., 2019). In brief, murine (PN11-13) coronal midbrain slices were prepared in ice-cold ACSF using a VibrosliceTM (Campden Instruments). Chemicals were obtained from Sigma Aldrich unless stated otherwise. ACSF contained in mM: 125 NaCl, 25 NaHCO3, 2.5 KCl, 1.25 NaH2PO4, 2 CaCl2, 2 MgCl2 and 25 glucose, and was gassed with Carbogen (95% O2, 5% CO2, pH 7.4, osmolarity was 300–310 mOsm/kg). Slices were allowed to recover for 30 min at room temperature (22°C–25°C) before use for electrophysiology. Recordings were carried out in a modified ACSF solution containing in mM: 125 NaCl, 25 NaHCO3, 2.5 KCl, 1.25 NaH2PO4, 2.058 MgCl2, 1.8 CaCl2, 2.5 glucose, 5 CsCl, 15 tetraethylammonium, 2.5 4-aminopyridine, 600 nM TTX (Tocris), 20 µM CNQX (Tocris), 4 µM SR 95531 (Tocris) and 10 µM DL-AP5 (Tocris), pH adjusted to 7.4, osmolarity was 300–315 mOsm/kg. Data were digitalized with 2 kHz, and filtered with Bessel Filter 1: 10 kHz; Bessel Filter 2: 5 kHz. All recordings were performed at a bath temperature of 33 °C±1. Patch pipettes (2.5–3.5 MΩ) were filled with internal solution containing in mM: 180 N-Methyl-D-glucamine, 40 HEPES, 0.1 EGTA, 4 MgCl2, 5 Na-ATP, 1 Lithium-GTP, 0.1% neurobiotin tracer (Vector Laboratories); pH was adjusted to 7.35 with H2SO4, osmolarity was 285–295 mOsm/kg. Neurons were filled with neurobiotin during the recording, fixed with a 4% PFA solution and stained for tyrosine hydroxylase (TH; rabbit anti-TH, 1:1000, Cat#: 657012, Merck Millipore) and neurobiotin (Streptavidin Alexa Fluor conjugate 647, 1:1000, Cat# S21374, Thermo Fisher Scientific). Only TH and neurobiotin-positive cells were used for the statistical analysis.
 
@@ -203,7 +744,7 @@ Steady-state activation was measured by applying 150 ms depolarizing square puls
 
 Steady-state activation and inactivation curves were fitted as described above.
 
-## Perforated patch recordings in SN DA neurons in ex vivo brain slices
+### Perforated patch recordings in SN DA neurons in ex vivo brain slices
 
 Animals were anesthetized with isoflurane (B506; AbbVie Deutschland GmbH and Co KG, Ludwigshafen, Germany) and subsequently decapitated. The brain was rapidly removed and a block of tissue containing the mesencephalon was immediately dissected. Coronal slices (250–300 μm) containing the SN were cut with a vibration microtome (HM-650 V; Thermo Scientific, Walldorf, Germany) under cold (4 °C), carbogenated (95% O2 and 5% CO2), glycerol-based modified artificial cerebrospinal fluid (GACSF; Ye et al., 2006) containing (in mM): 250 glycerol, 2.5 KCl, 2 MgCl2, 2 CaCl2, 1.2 NaH2PO4, 10 HEPES, 21 NaHCO3, 5 glucose adjusted to pH 7.2 (with NaOH) resulting in an osmolarity of ~310 mOsm. Brain slices were transferred into carbogenated artificial cerebrospinal fluid (ACSF). First, they were kept for 20 min in a 35 °C 'recovery bath' and then stored at room temperature (24 °C) for at least 30 min prior to recording. ACSF contained (in mM): 125 NaCl, 2.5 KCl, 2 MgCl2, 2 CaCl2, 1.2 NaH2PO4, 21 NaHCO3, 10 HEPES, and 5 Glucose adjusted to pH 7.2 (with NaOH) resulting in an osmolarity of ~310 mOsm.
 
@@ -213,9 +754,9 @@ After preparation, brain slices were transferred to a recording chamber (~1.5 ml
 
 Perforated patch recordings were performed using protocols modified from Horn and Marty, 1988 and (Akaike and Harata, 1994). Electrodes with tip resistances between 2 and 4 MΩ were fashioned from borosilicate glass (0.86 mm inner diameter; 1.5 mm outer diameter; GB150- 8 P; Science Products) with a vertical pipette puller (PP-830; Narishige, London, UK). Patch recordings were performed with ATP and GTP-free pipette solution containing (in mM): 138 Cs-methanesulfonate, 10 CsCl2, 2 MgCl2, 10 HEPES and adjusted to pH 7.2 (with CsOH). ATP and GTP were omitted from the intracellular solution to prevent uncontrolled permeabilization of the cell membrane (Lindau and Fernandez, 1986). The patch pipette was tip filled with internal solution and back filled with 0.02% tetraethylrhodamine-dextran (D3308, Invitrogen, Eugene, OR, USA) and amphotericin-containing internal solution (~400 μg/ml; G4888; Sigma-Aldrich, Taufkirchen, Germany) to achieve perforated patch recordings. Amphotericin was dissolved in dimethyl sulfoxide (final concentration: 0.2%–0.4%; DMSO; D8418, Sigma-Aldrich) (Rae et al., 1991), and was added to the modified pipette solution shortly before use. The used DMSO concentration had no obvious effect on the investigated neurons. During the recordings access resistance (Ra) was constantly monitored and experiments were started after Ra was <20 MΩ. In the analyzed recordings Ra was comparable, did not change significantly over recording time, and was not significantly different between the distinct experimental groups. A change to the whole-cell configuration was indicated by a sudden change in Ra and diffusion of tetraethylrhodamine-dextran into the neuron. Such experiments were rejected. GABAergic and glutamatergic synaptic input was reduced by addition of 0.4 mM picrotoxin (P1675; Sigma-Aldrich), 50 µM D-AP5 (A5282; Sigma-Aldrich), and 10 µM CNQX (C127; Sigma-Aldrich) to the ACSF. For inhibition experiments, 100 nM SNX-482 (Alomone, Cat # RTS-500 dissolved in ACSF) or 10 µM nifedipine (Alomone, Cat # N-120 diluted into ACSF from a freshly prepared 10 mM stock solution in DMSO) was bath applied (in ACSF).
 
-## Identification of β-subunit transcripts in identified SN DA and VTA DA neurons
+### Identification of β-subunit transcripts in identified SN DA and VTA DA neurons
 
-## RNAscope in situ hybridization
+#### RNAscope in situ hybridization
 
 In situ hybridization experiments were performed on fresh frozen mouse brain tissue using the RNAscope technology (Advanced Cell Diagnostics, ACD), according to the manufacturer’s protocol under RNase-free conditions and essentially as described (Benkert et al., 2019). Briefly, 12 µm coronal cryosections were prepared (Duda et al., 2018), mounted on SuperFrost Plus glass slides, dried for 1 hr at –20 °C and stored at -80°C. Directly before starting the RNAscope procedure, sections were fixed with 4% PFA for 15 min at 4 °C and dehydrated using an increasing ethanol series (50%, 75%, 100%), for 5 min each. After treatment with protease IV (ACD, Cat# 322336) for 30 min at room temperature, sections were hybridized with the respective target probes for 2 hr at 40 °C in a HybEZ II hybridization oven (ACD). Target probe signals were amplified using the RNAscope Fluorescent Multiplex Detection Kit (ACD, Cat# 320851). All amplifier solutions were dropped on respective sections, incubated at 40 °C in the HybEZ hybridization oven, and washed twice with wash buffer (ACD) between each amplification step for 2 min each. Nuclei were counterstained with DAPI ready-to-use solution (ACD, included in Kit) and slides were coverslipped with HardSet mounting medium (VectaShield, Cat# H-1400) and dried overnight. Target probes were either obtained from the library of validated probes provided by Advanced Cell Diagnostics (ACD) or self-designed in cooperation with ACD to specifically discriminate between two splice variants of β2, namely β2a and β2e. Target probes (RNAscope assays) used for analysis were as follows: Tyrosine hydroxylase (TH) (Th), Cat No. (ACD) 317621, Assay target region: 483–1,603 of NM_009377.1; β2a (Cacnb2), Cat No. (ACD) 590951-C2, Assay target region: 2–296 of XM_011238946.2; β2e (Cacnb2), Cat No. (ACD) 823221-C2, Assay target region: 2–285 of NM_001309519.1.
 
@@ -223,7 +764,7 @@ Target genes, visualized with Atto550 fluorophore, were co-stained with Tyrosine
 
 Fluorescent images of midbrain sections were acquired by a Leica CTR6 LED microscope using a Leica DFC365FX camera as z-stacks, covering the full depth of cells at ×63 magnification. Z-stacks were reduced to maximum intensity Z-projections using Fiji (http://imagej.net/Fiji) and images were analyzed by utilizing a custom-designed algorithm (Wolution, Munich, Germany). The algorithm delineates cell shapes according to the TH marker gene signal and quantifies the number and the area of target-mRNA-derived fluorescence dots. Target probe hybridization results in one fluorescent dot for each mRNA molecule, allowing determination of target-mRNA molecule numbers, independent from fluorescence-intensities.
 
-## Multiplex-nested PCR, qualitative and quantitative PCR analysis in individual laser-microdissected DA neurons
+### Multiplex-nested PCR, qualitative and quantitative PCR analysis in individual laser-microdissected DA neurons
 
 Cryosectioning, laser-microdissection, reverse transcription: Cryosectioning, UV-laser microdissection (UV-LMD) and reverse transcription were carried out similarly as previously described in detail (Benkert et al., 2019; Duda et al., 2018; Gründemann et al., 2011; Liss, 2002). Briefly, coronal 12 µm mouse midbrain cryosections were cut with a cryomicrotome CM3050 S (Leica), mounted on PEN-membrane slides (Mirodissect), stained with a cresyl-violet (CV) ethanol solution and fixed with an ascending ethanol series. UV-LMD of SN dopaminergic neurons from cresyl-violet-stained midbrain sections from juvenile mice was carried out using an LMD7000 system (Leica Microsystems). Reverse transcription was carried out directly without a separate RNA isolation step in a one-tube procedure.
 
@@ -237,12 +778,16 @@ Quantitative real time PCR (qPCR) was performed with the QuantStudio 3 System (T
 
 Details of all qPCR assays (TaqMan), and standard curve parameters used for analysis are provided in Supplementary file 4.
 
-Relative qPCR quantification data are given as cDNA amount [pg/cell] with respect to midbrain-tissue cDNA standard curves, calculated according to the following formula, and were normalized to the respective cell size by dividing respective expression values to the corresponding area of the individual microdissected neurons.DNA amount per cell [pgcell]=S[(Ct-Yintercept)/slope]Nocells∙cDNA fraction
+Relative qPCR quantification data are given as cDNA amount [pg/cell] with respect to midbrain-tissue cDNA standard curves, calculated according to the following formula, and were normalized to the respective cell size by dividing respective expression values to the corresponding area of the individual microdissected neurons.
+
+$$
+DNA amount per cell [\frac{pg}{cell}]=\frac{S^{[(Ct-Y_{intercept})/slope]}}{No_{cells}∙cDNA fraction}
+$$
 
 With S=serial dilution factor of the standard curve (i.e. 10), Nocells = number of SN DA neurons per sample (i.e. 10 here), cDNA fraction = fraction of the cDNA reaction used as template in the qPCR reaction (i.e. 5/17) and the Y-intercept and slope of the relative standards (see Supplementary file 4).
 
 β2 (Cacnb2) TaqMan qPCR assay and standard curve information, used for relative qPCR-based transcript quantification: Note that the amplicon is very small (70 bp). The probe is 5’-FAM (6-carboxyfluorescein) and 3’-NFQ (non-fluorescent quencher) labelled. The assay Mm01333550_m1 (assay-ID) was used (assay location 583) spanning exon-boundary 4–5 of the mouse β2 gene (Cacnb2). Assay parameters were as follows: threshold for analysis: 0.05, Y-intercept of standard curve: 43.5±0.2, slope: –3.43±0.04, R2: 1.0±0.0: means ± SEM, n=5.
 
-## Statistics
+### Statistics
 
 Data were analyzed using Clampfit 10.7 (Axon Instruments), Microsoft Excel, SigmaPlot 14.0 (Systat Software, Inc), and GraphPad Prism 5, 7.04 or 8 software (GraphPad software, Inc). Data were analyzed by appropriate statistical testing as indicated in detail for all experiments in the text, figure and table legends. Statistical significance was set at <0.05. Brain slice patch-clamp data were also analyzed with FitMaster (v2 × 90.5, HEKA Elektronik). RNAscope and single-cell RT-qPCR data data were analyzed by Fiji (https://imagej.net/Fiji), QuantStudio Design and Analysis Software (Applied Biosystems) and GraphPad Prism 7.04. All values are presented as mean ± SEM (95% confidence interval) for the indicated number of experiments (n) from N independent experiments (biological replications) in the text and Figures unless stated otherwise.

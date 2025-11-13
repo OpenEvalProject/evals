@@ -25,6 +25,35 @@ It is straightforward to convert a traditional journal club to a preprint journa
 
 In practice, each week one student selects a preprint and presents the major findings and their analysis to the group. Meanwhile, a second student takes notes on this presentation and the subsequent discussion. The presenter and the second student then prepare a draft referee report on the preprint, which is circulated to the group for feedback. Finally, students can email the report to the corresponding authors of the preprint and post it on an online platform such as PREreview or The Winnower (see Table 2 for resources and other preprint review platforms).
 
+**Table 2.**
+ Examples of Preprint Review Platforms
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>biOverlay</td>
+      <td>An open access journal that peer reviews selected preprints and publishes a final report about them</td>
+    </tr>
+    <tr>
+      <td>Peer Community In</td>
+      <td>A recommendation service for preprints and published articles based on reviews by the community</td>
+    </tr>
+    <tr>
+      <td>preLights</td>
+      <td>A server that highlights preprints in the life sciences</td>
+    </tr>
+    <tr>
+      <td>PREreview</td>
+      <td>A platform for peer reviewing preprints</td>
+    </tr>
+    <tr>
+      <td>The Winnower</td>
+      <td>An open-access publishing platform that employs open post-publication peer review</td>
+    </tr>
+  </tbody>
+</table>
+
 Preprint journal clubs do not need to take place in person. Led by one of us (AS) together with David W. Sanders (Princeton University), the Phase Separation Journal Club is an example of a virtual journal club. Using the online platform Slack, it brings together about 40 members spanning the entire academic career spectrum and several time zones. Every preprinted or published paper that the group discusses has its own channel. A session starts with a bullet point write-up of the paper, which is followed by a one-hour online discussion using the chat feature. Participants can add comments later on as well. A summary of the journal club can be collated and provided as feedback to the authors.
 
 ## Preprint journal clubs: Impact and feedback

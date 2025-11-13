@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.10094.001 Many recent models study the downstream projection from grid cells to place cells, while recent data have pointed out the importance of the feedback projection. We thus asked how grid cells are affected by the nature of the input from the place cells. We propose a single-layer neural network with feedforward weights connecting place-like input cells to grid cell outputs. Place-to-grid weights are learned via a generalized Hebbian rule. The architecture of this network highly resembles neural networks used to perform Principal Component Analysis (PCA). Both numerical results and analytic considerations indicate that if the components of the feedforward neural network are non-negative, the output converges to a hexagonal lattice. Without the non-negativity constraint, the output converges to a square lattice. Consistent with experiments, grid spacing ratio between the first two consecutive modules is −1.4. Our results express a possible linkage between place cell to grid cell interactions and PCA. DOI: http://dx.doi.org/10.7554/eLife.10094.001
+Many recent models study the downstream projection from grid cells to place cells, while recent data have pointed out the importance of the feedback projection. We thus asked how grid cells are affected by the nature of the input from the place cells. We propose a single-layer neural network with feedforward weights connecting place-like input cells to grid cell outputs. Place-to-grid weights are learned via a generalized Hebbian rule. The architecture of this network highly resembles neural networks used to perform Principal Component Analysis (PCA). Both numerical results and analytic considerations indicate that if the components of the feedforward neural network are non-negative, the output converges to a hexagonal lattice. Without the non-negativity constraint, the output converges to a square lattice. Consistent with experiments, grid spacing ratio between the first two consecutive modules is −1.4. Our results express a possible linkage between place cell to grid cell interactions and PCA.
 
 ## Introduction
 
@@ -30,133 +30,139 @@ In the present paper, we thus investigated a model of grid cell development from
 
 ## Results
 
-## Comparing neural-network results to PCA
+### Comparing neural-network results to PCA
 
-We initially considered the output of a single-layer neural network and of the PCA algorithm in response to the same inputs. These consisted of the temporal activity of a simulated agent moving around in a two-dimensional (2D) space (
+We initially considered the output of a single-layer neural network and of the PCA algorithm in response to the same inputs. These consisted of the temporal activity of a simulated agent moving around in a two-dimensional (2D) space (Figure 1A; see Materials and methods for details). In order to mimic place cell activity, the simulated virtual space was covered by multiple 2D Gaussian functions uniformly distributed at random (Figure 1B), which constituted the input. In order to calculate the principal components, we used a [Neuron x Time] matrix (Figure 1C) after subtracting the temporal mean, generated from the trajectory of the agent as it moved through the place fields. Thus, we displayed a one-dimensional mapping of the two-dimensional activity, transforming the 2D activity into a 1D vector per input neuron. This resulted in the [Neuron X Neuron] covariance matrix (Figure 1D), on which PCA was performed by evaluating the appropriate eigenvalues and eigenvectors.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig1-v2.jpg)
 
-**Figure 1.:** (A) Diagram of the environment. Black dots indicate places the virtual agent has visited. (B) Centers of place cells uniformly distributed in the environment. (C) The [Neuron X Time] matrix of the input-place cells. (D) Correlation matrix of (C) used for the PCA process.DOI: http://dx.doi.org/10.7554/eLife.10094.003
+**Figure 1.:** (A) Diagram of the environment. Black dots indicate places the virtual agent has visited. (B) Centers of place cells uniformly distributed in the environment. (C) The [Neuron X Time] matrix of the input-place cells. (D) Correlation matrix of (C) used for the PCA process.
 
-To learn the grid cells, based on the place cell inputs, we implemented a single-layer neural network with a single output (
+To learn the grid cells, based on the place cell inputs, we implemented a single-layer neural network with a single output (Figure 2). Input to output weights were governed by a Hebbian-like learning rule. As described in the Introduction (see also analytical treatment in the Methods section), this type of architecture induces the output’s weights to converge to the leading principal component of the input data.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig2-v2.jpg)
 
-**Figure 2.:** The input layer corresponds to place cells and the output to a single cell.DOI: http://dx.doi.org/10.7554/eLife.10094.004
+**Figure 2.:** The input layer corresponds to place cells and the output to a single cell.
 
-The agent explored the environment for a sufficiently long time allowing the weights to converge to the first principal component of the temporal input data. In order to establish a spatial interpretation of the eigenvectors (from PCA) or the weights (from the converged network) we projected both the PCA eigenvectors and the network weights onto the place cells space, producing corresponding spatial activity maps. The leading eigenvectors of the PCA and the network’s weights converged to square-like periodic spatial solutions (
+The agent explored the environment for a sufficiently long time allowing the weights to converge to the first principal component of the temporal input data. In order to establish a spatial interpretation of the eigenvectors (from PCA) or the weights (from the converged network) we projected both the PCA eigenvectors and the network weights onto the place cells space, producing corresponding spatial activity maps. The leading eigenvectors of the PCA and the network’s weights converged to square-like periodic spatial solutions (Figure 3A–B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig3-v2.jpg)
 
-**Figure 3.:** (A) 1st 16 PCA eigenvectors projected on the place cells' input space. (B) Converged weights of the network (each result from different simulation, initial conditions and trajectory) projected onto place cells' space. Note that the 8 outputs shown here resemble linear combinations of components #1 to #4 in panel A.DOI: http://dx.doi.org/10.7554/eLife.10094.005
+**Figure 3.:** (A) 1st 16 PCA eigenvectors projected on the place cells' input space. (B) Converged weights of the network (each result from different simulation, initial conditions and trajectory) projected onto place cells' space. Note that the 8 outputs shown here resemble linear combinations of components #1 to #4 in panel A.
 
-Being a PCA algorithm, the spatial projections of the weights were periodic in space due to the covariance matrix of the input having a Toeplitz structure (
+Being a PCA algorithm, the spatial projections of the weights were periodic in space due to the covariance matrix of the input having a Toeplitz structure (Dai et al., 2009) (a Toeplitz matrix has constant elements along each diagonal). Intuitively, the Toeplitz structure arises due to the spatial stationarity of the input. In fact, since we used periodic boundary conditions for the agent’s motion, the covariance matrix was a circulant matrix, and the eigenvectors were sinusoidal functions, with length constants determined by the scale of the box (Gray, 2006) [a circulant matrix is defined by a single row (or column), and the remaining rows (or columns) are obtained by cyclic permutations. It is a special case of a Toeplitz matrix - see for example Figure 1D]. The covariance matrix was heavily degenerate, with approximately 90% of the variance accounted for by the first 15% of the eigenvectors (Figure 4B). The solution demonstrated a fourfold redundancy. This was apparent in the plotted eigenvalues (from the largest to the smallest eigenvalue, Figure 4A and C), which demonstrated a fourfold grouping-pattern. The fourfold redundancy can be explained analytically by the symmetries of the system – see analytical treatment of PCA in Methods section (specifically Figure 15C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig4-v2.jpg)
 
-**Figure 4.:** (A) Eigenvalue size (normalized by the largest, from large to small (B) Cumulative explained variance by the eigenvalues, with 90% of variance accounted for by the first 35 eigenvectors (out of 625). (C) Amplitude of leading 32 eigenvalues, demonstrating that they cluster in groups of 4 or 8. Specifically, the first four clustered groups correspond respectively (from high to low) to groups A,B,C & D In Figure 15C, which have the same redundancy (4,8,4 & 4).DOI: http://dx.doi.org/10.7554/eLife.10094.006
+**Figure 4.:** (A) Eigenvalue size (normalized by the largest, from large to small (B) Cumulative explained variance by the eigenvalues, with 90% of variance accounted for by the first 35 eigenvectors (out of 625). (C) Amplitude of leading 32 eigenvalues, demonstrating that they cluster in groups of 4 or 8. Specifically, the first four clustered groups correspond respectively (from high to low) to groups A,B,C & D In Figure 15C, which have the same redundancy (4,8,4 & 4).
 
 In summary, both the direct PCA algorithm and the neural network solutions developed periodic structure. However, this periodic structure was not hexagonal but rather had a square-like form.
 
-## Adding a non-negativity constraint to the PCA
+### Adding a non-negativity constraint to the PCA
 
 It is known that most synapses from the hippocampus to the MEC are excitatory (Witter and Amaral, 2004). We thus investigated how a non-negativity constraint, applied to the projections from place cells to grid cells, affected our simulations. As demonstrated in the analytical treatment in the Methods section, we could expect to find hexagons when imposing the non-negativity constraint. Indeed, when adding this constraint, the outputs behaved in a different manner and converged to a hexagonal grid, similar to real grid cells. While it was straightforward to constrain the neural network, calculating non-negative PCA directly was a more complicated task due to the non-convex nature of the problem (Montanari and Richard, 2014; Kushner and Clark, 1978).
 
 In the network domain, we used a simple rectification rule for the learned feedforward weights, which constrained their values to be non-negative. For the direct non-negative PCA calculation, we used the raw place cells activity (after spatial or temporal mean normalization), as inputs to three different iterative numerical methods: NSPCA (Nonnegative Sparse PCA), AMP (Approximate Message Passing) and FISTA (Fast Iterative Threshold and Shrinkage) based algorithms (see Materials and methods section).
 
-In both cases, we found that hexagonal grid cells emerged in the output layer (plotted as spatial projection of weights and eigenvectors:
+In both cases, we found that hexagonal grid cells emerged in the output layer (plotted as spatial projection of weights and eigenvectors: Figure 5A–B, Figure 6A–B, Video 1, Video 2). When we repeated the process over many simulations (i.e. new trajectories and random initializations of weights) we found that the population as a whole consistently converged to hexagonal grid-like responses, while similar simulations with the unconstrained version did not (compare Figure 3 to Figure 5–Figure 6).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig5-v2.jpg)
 
-**Figure 5.:** (A) Converged weights (from different simulations) of the network projected onto place cells space. See an example of a simulation in Video 1. (B) Spatial autocorrelations of (A). See an example of the evolution of autorcorrelation in simulation in Video 2.DOI: http://dx.doi.org/10.7554/eLife.10094.007
+**Figure 5.:** (A) Converged weights (from different simulations) of the network projected onto place cells space. See an example of a simulation in Video 1. (B) Spatial autocorrelations of (A). See an example of the evolution of autorcorrelation in simulation in Video 2.
+
+![Video 1.](https://cdn.elifesciences.org/articles/10094/elife-10094-media1.mp4.jpg)
+
+**Video 1.:** 625 Place-cells used as input. Video frame shown every 3000 time steps up to t=1,000,000. Video converges to results similar to those of Figure 5.
+
+![Video 2.](https://cdn.elifesciences.org/articles/10094/elife-10094-media2.mp4.jpg)
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig6-v2.jpg)
 
-**Figure 6.:** (A) Spatial projection of the leading eigenvector on input space. (B) Corresponding spatial autocorrelations. The different solutions are outcomes of multiple simulations with identical settings in a new environment and new random initial conditions.DOI: http://dx.doi.org/10.7554/eLife.10094.010
+**Figure 6.:** (A) Spatial projection of the leading eigenvector on input space. (B) Corresponding spatial autocorrelations. The different solutions are outcomes of multiple simulations with identical settings in a new environment and new random initial conditions.
 
-In order to further assess the hexagonal grid emerging in the output, we calculated the mean (hexagonal) Gridness scores ([
+In order to further assess the hexagonal grid emerging in the output, we calculated the mean (hexagonal) Gridness scores ([Sargolini et al., 2006], which measure the degree to which the solution resembles a hexagonal grid [see Materials and methods]). We ran about 1500 simulations of the network (in each simulation, the network consisted of 625 place cell-like inputs and a single grid cell-like output), and found noticeable differences between the constrained and unconstrained cases. Namely, the Gridness score in the non-negatively constrained-weight simulations was significantly higher than in the unconstrained-weight case (Gridness = 1.07 ± 0.003 in the constrained case vs. 0.302 ± 0.003 in the unconstrained case. see Figure 7). A similar difference was observed with the direct non-negative PCA methods (1500 simulations, each with different trajectories, Gridness = 1.13 ± 0.0022 in the constrained case vs. 0.27 ± 0.0023 in the unconstrained case).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig7-v2.jpg)
 
-**Figure 7.:** First row (A) + (C) corresponds to network results, and second row (B) + (D) to PCA. The left column histograms contain the 60° Gridness scores and the right one the 90° Gridness scores.DOI: http://dx.doi.org/10.7554/eLife.10094.011
+**Figure 7.:** First row (A) + (C) corresponds to network results, and second row (B) + (D) to PCA. The left column histograms contain the 60° Gridness scores and the right one the 90° Gridness scores.
 
 Another score we tested was a 'Square Gridness' score (see Materials and methods) where we measured the 'Squareness' of the solutions (as opposed to 'Hexagonality'). We found that the unconstrained network had a higher square-Gridness score while the constrained network had a lower square-Gridness score (Figure 7); for both the direct-PCA calculation (square-Gridness = 0.89 ± 0.0074 in the unconstrained case vs. 0.1 ± 0.006 in the constrained case) and the neural-network (square-Gridness = 0.073 ± 0.006 in the constrained case vs. 0.73 ± 0.008 in the unconstrained case).
 
 All in all, these results suggest that when direct PCA eigenvectors and neural network weights were unconstrained they converged to periodic square solutions. However, when constrained to be non-negative, the direct PCA, and the corresponding neural network weights, both converged to a hexagonal solution.
 
-## Dependence of the result on the structure of the input
+### Dependence of the result on the structure of the input
 
-We investigated the effect of different inputs on the emergence of the grid structure in the networks' output. We found that some manipulation of the input was necessary in orderto enable the implementation of PCA in the neural network. Specifically, PCA requires a zero-mean input, while simple Gaussian-like place cells do not possess this property. In order to obtain input with zero-mean, we either performed differentiation of the place cells’ activity in time, or used a Mexican-hat like (Laplacian) shape (See Materials and methods for more details on the different types of inputs). Another option we explored was the usage of positive-negative disks with a total sum of zero activity in space (
+We investigated the effect of different inputs on the emergence of the grid structure in the networks' output. We found that some manipulation of the input was necessary in orderto enable the implementation of PCA in the neural network. Specifically, PCA requires a zero-mean input, while simple Gaussian-like place cells do not possess this property. In order to obtain input with zero-mean, we either performed differentiation of the place cells’ activity in time, or used a Mexican-hat like (Laplacian) shape (See Materials and methods for more details on the different types of inputs). Another option we explored was the usage of positive-negative disks with a total sum of zero activity in space (Figure 8). The motivation for the use of Mexican-hat like transformations is their abundance in the nervous system (Wiesel and Hubel, 1963; Enroth-Cugell and Robson, 1966; Derdikman et al., 2003).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig8-v2.jpg)
 
-**Figure 8.:** (A) 2D Gaussian function, acting as a simple place cell. (B) Laplacian function or Mexican hat. (C) A positive (inner circle) - negative (outer ring) disk. While inputs as in panel A do not converge to hexagonal grids, inputs as in panels B or C do converge.DOI: http://dx.doi.org/10.7554/eLife.10094.012
+**Figure 8.:** (A) 2D Gaussian function, acting as a simple place cell. (B) Laplacian function or Mexican hat. (C) A positive (inner circle) - negative (outer ring) disk. While inputs as in panel A do not converge to hexagonal grids, inputs as in panels B or C do converge.
 
-We found that usage of simple 2-D Gaussian-functions as inputs did not generate hexagonal grid cells as outputs (
+We found that usage of simple 2-D Gaussian-functions as inputs did not generate hexagonal grid cells as outputs (Figure 9). On the other hand, time-differentiated inputs, positive-negative disks or Laplacian inputs did generate grid-like output cells, both when running the non-negative PCA directly (Figure 6), or by simulating the non-negatively constrained Neural Network (Figure 5). Another approach we used for obtaining zero-mean was to subtract the mean dynamically from every output individually (see Materials and methods). The latter approach, related to adaptation of the firing rate, was adopted from Kropff & Treves (Kropff and Treves, 2008), who used it to control various aspects of the grid cell's activity. In addition to controlling the firing rate of the grid cells, if applied correctly, the adaptation could be exploited to keep the output's activity stable, with zero-mean rates. We applied this method in our system and in this case the outputs converged to hexagonal grid cells as well, similarly to the previous cases (e.g. derivative in time, or Mexican hats as inputs; data not shown).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig9-v2.jpg)
 
-**Figure 9.:** Figure 8A).(A) Various weights plotted spatially as projection onto place cells space. (B) Autocorrelation of (A).DOI: http://dx.doi.org/10.7554/eLife.10094.013
+**Figure 9.:** (A) Various weights plotted spatially as projection onto place cells space. (B) Autocorrelation of (A).
 
 In summary, two conditions were required for the neural network to converge to spatial solutions resembling hexagonal grid cells: (1) non-negativity of the feedforward weights and (2) an effective zero-mean of the inputs (in time or space).
 
-## Stability analysis
+### Stability analysis
 
-## Convergence to hexagons from various initial spatial conditions
+#### Convergence to hexagons from various initial spatial conditions
 
-In order to numerically test the stability of the hexagonal solution, we initialized the network in different ways, randomly, using linear stripes, squares, rhomboids (squares on hexagonal lattice) and noisy hexagons. In all cases, the network converged to a hexagonal pattern (
+In order to numerically test the stability of the hexagonal solution, we initialized the network in different ways, randomly, using linear stripes, squares, rhomboids (squares on hexagonal lattice) and noisy hexagons. In all cases, the network converged to a hexagonal pattern (Figure 10; for squares and stripes, other shapes not shown here).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig10-v2.jpg)
 
-**Figure 10.:** The network was initialized in shapes of (A) Squares and of (B) stripes (linear).DOI: http://dx.doi.org/10.7554/eLife.10094.014
+**Figure 10.:** The network was initialized in shapes of (A) Squares and of (B) stripes (linear).
 
 We also ran the converged weights in a new simulation with novel trajectories and tested the Gridness scores, and the inter-trial stability in comparison to previous simulations. We found that the hexagonal solutions of the network remained stable although the trajectories varied drastically (data not shown).
 
-## Asymptotic stability of the equilibria
+### Asymptotic stability of the equilibria
 
-Under certain conditions (e.g., decaying learning rates and independent and identically distributed (i.i.d.) inputs), it was previously proved (
+Under certain conditions (e.g., decaying learning rates and independent and identically distributed (i.i.d.) inputs), it was previously proved (Hornik and Kuan, 1992), using techniques from the theory of stochastic approximation, that the system described here can be asymptotically analyzed in terms of (deterministic) Ordinary Differential Equations (ODE), rather than in terms of the stochastic recurrence equations. Since the ODE defining the converged weights is non-linear, we solved the ODEs numerically (see Materials and methods), by randomly initializing the weight vector. The asymptotic equilibria were reached much faster, compared to the outcome of the recurrence equations. Similarly to the recurrence equations, constraining the weights to be non-negative induced them to converge into a hexagonal shape while a non-constrained system produced square-like outcomes (Figure 11).
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig11-v2.jpg)
 
-**Figure 11.:** (A) + (B): 60° and 90° Gridness score histograms. Each score represents a different weight vector of the solution J. (C) + (D): Spatial results for constrained and unconstrained scenarios, respectively. (E) + (F) Spatial autocorrelations of (C) + (D).DOI: http://dx.doi.org/10.7554/eLife.10094.015
+**Figure 11.:** (A) + (B): 60° and 90° Gridness score histograms. Each score represents a different weight vector of the solution J. (C) + (D): Spatial results for constrained and unconstrained scenarios, respectively. (E) + (F) Spatial autocorrelations of (C) + (D).
 
 Simulation was run 60 times, with 400 outputs per run. 60° Gridness score mean was 1.1 ± 0.0006 when weights were constrained and 0.29 ± 0.0005 when weights were unconstrained. 90° Gridness score mean was 0.006 ± 0.002 when weights were constrained and 0.8 ± 0.0017 when weights were unconstrained.
 
-## Effect of place cell parameters on grid structure
+### Effect of place cell parameters on grid structure
 
 A more detailed view of the resulting grid spacing showed that it was heavily dependent on the field widths of the place cells inputs. When the environment size was fixed and the output calculated per input size, the grid-spacing (distance between neighboring peaks) increased for larger place cell field widths.
 
 To enable a fast parameter sweep over many place cell field widths (and large environment sizes), we took the steady state limit, and the limit of a high density of place cell locations, and used the fast FISTA algorithm to solve the non-negative PCA problem (see Materials and methods section).
 
-We performed multiple simulations, and found that there was a simple linear dependency between the place field size and the output grid scale. For the case of periodic boundary conditions, we found that grid scale was S = 7.5sigma+0.85, where sigma was the width of the place cell field (
+We performed multiple simulations, and found that there was a simple linear dependency between the place field size and the output grid scale. For the case of periodic boundary conditions, we found that grid scale was S = 7.5sigma+0.85, where sigma was the width of the place cell field (Figure 12A). For a different set of simulations with zero boundary conditions, we achieved a similar relation: S=7.54sigma+0.62 (figure not shown). Grid scale was more dependent on place field size and less on box size (Figure 12H). We note that for very large environments, the effects of boundary conditions diminishes. At this limit, this linear relation between place field size and grid scale can be explained from analytical considerations (see Materials and methods section). Intuitively, this follows from dimensional analysis: given an infinite environment, at steady state the length scale of the place cell field width is the only length scale in the model, so any other length scale must be proportional to this scale. More precisely, we can provide a lower bound for the linear fit (Figure 12A), which depends only on the tuning curve of the place cells (see Materials and methods section). This lower bound was derived for periodic boundary conditions, but works well even with zero boundary conditions (not shown).
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig12-v2.jpg)
 
-**Figure 12.:** (A) Grid scale as a function of place field size (sigma); Linear fit is: Scale = 7.4 Sigma+0.62; the lower bound, equal to , were 2π/k† is defined in k†Equation 32 in the Materials and methods section; (B) Grid orientation as a function of gridness; (C) Grid orientation as a function of sigma – scatter plot (blue stars) and mean (green line); (D) Histogram of grid orientations; (E) Mean gridness as a function of sigma; and (F) Histogram of mean gridness. (G) Gridness as a function of sigma and (arena-size/sigma) (zero boundary conditions). (H) Grid scale for the same parameters as in G.DOI: http://dx.doi.org/10.7554/eLife.10094.016
+**Figure 12.:** (A) Grid scale as a function of place field size (sigma); Linear fit is: Scale = 7.4 Sigma+0.62; the lower bound, equal to $2\pi/k_{†}$, were $k_{†}$ is defined in Equation 32 in the Materials and methods section; (B) Grid orientation as a function of gridness; (C) Grid orientation as a function of sigma – scatter plot (blue stars) and mean (green line); (D) Histogram of grid orientations; (E) Mean gridness as a function of sigma; and (F) Histogram of mean gridness. (G) Gridness as a function of sigma and (arena-size/sigma) (zero boundary conditions). (H) Grid scale for the same parameters as in G.
 
 Furthermore, we found that the grid orientation varied substantially for different place cell field widths, in the possible range of 0–15 degrees (Figure 12C,D). For small environments, the orientation strongly depended on the boundary conditions. However, as described in the Methods section, analytical considerations suggest that as the environment grows, the distribution of grid orientations becomes uniform in the range of 0–15 degrees, with a mean at 7.5°. Intuitively, this can be explained by rotational symmetry – when the environment size is infinite, all directions in the model are equivalent, and so we should get all orientations with equal probability, if we start the model from a uniformly random initialization. In addition, grid orientation was not a clear function of the gridness of the obtained grid cells (Figure 12B). For large enough place cells, gridness was larger than 1 (Figure 12E–G).
 
-## Modules of grid cells
+### Modules of grid cells
 
 It is known that in reality grid cells form in modules of multiple spacings (Barry et al., 2007; Stensola et al., 2012). We tried to address this question of modules in several ways. First, we used different widths for the Gaussian/Laplacian input functions: Initially, we placed a heterogeneous population of widths in a given environment (i.e., uniformly random widths) and ran the single-output network 100 times. The distribution of grid spacings was almost comparable to the results of the largest width if applied alone, and did not exhibit module like behavior. This result is not surprising when thinking about a small place cell overlapping in space with a large place cell. Whenever the agent passes next to the small one, it activates both weights via synaptic learning. This causes the large firing field to overshadow the smaller one. Additionally, when using populations of only two widths of place fields, the grid spacings were dictated by the size of the larger place field (data not shown).
 
-The second option we considered was to use a multi-output neural network, capable of computing all 'eigenvectors' rather than only the principal 'eigenvector' (where by 'eigenvector' we mean here the vectors achieved under the positivity constraint, and not the exact eigenvectors themselves). We used a hierarchical network implementation introduced by
+The second option we considered was to use a multi-output neural network, capable of computing all 'eigenvectors' rather than only the principal 'eigenvector' (where by 'eigenvector' we mean here the vectors achieved under the positivity constraint, and not the exact eigenvectors themselves). We used a hierarchical network implementation introduced by Sanger, 1989 (see Materials and methods). Since the 1st output’s weights converged to the 1st 'eigenvector', the network (Figure 13A–B) provided to the subsequent outputs (2nd, 3rd, and so forth) a reduced-version of the data from which the projection of the 1st 'eigenvector' has been subtracted out. This process, reminiscent of Gram-Schmidt orthogonalization, was capable of computing all 'eigenvectors' (in the modified sense) of the input's covariance matrix. It is important to note though that, due to the non-negativity constraint, the vectors achieved in this way were not orthogonal, and thus it cannot be considered a real orthogonalization process, although, as explained in the Methods section, the process does aim for maximum difference between the vectors.
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig13-v2.jpg)
 
-**Figure 13.:** (A) Each output is a linear sum of all inputs weighted by the corresponding learned weights. (B) Over time, the data the following outputs 'see' is the original data after subtration of the 1st 'eigenvector's' projection onto it. This is an iterative process causing all outputs' weights to converge to the 'prinipcal components' of the data.DOI: http://dx.doi.org/10.7554/eLife.10094.017
+**Figure 13.:** (A) Each output is a linear sum of all inputs weighted by the corresponding learned weights. (B) Over time, the data the following outputs 'see' is the original data after subtration of the 1st 'eigenvector's' projection onto it. This is an iterative process causing all outputs' weights to converge to the 'prinipcal components' of the data.
 
-When constrained to be non-negative, and using the same homogeneous 'place cells' as in the previous network, the networks' weights converged to hexagonal shapes. Here, however, we found that the smaller the 'eigenvalue' was (or the higher the principal component number) the denser the grid became. We were able to identify two main populations of grid-distance 'modules' among the hexagonal spatial solutions with high Gridness scores (>0.7,
+When constrained to be non-negative, and using the same homogeneous 'place cells' as in the previous network, the networks' weights converged to hexagonal shapes. Here, however, we found that the smaller the 'eigenvalue' was (or the higher the principal component number) the denser the grid became. We were able to identify two main populations of grid-distance 'modules' among the hexagonal spatial solutions with high Gridness scores (>0.7, Figure 14A–B). In addition, we found that the ratio between the distances of the modules was −1.4, close to the value of 1.42 found by Stensola et al. (Stensola et al., 2012). Although we searched for additional such jumps, we could only identify this single jump, suggesting that our model can yield up to two 'modules' and not more. The same process was repeated using the direct PCA method, utilizing the covariance matrix of the data after simulation as input for the non-negative PCA algorithms, and considering their ability to calculate only the 1st 'eigenvector'. By iteratively projecting the 1st 'eigenvector' on the simulation data and subtracting the outcome from the original data, we applied the non-negative PCA algorithm to the residual data obtaining the 2nd 'eigenvector' of the original data. This 'eigenvector' now constituted the 1st eigenvector' of the new residual data (see Materials and methods). Applying this process to as many 'outputs' as needed, we obtained very similar results to the ones presented above using the neural network (data not shown).
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig14-v2.jpg)
 
-**Figure 14.:** (A) In a network with 50 outputs, the grid spacing per output is plotted with respect to the hierarchical place of the output. (B) The grid spacing of outputs with high Gridness score (>0.7). The centroids have a ratio of close to . (√2C) + (D) Example of rate maps of outputs and their spatial autocorrelations for both of the modules.DOI: http://dx.doi.org/10.7554/eLife.10094.018
+**Figure 14.:** (A) In a network with 50 outputs, the grid spacing per output is plotted with respect to the hierarchical place of the output. (B) The grid spacing of outputs with high Gridness score (>0.7). The centroids have a ratio of close to $\sqrt2$. (C) + (D) Example of rate maps of outputs and their spatial autocorrelations for both of the modules.
 
 ## Discussion
 
 In our work, we explored the nature and behavior of the feedback projections from place cells to grid cells. We shed light on the importance of this relation and showed, both analytically and in simulation, how a simple single-layer neural network could produce hexagonal grid cells when subjected to place cell-like temporal input from a randomly-roaming moving agent. We found that the network resembled a neural network performing PCA (Oja, 1982), with the constraint that the weights were non-negative. Under these conditions, and also under the requirements that place cells have a zero mean in time or space, the first principal component in the 2D arena had a firing pattern resembling a hexagonal grid cell. Furthermore, we found that in the limit of very large arenas, grid orientation converged to a uniform distribution in range of 0–15°. When looking at additional components, grid scale tends to be discretely clustered, such that two modules emerge. This is partially consistent with current experimental findings (Stensola et al., 2012; 2015). Furthermore, the inhibitory connectivity between multiple grid cells is consistent with the known functional anatomy in this network (Couey et al., 2013).
 
-## Place-to-Grid as a PCA network
+### Place-to-Grid as a PCA network
 
 As a consequence of the requirements for PCA to hold, we found that the place cell input needed to have a zero-mean, otherwise the output was not periodic. Due to the lack of the zero-mean property in 2D Gaussians, we used various approaches to impose zero-mean on the input data. The first, in the time domain, was to differentiate the input and use the derivatives (a random walk produces zero-mean derivatives) as inputs. Another approach was to dynamically subtract the mean in all iterations of the simulation. This approach was reminiscent of the adaptation procedure suggested in the Kropff & Treves paper (Kropff and Treves, 2008). A third approach, applied in the spatial domain was to use inputs with a zero-spatial mean such as Laplacians of Gaussians (Mexican hats in 2D, or differences-of-Gaussians) or negative – positive disks. Such Mexican-hat inputs are quite typical in the nervous system (Wiesel and Hubel, 1963; Enroth-Cugell and Robson, 1966; Derdikman et al., 2003), although in the case of place cells it is not completely known how they are formed. They could be a result of interaction between place cells and the vast number of inhibitory interneurons in the local hippocampal network (Freund and Buzsáki, 1996).
 
@@ -164,17 +170,17 @@ Another condition we found crucial, which was not part of the original PCA netwo
 
 We also note that while our network focused on the projection from place cells to grid cells, we cannot preclude the importance of the reciprocal projection from grid cells to place cells. Further study will be needed to ‘close the loop’ and simultaneously consider both of these projections at once.
 
-## Similar studies
+### Similar studies
 
 We note that similar work has noticed the relation between place-cell-to-grid-cell transformation and PCA. Notably, Stachenfeld et al., (2014) have demonstrated, from considerations related to reinforcement learning, that grid cells could be related to place cells through a PCA transformation. However, due to the unconstrained nature of their transformation, the resulting grid cells were square-like. Furthermore, there has been an endeavor to model the transformation from place cells to grid cells using independent-component-analysis (Franzius et al., 2007).
 
 We also note that there is now a surge of interest in the feedback projection from place cells to grid-cells, which is inverse to the anatomical downstream direction from grid cells to place cells (Witter and Amaral, 2004) that has guided most of the models to-date (Zilli, 2012; Giocomo et al., 2011). In addition to several papers from the Treves group, in which the projection from place cells to grid cells is studied (Kropff and Treves, 2008; Si and Treves, 2013), there has been also recent work from other groups as well exploring this direction (Castro and Aguiar, 2014; Stepanyuk, 2015). As far as we are aware, none of the previous studies noted the importance of the non-negativity constraint and the requirement of zero mean input. Additionally, to the best of our knowledge, the analytic results and insights provided in this work (see Materials and methods) are novel, and provide a mathematically consistent explanation for the emergence of hexagonally-spaced grid cells.
 
-## Predictions of our model
+### Predictions of our model
 
 Based on the findings of this work, it is possible to make several predictions. First, the grid cells must receive zero-mean input over time to produce hexagonally shaped firing patterns. With all feedback projections from place cells being excitatory, the lateral inhibition from other neighboring grid cells might be the balancing parameter to achieve the temporal zero-mean (Couey et al., 2013). Alternatively, an adaptation method, such as the one suggested in Kropff and Treves, (2008) may be applied. Second, if indeed the grid cells are a lower dimensional representation of the place cells in a PCA form, the place-to-grid neural weights distribution should be similar across identically spaced grid cell populations. This is because all grid cells with similar spacing would have maximized the variance over the same input, resulting in similar spatial solutions. As an aside, we note that such a projection may be a source of phase-related correlations in grid cells (Tocker et al., 2015). Third, we found a linear relation between the size of the place cells and the spacing between grid cells. Furthermore, the spacing of the grid cells is mostly determined by the size of the largest place cell – predicting that the feedback from large place cells is not connected to grid cells with small spacing. Fourth, we found modules of different grid spacings in a hierarchical network with the ratio of distances between successive units close to √2. This result is in accordance with the ratio reported in Stensola et al., (2012). However, we note that there is a difference between our results and experimental results because the analysis predicts that there should only be two modules, while the data show at least 5 modules, with a range of scales, the smallest and most numerous having approximately the scale of the smaller place fields found in the dorsal hippocampus (25–30 cm). Fifth, for large enough environments our model suggests that, from mathematical considerations, the grid orientation should approach a uniform orientation in the possible range of 0–15°. This is in discrepancy with experimental results which measure a peak at 7.5°, and not a uniform distribution (Stensola et al., 2015). As noted, the discrepancies between our results and reality may relate to the fact that a more advanced model will have to take into account both the downstream projection from grid cells to place cells together with the upstream projection from place cells to grid cells discussed in this paper. Furthermore, such a model will have to take into account the non-uniform distribution of place-cell widths (Kjelstrup et al., 2008).
 
-## Why hexagons?
+### Why hexagons?
 
 In light of our results, we further asked what is special about the hexagonal shape which renders it a stable solution. Past works have demonstrated that hexagonality is optimal in terms of efficient coding. Two recent papers have addressed the potential benefit of encoding by grid cells. Mathis et al., (2015) considered the decoding of spatial information based on a grid-like periodic representation. Using lower bounds on the reconstruction error based on a Fisher information criterion, they demonstrated that hexagonal grids lead to the highest spatial resolution in two dimensions (extensions to higher dimensions were also provided). The solution is obtained by mapping the problem onto a circle packing problem. The work of Wei et al., (2013) also took a decoding perspective, and showed that hexagonal grids minimize the number of neurons required to encode location with a given resolution. Both papers offer insights into the possible information theoretic benefits of the hexagonal grid solution. In the present paper, we were mainly concerned with a specific biologically motivated learning (development) mechanism that may yield such a solution. Our analysis suggests that the hexagonal patterns can arise as a solution that maximizes the grid cell output variance, under non-negativity constraints. In Fourier space, the solution is a hexagonal lattice with lattice constant near the peak of the Fourier transform of the place cell tuning curve (Figures 15 and 16; see Materials and methods).
 
@@ -184,33 +190,82 @@ To conclude, this work demonstrates how grid cells could be formed from a simple
 
 All code was written in MATLAB, and can be obtained on https://github.com/derdikman/Dordek-et-al.-Matlab-code.git or on request from authors.
 
-## Neural network architecture
+### Neural network architecture
 
-We implemented a single-layer neural network with feedforward connections that was capable of producing a hexagonal-like output (Figure 2). The feedforward connections were updated according to a self-normalizing version of a Hebbian learning rule referred to as the Oja rule (Oja, 1982),(1)ΔJit=εt(ψtrit−(ψt)2Jit),
+We implemented a single-layer neural network with feedforward connections that was capable of producing a hexagonal-like output (Figure 2). The feedforward connections were updated according to a self-normalizing version of a Hebbian learning rule referred to as the Oja rule (Oja, 1982),
 
-where εt denotes the learning rate, Jit is the ith weight and ψt,rit are the output and the ith input of the network, respectively (all at time t). The weights were initialized randomly according to a uniform distribution and then normalized to have norm 1. The output ψt was calculated every iteration by summing up all pre-synaptic activity from the entire input neuron population. The activity of each output was processed through a sigmoidal function (e.g., tanh) or a simple linear function. Formally,(2)ψt=f∑i=1nJit⋅rit,
+$$
+ΔJ_{i}^{t}=\epsilon^{t}(ψ^{t}r_{i}^{t}−(ψ^{t})^{2}J_{i}^{t}),
+$$
+
+where $\epsilon^{t}$ denotes the learning rate, $J_{i}^{t}$ is the $i^{th}$ weight and $ψ^{t},r_{i}^{t}$ are the output and the $i^{th}$ input of the network, respectively (all at time $t$). The weights were initialized randomly according to a uniform distribution and then normalized to have norm 1. The output $ψ^{t}$ was calculated every iteration by summing up all pre-synaptic activity from the entire input neuron population. The activity of each output was processed through a sigmoidal function (e.g., $tanh$) or a simple linear function. Formally,
+
+$$
+ψ^{t}=f\sum_{i=1}^{n}J_{i}^{t}⋅r_{i}^{t},
+$$
 
 where n is the number of input place cells. Since we were initially only concerned with the eigenvector associated with the largest eigenvalue, we did not implement a multiple-output architecture. In this formulation, in which no lateral weights were used, multiple outputs were equivalent to running the same setting with one output several times.
 
 As discussed in the introduction, this kind of simple feedforward neural network with linear activation and a local weight update in the form of Oja’s rule (1) is known to perform Principal Components Analysis (PCA) (Oja, 1982; Sanger, 1989; Weingessel and Hornik, 2000). In the case of a single output the feedforward weights converge to the principal eigenvector of the input's covariance matrix. With several outputs, and lateral weights, as described in the section on modules, the weights converge to the leading principal eigenvectors of the covariance matrix, or, in certain cases (Weingessel and Hornik, 2000), to the subspace spanned by the principal eigenvectors. We can thus compare the results of the neural network to those of the mathematical procedure of PCA. Hence, in our simulation, we (1) let the neural networks' weights develop in real time based on the current place cell inputs. In addition, we (2) saved the input activity for every time step to calculate the input covariance matrix and perform (batch) PCA directly.
 
-It is worth mentioning that the PCA solution described in this section can be interpreted differently based on the Singular Value Decomposition (SVD). Denoting by R the T×d spatio-temporal pattern of place cell activities (after setting the mean to zero), where T is the time duration and d is the number of place cells, the SVD decomposition (see Jolliffe, 2002; sec. 3.5) for R is R=ULA'. For a matrix R of rank r, L is a r×r diagonal matrix whose kth element is equal to lk1/2, the square root of the kth eigenvalue of the covariance matrix RR' (computed in the PCA analysis), A is the d×r matrix with kth column equal to the kth eigenvector of RR', and U is the T×r matrix whose kth column is lk−1/2Rak. Note that U is a T×r dimensional matrix whose kth column represents the temporal dynamics of the kth grid cell. In other words, the SVD provides a decomposition of the place cell activity in terms of the grid cell activity, as opposed to the grid cell representation in terms of place cell activity we discussed so far. The network learns the spatial weights over place cells (the eigenvectors) as the connections weights from the place cells, and 'projection onto place cell space' (lk−1/2Rak) is simply the firing rates of the output neuron plotted against the location of the agent.
+It is worth mentioning that the PCA solution described in this section can be interpreted differently based on the Singular Value Decomposition (SVD). Denoting by $R$ the $T\timesd$ spatio-temporal pattern of place cell activities (after setting the mean to zero), where $T$ is the time duration and $d$ is the number of place cells, the SVD decomposition (see Jolliffe, 2002; sec. 3.5) for $R$ is $R=ULA'$. For a matrix $R$ of rank $r$, $L$ is a $r\timesr$ diagonal matrix whose $k$th element is equal to $l_{k}^{1/2}$, the square root of the $k$th eigenvalue of the covariance matrix $RR'$ (computed in the PCA analysis), $A$ is the $d\timesr$ matrix with $k$th column equal to the $k$th eigenvector of $RR'$, and $U$ is the $T\timesr$ matrix whose $k$th column is $l_{k}^{−1/2}Ra_{k}$. Note that $U$ is a $T\timesr$ dimensional matrix whose $k$th column represents the temporal dynamics of the $k$th grid cell. In other words, the SVD provides a decomposition of the place cell activity in terms of the grid cell activity, as opposed to the grid cell representation in terms of place cell activity we discussed so far. The network learns the spatial weights over place cells (the eigenvectors) as the connections weights from the place cells, and 'projection onto place cell space' ($l_{k}^{−1/2}Ra_{k}$) is simply the firing rates of the output neuron plotted against the location of the agent.
 
 The question we therefore asked was under what conditions, when using place cell-like inputs, a solution resembling hexagonal grid cells emerges. To answer this we used both the neural-network implementation and the direct calculation of the PCA coefficients.
 
-## Simulation
+### Simulation
 
-We simulated an agent moving in a 2D virtual environment consisting of a square arena covered by n uniformly distributed 2D Gaussian-shaped place cells, organized on a grid, given by(3)rit(X(t))=exp(−(X(t)−Ci)22σi2),       i=1,2,...,n
+We simulated an agent moving in a 2D virtual environment consisting of a square arena covered by $n$ uniformly distributed 2D Gaussian-shaped place cells, organized on a grid, given by
 
-where X(t) represents the location of the agent. The variables rit constitute the temporal input from place cell i at time t, and Ci,σi are the ith place cell’s field center and width, respectively (see variations on this input structure below). In order to eliminate boundary effects, periodic boundary conditions were assumed. The virtual agent moved about in a random walk scheme (see Appendix) and explored the environment (Figure 1A). The place cell centers were assumed to be uniformly distributed (Figure 1B) and shared the same standard deviation σ. The activity of all place cells as a function of time (r(t)1,r(t)2…r(t)n) was dependent on the stochastic movement of the agent, and formed a [Neuron x Time] matrix (r∈RnxT, with T- being the time dimension, see Figure 1C).
+$$
+r_{i}^{t}(X(t))=exp(\frac{−(X(t)−C_{i})^{2}}{2\sigma_{i}^{2}}),       i=1,2,...,n
+$$
 
-The simulation was run several times with different input arguments (see Table 1). The agent was simulated for T time steps, allowing the neural network's weights to develop and reach a steady state by using the learning rule (Equations 1,2) and the input (Equation 3) data. The simulation parameters are listed below and include parameters related to the environment, simulation, agent and network variables.10.7554/eLife.10094.019Table 1.List of variables used in simulation.DOI: http://dx.doi.org/10.7554/eLife.10094.019Environment:Size of arenaPlace cells field widthPlace cells distributionAgent:Velocity (angular & linear)Initial position-------------------Network:# Place cells/ #Grid cellsLearning rateAdaptation variable (if used)Simulation:Duration (time)Time step-------------------
+where $X(t)$ represents the location of the agent. The variables $r_{i}^{t}$ constitute the temporal input from place cell $i$ at time $t$, and $C_{i},\sigma_{i}$ are the $i^{th}$ place cell’s field center and width, respectively (see variations on this input structure below). In order to eliminate boundary effects, periodic boundary conditions were assumed. The virtual agent moved about in a random walk scheme (see Appendix) and explored the environment (Figure 1A). The place cell centers were assumed to be uniformly distributed (Figure 1B) and shared the same standard deviation $\sigma$. The activity of all place cells as a function of time $(r(t)_{1},r(t)_{2}…r(t)_{n})$ was dependent on the stochastic movement of the agent, and formed a [Neuron x Time] matrix ($r\inR^{nxT}$, with T- being the time dimension, see Figure 1C).
 
-To calculate the PCA directly, we used the MATLAB function Princomp in order to evaluate the n principal eigenvectors {q→k}k=1n and corresponding eigenvalues of the input covariance matrix. As mentioned in the Results section, there exists a near fourfold redundancy in the eigenvectors (X-Y axis and in phase). Figure 3 demonstrates this redundancy by plotting the eigenvalues of the covariance matrix. The output response of each eigenvector q→k corresponding to a 2D input location (x,y) is(4)Φ(x,y)k=∑j=1nqkj exp(−(x−cxj)22σx2−(y−cyj)22σy2),    k=1,2,..., n
+The simulation was run several times with different input arguments (see Table 1). The agent was simulated for T time steps, allowing the neural network's weights to develop and reach a steady state by using the learning rule (Equations 1,2) and the input (Equation 3) data. The simulation parameters are listed below and include parameters related to the environment, simulation, agent and network variables.
 
-where cxj and cyj are the x,y components of the centers of the individual place cell fields. Unless otherwise mentioned, we used place cells in a rectangular grid, such that a place cell is centered at each pixel of the image (that is – number of place cells equals the number of image pixels).
+**Table 1.**
+ List of variables used in simulation.
 
-## Non-negativity constraint
+
+<table>
+  <tbody>
+    <tr>
+      <td>Environment:</td>
+      <td>Size of arena</td>
+      <td>Place cells field width</td>
+      <td>Place cells distribution</td>
+    </tr>
+    <tr>
+      <td>Agent:</td>
+      <td>Velocity (angular &amp; linear)</td>
+      <td>Initial position</td>
+      <td>-------------------</td>
+    </tr>
+    <tr>
+      <td>Network:</td>
+      <td># Place cells/ #Grid cells</td>
+      <td>Learning rate</td>
+      <td>Adaptation variable (if used)</td>
+    </tr>
+    <tr>
+      <td>Simulation:</td>
+      <td>Duration (time)</td>
+      <td>Time step</td>
+      <td>-------------------</td>
+    </tr>
+  </tbody>
+</table>
+
+To calculate the PCA directly, we used the MATLAB function Princomp in order to evaluate the $n$ principal eigenvectors ${q→_{k}}_{k=1}^{n}$ and corresponding eigenvalues of the input covariance matrix. As mentioned in the Results section, there exists a near fourfold redundancy in the eigenvectors (X-Y axis and in phase). Figure 3 demonstrates this redundancy by plotting the eigenvalues of the covariance matrix. The output response of each eigenvector $q→_{k}$ corresponding to a 2D input location $(x,y)$ is
+
+$$
+Φ(x,y)_{k}=\sumj=1nq_{k}^{j} exp(−\frac{(x−c_{x}^{j})^{2}}{2\sigma_{x}^{2}}−\frac{(y−c_{y}^{j})^{2}}{2\sigma_{y}^{2}}),    k=1,2,..., n
+$$
+
+where $c_{x}^{j}$ and $c_{y}^{j}$ are the $x,y$ components of the centers of the individual place cell fields. Unless otherwise mentioned, we used place cells in a rectangular grid, such that a place cell is centered at each pixel of the image (that is – number of place cells equals the number of image pixels).
+
+### Non-negativity constraint
 
 Projections between place cells and grid cells are known to be primarily excitatory (Witter and Amaral, 2004), thus if we aim to mimic the biological circuit, a non-negativity constraint should be added to the feedforward weights in the neural network. While implementing a non-negativity constraint in the neural network is rather easy (a simple rectification rule in the weight dynamics, such that weights which are smaller than 0 are set to 0), the equivalent condition for calculating non-negative Principal Components is more intricate. Since this problem is non-convex and, in general, NP-hard (Montanari and Richard, 2014), a numerical procedure was imperative. We used three different algorithms for this purpose.
 
@@ -220,218 +275,402 @@ The second algorithm (Montanari and Richard, 2014) does not require any simulati
 
 The third algorithm we use is the parameter free Fast Iterative Threshold and Shrinkage algorithm FISTA (Beck and Teboulle, 2009). As described later in this section, this algorithm is the fastest of the three, and allowed us rapid screening of parameter space.
 
-## Different variants of input structure
+### Different variants of input structure
 
 Performing PCA on raw data requires the subtraction of the data mean. Some thought was required in order to determine how to perform this subtraction in the case of the neural network.
 
-One way to perform the subtraction in the time domain was to dynamically subtract the mean during simulation by using the discrete 1st or 2nd derivatives of the inputs in time [i.e. from Equation 3, ∆r(t+1)=r(t+1)−rt]. Under conditions of an isotropic random walk (namely, given any starting position, motion in all directions is equally likely) it is clear that E[∆r(t)]=0. Another option for subtracting the mean in the time domain was the use of an adaptation variable, as was initially introduced by Kropff and Treves, (2008). Although originally exploited for control over the firing rate, it can be viewed as a variable that represents subtraction of a weighted sum of the firing rate history. Instead of using the inputs rit directly in Equation 2 to compute the activation ψt, an intermediate adaptation variable ψadpt(δ) was used (δ being the relative significance of the present temporal sample) as(5)ψadpt=ψt−ψ¯t,(6)ψ¯t=(1−δ)⋅ψ¯t−1+δψt.
+One way to perform the subtraction in the time domain was to dynamically subtract the mean during simulation by using the discrete 1st or 2nd derivatives of the inputs in time [i.e. from Equation 3, $\Deltar(t+1)=r(t+1)−rt$]. Under conditions of an isotropic random walk (namely, given any starting position, motion in all directions is equally likely) it is clear that $E[\Deltar(t)]=0$. Another option for subtracting the mean in the time domain was the use of an adaptation variable, as was initially introduced by Kropff and Treves, (2008). Although originally exploited for control over the firing rate, it can be viewed as a variable that represents subtraction of a weighted sum of the firing rate history. Instead of using the inputs $r_{i}^{t}$ directly in Equation 2 to compute the activation $ψ^{t}$, an intermediate adaptation variable $ψ_{adp}^{t}(\delta)$ was used ($\delta$ being the relative significance of the present temporal sample) as
 
-It is not hard to see that for i.i.d. variables ψadpt, the sequence ψ¯t converges for large t to the mean of ψt. Thus, when t→∞ we find that E[ψadpt]→0, specifically, the adaptation variable is of zero asymptotic mean.
+$$
+ψ_{adp}^{t}=ψ^{t}−ψ¯^{t},
+$$
 
-The second method we used to enforce a zero mean input was simply to create it in advance. Rather than using 2D Gaussian functions (i.e. [Equation 3]) as inputs we used 2D difference-of-Gaussians (all σ are equal in x and y axis):(7)rit(X(t))=c1,i exp(−(X(t)−Ci)22σ1,i2)−c2,i exp(−(X(t)−Ci)22σ2,i2),      i=1,2,...,n
 
-where the constants c1 and c2 are set so the integral of the given Laplacian function is zero (if the environment size is not too small, then c1,i/c2,i ≈ σ2,i/σ1,i). Therefore, if we assume a random walk that covers the entire environment uniformly, the temporal mean of the input would be zero as well. Such input data can be inspired by similar behavior of neurons in the retina and the lateral-geniculate nucleus (Wiesel and Hubel, 1963; Enroth-Cugell and Robson, 1966). Finally, we implemented another input data type; positive-negative disks (see Appendix). Analogously to the difference-of-Gaussians function, the integral over input is zero so the same goal (zero-mean) was achieved. It is worthwhile noting that subtracting a constant from a simple Gaussian function is not sufficient since at infinity it does not reach zero.
 
-## Quality of solution and Gridness
+$$
+ψ¯^{t}=(1−\delta)⋅ψ¯^{t−1}+\deltaψ^{t}.
+$$
 
-In order to test the hexagonality of the results we used a hexagonal Gridness score (Sargolini et al., 2006). The Gridness score of the spatial fields was calculated from a cropped ring of their autocorrelogram including the six maxima closest to the center. The ring was rotated six times, 30∘ per rotation, reaching in total angles of 30∘,60∘,90∘,120∘,150∘. Furthermore, for every rotated angle the Pearson correlation with the original un-rotated map was obtained. Denoting by Cγ the correlation for a specific rotation angle γ, the final Gridness score was (Kropff and Treves, 2008):(8)Gridness  = 12(C60+C120)−13(C30+C90+C150).
+It is not hard to see that for i.i.d. variables $ψ_{adp}^{t}$, the sequence $ψ¯^{t}$ converges for large $t$ to the mean of $ψ^{t}$. Thus, when $t→∞$ we find that $E[ψ_{adp}^{t}]→0$, specifically, the adaptation variable is of zero asymptotic mean.
 
-In addition to this 'traditional' score we used a Squareness Gridness score in order to examine how square-like the results are spatially. The special reference to the square shape was driven by the tendency of the spatial solution to converge to a rectangular shape when no constrains were applied. The Squareness Gridness score is similar to the hexagonal one, but now the cropped ring of the autocorrelogram is rotated 45∘ every iteration to reach angles of 45∘,90∘,135∘. As before, denoting Cγ as the correlation for a specific rotation angle γ the new Gridness score was calculated as:(9)Square Gridness=C90−12(C45+C135).
+The second method we used to enforce a zero mean input was simply to create it in advance. Rather than using 2D Gaussian functions (i.e. [Equation 3]) as inputs we used 2D difference-of-Gaussians (all $\sigma$ are equal in x and y axis):
+
+$$
+r_{i}^{t}(X(t))=c_{1,i} exp(−\frac{(X(t)−C_{i})^{2}}{2\sigma_{1,i}^{2}})−c_{2,i} exp(−\frac{(X(t)−C_{i})^{2}}{2\sigma_{2,i}^{2}}),      i=1,2,...,n
+$$
+
+where the constants $c_{1}$ and $c_{2}$ are set so the integral of the given Laplacian function is zero (if the environment size is not too small, then $c_{1,i}/c_{2,i} ≈ \sigma_{2,i}/\sigma_{1,i}$). Therefore, if we assume a random walk that covers the entire environment uniformly, the temporal mean of the input would be zero as well. Such input data can be inspired by similar behavior of neurons in the retina and the lateral-geniculate nucleus (Wiesel and Hubel, 1963; Enroth-Cugell and Robson, 1966). Finally, we implemented another input data type; positive-negative disks (see Appendix). Analogously to the difference-of-Gaussians function, the integral over input is zero so the same goal (zero-mean) was achieved. It is worthwhile noting that subtracting a constant from a simple Gaussian function is not sufficient since at infinity it does not reach zero.
+
+### Quality of solution and Gridness
+
+In order to test the hexagonality of the results we used a hexagonal Gridness score (Sargolini et al., 2006). The Gridness score of the spatial fields was calculated from a cropped ring of their autocorrelogram including the six maxima closest to the center. The ring was rotated six times, $30^{∘}$ per rotation, reaching in total angles of $30^{∘},60^{∘},90^{∘},120^{∘},150^{∘}$. Furthermore, for every rotated angle the Pearson correlation with the original un-rotated map was obtained. Denoting by $C_{\gamma}$ the correlation for a specific rotation angle $\gamma$, the final Gridness score was (Kropff and Treves, 2008):
+
+$$
+Gridness  = \frac{1}{2}(C_{60}+C_{120})−\frac{1}{3}(C_{30}+C_{90}+C_{150}).
+$$
+
+In addition to this 'traditional' score we used a Squareness Gridness score in order to examine how square-like the results are spatially. The special reference to the square shape was driven by the tendency of the spatial solution to converge to a rectangular shape when no constrains were applied. The Squareness Gridness score is similar to the hexagonal one, but now the cropped ring of the autocorrelogram is rotated $45^{∘}$ every iteration to reach angles of $45^{∘},90^{∘},135^{∘}$. As before, denoting $C_{\gamma}$ as the correlation for a specific rotation angle $\gamma$ the new Gridness score was calculated as:
+
+$$
+Square Gridness=C_{90}−\frac{1}{2}(C_{45}+C_{135}).
+$$
 
 All errors calculated in gridness measures are SEM (Standard Error of the Mean).
 
-## Hierarchical networks and modules
+### Hierarchical networks and modules
 
-As described in the Results section, we were interested to check whether a hierarchy of outputs could explain the module phenomenon described for real grid cells. We replaced the single-output network with a hierarchical, multiple outputs network, which is capable of computing all 'principal components' of the input data while maintaining the non-negativity constraint as before. The network, introduced by Sanger, 1989, computes each output as a linear summation of the weighted inputs similar to Equation 2. However, the weights are now calculated according to:(10)ΔJijt=εt(rjtψit−ψit∑k=1iJkjtψkt).
+As described in the Results section, we were interested to check whether a hierarchy of outputs could explain the module phenomenon described for real grid cells. We replaced the single-output network with a hierarchical, multiple outputs network, which is capable of computing all 'principal components' of the input data while maintaining the non-negativity constraint as before. The network, introduced by Sanger, 1989, computes each output as a linear summation of the weighted inputs similar to Equation 2. However, the weights are now calculated according to:
 
-The first term in the parenthesis when k=1 was the regular Hebb-Oja derived rule. In other words, the first output calculated the first non-negative 'principal component' (in inverted commas due to the non-negativity) of the data. Following the first one, the weights of each output received a back projection from the previous outputs. This learning rule applied to the data in a similar manner to the Gram-Schmidt process, subtracting the 'influence' of the previous 'principal components' on the data and recalculating the appropriate 'principal components' of the updated input data.
+$$
+ΔJ_{ij}^{t}=\epsilon^{t}(r_{j}^{t}ψ_{i}^{t}−ψ_{i}^{t}\sumk=1iJ_{kj}^{t}ψ_{k}^{t}).
+$$
 
-In a comparable manner, we applied this technique to the input data X in order to obtain non-negative 'eigenvectors' from the direct nonnegative-PCA algorithms. We found V2 by subtracting from the data the projection of V1 on it,(11)X~=X−V1T(V1⋅X).
+The first term in the parenthesis when $k=1$ was the regular Hebb-Oja derived rule. In other words, the first output calculated the first non-negative 'principal component' (in inverted commas due to the non-negativity) of the data. Following the first one, the weights of each output received a back projection from the previous outputs. This learning rule applied to the data in a similar manner to the Gram-Schmidt process, subtracting the 'influence' of the previous 'principal components' on the data and recalculating the appropriate 'principal components' of the updated input data.
 
-Next, we computed V2, the first non-negative 'principal component' of X~, and similarly the subsequent ones.
+In a comparable manner, we applied this technique to the input data $X$ in order to obtain non-negative 'eigenvectors' from the direct nonnegative-PCA algorithms. We found $V_{2}$ by subtracting from the data the projection of $V_{1}$ on it,
 
-## Stability of hexagonal solutions
+$$
+X~=X−V_{1}^{T}(V_{1}⋅X).
+$$
+
+Next, we computed $V_{2}$, the first non-negative 'principal component' of $X~$, and similarly the subsequent ones.
+
+### Stability of hexagonal solutions
 
 In order to test the stability of the solutions we obtained under all types of conditions, we applied the ODE method (Kushner and Clark, 1978; Hornik and Kuan, 1992; Weingessel and Hornik, 2000) to the PCA feature extraction algorithm introduced in pervious sections. This method allows one to asymptotically replace the stochastic update equations describing the neural dynamics by smooth differential equations describing the average asymptotic behavior. Under appropriate conditions, the stochastic dynamics converge with probability one to the solution of the ODEs. Although originally this approach was designed for a more general architecture (including lateral connections and asymmetric updating rules), we used a restricted version for our system. In addition, the following analysis is accurate solely for linear output functions. However, since our architecture works well with either linear or non-linear output functions, the conclusions are valid.
 
-We can rewrite the relevant updating equations of the linear neural network (in matrix form), (see [Weingessel and Hornik, 2000] Equations 15–19):(12)ψt+1=Q⋅Jt⋅(rt)T,(13)ΔJt=εt(ψt(rt)T−Φ(ψt⋅(ψt)T)Jt).
+We can rewrite the relevant updating equations of the linear neural network (in matrix form), (see [Weingessel and Hornik, 2000] Equations 15–19):
 
-In our case we setQ=I,   Φ=diag.
+$$
+ψ^{t+1}=Q⋅J^{t}⋅(r^{t})^{T},
+$$
+
+
+
+$$
+ΔJ^{t}=\epsilon^{t}(ψ^{t}(r^{t})^{T}−Φ(ψ^{t}⋅(ψ^{t})^{T})J^{t}).
+$$
+
+In our case we set
+
+$$
+Q=I,   Φ=diag.
+$$
 
 Consider the following assumptions
 
-A typical suitable sequence is εt=1t,t=1,2….
+A typical suitable sequence is $\epsilon^{t}=\frac{1}{t},t=1,2…$.
 
-For long times, we denote(14)E[ψt(rt)T]→E[J⋅r⋅rT]=E[J]⋅E[r⋅rT]=JΣ,(15)limt→∞E[ψψT]=E[J]⋅E[rrT]⋅E[JT]=JΣJT.
+For long times, we denote
 
-The penultimate equalities in these equations used the fact that the weights converge with probability one to their average value, resulting from the solution of the ODEs. Following Weingessel and Hornik, (2000), we can analyze Equations 12,13 under the above assumptions, via their asymptotically equivalent associated ODEs(16)dJdt=JΣ−diag(JΣJT) J,
+$$
+E[ψ^{t}(r^{t})^{T}]→E[J⋅r⋅r^{T}]=E[J]⋅E[r⋅r^{T}]=JΣ,
+$$
 
-with equilibria at(17)JΣ=diag(JΣJT) J.
 
-We solved it numerically by exploiting the same covariance matrix and initializing with random weights J. In line with our previous findings, we found that constraining J to be non-negative (by a simple cut-off rule) resulted in a hexagonal shape (in the projection of J onto the place cells space; Figure 11). In contrast, when the weights were not constrained they converged to square-like results.
 
-## Steady state analysis
+$$
+limt→∞E[ψψ^{T}]=E[J]⋅E[rr^{T}]⋅E[J^{T}]=JΣJ^{T}.
+$$
 
-From this point onwards, we focus on the case of a single output, in which J is a row vector, unless stated otherwise. In the unconstrained case, from Equation 17 any J which is a normalized eigenvector of Σ would be a fixed point. However, from Equation 16, only the principal eigenvector, which is the solution to the following optimization problem(18)maxJ:JTJ=1 JΣJT
+The penultimate equalities in these equations used the fact that the weights converge with probability one to their average value, resulting from the solution of the ODEs. Following Weingessel and Hornik, (2000), we can analyze Equations 12,13 under the above assumptions, via their asymptotically equivalent associated ODEs
 
-would correspond to a stable fixed point. This is the standard PCA problem. By adding the constraint J≥0 we get the non-negative PCA problem.
+$$
+\frac{dJ}{dt}=JΣ−diag(JΣJ^{T}) J,
+$$
+
+with equilibria at
+
+$$
+JΣ=diag(JΣJ^{T}) J.
+$$
+
+We solved it numerically by exploiting the same covariance matrix and initializing with random weights $J$. In line with our previous findings, we found that constraining $J$ to be non-negative (by a simple cut-off rule) resulted in a hexagonal shape (in the projection of $J$ onto the place cells space; Figure 11). In contrast, when the weights were not constrained they converged to square-like results.
+
+### Steady state analysis
+
+From this point onwards, we focus on the case of a single output, in which $J$ is a row vector, unless stated otherwise. In the unconstrained case, from Equation 17 any $J$ which is a normalized eigenvector of $Σ$ would be a fixed point. However, from Equation 16, only the principal eigenvector, which is the solution to the following optimization problem
+
+$$
+max_{J:J^{T}J=1} JΣJ^{T}
+$$
+
+would correspond to a stable fixed point. This is the standard PCA problem. By adding the constraint $J\geq0$ we get the non-negative PCA problem.
 
 To speed up simulation and simplify analysis we make further simplifications.
 
-First, we assume that the agent’s random movement is ergodic (e.g., an isotropic random walk in a finite box as we used in our simulation), uniform and covering the entire environment, so that(19)JΣJT=Eψ2(X(t))=1|S|∫Sψ2(x)dx,
+First, we assume that the agent’s random movement is ergodic (e.g., an isotropic random walk in a finite box as we used in our simulation), uniform and covering the entire environment, so that
 
-where x denotes location vector (in contrast to X(t), which is the random process corresponding to the location of the agent), S is the entire environment, and |S| is the size of the environment.
+$$
+JΣJ^{T}=Eψ^{2}(X(t))=\frac{1}{|S|}\intSψ^{2}(x)dx,
+$$
 
-Second, we assume that the environment S is uniformly and densely covered by identical place cells, each of which has the same a tuning curve r(x) (which integrates to zero). In this case, the activity of the linear grid cell becomes a convolution operation(20)ψ(x)=∫SJ(x')r(x−x')dx',
+where $x$ denotes location vector (in contrast to $X(t)$, which is the random process corresponding to the location of the agent), $S$ is the entire environment, and $|S|$ is the size of the environment.
 
-where J(x) is the synaptic weight connecting to the place cell at location x.
+Second, we assume that the environment $S$ is uniformly and densely covered by identical place cells, each of which has the same a tuning curve $r(x)$ (which integrates to zero). In this case, the activity of the linear grid cell becomes a convolution operation
 
-Thus, we can write our objective as(21)1|S|∫Sψ2(x)dx=1|S|∫S(∫SJ(x')r(x−x')dx')2dx
+$$
+ψ(x)=\int_{S}J(x')r(x−x')dx',
+$$
 
-under the constraint that the weights are normalized(22)1S∫SJ2 (x) dx=1,
+where $J(x)$ is the synaptic weight connecting to the place cell at location $x$.
 
-where either J(x)∈ℝ (PCA) or J(x) ≥ 0 ('non-negative PCA').
+Thus, we can write our objective as
+
+$$
+\frac{1}{|S|}\int_{S}ψ^{2}(x)dx=\frac{1}{|S|}\int_{S}(\int_{S}J(x')r(x−x')dx')^{2}dx
+$$
+
+under the constraint that the weights are normalized
+
+$$
+\frac{1}{S}\int_{S}J^{2} (x) dx=1,
+$$
+
+where either $J(x)\inℝ$ (PCA) or $J(x) \geq 0$ ('non-negative PCA').
 
 Since we expressed the objective using a convolution operation (different boundary conditions can be assumed), it can be solved numerically considerably faster. In the non-negative case, we used the parameter free Fast Iterative Threshold and Shrinkage algorithm [FISTA (Beck and Teboulle, 2009); in which we do not use shrinkage, since we only have hard constraints], where the gradient was calculated efficiently using convolutions.
 
 Moreover, as we show in the following sections, if we assume periodic boundary conditions and use Fourier analysis, we can analytically find the PCA solutions, and obtain important insight on the non-negative PCA solutions.
 
-## Fourier notation
+### Fourier notation
 
-Any continuously differentiable function f(x), defined over S≜[0,L]D, a 'box' region in D dimensions, with periodic boundary conditions, can be written using a Fourier series(23)f^(k)≜1|S|∫Sf(x)eik⋅xdx,f(x)≜∑k∈S^f^(k)e−ik⋅x,
+Any continuously differentiable function $f(x)$, defined over $S≜[0,L]^{D}$, a 'box' region in $D$ dimensions, with periodic boundary conditions, can be written using a Fourier series
 
-where |S|=LD is the volume of the box andS^≜{(2m1πL,…,2mdπL)}(m1,…,md)∈ℤD
+$$
+f^(k)≜\frac{1}{|S|}\int_{S}f(x)e^{ik⋅x}dx,f(x)≜\sumk\inS^f^(k)e^{−ik⋅x},
+$$
+
+where $|S|=L^{D}$ is the volume of the box and
+
+$$
+S^≜{(\frac{2m_{1}\pi}{L},…,\frac{2m_{d}\pi}{L})}_{(m_{1},…,m_{d})\inℤ^{D}}
+$$
 
 is the reciprocal lattice of S in k-space (frequency space).
 
-## PCA solution
+### PCA solution
 
-Assuming periodic boundary conditions, we use Parseval’s identity, and the properties of the convolution, to transform the steady state objective (Equation 21) to its simpler form in the Fourier domain,(24)1|S|∫Sψ2(x)dx=∑k∈S^|J^(k)r^(k)|2.
+Assuming periodic boundary conditions, we use Parseval’s identity, and the properties of the convolution, to transform the steady state objective (Equation 21) to its simpler form in the Fourier domain,
 
-Similarly, the normalization constraint can also be written in the Fourier domain,(25)1|S|∫SJ2(x)dx=∑k∈S^|J^(k)|2=1.
+$$
+\frac{1}{|S|}\int_{S}^{}ψ^{2}(x)dx=\sumk\inS^|J^(k)r^(k)|^{2}.
+$$
 
-Maximizing the objective Equation 24 under this constraint in the Fourier domain, we immediately get that any solution is a linear combination of the Fourier components,(26)J^(k) ={1,     k=k*0,     k≠k*.
+Similarly, the normalization constraint can also be written in the Fourier domain,
 
-where(27)k*∈argmaxk∈S^r^ (k),
+$$
+\frac{1}{|S|}\int_{S}^{}J^{2}(x)dx=\sumk\inS^|J^(k)|^{2}=1.
+$$
 
-and J^(k) satisfies the normalization constraint. In the original space, the Fourier components are(28)J(x)=eik·x+iϕ,
+Maximizing the objective Equation 24 under this constraint in the Fourier domain, we immediately get that any solution is a linear combination of the Fourier components,
 
-where ϕ∈[0,2π) is a free parameter that determines the phase. Also, since J(x) should assume real values, it is composed of real Fourier components(29)J(x)=12(eik*⋅x+iϕ+e−ik*⋅x−iϕ)=2cos(k*⋅x+ϕ).
+$$
+J^(k) ={1,     k=k_{*}0,     k\neqk_{*}.
+$$
 
-This is a valid solution, since r(x) is a real-valued function, r^(k)=r^(−k) and therefore -k*∈ argmaxk∈S^r^(k).
+where
 
-## PCA solution for a difference of Gaussians tuning curve
+$$
+k_{*}\inargmax_{k\inS^}r^ (k),
+$$
 
-In this paper we focused on the case where r(x) has the shape of a difference of Gaussians (Equation 7),(30)r(x)∝c1 exp(−‖x‖22σ12)−c2 exp(−‖x‖22σ22)
+and $J^(k)$ satisfies the normalization constraint. In the original space, the Fourier components are
 
-where c1 and c2 are some positive normalization constants, set so that ∫Sr(x)dx=0 (see appendix). The Fourier transform of r(x) is also a difference of Gaussians(31)r^(k)∝exp(−12σ12‖k‖2)−exp(−12σ22‖k‖2)
+$$
+J(x)=e^{ik·x+iϕ},
+$$
 
-∀k∈S^, as we show in the appendix. Therefore the value of the Fourier domain objective only depends on the radius ‖k‖, and all solutions k* have the same radius ‖k*‖. If L→∞, then the k-lattice S^ becomes dense (S^→ℝD) and this radius is equal to(32)k†=argmaxk≥0 exp(−12σ12k2)−exp(−12σ22k2)
+where $ϕ\in[0,2\pi)$ is a free parameter that determines the phase. Also, since $J(x)$ should assume real values, it is composed of real Fourier components
+
+$$
+J(x)=\frac{1}{\sqrt{2}}(e^{ik_{*}⋅x+iϕ}+e^{−ik_{*}⋅x−iϕ})=\sqrt{2}cos(k_{*}⋅x+ϕ).
+$$
+
+This is a valid solution, since $r(x)$ is a real-valued function, $r^(k)=r^(−k)$ and therefore $-k_{*}\in argmax_{k\inS^}^{r^}(k)$.
+
+### PCA solution for a difference of Gaussians tuning curve
+
+In this paper we focused on the case where $r(x)$ has the shape of a difference of Gaussians (Equation 7),
+
+$$
+r(x)∝c_{1 }exp(−\frac{‖x‖^{2}}{2\sigma_{1}^{2}})−c_{2} exp(−\frac{‖x‖^{2}}{2\sigma_{2}^{2}})
+$$
+
+where $c_{1}$ and $c_{2}$ are some positive normalization constants, set so that $\int_{S}r(x)dx=0$ (see appendix). The Fourier transform of $r(x)$ is also a difference of Gaussians
+
+$$
+r^(k)∝exp(−\frac{1}{2}\sigma_{1}^{2}‖k‖^{2})−exp(−\frac{1}{2}\sigma_{2}^{2}‖k‖^{2})
+$$
+
+$∀k\inS^$, as we show in the appendix. Therefore the value of the Fourier domain objective only depends on the radius $‖k‖$, and all solutions $k_{*}$ have the same radius $‖k_{*}‖$. If $L→∞$, then the $k$-lattice $S^$ becomes dense ($S^→ℝ^{D}$) and this radius is equal to
+
+$$
+k_{†}=argmax_{k\geq0} exp(−\frac{1}{2}\sigma_{1}^{2}k^{2})−exp(−\frac{1}{2}\sigma_{2}^{2}k^{2})
+$$
 
 which is a unique maximizer, that can be easily obtained numerically.
 
-Notice that if we multiply the place cell field width by some positive constant c, then the solution k† will be divided by c. The grid spacing, proportional to 1k†, would therefore also be multiplied by c. This entails a linear dependency between the place cell field width and the grid cell spacing, in the limit of a large box size (L→∞). When the box has a finite size, k-lattice discretization also has a (usually small) effect on the grid spacing.
+Notice that if we multiply the place cell field width by some positive constant $c$, then the solution $k_{†}$ will be divided by $c$. The grid spacing, proportional to $\frac{1}{k_{†}}$, would therefore also be multiplied by $c$. This entails a linear dependency between the place cell field width and the grid cell spacing, in the limit of a large box size $(L→∞)$. When the box has a finite size, k-lattice discretization also has a (usually small) effect on the grid spacing.
 
-In that case, all solutions
+In that case, all solutions k* are restricted to be on the finite lattice S^. Therefore, the solutions k* are the points on the lattice S^ for which the radius ‖k*‖ is closest to k† (see Figure 15B,C).
 
 ![Figure 15.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig15-v2.jpg)
 
-**Figure 15.:** (A) The 1D tuning curve . (r(x)B) The 1D tuning curve Fourier transform . The black circles indicate k-lattice points. The PCA solution, r^(k), is given by the circles closest to k*, the peak of k† (red cross). (r^(k)C) A contour plot of the 2D tuning curve Fourier transform . In 2D k-space the peak of r^(k) becomes a circle (red), and the k-lattice r^(k) is a square lattice (black circles). The lattice point can be partitioned into equivalent groups. Several such groups are marked in blue on the lattice. For example, the PCA solution Fourier components lie on the four lattice points closest to the circle, denoted A1-4. Note the grouping of A,B,C & D (4,8,4 and 4, respectively) corresponds to the grouping of the 20 highest principal components in S^Figure 4. Parameters: .2σ1=σ2=7.5,L=100DOI: http://dx.doi.org/10.7554/eLife.10094.020
+**Figure 15.:** (A) The 1D tuning curve $r(x)$. (B) The 1D tuning curve Fourier transform $r^(k)$. The black circles indicate k-lattice points. The PCA solution, $k_{*}$, is given by the circles closest to $k_{†}$, the peak of $r^(k)$ (red cross). (C) A contour plot of the 2D tuning curve Fourier transform $r^(k)$. In 2D k-space the peak of $r^(k)$ becomes a circle (red), and the k-lattice $S^$ is a square lattice (black circles). The lattice point can be partitioned into equivalent groups. Several such groups are marked in blue on the lattice. For example, the PCA solution Fourier components lie on the four lattice points closest to the circle, denoted A1-4. Note the grouping of A,B,C & D (4,8,4 and 4, respectively) corresponds to the grouping of the 20 highest principal components in Figure 4. Parameters: $2\sigma_{1}=\sigma_{2}=7.5,L=100$.
 
-## The degeneracy of the PCA solution
+### The degeneracy of the PCA solution
 
-The number of real-valued PCA solutions (degeneracy) in 1D is two, as there are exactly two maxima, k* and −k*. The phase ϕ, determines how the components at k* and −k* are linearly combined.
+The number of real-valued PCA solutions (degeneracy) in 1D is two, as there are exactly two maxima, $k_{*}$ and $−k_{*}$. The phase $ϕ$, determines how the components at $k_{*}$ and $−k_{*}$ are linearly combined.
 
-However, there are more maxima in the 2D case. Specifically, given a maximum k*, we can write (m,n)=L2πk*, where (m,n)∈ℤ2. Usually there are 7 other different points with the same radius: (m,−n),(−m,−n),(−m,n),(−n,−m),(n,−m),(−n,m) and (n,m), so we will have a degeneracy of eight (corresponding to the symmetries of a square box). This is case of points in group B, shown in Figure 15C.
+However, there are more maxima in the 2D case. Specifically, given a maximum $k_{*}$, we can write $(m,n)=\frac{L}{2\pi}k_{*}$, where $(m,n)\inℤ^{2}$. Usually there are 7 other different points with the same radius: $(m,−n)$,$(−m,−n)$,$(−m,n)$,$(−n,−m)$,$(n,−m)$,$(−n,m)$ and $(n,m)$, so we will have a degeneracy of eight (corresponding to the symmetries of a square box). This is case of points in group B, shown in Figure 15C.
 
-However, we can also get a different degeneracy. First, if either m=±n, n=0 or m=0 we will have a degeneracy of 4, since then some of the original eight points will coincide (groups A,C and D in Figure 15C). Second, additional points (k,r) can exist such that k2+r2=m2+n2, (Pythagorean triplets with the same hypotenuse) – for example, 152+202=252=72+242. These points will also appear in groups of four or eight.
+However, we can also get a different degeneracy. First, if either $m=\pmn$, $n=0$ or $m=0$ we will have a degeneracy of 4, since then some of the original eight points will coincide (groups A,C and D in Figure 15C). Second, additional points $(k,r)$ can exist such that $k^{2}+r^{2}=m^{2}+n^{2}$, (Pythagorean triplets with the same hypotenuse) – for example, $15^{2}+20^{2}=25^{2}=7^{2}+24^{2}$. These points will also appear in groups of four or eight.
 
 Therefore, we will always have a degeneracy which is some multiple of 4. Note that in the full network simulation, the degeneracy is not exact. This is due to the perturbation noise from the agent’s random walk as well as the non-uniform sampling of the place cells.
 
-## The PCA solution with a non-negative constraint
+### The PCA solution with a non-negative constraint
 
-Next, we add the non-negativity constraint J(x)≥0. As mentioned earlier, this constraint renders the optimization problem NP-hard, and prevents us from a complete analytical solution. We therefore combine numerical and mathematical analysis, in order to gain intuition as to why
+Next, we add the non-negativity constraint $J(x)\geq0$. As mentioned earlier, this constraint renders the optimization problem NP-hard, and prevents us from a complete analytical solution. We therefore combine numerical and mathematical analysis, in order to gain intuition as to why
 
-## 1D Solutions
+### 1D Solutions
 
 Our numerical results indicate that the Fourier components of any locally optimal 1D solution of non-negative PCA have the following structure:
 
-This structure suggests that the component at k* aims to maximize the objective, while the other components guarantee the non-negativity of the solution J(x). In order to gain some analytical intuition as to why this is the case, we first examine the limit case that L→∞ and r^(k) is highly peaked at k†. In that case the Fourier objective (Equation 24) simply becomes 2|r^(k†)|2|J^(k†)|2. For simplicity, we will rescale our units so that |r^(k†)|2=1/2, and the objective becomes |J^(k†)|2. Therefore, the solution must include a Fourier component at k† or the objective would be zero. The other components exist only to maintain the non-negativity constraint, since if they increase in magnitude, then the objective, which is proportional to |J^(k†)|2, must decrease to compensate (due to the normalization constraint – Equation 25). Note that these components must include a positive 'DC component' at k=0, or else ∫SJ(x)dx∝J^(0)≤0, which contradicts the constraints. To find all the Fourier components, we examine a solution composed of only a few (M) componentsJ(x)=J^(0)+2∑m=1MJ^mcos(kmx+ϕm).
+This structure suggests that the component at $k_{*}$ aims to maximize the objective, while the other components guarantee the non-negativity of the solution $J(x)$. In order to gain some analytical intuition as to why this is the case, we first examine the limit case that $L→∞$ and $r^(k)$ is highly peaked at $k_{†}$. In that case the Fourier objective (Equation 24) simply becomes $2|r^(k_{†})|^{2}|J^(k_{†})|^{2}$. For simplicity, we will rescale our units so that $|r^(k_{†})|^{2}=1/2$, and the objective becomes $|J^(k_{†})|^{2}$. Therefore, the solution must include a Fourier component at $k_{†}$ or the objective would be zero. The other components exist only to maintain the non-negativity constraint, since if they increase in magnitude, then the objective, which is proportional to $|J^(k_{†})|^{2}$, must decrease to compensate (due to the normalization constraint – Equation 25). Note that these components must include a positive 'DC component' at $k=0$, or else $\intSJ(x)dx∝J^(0)\leq0$, which contradicts the constraints. To find all the Fourier components, we examine a solution composed of only a few ($M$) components
 
-Clearly, we can set k1=k†, or otherwise, the objective would be zero. Also, we must haveJ^(0)=−minx(2∑m=1MJ^mcos(kmx+ϕm))≥0.
+$$
+J(x)=J^(0)+2\summ=1MJ^_{m}cos(k_{m}x+ϕ_{m}).
+$$
 
-Otherwise, the solution would be either (1) negative or (2) non-optimal, since we can decrease J^(0) and increase |J1|.
+Clearly, we can set $k_{1}=k_{†}$, or otherwise, the objective would be zero. Also, we must have
 
-For M=1, we immediately get that, in the optimal solution, 2J^1=J^(0)=2/3 (ϕm does not matter). For M=2,3 and 4 a solution is harder to find directly, so we performed a parameter grid search over all the free parameters (km,J^m and ϕm) in those components. We found that the optimal solution (which maximizes the objective |J^(k†)|2), had the following form(33)J(x)=∑m=−MMJ^(mk†)cos(mk†(x−x0)),
+$$
+J^(0)=−min_{x}(2\summ=1MJ^_{m}cos(k_{m}x+ϕ_{m}))\geq0.
+$$
 
-where x0 is a free parameter. This form results from a parameter grid search for M=1,2,3 and 4, under the assumption that L→∞ and r^(k) is highly peaked. However, our numerical results in the general case (Figure 16A), using the FISTA algorithm, indicate that the locally optimal solution does not change much even if L is finite, and r^(k) is not highly peaked. Specifically, it has a similar form(34)J(x)=∑m=−∞∞J^(mk*)cos(mk*(x−x0)).
+Otherwise, the solution would be either (1) negative or (2) non-optimal, since we can decrease $J^(0)$ and increase $|J_{1}|$.
 
-Since J^(mk*) is rapidly decaying (Figure 16A), effectively only the first few components are non-negligible, as in Equation 33. This can also be seen in the value of the objective obtained in the parameter scan(35)M1234|J^(k†)|2160.23670.24570.2457,
+For $M=1$, we immediately get that, in the optimal solution, $2J^_{1}=J^(0)=\sqrt{2/3}$ ($ϕ_{m}$ does not matter). For $M=2,3$ and $4$ a solution is harder to find directly, so we performed a parameter grid search over all the free parameters ($k_{m},J^_{m}$ and $ϕ_{m}$) in those components. We found that the optimal solution (which maximizes the objective $|J^(k_{†})|^{2}$), had the following form
 
-where the contribution of additional high frequency components to the objective quickly becomes negligible. In fact, the value of the objective cannot increase above 0.25, as we explain in the next section.
+$$
+J(x)=\summ=−MMJ^(mk_{†})cos(mk_{†}(x−x_{0})),
+$$
 
-And so, the main difference between
+where $x_{0}$ is a free parameter. This form results from a parameter grid search for $M=1,2,3$ and $4$, under the assumption that $L→∞$ and $r^(k)$ is highly peaked. However, our numerical results in the general case (Figure 16A), using the FISTA algorithm, indicate that the locally optimal solution does not change much even if $L$ is finite, and $r^(k)$ is not highly peaked. Specifically, it has a similar form
+
+$$
+J(x)=\summ=−∞∞J^(mk_{*})cos(mk_{*}(x−x_{0})).
+$$
+
+Since $J^(mk_{*})$ is rapidly decaying (Figure 16A), effectively only the first few components are non-negligible, as in Equation 33. This can also be seen in the value of the objective obtained in the parameter scan
+
+$$
+M1234|J^(k_{†})|^{2}\frac{1}{6}0.23670.24570.2457,
+$$
+
+where the contribution of additional high frequency components to the objective quickly becomes negligible. In fact, the value of the objective cannot increase above $0.25$, as we explain in the next section.
+
+And so, the main difference between Equations 33 and 34 is the base frequency, k*, which is slightly different from k†. As explained in the appendix, the relation between k* and k† depends on the k-lattice discretization, as well as on the properties of r^(k).
 
 ![Figure 16.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig16-v2.jpg)
 
-**Figure 16.:** -lattice.k(A) 1D solution (blue) includes: a DC component (), a maximal component with magnitude near k=0 (red line), and weaker harmonics of the maximal component. (k†B) 2D solution includes: a DC component ( = (0,0)), a hexgaon of strong components with radius near k (red circle), and weaker components on the lattice of the strong components. White dots show underlying k†-lattice. We used a difference of Gaussians tuning curve, with parameters k, and the FISTA algorithm.2σ1=σ2=7.5,L=100DOI: http://dx.doi.org/10.7554/eLife.10094.021
+**Figure 16.:** Fourier components of Non-negative PCA on the $k$-lattice.(A) 1D solution (blue) includes: a DC component ($k=0$), a maximal component with magnitude near $k_{†}$ (red line), and weaker harmonics of the maximal component. (B) 2D solution includes: a DC component (k = (0,0)), a hexgaon of strong components with radius near $k_{†}$ (red circle), and weaker components on the lattice of the strong components. White dots show underlying $k$-lattice. We used a difference of Gaussians tuning curve, with parameters $2\sigma_{1}=\sigma_{2}=7.5,L=100$, and the FISTA algorithm.
 
-## 2D Solutions
+### 2D Solutions
 
 The 1D properties, described in the previous section, generalize to the 2D case in the following manner:
 
-k∈S^ | k=∑i=1Bnik*(i)(n1,...,nB)∈ℤB
+$$
+k\inS^ | k=\sumi=1Bn_{i}k_{*}^{(i)}_{(n_{1},...,n_{B})\inℤ^{B}}
+$$
 
 Interestingly, given these properties of the solution we already get hexagonal patterns, as we explain next.
 
-Similarly to the 1D case, the difference between ‖k*(i)‖ and k† is affected by lattice discretization, and the curvature of r^(k) near k†. To simplify matters, we focus first on the simple case that L→∞ and r^(k) is sharply peaked around k†. Therefore, the Fourier objective becomes ∑i=1B|J^(k*(i))|2, so the only Fourier components that appear in the objective are {k*(i)}i=1B, which have radius k†. We examine the values this objective can have.
+Similarly to the 1D case, the difference between $‖k_{*}^{(i)}‖$ and $k_{†}$ is affected by lattice discretization, and the curvature of $r^(k)$ near $k_{†}$. To simplify matters, we focus first on the simple case that $L→∞$ and $r^(k)$ is sharply peaked around $k_{†}$. Therefore, the Fourier objective becomes $\sumi=1B|J^(k_{*}^{(i)})|^{2}$, so the only Fourier components that appear in the objective are ${k_{*}^{(i)}}_{i=1}^{B}$, which have radius $k_{†}$. We examine the values this objective can have.
 
 All the base components have the same radius. This implies, according to the Crystallographic restriction theorem in 2D, that the only allowed lattice angles (in the range between 0 and 90 degrees) are 0, 60 and 90 degrees. Therefore, there are only three possible lattice types in 2D. Next, we examine the value of the objective for each of these lattice types:
 
-1) Square lattice, in which k*(1)=k†(1,0), k*(2)=k†(0,1), up to a rotation. In this case,J(x,y)=∑mx=−∞∞∑my=−∞∞J^mx,mycos(k†(mxx+myy)+ϕmx,my)
+1) Square lattice, in which $k_{*}^{(1)}=k_{†}(1,0), k_{*}^{(2)}=k_{†}(0,1)$, up to a rotation. In this case,
 
-and the value of the objective is bounded above by 0.25 (see proof in appendix).
+$$
+J(x,y)=\summ_{x}=−∞∞\summ_{y}=−∞∞J^_{m_{x},m_{y}}^{}cos(k_{†}(m_{x}x+m_{y}y)+ϕ_{m_{x},m_{y}})
+$$
 
-2) 1D lattice, in which k*(1)=k†(1,0), up to a rotation. This is a special case of the square lattice, with a subset of J^mx,myequal to zero, so we can write, as we did in the 1D caseJ(x)=∑m=−∞∞J^mcos(k†mx+ϕm)
+and the value of the objective is bounded above by $0.25$ (see proof in appendix).
 
-Therefore, the same objective upper bound, 0.25, holds. Note that some of the solutions we found numerically are close to this bound (Equation 35).
+2) 1D lattice, in which $k_{*}^{(1)}=k_{†}(1,0)$, up to a rotation. This is a special case of the square lattice, with a subset of $J^_{m_{x},m_{y}}^{}$equal to zero, so we can write, as we did in the 1D case
 
-3) Hexagonal lattice, in which the base components arek*(1)=k†(1,0),k*(2)=k†(−12,32),k*(3)=k†(−12,−32)
+$$
+J(x)=\summ=−∞∞J^_{m}^{}cos(k_{†}mx+ϕ_{m})
+$$
 
-up to a rotation by some angle α. Our parameter scans indicate that the objective value cannot surpass 0.2 in any solution composed of only the base hexgonal components {k*(m)}m=13 and a DC component. However, taking into account also some higher order lattice components, we can find a better solution, with an objective value of 0.2558. Though this is not necessarily the optimal solution, it surpasses any possible solutions on the other lattice types (bounded below 0.25, as we proved in the appendix). Specifically, this solution is composed of the base vectors {k*(m)}m=13 and their harmonicsJ(x)=J^0+2∑m=18J^mcos(k*(m)⋅x)
+Therefore, the same objective upper bound, $0.25$, holds. Note that some of the solutions we found numerically are close to this bound (Equation 35).
 
-with k*(4)=2k*(1), k*(5)=2k*(2), k*(6)=2k*(3), k*(7)=k*(1)+k*(2), k*(8)=k*(1)+k*(3). Also, J^0=0.6449, J^1=J^2=J^3=0.292, J^4=J^5=J^6=−0.0101 and J^7=J^8=−0.134.
+3) Hexagonal lattice, in which the base components are
 
-Thus, any optimal solution must be on the hexagonal lattice, given our approximations. In practice, the lattice hexagonal basis vectors do not have exactly the same radius, and, as in the 1D case, this radius is somewhat smaller then
+$$
+k_{*}^{(1)}=k_{†}(1,0),k_{*}^{(2)}=k_{†}(−\frac{1}{2},\frac{\sqrt{3}}{2}),k_{*}^{(3)}=k_{†}(−\frac{1}{2},−\frac{\sqrt{3}}{2})
+$$
+
+up to a rotation by some angle $\alpha$. Our parameter scans indicate that the objective value cannot surpass $0.2$ in any solution composed of only the base hexgonal components ${k_{*}^{(m)}}_{m=1}^{3}$ and a DC component. However, taking into account also some higher order lattice components, we can find a better solution, with an objective value of $0.2558$. Though this is not necessarily the optimal solution, it surpasses any possible solutions on the other lattice types (bounded below $0.25$, as we proved in the appendix). Specifically, this solution is composed of the base vectors ${k_{*}^{(m)}}_{m=1}^{3}$ and their harmonics
+
+$$
+J(x)=J^_{0}+2\summ=18J^_{m}cos(k_{*}^{(m)}⋅x)
+$$
+
+with $k_{*}^{(4)}=2k_{*}^{(1)}$, $k_{*}^{(5)}=2k_{*}^{(2)}$, $k_{*}^{(6)}=2k_{*}^{(3)}$, $k_{*}^{(7)}=k_{*}^{(1)}+k_{*}^{(2)}$, $k_{*}^{(8)}=k_{*}^{(1)}+k_{*}^{(3)}$. Also, $J^_{0}=0.6449$, $J^_{1}=J^_{2}=J^_{3}=0.292$, $J^_{4}=J^_{5}=J^_{6}=−0.0101$ and $J^_{7}=J^_{8}=−0.134$.
+
+Thus, any optimal solution must be on the hexagonal lattice, given our approximations. In practice, the lattice hexagonal basis vectors do not have exactly the same radius, and, as in the 1D case, this radius is somewhat smaller then k†, due to the lattice discretization, and due to that r^(k) is not sharply peaked. However, the resulting solution lattice is still approximately hexagonal in k-space. For example, this can be seen in the numerically obtained solution in Figure 16B – where the strongest non-DC Fourier components form an approximate hexagon near k†, from the Fourier components A, defined in Figure 17.
 
 ![Figure 17.](https://cdn.elifesciences.org/articles/10094/elife-10094-fig17-v2.jpg)
 
-**Figure 17.:** As in Figure 15C, we see a contour plot of the 2D tuning curve Fourier transform  and the k-space the peak of r^(k) (red circle), and the k-lattice r^(k) (black circles). The lattice points can be divided into approximately hexgonal shaped groups. Several such groups are marked in blue on the lattice. For example, group A and B are optimal since they are nearest to the red circle. The next best (with the highest-valued contours) group of points, which have an approximate hexgonal shape, is C. Note that group C has a k-radius of approximately the optimal radius times S^ (cyan circle). Parameters: 2.2σ1=σ2=7.5,L=100DOI: http://dx.doi.org/10.7554/eLife.10094.022
+**Figure 17.:** As in Figure 15C, we see a contour plot of the 2D tuning curve Fourier transform $r^(k)$ and the k-space the peak of $r^(k)$ (red circle), and the k-lattice $S^$ (black circles). The lattice points can be divided into approximately hexgonal shaped groups. Several such groups are marked in blue on the lattice. For example, group A and B are optimal since they are nearest to the red circle. The next best (with the highest-valued contours) group of points, which have an approximate hexgonal shape, is C. Note that group C has a k-radius of approximately the optimal radius times $\sqrt{2}$ (cyan circle). Parameters: $2\sigma_{1}=\sigma_{2}=7.5,L=100$.
 
-## Grid spacing
+#### Grid spacing
 
-In general, we get a hexagonal grid pattern in x-space. If all base Fourier components have a radius of k†, then the grid spacing in x-space would be 4π/(3k†). Since the radius of the basis vectors can be smaller than k†, the value of 4π/(3k†) is a lower bound to the actual grid spacing (as demonstrated in Figure 12A), up to lattice discretization effects.
+In general, we get a hexagonal grid pattern in $x$-space. If all base Fourier components have a radius of $k_{†}$, then the grid spacing in $x$-space would be $4\pi/(\sqrt{3}k_{†})$. Since the radius of the basis vectors can be smaller than $k_{†}$, the value of $4\pi/(\sqrt{3}k_{†})$ is a lower bound to the actual grid spacing (as demonstrated in Figure 12A), up to lattice discretization effects.
 
-## Grid alignment
+#### Grid alignment
 
-The angle of the hexagonal grid, α, is determined by the directions of the hexagonal vectors. An angle α is possible, if there exists a k-lattice point k=2πL(m,n) (with m,n integers), for which πL>2πL(m2+n2)−k*2, and then α=arctannm. Since the hexagonal lattice has rotational symmetry of 60∘, we can restrict α to be in the range −30∘≤α≤30∘. The grid alignment, which is the minimal angle of the grid with the box boundaries is given by(36)Grid aligment=min(|α|,90∘−(|α|+60∘))=min(|α|,30∘−|α|)
+The angle of the hexagonal grid, $\alpha$, is determined by the directions of the hexagonal vectors. An angle $\alpha$ is possible, if there exists a $k$-lattice point $k=\frac{2\pi}{L}(m,n)$ (with $m,n$ integers), for which $\frac{\pi}{L}>\sqrt{\frac{2\pi}{L}(m^{2}+n^{2})−k_{*}^{2}}$, and then $\alpha=arctan\frac{n}{m}$. Since the hexagonal lattice has rotational symmetry of $60^{∘}$, we can restrict $\alpha$ to be in the range $−30^{∘}\leq\alpha\leq30^{∘}$. The grid alignment, which is the minimal angle of the grid with the box boundaries is given by
 
-which is limited to the range [0∘,15∘], since −30∘≤α≤30∘. There are usually several possible grid alignments which are (approximately) rotated versions of each other (i.e., different α). Note that, due to the k-lattice discretization, different alignments can result in slightly different objective values. However, the numerical algorithms we used to solve the optimization problem reached many possible grid alignments with a positive probability (Figure 12C), since we started from a random initialization and converged to a local minimum.
+$$
+Grid aligment=min(|\alpha|,90^{∘}−(|\alpha|+60^{∘}))=min(|\alpha|,30^{∘}−|\alpha|)
+$$
 
-In the limit L→∞, the grid alignment will become uniform in the range [0∘,15∘], and the average grid alignment is 7.5∘.
+which is limited to the range $[0^{∘},15^{∘}]$, since $−30^{∘}\leq\alpha\leq30^{∘}$. There are usually several possible grid alignments which are (approximately) rotated versions of each other (i.e., different $\alpha$). Note that, due to the $k$-lattice discretization, different alignments can result in slightly different objective values. However, the numerical algorithms we used to solve the optimization problem reached many possible grid alignments with a positive probability (Figure 12C), since we started from a random initialization and converged to a local minimum.
 
-## Hierarchical networks and modules
+In the limit $L→∞$, the grid alignment will become uniform in the range $[0^{∘},15^{∘}]$, and the average grid alignment is $7.5^{∘}$.
 
-There are multiple routes to generalize non-negative PCA with multiple vectors. In this paper we chose to do so using a 'Gramm-Schmidt' like process, which can be written in the following way. First we define,(37)r1(x,y)=r(x−y)=c1 exp(−‖x−y‖22σ12)−c2 exp(−‖x−y‖22σ22)J0(x)=0,,
+#### Hierarchical networks and modules
 
-and then, recursively, this process recovers non-negative 'eigenvectors' by subtracting out the previous components, similarly to Sanger’s multiple PCA algorithm (Sanger, 1989), and enforcing the non-negativity constraint.(38)rn+1(x,y)=rn(x,y)-∫srn(x,z)Jn(z)Jn(y)dzJn(y)=arg maxJ(x)≥0,1S∫sJ2(x)dx=1∫sdx∫srn(x,y)J(y)dy2.
+There are multiple routes to generalize non-negative PCA with multiple vectors. In this paper we chose to do so using a 'Gramm-Schmidt' like process, which can be written in the following way. First we define,
+
+$$
+r_{1}(x,y)=r(x−y)=c_{1} exp(−\frac{‖x−y‖^{2}}{2\sigma_{1}^{2}})−c_{2} exp(−\frac{‖x−y‖^{2}}{2\sigma_{2}^{2}})J_{0}(x)=0,,
+$$
+
+and then, recursively, this process recovers non-negative 'eigenvectors' by subtracting out the previous components, similarly to Sanger’s multiple PCA algorithm (Sanger, 1989), and enforcing the non-negativity constraint.
+
+$$
+r_{n+1}(x,y)=r_{n}(x,y)-\int_{s}r_{n}(x,z)J_{n}(z)J_{n}(y)dzJ_{n}(y)=arg max_{J(x)\geq0,\frac{1}{S}\int_{s}J^{2}(x)dx=1}\int_{s}dx\int_{s}r_{n}(x,y)J(y)dy^{2}.
+$$
 
 To analyze this, we write the objectives we maximize in the Fourier domain, using Parseval’s Theorem.
 
-For n =1, we recover the old objective (Equation 24):(39)∑k∈S^r^(k)J^(k)2.
+For n =1, we recover the old objective (Equation 24):
 
-For n =2, we get(40)∑k∈S^|r^(k)(J^(k)−J^1(k)(∑q∈S^J^1*(q)J^(q)))|2,
+$$
+\sumk\inS^r^(k)J^(k)^{2}.
+$$
 
-where J^* is the complex conjugate of J^. This objective is similar to the original one, except that it penalizes J^(k) if its components are similar to those of J^1(k). As n increases the objective becomes more and more complicated, but as before, it contains terms which penalize J^n(k) if its components are similar to any of the previous solutions (i.e., J^m(k) for m<n). This form suggests that each new 'eigenvector' tends to occupy new points in the Fourier lattice (similarly to unconstrained PCA solutions).
+For n =2, we get
 
-For example, the numerical solution shown in Figure 16B is composed of the Fourier lattice components in group A, defined in Figure 17. A completely equivalent solution would be in group B (it is just a 90 degrees rotation of the first). The next 'eigenvectors' should then include other Fourier-lattice components outside groups A and B. Note that components with smaller k-radius cannot be arranged to be hexagonal (not even approximately), so they will have a low gridness score. In contrast, the next components with higher k-radius (e.g., group C) can form an approximately hexagonal shape together, and would appear as an additional grid cell 'module'. The grid spacing of this new module will decrease by 2, since the new k-radius is about 2 times larger than the k-radius of groups A and B.
+$$
+\sumk\inS^|r^(k)(J^(k)−J^_{1}(k)(\sumq\inS^J^_{1}^{*}(q)J^(q)))|^{2},
+$$
+
+where $J^^{*}$ is the complex conjugate of $J^$. This objective is similar to the original one, except that it penalizes $J^(k)$ if its components are similar to those of $J^_{1}(k)$. As n increases the objective becomes more and more complicated, but as before, it contains terms which penalize $J^_{n}(k)$ if its components are similar to any of the previous solutions (i.e., $J^_{m}(k)$ for $m<n$). This form suggests that each new 'eigenvector' tends to occupy new points in the Fourier lattice (similarly to unconstrained PCA solutions).
+
+For example, the numerical solution shown in Figure 16B is composed of the Fourier lattice components in group A, defined in Figure 17. A completely equivalent solution would be in group B (it is just a 90 degrees rotation of the first). The next 'eigenvectors' should then include other Fourier-lattice components outside groups A and B. Note that components with smaller $k$-radius cannot be arranged to be hexagonal (not even approximately), so they will have a low gridness score. In contrast, the next components with higher $k$-radius (e.g., group C) can form an approximately hexagonal shape together, and would appear as an additional grid cell 'module'. The grid spacing of this new module will decrease by $\sqrt{2}$, since the new $k$-radius is about $\sqrt{2}$ times larger than the $k$-radius of groups A and B.

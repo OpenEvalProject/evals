@@ -26,7 +26,7 @@
 
 ## Abstract
 
-In pursuit of therapeutics for human polyomaviruses, we identified a peptide derived from the BK polyomavirus (BKV) minor structural proteins VP2/3 that is a potent inhibitor of BKV infection with no observable cellular toxicity. The thirteen-residue peptide binds to major structural protein VP1 with single-digit nanomolar affinity. Alanine-scanning of the peptide identified three key residues, substitution of each of which results in ~1000 fold loss of binding affinity with a concomitant reduction in antiviral activity. Structural studies demonstrate specific binding of the peptide to the pore of pentameric VP1. Cell-based assays demonstrate nanomolar inhibition (EC 50 ) of BKV infection and suggest that the peptide acts early in the viral entry pathway. Homologous peptide exhibits similar binding to JC polyomavirus VP1 and inhibits infection with similar potency to BKV in a model cell line. Lastly, these studies validate targeting the VP1 pore as a novel strategy for the development of anti-polyomavirus agents.
+In pursuit of therapeutics for human polyomaviruses, we identified a peptide derived from the BK polyomavirus (BKV) minor structural proteins VP2/3 that is a potent inhibitor of BKV infection with no observable cellular toxicity. The thirteen-residue peptide binds to major structural protein VP1 with single-digit nanomolar affinity. Alanine-scanning of the peptide identified three key residues, substitution of each of which results in ~1000 fold loss of binding affinity with a concomitant reduction in antiviral activity. Structural studies demonstrate specific binding of the peptide to the pore of pentameric VP1. Cell-based assays demonstrate nanomolar inhibition (EC50) of BKV infection and suggest that the peptide acts early in the viral entry pathway. Homologous peptide exhibits similar binding to JC polyomavirus VP1 and inhibits infection with similar potency to BKV in a model cell line. Lastly, these studies validate targeting the VP1 pore as a novel strategy for the development of anti-polyomavirus agents.
 
 ## Introduction
 
@@ -40,35 +40,270 @@ In the current study, we report the discovery of a thirteen amino acid BKV VP2/3
 
 ## Results
 
-## VP2/3-derived peptide binds pentameric capsid protein VP1 with high affinity
+### VP2/3-derived peptide binds pentameric capsid protein VP1 with high affinity
 
 In order to better characterize the structural relationship between the BKV major structural protein VP1 and the minor capsid proteins VP2 and VP3, we focused on a stretch of amino acids near the carboxyl-terminus of VP2/3 previously referenced as ‘D1’ (Nakanishi et al., 2006). The region is largely invariant in related polyomaviruses JCV and simian virus 40 (SV40) (Figure 1A; Figure 1—figure supplement 1). We initially tested binding of a 22-mer peptide VP2281-302 (APGGANQRTAPQWMLPLLLGLY; D122) to purified BKV VP1 pentamers (VP12-362) by Biacore surface plasmon resonance (SPR) and measured high affinity binding to the pentamer (KD = 4.8 nM; Figure 1B,C; Table 1). The curve from a 1:1 interaction model overlays well with the SPR data (Figure 1C), consistent with a high quality, specific interaction despite the hydrophobic nature of this peptide. In addition to directly measuring binding affinity by SPR, we developed an AlphaScreen assay to detect binding of carboxy-terminus biotinylated D122 to VP1 and measure the half-maximal concentration at which the biotinylated peptide is displaced by unlabeled peptide (IC50) (Figure 1D, Table 1). The IC50 for unlabeled D122 is 11 ± 2.9 nM and this value is comparable to the SPR-determined KD. We additionally tested the homologous D122 sequence from JCV with its cognate VP1 pentamer, and observed an IC50 of 44 ± 6.4 nM (Figure 1D, Supplementary file 1). Noting that protein-protein interactions often involve ‘molecular hot spots’ where most of the binding energy is associated with a limited number of interactions (Van Roey et al., 2014), we split D122 into two fragments, VP2281-290 (APGGANQRTA) and VP2290-302 (APQWMLPLLLGLY, henceforth referred to as D1min), and tested each fragment for binding to VP1. While no binding was observed for VP2281-290 up to 10 μM (data not shown), we observed similar binding affinity for the 13-mer peptide D1min as was observed for D122 (VP2290-302; KD = 1.4 ± 0.49 nM, IC50 = 3.6 ± 0.57 nM) (Figure 1D, Table 1). Hereafter, references to amino acid positions in D1min will be based on their sequence position in VP2.
 
-## Alanine-substitutions in D1min peptide reveal key residues contributing to D1min-VP1 interaction
+![Figure 1.](https://cdn.elifesciences.org/articles/50722/elife-50722-fig1-v1.jpg)
+
+**Figure 1.:** (A) Multiple sequence alignment of VP2/3 D1 region and flanking sequence. BKV: BK polyomavirus; JCV: JC polyomavirus. (B) Sequence and index within BKV VP2 of peptides used in this study, highlighting alanine-scanning mutagenesis. Ac: acetyl group (C) Representative surface plasmon resonance (SPR) sensorgram of single-cycle kinetic experiment showing association of D1min with VP1 pentamer. Multiple (five) injections are shown, and dissociation of the peptide starts at peak response. Experimental data (red) and the 1:1 model of responses (black) are shown. (D) Results of AlphaScreen competitive binding assay. Displacement of carboxy-terminal biotinylated D122 peptide from either BKV or JCV VP1 was assayed using D122 (BKV and JCV) or D1min (BKV only), with IC50 concentration determined (mean ± SD, n = 3 for BKV VP1, n = 2 for JCV VP1). (E) SPR-measured VP1 binding affinity (KD) and AlphaScreen displacement assay results (IC50; mean ± SD, n = 3) for single-site alanine-substitutions in D1min. (F) AlphaScreen displacement assay IC50 values for D1min hexamer peptides (mean of n = 3). Color indicates the number of key residues (W293, L297, or L298) present in the hexamer.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50722/elife-50722-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Multiple sequence alignment of VP1 protein from BKV (P03088), JCV (P03089), SV40 (P03087), and murine polyomavirus (MPy; P03090). VP1 pore residues that are proximal to D1min peptide-binding region are highlighted. Dots indicate conserved sequence, relative to BKV. (B) Multiple sequence alignment of VP2 proteins (BKV: P03094, JCV: P03095, SV40: P03093, MPy: P03096). Sequence from which D1min is derived is highlighted. Alignment was performed using Clustal Omega (Madeira et al., 2019).
+
+**Table 1.**
+ Peptide IC50 and KD measurements.Values are mean ± SD where applicable (AlphaScreen: n = 3; SPR: n = 2). ND: Not determined.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Peptide Name</th>
+      <th>Sequence</th>
+      <th>AlphaScreen VP1 IC50 (nM)</th>
+      <th>SPR VP1 KD (nM)</th>
+      <th>Relative IC50 (vs D1min)</th>
+      <th>Relative KD (vs D1min)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D122</td>
+      <td>APGGANQRTAPQWMLPLLLGLY</td>
+      <td>11 ± 2.9</td>
+      <td>4.8</td>
+      <td>2.8</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>D1min</td>
+      <td>Ac-APQWMLPLLLGLY-NH2</td>
+      <td>3.6 ± 0.57</td>
+      <td>1.4 ± 0.49</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>D1min P291A</td>
+      <td>Ac-AAQWMLPLLLGLY-NH2</td>
+      <td>3.6 ± 0.16</td>
+      <td>3.6</td>
+      <td>1.0</td>
+      <td>2.9</td>
+    </tr>
+    <tr>
+      <td>D1min Q292A</td>
+      <td>Ac-APAWMLPLLLGLY-NH2</td>
+      <td>15 ± 1.2</td>
+      <td>18</td>
+      <td>3.8</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>D1min W293A</td>
+      <td>Ac-APQAMLPLLLGLY-NH2</td>
+      <td>3600 ± 380</td>
+      <td>920 ± 190</td>
+      <td>900</td>
+      <td>660</td>
+    </tr>
+    <tr>
+      <td>D1min M294A</td>
+      <td>Ac-APQWALPLLLGLY-NH2</td>
+      <td>220 ± 18</td>
+      <td>100</td>
+      <td>55</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <td>D1min L295A</td>
+      <td>Ac-APQWMAPLLLGLY-NH2</td>
+      <td>130 ± 34</td>
+      <td>110 ± 15</td>
+      <td>32</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>D1min P296A</td>
+      <td>Ac-APQWMLALLLGLY-NH2</td>
+      <td>27 ± 7.9</td>
+      <td>51 ± 39</td>
+      <td>6.8</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>D1min L297A</td>
+      <td>Ac-APQWMLPALLGLY-NH2</td>
+      <td>5200 ± 1100</td>
+      <td>1600 ± 610</td>
+      <td>1300</td>
+      <td>1200</td>
+    </tr>
+    <tr>
+      <td>D1min L298A</td>
+      <td>Ac-APQWMLPLALGLY-NH2</td>
+      <td>2000 ± 310</td>
+      <td>1000 ± 160</td>
+      <td>500</td>
+      <td>720</td>
+    </tr>
+    <tr>
+      <td>D1min L299A</td>
+      <td>Ac-APQWMLPLLAGLY-NH2</td>
+      <td>140 ± 24</td>
+      <td>97 ± 11</td>
+      <td>35</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>D1min G300A</td>
+      <td>Ac-APQWMLPLLLALY-NH2</td>
+      <td>8.5 ± 0.83</td>
+      <td>9.3</td>
+      <td>2.0</td>
+      <td>6.4</td>
+    </tr>
+    <tr>
+      <td>D1min L301A</td>
+      <td>Ac-APQWMLPLLLGAY-NH2</td>
+      <td>14 ± 1.6</td>
+      <td>11</td>
+      <td>3.5</td>
+      <td>7.9</td>
+    </tr>
+    <tr>
+      <td>D1min Y302A</td>
+      <td>Ac-APQWMLPLLLGLA-NH2</td>
+      <td>62 ± 6.5</td>
+      <td>70 ± 3.8</td>
+      <td>16</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>D1min HEX1</td>
+      <td>Ac-APQWML-NH2</td>
+      <td>140 ± 44</td>
+      <td>ND</td>
+      <td>35</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>D1min HEX2</td>
+      <td>Ac-PQWMLP-NH2</td>
+      <td>1100 ± 270</td>
+      <td>ND</td>
+      <td>280</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>D1min HEX3</td>
+      <td>Ac-QWMLPL-NH2</td>
+      <td>1800 ± 400</td>
+      <td>ND</td>
+      <td>450</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>D1min HEX4</td>
+      <td>Ac-WMLPLL-NH2</td>
+      <td>15000 ± 4500</td>
+      <td>ND</td>
+      <td>3800</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>D1min HEX5</td>
+      <td>Ac-MLPLLL-NH2</td>
+      <td>17000 ± 3500</td>
+      <td>ND</td>
+      <td>4200</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>D1min HEX6</td>
+      <td>Ac-LPLLLG-NH2</td>
+      <td>38000, &gt;40000, &gt;40000</td>
+      <td>ND</td>
+      <td>9600</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>D1min HEX7</td>
+      <td>Ac-PLLLGL-NH2</td>
+      <td>19000 ± 2500</td>
+      <td>ND</td>
+      <td>4700</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>D1min HEX8</td>
+      <td>Ac-LLLGLY-NH2</td>
+      <td>490 ± 120</td>
+      <td>ND</td>
+      <td>120</td>
+      <td>ND</td>
+    </tr>
+  </tbody>
+</table>
+
+### Alanine-substitutions in D1min peptide reveal key residues contributing to D1min-VP1 interaction
 
 To identify key residues involved in the interactions of D1min with BKV VP1, we performed alanine-scanning mutagenesis (Cunningham and Wells, 1989) on D1min, substituting one residue per peptide (Figure 1B), and analyzed the effect on binding to VP1 pentamers by Biacore SPR and the AlphaScreen competition assay (Figure 1E; Table 1). The SPR KD and biochemical assay IC50 results are comparable for the alanine-substituted peptides (Table 1). Both assays identify peptide residues W293, L297, and L298 as key determinants of high affinity binding, with each substitution causing ~600–1000 fold loss of affinity to VP1 (KD = 920 ± 190 nM, 1600 ± 610 nM, and 1000 ± 160 nM, respectively). Alanine-substitution of other residues (M294, L295, L299, Y302) results in 40–60 fold loss of affinity (KD), demonstrating that these may also contribute to binding affinity.
 
 To see if we could further reduce the size of the peptide required for high affinity binding, we evaluated hexamer peptides covering the length of D1min in the AlphaScreen displacement assay (Figure 1F; Table 1). All hexamer peptides were significantly less potent relative to D1min. Notably, peptide D1min HEX4 (293WMLPLL298) contains all three key determinant residues and yet has an IC50 that is greater than 1000-fold higher than that of full-length D1min peptide. Trimer peptides covering the length of D1min yielded similar results, showing greater than 1000-fold reductions in binding affinity to VP1 relative to the full-length D1min peptide (Supplementary file 2). We conclude that the key D1min residues W293, L297, and L298 contribute significantly to the interaction of D1min and VP1; however, additional peptide residues are required for the highest affinity binding.
 
-## Peptide D1min binds within the upper pore of VP1 pentamers
+### Peptide D1min binds within the upper pore of VP1 pentamers
 
 In order to determine the binding location of the D1min peptide to VP1 pentamers, protein-observed 2D-NMR spectroscopy was performed. 1H,13C-HMQC spectra of 2H,12C-BKV VP130-297 with 1H,13C methyl-labeled residues Ile- (I), Leu- (L), Val- (V) and Thr- (T) were recorded in the absence and presence of increasing amounts of wild-type or W293A D1min peptides, and ligand-induced chemical shift perturbations (CSPs) and line broadening were monitored. To enable mapping of binding locations we obtained peak assignments for select methyl groups through a combination of amino acid point mutations and a 4D-NOESY-HSQC based methyl walk (Proudfoot et al., 2016).
 
 The NMR peaks assigned to BKV VP1 residues T224, T226, V231 (pro-R and pro-S), and V234 (pro-R and pro-S) were greatly affected by the addition of the peptides (Figure 2A). These residues are in close proximity to each other, clustering in the upper pore of the VP1 pentamer (Figure 2B). Binding of peptides to the upper pore appears specific since the site can be saturated (no additional CSPs observed at higher peptide concentrations) and only certain VP1 residues show CSPs while the majority of signals remained unaffected. As the set of perturbed peaks and the directions of chemical shifts are the same for both the wild-type and the alanine-substituted peptide, it can safely be concluded that both ligands have the same binding pose. Interestingly, while the wild-type peptide induces strong line broadening of certain peaks at sub-stoichiometric ligand concentrations, an observation that can be attributed to slow exchange kinetics, the alanine-substituted peptide causes pure chemical shift changes, which are usually a sign of fast chemical exchange (Figure 2A, top right corner). These results are consistent with our SPR and biochemical assay data, which showed that the wild-type D1min peptide has a high affinity interaction with VP1 (low nanomolar KD) whereas the W293A peptide interacts with weaker affinity (KD >1 μM).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/50722/elife-50722-fig2-v1.jpg)
+
+**Figure 2.:** (A) 1H,13C-HMQC spectra showing peptide (12.5 µM) induced perturbations of tr-VP1 (125 µM; black) ILVT methyl signals. Left: the wild-type D1min peptide (magenta) causes CSPs and line broadening of peaks clustered in the upper pore of the target protein. The disappearance of peaks indicates slow exchange kinetics and thus, strong (usually sub-micromolar) binding (see inset in upper right corner). At sub-stoichiometric peptide concentrations no binding to a second site is observed as there are no changes of I45 (see inset in upper corner). Right: alanine-substituted W293A peptide (red) induces the same CSP pattern as the wild-type peptide, however, exchange kinetics are fast and no line broadening is observed. There is also no second site binding observed at low peptide concentrations. (B) VP1 residues highlighted in (A) overlaid on X-ray structure of VP1 pentamer, looking down into the pore (left) and a cutaway side-view of three VP1 monomers (right). Spheres highlight VP1 residues that exhibit CSPs upon peptide binding (T224, T226, V231, and V234). Residue T243 is lower in the pore (shown in gray) and does not exhibit perturbations upon peptide binding (PDB: 4MJ1; Neu et al., 2013). (C) Relative binding affinities of D122 peptide to wild-type VP1 protein or VP1 containing pore residue substitutions using AlphaScreen detection method. Values are normalized to wild-type VP1 (mean ± SD). (D) Overlay of ‘second-site’ VP1 residues (I45, T46, T118, T238, T243; blue) on cryo-EM model of BKV VP1 (gray) and VP2 (orange) (adapted from PDB 6ESB, Hurdiss et al., 2018).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50722/elife-50722-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) 1H,13C-HMQC spectra showing peptide (100 µM) induced perturbations of tr-VP1 (125 µM protein + 25 µM peptide; black) ILVT methyl signals. Left: the wild-type peptide (magenta) induces secondary CSPs (e.g. I45, see inset in upper corner), indicating micromolar binding to a second site. The affected residues are clustered in the lower pore. Right: in contrast to the wild-type D1min, the W293A alanine-substituted peptide (red) hardly induces secondary chemical shifts. This observation suggests that secondary binding is very weak (millimolar KD). (B) 1H,13C-HMQC spectra showing an inset of tr-VP1-I45V (100 µM; red) and wild-type tr-VP1 (100 µM; black) Ile methyl signals. The isoleucine signal at 0.84 ppm (1H)/12.80 ppm (13C) disappears when I45 gets mutated, making it possible to assign the residue. (C) 1H,13C-HMQC spectra showing peptide (200 µM) induced perturbations of tr-VP1 (125 µM protein + 25 µM peptide; black) ILVT methyl signals. Left: most of the VP1 peaks affected by the second site binding of the wild-type peptide (magenta) show severe line broadening at 200 µM ligand concentration (see inset in upper corner). This effect may be caused by specific or unspecific binding of multiple copies of the peptide to the lower pore. Right: the W293A alanine-substituted peptide (red) does not induce super-stoichiometric line broadening as its affinity for the secondary binding site is very low. (D–E) Highlighting primary binding site (green) and secondary binding site (yellow) VP1 residues that show peptide induced CSPs (PDB: 4MJ1; Neu et al., 2013).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50722/elife-50722-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Overlay of X-ray crystal structures from wild-type (magenta) or P232S (cyan) VP1 pentamer. (B) Overlay of X-ray crystal structures from wild-type (magenta) or V234S (bronze) VP1 pentamer.
+
 To validate the interaction of peptide D1min within the VP1 pore, we focused on three sets of residues proximal to the observed CSPs, P232, V234, and T224/T243, and tested D1min binding to VP1 proteins with substitutions at these residues using our AlphaScreen assay (Figure 2C). We found that non-polar to polar substitution of either P232 or V234 leads to a substantial decrease in peptide binding relative to wild-type VP1 (P232S: 1.3 ± 0.26%, V234S: 1.6 ± 0.32% of wild-type signal). In contrast, a substitution that conserved the hydrophobicity of the putative binding site increased observed peptide binding (V234I: 250 ± 26% of wild-type signal). Alanine-substitution of VP1 pore residues further down into the pore (T224A/T243A) impact binding to a lesser degree (34 ± 0.56% of wild-type signal). X-ray structures of VP1 proteins with these substitutions do not appear to have any major structural rearrangements (Figure 2—figure supplement 1A,B) and we observe normal pentamer formation of these VP1 variants by size-exclusion chromatography during purification (data not shown). Consistent with our observations, previous work on JCV five-fold symmetry VP1 pentamer pore residues showed substitution of multiple pore residues, including the homologous residue for BKV VP1 P232, did not affect either pentamer formation or thermal stability, with X-ray data showing structural differences from wild-type VP1 pentamers were largely limited to the pore itself (Nelson et al., 2015). These results are consistent with a specific interaction of peptide D1min within the upper pore of VP1 pentamers.
 
-## NMR identifies second peptide binding site at the base of VP1
+### NMR identifies second peptide binding site at the base of VP1
 
 At a wild-type D1min peptide concentration of 25 µM, well above the low nanomolar KD observed for the primary peptide binding site in the upper pore, we observed additional ligand induced CSPs and line broadening in the 2D NMR spectrum. The VP1 peaks that were affected upon addition of peptide and for which assignments were available are I45, T46, T118, T238, and T243 (Figure 2—figure supplement 1A–B). Without exception, these residues are located in the lower pore of the VP1 pentamer. Based on the first appearance of spectral changes at 25 µM D1min peptide for a titration starting at 6.25 µM (where no CSPs were observed), we estimate that the KD is greater than 250 µM. For peptide D1min W293A, only at a ligand concentration of 100 µM did a few very weak additional peak shifts became visible; hence, the KD value for this peptide is likely in the low single-digit millimolar range. At a wild-type peptide concentration of 50 µM and higher the above-mentioned peaks as well as signals from amino acids located in the upper pore show significant line broadening (Figure 3—figure supplement 1C). This observation can potentially be explained by binding of multiple ligand copies or small soluble peptide aggregates. However, as the peptide induces signal perturbations of only certain VP1 residues all of which are in close proximity, the interaction site likely represents a binding hotspot. Consistent with this result, the predicted location of the second interaction site is consistent with the modeled position of the D1 region of BKV VP2/3 in a recent cryo-EM structure (Figure 2E Hurdiss et al., 2018).
 
-## X-ray model details interaction between D1min peptide and VP1 pore
+### X-ray model details interaction between D1min peptide and VP1 pore
 
 To further characterize the binding mode of D1min within the VP1 pore, a structurally guided model was generated using 2.36 Å resolution X-ray data from 13-mer D1min peptide in complex with truncated VP130-297 pentamers (Supplementary file 3). The VP1 pentamer model is in good agreement with a previously published BKV VP1 pentamer structure (PDB: 4MJ1; Neu et al., 2013) (RMSD: 0.85 Å; Figure 3—figure supplement 1D). Electron density for the peptide is observed in the upper third of the VP1 pentamer pore, consistent with the NMR binding data (Figure 3A, Figure 3—figure supplement 1C). Refinement with a best-fit model of observed electron density maps yields a primary chain of density consistent with an α-helical peptide running N-terminus at the top of the pentamer pore to C-terminus lower in the pore (Figure 3B), although electron density maps indicate multiple binding poses of the helix within the pore. VP1 pore residues that show peptide-induced CSPs by 2D NMR (T226, V231, V234; Figure 2A–B) as well as residues important for peptide binding as determined by substitution (P232, V234; Figure 2C) form a hydrophobic pocket around key D1min residues L297 and L298 (Figure 3C). Interestingly, pocket structure appears to be largely unaltered by ligand binding (Figure 3—figure supplement 1D). In conclusion, our structurally-guided model of D1min in complex with VP1 agrees with NMR, alanine-scan, and pore residue substitution studies placing the peptide in the upper pentamer pore and highlighting the importance of D1min residues L297 and L298, as well as VP1 residues T226, V231, P232, and P234 in peptide binding.
 
-## D1min peptide is a potent anti-BKV inhibitor
+![Figure 3.](https://cdn.elifesciences.org/articles/50722/elife-50722-fig3-v1.jpg)
+
+**Figure 3.:** (A) Structurally-guided model of structure of D1min peptide bound to BKV VP1 pentamer. (Left) Top-down view of the model. (Right) Cutaway representation showing three VP1 molecules of the pentamer with D1min peptide bound. (B) D1min 2Fo-Fc electron density map, contoured at 1σ, with model of peptide residues 292QWLPLLLGLY302 built with guidance from the experimental maps. Start and end residues, as well as key binding residues W293, L297, and L298 are highlighted. (C) Close-up of hydrophobic pocket formed by VP1 pore residues T226, V231, P232, and V234. Blue, orange, and green residues represent three distinct VP1 molecules within the pentamer. D1min electron density for residues L297 and L298 (yellow), shown contoured to 1σ, correspond to regions of closest approach of the peptide to the pocket.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50722/elife-50722-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cutaway view of structurally guided model of D1min peptide bound to BKV VP1 showing 3 VP1 molecules within the pentamer with D1min peptide bound. 2Fo-Fc electron density map, contoured at 1σ, is shown in blue. Experimental electron density is observed to occupy the upper region of the pore and has a distinct helical appearance. (B) Alignment of structurally-guided model of ligand-bound (peptide not displayed) BKV pentamer (blue) to apo BKV pentamer (orange) (PDB: 4MJ1; Neu et al., 2013) (RMSD: 0.85 Å), with magnified view of pore residues T224, T226, V231, P232, and V234 (RMSD: 0.42 Å, using previous whole-pentamer alignment).
+
+### D1min peptide is a potent anti-BKV inhibitor
 
 After observing high affinity binding of the D1min peptide to the VP1 pentamer pore, we asked whether the peptide could inhibit BKV infection in a cell-based assay. Primary renal proximal tubule epithelial (RPTE) cells were pre-treated with a titration of peptide for 2 hr then challenged with infectious BKV (isolate MM), with indirect immunofluorescent staining for large T-Antigen (TAg) measured 48 hours post-infection (h.p.i) as a readout for productive delivery of the viral genome to the nucleus. We observed potent antiviral activity from D1min with a half-maximal effective concentration (EC50) of 30 ± 6.6 nM without observable cytotoxicity in the concentration range tested (Figure 4A,B). Importantly, single alanine-substituted peptides of D1min showed a loss of antiviral activity concordant with their loss of VP1 affinity in in vitro binding assays (W293A:>5000 nM, L297A:>5000 nM, Y302A: 280 ± 51 nM). These results appear to validate the pore as an antiviral target.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50722/elife-50722-fig4-v1.jpg)
+
+**Figure 4.:** (A) Dose-response curves for wild-type D1min peptide and three alanine-substituted variants (W293A, L297A, L298A) in single-round BKV infection assay in RPTE cells (mean ± SD, n = 3), and table of derived EC50 values. Productive delivery of the viral genome to the nucleus is quantified by fraction of RPTE cells expressing BKV TAg by indirect immunofluorescent staining 48 hr post-infection (h.p.i). (B) CellTiter-Glo luminescent cell viability assay to measure D1min cytotoxicity in RPTE cells after two days of treatment. Relative light units (RLUs) are normalized to DMSO treatment (mean ± SD, n = 2). (C) D1min EC50 values with 95% confidence intervals (CI) are shown for single-round infection assay of JCV and BKV in COS-7 cells, measuring fraction of VP1 expressing cells 72 h.p.i. (D) Dose-response curves for wild-type D1min peptide in low (0.3) versus high (5) BKV MOI, measuring fraction of TAg-positive cells 48 h.p.i. EC50 values with 95% confidence intervals (CI) are shown. (E) Coomassie-stained gel showing streptavidin purification of VP1 pentamers, BK VLPs, or infectious BKV virions using either D122 or biotinylated-D122 peptide. (F) BKV spreading infection assay with VP1 pore mutants, measuring TAg-positive cells 3, 6, and 9 days post-transfection of BKV genomic DNA. d.p.t.: days post-transfection (mean ± SD, n = 2). (G) Same as (F), with BKV VP2/3 mutants (mean ± SD, n = 3). While residue position is relative to VP2, VP2/3 indicates mutation is present in both proteins.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50722/elife-50722-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Coomassie-stained SDS-PAGE of streptavidin-based affinity purification of biotinylated D122 peptides, assaying for co-affinity purification of VP1 protein in Figure 4. Sequences for peptides used in this assay can be found in Supplementary file 2. VLP: virus-like particle.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/50722/elife-50722-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Immunoblot for VP1 protein expressed from transient transfection of constructs used in spreading infection assay for Figure 4E. (B) Immunoblot for VP2/3 protein expressed from transient transfection of constructs used in spreading infection assay for Figure 4F.
 
 As the VP1 pore region and VP2 D1 region demonstrate high sequence identity between BKV and the related human polyomavirus JCV (Figure 1—figure supplement 1), we tested D1min antiviral properties on JCV. COS-7 cells were subjected to synchronized infection by either BKV or JCV (isolate Mad-1) followed by treatment with a titration of D1min peptide, with indirect immunofluorescent staining for VP1 measured 72 h.p.i as a readout for productive delivery of the viral genome to the nucleus (Figure 4C). We observe similar EC50 values for both polyomaviruses (BKV: 220 nM, JCV: 350 nM), albeit roughly 10-fold higher than observed for BKV in the RPTE cell model. This may be due to potential differences in entry pathway between human RPTE and simian COS-7 cells as is observed with related CV-1 cells (Bennett et al., 2013), or higher viral titer required to infection COS-7 cells relative to RPTE cells.
 
@@ -76,23 +311,39 @@ We next asked if D1min treatment showed MOI-dependence, noting that if the virus
 
 A notable difference between infectious BKV virions and VP1 pentamers or virus-like particles (VLPs) containing only VP1 is the presence of minor structural proteins at the base of the VP1 pentamer pore (Hurdiss et al., 2016). Based on the structural studies presented in Figures 2 and 3, the proposed mechanism of antiviral action by D1min is through binding of the peptide to the VP1 pore. To confirm that D1min peptide can bind to infectious BKV virions containing the minor structural proteins VP2 and VP3, we performed an affinity purification of biotinylated D122 in the presence of VP1 moieties. Full-length VP1 pentamers, VLPs, or purified infectious BKV virions were incubated in 10-fold molar excess of either biotinylated or unlabeled D122, followed by affinity-purification of biotinylated peptide and assaying co-purification of VP1. VP1 pentamers, VLPs, and infectious particles co-purified with D122, demonstrating that the peptide can bind to infectious BKV virions (Figure 4E). Interestingly, only amino-terminal biotinylation was compatible with the assay; carboxy-terminal D122 was unable to co-purify VP1 pentamers or VLPs, even when tested with truncated VP1 pentamers (VP130-297) and extended peptides (Figure 4—figure supplement 1, Supplementary file 2). These data are consistent with the X-ray structurally-guided model placing the N-terminus of the peptide at the top of the VP1 pore. We conclude D1min peptide can bind to infectious BKV virions that contain minor structural proteins at the base of VP1 pores and importantly, that the in vitro biophysical and biochemical characterization of D1min peptide-VP1 pore binding can provide a model for understanding peptide-BKV interactions and D1min-associated antiviral activity.
 
-## VP1 pore single-point mutants result in loss of BKV infectivity
+### VP1 pore single-point mutants result in loss of BKV infectivity
 
 As the D1 region of VP2/3 contains the same amino acid sequence as D1min, we tested whether residues that mediate D1min binding to the VP1 pore are important for BKV infectivity. We performed site-directed mutagenesis of BKV VP1 in the context of the viral genome, introducing substitutions at two key peptide binding residues in the VP1 pore, P232 and V234, and performed a spreading infection assay. Circularized wild-type or mutant BKV genomes were transfected into RPTE cells and productive, spreading infection was monitored by indirect immunofluorescent staining of expressed TAg over a time course of 3, 6, and 9 days post-transfection (d.p.t.) (Figure 4F). We observe robust spreading infection for wild-type BKV by 9 d.p.t. In contrast, BKV was completely intolerant of all tested substitutions at P232, as was previously observed in the homologous residue P223 in JCV (Nelson et al., 2015), as well as substitution V234S. V234L did not appear to affect BKV infectivity, and V234I, which showed increased binding to biotinylated peptide in an AlphaScreen biochemical assay, exhibited an intermediate phenotype with incomplete inhibition of viral spread. Importantly, all mutant viruses expressed similar levels of VP1 to wild-type BKV (Figure 4—figure supplement 2A), dismissing interpretations that the observed phenotypes are due to differences in VP1 expression. While we cannot determine at what stage of the viral lifecycle the pore mutations are affecting viral infectivity (e.g. during assembly versus during entry), previous work with JCV pore mutants demonstrated no effect on JCV PSV assembly or VP2 association with VP1 (Nelson et al., 2015). Next, we performed site-directed mutagenesis on BKV VP2/3 in the context of the viral genome and repeated the spreading infection assay (Figure 4G). While wild-type and mutant BKV all expressed TAg at similar levels 3 d.p.t. after transfection, only wild-type BKV exhibited a spreading infection in culture. BKV was completely intolerant of VP2 or VP3 deletion, and of all tested alanine-substitutions within the D1 region of VP2/3 — no detectable infectious virus produced from these mutant genomes. This is despite observing no significant impact on VP2/3 expression levels in mutants VP2 W293A and VP2 L297A (Figure 4—figure supplement 2B). We conclude that residues involved in the VP1-D1min interaction observed in vitro are required for productive BKV infection.
 
-## D1min peptide requires interaction with BKV for activity, but does not block viral endocytosis
+### D1min peptide requires interaction with BKV for activity, but does not block viral endocytosis
 
 Past studies have utilized broadly acting inhibitors of cellular activities to interrogate the polyomavirus entry pathway (Goodwin et al., 2011; Moriyama and Sorokin, 2008; Ravindran et al., 2017; Schelhaas et al., 2007). Such studies have been coupled with time-of-addition assays, in which treatment with inhibitors is initiated at different times during infection to correlate an inhibitor mechanism of action with a particular stage of BKV entry, including endocytosis (Eash et al., 2004), endosome maturation and vesicular trafficking (Eash and Atwood, 2005; Jiang et al., 2009), and ERAD/proteasome activity (Bennett et al., 2013). Similarly, we conducted a time-of-addition assay to better characterize at which stage of the BKV entry pathway D1min antiviral activity occurs. RPTE cells were subjected to a synchronized infection at low multiplicity of infection (MOI) and inhibitor was added at varying times post-infection, with productive delivery of the BKV genome to the nucleus assessed by indirect immunofluorescent staining of TAg expression at 48 h.p.i. (Figure 5A). In addition to treatment with D1min, we treated infected cells with an anti-BKV neutralizing monoclonal antibody P8D11 (Abend et al., 2017) and cell-penetrating TAT-fused modifications (Vivès et al., 1997) of D1min which exhibit similar antiviral activity and biochemical potency to untagged D1min peptide (Supplementary file 2 and Supplementary file 4). We observe a nearly complete loss of D1min antiviral activity by 4 h.p.i. (Figure 5B), consistent with the timing of viral endocytosis (Eash et al., 2004). The BKV neutralizing antibody P8D11 parallels the time-dependent loss of activity of D1min. Cell-penetrating variants of D1min show delayed loss of activity compared to the unmodified peptide, with only an approximate 50% loss of activity at 4 h.p.i. and a gradual tapering off of activity in subsequent timepoints. For comparison, previous time-of-addition work using Brefeldin A and nocodazole, treatments which affect viral trafficking to the ER, showed efficacy against BKV until 10–12 h.p.i (Jiang et al., 2009).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/50722/elife-50722-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic of time-of-addition assay. (B) Time-of-addition assay with D1min, cell-penetrating peptides TAT-D1min and D1min-TAT, and anti-BKV neutralizing antibody P8D11. BKV infected cells were treated with inhibitors at 10-fold over measured EC50 concentrations. Productive delivery of the viral genome to the nucleus is measured by the fraction of RPTE cells expressing BKV TAg by indirect immunofluorescent staining 48 hr post-infection (h.p.i), relative to DMSO-treated samples (mean ± SD, n = 4). (C) Virus cell binding inhibitor assay. BKV was treated with indicated inhibitor at indicated concentrations for 1 hr on ice, adsorbed to cells for 1 hr at 4°C, unbound virus washed away, and remaining cell-associated virus measured by indirect immunofluorescent staining of VP1 (mean ± SD, n = 3). (D) ER-to-cytosol retrotranslocation assay. RPTE cells subjected to a synchronized BKV infection (high MOI), cells were harvested 24 h.p.i, and lysates were fractionated into a supernatant (cytoplasmic) and pellet fraction. Fractions were then analyzed by SDS-PAGE, and VP1 protein and cellular compartment markers were detected by immunoblotting. (E) Representative microscopy images of VP2/3 exposure assay. Minor capsid proteins were detected using a polyclonal antibody able to recognize both VP2 and VP3. Scale bar: 20 μm. (F) Quantification of images exemplified in (E), measuring fraction of VP1 stain co-localizing with VP2/3 stain, averaged per well. Rotated data indicate calculated co-localization between VP1 and VP2/3 stains after rotating VP2/3 images 90° to assess rate of random association between the two (mean ± SD, n = 4). (G) Quantification of VP1 foci in images exemplified in (E), averaged per well (mean ± SD, n = 4 for infected samples, n = 2 for uninfected samples). (H) Quantification of VP2/3 foci in images exemplified in (E), averaged per well (mean ± SD, n = 4 for infected samples, n = 2 for uninfected samples).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50722/elife-50722-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) CT values for RT-qPCR assay measuring induction of GAPDH, CXCL10, IFNA2, IFNB1, MX1, OAS1, and STAT1 in RPTE cells after 20 hr of treatment with DMSO, 5 μM of D1min WT or L297A, or 1000 U/mL IFN-β. A threshold of 0.1 was applied to calculate CT values from samples run in triplicate. (B) Fold-change in expression of assayed genes in RPTE cells. Gene expression relative fold-change was calculated using ΔΔCT method normalized to GAPDH expression and relative to DMSO treatment.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/50722/elife-50722-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Representative microscopy images of peptide-cell binding assay. RPTE cells were treated for 1 hr at 37°C with 1 μM N-terminal biotinylated D122 peptide and/or 10 nM BK VLP. Unlabeled peptide (D1min WT and L297A) were added in 5-fold excess of biotinylated D122 to control for non-specific peptide binding. Scale bar: 25 μm. (B) Quantification of total biotin stain intensity (AlexaFluor 488) per treatment (mean ± SD, n = 2). (C) Same as (B), quantifying total VP1 (VLP) stain intensity (AlexaFluor 647) per treatment (mean ± SD, n = 2). (D) Quantification of cell nuclei per treatment (mean ± SD, n = 2).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/50722/elife-50722-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Dose-response curves for D1min WT peptide pre-treatment of RPTE cells (yellow) or BKV (blue) for 2 hr prior to infection. Productive trafficking of viral genome to the host cell nucleus is measured by % T-antigen expressing cells 48 h.p.i., relative to DMSO treatment (mean ± SD, n = 4). Calculated EC50 values and 95% confidence intervals (CI) are shown.
 
 Our extensive biochemical and biophysical characterization of the D1min peptide showing specific, high-affinity binding to the five-fold symmetry VP1 pentamer pore and the observed relationship between VP1 binding affinity potency and antiviral efficacy in alanine-substitution peptides implicates an antiviral MoA involving direct binding to BK virions. However, an interesting alternative model exists wherein D1min directly interacts with a putative host-cell receptor to induce an antiviral signaling pathway resulting in the observed antiviral activity associated with peptide treatment. To exclude this possibility, we first tested whether or not treatment of RPTE cells with D1min peptide induced expression of known antiviral genes, comparing induction to treatment with interferon beta (IFN-β) (Figure 5—figure supplement 1). While we observe robust expression of all genes tested with 20 hr of IFN-β treatment (except for IFNA2, which showed modest increase in expression after IFN-β treatment), we fail to observe gene induction with D1min peptide treatment. Next, we tested whether peptide can bind to the surface of RPTE cells, a requirement for interacting with a host-cell receptor. We assessed peptide-cell binding using N-terminal biotinylated D122 peptide, assessing peptide binding to the cell surface by immunofluorescent microscopy and using the addition of BK VLPs as a positive control for recruiting peptide to the cell surface (Figure 5—figure supplement 1). We observe background biotin staining when cells were treated only with biotinylated D122 peptide and observe a large increase in biotin staining intensity with the addition of BK VLP, with the two stains overlapping to a high degree. Importantly, the increase in biotin stain is abrogated upon addition of unlabeled D1min WT peptide in excess, demonstrating the recruitment of peptide to the cell surface by BK VLPs is specific; the same abrogation is not observed when using unlabeled D1min L297A peptide. We conclude that there is no evidence to support a model of D1min directly acting on host cells, and that our data is consistent with a peptide antiviral mechanism requiring direct interaction with BKV virions.
 
 After observing loss of D1min activity rapidly after initiating BKV infection in our time-of-addition study, we next asked whether D1min acts as a cell-binding antagonist by performing a cell binding assay. Briefly, RPTE cells were incubated with BKV that had been pre-treated with D1min or P8D11 for 1 hr at 4°C to block endocytosis. Cells were rinsed, immediately fixed, and we performed indirect immunofluorescent staining for cell-associated VP1 puncta as a readout for cell-bound virions (Figure 5C). We observed no effect on the number of cell-associated VP1 puncta in cells treated with D1min up to 5 μM (>100 fold over observed EC50). In contrast, we observe loss of cell-associated VP1 puncta in the presence of the neutralizing antibody P8D11 treatment starting at concentrations >0.43 nM (>62 ng/mL), roughly the observed EC50 concentration. In addition, we tested whether pre-treatment of the virus, as performed in this assay, has any impact on antiviral efficacy of D1min peptide and observed no difference in EC50 between pre-treatment of BKV versus pre-treatment of RPTE cells with D1min peptide (Figure 5—figure supplement 3). We conclude that D1min does not block binding of BKV to cells and the observations from the time-of-addition experiment are due to the inability of the peptide to permeate the cell membrane rather than the peptide inhibiting BKV adsorption. This model is consistent with the delayed loss of antiviral activity observed for cell-penetrating variants of D1min. Thus co-entry with the infecting virion, consistent with direct binding to the five-fold symmetry VP1 pentamer pore, is required for D1min entry into cells and subsequent antiviral activity.
 
-## D1min activity occurs prior to BKV ER-to-cytosol retrotranslocation
+### D1min activity occurs prior to BKV ER-to-cytosol retrotranslocation
 
 Next, we examined whether D1min treatment affects the ER-to-cytosol retrotranslocation of BKV, a critical entry step and distinguishing feature of polyomaviruses (Dupzyk and Tsai, 2016). This transition can be assayed by fractionation of infected host cells and testing for the presence of VP1 protein in the cytosolic fraction (Bennett et al., 2013; Inoue and Tsai, 2011). RPTE cells were subjected to a synchronized BKV infection at high MOI followed by treatment of D1min peptide (wild-type and L297A) at 10-fold over EC50 concentration. BKV VLPs were included as a negative control as they are unable to cross from the ER lumen into the cytosol (Geiger et al., 2011). At 24 h.p.i, cells were harvested, partially permeabilized with digitonin, fractionated between supernatant (cytosol) and insoluble pellet (e.g. ER, nucleus), and subjected to reducing SDS-PAGE followed by immunoblotting to detect the presence of VP1 in each fraction (Figure 5D). We only observe the presence of VP1 protein in the cytosolic fraction for untreated (DMSO) or D1min L297A-treated BKV samples. Samples treated with wild-type D1min or lacking the minor structural proteins VP2/3 (BK VLP) have no detectable VP1 protein in the cytosolic fraction, indicating the virus is unable to proceed through this step of the viral lifecycle. In contrast, we observe the presence of VP1 in the pellet fraction for all samples with BK VLP or BKV, indicating the virus (or VLP) has undergone endocytosis under all treatments. We conclude that D1min peptide antiviral activity against BKV occurs after endocytosis, but prior to retrotranslocation of the virus from the host cell ER to the cytosol.
 
-## D1min peptide inhibits exposure of minor structural proteins during capsid disassembly
+### D1min peptide inhibits exposure of minor structural proteins during capsid disassembly
 
 During polyomavirus entry, inter-pentamer disulfide bonds are oxidized by host enzymes resulting in dissociation of pentavalent VP1 pentamers from the capsid (Kuksin and Norkin, 2012; Schelhaas et al., 2007), exposing minor structural proteins VP2/3 to immunostaining (Norkin et al., 2002). Notably, inhibition of VP2/3 exposure is indicative of improper trafficking or disassembly of the virus (Bennett et al., 2013). We asked if D1min affected this step of the BKV lifecycle. RPTE cells were subjected to a synchronized BKV infection at high MOI followed by treatment of D1min (wild-type and L297A) at 10-fold over EC50 concentration. At 24 h.p.i., cells were fixed and stained by indirect immunofluorescence against VP1 and VP2/3 (Figure 5E). To assess the ratio of infectious particles to total particles in the cells, we calculated the fraction of virion particles (VP1-stained puncta) that co-localized with VP2/3 stain (Figure 5F). We observe a pronounced loss of VP1 co-localized with VP2/3 in wild-type D1min treated cells as compared to our untreated control. In contrast, no change in co-localization between VP1 and VP2/3 is observed for treatment with the loss-of-function peptide D1min L297A. Consistent with this result, overall VP2/3 staining was reduced by treatment with D1min peptide only, whereas VP1 staining was unchanged across all treatments (Figure 5G–H). We conclude that treatment with D1min peptide results in virions that are unable to proceed through proper capsid disassembly that would result in the essential exposure of minor structural protein epitopes.
 
@@ -122,89 +373,161 @@ In conclusion, to identify potential therapeutics for BK and JC polyomaviruses
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 Primary renal proximal tubule epithelial (RPTE) cells were purchased from ATCC (PCS-400–010) and cultured in RenaLife Basal Medium with supplements (Lifeline Cell Technology LL-0025) as previously described (Abend et al., 2007). COS-7 cells were purchased from ATCC (CRL-1651) and cultured in DMEM medium (Corning Cellgro 10–017-CV) supplemented with 5% fetal bovine serum (FBS) (Seradigm). HEK-293 cells were purchased from ATCC (CRL-1573) and cultured in DMEM medium (Corning Cellgro 10–017-CV) supplemented with 10% FBS (Seradigm). Cells were cultured at 37°C with 5% CO2.
 
-## Virus stock generation
+### Virus stock generation
 
 BKV stocks were generated by transfection and infection of cells as previously described (Abend et al., 2007). Briefly, BKV ST1 MM viral genome was excised from pBR322 plasmid (ATCC 45026) using BamHI (NEB), cleaned up using QIAquick PCR Purification Kit (Qiagen), and re-circularized using T4 DNA ligase (NEB) overnight at 16°C. The re-ligated viral genomes were extracted using phenol:chloroform:isoamyl alcohol (25:24:1,v/v) (Sigma) and aqueous phase was separated using Phase Lock Gel Heavy tube (5Prime), followed by ethanol precipitation and resuspension of viral genomes in Buffer EB (10 mM Tris-HCl, pH 8.5, Qiagen). HEK-293 cells were transfected with 2–4 μg of viral genome using Lipofectamine 2000 (Invitrogen) and Opti-MEM (Gibco) according to manufacturer’s protocol, and cells were cultured for 10–14 days until cytopathic effects (CPE) were observed. Cells were freeze-thawed three times and supernatant cleared by centrifugation at 1600 rpm for 15 min. Low-titer virus from resulting supernatant was used to infect either RPTE or HEK-293 cells, and cells were cultured for 12–14 days (RPTE cells) or 21–28 days (HEK-293 cells) until CPE was observed. Cells were then scrapped, freeze-thawed three times, and purified as described below.
 
 JCV stocks were prepared similarly. The genome of JCV genotype Ia isolate Mad-1 (GenBank Accession J02227) cloned into the pBR322 plasmid at the EcoRI restriction site (resulting construct: pM1TC) was a generous gift from Walter Atwood (Brown University). JCV stocks were produced by transfection and infection of cells similar to what has been previously described (Hara et al., 1998). Briefly, the viral genome was first extracted from the plasmid backbone by digestion with EcoRI (NEB) and re-circularized using T4 DNA ligase. The resulting viral genomes were then purified using the QIAquick PCR Purification Kit (Qiagen) to prepare for transfection into cells. COS-7 cells, a cell line supportive of JCV replication (Hara et al., 1998), were seeded 1 × 106 cells per T75 flask and transfected with 2–4 µg of viral genomes using Lipofectamine 2000 (Invitrogen) and Opti-MEM (Gibco) according to manufacturer’s protocol. Transfected cells were incubated at 37°C with 5% CO2 for 4 hr, then transfection medium was replaced with infection medium (DMEM supplemented with 2% FBS and 1X Pen/Strep). Cells were cultured at 37°C with 5% CO2 for 6–10 weeks, until (CPE) became evident. During this time, 2–3 mL fresh infection medium was added every 3–4 days and cells were split by 1:2 to 1:3 dilution factors once a week to maintain cell health and prevent overcrowding. Upon observation of significant CPE, cells were collected by scraping, combined with culture media, subjected to three freeze-thaw cycles to release intracellular virus. These resulting viral stocks were titrated and stored at −80°C.
 
-## Virus purification
+### Virus purification
 
 Purified BKV was prepared as previously described (Jiang et al., 2009). Briefly, crude lysate containing high-titer BKV was cleared by centrifugation at 3200 rpm for 30 min at 4°C, and supernatant (S1) was separated from the resulting pellet. The pellet (P1) was resuspended in buffer A (10 mM HEPES, pH 7.9, 1 mM CaCl2, 1 mM MgCl2, 5 mM KCl). The resuspended pellet pH was lowered to 6.0 with 0.5 M HEPES (pH 5.4), and incubated with neuraminidase (1 U/mL; Sigma) for 1 hr at 37°C. Pellet buffer pH was then raised pH 7.4 with 0.5 M HEPES (pH 8), and cleared by centrifugation at 16,000 x g for 5 min at 4°C. The resulting supernatant (S2) was pooled with the initial (S1), and the pellet (P2) was resuspended in buffer A containing 0.1% deoxycholate (Sigma), incubated for 15 min at room temperature, cleared by centrifugation at 16,000 x g for 5 min at 4°C, and the resulting supernatant (S3) was pooled with the other supernatant fractions. Pooled supernatants were placed over a 4 mL 20% (w/v) sucrose solution and centrifuged at 83,000 x g for 2 hr at 4°C in a SW32Ti rotor (Beckman). The resulting pellet was resupended in 2 mL buffer A, and placed over a CsCl gradient from 1.2 to 1.4 g/cm3 in buffer A generated using a J17 gradient former (Jule, Inc), and centrifuged at 35,000 rpm for 16 hr at 4°C in an SW41 rotor (Beckman). The BKV band formed in the gradient was collected using an 18-guage needle, and dialyzed in a Slide-A-Lyzer Dialysis Cassette, 10K MWCO (ThermoFisher Scientific) over 2 days in 2L buffer A at 4°C, with buffer exchanged once during dialysis. BKV was then aliquoted and stored at −80°C.
 
-## Antibodies and reagents
+### Antibodies and reagents
 
 The following primary antibodies were used in this study: monoclonal mouse anti-SV40 T-antigen (PAb416, EMD Millipore;) at 1:200 for immunofluorescent staining (IF), monoclonal mouse anti-BKV VP1 antibody (in-house generated) at 1:500 for IF, polyclonal rabbit anti-SV40 VP1 (Abcam) at 1:500 for IF and 1:1000 for immunoblotting (IB), polyclonal rabbit anti-SV40 VP2/3 (Abcam) at 1:1000 for IF and 1:1000 for IB, polyclonal rabbit anti-BiP (Abcam) at 1:1000 for IB, monoclonal mouse anti-HSP90 (Abcam) at 1:1000 for IB, and polyclonal rabbit anti-biotin (Abcam) at 1:750 for IF. The following secondary antibodies were used in this study: in IF applications, goat anti-mouse IgG conjugated to either Alexa Fluor 488, 594, or 647 (ThermoFisher Scientific), goat anti-rabbit IgG conjugated to either Alexa Fluor 488 or 594 (ThermoFisher Scientific); in IB applications, goat anti-mouse IgG conjugated to IRDye 680RD (Li-COR), goat anti-rabbit IgG conjugated to IRDye 800CW (Li-COR). The human anti-BKV VP1 IgG1 antibody P8D11 was produced by the Novartis Institutes for BioMedical Research Biologics Center. D1min, D1min W293A, D1min L297A, D1min Y302A, and biotin-peptide probe for the biochemical assay were synthesized and HPLC-purified by the Tufts University Core Facility with purity ≥90%. TAT-fused D1min peptides were synthesized by CPC Scientific. All other peptides were synthesized by the Sigma Chemical Company, with purity determined by LCMS to be 35–74%.
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 For T-antigen staining, cells were fixed with 4% paraformaldehyde (w/v) in PBS for 15 min, then incubated with primary antibody in 0.2% gelatin, 0.1% Triton X-100 in PBS for 1 hr, followed by incubated with secondary antibody at 1:3000 and 4′,6-diamidino-2-phenylindole (DAPI, Calbiochem) contrast stain at 1.67 μg/mL in 0.2% gelatin in PBS for 1 hr. For VP1 co-localization and cell-binding assays, cells were fixed with 4% paraformaldehyde (w/v) in PBS for 15 min then permeabilized with 0.1% Triton X-100 in PBS for 10 min. Cells were then blocked with 2% goat serum (Invitrogen) for 30 min, then incubated with primary antibodies for 1 hr, and secondary antibodies for 1 hr, followed by a 10 min incubation with DAPI contrast stain at 1.67 μg/mL (Calbiochem). For VP2/3 staining, cells were fixed in 100% methanol for 15 min at −20°C then blocked in 3% nonfat milk (Bio-Rad), 0.1% Tween-20 (Bio-Rad) in PBS for 30 min. Cells were then incubated with anti-VP1 and anti-VP2/3 antibodies for 1 hr, and secondary antibodies for 1 hr, followed by a 10 min incubation with DAPI contrast stain at 1.67 μg/mL.
 
-## Infections
+### Infections
 
 Viral titers were measured by fluorescent focus assay, as previously described (Jiang et al., 2009). For 96-well plate format assays, RPTE cells were seeded 12,000 per well. For ER-to-cytosol retrotranslocation assays, RPTE cells were seeded in 6-well plates at 380,000 cells per well. For non-synchronized infections of RPTE cells, virus was diluted in RenaLife medium and added to cells followed by incubation at 37°C for the desired time. For synchronized infections, cells were pre-chilled to 4°C for 15 min. Purified virus was diluted into cold RenaLife medium and incubated with cells for 1 hr at 4°C. Cells were rinsed once with cold RenaLife medium, followed by addition of warm medium and incubation at 37°C for the desired time. For COS-7 cell assays, cells were seeded 5,000 per well in a 96-well plate format. COS-7 cells were infected using a synchronized infection protocol as described above, with the following modifications: JCV or BKV were diluted into low-serum medium (DMEM supplemented with 2% FBS), and cells were rinsed with cold low-serum medium and cultured in low-serum medium at 37°C for the desired time.
 
 Spreading infection assays were performed as follows. Re-circularized BKV genomes were prepared as described. RPTE cells were reverse-transfected with 100 ng viral genome DNA using Lipofectamine 3000 (Invitrogen) at a 1.5:1 ratio of L3000 to DNA, and Opti-MEM (Gibco) in a 96 well-plate format. Medium was exchanged the following day, and plates were incubated at 37°C for the desired time.
 
-## Preparation of BKV mutants
+### Preparation of BKV mutants
 
 Mutant BKV genomes were generated by PCR-based site-directed mutagenesis using the primers listed below.
 
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Forward primer (5′-to-3′)</th>
+      <th>Reverse primer (5′-to-3′)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VP1 P232S</td>
+      <td>caggaggggaaaatgttTCCccagtacttcat</td>
+      <td>cacatgaagtactggGGAaacattttcccctcctg</td>
+    </tr>
+    <tr>
+      <td>VP1 P232L</td>
+      <td>caggaggggaaaatgttCTCCccagtacttcat</td>
+      <td>cacatgaagtactggGAGaacattttcccctcctg</td>
+    </tr>
+    <tr>
+      <td>VP1 P232I</td>
+      <td>caggaggggaaaatgttATCccagtacttcat</td>
+      <td>cacatgaagtactggGATaacattttcccctcctg</td>
+    </tr>
+    <tr>
+      <td>VP1 V234S</td>
+      <td>gaaaatgttcccccaTCActtcatgtgaccaac</td>
+      <td>gtgttggtcacatgaagTGAtgggggaacatt</td>
+    </tr>
+    <tr>
+      <td>VP1 V234L</td>
+      <td>gaaaatgttcccccaTTActtcatgtgaccaac</td>
+      <td>gtgttggtcacatgaagTAAtgggggaacatt</td>
+    </tr>
+    <tr>
+      <td>VP1 V234I</td>
+      <td>gaaaatgttcccccaATActtcatgtgaccaac</td>
+      <td>gtgttggtcacatgaagTATtgggggaacatt</td>
+    </tr>
+    <tr>
+      <td>ΔVP2</td>
+      <td>gtatttccaggttcatAggtgctgctctagcacttttgggggac</td>
+      <td>gagcagcaccTatgaacctggaaatacaaaaaaaaagggattac</td>
+    </tr>
+    <tr>
+      <td>ΔVP3</td>
+      <td>gcaatcaggcatAgctttggaattgtttaacccagatgagtac</td>
+      <td>ccaaagcTatgcctgattgctgatagaggcctacagtggaaac</td>
+    </tr>
+    <tr>
+      <td>VP2 P291A</td>
+      <td>caaagaactgctGctcaatggatgttgcctttacttctaggcc</td>
+      <td>catccattgagCagcagttctttgattagcacctcctgg</td>
+    </tr>
+    <tr>
+      <td>VP2 W293A</td>
+      <td>ctgctcctcaaGCgatgttgcctttacttctaggcctgtac</td>
+      <td>ggcaacatcGCttgaggagcagttctttgattagcacctcc</td>
+    </tr>
+    <tr>
+      <td>VP2 L297A</td>
+      <td>gatgttgcctGCacttctaggcctgtacgggactgtaacac</td>
+      <td>caggcctagaagtGCaggcaacatccattgaggagcagttc</td>
+    </tr>
+    <tr>
+      <td>VP2 Y302A</td>
+      <td>ctaggcctgGCcgggactgtaacacctgctcttgaagcatg</td>
+      <td>gttacagtcccgGCcaggcctagaagtaaaggcaacatccattg</td>
+    </tr>
+  </tbody>
+</table>
+
 After PCR, reactions were treated with DpnI (NEB) to remove template DNA, and PCR products were used to transform XL10-Gold (VP1 mutants, Agilent) or 10-beta cells (VP2 mutants, NEB). Resultant colonies were sequenced and analyzed for desired mutation, and viral genomes were prepared as described. Point mutations lead to amino acid substitutions in both VP2 and VP3. Deletion mutants were obtained by point mutation of the start codon. While ΔVP2 did not affect VP3 sequence, ΔVP3 resulted in a M120I substitution in VP2. BKV ΔVP2ΔVP3 genome was generated by successive rounds of site-directed mutagenesis with ΔVP2 and ΔVP3 primer sets.
 
-## Inhibitor treatments
+### Inhibitor treatments
 
 Dose-response curves were determined using 3-fold, 10-point titrations of inhibitor. For peptide EC50 determination, cells were treated with inhibitors for two hours prior to infection. For synchronized infection treatments, inhibitors were added immediately following synchronization; EC50 concentration for P8D11 was determined using the synchronized treatment protocol. CC50 values were determined using a CellTiter-Glo luminescent cell viability assay (Promega) after two days of treatment, with luminescence detected on a PHERAstar FS (BMG Labtech).
 
-## Peptide-virus co-purification assay
+### Peptide-virus co-purification assay
 
 54 nM peptide was incubated with 75 µg/mL (370 nM) recombinant full-length VP1 pentamers, or molar equivalent of VP1 pentamers of BK VLP or purified infectious BKV (as assessed by SDS-PAGE and comparing VP1 abundance by Coomassie stain) in 336 μl PBS buffer containing 1% DMSO and 0.01% Tween-20 for 1 hr at room temperature. 300 μl of mix was added to a fresh tube, and 20 μl of Dynabeads M-280 Streptavidin (Invitrogen) were added. Samples were rotated for 1 hr at room temperature, then rinsed three times with 1 mL wash buffer (PBS, 1% DMSO, 0.01% Tween-20), using a DynaMag-2 Magnet (Invitrogen) to separate beads from solution. After washes, beads were incubated in 20 μl elution buffer (PBS, 0.1% SDS) and denatured at 95°C for 5 min. Eluate was removed from beads, and input and eluate samples were mixed with 4X LDS sample buffer with reducing agent (Invitrogen), heated at 70°C for 10 min, then samples were analyzed by SDS-PAGE and visualized using InstantBlue Coomassie staining reagent (Expedeon).
 
-## BKV cell-binding assay
+### BKV cell-binding assay
 
 Purified infectious BKV was incubated with titrated concentrations of D1min peptide or P8D11 antibody for 1 hr at 4°C in RenaLife medium. RPTE cells seeded in 96-well plate format were cooled for 15 min at 4°C, and medium containing virus and inhibitor mix was added to cells and incubated for 1 hr at 4°C. Cells were rinsed with cold RenaLife medium, and proceeded to fixation and staining as described.
 
-## Time-of-addition assay
+### Time-of-addition assay
 
 RPTE cells seeded in 96-well plate format were subjected to a synchronized infection at low MOI (MOI = 0.3). Timepoint 0 h.p.i. samples were treated with inhibitor compounds immediately after synchronized infection, others added at the timepoint indicated. Inhibitors were used at the following concentrations: D1min, D1min-TAT, TAT-D1min: 0.8 μM; P8D11: 0.014 μM (2 μg/mL). Plates were incubated at 37°C and fixed at 48 h.p.i.
 
-## Fractionation assay
+### Fractionation assay
 
 RPTE cells were cultured in 2 wells in 6-well format per treatment. Cells were subjected to synchronized infection at high MOI (MOI = 10), and treated with 5 μM peptide immediately after synchronized infection. Cells were harvested 24 h.p.i. with 0.05% trypsin, 0.02% EDTA (Lifeline Cell Technology) for 2 min until cells were detached. Trypsin was inhibited with an equal volume of Trypsin Neutralizing Solution (Lifeline Cell Technology), and wells rinsed with phosphate-buffered saline (PBS). Cells were pelleted at 90 x g for 5 min at 4°C, and rinsed with 1 mL cold PBS buffer. Cell pellets were then lysed in 50 μl HNF buffer (150 mM HEPES pH 7.2, 50 mM NaCl, 2 mM CaCl2) containing 0.025% digitonin (Thermo Lifesciences) and 1X cOmplete, Mini Protease Inhibitor Cocktail (Roche) for 10 min on ice. Lysates were then clarified with a 21,100 x g centrifugation at 4°C for 10 min. The supernatant (cytosolic fraction) was removed and the pellet was rinsed with 1 mL HNF buffer and transferred to a fresh tube, and pelleted again at 21,100 x g centrifugation at 4°C for 10 min. Pellets were then resuspended in sample buffer directly in sample buffer. Samples were boiled at 95°C for 10 min then stored at −20°C until subjected to SDS-PAGE and immunoblotting.
 
-## Immunoblotting
+### Immunoblotting
 
 Samples were prepared in sample buffer (NuPAGE LDS Sample Buffer (Invitrogen), 100 mM dithiothreitol (DTT)), boiled for 5 min at 95°C, and subjected to SDS-PAGE using 4–12% Bis-Tris Bolt gels (Invitrogen) in MOPS running buffer (Invitrogen). Proteins were transferred to Immobilon-FL PVDF membrane (Millipore) in transfer buffer containing 1X NuPAGE transfer buffer (Invitrogen), 20% methanol, and 0.05% SDS for 70 min. Membranes were blocked using Odyssey blocking buffer (TBS) (Li-COR) for 30 min at room temperature, and incubated with primary antibody diluted in Odyssey blocking buffer containing 0.05% Tween-20 overnight at 4°C. Membranes were rinsed three times with Tris-buffered saline (TBS) containing 50 mM Tris-HCl, pH 7.4, 150 mM NaCl, and 0.1% Tween 20 (TBS-T), and incubated with secondary antibodies for 1 hr at room temperature. Membranes were again rinsed three times with TBS-T and once with TBS containing no detergent, and membranes were immediately scanned using an Odyssey Infrared Imager (Li-COR).
 
-## Imaging and image segmentation
+### Imaging and image segmentation
 
 Images were acquired on an ImageXpress Micro XLS system (Molecular Devices) with a 10x objective for assays determining percent infected cells (Nikon CFI Plan Fluor, MRH00101), or a 60x objective for all other assays (Nikon 60X Plan Apo λ, MRD00605). Images were processed using CellProfiler version 2.1.2 (Kamentsky et al., 2011).
 
-## Data analysis
+### Data analysis
 
 EC50 values were calculated using XLFit v5.5.0.5 (IDBS). Quantification and processing of data generated by CellProfiler was performed using R v3.5.1 (R Development Core Team, 2018). Microscopy data were quantified per field of view, averaged per well, and data displayed as the mean value ± SD across replicate wells. Immunoblot images were processed using Fiji built on ImageJ v1.52b (Schindelin et al., 2012).
 
-## VP1 plasmid construction
+### VP1 plasmid construction
 
 Synthetic DNA, codon optimized for Sf9 cell expression, encoding full-length BKV serotype 1 VP1 and JCV VP1 were generated for expression of VP1 proteins. For VLP production, DNA fragments encoding full length VP1 were inserted into the pFastBac1 plasmid and baculovirus was generated following the Bac-to-Bac method (Invitrogen). For VP1 pentamer production, DNA fragments encoding either BKV VP1 residues (2-362), JCV VP1 residues (2-354), or BKV VP1 residues (30-297) were inserted into a gateway adapted pGEX plasmid for expression in E. coli with an N-terminal GST-6xHis-Tev tag. The mutations P232S, V234S, and T224A/T243A were introduced into the BKV VP130-297 plasmid by QuikChange site-directed mutagenesis.
 
-## VP1 pentamer production
+### VP1 pentamer production
 
 BL21 Star (DE3) E. coli cells were transformed with expression plasmids and plated on LB agar plates supplemented with 100 µg/ml carbenicillin. Cell were grown in Terrific broth (supplemented with 15 mM sodium phosphate pH 7.0, 2 mM MgCl2, 100 µg/ml carbenicillin) with shaking at 37°C until the OD600 reached 0.7, the temperature was then lowered to 18°C, and Isopropyl β-D-1 thiogalactopyranoside (IPTG) added to 0.5 mM. After 16 hr, harvested cells by centrifugation and stored at −80°C. Cells were re-suspended in chilled lysis buffer (25 mM Tris-HCl pH 8.0, 200 mM NaCl, 5% glycerol, 1 mM Tris(2-carboxyethyl) phosphine (TCEP), 15 mM Imidazole, 1X Roche complete EDTA-free protease inhibitor cocktail, 1X Pierce universal nuclease) at a ratio of 5 mL buffer per gram of cell paste. Cells were lysed by passing through an M-110P microfluidizer at 17,500 PSI on ice. The lysate was centrifuged at 26,800 x g for 45 min at 4°C. 10 mL Nickel sepharose Fast Flow (GE) column was equilibrated in lysis buffer and clarified lysate loaded . Resin was washed with three column volumes (CV) of lysis buffer, then washed with 5 CV of wash buffer (25 mM Tris-HCl pH 8.0, 200 mM NaCl, 1 mM TCEP, 40 mM Imidazole, 5% glycerol) and VP1 was eluted with 2 CV elution buffer (25 mM Tris-HCl pH 8.0, 200 mM NaCl, 1 mM TCEP, 250 mM Imidazole, 5% glycerol). The N-terminal tag was removed by cleavage with Tev protease and pentamers were loaded onto a Superdex 200 column equilibrated in SEC buffer (25 mM Tris-HCl pH 8.0, 100 mM NaCl, 1 mM TCEP, 5% glycerol). Peak fractions were pooled then concentrated using a 50,000 molecular weight cut- off (MWCO) Amicon concentrator.
 
-## Labeled VP1 pentamer production
+### Labeled VP1 pentamer production
 
 BL21 Star (DE3) E. coli cells transformed with VP1 expression plasmid were grown in M9 minimal media (6 g/L Na2HPO4, 3 g/L KH2PO4, 0.5 g/L NaCl, 2 mM MgSO4, 0.1X Vitamins (Sigma R7256), 1 g/L 15NH4Cl, 3 g/L glucose, 100 µg/mL carbenicillin, 0.1X trace metals) prepared in D2O. Cells were incubated at 37°C with shaking at 250 RPM until the OD600 reached ~0.7. To each liter of culture 70 mg of 2-Ketobutyric acid-4-13C,3,3-d2 sodium salt hydrate, 120 mg of 2-Keto-3-methyl-13C-butyric-4-13C, 3-d acid sodium salt, 100 mg deuterated glycine, and 100 mg L-threonine (4-13C;2,3-D2) was added. After 1 hr, the temperature was lowered to 24°C and IPTG was added to 250 µM. After 16 hr, cells were harvested by centrifugation and stored at −80°C. VP1 pentamers were purified as described above with the exception of the SEC buffer being 50 mM Na-Phosphate pH 7.0, 100 mM NaCl.
 
-## VLP production
+### VLP production
 
 Recombinant baculovirus encoding untagged full length BKV VP1 or JCV VP1 were used to infect Sf9 insect cells in suspension at 1.5 × 106 cells/mL, the cells were incubated at 27°C with shaking at 120 RPM for 72 hr then harvested by centrifugation and stored at −80°C. Cells were re-suspended in lysis buffer (20 mM Tris-HCl pH 7.5, 1 M NaCl, 1X Roche EDTA free protease inhibitor cocktail) at a ratio of 10 mL lysis buffer per gram of cell pellet and lysed by sonication on ice then the lysate was centrifuged at 16,000 x g for 20 min at 4°C. The supernatant was layered onto 3 mL of 40% glucose made up in 1X PBS and centrifuged at 116,000 x g for 2.5 hr at 4°C. Dissolved pellet in IEX buffer A (25 mM Tris-HCl pH 8.0, 25 mM NaCl) and loaded onto a 10 mL Sepharose Q-HP (GE) column equilibrated in IEX buffer A. Column was washed with 3 CV IEX buffer A and eluted with a linear NaCl gradient from 25 mM to 700 mM NaCl across 25 CV. Pooled peak fractions and loaded onto 10 mL Capto Core 700 (GE) resin equilibrated in SEC buffer (25 mM Tris-HCl pH 8.0, 100 mM NaCl) collecting the flow-through fraction. Loaded onto a Sephacryl S500 26/60 column (GE) and collected peak fractions, concentrated with a 100,000 MWCO Amicon concentrator.
 
-## Protein reagents
+### Protein reagents
 
 The following VP1 sequence was used for the biochemical AlphaScreen assays:
 
@@ -218,42 +541,81 @@ BKV serotype 1 VP1 (2–362):
 
 GAPTKRKGECPGAAPKKPKEPVQVPKLLIKGGVEVLEVKTGVDAITEVECFLNPEMGDPDENLRGFSLKLSAENDFSSDSPERKMLPCYSTARIPLPNLNEDLTCGNLLMWEAVTVQTEVIGITSMLNLHAGSQKVHEHGGGKPIQGSNFHFFAVGGDPLEMQGVLMNYRTKYPEGTITPKNPTAQSQVMNTDHKAYLDKNNAYPVECWIPDPSRNENTRYFGTFTGGENVPPVLHVTNTATTVLLDEQGVGPLCKADSLYVSAADICGLFTNSSGTQQWRGLARYFKIRLRKRSVKNPYPISFLLSDLINRRTQRVDGQPMYGMESQVEEVRVFDGTERLPGDPDMIRYIDKQGQLQTKML
 
-## Chemical attachment of biotin to VP1 proteins
+### Chemical attachment of biotin to VP1 proteins
 
 For SPR analysis, biotin was covalently attached to BKV VP12–362 with the sulfo-N-hydroxysuccinimide (NHS) ester of a biotin derivative (ThermoFisher Scientific # 21338) as follows: to a 1500 μl of a solution of BKV VP12–362 protein at 17 μM in PBS buffer containing 1 mM TCEP was added 8 μl of a 1 mg/mL (1.5 mM) solution of sulfo-NHS-LC-LC-biotin in water. The solution was mixed with a vortex mixer briefly (1 s), and incubated at room temperature for 1 hr. The solution was transferred to a ThermoFisher Slide-A-Lyzer dialysis cassette (3.5 kDa MWCO, 3 mL) and dialyzed extensively against 3 times 2L of PBS buffer containing 1 mM TCEP at 4°C for 18 hr.
 
-## Analysis of peptide:VP1 interactions by surface plasmon resonance
+### Analysis of peptide:VP1 interactions by surface plasmon resonance
 
 SPR analysis for the determination of the dissociation constant KD was performed with a Biacore T200 instrument with PBS buffer containing 1 mM TCEP, 0.05% Tween-20 (or P20, GE Healthcare) and 1 mM ethylenediaminetetraacetic acid (EDTA) at 20°C. The flow rate was 60 μl per minute. VP12-362 protein covalently modified with biotin was loaded onto a streptavidin-coated Biacore Series S Sensor Chip SA biosensor (GE Healthcare) that had been pre-treated with 50 mM NaOH containing 1 M NaCl. The protein loading response was 6000–8000 resonance units. Peptides were analyzed using the single cycle kinetics method according to instrument control software instructions. Data were analyzed using Biacore Evaluation Software to generate affinity constants (KD).
 
-## AlphaScreen competitive binding assay
+### AlphaScreen competitive binding assay
 
 The assay was run in a Tris buffer at pH 7.5 containing 100 mM NaCl, 0.01% Tween-20, 1 mM EDTA and 0.01% bovine serum albumin. The D122 biotin-peptide probe with the sequence [H]-APGGANQRTAPQWMLPLLLGLYG-GGGK(Biotin)-[OH] was incubated with BKV VP130-297 for 90 min before addition of an anti-BKV VP1 antibody (in-house generated) along with AlphaScreen streptavidin donor and protein A acceptor beads (PerkinElmer). Samples were incubated overnight before reading on a PerkinElmer Envision. Untagged peptides were assessed in a competition mode where they were serially diluted in assay buffer and added to the VP1 along with the biotin-peptide probe. Peptide IC50 values (n = 3) were calculated in Microsoft Excel using XLfit.
 
-## Co-crystallization of BKV VP1 pentamer with D1min
+### Co-crystallization of BKV VP1 pentamer with D1min
 
 For co-crystallization, 13-mer D1min peptide was added to BKV VP1 protein to a final concentration ratio of 5:1 D1min to pentamer. The resultant mixture was incubated on ice for 1 hr then concentrated to 15 mg/mL protein overall. Prior to crystallization, the mixture was passed through a 0.2-micron filter. The protein-peptide complex was crystallized using the hanging drop vapor diffusion method. 2.0 µL of protein solution was mixed with 2.0 µL of well solution (20% PEG-3350, 5% ethylene glycol, 0.1 M Tris buffer pH 8.5, 10 mM TCEP). The resulting drop was suspended over a reservoir of 0.3 mL well solution. The crystals grew at 18°C for approximately 12–24 hr. Crystals were washed briefly in a cryoprotectant consisting of 80% well solution and 20% ethylene glycol (v/v) and then flash-frozen in liquid nitrogen prior to data collection.
 
-## Structure solution and refinement of BKV VP1 pentamer:D1min complex
+### Structure solution and refinement of BKV VP1 pentamer:D1min complex
 
 The X-ray diffraction data were collected at a wavelength of 1.54187 Å and a temperature of 100K on a Rigaku FRE+ anode utilizing a Decris 300K Pilatus detector. Data integration and scaling were performed by using the autoPROC implementation of XDS and AIMLESS (Vonrhein et al., 2011). The structure of the complex was solved via Molecular Replacement using the CCP4i Suite implementation of PHASER (McCoy et al., 2007; Winn et al., 2011). The structure was built and refined via alternating rounds of real-space rebuilding in Coot and refined using autoBuster (Global Phasing) until convergence was reached. Data reduction and structure refinement statistics are presented in Supplementary file 3. After attempts to refine the D1min model to convergence, with suitable φ/ψ angles as defined by the Ramachandran plot and suitable rotamers, it became clear that a single binding model could not account for the electron density seen in 2Fo-Fc maps. A model that rationalized the electron density was achieved by fitting the peptide with an occupancy of 0.8. Subsequent reciprocal space and real-space refinement of this model led to a suitable fit of the peptide into the observed density and reduced, but still unaccounted for, difference density for the remaining symmetry-related binding modes, which are not fit. As such, the co-structure is presented as a model constructed using the observed density, or a ‘structurally-guided model.’ Alignment of structurally-guided model with apo BKV pentamer X-ray structure (PDB: 4MJ1; Neu et al., 2013) was performed using the align tool in PyMOL v2.2.3 (Schrödinger, LLC) with a 10 Å cutoff for outliers. Post-alignment, RMSD values were calculated using the tool rms_cur without refitting the alignment.
 
-## NMR spectroscopy
+### NMR spectroscopy
 
 All NMR experiments were performed on a Bruker Avance III 600 MHz spectrometer equipped with a 5 mm z-gradient QCI-F cryo probe. The temperature in all experiments was 32°C (305K). The NMR samples were prepared in 160 μL PBS buffer at pH 7.5, containing 2 mM deuterated DTT, 10% (v/v) D2O and 11.1 μM 4,4-dimethyl-4-silapentane-1-sulfonic acid (DSS, internal standard). The final protein concentration of truncated (residues 30–297), 2H,12C,15N and 1H,13C-methyl-ILVT labeled BKV VP1 was 125 μM (monomer concentration) in all experiments. The 13-mer D1min (Ac-APQWMLPLLLGLY-NH2) and alanine-substitution peptide D1min W293A (Ac-APQAMLPLLLGLY-NH2) were dissolved in d6-DMSO and added to the protein at various concentrations (6.25 μM – 200 μM).
 
 1D-1H NMR experiments were acquired with 64 scans, excitation sculpting water suppression and a relaxation delay of 2 s. 2D 1H,13C-HMQC SOFAST (Schanda et al., 2005) spectra were recorded using 50% non-uniform sampling, 1024 and 256 points in the direct and indirect dimensions, respectively, 192 scans and a recycling delay of 200 ms. Spectra were processed and analyzed using TOPSPIN version 3.5. Methyl peak assignments were obtained by means of twelve amino acid point mutations (L68A, L254M, V136I, V231I, V234I, T46S, T118S, T224S, T238S, T240S, T277S, I45V; see Figure 2—figure supplement 1.B for an example of this method) and by using a methyl walk approach based on 13C-resolved 4D-HMQC-NOESY-HMCQ experiments (Proudfoot et al., 2016).
 
-## MOI dependency assay
+### MOI dependency assay
 
 RPTE cells seeded in 96-well plate format were cooled for 15 min at 4°C, then cells were treated with purified infectious BKV at either low (MOI = 0.3) or high (MOI = 5) viral titers. After 1 hr, cells were rinsed with cold RenaLife medium and warm RenaLife medium containing DMSO, or 5 μM D1min WT or L297A peptide was added to cells. Plates were incubated at 37°C and fixed at 48 h.p.i. as described. T-antigen staining and EC50 determination were performed as described.
 
-## Real-time quantitative PCR
+### Real-time quantitative PCR
 
 RPTE cells seeded in 6-well format were treated with DMSO, 5 µM D1min WT or L297A peptide, or 1000 U/mL of IFN-β (Peprotech) for 20 hr at 37°C, then harvested by incubation with 0.05% trypsin, 0.02% EDTA (Lifeline Cell Technology) for 2 min until cells were detached. Trypsin was inhibited with an equal volume of Trypsin Neutralizing Solution (Lifeline Cell Technology), and wells rinsed with PBS. Cells were pelleted at 124 x g for 5 min at 4°C, and rinsed with 1 mL cold PBS buffer, and pelleted again at 124 x g for 5 min at 4°C. Cell pellets were frozen and stored at −80°C. Total cell RNA was extracted using an RNeasy mini kit (Qiagen) and cDNA generation was performed with 500 ng total cell RNA using SuperScript IV VILO Master Mix (Invitrogen) using the following incubations: 25°C for 10 min, 50°C for 10 min, 85°C for 5 min. Resultant cDNA was diluted 1:5 in water and 2 μl was run in triplicate in 10 μl reactions with Fast SYBR Green Master Mix (Applied Biosystems) in 384-well format with 500 nM of the following PrimeTime qPCR primers (IDT) or water:
 
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>PrimeTime Primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GAPDH</td>
+      <td>Hs.PT.39a.22214836</td>
+    </tr>
+    <tr>
+      <td>CXCL10</td>
+      <td>Hs.PT.58.3790956.g</td>
+    </tr>
+    <tr>
+      <td>IFNA2</td>
+      <td>Hs.PT.58.24294810.g</td>
+    </tr>
+    <tr>
+      <td>IFNB1</td>
+      <td>Hs.PT.58.39481063.g</td>
+    </tr>
+    <tr>
+      <td>MX1</td>
+      <td>Hs.PT.58.40261042</td>
+    </tr>
+    <tr>
+      <td>OAS1</td>
+      <td>Hs.PT.58.2338899</td>
+    </tr>
+    <tr>
+      <td>STAT1</td>
+      <td>Hs.PT.58.15049687</td>
+    </tr>
+  </tbody>
+</table>
+
 qPCR was performed on a 7900HT Fast Real-Time PCR System (Applied Biosystems) using the following protocol: 1 cycle at 95°C for 20 s, then 40 cycles of 95°C for 3 s then 60°C for 30 s. A threshold of 0.1 was applied, ΔΔCT values were calculated normalized to GAPDH and relative to DMSO control using mean triplicate CT values, and relative fold-change was calculated as 2-ΔΔCT.
 
-## Peptide cell-binding assay
+### Peptide cell-binding assay
 
 RPTE cells seeded in 96-well plate were incubated with 1 μM N-terminal biotinylated D122, 5 μM D1min WT or L297A, and/or 10 nM BK VLP for 1 hr at 37°C. Cells were rinsed with PBS then proceeded to fixation and staining as described, except the permeabilization step with Triton X-100 was skipped to avoid staining intracellular biotin.

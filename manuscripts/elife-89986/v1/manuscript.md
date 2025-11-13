@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01bmjkv45 Friedrich Miescher Institute for Biomedical Research Basel Switzerland
-2. https://ror.org/02s6k3f65 Faculty of Natural Sciences, University of Basel Basel Switzerland
+1. Friedrich Miescher Institute for Biomedical Research Basel Switzerland ([ROR:01bmjkv45](https://ror.org/01bmjkv45))
+2. Faculty of Natural Sciences, University of Basel Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
 
 † Corresponding author
 
@@ -34,6 +34,18 @@ In this work, we sought to understand the signals conveyed by the basal forebrai
 
 To investigate the function of cholinergic input to visual cortex, we first characterized the calcium activity in these axons. We used an AAV vector to express an axon-targeted GCaMP6s (Broussard et al., 2018) in basal forebrain cholinergic neurons using ChAT-IRES-Cre mice (Rossi et al., 2011) and recorded calcium activity of their axons in visual cortex using two-photon microscopy (Figure 1A and B). For imaging experiments, mice were head-fixed on a spherical treadmill surrounded by a toroidal screen (Figure 1C). We used a set of different visuomotor conditions known to activate neurons in visual cortex to probe for activation of cholinergic axons. First, mice were exposed to a closed loop condition during which locomotion velocity was coupled to movement in a virtual tunnel. We then measured activity in an open loop condition during which locomotion and movement in the virtual tunnel were uncoupled, in darkness, and during the presentation of full field drifting gratings. Throughout all experimental conditions mice were free to locomote on the spherical treadmill and did so over a range of velocities (Video 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig1-v1.jpg)
+
+**Figure 1.:** (A) GCaMP6s was expressed by injecting an AAV2/5-hSyn1-FLEx-axon-GCaMP6s vector in basal forebrain of ChAT-IRES-Cre mice. We then imaged calcium activity of cholinergic axons projecting to visual cortex. (B) Example two-photon image of cholinergic axons in visual cortex. (C) Schematic of the virtual reality system. Mice were head-fixed on a spherical treadmill and surrounded by a toroidal screen on which we presented visual stimuli in different visuomotor conditions. (D) Example trace of the calcium activity of one cholinergic axon in visual cortex (red) and the corresponding locomotion velocity of the mouse (blue). (E) Average locomotion onset activity of all cholinergic axons (5048 axons in 14 mice), sorted by their average response during locomotion onset. (F) Average response of cholinergic axons to locomotion onset over all the cholinergic axons, of the data shown in E. Shading indicates SEM over axons. Due to SEM being very small, the shading is fully obscured by the red line. (G) As in F, but for grating onsets. Green shading marks the duration of grating presentation. (H) As in F, but for visual flow onset during the open loop condition. (I) As in F, but for visuomotor mismatch onset. Orange shading marks the duration of visuomotor mismatch. As mismatch events occur only during times of locomotion, and locomotion itself is a strong driver of cholinergic activity, we would expect to find an increase in cholinergic activity by chance at mismatch. To correct for this, we quantified the distribution of cholinergic activity on random triggers during locomotion (95% confidence interval (CI), gray shading). (J) Locomotion onset activity in different visuomotor conditions. (K) The fraction of cholinergic axons responsive to locomotion, grating, and visuomotor mismatch onset, quantified for each imaging site. Each datapoint is one imaging site. Boxes show 25th and 75th percentile, central mark is the median, and the whiskers extend to the most extreme data points not considered outliers. Dashed line marks chance level. n.s.: not significant; *p<0.05; **p<0.01; ***p<0.001; see Supplementary file 1 for all statistical information.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Distribution of time to first significant response after locomotion onset for cholinergic axons in visual cortex. Axons without any response to locomotion onset are omitted. (B) As in A, but for layer 2/3 neurons in visual cortex. (C) As in A, but for layer 5 neurons in visual cortex. (D) Nested bootstrap resampling of the distributions shown in A–C. Here and elsewhere, n.s.: not significant; *p<0.05; **p<0.01; ***p<0.001; see Supplementary file 1 for all statistical information.
+
+![Video 1.](https://cdn.elifesciences.org/articles/89986/elife-89986-video1.mp4.jpg)
+
+**Video 1.:** Mouse running on a spherical treadmill at different speeds to illustrate the range of running speeds covered by our data.
+
 We found that the activity in many cholinergic axons strongly increased during locomotion (Figure 1D and E). Activity increased with locomotion onset (Figure 1F) with an average lag across all responsive axons of 477 ms relative to locomotion onset (Figure 1—figure supplement 1A). Thus, consistent with results reported for auditory cortex (Nelson and Mooney, 2016), we found that locomotion preceded the increase in cholinergic activity in visual cortex. Locomotion onset also results in an increase in activity of neurons in primary visual cortex (Ayaz et al., 2013; Keller et al., 2012; Saleem et al., 2013). It has been speculated that cholinergic input is a driver of locomotion-related activity in visual cortex (Lee et al., 2014). We thus compared the observed response latency between cholinergic input and activity of layer 2/3 and layer 5 neurons. The response latency of cholinergic axons was longer than the latency we observed in responses of layer 2/3 neurons (Figure 1—figure supplement 1B), but shorter than that of layer 5 neurons (Figure 1—figure supplement 1C, D). This would suggest that the initial increase in neuronal activity in layer 2/3 of the visual cortex was not driven by cholinergic input from basal forebrain.
 
 Interestingly, we found no evidence of a response of cholinergic axons to other stimuli that drive responses in visual cortex such as full field drifting gratings (Figure 1G), visual flow onsets in open loop (Figure 1H), or visuomotor mismatches (Figure 1I; Attinger et al., 2017; Jordan and Keller, 2020; Keller et al., 2012; Niell and Stryker, 2008; Vasilevskaya et al., 2023; Widmer et al., 2022). Visuomotor mismatches are brief visual flow halts that break the coupling between locomotion and visual flow feedback in a closed loop condition. Consistent with the absence of response to visual stimuli – full-field drifting gratings or visual flow in open loop, we found that the response to locomotion onset was independent of whether the locomotion occurred in darkness, in the presence of visual stimuli, or with visual flow feedback coupled to locomotion (Figure 1J). For each imaging site, we then quantified the percentage of cholinergic axons that exhibited significant responses to locomotion onset, full field drifting gratings, or visuomotor mismatch, and found that 52.3% ± 4.4% (mean ± SEM) of the axons responded significantly to locomotion onset, while the fraction of responsive axons to gratings and mismatch was not different from chance (Figure 1K).
@@ -42,9 +54,53 @@ To confirm that an increase in calcium activity in cholinergic axons corresponds
 
 Further characterizing the relationship between locomotion velocity and cholinergic activity, we found that cholinergic axon activity was not linearly related to locomotion velocity, but instead exhibited a locomotion state dependence. Over the course of a locomotion bout, we found that velocity decreased systematically, such that towards the end of a locomotion bout, velocity was lower than at the beginning (Figure 2A). For cholinergic activity, this decrease was absent. We found no evidence of a difference in the average calcium activity of cholinergic axons after locomotion onset to that before locomotion offset (Figure 2B). Indeed, the average cholinergic activity after locomotion onset and before locomotion offset was highly correlated across locomotion bouts, while a similar analysis on locomotion velocity revealed that the time-course of velocity is more variable and less correlated bout-by-bout (Figure 2C). The similarity of locomotion onset and offset responses was not only true for the population average activity, but the activity after locomotion onset, before locomotion offset, and the average activity during the locomotion bout were all well correlated on an axon-by-axon level (Figure 2D and Figure 2—figure supplement 1G). To quantify the relationship between locomotion velocity and calcium activity in cholinergic axons more generally, we computed the average calcium activity as a function of locomotion velocity (see Methods). This relationship was more step-like than linear, and we found no evidence of an increase in calcium activity between low and high locomotion velocities (Figure 2E). The same held true for extracellular acetylcholine levels as measured by GRAB-ACh3.0 (Figure 2—figure supplement 1H). If calcium activity in cholinergic axons reflected a step-like change during locomotion, we should find that calcium activity correlates better with a binarized version of locomotion velocity than with locomotion velocity itself. This is indeed what we found (Figure 2F), independent of the value of the threshold used for binarization (Figure 2—figure supplement 2). Thus, calcium activity in cholinergic axons in visual cortex is better described as a binary locomotion state signal, than a linear locomotion velocity signal.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig2-v1.jpg)
+
+**Figure 2.:** (A) Average locomotion velocity profiles aligned to locomotion onset and offset. The isolated datapoint between the two traces is the average locomotion velocity over the locomotion bout. Shading marks SEM. Here and elsewhere, n.s.: not significant; *p<0.05; **p<0.01; ***p<0.001; see Supplementary file 1 for all statistical information. (B) As in A, but for activity of all cholinergic axons in visual cortex, for the data shown in D. Shading marks SEM over axons. (C) Bout-by-bout correlation coefficient between the locomotion onset and offset changes for average cholinergic activity and locomotion velocity. Each datapoint is one imaging site. Boxes show 25th and 75th percentile, central mark is the median, and the whiskers extend to the most extreme data points not considered outliers. (D) Average onset and offset responses for all cholinergic axons sorted by strength of locomotion onset response. (E) Activity of cholinergic axons as a function of locomotion velocity. Shown are the hierarchical bootstrap estimates of the median (red dots) and 95% confidence intervals (red shading) for each velocity bin. We found no evidence of a difference in activation between low, intermediate, and high locomotion velocities (indicated by gray shading). (F) Left: For all axons, the correlation coefficient of their calcium activity with locomotion velocity plotted against the correlation coefficient with a binarized version of the locomotion velocity. Right: Distributions of correlation coefficients between calcium activity and locomotion velocity and binarized velocity. Same data as shown on the left. Boxes show 25th and 75th percentile, central mark is the median, and the whiskers extend to the most extreme data points not considered outliers.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Average change in GRAB-ACh3.0 fluorescence during locomotion onset. We used the fluorescence change measured in blood vessels (purple) to estimate hemodynamic occlusion and subtracted this from the raw activity (black) to generate a corrected response (red). Shading marks SEM. (B) As in A, but for the GRAB-ACh3.0 response to grating onsets. The green shading marks the duration of the grating stimulus. (C) As in A, but for the GRAB-ACh3.0 response to visuomotor mismatch. The orange shading marks the duration of the visuomotor mismatch. (D) To estimate hemodynamic occlusion effects while two-photon imaging, we measured fluorescence changes on locomotion onset in layer 2/3 neurons in visual cortex that express GFP. (E) As in D, but for responses to grating onsets. (F) As in D, but for responses to visuomotor mismatch. (G) The correlation coefficient between the population activity vectors during locomotion onset (on), offset (off), and during locomotion bout (btw), compared to shuffle (rnd.) controls. Here and elsewhere, n.s.: not significant; *p<0.05; **p<0.01; ***p<0.001; see Supplementary file 1 for all statistical information. (H) GRAB-ACh3.0 fluorescence as a function of locomotion velocity. Shown are the mean acetylcholine level in each bin, corrected for hemodynamics. Shading marks SEM. We found no evidence of a difference in acetylcholine level between low and high locomotion velocities (indicated by gray shading). Note, the x-axis range is matched to that in Figure 2E. Because we had overall less data in these GRAB experiments, reliable estimates of mean acetylcholine levels were not possible for locomotion velocities above approximately 13 cm/s.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The correlation between activity of cholinergic axons in visual cortex and locomotion velocity was higher when we used a binarized version of the locomotion velocity trace. This difference was present over a large range of thresholds. The black bar at the top of the plot indicates threshold values for which the correlation with binarized locomotion velocity was higher than that with raw locomotion velocity.
+
 A number of behavioral variables, like pupil dilation, facial movements, as well as the overall level of arousal are all correlated with locomotion (Lohani et al., 2022; Reimer et al., 2014; Vinck et al., 2015). It has been shown that cholinergic activity in visual cortex is also well correlated with pupil dilation and facial movements (Larsen et al., 2018; Lohani et al., 2022; Reimer et al., 2014). Disambiguating the effects of locomotion, pupil dilation, and intensity of facial movements on cholinergic activity is complicated by the fact that these three variables are strongly correlated during behavior. It has been shown that under certain conditions, facial movements are a better predictor of cholinergic activity than locomotion across large parts of dorsal cortex (Lohani et al., 2022). To quantify this relationship in visual cortex, we compared the correlation between cholinergic activity, locomotion velocity, pupil diameter, and intensity of facial movements in different visuomotor conditions. This analysis was motivated by our observation that average light levels have a stronger influence on pupil size than locomotion state. We found that the correlation of locomotion velocity and cholinergic activity was independent of visuomotor condition (Figure 3A). This was not the case for the correlation between pupil diameter and cholinergic activity, which was systematically lower in darkness than in conditions with visual stimuli, and lower during closed loop visuomotor coupling than during open loop or grating conditions (Figure 3B). This pattern was also reflected in the correlation between locomotion and pupil diameter (Figure 3C). The reduced correlation between locomotion velocity and pupil diameter in darkness was not a consequence of a decrease in variability due to ceiling-effects in pupil diameter in darkness (Figure 3—figure supplement 1A). Finally, we also computed the correlation between cholinergic activity and facial movements. The correlation of cholinergic activity with locomotion was higher than that with facial movements under all conditions that we tested (Figure 3—figure supplement 1B). Thus, of these three behavioral variables, locomotion, pupil diameter, and facial movements, locomotion exhibited the most robust correlation with cholinergic activity in visual cortex (Figure 3—figure supplement 1C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig3-v1.jpg)
+
+**Figure 3.:** (A) Correlation of average activity of cholinergic axons activity with locomotion velocity in closed loop, open loop, dark, and grating conditions. Each point represents data from one imaging site, error bars indicate SEM. Here and elsewhere, n.s.: not significant; *p<0.05; **p<0.01; ***p<0.001; see Supplementary file 1 for all statistical information. (B) As in A, but for correlation between average activity of cholinergic axons and pupil diameter. (C) As in A, but for correlation between locomotion velocity and pupil diameter.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Standard deviation of pupil diameter as a function of visuomotor condition. Here and elsewhere, n.s.: not significant; *p<0.05; **p<0.01; ***p<0.001; see Supplementary file 1 for all statistical information. (B) Average correlation of activity of cholinergic axons in visual cortex with facial movements as a function of visuomotor condition, compared with the same activity correlation to locomotion velocity (same data as Figure 3A). Error bars indicate SEM. Individual data points are imaging sites. (C) Average correlation of activity of cholinergic axons in visual cortex and locomotion velocity (blue), pupil diameter (red), or facial movement (black) as a function of smoothing window. The black arrow marks the smoothing window used for facial movements.
+
 Next, we turned to the question of what the influence of increased cholinergic activity in visual cortex is on the activity of neurons in layer 2/3 and layer 5. We know that locomotion influences neuronal activity in visual cortex in a variety of ways. One of these effects is that during locomotion, visual responses in visual cortex are increased (Niell and Stryker, 2010) through a combination of both additive and multiplicative effects (Dadarlat and Stryker, 2017). Consistent with this we found locomotion driven increases in visual responses were apparent in both layer 2/3 (Figure 4A) and in layer 5 neurons (Figure 4B). To test whether this increase in visual responsiveness during locomotion was driven by acetylcholine, we expressed the excitatory opsin ChrimsonR Klapoetke et al., 2014 in basal forebrain cholinergic neurons using an AAV2/1-hSyn-DIO-ChrimsonR-tdTomato vector in ChAT-IRES-Cre mice. We injected an AAV2/1-Ef1α-GCaMP6f in visual cortex to express GCaMP6f. In cortex, the Ef1α promoter drives highly specific expression in neurons (99.7% of labeled cells in layer 2/3 and 100% of labeled cells in layer 5 are NeuN-positive Yaguchi et al., 2013), and biases expression to excitatory neurons, such that approximately 95% of labeled neurons are excitatory in both layer 2/3 (Attinger et al., 2017; Yaguchi et al., 2013) and in layer 5 (Yaguchi et al., 2013). We then performed two-photon calcium imaging in visual cortex to measure the responses of layer 2/3 or layer 5 neurons to the optogenetic activation of local cholinergic axons paired to the presentation of full field drifting grating stimuli while the mouse was stationary (see Methods). We found that in layer 2/3, optogenetic activation of cholinergic axons did not result in a detectable increase in grating onset responses (Figure 4C and Figure 4—figure supplement 2A), while the responses of layer 5 neurons to the same stimulus increased with concurrent optogenetic activation of cholinergic axons (Figure 4D). The effects of optogenetic activation of cholinergic axons on layer 5 neurons could not be explained by a stimulation-triggered change in locomotion velocity (Figure 4—figure supplement 1) or stimulation artifacts (Figure 4—figure supplement 3A–C). In mice that did not express ChrimsonR in cholinergic axons (no ChrimsonR controls), we found no evidence of an optogenetic light stimulation effect. Interestingly, this increase in grating onset responses in layer 5 neurons driven by direct cholinergic activation was smaller than that observed during locomotion (Figure 4B and D). This could be either because the acetylcholine release triggered by the optogenetic stimulation of cholinergic axons was weaker than that occurring during locomotion, or because the increase in responses during locomotion is only partially explained by the co-release of acetylcholine. If the former were the case, we would expect that responses occurring during locomotion are less influenced by optogenetic activation of cholinergic axons. This was indeed the case for grating onset responses during locomotion which were not modulated by optogenetic activation of cholinergic axons (Figure 4—figure supplement 3D, E). Interestingly, visuomotor mismatch responses, which also occur only during locomotion, were significantly increased in layer 5 neurons (Figure 4F), but not in layer 2/3 (Figure 4E and Figure 4—figure supplement 2B). Similarly, we found that optogenetic activation of cholinergic axons increased locomotion onset responses in layer 5 neurons (Figure 4H), while layer 2/3 neurons exhibited no significant difference (Figure 4G and Figure 4—figure supplement 2C). Thus, while in layer 5 neurons the effect of optogenetic activation appears to saturate for bottom-up grating responses during locomotion, this was not the case for responses that rely on top-down input. However, it is also likely that the increase in response during locomotion is only partially explained by acetylcholine. Locomotion has been shown to result in both a multiplicative and an additive change in grating responses (Dadarlat and Stryker, 2017). This was also the case in our data for locomotion-related increase in grating responses (Figure 4—figure supplement 4). However, we found that the optogenetic stimulation of cholinergic axons resulted primarily in a multiplicative gain of visual responses (Figure 4—figure supplement 4). Overall, consistent with previous findings (Goard and Dan, 2009), we find that acetylcholine primarily increases both bottom-up and top-down driven responses in layer 5 but not layer 2/3 neurons, but only partially explains the locomotion-driven increases in visual responses.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig4-v1.jpg)
+
+**Figure 4.:** (A) Average calcium response of layer 2/3 neurons in visual cortex to full field drifting gratings in the absence (light brown) or presence of locomotion (brown). Green shading indicates duration of grating stimulus. The responses are compared bin-by-bin using a nested hierarchical bootstrap test. Here and in subsequent panels, bins with a significant difference (p<0.05) are indicated by a black line above the plot; those with p>0.05 are marked gray. Shading marks SEM. (B) As in A, but for layer 5 neurons in visual cortex in the absence (light blue) or presence (dark blue) of locomotion. (C) Average calcium response of layer 2/3 neurons in visual cortex to full field drifting gratings while the mice were stationary, without (light brown) or with (pink) optogenetic activation of cholinergic axons in visual cortex. Duration of optogenetic stimulation is marked by a pink bar. Green shading indicates duration of the grating stimulus. (D) As in C, but for layer 5 neurons in visual cortex. (E) Average calcium response to visuomotor mismatch in layer 2/3 neurons in visual cortex, without (brown) and with (pink) optogenetic stimulation of cholinergic axons in visual cortex. Orange shading indicates mismatch duration, and pink bar indicates optogenetic stimulation. (F) As in E, but for layer 5 neurons in visual cortex. (G) Average calcium response of layer 2/3 neurons in visual cortex to locomotion onset in closed loop, without (brown) or with (pink) optogenetic stimulation of cholinergic axons in visual cortex. (H) As in G, but for layer 5 neurons in visual cortex.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Locomotion velocity before, during, and after optogenetic stimulation of cholinergic axons. Shown are the mean (red line) and SEM (red shading) across imaging sites. Here and elsewhere, n.s.: not significant; *p<0.05; **p<0.01; ***p<0.001; see Supplementary file 1 for all statistical information. (B) Average locomotion velocity before optogenetic stimulation (–2 s to 0 s) is indistinguishable from the locomotion velocity during and immediately after stimulation (0 s to 2 s; stimulation occurs from 0 s to 1 s). Each dot is an imaging site. Boxes show 25th and 75th percentile, red line is the median, and the whiskers extend to the most extreme data points not considered outliers.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Average calcium response to full field drifting gratings of the 10% of layer 2/3 neurons in visual cortex most responsive to full field drifting gratings while the mice were stationary, without (light brown) or with (pink) optogenetic activation of cholinergic axons in visual cortex. To avoid regression to the mean artifacts, neurons are selected based on half of the trials, and the responses of the other half of trials are shown here. Duration of the optogenetic stimulation is marked by a pink bar. Green shading indicates duration of the grating stimulus. The responses are compared bin-by-bin using a nested hierarchical bootstrap test. Here and in subsequent panels, bins with a significant difference (p<0.05) are indicated by a black line above the plot; those with p>0.05 are marked gray. Shading marks SEM. (B) As in A, but for the 10% of layer 2/3 neurons most responsive to visuomotor mismatch. (C) As in A, but for the 10% of layer 2/3 neurons most responsive to locomotion onset in closed loop.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Average calcium response of layer 5 neurons in visual cortex to full field drifting gratings (green shading) presented while the mice were stationary, without (pale blue) and with (pale pink) optogenetic stimulation in mice that did not express ChrimsonR in cholinergic axons. The duration of stimulation is marked by a pink bar. (B) Average calcium response of layer 5 neurons in visual cortex to visuomotor mismatch (orange shading) without (blue) and with (pale pink) optogenetic light stimulation in mice that do not express ChrimsonR in cholinergic axons. The duration of stimulation light is marked by a pink bar. (C) As in B, but for locomotion onset responses. Note, the locomotion onset threshold was relaxed to 0.025 cm/s to increase the number of onsets we could analyze. (D) Average calcium response of layer 2/3 neurons in visual cortex to full field drifting gratings (green shading) presented while the mice were locomoting, without (brown) and with (pink) optogenetic stimulation of cholinergic axons in visual cortex. The duration of optogenetic stimulation is marked by a pink bar. The responses are compared bin-by-bin using a nested hierarchical bootstrap test. Here and in subsequent panels, bins with a significant difference (p<0.05) are indicated by a black line above the plot; those with p>0.05 are marked gray. Shading marks SEM. (E) As in D, but for layer 5 neurons. (F) Change in pairwise correlations in layer 2/3 neurons and in layer 5 neurons in visual cortex during sham stimulation while the mice were stationary. Here and elsewhere, n.s.: not significant; *p<0.05; **p<0.01; ***p<0.001; see Supplementary file 1 for all statistical information.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Average calcium response of layer 2/3 neurons in visual cortex to different orientations of full field drifting gratings while mice were stationary (black), on optogenetic stimulation of cholinergic axons while mice were stationary (red), and while mice were locomoting (blue). Here and elsewhere, n.s.: not significant; *p<0.05; **p<0.01; ***p<0.001; see Supplementary file 1 for all statistical information. (B) As in A, but for layer 5 neurons in visual cortex. (C) Multiplicative factor (a) and additive factor (b) of a linear fit of the form y = ax + b, for the scaling of the orientation tuning curve in layer 2/3 induced by locomotion and optogenetic stimulation of cholinergic axons. Error bars indicate the standard error of the coefficients. (D) Same as in C, but for layer 5 neurons in visual cortex.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Average calcium response of layer 2/3 neurons in visual cortex to locomotion onset in closed loop, with neurons split into positive prediction error (PE) neurons (blue), negative PE neurons (red), and the rest of the population (black). We defined the top 30% responders to grating stimuli as positive PE neurons, the top 30% responders to visuomotor mismatch as negative PE neurons, and the remaining 60% of the neurons along with any neurons that responded to both gratings and mismatch as rest. (B) As in A, but during open loop. (C) As in A, but for layer 5 neurons. (D) As in A, but for layer 5 neurons in open loop.
 
 A second effect of locomotion on neuronal activity in visual cortex is that locomotion itself drives neuronal responses (Keller et al., 2012; Saleem et al., 2013). This effect is apparent in both layer 2/3 (Figure 5A) and layer 5 (Figure 5B) neurons. In layer 2/3, locomotion-related activity is suppressed by closed loop visual feedback (Widmer et al., 2022), as a function of the strength of visuomotor mismatch responses (Figure 4—figure supplement 5A, B). In layer 5, closed loop visual feedback did not suppress running-related activity on average in either visuomotor mismatch or grating responsive neurons (Figure 4—figure supplement 5C, D). Thus, locomotion related activity likely has functionally distinct roles in layer 2/3 and layer 5. To test whether artificial activation of cholinergic axons would result in increased neuronal activity, we again performed two-photon calcium imaging in visual cortex neurons to measure responses of layer 2/3 or layer 5 neurons upon optogenetic activation of local cholinergic axons. We found no evidence of any increase in calcium activity in either layer 2/3 (Figure 5C) or layer 5 neurons (Figure 5D). This absence of a stimulation response is consistent with previous reports that found that cholinergic axon stimulation in visual cortex does not result in a response of layer 2/3 neurons (Chen et al., 2015) and that electrical stimulation of the basal forebrain primarily activates inhibitory neurons in the superficial layers of visual cortex (Alitto and Dan, 2012). This, combined with our finding that on average the layer 2/3 locomotion onset-related activity preceded the activity increase in cholinergic axons (Figure 1—figure supplement 1), would indicate that the locomotion-related increase in layer 2/3 and layer 5 activity observed in visual cortex is not driven by acetylcholine.
 
@@ -54,7 +110,31 @@ A second effect of locomotion on neuronal activity in visual cortex is that loco
 
 A third effect locomotion has on neuronal activity in visual cortex is to decorrelate the activity of nearby neurons (Dadarlat and Stryker, 2017; Erisken et al., 2014). Consistent with these studies, we found that locomotion results in a reduction of pairwise correlations between the activity of layer 2/3 neurons (Figure 6A and E) as well as between layer 5 neurons (Figure 6B and F). We could induce this decorrelation by optogenetically activating the cholinergic axons while mice were stationary. This optogenetically induced decorrelation in layer 2/3 (Figure 6C and E) was stronger than that driven by locomotion, while the two were similar in layer 5 (Figure 6D and F). Note, we used calcium activity of apical dendrites of L5 neurons in L2/3 as a proxy for somatic L5 activity in these experiments (see Methods). This decorrelation was not due to a visual response to the stimulation laser (Figure 4—figure supplement 3F). Interestingly, we found that in both layer 2/3 and layer 5, the locomotion-induced decorrelation was observed primarily for neurons with low pairwise correlations. Pairs of neurons with high correlation of activity tended to further increase their correlation during locomotion (Figure 6—figure supplement 1). Finally, we tested whether the correlation in visual cortex was similarly influenced by chemogenetic manipulation of basal forebrain cholinergic neurons. We expressed either a DREADD activator or a DREADD inhibitor in ChAT-Cre mice to systemically increase or decrease cholinergic activity. Interestingly, we noticed that the systemic increase or decrease of cholinergic release resulted in behavioral changes in the mice. Upon chemogenetic activation mice increased their locomotion velocity, and upon chemogenetic inhibition, mice decreased their time spent locomoting, resulting in a bidirectional modulation of the total distance traveled by the two manipulations (Figure 6—figure supplement 2). Importantly, chemogenetic manipulations bidirectionally modulated the decorrelation effect on locomotion in layer 5 neurons in visual cortex. DREADD activation resulted in an increased strength of the locomotion-driven decorrelation, while DREADD inhibition resulted in a reduced strength of locomotion-driven decorrelation in layer 5 (Figure 6H and Figure 6—figure supplement 3B). This effect was absent in layer 2/3 where neither manipulation influenced the locomotion driven decorrelation (Figure 6G and Figure 6—figure supplement 3A). Thus, cholinergic activation is likely sufficient to explain the locomotion-induced decorrelation of activity in visual cortex.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig6-v1.jpg)
+
+**Figure 6.:** (A) Average pairwise correlation in calcium activity of layer 2/3 neurons while the mouse was stationary and while the mouse was locomoting. Each dot is the mean of the pairwise correlations for one neuron to all others in the same field of view. (B) As in A, but for layer 5 neurons. (C) As in A, but comparing the correlation while the mice were stationary, to that while cholinergic axons were stimulated optogenetically. (D) As in C, but for layer 5 neurons. Note, for this experiment the imaging plane was in L2/3 to simultaneously image layer 2/3 neurons and apical dendrites of layer 5. The latter were traced to their soma in layer 5 offline and were used to compute layer 5 activity correlations. (E) Average change in pairwise correlations of layer 2/3 neurons on locomotion (gray) or on optogenetic stimulation of cholinergic axons during stationary periods (pink), compared to the correlations during stationary (stat.) periods at baseline. Here and elsewhere, n.s.: not significant; *p<0.05; **p<0.01; ***p<0.001; see Supplementary file 1 for all statistical information. (F) As in E, but for layer 5 neurons of visual cortex. (G) Change in the average pairwise correlations of layer 2/3 neurons during locomotion, upon DREADD activation (pink) or inhibition (orange) of basal forebrain cholinergic neurons. (H) As in G, but for layer 5 neurons.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Change in the pairwise correlation between pairs of layer 2/3 neurons in visual cortex on locomotion and their average correlation over the entire imaging session. (B) As in A, but for layer 5 neurons in visual cortex. (C) Related to A with all neuron pairs binned by their average correlation. Bars indicate SEM. (D) As in C but for layer 5 neurons in visual cortex.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Average locomotion velocity before and after administration of Clozapine N-oxide (CNO) in ChAT-Cre mice that expressed a DREADD activator (pink) or a DREADD inhibitor (orange) in basal forebrain. Each dot is an experimental session. (B) Quantification of the data shown in A. Here and elsewhere, n.s.: not significant; *p<0.05; **p<0.01; ***p<0.001; see Supplementary file 1 for all statistical information. (C) As in A, but for fraction of time spent running. (D) Quantification of the data shown in C. (E) CNO-induced change in the total distance traveled.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Related to Figure 6. (A) Average change in pairwise correlations of layer 2/3 neurons of visual cortex during locomotion in the group of mice before (gray, left) and after (pink) DREADD activation, and in the group before (gray, right) and after (orange) DREADD inhibition of basal forebrain cholinergic neurons. Here and elsewhere, n.s.: not significant; *p<0.05; **p<0.01; ***p<0.001; see Supplementary file 1 for all statistical information. Note, the differences in pre-Clozapine-N-oxide (CNO) locomotion-driven decorrelation between the different groups of mice complicate the direct comparison of the DREADD effects. To ease this comparison, we represented the same data in Figure 6G and H as a difference to pre-CNO levels. (B) As in A, but for layer 5 neurons of visual cortex.
+
 Finally, an effect of locomotion on the responses of layer 5 neurons, which to the best of our knowledge is unreported, is a decrease in latency to response. In layer 5 neurons, responses to grating stimuli appeared earlier during locomotion than they did while the mouse was stationary (Figures 4B and 7B). This decrease in response latency during locomotion was absent in layer 2/3 neurons (Figures 4A and 7A). Optogenetic activation of cholinergic axons was able to recapitulate the decrease in response latency in layer 5 neurons (Figures 4D and 7B and Figure 7—figure supplement 1B), while leaving layer 2/3 neuron response latency unaffected (Figures 4C and 7A and Figure 7—figure supplement 1A). Thus, cholinergic input decreases the response latency of layer 5 neurons.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig7-v1.jpg)
+
+**Figure 7.:** (A) Locomotion (brown) or optogenetic stimulation of cholinergic axons (pink) induced change in the response latency of layer 2/3 neurons in visual cortex to full field drifting grating onset. Here and elsewhere, n.s.: not significant; *p<0.05; **p<0.01; ***p<0.001; see Supplementary file 1 for all statistical information. (B) As in A, but for layer 5 neurons.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/89986/elife-89986-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Three example layer 2/3 neurons from visual cortex with the average response to grating stimuli in responsive trials while the mouse is stationary (black), locomoting (red), or on optogenetic stimulation of cholinergic axons in visual cortex (purple). (B) As in A, but for three example layer 5 neurons.
 
 ## Discussion
 
@@ -74,47 +154,309 @@ In summary, we show that cholinergic activity in visual cortex conveys a locomot
 
 ## Methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV2/5-hSyn1-FLEx-axon-GCaMP6s (1013–1015 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV PHP.eB-Ef1α-DIO-GCaMP6s (1011 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV2/1-hSyn-DIO-ChrimsonR-tdTomato (1011–1013 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV2/1-Ef1α-GCaMP6f-WPRE (1011–1014 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV2/1-Ef1α-DIO-hM3D(Gq)-mCherry (1011 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV2/1-Ef1α-DIO-hM4D(Gi)-mCherry (1011 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV2/9-hSyn-GRAB-ACh3.0 (1013 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV2/1-Ef1α-DIO-tdTomato-WPRE (1014 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV2/1-Ef1α-GFP-WPRE (1012 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine-N-oxide (CNO)</td>
+      <td>Tocris</td>
+      <td>Cat# 4936–10 mg</td>
+      <td>DREADD activator</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fentanyl citrate</td>
+      <td>Actavis</td>
+      <td>CAS 990-73-8</td>
+      <td>Anesthetic compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Midazolam (Dormicum)</td>
+      <td>Roche</td>
+      <td>CAS 59467-96-8</td>
+      <td>Anesthetic compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Medetomidine (Domitor)</td>
+      <td>Orion Pharma</td>
+      <td>CAS 86347-14-0</td>
+      <td>Anesthetic compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ropivacaine</td>
+      <td>Presenius Kabi</td>
+      <td>CAS 132112-35-7</td>
+      <td>Analgesic compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lidocaine</td>
+      <td>Bichsel</td>
+      <td>CAS 137-58-6</td>
+      <td>Analgesic compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Buprenorphine</td>
+      <td>Reckitt Benckiser Healthcare</td>
+      <td>CAS 52485-79-7</td>
+      <td>Analgesic compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Humigel</td>
+      <td>Virbac</td>
+      <td>-</td>
+      <td>Ophthalmic gel</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Flumazenil (Anexate)</td>
+      <td>Roche</td>
+      <td>CAS 78755-81-4</td>
+      <td>Anesthetic antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Atipamezole (Antisedan)</td>
+      <td>Orion Pharma</td>
+      <td>CAS 104054-27-5</td>
+      <td>Anesthetic antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Metacam</td>
+      <td>Boehringer Ingelheim</td>
+      <td>CAS 71125-39-8</td>
+      <td>Analgesic compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Butyl-2-cyanoacrylate</td>
+      <td>Braun</td>
+      <td>CAS 6606-65-1</td>
+      <td>Histoacryl</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dental cement (Paladur)</td>
+      <td>Heraeus Kulzer</td>
+      <td>CAS 9066-86-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>C57BL/6</td>
+      <td>Charles River</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>B6J.129S6-Chattm2(Cre)Lowl/MwarJAlias used here: ChAT-IRES-Cre</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:028861</td>
+      <td>Cre expression in cholinergic neurons</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB (2020b)</td>
+      <td>The MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>Data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabVIEW</td>
+      <td>National Instruments</td>
+      <td>RRID:SCR_014325</td>
+      <td>Hardware control</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Two-photon acquisition software</td>
+      <td>Keller laboratory</td>
+      <td>https://sourceforge.net/projects/iris-scanning/</td>
+      <td>Data acquisition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image data processing software</td>
+      <td>Keller laboratory</td>
+      <td>https://sourceforge.net/p/iris-scanning/calliope/HEAD/tree/</td>
+      <td>Data processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>https://www.python.org/</td>
+      <td>RRID:SCR_008394</td>
+      <td>Virtual reality</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Panda3D</td>
+      <td>https://www.panda3d.org/</td>
+      <td>N/A</td>
+      <td>Virtual reality</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Virtual reality and two-photon setup</td>
+      <td>Leinweber et al., 2014; Leinweber et al., 2017</td>
+      <td>DOI: https://doi.org/10.3791/50885, https://doi.org/10.1016/j.neuron.2017.08.036</td>
+      <td>Hardware setup</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>OBIS 673 nm LX</td>
+      <td>Coherent</td>
+      <td>Cat#1187194</td>
+      <td>Optogenetic stimulation laser</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LED</td>
+      <td>Prizmatix</td>
+      <td>UHP-T-595</td>
+      <td>Sham stimulation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Titanium headplate</td>
+      <td>FMI/ETHZ workshop</td>
+      <td>N/A</td>
+      <td>Mice head-fixation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dental drill</td>
+      <td>Meisinger</td>
+      <td>N/A</td>
+      <td>For craniotomy</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All mice used in experiments described in the paper were ChAT-IRES-Cre (Rossi et al., 2011) heterozygotes, kept on a C57BL/6 background. A total of 64 mice, both male and female, 6–16 weeks old at the start of the experiment, were used. See Supplementary file 2 for details of mouse inclusion for the different figures. Between experiments, mice were group-housed in a vivarium (light/dark cycle: 12/12 hr). All animal procedures were approved by and carried out in accordance with the guidelines laid by the Veterinary Department of the Canton of Basel-Stadt, Switzerland.
 
-## Surgery
+### Surgery
 
 For all surgical procedures, mice were anesthetized with a mixture of fentanyl (0.05 mg/kg; Actavis), midazolam (5.0 mg/kg; Dormicum, Roche), and medetomidine (0.5 mg/kg; Domitor, Orion) injected intraperitoneally. Analgesics were applied perioperatively (2% lidocaine gel, meloxicam 5 mg/kg) and postoperatively (buprenorphine 0.1 mg/kg, meloxicam 5 mg/kg). Eyes were covered with ophthalmic gel (Virbac Schweiz AG). Cranial windows were implanted as previously described (Keller et al., 2012; Leinweber et al., 2014). Briefly, using a dental drill, a 4 mm craniotomy was made over the right visual cortex, centered 2.5 mm lateral and 0.5 mm anterior to lambda. After injection of AAV vectors, the exposed cortex was sealed with a 4 mm circular glass coverslip and glued in place using gel superglue (Ultra Gel, Pattex). The remaining exposed surface of the skull was covered with Histoacryl (B. Braun), and a titanium head bar was fixed to the skull using dental cement (Paladur, Heraeus Kulzer). After surgery, anesthesia was antagonized by a mixture of flumazenil (0.5 mg/kg; Anexate, Roche) and atipamezole (2.5 mg/kg; Antisedan, Orion Pharma) injected intraperitoneally.
 
-## Axonal labeling
+### Axonal labeling
 
 To image the activity of basal forebrain cholinergic axons in visual cortex, we expressed a calcium indicator in basal forebrain cholinergic neurons. Surgery was performed as described above, and either an AAV2/5-hSyn1-FLEx-axon-GCaMP6s (1013 GC/ml) or an AAV-PHP.eB-Ef1α-DIO-GCaMP6s (1012 GC/ml) was injected at four locations ipsilateral to the imaging site (AP, ML, DV (in mm): +1.1, +0.1, –3.7 (medial septum); +1.1, +0.1, –4.1 and +0.8, +0.1, –4.2 (vertical limb of the diagonal band); +0.6, +0.6, –4.9 (horizontal limb of the diagonal band)) in ChAT-IRES-Cre mice.
 
-## GRAB imaging
+### GRAB imaging
 
 We injected an AAV vector carrying GRAB-ACh 3.0, AAV2/9-hSyn-GRAB-ACh3.0 (1013 GC/ml), in visual cortex. A 4 mm craniotomy was made over the right visual cortex and sealed with a glass coverslip as described above.
 
-## Chemogenetic experiments
+### Chemogenetic experiments
 
 To manipulate the activity of the basal forebrain cholinergic system, we used chemogenetic DREADD inhibitor AAV2/1-EF1α-DIO-hM4D(Gi)-mCherry (1011 GC/ml) or DREADD activator AAV2/1-EF1α-DIO-hM3D(Gq)-mCherry (1011 GC/ml). AAVs were injected in the anterior basal forebrain with coordinates as used for axonal imaging described above. DREADDs were stimulated using Clozapine N-oxide (CNO), which was dissolved in DMSO, diluted with saline, and injected intraperitoneally at a dose of 0.5 mg/kg body weight. Activity from each imaging site in the DREADD series was acquired starting 30-60 min after CNO injection.
 
-## Optogenetic experiments
+### Optogenetic experiments
 
 We injected AAV2/1-hSyn-DIO-ChrimsonR-tdTomato (1011 GC/ml) into basal forebrain at the same coordinates as for axonal imaging described above, and injected AAV2/1-Ef1α-GCaMP6f-WPRE (1011-14 GC/ml) into visual cortex for imaging neurons in layer 2/3 and layer 5. In no-opsin control mice, instead of ChrimsonR, we injected an AAV2/1-DIO-tdTomato-WPRE (1014 GC/ml) virus. ChrimsonR stimulation and functional imaging of GCaMP6f-expressing neurons was done as previously described (Attinger et al., 2017). For imaging, we used a modified Thorlabs B-Scope with a 12 kHz resonance scanner (Cambridge Technology). The illumination source for the optogenetic stimulation was a 637 nm laser (OBIS LX, Coherent). We used a dichroic mirror (ZT775sp-2p, Chroma) to combine the two-photon laser and stimulation laser. A second long-pass dichroic mirror (F38-555SG, Semrock) was used to split the GCaMP emission from both illumination light sources. Light leak from the 637 nm stimulation laser was reduced by synchronizing the stimulation laser to the turnaround times of the resonant scanner (during which imaging data were not acquired). Lastly, amplified PMT signals were digitally bandpass filtered at 80 MHz to reduce the effect of ringing in the amplifier. This allowed for near stimulation-artifact free synchronous imaging and optogenetic stimulation. For all experiments with stimulation of cholinergic axons locally in visual cortex, we used a square-wave pulse of 1 s duration and 10 mW/mm2 power (measured at objective). The median inter-trial interval for different stimulation events was 15 s for optogenetic stimulation-only trials, 12 s for optogenetic stimulation with grating onset, 35 s for optogenetic stimulation with visuomotor mismatch, and 45 s for optogenetic stimulation with locomotion onset in the closed loop. To measure correlation changes, we employed a longer laser stimulation window of 1 min, at 40 Hz (50% duty cycle), with an average power output of 20 mW/mm2 (measured at objective). For sham stimulation, we used an optical guide coupled to a high-power LED (UHP-T-595, Prizmatix) to diffusely illuminate the mouse and surrounding virtual reality setup.
 
-## Virtual reality environment
+### Virtual reality environment
 
 The virtual reality setup is based on the design of Dombeck and colleagues (Dombeck et al., 2007). Briefly, mice were head-fixed and free to run on an air-supported spherical treadmill. The rotation of the ball was restricted around the vertical axis with a pin. The virtual reality environment was projected onto a toroidal screen covering approximately 240° horizontally and 100° vertically of the mouse’s visual field, using a projector (Samsung SP-F10M) synchronized to the resonant scanner of the two-photon microscope. The virtual environment consisted of an infinite corridor with walls patterned with vertical sinusoidal gratings with a spatial frequency of approximately 0.04 cycles per degree (Leinweber et al., 2014). In closed loop condition, the locomotion of the mouse was coupled to movement along a virtual tunnel. In open loop condition, we uncoupled the two and replayed the visual flow from a preceding closed loop condition. In grating condition, we presented full field drifting gratings (0°, 45°, 90°, 270°, moving in either direction) in a pseudo-random sequence. Grating stimuli were presented for between 2 s and 3 s. In the inter-stimulus interval (between 2 s and 4 s), mice were shown a gray screen with average luminance matched to that of the grating stimuli.
 
-## Eye tracking and facial movement measurement
+### Eye tracking and facial movement measurement
 
 During all experiments, we recorded the mouse’s left eye (contralateral to the imaged hemisphere) with a CMOS infrared camera at 30 Hz frame rate. The pupil was backlit by the 930 nm laser used for two-photon imaging. We calculated pupil diameter offline by fitting a circle to the pupil. Frames with occluded pupil were excluded from the analysis. To extract facial movements, we computed the average image displacement in different image patches on the face of the mouse.
 
-## Two-photon microscopy
+### Two-photon microscopy
 
 Functional two-photon calcium imaging was performed using custom-built two-photon microscopes (Leinweber et al., 2014). The illumination source was a tunable femtosecond laser (Insight, Spectra-Physics or Chameleon, Coherent) tuned to 930 nm. Emission light was band-pass filtered using a 525/50 filter for GCaMP and a 607/70 filter for tdTomato/mCherry (Semrock) and detected using a GaAsP photomultiplier (H7422, Hamamatsu). Photomultiplier signals were amplified (DHPCA-100, Femto), digitized (NI5772, National Instruments) at 800 MHz, and band-pass filtered at 80 MHz using a digital Fourier-transform filter implemented in custom-written software (see Key resources table) on an FPGA (NI5772, National Instruments). The scanning system of the microscopes was based either on a 12 kHz or an 8 kHz resonant scanner (Cambridge Technology). Images were acquired at a resolution of 750×400 pixels (60 Hz or 40 Hz frame rate, respectively), and a piezo-electric linear actuator (P-726, Physik Instrumente) was used to move the objective (Nikon 16 x, 0.8 NA) in steps of 15 µm between frames to acquire images at 4 different depths. This resulted in an effective frame rate of 15 Hz or 10 Hz, respectively. The field of view was 375 µm×300 µm.
 
-## Extraction of neuronal activity
+### Extraction of neuronal activity
 
 Calcium imaging data were processed as previously described (Keller et al., 2012) and all data analysis was done in MATLAB (MathWorks). Briefly, raw images were full-frame registered to correct for lateral brain motion. Neurons and axons were manually selected based on mean and maximum fluorescence images. For GRAB imaging, neuropil and blood vessels were manually selected. For a subset of mice, the apical dendrites of layer 5 neurons were marked in layer 2/3 by manually tracing them to their soma in layer 5 using a z-stack acquired at the end of an experiment. Raw fluorescence traces were corrected for slow drift in fluorescence using an 8th-percentile filtering with a 66 s (or 1000 frames) window (Dombeck et al., 2007). ΔF/F traces were calculated as mean fluorescence in a selected region of every imaging frame, subtracted, and normalized by the overall median fluorescence. All neuronal calcium activity data was acquired at 15 Hz. For axonal imaging, 9 (of 25 sites) were imaged at 10 Hz, and analytically resampled at 15 Hz using a polyphase antialiasing filter to make the time-base compatible with the rest of the axonal imaging data.
 
-## Data analysis
+### Data analysis
 
 All data analysis was done using custom scripts written in MATLAB (MathWorks). To quantify the average population response traces, we first calculated the average event-triggered fluorescence trace for each region of interest (ROI). The responses of all ROIs was then averaged and baseline-subtracted.
 
@@ -136,6 +478,6 @@ We defined latency to activation on locomotion onset (Figure 1—figure suppleme
 
 Response latency to grating stimuli (Figure 7) was defined for a neuron as the time after onset when the calcium activity, averaged across onsets, first was 2 standard deviations above baseline, and remained above this threshold for at least 1/3 s. Neurons that did not reach the threshold within the analysis window of 0 s to +2 s (equal to the duration of the grating presentation) were not included in the analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical information for the tests performed in the manuscript is provided in Supplementary file 1. Unless stated otherwise, the shading indicates the standard error of the mean across axons or neurons. For analysis where the experimental unit was an axon, neuron, or pair of neurons, we used hierarchical bootstrap (Saravanan et al., 2020) for statistical testing due to the nested nature (axons/neurons and mice) of the data. Briefly, we first resampled the data (with replacement) at the level of imaging sites, and then, from the selected sites, resampled for axons (or neurons or neuron pairs). We then computed the mean of this bootstrap sample and repeated this 10 000 times (or 1000 times when comparing response traces in Figure 4, Figure 4—figure supplement 2 and Figure 4—figure supplement 3) to generate a bootstrap distribution of the mean estimate. For paired tests, the p-value was defined as the proportion of bootstrap samples higher (or lower, depending on the hypothesis) than zero. For unpaired tests, the distribution of the mean for the two variables were compared as the proportion of values higher (or lower, depending on the hypothesis). For analysis where the experimental unit was the imaging site, we first tested for normality using the Kolmogorov-Smirnov test at a significance level of 5%. For datasets that did not pass the test for normality, the medians were compared with the Wilcoxon rank-sum test or signed rank test, as applicable. Otherwise, the means were compared using paired or unpaired t-tests, as applicable.

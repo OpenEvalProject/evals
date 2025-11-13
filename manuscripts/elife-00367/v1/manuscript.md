@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.00367.001 We do not know how or why multicellularity evolved. We used the budding yeast, Saccharomyces cerevisiae , to ask whether nutrients that must be digested extracellularly select for the evolution of undifferentiated multicellularity. Because yeast use invertase to hydrolyze sucrose extracellularly and import the resulting monosaccharides, single cells cannot grow at low cell and sucrose concentrations. Three engineered strategies overcame this problem: forming multicellular clumps, importing sucrose before hydrolysis, and increasing invertase expression. We evolved populations in low sucrose to ask which strategy they would adopt. Of 12 successful clones, 11 formed multicellular clumps through incomplete cell separation, 10 increased invertase expression, none imported sucrose, and 11 increased hexose transporter expression, a strategy we had not engineered. Identifying causal mutations revealed genes and pathways, which frequently contributed to the evolved phenotype. Our study shows that combining rational design with experimental evolution can help evaluate hypotheses about evolutionary strategies. DOI: http://dx.doi.org/10.7554/eLife.00367.001
+We do not know how or why multicellularity evolved. We used the budding yeast, Saccharomyces cerevisiae, to ask whether nutrients that must be digested extracellularly select for the evolution of undifferentiated multicellularity. Because yeast use invertase to hydrolyze sucrose extracellularly and import the resulting monosaccharides, single cells cannot grow at low cell and sucrose concentrations. Three engineered strategies overcame this problem: forming multicellular clumps, importing sucrose before hydrolysis, and increasing invertase expression. We evolved populations in low sucrose to ask which strategy they would adopt. Of 12 successful clones, 11 formed multicellular clumps through incomplete cell separation, 10 increased invertase expression, none imported sucrose, and 11 increased hexose transporter expression, a strategy we had not engineered. Identifying causal mutations revealed genes and pathways, which frequently contributed to the evolved phenotype. Our study shows that combining rational design with experimental evolution can help evaluate hypotheses about evolutionary strategies.
 
 ## Introduction
 
@@ -29,105 +29,1399 @@ We compared engineered and evolved solutions to the problem of growing on low su
 
 ## Results
 
-## Three engineered strategies for growth in low sucrose
+### Three engineered strategies for growth in low sucrose
 
-We began by asking whether undifferentiated multicellularity was the only strategy that allowed yeast cells to grow on low sucrose. We hypothesized that there were two alternative strategies: increasing invertase expression, and importing sucrose and then hydrolyzing it inside the cell (
+We began by asking whether undifferentiated multicellularity was the only strategy that allowed yeast cells to grow on low sucrose. We hypothesized that there were two alternative strategies: increasing invertase expression, and importing sucrose and then hydrolyzing it inside the cell (Figure 1). Having previously tested undifferentiated multicellularity (Koschwanez et al., 2011), we engineered the other two strategies and tested whether they allow cells to grow from low densities in low sucrose concentrations. Population growth requires both cell growth and cell proliferation. For simplicity, we refer to the combination of these properties as growth.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig1-v1.jpg)
 
-**Figure 1.:** Strategy 1, form multicellular clumps, was previously verified (Koschwanez et al., 2011). The results of testing strategy 2, make more invertase, and strategy 3, import sucrose, are shown in Figure 2. All three strategies outcompete wild-type strains when the sole carbon source is 1 mM sucrose (Table 1).DOI: http://dx.doi.org/10.7554/eLife.00367.003
+**Figure 1.:** Strategy 1, form multicellular clumps, was previously verified (Koschwanez et al., 2011). The results of testing strategy 2, make more invertase, and strategy 3, import sucrose, are shown in Figure 2. All three strategies outcompete wild-type strains when the sole carbon source is 1 mM sucrose (Table 1).
 
-Increased invertase expression will increase the rate of sucrose hydrolysis at the cell wall. Although cells will still lose most of the fructose and glucose to the environment, the increased hydrolysis rate will increase the monosaccharide concentration at the plasma membrane and lead to a higher rate of sugar import. We increased invertase expression by replacing the promoter of the invertase gene (
+Increased invertase expression will increase the rate of sucrose hydrolysis at the cell wall. Although cells will still lose most of the fructose and glucose to the environment, the increased hydrolysis rate will increase the monosaccharide concentration at the plasma membrane and lead to a higher rate of sugar import. We increased invertase expression by replacing the promoter of the invertase gene (SUC2) with the GAL1 promoter in a yeast strain that is unable to utilize galactose (see supplementary file 3 for all strains used in this study; Ingolia and Murray 2007). As a result, galactose serves as a gratuitous inducer: it induces Suc2 but cannot itself be metabolized. Single cells were placed in each microwell of a 96-well plate, and incubated with a range of sucrose and galactose concentrations. Figure 2A shows that increasing invertase expression allows growth from a single cell in low sucrose concentrations; increasing inducer concentrations leads to better growth.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig2-v1.jpg)
 
-**Figure 2.:** (A) Strong expression of secreted invertase allows growth from a single cell at low sucrose concentrations. All GAL1 promoter induction data is from the same yeast strain yJHK312 in which transcription of SUC2 is driven by the GAL1 promoter. Galactokinase (GAL1) is deleted from this strain so that galactose acts as an inducer and not as a carbon source, and the Gal regulon has been engineered to produce a graded rather than a bistable response to increased galactose concentrations by overexpressing GAL3 from the ACT1 promoter (Ingolia and Murray, 2007). (B) Sucrose import allows growth from a single cell in low sucrose concentrations. The ‘SUC2, import' strain yJHK372 expresses SUC2 from the SUC2 promoter and MAL11 from the ACT1 promoter. The ‘SUC2, no import' strain yJHK222 expresses SUC2 from the SUC2 promoter. The ‘suc2-1cyt, import' strain yJHK373 expresses cytoplasmic invertase from the SUC2 promoter and MAL11 from the ACT1 promoter. The ‘suc2Δ, import' strain yJHK374 has SUC2 deleted and expresses MAL11 from the ACT1 promoter. For both (A) and (B), single cells were inoculated by fluorescence activated cell sorting (FACS) into 150 µl wells at the given sugar and galactose concentration and grown without shaking for 85 hr at 30°C and the results shown are totals of three experiments; each experiment used one plate per sugar concentration, and each plate used 24 wells per strain or galactose concentration. In both figures, 2 mM glucose + 2 mM fructose is used as a positive control, and error bars refer to 95% binomial confidence interval using the adjusted Wald method. FRU is fructose, GLC is glucose, and SUC is sucrose.DOI: http://dx.doi.org/10.7554/eLife.00367.004
+**Figure 2.:** (A) Strong expression of secreted invertase allows growth from a single cell at low sucrose concentrations. All GAL1 promoter induction data is from the same yeast strain yJHK312 in which transcription of SUC2 is driven by the GAL1 promoter. Galactokinase (GAL1) is deleted from this strain so that galactose acts as an inducer and not as a carbon source, and the Gal regulon has been engineered to produce a graded rather than a bistable response to increased galactose concentrations by overexpressing GAL3 from the ACT1 promoter (Ingolia and Murray, 2007). (B) Sucrose import allows growth from a single cell in low sucrose concentrations. The ‘SUC2, import' strain yJHK372 expresses SUC2 from the SUC2 promoter and MAL11 from the ACT1 promoter. The ‘SUC2, no import' strain yJHK222 expresses SUC2 from the SUC2 promoter. The ‘suc2-1cyt, import' strain yJHK373 expresses cytoplasmic invertase from the SUC2 promoter and MAL11 from the ACT1 promoter. The ‘suc2Δ, import' strain yJHK374 has SUC2 deleted and expresses MAL11 from the ACT1 promoter. For both (A) and (B), single cells were inoculated by fluorescence activated cell sorting (FACS) into 150 µl wells at the given sugar and galactose concentration and grown without shaking for 85 hr at 30°C and the results shown are totals of three experiments; each experiment used one plate per sugar concentration, and each plate used 24 wells per strain or galactose concentration. In both figures, 2 mM glucose + 2 mM fructose is used as a positive control, and error bars refer to 95% binomial confidence interval using the adjusted Wald method. FRU is fructose, GLC is glucose, and SUC is sucrose.
 
 An alternative strategy is importing sucrose before hydrolyzing it since some invertase molecules are retained in the cytoplasm rather than being exported by protein secretion. Mal11 is a maltose importer that can also import sucrose (Stambuk et al., 1999), but is not expressed in our yeast strains (Brown et al., 2010). We expressed Mal11 from a strong, constitutive promoter (PACT1) in three different strains: a standard lab strain (SUC2), a strain that does not secrete invertase but produces cytoplasmic invertase (suc2-1cyt) (Koschwanez et al., 2011), and a strain that lacks invertase (suc2Δ). Figure 2B shows that both the SUC2 and suc2-1cyt strains that make the maltose importer can grow from single cells on as little as 1 mM sucrose. The nearly identical growth of the SUC2 and suc2-1cyt strains shows that the importer makes extracellular sucrose digestion dispensable, and the failure of the suc2Δ strains to grow shows that sucrose utilization after import still requires invertase. Thus three different strategies, clumping, increased invertase expression, and sucrose import, each allows yeast to grow from low cell density at low sucrose concentrations.
 
-We competed each of the three strategies against an unmodified strain to ask whether they could invade an ancestral population. Derivatives of the two competing strains, each expressing a different fluorescent protein, were mixed together and passaged on 1 mM sucrose. In each passage, the cells were grown together for almost eight generations and then diluted 200-fold into fresh medium. The competition was assessed by the number of passages required to eliminate the less fit strain, or the ratio between the two strains at the end of the sixth passage. The three engineered strains all outcompeted the ancestral wild-type lab strain in 1 mM sucrose (Table 1), although the strain engineered to express increased invertase (EngHiInvertase) was a much worse competitor than the other two (EngClumpy, EngSucImport).10.7554/eLife.00367.005Table 1.Fitness of engineered strains, evolved clones, recreated strains, and reverted strainsDOI: http://dx.doi.org/10.7554/eLife.00367.005Strain 1Strain 21 mM sucrose1 mM glucose + 1 mM fructose80 mM glucoseEngClumpyWild-type lab+++00EngHiInvertaseWild-type lab+00EngSucImportWild-type lab+++00EvoClone1Ancestor++++−−−−−−−EvoClone2Ancestor++++0−−EvoClone3Ancestor++++−−−−−−−EvoClone4Ancestor+++++−−−EvoClone5Ancestor+++++−−−EvoClone6Ancestor+++++−−EvoClone7AAncestor++++−−−−−EvoClone7BAncestor+++++−EvoClone7CAncestor++++−−−−−−−EvoClone8Ancestor++++−−−−−EvoClone9Ancestor++++−−−−EvoClone10Ancestor++++−−−−−Recreated2Ancestor++++−−Recreated9Ancestor++++0−EvoClone2Recreated2++0EvoClone9Recreated9+−−−−EvoClone2Reverted2+++++−EvoClone9Reverted9++++++EvoClone2EngClumpy++0−−ace2ΔAncestor+++00gin4-W19* irc8-G57V mck1-G227Vfs249Ancestor+++−−++++Strain 1 eliminates strain 2 in 1–2 growth cycles.+++ Strain 1 eliminates strain 2 in 3–4 growth cycles.++ Strain 1 eliminates strain 2 in 5–6 growth cycles.+ Strain 1 > 75% of population after 6 growth cycles.0 Neither strain is >75% of population after 6 growth cycles.− Strain 2 > 75% of population after 6 growth cycles.−− Strain 2 eliminates strain 1 in 5–6 growth cycles.−−− Strain 2 eliminates strain 1 in 3–4 growth cycles.−−−− Strain 2 eliminates strain 1 in 1–2 growth cycles.Growth cycle numbers are averaged over three independent experiments.
+We competed each of the three strategies against an unmodified strain to ask whether they could invade an ancestral population. Derivatives of the two competing strains, each expressing a different fluorescent protein, were mixed together and passaged on 1 mM sucrose. In each passage, the cells were grown together for almost eight generations and then diluted 200-fold into fresh medium. The competition was assessed by the number of passages required to eliminate the less fit strain, or the ratio between the two strains at the end of the sixth passage. The three engineered strains all outcompeted the ancestral wild-type lab strain in 1 mM sucrose (Table 1), although the strain engineered to express increased invertase (EngHiInvertase) was a much worse competitor than the other two (EngClumpy, EngSucImport).
 
-## Experimental evolution produces multicellularity
+**Table 1.**
+ Fitness of engineered strains, evolved clones, recreated strains, and reverted strains
 
-Having shown that engineering can produce three different strategies for growth on low sucrose, we asked, ‘What would evolution do?' We experimentally evolved multiple, parallel cultures to grow well on low sucrose. Ten independent populations of budding yeast were serially diluted in minimal, 1 mM sucrose-containing medium. The starting strain for each population was a haploid, non-clumpy, prototrophic strain (
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain 1</th>
+      <th>Strain 2</th>
+      <th>1 mM sucrose</th>
+      <th>1 mM glucose + 1 mM fructose</th>
+      <th>80 mM glucose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EngClumpy</td>
+      <td>Wild-type lab</td>
+      <td>+++</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EngHiInvertase</td>
+      <td>Wild-type lab</td>
+      <td>+</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EngSucImport</td>
+      <td>Wild-type lab</td>
+      <td>+++</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EvoClone1</td>
+      <td>Ancestor</td>
+      <td>++++</td>
+      <td>−−−</td>
+      <td>−−−−</td>
+    </tr>
+    <tr>
+      <td>EvoClone2</td>
+      <td>Ancestor</td>
+      <td>++++</td>
+      <td>0</td>
+      <td>−−</td>
+    </tr>
+    <tr>
+      <td>EvoClone3</td>
+      <td>Ancestor</td>
+      <td>++++</td>
+      <td>−−−</td>
+      <td>−−−−</td>
+    </tr>
+    <tr>
+      <td>EvoClone4</td>
+      <td>Ancestor</td>
+      <td>++++</td>
+      <td>+</td>
+      <td>−−−</td>
+    </tr>
+    <tr>
+      <td>EvoClone5</td>
+      <td>Ancestor</td>
+      <td>++++</td>
+      <td>+</td>
+      <td>−−−</td>
+    </tr>
+    <tr>
+      <td>EvoClone6</td>
+      <td>Ancestor</td>
+      <td>++++</td>
+      <td>+</td>
+      <td>−−</td>
+    </tr>
+    <tr>
+      <td>EvoClone7A</td>
+      <td>Ancestor</td>
+      <td>++++</td>
+      <td>−−</td>
+      <td>−−−</td>
+    </tr>
+    <tr>
+      <td>EvoClone7B</td>
+      <td>Ancestor</td>
+      <td>++++</td>
+      <td>+</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>EvoClone7C</td>
+      <td>Ancestor</td>
+      <td>++++</td>
+      <td>−−−</td>
+      <td>−−−−</td>
+    </tr>
+    <tr>
+      <td>EvoClone8</td>
+      <td>Ancestor</td>
+      <td>++++</td>
+      <td>−</td>
+      <td>−−−−</td>
+    </tr>
+    <tr>
+      <td>EvoClone9</td>
+      <td>Ancestor</td>
+      <td>++++</td>
+      <td>−</td>
+      <td>−−−</td>
+    </tr>
+    <tr>
+      <td>EvoClone10</td>
+      <td>Ancestor</td>
+      <td>++++</td>
+      <td>−</td>
+      <td>−−−−</td>
+    </tr>
+    <tr>
+      <td>Recreated2</td>
+      <td>Ancestor</td>
+      <td>++++</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Recreated9</td>
+      <td>Ancestor</td>
+      <td>++++</td>
+      <td>0</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>EvoClone2</td>
+      <td>Recreated2</td>
+      <td>+</td>
+      <td>+</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EvoClone9</td>
+      <td>Recreated9</td>
+      <td>+</td>
+      <td>−</td>
+      <td>−−−</td>
+    </tr>
+    <tr>
+      <td>EvoClone2</td>
+      <td>Reverted2</td>
+      <td>++++</td>
+      <td>+</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>EvoClone9</td>
+      <td>Reverted9</td>
+      <td>++++</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>EvoClone2</td>
+      <td>EngClumpy</td>
+      <td>++</td>
+      <td>0</td>
+      <td>−−</td>
+    </tr>
+    <tr>
+      <td>ace2Δ</td>
+      <td>Ancestor</td>
+      <td>+++</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>gin4-W19* irc8-G57V mck1-G227Vfs249</td>
+      <td>Ancestor</td>
+      <td>+++</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+  </tbody>
+</table>
+
+_++++Strain 1 eliminates strain 2 in 1–2 growth cycles.+++ Strain 1 eliminates strain 2 in 3–4 growth cycles.++ Strain 1 eliminates strain 2 in 5–6 growth cycles.+ Strain 1 > 75% of population after 6 growth cycles.0 Neither strain is >75% of population after 6 growth cycles.− Strain 2 > 75% of population after 6 growth cycles.−− Strain 2 eliminates strain 1 in 5–6 growth cycles.−−− Strain 2 eliminates strain 1 in 3–4 growth cycles.−−−− Strain 2 eliminates strain 1 in 1–2 growth cycles.Growth cycle numbers are averaged over three independent experiments._
+
+### Experimental evolution produces multicellularity
+
+Having shown that engineering can produce three different strategies for growth on low sucrose, we asked, ‘What would evolution do?' We experimentally evolved multiple, parallel cultures to grow well on low sucrose. Ten independent populations of budding yeast were serially diluted in minimal, 1 mM sucrose-containing medium. The starting strain for each population was a haploid, non-clumpy, prototrophic strain (Figure 3A) that constitutively expressed YFP and carried a DNA polymerase mutation (POL3-L523D) that elevated its mutation rate roughly 100-fold (Jin et al., 2005). We used a mutator strain to increase the speed of adaptation. At each growth cycle, 5×105 cells were inoculated into 50 ml of medium (Figure 3B). Over 25–35 serial dilutions, the time it took the culture to become cloudy fell from 2 weeks to 3 days, and all 10 populations (named EvoPopulation1–10) displayed a clumpy phenotype (Figure 3C). There was no loss of constitutive YFP expression.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig3-v1.jpg)
 
-**Figure 3.:** (A) An ancestor derivative (yJHK111) after growth in 1 mM sucrose. (B) Schematic of experimental evolution. Cells were inoculated in 1 mM sucrose media, grown to high density, and then 105 cells were reinoculated into fresh media for a total of 25–35 cycles. A sample was frozen down at each serial dilution. (C) Samples taken from the last time point of the evolved populations. Representative DIC images were taken with a 40× objective in a glass-bottomed, 96-well plate. All scale bars are 50 µm.DOI: http://dx.doi.org/10.7554/eLife.00367.006
+**Figure 3.:** (A) An ancestor derivative (yJHK111) after growth in 1 mM sucrose. (B) Schematic of experimental evolution. Cells were inoculated in 1 mM sucrose media, grown to high density, and then 105 cells were reinoculated into fresh media for a total of 25–35 cycles. A sample was frozen down at each serial dilution. (C) Samples taken from the last time point of the evolved populations. Representative DIC images were taken with a 40× objective in a glass-bottomed, 96-well plate. All scale bars are 50 µm.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** EvoPopulation7 had three morphologically distinct clones, named EvoClone7A, 7B, and 7C. For each of the remaining populations, we selected one clone from a group of eight morphologically indistinguishable clones. Representative DIC images were taken with a 40× objective in a glass-bottom 96-well plate. Scale bars are 50 µm.DOI: http://dx.doi.org/10.7554/eLife.00367.007
+**Figure 3—figure supplement 1.:** EvoPopulation7 had three morphologically distinct clones, named EvoClone7A, 7B, and 7C. For each of the remaining populations, we selected one clone from a group of eight morphologically indistinguishable clones. Representative DIC images were taken with a 40× objective in a glass-bottom 96-well plate. Scale bars are 50 µm.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** Sizes were measured on a Multisizer 3 Coulter counter. The thick line in the center of the box is the median size of the cells. The left and right side of the box correspond to the first and third quartiles. The lines extending from the boxes (the whiskers) correspond to the values within 1.5 times the inter-quartile range (IQR). Clumps or cells with sizes outside the whiskers are shown as dots. Cells were grown in the media shown for at least 12 hr, and sizes were measured during log-phase growth. Note that the x-axis is log-scale.DOI: http://dx.doi.org/10.7554/eLife.00367.008
+**Figure 3—figure supplement 2.:** Sizes were measured on a Multisizer 3 Coulter counter. The thick line in the center of the box is the median size of the cells. The left and right side of the box correspond to the first and third quartiles. The lines extending from the boxes (the whiskers) correspond to the values within 1.5 times the inter-quartile range (IQR). Clumps or cells with sizes outside the whiskers are shown as dots. Cells were grown in the media shown for at least 12 hr, and sizes were measured during log-phase growth. Note that the x-axis is log-scale.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig3-figsupp3-v1.jpg)
 
-**Figure 3—figure supplement 3.:** Representative 40× DIC images of EvoClone9 cells that were grown to log phase in (A) 1 mM sucrose, (B) 80 mM glucose and (C) 1 mM glucose + 1 mM fructose. Scale bars are 50 µm.DOI: http://dx.doi.org/10.7554/eLife.00367.009
+**Figure 3—figure supplement 3.:** Representative 40× DIC images of EvoClone9 cells that were grown to log phase in (A) 1 mM sucrose, (B) 80 mM glucose and (C) 1 mM glucose + 1 mM fructose. Scale bars are 50 µm.
 
 We asked which strategies individual populations had adopted. Eight clones were selected from each population and their morphology and growth on sucrose were examined. For nine of the ten populations (all but EvoPopulation7), all the clones were morphologically identical; one clone was selected from each of these populations and used for further studies. EvoPopulation7 produced three different phenotypes: one had medium-sized clumps (EvoClone7A), one was not clumpy (EvoClone7B), and one had large clumps (EvoClone7C). Images of the clones are shown in Figure 3—figure supplement 1, and size distributions of each clone are shown in Figure 3—figure supplement 2.
 
 We tested the ability of the evolved clones to compete with their ancestor. Each of the evolved clones strongly outcompeted their ancestor, eliminating it from cultures within two passages on 1 mM sucrose (Table 1). We conclude that efficient use of public goods, liberated through extracellular hydrolysis, selects for the evolution of undifferentiated multicellularity.
 
-## Clumps form by failure in cell separation
+### Clumps form by failure in cell separation
 
 We asked how the evolved clones formed clumps. Wild yeast isolates can form multicellular clumps in two ways: flocculation (Guo et al., 2000), in which separate cells stick to each other via cell wall-bound adhesins, or failure to separate daughters from their mothers because the cell wall that joins them is not digested after cytokinesis (Yvert et al., 2003). To find which method the evolved clones used, we co-cultured two different colored versions of each evolved clone, using constitutive expression of different fluorescent proteins to mark the two versions. If the clumps formed by flocculation, many clumps would contain cells of both colors; if cells fail to separate, each clump would contain only one color since it would arise by the repeated division of a single cell.
 
-All the multicellular clones are the result of incomplete separation; each clump contains cells of only one or the other color. Representative images from two evolved clones are shown in
+All the multicellular clones are the result of incomplete separation; each clump contains cells of only one or the other color. Representative images from two evolved clones are shown in Figure 4 (images from the remaining clones are shown in Figure 4—figure supplement 1). We checked our method by using two control strains: a flocculating strain that expresses a high level of Flo1, a known adhesin, (Smukalla et al., 2008) and a lab strain that contains a wild isolate allele of AMN1 (AMN1-RM11), which prevents cell separation after many of the cell divisions (Yvert et al., 2003). Figure 4 shows that the flocculating clumps from the strain expressing Flo1 contain both colors, whereas clumps from the AMN1-RM11 strain contain only one color.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig4-v1.jpg)
 
-**Figure 4.:** Each image shows two genetically identical strains that are labeled with different fluorescent proteins, shown as magenta and green in the image. The strains were grown together from low density in 1 mM sucrose. (A) Lab strain with constitutively expressed FLO1. Flocculation is evident from the mix of colors in a single clump. (B) Lab strain with the RM11 allele of AMN1. (C) EvoClone2. (D) EvoClone9. The clumps in the AMN1-RM11 strain and the evolved clones are uniform in color, showing that clumpiness is due to failure to separate after cell division. Representative fluorescent images were taken with a 20× objective in a glass-bottomed, 96-well plate. All scale bars are 50 µm.DOI: http://dx.doi.org/10.7554/eLife.00367.010
+**Figure 4.:** Each image shows two genetically identical strains that are labeled with different fluorescent proteins, shown as magenta and green in the image. The strains were grown together from low density in 1 mM sucrose. (A) Lab strain with constitutively expressed FLO1. Flocculation is evident from the mix of colors in a single clump. (B) Lab strain with the RM11 allele of AMN1. (C) EvoClone2. (D) EvoClone9. The clumps in the AMN1-RM11 strain and the evolved clones are uniform in color, showing that clumpiness is due to failure to separate after cell division. Representative fluorescent images were taken with a 20× objective in a glass-bottomed, 96-well plate. All scale bars are 50 µm.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** See Figure 4 for a description of the experiment. Images of EvoClone2 and EvoClone9 in Figure 4 are cropped versions of the images shown here for EvoClone2 and EvoClone9 (cropped area outlined in yellow). Scale bars are 50 µm.DOI: http://dx.doi.org/10.7554/eLife.00367.011
+**Figure 4—figure supplement 1.:** See Figure 4 for a description of the experiment. Images of EvoClone2 and EvoClone9 in Figure 4 are cropped versions of the images shown here for EvoClone2 and EvoClone9 (cropped area outlined in yellow). Scale bars are 50 µm.
 
-## RNA sequencing shows that most clones elevate invertase expression and hexose transporter expression
+### RNA sequencing shows that most clones elevate invertase expression and hexose transporter expression
 
-We used RNA sequencing to examine the pattern of gene expression in the evolved clones. We isolated and sequenced RNA from the 12 evolved clones and two independent ancestor derivatives, all grown in 1 mM sucrose to log phase. In 10 of the 12 clones invertase (SUC2) expression was elevated between 3- and 21-fold above their ancestor (Table 2); EvoClone7C and EvoClone8 were the only clones with no significant change in SUC2 expression.10.7554/eLife.00367.012Table 2.Significant changes in invertase and hexose transporter expressionDOI: http://dx.doi.org/10.7554/eLife.00367.012Strain nameSignificant increases in invertase (SUC2) expressionSignificant increases in hexose transporter expressionEvoClone15XHXT1 42XHXT2 5XHXT3 108XHXT4 91XEvoClone27XHXT4 9XEvoClone37XHXT4 4XEvoClone49XHXT1 4XHXT3 32XHXT4 14XHXT9 5XHXT11 4XEvoClone57XHXT1 4XHXT2 8XHXT3 6XHXT4 21XHXT6 7XHXT7 6XEvoClone69XHXT2 9XHXT4 12XEvoClone7A3XHXT2 7XHXT3 2XHXT4 92XEvoClone7B3XHXT2 10XHXT3 22XHXT4 103XEvoClone7CNot significantHXT1 3XHXT2 4XHXT3 10XHXT4 52XHXT6 4XEvoClone8Not significantHXT2 6XHXT3 5XHXT4 13XEvoClone94XHXT2 5XEvoClone1021XNoneSee supplementary file 1C for list of all genes that were significantly changed and their change in each evolved clone.
+We used RNA sequencing to examine the pattern of gene expression in the evolved clones. We isolated and sequenced RNA from the 12 evolved clones and two independent ancestor derivatives, all grown in 1 mM sucrose to log phase. In 10 of the 12 clones invertase (SUC2) expression was elevated between 3- and 21-fold above their ancestor (Table 2); EvoClone7C and EvoClone8 were the only clones with no significant change in SUC2 expression.
+
+**Table 2.**
+ Significant changes in invertase and hexose transporter expression
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain name</th>
+      <th>Significant increases in invertase (SUC2) expression</th>
+      <th>Significant increases in hexose transporter expression</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EvoClone1</td>
+      <td>5X</td>
+      <td>HXT1 42X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT2 5X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT3 108X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT4 91X</td>
+    </tr>
+    <tr>
+      <td>EvoClone2</td>
+      <td>7X</td>
+      <td>HXT4 9X</td>
+    </tr>
+    <tr>
+      <td>EvoClone3</td>
+      <td>7X</td>
+      <td>HXT4 4X</td>
+    </tr>
+    <tr>
+      <td>EvoClone4</td>
+      <td>9X</td>
+      <td>HXT1 4X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT3 32X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT4 14X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT9 5X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT11 4X</td>
+    </tr>
+    <tr>
+      <td>EvoClone5</td>
+      <td>7X</td>
+      <td>HXT1 4X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT2 8X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT3 6X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT4 21X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT6 7X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT7 6X</td>
+    </tr>
+    <tr>
+      <td>EvoClone6</td>
+      <td>9X</td>
+      <td>HXT2 9X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT4 12X</td>
+    </tr>
+    <tr>
+      <td>EvoClone7A</td>
+      <td>3X</td>
+      <td>HXT2 7X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT3 2X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT4 92X</td>
+    </tr>
+    <tr>
+      <td>EvoClone7B</td>
+      <td>3X</td>
+      <td>HXT2 10X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT3 22X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT4 103X</td>
+    </tr>
+    <tr>
+      <td>EvoClone7C</td>
+      <td>Not significant</td>
+      <td>HXT1 3X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT2 4X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT3 10X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT4 52X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT6 4X</td>
+    </tr>
+    <tr>
+      <td>EvoClone8</td>
+      <td>Not significant</td>
+      <td>HXT2 6X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT3 5X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HXT4 13X</td>
+    </tr>
+    <tr>
+      <td>EvoClone9</td>
+      <td>4X</td>
+      <td>HXT2 5X</td>
+    </tr>
+    <tr>
+      <td>EvoClone10</td>
+      <td>21X</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+
+_See supplementary file 1C for list of all genes that were significantly changed and their change in each evolved clone._
 
 RNA sequencing revealed another change that likely led to better growth in 1 mM sucrose: hexose transporter expression was elevated in 11 of 12 evolved clones. Yeast encodes at least 16 different hexose transporters, most encoded by members of the HXT gene family. The expression of HXT4, which encodes a high-affinity glucose transporter, was elevated in 10 of these evolved clones (Table 2); EvoClone10 was the only strain without increased expression of any hexose transporter.
 
-The effect of evolution on genes with known roles in cell separation is shown in Table 3. Four genes involved in cell separation, AMN1, CTS1, DSE2, and SCW11, had significantly reduced levels in all 11 clumpy evolved clones, and three other genes implicated in cell separation showed reduced expression in 10 (DSE1, SUN4), or 9 (DSE4) of the clumpy clones. These seven genes are not decreased in expression in the non-clumpy evolved clone (EvoClone7B) or the control strain. This supports the argument that the clumps form by failure to separate. Supplementary file 1A lists genes whose expression was elevated or reduced in nine or more evolved clones (and unchanged in the control strain). We suspect many of these genes may show differences in expression because the evolved clones grow much more rapidly than their ancestors in low sucrose medium. Supplementary file 1B lists the genes whose expression was increased or decreased at least tenfold in each of the ten evolved clones we examined. All of the approximately 1500 genes with significant expression level changes are listed in supplementary file 1C along with their level of change in each evolved clone.10.7554/eLife.00367.013Table 3.Cell separation genes whose expression fell significantlyDOI: http://dx.doi.org/10.7554/eLife.00367.013GeneReduced in multicellular clonesReduced in single cell cloneFunctionAMN111/110/1Cell separation proteinCTS111/110/1Cell separation, chitinaseDSE211/110/1Cell separation, possible glucanaseSCW1111/110/1Cell separation, possible glucanaseDSE110/110/1Cell separation, protein of unknown functionSUN410/110/1Cell separation, possible glucanaseDSE49/110/1Cell separation, possible glucanase
+The effect of evolution on genes with known roles in cell separation is shown in Table 3. Four genes involved in cell separation, AMN1, CTS1, DSE2, and SCW11, had significantly reduced levels in all 11 clumpy evolved clones, and three other genes implicated in cell separation showed reduced expression in 10 (DSE1, SUN4), or 9 (DSE4) of the clumpy clones. These seven genes are not decreased in expression in the non-clumpy evolved clone (EvoClone7B) or the control strain. This supports the argument that the clumps form by failure to separate. Supplementary file 1A lists genes whose expression was elevated or reduced in nine or more evolved clones (and unchanged in the control strain). We suspect many of these genes may show differences in expression because the evolved clones grow much more rapidly than their ancestors in low sucrose medium. Supplementary file 1B lists the genes whose expression was increased or decreased at least tenfold in each of the ten evolved clones we examined. All of the approximately 1500 genes with significant expression level changes are listed in supplementary file 1C along with their level of change in each evolved clone.
 
-## All evolved clones depend on secreted invertase
+**Table 3.**
+ Cell separation genes whose expression fell significantly
 
-Forming multicellular clumps and increasing hexose transporter expression both suggest that evolved clones are still hydrolyzing sucrose extracellularly. But since we had shown that engineering sucrose import allowed growth on low sucrose, we needed to rule out the possibility that some of the evolved clones were using this strategy. If an evolved clone depended on sucrose import, keeping it from secreting invertase would have little effect on its growth in sucrose. To test for this possibility, we removed the signal sequence (Kaiser and Botstein, 1986; Perlman et al., 1986) that directs Suc2's secretion from each of the evolved clones (now named EvoCloneX-suc2-1cyt) and competed these derivatives against the corresponding, unmodified, evolved clone. In each case, the evolved clone quickly outcompeted the version that did not secrete invertase (Table 4), demonstrating that growth of all the evolved clones depends on secreted invertase. To verify that this growth defect was not due to reduction in invertase expression, we measured, using reverse transcription followed by quantitative PCR (RT-qPCR), the SUC2 expression of the two evolved clones (EvoClone2 and EvoClone9) and their suc2-1cyt counterparts grown in 1 mM glucose. In both cases, expression of SUC2 was slightly greater in the suc2-1cyt strain but statistically insignificant over three independent trials.10.7554/eLife.00367.014Table 4.Fitness of evolved clones after removal of SUC2 signal sequenceDOI: http://dx.doi.org/10.7554/eLife.00367.014Strain 1Strain 21 mM sucrose1 mM glucose + 1 mM fructoseEvoClone1EvoClone1-suc2-1cyt++++0EvoClone2EvoClone2-suc2-1cyt+++0EvoClone3EvoClone3-suc2-1cyt++++0EvoClone4EvoClone4-suc2-1cyt+++0EvoClone5EvoClone5-suc2-1cyt++++0EvoClone6EvoClone6-suc2-1cyt+++++EvoClone7AEvoClone7A-suc2-1cyt+++0EvoClone7BEvoClone7B-suc2-1cyt+++0EvoClone7CEvoClone7C-suc2-1cyt+++++EvoClone8EvoClone8-suc2-1cyt+++++EvoClone9EvoClone9-suc2-1cyt++++0EvoClone10EvoClone10-suc2-1cyt+++++wtwt-suc2-1cyt+++0wt-suc2-1cyt-importerwt-suc2-1cyt++++0See Table 1 for definition of fitness measurements. We used two control competitions: in the first, a standard lab strain outcompeted a lab strain with a missing SUC2 secretion signal sequence (suc2-1cyt); in the second, a suc2-1cyt strain with MAL11 expressed from the ACT1 promoter outcompeted the suc2-1cyt strain that did not express a sucrose importer.
 
-## Evolved clones have poor fitness on other carbon sources
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Reduced in multicellular clones</th>
+      <th>Reduced in single cell clone</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AMN1</td>
+      <td>11/11</td>
+      <td>0/1</td>
+      <td>Cell separation protein</td>
+    </tr>
+    <tr>
+      <td>CTS1</td>
+      <td>11/11</td>
+      <td>0/1</td>
+      <td>Cell separation, chitinase</td>
+    </tr>
+    <tr>
+      <td>DSE2</td>
+      <td>11/11</td>
+      <td>0/1</td>
+      <td>Cell separation, possible glucanase</td>
+    </tr>
+    <tr>
+      <td>SCW11</td>
+      <td>11/11</td>
+      <td>0/1</td>
+      <td>Cell separation, possible glucanase</td>
+    </tr>
+    <tr>
+      <td>DSE1</td>
+      <td>10/11</td>
+      <td>0/1</td>
+      <td>Cell separation, protein of unknown function</td>
+    </tr>
+    <tr>
+      <td>SUN4</td>
+      <td>10/11</td>
+      <td>0/1</td>
+      <td>Cell separation, possible glucanase</td>
+    </tr>
+    <tr>
+      <td>DSE4</td>
+      <td>9/11</td>
+      <td>0/1</td>
+      <td>Cell separation, possible glucanase</td>
+    </tr>
+  </tbody>
+</table>
+
+### All evolved clones depend on secreted invertase
+
+Forming multicellular clumps and increasing hexose transporter expression both suggest that evolved clones are still hydrolyzing sucrose extracellularly. But since we had shown that engineering sucrose import allowed growth on low sucrose, we needed to rule out the possibility that some of the evolved clones were using this strategy. If an evolved clone depended on sucrose import, keeping it from secreting invertase would have little effect on its growth in sucrose. To test for this possibility, we removed the signal sequence (Kaiser and Botstein, 1986; Perlman et al., 1986) that directs Suc2's secretion from each of the evolved clones (now named EvoCloneX-suc2-1cyt) and competed these derivatives against the corresponding, unmodified, evolved clone. In each case, the evolved clone quickly outcompeted the version that did not secrete invertase (Table 4), demonstrating that growth of all the evolved clones depends on secreted invertase. To verify that this growth defect was not due to reduction in invertase expression, we measured, using reverse transcription followed by quantitative PCR (RT-qPCR), the SUC2 expression of the two evolved clones (EvoClone2 and EvoClone9) and their suc2-1cyt counterparts grown in 1 mM glucose. In both cases, expression of SUC2 was slightly greater in the suc2-1cyt strain but statistically insignificant over three independent trials.
+
+**Table 4.**
+ Fitness of evolved clones after removal of SUC2 signal sequence
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain 1</th>
+      <th>Strain 2</th>
+      <th>1 mM sucrose</th>
+      <th>1 mM glucose + 1 mM fructose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EvoClone1</td>
+      <td>EvoClone1-suc2-1cyt</td>
+      <td>++++</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EvoClone2</td>
+      <td>EvoClone2-suc2-1cyt</td>
+      <td>+++</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EvoClone3</td>
+      <td>EvoClone3-suc2-1cyt</td>
+      <td>++++</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EvoClone4</td>
+      <td>EvoClone4-suc2-1cyt</td>
+      <td>+++</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EvoClone5</td>
+      <td>EvoClone5-suc2-1cyt</td>
+      <td>++++</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EvoClone6</td>
+      <td>EvoClone6-suc2-1cyt</td>
+      <td>++++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>EvoClone7A</td>
+      <td>EvoClone7A-suc2-1cyt</td>
+      <td>+++</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EvoClone7B</td>
+      <td>EvoClone7B-suc2-1cyt</td>
+      <td>+++</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EvoClone7C</td>
+      <td>EvoClone7C-suc2-1cyt</td>
+      <td>++++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>EvoClone8</td>
+      <td>EvoClone8-suc2-1cyt</td>
+      <td>++++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>EvoClone9</td>
+      <td>EvoClone9-suc2-1cyt</td>
+      <td>++++</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EvoClone10</td>
+      <td>EvoClone10-suc2-1cyt</td>
+      <td>++++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>wt</td>
+      <td>wt-suc2-1cyt</td>
+      <td>+++</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>wt-suc2-1cyt-importer</td>
+      <td>wt-suc2-1cyt</td>
+      <td>++++</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_See Table 1 for definition of fitness measurements. We used two control competitions: in the first, a standard lab strain outcompeted a lab strain with a missing SUC2 secretion signal sequence (suc2-1cyt); in the second, a suc2-1cyt strain with MAL11 expressed from the ACT1 promoter outcompeted the suc2-1cyt strain that did not express a sucrose importer._
+
+### Evolved clones have poor fitness on other carbon sources
 
 Did evolving to grow faster on low sucrose affect the ability of the evolved clones to grow on other carbon sources? Other experiments have resulted in antagonistic pleiotropy, where improved fitness in one environment often corresponds to reduced fitness in another (Lenski, 1988; Wenger et al., 2011). We therefore determined the fitness of the evolved clones in three environments: low (1 mM) sucrose, low monosaccharide (1 mM glucose plus 1 mM fructose, the hydrolysis products of 1 mM sucrose), and high (80 mM) glucose.
 
 Each evolved clone quickly outcompeted the ancestor in low sucrose and lost to its ancestor in high glucose (Table 1). Four of the evolved clones also lost quickly on low monosaccharide; the remaining clones had approximately the same fitness as the ancestor, suggesting that most of the mutations acquired in low sucrose were selectively neutral in the equivalent monosaccharide concentration. The size distributions of each evolved clone was similar in all three conditions (Figure 3—figure supplement 2) except for EvoClone9, which formed much larger clumps in sucrose than it did in the other two media (Figure 3—figure supplements 2 and 3).
 
-## Putative causal mutations found through bulk segregant analysis
+### Putative causal mutations found through bulk segregant analysis
 
 We began the genetic characterization of the evolved clones by looking for the causal mutations. Because we used a strain that produced roughly one mutation per cell cycle, we predicted that neutral or slightly deleterious mutations would substantially outnumber the mutations that made cells grow faster in low sucrose concentrations. The neutral and nearly neutral mutations accumulate because they occur in lineages that were lucky enough to have strongly beneficial mutations; in the absence of sex, these mutations thus hitchhike during selection.
 
-To identify the causal mutations, we used bulk segregant analysis, which uses sexual reproduction to separate causal from hitchhiking mutations. The evolved strain was crossed to its ancestor, put through meiosis, and a large population of haploid spores was selected for the evolved phenotype. Mutations that confer a strong advantage on low sucrose will be present in almost all the selected spores, whereas those that do not will be present in roughly half the spores. We monitored the allele frequency in the selected pool by preparing DNA and sequencing it to roughly 100-fold coverage (
+To identify the causal mutations, we used bulk segregant analysis, which uses sexual reproduction to separate causal from hitchhiking mutations. The evolved strain was crossed to its ancestor, put through meiosis, and a large population of haploid spores was selected for the evolved phenotype. Mutations that confer a strong advantage on low sucrose will be present in almost all the selected spores, whereas those that do not will be present in roughly half the spores. We monitored the allele frequency in the selected pool by preparing DNA and sequencing it to roughly 100-fold coverage (Figure 5). We found a total of 80 putative causal mutations in the twelve evolved clones out of 1521 mutations, confirming that most mutations are non-causal (Table 5). To track the spread of the putative causal mutations through the evolved populations, we used Sanger sequencing to measure the allele frequency (Gresham et al., 2008) over time. Figure 6 shows the spread of putative causal mutations through two of the populations, EvoClone2 and EvoClone9; Figure 6—figure supplements 1 and 2 show the remaining populations.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig5-v1.jpg)
 
-**Figure 5.:** (A) A clone is selected from the population and then backcrossed to a derivative of its ancestor. The resulting diploid is sporulated, allowing the mutant alleles to randomly segregate among the haploid progeny. When the haploid progeny are selected for growth in low sucrose, only those cells with causal alleles (red triangles) remain; non-causal alleles (blue diamond, square, and circle) segregate randomly and are present in about half of the spores. (B) The ancestor, evolved clone, and pool of selected progeny are sequenced. Comparing the genome sequences of the ancestor and evolved clone reveals mutations. The allele frequency in the selected spores can then be estimated from the frequency of the reads in the pool of selected progeny. We classified any mutant allele present in >90% of the reads as a putative causal mutation (Table 5). (C) The wild-type alleles in the ancestor were replaced with the putative causal mutations to recreate the evolved clone (Figure 7). (D) Growth of the recreated strain was tested in low sucrose (Table 1).DOI: http://dx.doi.org/10.7554/eLife.00367.015
+**Figure 5.:** (A) A clone is selected from the population and then backcrossed to a derivative of its ancestor. The resulting diploid is sporulated, allowing the mutant alleles to randomly segregate among the haploid progeny. When the haploid progeny are selected for growth in low sucrose, only those cells with causal alleles (red triangles) remain; non-causal alleles (blue diamond, square, and circle) segregate randomly and are present in about half of the spores. (B) The ancestor, evolved clone, and pool of selected progeny are sequenced. Comparing the genome sequences of the ancestor and evolved clone reveals mutations. The allele frequency in the selected spores can then be estimated from the frequency of the reads in the pool of selected progeny. We classified any mutant allele present in >90% of the reads as a putative causal mutation (Table 5). (C) The wild-type alleles in the ancestor were replaced with the putative causal mutations to recreate the evolved clone (Figure 7). (D) Growth of the recreated strain was tested in low sucrose (Table 1).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** (1) design the region of the gene to be included in the plasmid as follows: (A). Determine the ‘usable' gene, or the promoter plus the open reading frame (ORF) plus the terminator. (B) Figure out which end of the usable gene is closer to the mutation. This is the side that will not be truncated. (C) Find a cut site >300 bp away from the mutation. If the new mutation is needed after transformation and before loopout, place the cut site toward far end of gene. This is the end of the gene that will be truncated. If old function is needed, place the cut site toward near end of gene. The region between the mutation and the cut site is now the ‘plasmid' region. The distance between the cut site and the mutation is necessary because of recision. (D) Extend the plasmid region at least 300 bp onto the opposite side of the cut site. This distance ensures efficient transformation. (E) Extend the plasmid region to the nearest end of the usable gene. This will ensure the gene is intact after transformation. (F) Find the distance from the mutation to each end of the plasmid region. Extend the plasmid region so that the length that does not include the cut site is larger than the length that does include the cut site. This ensures that loopout is more likely to result in the new mutation. (2) PCR amplify the plasmid region of the gene, treat it with polynucleotide kinase, and blunt-end ligate it into a digested URA3 plasmid backbone that has been treated with Antarctic phosphatase. Only pertinent regions of the plasmid are shown in the diagram. An additional yeast drug marker is useful in the plasmid backbone to verify that the insert has looped out. (3) Transform the yeast with the cut plasmid and select on—URA. This will integrate the linearized plasmid into the chromosome. PCR amplify and sequence the new allele to verify insertion; one primer should be outside the included region. (4) Grow the transformed yeast strain overnight in YPD to allow the insert to loop out through homologous recombination and plate on 5FOA. Cells will only grow on 5FOA if the URA3 marker has looped out. PCR amplify and sequence the new allele with both primers inside the included region to verify that the new allele is the only copy of the gene remaining. Replica plate to YP 2% acetate to eliminate petite mutants.DOI: http://dx.doi.org/10.7554/eLife.00367.016
+**Figure 5—figure supplement 1.:** (1) design the region of the gene to be included in the plasmid as follows: (A). Determine the ‘usable' gene, or the promoter plus the open reading frame (ORF) plus the terminator. (B) Figure out which end of the usable gene is closer to the mutation. This is the side that will not be truncated. (C) Find a cut site >300 bp away from the mutation. If the new mutation is needed after transformation and before loopout, place the cut site toward far end of gene. This is the end of the gene that will be truncated. If old function is needed, place the cut site toward near end of gene. The region between the mutation and the cut site is now the ‘plasmid' region. The distance between the cut site and the mutation is necessary because of recision. (D) Extend the plasmid region at least 300 bp onto the opposite side of the cut site. This distance ensures efficient transformation. (E) Extend the plasmid region to the nearest end of the usable gene. This will ensure the gene is intact after transformation. (F) Find the distance from the mutation to each end of the plasmid region. Extend the plasmid region so that the length that does not include the cut site is larger than the length that does include the cut site. This ensures that loopout is more likely to result in the new mutation. (2) PCR amplify the plasmid region of the gene, treat it with polynucleotide kinase, and blunt-end ligate it into a digested URA3 plasmid backbone that has been treated with Antarctic phosphatase. Only pertinent regions of the plasmid are shown in the diagram. An additional yeast drug marker is useful in the plasmid backbone to verify that the insert has looped out. (3) Transform the yeast with the cut plasmid and select on—URA. This will integrate the linearized plasmid into the chromosome. PCR amplify and sequence the new allele to verify insertion; one primer should be outside the included region. (4) Grow the transformed yeast strain overnight in YPD to allow the insert to loop out through homologous recombination and plate on 5FOA. Cells will only grow on 5FOA if the URA3 marker has looped out. PCR amplify and sequence the new allele with both primers inside the included region to verify that the new allele is the only copy of the gene remaining. Replica plate to YP 2% acetate to eliminate petite mutants.
+
+**Table 5.**
+ Putative causal mutations in each evolved clone
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain name</th>
+      <th>Nominal generations</th>
+      <th>Number of mutations</th>
+      <th>Non-synonymous and promoter mutations segregating at evolved allele frequency &gt;90%</th>
+      <th>Nucleotide change</th>
+      <th>Amino acid change</th>
+      <th>Mutant allele reads/total reads</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EvoClone1</td>
+      <td>307</td>
+      <td>71</td>
+      <td>ACE2</td>
+      <td>703 G→T</td>
+      <td>E235*</td>
+      <td>77/79</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>IRA1</td>
+      <td>8987C→G</td>
+      <td>T2996S</td>
+      <td>99/102</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>PHO87</td>
+      <td>196 G→C</td>
+      <td>A66P</td>
+      <td>55/55</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RGT1</td>
+      <td>3157C→T</td>
+      <td>Q1053*</td>
+      <td>72/74</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SAN1</td>
+      <td>1707C→A</td>
+      <td>N569K</td>
+      <td>76/77</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SIN4</td>
+      <td>383 G→A</td>
+      <td>G128D</td>
+      <td>106/106</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>UBR1</td>
+      <td>1916T→A</td>
+      <td>L639*</td>
+      <td>42/44</td>
+    </tr>
+    <tr>
+      <td>EvoClone2</td>
+      <td>273</td>
+      <td>115</td>
+      <td>ACE2</td>
+      <td>968T→A</td>
+      <td>L323*</td>
+      <td>110/110</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CSE2</td>
+      <td>100_100delT</td>
+      <td>S35Rfs54</td>
+      <td>102/107</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>IRA1</td>
+      <td>7657A→T</td>
+      <td>S2553C</td>
+      <td>72/75</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MTH1</td>
+      <td>459_459delC</td>
+      <td>H154Tfs156</td>
+      <td>93/100</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>UBR1</td>
+      <td>524 G→A</td>
+      <td>C175Y</td>
+      <td>104/112</td>
+    </tr>
+    <tr>
+      <td>EvoClone3</td>
+      <td>301</td>
+      <td>252</td>
+      <td>IRA2</td>
+      <td>8081C→A</td>
+      <td>S2694Y</td>
+      <td>75/81</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>IRC8</td>
+      <td>365T→C</td>
+      <td>L122P</td>
+      <td>84/88</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>NAT1</td>
+      <td>1782 G→A</td>
+      <td>W594*</td>
+      <td>84/87</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SYP1</td>
+      <td>1376C→T</td>
+      <td>T459I</td>
+      <td>90/96</td>
+    </tr>
+    <tr>
+      <td>EvoClone4</td>
+      <td>229</td>
+      <td>95</td>
+      <td>ACE2</td>
+      <td>670 G→T</td>
+      <td>E224*</td>
+      <td>93/93</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RGT1</td>
+      <td>2494_2495insT</td>
+      <td>L832Ffs834</td>
+      <td>135/139</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SIN4</td>
+      <td>382 G→A</td>
+      <td>G128S</td>
+      <td>104/105</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>UBR1</td>
+      <td>1916T→A</td>
+      <td>L639*</td>
+      <td>56/61</td>
+    </tr>
+    <tr>
+      <td>EvoClone5</td>
+      <td>237</td>
+      <td>120</td>
+      <td>ACE2</td>
+      <td>565C→T</td>
+      <td>Q189*</td>
+      <td>149/152</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ARO2</td>
+      <td>371C→G</td>
+      <td>A124G</td>
+      <td>93/101</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MCK1</td>
+      <td>38_38delG</td>
+      <td>G14Dfs22</td>
+      <td>152/158</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SNF2</td>
+      <td>71 G→T</td>
+      <td>R24I</td>
+      <td>94/100</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SNF3</td>
+      <td>1235T→A</td>
+      <td>V412E</td>
+      <td>148/148</td>
+    </tr>
+    <tr>
+      <td>EvoClone6</td>
+      <td>232</td>
+      <td>110</td>
+      <td>ACE2</td>
+      <td>507_507delT</td>
+      <td>N169Kfs177</td>
+      <td>142/146</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>GCN2</td>
+      <td>892A→G</td>
+      <td>N298D</td>
+      <td>115/117</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>GPB2</td>
+      <td>235 G→T</td>
+      <td>E79*</td>
+      <td>144/145</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MTH1</td>
+      <td>152_152delG</td>
+      <td>S51Ifs56</td>
+      <td>110/112</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>NRG1</td>
+      <td>371C→A</td>
+      <td>S124*</td>
+      <td>92/95</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RAD6</td>
+      <td>191C→A</td>
+      <td>P64H</td>
+      <td>127/135</td>
+    </tr>
+    <tr>
+      <td>EvoClone7A</td>
+      <td>242</td>
+      <td>105</td>
+      <td>ACE2</td>
+      <td>1901C→A</td>
+      <td>S634*</td>
+      <td>84/87</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RAD61</td>
+      <td>225T→A</td>
+      <td>N75K</td>
+      <td>97/97</td>
+    </tr>
+    <tr>
+      <td>EvoClone7B</td>
+      <td>242</td>
+      <td>94</td>
+      <td>GCN3</td>
+      <td>176C→A</td>
+      <td>S59Y</td>
+      <td>79/87</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>IRA2</td>
+      <td>7049_7049delC</td>
+      <td>A2350Gfs2354</td>
+      <td>129/132</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RAM1</td>
+      <td>566T→A</td>
+      <td>L189Q</td>
+      <td>133/137</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SAN1</td>
+      <td>1464C→G</td>
+      <td>N488K</td>
+      <td>97/100</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SNF3</td>
+      <td>692C→A</td>
+      <td>A231D</td>
+      <td>87/90</td>
+    </tr>
+    <tr>
+      <td>EvoClone7C</td>
+      <td>242</td>
+      <td>115</td>
+      <td>GCR2</td>
+      <td>533T→A</td>
+      <td>L178Q</td>
+      <td>148/154</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>IRA2</td>
+      <td>7049_7049delC</td>
+      <td>A2350Gfs2354</td>
+      <td>166/169</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>PDR1</td>
+      <td>2527 G→A</td>
+      <td>D843N</td>
+      <td>145/159</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>PUF4</td>
+      <td>1960C→T</td>
+      <td>Q654*</td>
+      <td>184/202</td>
+    </tr>
+    <tr>
+      <td>EvoClone8</td>
+      <td>253</td>
+      <td>122</td>
+      <td>ACE2</td>
+      <td>−379 G→A</td>
+      <td>Promoter</td>
+      <td>103/103</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>AXL2</td>
+      <td>700T→C</td>
+      <td>S234P</td>
+      <td>87/87</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ERG1</td>
+      <td>427 G→A</td>
+      <td>E143K</td>
+      <td>160/163</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>HXK1</td>
+      <td>93A→T</td>
+      <td>E31D</td>
+      <td>200/217</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>IFM1</td>
+      <td>1724T→A</td>
+      <td>I575N</td>
+      <td>130/134</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MIT1</td>
+      <td>188 G→A</td>
+      <td>W63*</td>
+      <td>131/142</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SKS1</td>
+      <td>1311C→G</td>
+      <td>Y437*</td>
+      <td>152/152</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SNF3</td>
+      <td>1237 G→A</td>
+      <td>E413K</td>
+      <td>101/101</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>UBC5</td>
+      <td>443A→G</td>
+      <td>D118G</td>
+      <td>137/141</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>UBR1</td>
+      <td>3859_3859delG</td>
+      <td>G1287Dfs1345</td>
+      <td>170/179</td>
+    </tr>
+    <tr>
+      <td>EvoClone9</td>
+      <td>265</td>
+      <td>126</td>
+      <td>ARE1</td>
+      <td>−10 G→T</td>
+      <td>Promoter</td>
+      <td>127/127</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>GCN2</td>
+      <td>4582A→C</td>
+      <td>I1528L</td>
+      <td>125/137</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>GIN4</td>
+      <td>57 G→A</td>
+      <td>W19*</td>
+      <td>79/81</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>IRC8</td>
+      <td>170 G→T</td>
+      <td>G57V</td>
+      <td>118/119</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MCD1</td>
+      <td>524C→T</td>
+      <td>S175L</td>
+      <td>115/115</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MCK1</td>
+      <td>675_675delG</td>
+      <td>G227Vfs249</td>
+      <td>114/116</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MED1</td>
+      <td>1009C→G</td>
+      <td>L337V</td>
+      <td>104/113</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1465 G→T</td>
+      <td>E489*</td>
+      <td>118/125</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>UBR1</td>
+      <td>3148_3148delC</td>
+      <td>L1050Yfs1063</td>
+      <td>141/145</td>
+    </tr>
+    <tr>
+      <td>EvoClone10</td>
+      <td>242</td>
+      <td>196</td>
+      <td>ACE2</td>
+      <td>1874A→T</td>
+      <td>Q625L</td>
+      <td>121/122</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>AXL2</td>
+      <td>432_432delC</td>
+      <td>Y145Mfs154</td>
+      <td>161/164</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>BPH1</td>
+      <td>2369C→A</td>
+      <td>S790Y</td>
+      <td>144/144</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>DNF2</td>
+      <td>2351T→C</td>
+      <td>F784S</td>
+      <td>90/97</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ECM5</td>
+      <td>3466 G→A</td>
+      <td>D1156N</td>
+      <td>127/128</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ENP2</td>
+      <td>1129T→A</td>
+      <td>F377I</td>
+      <td>127/132</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>GAC1</td>
+      <td>−7T→A</td>
+      <td>Promoter</td>
+      <td>106/117</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>HTZ1</td>
+      <td>−369T→C</td>
+      <td>Promoter</td>
+      <td>69/73</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>KEM1</td>
+      <td>2268 G→A</td>
+      <td>M756I</td>
+      <td>148/148</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MCD1</td>
+      <td>−28 G→T</td>
+      <td>Promoter</td>
+      <td>153/153</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MPT5</td>
+      <td>2409T→A</td>
+      <td>L590*</td>
+      <td>146/146</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MRPS17</td>
+      <td>325 G→A</td>
+      <td>D109N</td>
+      <td>141/147</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>NUT1</td>
+      <td>2582C→A</td>
+      <td>S861*</td>
+      <td>166/169</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>PRC1</td>
+      <td>−283 G→A</td>
+      <td>Promoter</td>
+      <td>138/148</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RGT1</td>
+      <td>2060G→T</td>
+      <td>G687V</td>
+      <td>91/91</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SAC6</td>
+      <td>1736A→T</td>
+      <td>K542M</td>
+      <td>125/137</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>TOP3</td>
+      <td>1679T→C</td>
+      <td>V560A</td>
+      <td>100/103</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>UBR1</td>
+      <td>56T→A</td>
+      <td>L19Q</td>
+      <td>130/140</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>WHI2</td>
+      <td>187 G→T</td>
+      <td>E63*</td>
+      <td>138/139</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>WTM2</td>
+      <td>−297T→A</td>
+      <td>Promoter</td>
+      <td>125/129</td>
+    </tr>
+  </tbody>
+</table>
+
+_Nomenclature based on (den Dunnen and Antonarakis 2000): Mx→y: nucleotide change from x to y at base M, starting at base 1 (negative indicates promoter region). M_Ndelx: Deletion (Insertion:ins) of nucleotide x from base M to N. XNY: amino acid change from X to Y at codon N. * indicates stop codon. XNYfsN: as above, plus a frame shift mutation that results in stop codon at N.The following mutations likely hitchhiked and were not included in this table: EvoClone3: atg4 with sin4; EvoClone7A: slx4 promoter with ace2; EvoClone7B: thi3 with ram1, crt10 with ira2, EvoClone8: crh1 promoter with ubr1; EvoClone9: brr1 with MED1, nsp1 promoter with irc8; EvoClone10: pri2 promoter with rgt1, ino80 with nut1. This claim is based on the genetic linkage between the two alleles and the lower allele frequency of the mutation we argue is hitch-hiking relative to the putative causal mutation. The following mutations are not shown in the time courses in Figure 6 and Figure 6—supplements 1 and 2 because they were present at frequencies of less than 5% of the final population: EvoClone7C: puf4-Q654*; EvoClone8: mit1-W63*; EvoClone9 mcd1-S175L; EvoClone10: top3-V560A The following mutations were in the original, time zero strain and are not included in this table even through they segregated at > 90%: EvoClone2: ira1-F664I; EvoClone8: phm8-I97N, rpl37a(−52T→G), vta1-A247V, yor1-E393D; EvoClone9: vta1-A247V; EvoClone10: aim32-E241G, irs4-N257S, nnt1(−427T→C), prp9-N155S, yrb1-N120I._
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig6-v1.jpg)
 
-**Figure 6.:** The alleles at the indicated time points were sequenced using Sanger sequencing, and frequencies were estimated from peaks in the trace plots. See Figure 6—figure supplements 1 and 2 for the other evolved populations. See Table 5 for amino acid and nucleotide changes.DOI: http://dx.doi.org/10.7554/eLife.00367.018
+**Figure 6.:** The alleles at the indicated time points were sequenced using Sanger sequencing, and frequencies were estimated from peaks in the trace plots. See Figure 6—figure supplements 1 and 2 for the other evolved populations. See Table 5 for amino acid and nucleotide changes.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** See Figure 6.DOI: http://dx.doi.org/10.7554/eLife.00367.019
+**Figure 6—figure supplement 1.:** See Figure 6.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig6-figsupp2-v1.jpg)
 
-**Figure 6—figure supplement 2.:** See Figure 6.DOI: http://dx.doi.org/10.7554/eLife.00367.020
+**Figure 6—figure supplement 2.:** See Figure 6.
 
 Over all 12 clones, the 80 putative causal mutations lie in or near 53 genes. Two genes, ACE2 and UBR1, were mutated in at least half the clones, and groups of genes in three pathways, involved in glucose sensing (the RGT1 group), growth regulation (the IRA1/IRA2 group), and transcription (the Mediator group) were also mutated in many clones. We suspect that most of the putative causal mutations are loss of function mutations. Many alleles of the two most frequently mutated genes, ACE2 and UBR1 were nonsense mutations. In addition, amongst the 39 genes that were only mutated once, 12 (31%) of the mutations were nonsense mutations. This suggests that many of the mutations in the remaining 27 genes are loss of function mutations: for two genes that have been extensively studied, URA3 and CAN1, 31% of strong loss of function mutations are nonsense mutations (Lang and Murray, 2008). (Because loss-of-function mutations are typically recessive, we use lower case italic nomenclature to indicate the putative causal allele (e.g., irc8-G57V), and upper case italics to indicate the wild-type allele (e.g., IRC8). See the notes for Table 5 for a description of the mutation nomenclature. Roman text (e.g., Irc8) indicates the protein). Supplementary file 2 is a summary of the mutations in each gene pathway.
 
@@ -143,29 +1437,29 @@ Mediator is a multiprotein, global regulator of eukaryotic transcription. We fou
 
 We analyzed read depth across all evolved clones and saw three major duplication or deletion events: (1) chromosome 3 in EvoClone10 was duplicated in the region between 152 and 172 kb from the left end of the chromosome. This doubling of read depth was reduced to a 50% increase in the segregated pool, indicating that the duplication was not causal. (2) The number of P-Type ATPases at the ENO1/2/5 locus was reduced from 3 to 2 in EvoClone6 and EvoClone10. This reduction was also present in the backcrossed strain, indicating that it may have been causal. (3) The number of hexose transporter gene repeats at the HXT6/7 locus increased from two in the ancestral strain to three in EvoClone7C. This amplification was also present in the backcrossed strain, indicating that it also may have been causal. Amplification of the HXT6/7 locus has been found in other experimental evolutions (Brown et al., 1998; Gresham et al., 2008; Kao and Sherlock, 2008).
 
-## Recreation of evolved clones verifies causal mutations
+### Recreation of evolved clones verifies causal mutations
 
-Are the putative causal mutations really responsible for the evolved phenotypes? We addressed this question by engineering the candidate mutations from two clones, EvoClone2 and EvoClone9, into their ancestor and asking if this manipulation reproduced the behavior of these clones. To recreate the sets of putative causal mutations, we replaced the five ancestral alleles in the ancestor with the five putative causal mutations in EvoClone2 to make Recreated2 and the eight putative causal mutations in EvoClone9 to make Recreated9.
+Are the putative causal mutations really responsible for the evolved phenotypes? We addressed this question by engineering the candidate mutations from two clones, EvoClone2 and EvoClone9, into their ancestor and asking if this manipulation reproduced the behavior of these clones. To recreate the sets of putative causal mutations, we replaced the five ancestral alleles in the ancestor with the five putative causal mutations in EvoClone2 to make Recreated2 and the eight putative causal mutations in EvoClone9 to make Recreated9. Figure 7 and Figure 3—figure supplement 2 shows that the morphology and the clump size distribution of the recreated strains are similar to that of the evolved clones.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig7-v1.jpg)
 
-**Figure 7.:** The ancestral strain was converted to the evolved morphology by converting ancestral alleles to those of the putative causal mutations and the evolved strains were converted to the ancestral morphology by converting the putative causal mutations to their ancestral alleles. The strains were grown separately in 1 mM sucrose and then mixed. The top row shows EvoClone2 strains and the bottom row shows EvoClone9 strains. The ancestor constitutively expresses mCherry and is shown in yellow; the evolved clone constitutively expresses YFP and is shown in green. The recreated strain (left) and the reverted strain (right) constitutively express CFP and are shown in magenta (recreated evolved) and cyan (reverted to ancestral). Representative confocal fluorescent (left) and brightfield (right) images were taken with a 60× objective in a glass-bottomed, 96-well plate. All scale bars are 50 µm.DOI: http://dx.doi.org/10.7554/eLife.00367.021
+**Figure 7.:** The ancestral strain was converted to the evolved morphology by converting ancestral alleles to those of the putative causal mutations and the evolved strains were converted to the ancestral morphology by converting the putative causal mutations to their ancestral alleles. The strains were grown separately in 1 mM sucrose and then mixed. The top row shows EvoClone2 strains and the bottom row shows EvoClone9 strains. The ancestor constitutively expresses mCherry and is shown in yellow; the evolved clone constitutively expresses YFP and is shown in green. The recreated strain (left) and the reverted strain (right) constitutively express CFP and are shown in magenta (recreated evolved) and cyan (reverted to ancestral). Representative confocal fluorescent (left) and brightfield (right) images were taken with a 60× objective in a glass-bottomed, 96-well plate. All scale bars are 50 µm.
 
 To assess the fitness of the reconstructed strains, we competed them against their ancestor and the evolved clones. Both the evolved and recreated clones outcompeted their ancestor in 1–2 passages (Table 1) showing that they are much fitter on low sucrose. Both recreated strains were slightly less fit their evolved counterparts: there were fewer recreated than evolved cells after six passages (46 generations). This fitness defect has three possible causes: (1) the recreated clones are missing minor causal alleles, which we failed to find; (2) detrimental mutations were introduced during the multiple transformations required to make the recreated strains; or, (3) the evolved clone (which is a mutator, unlike the recreated strain) continued to evolve and adapt during the competition.
 
 To confirm that the putative causal alleles accounted for the evolved phenotype, we reverted these alleles in the evolved clones to their ancestral state. We replaced each of the mutant alleles in EvoClone2 and EvoClone9 with the ancestral allele. Both the resulting strains, Reverted2 and Reverted9, grew poorly in 1 mM sucrose, mostly existed as single cells, and were quickly outcompeted by the evolved clones (Table 1, Figure 7, and Figure 3—figure supplement 2).
 
-We used bulk segregant analysis to ask whether individual alleles were required for the evolved phenotype. We crossed the recreated strains to their ancestors, isolated haploid spores, selected this population for growth on 1 mM sucrose, and measured the frequency of the evolved alleles in the selected population. All five mutations in Recreated2 were strongly selected for, six of the eight mutations in Recreated9 were strongly selected for, and one mutation in Recreated9 was moderately selected for, confirming that all but one of the thirteen putative causal mutations were causal for improved growth on low sucrose (
+We used bulk segregant analysis to ask whether individual alleles were required for the evolved phenotype. We crossed the recreated strains to their ancestors, isolated haploid spores, selected this population for growth on 1 mM sucrose, and measured the frequency of the evolved alleles in the selected population. All five mutations in Recreated2 were strongly selected for, six of the eight mutations in Recreated9 were strongly selected for, and one mutation in Recreated9 was moderately selected for, confirming that all but one of the thirteen putative causal mutations were causal for improved growth on low sucrose (Figure 8). We suspect that the eighth mutation in Recreated9, gcn2-I1528L, may be a false positive. In the original spore selection, the mutant allele segregated at only 91%, the low end of our threshold, and the mutation changed a poorly conserved isoleucine to leucine, suggesting it is unlikely to have a major effect on the protein's activity. In sum, our recreation experiments show that the putative causal alleles, with a single exception, are both necessary and sufficient to produce the evolved phenotype.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig8-v1.jpg)
 
-**Figure 8.:** The recreated strains were backcrossed, sporulated, and selected in three different media: 1 mM sucrose (low sucrose), 80 mM glucose (high glucose), and 1 mM glucose plus 1 mM fructose (low monosaccharide). The mutant allele fraction was estimated from Sanger sequencing across the allelic variants. The size of the data point (small, medium, or large) for each allele and media combination refers to one of three independently derived diploids. (A) Recreated2 allele segregation. (B) Recreated9 allele segregation. (C) Ancestor strain with ACE2 deleted (ace2Δ) has a clumpy phenotype. The ACE2 mutation in Recreated2, a likely loss of function mutation that caused the clumpiness in EvoClone2, was selected for in low sucrose and was not selected for in low monosaccharide. (D) Ancestor strain that has wild type alleles of IRC8, MCK1, and GIN4 replaced with the EvoClone9 alleles has a clumpy phenotype. All three mutant alleles were selected for in low sucrose and were not selected for in low monosaccharide. Representative DIC images were taken with a 40× objective in a glass-bottomed, 96-well plate. Scale bars are 50 µm.DOI: http://dx.doi.org/10.7554/eLife.00367.022
+**Figure 8.:** The recreated strains were backcrossed, sporulated, and selected in three different media: 1 mM sucrose (low sucrose), 80 mM glucose (high glucose), and 1 mM glucose plus 1 mM fructose (low monosaccharide). The mutant allele fraction was estimated from Sanger sequencing across the allelic variants. The size of the data point (small, medium, or large) for each allele and media combination refers to one of three independently derived diploids. (A) Recreated2 allele segregation. (B) Recreated9 allele segregation. (C) Ancestor strain with ACE2 deleted (ace2Δ) has a clumpy phenotype. The ACE2 mutation in Recreated2, a likely loss of function mutation that caused the clumpiness in EvoClone2, was selected for in low sucrose and was not selected for in low monosaccharide. (D) Ancestor strain that has wild type alleles of IRC8, MCK1, and GIN4 replaced with the EvoClone9 alleles has a clumpy phenotype. All three mutant alleles were selected for in low sucrose and were not selected for in low monosaccharide. Representative DIC images were taken with a 40× objective in a glass-bottomed, 96-well plate. Scale bars are 50 µm.
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/00367/elife-00367-fig8-figsupp1-v1.jpg)
 
-**Figure 8—figure supplement 1.:** HXT4 and SUC2 expression in various allelic combinations of Recreated2 compared to the ancestor.Change in RNA expression was measured using RT-qPCR using RNA isolated from a culture grown in 1 mM sucrose minimal media. Each point is the mean change in expression from three independent trials. The total length of the error bar is twice the size of the standard deviation. Ancestor alleles are shown in upper case and mutant alleles are shown in lower case. (A) Change in HXT4 expression. Allelic combinations containing mth1 have higher expression than those combinations with MTH1. (B) Change in SUC2 expression. Note that the axes are different in the two plots.DOI: http://dx.doi.org/10.7554/eLife.00367.023
+**Figure 8—figure supplement 1.:** Change in RNA expression was measured using RT-qPCR using RNA isolated from a culture grown in 1 mM sucrose minimal media. Each point is the mean change in expression from three independent trials. The total length of the error bar is twice the size of the standard deviation. Ancestor alleles are shown in upper case and mutant alleles are shown in lower case. (A) Change in HXT4 expression. Allelic combinations containing mth1 have higher expression than those combinations with MTH1. (B) Change in SUC2 expression. Note that the axes are different in the two plots.
 
-## Some causal mutations show antagonistic pleiotropy
+### Some causal mutations show antagonistic pleiotropy
 
 We studied the role of the causal mutations in different growth conditions. Do the mutations selected on low sucrose increase, decrease, or have no effect on fitness on other carbon sources? To ask this question, we selected spores from crosses between ancestral and recreated clones in low monosaccharide and high glucose. Several mutations were selected for in low sucrose but not in low monosaccharide: mutations in MTH1, CSE2, and ACE2 in Recreated2; and in MCK1, IRC8, and GIN4 in Recreated9. The primary selective force for four of these six mutations is likely to be their ability to produce multicellularity: an ace2Δ strain is morphologically similar to EvoClone2 and a mck1-G227Vfs249 irc8-G57V gin4-W19* strain is morphologically similar to EvoClone9 (Figure 8). Each of these two strains also outcompetes the ancestor strain in low sucrose but not in low monosaccharide (Table 1). This shows that multicellular clumps were specifically selected by growth in low sucrose, rather than being a general response to low sugar concentrations. But clumpiness alone was not sufficient to match the growth of the evolved strains in sucrose—the engineered clumpy strain (EngClumpy) was not as fit in 1 mM sucrose as one of the evolved clones that had similar clump size (EvoClone2) (Table 1).
 
@@ -205,19 +1499,19 @@ If undifferentiated multicellularity is so easy to evolve in eukaryotes, then wh
 
 ## Materials and methods
 
-## Media
+### Media
 
 Unless otherwise noted, the experimental evolution and all experiments were conducted in minimal (no amino acids or nucleotides) synthetic media with the following two exceptions: (1) the auxotrophic strains expressing high levels of Flo1 required the addition of leucine, histidine, and lysine, and (2) strains undergoing galactose induction in Figure 2 were pregrown in YP 2% glycerol (10 g/l yeast extract, 20 g/l peptone, and 2% [v/v] glycerol) plus the indicated concentration of galactose. The minimal synthetic media was made with refrigerated sugar stocks and refrigerated 10× yeast nitrogen base (YNB) that was based on Wickerman's recipe (Wickerham, 1951) but without riboflavin, folic acid, and inositol (see [Koschwanez et al., 2011] for the recipe). 200 units/ml Penicillin and 0.2 mg/ml streptavidin were added to the experimental evolution media to prevent bacterial contamination. Unless otherwise noted, all chemicals used in this research were purchased from Sigma-Aldrich (www.sigmasldrich.com).
 
-## Experimental evolution
+### Experimental evolution
 
 Each of the 10 evolved cultures was derived from a haploid MATa W303 prototrophic strain that expressed a yellow fluorescent protein (YFP) variant from the constitutive ACT1 promoter. See supplementary file 3 for a description of the starting strains and their construction. To start the evolution, a single colony from each strain was inoculated into 80 mM glucose media and grown for 7–20 generations, and 5×105 cells were then inoculated into a 125 ml flask containing 50 ml of 1 mM sucrose media. The flasks were placed at 30°C on a shaker rotating at 120 rpm. When there was visible growth in a culture (>106 cells/ml), it was passaged as follows. First, the culture was spun down and resuspended in 1 ml of yeast nitrogen base (YNB) to ensure that non-sucrose carbon sources, created by invertase activity or cellular metabolism, were not inoculated into the new cultures. Second, a sample of resuspended cells were mixed with glycerol and frozen at −80°C. Third, the cell density was measured with a Coulter counter (www.beckmancoultermedia.com). Finally, the resuspended cells were vortexed and 5×105 cells were inoculated into a new 125 ml flask containing 50 ml of warm 1 mM sucrose media. When the cells became too clumpy to count accurately in the Coulter counter, the cultures were instead diluted at a 500:1 ratio into fresh media.
 
-## Clonal selection
+### Clonal selection
 
 To pick clones, eight replicates of each culture were serial diluted 2:1 twelve times in 1 mM sucrose media in 96-well plates such that the last dilution contained an estimated average of less than one cell per well for each replicate. For each population, there were thus eight parallel sets of dilutions. The plates were incubated on a plate shaker at 30°C for 3 days, and each well was examined using a microscope for growth in sucrose and for morphology. A well was assumed to contain a clonal population at the lowest starting cell density where growth was seen if there was a lower density where growth was not seen in any of the eight wells. Each of the selected clones was verified to grow from low density in 1 mM sucrose within 2 days.
 
-## Bulk segregant analysis
+### Bulk segregant analysis
 
 URA3 was deleted from each YFP-labeled MATa evolved clone. The ura3Δ strain was mated with yJHK519, a MATα, trp1Δ::kanMX4 ura3::PSTE2-URA3 derivative of the ancestor labeled with CFP. In this strain, the endogenous URA3 promoter is replaced with the STE2 promoter, which is only induced in MATa cells, making it possible to select for MATa spores after meiosis. Mating was performed by mixing cells from the two strains together on a YPD plate with a toothpick and growing overnight at 30°C. The mating mixtures were then plated onto G418, -TRP plates, and a diploid strain was selected from a colony on the plate.
 
@@ -229,23 +1523,23 @@ To select haploid spores, the entire digested spore culture was added to 50 ml o
 
 Bulk segregant analysis of Recreated2 and Recreated9 followed the same procedure with one exception: the cells were not spun down in between dilutions. Instead, 100 µl of culture was added directly to 50 ml of fresh media for a 500:1 dilution.
 
-## Genomic DNA preparation
+### Genomic DNA preparation
 
 To prepare genomic DNA, the culture was pelleted and resuspended in 50 µl of 1% Zymolyase in 0.1 M, pH 8.0 NaEDTA. The cells were incubated for 30 min at 37°C to digest the cell wall, and then the cells were lysed by adding 50 µl 0.2 M NaEDTA, 0.4 M pH 8.0 Tris, 2% SDS and incubated at 65°C for 30 min. 63 µl of 5 M potassium acetate was added, and the mixture was incubated for 30 min on ice. The insoluble residue was then pelleted, and 750 µl of ice-cold ethanol was added to 300 µl of the supernatant to precipitate the DNA. The DNA was pelleted, and the pellet was resuspended in 0.2 mg/ml RNAase A. After 1 hr of incubation at 37°C, 2 µl of 20 mg/ml Proteinase K was added, and the solution was incubated for an additional 2 hr at 37°C. The DNA was again precipitated by adding 130 µl isopropanol. The DNA was pelleted, briefly washed with 70% ethanol, repelleted, and resuspended in 100 µl 10 mM Tris, pH 8.0.
 
-## RNA isolation
+### RNA isolation
 
 To isolate RNA, cells in log-phase growth were fixed by adding 6 ml of culture to 9 ml of ice-cold methanol and then incubating at −20°C for 10 min. Cells were pelleted at 4°C, resuspended in 1 ml of RNAase-free ice-cold water in a 2 ml cryogenic storage vial, and then repelleted at 4°C. RNA was then isolated with acidic phenol using a published protocol (Collart and Oliviero, 2001).
 
-## RT-qPCR
+### RT-qPCR
 
 Isolated RNA was treated with DNase I (Thermo Scientific EN0525, www.thermofisher.com) according to manufacturer's instructions. Intact RNA was verified by observing two sharp rRNA bands using agarose gel electrophoresis. cDNA was made from 100–200 ng of RNA using Thermo Scientific Maxima First Strand cDNA Synthesis Kit for RT-qPCR (K1641). The 20 µl reaction was diluted tenfold and 11 µl of the diluted sample was used for real time qPCR using Thermo Scientific Maxima SYBR Green/ROX qPCR Master Mix (K0222). Amplification efficiency of the primers was verified by generating standard curves with four serial dilutions. The following primers were used: SUC2 (GCTTTCCTTTTC-CTTTTGGCTGG, TCATTCATCCAGCCCTTGTTGG); HXT4 (TTGGGTTACTGTACAAACTACG, TGTCA-TACCACCAATCATAAAC); ALG9 (GTTTAATCCGGGCTGGTTCCAT, TAGACCCAGTGGACAGATAGCG). ALG9 was used for normalization (Teste et al., 2009). The ΔΔCT method was used to find change in RNA expression (Livak and Schmittgen, 2001). Three independent trials were performed for each reported RT-qPCR result and the data reported is the mean difference in expression between two strains.
 
-## Sequencing
+### Sequencing
 
 DNA and RNA libraries were prepared for sequencing using the Illumina TruSEQ kit (www.illumina.com) and were sequenced on an Illumina HiSeq 2000. Mean coverage across the genome was as follows: ancestor DNA—56×, evolved clone DNA—10× minimum, sporulated pools—90× minimum, RNA—40× minimum. Single end, 50 bp reads were used for the ancestor DNA, evolved clone DNA, and RNA. Paired end, 100 bp reads were used for the sporulated pool DNA. Sequencing data is deposited in the Sequence Read Archive.
 
-## Sequence analysis
+### Sequence analysis
 
 DNA sequences were aligned to the S288C reference genome r64 (downloaded from the Saccharomyces Genome Database, www.yeastgenome.org) using the Burrows-Wheeler Aligner (bio-bwa.sourceforge.net) (Li and Durbin, 2009). The resulting SAM (Sequence Alignment/Map) file was converted to a BAM (binary SAM) file, sorted, indexed, and made into a pileup format file using the samtools software (samtools.sourceforge.net) (Li et al., 2009). Indels were realigned locally using GATK (www.broadinstitute.org/gatk/) (McKenna et al., 2010), and variants were called from the pileup file using the Varscan software (varscan.sourceforge.net) (Koboldt et al., 2012).
 
@@ -253,28 +1547,28 @@ To perform the segregation analysis, we wrote a custom sequencing pipeline in Py
 
 RNA sequences were aligned to the S288C reference genome using TopHat (Trapnell et al., 2009), and significant differences in expression between the ancestor and the evolved clone were called using the default setting in Cufflinks (Trapnell et al., 2010). The Cufflinks package uses the log of the ratio of expression in two conditions together with an estimate of the gene's variance to generate a t-value that it uses in a Students t-test. We used one ancestor derivative, yJHK110, as the reference strain to compare expression with the evolved clones, and the other ancestor derivative, yJHK111, as a control strain in the comparison.
 
-## Data analysis and figures
+### Data analysis and figures
 
 Unless otherwise noted, data analysis was performed in the R programming language (www.r-project.org) and plots were generated using the R library ggplot2 (Wickham, 2009). The Adjusted Wald method of calculating 95% binomial confidence intervals (Agresti and Coull, 1998) was used in Figure 2 because a low number of samples were used to generate a binomial mean. Cartoons were made using Adobe Illustrator CS5 (www.adobe.com).
 
-## Sanger trace plot analysis
+### Sanger trace plot analysis
 
 Commercial Sanger sequencing returns trace plots, chromatograms that indicate the relative frequency of each base at each position in the sequenced DNA. Trace plots were used in two analyses. First, we estimated the spread of mutations through a population by Sanger sequencing time points from the evolution. Second, we estimated the segregation of alleles in the backcrossed, recreated strains by Sanger sequencing the putative causal alleles in the final, selected population. The fraction of mutant alleles in the population was assumed to be the height of the mutant allele peak divided by the height of the mutant allele peak plus the ancestor allele peak. In the time course analysis, values below 5% (the approximate background level) were assumed to be zero, and values above 95% were assumed to be 100%. In the segregation analysis, actual values, not corrected for background, are shown.
 
 We note that many of the mutations appear to rise with very similar time courses to each other. This could reflect the modest time resolution of our measurements and the insensitivity of using Sanger sequencing to estimate allele frequencies, but we suspect it reflects the strong advantages that accrue to those rare lineages where two or three beneficial mutations occur in quick succession (Lang et al., 2011).
 
-## Competitions
+### Competitions
 
 To compare the fitness of the recreated and evolved strains, we developed a fitness assay that was suitable for strains with non-uniform morphologies. We could not use standard, quantitative methods of measuring fitness, such as FACS-based competitions (Desai et al., 2007), because we were not able to accurately count the number of cells per clump in a large population. We therefore used a qualitative microscopy-based fitness assay to compare growth of a YFP-labeled population and a CFP-labeled population. We started the competitions by growing each population separately to saturation in 1 mM glucose + 1 mM fructose. Equal volumes of each strain were mixed together, and then checked under a microscope to verify that both strains were equally present. 50 µl of the mixed culture was then inoculated into 10 ml of the test media. When the culture reached visible density (>106 cells/ml), three blindly chosen images of a 20 µl sample were taken on the microscope with a 20× objective. Extermination was defined as zero cells in one strain and more than 30 total cells of the other strain. If both strains were still present, 50 µl of the culture was inoculated into 10 ml of fresh media. After six growth cycles, a winner was declared if there was a clear majority (>75%) of one strain. Otherwise, the competition was declared a tie. The number of cycles until extermination was averaged across three independent experiments, and qualitative values (++++ through −−−−) were assigned as described in Table 1. + or − was assigned if one of the strains won two out of the three independent competitions that lasted through all six growth cycles.
 
-## Check for flocculation or cell separation
+### Check for flocculation or cell separation
 
 The evolved clones already constitutively expressed YFP, and a constitutively expressed CFP version of each clone was made by deleting the PACT1-ymCitrine-URA3 construct from the URA3 locus and then transforming with a ura3Δ::PACT1-yCerulean-URA3 construct. The two versions of each strain were grown separately in 1 mM glucose + 1 mM fructose media to saturation, and then the two versions were vortexed or sonicated (both gave identical results) for 10 s and then combined at low density in fresh 1 mM sucrose media. The mixed cultures were grown to visible density at 30°C and then pipetted into a well of a glass-bottomed 96-well plate and examined by microscope. In each of the three independent experiments, at least 50 clumps were checked and three representative images were taken for each strain.
 
-## Microscopy
+### Microscopy
 
 Images except those in Figure 7 were taken in a 96-well glass-bottomed plate (greiner bio-one, www.gbo.com) on a Nikon Ti inverted microscope (www.nikoninstruments.com) with a Photometrics CoolSnap HQ camera (www.photometrics.com) and MetaMorph software (www.metamorph.com). Figure 7 images were taken on a Nikon Ti inverted microscope with a Yokogawa spinning disc confocal unit (www.yokogawa.com), 447, 515, and 594 nm lasers (www.spectraloptics.com), a Hamamatsu Orca camera (www.hamamatsu.com), and MetaMorph software. Images were converted to 8-bit, projected, adjusted for contrast, and annotated with scale bars using the Fiji distribution of ImageJ (Schindelin et al., 2012). Contrast was changed for visibility only; our results do not depend on illumination levels and are not affected by the change in contrast.
 
-## Strain reconstruction and reversion
+### Strain reconstruction and reversion
 
 Alleles were replaced in both the evolved and ancestor strains by transforming with a URA3 plasmid that contained a portion of the targeted gene with the desired mutation and was digested at a single cut site within the target gene (Rothstein, 1991). See Figure 5—figure supplement 1 for the complete protocol. Transformants were selected on—URA plates, colonies that grew were streaked out on—URA plates, and the target sequence was amplified and sequenced to verify insertion. The colony was grown overnight in YPD (10 g/l yeast extract, 20 g/l peptone, and 2% [w/v] dextrose) and selected on 5FOA plates to identify cells in which the URA3 construct had looped out (Boeke et al., 1984). Colonies that grew were streaked out on 5FOA, replica plated to YP 2% Acetate (20 g/l agar, 10 g/l yeast extract, 20 g/l peptone, and 2% [w/v] potassium acetate) to eliminate petites, and the target region was amplified and sequenced to ensure that only the desired allele was present. Restriction enzymes, DNA polymerase, polynucleotide kinase, and ligation enzymes were purchased from New England Biolabs (www.neb.com).

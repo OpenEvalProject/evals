@@ -33,15 +33,113 @@ Ultra-rare PTVs are usually eliminated by purifying selection, but the small eff
 
 ## Results
 
-## Study design and data sources
+### Study design and data sources
 
 We characterized the effects of inherited mutations burden on human traits associated with lifespan. For the UK Brain Bank Network (UKBBN), we ran a survival analysis against the age at death (Keogh et al., 2017). For UKB subjects, we tested the effects of mutations on lifespan and healthspan. For these analyses, we define lifespan as survival within a follow-up period of 11 years, and healthspan as the disease-free period before one of the following conditions is diagnosed for the first time (Table 1): cancer, diabetes, myocardial infarction, congestive heart failure, chronic obstructive pulmonary disease, stroke, dementia, and death (Zenin et al., 2019). In addition, following the approach of Joshi et al., 2016, we studied the effect of mutation burden on parental survival (separately for the age at death for mothers and fathers), a useful lifespan proxy in genetic studies.
 
+**Table 1.**
+ Incidence of first disease (end of healthspan) statistics in UK Biobank subjects.MI - myocardial infarction, COPD - chronic obstructive pulmonary disease, CHF - congestive heart failure.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Number of events</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cancer</td>
+      <td>6239</td>
+    </tr>
+    <tr>
+      <td>Diabetes</td>
+      <td>2009</td>
+    </tr>
+    <tr>
+      <td>MI</td>
+      <td>1862</td>
+    </tr>
+    <tr>
+      <td>COPD</td>
+      <td>619</td>
+    </tr>
+    <tr>
+      <td>Stroke</td>
+      <td>527</td>
+    </tr>
+    <tr>
+      <td>Dementia</td>
+      <td>211</td>
+    </tr>
+    <tr>
+      <td>Death</td>
+      <td>126</td>
+    </tr>
+    <tr>
+      <td>CHF</td>
+      <td>114</td>
+    </tr>
+  </tbody>
+</table>
+
 We selected a cohort of 40,368 individuals from UKB with sequenced exomes who self-reported ’White British’ and were of close genetic ancestry based on a principal component analysis of their genotypes (Bycroft et al., 2018). Of those, 21,742 (54%) were males with mean age of 58.1 years (SD = 7.9, age range 40.2 − 70.6) and 18,626 (46%) were females with mean age of 57 years (SD = 7.8, age range 40.1 − 70.4) at the time of assessment. In the UKB cohort, 1,122 subjects died during the follow-up period of 11 years (2005 − 2016), mostly of cancer (Table 2). The UKBBN cohort included 1,105 deceased subjects of European origin after we excluded cases of suicides, accidents, and cases of death with no abnormalities detected. Of those, 489 (44%) were females with mean age of 71.2 years (SD = 18, age range 16 − 103 years) and 616 (56%) were males with mean age of 67.7 years (SD = 17, age range 17 − 105 years). The cause of death was reported for 359 out of 1,105 individuals used for downstream analysis. Most participants in this study were diagnosed with neurodegenerative diseases, for example Alzheimer’s, Parkinson’s, and Pick’s diseases (Keogh et al., 2017).
 
-We used here the set of variants identified through whole-exome sequencing (WES) as part of the UKB and UKBBN projects (Keogh et al., 2017). As in Ganna et al. (2018), we limited our analysis to PTVs, defined as splice donors/acceptors, stop codon gains, and frameshifts, observed in canonical transcripts. To address the relationship between the PTVs allele frequency and their effects on lifespan, we binned the PTVs according to their minor allele frequency: (1) M⁢A⁢F<10-4; (2) 10-4<M⁢A⁢F<10-3; (3) 10-3<M⁢A⁢F<0.01; (4) 0.01<M⁢A⁢F<0.2. For each allele frequency bin, we computed the PTV burden as the total number of PTVs per individual’s exome (Figure 1—figure supplement 1 for PTV burden distribution in the MAF bins).
+**Table 2.**
+ Cause of death reported for 1,122 and 359 subjects in UKB and UKBBN cohorts, respectively.UKB - UK Biobank, UKBBN - UK Brain Bank Network.
 
-## Survival analysis
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>UKB</th>
+      <th>Ukbbn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Neoplasm</td>
+      <td>638(56.9%)</td>
+      <td>20(5.6%)</td>
+    </tr>
+    <tr>
+      <td>Circulatory system</td>
+      <td>208(18.5%)</td>
+      <td>90(25.1%)</td>
+    </tr>
+    <tr>
+      <td>Respiratory system</td>
+      <td>82(7.3%)</td>
+      <td>171(47.6%)</td>
+    </tr>
+    <tr>
+      <td>Digestive</td>
+      <td>47(4.2%)</td>
+      <td>7(1.9%)</td>
+    </tr>
+    <tr>
+      <td>Nervous system</td>
+      <td>43(3.8%)</td>
+      <td>51(14.2%)</td>
+    </tr>
+    <tr>
+      <td>External</td>
+      <td>35(3.1%)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Other (infections, congenital, endocrine, mental)</td>
+      <td>69(6.1%)</td>
+      <td>19(5.3%)</td>
+    </tr>
+  </tbody>
+</table>
+
+We used here the set of variants identified through whole-exome sequencing (WES) as part of the UKB and UKBBN projects (Keogh et al., 2017). As in Ganna et al. (2018), we limited our analysis to PTVs, defined as splice donors/acceptors, stop codon gains, and frameshifts, observed in canonical transcripts. To address the relationship between the PTVs allele frequency and their effects on lifespan, we binned the PTVs according to their minor allele frequency: (1) $M⁢A⁢F<10^{-4}$; (2) $10^{-4}<M⁢A⁢F<10^{-3}$; (3) $10^{-3}<M⁢A⁢F<0.01$; (4) $0.01<M⁢A⁢F<0.2$. For each allele frequency bin, we computed the PTV burden as the total number of PTVs per individual’s exome (Figure 1—figure supplement 1 for PTV burden distribution in the MAF bins).
+
+### Survival analysis
 
 We examined the association of PTV burden against lifespan traits (i.e. survival in UKB and UKBBN, the chronic disease free survival (healthspan), mother’s and father’s age at death in UKB) using variations of Cox proportional hazards (PH) models. We used sex, assessment center, and genetic principal components as covariates to account for the effects related to the population heterogeneity.
 
@@ -53,49 +151,325 @@ In Zenin et al. (2019), we observed that the incidence of major chronic diseases
 
 Instead, in Zenin et al. (2019) we noted the very limited number of death events during the follow-up time in UKB and hence assumed that the incidence of diseases do not considerably affect enrollment. Accordingly, we suggested and employed here the maximum likelihood formulation of PH model (hereinafter referred to as the ‘morbidity risk’, simply ‘morbidity’, or healthspan model) involving the age at the first incidence chronic disease or the end of the follow-up time.
 
-The mortality and morbidity risk models returned Cox regression parameters that were consistent with well-established mortality and morbidity acceleration patterns. For example, the survival (the remaining lifespan) model in the UKB produced the regression coefficient Γ=0.087 (95 % CI 0.078–0.097) per year for the age of first assessment, very close to the mortality and morbidity acceleration rate of approximately 0.09 per year in UKB cohort (Zenin et al., 2019). The characteristic time scale is t1/2=ln⁡(2)/Γ=7.5 years and hence is nothing else but the mortality rate doubling time from Gompertz mortality law.
+The mortality and morbidity risk models returned Cox regression parameters that were consistent with well-established mortality and morbidity acceleration patterns. For example, the survival (the remaining lifespan) model in the UKB produced the regression coefficient $Γ=0.087$ (95 % CI 0.078–0.097) per year for the age of first assessment, very close to the mortality and morbidity acceleration rate of approximately 0.09 per year in UKB cohort (Zenin et al., 2019). The characteristic time scale is $t_{1/2}=ln⁡(2)/Γ=7.5$ years and hence is nothing else but the mortality rate doubling time from Gompertz mortality law.
 
 The Cox regression coefficients for males were 0.47 (95% CI 0.35–0.59) in UKB and 0.26 (95% CI 0.13–0.38) in UKBBN. Under constant mortality acceleration, this would correspond to approximately 3 − 5 years of difference in life expectancy. Women in the UK (the population relevant to this study) live longer than men, although the gap between the sexes has decreased over time down to 3.7 years (Sanders, 2017).
 
-We found that, in both datasets, burden of ultra-rare (M⁢A⁢F<0.0001) PTVs was negatively and significantly correlated with lifespan, and with healthspan in UKB (Figure 1). The proportional hazards effect estimations (sign and order of magnitude) were consistent, β=0.046 and 0.014 per mutation, for lifespan and healthspan in UKB, respectively. To estimate the effect of ultra-rare PTVs on lifespan and healthspan in years, we equate the contributions to log-hazards from the Gompertz term, Γ=0.093 per year, and the burden term, β per mutation: each additional ultra-rare PTV accounts for β/Γ years of reduction, that is roughly 0.5 and 0.16 years per mutation for lifespan and healthspan, respectively. Moreover, the Cox regression coefficients were very similar in UKBBN and UKB datasets, indicating consistency of the effect across populations despite differences in population structure and morbidity statistics (Table 2), tissue source (blood in UKB and brain in UKBBN), sequencing methods and variant calling pipelines (Keogh et al., 2017).
+We found that, in both datasets, burden of ultra-rare ($M⁢A⁢F<0.0001$) PTVs was negatively and significantly correlated with lifespan, and with healthspan in UKB (Figure 1). The proportional hazards effect estimations (sign and order of magnitude) were consistent, $\beta=0.046$ and 0.014 per mutation, for lifespan and healthspan in UKB, respectively. To estimate the effect of ultra-rare PTVs on lifespan and healthspan in years, we equate the contributions to log-hazards from the Gompertz term, $Γ=0.093$ per year, and the burden term, $\beta$ per mutation: each additional ultra-rare PTV accounts for $\beta/Γ$ years of reduction, that is roughly 0.5 and 0.16 years per mutation for lifespan and healthspan, respectively. Moreover, the Cox regression coefficients were very similar in UKBBN and UKB datasets, indicating consistency of the effect across populations despite differences in population structure and morbidity statistics (Table 2), tissue source (blood in UKB and brain in UKBBN), sequencing methods and variant calling pipelines (Keogh et al., 2017).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig1-v2.jpg)
+
+**Figure 1.:** Number of ultra-rare variants belonging to each MAF bin was calculated for each exome and tested for association with lifespan phenotypes using Cox proportional hazards model and covariates to account for population structure. UKBBN lifespan was tested for associations with corresponding PTVs burdens using sex and 20 first principal components (PCs) from PCA analysis with 1000G project. UKB lifespan during follow-up was tested for associations using sex, age of enrollment, assessment centers and 40 PCs provided by UKB as covariates. UKB healthspan, mother’s and father’s ages at death were tested for associations using sex, assessment centers and 40 PCs as covariates. Beta coefficients estimated by Cox proportional hazards model (Cox PH beta) are plotted as dots with whiskers representing 95% confidence intervals. p-Values are shown for significant results only. Blue color designates statistically significant associations. Red dashed line designates zero Cox PH beta coefficient value. MAF - minor allele frequency, PTV - protein-truncating variants (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites variant), UKB - UK Biobank, UKBBN - UK Brain Bank Network.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The burden of variants increases with the frequency of the variant in the population. µ and $\sigma$ shown in the upper right corners are mean and standard deviation of the corresponding distribution. PTV - protein-truncating variants (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites variant).
 
 We also observed a smaller but still significant effect of the ultra-rare PTV burden on mothers’ but not on fathers’ age at death in UKB. The effect size on mother’s age at death was smaller and less significant than that on the subject’s healthspan and lifespan.
 
 The difference between male and female longevity is one of the most conserved observations in human biology. In light of this, we ran analysis separately for men and women and found sex-specific effects for lifespan phenotypes (Table 3). Association with age at death was similar between the sexes. However, the associations with healthspan and mother’s age at death were almost entirely driven by women.
 
-On average, we identified 6 (S⁢D=2.6) ultra-rare PTVs per genome (Figure 1—figure supplement 1, upper left corner). The variability of the burden of S⁢D=2.6 transforms into the variability in life- and healthspan reduction of 1.3 and 0.4 years, respectively. To visualize the effects of such PTVs on survival, we split deceased UKB subjects into five nearly equal groups corresponding to increasing PTV burden. The subjects in the first group had 0–3 ultra-rare PTVs per genome, in the second - 4 or 5 PTVs, in the third - 6 or 7 PTVs, in the forth - 8 or 9 PTVs and in the fifth - 10 or more PTVs (Figure 2, inset). Mean ages within the groups were 57.7, 57.5, 57.5, 57.4, and 57.4 years, respectively, with no difference in age distribution across the groups (Kolmogorov-Smirnov test on two samples p-value > 1%).
+**Table 3.**
+ Association of burden of ultra-rare ($M⁢A⁢F<0.0001$) PTVs with healthspan and mother’s age at death is sex-specific.Number of ultra-rare variants was calculated for each genome and tested for association with lifespan phenotypes using Cox proportional hazards model and covariates to account for population structure (see Materials and methods). Beta coefficients reported in the ’coef’ column. Bold font designates statistically significant associations. N - number of individuals analyzed, events - number of corresponding events reported in UK Biobank.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Phenotype</th>
+      <th>Sex</th>
+      <th>Coef</th>
+      <th>Ci (2.5%)</th>
+      <th>Ci (97.5%)</th>
+      <th>p-value</th>
+      <th>N</th>
+      <th>Events</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Death</td>
+      <td>female</td>
+      <td>0.048</td>
+      <td>0.012</td>
+      <td>0.083</td>
+      <td>0.008</td>
+      <td>21742</td>
+      <td>450</td>
+    </tr>
+    <tr>
+      <td>Death</td>
+      <td>male</td>
+      <td>0.041</td>
+      <td>0.011</td>
+      <td>0.070</td>
+      <td>0.007</td>
+      <td>18626</td>
+      <td>672</td>
+    </tr>
+    <tr>
+      <td>Mother age at death</td>
+      <td>female</td>
+      <td>0.008</td>
+      <td>0.001</td>
+      <td>0.015</td>
+      <td>0.026</td>
+      <td>21320</td>
+      <td>12370</td>
+    </tr>
+    <tr>
+      <td>Mother age at death</td>
+      <td>male</td>
+      <td>0.006</td>
+      <td>−0.002</td>
+      <td>0.013</td>
+      <td>0.130</td>
+      <td>17989</td>
+      <td>11081</td>
+    </tr>
+    <tr>
+      <td>Father age at death</td>
+      <td>female</td>
+      <td>0.002</td>
+      <td>−0.004</td>
+      <td>0.008</td>
+      <td>0.558</td>
+      <td>20914</td>
+      <td>15679</td>
+    </tr>
+    <tr>
+      <td>Father age at death</td>
+      <td>male</td>
+      <td>−0.001</td>
+      <td>−0.008</td>
+      <td>0.006</td>
+      <td>0.796</td>
+      <td>17783</td>
+      <td>13785</td>
+    </tr>
+    <tr>
+      <td>Healthspan</td>
+      <td>female</td>
+      <td>0.024</td>
+      <td>0.014</td>
+      <td>0.034</td>
+      <td>4.1E-06</td>
+      <td>21742</td>
+      <td>5667</td>
+    </tr>
+    <tr>
+      <td>Healthspan</td>
+      <td>male</td>
+      <td>0.009</td>
+      <td>−0.001</td>
+      <td>0.019</td>
+      <td>0.070</td>
+      <td>18626</td>
+      <td>6037</td>
+    </tr>
+  </tbody>
+</table>
+
+On average, we identified 6 ($S⁢D=2.6$) ultra-rare PTVs per genome (Figure 1—figure supplement 1, upper left corner). The variability of the burden of $S⁢D=2.6$ transforms into the variability in life- and healthspan reduction of 1.3 and 0.4 years, respectively. To visualize the effects of such PTVs on survival, we split deceased UKB subjects into five nearly equal groups corresponding to increasing PTV burden. The subjects in the first group had 0–3 ultra-rare PTVs per genome, in the second - 4 or 5 PTVs, in the third - 6 or 7 PTVs, in the forth - 8 or 9 PTVs and in the fifth - 10 or more PTVs (Figure 2, inset). Mean ages within the groups were 57.7, 57.5, 57.5, 57.4, and 57.4 years, respectively, with no difference in age distribution across the groups (Kolmogorov-Smirnov test on two samples p-value > 1%).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig2-v2.jpg)
 
-**Figure 2.:** ) PTV burden distribution and survival curves for the deceased UKB subjects stratified into groups based on the increasing burden.M⁢A⁢F<0.0001Blue line represents survival of individuals with low PTV burden (3 or less ultra-rare PTVs per genome) and red line represents survival of individuals with high PTV burden (10 or more ultra-rare PTVs per genome) during eleven years of follow-up (log-rank test ). The absolute number of deceased subjects in each line, and the corresponding percentage, is indicated in the legend. The inset shows the distribution of the number of ultra-rare (p=7.1×10-5) PTVs per deceased individual in UKB cohort, colored accordingly to the survival curves. MAF - minor allele frequency, PTV - protein-truncating variants (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites variant).M⁢A⁢F<0.0001
+**Figure 2.:** Ultra-rare ($M⁢A⁢F<0.0001$) PTV burden distribution and survival curves for the deceased UKB subjects stratified into groups based on the increasing burden.Blue line represents survival of individuals with low PTV burden (3 or less ultra-rare PTVs per genome) and red line represents survival of individuals with high PTV burden (10 or more ultra-rare PTVs per genome) during eleven years of follow-up (log-rank test $p=7.1\times10^{-5}$). The absolute number of deceased subjects in each line, and the corresponding percentage, is indicated in the legend. The inset shows the distribution of the number of ultra-rare ($M⁢A⁢F<0.0001$) PTVs per deceased individual in UKB cohort, colored accordingly to the survival curves. MAF - minor allele frequency, PTV - protein-truncating variants (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites variant).
 
-The Kaplan-Mayer (KM) survival curves for UKB individuals who harbor the lowest and the highest number of ultra-rare PTVs are shown in Figure 2 as a function of the follow-up time. The separation of the curves further illustrated elevated mortality of the subjects with high PTV burden, with the most significant difference between cohorts #1 and #5 (log-rank test p=7.1×10-5). Due to Gompertz mortality acceleration, most of the death events involve the oldest individuals. Accordingly, the KM analysis here is naturally limited to a relatively narrow age group representing those close to the maximum age in the UKB population.
+The Kaplan-Mayer (KM) survival curves for UKB individuals who harbor the lowest and the highest number of ultra-rare PTVs are shown in Figure 2 as a function of the follow-up time. The separation of the curves further illustrated elevated mortality of the subjects with high PTV burden, with the most significant difference between cohorts #1 and #5 (log-rank test $p=7.1\times10^{-5}$). Due to Gompertz mortality acceleration, most of the death events involve the oldest individuals. Accordingly, the KM analysis here is naturally limited to a relatively narrow age group representing those close to the maximum age in the UKB population.
 
-Having established the association of PTVs number with lifespan, we explored other types of genetic variants selected for incidence frequency and category: 3-prime and 5-prime UTR region variants, transcription factor (TF) binding sites, and structural interaction variants (Table 4). Among all tested PTV types, the most significant associations with lifespan and healthspan were observed for the ultra-rare (M⁢A⁢F<0.0001) stop gain, splice donor, and frameshift variants (Figure 3). However, only stop gains were associated with mother’s age at death, and none of the categories were associated with father’s age at death. As a negative control, we also included the effects of neutral variants - synonymous variants, which showed no significant associations with lifespan phenotypes.
+Having established the association of PTVs number with lifespan, we explored other types of genetic variants selected for incidence frequency and category: 3-prime and 5-prime UTR region variants, transcription factor (TF) binding sites, and structural interaction variants (Table 4). Among all tested PTV types, the most significant associations with lifespan and healthspan were observed for the ultra-rare ($M⁢A⁢F<0.0001$) stop gain, splice donor, and frameshift variants (Figure 3). However, only stop gains were associated with mother’s age at death, and none of the categories were associated with father’s age at death. As a negative control, we also included the effects of neutral variants - synonymous variants, which showed no significant associations with lifespan phenotypes.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig3-v2.jpg)
 
-**Figure 3.:** ) variants burden with UKB and UKBBN lifespan, UKB healthspan, and parental longevity (father’s and mother’s age at death).M⁢A⁢F<0.0001The number of ultra-rare variants belonging to each category was calculated for each genome and tested for association with lifespan phenotypes using Cox proportional hazards model and covariates to account for population structure. UKBBN lifespan was tested using sex and 20 first principal components (PCs) taken from principal component analysis of common variants shared between UKBBN and 1000G project. UKB lifespan during follow-up was tested for association with ultra-rare variants burdens using sex, age of enrollment, assessment centers, and 40 PCs provided by UKB as covariates. Sex, assessment centers, and 40 PCs were used as covariates for associations with UKB healthspan, and mother’s and father’s age at death. Beta coefficients estimated by Cox proportional hazards model (Cox PH beta) are plotted as dots with whiskers representing 95% confidence intervals. p-Values are shown for significant results only. Blue color designates statistically significant associations. Red dashed line designates zero Cox PH beta coefficient value. UKB - UK Biobank, UKBBN - UK Brain Bank Network, TF - transcription factor, UTR - untranslated region, MAF - minor allele frequency, PTV - protein-truncating variants (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites).Figure 3—source data 1.Figure 3.
+**Figure 3.:** Association of ultra-rare ($M⁢A⁢F<0.0001$) variants burden with UKB and UKBBN lifespan, UKB healthspan, and parental longevity (father’s and mother’s age at death).The number of ultra-rare variants belonging to each category was calculated for each genome and tested for association with lifespan phenotypes using Cox proportional hazards model and covariates to account for population structure. UKBBN lifespan was tested using sex and 20 first principal components (PCs) taken from principal component analysis of common variants shared between UKBBN and 1000G project. UKB lifespan during follow-up was tested for association with ultra-rare variants burdens using sex, age of enrollment, assessment centers, and 40 PCs provided by UKB as covariates. Sex, assessment centers, and 40 PCs were used as covariates for associations with UKB healthspan, and mother’s and father’s age at death. Beta coefficients estimated by Cox proportional hazards model (Cox PH beta) are plotted as dots with whiskers representing 95% confidence intervals. p-Values are shown for significant results only. Blue color designates statistically significant associations. Red dashed line designates zero Cox PH beta coefficient value. UKB - UK Biobank, UKBBN - UK Brain Bank Network, TF - transcription factor, UTR - untranslated region, MAF - minor allele frequency, PTV - protein-truncating variants (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites).
 
-## Gene constraints analysis
+**Table 4.**
+ Variant annotations for 8,959,608 SNPs from FE dataset which is part of UKB.Variant types selected for analysis are written in italics, and PTV burden components marked in bold. Some variants may have multiple effects. PTV - protein-truncating variants, UTR - untranslated region, TF - transcription factor, TFBS - transcription factor binding site.
 
-Ultra-rare PTVs affect 89% of the sequenced genes in the UKB dataset. No ultra-rare PTVs were observed in the remaining 11%, which we refer as genes intolerant to rare PTVs (iPTV). We compared these genes with those harboring at least one PTV (n=16,495) within the same 4 MAF bins tested for the association with lifespan. iPTV genes, on average, were expressed in a higher number of tissues (Figure 4a) and had higher indispensability scores (a metric to measure gene essentiality introduced by Khurana et al., 2013; Figure 4b). As expected, iPTV genes in the UKB cohort are strongly enriched in genes intolerant to PTVs measured by pLI scores (Figure 4—figure supplement 1b), confirming that genes intolerant to PTVs largely overlap between UKB and ExAC datasets. Accordingly, genes that harbored frequent PTVs had tissue-specific expressions and had lower indispensability scores, thus were less essential, in agreement with previously published results for ExAC cohort (Lek et al., 2016). Ultra-rare stop gains were more likely to trigger nonsense-mediated mRNA decay (NMD) (Figure 4c) as predicted by snpEff by 50 base-pair rule (Maquat, 2004) which was also demonstrated for the rare variants in GTEx dataset (Li et al., 2017).
 
-We further hypothesized that subjects with the same number of ultra-rare PTVs may have different lifespan due to difference in the damaging effect of their PTVs. Thus, subjects dying earlier would harbor more deleterious alleles than those dying later. To test this idea, we compared characteristics of genes disrupted by PTVs in subjects with the same PTV number (5 PTVs per exome, n= 171) but different lifespan (Figure 5a). Our analysis confirmed the idea that subjects dying younger harbored more damaging PTVs. Those variants affect more broadly expressed genes, based on GTEx gene expression data (Figure 5c), and cause gene loss-of-function more frequently (Figure 5e). PTVs in shorter-lived subjects also resided in genes less likely to maintain a wild-type phenotype when a single copy of the gene is inactivated, as evident by genome-wide haploinsufficiency score GHIS from Steinberg et al. (2015); Figure 5b. Also, these PTVs affected genes with stronger constraints against PTVs, based on the observed/expected LoF (oe, gnomAD v2.1) scores, suggesting that these genes harbored fewer PTVs than expected in the general population. Mean values for constraints of the genes disrupted by PTVs showed association across lifespan tested by Cox PH model (Figure 5a, inset). Percent of tissues expressing these genes, oe scores and loss-of-function occurrence were all significantly associated with lifespan of subjects with 5 PTVs (Figure 5a, inset).
+<table>
+  <thead>
+    <tr>
+      <th>Variant effect</th>
+      <th>Number of variants</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>intron_variant</td>
+      <td>3643472</td>
+    </tr>
+    <tr>
+      <td>missense_variant</td>
+      <td>2281322</td>
+    </tr>
+    <tr>
+      <td>synonymous_variant</td>
+      <td>1159078</td>
+    </tr>
+    <tr>
+      <td>splice_region_variant</td>
+      <td>333226</td>
+    </tr>
+    <tr>
+      <td>downstream_gene_variant</td>
+      <td>329399</td>
+    </tr>
+    <tr>
+      <td>upstream_gene_variant</td>
+      <td>303346</td>
+    </tr>
+    <tr>
+      <td>3_prime_UTR_variant</td>
+      <td>303346</td>
+    </tr>
+    <tr>
+      <td>5_prime_UTR_variant</td>
+      <td>192159</td>
+    </tr>
+    <tr>
+      <td>frameshift_variant</td>
+      <td>96359</td>
+    </tr>
+    <tr>
+      <td>intragenic_variant</td>
+      <td>85619</td>
+    </tr>
+    <tr>
+      <td>sequence_feature</td>
+      <td>79868</td>
+    </tr>
+    <tr>
+      <td>stop_gained</td>
+      <td>68054</td>
+    </tr>
+    <tr>
+      <td>structural_interaction_variant</td>
+      <td>57365</td>
+    </tr>
+    <tr>
+      <td>TF_binding_site_variant</td>
+      <td>45909</td>
+    </tr>
+    <tr>
+      <td>5_prime_UTR_premature_start_codon_gain_variant</td>
+      <td>34381</td>
+    </tr>
+    <tr>
+      <td>splice_donor_variant</td>
+      <td>22476</td>
+    </tr>
+    <tr>
+      <td>disruptive_inframe_deletion</td>
+      <td>21392</td>
+    </tr>
+    <tr>
+      <td>splice_acceptor_variant</td>
+      <td>18591</td>
+    </tr>
+    <tr>
+      <td>conservative_inframe_deletion</td>
+      <td>12612</td>
+    </tr>
+    <tr>
+      <td>disruptive_inframe_insertion</td>
+      <td>11080</td>
+    </tr>
+    <tr>
+      <td>intergenic_region</td>
+      <td>11012</td>
+    </tr>
+    <tr>
+      <td>conservative_inframe_insertion</td>
+      <td>8665</td>
+    </tr>
+    <tr>
+      <td>start_lost</td>
+      <td>5807</td>
+    </tr>
+    <tr>
+      <td>stop_lost</td>
+      <td>2442</td>
+    </tr>
+    <tr>
+      <td>protein_protein_contact</td>
+      <td>1590</td>
+    </tr>
+    <tr>
+      <td>stop_retained_variant</td>
+      <td>1077</td>
+    </tr>
+    <tr>
+      <td>initiator_codon_variant</td>
+      <td>609</td>
+    </tr>
+    <tr>
+      <td>TFBS_ablation</td>
+      <td>180</td>
+    </tr>
+    <tr>
+      <td>bidirectional_gene_fusion</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>gene_fusion</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>exon_loss_variant</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3_prime_UTR_truncation</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>non_canonical_start_codon</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Gene constraints analysis
+
+Ultra-rare PTVs affect 89% of the sequenced genes in the UKB dataset. No ultra-rare PTVs were observed in the remaining 11%, which we refer as genes intolerant to rare PTVs (iPTV). We compared these genes with those harboring at least one PTV ($n=16,495$) within the same 4 MAF bins tested for the association with lifespan. iPTV genes, on average, were expressed in a higher number of tissues (Figure 4a) and had higher indispensability scores (a metric to measure gene essentiality introduced by Khurana et al., 2013; Figure 4b). As expected, iPTV genes in the UKB cohort are strongly enriched in genes intolerant to PTVs measured by pLI scores (Figure 4—figure supplement 1b), confirming that genes intolerant to PTVs largely overlap between UKB and ExAC datasets. Accordingly, genes that harbored frequent PTVs had tissue-specific expressions and had lower indispensability scores, thus were less essential, in agreement with previously published results for ExAC cohort (Lek et al., 2016). Ultra-rare stop gains were more likely to trigger nonsense-mediated mRNA decay (NMD) (Figure 4c) as predicted by snpEff by 50 base-pair rule (Maquat, 2004) which was also demonstrated for the rare variants in GTEx dataset (Li et al., 2017).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig4-v2.jpg)
+
+**Figure 4.:** (a) PTV-intolerant (iPTV) genes and genes harboring ultra-rare PTVs ($[0,1⁢e-4)$ bin) are more broadly expressed and (b) have higher indispensability scores (a metric to measure gene essentiality introduced by Khurana et al., 2013). The results of comparisons are grouped in subsequent MAF bins and the numbers in the horizontal axis represent the number of genes included in the analysis. (c) Ultra-rare stop gains are more likely to trigger nonsense-mediated decay (NMD) based on 50 bp rule prediction, the numbers in the horizontal axis represent the total number of stop gains in each bin. Each group was compared to the bin of rarest variants $[0,1⁢e-4)$, where PTVs are significantly associated with lifespan. p-Values in (a) and (b) are calculated using Wilcoxon rank-sum test, p-values in (c) are calculated using Fisher’s exact test. NMD - nonsense-mediated mRNA decay, PTV - protein-truncating variant (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites variant), iPTV - genes intolerant to PTV.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Top: human-chimpanzee $d⁢N/d⁢S$ ratios, bottom: pLI scores for genes harboring PTVs belonging to different MAF bins or lacking PTVs (iPTV) in UKB population. Numbers below each bin represents number of genes harboring PTVs of corresponding population frequency included in the analyses.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Positions were binned by 50 bp window and plotted according to the chromosome (vertical axis) and position (horizontal axis). Each line represents a 50 window, and color intensity corresponds to proportion of ultra-rare PTVs to total number of variants identified in UKB subjects.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Each dot is a gene. Genes with an odds ratio below one had a disproportionately low number of rare PTVs. Shown in red are genes with Bonferroni-corrected p-value<0.05. For this analysis protein-truncating variants were restricted to stop codon gains and frameshifts.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** In order to identify genes with a significantly low number of rare PTVs, we performed a Fisher’s exact test using number of rare PTVs and synonymous variants. For each gene, we build a 2 × 2 contingency table containing the number of rare PTVs observed in the gene and those observed in the rest of the genome, and the number of synonymous variants observed in the gene and those observed in the rest of the genome. We first focused on the genes that pass Bonferroni-corrected p-value cut-off of 0.05. Those with odds ratio (OR) <1 showed a disproportionately low number of ultra-rare PTVs, and genes with OR >1 were enriched in ultra-rare PTVs. The oe scores from gnomAD correspond to the gene selective constraints against loss-of-function variants, e.g. essential genes are known to have low oe scores. We used here the upper limit of the 95% confidence interval obtained from gnomAD v2.1.1. For this analysis protein-truncating variants were restricted to stop codon gains and frameshifts.
+
+We further hypothesized that subjects with the same number of ultra-rare PTVs may have different lifespan due to difference in the damaging effect of their PTVs. Thus, subjects dying earlier would harbor more deleterious alleles than those dying later. To test this idea, we compared characteristics of genes disrupted by PTVs in subjects with the same PTV number (5 PTVs per exome, $n= 171$) but different lifespan (Figure 5a). Our analysis confirmed the idea that subjects dying younger harbored more damaging PTVs. Those variants affect more broadly expressed genes, based on GTEx gene expression data (Figure 5c), and cause gene loss-of-function more frequently (Figure 5e). PTVs in shorter-lived subjects also resided in genes less likely to maintain a wild-type phenotype when a single copy of the gene is inactivated, as evident by genome-wide haploinsufficiency score GHIS from Steinberg et al. (2015); Figure 5b. Also, these PTVs affected genes with stronger constraints against PTVs, based on the observed/expected LoF (oe, gnomAD v2.1) scores, suggesting that these genes harbored fewer PTVs than expected in the general population. Mean values for constraints of the genes disrupted by PTVs showed association across lifespan tested by Cox PH model (Figure 5a, inset). Percent of tissues expressing these genes, oe scores and loss-of-function occurrence were all significantly associated with lifespan of subjects with 5 PTVs (Figure 5a, inset).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig5-v2.jpg)
 
-**Figure 5.:** (a) Survival of UKB subjects with 5 ultra-rare PTVs per exome. The inset shows association between lifespan and the properties of genes harboring ultra-rare PTV: evolutionary constraint quantified by  ratios (the ratio of substitution rates at non-synonymous and synonymous sites) in human-chimpanzee orthologs; indispensability score (IS) as in d⁢N/d⁢SKhurana et al., 2013; genome-wide haploinsufficiency score (GHIS) as in Steinberg et al. (2015); (relative) number of tissues expressing the gene; observed/expected (oe) score; prediction for variants being loss-of-function (LOF, see LOF-gene) and triggering NMD (see NMD-gene). Orange and blue areas in (a) designate survival windows for subjects dying earlier in life (young) and later in life (old) and this color scheme is the same as that in the plots B-D. Difference in (B) GHIS scores, (C) percent of tissues expressing gene affected by variants, and (D) oe scores, and (e) proportion of predicted loss-of-function () variants for individuals with same PTV number but differing in lifespan (i.e. dying younger (47.4 − 58.9 years) or older (73.8 − 78.5 years)). p-Values in (L⁢O⁢F⁢_⁢g⁢e⁢n⁢eb) and (d) were calculated by Student t-test, p-value in (c) and (e) were calculated by Wilcoxon rank-sum test. NMD - nonsense-mediated decay, IS - indispensability score, GHIS - genome-wide haploinsufficiency score, LOF - loss of function, PTV - protein-truncating variant (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites variant).
+**Figure 5.:** (a) Survival of UKB subjects with 5 ultra-rare PTVs per exome. The inset shows association between lifespan and the properties of genes harboring ultra-rare PTV: evolutionary constraint quantified by $d⁢N/d⁢S$ ratios (the ratio of substitution rates at non-synonymous and synonymous sites) in human-chimpanzee orthologs; indispensability score (IS) as in Khurana et al., 2013; genome-wide haploinsufficiency score (GHIS) as in Steinberg et al. (2015); (relative) number of tissues expressing the gene; observed/expected (oe) score; prediction for variants being loss-of-function (LOF, see LOF-gene) and triggering NMD (see NMD-gene). Orange and blue areas in (a) designate survival windows for subjects dying earlier in life (young) and later in life (old) and this color scheme is the same as that in the plots B-D. Difference in (B) GHIS scores, (C) percent of tissues expressing gene affected by variants, and (D) oe scores, and (e) proportion of predicted loss-of-function ($L⁢O⁢F⁢_⁢g⁢e⁢n⁢e$) variants for individuals with same PTV number but differing in lifespan (i.e. dying younger (47.4 − 58.9 years) or older (73.8 − 78.5 years)). p-Values in (b) and (d) were calculated by Student t-test, p-value in (c) and (e) were calculated by Wilcoxon rank-sum test. NMD - nonsense-mediated decay, IS - indispensability score, GHIS - genome-wide haploinsufficiency score, LOF - loss of function, PTV - protein-truncating variant (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites variant).
 
-## Gene burden test
+### Gene burden test
 
 We further tested whether some of the genes were more frequently affected by ultra-rare PTVs in UKB individuals depending on their lifespan and healthspan. For that, we 1) split the list of UKB subjects ordered by lifespan or healthspan into two groups of same size, 2) summed up a number of unique cases of the gene harboring ultra-rare PTV for each group, and 3) tested whether those numbers are biased towards one of the groups by Fisher’s exact test. Interestingly, none of the genes reached statistical significance under FDR p-value cut-off of 0.05 (Supplementary file 1 and Supplementary file 2).
 
 Previous efforts to characterize rare PTVs in large datasets demonstrated that some genes are more prone to be affected by rare PTVs than others (Lek et al., 2016). However, it was unclear to what extent that applies to the UKB dataset. We first assessed the genome-wide distribution of ultra-rare PTVs and found it to be similar to the rest of the variants (Figure 4—figure supplement 2). To address the same question at the level of individual genes, we estimated the number of ultra-rare stop gains and frameshifts per gene in the UKB cohort, as well as the number of all synonymous variants per gene as a neutral read-out to normalize for coverage. By comparing the number of PTVs and synonymous variants per gene, to the overall number of those variants, we found 110 genes that were prone to ultra-rare PTVs, as well as 188 genes intolerant to those variants (Supplementary file 3, Figure 4—figure supplement 3). Our estimations were in agreement with oe scores provided by gnomAD. As expected, genes prone to ultra-rare PTVs in UKB showed high oe scores in gnomAD, while genes intolerant to those variants had low oe scores (Figure 4—figure supplement 4). We excluded variants in splice donor and acceptor sites, as the number of variants per gene is directly affected by the number of introns.
 
-## Somatic mutations and mortality acceleration
+### Somatic mutations and mortality acceleration
 
-In addition to the germline burden of extremely rare PTVs, somatic cells accumulate new genetic variants (Vijg, 2000; Milholland et al., 2015; Zhang and Vijg, 2018) at a median mutation frequency of R≈10-8 per base pair per year (Milholland et al., 2017). Thus, the negative effects on healthspan and lifespan due to germline burden should get gradually amplified with age in somatic cells. We quantitatively assessed whether the contribution of accumulated somatic PTVs is strong enough to explain the exponential growth of mortality with age, a.k.a. the Gompertz law. In doing so, we extrapolated the Cox PH model for germline PTV burden by taking into account the effects of acquiring new PTVs with age in somatic cells. The somatic PTV burden increases linearly with age and can be estimated as λ⁢L⁢R⁢t, where t is age, the genome size is L=3 Gbp, and the fraction of the genome covered with the extremely rare PTVs (10 kbp) with M⁢A⁢F<10-4 is λ=0.33⋅10-5. Overall, the somatic PTV burden contributed to the mortality log-hazard a linear (in age) term β⁢λ⁢L⁢R⁢t, where β=0.046 per year is the Cox PH coefficient, whereas the Gompertz contribution would be proportional to Γ⁢t. We estimate that the somatic PTV burden term β⁢λ⁢L⁢R≈4.6⋅10-6 per year is negligible in comparison to the Gompertz exponent Γ≈0.09 per year characterizing mortality and incidence of chronic disease acceleration with age (Zenin et al., 2019). The estimated effect of somatic PTV accumulation is minor in comparison to the effect of germline PTV burden, and can account only for a minute fraction of mortality and morbidity acceleration. However, our prediction should be experimentally validated, for example, by testing the effect of somatic mutations on lifespan and healthspan in model organisms.
+In addition to the germline burden of extremely rare PTVs, somatic cells accumulate new genetic variants (Vijg, 2000; Milholland et al., 2015; Zhang and Vijg, 2018) at a median mutation frequency of $R≈10^{-8}$ per base pair per year (Milholland et al., 2017). Thus, the negative effects on healthspan and lifespan due to germline burden should get gradually amplified with age in somatic cells. We quantitatively assessed whether the contribution of accumulated somatic PTVs is strong enough to explain the exponential growth of mortality with age, a.k.a. the Gompertz law. In doing so, we extrapolated the Cox PH model for germline PTV burden by taking into account the effects of acquiring new PTVs with age in somatic cells. The somatic PTV burden increases linearly with age and can be estimated as $\lambda⁢L⁢R⁢t$, where $t$ is age, the genome size is $L=3$ Gbp, and the fraction of the genome covered with the extremely rare PTVs (10 kbp) with $M⁢A⁢F<10^{-4}$ is $\lambda=0.33⋅10^{-5}$. Overall, the somatic PTV burden contributed to the mortality log-hazard a linear (in age) term $\beta⁢\lambda⁢L⁢R⁢t$, where $\beta=0.046$ per year is the Cox PH coefficient, whereas the Gompertz contribution would be proportional to $Γ⁢t$. We estimate that the somatic PTV burden term $\beta⁢\lambda⁢L⁢R≈4.6⋅10^{-6}$ per year is negligible in comparison to the Gompertz exponent $Γ≈0.09$ per year characterizing mortality and incidence of chronic disease acceleration with age (Zenin et al., 2019). The estimated effect of somatic PTV accumulation is minor in comparison to the effect of germline PTV burden, and can account only for a minute fraction of mortality and morbidity acceleration. However, our prediction should be experimentally validated, for example, by testing the effect of somatic mutations on lifespan and healthspan in model organisms.
 
 ## Discussion
 
@@ -115,11 +489,11 @@ Interestingly, we observed sex-specific effects of PTV burden for healthspan and
 
 Ultra-rare PTVs occur across the genome and affect 89% of sequenced genes in UKB. Intriguingly, we observed a subset of 1,496 genes that are free of ultra-rare PTVs in the whole UKB population sequenced so far. These genes are more essential as evidenced by high indispensability scores and are expressed more broadly throughout the body. Together, this findings indicate strong purifying selection against PTVs in these genes. Their disruption could lead to either childhood or embryonic lethality, the time periods that are not covered by UKB as well as other public datasets, for example ExAC.
 
-As expected, genes affected by rare and common PTVs (M⁢A⁢F>0.0001) are less evolutionary conserved and more frequently disrupted in the general population (Figure 4—figure supplement 1), less essential (based on indispensability scores), and expressed in fewer tissues (Figure 4a,b). Moreover, fewer common nonsense variants were predicted to trigger nonsense-mediated mRNA decay; thus, they affect gene expression less than ultra-rare stop gains (Figure 4c). Overall, common PTVs are expected to have a lower effect on fitness, which would explain the lack of the association between the burden of common PTVs and lifespan phenotypes. It is apparent that the ultra-rare PTVs are more damaging than common PTVs but not enough damaging to cause early life mortality.
+As expected, genes affected by rare and common PTVs ($M⁢A⁢F>0.0001$) are less evolutionary conserved and more frequently disrupted in the general population (Figure 4—figure supplement 1), less essential (based on indispensability scores), and expressed in fewer tissues (Figure 4a,b). Moreover, fewer common nonsense variants were predicted to trigger nonsense-mediated mRNA decay; thus, they affect gene expression less than ultra-rare stop gains (Figure 4c). Overall, common PTVs are expected to have a lower effect on fitness, which would explain the lack of the association between the burden of common PTVs and lifespan phenotypes. It is apparent that the ultra-rare PTVs are more damaging than common PTVs but not enough damaging to cause early life mortality.
 
 Notably, individuals sharing same PTV number still have diverse lifespan. This discrepancy might be explained by differences in the rate of age-related damage accumulation, regulated by environment and genetic factors. In addition, the impact of a PTV on phenotype depends on the gene it disrupts and its position within the gene body. For example, disruption of a more evolutionary conserved gene and with a broad expression would, intuitively, have a stronger effect on lifespan than the disruption of a less conserved gene with a tissue-specific expression. Indeed, our analysis confirmed that individuals with shorter lifespan were born with more deleterious alleles. Genes disrupted in short-lived individuals are broadly expressed in the body, are more likely to cause haploinsufficiency when inactivated, and are more intolerant to PTVs (according to gnomAD oe scores). Additionally, PTVs in subjects with shorter lifespan were more likely to cause gene loss-of-function. Thus, both the degree of damage caused by ultra-rare PTVs and the number of these variants are important factors influencing human lifespan.
 
-Intriguingly, the effect size of ultra-rare PTVs on lifespan was comparable to the effect of known longevity alleles. For example, ϵ⁢4 allele in APOE/TOMM40 locus conferred an estimated 1.24 years of life shortening in women, as inferred from a large parental survival study (Joshi et al., 2016). The PTV burden difference of 2 − 3 variants corresponds to the similar effect size (1 − 1.5 years) on the lifespan variation at the standard deviation for M⁢A⁢F<0.0001.
+Intriguingly, the effect size of ultra-rare PTVs on lifespan was comparable to the effect of known longevity alleles. For example, $ϵ⁢4$ allele in APOE/TOMM40 locus conferred an estimated 1.24 years of life shortening in women, as inferred from a large parental survival study (Joshi et al., 2016). The PTV burden difference of 2 − 3 variants corresponds to the similar effect size (1 − 1.5 years) on the lifespan variation at the standard deviation for $M⁢A⁢F<0.0001$.
 
 Having established the mortality and morbidity risk association with PTVs, we were able to factor in the rates of somatic mutation accumulation over the lifespan. The dramatic discrepancy between the estimate for somatic PTV burden accumulation and the empirical mortality and morbidity acceleration does not support the hypothesis that random somatic mutations significantly reduce healthspan or lifespan. Moreover, the analysis shows that the effect of accumulation of somatic mutations is less profound than that of germline PTV burden. Thus, we found little evidence for a significant role of somatic mutations in aging (Promislow and Tatar, 1998; Moorad and Promislow, 2008). Somatic mutations may, however, play a role through high-order effects, such as clonal expansion and cell competition, and hence amplify the effects of other forms of damage (Martincorena, 2019).
 
@@ -129,30 +503,30 @@ These findings strengthen the case for complexity of aging, wherein aging is a s
 
 ## Materials and methods
 
-## UKB cohort
+### UKB cohort
 
 The first batch of UKB exome sequence group consists of 49,960 individuals who passed QC procedures by UKB. Exome sequencing cohort is enriched with samples with a higher rate of imaging and enhanced measurements such as retinal optical coherence tomography test, visual acuity, hearing test, and other. This cohort is not biased on any health condition, disease or physical measurement results from the UKB population of almost 500,000 individuals (Hout et al., 2019). We selected a cohort of 41,250 individuals who self-reported ’White British’ and have very similar genetic ancestry based on a principal components analysis of the genotypes. Then, we made an effort to produce the maximal independent set of individuals based on computed kinship coefficients (two individuals were considered related if they share relatedness of third degree or closer) and selected 40,368 individuals for the analysis.
 
-## Exome data
+### Exome data
 
-Exome data consisted of 8,959,608 SNPs and short indels from human coding DNA. We selected 6,208,943 variants that are not monomorphic in UKB cohort and have a missing rate less than 10% and M⁢A⁢F<0.2. We annotated these genetic variants for functional consequence using SNPeff (Cingolani et al., 2012) software and GRCh38.86 genome reference. UKBBN dataset was additionally annotated with ANNOVAR (Wang et al., 2010) to add ExAC MAFs. In downstream analysis we focused on protein-truncating variants annotated as: stop codon gained, frameshift variant, slice donor or splice acceptor site, this produced 152,790 and 11,393 SNPs and indels in UKB and UKBBN, correspondingly.
+Exome data consisted of 8,959,608 SNPs and short indels from human coding DNA. We selected 6,208,943 variants that are not monomorphic in UKB cohort and have a missing rate less than 10% and $M⁢A⁢F<0.2$. We annotated these genetic variants for functional consequence using SNPeff (Cingolani et al., 2012) software and GRCh38.86 genome reference. UKBBN dataset was additionally annotated with ANNOVAR (Wang et al., 2010) to add ExAC MAFs. In downstream analysis we focused on protein-truncating variants annotated as: stop codon gained, frameshift variant, slice donor or splice acceptor site, this produced 152,790 and 11,393 SNPs and indels in UKB and UKBBN, correspondingly.
 
-## PTV burden calculation and Cox proportional hazards model
+### PTV burden calculation and Cox proportional hazards model
 
-PTV burden was defined as a number of ultra-rare (MAF<0.0001) variants that disrupt open reading frame (stop gain, frameshift, disruption of splice donor/acceptor site). PTV burden was tested for association with UKBBN lifespan using Cox PH model with sex and first 20 principal components (obtained by clustering with 1000G dataset, see below) as covariates in R (R Development Core Team, 2018). For UKB data we included sex, 40 genetic principal components and assessment centers as covariates for Cox PH analysis on lifespan, healthspan and mother’s and father’s age at death. For all types of survival data except for healthspan we have also added age at assessment as covariate. Genetic principal components were calculated on genotypes for 500,000 UKB participants (Bycroft et al., 2018).
+PTV burden was defined as a number of ultra-rare ($MAF<0.0001$) variants that disrupt open reading frame (stop gain, frameshift, disruption of splice donor/acceptor site). PTV burden was tested for association with UKBBN lifespan using Cox PH model with sex and first 20 principal components (obtained by clustering with 1000G dataset, see below) as covariates in R (R Development Core Team, 2018). For UKB data we included sex, 40 genetic principal components and assessment centers as covariates for Cox PH analysis on lifespan, healthspan and mother’s and father’s age at death. For all types of survival data except for healthspan we have also added age at assessment as covariate. Genetic principal components were calculated on genotypes for 500,000 UKB participants (Bycroft et al., 2018).
 
-## UKBBN PCA with 1000G
+### UKBBN PCA with 1000G
 
-First and second chromosome for all 1000G super populations and UKBBN dataset were clustered together. For that, 1000G vcf files were lifted over to hg19 using picard tools (Broad Institute, 2018) combined with UKBBN vcf file by overlap variants using GATK tools (Van der Auwera et al., 2013). Variants with MAF deviating between datasets over 30% were excluded. Eigen vectors were obtained from variants with M⁢A⁢F>10% pruned using 50 window size, step size of 5 and variance inflation factor threshold of 1.5 by Plink (Purcell et al., 2007). We kept individuals that clustered with EUR superpopulation.
+First and second chromosome for all 1000G super populations and UKBBN dataset were clustered together. For that, 1000G vcf files were lifted over to hg19 using picard tools (Broad Institute, 2018) combined with UKBBN vcf file by overlap variants using GATK tools (Van der Auwera et al., 2013). Variants with MAF deviating between datasets over 30% were excluded. Eigen vectors were obtained from variants with $M⁢A⁢F>10%$ pruned using 50 window size, step size of 5 and variance inflation factor threshold of 1.5 by Plink (Purcell et al., 2007). We kept individuals that clustered with EUR superpopulation.
 
-## Data filtering
+### Data filtering
 
 PTVs in UKB were filtered using internal MAFs. Since UKBBN cohort is much smaller to get desired resolution we used ExAC MAFs for non-finish European population (ExAC_NFE). We excluded ultra-rare variants absent in ExAC dataset (ExAC_ALL = 0) from UKBBN analysis to reduce number of sequencing and variant calling errors. Analysis in both datasets was restricted to autosomal chromosomes to avoid sex bias. We restricted UKBBN cohort to natural causes of death (i.e. excluding car accidents, poisoning and suicides) and excluded deaths with no abnormalities detected.
 
-## Data sources
+### Data sources
 
-UKBBN vcf files were downloaded from EGA repository (EGAS00001001599, https://www.ebi.ac.uk/ega/studies/EGAS00001001599). Transcripts per kilobase million (TPM) counts for 53 human tissues were downloaded from GTEx Portal, release v7. Gene expression values within brain regions, two heart and two skin samples were averaged for subsequent analysis, and primary cell cultures were excluded, yielding a total of 37 tissues. Transcripts considered to be expressed in the tissue if T⁢P⁢M>10. Oe ratios were downloaded from gnomAD repository (gnomad.v2.1.1.lof_metrics.by_gene.txt.bgz). GHIS values were obtained from Steinberg et al. (2015) and indispensability scores were downloaded from Khurana et al., 2013. d⁢S and d⁢N values for chimpanzee-human orthologs were downloaded from Ensembl Biomart. NMD and LoF predictions were obtained from snpEff annotation (’NMD.gene’, ’LoF.gene’) (Cingolani et al., 2012). All UK Biobank data are available upon application.
+UKBBN vcf files were downloaded from EGA repository (EGAS00001001599, https://www.ebi.ac.uk/ega/studies/EGAS00001001599). Transcripts per kilobase million (TPM) counts for 53 human tissues were downloaded from GTEx Portal, release v7. Gene expression values within brain regions, two heart and two skin samples were averaged for subsequent analysis, and primary cell cultures were excluded, yielding a total of 37 tissues. Transcripts considered to be expressed in the tissue if $T⁢P⁢M>10$. Oe ratios were downloaded from gnomAD repository (gnomad.v2.1.1.lof_metrics.by_gene.txt.bgz). GHIS values were obtained from Steinberg et al. (2015) and indispensability scores were downloaded from Khurana et al., 2013. $d⁢S$ and $d⁢N$ values for chimpanzee-human orthologs were downloaded from Ensembl Biomart. NMD and LoF predictions were obtained from snpEff annotation (’NMD.gene’, ’LoF.gene’) (Cingolani et al., 2012). All UK Biobank data are available upon application.
 
-## Gene burden analysis
+### Gene burden analysis
 
 Gene burden analysis was performed with assumptions that all ultra-rare PTVs would have the same effect direction and the same effect size. Following those assumptions, we summed up all cases of gene harboring ultra-rare PTV. Cohorts were defined by splitting UKB into two groups with equal number of subjects based on ordered lifespan or healthspan data. We tested the hypothesis that some genes harbor more ultra-rare PTVs in one cohort than another (compared to the sum of PTV number in each cohort) using Fisher’s exact test. To explore sex-specific effects, we separately run analysis for healthspan in males and females. In order to identify genes with a significantly deviated burden of ultra-rare PTVs in UKB, we performed a Fisher’s exact test using the number of ultra-rare PTVs and synonymous variants. For each gene, we build a 2 × 2 contingency table containing the number of ultra-rare PTVs observed in the gene and those observed in the rest of the population, and the number of synonymous variants observed in the gene and those observed in the rest of the population. The result of each test was an odds ratio and p-value, where genes with odds ratio <1 showed a disproportionately low number of rare PTVs. The Fisher test was performed using the fisher.test function in R, and the Bonferroni correction is performed using p.adjust function in R.

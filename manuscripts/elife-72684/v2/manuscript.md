@@ -42,15 +42,23 @@ Together these studies allowed us to examine how the reward value of social cont
 
 ## Results
 
-## Sex-specific patterns of social effort in prairie voles
+### Sex-specific patterns of social effort in prairie voles
 
 In order to assess motivation for different kinds of social stimuli across groups, lever pressing responses were quantified on a progressive ratio schedule (PR-1). Males and females showed qualitatively different response patterns in the social chambers, as well as significant interaction between sex and variables of interest in a model screening for sex differences (sex*stimulus type (p = 0.01), sex*stimulus familiarity (p = 0.09)), so responses were further analyzed separately by sex (Beery, 2018; Beltz et al., 2019). For each sex, two-way repeated measures ANOVA (RM-ANOVA) was performed with familiarity of the tethered stimulus (partner/stranger) as the within-subjects/repeated measure, and sex of the tethered stimulus (opposite-sex/same-sex) as a between-subjects measure. Female prairie voles pressed more for familiar partners than unfamiliar strangers, with no effect of opposite-sex versus same-sex pairings (Figure 2A, effect of stimulus familiarity: F(1, 14) = 15.17, p = 0.0016, ηp2p20.52; no effect of stimulus sex: F(1, 14) = 0.44, p = 0.51, ηp2p20.03; subject matching: F(14, 14) = 4.2, p = 0.0057, ηp2p20.81, no significant interaction). Paired t-tests were used for within-group comparisons of responses for the partner or stranger: familiarity preferences were significant in females paired with males (t(7) = –2.7, p = 0.03, d = 0.96) as well as in females paired with females (t(7) = –4.1, p = 0.0048, d = 1.43). The mapping from response count to the corresponding PR-1 breakpoint (i.e. the maximum number of responses exhibited to achieve a reward) is shown in Figure 2A and applies to all response count figures.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/72684/elife-72684-fig2-v2.jpg)
+
+**Figure 2.:** (A) Female prairie voles responded more for familiar than unfamiliar voles of either sex. (B) Male prairie voles pressing for females responded more than did males pressing for males, regardless of familiarity. Dots represent mean number of responses across eight 30 min PR-1 sessions for each vole. Bars represent group means. PR-1 breakpoint thresholds are listed in italics next to the corresponding number of responses on the interior y-axis of panel A and apply to all lever pressing data (e.g. a vole that presses 55 times should receive 10 rewards, the last of which takes 10 responses to gain). Asterisks indicate significant familiarity preferences within groups (paired t-tests). *p < 0.05, **p < 0.01.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72684/elife-72684-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Significant within-individual preference for the partner > stranger was present more often in female pressers (9/16) than in males (1/16; p = 0.0059, FET). Two males pressed significantly more for the stranger than the partner.
 
 Male prairie voles pressed at a higher rate for opposite-sex social stimuli regardless of familiarity (effect of stimulus sex: F(1, 14) = 17.4, p = 0.0009, ηp2p20.71; no effect of familiarity, F(1, 14) = 0.013, p = 0.91, ηp2p20.00, no significant effects of subject matching or interaction).
 
 Because each vole was tested in eight consecutive sessions of each type, familiarity preference could also be assessed within individuals across days. Significant within-vole familiarity preferences were present in more female pressers (6/8 F➤M and 3/8 F➤F) than males (1/8 M➤F and 0/8 M➤M pairs) (Figure 2—figure supplement 1; p = 0.0059 Fisher’s exact test). One male in a M➤F pair exhibited a significant preference for stranger females (Figure 2—figure supplement 1), and mounted/copulated with strangers in multiple test sessions.
 
-## Social motivation and behavior were parallel in female but not male prairie voles
+### Social motivation and behavior were parallel in female but not male prairie voles
 
 In female prairie voles, the familiarity preference for both mates and peers in lever pressing was mirrored in cohabitation time and huddling. Even when these behaviors were scaled relative to lever presses (and thus access time), females spent a significantly higher fraction of the available time in the social chamber (time in social chamber/access time) when it was occupied by a familiar vole rather than a novel one (effect of familiarity F(1,14)=95.06, p < 0.0001, ηp2p20.87; subject matching F(14,14) = 2.789, p = 0.03, ηp2p20.73; others NS; two-way RM-ANOVA, Figure 3A). Females also spent more of the available time huddling (time spent in immobile side-by-side contact/access time) with familiar rather than unfamiliar conspecifics of either sex (effect of familiarity: F(1,14) = 25.82, p = 0.0002, ηp2p20.65; others NS; two-way RM-ANOVA, Figure 3C). Within-group matched comparisons of time spent with a partner or stranger also revealed that females exhibited significant familiarity preferences in time spent in the social chamber or huddling with the stimulus animal relative to time with access (time in social chamber/access time: FF: p < 0.0001, d = 3.51; FM: p = 0.0006, d = 2.12; time huddling/access time: FF: p = 0.0090, d = 1.26; FM: p = 0.0083, d = 1.29; paired t-tests).
 
@@ -60,7 +68,7 @@ In female prairie voles, the familiarity preference for both mates and peers in 
 
 In contrast, while males exhibited no familiarity preferences in lever pressing responses, they still exhibited strong familiarity preferences in social interaction. Males spent more of the available time in the social chamber when the tethered stimulus was familiar (effect of familiarity F(1,14) = 6.33, p = 0.02, ηp2p20.31; subject matching F(14,14) = 4.459, p = 0.0042, ηp2p20.24; others NS; two-way RM-ANOVA, Figure 3B), and huddling behavior was even more specific, with a strong effect of stimulus familiarity (partner versus stranger) and no effect of stimulus sex (opposite- versus same-sex) on the percent of [time huddling]/[time with access to the social chamber] (effect of familiarity: F(1,14) = 25.27, p = 0.0002, ηp2p20.64; all else NS; Figure 3D). Within-group matched comparisons also revealed significant familiarity preferences in huddling time relative to access (huddling/access time: MM: p = 0.0177, d = 1.09, MF p = 0.0022, 1.66), with lesser or no familiarity preference in chamber time (time in social chamber/access time: MM: p = 0.0390, d = 0.90, MF: p = 0.56, d = 0.21; paired t-tests). There was no apparent sex difference in huddling behavior between male and female prairie voles, confirmed by pooling males and females in a three-way ANOVA (effect of focal sex NS, p = 0.91; significant effect of stimulus familiarity (F(1,56) = 48.03, p < 0.0001, ηp2p20.46); effect of stimulus sex; NS, no significant interactions).
 
-## Other social/sexual behaviors in prairie voles
+### Other social/sexual behaviors in prairie voles
 
 Aggressive behavior was exhibited by prairie voles in all groups during social operant sessions and was analyzed by RM-ANOVA on all voles tested with partners and strangers (between-subjects factors: sex of presser (M/F)*pairing type [same/opposite sex]; within-subjects factor: target familiarity). Both males and females engaged in far more bouts of aggression with strangers than familiar partners (F(1,29) = 30.22, p < 0.0001, ηp2p20.51, Figure 3E and F). There was no significant effect of sex of the presser (F(1, 29) = 3.36, p = 0.077, ηp2p20.10), pairing type (same-sex or opposite-sex), or interactions between these variables.
 
@@ -68,7 +76,7 @@ Because aggression was primarily targeted at strangers, we asked whether strange
 
 Mounting behavior was present in five prairie voles, all of which were male prairie voles tested with novel (unfamiliar) female voles. This distribution was significantly non-random across the eight testing combinations used in prairie voles (e.g. male with female partner, male with female stranger, etc.) (χ2(7) = 37.97, p < 0.0001). These five voles exhibited an average of 6 bouts of mounting per testing session.
 
-## Neural OTR density related to behavior and housing
+### Neural OTR density related to behavior and housing
 
 OTR density was associated with both motivated and aggressive social behaviors in different brain regions in female prairie voles (males not assayed). There was a strong positive correlation between OTR density and lever presses for same-sex partners in the nucleus accumbens (NAcc) core (R = 0.959, p = 0.0098) and shell (R = 0.948, p = 0.0141, Figure 4A). There was also a strong positive correlation between mean bouts of stranger-directed aggression and OTR density in the bed nucleus of the stria terminalis (BNST) in female prairie voles (R = 0.719, p = 0.0126), again connecting receptor binding to behavior. Binding density in the BNST was not associated with stranger approach or avoidance, operationalized as time spent in the stranger’s social chamber relative to access time (R = 0.350, p = 0.29), or lever presses for the stranger’s chamber (R = 0.264, p = 0.43).
 
@@ -78,21 +86,29 @@ OTR density was associated with both motivated and aggressive social behaviors i
 
 OTR density varied with housing condition. Females housed with same-sex cage-mates showed no difference in OTR density in the NAcc or lateral septum (LS), higher OTR density in the BNST (t(8.99) = 2.93, p = 0.0167, d = 1.78), and a non-significant trend in the central amygdala (t(8.71) = 1.92, p = 0.0883, d = 1.17) compared to females housed with opposite-sex cage-mates (Figure 4C).
 
-## Interspecific comparisons: responses were reward-specific and comparable across species and sexes
+### Interspecific comparisons: responses were reward-specific and comparable across species and sexes
 
 Lever pressing responses in prairie voles were compared to those of a related non-monogamous vole species (the meadow vole) that exhibits group living during winter months. Female meadow voles are territorial and aggressive in summer or long daylengths in the lab, but socially tolerant in winter or short days. Because male meadow voles do not undergo this transition (Madison and Mcshea, 1987; Beery et al., 2009), we focused on comparison of social motivation in female meadow voles relative to female prairie voles. Prior to making this comparison, we assessed whether species and sexes differed in their lever pressing effort in response to a common reward (food). There were no sex or species differences in the number of lever pressing responses for a food reward (PR-1 schedule; 8 days averaged per subject) between female prairie voles, male prairie voles, and female meadow voles (F(2,40) = 1.18, p = 0.32, η2 = 0.56; one-way ANOVA; Figure 5A). Food responses and social responses were converted to response rates for comparison across trials with different active lever pressing periods: individual response rates for a food reward did not predict response rates during social testing for either the partner (p = 0.78) or the stranger (p = 0.98), indicating that responses were not subject-specific across reward types (Figure 5B). These findings validate the specificity of comparisons across species, sexes, and reward types.
 
-## Meadow voles exhibited familiarity preferences but low social response rates
+![Figure 5.](https://cdn.elifesciences.org/articles/72684/elife-72684-fig5-v2.jpg)
+
+**Figure 5.:** (A) Responses for a food reward did not significantly differ between prairie voles of different sexes or between meadow and prairie vole females. Each data point represents the 8-day mean of responses from a vole tested using a progressive ratio 1 (PR-1) schedule in 30-min sessions. (B) Food response rate did not predict social response rate for familiar or unfamiliar stimuli. Data points show prairie vole response rates for food pellets on a PR-1 schedule (8-day mean for each vole) versus social reward (black: partner; gray: stranger) on a PR-1 schedule (8-day mean for each vole). (C) Meadow voles, like prairie voles, pressed more for a partner than a stranger, but pressed significantly less overall. (D) Social pressing for a partner in meadow voles was no higher than pressing for an empty chamber, and stranger pressing was similar to the minimum achieved by extinction. (E) Extinction profile over 10 days for each species and sex tested. Lever presses diminished rapidly over the first 4–5 days of testing with an inactive lever.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72684/elife-72684-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Significant within-individual preference for the partner > stranger was detected in four of seven females. One female did not press at high levels for any social stimulus, despite high levels of responding for a food reward during earlier testing.
+
+### Meadow voles exhibited familiarity preferences but low social response rates
 
 Female meadow voles pressed significantly more for familiar females than novel females (t(6)=3.637, p = 0.0109, d = 1.37, paired t-test, Figure 5C; males not tested). This preference was individually significant within four of the seven meadow voles (Figure 5—figure supplement 1). Comparisons of time spent with a partner or stranger when the door was up also revealed significant familiarity preferences (P versus S for social chamber/access time: p = 0.0351, d = 1.02; P versus S for huddling/access time: p = 0.0357, d = 1.02; paired t-tests).
 
 Despite familiarity preference, meadow vole response rate for both partners and strangers was low. Direct comparison with female prairie voles tested under the same conditions reveals that while both groups pressed more for familiar partners than for strangers, there was significantly less lever pressing in female meadow voles (two-way ANOVA, effect of target familiarity: F(1,13) = 29.51, p < 0.001, ηp 2 = 0.69, effect of species: F(1,13) = 9.71, p < 0.01, ηp2p20.43, Figure 5C). Comparison of lever presses between social conditions and non-social ‘empty control’ conditions indicates that, for female meadow voles, the partner was not more rewarding than the empty chamber control, stranger pressing was significantly lower than empty control, and it was similar to the post-extinction level of pressing (Figure 5D).
 
-## Other social/sexual behaviors in meadow voles
+### Other social/sexual behaviors in meadow voles
 
 Aggression was rare in meadow vole trials (mean 0.3 bouts/trial), and as in our prior studies (Lee et al., 2019) it was significantly less frequent than aggression between female prairie voles (mean 2.3 bouts/trial, species difference: t(3.83), p = 0.001). No mounting behavior was observed in meadow vole tests, all of which were conducted in female voles.
 
-## Empty chamber control and extinction
+### Empty chamber control and extinction
 
 At the conclusion of social testing, all voles from cohorts 4 to 7 were tested for effort expended to explore an empty chamber without a tethered partner or stranger for 8 days each (n = 6 meadow females, 10 prairie females, and 14 prairie males). Voles were distributed across all housing types. There was no species difference in pressing for the empty chamber (meadow vole female versus prairie vole female). In both male and female prairie voles, the extent of lever pressing for the control chamber was correlated with pressing for the stranger (females: R = 0.75, p = 0.013; males: R = 0.71, p < 0.005) but not with lever pressing for the partner.
 
@@ -108,49 +124,94 @@ Factors that may particularly motivate males to access unfamiliar females includ
 
 The lack of consistent mapping between effort in the operant task and partner preferences in male huddling highlights a disconnect between social reward and the selectivity of huddling preferences. This disconnect is further underscored by the presence of robust partner preferences in female meadow voles despite no evidence of social reward in the operant task or in sCPP tests (Goodwin et al., 2019). Thus, partner preference does not imply social reward, nor does social reward imply selective preference. These behavioral findings are consistent with the lack of effects of dopamine antagonists on same-sex peer partner preferences in female meadow voles as well as prairie voles (Beery and Zucker, 2010; Lee and Beery, 2021). While dopamine signaling is not necessary for peer partner preference expression, it can enhance preferences (Lee and Beery, 2021) and may play a more fundamental role in pair bonding with mates (Aragona and Wang, 2009). Because partner preference does not indicate behavioral reward, the partner preference test and other tests of social approach in the absence of work likely reflect different combinations of partner tolerance, partner reward, and stranger aversion.
 
-## OTR signaling differs by relationship type and by individual social behaviors
+### OTR signaling differs by relationship type and by individual social behaviors
 
 Strong relationships were present between OTR density, housing differences, and behavior, highlighting connections across levels of organization. Variation in OTR density by relationship type has not been previously assessed, although OTR density or mRNA levels differ in response to early-life housing manipulations in prairie voles, such as presence of a father and single versus group housing (Prounis et al., 2015) as well as chronic social isolation in adulthood (Pournajafi-Nazarloo et al., 2013).
 
 Oxytocin signaling plays a role in diverse social behaviors in prairie voles, including pair bond formation, consolation behavior, and alloparental care (Williams et al., 1992a; Olazábal and Young, 2006; Bales et al., 2007; Burkett et al., 2016). Furthermore, oxytocin signaling has been related to social reward in non-selective mice and hamsters (Dölen et al., 2013; Song et al., 2016; Borland et al., 2018). Strong correlations between NAcc OTR and lever pressing for the partner in the present study provide additional support for the role of NAcc OTR in social reward. Neural OTR was related to aggressive behavior as well as prosocial behavior, underscoring the complexity of oxytocin signaling in different brain regions (van Anders et al., 2013; Beery, 2015).
 
-## Species differences
+### Species differences
 
 Social pressing differed quantitatively but not qualitatively by species in meadow and prairie voles. Females of both species pressed more for partners than for strangers, but responses were lower in meadow voles, indicative of the lack of social reward. This is consistent with prior findings from sCPP tests, in which meadow voles did not condition toward a bedding associated with social contact, and in one setting conditioned away from it (Goodwin et al., 2019). These findings are also in line with results from the sole prior study of operant responses in voles. Matthews et al., 2013, tested prairie voles and meadow voles housed in long daylengths to determine whether they would learn to lever press for stranger voles. Only prairie voles demonstrated clear learning in this scenario, consistent with low stranger interest in meadow voles housed in the long daylengths that promote territorial behavior in this species (Beery et al., 2008b). Nonetheless, even under pro-social short daylength conditions used in the present study, social pressing was low in meadow voles. Comparison of short daylength-housed female meadow vole responses for the partner chamber, stranger chamber, and an empty chamber in different trial blocks revealed equivalent levels of pressing for a partner or an empty chamber and less for the stranger. This suggests that decreased pressing for the stranger represents avoidance, but that pressing for the partner may indicate tolerance more than reward. Female (short daylength-housed) meadow voles also exhibited lower aggression than female prairie voles, consistent with social tolerance, and with prior descriptions of their behavior (Lee et al., 2019).
 
-## Comparability across vole species and sexes
+### Comparability across vole species and sexes
 
 Lever pressing was demonstrated to be an effective metric to compare effort exerted to reach different social stimuli in voles; voles of each species and sex tested pressed at comparable rates for food reward, indicating a lack of major differences in task learning, and thus that social lever pressing can be assessed and compared across groups. Subject response rates were not consistently high or low across reward conditions, indicating that responses are reward-specific. Extinction was effective, with all subjects decreasing lever pressing behavior by more than half their baseline response count. Differences in lever pressing effort between groups could therefore be attributed to reward-specific differences in social motivation.
 
-## Implications for the evolution of social relationships
+### Implications for the evolution of social relationships
 
 Persistent relationships within specific pairs or groups of conspecifics are present throughout the animal kingdom, including species of invertebrates, fishes, amphibians, reptiles, birds, and mammals (Bales et al., 2021). While the nature and extent of these relationships vary considerably, they share in common the specificity of social preferences that leads to repeated association. They may differ, however, in the mechanisms that influence familiar approach and unfamiliar avoidance. In particular, familiar individuals—whether mates or peers—may or may not be socially rewarding, and unfamiliar individuals may or may not be aversive.
 
 Even within closely related vole species, we see evidence that only some relationships involve selective social reward, for example, mate relationships in female prairie voles, while others—such as peer relationships in winter phenotype meadow voles—involve selectivity without appreciable reward. Selectivity in the absence of reward may rely instead on changing social anxiety and aggression (Beery, 2019). For example, when exposed to the short, winter photoperiods associated with the transition from solitary to group living in the wild, meadow voles undergo changes in CRF (corticotropin-releasing factor) receptor densities, glucocorticoid secretion, behavioral indicators of anxiety, and aggression (Ossenkopp et al., 2005; Beery et al., 2014; Anacker et al., 2016). More research is needed to establish causal links between these changes and the transition to group living. More broadly, it remains to be determined to what extent social monogamy and pair bonding with mates shares mechanisms across species (Goodson, 2013), and to what extent different types of relationships (e.g. with peers or mates) share foundations, or differ in their regulation. Ultimately, these studies should help us understand how selective relationships of different types evolve.
 
-## Conclusions
+### Conclusions
 
 While other studies have assessed social reward in rodents, few have considered the role of stimulus familiarity, likely because laboratory rodents do not exhibit familiarity preferences under normal conditions (reviewed in Beery and Shambaugh, 2021). In social choice tests, mice and young rats often prefer social novelty (Moy et al., 2004; Smith et al., 2015), and relative preference for a social stimulus versus a food stimulus is greater when novel rats are presented (Reppucci et al., 2020). Indeed, in operant trials in which rats had simultaneous access to familiar and unfamiliar same-sex conspecifics, rats expended more effort to access unfamiliar conspecifics (Hackenberg et al., 2021). In the present study, female prairie voles exhibited similar partner preferences but higher social motivation and aggression compared to female meadow voles. Social motivation and selectivity were not linked in male prairie voles, and there was a striking sex difference in the reward value of mates and peers in prairie voles. OTR binding revealed connections between social environment, receptor density, and prosocial behavior, illustrating the importance of this system across levels of biological organization. Better understanding of the interface between social motivation and social selectivity will thus be key to improving our understanding of the nature of social relationships.
 
 ## Materials and methods
 
-## Animal subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(Thr⁴,Gly⁷)-Oxytocin</td>
+      <td>Bachem</td>
+      <td>4013837</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>125I-OVTA; 125I-ornithine vasotocin analog; vasotocin, d(CH2)5 [Tyr(Me)2,Thr4,Orn8,(125I)Tyr9-NH2]</td>
+      <td>Perkin Elmer</td>
+      <td>NEX254050UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Testosterone</td>
+      <td>Sigma-Aldrich</td>
+      <td>T1500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MED-PC IV</td>
+      <td>Med Associates</td>
+      <td>SOF-735</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal subjects
 
 Prairie voles and meadow voles from in-house colonies were bred in a long photoperiod (14 hr light:10 hr dark; lights off at 17:00 EST; described further in Lee et al., 2019). Meadow voles were weaned into the winter-like short photoperiods associated with group living in this species (10:14 light:dark; lights off at 17:00 EST). Voles were pair-housed in clear plastic cages with aspen bedding and an opaque plastic hiding tube. Food (5015 supplemented with rabbit chow; LabDiet, St Louis, MO) and water were provided ad libitum, except during food restriction (described below). All procedures adhered to federal and institutional guidelines and were approved by the Institutional Animal Care and Use Committee at Smith College.
 
-## Timeline and groups
+### Timeline and groups
 
 Training began in adulthood at 62 ± 1.3 days of age (mean ± SEM, range 41–76). Operant conditioning training and testing consisted of multiple phases described briefly here and in greater detail in subsequent sections. Responses (lever presses) were shaped and trained using a food reward on a fixed ratio 1 (FR-1) schedule. Animals that met training criteria progressed to the experimental testing sequence, beginning with 8 days of pressing for a food reward on a PR-1 schedule (Figure 1). Subjects in opposite-sex pairs were placed with either a tubally ligated, hormonally intact female mate, or a castrated and testosterone implanted male mate 5–10 days prior to the start of social habituation and testing. Subjects in same-sex pairs remained with their cage-mate. Social testing consisted of 8 days of PR-1 with rewards yielding access to the familiar (same- or opposite-sex) partner, and 8 days with access to a sex-matched stranger (order balanced within groups). Voles were trained and tested over seven cohorts; group membership was distributed across cohorts, and voles were assigned to groups within sex without knowledge of their response rates in the training phase. A subset of voles (those in cohorts 4–7) continued in empty chamber control and/or extinguishing tests as described below. Voles were sacrificed at the conclusion of testing, and brains were stored at –80°C.
 
 We tested four groups of prairie voles (Figure 1): females lever pressing for a female conspecific (F➤F), females pressing for a male conspecific (F➤M), males pressing for a male conspecific (M➤M), and males pressing for a female conspecific (M➤F). Each group consisted of eight focal voles, tested for 8 days with their partner and for 8 days with a series of novel ‘strangers’, sex-matched to the partner. The order of testing (partner then stranger or stranger then partner) was counterbalanced within groups. Some voles did not complete both partner and stranger testing, in which case additional voles were added up to 8/group. Meadow vole females (F➤F-Mp, n = 7) were also trained and tested for 8 days of familiar and 8 days of novel vole exposure, with order counterbalanced within the group.
 
-## Operant conditioning and testing with food reward
+### Operant conditioning and testing with food reward
 
 Subjects were weighed for 3 consecutive days to establish baseline body weights, then food-restricted to a target weight of 90% baseline to enhance motivation for the food reward. Weights were recorded daily after training or testing, prior to being returned to their home-cages. Any vole that dropped to or below 85% of the baseline weight was returned to ad libitum food to avoid long-term health consequences. Perforated cage dividers were used during food restriction to ensure each vole had access to its specific ration (0.3–1 food pellets and ~4 g [half] of a baby carrot). Food restriction ended when subjects transitioned to social testing.
 
 Operant conditioning was conducted in mouse-sized modular test chambers (30.5 cm × 24.1 cm × 21.0 cm) outfitted with a response lever, clicker, modular pellet dispenser for mouse, and pellet receptacle (Med Associates Inc, St Albans, VT, Figure 1A). Data were acquired using the MED-PC-IV program running training protocols coded by experimenters. Sessions lasted 30 min and took place between 0900 and 1700. Vole behavior was shaped using manual reinforcement by an experimenter until a subject met the training criterion of 3 days in a row of ≥5 responses without manual reinforcement on an FR-1 schedule. One 20 mg food pellet (Dustless Precision Pellet Rodent Grain Based Diet; Bio-Serv, Flemington, NJ) was dispensed as each reward. Animals that did not learn to consistently lever press within ~20 days were used as partners or strangers for future social testing. Subjects that met the training criterion transitioned to a PR-1 schedule with each successive reward requiring an additional response. The progressive ratio has been shown to be a better indicator of motivation than FR programs (Hodos and Kalman, 1963; Weatherly et al., 2003). PR-1 testing was conducted for 8 days, at the conclusion of which all focal animals were returned to ad lib food, and cage dividers were removed.
 
-## Testing with social rewards
+### Testing with social rewards
 
 Social reward testing was conducted in mouse-sized modular test chambers, custom-equipped with a motorized door (Med Associates Inc, St Albans, VT) for access to a second ‘social’ chamber (Figure 1B). This chamber was constructed of clear plastic (15 cm × 20.5 cm × 13 cm) and contained an eye-bolt for tethering a stimulus vole (Figure 1C). A clear plastic tunnel (2.54 cm diameter, 5.5 cm long) connected the operant chamber to the social chamber, and the entire apparatus was fixed to a mounting board. Lever presses were rewarded by door opening and chamber access; the door remained raised for 1 min, after which the experimenter returned the focal vole to the operant chamber. Sessions lasted 30 min and were video-recorded for quantification of additional behaviors.
 
@@ -158,22 +219,22 @@ Subjects transitioned to social testing following a habituation session and two 
 
 Social testing took part in two phases: pressing for a partner vole on a PR-1 schedule and pressing for a stranger on a PR-1 schedule. Each phase lasted 8 days. The order of testing was counterbalanced within groups and subjects completed both phases. Social stimulus animals were tethered to the end of the social chamber. During the 8 days of stranger testing, the focal vole was tested against a novel vole each session to prevent familiarity between conspecifics.
 
-## Non-social conditions
+### Non-social conditions
 
 Empty chamber testing took place after social testing to avoid altering lever pressing for the social stimuli. The empty chamber control was run to assess the value of apparatus exploration: 30 voles (10 female prairie voles, 14 male prairie voles, 6 female meadow voles) pressed the lever for 8 successive days on a PR-1 schedule to access the adjacent chamber when no stimulus vole was present. Sessions lasted 30 min and video was recorded and scored for behavior after testing. For the extinction phase, 31 voles (13 female prairie voles, 11 male prairie voles, 7 female meadow voles) were tested in the social chamber with an unrewarded lever for 10 successive days (30 min sessions).
 
-## Behavioral scoring
+### Behavioral scoring
 
 Counts of responses (lever presses) and rewards (food pellets or door raises) were automatically recorded during each test. In all social trials (16/vole) and all empty chamber control trials (8/vole), behavior in the ‘social’ chamber was also filmed with a portable digital video camera. Videos were scored using a custom perl script (OperantSocialTimer; https://github.com/BeeryLab/Operant/, Beery, 2017) to determine time in the social chamber, time in side-by-side contact with the tethered vole (huddling), and bouts of aggression. These values could also be reported relative to other intervals (e.g. time huddling/access time when the door was up, or time huddling/time in the social chamber). Non-social/empty chamber trials (8 days/vole) were also videotaped and analyzed for time in the social chamber/available time with the door raised.
 
-## Castration and tubal ligation
+### Castration and tubal ligation
 
 At least 1 week prior to pairing, the future ‘partner’ of each opposite-sex prairie vole pair was surgically altered to prevent pregnancies during testing. Female partners of male focal voles underwent tubal ligation. Dorsal incisions were made over each ovary. Two knots were placed below each ovary at the top of the uterine horn. The wound was closed using a sterile suture. Male partners of female focal voles were castrated and implanted with testosterone capsules. Testes were accessed by midline incision, and the blood supply was cut-off through a tie at the testicular artery. Testes were removed and the muscle wall and skin were closed using sterile suture. A testosterone capsule was implanted subcutaneously between the scapulae. Capsules contained 4 mm of crystalline testosterone (Sigma-Aldrich, St Louis, MO) in silastic tubing (ID 1.98 mm, OD 3.18 mm; Dow Corning, Midland, MO) as in Costantini et al., 2007. Capsules were sealed with silicone, dried, and soaked in saline for 24 hr prior to insertion. A subset of strangers was also castrated or ligated, with no effect on focal behavior. Surgical procedures were performed under isoflurane anesthesia. Voles received 0.05 mg/kg buprenorphine and 1.0 mg/kg metacam subcutaneously prior to surgery, and again the following day. Post-operative wound checks continued for up to 10 days post-surgery.
 
-## Receptor autoradiography
+### Receptor autoradiography
 
 OTR binding density was assessed in the brains of 11 female prairie voles at the conclusion of the study (males were used for an additional pilot study). Frozen brains were sectioned coronally at 20 μm, thaw-mounted on Super-frost Plus slides (Fisher, Inc), and stored at –80°C until processing (as in Beery et al., 2008a; Beery and Zucker, 2010; Mooney et al., 2015). Briefly, slides were thawed until dry, then fixed for 2 min in fresh, chilled 0.1% paraformaldehyde in 0.1 M PBS. Sections were rinsed 2 × 10 min in 50 mM Tris (pH 7.4), and incubated for 60 min at room temperature in a solution (50 mM Tris, 10 mM MgCl2, 0.1% BSA, 0.05% bacitracin, 50 pM radioligand) containing the radioactively labeled 125I-ornithine vasotocin analog vasotocin, d(CH2)5 [Tyr(Me)2,Thr4,Orn8,(125I)Tyr9-NH2] (125I-OVTA, PerkinElmer, Inc). An adjacent series of slides, processed for non-specific binding, was incubated with an additional 50 nM non-radioactive ligand [Thr4Gly7]-oxytocin (Bachem). All slides were rinsed 3 × 5 min in chilled Tris–MgCl2 (50 mM Tris, 10 mM MgCl2, pH 7.4), dipped in cold distilled water, and air-dried. Sections were apposed to Kodak BioMax MR film (Kodak, Rochester, NY) for 3 days and subsequently developed. Radioligand binding density in each brain region was quantified in samples of uniform area from three adjacent sections for each brain region and averaged for each brain. Non-specific binding was subtracted from total binding to yield specific binding values.
 
-## Statistical analyses
+### Statistical analyses
 
 Social data were analyzed for all subjects completing both partner and stranger phases of testing (n = 8 prairie vole M➤M pairs, 8 prairie vole M➤F pairs, 8 prairie vole F➤F pairs, 8 prairie voles F➤M pairs, and 7 meadow vole F➤F pairs). Four additional female prairie voles completed testing with a partner or stranger only: data from these subjects was included in analysis of food responses and food versus social response rates. Group differences in single variables (e.g. food responses) were assessed by one-way ANOVA. Two-way RM-ANOVA was used to assess the effects of social factors, with stimulus familiarity [partner, stranger] as a within-subjects repeated measure, stimulus type [same-sex, opposite-sex] as a between-subjects (non-repeated) measure, a test for interaction effects [stimulus familiarity*stimulus type], and for subject matching. Paired t-tests were used within groups for comparison of behavior toward the partner versus stranger. Response count (i.e. lever presses) and breakpoint (i.e. number of rewards achieved) are highly correlated; detailed results are therefore shown for only one measure (response count). Response rate (responses/active session time) was used when comparing food responses to social responses, as the lever was continuously active during food-rewarded testing (active session time = 30 min), but was not capable of raising the door when it was already up (active session time = 30 min with the door up). Autoradiography data were collected in multiple brain regions, and comparisons were performed by two-way ANOVA (group*brain region). Statistical analyses were performed in JMP 15.0 (SAS, Inc) and Prism 9 (GraphPad Software Inc). Effect sizes were calculated in Excel. Cohen’s d for paired t-tests used the mean of partner-stranger differences/standard deviation of partner-stranger differences. Eta squared (η2) and partial eta squared (ηp2) were reported for one-way and two-way ANOVAs, respectively (Lakens, 2013). Pearson’s product-moment correlation coefficient was reported for correlations. All tests were two-tailed, and results were deemed significant at p < 0.05. Number of animals: social operant studies in rats have been successful with six subjects (Tan and Hackenberg, 2016; Hiura et al., 2018; Hackenberg et al., 2021). We used 30% more subjects as a buffer (eight females or males in each condition), as operant behavior in voles was not well characterized.

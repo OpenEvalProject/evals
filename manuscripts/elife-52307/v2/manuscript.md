@@ -26,7 +26,7 @@ We use publicly available data to quantify potentially avertable exposures of ba
 
 ## Materials and methods
 
-## Scenarios of interest
+### Scenarios of interest
 
 This analysis includes sixteen antibiotics that are frequently prescribed in the outpatient setting and nine potentially pathogenic bacterial species that are commonly carried in the normal human microbiome. For each antibiotic-species pair, we estimate the proportion of antibiotic exposures experienced by that species that could be averted under four hypothetical scenarios. The scenarios range from broad elimination of unnecessary prescribing to focused modifications of antibiotic use for specific indications as follows:
 
@@ -34,33 +34,100 @@ We use the results reported by Fleming-Dutra and colleagues as estimates of unne
 
 Antibiotic treatment of acute bacterial sinusitis is currently guideline-recommended (Rosenfeld et al., 2015). However, bacteria are an infrequent cause of acute sinusitis, and due to the self-limiting nature of the syndrome, evidence to support antibiotic treatment is weak (Burgstaller et al., 2016; Fokkens et al., 2007). The cause of sinusitis (whether bacterial, viral, or noninfectious) can be very difficult to distinguish in practice, and as a result of this challenge and others, antibiotics continue to be prescribed at over 80% of US outpatient visits with a primary diagnosis of acute sinusitis (Smith et al., 2013). In contrast, antibiotics are always recommended for urinary tract infections (UTIs). Despite being recommended as a second-line therapy for cystitis due to concerns about resistance, fluoroquinolones are the most common treatment, prescribed at 40% of outpatient visits for uncomplicated UTI (Kabbani et al., 2018). We explore the hypothetical scenario of treating all cases of cystitis in women with nitrofurantoin, a recommended first-line therapy with good potency against common uropathogens, low levels of resistance, and decreased risk of collateral damage to the intestinal microbiome due to its propensity to concentrate in the bladder (Gupta et al., 2011; Gupta et al., 1999; Stewardson et al., 2015). Nitrofurantoin is considered clinically appropriate unless the patient has chronic kidney disease, is showing signs of early pyelonephritis, or has had a prior urinary isolate resistant to nitrofurantoin (Hooton and Gupta, 2019). In our analysis, we exclude patients with a simultaneous diagnosis of pyelonephritis. We assume that other contraindications are fairly rare in the general population.
 
-## Data sources and methodology
+### Data sources and methodology
 
 Extending our recent work on bystander selection (Tedijanto et al., 2018), we used the 2015 National Ambulatory Medical Care Survey and National Hospital Ambulatory Medical Care Survey (NAMCS/NHAMCS) (National Center for Health Statistics, 2015), the Human Microbiome Project (HMP) (Huttenhower et al., 2012; Human Microbiome Project Consortium, 2012), and assorted carriage and etiology studies (Bäckhed et al., 2015; Bluestone et al., 1992; Bogaert et al., 2011; Brook et al., 1994; Celin et al., 1991; Chira and Miller, 2010; Edlin et al., 2013; Ginsburg et al., 1985; Gunnarsson et al., 1997; Gupta et al., 1999; Gwaltney et al., 1992; Hammitt et al., 2006; Lif Holgerson et al., 2015; Huang et al., 2009; Jain et al., 2015; Mainous et al., 2006; Pettigrew et al., 2012; Regev-Yochay et al., 2004; Verhaegh et al., 2010; Wubbel et al., 1999; Yassour et al., 2016) (details in Figure 1—source data 1) to estimate national outpatient antibiotic exposures by drug, species, and condition. NAMCS/NHAMCS are annual cross-sectional surveys designed to sample outpatient visits in the United States, and up to five diagnoses and thirty medications may be associated with each visit. We used methodology developed by Fleming-Dutra and colleagues (Fleming-Dutra et al., 2016), and applied in other studies (Olesen et al., 2018a), to group diagnosis codes into conditions and link antibiotic prescriptions with the most likely indication. For this analysis, visits with a diagnosis of acute cystitis (ICD-9-CM: 595.0), unspecified cystitis (595.9) or unspecified UTI (599.0), without a concurrent diagnosis of pyelonephritis (590.1, 590.8), renal abscess (590.2), or kidney infection (590.9), were considered to be associated with cystitis. In this analysis, we maintain the assumption that one antibiotic prescription is equivalent to one exposure; antibiotic exposures experienced by a given species and associated with a given condition are roughly estimated as the product of antibiotic prescriptions for that condition and species carriage prevalence, which is dependent on disease etiology (target exposures) and asymptomatic carriage prevalence (bystander exposures). For diagnoses where etiology was not readily available, we assumed that none of our species of interest were causative agents. These assumptions have been enumerated in detail in prior work (Tedijanto et al., 2018). We applied proportions of unnecessary antibiotic prescribing by condition and age group estimated by Fleming-Dutra and colleagues based on expert opinion, clinical guidelines, and regional variability in use (Fleming-Dutra et al., 2016). For relevant scenarios (1 and 2), we applied the proportions of unnecessary use evenly across all antibiotic prescriptions. Antibiotics and antibiotic classes are identified by the Lexicon Plus, 2008 classification scheme (https://www.cerner.com/solutions/drug-database).
 
 The proportion of avertable antibiotic exposures for each species is defined by Equation 1. The equation adopts previously described notation (Tedijanto et al., 2018) with modifications. A listing of all variables and descriptions can be found in Table 1. Let a represent antibiotic, s represent species, i represent ICD-9-CM diagnosis code, and g represent age group. Throughout the analysis we have weighted outpatient visits to be nationally representative using the sampling and nonresponse weights provided in NAMCS/NHAMCS. Let Xas be the number of avertable exposures by antibiotic and species, Tas be the total number of exposures by antibiotic and species, daig be the number of prescriptions of antibiotic a associated with diagnosis code i in age group g, psig be the carriage prevalence of species s among those with diagnosis code i in age group g, and qaig be the proportion of avertable exposures by diagnosis code and age group in the given scenario. For example, in the scenario assessing elimination of all unnecessary antibiotic use, qaig is the proportion of avertable antibiotic use by diagnosis and age group (Fleming-Dutra et al., 2016). Alternatively, in the scenario assessing elimination of non-nitrofurantoin treatment for cystitis, qaig is 1 when a is not nitrofurantoin, i is a diagnosis code associated with cystitis, and the patient is female, and 0 elsewhere. Carriage prevalences (psig) are assumed to be constant within three age groups (under 1 year, 1–5 years, over 5 years old) (Tedijanto et al., 2018), while proportions of avertable antibiotic use (qaig) were reported for three different age groups (0–19 years, 20–64 years, 65 years old and over) (Fleming-Dutra et al., 2016). G is the smallest set of age groups that accounts for this granularity (under 1 year, 1–5 years, 6–19 years, 20–64 years, 65 years old and over). For antibiotic prescriptions that occurred at visits without any ICD-9-CM diagnosis codes (i = 0), we applied the carriage prevalence among healthy individuals.
 
-Equation 1. Proportion of avertable exposures by species and antibiotic.XasTas=∑g=1G∑i=0Idaig×psig×qaig∑g=1G∑i=0Idaig×psig
+**Table 1.**
+ Notation, descriptions, and sources for variables in Equation 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Definition</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>daig</td>
+      <td>Number of prescriptions (using nationally representative weights) of antibiotic a associated with ICD9-CM diagnosis code i in age group g</td>
+      <td>NAMCS/NHAMCS 2015</td>
+    </tr>
+    <tr>
+      <td>esig</td>
+      <td>Proportion of cases of condition defined by ICD9-CM diagnosis code i in age group g caused by species s</td>
+      <td>Published etiology studies (see Figure 1—source data 1)</td>
+    </tr>
+    <tr>
+      <td>ps0g</td>
+      <td>Asymptomatic carriage prevalence of species s in age group g</td>
+      <td>Human Microbiome Project (HMP) and published carriage studies</td>
+    </tr>
+    <tr>
+      <td>psig</td>
+      <td>Carriage prevalence of species s among individuals diagnosed with ICD9-CM code i in age group g</td>
+      <td>esig+(1−esig)ps0g</td>
+    </tr>
+    <tr>
+      <td>qaig</td>
+      <td>Proportion of prescriptions of antibiotic a associated with ICD9-CM diagnosis code i in age group g that are avertable under the given scenario</td>
+      <td>Based on article by Fleming-Dutra et al. (Fleming-Dutra et al., 2016) with adjustments as described in Figure 1—source data 2</td>
+    </tr>
+    <tr>
+      <td>Xas</td>
+      <td>Number of exposures of antibiotic a experienced by species s that are avertable under the given scenario</td>
+      <td>∑g=1G∑i=0Idaig×psig×qaig</td>
+    </tr>
+    <tr>
+      <td>Tas</td>
+      <td>Total number of exposures of antibiotic a experienced by species s</td>
+      <td>∑g=1G∑i=0Idaig×psig</td>
+    </tr>
+  </tbody>
+</table>
+
+Equation 1. Proportion of avertable exposures by species and antibiotic.
+
+$$
+\frac{X_{as}}{T_{as}}=\frac{\sumg=1G\sumi=0Id_{aig}\timesp_{sig}\timesq_{aig}}{\sumg=1G\sumi=0Id_{aig}\timesp_{sig}}
+$$
 
 In scenarios where unnecessary use is eliminated (1 and 2), we assume that only bystander exposures are affected. This presumes that perfect discrimination between bacterial and non-bacterial etiologies is possible. This results in a slight modification to the numerator of Equation 1 -- psig is changed to ps0g as all eliminated exposures would have occurred during asymptomatic carriage. For cases where esig is 1, we assume zero avertable exposures. In addition, we make slight modifications to qaig when we estimate the proportion of bacterial cases to be larger than the proportion of necessary prescriptions (Figure 1—source data 2; Bluestone et al., 1992; Brook et al., 1994; Celin et al., 1991; Brook, 2016). As a sensitivity analysis, we include the proportion of avertable exposures for each antibiotic-species pair under Scenario 1 if antibiotic use was eliminated equally across both target and bystander exposures (Figure 1—figure supplement 1). All analysis was conducted in R version 3.6.1.
 
 ## Results
 
-## Results for all four scenarios are depicted in Figure 1
+### Results for all four scenarios are depicted in Figure 1
 
-## Scenario 1
+#### Scenario 1
 
 We estimate that elimination of unnecessary antibiotic prescriptions across all outpatient conditions would prevent 6% to 48% (IQR: 17% to 31%) of antibiotic-species exposures (Figure 1A). The smallest reduction is associated with S. pyogenes exposures to cefdinir and the largest with H. influenzae, E. coli, and P. aeruginosa exposures to azithromycin. If all unnecessary antibiotic use could be prevented, over 30% of exposures to amoxicillin-clavulanate, penicillin, azithromycin, clarithromycin, levofloxacin, and doxycycline across most potential pathogens of interest could be averted. Of particular interest, elimination of all unnecessary prescribing in the outpatient setting could reduce exposures of S. pneumoniae to penicillins and macrolides by 27% and 37%, respectively, and of S. aureus to penicillins and quinolones by 27% and 21%. For E. coli and K. pneumoniae, approximately one-quarter of exposures to cephalosporins and one-fifth of exposures to quinolones could be averted.
 
-## Scenario 2
+![Figure 1.](https://cdn.elifesciences.org/articles/52307/elife-52307-fig1-v2.jpg)
+
+**Figure 1.:** Scenarios are defined as elimination of (A) unnecessary antibiotic prescriptions across all outpatient conditions, (B) all antibiotic use for outpatient respiratory conditions for which antibiotics are not indicated, (C) all antibiotic use for acute sinusitis, and (D) non-nitrofurantoin treatment of cystitis in women. Drug class results include prescriptions of all antibiotics in that class, as identified by the Lexicon Plus classification system. Sensitivity and other additional analyses are shown in Figure 1—figure supplements 1–3. Abbreviations: Antibiotics (y-axis): AMX-CLAV = amoxicillin-clavulanate, MACR/LINC = macrolides/ lincosamides, TMP-SMX = sulfamethoxazole-trimethoprim; Organisms (x-axis): EC = E. coli, HI = H. influenzae, KP = K. pneumoniae, MC = M. catarrhalis, PA = P. aeruginosa, SA = S. aureus, SAg = S. agalactiae, SP = S. pneumoniae, SPy = S. pyogenes; PY = person years.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52307/elife-52307-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52307/elife-52307-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Unnecessary prescribing for acute sinusitis estimated from Fleming-Dutra et al. Based on Fleming-Dutra et al. (2016), we estimate that the proportion of unnecessary antibiotic prescriptions for acute sinusitis is 18%, 100%, and 34% for individuals who are 0-19, 20-64, and over 65 years old, respectively (see Figure 1—source data 2). (B) Estimates of bacterial etiology used to approximate necessary antibiotic use for acute sinusitis. The following upper bound estimates for the proportion of acute sinusitis cases with bacterial etiology were used: 2% for adults and 13% for children (applied to 0-19 year old age group) (Sande and Gwaltney, 2004; Snow et al., 2001; Wald et al., 1991). (C) Estimates of bacterial etiology among those presenting to primary care clinics used to approximate necessary antibiotic use. Patients visiting the clinic are likely to have more persistent, severe, or worsening symptoms, which may be indications of bacterial etiology. Studies have estimated that approximately 38% of adults and 17% of children (upper bounds) visiting primary care for symptoms of acute upper respiratory tract infection have bacterial rhinosinusitis (Aitken and Taylor, 1998; Benninger et al., 2000; Williams et al., 1992).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/52307/elife-52307-fig1-figsupp3-v2.jpg)
+
+#### Scenario 2
 
 Scenario 2, elimination of all antibiotic use for outpatient respiratory conditions where antibiotics are not indicated, is a subset of Scenario 1 and accounts for a substantial portion of avertable exposures included in the first scenario. As in Scenario 1, the results are primarily driven by drug and depend on the amount of use of that drug for the affected conditions (in this case, conditions for which antibiotics are not indicated). Pathogen characteristics affecting the proportion of avertable exposures can be better understood by looking across all species for a single drug. For example, we focus on the row for azithromycin. Based on NAMCS/NHAMCS 2015, 32% of all azithromycin use is associated with the affected conditions. Since these conditions are never caused by our organisms of interest, the maximum proportion of avertable exposures for any species is 32%. However, the proportion of avertable exposures is modulated by the number of azithromycin exposures that occur for treatment of other conditions – for example, a lower proportion of avertable exposures for S. pyogenes, M. catarrhalis, and S. agalactiae indicates that they have relatively frequent exposure to azithromycin during treatment of other conditions that are unaffected in this scenario, both as a bystander and causative pathogen.
 
-## Scenario 3
+#### Scenario 3
 
 In Scenario 3, we explore elimination of all antibiotic use for acute sinusitis. Overall, acute sinusitis accounts for just 3% of prescriptions of our included antibiotic classes, resulting in the low proportions of avertable exposures across most bacteria-antibiotic combinations. However, proportions of avertable exposures are relatively high for amoxicillin-clavulanate and clarithromycin, antibiotics for which a large proportion of their use is due to acute sinusitis (15% and 9%, respectively). In this scenario, we make the assumption that all use for acute sinusitis is unnecessary. In reality, a small number of cases are truly bacterial and antibiotics are indicated for patients with persistent, severe or worsening symptoms (Rosenfeld et al., 2015). We explore varying levels of unnecessary use based on etiological data in Figure 1—figure supplement 2 (Aitken and Taylor, 1998; Benninger et al., 2000; Fleming-Dutra et al., 2016; Sande and Gwaltney, 2004; Snow et al., 2001; Wald et al., 1991; Williams et al., 1992).
 
-## Scenario 4
+#### Scenario 4
 
 In this scenario, we consider a program to prescribe only nitrofurantoin for all cases of acute cystitis in women, replacing all other antibiotics that are currently in use. As a result of this change, we estimate that exposures of E. coli and K. pneumoniae to cephalosporins could be reduced by 16% and 17%, respectively, and exposures to quinolones could decrease by 26% and 28%. Uniquely in this scenario among those we considered, several of our species of interest cause a large proportion of UTI cases (E. coli, K. pneumoniae, and P. aeruginosa). To explore the effects of being a causative pathogen on the proportion of avertable exposures, we focus on the results for ciprofloxacin. Overall, 27% of ciprofloxacin use is associated with acute cystitis in women. Organisms that are not causative pathogens of cystitis have proportions of avertable exposures close to or less than 27%, but a substantially higher proportion of exposures could be averted among causative pathogens - 33%, 36%, and 44% of ciprofloxacin exposures to E. coli, K. pneumoniae, and P. aeruginosa, respectively. Although E. coli is the most common cause of UTIs, its estimated proportion of avertable exposures in this scenario is lower than that of P. aeruginosa, likely due to the larger number of antibiotic exposures incurred by E. coli during asymptomatic carriage.
 

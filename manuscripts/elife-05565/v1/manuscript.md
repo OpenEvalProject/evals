@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.05565.001 Mitotic chromosomes were one of the first cell biological structures to be described, yet their molecular architecture remains poorly understood. We have devised a simple biophysical model of a 300 kb-long nucleosome chain, the size of a budding yeast chromosome, constrained by interactions between binding sites of the chromosomal condensin complex, a key component of interphase and mitotic chromosomes. Comparisons of computational and experimental (4C) interaction maps, and other biophysical features, allow us to predict a mode of condensin action. Stochastic condensin-mediated pairwise interactions along the nucleosome chain generate native-like chromosome features and recapitulate chromosome compaction and individualization during mitotic condensation. Higher order interactions between condensin binding sites explain the data less well. Our results suggest that basic assumptions about chromatin behavior go a long way to explain chromosome architecture and are able to generate a molecular model of what the inside of a chromosome is likely to look like. DOI: http://dx.doi.org/10.7554/eLife.05565.001
+Mitotic chromosomes were one of the first cell biological structures to be described, yet their molecular architecture remains poorly understood. We have devised a simple biophysical model of a 300 kb-long nucleosome chain, the size of a budding yeast chromosome, constrained by interactions between binding sites of the chromosomal condensin complex, a key component of interphase and mitotic chromosomes. Comparisons of computational and experimental (4C) interaction maps, and other biophysical features, allow us to predict a mode of condensin action. Stochastic condensin-mediated pairwise interactions along the nucleosome chain generate native-like chromosome features and recapitulate chromosome compaction and individualization during mitotic condensation. Higher order interactions between condensin binding sites explain the data less well. Our results suggest that basic assumptions about chromatin behavior go a long way to explain chromosome architecture and are able to generate a molecular model of what the inside of a chromosome is likely to look like.
 
 ## Introduction
 
@@ -37,81 +37,97 @@ In this study, we use an ab initio coarse-grained Brownian dynamics simulation o
 
 ## Results
 
-## A physics-based computational model of a budding yeast chromosome
+### A physics-based computational model of a budding yeast chromosome
 
-We constructed a computational model to simulate emergent behavior of a large chromosome fragment, consisting of a string of 2000 nucleosomes, representing approximately 300 kb in genomic distance. This is longer than the two smallest budding yeast chromosomes, and similar for example, to the length of the long arm of budding yeast chromosome 5. We applied a ‘bead-spring’ model in which the chromatin chain is represented as a series of nucleosome beads, joined by DNA linkers whose dynamic behavior is approximated as springs (
+We constructed a computational model to simulate emergent behavior of a large chromosome fragment, consisting of a string of 2000 nucleosomes, representing approximately 300 kb in genomic distance. This is longer than the two smallest budding yeast chromosomes, and similar for example, to the length of the long arm of budding yeast chromosome 5. We applied a ‘bead-spring’ model in which the chromatin chain is represented as a series of nucleosome beads, joined by DNA linkers whose dynamic behavior is approximated as springs (Figure 1A). The nucleosome string thus behaves as a chain, where the DNA linkers regulate the movement of joined nucleosomes according to Hooke's law. The movement of each nucleosome bead follows a Brownian dynamic trajectory, approximating the solution state in the nucleus. Nucleosomes exclude each other in space though, during our simulations, the linker DNA can cross itself with a small probability, which, under in vivo conditions would be achieved by the enzyme topoisomerase II. A weak force corrects the angle at which DNA emerges from the nucleosome surface (Luger et al., 1997; Bednar et al., 1998; Engelhardt, 2007) (see ‘Materials and methods’ for details of the model).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/05565/elife-05565-fig1-v1.jpg)
 
-**Figure 1.:** (A) Schematic of the forces enacted during simulation. Inter-joined grey beads represent nucleosomes, condensin binding sites are highlighted in red. Fentropic (blue arrows) move each bead in a Brownian dynamic trajectory, constrained by Ftension (red arrows), a spring force that connects nucleosome beads, Frepulsion (green arrows) that avoids overlaps between beads, Fattraction (purple arrows), a weak force that corrects the angle at which DNA linkers emanate from the nucleosomes and Fcondensin that maintains the vicinity of two condensin binding sites, if they meet. (B) Condensin localization along a 300 kb region on the right arm of budding yeast chromosome 5, showing condensin binding sites (red vertical lines) at approximately 10 kb intervals. (C) View of a relaxed starting conformation of the simulated 300 kb nucleosome chain. (D) Illustration of Type I and Type II interactions, where pairs of condensin binding sites interact, or where one binding site interacts with up to two others, respectively.DOI: http://dx.doi.org/10.7554/eLife.05565.003
+**Figure 1.:** (A) Schematic of the forces enacted during simulation. Inter-joined grey beads represent nucleosomes, condensin binding sites are highlighted in red. Fentropic (blue arrows) move each bead in a Brownian dynamic trajectory, constrained by Ftension (red arrows), a spring force that connects nucleosome beads, Frepulsion (green arrows) that avoids overlaps between beads, Fattraction (purple arrows), a weak force that corrects the angle at which DNA linkers emanate from the nucleosomes and Fcondensin that maintains the vicinity of two condensin binding sites, if they meet. (B) Condensin localization along a 300 kb region on the right arm of budding yeast chromosome 5, showing condensin binding sites (red vertical lines) at approximately 10 kb intervals. (C) View of a relaxed starting conformation of the simulated 300 kb nucleosome chain. (D) Illustration of Type I and Type II interactions, where pairs of condensin binding sites interact, or where one binding site interacts with up to two others, respectively.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/05565/elife-05565-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** The histograms show the distribution of the nucleosome bead displacement within 30 ms timeframes, collated from 1000 randomly chosen observations from 10 independent simulations of both the Type I and Type II models in an interphase state.DOI: http://dx.doi.org/10.7554/eLife.05565.004
+**Figure 1—figure supplement 1.:** The histograms show the distribution of the nucleosome bead displacement within 30 ms timeframes, collated from 1000 randomly chosen observations from 10 independent simulations of both the Type I and Type II models in an interphase state.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/05565/elife-05565-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** The α angle distribution of all nucleosomes was recorded from 1000 snapshots, collected from 10 independent simulations of both the Type I and Type II models.DOI: http://dx.doi.org/10.7554/eLife.05565.005
+**Figure 1—figure supplement 2.:** The α angle distribution of all nucleosomes was recorded from 1000 snapshots, collected from 10 independent simulations of both the Type I and Type II models.
 
 To analyze the impact of a chromatin crosslinker on chromosome behavior, we introduced condensin binding sites along the chromatin chain. This was guided by the experimentally visualized condensin distribution along budding yeast chromosomes using chromatin immunoprecipitation (Wang et al., 2005; D'Ambrosio et al., 2008), which revealed condensin-enriched peaks with an average distance of approximately 10 kb (Figure 1B). We therefore assigned a condensin binding site approximately every 10 kb along the chromatin chain. Figure 1C shows a relaxed conformation of the resultant chromatin chain at the beginning of our simulations. If, on their stochastic trajectories, two condensin binding sites come within 40 nm of each other, an interaction is established between them. While we are as yet naïve about how condensin bridges two binding sites, this assumption lies at the heart of the majority of models for condensin action. The attraction radius of 40 nm is based on condensin's molecular architecture (Anderson et al., 2002), the ability of chromosomes to compact was insensitive to its exact value. Once established, the interactions dissolve with a model-specific dissociation probability, equivalent to an off-rate of the dynamically chromosome-bound condensin complex (Gerlich et al., 2006).
 
 We compared two distinct modes of how condensin might act. In our Type I model, each condensin binding site can interact with exactly one other site at a time, thus leading to stochastic pairwise interactions between chromatin segments (Figure 1D). In the Type II model, each condensin binding site can interact with up to two others, thereby allowing the formation of higher order condensin binding site assemblies. This model provides a means to interrogate chromosome behavior based on first principles.
 
-## Native-like chromosome dimensions, tunable by the condensin dissociation rate
+### Native-like chromosome dimensions, tunable by the condensin dissociation rate
 
-We first compared chromosome dimensions in our model to those observed in vivo. To do so, we used a budding yeast strain in which two loci on the chromosome 5 long arm, at 144 kb distance from each other, were fluorescently marked in distinct colors using the TetO/TetR-YFP and LacO/LacI-CFP systems, respectively (
+We first compared chromosome dimensions in our model to those observed in vivo. To do so, we used a budding yeast strain in which two loci on the chromosome 5 long arm, at 144 kb distance from each other, were fluorescently marked in distinct colors using the TetO/TetR-YFP and LacO/LacI-CFP systems, respectively (Rohner et al., 2008). This allowed us to measure their in vivo 3D distance with great precision, yielding interphase distances consistent with previous measurements using loci marked with the same fluorophore (Guacci et al., 1994; Bystricky et al., 2004; D'Ambrosio et al., 2008). In G1-arrested cells, the mean distance between the loci was 670 nm (Figure 2A), which was similar to the distance of similarly spaced loci in the relaxed starting configuration of our model (Figure 2B). This striking correspondence suggests that interphase chromatin in vivo adopts a configuration of similar dimensions as compared to the dimensions of an unconstrained nucleosome fiber.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/05565/elife-05565-fig2-v1.jpg)
 
-**Figure 2.:** (A) Scheme showing the location of the two loci whose distance was recorded in vivo and during each simulation. Example micrographs of wild type cells in interphase and mitosis are shown, together with a graph depicting the median, upper, and lower quartiles, with whiskers at 2.5 and 97.5%, outliers also plotted, for both wild type strains in interphase and mitosis, as well as for a strain in mitosis in which condensin has been depleted from the nucleus using the brn1-aa allele (Haruki et al., 2008; O'Reilly et al., 2012; Charbin et al., 2014). Statistical significance of the differences was assessed using a Wilcoxon–Mann–Whitney test. (B) Example of an interphase conformation (Type I model, condensin interaction dissociation rate 10−3) of a simulated chromosome, the two marker loci are highlighted, as well as mitotic conformations (dissociation rate 10−4) generated by the Type I and Type II models. (C) Traces of marker distance over time after the dissociation rates were set to the indicated values at t = 0. Shown are the mean and the standard error of 30 simulations. The linear compaction ratios are noted for the indicated comparisons.DOI: http://dx.doi.org/10.7554/eLife.05565.006
+**Figure 2.:** (A) Scheme showing the location of the two loci whose distance was recorded in vivo and during each simulation. Example micrographs of wild type cells in interphase and mitosis are shown, together with a graph depicting the median, upper, and lower quartiles, with whiskers at 2.5 and 97.5%, outliers also plotted, for both wild type strains in interphase and mitosis, as well as for a strain in mitosis in which condensin has been depleted from the nucleus using the brn1-aa allele (Haruki et al., 2008; O'Reilly et al., 2012; Charbin et al., 2014). Statistical significance of the differences was assessed using a Wilcoxon–Mann–Whitney test. (B) Example of an interphase conformation (Type I model, condensin interaction dissociation rate 10−3) of a simulated chromosome, the two marker loci are highlighted, as well as mitotic conformations (dissociation rate 10−4) generated by the Type I and Type II models. (C) Traces of marker distance over time after the dissociation rates were set to the indicated values at t = 0. Shown are the mean and the standard error of 30 simulations. The linear compaction ratios are noted for the indicated comparisons.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/05565/elife-05565-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** −4.Four representative cases of marker distance traces from simulations of the Type II model using dissociation probability 5 × 10−4. Distance between the two markers was ∼144 kb in the middle section of the chromatin chain, as in Figure 2. The dissociation rate was changed from 1 × 10−3 to 5 × 10−4 at time 0. Examples of simulations that remain in a stable equilibrium, either extended or compact, or that transition in either direction between the two states, are shown.DOI: http://dx.doi.org/10.7554/eLife.05565.007
+**Figure 2—figure supplement 1.:** Four representative cases of marker distance traces from simulations of the Type II model using dissociation probability 5 × 10−4. Distance between the two markers was ∼144 kb in the middle section of the chromatin chain, as in Figure 2. The dissociation rate was changed from 1 × 10−3 to 5 × 10−4 at time 0. Examples of simulations that remain in a stable equilibrium, either extended or compact, or that transition in either direction between the two states, are shown.
 
 To see how condensin action impinges on chromosome behavior in our computational model, we allowed either Type I or Type II interactions between condensin binding sites and followed the marker distance over time. At a high dissociation probability (10−3, i.e., a probability of 10−3 per simulation step that an existing interaction is lost), chromosome dimensions remained largely unchanged. In case of Type I interactions, the marker distance fluctuated around 600–700 nm (Figure 2C). Allowing Type II interactions resulted in a slightly more compacted chromosome and marker distances between 500—600 nm. Taken together, chromatin interactions with a high off-rate are compatible with interphase chromosome dimensions.
 
-In mitotically arrested cells, the mean in vivo distance between the two loci decreased to 497 nm, corresponding to an approximately 25% length compaction, equivalent to a just over twofold volume compaction, which depended on the condensin complex (Figure 2A). The compaction ratio was slightly less than reported in previous studies (Guacci et al., 1994; Strunnikov et al., 1995; Vas et al., 2007; D'Ambrosio et al., 2008). A likely reason is our use of two colors to distinguish the two loci. This allows us to assign a discrete distance even to close foci in mitosis that would have been considered to be at zero distance due to the resolution limit in single color observations. We note that a twofold volume compaction during budding yeast chromosome condensation is similar to what is observed for example, when comparing human interphase and mitotic chromosomes (Mora-Bermúdez et al., 2006). When we reduced condensin's dissociation probability in our simulations, akin to the stabilization of condensin binding to chromosomes that has been observed as human cells enter mitosis (Gerlich et al., 2006), chromosomes began to compact. A 10-fold reduction of dissociation probability in the Type I model resulted in a 25% length compaction, comparable to what we observed in vivo (Figure 2B,C and Video 1). Further reduction of the dissociation probability led to further gradual compaction. In the Type II model, a 10-fold reduction of the dissociation probability caused a length compaction of over 40%, more than what is observed in vivo (Figure 2B,C and Video 2). A smaller reduction of the dissociation probability by only twofold, to 5 × 10 −4, led to a bistable behavior of the chromosome, its compaction fluctuating between open and closed equilibrium states of similar dimensions as those obtained at 1 × 10−4 and 1 × 10−3, respectively (Figure 2—figure supplement 1). These observations suggest that the half-life of condensin-mediated interactions along a chromatin fiber has the potential to determine the chromosome condensation status. Type I interactions allow compaction to be tuned within a physiological range. In contrast, Type II interactions result in a more stepwise compaction, the degree of which exceeds what we observed in vivo.10.7554/eLife.05565.008Video 1.Condensation of a single chromatin chain in the Type I model.The video shows two representative stages of simulated chromosome condensation: (1) the initial extended chromosomal structure (5 s are shown), followed by the 8th min, when the chromosome has reached a compacted steady-state (20 s are shown). Nucleosomes are shown as grey spheres and condensin binding sites are in red. If more than two condensin binding sites come within 40 nm of each other, they are highlighted by a yellow sphere to indicate ‘rosette’ formation. Chromatin loops that connect condensin binding sites within rosettes are tinted cyan. A balanced co-existence of rosette and web-like structures in the compacted mitotic stage becomes apparent.DOI: http://dx.doi.org/10.7554/eLife.05565.00810.7554/eLife.05565.009Video 2.Condensation of a single chromatin chain in the Type II model.As Video 1, but the simulation followed the Type II model. Now the rosette-like topologies become dominant and the overall structure is densely packed.DOI: http://dx.doi.org/10.7554/eLife.05565.009
+In mitotically arrested cells, the mean in vivo distance between the two loci decreased to 497 nm, corresponding to an approximately 25% length compaction, equivalent to a just over twofold volume compaction, which depended on the condensin complex (Figure 2A). The compaction ratio was slightly less than reported in previous studies (Guacci et al., 1994; Strunnikov et al., 1995; Vas et al., 2007; D'Ambrosio et al., 2008). A likely reason is our use of two colors to distinguish the two loci. This allows us to assign a discrete distance even to close foci in mitosis that would have been considered to be at zero distance due to the resolution limit in single color observations. We note that a twofold volume compaction during budding yeast chromosome condensation is similar to what is observed for example, when comparing human interphase and mitotic chromosomes (Mora-Bermúdez et al., 2006). When we reduced condensin's dissociation probability in our simulations, akin to the stabilization of condensin binding to chromosomes that has been observed as human cells enter mitosis (Gerlich et al., 2006), chromosomes began to compact. A 10-fold reduction of dissociation probability in the Type I model resulted in a 25% length compaction, comparable to what we observed in vivo (Figure 2B,C and Video 1). Further reduction of the dissociation probability led to further gradual compaction. In the Type II model, a 10-fold reduction of the dissociation probability caused a length compaction of over 40%, more than what is observed in vivo (Figure 2B,C and Video 2). A smaller reduction of the dissociation probability by only twofold, to 5 × 10 −4, led to a bistable behavior of the chromosome, its compaction fluctuating between open and closed equilibrium states of similar dimensions as those obtained at 1 × 10−4 and 1 × 10−3, respectively (Figure 2—figure supplement 1). These observations suggest that the half-life of condensin-mediated interactions along a chromatin fiber has the potential to determine the chromosome condensation status. Type I interactions allow compaction to be tuned within a physiological range. In contrast, Type II interactions result in a more stepwise compaction, the degree of which exceeds what we observed in vivo.
 
-## Computational and experimental intrachromosomal interaction maps
+![Video 1.](https://cdn.elifesciences.org/articles/05565/elife-05565-media1.mp4.jpg)
 
-To further evaluate our chromosome model, we compared simulated with experimental intrachromosomal contact frequency maps. We utilized the 4C (circularized chromosome conformation capture) (
+**Video 1.:** The video shows two representative stages of simulated chromosome condensation: (1) the initial extended chromosomal structure (5 s are shown), followed by the 8th min, when the chromosome has reached a compacted steady-state (20 s are shown). Nucleosomes are shown as grey spheres and condensin binding sites are in red. If more than two condensin binding sites come within 40 nm of each other, they are highlighted by a yellow sphere to indicate ‘rosette’ formation. Chromatin loops that connect condensin binding sites within rosettes are tinted cyan. A balanced co-existence of rosette and web-like structures in the compacted mitotic stage becomes apparent.
+
+![Video 2.](https://cdn.elifesciences.org/articles/05565/elife-05565-media2.mp4.jpg)
+
+**Video 2.:** As Video 1, but the simulation followed the Type II model. Now the rosette-like topologies become dominant and the overall structure is densely packed.
+
+### Computational and experimental intrachromosomal interaction maps
+
+To further evaluate our chromosome model, we compared simulated with experimental intrachromosomal contact frequency maps. We utilized the 4C (circularized chromosome conformation capture) (Dekker et al., 2013) technique combined with high throughput sequencing to generate high resolution interaction maps of 4 loci along the budding yeast chromosome 5 long arm (Figure 3A). This revealed an interaction pattern in interphase that was largely contained within approximately 100 kb around the view point (Figure 3B). Two condensin binding sites showed increased local interactions, compared to two viewpoints that were relatively depleted of condensin. Intrachromosomal interactions markedly increased in mitotic cells, both in the vicinity of the view point as well as longer range interactions beyond 100 kb. This increase depended on the condensin complex and was largely reduced when condensin was depleted from nuclei using the brn1-aa allele (Charbin et al., 2014). Together this suggests that condensin binding sites are hubs of intrachromosomal interactions, and that these are augmented in mitosis.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/05565/elife-05565-fig3-v1.jpg)
 
-**Figure 3.:** (A) Close-up of the chromosomal viewpoints selected for 4C analysis. Condensin localization along part of the chromosome 5 right arm is shown together with genomic HindIII recognition sites and the four 4C view points that do (1 and 4) or do not (2 and 3) contain a condensin binding site. (B) Experimental 4C interaction maps of the four regions, in both interphase and mitosis. Shown is also a 4C map of region 4 in mitosis after condensin has been depleted from the nucleus using the brn1-aa allele. The y-axis shows sequencing read counts normalized to the total number of mapped reads in each sample. The percentage of interactions that extend farther than 100 kb from the viewpoint is indicated. (C) Averaged computational intrachromosomal interaction maps of 6 viewpoints within 50 kb from the chromosome ends, on or between condensin binding sites, generated using both the Type I and Type II model and sampled over 1000 time points and 30 simulations in interphase and mitosis (condensin interaction dissociation rates 10−3 and 10−4, respectively). The y-axis shows interaction frequencies of the viewpoints normalized to all interactions. (D) Percentage of interactions that extend beyond 100 kb from the viewpoint under the indicated conditions. The mean of the four experimental fragments, or of the simulated distributions, is shown together with the standard deviation. *p < 0.0001, Wilcoxon–Mann–Whitney test.DOI: http://dx.doi.org/10.7554/eLife.05565.010
+**Figure 3.:** (A) Close-up of the chromosomal viewpoints selected for 4C analysis. Condensin localization along part of the chromosome 5 right arm is shown together with genomic HindIII recognition sites and the four 4C view points that do (1 and 4) or do not (2 and 3) contain a condensin binding site. (B) Experimental 4C interaction maps of the four regions, in both interphase and mitosis. Shown is also a 4C map of region 4 in mitosis after condensin has been depleted from the nucleus using the brn1-aa allele. The y-axis shows sequencing read counts normalized to the total number of mapped reads in each sample. The percentage of interactions that extend farther than 100 kb from the viewpoint is indicated. (C) Averaged computational intrachromosomal interaction maps of 6 viewpoints within 50 kb from the chromosome ends, on or between condensin binding sites, generated using both the Type I and Type II model and sampled over 1000 time points and 30 simulations in interphase and mitosis (condensin interaction dissociation rates 10−3 and 10−4, respectively). The y-axis shows interaction frequencies of the viewpoints normalized to all interactions. (D) Percentage of interactions that extend beyond 100 kb from the viewpoint under the indicated conditions. The mean of the four experimental fragments, or of the simulated distributions, is shown together with the standard deviation. *p < 0.0001, Wilcoxon–Mann–Whitney test.
 
 If condensin promotes interactions between its binding sites, these might become detectable as interaction peaks in our 4C interaction maps. However, such peaks were not clearly discernible (Figure 3B). A possible explanation for this is that condensin-enriched sites are relatively broad features and their approximately 10 kb spacing is close to the resolution limit of the 4C technique, given by the sizes of the HindIII restriction fragments used in our analysis that are in a similar size range. Alternatively, we cannot exclude that condensin engages in interactions not only between its binding sites, but also with chromatin features between binding sites, for example, histones (Tada et al., 2011). For ease of analysis, in our present study, the computational analysis focuses on interactions between condensin binding sites.
 
 The resultant simulated intrachromosomal contact frequency map derived from our Type I chromatin interactions showed striking qualitative resemblance to the experimental interaction maps. The similarities extended to (i) the distribution of interactions and their reach to approximately 100 kb, (ii) a greater number of interactions that emanate from condensin binding sites, (iii) an increase of interactions in mitosis (Figure 3C). The Type II model produced a contact frequency distribution of a broader shape, extending farther from the view point than observed, especially in mitosis. As a quantitative measure to compare the experimental and computational interaction maps, we recorded the percentage of intrachromosomal interactions that extend beyond 100 kb. While overall intrachromosomal contacts increased in mitosis, the fraction of interactions beyond 100 kb was in a similar range between interphase and mitosis (Figure 3D). The same was observed in simulations using the Type I model, while the Type II model predicts the appearance of significantly more mitosis-specific long-range interactions than observed.
 
-## Dynamic web vs stable rosette characteristics of chromatin
+### Dynamic web vs stable rosette characteristics of chromatin
 
-We next studied the implications of the Type I and Type II models on the pattern and dynamics of intrachromosomal interactions. Pairwise interactions between condensin binding sites in the Type I model gave rise to a loose web-like architecture spanning much of the chromosome volume in interphase (
+We next studied the implications of the Type I and Type II models on the pattern and dynamics of intrachromosomal interactions. Pairwise interactions between condensin binding sites in the Type I model gave rise to a loose web-like architecture spanning much of the chromosome volume in interphase (Figure 4A). Interactions within the web were dynamic and frequently interchanging. In mitosis, rosette-shaped foci formed that contained more than two binding sites within condensin's interaction radius of 40 nm. These foci were maintained for short periods of time by alternating pairwise binding site interactions, before they dissolved again (Figure 4B and Video 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/05565/elife-05565-fig4-v1.jpg)
 
-**Figure 4.:** (A) 3D distance maps of the condensin binding sites, a snapshot of an interphase simulation is shown. Each position along the x axis represents a condensin binding site, the color-coded distance between each is shown above. The corresponding snapshot of the chromosome is partitioned into web (grey) and rosette (blue) compartments. Yellow spheres highlight the core of the rosette structures where more than two condensin binding sites are in proximity. (B) as (A), but snapshots are shown from simulations in mitosis. A summary of the percentage, life-span, and size of rosette structures within the chromosome, averaged over 3000 time intervals and 30 simulations is given in the table.DOI: http://dx.doi.org/10.7554/eLife.05565.011
+**Figure 4.:** (A) 3D distance maps of the condensin binding sites, a snapshot of an interphase simulation is shown. Each position along the x axis represents a condensin binding site, the color-coded distance between each is shown above. The corresponding snapshot of the chromosome is partitioned into web (grey) and rosette (blue) compartments. Yellow spheres highlight the core of the rosette structures where more than two condensin binding sites are in proximity. (B) as (A), but snapshots are shown from simulations in mitosis. A summary of the percentage, life-span, and size of rosette structures within the chromosome, averaged over 3000 time intervals and 30 simulations is given in the table.
 
 An interphase Type II chromosome was only in part characterized by a web-like architecture. Instead, over one third of its length was organized in rosettes in which more than 2 condensin binding sites interacted (Figure 4A). In mitosis, most of the chromosome consisted of extended rosette structures that persisted for longer and involved a greater number of condensin binding sites as compared to the Type I model (Figure 4B and Video 2). Many chromosomal activities, for example, gene regulatory interactions or recombination events, are thought to involve rapid genome scanning for correct contacts which we expect is facilitated by a dynamic chromosome organization.
 
-## Simulated and experimental polymer characteristics
+### Simulated and experimental polymer characteristics
 
-In addition to the mean distance between marker loci, used above to benchmark chromosome dimensions, we also compared the distance distributions between cells in a population to those from the computer simulations. The kurtosis (K) is a dimensionless quantity that describes the difference of a distribution from normal, and is a distinctive feature of polymer models (
+In addition to the mean distance between marker loci, used above to benchmark chromosome dimensions, we also compared the distance distributions between cells in a population to those from the computer simulations. The kurtosis (K) is a dimensionless quantity that describes the difference of a distribution from normal, and is a distinctive feature of polymer models (Gennes, 1979; Balanda and MacGillivray, 1988; Barbieri et al., 2012). Figure 5A plots K values for a range of chromosomal distances, observed at 100 timepoints in 30 repeats of our chromosome simulations. They range between 2.2 and 2.8, with the Type II model showing slightly smaller values compared to Type I, indicative of distance distributions that have a broader peak than a normal distribution (K = 3). We compared this to the K of the experimental distance distribution (Figure 2A) and to a published dataset of in vivo distance measurements in budding yeast (Bystricky et al., 2004). The observed K values agreed well with those seen in our simulations, they lay somewhat closer to the values seen in the Type I as compared to the Type II model. Thus, the K value of the simulated distance distributions agrees with those observed in vivo.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/05565/elife-05565-fig5-v1.jpg)
 
-**Figure 5.:** (A) Kurtosis values calculated from the simulations and experimental measurements in interphase. Experimental data were from Figure 2 and from published measurements (Bystricky et al., 2004). (B) The persistence length Lp of chromatin in the Type I and Type II model as a function of genomic distance. 100 chromosome conformations of each model were exhaustively sampled with the orientation correlation function, the means and standard deviations of Lp are plotted. The values in the table are from the 100 kb cut-off, a range similar to that used in the experimental measurements (Bystricky et al., 2004; Dekker, 2008).DOI: http://dx.doi.org/10.7554/eLife.05565.012
+**Figure 5.:** (A) Kurtosis values calculated from the simulations and experimental measurements in interphase. Experimental data were from Figure 2 and from published measurements (Bystricky et al., 2004). (B) The persistence length Lp of chromatin in the Type I and Type II model as a function of genomic distance. 100 chromosome conformations of each model were exhaustively sampled with the orientation correlation function, the means and standard deviations of Lp are plotted. The values in the table are from the 100 kb cut-off, a range similar to that used in the experimental measurements (Bystricky et al., 2004; Dekker, 2008).
 
 A defining characteristic of polymer models is the bending rigidity (or persistence length, Lp). We estimated Lp of the simulated structures from both Type I and II models using an orientational correlation function (see ‘Materials and methods’). In both models, Lp increases with greater genomic distances, as expected from loop polymers (Strobl, 1997). At smaller genomic distances, up to ∼150 kb, the two models show comparable persistence lengths, with values in agreement with experimental Lp estimates in budding yeast of 58–134 nm, based on physical distance and 3C interaction frequency measurements in this distance range (Dekker, 2008) (Figure 5B). At the smallest distances in our simulations the persistence length approaches that of the free chromatin chain without loops, again showing values in line with an experimental Lp estimate for the local persistence length of budding yeast chromatin of approximately 30 nm (Hajjoul et al., 2013). At distances greater than 150 kb, the persistence lengths of Type I and II chromosomes becomes significantly distinct. To our knowledge, there is currently no experimental estimate for Lp at these distances, which may be in part due to the difficulty of constraining Lp values by fitting experimental data to analytical functions at these distances. We therefore do not know which model better describes the rigidity of yeast chromosomes at greater genomic distances.
 
-## Chromosome individualization during condensation
+### Chromosome individualization during condensation
 
-The 16 budding yeast chromosomes lie in close contact to each other in the nucleus (
+The 16 budding yeast chromosomes lie in close contact to each other in the nucleus (Duan et al., 2010). If chromosome condensation indeed occurs by stochastic pairwise interactions between condensin binding sites, how does condensin discriminate intrachromosomal interactions that condense a chromosome from interchromosomal interactions that lead to unproductive chromosome crosslinks? To explore this, we simulated chromosome condensation of two 300 kb long chromatin chains lying adjacent to each other (Figure 6 and Videos 3, 4). As expected, we observed condensin-mediated interactions both within and between chromosomes. In the Type I model, intrachromosomal interactions became dominant over time and the two chromosomes formed individual entities, while maintaining occasional dynamic contact between their surfaces. Starting from the same chromosome positions, the Type II model also displayed a tendency for chromosomes to individualize. However, the more stable nature of rosette-like interaction hubs that formed both within and between chromosomes often maintained the two chromosomes in an entangled state and prevented their complete separation. These results show that condensin-mediated interactions individualize chromosomes, as condensin is more likely to encounter binding sites along the same nucleosome string compared to binding sites on two independently moving chains. Dynamic pairwise interactions between condensin binding sites are better able to prevent persistent cross-linking of chromosomes than rosette-like interaction hubs.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/05565/elife-05565-fig6-v1.jpg)
 
-**Figure 6.:** Snapshots are shown of chromosomes and their 3D distance maps, after 5 min of simulated chromosome condensation of two adjacent chromosomes using the Type I and Type II models. The average number of interchromosome contacts over the 10 min condensation timecourse are indicated. Statistical significance of the difference was assessed using a Wilcoxon–Mann–Whitney test.DOI: http://dx.doi.org/10.7554/eLife.05565.013
+**Figure 6.:** Snapshots are shown of chromosomes and their 3D distance maps, after 5 min of simulated chromosome condensation of two adjacent chromosomes using the Type I and Type II models. The average number of interchromosome contacts over the 10 min condensation timecourse are indicated. Statistical significance of the difference was assessed using a Wilcoxon–Mann–Whitney test.
+
+![Video 3.](https://cdn.elifesciences.org/articles/05565/elife-05565-media3.mp4.jpg)
+
+**Video 3.:** 25 seconds of two chromatin chains compacting next to each other using the Type I model are shown, illustrating chain separation during condensation (chain 1, nucleosomes in light blue, condensin binding sties in red; chain 2, nucleosomes in yellow, condensin binding sites in green).
+
+![Video 4.](https://cdn.elifesciences.org/articles/05565/elife-05565-media4.mp4.jpg)
+
+**Video 4.:** As Video 3, but using the Type II model. The two chromatin chains fail to separate during condensation. The full-length, high resolution versions of all the videos can be found with the digital object identifier doi:10.5061/dryad.78622 at http://datadryad.org.
 
 ## Discussion
 
@@ -127,7 +143,7 @@ Is chromosome architecture in budding yeast, and potentially other organisms, su
 
 ## Materials and methods
 
-## Yeast cell culture and 4C protocol
+### Yeast cell culture and 4C protocol
 
 The detection of intrachromosomal interactions along budding yeast chromosomes was based on previously published protocols (Singh et al., 2009; Splinter et al., 2012). Cells were grown to mid log phase and arrested in G1 (interphase) by α-factor or a-factor treatment (O'Reilly et al., 2012), or in metaphase by nocodazole treatment. Rapamycin treatment to deplete nuclear condensin using the anchor-away technique (Haruki et al., 2008) was performed as described (Lopez-Serra et al., 2013; Charbin et al., 2014). Uniform arrest was confirmed by cell morphology and FACS analysis of DNA content. 400 ml of culture were crosslinked at room temperature with 1% formaldehyde for 15 min followed by quenching with 125 mM glycine for 5 min. Cells were washed twice in ice cold TBS and resuspended in 1 ml FA buffer (50 mM HEPES/KOH pH7.9, 140 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.1% sodium deoxycholate, protease inhibitors). Cells were broken in a multi bead shocker (Yasui Kikai Corporation, Japan) using acid-washed glass beads. Chromatin was pelleted by centrifugation. Samples were taken at each step to assess the chromatin state by agarose gel electrophoresis and by quantitative real time PCR. The chromatin pellet was resuspended in 500 μl NEBuffer 2 (New England Biolabs, Ipswich, MA). SDS was added to a final concentration of 0.1% and extraction was allowed for 10 min at 65°C followed by quenching of the SDS with 1% Triton X-100. 0.1 mg/ml RNase A was added and incubated for 2 hr at room temperature. Now, 2000 units HindIII (New England Biolabs) were added and the digest kept at 37°C with frequent mixing. After 2 hr the same amount of enzyme was added again and incubation continued over night. In the morning, the enzyme was inactivated by incubation at 65°C for 20 min.
 
@@ -141,11 +157,11 @@ In preparation for sequencing, the DNA samples were end repaired, poly-A tailed 
 
 Sequence data were scanned for the respective primer/restriction site pairs associated with the region of interest. Any sequences not matching perfectly these criteria were discarded. The remaining sequences were trimmed to remove the primer and then mapped to the Saccharomyces cerevisiae genome using PatMaN (Prüfer et al., 2008). This was performed in two rounds. Firstly, aligning with no mismatches, removing the matching sequences from the input file and then aligning again with 1 mismatch. The two sets of PatMaN results were then merged for each genomic location and then counts were produced for each position.
 
-## Microscopy
+### Microscopy
 
 Images of live budding yeast cells containing two differentially fluorescently marked loci at 144 kb distance from each other on the long arm of chromosome 5 (Rohner et al., 2008) were acquired using a DeltaVision Olympus IX70 inverted microscope with a 100× (NA = 1.40) PlanApo objective. 100 pairs of two independent biological repeats, each, were scored. Distances between the brightest centers of the two fluorescent foci were measured in 3 dimensional reconstructions of the cells using Softworx (DeltaVision, GE Healthcare, Pittsburgh, PA).
 
-## Theory and functions of the Type I and II model
+### Theory and functions of the Type I and II model
 
 For each simulation, a virtual chromosome of ∼300 kb is constructed. Along this length, 2000 nucleosomes are represented as spheres of 10 nm diameter, with condensin binding sites placed at ∼10 kb intervals. The distance between the centers of each consecutive nucleosome bead is set to 15 nm, with the interconnection between them modeled as a spring.
 
@@ -153,65 +169,280 @@ The conformation of a self-avoiding chromosome structure used in each Brownian d
 
 The Type I and II models are conceptually similar to a dynamic loop model (Zhang and Heermann, 2011), in a way that genomically distant sections of the chromatin fibre can cross-link for a fixed amount of time, as facilitated by condensin molecules, when they come into physical proximity of each other. An important feature of our Type I and II model is the probabilistic nature of the cross-linking mechanism, which allows the organization of the chromatin fibre to be dynamic, rather than being a fixed structure. Another important feature of the Type I and II models is the application of physical forces at the nucleosome level. The trajectory of the fiber backbone is regulated by forces, as described below, based on first principle physics. The balance of all forces is calibrated based on experimental measurements of nucleosome movements and the angles between neighboring nucleosome linkers. Without arbitrary parameters to pre-define the conformation of the chromosome chain (i.e., no conformation parameters), the models allow a direct examination of how chromosome conformations emerge from different modes of condensin interactions (i.e., stochastic pairwise interactions and higher order condensing assemblies for the Type I and II models, respectively).
 
-## Forces employed
+#### Forces employed
 
-In both the Type I and II models, the movement of a specific bead i during simulation is regulated by a summation of forces, F→iall:(1)F→iall=F→ientropic+F→itension+F→irepulsion+F→iattraction+F→(di,j,p)icondensin,where F→ientropic is an entropic force for diffusion-based movements of nucleosome beads; F→itension is a tension force originated from the nucleotide linkers joining two neighboring beads; F→irepulsion is a repulsion force to avoid clashes between bead i and other beads within its vicinity; F→iattraction is a weak force applied between beads i and i ± 2 to regulate the distribution of the α angle (the angle between the DNAs emerging from the surface of nucleosomes); F→(di,j,p)icondensin is a tension force originating from the bonds connecting two condensin binding sites i, j. It is applied when bead i represents a condensin binding site and when beads i, j are within 40 nm of each other (di,j ≤ 40 nm). The p parameter represents the dissociation probability of condensin molecules for regulating the maintenance of F→(di,j,p)icondensin. Algorithmically, the probability p is implemented through a random number generated at each time step for each F→(di,j,p)icondensin: if a random number for a F→(di,j,p)icondensin between a pair of interacting condensin sites is less than a certain threshold p, then F→(di,j,p)icondensin becomes zero.
+In both the Type I and II models, the movement of a specific bead i during simulation is regulated by a summation of forces, $F→_{i}^{all}$:
 
-The only difference between the Type I and Type II model is in F→(di,j,p)icondensin: In the Type I scenario, the force is applied between condensin site i and one of its spatially nearby condensin sites, whereas in the Type II model up to two of the nearby condensin sites are regulated by the force. More details of the F→(di,j,p)icondensin are described in its section below.
+$$
+F→_{i}^{all}=F→_{i}^{entropic}+F→_{i}^{tension}+F→_{i}^{repulsion}+F→_{i}^{attraction}+F→(d_{i,j},p)_{i}^{condensin},
+$$
 
-## F→ientropic: entropic force
+where $F→_{i}^{entropic}$ is an entropic force for diffusion-based movements of nucleosome beads; $F→_{i}^{tension}$ is a tension force originated from the nucleotide linkers joining two neighboring beads; $F→_{i}^{repulsion}$ is a repulsion force to avoid clashes between bead i and other beads within its vicinity; $F→_{i}^{attraction}$ is a weak force applied between beads i and i ± 2 to regulate the distribution of the α angle (the angle between the DNAs emerging from the surface of nucleosomes); $F→(d_{i,j},p)_{i}^{condensin}$ is a tension force originating from the bonds connecting two condensin binding sites i, j. It is applied when bead i represents a condensin binding site and when beads i, j are within 40 nm of each other (di,j ≤ 40 nm). The p parameter represents the dissociation probability of condensin molecules for regulating the maintenance of $F→(d_{i,j},p)_{i}^{condensin}$. Algorithmically, the probability p is implemented through a random number generated at each time step for each $F→(d_{i,j},p)_{i}^{condensin}$: if a random number for a $F→(d_{i,j},p)_{i}^{condensin}$ between a pair of interacting condensin sites is less than a certain threshold p, then $F→(d_{i,j},p)_{i}^{condensin}$ becomes zero.
 
-An entropic force F→ientropic is applied to each bead, at each simulation step, in the following form:(2)F→ientropic=c1×u→,where c1 is a constant determining the magnitude of the force and u→ is a vector specifying its direction. The value of c1 allows the bead to have an average movement based on the friction coefficient of solvated nucleosomes (Robert, 1995), on a scale consistent with experimental observations. Nucleosome bead movement is principally regulated by the entropic force and the spring constant of the nucleosome linker (see ‘F→itension: tension force’, below). This parameter pair was chosen such that the nucleosome displacement distribution over short (30 ms) time intervals was compatible with that observed in mammalian interphase cells ( Hihara et al., 2012), to our knowledge only currently available experimental measurement of this distribution. In our model, using the parameter set given below, the displacement distribution is of comparable shape to the experimental observation, with a mean and standard deviation of 30.9 ± 13.4 nm/30 ms (Type I model) or 30.8 ± 13.3 nm/30 ms (Type II model), compared to a mean of 51.2 nm/30 ms in the experiment (Figure 1—figure supplement 1). Energy from numerous chromosomal processes is expended in the human interphase nucleus, which could cause a somewhat greater mobility of nucleosomes compared to our model that is restricted to Brownian motion. Key aspects of our model were robust to the exact values of this parameter pair (see ‘Model robustness’, below).
+The only difference between the Type I and Type II model is in $F→(d_{i,j},p)_{i}^{condensin}$: In the Type I scenario, the force is applied between condensin site i and one of its spatially nearby condensin sites, whereas in the Type II model up to two of the nearby condensin sites are regulated by the force. More details of the $F→(d_{i,j},p)_{i}^{condensin}$ are described in its section below.
 
-## F→itension: tension force
+##### F→ientropic: entropic force
 
-Here, we approximate a nucleotide linker, joining two neighboring beads, as an elastic spring following Hooke's law:(3)F→itension=Ks×(di,i+1−c2)×u^i,i+1+Ks×(di,i−1−c2)×u^i,i−1,where Ks is the spring constant of the nucleotide linker, di,j ± 1 is the distance between the center of two neighboring beads i and j; c2 is a constant describing the natural (non-stretched or non-compressed) length of the nucleotide linker; ûi,i + 1, ûi,i − 1 are unit vectors determining the direction of the force (from bead i to its neighboring bead i + 1 and i − 1, respectively).
+An entropic force $F→_{i}^{entropic}$ is applied to each bead, at each simulation step, in the following form:
 
-## F→irepulsion: repulsion force
+$$
+F→_{i}^{entropic}=c_{1}\timesu→,
+$$
 
-To avoid overlaps between beads, a distance-dependent repulsive force between two beads that are within 15 nm of each other is applied:(4){F→irepulsion=c3×u^i,j,  di,j< 10 nmF→irepulsion=c3×u^′i,jdi,j12,  10≤di,j≤ 15 nm,where c3 is the magnitude of repulsion force. The direction of the force is given by ûi,j and û′i,j, dimensionless and dimensionful unit vectors from bead i to j, respectively; di,j is the distance between two nearby beads i and j. The overall shape of the function resembles the shape of soft-core Van der Waals forces (with the scaling parameter α closer to 1 than 0), as typically applied in molecular dynamics simulation force fields (Ponder and Case, 2003).
+where c1 is a constant determining the magnitude of the force and $u→$ is a vector specifying its direction. The value of c1 allows the bead to have an average movement based on the friction coefficient of solvated nucleosomes (Robert, 1995), on a scale consistent with experimental observations. Nucleosome bead movement is principally regulated by the entropic force and the spring constant of the nucleosome linker (see ‘$F→_{i}^{tension}$: tension force’, below). This parameter pair was chosen such that the nucleosome displacement distribution over short (30 ms) time intervals was compatible with that observed in mammalian interphase cells ( Hihara et al., 2012), to our knowledge only currently available experimental measurement of this distribution. In our model, using the parameter set given below, the displacement distribution is of comparable shape to the experimental observation, with a mean and standard deviation of 30.9 ± 13.4 nm/30 ms (Type I model) or 30.8 ± 13.3 nm/30 ms (Type II model), compared to a mean of 51.2 nm/30 ms in the experiment (Figure 1—figure supplement 1). Energy from numerous chromosomal processes is expended in the human interphase nucleus, which could cause a somewhat greater mobility of nucleosomes compared to our model that is restricted to Brownian motion. Key aspects of our model were robust to the exact values of this parameter pair (see ‘Model robustness’, below).
 
-## F→iattraction: attraction force
+##### F→itension: tension force
 
-A weak attractive force is applied between beads i and i ± 2:(5)F→iattraction=c4×u^i,i+2+c4×u^i,i−2,where c4 is the magnitude of the force, proportional to the distance between beads i, i + 2 and between beads i, i − 2, respectively. ûi,i + 2 and ûi,i − 2 are dimensionless unit vectors determining the direction of the force (from bead i to i + 2 and from bead i to i − 2, respectively). The force fine-tunes the distribution of the α angle between three consecutive beads and does not serve as a driving factor for any pre-defined local structures: the α angle distribution for our simulated chromosomes has a bell shape curve, which peaks at around 70° (benchmarked with experimental measurements of the α angle of 75°, based on the nucleosome crystal structure [Luger et al., 1997]) and tails off at around 20° and 180°, consistent with the relative flexibility that is thought to characterize the α angle (Figure 1—figure supplement 2) (Bednar et al., 1998; Engelhardt, 2007). This means that the model does not exclude the possibility of forming small fragments of locally compact structures that resemble the 20–30 nm fibers widely speculated in other models (the α angle of a 30 nm fiber is centered at 36° or 108°). Although the majority of the simulated chromosomes have a broad range of local conformations as can be seen in the supplementary videos.
+Here, we approximate a nucleotide linker, joining two neighboring beads, as an elastic spring following Hooke's law:
 
-## F→(di,j,p)icondensin: condensin tension force
+$$
+F→_{i}^{tension}=K_{s}\times(d_{i,i+1}−c_{2})\timesu^_{i,i+1}+K_{s}\times(d_{i,i−1}−c_{2})\timesu^_{i,i−1},
+$$
 
-This force maintains the bond between two condensin binding sites that are within 40 nm of each other. Here, two different forms of F→(di,j,p)icondensin are applied in the Type I (Equation 6.1, 6.3, 6.4) and Type II (Equation 6.2, 6.3, 6.4) models. Both model the bond between condensin binding sites as an elastic spring following Hooke's law:(6.1)F→(di,j,p)icondensin=Kcondensin×(di,j−c5)×u^i,j,(6.2)F→(di,j,p)icondensin=Kcondensin×(di,j−c5)×u^i,j+Kcondensin×(di,k−c5)×u^i,k,(6.3)F→(di,j,p)icondensin=0,when di,j>40nm,(6.4)F→(di,j,p)icondensin=0,when p is not satisfied,where in both Type I and II models Kcondensin is the spring constant of the bond between two interacting condensin binding sites; di,j is the distance between the center of two condensin sites i and j; p is the dissociation probability of condensin molecules; c5 is the average distance maintained between two nearby condensin sites; ûi,j is an unit vector determining the direction of the force (from condensin site i to condensin site j). In case of the Type II model, di,k is the distance between the center of condensin site i and an additional site k; ûi,k is a unit vector determining the direction of this additional force from condensin site i to condensin site k. Here we define c5 as 30 nm, shorter than the distance threshold used for determining a bond maintained between two nearby condensin sites (40 nm). This allows two nearby condensin sites to re-form the bond if they are still within a 40 nm distance after the initial interaction bond between them breaks (monitored during a window of three simulation time steps).
+where Ks is the spring constant of the nucleotide linker, di,j ± 1 is the distance between the center of two neighboring beads i and j; c2 is a constant describing the natural (non-stretched or non-compressed) length of the nucleotide linker; ûi,i + 1, ûi,i − 1 are unit vectors determining the direction of the force (from bead i to its neighboring bead i + 1 and i − 1, respectively).
+
+##### F→irepulsion: repulsion force
+
+To avoid overlaps between beads, a distance-dependent repulsive force between two beads that are within 15 nm of each other is applied:
+
+$$
+{F→_{i}^{repulsion}=c_{3}\timesu^_{i,j},  d_{i,j}< 10 nmF→_{i}^{repulsion}=\frac{c_{3}\timesu^′_{i,j}}{d_{i,j}^{12}},  10\leqd_{i,j}≤ 15 nm,
+$$
+
+where c3 is the magnitude of repulsion force. The direction of the force is given by ûi,j and û′i,j, dimensionless and dimensionful unit vectors from bead i to j, respectively; di,j is the distance between two nearby beads i and j. The overall shape of the function resembles the shape of soft-core Van der Waals forces (with the scaling parameter α closer to 1 than 0), as typically applied in molecular dynamics simulation force fields (Ponder and Case, 2003).
+
+##### F→iattraction: attraction force
+
+A weak attractive force is applied between beads i and i ± 2:
+
+$$
+F→_{i}^{attraction}=c_{4}\timesu^_{i,i+2}+c_{4}\timesu^_{i,i−2},
+$$
+
+where c4 is the magnitude of the force, proportional to the distance between beads i, i + 2 and between beads i, i − 2, respectively. ûi,i + 2 and ûi,i − 2 are dimensionless unit vectors determining the direction of the force (from bead i to i + 2 and from bead i to i − 2, respectively). The force fine-tunes the distribution of the α angle between three consecutive beads and does not serve as a driving factor for any pre-defined local structures: the α angle distribution for our simulated chromosomes has a bell shape curve, which peaks at around 70° (benchmarked with experimental measurements of the α angle of 75°, based on the nucleosome crystal structure [Luger et al., 1997]) and tails off at around 20° and 180°, consistent with the relative flexibility that is thought to characterize the α angle (Figure 1—figure supplement 2) (Bednar et al., 1998; Engelhardt, 2007). This means that the model does not exclude the possibility of forming small fragments of locally compact structures that resemble the 20–30 nm fibers widely speculated in other models (the α angle of a 30 nm fiber is centered at 36° or 108°). Although the majority of the simulated chromosomes have a broad range of local conformations as can be seen in the supplementary videos.
+
+##### F→(di,j,p)icondensin: condensin tension force
+
+This force maintains the bond between two condensin binding sites that are within 40 nm of each other. Here, two different forms of $F→(d_{i,j},p)_{i}^{condensin}$ are applied in the Type I (Equation 6.1, 6.3, 6.4) and Type II (Equation 6.2, 6.3, 6.4) models. Both model the bond between condensin binding sites as an elastic spring following Hooke's law:
+
+$$
+F→(d_{i,j},p)_{i}^{condensin}=K_{condensin}\times(d_{i,j}−c_{5})\timesu^_{i,j},
+$$
+
+
+
+$$
+F→(d_{i,j},p)_{i}^{condensin}=K_{condensin}\times(d_{i,j}−c_{5})\timesu^_{i,j}+K_{condensin}\times(d_{i,k}−c_{5})\timesu^_{i,k},
+$$
+
+
+
+$$
+F→(d_{i,j},p)_{i}^{condensin}=0,when d_{i,j}>40nm,
+$$
+
+
+
+$$
+F→(d_{i,j},p)_{i}^{condensin}=0,when p is not satisfied,
+$$
+
+where in both Type I and II models Kcondensin is the spring constant of the bond between two interacting condensin binding sites; di,j is the distance between the center of two condensin sites i and j; p is the dissociation probability of condensin molecules; c5 is the average distance maintained between two nearby condensin sites; ûi,j is an unit vector determining the direction of the force (from condensin site i to condensin site j). In case of the Type II model, di,k is the distance between the center of condensin site i and an additional site k; ûi,k is a unit vector determining the direction of this additional force from condensin site i to condensin site k. Here we define c5 as 30 nm, shorter than the distance threshold used for determining a bond maintained between two nearby condensin sites (40 nm). This allows two nearby condensin sites to re-form the bond if they are still within a 40 nm distance after the initial interaction bond between them breaks (monitored during a window of three simulation time steps).
 
 In the Type I model, when a condensin binding site has more than one nearby condensin sites within the 40 nm range, only one interaction with one of the nearby sites is allowed based on a random choice. In the Type II model, when a condensin binding site has more than two nearby condensin sites within the 40 nm range, only two interactions can be formed based on random choices.
 
-## The mid-point scheme employed for calculating the movement of beads
+#### The mid-point scheme employed for calculating the movement of beads
 
-At each simulation step, the movement of each bead is calculated through the following mid-point numerical scheme:(xi)12=(xi)0+δt2×((F→ientropic)0+(F→itension)0+(F→irepulsion)0+(F→iattraction)0+((F→(di,j,p)icondensin))0),(7)(xi)1=(xi)0+δt×((F→ientropic)0+(F→itension)12+(F→irepulsion)12+(F→iattraction)12+((F→(di,j,p)icondensin))12),where (xi)12 and (xi)1 are the positions of a bead at the mid and end-point of each simulation time step, respectively; δt is the in silico simulation time step, (F→i)0 and (F→i)12 are the forces attributed to each bead at simulation time steps δt and δt/2, respectively.
+At each simulation step, the movement of each bead is calculated through the following mid-point numerical scheme:
 
-## List of parameters regulating the bead movement
+$$
+(x_{i})_{\frac{1}{2}}=(x_{i})_{0}+\frac{\deltat}{2}\times((F→_{i}^{entropic})_{0}+(F→_{i}^{tension})_{0}+(F→_{i}^{repulsion})_{0}+(F→_{i}^{attraction})_{0}+((F→(d_{i,j},p)_{i}^{condensin}))_{0}),
+$$
 
-## Model robustness
 
-To estimate the robustness of the difference between the Type I and Type II models, we have sampled the spring constant Ks and entropic force F→ientropic values, the most important parameters that regulate the movement of the nucleosome beads. We searched for combinations of Ks and F→ientropic that allow nucleosome beads to exhibit movements at rates compatible with those measured by Hihara et al. (2012). We plotted the relationship between Ks and F→ientropic values, and selected a point (Ks = 10 pN/nm and F→ientropic = 11 pN) that generated a low average tension between consecutive nucleosomes (2.2 pN) to compare with our original model based on the above tabulated parameters (Ks = 50 pN/nm and F→ientropic = 24.5 pN) that result in an average inter-nucleosome tension of 4.7 pN. Simulations with these new parameter values using the Type I model resulted in similar chromosome dimensions and native-like condensation, while the Type II model again showed a tendency to overly compact chromosomes. The fraction of long-range interactions beyond 100 kB was somewhat lower but compatible with the experimental data in the Type I model. They markedly exceeded the observed range in the Type II model. We conclude that the main features and differences between the Type I and Type II models are insensitive to variations in the Ks and F→ientropic values. We note that the inter-nucleosome tension with either parameter pair is insufficient to disrupt the histone/DNA interaction, though forces in the low pN range may in some cases, depending on the DNA sequence, lead to elastic DNA breathing on the nucleosome surface (Ngo et al., 2015).
 
-## Mapping the in silico time to in vivo time
+$$
+(x_{i})_{1}=(x_{i})_{0}+\deltat\times((F→_{i}^{entropic})_{0}+(F→_{i}^{tension})_{\frac{1}{2}}+(F→_{i}^{repulsion})_{\frac{1}{2}}+(F→_{i}^{attraction})_{\frac{1}{2}}+((F→(d_{i,j},p)_{i}^{condensin}))_{\frac{1}{2}}),
+$$
 
-Here, we define the in silico time step δt as follows, taking into account the diffusion of solvated nucleosomes (Grassia and Hinch, 1996):(8)δt=t^×Dλ2,where t^ is in vivo time, λ is the natural length of a nucleotide link joining two neighbouring beads (set as 15 nm in our system); D is the diffusion coefficient of a nucleosome, which related to the friction coefficient, f as:(9)D =kB×Tf,where kB is the Boltzmann constant, T is the temperature.
+where $(x_{i})_{\frac{1}{2}}$ and $(x_{i})_{1}$ are the positions of a bead at the mid and end-point of each simulation time step, respectively; δt is the in silico simulation time step, $(F→_{i})_{0}$ and $(F→_{i})_{\frac{1}{2}}$ are the forces attributed to each bead at simulation time steps δt and δt/2, respectively.
 
-The value of f for solvated nucleosomes is approximately 3 × 10−7 g s−1 (Robert, 1995). Hence the in vivo time corresponding to each in silico step at a temperature of 25°C is approximately:(10)t^=δt×λ2(kB×Tf)=1×152nm21.33×107s g−1 pN nm=1.69×10−5s.
+#### List of parameters regulating the bead movement
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>Values (‘*’: non-defined values)</th>
+      <th>Dimension (‘-’: dimensionless)</th>
+      <th>Host function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>c1</td>
+      <td>24.5</td>
+      <td>pN</td>
+      <td>F→ientropic</td>
+    </tr>
+    <tr>
+      <td>u→</td>
+      <td>1 ≤ |u→| ≤ −1</td>
+      <td>-</td>
+      <td>F→ientropic</td>
+    </tr>
+    <tr>
+      <td>Ks</td>
+      <td>50</td>
+      <td>pN nm−1</td>
+      <td>F→itension</td>
+    </tr>
+    <tr>
+      <td>di,i ± 1</td>
+      <td>*</td>
+      <td>nm</td>
+      <td>F→itension</td>
+    </tr>
+    <tr>
+      <td>C2</td>
+      <td>15</td>
+      <td>nm</td>
+      <td>F→itension</td>
+    </tr>
+    <tr>
+      <td>u^i,i±1</td>
+      <td>*</td>
+      <td>-</td>
+      <td>F→itension</td>
+    </tr>
+    <tr>
+      <td>C3</td>
+      <td>10</td>
+      <td>pN</td>
+      <td>F→irepulsion</td>
+    </tr>
+    <tr>
+      <td>ûi,j</td>
+      <td>*</td>
+      <td>-</td>
+      <td>F→irepulsion</td>
+    </tr>
+    <tr>
+      <td>û′i,j</td>
+      <td>*</td>
+      <td>nm</td>
+      <td>F→irepulsion</td>
+    </tr>
+    <tr>
+      <td>di,j</td>
+      <td>*</td>
+      <td>nm</td>
+      <td>F→irepulsion</td>
+    </tr>
+    <tr>
+      <td>c4</td>
+      <td>*</td>
+      <td>pN</td>
+      <td>F→iattraction</td>
+    </tr>
+    <tr>
+      <td>u^i,i±2</td>
+      <td>*</td>
+      <td>-</td>
+      <td>F→iattraction</td>
+    </tr>
+    <tr>
+      <td>Kcondensin</td>
+      <td>50</td>
+      <td>pN nm−1</td>
+      <td>F→(di,j,p)icondensin</td>
+    </tr>
+    <tr>
+      <td>di,j</td>
+      <td>*</td>
+      <td>nm</td>
+      <td>F→(di,j,p)icondensin</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>G1 phase: 10−3 M phase: 10−4</td>
+      <td>-</td>
+      <td>F→(di,j,p)icondensin</td>
+    </tr>
+    <tr>
+      <td>C5</td>
+      <td>30</td>
+      <td>nm</td>
+      <td>F→(di,j,p)icondensin</td>
+    </tr>
+    <tr>
+      <td>ûi,j</td>
+      <td>*</td>
+      <td>-</td>
+      <td>F→(di,j,p)icondensin</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Model robustness
+
+To estimate the robustness of the difference between the Type I and Type II models, we have sampled the spring constant Ks and entropic force $F→_{i}^{entropic}$ values, the most important parameters that regulate the movement of the nucleosome beads. We searched for combinations of Ks and $F→_{i}^{entropic}$ that allow nucleosome beads to exhibit movements at rates compatible with those measured by Hihara et al. (2012). We plotted the relationship between Ks and $F→_{i}^{entropic}$ values, and selected a point (Ks = 10 pN/nm and $F→_{i}^{entropic}$ = 11 pN) that generated a low average tension between consecutive nucleosomes (2.2 pN) to compare with our original model based on the above tabulated parameters (Ks = 50 pN/nm and $F→_{i}^{entropic}$ = 24.5 pN) that result in an average inter-nucleosome tension of 4.7 pN. Simulations with these new parameter values using the Type I model resulted in similar chromosome dimensions and native-like condensation, while the Type II model again showed a tendency to overly compact chromosomes. The fraction of long-range interactions beyond 100 kB was somewhat lower but compatible with the experimental data in the Type I model. They markedly exceeded the observed range in the Type II model. We conclude that the main features and differences between the Type I and Type II models are insensitive to variations in the Ks and $F→_{i}^{entropic}$ values. We note that the inter-nucleosome tension with either parameter pair is insufficient to disrupt the histone/DNA interaction, though forces in the low pN range may in some cases, depending on the DNA sequence, lead to elastic DNA breathing on the nucleosome surface (Ngo et al., 2015).
+
+#### Mapping the in silico time to in vivo time
+
+Here, we define the in silico time step δt as follows, taking into account the diffusion of solvated nucleosomes (Grassia and Hinch, 1996):
+
+$$
+\deltat=\frac{t^\timesD}{\lambda^{2}},
+$$
+
+where $t^$ is in vivo time, λ is the natural length of a nucleotide link joining two neighbouring beads (set as 15 nm in our system); D is the diffusion coefficient of a nucleosome, which related to the friction coefficient, f as:
+
+$$
+D =\frac{k_{B}\timesT}{f},
+$$
+
+where kB is the Boltzmann constant, T is the temperature.
+
+The value of f for solvated nucleosomes is approximately 3 × 10−7 g s−1 (Robert, 1995). Hence the in vivo time corresponding to each in silico step at a temperature of 25°C is approximately:
+
+$$
+t^=\frac{\deltat\times\lambda^{2}}{(\frac{k_{B}\timesT}{f})}=\frac{1\times15^{2}nm^{2}}{1.33\times10^{7}s g^{−1} pN nm}=1.69\times10^{−5}s.
+$$
 
 Our simulations take approximately 25 million simulation steps to reach a new compaction steady state after a change in dissociation probability of condensin interactions, which corresponds to approximately 7 min in vivo. This is compatible with requirements for the in vivo chromosome condensation in budding yeast.
 
-## K and persistence length determination of the simulated chromatin chain
+### K and persistence length determination of the simulated chromatin chain
 
-We calculated the Pearson's definition of K, defined as the fourth central moment divided by the square of the variance, using the following function:(11)K=μ4σ4,where μ4 is the fourth moment about the mean and σ is the standard deviation.
+We calculated the Pearson's definition of K, defined as the fourth central moment divided by the square of the variance, using the following function:
 
-We applied an orientational correlation function, Kor, to estimate the persistence length, Lp, at different genomic distances (Strobl, 1997). Kor gauges the rigidity of a polymer by the orientational correlation of pairs of locations. Let u(L) be a tangent unit vector describing the direction of the chain at contour length L. The correlation between two points separated by contour length L′ is:(12)u(L)⋅u(L+L′).
+$$
+K=\frac{\mu_{4}}{\sigma^{4}},
+$$
 
-The Kor value is the average of correlations, considering all pairs of tangent vectors separated by contour distance L′, extracted from an ensemble of equilibrated structures:(13)Kor=〈u(L)⋅u(L+L′)〉.
+where μ4 is the fourth moment about the mean and σ is the standard deviation.
 
-Eventually the Lp value is estimated as the integral width of the Kor function:(14)LP=∫0∞Kor(L′)d(L′).
+We applied an orientational correlation function, Kor, to estimate the persistence length, Lp, at different genomic distances (Strobl, 1997). Kor gauges the rigidity of a polymer by the orientational correlation of pairs of locations. Let u(L) be a tangent unit vector describing the direction of the chain at contour length L. The correlation between two points separated by contour length L′ is:
+
+$$
+u(L)⋅u(L+L′).
+$$
+
+The Kor value is the average of correlations, considering all pairs of tangent vectors separated by contour distance L′, extracted from an ensemble of equilibrated structures:
+
+$$
+K_{or}=〈u(L)⋅u(L+L′)〉.
+$$
+
+Eventually the Lp value is estimated as the integral width of the Kor function:
+
+$$
+L_{P}=\int0∞K_{or}(L′)d(L′).
+$$
 
 We note that this persistence length determination applies to a loop-based chromatin model (Zhang and Heermann, 2011). Loops constrain free movement of the chromatin fibre and, unlike in a worm-like model, Lp increases with greater genomic distances.
 
-## Approximation of the budding yeast genome volume based on the simulation results
+### Approximation of the budding yeast genome volume based on the simulation results
 
 We estimated the volume of the 300 kb chromosome chain in our simulations through gridded spaces. Firstly, we defined a space big enough to enclose the chromosome then we partitioned the space into joined 3D grids. We counted the number of grid cells occupied by at least one nucleosome. The volume of the chromosome was the sum of the volumes of the occupied grid cells. The accuracy of this approach depends on the grid size used to partition the space. Small grids underestimate the chromosome volume by omitting internal spaces that are surrounded by the chromosome and that are hence not reachable by other chromosomes. Large grids tend to overestimate the volume by including an excess of external surrounding space that could be available to neighboring chromosomes. Here, we use a grid of 50 nm cubes, corresponding to the observed persistence length at small distances in our simulated structures. As the chromosome volume is determined by the curvature of the chromatin chain, closely related to its persistence length, this is aimed to reduce the effect of both over- or underestimating chromosome volume.
 

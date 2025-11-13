@@ -27,23 +27,51 @@ Nucleated cells of higher vertebrates provide information about their health sta
 
 ## Results
 
-## Design of TAPBPR scoop-loop variants
+### Design of TAPBPR scoop-loop variants
 
 To investigate the function of the scoop loop, we prepared two human TAPBPR variants: TAPBPRTsn-SL, in which the TAPBPR scoop loop was replaced with the corresponding shorter loop of Tsn, and TAPBPRΔSL, in which the original scoop loop was essentially deleted by replacing it with three glycine residues to preserve proper folding of the MHC I chaperone (Figure 1C). The ER-lumenal domains of wildtype (wt) TAPBPR and the variants, each harboring a C-terminal histidine tag, were expressed in insect cells and purified from the cell culture supernatant via immobilized-metal affinity chromatography (IMAC) and size-exclusion chromatography (SEC). As MHC I chaperone clients, we chose mouse H2-Db and human HLA-A*02:01, which are known to interact with TAPBPR (Hermann et al., 2013; Ilca et al., 2019; Morozov et al., 2016). HLA-A*02:01, the major MHC I allomorph in the Caucasian population and found in more than 50% of the global population, presents a diverse spectrum of immunodominant autoimmune, viral, and tumor epitopes and is therefore medically highly relevant (Boucherma et al., 2013). The MHC I allomorphs were expressed in E. coli as inclusion bodies and refolded in the presence of β2m and fluorescently-labeled or photo-cleavable peptide (Rodenko et al., 2006). The highly pure TAPBPR variants and pMHC I complexes eluted as monodisperse samples at expected size during SEC (Figure 1D–F).
 
-## Scoop-loop variants have reduced chaperone activity towards peptide-free MHC I
+### Scoop-loop variants have reduced chaperone activity towards peptide-free MHC I
 
 During peptide exchange, MHC I molecules go through a peptide-free high-energy intermediate state after peptide release and before re-entry of a new peptide. A hallmark of peptide editors like TAPBPR is their ability to recognize and chaperone this intermediate until it is located in a peptide-rich environment where a high-affinity peptide ligand can enter the MHC I binding groove (Thomas and Tampé, 2019; Thomas and Tampé, 2017b). To scrutinize the role of the scoop loop in chaperoning empty MHC I, we tested the ability of our TAPBPR variants to stabilize peptide-free H2-Db. Hence, H2-Db (10 µM) loaded with a photo-cleavable peptide was incubated with TAPBPR (3 µM) under UV exposure. Subsequent SEC analysis revealed that both TAPBPRTsn-SL and TAPBPRΔSL are, in principle, competent to form complexes with MHC I (Figure 2A). However, in comparison to TAPBPRwt (Figure 2A,B), the amount of H2-Db complex detected for TAPBPRTsn-SL and TAPBPRΔSL during SEC was reduced by around 40% and 90%, respectively (Figure 2C). After reanalysis of the MHC I chaperone complexes by SEC, the mutant complexes were mostly dissociated, indicating kinetic instability (Figure 2—figure supplement 1A). In contrast, isolation and reinjection of the wt complex showed that it remained stable for the duration of the experiment (Figure 2—figure supplement 1A,B). Yet, in the presence of a high-affinity peptide, even the TAPBPRwt-MHC I complex dissociated, in accordance with the role of TAPBPR as a chaperone that stabilizes the MHC I as long as no optimal peptide is present (Figure 2—figure supplement 1B). Taken together, these findings demonstrate that the scoop loop is crucial to an extended lifetime of the chaperone-client complex, enabling the escorting of empty MHC I by TAPBPR in a peptide-deficient environment.
 
-## Scoop-loop variants retain their function in catalyzing peptide dissociation from MHC I
+![Figure 2.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig2-v2.jpg)
+
+**Figure 2.:** (A) H2-Db (10 µM) loaded with a photo-cleavable peptide (RGPGRAFJ*TI, J* denotes photocleavable amino acid) was irradiated with UV light in the presence of TAPBPRwt (3 µM, red), TAPBPRTsn-SL (blue), or TAPBPRΔSL (yellow) and subsequently analyzed by SEC. The different elution volumes of the first main peak, marked by dashed lines, already hint at different complex stabilities. (B) Deconvolution of size-exclusion chromatogram from TAPBPRwt complex formation (experiment independent of the sample shown in (A)). The experimental chromatogram (red) was deconvoluted using three Gaussian functions (gray) that can be ascribed to the TAPBPR-H2-Db complex (1.06 mL), free TAPBPR (1.12 mL), and free H2-Db (1.20 mL). The sum of the three Gaussians is shown as dotted curve. The residual plot depicted beneath the main panel shows the difference between the experimental data and the sum. (C) Stability of complexes formed by TAPBPRwt, TAPBPRTsn-SL, and TAPBPRΔSL, respectively, as judged by the area of the complex peak obtained by deconvolution. Data represent mean ± SD (n = 2).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Re-analysis by SEC (Superdex 200) of SEC-purified peptide-free TAPBPRwt-H2-Db (red trace), TAPBPRTsn-SL-H2-Db (blue trace), and TAPBPRΔSL-H2-Db (yellow trace) complex. Please note that dissociated peptide-deficient H2-Db is unstable and gets lost during the course of the experiment. (B) SEC-purified peptide-free TAPBPRwt-H2-Db complex was re-analyzed by SEC (Superdex 75) without (solid red trace) and with prior incubation with a 100-fold molar excess of high-affinity peptide (ASNENMETM) (dashed red trace). Please note that the extinction coefficient at 280 nm of the MHC I including β2m is 2.6-fold higher than the extinction coefficient of TAPBPR.
+
+### Scoop-loop variants retain their function in catalyzing peptide dissociation from MHC I
 
 After investigating the chaperone activity of the TAPBPR scoop-loop mutants, we tested their ability to displace MHC I-bound peptide. To this end, we employed an in-vitro peptide exchange assay similar to the one previously described for measuring the activity of Tsn (Fleischmann et al., 2015; Chen and Bouvier, 2007). Dissociation of medium-affinity fluorescent peptide from refolded and purified p*MHC I (p* denotes fluorescently-labeled peptide) was monitored by fluorescence polarization after addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide in the absence or presence of TAPBPR (Figure 3A). The large molar excess of unlabeled competitor peptide ensures that once a fluorescent peptide dissociates, it does not rebind, but is replaced by an unlabeled competitor-peptide molecule. The observed rate constant is thus solely determined by the dissociation rate constant of the fluorescent peptide. The condition of this assay mimics the environment of the PLC, where optimal, high-affinity peptides abound. For the mouse MHC I allomorph H2-Db, TAPBPRwt and the scoop-loop variants accelerated the uncatalyzed peptide release (2.53 ± 0.37 × 10−3 s−1) to a similar extent. The TAPBPRΔSL mutant lacking the entire scoop loop exhibited slightly reduced activity (7.68 ± 1.17 × 10−3 s−1) compared to the wt protein (10.41 ± 0.54 × 10−3 s−1), whereas TAPBPRTsn-SL was slightly more active (12.64 ± 1.03 × 10−3 s−1) (Figure 3B,C). When we performed the experiment at a much lower TAPBPR concentration (75 nM), the TAPBPRs retained their activity, and the gradual activity differences between the variants remained (Figure 3—figure supplement 1). This suggests that TAPBPRwt and the scoop-loop mutants have similar affinities for H2-Db. TAPBPRwt was even able to catalyze displacement of a high-affinity peptide from H2-Db, although the catalytic effect was considerably smaller (1.8-fold acceleration) than for H2-Db loaded with the medium-affinity peptide (4.1-fold acceleration) (Figure 3—figure supplement 2A,B). In a second set of experiments, we analyzed peptide dissociation from the human MHC I allomorph HLA-A*02:01. Similar to the experiments with H2-Db, in a peptide-rich environment (1000-fold molar excess of peptide), the highest catalytic activity towards HLA-A*02:01 was observed for TAPBPRTsn-SL, followed by TAPBPRwt and TAPBPRΔSL; yet, the differences in activity between the three TAPBPRs were more pronounced, and the acceleration of the uncatalyzed peptide dissociation from HLA-A*02:01 (1.90 ± 0.04 × 10−3 s−1) by TAPBPRTsn-SL (26.31 ± 2.59 × 10−3 s−1) and TAPBPRwt (15.79 ± 0.71 × 10−3 s−1) was significantly higher than for H2-Db, while the activity of TAPBPRΔSL (8.52 ± 1.18 × 10−3 s−1) remained almost the same (Figure 3D,E).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of peptide displacement assay. (B) Peptide dissociation kinetics from H2-Db (300 nM) loaded with fluorescently-labeled peptide (TQSC*NTQSI) was monitored in real time by fluorescence polarization. The arrow indicates the addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (ASNENMETM) without TAPBPR (black trace) or in combination with 1 µM TAPBPR (red, blue, and yellow traces). (C) Average dissociation rate constants of uncatalyzed and catalyzed peptide dissociation from H2-Db, using the same conditions as in (B). Data represent mean ± SD (n = 2–6). (D) Representative fluorescence polarization traces of uncatalyzed and catalyzed peptide (FLPSDC*FPSF) dissociation from HLA-A*02:01 (300 nM). The arrow indicates the addition of a 1000-fold molar excess of unlabeled competitor peptide (FLPSDEEPYV, 300 µM) with and without TAPBPR (1 µM). (E) Average dissociation rate constants of uncatalyzed and catalyzed peptide dissociation from HLA-A*02:01, using the same experimental conditions as in (D). Data represent mean ± SD (n = 3). (F) Peptide dissociation from H2-Db (300 nM) after addition (arrow) of unlabeled competitor peptide (300 µM) without TAPBPR or in combination with the interface mutants TN6-TAPBPR and TN3-Ala-TAPBPR (1 µM each), respectively. A TAPBPRwt-catalyzed peptide release reaction is shown as reference. The average dissociation rate constants in the presence of TN6 (koff = 2.53 ± 0.30×10−3 s−1) and TN3-Ala (koff = 4.23 ± 0.45×10−3 s−1) are shown in panel (C). Abbreviations: β2m: β2-microglobulin; MHC I hc: MHC I heavy chain; pMHC I: peptide-MHC I; mP: milli-polarization units; wt: wildtype; Tsn: tapasin; SL: scoop loop.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Peptide dissociation kinetics from H2-Db (300 nM) loaded with fluorescently-labeled peptide (TQSC*NTQSI) was monitored in real time by fluorescence polarization. The arrow indicates the addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (ASNENMETM) without TAPBPR (black fit, uncatalyzed reaction of Figure 3B) or in combination with 75 nM TAPBPR [red, blue, and yellow traces; koff (TAPBPRwt) = 7.05 × 10−3 s−1, koff (TAPBPRTsn-SL) = 10.12 × 10−3 s−1, koff (TAPBPRΔSL)=5.57 × 10−3 s−1].
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Peptide dissociation kinetics (representative traces) from H2-Db (300 nM) loaded with a fluorescently-labeled high-affinity peptide (ASNC*NMETM) was monitored in real time by fluorescence polarization. The arrow indicates the addition of a 1000-fold molar excess of unlabeled high-affinity peptide (ASNENMETM, 300 µM) without TAPBPRwt (black trace) or in combination with TAPBPRwt (1 µM, red trace). (B) Average rate constants of uncatalyzed (0.20 ± 0.06 × 10−3 s−1) and catalyzed dissociation (0.35 ± 0.07 × 10−3 s−1) of high-affinity peptide from H2-Db, using the same conditions as in (A). Data represent mean ± SD (uncatalyzed: n = 4; catalyzed: n = 5). The p value was determined using an unpaired t test. (C) Representative trace (n = 3) of fluorescent high-affinity peptide displacement from H2-Db (300 nM), monitored by fluorescence polarization after addition of TAPBPRwt (1 µM, first arrow) and after subsequent addition of a 1000-fold molar excess of unlabeled high-affinity peptide (300 µM, second arrow). Abbreviation: mP: milli-polarization units.
+
 The validity of our peptide exchange assay was confirmed by two interface mutants of TAPBPRwt, TN3-Ala and TN6. The TN3 (E72K) and TN6 (E185K, R187E, Q189S, Q261S) mutants were initially described for Tsn to significantly reduce or abolish MHC I binding (Dong et al., 2009). The impact of the TN6 mutations on MHC I interaction was later confirmed for TAPBPR (Morozov et al., 2016). According to the TAPBPR-MHC I crystal structures (Jiang et al., 2017; Thomas and Tampé, 2017a), the residue in TAPBPR (E105) corresponding to the mutated residue in Tsn-TN3 forms a hydrogen bond with the swung-out Y84 of the MHC heavy chain, which is involved in coordinating the C-terminus of the peptide in liganded MHC. We reasoned that a mutation to Ala instead of Lys might increase the mutational effect and therefore generated the TN3-Ala mutant. Two of the mutated residues in TN6 (R210 and Q212) are part of the jack hairpin of TAPBPR and form several interactions with MHC I heavy-chain residues, while Q275 lies in the interface with the α2–1 helix and the β8 sheet in the floor of the MHC I binding groove. Consequently, TN3-Ala and TN6 displayed drastically reduced activity towards H2-Db in our peptide-exchange experiment, with peptide dissociation rate constants close to the value of the uncatalyzed reaction (Figure 3C,F). In summary, the results of our exchange assays demonstrate that under peptide-rich condition, the tested TAPBPR variants differ gradually in their displacement activity in an allomorph-dependent manner. But even the TAPBPRΔSL mutant lacking the scoop loop is still able to substantially accelerate peptide dissociation from MHC I.
 
-## The scoop loop acts as an internal peptide competitor
+### The scoop loop acts as an internal peptide competitor
 
 In the TAPBPR-MHC I crystal structure, the scoop loop binds in the F pocket region of the MHC binding groove and appears to act as a surrogate for the peptide C terminus (Thomas and Tampé, 2017a). This notion is corroborated by our SEC analyses, which show that the scoop loop stabilizes peptide-free MHC I. We therefore wondered if the scoop loop impedes rebinding of displaced peptide and functions ‘in cis’ as a tethered, internal peptide competitor in the F pocket with extremely high effective concentration. To test this hypothesis, we modified the peptide exchange assay for H2-Db and HLA-A*02:01 by adding in a first step only TAPBPR without competitor peptide, which allowed us to monitor the change in free and bound fluorescent peptide under the influence of peptide rebinding in the presence of TAPBPR (Figure 4A). This condition mimics the physiological environment TAPBPR is operating in, where optimal replacement peptides are scarce. Strikingly, after addition of the different TAPBPRs to H2-Db loaded with fluorescent peptide, the polarization changes, which correspond to the changes in the ratio of free to bound peptide, diverged dramatically (Figure 4B). Peptide dissociation was most pronounced for TAPBPRwt with the native scoop loop, reaching ~ 60% peptide release, whereas only ~ 12% of the peptide population was released from H2-Db by TAPBPRTsn-SL, and almost no decrease in polarization was caused by TAPBPRΔSL. Similar to our original peptide exchange assay (Figure 3), differences between the two MHC I allomorphs were observed: In comparison to H2-Db, TAPBPRTsn-SL-induced peptide dissociation from HLA-A*02:01 was significantly stronger, approaching the level of peptide release induced by TAPBPRwt (Figure 4—figure supplement 1A). Peptide release was also peptide-dependent, as H2-Db loaded with a high-affinity peptide led to a significantly smaller decline in bound peptide (Figure 3—figure supplement 2C). After addition of competitor peptide (2nd step), the observed dissociation rate constants were in the same range as the values determined for the one-step experiment. Moreover, the level of released peptide after TAPBPR addition was titratable and reached saturation at 3 µM TAPBPR (Figure 4C–E, Figure 4—figure supplement 1B). Under the given conditions, TAPBPRwt was able to dissociate 70% (H2-Db) and 80% (HLA-A*02:01) of total MHC I-associated peptide, respectively (Figure 4C, Figure 4—figure supplement 1B). These results suggest that the scoop loop interferes with re-binding of displaced peptide. It can only be completely dislodged from the MHC I binding pocket by a high-affinity peptide. The scoop loop thus acts as a crucial selectivity filter during peptide editing on MHC I.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of two-step peptide exchange assay. (B) Peptide displacement from H2-Db (300 nM) loaded with fluorescently-labeled peptide (TQSC*NTQSI) was monitored by fluorescence polarization after addition of TAPBPR (1 µM, first arrow) and after subsequent addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (ASNENMETM, 300 µM, second arrow). (C) Titration of peptide-loaded H2-Db (300 nM) with varying concentrations of TAPBPRwt (first arrow) and final addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (300 µM, second arrow). (D) Peptide displacement from H2-Db (300 nM) loaded with fluorescently-labeled peptide monitored by fluorescence polarization after addition of 3 µM and 10 µM TAPBPRTsn-SL, respectively (first arrow), and after subsequent addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (300 µM, second arrow). (E) Peptide displacement from H2-Db (300 nM) loaded with fluorescently-labeled peptide monitored by fluorescence polarization after addition of TAPBPRΔSL (3 µM, first arrow) and after subsequent addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (300 µM, second arrow). Data shown in (B)-(E) are representative of three independent measurements.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55326/elife-55326-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Peptide displacement from HLA-A*02:01 (300 nM) loaded with fluorescently-labeled peptide (FLPSDC*FPSF) was monitored by fluorescence polarization after addition of TAPBPR (1 µM, first arrow) and after subsequent addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (FLPSDEEPYV, 300 µM, second arrow). (B) Titration of peptide-loaded HLA-A*02:01 (300 nM) with varying concentrations of TAPBPRwt (first arrow) and final addition of a 1000-fold molar excess of unlabeled high-affinity competitor peptide (300 µM, second arrow). The data shown in (A) and (B) are representative of three independent measurements.
 
 ## Discussion
 
@@ -59,38 +87,300 @@ Physiologically, these observations might be explained by the fact that Tsn func
 
 ## Materials and methods
 
-## DNA constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (human)</td>
+      <td>TAPBPRwt</td>
+      <td>PMID:29025996</td>
+      <td></td>
+      <td>lumenal domain</td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>TAPBPRΔSL</td>
+      <td>This study (Figure 1C, Materials and methods section)</td>
+      <td></td>
+      <td>lumenal domain</td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>TAPBPRTsn-SL</td>
+      <td>This study (Figure 1C, Materials and methods section)</td>
+      <td></td>
+      <td>lumenal domain</td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>TAPBPRTN3-Ala</td>
+      <td>PMID:19119025</td>
+      <td></td>
+      <td>lumenal domain</td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>TAPBPRTN6</td>
+      <td>PMID:19119025</td>
+      <td></td>
+      <td>lumenal domain</td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>HLA-A*02:01</td>
+      <td>This study (Materials and methods section)</td>
+      <td></td>
+      <td>ectodomain</td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>β2-microglobulin</td>
+      <td>PMID:29025996</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (mouse)</td>
+      <td>H2-Db</td>
+      <td>PMID:29025996</td>
+      <td></td>
+      <td>ectodomain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH10Bac</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>10361012</td>
+      <td>chemically competent</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CMC0014</td>
+      <td>chemically competent</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-22</td>
+      <td>Novagen/ Merck Millipore</td>
+      <td>69744</td>
+      <td>vector for protein expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28</td>
+      <td>Novagen/ Merck Millipore</td>
+      <td>69864</td>
+      <td>vector for protein expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFastBacI-gp67</td>
+      <td>PMID:29025996</td>
+      <td></td>
+      <td>transfer vector for Bac-to-Bac system</td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11496015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf21</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11497013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RGPGRAFJ*TI (photo-P18-I10)</td>
+      <td>PMID:26869717</td>
+      <td></td>
+      <td>J* denotes photo-cleavable amino acid</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ASNENMETM</td>
+      <td>IEDB: epitope ID 4602</td>
+      <td></td>
+      <td>competitor peptide for H2-Db</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FLPSDEEPYV</td>
+      <td>This study (Materials and methods section)</td>
+      <td></td>
+      <td>competitor peptide for HLA-A*02:01</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TQSC*NTQSI</td>
+      <td>This study (Materials and methods section)</td>
+      <td></td>
+      <td>C* denotes TAMRA-labeled Cys</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FLPSDC*FPSF</td>
+      <td>This study (Materials and methods section)</td>
+      <td></td>
+      <td>C* denotes TAMRA-labeled Cys</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ASNC*NMETM</td>
+      <td>This study (Materials and methods section)</td>
+      <td></td>
+      <td>C* denotes TAMRA-labeled Cys</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TAMRA-5 maleimide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>T6027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TAMRA-6 C2 maleimide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>48180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fmoc-3-amino-3-(2-nitro)phenyl-propionic acid</td>
+      <td>Peptech</td>
+      <td>CAS #: 517905-93-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 6</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fityk 1.3.1</td>
+      <td>DOI: 10.1107/S0021889810030499</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superdex 200 Increase 10/300</td>
+      <td>GE Healthcare</td>
+      <td>28990944</td>
+      <td>SEC column</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superdex 200 Increase 3.2/300</td>
+      <td>GE Healthcare</td>
+      <td>28990946</td>
+      <td>SEC column</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superdex 75 Increase 3.2/300</td>
+      <td>GE Healthcare</td>
+      <td>29148723</td>
+      <td>SEC column</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HiLoad Superdex 75 16/60</td>
+      <td>GE Healthcare</td>
+      <td>28989333</td>
+      <td>SEC column</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluorolog-3</td>
+      <td>Horiba Jobin Yvon</td>
+      <td></td>
+      <td>spectro-fluorometer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Äkta Purifier</td>
+      <td>GE Healthcare</td>
+      <td></td>
+      <td>protein purification</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Agilent 1200</td>
+      <td>Agilent</td>
+      <td></td>
+      <td>analytical SEC</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Liberty Blue</td>
+      <td>CEM Corporation</td>
+      <td></td>
+      <td>peptide synthesizer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>X-tremeGENE HP</td>
+      <td>Sigma-Aldrich</td>
+      <td>6366236001</td>
+      <td>transfection reagent</td>
+    </tr>
+  </tbody>
+</table>
+
+### DNA constructs
 
 The DNA constructs of human β2m, the ectodomain of mouse H2-Db, and TAPBPRwt were identical to the ones previously described (Thomas and Tampé, 2017a), except for position 97 in TAPBPRwt, which contained the native cysteine. The TAPBPR scoop loop mutants TAPBPRTsn-SL and TAPBPRΔSL were generated by overlap extension PCR, the TN3-Ala and TN6 mutants were generated by site-directed mutagenesis. The TN3-Ala and TN6 mutants harbored the same mutations that were described for the corresponding mutants of Tsn (Dong et al., 2009), except that in TN3-Ala E105 was mutated to alanine. TAPBPRTsn-SL, TAPBPRΔSL, TN3-Ala, and TN6 all contained the C97A mutation. Human HLA-A*02:01 (amino acids 1–278) was cloned into pET-28 (Novagen, Merck Millipore, Darmstadt, Germany) and ended in a C-terminal His6-tag preceded by a linker (sequence: HE). The amino acid numbering of TAPBPR is based on the mature protein as defined by N-terminal sequencing (Zhang and Henzel, 2004).
 
-## Protein expression
+### Protein expression
 
 Human β2m and the ectodomains of mouse H2-Db and human HLA-A*02:01 were expressed as inclusion bodies in Escherichia coli BL21(DE3) as described before (Rodenko et al., 2006; Thomas and Tampé, 2017a). TAPBPR proteins were expressed in Spodoptera frugiperda (Sf21 or Sf9) insect cells according to standard protocols for the Bac-to-Bac system (Thermo Fisher Scientific, Waltham, MA). A high-titer recombinant baculovirus stock was used to infect the insect cells at a density of 1.5–2.0 × 106 cells/mL, which were cultivated in Sf-900 III SFM medium (Thermo Fisher Scientific) at 28°C. The cell culture medium containing secreted TAPBPR was harvested 72 hr after infection.
 
-## Refolding and purification of β2m
+### Refolding and purification of β2m
 
 β2m was refolded by dialysis essentially as described previously (Rodenko et al., 2006) and purified by SEC on a Superdex 75 column (GE Healthcare, Piscataway, NJ) in HEPES-buffered saline (1xHBS: 10 mM HEPES pH 7.2, 150 mM NaCl). Purified protein was concentrated by ultrafiltration (Amicon Ultra 3 kDa MWCO, Merck Millipore).
 
-## Peptide synthesis and labeling
+### Peptide synthesis and labeling
 
 The following peptides were used: the photo-cleavable peptide photo-P18-I10 (RGPGRAFJ*TI) (H2-Db) [J*=3-amino-3-(2-nitro)phenyl-propionic acid], the non-fluorescent competitor peptides ASNENMETM (H2-Db) and FLPSDEEPYV (HLA-A*02:01), as well as the fluorescently labeled peptides TQSC*NTQSI (H2-Db), FLPSDC*FPSF (HLA-A*02:01), ASNC*NMETM (H2-Db) (C* denotes TAMRA-labeled cysteine). Non-natural peptide epitopes were designed based on their theoretical affinities according to the NetMHCpan server (Jurtz et al., 2017). While TQSC*NTQSI and FLPSDC*FPSF were constructed to have medium affinity (500–600 nM), ASNC*NMETM and the competitor peptides were designed to be high-affinity (8–10 nM) ligands. Peptides were synthesized using standard Fmoc solid-phase chemistry and purified by C18 reversed-phase HPLC. The identity of peptides was verified either by matrix-assisted laser desorption/ionization mass spectrometry (MALDI-MS) or by electrospray ionization-mass spectrometry (ESI-MS). In order to site-specifically label peptides with fluorophores, 10.5 µM peptide were incubated with 26 µM TAMRA-5-maleimide (single isomer, Thermo Fisher Scientific) or TAMRA-6 C2 maleimide (Lumiprobe, Hannover, Germany) (used for labeling of FLPSDC*FPSF) overnight at 4°C. Labeled peptides were purified by C18 reversed-phase HPLC, and their identity was confirmed by ESI-MS.
 
-## Refolding and purification of MHC I allomorphs
+### Refolding and purification of MHC I allomorphs
 
 H2-Db and HLA-A*02:01 were refolded from inclusion bodies by rapid dilution in the presence of purified β2m and peptide according to established protocols (Rodenko et al., 2006). Refolded MHC I complexes were purified by SEC (Superdex 200 Increase 10/300, GE Healthcare) in 1xHBS and concentrated by ultrafiltration (Amicon Ultra, Merck Millipore).
 
-## Purification of TAPBPR proteins
+### Purification of TAPBPR proteins
 
 TAPBPR proteins were purified from the insect cell culture medium by IMAC according to a protocol published earlier (Thomas and Tampé, 2017a), polished by SEC (Superdex 200 Increase 10/300, GE Healthcare) in 1xHBS, and concentrated by ultrafiltration (Amicon Ultra, Merck Millipore).
 
-## Peptide exchange
+### Peptide exchange
 
 Dissociation of fluorescently labeled peptide from MHC I was monitored at 23°C in 1xHBS by fluorescence polarization (Fluorolog-3 spectrofluorometer, Horiba Jobin Yvon, Bensheim, Germany) with λex/em of 530/560 nm. One-step and two-step dissociation assays were carried out with 300 nM MHC I loaded with TAMRA-labeled peptide, 1 µM TAPBPR, and 300 µM competitor peptide. Dissociation rate constants were determined in GraphPad Prism using a one-phase exponential decay regression.
 
-## MHC I-chaperone complex formation
+### MHC I-chaperone complex formation
 
 In the presence of purified TAPBPR (3 µM), photo-P18-I10-loaded H2-Db (10 µM) was irradiated with UV light (36 nm, 185 mW/cm2, 120 s) on ice and afterwards incubated for 10 min at room temperature. Samples were subsequently centrifuged at 10,000xg for 10 min and analyzed by analytical SEC on a Superdex 75 (3.2/300) column (GE Healthcare). SEC runs were conducted in 1xHBS and monitored by absorbance at 280 nm. Chromatograms were deconvoluted into three Gaussian functions using the program Fityk 1.3.1 (Wojdyr, 2010). The amount of complex was assessed by the area of the complex peak.
 
-## TAPBPR-MHC I complex stability
+### TAPBPR-MHC I complex stability
 
 Purified peptide-deficient TAPBPRwt-H2-Db, TAPBPRTsn-SL-H2-Db, and TAPBPRΔSL-H2-Db complexes were analyzed via analytical SEC either on a Superdex 75 (3.2/300) or a Superdex 200 (3.2/300) column (GE Healthcare) at a flow rate of 0.075 mL/min. A separate sample of purified TAPBPRwt-H2-Db complex was incubated with a 100-fold molar excess of high-affinity peptide prior to re-analysis by SEC.

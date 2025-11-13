@@ -33,6 +33,211 @@ The theory of salutogenesis has been applied in different fields of health and m
 
 In total, we included 46,436 eligible women (65.5% of all Karma participants) in the present study. The median age at baseline was 54 years (range: 40–74). More than half of the women were post-menopausal, and had college education or above (Table 1). Women with strong SoC were slightly older, more educated, less likely to smoke, and more physically active.
 
+**Table 1.**
+ Characteristics of study participants by sense of coherence at baseline.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristics</th>
+      <th>Weak SoC *</th>
+      <th>Moderate SoC</th>
+      <th>Strong SoC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No.</td>
+      <td>16,066</td>
+      <td>16,099</td>
+      <td>14,271</td>
+    </tr>
+    <tr>
+      <td>Age at baseline, mean [SD]</td>
+      <td>54.0 [9.7]</td>
+      <td>55.1 [9.8]</td>
+      <td>55.6 [9.9]</td>
+    </tr>
+    <tr>
+      <td>European ancestry (%)</td>
+      <td>15,341 (95.5)</td>
+      <td>15,726 (97.7)</td>
+      <td>13,970 (97.9)</td>
+    </tr>
+    <tr>
+      <td>Education, years (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>≤10</td>
+      <td>2412 (15.0)</td>
+      <td>2143 (13.3)</td>
+      <td>1885 (13.2)</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>5500 (34.2)</td>
+      <td>4776 (29.7)</td>
+      <td>3744 (26.2)</td>
+    </tr>
+    <tr>
+      <td>&gt;12</td>
+      <td>7767 (48.3)</td>
+      <td>8829 (54.8)</td>
+      <td>8330 (58.4)</td>
+    </tr>
+    <tr>
+      <td>Body mass index (Kg/m2), mean [SD]</td>
+      <td>25.6 [4.5]</td>
+      <td>25.1 [4.1]</td>
+      <td>25.0 [4.0]</td>
+    </tr>
+    <tr>
+      <td>Smoking (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Never</td>
+      <td>7028 (43.7)</td>
+      <td>7663 (47.6)</td>
+      <td>7285 (51.0)</td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>6569 (40.9)</td>
+      <td>6481 (40.3)</td>
+      <td>5535 (38.8)</td>
+    </tr>
+    <tr>
+      <td>Current</td>
+      <td>2430 (15.1)</td>
+      <td>1927 (12.0)</td>
+      <td>1430 (10.0)</td>
+    </tr>
+    <tr>
+      <td>Alcohol consumption (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-drinker</td>
+      <td>3628 (22.6)</td>
+      <td>2700 (16.8)</td>
+      <td>2373 (16.6)</td>
+    </tr>
+    <tr>
+      <td>&lt;10 g/d</td>
+      <td>9121 (56.8)</td>
+      <td>10,013 (62.2)</td>
+      <td>9136 (64.0)</td>
+    </tr>
+    <tr>
+      <td>≥10 g/d</td>
+      <td>3168 (19.7)</td>
+      <td>3259 (20.2)</td>
+      <td>2681 (18.8)</td>
+    </tr>
+    <tr>
+      <td>Physical activity (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Low</td>
+      <td>5926 (36.9)</td>
+      <td>5371 (33.4)</td>
+      <td>4486 (31.4)</td>
+    </tr>
+    <tr>
+      <td>Medium</td>
+      <td>5077 (31.6)</td>
+      <td>5489 (34.1)</td>
+      <td>4947 (34.7)</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>4873 (30.3)</td>
+      <td>5146 (32.0)</td>
+      <td>4769 (33.4)</td>
+    </tr>
+    <tr>
+      <td>Age at menarche, mean [SD]</td>
+      <td>13.1 [1.5]</td>
+      <td>13.1 [1.5]</td>
+      <td>13.1 [1.4]</td>
+    </tr>
+    <tr>
+      <td>Age at first birth, mean [SD]</td>
+      <td>27.0 [5.5]</td>
+      <td>27.2 [5.2]</td>
+      <td>27.2 [5.1]</td>
+    </tr>
+    <tr>
+      <td>No. of pregnancies, median (range)</td>
+      <td>2 (0–15)</td>
+      <td>2 (0–13)</td>
+      <td>2 (0–15)</td>
+    </tr>
+    <tr>
+      <td>No. of births, median (range)</td>
+      <td>2 (0–11)</td>
+      <td>2 (0–11)</td>
+      <td>2 (0–11)</td>
+    </tr>
+    <tr>
+      <td>Ever use of oral contraceptives (%)</td>
+      <td>13,429 (83.6)</td>
+      <td>13,549 (84.2)</td>
+      <td>12,018 (84.2)</td>
+    </tr>
+    <tr>
+      <td>Ever use of HRT (%)</td>
+      <td>4407 (27.4)</td>
+      <td>4362 (27.1)</td>
+      <td>3752 (26.3)</td>
+    </tr>
+    <tr>
+      <td>Post-menopausal (%)</td>
+      <td>8590 (53.5)</td>
+      <td>9294 (57.7)</td>
+      <td>8476 (59.4)</td>
+    </tr>
+    <tr>
+      <td>BC in first degree relatives (%)</td>
+      <td>2002 (12.5)</td>
+      <td>2006 (12.5)</td>
+      <td>1821 (12.8)</td>
+    </tr>
+    <tr>
+      <td>Benign breast disorders (%)</td>
+      <td>3653 (22.7)</td>
+      <td>3659 (22.7)</td>
+      <td>3143 (22.0)</td>
+    </tr>
+    <tr>
+      <td>Other malignancies (%)</td>
+      <td>856 (5.3)</td>
+      <td>882 (5.5)</td>
+      <td>799 (5.6)</td>
+    </tr>
+    <tr>
+      <td>Breast density†, mean [SD]</td>
+      <td>22.0 [19.5]</td>
+      <td>22.4 [19.7]</td>
+      <td>22.1 [19.3]</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: BC, breast cancer; HRT, hormone receptor therapy; SD, standard deviation; SoC, sense of coherence.*: SoC was categorized according to tertiles of the total SoC score measured at baseline for all women.†: Breast density (%) was calculated using absolute dense area (cm2) divided by total breast area (cm2) using STRATUS software._
+
 In the linear regression, we found SoC to be positively associated with age (coefficient = 0.13, 95% CI: 0.12 to 0.14), number of births (coefficient = 0.49, 95% CI: 0.39 to 0.59), and a higher physical activity (coefficient = 1.24, 95% CI: 0.98 to 1.5 for high vs. low physical activities) (Figure 1). Higher BMI (coefficient = −0.17, 95% CI: −0.19 to −0.14), non-European ancestry (coefficient = −5.15, 95% CI: −5.8 to −4.5), less education (coefficient = −2.13, 95% CI: −2.46 to −1.8 for ≤10 years vs. >12 years of education), previous or current smoking (coefficient = −0.99, 95% CI: −1.22 to −0.77 for previous smoker vs. non-smoker; coefficient = −2.45, 95% CI: −2.78 to −2.12 for current smoker vs. non-smoker), and never or ≥10 g/d drinking (coefficient = −2.23, 95% CI: −2.51 to −1.95 for non-drinker vs. <10 g/d of alcohol consumption; coefficient = −0.63, 95% CI: −0.9 to −0.36 for ≥10 g/d vs. <10 g/d of alcohol consumption) were all associated with a lower SoC score.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/61469/elife-61469-fig1-v2.jpg)
@@ -43,7 +248,164 @@ We identified 771 incident cases of breast cancer during follow-up (median time 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/61469/elife-61469-fig2-v2.jpg)
 
-**Figure 2.:** Abbreviations: SoC, sense of coherence. Time-varying hazard ratios of incident breast cancer for moderate and strong SoC compared to weak SoC were derived from a flexible parametric model, adjusted for sociodemographic factor (age, ancestry, education), lifestyle factors (body mass index, smoking, alcohol consumption, physical activity), and known risk factors for breast cancer including reproductive and hormonal factors (age at menarche, age at first birth, No. of pregnancies, No. of births, use of contraceptives, use of hormone replacement therapy, menopausal status), as well as family history of breast cancer, benign breast disorders, other malignancies, and breast density.Figure 2—source data 1.Figure 2.
+**Figure 2.:** Abbreviations: SoC, sense of coherence. Time-varying hazard ratios of incident breast cancer for moderate and strong SoC compared to weak SoC were derived from a flexible parametric model, adjusted for sociodemographic factor (age, ancestry, education), lifestyle factors (body mass index, smoking, alcohol consumption, physical activity), and known risk factors for breast cancer including reproductive and hormonal factors (age at menarche, age at first birth, No. of pregnancies, No. of births, use of contraceptives, use of hormone replacement therapy, menopausal status), as well as family history of breast cancer, benign breast disorders, other malignancies, and breast density.
+
+**Table 2.**
+ Hazard ratios and 95% confidence intervals of breast cancer in relation to sense of coherence measured at baseline.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SoC</th>
+      <th>1000 PYs</th>
+      <th>Event (IR)</th>
+      <th>Model 1*</th>
+      <th>Model 2†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>In three categories‡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Weak SoC</td>
+      <td>83</td>
+      <td>251 (3.0)</td>
+      <td>1.00</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Moderate SoC</td>
+      <td>83</td>
+      <td>264 (3.2)</td>
+      <td>1.05 (0.88–1.25)</td>
+      <td>1.00 (0.84–1.19)</td>
+    </tr>
+    <tr>
+      <td>Strong SoC</td>
+      <td>74</td>
+      <td>256 (3.5)</td>
+      <td>1.15 (0.97–1.37)</td>
+      <td>1.08 (0.90–1.29)</td>
+    </tr>
+    <tr>
+      <td>Per SD increase§</td>
+      <td>240</td>
+      <td>771 (3.2)</td>
+      <td>1.11 (1.03–1.20)</td>
+      <td>1.08 (1.00–1.17)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: PYs, person-years; IR, incidence rate per 1000 person-years; SoC, sense of coherence; SD, standard deviation.*: Estimates were not adjusted for any covariate. †: Estimated were adjusted for sociodemographic factors (age, ancestry, education) and lifestyle factors (body mass index, smoking, alcohol consumption, physical activity), and known risk factors for breast cancer including reproductive and hormonal factors (age at menarche, age at first birth, No. of pregnancies, No. of births, use of contraceptives, use of hormone replacement therapy, menopausal status), as well as family history of breast cancer, benign breast disorders, other malignancies, and breast density.‡: Total SoC score at baseline was calculated and categorized as weak, moderate, and strong according to tertile distribution of all women. §: SoC was treated as a continuous variable after standardization using z-score method._
+
+**Table 3.**
+ Hazard ratios and 95% confidence intervals of breast cancer subtypes in relation to sense of coherence measured at baseline.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Subtypes*</th>
+      <th colspan="3">Weak SoC†</th>
+      <th colspan="3">Moderate SoC</th>
+      <th colspan="3">Strong SoC</th>
+    </tr>
+    <tr>
+      <th>1000 PYs</th>
+      <th>Event (IR)</th>
+      <th>HR</th>
+      <th>1000 PYs</th>
+      <th>Event (IR)</th>
+      <th>HR (95% CI)‡</th>
+      <th>1000 PYs</th>
+      <th>Event (IR)</th>
+      <th>HR (95% CI)‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Luminal A</td>
+      <td>83</td>
+      <td>105 (1.3)</td>
+      <td>Ref.</td>
+      <td>83</td>
+      <td>99 (1.2)</td>
+      <td>0.91 (0.69–1.20)</td>
+      <td>74</td>
+      <td>100 (1.4)</td>
+      <td>1.05 (0.79–1.39)</td>
+    </tr>
+    <tr>
+      <td>Luminal B1</td>
+      <td>83</td>
+      <td>17 (0.2)</td>
+      <td>Ref.</td>
+      <td>83</td>
+      <td>22 (0.3)</td>
+      <td>1.23 (0.65–2.34)</td>
+      <td>74</td>
+      <td>12 (0.2)</td>
+      <td>0.63 (0.30–1.34)</td>
+    </tr>
+    <tr>
+      <td>Luminal B2</td>
+      <td>83</td>
+      <td>12 (0.1)</td>
+      <td>Ref.</td>
+      <td>83</td>
+      <td>14 (0.2)</td>
+      <td>1.28 (0.58–2.80)</td>
+      <td>74</td>
+      <td>15 (0.2)</td>
+      <td>1.47 (0.67–3.23)</td>
+    </tr>
+    <tr>
+      <td>Triple-negative</td>
+      <td>83</td>
+      <td>9 (0.1)</td>
+      <td>Ref.</td>
+      <td>83</td>
+      <td>15 (0.2)</td>
+      <td>1.52 (0.66–3.50)</td>
+      <td>74</td>
+      <td>6 (0.1)</td>
+      <td>0.71 (0.24–2.04)</td>
+    </tr>
+    <tr>
+      <td>HER2-enriched</td>
+      <td>83</td>
+      <td>9 (0.1)</td>
+      <td>Ref.</td>
+      <td>83</td>
+      <td>8 (0.1)</td>
+      <td>0.78 (0.30–2.06)</td>
+      <td>74</td>
+      <td>7 (0.1)</td>
+      <td>0.82 (0.30–2.28)</td>
+    </tr>
+    <tr>
+      <td>Unclassified</td>
+      <td>83</td>
+      <td>99 (1.2)</td>
+      <td>Ref.</td>
+      <td>83</td>
+      <td>106 (1.3)</td>
+      <td>0.99 (0.75–1.31)</td>
+      <td>74</td>
+      <td>116 (1.6)</td>
+      <td>1.23 (0.93–1.62)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: PYs, person-years; IR, incidence rate per 1000 person-years; SoC, sense of coherence.*: Breast cancer subtypes were classified based on estrogen receptor (ER), progesterone receptor (PR) and human epidermal growth factor receptor 2 (HER2). Luminal A: ER+, PR+, HER2-; Luminal B1: ER+, PR-, HER2-; Luminal B2: ER+, HER2+; Triple-negative: ER-, PR-, HER2-; HER2-enriched: ER-, PR-, HER2+; the rest were unclassified, mostly because of undetermined HER2 status.†: A total SoC score at baseline was calculated and categorized according to tertiles in all women: weak, moderate, and strong. ‡: Estimates were adjusted for sociodemographic factor (age, ancestry, education), lifestyle factors (body mass index, smoking, alcohol consumption, physical activity), and known risk factors for breast cancer including reproductive and hormonal factors (age at menarche, age at first birth, No. of pregnancies, No. of births, use of contraceptives, use of hormone replacement therapy, menopausal status), as well as family history of breast cancer, benign breast disorders, other malignancies, and breast density._
 
 ## Discussion
 
@@ -59,18 +421,18 @@ In summary, based on a large cohort of Swedish women, we found little evidence t
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 The Karolinska Mammography Project for Risk Prediction of Breast Cancer (Karma) cohort recruited 70,872 women who attended a mammography screening or clinical mammography between October 2010 and March 2013 at any of the four mammography units (Stockholm South General Hospital, Helsingborg Hospital, Landskrona Hospital, and Skåne University Hospital, Lund) in Sweden (Gabrielson et al., 2017). Participants answered a comprehensive questionnaire, including SoC-13 (Antonovsky, 1993), at the baseline visit (recruitment to Karma). More information about Karma, including details of the questionnaires, is available at karmastudy.org. In this study, we included participants who had no prevalent breast cancer, were at the age of 40 to 74 years, and had completed at least two-thirds of the items included in SoC-13 questionnaire at the baseline visit. The participants were then individually followed up from the date of baseline visit, through cross-linkages to various Swedish national registers, using the unique Swedish personal identity numbers. The personal identity numbers were replaced with study specific identity numbers at the Swedish National Board of Health and Welfare before data were received by the researchers. The follow-up ended at a diagnosis of breast cancer (through INCA and National Cancer Register), emigration out of Sweden (through Total Population Register), death (through Causes of Death Register), or October 6th, 2017, whichever occurred first.
 
-## Sense of coherence (SoC)
+### Sense of coherence (SoC)
 
 SoC was measured at baseline using the SoC-13 questionnaire (Supplementary file 1), which was developed by Antonovsky, 1993 and validated in different studies (Eriksson and Mittelmark, 2016; Holmefur et al., 2015). A total score of SoC was calculated by the sum of included items, with the scores of a few items reversed as needed. As SOC-13 has high internal consistency (Eriksson and Mittelmark, 2016) (Cronbach’s alpha = 0.87 in our study), any missing value of a single item was replaced by the mean value of the other items if at least two-thirds of the items were answered by one single person (Volanen, 2011). We categorized the total score of SoC as ‘weak’, ‘moderate’, or ‘strong’ according to the tertile distribution. We also used the total score as a continuous variable after z-score standardization and estimated effect per standard deviation (SD) increase.
 
-## Other covariables
+### Other covariables
 
 In this study, we used information from the baseline questionnaire, including sociodemographic factors (age, ancestry, education), lifestyle factors (body mass index [BMI], smoking, drinking, physical activity), and other known risk factors for breast cancer including reproductive and hormonal factors, family history of breast cancer, history of benign breast disorders or other malignancies. We also used breast density percent measured at baseline by previously reported STRATUS software (Eriksson et al., 2018). Finally, to study different subtypes of breast cancer, we also obtained information on the tumor markers for women with incident breast cancer identified during follow-up. For example, estrogen receptor (ER), progesterone receptor (PR), and human epidermal growth factor receptor 2 (HER2) were obtained through linkage to INCA.
 
-## Statistical analysis
+### Statistical analysis
 
 We first described the baseline characteristics of women according to different categories of SoC (weak, moderate, or strong). We assessed the correlations between sociodemographic and lifestyle factors and SoC using linear regression models. We then used Cox proportional hazards models to assess the association between SoC and the risk of breast cancer. We first fitted a model not adjusted for any other covariables (Model 1). In a full model (Model 2), we adjusted the analyses for sociodemographic factors (age, ancestry, and education) and lifestyle factors (body mass index, smoking, alcohol consumption, and physical activity), and known risk factors for breast cancer including reproductive and hormonal factors (age at menarche, age at first birth, No. of pregnancies, No. of births, use of contraceptives, use of hormone replacement therapy, menopausal status), as well as family history of breast cancer, benign breast disorders, other malignancies, and breast density. We tested proportional hazard assumptions of the Cox models using Schoenfeld residuals and found no major deviation from the assumptions. To assess the potential temporal pattern of the association, we did a sensitivity analysis by fitting a flexible parametric model allowing for the effect of SoC on breast cancer risk to vary over time since study entry. We further performed a sub-analysis to assess whether the studied association would differ between subtypes of breast cancer using the full model. The statistical analyses were performed using Stata, version 16, StataCorp LP and R (version 4.0.2). We used a two-sided p<0.05 to indicate statistical significance.

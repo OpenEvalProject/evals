@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01aj84f44 Danish Centre for Studies in Research and Research Policy, Aarhus University Aarhus Denmark
-2. https://ror.org/05bpbnx46 Department of Sociology, Copenhagen University Copenhagen Denmark
-3. https://ror.org/00jmfr291 Department of Radiation Oncology, University of Michigan Ann Arbor United States
+1. Danish Centre for Studies in Research and Research Policy, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+2. Department of Sociology, Copenhagen University Copenhagen Denmark ([ROR:05bpbnx46](https://ror.org/05bpbnx46))
+3. Department of Radiation Oncology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
@@ -38,7 +38,7 @@ We report annual, per-author publishing rates based on a full and fractional cou
 
 The following results use a main sample consisting of two scientist cohorts, one with first publication year in 2009 or 2010 ("mid-career", n = 137,767) and one with first publication year in 2016 or 2017 ("early-career", n = 293,440). Unless mentioned otherwise, the combined cohort (n = 431,207) is used. A third, counterfactual cohort (n = 276,793) is used to contrast the early-career sample, as a means of estimating the expected attrition in the early-career stage, when a proportion of scientists leave academia. Each analysis referring to a "treatment", indicated in figures as a dotted line between 2019 and 2020, refers to the changes in working environments in 2020 due to the COVID-19 pandemic.
 
-## Descriptive results
+### Descriptive results
 
 Our analysis suggests that gender disparities in annual publication outputs have widened during COVID-19. A descriptive comparison of changes in publishing rates in 2020 compared to 2019 (Figure 1) indicates a 15% decrease in women’s average full- and fractional-count publication output and a 6%–7% decrease in men’s average full- and fractional-count publication output.
 
@@ -46,17 +46,37 @@ Our analysis suggests that gender disparities in annual publication outputs have
 
 **Figure 1.:** Differences are in percentages of average publication rates in 2019. Results are presented for full and fractionalized publication counts. Men experience a smaller productivity decrease in 2020 compared to 2019 (6.3%) than women (14.9%) using full counts of publications. For fractional counts (each paper counts as a fraction of the number of co-authors), the difference in decrease is greater, with a 7.1% decrease for men and 14.7% decrease for women. Average publication counts are presented with 99% confidence bounds.
 
-## Difference-in-differences estimates
+### Difference-in-differences estimates
 
 Figure 2 displays the dynamic effects of the COVID-19 pandemic and summarizes the main result of the difference-in-differences estimation. As shown in panel A, the gender difference in annual publishing rates remained relatively stable between 2017 and 2019 (implying parallel trends prior to COVID-19), while increasing in 2020. From 2019 to 2020, the average-marginal gender difference increased from –0.260 (corresponding to a 17% lower output for women than for men) to –0.354 (corresponding to a 24% lower output for women than for men) in full-count output. Figure 2—figure supplement 1 presents results from a complementary analysis with fractional-count publication output as outcome and shows a change in the average-marginal gender difference from –0.048 (corresponding to a 22% lower output for women than for men) to 0.059 (corresponding to a 27% lower output for women than for men).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig2-v3.jpg)
+
+**Figure 2.:** Panel A shows the estimated average gender difference in publication rates by year. Each point shows the relative difference between men and women per year, with 99.9% confidence bounds shown as a gray area around the line. From 2019 to 2020, the average-marginal gender difference increased from –0.260 (17% lower output for women) to –0.354 (24% lower output for women). Panel B shows the predicted publishing rates for men and women authors, with solid lines showing the trend per gender, and the dashed, orange line showing the counterfactual trend for women if they had similar 2019–2020 trajectories as men (i.e. the trend for men is projected to the 2019 estimate for women). The difference between the dashed line and the straight line in Panel B specifies the average treatment effect for women. Point estimates are reported with 99.9% confidence bounds, with robust standard errors clustered at the individual-author level. For information on how average marginal and predicted values are calculated, please refer to Materials and Methods: Difference-in-Differences model.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Dynamic effects of the COVID-19 pandemic on women’s and men’s fractional-count output. Panel A shows the estimated average gender difference in fractional-count publication rates by year. Panel B shows the predicted fractional-count publishing rates for male and female authors. Dashed, colored, lines represent the counterfactual trend for women if they had similar 2019–2020 trajectories as men. The difference between the dashed line and the straight line in Panel B specify the average treatment effect for women. Point estimates are reported with 99.9% confidence bounds, with robust standard errors clustered at the individual-author level.
+
 To verify that the change in the gender productivity gap was in fact due to COVID-19 and did not represent a more generic dip in women’s productivity (compared to men’s) during the fifth year of their publication career, we ran a counterfactual analysis for a sample of researchers, who published their first paper in 2011. For this sample, we observed a small but consistent annual increase in the marginal gender difference across years (from 2011–2015). In this case, the gender difference in productivity increased by 1/20 of a full publication (full count: –0.05, 99% CI: –0.0665; –0.0337) between year four (2014) and five (2015), amounting to 53% of the treatment effect observed in Figure 2.
 
-## Career-stage differences
+### Career-stage differences
 
 Research suggests that the working conditions of early-career women scientists have been especially affected by the pandemic (Andersen et al., 2020; Krukowski et al., 2021). We examined this question by conducting sub-group analyses by career-age. As shown in Figure 3 the widening gender gap was salient for early-career scientists with four years of publication experience as well as for mid-career scientists with ten years of publication experience. From 2019 to 2020, the average marginal publication disadvantage for early-career women increased from –0.133 (corresponding to an 11% lower output for women than for men) to –0.20 (corresponding to an 18% lower output for women than for men) in full-count output. In comparison, the average marginal publication disadvantage for mid-career women changed from –0.452 (corresponding to a 21% lower output for women than for men) to –0.592 (corresponding to a 27% lower output for women than for men). This is a relative increase in the gender gap of 61% for early-career scientists and 29% for mid-career scientists. We obtained comparable results in an age-differentiated analysis with fractional-count publications as outcome (Figure 3—figure supplement 1).
 
-## Productivity-dependant differences
+![Figure 3.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig3-v3.jpg)
+
+**Figure 3.:** Panels A and B show the estimated average gender difference in full-count publication rates by year for early-career and mid-career researchers. Panels C and D show men’s and women’s predicted full-count publication rates per year by author status (early-career vs. mid-career researcher). Point estimates are reported with 99.9% confidence bounds and robust standard errors clustered at the individual-author level. For information on how average marginal and predicted values are calculated, please refer to Materials and Methods: Difference-in-Differences model.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** The upper panels show the estimated average gender difference in fractional-count publication rates by year for early-career and senior researchers. The lower panels show men’s and women’s predicted fractional-count publication rates per year by author status (early-career vs. senior researcher). Point estimates are reported with 99.9% confidence bounds, with robust standard errors clustered at the individual-author level.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Gender differences in publication productivity for at counterfactual sample. Black lines show average marginal effects of female author gender each year, and colored lines show predicted publication counts (both full and fractionalized) for male and female authors. Predicted differences and counts are based on the difference-in-differences estimates from Figure 3—source data 1 and Figure 3—source data 2 in the supplementary material. 99.9% confidence intervals based on clustered standard errors are shown.
+
+### Productivity-dependant differences
 
 As indicated in Figure 4 panel A, the effect of the pandemic on women’s and men’s publishing rates also varied considerably across different strata of the publication-productivity distribution. Indeed, a considerable share of the average marginal gender difference appeared to be attributable to differences occurring among the top-10% most prolific men and women authors. In contrast, changes in the average gender gap were marginal for authors below the 80th percentile of the publication distribution. This can clearly be seen in panel B, where the trends for men per quantile in 2019–2020 (solid, black dots) is projected unto the same trends for women (hollow dots). While the differences in trends below the 80th percentile are not visible in the figure, and the absolute differences are very small, the relative differences are noticeable. At the highest decile, the average difference increases from –1.35 (corresponding to 23% lower output for women) to –1.74 (31% lower output for women) from 2019–2020,, which is a relative change of 22.3%. Correspondingly the relative change is 25.8% in the 81st to 90th percentile and 25.9% in the 51st to 80th percentile.
 
@@ -64,25 +84,37 @@ As indicated in Figure 4 panel A, the effect of the pandemic on women’s and me
 
 **Figure 4.:** Panel A shows the estimated average gender difference in publication rates by year. Panel B shows the predicted publishing rates for men and women authors. In each panel, scientists are divided into strata according to their total number of publications in the period 2016–2020. The difference between the thinner, dashed line with the black circle in 2020 and the thicker, dashed line with hollow circles in panel B specifies the average treatment effect for women. Point estimates are reported with 99.9% confidence bounds and robust standard errors clustered at the individual-author level. For information on how average marginal and predicted values are calculated, please refer to Materials and methods: Difference-in-differences model.
 
-## Country-level differences
+### Country-level differences
 
-The estimated change in the magnitude of the gender gap also varied across countries (Figure 5), with the smallest changes observed in Denmark, Australia, Pakistan and Belgium, and the largest increases found in Russia, Italy, Austria and Iran. The horizontal bar diagram to the right in Figure 5 shows that the vast majority of scientists are from the USA. This means that the average treatment effect on the treated (A⁢T⁢T) also gravitates towards the effect observed for the US population. Surprisingly, the estimated effects at the country-level were only weakly and inconsistently correlated with the severity of COVID-19 restrictions (Figure 5—figure supplement 1 and Figure 5—figure supplement 2).
+The estimated change in the magnitude of the gender gap also varied across countries (Figure 5), with the smallest changes observed in Denmark, Australia, Pakistan and Belgium, and the largest increases found in Russia, Italy, Austria and Iran. The horizontal bar diagram to the right in Figure 5 shows that the vast majority of scientists are from the USA. This means that the average treatment effect on the treated ($A⁢T⁢T$) also gravitates towards the effect observed for the US population. Surprisingly, the estimated effects at the country-level were only weakly and inconsistently correlated with the severity of COVID-19 restrictions (Figure 5—figure supplement 1 and Figure 5—figure supplement 2).
 
-## Discipline-level differences
+![Figure 5.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig5-v3.jpg)
+
+**Figure 5.:** The hollow circles show the gender differences per country in full publications counts in 2020 relative to 2019, with error bars showing the 99% confidence intervals based on robust clustered standard errors. Countries are ranked by the estimated gender difference. The horizontal histogram shows the distribution of authors from each country, showing that the vast majority are from the USA. We only list the first 30 countries by number of authors, comprising 90% of authors in our sample. The orange and green lines and bands show the overall treatment effect on the sample and the counterfactual sample. (ATT is the Average Treatment effect on the Treated).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Gender differences in full-count publication productivity, 2019 vs 2020, across four different lockdown severity indicators. All indicators are summed values as stipulated in Equation 3. 99% confidence intervals based on clustered standard errors are shown.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** Gender differences in full-count publication productivity, 2019 vs 2020, across three different lockdown severity indicators. All indicators are counts of the maximum values as stipulated in Equation 4. 99% confidence intervals based on clustered standard errors are shown.
+
+### Discipline-level differences
 
 As a final step in the analysis, we disaggregated results by discipline. As shown in Figure 6 panel A, the widening gender gap was persistent across all four disciplines but with markedly larger effects observed for clinical medicine (Average marginal gender difference = −0.117, CI: –0.138––0.095) and biology (Average marginal gender difference = −0.089, CI: –0.117––0.063) compared to basic medicine (Average marginal gender difference = 0.058, CI: –0.093––0.022) and chemistry (Average marginal gender difference = 0.062, CI: –0.100––0.023). Figure 6 panel B specifies the representation of authors according to their position in the publication-productivity distribution, across the four disciplines. As shown in the figure, we observe an over-representation of highly productive authors in clinical medicine implying that the large average marginal gender difference effect observed for this discipline may partially be driven by a higher proportion of prolific scientists.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig6-v3.jpg)
 
-**Figure 6.:** Difference-in-differences estimate from Figure 6—source data 1. 99% confidence intervals based on clustered standard errors are shown. Histograms show the distribution of authors who mainly publish within a given discipline, and orange and green lines and bands show the overall treatment effect on the sample and the counterfactual sample from Figure 2—source data 1 and Figure 5—source data 1. Panel B shows the distribution of authors per discipline in deciles of total publications over the time period.Figure 6—source data 1.
+**Figure 6.:** Difference-in-differences estimate from Figure 6—source data 1. 99% confidence intervals based on clustered standard errors are shown. Histograms show the distribution of authors who mainly publish within a given discipline, and orange and green lines and bands show the overall treatment effect on the sample and the counterfactual sample from Figure 2—source data 1 and Figure 5—source data 1. Panel B shows the distribution of authors per discipline in deciles of total publications over the time period.
 
-## Robustness checks
+### Robustness checks
 
-We conducted two (Figure 7) placebo tests, simulating a placebo pandemic incident between 2017–2018 and 2018–2019. shows the difference-in-differences estimate for both full and fractionalized publication counts. In both cases, the estimates are very small in magnitude (ranging from 7%–17% of our 2020 estimate, δt=0), and only statistically significant for the 2017–2018, full count, estimate at the 99% level (the 2017–2018 estimate is significant for the fractionalized count at a 95% level). Taken together, there does not appear to be a substantial difference in publication counts in the immediate years prior to the onset of the pandemic.
+We conducted two (Figure 7) placebo tests, simulating a placebo pandemic incident between 2017–2018 and 2018–2019. shows the difference-in-differences estimate for both full and fractionalized publication counts. In both cases, the estimates are very small in magnitude (ranging from 7%–17% of our 2020 estimate, $\delta_{t=0}$), and only statistically significant for the 2017–2018, full count, estimate at the 99% level (the 2017–2018 estimate is significant for the fractionalized count at a 95% level). Taken together, there does not appear to be a substantial difference in publication counts in the immediate years prior to the onset of the pandemic.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/76559/elife-76559-fig7-v3.jpg)
 
-**Figure 7.:** A) and changes in women as first authors (B).(A) Difference in differences of publication productivity for placebo tests. Points show the difference in publication productivity for women relative to men for two placebo periods, using both full publication counts and fractionalized counts. Estimates are based on Figure 7—source data 1 and Figure 7—source data 2. Errorbars are 99% confidence intervals, with accompanying p-values based on clustered standard errors. (B) Ratio of women’s first author share to women’s share of all authorships. Each line shows the share of women who occupy the first author position divided by women’s share of all authorships by year for each of the four disciplines. A ratio > 1 shows a greater share of women first authors relative to all women’s authorships. Authorships counts are made for a larger sample than used in the main analysis, comprising all authorships registered in the Web of Science for each discipline and year.Figure 7—source data 1.Linear regression with author and year fixed effects. Standard errors in parentheses are HC1 and clustered at the author level.Figure 7—source data 2.Linear regression with author and year fixed effects. Standard errors in parentheses are HC1 and clustered at the author level.
+**Figure 7.:** (A) Difference in differences of publication productivity for placebo tests. Points show the difference in publication productivity for women relative to men for two placebo periods, using both full publication counts and fractionalized counts. Estimates are based on Figure 7—source data 1 and Figure 7—source data 2. Errorbars are 99% confidence intervals, with accompanying p-values based on clustered standard errors. (B) Ratio of women’s first author share to women’s share of all authorships. Each line shows the share of women who occupy the first author position divided by women’s share of all authorships by year for each of the four disciplines. A ratio > 1 shows a greater share of women first authors relative to all women’s authorships. Authorships counts are made for a larger sample than used in the main analysis, comprising all authorships registered in the Web of Science for each discipline and year.
 
 We also check whether there are changes in the position in the author byline of women authors (see Figure 7B). We first observe, that the share of women first authors is higher than expected, considering the share of women in total. Some variation occurs over time, but there are no changes from 2019–2020 which could indicate a general shift in women appearing less often as first authors than before the pandemic.
 
@@ -124,28 +156,80 @@ Disciplines were inferred from the journal in which articles were published, usi
 
 We queried the WoS for all authors with their first publication in either 2009 or 2010 (mid-career researchers) or 2016 or 2017 (early-career researchers). We excluded authors with fewer than three publications in total, and further limited the sample to authors with at least one publication in 2018 or 2019. The last step was done to create a sample of actively publishing scientists. We assigned main discipline codes to all authors and limited the sample to authors from 1.4 Chemical sciences, 1.6 Biological sciences, 3.1 Basic medicine and 3.2 Clinical medicine. This sample consisted of 431,207 authors linked to 2,113,108 publications in the period 2016–2020. The counterfactual sample was constructed identically, but for authors with their first publication in 2011 or 2012, counting their publications until 2015. This sample included 276,793 authors linked to 1,060,330 publications.
 
-## Difference-in-differences model
+### Difference-in-differences model
 
-To estimate the differential impact of the COVID-19 pandemic on the gender gap in publication productivity, we leveraged a difference-in-differences strategy. Because of a persistent gender gap in the number of publications over time, we used the yearly data on journal article publications prior to 2020 as baselines for estimating how the pandemic impacted the scholarly productivity of men and women differently. Although, not a randomized treatment, we treated the yearly gender difference in publication numbers (for 2016, 2017, 2018, and 2020) relative to the difference in 2019 as our key estimand. To estimate the average treatment effect on the treated (A⁢T⁢T), the gender difference relative to the baseline 2019 difference, we specified the following regression model:(1)Yi⁢t=αi+γt+∑t=-44δt⁢Genderi⋅Yeart+ϵi⁢t
+To estimate the differential impact of the COVID-19 pandemic on the gender gap in publication productivity, we leveraged a difference-in-differences strategy. Because of a persistent gender gap in the number of publications over time, we used the yearly data on journal article publications prior to 2020 as baselines for estimating how the pandemic impacted the scholarly productivity of men and women differently. Although, not a randomized treatment, we treated the yearly gender difference in publication numbers (for 2016, 2017, 2018, and 2020) relative to the difference in 2019 as our key estimand. To estimate the average treatment effect on the treated ($A⁢T⁢T$), the gender difference relative to the baseline 2019 difference, we specified the following regression model:
 
-Where Yi⁢t denotes the number of published articles by individual i in year t, αi are the author fixed effects, γt are the year fixed effects, and δt are a set of parameters with t∈{-4,-3,-2,0} estimating the difference in publication numbers between men and women each year, relative to the difference in 2019 (t=-1), which we left out of the estimation. The indicator t is here the year relative to 2020. The A⁢T⁢T for a given year k relative to 2019 is then:(2)A⁢T⁢Tt=k=E⁢[Ywomen1|t=k]-E⁢[Ywomen0|t=k]+[E⁢[Ywomen0|t=k]-E⁢[Ywomen0|t=-1]]-[E⁢[Ymen0|t=k]-E⁢[Ymen0|t=-1]]
+$$
+Y_{i⁢t}=\alpha_{i}+\gamma_{t}+\sumt=-44\delta_{t}⁢Gender_{i}⋅Year_{t}+ϵ_{i⁢t}
+$$
+
+Where $Y_{i⁢t}$ denotes the number of published articles by individual $i$ in year $t$, $\alpha_{i}$ are the author fixed effects, $\gamma_{t}$ are the year fixed effects, and $\delta_{t}$ are a set of parameters with $t\in{-4,-3,-2,0}$ estimating the difference in publication numbers between men and women each year, relative to the difference in 2019 ($t=-1$), which we left out of the estimation. The indicator $t$ is here the year relative to 2020. The $A⁢T⁢T$ for a given year $k$ relative to 2019 is then:
+
+$$
+A⁢T⁢T_{t=k}=E⁢[Y_{women}^{1}|t=k]-E⁢[Y_{women}^{0}|t=k]+[E⁢[Y_{women}^{0}|t=k]-E⁢[Y_{women}^{0}|t=-1]]-[E⁢[Y_{men}^{0}|t=k]-E⁢[Y_{men}^{0}|t=-1]]
+$$
 
 When used in the analysis, predicted values are the average partial effects at specified combinations of gender and year. We calculate the linear predicted value based on the regression model for each unit of observation (person i at year t), and average over these units for each specified subset of units (e.g. women in 2019 or men in 2018). This provides average predicted publications counts for each group at each time. Estimated differences in publication counts are the average marginal effects for each year derived from the regression model. The marginal effects are the partial derivative with respect to gender for each unit of observation, and the estimated average differences are then the mean of the unit-specific derivatives at each year.
 
-## Parallel trends and counterfactual samples
+### Parallel trends and counterfactual samples
 
-Valid identification of the differential impact of the COVID-19 pandemic on researchers of different genders relies on a strong assumption of parallel trends of publication outcomes in pre-pandemic years. I.e. identification of the average treatment effect on women essentially assumes that [E[Ywomen0|t=k]−E[Ywomen0|t=−1]] −[E[Ymen0|t=k]−E[Ymen0|t=−1]]=0. A large literature (e.g. Hart and Perlis, 2019; Mairesse and Pezzoni, 2015) has documented persistent gender gaps in publication productivity. Our dynamic difference-in-differences model confirms this. A consistent gap between men and women is present in all years prior to 2020 for our full sample (Figure 2). This gap also tends to slightly increase over time, casting doubt on the assumption of similar publication trends for men and women scientists. Figure 2—source data 1 shows a statistically significant difference in the publication gender gap between 2016 and 2019, and 2017 and 2019. However, the difference is much smaller, and statistically non-significant, when comparing 2018 and 2019.
+Valid identification of the differential impact of the COVID-19 pandemic on researchers of different genders relies on a strong assumption of parallel trends of publication outcomes in pre-pandemic years. I.e. identification of the average treatment effect on women essentially assumes that $[E[Y_{women}^{0}|t=k]−E[Y_{women}^{0}|t=−1]]$ $−[E[Y_{men}^{0}|t=k]−E[Y_{men}^{0}|t=−1]]=0$. A large literature (e.g. Hart and Perlis, 2019; Mairesse and Pezzoni, 2015) has documented persistent gender gaps in publication productivity. Our dynamic difference-in-differences model confirms this. A consistent gap between men and women is present in all years prior to 2020 for our full sample (Figure 2). This gap also tends to slightly increase over time, casting doubt on the assumption of similar publication trends for men and women scientists. Figure 2—source data 1 shows a statistically significant difference in the publication gender gap between 2016 and 2019, and 2017 and 2019. However, the difference is much smaller, and statistically non-significant, when comparing 2018 and 2019.
 
-We also modeled the differential publications rates for a counterfactual sample of researchers, who started publishing (or who’s first publication was registered in the Web of Science database) in 2011, across the following five years. As shown in Figure 3—figure supplement 1, the gender gap in publication rates increased from almost parity in the first year to an average difference of 0.2 full publications five years after (0.05 fractionalized). Again, the gender gap increased with 1/20 of a full publication (full count: –0.05, 99% CI: [–0.0665; –0.0337], fractionalized count: –0.006, 99% CI: [–0.0094; –0.0028]) between four and five years after first publication, amounting to 53% of our A⁢T⁢T from the full sample.
+We also modeled the differential publications rates for a counterfactual sample of researchers, who started publishing (or who’s first publication was registered in the Web of Science database) in 2011, across the following five years. As shown in Figure 3—figure supplement 1, the gender gap in publication rates increased from almost parity in the first year to an average difference of 0.2 full publications five years after (0.05 fractionalized). Again, the gender gap increased with 1/20 of a full publication (full count: –0.05, 99% CI: [–0.0665; –0.0337], fractionalized count: –0.006, 99% CI: [–0.0094; –0.0028]) between four and five years after first publication, amounting to 53% of our $A⁢T⁢T$ from the full sample.
 
-## Data on lockdown severity
+### Data on lockdown severity
 
-To assess how the pandemic may entail different gender effects across countries and lockdown severity, we use data from the Oxford COVID-19 Government Response Tracker. We construct seven lockdown indicators at the country level by aggregating four measures of daily government COVID-policies across a whole year (from March 1st 2020 to December 31st 2020) in two ways. Table 1 summarizes the seven indicators. We use four of the Oxford COVID-19 Government Response Tracker indicators (Hale et al., 2021) related to the coordinated close-downs of schools (C1) or workplaces (C2), stay at home requirements (C6), and the combined policy stringency index. First, we sum the indicator value across the whole year to create a cumulative sum of restriction severity for all four indicators, such that a lockdown indicator Lk is the summarized values across 305 days:(3)Lk=∑i=1305Ii
+To assess how the pandemic may entail different gender effects across countries and lockdown severity, we use data from the Oxford COVID-19 Government Response Tracker. We construct seven lockdown indicators at the country level by aggregating four measures of daily government COVID-policies across a whole year (from March 1st 2020 to December 31st 2020) in two ways. Table 1 summarizes the seven indicators. We use four of the Oxford COVID-19 Government Response Tracker indicators (Hale et al., 2021) related to the coordinated close-downs of schools (C1) or workplaces (C2), stay at home requirements (C6), and the combined policy stringency index. First, we sum the indicator value across the whole year to create a cumulative sum of restriction severity for all four indicators, such that a lockdown indicator $L_{k}$ is the summarized values across 305 days:
 
-Second, we count the number of days across the same period with the maximum indicator value for three indicators relating to school lockdowns, workplace lockdowns, and stay at home requirements. Each of these indicators can take the values 0, 1, 2, and three per day (where three indicates the most severe policy situation for the three indicators in question). For these three indicators we create a conditional sum across 305 days. We then let Lk be the number of days an indicator I1,…,I305 equals 3:(4)Lk=∑i=1305[Ii=3]
+$$
+L_{k}=\sumi=1305I_{i}
+$$
+
+**Table 1.**
+ Seven indicators of COVID-19 lockdown severity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Sum indicator</th>
+      <th>Count of maximum values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>School lockdowns</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Workplace lockdowns</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Stay at home requirements</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Stringency index</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+Second, we count the number of days across the same period with the maximum indicator value for three indicators relating to school lockdowns, workplace lockdowns, and stay at home requirements. Each of these indicators can take the values 0, 1, 2, and three per day (where three indicates the most severe policy situation for the three indicators in question). For these three indicators we create a conditional sum across 305 days. We then let $L_{k}$ be the number of days an indicator $I_{1},…,I_{305}$ equals 3:
+
+$$
+L_{k}=\sumi=1305[I_{i}=3]
+$$
 
 Together, this gives us seven different indicators of lockdown severity at the national level. It is important to note that we use national-level policy indicators capturing only COVID-19 policy responses enacted at the country or federal level. In cases where sub-national policies supersede country-level restrictions, more or less severe policies are not reflected in the indicators.
 
-## Heterogeneity in COVID-19 effects
+### Heterogeneity in COVID-19 effects
 
 To show the heterogeneity in possible COVID-19 induced treatment effects, we estimated our difference-in-differences model separately for each country, focusing on the 40 countries contributing 95% of all authors in our sample. We also investigated the degree to which this heterogeneity could be attributed to variations in the severity of policy restrictions across countries. Using the seven lockdown indicators described above, we compared country-level gender gaps with the measures of severity as shown in Figure 5—figure supplement 1 and Figure 5—figure supplement 2.

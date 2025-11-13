@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.32073.001 In social groups, infections have the potential to spread rapidly and cause disease outbreaks. Here, we show that in a social insect, the ant Lasius neglectus , the negative consequences of fungal infections ( Metarhizium brunneum ) can be mitigated by employing an efficient multicomponent behaviour, termed destructive disinfection, which prevents further spread of the disease through the colony. Ants specifically target infected pupae during the pathogen’s non-contagious incubation period, utilising chemical ‘sickness cues’ emitted by pupae. They then remove the pupal cocoon, perforate its cuticle and administer antimicrobial poison, which enters the body and prevents pathogen replication from the inside out. Like the immune system of a metazoan body that specifically targets and eliminates infected cells, ants destroy infected brood to stop the pathogen completing its lifecycle, thus protecting the rest of the colony. Hence, in an analogous fashion, the same principles of disease defence apply at different levels of biological organisation.
+In social groups, infections have the potential to spread rapidly and cause disease outbreaks. Here, we show that in a social insect, the ant Lasius neglectus, the negative consequences of fungal infections (Metarhizium brunneum) can be mitigated by employing an efficient multicomponent behaviour, termed destructive disinfection, which prevents further spread of the disease through the colony. Ants specifically target infected pupae during the pathogen’s non-contagious incubation period, utilising chemical ‘sickness cues’ emitted by pupae. They then remove the pupal cocoon, perforate its cuticle and administer antimicrobial poison, which enters the body and prevents pathogen replication from the inside out. Like the immune system of a metazoan body that specifically targets and eliminates infected cells, ants destroy infected brood to stop the pathogen completing its lifecycle, thus protecting the rest of the colony. Hence, in an analogous fashion, the same principles of disease defence apply at different levels of biological organisation.
 
 ## Introduction
 
@@ -38,29 +38,491 @@ To address the above gaps in our knowledge of social immunity, we investigated h
 
 ## Results
 
-## Destructive disinfection of lethally infected pupae
+### Destructive disinfection of lethally infected pupae
 
 We exposed ant pupae to one of either three dosages of Metarhizium conidiospores or a sham control. We observed that ants tending pathogen-exposed pupae prematurely removed the pupae from their cocoons in a behaviour we termed ‘unpacking’, whereas control pupae were left cocooned (Figure 1A–B, Video 1; Cox proportional hazards regression: likelihood ratio test (LR) χ2= 55.48, df = 3, p<0.001; hazard ratios (x greater chance of unpacking compared to control): low dose = 18, medium = 53, high = 111; post-hoc comparisons: control vs. low, p=0.004; low vs. medium, p=0.006; medium vs. high = 0.024; all others, p=0.001). Unpacking occurred between 2 and 10 days after pathogen exposure, but sooner and more frequently at higher conidiospore dosages (Figure 1B). As unpacking was a belated response to pathogen exposure and we were unable to remove any conidiospores from the majority of the cocoons or the unpacked pupae (number of colony forming units [mean ± 95% CIs]: cocoons = 0.6 ± 0.9; pupae = 0.1 ± 0.35; Figure 1—figure supplement 1), we concluded that the ants were not performing unpacking to simply dispose of contaminated cocoons. Instead, we postulated that unpacking was a response to successful infection of the pupae. At the time of unpacking, the majority of pupae were still alive (i.e. had an active dorsal aorta pulse; Figure 1—figure supplement 2) and fungal outgrowth had not yet occurred (Figure 1F). Hence, to test if the ants were reacting to early-stage infections, we removed both unpacked and non-unpacked pathogen-exposed cocooned pupae from the ants and incubated them under optimal conditions for fungal outgrowth. We found that, on average across the conidiospore dosages, 85% of unpacked pupae harboured infections that sporulated in the absence of the ants. In contrast, only 25% of non-unpacked pupae were infected (Figure 1—figure supplement 3; generalised linear model [GLM]: overall LR χ2 = 26.48, df = 5, p<0.001; cocooned vs. unpacked pupae: LR χ2 = 18.5, df = 1, p=0.001; conidiospore dose: LR χ2 = 0.42, df = 2, p=0.81). We therefore concluded that the ants were detecting and unpacking pupae with lethal infections during the asymptomatic incubation period of the pathogen’s lifecycle. At this time point, the fungus growing inside the pupae is non-infectious and essentially no viable conidiospores are leftover from the pathogen exposure on their cuticle (Figure 1—figure supplement 1), so there is very little risk of the ants contracting the disease whilst unpacking the pupae.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig1-v1.jpg)
+
+**Figure 1.:** (A) Destructive disinfection starts with the unpacking of pupae from their cocoons and is followed by grooming, biting and poison spraying (ants housed on blue pH-sensitive paper to visualise acidic poison spraying, which shows up pink). (B) Unpacking occurred when pupae were exposed to fungal conidiospores and was dose-dependent, happening sooner and in higher amounts as the dose of conidiospores increased (letters denote groups that differ significantly in post-hoc comparisons [model revelling; p<0.05]). (C–E) Comparison of the ants’ behaviour between sanitary care and destructive disinfection. Destructive disinfection is characterised by increases in grooming duration, poison spraying frequency and biting frequency (all data points displayed; lines ± shaded boxes show mean ± 95% confidence intervals [CI]; letters denote groups that differ significantly in logistic regressions [p<0.05]). (F) Scanning electron micrographs (SEM) of an asymptomatic infected pupa immediately after unpacking, and (G) of a destructively disinfected pupa 24 hr later.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** We washed pupae to recover conidiospores from their (A) cocoons and (B) cuticles. The washes were then plated and the resultant colony-forming units (CFUs) were counted. Whilst we could recover many conidiospores from cocoons and pupae immediately after pathogen exposure, we recovered almost no viable conidiospores from unpacked pupae and their removed cocoons (cocoons: Mann-Whitney U test, U = 112, p<0.001, pupae: U = 84, p=0.037). This indicates that, at the time of unpacking, most conidiospores have been removed and/or chemically disinfected by the ants during sanitary care, or have successfully germinated and caused internal infections within the pupae. All data points displayed; line ± shaded boxes show mean ± 95% CI. Letters denote groups that are significantly different in Mann-Whitney U tests (p<0.05).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Unpacked pupae were observed for signs of mortality (observations for contractions of dorsal aorta) immediately after unpacking (0 hr) or following destructive disinfection by ants (24 hr after unpacking). At the time of unpacking, the majority of pupae were still alive, whilst pupae left with workers for 1 day were mostly dead. In addition, the later pupae were unpacked the more likely they were to have already died (GLM: overall model LR χ2 = 49.76, df = 2, p<0.001; 0 vs. 24 hr: LR χ2 = 36.28, df = 1, p<0.001; effect of time: LR χ2 = 16.19, df = 1, p<0.001). Error bars show ± 95 % CI. Letters show groups that are significantly different in logistic regression (p<0.05).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Unpacked pupae and pathogen-exposed pupae that were not unpacked (cocooned) were removed from ants and incubated for fungal growth to determine how many were infected. A greater amount of unpacked pupae were infected than those that were not unpacked. Error bars show ± 95 % CI. Letters show groups that are significantly different in logistic regression (p<0.05).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Pupae that were unpacked by the ants received more poison within the 24 hr after unpacking – when ants perform destructive disinfection – compared to non-unpacked pathogen-exposed pupae and both controls (LMER: overall model LR χ2 = 59.01, df = 3, p<0.001; interaction between unpacking and treatment: LR χ2 = 15.42, df = 1, p<0.001; Tukey post-hoc comparisons: cocooned control vs. unpacked control, p=0.25; cocooned control vs. cocooned pathogen, p=0.002; all others, p<0.001). All data points displayed; lines ± shaded boxes show mean ± 95% CI. Letters denote groups that differ significantly in Tukey post hoc comparisons (p<0.05).
+
+![Video 1.](https://cdn.elifesciences.org/articles/32073/elife-32073-video1.mp4.jpg)
+
+**Video 1.:** Video shows Lasius neglectus ants performing destructive disinfection towards a Metarhizium-infected pupa. Video playback is 8 x normal speed.
+
 Next, we filmed ants presented with pathogen-exposed pupae and compared their behaviour before and after unpacking. Prior to unpacking, we observed the typical sanitary care behaviours reported in previous studies (Graystock and Hughes, 2011; Tragust et al., 2013a; Hughes et al., 2002; Reber et al., 2011; Okuno et al., 2012). Namely, the ants groomed the pupae (Figure 1C), which has the dual function of removing the conidiospores and applying the ants’ antimicrobial poison (Tragust et al., 2013a). In L. neglectus, the poison is mostly formic acid and is emitted from the acidopore at the abdominal tip, where the ants actively suck it up and transiently store it in their mouths until application during grooming. Additionally, the ants can spray their poison directly from the acidopore; yet, this behaviour is rarely expressed during sanitary care (about once every 28 hr; Figure 1D[Tragust et al., 2013a]). However, after unpacking, we observed a set of behaviours markedly different to sanitary care (Figure 1A, Video 1). The ants sprayed the pupae with poison from their acidopore approx. 15-times more frequently than during sanitary care (~13 times/d; Figure 1D; generalised linear mixed model [GLMM]: LR χ2 = 17.04, df = 1, p<0.001), and grooming duration doubled (Figure 1C; linear mixed effects regression [LMER]: LR χ2 = 145.26, df = 1, p<0.001). Given that there was no fungus to remove at the time of unpacking, the increase in grooming probably functioned solely to apply poison from the oral store (Tragust et al., 2013a). Furthermore, the ants repeatedly bit the pupae to make perforations in their cuticles and to remove their limbs (Figure 1E; GLMM: LR χ2 = 39.44, df = 1, p<0.001). Together these three behaviours resulted in the death of the pupae and left their corpses heavily damaged and coated in the ants’ poison (Figure 1G, Figure 1—figure supplements 2 and 4). Accordingly, we named the combination of unpacking, grooming, poison spraying and biting ‘destructive disinfection’, and performed a series of experiments to determine its function.
 
-## Chemical detection of internal infections
+### Chemical detection of internal infections
 
 Firstly, we wanted to know how the ants identify internal infections during the pathogen’s non-contagious incubation period, when pupae were still alive and showed no external signs of disease. As ants use chemical compounds on their cuticles to communicate complex physiological information to nestmates (Leonhardt et al., 2016), we speculated that infected pupae may produce chemical sickness cues. We washed infected pupae in pentane to reduce the abundance of their cuticular hydrocarbons (CHCs). When pentane-washed pupae were presented to ants, there was a 72% reduction in unpacking compared to both non- and water-washed infected pupae (Figure 2A; GLM: LR χ2 = 12.2, df = 2, p=0.002; Tukey post hoc comparisons: water-washed vs. non-washed, p=0.79; all others, p=0.009). As pentane-washed pupae had lower abundances of CHCs (Figure 2—figure supplement 1), this result indicates that the ants use one or more cuticular compounds to detect the infections.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig2-v1.jpg)
+
+**Figure 2.:** (A) Pupae washed in pentane solvent to reduce the abundance of their cuticular hydrocarbons (CHCs) were unpacked less than unwashed or water-washed pupae (positive and handling controls, respectively; error bars show ± 95% CI; letters specify significant Tukey post hoc comparisons [p<0.05]). (B) Unpacked pathogen-exposed pupae have distinct chemical profiles compared to sham-treated control pupae. Pathogen-exposed pupae that were not unpacked (cocooned group) have intermediate profiles (axes show discriminant analysis of principle components eigenvectors). (C–F) The four CHCs with higher relative abundances on unpacked pupae compared to both control and cocooned pupae: (C) Tritriacontadiene, C33:2 (D), Tritriacontene, C33:1 (E), Pentatriacontadiene, C35:2 (F) co-eluting Pentatriacontadiene and Pentatriacontene, C35:2 + C35:1 (all data points displayed; line ± shaded box show mean ± 95% CI; letters specify groups that differ significantly in KW test post hoc comparisons [p<0.05]).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Washing pupae in pentane solvent reduced the total amount of extractable CHCs on pupae, compared to unwashed and water-washed control pupae, confirming that this method is effective at reducing CHC abundance (KW test: H = 12.26, df = 2, p=0.002; post-hoc comparisons: unwashed vs. water, p=0.73; all others, p<0.001). All data points displayed; lines ± shaded boxes show mean ± 95% CI. Letters show groups that differ significantly in post-hoc comparisons (p<0.05).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Example total ion chromatograms of an unpacked pathogen-exposed pupa (top) and a sham-treated control pupa (bottom), showing the 24 CHC peaks extracted from the pupae/cocoons (for identifications see Table 1) and the added internal standards S1-4 (grey arrows; S1 = n-Tetracosane-d50; S2 = n-Triacontane-d62; S3 = n-Dotriacontane-d66; S4 = n-Hexatriacontane-d74). Contaminants resulting from column bleeding (e.g. phthalic ester) are marked by asterisks. Red arrows indicate those compounds that showed significantly higher relative peak intensity on pathogen-exposed unpacked pupae, compared to both pathogen-exposed, yet left cocooned, or sham-treated pupae (Table 2). Orange arrows show the peaks that differ between pathogen-exposed unpacked and sham-treated pupae, but not between pathogen-exposed unpacked and cocooned pupae. Blue arrows mark all remaining peaks.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Pupae were injected with β−1,3-glucans (green dots) – a highly conserved pathogen-associated molecule that acts as an immune elicitor of the invertebrate immune system – or ant physiological saline as a control (grey dots), and tested for their change in immune gene expression 48 hr after injection. Injection with β-glucans did not affect the gene expression of (A) the melanisation cascade-regulating gene proPO (Cerenius and Söderhäll, 2004) (saline: Mann-Whitney U test, U = 69, p=0.06, β-glucans: U = 55, p=0.75) within 48 hr of injection. However, both (B) PGRP-SC2, an IMD pathway regulator gene (Bischoff et al., 2006), and (C) β−1,3-GBP, a pattern recognition protein that specifically binds to fungal β-glucans (Ma and Kanost, 2000; Gottar et al., 2006), showed increased gene expression 48 hr after injection, compared to pupae immediately after injection (PGRP-SC2: U = 17, p=0.0095; β−1,3-GBP: U = 19, p=0.01), but not following saline injection (PGRP-SC2: U = 70, p=0.06; β−1,3-GBP, saline: U = 81, p=0.0095, a significant down regulation). Data points display the difference in gene expression 48 hr after injection to mean gene expression immediately after injection; statistical analysis was carried out on full data set. Solid lines ± shaded boxes show mean ± 95% CI. Asterisks show groups where gene expression (48 hr after injection) differs significantly (p<0.05) from expression immediately after injection (dotted line); *=p<0.05; **=p<0.001; ns = non-significant.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Pupae injected with β−1,3-glucans (green dots) had increased relative abundances 2 days after injection compared to pupae immediately after injection, of (A) Tritriacontadiene, C33:2 (LMER: LR χ2 = x, df = 1, p=0.012) and (B) Tritriacontene, C33:1 (LR χ2 = 6.40, df = 1, p=0.046), but not (C) Pentatriacontadiene, C35:2 (LR χ2 = 1.56, df = 1, p=0.42) or (D) co-eluting Pentatriacontadiene and Pentatriacontene, C35:2 + C35:1 (LR χ2 = 0.25, df = 1, p=0.70). However, the abundances of these four compounds did not increase in saline-injected pupae (grey dots; all p>0.05). Hence, injection of β−1,3-glucans results in higher CHC abundance for two out of the four CHCs that were also specifically increased on Metarhizium-infected, unpacked pupae (Figure 2C–F). Data points display the difference in CHC abundance 48 hr after injection to mean CHC abundance immediately after injection; statistical analysis was carried out on full data set. Solid lines ± shaded boxes show mean ± 95% CI. Asterisks show groups where CHC abundance (48 hr after injection) differs significantly (p<0.05) from mean abundance immediately after injection (dotted line); *=p < 0.05; ns = non-significant.
+
 Gas chromatography-mass spectrometry (GC–MS) analysis of the solvent wash confirmed that unpacked pupae have distinct chemical profiles compared to non-infected control pupae, whilst cocooned (non-unpacked) pathogen-exposed pupae were intermediate (Figure 2B, Figure 2—figure supplement 2; perMANOVA: F = 1.49, df = 46, p=0.002; post-hoc perMANOVA comparisons: unpacked vs. control, p=0.003; unpacked vs. cocooned, p=0.79; cocooned vs. control, p=0.08). There were no novel compounds present on unpacked or cocooned pathogen-exposed pupae that were not also present on control pupae (Table 1; Figure 2—figure supplement 2), suggesting that these differences were not caused by odours emitted directly by the fungus, but were of pupal origin. By analysing the chemical profiles of each of the pathogen’s separate developmental stages (infectious conidiospores, post-infection blastospores, and saprophytic mycelium) and performing a direct comparison of the fungal compounds to the pupal chemical profiles, we confirmed that there were no fungus-derived peaks in the pupal profiles (see Materials and methods for more information).
+
+**Table 1.**
+ Compound identification of cuticular hydrocarbons (CHCs) from Lasius neglectus pupae.Table shows all 24 CHCs, with peak numbers listed in the order of their retention time, as in Figure 3—figure supplement 2. For comparability across gas chromatography–mass spectrometry systems, modified Kovats indices are included. Peaks that were significantly higher on unpacked pupae are highlighted in bold. In peaks 17 and 18, two compounds co-eluted.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Peak #</th>
+      <th>Compound identification</th>
+      <th>Retention time (min)</th>
+      <th>Modified Kovats index</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>n-Heptacosane</td>
+      <td>18.521</td>
+      <td>2699</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>n-Octacosane</td>
+      <td>18.883</td>
+      <td>2799</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>n-Nonacosane</td>
+      <td>19.253</td>
+      <td>2902</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>3-Methylnonacosane</td>
+      <td>19.529</td>
+      <td>2974</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>n-Triacontane</td>
+      <td>19.624</td>
+      <td>2999</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>n-Hentriacontane</td>
+      <td>20.040</td>
+      <td>3100</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>3-Methylhentriacontane</td>
+      <td>20.387</td>
+      <td>3175</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Tritriacontadiene</td>
+      <td>20.764</td>
+      <td>3251</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Tritriacontene</td>
+      <td>20.910</td>
+      <td>3279</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Tritriacontene</td>
+      <td>20.958</td>
+      <td>3288</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>n-Tritriacontane</td>
+      <td>21.019</td>
+      <td>3300</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>13-Methyltritriacontane</td>
+      <td>21.174</td>
+      <td>3326</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>3-Methyltritriacontene</td>
+      <td>21.335</td>
+      <td>3353</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>3-Methyltritriacontane</td>
+      <td>21.456</td>
+      <td>3373</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>n-Tetratriacontane</td>
+      <td>21.626</td>
+      <td>3402</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Pentatriacontadiene</td>
+      <td>21.937</td>
+      <td>3447</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Pentatriacontadiene + Pentatriacontene</td>
+      <td>22.134</td>
+      <td>3475</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>n-Pentatriacontane + 13-Methylpentatriacontene</td>
+      <td>22.306</td>
+      <td>3500</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>13,23-Dimethylpentatriacontane</td>
+      <td>22.740</td>
+      <td>3554</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>11,25-Dimethylpentatriacontane</td>
+      <td>22.752</td>
+      <td>3556</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>7,11,23-Trimethylpentatriacontane</td>
+      <td>23.019</td>
+      <td>3589</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>n-Hexatriacontane</td>
+      <td>23.125</td>
+      <td>3602</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Unknown</td>
+      <td>23.603</td>
+      <td>3652</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>n-Heptatriacontane</td>
+      <td>24.023</td>
+      <td>3697</td>
+    </tr>
+  </tbody>
+</table>
 
 Most chemical messages in social insects are encoded by quantitative shifts of several compounds (Leonhardt et al., 2016). Correspondingly, we found that 8 out of the 24 CHCs identified (Table 1) had higher relative abundances on unpacked pupae compared to control pupae (Figure 2C–F, Figure 2—figure supplement 2; all Kruskal-Wallis [KW] test statistics and post-hoc comparisons in Table 2). Moreover, four of these CHCs were also present in relatively higher quantities on unpacked pupae compared to the non-unpacked cocooned pupae. Several specific CHCs are therefore probably accumulating on infected pupae over time, eventually reaching an amount that, relative to the other compounds, is sufficient to elicit destructive disinfection. This corresponds to current models of social insect behaviour, where the likelihood of a response depends on stimuli exceeding a certain threshold (Theraulaz et al., 1998; Beshers and Fewell, 2001).
 
+**Table 2.**
+ Compounds contributing most to the differences between pupal cuticular hydrocarbon (CHC) profiles.Table gives the overall effect of treatment per CHC, corrected for multiple testing, and the post-hoc comparisons, corrected at the level of each compound for multiple comparisons. CHCs significantly increased specifically on unpacked pupae shown in bold. All multiple comparison corrections performed using the Benjamini-Hochberg procedure (α = 0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Peak #</th>
+      <th>Compound</th>
+      <th>KW H (df = 2)</th>
+      <th>Corrected KW p value</th>
+      <th>Post-hoc comparison</th>
+      <th>Adjusted p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">6</td>
+      <td rowspan="3">n-Hentriacontane</td>
+      <td rowspan="3">7.29</td>
+      <td rowspan="3">0.029</td>
+      <td>Cocooned – Unpacked</td>
+      <td>0.238</td>
+    </tr>
+    <tr>
+      <td>Cocooned – Control</td>
+      <td>0.309</td>
+    </tr>
+    <tr>
+      <td>Unpacked – Control</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td rowspan="3">8</td>
+      <td rowspan="3">Tritriacontadiene</td>
+      <td rowspan="3">13.11</td>
+      <td rowspan="3">0.006</td>
+      <td>Cocooned – Unpacked</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Cocooned – Control</td>
+      <td>0.830</td>
+    </tr>
+    <tr>
+      <td>Unpacked – Control</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">9</td>
+      <td rowspan="3">Tritriacontene</td>
+      <td rowspan="3">10.39</td>
+      <td rowspan="3">0.01</td>
+      <td>Cocooned – Unpacked</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>Cocooned – Control</td>
+      <td>0.745</td>
+    </tr>
+    <tr>
+      <td>Unpacked – Control</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td rowspan="3">11</td>
+      <td rowspan="3">Tritriacontane</td>
+      <td rowspan="3">11.55</td>
+      <td rowspan="3">0.007</td>
+      <td>Cocooned – Unpacked</td>
+      <td>0.064</td>
+    </tr>
+    <tr>
+      <td>Cocooned – Control</td>
+      <td>0.245</td>
+    </tr>
+    <tr>
+      <td>Unpacked – Control</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">14</td>
+      <td rowspan="3">3-Methyltritriacontene</td>
+      <td rowspan="3">7.63</td>
+      <td rowspan="3">0.028</td>
+      <td>Cocooned – Unpacked</td>
+      <td>0.428</td>
+    </tr>
+    <tr>
+      <td>Cocooned – Control</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Unpacked – Control</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td rowspan="3">16</td>
+      <td rowspan="3">Pentatriacontadiene</td>
+      <td rowspan="3">18.83</td>
+      <td rowspan="3">0.001</td>
+      <td>Cocooned – Unpacked</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Cocooned – Control</td>
+      <td>0.152</td>
+    </tr>
+    <tr>
+      <td>Unpacked – Control</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">17</td>
+      <td rowspan="3">Pentatriacontadiene +Pentatriacontene</td>
+      <td rowspan="3">12.09</td>
+      <td rowspan="3">0.007</td>
+      <td>Cocooned – Unpacked</td>
+      <td>0.039</td>
+    </tr>
+    <tr>
+      <td>Cocooned – Control</td>
+      <td>0.301</td>
+    </tr>
+    <tr>
+      <td>Unpacked – Control</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">18</td>
+      <td rowspan="3">n-Pentatriacontane + 13-Methylpentatriacontene</td>
+      <td rowspan="3">10.12</td>
+      <td rowspan="3">0.01</td>
+      <td>Cocooned – Unpacked</td>
+      <td>0.083</td>
+    </tr>
+    <tr>
+      <td>Cocooned – Control</td>
+      <td>0.312</td>
+    </tr>
+    <tr>
+      <td>Unpacked – Control</td>
+      <td>0.003</td>
+    </tr>
+  </tbody>
+</table>
+
 To investigate the possibility that CHC changes on unpacked pupae are the result of an immune response developed by the host, we injected pupae with β−1,3-glucans – polysaccharides that are an integral component of fungal cell walls, including Metarhizium (Wang and St Leger, 2006). β-Glucans act as highly conserved major pathogen-associated molecular patterns (PAMPs) that are recognised by the immune system of invertebrates and can therefore be used to elicit an immune response in the absence of a pathogen (Brown and Gordon, 2005). We found that, within 2 days of injection, β-glucan , but not saline , caused an increase in the expression of immune genes, namely, an IMD signalling pathway regulator gene (PGRP-SC2 [Bischoff et al., 2006]) and a gene encoding for a protein that recognises and binds to β-glucans to elicit an immune response (β−1,3-GBP [Ma and Kanost, 2000; Gottar et al., 2006]), whilst expression of the gene encoding for the melanisation cascade enzyme phenoloxidase (proPO [Cerenius and Söderhäll, 2004]) was unaffected (Figure 2—figure supplement 3). β-glucan injection also altered the chemical profiles of pupae in a similar way to Metarhizium infection (Figure 2C–F). Two of the four compounds we identified as a potential sickness cue on the unpacked pupae (Tritriacontadiene and Tritriacontene) were also increased in abundance within 2 days of injection with β-glucan, whilst there was no such increase in control pupae (Figure 2—figure supplement 4). These data reveal that some of the changes in pupal chemical profile can be directly linked to a host reaction to an immune elicitor, similar to findings in honeybees (Richard et al., 2012; Richard et al., 2008), mice (Arakawa et al., 2011) and humans (Shirasu and Touhara, 2011).
 
-## Destructive disinfection prevents pathogen replication
+### Destructive disinfection prevents pathogen replication
 
 We next tested if destructive disinfection prevents pupal infections from replicating and becoming infectious. Pathogen-exposed pupae were kept with groups of ants (eight ants per pupae per group) until unpacking. They were then left with the ants for a further 1 or 5 days before being removed and incubated for fungal growth. We compared the number that subsequently sporulated to pathogen-exposed pupae kept without ants. Whilst 88% of pupae contracted infections, destructive disinfection significantly reduced the proportion of pupae that sporulated and hence became infectious (Figure 3A; GLM: LR χ2 = 40.47, df = 2, p<0.001; Tukey post-hoc comparisons: 1 vs. 5 d, p=0.04; all others, p<0.001). After only 1 day, the number of destructively disinfected pupae that sporulated decreased by 65%. With more time, the ants could reduce the number of pupae sporulating even further by 95%. Since the pupae were removed from the ants for fungal incubation, we can conclude that destructive disinfection permanently prevents pathogen replication. We repeated this experiment with a smaller number of ants (three ants per pupae per group) to investigate how group size influences the success of destructive disinfection. Smaller groups of ants were less efficient than larger ones: although they could still inhibit >90% of pupal infections within 5 days of unpacking, pupae tested for infection after 1 day still sporulated 70% of the time (Figure 3—figure supplement 1; GLM: LR χ2 = 35.23, p<0.001; Tukey post-hoc comparisons: 0 vs. 1 day, p=0.2; 0 vs. 5 days, p<0.001; 1 vs. 5 days, p=0.002). As the effectiveness of destructive disinfection increased with the amount of time the ants had, as well as with the number of ants present, we inferred that there must be a limiting factor affecting the inhibition the pathogen.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig3-v1.jpg)
+
+**Figure 3.:** (A) Destructive disinfection greatly reduced the probability of pupae sporulating compared to pupae that received no destructive disinfection (time point 0), and its effectiveness increased with the length of time ants could perform destructive disinfection (1 vs. 5 days; error bars show ± 95% CI; letters denote groups that differ significantly in Tukey post-hoc comparisons [p<0.05]). (B) The individual components of destructive disinfection (unpacking, biting and poison spraying) interacted to inhibit pathogen replication (% of pupae sporulating in each treatment shown under graph in green). The odds of sporulation for cocooned and unpacked pupae treated with poison were not significantly different to those of control pupae (cocooned pupae treated with water). But when unpacking, biting and poison spraying were combined, the odds of sporulation were significantly reduced (logistic regression; ns = non-significant deviation from control, ***=p<0.001; complete data set of full factorial experiment displayed in Figure 3—figure supplement 3 and all statistics in Table 3).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Destructive disinfection by groups of three ants greatly reduced the probability of pupae sporulating compared to pupae that received no destructive disinfection (time point 0) 5 days after unpacking. However, the proportion of pupae sporulating was equal when ants only had one day to perform destructive disinfection, as compared to those that received no destructive disinfection (time point 0). Error bars show ± 95% CI; letters denote groups that differ significantly in Tukey post-hoc comparisons (p<0.05).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Experimental application of synthetic poison (60% formic acid and 2% acetic acid, in water [Tragust et al., 2013a]) resulted in pupae receiving quantities of poison similar to pupae kept with ants for 1 day after unpacking (determined by measuring pupal pH after spraying them with poison and comparing to data from Figure 1—figure supplement 3; Mann-Whitney U test: U = 303, p=0.38), meaning we were applying poison to pupae in realistic amounts as compared to the ants and inducing an equivalent decrease in pH change. All data points displayed; lines ± shaded boxes show mean ± 95% CI. Treatments were non-significant (ns) in a Mann-Whitney U test (p>0.05).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Unpacking, biting and poison application interact to inhibit fungal sporulation. Only when all three ‘behaviours’ are performed is fungal sporulation completely prevented (grey = poison, white = water). Error bars show ± 95% CI. Uppercase letters denote bars that differ (p<0.05) within the water treatment, lowercase letters show differences within the poison treatment, and asterisks indicate differences within pupal groups: ns = non significant, *=p<0.05, ***=p<0.001 (full post-hoc comparisons given in Table 3).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/32073/elife-32073-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Cocooned pupae treated with poison had a pH equivalent to untreated cocooned pupae, whereas poison-treated unpacked pupae had a significantly decreased pH, revealing that the cocoon blocks the application of poison (KW test: H = 18.22, df = 2, p<0.001; post hoc comparisons: untreated cocooned vs. poison-treated unpacked, p=0.91; all others, p<0.001). All data points displayed; lines ± shaded boxes show mean ± 95% CI. Letters denote groups that differ significantly in post-hoc comparisons (p<0.05).
+
 To study the underlying mechanisms of destructive disinfection, we performed its different components – unpacking, biting and poison spraying – in vitro to test for their relative importance and potential synergistic effects. We simulated unpacking by removing the cocoons of the pupae manually with fine forceps, and the cuticle damage caused by biting using dissection scissors. Previous work establishing the composition of L. neglectus poison (Tragust et al., 2013a) allowed us to create a synthetic version for use in this experiment (60% formic acid and 2% acetic acid, in water; applied at a dose equivalent to what ants apply during destructive disinfection; Figure 3—figure supplement 2), with water as a sham control. We then performed these ‘behaviours’ in different combinations in a full-factorial experiment. We found that all three behaviours must be performed in the correct order and interact to prevent pathogen replication (overview graph showing odds ratios of sporulation in Figure 3B, full data dataset displayed in Figure 3—figure supplement 3; GLM: overall LR χ2 = 79.9, df = 5, p<0.001; interaction between behaviours LR χ2 = 20.6, df = 2, p<0.001; all post-hoc comparisons in Table 3). As in sanitary care, the poison was the active antimicrobial compound that inhibited fungal growth (Figure 3—figure supplement 3, Table 3, Tragust et al., 2013a; Graystock and Hughes, 2011). However, for the poison to function the pupae had to be removed from their cocoons and their cuticles damaged. Firstly, this is because the cocoon itself is hydrophobic and thus prevents the aqueous poison from reaching the pupae inside (Figure 3—figure supplement 4). Secondly, as the infection is growing internally at the time of unpacking, the cuticle must be broken in order for the poison to enter the hemocoel of the pupae. This is achieved with the perforations created by the ants biting the pupal cuticle. It is possible that in the wild biting also helps to desiccate the pupae, since high levels of humidity are important for Metarhizium growth (Doberski, 1981). However, in our experiments, the relative humidity inside the petri dishes was always a stable 95%, so desiccation cannot have played a role in fungal inhibition. As the active antimicrobial component, we concluded that the poison is probably the limiting factor determining whether destructive disinfection is successful. Because the poison has a slow biosynthesis and each ant can only store a limited amount (Tragust et al., 2013a; Hefetz and Blum, 1978), it would explain why destructive disinfection was more likely to be successful the longer the ants had to treat the pupae, and as the number of ants increased (Figure 3A, Figure 3—figure supplement 1). By sharing the task of poison synthesis and application, the ants probably increase their chances of preventing the pathogen becoming infectious.
 
-## Disruption of the pathogen lifecycle stops disease transmission
+**Table 3.**
+ Tukey post-hoc comparisons between in vitro chemical treatments and pupa manipulations.Following a GLM showing a significant interaction between chemical treatment (water or synthetic poison) and pupae manipulation (cocooned, experimentally unpacked or experimentally unpacked and bitten), we performed Tukey post-hoc comparisons to determine the influence of each behavioural component. Comparisons to pupae that received complete destructive disinfection (unpacked + poison + biting) are shown in bold. All p values are corrected for multiple testing using the Benjamini-Hochberg procedure (α = 0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Post-hoc comparison</th>
+      <th>Corrected p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cocooned + water</td>
+      <td>Cocooned + poison</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Cocooned + water</td>
+      <td>Unpacked + water</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>Cocooned + water</td>
+      <td>Unpacked + poison</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>Cocooned + water</td>
+      <td>Unpacked + water + biting</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td>Cocooned + water</td>
+      <td>Unpacked + poison + biting</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Unpacked + water</td>
+      <td>Unpacked + poison</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Unpacked + water</td>
+      <td>Cocooned + poison</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Unpacked + water</td>
+      <td>Unpacked + water + biting</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>Unpacked + water</td>
+      <td>Unpacked + poison + biting</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Biting + water</td>
+      <td>Unpacked + poison + biting</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Biting + water</td>
+      <td>Cocooned + poison</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Biting + water</td>
+      <td>Unpacked + poison</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Cocooned + poison</td>
+      <td>Unpacked + poison</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td>Cocooned + poison</td>
+      <td>Unpacked + poison + biting</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Unpacked + poison</td>
+      <td>Unpacked + poison + biting</td>
+      <td>0.02</td>
+    </tr>
+  </tbody>
+</table>
+
+### Disruption of the pathogen lifecycle stops disease transmission
 
 Finally, we investigated the impact of destructive disinfection on disease transmission within a social group. We created mini-nests comprising two chambers and a group of ants (five ants per group). Into one of the chambers we placed an infectious sporulating pupa – simulating a failure of the ants to detect and destroy the infection – or a pupa that had been destructively disinfected, and was thus non-infectious. The ants groomed, moved around and sprayed both types of corpses with poison. In the case of the sporulating pupae, all conidiospores were removed from the corpse by the ants. As in previous studies, sporulating corpses were highly virulent (Hughes et al., 2002; Loreto and Hughes, 2016) and caused lethal infections that became contagious after host death in 42% of ants (Figure 4A). However, there was no disease transmission from destructively disinfected pupae (Figure 4A; GLM: LR χ2 = 31.32, df = 1, p<0.001). We therefore concluded that by preventing the pathogen from completing its lifecycle destructive disinfection stops intra-colony disease transmission (Figure 4B).
 
@@ -84,51 +546,51 @@ Understanding how natural selection can result in similar traits at different le
 
 ## Materials and methods
 
-## Ant host
+### Ant host
 
 We studied the invasive garden ant Lasius neglectus (Cremer et al., 2008) that forms large, underground nests in the soil. Populations of this species lack territorial structuring and instead consist of interconnected nests, forming a single supercolony between which there is a constant exchanging of individual ants (Cremer et al., 2008). We sampled more than one hundred queens, many thousands of workers and hundreds of brood items from a 320 m2 area of the supercolony in Seva, Spain (41°48'32.4"N 2°15'43.9"E), and reared them as stock colonies in the laboratory. All experiments were conducted in plastered petri dishes (Ø=33, 55 or 90 mm) with 10% sucrose solution provided ad libitum and environmental conditions were controlled throughout (23°C; 70% RH; 14/10 hr light/dark cycles). In addition, we directly measured the humidity of plastered petri dishes without ants for 2 weeks, by embedding a digital relative humidity sensor (Sensirion, Switzerland) into the lids of the dishes, finding that the relative humidity inside was always a stable 95%. The animal use protocol was performed in accordance with the IST Austria Ethics Committee guidelines. At present, the committee does not provide a specific approval numbers for invertebrate animal research. Animals used in this study, Lasius neglectus, do not belong to regulated or protected species.
 
-## Fungal pathogen
+### Fungal pathogen
 
 As a model pathogen, we used an obligately killing pathogen of Lasius ants, Metarhizium brunneum (CDP unpublished data; strain MA275, KVL 03–143). Entomopathogenic Metarhizium fungi occur at high densities in the soil (up to 5000 conidiospores/g soil [Keller et al., 2003]) and on sporulating cadavers (up to 12 million conidiospores/cadaver [Hughes et al., 2002, 2004b]) and are responsible for natural infections of ants in field populations (Reber et al., 2012; Hughes et al., 2004a). Metarhizium and other similar generalist fungi are therefore expected to have applied a persistent and pervasive selection pressure on ants over the course of their evolutionary history (Boomsma et al., 2005; Cremer et al., 2017). Multiple aliquots of conidiospore suspensions were kept in long-term storage at – 80°C. Prior to each experiment, the conidiospores were grown on sabaroud dextrose agar at 23°C until sporulation and harvested by suspending them in 0.05% sterile Triton X-100 (Sigma Aldrich, Austria). The germination rate of conidiospore suspensions was determined before the start of each experiment and was >90% in all cases. In addition to fungal conidiospores, we also cultured blastospores and mycelia to obtain the chemical profiles (see below) of all stages of the fungi’s lifecycle (Deacon, 2006). Blastospores were cultured by adding 50 µl of conidiospore suspension (109/ml) to 50 ml of Adámek liquid media (with Streptomycin sulphate [0.005 g/l] and Chloramphenicol [0.025 g/l]) added to inhibit bacterial growth) in a 300 ml Erlenmeyer flask, which was then incubated (72 hr, 200 rpm, 23°C) (Adámek, 1965; Kleespies and Zimmermann, 1992). After incubation, the liquid (which contains the blastospores) was pre-filtered using a flame-sterilised mesh and sieve and the liquid vacuum-filtered (40 µm mesh; Millipore Steriflip [Merck, Germany]). The resulting blastospore suspension was then washed (5 min, 3000 g, 23°C) three times in PBS. To produce mycelia, we added 50 µl of 106/ml conidiospore suspension to 100 ml of YPD liquid broth (Yeast extract Peptone Dextrose with Streptomycin sulphate [0.005 g/l] and Chloramphenicol [0.025 g/l]) in a 300 ml Erlenmeyer flask. We incubated the flask (5 days, 180 rpm, 27°C) and vacuum-filtered (40 µm mesh; Millipore Steriflip) the resulting fungal mass to remove the liquid broth. We then washed the mycelial mass three times in autoclaved distilled water.
 
-## Pupal pathogen exposure
+### Pupal pathogen exposure
 
 Conidiospores were applied in a suspension of 0.05% autoclaved Triton-X 100 at a concentration of 106 conidiospores/ml in all experiments, unless otherwise stated. Throughout the study, we used cocooned worker pupae of approximately the same age, which was determined by assessing the melanisation of the eyes and cuticle. Single pupae were exposed by gently rolling them in 1 µl of the conidiospore suspension using sterile soft forceps. Pupae were then allowed to air dry for 5–10 min before being used in experiments. This exposure procedure resulted in pupae receiving ~1800 conidiospores, of which 5% (~95 conidiospore) passed through the cocoon and came into contact with the pupa inside (Figure 1—figure supplement 1). In all experiments, pupae were allocated to treatment groups haphazardly.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were carried out in R version 3.3.2 (Core Team, 2012) and all tests were two-tailed. All General(ised) linear and mixed models were compared to null (intercept only) and reduced models (for those with multiple predictors) using Likelihood Ratio (LR) tests to assess the significance of predictors (Bolker et al., 2009). We controlled for the number of statistical tests performed per experiment to protect against a false discovery rate using the Benjamini-Hochberg procedure (α = 0.05). Moreover, all post-hoc analyses were corrected for multiple testing using the Benjamini-Hochberg procedure (α=0.05) (Benjamini and Hochberg, 1995; García, 2004). We checked the necessary assumptions of all tests that is by viewing histograms of data, plotting the distribution of model residuals, checking for non-proportional hazards, testing for unequal variances, testing for the presence of multicollinearity, testing for over-dispersion, and assessing models for instability and influential observations. For mixed effects modelling, we used the packages ‘lme4’ to fit models (Bates et al., 2014), ‘influence.ME’ to test assumptions (Nieuwenhuis and Pelzer, 2012), and, for LMERs, ‘lmerTest’ to obtain p values (Kuznetsova et al., 2015). All logistic regressions were performed using either generalised linear models (GLMs) or generalised linear mixed models (GLMMs), which had binomial error terms and logit-link function. The Cox proportional hazards regression was carried out using the ‘coxphf’ package with post-hoc comparisons achieved by re-levelling the model and correcting the resulting p values (Ploner and Heinze, 2015). For Kruskal-Wallis (KW) tests and subsequent post-hoc comparisons we used the ‘agricolae’ package, which implements the Conover-Iman test for multiple comparisons using rank sums (de Mendiburu, 2016). For the perMANOVA, we used the package ‘vegan’ and performed pairwise perMANOVAs for post-hoc comparisons (Oksanen et al., 2016). All other post-hoc comparisons were performed using the ‘multcomp’ package (Bretz et al., 2011). All graphs were made using the ‘ggplot2’ package (Wickham, 2009). Preliminary studies were performed for all major experiments to determine sample size. No data outliers were detected or removed and all replicate information represents biological replicates. Individual descriptions of statistical analyses are given for all experiments below.
 
-## Unpacking behaviour
+### Unpacking behaviour
 
 To study how ants respond to infections, we exposed pupae to a low (104/ml), medium (106/ml) or high (109/ml) dose of conidiospores or autoclaved Triton X as a sham control (sham control, n = 24; all other treatments, n = 25). The pupae were then placed into individual petri dishes with two ants and inspected hourly for 10 hr/days for 10 days. When the ants unpacked a pupa, it was removed and surface-sterilised to ensure that any fungal outgrowth was the result of internal infections and not residual conidiospores on the cuticle. To surface-sterilise, pupae were dipped in 70% ethanol, washed in autoclaved distilled water and submerged in 0.05% sodium hypochlorite for 1 min, before being washed three times in autoclaved distilled water (Lacey and Brooks, 1997). After sterilisation, we transferred the pupae to a petri dish lined with damp filter paper at 23°C and monitored them for 2 weeks for Metarhizium sporulation to confirm the presence of an internal infection (low dose, n = 8; medium dose, n = 18; high, n = 21). In addition, any cocooned pupae that were not unpacked after 10 d were removed from the ants, surface sterilised and observed for sporulation, as above (low dose, n = 11; medium dose, n = 4; high, n = 4). Some pupae (control = 16, low dose = 6, medium dose = 3) successfully emerged from the cocoon as adult ants and were thus treated as non-unpacked in analyses. We analysed the effect of treatment on unpacking using a Cox proportional hazards model with Firth’s penalised likelihood, which offers a solution to the monotone likelihood caused by the complete absence of unpacking in the sham control treatment. We followed up this analysis with post hoc comparisons (model factor re-levelling) to test unpacking rates between treatments (Figure 1B). We compared the number of unpacked and cocooned pupae sporulating using a logistic regression, which included pupa type (cocooned, unpacked), conidiospore dose (low, medium, high) and their interaction as main effects. The interaction was non-significant (GLM: LR χ2 = 5.0, df = 2, p=0.084); hence, it was removed to gain better estimates of the remaining predictors.
 
-## Images and scanning electron micrographs (SEMs) of destructive disinfection
+### Images and scanning electron micrographs (SEMs) of destructive disinfection
 
 Photographs of destructive disinfection were captured (Nikon D3200 [Nikon, Japan]) and aesthetically edited (Adobe Photoshop [Adobe Systems, San Jose, California]) to demonstrate the different behaviours (Figure 1A). They were not used in any form of data acquisition. We also made representative SEMs of a pupa directly after unpacking and one after destructive disinfection (24 hr after unpacking; Figure 1F–G). As the pupae were frozen at – 80°C until the SEMs were made, we also examined non-frozen pupae taken directly from the stock colony and confirmed that freezing itself does not cause damage to the pupa (not shown).
 
-## Conidiospore load on unpacked pupae
+### Conidiospore load on unpacked pupae
 
 We determined the number of conidiospores on unpacked pupae (n = 7) and their removed cocoons (n = 7) by placing them into separate vials containing 100 µl autoclaved 0.05% Trixton-X 100. The vials were then shaken for 10 m at 600 RPM (Vortex Genie 2 [Scientific Industries, Bohemia, New York]) and the resulting supernatant was plated onto selective medium agar. We counted the number of Metarhizium colony-forming units (CFUs) that subsequently grew on the plates after 7 d. As a control, we performed the same experiment on pupae directly after pathogen-exposure. We experimentally unpacked the pupae using sterile (ethanol wiped) forceps so that we could examine the number of CFUs present on the pupae (n = 16) and cocoon separately (n = 16). We analysed the number of CFUs on pupae and cocoons using Mann-Whitney U tests (Figure 1—figure supplement 1).
 
-## Comparison of sanitary care and destructive disinfection behaviours
+### Comparison of sanitary care and destructive disinfection behaviours
 
 To observe how the behavioural repertoire of the ants changes between sanitary care and destructive disinfection, we filmed three individually colour-marked ants tending a single pathogen-exposed pupa with a USB microscope camera (Di-Li 970-O [Di-Li, Germany]). To characterise the sanitary care behaviours of the ants, we analysed the first 24 hr of the videos following the introduction of the pupa. To study destructive disinfection behaviours, we analysed the 24 hr period that immediately followed unpacking. Videos were analysed using the behavioural-logging software JWatcher (Blumstein and Daniel, 2007). For each ant (n = 15), we recorded the duration of its grooming bouts, the frequency of poison application and the frequency of biting. Grooming duration was analysed using a LMER, having first log-transformed the data to fulfil the assumption of normality (Figure 1C). The frequency of poison spraying and biting (Figure 1D–E) were analysed using separate GLMMs with Poisson error terms for count data and logit-link function. We included an observation-level random intercept effect to account for over-dispersion in the poison spraying and biting data (Harrison, 2014). In all three models, we included petri dish identity as a random intercept effect because ants from the same dish are non-independent. Additionally, a random intercept effect was included for each ant as we observed the same individuals twice (before and after unpacking).
 
-## Comparison of pupal mortality after unpacking and destructive disinfection
+### Comparison of pupal mortality after unpacking and destructive disinfection
 
 We established a protocol to determine whether pupae were dead or alive because it is not generally obvious when death has occurred. To ensure that we examined pupae as soon as possible after unpacking, we checked pathogen-exposed pupae housed with ants every 45 min for 15 hr/d. When unpacking occurred, we either removed the pupa immediately (n = 33) or left it with the ants for a further 24 hr so that they could perform destructive disinfection (n = 44). To check the numbers of dead and alive pupae at the time point of unpacking and after destructive disinfection, we secured the pupae to glass slides using double-sided tape. The pupae were then gently prodded with a glass capillary whilst being examined under a bifocal microscope (10 x magnification; Leica DM 1000 [Leica Biosystems, Germany]). If pupae were alive, this resulted in contractions of their dorsal aorta (Broome et al., 1976), which is visible through the cuticle of the abdomen. If they were dead, no contractions occurred. Each examination lasted a maximum of 5 min. To confirm that this approach was sensitive, we examined experimentally unpacked pupae taken straight from a stock colony (n = 10). In all cases, these pupae were alive. They were then frozen at – 80°C for 1 day and examined again after defrosting, when they were all found to be dead. We compared the number of dead pupae at the time point of unpacking to the number that were dead after destructive disinfection using a logistic regression (Figure 1—figure supplement 2). We included the day of unpacking as a covariate to test if pupae unpacked sooner or later were more or less likely to have already died.
 
-## Estimation of poison load on pupae after destructive disinfection
+### Estimation of poison load on pupae after destructive disinfection
 
 As L. neglectus poison has a very high acidity (Tragust et al., 2013a), we could measure the pH of pupae to determine if ants apply higher amounts poison to pupae during destructive disinfection. We kept a pair of pathogen-exposed or sham control pupae with two ants. When one of the pathogen-exposed pupae in a pair was unpacked, we let the ants perform destructive disinfection for 24 hr (n = 25). In the control, we experimentally unpacked one pupa in a pair and placed it back with the ants for 24 hr (n = 17). After 24 hr, we removed the unpacked pupae in both treatments along with their discarded cocoons. At the same time, the second, still cocooned pupae in each pair was removed and experimentally unpacked so that pH measurements were consistent across pupal groups (pathogen exposed, n = 9; control, n = 16). All pupae and their cocoons were placed into individual vials containing 20 µl of autoclaved distilled water and a sterile glass pestle was used to crush each pupa and cocoon for 60 s. The pH of the resulting pupa/cocoon slurry was measured using a pH electrode meter (INLAB ULTRA-MICRO, SevenGo PRO pH SG8 pH-meter [Mettler-Toledo, Columbus, Ohio]). This gave us an indication of how much poison the ants had applied to each type of pupa (Figure 1—figure supplement 3). We used a LMER with Tukey post-hoc comparisons to compare the pH measurements of the pupae. Pupa treatment (pathogen-exposed or control), type (cocooned or unpacked) and their interaction were included as main effects. Petri dish was included as a random intercept effect as pairs of pupae from the same dish are non-independent. As we used a portion of this dataset in Figure 3—figure supplement 2, we corrected the overall model p value for multiple testing.
 
-## Chemical bioassay
+### Chemical bioassay
 
 We determined whether ants detect infected pupae through potential changes in the pupae’s cuticular chemical profile. We established internal infections in pupae by exposing them to the pathogen and leaving them for 3 days in isolation. In pilot studies, approx. 50% of these pupae were then unpacked within 4 hr of being introduced to ants. After 3 days, pupae were washed for 2.5 min in 300 µl of either pentane solvent to reduce the abundance of all CHCs present on the pupae (n = 28), or in autoclaved water as a handling control (n = 28). After washing, pupae were allowed to air dry on sterile filter paper. Additionally, non-washed pupae were used as a positive control (n = 30). Pupae were placed individually with a pair of ants in petri dishes and observed for unpacking for 4 hr. We used GC–MS (see below for methodology) to confirm that washing was effective at removing cuticular compounds, by comparing the total amount of chemicals present on pupae washed in pentane to non- and water-washed pupae (n = 8 per treatment; Figure 2—figure supplement 1). The number of pupae unpacked between the different treatments was analysed using a logistic regression (Figure 2A). As several researchers helped to wash the pupae, we included a random intercept for each person to control for any potential handling effects. Additionally, the experiment was run in two blocks on separate days, so we included a random intercept for each block to generalise beyond any potential differences between runs. The total peak area from the GC–MS analysis was compared between treatments using a KW test with post-hoc comparisons.
 
-## Chemical analysis of pupal hydrocarbon patterns
+### Chemical analysis of pupal hydrocarbon patterns
 
 To confirm that infected pupae had chemical profiles that are different from pathogen-exposed cocooned and control pupae, we exposed pupae to the pathogen or a sham control. Pupae were then isolated for 3 days to establish infections in the pathogen-exposed treatment (as above). Following isolation, pupae were individually placed with ants and observed for unpacking for 4 hr. Unpacked pupae were immediately frozen at – 80°C with the removed cocoons (n = 13) and we also froze cocooned pathogen-exposed pupa that had not yet been unpacked (n = 10). Furthermore, we froze a pair of control pupae, of which one was cocooned (n = 12), whilst the other was first experimentally unpacked (to test if the cocoon affects cuticular compound extraction; n = 12). Cuticular chemicals were extracted from individual pupae and their cocoons in glass vials (1.8 ml [Supelco, Germany]) containing 100 µl n-pentane solvent for 5 min under gentle agitation. The vials were then centrifuged at 3000 rpm for 1 min to spin down any fungal conidiospores that might be remaining, and 80 µl of the supernatant was transferred to fresh vials with 200 µl glass inserts and sealed with Teflon faced silicon septa (both Supelco). The pentane solvent contained four internal standards relevant for our range of hydrocarbons (C27 – C37); n-Tetracosane, n-Triacontane, n-Dotriacontane and n-Hexatriacontane (Sigma Aldrich) at 0.5 µg/ml concentration, all fully deuterated to enable spectral traceability and separation of internal standards from ant-derived substances. We ran extracts from the different groups in a randomised manner, intermingled with blank runs containing only pentane, and negative controls containing the pentane plus internal standards (to exclude contaminants emerging for example from column bleeding), on the day of extraction, using GC–MS (GC7890 coupled to MS5975C [Agilent Technologies, Santa Clara, California]).
 
@@ -138,44 +600,85 @@ Analytes were detected by applying deconvolution algorithms to the total ion chr
 
 To quantify the relative abundances of all compounds found on each pupa, analyte-characteristic quantifier and qualifier ions were used to establish a method enabling automatised quantification of their integrated peak area relative to the peak area of the closest internal standard. For each analyte, the relative peak area was normalised, that is divided by the total sum of all relative peak areas of one pupa, to standardise all pupa samples. Only analytes, which normalised peak area contributed more than 0.05% of the total peak area, were included in the statistical analysis. We compared the chemical profiles of the pupae using a perMANOVA analysis of the Mahalanobis dissimilarities between pupae, with post hoc perMANOVA comparisons. Since there was no difference between cocooned and unpacked control pupae we combined them into a single control group for the final analysis (perMANOVA: F = 1.09, df = 23, p=0.1). We also performed a discriminant analysis of principle components (Figure 2B) to characterise the differences between the pupal treatments (De Moraes et al., 2014; Jombart et al., 2010). To identify the compounds that differ between treatments, we performed a conditional random forest classification (n trees = 500, n variables per split = 4) (De Moraes et al., 2014; Strobl et al., 2009a; Strobl et al., 2009b). Random forest identified nine compounds that were important in classifying the treatment group, of which eight were significant when analysed using separate KW tests (results for significant compounds in Table 2). We followed up the KW tests with individual post hoc comparisons for each significant compound (Figure 2C–F, post-hoc comparisons in Table 2).
 
-## Comparison of fungal and pupal chemical profiles
+### Comparison of fungal and pupal chemical profiles
 
 One millilitre aliquots of conidiospore (109/ml in 0.05% TX) and blastospore (4 × 106/ml in PBS) suspensions and approx. 500 mg of mycelia (in 500 µl of autoclaved distilled water) were washed three times by briefly vortexing and centrifuging the samples (5 min, 5500 g), discarding the supernatants, and replacing with 1 ml of autoclaved distilled water for the first two washes, and 500 µl for the last wash. One hundred and fifty microliters of the conidiospore and blastospore suspensions and 155 µg of hyphae (n = 3 for each fungal stage) were transferred into 1.5 ml glass vials (La-Pha-Pack, Germany). All samples were centrifuged (2 min, 3000 g) and dried under a nitrogen stream for 2 hr. Once samples were dry, 200 µl n-pentane containing internal standards (as above) was added to the samples, which were vortexed for 2 min. Samples were centrifuged (5 min, 5000 g) and the supernatants transferred into 200 µl glass vials with inserts, and closed with aluminium crimper caps that had a silicone septum (both La-Pha-Pack). Fifty microliters of the samples were injected into a pre-cooled PTV inlet at – 20°C and GC–MS analysis carried out following the above protocol.
 
 We determined if there was any overlap between the chemical profiles of pupae and the fungus by comparing the results of the fungal GC–MS analysis to the results of the pupal GC–MS. To that end, all fungal chromatograms were automatically de-convoluted and the mass-spectra of the compound peaks compared to a mass-spectral database, composed of the substances found on the pupae (Agilent Technologies MassHunter Qualitative Analysis, B.07.00, 2014). Twenty-seven compounds scored above 70 points, with 82.21 being the highest score. To determine if these peaks were identical to the peaks of the pupal samples, we calculated their Kovats retention time indices (RI) and compared them to that of the pupal substances. This analysis revealed that none of the fungal compound RIs were overlapping with the pupal compounds, hence confirming that the identified pupal substances are not of fungal origin.
 
-## Immune stimulation of pupae using β-glucans
+### Immune stimulation of pupae using β-glucans
 
 We injected β−1,3-glucans to test whether the changes in the chemical profile of infected pupae may be caused by an immune stimulation (Vilcinskas and Wedde, 1997; Unestam and Söderhäll, 1977; Gunnarsson, 1988). Soluble β−1,3-glucans were acquired by suspending 5 mg of Zymosan-A (Saccharomyces cerevisiae cell wall fragments [Sigma-Aldrich]) in 1 ml of sterile physiological ant saline (as described in [Aubert and Richard, 2008]). The Zymosan suspension was vortexed for 1 hr at 3200 rpm before being centrifuged at 10000 rcf for 5 min. The supernatant that contains the soluble β-glucans (Vilcinskas and Wedde, 1997) was then removed and stored at 4°C until use. As a control we used sterile ant physiological saline (Aubert and Richard, 2008). Pupae were artificially unpacked from their cocoons (as above) and placed gently into a sponge harness. Using fine glass capillaries (with spike to aid injection; inner diameter = 25 µm [BioMedical Instruments, Germany]), a microinjector (parameters: pi = 120 hPa, ti = 0.3 s, pc = 20 hPa [FemtoJet, Eppendorf, Germany]) and a micromanipulator (Luigs and Neumann, Germany), we injected 46 nl of the β-glucan solution or ant physiological saline through the pupae’s first tergite, into their haemocoel. We cleaned the capillaries between injections using 96% ethanol. Half of the pupae were frozen at – 80°C immediately after injection whilst the remainder were kept alone in individual plaster dishes for a further 48 hr, before then also being frozen. Frozen pupae were then used for molecular and chemical analyses (below).
 
-## Immune gene expression of pupae injected with β−1,3-glucans
+### Immune gene expression of pupae injected with β−1,3-glucans
 
 We employed a candidate gene approach to test if a β−1,3-glucan injection (above) elicits an immune response in pupae, with saline injected pupae as a control (n = 11, each for pupae frozen 0 hr and 48 hr after injection, for both saline and β-glucan treatments). Total RNA was extracted from pupae using the Maxwell RSC simply RNA tissue kit (Promega, Madison, Wisconsin) according to manufacturer’s instructions, with a final elution volume of 60 µl. Reverse transcription was performed using the iScript cDNA synthesis kit (Bio-Rad, Hercules, California) as per the manufacturer’s recommendations. Primer sequences were taken from (Konrad et al., 2012) or developed from cDNA sequence information of L. neglectus (Table 4). Gene expression analyses of 28S Ribosomal Protein S18a (used as housekeeping gene, which we had previously found to be stably expressed in pupae), Prophenoloxidase (proPO), Peptidoglycan Recognition Protein SC2 (PGRP-SC2) and β−1,3-glucan binding protein (β−1,3-GBP) were performed in 20 μl reaction volumes using KAPA SYBR Fast qPCR master mix (Kapa Biosystems, Wilmington, Massachusetts) and 0.2 μM each of specific primers (Sigma-Aldrich) on a Bio-rad CFX96 real-time PCR detection system. Two microliters of the cDNA sample were added per reaction and each sample was analysed in duplicate or triplicate wells. Each run contained an absolute negative as well as a no reverse transcription control. Primer efficiency was >95% for all primer sets using standard curves of 10-fold dilutions, and primer specificity was monitored based on a melting curve analysis following each run. We used the following program for amplification: 95°C for 5 min, followed by 40 cycles of 10 s of 95°C denaturation and 30 s of 60°C (55°C) annealing/extension. Normalised gene expression values (the average of technical replicates standardised to the housekeeping gene) were analysed using Mann-Whitney U tests and the resulting p values were corrected for multiple comparisons.
 
-## Chemical analysis of β-glucan injected pupae
+**Table 4.**
+ Primer information.Primer sequences, annealing temperatures and amplicon sizes for the immune genes proPO, PGRP-SC2 and β−1,3-GBP and the reference house keeping gene 28S RP S18a of the invasive garden ant, Lasius neglectus, as obtained from (Konrad et al., 2012) and cDNA sequence information (Meghan L. Vyleta, AVG, SC unpublished data).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer</th>
+      <th>Sequence</th>
+      <th>Amplicon length</th>
+      <th>Annealing temperature</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>proPO</td>
+      <td>F: 5'-TCTTTCTCGCGGTCTTGACT R: 5'-TTGTTGGCGACGATTCTGTA</td>
+      <td>99 bp</td>
+      <td>60°C</td>
+    </tr>
+    <tr>
+      <td>PGRP-SC2</td>
+      <td>F: 5'-GTGGAGTGGATAACGGCGAA R: 5'-CTATCTCCGGGACAGACGGT</td>
+      <td>85 bp</td>
+      <td>55°C</td>
+    </tr>
+    <tr>
+      <td>β−1,3-GBP</td>
+      <td>F: 5'-CTGCGCATATCAATTCCCGAC R: 5'-TTCGCTATCTGTCCCGCTTC</td>
+      <td>101 bp</td>
+      <td>55°C</td>
+    </tr>
+    <tr>
+      <td>28S RP S18a</td>
+      <td>F: 5'-CGGCTGTATGCTACCACGTA R: 5'-AAGCCTGCTTTCTGAGCCAT</td>
+      <td>93 bp</td>
+      <td>55°C</td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemical analysis of β-glucan injected pupae
 
 The chemical profiles of β−1,3-glucan and saline-injected pupae were analysed using GC–MS, following the above protocols. We tested whether the four CHCs that were increased specifically on unpacked pupae were also increased on pupae 48 hr after injection with either β-glucans or saline. We used LMERs to compare the CHC abundances within treatments, on pupae immediately after injection (saline, n = 27; β-glucan, n = 26) and 48 hr later (saline, n = 22; β-glucan, n = 22), correcting the p values for multiple comparisons across the CHCs. CHC abundances were square root transformed to a normal distribution. Since this experiment was carried out on 2 separate days, run was included as a random intercept effect to account for any potential, uncontrollable differences. The assumption of homogeneity of variances was violated for the LMER analysing Tritriacontadiene, though visual inspection of the model residuals found this violation to be relatively minor. Still, to test for the robustness of the LMER result, we also analysed Tritriacontadiene using a non-parametric test that does not make any assumptions about data distribution, but is unable to account for the random effect. This test also found a strong, significant difference between the two time points (Mann-Whitney U test, U = 157, p=0.007); hence we report the result of the LMER.
 
-## Effect of destructive disinfection on pathogen replication
+### Effect of destructive disinfection on pathogen replication
 
 To test if destructive disinfection prevents Metarhizium from successfully replicating, we kept single pathogen-exposed pupae in petri dishes containing groups of 3 or 8 ants. This allowed us to assess how group size affects the likelihood of fungal inhibition. For the following 10 days, we observed the pupae for unpacking. When a pupa was unpacked, we left it with the ants for a further 1 or 5 days so that they could perform destructive disinfection. This allowed us to assess how the duration of destructive disinfection affects the likelihood of fungal inhibition. The destructively disinfected pupae were then removed and placed into petri dishes on damp filter paper at 23°C (8 ants 1 day and 5 days, n = 22 pupae each; 3 ants 1 and 5 days, n = 18 pupae each). We did not surface sterilise the pupae as this might have interfered with the destructive disinfection the ants had performed. Removed pupae were observed daily for Metarhizium sporulation for 30 days. To determine how many pupae sporulate in the absence of destructive disinfection, we kept pathogen-exposed pupae without ants as a control and recorded the number that sporulated for 30 d (n = 25). We compared the number of pupae that sporulated after 1 and 5 days and in the absence of ants using logistic regressions and Tukey post hoc comparisons, separately for the two ant group sizes (Figure 3A, Figure 3—figure supplement 1).
 
-## In vitro investigation of destructive disinfection
+### In vitro investigation of destructive disinfection
 
 We examined the individual effects of unpacking, biting and poison application on destructive disinfection by performing these behaviours in vitro. Pathogen-exposed pupae were initially kept with ants so that they could perform sanitary care. After 3 days, we removed the pupae and split them up into three groups: (i) pupae that we left cocooned, (ii) experimentally unpacked and (iii) experimentally unpacked and bitten. We simulated the damage the ants achieve through biting by damaging the pupal cuticle and removing their limbs with micro scissors. The pupae were then treated with either synthetic ant poison (60% formic acid and 2% acetic acid, in water; applied at a dose equivalent to what ants apply during destructive disinfection; Figure 3—figure supplement 2) or autoclaved distilled water as a control, using pressurised spray bottles (Lacor, Spain) to evenly coat the pupae in liquid. Spraying was carried out at a distance of 36 cm from the pupae and lasted for 1 s. The pupae were allowed to air dry for 5 min before being rolled over and sprayed again and allowed to dry a further 5 min. All pupae were then placed into separate petri dishes and monitored daily for Metarhizium sporulation (cocooned + poison, n = 24; unpacked + poison + biting, n = 24; all other treatments, n = 25). The number of pupae sporulating was analysed using a logistic regression with Firth’s penalised likelihood, which offers a solution to the monotone likelihood caused by the complete absence of sporulation in one of the groups (R package ‘brglm’ [Kosmidis, 2013]). Pupal manipulation (cocooned/unpacked only/unpacked and bitten), chemical treatment (water or poison) and their interaction were included as main effects (Figure 3B, Figure 3—figure supplement 3). We followed up this analysis with Tukey post-hoc comparisons (Table 3).
 
-## Comparing synthetic and ant poison spraying
+### Comparing synthetic and ant poison spraying
 
 We confirmed that synthetic poison spraying resulted in pupae receiving an amount of poison within the natural range that is applied by ants during destructive disinfection. Pupae taken from a stock colony were experimentally unpacked and sprayed with synthetic poison. We then measured their pH (all as above; n = 21). To test if synthetic poison spraying was similar to natural ant spraying, we compared their pH to pupae destructively disinfected by ants (data from Figure 1—figure supplement 3) using a Mann-Whitney U test (Figure 3—figure supplement 2). We adjusted the p value to correct for using this dataset twice (here and in Figure 1—figure supplement 3).
 
-## The effect of the pupal cocoon on ant poison application
+### The effect of the pupal cocoon on ant poison application
 
 To test if the pupal cocoon limits the amount of the ants’ poison that reaches the pupae inside, we took pupae from a stock colony and sprayed half with synthetic ant poison (as above; n = 10) and left the other half untreated (n = 10). We then unpacked these pupae and measured their pH (as above). As an additional control, we first experimentally unpacked pupae before spraying them with synthetic poison (n = 10). We analysed pH pupae using a KW test with post hoc comparisons (Figure 3—figure supplement 4).
 
-## Disease transmission from infectious and destructively disinfected pupae
+### Disease transmission from infectious and destructively disinfected pupae
 
 We tested the impact of destructive disinfection on disease transmission within groups of ants by keeping them with sporulating pupae or pupae that had been destructively disinfected. Infections were established in pupae (as above) and half were allowed to sporulate (n = 11), whilst the other half were experimentally destructively disinfected (as above; n = 11). Pupae were then kept individually with groups of five ants in mini-nests (cylindrical containers [Ø=90 mm] with a second, smaller chamber covered in red foil [Ø=33 mm]). Ant mortality was monitored daily for 30 days. Dead ants were removed, surface sterilised (as above) and observed for Metarhizium sporulation. The number of ants dying from Metarhizium infections in each treatment was compared using a logistic regression (Figure 4A). Mini-nest identity was included as a random intercept effect as ants from the same group are non-independent.
 
-## Observations of destructive disinfection in another supercolonial population and related species
+### Observations of destructive disinfection in another supercolonial population and related species
 
 To confirm that our findings are not an idiosyncrasy of our specific study population, we tested whether the destructive disinfection observed in the Seva L. neglectus population is also found in another, genetically distinct supercolonial population (Ugelvig et al., 2008) and a related (congeneric), non-supercolonial/non-invasive species, Lasius niger. We sampled hundreds of queens and many thousands of workers from a 300 m2 area of L. neglectus in the botanical gardens in Jena, Germany (50°55'54.6"N 11°35'08.4"E). The studied L. niger colony was raised from a single founding queen collected after a natural mating flight in Harpenden, UK (51°48'48.9"N 0°22'51.5"W) and reared in the laboratory for 3 years, by which point it contained several hundred workers. To test if these ants also perform destructive disinfection, we kept two workers with single, pathogen-exposed or control-treated pupae (following the same protocols as above; Jena supercolony, n = 23 replicates per treatment; L. niger, n = 20 per treatment). We observed the ants on a daily basis to record the occurrence of destructive disinfection for 10 d. In both the Jena population and L. niger, no control-treated pupae were destructively disinfected (proportion ± 95% CIs: Jena = 0 ± 0–0.14; L. niger = 0 ± 0–0.16), whilst >60% of the pathogen-exposed pupae were destructively disinfected (proportion ± 95% CIs: Jena = 0.61 ± 0.41–0.78; L. niger = 0.95 ± 0.76–0.99).

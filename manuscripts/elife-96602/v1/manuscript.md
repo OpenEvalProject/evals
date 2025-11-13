@@ -11,16 +11,16 @@
 
 ### Affiliations
 
-1. https://ror.org/055zd7d59 Neurovascular Unit Research Group, Korea Brain Research Institute Daegu Republic of Korea
-2. https://ror.org/04q78tk20 Department of Anatomy and Cell Biology, Sungkyunkwan University School of Medicine, Samsung Biomedical Research Institute, Samsung Medical Center Suwon Republic of Korea
-3. https://ror.org/04q78tk20 Department of Biological Sciences, Sungkyunkwan University Suwon Republic of Korea
-4. https://ror.org/03frjya69 Department of Brain Sciences, DGIST Daegu Republic of Korea
+1. Neurovascular Unit Research Group, Korea Brain Research Institute Daegu Republic of Korea ([ROR:055zd7d59](https://ror.org/055zd7d59))
+2. Department of Anatomy and Cell Biology, Sungkyunkwan University School of Medicine, Samsung Biomedical Research Institute, Samsung Medical Center Suwon Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+3. Department of Biological Sciences, Sungkyunkwan University Suwon Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+4. Department of Brain Sciences, DGIST Daegu Republic of Korea ([ROR:03frjya69](https://ror.org/03frjya69))
 
 † Corresponding author
 
 ## Abstract
 
-Establishing transepithelial ion disparities is crucial for sensory functions in animals. In insect sensory organs called sensilla, a transepithelial potential, known as the sensillum potential (SP), arises through active ion transport across accessory cells, sensitizing receptor neurons such as mechanoreceptors and chemoreceptors. Because multiple receptor neurons are often co-housed in a sensillum and share SP, niche-prevalent overstimulation of single sensory neurons can compromise neighboring receptors by depleting SP. However, how such potential depletion is prevented to maintain sensory homeostasis remains unknown. Here, we find that the Ih- encoded hyperpolarization-activated cyclic nucleotide-gated (HCN) channel bolsters the activity of bitter-sensing gustatory receptor neurons (bGRNs), albeit acting in sweet-sensing GRNs (sGRNs). For this task, HCN maintains SP despite prolonged sGRN stimulation induced by the diet mimicking their sweet feeding niche, such as overripe fruit. We present evidence that Ih -dependent demarcation of sGRN excitability is implemented to throttle SP consumption, which may have facilitated adaptation to a sweetness-dominated environment. Thus, HCN expressed in sGRNs serves as a key component of a simple yet versatile peripheral coding that regulates bitterness for optimal food intake in two contrasting ways: sweet-resilient preservation of bitter aversion and the previously reported sweet-dependent suppression of bitter taste.
+Establishing transepithelial ion disparities is crucial for sensory functions in animals. In insect sensory organs called sensilla, a transepithelial potential, known as the sensillum potential (SP), arises through active ion transport across accessory cells, sensitizing receptor neurons such as mechanoreceptors and chemoreceptors. Because multiple receptor neurons are often co-housed in a sensillum and share SP, niche-prevalent overstimulation of single sensory neurons can compromise neighboring receptors by depleting SP. However, how such potential depletion is prevented to maintain sensory homeostasis remains unknown. Here, we find that the Ih-encoded hyperpolarization-activated cyclic nucleotide-gated (HCN) channel bolsters the activity of bitter-sensing gustatory receptor neurons (bGRNs), albeit acting in sweet-sensing GRNs (sGRNs). For this task, HCN maintains SP despite prolonged sGRN stimulation induced by the diet mimicking their sweet feeding niche, such as overripe fruit. We present evidence that Ih-dependent demarcation of sGRN excitability is implemented to throttle SP consumption, which may have facilitated adaptation to a sweetness-dominated environment. Thus, HCN expressed in sGRNs serves as a key component of a simple yet versatile peripheral coding that regulates bitterness for optimal food intake in two contrasting ways: sweet-resilient preservation of bitter aversion and the previously reported sweet-dependent suppression of bitter taste.
 
 ## Introduction
 
@@ -32,33 +32,69 @@ Interestingly, gustatory ephaptic inhibition was recently found to be under a ge
 
 ## Results
 
-## HCN expressed in sweet-sensing GRNs is required for normal bitter GRN responses
+### HCN expressed in sweet-sensing GRNs is required for normal bitter GRN responses
 
 The hair-like gustatory sensilla in the Drosophila labellum are categorized into L-, i-, and s-type based on their relative bristle lengths. Each sensillum contains 2 (i-type) or 4 (s- and L-type) GRNs along with a mechanosensory neuron. The i- and s-type bristle sensilla contain both an sGRN and a bGRN, while each L-type bristle sensillum contains an sGRN but no bGRN (Ishimoto and Tanimura, 2004; Tanimura et al., 2009; Fujii et al., 2015; Weiss et al., 2011). As a model of gustatory homeostasis, we mainly examined the i-type bristles using single sensillum extracellular recording (Hodgson et al., 1955; Du et al., 2019; Du et al., 2016) because of their simple neuronal composition. Compared to WT (w1118 in a Canton S background), we observed reduced spiking responses to 2 mM caffeine in two strong loss-of-function alleles of the HCN gene, Ihf03355 (Fernandez-Chiappe et al., 2021; Hu et al., 2015) and IhMI03196-TG4.0/+ (Ih-TG4.0/+) (Lee et al., 2023; Lee et al., 2018; Figure 1A). Note that Ih-TG4.0 is homozygous lethal (Lee et al., 2023). A copy of the Ih-containing genomic fragment {Ih} rescued the spiking defect in Ihf03355. The GRN responses to 50 mM sucrose were not altered in Ih mutants (Figure 1B). Other bitter chemical compounds, berberine, lobeline, theophylline, and umbelliferone, also required Ih for normal bGRN responses (Figure 1—figure supplement 1). Although we observe here that Ih pertains to bGRN excitability, Ih was previously found to be expressed in sGRNs but not bGRNs (Lee et al., 2023). To test whether HCN expression in sGRNs is required for bGRN activity, GRN-specific RNAi knockdown of Ih was performed with either Gr64f- (Dahanukar et al., 2007) or Gr89a-Gal4 (Weiss et al., 2011). Ih knockdown in sGRNs (Gr64f-Gal4), but not bGRNs (Gr89a-Gal4), led to reduced bGRN responses to caffeine (Figure 1C), indicating that HCN acts in sGRNs for a normal bGRN response. Unlike the results in Ih mutant alleles, the spiking response of Ih-knock-downed sGRNs (Gr64f cells) to 50 mM sucrose was increased (Figure 1D). To exclude the possibility that Ih is required for normal gustatory development, we temporally controlled Ih RNAi knockdown to occur only in adulthood, which produced similar results (Figure 1—figure supplement 2). The differential effects of gene disruptions and RNAi on sGRN activity will be discussed further below with additional results. Introduction of Ih-RF cDNA (FlyBase id: FBtr0290109), which previously rescued Ih deficiency in other contexts (Lee et al., 2023; Hu et al., 2015), to sGRNs but not bGRNs restored the decreased spiking response to 2 mM caffeine in Ihf03355, corroborating that sGRNs are required to express Ih for bGRN regulation (Figure 1E). Interestingly, ectopic cDNA expression in bGRNs of Ihf03355 but not in sGRNs increased the spiking response to 50 mM sucrose compared to its controls (Figure 1F), although the same misexpression failed to raise the spiking to 2 mM caffeine. These results suggest not only that Ih innately expressed in sGRNs is necessary for the activity of bGRNs, but also that Ih expression in one GRN may promote the activity of the other adjacent GRN in Ih-deficient animals.
 
-## Loss of Ih in sGRNs reduced the sensillum potential in the gustatory bristle sensilla
+![Figure 1.](https://cdn.elifesciences.org/articles/96602/elife-96602-fig1-v1.jpg)
+
+**Figure 1.:** Representative 5 s-long traces of sensillum recording with either caffeine or sucrose at the indicated concentrations, shown along with box plots of spiking frequencies. (A) Caffeine-evoked bitter spiking responses of wild-type (WT), the Ih-deficient mutants, Ihf03355 and Ih-TG4.0/+, and the genomic rescue, Ihf03355;{Ih}/+. (B) Sucrose responses were similar among the genotypes tested in (A). (C) Ih RNAi knockdown in sGRNs, but not bGRNs, reduced the bGRN responses to 2 mM caffeine. (D) Ih RNAi knockdown in sGRNs increased the sGRN responses to 50 mM sucrose. (E) Introduction of the Ih-RF cDNA in sGRNs, but not bGRNs, of Ihf03355 restored the bGRN response to 2 mM caffeine. (F) For sucrose responses, the introduction of Ih-RF to bGRNs increased the spiking frequency. Letters indicate statistically distinct groups (a and b): Tukey’s test, p<0.05 (A), Dunn’s, p<0.05 (F). §: Welch’s ANOVA, Games-Howell test, p<0.05. #: Dunn’s test, p<0.05. Numbers in gray indicate the number of tested naïve bristles, which are from at least three individuals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96602/elife-96602-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Representative 5 s-long traces of sensillum recording in wild-type (WT), Ihf03355 and a genomic rescue are shown along with box plots of spiking frequencies for indicated bitters, such as berberine (A), lobeline (B), theophylline (C), and umbelliferone (D). §: Welch’s ANOVA, Games-Howell test, p<0.05. #: Dunn’s test, p<0.05. ** and ***: Tukey’s, p<0.01 and p<0.001, respectively. Numbers in gray indicate the number of naïve bristles tested in at least three animals.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96602/elife-96602-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic diagram depicting the design of temporal control of the RNAi. (B) Box plots of spiking frequencies obtained with indicated bitter and sweet chemical compounds at temperatures permissive and non-permissive for Gal80ts. ###: Dunn’s, p<0.001. **: Tukey’s, p<0.01. Numbers in gray indicate the number of naïve bristles tested in at least three animals.
+
+### Loss of Ih in sGRNs reduced the sensillum potential in the gustatory bristle sensilla
 
 We speculated that the Ih-dependent lateral boosting across GRNs might involve a functional link between GRNs. Such a physiological component could be SP, since the sensillar lymph is shared by all GRNs in the sensillum and SP sets the spiking sensitivity (Tuthill and Wilson, 2016). SP is known as a transepithelial potential between the sensillum lymph and the hemolymph, generated by active ion transport through support cells (Figure 2A, Left). To measure SP, we repurposed the Tasteprobe pre-amplifier to record potential changes in a direct current (DC) mode (see Materials and methods for details), which was originally devised to register action potentials from sensory neurons. With the new setting, the contact of the recording electrode with a labellar bristle induced a rise in potential (Figure 2A, Right). The recording was stabilized within 20 s, and a raw potential value was acquired as an average of the data between the time points, 20 and 60 s after the initial contact (Figure 2A). After the examination of all the bristle sensilla of interest, the fly was impaled at the head to obtain the DC bias (also known as DC offset), which insects are known to exhibit in the body independent of SP (Marion‐Poll and van der Pers, 1996; Figure 2B). To examine whether the DC bias varies at different body sites, we surveyed the DC bias at four different locations of individual animals, the abdomen, thorax, eye, and head. This effort resulted in largely invariable DC bias readings (Figure 2B and C). Next, the sensillum potential was obtained by subtracting the DC bias from the raw potential value (Figure 2A). We also found that we could reduce the apparent SP by deflecting the bristle sensillum by ~45o (Figure 2D–F), activating the sensillum’s mechanosensory neuron. When we performed the same experiment with nompCf00642, a loss-of-function allele of nompC that encodes a mechanosensory TRPN channel (Sánchez-Alcañiz et al., 2017), this reduction in SP disappeared (Figure 2D–F).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96602/elife-96602-fig2-v1.jpg)
 
-**Figure 2.:** (A) Schematic diagram illustrating the sensillum potential in the taste bristle sensilla (Left). Black upward arrow indicates ion transport by pumps and transporters in support cells from the hemolymph to the sensillum lymph. These body fluids are physiologically separated by tight junctions between support cells. The resulting transcellular disparity of ions leads to a positive sensillum potential (greed downward arrow). Representative traces of potentials measured to evaluate SP (Right). Raw: the potential reading upon the contact of the recording electrode with the sensillum bristle tip (black). DC (direct current) bias: the potential reading upon impalement of the head by the recording electrode (gray). Red line indicates the difference between raw and DC bias, which represents the sensillum potential. The values resulting from the subtraction of the data between 20–60 s after the initial contact (time indicated by the purple double-headed arrow) were averaged to determine SP. (B) Photographs of impaled flies for DC bias determination at indicated sites. (C) DC bias values were obtained from indicated body parts. There is no statistical significance between the body sites (ANOVA Repeated Measures). (D) Photos before (top) and after (bottom) deflection of an i-type bristle. (E) Sensillum potential traces as a function of time from wild-type (WT) and nompC. Bristle bending started at 10 s, and the duration is marked by an orange double-headed arrow. (f00642F) The peak SP changes of WT and nompC were compared. (f00642G, H) SP was reduced in i- (G) and s-type (H) bristles of the indicated Ih-deficient mutants, relative to WT. (I, J) Ih RNAi in sweet-sensing GRNs (sGRNs) reduced SPs of the i- and s-type bristles. (K, L) The SP of Ih was restored by f03355Ih-RF expression in gustatory receptor neurons (GRNs) (red for sGRNs, blue for bGRNs). ###: Dunn’s, p<0.001. * and ***: Tukey’s, p<0.05 and p<0.001, respectively. §: Welch’s ANOVA, Games-Howell test, p<0.05. Letters indicate statistically distinct groups: Tukey’s test, p<0.05. Numbers in gray indicate the number of naive bristles tested in at least three animals.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Schematic diagram illustrating the sensillum potential in the taste bristle sensilla (Left). Black upward arrow indicates ion transport by pumps and transporters in support cells from the hemolymph to the sensillum lymph. These body fluids are physiologically separated by tight junctions between support cells. The resulting transcellular disparity of ions leads to a positive sensillum potential (greed downward arrow). Representative traces of potentials measured to evaluate SP (Right). Raw: the potential reading upon the contact of the recording electrode with the sensillum bristle tip (black). DC (direct current) bias: the potential reading upon impalement of the head by the recording electrode (gray). Red line indicates the difference between raw and DC bias, which represents the sensillum potential. The values resulting from the subtraction of the data between 20–60 s after the initial contact (time indicated by the purple double-headed arrow) were averaged to determine SP. (B) Photographs of impaled flies for DC bias determination at indicated sites. (C) DC bias values were obtained from indicated body parts. There is no statistical significance between the body sites (ANOVA Repeated Measures). (D) Photos before (top) and after (bottom) deflection of an i-type bristle. (E) Sensillum potential traces as a function of time from wild-type (WT) and nompCf00642. Bristle bending started at 10 s, and the duration is marked by an orange double-headed arrow. (F) The peak SP changes of WT and nompCf00642 were compared. (G, H) SP was reduced in i- (G) and s-type (H) bristles of the indicated Ih-deficient mutants, relative to WT. (I, J) Ih RNAi in sweet-sensing GRNs (sGRNs) reduced SPs of the i- and s-type bristles. (K, L) The SP of Ihf03355 was restored by Ih-RF expression in gustatory receptor neurons (GRNs) (red for sGRNs, blue for bGRNs). ###: Dunn’s, p<0.001. * and ***: Tukey’s, p<0.05 and p<0.001, respectively. §: Welch’s ANOVA, Games-Howell test, p<0.05. Letters indicate statistically distinct groups: Tukey’s test, p<0.05. Numbers in gray indicate the number of naive bristles tested in at least three animals.
 
 Suggesting the role of Ih in SP regulation, Ihf03355 (~19 and ~10 mV for i-type and s-type sensilla, respectively) and Ih-TG4.0/+ (~15 and ~16 mV for i-type and s-type sensilla, respectively) exhibited reduced mean SPs compared to WT in the i-type (Figure 2G) and s-type (Figure 2H) bristle sensilla (~28 mV and ~36 mV, respectively). We also examined whether the SP reduction could be attributed to the lack of Ih in sGRNs through GRN-specific Ih RNAi knockdown. This revealed that Ih is necessary in sGRNs for the sensilla to exhibit normal SP levels (Figure 2I and J). The SP reduction observed in both bristle types of Ihf03355 could be fully restored by expressing the Ih-RF cDNA in sGRNs (Gr64f-Gal4 cells). Mean SPs were measured to be ~42 and ~54 mV in i-type and s-type bristles, respectively (Figure 2K and L). Interestingly, ectopic expression of the cDNA in bGRNs by Gr89a-Gal4 also significantly rescued the SP defect of Ihf03355 to the level of mean SPs (~27 and ~33 mV in i-type and s-type bristles, respectively) comparable to those in WT. The greater extent of SP defect restoration in Ihf03355 by Ih-RF expressed in sGRNs than bGRNs indicates that Ih-RF is more effective at upholding SP in sGRNs than in bGRNs under our experimental conditions. Furthermore, the successful rescue by Ih-RF in bGRNs also shows that Ih can regulate SP in any GRN (Figure 2K and L).
 
-## Inactivation of sGRNs raised both bGRN activity and SP, which was reversed by Ih deficiency
+### Inactivation of sGRNs raised both bGRN activity and SP, which was reversed by Ih deficiency
 
 Since it is in sGRNs that HCN regulates the bGRN responsiveness to caffeine, we suspected that the activity of sGRNs may be closely associated with the maintenance of bGRN excitability. In line with this possibility, the Gr64af deletion mutant, which lacks the entire Gr64 gene locus and is severely impaired in sucrose and glucose sensing (Kim et al., 2018; Slone et al., 2007; Jiao et al., 2008), showed increased bGRN responses to various bitters in labellar gustatory bristle sensilla compared to WT (Figure 3A). Furthermore, silencing sGRNs (Gr5a-Gal4 cells) by expressing the inwardly rectifying potassium channel, Kir2.1 (Baines et al., 2001), phenocopied Gr64af in response to 2 mM caffeine stimulating the i-type bristles (Figure 3B). This increased responsiveness of bGRNs is unlikely due to positive feedback resulting from the sGRN inactivation through the neural circuitry in the brain, because the tetanus toxin light chain (TNT) expressed in sGRNs, which blocks chemical synaptic transmission (Broadie et al., 1995), failed to raise bGRN activity (Figure 3C). Strikingly, when we combined the sGRN-hindering genotypes (Gr5a>Kir2.1 and Gr64af) with the Ih alleles Ihf03355 or Ih-TG4.0, we found that the sGRN inhibition-induced increase in bGRN activity in response to caffeine could be commonly relieved by the disruptions in the Ih gene (Figure 3B and E). This result suggests that HCN suppresses sGRN activation, while HCN expressed in sGRNs is required for unimpaired bGRN activity (Figure 1C and E). Interestingly, Kir2.1-induced inactivation of sGRNs (Gr64f-Gal4 cells) dramatically increased the mean SP of the i-type bristles to ~53 mV, compared to ~29 and ~35 mV of Gal4 and UAS controls, respectively (Figure 3D), and the impairment of sucrose-sensing in the Gr64af mutants also resulted in increases of mean SPs (Figure 3F,~56 and~53 mV in the i- and s-bristles of Gr64af, compared to ~30 and ~36 mV of WT, respectively). Thus, inactivating sGRNs in two different ways increased SP in the i- and s-type gustatory bristles, similar to the effect on bGRN activity described earlier. Such repeated parallel shifts of bGRN activity and SP were again obtained in the combined genotypes between Gr64af and Ihf03355 or Ih-TG4.0/+ (Figure 3F); the SP increased in Gr64af descended to WT levels when combined with Ihf03355 and Ih-TG4.0/+, similar to what occurred with bGRN activity in Gr64af (Figure 3E). These results suggest that Ih gene expression suppresses sGRNs, upholding both bGRN activity and SP, similar to the genetic alterations that reduce sGRN activity.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/96602/elife-96602-fig3-v1.jpg)
+
+**Figure 3.:** (A) The bGRN spiking was increased in response to the indicated bitters in Gr64af mutants impaired in sucrose and glucose sensing. Ber: 0.5, Lob: 0.5, NMM: 2, Caf: 2 (i-type), and 0.09 (s-type), Umb: 0.1, TPH: 1 mM. ** and ***: Student’s t-test, p<0.01 and p<0.001, respectively. (B, C) Silencing by Kir2.1 (B), but not blocking chemical synaptic transmission (C), in sGRNs increased the spiking of bGRNs stimulated by 2 mM caffeine, which was reversed in Ihf03355 (B). #: Dunn’s, p<0.05. (D) Silencing sGRNs by Kir2.1 increased SP. #: Dunn’s, p<0.05. (E) The increased bGRN spiking in Gr64af was restored to wild-type (WT) levels by Ih deficiencies. Letters indicate significantly different groups (Tukey’s, p<0.05). Caffeine 2 mM was used (B, C, E). (F) Regardless of bristle type, SP was increased upon sGRN inactivation, which was reduced by Ih deficiencies. (p–r): Dunn’s test, p<0.05. (a–c): Welch’s ANOVA, Games-Howell test, p<0.05. Numbers in gray indicate the number of naïve tested bristles in at least three animals.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96602/elife-96602-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Water GRN activity evoked by 0.1 mM tricholine citrate (TCC) was appraised in wild-type (WT), Ihf03355 and a genomic rescue. The representative traces (Left) and box plots of spiking frequencies (Right) are shown. ##: Dunn’s, p<0.01. (B) SP in L-type bristles is reduced in Ih-deficient mutants but increased in Gr64af. Combination of Ih and Gr64af deficiencies cancels the respective effects, moving SPs towards the level observed in WT in i- and s-type bristles. Letters, a to c, indicate statistically distinct groups: Tukey’s, p<0.05. (C) Introduction of the Ih-RF cDNA in sGRNs, but not in bGRNs, restored SP in Ihf03355. §: Welch’s ANOVA, Games-Howell test, p<0.05. Numbers in gray indicate the number of naïve bristles tested in at least three animals.
+
 Water GRNs are co-housed with sGRNs in L-type bristles in the labellum, responding to hypo-osmolarity with the aid of ppk28 and promoting water drinking (Chen et al., 2010; Cameron et al., 2010). We tested whether Ih-dependent SP regulation occurs in these bristles to maintain the sensitivity of water GRNs by using a low concentration of the electrolyte tricholine citrate (0.1 mM TCC). Interestingly, L-type bristles of Ihf03355 showed reduced spike frequencies in response to this hypo-osmolar electrolyte solution compared to WT (Figure 3—figure supplement 1A). This reduction was restored in the genetic rescue line. Additionally, SP in these bristles was increased in Gr64af but decreased in the two Ih alleles, and the combination of the Gr64 and Ih mutations restored SP to the level of WT (Figure 3—figure supplement 1B), as observed with other sensillar bristles above. Finally, Ih-RF restored SP in Ihf03355 when expressed in sGRNs but not bGRNs, as expected from the absence of bGRNs in L types (Figure 3—figure supplement 1C). Thus, Ih-dependent SP regulation is universal in all bristle sensilla of the labellum and likely important for the function of GRNs neighboring sGRNs.
 
-## HCN delimits excitability of HCN-expressing GRNs, and increases SP
+### HCN delimits excitability of HCN-expressing GRNs, and increases SP
 
 By misexpressing Ih-RF in bGRNs of WT flies, we investigated how HCN physiologically controls HCN-expressing GRNs (Figure 4A). The genetic controls, Gr89a-Gal4/+ and UAS-Ih-RF/+, exhibited mutually similar dose dependencies saturated at 2- and 10 mM caffeine, revealing the maximal caffeine responses at these concentrations. Interestingly, the ectopic expression reduced bGRN activity at these high caffeine concentrations (Figure 4A). The flattened dose dependence suggests that ectopically expressed HCN suppresses strong excitation of bGRNs. In contrast, sGRNs were upregulated by the misexpression of Ih in bGRNs with increased spiking in response to 10 and 50 mM sucrose (Figure 4B), implying that Ih increases the activity of the neighboring GRN by reducing that of Ih-expressing GRNs. On the other hand, the Ih-RF-overexpressing sGRNs in Gr64f-Gal4 cells significantly decreased only the response 5 s after contacting 50 mM sucrose (Figure 4C, the second 5 s bin, Figure 4—figure supplement 1), probably because of native HCN preoccupying WT sGRNs. Although bGRNs were repressed by misexpressing Ih-RF, the mean SPs increased to ~40 and ~37 mV in the i- and s-type bristles, respectively, compared to controls with mean SPs of 22–25 mV (Figure 4D). These results from misexpression experiments corroborate the postulation that sGRNs are suppressed by expressing HCN. To confirm that sGRNs are suppressed by native HCN, the impact of GRN-specific Ih RNAi knockdown on sGRNs was quantitatively evaluated (Figure 4E). Ih RNAi in sGRNs (Gr64f-Gal4 cells) led to increased mean spiking frequencies by ~10 Hz in response to 1-, 5-, and 10 mM as well as 50 mM sucrose compared to Ih RNAi in bGRNs (Gr66a-Gal4 cells) and genetic controls, highlighting the extent to which HCN natively expressed in sGRNs suppresses sGRN excitability. In contrast, SP, necessary for GRN sensitization, was observed above to be reduced by Ih RNAi in sGRNs but not bGRNs (Figure 2I and J). Thus, these data suggest that HCN innately reduces the spiking frequencies of sGRNs even at relatively low sucrose concentrations, 1, and 5 mM. This is similar to the suppressive effect of Ih-RF misexpressed in bGRNs at relatively high caffeine concentrations, but differs in that the misexpression did not alter bGRN activity in response to low caffeine concentrations, 0.02 and 0.2 mM (Figure 4A), implying a complex cell-specific regulation of GRN excitability.
 
-## Sweetness in the food leads to a reduction of SP, bGRN activity, and bitter avoidance in Ih-deficient animals
+![Figure 4.](https://cdn.elifesciences.org/articles/96602/elife-96602-fig4-v1.jpg)
 
-Typically, we performed extracellular recordings on flies 4–5 days after eclosion, during which they were kept in a vial with fresh regular cornmeal food containing ~400 mM D-glucose. The presence of sweetness in the food would impose strong and frequent stimulation of sGRNs for an extended period, potentially requiring the delimitation of sGRN excitability for the homeostatic maintenance of gustatory functions. To investigate this possibility, we fed WT and Ihf03355 flies overnight with either non-sweet sorbitol alone (200 mM) or a sweet mixture of sorbitol (200 mM)+sucrose (100 mM). Although sorbitol is not sweet, it is a digestible sugar that provides Drosophila with calories (Fujita and Tanimura, 2011). We found that the sweet sucrose medium significantly reduced caffeine-induced bGRN responses in both genotypes compared to the sorbitol-only medium, but Ihf03355 bGRN spike frequencies were decreased to a level significantly lower than WT (Figure 5A), as seen above with the cornmeal food (Figures 1A, C , 3E). This suggests that the reduced bGRN activity in the mutants may result from prolonged sGRN excitation. The SP reduction was similarly induced by 1 hr incubation with the sweet sucrose medium in both WT and Ihf03355. However, the Ih mutant showed a more severe depletion of SPs compared to WT after 4 hr of sweet exposure (Figure 5B) as observed with the cornmeal food (Figures 2 and 3F). Even on the sorbitol food, the SP in Ihf03355 was significantly decreased compared to WT. This may be attributed to the loss of HCN, which is known to stabilize the resting membrane potential (Shah, 2014). Following overnight sweet exposure, SPs of WT and Ihf03355 were recovered to similar levels after 1 hr incubation with sorbitol-only food. However, it was after 4 hr on the sorbitol food that the two lines exhibited SP levels similar to those achieved by overnight incubation with sorbitol-only food (Figure 5B). These results indicate that SP depletion by sweetness is a slow process, and that the dysregulated reduction and recovery of SPs in Ihf03355 manifest only after long-term conditioning with and without sweetness, respectively.
+**Figure 4.:** (A) HCN misexpressed in bitter-sensing gustatory receptor neurons (bGRNs) flattened the dose dependence to caffeine. (B) HCN ectopically expressed in bGRNs elevates sweet-sensing GRN (sGRN) responses to sucrose. (C) Overexpression of HCN in sGRNs reduced the sGRN responses to sucrose 5 s after the initial contact. (D) Ih misexpression in bGRNs increased SP in i- and s-type bristles, which correlates with laterally increased sGRN activity (B). (E) Ih RNAi knockdown in sGRNs (Gr64f-Gal4 cells) dramatically elevates spiking frequencies in response to 1-, 5-, 10-, and 50 mM sucrose. *, **, and ***: Tukey’s, p<0.05, p<0.01, and p<0.001, respectively (A, D, E). # and ##: Dunn’s, p<0.05 and p<0.01 between genotypes, respectively (B, C, E). ‡: Dunn’s, p<0.05 between responses to different sucrose concentrations (B, C). §: Welch’s ANOVA, Games-Howell test, p<0.05 (E). The numbers in gray indicate the number of tested naïve bristles in at least three animals.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96602/elife-96602-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Post-stimulus spiking frequencies binned every second are shown for sucrose concentrations, 5, 10, and 50 mM (A, B and C, respectively). *: p<0.05, Tukey’s, Dunn’s or Games-Howell test, depending on the data distribution and variance. The data from i-b type bristles of Gr64f>Ih RF are significantly different from those of the genetic controls within the three indicated ranges. Numbers in gray indicate the number of naïve bristles tested in at least three animals. See Figure 4C for a different style of data presentation.
+
+### Sweetness in the food leads to a reduction of SP, bGRN activity, and bitter avoidance in Ih-deficient animals
+
+Typically, we performed extracellular recordings on flies 4–5 days after eclosion, during which they were kept in a vial with fresh regular cornmeal food containing ~400 mM D-glucose. The presence of sweetness in the food would impose strong and frequent stimulation of sGRNs for an extended period, potentially requiring the delimitation of sGRN excitability for the homeostatic maintenance of gustatory functions. To investigate this possibility, we fed WT and Ihf03355 flies overnight with either non-sweet sorbitol alone (200 mM) or a sweet mixture of sorbitol (200 mM)+sucrose (100 mM). Although sorbitol is not sweet, it is a digestible sugar that provides Drosophila with calories (Fujita and Tanimura, 2011). We found that the sweet sucrose medium significantly reduced caffeine-induced bGRN responses in both genotypes compared to the sorbitol-only medium, but Ihf03355 bGRN spike frequencies were decreased to a level significantly lower than WT (Figure 5A), as seen above with the cornmeal food (Figures 1A, C, 3E). This suggests that the reduced bGRN activity in the mutants may result from prolonged sGRN excitation. The SP reduction was similarly induced by 1 hr incubation with the sweet sucrose medium in both WT and Ihf03355. However, the Ih mutant showed a more severe depletion of SPs compared to WT after 4 hr of sweet exposure (Figure 5B) as observed with the cornmeal food (Figures 2 and 3F). Even on the sorbitol food, the SP in Ihf03355 was significantly decreased compared to WT. This may be attributed to the loss of HCN, which is known to stabilize the resting membrane potential (Shah, 2014). Following overnight sweet exposure, SPs of WT and Ihf03355 were recovered to similar levels after 1 hr incubation with sorbitol-only food. However, it was after 4 hr on the sorbitol food that the two lines exhibited SP levels similar to those achieved by overnight incubation with sorbitol-only food (Figure 5B). These results indicate that SP depletion by sweetness is a slow process, and that the dysregulated reduction and recovery of SPs in Ihf03355 manifest only after long-term conditioning with and without sweetness, respectively.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/96602/elife-96602-fig5-v1.jpg)
+
+**Figure 5.:** (A) Sweetness in the media reduced the 2 mM caffeine-evoked bGRN spiking, which was fully recovered in 4 hr incubation with sorbitol only food. Ihf03355 was affected by the type of the media more severely than wild-type (WT). O/N: overnight incubation with sorbitol only (gray) or sucrose food (red). (B) The SP of Ihf03355 bristle sensilla showed dysregulated reduction after 4 hr and overnight incubation on sweet media. These reductions started to be recovered in 1 hr feeding and were nearly fully recovered in 4 hr feeding on the indicated sorbitol only food. (C) Caffeine (Caf) avoidance was assessed with capillary feeder assay (CAFE). Ih is required for robust caffeine avoidance for flies maintained on sweet cornmeal food (sweet exposure +: filled boxes). Ihf03355 flies avoided 4 mM caffeine like WT flies when separated from sweet food for 20 hr (blank boxes). (D) Ih RNAi knockdown in sGRNs (Gr64f-Gal4) but not bGRNs (Gr66a-Gal4) led to relatively poor avoidance to caffeine after feeding on the sweet diet with sucrose. Suc: sucrose, and Sor: sorbitol. Letters indicate statistically distinct groups: a-f, Dunn’s, p<0.05 (A, B). * and ***: Tukey’s, p<0.05 and<0.001, respectively. (E) Illustration depicting the flies’ sweet feeding niche in overripe fruit (Left), leading to prolonged exposure of sGRNs to the sweetness (Right). (F) A schematic model of gustatory homeostasis in Drosophila bristle sensilla. Despite the prolonged sweetness in the environment robustly and frequently stimulating sweet-sensing GRNs (sGRNs), the sGRN activity is moderated by hyperpolarization-activated cyclic nucleotide-gated (HCN) channel to preserve the sensillum potential, which is required for normal bGRN responsiveness (Left). When HCN in sGRNs is incapacitated, sGRNs can become overly excited by sweetness of overripe fruit and deplete the sensillum potential, resulting in decreased bGRN activity and bitter avoidance (Right).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96602/elife-96602-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Bitter avoidance was evaluated by capillary feeder assay (CAFE). (B, C) Ih is required for avoidance to indicated bitters for flies maintained on sweet cornmeal food (sweet exposure +: filled boxes) but not for flies separated from sweetness for 20 hr (sweet exposure -: blank boxes). * and **: Tukey’s, p<0.05 and 0.01, respectively. Numbers in gray indicate the number of naïve bristles tested in at least three animals.
 
 To assess the behavioral implications of HCN-assisted preservation of SP and bGRN activity, flies were exposed long-term to sweetness on a regular sweet cornmeal diet (sweet exposure-positive), and then subjected to a CAFE with an 8 hr choice between water and 4 mM caffeine solution. Note that sucrose was not used in CAFE, because the presence of sweet stimuli was shown to suppress bGRNs (Lee et al., 2023). Indicative of reduced bitter sensitivity, Ihf03355 flies showed dramatically decreased caffeine avoidance, relative to WT (Figure 5C). In contrast, when flies were removed from the cornmeal food for 20 hr, both WT and Ihf03355 showed similarly robust bitter avoidance. The defect observed in the Ih mutant on the sweet cornmeal diet could be rescued by reintroducing a genomic fragment covering the Ih locus ({Ih}). These results were recapitulated with other bitters, lobeline, and theophylline (Figure 5—figure supplement 1). To examine whether caffeine avoidance requires Ih expression in sGRNs, CAFE was performed with GRN-specific RNAi knockdown of Ih. For the RNAi experiments, flies were kept overnight on either the non-sweet diet with sorbitol (200 mM) or the sweet diet with additional sucrose (100 mM). Ih knockdown in sGRNs, but not bGRNs, led to a deficit in the avoidance only when the flies had been on the sweet diet, indicating that HCN expression in sGRNs is necessary for robust caffeine avoidance in a sweet environment (Figure 5D). Therefore, the sweetness of the diet can compromise the function of bGRNs co-housed with sGRNs in the same sensilla, which is mitigated by HCN expression in sGRNs. Such a role of HCN is essential for bitter avoidance of flies, considering their likely prolonged exposure to sweetness in their natural habitat of overripe fruit (Figure 5E).
 
@@ -80,22 +116,235 @@ In this report, we introduce a peripheral coding design for feeding decisions th
 
 ## Materials and methods
 
-## Fly strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Cantonized w1118</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr64af</td>
+      <td>Dr. Moon at Yonsei U.</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ihf03355</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 85660; Flybase: FBti0051182</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Mi{Trojan-GAL4.0}IhMI03196-TG4.0 (Ih-TG4.0)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 76162; Flybase: FBti0187533</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Duplicate of Dp(2;3)GV-CH321-22I11</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 89744; Flybase: FBab0048672</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr5a-Gal4</td>
+      <td>Dr. Scott at UC Berkeley</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr64fLexA</td>
+      <td>Dr. Amrein at TAMU</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr64f-Gal4</td>
+      <td>Dr. Amrein at TAMU</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr89a-Gal4</td>
+      <td>Dr. Carlson at Yale</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr66a-Gal4</td>
+      <td>Dr. Amrein at TAMU</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Kir2.1</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 6595</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>LexAop-Kir2.1</td>
+      <td>Dr. Dickson at Janellia</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TNTE</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 28837; Flybase: FBst0028837</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tub-Gal80ts</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Ih-RF</td>
+      <td>This study or doi: 10.1101/2023.08.04.551918</td>
+      <td>Flybase: FBtr0290109</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Ih RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 58089; Flybase: FBst0058089</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nompCf00642</td>
+      <td>Korea Drosophila Resource Center</td>
+      <td>KDRC: K3137; Flybase: FBt0041920</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tricholine citrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #T0252</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Caffeine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #C0750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Berberine chloride form</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #B3251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lobeline hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #141879</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Umbelliferone</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #H24003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Theophylline anhydrous</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #T1633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Georgia Chem</td>
+      <td>Cat. #57-50-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-Sorbitol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #S1876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-methyl maleimide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #389412</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabChart 8</td>
+      <td>AD Instrument</td>
+      <td>https://www.adinstruments.com</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SigmaPlot 14.0</td>
+      <td>Systat Software Inc</td>
+      <td>https://systatsoftware.com/</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains
 
 The w1118 line in a Canton-S background was used as wild-type. Gr64f-Gal4 was provided by Dr. Hubert Amrein, and Gr5a-Gal4 by Dr. Kristin Scott. Gr64af is a gift from Dr. Seok Jun Moon. UAS-Ih RNAi (#58089), a duplicate of the Ih locus (denoted as {Ih} in the main text, #89744), Ihf03355 (#85660), and Ih-TG4.0 (#76162) were acquired from Bloomington Drosophila Stock Center (#stock number). The UAS-Ih-RF line was previously generated by the Korea Drosophila Resource Center (http://kdrc.kr) by site-specific recombination into attP49b (3 R), for which we cloned Ih cDNA through reverse transcription (Lee et al., 2023).
 
-## Extracellular recordings
+### Extracellular recordings
 
 In vivo extracellular recordings were performed by the tip-dip method as detailed previously (Hodgson et al., 1955; Du et al., 2016). Each of the i-a, i-b, and s-b type sensillum of 3–5 day-old flies were identified from the sensillum map described elsewhere (Weiss et al., 2011). The reference electrode was filled with HL3.1 solution (Feng et al., 2004). The recording electrode contained tastants solubilized in the electrolyte 2 (i-type) or 30 (L- and s-type) mM tricholine citrate (TCC). The concentrations of bitter chemicals were indicated in the corresponding figure legend. The spiking frequency (Hz) was calculated from the number of spikes in the first 5 s or the second 5 s as indicated, and compared between genotypes or experimental conditions. The signals picked up by the electrodes were amplified by the preamplifier Tasteprobe (Syntech) and digitized at a rate of 20 kb/s by PowerLab with Labchart software (ADInstruments). The number of experiments indicated in the figures are the number of naïve bristles tested. The naïve bristles were from at least three different animals.
 
-## Sensillum potential recordings
+### Sensillum potential recordings
 
 Media with or without sweetness were prepared as follows; the sorbitol medium consisted of 0.5% agarose and 200 mM sorbitol, while the sweet medium contained 0.5% agarose, 200 mM sorbitol, and 100 mM sucrose. Flies were kept overnight on these media before the experiment. For SP recordings, the recording electrode contained 2 mM TCC as the electrolyte, and Tasteprobe was set to record in ‘pass-through’ mode with DC (in the High-Pass filter window) and 100 ms zeroing time settings. Amplified signals were digitized at a rate of 100 Hz using PowerLab/Labchart. First, differential potentials were measured between a recording electrode on a taste sensillum and a reference electrode inserted into the labellum as performed for the extracellular bristle sensillum recordings. DC bias (Marion‐Poll and van der Pers, 1996) was measured by impaling the recording electrode into the thorax of the same animals used for SP measurements. DC bias was subsequently subtracted from the initial readouts of the differential potential to evaluate SP (Figure 2A). The resulting SPs were averaged during a 40 s long recording 20 s after initial contact, which was subsequently used for further analyses.
 
-## Bitter avoidance assay
+### Bitter avoidance assay
 
 Twenty flies, aged 3–5 days and consisting of 10 males and 10 females, were used to assess bitter avoidance using capillary feeder assay (CAFE). To test the bitter sensitivity of each genotype of interest in feeding behavior, flies were kept on regular cornmeal food or starved on nonsweet water-soaked Kimwipes overnight, and then given a choice between water and 4 mM caffeine for 8 hr. For RNAi experiments, 200 mM sorbitol is used in nonsweet food and sweet food, the latter of which included 100 mM sucrose in addition. Avoidance indices were obtained as the net volume fraction of water consumption subtracted by the volume fraction of caffeine ingestion.
 
-## Statistics
+### Statistics
 
 Statistical calculation was performed using Sigmaplot 14.5 (Systat Software). The sample sizes and the statistical tests are indicated in each figure or in the legend. Normal distribution and heteroskedasticity were assessed using Shapiro-Wilk and Brown-Forsythe tests, respectively, before parametric tests. When these tests were failed, non-parametric tests were performed. However, for some cases, heteroskedasticity with normality led us to perform Welch’s t-test (Sigmaplot 14) or Welch’s ANOVA. The latter was followed by the Games-Howell test as a parametric analysis using the Excel spreadsheet available at https://www.biostathandbook.com/welchanova.xls. No outlier was excluded for statistical analyses.

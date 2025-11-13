@@ -22,7 +22,7 @@
 
 ## Abstract
 
-A fundamental challenge in human immunodeficiency virus (HIV) eradication is to understand how the virus establishes latency, maintains stable cellular reservoirs, and promotes rebound upon interruption of antiretroviral therapy (ART). Here, we discovered an unexpected role of the ubiquitous gasotransmitter hydrogen sulfide (H 2 S) in HIV latency and reactivation. We show that reactivation of HIV is associated with downregulation of the key H 2 S producing enzyme cystathionine-γ-lyase (CTH) and reduction in endogenous H 2 S. Genetic silencing of CTH disrupts redox homeostasis, impairs mitochondrial function, and remodels the transcriptome of latent cells to trigger HIV reactivation. Chemical complementation of CTH activity using a slow-releasing H 2 S donor, GYY4137, suppressed HIV reactivation and diminished virus replication. Mechanistically, GYY4137 blocked HIV reactivation by inducing the Keap1-Nrf2 pathway, inhibiting NF-κB, and recruiting the epigenetic silencer, YY1, to the HIV promoter. In latently infected CD4 + T cells from ART-suppressed human subjects, GYY4137 in combination with ART prevented viral rebound and improved mitochondrial bioenergetics. Moreover, prolonged exposure to GYY4137 exhibited no adverse influence on proviral content or CD4 + T cell subsets, indicating that diminished viral rebound is due to a loss of transcription rather than a selective loss of infected cells. In summary, this work provides mechanistic insight into H 2 S-mediated suppression of viral rebound and suggests exploration of H 2 S donors to maintain HIV in a latent form.
+A fundamental challenge in human immunodeficiency virus (HIV) eradication is to understand how the virus establishes latency, maintains stable cellular reservoirs, and promotes rebound upon interruption of antiretroviral therapy (ART). Here, we discovered an unexpected role of the ubiquitous gasotransmitter hydrogen sulfide (H2S) in HIV latency and reactivation. We show that reactivation of HIV is associated with downregulation of the key H2S producing enzyme cystathionine-γ-lyase (CTH) and reduction in endogenous H2S. Genetic silencing of CTH disrupts redox homeostasis, impairs mitochondrial function, and remodels the transcriptome of latent cells to trigger HIV reactivation. Chemical complementation of CTH activity using a slow-releasing H2S donor, GYY4137, suppressed HIV reactivation and diminished virus replication. Mechanistically, GYY4137 blocked HIV reactivation by inducing the Keap1-Nrf2 pathway, inhibiting NF-κB, and recruiting the epigenetic silencer, YY1, to the HIV promoter. In latently infected CD4+ T cells from ART-suppressed human subjects, GYY4137 in combination with ART prevented viral rebound and improved mitochondrial bioenergetics. Moreover, prolonged exposure to GYY4137 exhibited no adverse influence on proviral content or CD4+ T cell subsets, indicating that diminished viral rebound is due to a loss of transcription rather than a selective loss of infected cells. In summary, this work provides mechanistic insight into H2S-mediated suppression of viral rebound and suggests exploration of H2S donors to maintain HIV in a latent form.
 
 ## Introduction
 
@@ -36,31 +36,63 @@ Based on the role of H2S in regulating redox balance, mitochondrial bioenergetic
 
 ## Results
 
-## Diminished biogenesis of endogenous H2S during HIV-1 reactivation
+### Diminished biogenesis of endogenous H2S during HIV-1 reactivation
 
 To investigate the link between HIV-1 latency and H2S, we measured changes in the expression of genes encoding H2S-generating enzymes CBS, CTH, and MPST in monocytic (U1) and lymphocytic (J1.1 and J-Lat) models of HIV-1 latency (Figure 1A). The U1 and J1.1/J-Lat cell lines are well-studied models of post-integration latency and were derived from chronically infected clones of a promonocytic (U937) and a T-lymphoid (Jurkat) cell line, respectively (Folks et al., 1987; Perez et al., 1991; Jordan et al., 2003). Both U1 and J1.1/J-Lat show very low basal expression of the HIV-1 genome, which can be induced by several latency reversal agents (LRAs) such as PMA, TNF-α, and prostratin (Figure 1B; Folks et al., 1987; Perez et al., 1991; Jordan et al., 2003). First, we confirmed virus reactivation by measuring HIV-1 gag transcript in U1 with a low concentration of PMA (5 ng/ml). Treatment of PMA induces detectable expression of gag at 12 hr, which continued to increase for the entire 36 hr duration of the experiment (Figure 1C). Next, we assessed the mRNA and protein levels of CBS, CTH, and MPST in U1 during virus latency (untreated) and reactivation (PMA-treated). The mRNA and protein expression levels of CTH showed a significant reduction at 24 and 36 hr post-PMA treatment as compared to the untreated control, whereas the expression of CBS was not detected and MPST remained unaffected (Figure 1D–E). As an uninfected control, we measured the expression of CBS, CTH, and MPST in U937 cells. In contrast to U1, PMA treatment stimulated the mRNA and protein levels of CTH in U937 (Figure 1F–G), while CBS was barely detectable. Also, we directly measured endogenous H2S levels using a fluorescent probe 7-azido-4-methylcoumarin (AzMc) that quantitatively detects H2S in living cells (Chen et al., 2013). Consistent with the expression data, reactivation of HIV-1 by PMA reduced H2S generation in U1, whereas H2S levels were significantly increased by PMA in the uninfected U937 (Figure 1H–I).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/68487/elife-68487-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic showing H2S producing enzymes in mammalian cells. (B) Experimental strategy for measuring HIV-1 reactivation and H2S production in U1. (C) U1 cells were stimulated with 5 ng/ml PMA and the expression of gag transcript was measured at indicated time points. (D, E) Time-dependent changes in the expression of CTH, CBS, and MPST at mRNA and protein level during HIV-1 latency (−PMA) and reactivation (+PMA [5 ng/ml]) in U1 cells. (F, G) Time-dependent changes in the expression of CTH, CBS, and MPST at mRNA and protein level in U937 cells with or without PMA treatment. Results were quantified by densitometric analysis for CTH, CBS, and MPST band intensities and normalized to GAPDH, using ImageJ software. (H, I) U1 and U937 cells were treated with 5 ng/ml PMA for 24 hr or left untreated, stained with AzMC for 30 min at 37°C, and images were acquired using Leica TCS SP5 confocal microscope (H). Scale bar represents 40 μm. Average fluorescence intensity was quantified by ImageJ software (I). Results are expressed as mean ± standard deviation and are representative of data from three independent experiments. *, p<0.05; **, p<0.01; ***, p<0.001, by two-way ANOVA with Tukey’s multiple comparison test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68487/elife-68487-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) J1.1 and Jurkat cells were stimulated with 5 ng/ml PMA for 6, 12, 24, and 36 hr and total cell lysates were prepared to analyze CTH, CBS, and MPST protein levels. HIV-1 reactivation was assessed by immunoblotting for intracellular viral protein, p24. The results are representative of data from three independent experiments. Results were quantified by densitometric analysis for CTH, CBS, and MPST band intensities and normalized to GAPDH. (C, D) J-Lat 10.6 cells were stimulated with 5 ng/ml PMA for indicated time and the levels of HIV-1 reactivation are represented as the percentage of GFP+ve cells by flow cytometry. (D) Time-dependent changes in the expression of CBS, CTH, and MPST at mRNA level during HIV-1 reactivation. Data generated using PMA-treated J-Lat cells were normalized to uninfected PMA-treated Jurkat cells. Results are expressed as mean ± standard deviation and are representative of data from three independent experiments. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001 by two-way ANOVA with Tukey’s multiple comparison test.
+
 Similar to U1 monocytic cells, PMA treatment reactivated HIV-1 and reduced the expression of CTH in J1.1 lymphocytic cells but not in the uninfected Jurkat cells in a time-dependent manner (Figure 1—figure supplement 1A-B). The expression of CBS was reduced in both J1.1 and Jurkat upon PMA treatment, indicating that only CTH specifically downregulates in response to HIV-1 reactivation (Figure 1—figure supplement 1A-B). In J-Lat cells, HIV-1 genome encodes GFP, which facilitates precise measurement of PMA-mediated HIV-1 reactivation from latency by flow cytometry. Treatment with PMA reactivated HIV-1 in a time-dependent manner and diminished the expression of CBS, CTH, and MPST in J-Lat as compared to Jurkat cells (Figure 1—figure supplement 1C-D). Taken together, these data indicate that HIV-1 reactivation is associated with diminished biogenesis of endogenous H2S.
 
-## CTH-mediated reactivation of HIV-1 from latency
+### CTH-mediated reactivation of HIV-1 from latency
 
 Our results suggest that H2S biogenesis via CTH is associated with HIV-1 latency. Therefore, we next asked whether CTH-derived H2S regulates the reactivation of HIV-1 from latency. To test this idea, we depleted endogenous CTH levels in U1 using RNA interference (RNAi). The short hairpin RNA specific for CTH (U1-shCTH) silenced the expression of CTH mRNA and protein by 90% as compared to non-targeting shRNA (U1-shNT) (Figure 2A–B and Supplementary file 1a). Moreover, using AzMC probe, we confirmed the reduction in endogenous H2S levels in U1-shCTH as compared to U1-shNT (Figure 2—figure supplement 1A-B). In addition to H2S production, CTH catalyzes the last step in the reverse transsulfuration pathway to generate cysteine. However, levels of cysteine remain comparable in U1-shCTH and U1-shNT (Figure 2—figure supplement 1C), indicating that other routes for cysteine biosynthesis (e.g., de novo and assimilatory pathways) compensate for CTH depletion in U1. Next, we investigated the effect of H2S depletion via CTH suppression on HIV-1 latency by measuring viral transcription (gag transcript), translation (HIV-1 p24 capsid protein), and release (HIV-1 p24 abundance in the cell supernatant). We found that the low basal expression of HIV-1 gag in U1-shCTH was stimulated by 16-fold upon depletion of CTH (p=0.0018) (Figure 2C). Furthermore, while PMA induced expression of gag transcript by 73-fold in U1-shNT, a further enhancement to 200-fold was observed in U1-shCTH (Figure 2C). Consistent with this, levels of p24 capsid protein inside cells or released in the supernatant were significantly elevated in U1-shCTH as compared to U1-shNT with (p=0.028) or without PMA-treatment (p=0.015) (Figure 2D–E). Deprivation of cysteine in the culture medium does not stimulate viral transcription in U1 (Figure 2—figure supplement 1D), indicating that reduction in H2S levels is likely responsible for the reactivation of HIV-1 in U1-shCTH.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68487/elife-68487-fig2-v3.jpg)
+
+**Figure 2.:** (A) Total RNA was isolated from shCTH E8, shCTH E9, and non-targeting shRNA (shNT) lentiviral vectors transduced U1 cells and change in CTH mRNA was examined by RT-qPCR. (B) Cell lysates of U1, shNT, and shCTH E8 were assessed for CTH abundance using immunoblotting. The CTH band intensities were quantified by densitometric analysis and normalized to GAPDH. (C) shCTH and shNT were treated with 5 ng/ml PMA or left untreated for 24 hr and HIV-1 reactivation was determined by gag RT-qPCR. (D, E) shCTH and shNT were treated with 5 ng/ml PMA or left untreated. At the indicated time points, HIV-1 reactivation was measured by flow-cytometry using fluorescent tagged (PE-labeled) antibody specific to intracellular p24 (Gag) antigen and p24 ELISA in the supernatant. Results are expressed as mean ± standard deviation and are representative of data from two independent experiments. *, p<0.05; **, p<0.01; ***, p<0.001, by two-way ANOVA with Tukey’s multiple comparison test. (F) Total RNA isolated from untreated or PMA (5 ng/ml; 24 hr)-treated U1-shNT and U1-shCTH were examined by NanoString Technology to assess the expression of genes associated with HIV-1 infection and oxidative stress response. Heatmap showing functional categories of significantly differentially expressed genes. Gene expression data obtained were normalized to internal control β2 microglobulin (B2M), and fold changes were calculated using the nSolver 4.0 software. Genes with fold changes values of >1.5 and p<0.05 were considered as significantly altered. RT-qPCR, reverse transcription quantitative PCR.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68487/elife-68487-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) U1 cells stably transduced with non-targeting (shNT) and shCTH lentiviral vectors were stained with AzMC for 30 min at 37°C, and images were acquired using ZEISS LSM 880 confocal microscope (A). Scale bar represents 20 μm. Average fluorescence intensity was quantified by ImageJ software (B). (C) U1-shNT and U1-shCTH cells were cultured in complete RPMI medium and cysteine levels were assessed in cell lysates using cysteine assay kit (Sigma-Aldrich). (D) U1 cells were cultured in complete RPMI medium containing cysteine (+Cys) or cysteine-free RPMI (−Cys) for indicated time points. Total RNA was isolated and assessed for HIV-1 reactivation by gag RT-qPCR. (E) Total cell lysates were prepared from un-transduced (J1.1), non-targeting (shNT), shCBS, and shCTH knockdown J1.1 cells. Expression of CBS, CTH, MPST, and HIV-1 p24 levels was assessed by immunoblotting. (F) Total RNA was isolated from shCTH E8 and non-targeting shRNA (shNT) lentiviral vectors transduced J-Lat 10.6 cells and changes in CTH mRNA was examined by RT-qPCR. (G) HIV-1 reactivation upon CTH knockdown in J-Lat 10.6 cells is represented as percentage of GFP+ve cells by flow cytometry. (H, I) J-Lat 10.6 cells were pre-treated with indicated concentration of PAG or left untreated for 24 hr and then stimulated with 5 ng/ml PMA for 24 hr. HIV-1 reactivation is represented as the percentage of GFP+ve cells and cell viability was determined by Live/Dead fixable far red dead cell stain kit (Invitrogen). Results are expressed as mean ± standard deviation and are representative of data from two independent experiments. ***, p<0.001, ****, p<0.0001; ns, non-significant, by two-way ANOVA with Tukey’s multiple comparison test (panels D, H, and I) or two-tailed unpaired Student’s t-test (panels B, C, F, G). RT-qPCR, reverse transcription quantitative PCR.
+
 We also depleted CTH levels in J1.1 cells using RNAi and monitored HIV-1 reactivation by assessing intracellular p24 levels under basal conditions. The depletion of CTH triggered HIV-1 reactivation from latency as evident from a sevenfold increase in p24 levels as compared to shNT (Figure 2—figure supplement 1E). A minor increase in p24 levels (3.8-fold) was also apparent upon the depletion of CBS in J1.1 (Figure 2—figure supplement 1E). Finally, and consistent with U1 and J1.1, genetic silencing of CTH using a CTH specific shRNA or chemical inhibition by propargylglycine (PAG) reactivated HIV-1 in J-Lat cells (Figure 2—figure supplement 1F-I). These data indicate that CTH and likely CTH-derived H2S supports latency and impede the reactivation of HIV-1.
 
-## Altered expression of genes involved in HIV-1 reactivation upon CTH depletion
+### Altered expression of genes involved in HIV-1 reactivation upon CTH depletion
 
 The above results indicate that CTH is a target controlling HIV-1 reactivation from latency, prompting us to investigate the mechanism. Several pathways that induce HIV-1 reactivation from latency are also influenced by H2S. These include redox signaling (Banerjee, 2011), NF-κB pathway (Gao et al., 2012), inflammatory response (Bhatia, 2012), and mitochondrial bioenergetics (Szabo et al., 2014). Hence, we conducted a focused expression profiling of 185 human genes intrinsically linked to HIV-1 reactivation using the NanoString nCounter Technology (see Supplementary file 1b for the gene list) to measure absolute amounts of multiple transcripts without reverse transcription. Because depletion of CTH promoted reactivation of the HIV-1 in U1, we compared the expression profile of U1-shCTH with U1-shNT to further understand the link between H2S biogenesis and HIV-1 latency. Examination of 84 genes related to oxidative stress response revealed differential regulation of 22 genes in U1-shCTH compared with U1-shNT (Figure 2F and Supplementary file 1c). Interestingly, more than 90% of genes showing altered expression were downregulated in U1-shCTH. Of these, genes encoding key cellular antioxidant enzymes and buffers such as catalase (CAT), superoxide dismutase (SOD1), peroxiredoxin family, thioredoxin family (TXN, TXNRD1 and TXNRD2), sulfiredoxin (SRXN1), glutathione metabolism (GCLM, GSS, and GSR), and sulfur metabolism (MPST, AHCY, and MAT2A) were significantly less expressed in U1-shCTH as compared to U1-shNT (Figure 2F). Further, while MPST was downregulated upon CTH knock-down, CBS remained undetectable in U1-shCTH and U1-shNT (Figure 2F). Since oxidative stress elicits HIV-1 reactivation (Bhaskar et al., 2015), these findings indicate that HIV-1 reactivation through CTH depletion could be a consequence of an altered redox balance. Further, pathways involved in promoting HIV-1 reactivation, such as NF-κB signaling (Williams et al., 2007) and apoptosis (Khan et al., 2015), were also induced in U1-shCTH as compared to U1-shNT (Figure 2F). Notably, multiple HIV-1 restriction factors are important for viral latency including type I interferon signaling (IRF2 and STAT-1) (Sgarbanti et al., 2002; Nguyen et al., 2018), APOBEC3G (Gillick et al., 2013), CDK9-CCNT1 ( Amini et al., 2002; Budhiraja et al., 2013), SLP-1 (McNeely et al., 1995), and chromatin remodelers (SMARCB1, BANF1, and YY1) (Rafati et al., 2011; Coull et al., 2000) were downregulated in U1-shCTH. HIV-1 proteins are known to target mitochondria to induce mitochondrial depolarization, elevate mitochondrial reactive oxygen species (ROS), and apoptosis for replication (Badley et al., 2003). Several genes involved in sustaining mitochondrial function and membrane potential (e.g., BAX, UCP2, LHPP, and MPV17) were repressed in U1-shCTH (Figure 2F), highlighting a potential association between unrestricted virus replication, mitochondrial dysfunction, and CTH depletion.
 
 Since PMA is known to reactivate HIV-1 (Pardons et al., 2019b), we examined the gene expression in U1-shNT upon reactivation of HIV-1 by PMA. We found that 80% of genes affected by the depletion of CTH were similarly perturbed in response to PMA. Signature of transcripts associated with oxidative stress response, sulfur metabolism, anti-viral factors, and mitochondrial function was comparable in U1-shCTH and PMA-treated U1-shNT (Figure 2F). Based on these similarities, we hypothesized that combining PMA with CTH depletion would have an additive effect on the expression of genes linked to HIV-1 reactivation. Indeed, exposure of U1-shCTH to PMA induced gene expression changes, which surpassed those produced by PMA treatment or CTH-depletion alone (Figure 2F). Notably, significant expression changes in U1-shCTH upon PMA treatment are consistent with our data showing maximal HIV-1 activation under these conditions (see Figure 2C). Overall, these results indicate that CTH contributes to HIV-1 latency by modulating multiple pathways coordinating cellular homeostasis (e.g., redox balance and mitochondrial function) and the anti-viral response.
 
-## CTH is required to maintain redox homeostasis and mitochondrial function
+### CTH is required to maintain redox homeostasis and mitochondrial function
 
 Physiological levels of H2S support redox balance and mitochondrial function by maintaining GSH balance (Kimura et al., 2010), protecting against ROS (Kimura et al., 2010), and acting as a substrate for the electron transport chain (ETC) (Modis et al., 2014; Fu et al., 2012). On this basis, we reasoned that the depletion of CTH could contribute to redox imbalance and mitochondrial dysfunction, both of which are known to promote HIV-1 reactivation (Tyagi et al., 2020; Bhaskar et al., 2015; Singh et al., 2021). We first measured total glutathione content (GSH+GSSG) and GSSG concentration in U1-shNT and U1-shCTH using chemical-enzymatic analysis of whole-cell extract (Bhaskar et al., 2015). Whole-cell glutathione content was not significantly different in U1-shNT and U1-shCTH (p=0.2801) (Figure 3A). However, the GSSG concentration was elevated in U1-shCTH resulting in a concomitant decrease in the GSH/GSSG ratio of U1-shCTH as compared to U1-shNT (p=0.0032) (Figure 3A). The increased GSSG pool and reduced GSH/GSSG poise confirm that cells are experiencing oxidative stress upon CTH depletion. We measured total ROS using a fluorescent probe, 5,6-chloromethyl-2′,7′-dichlorodihydrofluorescein diacetate (CM-H2DCFDA), which non-specifically responds to any type of ROS within the cells. Both U1-shNT and U1-shCTH showed comparable levels of cytoplasmic ROS (Figure 3—figure supplement 1A), which remained unchanged after stimulation with PMA. In addition to cytoplasmic ROS, we also measured mitochondrial ROS (mitoROS) using the red fluorescent dye MitoSOX, which selectively stains mitoROS. Lowering the levels of CTH severely increased mitoROS in U1, which was further accentuated after PMA stimulation (Figure 3B). We then studied the effect of CTH depletion on mitochondrial functions using a Seahorse XF Extracellular Flux Analyzer (Agilent) as described previously by us (Figure 3C; Tyagi et al., 2020; Szabo et al., 2014). Both basal and ATP-coupled respiration was significantly decreased in U1-shCTH as compared to U1-shNT (Figure 3D–E), consistent with the role of endogenous H2S in reducing cytochrome C oxidase for respiration (Szabo et al., 2014). The maximal respiratory capacity, attained by the dissipation of the mitochondrial proton gradient with the uncoupler FCCP, was markedly diminished in U1-shCTH (Figure 3E). The maximal respiration also facilitated the estimation of the spare respiratory capacity (SRC), which was nearly exhausted in U1-shCTH. Additional hallmarks of HIV-1 reactivation and dysfunctional mitochondria such as coupling efficiency and non-mitochondrial oxygen consumption rate (nmOCR) (Tyagi et al., 2020) were also adversely affected upon depletion of CTH (Figure 3E). These results indicate that CTH depletion decelerates respiration, diminishes the capacity of macrophages to maximally respire, and promotes nmOCR. All of these parameters are important features of mitochondrial health and are likely to be crucial for maintaining HIV-1 latency.
 
-## A small-molecule H2S donor diminished HIV-1 reactivation and viral replication
+![Figure 3.](https://cdn.elifesciences.org/articles/68487/elife-68487-fig3-v3.jpg)
+
+**Figure 3.:** (A) Total and oxidized cellular glutathione (GSSG) content was assessed in U1-shCTH and U1-shNT cell lysates using glutathione assay kit. (B) U1-shNT and U1-shCTH were stained with MitoSOX Red dye for 30 min at 37°C and analyzed by flow cytometry (Ex-510 nm, Em-580 nm). (C) Schematic representation of Agilent Seahorse XF Cell Mito Stress test profile to assess key parameters related to mitochondrial respiration. (D) U1-shNT and U1-shCTH (5×104) were seeded in triplicate wells of XF microplate and incubated for 1 hr at 37°C in a non-CO2 incubator. Oxygen consumption was measured without adding any drug (basal respiration), followed by measurement of OCR change upon sequential addition of 1 μM oligomycin (ATP synthase inhibitor) and 0.25 μM carbonyl cyanide 4-(trifluoromethoxy) phenylhydrazone (FCCP), which uncouples mitochondrial respiration and maximizes OCR. Finally, rotenone (0.5 μM) and antimycin A (0.5 μM) were injected to completely inhibit respiration by blocking complex I and complex III, respectively. (E) Various respiratory parameters derived from OCR measurement were determined by Wave desktop software. nmOCR; non-mitochondrial oxygen consumption rate and SRC; spare respiratory capacity. Error bar represents standard deviations from mean. Results are representative of data from three independent experiments. *, p<0.05; **, p<0.01; ***, p<0.001; ns, non-significant, by two-way ANOVA with Bonferroni’s multiple comparison test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68487/elife-68487-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) U1-shNT and U1- shCTH cells were left untreated or treated with 5 ng/ml PMA for 6 hr, stained with CM-H2DCFDA dye (5 μM) analyzed using flow cytometry. Results are expressed as mean ± standard deviation and data are representative of two independent experiments. ns, nonsignificant, by two-way ANOVA with Tukey’s multiple comparison test. ROS, reactive oxygen species.
+
+### A small-molecule H2S donor diminished HIV-1 reactivation and viral replication
 
 Having shown that diminished levels of endogenous H2S are associated with redox imbalance, mitochondrial dysfunction, and reactivation of HIV-1 from latency, we next examined if elevating H2S levels using a small-molecule H2S donor- GYY4137 sustains HIV-1 latency. The GYY4137 is a widely used H2S donor that releases a low amount of H2S over a prolonged period to mimic physiological production (Li et al., 2008). Because H2S discharge is unusually sluggish by GYY4137, the final concentration of H2S released is likely to be significantly lower than the initial concentration of GYY4137. We confirmed this by measuring H2S release in U1 cells treated with low (0.3 mM) or high (5 mM) concentrations of GYY4137 using methylene blue colorimetric assay. As a control, we treated U1 cells with 0.3 mM NaHS, which rapidly releases a high amount of H2S. As expected, NaHS treatment rapidly released 90% of H2S within 5 min of treatment (Figure 4A). In contrast, GYY4137 uniformly released a low amount of H2S for the entire 120 hr duration of the experiment (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68487/elife-68487-fig4-v3.jpg)
+
+**Figure 4.:** (A) U1 cells were treated with NaHS or GYY4137 and media supernatant was harvested to assess H2S production by methylene blue assay over time. (B, C) U1 cells were pre-treated with 5 mM GYY4137 or 5 mM NAC for 24 hr and then stimulated with 5 ng/ml PMA for 24 and 48 hr. Total RNA was isolated and HIV-1 reactivation was assessed by gag RT-qPCR (B). Culture supernatant was harvested to monitor HIV-1 release by p24 ELISA (C). (D) U1 cells were pretreated with 5 mM GYY417, 5 mM NAC for 24 hr or left untreated and then stimulated with 100 ng/ml TNF-ɑ for 24 and 48 hr. HIV-1 reactivation was assessed by gag RT-qPCR. (E) U1-shCTH and U1-shNT were pretreated with 5 mM GYY4137 for 24 hr and stimulated with 5 ng/ml PMA for 24 hr. Culture supernatant was harvested to determine HIV-1 reactivation by HIV-1 p24 ELISA. (F) J1.1 cells were pretreated with indicated concentrations of GYY4137 or 5 mM NAC for 24 hr and then stimulated with 5 ng/ml PMA for 12 hr. Cells were harvested to isolate total RNA and HIV-1 reactivation was assessed by gag RT-qPCR. (G) Primary human CD4+ T cells purified from PBMCs samples of healthy donors were activated with anti-CD3/anti-CD28 beads for 3 days. Activated primary CD4+ T cells (three healthy donors) were pre-treated with 800 μM GYY4137 for 6 hr, and infected with HIV-NL4.3 (1 ng p24/106 cells). Post-infection (p.i.) cells were washed, seeded in fresh media, and treated with 800 μM GYY4137 or left untreated. Virus released in the supernatant was quantified by p24 ELISA at 3rd and 5th day post-infection. Results are expressed as ± standard deviation and data are representative of three independent experiments. *, p<0.05; **, p<0.01; ***, p<0.001, ns, non-significant by two-way ANOVA with Tukey’s multiple comparison test. PBMC, peripheral blood mononuclear cell; RT-qPCR, reverse transcription quantitative PCR.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68487/elife-68487-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) U1 cells were pretreated with 5 mM GYY4137 or 5 mM NAC for 24 hr and then stimulated with 5 ng/ml PMA for 24 or 48 hr. Cells were stained with 3 μM propidium iodide (PI) for 15 min in dark, washed, and analyzed using flow cytometry. (B) Decomposed GYY4137 (spent GYY4137) which was aerated for at least 180 days at left at room temperature was used to pretreat U1 cells. Cells pretreated with 5 mM spent GYY4137 for 24 hr or left untreated were stimulated with 5 ng/ml PMA for 24 hr and HIV-1 reactivation was assessed by gag RT-qPCR. (C) J1.1 cells were pretreated with GYY4137 for 24 hr and then stimulated with PMA for 12 hr. Cells were then harvested, stained with PI, and subjected to flow cytometry to assess viability. (D) J-Lat cells were pretreated with 5 mM NAC or indicated concentrations of GYY4137 for 24 hr and then stimulated with 2.5 μM prostratin for 24 hr. HIV-1 reactivation was determined by estimating GFP expressing cells using flow cytometry. (E) Primary human CD4+ T cells purified from PBMCs samples of healthy donors were activated with CD3/CD28 for 3 days. Post-activation CD4+ T cells were treated with indicated concentration of GYY4137. Cell viability was determined at 3rd day post-treatment using Live/Dead fixable far red dead cell stain kit (Invitrogen) by flow cytometry. Error bar represents standard deviations from mean. Results are representative of data from two independent experiments. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001; ns, nonsignificant, by two-way ANOVA with Tukey’s multiple comparison test. PBMC, peripheral blood mononuclear cell; RT-qPCR, reverse transcription quantitative PCR.
 
 We systematically tested the effect of GYY4137 on HIV-1 reactivation using multiple models of HIV-1 latency and replication. As a control, we used N-acetyl cysteine (NAC) that is known to block HIV-1 reactivation (Roederer et al., 1990). Pretreatment of U1 with a non-toxic dose of GYY4137 (5 mM) (Figure 4—figure supplement 1A) diminished the expression of gag transcript by twofold at 24 hr and tenfold at 48 hr post-PMA treatment (Figure 4B). The effect of GYY4137 on p24 levels in the supernatant was even more striking as it completely abolished the time-dependent increase in p24 concentration post-PMA treatment (Figure 4C). As expected, pretreatment with NAC similarly prevented PMA-triggered reactivation of HIV-1 in U1 (Figure 4C). Pretreatment of U1 with spent GYY4137, which comprises the decomposed backbone, showed no effect on PMA induced gag transcript (Figure 4—figure supplement 1B). Because TNF-α is a physiologically relevant cytokine that reactivates HIV-1 from latency (Folks et al., 1987), we tested the effect of GYY4137 on TNF-α-mediated virus reactivation. Treatment of U1 with TNF-α stimulated the expression of gag transcript by 42-fold and 169-fold at 24 and 48 hr, post-treatment, respectively (Figure 4D). The addition of GYY4137 or NAC nearly abolished the reactivation of HIV-1 in response to TNF-α treatment (Figure 4D). Earlier, we showed that depletion of CTH stimulated HIV-1 reactivation in U1 (see Figure 2C). Therefore, we tested if GYY4137 could complement this genetic deficiency and subvert HIV-1 reactivation. The U1-shCTH cells were pre-treated with 5 mM GYY4137 and p24 levels in the supernatant were measured. The elevated levels of p24 in U1-shCTH were reduced by twofold under basal conditions and 3.2-fold upon PMA stimulation in response to GYY4137 (Figure 4E). Both RNAi and chemical complementation data provide evidence that H2S is one of the factors regulating HIV-1 latency and reactivation in U1.
 
@@ -68,17 +100,17 @@ Similar to U1, we next examined whether GYY4137 subverts HIV-1 reactivation in t
 
 We also examined if an endogenous increase in H2S by GYY4137 halts the replication of HIV-1 in primary CD4+ T cells. To this end, we infected primary CD4+ T cells isolated from peripheral blood mononuclear cells (PBMCs) of three healthy human donors with HIV-1 (pNL4.3) and monitored HIV-1 replication by measuring the levels of p24 in the supernatant at 3 and 5 days post-infection. The p24 ELISA confirmed a time-dependent increase in viral load, which was uniformly reduced upon pretreatment with a non-toxic concentration of GYY4137 (0.8 mM) (Figure 4G and Figure 4—figure supplement 1E). Overall, these data establish that elevated levels of endogenous H2S efficiently suppress HIV-1 reactivation and replication.
 
-## GYY4137 reduced the expression of host genes involved in HIV-1 reactivation
+### GYY4137 reduced the expression of host genes involved in HIV-1 reactivation
 
 To dissect the mechanism of GYY4137-mediated inhibition on HIV-1 reactivation, we examined the expression of 185 genes associated with HIV-1 reactivation using the NanoString nCounter Technology as described above (Figure 5A and Supplementary file 1d). Expression was analyzed for viral latency (unstimulated U1), reactivation (PMA-stimulated treated U1; PMA), and H2S-mediated suppression (U1-GYY+PMA). Consistent with the role of PMA-mediated oxidative stress in preceding HIV-1 reactivation (Bhaskar et al., 2015), expression of genes encoding ROS, and RNS generating enzymes (e.g., NADPH oxidase [NCF1 and CYBB] and Nitric oxide synthase [NOS2]) were upregulated (Figure 5A). Also, the expression of major antioxidant enzymes (e.g., GPXs, PRDXs, and CAT) and redox buffers (GSH and TRX pathways) remained repressed in U1-PMA, indicative of elevated oxidative stress. Additionally, pro-inflammatory signatures (e.g., TGFB1 and SERPINA1) and trans-activators (e.g., FOS) were induced, whereas host factors involved in HIV-1 restriction (e.g., IRF1 and YY1) were repressed in U1-PMA as compared to U1. In agreement with the reduction in endogenous H2S levels during HIV-1 reactivation, expression of CTH involved in H2S anabolism was downregulated and H2S catabolism (SQRDL) was upregulated by PMA.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/68487/elife-68487-fig5-v3.jpg)
 
-**Figure 5.:** (A) U1 cells pre-treated with 5 mM GYY4137 for 24 hr or left untreated and then stimulated with 5 ng/ml PMA for 24 hr or left unstimulated. Total RNA was isolated and expression of genes associated with HIV-1 infection and oxidative stress response was assessed by nCounter NanoString Technology. Heatmap showing functional categories of significant DEGs in all four conditions: untreated (U1), GYY4137 alone (U1-GYY) or PMA- alone (U1-PMA), and GYY4137+PMA (U1-GYY+PMA). Gene expression data obtained were normalized to internal control β2 microglobulin (B2M), and fold changes were calculated using the nSolver 4.0 software. Genes with fold changes values of >1.5 and p<0.05 were considered as significantly altered. (B) Total cell lysates were used to analyze the expression levels of Nrf2 and HMOX1 by immunoblotting. Results were quantified by densitometric analysis of Nrf2 and HMOX1 band intensities and normalized to GAPDH. (C) U1 cells were pretreated with 5 mM GYY4137 for 6 hr and then stimulated with 30 ng/ml PMA for 4 hr or left unstimulated. Cells were harvested to prepare total cell lysate. Levels of phosphorylated NF-κB p65 (Ser536), NF-κB p65, and YY1 were determined by immunoblotting. Results were quantified by densitometric analysis for each blot and were normalized to GAPDH. (D) Schematic depiction of the binding sites for NF-κB (p65-p50 heterodimer) and YY1 on HIV-1 5´-LTR. Highlighted arrow in red indicates the regions targeted for genomic qPCR; ER site for NF-κB, and RBEI and RBEIII sites for YY1 enrichments, respectively. (E, F) U1 cells were pretreated with 5 mM GYY4137 for 6 hr, stimulated with PMA (30 ng/ml) for 4 hr, fixed with formaldehyde, and lysed. Lysates were subjected to immunoprecipitation for p65 and YY1 and protein-DNA complexes were purified using protein-G magnetic beads. The enrichment of NF-κB p65 and YY1 on HIV-1 LTR was assessed by qPCR for designated regions using purified DNA as a template. Results are expressed as mean ± standard deviation and data are representative of three independent experiments *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001; ns, non-significant, by two-way ANOVA with Tukey’s multiple comparison test. DEG, differentially expressed gene.Figure 5—source data 1.Figure 5—source data 2.Figure 5B.Figure 5—source data 3.Figure 5C.Figure 5—source data 4.Figure 5.
+**Figure 5.:** (A) U1 cells pre-treated with 5 mM GYY4137 for 24 hr or left untreated and then stimulated with 5 ng/ml PMA for 24 hr or left unstimulated. Total RNA was isolated and expression of genes associated with HIV-1 infection and oxidative stress response was assessed by nCounter NanoString Technology. Heatmap showing functional categories of significant DEGs in all four conditions: untreated (U1), GYY4137 alone (U1-GYY) or PMA- alone (U1-PMA), and GYY4137+PMA (U1-GYY+PMA). Gene expression data obtained were normalized to internal control β2 microglobulin (B2M), and fold changes were calculated using the nSolver 4.0 software. Genes with fold changes values of >1.5 and p<0.05 were considered as significantly altered. (B) Total cell lysates were used to analyze the expression levels of Nrf2 and HMOX1 by immunoblotting. Results were quantified by densitometric analysis of Nrf2 and HMOX1 band intensities and normalized to GAPDH. (C) U1 cells were pretreated with 5 mM GYY4137 for 6 hr and then stimulated with 30 ng/ml PMA for 4 hr or left unstimulated. Cells were harvested to prepare total cell lysate. Levels of phosphorylated NF-κB p65 (Ser536), NF-κB p65, and YY1 were determined by immunoblotting. Results were quantified by densitometric analysis for each blot and were normalized to GAPDH. (D) Schematic depiction of the binding sites for NF-κB (p65-p50 heterodimer) and YY1 on HIV-1 5´-LTR. Highlighted arrow in red indicates the regions targeted for genomic qPCR; ER site for NF-κB, and RBEI and RBEIII sites for YY1 enrichments, respectively. (E, F) U1 cells were pretreated with 5 mM GYY4137 for 6 hr, stimulated with PMA (30 ng/ml) for 4 hr, fixed with formaldehyde, and lysed. Lysates were subjected to immunoprecipitation for p65 and YY1 and protein-DNA complexes were purified using protein-G magnetic beads. The enrichment of NF-κB p65 and YY1 on HIV-1 LTR was assessed by qPCR for designated regions using purified DNA as a template. Results are expressed as mean ± standard deviation and data are representative of three independent experiments *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001; ns, non-significant, by two-way ANOVA with Tukey’s multiple comparison test. DEG, differentially expressed gene.
 
 We noticed that the treatment with GYY4137 reversed the effect of PMA on the expression of genes associated with oxidative stress, inflammation, anti-viral response, apoptosis, and trans-activators (Figure 5A). For example, GYY4137 elicited a robust induction of genes regulated by nuclear factor erythroid 2-related factor 2 (Nrf2) in U1-GYY+PMA compared to U1 or U1-PMA (Figure 5A). Nrf2 acts as a master regulator of redox metabolism (Pall and Levine, 2015) by binding to the antioxidant response element (ARE) and initiating transcription of major antioxidant genes (e.g., GSH pathway, TXNRD1, HMOX1, GPX4, and SRXN1). Interestingly, while the expression of Nrf2-dependent CTH gene was induced in U1-GYY+PMA, MPST remained unaffected. The Nrf2 activity has been shown to pause HIV-1 infection by inhibiting the insertion of reverse-transcribed viral cDNA into the host chromosome (Furuya et al., 2016). Furthermore, sustained activation of Nrf2-dependent antioxidant response is essential for the establishment of viral latency (Shytaj et al., 2020). A few genes encoding H2O2 detoxifying enzymes (e.g., CAT, GPX1, and PRDXs) were repressed in U1-GYY+PMA, indicating that the expression of these enzymes was likely counterbalanced by the elevated expression of other antioxidant systems by H2S. In line with the antagonistic effect of GYY4137 on HIV-1 transcription, the expression of HIV-1 trans-activator (FOS) was downregulated, and an inhibitor of NF-κB signaling (NFKBIA) was induced in U1-GYY+PMA as compared to U1 or U1-PMA. Finally, GYY4137 stimulated the expression of several anti-HIV (YY1, STAT1, STAT3, and IRF1) and pro-survival factors (CDKN1A and LTBR) that were repressed by PMA (Figure 5A). Altogether, H2S supplementation induces a major realignment of redox metabolism and immune pathways associated with HIV-1 reactivation.
 
-## GYY4137-mediated modulation of the Keap1-Nrf2 axis, NF-κB signaling, and activity of epigenetic factor YY1
+### GYY4137-mediated modulation of the Keap1-Nrf2 axis, NF-κB signaling, and activity of epigenetic factor YY1
 
 Our expression data indicate activation of the Nrf2 pathway and modulation of transcription factors such as NF-κB and YY1 upon treatment with GYY4137. We tested if the mechanism of H2S-mediated subversion of HIV-1 reactivation involves these pathways. H2S has recently been shown to prevent cellular senescence by activation of Nrf2 via S-persulfidation of its negative regulator Keap-1 (Yang et al., 2013). Under unstimulated conditions, Nrf2 binds to Keap1, and the latter promotes Nrf2 degradation via the proteasomal machinery (Yang et al., 2013). Nrf2 disassociates from the S-persulfidated form of Keap1, accumulates in the cytoplasm, and translocates to nuclei where it induces transcription of antioxidant genes upon oxidative stress (Yang et al., 2013). We first examined if GYY4137 treatment accumulates Nrf2 in the cytoplasm. As expected, Nrf2 was not detected in U1 owing to its association with Keap1 under unstimulated conditions. However, a noticeable accumulation of Nrf2 was observed in U1-GYY+PMA compared to U1 or U1-PMA (Figure 5B). As an additional verification, we quantified the levels of an Nrf2-dependent protein HMOX-1. Similar to Nrf2, the levels of HMOX-1 were also induced in U1-GYY+PMA (Figure 5B). These findings are consistent with our NanoString data showing activation of Nrf2-specific oxidative stress responsive genes in GYY4137 treated U1.
 
@@ -86,9 +118,25 @@ Next, we determined if GYY4137 treatment targets NF-κB, which is a major regula
 
 GYY4137 induces the expression of another transcription factor YY1, which binds to HIV-1 LTR at RBEI and RBEIII and recruits histone deacetylase (HDACs) to facilitate repressive chromatin modifications (Coull et al., 2000). Overexpression of YY1 is known to promote HIV-1 latency (Bernhard et al., 2013). We tested if GYY4137 promotes the binding of YY1 at RBEI and RBEIII sites on HIV-1 LTR by ChIP-qPCR. The occupancy of YY1 at RBEI and RBEIII was significantly enriched in the case of U1-GYY+PMA as compared to U1-PMA or U1 (Figure 5F). Taken together, these results indicate that increasing endogenous H2S levels by using a slow-releasing donor effectively modulate the Keap1-Nrf2 axis and activity of transcription factors to maintain redox balance and control HIV-1 reactivation.
 
-## GYY4137 blocks HIV-1 rebound from latent CD4+ T cells isolated from infected individuals on suppressive ART
+### GYY4137 blocks HIV-1 rebound from latent CD4+ T cells isolated from infected individuals on suppressive ART
 
 Having shown that H2S suppresses HIV-1 reactivation in multiple cell line models of latency, we next studied the ability of GYY4137 to limit virus transcription in primary CD4+ T cells derived from virally suppressed patients. We used a previously established methodology of maintaining CD4+ T cells from infected individuals on ART for a few weeks without any loss of phenotypic characteristics associated with HIV-1 reservoirs (Kessing et al., 2017). We isolated CD4+ T cells from PBMCs of five HIV-1 infected subjects on suppressive ART. The CD4+ T cells were expanded in the presence of interleukin-2 (IL-2), phytohemagglutinin (PHA), and feeder cells (Figure 6A). The expanded cells were cultured for 4 weeks in a medium containing IL-2 with ART (100 nM efavirenz, 180 nM zidovudine, and 200 nM raltegravir) either in the presence or absence of GYY4137 (100 μM) (Figure 6A). In this model, the virus reactivates by day 14 followed by progressive suppression at day 21 and latency establishment by day 35. The virus can be reactivated from this latent phase using well-known LRAs (Kessing et al., 2017). We quantified the temporal expression of viral RNA using reverse transcription quantitative PCR (RT-qPCR) periodically at 7-day interval. The levels of viral RNA increased initially (days 7–14), followed by low to undetectable levels by day 28 (Figure 6B). By day 28, virus RNA was uniformly untraceable in cells derived from GYY4137 treated and untreated groups, indicating the establishment of latency (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/68487/elife-68487-fig6-v3.jpg)
+
+**Figure 6.:** (A) Schematic representation of the experimental design to study the effect of H2S on HIV-1 reactivation using CD4+ T cells from ART-treated HIV-1 infected subjects. CD4+ T cells were sorted and activated with PHA (1 μg/ml), IL-2 (100 U/ml), feeder PBMCs (gamma-irradiated) from healthy donors. CD4+ T cells were activated in the presence of ART or ART in combination with 100 μM GYY4137. Post-activation cells were cultured with ART alone or ART +GYY4137 treatment in IL-2 containing medium. (B) Total RNA was isolated from five patients CD4+ T cells expanded in ART or ART+GYY4137. HIV-1 RNA levels were measured every 7 days by ultrasensitive semi-nested RT-qPCR with detection limit of three viral RNA copies per million cells. (C) On day 28, cells were washed of any treatment and both ART or ART+GYY4137 treatment groups were stimulated with 1 μM prostratin for 24 hr. HIV-1 RNA copies were assessed by RT-qPCR. Reduction in viral stimulation in GYY4137 treated samples is represented as percentage values. ND, non-determined. (D) Aggregate plot for five patients from data shown in (C). (E, F) Primary CD4+ T cells expanded and cultured in the presence of ART or ART+GYY4137 were analyzed over time for the expression of activation (CD38) and quiescence markers (CD127) by flow cytometry. (G) Total HIV-1 DNA content was determined up to 28 days in ART or ART+GYY4137 treated groups. Results are expressed as mean ± standard deviation. **, p<0.01; ns, non-significant, by two-way ANOVA with Tukey’s multiple comparison test. RT-qPCR, reverse transcription quantitative PCR.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68487/elife-68487-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Flow cytometry-gating strategy used to analyze the expression of activation (CD38), quiescence (CD127), and frequency of different memory subsets of CD4+ T cells. The figure represents expression of different markers at day 7 post-activation of CD4+ T cells from a single patient sample. (B–E) Primary human CD4+ T cells from HIV-1 infected patients cultured with ART or ART with GYY4137 were analyzed by flow cytometry over time to determine frequency of different subsets of CD4+ T cells- TN (naive [B]) and TCM (central memory [C]), TTM (transition memory [D]), TEM (effector memory [E]). (F) Cell viability was assessed by Live-Dead staining over time. Results obtained suggest no difference in viability between ART alone and ART with GYY4137 treated group over time. Error bar represents standard deviations from mean. Results are representative of data from four patients’ samples.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/68487/elife-68487-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A–D) PHA/IL-2 expanded CD4+ T cell lines cultured for 14 days in the presence of ART or ART in combination with 100 μM GYY4137 were labeled with 0.5 μM cell trace violet (CTV) and stimulated with either CMV, anti-CD3/anti-CD28 beads (at a bead:cell ratio of 0.25:1), or SEB (100 ng/ml). After 3 days, IL-2 (20 U/ml) supplemented medium was added to the cells and cultured for another 2 days. Proliferation was measured by CTV dilution and CD25 expression was analyzed by flow cytometry after 5 days of culture. (A) Representative histogram plots of CTV dilution are shown. (B) Frequencies of antigen-specific proliferating cells (CTVlow) in 14-day cell lines cultured in ART alone or in combination with GYY4137. (C) Representative histogram plots of CD25 expression are shown. (D) Frequencies of antigen-specific CD25+ cells in 14-day cell lines cultured in ART alone or in combination with GYY4137. (E–J) PBMCs from HIV positive ART-treated patients were incubated with ART or ART in combination with 100 μM GYY4137 and left unstimulated or stimulated with either CMV or anti-CD3/anti-CD28 beads (at a bead:cell ratio of 0.25:1) for 18 hr. Cells were analyzed for surface expression of CD25 and CD69 and intracellular staining of IFNγ by flow cytometry. Bar graphs depict the frequencies of IFNγ+, CD25+, and CD69+ CD4+ (E–G) and CD8+ T cells (H–J) cultured in ART alone (orange) or ART in the presence of GYY4137 (blue). Data were plotted after background subtraction and presented as the means ± SEM. p-value between paired samples was determined by Wilcoxon matched-pairs signed-rank test.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/68487/elife-68487-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Representative gating strategy of PBMCs from HIV positive ART-treated patients stimulated ex vivo with CD3/CD28 beads and cultured in the presence of ART or ART in combination with GYY4137. (B) Representative FACS plots of CD4+ and CD8+ T cells expressing IFNγ are shown. PBMC, peripheral blood mononuclear cell.
 
 We next assessed the ability of GYY4137 to efficiently block viral reactivation. On day 28, we stimulated the CD4+ T cells with the protein kinase C (PKC) activator, prostratin, in the absence of any treatment. The activation of viral transcription was measured 24 hr later by RT-qPCR. The removal of ART uniformly resulted in a viral reactivation by prostratin in CD4+ T cells of HIV1 patients (Figure 6C). In contrast, upon ART+GYY4137 removal followed by prostratin stimulation, viral reactivation was attenuated by 90% (N=5, mean) for all five patient samples, and individual inhibition ranged from 78.9% to 100% (Figure 6C). Overall, pretreatment with ART+GYY4137 significantly reduced prostratin-mediated HIV-1 reactivation when compared to ART alone (p<0.01) (Figure 6D).
 
@@ -98,13 +146,13 @@ Finally, we tested if the reduction in viral RNA upon GYY4137 treatment is due t
 
 Altogether, using a range of cellular and immunological assays, we confirmed that the characteristics of an individual’s viral reservoir remain preserved, and the suppression of viral RNA upon GYY4137 treatment is the result of H2S-mediated inhibition of HIV-1 transcription rather than a reduction in proviral content or an altered CD4+ T cell subsets. In sum, prolonged exposure to GYY4137 results in potent inhibition of viral reactivation, suggesting a new H2S-based mechanism to neutralize bursts of virus reactivation under suppressive ART in vivo.
 
-## GYY4137 prevents mitochondrial dysfunction in CD4+ T cells of HIV-1 patients during viral rebound
+### GYY4137 prevents mitochondrial dysfunction in CD4+ T cells of HIV-1 patients during viral rebound
 
 Because virus reactivation upon depletion of CTH-mediated H2S generation resulted in mitochondrial dysfunction and redox imbalance in U1, we tested if the elevation of H2S levels by GYY4137 improves mitochondrial health and maintain redox homeostasis of primary CD4+ T cells during virus reactivation ex vivo. As described earlier, CD4+ T cells harboring latent virus upon prolonged (28 days) treatment of ART and ART+GYY4137 were stimulated by prostratin or left unstimulated and subjected to mitochondrial flux analysis. The unstimulated cells from both ART and ART+GYY4147 cultures did not show any difference in OCR (Figure 7A). In contrast, several features reflecting efficient mitochondrial activity such as basal respiration and ATP-coupled respiration were significantly higher in prostratin stimulated CD4+ T cells in case of ART+GYY4137 treatment than ART alone (Figure 7B–C). Consistent with this, mitoROS generation upon stimulation with prostratin or other LRAs such as PMA/ionomycin was reduced in ART+GYY4137 treated CD4+ T cells than ART alone (p=0.005 and p=0.014), and was nearly comparable to unstimulated cells (Figure 7D–E). The reduction in mitoROS could be a consequence of GYY4137-mediated increase in the expression of Nrf2-dependent antioxidant systems. We directly tested this by RT-qPCR analysis of a selected set of Nrf2-dependent genes on CD4+ T cells treated with GYY4137 for 28 days. Consistent with our findings in U1, treatment with ART+ GYY4137 uniformly induced the expression of antioxidant genes in the latently infected CD4+ T cells compared to cell treated with ART alone (Figure 7F).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/68487/elife-68487-fig7-v3.jpg)
 
-**Figure 7.:** 2S on mitochondrial respiration and ROS generation in latent CD4+ T cells derived from HIV-1 patients.(A) Primary human CD4+ T cells from HIV-1 infected subjects were activated and cultured ex vivo with ART or ART+GYY4137. On day 28, cells from ART or ART+GYY4137 treatment groups were harvested to assess mitochondrial respiration by using Seahorse XF mito-stress test as described in Materials and methods. (B) Cells from ART and ART+GYY4137 treated groups were stimulated with 1 μM prostratin 6 hr. Post-stimulation mitochondrial respiration profile was determined by Seahorse XF mito-stress test. (C) Various mitochondrial respiratory parameters derived from OCR measurement were determined by Wave desktop software. nmOCR; non-mitochondrial oxygen consumption rate and SRC; spare respiratory capacity. (D) On day 28, cells from both ART and ART+GYY4137 treatment groups were stimulated with 1 μM Prostratin for 6 hr. Cells were harvested and stained with 5 μM MitoSOX-Red dye for 30 min followed by washing. Samples were analyzed by flow cytometry. Unstimulated (Uns)- cells cultured under ART alone. (E) Both ART and ART+GYY4137 treated cells at day 14 post-activation were stimulated with 1 μg/ml PMA and 100 μg/ml ionomycin (Iono) for 6 h. Cells were harvested post-stimulation and stained with 5 μM MitoSOX-Red dye. Samples were analyzed by flow cytometry to assess mitoROS generation. Unstimulated (Uns)- cells cultured under ART alone. (F) CD4+ T cells from ART and ART+GYY4137 treated groups were stimulated with 1 μM prostratin on 28th day for 24 hr or left unstimulated. Cells were harvested to isolate total RNA and expression of hmox1, txnrd1, gclc, and prdx1 were determined by RT-qPCR. Data obtained were normalized to internal control β2 microglobulin (B2M). Error bar represents standard deviations from mean. Results are representative of data from three patient samples. *, p<0.05; **, p<0.01, by two-way ANOVA with Tukey’s multiple comparison test. RT-qPCR, reverse transcription quantitative PCR.Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A) Primary human CD4+ T cells from HIV-1 infected subjects were activated and cultured ex vivo with ART or ART+GYY4137. On day 28, cells from ART or ART+GYY4137 treatment groups were harvested to assess mitochondrial respiration by using Seahorse XF mito-stress test as described in Materials and methods. (B) Cells from ART and ART+GYY4137 treated groups were stimulated with 1 μM prostratin 6 hr. Post-stimulation mitochondrial respiration profile was determined by Seahorse XF mito-stress test. (C) Various mitochondrial respiratory parameters derived from OCR measurement were determined by Wave desktop software. nmOCR; non-mitochondrial oxygen consumption rate and SRC; spare respiratory capacity. (D) On day 28, cells from both ART and ART+GYY4137 treatment groups were stimulated with 1 μM Prostratin for 6 hr. Cells were harvested and stained with 5 μM MitoSOX-Red dye for 30 min followed by washing. Samples were analyzed by flow cytometry. Unstimulated (Uns)- cells cultured under ART alone. (E) Both ART and ART+GYY4137 treated cells at day 14 post-activation were stimulated with 1 μg/ml PMA and 100 μg/ml ionomycin (Iono) for 6 h. Cells were harvested post-stimulation and stained with 5 μM MitoSOX-Red dye. Samples were analyzed by flow cytometry to assess mitoROS generation. Unstimulated (Uns)- cells cultured under ART alone. (F) CD4+ T cells from ART and ART+GYY4137 treated groups were stimulated with 1 μM prostratin on 28th day for 24 hr or left unstimulated. Cells were harvested to isolate total RNA and expression of hmox1, txnrd1, gclc, and prdx1 were determined by RT-qPCR. Data obtained were normalized to internal control β2 microglobulin (B2M). Error bar represents standard deviations from mean. Results are representative of data from three patient samples. *, p<0.05; **, p<0.01, by two-way ANOVA with Tukey’s multiple comparison test. RT-qPCR, reverse transcription quantitative PCR.
 
 Altogether, these data suggest that H2S not only prevents virus reactivation but also improves mitochondrial bioenergetics and maintains redox homeostasis, which could be important for in vivo suppression of viral rebound and replenishment of the reservoir.
 
@@ -122,96 +170,442 @@ Blocking HIV-1 rebound by inhibitors of viral factors (e.g., Tat) invariably res
 
 ## Materials and methods
 
-## Study design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>U1</td>
+      <td>NIH HIV Reagent Program</td>
+      <td>Cat. #: ARP-165,RRID:CVCL_M769</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>J1.1</td>
+      <td>NIH HIV Reagent Program</td>
+      <td>Cat. #: ARP-1340,RRID:CVCL_8279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>ACH-2</td>
+      <td>NIH HIV Reagent Program</td>
+      <td>Cat. #: ARP-349,RRID:CVCL_0138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>J-Lat 6.3</td>
+      <td>NIH HIV Reagent Program</td>
+      <td>Cat. #: ARP-9846,RRID:CVCL_8280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>J-Lat 10.6</td>
+      <td>NIH HIV Reagent Program</td>
+      <td>Cat. #: ARP-9849,RRID:CVCL_8281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>TZM-bl</td>
+      <td>NIH HIV Reagent Program</td>
+      <td>Cat. #: ARP-8129,RRID:CVCL_B478</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>U937</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Jurkat</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0367</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CBS (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab140600,RRID:AB_2895036</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CTH(Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab151769,RRID:AB_2861405</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MPST(Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab154514,RRID:AB_2895038</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIV-1 p24(Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab9071,RRID:AB_306981</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NRF2 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 12721,RRID:AB_2715528</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KEAP1 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 4678,RRID:AB_10548196</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NF-kB p65(Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 6956,RRID:AB_10828935</td>
+      <td>WB (1:1000),Chromatin IP (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-NF-kB p65(Ser536) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 3033,RRID:AB_331284</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-YY1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 63227,RRID:AB_2799641</td>
+      <td>WB (1:1000),Chromatin IP (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 97166,RRID:AB_2756824</td>
+      <td>WB (1:1000),</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG,HRP-linked(Goat polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 7074,RRID:AB_2099233</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG,HRP-linked(Horse polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 7076,RRID:AB_330924</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p24, KC57-RD1 (Mouse monoclonal)</td>
+      <td>Beckman Coulter</td>
+      <td>Cat. #: 6604667, RRID:AB_1575989</td>
+      <td>Flow cytometry(1:100)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PLKO.1-puro non-mammalian shRNA control</td>
+      <td>Other</td>
+      <td></td>
+      <td>Kind gift fromProf. D. K. Saini</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX2</td>
+      <td>Other</td>
+      <td></td>
+      <td>Kind gift fromProf. D. K. Saini</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>Other</td>
+      <td></td>
+      <td>Kind gift fromProf. D. K. Saini</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNL4-3</td>
+      <td>NIH HIV Reagent Program</td>
+      <td>Cat. #: ARP-165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL-2: PROLEUKIN</td>
+      <td>NOVARTIS</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy mini kit</td>
+      <td>QIAGEN</td>
+      <td>Cat. #: 74106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cysteine assay kit (fluorometric)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: MAK255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glutathione assay kit</td>
+      <td>Cayman Chemical</td>
+      <td>Cat. #: 703002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SimpleChIP Enzymatic Chromatin IP Kit</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EasySep Human CD4+ T Cell Isolation Kit</td>
+      <td>STEMCELL Technologies</td>
+      <td>Cat. #: 17952</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTrace Violet Cell Proliferation Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: C34557</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Live/Dead Fixable Aqua Dead Cell Stain Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: L34957</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GYY4137</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: SML0100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PMA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: P8139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NAC</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: A7250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PAG</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: P7888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PHA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: R30852801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Efavirenz</td>
+      <td>NIH HIV Reagent Program</td>
+      <td>Cat. #: ARP-4624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zidovudine</td>
+      <td>NIH HIV Reagent Program</td>
+      <td>Cat. #: ARP-3485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Raltegravir</td>
+      <td>NIH HIV Reagent Program</td>
+      <td>Cat. #: ARP-11680</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software(https://www.graphpad.com)</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 9.0.0 for Macintosh</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Wave Desktop</td>
+      <td>Agilent Technologies</td>
+      <td>RRID:SCR_014526</td>
+      <td>Version 2.6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>nSolver</td>
+      <td>NanoString Technologies</td>
+      <td>RRID: SCR_003420</td>
+      <td>Version 4.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>(https://www.flowjo.com/solutions/flowjo)</td>
+      <td>RRID: SCR_008520</td>
+      <td>9.9.6 and v10</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study design
 
 The primary objective of this study was to understand the role H2S gas in modulating HIV-1 latency and reactivation. First, we examined the differential expression of enzymes involved in H2S biogenesis and levels of H2S upon HIV-1 latency and reactivation. Next, we genetically silenced the expression of the main H2S producing gene CTH and showed its importance in maintaining HIV-1 latency. We performed detailed mechanistic studies on understanding the role of CTH in regulating cellular antioxidant response, mitochondrial respiration, ROS generation to maintain HIV-1 latency. Finally, pharmacological donor of H2S (GYY4137) was used to reliably increase endogenous H2S levels and to study its consequence on HIV-1 latency and rebound. Primary CD4+ T cells derived from ART-treated HIV-1 infected patients were used to assess the effect of GYY4137 in modulating HIV-1 rebound by improving mitochondrial bioenergetics and mitigating redox stress.
 
-## Mammalian cell lines and culture conditions
+### Mammalian cell lines and culture conditions
 
 The human pro-monocytic cell line U937, CD4+ T lymphocytic cell line Jurkat, HEK293T were procured from ATCC, Manassas, VA. The chronically infected U1, J1.1, ACH-2, J-Lat 6.3, J-Lat 10.6, and TZM-bl cell lines were obtained through NIH HIV Reagent Program, Division of AIDS, NIAID, NIH, USA. All cell lines are verified to be mycoplasma free by EZdetect PCR Kit for Mycoplasma Detection (HIMEDIA). The cell lines were cultured in RPMI 1640 (Cell Clone) supplemented with L-glutamine (2 mM), 10% fetal bovine serum (FBS; MP Biomedicals), penicillin (100 units/ml), streptomycin (100 μg/ml) at 37°C and 5% CO2. HEK293T and TZM-bl cells were cultured in Dulbecco’s modified Eagle’s medium (Cell Clone) supplemented with 10% FBS.
 
-## Chemical reagents
+### Chemical reagents
 
 Sodium hydrosulfide (NaHS), morpholin-4-ium 4-methoxphenyl(morpholino) phosphinodithioate dichloromethane complex (GYY4137), Phorbol-12-myristate-13-acetate (PMA), N-acetyl cysteine (NAC), Prostratin, DL-Propargylglycine (PAG), and L-Cysteine were purchased from Sigma-Aldrich. Recombinant human TNF-α was purchased from InvivoGen. The antiretroviral drugs efavirenz, zidovudine, raltegravir, and lamivudine were obtained through the NIH HIV Reagent Program.
 
-## Latent viral reactivation
+### Latent viral reactivation
 
 Latently infected U1, J1.1, and J-Lat 10.6 (2×105 cells/ml) were stimulated with PMA (5 ng/ml) or TNF-α (100 ng/ml) for the time indicated in the figure legends. HIV-1 reactivation was determined by intracellular gag RT-qPCR or p24 estimation in supernatant by HIV-1 p24 ELISA (J. Mitra and Co. Pvt. Ltd., India). J-Lat 6.3 cells were stimulated with Prostratin (2.5 μM) for 24 hr and HIV-1 reactivation was assessed by estimating GFP+ cells (excitation: 488 nm; emission: 510 nm) using BD FACSVerse flow cytometer (BD Biosciences). The data were analyzed using FACSuite software (BD Biosciences).
 
-## Reverse transcription quantitative PCR
+### Reverse transcription quantitative PCR
 
 Total cellular RNA was isolated by RNeasy Mini Kit (QIAGEN), according to the manufacturer’s protocol. RNA (500 ng) was reverse transcribed to cDNA (iScript cDNA Synthesis Kit, Bio-Rad), subjected to quantitative real-time PCR (iQ SYBR Green Supermix, Bio-Rad), and performed using the Bio-Rad C1000 real-time PCR system. HIV-1 reactivation was assessed using gene-specific primers (Supplementary file 1f). The expression level of each gene is normalized to human β-actin as an internal reference gene.
 
-## Western blot analysis
+### Western blot analysis
 
 Total cell lysates of PMA-treated and untreated U1, J1.1, U937, and Jurkat cell lines were prepared using radioimmunoprecipitation (RIPA) lysis buffer (50 mM Tris [pH 8.0], 150 mM NaCl, 1% Triton X-100, 1% sodium deoxycholate, 0.1% SDS [sodium dodecyl sulfate], 1× protease inhibitor cocktail (Sigma-Aldrich), 1× phosphatase inhibitor cocktail [Sigma-Aldrich]). After incubation on ice for 20 min, the lysates were centrifuged at 12,000 rpm, 4°C for 15 min. Clarified supernatant was taken and total protein concentration was determined by Bicinchoninic Acid Assay (Pierce, Thermo Fisher Scientific). Total protein extracts were separated by SDS-PAGE and transferred onto polyvinylidene difluoride membranes. Membranes were probed with an anti-CBS (EPR8579), CTH (ab151769), MPST (ab154514), and anti-HIV-1 p24 (ab9071) from Abcam; Nrf2 (CST-12721), Keap1 (CST-4678), NF-κB p65 (CST-6956), phospho-NF-κB p65 (Ser536) (CST-3033), YY1 (CST-63227), and GAPDH (CST-97166) from Cell Signaling Technologies, Inc; and anti-rabbit IgG (CST-7074) and anti-mouse IgG (CST-7076) were used a secondary antibody. Proteins were detected by ECL and visualized by chemiluminescence (PerkinElmer, Waltham, MA) using the Bio-Rad Chemidoc Imaging system (Hercules, CA). For membrane reprobing, stripping buffer was used (2% SDS [w/v], 62 mM Tris-Cl buffer [0.5 M, pH 6.7] and 100 mM β-mercaptoethanol) for 20 min at 55°C. After extensive washing with phosphate-buffered saline (PBS) containing 0.1% Tween 20 (Sigma-Aldrich), membrane was blocked and reincubated with desired antibodies.
 
-## H2S detection assays
+### H2S detection assays
 
 Endogenous H2S levels of U1 and U937 cells were detected using H2S specific fluorescent probe as described (Chen et al., 2013). Briefly, cells were treated with PMA (5 ng/ml) for 24 hr, washed with 1× PBS, and stained with 200 μM 7-Azido-4-Methylcoumarin (AzMC) (Sigma-Aldrich). The stained cells were mounted on a glass slide and visualized using Leica TCS SP5 confocal microscope (excitation: 405 nm; emission: 450 nm). Images obtained were analyzed using LAS AF Lite software (Leica Microsystems) and semi-quantification of 50 cells was performed using ImageJ software.
 
 H2S generation was also measured using methylene blue assay. The supernatant of U1 cells treated with NaHS or GYY4137 was incubated with Zinc acetate (1%) and NaOH (3%) (1:1 ratio) to trap H2S for 30 min. The reaction was terminated using 10% trichloroacetic acid solution. Following this, reactants were incubated with 20 mM N,N-dimethylphenylendiamine (NNDPD) in 7.2 M HCl and 30 mM FeCl3 in 1.2 M HCl for 30 min and absorbance was measured at 670 nm. The concentration of H2S was determined by plotting absorbance on a standard curve generated using NaHS (0–400 μM; R2=0.9982).
 
-## Stable cell line generation
+### Stable cell line generation
 
 For generating CBS and CTH knockdown in U1 and J1.1 cells, we used validated pooled gene-specific shRNAs from the RNAi Consortium (TRC) library (Sigma-Aldrich, USA; shRNA sequences given in Supplementary file 1a). The lentiviral particles were generated in HEK293T cells using the packaging vectors, psPAX2 and pMD2.G. The pLKO.1-puro vector encoding a non-mammalian targeting shRNA (shNT) was used as a control. The U1 cells were transduced with lentiviral particles in opti-MEM containing polybrene (10 μg/ml) for 6 hr. Cells were washed and stable clones were selected in culture medium containing 250 ng/ml of puromycin. Total RNA or cell lysates were prepared to validate knockdown of CBS and CTH.
 
-## Intracellular HIV-1 P24 staining
+### Intracellular HIV-1 P24 staining
 
 For intracellular p24 staining, U1-shCTH and U1-shNT cells were stimulated with PMA (5 ng/ml), washed with PBS followed by fixation and permeabilization using a fixation and permeabilization kit (eBiosciences). Permeabilized cells were then incubated with 50 μl of 1:100 dilution of phycoerythrin (PE)-conjugated mouse anti-p24 monoclonal antibody (KC57-RD1; Beckman Coulter, Inc) for 30 min at room temperature. After incubation, the cells were washed two times and the fluorescence of stained samples was acquired using BD FACSVerse flow cytometer (BD Biosciences). The data were analyzed using FACSuite software (BD Biosciences).
 
-## Cysteine estimation
+### Cysteine estimation
 
 The quantification of cysteine was determined using Cysteine assay kit (Sigma-Aldrich). U1-shNT and U1-shCTH cells (107 cells) were harvested and lysed by sonication in assay buffer on ice. Lysates were clarified by centrifugation at 12,000 rpm, 4°C for 10 min. Then, 10 μl of sample was added to each well and incubated with enzyme mix and detection reagent as per the manufacturer’s instruction. The assay plate was read using fluorescence plate reader at Ex/Em=365/450 nm in kinetic mode at room temperature. The concentration of cysteine in sample was calculated from standard curve.
 
-## Cysteine deprivation and HIV-1 reactivation
+### Cysteine deprivation and HIV-1 reactivation
 
 U1 cells (2×105 cells/ml) were cultured in complete RPMI 1640 medium containing 208.16 μM L-cystine (as cysteine source) and 100 μM L-methionine (denoted as [+Cys]) or RPMI 1640 medium without L-methionine and L-cystine (Sigma-Aldrich, Cat #7513) supplemented with 100 μM L-methionine (Sigma-Aldrich, Cat #64319) (denoted as cysteine-free RPMI [−Cys]), 10% dialyzed FBS (Gibco), penicillin (100 units/ml), and streptomycin (100 μg/ml). Cells were harvested at indicated time points and viral reactivation was analyzed by gag RT-qPCR.
 
-## NanoString nCounter assay
+### NanoString nCounter assay
 
 Total RNA was isolated using a RNeasy Mini Kit (QIAGEN) according to the manufacturer’s instructions. RNA concentration and purity were measured using a Nanodrop spectrophotometer (Thermo Fisher Scientific, Waltham, MA), bioanalyzers systems (Agilent Technologies, Inc), and Qubit assays (Thermo Fisher Scientific). An nCounter gene expression assay was performed according to the manufacturer’s protocol. The assay utilized a custom-made NanoString codeset designed to measure 185 genes, including six house-keeping genes (Supplementary file 1b). This custom-made panel included genes associated with oxidative stress and HIV-1 infection (Supplementary file 1b). All genes were assayed simultaneously in multiplexed reactions and analyzed by fully automated nCounter Prep Station and digital analyzer (NanoString Technologies). The data were normalized to B2M, used as a housekeeping gene due to its minimum % CV across the samples, and analysis was done using nSolver 4.0 software.
 
-## Measurement of oxygen consumption rates
+### Measurement of oxygen consumption rates
 
 OCRs were measured using a Seahorse XFp extracellular flux analyzer (Agilent Technologies) as per the manufacturer’s instructions. Briefly, cells (U1 or Primary CD4+ T cells) were seeded at a density of 104–105 per well in a Seahorse flux analyzer plate precoated with Cell-Tak (Corning). Cells were incubated for 1 hr in a non-CO2 incubator at 37°C before loading the plate in the seahorse analyzer. To assess mitochondrial respiration, three OCR measurements were performed without any inhibitor in XF assay media to measure basal respiration, followed by sequential addition of oligomycin (1 μM), an ATP synthase inhibitor (complex V), and three OCR measurements to determine ATP-linked OCR and proton leakage. Next, cyanide-4-(trifluoromethoxy)phenylhydrazone (FCCP; 0.25 μM), was injected to determine the maximal respiration rate and the SRC. Finally, rotenone (0.5 μM) and antimycin A (0.5 μM), inhibitors of NADH dehydrogenase (complex I) and cytochrome c - oxidoreductase (complex III), respectively, were injected to completely shut down the ETC to analyze nmOCR. Seahorse data were normalized to total amount of protein (μg) and mitochondrial respiration parameters were analyzed using Wave Desktop 2.6 software (Agilent Technologies).
 
-## Estimation of intracellular glutathione content and ROS
+### Estimation of intracellular glutathione content and ROS
 
 Total cell lysate was prepared from 107 cells using sonication in MES (2-(N-morpholino) ethanesulfonic acid) buffer. Lysates were clarified by centrifugation and total protein concentration was estimated using BCA assay. Total glutathione, reduced glutathione (GSH), and oxidized glutathione (GSSG) were measured using the glutathione assay kit (Cayman Chemical, Ann Arbor, MI) according to the manufacturer’s instructions. To measure ROS, cells were loaded with 10 μM of CM-H2DCFDA (excitation: 492 nm; emission; 517 nm) or 5 μM of MitoSOX Red (excitation: 510 nm; emission; 580 nm) for 30 min at 37°C and exposed to H2O2 (100 μM) or antimycin A (2 μM) or PMA (5 ng/ml) or left untreated at 37°C and 5% CO2. The fluorescence of stained samples was acquired using BD FACSVerse flow cytometer (BD Biosciences). Data were analyzed using FlowJo software (BD Biosciences).
 
-## Virus production
+### Virus production
 
 HIV-1 particle production was carried out using Lipofectamine 2000 transfection reagent (Invitrogen, Life Technologies), according to the manufacturer’s protocol, in HEK293T cells using HIV-1 NL4-3 DNA (NIH HIV Reagent Program, Division of AIDS, NIAID, NIH). The medium was replaced with fresh medium at 6 hr post-transfection, and supernatants were collected after 60 hr, centrifuged (10 min, 200×g, room temperature), and filtered through a 0.45-μm-pore-size membrane filter (MDI; Membrane Technologies) to clear cell debris. Virus was concentrated using 5× PEG-it (System Biosciences) as per the manufacturer’s protocol and virus pellet obtained was aliquoted in opti-MEM and stored at –80°C. Viral titration was done using HIV-1 reporter cell line, TZM-bl (NIH HIV Reagent Program) as described earlier (Cherne et al., 2019).
 
-## Chromatin immunoprecipitation and quantitative genomic PCR
+### Chromatin immunoprecipitation and quantitative genomic PCR
 
 The chromatin immunoprecipitation (ChIP) assays were performed using SimpleChIP Enzymatic Chromatin IP Kit (Magnetic Beads) (Cell Signaling Technologies, Inc, MA) according to the manufacturer’s instructions. Briefly, 107 U1 cells were pre-treated with GYY4137 (5 mM) for 6 hr or left untreated and then stimulated with PMA (30 ng/ml) for 4 hr. Cells were fixed using 1% formaldehyde, neutralized with glycine, and harvested in ice-cold PBS. Cells were lysed and nuclei were sheared by sonication using Bioruptor Pico (Diagenode Inc) to obtain DNA fragments of 200–500 nucleotides. The clarified lysates were immunoprecipitated using ChIP-grade anti-NF-κB p65 (CST-6956) or anti-YY1 (CST-63227), or normal rabbit IgG (as a negative control) for overnight at 4°C followed by incubation with ChIP-grade protein G magnetic beads at 4°C for 4 hr. Chromatin was eluted from protein G beads, reverse-cross linked, and DNA was column purified. Quantitative genomic PCR was done by SYBR green-based real-time PCR using primers spanning the ER, RBE I, and RBE III regions on HIV-1 LTR. The GAPDH gene was used as the reference gene to see non-specific binding. Total input (10%) was used to normalize equal amount of chromatin taken across the samples. The relative proportion of co-immunoprecipitated DNA fragments were determined with the help of threshold cycle (CT) values for each qPCR product using the equation (100×2[CT(input-3.32)- CT(IP)]). The data obtained were represented as fold enrichment normalized to IgG background for each IP reaction.
 
-## Subject samples
+### Subject samples
 
 PBMCs were collected from five HIV-1 seropositive subjects on stable suppressive ART and three healthy HIV-seronegative donors (Supplementary file 1e). All subject signed informed consent forms approved by the Indian Institute of Science, Bangalore and Bangalore Medical College and Research Institute (BMCRI) review boards (Institute human ethics committee [IHEC] No-3-14012020). The PBMCs isolated from blood samples using Histopaque-1077 (Sigma-Aldrich) density gradient centrifugation was used for CD4+ T cells purification. The CD4+ T cells were purified from 50×106 PBMCs using EasySep Human CD4+ T cell isolation kit (STEMCELL Technologies).
 
-## Infection of primary CD4+ T cells
+### Infection of primary CD4+ T cells
 
 Primary CD4+ T cells were cultured for 3 days after isolation in RPMI 1640 supplemented with 10% FBS, 100 U/ml interleukin-2 (IL-2; PROLEUKIN; NOVARTIS), and activated by adding the Dynabeads Human T-Activator CD3/CD28 using a bead/cell ratio of 1:2. Post-activation CD4+ T cells were pre-treated with 800 μM GYY4137 for 6 hr, and infected with HIV-NL4.3 (1 ng p24/ 106 cells) by spinoculation at 1000×g for 90 min at 32°C. Following infection, cells were washed and cultured in the presence or absence of 800 μM GYY4137 in complete media containing 100 U/ml IL-2. To quantify the virion release, supernatant was harvested from infected cells and centrifuged at 400×g for 10 min and virus concentration was estimated by HIV-1 p24 ELISA (J. Mitra and Co. Pvt. Ltd., India) according to the manufacturer’s instruction.
 
-## Generation of expanded primary CD4+ T cells from aviremic subjects
+### Generation of expanded primary CD4+ T cells from aviremic subjects
 
 Primary CD4+ T cells from five ART suppressed, aviremic HIV-1 infected donors were cultured at 37°C in a 5% (v/v) CO2 humidified atmosphere in RPMI 1640 medium (Gibco) with GlutaMAX, HEPES, 100 U/ml IL-2, 1 μg/ml Remel phytohemagglutinin (PHA) (Thermo Fisher Scientific), gamma-irradiated feeder PBMCs (healthy control) and either ART alone (100 nM efavirenz, 180 nM zidovudine, and 200 nM raltegravir) or ART +100 μM GYY4137. After 7 days, CD4+ T cells were cultured only with ART alone or ART+GYY4137 and 100 U/ml IL-2. For stimulation experiments on day 28, ART and ART+GYY4137 were washed off and 1×106 cells were treated with 1 µM prostratin for 24 hr.
 
-## HIV-1 RNA and DNA isolation from primary CD4+ T cells
+### HIV-1 RNA and DNA isolation from primary CD4+ T cells
 
 CD4+ T cells (1×106) from ART or ART+GYY4137 treated groups were harvested to isolate total RNA using Qiagen RNAeasy isolation kit and 200 ng of total RNA was reverse transcribed (iScript cDNA synthesis kit, Bio-Rad). Reverse transcribed cDNA was diluted tenfold and amplified using primers against HIV-1 LTRs and seminested—PCR was performed using primers and probe listed in Supplementary file 1f. Serially diluted pNL4.3 plasmid was used to obtain the standard curve. Isolation and RT-qPCR of total HIV-1 DNA were performed as described earlier (Kessing et al., 2017). Briefly, 1×106 cells were lysed (10 mM Tris-HCl, 50 nM KCl, 400 mg/ml proteinase K) at 55°C for 16 hr followed by inactivation at 95°C for 5 min. Digested product was used as a template to set up the first PCR with Taq polymerase (NEB), 1× Taq buffer, dNTPs, HIV-1 and CD3 primers for 12 cycles. The second-round amplification was done using seminested PCR strategy wherein tenfold dilution of first round PCR product was used as a template, HIV-1, and CD3 primers/probes, Taqman Fast Advance master mix (Applied Biosystems) using SetupOnePlus Real-time PCR system (Applied Biosystems). DNA isolated from ACH2 cells that contain a single copy of HIV-1 per cell was used to obtain standard curve.
 
-## Surface marker analysis of primary CD4+ T cells derived from HIV-1 patients
+### Surface marker analysis of primary CD4+ T cells derived from HIV-1 patients
 
 CD4+ T cells derived from HIV-1 infected patients were stained for surface markers using monoclonal antibodies: CD4-BUV395 (SK3), CD45RA-APC-H7 (HI100), CD27-BV785 (O323), CCR7-Alexa 647 (G043H7), CD38-PE-Cy5 (HIT2), and CD127-PerCP-Cy5.5 (eBioRDR5). Additionally, cells were stained with Live/Dead fixable Aqua dead cell stain or AviD (Invitrogen) to exclude dead cells from the analysis as per the manufacturer’s instructions. PBMCs from HIV positiveART-treated patients were incubated with ART or ART in combination with 100 μM GYY4137 and either left unstimulated or stimulated with either CMVpp65 (JPT Technologies) or anti-CD3/anti-CD28 beads (at a bead:cell ratio of 0.25:1) for 18 hr. Cells were stained with antibodies for analysis of cell surface markers CD3-BV570 (UCHT1), CD4-FITC (RPA-T4), CD8-PerCP-Cy5.5 (SK1), CD25-BV421 (M-A251), CD69-PE (L78), and intracellular cytokines IFNγ-Alexa Fluor 700 (B27) and IL-2-APC (MQ1-17H12). Stained samples were run on BD FACSAria Fusion flow cytometer (BD Biosciences, San Jose, CA) and data were analyzed with FlowJo version 9.9.6 and v10 (Treestar, Ashland, OR).
 
-## Cell proliferation assay
+### Cell proliferation assay
 
 PHA/IL-2 expanded CD4+ T cell lines cultured for 14 days in the presence of ART or ART in combination with 100 μM GYY4137 were washed and rested overnight. Cells were labeled with 0.5 μM cell trace violet (CTV) (Invitrogen) and incubated at 37°C for 7 min in the dark, after which CTV uptake was stopped by addition of 5 ml ice-cold complete RPMI media. Cells were pelleted down washed once with complete RPMI and used in the cell proliferation assay. CTV-labeled cells were seeded at a density of 0.5×106/well and stimulated with either 1.7 μg/ml CMVpp65 (JPT Technologies), anti-CD3/anti-CD28 T cell activator beads at a bead:cell ratio of 0.25:1 (Thermo Fisher Scientific) or 100 ng/ml SEB (Sigma-Aldrich). After 3 days, IL-2 (20 U/ml) supplemented medium was added to the cells and cultured for another 2 days. Proliferation was measured by CTV dilution after 5 days by flow cytometry. In some experiments, after 5 days of culture CTV-labeled cells were pelleted and stained with antibodies to CD3, CD4, and CD25 and CD25 expression was analyzed by flow cytometry.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed using GraphPad Prism software for Macintosh (version 9.0.0). The data values are indicated as mean ± S.D. For statistical analysis Student’s t-test (in which two groups are compared) and one-way or two-way ANOVA (for analysis involving multiple groups) were used. For flow cytometry experiments, data are represented as means ± SEM and p-value between paired samples was determined by Wilcoxon matched-pairs signed-rank test. Analysis of NanoString data was performed using the nSolver platform. Differences in p-values <0.05 and fold change >1.5 were considered significant.

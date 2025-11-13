@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01462r250 Klinik für Neurochirurgie, UniversitätsSpital Zürich, Universität Zürich Zurich Switzerland
-2. https://ror.org/01swzsf04 Département des neurosciences fondamentales, Faculté de médecine, Université de Genève Genève Switzerland
-3. https://ror.org/01m1pv723 Service de neurologie, Hôpitaux Universitaires de Genève, Geneva, Switzerland Genève Switzerland
+1. Klinik für Neurochirurgie, UniversitätsSpital Zürich, Universität Zürich Zurich Switzerland ([ROR:01462r250](https://ror.org/01462r250))
+2. Département des neurosciences fondamentales, Faculté de médecine, Université de Genève Genève Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
+3. Service de neurologie, Hôpitaux Universitaires de Genève, Geneva, Switzerland Genève Switzerland ([ROR:01m1pv723](https://ror.org/01m1pv723))
 4. Schweizerisches Epilepsie Zentrum, Klinik Lengg AG Zurich Switzerland
 5. Neuroscience Center Zurich, ETH Zuric Zurich Switzerland
 
@@ -20,7 +20,7 @@
 
 ## Abstract
 
-The maintenance of items in working memory (WM) relies on a widespread network of cortical areas and hippocampus where synchronization between electrophysiological recordings reflects functional coupling. We investigated the direction of information flow between auditory cortex and hippocampus while participants heard and then mentally replayed strings of letters in WM by activating their phonological loop. We recorded local field potentials from the hippocampus, reconstructed beamforming sources of scalp EEG , and – additionally in four participants – recorded from subdural cortical electrodes. When analyzing Granger causality, the information flow was from auditory cortex to hippocampus with a peak in the [4 8] Hz range while participants heard the letters. This flow was subsequently reversed during maintenance while participants maintained the letters in memory. The functional interaction between hippocampus and the cortex and the reversal of information flow provide a physiological basis for the encoding of memory items and their active replay during maintenance.
+The maintenance of items in working memory (WM) relies on a widespread network of cortical areas and hippocampus where synchronization between electrophysiological recordings reflects functional coupling. We investigated the direction of information flow between auditory cortex and hippocampus while participants heard and then mentally replayed strings of letters in WM by activating their phonological loop. We recorded local field potentials from the hippocampus, reconstructed beamforming sources of scalp EEG, and – additionally in four participants – recorded from subdural cortical electrodes. When analyzing Granger causality, the information flow was from auditory cortex to hippocampus with a peak in the [4 8] Hz range while participants heard the letters. This flow was subsequently reversed during maintenance while participants maintained the letters in memory. The functional interaction between hippocampus and the cortex and the reversal of information flow provide a physiological basis for the encoding of memory items and their active replay during maintenance.
 
 ## Introduction
 
@@ -34,13 +34,322 @@ We here extend previous studies with the same task (Michels et al., 2008; Boran 
 
 ## Results
 
-## Task and behavior
+### Task and behavior
 
 Fifteen participants (median age 29 years, range [18–56], 7 male, Table 1) performed a modified Sternberg WM task (71 sessions in total, 50 trials each). In the task, items were presented all at once rather than sequentially, thus separating the encoding period from the maintenance period. In each trial, the participant was instructed to memorize a set of 4, 6, or 8 letters presented for 2 s (encoding). The number of letters was thus specific for the memory workload. The participants read the letters themselves and heard them spoken at the same time. Since participants had difficulties reading eight letters within the 2 s encoding period, also hearing the letters assured their good performance. After a delay (maintenance) period of 3 s, a probe letter prompted the participant to retrieve their memory (retrieval) and to indicate by button press (‘IN’ or ‘OUT’) whether or not the probe letter was a member of the letter set held in memory (Figure 1a). During the maintenance period, participants rehearsed the verbal representation of the letter strings subvocally, i.e., mentally replayed the memory items. Participants had been instructed to employ this strategy, and they confirmed after the sessions that they had indeed employed this strategy. This activation of the phonological loop (Baddeley, 2003) is a component of verbal WM as it serves to produce an appropriate behavioral response (Christophel et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/78677/elife-78677-fig1-v1.jpg)
+
+**Figure 1.:** (a) In the task, sets of consonants are presented and have to be memorized. The set size (4, 6, or 8 letters) determines working memory workload. In each trial, presentation of a letter string (encoding period, 2 s) is followed by a delay (maintenance period, 3 s). After the delay, a probe letter is presented. Participants indicate whether the probe was in the letter string or not. (b) Response accuracy decreases with set size (71 sessions). (c) Reaction time increases with set size (53 ms/item). (d) The tip locations of the hippocampal local field potentials electrodes for all participants (N=15) are projected in a hippocampal surface.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78677/elife-78677-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The recording location of the hippocampal local field potentials electrode of each participant is projected in a left hippocampal surface.
+
+**Table 1.**
+ Participant characteristics and results of Granger causality analysis.For each participant, we report the atlas parcels that contained EEG sources with the maximal t-value and the t-value of sources in auditory cortex (Heschl gyrus) during encoding and maintenance (non-parametric cluster-based permutation test p<0.05). In each participant, the vast majority of the significant LCMV sources were in the left hemisphere, both during encoding (≥87%) and during maintenance (≥81%). We also report the net information flow (ΔGranger) for correct and incorrect trials in the direction auditory cortex → hippocampus during encoding and in the direction hippocampus → auditory cortex during maintenance.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Participant</th>
+      <th>Pathology</th>
+      <th>Encoding</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Maintenance</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Maximal LCMV source</td>
+      <td>Significant LCMV sources in the left hemisphere (%)</td>
+      <td>max. t-value</td>
+      <td>Heschl t-value</td>
+      <td>Heschl ΔGranger correct trials</td>
+      <td>Heschl ΔGranger incorrect trials</td>
+      <td>Maximal LCMV source</td>
+      <td>Significant LCMV sources in the left hemisphere (%)</td>
+      <td>max. t-value</td>
+      <td>Heschl t-value</td>
+      <td>Heschl ΔGranger correct trials</td>
+      <td>Heschl ΔGranger incorrect trials</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>hippocampal sclerosis</td>
+      <td>Heschl / Temporal Inferior L</td>
+      <td>100</td>
+      <td>17.8</td>
+      <td>17.8</td>
+      <td>–0.036</td>
+      <td>0.087</td>
+      <td>Frontal Mid Orb / Heschl L</td>
+      <td>100</td>
+      <td>10.1</td>
+      <td>10.1</td>
+      <td>0.025</td>
+      <td>–0.037</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>non-lesional</td>
+      <td>Heschl L</td>
+      <td>100</td>
+      <td>19.8</td>
+      <td>19.8</td>
+      <td>–0.017</td>
+      <td>0.016</td>
+      <td>Temporal Inferior L</td>
+      <td>96</td>
+      <td>11.4</td>
+      <td>10</td>
+      <td>0.093</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>focal cortical dysplasia</td>
+      <td>Temporal Superior L</td>
+      <td>91</td>
+      <td>24.2</td>
+      <td>16.3</td>
+      <td>–0.060</td>
+      <td>–0.013</td>
+      <td>Heschl L</td>
+      <td>91</td>
+      <td>14.6</td>
+      <td>14.6</td>
+      <td>0.065</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>unclear etiology</td>
+      <td>Frontal Inferior L</td>
+      <td>100</td>
+      <td>18.3</td>
+      <td>16.6</td>
+      <td>–0.006</td>
+      <td>0.003</td>
+      <td>Heschl L</td>
+      <td>100</td>
+      <td>13.4</td>
+      <td>13.4</td>
+      <td>0.035</td>
+      <td>–0.002</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>brain contusion</td>
+      <td>Temporal Superior L</td>
+      <td>100</td>
+      <td>6.9</td>
+      <td>5.4</td>
+      <td>–0.003</td>
+      <td>–0.002</td>
+      <td>Heschl L</td>
+      <td>96</td>
+      <td>7.6</td>
+      <td>7.6</td>
+      <td>0.021</td>
+      <td>0.048</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>hippocampal sclerosis</td>
+      <td>Supramarginal L</td>
+      <td>98</td>
+      <td>11.1</td>
+      <td>9.7</td>
+      <td>–0.049</td>
+      <td>0.025</td>
+      <td>Temporal Pole Superior L</td>
+      <td>93</td>
+      <td>19.8</td>
+      <td>17.9</td>
+      <td>0.039</td>
+      <td>–0.024</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>xanthoastrozytoma</td>
+      <td>Lingual R</td>
+      <td>87</td>
+      <td>12.9</td>
+      <td>11.5</td>
+      <td>–0.059</td>
+      <td>0.042</td>
+      <td>Caudate L</td>
+      <td>85</td>
+      <td>9.3</td>
+      <td>8.2</td>
+      <td>0.042</td>
+      <td>–0.036</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>focal cortical dysplasia</td>
+      <td>Caudate L</td>
+      <td>100</td>
+      <td>18.8</td>
+      <td>16.2</td>
+      <td>–0.040</td>
+      <td>0.013</td>
+      <td>Parietal Superior L</td>
+      <td>100</td>
+      <td>9.9</td>
+      <td>8.3</td>
+      <td>0.017</td>
+      <td>–0.031</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>gliosis</td>
+      <td>Cingulum Anterior L</td>
+      <td>100</td>
+      <td>12.3</td>
+      <td>11.2</td>
+      <td>–0.051</td>
+      <td>0.012</td>
+      <td>Parietal Inferior L</td>
+      <td>100</td>
+      <td>12.6</td>
+      <td>11.2</td>
+      <td>0.050</td>
+      <td>–0.015</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>hippocampal sclerosis</td>
+      <td>Heschl L</td>
+      <td>100</td>
+      <td>7.9</td>
+      <td>7.9</td>
+      <td>–0.070</td>
+      <td>–0.016</td>
+      <td>Cingulum Mid L</td>
+      <td>100</td>
+      <td>2.7</td>
+      <td>2.3</td>
+      <td>0.018</td>
+      <td>–0.081</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>hippocampal sclerosis</td>
+      <td>Cingulum Anterior L</td>
+      <td>100</td>
+      <td>10.8</td>
+      <td>6.3</td>
+      <td>–0.052</td>
+      <td>–0.011</td>
+      <td>Cuneus L</td>
+      <td>86</td>
+      <td>4.8</td>
+      <td>4.3</td>
+      <td>0.020</td>
+      <td>–0.062</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>hippocampal sclerosis</td>
+      <td>Temporal Superior L</td>
+      <td>95</td>
+      <td>8.1</td>
+      <td>6.7</td>
+      <td>–0.022</td>
+      <td>0.000</td>
+      <td>Temporal Pole Mid L</td>
+      <td>100</td>
+      <td>7.3</td>
+      <td>4.9</td>
+      <td>0.012</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>hippocampal sclerosis</td>
+      <td>Temporal Superior R</td>
+      <td>93</td>
+      <td>10.8</td>
+      <td>6.9</td>
+      <td>–0.018</td>
+      <td>0.019</td>
+      <td>Parietal Superior R</td>
+      <td>81</td>
+      <td>5.6</td>
+      <td>4.9</td>
+      <td>0.020</td>
+      <td>–0.022</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>hippocampal sclerosis</td>
+      <td>Temporal Superior L</td>
+      <td>100</td>
+      <td>16.8</td>
+      <td>13.3</td>
+      <td>–0.053</td>
+      <td>0.022</td>
+      <td>Heschl L</td>
+      <td>100</td>
+      <td>11.8</td>
+      <td>11.8</td>
+      <td>0.085</td>
+      <td>–0.089</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>hippocampal sclerosis</td>
+      <td>Heschl L</td>
+      <td>98</td>
+      <td>9.1</td>
+      <td>9.1</td>
+      <td>–0.061</td>
+      <td>–0.005</td>
+      <td>Heschl L</td>
+      <td>100</td>
+      <td>10.4</td>
+      <td>10.4</td>
+      <td>0.069</td>
+      <td>–0.004</td>
+    </tr>
+  </tbody>
+</table>
+
+_LCMV, linearly constrained minimum variance; ΔGranger, difference of GC spectra._
+
 The mean correct response rate was 91% (both for IN and OUT trials). The rate of correct responses decreased with set size from a set size of 4 (97% correct responses) to set sizes of 6 (89%) and 8 (83%) (Figure 1b). Across the participants, the memory capacity averaged 6.1 (Cowan’s K, [correct IN rate +correct OUT rate –1]×set size), which indicates that the participants were able to maintain at least six letters in memory. The mean response time (RT) for correct trials (3045 trials) was 1.1±0.5 s and increased with workload from set size 4 (1.1±0.5 s) to 6 (1.2±0.5 s) and 8 (1.3±0.6 s), 53 ms/item (Figure 1c). Correct IN/OUT decisions were made more rapidly than incorrect decisions (1.1±0.5 s vs 1.3±0.6 s). These data show that the participants performed well in the task and that the difficulty of the trials increased with the number of letters in the set. In further analysis, we focused on correct trials with set size 6 and 8 letters to assure hippocampal activation and hippocampo-cortical interaction as shown earlier (Boran et al., 2019).
 
-## Power spectral density in cortical and hippocampal recordings
+### Power spectral density in cortical and hippocampal recordings
 
 To investigate how cortical and hippocampal activity subserves WM processing, we analyzed the LFP recorded in the hippocampus (Figure 1d, Figure 1—figure supplement 1, Supplementary file 1) together with ECoG from cortical strip electrodes (Figure 2a, Figure 3a and f). In the following, we present power spectral density (PSD) time-frequency maps from representative electrode contacts. In an occipital recording of Participant 1 (grid contact H3), strong gamma activity (>40 Hz) in the relative PSD occurred while the participant viewed the letters during encoding (increase >100% with respect to fixation, Figure 2b). Similarly, encoding elicited gamma activity in a temporal recording over auditory cortex (increase >100%, grid contact C2, Figure 2c), similar as in Kumar et al., 2021. Gamma increased significantly only in temporal and occipital-parietal contacts (permutation test with z-score >1.96, Figure 2a).
 
@@ -58,11 +367,11 @@ The site of the participants’ maintenance activity coincides with the generato
 
 In the hippocampus of all four participants, we found elevated activity in the beta range ([12 24] Hz) toward the end of the maintenance period (increase >100%, Figure 2e, Figure 3c, h and m), confirming the hippocampal contribution to processing of this task (Boran et al., 2019).
 
-## Functional coupling between hippocampus and cortex
+### Functional coupling between hippocampus and cortex
 
 To investigate the functional coupling between cortex and hippocampus, we first calculated the phase-locking value (PLV). In Participant 1, we found high PLV over a broad frequency range in contacts over auditory cortex throughout the trial. Compared to encoding, maintenance showed enhanced PLV in the theta range between hippocampal LFP and cortical ECoG (PLV=0.4 in contact C3, permutation test p<0.05, Figure 2f). PLV in the [4 8] Hz theta range increased significantly with several contacts over auditory cortex (permutation test p<0.05, Figure 2g). This speaks for a functional coupling between auditory cortex and hippocampus mediated by synchronized oscillations (Rezayat et al., 2021).
 
-## Directed functional coupling between hippocampus and ECoG
+### Directed functional coupling between hippocampus and ECoG
 
 What was the directionality of the information flow during encoding and maintenance in a trial? We used spectral Granger causality (GC) as a measure of directed functional connectivity to determine the direction of the information flow between auditory cortex and hippocampus in Participant 1 during the trials. During encoding, the information flow was from auditory cortex to hippocampus with a maximum in the theta frequency range (dark blue curve in Figure 2h). The net information flow ΔGranger (GC hipp→cortex – GC cortex→hipp) during encoding was significant in the [6 8] Hz range (blue bar in Figure 2h, p<0.05 permutation test against a null distribution). During maintenance, the information flow in the theta frequency range was reversed (dark red curve), i.e., from hippocampus to auditory cortex (dark red curve in Figure 2h). The net information flow ΔGranger during maintenance was significant in the [5 8] Hz range (red bar in Figure 2h, p<0.05 permutation test against a null distribution). Concerning the spatial spread of the theta GC, the maximal net information flow ΔGranger (GC hipp→cortex – GC cortex→hipp) during encoding occurred from auditory cortex to hippocampus (p<0.05, permutation test, Figure 2i). During maintenance, the theta ΔGranger was significant from hippocampus to both auditory cortex and occipital cortex (permutation test p<0.05, Figure 2j). Interestingly, in Participant 1, the distribution of high ΔGranger coincides with the distribution of high PLV: both show a spatial maximum to grid contacts over auditory cortex and both appear in the theta frequency range.
 
@@ -74,17 +383,25 @@ Similarly in Participant 2, the time course of GC followed the same pattern betw
 
 Thus, we showed in recordings from the left cortical hemisphere that letters were encoded with information flow from sensory cortex to hippocampus; conversely, the information flow from hippocampus to sensory cortex indicated the replay of letters during maintenance.
 
-## Source reconstruction of the scalp EEG
+### Source reconstruction of the scalp EEG
 
 We used beamforming (Oostenveld et al., 2011) to reconstruct the EEG sources during encoding and maintenance for each of the 15 participants (Table 1). We tested whether the sources during fixation differed from sources during encoding and during maintenance (non-parametric cluster-based permutation t-test Maris and Oostenveld, 2007; Popov et al., 2018). In each participant, the proportion of significant sources in the left hemisphere exceeded 80% of all significant sources. Across all participants, the spatial activity pattern during both encoding and maintenance showed the highest significance in frontal and temporal areas of the left hemisphere (Figure 4—figure supplement 1).
 
-## Directed functional coupling between hippocampus and averaged EEG sources
+### Directed functional coupling between hippocampus and averaged EEG sources
 
 The synchronization between hippocampal LFP and EEG sources (N=15 participants) confirmed the directed functional coupling found in the three participants with ECoG. We first calculated the GC between hippocampus and the EEG beamforming sources in the auditory cortex. We found that the mean GC spectra resembled the GC spectrum for ECoG in the theta frequency range ([4 8] Hz, Figure 4a). During encoding, the net information flow was from auditory cortex to hippocampus (light blue curve – dark blue curve, blue bar, p<0.05, group cluster-based permutation test). During maintenance, the net information flow was reversed (dark red curve – light red curve, red bar, p<0.05, group cluster-based permutation test), i.e., from hippocampus to auditory cortex. Interestingly, the pattern appeared with LFP recorded from the right hippocampus in several participants (Supplementary file 1). A similar GC pattern emerged when using the signals from left temporal scalp electrodes but was eliminated when using a Laplacian derivation. Thus, both for ECoG and EEG beamforming sources, GC showed the same bidirectional effect in theta between auditory cortex and hippocampus.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/78677/elife-78677-fig4-v1.jpg)
+
+**Figure 4.:** (a) Spectral GC between hippocampal LFP and auditory EEG sources, averaged over all N=15 participants. The shaded area indicates the variability across the population. During encoding, the net Granger (ΔGranger) indicates information flow from auditory cortex to hippocampus ([6 10] Hz, blue bar). During maintenance, ΔGranger indicates information flow from hippocampal LFP to auditory cortex (red bars, [6 9] Hz, [13 15] Hz). Bars: frequency range of significant ΔGranger (p<0.05), group cluster-based non-parametric permutation t-test against a null distribution with scrambled trials during encoding and maintenance. Colors of Granger spectra indicate information flow: dark blue, cortex to hippocampus during encoding; light blue, hippocampus to cortex during encoding; dark red, hippocampus to cortex during maintenance; light red, cortex to hippocampus during maintenance. (b) The median net information flow (ΔGranger) in the [4 8] Hz range during encoding is projected onto an inflated brain surface. The maximal ΔGranger appeared from temporal superior gyrus (median ΔGranger=–0.049) indicating information flow from auditory cortex to hippocampus. Negative values of median ΔGranger appeared also in other areas, albeit less intense (ΔGranger>–0.03). (c) The median net information flow (ΔGranger) in the [4 8] Hz range during maintenance is projected onto an inflated brain surface. The maximal ΔGranger appeared from temporal superior gyrus (median ΔGranger=0.034) indicating an information flow from hippocampus to auditory cortex. Positive values of median ΔGranger appeared also in other areas, albeit less intense (ΔGranger <0.02). (d) The maximal ΔGranger in the [4 8] Hz range was negative during encoding (blue, auditory cortex → hippocampus, median ΔGranger=–0.049) and positive during maintenance (red, hippocampus → auditory cortex, median ΔGranger=0.034) for each participant (red and blue connected marker, paired permutation test, correct trials only). The mean values and statistical significance derive only from 10% of the correct trials in order to balance the number of incorrect trials. (e) The net information flow between hippocampal LFP and lateral prefrontal cortex in the [4 8] Hz range has a lower median than to auditory cortex and higher variability (correct trials only, p=0.16, paired permutation test, not significant). (f) For incorrect trials, the maximal ΔGranger in the [4 8] Hz range is highly variable (p=0.37, paired permutation test, not significant). (g) Bidirectional information flow between cortical sites and hippocampus in the working memory network. The GC analysis suggests a surprisingly simple model of information flow during the task. During encoding, letter strings are verbalized as subvocal speech; the incoming information flows from auditory cortex to hippocampus. During maintenance, participants actively recall and rehearse the subvocal speech in the phonological loop; GC indicates an information flow from hippocampus to cortex as the physiological basis for the replay of the memory items.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78677/elife-78677-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) The area of significant activation (t-value>8) during encoding compared to fixation is averaged for the group of participants and is projected onto an inflated brain surface. The most significant increase appears on sources over the left lateral prefrontal cortex. The spatial activation pattern at the cortical level spreads mostly over the left hemisphere (left frontal area, temporal pole, temporal superior gyrus, and Heschl gyrus). On the right hemisphere, there is only a small orbitofrontal activation. (b) The area of significant activation (t-value>8) during maintenance compared to fixation is projected onto an inflated brain surface. The most significant increase appears on sources over the left temporal superior gyrus (auditory cortex). The spatial activation pattern at the cortical level spreads mostly over the left hemisphere (left frontal area, temporal pole, temporal superior gyrus, and Heschl gyrus). On the right hemisphere, an activation appears on premotor/motor cortex. The spatial activation pattern derives from a non-parametric cluster-based permutation t-test (N=1000 permutations, significance established at t>1.96 and p<0.05). The activation map is thresholded at the 80% of the maximal t-value. Blue colorbar: encoding, red colorbar: maintenance.
+
 To explore the spatial distribution, we computed GC also for other areas of cortex. We averaged the net information flow (ΔGranger) in the theta range across the participants and projected it onto the inflated brain surface (Figure 4b and c). During encoding, the mean information flow was strongest from auditory cortex to hippocampus (ΔGranger=−0.049, p=0.0009, Kruskal-Wallis test, Figure 4b). For all other areas, the mean ΔGranger was also from cortex to hippocampus but the effect was weaker (mean ΔGranger = [–0.03 0], Dunn’s test, Bonferroni corrected). During maintenance (Figure 4c) the information flow was reversed. While all areas had information flow from hippocampus to cortex (ΔGranger = [0.02], Dunn’s test, Bonferroni corrected), the strongest flow appeared from hippocampus to auditory cortex (ΔGranger=0.034, p=0.001, Kruskal-Wallis test).
 
-## Directed functional coupling and the participants’ performance
+### Directed functional coupling and the participants’ performance
 
 The reversal of ΔGranger appeared in all 15 participants individually (Figure 4d). We averaged ΔGranger for each participant in the [4 8] Hz theta frequency range. The ΔGranger between hippocampus and auditory cortex, was negative during encoding and was positive during maintenance in the theta frequency range (p=4.1e-10, paired permutation test). The directionality and its reversal was missing for all other areas, e.g., lateral prefrontal cortex (p=0.16, paired permutation test, Figure 4e). Of note, all analyses up to here were performed on correct trials only.
 
@@ -106,19 +423,19 @@ Taken together, our results corroborated earlier findings on the WM network and 
 
 ## Materials and methods
 
-## Task
+### Task
 
 We used a modified Sternberg task in which the encoding of memory items and their maintenance was temporally separated (Figure 1a). Each trial started with a fixation period ([−6, –5] s), followed by the stimulus ([−5, –3] s). The stimulus consisted of a set of eight consonants at the center of the screen. The middle four, six, or eight letters were the memory items, which determined the set size for the trial (4, 6, or 8 respectively). The outer positions were filled with ‘X’, which was never a memory item. The participants read the letters and heard them spoken at the same time. After the stimulus, the letters disappeared from the screen, and the maintenance interval started ([−3, 0] s). Since the auditory encoding may have extended beyond the 2 s period, we restrict our analysis to the last 2 s of the maintenance period ([−2, 0] s). A fixation square was shown throughout fixation, encoding, and maintenance. After maintenance, a probe was presented. The participants responded with a button press to indicate whether the probe was part of the stimulus. The participants were instructed to respond as rapidly as possible without making errors. After the response, the probe was turned off, and the participants received acoustic feedback regarding whether the response was correct or incorrect. The participants performed sessions of 50 trials in total, which lasted approximately 10 min each. Trials with different set sizes were presented in a random order, with the single exception that a trial with an incorrect response was always followed by a trial with a set size of 4. The task can be downloaded at http://www.neurobs.com/ex_files/expt_view?id=266.
 
-## Participants
+### Participants
 
 The participants in the study were patients with drug resistant focal epilepsy. To investigate a potential surgical treatment of epilepsy, the patients were implanted with intracranial electrodes. Electrodes were placed according to the findings of the non-invasive presurgical evaluation, where the epileptologists hypothesized the epileptic foci to be localized (Zijlmans et al., 2019). Since the presumed epileptic foci included the hippocampus in all patients, electrodes were placed in the hippocampus. In four patients, additional electrodes were placed on the cortex because an epileptic focus in the cerebral cortex was considered. The participants provided written informed consent for the study, which was approved by the institutional ethics review board (PB 2016–02055). The participants were right handed and had normal or corrected-to-normal vision. For nine participants (5–14), the PSD and PLV have been reported in an earlier study (Boran et al., 2019).
 
-## Electrodes for LFP, ECoG, and EEG
+### Electrodes for LFP, ECoG, and EEG
 
 The depth electrodes (1.3 mm diameter, eight contacts of 1.6 mm length, spacing between contact centers 5 mm, Ad-Tech, adtechmedical.com) were stereotactically implanted into the hippocampus for LFP recording. Subdural grid and strip electrodes (platinum electrode contacts with 4 mm2 contact surface and 1 cm inter-contact distance, Ad-Tech) were placed directly on the cortex for ECoG recordings. For scalp EEG recording, cup electrodes (Ag/AgCl) were placed on the scalp and filled with electrolyte gel (Signagel, Parker Laboratories) to obtain an impedance <5 kΩ.
 
-## Electrode localization
+### Electrode localization
 
 The stereotactic depth electrodes were localized using post-implantation CT and post-implantation structural T1-weighted MRI scans. The CT scan was registered to the post-implantation scan as implemented in FieldTrip (Stolk et al., 2018). A fused image of CT and MRI scans was produced and the electrode contacts were marked visually. The position of the most distal hippocampal contact was projected in a hippocampal surface (Figure 1d, Figure S1).
 
@@ -128,17 +445,21 @@ The scalp EEG electrodes were placed at the sites of the 10–20 system by exper
 
 Some of the intracranial electrode contacts were found in tissue that was deemed to be epileptogenic and that was later resected. Still, neurons in this tissue have been found to participate in task performance in an earlier study (Boran et al., 2019).
 
-## Recording setup, re-referencing, and preprocessing
+### Recording setup, re-referencing, and preprocessing
 
 All recordings (LFP, ECoG, and scalp EEG) were performed with the Neuralynx ATLAS system (sampling rate 4000 Hz, 0.5 1000 Hz passband, Neuralynx, neuralynx.com). ECoG and LFP were recorded against a common intracranial reference. Signals were analyzed in MATLAB (Mathworks, Natick MA, USA). We re-referenced the hippocampal LFP against the signal of a depth electrode contact in white matter. We re-referenced the cortical ECoG against a different depth electrode contact. The choice of two separate references for LFP and ECoG has been shown to avoid spurious functional connectivity estimates (Bastos and Schoffelen, 2015). The scalp EEG was recorded against an electrode near the vertex and was then re-referenced to the averaged mastoid channels. All signals were downsampled to 500 Hz. All recordings were done at least 6 hr from a seizure. Trials with large unitary artifacts in the scalp EEG were rejected. We focused on the trials with high workload (set sizes 6 and 8) for further analysis. We used the FieldTrip toolbox for data processing and analysis (Oostenveld et al., 2011).
 
-## Power spectral density
+### Power spectral density
 
 We first calculated the relative PSD in the time-frequency domain (Figure 2b). Time-frequency maps for all trials were averaged. We used 3 multitapers with a window width of 10 cycles per frequency point, smoothed with 0.2×frequency. We computed power in the frequency range [4 100] Hz with a time resolution of 0.1 s. The PSD during fixation ([−6 –5] s) served as a baseline for the baseline correction (PSD[t] – PSD[fixation])/ PSD(fixation) for each time-frequency point.
 
-## Phase-locking value
+### Phase-locking value
 
-To evaluate the functional connectivity of hippocampus and cortex, we calculated the PLV between hippocampal LFP channels and ECoG grid (multitaper frequency transformation with two tapers based on Fourier transform, frequency range [4 100] Hz with frequency resolution of 1 Hz).PLVi,j(f)=1N|∑n=1NXi(f)⋅(Xj(f))∗|Xi(f)|⋅|Xj(f)||
+To evaluate the functional connectivity of hippocampus and cortex, we calculated the PLV between hippocampal LFP channels and ECoG grid (multitaper frequency transformation with two tapers based on Fourier transform, frequency range [4 100] Hz with frequency resolution of 1 Hz).
+
+$$
+PLV_{i,j}(f)=\frac{1}{N}|\sumn=1N\frac{X_{i}(f)⋅(X_{j}(f))∗}{|X_{i}(f)|⋅|X_{j}(f)|}|
+$$
 
 where PLVi,j is the PLV between channels i and j, N is the number of trials, X(f) is the Fourier transform of x(t), and (∙)* represents the complex conjugate.
 
@@ -146,21 +467,25 @@ Using the spectra of the 2-s epochs, phase differences were calculated for each 
 
 In our description of EEG frequency bands, we used theta [4 8] Hz, alpha [8 12] Hz, beta [12 24] Hz, and gamma >40 Hz, while the exact frequencies may differ in individual participants.
 
-## Source reconstruction of the EEG sources
+### Source reconstruction of the EEG sources
 
 We reconstructed the scalp EEG sources using linearly constrained minimum variance (LCMV) beamformers in the time domain. To solve the forward problem, we used a precomputed head model template and aligned the EEG electrodes of each participant to the scalp compartment of the model via interactive scaling, translation, and rotation (ft_electrode_realign.m). We then computed the source grid model and the leadfield matrix, wherein we determined the grid locations according to the brain parcels of the automated anatomical atlas (AAL) (Tzourio-Mazoyer et al., 2002). We solved the inverse problem by scanning the grid locations using the LCMV filters separately for encoding and maintenance. The EEG sources were baselined with respect to the fixation period and presented as a percent of change from the pre-stimulus baseline. We defined cortical areas from multiple parcels since AAL is a parcellation based on sulci and gyri. We performed all the steps of the source reconstruction with FieldTrip (Oostenveld et al., 2011) and projected the sources onto an inflated brain surface.
 
-## Spectral Granger causality
+### Spectral Granger causality
 
 In order to evaluate the direction of information flow between the hippocampus and the cortex, we calculated spectral non-parametric GC as a measure of directed functional connectivity analysis (Oostenveld et al., 2011). We evaluated the direction of information flow in the (Sarnthein et al., 1998; Li et al., 2022; [4 20]) Hz frequency range. To compute the GC, we first downsampled the signals to the Nyquist frequency=40 Hz. We then computed the GC between hippocampal contacts and ECoG grid contacts. We also computed GC between the same hippocampal contacts and EEG sources located over the regions of interest. GC examines if the activity on one channel can forecast activity in the target channel. In the spectral domain, GC measures the fraction of the total power that is contributed by the source to the target. We transformed signals to the frequency domain using the multitaper frequency transformation method (two Hann tapers, frequency range [4 20] Hz with 20 s padding) to reduce spectral leakage and control the frequency smoothing.
 
-We used a non-parametric spectral approach to measure the interaction in the channel pairs at a given interval time (Bastos and Schoffelen, 2015). In this approach, the spectral transfer matrix is obtained from the Fourier transform of the data. We used the FieldTrip toolbox to factorize the transfer function H(f) and the noise covariance matrix Σ. The transfer function and the noise covariance matrix were then employed to calculate the total and the intrinsic power, S(f)=H(f)ΣH×(f), through which we calculated the Granger interaction in terms of power fractions contributed from the source to the target. GCY→X→=lnSxx(f)S∼xx(f)
+We used a non-parametric spectral approach to measure the interaction in the channel pairs at a given interval time (Bastos and Schoffelen, 2015). In this approach, the spectral transfer matrix is obtained from the Fourier transform of the data. We used the FieldTrip toolbox to factorize the transfer function H(f) and the noise covariance matrix Σ. The transfer function and the noise covariance matrix were then employed to calculate the total and the intrinsic power, S(f)=H(f)ΣH×(f), through which we calculated the Granger interaction in terms of power fractions contributed from the source to the target.
 
-where Sxx(f) is the total power and S~xx(f) is the instantaneous power. To average over the group of participants, we calculated the Granger spectra for the selected channel pairs and averaged these spectra over participants (Figure 4a).
+$$
+GC_{Y→X}→=ln\frac{S_{xx}(f)}{S∼_{xx}(f)}
+$$
+
+where Sxx(f) is the total power and $S~_{xx}(f)$ is the instantaneous power. To average over the group of participants, we calculated the Granger spectra for the selected channel pairs and averaged these spectra over participants (Figure 4a).
 
 To illustrate the time course of GC over time, we calculated time-frequency maps with the multitaper convolution method of Fieldtrip (Oostenveld et al., 2011).
 
-## Statistics
+### Statistics
 
 To analyze statistical significance, we used cluster-based non-parametric permutation tests. To assess the significance of the difference of the Granger between different directions, we compared the difference of the true values to a null distribution of differences. We recomputed GC after switching directions randomly across trials, while keeping the trial numbers for both channels constant. Then we computed the difference of GC for the two conditions. We repeated this n=200 times to create a null distribution of differences. The null distribution was exploited to calculate the percentile threshold p=0.05. In this way, we compare the difference of the dark and light spectra against a null distribution of differences. We mark the frequency range of significant GC with a blue bar for encoding (dark blue spectrum exceeds light blue spectrum, information flow from cortex to hippocampus) and with a red bar for maintenance (dark red spectrum exceeds light red spectrum, information flow from hippocampus to cortex).
 

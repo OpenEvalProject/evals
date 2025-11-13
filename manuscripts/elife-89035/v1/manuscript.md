@@ -15,8 +15,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02s6k3f65 Molecular Virology, Department of Biomedicine, University of Basel Basel Switzerland
-2. https://ror.org/02s6k3f65 BioEM Lab, Biozentrum, University of Basel, Mattenstrasse Basel Switzerland
+1. Molecular Virology, Department of Biomedicine, University of Basel Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
+2. BioEM Lab, Biozentrum, University of Basel, Mattenstrasse Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
 
 † Corresponding author
 
@@ -40,9 +40,17 @@ The CLEVER process therefore provides a platform for broad use in multiple virus
 
 ## Results
 
-## Optimized DNA-based recovery of authentic full-length SARS-CoV-2 virus
+### Optimized DNA-based recovery of authentic full-length SARS-CoV-2 virus
 
 While most previously published techniques for the recovery of full-length, infectious coronaviruses require several intermediate steps (Kurhade et al., 2023), we found the DNA-based method by Mélade and colleagues an attractive basis for our work. It introduces overlapping subgenomic DNA fragments, covering the entire virus genome, into permissive cells. DNA recombination by the cellular machinery then leads to the generation of a full-length viral genomic cDNA copy from which plus-strand RNA is transcribed, starting a complete viral replication cycle. Accordingly, we inserted a heterologous promoter as well as critical regulatory elements 5′ and 3′ of the viral genome (Figure 1A). Eight overlapping fragments spanning the whole SARS-CoV-2 genome were PCR amplified and transfected in equimolar ratios into HEK293T cells. The resulting propagation of recombinant SARS-CoV-2 (rCoV2) was assessed by the developing cytopathic effect (CPE) once culture supernatant was passaged onto permissive Vero E6 cells (Supplementary file 1). A first CPE was typically observed after 6–8 days post-transfection (dpt). Whereas co-transfection of nucleocapsid (N) mRNA or N-expressing plasmid has been reported to be critical for a successful virus recovery (Xie et al., 2020), we found no such improvement, as it has been reported previously for a different DNA-based reverse genetics method (Torii et al., 2021).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/89035/elife-89035-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of the SARS-CoV-2 genome and the infectious subgenomic amplicons (ISA)-based method for virus recovery. Eight respectively four overlapping fragments covering the whole SARS-CoV-2 genome were PCR amplified. The heterologous CMV promoter was cloned upstream of the 5′ untranslated region (UTR) and a poly(A) tail, HDV ribozyme, and SV40 termination signal downstream of the 3′ UTR. (B) Infectious virus reconstituted from four fragments (rCoV2-4fr) assessed by cytopathic effect (CPE, top) on susceptible Vero E6 cells by supernatant transfer. Plaque size was compared by standard plaque assay 2 d after inoculation on Vero E6 cells (bottom). (C) Workflow for the rescue of recombinant SARS-CoV-2. Four fragments were PCR amplified, mixed in equimolar ratios, transfected into HEK293T cells, and infectious virus was recovered 7 d post-transfection. Commercially available SARS-CoV-2 rapid antigen tests can be used for a quick non-quantitative analysis. (D) Detection of intracellular SARS-CoV-2 nucleocapsid protein (N, green) and nuclei (Hoechst, blue) in Vero E6 cells infected with parental wild-type or recombinant virus by immunocytochemistry. (E) Growth kinetics of recombinant virus and its parental wild-type virus. Vero E6 cells were infected in triplicates at a multiplicity of infection (MOI) of 0.01, supernatant was collected 12, 24, 48, and 72 hr post-infection and analyzed by plaque assay. Cell layers were washed 2 hr post-infection. Data represents mean ± SEM, analyzed with multiple t-tests and Benjamini, Krieger, and Yekutieli correction (N = 3 individual biological replicates, n = 3 technical replicates). (F) Cryo-transmission electron microscope pictures of parental wild-type virus and recombinant virus in glutaraldehyde-fixed samples. Scale bar is 100 µm (top) and 2 mm (bottom) in (B), 20 µm in (D), and 100 nm in (F).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89035/elife-89035-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic representation of the workflow to generate clonal virus populations. Right after transfection, cells were diluted to less than 0.5 virus-producing cells/well in 96-well plates. Then, 7 d post-transfection, the supernatant was transferred onto Vero E6-TMPRSS2 cells. Plates were observed until a cytopathic effect (CPE) became apparent. (B) Clonal virus populations arising from a single virus-producing cell were identified after supernatant transfer onto Vero E6-TMPRSS2 cells. CPE of infectious virus was assessed by microscopy and virus was collected for further analysis. Thereafter, plates were fixed and stained for the fast enumeration of positive wells (in light blue).
 
 Thus, our protocol is exclusively dependent on a single DNA transfection step, and the omission of any mRNA or DNA co-transfection step renders the rescue procedure significantly less laborious. Furthermore, the skipping of external N allowed us to use standard commercial rapid antigen tests for SARS-CoV-2 to semi-quantitatively monitor a successful virus rescue within minutes. Moreover, this test is done inside the safety facility, eliminating the cumbersome sample export into a standard lab for RT-PCR and viral genome determination (Figure 1C).
 
@@ -58,7 +66,7 @@ Concluding these findings, the viruses reconstituted in vitro from four fragment
 
 The reconstitution process is highly reproducible, and rescue of recombinant SARS-CoV-2 from transfection was successful in different cell lines including HEK293T, HEK293, CHO, and BHK-21 cells (Supplementary file 1). In these cases, due to the absence of the ACE-2 receptor, a productive viral propagation depended on co-cultivation with Vero E6 cells. However, virus was directly rescued from ACE2-expressing A549 cells that did not need co-cultivation. In addition to the broad applicability to various cell types, various transfection protocols were successfully tested on HEK293T including electroporation or three different chemical reagents (Supplementary file 1).
 
-## Highly faithful genome amplification protocol
+### Highly faithful genome amplification protocol
 
 Along with the reduction in the number of DNA fragments, we invested in the optimization of the PCR-based genome amplification steps. To establish a stringent protocol, we attempted to minimize the inherent PCR-based errors in the product by applying certain rules: use of a high-fidelity polymerase, limiting the number of amplification cycles to 25, use of a high-template input (20–40 ng/25 μL reaction), and the pooling of at least eight parallel PCR reactions.
 
@@ -74,7 +82,7 @@ Using the above-mentioned stringent protocol, among eight reconstituted recombin
 
 In any given culture, several cells within the same well might have the ability to simultaneously initiate the production of infectious virus after transfection (compare Figure 1—figure supplement 1B), and any minority of an emerging mutated virus genome might be missed in the subsequent bulk sequencing of a heterologous population. For analysis, we thus sequenced clonal virus populations initially produced from one successfully transfected HEK293T cell. Reconstituted from four fragments, 174/384 wells (45%) turned virus-positive (Figure 1—figure supplement 1B), and 18 clonal viruses (thus representing more than 10% of all recovered viruses) were subjected to Sanger sequencing of the entire S gene. Not a single SNP was detected. To further confirm the observed sequence fidelity on the clonal level, NGS data of five clonal virus populations was analyzed: overall, six SNPs were detected, with five SNPs found within the same virus. Further, among these five SNPs, four were found within the 5′ UTR. Also, 3/5 clonal populations had 100% sequence integrity, ultimately proving the capacity of high-fidelity DNA polymerases (Figure 2, Supplementary file 2).
 
-## Highly versatile and rapid inter-genomic gene recombination
+### Highly versatile and rapid inter-genomic gene recombination
 
 A unique property of the ISA-based method resides in the fact that the DNA fragments do not need to be assembled before transfection, but that the choice of a fragment, for example, representing a special virus isolate or harboring a reporter sequence, remains exchangeable until the very last step before transfection. For this study, fragments were PCR amplified from different sources such as plasmid DNA or viral RNA in clinical specimens or even de novo synthesized linear dsDNA was used. Herein, it appeared important to test whether the DNA fragment size was limiting or whether certain sizes are preferred for the process. We successfully utilized fragment sizes from as large as 9 kb to only 500 bp (Supplementary file 1). For these tests and the targeted introduction of specific mutations, different genomic regions were tried as recombination sites. Importantly, recombination sites were chosen independently of GC content or the presence of repetitive sequences (Supplementary file 3). Irrespective of the manipulated region of the viral genome, all in silico designed recombination sites successfully yielded infectious viruses. This allows for very high freedom in choosing sites for homologous recombination across the entire genome as long as a 100 bp homology region is kept to the neighboring fragment (shorter overlaps have been used but were not further investigated in this study).
 
@@ -86,9 +94,17 @@ We demonstrate the high flexibility of the system by exchanging the region that 
 
 Interestingly, the neutralizing titers against chimeric viruses were similar to those of the respective full-length spike homologs, and significantly lower than for the Wuhan virus, indicating that the S gene sequence mostly determines neutralization titers in vitro.
 
-## One-step introduction of point mutations, modifications, or specific gene deletions
+### One-step introduction of point mutations, modifications, or specific gene deletions
 
 As fragments are amplified by PCR, the amplification step can be used for direct manipulations, and primers can be specifically designed to introduce mutations within the homology region without any need for cloning or de novo synthesis of a whole fragment (Figure 4A). The CLEVER primer design ensures a 100 bp sequence overlap between the generated PCR products that are either reached by separating the primer annealing sites or by adding a nucleotide stretch to the 5′ end of a primer annealing site to generate the desired 100 bp homology (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/89035/elife-89035-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic representation of the CLEVER primer design for direct mutagenesis. Shown is the (i) introduction of small nucleotide changes, (ii) the deletion of larger sequences, here shown for ORF3a, and (iii) the insertion of nucleotide stretches such as 3xFLAG as well as a timeline showing the expected work-flow needed from in silico design to virus rescue. (B) Details on the G614D and N501Y substitution within the S gene. Shown is position, primer design, and the integration into the viral genome confirmed by Sanger sequencing. (C) Validation of mutations by immunoblot. Shown is the validation of the ∆ORF3a (left) and ORF8-3xFLAG virus (right). Vero E6 cells were assessed with α-β-actin (α-β-ACT) and viral infection was detected using α-NSP2. ORF3a expression or ORF8/FLAG expression, respectively, was compared to wild-type infected cells and uninfected controls. (D) Validation of ∆ORF3a by immunocytochemistry. ∆ORF3a virus created by direct mutagenesis was compared to its parental wild-type virus. Shown is the expression of ORF3a (magenta) in both viruses. Nucleocapsid (N, green) expression was used to assess viral infection, nuclei were stained with Hoechst (blue). (E) Validation of ORF8-3xFLAG by immunocytochemistry. C-terminal tagging of ORF8 with 3xFLAG was achieved with direct mutagenesis. Shown is the expression of ORF8 (magenta) and FLAG (green) in both viruses. Nuclei were stained with Hoechst (blue). Scale bar is 20 µm in (D, E).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89035/elife-89035-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Shown are the different approaches of primer design to guarantee a 100 bp overlap between the neighboring fragments. Primers can either be separated in distance to ensure homology regions or additional nucleotides must be added to the 5′ end of the primer. Small nucleotide changes, deletions, or insertions can directly be introduced by adjusting the primer annealing sites and the homology regions, as depicted.
 
 To demonstrate the ease of introducing mutations using CLEVER, an oligonucleotide pair was designed to introduce the widely discussed N501Y mutation responsible for higher transmissibility and infectivity of SARS-CoV-2 (Liu et al., 2022). In a second approach, G614 was mutated back to the less favorable amino acid D614 (Korber et al., 2020; Plante et al., 2021). For both approaches, the two fragments harboring the SNP in the joint overlap sequence were co-transfected with the other fragments needed to complete the whole cDNA copy. The successful introduction of the desired SNP into the rescued virus was confirmed by sequencing (Figure 4B, Supplementary files 1 and 4). Sequence stability of both the fitness-enhancing but also fitness-impairing mutation was confirmed by resequencing after five passages (Supplementary file 4). This demonstrates that specific SNPs can be readily introduced by using primer-specific mutagenesis and that both, beneficial and disadvantageous mutations, can be stably integrated.
 
@@ -98,13 +114,25 @@ Moreover, we attempted to site-specifically insert short foreign sequences into 
 
 This strategy allowed us to rescue mutant virus within 2 weeks from the initial in silico primer design until virus rescue in Vero E6 cells. The process included primer design and synthesis (4 d), PCR and transfection (1 d), and obtaining a SARS-CoV-2-induced CPE (7 d) (Figure 4A).
 
-## Intracellular circularization strategy for a completely cloning-free rescue
+### Intracellular circularization strategy for a completely cloning-free rescue
 
 Due to the continuing emergence of new variants, fast adaptation of the laboratory strains and mutants/reporters is a constant process. Cloning or de novo synthesizing the complete genome of new variants is laborious and time-consuming. A small modification in our design led to a system for the rescue of recombinant virus from a clinical isolate directly.
 
 Initially, we cloned the eukaryotic expression elements needed for DNA-dependent RNA transcription 5′ and 3′ of the viral genome or purchased complete custom-designed plasmids that included those elements. Others had reported successful viral rescue from viral RNA using the ISA method, but an additional fusion PCR step was essential to incorporate the expression elements described above (Aubry et al., 2015).
 
 An additional hallmark of the CLEVER platform describes the rescue of recombinant virus without any need for bacterial cloning, additional PCR steps, or in vitro assembly, resulting in a protocol with the shortest hands-on time reported so far. For this purpose, all expression elements were jointly assembled into one single ‘linker-DNA element,’ which contains the 3′ elements (poly(A) tail, HDV ribozyme, SV40 termination signal) but also the CMV promoter (Figure 5A; Amarilla et al., 2021; Torii et al., 2021). At the 5′ and 3′ termini of this linking fragment, 100 bp of the viral 3′ and 5′ UTR, respectively, are added for successful intracellular recombination with the viral DNA fragments. This design recombines intracellular into a circular DNA product, positions the CMV promoter upstream of the 5′ UTR of the viral genome, and places the termination signal downstream from the viral 3′ UTR.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/89035/elife-89035-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic representation of the circular assembly within the eukaryotic cell with the linker fragment. The heterologous elements needed downstream of the 3′ untranslated region (UTR) (pA, HDVr, SV40) and upstream of the 5′ UTR (CMV) are assembled in one fragment, separated by a spacer sequence and flanked by homologous regions needed for intracellular recombination. (B) Representative agarose gel pictures from PCR fragments amplified by one-step RT-PCR from viral RNA and the linker fragment (L). Recombinant virus was rescued from five (top) or eight fragments (bottom), plus the linker fragment. Asterisks mark fragments harboring the introduced changes within their homology region. (C, D) Validation of (C) Omicron BA.5 ∆ORF3a and (D) XBB.1.5 ∆ORF3a by immunocytochemistry. The expression of ORF3a (magenta) in Omicron BA.5 and XBB.1.5 clinical isolates and recombinant ∆ORF3a viruses is shown. Nucleocapsid (N, green) expression was used to assess viral infection, nuclei were stained with Hoechst (blue). Scale bar represents 20 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89035/elife-89035-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) All fragments were directly amplified by one-step RT-PCR from viral RNA of Wuhan, Omicron BA.1, and Omicron BA.5. Eight fragments were amplified to prove high flexibility in exchanging fragments. (B) In addition to the chimeric viruses described in Figure 3, the genetic background (region outside of S) was replaced by the sequence of Omicron BA.1 or Omicron BA.5 and combined with a heterologous S sequence of Wuhan, Omicron BA.1 or BA.5, respectively. (C) Infectious chimeric virus was rescued and assessed via cytopathic effect (CPE) formation on Vero E6 cells. Scale bar represents 100 μm. (D) Scheme for the rapid distinguishment between Wuhan, Omicron BA.1, BA.5, and XBB.1.5 variants. Indicated regions (S or M) were Sanger sequenced to discriminate variants or confirm chimeric viruses. Amino acids are highlighted in yellow for the clear identification of the S gene variant and/or the background (within M).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/89035/elife-89035-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Schematic representation of the CHIKV genome and the design for the cloning-free rescue. The genome was divided into three overlapping fragments, and a silent SNP was introduced by PCR (red asterisk). (B, C) Successful recombination of the four PCR products (B) within the eukaryotic cell leads to a circular product and virus production (C), cytopathic effect (CPE) on BHK-21 cells for rCHIKV and negative control. (D) Schematic representation of the DENV genome and the design for the cloning-free rescue. The genome has been divided into two overlapping fragments and a silent SNP has been introduced by PCR (red asterisk). The protocol has been tested on two different clinical isolates (DENV1 and DENV3), whereas two different recombination sites were tested for DENV1 (rDENV1-A and rDENV1-B, only one schematically represented). (E, F) Overlapping PCR products (E) were transfected into BHK-21 cells, and CPE (F) was assessed on VeroE6-TMPRSS2 cells (rDENV1-A, rDENV1-B, rDENV3, and negative control). Scale bar is 100 µm in (C) and (F).
 
 Overall, the entire linker fragment is approximately 1.1 kb in length and leaves the residual fragments needed for genome reconstitution free of any non-viral sequences, meaning that subgenomic fragments can be amplified from viral RNA directly.
 
@@ -114,7 +142,7 @@ The new CLEVER strategy allowed us to rescue various chimeric viruses with no ba
 
 In a final step, we combined the two above-mentioned features of the CLEVER system: direct mutagenesis by primer design and direct rescue of recombinant virus from clinical isolates. By doing so, we rescued recombinant virus from the Omicron BA.5 isolate by doing a one-step RT-PCR on extracted viral RNA, but included the primer pair introducing an ORF3a deletion (Figure 5B, top). With the emergence of the Omicron XBB.1.5 variant, recombinant ∆ORF3a virus was rescued accordingly, but starting from eight fragments instead (Figure 5B, bottom). Regardless of the number of fragments transfected, infectious virus was rescued and passaged on Vero E6-TMPRSS2 and introduced changes were confirmed by Sanger sequencing (Supplementary file 4). Further, viral N expression (demonstrating infectivity) and ORF3a expression were assessed in ICC (Figure 5C and D). In only one step, we were able to create a deletion mutant of two newly emerging variants, and no Omicron BA.5 or XBB.1.5 sequence had to be cloned or de novo synthesized. This eventually demonstrates the wide applicability of the CLEVER platform and proves its rapidity in generating new SARS-CoV-2 mutant variants.
 
-## CLEVER protocol applied to CHIKV and DENV
+### CLEVER protocol applied to CHIKV and DENV
 
 Although the benefits of the CLEVER protocol mostly come into effect when working on large genomes such as SARS-CoV-2, we demonstrate its applicability to other plus-stranded RNA viruses. Whereas recombinant CHIKV (rCHIKV) has been previously rescued from in-house cloned plasmids using the ISA method, we used the linker fragment to demonstrate the fast rescue of infectious CHIKV directly from extracted viral RNA rather than from cloned plasmids. The primers at the junctions of the linker fragment and the viral genome have been adapted to introduce ~100 bp stretches of homology (Supplementary file 3). Further, to distinguish between wild-type and recombinant CHIKV, a silent SNP has been introduced at an inter-genomic recombination site (Figure 5—figure supplement 2A). Control experiments revealed that the sole transfection of total RNA results in the rescue of infectious CHIKV or DENV (has not been observed for SARS-CoV-2); therefore, an additional RNase A digestion step following PCR amplification was added. After transfection of all PCR-amplified fragments into BHK-21 cells, a CPE appeared 2 dpt (Figure 5—figure supplement 2B and C), and the presence of the silent SNP after Sanger sequencing confirmed the successful use of CLEVER on CHIKV (Supplementary file 4).
 
@@ -156,11 +184,11 @@ Taken together, CLEVER provides an elaborate platform for the rapid response to 
 
 ## Materials and methods
 
-## Human samples
+### Human samples
 
 Human serum samples for neutralization assays were collected from SARS-CoV-2 vaccinated anonymous donors who gave their informed consent (approved by Ethikkommission Nordwest- und Zentralschweiz #2022–00303).
 
-## Cells
+### Cells
 
 BHK-21 and CHO-K1 cells were obtained from Thermo Scientific (ATCC CCL-10 and CCL-61). African green monkey kidney cells (Vero E6) were kindly provided by V. Thiel, Bern, Switzerland, and HEK29T cells were provided by D. Pinschewer, Basel, Switzerland. Adenocarcinomic human alveolar basal epithelial cells (A549) were obtained from NIBSC (A549-ACE-2 Clone 8-TMPRSS2; product number 101006) and HEK293 cells were obtained from Batavia (Cat# 110-025; Lot# 19D006).
 
@@ -168,7 +196,7 @@ Cells were cultivated in Dulbecco’s modified Eagle medium (DMEM), high-glucose
 
 Vero E6-TMPRSS2 cells were generated by transduction with a second-generation lentiviral vector pLEX307-TMPRSS2-blast (Addgene plasmid #158458) and selected for 2 wk in DMEM containing 20 µg/mL of Blasticidin (Cat# SBR00022, Sigma-Aldrich).
 
-## Virus
+### Virus
 
 Virus stocks of the initial Wuhan strain of SARS-CoV-2 were provided by G. Kochs, University of Freiburg, Germany (SARS-CoV_FR-3 [GenBank OR018857]; SARS-CoV_Muc [GenBank OR018856]).
 
@@ -178,11 +206,11 @@ Clinical isolates of CHIKV, DENV1, and DENV3 were obtained from Dr. Karoline Leu
 
 All work including infectious SARS-CoV-2/CHIKV/DENV1/DENV3 viruses and their recombinant variants was conducted in a biosafety level 3 facility at the Department of Biomedicine within the University of Basel (approved by the Swiss Federal Office of Public Health (BAG) #A202850/3 and #A030187-2).
 
-## Viral RNA extraction and cDNA conversion
+### Viral RNA extraction and cDNA conversion
 
 Virus was propagated on Vero E6-TMPRSS2 cells and supernatant was harvested after 2 d of infection. CHIKV was propagated on BHK-21 cells and harvested after 1–2 d post-infection. DENV was propagated on Vero E6-TMPRSS2 cells and virus was harvested when a clear CPE was observed (5–7 d post-infection). RNA was extracted using the Maxwell RSC Viral Total Nucleic Acid Purification Kit (Cat# AS1330, Promega) or Maxwell RSC miRNA from Plasma or Serum (Cat# AS1680, Promega) following the manufacturer’s protocol. Viral RNA was either used to prepare cDNA with the cDNA Synthesis Kit (Cat# BR0400401, biotechrabbit) or used directly as a template for RT-PCR using SuperScript IV One-Step RT-PCR System (Cat# 12594100, Invitrogen).
 
-## DNA fragments for the generation of recombinant SARS-CoV-2
+### DNA fragments for the generation of recombinant SARS-CoV-2
 
 An adapted version of the ISA method (Aubry et al., 2014) was used to generate recombinant SARS-CoV-2. The genome was divided into four fragments (A–D) based on the reference sequence MT066156 (fragment A: nt1-nt8594; fragment B: nt8590-nt15107; fragment C: nt15100-nt20958; fragment D: nt20950-29867) and either amplified from a clinical isolate (FR-3 and Muc) and cloned into a modified pUC19 backbone (fragments A–D) or de novo synthesized (GenScript) and cloned into a pUC57 backbone (fragments A–C).
 
@@ -194,15 +222,15 @@ To introduce mutations into the SARS-CoV-2 genome, primers were designed to crea
 
 The size of PCR fragments was verified using gel electrophoresis and DNA was purified using the QIAquick PCR Purification Kit (Cat# 28104, QIAGEN). Concentration was measured using a Quantus Fluorometer (Promega) and the QuantiFluor ONE dsDNA System (Cat# E4871, Promega). When carryover of full-length plasmid cannot be excluded, a DpnI digestion step has to be considered. The fragments were mixed in an equimolar ratio, ethanol precipitated, and eluted to a final concentration of 1 μg/μL.
 
-## Cloning-free reconstitution of SARS-CoV-2 directly from RNA using the linker fragment
+### Cloning-free reconstitution of SARS-CoV-2 directly from RNA using the linker fragment
 
 Fragments were amplified directly from extracted viral RNA using the SuperScript IV One-Step RT-PCR System (Cat# 12594100, Invitrogen). Primers and PCR settings are listed in Supplementary files 5 and 6. An additional initial step at 50°C for 10 min was performed for cDNA conversion. For some virus reconstitutions, only one PCR reaction was performed per fragment and all fragments were pooled without further DNA quantification. In addition to the subgenomic fragments, a linker fragment comprising 100 bp overlap to fragment D2, the poly(A) tail (35), HDVr, SV40 followed by a spacer sequence, the CMV promoter and 100 bp of fragment A1 (total size of 1106 bp) was added. Then, 1 μg (if no DNA quantification of viral fragments was done) or a 5× molar excess of the linker fragment was added to the remaining fragments and transfected into HEK293T cells as described below.
 
-## Linker fragment
+### Linker fragment
 
 The region comprising the 3′ termination signals (poly(A), HDVr, SV40 pA signal) and the last 100 bp of the 3′ UTR of SARS-CoV-2 as well as the region comprising the CMV promoter and the first 100 bp of the 5′ UTR of SARS-CoV-2 were amplified and inserted into pUC19 using Gibson assembly. The linker fragment was amplified using the primers listed in Supplementary file 5.
 
-## Transfection and recovery of SARS-CoV-2
+### Transfection and recovery of SARS-CoV-2
 
 A total of 4–8 μg of an equimolar mix of purified DNA fragments (1 μg/μL) spanning the whole SARS-CoV-2 genome was transfected into 2 × 106 HEK293T cells using the SF Cell Line 4D-Nucleofector-X Kit (Cat# V4XC-2012, Lonza) and the 4D-Nucleofector X Unit (Lonza) with pulse code DS-150. The following pulse codes were used for different cell lines: CM-130 (A549-ACE2), DT-133 (CHO-K1), and CA-137 (BHK-21).
 
@@ -212,54 +240,54 @@ For lipid-based transfection, HEK293T cells were seeded in 6-well plates in DMEM
 
 Successful virus rescue was monitored with SARS-CoV-2 Rapid Antigen Test (Cat# 9901-NCOV-01G, SD BIOSENSOR, Roche) by applying 100 μL of unfiltered culture supernatant directly onto the test device.
 
-## Cloning-free rescue of CHIKV and DENV1/DENV3
+### Cloning-free rescue of CHIKV and DENV1/DENV3
 
 Overlapping fragments spanning the whole CHIKV (three fragments) or DENV1/DENV3 (two fragments) genome were amplified directly from extracted viral RNA as described above. The linker fragment was amplified with specific primers for CHIKV, DENV1, or DENV3, respectively, to introduce a homology region to the viral genome. Primers and PCR settings are listed in Supplementary files 5 and 6. To prevent recovery of wild-type virus from transfected total RNA, PCR fragments were digested with RNase A (Cat# EN0531, Thermo Scientific) before transfection. Additionally, a marker SNP was introduced within the recombination sites to differentiate between recombinant and wild-type viruses. A total of 6 μg DNA, including a 5× molar excess of the corresponding linker fragment, was transfected into BHK-21 cells using electroporation (see above). For CHIKV, CPE was observed as early as 2 dpt on BHK-21 cells. For DENV1 and DENV3, supernatant from transfected BHK-21 cells was transferred onto Vero E6-TMPRSS2 cells 6 dpt to observe CPE formation. Virus was passaged twice and the introduced marker SNP was confirmed by Sanger sequencing (Supplementary file 4).
 
-## Growth kinetics
+### Growth kinetics
 
 Vero E6 cells were seeded at 50% confluency in 12-well plates and cultured at 37°C, 5% CO2 in DMEM supplemented with 10% FBS, 1% P/S for 20 hr. The medium was replaced by DMEM 2% FBS, 1% P/S prior to inoculation with an MOI of 0.01 of reconstituted SARS-CoV-2 or clinical isolate in a total volume of 0.5 mL. Cell layers were washed with PBS 2 hpi and 2 mL of medium was added. Infections were set up in triplicates. Also, 200 μL were immediately collected for measuring input material (time point 0). Then, 12, 24, 48, and 72 hpi, 200 μL of supernatant were collected to determine viral titers. The time-course experiment was done in three biological replicates starting with the same input material. All samples were stored at –80°C until analysis. Infectious titers were determined by plaque assay.
 
-## Next-generation sequencing
+### Next-generation sequencing
 
 NGS was performed at Seq-IT GmbH & Co. KG Kaiserslautern using EasySeq SARS-CoV-2 WGS Library Prep Kit (NimaGen, SKU: RC-COV096) according to the manufacturer’s protocol. Sequencing was performed using a 300-cycle Mid Output kit on a NextSeq 500 system.
 
-## Standard plaque assay
+### Standard plaque assay
 
 Viral titers were determined by counting plaque-forming units (PFU) after incubation on susceptible cells. Vero E6 cells were seeded at a density of 4 × 106 cells/96-well flat-bottom plate in DMEM/2% FBS and incubated overnight at 37°C and 5% CO2. Virus was added 1:10 onto the cell monolayer in duplicates or triplicates and serially diluted 1:2 or 1:3. Plates were incubated for 2 d at 34°C, 5% CO2 until plaque formation was visible. For virus inactivation, 80 μL of formaldehyde (15% w/v in PBS; Cat# F8775, Sigma-Aldrich) was added for 10 min to the cultures. After this period, fixative and culture medium were aspirated, and crystal violet (0.1% w/v) was added to each well and incubated for 5 min. Afterward, the fixed and stained plates were gently rinsed several times under tap water and dried prior to analysis on a CTL ImmunoSpot analyzer.
 
-## Immunoblotting
+### Immunoblotting
 
 Vero E6 cells were seeded at confluency in 6-well plates and infected with an MOI of 0.5. Then, 30 hpi, after the first sights of CPE were visible, cells were washed and lysed in 1× Laemmli buffer. Lysates were boiled at 95°C for 5 min before being loaded onto a polyacrylamide gel (Cat# 4561094, Bio-Rad). Proteins were blotted onto a PVDF membrane (Bio-Rad, Cat# 1704156) using Trans-Blot Turbo Transfer (Bio-Rad) and blocked with 1% BSA in PBS with 0.05% Tween-20 for 1 hr. Primary antibody was diluted in PBS, 0.05% Tween-20, 1% BSA, and incubated on a shaker at 4°C for 16 hr. The membrane was washed three times in PBS, 0.05% Tween-20 before the secondary antibody was diluted in PBS, 0.05% Tween-20, 1% BSA, and incubated on a shaker for 1 hr at RT in the dark. The membrane was washed four times for 10 min in PBS, 0.05% Tween-20. Signals were acquired using an image analyzer (Odyssey CLx imaging system, LI-COR). Antibodies are listed below.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 For co-localization studies and validation of knock-out viral constructs, ~1 × 105 Vero E6 cells were seeded onto glass coverslips in 24-well plates and grown overnight. Cells were infected in low medium volume for 2 hr before the medium was added to the final volume of 1 mL and incubated for 24 hr. Cells were fixed with 4% PFA in PBS for 10 min at RT, washed, and subsequently stained. Briefly, cells were blocked with 10% Normal Donkey Serum (Cat# 017-000-121, Jackson ImmunoResearch) and 0.1% Triton X-100 for 30 min followed by incubation with primary antibodies for 1 hr in 1% Normal Donkey Serum, 1% BSA, and 0.3% Triton X-100 in PBS. Cells were washed three times 10 min with 1× PBS, 0.1% BSA, and incubated with secondary antibodies for 1 hr in 1% Normal Donkey Serum, 1% BSA, and 0.3% Triton X-100 in PBS. Cells were washed once with 1× PBS, 0.1% BSA, and washed three times with 1× PBS before mounting on microscope slides using Fluoromount-G (Cat# 0100-01, SouthernBiotech). Hoechst 33342 dye (Cat# B2261, Sigma-Aldrich) was co-applied during washing at a final concentration of 0.5 µg/mL for nuclear staining.
 
 Images from co-localization studies and knock-out validation were acquired on an inverted spinning-disk confocal microscope (Nikon Ti2 equipped with a Photometrics Kinetix 25 mm back-illuminated sCMOS, Nikon NIS AR software), using ×40 Plan-Apochromat objectives (numerical aperture 0.95) and were then processed in Fiji and Omero.
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used in this study: mouse monoclonal anti-β-actin (Cell Signaling Technology; Cat# 3700; RRID:AB_2242334; Lot# 20), rabbit polyclonal anti-FLAG (Cell Signaling Technology; Cat# 14793; RRID:AB_2572291; Lot# 5), rat monoclonal anti-FLAG (BioLegend; Cat# 637301; RRID:AB_1134266; Lot# B318853), rabbit polyclonal anti-SARS-CoV-2 NSP2 (GeneTex; Cat# GTX135717; RRID:AB_2909866; Lot# B318853), mouse monoclonal anti-SARS-CoV-2 Nucleocapsid protein (4F3C4, gift from Sven Reiche; Bussmann et al., 2006), sheep polyclonal anti-SARS-CoV-2 ORF3a (Rihn et al., 2021), and rabbit polyclonal anti-SARS-CoV-2 ORF8 (Novus Biologicals; Cat# NBP3-07972; Lot# 25966-2102).
 
 Fluorophore-conjugated secondary antibodies were from Jackson ImmunoResearch (Cy3 donkey anti-rat #712-165-153, Cy3 donkey anti-mouse #715-165-151, Cy5 donkey anti-rabbit #711-175-152, Cy5 donkey anti-sheep #713-175-147), Li-Cor (IRDye 680RD donkey anti-mouse #926-68072, IRDye 680RD goat anti-rabbit #926-68071), and Invitrogen (Alexa Fluor 680 donkey anti-sheep #A21102).
 
-## Cryo-transmission electron microscopy (cryo-TEM)
+### Cryo-transmission electron microscopy (cryo-TEM)
 
 Virus particles were fixed in 1% glutaraldehyde (Cat# 233281000, Thermo Scientific). A 4 µL aliquot of sample was adsorbed onto holey carbon-coated grid (Lacey, Tedpella, USA), blotted with Whatman 1 filter paper, and vitrified into liquid ethane at –180°C using a Leica GP2 plunger (Leica Microsystems, Austria). Frozen grids were transferred onto a Talos 200C Electron microscope (FEI, USA) using a Gatan 626 cryo-holder (Gatan, USA). Electron micrographs were recorded at an accelerating voltage of 200 kV using a low-dose system (40 e-/Å2) and keeping the sample at –175°C. Defocus values were –2 to 3 µm. Micrographs were recorded on 4K × 4K Ceta CMOS camera.
 
-## Sanger sequencing of recombinant virus
+### Sanger sequencing of recombinant virus
 
 RNA was extracted as described above and the region of interest was amplified using specific primer pairs and the SuperScript IV One-Step RT-PCR System (Cat# 12594100, Invitrogen). Amplified region was directly sent for overnight sequencing service at Microsynth AG, Balgach, Switzerland.
 
-## Neutralization assay
+### Neutralization assay
 
 Vero E6 cells were seeded in 96-well flat-bottom plates, 3.5 × 106 cells/plate in a final volume of 100 μL DMEM complemented with 2% FBS, 1% P/S. Cells were incubated at 37°C, 5% CO2 overnight to reach confluency. Patient sera were serially diluted 1:2 in a 96-well round-bottom plate, starting with a 1:20 dilution. Virus was added to the diluted sera at a final MOI of 0.002 per well and incubated for 1 hr at 34°C, 5% CO2. Pre-incubated sera/virus was added to the cells and incubated for 3 d at 34°C, 5% CO2. Cells were fixed as described above (Standard Plaque Assay).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Statistical analysis was conducted with GraphPad Prism 9. Sample sizes were chosen based on previous experiments and literature surveys. No statistical methods were used to predetermine sample sizes. Appropriate statistical tests were chosen based on sample size and are indicated in individual experiments.
 
-## Materials and correspondence
+### Materials and correspondence
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Thomas Klimkait (thomas.klimkait@unibas.ch).

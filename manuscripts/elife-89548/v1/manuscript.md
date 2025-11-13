@@ -12,16 +12,16 @@
 
 ### Affiliations
 
-1. https://ror.org/0153tk833 Center for Public Health Genomics, University of Virginia School of Medicine Charlottesville United States
-2. https://ror.org/0153tk833 Department of Biochemistry and Molecular Genetics, University of Virginia School of Medicine Charlottesville United States
-3. https://ror.org/008s83205 Department of Genetics, University of Alabama at Birmingham Birmingham United States
-4. https://ror.org/0153tk833 Department of Public Health Sciences, University of Virginia Charlottesville United States
+1. Center for Public Health Genomics, University of Virginia School of Medicine Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+2. Department of Biochemistry and Molecular Genetics, University of Virginia School of Medicine Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+3. Department of Genetics, University of Alabama at Birmingham Birmingham United States ([ROR:008s83205](https://ror.org/008s83205))
+4. Department of Public Health Sciences, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
 
 † Corresponding author
 
 ## Abstract
 
-Based on experimentally determined average inter-origin distances of ~100 kb, DNA replication initiates from ~50,000 origins on human chromosomes in each cell cycle. The origins are believed to be specified by binding of factors like the origin recognition complex (ORC) or CTCF or other features like G-quadruplexes. We have performed an integrative analysis of 113 genome-wide human origin profiles (from five different techniques) and five ORC-binding profiles to critically evaluate whether the most reproducible origins are specified by these features. Out of ~7.5 million union origins identified by all datasets, only 0.27% (20,250 shared origins) were reproducibly obtained in at least 20 independent SNS-seq datasets and contained in initiation zones identified by each of three other techniques, suggesting extensive variability in origin usage and identification. Also, 21% of the shared origins overlap with transcriptional promoters, posing a conundrum. Although the shared origins overlap more than union origins with constitutive CTCF-binding sites, G-quadruplex sites, and activating histone marks, these overlaps are comparable or less than that of known transcription start sites, so that these features could be enriched in origins because of the overlap of origins with epigenetically open, promoter-like sequences. Only 6.4% of the 20,250 shared origins were within 1 kb from any of the ~13,000 reproducible ORC-binding sites in human cancer cells, and only 4.5% were within 1 kb of the ~11,000 union MCM2-7-binding sites in contrast to the nearly 100% overlap in the two comparisons in the yeast, Saccharomyces cerevisiae . Thus, in human cancer cell lines, replication origins appear to be specified by highly variable stochastic events dependent on the high epigenetic accessibility around promoters, without extensive overlap between the most reproducible origins and currently known ORC- or MCM-binding sites.
+Based on experimentally determined average inter-origin distances of ~100 kb, DNA replication initiates from ~50,000 origins on human chromosomes in each cell cycle. The origins are believed to be specified by binding of factors like the origin recognition complex (ORC) or CTCF or other features like G-quadruplexes. We have performed an integrative analysis of 113 genome-wide human origin profiles (from five different techniques) and five ORC-binding profiles to critically evaluate whether the most reproducible origins are specified by these features. Out of ~7.5 million union origins identified by all datasets, only 0.27% (20,250 shared origins) were reproducibly obtained in at least 20 independent SNS-seq datasets and contained in initiation zones identified by each of three other techniques, suggesting extensive variability in origin usage and identification. Also, 21% of the shared origins overlap with transcriptional promoters, posing a conundrum. Although the shared origins overlap more than union origins with constitutive CTCF-binding sites, G-quadruplex sites, and activating histone marks, these overlaps are comparable or less than that of known transcription start sites, so that these features could be enriched in origins because of the overlap of origins with epigenetically open, promoter-like sequences. Only 6.4% of the 20,250 shared origins were within 1 kb from any of the ~13,000 reproducible ORC-binding sites in human cancer cells, and only 4.5% were within 1 kb of the ~11,000 union MCM2-7-binding sites in contrast to the nearly 100% overlap in the two comparisons in the yeast, Saccharomyces cerevisiae. Thus, in human cancer cell lines, replication origins appear to be specified by highly variable stochastic events dependent on the high epigenetic accessibility around promoters, without extensive overlap between the most reproducible origins and currently known ORC- or MCM-binding sites.
 
 ## Introduction
 
@@ -35,9 +35,21 @@ To understand the genome-wide distribution patterns of replication origins in an
 
 ## Results
 
-## A total of 7,459,709 origins from 113 datasets show similar but different genomic features associated with each origin-mapping technique
+### A total of 7,459,709 origins from 113 datasets show similar but different genomic features associated with each origin-mapping technique
 
 We collected 113 publicly available replication origin identification datasets in different human cell types from five different techniques (Figure 1—figure supplement 1a), including SNS-seq, Repli-seq, Rerep-seq, OK-seq, and Bubble-seq. The complete list of datasets used in this analysis can be found in Supplementary file 1. We processed all the datasets using the first two steps of a pipeline with different parameters considering the various resolutions of different techniques as SNS-seq is unique in identifying high-resolution origins of replication (Figure 1a). Each of the 113 datasets yielded at least 1000 origins. We merged origins that overlap for at least 1bp from each other and cut the merged regions into 300bp segments, considering origin lengths were significantly longer for Bubble-seq and OK-seq, methods known to identify IZs (Figure 1—figure supplement 1b). A total of ~7,460,000 union origins were discovered from all techniques (Figure 1b).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/89548/elife-89548-fig1-v1.jpg)
+
+**Figure 1.:** (a) Data processing pipeline. A total of 113 publicly available profiles of origins are processed following the pipeline. (b) Number of samples collected for each technique. In total, 7,459,709 union origins were identified. (c) Principal component analysis (PCA) shows the clustering of origin datasets from different techniques. (d) Genomic annotation (transcription start sites [TSS], exon, intron, and intergenic regions) of different groups of origins. Background is the percentage of each annotation on the whole genome. (e) Overlap with TF hotspots for different groups of origins and promoters. (f) Overlap with constitutive CTCF-binding sites for different groups of origins and promoters. (g) GC content of different groups of origins and promoters. Gray line marks the average GC content of the human genome. (h) G-quadruplex overlapping rates of different groups of origins and promoters.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89548/elife-89548-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) For each cell type, how many samples we have collected. (b) Distribution of peak length of origins from each technique. (c) Principal component analysis (PCA) results of all samples, marked by cell types. (d) PCA results of short nascent strand-seq (SNS-seq) samples, marked by cell types. (e) PCA results of SNS-seq samples, marked by the year of the data uploaded. (f) BART2 results of union origins. (g) Enrichment of histone marks at re-replicated union origins using total union origins as control.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/89548/elife-89548-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Pairwise correlation of samples from different techniques.
 
 Principal component analysis (PCA) of all origin datasets shows that origin profiles from the same technique are more similar to each other than from different techniques (Figure 1c). This is confirmed by pairwise correlations of the datasets, where it is evident that each method identifies origins that are best correlated with origins identified by that method alone (Figure 1—figure supplement 2). Although the most popular technique, SNS-seq, shows some internal variability in the PCA (Figure 1c), it is also the one that is best correlated with origins identified by other SNS-seq datasets. Rerep-seq and Bubble-seq seem to identify IZs that are also better correlated with SNS-seq origins (Figure 1—figure supplement 2). Since Rerep-seq tends to identify the origins that are enriched in early replicating, gene-rich parts of the genome, this result suggests that SNS-seq and Bubble-seq also have some bias for origins in early replicating, gene-rich parts of the genome. However, we did not observe clear trends of clustering of origins identified in similar cell types (Figure 1—figure supplement 1c), even when we focused only on SNS-seq origins (Figure 1—figure supplement 1d). The one exception was the SNS-seq origins from T lymphoblasts, which were very closely clustered with each other in six datasets, but these were all done in the CCRF-CEM cell line (or a derivative) by one group at the same time (Murai et al., 2018). We only examined SNS-seq data from 2018 onward when the lambda exonuclease-based digestion step had been incorporated into SNS-seq protocols, but wondered whether there was a steady improvement of reproducibility as one progressed through the years. However, SNS-seq datasets do not become progressively more reproducible as one goes year-by-year from 2018 to 2022 (Figure 1—figure supplement 1e). The results suggest that there is a significant difference in origins captured by different techniques that cannot be explained by differences in cell choices. For the most popular technique (SNS-seq), the variability may be least when confined to a single cell line studied at the same time by the same group.
 
@@ -45,11 +57,23 @@ We next checked the genomic characteristics of origins defined by each technique
 
 We found that all origins, regardless of the technique by which they are identified, are slightly enriched at gene promoters, exons, or introns compared with the genome background (Figure 1d). Among the five different techniques, origins defined by Rerep-seq show the highest level of enrichment with promoters, TF hotspots, constitutive CTCF-binding sites and G-quadruplexes, and the highest GC content. This is consistent with our knowledge that areas of the genome that are re-replicated when the cell cycle is disturbed are enriched in parts of the genome that replicate early in the S phase, regions that are enriched in transcriptionally active (and thus epigenetically open) genes and their promoters.
 
-## Shared origins are associated with active chromatin and transcription regulatory elements
+### Shared origins are associated with active chromatin and transcription regulatory elements
 
 To address the potential biases caused by each technique, we investigated how many of the ~5 million union SNS-seq origins are reproducible in SNS-seq data and confirmed by other sequencing-based techniques. As we will describe below, these shared origins show significant overlap with promoters. Because the Rerep-seq origins appear to be slightly different from the origins identified by other techniques, with the highest overlap with transcriptionally active genes and promoters, we decided to exclude the Rerep-seq from the analysis of shared origins and still reached the conclusion summarized above.
 
 SNS-seq origins have the highest resolution. We used the following strategy to determine how many independent confirmations of an SNS-seq origin are sufficient for selecting an SNS-seq origin as a reproducible origin. The occupancy score of each origin defined by SNS-seq (Figure 2—figure supplement 1a) counts the frequency at which a given origin is detected in the datasets under consideration. Plotting the number of union SNS-seq origins with various occupancy scores with all SNS-seq datasets published after 2018, we sought to determine whether the curve deviates from the random background at a given occupancy score (Figure 2a). For the random background, we assumed that the number of origins confirmed by increasing occupancy scores decreases exponentially (see ‘Methods’ and Supplementary file 2). The threshold occupancy score, to determine whether an origin is a reproducible origin, is the point where the observed number of origins deviates from the expected background number (with an empirical FDR < 0.1) (Figure 2a), an occupancy score of 20. Thus, the reproducible SNS-seq origins (with an FDR < 0.1) were those observed in at least 20 SNS-seq datasets.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/89548/elife-89548-fig2-v1.jpg)
+
+**Figure 2.:** (a) Short nascent strand-seq (SNS-seq) origin-fitting distribution to an exponential model shows an occupancy score ≥20 is selected for reproducible SNS-seq origins. (b) Conceptual model of how the shared origins are determined. Any SNS-seq shared origin that overlaps with Bubble-seq initiation zone (IZ), Okazaki-seq (OK-seq) IZ, and Repli-seq origin together is considered as an origin identified by all four techniques (shared origins). (c) Genomic annotation of union origins and shared origins. (d) Overlap with TF hotspots of union origins and shared origins. (e) Overlap with constitutive CTCF-binding sites of union origins and shared origins. (f) GC content of union origins and shared origins. (g) G-quadruplex overlapping rates of union origins and shared origins. (h) BART prediction of TFs associated with shared origins. (i) Enrichment of histone marks at shared origins using all union origins as control.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89548/elife-89548-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Conceptual model of how occupancy score is defined to represent the number of samples that each origin occurs. (b) Distribution of occupancy score of short nascent strand-seq (SNS-seq) union origins (300 bp).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89548/elife-89548-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Shared origins are defined from all samples. The number of shared origins covered by each file is calculated and marked in the figure.Numbers in the parentheses are the number of peaks in the other dataset that overlap with the shared origins.
 
 We next determined which reproducible SNS-seq origins are confirmed by origins from Repli-seq and replication IZs from Bubble-seq and OK-seq (Figure 2b). A total of 20,250 of the reproducible SNS-seq origins were found to overlap with an origin or IZ identified by each of the three other techniques and were called shared origins. These high-confidence shared origins consist of 0.27% of all ~7.5 million union origins. The coordinates of the shared origins are available in the supplementary files.
 
@@ -63,9 +87,17 @@ However, transcriptional and epigenetic activators are not the whole story. H3K2
 
 Having identified a small group of highly reproducible origins (independent of cell type and technique), we asked whether in a given cell line was one technique superior to the others in identifying such origins. K562 cells have been interrogated for origins by three different techniques: SNS-seq, OK-seq, and Repli-seq (Figure 2—figure supplement 2). Among the 20,250 high-confidence shared origins, 9901 (48.9%) overlapped with SNS-seq origins in K562, 3872 (19.1%) overlapped with OK-seq IZs in K562, and 1163 (5.7%) overlapped with Repli-seq origins in K562. This suggests that in one cell line even the large IZs defined by OK-seq or Repli-seq do not capture most of the high-confidence origins. In the opposite direction, where we estimate what fraction of origins found by a given technique fall in a reproducible origin, the opposite result emerges: 2.7% of SNS-seq origins, 17.2% of OK-seq IZs, and 7.7% of Repli-seq IZs overlapped with the 20,250 shared origins (Figure 2—figure supplement 2). Thus, SNS-seq may be able to identify more of the reproducible origins, but it comes with a high false-positive rate.
 
-## Human, but not yeast, high-confidence origins have low overlap with known ORC-binding sites
+### Human, but not yeast, high-confidence origins have low overlap with known ORC-binding sites
 
 ORC is expected to bind near replication origins during the cell cycle to help define origins (Bell, 2002). To investigate the correlation of ORC binding with shared origins detected across different origin-mapping techniques, we analyzed all five publicly available ORC1 and ORC2 ChIP-seq datasets with at least 1000 peaks (Supplementary file 1c). We identified a total of 34,894 ORC-binding sites in the human genome (Supplementary file 3). Union (all) of ORC-binding sites are enriched at promoters, TF hotspots, constitutive CTCF sites, GC content, and G-quadruplexes compared to randomized genome background (Figure 3a–e), somewhat similar to what we observed for the shared origins (Figure 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/89548/elife-89548-fig3-v1.jpg)
+
+**Figure 3.:** (a) Genomic annotation of union ORC and shared ORC-binding sites. (b) Overlap with TF hotspot of union ORC and shared ORC-binding sites. (c) Overlap with constitutive CTCF-binding sites of union ORC and shared ORC-binding sites. (d) GC content of union ORC and shared ORC-binding sites. (e) Overlap with G-quadruplex of union ORC and shared ORC-binding sites. (f) The percentage of high-confidence origins (shared origins in humans and confirmed origins in yeast) that overlapped with (left) or are proximate to (≤1 kb) (right) two types of ORC-binding sites (union or shared). (g) Distribution of the distance between ORC-binding sites and the nearest shared origin.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89548/elife-89548-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) A total of 12,712 ORC-binding sites in the human genome were shared by at least two ORC ChIP-seq datasets. The overlapping rates with the shared origins are provided. (b) Overlapping of union origins, MCM3-7, and ORC2 in K562 cell line. (c) Overlapping of union origins and MCM2 in HCT116 cell line. (d) Overlapping of union origins and ORC1 in HeLa cell line. (e) Overlapping of shared origins seen in K562 cells with ORC and MCM-binding sites in K562 cells. Shared origins seen in K562 cells were generated from short nascent strand-seq (SNS-seq) files that overlapped with K562 initiation zones (IZs) (defined by Okazaki-seq [OK-seq] and Repli-seq). (f) Overlapping of shared origins seen in HeLa cells with ORC-binding sites in HeLa cells. The shared origins seen in HeLa cells were generated from three HeLa derived SNS-seq samples using the intersected peaks from NS_GSM3983205_hela_siNC.bed, NS_GSM3983206_hela_siNC.bed, NS_GSM3983210_hela_siH2A.Z.bed.
 
 Of the 34,894 ORC-binding sites in the human genome, 12,712 sites were defined as shared ORC-binding sites as they occur in at least two ORC datasets (occupancy score ≥ 2). For the majority of genomic features, including enrichment at the promoter (Figure 3a), overlap with constitutive CTCF sites (Figure 3c), GC content (Figure 3d), and overlap with G-quadruplex (Figure 3e), ORC-binding sites have similar genomic distribution regardless of how many samples they appear in. Interestingly, the G-quadruplex enrichment at either union or shared ORC-binding sites is a bit lower than that in gene promoter regions (Figure 3e). The only significant difference between the union ORC sites and the shared ORC-binding sites is the significantly higher overlap of the latter with TF-binding hotspots (Figure 3b), suggesting that ORC-ChIP seq data also tend to enrich highly open chromatin regions.
 
@@ -79,7 +111,7 @@ Experiments in the yeast Saccharomyces cerevisiae have demonstrated that ORC bin
 
 Overall, we found that the shared origins are highly co-localized with ORC-binding sites in yeast but not in the human cell lines, suggesting that the current methods of ORC-binding site determination are failing to identify functional ORC binding.
 
-## Properties of the 6.4% shared origins co-localized reproduced ORC-binding sites
+### Properties of the 6.4% shared origins co-localized reproduced ORC-binding sites
 
 Because of the poor co-localization of shared origins with ORC-binding sites, we next focused on 6.4% of shared origins (1300) that are proximate to a shared ORC-binding site, a group we will call the ‘highest-confidence origins’. Compared with the shared origins or ORC-binding sites alone, these 1300 origins are even more co-localized with gene promoters (Figure 4a), TF-binding hotspots (Figure 4b), and constitutive CTCF-binding sites (Figure 4c). The GC content is not significantly higher for these ‘highest confidence origins’ (Figure 4d), and neither was their overlap with G-quadruplexes (Figure 4e).
 
@@ -95,15 +127,31 @@ To investigate whether the ‘highest confidence origins’ (shared origins near
 
 BART analysis (Wang et al., 2018) of which protein-binding sites are most enriched in 743 origins overlapping with any ORC-binding sites shows, as expected, that the ORC2-binding sites are enriched near these origins. The other proteins bound near these origins are either transcriptional activators like EPC1, LEF1, ELK, EGR1, PAF1, or transcriptional repressors like KLF13, KRAB, ZNF639, or ZBTB33 (Figure 4h). These results suggest that the shared origins overlapping with the ORC-binding sites tend to be more associated with transcriptional regulation than all shared origins.
 
-## Overlap of MCM-binding sites with the shared origins to define another type of the highest confidence origins
+### Overlap of MCM-binding sites with the shared origins to define another type of the highest confidence origins
 
 The six subunit minichromosome maintenance complex (MCM) is loaded on chromatin in G1 and forms the core of the active helicase that unwinds the DNA to initiate DNA replication (Madine et al., 2000). Since MCM2-7 may be loaded by ORC and move away from ORC to initiate DNA replication, it could be expected that even if the ORC-binding sites are not proximate to the 20,250 shared origins, they will be proximate with known MCM-binding sites. To test this, we analyzed 18 human MCM ChIP datasets (ENCODE Project Consortium, 2012; Ivanov et al., 2018; Utani et al., 2017). We identified a total of 11,394 MCM3-7-binding sites (union) and 3209 shared MCM-binding sites that are defined by an intersection of MCM3, MCM5, and MCM7 union peaks. Overall, MCM-binding sites displayed very similar genomic features to the ORC-binding sites (Figure 5a–e). We then defined the genomic features common among the shared origins that are close to (≤1 kb) the MCM-binding sites. Like the ORC-designated origins (Figure 4b), the MCM-designated origins showed higher overlap with TF-binding hotspots (Figure 5f). Very interestingly, similar to the high overlap between yeast origins and yeast ORC sites (Figure 3f), around 95% of yeast origins (Lee et al., 2021; Gros et al., 2015) are close to (≤1 kb) the union of all yeast MCM sites. In contrast, only ~4.5% of shared human origins are close to (≤1 kb) the union of experimentally defined human MCM-binding sites (Figure 5g).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/89548/elife-89548-fig5-v1.jpg)
+
+**Figure 5.:** (a) Genomic annotation of union MCM and shared MCM-binding sites. (b) Overlap with TF hotspot of union MCM and shared MCM-binding sites. (c) Overlap with constitutive CTCF-binding rates of union MCM and shared MCM-binding sites. (d) GC content of union MCM and shared MCM-binding sites. (e) Overlap with G-quadruplex of union MCM and shared MCM-binding sites. (f) Overlap with TF hotspots of shared origins and shared origins near the MCM-binding sites. (g) The percentage of high-confidence origins (shared origins in humans and confirmed origins in yeast) that overlapped with (left) or are proximate to (≤1 kb) (right) two types of MCM-binding sites (union or shared). (h) Venn diagram of the shared origins that are near the ORC-, MCM2-, or MCM3-7-binding sites.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89548/elife-89548-fig5-figsupp1-v1.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/89548/elife-89548-fig5-figsupp2-v1.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/89548/elife-89548-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (a) Percentage of shared origins that overlap with phosphorylated MCM2-binding sites. (b) Percentage of shared origins that are near phosphorylated MCM2-binding sites.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/89548/elife-89548-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (a) The percentage of high-confidence origins (defined by the cutoff of occupancy score indicated on the X-axis) that overlapped with the union or shared ORC-binding sites. (b) Similar to (a), except the percentage of origins that are near (<1 kb) the ORC-binding sites. (c) Similar to (a) except the percentage of origins that overlap with the union or shared MCM-binding sites. (d) Similar to (c), except the percentage of origins near (<1 kb) the MCM-binding sites.
 
 We examined all three types of high-confidence origins (ORC designated, MCM3-7 designated and MCM2 designated) in a Venn diagram (Figure 5h) and identified 74 that were reproducibly identified by multiple methods (shared origins near ORC-binding sites, MCM3-7-binding sites, and MCM2-binding sites). The coordinates of these origins and their supporting data (ORC- and MCM-binding sites) are listed in Supplementary file 5, and the genome browser views for three of them are shown in Figure 6 to indicate the relationship between the coordinates.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/89548/elife-89548-fig6-v1.jpg)
 
-**Figure 6.:** Figure 5h.The numbers below the short nascent strand-seq (SNS-seq) shared origins track are the occupancy score of the origins along the length of the indicated track.
+**Figure 6.:** The numbers below the short nascent strand-seq (SNS-seq) shared origins track are the occupancy score of the origins along the length of the indicated track.
 
 ## Discussion
 
@@ -115,7 +163,198 @@ The shared origins are enriched with active histone marks and enriched in early 
 
 We characterized the genomic features of origins and found that the shared origins are more co-localized with TSS. Table 1 shows a summary of the overlap of union origins, shared origins, and shared origins overlapping ORC-binding sites with various genomic features and compares this with the overlap of TSS with the same genomic features. Overall, these results suggest that as we proceed from all origins to shared origins to the highest confidence origins that are proximate to the ORC-binding sites, we see increasing overlap with promoters and early replicating, transcriptionally active, epigenetically open parts of the genome and that features thought to be important for origin selection (like G-quadruplexes, CTCF-binding sites, active chromatin, ORC-binding sites) could simply co-occur with origins because of their enrichment near the promoters (TSS).
 
+**Table 1.**
+ Overlap of origins, transcription start sites (TSS), and origin recognition complex (ORC)-binding sites with the indicated features.Summary of data to show the number of origins of different types, extent of overlap of each with different genomic features, and comparison with TSS (or promoters).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="5">% overlap with</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Number</td>
+      <td>Promoter</td>
+      <td>TF hotspot</td>
+      <td>CTCF</td>
+      <td>GC content</td>
+      <td>G quad</td>
+    </tr>
+    <tr>
+      <td>Union origins</td>
+      <td>7,459,709</td>
+      <td>4.1</td>
+      <td>0.1</td>
+      <td>0.7</td>
+      <td>41.3333</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Shared origins</td>
+      <td>20,250</td>
+      <td>21.1</td>
+      <td>0.82</td>
+      <td>2.2</td>
+      <td>53</td>
+      <td>43.5</td>
+    </tr>
+    <tr>
+      <td>Shared origins with shared ORC</td>
+      <td>1300</td>
+      <td>46.7</td>
+      <td>6.54</td>
+      <td>4.5</td>
+      <td>54</td>
+      <td>45.6</td>
+    </tr>
+    <tr>
+      <td>TSS ±-100</td>
+      <td>26,237</td>
+      <td>100</td>
+      <td>15.9</td>
+      <td>6.4</td>
+      <td>61.5</td>
+      <td>48.1</td>
+    </tr>
+    <tr>
+      <td>Shared ORC</td>
+      <td>12,712</td>
+      <td>32.2</td>
+      <td>20.7</td>
+      <td>10</td>
+      <td>53.1</td>
+      <td>44.1</td>
+    </tr>
+  </tbody>
+</table>
+
 To rigorously test whether the overlaps of shared origins that we observe with various genomic features are significantly above the background, we performed a permutation test that evaluates whether the observed overlap is significantly above the mean expected overlap when the experimental dataset is randomized 1000 times (Table 2). The overlap of shared origins with promoters (TSS ±4 kb), G-quadruplexes, R-loops, and CTCF-binding sites are all significantly above the background. However, the overlap of promoters with G-quadruplexes, R loops, and CTCF-binding sites are also all significantly above the background, though the enrichment of G-quadruplexes is minimal. Thus, the genomic features characterized are all significantly enriched in both origins and promoters, and may help specify both, either independently or co-dependently.
+
+**Table 2.**
+ Permutation test of overlap of shared origins or promoters (transcription start sites) with the region around promoters, shared origin recognition complex peaks (in more than two datasets), R-loops, G-quadruplexes, and CTCF-binding sites.Fold enrichment of the observed overlap relative to the mean overlap seen with 1000 randomizations of set A is indicated together with the p-values of the enrichment. Permutation test to ascertain the significance of the overlaps reported in this article relative to random expectation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Set_A</th>
+      <th>Set_B</th>
+      <th>#Set_A</th>
+      <th>#Set_B</th>
+      <th>Observed overlap</th>
+      <th># Random iterations</th>
+      <th>Mean random overlap</th>
+      <th>Obs/random fold enrichment</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Origins</td>
+      <td>4k±promoters</td>
+      <td>20,250</td>
+      <td>26,237</td>
+      <td>4275</td>
+      <td>1000</td>
+      <td>649</td>
+      <td>6.6</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Origins</td>
+      <td>ORC_peaks</td>
+      <td>20,250</td>
+      <td>12,712</td>
+      <td>347</td>
+      <td>1000</td>
+      <td>54</td>
+      <td>6.4</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Origins</td>
+      <td>R-loop_zones</td>
+      <td>20,250</td>
+      <td>59,176</td>
+      <td>2607</td>
+      <td>1000</td>
+      <td>299</td>
+      <td>8.7</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Origins</td>
+      <td>G-quadruplex</td>
+      <td>20,250</td>
+      <td>1,444,095</td>
+      <td>8818</td>
+      <td>1000</td>
+      <td>2529</td>
+      <td>3.5</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Origins</td>
+      <td>CTCF_sites</td>
+      <td>20,250</td>
+      <td>22,097</td>
+      <td>443</td>
+      <td>1000</td>
+      <td>104</td>
+      <td>4.3</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Promoters</td>
+      <td>ORC_peaks</td>
+      <td>26,237</td>
+      <td>12,712</td>
+      <td>4832</td>
+      <td>1000</td>
+      <td>454</td>
+      <td>10.6</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Promoters</td>
+      <td>R-loop_zones</td>
+      <td>26,237</td>
+      <td>59,176</td>
+      <td>10,068</td>
+      <td>1000</td>
+      <td>1404</td>
+      <td>7.2</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Promoters</td>
+      <td>G-quadruplex</td>
+      <td>26,237</td>
+      <td>1,444,095</td>
+      <td>21,809</td>
+      <td>1000</td>
+      <td>17,242</td>
+      <td>1.3</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Promoters</td>
+      <td>CTCF_sites</td>
+      <td>20,250</td>
+      <td>22,097</td>
+      <td>3644</td>
+      <td>1000</td>
+      <td>813</td>
+      <td>4.5</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
 
 G-quadruplexes are of particular interest because they have been experimentally shown to dictate origin specification (Prorok et al., 2019; Valton et al., 2014). Although there is a higher overlap of shared origins than union origins with G-quadruplexes (43.5% vs 15%), this overlap is not higher than that between promoters and G-quadruplexes (48.1%) (Figure 2g). This may suggest that the overlap between origins and G-quadruplexes may be secondary to the overlap between origins and promoters. However, the overlap of shared origins with G-quadruplexes is 3.5-fold above random while that of promoters with G-quadruplexes is only 1.3-fold above random, which would be consistent with the idea that G-quadruplexes have a role in specifying origins and the overlap is not simply due to the proximity of origins with promoters.
 
@@ -145,17 +384,21 @@ Our analysis provides a characterization of origins in the human genome using mu
 
 ## Methods
 
-## Data processing
+### Data processing
 
 We collected all publicly available human sequencing datasets of replication origin profiling and ORC ChIP-seq from the GEO database (Barrett et al., 2013). Data details of the collected datasets can be found in Supplementary file 1. Raw sequence data in fastq format were downloaded and processed as follows: FastQC (v0.11.5; Andrews, 2010) was used for quality control and sequence data were then mapped to human genome (hg38) using bowtie2 (v2.2.9; Langdon, 2015). Sam files were converted into bam files using samtools (v1.12; Li et al., 2009) and only high-quality reads (q-score ≥ 30) were retained for subsequent analyses. Peak calling for ORC ChIP-seq data was performed with MACS2 (v2.1.4) callpeak function (--nomodel –extsize 150 -g hs -B –SPMR -q 0.05 –keep-dup 1) (Zhang et al., 2008). Samples with more than 1000 peaks were kept as high-quality samples. SNS-seq, Bubble-seq, and Rerep-seq peak calling was performed with SICER (Zang et al., 2009) with different parameters based on the different resolutions of technique: SNS-seq (W200 G600), Bubble-seq (W5000 G15000), and Rerep-seq (W200 G600). The OK-seq-defined Izs were generated from previously published papers (Petryk et al., 2016; Wu et al., 2018), and the coordinate information was provided by Drs. Chunlong Chen and Olivier Hyrien (https://github.com/CL-CHEN-Lab/OK-Seq/tree/master/published_results). Repli-seq-defined origins were generated from the UW Encode group and are accessible in GSE34399. To obtain union peaks, peaks from each and all techniques were merged using Bedtools (v2.29.2; Quinlan and Hall, 2010) merge. Union origins that are longer than 300 bp were cut into separate origins of a maximum length of 300 bp. In the end, we obtained 7,459,709 union origins.
 
 To compare the locations of origins between samples, we performed a PCA, where the matrix (to which PCA is applied) is of size 7.5M (number of union origins) × 113 (samples), with a ‘1’ in the (I,j) position if the ith origin was detected in the jth dataset. We also performed pairwise Pearson correlation of the origins in all the datasets to determine the reproducibility of the results from a given technique and across techniques. The distance metric for heatmap is generated in R using the function cor (with parameters: use = “pairwise.complete.obs”, method = “pearson”).
 
-## Identification of shared origins
+### Identification of shared origins
 
 The origins detected by each sample are very different, which makes the identification of common origins difficult. SNS-seq origins have the highest resolution, and so we start with them. We identified 5,069,432 union SNS-seq origins using the same approach. We focus on the union SNS-seq origins that appear above a threshold number of SNS-seq origin datasets (high-confidence SNS-seq origins) and then determine those that overlap with any IZ identified by each of the three different techniques to delineate a set of ‘shared origins’, which initiate replication all the time and can be detected by multiple approaches. Note that this approach does not lose the high resolution of the SNS-seq origins, but it merely finds those SNS-seq origins that are most reproduced and detected by each of the other three techniques. Rerep-seq is not included in defining shared origins because it is very different from the other techniques in many ways (Figure 1b–h, Figure 1—figure supplement 1g).
 
-To identify the most commonly shared origins between SNS-seq samples, we use an occupancy score for each union SNS-seq origin to show how many samples identify that specific origin. A higher occupancy score means the origin is more commonly present in many samples (Figure 2—figure supplement 1a and b). High-confidence SNS-seq origins are those that occur in a sufficient number of SNS-seq samples at a false discovery rate (FDR) of >0.1. We used an exponential model for the background (green line) and plotted the distribution of occupancy scores (blue dotted curve) for origins from all SNS-seq samples (Figure 2a). The exponential model can be expressed asy=A*e(K*x+m)
+To identify the most commonly shared origins between SNS-seq samples, we use an occupancy score for each union SNS-seq origin to show how many samples identify that specific origin. A higher occupancy score means the origin is more commonly present in many samples (Figure 2—figure supplement 1a and b). High-confidence SNS-seq origins are those that occur in a sufficient number of SNS-seq samples at a false discovery rate (FDR) of >0.1. We used an exponential model for the background (green line) and plotted the distribution of occupancy scores (blue dotted curve) for origins from all SNS-seq samples (Figure 2a). The exponential model can be expressed as
+
+$$
+y=A*e^{(K*x+m)}
+$$
 
 where x is the occupancy score, and y is the expected number of origins. Origins that are reproduced by multiple samples have higher occupancy scores than the background distribution. An empirical FDR of 0.1 was used to determine the cutoff of occupancy score so that the number of observed origins with occupancy score greater than the cutoff should be 10 times more than expected in the background model (Fang et al., 2020). The high-confidence SNS-seq origins were thus those with occupancy score ≥20 in all 66 SNS-seq samples. Detailed parameters can be found in Supplementary file 2. Origins mapping to ChrM are removed from SNS-seq shared origins to avoid the interference of mitochondria DNA.
 
@@ -163,34 +406,34 @@ Finally, the high-confidence SNS-seq origins defined by our model that overlap w
 
 K562 shared origins were identified as K562 SNS-seq origins that overlapped with any of the union OK-seq and Repli-seq peaks. HeLa shared origins were identified as SNS-seq origins present in all three SNS-seq samples in HeLa and overlapped with any of the union OK-seq and Repli-seq peaks.
 
-## Origins, ORC, and MCM ChIP-seq data in yeast
+### Origins, ORC, and MCM ChIP-seq data in yeast
 
 Yeast origins data were obtained from OriDB (Nieduszynski et al., 2007). A total of 829 replication origins mapped to the yeast genome sacCer1 were converted into the sacCer3 genome using UCSC LiftOver (Hinrichs et al., 2006). A total of 289 experimentally confirmed origins, considered as high-confidence origins, were used for co-localization analysis with ORC- and MCM-binding sites in yeast. ORC and MCM ChIP-seq datasets were collected from the public domain (Supplementary file 1) and processed using the same procedure as used for human data with reference genome version sacCer3. The shared MCM-binding sites were defined as the MCM peaks that occur in all samples.
 
-## Enrichment of histone marks at shared origins
+### Enrichment of histone marks at shared origins
 
 Histone modification ChIP-seq peak files were downloaded from CistromeDB (Zheng et al., 2019). A total of 5711 peak files, each with over 5000 peaks, covering 29 distinct histone modifications in different human cell types were used to interrogate the association between histone marks and shared origins using union origins as control. The enrichment analysis was applied for each peak file by comparing the peak number in each histone modification peak file overlapping with the shared origins versus the overlapping with the union origins. The odds ratio obtained from two-tailed Fisher’s exact test was used as the enrichment score for each peak file (Figure 2j). The odds ratio and p-values were calculated using the Python package scipy. (stats.fisher_exact([[shared_ori_overlap_with_hm, shared_ori_not_overlap_with_hm], [all_ori_overlap_with_hm - shared_ori_overlap_with_hm, all_ori_not_overlap_with_hm - shared_ori_not_overlap_with_hm]])).
 
-## Co-localization analysis
+### Co-localization analysis
 
 We used co-localization analysis to define shared origins and show the overlapping of CTCF peaks, TF hotspots, TSS regions, G-quadruplex motifs, etc., with origins. The co-localization analysis was performed using Bedtools (Quinlan and Hall, 2010) intersect -u. At least 1 base pair of intersection is required to be defined as overlapping.
 
-## Distance to the closest feature
+### Distance to the closest feature
 
 According to the fact that ORC usually binds to origins but the loaded MCM2-7 can shift before firing an origin, we defined ORC that binds near the origins ±1 kb as ORC near origins. Bedtools closest -d -t "first" was used to find the closest peak/region and distance for a given region. Origins with a binding site of ORC no further than 1 kb were selected as origins near the ORC-binding site.
 
-## G4 sites
+### G4 sites
 
 G4 (G-quadruplex)-predicted motif sites were obtained from a published G4 motif predictor: G4Hunter (Bedrat et al., 2016). The 1,444,095 G4 motif coordinates in hg38 were provided by Laurent.
 
-## Genomic annotation of promoter, exon, intron, and intergenic region coverage
+### Genomic annotation of promoter, exon, intron, and intergenic region coverage
 
 The coordinates of TSS, exon, and intron are from UCSC hg38 version (Navarro Gonzalez et al., 2021). Promoter regions are defined as TSS ±1 kb. Intergenic regions are other genome regions excluding promoter, exon, and intron regions. Genomic annotation for peaks is defined by overlapping with those four types of regions by at least 1 bp.
 
-## Replication timing score
+### Replication timing score
 
 We used publicly available Repli-seq data in K562 cell line for different cell phases from the ENCODE project (Navarro Gonzalez et al., 2021) to measure the replication timing of origins (Supplementary file 1). We used a previously defined weighted average score (Hansen et al., 2010) to combine the signal from the six-cell phases with the following formula: score = (0.917 * G1b) + (0.750 * S1) + (0.583 * S2) + (0.417 * S3) + (0.250 * S4) + (0 * G2). Higher values correspond to earlier replication.
 
-## Permutation test
+### Permutation test
 
 The R (version 4.1.3) package named regioneR (version 1.24.0) was used to statistically evaluate the associations between region sets with minor modifications. The following parameters were used for running regioneR. Number of iterations: 10,000. Evaluation function: numOverlaps. Randomization function: randomizeRegions. randomizeRegions: hg38. non.overlapping: TRUE. mc.set.seed: FALSE.

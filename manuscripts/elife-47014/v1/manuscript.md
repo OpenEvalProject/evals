@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.47014.001 The word function has many different meanings in molecular biology. Here we explore the use of this word (and derivatives like functional) in research papers about de novo gene birth. Based on an analysis of 20 abstracts we propose a simple lexicon that, we believe, will help scientists and philosophers discuss the meaning of function more clearly.
+The word function has many different meanings in molecular biology. Here we explore the use of this word (and derivatives like functional) in research papers about de novo gene birth. Based on an analysis of 20 abstracts we propose a simple lexicon that, we believe, will help scientists and philosophers discuss the meaning of function more clearly.
 
 ## Introduction
 
@@ -49,6 +49,45 @@ In addition to these fundamental considerations, the de novo field is interdisci
 
 We sought to construct an understanding of function specifically tailored to de novo gene birth. We reasoned that this aim would be best achieved by studying how the term is used in the scientific practice of this particular field of research. Indeed, the objects of study and the technical methodologies in this field may lend themselves to different interpretations of function than in other fields such as regulatory genomics, physiology or ecology. In order to derive an initial model of function adapted to de novo gene birth research, we first rhetorically analyzed the scientific literature in the field together with philosophical publications about genomic function. We then applied the constant comparative method of the grounded theory of social sciences (Glaser and Strauss, 1967) to samples of 20 published abstracts in the field (see Methods). Through an organized, iterative process of defining and discussing usages of the term, we inductively converged on the interpretation that, in this set of abstracts, authors writing about the function of a molecular object were almost always describing one or more of the following properties of the object: Expression, Capacities, Interactions, Physiological Implications and Evolutionary Implications. These properties represent five meanings of function that are defined in Table 1.
 
+**Table 1.**
+ The Pittsburgh model of function.The hierarchical order of the meanings did not directly derive from our textual analysis, but was inspired from a reductionist interpretation of the flow of genetic information over time and space. It also reflects a possible ordering of the series of properties that must be acquired by a locus to undergo de novo gene birth.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Meanings</th>
+      <th>Definitions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Evolutionary Implications</td>
+      <td>The object's influence on population dynamics over successive generations, as enabled by its physiological implications and their interplay with environmental pressures</td>
+    </tr>
+    <tr>
+      <td>Physiological Implications</td>
+      <td>The object's involvement in biological processes as enabled by a set of its capacities, interactions and expression patterns, independent of cross-generational considerations</td>
+    </tr>
+    <tr>
+      <td>Interactions</td>
+      <td>Physical contacts, direct or indirect, between the object under investigation and the other components of a system, including contacts that mediate chemical transformations</td>
+    </tr>
+    <tr>
+      <td>Capacities</td>
+      <td>Intrinsic physical properties of the object under investigation; the necessity of the object's behavior given an environment (eg., structural constraints)</td>
+    </tr>
+    <tr>
+      <td>Expression</td>
+      <td>The presence or amount of the object under investigation (RNA or protein object), or the presence or amount of its transcription or translation products (DNA object)</td>
+    </tr>
+    <tr>
+      <td>Vague</td>
+      <td>Sufficient evidence was not found to infer one or more meanings of function within this model, nor to derive a new meaning</td>
+    </tr>
+  </tbody>
+</table>
+
 Conveniently, these five meanings map to an interpretation of the epistemological flow of genetic information over time and space. Starting from an object’s presence (Expression), we consider its physical properties (Capacities), binding partners within a system (Interactions), phenotypic impact (Physiological Implications) and influence on population dynamics (Evolutionary Implications). Accordingly, we propose to relate these five meanings of function in a hierarchy inspired from molecular, evolutionary and systems biology (Noble, 2006; Medina, 2005; Ernst and Carvunis, 2018). This hierarchy reflects a possible ordering of the series of properties that must be acquired by a locus to undergo de novo gene birth. Altogether, the definitions and hierarchical organization are hereafter referred to as the Pittsburgh model of function (Table 1). This model summarizes our analyses of how the term function is used in the field. The model also includes a sixth category labelled ‘vague’, for the few instances where we could neither assign any of the five meanings, nor infer a sixth meaning from the context.
 
 Like the molecules they describe, the five meanings of function are interrelated in complex bottom-up and top-down ways that complicate causal inferences (Noble, 2006). For instance, as has been discussed in the context of the ENCODE debate, Expression is not sufficient to cause Evolutionary Implications (Doolittle, 2018). Inversely, Evolutionary Implications do not necessarily imply Expression since a locus can influence population dynamics through a DNA regulatory activity. The methodological details of the study determine whether the burden of proof has been met to assign one or several of the proposed five meanings of function to a molecular object. Such rigor in functional inference is especially critical for the field of de novo gene birth, where the objects of interest often display some but not all of the properties of established genes (McLysaght and Hurst, 2016; Carvunis et al., 2012; Ruiz-Orera et al., 2018). Our model acknowledges epistemological relationships between different meanings of function while enabling researchers to describe them independently of each other.
@@ -71,7 +110,7 @@ With this model in hand, we analyzed whether the multiple meanings of function i
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/47014/elife-47014-fig1-v1.jpg)
 
-**Figure 1.:** We analyzed a sample of 20 abstracts containing 42 instances where the word function or one of its derivatives was used to describe DNA, RNA or protein objects. First, each of us read the abstracts independently and assigned one or several of the meanings of function as defined in the Pittsburgh model to each of these instances. The distribution of the number of distinct meanings that we assigned to the 42 instances is shown in panel (A). For only 5 instances did all of us independently assign the same unique meaning, suggesting that function is most often interpreted in multiple ways by independent readers. Next, we discussed each instance to see if we could reach consensus assignments based on the textual evidence. Consensus was built through conversations and agreement between the readers, rather than majority opinion. The distribution of the number of unique meanings assigned after consensus agreement to each of the 42 instances is shown in panel (B). Most (26/42) instances are now assigned to a single meaning. When more than one meaning remains, the readers agreed that the textual evidence supported multiple meanings except for one instance where consensus could not be reached and three meanings were assigned to reflect all the differing interpretations of our team members. In panel C, we show the number of times each of the five meanings of function defined in the Pittsburgh model is assigned to an instance of function.10.7554/eLife.47014.004Figure 1—source data 1.This table lists the results of our textual analyses for each instance of function.
+**Figure 1.:** We analyzed a sample of 20 abstracts containing 42 instances where the word function or one of its derivatives was used to describe DNA, RNA or protein objects. First, each of us read the abstracts independently and assigned one or several of the meanings of function as defined in the Pittsburgh model to each of these instances. The distribution of the number of distinct meanings that we assigned to the 42 instances is shown in panel (A). For only 5 instances did all of us independently assign the same unique meaning, suggesting that function is most often interpreted in multiple ways by independent readers. Next, we discussed each instance to see if we could reach consensus assignments based on the textual evidence. Consensus was built through conversations and agreement between the readers, rather than majority opinion. The distribution of the number of unique meanings assigned after consensus agreement to each of the 42 instances is shown in panel (B). Most (26/42) instances are now assigned to a single meaning. When more than one meaning remains, the readers agreed that the textual evidence supported multiple meanings except for one instance where consensus could not be reached and three meanings were assigned to reflect all the differing interpretations of our team members. In panel C, we show the number of times each of the five meanings of function defined in the Pittsburgh model is assigned to an instance of function.
 
 Two mechanisms could in theory explain why our independent textual analysis led to multiple meanings being assigned to the same instance of function in 88% of cases. On the one hand, it could be that the different readers often interpreted the same text differently due to their different backgrounds. On the other hand, the word function may often be used by authors to reflect several of the five meanings in our model simultaneously.
 
@@ -91,33 +130,149 @@ Function is a concept that depends on the methodological practices, measurement 
 
 ## Methods
 
-## An interdisciplinary mixed methods approach
+### An interdisciplinary mixed methods approach
 
 We approached the question of the meanings of function in the de novo gene birth literature using a mixed methods study design adapted from rhetorical studies and applied communication (Creswell, 2014; McGreavy et al., 2015; Dewulf et al., 2007; Thompson, 2009). First and throughout, we performed a rhetorical analysis by interrogating the assumptions made by scientists within this field and how they inform language in the published literature (Gross, 1990). In addition, we performed a qualitative analysis to iteratively build a model of function as it applies to the field (Strauss and Corbin, 1990). Finally, we performed a quantitative content analysis to analyze how the multiple meanings of function affect understanding of the literature in the field (Neuendorf, 2016).
 
-## Paper selection
+### Paper selection
 
 A library of 20 published papers that included the term function or its derivatives (functional, functioning) in the abstract was assembled by a team member who is also a published expert in the field of de novo gene birth (Table 2). Publication dates span from 1992 to 2017, with most dated after 2012 because this is a recently expanding field. The papers were chosen to span a variety of journals, countries, citation counts, model organisms, methodologies and scope, in order to derive a context specific rhetorical argument (McGee, 1990). This library is estimated to represent ~2% of the literature published on the topic of de novo gene emergence, as a Google Scholar search returns 972 results in December 2018 (‘ ‘‘de novo gene birth'’ OR ‘'de novo gene evolution'’ OR ‘'de novo gene emergence'’ OR ‘'de novo genes'’ ’).
 
-## Instance selection
+**Table 2.**
+ References for 20 abstracts analyzed in our study.Countries (based on affiliations of all authors) and model organisms are included to display the diversity of the abstracts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Papers</th>
+      <th>Countries</th>
+      <th>Model Organisms</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Keese, P. K., and Gibbs, A. (1992). Origins of genes: ‘big bang’ or continuous creation? PNAS 89:9489–9493.</td>
+      <td>Australia</td>
+      <td>Cellular life, Viruses</td>
+    </tr>
+    <tr>
+      <td>Kastenmayer, J. P., Ni, L., Chu, A., Kitchen, L. E., Au, W. C., Yang, H.,. .. and Basrai, M. A. (2006). Functional genomics of genes with small open reading frames (sORFs) in S. cerevisiae. Genome Research 16:365–373.</td>
+      <td>USA</td>
+      <td>S. cerevisiae</td>
+    </tr>
+    <tr>
+      <td>Levine, M. T., Jones, C. D., Kern, A. D., Lindfors, H. A., and Begun, D. J. (2006). Novel genes derived from noncoding DNA in Drosophila melanogaster are frequently X-linked and exhibit testis-biased expression. PNAS 103:9935–9939.</td>
+      <td>USA</td>
+      <td>D. melanogaster</td>
+    </tr>
+    <tr>
+      <td>Stepanov, V. G., and Fox, G. E. (2007). Stress-driven in vivo selection of a functional mini-gene from a randomized DNA library expressing combinatorial peptides in Escherichia coli. Molecular Biology and Evolution 24:1480–1491.</td>
+      <td>USA</td>
+      <td>E. coli</td>
+    </tr>
+    <tr>
+      <td>Cai, J., Zhao, R., Jiang, H., and Wang, W. (2008). De novo origination of a new protein-coding gene in Saccharomyces cerevisiae. Genetics 179:487–496.</td>
+      <td>China</td>
+      <td>S. cerevisiae</td>
+    </tr>
+    <tr>
+      <td>Zhou, Q., Zhang, G., Zhang, Y., Xu, S., Zhao, R., Zhan, Z.,. .. and Wang, W. (2008). On the origin of new genes in Drosophila. Genome Research 18:1446–1455.</td>
+      <td>China</td>
+      <td>Drosophila</td>
+    </tr>
+    <tr>
+      <td>Xiao, W., Liu, H., Li, Y., Li, X., Xu, C., Long, M., and Wang, S. (2009). A rice gene of de novo origin negatively regulates pathogen-induced defense response. PLoS One 4:e4603.</td>
+      <td>China, USA</td>
+      <td>rice</td>
+    </tr>
+    <tr>
+      <td>Carvunis, A. R., Rolland, T., Wapinski, I., Calderwood, M. A., Yildirim, M. A., Simonis, N.,. ..and Vidal M. (2012). Proto-genes and de novo gene birth. Nature 487:370–374.</td>
+      <td>Belgium, France, USA</td>
+      <td>S. cerevisiae</td>
+    </tr>
+    <tr>
+      <td>Ding, Y., Zhou, Q., and Wang, W. (2012). Origins of new genes and evolution of their novel functions. Annual Review of Ecology, Evolution, and Systematics 43:345–363.</td>
+      <td>China, USA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tautz, D., Neme, R., and Domazet-Lošo, T. (2013). Evolutionary Origin of Orphan Genes. In: Encyclopedia of Life Sciences. John Wiley &amp; Sons. DOI: https://doi.org/10.1002/9780470015902.a0024601</td>
+      <td>Croatia, Germany</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reinhardt, J. A., Wanjiru, B. M., Brant, A. T., Saelao, P., Begun, D. J., and Jones, C. D. (2013). De novo ORFs in Drosophila are important to organismal fitness and evolved rapidly from previously non-coding sequences. PLoS Genetics 9:e1003860.</td>
+      <td>USA</td>
+      <td>D. melanogaster</td>
+    </tr>
+    <tr>
+      <td>Wissler, L., Gadau, J., Simola, D. F., Helmkampf, M., and Bornberg-Bauer, E. (2013). Mechanisms and dynamics of orphan gene emergence in insect genomes. Genome Biology and Evolution 5:439–455.</td>
+      <td>Germany, USA</td>
+      <td>Insects</td>
+    </tr>
+    <tr>
+      <td>Brylinski, M. (2013). Exploring the ‘dark matter’ of a mammalian proteome by protein structure and function modeling. Proteome Science 11:47.</td>
+      <td>USA</td>
+      <td>M. musculus</td>
+    </tr>
+    <tr>
+      <td>Li, D., Yan, Z., Lu, L., Jiang, H., and Wang, W. (2014). Pleiotropy of the de novo-originated gene MDF1. Scientific Reports 4:7280.</td>
+      <td>China</td>
+      <td>S. cerevisiae</td>
+    </tr>
+    <tr>
+      <td>Wirthlin, M., Lovell, P. V., Jarvis, E. D., and Mello, C. V. (2014). Comparative genomics reveals molecular features unique to the songbird lineage. BMC Genomics 15:1082.</td>
+      <td>USA</td>
+      <td>Songbirds</td>
+    </tr>
+    <tr>
+      <td>Suenaga, Y., Islam, S. R., Alagu, J., Kaneko, Y., Kato, M., Tanaka, Y.,. .. and Nakagawara, A.(2014). NCYM, a Cis-antisense gene of MYCN, encodes a de novo evolved protein that inhibits GSK3β resulting in the stabilization of MYCN in human neuroblastomas. PLoS Genetics 10:e1003996.</td>
+      <td>Japan</td>
+      <td>Human</td>
+    </tr>
+    <tr>
+      <td>Arendsee, Z. W., Li, L., and Wurtele, E. S. (2014). Coming of age: Orphan genes in plants. Trends in Plant Science 19:698–708.</td>
+      <td>USA</td>
+      <td>A. thaliana</td>
+    </tr>
+    <tr>
+      <td>Ruiz-Orera, J., Hernandez-Rodriguez, J., Chiva, C., Sabidó, E., Kondova, I., Bontrop, R.,. .. and Albà, M. M. (2015). Origins of de novo genes in human and chimpanzee. PLoS Genetics 11:e1005721.</td>
+      <td>Spain, The Netherlands</td>
+      <td>Human, Chimpanzee</td>
+    </tr>
+    <tr>
+      <td>Couso, J. P., and Patraquim, P. (2017). Classification and function of small open reading frames.Nature Reviews Molecular Cell Biology 18:575–589.</td>
+      <td>Spain, UK</td>
+      <td>D. melanogaster</td>
+    </tr>
+    <tr>
+      <td>Luis Villanueva-Cañas, J., Ruiz-Orera, J., Agea, M. I., Gallo, M., Andreu, D., and Albà, M. M. (2017). New genes and functional innovation in mammals. Genome Biology and Evolution 9:1886–1900.</td>
+      <td>Spain</td>
+      <td>Mammals</td>
+    </tr>
+  </tbody>
+</table>
+
+### Instance selection
 
 Instances of the use of the word function, or its derivatives, were selected for analysis because they explicitly related to a DNA, RNA or protein object within a sentence of the abstracts. We focused on abstracts, as they present a self-contained statement of the motivations, results and conclusions of the studies and they are the text seen by most readers. Instances within article titles were not considered, neither were those where function was used as a subject, referring to bioprocesses such as: We then introduce recent findings that have opened a path to the study of the evolution of novel functions and pathways via novel genes (Ding et al., 2012). Forty-two usages (25 nouns, 12 adjectives, 3 verbs and 2 adverbs) were analyzed across 20 abstracts.
 
-## Qualitative analysis and iterative model construction
+### Qualitative analysis and iterative model construction
 
-## The need for an improved model of function
+#### The need for an improved model of function
 
 We began the qualitative analysis by establishing the need for refining the selected effect/causal role binary model discussed in the philosophical literature of genomic function. First, the model has contentious philosophical implications, in particular as they relate to teleology, that have been extensively discussed (Allen and Bekoff, 1995; Manning, 1997; Buller, 2001; Roux, 2014). Second, the epistemological reduction of function into a dichotomy mutes the complex ontological relationships between the multiple ways the term can be used and, problematically, leaves theoretical assumptions and measurement constraints implicit and unspecified (Laubichler et al., 2015). Third, evidence suggests that the model has not been widely adopted by the scientists publishing in the field of de novo gene birth. For example, a Google Scholar search for ‘ ['‘de novo gene birth'’ OR ‘'de novo gene evolution'’ OR ‘'de novo gene emergence'’ OR ‘'de novo genes'’] AND ‘'causal role'’ ' yields only 10 results in March 2019, whereas 1050 results are found when the AND clause is lacking.
 
-## Preliminary model construction
+#### Preliminary model construction
 
 We reasoned that it might be possible to construct a novel model of function by studying the specific uses of the word in the context of the scientific discourse about de novo evolving molecules. We thus began a series of philosophical conversations moderated by a member of our team who is a published expert in interdisciplinary rhetoric and teaches collaborative problem solving. Our objectives were three-fold: i) to reduce teleological overtones; ii) to increase the focus on how ontological relationships map to ongoing practices in biological research; and iii) to propose alternate terms that could conveniently be adopted by scientists. These conversations resulted in the construction of a preliminary theoretical model.
 
-## Model refinement
+#### Model refinement
 
 Next, we evaluated the accuracy of our preliminary model by conducting a content analysis of the use of function in a sample of the 20 abstracts in our library (Neuendorf, 2016). Individually, we interpreted the meaning of function using the context of the sentence containing the word first, and the general context of the abstract second, to attempt to assign one of the definitions from our preliminary model to each instance. Throughout this process, we identified inconsistencies between our preliminary model and the actual usages of function in the texts, leading to further refinements of the model. This process was repeated iteratively on samples consisting of up to 17 of the 20 papers in our library, until a reasonable agreement between theory and texts was reached and agreed upon by each member of our team (Neuendorf, 2016). The model that emerged from this iterative work was validated using the remaining three texts in the library. This methodology of iterative model construction is known in the social sciences as the constant comparative method of the grounded theory (Glaser and Strauss, 1967). This work resulted in a structured classification of the meanings of function specifically adapted to the de novo gene birth literature, which we named the Pittsburgh model of function after the geographical location where the model crystallized at the occasion of a collaborative retreat between our team members.
 
-## Quantitative analysis
+#### Quantitative analysis
 
 We used the Pittsburgh model of function to analyze whether the unspecified multiple meanings of function hinder understanding of the literature in the field of de novo gene birth. If we observed that independent readers tend to agree on which meaning was meant by the authors most of the time the term function is used, we would conclude that the multiple meanings of function are not hindering communication in the field. If, in contrast, independent readers were found to frequently interpret the same instance of function in the same sentence differently, we would conclude that the unspecified use of function leads readers to misunderstand the literature.
 
@@ -126,3 +281,39 @@ We proceeded to perform a quantitative content analysis of the 42 usages of the 
 The coding rules were defined as follows:
 
 Examples of function usage and consensus meanings assigned are shown in Table 3. The entire data set of independent and consensus assignments is available in Figure 1—source data 1.
+
+**Table 3.**
+ Examples of each meaning of function as assigned to instances of usage.Underlined portions of sentences serve as the contextual evidence used to assign the ‘code’, or meaning, to the bolded instances analyzed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reference</th>
+      <th>Instance of function usage</th>
+      <th>Consensus meanings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wirthin et al., 2014</td>
+      <td>‘Here we performed a comparative analysis of 48 avian genomes to identify genomic features that are unique to songbirds, as well as an initial assessment of function by investigating their tissue distribution and predicted protein domain structure.’</td>
+      <td>Expression, Capacities</td>
+    </tr>
+    <tr>
+      <td>Brylinski, 2013</td>
+      <td>A subsequent structure-based function annotation of small protein models exposes 178,745 putative protein-protein interactions with the remaining gene products in the mouse proteome, 1,100 potential binding sites for small organic molecules and 987 metal-binding signatures.</td>
+      <td>Interaction</td>
+    </tr>
+    <tr>
+      <td>Li et al., 2014</td>
+      <td>‘Therefore, MDF1 functions in two important molecular pathways, mating and fermentation, and mediates the crosstalk between reproduction and vegetative growth.’</td>
+      <td>Physiological Implications</td>
+    </tr>
+    <tr>
+      <td>Ruiz-Orera et al., 2015</td>
+      <td>‘In general, these transcripts show little evidence of purifying selection, suggesting that many of them are not functional’</td>
+      <td>Evolutionary Implications</td>
+    </tr>
+  </tbody>
+</table>

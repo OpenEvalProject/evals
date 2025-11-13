@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.40033.001 Protective signaling from the leukemia microenvironment leads to leukemia cell persistence, development of resistance, and disease relapse. Here, we demonstrate that fibroblast growth factor 2 (FGF2) from bone marrow stromal cells is secreted in exosomes, which are subsequently endocytosed by leukemia cells, and protect leukemia cells from tyrosine kinase inhibitors (TKIs). Expression of FGF2 and its receptor, FGFR1, are both increased in a subset of stromal cell lines and primary AML stroma; and increased FGF2/FGFR1 signaling is associated with increased exosome secretion. FGFR inhibition (or gene silencing) interrupts stromal autocrine growth and significantly decreases secretion of FGF2-containing exosomes, resulting in less stromal protection of leukemia cells. Likewise, Fgf2 -/- mice transplanted with retroviral BCR-ABL leukemia survive significantly longer than their +/+ counterparts when treated with TKI. Thus, inhibition of FGFR can modulate stromal function, reduce exosome secretion, and may be a therapeutic option to overcome resistance to TKIs. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+Protective signaling from the leukemia microenvironment leads to leukemia cell persistence, development of resistance, and disease relapse. Here, we demonstrate that fibroblast growth factor 2 (FGF2) from bone marrow stromal cells is secreted in exosomes, which are subsequently endocytosed by leukemia cells, and protect leukemia cells from tyrosine kinase inhibitors (TKIs). Expression of FGF2 and its receptor, FGFR1, are both increased in a subset of stromal cell lines and primary AML stroma; and increased FGF2/FGFR1 signaling is associated with increased exosome secretion. FGFR inhibition (or gene silencing) interrupts stromal autocrine growth and significantly decreases secretion of FGF2-containing exosomes, resulting in less stromal protection of leukemia cells. Likewise, Fgf2 -/- mice transplanted with retroviral BCR-ABL leukemia survive significantly longer than their +/+ counterparts when treated with TKI. Thus, inhibition of FGFR can modulate stromal function, reduce exosome secretion, and may be a therapeutic option to overcome resistance to TKIs.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -41,13 +41,21 @@ We discovered that FGF2 is largely secreted in extracellular vesicles (ECVs) and
 
 ## Results
 
-## Stromal cell ECVs protect leukemia cells from TKI therapy
+### Stromal cell ECVs protect leukemia cells from TKI therapy
 
 The human stromal cell line HS-5 expresses abundant FGF2, in addition to other soluble cytokines such as IL-5, IL-8 and HGF (Roecklein and Torok-Storb, 1995), and conditioned media (CM) from HS-5 is highly protective of leukemia cell lines. HS-5 CM was ultracentrifuged at 100,000 g to separate soluble proteins (supernatant, S100) from ECVs and larger macromolecules (pellet, P100). We compared the protective effect of unfractionated CM, S100, and P100 fractions on the viability of two leukemia cell lines: MOLM14 (FLT3 ITD+ AML) and K562 (CML), in the presence of their respective TKIs, quizartinib (AC220, a highly selective and potent inhibitor [Zarrinkar et al., 2009]) and imatinib (Figure 1A and B). The protective capacity of the S100 fraction was less than unfractionated CM, and protection was enriched in the concentrated P100 ECV fraction (Figure 1), indicating that a substantial protective component of HS-5 CM is mediated by ECVs. A more extensive profiling of protection is also shown in Figure 1—figure supplement 1.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig1-v1.jpg)
+
+**Figure 1.:** HS-5 conditioned media (CM) was collected and separated by ultracentrifugation at 100,000 g into a supernatant (S100) and pellet (P100) fraction containing ECVs. These fractions were incubated with (A) K562 cells ± 1 μM imatinib, or (B) MOLM14 cells ± 10 nM AC220, and viability measured by MTS assay after 48 hr. Values were normalized to respective untreated condition. All wells were plated in triplicate and error bars indicate standard deviation. RPMI is the media control. p values are indicated by *<0.05, **<0.005, and ***=0.0007. (C), MOLM14 and K562 cells were stained with DiO (green) tracer, washed, and immobilized on Poly-D-Lysine coated chamber slides. HS-5 P100 fraction was stained with DiI (red) tracer and added to the cells for a 24 hr incubation. Slides were stained with DAPI (blue) and imaged by confocal fluorescent microscopy. A movie of the z-stack images is included in Supplemental data.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** HS-5 conditioned media (CM) was collected and separated by ultracentrifugation at 100,000 g into ECVs and CM without ECVs (-ECV). These fractions and RPMI media ± 10 ng/ml recombinant FGF2 were incubated with (A) K562 cells, or (B) MOLM14 cells with the concentrations of inhibitors as shown, and viability measured by MTS assay after 48 hr. Values were normalized to respective untreated condition. Ponatinib inhibits FGFRs around 100 nM and midostaurin inhibits FGFRs around 200 nM, and this activity blocks the protection of recombinant FGF2 completely (consistent with our previous work) and also blocks a portion of the protection of ECVs, which contain FGF2 as well as other proteins. K562 cells were incubated with media, (C) recombinant FGF2 10 ng/ml or (D) HS-5 ECVs and then treated with the indicated inhibitors ± 1000 nM PD173074 (PD). MOLM14 cells were incubated with media, (E) recombinant FGF2 10 ng/ml or (F) HS-5 ECVs and then treated with the indicated inhibitors ± 1000 nM PD173074 (PD). Viability was measured by MTS assay after 48 hr and normalized to respective untreated condition. In both cases, addition of PD has no effect with just media, but blocks protection by FGF2. PD also partially blocks protection by HS-5 ECVs, which contain FGF2. Wells were plated in triplicate and error bars indicate standard deviation.
+
 To determine if ECVs produced by HS-5 cells are internalized by K562 and MOLM14 leukemia cells, K562 and MOLM14 cells were stained with a green lipophilic tracer (DiO) and incubated with HS-5 ECVs stained with a red lipophilic tracer (DiI). Analysis by confocal microscopy showed that ECVs are indeed internalized by leukemia cells, although the exact mechanism of internalization is still under investigation (Figure 1C and Figure 1—video 1 and 2).
 
-## FGF2 is contained in stromal cell ECVs and exosomes
+### FGF2 is contained in stromal cell ECVs and exosomes
 
 FGF2 is highly expressed in the HS-5 stromal cell line but the related HS-27 expresses little FGF2 (Figure 2A; Traer et al., 2016). We analyzed FGF2 in S100 and P100 fractions of both HS-5 and HS-27 by immunoblot (Figure 2B). Little FGF2 was detected in the soluble protein fraction (S100), but FGF2 was enriched in ECVs (P100). Washing the ultracentrifuge tube with detergent liberated even more FGF2 (detergent wash P100), due to ECVs adhering to the ultracentrifuge tube. To compare FGF2 to other soluble cytokines, HS-5 CM was ultracentrifuged into S100 and ECVs, cytokines quantified by Luminex multiplex assay, and normalized to unfractionated CM (Figure 2C). Pelleted ECVs were resuspended in 10% of the original CM volume, and the P100 bars in Figure 2B thus represent a 10-fold enrichment, although as shown in Figure 2B not all ECVs can be liberated from the ultracentrifuge tube. FGF2 was uniquely enriched in ECVs, whereas soluble cytokines such as stem cell factor, interleukin (IL)−6, IL-8, etc. were found primarily in the S100 fraction.
 
@@ -59,29 +67,85 @@ HS-5 ECVs were further separated into microvesicles, exosomes, and insoluble ext
 
 To determine if FGF2 was bound to the outside of ECVS, or contained within ECVs, proteinase K was used to digest proteins not enclosed by lipid membrane. Recombinant FGF2, HS-5 or HS-27 ECVs, and intact HS-5 cells were incubated with proteinase K and probed for FGF2 by immunoblot (Figure 2E). Recombinant FGF2 was completely degraded by proteinase K (* indicates degraded fragments) but intact FGF2 was detected in both HS-5 ECVs and control HS-5 cells. We repeated this experiment using purified HS-5 exosomes and again observed that a fraction of FGF2 was protected from digestion (Figure 2F). Addition of 0.1% Triton X-100 disrupted the lipid membrane and resulted in complete digestion of all protein. We found a similar digestion pattern with the exosomal transmembrane proteins CD9 and tsg101. We conclude that FGF2 is contained within ECVs and exosomes, however we cannot exclude that FGF2 may also be on the surface since partial FGF2 degradation was noted in intact HS-5 cells, ECVs and purified exosomes (Figure 2E–F).
 
-## HS-5 stromal cells overproduce ECVs
+### HS-5 stromal cells overproduce ECVs
 
 Since HS-5 CM is more protective than HS-27 CM (Manshouri et al., 2011; Traer et al., 2016; Weisberg et al., 2008), we suspected that ECVs may be more numerous in HS-5 CM. We chose several orthogonal methods to quantify vesicles in CM. First, we used nanoparticle tracking analysis to quantify and compare HS-5 and HS-27 ECVs (Figure 3A). In parallel, we employed the Virocyt Virus Counter, a flow cytometry-based technique developed to detect viruses, which also works well to quantify ECVs (Figure 3B). As a gold standard, negative stain transmission electron microscopy of purified HS-5 and HS-27 exosomes was also used to image and quantify exosomes by counting (30–100 nm diameter with cup-shape appearance characteristic for exosomes, Figure 3C). Finally, we used sucrose step-gradient fractionation of HS-5 and HS-27 ECVs to compare cell compartment and exosome-specific markers by immunoblot (Figure 3D). Exosomes layer primarily at the 15–30% sucrose interface as indicated by exosomal markers CD9 and tsg-101, and are increased in HS-5 cells compared to HS-27. Interestingly the receptor for FGF2, FGFR1, was also found to localize preferentially with HS-5 exosomes. With all methods, we consistently observed greater than two-fold excess of vesicles produced by HS-5 compared to HS-27 cells (see Figure 3—figure supplement 1 for additional data). Markers of nucleus (lamin A/C), endoplasmic reticulum (calreticulin) and mitochondria (Bcl-XL) were located in the 45–60% interface containing larger microvesicles and apoptotic bodies.
 
-## FGF2-FGFR1 signaling promotes stromal growth and paracrine protection of leukemia
+![Figure 3.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig3-v1.jpg)
+
+**Figure 3.:** Equal numbers of HS-5 and HS-27 cells were plated in RPMI with exosome-depleted FBS for 24 hr. The ECVs were pelleted by ultracentrifugation at 100,000 g for 2 hr at four degrees C and resuspended in PBS. ECVs were quantified by (A) Nanosight, a nanovesicle tracking analysis, (B) Virocyt Virus Counter, a proprietary flow cytometry using fluorescent dyes that stain both nucleic acid and protein, or (C) transmission electron microscopy. (D) HS-5 and HS-27 exosomes were collected by sucrose-step gradient and analyzed by transmission electron microscopy. Vesicles were quantified by counting in three 2 × 2 μm areas per sample. All experiments were done in triplicate, error bars represent standard deviation, p values are indicated by *<0.05, **<0.005. HS-5 and HS-27 ECVs (P100) were obtained by ultracentrifugation (starting material, or SM), and the exosome fraction was further purified by a sucrose step-gradient. Sucrose layer interfaces (0–7.5%, 7.5–15%, 15–30%, 30–45%, and 45%-pellet) were collected, lysed and analyzed by immunoblot. Blots were probed with antibodies against exosomal markers CD9 and tsg101; cell compartment markers: fibronectin, lamin A/C, BCL-XL; as well as FGFR1 and FGF2. The lanes with highest enrichment for CD9 and tsg-101, indicating exosomes, are marked below.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) CM fractionated by sucrose density gradient assessed for microvesicles by nanoparticle tracking analysis (Nanosight). (B) Fractions assessed by flow cytometry optimized for virus particles (Virocyt). (C) Transmission electron microscopy of sucrose fractions showing microvesicle size difference between 15–30% and 30–45% fractions. (D) Fractions dyed with fluorescent tracer and analyzed by flow cytometry. Size distribution of two different fractions shown relative to 200 nm beads.
+
+### FGF2-FGFR1 signaling promotes stromal growth and paracrine protection of leukemia
 
 FGF2 is an autocrine signaling protein for stroma, but recombinant FGF2 also mediates paracrine protection of leukemia cells (Traer et al., 2016; Traer et al., 2014). Thus there are two potential mechanisms by which FGFR inhibition can attenuate protection of leukemia cells in the marrow microenvironment: (1) FGFR inhibitors block FGF2-mediated paracrine protection at the leukemia cells; and/or (2) FGFR inhibitors interrupt stromal FGF2-FGFR1 autocrine signaling to reduce secretion of protective FGF2-containing exosomes. To compare the relative effect of FGFR inhibition on autocrine and paracrine signaling, HS-5 cells were pre-treated with the FGFR inhibitor PD173074 (Mohammadi et al., 1998; Trudel et al., 2004) for one week prior to collection of CM. CM collected from HS-5 cells pre-treated with PD173074 was significantly less protective than CM from an equal number of untreated HS-5 cells (Figure 4A), providing evidence that interruption of FGF2-FGFR1 signaling affects subsequent protection of leukemia cells. In contrast, addition of PD173074 to untreated HS-5 CM only modestly attenuated protection of MOLM14 cells. We found similar results with K562 cells exposed to imatinib (Figure 4—figure supplement 1). Purified ECVs from HS-5 CM, which are enriched in FGF2, were more sensitive to FGFR inhibition (Figure 1—figure supplement 1), however pre-treatment of HS-5 cells with PD173074 still had the greatest absolute reduction in protection. These results indicate that FGFR inhibitors overcome protection of leukemia cells primarily by directly altering secretion of FGF2-expressing stromal cells, making them significantly less protective.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig4-v1.jpg)
+
+**Figure 4.:** (A) HS-5 cells were cultured in media ± 250 nM PD173074 for one week and then equal numbers of cells were replated for comparison. After adhesion, the cells cultured in PD173074 were washed and fresh media added to collect CM. MOLM14 cells were resuspended in media, untreated HS-5 CM, and PD pre-treated HS-5 CM and treated with ±10 nM AC220 and ±250 nM PD173074. Viability was measured by MTS assay after 72 hr and values were normalized to the relevant UT control. Error bars represent standard deviation, p values are indicated by *<0.05, **<0.005, and ***=0.0007. (B) HS-5 and HS-27 cells were plated in triplicate on 96 well plates in a gradient of FGFR inhibitor PD173074. Proliferation was measured using MTS reagent after 72 hr. Error bars indicate standard deviation. (C) HS-5 and HS-27 cells were incubated media ± 250 nM PD173074 (PD). The number of viable cells was measured with Guava ViaCount every 3 days over a 15 day period. Fresh media and PD173074 was added every 3 days. (D) HS-5 and HS-27 cells were incubated in media ± 1 µM PD173074 for 1 week. Brightfield microscopy images were obtained using a 10X objective. (E) HS-5 cells were incubated in 4-well glass chamber slides in media ± 250 nM PD173074 (PD). Cells were stained with lipophilic tracer DiI for 24 hr, fixed, then nuclei stained with DAPI. Immunofluorescent images were analyzed with CellProfiler software to determine cell size (μm [Weisberg et al., 2009]) and number of cells for each size range was binned and graphically displayed. PD173074 had no effect on HS-27 growth, morphology or size, consistent with an on-target FGFR effect. (F) Ex vivo cultured primary bone marrow stromal cells from a series of leukemia patients (n = 42) were lysed for RNA extraction and cDNA synthesis. Taqman qPCR analysis was performed using FGFR1, FGFR2, FGFR3, FGFR4, and FGF2 Taqman primer assays and expression plotted (n = 42 for each except FGFR4 which is n = 41 due to failed PCR for one sample). (G) FGFR1 and FGF2 qPCR values (2^-ΔCT) were plotted against each other. There were 9 AML patients with FLT3 ITD (most newly diagnosed) and these patients are indicated with red dots. Linear regression produced a line fit with r2 = 0.5683 and slope significantly non-zero with p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) HS-5 cells were cultured in media ± 250 nM PD173074 for one week and then equal numbers of cells were replated for comparison. After adhesion, the cells cultured in PD173074 were washed and fresh media added to collect CM. K562 cells were resuspended in media, untreated HS-5 CM, and PD pre-treated HS-5 CM and treated with ± 1 uM imatinib and ± 250 nM PD173074. (B) Viability was measured by MTS assay after 72 hr and values were normalized to the relevant UT control. Error bars represent standard deviation, p values are indicated by *<0.05, **<0.005, and ***=0.0007.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Conditioned medium was collected from cultured human bone marrow stroma. Samples were ultracentrifuged and pellets were lysed with 78 μL of Cell Lysis Buffer (Cell Signaling Technologies Inc, Danvers, MA) containing a Complete Mini Protease Inhibitor Cocktail Tablet, Phosphatase Inhibitor Cocktail 2, and Phenylmethanesulfonyl Fluoride (PMSF) solution (Sigma-Aldrich Inc, St Louis, MO) and clarified by centrifugation at 14,000 g, 4°C for 15 min. All samples were loaded on NuPAGE 4–12% Bis-Tris gradient gels, ran in MES buffer (Thermo Fisher Scientific Inc, Waltham, MA), transferred on Immobilon-FL PVDF membranes (Millipore Inc, Billerica, MA), and blocked overnight at 4°C. Following overnight incubation, membranes were incubated with the following primary antibodies: anti-FGFR1, anti-FGF2, anti-CD63, anti-CD9, and anti-actin (Supplementary file 1) overnight at 4°C. The following day membranes were washed and probed with fluorescent IRDye 800CW goat anti-rabbit IgG and IRDye 680RD Goat anti-mouse IgG antibodies (Supplementary file 1). The membranes were imaged with the Odyssey Infrared Imaging System (LI-COR Biosciences).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Primary mesenchymal stromal cells at passage four were differentiated into adipocytes, osteocytes, and chondrocytes using the Human Mesenchymal Stem Cell Functional Identification Kit (R and D Systems Inc, Minneapolis, MN) according to the manufacturer’s instructions. Cells were cultured for 40 days with induction medium replaced every three days. On day 40 of induction, the cultures were washed with PBS and fixed for 20 min in 4% buffered paraformaldehyde at room temperature. The presence of adipogenic cells was confirmed with oil-red-o staining and immunofluorescence staining for fatty acid binding protein (FABP). Osteogenesis was assessed with alizarin red staining and immunofluorescence staining for osteocalcin. For chondrogenic pellets, upon fixing, pellets were cryosectioned at a thickness of 5 μm and stained for aggrecan using immunofluorescence.
 
 To further evaluate the effects of FGFR inhibition in stromal cells, HS-5 cells were evaluated for viability, morphology, and growth using HS-27 cells as comparison (low FGF2). HS-5 or HS-27 cells had little reduction in cell viability after 72 hr treatment with PD173074 (Figure 4B), however HS-5 growth slowed dramatically over 15 days (Figure 4C). HS-5 cells exposed to PD173074 changed morphology and became less refractile, larger, and more adherent (Figure 4D). Cell size was quantified using CellProfiler software and PD173074 significantly increased HS-5 cell size (Figure 4E).
 
 To evaluate FGF2 and FGFR1 expression in primary leukemia stroma, bone marrow aspirates from a series of leukemia patients were cultured ex vivo and FGF2 and FGFR1-4 expression quantified by RT-PCR (Figure 4F). FGFR1 and FGF2 transcripts were the most highly expressed in primary stroma, and there was a strong positive correlation between FGFR1 and FGF2 expression (Figure 4G, r2 = 0.5683 and p<0.0001 on nonparametric correlation). This indicates that FGF2 and FGFR1 expression are coordinately regulated in primary marrow stromal cells consistent with activation of an FGF2-FGFR1 autocrine loop. There were nine stromal cultures from AML patients with FLT3 ITD (indicated with red dots), but most of them were newly diagnosed, and based upon our previous data we would not expect increased expression of FGF216. Similar to our observations in cell lines described above, we also detected FGFR1 and FGF2 in ECVs derived from primary marrow stromal cultures (Figure 4—figure supplement 2). However, primary marrow stromal cells grow slowly and produce smaller amounts of ECVs, so we were unable to evaluate the effect of FGFR inhibitors on cell morphology, growth, and ECV production with primary marrow stromal cells. Additional characterization of primary stromal cultures is contained in Figure 4—figure supplement 3.
 
-## FGFR inhibition decreases stromal cell production of exosomes
+### FGFR inhibition decreases stromal cell production of exosomes
 
 Since FGFR inhibition attenuates HS-5 growth and morphology, we hypothesized that it might also reduce secretion of ECVs. HS-5 cells exposed to graded concentrations of PD173074 and BGJ-398 had a dose-dependent decrease in ECVs measured by Virocyt Virus Counter (Figure 5A,B). Notably, there was a significant decrease in vesicle number as early as 6 hr after drug exposure (Figure 5—figure supplement 1), suggesting that FGFR inhibition directly affects vesicle production or release. ECVs were also collected from HS-5 and HS-27 cells exposed to PD173074 and analyzed by immunoblot. PD173074 reduced the exosome markers tsg101 and CD9 (and FGF2) but had no effect on ECV production from HS-27 cells (Figure 5C, similar results with BGJ398 shown in Figure 5—figure supplement 1). Scanning electron microscopy of HS-5 cells revealed abundant budding membrane, whereas the surface of PD173074-exposed cells was smoother, implicating a change in membrane dynamics (Figure 5—figure supplement 2). To evaluate exosome secretion specifically, sucrose step-gradient fractionation was performed on ECVs from untreated and PD173074 treated HS-5 cells. PD173074 reduced exosomal markers CD9, tsg101, and FGF2 in the expected 15–30% interface fraction (Figure 5D).
 
-## Genetic knock-down of FGFR1 or FGF2 attenuates exosome production
+![Figure 5.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig5-v1.jpg)
+
+**Figure 5.:** HS-5 cells were exposed to a gradient of the FGFR inhibitors (A) PD173074 and (B) BGJ-398 for 48 hr prior to collecting CM. ECVs were pelleted by ultracentrifugation at 100,000 g and quantified by Virocyt Virus Counter. Error bars indicate standard deviation and p values are indicated by *<0.05. (C) HS-5 and HS-27 cells were incubated in media ± 1 µM PD173074 for 72 hr prior to collecting ECVs. ECVs were analyzed by immunoblot for FGF2. The exosome markers CD9 and tsg101 are also shown. (D) HS-5 cells were plated in media ± 1 µM PD173074 for 72 hr. P100 fractions were obtained by ultracentrifugation, and further fractionated on a sucrose step-gradient. The interfaces (0–7.5%, 7.5–15%, 15–30%, 30–45%, and 45%-pellet) were collected, lysed and processed by immunoblot with antibodies against the exosomal markers CD9 and tsg101 as well as FGFR1 and FGF2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) HS-5 cells were exposed to 500 nM PD173074 (PD) for 2, 4 and 6 hr before collection of CM and ECVs as previously described. ECVs were quantified by Virocyt. Results obtained in triplicate. Error bars indicates standard deviation. **p<0.005 (B) HS-5 cells were exposed to a gradient of BGJ-398 for 72 hr before isolation of ECVs from CM. ECVs were lysed and run on immunoblot to demonstrate reduction in exosome markers (CD9 and tsg-101).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Cells grown on coverslips were fixed with 2% paraformaldehyde and 1% glutaraldehyde (Ted Pella Inc, Redding, CA, USA) in phosphate buffered saline for at least one hour. Following three rinses in phosphate buffered saline, the samples were immersed in 1% osmium tetroxide in phosphate buffered saline for one hour at room temperature. Following three buffer rinses, the samples were rinsed once in ddH2O before entering an ascending ethanol gradient, incubating for ten minutes in each mixture of ethanol:ddH2O (50%, 75%, to 95% ethanol). After two incubations in 100% ethanol the samples were critical point dried (Tousimis Samdri CPD, Rockville, MD, USA). Dried coverslips were mounted on aluminum stubs with carbon tape and silver paint and then sputter coated with 6–10 nm of gold-palladium (Hummer Sputter System, Anatech USA, Hayward, CA, USA). The samples were imaged on a FEI Helios Nanolab 660 (FEI Inc, Hillsboro, OR). Images were collected with the Elstar in-lens TLD detector or the Everhart-Thornley Detector at 1 kV accelerating voltage.
+
+### Genetic knock-down of FGFR1 or FGF2 attenuates exosome production
 
 To confirm that decreased exosome secretion is specific for FGFR1 inhibition, HS-5 cells were stably transfected with either a GFP-expressing lentivirus control vector (GIPZ), or doxycycline-induced shRNA targeting FGFR1. FGFR1 silencing led to a significant reduction in ECVs (Figure 6C). Similar results were obtained with siRNA targeting FGFR1 (Figure 6—figure supplement 1). siRNA and shRNA constructs targeting FGF2 did not achieve reliable silencing of FGF2. HS-5 CRISPR/Cas9 knockout of FGFR1 and FGF2 in HS-5 cells were generated, however genetic silencing prevented continued growth. Multiple attempts to make stable deleted cell lines were unsuccessful, likely due to the importance of FGF2-FGFR1 signaling for HS-5 self-renewal and growth (Bianchi et al., 2003; Coutu et al., 2011; Zhou et al., 1998). That being said, ECVs collected shortly after CRISPR/CAS9 treatment, which resulted in partial silencing of FGF2 or FGFR1, both demonstrated decreased ECVs by immunoblot and reduced protection of MOLM14 cells (Figure 6—figure supplement 2). To test the role of FGF2 in ECV production in primary cells, equal numbers of murine stromal cells from Fgf2 +/+ and -/- mice (Fgf2tm1Doe [Zhou et al., 1998]) were treated with PD173074 and ECVs quantified by Virocyt (Figure 6D). Fgf2 +/+ stromal cells secreted significantly more ECVs than -/-, and PD173074 only reduced ECV secretion in +/+ stroma. ECVs from Fgf2 +/+ and -/- mice were also analyzed by immunoblot with similar reduction in ECV proteins from Fgf2 -/- stroma (Figure 6E).
 
-## Fgf2 -/- stroma produces fewer exosomes and is less protective of BCR-ABL leukemia
+![Figure 6.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig6-v1.jpg)
+
+**Figure 6.:** A doxycycline-inducible lentiviral shRNA targeting FGFR1 was used to create a stable HS-5 cell line. The cells were then treated with doxycycline to induce FGFR1 silencing and compared to a GIPZ lentiviral control. (A) Silencing of FGFR1 expression is shown by immunoblot of cell lysates. ECVs from doxycycline-treated cells were analyzed by (B) immunoblot or (C) Virocyt Virus Counter. *p<0.05. (D) Bone marrow was isolated from Fgf2 +/+ and -/- mice and cultured ex vivo to grow adherent marrow stroma. Equal numbers of cells were then plated, CM collected for 72 hr, and then ultracentrifuged to collect ECVs. The ECVs were quantified by Virocyt. *p<0.05. (E) Equal number of cultured marrow cells from Fgf2 +/+ and -/- mice were plated and then ECVs collected by ultracentrifugation and analyzed by immunoblot.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** FGFR1 siRNA pool was purchased from Thermo Fisher Scientific Dharmacon RNAi Technologies (Waltham, MA, USA). HS-5 cells were transfected with siRNAs using Lipofectamine 2000 reagent purchased from Thermo Fisher Scientific (Grand Island, NY, USA), according to manufacturer’s protocol. After 72 hr, cells were harvested, and cells and CM collected for analysis. siRNA effectively silences of FGFR1 in cells and leads to reduction in ECVs by (A) immunoblot and (B) Virocyt analysis.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) FGFR1 and FGF2 genes were knocked out in HS-5 cells by lentiviral CRISPR-Cas9 genome editing. Each gene was targeted with two single guide RNA sequences (labeled 1 or 2). However, once FGF2 and FGFR1 were genetically mutated, the HS-5 cells were unable to continue to grow, so we were only able to analyze the cell lines for a short time after CRISPR/CAS9 treatment, which initially results in a partial genetic silencing as demonstrated in panel A. Whole cell lysates were analyzed by immunoblot to demonstrate partial gene silencing. Constructs selected for subsequent experiments are indicated in bold. (B) ECVs from control HS-5 cells and CRISPR/Cas9 HS-5 cells were analyzed by immunoblot with antibodies against FGFR1, tsg101, CD9, FGF2, and actin. (C) CM was harvested from HS-5 cells, FGFR1 CRISPR/Cas9 HS-5 cells, and FGF2 CRISPR/Cas9 HS-5 cells after 72 hr. MOLM14 cells were plated in 96 well plates in 10 nM AC220 and media alone or with serial dilutions of CM. Proliferation was measured using MTS reagent after 48 hr. (D) CM was harvested from HS-5 cells, FGFR1 CRISPR/Cas9 HS-5 cells, and FGF2 CRISPR/Cas9 HS-5 cells after 72 hr. MOLM14 cells were plated in 96 well plates in media alone or CM and then graded concentrations of quizartinib (AC220). Proliferation was measured using MTS reagent after 48 hr. Error bars indicate standard deviation. All experiments were done in triplicate and p values are indicated by *<0.05, **<0.005, ***=0.0007.
+
+### Fgf2 -/- stroma produces fewer exosomes and is less protective of BCR-ABL leukemia
 
 To test the role of stromal Fgf2 in an in vivo leukemia model, bone marrow from Fgf2 +/+ mice was retrovirally transfected with BCR-ABL containing GFP as a marker (Traer et al., 2012) and used to transplant lethally irradiated FGF2 +/+ and -/- mice. This induces a very aggressive disease in mice that is more akin to AML than CML, and TKIs are only effective for a limited duration. Mice were treated with the ABL inhibitor nilotinib 75 mg/kg/day by oral gavage starting on day 14 post-transplant. Mice that were found to have aplastic marrow (unsuccessful transplantation) were excluded from analysis since their death was not related to leukemia (four mice in the Fgf2 +/+ untreated group, one mouse in the Fgf2 -/- untreated group, two mice in the Fgf2 +/+ nilotinib group, and two mice in the Fgf2 -/- nilotinib group). The survival curves of the remaining mice are shown in Figure 7A. The cohorts of untreated Fgf2 +/+ and -/- both died rapidly from disease, as expected. Nilotinib significantly increased survival of Fgf2 +/+ and -/- mice compared to untreated mice, but the survival of the nilotinib-treated Fgf2 -/- was also significantly longer than their Fgf2 +/+ counterparts. To ensure equal engraftment of disease in both backgrounds, the blood and bone marrow was analyzed for GFP and found to be similar in both Fgf2 +/+ and -/- mice at time of death (Figure 7B and Figure 7—figure supplement 1), suggesting that nilotinib was more effective at attenuating disease progression of BCR-ABL leukemia cells in an Fgf2 -/- microenvironment. To directly evaluate the protective effect of ECVs on leukemia progenitor cells, ECVs were isolated from equal numbers of +/+ and -/- primary marrow stromal cells cultured with and without PD173074 treatment. Then, bone marrow from +/+ mice was retrovirally transfected with BCR-ABL and incubated with the ECVs overnight. The cells were washed, plated in methylcellulose with and without imatinib, and colonies counted after 8 days. Imatinib significantly reduced colony formation without ECVs, but ECVs from +/+ stroma almost completely reversed the inhibitory effects of imatinib (Figure 7C). ECVs from PD173074-treated +/+ stroma or -/- stroma were not as protective, suggesting that Fgf2 +/+ stroma more effectively protects BCR-ABL leukemia cells from the effects of kinase inhibition through secretion of protective exosomes. We confirmed the presence of Fgf2 in microvesicles isolated from cultured Fgf2 +/+ mouse stroma (Figure 6). To confirm that ECVs can be endocytosed by primary cells, lineage-negative hematopoietic progenitor cells were isolated from Fgf2 +/+ mice and stained with a green lipophilic tracer (DiO) and incubated with ECVs from Fgf2 +/+ or Fgf2 -/- stromal cells stained with a red lipophilic tracer (DiI). Confocal microscopy confirmed internalization of fluorescently labeled primary stromal ECVs by murine progenitor cells (Figure 7D and Figure 7—video 1 and 2).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig7-v1.jpg)
+
+**Figure 7.:** Fgf2 +/+ bone marrow was removed from donor mice and spinoculated with pMIG BCR-ABL retrovirus containing an IRES-GFP marker. The transfected bone marrow was then transplanted into lethally irradiated Fgf2 +/+ or -/- recipients. Mice were treated with 75 mg/kg/day nilotinib by oral gavage starting on day 11 of transplant. (A) Survival curves of untreated and nilotinib-treated Fgf2 +/+ and -/- mice. (B) GFP in peripheral blood was evaluated weekly and at time of euthanasia to quantify disease burden. The average GFP (percent of nucleated cells) is shown and did not differ significantly between groups indicating that all animals developed similar disease burden. Error bars indicate standard deviation. (C) Bone marrow cells from Fgf2 +/+ mice were spinoculated with pMIG BCR-ABL retrovirus containing GFP-IRES. The cells were then incubated with ECVs obtained from Fgf2 +/+ and -/- primary stroma cultured alone or with 500 nM PD173074. The next day the incubated cells were washed three times to remove cytokines and exosomes and plated in cytokine-free methylcellulose ± imatinib. After 8 days, colonies were counted and normalized to untreated condition. Graph shown on right. Error bars indicate standard error of the mean. *p<0.05 and **p<0.005. (D) Lineage-negative bone marrow cells were isolated from Fgf2 +/+ mice and cells were stained with DiO (green) tracer, washed, and immobilized on Poly-D-lysine coated chamber slides. ECVs from bone marrow stroma of Fgf2 +/+ or -/- mice were stained with DiI (red) tracer and added to the cells for a 24 hr incubation. Slides were stained with DAPI (blue) and imaged by confocal fluorescent microscopy. Movie of the z-stack images are included as Figure 7—video 1 and 2. (E) Model of bone marrow stromal FGF2 autocrine signaling and paracrine protection of leukemia cells by FGF2-containing exosomes.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/40033/elife-40033-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Fgf2 +/+ marrow was removed from donor mice and spinoculated with pMIG BCR-ABL retrovirus containing an IRES-GFP marker. The transfected marrow was then transplanted into lethally irradiated Fgf2 +/+ or -/- recipients. Mice were treated with 75 mg/kg/day nilotinib by oral gavage starting on day 11 of transplant. Lungs, spleens, and femurs were collected for analysis by hematoxylin and eosin staining and IHC for GFP as previously described (Traer et al. Blood 2012 and Traer et al. Cancer Research 2016). (A) IHC of GFP in marrows of representative mice to demonstrate engraftment of leukemia. (B) GFP in peripheral blood was evaluated weekly and at time of euthanasia to quantify disease burden. The average GFP (percent of nucleated cells) at time of euthanasia is shown and did not differ significantly between groups indicating that all animals developed similar disease burden prior to death. Error bars indicate standard deviation. (C) Illustration of patient tissue analysis using the Aperio ScanScope CS Slide Scanner. Bone marrow tissue selected for analysis showing results of analysis using the membrane-v9 algorithm.
 
 ## Discussion
 
@@ -97,74 +161,315 @@ In summary, FGF2 is a regulated autocrine growth factor for marrow stroma that i
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (homo sapiens)</td>
+      <td>FGF2</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (mus musculus)</td>
+      <td>Fgf2</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (homo sapiens)</td>
+      <td>FGFR1</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (mus musculus)</td>
+      <td>Fgfr1</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mus musculus)</td>
+      <td>Fgf2tm1Doe/J Fgf2 +/+ and -/- mice</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:MGI:2679603</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (homo sapiens)</td>
+      <td>FGF2</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>shRNA in TRIPZ lentiviral vector</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (homo sapiens)</td>
+      <td>FGFR1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>shRNA in TRIPZ lentiviral vector</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (homo sapiens)</td>
+      <td></td>
+      <td>AddGene</td>
+      <td></td>
+      <td>GeCKO lentiCRISPRv2 hSpCas9 and guide RNA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (homo sapiens)</td>
+      <td>FGF2-1</td>
+      <td>GenScript</td>
+      <td></td>
+      <td>CRISPR/Cas nine guide RNA design</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (homo sapiens)</td>
+      <td>FGF2-2</td>
+      <td>GenScript</td>
+      <td></td>
+      <td>CRISPR/Cas nine guide RNA design</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (homo sapiens)</td>
+      <td>FGFR1-1</td>
+      <td>GenScript</td>
+      <td></td>
+      <td>CRISPR/Cas nine guide RNA design</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (homo sapiens)</td>
+      <td>FGFR1-2</td>
+      <td>GenScript</td>
+      <td></td>
+      <td>CRISPR/Cas nine guide RNA design</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mus musculus)</td>
+      <td>pMIG with BCR-ABL and GFP</td>
+      <td></td>
+      <td></td>
+      <td>murine retrovirus</td>
+    </tr>
+    <tr>
+      <td>Cell line (homo sapiens)</td>
+      <td>MOLM14</td>
+      <td>Dr. Yoshinobu Matsuo</td>
+      <td>RRID:CVCL_7916</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (homo sapiens)</td>
+      <td>K562</td>
+      <td>American Type Culture Collection</td>
+      <td>RRID:CVCL_0004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (homo sapiens)</td>
+      <td>HS-5</td>
+      <td>Dr. Beverly Torok-Storb</td>
+      <td>RRID:CVCL_3720</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line  (homo sapiens)</td>
+      <td>HS-27</td>
+      <td>Dr. Beverly Torok-Storb</td>
+      <td>RRID:CVCL_0335</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-FGFR1</td>
+      <td>Cell Signaling</td>
+      <td>9740</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-FGF2</td>
+      <td>Santa Cruz</td>
+      <td>Sc-79</td>
+      <td>Dilution 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-CD63</td>
+      <td>ABCAM</td>
+      <td>ab134045</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-CD9</td>
+      <td>Santa Cruz</td>
+      <td>Sc-9148</td>
+      <td>Dilution 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-tsg-101</td>
+      <td>Santa Cruz</td>
+      <td>Sc-7964</td>
+      <td>Dilution 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-actin</td>
+      <td>Millipore</td>
+      <td>MAB1501</td>
+      <td>Dilution 1:5000</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FGF2 (human)</td>
+      <td>Peprotech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Thermo Scientific lentiviral transfection kit</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>quizartinib (AC220)</td>
+      <td>LC labs</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>imatinib</td>
+      <td>LC labs</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>nilotinib</td>
+      <td>SelleckChem</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical  compound, drug</td>
+      <td>PD173074</td>
+      <td>SelleckChem</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BGJ-398</td>
+      <td>SelleckChem</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>doxycycline</td>
+      <td>Fisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software,  algorithm</td>
+      <td>CellProfiler</td>
+      <td>Cell area</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 The human cell line MOLM14 was generously provided by Dr. Yoshinobu Matsuo (Fujisaki Cell Center, Hayashibara Biochemical Labs, Okayama, Japan). The human cell line K562 was obtained from the American Type Culture Collection (Manassas, VA, USA). The human stromal cell lines HS-5 and HS-27a were kindly provided by Dr. Beverly Torok-Storb (Fred Hutchinson Cancer Research Center, Seattle, WA). Cells were maintained in RPMI1640 media supplemented with 10% fetal bovine serum (FBS), 100 U/ml penicillin/100 μg/ml streptomycin, 2 mM L-glutamine, and 0.25 μg/ml fungizone (referred to as R10) at 37°C in 5% CO2. Exosome-depleted FBS was pre-cleared by ultracentrifugation at 100,000 g for 2 hr at 4°C. Cell lines were validated by genetic and functional analysis based upon previous reported characteristics. Cell lines were tested monthly for mycoplasma infection and discarded if found to be infected.
 
-## ECV isolation
+### ECV isolation
 
 HS-5 cells grown to 90–100% confluence in 15 cm dishes were washed in 8 ml PBS, and incubated in 12 ml exosome-depleted R10 overnight. The media was collected, cleared of debris (2 × 2000 g spin, 10 min), and ultracentrifuged at 100,000 g for 2 hr at 4°C. The resulting supernatant (S100) was poured off, and 100 ul PBS was added to the ECV pellet (P100). This was shaken for 4 hr at 4°C at 2000 rpm. P100 was used fresh or stored at −80°C with 10% DMSO.
 
-## Sucrose density step-gradient
+### Sucrose density step-gradient
 
 Layers of sucrose (60%, 45%, 30%, 15%, 7.5%, and 0%) were carefully pipetted into ultracentrifuge tubes. ECVs were added on top, and the tube ultracentrifuged at 100,000 g for 90 min at 4°C. The sucrose interfaces (45–60, 30–45, 15–30, 7.5–15, 0–7.5) were collected with a micropipette, washed in PBS, and pelleted at 100,000 g for 2 hr at 4°C.
 
-## ECV quantitation
+### ECV quantitation
 
 ECVs were quantified by Nanosight LM10 or by Virocyt Virus Counter 3100, following manufacturers’ protocols.
 
-## Inhibitors and cytokines
+### Inhibitors and cytokines
 
 Quizartinib (AC220) was purchased from LC labs (Woburn, MA, USA). Nilotinib, PD173074 and BGJ-398 were purchased from SelleckChem (Houston, TX, USA). Imatinib was purchased from LC labs (Woburn, MA, USA). Recombinant FGF2 was purchased from Peprotech (Rocky Hill, NJ, USA).
 
-## Viability assays
+### Viability assays
 
 Viability was assessed with MTS reagent, CellTiter 96 AQueous One Solution Proliferation Assay from Promega Corporation (Madison, WI, USA) or by Guava ViaCount flow cytometer assay (Millipore, Burlington, MA, USA).
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Treated cells were washed in PBS before adding lysis buffer (Cell Signaling, Danvers, MA, USA) supplemented with Complete protease inhibitor (Roche, Indianapolis, IN, USA) and phosphatase inhibitor cocktail-2 (Sigma-Aldrich, St. Louis, MO, USA). Proteins were fractionated on 4–15% Tris-glycine polyacrylamide gels (Criterion gels, Bio-Rad), transferred to PVDF membranes, and probed with antibodies: FGFR1, fibronectin (Cell Signaling, Danvers, MA, USA); CD9, FGF2, calreticulin, tsg101 (Santa Cruz Biotechnology, Dallas, TX, USA), CD63 (Abcam, Boston, MA, USA), and actin (MAB1501, Millipore, Burlington, MA, USA).
 
-## Stromal cell cytokine ELISA
+### Stromal cell cytokine ELISA
 
 Stromal CM, S100 and ECVs were lysed with 0.1% NP-40 for 30 min, centrifuged 3,000 rpm for 10 mins, and 50 μl supernatant was incubated with the magnetic beads overnight and assayed as per manufacturer's instructions (Luminex Multiplex magnetic beads 30-plex Assay, Life Technologies).
 
-## Primary bone marrow stromal cultures
+### Primary bone marrow stromal cultures
 
 Bone marrow aspirates were obtained from AML patients after informed consent under the OHSU Institutional Research Board protocol IRB0004422, and were processed as previously described (Viola et al., 2016). After Ficoll, the red cell pellets were incubated with ACK for 30 min on ice to lyse red cells, and plated on 15 cm dishes in MEM-α supplemented with 20% fetal bovine serum (FBS), 100 U/ml penicillin/100 μg/ml streptomycin, 2 mM L-glutamine, and 0.25 μg/ml fungizone at 37°C in 5% CO2. After 48 hr, non-adherent cells were removed and new media was added. This step was repeated after an additional 24 hr. Cells were then incubated for 1–3 weeks with media changes every 7 days, until patchy proliferation became apparent. Cells were trypsinized and replated to facilitate homogenous growth. Cells were expanded over a maximum of 3 passages before use in experiments. Murine primary stroma was isolated from harvested femur marrow without ACK treatment and then cultured as above. Primary stromal samples were analyzed after >2 weeks growth.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Stromal cell exosomes were isolated by sucrose step-gradient then washed in 0.22 μm filtered PBS. 10 μl was deposited onto glow discharged carbon formvar 400 mesh copper grids (Ted Pella 01822 F) for 3 min, rinsed 15 secs in water, wicked on Whatman filter paper 1, stained for 45 secs in filtered 1.33% (w/v) uranyl acetate, wicked and air dried. Samples were imaged at 120kV on a FEI Tecnai Spirit TEM system. Images were acquired as 2048 × 2048 pixel, 16-bit gray scale files using the FEI’s TEM Imaging and Analysis (TIA) interface on an Eagle 2K CCD multiscan camera.
 
-## Fluorescent confocal microscopy
+### Fluorescent confocal microscopy
 
 MOLM14 and K562 cells were stained with DiO (Thermo Fisher) according to manufacturer’s protocol. HS-5 ECVs were stained with DiI (Thermo Fisher), washed with PBS, and collected by ultracentrifugation. For experiments using mouse bone marrow, cells were isolated from femurs and tibias, RBCs were lysed using ACK buffer (0.8% NH4Cl and 0.1 mMEDTA in KHCO3 buffer; pH 7.2–7.6), and lineage-negative cells were isolated by MACS cell separation with the human lineage cell depletion kit (Milteny Biotec). Cells were incubated with a cytokine mix (IL-3, IL-6, SCF) in addition to DiO. DiO-stained cells were combined with DiI-stained ECVs and incubated for 24 hr at 37°C. Cells were washed, placed on poly-D-lysine coated chamber slides, and DAPI-stained. Z-stack imaging was performed on an Olympus IX71 inverted microscope. Images were processes using the Fiji software package (Schindelin et al., 2012).
 
-## Proteinase K digestion
+### Proteinase K digestion
 
 ECVs, or exosomes isolated by sucrose step-gradient, were resuspended in proteinase K buffer (Tris-HCl pH8, 10 mM CaCl2) and then incubated with 200 μg/ml proteinase K at room temp for 30 min. 5 μL 0.1 M PMSF and SDS loading buffer was added and samples were incubated at 98°C for 5 min to stop reaction prior to immunoblots.
 
-## Cell morphology analysis
+### Cell morphology analysis
 
-HS-5 and HS-27 cells were grown to 90% confluence in 4-well chamber microscope slides in R10 ±250 nM PD173074. Cells were stained with lipophilic tracer DiI, washed, and stained with DAPI. Cells were imaged with Zeiss Axio Observer fluorescent microscope at 10X using AxioVision software. Images were uploaded into CellProfiler software and analyzed for cell size. Cell diameter was determined as diameter [μm]=pixels×0.394 μm2/pixel.
+HS-5 and HS-27 cells were grown to 90% confluence in 4-well chamber microscope slides in R10 ±250 nM PD173074. Cells were stained with lipophilic tracer DiI, washed, and stained with DAPI. Cells were imaged with Zeiss Axio Observer fluorescent microscope at 10X using AxioVision software. Images were uploaded into CellProfiler software and analyzed for cell size. Cell diameter was determined as $diameter [\mum]=\sqrt{pixels\times0.394 \mum^{2}/pixel}$.
 
-## shRNA
+### shRNA
 
 TRIPZ inducible lentiviral FGF2 and FGFR1 shRNA were purchased from Thermo Fisher Scientific Dharmacon RNAi Technologies (Waltham, MA, USA), along with Dharmacon’s trans-lentiviral shRNA packaging kit with calcium phosphate transfection reagent and HEK293T cells. HS-5 and HS-27 cells were transfected with GIPZ control or FGFR1 TRIPZ, per manufacturer’s protocol. TurboRFP/shRNA expression was induced with 1 μg/ml doxycycline (Fisher) for 48 hr, cells were washed in PBS, and then media replaced with exosome-depleted R10 +1 μg/ml doxycycline. Cells and CM were collected after 72 hr for analysis.
 
-## CRISPR/Cas9 targeted genome editing
+### CRISPR/Cas9 targeted genome editing
 
 The vector GeCKO lentiCRISPRv2 was obtained from Addgene. This plasmid contains two expression cassettes, hSpCas9 and the chimeric guide RNA. Guide RNA sequences were obtained from GenScript (Sanjana et al., 2014), and oligos with 5’ overhang for cloning into lentiCRISPRv2 were manufactured by Fisher Scientific. The vector was digested with BsmBI and dephosphorylated, the plasmid was gel-purified, and oligonucleotides were ligated after annealing and phosphorylation. Plasmid was amplified in Stbl3 bacteria, purified, and lentivirus was generated in HEK293T cells. Transduced HS-5 cells were selected in puromycin for 5 days, and cultured an additional 5 days before assessing knockout.
 
-## Murine BCR-ABL leukemia experiments
+### Murine BCR-ABL leukemia experiments
 
 Animal studies were approved by the OHSU Institutional Animal Care and Use Committee. Fgf2tm1Doe/J were purchased from Jackson Laboratory to breed homozygous +/+ and -/- littermates. Bone marrow from 5-FU treated Fgf2 +/+ donors was spinoculated with pMIG containing BCR-ABL and IRES-GFP reporter as previously described (Traer et al., 2012; Agarwal et al., 2008) and 2 × 106 cells were retro-orbitally injected into lethally irradiated (2 × 450 cGy administered 4 hr apart) Fgf2 +/+ and -/- recipients. 75 mg/kg/day nilotinib was administered by oral gavage and mice were monitored weekly with cell blood counts and FACS analysis of GFP in peripheral blood. Diseased mice were subjected to detailed histopathologic analysis. For colony assays, ECVs were isolated (as above) from equal numbers of Fgf2 +/+ and -/- primary stromal cells cultured on 10 cm plates for 3 days, with and without 500 nM PD173074 (3 day pre-treatment and 3 days during ECV collection). Bone marrow from FGF2 +/+ mice was spinoculated with pMIG containing BCR-ABL and IRES-GFP reporter as above, incubated with ECVs overnight and washed 3x the next day. 3% of cells were GFP positive by FACS, and 4 × 103 cells were then plated in 1 ml of MethoCult M3234 Methylcellulose Medium for Mouse Cells without cytokines (Stemcell Technologies) in triplicate. Mouse bone marrow colonies larger than 50 cells were counted after 8 days.
 
-## Statistical methods
+### Statistical methods
 
 Graphical and statistical data were generated with Microsoft Excel or GraphPad Prism (GraphPad Software, La Jolla, CA, USA). P value < 0.05 was considered significant.
 
-## Conflict of interest disclosure
+### Conflict of interest disclosure
 
 The authors declare no competing interests. Dr. Druker is currently principal investigator or co-investigator on Novartis clinical trials. His institution, OHSU, has contracts with these companies to pay for patient costs, nurse and data manager salaries, and institutional overhead. He does not derive salary, nor does his lab receive funds from these contracts.

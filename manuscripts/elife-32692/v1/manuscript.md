@@ -34,7 +34,7 @@
 
 ## Abstract
 
-10.7554/eLife.32692.001 Tumors defective for DNA polymerase (Pol) ε proofreading have the highest tumor mutation burden identified. A major unanswered question is whether loss of Pol ε proofreading by itself is sufficient to drive this mutagenesis, or whether additional factors are necessary. To address this, we used a combination of next generation sequencing and in vitro biochemistry on human cell lines engineered to have defects in Pol ε proofreading and mismatch repair. Absent mismatch repair, monoallelic Pol ε proofreading deficiency caused a rapid increase in a unique mutation signature, similar to that observed in tumors from patients with biallelic mismatch repair deficiency and heterozygous Pol ε mutations. Restoring mismatch repair was sufficient to suppress the explosive mutation accumulation. These results strongly suggest that concomitant suppression of mismatch repair, a hallmark of colorectal and other aggressive cancers, is a critical force for driving the explosive mutagenesis seen in tumors expressing exonuclease-deficient Pol ε.
+Tumors defective for DNA polymerase (Pol) ε proofreading have the highest tumor mutation burden identified. A major unanswered question is whether loss of Pol ε proofreading by itself is sufficient to drive this mutagenesis, or whether additional factors are necessary. To address this, we used a combination of next generation sequencing and in vitro biochemistry on human cell lines engineered to have defects in Pol ε proofreading and mismatch repair. Absent mismatch repair, monoallelic Pol ε proofreading deficiency caused a rapid increase in a unique mutation signature, similar to that observed in tumors from patients with biallelic mismatch repair deficiency and heterozygous Pol ε mutations. Restoring mismatch repair was sufficient to suppress the explosive mutation accumulation. These results strongly suggest that concomitant suppression of mismatch repair, a hallmark of colorectal and other aggressive cancers, is a critical force for driving the explosive mutagenesis seen in tumors expressing exonuclease-deficient Pol ε.
 
 ## Introduction
 
@@ -54,9 +54,21 @@ In the current study, we constructed a human cell line model system to address t
 
 ## Results
 
-## Inactivation of Pol ε proofreading causes a mutator phenotype in human cells
+### Inactivation of Pol ε proofreading causes a mutator phenotype in human cells
 
 Tumors with mutations in the exonuclease domain of POLE are generally microsatellite stable and show no or low loss of heterozygosity, suggesting that inactivation of exonuclease activity in one allele is sufficient to drive mutagenesis and tumor development, though this has not been directly tested previously. To test whether inactivation of a single allele of Pol ε proofreading was sufficient to cause a mutator phenotype in human cells, we used recombinant adenoassociated virus (rAAV)-mediated gene targeting to engineer a diploid human cell line to express one allele of Pol ε with the D275A/E277A double substitution (Figure 1—figure supplements 1–2; Figure 1—source data 1). We chose the D275A/E277A mutation because it inactivates exonuclease proofreading in vitro (Shcherbakova et al., 2003; Korona et al., 2011). The parental cell line, HCT-116, is constitutively mismatch repair-deficient due to an inactivating mutation in Mlh1, thus allowing us to first define the contributions of proofreading deficiency separately to mutagenesis. We then measured the mutation rate at the hypoxanthine-guanine phosphoribosyltransferase (HPRT1) locus using 6-thioguanine (6-TG) resistance and a fluctuation assay. The measurements were repeated in clones derived from independent exonuclease-deficient (exo-) allele integration events. A moderate mutator effect was seen in Pol εwt/exo- heterozygotes (Figure 1A), indicating the exo- allele was partially dominant over the endogenous exo + allele, similar to what is seen in a mismatch repair-deficient diploid cell line heterozygous for a Pol ε proofreading mutation, pol2-4/+pms1/pms1 (Pavlov et al., 2004). Mutation rates were not measured in cells from the comparable heterozygous Pol εwt/exo- mice lacking mismatch repair (Albertson et al., 2009).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig1-v1.jpg)
+
+**Figure 1.:** (A) Mutation rates were measured using the fluctuation assay at the HPRT1 locus by resistance to 6-thioguanine. Mutation rates and 95% confidence intervals were measured by fluctuation analysis as described in the Methods using the Ma-Sandri-Sarkar Maximum Likelihood Estimator. Twelve independent isolates of both the parental (wt/wt) cell line and two independently derived clones of the heterozygous cell lines (wt/exo-) were used. All cell lines were mismatch repair-deficient. P-values for Clones 1 and 2 (p=0.0017 and p=0.008, respectively) were calculated using an unpaired t-test relative to wt/wt. Mutation rates for Clone 1 and Clone 2 were not significantly different from one another (p=0.4727). (B) Error rates for base pair substitutions (BPS) and small insertion/deletion frameshift mutations (FS) were calculated using the mutation rate data from Figure 1A. Exo + BPS Error Rate = 27.6 × 10−7, SEM = 8.48 × 10−7, n = 12; Exo- BPS Error Rate = 178 × 10−7, SEM = 37.8 × 10−7, n = 8; p=0.0002. Exo + FS Error Rate = 18.4 × 10−7, SEM = 5.73 × 10−7, n = 8; Exo- FS Error Rate = 22.2 × 10−7, SEM = 12.1 × 10−7, n = 1; p=0.7759. Error rate data shown for Exo- is from Clone 1 (See Figure 1A). The HPRT1 ORF was sequenced from independently derived isolates of 6-TG resistant clones (these included 20 mismatch repair-deficient Pol εwt/wt and 25 mismatch repair-deficient Pol εwt/exo- clones; see Materials and methods). Sequence changes used to calculate error rates are in Figure 1—source data 2. ***p<0.001; n.s., p>0.05. (C) Errors rates were calculated using a lacZ reversion substrate that reverts via TCT→TAT transversion. P values were calculated using chi-square tests with Yates correction. Error rates are the averages of two experiments, each conducted with independent DNA and enzyme preparations for each construct tested. ≤indicates the value is a maximal estimate as it is identical to the assay background.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Gene targeting scheme to change the sequence coding for the exonuclease active site amino acid residues (DIE) at the endogenous human Pol ε locus (POLE) to DNA coding for exonuclease-inactive residues (AIA). Two regions (HA1 and HA2) of the POLE locus (dotted lines) containing exons 7 and 8 and exons 9–11 (black boxes), respectively, were amplified from HCT-116 cells and used as homology arms in rAAV construction. The rAAV created for gene targeting used a promoterless neomycin-resistance marker containing a splice acceptor site and introduced a novel SacI cleavage site into the POLE locus (Rago et al., 2007). LoxP sites (triangles) flanked the cassette, allowing for Cre-mediated cassette excision. Arrows denote PCR primers. Predicted sizes of SacI-digested fragments hybridizing to HA2-derived Southern blot probe are shown in italics. (B) The indicated primer pairs (shown on the scheme in A) were used to amplify the indicated region of genomic DNA from geneticinr (cassette integration after viral transduction, upper) and geneticins (after Cre-mediated excision, lower) clones to verify construct integration at the genomic POLE locus and subsequent excision. (C) Genomic DNA from parental HCT116 cells (POLEwt/wt) and cells where one copy of proofreading exonuclease was inactivated (POLEwt/exo-) was prepared and a region containing exon 9 was amplified by PCR and sequenced to verify gene targeting. Asterisks denote bases changed by site-directed mutagenesis.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Genomic DNA was digested with SacI and resolved on a 1% agarose gel in TBE. The DNA was transferred to Hybond N + membrane (Amersham) and blotted with probe against HA2 (shown in Figure 1—figure supplement 1). The sizes of the 1 kb ladder are shown to the left of the blot.
 
 To begin measuring the effect of inactivating a single Pol ε exonuclease allele on mutation rates in cells, we sequenced the HPRT1 gene from twenty and twenty-five independently derived 6-TGR (and thus HPRT1 mutant) clones from mismatch repair-deficient Pol εwt/wt and Pol εwt/exo- cells, respectively (Figure 1—source data 2). This allowed comparison to previously measured mutation rates from different groups using the same parental cell line. Mutation rates from the Pol εwt/wt cells were similar to the spontaneous mutation rates reported by three previous studies (Bhattacharyya et al., 1995; Glaab and Tindall, 1997; Ohzeki et al., 1997). These results suggest that the baseline rates of mutagenesis are an accurate measure of comparison for the Pol εwt/exo- cell lines.
 
@@ -70,9 +82,41 @@ Because the parental HCT-116 cell line already carries a significant number of s
 
 C→A transversions exceeding 20% of all base pair substitutions is a primary characteristic of mutation spectra from tumors containing Pol ε exonuclease domain mutations (Rayner et al., 2016; Shinbrot et al., 2014). C→A transversions were increased significantly in the Pol εwt/exo- cells as compared to the control Pol εwt/wt spectrum, accounting for 46% of all base pair substitutions (Figure 2A, χ2 = 11.874, p<0.0001). These were not cell line artifacts, as whole exome sequencing from HCT-116 cells from two independent studies ([Abaan et al., 2013] and this study) showed roughly 10% C→A transversions (Figure 2A, p>0.5). HCC2998 cells, which harbor the Pol εwt/P286R mutation, also showed a significant increase in C→A transversions relative to Pol εwt/wt cells (Figure 2A, p<0.0001).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig2-v1.jpg)
+
+**Figure 2.:** (A) Whole genome sequencing (2.8 × 109 bp, average 30X coverage) was performed on Pol εwt/exo- cells lacking mismatch repair at two defined population doubling levels, P0 and P14, as described in the Methods. P0 was used as the matched normal cells to define only those mutations arising during the 14 population doublings. The fraction of each type of base pair substitution from the PD 14 Pol εwt/exo- cells was plotted and compared to the fraction of each type of mutation from HCT116 ((Abaan et al., 2013) and this study) and HCC2998 cells (Abaan et al., 2013). Chi square tests with Yates correction were used to calculate p values relative to SNVs found in Pol εwt/wt mismatch repair-deficient cells in this study. Pol εwt/wt (Abaan et al.) χ2 = 0.033, p=0.8551; Pol εwt/P286R (Abaan et al.) χ2 = 872.341, p<0.0001; Pol εwt/exo-χ2 = 2,3680.508, p<0.0001. ****p<0.0001; n.s., not significant. (B) The number of each indicated base pair substitution in a specific trinucleotide context was plotted from the PD 14 Pol εwt/exo- mismatch repair-deficient cells. The base pair substitutions shown (C > A and T > G transversions, left; C > T transitions, right) are those found enriched in POLE tumors. Chi square tests with Yates correction were used to calculate p-values relative to SNVs found in Pol εwt/wt mismatch repair-deficient cells in this study. C > A TCT χ2 = 152.772, p<0.0001; T > G TTT χ2 = 72.254, p<0.0001. ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Whole exome SNVs identified in HCT116 cells in the current study, as well as from HCT116 and HCC2998 cells previously by Abaan et al. were extracted and identified. All SNVs were then analyzed for their triplet nucleotide sequence context. Occurrences of each of the 96 possible trinucleotide base pair substitutions was then plotted as a percentage of the total number of SNVs. The mutation status of Pol ε is indicated for each cell line. The number of SNVs for each study is indicated.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Non negative matrix factorization (NMF) was used to extract six unique mutation signatures from POLE-mutant (n = 14) and POLE-wild type (n = 545) colorectal cancer patients, Pol ε-P286R HCC2998 cells (SNVs extracted from Abaan, Cancer Res. 2013) and the indicated cell lines with and without MMR from the current study. Cosine similarity to all 30 cancer mutational signatures (Alexandrov, Cell Reports 2013) showed significant overlap between our Signature ‘A’ set and mutation signature 10 (ascribed to Pol ε mutations) and 98% overlap between between our Signature ‘B’ and mutation signatures 5, 6 and 20 (ascribed to MMR mutations). (B) The relative contribution of each extracted mutation signature to the total mutations in the indicated sample was calculated. Signatures and their respective contributions to each sample were derived using NMF. NMF was performed on all samples together (including cell lines and patients) using the Scikit-learn Python library (Pedregosa et al., Jrnl Machine Research Learning 2011.).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig2-figsupp3-v1.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig2-figsupp4-v1.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** The relative proportion of each signature is shown for several tumor types (bMMRD, blue; somatic endometrial, green; somatic colorectal, salmon) and for Pol ε (black) and Pol δ (gray) mutations.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig2-figsupp6-v1.jpg)
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig2-figsupp7-v1.jpg)
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig2-figsupp8-v1.jpg)
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig2-figsupp9-v1.jpg)
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig2-figsupp10-v1.jpg)
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig2-figsupp11-v1.jpg)
+
 Two sequence context mutational hotspots were observed that are consistent with Pol ε exonuclease domain mutant spectra: C→A transversions in TCT context and T→G transversions in TTT context and, to a lesser extent, ATT and GTT contexts (Figure 2B). These hotspots are seen in Pol ε tumors from patients with bMMRD (Shlien et al., 2015), colorectal and endometrial cancer (Alexandrov and Stratton, 2014; Cancer Genome Atlas Network, 2012; Kandoth et al., 2013; Shinbrot et al., 2014), as well as in the Pol ε-P286R HCC2998 cells (Figure 2—figure supplement 1, data extracted from [Abaan et al., 2013]). These are not mutational hotspots in HCT-116 cells, which contain wild type Pol ε (Figure 2—figure supplement 1). The largest number of mutations that arose during the 14 doublings were C→A transversions in triplet contexts containing adjacent cytosines: CCA, CCT, CCC and CCG. Triplet nucleotide occurrences can vary in the regions captured by WGS and WES. In order to address this we reanalyzed each sample relative to the number of times each trinucleotide is found in the relevant sample and found the hotspot patterns are all retained (Figure 2—figure supplements 3–4). The increase in C→A mutations in the CCT context was also seen in Pol ε exonuclease domain (EDM) tumors from bMMRD patients (Shlien et al., 2015), suggesting a link between Pol ε replication errors left uncorrected by mismatch repair. C→A mutations in CCA, CCC and CCG contexts are slightly elevated in Mutation Signature 20, which has been associated with loss of mismatch repair (Alexandrov et al., 2013b). These transversions were seen in the HCT116 cell line with wild type Pol ε (Figure 2—figure supplement 1), though to a lesser extent. The lack of C→T transitions in TCG contexts is significantly different from colorectal and endometrial Pol ε tumors, but consistent with their absence from bMMRD tumors with Pol ε EDM mutations (Cancer Genome Atlas Network, 2012; Kandoth et al., 2013; Shinbrot et al., 2014).
 
-## Expression of MMR suppresses Pol εwt/exo- mutagenesis
+### Expression of MMR suppresses Pol εwt/exo- mutagenesis
 
 While it is clear that Pol ε-dependent mutagenesis in the absence of functional MMR accounts for the ultramutated phenotype in bMMRD tumors with Pol ε mutations, the role of MMR in Pol ε somatic tumors is less clear. In order to measure the effects of MMR on Pol ε exonuclease-dependent replication errors, we wanted to measure error rates in both the presence and absence of MMR. Previous studies have restored MMR by stably adding Mlh1-expressing chromosome 3 to cells (Glaab and Tindall, 1997). We made Mlh1-encoding lentivirus and used this to infect Mlh1-deficient HCT-116 cells containing wild type and mutant Pol ε (Figure 3A). Lentiviral Mlh1 expression reduced mutation rates at the HPRT1 locus by 14- to 20-fold in the wild type polymerase background (Figure 3B), similar to the 12-fold reduction reported when the Mlh1-encoding chromosome 3 was added back to HCT-116 cells ([Glaab and Tindall, 1997; Tindall et al., 1998]; 73 × 10−7 and 5.9 × 10−7; 12.4-fold reduction), indicating that the expressed Mlh1 is functional.
 
@@ -83,6 +127,14 @@ While it is clear that Pol ε-dependent mutagenesis in the absence of functional
 Mlh1 expression in Pol εwt/exo- cells caused an over 50-fold decrease in the mutation rate (to 2.3 and 3.0 × 10−7, Figure 3B), making them indistinguishable from those measured in Pol εwt/wt cells with Mlh1 expressed (Figure 3B). This result also suggests that Msh3 is unlikely to play a significant role in correcting the exonuclease-deficient Pol ε errors since HCT-116 cells are deficient in this factor and it was not added back in these experiments (Papadopoulos et al., 1994).
 
 When fluctuation assay mutation rates are very low due to a significant number of independent isolates giving rise to zero HPRT1-mutant colonies, as was the case here, an alternative method to measure mutation rates can be used. We chose to periodically measure HPRT1 mutant frequencies at increasing population doubling level (PDL), where the slope of the plotted line is equal to the mutation rate (Glaab and Tindall, 1997). We measured HPRT1 mutant frequencies at several population doublings from PDL = 0 to PDL = 70 or 71 in Pol εwt/wt and Pol εwt/exo- cells expressing Mlh1, respectively (Figure 4A). At each PDL we scored between 1 and 19 6-TG-resistant colonies. However, when we sequenced the HPRT1 ORF from all 6-TG-resistant colonies we saw many instances of repeat mutations in a collection from a single PDL, indicative of a single mutational event that expanded throughout the population. Plotting mutant frequency values calculated for the indicated PDL using only the unique HPRT1 mutations (Figure 4—source data 1) returned a line with slope of ~1, suggesting that the mutation rates were at or near the level of detection of this assay. The Pol εwt/exo- mutant frequencies were consistently higher than those from the Pol εwt/wt cells, but this difference was not statistically significant (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig4-v1.jpg)
+
+**Figure 4.:** (A) Cells were continuously passaged and PDL was calculated using the following equation: PDL = [ln(Nt)-ln(N0*PE)]/ln2. Nt = Number of viable cells counted after passage; N0 = Number of cells seeded prior to passage; PE = plating efficiency. Mutant frequencies were measured for each mismatch repair proficient strain at the indicated PDL (diamonds, Pol εwt/wt; triangles, Pol εwt/exo-). Ten plates for each cell lines were seeded with 2 × 105 cells at each PDL into media containing 6-TG and grown for 12–14 days. Each 6TG-resistant clone was isolated, expanded and the HPRT1 ORF was sequenced. Mutant frequencies were calculated based on the number of unique HPRT1 mutations at each PDL. Pol εwt/wt PDL6.4 MF = 1.8 × 10−6, SEM = 2.7 × 10−6, n = 4; Pol εwt/exo- PDL6.6 MF = 4.1 × 10−6, SEM = 3.1 × 10−6, n = 3, p=0.6003. Pol εwt/wt PDL44.6 MF = 1.1 × 10−6, SEM = 2.3 × 10−6, n = 2; Pol εwt/exo- PDL47.9 MF = 3.2 × 10−6, SEM = 4.7 × 10−6, n = 8, p=0.9066. Pol εwt/wt PDL69 MF = 1.5 × 10−6, SEM = 1.6 × 10−6, n = 5; Pol εwt/exo- PDL71 MF = 3.7 × 10−6, SEM = 2.6 × 10−6, n = 5, p=0.4917. (B) Whole exome sequencing (30 × 106 bp, average 101x coverage) was performed on the indicated cell line at two defined population doubling levels, P0 and P69 or P71, as described in the Methods. P0 for each cell line was used as the matched normal cells to define only those mutations arising during the 70 or 71 population doublings. The fraction of each type of base pair substitution found unique to PDL 69 (for Pol εwt/wt) or PDL 71 (Pol εwt/exo-) was plotted and compared. Fisher’s exact tests were used to calculate p values. p=0.0002 (***p<0.001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Occurrences of each of the 96 possible trinucleotide base pair substitutions was then plotted as a percentage of the total number of SNVs.
 
 To determine if this phenomenon held throughout the genome, we carried out whole-exome sequencing to an average depth of 100x on the early (PDL = 0) and late (PDL = 70) samples from both Pol εwt/wt and Pol εwt/exo- mismatch repair-proficient cell lines (Figure 4B). Using the PDL = 0 samples as matched normal controls, we measured similar low mutation rates in Pol εwt/wt and Pol εwt/exo- cells (13 × 10−9 Mut/bp/doubling and 18 × 10−9 Mut/bp/doubling, respectively). The total numbers of all mutations acquired were essentially no different than with wild type Pol ε. Interestingly, there was a statistically significant increase in C→A transversions (p=0.0002) between the mismatch repair-proficient Pol εwt/exo- cells and the mismatch repair-proficient Pol εwt/wt cells, while no statistically significant difference was found in any other class of base pair substitution (p>0.2 for each of the six classes, Fisher’s Exact Test). Further, all triplet context mutations were observed in insufficient numbers to evaluate statistically. C→A mutations were, however, observed in all triplet contexts seen as hotspots in the MMR-deficient cells (CCA, CCC, CCG, CCT and TCT, Figure 4—figure supplement 1). Mutation signature 10, the unique Pol ε mutation signature, was extracted from Pol ε exonuclease-deficient mutation spectra from cells with and without mismatch repair (Figure 2—figure supplement 2 and Figure 4—source data 2). The relative contribution of signature 10 in Pol ε exo-deficient cells is closer to that seen in bMMRD patients (Figure 2—figure supplement 5), most likely due to the relative absence of C→T transitions in TCG context. These results indicate that the majority of replication errors made by the Pol ε-D275A/E277A mutant are in fact corrected by mismatch repair.
 
@@ -106,6 +158,14 @@ Given that the HCT-116 cells used in these studies are mutators themselves, it i
 
 Our results support a model in which simple heterozygous loss of two Pol ε exonuclease metal chelating residues on a single allele of POLE is insufficient to drive Pol ε ultramutational specificity. Additional factors are likely required to help drive the ultramutated phenotype observed in POLE tumors, including suppression of mismatch repair, discussed below. In bMMRD, the complete lack of mismatch repair prior to Pol ε mutation leads to the moderate accumulation of Pol ε-independent replication errors (Figure 5). Mutation rates then increase dramatically upon loss of proofreading in one allele, with the Pol ε error signature representing a smaller fraction of the total errors, which is seen in these tumors (Shlien et al., 2015). Our results suggest that Pol ε mutations in somatic tumors can occur first and early, but later suppression of MMR would then accelerate overall mutation rates to that seen in the ultramutated tumors, while the signature mutation proportion remains high (Cancer Genome Atlas Network, 2012; Kandoth et al., 2013).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig5-v1.jpg)
+
+**Figure 5.:** Rapid, massive mutation accumulation and Pol ε mutation signature acquisition (blue circles) depends on both Pol ε exonuclease domain mutation and compromised mismatch repair function. In somatic tumors, the partial MSI phenotype seen in a subset of POLE patients is likely the result of mismatch repair loss preceding Pol ε mutation (black line), leading to an accumulation of Pol ε-independent mutations (red circles). Mutations in bMMRD patients develop with similar mutation patterns, but accelerated timing due to germline loss of mismatch repair. When the Pol ε mutation occurs first during somatic tumor development, the mutation signature likely requires an additional characteristic for the explosive mutation acquisition to occur (blue line). Possibilities include subsequent suppression of mismatch repair (↓MMR?), unique biochemical properties (POLEmut?) or increased time and or cellular proliferation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32692/elife-32692-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Also shown are mutations in canonical and associated mismatch repair genes. Missense (green), nonsense (black) and inframe deletion or insertion (tan) mutations are shown. Each column represents an individual patient tumor.
+
 Analysis of the mutational status of all mismatch repair genes in Pol ε tumors sequenced by TCGA supports the model of mismatch repair loss dramatically accelerating the acquisition of Pol ε-specific mutations. 85% (22/26) of the TCGA Pol ε tumors also have a mutation in at least one mismatch repair gene, most of which (18/22) harbor at least one nonsense mutation, which are more likely to be inactivating mutations (Figure 5—figure supplement 1). This predicts that at least some tumors would show evidence of MSI. In the original TCGA studies, several POLE tumors were actually first classified as MSI (three as MSI-H; five as MSI-L) (Cancer Genome Atlas Network, 2012; Kandoth et al., 2013). Analysis of sequencing reads from 46 homonucleotide runs in the POLE endometrial tumors showed no evidence of instability, so the POLE tumors were then reclassified as MSS (Shinbrot et al., 2014). However, the initial TCGA studies used both homo- and di-nucleotide loci to score MSI, raising the possibility that a subset of POLE tumors have a microsatellite instability defect at repeats more complex than homonucleotides. Indeed, the repeat unit size, the number of repeats and the repeat sequence composition are known to have very strong influences on the variability of microsatellite mutagenesis (Shah et al., 2010). Curiously, however, most (15/18) of the MMR gene nonsense mutations are the result of TCT→TAT transversions, raising the possibility that Pol ε mutation occurs first and possibly even promotes subsequent mutational inactivation of MMR.
 
 Of all the Pol ε mutant colorectal and endometrial tumors sequenced in the TCGA studies, 15% (4/26) lacked a mutation in any mismatch repair gene and also showed no evidence of MLH1 promoter hypermethylation, demonstrating that the ultramutated phenotype can arise when mismatch repair is intact at both the genetic and epigenetic level. An alternative possibility is that mismatch repair activity is suppressed at some point during POLE tumor development. In this scenario, mutations introduced by the mutant Pol ε could accumulate slowly even in the presence of genotypically and epigenetically wild type mismatch repair. A number of conditions have been shown to transiently and reversibly lower mismatch repair protein levels and inhibit mismatch repair activity, including hypoxia, oxidative damage, inflammation, reduced pH, exposure to adriamycin or cadmium and treatment with mutagenic dNTP analogs (Banerjee and Flores-Rozas, 2005; Francia et al., 2005; Larson and Drummond, 2001; Mihaylova et al., 2003; Chang et al., 2002; Hile et al., 2013; Iwaizumi et al., 2013; Lu et al., 2014; Negishi et al., 2002). The variable nature and duration of such a suppression event would be expected to result in a complex effect on microsatellite instability. Perhaps even more intriguingly, transient mismatch repair suppression has been seen in the context of proofreading-deficiency in E. coli (Fijalkowska and Schaaper, 1996; Schaaper and Radman, 1989). While replication errors made by the proofreading-deficient allele tested here were clearly insufficient to suppress MMR, it is possible that the nature and rate of errors made by cancer-associated alleles might be sufficient to saturate and overwhelm MMR pathways.
@@ -116,43 +176,172 @@ Given the recent success of immune checkpoint therapies in treating tumors with 
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cell line (Homo sapiens, Male)</td>
+      <td>HCT116 cells</td>
+      <td>Other</td>
+      <td>RRID:CVCL_0291</td>
+      <td>Prescott Deininger at Tulane Univeristy LCRC</td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens, Male)</td>
+      <td>HCT116 + Mlh1</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>HCT116 cells stably expressing human Mlh1-ORF via lentivirus-mediated integration</td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens, Male)</td>
+      <td>Exo-; Exonuclease-deficient HCT116 Cells</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>HCT116 cells infected with rAAV containing D275A and E277A POLE mutations</td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens, Male)</td>
+      <td>Exo-; Exonuclease-deficient HCT116 Cells + Mlh1</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>HCT116 cells stably expressing human Mlh1-ORF via lentivirus- mediated integration and infected with rAAV containing D275A and E277A POLE mutations</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>ExoI-targeting rAAV vector</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>Homology arms/SEPT Cassette/Exo- mutations</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pCMV-XL5-Mlh1</td>
+      <td>Other</td>
+      <td>NA</td>
+      <td>Victoria Belancio at Tulane Univeristy LCRC</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mlh1 Antibody</td>
+      <td>Pharmingen</td>
+      <td>G168-728; RRID: AB_395227</td>
+      <td>Rabbit monoclonal; (1:100) in Milk (1%) TBST (1X) x 1 hr at RT</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>6-Thioguanine; 6-TG</td>
+      <td>Sigma-Aldrich</td>
+      <td>A4882</td>
+      <td>Used at 5 ug/mL final concentration</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Hypoxanthine-Aminopterin- Thymidine; HAT</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>21060017</td>
+      <td>Used at 1X final concentration</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Geneticin; G418</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>10131027</td>
+      <td>Used at 400 ug/mL final concentration</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>Ad-CMV-Cre</td>
+      <td>Vector Biolabs</td>
+      <td>1045</td>
+      <td>Adenovirus expressing Cre recombinase for excision of SEPT cassette from ExoI-targeted cell lines</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>BWA-MEM v0.7.8</td>
+      <td>PMID: 19451168</td>
+      <td>NA</td>
+      <td>Used to align reads to human reference</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Picard v1.108</td>
+      <td>Broad Institute; https://broadinstitute.github.io/picard/.</td>
+      <td>NA</td>
+      <td>Identify duplicate reads</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>The Genome Analysis Toolkit (GATK) v2.8.1</td>
+      <td>PMCID: PMC2928508</td>
+      <td>NA</td>
+      <td>locally realign reads to known indels and recalibrate base quality scores</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MuTect v1.1.4</td>
+      <td>PMCID: PMC3833702</td>
+      <td>NA</td>
+      <td>Identiy somatic point mutations between the tumour and matched normal</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>WES/WGS raw sequencing data</td>
+      <td>This paper</td>
+      <td>NCBI GEO Accession: PRJNA327240</td>
+      <td>Raw FASTQ files for WES and WGS performed in this study</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 Trypsin-EDTA was from Life Technologies and Geneticin was from Invitrogen. Antibodies against Mlh1 (mouse α-human Mlh1, G168-728) and β-actin (mouse α-human beta-actin, A1978) were from Pharmingen and Sigma, respectively.
 
-## Cell culture
+### Cell culture
 
 The human colorectal cancer cell line HCT-116 (a kind gift from Dr. Prescott Deininger) was grown in HyClone MEM/EBSS (Thermo Scientific) supplemented with 10% fetal bovine serum (Atlanta Biologicals), 1% sodium pyruvate (Invitrogen) and 1% MEM-NEAA (Invitrogen). The HCT-116 cells used in this study were validated via analysis of genome-wide mutation signature, microsatellite instability and biomarker. HCT-116 cells lack Mlh1 resulting in a well-characterized MSI phenotype (Lynch et al., 1993; Parsons et al., 1993; Boland and Goel, 2010). They further have a unique mutational spectrum that can be evaluated via next-generation sequencing (Abaan et al., 2013). Western blot analyses (Figure 3A) showed a lack of Mlh1 protein. The mutation spectrum from our whole-exome sequencing of HCT-116 cells (Figure 2A and Figure 2—figure supplement 1) is identical with that reported by Abaan (Abaan et al., 2013). Lastly, we performed microsatellite stability analysis in our HCT116 cells at five mononucleotide homopolymeric run loci (NR27, NR21, NR24, BAT25, BAT26) using capillary electrophoresis, which showed instability at these loci providing a phenotypic readout consistent with the lack of Mlh1 expression in our cells (data not shown). The HCT-116 cell line is also not in the 488 commonly misidentified cell lines from the most recent ICLAS database (Version 8.0) and tested negative for mycoplasma.
 
-## Generation of targeting constructs
+### Generation of targeting constructs
 
 In order to target the proofreading inactivating mutations to the POLE locus in vivo, we used rAAV with a synthetic exon promoter trap (Rago et al., 2007). A 1045 bp fragment containing POLE exons 7 and 8 along with intron 7 (termed HA1) was PCR amplified from HCT-116 genomic DNA using primers designed to add unique NotI and SacI sites to the 5' and 3' ends, respectively. A 1057 bp fragment containing exons 9, 10 and 11 along with introns 9 and 10 (termed HA2) was PCR amplified from HCT-116 genomic DNA using primers designed to add unique EcoRI and NotI sites to the 5' and 3' ends, respectively. Both HA1 and HA2 were first cloned into pCR-TOPO and sequence verified. The catalytic exonuclease DIE residues located in HA2 (exon 9) were changed to AIA using site-directed mutagenesis and sequence verified. The Pol ε rAAV shuttle vector was assembled by four-way ligation using the restriction enzyme-digested gene-specific HA1 and HA2 fragments, along with the SEPT/loxP cassette digested with NotI-EcoRI and the ITR-containing pAAV shuttle vector digested with NotI (SEPT/loxP cassette and pAAV shuttle vectors were kind gifts of Dr. Fred Bunz, Johns Hopkins University). The Exo-targeting vector was used to package high-titer (1.6 × 106 PFU/ml) recombinant adeno-associated virus into AAV2 serotype capsids.
 
-## Gene targeting and isolation of recombinant cell lines
+### Gene targeting and isolation of recombinant cell lines
 
 Cells were grown in 100 mm dishes and infected with rAAV when ~75–80% confluent. At the time of infection, cells were washed with 1x Hanks buffered saline solution (Invitrogen) before adding 3 ml of media containing 75 μl of a 1:250 dilution of rAAV lysate. 3 hr after infection an additional 6 ml of media was added to plates and allowed to incubate at 37°C for 48 hr. After 48 hr, media was changed and Geneticin was added to a final concentration of 400 μg/ml. Plates were then incubated under selection for an additional 14 days. At the end of the selection period, colonies from plates were isolated using glass cloning rings and 0.05% trypsin (Invitrogen) was used to transfer colonies to 6-well plates for subsequent expansion. Genomic DNA was extracted from expanded clones using DNeasy Blood and Tissue kit (QIAgen) according to the manufacturer’s protocol and eluted in 100 μl of elution buffer. Locus-specific integration was assessed by PCR using a primer that annealed outside the homology region and another that annealed within the neo cassette.
 
-## Cre-mediated excision
+### Cre-mediated excision
 
 To remove the SEPT cassette from correctly targeted clones, cells were infected in a 25 cm2 flask with adenovirus that expresses the Cre recombinase (1.0 × 106 PFU/ml, Vector Biolabs, Philadelphia, PA). Cells were plated at a limiting dilution in nonselective medium 24 hr after infection. 12 days after infection, single cell colonies were plated in duplicate and geneticin was added to one set of wells at a final concentration of 400 μg/ml to test for sensitivity. During this time, genomic DNA was extracted as previously described and screened using primers that annealed across both homology arms. PCR products were digested with SacI to distinguish between the wild type and recombinant locus.
 
-## Southern blot analysis
+### Southern blot analysis
 
 Genomic DNA was harvested from the knock-in cell lines using the DNeasy Blood and Tissue Kit (Qiagen), and double digested with SacI and SalI. Hoechst fluorimetry was used to determine the concentration of DNA samples for accurate loading of samples. 4 μg of each sample was run on a 0.8% agarose gel in TBE. DNA was transferred to Hybond N + membrane (Amersham), blotted with a probe to HA2 at 65°C overnight, and washed at 65°C. To make the probe, a 300 bp sequence was amplified from the HA2-pCR-TOPO clone using the primers: 5ʹ-GCATCTGCCCCACTGTTAGT-3ʹ and 5ʹ-CTCCCTGTTGGTGATGAGGT-3ʹ. The PCR product was labeled using the Prime-It II Random Primer Labeling Kit (Agilent) and α-32P-dCTP (Perkin Elmer). Membrane was blocked in Denhardt’s pre-hybridization buffer [6x SSC, 0.5% SDS, 0.1% Ficoll 70, 0.1% Ficoll 400, 0.2% PVP, and 0.2%] at 65°C for 1 hr. The probe was added to hybridization buffer [6x SSC, 0.5% SDS, and 10% Dextran Sulfate] and incubated overnight at 65°C. To wash off excess probe, the blot was washed for 2 × 15 min washes in wash 1 [10x SSC, 0.5% SDS], 2 × 15 min washes in wash 2 [1x SSC, 1% SDS], and 2 × 30 min washes in wash 3 [0.1x SSC, 1% SDS]. The gel was exposed to a PhosphorImage screen and scanned on a Typhoon Imager.
 
-## Purification of human Pol ε
+### Purification of human Pol ε
 
 An expression vector encoding residues 1–1189 of the catalytic subunit of human Pol ε containing the D275A/E277A substitution was prepared as described (Korona et al., 2011). Briefly, the human Pol ε was coexpressed in autoinduction medium with pRK603, which allows coexpression of TEV protease, at 25°C until the culture was saturated. Peak fractions from the HisTrap column were pooled, dialyzed into 50 mM HEPES, pH 7.5, 1 mM DTT, 5% glycerol and bound to SP sepharose. Bound protein was eluted with a 0–1 M with NaCl gradient. Peak fractions were pooled, dialyzed into 50 mM Tris, pH 7.5, 1 mM DTT, 5% glycerol, 100 mM NaCl and bound to Q Sepharose. Bound protein was eluted with a 100 mM–M M NaCl gradient. Peak fractions were pooled, concentrated and passed through a pre-equilibrated Superdex200 size exclusion column. Fractions containing the purified 140 kDa protein were pooled, dialyzed into 50 mM Tris, pH 8.0, 1 mM DTT, 5% glycerol and aliquots were frozen and stored at −80°C.
 
-## TCT→TAT in vitro error rate
+### TCT→TAT in vitro error rate
 
 We previously reported that the lacZ forward mutation assay template lacks sites at which TCT→TAT transversions are phenotypically detectable (Shlien et al., 2015). To overcome this limitation we previously made a reversion substrate that reports only this mutation by using site-directed mutagenesis to change A-11 to C-11. Double-stranded M13mp2 DNA containing the TC-11T sequence was used as a substrate in reactions containing 0.15 nM DNA, 50 mM Tris-Cl, pH 7.4, 8 mM MgCl2, 2 mM DTT, 100 μg/ml BSA, 10% glycerol, 250 μM dNTPs and 1.5 nM Pol ε at 37°C. Completely filled product was transfected into Escherichia coli cells, which were used to determine the frequency of dark blue revertant plaques that occurred as a result of TCT→TAT transversions arising during DNA synthesis. In this assay, accurate DNA synthesis yields colorless plaques. Error rates were calculated according to the following equation: error rate (per nucleotide synthesized) = ((number of mutants of a particular class) × (mutant frequency)) / ((number of mutations sequenced) × (0.6) × (number of detectable sites)).
 
-## Mlh1 lentivirus construction
+### Mlh1 lentivirus construction
 
 Mlh1 ORF was PCR amplified using the pCMV-XL5-Mlh1 vector (kindly provided by Victoria Belancio, Tulane University), forward and reverse primers (fwd 5'-TCGACTCGAGTCCACCATGTCGTTCGTGGCAGG-3'; rev 5'-TCGAGGATCCGTTACTTAACACCTCTCAAAGAC-3') and Q5 DNA polymerase (NEB). After gel purification, dA was added to the 3' ends with Taq and the Mlh1 ORF was cloned into pLenti6.3/V5-TOPO (Invitrogen). Mlh1 was found to have a common I219V SNP that does not affect Mlh1 function (Plotz et al., 2008). Mlh1 Lentiviral particles were made using the ViraPower Lentiral Expression System (Invitrogen). Briefly, 293FT cells were transfected with pLenti6.3/V5-TOPO-Mlh1 and a mixture of plasmids encoding lentiviral packaging factors. Viral supernatant was harvested 48 hr after transfection, filter sterilized and stored in aliquots at −80°C. After titering, HCT-116 cells were transduced with Mlh1 lentivirus at MOI of 1.0. Cells were selected for 1 week in 10 μg/ml blasticidin. Blasticidin-resistant clones were identified and cells were harvested, lysed and probed by Western blot (mouse α-human Mlh1, G168-728, Pharmingen) to confirm Mlh1 expression.
 
-## Mutation rate and mutant frequency measurements
+### Mutation rate and mutant frequency measurements
 
 Prior to mutation rate measurements, preexisting HPRT1 mutants were eliminated from cell populations by incubating cells in HAT medium (1x Hypoxanthine-Aminopterin-Thymidine) for five passages. For each cell line analyzed, 500 cells were seeded and grown to confluence in 12 wells across two 6-well plates. Cells from one well were harvested and counted to estimate cell number in the remaining 11 wells. For mutation rate measurement, 500 cells from each of the remaining eleven wells were seeded per dish in 3 × 100 mm dishes in media lacking 6-TG to be used to measure plating efficiency. At the same time, 5 × 105 cells from each of the remaining eleven wells were plated in 5 × 100 mm dishes in media containing 6-TG. After 7 days, colonies on the plating efficiency wells were stained with crystal violet and counted. After 12–14 days, the 6-TG resistant colonies were also stained with crystal violet and counted. Mutation rate was calculated using the Ma-Sandri-Sarkar Maximum Likelihood Estimator (MSS-MLE) method (Rosche and Foster, 2000).
 
@@ -162,15 +351,15 @@ HCT116 and HCT116 + Mlh1 cells were seeded into T75 flasks and grown at 37°C/5%
 
 Genomic per base pair mutation rates (μBS) were calculated using the method of Drake (Drake, 1991) with modifications as applied in Lynch (Lynch, 2010). The equation used was: μBS = (μL • fT • fBS) / (L • fL • [x (nm + nn)/nn]), where μL is the measured mutation rate at the HPRT1 reporter gene, fT is the fraction of mutants found after sequencing, fBS is the fraction of mutations due to base pair substitutions, L is the length (in nt) of the reporter gene, fL is the fraction of HPRT1 that gives rise to detectable mutations, x is the fraction of mutations that would give rise to chain terminator mutations, nm is the observed number of missense mutations and nn is the observed number of nonsense mutations. We used 126 HPRT1 mutations from three independent studies (Bhattacharyya et al., 1995; Glaab and Tindall, 1997; Ohzeki et al., 1997) to calculate μBS. The values used were: fT = 1.0, fBS = 79/126 = 0.627; L = 627 nt; fL = 1; x = 3/64 = 0.047; nm = 74; nn = 5. The μL value for Pol ε mutant cell lines was determined empirically using fluctuation analysis.
 
-## HPRT1 sequencing
+### HPRT1 sequencing
 
 Total RNA was isolated using the Qiagen RNeasy kit (Qiagen) according to the manufacturer’s protocol. RT-PCR was performed with SuperScript III Reverse Transcriptase (Invitrogen) according to the manufacturer’s protocol using 1 μg of RNA as a template. Primer-specific cDNA was amplified for 32 cycles at an annealing temperature of 60°C using the following HPRT1 primers: 123(fwd) CTTCCTCCTCCTGAGCAGTC and 1041 (rev) GCCCAAAGGGAACTGATAGTC. From the HPRT1 sequencing of 6-TG resistant colonies, one clone was found to have exon 2 completely deleted. Exon deletions in HPRT1 have been shown to be caused by splice site mutations (Bhattacharyya et al., 1995). We therefore amplified exon 2 and its flanking region from genomic DNA prepared from the appropriate clone using the following primers: Forward: TTGTTTTCTTACATAATTCATTATCATACC; Reverse: TTACTTTGTTCTGGTCCCTACAGAG.
 
-## Whole genome and exome sequencing
+### Whole genome and exome sequencing
 
 Next generation sequencing was performed as per the published protocols. Whole genome sequencing (WGS) was performed on an Illumina HiSeq Xten instrument with libraries prepared using the manufacturer’s TruSeq Nano DNA Library Prep kit and sequenced to a depth of 36.1x. For exome sequencing, DNA was enriched using Agilent SureSelect Human Exome Library Preparation V5 kit, then sequenced to a depth of 101.38x (96.61x-108.19x).
 
-## Substitution detection from next generation sequenced data
+### Substitution detection from next generation sequenced data
 
 All samples were processed from raw reads (FASTQ files) from paired end libraries. The reads were aligned to the human reference (GRCh37 with decoy sequences) using BWA-MEM v0.7.8 (Li and Durbin, 2009). Duplicate reads were identified and marked using Picard v1.108 (https://broadinstitute.github.io/picard/). The Genome Analysis Toolkit (GATK) v2.8.1 (McKenna et al., 2010) was used to locally realign reads to known indels and recalibrate base quality scores. Quality metrics were generated from the final BAM files to ensure high quality alignment. This includes:
 
@@ -180,6 +369,6 @@ Somatic point mutations between the tumour and matched normal were identified us
 
 To investigate the quality of somatic mutations, we also identified key metrics including:
 
-## Data access
+### Data access
 
 DNA sequencing data from this study have been submitted to the NCBI Gene Expression Omnibus (GEO; http://www.ncbi.nlm.nih.gov/geo/) under accession number PRJNA327240.

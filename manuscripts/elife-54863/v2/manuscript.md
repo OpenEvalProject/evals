@@ -15,7 +15,7 @@
 
 ## Abstract
 
-The MST-LATS kinase cascade is central to the Hippo pathway that controls tissue homeostasis, development, and organ size. The PP2A complex STRIPAK SLMAP blocks MST1/2 activation. The GCKIII family kinases associate with STRIPAK, but the functions of these phosphatase-associated kinases remain elusive. We previously showed that the scaffolding protein SAV1 promotes Hippo signaling by counteracting STRIPAK (Bae et al., 2017). Here, we show that the GCKIII kinase STK25 promotes STRIPAK-mediated inhibition of MST2 in human cells. Depletion of STK25 enhances MST2 activation without affecting the integrity of STRIPAK SLMAP . STK25 directly phosphorylates SAV1 and diminishes the ability of SAV1 to inhibit STRIPAK. Thus, STK25 as the kinase component of STRIPAK can inhibit the function of the STRIPAK inhibitor SAV1. This mutual antagonism between STRIPAK and SAV1 controls the initiation of Hippo signaling.
+The MST-LATS kinase cascade is central to the Hippo pathway that controls tissue homeostasis, development, and organ size. The PP2A complex STRIPAKSLMAP blocks MST1/2 activation. The GCKIII family kinases associate with STRIPAK, but the functions of these phosphatase-associated kinases remain elusive. We previously showed that the scaffolding protein SAV1 promotes Hippo signaling by counteracting STRIPAK (Bae et al., 2017). Here, we show that the GCKIII kinase STK25 promotes STRIPAK-mediated inhibition of MST2 in human cells. Depletion of STK25 enhances MST2 activation without affecting the integrity of STRIPAKSLMAP. STK25 directly phosphorylates SAV1 and diminishes the ability of SAV1 to inhibit STRIPAK. Thus, STK25 as the kinase component of STRIPAK can inhibit the function of the STRIPAK inhibitor SAV1. This mutual antagonism between STRIPAK and SAV1 controls the initiation of Hippo signaling.
 
 ## Introduction
 
@@ -31,13 +31,33 @@ In this study, we clarify the functions of GCKIII kinases during Hippo signaling
 
 ## Results
 
-## STK25 inhibits the Hippo pathway in human cells
+### STK25 inhibits the Hippo pathway in human cells
 
 We individually depleted each GCKIII kinase from 293FT cells by RNA interference (RNAi) and monitored MST2 activation by examining the levels of MST2 T180 phosphorylation (pT180). Among the three GCKIII kinases, only depletion of STK25, but not depletion of MST3 or MST4, increased MST2 pT180 (Figure 1—figure supplement 1A). Conversely, overexpression of STK25, but not overexpression of MST3 or MST4, decreased MST2 pT180 (Figure 1—figure supplement 1B). These results suggest that, among the three GCKIII kinases, only STK25 is involved in suppressing MST2 activation.
 
 We next deleted each GCKIII kinase from 293A cells with CRISPR (Clustered regularly interspaced short palindromic repeats)/Cas9. Compared to control cells, only STK25 knockout (KO) cells, but not MST3 KO or MST4 KO cells, showed increased T-loop phosphorylation of MST1/2 (pMST1/2) and elevated MOB1 phosphorylation at T35 (Figure 1A and Figure 1—figure supplement 1C). Even in the absence of contact inhibition, phosphorylation of YAP was increased in STK25 KO cells. Consistent with the spontaneous activation of the Hippo pathway, a higher percentage of STK25 KO cells, but not MST3 KO or MST4 KO cells, exhibited cytoplasmic localization of YAP (Figure 1B and C). The expression of two well-established Hippo target genes, CTGF and CYR61, was reduced in STK25 KO cells, but not in MST3 KO or MST4 KO cells (Figure 1D). These results establish STK25 as an important negative regulator of the Hippo pathway.
 
-## STK25 inhibits Hippo signaling by suppressing MST1/2 activation
+![Figure 1.](https://cdn.elifesciences.org/articles/54863/elife-54863-fig1-v2.jpg)
+
+**Figure 1.:** (A) Immunoblots of total lysates of control, and GCKIII (STK25, MST3 and MST4) knockout (KO) 293A cells with the indicated antibodies. Anti-GAPDH blot was used as the loading control. (B) Immunofluorescence staining of YAP localization in control and the indicated GCKIII KO 293A cells. Cells were fixed, permeabilized, and stained with anti-YAP (green) and DAPI (blue). Scale bar, 5 μm. (C) Quantification of immunofluorescence signal intensities in (B). Approximately 100 cells were counted from five random fields of each sample. N < C (blue), N = C (grey), and N > C (red) categories indicate YAP localization in cytoplasm, both cytoplasm and nucleus, and nucleus, respectively. Data are plotted as mean ± SEM of three biological replicates. (D) Quantitative RT-PCR. Relative mRNA expression of YAP target genes CTGF and CYR61 in control and the indicated GCKIII kinase KO 293A cells. Data are plotted as mean ± SEM of three biological replicates (*p<0.05; ****p<0.0001; ns, non-significant). (E) Cell proliferation assay was performed in 293A cells. Cell proliferation curves in control (black), STK25 KO (purple), and STK25_MST1/2 TKO (orange) cells were plotted, respectively. Cells were counted on days 2, 4, and 6 after seeding. Data shown are the means ± SEM of three independent experiments. Numbers of STK25 KO or STK25_MST1/2 TKO cells on day 6 was compared to that of control cells (*p<0.05; ***p<0.001). (F) Immunoblots of control, STK25 KO, and STK25_MST1/2 TKO 293A cell lysates with the indicated antibodies. (G) Relative mRNA expression of YAP target genes CTGF and CYR61 in control, STK25 KO, and STK25_MST1/2 TKO 293A cells. Data are plotted as mean ± SEM of three biological replicates (**p<0.01; ***p<0.001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54863/elife-54863-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) 293FT cells were transfected with FLAG-MST2 and the indicated siRNAs. The total cell lysates were blotted with the indicated antibodies. Anti-GAPDH blot was used as the loading control. (B) Immunoblots and quantification of MST2 pT180 levels of lysates of 293FT cells co-transfected with FLAG-MST2 and the indicated MYC-GCKIII kinase plasmids. Data are plotted as mean ± SEM of three biological replicates (**p<0.01; ns, non-significant). (C) Quantification of the ratios of pMST/MST, pMOB1/MOB1, and pYAP/YAP signals in Figure 1A. The total and phosphorylated protein levels were individually normalized to GAPDH levels. Normalized values were used to calculate the ratios. Data are plotted as mean ± SEM of three biological replicates (***p<0.001; *p<0.05; ns, non-significant). (D) Quantification of the ratios of pMST/MST, pMOB1/MOB1, and pYAP/YAP signals in Figure 1F. Data are plotted as mean ± SEM of three biological replicates (****p<0.0001; ***p<0.001; **p<0.01; *p<0.05).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/54863/elife-54863-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Immunoblots of cell lysates of 293FT cells co-transfected with the indicated plasmids. HM, hydrophobic motif; AL, activation loop. (B) 293FT cells were co-transfected with HA-YAP and the indicated MYC-LATS1, MYC-MST2, and/or HA-STK25 plasmids. The total cell lysates were blotted with the indicated antibodies. (C) pLATS1 (AL, pS909) blot (shown in the lower panel) of kinase reactions containing LATS1C-∆HM and the indicated pLATS1-HM, MST2, and STK25 proteins. The LATS1 proteins used in the kinase reactions were depicted in the upper panel.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/54863/elife-54863-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Immunoblots of cell lysates of control and STK25 KO 293A cells treated with DMSO, LatB (1 μg/ml), or CTD (0.4 μM) for 1 hr, respectively. The total cell lysates were blotted with the indicated antibodies. Anti-GAPDH blot was used as the loading control. (B) Quantification of the ratios of pMST/MST, pMOB1/MOB1, pLATS (AL)/LATS and pYAP/YAP signals in (A). Data are plotted as mean ± SEM of three biological replicates (***p<0.001; *p<0.05; ns, non-significant).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/54863/elife-54863-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Immunofluorescence of control and STK25 KO 293A cells stained with phalloidin (F-actin; red) and DAPI (blue). Scale bar, 20 μm. (B) Quantification of the cell area (in µm2) based on F-actin staining. ns, non-significant; control, 1294 ± 415, n = 77; STK25 KO, 1329 ± 660, n = 65.
+
+### STK25 inhibits Hippo signaling by suppressing MST1/2 activation
 
 To test whether spontaneous MST1/2 activation was responsible for elevated Hippo signaling in STK25 KO cells, we created STK25_MST1/2 triple KO (TKO) 293A cells with STK25 and both MST1 and MST2 deleted. Consistent with an activated Hippo pathway, STK25 KO cells displayed much slower cell proliferation compared to control cells (Figure 1E). In contrast, STK25_MST1/2 TKO cells displayed only slightly reduced cell proliferation rate, as compared to control cells. Moreover, phosphorylation of MOB1 at T35 and phosphorylation of YAP were diminished in STK25_MST1/2 TKO cells (Figure 1F and Figure 1—figure supplement 1D). Expression of Hippo target genes, CTGF and CYR61, was also restored in STK25_MST1/2 TKO cells (Figure 1G). Thus, deletion of MST1/2 bypasses the function of STK25 in Hippo signaling, indicating that the major function of STK25 in the Hippo pathway is to suppress MST1/2 activation.
 
@@ -47,17 +67,37 @@ The Ganem group has further shown that STK25 depletion inhibits Hippo pathway ac
 
 We further tested whether STK25 depletion affected F-actin cytoskeleton, which plays a central role in regulating the Hippo pathway. We stained F-actin with phalloidin (Figure 1—figure supplement 4A) and showed that there were no changes in F-actin organization and cell shape between control and STK25 KO cells. To test whether STK25 depletion affected cell size, we measured the cell area of control and STK25 KO cells based on F-actin staining. As shown in Figure 1—figure supplement 4B, control and STK25 KO cells had similar cell size. Taken together, depletion of STK25 did not affect the overall organization of F-actin cytoskeleton in 293 cells. Our results are consistent with the previously reported finding that GCKIII kinases MST3 and MST4, but not STK25, are involved in cytoskeletal regulation (Madsen et al., 2015).
 
-## STK25 inactivates MST1/2 as a component of STRIPAKSLMAP
+### STK25 inactivates MST1/2 as a component of STRIPAKSLMAP
 
 The FHA domain of SLMAP recognizes the phosphorylated MST2 linker, and positions PP2A to dephosphorylate pT180 of MST2 (Figure 2A). We next tested whether STK25 suppresses MST1/2 activation as a component of the STRIPAKSLMAP complex. STK25 overexpression reduced pT180 of MST2 WT without altering pT336 in the linker (Figure 2B), but could not reduce pT180 of the MST2 7TA mutant, which eliminated major phosphorylation sites in the linker region (Ni et al., 2015). Furthermore, MST2 7TA no longer interacted with SLMAP or STK25 (Figure 2C). These results indicate that the MST2-SLMAP interaction is required for STK25-dependent inactivation of MST2.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/54863/elife-54863-fig2-v2.jpg)
+
+**Figure 2.:** (A) Model for STRIPAKSLMAP-mediated MST2 inactivation. (B) 293FT cells were co-transfected with HA-STK25 and the indicated FLAG-MST2 plasmids. The total cell lysates were blotted with the indicated antibodies. (C) 293FT cells were transfected with the indicated FLAG-MST2 plasmids. The total cell lysates (input) and anti-FLAG immunoprecipitation (IP) were blotted with the indicated antibodies. Anti-GAPDH blot was used as the loading control. (D) 293FT cells were co-transfected with the indicated siRNA and plasmids. The total cell lysates (input) and anti-FLAG IP were blotted with the indicated antibodies. Anti-Tubulin blot was used as the loading control. Asterisk denotes a non-specific band. (E) Immunoblots of 293FT cell lysates co-transfected with the indicated siRNAs and FLAG-MST2. (F) The total cell lysates (input) and anti-IgG or anti-STRN3 IP of control 293A cells and STK25 KO 293A cells were blotted with the indicated antibodies.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54863/elife-54863-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A and B) 293FT cells were co-transfected with the indicated plasmids. The total cell lysates (input) and anti-FLAG IP were subjected to immunoblotting analysis.
 
 SIKE1 and CCM3 link SLMAP and STK25 to STRN3, respectively (Figure 2A). Depletion of either SIKE1 or CCM3 impaired the association between SLMAP and STK25 (Figure 2D). Moreover, MST2 pT180 was elevated when either SIKE1 or CCM3 was depleted by RNAi (Figure 2E). These results suggest that STK25 likely regulates MST2 pT180 as a component of the STRIPAKSLMAP complex.
 
 We next explored the mechanism by which STK25 regulates MST1/2. Overexpression of STK25 WT or its kinase-dead mutant D158N did not affect the interaction between SLMAP and MST1 (Figure 2—figure supplement 1A). Furthermore, either STK25 overexpression or deletion did not change the association of STRN3 with other STRIPAK components (Figure 2F and Figure 2—figure supplement 1B). These observations indicate that STK25 is not required for the integrity of the STRIPAK complex or its interaction with MST1/2.
 
-## STK25 inhibits the ability of SAV1 to counteract STRIPAK
+### STK25 inhibits the ability of SAV1 to counteract STRIPAK
 
 Because SAV1 activates MST1/2 by antagonizing STRIPAK (Bae et al., 2017), we hypothesized that STK25 might suppress MST1/2 activation by inhibiting SAV1. To test this hypothesis, we deleted SAV1 in STK25 KO cells using the CRISPR/Cas9 system. The STK25_SAV1 double KO (DKO) cells showed higher proliferation rates, decreased pMST1/2, pMOB1, and pYAP levels, as compared to STK25 KO cells (Figure 3A and B, and Figure 3—figure supplement 1A). Furthermore, co-expression of STK25, but not MST3 or MST4, reduced SAV1-induced pT180 of MST2 (Figure 3C). STK25 overexpression did not alter the MST2-SAV1 or SAV1-SAV1 interactions (Figure 3—figure supplement 1B and C). These results suggest that STK25 can inhibit the ability of SAV1 to activate MST2. The kinase-dead mutant of STK25, D158N, had no effect on pT180 of MST2 (Figure 3D), indicating that the kinase activity of STK25 is required for SAV1 inhibition.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54863/elife-54863-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cell proliferation assay. Cell proliferation curves in control (black), STK25 KO (purple), and STK25_SAV1 DKO (red) 293A cells were plotted, respectively. Cells were counted on days 2, 4, and 6 after seeding. Data shown are the means ± SEM of three independent experiments. Numbers of STK25 KO or STK25_SAV1 DKO cells on day 6 was compared to that of control cells (****p<0.0001; ns, non-significant). (B) Immunoblots of control, STK25 KO, and STK25_SAV1 DKO 293A cell lysates with the indicated antibodies. (C) Immunoblots of lysates of 293FT cells co-transfected with FLAG-MST2 and the indicated plasmids. The relative anti-pT180 intensities were normalized to MST2. Data are plotted as mean ± SEM of three biological replicates (***p<0.001; **p<0.01; ns, non-significant). (D) 293FT cells were co-transfected with FLAG-MST2 and the indicated plasmids. The total cell lysates were subjected to immunoblotting. (E) 293FT cells were co-transfected with MYC-SAV1 and HA-STK25. The cell lysates were treated with or without CIP (Calf Intestinal Alkaline phosphatase). CIP-treated and non-CIP-treated lysates were subjected to phos-tag gel analysis and immunoblotting. Asterisk and arrow designate non-phosphorylated SAV1 and phosphorylated SAV1, respectively. (F) Immunoblots and quantification of phosphorylated SAV1 (T26) levels of 293FT cells co-transfected with the indicated plasmids. (G) Control and STK25 KO 293A cells were transfected with FLAG-SAV1. The total cell lysates were blotted with the indicated antibodies. (F and G) The relative anti-pSAV1 intensities were normalized to SAV1. Data are plotted as mean ± SEM of three biological replicates (****p<0.0001; **p<0.01; ns, non-significant). (H) UV traces of the PP2AA and SAV11-90 complex (blue line), PP2AA and phosphorylated-SAV11-90 mixture (pSAV11-90, red line), PP2AA and SAV11-90(3E) mixture (magenta line), and PP2AA alone (black line) fractionated on a Superdex 200 gel filtration column, respectively. Corresponding molecular weight standards are indicated in kDa. The running buffer for Superdex 200 column containing 20 mM Tris (pH 8.0), 30 mM NaCl, and 1 mM TCEP. The underlined fractions were separated on SDS-PAGE and stained with Coomassie shown in Figure 3—figure supplement 1E.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54863/elife-54863-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Quantification of the ratios of pMST/MST, pMOB1/MOB1, and pYAP/YAP signals in Figure 3B. Data are plotted as mean ± SEM of three biological replicates (****p<0.0001; ***p<0.001; **p<0.01; *p<0.05). (B and C) 293FT cells were co-transfected with the indicated plasmids. The total cell lysates (input) and anti-FLAG or anti-MYC IP were subjected to immunoblotting analysis. (D) In vitro kinase assays were performed using the indicated His-SAV11-90 proteins and recombinant STK25, and the reaction mixtures were blotted with the indicated antibodies. (E) Coomassie stained SDS-PAGE for the underlined fractions of PP2AA alone, PP2AA and pSAV11-90 mixture, the PP2AA and SAV11-90 complex, and PP2AA and SAV11-90(3E) mixture in Figure 3H.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/54863/elife-54863-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B and C) 293A cells were transfected with the indicated plasmids. Cells were fixed and stained with anti-MYC (green), DAPI (blue), anti-GM130 (red), or anti-FLAG (red). Close-up images show co-localized regions. Scale bar, 2 μm.
 
 We tested whether STK25 could phosphorylate SAV1. Expression of STK25 WT, but not its kinase-dead mutant D158N, clearly retarded the mobility of SAV1 on phos-tag gels and CIP (Calf Intestinal Phosphatase) treatment reversed SAV1 retardation (Figure 3E). Thus, SAV1 was phosphorylated by STK25 in cells. The N-terminal phosphatase-interacting domain (PID) of SAV1 directly binds to and inhibits PP2A (Bae et al., 2017). We tested whether SAV1 PID was phosphorylated by STK25 in vitro. We performed in vitro kinase assays using recombinant PID (SAV11-90) as the substrate and STK25 as the kinase in the presence of cold ATP, and analyzed the treated PID with mass spectrometry. Several STK25 phosphorylation sites were identified in SAV1 PID, including T26. We then raised a phospho-specific antibody against pT26. The antibody selectively recognized SAV1 PID that had been phosphorylated by STK25, but not SAV1 T26A (Figure 3—figure supplement 1D). Using this antibody, we confirmed that SAV1 WT was indeed phosphorylated by STK25 at T26 in human cells (Figure 3F). Phosphorylation of SAV1 T26 was diminished in STK25 KO cells, as compared to control cells (Figure 3G).
 
@@ -65,9 +105,21 @@ We tested whether phosphorylation of SAV1 PID by STK25 prevented its binding to 
 
 We next investigated if SAV1 could co-localize with STK25 in cells. STK25 has been previously shown to be targeted to and activated at the Golgi apparatus by the Golgi matrix protein GM130 (Preisinger et al., 2004). A major pool of STK25 indeed co-localized with GM130 at the Golgi (Figure 3—figure supplement 2A). Intriguingly, a pool of SAV1 also co-localized with STK25 at the Golgi and in the peri-nuclear region (Figure 3—figure supplement 2B and C). Thus, specific cellular regions, such as the Golgi apparatus and the peri-nuclear region, might organize and coordinate SAV1 phosphorylation by STK25 with Hippo signaling events.
 
-## SAV1 phosphorylation by STK25 inhibits SAV1-dependent activation of MST1/2
+### SAV1 phosphorylation by STK25 inhibits SAV1-dependent activation of MST1/2
 
 We examined whether SAV1 phosphorylation by STK25 is functionally important for MST1/2 activation in human cells. Expression of SAV1 WT or T26A elevated pT180 of MST2, and STK25 co-expression still inhibited the ability of SAV1 T26A to induce MST2 activation (Figure 4—figure supplement 1A). To test if additional phosphorylation sites of SAV1 were also involved in Hippo activation, we mutated two other conserved phosphorylation sites (S36A and S68A) identified by mass spectrometry. Similar to T26A, the S36A and S68A single mutants could not activate MST2 in the presence of STK25 (Figure 4—figure supplement 1A). The T26A/S68A double mutant only slightly increased pT180 of MST2 (Figure 4—figure supplement 1B). We thus mutated all three phosphorylation sites, namely T26, S36, and S68, to alanine (SAV1 3A). SAV1 3A increased pT180 of MST2 more efficiently than SAV1 WT did, and this stimulation was no longer inhibited by STK25 overexpression (Figure 4A and Figure 4—figure supplement 1B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/54863/elife-54863-fig4-v2.jpg)
+
+**Figure 4.:** (A and B) Immunoblots and quantification of pT180 levels of lysates of 293FT cells co-transfected with FLAG-MST2 and the indicated plasmids. The relative anti-pT180 intensities were normalized to MST2. Data are plotted as mean ± SEM of three biological replicates (****p<0.0001; **p<0.01; ns, non-significant). (C) 293FT cells were transfected with the indicated FLAG-SAV1 plasmids. The total cell lysates (input) and anti-FLAG IP were blotted with the indicated antibodies. (D) Model for regulation of SAV1-STRIPAK antagonism by STK25.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54863/elife-54863-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B) Immunoblots of cell lysates of 293FT cells co-transfected with FLAG-MST2, HA-STK25, and the indicated MYC-SAV1 plasmids.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/54863/elife-54863-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A to F) Intact genomic sequences of STK25, MST3, MST4, MST1, MST2, and SAV1 are shown in the top panels. The indel mutations in corresponding KO cell lines are shown in the bottom panels.
 
 We also mutated the same three sites to glutamate (SAV1 3E) to mimic phosphorylation. The SAV1 3E mutant was defective in stimulating pT180 of MST2 (Figure 4B). SAV1 3E was also deficient in binding to PP2AA and PP2AC subunits (Figure 4C). Finally, recombinant SAV1 PID 3E (pSAV11-90(3E)) partially co-fractionate with PP2AA during gel filtration chromatography (Figure 3H and Figure 3—figure supplement 1E). These results suggest that phosphorylation of SAV1 by STK25 at multiple sites blocks the association between SAV1 and PP2A, thereby counteracting the ability of SAV1 to inhibit PP2A.
 
@@ -85,21 +137,21 @@ Because diverse physiological conditions can impinge on the activity of the Hipp
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 The coding region of human STK25 was cloned into the pET28 vector that included an N-terminal His6 tag. The plasmid was transformed into the bacterial strain BL21 (DE3)-T1R cells (Sigma). STK25 was purified with Ni-NTA beads (Qiagen) in lysis buffer containing 20 mM Tris (pH 8.0), 300 mM NaCl, 5 mM MgCl2, 10 mM imidazole, and 4 mM 2-mercaptoethanol. The STK25-bound Ni-NTA beads were washed with washing buffer containing 20 mM Tris (pH 8.0), 300 mM NaCl, 5 mM MgCl2, 25 mM imidazole, and 4 mM 2-mercaptoethanol, then eluted with elution buffer containing 20 mM Tris (pH 8.0), 300 mM NaCl, 5 mM MgCl2, 250 mM imidazole, and 4 mM 2-mercaptoethanol. STK25 was further purified using an anion-exchange chromatography with the Resource Q column (GE healthcare). All fractions with purity >90% were collected. Autophosphorylation of STK25 was performed by adding fresh ATP to 2 mM then incubating at room temperature for 30 min. STK25 was further purified with a Superdex 200 size-exclusion column (GE Healthcare) in a buffer containing 20 mM Tris (pH 8.0), 200 mM NaCl, 5 mM MgCl2, and 1 mM TCEP.
 
-## Mass spectrometry
+### Mass spectrometry
 
 SAV1 PID (SAV11-90) was purified as previously described (Bae et al., 2017). SAV1 PID (10 µM) was phosphorylated by recombinant human STK25 (1 µM) at room temperature for 30 min in kinase reaction buffer containing 50 mM Tris (pH 7.5), 150 mM NaCl, 10 mM MgCl2, 1 mM ATP, and 1 mM DTT. The reaction mixture (10 µL) was separated by SDS-PAGE. The band corresponding to phosphorylated SAV1 PID was cut into 1 mm3 cubes. The gel band sample was digested overnight with trypsin (Promega) followed by reduction and alkylation with DTT and iodoacetamine (Sigma-Aldrich). The sample then underwent solid-phase extraction cleanup with an Oasis HLB plate (Waters), and the resulting sample was injected onto an Orbitrap Fusion Lumos mass spectrometer (Thermo Electron) coupled to an Ultimate 3000 RSLC-Nano liquid chromatography system (Dionex). Raw MS data file was analyzed using Proteome Discoverer v 2.2 (Thermo), with peptide identification performed using Sequest HT searching against the human protein database from UniProt. Localization of phosphorylation sites was performed using the PhosphoRS node within Proteome Discoverer. Combined with all peptide information, SAV1 PID (SAV11-90) was fully covered from residue 5 to 80. All sequences with high confidence are listed below, with identified phosphorylation sites specified in parentheses. Based on sequence conservation and MS data, T26, S36, and S68 are chosen as candidates for further analysis.
 
 RTDICLPDSSPNAFSTSGDVVSR (S22); SQCLSTLVRPVFGELK (S5); TDICLPDSSPNAFSTSGDVVSR (S8 and S9); RTDICLPDSSPNAFSTSGDVVSRNQSFLR (S22); NLMPSFIRHGPTIPRRTDICLPDSSPNAFSTSGDVVSR (S5); NLMPSFIR (S5); NSQKVTRTLMITYVPK (Y13); HGPTIPRRTDICLPDSSPNAFSTSGDVVSR (T4); RNTFVGTPFWMAPEVIK (T3); YVKKETSPLLR (T6); GTALHSSQKPAEPVK (S6 and S7); GTALHSSQKPAEPVK (S6); GTALHSSQKPAEPVKR (T2 and S7); GTALHSSQKPAEPVKR (T2); NEVSKPAEVQGK (S4); KTKNEVSKPAEVQGK (T2); TKNEVSKPAEVQGK (T1); KKTKNEVSKPAEVQGK (S8); RTDICLPDSSPNAFSTSGDVVSR (S9 and S10); KETSPLLR (T3); HKQSGGSVGALEELENAFSLAEESCPGISDK (S7); NLMPSFIR (S5).
 
-## In vitro kinase assays
+### In vitro kinase assays
 
 LATS1C-ΔHM (2 µM) was treated by MST2 (0.5 µM), STK25 (0.5 µM) or pLATS1-HM (4 µM), respectively, in kinase reaction buffer containing 50 Tris (pH 7.5), 150 mM NaCl, 10 mM MgCl2, 1 mM ATP, and 1 mM DTT. Reaction mixtures (5 µL) were separated by SDS-PAGE and blotted with an antibody against pS909 of LATS1. SAV11-90 or SAV11-90 T26A (10 µM) was phosphorylated by STK25 (1 µM) at room temperature for 30 min in kinase reaction buffer containing 50 mM Tris (pH 7.5), 150 mM NaCl, 10 mM MgCl2, 1 mM ATP, and 1 mM DTT, respectively. The reaction mixture (3 µL) was separated by SDS-PAGE and blotted with an antibody against pT26 of SAV1. The membrane was then stripped and re-blotted with the His-tag antibody as the loading control.
 
-## Mammalian cell culture and transfection
+### Mammalian cell culture and transfection
 
 293FT cells (R70007, Thermo Scientific; not independently authenticated) and 293A cells (R70507, Thermo Scientific; not independently authenticated) were cultured at 37°C in a humidified 5% CO2 atmosphere. All cells were maintained in DMEM supplemented with 10% fetal bovine serum, 2 mM L-glutamine, and 1% penicillin/streptomycin. All cell lines were checked by Hoechst 33342 (H3570, Thermo Scientific) staining to ascertain that they were free of mycoplasma contamination. Lipojet (Signagen) was used for transient transfection according to the manufacturer’s instructions. Cells were harvested for further experiments after 24 hr.
 
@@ -107,36 +159,36 @@ For Hippo signaling analysis, 5 × 105 cells were plated on 60 mm dishes. After 
 
 siRNAs siRNAs were transfected into 293FT cells with Lipofectamine RNAiMAX (Invitrogen) according to manufacturer’s instructions. 48 hr later, FLAG-MST2 was transfected with the Lipoject reagent. Cells were collected for immunoblotting at 24 hr after transfection. The following siRNAs were synthesized by Dharmacon and used in this study: siSTK25 #1, GAAGGUGCCCUGUGCUAUGdTdT; siSTK25#2, CGGAGCAGGGUGACGUGAAdTdT; siMST3 #1, UCCCAAGAAUCUCGAGAAUdTdT; siMST3 #2, UGAAUAAGGAGCCGAGCUUdTdT; siMST4 #1, GAUUGAAGAACUCGAGAAAdTdT; siMST4 #2, CACCAAACCUACGUCAAGAdTdT; siSIKE1, CCUGAAAGCUCACCAGUCUdTdT; siCCM3, UAUGGCAGCUGAUGAUGUAdTdT.
 
-## Generation of knockout cell lines
+### Generation of knockout cell lines
 
 The sgRNAs of STK25, MST3, and MST4 were cloned into the psCas9 vector (Addgene). The individual psCas9-sgRNA plasmids were transfected into 293A cells with the Lipojet reagent. One day after transfection, cells were selected with 1 μg/ml puromycin. After two days of selection, single cells were re-plated into individual wells of 96-well plates without puromycin. Single clones were tested by immunoblotting and DNA sequencing. For generating the STK25_MST1/2 and STK25_SAV1 knockout cell lines, the sgRNAs of MST1, MST2, and SAV1 were cloned into the plentiCRISPR v2 vector (Addgene). The plentiCRISPR v2-sgRNA, pMD2.G, and psPax2 plasmids were co-transfected into 293FT cells with the Lipofectamine 2000 reagent (Invitrogen). Two or three days after transfection, the lentiviral supernatants were harvested and concentrated with the Lenti X-concentrator (Clontech). STK25 knockout cells were infected with the lentiviruses and 4 μg/ml polybrene. Two days after infection, cells were selected with 1 μg/ml puromycin. After three days of selection, single cells were sorted into individual wells of 96-well plates. Single clones were tested by immunoblotting and DNA sequencing (Figure 4—figure supplement 2).
 
 The following sgRNAs were used in this study: STK25, CGAATCGGGGGTCTTTGTTG; MST3, AATACTTACTAGATCTAGTG; MST4, GGATGCATATCGGAGTTAGG; MST1, ATACACCGAGATATCAAGGC; MST2, AGTACTCCATAACAATCCAG; SAV1, GGAGGTGGTTGATCATACCG.
 
-## Antibodies and reagents
+### Antibodies and reagents
 
 Rabbit polyclonal MST2 phospho-T336 antibody was previously described (Bae et al., 2017). Rabbit polyclonal SAV1 phospho-T26 was raised against the SAV1 phospho-peptide with the sequence of VKKEpTSPLLC at an on-campus facility. The following antibodies were purchased from the indicated sources: anti-pMST1/2 (T183/180; GTX133948, GeneTex); anti-STRIP1 (A304-644A) and anti-CCM3 (A304-798A, Bethyl Laboratories Inc); anti-Tubulin (ab4074), anti-SIKE1 (ab121860), anti-STK25 (ab157188) and anti-SLMAP (ab56328, Abcam); anti-MYC (Roche); anti-FLAG (F1804, Sigma); anti-HA (sc-805), anti-PP2AA (sc-6112), anti-SAV1 (sc-101205), anti-STRN3 (sc-13562) and anti-YAP (sc-101199, Santa Cruz Biotechnology); anti-MOB4 (A4590, ABclonal); anti-GM130 (12480), anti-MST1 (3682), anti-MST2 (3952), anti-MST3 (3723), anti-MST4 (3822), anti-GAPDH (2118), anti-MOB1 (13730), anti-pMOB1 (T35;8699), anti-LATS1 (9153), anti-pLATS1/2 (HM; 8654, AL;9157), anti-pYAP (4911), anti-PP2AC (2259), anti-rabbit immunoglobulin G (IgG) (H+L) (Dylight 800 or 680 conjugates), and anti-mouse IgG (H+L) (Dylight 800 or 680 conjugates, Cell Signaling). Alexa Fluor 647 Phalloidin (A22287) was purchased from Thermo Scientific. Phos-tag conjugated acrylamide was purchased from Wako chemicals. Latrunculin B (ab144291) and cytochalasin D (sc-201442) were purchased from Abcam and Santa Cruz Biotechnology, respectively.
 
-## Immunoblotting and immunoprecipitation
+### Immunoblotting and immunoprecipitation
 
 For immunoblotting, cell lysates and immunoprecipitates were analyzed by standard immunoblotting protocol. The membranes were scanned and band intensities were quantified by an Odyssey Infrared Imaging System (LI-COR). For immunoprecipitation, cells were harvested and lysed with the lysis buffer containing 20 mM Tris-HCl (pH 7.5), 150 mM NaCl, 0.2% Triton X-100, protease inhibitors (Roche), and PhosSTOP (Roche) on ice for 20 min. After incubation, cell lysates were separated by centrifugation at 20,000 g for 20 min at 4°C. Cleared cell lysates were incubated with anti-FLAG M2 resin (Sigma) or anti-STRN3-crosslinked protein A resin for 2 hr at 4°C. After incubation, resins were washed by the washing buffer containing 20 mM Tris-HCl (pH 7.5), 150 mM NaCl, 0.1 mM EDTA, and 1% Triton X-100 and eluted by SDS sampling buffer. Eluates were separated by SDS-PAGE and blotted with the appropriate antibodies.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were washed once with PBS and fixed with 4% paraformaldehyde for 20 min. Cells were then permeabilized with PBS containing 0.2% Triton X-100 (PBS-T) for 20 min and blocked with PBS-T containing 3% BSA for 30 min at room temperature. Cells were incubated with the primary antibody in PBS-T containing 3% BSA for overnight at 4°C. Cells were then washed with PBS-T three times and incubated with the secondary antibody for 1 hr. Cells were washed again with PBS-T three times and mounted in the ProLong Gold Antifade reagent with DAPI (Invitrogen). Cells were visualized with a DeltaVision microscope system (Applied Precision). For assaying YAP localization, approximately 100 cells were counted in randomly chosen fields for each sample. The fluorescence intensity of YAP was measured in the cytoplasm and nucleus using Image J, and the subcellular localization of YAP was determined based on the measured intensities. Experiments were repeated three times for statistical analysis. For F-actin staining, cells were incubated with Alexa Fluor 647-conjugated phalloidin for 1 hr after blocking with BSA. Cells were washed with PBS two times and mounted. Cell area was measured using Image J based on F-actin staining.
 
-## Real-time qRT-PCR
+### Real-time qRT-PCR
 
 Total RNA was isolated from cells using the Trizol reagent (Invitrogen). cDNA was obtained by reverse transcription reactions using the reverse transcription kit (Applied Biosystems). Real-time PCR was performed using iTaq Universal SYBR Green Supermix (Bio-Rad) and the 7900HT Fast Real-Time PCR System (Applied Biosystems). The relative abundance of mRNA was normalized to GAPDH.
 
-## Dephosphorylation assay
+### Dephosphorylation assay
 
 1000 U of calf intestinal phosphatase (CIP; M0290, New England Biolabs) was mixed with 100 mg of cell lysates in CIP buffer [50 mM Tris-HCl (pH 7.9),100 mM NaCl, 10 mM MgCl2, 1 mM Dithiothreitol (DTT)] for 12 hr at 37°C. After incubation, SDS sample buffer was added into the mixture to stop the reaction. Samples were boiled for 5 min at 37°C and subjected to phos-tag gel analysis.
 
-## Cell proliferation assay
+### Cell proliferation assay
 
 293A cells were seeded at a density of 2.5 × 104 cells per well on 6-well dishes. Cells were cultured in DMEM supplemented with 10% fetal bovine serum, 2 mM L-glutamine and 1% penicillin/streptomycin. Cells were counted on days 2, 4, and 6 after seeding using TC20 automated cell counter (BioRad).
 
-## Statistical analysis
+### Statistical analysis
 
 Values are presented as mean ± SEM from at least three biological replicates. Results were evaluated by two-tailed unpaired t tests. The graphs and statistical calculations were performed using Prism (GraphPad).

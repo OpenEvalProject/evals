@@ -12,15 +12,15 @@
 
 ### Affiliations
 
-1. https://ror.org/055j5q029 Department of Biochemistry, University of Utah School of Medicine Salt Lake City United States
+1. Department of Biochemistry, University of Utah School of Medicine Salt Lake City United States ([ROR:055j5q029](https://ror.org/055j5q029))
 2. Department of Molecular Microbiology and Immunology, Johns Hopkins School of Public Health Baltimore United States
-3. https://ror.org/03r0ha626 Metabolomics Core, University of Utah Health Sciences Center Salt Lake City United States
+3. Metabolomics Core, University of Utah Health Sciences Center Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
 
 † Corresponding author
 
 ## Abstract
 
-Isopentenyl pyrophosphate (IPP) is an essential metabolic output of the apicoplast organelle in Plasmodium falciparum malaria parasites and is required for prenylation-dependent vesicular trafficking and other cellular processes. We have elucidated a critical and previously uncharacterized role for IPP in apicoplast biogenesis. Inhibiting IPP synthesis blocks apicoplast elongation and inheritance by daughter merozoites, and apicoplast biogenesis is rescued by exogenous IPP and polyprenols. Knockout of the only known isoprenoid-dependent apicoplast pathway, tRNA prenylation by MiaA, has no effect on blood-stage parasites and thus cannot explain apicoplast reliance on IPP. However, we have localized an annotated polyprenyl synthase (PPS) to the apicoplast. PPS knockdown is lethal to parasites, rescued by IPP and long- (C 50 ) but not short-chain (≤C 20 ) prenyl alcohols, and blocks apicoplast biogenesis, thus explaining apicoplast dependence on isoprenoid synthesis. We hypothesize that PPS synthesizes long-chain polyprenols critical for apicoplast membrane fluidity and biogenesis. This work critically expands the paradigm for isoprenoid utilization in malaria parasites and identifies a novel essential branch of apicoplast metabolism suitable for therapeutic targeting.
+Isopentenyl pyrophosphate (IPP) is an essential metabolic output of the apicoplast organelle in Plasmodium falciparum malaria parasites and is required for prenylation-dependent vesicular trafficking and other cellular processes. We have elucidated a critical and previously uncharacterized role for IPP in apicoplast biogenesis. Inhibiting IPP synthesis blocks apicoplast elongation and inheritance by daughter merozoites, and apicoplast biogenesis is rescued by exogenous IPP and polyprenols. Knockout of the only known isoprenoid-dependent apicoplast pathway, tRNA prenylation by MiaA, has no effect on blood-stage parasites and thus cannot explain apicoplast reliance on IPP. However, we have localized an annotated polyprenyl synthase (PPS) to the apicoplast. PPS knockdown is lethal to parasites, rescued by IPP and long- (C50) but not short-chain (≤C20) prenyl alcohols, and blocks apicoplast biogenesis, thus explaining apicoplast dependence on isoprenoid synthesis. We hypothesize that PPS synthesizes long-chain polyprenols critical for apicoplast membrane fluidity and biogenesis. This work critically expands the paradigm for isoprenoid utilization in malaria parasites and identifies a novel essential branch of apicoplast metabolism suitable for therapeutic targeting.
 
 ## Introduction
 
@@ -34,17 +34,35 @@ In contrast to this prevailing paradigm, we have unraveled a novel essential arm
 
 ## Results
 
-## Apicoplast elongation and branching require isoprenoid precursor synthesis
+### Apicoplast elongation and branching require isoprenoid precursor synthesis
 
 The P. falciparum literature has focused almost exclusively on the essential roles of isoprenoid metabolism outside the apicoplast (Guggisberg et al., 2014; Yeh and DeRisi, 2011; Kennedy et al., 2019b; Kennedy et al., 2019a; Gisselberg et al., 2018; Imlay and Odom, 2014). Nevertheless, several prior studies reported that MEP pathway inhibitors such as FOS and MMV008138 blocked apicoplast elongation in lethally treated parasites, suggesting a possible role for IPP in apicoplast biogenesis (Nair et al., 2011; Bowman et al., 2014; Goodman and McFadden, 2014). These prior studies, however, could not rule out that defects in apicoplast development caused by MEP pathway inhibitors were due to non-specific effects from the pleiotropic cellular dysfunctions inherent to parasite death (Gisselberg et al., 2018). We revisited FOS inhibition of apicoplast biogenesis to further test and distinguish specific versus non-specific effects on organelle development.
 
 We first tested the effect of 10 µM FOS (10× EC50) on apicoplast elongation in synchronized cultures of two different parasite strains: D10 parasites expressing the apicoplast-targeted acyl carrier protein (ACP) leader sequence fused to GFP (ACPL-GFP) (Waller et al., 2000) and a recently published NF54 parasite line (PfMev) that expresses ACPL-GFP as well as heterologous enzymes that enable cytoplasmic synthesis of IPP from exogenous mevalonate precursor, independent of the apicoplast MEP pathway (Swift et al., 2020b). Consistent with prior reports (Nair et al., 2011; Bowman et al., 2014; Goodman and McFadden, 2014; Howe et al., 2013), we observed that synchronized ring-stage parasites treated with FOS developed into multinuclear schizonts but failed to elongate the apicoplast, which retained a focal, unbranched morphology in PfMev (Figure 1A and Figure 1—figure supplement 1) and D10 parasites (Figure 1—figure supplements 2–3). Although MEP pathway activity is detectable in ring-stage parasites (Zhang et al., 2011; Cassera et al., 2004), identical inhibition of apicoplast elongation in schizonts was observed if FOS was added to trophozoites 12 hr after synchronization (Figure 1A and Figure 1—figure supplements 1–3), suggesting continued reliance on de novo synthesis. In contrast to FOS treatment, parasites treated with lethal doses (10–100× EC50) of drugs that target processes outside the apicoplast, including DSM1 (mitochondrial dihydroorotate dehydrogenase inhibitor) (Phillips et al., 2008), atovaquone (ATV, mitochondrial cytochrome b inhibitor) (Fry and Pudney, 1992), blasticidin-S (Blast-S, cytoplasmic translation inhibitor) (Mamoun et al., 1999), or WR99210 (WR, cytoplasmic dihydrofolate reductase inhibitor) (Fidock and Wellems, 1997), exhibited normal apicoplast biogenesis as they developed into schizonts, very similar to untreated parasites (Figure 1B and C, and Figure 1—figure supplements 2–3). These observations strongly suggest that defects in apicoplast elongation observed with FOS treatment are due to specific inhibition of MEP pathway activity rather than non-specific, secondary effects of parasite death.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig1-v2.jpg)
+
+**Figure 1.:** Bright-field (BF) and fluorescent microscopy images of live NF54 PfMev parasites that were (A) untreated or treated with 10 µM fosmidomycin (FOS) in the absence or presence of 50 µM DL-mevalonate (Mev), or (B) treated with 6 µM blasticidin-S (Blast-S), 2 µM DSM1, 100 nM atovaquone (ATV), or 5 nM WR99210. (C) Population analysis of apicoplast morphology for 50 total parasites imaged for each condition in panels A and B from two independent experiments. Apicoplast morphologies were scored as punctate (focal), elongated, or disrupted (dispersed); counted; and plotted by histogram as the fractional population with the indicated morphology (UT = untreated). Error bars represent standard deviations from replicate experiments. (D) Live-cell imaging of ∆DXS PfMev parasites in the presence or absence of 50 µM Mev. (E) Population analysis of parasites imaged in panel D and performed as in panel C. In all experiments, synchronized ring-stage parasites were incubated with the indicated treatments for 36 hr prior to live-cell imaging. Parasite nuclei were visualized using 1 µg/mL Hoechst 33342. The parasite apicoplast was visualized using the ACPL-GFP encoded by the PfMev line. Absolute parasite counts for microscopy experiments are shown in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Parasites were synchronized to the ring stage with 5% D-sorbitol and incubated with the indicated treatments for 38 hr prior to live-cell imaging.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Bright-field (BF) and fluorescent microscopy images of live ACPL-GFP D10 parasites that were (A) untreated or treated with 10 µM FOS in the absence or presence of 200 µM isopentenyl pyrophosphate (IPP), or (B) treated with 6 µM blasticidin-S (Blast-S), 2 µM DSM1, or 100 nM atovaquone (ATV). (C) Population analysis of apicoplast morphology for 50 total parasites imaged for each condition in panels A and B from two independent experiments. Apicoplast morphologies were scored as punctate (focal), elongated, or disrupted (dispersed); counted; and plotted by histogram as the fractional population with the indicated morphology (UT = untreated). Error bars represent standard deviations from replicate experiments. In all experiments, synchronized ring-stage parasites were incubated with the indicated treatments for 36 hr prior to live-cell imaging. Parasite nuclei were visualized using 1 µg/mL Hoechst 33342. The parasite apicoplast was visualized using the ACPL-GFP encoded by the D10 line.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Parasite nuclei were visualized using 1 µg/mL Hoechst 33342. The parasite apicoplast was visualized using the ACPL-GFP encoded by the PfMev line.
+
 Multiple studies have reported that FOS-treated parasites grow normally in the presence of exogenous IPP and do not show evidence of apicoplast loss (Yeh and DeRisi, 2011; Uddin et al., 2018; Gisselberg et al., 2013; Swift et al., 2020b), suggesting that IPP rescues apicoplast biogenesis from FOS-induced defects. To directly test this conclusion, we simultaneously treated synchronized rings with 10 µM FOS and either 200 µM IPP or 50 µM mevalonate (for PfMev parasites) and observed normal apicoplast elongation and branching in schizonts (Figure 1A and B, and Figure 1—figure supplements 1–3), consistent with a prior report (Bowman et al., 2014). These observations directly support the conclusion that apicoplast elongation requires isoprenoid synthesis.
 
 To further test this conclusion via genetic disruption rather than pharmacological inhibition, we utilized a previously reported line of PfMev parasites in which the apicoplast-targeted deoxyxylulose-5-phosphate synthase (DXS), the first enzyme in the MEP isoprenoid synthesis pathway, had been genetically deleted (∆DXS) (Swift et al., 2020a). These parasites require exogenous mevalonate to support cytoplasmic IPP synthesis, since they lack a functional apicoplast MEP pathway. In the presence of 50 µM mevalonate, ∆DXS parasites displayed normal apicoplast elongation and branching in schizonts. However, washing out mevalonate from ring-stage ∆DXS parasites to ablate IPP synthesis resulted in multinuclear schizonts with focal, unbranched apicoplast morphologies identical to those observed in the presence of FOS (Figure 1D and E, and Figure 1—figure supplement 4). These results strongly support the conclusion that apicoplast elongation and branching require IPP synthesis.
 
-## Inhibition of isoprenoid synthesis prevents apicoplast inheritance by daughter parasites
+### Inhibition of isoprenoid synthesis prevents apicoplast inheritance by daughter parasites
 
 To stringently test that IPP synthesis is required for apicoplast biogenesis, we next asked if FOS treatment prevented daughter parasites from inheriting the apicoplast, as predicted to occur if the apicoplast fails to elongate and divide in schizonts and as commonly observed for antibiotic inhibitors of apicoplast housekeeping pathways (Uddin et al., 2018; Dahl et al., 2006). Simultaneous treatment of ring-stage parasites with both FOS and IPP rescued growth defects and resulted in normal apicoplast elongation and division (Figure 1A and B, and Figure 1—figure supplements 1–3), as expected since IPP is the direct anabolic product of the MEP pathway specifically inhibited by FOS. Thus, concomitant treatment with IPP and FOS cannot distinguish whether MEP pathway inhibition prevents apicoplast inheritance by daughter parasites. To bypass this fundamental limitation, we devised the following alternative strategy.
 
@@ -52,25 +70,83 @@ The apicoplast begins to elongate near the onset of schizogony before branching 
 
 Synchronized ring-stage PfMev parasites were treated with 10 µM FOS for 48 hr, with 50 µM mevalonate added at 0, 30, 34, or 38 hr after synchronization. (Figure 2A). Parasites were allowed to expand for three subsequent cycles in 50 µM mevalonate, with growth monitored by flow cytometry. We observed a hierarchy of growth rescue by mevalonate, with full rescue (relative to no FOS treatment) of parasites supplemented with mevalonate at 0 hr post-synchronization and decreasing rescue for increasingly delayed supplementation at 30, 34, or 38 hr (Figure 2B), presumably due to fewer viable parasites surviving the initial cycle.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic summary of delayed mevalonate rescue of fosmidomycin (FOS) treatment. PfMev parasites were synchronized with 5% D-sorbitol and cultured in 10 µM FOS (washed out after 48 hr in second-cycle rings) without or with addition of 50 µM DL-mevalonate (Mev) at 0, 30, 34, or 38 hr after synchronization. Clonal parasites from all growth conditions were isolated at 60 hr post-synchronization by limiting dilution and growth in 50 µM Mev. (B) Parasite growth was monitored for 6 days by flow cytometry using acridine orange staining (FOS = treated only with FOS, UT = untreated, 0–38 hr time delay of Mev addition after synchronization and initiation of FOS treatment). (C) Bright-field (BF) and fluorescence microscopy images of representative live clonal parasites with disrupted apicoplast (if observed) isolated after 60 hr of growth under the conditions described in panel A. Images of all clones are shown in Figure 2—figure supplements 1–4. Parasite nuclei were visualized using 1 µg/mL Hoechst 33342. To the right of each clonal image panel is a gel image showing the result of PCR analysis to amplify a (Nu) nuclear (PPS, PF3D7_0202700) and (Api) apicoplast (SufB, PF3D7_API04700) gene and a growth assay to monitor the ability of each indicated clone to grow in the presence or absence of 50 µM Mev. Data points are the average± SD of three biological replicates and were normalized to the parasitemia on day 3 of growth in +Mev conditions. (D) Graphical representation of the number of clones isolated under each growth condition and the clonal percentage with an intact or disrupted apicoplast (determined by microscope analysis of ACPL-GFP signal and genomic PCR).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Clone headers for parasites with a disrupted apicoplast are yellow.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Clone headers for parasites with a disrupted apicoplast are yellow.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Clone headers for parasites with a disrupted apicoplast are yellow.
+
 To assess and quantify apicoplast status in rescued parasites, we cloned out individual parasites at 60 hr post-synchronization in the second growth cycle. Apicoplast status in the resulting clones was determined by live parasite microscopy of organelle morphology, apicoplast genome PCR, and growth ± mevalonate. Although FOS-treated parasites supplemented simultaneously with mevalonate showed no evidence for apicoplast loss in clonal progeny, a fraction of clonal parasites derived from delayed mevalonate rescue showed clear signs of apicoplast loss, including a dispersed apicoplast ACPL-GFP signal, loss of the apicoplast genome, and growth dependence on exogenous mevalonate (Figure 2C and Figure 2—figure supplements 1–4). The fraction of clonal parasites with a disrupted apicoplast increased from 10% in parasites supplemented with mevalonate at 30 hr to over 80% in parasites supplemented at 38 hr (Figure 2D). These results provide direct evidence that inhibiting IPP synthesis alone is sufficient to block apicoplast biogenesis and prevent organelle inheritance by daughter parasites.
 
-## The MiaA pathway for apicoplast tRNA prenylation is dispensable for blood-stage parasites
+### The MiaA pathway for apicoplast tRNA prenylation is dispensable for blood-stage parasites
 
 Why do apicoplast elongation and branching require IPP synthesis? Currently, the only predicted isoprenoid-dependent metabolic pathway in the apicoplast is tRNA prenylation by MiaA (Ralph et al., 2004; Imlay and Odom, 2014), which catalyzes the attachment of a dimethylallyl group to the N6 moiety of adenine at position 37 of certain tRNAs (Persson et al., 1994). DMAPP is produced in tandem with IPP in the terminal enzymatic step of the MEP pathway and can be interconverted with IPP by an IPP/DMAPP isomerase (Guggisberg et al., 2014; Yeh and DeRisi, 2011). Prenylation of A37 is often accompanied by methylthiolation by the radical SAM enzyme, MiaB (Esberg et al., 1999). Although genes encoding MiaA (PF3D7_1207600) and MiaB (PF3D7_0622200) are annotated in the P. falciparum genome and MiaA protein has been detected by mass spectrometry (MS) in the apicoplast-specific proteome (Boucher et al., 2018), neither protein has been studied biochemically in parasites. Nevertheless, both proteins are predicted to be non-essential for blood-stage Plasmodium based on genome-wide knockout (KO) studies in Plasmodium berghei (Bushell et al., 2017) and P. falciparum (Zhang et al., 2018).
 
 To directly test whether MiaA function is essential for P. falciparum parasites and can account for apicoplast dependence on isoprenoid synthesis, we used CRISPR/Cas9 to target MiaA for gene disruption by double-crossover homologous recombination (Figure 3—figure supplement 1). PfMev parasites were transfected and selected in the presence of 50 µM mevalonate to ensure that parasites would remain viable even if deletion of MiaA resulted in apicoplast disruption. Parasites that had integrated the KO plasmid returned from transfection, and loss of the MiaA gene was confirmed by genomic PCR (Figure 3—figure supplement 1). The ∆MiaA parasites grew equally well in the presence or absence of mevalonate and grew indistinguishably from the parental PfMev parasites (Figure 3A). The presence of an intact apicoplast was confirmed by genomic PCR analysis and live parasite microscopy (Figure 3B and Figure 3—figure supplement 1). These results indicate that MiaA is dispensable for blood-stage parasites and that deletion of this gene does not affect apicoplast biogenesis. Therefore, loss of function of MiaA, the only predicted isoprenoid-dependent pathway in the apicoplast, cannot account for apicoplast dependence on IPP synthesis, suggesting an alternative role for IPP in organelle elongation.
 
-## Apicoplast biogenesis requires polyprenyl isoprenoid synthesis
+![Figure 3.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig3-v2.jpg)
+
+**Figure 3.:** (A) Growth analysis indicates that parental PfMev NF54 parasites and ∆MiaA parasites cultured in the absence or presence of 50 µM Mev grow indistinguishably with identical rate constants (kobs) for asynchronous culture expansion. Parasitemia values for each sample are the average ± SD of three biological replicates and were normalized to the parasitemia on day 4 and fit with an exponential growth model. (B) Live parasite imaging and genomic PCR analysis indicate normal apicoplast morphology and retention of the apicoplast genome in parental PfMev and ∆MiaA parasites. BF = bright field, Nu = nuclear gene (LDH, PF3D7_1324900), and Api = apicoplast gene (SufB, PF3D7_API04700).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic depiction of the MiaA gene-disruption strategy using CRISPR/Cas9 and positive selection with human DHFR. Colored arrows depict PCR primer pairs used in panel B to test for retention or disruption of the MiaA gene. (B) Genomic PCR analysis of parental NF54 PfMev parasites and polyclonal transfected parasite progeny confirmed successful disruption of the MiaA gene. (C) Additional images of ∆MiaA parasites.
+
+### Apicoplast biogenesis requires polyprenyl isoprenoid synthesis
 
 Except for MiaA-catalyzed tRNA prenylation, all proposed roles for isoprenoids in Plasmodium parasites require head-to-tail condensation of DMAPP (5 carbons) and one or more IPP subunits (5 carbons) to form longer-chain isoprenoids, starting with formation of geranyl pyrophosphate (GPP, 10 carbons), FPP (15 carbons), and GGPP (20 carbons) (Guggisberg et al., 2014; Imlay and Odom, 2014). Recent studies reported that 5 µM geranylgeraniol (GGOH, the alcohol precursor of GGPP) can provide short-term (~1 cycle) rescue of parasite death due to treatment with FOS or indolmycin, an apicoplast tryptophan tRNA synthetase inhibitor (Kennedy et al., 2019a; Howe et al., 2013). Based on these reports, we hypothesized that the dependence of apicoplast biogenesis on IPP might reflect a requirement for longer-chain isoprenoids such that farnesol (FOH), GGOH, and/or longer-chain polyprenols might rescue the apicoplast branching defects caused by 10 µM FOS.
 
 We treated synchronized NF54 and D10 parasites with both 10 µM FOS and 5 µM of either FOH or GGOH. Consistent with prior reports, 5 µM GGOH but not FOH partially rescued parasite growth from inhibition by FOS and enabled culture expansion into a second growth cycle (Figure 4—figure supplement 1). Nevertheless, both GGOH and FOH rescued apicoplast elongation and branching defects in schizonts when added simultaneously with FOS to synchronized rings (Figure 4 and Figure 4—figure supplements 2 and 3). We extended these rescue experiments to include 5 µM decaprenol (50 carbons) and also observed rescue of apicoplast branching from FOS-induced defects. However, 5 µM β-carotene, which is a nonlinear carotenoid hydrocarbon derived from eight prenyl groups (40 carbons), did not rescue apicoplast biogenesis from inhibition by FOS (Figure 4 and Figure 4—figure supplements 2 and 3). Although it is possible that β-carotene is not taken up efficiently into the apicoplast, rescue by decaprenol, which is similar in size and hydrophobicity to β-carotene, suggests that apicoplast biogenesis specifically requires synthesis of linear polyprenols containing three or more prenyl groups. This hypothesis is further supported by additional results described in the next two sections.
 
-## Localization of an annotated PPS to the apicoplast
+![Figure 4.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig4-v2.jpg)
+
+**Figure 4.:** (A) Five µM farnesol (FOH), geranylgeraniol (GGOH), or decaprenol (C50-OH), but not β-carotene rescues apicoplast biogenesis from inhibition by 10 µM fosmidomycin (FOS) in PfMev parasites. Synchronized ring-stage parasites were incubated with the indicated treatments for 36 hr and imaged by bright-field (BF) or fluorescence microscopy, with visualization of parasite nuclei by Hoechst staining and the apicoplast by ACPL-GFP signal. (B) Population analysis of apicoplast morphology for 50 total parasites imaged for each condition in panel A from two independent experiments. Apicoplast morphologies were scored as punctate (focal), elongated, or disrupted (dispersed); counted; and plotted by histogram as the fractional population with the indicated morphology (UT = untreated). Error bars represent standard deviations from replicate experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Data points are the average ± SD of three biological replicates. Parasites were synchronized to ring stage with 5% D-sorbitol and incubated with the indicated treatments. Daily parasitemia values were determined by flow cytometry.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Synchronized ring-stage parasites were incubated with the indicated treatments for 36 hr and imaged by bright-field (BF) or fluorescence microscopy, with visualization of parasite nuclei by Hoechst staining and the apicoplast by ACPL-GFP signal.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Five µM FOH, GGOH, or decaprenol (C50–OH) but not β-carotene rescues apicoplast biogenesis from inhibition by 10 µM FOS. (B) Statistical analysis (average ± SD) of apicoplast status in D10 parasites treated with 10 µM FOS. (C) Additional images of D10 parasites treated with FOS and FOH, GGOH, C50OH, or β-carotene.
+
+### Localization of an annotated PPS to the apicoplast
 
 Iterative condensation of DMAPP with IPP subunits to form FPP, GGPP, and longer polyprenyl-PPs requires the function of a polyprenyl synthase (PPS). This family of enzymes uses a conserved dyad of DDXXD residues positioned near the protein surface of the active site binding pocket to coordinate Mg2+ ions that bind the pyrophosphate headgroup of DMAPP, GPP, or FPP and position its allylic head relative to the vinyl tail of the IPP subunit (Kellogg and Poulter, 1997). Condensation of the two substrates via electrophilic alkylation elongates the nascent isoprenoid chain into the protein interior. Two amino acids just upstream of the first DDXXD motif determine the length of the resulting prenyl chain by forming a hydrophobic ‘floor’ that gates the depth of the protein interior. Indeed, dedicated FPPS enzymes feature an amino acid floor comprised of sequential Phe-Phe residues just upstream of the first DDXXD motif that sterically block synthesis of products longer than FPP (Poulter, 2006; Thulasiram and Poulter, 2006). Sequence variations that replace just the more N-terminal Phe or both Phe-Phe groups with smaller residues (e.g., Ala or Ser) open up and extend the binding pocket and enable synthesis of GGPP or longer polyprenyl-PPs up to 14 isoprene units, respectively (Tarshis et al., 1996).
 
 A BLAST search of the P. falciparum genome with the sequence of the well-studied chicken FPP synthase (Uniprot P08836) revealed two parasite orthologs (PF3D7_1128400 and PF3D7_0202700) that retain the DDXXD dyads and other conserved sequence features expected of a PPS (Figure 5A and Figure 5—figure supplement 1). The best studied of these synthases is the dual-functional enzyme, PF3D7_1128400, which shares 34% sequence identity with avian FPPS and has been reported to catalyze formation of both FPP and GGPP (Gabriel et al., 2015a; Jordão et al., 2013; Artz et al., 2011). Consistent with its ability to synthesize GGPP as the terminal product, PF3D7_1128400 has sequential Ser-Phe residues just upstream of the first DDXXD motif (Figure 5A; Jordão et al., 2013; Artz et al., 2011). This enzyme is reported to be essential based on inhibitor (Gisselberg et al., 2018; No et al., 2012) and gene-disruption studies in P. berghei (Bushell et al., 2017) and P. falciparum (Zhang et al., 2018) and is thought to synthesize the FPP and GGPP required for broad parasite isoprenoid metabolism, including protein prenylation and synthesis of dolichols, ubiquinone, and heme A (Guggisberg et al., 2014; Imlay and Odom, 2014). This proposed function is consistent with its localization to the cytoplasm and other cellular foci outside the apicoplast and mitochondrion (Gabriel et al., 2015a).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig5-v2.jpg)
+
+**Figure 5.:** (A) Focal sequence alignment of avian farnesyl pyrophosphate synthase (FPPS, Uniprot P08836) with its two Plasmodium falciparum homologs reveals the presence of conserved metal-binding DDXXD motifs (red) expected for PPS activity and chain-length determination residues (yellow) upstream of the first DDXXD. (B) Homology model of PF3D7_0202700 using Escherichia coli octaprenyl pyrophosphate synthase (PDB 3WJK) as a structural template. The inset box is an enlargement of the active-site pocket showing the conserved Asp residues, bound FPP substrate, and product length-determining residues just upstream of the first DDXXD motif. (C) Bright-field (BF), fluorescence images (top) of live parasites episomally expressing PPS-GFP and stained with 10 nM Mitotracker Red and (bottom) immunofluorescence analysis (IFA) images of fixed parasites episomally expressing PPS-RFP stained with anti-RFP and anti-apicoplast ACP antibodies. (D) IFA images of fixed parasites expressing PPS-GFP that had been treated for >7 days with 2 µM doxycycline (Dox) and 200 µM isopentenyl pyrophosphate (IPP) (to stably induce apicoplast loss) and stained with anti-GFP antibody to visualize PPS distribution. (E) Western blot analysis of untreated (UT) or Dox/IPP-treated parasites episomally expressing PPS-RFP. PPS-RFP expression was visualized using an anti-RFP antibody. The full western blot image is included in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Synchronized ring-stage parasites were incubated with 10 µM MMV091313 for 36 hrs and imaged by bright-field (BF) or fluorescence microscopy, with visualization of parasite nuclei by Hoechst staining and the apicoplast by ACPL-GFP signal. (B) Population analysis of apicoplast morphology for 50 total parasites imaged for each condition in panel A from two independent experiments (UT = untreated). Apicoplast morphologies were scored as punctate (focal), elongated, or disrupted (dispersed); counted; and plotted by histogram as the fractional population with the indicated morphology. Error bars represent standard deviations from replicate experiments.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig5-figsupp3-v2.jpg)
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Additional images of live parasite expressing PPS-GFP. Additional immunofluorescence images of Dd2 parasites episomally expressing, (B) PPS-RFP and stained with anti-apicoplast ACP and an anti-RFP antibody, and (C) PPS-GFP, cultured for 7 days in 2 µM doxycycline and 200 isopentenyl pyrophosphate (IPP), and stained with an anti-GFP antibody.
 
 We first considered the model that this FPPS/GGPPS might have an essential role in producing GGPP required for apicoplast biogenesis. A recent study, however, identified a specific inhibitor (MMV019313) of PF3D7_1128400 that is lethal to parasites but does not impact apicoplast biogenesis (Gisselberg et al., 2018). We independently confirmed that lethal treatment with MMV019313 did not affect apicoplast branching in the PfMev line (Figure 5—figure supplement 2). These observations strongly suggest that the cytosolic FPPS/GGPPS is not the origin of the PPS activity required for apicoplast biogenesis. Therefore, we turned our attention to the second isoprenoid synthase homolog in P. falciparum, PF3D7_0202700, which shares 23% sequence identity with avian FPPS.
 
@@ -82,9 +158,19 @@ Prior immunofluorescence studies of this PPS, using a polyclonal antibody raised
 
 To further confirm apicoplast targeting of PPS, we stably disrupted the apicoplast in the PPS-GFP Dd2 line by culturing these parasites in 2 µM doxycycline and 200 µM IPP for 1 week (Yeh and DeRisi, 2011; Sigala et al., 2015). As expected for an apicoplast-targeted protein, the PPS-GFP signal in these parasites displayed a constellation of dispersed fluorescent foci, rather than the concentrated signal observed in untreated parasites (Figure 5D and Figure 5—figure supplement 4). Western blot analysis of the PPS-RFP parasites revealed two bands at the expected sizes for precursor protein and a smaller, N-terminally processed mature form, as expected for import into the apicoplast (Figure 5E; Waller et al., 2000). In the apicoplast-disrupted parasites, however, only a single PPS-RFP band for the precursor protein was detected, consistent with loss of apicoplast import and lack of transit peptide removal (Yeh and DeRisi, 2011; Dahl et al., 2006). On the basis of these observations, we conclude that PF3D7_0202700 is an apicoplast-targeted PPS that is imported into the organelle and N-terminally processed to a mature form. This localization, the predicted ability of this enzyme to synthesize polyprenyl-PPs longer than four isoprene units, and our observation that decaprenol rescued FOS-induced defects in apicoplast biogenesis all suggested a critical role for this protein in apicoplast maintenance.
 
-## PPS is essential for parasite viability and apicoplast biogenesis
+### PPS is essential for parasite viability and apicoplast biogenesis
 
 The genomic locus for PF3D7_0202700 was reported to be refractory to disruption in recent genome-wide KO studies in P. berghei (Bushell et al., 2017) and P. falciparum, (Zhang et al., 2018) suggesting an essential function. To directly test its functional essentiality in P. falciparum, we used CRISPR/Cas9 (Ghorbal et al., 2014) to tag the endogenous gene in Dd2 parasites to encode a C-terminal hemagglutinin (HA)-FLAG epitope fusion and the aptamer/TetR-DOZI system (Ganesan et al., 2016) that enables ligand-dependent regulation of protein expression using the non-toxic small molecule, anhydrotetracycline (aTc). In this system, normal proteinexpression occurs +aTc and translational repression is induced upon aTc washout (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic depiction of the aptamer/TetR-DOZI system for ligand-dependent protein expression. (B) Immunofluorescence analysis of fixed parasites endogenously expressing PPS-HA-FLAG and stained with anti-acyl carrier protein (ACP) and anti-hemagglutinin (HA)-tag antibodies. The intensity plot displays the overlap in pixel intensity for ACP and HA signals as a function of distance along the white line in the merged image. (C) Western blot of endogenously tagged PPS-HA/FLAG showing detection of tagged PPS at the expected size for mature PPS of ~60 kDa for growth in +aTc conditions but diminished signal for parasites grown -aTc + isopentenyl pyrophosphate (IPP) for 5 days. Densitometry of the PPS signal relative to the EF1α loading control indicated a threefold signal reduction in +aTc versus -aTc/ + IPP conditions. (D) RT-qPCR analysis of PPS transcript levels (normalized to the average of two nuclear control genes) in biological replicate samples of synchronous parasites cultured for 72 hr ± aTc or -aTc/ + IPP. (E) Synchronous growth assay of Dd2 parasites tagged at the PPS locus with the aptamer/TetR-DOZI system and grown ±aTc and ± 200 µM IPP or 5 µM farnesol (FOH), geranylgeraniol (GGOH), or decaprenol (C50-OH). Parasitemia values for each condition are the average ± SD of three biological replicates.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig6-figsupp2-v2.jpg)
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig6-figsupp3-v2.jpg)
 
 We first confirmed correct integration into the genomic locus with the expected genotype in both polyclonal and clonal parasites by Southern blot (Figure 6—figure supplement 1). We then used immunofluorescence microscopy to confirm co-localization of the endogenous PPS with apicoplast ACP (Figure 6B and Figure 6—figure supplement 2). Expression of the ~60 kDa HA-FLAG-tagged, endogenous mature protein was detected by anti-HA-tag western blot in +aTc conditions, and its signal relative to the loading control was reduced nearly threefold in parasites grown in -aTc + IPP conditions (Figure 6C). Our detection of only the mature form of endogenous PPS contrasts with our detection of both the precursor and mature forms of episomally expressed PPS-RFP (Figure 5E), suggesting that the precursor form may preferentially accumulate when PPS is over-expressed. We also quantified PPS transcript levels by RT-qPCR and observed robust KD of PPS mRNA levels by the second intraerythrocytic cycle of parasite growth in -aTc conditions (Figure 6D). The fate of target mRNA in the aptamer/TetR-DOZI system has not been characterized in depth. Our data are consistent with a prior report (Maruthi et al., 2020) and suggest that TetR-DOZI binding after aTc washout leads to mRNA transcript degradation, possibly within stress granules targeted by DOZI-bound transcripts (Ganesan et al., 2016).
 
@@ -96,11 +182,33 @@ To test if PPS function is required for apicoplast biogenesis, we cultured PPS K
 
 To test this hypothesis and the contribution of MEP pathway activity to the observed phenotype, we synchronized parasites to the ring stage and cultured them in ±aTc conditions for 96 hr (two 48 hr growth cycles) to knock down PPS expression before adding FOS and IPP at the start of the third growth cycle (Figure 7A). In this experiment, FOS was expected to inhibit endogenous MEP pathway activity without impacting apicoplast biogenesis since it was added concurrently with IPP, which fully rescues parasites from growth and apicoplast defects induced by FOS (Figure 1; Yeh and DeRisi, 2011; Gisselberg et al., 2013). We first used IFA to assess apicoplast morphology in schizonts at the end of the third growth cycle (38 hr after adding FOS and IPP). We observed normal apicoplast elongation in +aTc parasites but focal, unbranched apicoplast morphology in the vast majority (>80%) of -aTc parasites (Figure 7B and C, and Figure 7—figure supplement 2). Substitution of IPP with FOH or GGOH resulted in a nearly identical apicoplast elongation defect in -aTc parasites. In contrast, substituting IPP with decaprenol resulted in normal apicoplast elongation in both +aTc and -aTc parasites (Figure 7B and C, and Figure 7—figure supplement 2). The selective ability of decaprenol to rescue apicoplast-branching defects in -aTc conditions strongly supports an essential role for PPS in synthesizing long-chain polyprenyl isoprenoids required for apicoplast biogenesis.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig7-v2.jpg)
+
+**Figure 7.:** (A) Scheme summarizing growth of synchronized PPS knockdown parasites cultured ±aTc, re-synchronized and treated with 10 µM fosmidomycin (FOS) ±200 µM isopentenyl pyrophosphate (IPP) or 5 µM farnesol (FOH), geranylgeraniol (GGOH), or decaprenol (C50-OH) at 96 hr after initial synchronization, and imaged at 134 and 182 hr after initial synchronization. (B) Immunofluorescence analysis (IFA) of PPS knockdown parasites cultured as described in panel A and imaged at 134 hr (day 6) after initial synchronization to assess apicoplast morphology ±aTc. (C) Population analysis of apicoplast morphology for 50 total parasites imaged for each condition in panel A from two independent experiments. Apicoplast morphologies were scored as punctate (focal), elongated, or disrupted (dispersed); counted; and plotted by histogram as the fractional population with the indicated morphology (UT = untreated). Error bars represent standard deviations from replicate experiments. (D) IFA of PPS knockdown parasites cultured ±aTc + FOS + IPP and imaged at 182 hr (day 8) after initial synchronization to assess apicoplast morphology ±aTc. (E) Population analysis of apicoplast morphology for 50 total parasites imaged for each condition in panel D and analyzed as in panel C. (F) Quantitative PCR analysis of the apicoplast:nuclear (Api:Nu) genome ratio for parasites cultured ±aTc and imaged in panel D, based on amplification of apicoplast TufA (PF3D7_API02900) or nuclear ADSL (PF3D7_0206700) relative to nuclear I5P (PF3D7_0802500) genes. Indicated qPCR ratios were normalized to +aTc in each case and are the average ± SD of three biological replicates. Significance of ±aTc differences was analyzed by two-tailed unpaired t-test to determine the stated p value. All parasite samples collected for IFA were imaged by bright-field (BF) and epifluorescence microscopy, with visualization of parasite nuclei by DAPI staining and apicoplast by an anti-apicoplast acyl carrier protein (ACP) antibody.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig7-figsupp1-v2.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig7-figsupp2-v2.jpg)
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig7-figsupp3-v2.jpg)
+
 To further test this conclusion, we maintained parasites in ±aTc conditions with FOS and IPP for two additional growth cycles (total of five 48 hr cycles, Figure 7A). Parasites cultured +aTc displayed normal elongated apicoplast morphology. In contrast, the -aTc (+FOS and IPP) culture predominantly contained parasites with a dispersed ACP signal indicative of apicoplast loss (Figure 7D and E, and Figure 7—figure supplement 3). These -aTc parasites also contained a strongly reduced qPCR signal for apicoplast genomic DNA, relative to +aTc parasites (Figure 7F). These results indicate that PPS is essential for apicoplast maintenance and inheritance by daughter parasites such that loss of PPS function (with IPP supplementation) results in parasite progeny lacking the intact organelle. This essential PPS function downstream of IPP synthesis by the MEP pathway is sufficient to explain our observation that blocking pathway activity by FOS or ∆DXS inhibits apicoplast biogenesis (Figure 1).
 
-## No evidence for PPS function in carotenoid synthesis
+### No evidence for PPS function in carotenoid synthesis
 
 Despite its strong sequence similarity to known PPSs that catalyze the head-to-tail condensation of isoprenoid precursors, PF3D7_0202700 has also been proposed to catalyze the biochemically distinct head-to-head condensation of 20-carbon GGPP groups into 40-carbon phytoene and thus function as a phytoene synthase (PSY) within a broader pathway of carotenoid biosynthesis proposed to exist in Plasmodium parasites (Figure 8A; Tonhosolo et al., 2009; Gabriel et al., 2015b). PPSs and PSYs are mechanistically distinct enzymes that lack significant sequence similarity but are thought to share a common isoprenoid-related protein fold that reflects their ancient divergence from a common ancestral enzyme (Thulasiram and Poulter, 2006; Bouvier et al., 2005). Given the mechanistic differences between head-to-tail and head-to-head condensation of isoprenoids (Figure 8A), which involve distinct positioning of substrate pyrophosphate groups within each active site, there is no known enzyme that is capable of catalyzing both reactions (Bouvier et al., 2005). Thus, the proposal of dual PPS and PSY functions for PF3D7_0202700 is without biochemical precedent. Nevertheless, we considered whether this protein might also have PSY function and evaluated whether existing observations supported or contradicted a proposed role for this protein in carotenoid biosynthesis.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig8-v2.jpg)
+
+**Figure 8.:** (A) Schematic depiction of head-to-tail arrangement of prenyl groups during polyprenyl-PP synthesis versus head-to-head arrangement of geranylgeranyl-PP groups during phytoene synthesis. (B) Mass spectrometry determination of unlabeled β-carotene levels in PPS knockdown parasites grown for 6 days ± aTc or in uninfected red blood cells incubated in complete media containing Albumax. Measured β-carotene levels are the average ± SD of three biological replicates, whose differences were analyzed by two-tailed unpaired t-test for significance (p values given relative to +aTc sample). (C) Intensity versus retention time plot for liquid chromatography-mass spectrometry determination of unlabeled and 13C-labeled β-carotene in NF54 PfMev parasites cultured for 6 days in 50 µM 2-13C-mevalonate and 10 µM fosmidomycin. Below: schematic depiction of the eight carbon atoms in β-carotene expected to be labeled with 13C for synthesis from isopentenyl pyrophosphate (IPP) derived from 2-13C-mevalonate in PfMev parasites. (D) Intensity versus retention time plot for liquid chromatography-mass spectrometry determination of unlabeled and 13C-labeled β-carotene in pAC-BETAipi Escherichia coli grown in unlabeled or fully 13C-labeled glucose as the sole carbon source in M9 minimal media. The two peaks reflect the presence of an isomeric mix of all-trans and cis β-carotene produced by the pAC-BETAipi E. coli, as previously reported (Cunningham and Gantt, 2005).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig8-figsupp1-v2.jpg)
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig8-figsupp2-v2.jpg)
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig8-figsupp3-v2.jpg)
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig8-figsupp4-v2.jpg)
 
 As noted previously, untargeted sequence similarity searches via NCBI BLAST (Boratyn et al., 2013) and MPI HHpred (Zimmermann et al., 2018) with PF3D7_0202700 as the query sequence only identify PPS homologs from bacteria, algae, and plants (Figure 5—figure supplement 3) and fail to identify PSY homologs. Furthermore, targeted pairwise alignments show no evidence of significant sequence homology between PF3D7_0202700 and confirmed eukaryotic or prokaryotic PSY sequences from Arabidopsis thaliana (Uniprot P37271, chloroplast-targeted) (Zhou et al., 2015) or Erwinia herbicola (Pantoea agglomerans, Uniprot D5KXJ0) (Iwata-Reuyl et al., 2003), respectively. Finally, the prior proposal of PSY activity by PF3D7_0202700 was based in part on its sequence similarity to an annotated PSY from Rubrivivax gelatinosus bacteria (NCBI accession BAA94032) that also appeared to contain sequence features expected of a head-to-tail PPS (Tonhosolo et al., 2009). We noted that the functional annotation of this bacterial protein was subsequently revised to a GGPPS (Uniprot I0HUM5) (Nagashima et al., 2012), thus explaining its sequence similarity to PF3D7_0202700 and the homology of both proteins to known PPSs. On the basis of these sequence analyses, we considered it unlikely that PF3D7_0202700 had dual activity as a PSY.
 
@@ -118,25 +226,25 @@ Biosynthesis of the isoprenoid precursors, IPP and DMAPP, is a well-established 
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/73208/elife-73208-fig9-v2.jpg)
 
-**Figure 9.:** Plasmodium falciparum parasites.IPPI = isopentenyl pyrophosphate (IPP) isomerase, PEP = phosphoenolpyruvate, DHAP = dihydroxyacetone phosphate, PYR = pyruvate, Gly3P = glyceraldehyde-3-phosphate. Question marks indicate uncertainty in the identity of the proposed IPP isomerase and in the role of polyprenyl isoprenoid products of polyprenyl synthase (PPS) in apicoplast biogenesis. For simplicity, we have depicted PPS targeting to the apicoplast matrix. However, further experiments will be needed to test and specify sub-organellar targeting of PPS to the apicoplast matrix and/or intermembrane spaces.
+**Figure 9.:** IPPI = isopentenyl pyrophosphate (IPP) isomerase, PEP = phosphoenolpyruvate, DHAP = dihydroxyacetone phosphate, PYR = pyruvate, Gly3P = glyceraldehyde-3-phosphate. Question marks indicate uncertainty in the identity of the proposed IPP isomerase and in the role of polyprenyl isoprenoid products of polyprenyl synthase (PPS) in apicoplast biogenesis. For simplicity, we have depicted PPS targeting to the apicoplast matrix. However, further experiments will be needed to test and specify sub-organellar targeting of PPS to the apicoplast matrix and/or intermembrane spaces.
 
-## Implications for general understanding of apicoplast functions
+### Implications for general understanding of apicoplast functions
 
 Our study, which was inspired by prior hints in the literature (Nair et al., 2011; Bowman et al., 2014; Goodman and McFadden, 2014), firmly establishes a novel essential role for MEP pathway activity in supporting apicoplast biogenesis, in addition to its recognized role producing IPP required outside this organelle. Prior work has clearly established that apicoplast maintenance pathways are required to support IPP synthesis and export for essential cellular use (Yeh and DeRisi, 2011; Kennedy et al., 2019a; Gisselberg et al., 2013; Dahl et al., 2006), but the reverse dependence of apicoplast biogenesis on IPP was not previously recognized. Thus, IPP synthesis by the MEP pathway requires apicoplast maintenance, which in turn depends on IPP synthesis. The two processes are convoluted and interdependent. This reciprocal dependence between organelle maintenance and metabolic outputs may extend to other apicoplast pathways in mosquito- and liver-stage P. falciparum as well as Toxoplasma gondii, where additional apicoplast outputs, such as fatty acids, contribute to parasite fitness and may support apicoplast maintenance (Yu et al., 2008; Shears et al., 2015; van Schaijk et al., 2014; Krishnan et al., 2020; Mazumdar et al., 2006).
 
 Our results also support the emerging paradigm (Uddin et al., 2018; Amberg-Johnson et al., 2017; Boucher and Yeh, 2019; Okada et al., 2020) that inhibition of apicoplast maintenance pathways can kill parasites with first-cycle kinetics that defy the delayed-death phenotype commonly observed for translation-blocking antibiotics such as doxycycline that target organelle housekeeping (Dahl and Rosenthal, 2007; Uddin et al., 2018). Indeed, blocking IPP synthesis causes same-cycle defects in apicoplast biogenesis, which are expected to produce non-viable parasite progeny independent of lethal dysfunctions in isoprenoid-dependent metabolism outside the organelle. Analysis of the timing of FOS-induced defects in apicoplast branching also provides an unexpected and incisive window into the differential compartmentalization of IPP essentiality in parasites. We observed that FOS-treated parasites display apicoplast-elongation defects in early schizogony but continue to divide nuclear DNA and transition into mature schizonts before stalling prior to segmentation (Figure 1A). Thus, the critical role of IPP for apicoplast biogenesis precedes the broader cellular need for IPP outside the organelle in mature schizonts, suggested by recent works to predominantly reflect essential roles for IPP-dependent protein prenylation (Kennedy et al., 2019a; Howe et al., 2013). Although MEP pathway activity begins in ring-stage parasites (Zhang et al., 2011; Cassera et al., 2004), we observed identical inhibition of apicoplast elongation in schizonts independent of whether FOS was added to rings concomitant with synchronization or to trophozoites 12 hr after synchronization (Figure 1A). This observation suggests that IPP utilization in the apicoplast depends on de novo synthesis rather than a pre-existing metabolite pool, possibly because IPP does not accumulate in the apicoplast and/or that IPP synthesis within the organelle is differentially partitioned for export and internal utilization.
 
-## Localization of PPS to the apicoplast
+### Localization of PPS to the apicoplast
 
 Our studies identified PF3D7_0202700 as an apicoplast-targeted PPS based on its co-localization with apicoplast ACP, dispersed localization upon apicoplast disruption, and N-terminal processing in an apicoplast-dependent manner. Nevertheless, the sequence features that target PPS to the apicoplast are somewhat obscure. Imported apicoplast proteins canonically contain N-terminal signal and transit peptides that are proteolytically removed in the endoplasmic reticulum (ER) and apicoplast, respectively (Waller et al., 2000; van Dooren et al., 2002). The N-terminus of PPS contains a transit peptide recognized by PlasmoAP (Foth et al., 2003) but is not recognized by SignalP (Almagro Armenteros et al., 2019) to contain a canonical signal peptide. This targeting ambiguity is not unique to PPS. We are aware of multiple apicoplast-targeted and imported proteins, including several identified in the prior proximity-biotinylation study of the apicoplast proteome (Boucher et al., 2018), that contain a recognizable transit peptide but lack an identifiable signal peptide by SignalP. These proteins include the key MEP pathway enzymes DXR (PF3D7_1467300) and IspD (PF3D7_0106900), holo ACP synthase (PF3D7_0420200), FabB/F (PF3D7_0626300), and the E1 subunit of pyruvate dehydrogenase (PF3D7_1446400). These observations suggest that protein N-termini in Plasmodium can have sequence properties compatible with apicoplast targeting that are broader and more heterogenous than ER-targeting sequences from other eukaryotes that comprise the training sets upon which SignalP is currently based. It remains a future challenge to understand these N-terminal properties and their relation to apicoplast targeting and import in Plasmodium.
 
 N-terminal processing of apicoplast-targeted proteins is an exclusive property of known proteins imported into the organelle. Although multiple proteins have been shown or suggested to associate with the apicoplast exterior or target the outer apicoplast membrane, none of these proteins is N-terminally processed (e.g., ATG8, oTPT, and FTSH1) (Amberg-Johnson et al., 2017; Mullin et al., 2006; Tomlins et al., 2013). N-terminal processing of PPS is therefore strongly suggestive of import into the apicoplast. Such processing, however, does not specify the sub-compartment within the apicoplast to which PPS is localized, which could include the matrix and/or multiple membranes or intermembrane spaces. Indeed, N-terminal processing has been reported for both matrix and membrane-targeted proteins imported into the apicoplast (Mullin et al., 2006). The central conclusions of our study are not affected by this ambiguity. For simplicity, we have depicted PPS localization within the apicoplast matrix (Figure 9), but more studies and higher resolution (e.g., electron microscopy with immunogold labeling) will be required to specify sub-compartmental targeting of PPS within the apicoplast. PPS lacks obvious membrane-targeting features but required overnight extraction in 2% SDS or LDS for detection by western blot. These features, together with low expression, may explain why PPS has not been detected in prior studies of the apicoplast proteome that used milder extraction conditions.
 
-## Implications for other apicomplexan parasites
+### Implications for other apicomplexan parasites
 
 PPSs are diverse enzymes that perform a variety of cellular functions, whose specific roles can differ between organisms. The reliance of apicoplast biogenesis on isoprenoid synthesis in Plasmodium may differ from other apicomplexan parasites. T. gondii appears to express two PPS homologs, TGME49_224490 and TGME49_269430, that are ~30% identical (in homologous regions) to PF3D7_1128400 (FPPS/GGPPS) and PF3D7_0202700 (PPS), respectively. TGME49_224490 appears to be targeted to the mitochondrion in T. gondii (based on MitoProt and HyperLOPIT analyses) (Claros and Vincens, 1996; Barylyuk et al., 2020), in contrast to FPPS/GGPPS, its closest P. falciparum homolog, which localizes to the cytoplasm and other cellular foci outside the mitochondrion. TGME49_269430 does not appear to target the apicoplast in T. gondii (based on HyperLOPIT data), which contrasts with our determination of apicoplast targeting for PPS, the closest P. falciparum homolog. These observations suggest distinct cellular roles for enzyme homologs in the two parasites. Furthermore, a recent study (Henkel et al., 2022) showed that loss of MEP pathway activity in T. gondii (due to loss of apicoplast ferredoxin) does not impact apicoplast biogenesis, in contrast to our observations in P. falciparum based on FOS treatment, DXS deletion, and PPS KD. Finally, Cryptosporidium parvum lacks an apicoplast but retains two PPS homologs, CPATCC_003578 and CPATCC_001801, whose cellular targeting has not been reported. These differing enzyme localizations and phenotypes suggest differences in cellular isoprenoid utilization and metabolism between T. gondii, P. falciparum, and broader apicomplexan organisms that remain to be understood.
 
-## Why does Plasmodium apicoplast biogenesis depend on IPP synthesis?
+### Why does Plasmodium apicoplast biogenesis depend on IPP synthesis?
 
 The essential function of PPS in apicoplast maintenance is sufficient to explain the apicoplast reliance on IPP synthesis unveiled by FOS treatment of parasites. Although the dominant polyprenyl-PP product of apicoplast PPS in parasites remains uncertain, sequence features, prior in vitro enzymology, and the ability of exogenous decaprenol but not GGOH or FOH to rescue PPS KD indicate that linear polyprenyl-PP products longer than 4 and as long as 10 isoprene units are critical for apicoplast maintenance (Tonhosolo et al., 2005). Prior work suggested a dual function for PF3D7_0202700 as a PSY that also condenses isoprenoid precursors (Tonhosolo et al., 2009; Gabriel et al., 2015b), but we found no evidence to support this proposed PSY function or carotenoid biosynthesis more broadly. Synthesis of octaprenyl-PP by PF3D7_0202700 was previously proposed to be critical for ubiquinone biosynthesis in the parasite mitochondrion (Tonhosolo et al., 2005). Localization of this protein to the apicoplast (Figures 5 and 6) and observation that exogenous IPP rescues the growth defects of its KD (Figure 6E) strongly suggest that its activity is not required for mitochondrial ubiquinone biosynthesis and that its essential function is specific to the apicoplast.
 
@@ -148,69 +256,261 @@ Independent of its specific role in apicoplast biogenesis, PPS function is criti
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>D10ACPL-GFP</td>
+      <td>PMID:10775264</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>NF54-PfMevACPL-GFP</td>
+      <td>PMID:32059044</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>NF54-PfMev∆DXS</td>
+      <td>PMID:32815516</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>Dd2PPS-RFP (pTyEOE)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Described in Materials and methods. Can be obtained from Sigala lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>Dd2PPS-GFP (pTEOE)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Described in Materials and methods. Can be obtained from Sigala lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>Dd2PPS-HA/FLAG9xAptamer/ TetR-DOZI</td>
+      <td>This study</td>
+      <td></td>
+      <td>Described in Materials and methods. Can be obtained from Sigala lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>NF54-PfMevMiaA-KO</td>
+      <td>This study</td>
+      <td></td>
+      <td>Described in Materials and methods. Can be obtained from Prigge lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line(Escherichia coli)</td>
+      <td>Top10pAC-BETAipi</td>
+      <td>PMID:15659105</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID: SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. D3447</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fosmidomycin</td>
+      <td>Invitrogen Life Technologies</td>
+      <td>Cat. No. F23103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isopentenyl pyrophosphate</td>
+      <td>Isoprenoids</td>
+      <td>Cat. No. IPP001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Farnesol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. F203</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Geranylgeraniol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. G3278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Decaprenol</td>
+      <td>Isoprenoids</td>
+      <td>Cat. No. polyprenol C50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DL-mevalonolactone</td>
+      <td>Cayman Chemicals</td>
+      <td>Cat. No. 20348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zaragozic acid</td>
+      <td>Cayman Chemicals</td>
+      <td>Cat. No.17452</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MMV019313</td>
+      <td>ChemDiv</td>
+      <td>Cat. No. C498-0579</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-Carotene</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. F203</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EF1α(rabbit polyclonal)</td>
+      <td>PMID:11251817</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ACP(rabbit polyclonal)</td>
+      <td>PMID:19768685</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (3E6)(mouse, monoclonal)</td>
+      <td>Invitrogen Life Technologies</td>
+      <td>Cat. No. A11120</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RFP (RF5R)(mouse monoclonal)</td>
+      <td>Invitrogen Life Technologies</td>
+      <td>Cat. No. MA5-15257</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP(goat, polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. No.Ab5450</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (3F10)(rat, monoclonal)</td>
+      <td>Roche</td>
+      <td>Cat. No. 11 867 423 001</td>
+      <td>(1:1000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 All reagents were of the highest purity commercially available. The vendor and catalog number are given for individual compounds when first mentioned. Primary antibodies were generally used at 1:1000 dilution and secondary antibodies at 1:10,000 dilution unless specified otherwise.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 For live-cell experiments, parasite samples were collected at 38 hr after synchronization with 5% D-sorbitol (Sigma S7900). Parasite nuclei were visualized by incubating samples with 1–2 µg/mL Hoechst 33342 (Thermo Scientific Pierce 62249) for 10–20 min at room temperature. The parasite apicoplast was visualized in D10 (Waller et al., 2000) or NF54 mevalonate-bypass (Swift et al., 2020b) cells using the ACPL-GFP expressed by both lines. The parasite mitochondrion was visualized by incubating parasites with 10 nM MitoTracker Red CMXROS (Invitrogen Life Technologies M7512) for 15 min prior to wash-out and imaging. For immunofluorescence assay (IFA) experiments, parasites were fixed, stained, and mounted as previously described (Tonkin et al., 2004). For IFA images, the parasite apicoplast was visualized using a polyclonal rabbit anti-ACP antibody (Gallagher and Prigge, 2010) and a goat anti-rabbit fluorescent 2° antibody (Invitrogen R37117) and the nucleus was stained with ProLong Gold Antifade Mountant with DAPI (Invitrogen Life Technologies P36931). PPS-RFP was visualized with a mouse monoclonal anti-RFP antibody (Thermo Fisher MA5-15257) and goat anti-mouse fluorescent 2° antibody (Invitrogen A11001). PPS-GFP was detected with a goat anti-GFP antibody (Abcam ab5450) and anti-goat fluorescent 2° antibody. For IFA images of parasites expressing endogenous PPS with C-terminal HA-FLAG tags, apicoplast ACP was visualized with a polyclonal rabbit anti-ACP antibody as above and PPS was visualized using polyclonal rat anti-HA-tag 1° antibody (Roche 3F10) and goat anti-rat (Invitrogen A11006) and donkey anti-goat (Invitrogen A11055) fluorescent 2° antibodies. Images were taken on DIC/bright field, DAPI, GFP, and RFP channels using either a Zeiss Axio Imager or an EVOS M5000 imaging system. Fiji/ImageJ was used to process and analyze images, and intensity plots were generated by the ‘plot profile’ function using a shared region of interest (identified by white line) on each channel. All image adjustments, including contrast and brightness, were made on a linear scale. For phenotypic analyses, apicoplast morphologies for each experimental condition were assessed for 25 parasites in each of two biological replicate experiments (50 parasites total per condition). Apicoplast morphologies were scored as elongated, focal, or dispersed; counted; and plotted by histogram as the fractional population with the indicated morphology.
 
-## Inhibition and rescue of apicoplast biogenesis
+### Inhibition and rescue of apicoplast biogenesis
 
 ACPL-GFP D10 and NF54 PfMev parasites were synchronized with 5% (w/v) D-sorbitol for 10 min at room temperature and returned to culture in 10 µM FOS (Invitrogen Life Technologies F23103), 100 nM ATV (Cayman Chemicals 23802), 2 µM DSM1 (Ganesan et al., 2011), 6 µM Blast-S (Invitrogen Life Technologies R21001), 5 nM WR99210 (Jacobus Pharmaceuticals), 160 µM ZA/squalestatin (Cayman Chemicals 17452), or 2 µM MMV019313 (ChemDiv C498-0579). For FOS experiments, parasites were left in FOS only or supplemented with 5 µM FOH (Sigma F203), 5 µM GGOH (Sigma G3278), 5 µM decaprenol (Isoprenoids polyprenol C50), 5 µM β-carotene (Sigma C9750), 50 µM DL-mevalonolactone (Cayman Chemicals 20348), or 200 µM IPP (NH4+ salt, Isoprenoids IPP001). All parasites were cultured for 36 hr after synchronization and then imaged by live-cell fluorescence microscopy to monitor apicoplast status. All concentrations reflect the final concentration in culture medium.
 
-## Parasite synchronization
+### Parasite synchronization
 
 Parasites were synchronized to the ring stage either by treatment with 5% D-sorbitol (Sigma S7900) or by first magnet-purifying schizonts and then incubating them with uninfected erythrocytes for 5 hr followed by treatment with sorbitol. Results from growth assays and microscopy analyses using either of these synchronization methods were indistinguishable within error, and 5% sorbitol was used unless stated otherwise.
 
-## Delayed mevalonate-rescue assay
+### Delayed mevalonate-rescue assay
 
 NF54 PfMev parasites were synchronized with 5% (w/v) D-sorbitol for 10 min at room temperature and returned to culture in 10 µM FOS. Fifty µM DL-mevalonate was added to cultures immediately or after 30, 34, or 38 hr post-synchronization. Parasitemia was measured by flow cytometry every 24 hr. After 60 hr post-synchronization, parasites from each mevalonate time point were cloned out by limiting dilution. Apicoplast status of all isolated clones was evaluated by live-cell ACPL-GFP fluorescence. ACPL-GFP signal was observed for the presence of distinct branching morphology (apicoplast intact) or the presence of scattered punctate signals throughout the cytosol (apicoplast disruption). A total of 9, 17, 18, and 5 clones from the 0, 30, 34, and 38 hr rescue time points, respectively, were evaluated by microscopy (only five clones returned from the 38 hr rescue time point). Apicoplast (SufB: Pf3D7_API04700) and nuclear (PPS: Pf3D7_0202700) genome PCR (primers 4/5 and 1/2) and mevalonate dependence growth assays were done on two clones from each time point to confirm apicoplast status.
 
-## Parasite culturing and transfection
+### Parasite culturing and transfection
 
 All experiments were performed using P. falciparum Dd2 (Wellems et al., 1990), ACPL-GFP D10 (Waller et al., 2000), or ACPL-GFP NF54 PfMev (Swift et al., 2020b) parasite strains. Parasite strain identities were confirmed on the basis of expected drug resistance and were Mycoplasma-free by PCR test. Parasite culturing was performed in Roswell Park Memorial Institute medium (RPMI-1640, Thermo Fisher 23400021) supplemented with 2.5 g/L Albumax I Lipid-Rich BSA (Thermo Fisher 11020039), 15 mg/L hypoxanthine (Sigma H9636), 110 mg/L sodium pyruvate (Sigma P5280), 1.19 g/L HEPES (Sigma H4034), 2.52 g/L sodium bicarbonate (Sigma S5761), 2 g/L glucose (Sigma G7021), and 10 mg/L gentamicin (Invitrogen Life Technologies 15750060). Cultures were generally maintained at 2% hematocrit in human erythrocytes obtained from the University of Utah Hospital blood bank, at 37°C, and at 5% O2, 5% CO2, 90% N2. Parasite-infected erythrocytes were transfected in 1× cytomix containing 50–100 µg midi-prep DNA by electroporation in 0.2 cm cuvettes using a Bio-Rad Gene Pulser Xcell system (0.31 kV, 925 µF). Transgenic parasites were selected on the basis of plasmid resistance cassettes encoding human DHFR (Fidock and Wellems, 1997), yeast DHOD (Ganesan et al., 2011), or blasticidin-S deaminase (BSD) (Mamoun et al., 1999) and cultured in 5 nM WR99210, 2 µM DSM1, or 6 µM Blast-S, respectively. Gene-edited Dd2 parasites that contained PPS (PF3D7_0202700) tagged with the aptamer/TetR-DOZI cassette (Ganesan et al., 2016) were maintained in 0.5–1 µM aTc (Cayman Chemicals 10009542). Genetically modified parasites were genotyped by PCR and/or Southern blot, as previously described (Klemba et al., 2004). For western blot and IFA studies of PPS-GFP in apicoplast-disrupted Dd2 parasites, transgenic parasites were cultured >7 days in 5 nM WR99210, 1 µM doxycycline (Sigma D9891), and 200 µM IPP to induce stable apicoplast loss prior to parasite harvest.
 
-## Parasite growth assays
+### Parasite growth assays
 
 Parasite growth was monitored by diluting asynchronous or sorbitol-synchronized parasites to ~0.5% parasitemia and allowing culture expansion over several days with daily media changes. Parasitemia was monitored daily by flow cytometry by diluting 10 µL of each parasite culture well from each of three biological replicate samples into 200 µL of 1.0 µg/mL acridine orange (Invitrogen Life Technologies A3568) in phosphate buffered saline (PBS) and analysis on a BD FACSCelesta system monitoring SSC-A, FSC-A, PE-A, FITC-A, and PerCP-Cy5-5-A channels. Daily parasitemia measurements for asynchronous cultures were plotted as function of time and fit to an exponential growth equation using GraphPad Prism 9.0. For EC50 determinations, synchronous ring-stage parasites were diluted to 1% parasitemia and incubated with variable drug concentrations for 48–72 hr without media changes. Parasitemia was determined by flow cytometry in biological triplicate samples for each drug concentration, normalized to the parasitemia in the absence of drug, plotted as a function of the log of the drug concentration (in nM or µM), and fit to a four-parameter dose-response model using GraphPad Prism 9.0.
 
-## Cloning and episomal expression of PPS
+### Cloning and episomal expression of PPS
 
 The gene encoding PPS (PF3D7_0202700) lacks introns and was cloned by PCR from Dd2 parasite genomic DNA using primers designed for insertion into the XhoI/AvrII sites of pTYEOE (yeast DHOD positive selection cassette) (Beck et al., 2014) and pTEOE (human DHFR positive selection cassette) (Sigala et al., 2015) vectors in frame with C-terminal RFP and GFP tags, respectively. These vectors are designed to drive episomal protein expression using the HSP86 promoter and for co-transfection with plasmid pHTH that contains the piggyBac transposase (Balu et al., 2005) for integration into the parasite genome. A single forward primer was used for PPS cloning into both vectors (primer 1) while reverse primers were vector-specific (primers 2 and 3). All PCR primer sequences are shown in Supplementary file 1. Cloning was completed using ligation-independent cloning (QuantaBio RepliQa HiFi Assembly Mix). Cloning products were transformed into Top10 chemically competent cells, and bacterial clones were selected for carbenicillin (Sigma C3416) resistance. Correct plasmid sequence in isolated clonal bacteria was confirmed by both AscI/AatII (NEB) restriction digest and Sanger sequencing (University of Utah DNA Sequencing Core). One-hundred µg of either purified PPS-RFP-TyEOE or PPS-GFP-TEOE in combination with 25 µg of the pHTH transposase plasmid was transfected into Dd2 parasites by electroporation, as described above. Transfected parasites were allowed to expand in the absence of drug for 48 hr before selection with either 2 µM DSM1 or 5 nM WR99210 for PPS-RFP-TyEOE or PPS-GFP-TEOE, respectively. Stable, drug-resistant parasites returned from transfection in 3–6 weeks.
 
-## PPS gene-editing to enable ligand-dependent regulation of protein expression
+### PPS gene-editing to enable ligand-dependent regulation of protein expression
 
 CRISPR/Cas9-stimulated repair by double-crossover homologous recombination was used to tag the PPS gene (PF3D7_0202700) to encode a C-terminal HA-FLAG epitope tag and the 3’ 10× aptamer/TetR-DOZI system (Ganesan et al., 2016) to enable regulated PPS expression using aTc. Guide RNA sequences corresponding to TGATATAAAACAAAGTAGCG, CGTGCTAGTTCTATTTTTGC, and GATGATTCAAATAAAAGAAG (primers 6–11) were cloned into a modified version of the previously published pAIO vector (Spillman et al., 2017), in which the BtgZI site was replaced with a unique HindIII site to facilitate cloning (primers 12 and 13). To tag the PPS gene, a donor pMG75 (Ganesan et al., 2016) repair plasmid was prepared by PCR-amplifying 635 bp of the 3’ coding sequence and 679 bp of the 3’ untranslated region (UTR) as homology flanks to the PPS gene, fusing these fragments together by PCR with an AflII site in between (679 bp 3’ UTR-AflII-635 bp 3’ coding sequence), and inserting this fused fragment into the AscI and AatII sites of the pMG75 vector (primers 14–17). A shield mutation was introduced to the 3’ end of the coding-sequence homology flank corresponding to the gRNA sequence TGATATAAAACAAAGTAGCG. This mutation (introduced using primer 18) ablated the CRISPR PAM sequence AGG that immediately following the gRNA sequence above by mutating it to AAG, resulting in a silent mutation of the Glu523 codon from GAG to GAA. Sanger sequencing confirmed the correct sequence of the homology flanks inserted into the pMG75 vector. PCR analysis of the final pMG75 vector using primers 39–40 revealed that only nine copies of the aptamer sequence were retained. Before transfection, the pMG74 vector was linearized by AflII digestion performed overnight at 37°C, followed by deactivation with Antarctic Phosphatase (NEB M0289S).
 
 Dd2 parasites were transfected with 50 µg of pAIO Cas9/gRNA vector and 50 µg of the linearized pMG75 donor plasmid, as described above. Parasites were selected on the basis of the BSD resistance cassette encoded by the pMG75 plasmid and returned from transfection after 4–6 weeks. Gene-edited Dd2 parasites resulting from transfection with pAIO Cas9/gRNA-4 (produced with primers 10/11) contained PPS (PF3D7_0202700) tagged with the aptamer/TetR-DOZI cassette (Ganesan et al., 2016) and were maintained in 0.5–1 µM aTc (Cayman Chemicals 10009542). Genetically modified parasites were genotyped by Southern blot, as previously described (Klemba et al., 2004). Briefly, genomic DNA from the polyclonal parasites that returned from transfection was digested with BamHI and SpeI (New England Biolabs) and transferred to membrane (Nytran SuPerCharge) using the TurboBlotter system (VWR 89026–838). A DNA probe consisting of the 5 750 bp of the PPS gene was produced by PCR (primers 16/17). Probe labeling, hybridization, and visualization were performed using the AlkPhos Direct Labeling and Detection System (VWR 95038-288) and CDP-Star reagent (VWR 95038-292). The Southern blot confirmed complete integration into the PPS locus without evidence for unmodified parasites, and the polyclonal parasites were used for all subsequent experiments.
 
-## Analysis of PPS transcript levels
+### Analysis of PPS transcript levels
 
 Biological replicate cultures of PPS aptamer/TetR-DOZI parasites were synchronized in 5% D-sorbitol and grown for 72 hr in +aTc (four biological replicates), -aTc (four biological replicates), or -aTc/ + IPP (200 µM) (two biological replicates) conditions prior to harvest. Four mL cultures at ~10% were harvested by centrifugation (2000 rpm for 3 min) and stored at –20°C until use. Total RNA was isolated from frozen parasite-infected blood pellets using a modified Trizol (Invitrogen) extraction protocol. Five mL Trizol (Invitrogen) was added to thawed pellets on ice, pipetted 20–30 times to resuspend, and pulse-vortexed 20 times for 15 s. Two mL chloroform was added to each sample and vortexed, incubated on ice for 5 min, then spun for 10 min at 4°C at 5000 rpm without brake. The top, aqueous layer (~3 mL) was transferred to a new tube. Five mL of isopropanol was added to each sample, gently mixed, and incubated at –80°C for 20 min or –20°C overnight. Samples were spun at 5000 rpm for 30 min, washed with freshly made solution of 70% ethanol, then spun again for 10 min. Ethanol was removed and pellets were dried 30 min on ice. RNA pellets were resuspended in RNAse-free water, quantitated, and used immediately or stored at –80°C. One µg of RNA was DNAse-treated and reverse-transcribed using Superscript IV kit (Invitrogen) with the addition of gene-specific reverse primers 31–38. Subsequent cDNA was analyzed in technical duplicate through qPCRs with SYBR Green fluorescent probe (Invitrogen) in a Roche Lightcycler. Cp values for PPS (primers 35–36) were normalized to the average of two nuclear-encoded control genes (I5P, PF3D7_0802500; ADSL, PF3D7_0206700; primers 31–34), then used to calculate relative RNA abundance values for each culture condition, with the +aTc sample normalized to a value of 1. Data is reported as average ± SD of replicates for each condition.
 
-## Synchronous growth assays of PPS KD parasites
+### Synchronous growth assays of PPS KD parasites
 
 Dd2 parasites tagged at the genomic PPS locus with the aptamer/TetR-DOZI system were synchronized by 5% D-sorbitol to ring-stage parasites and allowed to expand ±aTc in two or three biological replicate samples. Parasitemia values were measured daily by flow cytometry and plotted as the average ± SD of replicate samples. For growth-rescue experiments, synchronous parasites were allowed to expand ±aTc, and -aTc plus 200 µM IPP, 5 µM FOH, 5 µM GGOH, or 5 µM decaprenol (C50-OH). For growth-rescue experiments involving FOS, PPS KD parasites were synchronized to rings with 5% D-sorbitol and grown for 4 days (96 hr) ± aTc. After 96 hr, all culture wells were synchronized again with 5% D-sorbitol and supplemented with 10 µM FOS and 200 µM IPP, 5 µM FOH, 5 µM GGOH, or 5 µM decaprenol. Parasites were cultured for another 38 hr before harvest at 134 total hours post-initial synchronization for IFA analysis of apicoplast morphology. Parasites grown ±aTc with 10 µM FOS and 200 µM IPP were allowed to expand for an additional 48 hr and harvested at 182 hr post-initial synchronization for analysis by IFA and qPCR for apicoplast morphology and apicoplast:nuclear genome levels, respectively.
 
-## qPCR analysis of apicoplast:nuclear genomic DNA levels
+### qPCR analysis of apicoplast:nuclear genomic DNA levels
 
 Genomic DNA was extracted from triplicate parasite samples grown ±aTc with 10 µM FOS and 200 µM IPP and harvested at 182 hr post-initial synchronization. DNA extraction was performed using the QIAmp DNA Blood Mini Kit (Qiagen 51104). Primers for qPCR were designed to amplify a 120–140 bp region of an apicoplast gene (TufA, PF3D7_API02900, primers 35–36) and each of two nuclear genes (I5P, PF3D7_0802500; ADSL, PF3D7_0206700; primers 31–34). Approximately 100 ng of DNA was amplified in each of three biological replicates with PowerUp SYBR Green Master Mix (Thermo Fisher A25741) in a 96-well plate with 20 µL reaction volume on a Quantstudio3 Real Time PCR system. Specificity of primer amplification was confirmed for every sample by identifying only one melting temperature for the product of each qPCR reaction. Abundance of apicoplast relative to nuclear DNA was determined by comparative Ct analysis (Schmittgen and Livak, 2008), with amplification of TufA (apicoplast) and I5P (nuclear) and calculation of 2∆Ct, where ∆Ct = CtTufA – CtI5P. As a positive control, abundance of a second nuclear gene (ADSL) relative to I5P was calculated similarly. The 2∆Ct value for TufA or ADSL was normalized to +aTc for each gene to determine a normalized target gene:control gene DNA abundance. Error bars represent the standard deviation between replicates, and p values were determined by two-tailed unpaired t-test in GraphPad Prism 9.0.
 
-## MiaA gene disruption
+### MiaA gene disruption
 
 The gene encoding MiaA (PF3D7_1207600) was disrupted in the NF54 PfMev line using CRISPR/Cas9 and gene deletion by double-crossover homologous recombination, similar to the recently described disruption of the DXPR gene (PF3D7_1467300) (Swift et al., 2020b). Homology arm regions (411 bp for the 5’ arm and 540 bp for the 3’ arm) were PCR-amplified from genomic DNA with primers 19–22 and cloned into the vector pRS (Swift et al., 2020b) using ligation-independent cloning (In-Fusion, Clontech, Mountain View, CA). A guide RNA with sequence AATAACGATATTAAATGTAA was cloned into a modified pAIO vector called pCasG (Rajaram et al., 2020) using primers 23 and 24; 75 µg of pRS-miaA-KO plasmid was combined with 75 µg of the pCasG guide RNA plasmid and transfected into NF54 PfMev parasites. Transfected parasites were allowed to expand for 48 hr in 50 µM mevalonate before selection with 5 nM WR99210 and 50 µM mevalonate. Parasites returning from positive selection were genotyped by PCR using primers 25–30. Asynchronous growth of ∆MiaA PfMev parasites ± Mev compared to parental PfMev parasites was performed on biological duplicate samples. Average parasitemia values ± SD were plotted versus time and fit to an exponential growth equation in GraphPad Prism 9.0. Apicoplast (SufB: Pf3D7_API04700) and nuclear (LDH: PF3D7_1324900) genome PCR was performed to confirm apicoplast status in parental PfMev and ∆MiaA parasites, as previously reported (Swift et al., 2020b).
 
-## Western blots
+### Western blots
 
 Samples of episomal PPS-GFP Dd2 or endogenously HA-FLAG-tagged PPS Dd2 parasites were harvested by centrifugation and treated with 0.05% saponin (Sigma 84510) in PBS for 5 min at room temperature and spun down by centrifuge at 5000 rpm for 30 min at 4°C; 2% SDS or LDS sample buffer (Life Technologies NP0007) was added to saponin pellets, resuspended by sonication, and incubated overnight at 4°C. 5× Sample buffer containing beta-mercaptoethanol was added to parasite samples before heating at 95°C for 5 min and centrifuging at 13,000 rpm for 5 min. Samples were fractionated by SDS-polyacrylamide gel electrophoresis using 10% acrylamide gels run at 120 V in the BIO-RAD mini-PROTEAN electrophoresis system. Fractionated proteins were transferred from polyacrylamide gel to a nitrocellulose membrane at 100 V for 1 hr using the BIO-RAD wet transfer system. Membranes were blocked in 1% casein/PBS for 1 hr at room temperature and then probed with primary antibody overnight at 4°C and secondary antibody at room temperature for 1 hr. Episomal PPS-RFP parasite samples were probed with 1:1000 mouse anti-RFP (Invitrogen Life Technologies MA5-15257) and 1:10,000 donkey anti-mouse DyLight800 (Invitrogen Life Technologies SA5-10172). Endogenous HA-FLAG-tagged PPS parasite samples were probed with Roche rat anti-HA monoclonal 3F10 (Sigma 11867423001) and mouse anti-FLAG (Sigma F1804) primary antibodies and goat anti-rat IRDye800CW (Licor 926–32219) and goat anti-mouse IRDye800CW (Licor 925–32210) secondary antibodies. As a loading control, blots were probed with rabbit anti-EF1α 1° antibody (Mamoun and Goldberg, 2001) and donkey anti-rabbit-IRDye680 2° antibody (Licor 926–68023). Densitometry analysis of band intensities was performed using the Licor Image Studio Lite software and median local background.
 
-## Sequence similarity analysis and structural homology modeling
+### Sequence similarity analysis and structural homology modeling
 
 Sequence similarity searches for P. falciparum homologs to chicken FPPS (Uniprot P08836) were performed by BLASTP analysis as implemented at the Plasmodium Genomics Resource webpage (https://www.plasmodb.org/). Sequence similarity searches using the PPS (PF3D7_0202700) protein sequence as query were carried out using NCBI BLAST (Boratyn et al., 2013) (excluding organisms in the phylum Apicomplexa to which P. falciparum belongs) and MPI HHpred (Zimmermann et al., 2018). A homology model of PPS was generated by the MPI HHpred software using the X-ray crystallographic structural model of E. coli OPPS (PDB 3WJK), which was one of the top 10 homology hits by HHpred analysis, as template. Structural models were visualized using PyMol (Schrödinger).
 
-## β-Carotene extraction and analysis by mass spectrometry
+### β-Carotene extraction and analysis by mass spectrometry
 
 For determination of β-carotene levels in parasite-infected versus uninfected erythrocytes, 35 mL of 4% hematocrit P. falciparum culture infected at 13–15% parasitemia with the Dd2 PPS aptamer/TetR-DOZI KD parasites were collected after 6 days of growth in the presence or absence of 1 µM aTc. Uninfected erythrocyte samples were prepared by collecting 20 mL of 4% hematocrit uninfected culture incubated for 6 days in RPMI media that lacked or contained 2.5 g/L AlbuMAX. Samples of infected or uninfected erythrocytes were harvested by centrifugation, lysed by 0.05% saponin, and pelleted by centrifugation. Saponin pellets were washed in PBS and then extracted three times in 1 mL of chilled acetone (pellet was briefly sonicated after addition of the first acetone volume). The supernatant of each extraction was pooled and dried down by vacuum concentration (Speed Vac). Three biological replicates of each sample were prepared. For analysis of AlbuMAX, 85 mg of dry AlbuMAX (equivalent to the AlbuMAX content in 35 mL of complete culture media) was extracted in 3 volumes of cold acetone, and supernatants were combined and dried as above.
 

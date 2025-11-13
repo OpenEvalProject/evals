@@ -33,7 +33,7 @@ Coronaviruses are large, enveloped, positive-stranded RNA viruses belonging to t
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig1-v2.jpg)
 
-**Figure 1.:** (A) Domain architecture of the SARS-CoV-2 spike monomer. NTD, N-terminal domain; RBD, receptor-binding domain; SD1, subdomain 1; SD2, subdomain 2; FP, fusion peptide; HR1, heptad repeat 1; CH, central helix; CD, connector domain; HR2, heptad repeat 2; TM, transmembrane region; CT, C-terminal. (B) Sequence alignment of RBD from SARS-CoV-2, B.1.1.7, and B.1.351 variant spike proteins. The N501Y, K417N, and E484K mutations are highlighted in red with a *. Cysteines forming disulfide bonds are marked in orange. (C–E) The interface of ACE2 (cyan) in complex with spike RBD from SARS-CoV-2 (violet), B.1.1.7 lineage (yellow), and B.1.351 lineage (green). Residues 501, 500, 417, 487, and 484 from the RBD and the mutant RBD, and the contacting residues from ACE2 (Y41, K353, D355, D30, and Y83) are shown in sticks. Hydrogen bonds are shown in dash lines. (F) Representative images of ACE2–mCherry (red) HEK293 cells stained with 100 nM AlexaFluor488-labeled RBD (green). (G) Saturated binding of AlexaFluor488-labeled RBD to cell-surface ACE2. NS, non-specific. (H) Series-diluted RBD and RBD mutants were incubated with ACE2-expressing cells in the presence of AlexaFluor488-labeled RBD protein (100 nM). Concentrations used for unlabeled RBD and RBD mutants were from 5 μM to 0.25 nM with threefold dilution. Kd values were calculated using the Cheng–Prusoff equation.Figure 1—source data 1.Figure 1G,H.
+**Figure 1.:** (A) Domain architecture of the SARS-CoV-2 spike monomer. NTD, N-terminal domain; RBD, receptor-binding domain; SD1, subdomain 1; SD2, subdomain 2; FP, fusion peptide; HR1, heptad repeat 1; CH, central helix; CD, connector domain; HR2, heptad repeat 2; TM, transmembrane region; CT, C-terminal. (B) Sequence alignment of RBD from SARS-CoV-2, B.1.1.7, and B.1.351 variant spike proteins. The N501Y, K417N, and E484K mutations are highlighted in red with a *. Cysteines forming disulfide bonds are marked in orange. (C–E) The interface of ACE2 (cyan) in complex with spike RBD from SARS-CoV-2 (violet), B.1.1.7 lineage (yellow), and B.1.351 lineage (green). Residues 501, 500, 417, 487, and 484 from the RBD and the mutant RBD, and the contacting residues from ACE2 (Y41, K353, D355, D30, and Y83) are shown in sticks. Hydrogen bonds are shown in dash lines. (F) Representative images of ACE2–mCherry (red) HEK293 cells stained with 100 nM AlexaFluor488-labeled RBD (green). (G) Saturated binding of AlexaFluor488-labeled RBD to cell-surface ACE2. NS, non-specific. (H) Series-diluted RBD and RBD mutants were incubated with ACE2-expressing cells in the presence of AlexaFluor488-labeled RBD protein (100 nM). Concentrations used for unlabeled RBD and RBD mutants were from 5 μM to 0.25 nM with threefold dilution. Kd values were calculated using the Cheng–Prusoff equation.
 
 Recently, several variants with increased transmissibility have been found. The alpha variant (B.1.1.7 lineage) was first detected in the United Kingdom in September 2020, and another variant (B.1.351 lineage, beta) was first detected in October 2020 in the Republic of South Africa (Rahimi and Talebi Bezmin Abadi, 2021; Greaney et al., 2021; CNBC, 2021). Both of these mutants carry an N501Y mutation, and the B.1.351 lineage has two additional mutations (K417N and E484K) within the RBD region (Figure 1B,C; Leung et al., 2021; Tu et al., 2021). Recent data suggest that the FDA-authorized mRNA vaccines continued to induce a high level of neutralization against the B.1.1.7 variant, but a lower level against B.1.351 variants. Several researchers have assessed the neutralization potency of numerous antibodies against the two new variants. Their data suggest that some neutralizing antibodies in phase II/III clinical trials were not able to retain their neutralizing capability against the B.1.351 variant. As these mutations are within the RBD region, an understanding of the mechanism that allows the new variants to bind to the ACE2 receptor is of great value.
 
@@ -41,21 +41,47 @@ The structure of the RBD–ACE2 complex showed that extensive interactions are f
 
 ## Results
 
-## Cell-surface binding of RBD to ACE2
+### Cell-surface binding of RBD to ACE2
 
 To elucidate the interaction between the RBD of SARS-CoV-2 variants and ACE2, we performed a cell-surface-binding assay. ACE2 with a mCherry fused at the C-terminus was transfected into HEK293 cells. Confocal microscopic images subsequently showed that ACE2 was located mainly in the cell membrane and endoplasmic reticulum (Figure 1F). ACE2–mCherry-positive cells were stained with AlexaFluor488 labeled-RBD, and the overlay images showed the co-localization of RBD and ACE2 on the cell surface (Figure 1F), validating their interaction.
 
 To measure the binding affinity of RBD from SARS-CoV-2 for ACE2 on the surface of cells, saturation binding was performed using fluorescence flow cytometry by titration of Alexa488-RBD without washing the cells, which yielded a Kd of about 50 nM (Figure 1G). We also performed a competition-binding assay by titrating unlabeled RBD to compete with 100 nM Alexa488-RBD, which showed a similar affinity of 50 nM (Figure 1H).
 
-## N501Y mutation slowed the dissociation of the RBD from the ACE2 receptor
+### N501Y mutation slowed the dissociation of the RBD from the ACE2 receptor
 
 To determine the role of the receptor mutations, we first compared the ability of all of the RBD mutants to bind to the cell surface with that of wild-type RBD using a competition binding assay (Figure 1H). The N501Y mutation from the B.1.1.7 variant showed a fourfold greater affinity than wild-type RBD for the cell surface. The mutation resulted in a slightly weaker or similar affinity to cell-surface ACE2, whereas the N501Y, K417N, E484K triple mutation resulted in an affinity similar to that of the wild type RBD. These results demonstrated that N501Y is the key residue change that increases binding affinity.
 
 To further understand the changes in kinetics that result from the RBD mutations, we performed surface plasmon resonance (SPR) on the immobilized RBD or RBD mutants with ACE2 as an analyte (Figure 2A–C, thin black lines). Compared to RBD, both RBDN501Y and RBDTriple showed a 10-fold increase in affinity, which resulted from a significantly lower off-rate and a slightly higher on-rate (Figure 2). Two other amino acid mutations (K417N and E484K) had less impact on ACE2 binding, as verified by two single-point mutants (Figure 2—figure supplement 1). This result again emphasized the role of N501Y, rather than the other two mutations, in increasing binding affinity by slowing the rate of dissociation from the ACE2 receptor.
 
-## AFM showed a higher binding probability and binding strength for the two variants containing N501Y
+![Figure 2.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) Surface plasmon resonance (SPR) sensorgrams (thin black lines) with fits (thick gray lines). ACE2 protein concentrations of 50, 20, 10, 5, 2, and 1 nM were used. Values were fitted to the 1:1 binding model. (D) Kd and kinetic rates are shown as fit ± fitting error.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Surface plasmon resonance (SPR) sensorgrams (thin black lines) are shown with fits (thick gray lines). Concentrations used for ACE2 protein were 50, 20, 10, 5, 2, and 1 nM, respectively. Values were fitted to the 1:1 binding model. (C) Kd and kinetic rates are shown as fit ± fitting error.
+
+### AFM showed a higher binding probability and binding strength for the two variants containing N501Y
 
 In addition to classic ensemble measurements, we used atomic force microscopy (AFM)-based single-molecule force spectroscopy (SMFS) to measure the strength of binding between the three different RBDs and ACE2 on a living cell directly (Alsteens et al., 2017a; Hinterdorfer and Dufrêne, 2006). AFM-SMFS is a powerful single-molecule nanotechnology that can be used like optical and magnetic tweezers to manipulate a single molecule or several molecules mechanically (Jobst et al., 2015; Walder et al., 2017; Alonso-Caballero et al., 2021; Löf et al., 2019; Huang et al., 2019; Zhang et al., 2019; Xing et al., 2020). It has been widely used to study protein mechanics and protein–protein interactions, including the interaction between the spike proteins of viruses and living cells (Kim et al., 2010; Cuellar-Camacho et al., 2020; Yang et al., 2020; Sieben et al., 2012; Alsteens et al., 2017b; Yu et al., 2019; Ma et al., 2017). A previous AFM experiment identified the binding events between the wild-type RBD and human ACE2 transfected on A549 cells, obtaining their binding probability and unbinding force/kinetics (Yang et al., 2020). In our work, a single RBD is site-specifically immobilized to a peptide-coated AFM tip via an enzymatic ligation (Figure 3A, step 1) (Deng et al., 2019; Ott et al., 2018; Yuan et al., 2019; Popa et al., 2016). An N-terminal GL sequence is present in the peptide, and a C-terminal NGL is added to the three RBDs. These two sequences can be recognized and ligated by protein ligase OaAEP1 into a peptide bond linkage, and the RBD is attached to the tip for AFM measurement (Deng et al., 2019). Then, we used the ACE2–mCherry-transfected HEK293 cells as the target cell, which is immobilized on a Petri dish coated with poly-D-lysine. With the help of fluorescence, we targeted the transfected cell for measurement (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of the AFM-SMFS measurement process showing how the interaction is quantified. RBD with an N-terminal NGL recognition sequence is immobilized on a GL-coated AFM tip by the ligase OaAEP1, which recognizes the two sequences and ligates them to form a peptide bond (1). As the AFM tip approaches the target cell (2), RBD binds to ACE2 (3). Then the tip retracts, and the complex dissociates, leading to an unbinding force peak (4). (B) The reddish ACE2–mCherry-transfected HEK293 cell is measured under the AFM tip by an inverted fluorescent microscope. (C) Representative force-extension curves show no binding event (curve 1) and specific binding events between RBD–ACE2 complexes with an unbinding force peak (curves 2–4). In the force histograms (inset), RBDN501Y and RBDTriple show higher unbinding forces (57 pN and 56 pN) than the RBD (49 pN). (D) Box plot of the specific binding probabilities between the three RBDs and target cells from AFM experiments, indicating a higher binding probability for the two mutants under five different velocities. The box indicates the 25th and 75th percentiles. (E) 3D AFM force mapping of the cell surface showed the unbinding force distribution. (F) A plot of loading rate against the most probable unbinding forces from the complexes showed a linear relationship. The data are fitted to the Bell–Evans model to extract the off-rate.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** A clear unbinding peak with force higher than 20 pN is present.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** The rupture forces are 40 ± 11 pN (RBDK417N, n = 894) and 41 ± 9 pN (RBDE484K, n = 606), respectively.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** The gray symbols are the forces required for an individual unbinding event under a specific loading rate. The five solid markers in each graph are the most probable unbinding forces under the five different loading rates. The data are fitted by the Bell–Evans model to obtain the koff.
 
 Upon moving the AFM tip towards the cell, the RBD contacts the cell and binds to the ACE2 on the surface (steps 2 and 3). Then, the tip retracts at a constant velocity and pulls the complex apart by breaking all the interactions, leading to a force-extension curve with a force peak corresponding to the unbinding of the RBD–ACE2 complex (steps 3 and 4, Figure 3A; Rief et al., 1997). If the RBD does not bind to the ACE2 receptor, a featureless curve will be observed (Figure 3C, curve 1). Finally, the tip moves to another spot (65 nm away) on the cell and repeats the cycle for tens of hundreds of times, leading to a force map of the unbinding force distribution of RBD over the cell surface (Figure 3E; Hinterdorfer et al., 1996; Müller et al., 2009).
 
@@ -63,9 +89,15 @@ Because previous ensemble measurements showed that the N501Y mutation contribute
 
 Moreover, AFM-SMFS can also be used to obtain the unbinding kinetics, which further support our previous conclusions. According to the Bell–Evans model, the force that is externally applied by AFM lowers the unbinding activation energy (Merkel et al., 1999; Yu et al., 2017; Zheng and Li, 2011; Garcia-Manyes and Beedle, 2017). Thus, the binding strength of the ligand–receptor bond (i.e. interaction) is proportional to the logarithm of the loading rate, which describes the effect of the force applied on the bond over time. Thus, we pulled the RBD–ACE2 complexes apart at different velocities, and plotted the relationship between the unbinding forces and loading rate (Figure 3F, Figure 3—figure supplement 4). From the fit (SI), we can estimate the bond dissociation rate (koff) and the length scale of the energy barrier (Δxβ) (Hickman et al., 2017). Similarly, the koff of the two RBD mutants are close to each other (0.030 ± 0.017 s−1 and 0.035 ± 0.024  s−1) but slower than that of the wild-type RBD (0.075 ± 0.048  s−1).
 
-## SMD simulations revealed a higher unbinding force for the complexes due to additional π-π and cation-π interactions resulting from the N501Y mutation
+### SMD simulations revealed a higher unbinding force for the complexes due to additional π-π and cation-π interactions resulting from the N501Y mutation
 
 To explore the possible molecular mechanism of RBD–ACE2 complex dissociation under force, we performed SMD simulations to visualize the unbinding process that took place during the AFM study (Figure 4 and Figure 4—video 1, Figure 4—video 2, Figure 4—video 3; Dong et al., 2017; Milles et al., 2018; Tian et al., 2020; Mei et al., 2020). In the wild-type RBD–ACE2 interaction, T500 forms two hydrogen bonds with Y41 and D355 from ACE2; K417 from RBD forms a salt bridge with D30 from ACE2; and N487 forms one hydrogen bond with Y83 (Figure 4A, snapshot 1). The broken forms of these interactions, except the interaction between N487 and Y83, showed the highest rupture force during the simulations and are regarded as the most critical step for the dissociation of the complex . This force was defined as the rupture or disassociation force for the complex and was simulated as 427 ± 58 pN (n = 20, Figure 4A, Figure 4—figure supplement 1A). Then, the interaction between N487 and Y83 was broken, leading to the complete dissociation of the complex (Figure 4A, snapshot 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig4-v2.jpg)
+
+**Figure 4.:** (A–C) Force-extension traces of RBD–ACE2 (violet), RBDN501Y–ACE2 (orange), and RBDTriple–ACE2 (green) complexes pulled apart at 5 Å/ns. The curves represent the average results from 20 simulations, with the standard deviations represented by vertical lines. In the ribbon diagrams, ACE2 is colored in cyan. Snapshots 1 and 2 represent the changes that occur as the RBDs are dissociated from ACE2 sequentially. The residues that are involved in the interaction between RBDs and ACE2 are labeled and depicted in sphere models, and the residue is colored in red if the interaction in which it participates is ruptured in the snapshot. (D, E) The distances between the Y41 (left) and K353 (right) residues of the ACE2 receptor and the Y(N)501 and residue of RBD (colored in purple), RBDN501Y (orange) or RBDTriple (green) as the extension elongates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69091/elife-69091-fig4-figsupp1-v2.jpg)
 
 In the RBDN501Y–ACE2 complex, Y501 forms an additional π-π interaction with Y41 and an additional π-cation interaction with K353 (Figure 4B, snapshot 1). The rupture of these additional interactions as well as the interactions that are also present in the wild-type complex (snapshot 1) led to the highest rupture force during the simulation. An elevated unbinding force of 499 ± 67 pN (n = 20) was obtained for the complex between RBDN501Y and ACE2 compared to that for the complex between wild-type RBD and ACE2 (p=8.29 e–4, Figure 4B, Figure 4—figure supplement 1B). Similarly, SMD simulations revealed that RBDTriple might also have a stronger contact than wild-type RBD with ACE2. The unbinding force was 521 ± 65 pN (p=2.33 e–5, Figure 4C, Figure 4—figure supplement 1C).
 
@@ -87,7 +119,7 @@ Nowadays, most vaccines are designed on the basis of the RBD or spike protein. N
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 The genes were ordered from GenScript Inc The RBD construct contains the SAS-COV-2 spike protein (residues 319–591), followed by a GGGGS linker and an 8XHis tag in a pcDNA3.4 modified vector (SI). Its mutants, including RBDN501Y, RBDK417N, RBDE484K, and RBDTriple (N501Y, K417N, E484K), were generated using the QuikChange kit. Their sequences were all verified by direct DNA sequencing (GENERAL BIOL). A C-terminal NGL was added to the RBD for use in the AFM-SMFS experiment. The human ACE2 construct contains the ACE2 extracellular domain (residues 19–740) and an Fc region of IgG1 at the C-terminus.
 
@@ -95,21 +127,21 @@ All RBD and human ACE2 proteins were expressed in Expi293 cells with OPM-293 CD0
 
 OaAEP1(C247A) is cysteine 247 to alanine mutant of asparaginyl endoprotease 1 from Oldenlandia affinis, abbreviated as OaAEP1 here (Yang et al., 2017; Shi et al., 2021). ELP is the elastin-like polypeptide (Ott et al., 2017). OaAEP1 and ELP were overexpressed in BL21(DE3) Escherichia coli. Luria-Bertani (LB) medium and agar plates (Sangon Biotech) were used for the culture of E. coli. Protein concentrations were routinely determined by Nanodrop 2000. Details of the protein expression and purification protocols can be found in the literature (Deng et al., 2019; Yang et al., 2017; Ott et al., 2017).
 
-## Confocal microscopy
+### Confocal microscopy
 
 A confocal microscope was used to detect binding between SARS-CoV-2 RBD and the ACE2 receptor on the cell surface. Briefly, ACE2–mCherry cells were seeded into a poly-D-lysine precoated confocal dish and stained with AlexaFluor488-labeled-RBD (100 nM) for 30 min at room temperature (RT). After three washes, the samples were imaged on a confocal microscope (Zeiss LSM 710), and the images were prepared using ZEN software.
 
-## Cell-surface binding by flow cytometry
+### Cell-surface binding by flow cytometry
 
 For saturation binding, wide-type RBD protein was labeled with AlexaFluor488 NHS Ester (Yeasen) according to the manufacturer’s instructions. ACE2 expression cells (mCherry positive) and control HEK293 cells (mCherry negative) were resuspended in PBS buffer and incubated with AlexaFluor488 labeled-RBD at 4℃ for 1 hr, and then subjected to flow cytometry without washing. Mean fluorescence intensity (MFI) of AlexaFluor488 was reported for total binding (mCherry positive) and non-specific binding (mCherry negative). Kd value was calculated from the saturation-binding curve.
 
 For the competitive binding, ACE2 expression cells were resuspended in PBS buffer and incubated with 100 nM AlexaFluor488-labeled RBD in the presence of competitors (0–5000 nM of unlabeled-RBD and RBD mutants). The mixture was allowed to equilibrate for 1 hr before flow cytometry (ThermoFisher Attune NxT) without washing. The binding of RBD mutants was reported by changes in the MFI of AlexaFluor488. The decrease in the MFI value was directly proportional to the increase in the concentration of competitors. Competition curves were fitted using nonlinear regression with top and bottom values shared. The IC50 value was converted to an absolute inhibition constant Kd using the Cheng–Prusoff equation (Newton et al., 2008).
 
-## Surface plasma resonance
+### Surface plasma resonance
 
 SPR studies were performed using Biacore T200 (GE Healthcare). Purified RBD and RBD mutants were amine-immobilized on the CM5 chips. Purified ACE2 protein was injected at 20 μL/min in 0.15 M NaCl, 20 mM HEPES, pH 7.4. The surface was regenerated with a pulse of 25 mM HCl at the end of each cycle to restore resonance units to baseline. Kinetics analysis was performed with SPR evaluation software version 4.0.1 (GE Healthcare).
 
-## AFM tip functionalization
+### AFM tip functionalization
 
 First, the maleimide group for cysteine coupling was added onto the amino-functionalized AFM tip using the hetero-bifunctional crosslinker sulfosuccinimidyl 4-(N-maleimidomehthyl) cyclohexane-1-carboxylate (Sulfo-SMCC, Thermo Scientific) from the reaction between amino and -NHS. Then, the peptide GL-ELP20-C was added to the maleimide. The long ELP20 serves as a spacer that prevents non-specific interactions between the tip and the cell surface, and is a signature for the single-molecule event. Finally, target RBDs with the C-terminal NGL sequence were site-specifically linked to the tip by the ligase OaAEP1, which recognized the N-terminal GL on the tip and the C-terminal NGL, forming a peptide bond (Deng et al., 2019; Song et al., 2021).
 
@@ -117,23 +149,31 @@ Specifically, we used the silicon nitride AFM cantilever (MLCT-BIO-DC, Bruker Co
 
 To add RBD to the AFM tip, the GL-functionalized cantilevers were incubated with a 50 μL of a mixed solution of 60 μM RBD-NGL and 1 μM OaAEP1 in the measurement buffer. The OaAEP1-catalyzed coupling was performed in the measurement buffer (100 mM Tris, 100 mM NaCl, pH 7.4) at RT for ~30 min, forming a covalent NGL linkage between the AFM tip and the RBD.
 
-## AFM-SMFS experiment
+### AFM-SMFS experiment
 
 AFM (Nanowizard4, JPK) coupled to an inverted fluorescent microscope (Olympus IX73) was used to acquire correlative images and the force-extension curve. The AFM and the microscope were equipped with a cell culture chamber that allowed the temperature to be maintained at 37°C  ±  1 °C. Fluorescence images were recorded using a water-immersion lens (×10, numerical aperture (NA) 0.3). Optical images were analyzed using ImageJ software.
 
 The D tip of the MLCT-Bio-DC cantilever (Bruker) was used to probe the interaction between the RBD and ACE2 on the cell. Its accurate spring constant was determined by a thermally induced fluctuation method (Hutter and Bechhoefer, 1993). The peptide linker C-ELP20-GL was used to functionalize the AFM tips as previously described (Deng et al., 2019). Typically, the tip contacted the cell surface for 400 ms under an indentation force of 450 pN, thereby ensuring a site-specific interaction between the RBD on the tip and ACE2 on a cell while minimizing the non-specific interaction. The sample was scanned using 32 × 32 pixels per line (1024 lines) and a sample number of 10,500. Then, moving the tip up vertically at a constant velocity (5 µm/s, if not specified), the complex ruptured. Then, the tip was moved to another location to repeat this cycle several thousands of times. As a result, a force-extension curve, possibly including the complex unbinding event, was obtained. AFM images and force-extension curves were analyzed using JPK data process analysis software.
 
-## Bell–Evans model to extract kinetics
+### Bell–Evans model to extract kinetics
 
-The dissociation of the RBD–ACE2 complex in the AFM experiment is a non-equilibrium process that can be modeled as an all-or-none two-state process, with force-dependent rate constant k(F). The rate constant can be described by the Bell–Evans model (Merkel et al., 1999; Evans and Ritchie, 1997):(1)kF=koffexp⁡F∆xβkbT
+The dissociation of the RBD–ACE2 complex in the AFM experiment is a non-equilibrium process that can be modeled as an all-or-none two-state process, with force-dependent rate constant k(F). The rate constant can be described by the Bell–Evans model (Merkel et al., 1999; Evans and Ritchie, 1997):
+
+$$
+kF=k_{off}exp⁡\frac{F\Deltax_{\beta}}{k_{b}T}
+$$
 
 where k(F) is the complex dissociation rate constant under a stretching force of F, koff is the dissociation rate constant under zero force, and Δxβ is the distance between the bonded state and the transition state of dissociation.
 
-For the dynamic force spectroscopy measurements, the slope a of the force-extension curves immediately (2–3 nm) before the rupture event was first determined to obtain the average loading rate (r=av, where v is the velocity in the rupture event). All of the data were fitted with the Bell–Evans model (1), yielding the spontaneous rupture rate, and the distance from the bound state to the transition state with the following equation:(2)F=kbT∆xβln∆xβkoffkbT+kbT∆xβln⁡r
+For the dynamic force spectroscopy measurements, the slope $a$ of the force-extension curves immediately (2–3 nm) before the rupture event was first determined to obtain the average loading rate ($r=av$, where $v$ is the velocity in the rupture event). All of the data were fitted with the Bell–Evans model (1), yielding the spontaneous rupture rate, and the distance from the bound state to the transition state with the following equation:
+
+$$
+F=\frac{k_{b}T}{\Deltax_{\beta}}ln\frac{\Deltax_{\beta}}{k_{off}k_{b}T}+\frac{k_{b}T}{\Deltax_{\beta}}ln⁡r
+$$
 
 By performing the AFM unbinding experiment under five different pulling speeds, 0.5 µm/s, 1 µm/s, 3 µm/s, 5 µm/s, and 10 µm/s, the relationship between the most probable rupture force and loading rate can be obtained on a log scale, which is fitted by a linear line as equation (2). Thus, the slope of this line can be used to calculate the Δxβ, which is the distance between the bonded state and the transitional unbonded state, and the y-intercept is used to calculate the koff.
 
-## SMD simulation for the dissociation of RBD–ACE2 complex
+### SMD simulation for the dissociation of RBD–ACE2 complex
 
 The structure model for RBD in complex with the receptor ACE2 was taken from the Protein Data Bank (PDB:6M0J). The RBD mutants RBDN501Y and RBDTriple have no structure available and thus were created using the CHARMM36 force field (Best et al., 2012). Each system underwent a similar equilibration and minimization procedure. The molecular dynamics simulations were set up with the QwikMD plug-in in VMD (Humphrey et al., 1996), and simulations were performed employing the NAMD molecular dynamics package (Phillips et al., 2005). The CHARMM36 force field was used in all simulations. Simulations were performed with explicit solvent using the CHARMM TIP3P (Zheng and Li, 2011) water model in the NpT ensemble. The temperature was maintained at 300.00 K using Langevin dynamics. The pressure was maintained at one atmosphere using a Nosé–Hoover Langevin piston (Kim et al., 2019). A distance cut-off of 12.0 Å was applied to short-range, non-bonded interactions, and 10.0 Å for the smothering functions. Long-range electrostatic interactions were treated using the particle-mesh Ewald method. The motion equations were integrated using the r-RESPA (Phillips et al., 2005) multiple time-step scheme to update the short-range interactions every one step and long-range electrostatic interactions every two steps. A time step of integration of 2 fs was chosen for all simulations. Before the molecular dynamics (MD) simulations, all of the systems were submitted to an energy minimization protocol for 1000 steps. An MD simulation with position restraints in the protein backbone atoms was performed for 1 ns, with temperature ramping from 0 K to 300 K in the first 0.25 ns, which served to pre-equilibrate the system before the steered MD simulations. The RBD mutations were subjected to 100 ns of equilibrium MD to ensure conformational stability. All structures shown are from post-equilibration MD simulations.
 

@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.09183.001 Clustering of receptors associated with immunoreceptor tyrosine-based activation motifs (ITAMs) initiates the macrophage antimicrobial response. ITAM receptors engage Src-family tyrosine kinases (SFKs) to initiate phagocytosis and macrophage activation. Macrophages also encounter nonpathogenic molecules that cluster receptors weakly and must tune their sensitivity to avoid inappropriate responses. To investigate this response threshold, we compared signaling in the presence and absence of receptor clustering using a small-molecule inhibitor of Csk, which increased SFK activation and produced robust membrane-proximal signaling. Surprisingly, receptor-independent SFK activation led to a downstream signaling blockade associated with rapid degradation of the SFK LynA. Inflammatory priming of macrophages upregulated LynA and promoted receptor-independent signaling. In contrast, clustering the hemi-ITAM receptor Dectin-1 induced signaling that did not require LynA or inflammatory priming. Together, the basal-state signaling checkpoint regulated by LynA expression and degradation and the signaling reorganization initiated by receptor clustering allow cells to discriminate optimally between pathogens and nonpathogens. DOI: http://dx.doi.org/10.7554/eLife.09183.001
+Clustering of receptors associated with immunoreceptor tyrosine-based activation motifs (ITAMs) initiates the macrophage antimicrobial response. ITAM receptors engage Src-family tyrosine kinases (SFKs) to initiate phagocytosis and macrophage activation. Macrophages also encounter nonpathogenic molecules that cluster receptors weakly and must tune their sensitivity to avoid inappropriate responses. To investigate this response threshold, we compared signaling in the presence and absence of receptor clustering using a small-molecule inhibitor of Csk, which increased SFK activation and produced robust membrane-proximal signaling. Surprisingly, receptor-independent SFK activation led to a downstream signaling blockade associated with rapid degradation of the SFK LynA. Inflammatory priming of macrophages upregulated LynA and promoted receptor-independent signaling. In contrast, clustering the hemi-ITAM receptor Dectin-1 induced signaling that did not require LynA or inflammatory priming. Together, the basal-state signaling checkpoint regulated by LynA expression and degradation and the signaling reorganization initiated by receptor clustering allow cells to discriminate optimally between pathogens and nonpathogens.
 
 ## Introduction
 
@@ -43,49 +43,49 @@ We derived macrophages from the bone marrow of CskAS mice and compared SFK signa
 
 ## Results
 
-## SFK activation in the absence of receptor clustering fails to induce downstream signaling
+### SFK activation in the absence of receptor clustering fails to induce downstream signaling
 
-## Inhibiting Csk in macrophages leads to rapid SFK activation
+#### Inhibiting Csk in macrophages leads to rapid SFK activation
 
-We generated bone marrow-derived macrophages (BMDMs) from
+We generated bone marrow-derived macrophages (BMDMs) from CskAS mice and verified that they express normal levels of myeloid and macrophage surface markers (Figure 1). Within three seconds of adding 3-IB-PP1 to CskAS BMDMs, we observed a 60–80% loss of phosphorylation of the SFK inhibitory-tail tyrosine and a 100–400% increase in activation-loop tyrosine phosphorylation (Figure 2, left lanes). Activated SFKs continued to accumulate, reaching a maximum fivefold to eightfold above basal within 90 s. As expected from the low affinity of 3-IB-PP1 for WT Csk (Tan et al., 2014), 3-IB-PP1 treatment had no effect on SFK phosphorylation in WT BMDMs (Figure 2, right lanes).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig1-v1.jpg)
 
-**Figure 1.:** AS BMDMs.Expression of the surface markers F4/80, CD11b, and CD11c in bone marrow-derived macrophages (BMDMs) from CskAS mice was assessed by flow cytometry. Data in this figure and those that follow are representative of three or more independent experiments.DOI: http://dx.doi.org/10.7554/eLife.09183.003
+**Figure 1.:** Expression of the surface markers F4/80, CD11b, and CD11c in bone marrow-derived macrophages (BMDMs) from CskAS mice was assessed by flow cytometry. Data in this figure and those that follow are representative of three or more independent experiments.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig2-v1.jpg)
 
-**Figure 2.:** Adherent BMDMs generated from Csk or ASWT mice were treated with 10 µM 3-IB-PP1. The resulting lysates were separated by SDS-PAGE and subjected to immunoblotting with antibodies specific to the inactive and active forms of the Src-family tyrosine kinases (SFKs) (pLynY507 and pSFKY416, respectively). An immunoblot of total Syk protein shows the total protein content in each lane.DOI: http://dx.doi.org/10.7554/eLife.09183.004
+**Figure 2.:** Adherent BMDMs generated from CskAS or WT mice were treated with 10 µM 3-IB-PP1. The resulting lysates were separated by SDS-PAGE and subjected to immunoblotting with antibodies specific to the inactive and active forms of the Src-family tyrosine kinases (SFKs) (pLynY507 and pSFKY416, respectively). An immunoblot of total Syk protein shows the total protein content in each lane.
 
-## Activated SFKs initiate robust membrane-proximal signaling but no downstream signaling
+#### Activated SFKs initiate robust membrane-proximal signaling but no downstream signaling
 
-We next examined signaling downstream of the SFKs in the presence and absence of receptor clustering. To investigate signaling in response to receptor clustering, we treated macrophages with zymosan, a particulate β-glucan derived from yeast cell walls that binds the Dectin-1 hemi-ITAM receptor (
+We next examined signaling downstream of the SFKs in the presence and absence of receptor clustering. To investigate signaling in response to receptor clustering, we treated macrophages with zymosan, a particulate β-glucan derived from yeast cell walls that binds the Dectin-1 hemi-ITAM receptor (Underhill, 2003; Goodridge et al., 2011). The preparations of zymosan used for our experiments were depleted of TLR2 agonists, and this depleted zymosan is hereafter referred to as zymosandep (Figure 3, Figure 3—figure supplement 1). To initiate and synchronize signaling, zymosandep particles were settled onto adherent macrophages by pulse spinning. As expected, treatment with zymosandep induced phosphorylation of the MAPK Erk as well as phosphorylation of Akt (Figure 3). Abrogation of downstream signaling in the presence of the Syk inhibitor BAY 61-3606 (Figure 3A) and the SFK inhibitor PP2 (Figure 3B) confirmed the dependence of zymosandep signaling on SFK and Syk activation, especially within the first 5 min of signaling before Syk begins to be activated independently of the SFKs (Takata et al., 1994; Fitzer-Attas et al., 2000).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig3-v1.jpg)
 
-**Figure 3.:** (A) BMDMs were pulse-spun with intact zymosan or zymosandep (10 particles per cell) in the presence and absence of the Syk inhibitor BAY 61-3606 (1 µM). Signal transduction was assessed by immunoblotting with antibodies specific to activating phosphorylation sites of Syk, Erk, and Akt. Vinculin immunoblots are shown as loading controls. (B) The effect of the SFK inhibitor PP2 (20 µM) on zymosandep stimulation was also assessed. See Figure 3—figure supplement 1 for a model of signaling induced by intact and depleted zymosan.DOI: http://dx.doi.org/10.7554/eLife.09183.005
+**Figure 3.:** (A) BMDMs were pulse-spun with intact zymosan or zymosandep (10 particles per cell) in the presence and absence of the Syk inhibitor BAY 61-3606 (1 µM). Signal transduction was assessed by immunoblotting with antibodies specific to activating phosphorylation sites of Syk, Erk, and Akt. Vinculin immunoblots are shown as loading controls. (B) The effect of the SFK inhibitor PP2 (20 µM) on zymosandep stimulation was also assessed. See Figure 3—figure supplement 1 for a model of signaling induced by intact and depleted zymosan.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** After full depletion of TLR2 agonists by repeated boiling, sonication, and hot alkali treatment, zymosandep should activate BMDMs exclusively through the Src and Syk kinases in a Dectin-1-dependent manner.DOI: http://dx.doi.org/10.7554/eLife.09183.006
+**Figure 3—figure supplement 1.:** After full depletion of TLR2 agonists by repeated boiling, sonication, and hot alkali treatment, zymosandep should activate BMDMs exclusively through the Src and Syk kinases in a Dectin-1-dependent manner.
 
-In contrast to zymosan
+In contrast to zymosandep, SFK activation by 3-IB-PP1 failed to induce significant levels of Erk phosphorylation (Figure 4A, arrow). Small changes in Erk phosphorylation were occasionally seen in response to 3-IB-PP1 treatment. However, within each experiment, any minimal increase in Erk phosphorylation with 3-IB-PP1-treatment was equivalent to the effect of pulse-spinning the cells without any additional stimulation (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig4-v1.jpg)
 
-**Figure 4.:** (A) CskAS BMDMs were pulse-spun with 3-IB-PP1 (10 μM) or with zymosandep (10 particles per cell). Signal transduction was assessed by immunoblotting with antibodies specific to activating phosphorylation sites of the SFKs, Syk, PLCγ2, and Erk (arrow). Total Erk1 is shown as a loading control. (B) CskAS BMDMs were pulse-spun in the presence and absence of 3-IB-PP1, and Erk phosphorylation was assessed by immunoblot. Total Erk1/2 is shown as a loading control. (C) WT BMDMs were treated with zymosandep for 5 min with varying concentrations of 3-IB-PP1 and analyzed by immunoblot. See Figure 4—figure supplement 1 for additional tests of 3-IB-PP1 specificity for CskAS, Figure 4—figure supplement 2 for evidence of that 3-IB-PP1 cotreatment suppresses signaling through the CSF-1 receptor, and Figure 4—figure supplement 3 for evidence that actin-remodeling agents cannot restore 3-IB-PP1-induced downstream signaling.DOI: http://dx.doi.org/10.7554/eLife.09183.007
+**Figure 4.:** (A) CskAS BMDMs were pulse-spun with 3-IB-PP1 (10 μM) or with zymosandep (10 particles per cell). Signal transduction was assessed by immunoblotting with antibodies specific to activating phosphorylation sites of the SFKs, Syk, PLCγ2, and Erk (arrow). Total Erk1 is shown as a loading control. (B) CskAS BMDMs were pulse-spun in the presence and absence of 3-IB-PP1, and Erk phosphorylation was assessed by immunoblot. Total Erk1/2 is shown as a loading control. (C) WT BMDMs were treated with zymosandep for 5 min with varying concentrations of 3-IB-PP1 and analyzed by immunoblot. See Figure 4—figure supplement 1 for additional tests of 3-IB-PP1 specificity for CskAS, Figure 4—figure supplement 2 for evidence of that 3-IB-PP1 cotreatment suppresses signaling through the CSF-1 receptor, and Figure 4—figure supplement 3 for evidence that actin-remodeling agents cannot restore 3-IB-PP1-induced downstream signaling.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** AS.(A) WT BMDMs were treated for 2 min with recombinant M-CSF (10 or 50 ng/ml) in the presence or absence of 3-IB-PP1 (10 µM). Treatment with 3-IB-PP1 does not affect M-CSF-induced phosphorylation of Erk or Akt. (B) WT and CskAS BMDMs were treated to a time course of 3-IB-PP1. Only CskAS cells showed any measurable change in tyrosine phosphorylation (4G10 + pY20 anti-pTyr antibodies).DOI: http://dx.doi.org/10.7554/eLife.09183.008
+**Figure 4—figure supplement 1.:** (A) WT BMDMs were treated for 2 min with recombinant M-CSF (10 or 50 ng/ml) in the presence or absence of 3-IB-PP1 (10 µM). Treatment with 3-IB-PP1 does not affect M-CSF-induced phosphorylation of Erk or Akt. (B) WT and CskAS BMDMs were treated to a time course of 3-IB-PP1. Only CskAS cells showed any measurable change in tyrosine phosphorylation (4G10 + pY20 anti-pTyr antibodies).
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** AS cells.CskAS BMDMs were treated for 5 min with recombinant M-CSF (2, 5, 20, or 50 ng/ml) in the presence or absence of 3-IB-PP1 (10 µM). Addition of 3-IB-PP1 impairs M-CSF induction of Akt and Erk phosphorylation (arrows), suggesting an active, inhibitory effect of 3-IB-PP1 treatment that blocks downstream signaling.DOI: http://dx.doi.org/10.7554/eLife.09183.009
+**Figure 4—figure supplement 2.:** CskAS BMDMs were treated for 5 min with recombinant M-CSF (2, 5, 20, or 50 ng/ml) in the presence or absence of 3-IB-PP1 (10 µM). Addition of 3-IB-PP1 impairs M-CSF induction of Akt and Erk phosphorylation (arrows), suggesting an active, inhibitory effect of 3-IB-PP1 treatment that blocks downstream signaling.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig4-figsupp3-v1.jpg)
 
-**Figure 4—figure supplement 3.:** BMDMs were stimulated with 3-IB-PP1 or zymosandep in combination with the actin-remodeling agents Cytochalasin D (CytD, 10 µM), Latrunculin A (LtrA, 0.5 µM), and Jasplakinolide (Jas, 1 µM). Although each compound affected zymosandep signaling, none restored Erk phosphorylation after 3-IB-PP1 treatment (CytD n = 2). Note that these images were developed with high signal, so the basal Erk phosphorylation looks high even though the cells have not been activated. The important point is that there is no increase in Erk phosphorylation with 3-IB-PP1 treatment.DOI: http://dx.doi.org/10.7554/eLife.09183.010
+**Figure 4—figure supplement 3.:** BMDMs were stimulated with 3-IB-PP1 or zymosandep in combination with the actin-remodeling agents Cytochalasin D (CytD, 10 µM), Latrunculin A (LtrA, 0.5 µM), and Jasplakinolide (Jas, 1 µM). Although each compound affected zymosandep signaling, none restored Erk phosphorylation after 3-IB-PP1 treatment (CytD n = 2). Note that these images were developed with high signal, so the basal Erk phosphorylation looks high even though the cells have not been activated. The important point is that there is no increase in Erk phosphorylation with 3-IB-PP1 treatment.
 
 Interestingly, upstream activators, including the SFKs, Syk, and PLCγ2, were phosphorylated robustly in response to 3-IB-PP1 treatment (Figure 4A). In fact, SFK activation by this maximally effective dose of 3-IB-PP1 (Tan et al., 2014) produced much more robust membrane-proximal signaling than did zymosandep, where an increase in SFK activation-loop phosphorylation was not even detectable. It is possible that our failure to detect SFK activation-loop phosphorylation in response to zymosandep was due to only a small, local pool of SFKs being activated at the site of receptor clustering, as suggested by previous imaging (Goodridge et al., 2011). Alternatively, perhaps an increase in SFK activation is not the initiating event of receptor-mediated signaling. Rather, it is the interaction of clustered receptors with a preexisting pool of active SFKs, whose function is somehow blocked outside of large-scale receptor clusters. This model would be consistent with recent studies in T cells in which a basally active pool of SFKs is the major driver of TCR signaling (Nika et al., 2010; Manz et al., 2015).
 
@@ -93,61 +93,61 @@ The bulky structure of 3-IB-PP1 should increase its specificity for CskAS over W
 
 Treating CskAS CD4/CD8 double-positive thymocytes with 3-IB-PP1 induces robust Erk phosphorylation only in the presence of small-molecule actin remodeling agents or when combined with costimulation through the CD28 pathway, which leads to actin remodeling (Tan et al., 2014). We performed analogous experiments with BMDMs by adding Cytochalasin D, Latrunculin A, or Jasplakinolide in combination with 3-IB-PP1 or zymosandep (Figure 4—figure supplement 3). Although actin remodeling affected Erk phosphorylation in response to zymosandep, it did not increase Erk phosphorylation in response to 3-IB-PP1. This finding suggests that the signaling blockade between activated SFKs and Erk in the absence of receptor clustering is fundamentally different in macrophages than in thymocytes, reflecting the different functions of actin remodeling and costimulatory pathways in signal initiation.
 
-## Priming macrophages with inflammatory cytokines overcomes their dependence on receptor clustering for downstream signaling
+### Priming macrophages with inflammatory cytokines overcomes their dependence on receptor clustering for downstream signaling
 
-## Inflammatory priming of macrophages rescues signaling downstream of SFK activation by 3-IB-PP1
+#### Inflammatory priming of macrophages rescues signaling downstream of SFK activation by 3-IB-PP1
 
-Macrophages become more responsive to some stimuli following priming with inflammatory cytokines such as interferon-γ (IFN-γ). To test the effects of inflammatory priming on SFK-mediated signaling, we exposed BMDMs to IFN-γ for 12–16 hr prior to treatment with zymosan
+Macrophages become more responsive to some stimuli following priming with inflammatory cytokines such as interferon-γ (IFN-γ). To test the effects of inflammatory priming on SFK-mediated signaling, we exposed BMDMs to IFN-γ for 12–16 hr prior to treatment with zymosandep or 3-IB-PP1. Strikingly, priming with IFN-γ enabled 3-IB-PP1 treatment to stimulate robust downstream signaling through Erk (Figure 5A, arrow) as well as Akt, the MAPK JNK, and the calcium-sensitive transcription factor NFAT (Figure 5B, arrows). Priming with IFN-γ had a comparatively small effect on downstream signaling in response to zymosandep.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig5-v1.jpg)
 
-**Figure 5.:** (A) CskAS BMDMs were incubated 12–16 hr in non-priming medium or in medium containing 25 U/ml IFN-γ. Signal transduction after 3-IB-PP1 or zymosandep treatment was assessed by immunoblotting with antibodies specific to activating phosphorylation sites of DAP12, Syk, LAT, PLCγ2, PLCγ1, and Erk (arrow). Total Erk1 is shown as a loading control. (B) Signal transduction in the PI3K/Akt and JNK pathways was assessed by immunoblotting with antibodies specific for phosphorylated c-Cbl, PI3K, Akt (arrow), and JNK (arrow). Total JNK is shown as a loading control. NFAT1 activation was assessed by the faster migration of cellular NFAT1 upon dephosphorylation. See Figure 5—figure supplement 1 for further characterization of signaling in primed and unprimed cells.DOI: http://dx.doi.org/10.7554/eLife.09183.011
+**Figure 5.:** (A) CskAS BMDMs were incubated 12–16 hr in non-priming medium or in medium containing 25 U/ml IFN-γ. Signal transduction after 3-IB-PP1 or zymosandep treatment was assessed by immunoblotting with antibodies specific to activating phosphorylation sites of DAP12, Syk, LAT, PLCγ2, PLCγ1, and Erk (arrow). Total Erk1 is shown as a loading control. (B) Signal transduction in the PI3K/Akt and JNK pathways was assessed by immunoblotting with antibodies specific for phosphorylated c-Cbl, PI3K, Akt (arrow), and JNK (arrow). Total JNK is shown as a loading control. NFAT1 activation was assessed by the faster migration of cellular NFAT1 upon dephosphorylation. See Figure 5—figure supplement 1 for further characterization of signaling in primed and unprimed cells.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Treatment of IFN-γ-primed and unprimed CskAS BMDMs with 3-IB-PP1 led to activating phosphorylation of the cytoskeleton-associated SFK substrates HS1, Vav, and FAK. (B) Comparison of background Erk phosphorylation in unprimed and IFN-γ-primed CskAS BMDMs with pulse-spin only.DOI: http://dx.doi.org/10.7554/eLife.09183.012
+**Figure 5—figure supplement 1.:** (A) Treatment of IFN-γ-primed and unprimed CskAS BMDMs with 3-IB-PP1 led to activating phosphorylation of the cytoskeleton-associated SFK substrates HS1, Vav, and FAK. (B) Comparison of background Erk phosphorylation in unprimed and IFN-γ-primed CskAS BMDMs with pulse-spin only.
 
 Priming BMDMs with IFN-γ generally increased membrane-proximal signaling in response to 3-IB-PP1. We observed more robust phosphorylation of DAP12, Syk, LAT, PLCγ1, PLCγ2, Cbl, PI3K, HS1, Vav, and Fak in primed cells than in unprimed cells (Figure 5, Figure 5—figure supplement 1A). Pulse-spinning alone did not induce robust Erk activation in primed cells (Figure 5—figure supplement 1B).
 
 In addition to being more robust, phosphorylation of signaling proteins downstream of Syk (e.g., LAT, PLCγ1/2, c-Cbl, and PI3K) was more sustained in primed cells (Figure 5). This observation is especially striking because Syk phosphorylation continued to increase over time during treatment with 3-IB-PP1 in either primed or unprimed cells and also during treatment with zymosandep and was therefore kinetically uncoupled from downstream signaling through Erk and Akt. Additionally, even the transient, low-level proximal signaling in response to 3-IB-PP1 in unprimed cells was quantitatively equivalent to or higher in magnitude than the signaling in response to zymosandep. Finally, as mentioned above, cotreatment with 3-IB-PP1 suppressed signaling through the CSF-1R pathway (Figure 4—figure supplement 2). Together, these observations reinforce our claim that unprimed cells do not simply fail to reach a quantitative signaling threshold. Rather, a more qualitative difference in signaling circuitry explains the differential effects of priming on 3-IB-PP1 vs zymosandep signaling. After observing a general enhancement of membrane-proximal signaling in primed cells, we hypothesized that priming directly influences the activation of all the membrane-proximal signaling proteins we tested.
 
-We first considered the possibility that signaling proteins involved in negative feedback, themselves activated by the SFKs, are somehow bypassed in primed cells treated with 3-IB-PP1. Surprisingly, we found that priming actually enhanced the phosphorylation of proteins that negatively regulate signaling, including the ITIM-containing protein Sirpα, the inositol phosphatase SHIP1, and the tyrosine phosphatase SHP-1 (
+We first considered the possibility that signaling proteins involved in negative feedback, themselves activated by the SFKs, are somehow bypassed in primed cells treated with 3-IB-PP1. Surprisingly, we found that priming actually enhanced the phosphorylation of proteins that negatively regulate signaling, including the ITIM-containing protein Sirpα, the inositol phosphatase SHIP1, and the tyrosine phosphatase SHP-1 (Figure 6), which led to activation of the negative-regulatory adaptor Dok-3 (Figure 6—figure supplement 1). These data indicate that priming does not generally inhibit negative feedback in macrophages. However, the increased phosphorylation of negative regulatory proteins in primed cells provided a clue to the upstream factor driving signaling in response to 3-IB-PP1: Since the SFK Lyn is the primary kinase responsible for phosphorylating and activating ITIMs and their associated phosphatases (Ravetch and Lanier, 2000; Lowell, 2010), we hypothesized that Lyn is driving signaling and that its expression or function is enhanced by IFN-γ priming.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig6-v1.jpg)
 
-**Figure 6.:** Immunoblots show phosphorylation of negative regulatory proteins Sirpα, SHIP1, and SHP-1 in unprimed and IFN-γ-primed CskAS BMDMs treated with 3-IB-PP1 or zymosandep. See Figure 6—figure supplement 1 for evidence that the negative-regulatory adaptor Dok-3 is also activated in response to 3-IB-PP1 treatment.DOI: http://dx.doi.org/10.7554/eLife.09183.013
+**Figure 6.:** Immunoblots show phosphorylation of negative regulatory proteins Sirpα, SHIP1, and SHP-1 in unprimed and IFN-γ-primed CskAS BMDMs treated with 3-IB-PP1 or zymosandep. See Figure 6—figure supplement 1 for evidence that the negative-regulatory adaptor Dok-3 is also activated in response to 3-IB-PP1 treatment.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** Co-immunoprecipitation and immunoblot experiments show that 3-IB-PP1 treatment of CskAS BMDMs induces Dok-3 association with SHIP1 and Dok-3 tyrosine phosphorylation.DOI: http://dx.doi.org/10.7554/eLife.09183.014
+**Figure 6—figure supplement 1.:** Co-immunoprecipitation and immunoblot experiments show that 3-IB-PP1 treatment of CskAS BMDMs induces Dok-3 association with SHIP1 and Dok-3 tyrosine phosphorylation.
 
-## Activity of the SFK LynA is required for signaling through Erk and Akt in the absence of induced receptor clustering
+### Activity of the SFK LynA is required for signaling through Erk and Akt in the absence of induced receptor clustering
 
-## Inflammatory priming leads to Lyn upregulation
+#### Inflammatory priming leads to Lyn upregulation
 
-We wanted to understand whether IFN-γ enables Erk signaling in 3-IB-PP1-treated Csk
+We wanted to understand whether IFN-γ enables Erk signaling in 3-IB-PP1-treated CskAS BMDMs by means of direct cross-talk between IFN-γ and Erk signaling pathways or by a priming-mediated transcriptional change. We therefore treated BMDMs with IFN-γ in combination with cycloheximide to block translation, but we found that cycloheximide exposure was toxic and blocked all signaling through Erk. As an alternative, we tested different IFN-γ incubation times to look at the kinetics of the signaling enhancement. We found that 3-IB-PP1 failed to induce robust Erk phosphorylation in cells treated with IFN-γ for 4 hr or less (Figure 7A). IFN-γ priming for 6 hr or 8 hr produced modest Erk phosphorylation, and priming for 16 hr led to robust Erk phosphorylation in response to 3-IB-PP1. This temporal pattern strongly suggests that a priming-dependent transcriptional change potentiates Erk signaling after 3-IB-PP1 treatment.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig7-v1.jpg)
 
-**Figure 7.:** (A) CskAS BMDMs were incubated in non-priming medium or in priming medium containing 25 U/ml IFN-γ and then analyzed directly or treated with 3-IB-PP1 for 5 min. Erk phosphorylation and Lyn expression were assessed by immunoblot. See Figure 7—figure supplement 1 for uncropped LynA blots. (B) CskAS BMDMs were primed overnight in 25 U/ml IFN-γ or 10 ng/ml GM-CSF. Erk phosphorylation after 3-IB-PP1 treatment and basal Lyn expression are shown. (C) Immunoblots show basal expression of Lyn, Hck, Fgr, Syk, and PLCγ2 with and without priming.DOI: http://dx.doi.org/10.7554/eLife.09183.015
+**Figure 7.:** (A) CskAS BMDMs were incubated in non-priming medium or in priming medium containing 25 U/ml IFN-γ and then analyzed directly or treated with 3-IB-PP1 for 5 min. Erk phosphorylation and Lyn expression were assessed by immunoblot. See Figure 7—figure supplement 1 for uncropped LynA blots. (B) CskAS BMDMs were primed overnight in 25 U/ml IFN-γ or 10 ng/ml GM-CSF. Erk phosphorylation after 3-IB-PP1 treatment and basal Lyn expression are shown. (C) Immunoblots show basal expression of Lyn, Hck, Fgr, Syk, and PLCγ2 with and without priming.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig7-figsupp1-v1.jpg)
 
-**Figure 7—figure supplement 1.:** (A) Blots displayed in cropped format in Figure 7A and (B) Figure 7B are shown here in their entirety. Note that total Lyn protein disappears with 3-IB-PP1 treatment. This observation is introduced in the main text during the discussion of Figure 8.DOI: http://dx.doi.org/10.7554/eLife.09183.016
+**Figure 7—figure supplement 1.:** (A) Blots displayed in cropped format in Figure 7A and (B) Figure 7B are shown here in their entirety. Note that total Lyn protein disappears with 3-IB-PP1 treatment. This observation is introduced in the main text during the discussion of Figure 8.
 
 Blotting for total Lyn protein in the presence and absence of IFN-γ revealed that Lyn expression was substantially increased by priming (Figure 7A, left lanes, Figure 7—figure supplement 1) and that Lyn expression correlated with the ability of 3-IB-PP1 to induce Erk signaling (Figure 7A, right lanes). We also tested an alternative priming agent, the growth factor GM-CSF (Goodridge et al., 2009), and found an intermediate degree of Lyn upregulation that corresponded with an intermediate level of Erk phosphorylation after 3-IB-PP1 treatment (Figure 7B). Moreover, among the SFKs and other membrane-proximal signaling proteins examined, only Lyn and Csk itself were upregulated in both GM-CSF-primed and IFN-γ-primed BMDMs (Figure 7C). This observation is consistent with raw data from a recent microarray study showing increased Lyn expression in IFN-γ-primed macrophages (Noubade et al., 2014). We therefore hypothesized that Lyn upregulation during inflammatory priming enables downstream signaling in BMDMs in response to 3-IB-PP1.
 
-## Lyn expression is required for downstream signaling in response to 3-IB-PP1 but not receptor clustering
+#### Lyn expression is required for downstream signaling in response to 3-IB-PP1 but not receptor clustering
 
-To confirm that Lyn expression is important for Erk signaling in response to 3-IB-PP1, we crossed
+To confirm that Lyn expression is important for Erk signaling in response to 3-IB-PP1, we crossed CskAS mice with Lyn-deficient mice (Chan et al., 1997) to generate Lyn−/−CskAS mice. Strikingly, Lyn deficiency rendered BMDMs completely unresponsive to the signal-potentiating effects of priming; Lyn−/−CskAS BMDMs primed with IFN-γ failed to signal through Erk after 3-IB-PP1 treatment (Figure 8A, arrow) even though they express normal macrophage surfaces markers (Figure 8—figure supplement 1). In contrast, the magnitude of downstream signaling in response to zymosandep was unaffected by Lyn deficiency. This reveals a fundamental difference in the requirement for Lyn in the SFK-mediated signaling initiated by 3-IB-PP1 compared to receptor clustering. Hck and Fgr, the other major SFKs expressed in macrophages, cannot compensate for the loss of Lyn to promote downstream signaling during 3-IB-PP1 treatment. However, in ligand-induced receptor clustering Hck and Fgr do compensate for Lyn and downstream signaling is able to proceed.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig8-v1.jpg)
 
-**Figure 8.:** (A) Signaling in IFN-γ-primed CskAS and Lyn−/−CskAS BMDMs was assessed by immunoblotting as described previously. Erk phosphorylation is highlighted by a single arrow, total LynA level is highlighted by a double arrow. (B) Immunoblots show SFK expression in unprimed and IFN-γ-primed WT and Lyn−/− BMDMs. See Figure 8—figure supplement 1 for evidence that Lyn-deficient BMDMs display normal surface markers.DOI: http://dx.doi.org/10.7554/eLife.09183.017
+**Figure 8.:** (A) Signaling in IFN-γ-primed CskAS and Lyn−/−CskAS BMDMs was assessed by immunoblotting as described previously. Erk phosphorylation is highlighted by a single arrow, total LynA level is highlighted by a double arrow. (B) Immunoblots show SFK expression in unprimed and IFN-γ-primed WT and Lyn−/− BMDMs. See Figure 8—figure supplement 1 for evidence that Lyn-deficient BMDMs display normal surface markers.
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig8-figsupp1-v1.jpg)
 
-**Figure 8—figure supplement 1.:** Comparison of surface markers in Lyn−/−CskAS and CskAS BMDMs.DOI: http://dx.doi.org/10.7554/eLife.09183.018
+**Figure 8—figure supplement 1.:** Comparison of surface markers in Lyn−/−CskAS and CskAS BMDMs.
 
 When we treated Lyn−/−CskAS BMDMs with 3-IB-PP1, the remaining SFKs, Hck and Fgr, induced the phosphorylation of Vav, Syk, LAT, PLCγ, and SHIP1 (Figure 8A). Although phosphorylation of these membrane-proximal signaling proteins was less robust in Lyn−/−CskAS BMDMs, the level of proximal signaling still surpassed the level detected after zymosandep treatment. We conclude that Lyn activity is specifically required for priming-enabled Erk signaling in response to 3-IB-PP1.
 
@@ -157,25 +157,25 @@ Hck is, however, upregulated in both WT and Lyn−/− BMDMs in response to IFN-
 
 The correlation between Lyn expression and Erk phosphorylation suggests that a threshold of Lyn abundance and activity determines whether SFK activation can induce Erk signaling in response to 3-IB-PP1. Interestingly, we found that the amount of Lyn protein decreased during the course of 3-IB-PP1 treatment (Figure 8A, double arrow), and this led us to quantify the levels of all of the SFKs during 3-IB-PP1 treatment.
 
-## LynA is selectively degraded after Csk inhibition
+#### LynA is selectively degraded after Csk inhibition
 
-We next examined the levels of Lyn, Hck, and Fgr protein during 3-IB-PP1-treatment of Csk
+We next examined the levels of Lyn, Hck, and Fgr protein during 3-IB-PP1-treatment of CskAS BMDMs (Figure 9A). We assigned immunoblot bands to individual SFK species by testing antibodies against lysates from BMDMs derived from WT, Hck−/−, and Lyn−/− mice (Lowell et al., 1994; Chan et al., 1997) and were able to differentiate between Hck, Fgr, and the two splice forms of Lyn, LynA (56 kDa) and LynB (53 kDa) (Stanley et al., 1991; Yi et al., 1991) (Figure 9—figure supplement 1). The two isoforms of Hck (59 kDa and 56 kDa) (Lock et al., 1991) were also distinguishable but behaved identically in our experiments and are not discussed separately.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig9-v1.jpg)
 
-**Figure 9.:** (A) CskAS and WT BMDMs were treated with 3-IB-PP1. Total kinase levels were detected by immunoblotting with antibodies to LynA, LynA+LynB, Hck, and Fgr. Total Syk is shown as a loading control. (B) SFK levels for the first 5 min of 3-IB-PP1 treatment were quantified by densitometry. Error bars reflect the standard deviation from three separate experiments. (C) Antibodies were used to immunoprecipitate Hck or LynA from BMDM lysates with or without treatment with 3-IB-PP1 for 30 s. The ubiquitination of each immunoprecipitate and the specificity and efficiency of the immunoprecipitation procedures were assessed by immunoblotting. See Figure 9—figure supplement 1 for assignment of immunoblot bands, Figure 9—figure supplement 2 for direct detection of LynA and activated SFK laddering in whole-cell lysate, and Figure 9—figure supplement 3 for a sequence alignment of LynA and LynB that shows putative ubiquitination and phosphorylation sites unique to LynA.DOI: http://dx.doi.org/10.7554/eLife.09183.019
+**Figure 9.:** (A) CskAS and WT BMDMs were treated with 3-IB-PP1. Total kinase levels were detected by immunoblotting with antibodies to LynA, LynA+LynB, Hck, and Fgr. Total Syk is shown as a loading control. (B) SFK levels for the first 5 min of 3-IB-PP1 treatment were quantified by densitometry. Error bars reflect the standard deviation from three separate experiments. (C) Antibodies were used to immunoprecipitate Hck or LynA from BMDM lysates with or without treatment with 3-IB-PP1 for 30 s. The ubiquitination of each immunoprecipitate and the specificity and efficiency of the immunoprecipitation procedures were assessed by immunoblotting. See Figure 9—figure supplement 1 for assignment of immunoblot bands, Figure 9—figure supplement 2 for direct detection of LynA and activated SFK laddering in whole-cell lysate, and Figure 9—figure supplement 3 for a sequence alignment of LynA and LynB that shows putative ubiquitination and phosphorylation sites unique to LynA.
 
 ![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig9-figsupp1-v1.jpg)
 
-**Figure 9—figure supplement 1.:** Lysates from WT, Hck-deficient, and Lyn-deficient BMDMs immunoblotted with various antibodies were compared to assign bands to individual SFKs LynA, LynB, Hck, and Fgr.DOI: http://dx.doi.org/10.7554/eLife.09183.020
+**Figure 9—figure supplement 1.:** Lysates from WT, Hck-deficient, and Lyn-deficient BMDMs immunoblotted with various antibodies were compared to assign bands to individual SFKs LynA, LynB, Hck, and Fgr.
 
 ![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig9-figsupp2-v1.jpg)
 
-**Figure 9—figure supplement 2.:** We treated CskAS BMDMs with 3-IB-PP1 (10 μM) or medium alone and observed laddering in activated SFK and total LynA, but not total Hck or inactive SFK immunoblots.DOI: http://dx.doi.org/10.7554/eLife.09183.021
+**Figure 9—figure supplement 2.:** We treated CskAS BMDMs with 3-IB-PP1 (10 μM) or medium alone and observed laddering in activated SFK and total LynA, but not total Hck or inactive SFK immunoblots.
 
 ![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig9-figsupp3-v1.jpg)
 
-**Figure 9—figure supplement 3.:** Alignment of the amino acid sequence of the two isoforms of mouse Lyn reveals lysine and tyrosine residues unique to LynA. Lysine K40 in LynA only is predicted to be a site of ubiquitination.DOI: http://dx.doi.org/10.7554/eLife.09183.022
+**Figure 9—figure supplement 3.:** Alignment of the amino acid sequence of the two isoforms of mouse Lyn reveals lysine and tyrosine residues unique to LynA. Lysine K40 in LynA only is predicted to be a site of ubiquitination.
 
 We examined the levels of Lyn, Hck, and Fgr protein during 3-IB-PP1-treatment of CskAS BMDMs and found that LynA was preferentially depleted (Figure 9A). Total LynA levels in unprimed cells treated with 3-IB-PP1 decreased by 60% within 2 min, whereas Hck, LynB, and Fgr each decreased by only about 30% during the same time frame (Figure 9B). We recapitulated this analysis using three independent Lyn antibodies, indicating that the disappearance of LynA from the immunoblots was unlikely to be caused by a posttranslational modification that blocked antibody recognition.
 
@@ -183,37 +183,37 @@ After treating CskAS cells with 3-IB-PP1, the E3 ubiquitin ligase c-Cbl was robu
 
 We were intrigued by the peculiar susceptibility of LynA to degradation, even compared to LynB. LynA differs from LynB only in a 21 amino-acid insert in its unique region, and this unique insert contains a predicted ubiquitination site (K40) and a phosphorylation site (Y32) (Figure 9—figure supplement 3) (Stanley et al., 1991; Yi et al., 1991; Radivojac et al., 2010; Huang et al., 2013). We therefore speculate that this insert regulates LynA uniquely and marks LynA preferentially for ubiquitination and degradation.
 
-## Lyn is activated preferentially in response to 3-IB-PP1
+#### Lyn is activated preferentially in response to 3-IB-PP1
 
-Having established that LynA is selectively targeted for degradation, we looked more closely at the activation kinetics of the SFKs during the course of 3-IB-PP1 treatment (
+Having established that LynA is selectively targeted for degradation, we looked more closely at the activation kinetics of the SFKs during the course of 3-IB-PP1 treatment (Figure 10). We identified the immunoblot bands that corresponded to inhibitory-tail-phosphorylated Lyn and Hck (Figure 10—figure supplement 1A); activation-loop-phosphorylated Hck, LynA, and LynB (Figure 10—figure supplement 1B); and activation-loop-phosphorylated Fgr (Figure 10—figure supplement 1C). We then analyzed the activation of each of the SFKs following 3-IB-PP1 treatment (Figure 10A).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig10-v1.jpg)
 
-**Figure 10.:** (A) Immunoblots of inactive and active SFKs in CskAS BMDMs treated with 3-IB-PP1. Inactive Lyn and Hck were detected with the antibodies pLynY507 and pHckY527, respectively. Active Lyn, Hck, and Fgr were detected with the pSFKY416 antibody. (B) Levels of inactive SFKs were quantified by densitometry. Error bars reflect the standard deviation from three separate experiments. p-values reflect two-tailed t tests. (C) Levels of active SFKs. A 2-way Anova shows significant pairwise differences between LynA and each other SFK species. See Figure 10—figure supplement 1 for assignment of immunoblot bands and Figure 10—figure supplement 2 for data rendered as fold increase in SFK activation with 3-IB-PP1 treatment.DOI: http://dx.doi.org/10.7554/eLife.09183.023
+**Figure 10.:** (A) Immunoblots of inactive and active SFKs in CskAS BMDMs treated with 3-IB-PP1. Inactive Lyn and Hck were detected with the antibodies pLynY507 and pHckY527, respectively. Active Lyn, Hck, and Fgr were detected with the pSFKY416 antibody. (B) Levels of inactive SFKs were quantified by densitometry. Error bars reflect the standard deviation from three separate experiments. p-values reflect two-tailed t tests. (C) Levels of active SFKs. A 2-way Anova shows significant pairwise differences between LynA and each other SFK species. See Figure 10—figure supplement 1 for assignment of immunoblot bands and Figure 10—figure supplement 2 for data rendered as fold increase in SFK activation with 3-IB-PP1 treatment.
 
 ![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig10-figsupp1-v1.jpg)
 
-**Figure 10—figure supplement 1.:** Lysates from WT, Hck-deficient, and Lyn-deficient BMDMs immunoblotted with various antibodies were compared to assign bands to individual SFKs. (A) Specific antibodies were used to identify immunoblot bands representing inhibitory-tail-phosphorylated Lyn and Hck. (B) Bands representing activation-loop-phosphorylated Hck, LynA, and LynB were similarly assigned. (C) The identity of the activated Fgr band was confirmed by treating Lyn-deficient CskAS cells with 3-IB-PP1 to activate the SFKs, immunoblotting for all active SFKs, partially inactivating the Horseradish peroxidase (HRP) enzyme, and then reprobing with a monoclonal antibody against Fgr.DOI: http://dx.doi.org/10.7554/eLife.09183.024
+**Figure 10—figure supplement 1.:** Lysates from WT, Hck-deficient, and Lyn-deficient BMDMs immunoblotted with various antibodies were compared to assign bands to individual SFKs. (A) Specific antibodies were used to identify immunoblot bands representing inhibitory-tail-phosphorylated Lyn and Hck. (B) Bands representing activation-loop-phosphorylated Hck, LynA, and LynB were similarly assigned. (C) The identity of the activated Fgr band was confirmed by treating Lyn-deficient CskAS cells with 3-IB-PP1 to activate the SFKs, immunoblotting for all active SFKs, partially inactivating the Horseradish peroxidase (HRP) enzyme, and then reprobing with a monoclonal antibody against Fgr.
 
 ![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig10-figsupp2-v1.jpg)
 
-**Figure 10—figure supplement 2.:** Data displayed as fold increase from basal. Fgr shows the highest fold increase because its basal activation is very low. LynA and LynB are both activated more rapidly than are Hck and Fgr, and activated LynA is uniquely short-lived.DOI: http://dx.doi.org/10.7554/eLife.09183.025
+**Figure 10—figure supplement 2.:** Data displayed as fold increase from basal. Fgr shows the highest fold increase because its basal activation is very low. LynA and LynB are both activated more rapidly than are Hck and Fgr, and activated LynA is uniquely short-lived.
 
 Although both Lyn and Hck lost inhibitory-tail phosphorylation during 3-IB-PP1 treatment, the inhibitory tail of Lyn was dephosphorylated preferentially (5% Lyn vs 24% Hck tail phosphorylation remaining after 1 min) (Figure 10B). Similarly, we found that both Lyn isoforms were activation-loop phosphorylated more rapidly than Hck and Fgr. LynA and LynB reached maximum activation-loop phosphorylation within 3–6 s of 3-IB-PP1 addition, whereas activated Hck and Fgr continued to accumulate for the first 1–3 min (Figure 10C).
 
 The active form of LynA was short-lived during 3-IB-PP1 treatment (Figure 10C), mirroring the pattern of total protein degradation. Only 20% of the activation-loop-phosphorylated LynA remained after 3 min, but the other activated SFKs, LynB, Hck, and Fgr persisted at 70%, 80%, and 90%, respectively, of the maximum level. All the SFKs were activated relative to their basal levels (Figure 10—figure supplement 2), but activated LynA was uniquely transient during 3-IB-PP1 treatment.
 
-## Activated LynA persists in primed, 3-IB-PP1-treated BMDMs
+#### Activated LynA persists in primed, 3-IB-PP1-treated BMDMs
 
-Phosphorylation of Erk was detectable in primed BMDMs 3–5 min after zymosan
+Phosphorylation of Erk was detectable in primed BMDMs 3–5 min after zymosandep or 3-IB-PP1 treatment. In unprimed BMDMs treated with 3-IB-PP1, LynA was almost completely degraded within this time frame. LynA protein was also subject to degradation in IFN-γ-primed cells during 3-IB-PP1 treatment, but due to its increased basal expression LynA protein persisted at significant levels through the 3- to 5-min time frame of Erk activation (Figure 11A, Figure 11—figure supplement 1). At each time point during the first 5 min of 3-IB-PP1 treatment, LynA levels were threefold higher in primed cells than in unprimed cells (Figure 11B). We conclude that the greater abundance of LynA protein in primed cells serves as a buffer against degradation, allowing LynA activity to be sustained above a threshold level and enabling Erk signaling in response to 3-IB-PP1.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig11-v1.jpg)
 
-**Figure 11.:** (A) Immunoblots from unprimed and IFN-γ-primed CskAS BMDM lysates show levels of LynA and corresponding Erk phosphorylation during 3-IB-PP1 treatment. (B) Kinetics of LynA degradation relative to the maximum value within each experiment (primed cells, t = 0). (Quantified by densitometry. Error bars reflect the standard deviation over four independent experiments. The p-value is derived from a ratio paired, two-tailed t test.) See Figure 11—figure supplement 1 for independently normalized comparison of Lyn degradation in primed and unprimed cells.DOI: http://dx.doi.org/10.7554/eLife.09183.026
+**Figure 11.:** (A) Immunoblots from unprimed and IFN-γ-primed CskAS BMDM lysates show levels of LynA and corresponding Erk phosphorylation during 3-IB-PP1 treatment. (B) Kinetics of LynA degradation relative to the maximum value within each experiment (primed cells, t = 0). (Quantified by densitometry. Error bars reflect the standard deviation over four independent experiments. The p-value is derived from a ratio paired, two-tailed t test.) See Figure 11—figure supplement 1 for independently normalized comparison of Lyn degradation in primed and unprimed cells.
 
 ![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/09183/elife-09183-fig11-figsupp1-v1.jpg)
 
-**Figure 11—figure supplement 1.:** IFN-γ priming does not change the rate of Lyn degradation after Csk inhibition.DOI: http://dx.doi.org/10.7554/eLife.09183.027
+**Figure 11—figure supplement 1.:** IFN-γ priming does not change the rate of Lyn degradation after Csk inhibition.
 
 Our data support a model in which the precise amount of LynA protein determines whether macrophages strictly require strong ITAM/hemi-ITAM receptor clustering for activation of MAPK, Akt, and calcium signaling pathways. The basal expression level of Lyn sets this threshold, and this level of expression can be tuned by the extracellular milieu: inflammation initiates a program that overrides this LynA-mediated signaling checkpoint, thereby sensitizing macrophages to stimuli that fail to cluster receptors efficiently. In addition, we have found that a unique function of receptor clustering reorganizes signaling through the SFKs, bypassing LynA and enabling Hck- and Fgr-mediated downstream signaling.
 
@@ -235,36 +235,183 @@ Activation of macrophage subsets is a key factor in the progression and severity
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 All mice used in these experiments were derived from the strain C57/BL6. CskAS mice (Tan et al., 2014) are heterozygous for a BAC transgenic CskAS allele on a Csk-null background. Hck−/− mice (Lowell et al., 1994) and Lyn−/− mice (Chan et al., 1997) were used for antibody characterization and breeding. Lyn−/−CskAS mice were generated by crossing CskAS and Lyn−/− mice. All animals were backcrossed to C57/BL6 for 15 generations.
 
-## Preparation of BMDMs
+### Preparation of BMDMs
 
 BMDMs were prepared using standard methods (e.g., as described in Zhu et al., 2008). Bone marrow was extracted from femura/tibiae of mice. After hypotonic lysis of erythrocytes, BMDMs were derived on untreated plastic plates (BD Falcon, Bedford, MA) by culturing in Dulbecco's Modified Eagle Medium (Corning Cellgro, Manassas, VA) containing approximately 10% heat-inactivated fetal calf serum (Omega Scientific, Tarzana, CA), 0.11 mg/ml sodium pyruvate (UCSF Cell Culture Facility), 2 mM penicillin/streptomycin/L-glutamine (Sigma-Aldrich, St. Louis, MO), and 10% CMG-12-14-cell-conditioned medium as a source of M-CSF (Takeshita et al., 2000). After 6 or 7 days, cells were resuspended in enzyme-free ethylenediaminetetraacetic acid (EDTA) buffer and replated in untreated 6-well plates (BD Falcon) at 1 M cells per well in unconditioned medium ±25 U/ml IFN-γ (Peprotech, Rocky Hill, NJ) or 10 ng/ml GM-CSF (eBioscience, San Diego, CA; Goodridge et al., 2009).
 
-## Surface staining of BMDMs
+### Surface staining of BMDMs
 
 BMDMs were resuspended and stained with PE-Cy7-conjugated anti-CD11c (eBioscience clone N418, 25-0114), FITC-conjugated anti-F4/80 (eBioscience clone BM8, 11-4801), and PE-conjugated CD11b (BD Pharmingen, San Jose, CA, clone M1/70 553311). BD and eBioscience antibodies to CD45 were used as single-stained controls. Data were collected on a BD LSRFortessa flow cytometer running FACSDiva software and analyzed in FlowJo (TreeStar, Ashland, OR). Figures were made in Adobe Creative Suite (San Jose, CA).
 
-## Preparation of depleted zymosan
+### Preparation of depleted zymosan
 
 Zymosan (Sigma) was depleted of TLR2 agonist as described previously (Underhill, 2003). Briefly, intact zymosan suspended in phosphate-buffered saline (PBS) was subjected to five 15-min cycles of boiling and sonication followed by pelleting and resuspension in fresh PBS. The sample was then boiled in 10 M NaOH for 1 hr, washed, resuspended in PBS, and counted. Stocks of 1000 M zymosandep particles per ml were stored at −20°C and thawed, briefly sonicated, pelleted, and resuspended before use.
 
-## Macrophage stimulation
+### Macrophage stimulation
 
 Stimuli prepared in Roswell Park Memorial Institute- (RPMI-)1640 medium were added to adherent BMDMs at 37°C. In experiments with zymosandep, all stimuli were applied by pulse spinning at 37°C. BMDMs were stimulated with 10 zymosandep particles per cell (Underhill, 2003), 10 μM 3-IB-PP1 CskAS inhibitor (Okuzumi et al., 2009; Tan et al., 2014), 2–50 ng/ml recombinant mouse M-CSF (eBioscience), 1 μM BAY 61-3606 Syk inhibitor (Calbiochem; Yamamoto et al., 2003), 20 μM PP2 SFK inhibitor (Calbiochem EMD Millipore, Billerica, MA; Hanke et al., 1996) or the actin-remodeling agents Cytochalasin D (10 µM), Latrunculin A (0.5 µM), or Jasplakinolide (1 µM). Reactions were stopped by placing the plate on ice, aspirating the stimulus, adding nonreducing SDS sample buffer, scraping cells off the plate, incubating 5 min at 37°C, adding 50 mM dithiothreitol (DTT), sonicating on a Diagenode Biorupter (Denvillle, NJ), and boiling for 15 min. Samples were separated for immunoblot analysis by sodium dodecyl sulfate polyacrylamide gel electrophoresis (SDS-PAGE) (Novex NuPAGE Thermo Fisher Scientific, Grand Island, NY).
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Stimulated BMDMs were lysed in 1% Lauryl Maltoside Lysis Buffer containing 150 mM NaCl, 0.01% sodium azide, and 10 mM Tris, pH 7.6 with 2 mM NaVO4, 0.01 mg/ml Aprotinin, 0.01 M NaF, 0.01 mg/ml Leupeptin, 0.01 mg/ml Pepstatin A, 2 mM phenylmethanesulfonyl fluoride (PMSF), and 0.4 mM EDTA. After scraping the plates, cells and detergent were incubated 30 min on ice. The lysate was then cleared by ultracentrifugation for 15 min at 50,000 rpm at 4°C in a Beckman (Pasadena, CA) TLA120.2 rotor. The lysates were precleared for 30 min at 4°C with Protein G Sepharose beads (Life Technologies, Carlsbad, CA) and normal rabbit or goat serum as appropriate (Jackson ImmunoResearch, West Grove, PA). Protein G-Sepharose beads were covalently conjugated to Lyn or Hck antibodies (see table below) using dimethyl pimelimidate (Sigma). Antibody-bound beads were added to the lysate and mixed 1.5 hr at 4°C to immunoprecipitate Hck or Lyn. Finally, the samples were applied to micro bio-spin chromatography columns (Bio-Rad, Hercules, CA), washed, and eluted with SDS Sample Buffer.
 
-## Antibodies and immunoblotting
+### Antibodies and immunoblotting
 
-After transfer from SDS-PAGE to Immobilon P membrane (EMD Millipore), blots were blocked with 3% bovine serum albumin (BSA) in 25 mM Tris, pH 8.0; 125 mM NaCl; and 0.02% NaN3. Antibodies were applied in solutions containing 20 mM Tris, pH 8.0; 125 mM NaCl; and 0.05% Tween-20 (plus 2% BSA for primary or 0.5% powered milk for secondary antibody solution). High-stringency washes after antibody binding were in similar Tris-buffered saline and Tween-20 (TBST) buffer with 200 mM NaCl. Antibodies were obtained from Cell Signaling Technology (Danvers, MA), Santa Cruz (Dallas, TX), ProMab Biotechnologies (Richmond, CA), Promega (Madison, WI), Life Technologies, and Sigma-Aldrich). Primary staining was performed with the following antibodies:AntibodySource-catalog no.ID/cloneErk1Santa Cruz-93-GC-16-GErk1/2Santa Cruz-93 + Santa Cruz-154C-16 + C-14FgrProMab-20318/Santa Cruz-503386G2 (PM)/M-60 (SC)HckSanta Cruz-1428M-28JNKCell Signaling-9252–LynACell Signaling-2796/Lowell LabC13F9 (CS)/7478.5 (Lowell)LynA + BSanta Cruz-1544NFAT1Cell Signaling-5861D43B1pAktS473Cell Signaling-4058244F9p-c-CblY700Cell Signaling-8869D16D7pErk1/2T202/Y204Cell Signaling-4377197G2pJNK1/2T183/Y185Promega-V7931–pLynY507Cell Signaling-2731–pHckY527Life-44-912Anti-pSFKnegpPI3Kp85-Y458/p55-Y199Cell Signaling-4228–pPLCγ1Y783Life-44-696 G–pPLCγ2Y759Cell Signaling-3874–pPLCγ2Y1217Cell Signaling-3871–pSFKY416Cell Signaling-4058–pSHIP1Y1020Cell Signaling-3941–pSHP-1Y564Cell Signaling-8849D11G5pSirpαY452Ken Swanson Lab10-1989pSykY352Cell Signaling-271765E4pTyrosineWeiss Lab + Millipore-05-9474G10 + pY20SykWeiss Lab5F5SHIP1Santa Cruz-8425P1C1VinculinSigma-Aldrich-V9264hVIN-1
+After transfer from SDS-PAGE to Immobilon P membrane (EMD Millipore), blots were blocked with 3% bovine serum albumin (BSA) in 25 mM Tris, pH 8.0; 125 mM NaCl; and 0.02% NaN3. Antibodies were applied in solutions containing 20 mM Tris, pH 8.0; 125 mM NaCl; and 0.05% Tween-20 (plus 2% BSA for primary or 0.5% powered milk for secondary antibody solution). High-stringency washes after antibody binding were in similar Tris-buffered saline and Tween-20 (TBST) buffer with 200 mM NaCl. Antibodies were obtained from Cell Signaling Technology (Danvers, MA), Santa Cruz (Dallas, TX), ProMab Biotechnologies (Richmond, CA), Promega (Madison, WI), Life Technologies, and Sigma-Aldrich). Primary staining was performed with the following antibodies:
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Source-catalog no.</th>
+      <th>ID/clone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Erk1</td>
+      <td>Santa Cruz-93-G</td>
+      <td>C-16-G</td>
+    </tr>
+    <tr>
+      <td>Erk1/2</td>
+      <td>Santa Cruz-93 + Santa Cruz-154</td>
+      <td>C-16 + C-14</td>
+    </tr>
+    <tr>
+      <td>Fgr</td>
+      <td>ProMab-20318/Santa Cruz-50338</td>
+      <td>6G2 (PM)/M-60 (SC)</td>
+    </tr>
+    <tr>
+      <td>Hck</td>
+      <td>Santa Cruz-1428</td>
+      <td>M-28</td>
+    </tr>
+    <tr>
+      <td>JNK</td>
+      <td>Cell Signaling-9252</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>LynA</td>
+      <td>Cell Signaling-2796/Lowell Lab</td>
+      <td>C13F9 (CS)/7478.5 (Lowell)</td>
+    </tr>
+    <tr>
+      <td>LynA + B</td>
+      <td>Santa Cruz-15</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>NFAT1</td>
+      <td>Cell Signaling-5861</td>
+      <td>D43B1</td>
+    </tr>
+    <tr>
+      <td>pAktS473</td>
+      <td>Cell Signaling-4058</td>
+      <td>244F9</td>
+    </tr>
+    <tr>
+      <td>p-c-CblY700</td>
+      <td>Cell Signaling-8869</td>
+      <td>D16D7</td>
+    </tr>
+    <tr>
+      <td>pErk1/2T202/Y204</td>
+      <td>Cell Signaling-4377</td>
+      <td>197G2</td>
+    </tr>
+    <tr>
+      <td>pJNK1/2T183/Y185</td>
+      <td>Promega-V7931</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>pLynY507</td>
+      <td>Cell Signaling-2731</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>pHckY527</td>
+      <td>Life-44-912</td>
+      <td>Anti-pSFKneg</td>
+    </tr>
+    <tr>
+      <td>pPI3Kp85-Y458/p55-Y199</td>
+      <td>Cell Signaling-4228</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>pPLCγ1Y783</td>
+      <td>Life-44-696 G</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>pPLCγ2Y759</td>
+      <td>Cell Signaling-3874</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>pPLCγ2Y1217</td>
+      <td>Cell Signaling-3871</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>pSFKY416</td>
+      <td>Cell Signaling-4058</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>pSHIP1Y1020</td>
+      <td>Cell Signaling-3941</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>pSHP-1Y564</td>
+      <td>Cell Signaling-8849</td>
+      <td>D11G5</td>
+    </tr>
+    <tr>
+      <td>pSirpαY452</td>
+      <td>Ken Swanson Lab</td>
+      <td>10-1989</td>
+    </tr>
+    <tr>
+      <td>pSykY352</td>
+      <td>Cell Signaling-2717</td>
+      <td>65E4</td>
+    </tr>
+    <tr>
+      <td>pTyrosine</td>
+      <td>Weiss Lab + Millipore-05-947</td>
+      <td>4G10 + pY20</td>
+    </tr>
+    <tr>
+      <td>Syk</td>
+      <td>Weiss Lab</td>
+      <td>5F5</td>
+    </tr>
+    <tr>
+      <td>SHIP1</td>
+      <td>Santa Cruz-8425</td>
+      <td>P1C1</td>
+    </tr>
+    <tr>
+      <td>Vinculin</td>
+      <td>Sigma-Aldrich-V9264</td>
+      <td>hVIN-1</td>
+    </tr>
+  </tbody>
+</table>
 
 Horseradish peroxidase- (HRP) conjugated secondary antibodies were from Southern Biotech (Birmingham, AL), and blots were developed using Thermo Scientific SuperSignal Femto reagent. Blots were visualized on a Kodak Imagestation. Some blots were reprobed after HRP inactivation by azide treatment and freezing.
 
-## Kinetic analysis
+### Kinetic analysis
 
 Where applicable, immunoblots were analyzed quantitatively by performing densitometry with ImageJ software (Bethesda, MD). Briefly, images were background-subtracted, and strips of the blot corresponding to each band were demarcated and analyzed for each time point/gel lane. Error bars reflect independent analysis of blots from at least three independent experiments. Figures were prepared in Graphpad Prism (La Jolla, CA).

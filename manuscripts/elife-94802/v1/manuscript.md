@@ -10,8 +10,8 @@
 ### Affiliations
 
 1. Foundation for the Promotion of Sanitary and Biomedical Research of the Valencian Community (FISABIO) Valencia Spain
-2. https://ror.org/043nxc105 Institute of Integrative Systems Biology (I2Sysbio), University of Valencia and Spanish National Research Council (CSIC) Valencia Spain
-3. https://ror.org/050q0kv47 Center for Biomedical Research in Epidemiology and Public Health Network (CIBEResp) Madrid Spain
+2. Institute of Integrative Systems Biology (I2Sysbio), University of Valencia and Spanish National Research Council (CSIC) Valencia Spain ([ROR:043nxc105](https://ror.org/043nxc105))
+3. Center for Biomedical Research in Epidemiology and Public Health Network (CIBEResp) Madrid Spain ([ROR:050q0kv47](https://ror.org/050q0kv47))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ Together, these observations highlight the complex interplay between non-coding 
 
 ## Results
 
-## Genome variables
+### Genome variables
 
 The compositional structure of genomes is organized into hierarchical domains, reflecting distinct levels of DNA sequence organization. To characterize this structure, we consider three key genomic variables: genome size, gene content, and coding content. Within the genome, the gene content represents the total amount of DNA that forms genes, encompassing both coding and non-coding regions. Coding content, in turn, refers to the amount of DNA within genes that is transcribed into mRNA. Unlike untranslated regions (UTRs) or intronic sequences, coding DNA sequences (CDSs) are composed of sequences that contribute directly to mRNA synthesis.
 
@@ -39,9 +39,9 @@ Alternative splicing is the process by which different combinations of exons and
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/94802/elife-94802-fig1-v1.jpg)
 
-**Figure 1.:** The selective combination of exons and introns in a gene of 33 nucleotides gives rise to three distinct mRNA isoforms: mRNA1 (16 nucleotides), mRNA2 (9 nucleotides), and mRNA3 (19 nucleotides). When these coding DNA sequences (CDSs) are mapped onto the genome, the coding DNA—defined as the DNA sequences that are transcribed into a mRNA—is found to be composed of 25 nucleotides. The ASR is then computed as the ratio of the total number of nucleotides in mRNA isoforms to the number of nucleotides composing coding DNA: .ASR=(16+9+19)/25=1.76\begin{document}$ASR=(16+9+19)/25=1.76$\end{document}
+**Figure 1.:** The selective combination of exons and introns in a gene of 33 nucleotides gives rise to three distinct mRNA isoforms: mRNA1 (16 nucleotides), mRNA2 (9 nucleotides), and mRNA3 (19 nucleotides). When these coding DNA sequences (CDSs) are mapped onto the genome, the coding DNA—defined as the DNA sequences that are transcribed into a mRNA—is found to be composed of 25 nucleotides. The ASR is then computed as the ratio of the total number of nucleotides in mRNA isoforms to the number of nucleotides composing coding DNA: $ASR=(16+9+19)/25=1.76$.
 
-## Variation in alternative splicing among major clades
+### Variation in alternative splicing among major clades
 
 We performed a comparative analysis to identify variations in alternative splicing across different taxonomic groups. We conducted comparisons of mean values using Welch’s ANOVA with Bonferroni correction to control for multiple testing. To further validate our findings, we also conducted a Monte Carlo permutation test, which supported the conclusions (see ‘Methods’). Due to the presence of extreme outliers, we conducted the permutation test by comparing both the mean and the median. These two measures of central tendency provide complementary insights into the data distributions, which are non-normal in most cases. The mean, while sensitive to extreme values, gives an overall measure of centrality, whereas the median offers a more robust estimate that is less influenced by outliers. Quantitative results of the Monte Carlo permutation test are presented in Supplementary file 1.
 
@@ -49,19 +49,257 @@ To explore how alternative splicing varies across the tree of life, we first com
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/94802/elife-94802-fig2-v1.jpg)
 
-**Figure 2.:** A) alternative splicing ratio (ASR) and (B) normalized ASR (ASR*) distributions across taxonomic groups, including mammals, birds, fish, arthropods, plants, fungi, unicellular eukaryotes, bacteria, and archaea.Box plots represent the median (horizontal line), interquartile range (IQR, box), and whiskers extending to 1.5× IQR. A yellow diamond-shaped point represents the mean, and outliers are shown as individual red points. Colors in the box plots correspond to taxonomic classifications.
+**Figure 2.:** Box plots represent the median (horizontal line), interquartile range (IQR, box), and whiskers extending to 1.5× IQR. A yellow diamond-shaped point represents the mean, and outliers are shown as individual red points. Colors in the box plots correspond to taxonomic classifications.
+
+**Table 1.**
+ Summary statistics for the percentage of gene content relative to genome size (Gene Content/Genome Size (%)),the percentage of coding relative to gene size (Coding Size / Gene Content (%)),the percentage of coding relative to genome size (Coding Size / Genome Size(%)), the alternative splicing ratio (ASR),and the normalized alternative splicing ratio (ASR*) across different taxonomic groups.The table includes the mean ($x¯$), the interpercentile range between the 5th and 95th percentiles $([Q_{0.05},Q_{0.95}])$, and standard deviation (σ) for each group.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Group</th>
+      <th colspan="3">Gene Content / Genome Size (%)</th>
+      <th colspan="3">Coding Size / Gene Content (%)</th>
+      <th colspan="3">Coding Size / Genome Size (%)</th>
+      <th colspan="3">ASR</th>
+      <th colspan="3">ASR*</th>
+    </tr>
+    <tr>
+      <th>x¯\begin{document}$\bar{x}$\end{document}</th>
+      <th>[Q0.05,Q0.95]\begin{document}$[Q_{0.05},Q_{0.95}]$\end{document}</th>
+      <th>σ\begin{document}$\sigma$\end{document}</th>
+      <th>x¯\begin{document}$\bar{x}$\end{document}</th>
+      <th>[Q0.05,Q0.95]\begin{document}$[Q_{0.05},Q_{0.95}]$\end{document}</th>
+      <th>σ\begin{document}$\sigma$\end{document}</th>
+      <th>x¯\begin{document}$\bar{x}$\end{document}</th>
+      <th>[Q0.05,Q0.95]\begin{document}$[Q_{0.05},Q_{0.95}]$\end{document}</th>
+      <th>σ\begin{document}$\sigma$\end{document}</th>
+      <th>x¯\begin{document}$\bar{x}$\end{document}</th>
+      <th>[Q0.05,Q0.95]\begin{document}$[Q_{0.05},Q_{0.95}]$\end{document}</th>
+      <th>σ\begin{document}$\sigma$\end{document}</th>
+      <th>x¯\begin{document}$\bar{x}$\end{document}</th>
+      <th>[Q0.05,Q0.95]\begin{document}$[Q_{0.05},Q_{0.95}]$\end{document}</th>
+      <th>σ\begin{document}$\sigma$\end{document}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mammals</td>
+      <td>44.7</td>
+      <td>[35.5,55.6]</td>
+      <td>6.27</td>
+      <td>3.05</td>
+      <td>[2.47,3.76]</td>
+      <td>0.42</td>
+      <td>1.35</td>
+      <td>[1.09,1.60]</td>
+      <td>0.15</td>
+      <td>3.09</td>
+      <td>[1.78,4.60]</td>
+      <td>0.92</td>
+      <td>2.81</td>
+      <td>[2.11,3.50]</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>Birds</td>
+      <td>52.6</td>
+      <td>[41.8,62.5]</td>
+      <td>6.05</td>
+      <td>4.79</td>
+      <td>[4.18,5.53]</td>
+      <td>0.45</td>
+      <td>2.5</td>
+      <td>[2.21,2.83]</td>
+      <td>0.2</td>
+      <td>2.71</td>
+      <td>[1.76,3.62]</td>
+      <td>0.64</td>
+      <td>2.48</td>
+      <td>[1.96,2.96]</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td>Fish</td>
+      <td>61.9</td>
+      <td>[49.4,74.3]</td>
+      <td>7.50</td>
+      <td>8.65</td>
+      <td>[5.23,13.4]</td>
+      <td>2.52</td>
+      <td>5.39</td>
+      <td>[2.69,8.57]</td>
+      <td>1.77</td>
+      <td>2.26</td>
+      <td>[1.55,2.92]</td>
+      <td>0.41</td>
+      <td>2.02</td>
+      <td>[1.57,2.50]</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>Arthropods</td>
+      <td>60.3</td>
+      <td>[33.1,79.9]</td>
+      <td>14.0</td>
+      <td>11.3</td>
+      <td>[2.15,25.1]</td>
+      <td>7.15</td>
+      <td>6.92</td>
+      <td>[0.910,15.1]</td>
+      <td>4.36</td>
+      <td>2.16</td>
+      <td>[1.34,3.14]</td>
+      <td>0.54</td>
+      <td>2.3</td>
+      <td>[1.59,2.90]</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <td>Plants</td>
+      <td>24.7</td>
+      <td>[7.04,40.4]</td>
+      <td>11.0</td>
+      <td>27.3</td>
+      <td>[14.3,38.5]</td>
+      <td>7.50</td>
+      <td>6.80</td>
+      <td>[1.69,13.6]</td>
+      <td>3.68</td>
+      <td>1.56</td>
+      <td>[1.30,1.87]</td>
+      <td>0.2</td>
+      <td>2.1</td>
+      <td>[1.61,2.46]</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Fungi</td>
+      <td>63.2</td>
+      <td>[41.2,85.9]</td>
+      <td>13.8</td>
+      <td>86.9</td>
+      <td>[67.6,99.2]</td>
+      <td>11.5</td>
+      <td>55.3</td>
+      <td>[33.2,82.7]</td>
+      <td>15.4</td>
+      <td>1.01</td>
+      <td>[1,1.09]</td>
+      <td>0.05</td>
+      <td>1.01</td>
+      <td>[1,1.09]</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>Unicellular Eukaryotes</td>
+      <td>60.9</td>
+      <td>[42.5,88.1]</td>
+      <td>16.2</td>
+      <td>88.6</td>
+      <td>[69.2,99.9]</td>
+      <td>12</td>
+      <td>53.6</td>
+      <td>[33.0,76.3]</td>
+      <td>14.9</td>
+      <td>1.00</td>
+      <td>[1,1.01]</td>
+      <td>2.56 × 10−3</td>
+      <td>1.00</td>
+      <td>[1,1.01]</td>
+      <td>2.56 × 10−3</td>
+    </tr>
+    <tr>
+      <td>Bacteria</td>
+      <td>85.7</td>
+      <td>[76.8,92.2]</td>
+      <td>5.06</td>
+      <td>98.8</td>
+      <td>[97.7,99.5]</td>
+      <td>0.57</td>
+      <td>84.6</td>
+      <td>[75.6,91.2]</td>
+      <td>5.07</td>
+      <td>1.00</td>
+      <td>[1.00,1.00]</td>
+      <td>8.21 × 10−4</td>
+      <td>1.00</td>
+      <td>[1.00,1.00]</td>
+      <td>8.21 × 10−4</td>
+    </tr>
+    <tr>
+      <td>Archaea</td>
+      <td>86.1</td>
+      <td>[74.5,92.4]</td>
+      <td>5.21</td>
+      <td>99.1</td>
+      <td>[98.7,99.4]</td>
+      <td>0.22</td>
+      <td>85.3</td>
+      <td>[73.9,91.5]</td>
+      <td>5.10</td>
+      <td>1.00</td>
+      <td>[1.00,1.01]</td>
+      <td>1.72 × 10−3</td>
+      <td>1.00</td>
+      <td>[1.00,1.01]</td>
+      <td>1.72 × 10−3</td>
+    </tr>
+  </tbody>
+</table>
 
 In addition to alternative splicing, we also examined whether certain genomic composition variables differ across major taxonomic groups. Specifically, we focused on the proportion of the genome composed of genes, the proportion of coding DNA sequences within genes, and the overall proportion of coding DNA sequences within the genome. By assessing whether these genomic variables also distinguish taxonomic groups, we can evaluate to what extent variation in alternative splicing values may be influenced by genomic composition. Consistent with this, we found significant differences across most taxonomic groups in both mean and median values of the genomic variables (see Supplementary file 2). As reported in Table 1, bacteria and archaea exhibit the highest gene content proportions, with genes accounting for approximately 86% of their genomes. This percentage is followed by fish, arthropods, fungi, and unicellular eukaryotes, all of which show similar percentages of approximately 61%, with no significant differences among them. Birds (53%) and mammals (45%) show moderate gene content, whereas plants have the lowest proportion among all groups, at around 25%. On the other side, the coding-to-gene proportion increases progressively across taxa as follows: mammals (3%), birds (5%), fish (9%), arthropods (11%), plants (27%), fungi and unicellular eukaryotes (88%), and finally, bacteria and archaea, each with approximately 99%.
 
-## Evolutionary patterns of alternative splicing
+### Evolutionary patterns of alternative splicing
 
-Understanding genomic expansion patterns and its relationship with alternative splicing across taxa is key to determining whether genome evolution follows universal constraints or taxon-specific trajectories. To systematically address this question, we conducted two complementary analyses. On one side, we performed a phylogenetic generalized least squares (PGLS) to identify possible relationships among genomic percentages and alternative splicing while accounting for phylogenetic dependence (see Supplementary file 3). On the other side, we analyzed the relative variability of each genomic variable across taxonomic groups using the coefficient of variation (Supplementary files 4 and 5). First, we computed the relative variability of each genomic feature x\begin{document}$x$\end{document}, (CVx\begin{document}$CV_{x}$\end{document}), providing a means to quantify the extent of variation within each taxonomic group. Second, we computed variability ratios between pairs of genomic features, (CVx/CVy\begin{document}$CV_{x}/ CV_{y}$\end{document}), allowing us to compare the variability of one genomic trait to another within and across taxa. A detailed explanation of both methods can be found in the ‘Methods. section.
+Understanding genomic expansion patterns and its relationship with alternative splicing across taxa is key to determining whether genome evolution follows universal constraints or taxon-specific trajectories. To systematically address this question, we conducted two complementary analyses. On one side, we performed a phylogenetic generalized least squares (PGLS) to identify possible relationships among genomic percentages and alternative splicing while accounting for phylogenetic dependence (see Supplementary file 3). On the other side, we analyzed the relative variability of each genomic variable across taxonomic groups using the coefficient of variation (Supplementary files 4 and 5). First, we computed the relative variability of each genomic feature $x$, ($CV_{x}$), providing a means to quantify the extent of variation within each taxonomic group. Second, we computed variability ratios between pairs of genomic features, ($CV_{x}/CV_{y}$), allowing us to compare the variability of one genomic trait to another within and across taxa. A detailed explanation of both methods can be found in the ‘Methods. section.
 
 As shown in Figure 3 and Figure 3—figure supplement 1, PGLS analyses revealed no significant correlation between alternative splicing and genome size across any taxonomic group for both ASR and ASR* values. However, in mammals and birds, alternative splicing showed a strong association with both gene and coding content (Figure 3—figure supplements 2–5). This association further extends to genomic proportions, particularly the ratio of coding to gene content (Figure 4 and Figure 4–figure supplement 1). These correlations remain consistent for both ASR and ASR*, except in the case of coding content, which does not correlate with ASR* in any taxonomic group. These findings indicate that, for mammals and birds, genomes with larger amounts of gene content and coding DNA sequences exhibit higher levels of alternative splicing. When analyzing relative proportions rather than absolute content, we found that alternative splicing (ASR and ASR*) is strongly associated with two key genomic ratios: the genomic fraction occupied by genes and the proportion of coding sequence within genes (Figures 4 and 5). In the latter case, we observe a strong negative correlation, supporting the hypothesis that genes with a higher intronic fraction are more likely to give rise to multiple isoforms through alternative splicing.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/94802/elife-94802-fig3-v1.jpg)
+
+**Figure 3.:** (A–I) Phylogenetic generalized least squares (PGLS) regression between the genome size and the normalized alternative splicing ratio (ASR*) across different taxonomic groups. Each panel represents a distinct taxonomic group. The regression lines represent the estimated evolutionary relationship between the two variables while accounting for phylogenetic dependence. (J) Global relationship across all taxonomic groups. The inset provides a logarithmic representation of the x-axis.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94802/elife-94802-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–I) Phylogenetic generalized least squares (PGLS) regression between genome size and alternative splicing ratio (ASR). (J) Global relationship. The inset provides a logarithmic representation of the x-axis.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/94802/elife-94802-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A–I) Phylogenetic generalized least squares (PGLS) regression between gene content and alternative splicing ratio (ASR*). (J) Global relationship. The inset provides a logarithmic representation of the x-axis.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/94802/elife-94802-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A–I) Phylogenetic generalized least squares (PGLS) regression between gene content and alternative splicing ratio (ASR). (J) Global relationship. The inset provides a logarithmic representation of the x-axis.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/94802/elife-94802-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A–I) Phylogenetic generalized least squares (PGLS) regression between coding content and alternative splicing ratio (ASR*). (J) Global relationship.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/94802/elife-94802-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A–I) Phylogenetic generalized least squares (PGLS) regression between coding content and alternative splicing ratio (ASR). (J) Global relationship.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/94802/elife-94802-fig4-v1.jpg)
+
+**Figure 4.:** (A–I) Phylogenetic generalized least squares (PGLS) regression between the proportion of coding relative to gene content and the normalized alternative splicing ratio (ASR*) across different taxonomic groups.Each panel represents a distinct taxonomic group. The regression lines represent the estimated evolutionary relationship between the two variables while accounting for phylogenetic dependence. (J) Global relationship across all taxonomic groups.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94802/elife-94802-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–I) Phylogenetic generalized least squares (PGLS) regression between the proportion of coding relative to gene content and alternative splicing ratio (ASR). (J) Global relationship.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/94802/elife-94802-fig5-v1.jpg)
+
+**Figure 5.:** (A–I) Phylogenetic generalized least squares (PGLS) regression between the proportion of gene content relative to genome size and the normalized alternative splicing ratio (ASR*) across different taxonomic groups.Each panel represents a distinct taxonomic group. The regression lines represent the estimated evolutionary relationship between the two variables while accounting for phylogenetic dependence. (J) Global relationship across all taxonomic groups.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94802/elife-94802-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–I) Phylogenetic generalized least squares (PGLS) regression between the proportion of gene content relative to genome size and alternative splicing ratio (ASR). (J) Global relationship.
+
 Notably, in contrast to mammals and birds, neither gene content nor coding content shows an association with alternative splicing (ASR or ASR*) across the other taxonomic groups examined. The only exception is observed in plants, where gene content shows a positive association with ASR*, albeit considerably weaker than the correlation observed in mammals and birds. When considering genomic proportions, however, the analysis reveals correlations in some lineages, although differences are observed between ASR and ASR*. Nonetheless, these associations are generally weaker than those observed in mammals and birds, suggesting that the association between genomic architecture and alternative splicing is stronger in these two groups. In fish, the proportion of genes within the genome is positively associated with both ASR and ASR*. In addition, gene proportion is positively associated with ASR in arthropods and with ASR* in plants. The coding-to-gene ratio appears as a relevant predictor of ASR, correlating with both ASR and ASR* in plants and fungi. Furthermore, its correlation with ASR* is also significant in arthropods and archaea. Another genomic proportion indicative of the genome structure is the coding-to-genome ratio. While ASR shows no significant correlation with this ratio in any taxonomic group, ASR* exhibits a positive correlation in both arthropods and plants. Overall, these findings indicate that the genomic architecture of coding and gene content, and not only their abundance, may play a central role in shaping splicing complexity across most multicellular lineages, particularly in mammals and birds. In these groups, alternative splicing is strongly associated with intron-rich genes, and the results may reflect a shared, lineage-specific trajectory in the evolution of transcriptomic complexity.
 
-Beyond lineage-specific associations—which may contribute to broader patterns—an overarching trend is observed when examining variability across taxa. We first quantified the relative variability of alternative splicing using the coefficient of variation, which expresses dispersion normalized by the mean, making it independent of scale. Unicellular organisms exhibit negligible variability in alternative splicing, as expected given their minimal or absent splicing activity. Within these groups, only fungi show a slight degree of variation, though still close to zero. In contrast, multicellular taxa display considerable variability in alternative splicing values, with clear differences among groups. Among them, plants consistently exhibit the lowest alternative splicing variability, both in ASR and normalized ASR* measures. Arthropods, fish, and birds show higher variability than plants in ASR; however, after normalization in ASR*, their variation is only slightly higher than plants. Finally, mammals exhibit the highest levels of variability in both ASR and ASR*, indicating a high degree of heterogeneity in splicing activity. Also, as a measure of relative variability, we used the ratio of coefficients of variation to compare how much alternative splicing values vary in relation to genomic features. Specifically, the variability ratio between ASR and the percentage of coding within genes, CV^ASR/CV^Coding/Gene\begin{document}$\hat{CV}_{ASR}/\hat{CV}_{Coding / Gene}$\end{document}, follows a progressive trend from unicellular organisms to animals, with mammals and birds exhibiting the highest ratios. These relations are visually reflected in Figure 4 and Figure 4—figure supplement 1. A variability ratio above 1 indicates that alternative splicing is more variable across species within a taxonomic group than the proportion of coding. Notably, only birds and mammals display values exceeding 1 for both ASR and its normalized value ASR*, highlighting a greater degree of interspecific heterogeneity in splicing relative to the proportion of coding composing genes. As a consequence, these lineage-specific patterns of variability in splicing activity, and their strong association with gene architecture, may reflect specific regulatory strategies in mammals and birds. At the opposite end of the spectrum, unicellular organisms exhibit uniformly low variability ratios, indicating that the percentage of coding varies more across species than alternative splicing levels. This pattern is consistent with the near absence of alternative splicing in these groups, which show little to no variation. Among them, unicellular eukaryotes display the lowest variability ratio, approaching zero, reflecting an almost complete lack of variability in splicing relative to coding content. Between these two opposite trends, fish, plants, and arthropods exhibit intermediate variability ratios, all around 0.5 for both ASR and ASR* values. Although slight differences exist, the decreasing trend from fish to plants and arthropods remains consistent, indicating that these groups display a balanced degree of variation in alternative splicing compared to coding content. This result suggests a continuum between two distinct strategies: one characterized by coding-rich genomes with minimal alternative splicing, as observed in prokaryotes, and another in which small changes in intron-rich gene architectures are coupled with high variations in alternative splicing levels—as seen in mammals and birds.
+Beyond lineage-specific associations—which may contribute to broader patterns—an overarching trend is observed when examining variability across taxa. We first quantified the relative variability of alternative splicing using the coefficient of variation, which expresses dispersion normalized by the mean, making it independent of scale. Unicellular organisms exhibit negligible variability in alternative splicing, as expected given their minimal or absent splicing activity. Within these groups, only fungi show a slight degree of variation, though still close to zero. In contrast, multicellular taxa display considerable variability in alternative splicing values, with clear differences among groups. Among them, plants consistently exhibit the lowest alternative splicing variability, both in ASR and normalized ASR* measures. Arthropods, fish, and birds show higher variability than plants in ASR; however, after normalization in ASR*, their variation is only slightly higher than plants. Finally, mammals exhibit the highest levels of variability in both ASR and ASR*, indicating a high degree of heterogeneity in splicing activity. Also, as a measure of relative variability, we used the ratio of coefficients of variation to compare how much alternative splicing values vary in relation to genomic features. Specifically, the variability ratio between ASR and the percentage of coding within genes, $CV^_{ASR}/CV^_{Coding/Gene}$, follows a progressive trend from unicellular organisms to animals, with mammals and birds exhibiting the highest ratios. These relations are visually reflected in Figure 4 and Figure 4—figure supplement 1. A variability ratio above 1 indicates that alternative splicing is more variable across species within a taxonomic group than the proportion of coding. Notably, only birds and mammals display values exceeding 1 for both ASR and its normalized value ASR*, highlighting a greater degree of interspecific heterogeneity in splicing relative to the proportion of coding composing genes. As a consequence, these lineage-specific patterns of variability in splicing activity, and their strong association with gene architecture, may reflect specific regulatory strategies in mammals and birds. At the opposite end of the spectrum, unicellular organisms exhibit uniformly low variability ratios, indicating that the percentage of coding varies more across species than alternative splicing levels. This pattern is consistent with the near absence of alternative splicing in these groups, which show little to no variation. Among them, unicellular eukaryotes display the lowest variability ratio, approaching zero, reflecting an almost complete lack of variability in splicing relative to coding content. Between these two opposite trends, fish, plants, and arthropods exhibit intermediate variability ratios, all around 0.5 for both ASR and ASR* values. Although slight differences exist, the decreasing trend from fish to plants and arthropods remains consistent, indicating that these groups display a balanced degree of variation in alternative splicing compared to coding content. This result suggests a continuum between two distinct strategies: one characterized by coding-rich genomes with minimal alternative splicing, as observed in prokaryotes, and another in which small changes in intron-rich gene architectures are coupled with high variations in alternative splicing levels—as seen in mammals and birds.
 
 A phase-like transition in alternative splicing activity is observed at approximately 20 Mb of coding DNA, a value that appears to be a threshold separating unicellular and multicellular organisms. As shown in Figure 3—figure supplements 4 and 5 , species below this threshold exhibit negligible alternative splicing values. Beyond this threshold, which is exceeded in all multicellular taxa, alternative splicing levels increase. Still, alternative splicing values vary substantially across species, indicating that while a shift toward more complex post-transcriptional regulatory strategies is common among multicellular organisms, the degree of splicing activity is modulated by different factors, including fine-scale differences in gene architecture.
 
@@ -69,13 +307,13 @@ Finally, as previously observed, a significant relationship exists between alter
 
 ## Discussion
 
-## A whole-genome approach for quantifying alternative splicing
+### A whole-genome approach for quantifying alternative splicing
 
 In this study, we propose a whole-genome measure to quantify alternative splicing, which can be computed using genome annotation files such as those provided by the NCBI Genome Annotation Pipeline. This measure is robust, as we exclusively consider high-quality genomic data from assemblies at the chromosome and whole-genome levels. Since genomes with poor assembly quality are not considered, potential biases in the annotation of alternative isoforms due to low-quality data are minimized. Furthermore, the NCBI pipeline applies the same computational model to annotate both animal and plant genomes, so we also minimize potential biases arising from differences in annotation methodologies between these groups. Our evaluation of methodology-associated biases introduced by the NCBI annotation pipeline reveals that the only significant bias is related to the level of experimental support, with better-supported annotations showing higher alternative splicing estimates. Specifically, the number of CDSs introduced in the pipeline is positively correlated with higher alternative splicing values. As a consequence, this factor represents a potential source of bias. To address this, we apply a normalization to ASR values, effectively correcting for discrepancies introduced by differences in annotation confidence and RNA-Seq coverage across taxa. Furthermore, taxonomic comparisons and lineage-specific patterns in alternative splicing yielded similar results for both ASR and the normalized metric ASR*, reinforcing the validity of ASR as a robust metric for large-scale comparative analyses.
 
 While alternative splicing represents a prominent mechanism of transcriptomic diversification, it should be considered that it constitutes only one component of the broader landscape of gene regulation. Structural and behavioral complexity in organisms arises from a combination of regulatory processes—including transcriptional control, chromatin remodeling, epigenetic modifications, and RNA editing—whose combined interactions ultimately shape phenotypic diversity (Levine and Tjian, 2003; Shlyueva et al., 2014; Feschotte, 2008). In this study, we focus specifically on alternative splicing as a measurable and comparable proxy for regulatory complexity at the genome level. However, we recognize that a more comprehensive analysis of organismal complexity would require the integration of additional layers of regulation and functional data across lineages.
 
-## Evolutionary strategies of transcriptomic diversification
+### Evolutionary strategies of transcriptomic diversification
 
 While previous studies have highlighted the role of splice site strength, exon length, and regulatory element density in shaping splicing outcomes (Bortfeldt et al., 2008; Itoh et al., 2004; Keren et al., 2010), our results provide a genomic-level perspective that contextualizes alternative splicing within large-scale patterns. Specifically, we find that alternative splicing activity is not randomly distributed among taxa but follows lineage-specific associations with genome composition, particularly with respect to the proportion of coding and non-coding DNA. In mammals and birds—groups that exhibit the highest alternative splicing values—we observe a strong negative correlation between alternative splicing and the proportion of coding DNA within genes. This indicates that intron-rich gene architectures may promote isoform diversity, consistent with models in which exon skipping predominates and weak splice sites are compensated by dense regulatory motifs (Kalsotra and Cooper, 2011). Interestingly, these groups exhibit a highly conserved gene structure, with coding regions representing less than 5% of gene length, while alternative splicing levels display considerable variability across species. Thus, within a narrow coding-to-gene compositional range, alternative splicing may be finely regulated, with minor variations in gene structure associated with substantial changes in isoform diversity. This pattern suggests that transcriptomic modularity could be achieved through subtle adjustments in gene architecture, potentially reflecting an evolutionary strategy favoring regulatory refinement over gene duplication. However, future research should investigate the mechanistic basis of this relationship and test whether such fine-tuned structural control indeed underlies shifts in splicing dynamics. In line with models describing alternative splicing as a modular system of transcript generation, this genomic strategy allows functional diversification without the need for coding expansion (Modrek and Lee, 2002; Nilsen and Graveley, 2010). These findings also align with recent theoretical work proposing that alternative splicing and regulatory complexity increase as coding accumulation slows down, acting as an evolutionary response to structural constraints (Koonin, 2011).
 
@@ -91,7 +329,7 @@ Our findings also reveal that alternative splicing activity peaks in genomes wit
 
 Plants exhibit a distinct evolutionary strategy compared to animals, particularly in the way non-coding regions have expanded. In contrast to prokaryotes, unicellular eukaryotes, and most animals, where genes constitute over 40% of the genome, plant genomes show a significantly lower gene content, ranging from as little as 7% to a maximum of 40%. This reduction is accompanied by a pronounced expansion of intergenic regions, which varies widely across plant species. Despite this extensive non-coding accumulation, plants display only moderate levels of alternative splicing, suggesting that increased intergenic space does not necessarily enhance transcriptomic complexity (Chamala et al., 2015). Intron retention is the predominant mechanism of alternative splicing in plants, whereas exon skipping dominates in animals. Splice sites in plants are also generally weaker and lack the compensatory enrichment of regulatory sequences, such as exonic splicing enhancers, commonly observed in metazoans. These differences imply that alternative splicing in plants may be governed by distinct regulatory constraints, likely shaped by evolutionary processes such as polyploidy, genome duplication, and differential selection on non-coding expansion (Filichkin et al., 2010; Reddy et al., 2013).
 
-## Evidence for the adaptive role of alternative splicing
+### Evidence for the adaptive role of alternative splicing
 
 One of the major debates regarding alternative splicing is whether it arises as an adaptive trait or as a by-product of reduced selection efficiency (Lynch, 2007). Species with smaller effective population size experience weaker purifying selection, allowing the accumulation of slightly deleterious mutations, including those affecting alternative splicing. This ‘non-adaptive model’ suggests that alternative splicing increases in complex organisms not due to selective advantages but as a consequence of weaker selection pressure in species with small population sizes. However, genomic analyses contradict this view, revealing that alternative splicing is not randomly accumulated but is rather highly conserved in some genes, making it functionally relevant across taxa (Rogalska et al., 2024). Advances in long-read RNA sequencing technologies have revealed that while many alternative splicing events may be non-functional or represent splicing errors, a significant subset leads to functionally relevant protein isoforms that are preferentially expressed in specific tissues (Wright et al., 2022). Several studies have revealed the conservation of alternative splicing patterns across different animal genomes, such as human, mouse, rat, chicken, fish, and insect genomes, suggesting that splicing regulation plays a fundamental role in evolutionary adaptation (Kim et al., 2007; Holste et al., 2006). These events are particularly enriched in genes associated with essential biological processes and functionally critical organs, such as the brain, heart, muscles, and testes. This highlights their role in preserving key physiological functions while also contributing to evolutionary adaptation. On the other hand, beyond tissue specialization, alternative splicing is increasingly recognized as a key factor in rapid environmental adaptation, allowing organisms to fine-tune gene expression and modulate protein isoform production in response to external stimuli (Koonin, 2006). Stress conditions, such as temperature fluctuations and hypoxia, have been observed to regulate alternative splicing patterns, helping organisms adjust their physiological responses dynamically (Shapiro, 2017; Aravind et al., 2009). Another example is found in genes associated with the immune system, where alternative splicing modulates immune responses to pathogens, further emphasizing its role in adaptive flexibility. Beyond environmental adaptation, it also plays a major role in biological differentiation at different levels of the biological organization, including transcript diversification (Chen et al., 2012; Nilsen and Graveley, 2010), cell differentiation (Fiszbein and Kornblihtt, 2017; Fu et al., 2009), and speciation events, such as morphs (Steward et al., 2022; Grantham and Brisson, 2018), castes (Lyko et al., 2010), or even subspecies (Harr and Turner, 2010).
 
@@ -99,15 +337,23 @@ The findings presented in this study support the view that alternative splicing 
 
 ## Methods
 
-## Alternative splicing ratio: A genome-scale measure
+### Alternative splicing ratio: A genome-scale measure
 
-The genome is defined as the sequential arrangement of nucleotides, where the ith position of a nucleotide is denoted as G(i)\begin{document}$G(i)$\end{document}. We define f(i,j)\begin{document}$f(i,j)$\end{document} as the number of times the nucleotides G(i)\begin{document}$G(i)$\end{document} and G(j)\begin{document}$G(j)$\end{document} appear together in a CDS. By way of example, a value of f(i,j)=3\begin{document}$f(i,j)=3$\end{document} indicates that the nucleotides at positions i\begin{document}$i$\end{document} and j\begin{document}$j$\end{document} co-occur in three distinct isoforms. Accordingly, f(i,i)\begin{document}$f(i,i)$\end{document} corresponds to the number of different CDSs where nucleotide G(i)\begin{document}$G(i)$\end{document} is inserted. The transcription matrix M\begin{document}$M$\end{document}, with Mij=f(i,j)\begin{document}$M_{ij}=f(i,j)$\end{document}, is a symmetric matrix that encodes the co-occurrence patterns of nucleotides within multiple mRNAs, providing a genotype-phenotype mapping framework for transcriptomic and proteomic diversity. The binary version of the transcription matrix is defined as(1)Aij={1,if Mij>00,if Mij=0.\begin{document}$$\displaystyle  \, A_{ij}= \begin{cases}1,&\text{if}\ M_{ij}\gt 0 \\ 0,&\text{if}\ M_{ij}= 0. \\\end{cases}$$\end{document}
+The genome is defined as the sequential arrangement of nucleotides, where the ith position of a nucleotide is denoted as $G(i)$. We define $f(i,j)$ as the number of times the nucleotides $G(i)$ and $G(j)$ appear together in a CDS. By way of example, a value of $f(i,j)=3$ indicates that the nucleotides at positions $i$ and $j$ co-occur in three distinct isoforms. Accordingly, $f(i,i)$ corresponds to the number of different CDSs where nucleotide $G(i)$ is inserted. The transcription matrix $M$, with $M_{ij}=f(i,j)$, is a symmetric matrix that encodes the co-occurrence patterns of nucleotides within multiple mRNAs, providing a genotype-phenotype mapping framework for transcriptomic and proteomic diversity. The binary version of the transcription matrix is defined as
 
-The diagonal of this matrix represents the projection of CDSs onto the genome, which maps the nucleotides that constitute the coding DNA. Thus, the ASR is mathematically defined as(2)ρ=tr(M)tr(A),\begin{document}$$\displaystyle  \rho=\frac{tr(M)}{tr(A)},$$\end{document}
+$$
+A_{ij}={1,if M_{ij}>00,if M_{ij}=0.
+$$
 
-where tr(⋅)\begin{document}$tr(\cdot)$\end{document} denotes the trace of the matrix, that is, the sum of the diagonal elements. It quantifies the extent to which coding DNA sequences can be reutilized through alternative splicing to generate multiple mRNA isoforms. It provides a measure of transcriptomic modularity, reflecting the parallelization of genetic information. Here, we extend the concept of the ASR from individual genes to the whole genome by computing the transcription matrix using all nucleotides that compose genes.
+The diagonal of this matrix represents the projection of CDSs onto the genome, which maps the nucleotides that constitute the coding DNA. Thus, the ASR is mathematically defined as
 
-## NCBI RefSeq dataset
+$$
+ρ=\frac{tr(M)}{tr(A)},
+$$
+
+where $tr(⋅)$ denotes the trace of the matrix, that is, the sum of the diagonal elements. It quantifies the extent to which coding DNA sequences can be reutilized through alternative splicing to generate multiple mRNA isoforms. It provides a measure of transcriptomic modularity, reflecting the parallelization of genetic information. Here, we extend the concept of the ASR from individual genes to the whole genome by computing the transcription matrix using all nucleotides that compose genes.
+
+### NCBI RefSeq dataset
 
 Genomic features are computed from high-quality, whole-genome assemblies available in the RefSeq database provided by the NCBI (National Library of Medicine, 2024). These assemblies are annotated by the NCBI genome annotation pipeline, which integrates diverse experimental evidence, including RNA-Seq data, ESTs, and protein alignments (Kitts et al., 2016). The annotation files are in GFF3 format, and the data is provided in tab-delimited tables, where each row represents an entity (e.g., gene, mRNA, or CDS) and columns contain attributes like unique identifiers, genomic coordinates, and functional annotations. The annotations also include additional attributes such as start and stop codons, and UTRs. Genome size, gene content, and coding region coverage are estimated by looking at the start and end coordinates of each genomic element. Gene content is calculated as the total number of nucleotides falling within annotated gene regions. In contrast, the coding region coverage is determined by summing all nucleotides that belong to at least one CDS.
 
@@ -117,13 +363,13 @@ In this study, we propose a novel genome-level measure of alternative splicing. 
 
 First, the assembly summary of RefSeq was downloaded, which includes detailed information about the genome annotations available in the database (NCBI, 2024). Second, the dataset was subsequently filtered based on the following criteria: (i) only genomes annotated by the NCBI RefSeq annotation pipeline were selected, ensuring consistent and reliable annotations; (ii) assemblies were restricted to those with an assembly level of ’chromosome’ or ’complete genome,’ which guarantees high-quality data; and (iii) genomes were further filtered to include only those belonging to specific taxonomic groups of interest (see ‘Taxonomy assignment’). Finally, the filtered annotation files were downloaded in November of 2024, and the genomic features were computed for each species.
 
-## Taxonomy assignment
+### Taxonomy assignment
 
 We collected annotation files for organisms representing the entire tree of life. However, the sampling process was constrained by the availability of whole-genome annotation files, resulting in a dataset of 694 eukaryotic species. Taxonomy tools from the NCBI (Sayers et al., 2023) were utilized to map the phylogenetic relationships among species that meet conditions (i) and (ii) described in the previous section. Next, iTOL was employed for the visualization and schematic representation of these relationships (Letunic and Bork, 2021). Taxonomic groups at the levels of kingdom, phylum, and class containing at least 20 distinct species were selected. This approach resulted in the identification of the following major groups: 133 mammals, 77 birds, 169 fish, 187 arthropods, 128 plants, 130 fungi, and 53 unicellular eukaryotes. For the other biological domains, given that the NCBI provides annotations for thousands of species, we randomly selected 400 archaea and 400 bacteria (see Figure 7). This approach ensures that the taxonomic groups are well-defined and adequately represented to provide statistical significance for subsequent analyses.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/94802/elife-94802-fig7-v1.jpg)
 
-## Methodology-associated biases in the data
+### Methodology-associated biases in the data
 
 In this study, we used assembled genomes annotated by the NCBI genome annotation pipelines. The NCBI Genome Annotation Pipeline is designed for the annotation of both eukaryotic and prokaryotic genomes. On one side, the NCBI Eukaryotic Genome Annotation Pipeline (EGAP) is an evidence-based pipeline for the high-quality annotation of genes, transcripts, and proteins of eukaryotes (Pruitt et al., 2012). Each RefSeq assembly generated from the EGAP includes a very detailed annotation report that provides information about the supporting sequencing data and variations in methodology. All eukaryotic genomes annotated to date from the EGAP can be found in the following repository: https://www.ncbi.nlm.nih.gov/refseq/annotation_euk/all/. On the other side, the NCBI Prokaryotic Genome Annotation Pipeline (PGAP) is specifically designed to annotate bacterial and archaeal genomes, focusing on the unique genomic features of these domains (Tatusova et al., 2016). Annotations for prokaryotes rely on curated data from the NCBI RefSeq database, including known gene sequences and protein information. It processes assembled genomes, identifying coding DNA sequences (CDSs), ribosomal RNA (rRNA), transfer RNA (tRNA), small RNAs, and other genetic elements. Unlike the eukaryotic pipeline (EGAP), which incorporates complex RNA-Seq alignments and isoform modeling, PGAP emphasizes the detection of essential genes, operons, and conserved elements, as splicing is rare in prokaryotes. The prokaryotic pipeline is optimized for high-throughput processing, ensuring consistent and accurate annotation of thousands of bacterial and archaeal genomes.
 
@@ -135,20 +381,28 @@ Methodology-associated biases in NCBI annotation files primarily stem from the r
 
 For this study, we have implemented two filtering criteria to reduce methodological biases in the dataset: first, all multicellular organisms were annotated using the EGAP pipeline, which integrates evidence-based computational models; second, only genomes assembled at the chromosome level were included. Despite these measures, potential biases remain, particularly those related to RNA-Seq depth and tissue diversity. To account for potential biases introduced by the annotation process in eukaryotic genomes, we evaluated how the experimental evidence of CDSs affects estimates of alternative splicing. We found that the proportion of coding DNA sequences that are fully supported by experimental evidence is strongly associated with ASR values, whereas annotations mainly based on computational models systematically underestimate splicing complexity. A multivariate regression analysis identified three key predictors of ASR variation: fully supported CDSs, known CDSs, and model-derived CDSs, which are related to each other. Among them, the proportion of fully supported CDSs is the dominant factor. Based on this, we implemented a normalization procedure that adjusts ASR values using a polynomial regression model, effectively removing annotation-related biases. This normalization, which we denote as ASR*, enables more accurate cross-species comparisons while preserving relative differences in splicing levels. However, normalized values should be interpreted as standardized estimates rather than absolute measures, as the correction is empirical and designed to improve comparability across diverse taxonomic groups.
 
-## Monte Carlo permutation tests
+### Monte Carlo permutation tests
 
 Pairwise statistical analysis using Monte Carlo permutation tests was performed to assess differences in genomic variables (e.g., genome size, gene content, coding size, and ASR) across taxonomic groups. Given that some variables present a high number of outliers and, in certain cases, deviate from normality and homoscedasticity—both critical assumptions for many parametric analyses—this approach was employed as a complementary method to Welch’s ANOVA, which accounts for heteroscedasticity.
 
 This non-parametric approach evaluates statistical significance by generating a null distribution through random resampling. Specifically, we tested differences using two statistical measures: the mean and the median. First, we computed the observed difference between groups and then compared it to a null distribution generated from 10,000 random permutations, in which group labels were shuffled to simulate the null hypothesis of no difference between groups. The empirical p-value was calculated as the proportion of permuted test statistics greater than or equal to the observed difference. To account for multiple comparisons, we applied the Bonferroni correction, ensuring a stringent control of type I error across all pairwise tests. All analyses in this study confirm that 10,000 permutations provide a robust estimation of the exact test, as increasing the number of permutations to 20,000 yielded statistically equivalent results.
 
-## Comparative genomic analysis
+### Comparative genomic analysis
 
 We used the TimeTree platform (timetree.org, Kumar et al., 2022) to generate a phylogenetic tree, which provides evolutionary relationships based on common ancestry. The tree was saved in Newick format (.nwk). Since not all species in our dataset (for which we have annotation files) are documented on this platform, the resulting phylogenetic tree includes a subset of species. Specifically, our tree consists of 170 archaea, 213 bacteria, 35 unicellular eukaryotes, 79 fungi, 110 plants, 116 arthropods, 163 fish, 70 birds, and 122 mammals.
 
-We conducted a PGLS regression to assess the relationships between genomic variables and ASR while accounting for phylogenetic non-independence among species. This method incorporates evolutionary relationships into the statistical model by adjusting for shared ancestry, ensuring that trait correlations are not confounded by phylogenetic structure. To quantify these relationships, we showed the slope (β\begin{document}$\beta$\end{document}), which indicates the direction of the relationship. Positive values indicate an increase in the dependent variable as the independent variable increases, and negative values indicate the opposite. We also showed the p-value, which assesses the statistical significance of this relationship, with lower values (p<0.05\begin{document}$p\lt0.05$\end{document}) indicating that the observed pattern is unlikely to be due to chance. The adjusted R2\begin{document}$R^{2}$\end{document}, (Radj2\begin{document}$R^{2}_{adj}$\end{document}), measured the proportion of variance explained by the model while correcting for the number of predictors. Finally, λ\begin{document}$\lambda$\end{document} quantified the phylogenetic signal, with values close to 1 indicating strong phylogenetic dependence and values near 0 reflecting evolutionary independence. These metrics collectively allow us to determine genomic relationships and evaluate whether they are driven by taxon-specific patterns.
+We conducted a PGLS regression to assess the relationships between genomic variables and ASR while accounting for phylogenetic non-independence among species. This method incorporates evolutionary relationships into the statistical model by adjusting for shared ancestry, ensuring that trait correlations are not confounded by phylogenetic structure. To quantify these relationships, we showed the slope ($\beta$), which indicates the direction of the relationship. Positive values indicate an increase in the dependent variable as the independent variable increases, and negative values indicate the opposite. We also showed the p-value, which assesses the statistical significance of this relationship, with lower values ($p<0.05$) indicating that the observed pattern is unlikely to be due to chance. The adjusted $R^{2}$, ($R_{adj}^{2}$), measured the proportion of variance explained by the model while correcting for the number of predictors. Finally, $\lambda$ quantified the phylogenetic signal, with values close to 1 indicating strong phylogenetic dependence and values near 0 reflecting evolutionary independence. These metrics collectively allow us to determine genomic relationships and evaluate whether they are driven by taxon-specific patterns.
 
-We also computed the coefficient of variation (CV^\begin{document}$\hat{CV}$\end{document}) for each variable, a scale-independent measure of dispersion. The CV^\begin{document}$\hat{CV}$\end{document} is defined as the ratio of the standard deviation s\begin{document}$s$\end{document} to the sample mean x¯\begin{document}$\bar{x}$\end{document}, expressed as(3)CV^=sx¯.\begin{document}$$\displaystyle \hat{CV}=\frac{s}{\bar{x}}.$$\end{document}
+We also computed the coefficient of variation ($CV^$) for each variable, a scale-independent measure of dispersion. The $CV^$ is defined as the ratio of the standard deviation $s$ to the sample mean $x¯$, expressed as
 
-This metric quantifies the relative variability of a trait, making it particularly useful for comparing datasets with different units or magnitudes. A higher CV^\begin{document}$\hat{CV}$\end{document} indicates greater dispersion relative to the mean, suggesting higher heterogeneity, whereas a lower value implies more constrained variability. By analyzing the CV^\begin{document}$\hat{CV}$\end{document} of genomic variables and alternative splicing, we assess the extent of evolutionary variation within and across taxonomic groups. This approach allows us to detect regions of genomic composition that display higher heterogeneity, providing insights into which aspects of genome evolution are more flexible and are subject to stronger evolutionary constraints. Moreover, by comparing these patterns across taxonomic groups, we can assess whether the distribution of genomic heterogeneity follows similar trends across lineages or if taxon-specific factors shape distinct variability regimes. We introduce a metric to quantify these variability relationships, defined as the ratio of the coefficient of variation between different variables, calculated as(4)CV^x/CV^y,\begin{document}$$\displaystyle \hat{CV}_{x}/ \hat{CV}_{y},$$\end{document}
+$$
+CV^=\frac{s}{x¯}.
+$$
 
-where CV^=s/x¯\begin{document}$\hat{CV}= s/\bar{x}$\end{document} is the coefficient of variation of x\begin{document}$x$\end{document}. These ratios provide a scale-independent measure of how the variability of one genomic trait compares to another within and across taxonomic groups.
+This metric quantifies the relative variability of a trait, making it particularly useful for comparing datasets with different units or magnitudes. A higher $CV^$ indicates greater dispersion relative to the mean, suggesting higher heterogeneity, whereas a lower value implies more constrained variability. By analyzing the $CV^$ of genomic variables and alternative splicing, we assess the extent of evolutionary variation within and across taxonomic groups. This approach allows us to detect regions of genomic composition that display higher heterogeneity, providing insights into which aspects of genome evolution are more flexible and are subject to stronger evolutionary constraints. Moreover, by comparing these patterns across taxonomic groups, we can assess whether the distribution of genomic heterogeneity follows similar trends across lineages or if taxon-specific factors shape distinct variability regimes. We introduce a metric to quantify these variability relationships, defined as the ratio of the coefficient of variation between different variables, calculated as
+
+$$
+CV^_{x}/CV^_{y},
+$$
+
+where $CV^=s/x¯$ is the coefficient of variation of $x$. These ratios provide a scale-independent measure of how the variability of one genomic trait compares to another within and across taxonomic groups.

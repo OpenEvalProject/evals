@@ -13,14 +13,14 @@
 
 ### Affiliations
 
-1. https://ror.org/04qr3zq92 The Clinical Hospital of Chengdu Brain Science Institute, School of Life Science and Technology, University of Electronic Science and Technology of China Chengdu China
-2. https://ror.org/04p9p1r69 School of Healthcare Technology, Chengdu Neusoft University Chengdu China
+1. The Clinical Hospital of Chengdu Brain Science Institute, School of Life Science and Technology, University of Electronic Science and Technology of China Chengdu China ([ROR:04qr3zq92](https://ror.org/04qr3zq92))
+2. School of Healthcare Technology, Chengdu Neusoft University Chengdu China ([ROR:04p9p1r69](https://ror.org/04p9p1r69))
 
 † Corresponding author
 
 ## Abstract
 
-Antibodies are critical components of the vertebrate immune system and possess a wide array of biomedical applications. Elucidating the complex interactions between antibodies and antigens is an important step in drug development. However, the complex and vast nature of the data presents significant challenges in accurately identifying and comprehending these interactions. To overcome these challenges and deepen our understanding of the antibody-antigen interface, we developed the Antigen-Antibody Complex Database (AACDB). The current version provides a comprehensive collection of 7498 manually processed antigen-antibody complexes, ensuring accuracy and detail. This database provides extensive metadata and rectifies annotation errors found in the PDB database. Furthermore, it integrates data on antibody developability and antigen-drug target relationships, making it valuable for assisting new antibody therapies development. Notably, the database includes comprehensive paratope and epitope annotation information, thereby serving as a valuable benchmark for immunoinformatics research. The AACDB interface is designed to be user-friendly, providing researchers with powerful search and visualization tools that enable effortless querying, manipulation, and visualization of complex data. Researchers can access AACDB completely online at http://i.uestc.edu.cn/AACDB . Regular updates are promised to ensure the timely provision of scientific and valuable information.
+Antibodies are critical components of the vertebrate immune system and possess a wide array of biomedical applications. Elucidating the complex interactions between antibodies and antigens is an important step in drug development. However, the complex and vast nature of the data presents significant challenges in accurately identifying and comprehending these interactions. To overcome these challenges and deepen our understanding of the antibody-antigen interface, we developed the Antigen-Antibody Complex Database (AACDB). The current version provides a comprehensive collection of 7498 manually processed antigen-antibody complexes, ensuring accuracy and detail. This database provides extensive metadata and rectifies annotation errors found in the PDB database. Furthermore, it integrates data on antibody developability and antigen-drug target relationships, making it valuable for assisting new antibody therapies development. Notably, the database includes comprehensive paratope and epitope annotation information, thereby serving as a valuable benchmark for immunoinformatics research. The AACDB interface is designed to be user-friendly, providing researchers with powerful search and visualization tools that enable effortless querying, manipulation, and visualization of complex data. Researchers can access AACDB completely online at http://i.uestc.edu.cn/AACDB. Regular updates are promised to ensure the timely provision of scientific and valuable information.
 
 ## Introduction
 
@@ -32,7 +32,7 @@ A further challenge in the field of interface prediction is the lack of a standa
 
 ## Results
 
-## Statistics
+### Statistics
 
 From over 32,000 experimental structures in the PDB database, we manually curated 7498 antigen-antibody entries for the current version of AACDB, encompassing to 16 antibody fragment types across 14 species (Figure 1). It is obvious that Fab fragments and human antibodies accounted for the largest proportion of the data, accounting for 71.98% and 60.95%, respectively. Our statistical analysis reveals a significant increase in the number of antigen-antibody complex entries within the PDB during the period from 2021–2023. These entries accounted for approximately 45% of the total antigen-antibody complex entries. Our search was conducted with an end date of November 2023. Notably, Figure 1B contains a 2024-dated entry resulting from database versioning updates: the original 7SIX record (added November 16, 2022) was superseded by the 8TM1 entry through an official revision on January 12, 2024. Furthermore, the developability properties of antibodies in 325 entries can be queried in the DOTAD database, at the meanwhile, 3733 antigen records have been identified as drug targets in DrugBank (data not shown).
 
@@ -40,7 +40,7 @@ From over 32,000 experimental structures in the PDB database, we manually curate
 
 **Figure 1.:** (A) Antibody fragment distribution in the database. (B) The number of antibody-antigen complexes released in different years (unique PDBID). (C) Organismal distribution of antibody entries. Statistical cutoff date: May 30, 2024. Fab: antigen binding fragment; Fv: variable fragment; scFv: single chain variable fragment; VHH: Variable domain of heavy chain of heavy chain antibody; sdAb: single domain antibody.
 
-## Database browse and search
+### Database browse and search
 
 All the data can be browsed directly by clicking the ‘Datasets’ item on the top menu of AACDB webpage (http://i.uestc.edu.cn/AACDB; Figure 2). The summary table includes nine columns as follows:
 
@@ -56,7 +56,7 @@ An individual structure can be accessed using its AACDB_ID accession code. When 
 
 **Figure 3.:** (A) Structure visualization window. The molecular structure is displayed with distinct color-coding for clarity: each chain is represented by a unique color, facilitating easy identification. The epitope is highlighted in blue, while the paratope is marked in green (B) Entry meta information. (C) Sequence and mutation information. (D) Interacting residues details based on solvent accessible surface area (SASA) and atom distance methods. (E) The download hyperlinks of a single entry.
 
-## Data download
+### Data download
 
 We provide two ways for downloading the data:
 
@@ -78,11 +78,11 @@ The conceptual framework of AACDB is illustrated in Figure 4. Based on this conc
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/104934/elife-104934-fig5-v1.jpg)
 
-## Entry screening
+### Entry screening
 
 We aimed to retrieve all antibody-related complexes from the PDB using the chosen search approach. However, we encountered a notable number of false hits in the results, prompting us to implement a stringent structural filtering process. Antibody complexes were defined as structures containing at least one antibody molecule and another protein exceeding 50 amino acids in length. Structures that lacked antibodies or consisted solely of one type of antibody were excluded from further analysis. It is crucial to emphasize that not all proteins that bind to antibodies qualify as antigens. For instance, immunoglobulin-binding proteins like Protein A and Protein G, expressed by Staphylococcus aureus and Streptococcal species, are commonly employed for antibody purification procedures (Fishman and Berg, 2019). Although protein A may bind to the Fab region of antibodies, the interacting amino acids might be located in the framework region (FR) rather than the complementarity-determining regions (CDRs) (Graille et al., 2000). These proteins are often misidentified as antigens. Consequently, structures exhibiting such characteristics require meticulous verification and should be excluded from our dataset.
 
-## PDB splitting
+### PDB splitting
 
 We directly incorporated the PDB entry of antigen-antibody complex with only one antigen and one antibody into the AACDB database. However, quite a few antigen-antibody complexes contain several antigens and antibodies. In such cases, before splitting the structures, we need to determine the correct pairing of light and heavy chains by examining the information on equivalent chain interactions in the PDBsum database (Laskowski et al., 2018). Next, we assign the correct antigen chains to the antibodies by identifying whether the remaining chains in the structure interact with the CDR regions of determined antibodies. For example, in the case of 1AHW, which contains two copies of antigen-antibody complexes, chains BA and DE are identified as two antibody pairs, where chains C and F bind to BA and DE, respectively. Consequently, 1AHW is split into two files, BAC and DEF (Figure 6A). In 6OGE, Pertuzumab (chains C and B) and Trastuzumab (chains E and D) bind to different epitopes of the receptor tyrosine-protein kinase erbB-2 (chain A). This generates two records in AACDB (CBA and EDA) (Figure 6B). Specifically, in the analysis of anti-idiotypic antibody complexes, the partner antibody is treated as a dual-chain antigen, necessitating individual evaluation of heavy chain and light chain interactions with the anti-idiotypic component. When both chains engage in binding, the complex is divided into two distinct entries: ‘anti-idiotypic antibody-heavy chain’ and ‘anti-idiotypic antibody-light chain.’ Conversely, if only one chain participates, the non-interacting chain will be excluded from AACDB records. For instance, in 3BQU, the anti-idiotype 3H6 Fab (chains DC) only interacts with the heavy chain (chain B) of 2F5 Fab. In AACDB, 2F5 Fab will be split and the light chain (chain A) will be discarded (Figure 6C).
 
@@ -92,7 +92,7 @@ We directly incorporated the PDB entry of antigen-antibody complex with only one
 
 For each PDB entry, we utilized the corresponding split chains information to divide the downloaded.pdb based on the ATOM records. Notably, certain structures are exclusively provided in the ‘mmCIF’ format by the PDB database. While ‘.pdb’ and ‘.cif’ files store atomic coordinates in distinct text formats, the segmentation of these structure files is automatically performed based on manually annotated antibody-antigen chains. To address this, we integrated these considerations into our file processing pipeline enabling a fully automated file segmentation process. Additionally, the Naccess software does not support .cif files as input, we converted the ‘.cif’ files into ‘.pdb’ format files while performing the splitting process (see Interacting residues definition). Furthermore, we refined the annotation of the split ‘.fasta’ files to ensure coherence with AACDB records.
 
-## Metadata
+### Metadata
 
 AACDB provides detailed metadata for each entry, including chain IDs, antibody name, antigen name, method, resolution, organism, and more. To ensure data accuracy, we have conducted comprehensive verification by consulting original literature sources. AACDB has addressed many annotation errors identified within the corresponding PDB entries. These errors include but not limited to: (1) mislabeling of species (e.g. the entry 7WRL where the organism of BD55-1239H antibody was erroneously labeled as ‘SARS coronavirus B012’); (2) Resolution annotation errors (e.g. 1NSN, in which the resolution of 2.9 Å is misannotated as 2.8 Å).; (3) mislabeling of antibody chains as other proteins (e.g. in 3KS0, the light chain of B2B4 antibody was misnamed as heme domain of flavocytochrome b2); (4) misidentification of heavy chains as light chains (e.g. both two chains of antibody were labeled as light chain in 5EBW); (5) mutation status annotation errors. We have identified cases in which PDB entries indicate ‘NO’ for mutations, while in reality, mutations exist (e.g. bevacizumab (Avastin) in 6BFT was labeled as none mutation. When aligned with the bevacizumab sequence, however, mutation T8D/T30D in heavy chain and S52D/S53D in light chain were observed.); and (6) incomplete annotations. Certain entries only provide the name of the mutant without specifying the precise mutation site (e.g. in 7SU1, antibody was described as Ipilimumab variant Ipi.106. but PDB database does not provide any mutation amino acid or position, which can be identified by blast to Ipilimumab sequence).
 
@@ -102,10 +102,10 @@ The antibody nomenclature follows the title of the corresponding search entry in
 
 Biological and physicochemical properties are critical considerations in the development pipelines for therapeutic antibodies. These properties include solubility, immunogenicity, aggregation tendencies, expression level, stability, and hydrophobicity. We provide the International Non-proprietary Name (INN) and clinical trial information for each therapeutic antibody entry, linked to the DOTAD database (Li et al., 2024a). Numerous antigens have been successfully identified as targets for antibodies or small molecule drugs. We conducted a comparison between antigen sequences and the drug targets listed in the DrugBank database (Knox et al., 2024). A threshold of percent identity >90% was applied to determine the corresponding drug targets.
 
-## Interacting residues definition
+### Interacting residues definition
 
 We labeled the interacting residues based on SASA and atom distance. Naccess V2.1.1 and Bio.PDB module were employed to calculate SASA values for each residue in antibody and antigen, respectively. The residues with a SASA loss (ΔSASA) in binding of more than 1 Å2 were classified as interacting residues. In addition, we also defined another set of interacting paratope-epitope residues by a distance cutoff of 6 Å. Two amino acids are considered interacting residues if they have at least one pair of non-hydrogen atoms within a distance of 6 Å.
 
-## Data integration and website implementation
+### Data integration and website implementation
 
 The main data processing algorithm is implemented in Python. The front-end web interface of AACDB was constructed by HTML and enhanced with JavaScript, CSS, and Bootstrap technologies. We developed a dynamic 3D structure visualization window based on PV, a WebGL-based protein viewer, inspired by Dunbar et al., 2014. All the data were managed within the MySQL database system. For the back-end functionality, PHP is utilized to enable data browsing, searching, and downloading features.

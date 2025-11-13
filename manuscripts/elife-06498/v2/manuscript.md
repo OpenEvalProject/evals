@@ -39,7 +39,7 @@
 
 ## Abstract
 
-10.7554/eLife.06498.001 Biomarkers for patient selection are essential for the successful and rapid development of emerging targeted anti-cancer therapeutics. In this study, we report the discovery of a novel patient selection strategy for the p53–HDM2 inhibitor NVP-CGM097, currently under evaluation in clinical trials. By intersecting high-throughput cell line sensitivity data with genomic data, we have identified a gene expression signature consisting of 13 up-regulated genes that predicts for sensitivity to NVP-CGM097 in both cell lines and in patient-derived tumor xenograft models. Interestingly, these 13 genes are known p53 downstream target genes, suggesting that the identified gene signature reflects the presence of at least a partially activated p53 pathway in NVP-CGM097-sensitive tumors. Together, our findings provide evidence for the use of this newly identified predictive gene signature to refine the selection of patients with wild-type p53 tumors and increase the likelihood of response to treatment with p53–HDM2 inhibitors, such as NVP-CGM097. DOI: http://dx.doi.org/10.7554/eLife.06498.001
+Biomarkers for patient selection are essential for the successful and rapid development of emerging targeted anti-cancer therapeutics. In this study, we report the discovery of a novel patient selection strategy for the p53–HDM2 inhibitor NVP-CGM097, currently under evaluation in clinical trials. By intersecting high-throughput cell line sensitivity data with genomic data, we have identified a gene expression signature consisting of 13 up-regulated genes that predicts for sensitivity to NVP-CGM097 in both cell lines and in patient-derived tumor xenograft models. Interestingly, these 13 genes are known p53 downstream target genes, suggesting that the identified gene signature reflects the presence of at least a partially activated p53 pathway in NVP-CGM097-sensitive tumors. Together, our findings provide evidence for the use of this newly identified predictive gene signature to refine the selection of patients with wild-type p53 tumors and increase the likelihood of response to treatment with p53–HDM2 inhibitors, such as NVP-CGM097.
 
 ## Introduction
 
@@ -51,19 +51,19 @@ Here, we describe a novel and highly specific p53–HDM2 inhibitor, NVP-CGM097, 
 
 ## Results
 
-## Activity of NVP-CGM097 and NVP-CFC218 in biochemical and cellular assays
+### Activity of NVP-CGM097 and NVP-CFC218 in biochemical and cellular assays
 
-NVP-CGM097 and NVP-CFC218 are substituted 1,2-dihydroisoquinolinone derivatives that were designed to mimic three key hydrophobic interactions made by p53 residues Phe19, Trp23, and Leu26 in the HDM2 pocket (
+NVP-CGM097 and NVP-CFC218 are substituted 1,2-dihydroisoquinolinone derivatives that were designed to mimic three key hydrophobic interactions made by p53 residues Phe19, Trp23, and Leu26 in the HDM2 pocket (Kussie et al., 1996; García-Echeverría et al., 2000; Furet et al., 2012) (Figure 1A). The dihydroisoquinolinone core occupies the center of the cleft and allows for the positioning of appropriate substituents in this sub-pocket (manuscript in preparation).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig1-v2.jpg)
 
-**Figure 1.:** TP53 wild-type status is necessary but not sufficient to predict sensitivity to NVP-CGM097 and NVP-CFC218.(A) Chemical structure of NVP-CGM097 and NVP-CFC218. (B) In vitro activity of NVP-CFC218 and NVP-CGM097 in TR-FRET binding assay (a) and cellular proliferation assay in human cancer cell lines (b). Data are expressed as concentration causing 50% inhibition and shown as mean ± SD from multiple (n ≥ 8) independent experiments. (c) Selectivity is determined by the ratio of GI50 obtained using the HCT-116 p53-null and the HCT-116 p53WT isogenic pair of cell lines. (d) Selectivity is determined by the ratio of GI50 obtained using SAOS-2 (p53-null) and SJSA-1 (p53WT and HDM2-amplified) osteosarcoma pair of cell lines. (C and D) Scatter plot showing IC50 values expressed in μM of NVP-CFC218 in cell viability assays of p53 wild-type cell lines (C) and p53 mutated cell lines (D), colored by their response to NVP-CFC218. The data used to generate these plots, as well as cell line identity is available in Figure 1—source data 1. (E) Contingency table indicating the total number of sensitive and insensitive cell lines to NVP-CFC218. The p-value of 3.4 × 10−20 shows a significant association between sensitivity to NVP-CFC218 and TP53 wild-type status. (F) Main enriched compound target p-values from the Global Compound Selectivity Analysis. p-values are minus log10 transformed. The red color refers to compounds that are more selective in the wild-type p53 (p53WT) strata than in the mutated p53 (p53MUT) strata. The blue color indicates the reverse profile. Brighter colors indicate which target classes pass the 0.25 FDR cut-off. The length of each red/blue segment corresponds to the proportion of p53WT selective/p53MUT selective compounds in each target class.DOI: http://dx.doi.org/10.7554/eLife.06498.00310.7554/eLife.06498.004Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.06498.004
+**Figure 1.:** (A) Chemical structure of NVP-CGM097 and NVP-CFC218. (B) In vitro activity of NVP-CFC218 and NVP-CGM097 in TR-FRET binding assay (a) and cellular proliferation assay in human cancer cell lines (b). Data are expressed as concentration causing 50% inhibition and shown as mean ± SD from multiple (n ≥ 8) independent experiments. (c) Selectivity is determined by the ratio of GI50 obtained using the HCT-116 p53-null and the HCT-116 p53WT isogenic pair of cell lines. (d) Selectivity is determined by the ratio of GI50 obtained using SAOS-2 (p53-null) and SJSA-1 (p53WT and HDM2-amplified) osteosarcoma pair of cell lines. (C and D) Scatter plot showing IC50 values expressed in μM of NVP-CFC218 in cell viability assays of p53 wild-type cell lines (C) and p53 mutated cell lines (D), colored by their response to NVP-CFC218. The data used to generate these plots, as well as cell line identity is available in Figure 1—source data 1. (E) Contingency table indicating the total number of sensitive and insensitive cell lines to NVP-CFC218. The p-value of 3.4 × 10−20 shows a significant association between sensitivity to NVP-CFC218 and TP53 wild-type status. (F) Main enriched compound target p-values from the Global Compound Selectivity Analysis. p-values are minus log10 transformed. The red color refers to compounds that are more selective in the wild-type p53 (p53WT) strata than in the mutated p53 (p53MUT) strata. The blue color indicates the reverse profile. Brighter colors indicate which target classes pass the 0.25 FDR cut-off. The length of each red/blue segment corresponds to the proportion of p53WT selective/p53MUT selective compounds in each target class.
 
 The ability of NVP-CFC218 and NVP-CGM097 to disrupt the p53–HDM2 and p53–HDMX complexes was assessed in purified biochemical assays using time-resolved fluorescence resonance energy transfer (TR-FRET) to detect interactions between the N-terminal portion of HDM2 (amino acid 2 to 188) or HDMX (amino acid 2 to 185) and the human p53-derived peptide (amino acid 18 to 26). Both NVP-CFC218 and NVP-CGM097 displaced the p53 peptide from the surface of HDM2 with IC50 values of 1.6 ± 0.2 nM and 1.7 ± 0.1 nM, respectively. In contrast, both compounds were substantially less active against HDMX with IC50 values of 1300 ± 100 nM and 2000 ± 300 nM. These data show that NVP-CFC218 and NVP-CGM097 are specific inhibitors of the p53–HDM2 interaction (Figure 1B).
 
 In measures of cellular viability, NVP-CFC218 and NVP-CGM097 elicited strong anti-proliferative effects in the HCT116 p53WT cell line and showed 34- and 35-fold selectivity, respectively, compared to an isogenic HCT116 cell line in which the TP53 gene was deleted by homozygous recombination. Similarly, both compounds blocked proliferation of the osteosarcoma HDM2-amplified SJSA-1 cell line with 56- and 58-fold selectivity, respectively, compared to a control p53-null osteosarcoma SAOS-2 cell line (Figure 1B). These results indicate that NVP-CGM097 and NVP-CFC218 inhibit cell proliferation in a p53-dependent manner with a comparable potency and selectivity in vitro.
 
-## Pharmacological activity of p53–HDM2 inhibitors in cancer cell lines
+### Pharmacological activity of p53–HDM2 inhibitors in cancer cell lines
 
 In order to investigate the activity of HDM2 inhibitors in preclinical models of cancer and to ultimately identify biomarkers predictive of response, we tested the anti-proliferative activity of NVP-CFC218 in a panel of 477 cell lines from the Cancer Cell Line Encyclopedia (CCLE) (Barretina et al., 2012). After quality control and manual curation of the dose response curves, a total of 356 cell lines met the cell viability quality criteria for NVP-CFC218 and were used for subsequent analyses. Cell lines were partitioned into sensitive and insensitive groups based on compound potency (IC50). A rank-order plot of IC50s for NVP-CFC218 showed a natural cut-off of 4 μM, which was used to categorize cell lines. Forty seven cell lines were categorized as sensitive and 309 cell lines as insensitive. For the sensitive cell lines, the maximal compound effect level (Amax) was ≤ −50% (Figure 1C,D, Figure 1—source data 1). As expected, based on the mechanism of action of NVP-CFC218, most of the sensitive cell lines harbored wild-type p53 (n = 43) and this association was statistically significant by Fisher's exact test (p-value = 3.4 × 10−20) (Figure 1E). Moreover, repeat cell proliferation assays with the four sensitive cell lines bearing mutations in TP53 showed them to be insensitive (P12-ICHIKAWA, KBMC-2, and Hs 294T with IC50 > 8 µM) or the reported mutation did not lead to complete p53 loss of function (NCI-H2122 carries both Q16L and C176F p53 mutations which are categorized as neutral and partially deleterious mutations by SIFT, respectively).
 
@@ -71,25 +71,122 @@ A parallel, unbiased orthogonal analysis of cell line sensitivities to over 2000
 
 Interestingly, among all p53 wild-type cell lines for which compound data were available, 62% scored insensitive to NVP-CFC218 (Figure 1C). These results suggest that a patient selection strategy based only on the p53 status of the tumor will not optimally enrich for patients with a high likelihood of responding to this targeted therapy. Hence, there is a need for more sensitive and predictive biomarkers for p53–HDM2 inhibitors.
 
-## Establishing a predictive model for p53–HDM2 inhibitor sensitivity in cell lines
+### Establishing a predictive model for p53–HDM2 inhibitor sensitivity in cell lines
 
 We utilized a similar approach as described previously (Barretina et al., 2012) to identify molecular correlates of compound sensitivity to NVP-CFC218. We first applied a variance filter to remove half of the genes with the lowest variance, yielding 9053 genes. The group of sensitive cell lines (n = 47) was then compared to the group of most insensitive ones for which IC50 and Amax of NVP-CFC218 was ≥8 μM and ≤ −50%, respectively (n = 204). To build a predictive model, we used bootstrapping, whereby the cell lines were randomly split into training and testing sets. Within each bootstrapped data split where 2/3 of the data was used for training and 1/3 for testing, we used the Wilcoxon uni-variate test to select features that were significantly differentially expressed between sensitive and insensitive lines. Using the selected features, a naïve Bayes classifier was trained to predict sensitivity status. The number of features selected varied from 5 to 100 and for each, 20 bootstrapped data splits were conducted. We then assessed the classifier performance based on accuracy, sensitivity, and specificity of the predictions on the test data.
 
-The classification accuracy, averaged over twenty bootstraps, was generally higher than 80% with a maximum of ∼93% when 17 genes were selected (
+The classification accuracy, averaged over twenty bootstraps, was generally higher than 80% with a maximum of ∼93% when 17 genes were selected (Figure 2A, red dot). The average classification accuracy with the fewest features within 1 SEM of the maximum was when 13 genes were selected. Class-level performance metrics, such as sensitivity and specificity, also showed that the 13-gene solution performed similarly to the optimum or optimally (Figure 2—figure supplement 1; Figure 2—source data 1). Sensitivity was the highest for the 13-gene solution, while the highest specificity was observed with 17 genes. However, the 13-gene solution was within 1 SEM of the best specificity. Thus, the 13-gene classifier was found to be the optimal solution, yielding the following performance statistics: 93% accuracy (±2.3%), 87% sensitivity (±10%), and 94% specificity (±2.8%).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig2-v2.jpg)
 
-**Figure 2.:** (A) Prediction accuracy estimation by bootstrapping analysis upon increasing feature set size. Estimates are averaged over 20 bootstrapping repeats. The maximum accuracy is observed for 17 features (red dot). Sensitivity and specificity are shown in Figure 2—figure supplement 1. The averaged data used to generate the accuracy, sensitivity and specificity plots is available in Figure 2—source data 1. (B) Feature occurrence frequencies of 13 feature selections in 100 bootstrapping repeats. Fifty five features were selected at least once. The 13 most frequently occurring features (red dots) were selected more than 30 times. (C) ROC curves for the three predictive models under comparison, i.e., the p53 mutation status, the 215-feature and the 13-gene signature models. (D) Precision-Recall plot for the 13-gene signature. Five curves are typically shown since cross-validation was repeated five times. (E) Performance estimates of the three compared predictive models: AUC (Area Under the Curve, from the ROC curve shown in C), Sensitivity (fraction of correctly predicted sensitive cell lines), Specificity (fraction of correctly predicted insensitive cell lines), PPV (positive predicted value, fraction of sensitive cell lines predicted as such), and NPV (negative predictive value, fraction of insensitive cell lines predicted as such). Measures are averaged over the 5 iterations of 5-fold cross-validations.DOI: http://dx.doi.org/10.7554/eLife.06498.00510.7554/eLife.06498.006Figure 2—source data 1.DOI: http://dx.doi.org/10.7554/eLife.06498.006
+**Figure 2.:** (A) Prediction accuracy estimation by bootstrapping analysis upon increasing feature set size. Estimates are averaged over 20 bootstrapping repeats. The maximum accuracy is observed for 17 features (red dot). Sensitivity and specificity are shown in Figure 2—figure supplement 1. The averaged data used to generate the accuracy, sensitivity and specificity plots is available in Figure 2—source data 1. (B) Feature occurrence frequencies of 13 feature selections in 100 bootstrapping repeats. Fifty five features were selected at least once. The 13 most frequently occurring features (red dots) were selected more than 30 times. (C) ROC curves for the three predictive models under comparison, i.e., the p53 mutation status, the 215-feature and the 13-gene signature models. (D) Precision-Recall plot for the 13-gene signature. Five curves are typically shown since cross-validation was repeated five times. (E) Performance estimates of the three compared predictive models: AUC (Area Under the Curve, from the ROC curve shown in C), Sensitivity (fraction of correctly predicted sensitive cell lines), Specificity (fraction of correctly predicted insensitive cell lines), PPV (positive predicted value, fraction of sensitive cell lines predicted as such), and NPV (negative predictive value, fraction of insensitive cell lines predicted as such). Measures are averaged over the 5 iterations of 5-fold cross-validations.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Estimates are averaged over 20 bootstrapping repeats. Maximum sensitivity is observed for 13 features (sensitivity plot, red dot). Maximum specificity is observed for 17 features (specificity plot, red dot).DOI: http://dx.doi.org/10.7554/eLife.06498.007
+**Figure 2—figure supplement 1.:** Estimates are averaged over 20 bootstrapping repeats. Maximum sensitivity is observed for 13 features (sensitivity plot, red dot). Maximum specificity is observed for 17 features (specificity plot, red dot).
 
 After determining the number of genes to include in the model and assessing the prediction accuracy, we next wanted to select the 13 genes to include in our final model. To this end, we ran 100 bootstraps, selecting 13 genes based on the training set within each bootstrap, and tabulated the number of times each gene was selected. Fifty five different features were selected at least once and the top 13 features were selected more than 30 times. The 11 most frequent features were selected in more than 70 of the 100 bootstrapped selections, and the 9 most frequent ones appeared in more than 90 selections (Figure 2B).
 
-The 13 top-ranking genes were strongly enriched in known p53 transcriptional target genes (Table 1). Specifically, 12 out of the 13 expression features were genes whose expression has been shown to be regulated by p53 (Barak et al., 1993; el-Deiry et al., 1993; Miyashita et al., 1994; Okamoto and Beach, 1994; Varmeh-Ziaie et al., 1997; Tanaka et al., 2000; Adimoolam and Ford, 2002; Liu and Chen, 2002; Tan and Chu, 2002; Budanov et al., 2004; He and Sun, 2007; Kawase et al., 2008; Xiong et al., 2011). Since no annotation for the 13th signature member was available at the time of the signature development, and to be consistent with the bootstrapping results, we replaced the 13th signature member by the 14th most frequently selected feature, TNFRSF10B, another p53 transcriptional target (Wu et al., 1997). Interestingly, all genes of the final gene signature were up-regulated in the sensitive cell lines (Table 1), implying that prior to compound treatment, a subset of p53 target genes is transcriptionally activated in the NVP-CFC218-sensitive cell lines.10.7554/eLife.06498.008Table 1.13-gene signature selected for the sensitivity prediction to p53–HDM2 inhibitorsDOI: http://dx.doi.org/10.7554/eLife.06498.008FeaturesFold changeWilcoxon p-valueProposed function in p53 pathwayExpr. HDM22.183.09 × 10−14Negative feedback loopExpr. CDKN1A3.883.76 × 10−11Cell cycle/senescenceExpr. ZMAT32.811.20 × 10−10Positive feedback loopExpr. DDB22.551.22 × 10−10DNA repairExpr. FDXR2.421.08 × 10−09ApoptosisExpr. RPS27L1.971.23 × 10−09Positive feedback loopExpr. BAX2.121.84 × 10−09ApoptosisExpr. RRM2B2.064.25 × 10−09DNA repairExpr. SESN12.271.04 × 10−08Oxidative stressExpr. CCNG11.694.81 × 10−08Cell cycleExpr. XPC1.621.56 × 10−07DNA repairExpr. TNFRSF10B1.913.30 × 10−06ApoptosisExpr. AEN1.463.30 × 10−06ApoptosisExpr: gene-level expression values generated by the Affymetrix GeneChip technology with the HG-U133 plus 2 arrays, summarized according to the RMA normalization method.
+The 13 top-ranking genes were strongly enriched in known p53 transcriptional target genes (Table 1). Specifically, 12 out of the 13 expression features were genes whose expression has been shown to be regulated by p53 (Barak et al., 1993; el-Deiry et al., 1993; Miyashita et al., 1994; Okamoto and Beach, 1994; Varmeh-Ziaie et al., 1997; Tanaka et al., 2000; Adimoolam and Ford, 2002; Liu and Chen, 2002; Tan and Chu, 2002; Budanov et al., 2004; He and Sun, 2007; Kawase et al., 2008; Xiong et al., 2011). Since no annotation for the 13th signature member was available at the time of the signature development, and to be consistent with the bootstrapping results, we replaced the 13th signature member by the 14th most frequently selected feature, TNFRSF10B, another p53 transcriptional target (Wu et al., 1997). Interestingly, all genes of the final gene signature were up-regulated in the sensitive cell lines (Table 1), implying that prior to compound treatment, a subset of p53 target genes is transcriptionally activated in the NVP-CFC218-sensitive cell lines.
 
-## Comparing the 13-gene signature to p53 mutation at predicting p53–HDM2 inhibition sensitivity
+**Table 1.**
+ 13-gene signature selected for the sensitivity prediction to p53–HDM2 inhibitors
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Features</th>
+      <th>Fold change</th>
+      <th>Wilcoxon p-value</th>
+      <th>Proposed function in p53 pathway</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Expr. HDM2</td>
+      <td>2.18</td>
+      <td>3.09 × 10−14</td>
+      <td>Negative feedback loop</td>
+    </tr>
+    <tr>
+      <td>Expr. CDKN1A</td>
+      <td>3.88</td>
+      <td>3.76 × 10−11</td>
+      <td>Cell cycle/senescence</td>
+    </tr>
+    <tr>
+      <td>Expr. ZMAT3</td>
+      <td>2.81</td>
+      <td>1.20 × 10−10</td>
+      <td>Positive feedback loop</td>
+    </tr>
+    <tr>
+      <td>Expr. DDB2</td>
+      <td>2.55</td>
+      <td>1.22 × 10−10</td>
+      <td>DNA repair</td>
+    </tr>
+    <tr>
+      <td>Expr. FDXR</td>
+      <td>2.42</td>
+      <td>1.08 × 10−09</td>
+      <td>Apoptosis</td>
+    </tr>
+    <tr>
+      <td>Expr. RPS27L</td>
+      <td>1.97</td>
+      <td>1.23 × 10−09</td>
+      <td>Positive feedback loop</td>
+    </tr>
+    <tr>
+      <td>Expr. BAX</td>
+      <td>2.12</td>
+      <td>1.84 × 10−09</td>
+      <td>Apoptosis</td>
+    </tr>
+    <tr>
+      <td>Expr. RRM2B</td>
+      <td>2.06</td>
+      <td>4.25 × 10−09</td>
+      <td>DNA repair</td>
+    </tr>
+    <tr>
+      <td>Expr. SESN1</td>
+      <td>2.27</td>
+      <td>1.04 × 10−08</td>
+      <td>Oxidative stress</td>
+    </tr>
+    <tr>
+      <td>Expr. CCNG1</td>
+      <td>1.69</td>
+      <td>4.81 × 10−08</td>
+      <td>Cell cycle</td>
+    </tr>
+    <tr>
+      <td>Expr. XPC</td>
+      <td>1.62</td>
+      <td>1.56 × 10−07</td>
+      <td>DNA repair</td>
+    </tr>
+    <tr>
+      <td>Expr. TNFRSF10B</td>
+      <td>1.91</td>
+      <td>3.30 × 10−06</td>
+      <td>Apoptosis</td>
+    </tr>
+    <tr>
+      <td>Expr. AEN</td>
+      <td>1.46</td>
+      <td>3.30 × 10−06</td>
+      <td>Apoptosis</td>
+    </tr>
+  </tbody>
+</table>
+
+_Expr: gene-level expression values generated by the Affymetrix GeneChip technology with the HG-U133 plus 2 arrays, summarized according to the RMA normalization method._
+
+### Comparing the 13-gene signature to p53 mutation at predicting p53–HDM2 inhibition sensitivity
 
 After having initially restricted the analysis to gene expression, we evaluated all feature types, including copy number and mutation status in addition to gene expression. The same two-class comparison as before yielded a total of 215 significant features from multiple types. The TP53 mutation status was the feature most associated with response to NVP-CFC218 (p-value = 1.17 × 10−21), with an odds-ratio of 0.024.
 
@@ -97,37 +194,175 @@ To further evaluate the 13-gene signature model, we compared its prediction perf
 
 Thus, these results show that the 13-gene signature provides a clear improvement in response prediction to drug treatment over both, the TP53 mutation status and the larger signature consisting of 215 significant features.
 
-## Predicting HDM2 inhibitor sensitivity in independent cell lines and primary tumors
+### Predicting HDM2 inhibitor sensitivity in independent cell lines and primary tumors
 
 The predictive value of the 13-gene signature was subsequently tested in a second, independent data set composed of only wild-type p53 cell lines of multiple cancer types representative of the lineages included in the first proliferation screen. Cells were assayed for their sensitivity to both p53–HDM2 inhibitors NVP-CGM097 (n = 52) and NVP-CFC218 (n = 38) in in vitro proliferation assays. Because of the manual assay format differing slightly from the high-throughput assay, the cut-off for sensitivity was fixed at IC50 ≤ 3 µM for both p53–HDM2 inhibitors and predictions of sensitivity for every cell line were derived using the 13-gene signature. As expected, cells that were indeed sensitive or insensitive to NVP-CGM097 were similarly sensitive or insensitive to NVP-CFC218, except for one cell line (COLO-829) (Figure 3—source data 1).
 
-Overall, 36/52 and 26/38 cell lines were predicted to be sensitive to NVP-CGM097 and NVP-CFC218, respectively, while 27/52 and 23/38 were truly sensitive (
+Overall, 36/52 and 26/38 cell lines were predicted to be sensitive to NVP-CGM097 and NVP-CFC218, respectively, while 27/52 and 23/38 were truly sensitive (Figure 3A,B). While we observed a slight decrease in specificity relative to the bootstrap estimate, sensitivity measures were 89% and 91% (Figure 3C), respectively, which is comparable to the sensitivity estimate obtained by bootstrapping the predictive model training data (87.3% ± 10.4%, see Figure 2—source data 1). Noticeably, PPV values for both drugs were higher than basal response rate (Figure 3C). Taken together these data validate the 13-gene signature as a robust predictor for sensitivity to both NVP-CGM097 and NVP-CFC218 p53–HDM2 inhibitors in an external sample set. These results also indicate the 13-gene signature to be highly predictive even when applied exclusively to the p53 wild-type cell sensitivity.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig3-v2.jpg)
 
-**Figure 3.:** WT cell lines.A total of 52 or 38 wild-type p53 cell lines were tested against NVP-CGM097 (A) or NVP-CFC218 (B), respectively, in a 3-day proliferation assay. Sensitivity call for each compound was applied according to a cut-off of 3 µM. Cells that were predicted as sensitive are shown in pink, while the ones predicted as insensitive are shown in blue. The data used to generate the waterfall plots and cell line details are available in Figure 3—source data 1. Performance values of the 13-gene signature were derived from this experiment, and are shown in (C).DOI: http://dx.doi.org/10.7554/eLife.06498.00910.7554/eLife.06498.010Figure 3—source data 1.WT cell lines (n = 52).DOI: http://dx.doi.org/10.7554/eLife.06498.010
+**Figure 3.:** A total of 52 or 38 wild-type p53 cell lines were tested against NVP-CGM097 (A) or NVP-CFC218 (B), respectively, in a 3-day proliferation assay. Sensitivity call for each compound was applied according to a cut-off of 3 µM. Cells that were predicted as sensitive are shown in pink, while the ones predicted as insensitive are shown in blue. The data used to generate the waterfall plots and cell line details are available in Figure 3—source data 1. Performance values of the 13-gene signature were derived from this experiment, and are shown in (C).
 
-Given the role of p53 in responding to cellular stress, an obvious concern would be that this signature might simply be reflective of cells undergoing cellular stress during in vitro culture. In order to exclude this possibility, we assessed the presence of the signature in primary human tumor samples. For this purpose, we used the 13-gene signature, associated with the naïve Bayes predictive model trained on cell line data, to interrogate a collection of ∼21,300 human tumor samples for which the whole genome expression profiles are available. Here, we reasoned that the proportion of samples of any given lineage that scored positively for the signature would be a measure of the concordance between cell line expression data and primary human tumor data. The specific proportion of any given lineage among primary human tumor samples scoring positive for the presence of the 13-gene signature (
+Given the role of p53 in responding to cellular stress, an obvious concern would be that this signature might simply be reflective of cells undergoing cellular stress during in vitro culture. In order to exclude this possibility, we assessed the presence of the signature in primary human tumor samples. For this purpose, we used the 13-gene signature, associated with the naïve Bayes predictive model trained on cell line data, to interrogate a collection of ∼21,300 human tumor samples for which the whole genome expression profiles are available. Here, we reasoned that the proportion of samples of any given lineage that scored positively for the signature would be a measure of the concordance between cell line expression data and primary human tumor data. The specific proportion of any given lineage among primary human tumor samples scoring positive for the presence of the 13-gene signature (Figure 4A) was found to be very similar to the lineage proportions of signature positive, sensitive cell lines in the CCLE (Figure 4B), as probed by the NVP-CFC218 chemical sensitivity experiment described above. These data suggest that the 13-gene signature is not likely an artifact of the in vitro culture. In keeping with this observation, the 13-gene signature identified a fraction of predicted sensitive human primary tumor samples within our patient-derived tumor xenograft (PDX) collection (n = 503) (Figure 4C), thus allowing the selection of models for further in vivo validation of its predictive power. In summary, these analyses provide an estimation of the prevalence of 13-gene signature positivity across various cancer indications and underscore additional cancer types with high signature positivity, such as hepatocellular carcinoma and renal cell carcinoma that may have been underrepresented in the in vitro cell line profiling approach.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig4-v2.jpg)
 
-**Figure 4.:** (A) Fraction of human primary tumors predicted sensitive by the 13-gene signature. Samples are grouped by primary site. Expression data from 21,300 human primary tumors were compiled and only primary sites consisting of more than 50 samples were included in the analysis. The primary site nomenclature is based on the COSMIC Classification System. (B) Correlation between the fraction of human primary tumor samples predicted sensitive and the observed sensitivity ratio in the CCLE cell line data. (C) Correlation between the sensitivity predictions from the human primary tumor sample collection and the patient-derived tumor xenograft model collection. Human primary tumor samples, patient-derived tumor xenografts, and CCLE cell lines are organized by lineage. The dashed line corresponds to the identity line.DOI: http://dx.doi.org/10.7554/eLife.06498.011
+**Figure 4.:** (A) Fraction of human primary tumors predicted sensitive by the 13-gene signature. Samples are grouped by primary site. Expression data from 21,300 human primary tumors were compiled and only primary sites consisting of more than 50 samples were included in the analysis. The primary site nomenclature is based on the COSMIC Classification System. (B) Correlation between the fraction of human primary tumor samples predicted sensitive and the observed sensitivity ratio in the CCLE cell line data. (C) Correlation between the sensitivity predictions from the human primary tumor sample collection and the patient-derived tumor xenograft model collection. Human primary tumor samples, patient-derived tumor xenografts, and CCLE cell lines are organized by lineage. The dashed line corresponds to the identity line.
 
-## Predicting sensitivity to NVP-CGM097 in patient-derived tumor xenograft models
+### Predicting sensitivity to NVP-CGM097 in patient-derived tumor xenograft models
 
 To further assess the predictive performance of the 13-gene signature, tumor response in vivo was tested across a set of PDX models from indications identified from the predictions described above (Figure 4C).
 
-These in vivo experiments were performed with NVP-CGM097, owing to its superior pharmacokinetic properties and oral bioavailability as compared to NVP-CFC218 (
+These in vivo experiments were performed with NVP-CGM097, owing to its superior pharmacokinetic properties and oral bioavailability as compared to NVP-CFC218 (Table 2). First, the pharmacodynamic effects and optimal daily dose of NVP-CGM097 were determined in the cell line-derived SJSA-1 osteosarcoma xenograft model that harbors an amplification of the HDM2 gene. A single oral dose of NVP-CGM097, 100 mg/kg, led to stabilization of p53 and elevation of p53 target genes such as CDKN1A (p21) at the mRNA level (Figure 5A, left) and at the protein level (Figure 5A, right). Treatment of SJSA-1 xenografted tumors with NVP-CGM097 led to dose-dependent tumor growth inhibition with 65% tumor regression at 100 mg/kg daily (Figure 5B, left) and was well tolerated as measured by body weight (Figure 5B, right). The anti-tumor activity of NVP-CGM097 correlated well with a dose-dependent induction in tumors of p21 and HDM2 at the mRNA level and/or protein levels (Figure 5C,D). Thus, based on these results, the dose and schedule chosen for the follow up in vivo validation of the 13-gene signature was established at 100 mg/kg NVP-CGM097 given orally, once daily.
+
+**Table 2.**
+ PK parameters of NVP-CFC218 and NVP-CGM097 in preclinical species
+
+
+<table>
+  <thead>
+    <tr>
+      <th>PK parameters</th>
+      <th>Mouse</th>
+      <th>Rat</th>
+      <th>Dog</th>
+      <th>Monkey</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">NVP-CFC218</td>
+    </tr>
+    <tr>
+      <td>CL (mL/min.kg)</td>
+      <td>9</td>
+      <td>12 ± 1</td>
+      <td>3 ± 1</td>
+      <td>11 ± 2</td>
+    </tr>
+    <tr>
+      <td>Vss (L/kg)</td>
+      <td>3.1</td>
+      <td>8.0 ± 1.8</td>
+      <td>3.6 ± 0.5</td>
+      <td>2.1 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>t1/2app. (h)</td>
+      <td>3.6</td>
+      <td>9.3 ± 1.9</td>
+      <td>14.4 ± 0.7</td>
+      <td>2.6 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>AUCinf (µM.h ) i.v.*</td>
+      <td>2.80</td>
+      <td>2.21 ± 0.21</td>
+      <td>8.08 ± 1.68</td>
+      <td>2.37 ± 0.31</td>
+    </tr>
+    <tr>
+      <td>AUCinf (µM.h ) p.o.*</td>
+      <td>1.20</td>
+      <td>1.07 ± 0.34</td>
+      <td>5.74 ± 0.68</td>
+      <td>0.34 ± 0.05</td>
+    </tr>
+    <tr>
+      <td>Cmax (µM) p.o.*</td>
+      <td>0.094</td>
+      <td>0.075 ± 0.023</td>
+      <td>0.240 ± 0.043</td>
+      <td>0.077 ± 0.014</td>
+    </tr>
+    <tr>
+      <td>Tmax p.o. (h)</td>
+      <td>2.0</td>
+      <td>4.0 ± 1.4</td>
+      <td>3.3 ± 1.2</td>
+      <td>1.0 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Oral BA (%F)</td>
+      <td>43</td>
+      <td>49 ± 15</td>
+      <td>71 ± 8</td>
+      <td>14 ± 2</td>
+    </tr>
+    <tr>
+      <td colspan="5">NVP-CGM097</td>
+    </tr>
+    <tr>
+      <td>CL (mL/min.kg)</td>
+      <td>5</td>
+      <td>7 ± 1</td>
+      <td>3 ± 1</td>
+      <td>4 ± 1</td>
+    </tr>
+    <tr>
+      <td>Vss (L/kg)</td>
+      <td>2.6</td>
+      <td>6.4 ± 0.4</td>
+      <td>3.8 ± 0.4</td>
+      <td>2.0 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>t1/2app. (h)</td>
+      <td>6.4</td>
+      <td>12.1 ± 1.1</td>
+      <td>14.2 ± 1.8</td>
+      <td>8.3 ± 0.9</td>
+    </tr>
+    <tr>
+      <td>AUCinf (µM.h ) i.v.*</td>
+      <td>4.70</td>
+      <td>3.66 ± 0.27</td>
+      <td>9.44 ± 1.43</td>
+      <td>6.59 ± 0.74</td>
+    </tr>
+    <tr>
+      <td>AUCinf (µM.h ) p.o.*</td>
+      <td>3.34</td>
+      <td>2.97 ± 0.40</td>
+      <td>7.08 ± 1.05</td>
+      <td>3.73 ± 0.78</td>
+    </tr>
+    <tr>
+      <td>Cmax (µM) p.o.*</td>
+      <td>0.207</td>
+      <td>0.134 ± 0.016</td>
+      <td>0.250 ± 0.030</td>
+      <td>0.363 ± 0.020</td>
+    </tr>
+    <tr>
+      <td>Tmax p.o. (h)</td>
+      <td>4.0</td>
+      <td>4.5 ± 1.9</td>
+      <td>2.7 ± 1.2</td>
+      <td>1.3 ± 0.6</td>
+    </tr>
+    <tr>
+      <td>Oral BA (%F)</td>
+      <td>71</td>
+      <td>81 ± 11</td>
+      <td>75 ± 11</td>
+      <td>57 ± 12</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mouse (n = 1 per time point) and rat (n = 3 per time point) were treated either with a single dose of the indicated compound at 1 mg/kg i.v. or 3 mg/kg p.o. Dog and monkey (n = 3 per time-point) were treated either with a single dose of the indicated compound at 0.1 mg/kg i.v. or 0.3 mg/kg p.o.*AUC and Cmax values are shown dose-normalized to 1 mg/kg._
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig5-v2.jpg)
 
-**Figure 5.:** (A) PK/PD relationship. Mice (n = 3/time-point) bearing established subcutaneous SJSA-1 xenografts received vehicle or a single oral dose of 100 mg/kg NVP-CGM097. Levels of NVP-CGM097 were measured in plasma and in tumor at 7 different time-points within 48 hr following the dose. As a pharmacodynamic readout, the p53 target gene p21 mRNA (left panel) and protein (right panel) levels were assessed in the tumor samples by qRT-PCR and reverse phase protein array at 7 time-points within 48 hr following NVP-CGM097 single dose. Data are plotted as mean ± SEM. (B) In vivo anti-tumor activity of NVP-CGM097. Mice (n = 6/dosing group) bearing established subcutaneous SJSA-1 xenografts received vehicle or 25, 50, or 100 mg/kg of an oral suspension of NVP-CGM097 daily. Tumor volumes were calipered throughout the study, and data are plotted as mean ± SEM (left panel). The body-weight (BW) is expressed as the percentage change in BW relative to day 0 (initiation of treatment). Data are plotted as mean ± SEM (right panel). *, p < 0.05 vs vehicle control. (C and D) Tumor pharmacodynamics effects of NVP-CGM097. Tumor samples were retrieved 3 hr post-last dose at the end of the efficacy study described in (B). Tumor p21 mRNA levels were assessed by qRT-PCR and data are plotted as mean ± SEM (C). Tumor samples were retrieved and paraffin-embedded 3 hr post-last dose at the end of the efficacy experiment described in (B). p21 and HDM2 protein levels were assessed by immunohistochemistry (D).DOI: http://dx.doi.org/10.7554/eLife.06498.013
+**Figure 5.:** (A) PK/PD relationship. Mice (n = 3/time-point) bearing established subcutaneous SJSA-1 xenografts received vehicle or a single oral dose of 100 mg/kg NVP-CGM097. Levels of NVP-CGM097 were measured in plasma and in tumor at 7 different time-points within 48 hr following the dose. As a pharmacodynamic readout, the p53 target gene p21 mRNA (left panel) and protein (right panel) levels were assessed in the tumor samples by qRT-PCR and reverse phase protein array at 7 time-points within 48 hr following NVP-CGM097 single dose. Data are plotted as mean ± SEM. (B) In vivo anti-tumor activity of NVP-CGM097. Mice (n = 6/dosing group) bearing established subcutaneous SJSA-1 xenografts received vehicle or 25, 50, or 100 mg/kg of an oral suspension of NVP-CGM097 daily. Tumor volumes were calipered throughout the study, and data are plotted as mean ± SEM (left panel). The body-weight (BW) is expressed as the percentage change in BW relative to day 0 (initiation of treatment). Data are plotted as mean ± SEM (right panel). *, p < 0.05 vs vehicle control. (C and D) Tumor pharmacodynamics effects of NVP-CGM097. Tumor samples were retrieved 3 hr post-last dose at the end of the efficacy study described in (B). Tumor p21 mRNA levels were assessed by qRT-PCR and data are plotted as mean ± SEM (C). Tumor samples were retrieved and paraffin-embedded 3 hr post-last dose at the end of the efficacy experiment described in (B). p21 and HDM2 protein levels were assessed by immunohistochemistry (D).
 
-A total of 55 PDX models were used for these studies. NVP-CGM097 sensitivity was predicted for this sample set using the 13-gene signature (see ‘Materials and Methods’ section for the specificities of these predictions and
+A total of 55 PDX models were used for these studies. NVP-CGM097 sensitivity was predicted for this sample set using the 13-gene signature (see ‘Materials and Methods’ section for the specificities of these predictions and Figure 6—source data 2). As shown in Figure 6A and Figure 6—source data 1, 27/55 human primary xenograft tumor models were predicted to be sensitive to NVP-CGM097, and of these 27 models, 19 were truly sensitive, resulting in a PPV of 70.5%, improving the basal response rate of 49% (Figure 6C). Moreover, 28/55 in vivo models were predicted to be insensitive, and 20/28 were found to indeed be truly insensitive, leading to a significant NPV of 71.5% (Figure 6C). Also, Sensitivity and Specificity features were comparable to the predictive model performance estimated on cell lines by the bootstrapping protocol (Figure 6C; Figure 2—source data 1). We also determined the performance of the 13-gene signature in tumors pre-selected based upon the presence of wild-type p53. As shown in Figure 6B, 22/34 wild-type p53 human PDX models were predicted to be sensitive to NVP-CGM097 and of these, 18 were truly sensitive, resulting in a PPV of 82%, again significantly improving the basal response rate of 65% (Figure 6C). In addition, 12/34 models were predicted to be insensitive to the drug, and 8/12 were found to be truly insensitive, leading to a significant NPV of 66.5% (Figure 6C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/06498/elife-06498-fig6-v2.jpg)
 
-**Figure 6.:** PDX models were established by subcutaneous implantation in nude mice of surgical tumor tissues from treatment-naive cancer patients. 55 PDX models of multiple cancer types were used for the study: melanoma (Barretina et al., 2012), colorectal cancer (Poyurovsky and Prives, 2006), liposarcoma (Kubbutat et al., 1997), renal cell carcinoma (Kubbutat et al., 1997), hepatocellular carcinoma (Wu et al., 1993), breast cancer (Vogelstein et al., 2000), pancreatic cancer (Harris and Levine, 2005), and lung cancer (Kubbutat et al., 1997). Tumor-bearing mice (n = 4/dosing group/model) received vehicle or 100 mg/kg of NVP-CGM097 daily for 4 weeks. The response is reported as percentage change in tumor volume at a given day of treatment relative to day 0 (start of treatment). The cut-off used for sensitivity to NVP-CGM097 was based on RECIST adapted for full tumor volume measurement. The sensitivity call was made at the maximum effect time-point during the treatment period. Sensitivity predictions for each PDX model were generated using the 13-gene signature (Figure 6—source data 2). (A) Waterfall plot showing the tumor response to NVP-CGM097 for all the PDX models in the study (n = 55), color-coded by the prediction output. (B) The same visualization as in (A) is shown restricted to the wild-type p53 PDX models (n = 34). The data used to generate the waterfall plots and PDX model details are available in Figure 6—source data 1. Performance values of the 13-gene signature were derived from this experiment and are shown in (C).DOI: http://dx.doi.org/10.7554/eLife.06498.01410.7554/eLife.06498.015Figure 6—source data 1.DOI: http://dx.doi.org/10.7554/eLife.06498.01510.7554/eLife.06498.016Figure 6—source data 2.DOI: http://dx.doi.org/10.7554/eLife.06498.016
+**Figure 6.:** PDX models were established by subcutaneous implantation in nude mice of surgical tumor tissues from treatment-naive cancer patients. 55 PDX models of multiple cancer types were used for the study: melanoma (Barretina et al., 2012), colorectal cancer (Poyurovsky and Prives, 2006), liposarcoma (Kubbutat et al., 1997), renal cell carcinoma (Kubbutat et al., 1997), hepatocellular carcinoma (Wu et al., 1993), breast cancer (Vogelstein et al., 2000), pancreatic cancer (Harris and Levine, 2005), and lung cancer (Kubbutat et al., 1997). Tumor-bearing mice (n = 4/dosing group/model) received vehicle or 100 mg/kg of NVP-CGM097 daily for 4 weeks. The response is reported as percentage change in tumor volume at a given day of treatment relative to day 0 (start of treatment). The cut-off used for sensitivity to NVP-CGM097 was based on RECIST adapted for full tumor volume measurement. The sensitivity call was made at the maximum effect time-point during the treatment period. Sensitivity predictions for each PDX model were generated using the 13-gene signature (Figure 6—source data 2). (A) Waterfall plot showing the tumor response to NVP-CGM097 for all the PDX models in the study (n = 55), color-coded by the prediction output. (B) The same visualization as in (A) is shown restricted to the wild-type p53 PDX models (n = 34). The data used to generate the waterfall plots and PDX model details are available in Figure 6—source data 1. Performance values of the 13-gene signature were derived from this experiment and are shown in (C).
 
 In conclusion, the in vitro predictive model performance shown in Figure 2 and Figure 2—source data 1 was confirmed in vivo using PDX models. The results further validate the 13-gene signature as a better predictor for response to p53–HDM2 inhibitors as compared to a selection strategy solely based on p53 mutation status. Notably, the findings described here support the use of p53–HDM2 inhibitor sensitivity predictive model in either non-selected tumors or wild-type p53 pre-selected tumors.
 
@@ -147,31 +382,31 @@ Altogether, this work highlights the power of a biomarker discovery approach bas
 
 ## Materials and methods
 
-## Chemical entities
+### Chemical entities
 
 NVP-CFC218 and NVP-CGM097 were synthesized by Global Discovery Chemistry (NIBR, Novartis, Basel, Switzerland). For in vitro studies, 10 mM stock solutions were prepared in 100% dimethyl sulfoxide (DMSO). For in vivo experiments, NVP-CGM097 was formulated immediately before each oral administration in a suspension of 0.5% hydroxy-propyl-methyl-cellulose (HPMC).
 
-## Biochemical assay
+### Biochemical assay
 
 NVP-CFC218 and NVP-CGM097 biochemical activity against the p53–HDM2 and p53–HDMX interactions was assessed in a TR-FRET assay. Standard assay conditions consisted of 60 μl total in PBS buffer containing 125 mM NaCl, 0.001% Novexin, 0.01% Gelatin, 0.2% Pluronic F-127, 1 mM DTT, and 1.7% final DMSO. Both NVP-CFC218 and NVP-CGM097 were added at different concentrations to 0.1 nM biotinylated HDM2 (amino acids 2-188) or 0.1 nM HDMX (amino acids 2-185), 0.1 nM Europium-labeled streptavidin and 10 nM Cy5-p53 peptide (Cy5-p53 amino acids 18–26). After incubation at room temperature for 30 min, samples were measured on a GeniosPro reader (Tecan). FRET assay readout was calculated from the raw data of the two distinct fluorescence signals measured in time resolved mode (fluorescence 665 nm/fluorescence 620 nm Χ 1000). IC50 values were calculated by curve fitting using XLfit (Fit Model #205).
 
-## Cell lines and in vitro pharmacologic cell line profiling
+### Cell lines and in vitro pharmacologic cell line profiling
 
 The isogenic HCT-116 p53-null cell line was obtained from Horizon (Cambridge, UK). All other cell lines were obtained from ATCC (American Type Culture Collection), DSMZ (Deutsche Sammlung von Mikroorganismen und Zellkulturen), and HSRRB (Health Science Research Resources Bank) and cultured in RPMI or Dulbecco's modified Eagle's medium plus 10% FBS (Invitrogen, Carlsbad, CA) at 37°C, 5% CO2. Cell line identities were confirmed using a 48-variant SNP panel. Effects of NVP-CFC218 and NVP-CGM097 on cellular growth and loss of viability shown in Figure 1B were measured using the YOPRO assay (Invitrogen) and IC50 values were calculated by curve fitting using XLfit (Fit Model #201). A detailed description of the high-throughput cell viability assays can be found in the report of Barretina et al. (2012).
 
-## Global compound selectivity analysis
+### Global compound selectivity analysis
 
 To identify compounds to which wild-type p53 cell lines were selectively responsive as compared to non-wild-type p53 cell lines across the CCLE, we used the high-throughput cell line profiling described above and reported in Barretina et al. (2012). First, a selected compound sensitivity metric was log2 transformed and a selectivity score was computed by multiplying the metric Z-score by the absolute value of the metric. We then performed a Wilcoxon test opposing the two groups of cell lines and corrected for multiple testing using Benjamini and Hochberg FDR, followed by an enrichment analysis by the compound's main target. To this end, compounds were grouped into target classes, and Fisher's exact tests were performed with compounds considered as significantly differentially responsive when the FDR was below 0.25. The cut-off for the FDR is lenient as this is used for enrichment purposes. Finally, we corrected the p-values obtained from enrichment analysis for multiple testing.
 
-## Genomic and genetic characterization of CCLE cell lines
+### Genomic and genetic characterization of CCLE cell lines
 
 The genomic and genetic characterization of a panel of cancer-relevant cell lines was undertaken mostly as described (Barretina et al., 2012). Briefly, gene-level expression values were generated with the HG-U133 plus 2 array (Affymetrix GeneChip technology) and summarized according to the RMA normalization method; gene-level chromosome copy number values were obtained with the Affymetrix SNP6.0 technology and processed using the Affymetrix apt software and expressed as log2 transformed ratios to a collection of HapMap reference normal samples; gene-level genetic alterations (point-mutations, insertions, deletions, and complex alterations) were compiled from the Sanger center COSMIC data and internal sources including Exome Capture Sequencing of 1600 cancer-related genes; pathway-level expression values were generated as referenced in the GeneGo Metacore knowledge base; cell line lineage (cell line tissue of origin); gene-level ‘tumor suppressor status’ was generated by integrating the genetic alteration, copy number, and expression information. Such genomic and genetic data were assembled in a matrix that covers a total of about 40,000 genomic features and were used to test their association with cell line chemical sensitivity to NVP-CFC218.
 
-## Affymetrix GeneChip RMA normalization
+### Affymetrix GeneChip RMA normalization
 
 All Affymetrix GeneChip Human Genome U133 Plus 2.0 arrays were pre-processed with a custom chip definition file (Entrez Gene-centric custom CDF version 16 from the University of Michigan) using the RMA (robust multi-array average) summarization/normalization algorithm (Irizarry et al., 2003; Dai et al., 2005). A set of pre-computed reference quantiles and probe effects was input to the algorithm for normalization of Affymetrix arrays in an approach known as the Extrapolation Strategy or refRMA (Goldstein, 2006; Katz et al., 2007). The reference quantiles and probe effects were defined from a compendium of publically available arrays representing a broad diversity of oncology indications (through the expO data set but not exclusively) and human body normal tissues (GEO series accessions GSE5764, GSE6338, GSE2109, GSE28504, GSE6764, GSE7307, GSE32317, GSE7753, GSE8507, GSE7904, GSE8671, GSE8762, GSE4107, GSE4183, GSE8977, GSE20238, GSE20596, GSE13911, GSE10282, GSE9829, GSE9843, GSE7553, GSE9891, GSE9899, GSE6004 and GSE4237). The RefPlus R package was used to that aim (Harbron et al., 2007).
 
-## Predictive modeling of p53–HDM2 inhibition chemical sensitivity in vitro
+### Predictive modeling of p53–HDM2 inhibition chemical sensitivity in vitro
 
 To define the most accurate and parsimonious predictive model from CCLE expression data, a bootstrapping protocol was used first which is described in the ‘Results’ section. All calculations were done with R-3.0.2 using principally e1071 and caret R libraries.
 
@@ -179,34 +414,34 @@ The broader, 215-feature set, that discriminates NVP-CFC218 sensitive from insen
 
 To compare sensitivity prediction accuracies of the 13-gene signature to both, the 215-feature set and TP53 mutation, naïve Bayes probabilistic models were then built from the respective feature sets. The performances of classifications were evaluated with 5 repeats of 5-fold cross-validations of the train data. To transform the naive Bayes probabilities into a sensitive or insensitive class-level prediction, a threshold was defined as the probability maximizing the sensitivity and specificity. The entire and nearly identical procedure is described in more details in Barretina et al. (2012).
 
-## Predictive modeling of p53–HDM2 inhibition chemical sensitivity of human primary tumors and patient-derived tumor xenograft models
+### Predictive modeling of p53–HDM2 inhibition chemical sensitivity of human primary tumors and patient-derived tumor xenograft models
 
 The human primary tumor sample collection and the patient-derived tumor xenograft model collection (PDX) consist of about 21,300 and 500 samples, respectively, for which gene expression profiles, generated with Affymetrix technology (Human Genome U133 plus 2.0 array), are available. The samples of the collection were internally annotated with controlled vocabulary for pathology, histology, and primary site using the COSMIC Classification System (Forbes et al., 2008), and were submitted for sensitivity prediction (Figure 6—source data 2). The associated GeneChip data were gathered from both public (GEO, ArrayExpress) and internal sources, and RMA normalized as described above. The naïve Bayes model, used to predict NVP-CFC218 sensitivity, was trained on the 251 CCLE expression data restricted to the 13-gene signature features.
 
 PDX predictions of NVP-CFC218 sensitivity under the 13-gene signature were undertaken almost as described above. However, to account for the latest NVP-CFC218 pharmacological characterization on cell lines and to take advantage of a larger training data set, the naïve Bayes classifier was trained on a wider cell line compendium (634 cell lines, 77 and 557 of which being NVP-CFC218-sensitive and NVP-CFC218-insensitive, respectively). Moreover, the naïve Bayes-predictive model probability threshold, above which a xenograft tumor model is predicted as sensitive to p53–HDM2 inhibition, was also further set to 0.2 (optimizing for PPV/Precision at the cost of Sensitivity/Recall).
 
-## In vivo studies in mice
+### In vivo studies in mice
 
 All animal studies were conducted in accordance to procedures covered by permit number 1975 issued by the Kantonales Veterinäramt Basel-Stadt and strictly adhered to the Eidgenössisches Tierschutzgesetz and the Eidgenössische Tierschutzverordnung. All animals were allowed to adapt for 4 days and housed in a pathogen-controlled environment (5 mice/Type III cage) with access to food and water ad libitum and were identified with transponders.
 
-## SJSA-1-derived tumor model
+#### SJSA-1-derived tumor model
 
 3.0 × 106 SJSA-1 osteosarcoma cells were implanted subcutaneously in nude mice (Harlan, Germany). Treatment was initiated when tumors reached 150–200 mm3 volume. Tumor response is reported as percentage change in tumor volume at last day of treatment relative to start of treatment. The body-weight is reported as the percentage change relative to day 0.
 
-## Patient-derived tumor xenografts (PDX) models
+#### Patient-derived tumor xenografts (PDX) models
 
 Surgical tumor tissues from treatment-naive cancer patients were implanted in the right flank of Harlan nude mice. All samples were anonymized and obtained with informed consent and under the approval of the institutional review boards of the tissue providers and Novartis. PDX models were histologically characterized and genetically profiled using various technology platforms after serial passages in mice. External diagnosis was independently confirmed by in-house pathologists. The p53 mutation status was determined for each PDX model by both RNA and DNA deep sequencing technologies. Efficacy studies and tumor response were measured as above. The cut-off used for sensitivity to NVP-CGM097 was based on RECIST adapted to tumor volume: models considered to be sensitive either displayed a complete response (full regression) or a partial response (>50% decrease in tumor volume) or a stable disease (between 50% decrease and 35% increase in tumor volume). In vivo models showing a progressive disease (>35% increase in tumor volume) were considered as non-responsive to NVP-CGM097 treatment. The sensitivity call was made at the maximum effect time-point during the treatment period, to avoid a call that could be due, for example, to the appearance of resistance mechanism(s) following treatment with NVP-CGM097.
 
-## Pharmacodynamic marker evaluation in tumor
+### Pharmacodynamic marker evaluation in tumor
 
-## p21 (CDKN1A) mRNA expression
+#### p21 (CDKN1A) mRNA expression
 
 Total RNA was purified using the QIAshredder and RNeasy Mini Kit (Qiagen, Valencia, CA). The quantitative reverse transcriptase polymerase chain reaction (qRT-PCR) for p21 was performed in triplicates using the One-Step RT qPCR Master Mix Plus (Eurogentec, Seraing, Belgium), with either control primers and primers for human p21 (Hs00355782_m1, Applied Biosystems, Carlsbad, CA), namely TaqMan Gene Expression kit assays (20x probe dye FAM [or VIC]-TAMRA [or MGB]; Applied Biosystems).
 
-## p21 protein expression
+#### p21 protein expression
 
 ZeptoMARK chips, reagents, and protocols (Zeptosens, Bayer Technology Services, Germany) were used for the reverse phase protein microarray measurements (RPPA). Total protein was extracted from tumor samples with NP40-based lysis buffer. The primary anti-p21 antibody was from CST, Danvers, MA (#2947) and the secondary Alexa Fluor 647-labeled antibody was from Invitrogen (#Z25305). Fluorescence imaging of assay signals was performed with the ZeptoREADER instrument (Zeptosens). Microarray images were analyzed with the ZeptoVIEW Pro 2.0 software (Zeptosens).
 
-## Immunochemistry
+### Immunochemistry
 
 Immunohistochemistry has been performed on a Ventana Discovery XT automated immunostainer. SJSA-1 xenograft tumors were collected and a 3- to 4-mm slice was cut out of the middle of the tumor, fixed in neutral buffered formalin and embedded in paraffin. 3 μm sections were processed for immunohistochemistry (IHC). Primary antibodies used were mouse monoclonal anti-p21 antibody (#M7202, Dako, Carpenteria, CA) and mouse monoclonal anti-HDM2 antibody (#965, Santa-Cruz Biotechnology, Santa-Cruz, CA). Sections were subsequently stained using the labeled polymer system Simple Stain Mouse MAX PO (M) from the N-Histofine Mousestain Kit (Nichirei Bioscience Inc., Japan) and DAB substrate from the DABMap Kit omitting the SA-HRP solution (Ventana/Roche Diagnostics, Mannheim, Germany). Counterstaining of sections was done using hematoxylin (Ventana/Roche Diagnostics).

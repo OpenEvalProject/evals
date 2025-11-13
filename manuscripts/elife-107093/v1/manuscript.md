@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05vghhr25 Department of Biology, University of Turku Turku Finland
-2. https://ror.org/02a33b393 Max Planck Institute for Evolutionary Anthropology Leipzig Germany
+1. Department of Biology, University of Turku Turku Finland ([ROR:05vghhr25](https://ror.org/05vghhr25))
+2. Max Planck Institute for Evolutionary Anthropology Leipzig Germany ([ROR:02a33b393](https://ror.org/02a33b393))
 
 † Corresponding author
 
@@ -30,9 +30,56 @@ We use behavioural observations on one wild western (Gorilla gorilla gorilla) an
 
 ## Methods
 
-## Study system and behavioural data
+### Study system and behavioural data
 
 We studied one western gorilla group (ATA/Atananga; Table 1) in Loango National Park, Gabon, and four mountain gorilla groups in Bwindi Impenetrable National Park, Uganda (Table 1). Observations of western gorillas lasted typically between 07:00 and 16:30 h but observations of mountain gorillas were limited to 4 hours per day, typically between 08:00 and 15:00 h following the regulations of the Uganda Wildlife Authority.
+
+**Table 1.**
+ Study groups, study period, average number of females per day (± s.d.; total number of females in the group in parentheses), and number of aggressive interactions (mild - moderate - severe).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group name</th>
+      <th>Study period</th>
+      <th>Number of females</th>
+      <th>Aggression (mild-moderate-severe)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ATA/Atananga</td>
+      <td>2017–2023</td>
+      <td>3.30±0.85 (6)</td>
+      <td>208 - 65 - 27</td>
+    </tr>
+    <tr>
+      <td>BIT/Bitukura</td>
+      <td>2015–2023</td>
+      <td>4.14±0.35 (6)</td>
+      <td>509 - 35 - 23</td>
+    </tr>
+    <tr>
+      <td>KYA/Kyagurilo</td>
+      <td>1999–2016</td>
+      <td>6.07±1.02 (9)</td>
+      <td>3256 - 445 - 315</td>
+    </tr>
+    <tr>
+      <td>MUK/Mukiza</td>
+      <td>2016–2023</td>
+      <td>6.59±1.20 (8)</td>
+      <td>1389 - 89 - 141</td>
+    </tr>
+    <tr>
+      <td>ORU/Oruzogo</td>
+      <td>2014–2023</td>
+      <td>5.59±0.96 (8)</td>
+      <td>55 - 7 - 7</td>
+    </tr>
+  </tbody>
+</table>
 
 Trained observers recorded both focal and ad libitum behavioural observations, including decided avoidance (when an individual walks away from another approaching individual) and displacement (when an individual avoids another and the latter takes the place of the former) behaviours. These two behaviours are ritualized, occurring in the absence of aggression, they are considered a more reliable proxy of power relationships over aggression (Smit, 2024), and they are typically used to infer gorilla hierarchical relationships (Watts, 1994; Robbins, 2008). Similar to the recent studies which have inferred social ranks in gorillas (Wright et al., 2020; Smit and Robbins, 2024), we used all avoidance and displacement interactions throughout the study period and the function elo.seq from R package EloRating (Neumann et al., 2011) to infer daily individual female Elo-scores (Elo, 1978; Albers and de Vries, 2001). We assigned to all avoidance/displacement interactions equal intensity, that is, equal influence to the power relationship of the interacting individuals (k=100). We also assigned to individuals present at the onset of the study initial Elo-scores of 1000 and to individuals entering the hierarchy later (e.g. maturing individuals or immigrants) the score of the lowest ranking individual during the entrance day (Smit and Robbins, 2024). This method takes into account the temporal sequence of interactions and updates an individual’s Elo-scores each day the individual interacted with another. The Elo-scores of the winner and loser of an interaction are updated as a function of the winning probabilities prior to the interaction: winners with low winning probabilities get greater score increases than winners with high winning probabilities and losers with low winning probabilities get smaller score decreases than losers with high winning probabilities. We present these interactions and hierarchies in detail in Smit and Robbins, 2025 (see ‘traditional Elo rating method’; we do not use the ‘optimized Elo-rating method’ as it yields similar hierarchies and it is not widely used). We standardized Elo-scores per group and day such that the highest score was 1 and the lowest 0.
 
@@ -44,7 +91,7 @@ The observers also recorded aggressive behaviours among adult females (>10 years
 
 We used demographic data to estimate daily female reproductive state. On a given day, we classified as ‘pregnant’ any female that gave birth 255 days or less after that day (Czekala and Sicotte, 2000), as ‘cycling’ any female that was not classified as pregnant and she had been observed mating since her last parturition and as ‘lactating’ any female with a dependent infant (based on last observation of nipple contact; Eckardt et al., 2016; Robbins and Robbins, 2021) that was not pregnant and had not observed mating since her last parturition. Lactation is often considered more energetically demanding than pregnancy as a whole but the latest stages of pregnancy are highly energetically demanding, potentially even more than lactation (Butte and King, 2005; Noren et al., 2014). Thus, we differentiated between the first (1–85th day of pregnancy), second (85–170th day), and third (170–255th day) trimester of pregnancy (85 days each).
 
-## Statistical analyses
+### Statistical analyses
 
 We fitted a linear mixed-effects model with a logit function to test whether females who have greater energetic needs and/or experience different social environments, direct aggression of higher or lower score (response variable, continuous, between –1 and 1; Figure 1) to other females. Given that we tested for the aggression direction and not aggression rates, the design of our analysis was independent of observation effort, and thus, we were able to use both focal and ad libitum observations. Specifically, we considered each aggressive interaction recorded during either a focal or an ad libitum observation as a separate data point. In our model, we fitted the following explanatory variables: aggression intensity to test if aggression of greater score is more often mild than moderate or severe; number of adult males in the group (>14 years old for western males; >12 years old for mountain males); number of females in the group; reproductive state of the aggressor (cycling, trimester of pregnancy, or lactation); and species (western or mountain). We fitted the identities of interacting females, dyad, and group as random factors. Finally, we used Tukey post hoc comparisons (via the glht function from the multcomp package; Hothorn et al., 2025), to perform pairwise comparisons between all reproductive states.
 
@@ -53,6 +100,108 @@ We ran the model in R version 4.1.2 using the function glmmTMB from the package 
 ## Results
 
 We analysed 6871 aggressive interactions among a total of 31 adult female gorillas in the five social groups (Table 2). The average percentage of aggressive interactions directed from lower- to higher-ranking females across groups was 41.8 ± 6.7% (± SD; ATA: 47.2%; BIT: 46.3%; KYA: 36.5%; MUK: 46.1%; ORU: 32.7%). For comparison, only 16.4 ± 4.1% of displacement/avoidance interactions that we used to infer the highly stable hierarchies (details in Smit and Robbins, 2025) were directed from lower- to higher-ranking females (± SD; ATA: 15.4%; BIT: 19.2%; KYA: 12.8%; MUK: 22.1%; ORU: 12.5%). This result confirms previous evidence that aggression may not be a reliable proxy of power in gorillas or other species (Watts, 1994; Robbins, 2008; Smit, 2024).
+
+**Table 2.**
+ Results from the linear mixed-effects model.Significant p-values appear in bold. The significance of each level of a categorical variable was evaluated against the reference level (placed in parenthesis) according to whether their 95% confidence intervals (CI) include zero or not. ‘Pregnant_n’ denotes the nth trimester of pregnancy. To highlight that aggression rates can increase due to an increase in interactions of different score, we include a last column with the effect of some of the tested variables on overall adult female aggression rates, based on results of linear mixed effects models from Smit and Robbins, 2024. ‘ns’: non-significant correlation; ‘+’: positive correlation; ‘-’: negative correlation; ‘na’: not tested (see Smit and Robbins, 2024 for details).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Response variable: Interaction score (recipient-aggressor rank difference)</th>
+      <th rowspan="2">Aggression Rate (from Smit and Robbins, 2024)</th>
+    </tr>
+    <tr>
+      <th>Fixed factor</th>
+      <th>Level</th>
+      <th>Estimate</th>
+      <th>95% CI</th>
+      <th>Chisq</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Species (mountain)</td>
+      <td>Western</td>
+      <td>0.088</td>
+      <td>[–0.495; 0.671]</td>
+      <td>0.088</td>
+      <td>0.767</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Reproductive state (Cycling)</td>
+      <td>Pregnant_1</td>
+      <td>0.130</td>
+      <td>[0.101; 0.159]</td>
+      <td>138.812</td>
+      <td>&lt;0.001</td>
+      <td>+*</td>
+    </tr>
+    <tr>
+      <td>Pregnant_2</td>
+      <td>0.093</td>
+      <td>[0.063; 0.123]</td>
+      <td>138.812</td>
+      <td>&lt;0.001</td>
+      <td>+*</td>
+    </tr>
+    <tr>
+      <td>Pregnant_3</td>
+      <td>0.146</td>
+      <td>[0.114; 0.177]</td>
+      <td>138.812</td>
+      <td>&lt;0.001</td>
+      <td>+*</td>
+    </tr>
+    <tr>
+      <td>Lactating</td>
+      <td>0.043</td>
+      <td>[0.027; 0.059]</td>
+      <td>138.812</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of females</td>
+      <td></td>
+      <td>–0.011</td>
+      <td>[–0.018; –0.003]</td>
+      <td>8.045</td>
+      <td>0.005</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Number of males</td>
+      <td></td>
+      <td>0.018</td>
+      <td>[0.010; 0.026]</td>
+      <td>19.784</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Aggression intensity (Mild)</td>
+      <td>Moderate</td>
+      <td>–0.030</td>
+      <td>[–0.051; –0.009]</td>
+      <td>8.531</td>
+      <td>0.005</td>
+      <td>na</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>–0.014</td>
+      <td>[–0.036; 0.009]</td>
+      <td>8.531</td>
+      <td>0.229</td>
+      <td>na</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Pregnancy was not divided in trimesters in Smit and Robbins, 2024._
 
 Aggression from lower- to higher-ranking females was 85% mild, 9% moderate, and 6% severe while aggression from higher- to lower-ranking females was 82% mild, 10% moderate, and 8% severe. Generally, aggression of different intensity showed similar distributions and all aggression was most common from higher- to lower-ranking females close in rank (–0.5>score>0; Figure 2). The interactions of mild aggression were of greater score (recipient-aggressor rank difference) than the interactions of moderate aggression, meaning that females were more likely to use mild rather than moderate aggression against more powerful rivals, but the score difference between interactions of severe and moderate or mild aggression was not significant (Table 2).
 
@@ -65,6 +214,94 @@ Female gorillas directed aggression of greater score when there were more males 
 ![Figure 3.](https://cdn.elifesciences.org/articles/107093/elife-107093-fig3-v1.jpg)
 
 **Figure 3.:** Shaded areas and whiskers show 95% confidence intervals. We created the figure using R package effects (Fox et al., 2022). Positive scores represented aggression up and negative scores represented aggression down the hierarchy.
+
+**Table 3.**
+ Results of post hoc pairwise comparisons among reproductive states, from the linear mixed effects model.Significant p-values appear in bold. Cycl: cycling; P_n: nth pregnancy trimester; Lact: lactating.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Comparison</th>
+      <th>Estimate</th>
+      <th>Std. error</th>
+      <th>Z-value</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P1-Cycl</td>
+      <td>0.130</td>
+      <td>0.015</td>
+      <td>8.681</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>P_2 - Cycl</td>
+      <td>0.093</td>
+      <td>0.015</td>
+      <td>6.071</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>P_3 - Cycl</td>
+      <td>0.146</td>
+      <td>0.016</td>
+      <td>9.147</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>Lact - Cycl</td>
+      <td>0.043</td>
+      <td>0.008</td>
+      <td>5.236</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>P_1 - P_2</td>
+      <td>–0.037</td>
+      <td>0.019</td>
+      <td>–1.965</td>
+      <td>0.267</td>
+    </tr>
+    <tr>
+      <td>P_1 - P_3</td>
+      <td>0.016</td>
+      <td>0.019</td>
+      <td>0.812</td>
+      <td>0.922</td>
+    </tr>
+    <tr>
+      <td>Lact - P_1</td>
+      <td>–0.087</td>
+      <td>0.015</td>
+      <td>–5.888</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>P_2 - P_3</td>
+      <td>0.052</td>
+      <td>0.019</td>
+      <td>2.721</td>
+      <td>0.047</td>
+    </tr>
+    <tr>
+      <td>Lact - P_2</td>
+      <td>–0.050</td>
+      <td>0.015</td>
+      <td>–3.368</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Lact - P_3</td>
+      <td>–0.103</td>
+      <td>0.015</td>
+      <td>–6.715</td>
+      <td>0.000</td>
+    </tr>
+  </tbody>
+</table>
 
 Notably, a positive (or negative) correlation of a predictor with the interaction score does not necessarily represent a shift from aggression towards females lower-ranking than the aggressor to aggression towards females higher-ranking than the aggressor (or vice versa) – but, more generally, it represents a shift of aggression towards more (or less) powerful females independently of the rank relationship to the aggressor. For example, females in the second trimester of pregnancy direct most aggression towards rivals higher-ranking than themselves; yet they direct aggression of significantly lower score than females in the third trimester of pregnancy, that is, the latter direct more aggression to females even more higher-ranking than those during the second trimester (Figure 3, Table 2).
 

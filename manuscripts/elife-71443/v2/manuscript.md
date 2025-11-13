@@ -14,7 +14,7 @@
 
 ## Abstract
 
-Sensory and behavioral plasticity are essential for animals to thrive in changing environments. As key effectors of intracellular calcium signaling, Ca 2+ /calmodulin-dependent protein kinases (CaMKs) can bridge neural activation with the many regulatory processes needed to orchestrate sensory adaptation, including by relaying signals to the nucleus. Here, we elucidate the molecular mechanism controlling the cell activation-dependent nuclear translocation of CMK-1, the Caenorhabditis elegans ortholog of mammalian CaMKI/IV, in thermosensory neurons in vivo. We show that an intracellular Ca 2+ concentration elevation is necessary and sufficient to favor CMK-1 nuclear import. The binding of Ca 2+ /CaM to CMK-1 increases its affinity for IMA-3 importin, causing a redistribution with a relatively slow kinetics, matching the timescale of sensory adaptation. Furthermore, we show that this mechanism enables the encoding of opposite nuclear signals in neuron types with opposite calcium-responses and that it is essential for experience-dependent behavioral plasticity and gene transcription control in vivo. Since CaMKI/IV are conserved regulators of adaptable behaviors, similar mechanisms could exist in other organisms and for other sensory modalities.
+Sensory and behavioral plasticity are essential for animals to thrive in changing environments. As key effectors of intracellular calcium signaling, Ca2+/calmodulin-dependent protein kinases (CaMKs) can bridge neural activation with the many regulatory processes needed to orchestrate sensory adaptation, including by relaying signals to the nucleus. Here, we elucidate the molecular mechanism controlling the cell activation-dependent nuclear translocation of CMK-1, the Caenorhabditis elegans ortholog of mammalian CaMKI/IV, in thermosensory neurons in vivo. We show that an intracellular Ca2+ concentration elevation is necessary and sufficient to favor CMK-1 nuclear import. The binding of Ca2+/CaM to CMK-1 increases its affinity for IMA-3 importin, causing a redistribution with a relatively slow kinetics, matching the timescale of sensory adaptation. Furthermore, we show that this mechanism enables the encoding of opposite nuclear signals in neuron types with opposite calcium-responses and that it is essential for experience-dependent behavioral plasticity and gene transcription control in vivo. Since CaMKI/IV are conserved regulators of adaptable behaviors, similar mechanisms could exist in other organisms and for other sensory modalities.
 
 ## Introduction
 
@@ -30,11 +30,27 @@ Here, we show how long-term cell-autonomous calcium activity is integrated to re
 
 ## Results
 
-## CMK-1 translocates in the nucleus of FLP upon prolonged exposure to heat
+### CMK-1 translocates in the nucleus of FLP upon prolonged exposure to heat
 
 In order to evaluate how CMK-1 subcellular localization is regulated prior to and during adaptation, we focused on the FLP thermonociceptor neurons, in which a robust change in localization is easily monitored with a CMK-1::mNeonGreen (mNG) protein fusion (Schild et al., 2014; Hostettler et al., 2017). In naïve animals (grown at 20°C), CMK-1 is mostly localized in the cytoplasm of FLP (Figure 1B). Exposure to moderately noxious temperature (28°C) causes CMK-1 to progressively translocate into the nucleus, being slightly enriched in the nucleus after 90 min (Figure 1B and C). These observations recapitulate previous findings obtained with different fluorescent tags (Schild et al., 2014; Hostettler et al., 2017).
 
-## CMK-1 cytoplasmic accumulation in unstimulated FLP neurons depends on an active transport and an intrinsic nuclear export sequence
+![Figure 1.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of CMK-1 topology highlighting the localization of in silico-predicted NES and NLS and their sequence. (B) Subcellular localization of CMK-1(wt)::mNeonGreen (mNG) reporter expressed in FLP via the depicted transgene (top). Average nuclear/cytoplasm fluorescent signal ratio (± SEM, left) and representative confocal micrographs (right) showing heat-evoked nuclear translocation of wild-type CMK-1 in young adult FLP neurons after 90 min at 28°C as compared to control at 20°C. (C) Kinetics of CMK-1::mNG nuclear accumulation. Data as nuclear/cytoplasmic fluorescent signal ratio average (± SEM). (D, E) Subcellular localization of CMK-1::mNG reporters carrying the depicted mutations in candidate NES (D), as well as following 90 min incubation with 50 µM leptomycin B or vehicle control (E). Data as nuclear/cytoplasmic signal ratio average (± SEM). (F) Same as for panel (D), but with mutations in the depicted candidate NLS in animals incubated 90 min at 20°C (blue, left panel) or 90 min at 28°C (red, right panel). #p<0.001 versus CMK-1(wt) by Bonferroni contrasts. The number of animals scored in each condition is indicated in the figure (n). Experiments reported in panels (B), (D), and (F) were run in parallel and the CMK-1(wt) dataset is common across these panels.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Violin plots with superimposed datapoints depicting the distribution of nucleus/cytoplasmic ratios of the indicated CMK-1::mNG reporters. Red bars: average. n: number of observations. p-Values obtained with Bonferroni post-hoc tests. (A) Data corresponding to Figure 1D. (B) Data corresponding to Figure 1F, left. (C) Data corresponding to Figure 1F, right.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Violin plots with superimposed datapoints depicting the distributions of nucleus/cytoplasmic ratios of CMK-1(wt)::mNG reporter. Red bars: average. n: number of observations. Data corresponding to Figure 1E.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** FLP cell body confocal micrography examples from transgenic animals coexpressing CMK-1::mNG reporter (green channel) and the ceBFP::NLS nuclear marker (blue channel) and incubated at the indicated temperature for 90 min. Dotted ellipse: nucleus shapes. Purple ellipse: nuclear ROI. Yellow ellipse: cytoplasmic ROI.
+
+### CMK-1 cytoplasmic accumulation in unstimulated FLP neurons depends on an active transport and an intrinsic nuclear export sequence
 
 Since CMK-1 subcellular localization varies according to cell types and conditions, and since putative NLS and NES are predicted from its primary sequence (Schild et al., 2014), CMK-1 localization may result from a dynamic equilibrium between nuclear import and export drives via canonical export/import pathways (Sorokin et al., 2007). To test this general working model, we started by addressing the mechanisms that promote the cytosolic accumulation of CMK-1 in FLP at 20°C. Two candidates NES were identified thanks to the NESSential prediction tool (Fu et al., 2013): NES288-294 and NES315-323 (superscript indexes indicate the residue positions, Figure 1A). We expressed CMK-1 mutant proteins affecting each of these NES candidates and examined the impact on CMK-1 localization in FLP at 20°C. Disrupting the NES288-294 candidate sequence with a V292A/V294A double mutation or a Δ288–294 deletion prevented the cytoplasmic expression of CMK-1 and even yielded a nuclear accumulation (Figure 1D). In contrast, NES315-323 candidate mutants displayed a cytoplasmic enrichment similar to that of wild-type CMK-1. These included I315A single mutant, V321A/V323A double mutant, I315A/V321A/V323A triple mutant, as well as Δ318–324 and Δ315–323 mutants, in which the NES candidate region is deleted in part or in full (Figure 1D). Collectively, these data indicate that the NES288-294, but not the NES314-323, is a key determinant of CMK-1 cytoplasmic localization in FLP at 20°C.
 
@@ -42,15 +58,31 @@ Because NES288-294 sequence matches the binding consensus for exportins, we furt
 
 Collectively, these results suggest that the predominant cytoplasmic expression of CMK-1 at 20°C in FLP requires NES288-294 and relies on an exportin-dependent active nuclear export mechanism.
 
-## Specific nuclear localization sequences on CMK-1 are required for nuclear translocation
+### Specific nuclear localization sequences on CMK-1 are required for nuclear translocation
 
 Our next goal was to clarify the mechanisms causing CMK-1 to accumulate in the nucleus upon exposure to moderately noxious temperatures (28°C, 90 min). Hypothesizing that the importin pathway could be involved, we started by examining the role of two candidate NLS, defined with an in silico prediction tool (Nguyen Ba et al., 2009): NLS71-78 and NLS297-308. Mutations affecting the NLS71-78 candidate region all significantly impaired the nuclear relocalization of CMK-1 after prolonged heat exposure (Figure 1F, right). The inhibitory effect was partial in CMK-1(K71A) and CMK-1(R74Q) single mutants and complete in the CMK-1(R77S) single mutant, as well as in the CMK-1(K71A/R74Q/R77S) triple mutant. Introducing mutations in the NLS297-307 candidate region (K307Q single mutant or a R302S/K307Q double mutant) also produced a partial reduction in CMK-1 nuclear accumulation. In contrast, none of the NLS-affecting mutations modulated the baseline cytoplasmic expression at 20°C (Figure 1F, left), suggesting that these elements might not be active in the absence of prolonged cell stimulation.
 
 Taken together, our results suggest that (i) the canonical importin pathway may be involved, (ii) NLS71-78 and NLS297-308 are only engaged upon prolonged thermal stimulation, and (iii) NLS71-78 plays a major role and NLS297-308 a more minor role in driving CMK-1 nuclear accumulation.
 
-## Intracellular calcium controls CMK-1 subcellular localization in FLP
+### Intracellular calcium controls CMK-1 subcellular localization in FLP
 
 Since FLP activity is controlled by temperature (Saro et al., 2020), we hypothesized that the temperature-evoked CMK-1 relocalization could reflect the prolonged cell-autonomous activity of FLP, independently from the inputs of additional neurons. Consistent with this model, we found that a prolonged heat treatment could still cause CMK-1 nuclear relocalization in unc-13 mutants with impaired synaptic transmission (Richmond et al., 1999) and in unc-31 mutants with impaired neuropeptide signaling (Speese et al., 2007; Figure 2A). These results suggest that the mechanisms leading to temperature-dependent CMK-1 nuclear relocalization could primarily depend on cell-autonomous heat-evoked FLP activity. However, we cannot rule out a redundant function of unc-13 and unc-31 gene products, nor the implication of electrical synpases.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig2-v2.jpg)
+
+**Figure 2.:** Subcellular localization of CMK-1(wt)::mNG reporters in FLP neurons of young adults of the indicated genotype, maintained 90 min at 20 or 28°C. Data as nuclear/cytoplasmic signal ratio average (± SEM). (A) Comparison showing no significant difference between wild-type and mutants affecting synaptic neurotransmission (unc-13(e540)) or dense core vesicle release (unc-31(e928)). (B) Subcellular localization of CMK-1(wt)::mNG and CMK-1(W305S)::mNG in wild-type and unc-68(dom13) mutant background. The unc-68 gain-of-function mutation reduces the cytoplasmic accumulation of CMK-1(wt) at 20°C, but fails to do so when the CaM binding site is altered in CMK-1(W305S). n ≥ 135 animals. *p<0.001 versus wild-type; #p<0.001 versus CMK-1(wt) for the corresponding condition by Bonferroni contrasts. (C) Subcellular localization of CMK-1(wt)::mNG reporter in [mec-3p::Calbindin] transgenic animals, as well as non-transgenic animals coming from the same growth plates (control). The expression of the Calbindin calcium buffer inhibits CMK-1 nuclear translocation. n ≥ 277. *p<0.001 versus control at the same temperature by Bonferroni contrasts. (D) Same analysis as in (A), with indicated mutants affecting different calcium channels, but showing no statistically significant difference by Bonferroni contrasts.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Violin plots with superimposed datapoints depicting the distributions of nucleus/cytoplasmic ratios of the indicated CMK-1::mNG reporters. Red bars: average. n: number of observations. p-Values obtained with Bonferroni post-hoc tests. (A) Data corresponding to Figure 2A. (B) Data corresponding to Figure 2B. (C) Data corresponding to Figure 2C. (D) Data corresponding to Figure 2D.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Calcium levels in FLP cell bodies of [egl-46p:.YC2.3] animals incubated at 20 or 28°C for 60 min. Average YFP/CFP ratio (± SEM) of n ≥ 10 animals per conditions. (A) Comparison between wild-type and Calbindin-expressing transgenic animals showing a significant decrease in temperature-evoked calcium elevation. p-Value by Student’s t-test. (B) Comparison between wild-type and different calcium channel mutants showing no significant effect of the mutations. ns, not significant.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Subcellular localization of CMK-1(wt)::mNG reporters in FLP neurons of young adults of the indicated genotype, incubated 90 min at 20 or 28°C. Data as nuclear/cytoplasmic signal ratio average (± SEM). The number of animals scored in each condition is indicated in the figure (n). *p<0.01 by Bonferroni post-hoc test. ns, not significant.
 
 Long-lasting thermal changes are mirrored by fluctuations in steady-state intracellular Ca2+ levels in FLP (Saro et al., 2020). In order to evaluate the impact of intracellular Ca2+ on CMK-1 subcellular localization, we first tested if an intracellular Ca2+ elevation is sufficient to trigger CMK-1 nuclear accumulation in the absence of heat stimuli. We used unc-68(dom13) gain-of-function mutants in which cytoplasmic Ca2+ levels are chronically elevated in FLP due to the expression of a deregulated ryanodine receptor/UNC-68 (Marques et al., 2019). In comparison to wild-type, CMK-1 nuclear expression was stronger at 20°C in unc-68(dom13) mutants (Figure 2B, top). These data suggest that a chronic elevation in intracellular Ca2+ levels in the unc-68(dom13) mutants is sufficient to favor CMK-1 accumulation in the nucleus.
 
@@ -62,11 +94,19 @@ Finally, reasoning that the binding of Ca2+/CaM to CMK-1 could be directly invol
 
 Collectively, these results are consistent with a model in which prolonged thermal stimulation causes prolonged cell-autonomous FLP thermosensory activity, long-lasting changes in intracellular calcium concentration and binding of Ca2+/CaM on CMK-1 to promote CMK-1 nuclear translocation.
 
-## Ca2+/CaM binding promotes CMK-1 nuclear localization independently of the NES288-294 element
+### Ca2+/CaM binding promotes CMK-1 nuclear localization independently of the NES288-294 element
 
 Our next goal was to understand how the binding of Ca2+/CaM on CMK-1 can favor CMK-1 nuclear accumulation. One possible mechanism would consist in the masking of the NES288-294 element by the binding of Ca2+/CaM. Indeed, the NES288-294 element is adjacent to the CaM binding domain and components of the export machinery might potentially compete with CaM for CMK-1 binding (Figure 3A, NES masking model). If this model is true, one would expect that the NES288-294 element would be required to prevent CMK-1 nuclear accumulation at 28°C when the CaM-binding is disrupted by the W305S mutation. We therefore examined the localization of CMK-1(V292A/V294A/W305S) mutant proteins, in which both CaM binding and the NES288-294 element are disrupted. Contrary to the predication made according to the NES masking model, we found that the triple mutant protein expression was cytoplasmic at 28°C, indistinguishable from that of the single W305S mutant (Figure 3B). Therefore, a functional NES288-294 element is dispensable for the cytosolic retention at 28°C of CaM binding-disruption mutant CMK-1. These data suggest that the masking of the NES288-294 element upon CaM binding to CMK-1(wt) is unlikely to be a major mechanism promoting CMK-1 nuclear accumulation at 28°C.
 
-## Ca2+/CaM binding to CMK-1 increases its affinity for IMA-3 importin
+![Figure 3.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of the rejected model in which NES288-294 would be masked by Ca2+/CaM binding. (B) Subcellular localization of CMK-1::mNG reporters carrying the indicated mutations in the FLP neurons of animals exposed for 90 min at 28°C. Data as nuclear/cytoplasmic signal ratio average (± SEM), showing that the CaM-binding-disrupting mutation W305S prevents nuclear localization independently of the NES288-294 element. (C) Schematic of the retained model in which NLS71-78 would be unmasked by Ca2+/CaM binding. (D) Subcellular localization of CMK-1(wt)::mNG and the NLS71-78-disrupting mutant CMK-1(K71A/R74Q/R77S)::mNG at 20 and 28°C in both wild-type and unc-68(dom13) backgrounds. Data as nuclear/cytoplasmic signal ratio average (± SEM), showing that the NLS71-78-disrupting mutations counteract the impact of the unc-68 gain-of-function mutation. *p<0.001 versus wild-type; #p<0.001 versus CMK-1(wt) for the corresponding condition by Bonferroni post-hoc tests. Experiments were run in parallel to those reported in Figure 2B, and CMK-1(wt) data are common across the two figures. (E) Subcellular localization of CMK-1::mNG reporters carrying the indicated mutations disrupting either NES288-294, NLS71-78, or both of them. Data as nuclear/cytoplasmic signal ratio average (± SEM), showing no effect of NLS71-78 disruption at 20°C, even when the NES288-294 is impaired. ns, not significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Violin plots with superimposed datapoints depicting the distributions of nucleus/cytoplasmic ratios of the indicated CMK-1::mNG reporters. Red bars: average. n: number of observations. p-Values obtained with Bonferroni post-hoc tests. (A) Data corresponding to Figure 3B. (B) Data corresponding to Figure 3D. (C) Data corresponding to Figure 3E.
+
+### Ca2+/CaM binding to CMK-1 increases its affinity for IMA-3 importin
 
 An alternative mechanism through which Ca2+/CaM binding could favor CMK-1 nuclear accumulation would be to trigger a conformational change that unmasks a functional NLS element (Figure 3C). Binding of importins would thereby be favored under high calcium conditions at 28°C, but not at 20°C when calcium levels are lower. The effect of mutations in the CMK-1 NLS71-78 element is consistent with this model as they selectively impact CMK-1 localization at 28°C, but not at 20°C (Figure 1F). As presented in the next paragraphs, we further confirmed this NLS unmasking model by testing additional predictions regarding the localization of CMK-1 in vivo and directly quantifying protein affinities in vitro.
 
@@ -76,19 +116,110 @@ Next, we sought to more directly test the NLS unmasking model by quantifying the
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig4-v2.jpg)
 
-**Figure 4.:** 2+/CaM binding to CMK-1 enhances the affinity for IMA-3 importin-α in a NLS71-78-dependent manner.(A) ima-3 expression analysis with a transcriptional reporter. Representative confocal micrographs showing fluorescence signals in the head of an adult [mec-3p::CMK-1::mNG; ima-3p::NLS::wrmScarlet] transgenic animal. FLP cytoplasm is labeled in green (top). The nuclei of ima-3-expressing cells are labeled in red (middle). FLP is among the cells expressing ima-3p (bottom). (B) Binding curves for the CMK-1(wt)/IMA-3 interaction in the presence (red curve) or the absence (black curve) of Ca2+/CaM, as determined by MicroScale Thermophoresis (see Materials and methods). Data as average of three replicates (± SEM). (C) Same analysis as in (B), but with CMK-1 (K71A/R74Q/R77S) mutant. Kd derived from fitting curves are reported in Table 1. (D, E) Schematic protein interaction models illustrating the increased affinity for IMA-3 when Ca2+/CaM binds CMK-1(wt) (D) and the impact of NLS71-78 mutations, which prevent CaM-dependent IMA-3 affinity increase.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) ima-3 expression analysis with a transcriptional reporter. Representative confocal micrographs showing fluorescence signals in the head of an adult [mec-3p::CMK-1::mNG; ima-3p::NLS::wrmScarlet] transgenic animal. FLP cytoplasm is labeled in green (top). The nuclei of ima-3-expressing cells are labeled in red (middle). FLP is among the cells expressing ima-3p (bottom). (B) Binding curves for the CMK-1(wt)/IMA-3 interaction in the presence (red curve) or the absence (black curve) of Ca2+/CaM, as determined by MicroScale Thermophoresis (see Materials and methods). Data as average of three replicates (± SEM). (C) Same analysis as in (B), but with CMK-1 (K71A/R74Q/R77S) mutant. Kd derived from fitting curves are reported in Table 1. (D, E) Schematic protein interaction models illustrating the increased affinity for IMA-3 when Ca2+/CaM binds CMK-1(wt) (D) and the impact of NLS71-78 mutations, which prevent CaM-dependent IMA-3 affinity increase.
+
+**Table 1.**
+ In vitro interaction between CMK-1 and IMA-3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>IMA-3</th>
+      <th>CMK-1</th>
+      <th>CaM</th>
+      <th>Ca2+</th>
+      <th>Kd(mean ± SEM, µM)</th>
+      <th>R2 fit</th>
+      <th>p vs. -CaM/-Ca2 control</th>
+      <th>p vs. CMK-1(wt)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>+</td>
+      <td>wt</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1.54 ± 0.09</td>
+      <td>0.991</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>wt</td>
+      <td>+</td>
+      <td>+</td>
+      <td>0.45 ± 0.05</td>
+      <td>0.989</td>
+      <td>&lt;0 .0001</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+      <td>No detectable interaction</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>wt</td>
+      <td>-</td>
+      <td>+</td>
+      <td>1.14 ± 0.19</td>
+      <td>0.970</td>
+      <td>ns</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>K71A/R74Q/R77S</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1.22 ± 0.09</td>
+      <td>0.988</td>
+      <td>-</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>K71A/R74Q/R77S</td>
+      <td>+</td>
+      <td>+</td>
+      <td>1.00 ± 0.15</td>
+      <td>0.963</td>
+      <td>ns</td>
+      <td>&lt;0.05</td>
+    </tr>
+  </tbody>
+</table>
+
+_ns, not significant._
 
 Collectively, the results of in vivo protein localization analysis and in vitro protein affinity quantification are consistent with the NLS71-78 unmasking model (schematically depicted in Figure 3C) to explain the increased nuclear accumulation in FLP neurons upon prolonged activation.
 
-## CMK-1 NLS71-78 and NES288-294 elements are essential for thermal avoidance responsiveness and plasticity
+### CMK-1 NLS71-78 and NES288-294 elements are essential for thermal avoidance responsiveness and plasticity
 
 In order to demonstrate the physiological relevance of the NLS71-78 and NES288-294-dependent control of CMK-1 subcellular localization, we engineered mutants with corresponding point mutations with CRISPR/Cas9 genome editing: cmk-1(syb1435), encoding an R77S mutation that disrupts the NLS71-78 element, and cmk-1(syb1375), encoding for the V292A/V294A mutations that disrupt the NES288-294 element (Figure 5A). While the NLS mutant appeared to be superficially wild-type as regards morphology and gross locomotion phenotypes, the NES mutants had partially impaired locomotion with a tendency to coil, which prevented their characterization in some behavioral assays.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of CMK-1 protein highlighting the position of the deletion in ok287 mutant and of the single-point mutations in syb1435 and syb1375 CRISPR/Cas9 engineered alleles affecting NLS71-78 and NES288-294, respectively. (B) Avoidance response to 4 s heat pulses (at 0.3–0.6 W /m2, see Materials and methods) in adult animals of the indicated genotypes (average ± SEM, n ≥ 21 plates, each scoring at least 50 worms). #p<0.001 versus wild-type by Bonferroni contrasts. (C) Noxious heat thermogradient assays with animals of the indicated genotype maintained at 20°C (blue) or adapted for 1 hr at 28°C (red). Dispersal of animals reported as the temperature corresponding to the third quartile of the worm distribution in the spatial thermogradient. Vertical axis minimum was set to the lowest temperature in the thermogradient (29.5°C). Data as average (± SEM) of n ≥ 12 assays, each scoring more than 100 animals. ##p<0.001 by Bonferroni contrasts. ns, not significant. (D) FLP optogenetic analysis: light dose–response curves in young adult [FLP::CoChR] animals in response to 0.5 s light stimuli. Data as fraction of trials producing a response (n = 90 trials per genotype) showing a reduced response in cmk-1(syb1375) with constitutive nuclear CMK-1 expression. *p<0.001 versus cmk-1(wt) by Fisher’s exact tests. (E) FLP optogenetic analysis: light avoidance rescue experiment in cmk-1(syb1375) mutant. Data acquired as in (D), using 100 W/m2 light stimuli, and expressed as fraction of trials producing reversal or not. n ≥ 100 trials per genotype, each aggregating data from three independent rescue lines. *p<0.01 versus wild-type by Fisher’s exact tests. Transgenes containing cmk-1p and mec-3p promoter both produced a rescue effect. (F) FLP optogenetic analysis: impact of heat adaptation. Data as in (E), in animals maintained at 20°C (naïve) or incubated for 90 min at 28°C (adapted), showing impaired adaptation in cmk-1(syb1475) mutants. n ≥ 120 light trials per condition. **p<0.01 versus naïve control by Fisher’s exact test. ns, not significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) FLP optogenetic analysis: light dose–response curves in young adult [FLP::CoChR] animals in response to 0.5 s light stimuli. Data as fraction of trials producing a response (n = 120 trials per condition). No reversal response above the spontaneous reversal rate is seen for red light stimuli or for blue light stimuli in the absence of ATR.
 
 First, we evaluate heat-evoked reversals in wild-type and cmk-1 mutants. Similar to previous findings (Lia and Glauser, 2020), loss of cmk-1 in cmk-1(ok287) mutants increased the animal responsiveness to acute stimuli (Figure 5B). Whereas disrupting the NLS71-78 in cmk-1(syb1435) R77S mutants had no impact on the heat-evoked response, disrupting the NES288-294 in cmk-1(syb1375) V292A/V294A double mutant significantly reduced animal responsiveness. In this latter case, the constitutive nuclear expression of the NES288-294 mutant is thus linked to reduced aversive behaviors.
 
 Second, we assessed heat-evoked avoidance using noxious heat thermogradient assays in which we scored how far animals spread in a noxious heat spatial thermogradient. We compared naïve animals (maintained at 20°C) and heat-adapted animals (maintained at 28°C for 1 hr prior to the assay). The adaptation treatment at 28°C caused a desensitization-like effect, shifting the distribution of wild-type animals toward higher temperatures (third quartile of their thermal distribution rising from 30.9 to 31.7°C, p>0.001, Figure 5C). Consistent with previous results (Schild et al., 2014), the loss of CMK-1 in cmk-1(ok287) mutants inhibited this adaptation effect (Figure 5C). We could not determine the impact of the NES288-294-affecting mutations because cmk-1(syb1375) mutants tended to coil and reverse more frequently, which limited their dispersal on the assay plate. The NLS71-78-affecting mutation in cmk-1(syb1435) R77S mutants did not affect the response of naïve animals (20°C), but impaired the desensitization effect upon adaptation at 28°C. These results highlight the importance of NLS71-78-dependent CMK-1 nuclear localization in the process mediating noxious heat desensitization.
 
-## CMK-1 NLS71-78 and NES288-294 elements function to modulate FLP-dependent reversal behavior
+### CMK-1 NLS71-78 and NES288-294 elements function to modulate FLP-dependent reversal behavior
 
 Thermal avoidance behaviors in C. elegans are mediated by the FLP pathway, but also additional thermosensory pathways (Liu et al., 2012). In order to selectively address the role of CMK-1 NES288-294 and NLS71-78 in the FLP pathway, we analyzed FLP-specific optogenetic-evoked reversals. We previously showed that cell-autonomous CMK-1-dependent thermal avoidance plasticity in the FLP pathway was not linked to the modulation of FLP thermal sensitivity, but to the modulation of FLP neurotransmission (Schild et al., 2014). We therefore expected that CMK-1-dependent FLP output modulation would be detectable with an optogenetic activation, even if this stimulation method bypasses FLP thermosensation.
 
@@ -98,19 +229,35 @@ Second, we analyzed the impact of thermal adaptation treatments on FLP-evoked re
 
 Collectively, these results indicate that the NLS71-78 and NES288-294-dependent control of CMK-1 subcellular localization regulates FLP outputs and that NLS71-78 -dependent nuclear accumulation is essential to dampen the FLP pathway response after persistent stimulations.
 
-## Growth temperature impact on CMK-1 localization in AFD
+### Growth temperature impact on CMK-1 localization in AFD
 
 We next sought to test if the CMK-1 localization control mechanism identified in FLP was also engaged in other neurons. We focused on the AFD thermosensory neurons, in which thermal shifts in the 15–25°C range were previously shown to affect CMK-1 localization (Yu et al., 2014). Animals were grown at 20°C and then shifted to 15 or 25°C for an overnight incubation. In animals incubated at 15°C, we observed that a CMK-1(wt)::mNG fusion was enriched in the nucleus of AFD (Figure 6A and B). In contrast, CMK-1 localization was cytoplasmic at 25°C (Figure 6A and B). Hence, the impact of long-term thermal history on CMK-1 localization in AFD is the opposite to that in FLP.
 
-## Baseline intracellular calcium level in AFD inversely correlates with growth temperature
+![Figure 6.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative epifluorescence micrographs showing the subcellular expression pattern of CMK-1(wt)::mNG in AFD neurons of young adult animals maintained overnight at 15°C or at 25°C. (B, C) Subcellular localization of wild-type and indicated CMK-1::mNG mutants at 15°C (blue) and at 25°C (red) in wild-type and unc-68(dom13) background. Data as nuclear/cytoplasmic signal ratio average (± SEM) of n ≥ 125 animals. *p<0.01 versus CMK-1(wt); #p<0.01 versus same genotype at 20°C by Bonferroni contrasts. (D) Calcium levels in AFD cell bodies of [ttx-1p:.YC2.3] animals grown overnight (O/N) at 15 or 25°C and submitted to a 2 min temperature increase to 25°C or decrease to 15°C, respectively. Average calcium traces (blue and red lines) with SEM as lighter shades. n ≥ 16 animals. Note the impact of growth temperature on resting calcium levels (baseline and return periods). (E) Resting calcium-level quantification over the baseline period of data in panel (D), highlighting the impact of growth temperature (T°) (average ± SEM, n ≥ 16 animals). ##p<0.01 by Student’s t-test. (F) Acute calcium-level changes caused by the indicated thermal up-steps or down-steps, quantified from data in panel (D) (average ± SEM, n ≥ 16 animals). (G) Thermotaxis assay result in young adult animals of the indicated genotypes grown at 20°C. n ≥ 25 assays, each scoring at least 80 animals. *p<0.01 versus wild-type by Bonferroni post-hoc tests. (H) Representative epifluorescence micrographs of young adult animals expressing a [gcy-8p::GPF] reporter in AFD neurons. Animals of the indicated genotypes were grown either at 15 or 25°C. n ≥ 80 animals per condition. (I) Quantification of GFP reporter signal from the data described in panel (H) (averages ± SEM). ##p<0.001 by Bonferroni contrasts. ns, not significant.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Violin plots with superimposed datapoints depicting the distributions of nucleus/cytoplasmic ratios of the indicated CMK-1::mNG reporters. Red bars: average. n: number of observations. p-Values obtained with Bonferroni post-hoc tests. (A) Data corresponding to Figure 6B. (B) Data corresponding to Figure 6C.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Schematic of the temperature stimulation protocol that was applied to young adult animals grown at 15°C (blue line) or at 25°C (red line). (B, C) Calcium levels recorded in FLP cell bodies of [egl-46p:.YC2.3] animals (n ≥ 6 animals, B) or in AFD cell bodies of [ttx-1p:.YC2.3] animals (n ≥ 16 animals, C). Average calcium traces (blue and red lines) with SEM as lighter shades. AFD data are the same as the one reported in Figure 6D. (D) Schematic summary of the temperature impact on the intracellular calcium concentration ([Ca2+]i) in FLP and AFD. Whereas acute thermal elevations (over a time window of a few minutes) have the same impact in both FLP and AFD, by causing calcium increases, prolonged thermal elevations (over a time window of several hours) have an opposite impact in both neurons, causing long-term calcium increase in FLP, but long-term calcium decrease in AFD.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/71443/elife-71443-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Representative confocal micrographs showing fluorescence signals in the head of an adult [gcy-8::GFP; ima-3p::NLS::wrmScarlet] transgenic animal. AFD is labeled in green (top). The nuclei of ima-3-expressing cells are labeled in red (middle). AFD is among the cells expressing ima-3p (bottom). Dotted lines indicate the animal contour.
+
+### Baseline intracellular calcium level in AFD inversely correlates with growth temperature
 
 Could CMK-1 nuclear accumulation at 15°C reflect a long-term intracellular calcium elevation in AFD, like it does in FLP at high temperature? At first glance, this model looks counterintuitive because heat stimuli trigger intracellular calcium elevations in AFD (Kimura et al., 2004). However, AFD is fast-adapting and these elevations are transients, lasting at most for a few minutes when the stimulus is held constant (Kimura et al., 2004; Clark et al., 2006). Calcium levels over a longer time frame are more likely to be relevant for CMK-1 localization. We therefore compared AFD intracellular calcium levels between animals grown overnight at 15 and 25°C, respectively. We expressed the ratiometric YC2.3 cameleon sensor in AFD and compared the baseline YFP/CFP ratio across unstimulated animals. Remarkably, the baseline YFP/CFP ratio in worms grown and recorded at 15°C (mean = 1.09; sem = 0.03) was significantly higher than that measured in worms grown and recorded at 25°C (mean = 0.93; sem = 0.03; Figure 6D). The magnitude of the YFP/CFP ratio difference caused by differences in the overnight growth temperature (ΔR ≈ 0.16, Figure 6E) was of the same order of magnitude as those caused by acute thermal up-steps (15°C to 25°C, ΔR ≈ 0.13) or down-steps (25°C to 15°C, ΔR ≈ 0.13, Figure 6E and F). We conclude that baseline intracellular calcium level in AFD inversely correlates with growth temperature, a situation opposite to that in FLP (Figure 6—figure supplement 2).
 
-## NLS71-78 and NES288-294 regulate CMK-1 subcellular localization in AFD neurons
+### NLS71-78 and NES288-294 regulate CMK-1 subcellular localization in AFD neurons
 
 Our findings about AFD indicate that an intracellular calcium elevation (at 15°C) is linked to an accumulation of CMK-1 in the nucleus, whereas an intracellular calcium reduction (at 25°C) is linked to a cytoplasmic expression. It seemed therefore plausible that CMK-1 subcellular localization could be controlled in AFD via the same calcium-dependent mechanism as in FLP. We made a series of observations confirming this hypothesis. First, the nuclear accumulation at 15°C was significantly impaired in the Ca2+/CaM binding mutant CMK-1(W305S) and the NLS71-78 mutant CMK-1(K71A/R74Q/R77S) (Figure 6B). Second, the UNC-68/ryanodine receptor unc-68(dom13) gain-of-function mutation caused a nuclear accumulation at 25°C (Figure 6C, bottom), suggesting that an elevation in calcium is sufficient to promote CMK-1 nuclear expression in AFD. Third, the nuclear accumulation in unc-68(dom13) mutant was completely abolished for CMK-1(W305S) mutant protein (Figure 6C, bottom), further pointing to the importance of Ca2+/CaM binding. Fourth, disrupting the NES288-294 in CMK-1(V292A/V294A) mutants leads to a constitutive nuclear expression in AFD irrespective of the temperature (Figure 6B). Finally, we also confirmed that ima-3 is expressed in AFD (Figure 6—figure supplement 3). Collectively, these findings suggest that a similar mechanism control CMK-1 localization in FLP and AFD.
 
-## CMK-1 subcellular localization mutations affect gene expression in AFD and thermotaxis
+### CMK-1 subcellular localization mutations affect gene expression in AFD and thermotaxis
 
 To further substantiate the physiological relevance of the NLS71-78 and NES288-294 elements in vivo in AFD, we evaluated the impact of engineered NLS and NES mutations on thermotaxis behavior and gcy-8 gene expression, which are known to be regulated by CMK-1.
 
@@ -138,106 +285,578 @@ In conclusion, we have identified a novel Ca2+-dependent mechanism, which contro
 
 ## Materials and methods
 
-## C. elegans strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Caenorhabditis elegans)</td>
+      <td>N2</td>
+      <td>CGC;RRID:SCR_007341</td>
+      <td>Wild-type</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG439</td>
+      <td>This study</td>
+      <td>domSi439[mec-3p::cmk-1 (1–348)::mNG::unc-54 3’UTR] II</td>
+      <td>Expression of CMK-1(wt)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>PHX1375</td>
+      <td>This study</td>
+      <td>cmk-1(syb1375) IV</td>
+      <td>Allele encoding CMK-1 (V292A/V294A)Mutation made by genome editing (SunyBiotech, China)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>PHX1435</td>
+      <td>This study</td>
+      <td>cmk-1(syb1435) IV</td>
+      <td>Allele encoding CMK-1(R77S)Mutation made by genome editing (SunyBiotech, China)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG356</td>
+      <td>Marques et al., 2019</td>
+      <td>domIs272a[mec-3p::QF, mec-4p::QS, QUAS::CoCHR, unc-122p::RFP]</td>
+      <td>[FLP::CoChR] FLP optogenetic background, used as background for light-avoidance assays</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG821</td>
+      <td>This study</td>
+      <td>cmk-1(ok287) IV</td>
+      <td>cmk-1 loss-of-function allele4× backcrossed</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG800</td>
+      <td>Schild et al., 2014</td>
+      <td>cmk-1(pg58) IV</td>
+      <td>cmk-1 gain-of-function allele4× backcrossed</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG874</td>
+      <td>Marques et al., 2019</td>
+      <td>unc-68(dom13) V</td>
+      <td>unc-68 gain-of-function allele4× backcrossed</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG927</td>
+      <td>This study</td>
+      <td>domSi439[mec-3p::cmk-1::mNG::3xFlag::unc-54 3’UTR] II; unc-31(e928) IV</td>
+      <td>Expression of CMK-1(wt)::mNG in FLP in unc-31 mutant background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG928</td>
+      <td>This study</td>
+      <td>domSi439[mec-3p::cmk-1::mNG::3xFlag::unc-54 3’UTR] II; unc-13(e450) I</td>
+      <td>Expression of CMK-1(wt)::mNG in FLP in unc-13 mutant background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1032</td>
+      <td>This study</td>
+      <td>domSi439[mec-3p::cmk-1::mNG::3xFlag::unc-54 3’UTR] II;[unc-68(dom13)] V</td>
+      <td>Expression of CMK-1(wt)::mNG in FLP in unc-68 mutant background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1204</td>
+      <td>This study</td>
+      <td>cmk-1(ok287) IV; domIs272[mec-3p::QF, mec-4p::QS, QUAS::CoCHR, unc-122p::RFP] II</td>
+      <td>cmk-1 loss-of-function allele in [FLP::CoChR] FLP optogenetic background for light-avoidance assays</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1205</td>
+      <td>This study</td>
+      <td>cmk-1 (syb1375) IV; domIs272[mec-3p::QF, mec-4p::QS, QUAS::CoCHR, unc-122p::RFP] II</td>
+      <td>cmk-1 genome-edited mutation coding for CMK-1(V292A/V294A) in [FLP::CoChR] FLP optogenetic background for light-avoidance assays</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1206</td>
+      <td>This study</td>
+      <td>cmk-1(syb1435) IV; domIs272[mec-3p::QF, mec-4p::QS, QUAS::CoCHR, unc-122p::RFP] II</td>
+      <td>cmk-1 genome-edited mutation coding for CMK-1(R77S) in [FLP::CoChR] FLP optogenetic background for light-avoidance assays</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>GN2</td>
+      <td>Gift frm Miriam Goodman</td>
+      <td>oyIs17[gcy-8p::GFP]</td>
+      <td>gcy-8 transcriptional reporter</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>VC220</td>
+      <td>CGC; RRID:SCR_007341</td>
+      <td>cmk-1(ok287); oyIs17[gcy-8p::GFP]</td>
+      <td>gcy-8 transcriptional reporter in cmk-1 loss-of-function background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1053</td>
+      <td>This study</td>
+      <td>cmk-1(syb1375) IV; oyIs17[gcy-8p::GFP]</td>
+      <td>gcy-8 transcriptional reporter in cmk-1 genome-edited mutant background coding for CMK-1(V292A/V294A)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1054</td>
+      <td>This study</td>
+      <td>cmk-1(syb1435) IV; oyIs17[gcy-8p::GFP]</td>
+      <td>gcy-8 transcriptional reporter in cmk-1 genome-edited mutant background coding for CMK-1(R77S)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG977</td>
+      <td>This study</td>
+      <td>domSi439[mec-3p::cmk-1::mNG::3xFlag::unc-54 3’UTR] II; osm-9(ky10) ocr-2(ak47) IV</td>
+      <td>Expression of CMK-1(wt)::mNG in FLP in osm-9;ocr-2 double mutant background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG978</td>
+      <td>This study</td>
+      <td>domSi439[mec-3p::cmk-1::mNG::3xFlag::unc-54 3’UTR] II; unc-68(r1161) V</td>
+      <td>Expression of CMK-1(wt)::mNG in FLP in unc-68 loss-of-function mutant background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG979</td>
+      <td>This study</td>
+      <td>domSi439[mec-3p::cmk-1::mNG::3xFlag::unc-54 3’UTR] II; unc-2(gk366) X</td>
+      <td>Expression of CMK-1(wt)::mNG in FLP in unc-2 mutant background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG980</td>
+      <td>This study</td>
+      <td>domSi439[mec-3p::cmk-1::mNG::3xFlag::unc-54 3’UTR] II; unc-2(ra612) X</td>
+      <td>Expression of CMK-1(wt)::mNG in FLP in unc-2 mutant background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG981</td>
+      <td>This study</td>
+      <td>domSi439[mec-3p::cmk-1::mNG::3xFlag::unc-54 3’UTR] II; egl-19(n582) IV</td>
+      <td>Expression of CMK-1(wt)::mNG in FLP in egl-19 mutant background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG565-566-567</td>
+      <td>This study</td>
+      <td>domEx565-566-567[mec-3p::cmk-1(Δ315–323)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(Δ315–323)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG576-577-578</td>
+      <td>This study</td>
+      <td>domEx576-577-578[mec-3p::cmk-1(Δ318–324)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(Δ318–324)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG592-593</td>
+      <td>This study</td>
+      <td>domEx592-593[mec-3p::CMK-1(Δ288–294)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(Δ288–294)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG703-704-705</td>
+      <td>This study</td>
+      <td>domEx703-704-705[mec-3p::cmk-1(V292A/V294A)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(V292A/V294A)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG706-707-708</td>
+      <td>This study</td>
+      <td>domEx706-707-708[mec-3p::cmk-1(K71A/R74A/R77S)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(K71A/R74A/R77S)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG727-728-729</td>
+      <td>This study</td>
+      <td>domEx727-728-729[mec-3p::cmk-1(L321A/L323A)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1 (L321A/L323A)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1009-1010-1011</td>
+      <td>This study</td>
+      <td>domEx1009-1010-1011[mec-3p::cmk-1(I315A)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(I315A)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1012-1013-1014</td>
+      <td>This study</td>
+      <td>domEx1012-1013-1014[mec-3p::cmk-1(I315A/L321A/L323A)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(I315A/L321A/L323A)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG738-739-740</td>
+      <td>This study</td>
+      <td>domEx738-739-740[mec-3p::cmk-1(K307Q)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(K307Q)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG741-742-743</td>
+      <td>This study</td>
+      <td>domEx741-742-743[mec-3p::cmk-1(R302S/K307Q)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(R302S/K307Q)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG962-963-966</td>
+      <td>This study</td>
+      <td>domEx962-963-966[mec-3p::cmk-1(K71A)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(K71A)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG964-965</td>
+      <td>This study</td>
+      <td>domEx964-965[mec-3p::cmk-1(R74Q)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(R74Q)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG967-968-969</td>
+      <td>This study</td>
+      <td>domEx967-968-969[mec-3p::cmk-1(R77S)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(R77S)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG900-901-902</td>
+      <td>This study</td>
+      <td>domEx900-901-902[mec-3p::cmk-1(K71A/R74Q/R77S/V292A/V294A)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(K71A/R74Q/R77S/V292A/V294A)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG700-701-702</td>
+      <td>This study</td>
+      <td>domEx700-701-702[mec-3p::cmk-1(W305S)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(W305S)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG912-913-914</td>
+      <td>This study</td>
+      <td>domEx912-913-914[mec-3p::cmk-1(W305S/V292A/V294A)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(W305S/V292A/V294A)::mNG in FLP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1029-1030-1031</td>
+      <td>This study</td>
+      <td>domEx1029-1030-1031[ima-3p::egl-13NLS::wrmScarlet::unc-54 3’UTR, unc-122p::GFP]; domSi439[mec-3p::cmk-1::mNG::3xFlag::unc-54 3’UTR] II</td>
+      <td>Transcriptional reporter for ima-3 driving the expression of a red nuclear marker in a background with FLP labeled in green</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1244-1245-1246</td>
+      <td>This study</td>
+      <td>domEx1244-1245-1246[mec-3p::cmk-1(R77S)::mNG, unc-122p::RFP];[unc-68(dom13)]V</td>
+      <td>Expression of CMK-1(R77S)::mNG in FLP in a unc-68 gain-of-function background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1279-1280-1281</td>
+      <td>This study</td>
+      <td>domEx1279-1280-1281[mec-3p::cmk-1(K71A/R74Q/R77S)::mNG, unc-122p::RFP];[unc-68(dom13)]V</td>
+      <td>Expression of CMK-1(K71A/R74Q/R77S)::mNG in FLP in a unc-68 gain-of-function background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1282-1283-1284</td>
+      <td>This study</td>
+      <td>domEx1282-1283-1284[mec-3p::cmk-1(W305S)::mNG, unc-122p::RFP];[unc-68(dom13)]V</td>
+      <td>Expression of CMK-1(W305S)::mNG in FLP in a unc-68 gain-of-function background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1436-1437-1438</td>
+      <td>This study</td>
+      <td>domEx1436-1437-1438[cmk-1p::cmk-1(wt)::mNG, unc-122p::GFP]; domIs272[mec-3p::QF, mec-4p::QS, QUAS::CoCHR, unc-122p::RFP] II; cmk-1(syb1375) IV</td>
+      <td>Rescue of cmk-1(syb1375) using cmk-1 promoter, in the [FLP::CoChR] optogenetic background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1439-1440-1441</td>
+      <td>This study</td>
+      <td>domEx1439-1440-1441[mec-3p::cmk-1(wt)::mNG, unc-122p::GFP]; domIs272[mec-3p::QF, mec-4p::QS, QUAS::CoCHR, unc-122p::RFP] II; cmk-1(syb1375) IV</td>
+      <td>Rescue of cmk-1(syb1375) using mec-3 promoter, in the [FLP::CoChR] optogenetic background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1322-1323-1324</td>
+      <td>This study</td>
+      <td>domEx1322-1323-1324[ttx-1p::QF, QUAS::cmk-1(wt)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(wt)::mNG in AFD</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1325-1326-1327</td>
+      <td>This study</td>
+      <td>domEx1325-1326-1327[ttx-1p::QF, QUAS::cmk-1(K71A/R71Q/R77S)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(K71A/R71Q/R77S)::mNG in AFD</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1328-1329-1330</td>
+      <td>This study</td>
+      <td>domEx1328-1329-1330[ttx-1p::QF, QUAS::cmk-1(R77S)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(R77S)::mNG in AFD</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1331-1332-1333</td>
+      <td>This study</td>
+      <td>domEx1331-1332-1333[ttx-1p::QF, QUAS::cmk-1(V292A/V294A)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(V292A/V294A)::mNG in AFD</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1433-1434-1435</td>
+      <td>This study</td>
+      <td>domEx1433-1434-1435[ttx-1p::QF, QUAS::cmk-1(W305S)::mNG, unc-122p::RFP]</td>
+      <td>Expression of CMK-1(W305S)::mNG in AFD</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1469-1470-1471</td>
+      <td>This study</td>
+      <td>domEx1469-1470-1471[ttx-1p::QF, QUAS::cmk-1(wt)::mNG, unc-122p::RFP]; unc-68(dom13) V</td>
+      <td>Expression of CMK-1(wt)::mNG in AFD in the unc-68 gain-of-function background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1472-1473-1474</td>
+      <td>This study</td>
+      <td>domEx1472-1473-1474[ttx-1p::QF, QUAS::cmk-1(R77S)::mNG, unc-122p::RFP]; unc-68(dom13) V</td>
+      <td>Expression of CMK-1(R77S)::mNG in AFD in the unc-68 gain-of-function background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1475-1476-1477</td>
+      <td>This study</td>
+      <td>domEx1475-1476-1477[ttx-1p::QF, QUAS::cmk-1(W305S)::mNG, unc-122p::RFP]; unc-68(dom13) V</td>
+      <td>Expression of CMK-1(W305S)::mNG in AFD in the unc-68 gain-of-function background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1513</td>
+      <td>This study</td>
+      <td>domEx1513[ttx-1prom::QF, QUAS::YC2.3]</td>
+      <td>Cameleon (YC2.3) expression in AFD for calcium imaging</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG616</td>
+      <td>This study</td>
+      <td>domEx616[mec-3p::calbindin, unc-122p::GFP]; domSi437[mec-3p::cmk-1::mNG::3xFlag::unc-543’UTR] II</td>
+      <td>Calcium buffering in FLP via the expression of Calbindin</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>AQ2145</td>
+      <td>Gift from Bill Schafer</td>
+      <td>ljEx19[egl-46p::YC2.3; lin15(+)]</td>
+      <td>Cameleon (YC2.3) expression.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG747</td>
+      <td>Saro et al., 2020</td>
+      <td>unc-68(r1161) V; ljEx19[egl-46p::YC2.3; lin15(+)]</td>
+      <td>Cameleon (YC2.3) expression in FLP for calcium imaging in an unc-68 loos-of-function mutant background.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG792</td>
+      <td>Saro et al., 2020</td>
+      <td>egl-19(n582) IV; ljEx19[egl-46p::YC2.3; lin15(+)]</td>
+      <td>Cameleon (YC2.3) expression in FLP for calcium imaging in egl-19(n582) IV mutant background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG918</td>
+      <td>Saro et al., 2020</td>
+      <td>ocr-2(ak47) IV; ljEx19[egl-46p::YC2.3; lin15(+)]</td>
+      <td>Cameleon (YC2.3) expression in FLP for calcium imaging in ocr-2(ak47) IV mutant background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1001</td>
+      <td>Saro et al., 2020</td>
+      <td>unc-2(ra612) X; ljEx19[egl-46p::YC2.3; lin15(+)]</td>
+      <td>Cameleon (YC2.3) expression in FLP for calcium imaging in unc-2(ra612) X mutant background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG857-859</td>
+      <td>This study</td>
+      <td>domSi439[mec-3p::cmk-1::mNeonGreen::3xFlag::unc-54UTR] II; domEx857-859[mec-3p::egl-13NLS::CeBFP::unc-54UTR]</td>
+      <td>Expression of a blue nuclear marker in FLP already expressing CMK-1::mNG green</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG933-934</td>
+      <td>This study</td>
+      <td>domEx933-934[mec-3p::QF]; [QUAS::mNeonGreen, unc-122p::RFP]; [mec-3p::egl-13NLS_CeBFP::unc-54UTR]</td>
+      <td>Expression of a blue nuclear marker in FLP already labeled in green</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1650</td>
+      <td>This study</td>
+      <td>domEx1650[mec-3p::Calb28K::unc54UTR]; [mec-3p::QF::UTR54]; [QUASp::YC2.3::UTR54]</td>
+      <td>Cameleon (YC2.3) expression in FLP for calcium imaging in presence of Calbindin</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1652-1653-1654</td>
+      <td>This study</td>
+      <td>domEx1652-1653-1654[mec-3p::rParv::unc-54UTR]; domSi439[mec-3p::cmk-1::mNeonGreen::3xFlag::unc-54UTR] II</td>
+      <td>Calcium buffering in FLP via the expression of Parvalbumin</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>DAG1655-1656-1657</td>
+      <td>This study</td>
+      <td>domEx1655-1656-1657[mec-3p::rParv_mutant::unc-54UTR]; domSi439[mec-3p::cmk-1::mNeonGreen::3xFlag::unc-54UTR] II</td>
+      <td>Negative control for calcium buffering in FLP via the expression of mutant Parvalbumin (K92V, D93A, D95A, K97V, and E100V)</td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans strains and growth conditions
 
 C. elegans strains used in this study are reported in the Key resources table. All strains were grown as previously described Stiernagle, 2006 on nematode growth media (NGM) plates with OP50 E. coli, at 20°C (unless otherwise stated). For optogenetic experiments, we used NGM plates containing all-trans-retinal (ATR), as well as regular NGM plates as control. ATR plates were prepared by adding 0.1% (v/v) of ATR stock (100 mM, in ethanol) to the OP50 bacteria suspension prior to seeding. 300 μl of this mix was used to seed 6 cm plates, containing 8 ml of NGM.
 
-## Transgenesis
+### Transgenesis
 
 Plasmid DNA was purified with the GenElute HP Plasmid miniprep kit (Sigma) and microinjected in the worm gonad according to a standard protocol (Evans, 2006). We used unc-122p::GFP/RFP as co-injection markers to identify transgenic animals.
 
-## Promoter plasmids (Multi-Site Gateway Slot 1)
+### Promoter plasmids (Multi-Site Gateway Slot 1)
 
 Entry plasmids containing specific promoters were constructed by PCR from N2 genomic DNA, with primers flanked with attB4 and attB1r recombination sites and cloned into pDONR-P4-P1R vector (Invitrogen) by BP recombination. Plasmids and primer sequences are reported in the supplementary information, Appendix 1—table 1.
 
-## Coding sequence plasmids (Multi-Site Gateway Slot 2)
+### Coding sequence plasmids (Multi-Site Gateway Slot 2)
 
 Entry plasmids containing specific coding DNA sequences were constructed by PCR from N2 cDNA with primers flanked with attB1 and attB2 recombination sites and cloned into pDONR_221 vector (Invitrogen) by BP recombination. Plasmids and primer sequences are listed in the supplementary information, Appendix 1—table 1.
 
-## Site-directed mutagenesis
+### Site-directed mutagenesis
 
 All the deletions and point mutations were generated by inverse PCR-based site-directed mutagenesis (Hemsley et al., 1989). In brief, whole plasmids (entry plasmids containing cmk-1 coding DNA sequences) were amplified with the KOD Hot Start DNA Polymerase (Novagen; Merck). Primers were phosphorylated in 5′ and were designed to contain the desired point mutation(s) and to hybridize in a divergent and back-to-back manner on the plasmid. After electrophoresis, linear PCR products were purified from agarose gel (1%) with a Zymoclean-Gel DNA Recovery kit (Zymo Research) and circularized with DNA Ligation Kit <Mighty Mix> (Takara). The plasmid templates, primer sequences, and names of resulting mutation-carrying plasmids are reported in Appendix 1—table 1.
 
-## Imaging of fluorescent CMK-1 reporter protein
+### Imaging of fluorescent CMK-1 reporter protein
 
-## Worm preparation for CMK-1 imaging in FLP
+#### Worm preparation for CMK-1 imaging in FLP
 
 Worms were synchronized according to standard procedure with hypochlorite treatment and grown at 20°C. First-day adult animals were collected from NGM bacterial plates with distilled water, transferred to 1.5 ml microcentrifuge tubes and washed once with distilled water. 20 µl of a dense worm suspension were transferred to PCR tubes and incubated in a thermocycler at 20 or 28°C for 1.5 hr unless otherwise stated. Prior to imaging, worms were immobilized with the addition of NaN3 (final concentration 1% m/v), transferred on a glass slide and covered with a coverslip. Imaging was carried out during the next 5 min. For leptomycin B treatment, it was used at a final concentration of 100 ng/µl. It was added from a stock at 5 µg/µl diluted in M9 buffer with 10% (v/v) ethanol. Control experiment included only the vehicle.
 
-## Worm preparation for CMK-1 imaging in AFD
+#### Worm preparation for CMK-1 imaging in AFD
 
 Worms were prepared as described above for FLP imaging, except that they were grown on NGM plates at either 15 or at 25°C prior to collection, and scored immediately (without incubation in a thermocycler).
 
-## Microscopy
+#### Microscopy
 
 FLP and AFD images to measure the nuclear/cytoplasmic ratio were acquired in a Zeiss Axioplan2 fluorescence microscope, with a 40× (air, NA = 0.95) objective and constant illumination parameters.
 
-## Replicates
+#### Replicates
 
 At least two independent transgenic lines (in most cases three lines, see Key resources table) were scored for each genotype, each on at least three different experimental days. Wild-type control was systematically run in parallel.
 
-## Determination of CMK-1 nuclear/cytoplamic ratio
+### Determination of CMK-1 nuclear/cytoplamic ratio
 
 For CMK-1 subcellular localization analysis, the intensity of fluorescence was first measured for each neuron in three regions of interest (ROIs): Nucleus, Cytoplasm, Background. The nuclear/cytoplasmic ratio was calculated as (Nucleus – Background)/(Cytoplasm – Background). A ratio >1 indicates a nuclear accumulation of CMK-1, while a value <1 a cytoplasmic biased ratio. All three ROIs were ellipses of the same area. The Background ROI was defined in a worm region close to the neuron to take autofluorescence into account. Nuclear and Cytoplasmic ROIs were defined based on the mNG green signal and the shape of the neuron, via a procedure that was first validated with the use of a second fluorescent nuclear marker (nuclear ceBFP::NLS). We noticed that the nucleus was always laying very centrally, occupying a large part of the cell body (Figure 1—figure supplement 3). There is actually no possibility for the nucleus to fit in any narrower region of the cell. So even in situations where the green fluorescence signal is diffuse and does not itself reveal the localization of the nucleus, it is possible to make reliable predictions. The nuclear ROI was defined in the middle of the cell body (where it is the widest) and the cytoplasmic ROI decentered to a narrower region of the cell (Figure 1—figure supplement 3). We validated this approach by a blind test, in which we acquired a series of images with diffuse mNG (homogenously distributed between the nucleus and the cytoplasm) and nuclear BFP, and defined the ROI solely based on the green channel. After an a posteriori verification with the blue channel, we found that >98% of the ROI pairs (69/70) were correctly defined. Of note, when working with CMK-1::mNG, a nuclear accumulation or depletion of signal is often seen and further ascertains the localization of the nucleus. Therefore, the very rare errors caused by the mis-definition of ROIs will occur only when the nuclear and the cytoplasmic signals are similar; a situation where the ratio value will anyway be very close to 1, regardless of where the ROIs are defined. Based on this assessment, we concluded that our method is valid to score CMK-1:.mNG subcellular localization, without the need for a systematic use of a nuclear co-marker.
 
-## gcy-8p reporter imaging and quantification
+### gcy-8p reporter imaging and quantification
 
 AFD images to measure gcy-8p::GFP transcriptional reporter expression were acquired and processed like described above for FLP, except that only two ROIs were defined (Cell and Background). The expression value was calculated as Cell – Background.
 
-## ima-3p reporter imaging
+### ima-3p reporter imaging
 
 For ima-3p reporter imaging, a Leica TCS SPE-II confocal microscope equipped with 488 nm and 532 nm wavelength diode lasers was used with an ACS APO 40× (oil, NA = 1.15) objective.
 
-## Expression and purification of IMA-3-HIS6, CMK-1(wt), and CMK-1(K71A/R74Q/R77S)-GST
+### Expression and purification of IMA-3-HIS6, CMK-1(wt), and CMK-1(K71A/R74Q/R77S)-GST
 
 DNA encoding proteins of interest were PCR amplified and cloned into NdeI and BamHI restriction sites of pDK2409 for the GST-TEV-tagged protein and of pDK2832 for the His6-tagged proteins. Plasmids were transformed into E. coli BL21 (DE3) (NEB). The proteins were purified after 5 hr of induction with 0.5 mM IPTG at 24–25°C. Cells were collected and lysed in a Microfluidizer Processor M-110L. The cell lysate clean supernatant was incubated for 2 hr with nickel-nitrilotriacetic acid beads (Ni-NTA-Qiagen, Hilden, Germany) as per the manufacturer’s instructions for IMA-3-His6 and with Glutathione superflow beads (Qiagen) for GST-tagged CMK-1 variants.
 
 Ni-NTA beads binding IMA-3-His6 were washed three times in imidazole gradient and eluted in 1 mM PMSF, 0.1% NP-40, 500 mM imidazole, pH 8.0. The elution of CMK-1 was done by incubating the beads with 2% TEV enzyme in lysis buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 1.5 mM MgCl2, 5% glycerol) with 1 mM PMSF, 0.1% NP-40, 1 mM DTT. This step cleaves the GST tag to recover untagged CMK-1. For MST experiments, IMA-3-His6 was applied to Zeba desalting spin columns (Thermo Scientific) to remove the excess of imidazole and the buffer was exchanged to the same buffer of CMK-1-GST with 1 mM PMSF and 0.1% NP-40. Protein concentration was determined by Pierce Microplate BCA protein assay Kit-Reducing Agent Compatible (Thermo Scientific) using BSA as protein standard.
 
-## Binding affinity quantification by MST
+### Binding affinity quantification by MST
 
 MST experiments were performed using a Monolith NT.115 from NanoTemper Technologies to assess the affinity between IMA-3 and CMK-1(wt) or CMK-1(K71A/R74Q/R77S). IMA-3-HIS6 was labeled using the RED-tris-NTA His tag protein labeling kit, resuspended in HEPES 15 mM, 0.05% Tween 20. Labeled IMA-3-HIS6 protein (at a concentration of 100 nM) was added to a serial dilution of unlabeled CMK-1 prepared in binding buffer (1× PBS with 0.05% Tween 20). Samples were loaded into MST standard capillaries Monolith NT.115 MO-k022 (NanoTemper) and MST measurements were performed using 40% laser power setting. For the assays in the presence of Ca2+/CaM, we added 2 mM CaCl2 and 8 µM CaM (from bovine brain; high purity; Sigma).
 
 The dissociation constants Kd were obtained by plotting the normalized fluorescence (Fnorm) against the logarithm of ligand concentration and fitting using the Kd model with the MO-Affinity Analysis software (NanoTemper Technologies). Experiments were performed in triplicates. Statistical comparisons between Kd values were made using the method described by Paternoster et al., 1998.
 
-## Behavioral assays
+### Behavioral assays
 
 All experimental replicates were obtained over at least three different days. Adult worms were either synchronized by standard hypochlorite treatment or picked as L4 larvae on NGM plates 1 day before the experiments.
 
-## Heat-evoked reversal
+#### Heat-evoked reversal
 
 Worm populations (n ≥ 50 animals) crawling on food-free NGM-plates were exposed to two 4 s heat pulses with a 20 s recovery period in between. The first pulse was at a heating power of 0.3 W/m2 and the second one at a heating power of 0.6 W/m2. We used a previously described system for heat delivery, worm movie recording, and reversal flagging (Lia and Glauser, 2020). The genotype effects were the same at both heating power levels, and the data were pooled for the reversal analysis.
 
-## Thermotaxis
+#### Thermotaxis
 
 Well-fed animals were tested in thermotaxis assays as previously described (Ramot et al., 2008a). Briefly, worms were grown at 20°C, recovered from the plate in distilled water, washed twice and spread at the center of a rectangular plate pre-equilibrated to form a linear thermogradient gradient (~1°C/cm). The starting temperature was 23°C. We ensured homogenous developmental and feeding states across cultivation plates by adjusting animal density such that food was constantly available during their development.
 
-## Noxious heat thermogradient assays
+#### Noxious heat thermogradient assays
 
 The noxious heat thermogradient assays, in which we scored the worm dispersal in a temperature gradient from 29 to 37°C, were performed as previously reported. Like in previous studies, assays were performed with animals who had been starved for 5–7 hr in order to eliminate the contribution of the thermotaxis circuit. For the heat-evoked desensitization experiments, we incubated the plates at 28°C during the last 1.5 hr of starvation. Instead of using a heat-avoidance index as in previous studies, we calculated the temperature of the third quartile of the worm distribution because we found that it was a more robust indicator of the worm spreading on the thermal gradient. Indeed, over the conditions considered for the present study, the relative error of the heat-avoidance index was 22% on average (range 15–32%) versus 8% on average (range 4–14%) for the third quartile-based metrics.
 
-## Optogenetics
+### Optogenetics
 
 Optogenetic analysis was carried out in a previously described [FLP::CoChR] genetic background (Schild and Glauser, 2015), in which blue light stimuli of low intensities can activate FLP and trigger reversal responses.
 
-## Light-evoked reversal assay
+#### Light-evoked reversal assay
 
 Single forward-moving animals were illuminated with blue light during 0.5 s. Scoring was done manually and any backward movement taking place during the stimulation was counted as a positive response, as previously described (Marques et al., 2019). Animals were stimulated three times in a row, leaving enough time for forward locomotion to restart in between stimuli. We did not observe a significant habituation effect over the three trials and the whole pool of trials was used for statistical analyses. Controls run in the absence of ATR, as well as with red light stimuli, showed no light dose–response effects (Figure 5—figure supplement 1).
 
-## Heat adaptation prior to light-evoked reversal assays
+#### Heat adaptation prior to light-evoked reversal assays
 
 Young adults were washed from ‘+ ATR’ NGM plates like described for CMK-1 imaging, and incubated for 90 min in a thermocycler at 20°C (naïve) and 28°C (adapted). After incubation, worms were transferred on bacteria-free NGM dishes, pre-equilibrated at 20 or 28°C, and left to crawl for 10 min before the experiment.
 
-## Calcium imaging
+### Calcium imaging
 
-## Calcium imaging in AFD
+#### Calcium imaging in AFD
 
 To assess intracellular calcium in AFD, we maintained [ttx-1p::YC2.3] worms at 15 or 25°C, overnight. Adult worms were prepared as described in Saro et al., 2020 and imaged using an inverted epifluorescence microscope (Leica DMI6000B) equipped with a HCX PL Fluotar L40x/0.60 CORR dry objective, a Leica DFC360FX CCD camera (1.4 M pixels, 20 fps), an EL6000 Light Source, and a fast filter wheel for FRET imaging. The recording and calcium imaging analysis were performed as in Saro et al., 2020. Data are reported as YFP/CFP ratios with no baseline normalization in order to enable the comparison between resting calcium levels across animals and conditions. Animals were selected based on the overall fluorescence level of the reporter in order to have similar expression levels across conditions, which we verified a posteriori. This verification was made by summing the CFP and YFP emission signals (after excitation at 405 nm) in order to obtain a metrics representing the total fluorescence independently of varying FRET levels. This metrics was not significantly different between the sets of traces recorded at 15 and 25°C, respectively (15°C: average = 517, sem = 93; 25°C, average = 552, sem = 80; arbitrary units; p=0.73 by Student’s t-test).
 
-## Calcium imaging in FLP
+#### Calcium imaging in FLP
 
 To assess intracellular calcium in the calbindin-expressing transgenic animals and in the mutants affecting different calcium channels, we incubated synchronized [egl-46p::YC2.3] adult worms at 20 or 28°C for 1.5 hr.
 
-## Statistical tests
+### Statistical tests
 
 Comparisons were made with one-way and two-way ANOVAs using Jamovi (The jamovi project (2021), jamovi (Version 1.6) [Computer Software]; retrieved from https://www.jamovi.org). A visual inspection of Q-Q plots and nonsignificant Kolmogorov–Smirnov tests (p>0.01) suggested that all datasets could be considered to follow a normal distribution. However, some datasets returned significant results with the Shapiro–Wilk test (p<0.01). For that reason, we conducted and reported the results of both regular ANOVAs and robust ANOVAs. Of note, the two methods gave similar results. Comparisons giving significant effects (p<0.01) with ANOVAs were followed by Bonferroni post-hoc tests.

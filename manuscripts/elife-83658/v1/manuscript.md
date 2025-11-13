@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/049e6bc10 The Forensic Science Unit, Faculty of Health and Life Sciences, Northumbria University Newcastle upon Tyne United Kingdom
-2. https://ror.org/04dkp9463 Amsterdam Centre for Ancient Studies and Archaeology (ACASA) – Department of Archaeology, Faculty of Humanities, University of Amsterdam Amsterdam Netherlands
-3. https://ror.org/05h9q1g27 Forensic Anthropology Center, Texas State University San Marcos United States
-4. https://ror.org/003109y17 Department of Medical Science and Public Health, Section of Legal Medicine, University of Cagliari Monserrato Italy
+1. The Forensic Science Unit, Faculty of Health and Life Sciences, Northumbria University Newcastle upon Tyne United Kingdom ([ROR:049e6bc10](https://ror.org/049e6bc10))
+2. Amsterdam Centre for Ancient Studies and Archaeology (ACASA) – Department of Archaeology, Faculty of Humanities, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
+3. Forensic Anthropology Center, Texas State University San Marcos United States ([ROR:05h9q1g27](https://ror.org/05h9q1g27))
+4. Department of Medical Science and Public Health, Section of Legal Medicine, University of Cagliari Monserrato Italy ([ROR:003109y17](https://ror.org/003109y17))
 
 † Corresponding author
 
@@ -44,7 +44,7 @@ While many studies have applied different analytical platforms for proteomics, m
 
 ## Results
 
-## Single omics profile
+### Single omics profile
 
 The metabolites matrices resulting from the combination of metabolomics ESI+ and ESI- data were combined in a final matrix with a total of 104 identified compounds after the removal of non-endogenous compounds following querying in HMDB. Furthermore, after preliminary inspection via PCA, lipidomics ESI+ results were excluded due to their poor contribution to a potential discriminant model. Each omics block was then evaluated individually via univariate (Kruskal-Wallis and Dunn’s pairwise test) and multivariate (partial least square discriminant analysis [PLS-DA]) analysis. The overall the clustered image map (CIM) and individual plot obtained with metabolomics suggested a clear separation between fresh and decomposed samples and the total variance explained by the model in the first two components taken together was 60% (Figure 1—figure supplement 1). More interestingly, increasing PMIs were found to cluster progressively further away from the fresh samples. By observing the clustering of the variables in the CIM, it was clear the presence of three major behaviours: (i) reduction in the intensity of compounds between the pre-deposition samples and the skeletonized ones; (ii) higher intensity of compounds for the 219, 790, 843 days PMI groups; (iii) presence of compounds that specifically were more intense in the 872 days PMI. Examples of these behaviours can be observed in Figure 1—figure supplement 1. These compounds were found to be significant for Kruskal-Wallis but were only visually selected (Figure 1—figure supplement 1) because of their trend with PMI. However, these results were not fully supported by statistical testing, as pairwise analysis mainly showed significant differences between few PMI groups, specifically between baseline vs. more advanced PMIs (Figure 1—figure supplement 2). It is interesting to note that D2 appeared to have a specific profile in the pre-deposition state that clearly differed from the other donors, therefore potentially affecting the overall clustering and partially hiding the effect of PMI. In contrast, D4 after decomposition showed a distinct profile, likely associated with the prolonged PMI.
 
@@ -52,9 +52,29 @@ Lipidomic profiling (Figure 1—figure supplement 2) showed that the closer clus
 
 Finally, proteins showed an inferior discriminatory power in comparison with the other classes of molecules according to individual consensus plot (Figure 1—figure supplement 3). The variance explained in the model in the first two components was only 35% and, besides the major separation between pre- and post-decomposition, it was not possible to clearly discriminate the various PMIs (Figure 1—figure supplement 3). However, with the exception of D3 (834 days PMI), it is clear that the skeletonized samples cluster away from the fresh ones with increasing PMIs. Few proteins evaluated via univariate statistics, however, showed clear visual and significant negative trends in the overall sample (Kruskal-Wallis), although pairwise comparison could not confirm the statistical significance of the difference across PMIs (Dunn’s test, Supplementary file 1). These proteins were ASPN_HUMAN, H4_HUMAN, HBB_HUMAN, OSTP_HUMAN, VIME_HUMAN. Moreover, what was clear in Figure 1—figure supplement 3 is the large variation between replicates that could affect the evaluation of the proteins’ behaviour with PMI.
 
-## Omics integration
+### Omics integration
 
 All the 24 human bone samples were included in the omics integration model (Figure 1). We firstly evaluated correlations between the omics block using PLS regression. Results for component 1 showed an R value of 0.94 between metabolomics and lipidomics, 0.96 between metabolomics and proteomics and 0.87 between lipidomics and proteomics. Feature selection using the DIABLO method aimed to identify highly correlated and discriminant variables across the three omics. The arrow plot (Figure 1A) showed the overall separation between fresh and skeletonized samples, which was mainly developed along the first component. However, it was possible to note that the individual with the longest PMI (D4, 872 days) also clustered away from the remaining skeletonized samples along the second component (Figure 1B). The optimal number of components was set at three by means of threefold cross-validation repeated 100 times (Figure 1B). The overall balanced error remained below 0.4 (Figure 1—figure supplement 4). After tuning the model by attributing the same weight to all the omics blocks, the ideal panel of markers selected in the first component that retained most of the covariance of the system includes 14 metabolites, 5 lipids and 5 proteins (Figure 1C). These loading plots show that a few metabolite markers have a high loading for different PMIs, whereas both lipid and protein markers have high values particularly for the fresh samples. Considering the individual -omics consensus plots in Figure 1—figure supplement 5, metabolite and lipid blocks showed a better segregation between the various PMIs in the skeletonized state in comparison with the protein one. There is, however, overlap in all blocks for these intermediate PMIs.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83658/elife-83658-fig1-v1.jpg)
+
+**Figure 1.:** (A) Arrow plot showing multiblock contexts for the overall model. (B) Optimal number of components to explain model variable calculated via cross-validation (error bars provide standard deviation). (C) Loading plot showing how each variable contributes to the covariance of each group. (D) The clustered image map (CIM) shows the selected compounds in the final model. It is possible to see that most compounds decrease in intensity after decomposition except for few metabolites and two lipids that specifically increase in certain postmortem interval (PMI) intervals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83658/elife-83658-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Clustered image map (CIM), (B) sample plot, (C) and boxplot for the metabolomics data.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83658/elife-83658-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Clustered image map (CIM) and (B) sample plot for the lipidomics data.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83658/elife-83658-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Clustered image map (CIM), (B) sample plot, (C) and boxplot for the proteomics data.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/83658/elife-83658-fig1-figsupp4-v1.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/83658/elife-83658-fig1-figsupp5-v1.jpg)
 
 Multi-omics sample variations between bones from fresh and skeletonized cadavers were also supported by the CIM (Figure 1D), which showed a clear separation between the two groups. Most of the compounds selected by the model were highly abundant in the fresh samples and less abundant in the skeletonized ones, although the lower panel of metabolites (in Figure 1D) showed an opposite trend. In general, it could be observed that the samples with shorter PMIs (up to 834 days) showed a decline for proteins, lipids, and for eight of the metabolites selected for the PMI model as well as an increase in the remaining six metabolites in comparison with their fresh counterparts. Whereas the decline in the abundance of proteins and lipids in comparison with the fresh samples was similar between all the 12 skeletonized samples, the increase or decrease in the abundance of specific metabolites was more exacerbated in the samples with the longest PMI (872 days) in comparison with the others (Figure 1D). To conclude, the model was first cross-validated resulting in a mean standard error of the classification error of 9.67. Additionally, after performing permutation test there was still significant difference in the discrimination between the PMIs (p=0.001).
 
@@ -90,54 +110,275 @@ Based on the findings of this exploratory study, we argue that the multi-omic me
 
 ## Materials and methods
 
-## Body donors
+### Body donors
 
 Bone samples were collected from four female human body donors, aged between 61 and 91 years (mean 74±11.6 SD), at the Forensic Anthropology Center at Texas State University (FACTS). FACTS receives whole body donations for scientific research under the Texas revised Uniform Anatomical Gift Act (Health and Safety Code, 2009). Body donations are made directly to FACTS and are exclusively acquired through the expressed and documented will of the donors and/or their legal next of kin. Demographic, health, and other information are obtained through a questionnaire completed by the donor or next of kin. The data are securely curated by FACTS, and the body donation program complies with all legal and ethical standards associated with the use of human remains for scientific research in the United States. The number of individuals (n=4) used in this preliminary study is consistent with other taphonomic studies conducted on human remains for proof-of-concept purposes. Larger sample sizes may be used to validate preliminary results, such as those proposed by this study, at a later stage.
 
 The bodies were stored in a cooler at 4°C prior to sampling. After collection of the initial (pre-placement) bone samples, the bodies were placed outdoors to decompose at the Forensic Anthropology Research Facility (FARF), the human taphonomy facility managed by FACTS, between April 2015 and March 2018. Two of the four body donors (D1 and D4, see Table 1), were placed in shallow hand-dug pits which were left open throughout the duration of the decomposition experiment. The pits were covered with metal cages to prevent disturbance by large scavengers. Donors D2 and D3 were deposited in similarly sized hand-dug pits and were immediately buried with soil. Environmental data for the duration of the project are available as Supplementary file 2.
 
-## Sampling
+**Table 1.**
+ Sample composition, demographics, deposition context, and postmortem interval (PMI).The sample ID column reports the biological replicates used. Additional information on the body donors and observations made during collection of bone samples (e.g., medical treatments, bone colour, and density) can be found in the supplementary information in Mickleburgh et al., 2021.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample ID</th>
+      <th>Sex</th>
+      <th>Age (years)</th>
+      <th>PMI</th>
+      <th></th>
+      <th>Deposition context</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Pre-deposition samples</td>
+    </tr>
+    <tr>
+      <td>D1_TF_A</td>
+      <td>Female</td>
+      <td>91</td>
+      <td>10 days</td>
+      <td></td>
+      <td>Open pit</td>
+    </tr>
+    <tr>
+      <td>D1_TF_B</td>
+      <td>Female</td>
+      <td>91</td>
+      <td>10 days</td>
+      <td></td>
+      <td>Open pit</td>
+    </tr>
+    <tr>
+      <td>D1_TF_C</td>
+      <td>Female</td>
+      <td>91</td>
+      <td>10 days</td>
+      <td></td>
+      <td>Open pit</td>
+    </tr>
+    <tr>
+      <td>D2_TF_A</td>
+      <td>Female</td>
+      <td>67</td>
+      <td>2 days</td>
+      <td></td>
+      <td>Burial</td>
+    </tr>
+    <tr>
+      <td>D2_TF_B</td>
+      <td>Female</td>
+      <td>67</td>
+      <td>2 days</td>
+      <td></td>
+      <td>Burial</td>
+    </tr>
+    <tr>
+      <td>D2_TF_C</td>
+      <td>Female</td>
+      <td>67</td>
+      <td>2 days</td>
+      <td></td>
+      <td>Burial</td>
+    </tr>
+    <tr>
+      <td>D3_TF_A</td>
+      <td>Female</td>
+      <td>61</td>
+      <td>3 days</td>
+      <td></td>
+      <td>Burial</td>
+    </tr>
+    <tr>
+      <td>D3_TF_B</td>
+      <td>Female</td>
+      <td>61</td>
+      <td>3 days</td>
+      <td></td>
+      <td>Burial</td>
+    </tr>
+    <tr>
+      <td>D3_TF_C</td>
+      <td>Female</td>
+      <td>61</td>
+      <td>3 days</td>
+      <td></td>
+      <td>Burial</td>
+    </tr>
+    <tr>
+      <td>D4_TF_A</td>
+      <td>Female</td>
+      <td>77</td>
+      <td>10 days</td>
+      <td></td>
+      <td>Open pit</td>
+    </tr>
+    <tr>
+      <td>D4_TF_B</td>
+      <td>Female</td>
+      <td>77</td>
+      <td>10 days</td>
+      <td></td>
+      <td>Open pit</td>
+    </tr>
+    <tr>
+      <td>D4_TF_C</td>
+      <td>Female</td>
+      <td>77</td>
+      <td>10 days</td>
+      <td></td>
+      <td>Open pit</td>
+    </tr>
+    <tr>
+      <td colspan="6">Post-deposition samples</td>
+    </tr>
+    <tr>
+      <td>D1_TS_A</td>
+      <td>Female</td>
+      <td>91</td>
+      <td>219 days</td>
+      <td></td>
+      <td>Open pit</td>
+    </tr>
+    <tr>
+      <td>D1_TS_B</td>
+      <td>Female</td>
+      <td>91</td>
+      <td>219 days</td>
+      <td></td>
+      <td>Open pit</td>
+    </tr>
+    <tr>
+      <td>D1_TS_C</td>
+      <td>Female</td>
+      <td>91</td>
+      <td>219 days</td>
+      <td></td>
+      <td>Open pit</td>
+    </tr>
+    <tr>
+      <td>D2_TS_A</td>
+      <td>Female</td>
+      <td>67</td>
+      <td>834 days</td>
+      <td></td>
+      <td>Burial</td>
+    </tr>
+    <tr>
+      <td>D2_TS_B</td>
+      <td>Female</td>
+      <td>67</td>
+      <td>834 days</td>
+      <td></td>
+      <td>Burial</td>
+    </tr>
+    <tr>
+      <td>D2_TS_C</td>
+      <td>Female</td>
+      <td>67</td>
+      <td>834 days</td>
+      <td></td>
+      <td>Burial</td>
+    </tr>
+    <tr>
+      <td>D3_TS_A</td>
+      <td>Female</td>
+      <td>61</td>
+      <td>790 days</td>
+      <td></td>
+      <td>Burial</td>
+    </tr>
+    <tr>
+      <td>D3_TS_B</td>
+      <td>Female</td>
+      <td>61</td>
+      <td>790 days</td>
+      <td></td>
+      <td>Burial</td>
+    </tr>
+    <tr>
+      <td>D3_TS_C</td>
+      <td>Female</td>
+      <td>61</td>
+      <td>790 days</td>
+      <td></td>
+      <td>Burial</td>
+    </tr>
+    <tr>
+      <td>D4_TS_A</td>
+      <td>Female</td>
+      <td>77</td>
+      <td>872 days</td>
+      <td></td>
+      <td>Open pit</td>
+    </tr>
+    <tr>
+      <td>D4_TS_B</td>
+      <td>Female</td>
+      <td>77</td>
+      <td>872 days</td>
+      <td></td>
+      <td>Open pit</td>
+    </tr>
+    <tr>
+      <td>D4_TS_C</td>
+      <td>Female</td>
+      <td>77</td>
+      <td>872 days</td>
+      <td></td>
+      <td>Open pit</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sampling
 
 Bone samples (ca. 1 cm3) of the anterior midshaft tibia were collected prior to placement of the body outdoors, and again upon retrieval of the completely skeletonized remains as can be seen in Figure 4. Each body was in ‘fresh’ stage of decomposition when pre-placement samples were taken, and in ‘skeletonization’ stage when post-placement samples were collected, based on scoring of the gross morphological changes (Megyesi et al., 2005). The duration of each placement and the deposition context are reported in Table 1. The soft tissue was incised with a disposable scalpel, and a 12 V Dremel cordless lithium-ion drill with a diamond wheel drill bit was used at max. 5000 revolutions to collect ~1 cm3 of bone. Sampling instruments were cleaned with bleach and deionized water between each individual sample collection.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/83658/elife-83658-fig4-v1.jpg)
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83658/elife-83658-fig4-figsupp1-v1.jpg)
+
 A total of eight samples were collected in Ziploc bags, transferred immediately to a –80°C freezer, and subsequently shipped overnight on dry ice to the Forensic Science Unit at Northumbria University, UK. The samples were then transferred to a lockable freezer at –20°C as per UK Human Tissue Act regulations (licence number 12495). Part of the analyses were conducted by the ‘ForensOMICS’ team (NP and AB) at Northumbria University prior to their transfer to the University of Central Lancashire. Specifically, the bone samples were defrosted, and fine powder was obtained with a Dremel drill equipped with diamond-tipped drill bits operated at speed 5000 rpm, to avoid heat damage caused by the friction with the bone. The collected powder was homogenized and stored in 2 mL protein LoBind tubes (Eppendorf UK Limited, Stevenage, UK) at –80°C until extraction and testing. The powder sample was later divided into 25 mg aliquots. Three biological replicates (e.g., three aliquots of bone sample per specimen) were extracted and analysed for each specimen. The research and bone sample analyses were reviewed and approved by the Ethics committee at Northumbria University (ref. 11623).
 
-## Biphasic extraction, adapted Folch protocol
+### Biphasic extraction, adapted Folch protocol
 
 Chloroform (Chl), AnalaR NORMAPUR ACS was purchased from VWR Chemicals (Lutterworth, UK). Water Optima LC/MS Grade, Methanol (MeOH) Optima LC/MS Grade, Pierce Acetonitrile (ACN), LC-MS Grade and Isopropanol (IPA), OptimaLC/MS Grade were purchased from Thermo Scientific (Hemel Hempstead, UK). In total three biological replicates for each of the eight specimens were extracted according to a modified (Folch et al., 1957) as follows: 25 mg of bone powder was placed in tube A and 750 μL of 2:1 (v/v) Chl:MeOH were added, vortexed for 30 s, and sonicated in ice for additional 20 min. Three-hundred μL of LC-MS grade water was added to induce phase separation and sonicate for another 15 min. The sample was then centrifuged at 10°C for 5 min at 2000 rpm. The lower (lipid) fractions were collected and transferred to fresh Eppendorf tubes and the samples were re-extracted with a second time using 750 μL of 2:1 (v/v) Chl:MeOH. The two respective fractions were combined and the remaining aqueous fractions centrifuged at 10°C for 5 min at 10000 rpm and the supernatant tranferred to fresh Eppendorf tubes. The organic lipid fraction was preconcentrated using a vacuum concentrator at 55°C for 2.5 hr or until all organic solvents have been removed. The aqueous metabolite fractions were flash frozen in liquid nitrogen and preconcentrated using a lyophilizer cold trap –65°C to remove all water content. The respective dry fractions were then stored at –80°C until analysis. The metabolite fraction was resuspended in 100 μL in 95:5 ACN/water (% v/v) and sonicated for 15 min and centrifuged for 15 min at 15 K rpm at 4°C and supernatant was then transferred to 1.5 mL autosampler vials with 200 μL microinsert and caped. Twenty μL of each sample were collected and pooled to create the pooled QC. The lipid extracts were resuspended in 100 μL of 1:1:2 (v/v) water:ACN:IPA and sonicated for sonicated for 15 min and centrifuged for 15 min at 15 K rpm at 10°C and supernatant was then transferred to 1.5 mL autosampler vials with 200 μL microinsert and caped. Twenty μL of each sample were collected and pooled to create the pooled QC. The sample set was then submitted for analysis.
 
-## LC-MS analysis
+### LC-MS analysis
 
 Metabolite and lipid characterization of the bone samples was performed on a Thermo Fisher Scientific (Hemel Hempstead, UK) Vanquish Liquid Chromatography (LC) Front end connected to IDX High Resolution Mass Spectrometer (MS) system. Full details for both metabolomics and lipidomics runs are reported below.
 
-## Metabolomics
+#### Metabolomics
 
 Hydrophilic liquid interaction chromatography was used for the chromatographic separation for metabolites. The separation was achieved using a Waters Acquity UPLC BEH amide column (2.1×150 mm with particle size of 1.7 μm, part no. 186004802), operating at 45°C with a flow rate of 200 μL/min. The LC gradient consists of a binary buffer system, namely buffer ‘A’ (LC/MS grade water) and buffer ‘B’ (LC/MS grade ACN) both containing 10 mM ammonium formate. Independent buffer systems were used for positive and negative electrospray ionization (ESI) acquisition respectively, for ESI+ the pH of buffers was adjusted using 0.1% formic acid and for negative using 0.1% ammonia solution. The LC gradient was the same for both polarities, namely 95% ‘B’ at T0 hold for 1.5 min and a linear decrease to 50% ‘B’ at 11 min, followed by hold for 4 min, return to starting condition and hold for further 4.5 min (column stabilization). The voltage applied for ESI+ and ESI- was 3.5 and 2.5 kV, respectively. Injection volumes used were 5 μL for ESI+ and 10 μL for ESI-.
 
-## Lipidomics
+#### Lipidomics
 
 Standard reverse phase chromatography was used for the chromatographic separation of lipids. The separation was achieved using a Waters Acquity UPLC CSH C18 column (2.1×150 mm with particle size of 1.7 μm, part no. 186005298), operating at 55°C with a flow rate of 200 μL/min. The LC gradient consists of a binary buffer system, namely buffer ‘A’ (LC/MS grade water:ACN, 40:60 % v/v) and buffer ‘B’ (IPA:ACN, 90:10% v/v) both containing 10 mM ammonium formate. Independent buffers systems were used for positive and negative ESI modes respectively, for ESI+ the pH of buffers was adjusted using 0.1% formic acid and for negative using 0.1% ammonia solution. The LC gradient was the same for both polarities, namely 60% ‘B’ at T0 hold for 1.5 min, linear increase to 85% ‘B’ at 7 min, increase to 95% ‘B’ at 12.5 min and hold for 4.5 min before returning to starting conditions and holding for further 4.5 min (column stabilization). The voltage applied for ESI+ and ESI- was 3.5 and 2.5kV, respectively. Injection volumes used were 3 μL for ESI+ and 5 μL for ESI-.
 
 The HESI conditions for 200 μL were as follows: sheath gas 35, auxiliary gas 7, and sweep gas of 0. Ion transfer tube temperature was set at 300°C and vaporizer temperature at 275°C. These HESI conditions were applied to both metabolomics and lipidomics and lipidomics assays.
 
-## MS acquisition
+#### MS acquisition
 
 MS data were acquired using the AcquieX acquisition workflow (data-dependent analysis). The MS operating parameters were as follows: MS1 mass resolution 60 K, for MS2 30 K, stepped energy (HCD) 20, 25, 50, scan range 100–1000, RF len (%) 35, AGC gain, intensity threshold 24, 25% custom injection mode with an injection time of 54 ms. An extraction blank was used to create a background exclusion list and a pooled QC was used to create the inclusion list.
 
-## Data processing
+#### Data processing
 
 The metabolomic positive and negative data sets were processed via Compound Discoverer (version 3.2) using the untargeted metabolomic workflow with precursor mass tolerance 10 ppm, maximum shift 0.3 min, alignment model adaptive curve, minimum intensity 16, S/N threshold 3, compound consolidation, mass tolerance 10 ppm, RT tolerance 0.3 min. Database matching were performed at MS2 level using Thermo Scientific mzCloud mass spectral database with a similarity index of 50% or higher.
 
 The lipidomic positive and negative data sets were processed via Thermo Scientific LipidSearch (version 4) using the following workflow: HCD (high energy collision database), retention time 0.1 min, parent ion mass tolerance 5 ppm, product ion mass tolerance 10 ppm. Alignment method (max), top rank off, minimum m-score 5.0, all isomer peaks, ID quality filter A and B only. Lipid IDs were matched using LipidSearch in silico library at MS2 level. Corresponding metabolomics and lipidomics pooled QCs samples were used to assess for instrumental drifts; the relative standard deviation (RSD) variation across the QCs for metabolomics and lipidomics were less than 15%. Any metabolite/lipid feature with an RSD of 25% or less within the QCs was retained.
 
-## Proteomics
+### Proteomics
 
 Proteomics results from a pilot study conducted on the same samples used in this study were previously published and discussed in Mickleburgh et al., 2021. Analyses were conducted following an adapted protocol developed by Procopio and Buckley, 2017a, for protein extraction and LC-MS-MS analysis. MS data for proteomic analysis were made available via ProteomeXchange Consortium via the PRIDE (Ternent et al., 2014) partner repository with the data set identifier PXD019693 and 10.6019/PXD019693.
 
-## Statistical analysis
+### Statistical analysis
 
 An overview of the ForensOMICS pipeline can be found in Figure 4—figure supplement 1. Metabolomics and lipidomics data were normalized by mean values, cube root transformation and Pareto scaling was applied. Proteomics data were normalized using log2 transformation. For preliminary data evaluation, Principal component analysis (PCA) was applied to the profiles obtained by each single chromatographic separation method for metabolomics and lipidomics and for the proteomic block to exclude data sets with poor discriminatory power. At first, univariate analysis was performed by Kruskal-Wallis. Despite the small sample size per PMI, pairwise Dunn’s test with Holm’s corrected p-value was applied to the set to have an overview of the differences between different PMIs. PLS-DA was first employed to analyse each omics block. Correlation between blocks was then investigated with pairwise PLS regression prior to DIABLO analysis (Singh et al., 2019) based on multiblock sPLS-DA using the ‘mixOmics’ package in R (version 4.1.2) (Rohart et al., 2017). The initial model was tuned using a threefold/100 repeats cross-validation to perform variable selection and produce a final model that maintains the maximum covariance reducing the number of the compounds used for the classification. Classification error rate was further cross-validated (threefold, 100 repeats) and significance of the classification was tested via permutation test (k=3 and 999 permutation) implemented in the ‘RVAideMemoire’ package (Hervé et al., 2018). All cross-validation in this study was performed considering explicitly the biological replicates. Enrichment analysis was carried out considering pre- and post-placement samples combined.
 
-## Conclusions
+### Conclusions
 
 In conclusion, our results support the potential for developing an accurate and precise multi-omics PMI estimation method for human bone for application in forensic contexts to aid criminal investigation and assist with identification of the deceased. Despite the small sample size used here, this study demonstrates how the approach can discriminate between short and long PMIs. This method can produce classification models including different markers (e.g., protein, metabolites, and lipids) to assess both short- and long-term PMIs, with a high level of accuracy, as the compounds under investigation have complementary decay rates. The use of different biochemical markers that have different postmortem stability offers the advantage of covering both short-term PMIs, by including metabolites and lipids, and long-term PMIs, by implementing in the model more stable proteins that consistently degrade after death. This could not be fully proven based on our results, as the PMI taken into exam is not sufficiently spread along the timeline and more individuals per timepoint are necessary. However, the possibility of selecting only discriminating variables allows the combination of omics that in isolation could not discriminate in a satisfactory way the PMI. In the present study, proteomics did represent the less ideal omics for the estimation of the time elapsed since death, however few protein variables were successfully included in the model. Furthermore, in the present study the order between the various PMIs was voluntarily not considered in data analysis in order to avoid biases in the generation of the discriminant model. We expect that the PMI estimation over extended time periods will be unlikely achieved by employing any of these three omics individually. Furthermore, treating PMI as a continuous variable could be key in providing an optimal approach for the estimation of PMI. Furthermore, this methodology provides new insights on the biological processes that occur after death and will help establishing whether the presence of certain molecules is the result of their molecular degradation or if it is mostly associated with the bacterial metabolism, a central question in forensic science. The proposed ‘ForensOMICS’ approach must be validated by the analysis of substantial sample sizes in future controlled taphonomic experiments conducted in multiple different environments, as this represents the main source of variation in human decomposition, as well as by evaluating a broader PMI with a more comprehensive coverage of data points in the time period taken into consideration.

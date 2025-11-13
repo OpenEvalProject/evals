@@ -33,7 +33,7 @@
 
 ## Abstract
 
-10.7554/eLife.36173.001 Disorders of consciousness are a heterogeneous mixture of different diseases or injuries. Although some indicators and models have been proposed for prognostication, any single method when used alone carries a high risk of false prediction. This study aimed to develop a multidomain prognostic model that combines resting state functional MRI with three clinical characteristics to predict one year-outcomes at the single-subject level. The model discriminated between patients who would later recover consciousness and those who would not with an accuracy of around 88% on three datasets from two medical centers. It was also able to identify the prognostic importance of different predictors, including brain functions and clinical characteristics. To our knowledge, this is the first reported implementation of a multidomain prognostic model that is based on resting state functional MRI and clinical characteristics in chronic disorders of consciousness, which we suggest is accurate, robust, and interpretable.
+Disorders of consciousness are a heterogeneous mixture of different diseases or injuries. Although some indicators and models have been proposed for prognostication, any single method when used alone carries a high risk of false prediction. This study aimed to develop a multidomain prognostic model that combines resting state functional MRI with three clinical characteristics to predict one year-outcomes at the single-subject level. The model discriminated between patients who would later recover consciousness and those who would not with an accuracy of around 88% on three datasets from two medical centers. It was also able to identify the prognostic importance of different predictors, including brain functions and clinical characteristics. To our knowledge, this is the first reported implementation of a multidomain prognostic model that is based on resting state functional MRI and clinical characteristics in chronic disorders of consciousness, which we suggest is accurate, robust, and interpretable.
 
 ## Introduction
 
@@ -57,7 +57,7 @@ The study paradigm is illustrated in Figure 1. Resting state fMRI and clinical d
 
 **Figure 1.:** CRS-R: Coma Recovery Scale Revised scale; GOS: Glasgow Outcome Scale.
 
-## Subjects
+### Subjects
 
 This study involved three datasets. The datasets referred to as ‘Beijing 750’ and ‘Beijing HDxt’ were both collected in the PLA Army General Hospital in Beijing, and the same medical group diagnosed and managed the patients. However, the MRI scanners and imaging acquiring protocols were different for these two datasets: the ‘Beijing HDxt’ cohort was scanned with a GE signa HDxt 3.0T scanner between May 2012 and December 2013, whereas the ‘Beijing 750’ cohort was scanned with a GE Discovery MR750 3.0T scanner between January 2014 and May 2016. The dataset referred to as ‘Guangzhou HDxt’ was collected from the Guangzhou General Hospital of Guangzhou Military Command in Guangzhou, and the MRI data were obtained with a GE signa HDxt 3.0T scanner between April 2011 and December 2014.
 
@@ -67,15 +67,262 @@ A total of 160 DOC patients were initially enrolled in this study. Eleven patien
 
 The demographic and clinical characteristics of the patients are summarized in Table 1, with additional details provided in Appendix 1—table 1, 2 and 3. The ‘Beijing 750’ dataset also included 30 healthy participants, and the ‘Beijing HDxt’ dataset included 10 healthy participants. All of the healthy participants were free of psychiatric or neurological history. These healthy participants are referred to as ‘normal controls’. See Appendix 1—table 4 and 5 for details.
 
+**Table 1.**
+ Demographic and clinical characteristics of the patients in the three datasets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Beijing_750 (n = 63)</th>
+      <th>Beijing_HDxt (n = 25)</th>
+      <th>Guangzhou_HDxt (n = 24)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gender, M/F</td>
+      <td>36/27</td>
+      <td>18/7</td>
+      <td>14/10</td>
+    </tr>
+    <tr>
+      <td>Etiology</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Trauma/Stroke/Anoxia</td>
+      <td>17/21/25</td>
+      <td>12/6/7</td>
+      <td>8/0/16</td>
+    </tr>
+    <tr>
+      <td>Age at the T0 (years)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>42.8 (13.8)</td>
+      <td>40.7 (15.2)</td>
+      <td>39.3 (16.9)</td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>18.0 ~ 71.0</td>
+      <td>18.0 ~ 68.0</td>
+      <td>15.0 ~ 78.0</td>
+    </tr>
+    <tr>
+      <td>Time to MRI (months)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>1.0 ~ 77.0</td>
+      <td>1.0 ~ 44.0</td>
+      <td>1.0 ~ 10.0</td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>7.4 (12.8)</td>
+      <td>5.4 (8.4)</td>
+      <td>2.3 (2.4)</td>
+    </tr>
+    <tr>
+      <td>Median</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Band</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>[1,3]</td>
+      <td>32</td>
+      <td>13</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>(3,6]</td>
+      <td>15</td>
+      <td>8</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>(6,12]</td>
+      <td>11</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>&gt;12</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Follow-up time (months)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>12.0 ~ 51.0</td>
+      <td>14.0 ~ 53.0</td>
+      <td>27.0 ~ 78.0</td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>21.0 (9.8)</td>
+      <td>41.7 (8.4)</td>
+      <td>52.2 (14.5)</td>
+    </tr>
+    <tr>
+      <td>Median</td>
+      <td>15.0</td>
+      <td>43.0</td>
+      <td>53.0</td>
+    </tr>
+    <tr>
+      <td>Band</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>[12,24]</td>
+      <td>38</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>(24,48]</td>
+      <td>24</td>
+      <td>20</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>&gt;48</td>
+      <td>1</td>
+      <td>3</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Diagnosis at T0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MCS/VS</td>
+      <td>17/46</td>
+      <td>5/20</td>
+      <td>8/16</td>
+    </tr>
+    <tr>
+      <td>CRS-R total score</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>7.3 (2.9)</td>
+      <td>6.5 (2.3)</td>
+      <td>7.1 (4.1)</td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>3.0 ~ 18.0</td>
+      <td>3.0 ~ 14.0</td>
+      <td>3.0 ~ 17.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outcome at T1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CRS-R total score</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>9.9 (5.1)</td>
+      <td>12.7 (6.4)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>3.0 ~ 22.0</td>
+      <td>5.0 ~ 23.0</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>GOS score</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GOS = 5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GOS = 4</td>
+      <td>5</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>GOS = 3</td>
+      <td>8</td>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>GOS &lt;= 2</td>
+      <td>50</td>
+      <td>13</td>
+      <td>18</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: CRS-R, Coma Recovery Scale–Revised; GOS, Glasgow Outcome Scale; MCS, minimally conscious state; N/A, not available; SD, standard deviation; VS, vegetative state/unresponsive wakefulness syndrome._
+
 As the ‘Beijing 750’ dataset involved more patients than the other two datasets, it was used as the training dataset for model development and internal validation, whereas the ‘Beijing HDxt’ and ‘Guangzhou HDxt’ datasets were only used for external validation. The study was approved by the Ethics Committee of the PLA Army General Hospital (protocol No: 2011–097) and by the Ethics Committee of the Guangzhou General Hospital of Guangzhou Military Command (protocol No: jz20091287). Informed consent to participate in the study was obtained from the legal surrogates of the patients and from the normal controls.
 
-## Clinical measurements
+### Clinical measurements
 
-## Diagnosis and consciousness assessments
+#### Diagnosis and consciousness assessments
 
 The diagnosis of each patient in the three datasets was made by experienced physicians according to the CRS-R scale (Multi-Society Task Force on PVS, 1994; Bernat, 2006; Magrassi et al., 2016). In the ‘Beijing 750’ and ‘Beijing HDxt’ datasets, the patients underwent the evaluations at least twice weekly within the 2 weeks before the MRI scanning (i.e. the T0 time point). The highest CRS-R score was considered as the diagnosis. The CRS-R includes six subscales that address auditory, visual, motor, oromotor, communication, and arousal functions, which are summed to yield a total score ranging from 0 to 23.
 
-## Outcome assessments
+#### Outcome assessments
 
 All patients were followed up at least 12 months after MRI scanning, according to the protocols for DOC described in a number of previous studies (Neuro Imaging for Coma Emergence and Recovery Consortium et al., 2012; Luyt et al., 2012; Stender et al., 2014; Pignat et al., 2016). Basically, follow-up interviews were performed in four ways, including outpatient visit, assessments by local physicians, home visit, and telephone/video review. Whenever possible, signs of responsiveness were detected or reported, the patient was evaluated either in the unit or at home by the hospital staff. In cases where no change was signaled, patients were examined twice by one hospital physician via telephone/video reviews at the end of the follow-up process.
 
@@ -83,11 +330,11 @@ For the training dataset, ‘Beijing 750’, two outcome scales were assessed: t
 
 The testing dataset ‘Beijing HDxt’ involved both the GOS scores and the CRS-R scores at the T1 time point for each patient. The testing dataset ‘Guangzhou HDxt’ measured the GOS scores, but not the CRS-R scores at the T1 time point.
 
-## MRI acquisition
+### MRI acquisition
 
 All of the participants in the three datasets were scanned with resting state fMRI and T1-weighted 3D high-resolution imaging. During the MRI scanning, the participants did not take any sedative or anesthetic drugs. The resting state fMRI scan was obtained using a T2*-weighted gradient echo sequence, and a high-resolution T1-weighted anatomical scan was obtained to check whether the patients had large brain distortion or focal brain damage. For the training dataset, ‘Beijing 750’, the resting state fMRI acquisition parameters included TR/TE = 2000/30 ms, flip angle = 90°, axial 39 slices, thickness = 4 mm, no gap, FOV = 240 × 240 mm, matrix = 64 × 64, and 210 volumes (i.e. 7 min). For the testing dataset, ‘Beijing HDxt’, the resting state fMRI acquisition parameters were as follows: axial 33 slices, TR/TE = 2000/30 ms, flip angle = 90°, thickness = 4 mm, no gap, FOV = 220 × 220 mm, matrix = 64 × 64, and 240 volumes (i.e. 8 min). For the testing dataset, ‘Guangzhou HDxt’, the resting state fMRI acquisition parameters included axial 35 slices, TR/TE = 2000/30 ms, flip angle = 90°, thickness = 4 mm, no gap, FOV = 240 × 240 mm, matrix = 64 × 64, and 240 volumes (i.e. 8 min).
 
-## Data analysis
+### Data analysis
 
 The data analysis pipeline is illustrated in Figure 2.
 
@@ -95,7 +342,7 @@ The data analysis pipeline is illustrated in Figure 2.
 
 **Figure 2.:** All datasets involved in this study included resting state fMRI and clinical data. For the fMRI data in the training dataset, data analysis first encompassed preprocessing and imaging feature selection and extraction. Partial least square regression was then used to generate the regression model using the selected imaging features and clinical features in the training dataset. In this way, a prediction score that depicts the possibility of consciousness recovery was computed for each patient. The optimal cut-off value for classifying an individual patient as responsive or non-responsive was then calculated, and the prognostic classification model was obtained. The two testing datasets were only used to validate externally the regression and classification model.
 
-## Imaging preprocessing
+### Imaging preprocessing
 
 Preprocessing and connectivity calculation were performed in the same way for the training dataset and the two testing datasets. All resting-state fMRI scans were preprocessed using SPM8 (SPM, RRID:SCR_007037) and in-house Matlab codes. Specifically, the first five volumes of each subject were discarded. The remaining resting-state fMRI volumes were corrected for slice timing differences and realigned to the first volume to correct for inter-scan movements. The functional images were then spatially smoothed with a Gaussian kernel of 6 × 6 × 6 mm full-width at half maximum. Linear regression was used to remove the influence of head motion, whole brain signals and linear trends. The variables regressed out included 12 motion parameters (roll, pitch, yaw, translation in three dimensions and their first derivatives), the average series of the signals within the brain, and the regressors for linear trends.
 
@@ -103,7 +350,7 @@ Motion artifact is increasingly recognized as an important potential confound in
 
 Finally, to reduce low-frequency drift and high-frequency noise, band-pass filtering (0.01–0.08 Hz) was only performed on volumes that survived motion censoring.
 
-## Definition of networks and regions of interest
+### Definition of networks and regions of interest
 
 As noted in the introduction, multiple functional brain networks are disrupted in DOC patients. Among these impaired networks, six (the default mode, executive control, salience, sensorimotor, auditory, and visual networks) show system-level damages and significant correlations with behavioral assessments (Demertzi et al., 2014, 2015). We therefore defined a total of 22 regions of interest (ROIs) to probe these six brain networks. The definitions of the 22 ROIs were based on the results of a series of previous brain functional studies (Seeley et al., 2007; Raichle, 2011; Demertzi et al., 2015), and their names and Montreal Neurological Institute (MNI) coordinates are listed in Appendix 2.
 
@@ -111,13 +358,13 @@ The connection templates of the six brain networks were first investigated withi
 
 The conventional fMRI preprocess normalizes individual fMRI images into a standard space defined by a specific template image. Our goal was to extend this conventional approach to generate a functional connectivity image for each patient in his/her own imaging space. During the preprocessing of each patient’s fMRI scans, the 22 ROIs and six brain connection templates were therefore spatially warped to individual fMRI space and resampled to the voxel size of the individual fMRI image. We also developed tools to check the registration for each subject visually, some examples of which are provided in Appendix 5 and Supplementary file 1.
 
-## Calculation of imaging features
+### Calculation of imaging features
 
 We designed two types of imaging features from the resting state fMRI, one being the functional connectivity between each pair of 22 ROIs, and the other being the spatial resemblance between the functional connection patterns of each ROI and the brain connection templates across the whole brain. The functional connectivity was based on the Pearson’s correlation coefficients, while the spatial resemblance was conceptually similar to the template-matching procedure (Greicius et al., 2004; Seeley et al., 2007; Vanhaudenhuyse et al., 2010). The basis of template matching is that the greater the spatial consistency that exists between the template of a brain network and a specific connectivity map (for example, a component in an independent component analysis), the stronger the possibility that the connectivity map belongs to that brain network. Here, for each ROI of an individual DOC patient, we first computed the Pearson’s correlation coefficients between the time-course of the ROI and that of each voxel within the brain so as to obtain a functional connectivity map, and subsequently converted the functional connectivity map to a normally distributed Fisher’s z transformed correlation map. Next, we calculated the Pearson’s correlation coefficients between the Fisher’s z transformed correlation map and the corresponding brain connection template wrapped to individual fMRI space across each voxel within the brain. A greater correlation coefficient between the two maps suggests that there is more spatial resemblance between the functional connectivity map of the ROI and the normal brain connection template. Our assumption was that the more spatial consistency that existed between the connectivity map of the ROI in a DOC patient and the brain connection template, the more intact the corresponding brain function of the ROI in this individual. In this way, we defined the connection feature of the ROI with the spatial resemblance.
 
 Overall, for each participant in this study, there were 231 (22 × 21/2) functional connectivity features and 22 brain area connection features.
 
-## Imaging feature selection
+### Imaging feature selection
 
 Feature selection techniques have been widely adopted in brain analysis studies, in order to produce a small number of features for efficient classification or regression, and to reduce overfitting and increase the generalization performance of the model (Fan et al., 2007; Dosenbach et al., 2010; Drysdale et al., 2017). Feature ranking and feature subset selection are two typical feature selection methods (Guyon and Elisseeff, 2003). Feature subset selection methods are generally time consuming, and even inapplicable when the number of features is extremely large, whereas ranking-based feature selection methods are subject to local optima. Therefore, these two feature selection methods are usually used jointly. Here, we first used a correlation-based feature selection technique to select an initial set of features, and then adopted a feature subset selection method for further selection.
 
@@ -127,7 +374,7 @@ Competitive adaptive reweighted sampling coupled with partial least squares regr
 
 Notably, both the correlation-based and CARS-PLSR feature selection methods filtered the features from the original feature set without any transformations. This made the prognostic regression model easier to interpret, as the imaging predictors were associated with either brain regions or functional connectivity.
 
-## Prognostic modeling and assessments of predictor importance
+### Prognostic modeling and assessments of predictor importance
 
 PLSR is able to handle multicollinearity among the predictors well (Wold et al., 2001; Krishnan et al., 2011). It was therefore used to generate the prognostic regression model in the training dataset ‘Beijing 750’. Given that clinical characteristics—including the etiology, incidence age and duration of DOC—have been verified as useful prognostic indicators, we designated the selected imaging features and the three clinical characteristics at the T0 time point as independent co-variates and the CRS-R score at the T1 time point as the dependent variable. Among the three clinical characteristics, the incidence age and duration of DOC were quantitative variables, whereas the etiology was a qualitative variable. In accordance with a previous study (Estraneo et al., 2010), we categorized the etiology into three types: traumatic brain injury, stroke and anoxic brain injury. Thus, two dummy variables for etiology were designed and included in the model. Prior to model training, all involved predictors were centered and normalized (i.e. transformed into Z-scores). The prognostic regression model therefore took the imaging and clinical features as input and returned a predicted score as output. In the training dataset ‘Beijing 750’, we used cross-validation to decide that the number of latent variables for PLSR was three. To evaluate the regression model, the coefficient of determination R2 between the predicted scores and the CRS-R scores at the T1 time point was calculated, and the Bland-Altman plot was used to measure the agreement between them.
 
@@ -135,23 +382,23 @@ Next, receiver operating characteristic (ROC) curves were plotted for the predic
 
 As model interpretation is an important task in most applications of PLSR, there has been considerable progress in the search for optimal interpretation methods (Kvalheim and Karstang, 1989; Kvalheim et al., 2014). In this study, using the Significant Multivariate Correlation (sMC) method (Tran et al., 2014), we assessed predictor importance in the prognostic regression model. The key points in sMC are to estimate the correct sources of variability resulting from PLSR (i.e. regression variance and residual variance) for each predictor, and use them to determine statistically a variable's importance with respect to the regression model. The F-test values (termed the sMC F-values) were used to evaluate the predictors' importance in the prognostic regression model.
 
-## Internal validation of model
+### Internal validation of model
 
 The prognostic regression model was internally validated using bootstrap sampling (Steyerberg, 2008). Specifically, bootstrap samples were drawn with replacement from the training dataset ‘Beijing 750’ such that each bootstrap sampling set had a number of observations equal to that of the training dataset. Using a bootstrap sampling set, correlation-based feature selection and CARS-PLSR were first used to select the feature subset, after which the PLSR was used to generate a prognostic model. We then applied the model to the bootstrap sampling set and the original training dataset, and calculated the coefficient of determination R2 of each of the two datasets. The difference between the two coefficients of determination was defined as the optimism. This process was repeated 1000 times to obtain a stable estimate of the optimism. Finally, we subtracted the optimism estimate from the coefficient of determination R2 of the ‘Beijing 750’ training dataset to obtain the optimism-corrected performance estimate.
 
 In addition, out-of-bag (OOB) estimation was used as an estimate of model classification performance in the training dataset (James et al., 2013). Specifically, for the original training dataset x, we left out one sample at a time and denoted the resulting sets by x(–1),..., x(n). From each leave-one-out set x(–i), 1000 bootstrap learning sets of size n–1 were drawn. On every bootstrap learning set generated from x(–i), we carried out feature selection, built a PLSR regression and classification model, and applied the model to the test observation xi. A majority vote was then made to give a class prediction for observation xi. Finally, we calculated the accuracy for the whole training dataset x.
 
-## External model validation
+### External model validation
 
 External validation is essential to support the general applicability of a prediction model. We ensured external validity by testing the model in two testing datasets, neither of which included samples that were considered during the development of the model. First, using the prognostic regression model, we calculated one predicted score for each patient in the two testing datasets. As the ‘Beijing HDxt’ dataset assessed the patients' CRS-R scores at the T1 time point, we calculated the coefficient of determination R2 between the predicted scores and the patients' CRS-R scores at this time point. The Bland-Altman plot was also determined. Finally, the patients in the two testing datasets were assessed as achieving consciousness recovery or not on the basis of the cut-off threshold obtained using the training dataset. The performance of the classification, including the accuracy, sensitivity and specificity, was determined.
 
-## Comparison between single-domain model and combination model
+### Comparison between single-domain model and combination model
 
 Using the modeling and validation method described above, we examined the predictability and generalizability in the two testing datasets on the basis of the clinical features alone or the imaging features alone.
 
 In addition, to compare the two types of single-domain models and the combination model, we used bootstrap resampling to obtain the distribution of the prediction accuracies in the two testing datasets based on each of the three types of models. We first resampled with replacement from the training dataset, and built a regression and classification model based on the clinical features alone, the neuroimaging features alone, or the combination of the two-domain features. We then tested the classification accuracy in the two testing datasets using the three types of models. In this way, we obtained the distribution of the prediction accuracies using each of the three types of models. Next, we used repeated measures ANOVA to determine whether or not the performances of the three types of models were the same; we also used Ψ, the root-mean-square standardized effect, to report the effect sizes of the mean differences between them.
 
-## Comparison between the proposed modeling method and linear SVM
+### Comparison between the proposed modeling method and linear SVM
 
 We compared the prediction performances between the proposed modeling method and linear SVM. The code for SVM was downloaded from LIBSVM (LIBSVM, RRID:SCR_010243). The 253 imaging features and the four clinical features were integrated into one feature vector. No feature selection was adopted in the linear SVM-based classification. The patients with GOS ≥3 were labeled as 1, with the others being designated as −1 (i.e. GOS ≤2).
 
@@ -159,13 +406,13 @@ Similarly, the OOB estimation process was used to estimate the performance of li
 
 ## Results
 
-## Imaging feature selection
+### Imaging feature selection
 
-## Correlation-based feature selection
+#### Correlation-based feature selection
 
 Using the training dataset, we found that some imaging features significantly correlated to the CRS-R scores at the T1 time point. For example, the connection features of some brain areas, including the anterior medial prefrontal cortex (aMPFC), posterior cingulate cortex/precuneus (PCC) and right lateral parietal cortex in the default mode network, and the dorsal medial prefrontal cortex (DMPFC) and left lateral superior parietal cortex in the executive control network, displayed significant correlations to the CRS-R T1 scores across the DOC patients. We also found numerous examples of significant correlation between functional connectivity and the CRS-R score at the T1 time point, with these functional connectivities being distributed both within and between brain networks. More information about the correlations between the imaging features and the CRS-R scores at the T1 time point are provided in Appendix 6.
 
-## CARS-PLSR feature selection
+#### CARS-PLSR feature selection
 
 Figure 3 shows the final imaging features selected with CARS-PLSR. Specifically, the brain area connection features included the aMPFC and PCC in the default mode network, and the DMPFC in the executive control network. The functional connectivity features included the connectivity between the aMPFC in the default mode network and the DMPFC in the executive control network, as well as between the middle cingulate cortex in the auditory network and the right lateral primary visual cortex in the visual network. More information about the feature selection by bootstrapping is provided in Appendix 7.
 
@@ -173,7 +420,7 @@ Figure 3 shows the final imaging features selected with CARS-PLSR. Specifically,
 
 **Figure 3.:** DMN.aMPFC, anterior medial prefrontal cortex in the default mode network; DMN.PCC, posterior cingulate cortex/precuneus in the default mode network; ExecuContr.DMPFC, dorsal medial prefrontal cortex in the executive control network; Auditory.MCC, middle cingulate cortex in the auditory network; Visual.R.V1, right lateral primary visual cortex in the visual network. DMN.aMPFC—ExecuContr.DMPFC: the functional connectivity between DMN.aMPFC and ExecuContr.DMPFC; Auditory.MCC—Visual.R.V1: the functional connectivity between Auditory.MCC and Visual.R.V1.
 
-## Prognostic regression model and predictor importance
+### Prognostic regression model and predictor importance
 
 The prognostic regression model is presented in Figure 4. On the basis of the regression formula, we noted some interesting findings. First, there were both positive and negative weights. In particular, the weights were all positive for the three brain area connection features, whereas the weight for the functional connectivity feature between the aMPFC in the default mode network and the DMPFC in the executive control network was negative. Interestingly, this connection had the maximum sMC F-value as shown in Figure 4B. In addition, the age and the anoxic etiology had negative weights, and the age predictor had the largest sMC F-value among the four clinical features.
 
@@ -181,43 +428,41 @@ The prognostic regression model is presented in Figure 4. On the basis of the re
 
 **Figure 4.:** In the three subplots, each color denotes a particular predictor. (A) Regression formula. (B) Predictor importance for each predictor in prognostic regression model. The vertical axis represents the sMC F-test value. The larger the sMC F-value, the more informative the predictor with respect to the regression model. (C) The imaging features in the model are rendered on a 3D surface plot template in medial view.
 
-## Prognostic classification model and internal validation
+### Prognostic classification model and internal validation
 
 Figure 5A presents the predicted score for each patient in the training dataset. As shown in Figure 5B, there was good agreement between the CRS-R scores at the T1 time point and the predicted scores. The apparent coefficient of determination R2 was equal to 0.65 (permutation test, p=0.001), and the Bland-Altman plot verified the consistency between the predicted and achieved scores (one sample T test, p = 1.0). The prognostic regression model was internally validated using bootstrapping. The optimism-corrected coefficient of determination R2 was equal to 0.28.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/36173/elife-36173-fig5-v2.jpg)
 
-**Figure 5.:** (A) Individual predicted scores for each DOC patient in the training dataset. The CRS-R score at the T time point is shown on the x axis and the predicted score on the y axis. The patients diagnosed as VS/UWS at the 0T time point are shown to the left of the vertical red solid line, whereas the patients diagnosed as MCS at this time point are shown to the right. The purplish red pentagram, imperial purple triangle and blank circle mark the patients with a GOS score ≥4,=3 and≤2, respectively, at the 0T time point. (1B) Agreement between the CRS-R scores at the T time point and the predicted scores. The left panel shows the correlation between the CRS-R scores at the 1T time point and the predicted scores, and the right panel shows the differences between them using the Bland-Altman plot. (1C) Bar chart showing the numbers or proportions of DOC patients in each band of predicted scores. In these two panels, the y axis shows the predicted score. (D) The area under the receiver-operating characteristic (ROC) curve. The star on the curve represents the point with the maximal sum of true positive and false negative rates on the ROC curve, which were chosen as the cut-off threshold for classification. Here, the corresponding predicted score = 13.9.
+**Figure 5.:** (A) Individual predicted scores for each DOC patient in the training dataset. The CRS-R score at the T0 time point is shown on the x axis and the predicted score on the y axis. The patients diagnosed as VS/UWS at the T0 time point are shown to the left of the vertical red solid line, whereas the patients diagnosed as MCS at this time point are shown to the right. The purplish red pentagram, imperial purple triangle and blank circle mark the patients with a GOS score ≥4,=3 and≤2, respectively, at the T1 time point. (B) Agreement between the CRS-R scores at the T1 time point and the predicted scores. The left panel shows the correlation between the CRS-R scores at the T1 time point and the predicted scores, and the right panel shows the differences between them using the Bland-Altman plot. (C) Bar chart showing the numbers or proportions of DOC patients in each band of predicted scores. In these two panels, the y axis shows the predicted score. (D) The area under the receiver-operating characteristic (ROC) curve. The star on the curve represents the point with the maximal sum of true positive and false negative rates on the ROC curve, which were chosen as the cut-off threshold for classification. Here, the corresponding predicted score = 13.9.
 
 Figure 5C illustrates the number and proportion of DOC patients in different bands of predicted scores. We found that the proportion of the patients with a ‘consciousness recovery’ outcome in the patient cohorts rose in conjunction with an increase in the predicted score. The higher the predicted score, the higher the proportion of patients who exhibited a favorable outcome. Figure 5D shows the area under the ROC curve (AUC = 0.96, 95% CI = 0.89–0.99). On the basis of the ROC curve for the training dataset, a threshold 13.9 was selected as the cut-off point to classify the recovery of individual patients. In other words, if the predicted score for a patient was equal to or larger than 13.9, the classification model designated the label ‘consciousness recovery’ for this patient, otherwise ‘consciousness non-recovery’. The classification accuracy was assessed by comparing the predicted and actual outcomes, that is 'consciousness recovery' (GOS ≥ 3) versus ' consciousness non-recovery’ (GOS ≤ 2). Using this method, the classification accuracy in the training dataset was up to 92%. Specifically, the sensitivity was 85%, the specificity was 94%, the positive predictive value (PPV) was 79%, the negative predictive value (NPV) was 96%, and the F1 score was 0.81.
 
 The OOB was able to provide the mean prediction error on each training sample and to estimate the generalizability of our method in the training dataset. Using the OOB estimation, we found that the prediction accuracy in the training dataset ‘Beijing 750’ was 89%, and the sensitivity, specificity, PPV and NPV were 69%, 94%, 100%, and 87%, respectively.
 
-## External validation of the model
+### External validation of the model
 
 The performance of the prediction model on the two testing datasets is illustrated in Figure 6. As we assessed the CRS-R scores at the T1 time point for the patients in the ‘Beijing HDxt’ dataset, we calculated the coefficient of determination R2 between these scores and the predicted scores. The R2 was equal to 0.35 (permutation test, p=0.005), with the Bland-Altman plot verifying the consistency between the predicted and actual scores (one sample T test, p=0.89). Using the predicted score 13.9 as the threshold, we then tested the classification accuracy on the two testing datasets. We found that, for the ‘Beijing HDxt’ dataset, the prediction accuracy was up to 88% (sensitivity: 83%, specificity: 92%, PPV: 92%, NPV:86%, F1 score: 0.87; permutation test, p<0.001), while for the ‘Guangzhou HDxt’ dataset it was also up to 88% (sensitivity: 100%, specificity: 83%, PPV: 67%, NPV: 100%, F1 score: 0.80; permutation test, p<0.001). Notably, our model demonstrated good sensitivity and specificity for both the ‘subacute’ patients (i.e. duration of unconsciousness ≤3 months) and those in the chronic phase (i.e. duration of unconsciousness >3 months), as shown in Figure 7. More interestingly, for the testing dataset ‘Beijing HDxt’, eight DOC patients who were initially diagnosed as VS/UWS subsequently recovered consciousness. Using the proposed model, we could successfully identify seven of these and there was only one false-positive case. That is, for the VS/UWS patients, the model achieved 90.0% accuracy (sensitivity: 87.5%, specificity: 91.7%, PPV: 87.5%, NPV: 91.7%, F1 score: 0.875).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/36173/elife-36173-fig6-v2.jpg)
 
-**Figure 6.:** (A) The individual predicted score (top panel) and agreement between the CRS-R scores at the T time point and the predicted scores (bottom panel) for the testing dataset ‘Beijing HDxt’. (1B) The individual predicted score for each DOC patient in the testing dataset ‘Guangzhou HDxt’. The legend description is the same as for Figure 5.
+**Figure 6.:** (A) The individual predicted score (top panel) and agreement between the CRS-R scores at the T1 time point and the predicted scores (bottom panel) for the testing dataset ‘Beijing HDxt’. (B) The individual predicted score for each DOC patient in the testing dataset ‘Guangzhou HDxt’. The legend description is the same as for Figure 5.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/36173/elife-36173-fig7-v2.jpg)
 
-**Figure 7.:** T ≤3 months) and those in the chronic phase (i.e. duration of unconsciousness 0T >3 months), respectively.0
-
 To test robustness, we evaluated whether the present prognostic regression model generalized to the healthy subjects scanned in the ‘Beijing 750’ training dataset (n = 30) and to the ‘Beijing HDxt’ testing dataset (n = 10). We found that both the healthy subjects and the ‘consciousness recovery’ patients had significantly higher predicted imaging subscores than the ‘consciousness non-recovery’ patients (two-sample T test, p<0.05). Additional information is provided in Appendix 8.
 
-## Comparison of the single-domain and combination models
+### Comparison of the single-domain and combination models
 
 When only the clinical features were used to build the predictive model, the prediction accuracy for the ‘Beijing HDxt’ dataset was 68% (sensitivity: 58%, specificity: 77%, PPV: 70%, NPV: 67%, F1 score: 0.64), whereas for the ‘Guangzhou HDxt’ dataset, it was 83% (sensitivity: 100%, specificity: 78%, PPV: 60%, NPV: 100%, F1 score: 0.75). When only the imaging features were involved in the model, the prediction accuracy for the ‘Beijing HDxt’ dataset was 80% (sensitivity: 67%, specificity: 92%, PPV: 89%, NPV: 75%, F1 score: 0.76), whereas for the ‘Guangzhou HDxt’ dataset, it was 79% (sensitivity: 100%, specificity: 72%, PPV: 55%, NPV: 100%, F1 score: 0.71).
 
-Using bootstrapping, we obtained the distribution of the prediction accuracies in the two testing datasets with each of the three types of models. In the 'Beijing HDxt' testing dataset, the means±standard deviations of the distribution of the prediction accuracies were 0.815±0.050, 0.811±0.044, and 0.666±0.037 for the combination model, the model using imaging features alone, and the model using clinical features alone, respectively. We found that there were significant differences between the means of the classification accuracies using the three types of models (repeated measures ANOVA, p<0.001). Subsequently, we conducted pairwise comparisons. We found that there was significant difference between the combination model and the model s using the imaging feature alone (paired sample t-test, p=0.001) or using the clinical feature alone (paired sample t-test, p<0.001). We also found that there was significant difference between the model using the imaging feature alone and the model using the clinical feature alone (paired sample t-test, p<0.001). Using effect-size analysis, we found that there was a mean difference of Ψ=0.004 (95% CI = [0.002, 0.007]) between the combination method and the method using only imaging features, and Ψ=0.149 (95% CI = [0.147, 0.152]) between the combination method and the method using only clinical features. We also observed a mean difference of Ψ = 0.145 (95% CI = [0.142, 0.147]) between the methods using only imaging features and only clinical features.
+Using bootstrapping, we obtained the distribution of the prediction accuracies in the two testing datasets with each of the three types of models. In the 'Beijing HDxt' testing dataset, the means$\pm$standard deviations of the distribution of the prediction accuracies were 0.815$\pm$0.050, 0.811$\pm$0.044, and 0.666$\pm$0.037 for the combination model, the model using imaging features alone, and the model using clinical features alone, respectively. We found that there were significant differences between the means of the classification accuracies using the three types of models (repeated measures ANOVA, p<0.001). Subsequently, we conducted pairwise comparisons. We found that there was significant difference between the combination model and the model s using the imaging feature alone (paired sample t-test, p=0.001) or using the clinical feature alone (paired sample t-test, p<0.001). We also found that there was significant difference between the model using the imaging feature alone and the model using the clinical feature alone (paired sample t-test, p<0.001). Using effect-size analysis, we found that there was a mean difference of Ψ=0.004 (95% CI = [0.002, 0.007]) between the combination method and the method using only imaging features, and Ψ=0.149 (95% CI = [0.147, 0.152]) between the combination method and the method using only clinical features. We also observed a mean difference of Ψ = 0.145 (95% CI = [0.142, 0.147]) between the methods using only imaging features and only clinical features.
 
-In the 'Guangzhou HDxt' testing dataset, the mean±standard deviation of the distribution of the prediction accuracies was 0.863±0.051, 0.783±0.044, and 0.829±0.086 for the combination model, the model using imaging features alone, and the model using clinical features alone, respectively. Similarly, we found that there were significant differences between the mean of the classification accuracies using the three types of models (repeated measures ANOVA, p<0.001), and there was significant difference between the combination model and the models using imaging features alone (paired sample t-test, p<0.001) or using clinical features alone (paired sample t-test, p<0.001). Using effect-size analysis, we found a mean difference of Ψ = 0.080 (95% CI = [0.076, 0.084]) between the combination model and the model using the imaging features alone, and Ψ = 0.034 (95% CI = [0.028, 0.040]) between the combination model and the model using only clinical features. We also observed a mean difference of Ψ = –0.046 (95% CI = [–0.053, –0.040]) between the model using imaging features alone and that using only clinical features.
+In the 'Guangzhou HDxt' testing dataset, the mean$\pm$standard deviation of the distribution of the prediction accuracies was 0.863$\pm$0.051, 0.783$\pm$0.044, and 0.829$\pm$0.086 for the combination model, the model using imaging features alone, and the model using clinical features alone, respectively. Similarly, we found that there were significant differences between the mean of the classification accuracies using the three types of models (repeated measures ANOVA, p<0.001), and there was significant difference between the combination model and the models using imaging features alone (paired sample t-test, p<0.001) or using clinical features alone (paired sample t-test, p<0.001). Using effect-size analysis, we found a mean difference of Ψ = 0.080 (95% CI = [0.076, 0.084]) between the combination model and the model using the imaging features alone, and Ψ = 0.034 (95% CI = [0.028, 0.040]) between the combination model and the model using only clinical features. We also observed a mean difference of Ψ = –0.046 (95% CI = [–0.053, –0.040]) between the model using imaging features alone and that using only clinical features.
 
 Therefore, in both testing datasets, the combination of imaging and clinical features demonstrated higher accuracy than the use of the single domain features alone. In addition, use of the imaging features alone had higher predictive power in comparison to use of the clinical features alone in the ‘Beijing HDxt’ dataset, whereas the opposite condition was observed in the ‘Guangzhou HDxt’ dataset, suggesting that the two testing datasets might be heterogeneous. More information about the single-domain models are provided in Supplementary file 2.
 
-## Comparison between the proposed modeling method and linear SVM
+### Comparison between the proposed modeling method and linear SVM
 
 Using the OOB estimation, we found that the accuracy of the linear SVM-based classification method in the training dataset ‘Beijing 750’ was 83% (sensitivity: 31%, specificity: 96%, PPV: 100%, NPV: 81%), which was lower than the accuracy of our proposed modeling method (i.e. accuracy: 89%, sensitivity: 69%, specificity: 94%, PPV: 100%, NPV: 87%). On the other hand, the linear SVM-based classification method achieved an accuracy of 76% (sensitivity: 58%, specificity: 92%, PPV: 88%, NPV: 71%) and 88% (sensitivity: 100%, specificity: 83%, PPV: 67%, NPV: 100%) in the ‘Beijing HDxt’ testing dataset and the ‘Guangzhou HDxt’ testing dataset, respectively. That is, the accuracy in the ‘Beijing HDxt’ testing dataset was lower than that in our method, whereas the accuracy in the ‘Guangzhou HDxt’ testing dataset was similar to that of our approach. Therefore, taking together the performance comparisons in both the training dataset and the two testing datasets, we believe that our method based on feature selection and PLSR should have higher prediction accuracy and better generalizability in comparison to linear SVM.
 

@@ -53,7 +53,7 @@ Here, we sought to determine the role of paucigranulocytic asthma, using an esta
 
 ## Results
 
-## Pneumonia virus of mice (PVM)-infection of RAGE-deficient mice induces the cardinal features of paucigranulocytic asthma
+### Pneumonia virus of mice (PVM)-infection of RAGE-deficient mice induces the cardinal features of paucigranulocytic asthma
 
 To investigate the effect of asthma on the severity of influenza we employed a previously established model of paucigranulocytic asthma (Arikkatt et al., 2017). In this model, an early-life PVM infection followed by reinfection with PVM later in life in mice deficient in the receptor for advanced glycation endproducts (RAGE), encoded by the Ager gene, promotes airway remodelling characteristic of asthma (Arikkatt et al., 2017). To confirm this phenotype, the number of mucus-secreting cells and airway smooth muscle mass (ASM) was assessed in PVM-infected RAGE-deficient mice and mock-infected RAGE-deficient mice. Importantly, RAGE-deficient mice that received only an early life PVM infection were not included in these experiments as we have previously shown that an early life PVM infection, followed by a later life infection with influenza A virus (IAV), also results in an asthma-like phenotype (Arikkatt et al., 2017). Consistent with our previous findings (Arikkatt et al., 2017), an early and later life PVM infection in RAGE-deficient mice resulted in a significant increase in the number of mucus secreting cells and ASM mass (Figure 1A). To confirm that the observed structural changes were not associated with a marked pro-inflammatory phenotype or strong interferon response, various cytokines were assessed in the lungs of asthmatic and non-asthmatic mice. Consistent with our previous findings (Arikkatt et al., 2017) asthmatic mice had significantly lower pulmonary levels of IFN-γ, CXCL1, TNF-α, CCL2, IL12, IL1b, IL10, and IFN-α compared to non-asthmatic control mice (Figure 1B). These data indicate that this is an appropriate mouse model to study the effects of asthma, and an impaired interferon response, on the emergence of influenza virus variants.
 
@@ -61,7 +61,7 @@ To investigate the effect of asthma on the severity of influenza we employed a p
 
 **Figure 1.:** (A) (Left) Percentage of airway epithelial cells (AECs) producing mucus was quantified by immunohistochemistry at 7 days post-reinfection (i.e. 42 days of age) from uninfected RAGE-deficient mice (non-asthmatic) and infected RAGE-deficient mice (asthmatic). (Right) Lung sections from non-asthmatic and asthmatic mice at 42 days of age were stained for smooth muscle actin by immunohistochemistry and the airway smooth muscle (ASM) area was calculated relative to the basement membrane (BM) length of small airways. (B) Cytokine levels in the lung of RAGE-deficient mice 7 days post-PVM or mock infection (i.e. 42 days of age). Statistical analysis was performed as described in Materials and methods with *p≤0.05. Data are pooled from at least two independent experiments and shown as mean ± SEM.
 
-## Mice with the features of paucigranulocytic asthma had increased IAV severity
+### Mice with the features of paucigranulocytic asthma had increased IAV severity
 
 To the best of our knowledge the association between non-allergic asthma and influenza has not been investigated. Accordingly, we sought to investigate the severity of IAV infection in the non-allergic model of asthma described above. Asthmatic mice infected with IAV lost significantly more body weight over time compared to non-asthmatic control mice (Figure 2A). This was associated with increased IAV replication in the lungs of asthmatic mice at 6 days post-infection (d.p.i)(Figure 2B). While there was an increase in the histopathology score of mock infected asthmatic mice compared to non-asthmatic mice, there was no observable difference following IAV infection (Figure 2C). Furthermore, asthmatic mice showed a significantly impaired type I interferon response, with a downregulation of both IFN-α and interferon inducible MX1 following IAV infection (Figure 2D).
 
@@ -69,9 +69,17 @@ To the best of our knowledge the association between non-allergic asthma and inf
 
 **Figure 2.:** RAGE-deficient non-asthmatic and asthmatic mice were infected with 100 (PFU) of H1N1/Auck/09. Mock control groups received PBS only. (A) Percentage weight loss of influenza A virus (IAV) or mock infected mice. Weights are displayed as percentage of a mouse’s weight at the time of infection. Each data point represents mean ± SEM, with at least 17 mice per group. (B) Viral titres present in lung homogenate at 4 and 6 days post-infection (d.p.i.) in IAV and mock-infected mice. (C) Histopathology score of lung sections for vascular changes, bronchitis, interstitial inflammation, alveolar inflammation, pneumocyte hypertrophy, and pleuritis combined. (D) Cytokines in lung homogenate at 4 and 6 d.p.i. Data are normalised to Gapdh expression and fold change was calculated using the ΔΔCt method, expressed relative to mock infected mice. Statistical analysis was performed as described in Materials and methods with *p≤0.05, comparing non-asthmatic IAV to asthmatic IAV. Data are pooled from at least two independent experiments and shown as mean ± SEM (A–D), with a data point representing one mouse (B–D).
 
-## An asthmatic host environment led to increased non-synonymous IAV mutations
+### An asthmatic host environment led to increased non-synonymous IAV mutations
 
 Having established that the asthma phenotype employed herein was associated with increased IAV severity we next sought to determine if asthmatic mice had an increased number of IAV variants. To do so, we used deep sequencing to analyse viral sequences isolated from the lungs of infected mice at 4 and 6 d.p.i. Mutations were only included in the analysis if they constituted >1% of the total viral population and were detected in a minimum of 1000 reads following quality control. Shannon’s entropy was determined for each of the eight influenza genome segments in both 4 and 6 d.p.i. samples (Figure 3). To account for any bias from difference in sequencing coverage, the read count for each segment was analysed. No significant difference was observed in sequence coverage for any of the influenza virus genes between the two treatment groups (Figure 3—figure supplement 1). Asthmatic host-derived samples showed significantly more within-host viral diversity of the PB1 segment at 6 d.p.i. (Figure 3B). To determine if the mutations were associated with a specific section of the PB1 gene, their frequency was visualised against the nucleotide position, where no discernible trend was observed (Figure 4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61803/elife-61803-fig3-v1.jpg)
+
+**Figure 3.:** Influenza viral RNA isolated from the lung tissue of asthmatic (n = 27) and non-asthmatic (n = 25) mice was analysed for viral variants at 4 and 6 days post-infection (d.p.i). (A–H) Measurement of alpha diversity presented as Shannon entropy of viral mutations at a frequency above 1% by genome segment at the nucleotide level. Statistical analysis was performed as described in Materials and methods with *p≤0.05. Data are shown as mean ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61803/elife-61803-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–H) Influenza viral RNA was isolated from the lung tissue of either asthmatic (n = 27) and non-asthmatic (n = 25) mice and analysed for viral variants. Each data point represents a sample. Statistical analysis was performed as described in Materials and methods. Data are shown as mean ± SEM.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/61803/elife-61803-fig4-v1.jpg)
 
@@ -79,19 +87,514 @@ Having established that the asthma phenotype employed herein was associated with
 
 To determine if any of the mutations detected in the asthmatic mice could have contributed to the increased IAV severity observed, we focused on unique (occurring specific to either non-asthmatic or asthmatic hosts) non-synonymous mutations within the PB1 segment, as these were the most likely to be of functional significance. This produced a list of 404 unique mutations across all groups (Supplementary file 2). We then refined our analysis to only include non-synonymous mutations that were detected in two or more mice. Overall, there was an increase in unique mutations detected in asthmatic compared to non-asthmatic host samples, with 32 and 5, respectively (Table 1). Interestingly, the bulk of the mutations were focused around the priming loop, thumb, and C-terminal extension of PB1.
 
+**Table 1.**
+ Frequency of exclusive non-synonymous viral mutations detected in PB1 at 4 and 6 days post-influenza A virus (IAV) inoculation and their frequency in clinical samples.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Non-asthmatic</th>
+      <th colspan="4">Asthmatic</th>
+      <th colspan="3">Clinical samples (n = 51 per group)</th>
+    </tr>
+    <tr>
+      <th colspan="2">Day 4 (n* = 13)</th>
+      <th colspan="2">Day 6 (n = 12)</th>
+      <th colspan="2">Day 4 (n = 13)</th>
+      <th colspan="2">Day 6 (n = 14)</th>
+      <th>Non-asthmatic</th>
+      <th>Asthmatic</th>
+      <th>p-Value‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>M1I</td>
+      <td>50%†</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>M1L</td>
+      <td>17%</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>D2H</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>N77I</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>P74A</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>E75D</td>
+      <td>29%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>E75V</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>D76A</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>D76H</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>N77V</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>E78G</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>S80H</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>I205M</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>I248V</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>M616I</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>R621P</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>C625S</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A652P</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>S654N</td>
+      <td>14%</td>
+      <td>4%</td>
+      <td>18%</td>
+      <td>0.0514</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Y657H</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>N671H</td>
+      <td>17%</td>
+      <td></td>
+      <td></td>
+      <td>R670S</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R672P</td>
+      <td>15%</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>S673A</td>
+      <td>17%</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>I682F</td>
+      <td>15%</td>
+      <td></td>
+      <td></td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>D685E</td>
+      <td>15%</td>
+      <td></td>
+      <td></td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>D685H</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>M688I</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Y689D</td>
+      <td>21%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Y689R</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Q690S</td>
+      <td>15%</td>
+      <td></td>
+      <td></td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>K691R</td>
+      <td>15%</td>
+      <td></td>
+      <td></td>
+      <td>4%</td>
+      <td>16%</td>
+      <td>0.092</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>C692S</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>C693N</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>N694R</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>L695I</td>
+      <td>15%</td>
+      <td></td>
+      <td></td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>R727T</td>
+      <td>14%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*n = Total number of mouse samples.†Percentage of mice with identified mutation.‡Statistical comparisons were made using a two-sided fisher’s exact test._
+
 We next sought to determine if any of these IAV mutations detected in mouse samples had also been reported in pH1N1 IAV patients with asthma. To do so, post-2009 H1N1 viral sequences from patients that listed ‘asthma’ as a medical co-morbidity (n = 51) were obtained from the Influenza Research Database (IRD). This was compared to viral sequences obtained from 51 age and sex-matched pH1N1 patients on the IRD with no medical co-morbidities. Strikingly, of the unique mouse single nucleotide variants, two that were unique to asthmatic mouse samples were also detected in clinical samples at a higher frequency in asthmatic patient samples (Table 1). Interestingly, of the mutations identified in the clinical consensus sequence samples, the K691R mutation reached a high enough frequency in two asthmatic mouse samples to alter the consensus sequence.
 
-## Asthmatic host-derived samples showed increased replication kinetics in vitro
+### Asthmatic host-derived samples showed increased replication kinetics in vitro
 
 Having established that an asthmatic host generated more viral variants, specifically within PB1, we next sought to assess if these mutations influenced the replicative ability of asthmatic and non-asthmatic mouse-derived IAV samples in vitro. To do so, we infected Madin–Darby canine kidney (MDCK) cells, human alveolar basal epithelial cells (A549 cells), and Immortalized Mouse Mammary Epithelial Cells (iMMEC) at a multiplicity of infection (MOI) of 0.01 with either lung homogenates derived from three asthmatic mice or three non-asthmatic mice. The viruses in the asthmatic lung homogenates replicated to significantly higher titres than those from non-asthmatic lung homogenates at 24 hr post-infection in MDCK cells (Figure 5A). A similar trend was observed in mouse and human epithelial cells (Figure 5B and C) but with a delayed rate of replication.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/61803/elife-61803-fig5-v1.jpg)
 
-**Figure 5.:** in vitro.IAV isolated from asthmatic hosts replicates more quickly than non-asthmatic hosts in (A) Madin–Darby canine kidney (MDCK) cells, (B) Immortalized Mouse Mammary Epithelial Cells (iMMEC), and (C) adenocarcinomic human alveolar basal epithelial cells (A549 cells). Each cell type was infected with the indicated viruses at a multiplicity of infection (MOI) of 0.01 (n = 3 wells/virus/time point). Mock infected data not shown. Data were analysed using a one-way ANOVA with Holm–Sidak's multiple comparisons test and are represented as mean ± SEM. *p<0.05. Dashed line indicates the detection limit of the assay.
+**Figure 5.:** IAV isolated from asthmatic hosts replicates more quickly than non-asthmatic hosts in (A) Madin–Darby canine kidney (MDCK) cells, (B) Immortalized Mouse Mammary Epithelial Cells (iMMEC), and (C) adenocarcinomic human alveolar basal epithelial cells (A549 cells). Each cell type was infected with the indicated viruses at a multiplicity of infection (MOI) of 0.01 (n = 3 wells/virus/time point). Mock infected data not shown. Data were analysed using a one-way ANOVA with Holm–Sidak's multiple comparisons test and are represented as mean ± SEM. *p<0.05. Dashed line indicates the detection limit of the assay.
 
 Interestingly, comparing two of the viral samples pre and post in vitro replication in MDCKs we did not detect a change in the consensus sequence of the daughter population after in vitro replication compared to the consensus sequence of the parent. In terms of minority viral populations, in one daughter population no viral variants (with non-synonymous mutations) were detected that constituted between 5 and 49% of the viral population. In the second daughter population, one non-synonymous mutation (PB1 I205M) was detected that constituted 28% of the viral population. However, this mutation was present in the consensus sequence of the parent isolate, albeit at a higher percentage (95%). Together, these data suggest that the increased replication of viral isolates from asthmatic mice was not associated with a large number of additional in vitro adaptations.
 
-## PB1 C693Y and P651Q may increase the stability of the influenza RNA polymerase protein dimer
+### PB1 C693Y and P651Q may increase the stability of the influenza RNA polymerase protein dimer
 
 We next sought to elucidate if any of the observed mutations identified in the asthmatic group could be responsible for increased viral replication. To do so, four mutations were selected for structural modelling; two that appeared in multiple mouse samples as well as clinical samples (S694N and K691R), and two that were found in areas likely to affect function (C693Y and P651Q) (Supplementary file 2).
 
@@ -101,7 +604,7 @@ None of the mutations were predicted to have a major destabilising effect and al
 
 **Figure 6.:** (A) Mutations C693Y and K691R. The molecule is displayed in surface view with cartoon representation of the protein backbone (PB1 magenta and PB2 sky blue). The α-helices are labelled and PB1 C693Y and K691R and PB2 K32 are shown as sticks in the respective colours of the subunits with the wild-type (WT) residues in pale yellow. (B) Mutations P651Q and S654N within the conserved β-hairpin (cartoon representation in pale green). The sites of mutations are shown as sticks with the WT residues in pale yellow.
 
-## PB1 C693Y and P651Q increase viral polymerase activity
+### PB1 C693Y and P651Q increase viral polymerase activity
 
 We next sought to investigate the individual effect of the PB1 C693Y and P651Q mutations on viral polymerase activity using a minigenome assay, given their predicted increase in stability. Both the PB1 C693Y and P651Q mutations within the PB1 gene increased polymerase activity when compared to the WT virus polymerase (Figure 7). Together these data suggest that the C693Y and P651Q mutations identified exclusively in asthmatic hosts may alter the interaction between PB1 and PB2 in a stabilising manner, resulting in increased polymerase activity.
 
@@ -109,7 +612,7 @@ We next sought to investigate the individual effect of the PB1 C693Y and P651Q m
 
 **Figure 7.:** Influenza RNA polymerase-driven activity is increased compared to WT in HEK 293 T cells transfected with either the C693Y or P651Q mutation in PB1. Data are pooled from four independent experiments (with five biological replicates per group, per experiment). Results are presented as a fold change relative to WT. Statistical significance was determined as described in the Materials and methods. Data shown as mean ± SEM. *p<0.05.
 
-## Asthmatic host-derived IAV exhibits greater disease severity and viral diversity upon infection of a WT host
+### Asthmatic host-derived IAV exhibits greater disease severity and viral diversity upon infection of a WT host
 
 Vulnerable patient groups may be a source for the emergence of new viral strains (Honce et al., 2020). As such, we next sought to determine if asthmatic host-derived IAV would induce greater disease severity in WT mice. We inoculated WT mice with either asthmatic or non-asthmatic host-derived IAV and monitored them for 4 days, at which point they were euthanised. Mice infected with asthmatic host-derived IAV had significantly more weight loss (Figure 8A), lower blood oxygen saturation (Figure 8B), and higher viral titres (Figure 8C) compared to mice infected with non-asthmatic host-derived IAV. There was also a non-significant trend towards increased viral mRNA present (Figure 8D). Mice infected with asthmatic host-derived IAV had a significant upregulation in various anti-viral and pro-inflammatory cytokines (Figure 8E).
 
@@ -137,49 +640,49 @@ Nevertheless, despite these limitations these data suggest that in a mouse model
 
 ## Materials and methods
 
-## Viral strains and titrations
+### Viral strains and titrations
 
 PVM strain J3666 stocks were prepared from mouse lung homogenate as described previously (Garvey et al., 2005). A/Auckland/4/2009 (Auckland/09; H1N1) stocks were prepared in embryonated chicken eggs as previously described (Brauer and Chen, 2015). Viral titres were determined by plaque assays on Madin–Darby canine kidney (MDCK) cells, as previously described (Short et al., 2011).
 
-## Mouse strains
+### Mouse strains
 
 RAGE-deficient mice (Ager-/-) were kindly provided by Prof. Ann-Marie Schmidt, (New York University Langone Medical Centre, NY, USA). Ager-/- and C57BL/6 mice were housed in individually ventilated cages, under alternating 12 hr light/dark periods with access to clean drinking water and food ad libitum. All animal experiments were approved by the University of Queensland Animal Ethics Committee (permit no. 071/17).
 
-## Establishing paucigranulocytic asthma
+### Establishing paucigranulocytic asthma
 
 To model asthma development, we employed our previously described mouse model of paucigranulocytic asthma (Arikkatt et al., 2017). Specifically, 7-day old female and male Ager-/- mice were infected intranasally with 10 plaque forming units (PFU) of PVM in a volume of 10 μL. Thirty-five days after the primary infection, mice were reinfected intranasally with 100 PFU of PVM in a total volume of 50 μL. This model reflects the fact that asthma development is often a combination of a genetic deficiency and multiple respiratory tract infections (Arikkatt et al., 2017). ‘Non-asthmatic’ control mice were deficient in RAGE but were mock infected with 10 μL of PBS at 7 days of age.
 
-## In vivo IAV infection
+### In vivo IAV infection
 
 At 48 days of age, all Ager-/- mice were infected with 100 PFU of Auckland/09(H1N1) intranasally in 50 μL phosphate buffered saline (PBS) or mock-infected with PBS. Six-week-old female C57BL/6 mice were infected intranasally with 2000 PFU of either asthmatic host-derived IAV or non-asthmatic host-derived IAV. All infections were performed intranasally under isoflurane-induced anaesthesia using Stinger Research Aesthetic Gas Machine (Darvall, AZ, USA). Mice were monitored daily for weight loss and clinical signs of disease. At the relevant time points, mice were euthanised with intraperitoneal injection of a lethal dose of phentobarbitol (270 mg/kg) (Virbac, NSW, Australia).
 
-## Blood oxygen saturation
+### Blood oxygen saturation
 
 Blood oxygen saturation of C57BL/6 mice was measured at 4 d.p.i. using a collar sensor and Mouseox Plus pulse oximeter (Starr, PA, USA).
 
-## Histology and immunohistochemistry
+### Histology and immunohistochemistry
 
 The left lung lobe was fixed in 10% neutral buffered formalin, routine processed and embedded in paraffin, sectioned at 5 μm, and subsequently used for histology and immunohistochemistry. To identify mucus producing cells, sections were stained with Periodic Acid-Schiff (PAS) and then counterstained with Harris’ hematoxylin and mounted in DEPEX. Mucus production was scored based on the percentage of mucus secreting airway epithelial cells (AECs) relative to the total number of AECs. A minimum of five airways per sample were quantified. For immunohistochemistry, sections were pre-treated with 10% normal goat serum for 30 min. Sections were then probed with anti-α-SM actin (Sigma-Aldrich, MO, USA) overnight at 4°C. Following incubation with secondary antibody, immunoreactivity was developed with Fast Red (Sigma-Aldrich) and counterstained with Mayer’s haematoxylin. Airway smooth muscle (ASM) was quantified essentially as described previously (Loh et al., 2020). ASM was calculated as area per µm of basement membrane of small airways (defined as circumference <800 µm). Lungs were assessed for vascular changes, bronchitis, interstitial inflammation, alveolar inflammation, pneumocyte hypertrophy, and pleuritis (represented by a total score) by a veterinary pathologist who was blind to the study design. All stained slides were scanned using a digital slide scanner (Scanscope XT, Aperio Technologies, CA, USA) at 200× magnification.
 
-## Cytokine levels
+### Cytokine levels
 
 Cytokine concentrations were assessed using LegendPlex mouse anti-viral panel (Biolegend, CA, USA) according to the manufacturer’s instructions.
 
-## Quantification of influenza virus titres
+### Quantification of influenza virus titres
 
 Mouse lung tissues were collected in Dulbecco’s minimum essential medium (DMEM; Gibco, NY, USA) and homogenised using a Qiagen Tissuelyser II (Qiagen, Hilden, Germany). The homogenate was centrifuged, and the supernatant was collected and stored at −80°C. Cell culture supernatant was collected at indicated time points and stored at −80°C. Viral titres were measured by plaque assay on MDCK cells, as described previously (Short et al., 2011).
 
-## RNA extraction, cDNA synthesis, and polymerase chain reaction (PCR)
+### RNA extraction, cDNA synthesis, and polymerase chain reaction (PCR)
 
 Viral and host RNA was extracted from mouse lung samples, cDNA was synthesised, and real-time PCR was performed as described previously (Hulme et al., 2020). Forward and reverse primers used in the present study are supplied in Supplementary file 1. Gene expression was normalised relative to glyceraldehyde 3-phosphate dehydrogenase (Gapdh) expression and fold change was calculated using the ΔΔCt method (Schmittgen and Livak, 2008). Viral copy number was determined using IAV strain A/Puerto Rico/8/1934 H1N1 (PR8) virus matrix (M) gene cloned into pHW2000 plasmid and viral copy number was determined as described previously (Short et al., 2013).
 
 Viral RNA for sequencing was extracted from mouse lung, and in vitro culture supernatant samples using the High Pure Viral RNA Kit (Roche, Basel, Switzerland) according to the manufacturer’s protocol and eluted in UltraPure DNase/RNase-Free Distilled Water (ThermoFisher Scientific, MA, USA). Viral cDNA was synthesised using the Transcriptor First Strand cDNA Synthesis Kit (Roche) essentially as described previously (Mancera Gracia et al., 2017). Briefly, two reactions were performed per sample, using either 2.5 µM CommonUni12A primer (GCCGGAGCTCTGCAGATATCAGCAAAAGCAGG) or 2.5 µM CommonUni12G primer (GCCGGAGCTCTGCAGATATCAGCGAAAGCAGG). Both reactions were incubated for 10 min at 65°C and cooled immediately on ice. RNA was reverse transcribed using Mastercycler Pro 6325 (Eppendorf, Hamburg, Germany). cDNA was pooled at a 1:1 ratio and amplified using the Phusion High-Fidelity DNA Polymerase kit (New England Biolabs, MA, USA) with 10 µM CommonUni13 primer (GCCGGAGCTCTGCAGATATCAGTAGAAACAAGG). cDNA was amplified using Mastercycler Pro 6325 (Eppendorf). MinElute PCR Purification Kit (Qiagen) was used to purify the PCR products. To elute, unheated UltraPure DNase/RNase-Free distilled water was used instead of elution buffer. The presence of the correct size PCR products was confirmed using a 1% agarose gel containing SYBR Safe DNA Gel Stain (ThermoFisher Scientific) at 100 Volt and visualised by the Amersham Imager 600 (GE Healthcare, IL, USA).
 
-## Next generation sequencing (NGS) for viral genes
+### Next generation sequencing (NGS) for viral genes
 
 Libraries were prepared from viral cDNA amplicons using Nextera XT DNA library prep kit (Illumina, cat no. FC-131–1024) and were deep sequenced (0.5 Gb) on an Illumina Nextseq 2000 Platform at the Australian Centre of Ecogenomics (the University of Queensland, QLD, Australia).
 
-## NGS analysis and Shannon entropy
+### NGS analysis and Shannon entropy
 
 The haplotypes for each sample were reconstructed for each gene segment using a previously published pipeline (Cacciabue et al., 2020). In brief, FastQC (Andrews, 2010) was used for quality assurance of the NGS paired-end raw reads followed by BBtools (Bushnell, 2014), for removing and filtering adapters and low-quality reads. Bowtie2 (Langmead and Salzberg, 2012), an aligner tool to align the trimmed reads to the selected reference of the influenza strain (i.e. the inoculum), was then used. Samtools suite (Li et al., 2009) was used to sort, index, and generate depth and coverage statistics for read alignment files. Next, CliqueSNV (Knyazev, 2020) was used to infer the haplotypes and frequencies for all eight gene segments for each sample.
 
@@ -189,32 +692,36 @@ Multiple dimension scaling (MDS) (LMDS V1.0 – R package) was utilised to visua
 
 All scripts generated for this study can be found at https://github.com/akaraw/Hulme_et_al (Karawita, 2021) and the workflow for haplotype reconstruction can be found in Supplementary file 3.
 
-Within-host alpha diversity was measured using Shannon’s entropy (H):Hx=∑inP(i)ln⁡P(i)
+Within-host alpha diversity was measured using Shannon’s entropy (H):
 
-## Identification of asthma associated mutations of IAV in clinical samples
+$$
+Hx=\suminP(i)ln⁡P(i)
+$$
+
+### Identification of asthma associated mutations of IAV in clinical samples
 
 H1N1 PB1sequences were obtained from the NIAID IRD through the website at http://www.fludb.org. The following settings were used for selecting human surveillance data following the 2009 pandemic: date range ≥2009, subtype H1N1, all countries, all sexes, and age ranges; exclude laboratory strains and duplicate sequences. Only records containing clinical metadata were returned. Using these criteria, a total of 51 human clinical samples with asthma as a medical condition were observed. Fifty-one age and sex matched human clinical samples with no medical conditions were taken for comparison. Samples were aligned using MEGA-X (version 10.1) (Pennsylvania State University, PA, USA) and the presence or absence of the mutations identified in vivo was determined using amino acid position.
 
-## IAV mutagenesis
+### IAV mutagenesis
 
 The PB1-C693Y and PB1-P651Q mutations were independently introduced into the PB1 gene segment of influenza A/Auckland/2009 (H1N1) using the Q5 Site-Directed Mutagenesis Kit (New England BioLabs) as per the manufacturer’s instructions. Mutations were confirmed using the PureYield Plasmid Miniprep System Kit (Promega, WI, USA) as per the manufacturer’s instructions and sequenced at the AEGRC Genotyping and Sequencing Facility at the University of Queensland. DNA was isolated using an EndoFree Plasmid Maxi Kit (Qiagen) as per the manufacturer’s instructions.
 
-## Cell culture
+### Cell culture
 
 Human embryonic kidney 293 with large T antigen (HEK 293T) cells, MDCK cells, adenocarcinomic human alveolar basal epithelial cells (A549 cells), and Immortalized Mouse Mammary Epithelial Cells (iMMEC) were cultured in DMEM (Gibco) containing 10% foetal bovine serum (FBS; Sigma-Aldrich) and 1% penicillin streptomycin (Lonza, Basel, Switzerland) in a humidified atmosphere of 5% CO2 at 37°C. All cell lines were obtained from American Type Culture Collection (ATCC; Virginia, USA) and have no mycoplasma contamination to report.
 
-## In vitro viral replication kinetics
+### In vitro viral replication kinetics
 
 Multicycle viral replication kinetics were determined by inoculating a confluent monolayer of cells with the lung homogenate of infected mice at a multiplicity of infection (MOI) of 0.01 for 1 hr. Cells were then washed with PBS three times and fresh medium (DMEM; Gibco) was added containing TPCK-trypsin (Thermofisher Scientific). At 0, 6, 24, 48, and 72 hr post inoculation, cell culture supernatant was collected and used to determine virus titres, as described above.
 
-## Influenza virus polymerase assay
+### Influenza virus polymerase assay
 
 Reporter plasmids, Fluc (0.25 µg) and pRL (0.01 µg) were co-transfected with expression plasmids encoding the AUCK/09 PA, PB1, PB2, PA, and NP (0.25 µg per plasmid) into HEK 293 T cells seeded on a 24-well plate using the calcium phosphate mediated method (Kwon and Firestein, 2013). Luciferase assays were performed using a dual-specific luciferase assay kit (Promega). A Renilla luciferase reporter vector was used as the internal control. Firefly luciferase activity was normalised to Renilla luciferase activity for each well. Luminescence was measured on a CLARIOstar Plus microplate reader (BMG Labtech, Ortenberg, Germany) in flat 96-white well plates (Corning, Amsterdam, the Netherlands).
 
-## Modelling of the mutations
+### Modelling of the mutations
 
 For K691R and C693Y the crystal structure of the PB1–PB2 subunits from IAV (A/Puerto Rico/8/1934(H1N1)) was used as a model (PDB: 3A1G) (Sugiyama et al., 2009). For P651Q and S654N the structure of the influenza A bat polymerase complex (PDB: 4WSB) was used as a model (Pflug et al., 2014). The effects of conformational stability were estimated using FoldX (version 5) (Schymkowitz et al., 2005) and each mutation was engineered separately. For the FoldX analysis the subroutines RepairPDB, BuildModel, and PrintNetworks were used. Images were created with PyMOL (The PyMOL Molecular Graphics System, Version 2.4.0 Schrödinger, LLC).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using Graph Pad Prism software (version 9.0.1) for Windows (GraphPad Software, CA, USA). Data were tested for normality using the Shapiro–Wilk test. Where data was normally distributed, data was analysed using a two-way ANOVA (with Tukey’s multiple comparison test), a one-way ANOVA (with Tukey’s multiple comparison test), an unpaired Student’s t-test, or a one sample t test as appropriate. Where data was not normally distributed, data was analysed using a Kruskal–Wallis test (with Dunn’s multiple comparisons test), a Mann–Whitney U-test or a Wilcoxon signed-rank test as appropriate. Clinical samples were analysed using a two-sided fisher's exact test.

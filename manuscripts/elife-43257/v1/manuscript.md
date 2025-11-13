@@ -20,15 +20,136 @@
 
 ## Abstract
 
-10.7554/eLife.43257.001 The brain, spinal cord, and retina are supplied by capillaries that do not permit free diffusion of molecules between serum and parenchyma, a property that defines the blood-brain and blood-retina barriers. Exceptions to this pattern are found in circumventricular organs (CVOs), small midline brain structures that are supplied by high permeability capillaries. In the eye and brain, high permeability capillaries are also present in the choriocapillaris, which supplies the retinal pigment epithelium and photoreceptors, and the ciliary body and choroid plexus, the sources of aqueous humor and cerebrospinal fluid, respectively. We show here that (1) endothelial cells in these high permeability vascular systems have very low beta-catenin signaling compared to barrier-competent endothelial cells, and (2) elevating beta-catenin signaling leads to a partial conversion of permeable endothelial cells to a barrier-type state. In one CVO, the area postrema, high permeability is maintained, in part, by local production of Wnt inhibitory factor-1.
+The brain, spinal cord, and retina are supplied by capillaries that do not permit free diffusion of molecules between serum and parenchyma, a property that defines the blood-brain and blood-retina barriers. Exceptions to this pattern are found in circumventricular organs (CVOs), small midline brain structures that are supplied by high permeability capillaries. In the eye and brain, high permeability capillaries are also present in the choriocapillaris, which supplies the retinal pigment epithelium and photoreceptors, and the ciliary body and choroid plexus, the sources of aqueous humor and cerebrospinal fluid, respectively. We show here that (1) endothelial cells in these high permeability vascular systems have very low beta-catenin signaling compared to barrier-competent endothelial cells, and (2) elevating beta-catenin signaling leads to a partial conversion of permeable endothelial cells to a barrier-type state. In one CVO, the area postrema, high permeability is maintained, in part, by local production of Wnt inhibitory factor-1.
 
 ## Introduction
 
 Throughout the body, capillaries exhibit tissue- and organ-specific specializations of structure and function (Aird, 2007a; Aird, 2007b; Potente and Mäkinen, 2017). In the CNS, the blood-brain barrier (BBB) and blood-retina barrier (BRB) are characterized by numerous specializations in vascular endothelial cell (EC) structure and function, including elaboration of tight junctions, suppression of transcytotic pathways, and production of small molecule transporters and extrusion pumps (Daneman and Prat, 2015; Zhao et al., 2015). [See Table 1 for a list of abbreviations used in this paper.] The BBB/BRB program of EC differentiation is controlled, at least in part, by beta-catenin signaling (canonical Wnt signaling) that is activated by ligands Wnt7a, Wnt7b, and Norrin. These ligands are produced by glia and neurons, and they activate receptors and co-receptors on the surface of ECs (Liebner et al., 2008; Stenman et al., 2008; Daneman et al., 2009; Wang et al., 2012; Zhou and Nathans, 2014; Zhou et al., 2014; Posokhova et al., 2015). Signals from pericytes are also important, as pericyte loss leads to a loss of barrier integrity (Armulik et al., 2010; Daneman et al., 2010).
 
+**Table 1.**
+ Abbreviations.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>anterior</td>
+    </tr>
+    <tr>
+      <td>AP</td>
+      <td>area postrema or anterior pituitary</td>
+    </tr>
+    <tr>
+      <td>ATAC</td>
+      <td>assay for transposase-accessible chromatin</td>
+    </tr>
+    <tr>
+      <td>BBB</td>
+      <td>blood-brain barrier</td>
+    </tr>
+    <tr>
+      <td>BRB</td>
+      <td>blood-retina barrier</td>
+    </tr>
+    <tr>
+      <td>CB</td>
+      <td>ciliary body</td>
+    </tr>
+    <tr>
+      <td>CC</td>
+      <td>choriocapillaris</td>
+    </tr>
+    <tr>
+      <td>CNS</td>
+      <td>central nervous system</td>
+    </tr>
+    <tr>
+      <td>CP</td>
+      <td>choroid plexus</td>
+    </tr>
+    <tr>
+      <td>CSF</td>
+      <td>cerebrospinal fluid</td>
+    </tr>
+    <tr>
+      <td>CVO</td>
+      <td>circumventricular organ</td>
+    </tr>
+    <tr>
+      <td>EC</td>
+      <td>vascular endothelial cell</td>
+    </tr>
+    <tr>
+      <td>FACS</td>
+      <td>fluorescent-activated cell sorting</td>
+    </tr>
+    <tr>
+      <td>IP</td>
+      <td>intraperitoneal</td>
+    </tr>
+    <tr>
+      <td>ME</td>
+      <td>median eminence</td>
+    </tr>
+    <tr>
+      <td>PLVAP</td>
+      <td>plasmalemma vesicle associated protein</td>
+    </tr>
+    <tr>
+      <td>PP</td>
+      <td>posterior pituitary</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>posterior</td>
+    </tr>
+    <tr>
+      <td>RPE</td>
+      <td>retinal pigment epithelium</td>
+    </tr>
+    <tr>
+      <td>SFO</td>
+      <td>subfornical organ</td>
+    </tr>
+    <tr>
+      <td>TEM</td>
+      <td>transmission electron microscopy</td>
+    </tr>
+    <tr>
+      <td>VOLT</td>
+      <td>vascular organ of the lamina terminalis</td>
+    </tr>
+    <tr>
+      <td>WIF1</td>
+      <td>Wnt inhibitory factor-1</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>wild type</td>
+    </tr>
+    <tr>
+      <td>4HT</td>
+      <td>4-hydroxytamoxifen</td>
+    </tr>
+  </tbody>
+</table>
+
 Gain-of-function and loss-of-function experiments in mice have demonstrated an ongoing requirement for beta-catenin signaling in CNS ECs to maintain the barrier state (Liebner et al., 2008; Wang et al., 2012). In the mature CNS vasculature, acute loss of Frizzled4 (Fz4), one of the EC receptors for beta-catenin signaling, leads to a cell-autonomous loss of barrier integrity in the retina, cerebellum, and olfactory bulb. Conversely, acute induction of Norrin production in the CNS of an adult Ndp null mouse [Norrie disease protein (Ndp) is the gene coding for Norrin] restores BBB integrity in the cerebellum. Intriguingly, constitutive activation of beta-catenin signaling in ECs in the choroid plexus, the site of cerebrospinal fluid (CSF) production, leads to the cell autonomous expression of a BBB marker [the tight junction protein Claudin5 (CLDN5)] and repression of a marker of non-BBB vasculature [plasmalemma vesicle-associated protein (PLVAP), a structural component of fenestrae (Stan et al., 2004; Zhou et al., 2014)]. These experiments indicate that the BBB state remains plastic throughout life and that beta-catenin signaling in CNS ECs is required on a continuous basis for maintenance of the BBB state.
 
 The mammalian brain contains a set of small midline structures, the circumventricular organs (CVOs), that are unusual in having a dense capillary plexus composed of ECs with high permeability (Figure 1A; Gross, 1992; Duvernoy and Risold, 2007; Kaur and Ling, 2017). CVOs can be divided into two categories, sensory and secretory. The vascular organ of the lamina terminalis (VOLT), the subfornical organ (SFO), and the area postrema comprise the sensory CVOs. The VOLT and SFO monitor serum osmolarity and together regulate blood volume, blood pressure, and electrolyte balance by controlling vasopressin release, which, in turn, controls thirst and renal salt and water retention (Toney et al., 2003; Hiyama et al., 2004; Oka et al., 2015; Hiyama and Noda, 2016). The SFO additionally monitors glucose and other small molecule nutrients and regulates energy homeostasis (Fry and Ferguson, 2007; Medeiros et al., 2012). The area postrema monitors serum composition and controls an emetic response to toxic compounds (Borison, 1989). The posterior pituitary, the median eminence (ME), and the pineal comprise the secretory CVOs and are part of the neuroendocrine system. The posterior pituitary releases oxytocin and vasopressin into the systemic circulation, and the ME is the site of secretion of hypothalamic hormones into the hypophyseal-portal system to control release of the corresponding target hormones from the anterior pituitary (Guillemin, 1978; Schally, 1978; Amar and Weiss, 2003). The pineal releases melatonin to control circadian behavior (Axelrod, 1974).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of a midline sagittal section of the mouse brain indicating the locations of the CVOs (red). A, anterior; P, posterior. (B–D) Coronal sections showing the VOLT (B), ME (C), and SFO (D) from a control mouse (left) and from a mouse with EC-specific deletion of Ctnnb1 exon 3 (right), immunostained as indicated. In control brains (left panels), ECs in the VOLT, ME, and SFO are CLDN5-/PLVAP+/LEF1-. In mice with EC-specific deletion of Ctnnb1 exon 3 (right panels), ECs in the VOLT, ME, and SFO are CLDN5+/PLVAP-/LEF1+ (‘converted ECs’). In both genotypes, ECs in the surrounding brain parenchyma are CLDN5+/PLVAP-/LEF1+. In the bottom 2 rows of images, arrows point to LEF1 in EC nuclei within the VOLT, ME, and SFO with deletion of Ctnnb1 exon 3. Arrowheads point to LEF1 in EC nuclei in the adjacent brain parenchyma, which are unaffected by deletion of Ctnnb1 exon 3. The efficiency of CreER-mediated recombination in ECs is ~80–90%, as judged by the conversion of EC markers. In this and all other figures, the age of the mouse in postnatal days (P) is embedded in the image panels, and the dose of 4-hydroxytamoxifen (4HT) and age at its delivery is indicated next to the genotype. Unless noted otherwise, tissues were fixed by cardiac perfusion of paraformaldehyde in physiologic buffer. Scale bars, 100 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sagittal sections through the SFO from a control mouse (left panels) and from a mouse with EC-specific deletion of Ctnnb1 exon 3 (right panels), immunostained as indicated. In the control SFO (left), ECs are CLDN5-/PLVAP+/GLUT1-. With EC-specific deletion of Ctnnb1 exon 3 (right), ECs in the SFO become CLDN5+/PLVAP-/GLUT1+. In both genotypes, ECs in the surrounding brain parenchyma are CLDN5+/PLVAP-/GLUT1+. The efficiency of CreER-mediated recombination in ECs is ~80–90%, as judged by the conversion of EC markers. VHC is the ventral hippocampal commissure, which binds the CLDN5 antibody. Arrowheads indicate the dorsal and ventral boundaries of the SFO. Arrows point to the choroid plexus. CP, choroid plexus. A, anterior; P, posterior. Scale bar, 100 μm. (B) Whole mount pineal gland from a control mouse (left panels) and from a mouse with Ctnnb1 exon 3 deleted in ECs (right panels), immunostained as indicated. ECs in the control pineal are CLDN5-/PLVAP+/LEF1- and ECs with Ctnnb1 exon 3 deleted are CLDN5+/PLVAP-/LEF1+. Scale bar, 100 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Flatmount of a mosaic P21 Fz4CKO/-;Pdgfb-CreER retina in which ~50% of ECs had recombined the Fz4CKO allele two weeks earlier at P7. WT ECs are CLDN5+/PLVAP- and Fz4-/-ECs are CLDN5-/PLVAP+. Nuclear LEF1 accumulates exclusively in CLDN5+/PLVAP- ECs. Scale bar, 100 μm.
 
 Like the CVOs, the choroid plexus is composed of ECs with high permeability. Although contained within the CNS, the choroid plexus is not generally considered a CVO because the choroid plexus capillaries are not in direct contact with neurons or glia but are instead surrounded by a specialized epithelium, all of which is surrounded by CSF (Johanson et al., 2011). Two regions of the ocular vasculature also contain ECs with high permeability: the choriocapillaris and the ciliary body (Alm, 1992). The choriocapillaris is a flattened monolayer of capillaries adjacent to the retinal pigment epithelium (RPE), and it serves as the vascular supply for both the RPE and the photoreceptors, with the RPE monolayer providing the outer blood-retina barrier (BRB). The ciliary body, at the anterior edge of the retina, is the source of aqueous humor, and is therefore analogous in its function to the choroid plexus. The extent to which these specialized vascular beds in the brain and eye (the CVOs, choroid plexus, ciliary body, and choriocapillaris) share molecular properties is largely unexplored.
 
@@ -36,13 +157,49 @@ The foregoing summary suggests the possibility that the distinction between the 
 
 ## Results
 
-## Reduced beta-catenin signaling in CVO ECs
+### Reduced beta-catenin signaling in CVO ECs
 
 The CVO and choroid plexus vasculatures are readily visualized in the wild type (WT) mouse brain by immunostaining for PLVAP, which is abundant in the VOLT, ME, SFO, area postrema, pineal, anterior pituitary, posterior pituitary, and choroid plexus vasculatures but absent from the adjacent BBB-type CNS vasculature (left panels in each panel set in Figures 1, 2 and 3A–D”, and Figure 1—figure supplement 1). The BBB markers CLDN5 and the glucose transporter GLUT1 show the reciprocal pattern of accumulation. In our analyses, we have included the anterior pituitary, a peripheral neuroendocrine organ, as a point of comparison with the posterior pituitary and other CVOs.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig2-v1.jpg)
+
+**Figure 2.:** (A,B) Coronal sections showing the area postrema (A; demarcated by white dots and abbreviated AP) and choroid plexus (B; abbreviated CP) from a control mouse (left panels) and from a mouse with EC-specific deletion of Ctnnb1 exon 3 (right panels), immunostained as indicated. In the area postrema and choroid plexus, ECs in the control are CLDN5-/PLVAP+/LEF1-, and ECs with deletion of Ctnnb1 exon 3 are CLDN5+/PLVAP-/LEF1+. ECs in the surrounding brain parenchyma are CLDN5+/PLVAP-/LEF1+. In the right panels of the bottom 2 rows of images, arrows point to LEF1 in EC nuclei within the area postrema and choroid plexus with deletion of Ctnnb1 exon 3. Arrowheads in the bottom 2 rows of images point to LEF1 in EC nuclei in the adjacent brain parenchyma, which are unaffected by deletion of Ctnnb1 exon 3. The efficiency of CreER-mediated recombination in ECs is >90% in the area postrema and ~80–90% in the choroid plexus, as judged by the conversion of EC markers. Scale bars, 100 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Sagittal sections through the area postrema from a WT control mouse (left panels) and from a mouse with EC-specific deletion of Ctnnb1 exon 3 (right panels), immunostained as indicated. Vimentin is enriched in area postrema glia and together with the higher cell density (marked by DAPI staining) serves to distinguish the area postrema from surrounding neural tissue. In the control area postrema (left panels), ECs are MDR1-/PLVAP+. With EC-specific deletion of Ctnnb1 exon 3 (right panels), ECs in the area postrema become MDR1+/PLVAP-. In both genotypes, ECs in the surrounding brain parenchyma are MDR1+/PLVAP-. The efficiency of CreER-mediated recombination in ECs is ~90%, as judged by the conversion of EC markers. A, anterior. P, posterior. AP, area postrema. Scale bar, 200 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Sagittal sections through the SFO and adjacent choroid plexus from a WT control mouse (left panels) and from a mouse with EC-specific deletion of Ctnnb1 exon 3 (right panels), immunostained as indicated. Vimentin is enriched in SFO glia and together with the higher cell density (marked by DAPI staining) serves to distinguish the SFO from surrounding neural tissue. In the control SFO (left panels), ECs are ZO1-/PLVAP+. With EC-specific deletion of Ctnnb1 exon 3 (right panels), ECs in the SFO and choroid plexus become ZO1+/PLVAP-. In both genotypes, ECs in the surrounding brain parenchyma are ZO1+/PLVAP-. T he efficiency of CreER-mediated recombination in ECs is ~90%, as judged by the conversion of EC markers. The region demarcated by the squares labeled a-b’ are enlarged at the bottom. Tissues were fixed by methanol perfusion. A, anterior. P, posterior. Scale bar for A-B’, 200 μm. Scale bar for insets a-b’, 50 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Sagittal sections from a control mouse (left panels) and from a mouse with EC-specific deletion of Ctnnb1 exon 3 (right panels), immunostained as indicated. Both mice carry the R26-8xTCF/LEF-LSL-H2B-GFP canonical Wnt reporter, which is accessible for induction in ECs based on excision of the LSL cassette by Pdgfb-CreER. The H2B-GFP reporter is visualized by immunostaining for a 6xmyc epitope tag appended to GFP (arrows). In both genotypes, H2B-GFP accumulates in the nuclei of the adjacent conventional CNS ECs (arrowheads). White dots outline the area postrema (AP). A, anterior. P, posterior. Scale bar, 100 μm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Flatmounted retinas with EC-specific Cre recombination were stained with GS lectin to visualize ECs and macrophages, and immunostained with anti-myc antibodies for H2B-GFP-6xmyc. In developing retinas [P6-P8]; panels (A), (B), (D), and (E), the LSL cassette has been removed in all ECs using Tie2-Cre. ECs in R26-8xTCF/LEF-LSL-H2B-GFP;NdpKO;Tie2-Cre (A) and R26-8xTCF/LEF-LSL-H2B-GFP;Fz4CKO/-;Tie2-Cre (B) retinas have little or no beta-catenin signaling and show a nearly complete loss of expression of the nuclear-localized H2B-GFP reporter. [Ndp is X-linked, and ‘NdpKO’ refers to both male Ndp-/Y males and Ndp-/-females.] Littermate controls were heterozygous for Ndp or Fz4 (D, E) and show reporter expression at approximately WT levels. In mature retinas [P21]; panels (C) and (F), the LSL cassette was removed in nearly all ECs using Pdgfb-CreER and 200 ug 4HT at P4. ECs in the R26-8xTCF/LEF-LSL-H2B-GFP;Ctnnb1flex3/+;Pdgfb-CreER retina (C) have high levels of beta-catenin signaling and show a higher level of accumulation of the nuclear-localized H2B-GFP reporter compared to the 8xTCF/LEF-LSL-H2B-GFP;Pdgfb-CreER control retina (F) that lacks Ctnnb1flex3. Paired experimental and control retinas were processed in parallel and imaged with identical microscope settings, and the resulting images were processed identically. Scale bar, 200 μm.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig3-v1.jpg)
+
+**Figure 3.:** (A–D”) Regions of whole-mount pituitaries spanning the junction of the anterior lobe (left), inter-lobe region (middle), and posterior lobe (right) from two control mice (left set of panels) and from two mice with EC-specific deletion of Ctnnb1 exon 3 (right set of panels), immunostained as indicated. With EC-specific deletion of Ctnnb1 exon 3, ECs in the posterior pituitary become CLDN5+/PLVAP-/GLUT1+/LEF1+, whereas anterior pituitary ECs show low levels of CLDN5, a modest reduction in the level of PLVAP, a level of GLUT1 that is below the limit of detection, and rare LEF1+ ECs. In the genetically mosaic Ctnnb1flex3/+;Pdgfb-CreER posterior pituitary vasculature, PLVAP is anti-correlated with CLDN5, LEF1, and GLUT1 on a cell-by-cell basis (B–B” and D–D”). GLUT1 and LEF1 are shown with different colors in B’ and D’ to highlight their co-localization with CLDN5 and their anti-correlation with PLVAP in the posterior pituitary. (E,F) As in A-D’, except images are entirely within the posterior lobe and the pituitaries were immunostained for PLVAP, CLDN5, and either MDR1 or OCLN. In the right-most panels, PLVAP is false-colored green for ease of comparison. The efficiency of CreER-mediated recombination in ECs is ~80%, as judged by the conversion of EC markers. AP, anterior pituitary. PP, posterior pituitary. Scale bar for A-F, 100 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A,B) CLDN5 staining of WT retina, at two Z-planes, and shown at the same magnification as panels C’, D’, and E’. CLDN5 localizes to the periphery of each EC, at the sites of tight junctions. (C–E) Posterior pituitary with mosaic EC-specific stabilization of beta-catenin, stained for PLVAP and CLDN5 (C) or PLVAP, CLDN5, and OCLN (D and E), at low magnification. Panels D-E’ are from the same image; in panels E and E’, the PLVAP signal has been false-colored green. (C’, D’, and E’) Higher magnification images of the regions indicated by the white squares in (C–E). Tissues shown in D-E’ were fixed by methanol perfusion. Scale bar in C, D, and E, 200 μm. Scale bars for A and B, and for C’, D’, and E’, 50 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A,B) Whole mount of the intact pituitary from a control mouse (A) and from a mouse with EC-specific deletion of Ctnnb1 exon 3 (B), immunostained for PLVAP and GLUT1. In (B), the boxed region encompassing part of the posterior lobe is enlarged at the upper right. (C–D’) Whole mount of the intact pituitary from a control mouse (C and C’) and from a mouse with EC-specific deletion of Ctnnb1 exon 3 (D and D’), immunostained for CLDN5, MFSD2A, and PLVAP. In the posterior pituitary, CLDN5-/MFSD2A-/PLVAP+ ECs are converted to CLDN5+/MFSD2A+/PLVAP- by EC-specific deletion of Ctnnb1 exon 3. In anterior pituitary ECs with deletion of Ctnnb1 exon 3, PLVAP levels decline less than in the posterior pituitary, CLDN5 levels increase less than in the posterior pituitary, and MFSD2A remains below the limit of detection. In (A–D’), the efficiency of CreER-mediated recombination in ECs is ~60–80%, as judged by the conversion of EC markers. Scale bars for all panels, 200 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A,B) The R26-LSL-tdTomato-2A-H2B-GFP reporter is efficiently activated by Pdgfb-CreER-mediated recombination, as seen by the accumulation of membrane-tethered tdTomato and nuclear H2B-GFP in both anterior and posterior pituitary ECs. In (A), the ECs are phenotypically WT. In (B), the mouse carries R26-LSL-tdTomato-2A-H2B-GFP, Ctnnb1flex3, and Pdgfb-CreER, and the resulting stabilization of beta-catenin leads to an accumulation of LEF1 in the nuclei of posterior pituitary ECs more than anterior pituitary ECs. The efficiency of CreER-mediated recombination in ECs is similar in (A) and (B), as judged by the conversion of EC markers. Scale bars, 500 μm.
+
 LEF1, a member of the TCF/LEF transcription factor family that binds to beta-catenin to mediate the canonical Wnt response (Eastman and Grosschedl, 1999), accumulates in some cell types, including CNS ECs, in response to beta-catenin signaling (Planutiene et al., 2011). This phenomenon is demonstrated in Figure 1—figure supplement 2, where Fz4CKO/-;Pdgfb-CreER mice that are mosaic for EC-specific loss of Fz4 show nuclear accumulation of LEF1 in phenotypically WT Fz4+/- retinal ECs (CLDN5+/PLVAP- cells) but show no detectable LEF1 in adjacent Fz4-/-retinal ECs (CLDN5-/PLVAP+ cells). To assess the level of beta-catenin signaling in the CVO and choroid plexus vasculatures in the WT adult mouse brain, we visualized CLDN5, PLVAP, and LEF1 in the CVO and choroid plexus vasculatures (left panels in each panel set in Figures 1, 2 and 3A–D”). In the VOLT, ME, SFO, area postrema, and choroid plexus, the non-BBB (CLDN5-/PLVAP+) ECs lack detectable LEF1, whereas in the surrounding CNS tissue BBB+ (CLDN5+/PLVAP-) ECs show strong nuclear accumulation of LEF1 (arrowheads in the left panels in each panel set in Figures 1 and 2). Similarly, the WT pineal and posterior pituitary lack detectable nuclear LEF1 accumulation (left panels of Figure 1—figure supplement 1B and Figure 3C’ and C”). This differential distribution of LEF1 suggests that beta-catenin signaling is high in BBB+ ECs and low in CVO and choroid plexus ECs.
 
-## The effect of activating beta-catenin signaling in CVO ECs
+### The effect of activating beta-catenin signaling in CVO ECs
 
 We next asked whether expressing a stabilized derivative of beta-catenin specifically in ECs – and thereby artificially activating beta-catenin signaling – could shift the properties of the CVO vasculature to a more BBB-like state. In these experiments, exon 3 of the beta-catenin gene (Ctnnb1), which encompasses the sites of phosphorylation that lead to beta-catenin degradation, was excised from one Ctnnb1 allele by Cre-mediated recombination in CNS ECs using a Pdgfb-CreER transgene (Harada et al., 1999); the allele with loxP sites flanking exon three is referred to as Ctnnb1flex3). As seen in the right panels in each panel set in Figures 1, 2 and 3A–D” and Figure 1—figure supplement 1, for ECs in each of the six CVOs and in the choroid plexus, beta-catenin stabilization leads to the loss of PLVAP and the accumulation of plasma membrane CLDN5 and nuclear LEF1 (arrows in Figures 1 and 2 point to LEF1+ EC nuclei). In the posterior pituitary shown in Figure 3, excision of Ctnnb1 exon three occurred in ~80% of ECs, permitting a side-by-side comparison of individual ECs with or without constitutively activated beta-catenin signaling. Among ECs, CLDN5, GLUT1, and LEF1 are co-expressed and are anti-correlated with expression of PLVAP (Figures 1–3 and Figure 1—figure supplement 1; GLUT1 immunostaining is shown for only a subset of the CVOs). In those CVO ECs that exhibit a phenotypic response to beta-catenin stabilization, the change in gene expression appears to occur in an all-or-none fashion, converting a CLDN5-/PLVAP+/LEF1- state to a CLDN5+/PLVAP-/LEF+ state, with very few cells showing partial conversion.
 
@@ -52,13 +209,13 @@ Consistent with the accumulation of LEF1 in CVO ECs in response to beta-catenin 
 
 In the experiments in Figure 2—figure supplement 3, the EC specificity of the R26-8xTCF/LEF-LSL-H2B-GFP reporter results from the EC-specific excision of the LSL transcription stop cassette by Pdgfb-CreER. In Figure 2—figure supplement 4, the sensitivity and specificity of the R26-8xTCF/LEF-LSL-H2B-GFP reporter within CNS ECs is further validated by (1) the strong reduction in H2B-GFP accumulation in NdpKO retinas [compare Figure 2—figure supplement 4, panel (A) vs. panel (D)] and in EC-specific Fz4 KO retinas [compare Figure 2—figure supplement 4, panel (B) vs. panel (E)], and (2) the elevation in H2B-GFP levels in retinal ECs in a mouse with EC-specific beta-catenin stabilization compared to control retinas [compare Figure 2—figure supplement 4, panel (C) vs. panel (F)].
 
-## Distinct responses of anterior and posterior pituitary ECs to beta-catenin stabilization
+### Distinct responses of anterior and posterior pituitary ECs to beta-catenin stabilization
 
 In WT mice, anterior pituitary ECs, like posterior pituitary ECs, express PLVAP and repress CLDN5, GLUT1, LEF1, MDR1, OCLN, and the CNS EC-specific docosahexaenoic acid transporter MFSD2A (Ben-Zvi et al., 2014; Nguyen et al., 2014; left panels of Figure 3 and Figure 3—figure supplement 2). In response to beta-catenin stabilization, posterior pituitary ECs repressed PLVAP and activated CLDN5, GLUT1, MFSDA, and LEF1. By contrast, anterior pituitary ECs showed a more modest reduction in the level of PLVAP and a more modest increase in CLDN5 expression, and the levels of GLUT1, MFSD2A, and LEF1 remained below the limits of detection (right panels of Figure 3 and Figure 3—figure supplement 2). This differential response does not reflect differential activity of the Pdgfb-CreER driver in anterior vs. posterior pituitary ECs, as Pdgfb-CreER drives highly efficient recombination of a Cre-reporter (R26-LSL-tdTomato-2A-H2B-GFP) in ECs in both the anterior and posterior divisions of the pituitary with or without beta-catenin stabilization (Figure 3—figure supplement 3).
 
 The contrasting responses of anterior vs. posterior pituitary ECs to beta-catenin stabilization could reflect the different embryonic origins of these two neuroendocrine tissues. The posterior pituitary is derived from the neural tube and is embryologically part of the CNS, whereas the anterior pituitary is derived from Rathke’s pouch and is therefore a derivative of non-neural epithelium. As described below in connection with Figures 6–9, we address this issue with an analysis of the full transcriptomes of anterior and posterior pituitary ECs, with and without beta-catenin stabilization.
 
-## Response of specialized ocular vasculatures to beta-catenin stabilization
+### Response of specialized ocular vasculatures to beta-catenin stabilization
 
 As noted in the Introduction, the ECs of the choriocapillaris and the ciliary body are highly permeable. Immunolocalization of CLDN5, PLVAP, and GLUT1 in sections of whole eyes shows that WT ciliary body ECs are CLDN5-/PLVAP+ (Figure 4A and A’). The epithelial cells that surround the ciliary body capillaries are GLUT1+. In contrast, ECs in the retinal vasculature are CLDN5+/PLVAP-, with weak expression of GLUT1 (Figure 4C and C’), consistent with their role in the BRB. The ECs that comprise the choriocapillaris are CLDN5-/PLVAP+, and the immediately adjacent RPE expresses GLUT1 at high levels (Figure 4C,C’ and C”). These observations are consistent with the current picture of choriocapillaris and RPE cooperation, in which small molecules, such as glucose, can freely permeate the highly fenestrated choriocapillaris but must be actively transported across the RPE to gain access to the retina (Alm, 1992).
 
@@ -70,7 +227,7 @@ Beta-catenin stabilization in ECs leads to a phenotypic conversion of ciliary bo
 
 Taken together, these observations imply that the EC gene expression program governing capillary permeability within the ciliary body and choriocapillaris can be regulated by beta-catenin signaling in a manner analogous to the regulation described above for CVOs and the choroid plexus. In all of these vasculatures, mature ECs retain substantial plasticity with respect to this gene expression program, so that an acute increase in beta-catenin signaling can suppress one set of markers (e.g. PLVAP) and induce another set (e.g. CLDN5). There are also differences among capillary beds in the responses of individual BBB/BRB markers to beta-catenin stabilization. For example, beta-catenin stabilization induces GLUT1 in posterior pituitary ECs but not in choriocapillaris ECs.
 
-## Ultrastructural and permeability effects of beta-catenin stabilization in brain and ocular ECs
+### Ultrastructural and permeability effects of beta-catenin stabilization in brain and ocular ECs
 
 The most obvious ultrastructural distinction between permeable and non-permeable CNS ECs is the presence of fenestrae in permeable ECs and their absence on non-permeable ECs. In transmission electron microscope (TEM) images, each CVO fenestra has a single diaphragm that spans the trans-cellular opening and that appears as a thin line of up to ~60 nm in length (Stan et al., 2012). In cross-sections, fenestrae typically appear in groups of ~5 to ~20, and in freeze-fracture (i.e. en face) images they typically appear in groups of ~50 to ~100 with relatively uniform center-to-center spacing (Maul, 1971). Fenestrae are associated with regions where the EC component of the capillary wall is extremely thin, with EC luminal and basal plasma membranes separated by ~100 nm. In contrast, the EC component of the capillary wall in non-fenestrated CNS capillaries is typically several hundred nm in thickness. PLVAP has been identified as the major (and perhaps the only) structural protein that comprises the fenestral diaphragm (Stan et al., 2004), and therefore its presence in permeable ECs and its absence from non-permeable CNS ECs correlates with the presence and absence of fenestrae, respectively.
 
@@ -78,17 +235,33 @@ To assess the effect of beta-catenin signaling at the ultrastructural level, the
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig5-v1.jpg)
 
-**Figure 5.:** (A–F) Transmission electron micrographs from control mice (left) and from age-matched mice with EC-specific deletion of Ctnnb1 exon 3 (right) showing representative sections of choriocapillaris (A,B), posterior pituitary (C,D), and choroid plexus (E,F). RPE, retinal pigment epithelium. Vertical arrows mark fenestrae. Neurohormone secretory granules are seen in the posterior pituitary parenchyma. Scale bar, 500 nm. (G) Quantification of the density of capillary EC fenestrae in age-matched and 4HT-treated control (Ctnnb1) vs. flex3/+Ctnnb1 exon 3 stabilized (Ctnnb1) mice for the choriocapillaris, posterior pituitary, choroid plexus, and ciliary body. Each data-point represents all of the vascular wall length within a single 10 μm x 10 μm TEM image. Bars show mean ± S.D. Each cluster of data points represents a different mouse. For each location and genotype, 3–5 mice were analyzed. For each of the four anatomic locations, the p-values are calculated for all of the flex3/+;Pdgfb-CreERCtnnb1vs. all of the flex3/+Ctnnb1 data-points. (flex3/+;Pdgfb-CreERH,I) Sagittal brain sections show vascular markers GLUT1 and PLVAP and perivascular accumulation of Sulfo-NHS-biotin (following IP injection) in the SFO and adjacent choroid plexus (H) and in the area postrema and adjacent choroid plexus (I) from ~P30 WT vs. Ctnnb1 mice. AP, area postrema; CP, choroid plexus. A, anterior; P, posterior. Scale bars in (flex3/+;Pdgfb-CreERH) and (I), 200 μm.
+**Figure 5.:** (A–F) Transmission electron micrographs from control mice (left) and from age-matched mice with EC-specific deletion of Ctnnb1 exon 3 (right) showing representative sections of choriocapillaris (A,B), posterior pituitary (C,D), and choroid plexus (E,F). RPE, retinal pigment epithelium. Vertical arrows mark fenestrae. Neurohormone secretory granules are seen in the posterior pituitary parenchyma. Scale bar, 500 nm. (G) Quantification of the density of capillary EC fenestrae in age-matched and 4HT-treated control (Ctnnb1flex3/+) vs. Ctnnb1 exon 3 stabilized (Ctnnb1flex3/+;Pdgfb-CreER) mice for the choriocapillaris, posterior pituitary, choroid plexus, and ciliary body. Each data-point represents all of the vascular wall length within a single 10 μm x 10 μm TEM image. Bars show mean ± S.D. Each cluster of data points represents a different mouse. For each location and genotype, 3–5 mice were analyzed. For each of the four anatomic locations, the p-values are calculated for all of the Ctnnb1flex3/+vs. all of the Ctnnb1flex3/+;Pdgfb-CreER data-points. (H,I) Sagittal brain sections show vascular markers GLUT1 and PLVAP and perivascular accumulation of Sulfo-NHS-biotin (following IP injection) in the SFO and adjacent choroid plexus (H) and in the area postrema and adjacent choroid plexus (I) from ~P30 WT vs. Ctnnb1flex3/+;Pdgfb-CreER mice. AP, area postrema; CP, choroid plexus. A, anterior; P, posterior. Scale bars in (H) and (I), 200 μm.
 
 To assess the effect of beta-catenin signaling on vascular permeability in the CVOs, Sulfo-N-hydroxysuccinimide (NHS)-biotin, a low molecular weight tracer that reacts covalently with free amines, was introduced into the intravascular space by intraperitoneal (IP) injection ten minutes prior to intracardiac perfusion in age-matched WT and Ctnnbl1flex3/+;Pdgfb-CreER mice. Covalently immobilized Sulfo-NHS-biotin accumulation was subsequently visualized with fluorescent Streptavidin. Beta-catenin stabilization in Ctnnbl1flex3/+;Pdgfb-CreER mice resulted in the expected conversion of most of the CVO and CP ECs from a GLUT1-/PLVAP+ state to a GLUT+/PLVAP- state, and this conversion was accompanied by a dramatic reduction in the amount of perivascular Sulfo-NHS-biotin in the area postrema and SFO, with a more modest reduction in the choroid plexus (Figure 5H and I).
 
 In summary, these analyses show that activation of beta-catenin signaling in ECs leads not only to alterations in the expression of molecular markers, but also to the morphologic conversion of ECs from a fenestrated to a non-fenestrated phenotype together with a reduction in vascular permeability.
 
-## EC transcriptomes with and without beta-catenin stabilization
+### EC transcriptomes with and without beta-catenin stabilization
 
 To obtain a genome-wide view of transcripts and chromatin accessibility associated with activation of beta-catenin signaling in high permeability CNS vascular beds, we applied RNA-seq and Assay for Transposase-Accessible Chromatin (ATAC)-seq (Buenrostro et al., 2013) to FACS-purified ECs from the cerebellum, the anterior pituitary, and the posterior pituitary of phenotypically WT Tie2-GFP (the Tie2 gene is also known as Tek) adult mice and EC-specific beta-catenin stabilized Ctnnbl1flex3/+;Pdgfb-CreER;Tie2-GFP adult mice. The cerebellum serves here as a representative example of BBB+ CNS, the posterior pituitary as a representative CVO, and the anterior pituitary as a non-CNS tissue with highly permeable vasculature. We chose the pituitary over other CVOs for three reasons: (1) unlike other CVOs that are embedded within the brain, the pituitary protrudes from the brain and can be dissected free from other tissues; (2) the anterior and posterior lobes of the pituitary can be cleanly separated from one another; and (3) the vascular beds of the anterior and posterior pituitary exhibit different responses to beta-catenin stabilization, as detailed above.
 
 In both anterior and posterior pituitary ECs, genome browser images show that beta-catenin stabilization results in: (1) increased expression of genes that are normally expressed in cerebellum ECs but not in pituitary ECs (e.g. Slc35f2, Axin2, Mfsd2a, and Slc2a1), with greater induction of these genes in posterior pituitary ECs compared to anterior pituitary ECs, and (2) increased chromatin accessibility in genomic regions that are normally accessible in cerebellum ECs but not in pituitary ECs (compare tracks labeled WT vs. Bcat in Figure 6A and Figure 6—figure supplement 1; chromatin regions of interest are highlighted in pale orange). Figure 6—figure supplement 1 shows the high reproducibility of independent replicate samples. As seen in Figure 6A, Figure 6—figure supplement 1, and in the figures that follow, a consistent feature of BBB transcript levels and ATAC peak areas in beta-catenin stabilized pituitary ECs is that, even when induced, the majority are substantially lower than their counterparts in cerebellar ECs.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig6-v1.jpg)
+
+**Figure 6.:** (A) Genome browser images showing accessible chromatin (ATAC; top) and transcript abundances (RNA; bottom) for two BBB genes: Slc35f2, which codes for a putative nucleoside transporter, and Axin2, a Wnt target gene and a negative regulator of Wnt signaling. Histograms show aligned read counts. C, cerebellum; AP, anterior pituitary; PP, posterior pituitary; WT, wild-type; Bcat, beta-catenin stabilized (i.e. Ctnnb1 exon 3 deleted). Each track represents the average of two independent replicates. The orange regions highlight accessible chromatin that changes with beta-catenin stabilization. For each gene, all six of the ATAC-seq histograms are at the same vertical scale [Slc35f2 ATAC: 0–2000 reads; Axin2 ATAC: 0–3000 reads] and all six of the RNA-seq histograms are at the same vertical scale [Slc35f2 RNA: 0–5251 reads; Axin2 RNA: 0–3379 reads]. For both genes, some of the ATAC-seq and RNA-seq signals extend beyond the vertical range in the images. Bottom, intron-exon structure, with the arrow indicating the promoter and the direction of transcription. Arrows within the browser images point to examples of ATAC-seq or RNA-seq signals that are induced by beta-catenin stabilization. (B) Expression levels (log2 transformed TPM + 1) based on RNA-seq for the indicated categories of EC transcripts. Data for the two independent replicates are shown.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Genome browser images showing accessible chromatin (top) and RNA expression (bottom) for two BBB genes: Mfsd2a (encoding a docosahexaenoic acid transporter), and Slc2a1 (encoding GLUT1). The genome browser images and abbreviations are as described for Figure 6, except that each track in the present figure represents a single biological replicate, rather than the average of the two replicates. R1, replicate 1; R2, replicate 2. The orange regions highlight accessible chromatin that changes with beta-catenin stabilization. For each gene, all 12 of the ATAC-seq histograms are at the same vertical scale [Mfsd2a ATAC: 0–3000 reads; Slc2a1 ATAC: 0–3000 reads] and all 12 of the RNA-seq histograms are at the same vertical scale [Mfsd2a RNA: 0–7582 reads; Slc2a1 RNA: 0–84913 reads]. For both genes, some of the ATAC-seq and RNA-seq signals extend beyond the vertical range in the images. Arrows within the browser images point to examples of ATAC-seq or RNA signals that are induced by beta-catenin stabilization.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Tight junction proteins are divided into two groups: general (top) and BBB-enriched (bottom). Lsr, Ocln, and Cldn5 transcripts show the greatest increase in abundance in the posterior pituitary upon beta-catenin stabilization, with more modest levels of induction in the anterior pituitary. Tjp1 transcripts code for ZO1 and their abundance changes minimally, if at all, upon beta-catenin stabilization. Red labels indicate transcripts that are significantly up-regulated in anterior and/or posterior pituitary ECs in response to beta-catenin stabilization. AP, anterior pituitary; PP, posterior pituitary; C, cerebellum.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** TFs are divided into two groups: pan-EC (top) and BBB-enriched (bottom). Red labels indicate transcripts that are significantly up-regulated in anterior and/or posterior pituitary ECs in response to beta-catenin stabilization. AP, anterior pituitary; PP, posterior pituitary; C, cerebellum.
 
 WT cerebellum ECs, anterior pituitary ECs, and posterior pituitary ECs exhibited similar abundances of generic EC transcripts; for this group of transcripts, the principal effect of beta-catenin stabilization was a modest reduction in abundance in posterior pituitary ECs [Figure 6B, top row, ‘General vascular EC transcripts’; RNA read counts are shown as transcripts per million (TPM)]. 224 transcripts were enriched in WT cerebellum ECs compared to WT anterior pituitary and WT posterior pituitary ECs (Supplementary file 1; here and elsewhere, the cut-off for ‘enrichment’ is 2-fold, unless stated otherwise). We will refer to these as ‘cerebellar BBB transcripts’. Among these 224 cerebellar BBB transcripts, 31% and 45% increased in abundance >2 fold upon beta-catenin stabilization in anterior and posterior pituitary ECs, respectively, compared to the corresponding WT pituitary EC controls (Supplementary file 1). In the second and third rows of Figure 6B, TPM are plotted for twelve of these transcripts; six were previously shown to be enriched both in ECs compared to non-ECs and in CNS compared to non-CNS ECs [(Sabbagh et al., 2018); second row, ‘Cerebellum EC transcripts’] and six are known Wnt-responsive transcripts that are also enriched in CNS compared to non-CNS ECs [(Sabbagh et al., 2018); third row, ‘Regulators of Wnt signaling’]. For genes in these two categories, the level of expression with beta-catenin stabilization is, on average, several-fold greater in posterior pituitary ECs than in anterior pituitary ECs.
 
@@ -96,9 +269,21 @@ WT cerebellum ECs, anterior pituitary ECs, and posterior pituitary ECs exhibited
 
 Among transcripts coding for tight junction proteins in posterior pituitary ECs, those coding for CLDN5 and OCLN increase in abundance upon beta-catenin stabilization, as do Lsr transcripts (coding for the tricellular tight junction protein LSR), but Tjp1 transcripts (coding for ZO1) show a more modest response, and seven transcripts coding for tight junction proteins that are not specifically associated with BBB ECs show no significant changes (Figure 6—figure supplement 2). Among transcripts coding for transcription factors (TFs) that are specifically enriched in cerebellar ECs, only 7/14 were induced by beta-catenin stabilization (red labels in Figure 6—figure supplement 3). For Foxq1 transcripts induction is greater in the posterior pituitary than in the anterior pituitary, whereas for Etv6 transcripts induction is greater in the anterior pituitary than in the posterior pituitary. Transcripts coding for pan-EC TFs show a modest decline in abundance in both anterior and posterior pituitary upon beta-catenin stabilization.
 
-## Genome-wide analyses of EC transcriptomes
+### Genome-wide analyses of EC transcriptomes
 
 To globally visualize differences in gene expression, we generated scatter plots of cross-sample normalized RNA-seq read counts for the set of 2479 transcripts in the six EC samples that showed >2 fold enrichment compared to their surrounding non-EC (GFP-negative) parenchymal cells, which were also FACS-purified and characterized by RNA-seq; we refer to this set as ‘EC-enriched’. Figure 7A highlights, by color, the subsets of these transcripts that were enriched >2 fold in WT cerebellum ECs vs. WT anterior pituitary ECs (left), WT cerebellum ECs vs. WT posterior pituitary ECs (center), and WT anterior pituitary ECs vs. WT posterior pituitary ECs (right). [To assist the reader in following the trends of abundance changes for BBB-associated transcripts, seven of these transcripts are highlighted and labeled in each of the scatterplots in Figure 7.] Consistent with immunostaining (Figure 3 and Figure 3—figure supplements 1 and 2) and genome browser images (Figure 6A and Figure 6—figure supplement 1), beta-catenin stabilization induces the cerebellar BBB gene expression program more strongly in posterior pituitary ECs compared to anterior pituitary ECs, and this is reflected in the tighter clustering of the colored data points along the 45-degree line in the plots of WT cerebellum ECs vs. beta-catenin stabilized posterior pituitary ECs compared with the plots of WT cerebellum ECs vs. beta-catenin stabilized anterior pituitary ECs (Figure 7B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig7-v1.jpg)
+
+**Figure 7.:** (A) Scatter plots comparing cross-sample normalized RNA-seq read counts of EC-enriched protein-coding genes from cerebellum ECs vs. anterior pituitary (AP) ECs, cerebellum ECs vs. posterior pituitary (PP) ECs, and anterior pituitary ECs vs. posterior pituitary ECs. Values depicted are the log2 transformation of cross-sample normalized RNA-seq read counts + 1. Colored symbols indicate transcripts with false discovery rate (FDR) < 0.05 and enrichment >2 fold for the indicated comparisons. The same set of seven BBB-associated transcripts are labeled in each scatterplot and their associated datapoints are enclosed by black circles. All data in this figure are averages of two independent samples. (B) Scatter plots comparing cross-sample normalized RNA-seq read counts of EC-enriched protein-coding genes from WT cerebellum ECs vs. beta-catenin stabilized anterior pituitary ECs, posterior pituitary ECs, and cerebellum ECs. Colored symbols are as defined in (A). (C) Scatter plots comparing cross-sample normalized RNA-seq read counts of EC-enriched protein-coding genes between genotypes for anterior pituitary ECs and posterior pituitary ECs. Vertical arrows in (B) and (C) indicate multiple data points that change upon beta-catenin stabilization. (D) Principal component analysis of all WT EC-enriched transcripts from cerebellum ECs, anterior pituitary ECs, and posterior pituitary ECs. The two symbols for each sample represent biological replicates. Most of the variance is explained by PC1 which separates the samples by tissue of origin. Arrows indicate changes upon beta-catenin stabilization. (E) Heatmap indicating pairwise Pearson correlations for RNA-seq TPM among WT and beta-catenin-stabilized ECs for tissue-specific EC protein-coding genes. Data are shown for the individual replicates. AP, anterior pituitary; PP, posterior pituitary.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A,B) Scatter plots comparing cross-sample normalized RNA-seq read counts of EC-enriched protein-coding genes from cortex vs. choroid plexus. Values depicted are the log2 transformation of cross-sample normalized RNA-seq read counts + 1. Colored symbols indicate transcripts with FDR < 0.05 and enrichment >2 fold for the indicated comparisons. All data in this figure are from single replicates. R1, replicate 1, R2, replicate 2. Data points highlighted in (A) are derived from R1 and data points highlighted in (B) are derived from R2, as defined at the top of the figure.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Scatter plots comparing cross-sample normalized RNA-seq read counts of EC-enriched protein-coding genes from cerebral cortex ECs vs. choroid plexus ECs. Values depicted are the log2 transformation of cross-sample normalized RNA-seq read counts + 1. Colored symbols indicate transcripts with FDR < 0.05 and enrichment >2 fold for the indicated comparisons. RiboTag data are averages of two independent samples. (B) Scatter plots comparing fold-change (beta-catenin stabilized/WT) for EC-enriched protein-coding genes in posterior pituitary and choroid plexus. Colored symbols indicate transcripts with FDR < 0.05 and enrichment >2 fold for the indicated comparison, and are as defined in panel (A) and in Figure 7A.
 
 A comparison of cerebellar ECs with vs. without beta-catenin stabilization is shown in Figure 7B (right-most plots). With beta-catenin stabilization, cerebellum ECs, which normally exist in a state of constitutive beta-catenin activation, show little change in the abundances of cerebellar BBB transcripts – that is, these points reside close to the 45-degree line - but there is a clear reduction in the abundance of many anterior and posterior pituitary enriched EC transcripts, which reside above the 45-degree line (Figure 7B, right-most plots; vertical black arrows). Similarly, plots of transcript abundances for posterior pituitary ECs with vs. without beta-catenin stabilization and anterior pituitary ECs with vs. without beta-catenin stabilization show that pituitary-specific EC transcripts are minimally altered but cerebellar BBB transcripts are increased in abundance with beta-catenin stabilization (Figure 7C; vertical black arrows).
 
@@ -110,7 +295,7 @@ To complement the pituitary EC vs. cerebellum EC comparisons, we utilized RiboTa
 
 In summary, beta-catenin stabilization in ECs leads to a partial conversion to a BBB-like gene expression program in anterior pituitary, posterior pituitary, and choroid plexus ECs.
 
-## Accessible chromatin and transcription factor binding motifs in ECs, with and without beta-catenin stabilization
+### Accessible chromatin and transcription factor binding motifs in ECs, with and without beta-catenin stabilization
 
 Based on pair-wise comparisons among the three WT samples, 7813, 5714, and 4663 ATAC-seq peaks were more accessible (i.e., showed >2 fold more read counts) in WT cerebellum ECs, WT anterior pituitary ECs, and WT posterior pituitary ECs, respectively, in at least one pair-wise comparison (Supplementary file 3). These peaks are highlighted in color in the scatter plots in Figure 8A. A subset of these peaks are uniquely associated with a given EC-subtype (i.e. enriched >2 fold in both pairwise comparisons): 2680, 1493, and 84 in WT cerebellum ECs, WT anterior pituitary ECs, and WT posterior pituitary ECs, respectively (Supplementary file 3). Akin to the RNA-seq analyses described above, in both sets of pituitary ECs, beta-catenin stabilization induced an accessible chromatin state that was more like the state of cerebellar ECs, that is, the BBB-competent EC state is characterized by enhanced accessibility of cerebellar EC ATAC-seq peaks and reduced accessibility of pituitary EC ATAC-seq peaks (Figure 8B; top two rows). Cerebellum ECs, which – as noted above – normally exist in a state of constitutive beta-catenin activation, showed minimal changes in chromatin accessibility with beta-catenin stabilization (Figure 8B; third row). Also similar to the RNA-seq analyses, PCA of read densities at all called ATAC-seq peaks shows that (1) the EC replicates cluster tightly by tissue-of-origin and genotype, and (2) beta-catenin stabilization shifts all data points in the same direction, which shifts the points representing pituitary ECs in the direction of the points representing cerebellar ECs (Figure 8C). Finally, if we consider only the 4257 ATAC-seq peaks that were enriched in WT ECs from a single tissue (2680 cerebellum + 1493 anterior pituitary + 84 posterior pituitary = 4257 total), a heat-map of Pearson correlations shows that (1) compared to WT posterior pituitary, beta-catenin stabilized posterior pituitary ECs have a higher correlation with cerebellum ECs, (2) compared to WT anterior pituitary, beta-catenin stabilized anterior pituitary ECs have a higher correlation with cerebellum ECs, and (3) the posterior pituitary EC vs. cerebellum EC correlations are higher than the anterior pituitary EC vs. cerebellum EC correlations (Figure 8D).
 
@@ -130,13 +315,13 @@ Motifs corresponding to the ETS family of transcription factors, which play a ce
 
 In sum, this analysis shows that TCF/LEF motifs are highly enriched in genomic regions that are constitutively accessible in BBB-competent ECs (e.g. cerebellum ECs) or that become accessible in pituitary ECs upon activation of beta-catenin signaling. This finding lends strong support to a model in which beta-catenin regulates the BBB gene expression program via direct engagement of cis-regulatory elements adjacent to genes encoding BBB proteins (Liebner et al., 2008).
 
-## Loss of WIF1 biases area postrema ECs to acquire a more BBB-like state
+### Loss of WIF1 biases area postrema ECs to acquire a more BBB-like state
 
 The experiments described up to this point have involved artificially activating beta-catenin signaling in ECs. If, as these experiments suggest, the high permeability state of CVO ECs requires low or absent beta-catenin signaling, then we might expect that the local environment created by CVO neurons and glia would be characterized by a low concentration of those canonical Wnt ligands that activate receptors on ECs and/or a high concentration of secreted Wnt inhibitors. Importantly, whatever mechanisms maintain the low level of beta-catenin signaling in CVO ECs must have a spatial distribution that closely matches that of the CVOs, since the BBB vs. non-BBB character of the vasculature switches abruptly at the border between each CVO and the adjacent CNS tissue, as seen in Figure 10A for the area postrema.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/43257/elife-43257-fig10-v1.jpg)
 
-**Figure 10.:** (A) View of the dorsal surface of the area postrema showing a sharp transition at the junction between GLUT1-/PLVAP+ ECs in the area postrema (center) and GLUT1+/PLVAP- ECs in the surrounding CNS tissue. Arrows mark transition points for four capillaries. A, anterior. P, posterior. (B) In situ hybridization with a Wif1 probe to a coronal section through the brainstem (lower 60% of the image) and cerebellum (upper 20% of the image) at the level of the area postrema. Wif1 transcripts (purple signal) are detected only in the area postrema. (C) Representative coronal sections through the area postrema in Wif1(i.e. WT) vs. +/+Wif1littermates showing increased numbers of GLUT1+/PLVAP- ECs in the -/-Wif1sample (arrows). The area postrema is demarcated by the smallest convex polygon that fully encompasses the GLUT1-/PLVAP+ vasculature. (-/-D) Quantification of GLUT1+ blood vessel length as a fraction of the length of all vessels in the area postrema from WT (N = 10 mice) vs Wif1(N = 13 mice) littermates at P30. Vessels were manually traced from images like the ones shown in (-/-C) and the result for each section is shown by a circle. Each vertical set of 1–3 circles represents the data from one mouse. Bars show mean ±S.D. The p-value was calculated from the mean for each mouse (black bars). Scale bars for (A) and (B), 200 μm. Scale bar for (C), 100 μm.
+**Figure 10.:** (A) View of the dorsal surface of the area postrema showing a sharp transition at the junction between GLUT1-/PLVAP+ ECs in the area postrema (center) and GLUT1+/PLVAP- ECs in the surrounding CNS tissue. Arrows mark transition points for four capillaries. A, anterior. P, posterior. (B) In situ hybridization with a Wif1 probe to a coronal section through the brainstem (lower 60% of the image) and cerebellum (upper 20% of the image) at the level of the area postrema. Wif1 transcripts (purple signal) are detected only in the area postrema. (C) Representative coronal sections through the area postrema in Wif1+/+(i.e. WT) vs. Wif1-/-littermates showing increased numbers of GLUT1+/PLVAP- ECs in the Wif1-/-sample (arrows). The area postrema is demarcated by the smallest convex polygon that fully encompasses the GLUT1-/PLVAP+ vasculature. (D) Quantification of GLUT1+ blood vessel length as a fraction of the length of all vessels in the area postrema from WT (N = 10 mice) vs Wif1-/-(N = 13 mice) littermates at P30. Vessels were manually traced from images like the ones shown in (C) and the result for each section is shown by a circle. Each vertical set of 1–3 circles represents the data from one mouse. Bars show mean ±S.D. The p-value was calculated from the mean for each mouse (black bars). Scale bars for (A) and (B), 200 μm. Scale bar for (C), 100 μm.
 
 As a first step in exploring a possible role for local Wnt inhibition in maintaining vascular permeability in the CVOs and choroid plexus, we examined the in situ hybridization patterns obtained by the Allen Brain Institute (Lein et al., 2007) for secreted Wnt inhibitors (Cruciat and Niehrs, 2013). The two most striking patterns were those of Wnt Inhibitory Factor-1 (Wif1; Hsieh et al., 1999), which is expressed in the area postrema (confirmed in Figure 10B), and Sclerostin Domain Containing 1 (Sostdc1; Ahn et al., 2010), which is expressed in the choroid plexus. Dickkopf-3 (Dkk-3) is expressed in the area postrema and also in the hippocampus and cortex. Our previous in situ hybridization analyses showed that sFRP1 is specifically expressed in the choroid plexus and ciliary body (Rattner et al., 1997); the data from the Allen Brain Atlas confirms the choroid plexus expression and additionally shows no detectable sFRP1 expression in the CVOs.
 
@@ -150,7 +335,7 @@ The data presented here imply that highly permeable brain and ocular ECs retain 
 
 For CNS ECs that reside within the neural retina and the non-CVO regions of the brain, the ligands Wnt7a, Wnt7b, and Norrin promote the BBB/BRB state. The observation that WIF1 is involved in maintaining the high permeability state of area postrema ECs implies that local inhibition of ligands that stimulate beta-catenin signaling is one mechanism by which the micro-environment can direct the development and maintenance of a highly permeable CNS vascular bed. It seems likely that the high permeability state depends on additional signals from CVO parenchymal cells, or, in the case of the choroid plexus, choriocapillaris, and ciliary body, from adjacent epithelial cells. For the choriocapillaris, current evidence suggests that VEGF may be one of the pro-permeability signals (Tübingen Bevacizumab Study Group et al., 2007; Shimomura et al., 2009). VEGF is also expressed in the CVOs, where it has been studied in the context of EC proliferation (Morita et al., 2015).
 
-## Diversity of vascular structure and function in the CNS
+### Diversity of vascular structure and function in the CNS
 
 It has long been appreciated that vascular structure and function varies between different organs and that this variability extends to sub-regions within organs, as seen, for example, in the differences in capillary EC structure in renal glomeri vs. the renal medulla (Aird, 2007a; Aird, 2007b; Potente and Mäkinen, 2017). The appreciation that the nervous system vasculature has distinctive permeability properties began with the discovery of the BBB in the late 19th and early 20th centuries (summarized in Hawkins and Davis, 2005) and was followed several decades later by the discovery that several small midline structures – now known to be the CVOs – lack a tight barrier (Wislocki and Putnam, 1924). More recent ultrastructural studies have revealed additional diversity within some CVOs. For example, neurons and glia within the area postrema, SFO, and VOLT are organized into distinct zones (Price et al., 2008; Sisó et al., 2010) and the microarchitecture of the capillaries differs between zones (Gross, 1991; Gross, 1992). Different levels of barrier function are also present in other CNS regions: the spinal cord has a modestly reduced version of the BBB (the blood-spinal cord barrier) and peripheral nerves have a further reduced version of the BBB (the blood-nerve barrier; Weerasuriya and Mizisin, 2011; Reinhold and Rittner, 2017).
 
@@ -158,19 +343,19 @@ In addition to permeability differences, capillary density within CVOs is severa
 
 The functional and anatomic diversity within the CNS vasculature suggests that beta-catenin signaling is just one of multiple signaling pathways that play a role in locally shaping vascular structure and function. It will of interest to look for additional signaling molecules that vary locally and that could be candidates for mediating communication between parenchymal and vascular cells. It will also be of interest to identify additional examples of vascular diversity in different brain regions by comparing regional and single cell transcriptomes. Indeed, recent single cell RNA analyses have already provided evidence for previously unsuspected diversity among CNS ECs (Vanlandewijck et al., 2018; Sabbagh et al., 2018).
 
-## Comparisons between brain and ocular vasculatures
+### Comparisons between brain and ocular vasculatures
 
 The functional and structural similarities between the choroid plexus and ciliary body have long been noted. Both structures produce a plasma transudate – CSF and aqueous humor, respectively – and both consist of a fenestrated capillary plexus surrounded by epithelial cells that are connected by tight junctions, the latter creating the blood-CSF and blood-aqueous barriers. Similarly, the RPE, which is characterized by tight junctions and an absence of passive diffusion, is responsible for the blood-ocular barrier at the choriocapillaris-RPE interface. Similarities in the genetic programs in choroid plexus and ciliary body epithelial cells is suggested by the production of both choroid plexus and ciliary body tumors in mice with transgenic expression of the MYC oncoprotein in neural progenitors (Shannon et al., 2018). The experiments reported here show that the ciliary body, choriocapillaris, and choroid plexus ECs all share the property that they can be reprogrammed to a BBB-like state by activating beta-catenin signaling.
 
 The epithelial-based blood-tissue barriers of the ciliary body, choriocapillaris/RPE, and choroid plexus contrast with the architecture of the BBB and BRB, where the blood-tissue barrier is at the level of the ECs. Barriers with an epithelial architecture are also found in reproductive organs. In the testis, developing germ cells are sequestered from permeable capillaries by a monolayer of Sertoli cells that are connected by tight junctions, thereby creating the blood-testis barrier (Wen et al., 2018); and in the placenta, fetal trophoblasts fuse to form a syncytium that separates the maternal and fetal circulatory systems (Huppertz, 2008).
 
-## Clinical implications
+### Clinical implications
 
 Increases in CNS vascular permeability accompany a wide variety of neurologic conditions, including head trauma, multiple sclerosis, degenerative diseases (including Alzheimer disease), CNS infections, and a subset of brain tumors (Obermeier et al., 2013; Zhao et al., 2015). Among brain tumors, a dramatic example of increased vascular permeability is found in a subtype of medulloblastoma, referred to as WNT-medulloblastoma, which is characterized by a high level of beta-catenin signaling in the tumor cells. In mouse models of WNT-medulloblastoma, the intra-tumor capillaries resemble CVO capillaries in their high density, tortuosity, and GLUT1-/PLVAP+ phenotype (Phoenix et al., 2016). In these models, the high level of tumor cell-specific beta-catenin signaling is accompanied by high-level production of Wnt inhibitors DKK1 and WIF1, which reprogram the intra-tumor vascular phenotype by inhibiting beta-catenin signaling in ECs. In contrast, the intra-tumor capillaries in other medulloblastoma subtypes resemble conventional BBB-type CNS capillaries. High vascular permeability enhances sensitivity to chemotherapy and likely accounts for the better prognosis of WNT-medulloblastomas compared to other medulloblastoma subtypes. These observations suggest that therapeutic strategies aimed at inhibiting beta-catenin signaling within tumor vasculature could enhance responsiveness to chemotherapy in a wide variety of CNS tumors. In the context of the work presented here, the similarities between capillaries in WNT-medulloblastomas and in CVOs imply that a detailed understanding of the mechanisms responsible for generating and maintaining high permeability CVO capillaries could inform strategies for enhancing vascular permeability to improve CNS drug delivery.
 
 The study of CVO capillary permeability – and, in particular, the observation that it is reduced in response to activated beta-catenin signaling – could also inform strategies aimed at reducing CNS vascular permeability in other pathologic contexts. A common attribute of many neurologic disorders that feature loss of BBB integrity is an increase in CNS inflammation (Liebner et al., 2018). One hypothesis to explain disease-associated vascular permeability is that CNS inflammation recapitulates the permeability-promoting mechanisms that are active in the CVOs. As previous work has shown that the BBB state remains plastic throughout life and that its maintenance requires continuous beta-catenin signaling (Liebner et al., 2008; Wang et al., 2012; Zhou et al., 2014), a change in the local tissue environment that directly or indirectly antagonizes beta-catenin signaling – for example, by activating an antagonistic signaling pathway in ECs or inhibiting/degrading Wnt ligands or receptors – could lead to a loss of BBB competence. This line of reasoning suggests that enhancing beta-catenin signaling in CNS ECs could be a treatment strategy for pathological BBB breakdown.
 
-## The role of beta-catenin signaling in CNS vascular biology
+### The role of beta-catenin signaling in CNS vascular biology
 
 As noted in the preceding paragraph, the BBB/BRB state remains plastic throughout life. The present work extends this observation by showing that the high permeability ECs in the CVO, choroid plexus, choriocapillaris, or ciliary body are similarly plastic. Interestingly, the transcriptome comparisons between cerebellar and pituitary ECs show that, with elevated beta-catenin signaling, cerebellar ECs reduce the levels of pituitary EC-specific transcripts even further than their normally low levels. This suggests that the gene expression set point of the standard BBB state is not at the extreme end of the BBB/non-BBB continuum.
 
@@ -178,15 +363,263 @@ A striking aspect of adult CNS EC plasticity, is the quantized phenotypic conver
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Ctnnb1flex3</td>
+      <td>Harada et al., 1999</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ndp-</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 012287; RRID:IMSR_JAX:012287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Fz4-</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 012823; RRID:IMSR_JAX:012823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Fz4CKO</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 011078; RRID:IMSR_JAX:011078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tie2-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 008863; RRID:IMSR_JAX:008863</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tie2-GFP</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 003658; RRID:IMSR_JAX:003658</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Pdgfb-CreER</td>
+      <td>Claxton et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Wif1-</td>
+      <td>Kansara et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Sostdc1-</td>
+      <td>Ahn et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rpl22ribotag</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 029977; RRID:IMSR_JAX:029977</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>R26-LSL-tdTomato-2A-H2B-GFP</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 030867; RRID:IMSR_JAX:030867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GLUT1 (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat no: RB-9052-P1; RRID:AB_177895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse PLVAP/MECA-32 (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat no: 553849; RRID:AB_395086</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CLDN5 Alexa Fluor 488 conjugate (mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat no: 352588; RRID:AB_2532189</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP Alexa Fluor 488 conjugate (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat no: A21311; RRID:AB_221477</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-LEF1 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat no: C12A5; RRID:AB_823558</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Occludin (rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat no: 406100; RRID:AB_2533473</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ZO1 (rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat no: 40–2200; RRID:AB_2533456</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MDR1 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat no: 13978S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Vimentin (chicken polyclonal)</td>
+      <td>EMD Millipore</td>
+      <td>Cat no: AB5733; RRID:AB_11212377</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Tn5 transposase</td>
+      <td>Illumina</td>
+      <td>Cat no: FC-121–1030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Worthington Papain Dissociation Kit</td>
+      <td>Worthington Biochemical Corporation</td>
+      <td>Cat no: LK003160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-hydroxytamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat no: H7904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Salmon</td>
+      <td>Patro et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kallisto</td>
+      <td>Bray et al., 2016</td>
+      <td>RRID:SCR_016582</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>deepTools</td>
+      <td>Ramírez et al., 2016</td>
+      <td>RRID:SCR_016366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>tximport</td>
+      <td>Soneson et al., 2016</td>
+      <td>RRID:SCR_016752</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EBSeq</td>
+      <td>Leng et al., 2015</td>
+      <td>RRID:SCR_003526</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MACS2</td>
+      <td>Zhang et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DiffBind</td>
+      <td>Ross-Innes et al., 2012</td>
+      <td>RRID:SCR_012918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bedtools</td>
+      <td>Quinlan and Hall, 2010</td>
+      <td>RRID:SCR_006646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Texas Red streptavidin</td>
+      <td>Vector Laboratories</td>
+      <td>Cat no: SA-5006; RRID:AB_2336754</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sulfo-NHS-biotin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat no: 21217</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 The following mouse alleles were used: Ctnnb1flex3 (Harada et al., 1999); Ndp- (Ye et al., 2009; JAX 012287), Fz4-(Xu et al., 2004; JAX 012823); Fz4CKO(Ye et al., 2009; JAX 011078); Tie2-Cre (also known as Tek-Cre; Kisanuki et al., 2001; JAX 008863); Tie2-GFP mice (also known as Tek-GFP; Motoike et al., 2000; JAX 003658); Pdgfb-CreER (Claxton et al., 2008); Wif1-(Kansara et al., 2009); Sostdc1-(Ahn et al., 2010); Rpl22ribotag(Sanz et al., 2009; JAX 029977) and R26-LSL-tdTomato-2A-H2B-GFP (Wang et al., 2018; JAX 030867). All mice were housed and handled according to the approved Institutional Animal Care and Use Committee (IACUC) protocol MO16M367 of the Johns Hopkins Medical Institutions.
 
-## Antibodies and other reagents
+### Antibodies and other reagents
 
 The following antibodies were used for tissue immunohistochemistry: rabbit anti-GLUT1 (Thermo Fisher Scientific RB-9052-P1); rat anti-mouse PLVAP/MECA-32 (BD Biosciences 553849); mouse anti-CLDN5, Alexa Fluor 488 conjugate (Thermo Fisher Scientific 352588); rabbit anti-GFP, Alexa Fluor 488 conjugate (Thermo Fisher Scientific A21311); rabbit anti-6xMyc (JH6204), rabbit mAb anti-LEF1 (Cell Signaling Technologies C12A5), rabbit anti-ZO-1 (Invitrogen 40–2200), rabbit anti-Occludin (Invitrogen 406100), rabbit mAb anti-MDR1 (E1Y7S; Cell Signaling Technology 13978S), chicken anti-Vimentin (EMD Millipore Corp AB5733), and rabbit anti-MFSD2A (a kind gift of David Silver, Duke-NUS Medical School). Alexa Fluor-labeled secondary antibodies and GS Lectin (Isolectin GS-IB4) were from Thermo Fisher Scientific. Texas Red streptavidin was from Vector Laboratories (SA-5006). Sulfo-NHS-biotin was from Thermo Fisher Scientific (catalogue #21217).
 
-## Tissue processing and immunohistochemistry
+### Tissue processing and immunohistochemistry
 
 Tissue were prepared and processed for immunohistochemical analysis as described by Wang et al. (2012) and Zhou et al. (2014). In brief, mice were deeply anesthetized with ketamine and xylazine and then perfused via the cardiac route with 1% PFA in phosphate buffered saline (PBS) followed by 100% cold methanol dehydration overnight at 4°C. For PFA-sensitive antigens (MDR1, OCLN, and ZO-1), mice were deeply anesthetized with ketamine and xylazine and then perfused via the cardiac route with PBS followed by 100 mls of cold methanol, and then the brains and pituitaries were additionally fixed by immersion in 100% cold methanol overnight at 4°C. Tissues were re-hydrated the following day in 1x PBS at 4°C for at least 3 hr before embedding in 3% agarose. Tissue sections of 100–180 μm thickness were cut using a vibratome (Leica).
 
@@ -194,56 +627,56 @@ For the vascular permeability analysis, mice were injected intraperitoneally wit
 
 Sections were incubated overnight with primary antibodies, secondary antibodies, or Texas Red streptavidin diluted in 1x PBSTC (1x PBS + 1% Triton X-100 +0.1 mM CaCl2)+10% normal goat serum (NGS). Incubation and washing steps were performed at 4°C. Sections were washed at least 3 times with 1x PBSTC over the course of 6 hr, and subsequently incubated overnight with secondary antibodies diluted in 1x PBSTC +10% NGS. If a primary antibody raised in rat was used, secondary antibodies were additionally incubated with 1% normal mouse serum (NMS) as a blocking agent. The next day, sections were washed at least 3 times with 1x PBSTC over the course of 6 hr, and flat-mounted using Fluoromount G (EM Sciences 17984–25). Sections were imaged using a Zeiss LSM700 confocal microscope, and processed with ImageJ, Adobe Photoshop, and Adobe Illustrator software.
 
-## In situ hybridization (ISH)
+### In situ hybridization (ISH)
 
 ISH on tissue sections was performed essentially as described by Schaeren-Wiemers and Gerfin-Moser (1993), using an alkaline phosphatase conjugated anti-digoxigenin antibody and NBT/BCIP histochemistry to visualize hybridization. Digoxigenin-labeled riboprobes were synthesized with T7 RNA polymerase from mouse Wif1 cDNA (nucleotides 1225–2147 in the numbering system in which the coding region spans nucleotides 340–1479, NCBI accession number NM_011915). Images were captured on a Zeiss Imager Z1 microscope using Zeiss AxioVision 4.6 software.
 
-## 4HT preparation and administration
+### 4HT preparation and administration
 
 Solid 4HT (Sigma-Aldrich H7904) was dissolved at 20 mg/ml in ethanol by extensive vortexing. Sunflower seed oil (Sigma-Aldrich S5007) was added to dilute the 4HT to 2 mg/ml and aliquots were stored at −80°C. Thawed aliquots were diluted with Sunflower seed oil to a final concentration of 1 mg/ml 4HT. All injections were performed intraperitoneally.
 
-## Quantification of vasculature in the area postrema
+### Quantification of vasculature in the area postrema
 
 For quantifying relative vascular density in the area postrema, 100 μm thick coronal sections from Wif1+/+or Wif1-/-littermates were stained for GLUT1 and PLVAP, and then stained with DAPI. The area postrema is ~500 um from front to back and was typically imaged from 2 to 3 vibratome sections. Confocal images were scanned at 10–12 μm intervals along the Z-axis, of which four images were Z-stacked. Starting with each Z-stacked image, the perimeter of the area postrema was delineated with the smallest convex polygon that encompassed all of the PLVAP+ ECs, as shown in Figure 10C. All of the blood vessels within the designated polygon were manually traced using Adobe Illustrator software. The lengths of the PLVAP+ traced vessels and the lengths of the GLUT1+ vessels were separately quantified by calculating pixel coverage as a fraction of the total area using ImageJ. The length of GLUT1+ vessels was then divided by the sum of the lengths of GLUT1+ and PLVAP+ vessels for the vasculature within each area postrema polygon.
 
 The R software package was used to generate plots and to perform statistical analyses. The mean ± standard deviation is shown. Statistical significance was determined by the unpaired t-test.
 
-## Transmission electron microscopy (TEM) and quantification of fenestrae
+### Transmission electron microscopy (TEM) and quantification of fenestrae
 
 For TEM of brain and eye tissues, P10 mice [control (Ctnnb1flex3/+) or experimental (Ctnnb1flex3/+;Pdgfb-CreER)] were given a single dose of 400 ug of 4HT intraperitoneally and sacrificed at ~P40. Following intra-cardiac perfusion in Karnovsky’s fixative (2% glutaraldehyde, 2% paraformaldehyde, 1.5 mM CaCl2, and 1.5 mM MgCl2 in PBS, pH 7.2), tissues of interest were dissected and immersion-fixed in Karnovsky’s fixative overnight at 4°C. Tissues were rinsed with 0.05 N cacodylate buffer supplemented with 1.5 mM CaCl2 and 1.5 mM MgCl2, and fixed in 1% OsO4 on ice. Tissues were then rinsed with water, dehydrated, and embedded in Epoxy resin. Sections were cut with a diamond knife, placed on copper grids, stained with uranyl acetate in methanol (filtered twice through a 0.22 um filter) and viewed with a Hitachi transmission electron microscope.
 
 Morphometry was carried out in ImageJ. Fenestrae were readily seen at 15,000x magnification (corresponding to 0.2069 pixels/nm). The perimeters of the blood capillaries were manually traced and the length of the traces measured in ImageJ. The fenestrae were counted using the Cell Counter plugin, and the number of fenestrae per 100 μm was calculated.
 
-## Immunoprecipitation of RiboTag-labelled polyribosomes
+### Immunoprecipitation of RiboTag-labelled polyribosomes
 
 6–8 week old WT control and beta-catenin stabilized mice were used for the RiboTag experiments. Immunoprecipitation of the RiboTag-labelled polyribosomes were carried out as previously described (Sanz et al., 2009). Cortex and choroid plexus were promptly dissected following cervical dislocation and the tissues snap-frozen. The choroid plexi from 3 to 4 animals were pooled as one sample. For immunoprecipitation, tissues were homogenized in 500 μl (choroid plexus) or 700 μl (cerebral cortex) polysome buffer [50 mM Tris, pH 7.5, 250 mM sucrose, 100 mM KCl, 12 mM MgCl2, 1% Nonidet P-40, 1 mM DTT, 200 U/ml RNasin Plus (Promega), 1 mg/ml heparin, 100 g/ml cycloheximide, 0.5 mM spermidine, and complete EDTA-free protease inhibitor cocktail (Roche)]. Homogenates were centrifuged at 10,000xg for 10 min at 4°C to create a postmitochondrial supernatant. 25 μl and 40 μl aliquots of choroid plexus homogenate and cortex homogenate, respectively, were saved as input samples. Four μl of mouse monoclonal anti-HA antibody (HA.11, ascites fluid; Covance) were added to the supernatants and rotated for 4 hr at 4°C. 100 μl protein G magnetic beads (Dynabeads; Invitrogen) were washed twice with polysome buffer and added directly to the antibody-coupled polysomes and rotated overnight at 4°C. The following day, samples were placed in a magnet on ice and supernatants recovered before washing the pellets 4 × 5 min in high salt buffer (50 mM Tris, pH 7.5, 300 mM KCl, 12 mM MgCl 2, 1% Nonidet P-40, 1 mM DTT, 20 μg/ml cycloheximide). To prepare total RNA, 350 μl of Qiagen RLT buffer was added to the beads or to the input samples. Total RNA was prepared according to manufacturer’s instructions using the RNeasy Plus Micro kit (Qiagen), and the quantity and quality of the RNA were assessed using a Bioanalyzer (Agilent).
 
-## Tissue dissection, EC purification, and RNA and DNA sample preparation
+### Tissue dissection, EC purification, and RNA and DNA sample preparation
 
 To control for the possibility of sex-dependent differences, male mice were used for RNA-seq and ATAC-seq. Viable ECs were isolated using the Worthington Papain Dissociation System (LK003160, Worthington Biochemical Corporation, Lakewood, NJ) and a MoFlo XDP Sorter (Beckman Coulter, Brea, CA) as previously described (Sabbagh et al., 2018), with propidium iodide negative cells considered as viable. For pituitaries, 20–30 mice between P30 and P90 were used for each independent replicate. The mice consisted of control WT mice (Tie2-GFP) and EC-specific beta-catenin stabilized (Ctnnbl1flex3/+;Pdgfb-CreER;Tie2-GFP that had received 100 ug 4HT at P10). Pituitaries were dissected from the base of the skull and place in Dulbecco’s PBS (DPBS). Posterior pituitaries (a small whitish tissue with a clear border occupying the dorso-medial pituitary) was gently separated from the anterior pituitary and the 20–30 anterior and posterior pituitaries were collected in separate tubes for subsequent papain dissociation. RNA was extracted from GFP-positive and GFP-negative cells that were FACS sorted directly into QIAGEN Buffer RLT Plus and then processed using the RNeasy Micro Plus kit (74034, QIAGEN, Venlo, Netherlands). For ATAC-seq,~50,000 GFP-positive FACS-sorted cells were gently centrifuged and then resuspended in ice-cold lysis buffer (0.25 M sucrose, 25 mM KCl, 5 mM MgCl2, 20 mM Tricine-KOH, 0.1% Igepal CA-630) and immediately centrifuged at 500 x g for 10 min at 4°C to prepare nuclei. The resulting nuclear pellet was resuspended in a 50 ul reaction volume in Tn5 transposase and transposase reaction buffer (FC-121–1030, Illumina Inc, San Diego, CA), and the tagmentation reaction was incubated at 37°C for 30 min.
 
-## Library preparation and sequencing
+### Library preparation and sequencing
 
 Each RNA-seq and ATAC-seq analysis was conducted on two biological replicates. Libraries for RNA-seq and ATAC-seq were prepared as previously described (Buenrostro et al., 2015; Sabbagh et al., 2018). For RNA-seq, total RNA was converted to cDNA and amplified (Ovation Ultralow System V2-32, 0342HV, NuGEN Technologies). Amplified cDNA was fragmented, end-repaired, linker-adapted, and single-end sequenced for 75 cycles on a NextSeq500 (Illumina). Tagmented DNA was purified using QIAGEN MinElute Gel Extraction kit (28604, Qiagen). ATAC-seq libraries were PCR amplified for 11 cycles. Agencourt AMPure XP beads (A63880, Beckman Coulter) were used to purify ATAC-seq libraries, which were then paired-end sequenced for 36 cycles on a NextSeq500 (Illumina).
 
-## Data analysis
+### Data analysis
 
 Most data analyses were performed as previously described (Sabbagh et al., 2018). For basic data processing, exploration, and visualization, we used deepTools (Ramírez et al., 2016), BEDTools (Quinlan and Hall, 2010), RStudio, the tidyverse collection of R packages (Wickham, 2017), ggplot2 (Wickham, 2009), and pheatmap (Kolde, 2015). Reads were aligned to the mm10 genome using Bowtie2 (Langmead and Salzberg, 2012).
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 Salmon version 0.10.2 (Patro et al., 2017) was used to quantify expression of transcripts from RNA-seq experiments using mm10/GRCm38_92 Ensembl transcriptome (salmon quant -l A -g Mus_musculus.GRCm38.92.chr.gtf.gz --validateMappings --rangeFactorizationBins 4 --incompatPrior 0.0 --useVBOpt --seqBias --gcBias --posBias --biasSpeedSamp 10). To visualize RNA-seq data on an IGV browser (Robinson et al., 2011; Thorvaldsdóttir et al., 2013), kallisto version 0.44.0 (Bray et al., 2016) was used to generate alignment bam files (kallisto quant --bias --single -l 250 s 25 --genomebam -g Mus_musculus.GRCm38.92.chr.gtf.gz -c mouse.mm10.genome) and then deepTools was used to generate bigwig files (bamCoverage -bs 1 --normalizeUsing RPKM).
 
 To convert transcript-level abundances to the gene-level for further downstream analyses, we used tximport (Soneson et al., 2015). Differentially expressed genes were identified using EBSeq version 1.20.0 (Leng and Kendziorski, 2015). To filter out background transcripts from surrounding parenchymal cells, a set of EC-enriched transcripts was determined for each tissue by comparing RNA data from GFP-positive and GFP-negative sorted cells. A transcript was considered EC-enriched if it met the following three criteria: (1) a minimum two-fold enrichment in GFP-positive compared to GFP-negative samples; (2) a posterior probability of differential expression (PPDE) greater than or equal to 0.95 [PPDE = (1 - false discovery rate)], that is an FDR < 0.05; (3) relative expression greater than or equal to 10 transcripts per million (TPM) in both biological replicates. A gene was considered to be differentially expressed between EC subtypes if it met the following criteria: (1) EC-enriched with minimum of two-fold enrichment between one subtype and both other subtypes; (2) a PPDE greater than or equal to 0.95; (3) a TPM value greater than or equal to 10 in both biological replicates. Principal component analysis was performed on ‘regularized’ log-transformed data using the DESeq2 rlog and plotPCA function (Love et al., 2014). For RiboTag samples, EC-enriched transcripts were determined by comparing the pull-down sample against the input sample.
 
-## ATAC-seq data analysis
+### ATAC-seq data analysis
 
 ATAC-seq data were aligned using Bowtie2 (Version 2.3.2 t -X 2000 --no-mixed --no-discordant) and then duplicate reads were removed (picard MarkDuplicates). Peaks were called using MACS2 (Version 2.1.1.20160309 callpeak --nomodel --keep-dup all --shift −100 --extsize 200 --call-summits) (Zhang et al., 2008). Peaks were then filtered for fold-change >2 and -log(qvalue)>2. deepTools was used to visualize ATAC-seq peaks on the browser (bamCoverage -bs 1 --normalizeUsing RPKM). To identify differential ATAC-seq peaks between ECs isolated from adult cerebellum, anterior pituitary, and posterior pituitary, DiffBind was used (Stark and Brown, 2011; Ross-Innes et al., 2012) with EdgeR (Robinson et al., 2010). For each pairwise comparison, DiffBind was used to develop a set of consensus peaks between replicates using the requirement that peaks must be in both replicates (minOverlap = 2). To retrieve a set of high-confidence, cell type-enriched peaks, we filtered for peaks with an absolute fold difference >2 and FDR < 0.05. Principal component analysis was performed on ‘regularized’ log-transformed data using the DESeq2 rlog and plotPCA function. To generate scatter plots of ATAC-seq data, the union of consensus peaks for each WT pairwise comparison was used with dba.count to generate normalized counts at each peak for each sample. To identify transcription factor DNA binding motifs enriched in ATAC-seq peaks, the HOMER suite of tools was used for motif discovery (Heinz et al., 2010), in particular, findMotifsGenome.pl (-size given).
 
-## Feature overlap analysis
+### Feature overlap analysis
 
 Bedtools intersect (-u) was used to determine features that overlapped with other features by greater than or equal to 1 bp. Bedtools window (-w 100000) was used to identify ATAC-seq peaks within 100 kb of various sets of genes. For Figure 9A, statistically significant enrichment was tested by binomial test using the R command binom.test(overlap, total number of column feature, p=total base pairs of genome covered by 100 kb window around genes in row feature/total base pairs of mm10 genome,alternative=”greater’). For Figure 9B, statistically significant enrichment was tested by Fisher’s exact test using the R command fisher.test(matrix(c(overlap, total number of row feature – overlap, total number of column feature – overlap, discrete called peaks – total number of row feature – total number of column feature), nrow = 2), alternative=”greater’).
 
-## Data access
+### Data access
 
 Data files are available at GEO accession GSE122117. Processed RNA-seq data can be accessed at the VECTRDB website (https://markfsabbagh.shinyapps.io/vectrdb/).

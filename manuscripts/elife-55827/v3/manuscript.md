@@ -39,29 +39,29 @@ The present study follows up on this earlier research by evaluating changes in b
 
 ## Results
 
-## Time-dependent changes in cortical cytokine and chemokines induced by a single mTBI
+### Time-dependent changes in cortical cytokine and chemokines induced by a single mTBI
 
 Of the 200 proteins on the arrays, 161 proteins were detectable in sufficient sample numbers (i.e. n = 3 per time point) to allow for statistical analysis. Assessments of the 161 proteins by ANOVA indicated that 58 proteins on the arrays were different in mTBI-challenged mice in a minimum of one time point compared to sham mice. Comparing each mTBI time point individually to the sham values by t-test indicated that 124 of the proteins on the arrays were different in at least one time point compared to sham. The patterns of protein changes were complex. Most proteins that were significantly changed by mTBI displayed changes in only one direction, that is elevations or reductions across time points when compared to sham protein levels. A smaller number of proteins displayed different directions in changes at different times points. For example, IGFBP-6 (lower at 24 hr and increased at 30 days); OPG (higher at 48 hr and decreased at 30 days) and Eotaxin-2 (higher at 8 hr and decreased at 72 and 96 hr). Certain proteins showed differences from sham at only one time point, examples are IL-10; IL-5; IL-12p40 and THPO; many more showed differences at several time points, for example FASL; CXCL16; TCA-3; GITR; Fractalkine; IL-1 Ra and VEGF-B. Figures 1, 2 and 3 illustrate statistically significant changes in protein levels as a percentage ‘increase’ from sham sample levels at 8 and 24 hr post-mTBI (Figure 1); 48 to 96 hr post-mTBI (Figure 2) and from 7 days to 30 days post-mTBI (Figure 3). Supplementary file 1, proteins significantly changed by a single mTBI event over time, data are percentage increase from sham, mean ± SEM and n for all significantly regulated proteins over the 30-day time period.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/55827/elife-55827-fig1-v3.jpg)
 
-**Figure 1.:** The percentage increase from sham levels are presented, positive values (red) are increases and negative values (green) are reductions in protein levels, compared to sham control levels. Left – At 8 hr, more proteins displayed significant increases than significant reductions in protein levels. VEGF-B; MIP-3b; SLAM and CRP were the most up-regulated proteins. FASL and MIP-1a were significantly lower than sham. Right – At 24 hr following a single mTBI event, many more proteins presented with lower rather than increased levels when compared to sham. The largest reductions were evident in IL-1 ra and IL-12p40, the largest increases in protein levels were seen for CD6 and E-Cadherin. Percentage ‘increase’ values are presented as the mean ± S.E.M. of n cortical samples (see Supplementary file 1 for mean ± S.E.M. and n data). Definitions of pathways are provided in the Figure Legends, where the pathways are first mentioned in the results sections. When new pathways are described in subsequent text, the new definitions will be provided in the appropriate Figure Legend. Pathway definitions for 8 and 24 hr are: Apoptosis signaling pathway (P00006) - signal transduction pathways linked with cellular death. FAS signaling pathway (P00020) - the FAS receptor mediates apoptotic signaling initiated by interaction with surface expressed FASL on other cells, FAS-FASL apoptosis is mediated via a death domain. Alzheimer disease-presenilin pathway (P00004) - the presenilin gamma-secretase complex linked to Alzheimer's disease. Angiogenesis (P00005) - signaling pathways that have been identified as key mediators of angiogenesis. PDGF signaling pathway (P00047) - platelet-derived growth factor (PDGF) plays a critical role in cellular proliferation and development. EGF receptor signaling pathway (P00018) - signaling that mediates growth and proliferation in response to the binding of a variety of growth factor ligands. CCKR signaling map (P06959) - the classical gastrin cholecystokinin B receptor CCK-BR, its isoforms and alternative receptors, these peptides trigger signaling pathways which influence the expression of downstream genes that affect cell survival, angiogenesis and invasion. Gonadotropin-releasing hormone receptor pathway (P06664) - the GnRH receptor (GnRHR), expressed at the cell surface of the anterior pituitary gonadotrope is critical for normal secretion of gonadotropins LH and FSH, pubertal development, and reproduction. Wnt signaling pathway (P00057) - is involved in various transcriptional regulatory molecules affecting various target genes. Inflammation mediated by chemokine and cytokine signaling pathway (P00031) - this pathway illustrates chemokine-induced adhesion and migration of leukocytes resulting in the infiltration to the tissue and transcriptional activation enabling recruitment of more leukocytes. Interferon-gamma signaling pathway (P00035) - the interferon-gamma signaling pathway modulates the antiproliferative and antiviral properties of interferon-gamma. Interleukin signaling pathway (P00036) - they can mediate different biological response via activation of a combination of different signal transduction pathways. FGF signaling pathway (P00021) - the result is the activation of many downstream pathways and many cellular outcomes, including mitogenesis, differentiation, survival, apoptosis, and cell migration. Cadherin signaling pathway (P00012) - the pathway is involved in many biological processes, such as development, neurogenesis, cell adhesion, and inflammation. Figure 1—source data 1.Figure 1—source data 1.
+**Figure 1.:** The percentage increase from sham levels are presented, positive values (red) are increases and negative values (green) are reductions in protein levels, compared to sham control levels. Left – At 8 hr, more proteins displayed significant increases than significant reductions in protein levels. VEGF-B; MIP-3b; SLAM and CRP were the most up-regulated proteins. FASL and MIP-1a were significantly lower than sham. Right – At 24 hr following a single mTBI event, many more proteins presented with lower rather than increased levels when compared to sham. The largest reductions were evident in IL-1 ra and IL-12p40, the largest increases in protein levels were seen for CD6 and E-Cadherin. Percentage ‘increase’ values are presented as the mean ± S.E.M. of n cortical samples (see Supplementary file 1 for mean ± S.E.M. and n data). Definitions of pathways are provided in the Figure Legends, where the pathways are first mentioned in the results sections. When new pathways are described in subsequent text, the new definitions will be provided in the appropriate Figure Legend. Pathway definitions for 8 and 24 hr are: Apoptosis signaling pathway (P00006) - signal transduction pathways linked with cellular death. FAS signaling pathway (P00020) - the FAS receptor mediates apoptotic signaling initiated by interaction with surface expressed FASL on other cells, FAS-FASL apoptosis is mediated via a death domain. Alzheimer disease-presenilin pathway (P00004) - the presenilin gamma-secretase complex linked to Alzheimer's disease. Angiogenesis (P00005) - signaling pathways that have been identified as key mediators of angiogenesis. PDGF signaling pathway (P00047) - platelet-derived growth factor (PDGF) plays a critical role in cellular proliferation and development. EGF receptor signaling pathway (P00018) - signaling that mediates growth and proliferation in response to the binding of a variety of growth factor ligands. CCKR signaling map (P06959) - the classical gastrin cholecystokinin B receptor CCK-BR, its isoforms and alternative receptors, these peptides trigger signaling pathways which influence the expression of downstream genes that affect cell survival, angiogenesis and invasion. Gonadotropin-releasing hormone receptor pathway (P06664) - the GnRH receptor (GnRHR), expressed at the cell surface of the anterior pituitary gonadotrope is critical for normal secretion of gonadotropins LH and FSH, pubertal development, and reproduction. Wnt signaling pathway (P00057) - is involved in various transcriptional regulatory molecules affecting various target genes. Inflammation mediated by chemokine and cytokine signaling pathway (P00031) - this pathway illustrates chemokine-induced adhesion and migration of leukocytes resulting in the infiltration to the tissue and transcriptional activation enabling recruitment of more leukocytes. Interferon-gamma signaling pathway (P00035) - the interferon-gamma signaling pathway modulates the antiproliferative and antiviral properties of interferon-gamma. Interleukin signaling pathway (P00036) - they can mediate different biological response via activation of a combination of different signal transduction pathways. FGF signaling pathway (P00021) - the result is the activation of many downstream pathways and many cellular outcomes, including mitogenesis, differentiation, survival, apoptosis, and cell migration. Cadherin signaling pathway (P00012) - the pathway is involved in many biological processes, such as development, neurogenesis, cell adhesion, and inflammation. Figure 1—source data 1.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/55827/elife-55827-fig2-v3.jpg)
 
-**Figure 2.:** The percentage increase from sham levels are presented, positive values (red) are increases and negative values (green) are reductions in protein levels compared to sham control. Left - 48 hr the proteins OPN, CRP, E-Cadherin and IL-17E were the most elevated compared to sham levels. MadCAM-1, sFRP-3, IL-1 R4 and TWEAK R were the most down-regulated proteins. Middle - 72 hr the largest reductions in protein levels were seen for G-CSF, TRANCE, Granzyme B and TGFb1. The largest increases in protein levels were seen for CRP, IL-17E and VEGF-B. Right - 96 hr the proteins IL-20, VEGF-B, CD27 and IL-17E were the most significantly up-regulated proteins by 96 hr. IL-17B, ALK-1, TWEAK R, EGF, GITR L, TRANCE and MadCAM-1 were the most down-regulated proteins. Percentage ‘increase’ values are presented as the mean ± S.E.M. of n cortical samples (see Supplementary file 1 for mean ± S.E.M. and n data). Definitions of additional pathways observed for 48, 72 and 96 hr are: Plasminogen activating cascade (P00050) - the inactive zymogen plasminogen is converted into plasmin. TGF-beta signaling pathway (P00052) - Transforming growth factor beta signaling pathway. Other pathways have been defined elsewhere. Figure 2—source data 1.Figure 2—source data 1.
+**Figure 2.:** The percentage increase from sham levels are presented, positive values (red) are increases and negative values (green) are reductions in protein levels compared to sham control. Left - 48 hr the proteins OPN, CRP, E-Cadherin and IL-17E were the most elevated compared to sham levels. MadCAM-1, sFRP-3, IL-1 R4 and TWEAK R were the most down-regulated proteins. Middle - 72 hr the largest reductions in protein levels were seen for G-CSF, TRANCE, Granzyme B and TGFb1. The largest increases in protein levels were seen for CRP, IL-17E and VEGF-B. Right - 96 hr the proteins IL-20, VEGF-B, CD27 and IL-17E were the most significantly up-regulated proteins by 96 hr. IL-17B, ALK-1, TWEAK R, EGF, GITR L, TRANCE and MadCAM-1 were the most down-regulated proteins. Percentage ‘increase’ values are presented as the mean ± S.E.M. of n cortical samples (see Supplementary file 1 for mean ± S.E.M. and n data). Definitions of additional pathways observed for 48, 72 and 96 hr are: Plasminogen activating cascade (P00050) - the inactive zymogen plasminogen is converted into plasmin. TGF-beta signaling pathway (P00052) - Transforming growth factor beta signaling pathway. Other pathways have been defined elsewhere. Figure 2—source data 1.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/55827/elife-55827-fig3-v3.jpg)
 
-**Figure 3.:** The percentage increase from sham levels are presented, positive values (red) are increases and negative values (green) are reductions in protein levels compared to sham control. Left - 7 days the proteins VEGF-B, SLAM, IL-17E, E-Cadherin and IL-20 were the most elevated compared to sham levels. IL-1 ra, IL-7, MCP-5 and FASL were the most down-regulated proteins. Middle - 14 days the largest reductions were seen for G-CSF, EGF, ALK-1 and IL-1 ra. The largest increases in protein levels were seen for BAFF R, VEGF-B, CD6 and IL-17E. Right – 30 days TRANCE, CD40 L, CTLA4, IL-17E and sFRP-3 were the most significantly up-regulated proteins by 30 days. CRO, OPG, IL-1a, IL-1 ra and IL-6 were the most down-regulated proteins. Percentage ‘increase’ values are presented as the mean ± S.E.M. of n cortical samples (see Supplementary file 1 for mean ± S.E.M. and n data). An additional pathway identified for 7, 14 and 30 days is Notch signaling pathway (P00045) which is defined as follows: a transmembrane receptor that mediates local cell-cell communication and coordinates a signaling cascade. Other pathways have been defined elsewhere. Figure 3—source data 1.Figure 3—source data 1.
+**Figure 3.:** The percentage increase from sham levels are presented, positive values (red) are increases and negative values (green) are reductions in protein levels compared to sham control. Left - 7 days the proteins VEGF-B, SLAM, IL-17E, E-Cadherin and IL-20 were the most elevated compared to sham levels. IL-1 ra, IL-7, MCP-5 and FASL were the most down-regulated proteins. Middle - 14 days the largest reductions were seen for G-CSF, EGF, ALK-1 and IL-1 ra. The largest increases in protein levels were seen for BAFF R, VEGF-B, CD6 and IL-17E. Right – 30 days TRANCE, CD40 L, CTLA4, IL-17E and sFRP-3 were the most significantly up-regulated proteins by 30 days. CRO, OPG, IL-1a, IL-1 ra and IL-6 were the most down-regulated proteins. Percentage ‘increase’ values are presented as the mean ± S.E.M. of n cortical samples (see Supplementary file 1 for mean ± S.E.M. and n data). An additional pathway identified for 7, 14 and 30 days is Notch signaling pathway (P00045) which is defined as follows: a transmembrane receptor that mediates local cell-cell communication and coordinates a signaling cascade. Other pathways have been defined elsewhere. Figure 3—source data 1.
 
-## Significantly altered cortical proteins at 8 and 24 hr post-mTBI
+### Significantly altered cortical proteins at 8 and 24 hr post-mTBI
 
 Numerous proteins were observed to be significantly changed as early as 8 hr after a single mTBI. Specifically, 22 proteins were significantly higher compared to sham; the highest were MIP-3b (+173 ± 63%, n = 7); SLAM (+168 ± 46%, n = 8), VEGF-B (+142 ± 50%, n = 8) and CRP (+104 ± 23%, n = 12). Two proteins were significantly lower compared to sham, FASL (−30 ± 8%, n = 12) and MIP-1a (−58 ± 10%, n = 9), Figure 1, Left - 8 hr. By 8 hr following mTBI, nine of the significantly altered proteins mapped to 10 different gene ontology pathways. The pathways were observed to potentially be deleterious to (pathological), or beneficial (physiological) to cellular processes in response to mTBI. Additional pathways had the potential to be either beneficial or deleterious to cellular processes. The name of the pathway(s) is provided with the identities of the protein(s) that were mapped to the specific pathway(s) for specific time points. Potentially, pathological pathways included Apoptosis signaling pathway (P00006, FASL), FAS signaling pathway (P00020, FASL) and Alzheimer disease-presenilin pathway (P00004, MPP-2). Potentially, physiological pathways included Angiogenesis (P00005, PDGF-AA and bFGF), PDGF signaling pathway (P00047, PDGF-AA) and EGF receptor signaling pathway (P00018, BTC). Other pathways include Inflammation mediated by chemokine and cytokine signaling pathway (P00031, MIP-1a and IFNg R1), Interferon-gamma signaling pathway (P00035, IFNg R1), Interleukin signaling pathway (P00036, gp130) and FGF signaling pathway (P00021, bFGF).
 
 By 24 hr post-mTBI, 46 proteins were significantly lower than sham protein levels; the lowest were IL-1 ra (−75 ± 4%, n = 6); IL-12p40 (−75 ± 5%, n = 8); MCP-5 (−73 ± 5%, n = 5); HAI-1 (−68 ± 10%, n = 4). Ten proteins were higher compared to sham; the highest were CD6 (+89 ± 28%, n = 9) and E-Cadherin (+69 ± 15%, n = 8), Figure 1, Right - 24 hr. Fifteen of the altered proteins mapped to 12 different pathways: pathological pathways included Apoptosis signaling pathway (P00006, FASL, Granzyme B), FAS signaling pathway (P00020, FASL) and Alzheimer disease-presenilin pathway (P00004, E-Cadherin). Physiological pathways included Angiogenesis (P00005, bFGF), CCKR signaling map (P06959, E-Cadherin), Gonadotropin-releasing hormone receptor pathway (P06664, Adiponectin) and Wnt signaling pathway (P00057, E-Cadherin). Other pathways included Inflammation mediated by chemokine and cytokine signaling pathway (P00031, IFN-g, IL-6, IL-15, MIP-1a, MCP-5, IL-1b, Eotaxin, Fractalkine), Interferon-gamma signaling pathway (P00035, IFN-g), Interleukin signaling pathway (P00036, IL-6, IL-15, IL-4), FGF signaling pathway (P00021, bFGF) and Cadherin signaling pathway (P00012, E-Cadherin).
 
-## Significantly altered cortical proteins at 48, 72 and 96 hr post-mTBI
+### Significantly altered cortical proteins at 48, 72 and 96 hr post-mTBI
 
 At 48 hr following mTBI, 23 proteins were higher and 27 proteins were lower than sham (Figure 2, Left - 48 hr). The highest were OPN (+143 ± 56%, n = 8) and CRP (+135 ± 56%, n = 8). The lowest were MadCam-1 (−86 ± 3%, n = 3), sFRP-3 (−75 ± 3%, n = 8) and IL-1 R4 (−74 ± 5%, n = 8). Twelve different proteins significantly altered by 48 hr after mTBI mapped to 11 different functional pathways, pathological pathways were: Apoptosis signaling pathway (P00006, FASL, TNF-R2), FAS signaling pathway (P00020, FASL) and Alzheimer disease-presenilin pathway (P00004, E-Cadherin, MMP-9). Physiological pathways were: Angiogenesis (P00005, bFGF, sFRP-3), CCKR signaling map (P06959, Clusterin, MMP-9, E-Cadherin), Wnt signaling pathway (P00057, sFRP-3, E-Cadherin) and Plasminogen activating cascade (P00050, MMP-9). Other pathways were: Inflammation mediated by chemokine and cytokine signaling pathway (P00031, IL-15, RANTES, Fractalkine), Interleukin signaling pathway (P00036, IL-15, IL-2 Ra), FGF signaling pathway (P00021, bFGF) and Cadherin signaling pathway (P00012, E-Cadherin).
 
@@ -69,7 +69,7 @@ Figure 2, Middle - 72 hr, 21 proteins were lower compared with sham; the lowest 
 
 Figure 2, Right - 96 hr 16 proteins were higher, with the highest being IL-20 (+160 ± 18%, n = 7), VEGF-B (+159 ± 37%, n = 8), CD27 (+150 ± 15%, n = 7) and IL-17E (+131 ± 40%, n = 8). Twenty-eight proteins were reduced, with the lowest being IL-17B (−84 ± 8%, n = 4), ALK-1 (−83 ± 4%, n = 6) and TWEAK R (−80 ± 5%, n = 8). Ten different proteins mapped to 12 different pathways: Apoptosis signaling pathway (P00006, FASL, Trail), FAS signaling pathway (P00020, FASL) and Alzheimer disease-presenilin pathway (P00004, E-Cadherin). Physiological pathways were: Angiogenesis (P00005, sFRP-3), EGF receptor signaling pathway (P00018, EGF), CCKR signaling map (P06959, E-Cadherin), Gonadotropin-releasing hormone receptor pathway (P06664, EGF), Wnt signaling pathway (P00057, sFRP-3, E-Cadherin) and TGF-beta signaling pathway (P00052, ALK-1). Other pathways were: Inflammation mediated by chemokine and cytokine signaling pathway (P00031, Fractalkine, MIP-1a, RANTES), Interleukin signaling pathway (P00036, IL-9) and Cadherin signaling pathway (P00012, E-Cadherin).
 
-## Significantly altered cortical proteins at days 7, 14 and 30 post-mTBI
+### Significantly altered cortical proteins at days 7, 14 and 30 post-mTBI
 
 At later time points after mTBI (7, 14 and 30 days), cortical cytokines and chemokines continued to display significant differences when compared to sham. At 7 days post-mTBI, 40 proteins were significantly different, 16 proteins were higher and 24 were lower (Figure 3, Left −7 days). The three highest were VEGF-B (+230 ± 57%, n = 7), SLAM (+186 ± 61%, n = 6) and IL-17E (+157 ± 37%, n = 12); the three lowest were IL-1 ra (−74 ± 10%, n = 7), IL-7 (−72 ± 9%, n = 9) and MCP-5 (−69 ± 5%, n = 5). Thirteen different proteins mapped to 12 different pathways, pathological pathways were: Apoptosis signaling pathway (P00006, FASL), FAS signaling pathway (P00020, FASL) and Alzheimer disease-presenilin pathway (P00004, E-Cadherin). Physiological pathways were: Angiogenesis (P00005, DLL4, PDGF-AA), PDGF signaling pathway (P00047, PDGF-AA), CCKR signaling map (P06959, E-Cadherin), Gonadotropin-releasing hormone receptor pathway (P06664, Prolactin), Wnt signaling pathway (P00057, E-Cadherin) and Notch signaling pathway (P00045, DLL4). Other pathways were: Inflammation mediated by chemokine and cytokine signaling pathway (P00031, IL-6, IL-15, MCP-5, MIP-1a, Fractalkine, RANTES), Interleukin signaling pathway (P00036, IL-6, IL-1a, IL-15) and Cadherin signaling pathway (P00012, E-Cadherin).
 
@@ -77,19 +77,146 @@ By 14 days post-mTBI, 35 proteins were significantly different, with 19 being hi
 
 At the latest time point assessed in our study, 30 days post-mTBI, 22 proteins were significantly different compared to sham, with 11 proteins being higher and 11 lower (Figure 3, Right - 30 days). The three highest proteins were TRANCE (+247 ± 63%, n = 4), CD40 L (+163 ± 40%, n = 6) and CTLA4 (+119 ± 66%, n = 3); the three lowest were CRP (−57 ± 5%, n = 4), OPG (−57 ± 11%, n = 4) and IL-1a (−49 ± 4%, n = 4). At 30 days after mTBI, seven different proteins mapped to six different pathways, there were no pathological pathways, yet there were several physiological pathways: Angiogenesis (P00005, DLL4 and sFRP-3), Wnt signaling pathway (P00057, sFRP-3) and Notch signaling pathway (P00045, DLL4). Others were Inflammation mediated by chemokine and cytokine signaling pathway (P00031, IL-6, IFN-g, IFNg R1), Interferon-gamma signaling pathway (P00035, IFN-g, IFNg R1) and Interleukin signaling pathway (P00036, IL-6, IL-2 Ra, IL-1a).
 
-## Gene ontology classifications mapped from proteins significantly altered during the study followup
+### Gene ontology classifications mapped from proteins significantly altered during the study followup
 
 Time-dependent changes in the numbers of the significantly altered proteins that mapped to the pathways at all eight time points are shown in Figure 4A–D. The pathways have been shown as ‘Pathological - Cell Death’, ‘Physiological - Cell Survival’ and ‘Context Dependent Pathways’ where the biological response will dependent on the biological function of the proteins that generated the pathway that is pro- or anti-inflammatory in activity. Provided are the names of the pathways and the numbers of altered proteins that mapped to the pathways over time. Pathological Cell Death pathways were observed from the earliest time point until 14 days following the mTBI, and the numbers of proteins that mapped to these pathways peaked around 48 to 72 hr following the injury. By 30 days after the injury, no cell death pathways were observed. Proteins that mapped to cell survival pathways were represented at all eight time points following mTBI. The numbers of proteins that mapped to the pathway were similar at all time points. The inflammation pathway displayed the largest number of altered proteins following mTBI with what may be a biphasic response peaking at 24 hr (eight proteins) and 7 days (six proteins) following injury (Figure 4). The other context-dependent pathways did not show time-dependent changes in protein numbers during the 30-day period.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55827/elife-55827-fig4-v3.jpg)
 
-**Figure 4.:** Changes in protein numbers that mapped to Pathological – Cell Death (A), Physiological – Cell Survival (B/C) and Context-Dependent Pathways (D) are provided. Pathological pathways were observed from 8 hr up to, but not after 14 days following injury, the apoptosis pathway showed the largest number of proteins at 72 hr after injury (A). Physiological pathways were shown to be observed at times similar to that of Pathological pathways, yet in contrast to those, cell survival pathways were present at the 30 day time point. The numbers of proteins that mapped to the cell survival pathways were similar during the study (B/C). Context-dependent pathways were also observed at all times during the study, the pathways which had the largest number of proteins was the inflammation pathway (eight proteins by 24 hr and six proteins at 7 days following TBI (D). The pathways were derived from the identities of the proteins significantly regulated at each time point which were analyzed by the Protein ANalysis THrough Evolutionary Relationships (PANTHER) bioinformatic tool. Figure 4—source data 1.Figure 4—source data 1.
+**Figure 4.:** Changes in protein numbers that mapped to Pathological – Cell Death (A), Physiological – Cell Survival (B/C) and Context-Dependent Pathways (D) are provided. Pathological pathways were observed from 8 hr up to, but not after 14 days following injury, the apoptosis pathway showed the largest number of proteins at 72 hr after injury (A). Physiological pathways were shown to be observed at times similar to that of Pathological pathways, yet in contrast to those, cell survival pathways were present at the 30 day time point. The numbers of proteins that mapped to the cell survival pathways were similar during the study (B/C). Context-dependent pathways were also observed at all times during the study, the pathways which had the largest number of proteins was the inflammation pathway (eight proteins by 24 hr and six proteins at 7 days following TBI (D). The pathways were derived from the identities of the proteins significantly regulated at each time point which were analyzed by the Protein ANalysis THrough Evolutionary Relationships (PANTHER) bioinformatic tool. Figure 4—source data 1.
 
 The time-dependent changes in the eight most frequently changed proteins observed in the cortical antibody arrays are shown in Figure 5A–H. The eight most frequently altered proteins were FASL, VEGF-B, CXCL16, Fractalkine, GAS-1, MIG, IL-1 ra and IL-17E. Figure 5A–H shows the individual animal protein levels and the mean and S.E.M. for each protein and time point. All proteins showed a uniform decrease or increase compared to the sham protein levels, albeit with different degrees of variability. ANOVA and student’s t-test significance markers are shown below each protein, additionally the proteins are listed in Table 1A.
 
+**Table 1.**
+ Mouse cortical tissue proteins significantly altered compared to sham tissue four or more times over the study period.(A) Red font indicates increases in protein levels, blue font indicates reductions in protein levels, black font indicates that the proteins were observed to be both increased and reduced over the duration of the study. (B) Gene ontology definitions are as follows: Pathways are defined elsewhere. Protein class definitions - Signaling molecule (PC00207) - a molecule that is secreted by one cell and received as a signal by a receptor on another cell. Receptor (PC00197) - a protein or complex that spans the plasma membrane, that binds to a signal molecule in the extracellular space and transduces the signal to the cytoplasm. Cytoskeletal protein (PC00085) - a major constituent of the cytoskeleton found in the cytoplasm of eukaryotic cells. Cell adhesion molecule (PC00069) - a protein that mediates cell-to-cell adhesion. Biological process definitions - Cellular process (GO:0009987) - any process that is carried out at the cellular level, but not necessarily restricted to a single cell. Response to stimulus (GO:0050896) - any process that results in a change in state or activity of a cell or an organism as a result of a stimulus. Localization (GO:0051179) - any process in which a cell, a substance, or a cellular entity, such as a protein complex or organelle, is transported, tethered to or otherwise maintained in a specific location. Biological regulation (GO:0065007) - any process that modulates a measurable attribute of any biological process, quality or function. Biological adhesion (GO:0022610) - the attachment of a cell or organism to a substrate, another cell, or other organism. Biological adhesion includes intracellular attachment between membrane regions. Cell population proliferation (GO:0008283) - the multiplication or reproduction of cells, resulting in the expansion of a cell population. Developmental process (GO:0032502) - a biological process whose specific outcome is the progression of an integrated living unit: an anatomical structure (which may be a subcellular structure, cell, tissue, or organ), or organism over time from an initial condition to a later condition. Immune system process (GO:0002376) - any process involved in the development or functioning of the immune system, an organismal system for calibrated responses to potential internal or invasive threats. Multicellular organismal process (GO:0032501) - any biological process, occurring at the level of a multicellular organism, pertinent to its function.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="2">A – Identities of 23 significantly altered proteins</td>
+    </tr>
+    <tr>
+      <td># of significant time points out of 8</td>
+      <td>Protein</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>FASL, VEGF-B</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>CXCL16, Fractalkine, IL-1 ra, MIG, IL-17E, GAS-1</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>IL-1 r4, MBL-2, Progranulin, CRP, E-cadherin</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>GITR, IL-20, CD30L, MIP-1a, RANTES, TCA-3, CD40L, Galectin-1, MadCam-1, Tweak R</td>
+    </tr>
+    <tr>
+      <td colspan="2">B – Identities of significantly altered proteins mapped to different functional categories</td>
+    </tr>
+    <tr>
+      <td>Pathway</td>
+      <td>Protein</td>
+    </tr>
+    <tr>
+      <td>CCKR signaling map (P06959)</td>
+      <td>E-cadherin</td>
+    </tr>
+    <tr>
+      <td>Wnt signaling pathway (P00057)</td>
+      <td>E-cadherin</td>
+    </tr>
+    <tr>
+      <td>FAS signaling pathway (P00020)</td>
+      <td>FASL</td>
+    </tr>
+    <tr>
+      <td>Inflammation mediated by chemokine and cytokine signaling pathway (P00031)</td>
+      <td>Fractalkine, MIP-1a, RANTES</td>
+    </tr>
+    <tr>
+      <td>Apoptosis signaling pathway (P00006)</td>
+      <td>FASL</td>
+    </tr>
+    <tr>
+      <td>Alzheimer disease-presenilin pathway (P00004)</td>
+      <td>E-cadherin</td>
+    </tr>
+    <tr>
+      <td>Cadherin signaling pathway (P00012)</td>
+      <td>E-cadherin</td>
+    </tr>
+    <tr>
+      <td>Protein Class</td>
+      <td>Protein</td>
+    </tr>
+    <tr>
+      <td>Signaling molecule (PC00207)</td>
+      <td>FASL, MIP-1a, Galectin-1, CD40L, CXCL16, VEGF-B, RANTES, TCA-3, MIG</td>
+    </tr>
+    <tr>
+      <td>Receptor (PC00197)</td>
+      <td>IL-1 r4, MBL-2</td>
+    </tr>
+    <tr>
+      <td>Cytoskeletal protein (PC00085)</td>
+      <td>CRP</td>
+    </tr>
+    <tr>
+      <td>Cell adhesion molecule (PC00069)</td>
+      <td>Galectin-1</td>
+    </tr>
+    <tr>
+      <td>Biological Process</td>
+      <td>Protein</td>
+    </tr>
+    <tr>
+      <td>Cellular process (GO:0009987)</td>
+      <td>FASL, IL-1 r4, MIP-1a, Galectin-1, CD40L, MBL-2, CXCL16, MIG, VEGF-B, MadCam-1, E-cadherin, RANTES, TCA-3</td>
+    </tr>
+    <tr>
+      <td>Localization (GO:0051179)</td>
+      <td>MIP-1a, CXCL16, VEGF-B, MadCam-1, RANTES, TCA-3, MIG</td>
+    </tr>
+    <tr>
+      <td>Biological regulation (GO:0065007)</td>
+      <td>MIP-1a, CXCL16, Fractalkine, VEGF-B, MadCam-1, RANTES, TCA-3</td>
+    </tr>
+    <tr>
+      <td>Response to stimulus (GO:0050896)</td>
+      <td>FASL, MIP-1a, CD40L, MIG, VEGF-B, RANTES, TCA-3</td>
+    </tr>
+    <tr>
+      <td>Developmental process (GO:0032502)</td>
+      <td>MBL-2</td>
+    </tr>
+    <tr>
+      <td>Biological adhesion (GO:0022610)</td>
+      <td>MadCAM-1, E-cadherin</td>
+    </tr>
+    <tr>
+      <td>Multicellular organismal process (GO:0032501)</td>
+      <td>MBL-2, VEGF-B</td>
+    </tr>
+    <tr>
+      <td>Cell proliferation (GO:0008283)</td>
+      <td>VEGF-B</td>
+    </tr>
+    <tr>
+      <td>Immune system process (GO:0002376)</td>
+      <td>FASL, CD30L, CD40L, Fractalkine, CRP, MIG</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/55827/elife-55827-fig5-v3.jpg)
 
-**Figure 5.:** Shown are the changes in proteins over time for the proteins FASL (A), VEGF-B (B), CXCL16 (C), Fractalkine (D), GAS-1 (E), MIG (F), IL-1 ra (G) and IL-17E (H). Provided are the mean ± S.E.M. data in bar graph form with the individual animal protein levels (filed circles). Below each component are the statistical markers and the type of ANOVA test that was performed, multiple comparisons were made between the mTBI time points and the sham group. Also, shown are the results of the Student’s T-test, comparing the mTBI time point data with the sham data. Statistical analysis was performed with Prism Ver 8.31 (GraphPad). Figure 5—source data 1.Figure 5—source data 1.
+**Figure 5.:** Shown are the changes in proteins over time for the proteins FASL (A), VEGF-B (B), CXCL16 (C), Fractalkine (D), GAS-1 (E), MIG (F), IL-1 ra (G) and IL-17E (H). Provided are the mean ± S.E.M. data in bar graph form with the individual animal protein levels (filed circles). Below each component are the statistical markers and the type of ANOVA test that was performed, multiple comparisons were made between the mTBI time points and the sham group. Also, shown are the results of the Student’s T-test, comparing the mTBI time point data with the sham data. Statistical analysis was performed with Prism Ver 8.31 (GraphPad). Figure 5—source data 1.
 
 There were 23 proteins identified to be significantly regulated at four or more times from the eight time points during the study. The proteins were relevant to several different pathways, protein classes and biological process classifications. The pathway with the most proteins identified from the group of 23 proteins was Inflammation mediated by cytokine and cytokine signaling (P00031, Fractalkine, MIP-1a and RANTES), and six additional pathways were identified: Alzheimer disease-presenilin (P00004, E-cadherin), Apoptosis signaling (P00006, FASL), CCKR signaling (P06959, E-cadherin), Cadherin signaling (P00012, E-cadherin), FAS signaling (P00020, FASL) and Wnt signaling (P00057, E-cadherin). Pathways have been defined elsewhere.
 
@@ -97,13 +224,174 @@ Four protein classes were identified by mapping the 23 proteins. The protein cla
 
 Nine different biological processes were identified by mapping the proteins. Cellular process mapped the largest number of proteins from the group of 23, (GO:0009987, FASL, IL-1 r4, MIP-1a, Galectin-1, CD40L, MBL-2, CXCL16, MIG, VEGF-B, MadCam-1, E-cadherin, RANTES and TCA-3), followed by Response to stimulus (GO:0050896, FASL, MIP-1a, CD40L, MIG, VEGF-B, RANTES and TCA-3), Localization (GO:0051179, MIP-1a, CXCL16, MadCam-1, MIG, VEGF-B, RANTES and TCA-3) and Biological regulation (GO:0065007, MIP-1a, CXCL16, MadCam-1, VEGF-B, RANTES, Fractalkine and TCA-3). Several other biological processes were identified: Developmental process (GO:0032502, MBL-2), Biological adhesion (GO:0022610, MadCAM-1, E-cadherin), Multicellular organismal process (GO:0032501, MBL-2, VEGF-B), Cell proliferation (GO:0008283, VEGF-B) and Immune system process (GO:0002376, FASL, CD30L, CD40L, Fractalkine, CRP, MIG). All proteins significantly regulated at four or more of the eight time points are listed in Table 1A. The definitions of Protein Class and Biological Process are provided in Table 1B.
 
-## NEV cargo proteins after mTBI
+### NEV cargo proteins after mTBI
 
 A summary of NEV particle concentration and average diameter data is shown in Table 2. There were no significant differences in NEV particle concentration and average diameter between NEV samples from sham animals or mTBI-challenged ones for any time point. Changes in NEV protein levels determined on the SOMAscan assay were small, this observation along with sample variability and low numbers of samples per time point made it challenging to obtain statistical significance comparing the mTBI samples with the sham samples. However, four of the common proteins between the different proteomic platforms showed differences between NEV derived from sham and mTBI-challenged animal samples assessed with the Kruskal-Wallis nonparametric ANOVA test. The proteins were CRP, p value = 0.0196; IL-6, p value = 0.0243; IL-13, p value = 0.0253; MIP-3b, p value = 0.0297, (Figure 6A–D). Performing post-tests and comparing TBI values with those of sham failed to demonstrate any significant differences in the proteins. The strongest positive correlation in protein measurements between the proteomic platforms was for the cytokine IL-10 (the correlation with matched cortical data was +0.56). The strongest negative correlation was for the protein TCK-1 (−0.40). The overall correlations ranged from +0.56 to −0.40 (Supplementary file 2, correlations between cortical tissue and NEV proteins).
 
+**Table 2.**
+ Neuronally enriched EV particle counts and sizes for sham and mTBI time points obtained from mouse plasma.SOMA EV Counts by treatment group, One-way Analysis of Variance (ANOVA), the p value is 0.3560, considered not significant. SOMA EV sizes by treatment group, One-way Analysis of Variance (ANOVA), the p value is 0.2198, considered not significant. Table 2—source data 1.Table 2—source data 1.EV particle.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Sham</th>
+      <th>mTBI</th>
+      <th>mTBI</th>
+      <th>mTBI</th>
+      <th>mTBI</th>
+      <th>mTBI</th>
+      <th>mTBI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EV counts/ml</td>
+      <td></td>
+      <td>hours</td>
+      <td>hours</td>
+      <td>hours</td>
+      <td>days</td>
+      <td>days</td>
+      <td>days</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>8</td>
+      <td>24</td>
+      <td>72</td>
+      <td>7</td>
+      <td>14</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>6.83 × 1010</td>
+      <td>6.54 × 1010</td>
+      <td>5.41 × 1010</td>
+      <td>4.93 × 1010</td>
+      <td>3.86 × 1010</td>
+      <td>4.42 × 1010</td>
+      <td>8.43 × 1010</td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>2.67 × 1010</td>
+      <td>3.94 × 1010</td>
+      <td>2.36 × 1010</td>
+      <td>3.36 × 1010</td>
+      <td>1.89 × 1010</td>
+      <td>2.87 × 1010</td>
+      <td>4.39 × 1010</td>
+    </tr>
+    <tr>
+      <td>SEM</td>
+      <td>8.44 × 109</td>
+      <td>1.97 × 1010</td>
+      <td>1.18 × 1010</td>
+      <td>1.68 × 1010</td>
+      <td>9.48 × 109</td>
+      <td>1.44 × 1010</td>
+      <td>2.20 × 1010</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>10</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>P-value (vs. Sham)</td>
+      <td></td>
+      <td>0.8738</td>
+      <td>0.3753</td>
+      <td>0.2828</td>
+      <td>0.0677</td>
+      <td>0.1607</td>
+      <td>0.4138</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EV size (nm)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>172</td>
+      <td>204</td>
+      <td>164</td>
+      <td>210</td>
+      <td>149</td>
+      <td>171</td>
+      <td>165</td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>38</td>
+      <td>39</td>
+      <td>16</td>
+      <td>58</td>
+      <td>38</td>
+      <td>19</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>SEM</td>
+      <td>12</td>
+      <td>20</td>
+      <td>8</td>
+      <td>28</td>
+      <td>19</td>
+      <td>9</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>10</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>p-value (vs. Sham)</td>
+      <td></td>
+      <td>0.1919</td>
+      <td>0.7117</td>
+      <td>0.1710</td>
+      <td>0.3286</td>
+      <td>0.9536</td>
+      <td>0.7274</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/55827/elife-55827-fig6-v3.jpg)
 
-**Figure 6.:** The Relative Fluorescence Units (RFU) obtained from the SOMAscan assay for NEV proteins are shown. Provided are the mean ± S.E.M. data in bar graph form with the individual animal protein levels (filed circles). Due to the low numbers in the TBI groups, sample normality was tested with the Shapiro-Wilk test, all sham data passed normality, several of the TBI data points were not normally distributed and were subject to ANOVA by Kruskal-Wallis, p values are provided. Below each component are the correlation values comparing matched cortical and NEV sample data. Values are presented as the mean ± S.E.M. of n = 4–10 EV samples. Figure 6—source data 1.Figure 6—source data 1.
+**Figure 6.:** The Relative Fluorescence Units (RFU) obtained from the SOMAscan assay for NEV proteins are shown. Provided are the mean ± S.E.M. data in bar graph form with the individual animal protein levels (filed circles). Due to the low numbers in the TBI groups, sample normality was tested with the Shapiro-Wilk test, all sham data passed normality, several of the TBI data points were not normally distributed and were subject to ANOVA by Kruskal-Wallis, p values are provided. Below each component are the correlation values comparing matched cortical and NEV sample data. Values are presented as the mean ± S.E.M. of n = 4–10 EV samples. Figure 6—source data 1.
 
 ## Discussion
 
@@ -147,7 +435,7 @@ The overall aim of the present study was to identify novel biomarkers related to
 
 The necessity of extracting tissue at specific time points underlies the difficulties in designing a study to both measure time-dependent changes in brain proteins to determine how they may regulate brain neuropathology and also assess animal behavior. These difficulties may be overcome by the use of non-invasive CNS sampling methods, such as plasma derived neuronal extracellular vesicle protein cargo assessments. While these combined proteomic approaches were undertaken to provide insight into new possible biomarkers for mTBI, and the identification of functional pathways derived from significantly changed cortical proteins, additional studies are clearly required with a more focused aim to understand how pharmacological interventions may impact the levels of these candidate biomarkers in both rodent brain and NEVs from humans and animals, in parallel with cognitive, behavioral and neuropathological assessments. Correlations between the common proteins observed on the cortical arrays and the SOMAscan assay platform were weak. This is most likely caused by the small changes seen in the NEV proteins and the low animal numbers. More focused studies are required to investigate correlations between NEV cargo and cortical proteins following mTBI. Only with such information will the full utility of NEVs as non-invasive sources of possible biomarkers of TBI be confirmed, and only at this point we will be able to make any recommendations for candidate human markers of TBI and drug target engagement.
 
-## Conclusion
+### Conclusion
 
 Our findings present evidence of robust, long-lasting changes in cortical protein derived cytokines and chemokines following a single mTBI in mouse. Several of the more frequently changed proteins were novel in the setting of mTBI, namely CXCL16, GAS-1 and VEGF-B, and warrant further investigation as possible drug targets and biomarkers of TBI that may translate to the clinic. Additional studies are required to fully understand the potential role of NEVs and other CNS cell type EVs as non-invasive sources of CNS biomarkers related to mild TBI. These studies will be vital in defining the utility of EV proteins as brain injury severity markers and treatment response markers.
 
@@ -157,20 +445,83 @@ Mouse mTBI studies were conducted at the Intramural Research Program of the Nati
 
 Experimental mTBI was induced using the concussive, closed-scalp head trauma device described previously (Zohar et al., 2003; Milman et al., 2005; Tashlykov et al., 2007; Tweedie et al., 2007). Mice were fully anesthetized by inhalation anesthesia in a closed isoflurane vaporizer chamber. After full anesthesia had been achieved, each animal was placed under a metal tube device with the opening positioned directly over the animal’s head just anterior to the left ear (to provide mild injury to the left cerebral hemisphere). Each mouse was held in a manner such that the force of impact to the skull generated anterior-lateral movements without any rotational movements, analogous to those that occur during closed head injury in automobile accidents. The injury was induced by dropping a 1 cm diameter blunted flat cylindrical metal weight (30 g), inside a metal tube device (inner diameter 13 mm) from a height of 80 cm. This injury is analogous to two humans of the same weight clashing heads. Sham (control) animals were subjected to the same procedure, but without the weight being dropped. After the induction of the injury or sham procedure, mice were placed back in their home cage to allow for recovery from the anesthesia. Mice were randomly assigned to receive either mTBI or sham injury, and those in the former group were then randomly assigned to be euthanized at different post-injury times (Table 3). Due to the observations that even in this mild model of TBI, TBI-induced alterations in brain cells occur in both the ipsilateral and contralateral hemispheres (Tashlykov et al., 2007; Tashlykov et al., 2009), we have included absolute sham operated control animals for comparison with mTBI animal protein measurements. In the design of this study, we chose to include one group of sham animals to be used to compare the effects of mTBI over time rather than including a sham group for each mTBI time point. In brief, we studied a total of 18 sham animals; 12 animals euthanized at each of 8, 24 and 72 hr, 7 and 14 days post-mTBI; eight animals euthanized at each of 48 and 96 hr post-mTBI and four animals euthanized at 30 days post-mTBI evaluation. Selection of animal numbers was based on our prior studies (Israelsson et al., 2009; Tweedie et al., 2007; Tweedie et al., 2016a; Tweedie et al., 2016b). Whole blood was collected from animals that were fully anesthetized and euthanized by decapitation, blood was placed in heparinized tubes. Plasma was prepared from the blood and NEVs were isolated from the plasma. All animals were euthanized in the same way to avoid introducing sampling variations.
 
-## RayBiotech cytokine arrays
+**Table 3.**
+ Mouse sample treatment/time points following mTBI for cerebral cortex (CTX) and plasma-sampled, neuronally enriched EV samples.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Treatment/Time Point</th>
+      <th>CTX (Cytokine/Chemokine Arrays, n)</th>
+      <th>NEV (SOMAscan, n)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sham</td>
+      <td>18</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>mTBI 8 hr</td>
+      <td>12</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>mTBI 24 hr</td>
+      <td>12</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>mTBI 48 hr</td>
+      <td>8</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>mTBI 72 hr</td>
+      <td>12</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>mTBI 96 hr</td>
+      <td>8</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>mTBI 7 Days</td>
+      <td>12</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>mTBI 14 Days</td>
+      <td>12</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>mTBI 30 Days</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+_ND refers to not determined._
+
+### RayBiotech cytokine arrays
 
 Cerebral cortical tissue (specifically, left parietal cortex (the side of injury)) was obtained from sham and mTBI animals (ipsilateral to the mTBI) and immediately frozen to −80°C. Tissue supernatants underwent quantitative assessment of cytokine/chemokine proteins performed by RayBiotech Inc (Norcross, Georgia) utilizing the Quantibody Mouse Cytokine Array 4000 assay kit (Shi et al., 2016a), in five quantitative arrays (QAM-CYT-4,–5, −6,–7, −8 arrays). The arrays are similar to traditional sandwich-based ELISAs only capture antibodies for a number of protein targets are attached to a glass slide in an array format which allows for the multiplex detection of more proteins in one sample at one time. QAM-CYT-4,–5 and −6 were performed with protein loading of 1.5 mg/ml; QAM-CYT-7 and −8 were performed with protein loading of 1.0 and 2.0 mg/ml, respectively.
 
 To understand the functional roles of the significantly changed proteins in the cortical tissue, we took the identities of the mouse proteins/genes and applied them to a web-based tool to examine functional classifications of the altered proteins - Protein ANalysis THrough Evolutionary Relationships (PANTHER; http://pantherdb.org, Mi et al., 2019). We analyzed the proteins that were significantly changed in four and more of the eight time points used in our study and identified pathways, biological process and protein class.
 
-## EV isolation and subsequent characterization
+### EV isolation and subsequent characterization
 
 Heparinized whole blood was collected from a subset of animals at the time of euthanasia. The blood was centrifuged within 1 hr to prepare plasma (10,000 g for 5 mins at 4°C), which was stored immediately at −80°C. The study groups utilized for NEV isolations were as follows: sham, n = 10; 8, 24 and 72 hr post-mTBI, each one, n = 4; 7, 14 and 30 days post-mTBI, each one, n = 4 (Table 3). Total nanoparticles were precipitated from plasma using a commercially available kit, Exoquick TM (Systems Biosciences), followed by enrichment for EVs of neuronal origin by immunoadsorption with an antibody selective for L1 CAM (L1 Cell Adhesion Molecule) (Shi et al., 2016b; Goetzl et al., 2016). The concentration and average diameter of NEVs were assessed by Nanoparticle Tracking Analysis; each NEV sample was diluted 1:100 in PBS, then the diluted samples were processed using Nanosight NS500 (Goetzl et al., 2018). Subsequently, the remaining NEVs were lysed using M-PER (Pierce Thermo) and two freeze-thaw cycles, and total protein concentrations were determined using the BCA assay (Pierce Thermo).
 
-## SOMAscan assay
+### SOMAscan assay
 
 The SOMAscan assay platform uses a technology where chemically modified single stranded oligomers with specific protein binding capabilities are coupled to a capture surface in wells on an assay plate. Each well on the plate has approximately 1300 specific oligomers and hence protein targets. Oligo-protein binding fluorescent signals are used to generate qualitative assessments in the changes of NEV proteins in the NEV lysates. The SOMAscan assay (SomaLogic Inc, Boulder, Colorado), which has the capacity to measure over 1300 proteins in a single sample (Kiddle et al., 2015; Voyle et al., 2015; Sattlecker et al., 2014), was performed on NEV lysates by the Center for Human Immunology, National Institutes of Health, Bethesda, MD, USA. NEV lysates were applied to the SOMAscan assay using equal protein loading conditions (60 µg/ml), and samples were assayed using the SOMAscan Assay Kit 1.3 k (Cells and Tissue). SOMAscan assay data on protein abundance were expressed as relative fluorescence units (RFUs) and were converted into percentage differences compared to sham. We focused our analysis of NEV proteins to a subset that overlapped with significantly regulated proteins in the cortical tissue (94 proteins).
 
-## Statistical Analysis
+### Statistical Analysis
 
 Cortical and NEV derived protein measurements were subject to statistical analysis using GraphPad Prism (8.3.1.). The protein measurements underwent several statistical assessments: (1) outliers were identified and removed from further analysis, (2) data normality was assessed, (3) student’s unpaired t-tests and (4) ANOVAs were performed. Cortical tissue measurements were subjected to the Grubb’s test to identify significant outlier data points, any outliers were excluded from further analysis (Grubbs, 1950). Data normality was assessed by use of the Kolmogorov-Smirnov test or the Shapiro-Wilk test. To determine significant differences between mTBI and sham protein levels we used the following assessments. If data were normally distributed with equal variance, an ordinary student’s unpaired t-test or an ordinary ANOVA followed by Bonferroni's multiple comparisons test was used. If data were normally distributed, but they did not have equal variance an unpaired students t-test with Welch's correction and a Brown-Forsythe and Welch ANOVA was performed with a Dunnett's T3 multiple comparisons test. If data were not normally distributed non-parametric statistical tests were used; a Mann-Whitney student t-test was used and a Kruskal-Wallis ANOVA test followed by a Dunn's multiple comparisons test. Data are presented as the mean ± standard error of the mean (SEM) of n observations, n refers to the number of samples (mice).

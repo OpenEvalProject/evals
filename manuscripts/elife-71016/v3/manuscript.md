@@ -11,12 +11,12 @@
 
 ### Affiliations
 
-1. https://ror.org/01qb1sw63 Museo Storico della Fisica e Centro Studi e Ricerche Enrico Fermi Rome Italy
-2. https://ror.org/017zqws13 Center for Magnetic Resonance Research, Department of Radiology, University of Minnesota Minneapolis United States
-3. https://ror.org/04gqx4x78 Department of Radiation Oncology, Campus Bio-Medico University of Rome Rome Italy
-4. https://ror.org/00qjgza05 Dipartimento di Neuroscienze, Imaging e Scienze Cliniche, Università Gabriele D’Annunzio Chieti Italy
+1. Museo Storico della Fisica e Centro Studi e Ricerche Enrico Fermi Rome Italy ([ROR:01qb1sw63](https://ror.org/01qb1sw63))
+2. Center for Magnetic Resonance Research, Department of Radiology, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
+3. Department of Radiation Oncology, Campus Bio-Medico University of Rome Rome Italy ([ROR:04gqx4x78](https://ror.org/04gqx4x78))
+4. Dipartimento di Neuroscienze, Imaging e Scienze Cliniche, Università Gabriele D’Annunzio Chieti Italy ([ROR:00qjgza05](https://ror.org/00qjgza05))
 5. Biomedical Magnetic Resonance, University Hospital Tübingen and High–Field Magnetic Resonance, Max Planck Institute for Biological Cybernetics Tübingen Germany
-6. https://ror.org/04tfzc498 Fondazione Santa Lucia IRCCS Rome Italy
+6. Fondazione Santa Lucia IRCCS Rome Italy ([ROR:04tfzc498](https://ror.org/04tfzc498))
 
 † Corresponding author
 
@@ -36,25 +36,83 @@ In the present study, we combined BOLD-fMRI and proton functional magnetic reson
 
 ## Results
 
-## Subjects perception of the visual stimuli
+### Subjects perception of the visual stimuli
 
 To achieve perceptual isoluminance between green and red color (necessary for the UF condition), we adjusted the brightness of the green color for each individual subject, which was remarkably similar across subjects (green/red brightness ratio 71.9% ± 1.2%, range 70.1–73.5%) (Figure 1—source data 1). After this procedure, 100% of the subjects confirmed that their perception of the 30 Hz frequency stimulus steadiness was equivalent to the resting condition. Overall, the subject’s perception was a gray/colored checkerboard that in the colored squares showed either a fast green and red alternation during PF epochs, or a static yellow during UF epochs (Video 1). As a further confirmation, while in the scanner the subjects were unable to distinguish the 30 Hz red-green flickering checkerboard (used in the actual experiments) from a color-matched static yellow checkerboard (used for testing only). Specifically, the perception of the steady yellow color versus the 30 Hz red-green flickering was indistinguishable, as assessed by asking the subjects to guess the origin of the stimulus for 10 consecutive trials (average of correct responses 52% ± 16%, not different from chance level, p = 0.62). All subjects reported to distinctly perceive the green and red color when the checkerboard was flickering at 7.5 Hz. None of the subjects perceived the intrinsic flickering of the screen due to the refresh rate (60 Hz).
 
-## Subjects attention and task performance
+![Video 1.](https://cdn.elifesciences.org/articles/71016/elife-71016-video1.mp4.jpg)
+
+### Subjects attention and task performance
 
 To examine the possible modulation of the BOLD signal by attention (Watanabe et al., 2011), we measured pupillometry and task-performance data during all experiments. All subjects maintained gaze on the fixation cross within 0.2–0.3° during all fMRI (Figure 1—figure supplement 1) and 1H-fMRS (Figure 3—figure supplement 1) epochs, with no difference in average gaze location between the different stimulations (one-way analysis of variance [ANOVA], p = 0.96 and p = 0.38, for fMRI runs 1 and 2, respectively, and p = 0.29 and p = 0.19 for 1H-fMRS runs 1 and 2, respectively). Pupil diameter, an index of the noradrenergic tone (DiNuzzo et al., 2019), was fairly stable at around 6.5–7 mm on average during all fMRI (Figure 1—figure supplement 2) and 1H-fMRS (Figure 3—figure supplement 2) epochs (one-way ANOVA, p = 0.99 and p = 0.98, for fMRI runs 1 and 2, respectively, and p = 0.98 and p = 0.96 for 1H-fMRS runs 1 and 2, respectively) across conditions (see also Video 1), indicating that the modulation of perception by noradrenaline (Gelbard-Sagiv et al., 2018) was minimal in our experimental conditions. The hit/miss ratio for the cross rotation task during the stimulation protocol was essentially 1.0, as expected due to the simplicity of the task, for the entire duration of the experiment. In particular, the delay of the response was not statistically different (one-way ANOVA, p = 0.09 and p = 0.77 for fMRI runs 1 and 2, respectively, and p = 0.35 and p = 0.51 for 1H-fMRS runs 1 and 2, respectively) for rest, PF and UF epochs (ranging, on average, between 360 and 460 ms), both during fMRI (Figure 1—figure supplement 3) and 1H-fMRS (Figure 3—figure supplement 3), confirming high and similar levels of subject’s attention across conditions. There was not significant correlation between mean pupil diameter (two-tailed t-test, qFDR = 1 and qFDR >0.16 for fMRI runs 1 and 2, respectively, and qFDR >0.14 and qFDR >0.88 for 1H-fMRS runs 1 and 2, respectively) or gaze displacement (two-tailed t-test, qFDR = 1 and qFDR >0.59 for fMRI runs 1 and 2, respectively, and qFDR >0.13 and qFDR = 1 for 1H-fMRS runs 1 and 2, respectively) and task performance during both fMRI (Figure 1—figure supplement 4) and 1H-fMRS (Figure 3—figure supplement 4). Finally, in-scanner head motion during fMRI scans was minimal and not significantly different for all subjects across epochs (mean framewise displacement 0.25 ± 0.12 mm for rest, 0.24 ± 0.14 mm for PF, 0.23 ± 0.08 mm for UF; one-way ANOVA, p = 0.77). Overall, behavioral and physiological variables associated with attentional load were maintained at considerably constant levels in all subjects.
 
-## Similar BOLD responses in V1 to PF and UF
+### Similar BOLD responses in V1 to PF and UF
 
 To achieve the same BOLD response in V1 during PF and UF, we reduced the stimulation contrast for the 7.5 Hz condition to 75% relative to the 30 Hz condition (Figure 1—figure supplement 5). As expected, we found that the average BOLD time course (one-way ANOVA, p = 0.42), onset time (one-way ANOVA, p = 0.93) and time-to-peak (paired sample t-test, p = 0.29) did not differ between PF and UF (Figure 1A, C and D). Similarly, the BOLD change in the subject-matched spectroscopic volume-of-interest (VOI; on average consisting of 47% ± 9% of BA17, 21% ± 12% of BA18, and 16% ± 9% of BA19), was not different (0.44% ± 0.30% for PF vs 0.41% ± 0.25% for UF, paired sample t-test, p = 0.71) between the two conditions (Figure 1B). Bayesian analysis indicated moderate evidence for the absence of a difference between conditions (paired sample Bayesian t-test, BF01 = 3.2). The fMRI activations to PF and UF both peaked in V1 and distinctly spanned bilaterally in secondary visual areas ((Figure 2A, B), one-sample t-test, false discovery rate [FDR] corrected at cluster level, q < 0.05, voxel level p < 0.001).
 
-## Different BOLD responses in secondary visual areas to PF and UF
+![Figure 1.](https://cdn.elifesciences.org/articles/71016/elife-71016-fig1-v3.jpg)
+
+**Figure 1.:** (A) Mean time-course of blood oxygenation level-dependent (BOLD) signals in the transition between rest and perceived flickering (PF) or rest and unperceived flickering (UF), averaged over the fMRI voxels corresponding to the subject-specific spectroscopic VOI. (B) BOLD percent change during the experimental conditions, averaged over the fMRI voxels corresponding to the subject-specific spectroscopic VOI. No statistically significant difference in BOLD response was found between the two conditions with conventional statistics, and Bayesan paired sample t-test indicated moderate evidence for the absence of difference between the conditions. (C, D) Average onset time as a function of peak intensity fraction and corresponding time-to-peak (i.e., at 100% peak intensity). There is a small, although not statistically significant trend for slower onset and longer time-to-peak of BOLD increase during the UF condition. (E) BOLD percent change averaged over the fMRI voxels corresponding to the Brodmann Area 17 (i.e., V1). Within V1, there is no difference between PF and UF condition (unpaired two-sample t-test, p = 0.72). (F) BOLD percent change averaged over the fMRI voxels corresponding to the Brodmann Areas 18 and 19 (e.g., including V2, V3a, V4v, and V5/MT). Within these areas, the response to PF is significantly larger than the corresponding response to UF (unpaired two-sample t-test, p = 0.008). *, statistically significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71016/elife-71016-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Left panels. Average heatmaps of eyes position (across subjects) during fMRI sessions (runs 1 and 2, respectively). Middle panels. Stability of mean gaze displacement from the fixation point. Right panels. Gaze displacement was not different across conditions.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71016/elife-71016-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A, B) Left panels. Average pupil diameter (across subjects) during fMRI sessions (runs 1 and 2, respectively). Right panels. Mean pupil diameter was not statistically different across conditions.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/71016/elife-71016-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A, B) Average task performance (across subjects) during fMRI sessions (runs 1 and 2, respectively). Response delay was not statistically different across conditions.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/71016/elife-71016-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A, B) Correlation between task performance and eye-tracking data during fMRI sessions (runs 1 and 2, respectively). Left panels. There was no correlation between response delay and mean gaze displacement. Right panels. There was no correlation between response delay and mean pupil diameter.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/71016/elife-71016-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** Calibration of image contrast to match BOLD response in V1 to PF and UF obtained in a preliminary session. The contrast of the PF image was reduced to 75% for subsequent stimulations (i.e., common to all subjects).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/71016/elife-71016-fig2-v3.jpg)
+
+**Figure 2.:** (A) Statistical maps for group-averaged positive effect of the perceived flickering (PF) visual stimulation versus rest (i.e., PF > rest). (B) Statistical maps for group-averaged positive effect of the PF visual stimulation versus rest (i.e., unperceived flickering [UF] > rest). (C) Overlap between activation maps relative to PF and UF. (D) Differential effect of stimulation (PF> UF). The differential response related to perception is localized in the lateral occipital cortex (secondary visual areas), with no responding voxels inside V1. For comparison, the inverse differential effect of stimulation (UF > PF) has no significant responding voxels (not shown). All statistical activation maps are thresholded at p < 0.001, with a false discovery rate (FDR) correction at the cluster level (corresponding to qFDR <0.05), and overlaid on MNI template.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71016/elife-71016-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Intensity map of echo-planar (EPI) images acquired with the surface coil normalized to MNI template, superimposed to different regions of interest (ROIs, in white). Top panels. Average spectroscopic voxel (1H-fMRS [functional magnetic resonance spectroscopy] volume-of-interest [VOI]). Bottom panels. BA17 (i.e., V1), BA18, and BA19. (B) Location of the perceived flickering (PF) > unperceived flickering (UF) regions (green) in comparison with the spectroscopic VOI (red). The overlapping voxels are in yellow. Note that the average spectroscopic VOI has been thresholded to have the same mean volume (i.e., number of voxels) of the single-subject 1H-fMRS VOIs.
+
+### Different BOLD responses in secondary visual areas to PF and UF
 
 To better characterize the effect of the two different stimulations, we estimated the main effect of the flickering frequency. The main effect of PF appeared in the lateral occipital cortices, but not in V1 (Figure 2C and D; Figure 2—source data 1). Bilaterally, 17.5% (i.e., 18 voxels out of 103) of the cortical volume preferentially activated by PF overlapped with the average spectroscopic VOI (Figure 2—figure supplement 1), corresponding to a contamination of approximately 0.5% (i.e., 18 voxels out of 3691). Although the electrophysiological activity in V1 could not be directly assessed in our experiment, based on the literature (Logothetis et al., 2001) we can obtain a rough surrogate of V1 output by evaluating fMRI signals in the secondary visual areas, which receive input directly from V1. While the average BOLD response in V1 (Brodmann Area 17) was similar (0.85% ± 0.45% vs 0.80 ± 0.42%, paired sample t-test, p = 0.72) for the two stimulation conditions (Figure 1E), the average BOLD change in secondary visual areas (Brodmann Areas 18 and 19) was significantly (0.61% ± 0.29% vs 0.39 ± 0.18%, paired sample t-test, p = 0.008) higher during PF than UF (Figure 1F), indicating a larger output from V1 during PF compared with UF. Thus, V1 exhibited the same BOLD signal despite known differences in visual processing for PF and UF (Viswanathan and Freeman, 2007).
 
-## Dissociation between metabolic and BOLD responses in V1 during loss of visual perception
+### Dissociation between metabolic and BOLD responses in V1 during loss of visual perception
 
 To assess whether metabolism was sensitive to stimulus processing within V1 we performed single-voxel 1H-fMRS. The reproducible BOLD response in the occipital lobe elicited by the PF and UF stimulations allowed a very accurate VOI positioning for 1H-fMRS. High quality (water linewidth 7.2 ± 0.6 Hz) and artifact-free spectra were reliably obtained from almost all subjects (Figure 3A; Figure 3—figure supplement 5; Figure 3—source data 1). Compared with resting conditions, the lactate and glutamate concentrations within V1 increased by 0.29 ± 0.18 and 0.28 ± 0.16 μmol/g, respectively, during the PF stimulation corresponding to an increase of about 28% and 3%, respectively, over the baseline (paired sample t-test, qFDR = 0.001), whereas they both remained at their basal levels (−0.04 ± 0.13 μmol/g, qFDR = 0.42 for lactate, and 0.03 ± 0.17 μmol/g, qFDR = 0.63 for glutamate) during the UF stimulation (Figure 3B). The lactate and glutamate responses were significantly different (paired sample t-test, qFDR = 0.01 for lactate and qFDR = 0.003 for glutamate) among the two stimulation conditions (Figure 3). No other metabolites among those quantified showed a reliable stimulation-dependent change (Figure 3—source data 2). We were unable to detect a reliable change for aspartate (paired sample t-test, qFDR = 0.98), a proposed index of MAS and oxidative metabolism (Mangia et al., 2007a).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71016/elife-71016-fig3-v3.jpg)
+
+**Figure 3.:** (A) Spectroscopic data acquired during resting (R, cyan) as well as perceived flickering (PF; black) and unperceived flickering (UF; gray) conditions, averaged across subjects. A single-subject representative voxel location is reproduced on a parasagittal view of the blood oxygenation level-dependent (BOLD) activation and superimposed on the anatomical scan from the same subject. For visualization purposes, the processing of the spectra included frequency and phase correction of single transients, averaging, eddy currents correction, and Fourier transform. (B) Lactate, glutamate, and aspartate concentration changes during the stimulation conditions, relative to the rest conditions acquired immediately before. Data are averaged across subjects. There is significant increase in lactate (+28%) and glutamate (+3%) levels induced by PF stimulus, but not by UF stimulus. The concentration changes of the two metabolites were significantly different across the stimulation conditions, while there was no change for aspartate. (C, D) Spectral total creatine (tCr) and total N-acetylaspartate (tNAA) linewidth changes induced by the PF and UF stimuli show no statistically significant difference. (E) Differences between spectra acquired in the three experimental conditions. For reference, the corresponding LCModel fits are reported on the bottom for the Lac and Glu signals. tCr and tNAA singlets showed the expected BOLD-related features: there is a difference between stimulation and rest, but the difference spectra between the active conditions are within the noise. In the regions of lactate and glutamate the difference spectra between PF and rest and between PF and UF are similar, while they are clearly distinct from the difference spectra between UF and rest. *, statistically significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71016/elife-71016-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Left panels. Average heatmaps of eyes position (across subjects) during 1H-fMRS sessions (runs 1 and 2, respectively). Middle panels. Stability of mean gaze displacement from the fixation point. Right panels. Gaze displacement was not different across conditions.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/71016/elife-71016-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B) Left panels. Average pupil diameter (across subjects) during 1H-fMRS sessions (runs 1 and 2, respectively). Right panels. Mean pupil diameter was not statistically different across conditions.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/71016/elife-71016-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A, B) Average task performance (across subjects) during 1H-fMRS sessions (runs 1 and 2, respectively). Response delay was not statistically different across conditions.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/71016/elife-71016-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** (A, B) Correlation between task performance and eye-tracking data during 1H-fMRS (functional magnetic resonance spectroscopy) sessions (runs 1 and 2, respectively). Left panels. There was no correlation between response delay and mean gaze displacement. Right panels. There was no correlation between response delay and mean pupil diameter.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/71016/elife-71016-fig3-figsupp5-v3.jpg)
+
+**Figure 3—figure supplement 5.:** Averaged spectra across individual epochs (left: REST; center: perceived flickering [PF]; right: unperceived flickering [UF]) of the subset of subjects (N = 16) who had a reliable quantification for both Lac and Glu.
 
 To confirm our fMRI result of similar BOLD effect during PF and UF, we examined linewidth narrowing of total creatine (tCr) and total N-acetylaspartate (tNAA) signals. We found a stimulation-induced decrease of tCr and tNAA linewidth during both PF and UF (Figure 3C, D) that was not statistically different between the two conditions (0.56 ± 0.04 vs 0.56 ± 0.05 Hz for tCr, paired sample t-test, p = 0.70; 0.55 ± 0.03 vs 0.56 ± 0.05 Hz for tNAA, paired sample t-test, p = 0.89).
 
@@ -76,7 +134,7 @@ The role of the primary visual cortex in stimulus perception is an intense area 
 
 Our study has some limitations. For instance, the fMRI measurements have been obtained using 30 s epochs, while the fMRS measurements have been obtained using 4 min epochs. Long acquisition times are required for achieving a good sensitivity of the 1H-fMRS measurements and a reliable metabolite quantification, even at magnetic fields of 3T. Nonetheless, results in both humans (Mangia et al., 2007b) and rats (Just et al., 2013) have shown that prolonged (i.e., minutes) stimulations elicit a persistent BOLD response with minimal attenuation. Although we cannot exclude a certain degree of neuronal adaptation, we confirmed that the BOLD effect during the fMRS acquisition was indeed relatively stable as determined by the linewidth changes of tCr and tNAA signals. Another limitation to consider is represented by the large volume used for 1H-fMRS measurements. It could be possible that the observed changes in lactate levels include distinct neuronal populations showing nonuniform responses. Indeed, although the main differential effect of frequency was located far from the calcarine sulcus, it also involved some mid hemispheric areas presumably included in the spectroscopic voxel. As an illustration, heterogeneity in the response to stimulation within V1 might be due to, for example, eccentricity (Chai et al., 2019), which we however minimized by using a 3° foveal stimulation. There is also an hemispheric lateralization for the spatial frequencies (Kauffmann et al., 2014), but this is not likely to apply to our study, as we used the same radial checkerboard (i.e., including many spatial frequencies) for both PF and UF. The finding that the changes in BOLD signal during PF and UF were nearly double in the anatomical (i.e., Brodmann atlas-based) V1 compared with the spectroscopic VOI indicates a substantial partial-volume effect. The associated loss of sensitivity entails that the lactate concentration change that we report here might in fact be underestimated. Furthermore, we cannot exclude that feedback input to V1 from secondary visual areas might be taking place during stimulus perception (Watkins et al., 2006). However, under our experimental design we were able to fully control BOLD response in V1 by only acting on stimulus contrast, without altering the subjective perception of the stimuli, which indicates that the BOLD activity in V1 largely reflected stimulus features. Finally, we based the positioning of the spectroscopic VOI solely on the online estimate of the stimulus-induced BOLD signal change. In particular, we could not perform online retinotopic mapping for driving the positioning of the spectroscopic VOI, as this would have increased the acquisition protocol duration to an impractical length for guaranteeing good attention levels and absence of motion during the 1H-fMRS session. In any case, partial-volume effects are unavoidable because the STEAM sequence we used requires a box-shaped VOI, which would have not allowed us to entirely avoid the inclusion of tissue outside V1, regardless of the availability of the retinotopic map.
 
-## Conclusion
+### Conclusion
 
 In this study, we report for the first time that visual perception has a measurable metabolic effect on V1. Although we could not establish any causal relation between metabolism and perception, our findings imply that BOLD-fMRI and 1H-fMRS are complementary techniques. Specifically, they are capable of highlighting different aspects of neural activation and stimulus processing, for example, under conditions in which synaptic and spiking activity are partially disentangled due to an alteration of excitation/inhibition patterns and, in turn, local input/output balance.
 
@@ -86,41 +144,41 @@ We suggest that the cortical metabolic profile might be an indicator of sensory 
 
 ## Materials and methods
 
-## Setup
+### Setup
 
 MR measurements were performed on a 3T head-only scanner (Siemens Allegra, Erlangen, Germany), equipped with high performance gradients (amplitude 40 mT/m, rise time 100 μs). A custom-built quadrature surface coil (loop and butterfly design, Rapid Biomedical, Rimpar, Germany) was used for both RF transmission and detection. The coil design traded usable volume (Figure 2—figure supplement 1) for peak sensitivity. For imaging, first- and second-order shim terms were adjusted using the automatized Siemens routine based on field map acquisition and fitting. For MRS, shimming was optimized using FASTMAP with EPI readout (Gruetter and Tkác, 2000) and manually refined when necessary to reach a water linewidth of less than 9 Hz.
 
-## Subjects
+### Subjects
 
 A total of 32 healthy volunteers were initially enrolled for this study after they gave informed consent, according to the Helsinki declaration and to European Union regulations, and following the approval by the Ethics Committee of the Fondazione Santa Lucia IRCCS (Rome). Exclusion criteria included any kind of previous neurological or psychiatric disease and impaired visual acuity. Thirteen subjects were discarded either upon online fMRI processing (see below) or in early quality control on data, because of motion (3) or because the most activated area was in unfavorable position with respect to the surface-coil sensitive volume (10). Nineteen healthy volunteers (10 females, 9 males; age 25 ± 4 years), mean ± standard deviation (SD; age range 20–35 years) were thus considered for this study. Sample size calculations performed before the study assumed a two-tail paired t-test design, a power of 0.95 and were based on an effect magnitude for lactate change (photic stimulation vs rest) of 0.20 ± 0.15 μmol/g as estimated in our previous works at 7T (Bednařík et al., 2018). Reduced sensitivity of 3T vs 7T was empirically accounted for by larger VOI and extended data averaging (144 transients per condition, 10 ml VOI at 3T vs 64 transients per condition, 8 ml VOI at 7T). The resulting required sample size of 10 was roughly doubled to account for multiple comparisons.
 
-## Visual stimulation
+### Visual stimulation
 
 Visual stimulation consisted in a radial checkerboard flickering either at 7.5 Hz (PF stimulation) or at 30 Hz (UF stimulation). The alternating frames included either a gray-green or a gray-red checkerboard. The stimuli were programmed in Cogent 2000 version 1.29 working under Matlab 2006b (The Mathworks, Natick, MA, USA) and delivered using an MR-compatible fMRI system with stereo 3D goggles (VisuaStim Digital, Resonance Technology, Inc, Northridge, CA, USA). Subjects were fitted with the VisuaStim video goggles (resolution: SXGA 1280 × 1024 pixels, refresh rate: 60 Hz, field of View: 30° horizontal × 24° vertical, White Luminance: 70 cd/m2 max, contrast ratio: intrinsic 100:1 measured per VESA FPDM standard).
 
-## Experimental protocol
+### Experimental protocol
 
 Visual stimulations were presented in eight (fMRI) or four (fMRS) epochs, with stimulation epochs (either PF or UF) interleaved by rest (isoluminant, uniform gray images) epochs. Since the CFF is higher for luminance than for chromatic flickering (Jiang et al., 2007), before each session the brightness of green squares during the UF condition (i.e., isoluminant condition) was adjusted interactively by the subject, who piloted increasing and decreasing brightness ramps and was instructed to identify the brightness level corresponding to loss of luminance flickering perception of the resulting yellow. The green level was then set midway between the two perceptual vanishing levels. The stimulus contrast was adjusted in preliminary acquisitions on five subjects, in order to induce a comparable BOLD response to PF and UF in V1 (Figure 3A) During the fMRI sessions epochs lasted 30 s each (total 4 min), while for fMRS acquisitions epochs were 4 min long (total 16 min). Each subject underwent 1 fMRI and 2 fMRS runs (10 min apart, without moving the subject from inside the scanner); the order of PF and UF conditions was counterbalanced within each subject, and the initial stimulation type was randomized between subjects.
 
-## Task
+### Task
 
 In order to maintain visual fixation and keep a constant attentional state, the subjects were asked to focus on a central target (a cross) and to press a button whenever the target rotated. Subjects were specifically instructed to maintain their attention on the fixation cross rather than focusing on reaction times (i.e., speed to push the button). The number of rotations was constant across the different epochs (3 for each fMRI epoch and 24 for each 1H-fMRS epoch, or approx. 1 rotation every 10 s), while the exact timing of the rotation was pseudorandomized (range 2–18 s).
 
-## Anatomical and fMRI data acquisition
+### Anatomical and fMRI data acquisition
 
 Each study started with an anatomical acquisition (MPRAGE T1-weighted volumetric scan, resolution 1.2 × 1.2 × 1.2 mm3, para-axial slices, in-plane field of view (FOV) 190 × 70 mm2, TE = 4.38 ms, TR = 2000 ms, TI = 910 ms, FA = 8°). Then, one fMRI session (pseudorandomized order of stimulation across subjects) was acquired (gradient echo with EPI readout, resolution 2.2 × 2.2 × 2.2 mm3, 26 para-axial contiguous slices, FOV 190 × 70 mm2, TE = 30 ms, TR = 1500 ms, FA = 70°). fMRI scans were processed online for subsequent MRS voxel positioning (online processing included motion correction, smoothing, cross-correlation with a square-wave model; the two scans following each condition change were discarded in order to reduce the effects of BOLD signal transients. Online processing was discarded after voxel positioning).
 
 To confirm the absence of any detectable brain pathology in our subjects, T1- and T2-weighted anatomical scans were acquired with a standard volume birdcage coil after the end of the functional scans. Anatomical scans included an MPRAGE acquisition (resolution 1.0 × 1.0 × 1.0 mm3, para-axial slices, in-plane FOV 256 × 160 mm2, TE = 2.48 ms, TR = 2150 ms, TI = 1000 ms, FA = 8°), that was later used during the postprocessing for normalization purposes.
 
-## fMRS data acquisition
+### fMRS data acquisition
 
 The spectroscopic voxel (size 25 × 20 × 20 mm3) was localized in the most activated area within V1, based on both anatomical scan and results of the online fMRI processing. The voxel was located either left or right of the interhemispheric fissure to minimize the cerebrospinal fluid fraction in the VOI. Two MRS sessions were acquired with an optimized, in-house written STEAM sequence (TE = 7 ms, TM = 50 ms, TR = 3000 ms, FA = 70°) which included outer volume saturation and VAPOR water suppression (Tkác et al., 2001; Tkác et al., 1999). An eight-step phase cycle was used; transients were averaged within each phase cycle, and each phase cycle was saved separately for further processing. Water unsuppressed data were acquired from the same voxel for eddy currents compensation (Klose, 1990). In order to minimize T1 weighting, the flip angle was kept below the calculated Ernst angle in both fMRI and fMRS acquisitions.
 
-## Pupillometry
+### Pupillometry
 
 In order to monitor attentional state with a physiological parameter, we acquired pupillometry data using an eye-tracking system (Applied Science Laboratories, model 504) equipped with a remote pan/tilt optic infrared module and a video camera that was custom adapted for use in the scanner. Subject gaze position and pupil size data were processed as previously described (DiNuzzo et al., 2019).
 
-## fMRI data processing
+### fMRI data processing
 
 fMRI (offline) processing was performed with routines from SPM12 (Wellcome Trust Centre for Neuroimaging, UCL) working under Matlab 2018b, AFNI (Cox, 1996), and FSL5 (Jenkinson et al., 2012), and with custom Matlab routines. fMRI data were realigned to their mean image to compensate for head movements. Realigned images were then normalized to the MNI template (2 × 2 × 2 mm3) by using the nonlinear transformation calculated on the MPRAGE acquired with the volume coil, after a linear coregistration that used the surface-coil MPRAGE image as intermediate step to best match the volume-coil MPRAGE to the fMRI series. Normalized images were spatially smoothed with an isotropic 4 mm full width at half-maximum Gaussian kernel. A general linear model (GLM) analysis with boxcars functions convolved with the hemodynamic response function was applied to localize the regions responding to the PF and UF conditions. The GLM model included a high-pass filter (128 Hz) and the six rotational and translational parameters obtained from the realignment step.
 
@@ -128,11 +186,11 @@ For the VOI-based analysis, images underwent the same processing pipeline with t
 
 Head motion during fMRI acquisitions was evaluated using the framewise displacement, which was calculated as the L1-norm of the realignment-derived parameters after converting angles to linear displacements (Power et al., 2012).
 
-## 1H-fMRS data processing
+### 1H-fMRS data processing
 
 MRS data were preprocessed using jMRUI 5.2 (Naressi et al., 2001) and custom Matlab routines. Data were corrected for residual eddy currents, individually phased and frequency shifted to compensate for B0 drifts, and averaged in blocks corresponding to each rest or stimulation epoch. The first eight transients of each epoch, that is the first full phase cycle (24 s) were discarded to avoid metabolic transients (Mangia et al., 2007a). Subsequent phase cycles were inspected individually. They consistently showed good water suppression and no trace of lipidic contamination. A few 8-transient spectra (maximum one in each epoch) featured anomalous line broadening, line splitting or otherwise reduced quality, putatively related to subject motion or deep inspiration, and were discarded before averaging. Each epoch spectrum was thus the average of 64–72 transients. The resulting averages were finally quantified using LCModel 6.3-1 (Provencher, 1993) with a tailored basis set. Basis metabolites included alanine, aspartate (Asp), creatine (Cr), γ-aminobutyric acid (GABA), glutamine (Gln), glutamate (Glu), glycine, glycerylphosphorylcholine, glutathione (GSH), lactate (Lac), myo-inositol (Ins), N-acetylaspartate (NAA), N-acetylaspartylglutamate (NAAG), phosphocholine, phosphocreatine, phosphorylethanolamine, scyllo-inositol, and taurine (Tau). Glucose, an important marker of energy metabolism, whose changes have also been reported in previous 7T studies (Bednařík et al., 2015; Mangia et al., 2007a), was not included in the basis set due to highly unreliable quantification observed in preliminary tests. Metabolite spectra were simulated using GAVA (Soher et al., 2007), including information on the sequence pulse program. The basis set included also a macromolecular signal, that was acquired on each subject in the occipital region, using a double inversion recovery approach (STEAM, TI1 = 1700 ms, TI2 = 520 ms, TE = 7 ms, TM = 50 ms, TR = 2000 ms, FA = 90°) (de Graaf et al., 2006), that resulted in almost complete metabolite nulling, averaged between subjects, and then modeled with Hankel–Lanczos singular value decomposition. LCmodel quantifications with Cramér–Rao lower bounds above 30% were discarded, except for Lac for which the threshold was set at 35%. Since this study is focused on epoch-to-epoch metabolic changes, absolute quantification with water referencing was not performed to avoid the uncertainty associated with motion between scans, relaxation, and partial-volume corrections for white matter and gray matter in the VOI. Metabolites were instead normalized to the tCr signal amplitude fitted over each run, which was here assumed to correspond to 7.5 μmol/g (see de Graaf, 2007). Eleven metabolites were quantified in at least 15 subjects (80% of participants). These included aspartate, tCr, GABA, glutamate, glutamine, glutathione, lactate, myo-inositol, tNAA (or NAA plus NAAG), total choline, and taurine. In order to take BOLD-induced spectral linewidth alterations into account during the fMRS acquisitions, we determined the BOLD effect as the kernel size (in Hz) that minimized the difference spectra (windowed around the reference metabolite peak, or 2.82–3.14 ppm for tCr and 1.75–2.25 ppm for tNAA) between the stimulated epoch (either PF or UF) and the preceding resting epoch, under the assumption that the levels (i.e., area under the peak) of tCr and tNAA remain constant across epochs (de Graaf, 2007). All spectra were then averaged according to three categories: rest, PF, and UF conditions, and differences were calculated after performing linewidth matching between stimulated and corresponding rest conditions (Mangia et al., 2007a).
 
-## Statistics
+### Statistics
 
 For pupillometry and task-performance results, statistical comparisons were made using Student’s t-test and one-way ANOVA on the rest, UF, and PF conditions. No post hoc test was necessary. Correlations between mean pupil diameter or gaze displacement and task performance were computed as Kendall’s tau coefficients and corrected for multiple comparisons using FDR.
 
@@ -142,7 +200,7 @@ For fMRS results, statistical analysis was restricted to those reliably quantifi
 
 Data were presented as the mean ± SD. A p value, or a qFDR value where relevant, of less than 0.05 was considered as statistically significant.
 
-## Data and materials availability
+### Data and materials availability
 
 All data that support the findings of this study are available from the corresponding author upon signing a MTA that would include a list of authorized researchers and the commitment to no further distribute the materials. Data are not available in a public repository at the time of this publication because of constraints originally set by the Ethics Committee and included in the informed consent signed by participants.
 

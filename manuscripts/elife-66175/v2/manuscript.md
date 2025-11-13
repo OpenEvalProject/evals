@@ -34,9 +34,25 @@ We report here on the behavior of laboratory mice in a complex labyrinth of tunn
 
 ## Results
 
-## Adaptation to the maze
+### Adaptation to the maze
 
 At the start of the experiment, a single mouse was placed in a conventional mouse cage with bedding and food. A short tunnel offered free access to a maze consisting of a warren of corridors (Figure 1A–B). The bottom and walls of the maze were constructed of black plastic that is transparent in the infrared. A video camera placed below the maze captured the animal’s actions continuously using infrared illumination (Figure 1B). The recordings were analyzed offline to track the movements of the mouse, with keypoints on the nose, mid-body, tail base, and the four feet (Figure 1D). All observations were made in darkness during the animal’s subjective night.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig1-v2.jpg)
+
+**Figure 1.:** Top (A) and side (B) views of a home cage, connected via an entry tunnel to an enclosed labyrinth. The animal’s actions in the maze are recorded via video from below using infrared illumination. (C) The maze is structured as a binary tree with 63 branch points (in levels numbered 0,…,5) and 64 end nodes. One end node has a water port that dispenses a drop when it gets poked. Blue line in A and C: path from maze entry to water port. (D) A mouse considering the options at the maze’s central intersection. Colored keypoints are tracked by DeepLabCut: nose, mid body, tail base, four feet.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Fraction of time spent in the maze. Mice could move freely between the home cage and the maze. For each animal (vertical), the fraction of time in the maze (color scale) is plotted as a function of time since start of the experiment. Time bins are 500 s. Note that mouse D6 hardly entered the maze; it never progressed beyond the first junction. This animal was excluded from all subsequent analysis steps.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Average fraction of time spent in the maze by group. This shows the average fraction of time in the maze as Mean ± SD over the population of 10 rewarded and nine unrewarded animals. Right: expanded axis for early times. The tunnel to the maze opens at time 0. Rewarded and unrewarded animals used the maze in remarkably similar ways. Exploration of the maze began around 250 s after tunnel opening. Within the next 250 s, the maze occupancy rose quickly to ~70%, then declined gradually over 7 h to ~30%.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Rates of transition between cage and maze. (A) The instantaneous probability per unit time $r_{m}⁢(t)$ of entering the maze after having spent time $t$ in the cage. Note this rate is highest immediately upon entering the cage, then declines by a large factor. (B) The instantaneous probability per unit time $r_{c}⁢(t)$ of exiting the maze after having spent time $t$ in the maze.
 
 The logical structure of the maze is a binary tree, with 6 levels of branches, leading from the single entrance to 64 endpoints (Figure 1C). A total of 63 T-junctions are connected by straight corridors in a design with maximal symmetry (Figure 1A, Figure 3—figure supplement 1), such that all the nodes at a given level of the tree have the same local geometry. One of the 64 endpoints of the maze is outfitted with a water port. After activation by a brief nose poke, the port delivers a small drop of water, followed by a 90 s time-out period.
 
@@ -48,23 +64,51 @@ We examined the rate of transitions from the cage to the maze and how it depends
 
 The nature of the animal’s forays into the maze changed over time. We call each foray from entrance to exit a ‘bout’. After a few hesitant entries into the main corridor, the mouse engaged in one or more long bouts that dove deep into the binary tree to most or all of the leaf nodes (Figure 2A). For a water-deprived animal, this typically led to discovery of the reward port. After ~10 bouts, the trajectories became more focused, involving travel to the reward port and some additional exploration (Figure 2B). At a later stage still, the animal often executed perfect exploitation bouts that led straight to the reward port and back with no wrong turns (Figure 2C). Even at this late stage, however, the animal continued to explore other parts of the maze (Figure 2D). Similarly the unrewarded animals explored the maze throughout the night (Figure 1—figure supplement 2). While the length and structure of the animal’s trajectories changed over time, the speed remained remarkably constant after ~50 s of adaptation (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig2-v2.jpg)
+
+**Figure 2.:** Four sample bouts from one mouse (B3) into the maze at various times during the experiment (time markings at bottom). The trajectory of the animal’s nose is shown; time is encoded by the color of the trace. The entrance from the home cage and the water port are indicated in panel A.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The speed of locomotion in the maze is approximately constant. Left: Speed plotted as Mean ± SD over the population of rewarded and unrewarded animals. Right: expanded axis for early times. To assess the speed of locomotion, we divided the maze into square cells as wide as the corridors and tracked how the nose of the animal moved through those cells. Then the speed was measured in number of cells traversed per unit time. Note that the speed is very similar across animals, ~1.56 cells/s = 5.94 cm/s on average. It rises quickly over the first 50 s in the maze, then varies only little over the 7 h of the experiment.
+
 While Figure 2 illustrates the trajectory of a mouse’s nose in full spatio-temporal detail, a convenient reduced representation is the ‘node sequence’. This simply marks the events when the animal enters each of the 127 nodes of the binary tree that describes the maze (see Materials and methods and Figure 3—figure supplement 1). Among these nodes, 63 are T-junctions where the animal has three choices for the next node, and 64 are end nodes where the animal’s only choice is to reverse course. We call the transition from one node to the next a ‘step’. The analysis in the rest of the paper was carried out on the animal’s node sequence.
 
-## Few-shot learning of a reward location
+### Few-shot learning of a reward location
 
 We now examine early changes in the animal’s behavior when it rapidly acquires and remembers information needed for navigation. First, we focus on navigation to the water port.
 
 The 10 water-deprived animals had no indication that water would be found in the maze. Yet, all 10 discovered the water port in less than 2000 s and fewer than 17 bouts (Figure 3A). The port dispensed only a drop of water followed by a 90 s timeout before rearming. During the timeout, the animals generally left the port location to explore other parts of the maze or return home, even though they were not obliged to do so. For each of the water-deprived animals, the frequency at which it consumed rewards in the maze increased rapidly as it learned how to find the water port, then settled after a few reward experiences (Figure 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig3-v2.jpg)
+
+**Figure 3.:** (A) Time line of all water rewards collected by 10 water-deprived mice (red dots, every fifth reward has a blue tick mark). (B) The length of runs from the entrance to the water port, measured in steps between nodes, and plotted against the number of rewards experienced. Main panel: All individual runs (cyan dots) and median over 10 mice (blue circles). Exponential fit decays by $1/e$ over 10.1 rewards. Right panel: Histogram of the run length, note log axis. Red: perfect runs with the minimum length 6; green: longer runs. Top panel: The fraction of perfect runs (length 6) plotted against the number of rewards experienced, along with the median duration of those perfect runs.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Definition of node trajectories. A numbering scheme for all 127 nodes of the maze. Green: a direct path from the entrance to the water port (‘water run’) with the node sequence $(s_{i})=(0,2,6,13,28,57,116)$, involving six decisions. Magenta: a direct path from end node 83 to the exit (‘home run’). Orange: a path from end node 67 to the exit that includes a reversal. Here the home run starts only from node 8, namely $(8,3,1,0)$.
+
 How many reward experiences are sufficient to teach the animal reliable navigation to the water port? To establish a learning curve one wants to compare performance on the identical task over successive trials. Recall that this experiment has no imposed trial structure. Yet the animals naturally segmented their behavior through discrete visits to the maze. Thus, we focused on all the instances when the animal started at the maze entrance and walked to the water port (Figure 3B).
 
-On the first few occasions these paths to water can involve hundreds of steps between nodes and their length scatters over a wide range. However, after a few rewards, the animals began taking the perfect path without detours (six steps, Figure 3—figure supplement 1), and soon that became the norm. Note the path length plotted here is directly related to the number of ‘turning errors’: every time the mouse turns away from the shortest path to the water port that adds two steps to the path length (Equation 7). The rate of these errors declined over time, by a factor of e after ~10 rewards consumed (Figure 3B). Late in the night ~75% of the paths to water were perfect. The animals executed them with increasing speed; eventually, these fast ‘water runs’ took as little as 2 s (Figure 3B). Many of these visits went unrewarded owing to the 90 s timeout period on the water port.
+On the first few occasions these paths to water can involve hundreds of steps between nodes and their length scatters over a wide range. However, after a few rewards, the animals began taking the perfect path without detours (six steps, Figure 3—figure supplement 1), and soon that became the norm. Note the path length plotted here is directly related to the number of ‘turning errors’: every time the mouse turns away from the shortest path to the water port that adds two steps to the path length (Equation 7). The rate of these errors declined over time, by a factor of $e$ after ~10 rewards consumed (Figure 3B). Late in the night ~75% of the paths to water were perfect. The animals executed them with increasing speed; eventually, these fast ‘water runs’ took as little as 2 s (Figure 3B). Many of these visits went unrewarded owing to the 90 s timeout period on the water port.
 
 In summary, after ~10 reward experiences on average the mice learn to navigate efficiently to the water port, which requires making six correct decisions, each among three options. Note that even at late times, long after they have perfected the ‘water run’, the animals continue to take some extremely long paths: a subject for a later section (Figure 7).
 
-## The role of cues attached to the maze
+### The role of cues attached to the maze
 
 These observations of rapid learning raise the question 'How do the animals navigate?’ In particular, does the mouse build an internal representation that guides its action at every junction? Or does it place marks in the external environment that signal the route to the water port? In an extreme version of externalized cognition, the mouse leaves behind a trail of urine marks or other secretions as it walks away from the water port, and on a subsequent bout simply sniffs its way up the odor gradient (Figure 4A). This would require no internal representation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig4-v2.jpg)
+
+**Figure 4.:** (A) Logic of the experiment: The animal may have deposited an odorant in the maze (shading) that is centered on the water port. After 180 degree rotation of the maze, that gradient would lead to the image of the water port (blue dot). We also measure how often the mouse goes to two control nodes (magenta dots) that are related by symmetry. (B) Trajectory of mouse ‘A1’ in the bouts immediately before and after maze rotation. Time coded by color from dark to light as in Figure 2. (C) Left: Cumulative number of rewards as well as visits to the water port, the image of the water port, and the control nodes. All events are plotted vs time before and after the maze rotation. Average over four animals. Middle and right: Same data with the counts centered on zero and zoomed in for better resolution.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Navigation before and after maze rotation. Cumulative number of rewards, visits to the water port, the image of the water port, and the control nodes, plotted vs time before and after the maze rotation. Display as in Figure 4C, but split for each of four animals.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Speed of the mouse vs time in the maze. Average over four animals. Time is plotted relative to the maze rotation.
 
 The following experiment offers some partial insights. Owing to the design of the labyrinth one can rotate the entire apparatus by 180 degrees, open one wall and close another, and obtain a maze with the same structure (Figure 4A). Alternatively one can also rotate only the floor. After such a modification, all the physical cues attached to the rotated parts now point in the wrong direction, namely to the end node 180 degrees opposite the water port (the 'image location’). If the animal navigated to the goal following cues previously deposited in the maze, it should end up at that image location.
 
@@ -74,11 +118,19 @@ Nonetheless, the maze rotation did introduce subtle changes in behavior that las
 
 In summary, for navigation to the water port the experienced animals do not strictly depend on physical cues that are attached to the maze. This includes any material they might have deposited, but also pre-existing construction details by which they may have learned to identify locations in the maze. The mice clearly notice a change in these cues, but continue to navigate effectively to the goal. This conclusion applies to the time point of the rotation, a few hours into the experiment. Conceivably, the animal’s navigation policy and its use of sensory cues changes in the course of learning. This and many other questions regarding the mechanisms of cognition will be taken up in a separate study.
 
-## Discontinuous learning
+### Discontinuous learning
 
 While an average across animals shows evidence of rapid learning (Figure 3) one wonders whether the knowledge is acquired gradually or discontinuously, through moments of ‘sudden insight’. To explore this we scrutinized more closely the time line of individual water-deprived animals in their experience with the maze. The discovery of the water port and the subsequent collection of water drops at a regular rate is one clear change in behavior that relies on new knowledge. Indeed, the rate of water rewards can increase rather suddenly (Figure 3A), suggesting an instantaneous step in knowledge.
 
 Over time, the animals learned the path to water not only from the entrance of the maze but from many locations scattered throughout the maze. The largest distance between the water port and an end node in the opposite half of the maze involves 12 steps through 11 intersections (Figure 5A). Thus, we included as another behavioral variable the occurrence of long direct paths to the water port which reflects how directedly the animals navigate within the maze.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig5-v2.jpg)
+
+**Figure 5.:** (A) An example of a long uninterrupted path through 11 junctions to the water port (drop icon). Blue circles mark control nodes related by symmetry to the water port to assess the frequency of long paths occurring by chance. (B) For one animal (named C1) the cumulative number of rewards (green); of long paths (>6 junctions) to the water port (red); and of similar paths to the three control nodes (blue, divided by 3). All are plotted against the time spent in the maze. Arrowheads indicate the time of sudden changes, obtained from fitting a step function to the rates. (C) Same as B for animal B1. (D) Same as B for animal C9, an example of more continuous learning.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Sudden changes in behavior for all rewarded animals. For each of the 10 water-deprived animals this shows the cumulative rate of rewards, of long direct paths (>6 steps) to the water port, and of similar paths to three control nodes. Display as in Figure 5; panels B-D of that figure are included again here. Dots are data, lines are fits using a four-parameter sigmoid function for the rate of occurrence of the events.
 
 Figure 5B shows for one animal the cumulative occurrence of water rewards and that of long direct paths to water. The animal discovers the water port early on at 75 s, but at 1380 s the rate of water rewards jumps suddenly by a factor of 5. The long paths to water follow a rather different time line. At first they occur randomly, at the same rate as the paths to the unrewarded control nodes. At 2070 s the long paths suddenly increase in frequency by a factor of 5. Given the sudden change in rates of both kinds of events there is little ambiguity about when the two steps happen and they are well separated in time (Figure 5B).
 
@@ -86,7 +138,7 @@ The animal behaves as though it gains a new insight at the time of the second st
 
 Similar discontinuities in behavior were seen in at least 5 of the 10 water-deprived animals (Figure 5B, Figure 5—figure supplement 1, Figure 5—source data 1), and their timing could be identified to a precision of ~200 s. More gradual performance change was observed for the remaining animals (Figure 5D). We varied the criterion of performance by asking for even longer error-free paths, and the results were largely unchanged and no additional discontinuity appeared. These observations suggest that mice can acquire a complex decision-making skill rather suddenly. A mouse may have multiple moments of sudden insight that affect different aspects of its behavior. The exact time of the insight cannot be predicted but is easily identified post-hoc. Future neurophysiological studies of the phenomenon will face the interesting challenge of capturing these singular events.
 
-## One-shot learning of the home path
+### One-shot learning of the home path
 
 For an animal entering an unfamiliar environment, the most important path to keep in memory may be the escape route. In the present case that is the route to the maze entrance, from which the tunnel leads home to the cage. We expected that the mice would begin by penetrating into the maze gradually and return home repeatedly so as to confirm the escape route, a pattern previously observed for rodents in an open arena (Tchernichovski et al., 1998; Fonio et al., 2009). This might help build a memory of the home path gradually level-by-level into the binary tree. Nothing could be further from the truth.
 
@@ -102,11 +154,11 @@ Clearly, the animals do not practice the home path or build it up gradually. Ins
 
 In summary, it appears that the animal acquires a homing strategy over the course of a single bout, and in a manner that allows a direct return home even from locations not previously encountered.
 
-## Structure of behavior in the maze
+### Structure of behavior in the maze
 
 Here, we focus on rules and patterns that govern the animal’s activity in the maze on both large and small scales.
 
-## Behavioral states
+#### Behavioral states
 
 Once the animal has learned to perform long uninterrupted paths to the water port, one can categorize its behavior within the maze by three states: (1) walking to the water port; (2) walking to the exit; and (3) exploring the maze. Operationally we define exploration as all periods in which the animal is in the maze but not on a direct path to water or to the exit. For the 10 sated animals this includes all times in the maze except for the walks to the exit.
 
@@ -114,33 +166,45 @@ Figure 7 illustrates the occupancies and transition probabilities between these 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig7-v2.jpg)
 
-**Figure 7.:** (A) Ethogram for rewarded animals. Area of the circle reflects the fraction of time spent in each behavioral mode averaged over animals and duration of the experiment. Width of the arrow reflects the probability of transitioning to another mode. ‘Drink’ involves travel to the water port and time spent there. Transitions from ‘Leave’ represent what the animal does at the start of the next bout into the maze. (B) The fraction of time spent in each mode as a function of absolute time throughout the night. Mean ± SD across the 10 rewarded animals.Figure 7—source data 1.(A) The fraction of time mice spent in each of the three modes while in the maze. Mean ± SD for 10 rewarded and nine unrewarded animals. (B) Probability of transitioning from the mode on the left to the mode at the top. Transitions from ‘leave’ represent what the animal does at the start of the next bout into the maze.
+**Figure 7.:** (A) Ethogram for rewarded animals. Area of the circle reflects the fraction of time spent in each behavioral mode averaged over animals and duration of the experiment. Width of the arrow reflects the probability of transitioning to another mode. ‘Drink’ involves travel to the water port and time spent there. Transitions from ‘Leave’ represent what the animal does at the start of the next bout into the maze. (B) The fraction of time spent in each mode as a function of absolute time throughout the night. Mean ± SD across the 10 rewarded animals.
 
 For water-deprived animals, the dominance of exploration persisted even at a late stage of the night when they routinely executed perfect exploitation bouts to and from the water port: Over the duration of the night the ‘explore’ fraction dropped slightly from 0.92 to 0.75, with the balance accrued to the ‘drink’ and ‘leave’ modes as the animals executed many direct runs to the water port and back. The unrewarded group of animals also explored the maze throughout the night even though it offered no overt rewards (Figure 7—source data 1). One suspects that the animals derive some intrinsic reward from the act of patrolling the environment itself.
 
-## Efficiency of exploration
+#### Efficiency of exploration
 
 During the direct paths to water and to the exit the animal behaves deterministically, whereas the exploration behavior appears stochastic. Here, we delve into the rules that govern the exploration component of behavior.
 
-One can presume that a goal of the exploratory mode is to rapidly survey all parts of the environment for the appearance of new resources or threats. We will measure the efficiency of exploration by how rapidly the animal visits all end nodes of the binary maze, starting at any time during the experiment. The optimal agent with perfect memory and complete knowledge of the maze – including the absence of any loops – could visit the end nodes systematically one after another without repeats, thus encountering all of them after just 64 visits. A less perfect agent, on the other hand, will visit the same node repeatedly before having encountered all of them. Figure 8A plots for one exploring mouse the number of distinct end nodes it encountered as a function of the number of end nodes visited. The number of new nodes rises monotonically; 32 of the end nodes have been discovered after the mouse checked 76 times; then the curve gradually asymptotes to 64. We will characterize the efficiency of the search by the number of visits N32 required to survey half the end nodes, and define(1)E=32N32
+One can presume that a goal of the exploratory mode is to rapidly survey all parts of the environment for the appearance of new resources or threats. We will measure the efficiency of exploration by how rapidly the animal visits all end nodes of the binary maze, starting at any time during the experiment. The optimal agent with perfect memory and complete knowledge of the maze – including the absence of any loops – could visit the end nodes systematically one after another without repeats, thus encountering all of them after just 64 visits. A less perfect agent, on the other hand, will visit the same node repeatedly before having encountered all of them. Figure 8A plots for one exploring mouse the number of distinct end nodes it encountered as a function of the number of end nodes visited. The number of new nodes rises monotonically; 32 of the end nodes have been discovered after the mouse checked 76 times; then the curve gradually asymptotes to 64. We will characterize the efficiency of the search by the number of visits N32 required to survey half the end nodes, and define
+
+$$
+E=\frac{32}{N_{32}}
+$$
 
 This mouse explores with efficiency E = 32/76 = 0.42. For comparison, Figure 8A plots the performance of the optimal agent (E = 1.0) and that of a random walker that makes random decisions at every three-way junction (E = 0.23). Note the mouse is about half as efficient as the optimal agent, but twice as efficient as a random walker.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig8-v2.jpg)
+
+**Figure 8.:** (A) The number of distinct end nodes encountered as a function of the number of end nodes visited for: mouse C1 (red); the optimal explorer agent (black); an unbiased random walk (blue). Arrowhead: the value $N_{32}=76$ by which mouse C1 discovered half of the end nodes. (B) An expanded section of the graph in A including curves from 10 rewarded (red) and nine unrewarded (green) animals. The efficiency of exploration, defined as $E=32/N_{32}$, is $0.385\pm0.050$ (SD) for rewarded and $0.384\pm0.039$ (SD) for unrewarded mice. (C) The efficiency of exploration for the same animals, comparing the values in the first and second halves of the time in the maze. The decline is a factor of $0.74\pm0.12$ (SD) for rewarded and $0.81\pm0.13$ (SD) for unrewarded mice.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Functional fits to measure exploration efficiency (A) Fitting Equation 12 to the data from the mouse’s exploration. Animals with best fit (top) and worst fit (bottom). The relative uncertainty in the two fit parameters $a$ and $b$ was only $0.0038\pm0.0020$ (mean ± SD across animals). (B) The fit parameter $b$ for all animals, comparing the first to the second half of the night. (C) The efficiency $E$ (Equation 1) predicted from two models of the mouse’s trajectory: The 4-bias random walk (Figure 11D) and the optimal Markov chain (Figure 11C).
+
 The different mice were remarkably alike in this component of their exploratory behavior (Figure 8B): across animals the efficiency varied by only 11% of the mean (0.387 ± 0.044 SD). Furthermore, there was no detectable difference in efficiency between the rewarded animals and the sated unrewarded animals. Over the course of the night, the efficiency declined significantly for almost every animal – whether rewarded or not – by an average of 23% (Figure 8C).
 
-## Rules of exploration
+#### Rules of exploration
 
 What allows the mice to search much more efficiently than a random walking agent? We inspected more closely the decisions that the animals make at each three-way junction. It emerged that these decisions are governed by strong biases (Figure 9). The probability of choosing each arm of a T-junction depends crucially on how the animal entered the junction. The animal can enter a T-junction from three places and exit it in three directions (Figure 9A). By tallying the frequency of all these occurrences across all T-junctions in the maze one finds clear deviations from an unbiased random walk (Figure 9B, Figure 9—source data 1).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig9-v2.jpg)
 
-**Figure 9.:** (A) Definition of four turning biases at a T-junction based on the ratios of actions taken. Top: An animal arriving from the stem of the T (shaded) may either reverse or turn left or right.  is the probability that it will move forward rather than reversing. Given that it moves forward, PSF is the probability that it will take an alternating turn from the preceding one (gray), that is left-right or right-left. Bottom: An animal arriving from the bar of the T may either reverse or go straight, or turn into the stem of the T. PSA is the probability that it will move forward through the junction rather than reversing. Given that it moves forward, PBF is the probability that it turns into the stem. (PBSB) Scatter graph of the biases  and PSF (left) and PBF and PSA (right). Every dot represents a mouse. Cross: values for an unbiased random walk. (PBSC) Exploration curve of new end nodes discovered vs end nodes visited, displayed as in Figure 8A, including results from a biased random walk with the four turning biases derived from the same mouse, as well as a more elaborate Markov-chain model (see Figure 11C). (D) Efficiency of exploration (Equation 1) in 19 mice compared to the efficiency of the corresponding biased random walk.Figure 9—source data 1.Statistics of the four turning biases. Mean and standard deviation of the 4 biases of Figure 9A–B across animals in the rewarded and unrewarded groups.
+**Figure 9.:** (A) Definition of four turning biases at a T-junction based on the ratios of actions taken. Top: An animal arriving from the stem of the T (shaded) may either reverse or turn left or right. $P_{SF}$ is the probability that it will move forward rather than reversing. Given that it moves forward, $P_{SA}$ is the probability that it will take an alternating turn from the preceding one (gray), that is left-right or right-left. Bottom: An animal arriving from the bar of the T may either reverse or go straight, or turn into the stem of the T. $P_{BF}$ is the probability that it will move forward through the junction rather than reversing. Given that it moves forward, $P_{BS}$ is the probability that it turns into the stem. (B) Scatter graph of the biases $P_{SF}$ and $P_{BF}$ (left) and $P_{SA}$ and $P_{BS}$ (right). Every dot represents a mouse. Cross: values for an unbiased random walk. (C) Exploration curve of new end nodes discovered vs end nodes visited, displayed as in Figure 8A, including results from a biased random walk with the four turning biases derived from the same mouse, as well as a more elaborate Markov-chain model (see Figure 11C). (D) Efficiency of exploration (Equation 1) in 19 mice compared to the efficiency of the corresponding biased random walk.
 
-First, the animals have a strong preference for proceeding through a junction rather than returning to the preceding node (PSF and PBF in Figure 9B). Second, there is a bias in favor of alternating turns left and right rather than repeating the same direction turn (PSA). Finally, the mice have a mild preference for taking a branch off the straight corridor rather than proceeding straight (PBS). A comparison across animals again revealed a remarkable degree of consistency even in these local rules of behavior: The turning biases varied by only 3% across the population and even between the rewarded and unrewarded groups (Figure 9B, Figure 9—source data 1).
+First, the animals have a strong preference for proceeding through a junction rather than returning to the preceding node ($P_{SF}$ and $P_{BF}$ in Figure 9B). Second, there is a bias in favor of alternating turns left and right rather than repeating the same direction turn ($P_{SA}$). Finally, the mice have a mild preference for taking a branch off the straight corridor rather than proceeding straight ($P_{BS}$). A comparison across animals again revealed a remarkable degree of consistency even in these local rules of behavior: The turning biases varied by only 3% across the population and even between the rewarded and unrewarded groups (Figure 9B, Figure 9—source data 1).
 
-Qualitatively, one can see that these turning biases will improve the animal’s search strategy. The forward biases PSF and PBF keep the animal from re-entering territory it has covered already. The bias PBS favors taking a branch that leads out of the maze. This allows the animal to rapidly cross multiple levels during an outward path and then enter a different territory. By comparison, the unbiased random walk tends to get stuck in the tips of the tree and revisits the same end nodes many times before escaping. To test this intuition, we simulated a biased random agent whose turning probabilities at a T-junction followed the same biases as measured from the animal (Figure 9C). These biased agents did in fact search with much higher efficiency than the unbiased random walk. They did not fully explain the behavior of the mice (Figure 9D), accounting for ~87% of the animal’s efficiency (compared to 60% for the random walk). A more sophisticated model of the animal’s behavior - involving many more parameters (Figure 11C) - failed to get any closer to the observed efficiency (Figure 9C, Figure 8—figure supplement 1C). Clearly some components of efficient search in these mice remain to be understood.
+Qualitatively, one can see that these turning biases will improve the animal’s search strategy. The forward biases $P_{SF}$ and $P_{BF}$ keep the animal from re-entering territory it has covered already. The bias $P_{BS}$ favors taking a branch that leads out of the maze. This allows the animal to rapidly cross multiple levels during an outward path and then enter a different territory. By comparison, the unbiased random walk tends to get stuck in the tips of the tree and revisits the same end nodes many times before escaping. To test this intuition, we simulated a biased random agent whose turning probabilities at a T-junction followed the same biases as measured from the animal (Figure 9C). These biased agents did in fact search with much higher efficiency than the unbiased random walk. They did not fully explain the behavior of the mice (Figure 9D), accounting for ~87% of the animal’s efficiency (compared to 60% for the random walk). A more sophisticated model of the animal’s behavior - involving many more parameters (Figure 11C) - failed to get any closer to the observed efficiency (Figure 9C, Figure 8—figure supplement 1C). Clearly some components of efficient search in these mice remain to be understood.
 
-## Systematic node preferences
+#### Systematic node preferences
 
 A surprising aspect of the animals’ explorations is that they visit certain end nodes of the binary tree much more frequently than others (Figure 10). This effect is large: more than a factor of 10 difference between the occupancy of the most popular and least popular end nodes (Figure 10A–B). This was surprising given our efforts to design the maze symmetrically, such that in principle all end nodes should be equivalent. Furthermore, the node preferences were very consistent across animals and even across the rewarded and unrewarded groups. Note that the standard error across animals of each node’s occupancy is much smaller than the differences between the nodes (Figure 10B).
 
@@ -152,15 +216,23 @@ The nodes on the periphery of the maze are systematically preferred. Comparing t
 
 Interestingly, the biased random walk using four bias numbers (Figure 9, Figure 11D) replicates a good amount of the pattern of preferences. For unrewarded animals, where the maze symmetry is not disturbed by the water port, the biased random walk predicts 51% of the observed variance across nodes (Figure 10C), and an outer/inner node preference of 1.97, almost matching the observed ratio of 2.20. The more complex Markov-chain model of behavior (Figure 11C) performed slightly better, explaining 66% of the variance in port visits and matching the outer/inner node preference of 2.20.
 
-## Models of maze behavior
+![Figure 11.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig11-v2.jpg)
+
+**Figure 11.:** (A) The mouse’s trajectory through the maze produces a sequence of states $s_{t}=nodeoccupiedafterstept$$s_{t}=nodeoccupiedafterstept$$s_{t}=nodeoccupiedafterstept$. From each state, up to three possible actions lead to the next state (end nodes allow only one action). We want to predict the animal’s next action, $a_{t+1}$, based on the prior history of states or actions. (B–D) Three possible models to make such a prediction. (B) A fixed-depth Markov chain where the probability of the next action depends only on the current state $s_{t}$ and the preceding state $s_{t-1}$. The branches of the tree represent all $3\times127$ possible histories $(s_{t-1},s_{t})$. (C) A variable-depth Markov chain where only certain branches of the tree of histories contribute to the action probability. Here one history contains only the current state, some others reach back three steps. (D) A biased random walk model, as defined in Figure 9, in which the probability of the next action depends only on the preceding action, not on the state. (E) Performance of the models in (B,C,D) when predicting the decisions of the animal at T-junctions. In each case we show the cross-entropy between the predicted action probability and the real actions of the animal (lower values indicate better prediction, perfect prediction would produce zero). Dotted line represents an unbiased random walk with 1/3 probability of each action.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/66175/elife-66175-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** Fitting Markov models of behavior. (A) Results of fitting the node sequence of a single animal (C3) with Markov models having a fixed depth (‘fix’) or variable depth (‘var’). The cross-entropy of the model’s prediction is plotted as a function of the average depth of history. In both cases we compare the results obtained on the training data (‘train’) vs those on separate testing data (‘test’). Note that at larger depth the ‘test’ and ‘train’ estimates diverge, a sign of over-fitting the limited data available. (B) As in (A) but to combat the data limitation we pooled the counts obtained at all nodes that were equivalent under the symmetry of the maze (see Materials and methods). Note considerably less divergence between ‘train’ and ‘test’ results, and a slightly lower cross-entropy during ‘test’ than in (A). (C) The minimal cross-entropy (circles in (B)) produced by variable vs fixed history models for each of the 19 animals. Note the variable history model always produces a better fit to the behavior.
+
+### Models of maze behavior
 
 Moving beyond the efficiency of exploration one may ask more broadly: How well do we really understand what the mouse does in the maze? Can we predict its action at the next junction? Once the predictable component is removed, how much intrinsic randomness remains in the mouse’s behavior? Here, we address these questions using more sophisticated models that predict the probability of the mouse’s future actions based on the history of its trajectory.
 
 At a formal level, the mouse’s trajectory through the maze is a string of numbers standing for the nodes the animal visited (Figure 11A and Figure 3—figure supplement 1). We want to predict the next action of the mouse, namely the step that takes it to the next node. The quality of the model will be assessed by the cross-entropy between the model’s predictions and the mouse’s observed actions, measured in bits per action. This is the uncertainty that remains about the mouse’s next action given the prediction from the model. The ultimate lower limit is the true source entropy of the mouse, namely that component of its decisions that cannot be explained by the history of its actions.
 
-One family of models we considered are fixed-depth Markov chains (Figure 11B). Here, the probability of the next action at+1 is specified as a function of the history stretching over the k preceding nodes (st-k+1,…,st). In fitting the model to the mouse’s actual node sequence one tallies how often each history leads to each action, and uses those counts to estimate the conditional probabilities p⁢(at+1|st-k+1,…,st). Given a new node sequence, the model will then use the history strings (st-k+1,…,st) to predict the outcome of the next action. In practice, we trained the model on 80% of the animal’s trajectory and tested it by evaluating the cross-entropy on the remaining 20%.
+One family of models we considered are fixed-depth Markov chains (Figure 11B). Here, the probability of the next action $a_{t+1}$ is specified as a function of the history stretching over the $k$ preceding nodes $(s_{t-k+1},…,s_{t})$. In fitting the model to the mouse’s actual node sequence one tallies how often each history leads to each action, and uses those counts to estimate the conditional probabilities $p⁢(a_{t+1}|s_{t-k+1},…,s_{t})$. Given a new node sequence, the model will then use the history strings $(s_{t-k+1},…,s_{t})$ to predict the outcome of the next action. In practice, we trained the model on 80% of the animal’s trajectory and tested it by evaluating the cross-entropy on the remaining 20%.
 
-Ideally, the depth k of these action trees would be very large, so as to take as much of the prior history into account as possible. However, one soon runs into a problem of over-fitting: Because each T-junction in the maze has three neighboring junctions, the number of possible histories grows as 3k. As k increases, this quickly exceeds the length of the measured node sequence, so that every history appears only zero or one times in the data. At this point, one can no longer estimate any probabilities, and cross-validation on a different segment of data fails catastrophically. In practice, we found that this limitation sets in already beyond k=2 (Figure 11—figure supplement 1A). To address this issue of data-limitation, we developed a variable-depth Markov chain (Figure 11C). This model retains longer histories, but only if they occur frequently enough to allow a reliable probability estimate (see Materials and methods, Figure 11—figure supplement 1B–C). In addition, we explored different schemes of pooling the counts across certain T-junctions that are related by the symmetry of the maze (see Materials and methods).
+Ideally, the depth $k$ of these action trees would be very large, so as to take as much of the prior history into account as possible. However, one soon runs into a problem of over-fitting: Because each T-junction in the maze has three neighboring junctions, the number of possible histories grows as $3^{k}$. As $k$ increases, this quickly exceeds the length of the measured node sequence, so that every history appears only zero or one times in the data. At this point, one can no longer estimate any probabilities, and cross-validation on a different segment of data fails catastrophically. In practice, we found that this limitation sets in already beyond $k=2$ (Figure 11—figure supplement 1A). To address this issue of data-limitation, we developed a variable-depth Markov chain (Figure 11C). This model retains longer histories, but only if they occur frequently enough to allow a reliable probability estimate (see Materials and methods, Figure 11—figure supplement 1B–C). In addition, we explored different schemes of pooling the counts across certain T-junctions that are related by the symmetry of the maze (see Materials and methods).
 
 With these methods, we focused on the portions of trajectory when the mouse was in ‘explore’ mode, because the segments in ‘drink’ and ‘leave’ mode are fully predictable. Furthermore, we evaluated the models only at nodes corresponding to T-junctions, because the decision from an end node is again fully predictable. Figure 11E compares the performance of various models of mouse behavior. The variable-depth Markov chains routinely produced the best fits, although the improvement over fixed-depth models was modest. Across all 19 animals in this study the remaining uncertainty about the animal’s action at a T-junction is 1.237 ± 0.035 (SD) bits/action, compared to the prior uncertainty of log2 3 = 1.585 bits. The rewarded animals have slightly lower entropy than the unrewarded ones (1.216 vs 1.261 bits/action). The Markov chain models that produced the best fits to the behavior used history strings with an average length of ~4.
 
@@ -170,11 +242,11 @@ We conclude that during exploration of the maze the mouse’s choice behavior is
 
 ## Discussion
 
-## Summary of contributions
+### Summary of contributions
 
 We present a new approach to the study of learning and decision-making in mice. We give the animal access to a complex labyrinth and leave it undisturbed for a night while monitoring its movements. The result is a rich data set that reveals new aspects of learning and the structure of exploratory behavior. With these methods, we find that mice learn a complex task that requires six correct three-way decisions after only ~10 experiences of success (Figure 2, Figure 3). Along the way the animal gains task knowledge in discontinuous steps that can be localized to within a few minutes of resolution (Figure 5). Underlying the learning process is an exploratory behavior that occupies 90% of the animal’s time in the maze and persists long after the task has been mastered, even in complete absence of an extrinsic reward (Figure 7). The decisions the animal makes at choice points in the labyrinth are constrained in part by the history of its actions (Figure 9, Figure 11), in a way that favors efficient searching of the maze (Figure 8). This microstructure of behavior is surprisingly consistent across mice, with variation in parameters of only a few percent (Figure 9). Our most expressive models to predict the animal’s choices still leave a remaining uncertainty of ~1.24 bits per decision (Figure 11), a quantitative benchmark by which competing models can be tested. Finally, some of the observations constrain what algorithms the animals might use for learning and navigation (Figure 4).
 
-## Historical context
+### Historical context
 
 Mazes have been a staple of animal psychology for well over 100 years. The early versions were true labyrinths. For example, Small, 1901 built a model of the maze in Hampton Court gardens scaled to rat size. Subsequent researchers felt less constrained by Victorian landscapes and began to simplify the maze concept. Most commonly the maze offered one standard path from a starting location to a food reward box. A few blind alleys would branch from the standard path, and researchers would tally how many errors the animal committed by briefly turning into a blind (Tolman and Honzik, 1930). Later on, the design was further reduced to a single T-junction. After all, the elementary act of maze navigation is whether to turn left or right at a junction (Tolman, 1938), so why not study that process in isolation? And reducing the concept even further, one can ask the animal to refrain from walking altogether, and instead poke its nose into a hole on the left or the right side of a box (Uchida and Mainen, 2003). This led to the popular behavior boxes now found in rodent neuroscience laboratories everywhere. Each of these reductions of the ‘maze’ concept enabled a new type of experiment to study learning and decision-making, for example limiting the number of choice points allows one to better sample neural activity at each one. However, the essence of a ‘confusing network of paths’ has been lost along the way, and with it the behavioral richness of the animals navigating those decisions.
 
@@ -184,7 +256,7 @@ Another crucial aspect of our experimental design is the absence of any human in
 
 Our experiments had no imposed structure whatsoever; in fact, it may be inappropriate to call them experiments. The investigator opened the entry to the maze in the evening and did not return until the morning. A potential advantage of leaving the animals to themselves is that they are more likely to engage in mouse-like behavior, rather than constantly responding to the stress of human interference or the alienation from being a cog in a behavior machine. The result was a rich data set, with the typical animal delivering ~15,000 decisions in a single night, even if one only counts the nodes of the binary tree as decision points. Since the mice made all the choices, the scientific effort lay primarily in adapting methods of data analysis to the nature of mouse trajectories. Somewhat surprisingly, the absence of experimental structure was no obstacle to making precise and reproducible measurements of the animal’s behavior.
 
-## How fast do animals learn?
+### How fast do animals learn?
 
 Among the wide range of phenomena of animal learning, one can distinguish easy and hard tasks by some measure of task complexity. In a simple picture of a behavioral task, the animal needs to recognize several different contexts and based on that express one of several different actions. One can draw up a contingency table between contexts and actions, and measure the complexity of the task by the mutual information in that table. This ignores any task difficulties associated with sensing the context at all or with producing the desired actions. However, in all the examples discussed here, the stimuli are discriminated easily and the actions come naturally, thus the learning difficulty lies only in forming the associations, not in sharpening the perceptual mechanisms or practicing complex motor output.
 
@@ -198,7 +270,7 @@ By comparison, the tasks that a mouse performs in the labyrinth are more complex
 
 In a different corner of the speed-complexity space are the many 2-alternative-forced-choice (2AFC) tasks in popular use today. These tend to be 1-bit tasks, for example the monkey should flick its eyes to the left when visual motion is to the left (Newsome and Paré, 1988), or the mouse should turn a steering wheel to the right when a light appears on the left (Burgess et al., 2017). Yet, the animals take a long time to learn these simple tasks. For example, the mouse with the steering wheel requires about 10,000 experiences before performance saturates. It never gets particularly good, with a typical hit rate only 2/3 of the way from random to perfect. All this training takes 3–6 weeks; in the case of monkeys several months. The rate of learning, measured in task complexity per unit time, is surprisingly low: less than 1 bit/month compared to ~10 bits/h observed in the labyrinth. The difference is a factor of 6000. Similarly when measured in complexity learned per reward experience: The 2AFC mouse may need 5000 rewards to learn a contingency table with one bit complexity, whereas the mouse in the maze needs ~10 rewards to learn 10 bits. Given these enormous differences in learning rate, one wonders whether the ultra-slow mode of learning has any relevance for an animal’s natural condition. In the month that the 2AFC mouse requires to finally report the location of a light, its relative in the wild has developed from a baby to having its own babies. Along the way, that wild mouse had to make many decisions, often involving high stakes, without the benefit of 10,000 trials of practice.
 
-## Sudden insight
+### Sudden insight
 
 The dynamics of the learning process are often conceived as a continuously growing association between stimuli and actions, with each reinforcing experience making an infinitesimal contribution. The reality can be quite different. When a child first learns to balance on a bicycle, performance goes from abysmal to astounding within a few seconds. The timing of such a discontinuous step in performance seems impossible to predict but easy to recognize after the fact.
 
@@ -208,7 +280,7 @@ Owing to the unstructured nature of the experiment, the mouse may adopt differen
 
 Presumably, this switch in performance reflects some discontinuous change in the animal’s internal model of the maze, what Tolman called the ‘cognitive map’ (Tolman, 1948; Behrens et al., 2018). In the unrewarded animals, we could not detect any discontinuous change in the use of long paths. However, as Tolman argued, those animals may well acquire a sophisticated cognitive map that reveals itself only when presented with a concrete task, like finding water. Future experiments will need to address this. The discontinuous changes in performance pose a challenge to conventional models of reinforcement learning, in which reward events are the primary driver of learning and each event contributes an infinitesimal update to the action policy. It will also be important to model the acquisition of distinct kinds of knowledge that contribute to the same behavior, like the location of the target and efficient routes to approach it.
 
-## Exploratory behavior
+### Exploratory behavior
 
 By all accounts, the animals spent a large fraction of the night exploring the maze (Figure 1—figure supplement 2). The water-deprived animals continued their forays into the depths of the maze long after they had found the water port and learned to exploit it regularly. After consuming a water reward, they wandered off into the maze 90% of the time (Figure 7B) instead of lazily waiting in front of the port during the timeout period. The sated animals experienced no overt reward from the maze, yet they likewise spent nearly half their time exploring that environment. As has been noted many times, animals – like humans – derive some form of intrinsic reward from exploration (Berlyne, 1960). Some have suggested that there exists a homeostatic drive akin to hunger and thirst that elicits the information-seeking activity, and that the drive is in turn sated by the act of exploration (Hughes, 1997). If this were the case then the drive to explore should be weakest just after an episode of exploration, much as the drive for food-seeking is weaker after a big meal.
 
@@ -220,11 +292,11 @@ The animals in our experiments had never been presented with a maze environment,
 
 The persistence of exploration throughout the entire duration of the experiment suggests that the animals are continuously surveying the environment, perhaps expecting new features to arise. These surveys are quite efficient: The animals cover all parts of the maze much faster than expected from a random walk (Figure 8). Effectively they avoid re-entering territory they surveyed just recently. It is often assumed that this requires some global memory of places visited in the environment (Nagy et al., 2020; Olton, 1979). Such memory would have to persist for a long time: Surveying half of the available end nodes typically required 450 turning decisions. However, we found that a global long-term memory is not needed to explain the efficient search. The animals seem to be governed by a set of local turning biases that require memory only of the most recent decision and no knowledge of location (Figure 9). These local biases alone can explain most of the character of exploration without any global understanding or long-term memory. Incidentally, they also explain other seemingly global aspects of the behavior, for example the systematic preference that the mice have for the outer rather than the inner regions of the maze (Figure 10). Of course, this argument does not exclude the presence of a long-term memory, which may reveal itself in some other feature of the behavior.
 
-Perhaps, the most remarkable aspect of these biases is how similar they are across all 19 mice studied here, regardless of whether the animal experienced water rewards or not (Figure 9B, Figure 9—source data 1), and independent of the sex of the mouse. The four decision probabilities were identical across individuals to within a standard deviation of less than 0.03. We cannot think of a trivial reason why this should be so. For example the two biases for forward motion (Figure 9B left) are poised halfway between the value for a random walk (p=2/3) and certainty (p=1). At either of those extremes, simple saturation might lead to a reproducible value, but not in the middle of the range. Why do different animals follow the exact same decision rules at an intersection between tunnels? Given that tunnel systems are part of the mouse’s natural ecology, it is possible that those rules are innate and determined genetically. Indeed the rules by which mice build tunnels have a strong genetic component (Weber et al., 2013), so the rules for using tunnels may be written in the genes as well. The high precision with which one can measure those behaviors even in a single night of activity opens the way to efficient comparisons across genotypes, and also across animals with different developmental experience.
+Perhaps, the most remarkable aspect of these biases is how similar they are across all 19 mice studied here, regardless of whether the animal experienced water rewards or not (Figure 9B, Figure 9—source data 1), and independent of the sex of the mouse. The four decision probabilities were identical across individuals to within a standard deviation of less than 0.03. We cannot think of a trivial reason why this should be so. For example the two biases for forward motion (Figure 9B left) are poised halfway between the value for a random walk ($p=2/3$) and certainty ($p=1$). At either of those extremes, simple saturation might lead to a reproducible value, but not in the middle of the range. Why do different animals follow the exact same decision rules at an intersection between tunnels? Given that tunnel systems are part of the mouse’s natural ecology, it is possible that those rules are innate and determined genetically. Indeed the rules by which mice build tunnels have a strong genetic component (Weber et al., 2013), so the rules for using tunnels may be written in the genes as well. The high precision with which one can measure those behaviors even in a single night of activity opens the way to efficient comparisons across genotypes, and also across animals with different developmental experience.
 
 Finally, after mice discover the water port and learn to access it from many different points in the maze (Figure 5), they are presumably eager to discover other things. In ongoing work, we installed three water ports (visible in the videos accompanying this article) and implemented a rule that activates the three ports in a cyclic sequence. Mice discovered all three ports rapidly and learned to visit them in the correct order. Future experiments will have to raise the bar on what the mice are expected to learn in a night.
 
-## Mechanisms of navigation
+### Mechanisms of navigation
 
 How do the animals navigate when they perform direct paths to the water port or to the exit? The present study cannot resolve that, but one can gain some clues based on observations so far. Early workers already concluded that rodents in a maze will use whatever sensory cues and tricks are available to accomplish their tasks (Munn, 1950b). Our maze was designed to restrict those options somewhat.
 
@@ -242,57 +314,87 @@ Future directed experiments will serve to narrow down how mice learn to navigate
 
 ## Materials and methods
 
-## Experimental design
+### Experimental design
 
 The goal of the study was to observe mice as they explored a complex environment for the first time, with little or no human interference and no specific instructions. In preliminary experiments, we tested several labyrinth designs and water reward schedules. Eventually, we settled on the protocol described here, and tested 20 mice in rapid succession. Each mouse was observed only over a 7-h period during the first night it encountered the labyrinth.
 
-## Maze construction
+### Maze construction
 
 The maze measured ~24 x 24 x 2 inches; for manufacture we used materials specified in inches, so dimensions are quoted in those non-SI units where appropriate. The ceiling was made of 0.5 inch clear acrylic. Slots of 1/8 inch width were cut into this plate on a 1.5 inch grid. Pegged walls made of 1/8 inch infrared-transmitting acrylic (opaque in the visible spectrum, ePlastics) were inserted into these slots and secured with a small amount of hot glue. The floor was a sheet of infrared-transmitting acrylic, supported by a thicker sheet of clear acrylic. The resulting corridors (1-1/8 inches wide) formed a 6-level binary tree with T-junctions and progressive shortening of each branch, ranging from ~12 inch to 1.5 inch (Figure 1 and Figure 2). A single end node contained a 1.5 cm circular opening with a water delivery port (described below). The maze included provision for two additional water ports not used in the present report. Once per week the maze was submerged in cage cleaning solution. Between different animals the floor and walls were cleaned with ethanol.
 
-## Reward delivery system
+### Reward delivery system
 
 The water reward port was controlled by a Matlab script on the main computer through an interface (Sanworks Bpod State Machine r1). Rewards were triggered when the animal’s nose broke the IR beam in the water port (Sanworks Port interface + valve). The interface briefly opened the water valve to deliver ~30 µL of water and flashed an infrared LED mounted outside the maze for 1 s. This served to mark reward events on the video recording. Following each reward, the system entered a time-out period for 90 s, during which the port did not provide further reward. In experiments with sated mice the water port was turned off.
 
-## Cage and connecting passage
+### Cage and connecting passage
 
 The entrance to the maze was connected to an otherwise normal mouse cage by red plastic tubing (3 cm dia, 1 m long). The cage contained food, bedding, nesting material, and in the case of unrewarded experiments also a normal water bottle.
 
-## Animals and treatments
+### Animals and treatments
 
 All mice were C57BL/6J animals (Jackson Labs) between the ages of 45 and 98 days (mean 62 days). Both sexes were used: four males and six females in the rewarded experiments, five males and four females in the unrewarded experiments. For water deprivation, the animal was transferred from its home cage (generally group-housed) to the maze cage ~22 h before the start of the experiment. Non-deprived animals were transferred minutes before the start. All procedures were performed in accordance with institutional guidelines and approved by the Caltech IACUC.
 
-## Video recording
+### Video recording
 
 All data reported here were collected over the course of 7 h during the dark portion of the animal’s light cycle. Video recording was initiated a few seconds prior to connecting the tunnel to the maze. Videos were recorded by an OpenCV python script controlling a single webcam (Logitech C920) located ~1 m below the floor of the maze. The maze and access tube were illuminated by multiple infrared LED arrays (center wavelength 850 nm). Three of these lights illuminated the maze from below at a 45 degree angle, producing contrast to resolve the animal’s foot pads. The remaining lights pointed at the ceiling of the room to produce backlight for a sharp outline of the animal.
 
-## Animal tracking
+### Animal tracking
 
-A version of DeepLabCut (Nath et al., 2019) modified to support gray-scale processing was used to track the animal’s trajectory, using key points at the nose, feet, tail base and mid-body. All subsequent analyses were based on the trajectory of the animal’s nose, consisting of positions x⁢(t) and y⁢(t) in every video frame.
+A version of DeepLabCut (Nath et al., 2019) modified to support gray-scale processing was used to track the animal’s trajectory, using key points at the nose, feet, tail base and mid-body. All subsequent analyses were based on the trajectory of the animal’s nose, consisting of positions $x⁢(t)$ and $y⁢(t)$ in every video frame.
 
-## Rates of transition between cage and maze
+### Rates of transition between cage and maze
 
 This section relates to Figure 1—figure supplement 3. We entertained the hypothesis that the animals become ‘thirsty for exploration’ as they spend more time in the cage. In that case one would predict that the probability of entering the maze in the next second will increase with time spent in the cage. One can compute this probability from the distribution of residency times in the cage, as follows:
 
-Say t=0 when the animal enters the cage. The probability density that the animal will next leave the cage at time t is(2)p(t)=e−∫0tr(t′)dt′r(t)where r⁢(t) is the instantaneous rate for entering the maze. So(3)∫0tp⁢(t′)⁢𝑑t′=1-e-∫0tr⁢(t′)⁢𝑑t′(4)∫0tr⁢(t′)⁢𝑑t′=-ln⁡(1-∫0tp⁢(t′)⁢𝑑t′)
+Say $t=0$ when the animal enters the cage. The probability density that the animal will next leave the cage at time $t$ is
 
-This relates the cumulative of the instantaneous rate function to the cumulative of the observed transition times. In this way we computed the rates (5)rm(t)=rate of entry into the maze as a function of time spent in the cage(6)rc(t)=rate of entry into the cage as a function of time spent in the maze
+$$
+p(t)=e^{−\int0tr(t^{′})dt^{′}}r(t)
+$$
+
+where $r⁢(t)$ is the instantaneous rate for entering the maze. So
+
+$$
+\int0tp⁢(t^{′})⁢𝑑t^{′}=1-e^{-\int0tr⁢(t^{′})⁢𝑑t^{′}}
+$$
+
+
+
+$$
+\int0tr⁢(t^{′})⁢𝑑t^{′}=-ln⁡(1-\int0tp⁢(t^{′})⁢𝑑t^{′})
+$$
+
+This relates the cumulative of the instantaneous rate function to the cumulative of the observed transition times. In this way we computed the rates 
+
+$$
+r_{m}(t)=rate of entry into the maze as a function of time spent in the cage
+$$
+
+
+
+$$
+r_{c}(t)=rate of entry into the cage as a function of time spent in the maze
+$$
 
 The rate of entering the maze is highest at short times in the cage (Figure 1—figure supplement 3A). It peaks after ~15 s in the cage and then declines gradually by a factor of 4 over the first minute. So the mouse is most likely to enter the maze just after it returns from there. This runs opposite to the expectation from a homeostatic drive for exploration, which should be sated right after the animal returns. We found no evidence for an increase in the rate at late times. These effects were very similar in rewarded and unrewarded groups and in fact the tendency to return early was seen in every animal.
 
 By contrast, the rate of exiting the maze is almost perfectly constant over time (Figure 1—figure supplement 3B). In other words, the exit from the maze appears like a constant rate Poisson process. There is a slight elevation of the rate at short times among rewarded animals (Figure 1—figure supplement 3B top). This may come from the occasional brief water runs they perform. Another strange deviation is an unusual number of very short bouts (duration 2–12 s) among unrewarded animals (Figure 1—figure supplement 3B bottom). These are brief excursions in which the animal runs to the central junction, turns around, and runs to the exit. Several animals exhibited these, often several bouts in a row, and at all times of the night.
 
-## Reduced trajectories
+### Reduced trajectories
 
 From the raw nose trajectory we computed two reduced versions. First, we divided the maze into discrete ‘cells’, namely the squares the width of a corridor that make up the grid of the maze. At any given time, the nose is in one of these cells and that time series defines the cell trajectory.
 
-At a coarser level still one can ask when the animal passes through the nodes of the binary tree, which are the decision points in the maze. The special cells that correspond to the nodes of the tree are those at the center of a T-junction and those at the leaves of the tree. We marked all the times when the trajectory (x⁢(t),y⁢(t)) entered a new node cell. If the animal leaves a node cell and returns to it before entering a different node cell, that is not considered a new node. This procedure defines a discrete node sequence si and corresponding arrival times at those nodes ti. We call the transition between two nodes a ‘step’. Much of the analysis in this paper is derived from the animal’s node sequence. The median mouse performed 16,192 steps in the 7 h period of observation (mean = 15,257; SD = 3340).
+At a coarser level still one can ask when the animal passes through the nodes of the binary tree, which are the decision points in the maze. The special cells that correspond to the nodes of the tree are those at the center of a T-junction and those at the leaves of the tree. We marked all the times when the trajectory $(x⁢(t),y⁢(t))$ entered a new node cell. If the animal leaves a node cell and returns to it before entering a different node cell, that is not considered a new node. This procedure defines a discrete node sequence si and corresponding arrival times at those nodes ti. We call the transition between two nodes a ‘step’. Much of the analysis in this paper is derived from the animal’s node sequence. The median mouse performed 16,192 steps in the 7 h period of observation (mean = 15,257; SD = 3340).
 
 In Figure 5 and Figure 6, we count the occurrence of direct paths leading to the water port (a ‘water run’) or to the exit (a ‘home run’). A direct path is a node sequence without any reversals. Figure 3—figure supplement 1 illustrates some examples.
 
-If the animal makes one wrong step from the direct path, that step needs to be backtracked, adding a total of two steps to the length of the path. If further errors occur during backtracking, they need to be corrected as well. The binary maze contains no loops, so the number of errors is directly related to the length of the path:(7)Errors=(Length of path−Length of direct path)/2
+If the animal makes one wrong step from the direct path, that step needs to be backtracked, adding a total of two steps to the length of the path. If further errors occur during backtracking, they need to be corrected as well. The binary maze contains no loops, so the number of errors is directly related to the length of the path:
 
-## Maze rotation
+$$
+Errors=(Length of path−Length of direct path)/2
+$$
+
+### Maze rotation
 
 The maze rotation experiment (Figure 4) was performed on four mice, all water-deprived. Two of the animals (’D7’ and ’D9’) had experienced the maze before, and are part of the ’rewarded’ group in other sections of the report. Two additional animals (’F2’ and ’A1’) had had no prior contact with the maze.
 
@@ -302,63 +404,133 @@ For animals ’D7’ and ’D9’ we rotated only the floor of the maze, leaving
 
 The visits to the four locations in the maze (Figure 4C, Figure 4—figure supplement 1) were limited to direct paths of length at least two steps. This avoids counting rapid flickers between two adjacent nodes. In other words, the animal has to move at least two steps away from the target node before another visit qualifies.
 
-## Statistics of sudden insight
+### Statistics of sudden insight
 
 In Figure 5 one can distinguish two events: First, the animal finds the water port and begins to collect rewards at a steady rate: this is when the green curve rises up. At a later time, the long direct paths to the water port become much more frequent than to the comparable control nodes: this is when the red and blue curves diverge. For almost all animals these two events are well separated in time (Figure 5—figure supplement 1). In many cases, the rate of long paths seems to change discontinuously: a sudden change in slope of the curve.
 
-Here, we analyze the degree of 'sudden change', namely how rapidly the rate changes in a time series of events. We modeled the rate as a sigmoid function of time during the experiment:(8)r(t)=ri+rf−ri2erf(t−tsw)whereerf(x)=2π∫0xe−x2dx
+Here, we analyze the degree of 'sudden change', namely how rapidly the rate changes in a time series of events. We modeled the rate as a sigmoid function of time during the experiment:
 
-The rate begins at a low initial level ri, reflecting chance occurrence of the event, and saturates at a high final level rf, limited for example by the animal’s walking speed. The other two parameters are the time ts of half-maximal rate change, and the width w over which that rate change takes place. A sudden change in the event rate would correspond to w=0.
+$$
+r(t)=r_{i}+\frac{r_{f}−r_{i}}{2}erf(\frac{t−t_{s}}{w})
+$$
 
-The data are a set of n event times ti in the observation interval [0,T]. We model the event train as an inhomogeneous Poisson point process with instantaneous rate r⁢(t). The likelihood of the data given the rate function r⁢(t) is(9)L⁢[r⁢(t)]=e-∫0Tr⁢(t)⁢𝑑t⁢∏ir⁢(ti)and the log likelihood is(10)ln⁡L=∑iln⁡r⁢(ti)-∫0Tr⁢(t)⁢𝑑t
+where
 
-For each of the 10 rewarded mice, we maximized ln⁡L over the 4 parameters of the rate model, both for the reward events and the long paths to water. The resulting fits are plotted in Figure 5—figure supplement 1.
+$$
+erf(x)=\frac{2}{\sqrt{\pi}}\int0xe^{−x^{2}}dx
+$$
 
-Focusing on the learning of long paths to water, for 6 of the 10 animals the optimal width parameter w was less than 300 s: B1, B2, C1, C3, C6, C7. These are the same animals one would credit with a sudden kink in the cumulative event count based on visual inspection (Figure 5—figure supplement 1).
+The rate begins at a low initial level $r_{i}$, reflecting chance occurrence of the event, and saturates at a high final level $r_{f}$, limited for example by the animal’s walking speed. The other two parameters are the time $t_{s}$ of half-maximal rate change, and the width $w$ over which that rate change takes place. A sudden change in the event rate would correspond to $w=0$.
 
-To measure the uncertainty in the timing of this step, we refit the data for this subgroup of mice with a model involving a sudden step in the rate,(11)r(t)={ri,t<tsrf,t>tsand computed the likelihood of the data as a function of the step time ts. We report the mean and standard deviation of the step time over its likelihood in Figure 5—source data 1. Animal C6 was dropped from this 'sudden step' group, because the uncertainty in the step time was too large (∼900 s).
+The data are a set of $n$ event times $t_{i}$ in the observation interval $[0,T]$. We model the event train as an inhomogeneous Poisson point process with instantaneous rate $r⁢(t)$. The likelihood of the data given the rate function $r⁢(t)$ is
 
-## Efficiency of exploration
+$$
+L⁢[r⁢(t)]=e^{-\int0Tr⁢(t)⁢𝑑t}⁢\prodir⁢(t_{i})
+$$
 
-The goal of this analysis is to measure how effectively the animal surveys all the end nodes of the maze. The specific question is: In a string of n end nodes that the animal samples, how many of these are distinct? On average how does the number of distinct nodes d increase with n? This was calculated as follows:
+and the log likelihood is
 
-We restricted the animal’s node trajectory (si) to clips of exploration mode, excluding the direct paths to the water port or the exit. All subsequent steps were applied to these clips, then averaged over clips. Within each clip we marked the sequence of end nodes (ei). We slid a window of size n across this sequence and counted the number of distinct nodes d in each window. Then we averaged d over all windows in all clips. Then we repeated that for a wide range of n. The resulting d⁢(n) is plotted in the figures reporting new nodes vs nodes visited (Figure 8A,B and Figure 9C).
+$$
+ln⁡L=\sumiln⁡r⁢(t_{i})-\int0Tr⁢(t)⁢𝑑t
+$$
 
-For a summary analysis, we fitted the curves of d⁢(n) with a two-parameter function:(12)d⁢(n)≈64⁢(1-11+z+b⁢z31+b)where (13)z=n/a
+For each of the 10 rewarded mice, we maximized $ln⁡L$ over the 4 parameters of the rate model, both for the reward events and the long paths to water. The resulting fits are plotted in Figure 5—figure supplement 1.
 
-The parameter a is the number of visits n required to survey half of the end nodes, whereas b reflects a relative acceleration in discovering the last few end nodes. This function was found by trial and error and produces absurdly good fits to the data (Figure 8—figure supplement 1). The values quoted in the text for efficiency of exploration are E=32/a (Equation 1).
+Focusing on the learning of long paths to water, for 6 of the 10 animals the optimal width parameter $w$ was less than 300 s: B1, B2, C1, C3, C6, C7. These are the same animals one would credit with a sudden kink in the cumulative event count based on visual inspection (Figure 5—figure supplement 1).
 
-The value of b was generally small (~0.1) with no difference between rewarded and unrewarded animals. It declined slightly over the night (Figure 8—figure supplement 1B), along with the decline in a (Figure 8C).
+To measure the uncertainty in the timing of this step, we refit the data for this subgroup of mice with a model involving a sudden step in the rate,
 
-## Biased random walk
+$$
+r(t)={r_{i},t<t_{s}r_{f},t>t_{s}
+$$
+
+and computed the likelihood of the data as a function of the step time $t_{s}$. We report the mean and standard deviation of the step time over its likelihood in Figure 5—source data 1. Animal C6 was dropped from this 'sudden step' group, because the uncertainty in the step time was too large (∼900 s).
+
+### Efficiency of exploration
+
+The goal of this analysis is to measure how effectively the animal surveys all the end nodes of the maze. The specific question is: In a string of $n$ end nodes that the animal samples, how many of these are distinct? On average how does the number of distinct nodes $d$ increase with $n$? This was calculated as follows:
+
+We restricted the animal’s node trajectory $(s_{i})$ to clips of exploration mode, excluding the direct paths to the water port or the exit. All subsequent steps were applied to these clips, then averaged over clips. Within each clip we marked the sequence of end nodes $(e_{i})$. We slid a window of size $n$ across this sequence and counted the number of distinct nodes $d$ in each window. Then we averaged $d$ over all windows in all clips. Then we repeated that for a wide range of $n$. The resulting $d⁢(n)$ is plotted in the figures reporting new nodes vs nodes visited (Figure 8A,B and Figure 9C).
+
+For a summary analysis, we fitted the curves of $d⁢(n)$ with a two-parameter function:
+
+$$
+d⁢(n)≈64⁢(1-\frac{1}{1+\frac{z+b⁢z^{3}}{1+b}})
+$$
+
+where 
+
+$$
+z=n/a
+$$
+
+The parameter $a$ is the number of visits $n$ required to survey half of the end nodes, whereas $b$ reflects a relative acceleration in discovering the last few end nodes. This function was found by trial and error and produces absurdly good fits to the data (Figure 8—figure supplement 1). The values quoted in the text for efficiency of exploration are $E=32/a$ (Equation 1).
+
+The value of $b$ was generally small (~0.1) with no difference between rewarded and unrewarded animals. It declined slightly over the night (Figure 8—figure supplement 1B), along with the decline in $a$ (Figure 8C).
+
+### Biased random walk
 
 For the analysis of Figure 9, we considered only the parts of the trajectory during ‘exploration’ mode. Then we parsed every step between two nodes in terms of the type of action it represents. Note that every link between nodes in the maze is either a ‘left branch’ or a ‘right branch’, depending on its relationship to the parent T-junction. Therefore, there are four kinds of action:
 
 At any given node, some actions are not available, for example from an end node one can only take one of the ‘out’ actions.
 
-To compute the turning biases, we considered every T-junction along the trajectory and correlated the action a0 that led into that node with the subsequent action a1. By tallying the action pairs (a0,a1), we computed the conditional probabilities p⁢(a1|a0). Then the four biases are defined as(14)PSF=p⁢(0|0)+p⁢(0|1)+p⁢(1|0)+p⁢(1|1)p⁢(0|0)+p⁢(0|1)+p⁢(1|0)+p⁢(1|1)+p⁢(2|0)+p⁢(3|1)(15)PSA=p⁢(0|1)+p⁢(1|0)p⁢(0|0)+p⁢(0|1)+p⁢(1|0)+p⁢(1|1)(16)PBF=p⁢(0|3)+p⁢(1|2)+p⁢(2|2)+p⁢(2|3)+p⁢(3|2)+p⁢(3|3)p⁢(0|3)+p⁢(1|2)+p⁢(2|2)+p⁢(2|3)+p⁢(3|2)+p⁢(3|3)+p⁢(0|2)+p⁢(1|3)(17)PBS=p⁢(2|2)+p⁢(2|3)+p⁢(3|2)+p⁢(3|3)p⁢(0|3)+p⁢(1|2)+p⁢(2|2)+p⁢(2|3)+p⁢(3|2)+p⁢(3|3)
+To compute the turning biases, we considered every T-junction along the trajectory and correlated the action $a_{0}$ that led into that node with the subsequent action $a_{1}$. By tallying the action pairs $(a_{0},a_{1})$, we computed the conditional probabilities $p⁢(a_{1}|a_{0})$. Then the four biases are defined as
+
+$$
+P_{SF}=\frac{p⁢(0|0)+p⁢(0|1)+p⁢(1|0)+p⁢(1|1)}{p⁢(0|0)+p⁢(0|1)+p⁢(1|0)+p⁢(1|1)+p⁢(2|0)+p⁢(3|1)}
+$$
+
+
+
+$$
+P_{SA}=\frac{p⁢(0|1)+p⁢(1|0)}{p⁢(0|0)+p⁢(0|1)+p⁢(1|0)+p⁢(1|1)}
+$$
+
+
+
+$$
+P_{BF}=\frac{p⁢(0|3)+p⁢(1|2)+p⁢(2|2)+p⁢(2|3)+p⁢(3|2)+p⁢(3|3)}{p⁢(0|3)+p⁢(1|2)+p⁢(2|2)+p⁢(2|3)+p⁢(3|2)+p⁢(3|3)+p⁢(0|2)+p⁢(1|3)}
+$$
+
+
+
+$$
+P_{BS}=\frac{p⁢(2|2)+p⁢(2|3)+p⁢(3|2)+p⁢(3|3)}{p⁢(0|3)+p⁢(1|2)+p⁢(2|2)+p⁢(2|3)+p⁢(3|2)+p⁢(3|3)}
+$$
 
 For the simulations of random agents (Figure 8, Figure 9), we used trajectories long enough so the uncertainty in the resulting curves was smaller than the line width.
 
-## Models of decisions during exploration
+### Models of decisions during exploration
 
 The general approach is to develop a model that assigns probabilities to the animal’s next action, namely which node it will move to next, based on its recent history of actions. All the analyses were restricted to the animal’s ‘exploration’ mode and to the 63 nodes in the maze that are T-junctions. During the ‘drink’ and ‘leave’ modes the animal’s next action is predictable. Similarly, when it finds itself at one of the 64 end nodes it only has one action available.
 
 For every mouse trajectory, we split the data into five segments, trained the model on 80% of the data, and tested it on 20%, averaging the resulting cross-entropy over the five possible splits. Each segment was in turn composed of parts of the trajectory sampled evenly throughout the 7 h experiment, so as to average over the small changes in the course of the night. The model was evaluated by the cross-entropy between the predictions and the animal’s true actions. If one had an optimal model of behavior, the result would reveal the animal’s true source entropy.
 
-## Fixed depth Markov chain
+#### Fixed depth Markov chain
 
-To fit a model with fixed history depth k to a measured node sequence (st), we evaluated all the substrings in that sequence of length (k+1). At any given time t, the k-string 𝐡t=(st-k+1,…,st) identifies the history of the animal’s k most recent locations. The current state st is one of 63 T-junctions. Each state is preceded by one of 3 possible states. So the number of history strings is 63⋅3k-1. The 2-string (st,st+1) identifies the next action at+1, which can be ‘in left’, ‘in right’, or ‘out’, corresponding to the 3 branches of the T junction. Tallying the history strings with the resulting actions leads to a contingency table of size 63⋅3k-1×3, containing(18)n(h,a)=number of times history h leads to action a
+To fit a model with fixed history depth $k$ to a measured node sequence $(s_{t})$, we evaluated all the substrings in that sequence of length $(k+1)$. At any given time $t$, the $k$-string $𝐡_{t}=(s_{t-k+1},…,s_{t})$ identifies the history of the animal’s $k$ most recent locations. The current state $s_{t}$ is one of 63 T-junctions. Each state is preceded by one of 3 possible states. So the number of history strings is $63⋅3^{k-1}$. The 2-string $(s_{t},s_{t+1})$ identifies the next action $a_{t+1}$, which can be ‘in left’, ‘in right’, or ‘out’, corresponding to the 3 branches of the T junction. Tallying the history strings with the resulting actions leads to a contingency table of size $63⋅3^{k-1}\times3$, containing
 
-Based on these sample counts, we estimated the probability of each action a conditional on the history 𝐡 as(19)p⁢(a|𝐡)=n⁢(𝐡,a)+1∑a′n⁢(𝐡,a′)+3
+$$
+n(h,a)=number of times history h leads to action a
+$$
 
-This amounts to additive smoothing with a pseudocount of 1, also known as ‘Laplace smoothing’. These conditional probabilities were then used in the testing phase to predict the action at time t based on the preceding history 𝐡t. The match to the actually observed actions at was measured by the cross-entropy(20)H=⟨-log2⁡p⁢(at|𝐡t)⟩t
+Based on these sample counts, we estimated the probability of each action $a$ conditional on the history $𝐡$ as
 
-## Variable depth Markov chain
+$$
+p⁢(a|𝐡)=\frac{n⁢(𝐡,a)+1}{\suma^{′}n⁢(𝐡,a^{′})+3}
+$$
 
-As one pushes to longer histories, that is larger k, the analysis quickly becomes data-limited, because the number of possible histories grows exponentially with k. Soon one finds that the counts for each history-action combination drop to where one can no longer estimate probabilities correctly. In an attempt to offset this problem, we pruned the history tree such that each surviving branch had more than some minimal number of counts in the training data. As expected, this model is less prone to over-fitting and degrades more gently as one extends to longer histories (Figure 11—figure supplement 1A). The lowest cross-entropy was obtained with an average history length of ~4.0 but including some paths of up to length 6. Of all the algorithms we tested, this produced the lowest cross-entropies, although the gains relative to the fixed-depth model were modest (Figure 11—figure supplement 1C).
+This amounts to additive smoothing with a pseudocount of 1, also known as ‘Laplace smoothing’. These conditional probabilities were then used in the testing phase to predict the action at time $t$ based on the preceding history $𝐡_{t}$. The match to the actually observed actions at was measured by the cross-entropy
 
-## Pooling across symmetric nodes in the maze
+$$
+H=⟨-log_{2}⁡p⁢(a_{t}|𝐡_{t})⟩_{t}
+$$
+
+#### Variable depth Markov chain
+
+As one pushes to longer histories, that is larger $k$, the analysis quickly becomes data-limited, because the number of possible histories grows exponentially with $k$. Soon one finds that the counts for each history-action combination drop to where one can no longer estimate probabilities correctly. In an attempt to offset this problem, we pruned the history tree such that each surviving branch had more than some minimal number of counts in the training data. As expected, this model is less prone to over-fitting and degrades more gently as one extends to longer histories (Figure 11—figure supplement 1A). The lowest cross-entropy was obtained with an average history length of ~4.0 but including some paths of up to length 6. Of all the algorithms we tested, this produced the lowest cross-entropies, although the gains relative to the fixed-depth model were modest (Figure 11—figure supplement 1C).
+
+#### Pooling across symmetric nodes in the maze
 
 Another attempt to increase the counts for each history involved pooling counts over multiple T-junctions in the maze that are closely related by symmetry. For example, all the T-junctions at the same level of the binary tree look locally similar, in that they all have corridors of identical length leading from the junction. If one supposes that the animal acts the same way at each of those junctions, one would be justified in pooling across these nodes, leading to a better estimate of the action probabilities, and perhaps less over-fitting. This particular procedure was unsuccessful, in that it produced higher cross-entropy than without pooling.
 

@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.39169.001 How Mycobacterium tuberculosis ( Mtb ) rewires macrophage energy metabolism to facilitate survival is poorly characterized. Here, we used extracellular flux analysis to simultaneously measure the rates of glycolysis and respiration in real time. Mtb infection induced a quiescent energy phenotype in human monocyte-derived macrophages and decelerated flux through glycolysis and the TCA cycle. In contrast, infection with the vaccine strain, M. bovis BCG, or dead Mtb induced glycolytic phenotypes with greater flux. Furthermore, Mtb reduced the mitochondrial dependency on glucose and increased the mitochondrial dependency on fatty acids, shifting this dependency from endogenous fatty acids in uninfected cells to exogenous fatty acids in infected macrophages. We demonstrate how quantifiable bioenergetic parameters of the host can be used to accurately measure and track disease, which will enable rapid quantifiable assessment of drug and vaccine efficacy. Our findings uncover new paradigms for understanding the bioenergetic basis of host metabolic reprogramming by Mtb .
+How Mycobacterium tuberculosis (Mtb) rewires macrophage energy metabolism to facilitate survival is poorly characterized. Here, we used extracellular flux analysis to simultaneously measure the rates of glycolysis and respiration in real time. Mtb infection induced a quiescent energy phenotype in human monocyte-derived macrophages and decelerated flux through glycolysis and the TCA cycle. In contrast, infection with the vaccine strain, M. bovis BCG, or dead Mtb induced glycolytic phenotypes with greater flux. Furthermore, Mtb reduced the mitochondrial dependency on glucose and increased the mitochondrial dependency on fatty acids, shifting this dependency from endogenous fatty acids in uninfected cells to exogenous fatty acids in infected macrophages. We demonstrate how quantifiable bioenergetic parameters of the host can be used to accurately measure and track disease, which will enable rapid quantifiable assessment of drug and vaccine efficacy. Our findings uncover new paradigms for understanding the bioenergetic basis of host metabolic reprogramming by Mtb.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ In this study, we used extracellular flux analysis to explore the modulation of 
 
 ## Results
 
-## Mtb infection depresses the rate of mitochondrial respiration in macrophages
+### Mtb infection depresses the rate of mitochondrial respiration in macrophages
 
 Mitochondria are regarded as the energy factory of the cell that generates ATP through OXPHOS. It is reasonable to expect that on infection with Mtb, host energy metabolism is rewired, which has implications for understanding how Mtb causes disease. To examine the effect of mycobacterial infection on host OXPHOS, we made use of an extracellular flux analyzer (XF, Agilent Seahorse, Santa Clara, CA) and the mitochondrial respiration test (Nicholls et al., 2010) to determine key respiratory parameters in mammalian cells. These include basal respiration (Basal Resp), which is the initial OCR measured before addition of any inhibitors minus the non-mitochondrial respiration; ATP-linked respiration (ATP-linked OCR), which is determined after addition of oligomycin that inhibits ATP synthase (Complex V) and thus approximates the respiration required to drive ATP synthesis; proton leak, which is the difference between the ATP-linked OCR and the non-mitochondrial respiration; maximal respiration (Max Resp), which is induced after addition of carbonyl cyanide-4-(trifluoromethoxy)phenylhydrazone (FCCP) that uncouples ATP synthesis from electron transport; spare respiratory capacity (SRC), which is the difference between maximal respiration and basal respiration; and non-mitochondrial respiration (Non-Mito Resp), which is the OCR after addition of rotenone, a complex I inhibitor, and antimycin A, a complex III inhibitor (Figure 1B). SRC is an important parameter that reflects the ability of the cell to increase respiration to increase the supply of ATP in scenarios when the energy demand exceeds supply under conditions of stress or increased work load.
 
@@ -44,35 +44,67 @@ It is not possible to ensure that every cell will be infected in in vitro infect
 
 Overall, our data demonstrated that strain pathogenicity and burden have distinct effects on virtually all respiratory parameters. Figure 2A and B shows that infection of THP-1 macrophages with Mtb or BCG significantly decreased the respiratory parameters: Basal Resp, ATP-linked OCR, proton leak and Max Resp (and SRC in the case of Mtb), and increased Non-Mito Resp. Similar patterns were observed at lower MOIs of 1 and 2.5, but to lesser degrees (Figure 2—figure supplement 1A–D). Infection with the dead Mtb only significantly reduced the respiratory parameters at MOIs of 2.5 and 5 (Figure 2—figure supplement 1C–D and Figure 2A–B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/39169/elife-39169-fig2-v2.jpg)
+
+**Figure 2.:** Respiratory profiles (OCR) and respiratory parameters of (A–B) PMA differentiated THP-1 macrophages, and (C–D) hMDMs infected with Mtb, BCG and ∆Dead Mtb (heat-killed Mtb) at MOIs of 5 for 24 h. Refer to Figure 2—figure supplement 1 for profiles of lower MOIs. After obtaining basal respiration, cells were subjected to oligomycin (Oligo, 1.5 µM), which inhibits ATP synthase and demonstrates the mitochondrial ATP-linked OCR, followed by FCCP (cyanide-4-[trifluoromethoxy]phenylhydrazone), which uncouples mitochondrial respiration and maximizes OCR (1 µM for THP-1 and hMDMs), and finally antimycin A and rotenone (AntiA and Rot), which inhibit complex III and I in the ETC, respectively, and shut down respiration (0.5 µM of each for THP-1; 2.5 µM of each for hMDMs). Profiles and respiratory parameters are representative of three independent experiments. Data shown are the mean ± SD (n = 6 biological replicates). Student’s t test relative to uninfected cells; #, p < 0.0001; χ, p < 0.0005; ϕ, p < 0.001; *p < 0.005; +, p < 0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39169/elife-39169-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Respiratory profiles (OCR) and respiratory parameters of (A–D) PMA differentiated THP-1 macrophages, and (E–H) hMDMs infected with Mtb, BCG and dead Mtb at MOIs of 1 or 2.5 for 24 h. Profiles and respiratory parameters are representative of three independent experiments. Data shown are the mean ± SD (n = 6 biological replicates). Student’s t test relative to uninfected cells; #, p < 0.0001; χ, p < 0.0005; ϕ, p < 0.001; *p < 0.005; +, p < 0.05.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/39169/elife-39169-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** OCR (A, B) and ECAR (C, D) of the remaining extracellular Mtb (A, C) and BCG (B,D) in the final wash of infected THP-1 macrophages that were adhered to wells of an XF96 culture plate using Cell-TakTM prior to a mitochondrial respiration assay. The percentage of THP-1 (E) and hMDM cells (F) that were infected with Mtb GFP-reporter strain at MOI 1, 2.5 or 5 after 16 h. Data shown are the mean ± SD (n = 5 biological replicates) Student’s t test, ϕ, p < 0.001; *p < 0.005.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/39169/elife-39169-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Mitochondrial respiratory profiles of THP-1 cells (A–D) and hMDMs (E, F) without the addition of FCCP were generated to measure the non-mitochondrial respiration. The non-mitochondrial respiration was then used to calculate the basal respiration and proton leak in scenarios when the addition of FCCP induces oxidative bursts in infected cells at a high MOI. Profiles and respiratory parameters are representative of three independent experiments. Data shown are the mean ± SD (n = 6 biological replicates). Student’s t test relative to uninfected cells; #, p < 0.0001; χ, p < 0.0005; ϕ, p < 0.001; *p < 0.005; +, p < 0.05.
+
 Mtb infection of hMDMs dramatically reduced the respiratory parameters of the macrophage, while significantly increasing Non-Mito Resp (Figure 2C–D). Smaller reductions in the respiratory parameters were observed at lower Mtb MOIs of 1 and 2.5 with an increase in Non-Mito Resp (Figure 2—figure supplement 1E–H). Notably, contrary to Mtb, BCG infection increased the Max Resp and SRC of the hMDMs at all MOIs investigated. At a MOI of 5, BCG decreased the Basal Resp, ATP-linked OCR and proton leak, while increasing the Non-Mito Resp (Figure 2C–D). At lower MOIs, BCG had little effect on the other respiratory parameters (Figure 2—figure supplement 1E–H). Dead Mtb did not affect the respiratory parameters of the hMDMs at MOIs of 1 and 5, but a MOI of 2.5 increased the Max Resp and SRC of the macrophages as in the BCG infection (Figure 2C–D and Figure 2—figure supplement 1E–H).
 
 In Mtb-infected macrophages, the oxidative burst (via NADPH oxidase, which consumes O2) induced by a combination of infection, uncoupling with FCCP and inhibition of the ETC after treatment with antimycin A and rotenone increases the OCR above the initial OCR before treatment with oligomycin (Figure 2A and C). This results in the calculated basal respiration having a negative value (Figure 2B and D). As we have used standard equations to calculate the basal respiration (Nicholls et al., 2010), we propose that when the non-mitochondrial respiration is greater than the initial OCR readings before the addition of any inhibitors, an additional mitochondrial respiration assay should be performed without the addition of the FCCP to determine the non-mitochondrial respiration, to obtain the values of basal respiration and proton leak. Using this format, the true (positive) values for basal respiration and proton leak are obtained (Figure 2—figure supplement 3). The basal respiration of both Mtb and BCG infections at a MOI of 2.5 and 5 were less than that of uninfected THP-1 cells, and the proton leak of BCG was less than that of the uninfected THP-1 cells (Figure 2—figure supplement 3A–D). The non-mitochondrial respiration was increased in both of these infections at a MOI of 5. Similar patterns were observed with the Mtb- and BCG-infected hMDMs at a MOI of 5 (Figure 2—figure supplement 3E,F).
 
 In sum, there are profound contrasting respiratory differences among Mtb, BCG and dead Mtb infection of the macrophages. In particular, Max Resp, SRC and Non-Mito Resp are strongly influenced by the mycobacterial strain, burden and macrophage type. Mtb infection of hMDMs decreases Max Resp and SRC in contrast to BCG increasing Max Resp and SRC, and both strains increase Non-Mito Resp. SRC has consequences on how the macrophage responds to environmental stresses such as nutrient availability, redox state and changes in pH. Thus, an increase in the SRC of hMDMs following infection with potential vaccine candidates may aid identification of promising candidates. Strikingly, dead Mtb infection still alters the bioenergetic metabolism of the macrophage, in particular that of the THP-1 cells. This has implications for pharmacological killing of Mtb, as killing intracellular Mtb will not fully restore the macrophage’s bioenergetic metabolism to that of the uninfected macrophage. However, pharmacological killing will improve the bioenergetic profile of the live Mtb-infected macrophages, in particular, the ATP-linked Resp and the Non-Mito Resp. Therefore, improvements in these parameters of the infected macrophages can be used as indicators of effective pharmacological killing of Mtb during screening of potential anti-TB drug leads in Mtb-infected macrophages.
 
-## Mtb infection reduces the extracellular acidification rate of the macrophage
+### Mtb infection reduces the extracellular acidification rate of the macrophage
 
 Glycolysis is the second pathway used to supply ATP for the energy requirements of the cell, in addition to anabolic intermediates. Here, we measured the glycolytic parameters of mycobacterial infected cells, including the glucose metabolism extracellular acidification rate after addition of glucose; the maximal glycolytic capacity (Gly capacity) following inhibition of OXPHOS ATP synthesis with oligomycin; and the non-glycolytic extracellular acidification measured after treatment of the mycobacterial infected cells with 2-deoxyglucose (2-DG), an inhibitor of hexokinase II, which catalyzes the first step of glycolysis (Figure 1C). The difference between the extracellular acidification rate of glucose metabolism rate and the maximal glycolytic capacity of the cells defines the spare glycolytic reserve.
 
 Mtb strikingly decreased the glycolytic parameters of both types of macrophages after 24 h (Figure 3). In THP-1 cells, all the mycobacterial strains reduced the glycolytic parameters at MOIs of 5 (Figure 3A–B) and 2.5 (Figure 3—figure supplement 1C,D), with dead Mtb having the least effects. At a MOI of 1, Mtb decreased the glycolytic parameters, BCG increased the glycolytic parameters and dead Mtb had no effect (Figure 3—figure supplement 1A–B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/39169/elife-39169-fig3-v2.jpg)
+
+**Figure 3.:** ECAR profiles and glycolytic parameters of (A–B) PMA differentiated THP-1 macrophages, and (C–D) hMDMs infected with Mtb, BCG and dead Mtb at MOI of 5 for 24 h. Refer to Figure 3—figure supplement 1 for profiles at lower MOIs. After obtaining non-glycolytic acidification, glucose (Glc, 10 mM) was added to the cells, followed by oligomycin (1.5 µM), which inhibits ATP synthase inducing maximal glycolysis to compensate for loss of mitochondrial generated ATP, and finally 2-deoxyglucose (2-DG, 100 mM) to inhibit glycolysis and demonstrate that the prior acidification was generated by glycolysis. Profiles and glycolytic parameters are representative of three independent experiments. Data shown are the mean ± SD (n = 6 biological replicates). Student’s t test relative to uninfected cells; #, p < 0.0001; χ, p < 0.0005; ϕ, p < 0.001; *p < 0.005; +, p < 0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39169/elife-39169-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** ECAR profiles and glycolytic parameters of (A–D) PMA differentiated THP-1 macrophages, and (E–H) hMDMs infected with Mtb, BCG and dead Mtb at MOIs of 1 or 2.5 for 24 h. Profiles and glycolytic parameters are representative of three independent experiments. Data shown are the mean ± SD (n = 6 biological replicates). Student’s t test relative to uninfected cells; #, p < 0.0001; χ, p < 0.0005; ϕ, p < 0.001; *p < 0.005; +, p < 0.05.
+
 In hMDMs, Mtb at a MOI of 2.5 had little effect and at a MOI of 1 increased glucose metabolism extracellular acidification. (Figure 3—figure supplement 1E–H). Contrary to THP-1 cells, BCG and dead Mtb infection of hMDMs increased glucose metabolism acidification and the glycolytic capacity at all MOIs investigated. Increases in the non-glycolytic acidification were observed in the BCG and dead Mtb infections, probably as a result of the carbonic acid produced from CO2 generated by the tricarboxylic acid cycle (TCA). These results underscore the different modulations of dead and live Mtb on macrophage bioenergetics.
 
 In sum, marked glycolytic differences were observed between the virulent and non-virulent infections, with Mtb infection significantly reducing glucose metabolism extracellular acidification in the macrophages. BCG and dead-Mtb infections induced contrasting effects dependent on macrophage cell type, with a decrease in THP-1 glucose metabolism extracellular acidification versus an increase in hMDM extracellular acidification.
 
-## Mtb infection shifts the bioenergetic phenotype of the macrophage towards quiescence
+### Mtb infection shifts the bioenergetic phenotype of the macrophage towards quiescence
 
 To determine how mycobacterial infection shifts the energy metabolism of the macrophage, basal OCR was plotted as a function of ECAR to form a bioenergetic phenogram that depicts the overall energy phenotypes of the macrophages. The energy phenotype of cells can be described as more aerobic, energetic, glycolytic or quiescent (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/39169/elife-39169-fig4-v2.jpg)
 
-**Figure 4.:** Mtb shifts macrophages towards quiescent energy phenotypes.Basal OCR and ECAR measurements from the respiratory assay (Figure 2) before addition of oligomycin were plotted to generate phenograms of (A–C) PMA-differentiated THP-1 cells and (D–F) hMDMs infected with Mtb, BCG and ∆Dead Mtb at MOIs of 1, 2.5 and 5. Data are representative of three independent experiments. Data shown are the mean ± SD (n = 6 biological replicates). Student’s t test relative to uninfected cells; #, p < 0.0001; χ, p < 0.0005; ϕ, p < 0.001; *p < 0.005; +, p < 0.05.
+**Figure 4.:** Basal OCR and ECAR measurements from the respiratory assay (Figure 2) before addition of oligomycin were plotted to generate phenograms of (A–C) PMA-differentiated THP-1 cells and (D–F) hMDMs infected with Mtb, BCG and ∆Dead Mtb at MOIs of 1, 2.5 and 5. Data are representative of three independent experiments. Data shown are the mean ± SD (n = 6 biological replicates). Student’s t test relative to uninfected cells; #, p < 0.0001; χ, p < 0.0005; ϕ, p < 0.001; *p < 0.005; +, p < 0.05.
 
 In THP-1 cells and hMDMs, infection with Mtb exhibited the most pronounced shift from an Energetic phenotype towards that of a Quiescent phenotype with increasing MOI (Figure 4A and D). In contrast, BCG and dead Mtb infections of THP-1 cells (MOIs 2.5 and 5) induced much smaller shifts towards quiescence (Figure 4B and C); whereas in hMDMs, only BCG infection at a MOI of 5 engendered a small shift towards quiescence. Dead Mtb did not affect the OCR of the hMDMs but decreased the ECAR at lower MOIs (Figure 4F), again underscoring the differences between live and dead Mtb. In sum, our data clearly demonstrate that Mtb infection shifts the energy phenotypes of human macrophages towards a metabolic quiescent state.
 
-## Mtb decreases the glycolytic proton efflux rate of macrophages
+### Mtb decreases the glycolytic proton efflux rate of macrophages
 
 Previous studies using Mtb lysates (Lachmandas et al., 2016), irradiated killed Mtb and lactate measurements (Gleeson et al., 2016), or transcription profiling (Shi et al., 2015) led to the supposition that Mtb induces aerobic glycolysis for ATP generation, known as the Warburg effect. In XF analysis, bulk acidification of the extracellular medium, as measured by ECAR, is not specific for glycolysis as the mitochondrial TCA produces CO2 that is partially hydrated in the extracellular medium and contributes to the acidification of the extracellular medium (Mookerjee et al., 2015a). In the glycolytic rate assay (Mookerjee and Brand, 2015b), inhibition of mitochondrial respiration after addition of rotenone and antimycin A enables calculation of the contribution of the mitochondrial respiration to the rate of proton efflux (Figure 5A). Subtraction of the mitochondrial proton efflux rate from the total proton efflux rate provides the glycolytic proton efflux rate (glycoPER) (Figure 5—figure supplement 1A–D). To confirm the specificity, 2-DG is added to inhibit glycolytic acidification (Figure 5A). Compensatory glycolysis refers to the ability of the cell to increase glycolysis after OXPHOS has been inhibited with rotenone and antimycin A.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/39169/elife-39169-fig5-v2.jpg)
+
+**Figure 5.:** (A) Extracellular acidification can be caused by both lactate and protons produced from pyruvate, the final product of glycolysis, in addition to carbonic acid generated from CO2 from pyruvate oxidation in the mitochondria. Calculating proton efflux rate (PER) enables the glycolytic PER to be elucidated separately from the mitochondrial PER (Figure 5—figure supplement 1A–D). (B–E) Basal and compensatory glycolytic PER of THP-1 cells (B–C) and hMDMs (D–E) infected with Mtb, BCG and ∆Dead Mtb at MOI of 5 for 18 h. Refer to Figure 5—figure supplement 1E–L for profiles at lower MOIs. Following basal measurement of ECAR and OCR, to determine basal glycolytic PER, rotenone and antimycin A were added to determine compensatory PER. This was followed by addition of 2-DG to ensure that the PER observed was caused by glycolysis. Profiles and PER are representative of two independent experiments. Data shown are the mean ± SD (n = 6). Student’s t test relative to the uninfected cells; #, p < 0.0001; χ, p < 0.0005; ϕ, p < 0.001; *p < 0.005; +, p < 0.05. (F–G) Total rate of ATP production was calculated as the sum of glycolytic ATP rate formation (equivalent to glycoPER) and mitochondrial-derived ATP rate formation that was estimated from the ATP-linked OCR, assuming a P/O ratio of 2.79. Rate of ATP formation in (F) THP-1 cells and (G) hMDM cells infected with Mtb, BCG or ∆Dead Mtb at indicated MOI for 18 h. Refer to Figure 5—figure supplement 1M–N for % contribution of glycolysis and OXPHOS to the total rate of ATP production. Error bars are SD (n = 6 biological replicates). Student’s t test; #, p < 0.0001; χ, p < 0.0005; ϕ, p < 0.001; *p < 0.005; +, p < 0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/39169/elife-39169-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–D) Profiles of total proton efflux rate (PER) in red and the glycolytic proton efflux rate (glycoPER) in blue of hMDMs infected with Mtb, BCG and dead Mtb at MOI of 1 for 18 h. The difference between the total PER and glycoPER will give the PER caused by mitochondrial respiration. (E–L) Basal and compensatory glycolytic PER of THP-1 cells (E–H) and hMDMs (I–L) infected with Mtb, BCG and dead-Mtb at MOIs of 1 and 2.5 for 18 h. (M, N) % Contribution of glycolysis and OXPHOS to the total rate of ATP production in (M) THP-1 cells and (N) hMDM cells infected with Mtb, BCG or dead Mtb at indicated MOI for 18 h. Profiles, PER and % contribution of glycolysis and OXPHOS to total ATP production are representative of two independent experiments. Data shown are the mean ± SD (n = 6 biological replicates). Student’s t test relative to the uninfected cells; #, p < 0.0001; χ, p < 0.0005; ϕ, p < 0.001; *p < 0.005; +, p < 0.05.
 
 The proton efflux rates illustrated in Figure 5B–E are the calculated values of the glycolytic PER without the acidification contribution from mitochondrial respiration. Basal glycolysis and compensatory glycolysis of the macrophages, which is induced when mitochondrial ATP synthase is inhibited thereby forcing the cell to use glycolysis to meet the cell’s ATP requirements, are expressed as glycoPER (pmol/min/µg protein).
 
@@ -88,7 +120,7 @@ Similarly, in hMDMs, the insignificant changes in basal and compensatory glycoPE
 
 Overall, these differences reflect the accuracy of the glycoPER in measuring the rate of glycolytic acidification. The similar trends between glycoPER and ECAR observed in Mtb infections result from the suppression of OXPHOS that is more prominent in Mtb infection, thus having minimal effects on ECAR caused by pyruvate oxidation.
 
-## Mtb reduces the rate of ATP production in macrophages
+### Mtb reduces the rate of ATP production in macrophages
 
 ATP is the energy currency of the cell and here, we investigate how Mtb infection modulates the rate of ATP production by the two ATP-producing pathways, glycolysis and OXPHOS, in the macrophage. Intracellular ATP turnover can be quantitatively reflected by extracellular fluxes (Mookerjee et al., 2017). Subsequently, in the ATP production rate assay, we determined the total rate of ATP formation from the sum of the glycolytic rate of ATP formation, equivalent to glycoPER, and the mitochondrial-derived ATP rate of formation that was estimated from the ATP-coupled OCR assuming a maximum P/O ratio (mole of ATP generated per mole of [O] atoms consumed) of 2.79 (Mookerjee et al., 2017, Figure 1G).
 
@@ -96,23 +128,31 @@ Mtb infection significantly reduced the total ATP production rate in THP-1 cells
 
 In sum, Mtb significantly decreases the ATP production rate in human macrophages with an increase in MOI. Nevertheless, the contribution of glycolysis to the total ATP production rate was increased at lower MOIs in Mtb-infected THP-1 cells and in hMDMs at a MOI of 2.5. BCG infection progressively increased the contribution of glycolysis to the total ATP production rate with an increase in MOI in both THP-1 cells and hMDMs.
 
-## Mtb infection decelerates bioenergetic metabolism in hMDMs and THP-1 cells
+### Mtb infection decelerates bioenergetic metabolism in hMDMs and THP-1 cells
 
 Analysis of metabolite levels using NMR or LC-MS/MS in conjunction with 13C-tracing is currently the gold standard for assessing metabolic states and fluxes. However, this method is invasive and only shows the metabolic status at a single point in time. XF analysis gives insight into the plasticity of the bioenergetic metabolism in real time in the presence of certain substrates, activators or inhibitors. To gain further insight into the XF data, we used 13C-tracing of metabolites extracted from uninfected and infected macrophages at the same time points of the XF analysis.
 
 In Mtb-infected hMDMs, 13C-tracing indicated reduced total 13C-incorporation in the glycolytic intermediates: glucose-6-phosphate/fructose-6-phosphate (G6P/F6P), pyruvate and lactate; and reduced flux of incorporation into dihydroxyacetone phosphate/glyceraldehyde-3-phosphate (DHAP/G-3-P) and phosphoenolpyruvate (PEP) from that in uninfected, BCG and dead Mtb-infected hMDMs (Figure 6A). Reduced enrichment was also observed in the TCA metabolites (citrate, α-ketoglutarate (α-KG), fumarate and malate) of the Mtb-infected hMDMs (Figure 6B). This suggests decreased flux through glycolysis and the TCA cycle. In contrast, BCG and dead Mtb showed greater enrichment than the uninfected cells in most of the glycolytic intermediates, signifying increased flux through glycolysis in these infections. Different labelling patterns were observed in fructose-1,6-bisphosphate (Figure 6A), where Mtb-infected hMDMs had the greatest enrichment, possibly as a result of gluconeogenesis. Slower flux of incorporation was also observed in the pentose phosphate pathway (PPP) in Mtb-infected hMDMs (ribose-5-phosphate, sedoheptulose-7-phosphate and erythrose-4-phosphate, Figure 6C). The PPP is induced in inflammatory macrophages as it generates NADPH, which is required by NADPH oxidase to produce ROS (Galván-Peña and O'Neill, 2014). Similar to the hMDMs, in Mtb-infected THP-1 cells at a MOI of 2.5, reductions of enrichment in the glycolytic and TCA metabolites of Mtb-infected cells were significant with slower 13C incorporation in PEP and DHA/G3P (Figure 6—figure supplement 1) indicating a decelerated flux through glycolysis and the TCA cycle.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/39169/elife-39169-fig6-v2.jpg)
+
+**Figure 6.:** (A–C) 13C-tracing of metabolites extracted from hMDM cells infected with Mtb, BCG and ∆Dead Mtb at MOI 5 (hMDM) for 10 h followed by incubation with [U-13C]glucose for 8 h. The stacked mass isotopomer distributions of the intracellular metabolites depict the contribution of glucose to (A) glycolysis, (B) the tricarboxylic acid (TCA) cycle and (C) the pentose phosphate pathway (PPP). Figure 6—figure supplement 1 demonstrates the isotopomer distributions of the intracellular metabolites of THP-1 cells infected at a MOI of 2.5. (D–E) 13C enrichment of pyruvate and lactate, including total peak areas of lactate in the supernatant of the (D) hMDM cells and (E) THP-1 cells used for metabolite analysis. Data are representative of two independent experiments and shown as the mean ± SD (n = 6 biological replicates). Student’s t test relative to uninfected cells; #, p < 0.0001; χ, p < 0.0005; ϕ, p < 0.001; *p < 0.005; +, p < 0.05.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39169/elife-39169-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** 13C-tracing of extracted metabolites of THP-1 cells infected with Mtb, BCG and ∆Dead Mtb at a MOI of 2.5 for 10 h followed by incubation with [U-13C] glucose for 8 h. The stacked mass isotopomer distributions of the intracellular metabolites depict the contribution of glucose to the TCA cycle and the PPP and some amino acids associated with the TCA cycle.
+
 Increased secreted lactate is often used as a readout of increased glycolysis (Gleeson et al., 2016; Braverman et al., 2016). Our data demonstrate reduced 13C incorporation in the lactate and pyruvate in the supernatant fluid (SNF) of Mtb-infected hMDMs (MOI 5, Figure 6D) and in the lactate in the SNF of Mtb-infected THP-1 cells (MOI 2.5, Figure 6E). The total levels of normalised lactate (total peak area/3 × 106 cells, Figure 6D and E) in the SNF were significantly reduced in Mtb-infected hMDMs and THP-1 cells, but significantly elevated in BCG-infected hMDMs. BCG- and dead Mtb-infected THP-1 cells had similar extracellular levels and enrichment to uninfected cells. This confirmed the reduced glycolytic rate (Figure 3D) and glycolytic PER (Figure 5E) observed in Mtb-infected hMDMs, the elevated glycolytic rates observed in BCG-infected hMDMs (Figure 5E) and the lower glycolytic PER observed in Mtb-infected THP-1 cells (Figure 5—figure supplement 1H).
 
 In sum, the decreased isotope enrichment and flux observed in glycolytic and TCA metabolites of Mtb-infected human macrophages indicates a deceleration of central metabolism in these cells. This confirms the quiescent energy phenotypes observed in Mtb-infected macrophages in Figure 4A and D, the decreased glycolytic PER and ATP production rates observed in Figure 5, together with the decreased ECAR resulting from both glycolysis (lactate) as well as the carbonic acid generated from the carbon dioxide produced by the TCA cycle in Figure 3.
 
-## Mtb increases the mitochondrial dependency of macrophages on fatty acids
+### Mtb increases the mitochondrial dependency of macrophages on fatty acids
 
 The development of host-directed therapies targeting energy sensors in TB would be greatly assisted by the knowledge of substrate preferences of mitochondria in Mtb-infected macrophages and how these differ to those in infections with non-virulent strains and in uninfected macrophages. Usually, three substrates are utilized by mitochondria in living cells for OXPHOS to generate ATP, namely, glucose, glutamine (Gln) and fatty acids (Figure 7A). Here, we assessed the dependency, capacity and flexibility of the mitochondria to use metabolites generated from glucose, Gln or fatty acids in the mitochondrial fuel test (Figure 1E). Dependency is demonstrated when the mitochondria are unable to use other metabolites to compensate as fuel for OXPHOS when a certain metabolite pathway is blocked, for example, the glucose pathway when UK5099 inhibits the mitochondrial pyruvate carrier that transports pyruvate into the mitochondria. Flexibility is revealed when the mitochondria can compensate for the inhibited pathway by utilizing metabolites from the other pathways to fuel OXPHOS. The capacity refers to the overall ability of the mitochondria to use a metabolite as fuel for OXPHOS and is equivalent to the sum of the dependency and flexibility. In addition to UK5099, which blocks the glucose oxidation pathway; etomoxir, which inhibits carnitine palmitoyl-transferase 1A that transports long-chain fatty acids from the cytosol into the mitochondria, is used to examine inhibition of long-chain fatty acid oxidation; and bis-2-(5-phenylacetamido-1,3,4-thiadiazol-2-yl)ethyl sulphide (BPTES), which is an allosteric inhibitor of glutaminase that converts Gln to glutamate that is further metabolised to α-KG, is used to investigate inhibition of the Gln oxidation pathway (Figure 7A).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/39169/elife-39169-fig7-v2.jpg)
 
-**Figure 7.:** Mtb infection alters the mitochondrial substrate preference of macrophages.(A–C) UK5099, etomoxir and BPTES were used to assess the mitochondrial flexibility and dependency on glucose (Glc), fatty acids (FA) and glutamine (Gln) in (B) THP-1 and (C) hMDM cells infected with Mtb, BCG and ∆Dead Mtb at MOIs of 1 and 5, respectively, for 18 h. Data shown are the mean ±SEM of five independent experiments. Student’s t test relative to uninfected cells (UI); #, p < 0.0001; χ, p < 0.0005; ϕ, p < 0.001; *p < 0.005; +, p < 0.05. (D–I) The oxidation of endogenous or exogenous fatty acids in (D–F) uninfected hMDM cells in addition to (G–I) Mtb-infected macrophages at a MOI of 5 were assessed by adding a palmitate-BSA (palm-BSA) conjugate and BSA controls before analysis on the XF with the respiration test. Etomoxir was used to assess inhibition of the transport of long-chain fatty acids into the mitochondria. BR, basal respiration; MR, maximal respiration (which gives a measure of respiration under conditions of stress); FAO, fatty acid oxidation; FA, fatty acids. (J–L) Pie charts illustrating the mitochondrial fatty acid preferences of (J) uninfected, (K) Mtb- and (L) BCG-infected hMDMs under basal and stressful conditions. Profiles and pie charts are representative of two independent experiments (n = 6 biological replicates).
+**Figure 7.:** (A–C) UK5099, etomoxir and BPTES were used to assess the mitochondrial flexibility and dependency on glucose (Glc), fatty acids (FA) and glutamine (Gln) in (B) THP-1 and (C) hMDM cells infected with Mtb, BCG and ∆Dead Mtb at MOIs of 1 and 5, respectively, for 18 h. Data shown are the mean ±SEM of five independent experiments. Student’s t test relative to uninfected cells (UI); #, p < 0.0001; χ, p < 0.0005; ϕ, p < 0.001; *p < 0.005; +, p < 0.05. (D–I) The oxidation of endogenous or exogenous fatty acids in (D–F) uninfected hMDM cells in addition to (G–I) Mtb-infected macrophages at a MOI of 5 were assessed by adding a palmitate-BSA (palm-BSA) conjugate and BSA controls before analysis on the XF with the respiration test. Etomoxir was used to assess inhibition of the transport of long-chain fatty acids into the mitochondria. BR, basal respiration; MR, maximal respiration (which gives a measure of respiration under conditions of stress); FAO, fatty acid oxidation; FA, fatty acids. (J–L) Pie charts illustrating the mitochondrial fatty acid preferences of (J) uninfected, (K) Mtb- and (L) BCG-infected hMDMs under basal and stressful conditions. Profiles and pie charts are representative of two independent experiments (n = 6 biological replicates).
 
 We found minimal flexibility in the THP-1 cell line for all three substrates, regardless of infection (Figure 7B). Mtb infection increased THP-1 mitochondrial dependency on glucose by 18%, but BCG infection decreased glucose dependency by 14%, and dead Mtb infection did not affect the glucose dependency relative to uninfected cells (Figure 7B). Although Mtb infection induced a slight increase in Gln dependency of the THP-1 mitochondria, no changes were observed in Gln dependency in the BCG infection and dead Mtb infection (Figure 7B). THP-1 mitochondrial dependency on fatty acid oxidation increased by 14% in Mtb infection and decreased by 14% in dead Mtb infection relative to uninfected cells. Only dead Mtb increased the mitochondrial flexibility on long-chain fatty acid oxidation by 8%, which highlights the differences between infection with living or dead Mtb. The minimal changes observed in the mitochondrial fuel preferences of the THP-1 cells infected with BCG and dead Mtb align with the minimal changes observed in the phenograms of these infections at MOI of 1 (Figure 4B and C). Overall, the greater changes in the mitochondrial fuel dependencies of Mtb-infected THP-1 cells are reflected in the shift of Mtb infections away from an energetic to a quiescent energy phenotype (Figure 4A). Lastly, Mtb increases the fuel dependency and capacity of the mitochondria in THP-1 macrophages on glucose and long-chain fatty acids.
 
@@ -120,7 +160,7 @@ In contrast to THP-1 cells, major differences were observed in the mitochondrial
 
 In summary, we have shown that all the infections induced hMDM dependency for Gln, Mtb decreased hMDM dependency for glucose and increased hMDM dependency for long-chain fatty acids. BCG infection had minimal effects on glucose and long-chain fatty acid oxidation, and dead Mtb increased hMDM dependency for glucose with no flexibility.
 
-## Mtb switches the dependency of hMDMs from endogenous fatty acids to exogenous fatty acids
+### Mtb switches the dependency of hMDMs from endogenous fatty acids to exogenous fatty acids
 
 After observing that Mtb infection increased the hMDM mitochondrial dependency on fatty acids, we next examined the source of these fatty acids in infected hMDMs under basal and stressed conditions. Using the mitochondrial stress test, etomoxir, palmitate conjugated to bovine serum albumin as a fatty acid substrate and bovine serum albumin (BSA) as a control, the fatty acid oxidation assay measured the intrinsic rate and capacity of a cell to oxidize exogenously added fatty acids (the palmitate-BSA conjugate, Figure 1F). As this is influenced by the availability of other substrates, such as glucose, and stores of endogenous substrates such as glycogen, triglycerides and amino acids, the cells were cultured overnight in minimal media. Furthermore, the oxidation of endogenous fatty acids was measured using the BSA control and the mild uncoupling of the mitochondria induced by free fatty acids present in the BSA and palmitate-BSA conjugate preparation was also deduced.
 
@@ -154,27 +194,450 @@ In conclusion, we identified new paradigms in TB host metabolism, including Mtb 
 
 ## Materials and methods
 
-## Ethics Statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mycobacterium Tuberculosis)</td>
+      <td>Mtb</td>
+      <td>BEI resources</td>
+      <td>NR-123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mycobacterium  bovis)</td>
+      <td>BCG</td>
+      <td>Stratens Serum Institut</td>
+      <td></td>
+      <td>Danish BCG vaccine strain 1331</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mycobacterium  Tuberculosis) H37Rv AYs330</td>
+      <td>Mtb-GFP</td>
+      <td>Steyn Laboratory</td>
+      <td></td>
+      <td>GFP Reporter strain</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>THP-1</td>
+      <td>ATCC Cat# TIB-202</td>
+      <td>RRID:CVCL_0006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo  sapiens)</td>
+      <td>Buffy coats</td>
+      <td>South African National Blood Service</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Human plasma</td>
+      <td>South African National Blood Service</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD14 microbeads, Human</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130- 050-201</td>
+      <td>MACS (1:25)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Seahorse XF Mito Fuel Flex Test Kit</td>
+      <td>Agilent</td>
+      <td>Cat# 103260–100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lookout Mycoplasma PCR detection kit</td>
+      <td>Sigma</td>
+      <td>Cat# MO0035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical  compound, drug</td>
+      <td>Seahorse XF Palmitate- BSA FAO Substrate</td>
+      <td>Agilent</td>
+      <td>Cat# 102720–100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oligomycin (from Streptomyces  diastatochromogenes)</td>
+      <td>Sigma</td>
+      <td>Cat# O4876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbonilcyanide p-triflouromethoxyphenylhydrazone (FCCP)</td>
+      <td>Sigma</td>
+      <td>Cat# C2920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antimycin A</td>
+      <td>Sigma</td>
+      <td>Cat# A8674</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rotenone</td>
+      <td>Sigma</td>
+      <td>Cat# R8875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-(+)- Glucose</td>
+      <td>Sigma</td>
+      <td>G8270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GlutaMAXTM</td>
+      <td>Gibco</td>
+      <td>Cat# 35050–038</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM</td>
+      <td>Lonza</td>
+      <td>Cat# BE12-604F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Carnitine hydrochloride</td>
+      <td>Sigma</td>
+      <td>Cat# C0283</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Sigma</td>
+      <td>Cat# S3014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KCl</td>
+      <td>Sigma</td>
+      <td>Cat# SAAR5042020EM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CaCl2</td>
+      <td>Sigma</td>
+      <td>Cat# 1023780500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Sigma</td>
+      <td>Cat# H0887</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium pyruvate</td>
+      <td>Sigma</td>
+      <td>Cat# S8636</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>XF Base medium</td>
+      <td>Agilent</td>
+      <td>Cat# 102353–100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Etomoxir</td>
+      <td>Sigma</td>
+      <td>Cat# E1905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formalin Buffered, Neutral</td>
+      <td>Sigma</td>
+      <td>Cat# SAAR2436021EL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methanol</td>
+      <td>Sigma</td>
+      <td>Cat# 34860</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetonitrile</td>
+      <td>Sigma</td>
+      <td>Cat# 34851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Human GM-CSF</td>
+      <td>Celtic Diagnostics</td>
+      <td>Cat# 300-03-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Histopaque 1077</td>
+      <td>Sigma</td>
+      <td>Cat# 10771</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DPBS</td>
+      <td>Lonza</td>
+      <td>Cat# BE17-512F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Sigma</td>
+      <td>Cat# 41639</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,  drug</td>
+      <td>Bradford Dye</td>
+      <td>BIO-RAD</td>
+      <td>Cat# 500–0205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Middlebrook 7H11 Agar</td>
+      <td>BD</td>
+      <td>Cat# 283810</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polymyxin B</td>
+      <td>Sigma</td>
+      <td>Cat# P1004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amphotericin B</td>
+      <td>Sigma</td>
+      <td>Cat# A4888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbenicillin</td>
+      <td>Sigma</td>
+      <td>Cat# C1389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trimethoprim</td>
+      <td>Sigma</td>
+      <td>Cat# T7883</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cell-TakTM</td>
+      <td>Corning</td>
+      <td>Cat# 354241</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol 12 -myristate 13-acetate</td>
+      <td>Sigma</td>
+      <td>Cat# P8139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agarose</td>
+      <td>Sigma</td>
+      <td>Cat# A9539</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SyBr Safe</td>
+      <td>Invitrogen</td>
+      <td>Cat# 533102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Middlebrook OADC</td>
+      <td>BD</td>
+      <td>Cat# 212240</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RPMI1640</td>
+      <td>Lonza</td>
+      <td>Cat# BE12-167F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Mercapt oethanol</td>
+      <td>Gibco</td>
+      <td>Cat# 21985023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Deoxy-D-Glucose</td>
+      <td>Sigma</td>
+      <td>Cat# D6134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-Glucose 13C6</td>
+      <td>LC Scientific</td>
+      <td>Cat# GG601L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Middlebrook 7H9 Broth</td>
+      <td>BD</td>
+      <td>Cat# 271310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MgSO4</td>
+      <td>Sigma</td>
+      <td>Cat# SAAR4123920EM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaH2PO4</td>
+      <td>Sigma</td>
+      <td>Cat# S9638</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Wave desktop software</td>
+      <td>Agilent</td>
+      <td>Version 2.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>Graphpad Prism</td>
+      <td>Version 7.04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CorelDRAW</td>
+      <td>Corel</td>
+      <td>Version X8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XF Cell Mito Stress Test Report Generator</td>
+      <td>Agilent</td>
+      <td></td>
+      <td>https://www.agilent.com/en/ products/cell-analysis/xf-cell-mito -stress-test-report-generator</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XF Glycolysis Stress Test Report Generator</td>
+      <td>Agilent</td>
+      <td></td>
+      <td>https://www.agilent.com/en/products/cell-analysis/xf-glycolysis-stress-test-report-generator</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XF Glycolytic Rate Assay Report Generator</td>
+      <td>Agilent</td>
+      <td></td>
+      <td>https://www.agilent.com/en/products/cell-analysis/xf-glycolytic-rate-assay-report-generator</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XF Mito Fuel Flex Test Report Generator</td>
+      <td>Agilent</td>
+      <td></td>
+      <td>https://www.agilent.com/en/products/cell-analysis/report-generator-for-the-xf-mito-fuel-flex-test</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XF Real-Time ATP Rate Assay Report Generator</td>
+      <td>Agilent</td>
+      <td></td>
+      <td>https://www.agilent.com/en/products/cell-analysis/xf-real-time-atp-rate-assay-report- generator</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics Statement
 
 Human monocytes were isolated from buffy coats bought from the South African National Blood Service with approval from SANBS Human Research Ethics Committee (Clearance Certificate No. 2016/02).
 
-## Cell culture
+### Cell culture
 
 THP-1 cells (ATCC TIB-202) were cultured in RPMI1640 [final concentrations: 4.5 g/L glucose, 2 mM L-GlutaMAXTM, 10 mM HEPES and 1 mM sodium pyruvate] containing 10% (v/v) FBS and 0.05 mM 2-mercaptoethanol. THP-1 monocytes were terminally differentiated using 100 nM phorbol 12-myristate 13-acetate (PMA) for 24 h.
 
 Peripheral blood mononuclear cells (PBMC’s) were isolated from buffy coats (SANBS) using density gradient centrifugation by overlaying buffy coats, diluted two-fold in phosphate buffered saline (PBS), over Histopaque 1077. CD14+monocytes were isolated using magnetic activated cell sorting (MACS, Militenyi Biotec) and differentiated into macrophages using 10 ng/ml GM-CSF for 6 days in RPMI1640 [10% (v/v) human serum, 1 mM sodium pyruvate (Sigma), 2 mM GlutaMAXTM (Thermo fisher), 1X non-essential amino acids and 10 mM HEPES]. All cell cultures were incubated at 37 ˚C with 5% CO2. Mycoplasma contamination of the THP-1 cell line was evaluated by PCR using the LookOut Mycoplasma PCR detection kit (Sigma) as per manufacturer’s instructions. The identity of the THP-1 cell line was confirmed by Inqaba Biotec (Pretoria, South Africa). Short tandem repeat (STR) sequences were amplified using the SureID21G Human STR identification kit and analysis performed on an ABI PRISM 3500xl genetic analyser. The generated STR profile was validated using the ATCC STR profile for the THP-1 cell line.
 
-## Mycobacterium culture and infection
+### Mycobacterium culture and infection
 
 Mycobacterium tuberculosis (H37Rv) obtained from BEI Resources (NR-123), Mycobacterium bovis (Danish BCG vaccine strain 1331) from Stratens Serum Institut and Mycobacterium smegmatis (mc2155) from Albert Einstein College of Medicine were cultured in Middlebrook 7H9 media containing 0.2% (v/v) glycerol, 10% (v/v) OADC and 0.01% (v/v) tyloxopol. To infect macrophages, the mycobacteria were pelleted at 3 000 x g for 5 min, the supernatant was discarded, and the mycobacteria were resuspended in dPBS and sonicated (3 × 30 s). The optical density at 600 nm (OD600) was measured to determine the concentration of mycobacteria and the appropriate volume of mycobacteria required for each MOI was calculated based on the number of monocytes that were seeded into the well. Dead Mtb was prepared by heating a known concentration of Mtb at 80°C for 20 min.
 
 To determine the percentage of cells infected, an Mtb GFP-reporter strain (H37Rv AYs330) was used to infect THP-1 and hMDM cells to determine the percentage of infected cells at increasing MOIs. The Mtb GFP-reporter strain contains an episomal construct that constitutively expresses GFP and contains a kanamycin resistance gene (25 µg/ml). The mycobacteria were filtered through a 10 µm syringe filter before infection of macrophages. To assess the presence of extracellular mycobacteria in the washes of the infected macrophages, the final wash was plated out on 7H11 agar plates supplemented with polymyxin B (200 units/ml), amphotericin B (10 µg/ml), carbenicillin (50 µg/ml) and trimethoprim (20 µg/ml) to determine the colony forming units (CFUs) of Mtb and BCG.
 
-## Microscopy imaging of macrophages infected with Mtb-GFP reporter strain
+### Microscopy imaging of macrophages infected with Mtb-GFP reporter strain
 
 THP-1 and human monocytes were seeded at 500 000 cells/well into a MatTek 24-well glass-bottom plate and differentiated as described above. The macrophages were infected with Mtb-GFP at MOIs of 1, 2.5 and 5 for 16 h. The infected macrophages were washed three times with dPBS to remove most of the extracellular mycobacteria and 300 µl of dPBS was added to the wells. Cells infected with Mtb-GFP were viewed on a Nikon Eclipse Ti fluorescent microscope using a FITC filter at 15X magnification. Percentage of infected cells was then calculated by counting the total number of macrophages and the infected macrophages in five fields. A minimum of 100 cells was counted in each field.
 
-## Extracellular flux analysis
+### Extracellular flux analysis
 
 Oxygen consumption and extracellular acidification rates (OCR and ECAR, respectively) were measured using the Seahorse XF96 extracellular flux analyzer (Agilent, Santa Clara, CA). Cells were seeded into the XF96 cell culture plate at cell densities of 80000 (hMDM) and 100000 (THP-1) cells per well to generate a confluent monolayer of cells. THP-1 and HMDMs were differentiated directly in the XF96 cell culture plate.
 
@@ -202,7 +665,7 @@ In the real-time ATP rate assay (Figure 1G), after three OCR and ECAR readings 
 
 All drugs for the respective assays were prepared at 10X their desired concentration and loaded into the XF cartridge into the respective ports. All assay media were pre-warmed to 37 ˚C and pH corrected to 7.4 (mitochondrial respiration test, mitochondrial fuel test, and fatty acid oxidation assay, glycolytic rate assay) and 7.35 (extracellular acidification assay).
 
-## Metabolite extraction
+### Metabolite extraction
 
 THP-1 (3 × 106 cells per well) or hMDMs (3 × 106 cells per well) were seeded into six well plates and differentiated as previously described. Cells were infected with the appropriate mycobacterium strain for a total of 18 h. For 13C6-glucose labelling of metabolites, media were prepared by adding 4.5 g/l of 13C6-glucose to hMDM or THP-1 media containing glucose-free RPMI 1640 (Glucose free, Sigma). Initially, uninfected or infected cells were incubated in normal unlabelled media for 10 h. Then the cells were washed three times with glucose-free media before adding RPMI 1640 containing 13C6-glucose. Cells were incubated for a further 8 h to allow incorporation of the radiolabelled substrate. Then the supernatants of the cells were collected and the cells were washed in pre-warmed (37 ˚C) PBS three times prior to adding ice-cold methanol to quench the metabolism of the cells. An equal amount of ice-cold water containing internal standards of 6-amino-nicotinic acid and nitrophenyl phosphate (to give a final concentration of 700 ng/ml) was added, and cells were lifted into the methanol-water using a cell scraper. The cell suspensions were transferred to 2 ml screw-cap tubes and metabolites were released by three freeze-thaw cycles followed by a 3000 x g centrifugation for 3 min to remove the cell debris. Metabolites were transferred to Spin-X centrifuge tube filters (Sigma) and centrifuged at 3000 x g for 5 min. To remove the methanol, the filtrate was evaporated at 45 ˚C for approximately 16 h and the lyophilized metabolites were resuspended in 100 µl distilled water and transferred to mass spectroscopy snap ring vials (Separations) for metabolite analysis.
 
@@ -210,7 +673,7 @@ The collected supernatants were transferred to Spin-X centrifuge tube filters (S
 
 For amino acid analysis, 50 µl of the metabolite extraction was diluted with 50 µl of acetonitrile.
 
-## LC-MS/MS
+### LC-MS/MS
 
 Both internal metabolites as well as excreted metabolites in the supernatant fluid (labelled or unlabelled) were analysed using LC-MS/MS.
 
@@ -220,12 +683,12 @@ Metabolite quantification was measured using an AB Sciex 5500 Q-Trap, triple qua
 
 Amino acid analysis was performed on a Q Exactive MS coupled to a Dionex 3000 UPLC system, using a Waters Acquity BEH amide column, 2.1 mm x 100 mm, with a 1.7 µM particle size. The MS was operated in positive MS full-scan mode with a resolution of 70000 from 50 to 750 m/z and an AGC target of 1e6. Separation was achieved using mobile phase A: Double-distilled water with 0.1% formic acid and B: LCMS grade acetonitrile with 0.1% formic acid. A HILIC mode gradient with the following characteristics was used: T0 min – 99%B, T0.2 min – 99%B, T24 min – 30%B, T25 min – 30%B, T25.1 min – 99%B, T35 min – 99%B.
 
-## Protein quantification
+### Protein quantification
 
 OCR, ECAR and metabolite levels were normalized to the amount of protein present in the well. This was done directly in the XF cell culture plate (OCR/ECAR) or in a microfuge tube (metabolites) using a Bradford dye (Bio-Rad) as per the manufacturer’s instructions. Briefly, for normalizing OCR and ECAR data, the supernatant was removed leaving behind 10 µl to prevent aspiration of cells and an equal amount of formalin was added to kill remaining Mtb to remove samples from the BSL3. These cells were lysed using NaOH at a final concentration of 12.5 mM. Protein standards (Bovine Serum Albumin: 0.125, 0.25, 0.5, 0.75, 1, 1.5 and 2 mg/ml) were added to the respective wells, treated with formalin and 12.5 mM NaOH similarly to the samples and Bradford dye was added (150 µl) to all the wells. The plate was incubated for 5 min in the dark and absorbance at 595 nm measured using a Synergy H4 Hybrid reader (Biotek).
 
 For normalization of metabolite data, cells were scraped and lysed (freeze-thawed) in formalin. This was evaporated (45 ˚C, overnight) and resuspended in distilled water. Bradford reagent was added to these samples, transferred to a 96 well microplate and incubated for 5 min in the dark prior to reading at 595 nm.
 
-## Statistical analysis
+### Statistical analysis
 
 All experiments were performed independently twice or more with a minimum of six biological replicates each. The data are presented as the mean and SD of one representative independent experiment (unless otherwise stated in the figure legends). Analysis was performed in Graphpad Prism Version 7.04. One-way Anova was used for multiple comparisons and Students t-test was used to compare pairs. Further details are given in the figure legends.

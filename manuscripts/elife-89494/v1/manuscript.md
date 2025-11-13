@@ -17,17 +17,17 @@
 
 ### Affiliations
 
-1. https://ror.org/05bnh6r87 Department of Molecular Medicine, College of Veterinary Medicine, Cornell University Ithaca United States
-2. https://ror.org/03qryx823 Department of Genetics and Developmental Biology, Rappaport Faculty of Medicine, Technion – Israel Institute of Technology Haifa Israel
-3. https://ror.org/03qryx823 Rappaport Faculty of Medicine, Technion – Israel Institute of Technology Haifa Israel
-4. https://ror.org/04bgfm609 Stowers Institute for Medical Research Kansas City United States
-5. https://ror.org/036c9yv20 Department of Anatomy and Cell Biology, University of Kansas Medical Center Kansas City United States
+1. Department of Molecular Medicine, College of Veterinary Medicine, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
+2. Department of Genetics and Developmental Biology, Rappaport Faculty of Medicine, Technion – Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))
+3. Rappaport Faculty of Medicine, Technion – Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))
+4. Stowers Institute for Medical Research Kansas City United States ([ROR:04bgfm609](https://ror.org/04bgfm609))
+5. Department of Anatomy and Cell Biology, University of Kansas Medical Center Kansas City United States ([ROR:036c9yv20](https://ror.org/036c9yv20))
 
 † Corresponding author
 
 ## Abstract
 
-Correct intestinal morphogenesis depends on the early embryonic process of gut rotation, an evolutionarily conserved program in which a straight gut tube elongates and forms into its first loops. However, the gut tube requires guidance to loop in a reproducible manner. The dorsal mesentery (DM) connects the gut tube to the body and directs the lengthening gut into stereotypical loops via left-right (LR) asymmetric cellular and extracellular behavior. The LR asymmetry of the DM also governs blood and lymphatic vessel formation for the digestive tract, which is essential for prenatal organ development and postnatal vital functions including nutrient absorption. Although the genetic LR asymmetry of the DM has been extensively studied, a divider between the left and right DM has yet to be identified. Setting up LR asymmetry for the entire body requires a Lefty1 + midline barrier to separate the two sides of the embryo, without it, embryos have lethal or congenital LR patterning defects. Individual organs including the brain, heart, and gut also have LR asymmetry, and while the consequences of left and right signals mixing are severe or even lethal, organ-specific mechanisms for separating these signals remain poorly understood. Here, we uncover a midline structure composed of a transient double basement membrane, which separates the left and right halves of the embryonic chick DM during the establishment of intestinal and vascular asymmetries. Unlike other basement membranes of the DM, the midline is resistant to disruption by intercalation of Netrin4 (Ntn4). We propose that this atypical midline forms the boundary between left and right sides and functions as a barrier necessary to establish and protect organ asymmetry.
+Correct intestinal morphogenesis depends on the early embryonic process of gut rotation, an evolutionarily conserved program in which a straight gut tube elongates and forms into its first loops. However, the gut tube requires guidance to loop in a reproducible manner. The dorsal mesentery (DM) connects the gut tube to the body and directs the lengthening gut into stereotypical loops via left-right (LR) asymmetric cellular and extracellular behavior. The LR asymmetry of the DM also governs blood and lymphatic vessel formation for the digestive tract, which is essential for prenatal organ development and postnatal vital functions including nutrient absorption. Although the genetic LR asymmetry of the DM has been extensively studied, a divider between the left and right DM has yet to be identified. Setting up LR asymmetry for the entire body requires a Lefty1+ midline barrier to separate the two sides of the embryo, without it, embryos have lethal or congenital LR patterning defects. Individual organs including the brain, heart, and gut also have LR asymmetry, and while the consequences of left and right signals mixing are severe or even lethal, organ-specific mechanisms for separating these signals remain poorly understood. Here, we uncover a midline structure composed of a transient double basement membrane, which separates the left and right halves of the embryonic chick DM during the establishment of intestinal and vascular asymmetries. Unlike other basement membranes of the DM, the midline is resistant to disruption by intercalation of Netrin4 (Ntn4). We propose that this atypical midline forms the boundary between left and right sides and functions as a barrier necessary to establish and protect organ asymmetry.
 
 ## Introduction
 
@@ -47,7 +47,7 @@ The differences in the left and right sides of the DM are well understood at mul
 
 ## Results
 
-## Cells of left- and right-origin meet but do not mix in the DM
+### Cells of left- and right-origin meet but do not mix in the DM
 
 The DM mesenchyme forms by bilateral epithelial-to-mesenchymal transition (EMT) and ingression of coelomic epithelium, which is derived from the splanchnic mesoderm; the left DM comes from the left coelom and the right DM arises from the right coelom (Figure 2A and B; Hecksher-Sørensen et al., 2004; Kurpios et al., 2008; Davis et al., 2008). This was visualized by injecting early chicken embryos with DiI and DiO into the right and left coelomic cavities, respectively (Figure 2C–F), or by electroporating each side with plasmids encoding different fluorophores (Figure 2G and H). While the left and right cells meet at the middle of the DM, they never cross over or mix (Mahadevan et al., 2014; Kurpios et al., 2008; Davis et al., 2008; Welsh et al., 2013; Sanketi et al., 2022; Welsh et al., 2015; Arraf et al., 2016; Arraf et al., 2020). This striking separation occurs despite the lack of a visible histological boundary between the two sides as shown by H&E staining at HH20 and HH21, when the left is condensing and the right is expanding to drive the leftward gut tilting (Figure 2K and L). Early in development the endoderm effectively separates the left and right splanchnic mesoderm (Figure 2I and J), but once the DM forms and the endoderm descends it is likely important to continue separating the two sides until asymmetries can be established (Figure 1B). In support of this, we have previously shown that when cell-cell adhesion is interrupted in the left DM, the cells become more dispersed (Kurpios et al., 2008; Welsh et al., 2013) and extend filopodia over toward the right side, suggesting pathogenic cell migration (Welsh et al., 2013). Thus, the critical separation between left and right cells in the DM can be disrupted, necessitating a mechanism for protecting these asymmetries.
 
@@ -55,31 +55,59 @@ The DM mesenchyme forms by bilateral epithelial-to-mesenchymal transition (EMT) 
 
 **Figure 2.:** When the coelomic cavity is injected with DiI at Hamburger-Hamilton stage 12–13 (HH12–13), n=5 (A), the labeled cells give rise to the mesenchymal and epithelial cells of the DM on the corresponding side of the embryo, n=5 (B). When DiI and DiO are injected at HH12–13 into left and right coeloms, respectively, n=6 (C), labeled cells are still segregated at HH18, n=6 (D, E, F). The same results are found when cells are labeled by electroporation with pCAG-GFP (left) and pCl-H2B-RFP (right) (G, H), both when the midline is continuous (HH19 n=3), (G) and once it has disappeared (HH21 n=3, H). (I–L) H&E staining of the DM at HH18 n=5 (I) shows ‘empty space’ between the notochord, endoderm, and dorsal aortae. At HH19 n=5 (J), this space gains some cells (arrows), and the space is completely filled in by HH20 n=4 (K) and HH21 n=3 (L). Scale bars = 60 μm. nt = neural tube, c = coelom, ao = aorta, N = notochord, s = somite, DM = dorsal mesentery, L = left, R = right.
 
-## The DM midline is not marked by Lefty1, but by laminin
+### The DM midline is not marked by Lefty1, but by laminin
 
 The early embryo uses a molecular barrier of Lefty1-expressing cells to separate laterality signals so the LR axis is established correctly (Yamamoto et al., 2003; Meno et al., 1996; Meno et al., 1998; Yoshioka et al., 1998; Bisgrove et al., 1999). To see if this mechanism is adapted by the intestine for establishment of its laterality, we performed Lefty1 RNA in situ hybridization on both early (HH9) and later (HH19) stages. While Lefty1 was expressed at the midline of early embryos as expected (Figure 3A), it was not expressed at the midline of the DM at HH19 (Figure 3B). This indicates that a different mechanism must be at work during the establishment of gut asymmetries. Interestingly, scanning electron microscopy (SEM) data showed a fibrous matrix between the notochord and endoderm where the DM will later develop, suggesting that ECM may separate the two sides before they coalesce into the DM (Figure 3C and D). Consistent with this hypothesis, basement membranes are found in other biological contexts where a barrier is needed, such as in the skin or around blood vessels (Yurchenco, 2011). Basement membranes are dense ECM requiring laminin, collagen IV, nidogen, and perlecan and/or agrin (both heparan sulfate proteoglycans) with a large variety of other components that can be integrated to create specific ‘flavors’ of basement membrane tuned to different barrier contexts (Yurchenco, 2011). We therefore postulated that the DM midline has a physical barrier consisting of basement membrane, rather than a Lefty1 molecular barrier.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/89494/elife-89494-fig3-v1.jpg)
+
+**Figure 3.:** (A) Lefty1 expression is seen at the embryonic midline of this Hamburger-Hamilton stage 9 (HH9) embryo n=4 (arrow). (B) Lefty1 expression is not seen at the midline of the DM (dashed box) of an HH19 embryo (n=4) (notochord = positive control). (C, D) Scanning electron microscopy (SEM) images of a fixed embryo at HH15–16 show fibrous extracellular matrix (ECM) between the notochord and endoderm. (C) is from a more posterior axial level than (D). (E–H) Time course of midline dynamics from HH18–21, marked by laminin. Scale bars = 25 µm. (I) Quantification of the intensity of laminin immunofluorescence over development, normalized to laminin staining around the neural tube. Biological replicates: HH18 n=2, HH19 n=3, HH20 n=3, and HH21 n=2. Each dot represents one image quantified. Statistical analyses are unpaired Welch’s t-tests. HH18–19: p=0.0188, HH19–20: p=0.0118, HH20–21: p=0.0003. Additionally, there is a significant (p<0.0001) linear trend among the means from HH18 to HH21 with a slope of –0.1019, r2=0.5906. (J) Midline appearance from hindgut to foregut in an HH19 embryo, marked by laminin. Scale bars = 25 μm. (K) Quantification of DM midline length (dashed line) of three HH19 embryos, from the separation of the notochord and endoderm (hindgut) to the fusion of the aortae (foregut, coinciding with midline fragmentation). (L) Model of DM midline time kinetics. N = notochord, E/en = endoderm, Ao = aorta, nt = neural tube, c=coelomic cavity, CE = coelomic epithelium, L = left, R = right.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89494/elife-89494-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Hamburger-Hamilton stage 15 (HH15) n=2, HH17 n=2, HH18 n=3, HH19 n=3. Yellow boxes indicate position of higher magnification images on right.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/89494/elife-89494-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Nidogen co-localizes with laminin at the midline n=4. (B) Perlecan co-localizes with laminin at the midline n=4. (C) Fibronectin surrounds the dorsal aortae and is only found in the midline nearest the endoderm n=6. Scale bars = 25 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/89494/elife-89494-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A–D) Laminin (green) and fibronectin (red) highlight the midline and aorta/e, respectively, in this Hamburger-Hamilton stage 17 (HH17) embryo. The maturation of the midline occurs in an anterior-to-posterior wave (from A to D), as does the fusing of the two branches of the aorta into one (A–D, asterisks). Immunohistochemistry images were taken at approximately the axial level shown in the above cartoon (cartoons not to scale). Notice that the midline at a more anterior position in a younger HH12–13 (E–H) embryo appears similar to the midline at a more posterior position in an older embryo. Scale bars = 100 μm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/89494/elife-89494-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A–C) Stages 24–25 n=10; 26–28 n=9 of veiled chameleon embryos, Chamaeleo calyptratus by somite stage as shown in Diaz et al., 2019. Scale bars = 50 μm. GT = gut tube, DM = dorsal mesentery, E=endoderm, DA = dorsal aorta.
+
 To test this hypothesis, we visualized the basement membrane marker laminin by immunofluorescence (IF) for laminin alpha 1 (Lama1) at developmental stages where DM asymmetries are being established. As expected, this marked several typical, single-layer basement membranes underlying polarized cells, such as around the notochord (Figure 3E and F; Bancroft and Bellairs, 1976; Saraga Babić, 1990), coelomic epithelium (Figure 3E–H; Magro and Grasso, 1995), and gut endoderm (Figure 3E–H; Simon-Assmann et al., 1998). We also observed scattered laminin staining in the DM mesenchyme, which is a consequence of those cells carrying basement membrane fragments with them after EMT and ingression from the coelomic epithelium (Horejs, 2016; Hu et al., 2013). Interestingly, we identified a previously uncharacterized atypical double basement membrane within the DM. At HH18, when cellular DM asymmetries are first being initiated at the level of the midgut (which forms the small intestine), laminin IF marked an oval-shaped structure just ventral to the notochord and dorsal to the gut endoderm (Figure 3E). No cells were seen within this structure as shown by a lack of nuclear staining (Figure 3E) and empty space in SEM (Figure 3C and D, Figure 3—figure supplement 1). As the DM elongates and asymmetries become more apparent (HH19), this midline structure lengthened, forming two parallel lines connecting the endoderm and notochord (Figure 3F). One stage later (HH20), the midline was still present but began to appear fragmented (Figure 3G). By HH21, the asymmetries of the DM are established—the right DM has expanded, the left DM has condensed, the gut has tilted to the left, and vascular precursor cells have been driven out of the right side (Figure 1B; Mahadevan et al., 2014; Sanketi et al., 2022). Surprisingly, the midline disappeared by this stage, while laminin IF underlying the coelomic epithelium and endoderm remained intense (Figure 3H). The lengthening of the midline and its subsequent loss occurred in an anterior-to-posterior wave down the embryonic gut tube (Figure 3J and K). Consequently, anterior sections of younger embryos (i.e. HH12–13) had similar midline structures to posterior, older sections (i.e. HH18–19).
 
-## The DM midline consists of a transient, true basement membrane
+### The DM midline consists of a transient, true basement membrane
 
 The combination of laminin, nidogen, perlecan (or agrin), and collagen is the foundation of all basement membranes (Yurchenco, 2011). To further characterize the nature of the ECM at the DM midline, we did IF staining for nidogen and perlecan, confirming co-localization with laminin at the midline barrier (Figure 3A, Figure 3—figure supplement 2). This further illustrates that the DM midline consists of basement membrane. This basement membrane structure is conserved in the squamate veiled chameleon, C. calyptratus, which exhibits a similarly transient double basement membrane at the midline of the DM from approximately the 7-somite stage to the 29-somite stage (Figure 3—figure supplement 4; Diaz et al., 2019).
 
 In addition to the four foundational basement membrane components, a myriad of other proteins, proteoglycans, and glycoproteins can assemble onto the basement membrane (Jayadev and Sherwood, 2017). Consequently, there is a vast variety of ‘flavors’ of basement membrane with different physical properties and different signals to adjacent cells about polarity, migration, or other behaviors (Jayadev and Sherwood, 2017). A common basement membrane constituent is fibronectin, which is best known for its role in the provisional matrix during wound healing (Clark et al., 1982). At our developmental stages of interest, fibronectin localized to the dorsal aorta which often coincides with the most ventral part of the midline (Figure 3—figure supplement 3). Together, we model the midline as a transient double basement membrane that bisects the DM during developmental stages when critical asymmetries are being established (Figure 3L).
 
-## The midline does not originate from the left or right DM
+### The midline does not originate from the left or right DM
 
 Although we have established the time kinetics of DM midline formation, the origin of this structure remains elusive. The midline is sandwiched between mesenchymal cells from the left and right DM, unbiased to either the left or the right side (Figure 2F and G). Intriguingly, mesenchymal cells like these are not usually competent to construct an organized basement membrane (Yurchenco, 2011; Glentis et al., 2014). Mesenchymal cells can secrete matrix components (Simon-Assmann et al., 1998), but the organization of these components into a basement membrane is dependent on the presence of cell surface anchors which are characteristic of tissues like polarized epithelium or endothelium, not mesenchymal cells (Glentis et al., 2014). In the case of LAMA1, it is known that this protein is secreted by the epithelia in the developing intestine, not the mesenchyme (Simon-Assmann et al., 1998). Indeed, RNA in situ hybridization for Lama1 did not show enriched expression in the mesenchyme at the DM midline (Figure 4A–C). Moreover, if the cells adjacent to the midline were secreting and organizing the basement membrane, we would expect these cells to be polarized like the cells of the coelomic epithelium or endoderm. As expected, the left coelomic epithelium was polarized at HH19 relative to its basement membrane as quantified by Golgi staining with GM130 (Figure 4D and E, Figure 4—figure supplement 1; Welsh et al., 2013). However, GM130 staining and quantification showed that cells immediately to the left or right of the midline have random orientation (Figure 4D and E, Figure 4—figure supplement 1). Together, these data allow us to rule out a mesenchymal origin for the DM midline.
 
-## During endodermal descent, endodermal cells are not left behind to form the midline
+![Figure 4.](https://cdn.elifesciences.org/articles/89494/elife-89494-fig4-v1.jpg)
+
+**Figure 4.:** (A–C) Lama1 RNA in situ hybridization and adjacent sections with laminin immunofluorescence (IF) staining at Hamburger-Hamilton stage 16 (HH16) n=3, HH18 n=9, and HH19 n=10 (A’–C’). Scale bars = 50 μm. (D, E) Cell polarity analysis from GM130 staining shows that the mesenchymal cells immediately to the left or right of the midline (‘left/right margin’) and within the double membrane (‘midline cells’) have random polarity, as do the cells of the right mesenchyme (random polarization control), in contrast to the strong apical-basal polarity in cells of the left coelomic epithelium. Five embryos were used for these quantifications. Number of cells per circle histogram: left coelomic epithelium = 209, left margin = 346, midline cells = 118, right margin = 413, right mesenchyme = 514, right coelomic epithelium = 295. (F) Electroporation mix containing pCAGEN-GFP plasmid was injected under an HH14/15 embryo and then electroporated to specifically target the endoderm. Lineage tracing endoderm-derived cells to HH19 n=8 (G) and HH21 n=2 (H) by pCAGEN-GFP electroporation of the endoderm. (I) Model of notochord transplant method. A piece of notochord (red) was isolated from an HH14 donor embryo. In a stage-matched recipient, a cut was made adjacent to the neural tube and the donor notochord was inserted into this slit. (J, L) RNA in situ hybridization for Chordin to mark the native notochord (blue dashed circle) and transplanted notochord (red dashed circle). (K, M) Laminin immunohistochemistry to mark basement membrane including the midline (white arrow). Notochords are marked with an N (native notochord) and N* (transplanted notochord). (J, K) are from the same embryo, as are (L, M). n=8, scale bars = 50 μm. GT = gut tube, DM = dorsal mesentery, E=endoderm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89494/elife-89494-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Example of GM130 staining at Hamburger-Hamilton stage 19 (HH19) used for cell polarity analysis in Figure 4, with key. (B’) Dotted region of interest in B is magnified. Five embryos were used for these quantifications. Scale bars = 50 μm. CE = coelomic epithelium, DA = dorsal aorta, E = endoderm, N = notochord.
+
+### During endodermal descent, endodermal cells are not left behind to form the midline
 
 Given that the DM midline connects the notochord and endoderm, both of which have their own basement membranes and are very closely associated early in development, we hypothesized that one or both of these structures contribute to midline production (Figure 3C, E, and J, Figure 3—figure supplement 1). As the embryo grows and the DM elongates, the distance between the notochord and endoderm increases (Figures 2I–J–3E–H), and the midline is found between them as a double line of basement membrane. Thus, we hypothesized that as the endoderm descends ventrally, it undergoes EMT and leaves behind basement membrane-carrying cells to form the midline. To test this, we developed a method to specifically target the endoderm using DNA electroporation (Figure 4F). Briefly, we injected pCAG-GFP plasmid underneath HH14–15 embryos and applied an electric pulse such that the endodermal cells would take up the DNA (Figure 4F), so we could lineage trace endodermal cells during DM formation. Interestingly, embryos isolated at HH19 and HH21 showed that GFP-labeled cells remain restricted to the endoderm—there were no GFP+ mesenchymal cells present in the DM (Figure 4G and H). This indicates that the DM midline is not formed from EMT of basement membrane-carrying endodermal cells.
 
-## The notochord is not sufficient for DM midline formation
+### The notochord is not sufficient for DM midline formation
 
 To test whether the notochord is sufficient for midline formation, we performed notochord transplant experiments. In brief, the notochord was removed from an HH12–15 embryo. An incision was made in a stage-matched recipient embryo adjacent to the neural tube and the donor notochord was inserted into this slit (Figure 4I). Embryos continued to develop until isolation at HH19. These transplants were done to the left and right sides of different embryos (Figure 4J/K and L/M respectively). RNA in situ hybridization was performed for chordin to ensure that the transplanted notochord was alive and functioning (Figure 4J and L; Sasai et al., 1994; Streit et al., 1998). Laminin IF did not reveal a secondary midline-like structure associated with the ectopic notochord (Figure 4K and M) while the normal midline was unaffected (Figure 4K and M, white arrows). This result is seen regardless of whether the transplants are done to the embryo’s left or right side. From this, we conclude that the notochord is not sufficient for the formation of DM midline.
 
-## The DM midline is resistant to degradation by Netrin4
+### The DM midline is resistant to degradation by Netrin4
 
 Laminin matrices are susceptible to competitive disruption by the matrix protein Netrin4 (NTN4) (Schneiders et al., 2007; Reuten et al., 2016). NTN4 has very high binding affinity for laminin gamma subunits, such that NTN4 can prevent the formation of new laminin networks, which are the foundation upon which other basement membrane components assemble and can also disrupt existing laminin networks (Schneiders et al., 2007; Reuten et al., 2016). Ntn4 is not endogenously expressed in the DM (data not shown), which allows us to use it as a tool to target basement membranes in the DM. As expected, when we overexpressed Ntn4 on either side of the DM by electroporation, we perturbed the basement membrane underlying the coelomic epithelium and depleted the scattered laminin staining in the mesenchyme that results from EMT creating the DM (Figure 5B, D, and E vs. controls Figure 5A and C; Horejs, 2016; Hu et al., 2013). Intriguingly, the DM midline basement membrane remained visibly intact in all embryos with lateral (Figure 5B and D) and bilateral (Figure 5E) Ntn4 overexpression in the DM. Similarly, endodermal Ntn4 overexpression caused much less disruption of the endodermal or midline basement membranes (Figure 5G vs. control Figure 5F) when compared to its effect on coelomic epithelium basement membrane. This was true even when the electroporations were done much earlier in development (HH10 and HH12–13, data not shown). This suggests that the midline and endoderm may have basement membranes of the same ‘flavor’, possibly pointing to a common origin. In contrast, the basement membrane beneath the coelomic epithelium may be more susceptible to NTN4 disruption because of the prior EMT-induced breaks in the basement membrane (Horejs, 2016; Hu et al., 2013) or a different protein composition.
 
@@ -87,13 +115,13 @@ Laminin matrices are susceptible to competitive disruption by the matrix protein
 
 **Figure 5.:** (A, C) Electroporation of the left (A) or right (C) dorsal mesentery (DM) with the control, pCAG-GFP, had no effect on the basement membrane of the coelomic epithelium (arrows). Left n=6. Right n=4. (B, D) Electroporation of mouse Netrin4 (pCAGEN-Ntn4) and pCAG-GFP into the left (B) or right (D) DM disrupted the basement membrane underlying the coelomic epithelium (arrows) and scattered basement membrane in the mesenchyme (asterisks). Left n=5. Right n=5. The intact laminin staining in B is the basement membrane (BM) of the nephric duct. (E) Double DM electroporations also disrupt the coelomic epithelium (arrows) but the midline appears intact despite being contacted by Ntn4+ cells (n=3). (F, G) Electroporation of the endoderm directly with pCAG-GFP or pCAGEN-Ntn4 does not visibly affect the basement membrane underlying the endoderm (open round pointers). Control n=5. Ntn4 n=8. The midline appears unaffected by any of these perturbations. Scale bars = 100 μm.
 
-## DM midline is a barrier against diffusion
+### DM midline is a barrier against diffusion
 
 Genes including Cxcl12 (Mahadevan et al., 2014; Sivakumar et al., 2018) and Bmp4 (Sanketi et al., 2022) which encode diffusible signals are expressed asymmetrically in the DM (Figure 6A and B). So too are genes encoding enzymes that are secreted into the ECM, like the HA-modifying enzyme TSG6 (Sivakumar et al., 2018). The expression domains of these genes have a sharp boundary at the midline, since left and right cells do not mix. However, the secreted protein products of these genes may be able to diffuse across the DM if their movement is not limited (Figure 6C). We know that experimentally mixing left and right signals is detrimental to gut tilting and vascular patterning (Mahadevan et al., 2014; Kurpios et al., 2008; Davis et al., 2008; Welsh et al., 2013; Sivakumar et al., 2018; Sanketi et al., 2022)—e.g., ectopic expression of pro-angiogenic Cxcl12 on the right side results in an aberrant vessel forming on the right (Mahadevan et al., 2014). Moreover, when the CXCR4 receptor antagonist AMD3100 (MW = 502.78) is introduced to the left DM, it abolishes vascular development on the left. However, when the same drug is introduced to the right DM, the left-sided vascular development remains intact (Mahadevan et al., 2014). This phenomenon suggests a barrier against diffusion.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/89494/elife-89494-fig6-v1.jpg)
 
-**Figure 6.:** (A, B) Genes encoding diffusible signals including Cxcl12 and Bmp4 are expressed asymmetrically in the DM at Hamburger-Hamilton stage 19 (HH19). (C) Hypothesis for the role of the midline in limiting diffusion of left and right signals across DM. (D) At HH19, the midline is intact (white arrow) and diffusion of 3000 MW dextran (green) is limited to the right side (n=4/4). (E) At HH20, the midline (white arrow) has begun to fragment. Diffusion across the midline is prohibited in some embryos (n=2/9) but permitted in others (n=7/9). (F) At later stages when the midline has disappeared, diffusion is allowed through the DM (n=7/7). (G) Proportion of dextran-labeled cells in the left vs. right DM, with unpaired t-test. (H) At HH19, the midline is intact and diffusion of AMD3100-BODIPY is limited to the left side (n=4). Dashed yellow box indicates quantified area. (I) At HH21 when the midline has disappeared, diffusion is allowed through the DM (n=3). Dashed yellow box indicates quantified area. (J) Proportion of BODIPY intensity in the right vs. left DM, with unpaired t-test. Each dot represents one image quantified. (K, L) Profile plot of average BODIPY intensity across the DM within the dashed yellow boxes in H and I, with left and right compartments of the DM overlayed. (M) Schematic of dextran injections into the right DM and AMD3100-BODIPY beading into the left DM. Scale bars = 50 µm. LDM = left dorsal mesentery. RDM = right dorsal mesentery. GT = gut tube. E = endoderm. L=left. R=right. N=notochord. DA = dorsal aorta.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A, B) Genes encoding diffusible signals including Cxcl12 and Bmp4 are expressed asymmetrically in the DM at Hamburger-Hamilton stage 19 (HH19). (C) Hypothesis for the role of the midline in limiting diffusion of left and right signals across DM. (D) At HH19, the midline is intact (white arrow) and diffusion of 3000 MW dextran (green) is limited to the right side (n=4/4). (E) At HH20, the midline (white arrow) has begun to fragment. Diffusion across the midline is prohibited in some embryos (n=2/9) but permitted in others (n=7/9). (F) At later stages when the midline has disappeared, diffusion is allowed through the DM (n=7/7). (G) Proportion of dextran-labeled cells in the left vs. right DM, with unpaired t-test. (H) At HH19, the midline is intact and diffusion of AMD3100-BODIPY is limited to the left side (n=4). Dashed yellow box indicates quantified area. (I) At HH21 when the midline has disappeared, diffusion is allowed through the DM (n=3). Dashed yellow box indicates quantified area. (J) Proportion of BODIPY intensity in the right vs. left DM, with unpaired t-test. Each dot represents one image quantified. (K, L) Profile plot of average BODIPY intensity across the DM within the dashed yellow boxes in H and I, with left and right compartments of the DM overlayed. (M) Schematic of dextran injections into the right DM and AMD3100-BODIPY beading into the left DM. Scale bars = 50 µm. LDM = left dorsal mesentery. RDM = right dorsal mesentery. GT = gut tube. E = endoderm. L=left. R=right. N=notochord. DA = dorsal aorta.
 
 To test if the basement membrane structure at the midline is forming a functional barrier against diffusion, we injected 3 kDa fluorescent dextran directly into the right side of the DM (Figure 6D–G). When these injections are performed at stages where the midline is intact (HH19), movement of dextran through the tissue was limited to the right side (n=4/4 embryos) (Figure 6D). When the basement membrane midline appears fragmented (HH20), these injections produced mixed results—in some embryos (n=2/9), diffusion across the midline was prevented and in others (n=7/9) the dextran was able to move into the left mesenchyme of the DM (Figure 6E). Finally, at stages where no organized basement membrane structure remains at the midline (HH23), diffusion of dextran was always permitted across the entire width of the DM (n=7/7) (Figure 6F).
 
@@ -135,45 +163,272 @@ Collectively, we have identified a novel midline barrier in the gut mesentery th
 
 ## Materials and methods
 
-## Chicken embryo development and processing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-laminin alpha 1 rabbit polyclonal (1° ab)</td>
+      <td>Sigma</td>
+      <td>L9393</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-laminin 1 mouse monoclonal (1° ab)</td>
+      <td>DSHB</td>
+      <td>3H11</td>
+      <td>1:10</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-perlecan mouse monoclonal (1° ab)</td>
+      <td>DSHB</td>
+      <td>5C9</td>
+      <td>1:10</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-nidogen mouse monoclonal (1° ab)</td>
+      <td>DSHB</td>
+      <td>1G12</td>
+      <td>1:10</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-fibronectin mouse monoclonal (1° ab)</td>
+      <td>DSHB</td>
+      <td>VA1(3)</td>
+      <td>1:5</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-fibronectin mouse monoclonal (1° ab)</td>
+      <td>DSHB</td>
+      <td>B3/D6</td>
+      <td>1:30</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-fibronectin rabbit polyclonal (1° ab)</td>
+      <td>Sigma</td>
+      <td>F3648</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GM130 mouse monoclonal (1° ab)</td>
+      <td>BD Biosciences</td>
+      <td>610822</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568 goat anti-rabbit (2° ab)</td>
+      <td>Invitrogen</td>
+      <td>A-11031</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 donkey anti-rabbit (2° ab)</td>
+      <td>Invitrogen</td>
+      <td>A32795</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-mouse (2° ab)</td>
+      <td>Invitrogen</td>
+      <td>A32723</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Thermo Fisher</td>
+      <td>D1306</td>
+      <td>1:2000, nuclear DNA counterstain</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran, Fluorescein, 3000 MW, lysine fixable, anionic</td>
+      <td>Thermo Fisher</td>
+      <td>D3306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AMD3100-Bodipy</td>
+      <td>Poty et al., 2015</td>
+      <td></td>
+      <td>5 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CM-DiI</td>
+      <td>Invitrogen</td>
+      <td>C7000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SP-DiO</td>
+      <td>Invitrogen</td>
+      <td>D7778</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid for chordin riboprobe (chicken)</td>
+      <td>Cliff Tabin lab</td>
+      <td>T691</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid for lefty1 riboprobe (chicken)</td>
+      <td>Cepko/Tabin lab</td>
+      <td>T607</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGEN (plasmid)</td>
+      <td>Connie Cepko</td>
+      <td>RRID:Addgene_11160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-GFP (plasmid)</td>
+      <td>Connie Cepko</td>
+      <td>RRID:Addgene_11150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCI-H2B-RFP (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_92398</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ntn4-AP-His (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_71980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>F primer for chicken LAMA1 riboprobe from cDNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ACGGAGAGTTTGGCAGATGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R primer for chicken LAMA1 riboprobe from cDNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ATCCTGAGCCCAAATCCCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ primer for cloning Ntn4 coding region out of RRID:Addgene_71980 and into pCAGEN (XhoI and NotI)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ATGCCTCGAGATATCgccaccatggggagctg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>3’ primer for cloning Ntn4 coding region out of RRID:Addgene_71980 and into pCAGEN (XhoI and NotI)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CTAGCGGCCGCGGATCCATCGATTATTACACGCAGTCTCTTTTTAAGATGTGCA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PCR cloning kit (with pDrive plasmid)</td>
+      <td>QIAGEN</td>
+      <td>231124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fertilized chicken eggs</td>
+      <td>Westwind Farms (Interlaken, NY, USA, http://chickenhawkfood.com).</td>
+      <td></td>
+      <td>Eggs used for embryo manipulation and collection as described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Veiled chameleon eggs</td>
+      <td>Reptiles and Aquatics Facility at Stowers Institute for Medical Research</td>
+      <td></td>
+      <td>Eggs used for embryo manipulation and collection as described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AG beads</td>
+      <td>Bio-Rad</td>
+      <td>143-1255</td>
+      <td>Resin beads for surgical implantation and drug diffusion as described in Materials and methods</td>
+    </tr>
+  </tbody>
+</table>
+
+### Chicken embryo development and processing
 
 Fertile chicken eggs were purchased from Westwind Farms (Interlaken, NY, USA, http://chickenhawkfood.com). After 36–48 hr of incubation at 37°C, eggs were windowed by removing 8 ml of thin albumen with an 18 ½ gauge needle/10 ml syringe and cutting an oval in the side of the shell, then covering the opening with clear packing tape and returning the egg to the incubator. Once at the desired stage, embryos were isolated in cold 1× PBS and fixed overnight in 2% paraformaldehyde (PFA) at 4°C, followed by PBS washes. Embryos were prepared for cryo-embedding by putting them through graded sucrose solutions ending in 30% sucrose overnight at 4°C. Embryos were cryo-embedded in OCT (VWR 25608-930), sectioned to 15 μm, dried overnight, then stored at –80°C.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cryosections were rehydrated in PBS then PBST (0.03% Tween-20), then blocked in 3% heat-inactivated goat serum (HIGS, Gibco 16210072) in PBST for 45 min at room temperature. Primary antibodies were diluted in blocking solution (3% HIGS in PBST) and incubated either for 45 min at room temperature or overnight at 4°C. After three PBST washes for 5 min each, secondary antibodies were incubated for 45 min at room temperature with 1:2000 dilution of DAPI added. PBST and PBS washes were done before mounting the slides with Prolong Gold anti-fade (Invitrogen P36930). Antigen retrieval pretreatment was necessary for GM130 (BD Biosciences 610822) immunofluorescent staining. Cryosections were rehydrated in water, then microwaved in 1:100 antigen retrieval solution (Vector Laboratories, H-3300) until nearly boiling. After incubating at 37°C wrapped in aluminum foil for 15 min and cooling for 10 min, slides were taken through the standard IHC protocol.
 
-## RNA in situ hybridization
+### RNA in situ hybridization
 
 Section and wholemount RNA in situ hybridization was done using a modified protocol from Moisés Mallo as previously described (Aires et al., 2019).
 
-## Dextran injections
+### Dextran injections
 
 Dextran injections into the DM were done using 3000 MW dextran conjugated to fluorescein (Thermo Fisher D3306) at a concentration of 10 mg/ml in 1× PBS with Fast Green dye added to better visualize the solution during injection. This mixture was loaded into fine pulled glass capillary needles. A microinjector with a foot pedal was set to 5 psi for 200 ms. Chicken embryos at the desired stage were prepared by removing the vitelline membrane. Injections were done to the right DM only, because embryos lie on their left sides from HH18 onward and only the right DM is accessible for injection. With the anterior/posterior axis of the embryo perpendicular to the needle and with the needle at a 25° angle, the body wall was gently pulled back so the needle could access the right side of the DM. The needle was gently pressed into the tissue until the embryo moved slightly from the force. Then, the foot pedal was pressed once to inject. Embryos were allowed to continue incubating for about 2 hr, then embryos were collected and fixed in 2% PFA overnight at 4°C. To screen for embryos with quality injections, embryos were cryo-embedded and sectioned. Any embryos with visible damage to the DM in these sections were excluded from further analysis.
 
-## AMD3100-BODIPY beading
+### AMD3100-BODIPY beading
 
 AMD3100-BODIPY was synthesized as previously described (Poty et al., 2015), and AG beads (Bio-Rad 143-1255) were soaked in 5 mg/ml AMD3100-BODIPY overnight nutating at 4°C. Drug-laden beads were inserted into the left coelomic cavity via a small incision, as previously described (Mahadevan et al., 2014).
 
-## CM-DiI and SP-DiO injections
+### CM-DiI and SP-DiO injections
 
 Five μl of a stock solution of CM-DiI or SP-DiO (1 μg/μl in EtOH) was diluted into 45 μl of prewarmed 0.3 M sucrose in single distilled water maintained at 37°C. Dye solutions were injected into the coelomic epithelium as previously described (Arraf et al., 2016).
 
-## Electroporation
+### Electroporation
 
 DM electroporations were performed as described previously (Sivakumar et al., 2018; Sanketi and Kurpios, 2022). Endodermal electroporations were performed with a similar method, but with the electroporation mix (plasmid of interest and/or pCAG-GFP, 1× PBS, 1× Fast Green, 1 mM MgCl2, and 0.17% carboxymethylcellulose) injected into the empty space beneath the ventral side of the embryo while the negative electrode was held in place there. The positive electrode was placed directly above the negative electrode, centered along the neural tube, before the pulse was applied. pCAGEN-Ntn4 expression plasmid was constructed by cloning the full-length coding sequence out of mouse Ntn4-AP-His plasmid (RRID:Addgene_71980) using the primers in Key resources table and cloning into pCAGEN (RRID:Addgene_11160) with XhoI (NEB R0146) and NotI (NEB R0189). A second Ntn4 construct was also used, using a mouse Ntn4 (generously provided by Raphael Reuten) and cloned into the pMES vector (Swartz et al., 2001) with similar results.
 
-## Notochord transplants
+### Notochord transplants
 
 Notochord transplants were performed on HH12–15 embryos, using a method adapted from papers describing notochordectomies and notochord transplants (Teillet and Le Douarin, 1983; Klessinger and Christ, 1996; Artinger and Bronner-Fraser, 1993; van Straaten et al., 1985; Straaten et al., 1988; Yamada et al., 1991; Pettway et al., 1990). Note that notochordectomies, while potentially informative, were not done because damage to the endoderm is highly likely in those experiments. Since the endoderm is also potentially implicated in midline formation, an experiment that did not perturb that tissue was preferred. To prepare the donor notochord, the embryo was cut crosswise at the level of the vitelline arteries and close to the end of the tail. Clean 2–4 mm sections of notochord were used for the transplants. A sharp glass needle was used to make an incision in the recipient embryo along the anterior/posterior body axis between the neural tube and somites, deep enough so the ectopic notochord could sit next to the native notochord without puncturing the dorsal aorta. The donor notochord was pressed into place using a pair of dull glass needles or forceps. Embryos continued developing at 37°C until stage HH19.
 
-## Scanning electron microscopy
+### Scanning electron microscopy
 
 Embryos used for Figure 3C and D were fixed in 4% PFA and 2% glutaraldehyde in PBS overnight at 4°C. Samples were then equilibrated in 5% sucrose/PBS for 1 hr at room temperature, 20% sucrose/PBS for 1 hr at room temperature, and finally 15% sucrose/7.5% gelatin/PBS at 37°C overnight. Embryos were then embedded in plastic molds and frozen in liquid isopentane in a dry ice-ethanol bath. Cryosections of 10 µm in thickness were collected on poly-L-lysine-treated coverslips and incubated twice with fresh drops of PBS for 10 min at 37°C. Coverslips were then washed with 0.1 M cacodylate buffer and post-fixed with 0.1% osmium tetroxide. Following washes with deuterium-depleted water, the sections were dehydrated in graded ethanol series, critical point dried (Quorum K850), and sputter coated with 6 nm of chromium (Quorum Q150T). Samples were then viewed on Zeiss Ultra Plus HR Scanning Electron Microscope using the SE2 detector.
 
 Embryos for SEM in Figure 3—figure supplement 1 were fixed in 2% glutaraldehyde in 0.50 M cacodylate buffer (pH 7.4) at 4°C for 2 hr, then rinsed three times for 10 min each in 0.05 M cacodylate buffer. At this point, embryos were cut down to size, using sharp spring scissors to cut the embryo crosswise at the level of the midgut. Then, embryos were post-fixed in 1% osmium tetroxide in 0.05 M cacodylate buffer at 4°C for 1 hr, rinsed again in 0.05 M cacodylate buffer (3×10 min), dehydrated in an ethanol series of 25%, 50%, 70%, 95%, and 100% for 10 min each, and left in 100% ethanol overnight. The following day embryos were critical point dried in CO2, soaking for 24 hr. Samples were mounted and silver paint was used for conductivity. These embryos were sputter-coated with gold palladium and imaged on a LEO 1550 (Keck SEM).
 
-## Imaging, image processing, and quantifications
+### Imaging, image processing, and quantifications
 
 Brightfield and fluorescent images of tissue sections were taken on a Zeiss Observer Z1 with Apotome, an LSM880 Confocal multiphoton inverted microscope—i880 (Zeiss), or an LSM710 Confocal (Zeiss), or a ScanScope CS2. Stereoscopic images were taken on a SteREO Discovery.V12 (Zeiss). Images were processed using Fiji. Statistical analyses were done using GraphPad Prism.
 
@@ -183,6 +438,6 @@ AMD3100-BODIPY diffusion was quantified by drawing an ROI across the DM bound by
 
 GM130 Golgi staining was used to assess cell polarity as described previously (Welsh et al., 2013). Five cell populations were evaluated: cells contacting the midline on the left (‘left margin’), cells contacting the midline on the right (‘right margin’), right mesenchymal cells not contacting the midline or coelomic epithelium, left coelomic epithelial cells, and rare cells observed between the double membrane of the midline itself (‘midline cells’) (Figure 4D, Figure 4—figure supplement 1). For each cell, the clockwise angle relative to vertical (0°) of the line drawn between the center of the nucleus and the Golgi apparatus (Figure 4D, inset) was recorded and plotted on an angle histogram in 20° bins with five biological replicates each. The trend of cell polarity in each cell population was assessed using Rayleigh’s test of uniformity using the ‘circular’ R package for circular statistics (https://r-forge.r-project.org/projects/circular/).
 
-## Veiled chameleon husbandry, collection, and fixation
+### Veiled chameleon husbandry, collection, and fixation
 
 Veiled chameleon husbandry was performed at the Stowers Institute for Medical Research in the Reptiles and Aquatics Facility in accordance with the Institutional Animal Care and Use Committee approved protocol 2020-115, and as described previously (Diaz et al., 2015b; Diaz et al., 2015a; Diaz et al., 2017). following the protocols which are publicly available here: dx.doi.org/10.17504/protocols.io.bzhsp36e. Veiled chameleon eggs were collected at oviposition in the Reptiles and Aquatics Facility at Stowers Institute for Medical Research. Eggs were incubated in deli cups with moist vermiculite at a constant temperature of 28°C for 65–90 days to achieve desired staging. The eggs were cleared of large particles and wiped with RNaseZap wipes (Invitrogen AM9786) to minimize RNAse contamination. Clean eggs were candled to determine the position of the embryo under the leathery shell. We used fine scissors to cut a segment of the shell around the embryo and separate the embryo (attached to the shell) from the rest of the egg. The embryos were further separated from the shell and dissected out of the membranes in room temperature Tyrode’s solution, made in DEPC-treated water. Subsequently, the embryos were fixed overnight at 4°C in 4% PFA in DEPC 1× PBS, then dehydrated through an ascending methanol series into 100% methanol and stored at –20°C for future analysis. Stages of embryonic development were determined as previously described (Diaz et al., 2019).

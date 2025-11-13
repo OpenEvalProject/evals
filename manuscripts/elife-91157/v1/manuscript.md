@@ -9,15 +9,15 @@
 
 ### Affiliations
 
-1. https://ror.org/04bya8j72 Research Group Pathogenesis of Bacterial Infections; TWINCORE, Centre for Experimental and Clinical Infection Research, a joint venture between the Hannover Medical School and the Helmholtz Centre for Infection Research Hannover Germany
-2. https://ror.org/00f2yqf98 Institute of Medical Microbiology and Hospital Epidemiology, Hannover Medical School Hannover Germany
-3. https://ror.org/046rm7j60 Department of Molecular and Medical Pharmacology, David Geffen School of Medicine, UCLA Los Angeles United States
+1. Research Group Pathogenesis of Bacterial Infections; TWINCORE, Centre for Experimental and Clinical Infection Research, a joint venture between the Hannover Medical School and the Helmholtz Centre for Infection Research Hannover Germany ([ROR:04bya8j72](https://ror.org/04bya8j72))
+2. Institute of Medical Microbiology and Hospital Epidemiology, Hannover Medical School Hannover Germany ([ROR:00f2yqf98](https://ror.org/00f2yqf98))
+3. Department of Molecular and Medical Pharmacology, David Geffen School of Medicine, UCLA Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
 
 † Corresponding author
 
 ## Abstract
 
-Host-directed therapy (HDT) is an emerging approach to overcome antimicrobial resistance in pathogenic microorganisms. Specifically, HDT targets host-encoded factors required for pathogen replication and survival without interfering with microbial growth or metabolism, thereby eliminating the risk of resistance development. By applying HDT and a drug repurposing approach, we demonstrate that ( R )-DI-87, a clinical-stage anticancer drug and potent inhibitor of mammalian deoxycytidine kinase (dCK), mitigates Staphylococcus aureus abscess formation in organ tissues upon invasive bloodstream infection. Mechanistically, ( R )-DI-87 shields phagocytes from staphylococcal death-effector deoxyribonucleosides that target dCK and the mammalian purine salvage pathway-apoptosis axis. In this manner, ( R )-DI-87-mediated protection of immune cells amplifies macrophage infiltration into deep-seated abscesses, a phenomenon coupled with enhanced pathogen control, ameliorated immunopathology, and reduced disease severity. Thus, pharmaceutical blockade of dCK represents an advanced anti-infective intervention strategy against which staphylococci cannot develop resistance and may help to fight fatal infectious diseases in hospitalized patients.
+Host-directed therapy (HDT) is an emerging approach to overcome antimicrobial resistance in pathogenic microorganisms. Specifically, HDT targets host-encoded factors required for pathogen replication and survival without interfering with microbial growth or metabolism, thereby eliminating the risk of resistance development. By applying HDT and a drug repurposing approach, we demonstrate that (R)-DI-87, a clinical-stage anticancer drug and potent inhibitor of mammalian deoxycytidine kinase (dCK), mitigates Staphylococcus aureus abscess formation in organ tissues upon invasive bloodstream infection. Mechanistically, (R)-DI-87 shields phagocytes from staphylococcal death-effector deoxyribonucleosides that target dCK and the mammalian purine salvage pathway-apoptosis axis. In this manner, (R)-DI-87-mediated protection of immune cells amplifies macrophage infiltration into deep-seated abscesses, a phenomenon coupled with enhanced pathogen control, ameliorated immunopathology, and reduced disease severity. Thus, pharmaceutical blockade of dCK represents an advanced anti-infective intervention strategy against which staphylococci cannot develop resistance and may help to fight fatal infectious diseases in hospitalized patients.
 
 ## Introduction
 
@@ -27,31 +27,67 @@ Antibiotic-resistant bacteria are frequently associated with local and life-thre
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/91157/elife-91157-fig1-v1.jpg)
 
-**Figure 1.:** R)-DI-87.(A) Scheme illustrating the mode of action of the dCK-specific inhibitor (R)-DI-87. S. aureus-derived dAdo and dGuo are pumped into phagocytes via human equilibrative transporter 1 (hENT1). Deoxycytidine kinase (dCK) converts dAdo and dGuo into appropriate deoxyribonucleoside monophosphates thereby triggering an accumulation of apoptosis-stimulating deoxyribonucleoside di- and triphosphates. (R)-DI-87 interferes with this pathway by inhibiting dCK, thus preventing host cell death. (B) Structure of (R)-DI-87.
+**Figure 1.:** (A) Scheme illustrating the mode of action of the dCK-specific inhibitor (R)-DI-87. S. aureus-derived dAdo and dGuo are pumped into phagocytes via human equilibrative transporter 1 (hENT1). Deoxycytidine kinase (dCK) converts dAdo and dGuo into appropriate deoxyribonucleoside monophosphates thereby triggering an accumulation of apoptosis-stimulating deoxyribonucleoside di- and triphosphates. (R)-DI-87 interferes with this pathway by inhibiting dCK, thus preventing host cell death. (B) Structure of (R)-DI-87.
 
 Here, we provide proof of this concept by establishing a novel host-directed therapeutic strategy for prophylaxis and therapy of staphylococcal infectious diseases. Specifically, we show that the dCK-specific small molecule inhibitor (R)-DI-87 (((R)–2-((1-(2-(4-methoxy-3-(2-morpholinoethoxy)phenyl)–5-methylthiazol-4-yl)ethyl)thio)pyrimidine-4,6-diamine)), an orally active, well-tolerated clinical-stage anticancer drug (Figure 1B; Poddar et al., 2020), protects host phagocytes from staphylococcal death-effector deoxyribonucleoside-mediated cytotoxicity and caspase-3-dependent cell death. Our results further suggest that administration of (R)-DI-87 boosts macrophage survival during abscess formation and thus improves clinical outcomes in S. aureus-infected laboratory animals.
 
 ## Results
 
-## (R)-DI-87-mediated blockade of mammalian dCK protects host immune cells from staphylococcal death-effector deoxyribonucleosides
+### (R)-DI-87-mediated blockade of mammalian dCK protects host immune cells from staphylococcal death-effector deoxyribonucleosides
 
 To analyze whether pharmacological inhibition of mammalian dCK may represent a suitable strategy to protect host phagocytes from staphylococcal death-effector deoxyribonucleosides, we initially took advantage of various tissue culture model systems and pre-incubated human U937 monocytes (U937) or U937-derived macrophages (U937 MФ) with (R)-DI-87. Controls received vehicle only. Following pre-incubation, U937 or U937 MФ were exposed to dAdo or dGuo and analyzed for viability rates 48 hr post-intoxication. Of note, (R)-DI-87-mediated inhibition of mammalian dCK in U937 or U937 MФ efficiently prevented dAdo- or dGuo-induced cell death in a dose-dependent manner (Figure 2A–D and Figure 2—figure supplement 1A–D). Moreover, these effects resembled the phenotype of dCK-deficient U937 or U937 MФ, which were found to be refractory to dAdo- or dGuo-mediated cytotoxicity (Figure 2A–D; Winstel et al., 2018; Tantawy et al., 2022). In addition, we observed that pre-treatment of primary human CD14+ monocytes or human monocyte-derived macrophages (HMDMs) with (R)-DI-87 blocked dAdo- or dGuo-triggered cytotoxicity suggesting that dCK inhibition may suppress the toxigenic properties of staphylococcal death-effector deoxyribonucleosides (Figure 2E–H). To test this conjecture, we expressed a soluble and affinity-tagged recombinant form of S. aureus AdsA (hereafter termed rAdsA) in Escherichia coli, which was purified, released of its affinity tag, and subsequently used for cytotoxicity assays. Particularly, we incubated rAdsA with either dAMP or dGMP according to a published protocol (Tantawy et al., 2022) and added the resulting, dAdo- or dGuo-containing and filter-sterilized reaction products to U937 or U937 MФ that received (R)-DI-87 or were left untreated prior to intoxication. While enzymatic reactions that contained rAdsA and purine deoxyribonucleoside monophosphates triggered cell death of human monocytes or macrophages in this approach, (R)-DI-87-exposed cells were fully protected against the cytotoxic effect of dAdo and dGuo further indicating that inhibition of mammalian dCK helps to neutralize AdsA-derived death-effector deoxyribonucleosides (Figure 2I–J). In this regard, we also wondered whether these results can be recapitulated by using live bacteria and took advantage of previously described methodologies (Thammavongsa et al., 2013; Winstel et al., 2018; Winstel et al., 2019; Tantawy et al., 2022). More precisely, we incubated wild-type S. aureus Newman or its adsA variant in the presence or absence of purine deoxyribonucleoside monophosphates (dAMP or dGMP) to obtain conditioned culture media, which were filter-sterilized and added to vehicle- or (R)-DI-87-exposed human U937 macrophages. In line with earlier studies (Thammavongsa et al., 2013; Winstel et al., 2018; Winstel et al., 2019; Tantawy et al., 2022), macrophage killing required purine deoxyribonucleoside monophosphate-conditioned media and adsA-proficient staphylococci as only wild-type S. aureus Newman and dAMP- or dGMP-supplemented media triggered phagocyte cell death in this approach (Figure 2K–L). However, (R)-DI-87-exposed cells could not be killed in these experiments supporting the idea that pharmacological inhibition of host dCK can shield macrophages from S. aureus- and AdsA-driven cell death (Figure 2K–L). Collectively, these initial data demonstrate that (R)-DI-87 is a suitable small molecule dCK inhibitor capable of preventing host immune cell death induced by toxigenic products of the staphylococcal Nuc/AdsA pathway.
 
-## (R)-DI-87 prevents death-effector deoxyribonucleoside-induced activation of apoptosis
+![Figure 2.](https://cdn.elifesciences.org/articles/91157/elife-91157-fig2-v1.jpg)
+
+**Figure 2.:** (A–D) Survival rates of human U937 monocyte-like cells (U937) (A, B) or U937-derived macrophages (U937 MФ) (C, D) exposed to dAdo or dGuo in the presence (+) or absence (-) of 1 µM (R)-DI-87. Cells were also exposed to the inhibitor or vehicle only. U937 DCK-/- were included as a control. (E–H) Survival rates of human CD14+ monocytes (E, F) or human monocyte-derived macrophages (HMDMs) (G, H) exposed to dAdo or dGuo in the presence (+) or absence (-) of 1 µM (R)-DI-87. Cells were also exposed to the inhibitor or vehicle only. (I–J) Survival rates of U937 MΦ exposed to rAdsA-derived dAdo (I) or dGuo (J). rAdsA was incubated with dAMP or dGMP and reaction products containing dAdo or dGuo were used to treat phagocytes in the presence (+) or absence (-) of 1 µM (R)-DI-87. Controls lacked rAdsA or deoxyribonucleoside monophosphates, or included reaction buffer only as indicated with + and − symbols. (K, L) Survival of vehicle- (-) or (R)-DI-87-exposed (+) U937 MΦ after treatment with culture medium (RPMI) that had been conditioned by incubation with either wild-type S. aureus Newman (WT) or its adsA mutant (ΔadsA) in the presence or absence of dAMP (K) or dGMP (L) as indicated with + and – symbols. Controls are indicated. 100 µM (A–B; E–F) or 200 µM (C-D; G–H) of dAdo or dGuo were used to treat the cells. Cell survival rates were analyzed 48 hr (A–J) or 24 h (K, L) post-treatment. Data are the mean (± standard deviation [SD]) values from at least three independent determinations. Primary cell experiments include at least three independent donors. Statistically significant differences were analyzed by two-way (A–D) or one-way (E–L) analysis of variance (ANOVA) followed by Tukey’s multiple-comparison test; ns, not significant (P≥0.05); *, p<0.05; **, p < 0.01; ***, p<0.001; ****, p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91157/elife-91157-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) Survival rates of human U937 monocyte-like cells (U937) (A, B) or U937-derived macrophages (U937 MФ) (C, D) exposed to dAdo or dGuo in the presence (+) or absence (-) of various concentrations of (R)-DI-87. Cells were also exposed to the inhibitor or vehicle only. 100 µM (A, B) or 200 µM (C, D) of dAdo or dGuo were used to treat the cells. Cell survival rates were analyzed 48 hr post-treatment. Data are the mean (± standard deviation [SD]) values from three independent determinations. Statistically significant differences were analyzed with one-way analysis of variance (ANOVA) and Tukey’s multiple-comparison test; ns, not significant (p≥0.05); *, p<0.05; **, p < 0.01; ***, p<0.001; ****, p<0.0001.
+
+### (R)-DI-87 prevents death-effector deoxyribonucleoside-induced activation of apoptosis
 
 Earlier work demonstrated that staphylococcal dAdo and dGuo target the mammalian purine salvage pathway to trigger an exaggerated biogenesis of deoxyribonucleoside triphosphates, thereby igniting caspase-3-dependent host immune cell death (Winstel et al., 2018; Winstel et al., 2019; Tantawy et al., 2022). Since the accumulation of deoxyribonucleoside triphosphates and associated apoptotic signaling via cleavage of caspase-3 exclusively occurs in dCK-proficient monocytes or macrophages upon intoxication with death-effector deoxyribonucleosides such as dAdo (Winstel et al., 2018; Tantawy et al., 2022), it seemed plausible to us at this stage that administration of (R)-DI-87 and inhibition of dCK may suppress dAdo- or dGuo-mediated activation of the programmed cell death machinery. To test this hypothesis, U937 or U937 MФ were pre-incubated with (R)-DI-87, exposed to dAdo or dGuo, and used to generate cell extracts for evaluation of caspase-3 activity by measuring the hydrolysis of the caspase-3-specific peptide substrate Ac-DEVD-pNA. As expected, (R)-DI-87-treatment of U937 or U937 MФ significantly decreased dAdo- or dGuo-mediated activation of caspase-3 activity (Figure 3A–D). Since caspase-3 represents the key modulator of the apoptosis signaling pathway, these data suggest that (R)-DI-87-mediated dCK inhibition selectively prevented dAdo- or dGuo-mediated induction of apoptotic cell death in host immune cells (Figure 3A–D). To verify these results further, cell extracts were also probed with a specific antibody capable of detecting the inactive pro-form and cleaved (active) form of human caspase-3. In agreement with the enzymatic activity assay, (R)-DI-87-treatment of U937 or U937 MФ prevented caspase-3 activation (Figure 3E–F). Moreover, we exposed U937 phagocytes to (R)-DI-87 and assessed dAdo- or dGuo-mediated activation of apoptotic signaling via immunofluorescence microscopy. Microscopy-based analysis of (R)-DI-87- and death-effector deoxyribonucleoside-exposed macrophages confirmed that (R)-DI-87 inhibited activation of programmed cell death and apoptosis as positive signals for annexin-V/PI were strongly decreased in samples that have been exposed to the dCK inhibitor (Figure 3G–H). Of note, similar findings were also obtained with primary HMDMs, suggesting that (R)-DI-87 is a suitable agent to block death-effector deoxyribonucleoside-mediated induction of apoptosis in host phagocytes (Figure 3—figure supplement 1). Together, these data indicate that administration of (R)-DI-87 and associated inhibition of mammalian dCK prevents apoptotic cell death in phagocytes caused by S. aureus AdsA-derived death-effector deoxyribonucleosides.
 
-## Pharmacological inhibition of host dCK diminishes S. aureus abscess formation in a mouse model of bloodstream infection
+![Figure 3.](https://cdn.elifesciences.org/articles/91157/elife-91157-fig3-v1.jpg)
+
+**Figure 3.:** (A–D) Analysis of caspase-3 activity in human U937 monocyte-like cells (U937) (A, B) or U937-derived macrophages (U937 MФ) (C, D) exposed to dAdo or dGuo in the presence (+) or absence (-) of 1 µM (R)-DI-87. Cells were also exposed to the inhibitor or vehicle only. U937 DCK-/- were included as a control. Caspase-3 activity was analyzed using a colorimetric assay. (E–F) Immunoblotting of lysates obtained from U937 (E) or U937 MФ (F) exposed to dAdo or dGuo in the presence (+) or absence (-) of 1 µM (R)-DI-87. Controls are indicated (+/– symbols). A specific antibody was used that can also detect the cleaved (active) form of caspase-3 (α-CASP3). GAPDH was used as a loading control (α-GAPDH). Numbers to the right of blots indicate the migration of molecular weight markers in kilodaltons. (G–H) Analysis of (R)-DI-87-dependent prevention of host cell apoptosis via immunofluorescence microscopy. U937 MФ were exposed to dAdo (G) or dGuo (H) in the presence or absence of 1 µM (R)-DI-87 and stained using FITC-annexin-V/PI. Controls are indicated. Scale bars depict a length of 100 μm. Representative blots and images are shown. 100 µM (A–B; E) or 200 µM (C-D; F–H) of dAdo or dGuo were used to treat the cells. Apoptosis rates were analyzed 24 hr post-treatment. Data are the mean (± standard deviation [SD]) values from three independent determinations. Statistically significant differences were analyzed by two-way analysis of variance (ANOVA) followed by Tukey’s multiple-comparison test; ns, not significant (p≥0.05); *, p<0.05; **, p < 0.01; ***, p<0.001; ****, p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91157/elife-91157-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Analysis of (R)-DI-87-dependent prevention of host cell apoptosis via immunofluorescence microscopy. Primary human monocyte-derived macrophages (HMDMs) were exposed to dAdo or dGuo in the presence or absence of 1 µM (R)-DI-87 and stained using FITC-annexin-V/PI. Controls are indicated. Scale bars depict a length of 100 μm. Representative images are shown. 200 µM of dAdo or dGuo were used to treat the cells. Apoptosis rates were analyzed 24 hr post-treatment.
+
+### Pharmacological inhibition of host dCK diminishes S. aureus abscess formation in a mouse model of bloodstream infection
 
 To evaluate the therapeutic value of (R)-DI-87 in live animals, initial in vivo experiments aimed at analyzing the safety of (R)-DI-87 in mice following continuous dCK inhibitor treatment. Thus, cohorts of female C57BL/6 mice were treated from day 0 onwards with either vehicle (40% Captisol) or (R)-DI-87 (75 mg/kg) via oral gavage in 12 hr intervals according to a published protocol (Chen et al., 2023). On day 16, peripheral blood was collected from both cohorts of mice and subjected to a FACS-based immuno-phenotyping approach (Figure 4A). Continuous treatment of animals with (R)-DI-87 did not alter the immune cell composition of peripheral blood (Figure 4A). Likewise, endpoint analysis (day 23) uncovered no developmental errors or differences in lymphocyte development as immune cell profiles of spleen tissues along with organ cellularity or mouse body weights were unaffected by (R)-DI-87 treatment (Figure 4B–D and Figure 4—figure supplement 1). Further, administration of (R)-DI-87 to mice did not cause any other obvious phenotype during this procedure but led to the accumulation of deoxycytidine, the natural substrate of dCK (Reichard, 1988; Arnér and Eriksson, 1995), in plasma suggesting that (R)-DI-87 not only represents a safe but also highly selective inhibitor of host dCK (Figure 4E). Next, we sought to investigate whether (R)-DI-87-mediated protection of mammalian phagocytes may represent a valuable strategy to prevent staphylococcal diseases and tested the therapeutic efficacy of the compound in a mouse model of S. aureus bloodstream infection. In this model, C57BL/6 mice were treated with (R)-DI-87 (75 mg/kg) or vehicle (40% Captisol) via oral gavage every 12 hr and challenged with a single dose of 1.0 x 107 CFU S. aureus Newman, a human clinical isolate (Duthie and Lorenz, 1952). Five days post-infection, mice were euthanized. Livers and kidneys were dissected and analyzed for visible abscess lesions. Subsequently, tissue homogenates were prepared and plated on agar plates to measure bacterial loads in infected organs. Notably, abscess numbers and bacterial loads were significantly reduced in livers and kidneys in (R)-DI-87-treated animals as compared to control mice validating (R)-DI-87 as a novel host-directed and anti-infective drug that protects against staphylococcal abscess formation (Figure 4F–I). To test whether S. aureus exploits the activity of dCK along with the purine salvage pathway during infection, cohorts of mice were also challenged with the S. aureus Newman adsA mutant. (R)-DI-87-treated animals no longer displayed increased resistance to S. aureus infection (Figure 4F–I). Moreover, infection with S. aureus adsA-deficient bacteria phenocopied (R)-DI-87-mediated inhibition of dCK, in line with the concept that AdsA is required for establishing persistent infections in host tissues (Figure 4F–I). In light of these findings, infected organs were also fixed with formalin, embedded into paraffin, thin-sectioned, and analyzed for histopathology. As expected, histopathological analysis of hematoxylin and eosin (H&E)-stained liver or renal tissues revealed that wild-type S. aureus Newman formed structured abscesses in vehicle-treated mice (Figure 4J). However, lesions obtained from (R)-DI-87-treated animals appeared smaller in size and typically did not harbor a discernable organization of staphylococci, further demonstrating that administration of (R)-DI-87 represents a medically valuable strategy to mitigate S. aureus abscess formation (Figure 4J). Presumably, (R)-DI-87-treatment protects macrophages against AdsA-derived death-effector deoxyribonucleosides and therefore enhances phagocyte survival during abscess formation as (R)-DI-87 neither improved the killing of S. aureus in human or mouse blood, nor it displayed antimicrobial activity (Figure 4—figure supplement 2A–B and Supplementary file 1). Collectively, these data indicate that inhibition of mammalian dCK by (R)-DI-87 attenuates S. aureus abscess formation and disease pathogenesis in vivo.
 
-## (R)-DI-87-treatment amplifies macrophage infiltration into staphylococcal infectious foci
+![Figure 4.](https://cdn.elifesciences.org/articles/91157/elife-91157-fig4-v1.jpg)
+
+**Figure 4.:** (A–D) Safety assessment of (R)-DI-87 in mice. Cohorts of female C57BL/6 mice were treated with (R)-DI-87 (75 mg/kg) or vehicle (40% Captisol) via oral gavage in 12 hr intervals for 23 days. On day 16, peripheral blood was collected and subjected to a FACS-based immuno-phenotyping approach (A). Subsequent panels indicate the cellularity of spleen (B) and thymus (C) tissues along with the body weight of mice (D) on day 23. (E) Analysis of deoxycytidine (dC) content in mouse plasma following continuous dCK inhibitor treatment on day 23. (F–I) Enumeration of visible surface abscesses and staphylococcal loads in organs of S. aureus-challenged C57BL/6 mice treated with (R)-DI-87 (75 mg/kg) or vehicle (40% Captisol). Mice received (R)-DI-87 (75 mg/kg) or vehicle (40% Captisol) via oral gavage every 12 hr and were challenged with 107 CFU of wild-type S. aureus Newman (WT) or its adsA mutant (ΔadsA). Data for female C57BL/6 mice are displayed (n=8). Bacterial burden was enumerated as log10 CFU per gram of tissue at 5  days post-infection. Horizontal blue bars represent the mean values of visible abscesses per organ (F–G) or indicate the mean CFU count in each cohort (H–I). (J) Microscopic images of H&E–stained liver or renal tissues obtained after necropsy of S. aureus-challenged C57BL/6 mice treated with (R)-DI-87 (75 mg/kg) or vehicle (40% Captisol). Mice received (R)-DI-87 (75 mg/kg) or vehicle (40% Captisol) via oral gavage every 12 hr and were challenged with 107 CFU of wild-type S. aureus Newman (WT) or its adsA mutant (ΔadsA). Arrows point to immune cell infiltrates (black) or replicating staphylococci (blue). Scale bars depict a length of 100 μm. Representative images are shown. Statistically significant differences were analyzed by a two-tailed Student’s t-test (A–E) or with the Kruskal–Wallis test corrected with Dunn’s multiple comparison (F–I). ns, not significant (p≥0.05); *, p<0.05; **, p < 0.01; ***, p<0.001; ****, p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91157/elife-91157-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Cohorts of female C57BL/6 mice were treated with (R)-DI-87 (75 mg/kg) or vehicle (40% Captisol) via oral gavage in 12 hr intervals for 23 days. On day 23, spleen tissues were collected and subjected to a FACS-based immuno-phenotyping approach. Statistically significant differences were analyzed by a two-tailed Student’s t-test. ns, not significant (p > 0.05).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/91157/elife-91157-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A, B) Survival of wild-type S. aureus Newman (WT) or its adsA mutant (ΔadsA) in mouse (A) or human blood (B) in the presence (+) or absence (-) of (R)-DI-87 after 1 hr of incubation. Data were recorded as percent inoculum. For experiments with human blood, three independent donors have been used. Statistically significant differences were analyzed by two-way analysis of variance (ANOVA) followed by Tukey’s multiple-comparison test; ns, not significant (p≥0.05); **, p < 0.01; ***, p<0.001.
+
+### (R)-DI-87-treatment amplifies macrophage infiltration into staphylococcal infectious foci
 
 Previous studies revealed that macrophages with defects in the purine salvage pathway-apoptosis axis are refractory to staphylococcal dAdo or dGuo (Winstel et al., 2018; Winstel et al., 2019; Tantawy et al., 2022). As a result, death-effector deoxyribonucleoside-resistant tissue macrophages were found to accumulate within deep-seated abscesses of S. aureus-challenged mice, a phenomenon that contributed to accelerated clearance of staphylococci (Winstel et al., 2019). Thus, we hypothesized that pharmacological inhibition of host dCK might augment phagocyte infiltration into S. aureus-derived abscesses, thereby explaining reduced bacterial burdens in (R)-DI-87-treated laboratory animals. To pursue this possibility, we established an immunofluorescence microscopy-based approach to detect macrophages in liver or renal tissues of S. aureus Newman wild type-infected C57BL/6 mice that were treated with (R)-DI-87 or vehicle only. As expected, immunofluorescence staining of tissue abscesses obtained from vehicle-treated animals revealed that F4/80-positive macrophages resided at the periphery of infectious foci (Figure 5A–D). On the contrary, lesions derived from mice that received (R)-DI-87 differed as they contained infiltrates of F4/80-positive macrophages within the neutrophil cuff, suggesting that (R)-DI-87-mediated inhibition of host dCK terminates macrophage exclusion from staphylococcal infectious foci (Figure 5E–H). To further delineate whether these results correlate with AdsA and staphylococcal death-effector deoxyribonucleoside-mediated manipulation of host dCK in phagocytes, tissues of S. aureus Newman adsA mutant-infected mice, which received either (R)-DI-87 or vehicle, were also examined via immunofluorescence microscopy and analyzed for the presence of F4/80-positive macrophages. Of note, adsA mutant-derived tissue lesions were also characterized by increased infiltration rates of F4/80-positive phagocytes, irrespectively of whether animals were treated with (R)-DI-87 or vehicle during the course of the infection (Figure 5I–P). Thus, (R)-DI-87-mediated blockade of host dCK phenocopied the adsA mutation in S. aureus. Lastly, (R)-DI-87- or vehicle-treated bone-marrow-derived macrophages (BMDMs) that were isolated from female animals were analyzed for survival rates upon exposure to dAdo or dGuo. Compared to vehicle-treated cells, which were susceptible to death-effector deoxyribonucleosides, BMDMs exposed to (R)-DI-87 displayed increased resistance toward dAdo and dGuo presumably explaining their abundance in infectious foci obtained from wild-type S. aureus Newman-challenged and dCK inhibitor-treated mice (Figure 5Q–R). Similar findings were also obtained for male animal-derived BMDMs suggesting that sex might not impact the efficacy of (R)-DI-87 in laboratory animals (Figure 5—figure supplement 1A–B). In summary, these data suggest that (R)-DI-87-treatment protects macrophages from staphylococcal death-effector deoxyribonucleosides and therefore boosts their infiltration into persistent abscesses in organ tissues (Figure 6).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/91157/elife-91157-fig5-v1.jpg)
+
+**Figure 5.:** (A–P) Immunofluorescence microscopy-based detection of macrophages in liver or renal tissues isolated 5 days after intravenous injection of 107 CFU of wild-type S. aureus Newman (WT) (A–H) or its adsA mutant (ΔadsA) (I–P) into female C57BL/6 mice treated with (R)-DI-87 (75 mg/kg) or vehicle (40% Captisol). Mice received (R)-DI-87 (75 mg/kg) or vehicle (40% Captisol) via oral gavage every 12 hr. White arrows point at the periphery of infectious foci (dashed lines). Magnifications of lesions from upper panels are indicated. Asterisk symbols define the region enlarged in the magnification counterpart images. Thin sections were stained with α-F4/80 antibodies (macrophages; red). Nuclei were labeled with DAPI (blue). Scale bars shown in the upper panels depict 100 μm length. Representative images are shown. (Q, R) Survival rates of female mice-derived bone marrow-derived macrophages (BMDMs) exposed to dAdo (Q) or dGuo (R) in the presence (+) or absence (-) of 1 µM (R)-DI-87. Cells were also exposed to the inhibitor or vehicle only. 200 µM of dAdo or dGuo were used to treat the cells. Cell survival rates were analyzed 48 hr post-treatment. Data are the mean (± standard deviation [SD]) values from three independent determinations. Statistically significant differences were analyzed by one-way analysis of variance (ANOVA) followed by Tukey’s multiple-comparison test; ns, not significant (p≥0.05); *, p<0.05; **, p < 0.01; ***, p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91157/elife-91157-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Survival rates of male mice-derived bone-marrow-derived macrophages (BMDMs) exposed to dAdo (A) or dGuo (B) in the presence (+) or absence (-) of 1 µM (R)-DI-87. Cells were also exposed to the inhibitor or vehicle only. 200 µM of dAdo or dGuo were used to treat the cells. Cell survival rates were analyzed 48 hr post-treatment. Data are the mean (± standard deviation [SD]) values from three independent determinations. Statistically significant differences were analyzed by one-way analysis of variance (ANOVA) followed by Tukey’s multiple-comparison test; ns, not significant (p≥0.05); **, p < 0.01; ***, p<0.001.
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/91157/elife-91157-fig6-v1.jpg)
 
-**Figure 6.:** R)-DI-87-mediated protection of phagocytes during S. aureus abscess formation.Diagram illustrating the (R)-DI-87-mediated protection of macrophages during the development of staphylococcal abscesses. While phagocytes get killed by S. aureus-derived death-effector deoxyribonucleosides in vehicle-treated animals, (R)-DI-87 protects macrophages and boosts their infiltration into the deeper cavity of infectious foci thereby enhancing eradication of staphylococci.
+**Figure 6.:** Diagram illustrating the (R)-DI-87-mediated protection of macrophages during the development of staphylococcal abscesses. While phagocytes get killed by S. aureus-derived death-effector deoxyribonucleosides in vehicle-treated animals, (R)-DI-87 protects macrophages and boosts their infiltration into the deeper cavity of infectious foci thereby enhancing eradication of staphylococci.
 
 ## Discussion
 
@@ -63,70 +99,276 @@ Overall, (R)-DI-87-mediated inhibition of dCK is a novel host-directed therapeut
 
 ## Materials and methods
 
-## Bacterial strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background(Staphylococcus aureus Newman)</td>
+      <td>S. aureus Newman wild type</td>
+      <td>Duthie and Lorenz, 1952</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(S. aureus Newman ∆adsA)</td>
+      <td>S. aureus Newman ∆adsA</td>
+      <td>Tantawy et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Escherichia coli BL21 (DE3) pGEX-2T-adsA)</td>
+      <td>E. coli BL21 (DE3) harboring pGEX-2T-adsA</td>
+      <td>Thammavongsa et al., 2009</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U937</td>
+      <td>ATCC</td>
+      <td>ATCC CRL-1593.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>U937 DCK-/-</td>
+      <td>Winstel et al., 2018</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (human blood)</td>
+      <td>Blood samples from healthy donors</td>
+      <td>Hannover Medical School</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-CASP3, rabbit polyclonal</td>
+      <td>Cell Signaling</td>
+      <td>9662</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-GAPDH, rabbit monoclonal</td>
+      <td>Abcam</td>
+      <td>ab181602</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-rabbit IgG, HRP-linked, goat polyclonal</td>
+      <td>Cell Signaling</td>
+      <td>7074</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-F4/80, rabbit monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>70076</td>
+      <td>1:150</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-rabbit IgG (H+L) Alexa Fluor 546, goat polyclonal</td>
+      <td>Invitrogen</td>
+      <td>A-11071</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-B220-PerCP/Cy5.5, rat monoclonal</td>
+      <td>BioLegend</td>
+      <td>103236</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-CD4-BV711, rat monoclonal</td>
+      <td>BioLegend</td>
+      <td>100550</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-CD8α-PE, rat monoclonal</td>
+      <td>BioLegend</td>
+      <td>100708</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-CD11c-PE/Dazzle594, Armenian hamster monoclonal</td>
+      <td>BioLegend</td>
+      <td>117347</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-CD11b-FITC, rat monoclonal</td>
+      <td>BioLegend</td>
+      <td>101206</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-GR1-APC, rat monoclonal</td>
+      <td>BioLegend</td>
+      <td>108412</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-CD16/32 (FC block), rat monoclonal</td>
+      <td>BioLegend</td>
+      <td>101319</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant AdsA (rAdsA)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FITC Annexin V</td>
+      <td>BD</td>
+      <td>556419</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MojoSort Human CD14 Selection Kit</td>
+      <td>BioLegend</td>
+      <td>480026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Caspase-3 Assay Kit</td>
+      <td>Sigma</td>
+      <td>CASP3C-1KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(R)-DI-87</td>
+      <td>University of California, LA</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Captisol</td>
+      <td>CyDex Pharmaceuticals, Inc.</td>
+      <td>RC-0C7-020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Human macrophage colony stimulating factor</td>
+      <td>Genscript</td>
+      <td>Z02914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mouse macrophage colony stimulating factor</td>
+      <td>Genscript</td>
+      <td>Z02930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol 12-myristate 13-acetate (PMA)</td>
+      <td>Sigma</td>
+      <td>P8139</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and growth conditions
 
 All bacterial strains used in this study are listed in the Key Resources Table. Bacteria were grown in tryptic soy broth (TSB), Mueller-Hinton broth (MHB), or lysogeny broth (LB) at permissive temperatures. Media were supplemented with appropriate antibiotics (ampicillin 100 µg/ml).
 
-## Cell lines and tissue culture
+### Cell lines and tissue culture
 
 U937 cells were obtained from American Type Culture Collection (ATCC) and grown in Roswell Park Memorial Institute (RPMI) 1640 medium (Gibco) supplemented with 10% heat-inactivated fetal bovine serum (hi-FBS) according to the manufacturer’s instructions. All mammalian cell lines were grown at 37 °C under 5% CO2. Cell lines used in this study are listed in the Key Resources Table.
 
-## Isolation of human primary cells
+### Isolation of human primary cells
 
 Peripheral blood mononuclear cells (PBMCs) were isolated from heparinized blood by density gradient centrifugation on Pancoll (PAN Biotech) according to standard laboratory protocols. Next, human primary monocytes were isolated from PBMCs by using magnetic nanobeads and the MojoSort Human CD14 Selection Kit (BioLegend) as described earlier (Tantawy et al., 2022). Subsequently, purified primary CD14-positive (CD14+) monocytes were resuspended in RPMI 1640 medium containing 10% hi-FBS and 1% penicillin‐streptomycin and used for cytotoxicity assays. Alternatively, purified CD14+ monocytes were differentiated into human monocyte-derived macrophages (HMDMs) in the same medium supplemented with 50 ng/ml of human macrophage colony stimulating factor (hM-CSF; Genscript). HMDMs were used at day 7 post-differentiation for cytotoxicity experiments.
 
-## Isolation of murine bone-marrow-derived macrophages
+### Isolation of murine bone-marrow-derived macrophages
 
 BMDMs were isolated from C57BL/6 mice as previously described (Tantawy et al., 2022). In brief, mice were euthanized to remove the femur and tibia which were sterilized by using 70% ethanol. Bones were then washed with sterile phosphate-buffered saline (PBS). Next, the bone ends were removed and the bone marrow was flushed out by using RPMI 1640 containing 10% hi-FBS and 1% penicillin-streptomycin. Following a resuspension step, cells were passed through a nylon cell strainer (40  μm) to remove unwanted tissue and cellular debris. Subsequently, cells were centrifuged (10 min, 200 x g, 4 °C), resuspended in red blood cell (RBC) lysis buffer (Roche), and incubated for 5 min at room temperature to lyse RBC. Cells were centrifuged once more, resuspended in BMDM medium (RPMI 1640 containing 10% hi-FBS, 1% penicillin-streptomycin, and 50 ng/ml of mouse macrophage colony-stimulating factor (Genscript)), and seeded into tissue culture-treated dishes to deplete bone marrow cells from fibroblasts. At day 1 post-extraction, suspension bone marrow cells were collected via centrifugation, adjusted to 6.0 x 105 cells/ml in BMDM medium, and re-seeded into bacteriological dishes. At day 4 post-extraction, cells were incubated with an additional 10  ml of BMDM medium. BMDMs were used at day 7 post-extraction for cytotoxicity experiments.
 
-## Protein purification
+### Protein purification
 
 Purification of recombinant S. aureus AdsA was performed as described elsewhere (Thammavongsa et al., 2009; Tantawy et al., 2022). Briefly, a glutathione S-transferase (GST)-tagged and recombinant version of S. aureus AdsA (rAdsA) was expressed in E. coli BL21 using the pGEX-2T plasmid system (GE Healthcare) and purified via glutathione S-transferase affinity chromatography (Thammavongsa et al., 2009; Tantawy et al., 2022). Next, the N-terminal GST tag was removed by using thrombin which was immediately cleared from the protein sample via benzamidine sepharose beads according to the manufacturer’s instructions (GE Healthcare). Purified rAdsA was analyzed by a Coomassie-stained SDS-PAGE following standard laboratory protocols.
 
-## Cytotoxicity assays
+### Cytotoxicity assays
 
 To evaluate the protective role of (R)-DI-87 during death-effector deoxyribonucleoside-induced cytotoxicity, 2.0 x 105 U937 monocyte-like cells (U937) per well were seeded in a 24-well plate and pre-incubated for 2 hr at 37 °C under 5% CO2 in RPMI 1640 medium containing 10% hi-FBS and 1 µM of (R)-DI-87. Control wells received vehicle only. Alternatively, 4.0 × 105 U937 cells per well were seeded in a 24-well plate and incubated for 48  hr at 37 °C under 5% CO2 in RPMI 1640 growth medium that contained 160  nM phorbol 12-myristate 13-acetate (PMA). Resulting U937-derived macrophages (U937 MФ) were washed and further incubated in RPMI 1640 growth medium lacking PMA (24  hr). Similarly, 3.5 x 105 BMDMs per well were seeded in 24-well plates and incubated for 24  hr at 37 °C under 5% CO2 in corresponding growth media. Next, U937 MФ or BMDMs were washed once and pre-incubated for 2 hr at 37 °C under 5% CO2 in appropriate growth media supplemented with 1 µM of (R)-DI-87. Control wells received vehicle only. Following pre-incubation with (R)-DI-87, U937, U937 MФ, or BMDMs were exposed to various concentrations of either dAdo or dGuo (100 µM for U937; 200 µM for U937 MФ or BMDMs) and incubated for 48 hr at 37 °C under 5% CO2 in RPMI 1640 growth medium. Cells were collected via centrifugation (U937) or a detachment-centrifugation step using trypsin-EDTA (U937 MФ) or accutase (BMDMs) solution. Dead cells were stained with trypan blue and counted by using a microscope to calculate killing efficiency. To analyze the protective effect of (R)-DI-87 in primary human cells, 2.0 x 105 CD14+ monocytes or HMDMs per well were seeded in multi-well plates and pre-incubated for 2 hr at 37 °C under 5% CO2 in RPMI 1640 medium containing 10% hi-FBS and 1 µM of (R)-DI-87. Control wells received vehicle only. Subsequently, cells were intoxicated by using various concentrations of either dAdo or dGuo (100 µM for CD14+ monocytes; 200 µM for HMDMs) and incubated in appropriate growth media for 48 hr at 37 °C under 5% CO2. Cells were collected via centrifugation (CD14+ monocytes) or a detachment-centrifugation step (HMDMs) using trypsin-EDTA solution. Viability of cells was determined via trypan blue staining and microscopy as described above. To block the cytotoxic effect of AdsA-derived death-effector deoxyribonucleosides by using (R)-DI-87, rAdsA (1.25 µg/µl) was incubated for 16 hr at 37 °C in a reaction buffer (30 mM Tris-HCl, pH 7.5; 1.5 mM MgCl2; 1.5 mM MnCl2) supplemented with either dAMP or dGMP (1.19 mM each) according to a published protocol (Tantawy et al., 2022). Controls included reactions that lacked deoxyribonucleoside monophosphates or rAdsA. Following incubation, all reaction products were filter-sterilized and added to U937 MФ which were pre-incubated with vehicle or 1 µM (R)-DI-87 for 2 hr prior to intoxication. Next, cells were incubated at 37 °C under 5% CO2 for 48 hr, collected, and analyzed via trypan blue staining and microscopy as described above. S. aureus-driven cell death was analyzed based on previously described approaches (Thammavongsa et al., 2013; Winstel et al., 2018; Winstel et al., 2019; Tantawy et al., 2022). In brief, the S. aureus Newman strain panel was incubated overnight at 37 °C in TSB, diluted in fresh TSB medium, and grown at 37 °C to 1.5 x 108 CFU/ml. Next, staphylococci were pelleted, washed twice in sterile wash buffer (50 mM Tris-HCl; pH 7.5), and adjusted to 3.2 x 108 CFU/ml. 8.0 x 107 CFU were incubated in a dAMP- or dGMP-containing (final conc. 5 mM) reaction buffer (30 mM Tris-HCl, pH 7.5; 2 mM MgCl2) for 90 min at 37 °C. Controls lacked bacteria, dAMP, dGMP, or involved the S. aureus adsA mutant, which cannot synthesize dAdo and dGuo. Following incubation, bacteria were removed from the sample by a brief centrifugation-filtration step. 300 µl of the resulting and filter-sterilized supernatants were mixed with 700 µl of RPMI growth medium and incubated with vehicle- or (R)-DI-87-exposed (1 µM) U937-derived macrophages for 24 hr at 37 °C under 5% CO2. Finally, cells were detached, collected, and stained with trypan blue as described above to quantify killed phagocytes.
 
-## Assessment of caspase-3-activity
+### Assessment of caspase-3-activity
 
 Caspase-3 activity was analyzed using a colorimetric caspase-3 detection kit (Sigma) and a published protocol (Winstel et al., 2018; Tantawy et al., 2022). Briefly, U937 cells or U937 MФ along with appropriate controls were pre-incubated for 2 hr at 37 °C under 5% CO2 in RPMI 1640 medium containing 10% hi-FBS and 1 µM of (R)-DI-87. Controls received vehicle only. Subsequently, cells were exposed to various concentrations of either dAdo or dGuo (100 µM for U937; 200 µM for U937 MФ) and incubated for 24 hr at 37 °C under 5% CO2 in RPMI 1640 growth medium. Cells were collected via centrifugation (U937) or a detachment-centrifugation step (U937 MФ) using trypsin-EDTA solution and washed once in PBS. Next, 1.0 x 107 cells were lysed in pre-chilled lysis buffer (Sigma kit) for 20 min. This step was performed on ice. Resulting lysates were centrifuged at 4 °C (18,000 × g for 10  min) to obtain cell- and debris-free supernatants which were incubated with the caspase-3 substrate Ac-DEVD-pNA according to the manufacturer’s instructions. Caspase-3 activity was determined based on the amount of released pNA that can be detected at 405 nm.
 
-## Immunoblotting
+### Immunoblotting
 
 Immunoblotting was performed as described elsewhere (Tantawy et al., 2022). In short, U937 or U937 MФ and appropriate controls were pre-incubated for 2 hr at 37 °C under 5% CO2 in RPMI 1640 medium containing 10% hi-FBS and 1 µM of (R)-DI-87. Controls received vehicle only. Next, cells were treated with dAdo or dGuo (100 µM for U937; 200 µM for U937 MФ), incubated for 24 hr at 37 °C under 5% CO2 in RPMI 1640 growth medium, and collected via centrifugation (U937) or a detachment-centrifugation step (U937 MФ) using trypsin-EDTA solution. Cells were washed once in PBS. 1.0 x 107 cells were lysed on ice in pre-chilled lysis buffer (50 mM HEPES, pH 7.4; 5 mM CHAPS; 5 mM DTT) for 20 min. Resulting lysates were centrifuged at 4 °C (18,000 × g for 10  min) to obtain cell- and debris-free supernatants which were mixed with sodium dodecyl sulfate-polyacrylamide gel (SDS-PAGE) loading buffer. Samples were boiled for 10 min at 95 °C. Proteins were separated via SDS-PAGE (12%) and transferred onto PVDF membranes for immunoblot analysis with the following rabbit primary antibodies: α-Caspase-3 (α-CASP3, 9662, Cell Signaling) and α-GAPDH (ab181602, Abcam, loading control). Immunoreactive signals were revealed with a secondary antibody conjugated to horseradish peroxidase (α-rabbit IgG, 7074, Cell Signaling). Horseradish peroxidase activity was detected with enhanced chemiluminescent (ECL) substrate (Thermo Fisher).
 
-## FITC-annexin-V/PI staining
+### FITC-annexin-V/PI staining
 
 FITC-annexin-V/PI staining of U937 MФ or HMDMs exposed to 1 µM (R)-DI-87 and death-effector deoxyribonucleosides (200 µM dAdo or dGuo; 24 hr at 37 °C) along with appropriate controls was performed by using FITC-annexin-V Apoptosis Detection Kit I (BD Biosciences) according to the manufacturer’s instructions. Stained cells were analyzed via immunofluorescence microscopy according to standard laboratory protocols.
 
-## Determination of the minimal inhibitory concentration (MIC)
+### Determination of the minimal inhibitory concentration (MIC)
 
 The MIC of (R)-DI-87 was determined in 96-well plates by using the microdilution method and Mueller-Hinton broth according to standard laboratory protocols. Wells containing varying concentrations of (R)-DI-87 or vehicle were inoculated with 105 CFU/ml of wild-type S. aureus Newman or its adsA mutant and incubated for 24 hr at 37 °C under continuous shaking. The MIC was defined as the lowest concentration of compound at which no visible growth was detected.
 
-## Bacterial survival in blood
+### Bacterial survival in blood
 
 Bacterial survival in mouse or human blood was analyzed as described before (Thammavongsa et al., 2009). In brief, fresh overnight cultures of S. aureus Newman wild type or its adsA mutant were diluted into fresh TSB medium and grown at 37 °C to an OD of 1.0. Bacteria were washed twice in sterile PBS and adjusted in PBS to a final density of 1.0 x 108 CFU/ml. Next, freshly drawn mouse or human blood anticoagulated with heparin was incubated in the presence or absence of 1 µM (R)-DI-87 for 60 min (37 °C) with S. aureus Newman wild type or its adsA mutant using a bacterial dose of 1.0 x 106 CFU/ml (murine blood) or 1.0 x 107 CFU/ml (human blood). Samples without (R)-DI-87 treatment received the vehicle. Following incubation, blood samples were mixed in a 1:1 ratio with sterile lysis buffer (PBS containing 1.0% saponin) and incubated for 10 min at 37 °C to lyse eukaryotic cells. Subsequently, serial dilutions were prepared and plated onto TSA plates to determine bacterial survival rates.
 
-## Animal infection model
+### Animal infection model
 
 C57BL/6 mice were purchased from Janvier Laboratories and kept under specific pathogen-free conditions in our central mouse facility (TWINCORE, Center for Experimental and Clinical Infection Research, Hannover, Germany). Mice received (R)-DI-87 (75 mg/kg) or vehicle (40% Captisol) via oral gavage at the day of the infection, separated by 12 hr intervals over a 5-day observation period. Timing of intervention therapy was initiated 6 hr before systemic challenge. For infection experiments, TSB overnight cultures of wild-type S. aureus Newman or its adsA mutant were diluted 1:100 in TSB and grown to an optical density (600 nm) of 0.5. Bacteria were then centrifuged (10 min, RT, 8000 × g), washed twice in sterile PBS, and adjusted to 108 CFU/ml. One hundred microliters of the bacterial suspension (107 CFU) were administered intravenously (lateral tail vein) into 6- to 8-weeks-old female C57BL/6 mice. Five days post-infection, animals were euthanized. Organs were dissected, examined for surface abscesses, and homogenized in sterile PBS supplemented with 0.1% Triton X-100. Serial dilutions were prepared and plated onto TSA plates to determine bacterial loads. For histopathology, dissected organs were fixed in 10% Formalin (Sigma), embedded into paraffin, thin-sectioned, and stained with hematoxylin and eosin (H&E). Stained tissues were examined by microscopy according to standard laboratory protocols.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 To detect macrophages in S. aureus-infected tissues, formalin-fixed and paraffin-embedded organs were thin-sectioned, deparaffinized, and rehydrated. After heat-induced antigen retrieval in 10 mM sodium citrate buffer (pH 6.0), non-specific antibody binding was blocked by adding 2% normal goat serum. Immunofluorescence staining was carried out by using an antibody against F4/80-positive macrophages (α-F4/80, 70076, Cell Signaling), followed by a fluorescently labeled secondary antibody (Alexa546, Invitrogen). Stained tissues were examined by using a Zeiss Apotome 2 microscope (Zeiss).
 
-## Safety assessment of (R)-DI-87
+### Safety assessment of (R)-DI-87
 
 To assess the therapeutic value and safety of (R)-DI-87, cohorts of female C57BL/6 mice were treated with (R)-DI-87 (75 mg/kg) or vehicle (40% Captisol) via oral gavage in 12 hr intervals over the course of 23 days. On day 16, 100 µl peripheral blood was collected in lithium heparin-coated tubes via retro-orbital bleeding using heparin-coated capillary tubes. Subsequently, blood samples were incubated with 5 ml of ACK lysis buffer at room temperature for 5 min, quenched with 5 ml of FACS buffer (5% FBS in PBS), and centrifuged at 4 °C (4 min). This process was repeated and cells were subsequently stained with the following fluorochrome-conjugated anti-mouse antibodies diluted 1:100 in 100 µl of FACS buffer for 20 min at 4 °C: α-B220-PerCP/Cy5.5 (103236, BioLegend), α-CD4-BV711 (100550, BioLegend), α-CD8α-PE (100708, BioLegend), α-CD11c-PE/Dazzle594 (117347, BioLegend), α-CD11b-FITC (101206, BioLegend), α-GR1-APC (108412, BioLegend); α-CD16/32 (FC block; 101319; BioLegend). Following incubation, cells were centrifuged and washed twice using FACS buffer. Cells were resuspended in FACS buffer and analyzed using a BD LSRII flow cytometer and the FlowJo software package. During the (R)-DI-87 or vehicle treatment procedure, mice were also regularly monitored and weighed to assess the overall health status. On day 23, an endpoint analysis was carried out to analyze the immune cell profile and cellularity of spleen and thymus tissues as described elsewhere (Abt et al., 2022). Lastly, blood was collected from all cohorts of animals for the analysis of the deoxycytidine (dC) content in mouse plasma to evaluate the dCK-inhibitory capacity of (R)-DI-87 (see below).
 
-## LC-MS/MS-MRM analysis of plasma nucleoside levels
+### LC-MS/MS-MRM analysis of plasma nucleoside levels
 
 LC-MS/MS-MRM analysis of plasma nucleoside levels was performed as previously described (Le et al., 2017). For the analysis of plasma deoxycytidine levels, blood was collected from mice using a heparin-coated capillary tube by the retro-orbital technique and transferred to a lithium-heparin coated tube (Fisher Cat#13-680-62) on ice. Samples were centrifuged at 450 x g for 5 min at 4 °C and the plasma supernatant was stored at –80 °C. For metabolite extraction, 20 µL of plasma was mixed with 80 µL of 100% MeOH containing stable isotope-labeled nucleoside internal standard (0.5 µM [U-15N/13C]dC; Silantes Cat#124603802). MeOH-extracted samples were incubated at –80 °C for 24 hr, centrifuged at 12,000 x g for 5 min at 4 °C, and the cleared supernatant was transferred to an HPLC injector vial for analysis. Five µL of the sample was injected onto a porous graphitic carbon column (Thermo Fisher Scientific Hypercarb, 100x2.1 mm, 5 μm particle size) equilibrated in solvent A (0.1% formic acid in MiliQ-purified/LC-Pak treated H2O) and eluted (700 µL/min) with an increasing concentration of solvent B (0.1% formic acid in acetonitrile) using min/%B/flow rates (µL/min) as follows: 0/2/700, 3/80/700, 4/80/700, 4.5/2/700, 7/2/700. The effluent from the column was directed to an Agilent Jet Stream ion source connected to a triple quadrupole mass spectrometer (Agilent 6460) operating in the multiple reaction monitoring (MRM) mode using previously optimized settings. The peak areas for each target molecule (precursor→fragment ion transitions) at predetermined retention times were recorded using Agilent MassHunter software. Peak areas were normalized to nucleoside internal standard signals. An external standard curve was applied to determine nucleoside concentrations. Experimental and standard samples were processed together to minimize variation.
 
-## Synthesis and preparation of (R)-DI-87
+### Synthesis and preparation of (R)-DI-87
 
 (R)DI-87 ((((R)–2-((1-(2-(4-methoxy-3-(2-morpholinoethoxy)phenyl)–5-methylthiazol-4-yl)ethyl)thio)pyrimidine-4,6-diamine))) was synthesized as described before (Poddar et al., 2020). For experiments, (R)-DI-87 was either dissolved in Dimethyl sulfoxide (in vitro experiments) or in an aqueous solution containing 40% Captisol (CyDex Pharmaceuticals, Inc) (in vivo experiments).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed by using GraphPad Prism (GraphPad Software, Inc, La Jolla, USA). Statistically significant differences were calculated by using statistical methods as indicated. p-values <0.05 were considered significant.

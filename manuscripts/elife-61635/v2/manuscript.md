@@ -30,7 +30,7 @@ Gene expression patterns are dynamic on many levels. They form, change and disap
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/61635/elife-61635-fig1-v2.jpg)
 
-**Figure 1.:** D. melanogaster even-skipped.(A) Simple model of transcriptional bursting by promoter switching between ON and OFF states. (B) The promoter switching parameters define the burst duration, the duration between bursts, and amplitude. (C) Wild-type eve locus showing the five stripe enhancers (1, 2, 3+7, 4+6, 5) and the late enhancer element. Colors for individual stripes are used throughout figures. (D) Layout of the engineered eve BAC showing the locations of the MS2 stem loop array and yellow gene.
+**Figure 1.:** (A) Simple model of transcriptional bursting by promoter switching between ON and OFF states. (B) The promoter switching parameters define the burst duration, the duration between bursts, and amplitude. (C) Wild-type eve locus showing the five stripe enhancers (1, 2, 3+7, 4+6, 5) and the late enhancer element. Colors for individual stripes are used throughout figures. (D) Layout of the engineered eve BAC showing the locations of the MS2 stem loop array and yellow gene.
 
 A slew of studies, from theoretical models (Ko, 1991; Peccoud and Ycart, 1995; Sánchez and Kondev, 2008; Sanchez et al., 2011; Xu et al., 2016; Choubey et al., 2015, Choubey et al., 2018; Shahrezaei and Swain, 2008; Kepler and Elston, 2001; Sasai and Wolynes, 2003) to imaging-based analyses (Xu et al., 2015; Fukaya et al., 2016; Senecal et al., 2014; Jones et al., 2014; Golding et al., 2005; Molina et al., 2013; Suter et al., 2011; So et al., 2011; Padovan-Merhar et al., 2015; Bartman et al., 2016; Hendy et al., 2017; Zoller et al., 2018), have shown that overall rates of mRNA synthesis can be adjusted by controlling the bursting process. Changing the duration or bursts, the separation between bursts, or the rate at which polymerases are loaded during a burst (Figure 1B) will affect mRNA production, and modulating any or all of these parameters over space and time could, in principle, produce arbitrarily complex output patterns. However, it remains unclear how diverse the kinetic strategies employed by different regulatory sequences actually are, and what, if anything, constrains how these different kinetic parameters are used by evolution to shape patterns of expression.
 
@@ -48,7 +48,7 @@ Thus, in this experiment and with our new set of analytical tools, we capture no
 
 ## Results
 
-## Live imaging of eve expression
+### Live imaging of eve expression
 
 We used recombineering (Warming et al., 2005) to modify a bacterial artificial chromosome (BAC) (Venken et al., 2006) containing the D. melanogaster eve gene and all of its enhancers and regulatory elements (Venken et al., 2009), replacing the coding region with an array of MS2 stem loops followed by the D. melanogaster yellow (y) gene (Figure 1D; Bothma et al., 2014). The 4329 base pair y gene, which is longer than the endogenous eve transcript, is phenotypically neutral and provides a means to increase the number of RNA Polymerase II (Pol II) molecules loaded onto the gene in order to amplify the signal (see Materials and methods for a discussion of how the structure of the reporter genes affects the fluorescence signal, analyses and inferences performed throughout this work). We inserted the engineered BAC into a targeted site on chromosome 3L using ΦC31 integrase-mediated recombination (Fish et al., 2007), and homozygosed the line, which showed no signs of adverse effects of the transgene.
 
@@ -56,15 +56,202 @@ We crossed males from this line with females carrying transgenes that express in
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/61635/elife-61635-fig2-v2.jpg)
 
-**Figure 2.:** even-skipped.Stills from maximum projection renderings of image stacks of an embryo spanning all seven stripes. This movie was collected with a 40x objective for illustration purposes only. Movies used for data analysis were collected at higher resolution as described in the text.
+**Figure 2.:** Stills from maximum projection renderings of image stacks of an embryo spanning all seven stripes. This movie was collected with a 40x objective for illustration purposes only. Movies used for data analysis were collected at higher resolution as described in the text.
+
+![Video 1.](https://cdn.elifesciences.org/articles/61635/elife-61635-video1.mp4.jpg)
+
+**Video 1.:** Maximum value projection of Z-stacks of an entire embryo carrying eve-MS2 BAC, MCP-GFP, and histone-RFP imaged with a 40x objective.
 
 We used laser-scanning confocal microscopy to record, with high temporal resolution and high magnification, two color (MCP-GFP and histone-RFP) movies of embryos from before nc14 through gastrulation. We optimized our data collection strategy to sample multiple stripes (3 to 5) in each movie, to obtain high temporal resolution (one Z-stack, corresponding to each time point of our movies, every 16.8 s) and to have optimal signal-to-noise with minimal bleaching. In total, we collected 11 movies (Videos 2–12), with every stripe imaged at least five times (see Table 1).
+
+**Table 1.**
+ Summary of movies collected.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Embryo ID</th>
+      <th>Duration</th>
+      <th>Stripes</th>
+      <th>Data movies</th>
+      <th>Promoter state movies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EVE_D1</td>
+      <td>255 frames 71.2 min</td>
+      <td>1–4</td>
+      <td>Video 2</td>
+      <td>Video 13</td>
+    </tr>
+    <tr>
+      <td>EVE_D2</td>
+      <td>254 frames 70.9 min</td>
+      <td>3–7</td>
+      <td>Video 3</td>
+      <td>Video 14</td>
+    </tr>
+    <tr>
+      <td>EVE_D3</td>
+      <td>235 frames 65.6 min</td>
+      <td>3–6</td>
+      <td>Video 4</td>
+      <td>Video 15</td>
+    </tr>
+    <tr>
+      <td>EVE_D4</td>
+      <td>246 frames 68.7 min</td>
+      <td>3–7</td>
+      <td>Video 5</td>
+      <td>Video 16</td>
+    </tr>
+    <tr>
+      <td>EVE_D5</td>
+      <td>210 frames 58.6 min</td>
+      <td>4–7</td>
+      <td>Video 6</td>
+      <td>Video 17</td>
+    </tr>
+    <tr>
+      <td>EVE_D6</td>
+      <td>196 frames 54.7 min</td>
+      <td>4–7</td>
+      <td>Video 7</td>
+      <td>Video 18</td>
+    </tr>
+    <tr>
+      <td>EVE_D7</td>
+      <td>208 frames 58.1 min</td>
+      <td>3–7</td>
+      <td>Video 8</td>
+      <td>Video 19</td>
+    </tr>
+    <tr>
+      <td>EVE_D8</td>
+      <td>232 frames 64.8 min</td>
+      <td>1–3</td>
+      <td>Video 9</td>
+      <td>Video 20</td>
+    </tr>
+    <tr>
+      <td>EVE_D9</td>
+      <td>322 frames 89.9 min</td>
+      <td>1–4</td>
+      <td>Video 10</td>
+      <td>Video 21</td>
+    </tr>
+    <tr>
+      <td>EVE_D10</td>
+      <td>267 frames 74.5 min</td>
+      <td>1–3</td>
+      <td>Video 11</td>
+      <td>Video 22</td>
+    </tr>
+    <tr>
+      <td>EVE_D11</td>
+      <td>307 frames 85.7 min</td>
+      <td>1–4</td>
+      <td>Video 12</td>
+      <td>Video 23</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 2.](https://cdn.elifesciences.org/articles/61635/elife-61635-video2.mp4.jpg)
+
+**Video 2.:** Maximum value projection of Z-stacks of sections of embryos carrying eve-MS2 BAC, MCP-GFP, and histone-RFP imaged with a 63x objective, each capturing 3–5 stripes as described in Table 1.
+
+![Video 3.](https://cdn.elifesciences.org/articles/61635/elife-61635-video3.mp4.jpg)
+
+**Video 3.:** Maximum value projection of Z-stacks of sections of embryos carrying eve-MS2 BAC, MCP-GFP, and histone-RFP imaged with a 63x objective, each capturing 3–5 stripes as described in Table 1.
+
+![Video 4.](https://cdn.elifesciences.org/articles/61635/elife-61635-video4.mp4.jpg)
+
+**Video 4.:** Maximum value projection of Z-stacks of sections of embryos carrying eve-MS2 BAC, MCP-GFP, and histone-RFP imaged with a 63x objective, each capturing 3–5 stripes as described in Table 1.
+
+![Video 5.](https://cdn.elifesciences.org/articles/61635/elife-61635-video5.mp4.jpg)
+
+**Video 5.:** Maximum value projection of Z-stacks of sections of embryos carrying eve-MS2 BAC, MCP-GFP, and histone-RFP imaged with a 63x objective, each capturing 3–5 stripes as described in Table 1.
+
+![Video 6.](https://cdn.elifesciences.org/articles/61635/elife-61635-video6.mp4.jpg)
+
+**Video 6.:** Maximum value projection of Z-stacks of sections of embryos carrying eve-MS2 BAC, MCP-GFP, and histone-RFP imaged with a 63x objective, each capturing 3–5 stripes as described in Table 1.
+
+![Video 7.](https://cdn.elifesciences.org/articles/61635/elife-61635-video7.mp4.jpg)
+
+**Video 7.:** Maximum value projection of Z-stacks of sections of embryos carrying eve-MS2 BAC, MCP-GFP, and histone-RFP imaged with a 63x objective, each capturing 3–5 stripes as described in Table 1.
+
+![Video 8.](https://cdn.elifesciences.org/articles/61635/elife-61635-video8.mp4.jpg)
+
+**Video 8.:** Maximum value projection of Z-stacks of sections of embryos carrying eve-MS2 BAC, MCP-GFP, and histone-RFP imaged with a 63x objective, each capturing 3–5 stripes as described in Table 1.
+
+![Video 9.](https://cdn.elifesciences.org/articles/61635/elife-61635-video9.mp4.jpg)
+
+**Video 9.:** Maximum value projection of Z-stacks of sections of embryos carrying eve-MS2 BAC, MCP-GFP, and histone-RFP imaged with a 63x objective, each capturing 3–5 stripes as described in Table 1.
+
+![Video 10.](https://cdn.elifesciences.org/articles/61635/elife-61635-video10.mp4.jpg)
+
+**Video 10.:** Maximum value projection of Z-stacks of sections of embryos carrying eve-MS2 BAC, MCP-GFP, and histone-RFP imaged with a 63x objective, each capturing 3–5 stripes as described in Table 1.
+
+![Video 11.](https://cdn.elifesciences.org/articles/61635/elife-61635-video11.mp4.jpg)
+
+**Video 11.:** Maximum value projection of Z-stacks of sections of embryos carrying eve-MS2 BAC, MCP-GFP, and histone-RFP imaged with a 63x objective, each capturing 3–5 stripes as described in Table 1.
+
+![Video 12.](https://cdn.elifesciences.org/articles/61635/elife-61635-video12.mp4.jpg)
+
+**Video 12.:** Maximum value projection of Z-stacks of sections of embryos carrying eve-MS2 BAC, MCP-GFP, and histone-RFP imaged with a 63x objective, each capturing 3–5 stripes as described in Table 1.
+
+![Video 13.](https://cdn.elifesciences.org/articles/61635/elife-61635-video13.mp4.jpg)
+
+**Video 13.:** Animation of pseudo-cells (resulting from a Voronoi tessellation based on the position of nuclei) where cells are colored based on their stripe, with intensity proportional to the measured eve MS2 fluorescence of the nucleus at the given time, and promoters in the ON and OFF states represented with light and dark gray pseudo-cell outlines, respectively.
+
+![Video 14.](https://cdn.elifesciences.org/articles/61635/elife-61635-video14.mp4.jpg)
+
+**Video 14.:** Animation of pseudo-cells (resulting from a Voronoi tessellation based on the position of nuclei) where cells are colored based on their stripe, with intensity proportional to the measured eve MS2 fluorescence of the nucleus at the given time, and promoters in the ON and OFF states represented with light and dark gray pseudo-cell outlines, respectively.
+
+![Video 15.](https://cdn.elifesciences.org/articles/61635/elife-61635-video15.mp4.jpg)
+
+**Video 15.:** Animation of pseudo-cells (resulting from a Voronoi tessellation based on the position of nuclei) where cells are colored based on their stripe, with intensity proportional to the measured eve MS2 fluorescence of the nucleus at the given time, and promoters in the ON and OFF states represented with light and dark gray pseudo-cell outlines, respectively.
+
+![Video 16.](https://cdn.elifesciences.org/articles/61635/elife-61635-video16.mp4.jpg)
+
+**Video 16.:** Animation of pseudo-cells (resulting from a Voronoi tessellation based on the position of nuclei) where cells are colored based on their stripe, with intensity proportional to the measured eve MS2 fluorescence of the nucleus at the given time, and promoters in the ON and OFF states represented with light and dark gray pseudo-cell outlines, respectively.
+
+![Video 17.](https://cdn.elifesciences.org/articles/61635/elife-61635-video17.mp4.jpg)
+
+**Video 17.:** Animation of pseudo-cells (resulting from a Voronoi tessellation based on the position of nuclei) where cells are colored based on their stripe, with intensity proportional to the measured eve MS2 fluorescence of the nucleus at the given time, and promoters in the ON and OFF states represented with light and dark gray pseudo-cell outlines, respectively.
+
+![Video 18.](https://cdn.elifesciences.org/articles/61635/elife-61635-video18.mp4.jpg)
+
+**Video 18.:** Animation of pseudo-cells (resulting from a Voronoi tessellation based on the position of nuclei) where cells are colored based on their stripe, with intensity proportional to the measured eve MS2 fluorescence of the nucleus at the given time, and promoters in the ON and OFF states represented with light and dark gray pseudo-cell outlines, respectively.
+
+![Video 19.](https://cdn.elifesciences.org/articles/61635/elife-61635-video19.mp4.jpg)
+
+**Video 19.:** Animation of pseudo-cells (resulting from a Voronoi tessellation based on the position of nuclei) where cells are colored based on their stripe, with intensity proportional to the measured eve MS2 fluorescence of the nucleus at the given time, and promoters in the ON and OFF states represented with light and dark gray pseudo-cell outlines, respectively.
+
+![Video 20.](https://cdn.elifesciences.org/articles/61635/elife-61635-video20.mp4.jpg)
+
+**Video 20.:** Animation of pseudo-cells (resulting from a Voronoi tessellation based on the position of nuclei) where cells are colored based on their stripe, with intensity proportional to the measured eve MS2 fluorescence of the nucleus at the given time, and promoters in the ON and OFF states represented with light and dark gray pseudo-cell outlines, respectively.
+
+![Video 21.](https://cdn.elifesciences.org/articles/61635/elife-61635-video21.mp4.jpg)
+
+**Video 21.:** Animation of pseudo-cells (resulting from a Voronoi tessellation based on the position of nuclei) where cells are colored based on their stripe, with intensity proportional to the measured eve MS2 fluorescence of the nucleus at the given time, and promoters in the ON and OFF states represented with light and dark gray pseudo-cell outlines, respectively.
+
+![Video 22.](https://cdn.elifesciences.org/articles/61635/elife-61635-video22.mp4.jpg)
+
+**Video 22.:** Animation of pseudo-cells (resulting from a Voronoi tessellation based on the position of nuclei) where cells are colored based on their stripe, with intensity proportional to the measured eve MS2 fluorescence of the nucleus at the given time, and promoters in the ON and OFF states represented with light and dark gray pseudo-cell outlines, respectively.
+
+![Video 23.](https://cdn.elifesciences.org/articles/61635/elife-61635-video23.mp4.jpg)
+
+**Video 23.:** Animation of pseudo-cells (resulting from a Voronoi tessellation based on the position of nuclei) where cells are colored based on their stripe, with intensity proportional to the measured eve MS2 fluorescence of the nucleus at the given time, and promoters in the ON and OFF states represented with light and dark gray pseudo-cell outlines, respectively.
 
 We used a custom image processing pipeline (Garcia et al., 2013; Lammers et al., 2020) to identify nuclei, track fluorescent puncta and extract fluorescence intensities in each nucleus over time. The resulting data (Supplementary file 1) contains fluorescence traces from 2961 nuclei at an interpolated time interval of 20 s, representative examples of which are shown in Figure 3A.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/61635/elife-61635-fig3-v2.jpg)
 
-**Figure 3.:** even-skipped expression.(A) Fluorescence traces from two representative nuclei (particle ID = 1.0163 and 11.0448). (B) Average fluorescence over space and time showing stripe formation, modulation and movement. The time resolution along the y-axis is 20 s. The positions of nuclei along the x-axis were registered across movies based on the inferred position of stripe centers, and placed into bins of 1% embryo length, with the average fluorescence of all nuclei in each bin plotted. (A, shading corresponds to the error estimated based on the background fluorescence fluctuations as described in Garcia et al., 2013).
+**Figure 3.:** (A) Fluorescence traces from two representative nuclei (particle ID = 1.0163 and 11.0448). (B) Average fluorescence over space and time showing stripe formation, modulation and movement. The time resolution along the y-axis is 20 s. The positions of nuclei along the x-axis were registered across movies based on the inferred position of stripe centers, and placed into bins of 1% embryo length, with the average fluorescence of all nuclei in each bin plotted. (A, shading corresponds to the error estimated based on the background fluorescence fluctuations as described in Garcia et al., 2013).
 
 We first sought to reexamine the previously characterized temporal dynamics of stripe formation (Surkova et al., 2008; Fowlkes et al., 2008; Jiang et al., 2015; Ludwig et al., 2011) using the increased temporal resolution (relative to earlier analyses of fixed embryos and of slowly maturing fluorescent protein reporters) of these data (Figure 3B). Early imaging studies described eve as being expressed broadly in nc13 and early nc14 embryos before refining sequentially into four, then seven stripes (Macdonald et al., 1986; Frasch and Levine, 1987). Subsequent work with improved labeling and imaging techniques (Surkova et al., 2008; Fowlkes et al., 2008) revealed an initial phase with broad domains in the anterior and posterior, followed by the formation of stripes from within these broad domains and, eventually, amplification of the stripe pattern.
 
@@ -74,7 +261,7 @@ Although the full seven stripe pattern is not fully formed until around 25 min, 
 
 The positions of stripes 1–3 along the anterior-posterior (AP) axis are largely stable after they form, while stripes 4–6 show small anterior shifts. Stripe 7 makes a more dramatic movement towards the anterior, moving approximately 8% of egg-length, or around 40 μm from its initial location. The quantitative characterization of this stripe movement, the decoupling between stripes and nuclei, and the quantification of transcriptional bursting dynamics in each nucleus necessitated the development of a method, described below, to dynamically define the position of stripes throughout each movie.
 
-## Modeling and inference of promoter state
+### Modeling and inference of promoter state
 
 As expected, the fluorescence traces from individual nuclei show clear hallmarks of transcriptional bursting, with apparent stochastic fluctuations between states with low and high fluorescence output (Figure 3A). Following previous work in the field (Golding et al., 2005; Chubb et al., 2006; Zenklusen et al., 2008; Lionnet et al., 2011; Muramoto et al., 2012; Little et al., 2013; Xu et al., 2015; Lenstra et al., 2015; Fukaya et al., 2016; Desponds et al., 2016; Hendy et al., 2017; Zoller et al., 2018; Bothma et al., 2014; Paré et al., 2009; Lim et al., 2018), we model bursting as a simple Markovian process in which a promoter switches stochastically between an OFF and an ON state with rates kon and koff. When the promoter is in the ON state, we assume it loads polymerases continuously with a constant rate r (Figure 1A).
 
@@ -94,7 +281,7 @@ However, when given a fluorescence trace, it is not trivial to infer the promote
 
 The cpHMM thus accomplishes two aims central to treating these data in a more rigorous and biologically meaningful manner. First, it allows us to describe the bursting behavior of any set of nuclei in quantitative terms. Across all seven stripes, the model infers approximate kon koff values of 0.60 events per minute and an r of 67 AU per minute. And second, by providing a means to fit a sequence of ON and OFF states to the data from each nucleus, the cpHMM allows us to shift the focus in the analysis of individual traces from fluorescence, which only indirectly reflects the temporal behavior of a promoter, to the instantaneous promoter state (Figure 4D–F; see also Supplementary file 1 which the inferred promoter state for each nucleus at every time point and the corresponding modeled fluorescence intensity, and Videos 13–23).
 
-## Dynamic determination of stripe positions
+### Dynamic determination of stripe positions
 
 Before analyzing the data further we had to solve two practical problems. To compare the kinetic behavior of individual stripes, we had to determine which nuclei were in each stripe at every time point, a process complicated by the movement of stripes relative to both the embryo and nuclei. Further, to analyze the data in toto, we also had to register the 11 movies relative to each other and to the embryo.
 
@@ -110,9 +297,13 @@ Collectively these data represent an easy way to visualize and interpret kineti
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/61635/elife-61635-fig6-v2.jpg)
 
-**Figure 6.:** even-skipped stripe formation.(A) Inferred location of every transcriptional burst in all 11 movies as a function of time and where along the anterior-posterior axis (plotted as fraction of embryo length) each burst occurred. The size of the dot represents the duration of the burst. Collectively the data create a kinetic fingerprint of eve stripe formation. (B) Instantaneous fraction of nuclei in the transcriptionally active ON state as a function of time and position along the embryo.
+**Figure 6.:** (A) Inferred location of every transcriptional burst in all 11 movies as a function of time and where along the anterior-posterior axis (plotted as fraction of embryo length) each burst occurred. The size of the dot represents the duration of the burst. Collectively the data create a kinetic fingerprint of eve stripe formation. (B) Instantaneous fraction of nuclei in the transcriptionally active ON state as a function of time and position along the embryo.
 
-## Bursting dynamics of individual nuclei
+![Video 24.](https://cdn.elifesciences.org/articles/61635/elife-61635-video24.mp4.jpg)
+
+**Video 24.:** Nuclei are graphed at every time point at its registered AP (x-axis) and image y (y-axis) position when the cpHMM inferred that one copy (small circles) or two copies (large circles) of the promoter was in the ON state (see Figure 4B).
+
+### Bursting dynamics of individual nuclei
 
 We used the output of the cpHMM and registration process to examine the locations of transcriptional bursts along the AP axis and over time (Figure 6). The most striking feature is the almost complete lack of observable transcriptional bursts in the regions between stripes from 25 min into nc14, with the exception of the 5–6 interstripe which is discussed below (note that this is not an artifact of the movie alignment and orientation process, as this effect is seen clearly in individual movies). We took advantage of the fact that we were tracking bursts in individual nuclei in order to analyze the relationship between this absence of bursting in interstripe regions and the single-nucleus bursting behavior within stripes.
 
@@ -120,19 +311,27 @@ Stripes are defined by sharp spatial boundaries, with the transition between the
 
 To better understand how the low-bursting state in interstripes is established, we looked at the bursting history of the nuclei in these regions (Figure 7). The first feature we noticed was that most of the nuclei that ultimately form the interstripe were never detected to burst at any point in nc14 (Figure 7A,B). With the exception of the 5–6 interstripe, these never-ON nuclei effectively form the boundaries between stripes, as essentially every nucleus within each stripe bursts at some point during nc14 (Figure 7A,B).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/61635/elife-61635-fig7-v2.jpg)
+
+**Figure 7.:** (A) Fraction of nuclei bursting before time t as a function of position along the embryo. (B) Locations of new bursts (black dots) in space and time along with spatiotemporal traces of nuclei that are in the OFF state throughout nc14 (red lines). (C) Traces of nuclei positions over time (gray lines) from stripe 7 region of movie EVE_D6 with timepoints where new bursts initiated colored red to illustrate stripe movement relative to nuclei. (D) Difference in transcriptional activity as defined as the difference between the fraction of the time each nucleus is in the ON state in the subsequent 10 min minus the fraction of time the nucleus is in the ON state in the preceding 10 min. Positive values represent a nucleus turning on or increasing activity, while blue values indicate a nucleus turning off or decreasing activity.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/61635/elife-61635-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Traces of nuclei positions over time (gray lines) from all eleven movies with time points corresponding to transcriptional bursts annotated as in stripes colored red.
+
 The contrast in bursting history between stripes and interstripes is less pronounced in the posterior, where there are fewer such never-ON nuclei in the interstripe region (Figure 7B, notice the lower density of red single-nuclei tracks corresponding to never-ON nuclei). In order to reveal the source of this reduced number of never-ON nuclei in posterior interstripes, we analyzed their bursting history. Figure 7C shows the AP positions of the nuclei in one movie covering stripe seven as a function of time, with the period in which they are part of the stripe highlighted. Although the stripe is clearly present throughout this period, no nuclei remain a part of the stripe for the entirety of this 25 min period. As time progresses, nuclei at the posterior edge of stripe seven shift from an active state, in which the promoter stochastically alternates between the ON and OFF transcriptional states, to a quiescent state in which we observe no appreciable bursting. In contrast, nuclei just off the anterior edge of the stripe switch from a quiescent to an active state at roughly the same rate. This leads to a net overall anterior movement of the stripe, akin to treadmilling, at a velocity of approximately one percent of embryo length every three minutes.
 
 Consistent with Lim et al., 2018, the other stripes exhibit smaller and varied anterior shifts (Figure 7—figure supplement 1), but in every case the shift is associated with a similar coupled gain of active nuclei along the anterior edge and loss along the posterior edge. This effect is most clearly seen in Figure 7D, which shows, for each time point where a nucleus initiates a new burst, the difference in activity (defined as the difference between the fraction of the time the nucleus is in the ON state in the subsequent 10 min minus the fraction of the time the nucleus is in the ON state in the preceding 10 min). For all seven stripes there is a clear spatial pattern, with nuclei along the anterior edge of the stripe entering a bursting state and nuclei along the posterior edge becoming quiescent, indicating a movement of stripes relative to nuclei. Hence, stripe movement is associated with the dynamic switching of nuclei between active and quiescent states, and not just with the movement of nuclei themselves.
 
-## All seven eve stripes are created by the same regulation of bursting kinetics
+### All seven eve stripes are created by the same regulation of bursting kinetics
 
 We next turned to the questions of how the spatial pattern of nuclear transcriptional activity described above is produced by regulating bursting kinetics, and whether this regulation differs among the seven eve stripes. In principle, any pattern of transcriptional activity could be achieved by modulating the duration, separation and/or amplitude of bursts across space and time. For example, a stripe could be created by varying burst separation along the anterior-posterior axis, with nuclei in the stripe center having lower burst separation, and those outside the stripe having long periods without bursts, or no bursts at all. Alternatively, the same stripe could be created with uniform burst separation across nuclei, but elevated burst duration or amplitude within the stripe, or by modulating multiple parameters simultaneously.
 
-Ideally, we would like to have a measure of the bursting parameters governing the behavior of every nucleus. However, individual MS2 traces have too few time points to allow for accurate cpHMM inference of burst parameters at the single trace level. We therefore used the cpHMM to infer kon, koff, and r for groups of nuclei binned on their mean fluorescence output and stripe. The logic of the fluorescence binning was that, given that ⟨ fluorescence ⟩∝rkonkon+koff (Lammers et al., 2020), nuclei that have similar kon, koff, and r will have similar fluorescence outputs. Our inference shows that kon is very strongly regulated as a function of average fluorescence in a consistent manner across stripes (Figure 8A). In contrast, only a weak drop in koff is observed (Figure 8B). Finally, r also featured a strong upregulation as a function of average fluorescence across stripes (Figure 8C).
+Ideally, we would like to have a measure of the bursting parameters governing the behavior of every nucleus. However, individual MS2 traces have too few time points to allow for accurate cpHMM inference of burst parameters at the single trace level. We therefore used the cpHMM to infer kon, koff, and r for groups of nuclei binned on their mean fluorescence output and stripe. The logic of the fluorescence binning was that, given that $⟨fluorescence⟩∝r\frac{k_{on}}{k_{on}+k_{off}}$ (Lammers et al., 2020), nuclei that have similar kon, koff, and r will have similar fluorescence outputs. Our inference shows that kon is very strongly regulated as a function of average fluorescence in a consistent manner across stripes (Figure 8A). In contrast, only a weak drop in koff is observed (Figure 8B). Finally, r also featured a strong upregulation as a function of average fluorescence across stripes (Figure 8C).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/61635/elife-61635-fig8-v2.jpg)
 
-**Figure 8.:** even-skipped stripes.(A–C) cpHMM inference was carried over nuclei binned according to their average fluorescence value indicating that while (A) k and (onC) r are subject to the same regulation along all stripes, (B) k remains unchanged. Error bars are calculated by taking the standard deviation across cpHMM inference results for multiple bootstrapped samples of experimental data. (offD) Distribution of average nuclear fluorescence values along the AP axis. (E) Mean nuclear fluorescence values for each AP position together with the corresponding averaged and weighted bursting parameters.
+**Figure 8.:** (A–C) cpHMM inference was carried over nuclei binned according to their average fluorescence value indicating that while (A) kon and (C) r are subject to the same regulation along all stripes, (B) koff remains unchanged. Error bars are calculated by taking the standard deviation across cpHMM inference results for multiple bootstrapped samples of experimental data. (D) Distribution of average nuclear fluorescence values along the AP axis. (E) Mean nuclear fluorescence values for each AP position together with the corresponding averaged and weighted bursting parameters.
 
 As shown in Figure 8D, each stripe contains nuclei with a relatively wide range of average fluorescence values. In order to reveal the bursting parameters across the AP axis for each stripe, we averaged the single-cell bursting parameters determined in each stripe (Figure 8A–C) weighted by the relative number of nuclei in each fluorescence bin present at each position along the AP axis (Figure 8D). We find that the variation in bursting parameters observed as a function of average fluorescence largely echoes the modulation of fluorescence in space (Figure 8E). Specifically, while there is a subtle downregulation of koff within stripes, kon and r are significantly upregulated in the center of each stripe.
 
@@ -148,7 +347,7 @@ An alternative explanation for the observed commonalities in the control of burs
 
 In addition to this modulation of bursting, the fraction of nuclei that engage in transcription at any point in the nuclear cycle is higher in stripe centers than in interstripes. This regulation of the fraction of active nuclei, also seen in other genes (Garcia et al., 2013), seems to reside outside of the bursting framework. Such regulation, as well as the spatial modulation of the window of time over which bursting ensues, suggests the presence of multiple and overlapping modes of regulation that go beyond the control of bursting parameters and that can be as relevant for pattern formation (Lammers et al., 2020).
 
-## Stripe movement is driven primarily by expression flow
+### Stripe movement is driven primarily by expression flow
 
 Just as gene expression patterns are dynamic in time (Bothma et al., 2014), they are dynamic in space, resulting in the movement of expression domains throughout the embryo during development (Jaeger et al., 2004b; Keränen et al., 2006). The anterior movement of eve stripes during nc14 has been previously described (Keränen et al., 2006; Lim et al., 2018), and proposed to arise from a combination of nuclear movement (nuclear flow) and movement in the pattern of regulators (expression flow), especially repressors, which are known to shift anteriorly during nc14 as well (Jaeger et al., 2004b; Jaeger et al., 2004a). While Keränen et al., 2006 concluded that the relative contributions of these two forces were roughly equal, our data suggest that, especially in the posterior, expression flow dominates the anterior shift of the eve stripes.
 
@@ -160,7 +359,7 @@ We also note that the extent to which nuclear flow by itself would be expected t
 
 One open question relates to the temporal relationship between changes in the position of the repressor array that drives stripe position and the transcriptional output of the stripes. For example, the anterior shift of the stripes of eve as well as fushi tarazu has been proposed to originate, in part, from cross-repression between these two genes (Lim et al., 2018). Recent advances in the simultaneous monitoring of protein concentration and transcriptional output in living embryos should help answer this question in the near future (Bothma et al., 2018; Lammers et al., 2020).
 
-## Characterizing dynamic patterns demands dynamic measurements
+### Characterizing dynamic patterns demands dynamic measurements
 
 That gene expression is a fundamentally dynamic process is not new information. However, the tools we have had at our disposal to study gene expression so far have tended to emphasize its static features, down to the language we use to describe the transcriptional output of a gene. In textbooks and the scientific literature, eve has a gene expression pattern consisting of seven stripes. But, as some earlier work emphasized (Janssens et al., 2006), and we have directly visualized here, the transcriptional output of eve, rather than a single ‘pattern’ is a rapidly changing function of time and space: it is dynamic at many time scales and across space and nuclear positions. Indeed, at no point does eve approach anything even remotely like a steady state.
 
@@ -168,25 +367,25 @@ We are at the dawn of a new period in the study of transcription, as new experim
 
 ## Materials and methods
 
-## Generation of MS2 tagged eve BAC
+### Generation of MS2 tagged eve BAC
 
 We used bacterial recombineering (Warming et al., 2005) to modify a bacterial artificial chromosome (BAC) (Venken et al., 2006) containing the D. melanogaster eve gene and all of its enhancers and regulatory elements (BAC CH322-103K22) (Venken et al., 2009). We replaced the coding region with an array of 24 MS2 stem loops fused to the D. melanogaster yellow gene (Figure 1B; Bothma et al., 2014) as described below. We inserted our eve::MS2::yellow BAC-based construct in the D. melanogaster genome at chromosome 3L through ΦC31 integrase-mediated recombination (see Generation of fly lines), and generated a viable homozygous fly line (w-; +; eve::MS2::yellow) as detailed below.
 
-## Reporter design
+### Reporter design
 
 In principle the length of the reporter should not limit our ability to estimate burst parameters. However, in practice a reporter construct that is too short will have insufficient signal. Further, one that is too long will increase the dwell time of each RNA polymerase molecule on the gene and, as a result, our cpHMM inference will require too many computational resources. Our choice of reporter construct structure strikes a balance between these two limitations and is ideally suited for inferring bursting parameters in the time range where eve resides, as well as for boosting the signal-to-noise ratio. See Lammers et al., 2020 for a more detailed discussion of reporter length-related tradeoffs.
 
-## Specifics of recombineering
+### Specifics of recombineering
 
 We modified a CHORI BAC CH322-103K22 derived from Venken et al., 2009, which contained the entire eve locus and a GFP reporter instead of the eve coding sequence (CH322-103K22-GFP). We replaced the GFP reporter with MS2::yellow (total insert size, 6665 bp) through a two step, scarless, galK cassette-mediated bacterial recombineering (Warming et al., 2005). Briefly, we transformed our starting CH322-103K22-GFP BAC into E. coli recombineering strain SW102. We then electroporated the strain with a galK cassette flanked by 50bp-long DNA homology arms homologous to the MS2::yellow (6665 bp) reporter. Upon electroporation, we selected transformants on M63 minimal media plates with galactose as a single carbon source. We achieved a correct replacement of GFP sequence by galK cassette in the BAC context (CH322-103K22-galK), validated by observing the digestion patterns produced by ApaLI restriction enzyme.
 
 We next purified the CH322-103K22-galK BAC and transformed it into fresh E. coli SW102 cells. We electroporated these cells with the purified MS2::yellow insert and used M63 minimal media plates with 2-deoxy-galactose to select against bacteria with a functional galK gene. We used colony PCR to screen for colonies with a correct MS2::yellow insertion (CH322-103K22-MS2) replacing the galK cassette. We validated this insertion by observing ApaLI, XhoI, SmaI, and EcoRI restriction digestion patterns and through PCR and Sanger sequencing of the insertion junctions. We transformed our CH322-103K22-MS2 BAC in E.coli EPI300 cells to induce high copy numbers and purified it with a Qiagen plasmid Midiprep kit.
 
-## Generation of fly lines
+### Generation of fly lines
 
 We sent a sample of our purified CH322-103K22-MS2 BAC to Rainbow Transgenic Flies, Inc for injection in D. melanogaster embryos bearing a ΦC31 AttP insertion site in chromosome 3L (Bloomington stock #24871; landing site VK00033; cytological location 65B2). We received the flies that resulted from that injection and used a balancer fly line (w-; +; +/TM3sb) to obtain a viable MS2 homozygous line (w-; +; MS2::yellow). We used line (yw; His::RFP; MCP::GFP) as the maternal source of Histone-RFP and MCP-GFP (Garcia et al., 2013).
 
-## Embryo collection and mounting
+### Embryo collection and mounting
 
 Embryo collection and mounting was done as specified in Garcia and Gregor, 2018. In short, we set fly crosses between ~30 males (w-; +; eve::MS2::yellow) and ~80 females (yw; His::RFP; MCP::GFP) in a plastic cage capped with a grape juice agar plate. We collected embryos from cages two to ten days old by adding a fresh plate for 30 min and aging for 60 min to target embryos 90 min or younger.
 
@@ -196,33 +395,33 @@ We soaked an agar plate with Halocarbon 27 oil, picked embryos with forceps, and
 
 We lined ~ 30 apparently healthy embryos on the Lumox film slide and added 2–3 drops of Halocarbon 27 oil to avoid desiccation, and covered the embryos with a cover slip (Corning Cover Glass, No. 1, 18 × 18 mm) for live imaging.
 
-## Imaging and optimization of data collection
+### Imaging and optimization of data collection
 
 Movies of embryonic development were recorded on a Zeiss-800 confocal laser-scanning microscope in two channels, (EGFP: 488 nm; TagRFP: 561 nm). We imaged embryos on a wide field of view, along their anterior-posterior axis, of 1024 × 256 pixels (202.8 x 50.7 µm), encompassing 3–5 stripes per movie. We tuned laser power, scanning parameters, master gain, pinhole size and laser power to optimize signal-to-noise ratio without significant photobleaching and phototoxicity.
 
 For imaging, the following microscope settings were used: 63x oil-objective, scan mode ‘frame’, pixel size of 0.2 µm, 16 bits per pixel, bidirectional scanning at a speed of 7, line step of 1, laser scanner dwelling per pixel of 1.03 µs, laser scanner averaging of 2, averaging method Mean, averaging mode Line, 488 nm laser power of 30 µW (EGFP), 561 nm laser power of 7.5µW (TagRFP) (both powers were measured with a 10x air-objective), Master Gain in EGFP detector of 550V, Master Gain in TagRFP detector of 650V, Digital Offset in both detectors of 0, Digital Gain in both detectors of 1.0, and a pinhole size of 1 airy unit under the imaging conditions mentioned above (44, 0.7 µm/section), laser filters EGFP:SP545 and TagRFP:LBF640. This resulted in an imaging time of 633 ms per frame and a full Z-stack of 21 frames in intervals of 0.5 µm every 16.8 s. Following (Bothma et al., 2014; Bothma et al., 2015; Bothma et al., 2018; Lammers et al., 2020), the imaging conditions were determined not to affect normal development as reported by the timing of the nuclear cycles in early development. We stopped imaging after 50 min into nuclear cycle 14, and took mid-sagittal and surface pictures of the whole embryo for localization of the recorded field of view along the embryo’s AP axis.
 
-## Image processing
+### Image processing
 
 We used a Matlab computational pipeline based on Garcia et al., 2013; Lammers et al., 2020 to segment and extract numeric data from our raw movies. Briefly, this software segments and processes the images from the two channels (channel 1: MCP::GFP, channel 2: Histone::RFP) on which we collected our data. For segmentation of channel 1, we used Fiji-Weka Segmentation 3D software; this machine-learning-based method relies on the manual segmentation of a variety of MCP::GFP labeled transcriptional foci in a given 21 frame Z-stack from a single dataset (EVE_D11) to produce a model for the segmentation of all datasets recorded under the same imaging conditions. Next, we segmented and tracked the Histone::RFP-labeled nuclei on channel 2. Subsequently, we assigned MCP::GFP labeled transcriptional foci to their corresponding Histone::RFP-labeled nuclei. Since we collected whole embryo pictures of each of our datasets, we were able to match and locate the recorded fields of view to their right position along the body of their corresponding embryos. Finally, we extracted position and fluorescence values over time of all transcriptional foci to generate data structures ready to use in further analyses.
 
-## Estimation of polymerase transit time
+### Estimation of polymerase transit time
 
 To estimate the transit time of the polymerase along the construct (which is used to determine the persistence of the fluorescence signal from a single transcript at the locus) we first calculated, for each nucleus, the difference in fluorescence signal between adjacent timepoints Dn,t = Fn,t+1 - Fn,t where Fn,t is the fluorescence signal for nucleus n at time point t and then calculated the Pearson correlation coefficient of the vectors [..., Dn,t, Dn,t+1, Dn,t+2,. ..] and [..., Dn,t+d, Dn,t+d+1, Dn,t+d+2,. ..] over values of d from 1 to 20 representing time displacements of 20 to 400 s. The minimum correlation occurred at 140 s.
 
-## Compound-state hidden Markov Model
+### Compound-state hidden Markov Model
 
 For this work we employed a statistical method that utilizes a compound-state hidden Markov Model to infer bursting parameters from experimental fluorescence traces. The theory and implementation of this method are described in detail in Lammers et al., 2020. Briefly, parameters were inferred using a standard version of the Expectation Maximization Algorithm implemented using custom-written scripts in Matlab. Our inference is carried over the full duration of activity of each active nucleus during nuclear cycle 14. Bootstrap sampling was used to estimate the standard error in our parameter estimates. Subsets of 3000 data points were used to generate time-averaged parameter estimates. Inference was not conducted for groups for which fewer than 1000 time points were available.
 
-## Data analysis and figures
+### Data analysis and figures
 
 All data were analyzed in Python using a Jupyter notebook with custom code to process raw data and generate figures. The Jupyter notebook and all data required to run it is available in Supplementary file 1 and at (https://github.com/mbeisen/Berrocal_2020; Berrocal, 2020; copy archived at swh:1:rev:d983098bd5183f9907d633c425f80b2cb5282a8b).
 
-## Data filtering
+### Data filtering
 
 We first filtered the raw data to remove data with observations spanning less than 2,000 s, as well as nuclei that were poorly tracked over time defined as nuclei that moved across the movies at an average rate of over 4.5 pixels per minute. This left 430,073 observations from 2959 nuclei.
 
-## Stripe assignment and registration
+### Stripe assignment and registration
 
 We used the Gaussian mixture model module of the Python library scikit-learn (Pedregosa et al., 2011) to cluster all nuclei time points in each movie in each of a series of overlapping 428 s time windows beginning at 25 min in nc14, specifying the number of components equal to the number of stripes captured in the movie and using the setting covariance_type='tied'. We preliminarily assigned nuclei time points to a stripe if they were consistently clustered in that stripe in the relevant time windows. We then pooled all nuclei time points assigned to the same stripe and fit a line to the median x and y positions in the bottom (y < 128) and top (y > 128) halves of the image. We considered the slope of this line to represent the orientation of the stripe to the image x-axis. We then went back to each time window and fit the nuclei assigned to the stripe with a line with the previously computed slope fixed. This produced an association of time with stripe position, from which we derived a linear model that describes the position of each stripe in each movie at every time point.
 

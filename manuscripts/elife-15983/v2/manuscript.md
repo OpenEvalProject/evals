@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.15983.001 Collective migration is a complex process that contributes to build precise tissue and organ architecture. Several molecules implicated in cell interactions also control collective migration, but their precise role and the finely tuned expression that orchestrates this complex developmental process are poorly understood. Here, we show that the timely and threshold expression of the Netrin receptor Frazzled triggers the initiation of glia migration in the developing Drosophila wing. Frazzled expression is induced by the transcription factor Glide/Gcm in a dose-dependent manner. Thus, the glial determinant also regulates the efficiency of collective migration. NetrinB but not NetrinA serves as a chemoattractant and Unc5 contributes as a repellant Netrin receptor for glia migration. Our model includes strict spatial localization of a ligand, a cell autonomously acting receptor and a fate determinant that act coordinately to direct glia toward their final destination. DOI: http://dx.doi.org/10.7554/eLife.15983.001
+Collective migration is a complex process that contributes to build precise tissue and organ architecture. Several molecules implicated in cell interactions also control collective migration, but their precise role and the finely tuned expression that orchestrates this complex developmental process are poorly understood. Here, we show that the timely and threshold expression of the Netrin receptor Frazzled triggers the initiation of glia migration in the developing Drosophila wing. Frazzled expression is induced by the transcription factor Glide/Gcm in a dose-dependent manner. Thus, the glial determinant also regulates the efficiency of collective migration. NetrinB but not NetrinA serves as a chemoattractant and Unc5 contributes as a repellant Netrin receptor for glia migration. Our model includes strict spatial localization of a ligand, a cell autonomously acting receptor and a fate determinant that act coordinately to direct glia toward their final destination.
 
 ## Introduction
 
@@ -31,45 +31,45 @@ We show that only one of the two Drosophila Netrins, NetB, serves as a chemoattr
 
 ## Results
 
-## Frazzled expression in the glia of the developing Drosophila wing
+### Frazzled expression in the glia of the developing Drosophila wing
 
 Fly wings are innervated by two major sensory nerves that navigate along the so-called L1 vein located at the anterior margin (L1 nerve) and along the L3 vein (L3 nerve) (Figure 1a–d). Glial cells originating from the sensory organ precursors (SOPs) present on the anterior margin migrate proximally, i.e. toward the central nervous system (CNS) following the axon bundle and ensheathing it throughout its length. L1 glia initiate migration at around 18 hr After Puparium Formation (hAPF), reach the level of the Costal nerve at around 22–24 hAPF and join the glial cells on the Radius by 28 hAPF. The migratory process has been accordingly subdivided into three steps: ‘Initiation’, ‘Costa reach’ and ‘Complete migration’ (Figure 1a–c).
 
-To gain insight into the molecular pathway that triggers collective glia migration, we first examined the expression of the Fra chemoattractant receptor by using the pan glial lines
+To gain insight into the molecular pathway that triggers collective glia migration, we first examined the expression of the Fra chemoattractant receptor by using the pan glial lines repo-Gal4 UAS-PH-GFP (henceforth repo>GFP) or gcm-Gal4 UAS-CD8-GFP (gcm>GFP), which label the glial membranes. Fra is detected in glia at the time these cells begin to move as well as in the underlying axons (Figure 1e–g’’, Figure 1—figure supplement 1a–c, g). The Fra protein seems to be evenly distributed along the L1 glial chain (Figure 1—figure supplement 1d–g). We confirmed these data using the CoinFLP technique (Bosch et al., 2015) to generate WT and fra knock down clones (KD), obtained by means of the UAS-fra-RNAi line, within the same wing (Figure 1h, i). The WT clones covering glia along the L1 nerve and surrounding cells show expression of Fra (GFP-expressing cells in Figure 1k–k’’’), whereas Fra levels are considerably reduced in the glia and in the surrounding cells within the KD clones (RFP expressing cells in Figure 1j–j’’’). Glia can be identified by the expression of the pan glial marker Repo (WT glia are Repo/GFP positive, whereas fra KD glia are Repo/RFP positive).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig1-v2.jpg)
 
-**Figure 1.:** (a–c) Immunolabeled repo>GFP wing (glia in green: anti-GFP; neurons in red: anti-22c10) at different stages. (a) Initiation of migration, (b) reaching the level of the costa, and (c) migration completion. (d) Schematic of a 18 hAPF developing Drosophila wing, insets indicate the regions shown in panels (e–f’’’’’) and panels (i–k’’’). L1 and L3 indicate L1 and L3 nerves. (e–e’’’’’) gcm>GFP/+ 18 hAPF wing immunolabeled with anti-22c10 (red), anti-Fra (gray) and anti-GFP (green). mCD8-GFP was used to label the membrane. (f–g’’) 18 hAPF repo>GFP/+ wing, immunolabeled with anti-22c10 (neurons in red), anti-Fra (gray) and anti-GFP (glia in green). (e–g’’) The presence of Fra in the glial soma (white arrowheads) at the front of migration. The position of the high-magnification panels (g–g”) is highlighted by the white rectangle in (f). Maximum confocal projections are shown in all figures, unless otherwise specified. White arrowheads indicate the glial cells that are expressing Fra. (h) Schematic representations of the coinFLP technique (modified from Bosch et al. (2015); and the phenotypes of the different cells. (i–k’’’) Immunolabeled Fra KD/WT-coinFLP wing at 18 hAPF. The WT clones display GFP labeling at the membranes (anti-GFP), the fra KD clones display RFP labeling at the membranes (anti-RFP); glial nuclei are labelled with anti-Repo in red and anti-Fra is in gray. (i) A projection of 10 confocal sections from a 18 hAPF wing. The arrowheads indicate glial cells and the white lines outline the L1 nerve. (j–k’’’) Individual sections: (j–j’’’) represents section 2/10; (k–k’’’) represents section 5/10, which corresponds to a deeper layer than section 2/10. (j, k) The overlay of the three channels (anti-RFP/Repo, anti-GFP and anti-Fra), (j’, k’) show anti-GFP alone, (j’’,k’’) anti-Fra and (j’’’, k’’’) the overlay of anti-RFP/Repo and anti-Fra. Glial cells are indicated by white arrowheads, the dashed lines indicate the fra KD clones and the continuous lines indicate the WT clones. For technical reasons, RFP (membrane labeling) and Repo (nuclear labeling) are shown in the same channel. Note the decrease in Fra levels in the fra KD clones. The scale bar in (a–c) represents 80 µm, in (e–f) 10 µm and in (i–k) 5 µm.DOI: http://dx.doi.org/10.7554/eLife.15983.002
+**Figure 1.:** (a–c) Immunolabeled repo>GFP wing (glia in green: anti-GFP; neurons in red: anti-22c10) at different stages. (a) Initiation of migration, (b) reaching the level of the costa, and (c) migration completion. (d) Schematic of a 18 hAPF developing Drosophila wing, insets indicate the regions shown in panels (e–f’’’’’) and panels (i–k’’’). L1 and L3 indicate L1 and L3 nerves. (e–e’’’’’) gcm>GFP/+ 18 hAPF wing immunolabeled with anti-22c10 (red), anti-Fra (gray) and anti-GFP (green). mCD8-GFP was used to label the membrane. (f–g’’) 18 hAPF repo>GFP/+ wing, immunolabeled with anti-22c10 (neurons in red), anti-Fra (gray) and anti-GFP (glia in green). (e–g’’) The presence of Fra in the glial soma (white arrowheads) at the front of migration. The position of the high-magnification panels (g–g”) is highlighted by the white rectangle in (f). Maximum confocal projections are shown in all figures, unless otherwise specified. White arrowheads indicate the glial cells that are expressing Fra. (h) Schematic representations of the coinFLP technique (modified from Bosch et al. (2015); and the phenotypes of the different cells. (i–k’’’) Immunolabeled Fra KD/WT-coinFLP wing at 18 hAPF. The WT clones display GFP labeling at the membranes (anti-GFP), the fra KD clones display RFP labeling at the membranes (anti-RFP); glial nuclei are labelled with anti-Repo in red and anti-Fra is in gray. (i) A projection of 10 confocal sections from a 18 hAPF wing. The arrowheads indicate glial cells and the white lines outline the L1 nerve. (j–k’’’) Individual sections: (j–j’’’) represents section 2/10; (k–k’’’) represents section 5/10, which corresponds to a deeper layer than section 2/10. (j, k) The overlay of the three channels (anti-RFP/Repo, anti-GFP and anti-Fra), (j’, k’) show anti-GFP alone, (j’’,k’’) anti-Fra and (j’’’, k’’’) the overlay of anti-RFP/Repo and anti-Fra. Glial cells are indicated by white arrowheads, the dashed lines indicate the fra KD clones and the continuous lines indicate the WT clones. For technical reasons, RFP (membrane labeling) and Repo (nuclear labeling) are shown in the same channel. Note the decrease in Fra levels in the fra KD clones. The scale bar in (a–c) represents 80 µm, in (e–f) 10 µm and in (i–k) 5 µm.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (a–f) 18 hAPF repo>GFP/+ wing, immunolabeled with anti-22c10 (neurons in red), anti-Fra (gray) and anti-GFP (glia in green) shows the presence of Fra in the glial soma (white arrowheads) at the front of migration (a-–c) and along the L1 nerve (d–f). Please note that (a–c) are comprised of a few sections rather than maximum confocal projections. (g) Schematic of a wing, the blue rectangle indicates the region shown in (a–c), the magenta one, the region shown in (d–f). Scale bars: (a–f), 10 μm.DOI: http://dx.doi.org/10.7554/eLife.15983.003
+**Figure 1—figure supplement 1.:** (a–f) 18 hAPF repo>GFP/+ wing, immunolabeled with anti-22c10 (neurons in red), anti-Fra (gray) and anti-GFP (glia in green) shows the presence of Fra in the glial soma (white arrowheads) at the front of migration (a-–c) and along the L1 nerve (d–f). Please note that (a–c) are comprised of a few sections rather than maximum confocal projections. (g) Schematic of a wing, the blue rectangle indicates the region shown in (a–c), the magenta one, the region shown in (d–f). Scale bars: (a–f), 10 μm.
 
 Thus, migrating glial cells of the peripheral nervous system (PNS) express Fra.
 
-Next, we studied the impact of Fra on glia migration using the semiquantitative approach described by
+Next, we studied the impact of Fra on glia migration using the semiquantitative approach described by Kumar et al.(2015). In short, we assessed the percentage of wings displaying complete glia migration at 28 hAPF (migratory index: MI), as an estimation of migration efficiency (Kumar et al., 2015). For each genotype, at least 30 wings were analyzed. We first focused on the most characterized loss-of-function (LOF) allele fra3 (Kolodziej et al., 1996). As this mutation is embryonic lethal in homozygous conditions, we analyzed fra3 heterozygous wings and found incomplete L1 glia migration in a significant fraction of samples, as shown by the position of the glial nuclei (Figure 2a–c). The number of glial cells is not affected and hence cannot be the cause of the migratory defect (Figure 2d). We reasoned that nuclei may not migrate properly, but that glial processes may still reach the final destination. To test this possibility, we assessed the migratory index of glial cells labelled by the >GFP transgene, which allowed us to visualize glial processes in flies that were heterozygous for the .. These wings also show incomplete glia migration as shown by the position of glial GFP labeling (Figure 2e–g) suggesting that glial cells require Fra to complete their migration.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig2-v2.jpg)
 
-**Figure 2.:** (a, b) 28 hAPF wings labeled with anti-Repo (glial nuclei): (a) WT wing showing complete migration;(b) fra wing showing incomplete migration (dashed box). (3/+c) Histogram representing the migratory index (MI) of the indicated genotypes, calculated using nuclear labeling (anti-Repo). The MI indicates the percentage of wings displaying complete migration (i.e. in which the glial chain reaches the proximally located glia on the Radius nerve) and was assessed at 28 hAPF unless otherwise specified. (d) Histogram representing the number of glial nuclei in the indicated genotypes. (e) Histogram representing the MI of the indicated genotypes. The MI was calculated using the membrane GFP transgenic line (UAS-mCD8-GFP). (f, g) 28 hAPF wings labeled with anti-GFP (glial processes): (f) repo>GFP wing showing complete migration; (g) repo>GFP/fra wing showing incomplete migration (dashed box). In this and in the following figures, stars indicate p values: ***p<0.0001; **p<0.001; *p3/+<0.05. Bars indicate the s.e.m. In this and in the following graphs on fixed wings, n≥30. Scale bars: 80 μm.DOI: http://dx.doi.org/10.7554/eLife.15983.00410.7554/eLife.15983.005Figure 2—source data 1.fra wings in WT background.3This file contains underlying raw data for Figure 2.DOI: http://dx.doi.org/10.7554/eLife.15983.005
+**Figure 2.:** (a, b) 28 hAPF wings labeled with anti-Repo (glial nuclei): (a) WT wing showing complete migration;(b) fra3/+ wing showing incomplete migration (dashed box). (c) Histogram representing the migratory index (MI) of the indicated genotypes, calculated using nuclear labeling (anti-Repo). The MI indicates the percentage of wings displaying complete migration (i.e. in which the glial chain reaches the proximally located glia on the Radius nerve) and was assessed at 28 hAPF unless otherwise specified. (d) Histogram representing the number of glial nuclei in the indicated genotypes. (e) Histogram representing the MI of the indicated genotypes. The MI was calculated using the membrane GFP transgenic line (UAS-mCD8-GFP). (f, g) 28 hAPF wings labeled with anti-GFP (glial processes): (f) repo>GFP wing showing complete migration; (g) repo>GFP/fra3/+ wing showing incomplete migration (dashed box). In this and in the following figures, stars indicate p values: ***p<0.0001; **p<0.001; *p<0.05. Bars indicate the s.e.m. In this and in the following graphs on fixed wings, n≥30. Scale bars: 80 μm.
 
 In summary, the Fra receptor is expressed in glial cells and is seemingly necessary for their efficient migration.
 
-## fra plays an instructive role in L1 glia migration
+### fra plays an instructive role in L1 glia migration
 
-The lethality of
+The lethality of fra3homozygous mutation and the expression of Fra in glia as well as in neurons prompted us to assess the role of glial fra expression in migration specifically. The knock down of fra using the gcm>GFP driver, which is the earliest glial driver, reveals a significant decrease in migration efficiency as compared to that observed in the control wings (Figure 3a, compare blank and light blue columns). To exclude the possibility of off-target effects, we analyzed wings that express the UAS-fra-RNAi together with the UAS-fra transgene, and found complete rescue of the migratory phenotype induced by the fra KD (Figure 3a, patterned light and dark blue column). This strongly suggests that the RNAi line induces a specific phenotype and that fra acts in a cell autonomous manner. Finally, as a complementary approach, we reintroduced fra expression only in the glial cells of fra3/+ animals (Figure 3—figure supplement 1a), and found that this rescues the migratory phenotype, albeit partially. Given the high levels of Fra expression in the gcm>fra GOF wings (Figure 3g–g’’’’), it is unlikely that this partial rescue is due to suboptimal levels of Fra. Rather, the lack of total rescue may be ascribed to the neuronal requirement of Fra. Figure 1e–f’’’’’ shows that Fra is expressed in glia as well as in neurons, and indeed around one third of fra3/+ wings show an axonal navigation phenotype (Figure 3—figure supplement 1b–d). In these wings, axonal navigation is delayed, which may indirectly affect glial migration. To further check the role of Fra neuronal expression in glia migration, we used a driver that is expressed specifically in the L1 neurons: nsyb-Gal4 (West et al., 2015; Pauli et al., 2008; Riabinina et al., 2015). nsyb-driven expression starts to be detected around 18 hAPF; but the expression is more prominent at 22 hAPF and onwards (Figure 3—figure supplement 1f–h”). We then knocked down fra specifically in neurons using nsyb-Gal4 and found no delayed glia migration (Figure 3—figure supplement 1i), except in one third of the wings, which present an axonal navigation defect (not shown). This is in line with the above-mentioned fra3/+ data and with previous data showing that axon navigation defects indirectly affect glia migration (Giangrande et al., 1993).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig3-v2.jpg)
 
-**Figure 3.:** (a–b) Histogram representing the MI upon fra knock down (fra KD) or overexpression (fra GOF) using the gcm>GFP/+ line. In (b), the MI was calculated at 24 hAPF. The MI was calculated using the membrane GFP transgenic line. c–c’”’, e–e’”’ and g–g’”’ Expression profiles of Fra in gcm>GFP/+, gcm>fra KD and gcm>fra GOF animals at 24 hAPF. For the sake of consistency, in all genotypes, we show the glial cells that are at the front of the chain. Note the reduced protein levels in gcm>fra KD (e–e’”’) and enhanced levels in gcm>fra GOF animals (g–g’”’) as compared to those found in gcm>GFP/+ animals (c–c’”’). (d, f and h) Wing schematics, boxes indicate the regions shown in the above, high-magnification panels. (i) Graphical representation of the migratory behavior of gcm>GFP/+, gcm>fra KD and gcm>fra GOF wings during three highlighted phases: initiation, costa reach and complete migration (n=10). (j, k) Snapshots from a 21:48 hAPF time-lapse analysis of gcm>GFP/+ and gcm>fra GOF wings. This corresponds to the time by which most control L1 glia (gcm>GFP/+) have reached the level of the Costa (white line) (j), whereas L1 glia overexpressing Gcm (gcm>fra GOF) have already completed migration by that time (white arrow) (k). The two panels show representative samples. (l–o”) Expression profiles of Fra in gcm>GFP/+ and gcm>fra GOF animals at 15 hAPF. See the enhanced protein levels in gcm>fra GOF animals (n–o”) as compared to those found in gcm>GFP/+ animals (l–m”). The position of the high-magnification panels (m–m”) is highlighted by the dashed white rectangle in (l), whereas that of panels (o–o”) is highlighted in (n). Please note that (l–o”) are comprised of few a sections rather than maximum confocal projections. Scale bars: (c–g’”’), (j–o”), 10 μm.DOI: http://dx.doi.org/10.7554/eLife.15983.00610.7554/eLife.15983.007Figure 3—source data 1.fra conditional mutants in the gcm>GFP/+ background.This file contains underlying raw data for Figure 3.DOI: http://dx.doi.org/10.7554/eLife.15983.007
+**Figure 3.:** (a–b) Histogram representing the MI upon fra knock down (fra KD) or overexpression (fra GOF) using the gcm>GFP/+ line. In (b), the MI was calculated at 24 hAPF. The MI was calculated using the membrane GFP transgenic line. c–c’”’, e–e’”’ and g–g’”’ Expression profiles of Fra in gcm>GFP/+, gcm>fra KD and gcm>fra GOF animals at 24 hAPF. For the sake of consistency, in all genotypes, we show the glial cells that are at the front of the chain. Note the reduced protein levels in gcm>fra KD (e–e’”’) and enhanced levels in gcm>fra GOF animals (g–g’”’) as compared to those found in gcm>GFP/+ animals (c–c’”’). (d, f and h) Wing schematics, boxes indicate the regions shown in the above, high-magnification panels. (i) Graphical representation of the migratory behavior of gcm>GFP/+, gcm>fra KD and gcm>fra GOF wings during three highlighted phases: initiation, costa reach and complete migration (n=10). (j, k) Snapshots from a 21:48 hAPF time-lapse analysis of gcm>GFP/+ and gcm>fra GOF wings. This corresponds to the time by which most control L1 glia (gcm>GFP/+) have reached the level of the Costa (white line) (j), whereas L1 glia overexpressing Gcm (gcm>fra GOF) have already completed migration by that time (white arrow) (k). The two panels show representative samples. (l–o”) Expression profiles of Fra in gcm>GFP/+ and gcm>fra GOF animals at 15 hAPF. See the enhanced protein levels in gcm>fra GOF animals (n–o”) as compared to those found in gcm>GFP/+ animals (l–m”). The position of the high-magnification panels (m–m”) is highlighted by the dashed white rectangle in (l), whereas that of panels (o–o”) is highlighted in (n). Please note that (l–o”) are comprised of few a sections rather than maximum confocal projections. Scale bars: (c–g’”’), (j–o”), 10 μm.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** frazzled mutation.(a) Histogram representing the MI of the indicated genotypes, calculated using the membrane GFP transgenic line (UAS-mCD8-GFP). (b) Histogram showing the percentage of wings with axonal delay in gcm>GFP/+ (0%) and gcm/fra LOF (30%) 17 hAPF wings. (c) 17 hAPF control wing displaying normal axonal navigation. (d) Delayed axon bundle (asterisk) in a gcm/fra LOF wing at 17 hAPF. (e) Box plot showing the raw data, the mean and the standard errors for the three migratory phases in the indicated genotypes. Asterisks indicate the p values. (f–g’’’) Expression of nsyb>GFP at 22 and 28 hAPF: anti-HRP was used as a neuronal marker. (f–f’’’) are composite images. (h–h”) Blow up of the region indicated by white square in panel (g) shows lack of colocalization for the GFP (neuronal) and the Repo (nuclear) labeling. Note that the GFP is targeted to the Golgi in this transgenic line. (i) Histogram representing the MI of the indicated genotypes, calculated by nuclear labeling (anti-Repo). Scale bar: (c, d), 30 μm, (f, m), 80 μm.DOI: http://dx.doi.org/10.7554/eLife.15983.00810.7554/eLife.15983.009Figure 3—figure supplement 1—source data 1.gcm and fra in different transheterozygote combinations.This file contains underlying source data for Figure 3—figure supplement 1 and 2.DOI: http://dx.doi.org/10.7554/eLife.15983.009
+**Figure 3—figure supplement 1.:** (a) Histogram representing the MI of the indicated genotypes, calculated using the membrane GFP transgenic line (UAS-mCD8-GFP). (b) Histogram showing the percentage of wings with axonal delay in gcm>GFP/+ (0%) and gcm/fra LOF (30%) 17 hAPF wings. (c) 17 hAPF control wing displaying normal axonal navigation. (d) Delayed axon bundle (asterisk) in a gcm/fra LOF wing at 17 hAPF. (e) Box plot showing the raw data, the mean and the standard errors for the three migratory phases in the indicated genotypes. Asterisks indicate the p values. (f–g’’’) Expression of nsyb>GFP at 22 and 28 hAPF: anti-HRP was used as a neuronal marker. (f–f’’’) are composite images. (h–h”) Blow up of the region indicated by white square in panel (g) shows lack of colocalization for the GFP (neuronal) and the Repo (nuclear) labeling. Note that the GFP is targeted to the Golgi in this transgenic line. (i) Histogram representing the MI of the indicated genotypes, calculated by nuclear labeling (anti-Repo). Scale bar: (c, d), 30 μm, (f, m), 80 μm.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** gcm and fra in glia migration.(a) Graph showing the speed of the most-proximal glial cell of the chain (μm/h, y-axis; hAPF, x-axis) in gcm>GFP/+ and in gcm>fra GOF glia. The distance covered by the front cell is measured by analyzing the position of the glial soma. Please note that migration initiation in gcm>fra GOF wings takes place earlier than in gcm>GFP/+ wings. Reaching the level of the costa (black vs. blue arrowhead) and completion of migration (red vs. pink arrowhead) also occur earlier in the Gcm-overexpressing wings than in the control wings. (b) Histogram showing the migratory index of mutants of the indicated genotypes, calculated by nuclear labeling (anti-Repo). (c) Histogram representing the MI of the indicated genotypes, calculated by nuclear labeling. This figure relates to both Figure 3 and Figure 4.DOI: http://dx.doi.org/10.7554/eLife.15983.010
+**Figure 3—figure supplement 2.:** (a) Graph showing the speed of the most-proximal glial cell of the chain (μm/h, y-axis; hAPF, x-axis) in gcm>GFP/+ and in gcm>fra GOF glia. The distance covered by the front cell is measured by analyzing the position of the glial soma. Please note that migration initiation in gcm>fra GOF wings takes place earlier than in gcm>GFP/+ wings. Reaching the level of the costa (black vs. blue arrowhead) and completion of migration (red vs. pink arrowhead) also occur earlier in the Gcm-overexpressing wings than in the control wings. (b) Histogram showing the migratory index of mutants of the indicated genotypes, calculated by nuclear labeling (anti-Repo). (c) Histogram representing the MI of the indicated genotypes, calculated by nuclear labeling. This figure relates to both Figure 3 and Figure 4.
 
 We then asked whether Fra has an instructive role in glia migration and assessed whether migration is more efficient upon overexpressing fra in glia using the gcm-Gal4 driver (in fra GOF lines). We first checked the MI of fra GOF wings at 28 hAPF and found that the percentage of wings that shows complete migration is higher as compared to that of control wings (Figure 3a, compare white and dark blue columns). Since most control wings show complete migration by 28 hAPF (90%), we also analyzed an earlier stage, when migration has been achieved in only a few control wings (24 hAPF; 12.5%). We found that many more fra-overexpressing wings show complete migration (68.5%, Figure 3b). This strongly suggests that high doses of Fra significantly increase the efficiency of glia migration. Fra levels in fra KD and fra GOF conditions are indeed reduced and increased, respectively, as compared to those observed in control wings (Figure 3c–h).
 
@@ -79,13 +79,13 @@ The cytoplasmic tail of Fra is known to play a major role in mediating Fra-depen
 
 In summary, we find that acts in a cell autonomous manner in glial cells to mediate migration. Furthermore, our data show that that levels of Fra are critical for the initiation stage of glial cell migration and that this is mediated through the cytoplasmic domain of Fra.
 
-## The efficiency of glia migration depends on the dose of Gcm
+### The efficiency of glia migration depends on the dose of Gcm
 
-Interestingly, the migratory phenotype of
+Interestingly, the migratory phenotype of fra3/+ glia that also carry the gcm>GFP driver is much stronger than that of fra3/+ glia (compare Figure 2e patterned black an gray column, MI = 67% and Figure 4a patterned light gray and white column, MI = 14%). The phenotype is further enhanced in glia that express both the gcm>GFP and a gcm RNAi line (Figure 4a patterned brown and pink column). Since the gcm-Gal4 driver is a hypomorphic gcm allele that results from the insertion of a Gal4-containing transposon into the gcm promoter (Jacques et al., 2009), the above result raised the possibility that Gcm and Fra interact genetically. To explore this possibility, we analyzed the glia migration phenotype in double heterozygous conditions for fra and two other gcm hypomorphic alleles, including the gcmrA87 enhancer trap carrying a LacZ transposon inserted into the gcm promoter and the imprecise excision line gcm (Riabinina et al., 2015; Vincent et al., 1996; Jacques et al., 2009). In addition, we also used a gcm null mutation, gcmN7-4 (Bernardoni et al., 1997). This confirms that reducing the dose of Gcm enhances the fra3-mediated phenotype (Figure 3—figure supplement 2b). Furthermore, we crossed the fra3 mutation with a gcm driver that does not affect the gcm locus, a transgenic line carrying 6Kb of the gcm promoter fused to the Gal4 gene, which is inserted on the third chromosome (Flici et al., 2014). In these wings, we did not observe the enhanced migratory phenotype present in the fra3 , gcm-Gal4 wings (Figure 3—figure supplement 2c). These findings suggest that the two genes act in the same genetic pathway that impinges on glial cell migration.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig4-v2.jpg)
 
-**Figure 4.:** (a) MI in fra mutants, gcm LOF and rescues of the indicated genotypes: gcm>GFP/+, gcm/fra LOF, gcm>gcm LOF, gcm>gcm KD and gcm>gcm GOF wings. (b) MI calculated at 24 hAPF in gcm>gcm GOF wings. The MI was calculated using the membrane GFP transgenic line. (c) Graphical representation of the migratory behavior of gcm>GFP/+, gcm>gcm LOF and gcm>gcm GOF wings at three migratory phases. (d–f) Snapshots of a 22:48 hAPF time-lapse analysis on gcm>GFP/+, gcm>gcm GOF and gcm>gcm LOF wings. (d) 22:48 hAPF corresponds to the time at which L1 glia have surpassed the level of the Costa (white line) in the control gcm>GFP/+ wing, which is why this time point was chosen to compare the position of L1 glia in the different genetic backgrounds. By this time, (e) glia migration is already complete in gcm>gcm GOF wing (white arrow), while in (f) gcm>gcm LOF wing, L1 glia are still at the level of Costa (white line). Scale bar: (e–g), 10 μm.DOI: http://dx.doi.org/10.7554/eLife.15983.01110.7554/eLife.15983.012Figure 4—source data 1.gcm in glia migration.This file contains underlying raw data for Figure 4.DOI: http://dx.doi.org/10.7554/eLife.15983.012
+**Figure 4.:** (a) MI in fra mutants, gcm LOF and rescues of the indicated genotypes: gcm>GFP/+, gcm/fra LOF, gcm>gcm LOF, gcm>gcm KD and gcm>gcm GOF wings. (b) MI calculated at 24 hAPF in gcm>gcm GOF wings. The MI was calculated using the membrane GFP transgenic line. (c) Graphical representation of the migratory behavior of gcm>GFP/+, gcm>gcm LOF and gcm>gcm GOF wings at three migratory phases. (d–f) Snapshots of a 22:48 hAPF time-lapse analysis on gcm>GFP/+, gcm>gcm GOF and gcm>gcm LOF wings. (d) 22:48 hAPF corresponds to the time at which L1 glia have surpassed the level of the Costa (white line) in the control gcm>GFP/+ wing, which is why this time point was chosen to compare the position of L1 glia in the different genetic backgrounds. By this time, (e) glia migration is already complete in gcm>gcm GOF wing (white arrow), while in (f) gcm>gcm LOF wing, L1 glia are still at the level of Costa (white line). Scale bar: (e–g), 10 μm.
 
 Gcm is a transiently expressed transcription factor that acts very early in glial differentiation (Hosoya et al., 1995; Vincent et al., 1996; Jones et al., 1995). In situ hybridization on wild-type (WT) wings has shown that the gcm RNA becomes detectable by 8–9 hAPF (Van de Bor and Giangrande, unpublished data) and fades in glial cells by 24 hAPF (Popkova et al., 2012). To clarify the role of Gcm on glia migration, we analyzed wings that are only mutant for gcm and used hypomorphic alleles that allow bypassing the lethality of the null mutation. Three allelic conditions were tested: gcm-Gal4/gcmrA87(gcm LOF) (Figure 4a, light brown column, MI = 63%, vs. the MI = 90% of the control line gcm>GFP/+ (white column)), gcm-Gal4 homozygous (Figure 4a, orange column, MI = 41%) and gcmrA87/gcmN7-4 transheterozygous (Figure 3—figure supplement 2b, last column, MI = 28%) animals. Migration is indeed less efficient when the amount of Gcm is reduced and the MI is restored to normal values upon reintroduction of Gcm expression (Figure 4a, patterned pink columns). Finally, we used the UAS-gcm-RNAi line to reduce the amount of Gcm (gcm KD) and also observed a migratory defect (Figure 4a, dark brown column, MI = 25%). The rescue obtained upon co-expressing the UAS-gcm and the UAS-gcm-RNAi transgenes indicates that gcm plays a regulatory role in migration and that the RNAi effects are specific (Figure 4a, patterned pink-dark brown column). Furthermore, overexpressing Gcm using the UAS-gcm transgene (gcm GOF) is sufficient to increase the migration efficiency of glial cells, as the percentage of wings showing complete migration increases compared to that in control animals (Figure 4a, pink column and Figure 4b).
 
@@ -93,65 +93,65 @@ To determine which migratory step is affected by Gcm, we analyzed the gcm LOF (g
 
 In summary, the levels of Gcm and Fra are crucial for the initiation of glia migration.
 
-## Gcm affects migration independently of its role as a fate determinant
+### Gcm affects migration independently of its role as a fate determinant
 
 The glial to neuron conversion described in gcm mutant flies prompted us to ask whether this defect could impact the glial migratory process indirectly (Hosoya et al., 1995; Vincent et al., 1996; Jones et al., 1995; Bernardoni et al., 1997). We inspected the rate of glia to neuron conversion in gcm KD wings by using the anti-Elav antibody, which specifically recognizes neurons at the analyzed stages (Figure 5—figure supplement 1a–b’’ gcm KD). Only a minor fraction of the wings contains converted cells and only a few cells are converted into neurons, strongly suggesting that fate conversion is not the cause of the altered MI (on average, 14% of the gcm KD wings show up to 10 Repo/Elav double-positive cells along the L1 nerve, >15 wings were analyzed per genotype; none were observed in wild-type wings). In addition, we restrained our analysis to gcm KD wings that do not show Repo/Elav positive cells and still found a strong delay in migration (MI = 45%).
 
 These data strongly suggest that the glial migration phenotype observed in gcm mutant animals is not due to its early requirement in glial cell determination, but specific to cell migration.
 
-## Gcm affects migration independently of glial cell number
+### Gcm affects migration independently of glial cell number
 
-Another cause for the migratory phenotype observed in the
+Another cause for the migratory phenotype observed in the gcm mutant wings might be the control exerted by Gcm on the total number of glial cells. It is indeed plausible that the number of cells in the collective somehow affects the mechanical forces that control migration efficiency, for example through the amount of chemoattractant receptor. The number of Repo-positive cells in gcm LOF and KD backgrounds is indeed lower than that in the wild-type glial chain and, accordingly, gcm GOF wings contain supernumerary glial cells (Figure 5a, light brown, dark brown and pink columns, respectively).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig5-v2.jpg)
 
-**Figure 5.:** (a) Bar chart showing the numbers of L1 glial nuclei in the various genotypes. (b) MI in the various genotypes, calculated using the membrane GFP transgenic line.DOI: http://dx.doi.org/10.7554/eLife.15983.01310.7554/eLife.15983.014Figure 5—source data 1.gcm on glia migration are independent of any change in the number of repo+ cells.This file contains underlying raw data for Figure 5.DOI: http://dx.doi.org/10.7554/eLife.15983.014
+**Figure 5.:** (a) Bar chart showing the numbers of L1 glial nuclei in the various genotypes. (b) MI in the various genotypes, calculated using the membrane GFP transgenic line.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** gcm migratory phenotype.(a–a”) gcm>GFP/+ and (b–b”) gcm>GFP/+;UAS-gcm-RNAi/+ 17 hAPF wings immunolabeled with anti-Elav (neuronal nuclei in blue) and anti-Repo (glial nuclei in red). Note the glial cells converted into neurons (white arrowheads) in (b”). (c) Histogram showing the MI of the gcm KD wings containing a wild-type number of glial cells. (d, e) Histogram showing the MI of the indicated genotypes. Note that, for panel (e), a ubiquitously expressed temperature-sensitive Gal80 construct was used that represses Gal4 activity at 18°C. The animals for this experiment were kept at 18°C and shifted to 25°C as they reached the second larval instar. Scale bar: (a, b), 10 μm.DOI: http://dx.doi.org/10.7554/eLife.15983.015
+**Figure 5—figure supplement 1.:** (a–a”) gcm>GFP/+ and (b–b”) gcm>GFP/+;UAS-gcm-RNAi/+ 17 hAPF wings immunolabeled with anti-Elav (neuronal nuclei in blue) and anti-Repo (glial nuclei in red). Note the glial cells converted into neurons (white arrowheads) in (b”). (c) Histogram showing the MI of the gcm KD wings containing a wild-type number of glial cells. (d, e) Histogram showing the MI of the indicated genotypes. Note that, for panel (e), a ubiquitously expressed temperature-sensitive Gal80 construct was used that represses Gal4 activity at 18°C. The animals for this experiment were kept at 18°C and shifted to 25°C as they reached the second larval instar. Scale bar: (a, b), 10 μm.
 
 To assess the impact of glial cell number in migration efficiency more directly, we analyzed wings that overexpress proteins promoting or repressing cell division. The exit from the cell cycle results from the timely inactivation of the Cyclin-dependent protein kinase (Cdk) and Cyclin E (Cyc E) complexes. On the one hand, String/Cdc25 encodes a phosphatase that triggers mitosis by activating the Cdc2 kinase, hence enabling cell proliferation (Edgar et al., 1994; Edgar and O'Farrell, 1989; Lasko, 2013). On the other hand, Dacapo functions as an inhibitor of the Cdk–Cyc E complex both in vivo and in vitro, ultimately leading to cell cycle arrest (de Nooij et al., 1996; Lane et al., 1996). First, we produced animals overexpressing String or Dacapo in glia (gcm>GFP) and verified that this induces a significant change in glial cell number compared to that present in control wings (Figure 5a, compare white column with columns with vertical and horizontal lines). Then, we analyzed the migration efficiency in both backgrounds and found that it is not affected (Figure 5b), even though the glial number increase induced by String overexpression and the decrease induced by Dacapo overexpression are comparable to those observed in gcm GOF and LOF, respectively. Finally, we found defective glia migration even in gcm KD wings containing a wild-type number of glial cells, in agreement with the above data (Figure 5—figure supplement 1c).
 
 Thus, the absolute number of glia does not affect migration efficiency, further corroborating the hypothesis that Gcm specifically affects this process.
 
-## gcm expression in blood cells does not affect glial migration
+### gcm expression in blood cells does not affect glial migration
 
 Another round of evidence supports the hypothesis that gcm expression in glia, as opposed to effects originating in other cells, is absolutely necessary for their migration . It is already known that gcm is also expressed in hemocytes (Bernardoni et al., 1997; Bataillé et al., 2005; Waltzer et al., 2010). So, we checked whether the severe migratory delay is specific to reducing the amount of gcm in glia or in hemocytes. To clarify this, we used an independent hemocyte driver, collagen-Gal4, which is expressed in the embryonic hemocytes (Asha et al., 2003). We knocked downgcm in hemocytes (collagen-Gal4 crossed with the UAS-gcm-RNAi) and found no defect in glia migration (Figure 5—figure supplement 1d). Furthermore, as Gcm is only present embryonically in blood cells,we used a gcm-Gal4, tubulin-Gal80thermosensitive(ts) line to specifically knock down fra in glia after embryogenesis and confirmed that, in these conditions too, glia migration is affected (Figure 5—figure supplement 1e).
 
 Taken together, these data suggest that Fra and Gcm act cell autonomously in glial cells to control migration on the developing wing disc.
 
-## fra is a direct Gcm target
+### fra is a direct Gcm target
 
-The gene-expression profile of Fra and the observed genetic interaction between Fra and Gcm prompted us to ask whether Gcm acts on glia migration by inducing Fra expression directly. A DNA adenine methyltranferase identification (DAM ID) screen aimed at identifying the direct targets of Gcm does indeed suggest that this potent transcription factor may directly control the expression of genes involved in glia migration, including
+The gene-expression profile of Fra and the observed genetic interaction between Fra and Gcm prompted us to ask whether Gcm acts on glia migration by inducing Fra expression directly. A DNA adenine methyltranferase identification (DAM ID) screen aimed at identifying the direct targets of Gcm does indeed suggest that this potent transcription factor may directly control the expression of genes involved in glia migration, including fra (Cattenoz et al., 2016). There are three canonical Gcm-binding sites (GBS) in the fra locus, two of which are located at the position of a strong DAM ID peak, which is indicative of Gcm binding (Figure 6a). To confirm this data, we assessed whether fra expression is activated by Gcm in Drosophila S2 cells. To do so, we built a GFP reporter under the control of the fra locus containing two GBSs (Figure 6a–a’). qRT PCR assays clearly show an increase in the GFP levels upon co-transfection of the reporter vector with the Gcm expression vector and this effect is dose dependent (Figure 6b, columns with a red color gradient). To further demonstrate that the effect of Gcm on fra is direct (Figure 6a’’), we showed that Gcm-dependent activation of the reporter is completely abolished upon mutagenesis of the two GBSs (Figure 6b, columns with a yellow color gradient). The levels of transfected Gcm were verified by qRT PCR and those of GFP were confirmed by Western blot assays (Figure 6—figure supplement 1a–c).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig6-v2.jpg)
 
-**Figure 6.:** fra is a direct Gcm target.(a) Schematic representation of the fra gene indicated in blue. Lines indicate the introns, thin regions indicate the untranslated sequences, thick regions indicate the coding exons, pale blue arrowheads indicate the direction of transcription. GBSs are indicated in red, the black histogram above shows the gcm DAM ID peak at the indicated genomic coordinates. (a’) Represents the two GBSs that were amplified and put in front of the GFP reporter to generate a fra WT plasmid. (a”) The two GBSs were mutated in order to generate a fra Mut plasmid. (b) qRT-PCR analysis of the GFP levels using a WT (red) or a mutant reporter plasmid (yellow) upon co-transfection with increasing doses of the Gcm expression vector (reported as μg) (n=3). (c–e”’) Immunolabeling of gcm>GFP/+, gcm>gcm KD and gcm>gcm GOF wings at 28 hAPF using anti-22c10 (red), anti-Fra (gray) and anti-GFP (green). Note the reduced Fra levels in the gcm>gcm KD and the increased levels in the gcm>gcm GOF wings as compared to those in the gcm>GFP/+ wings (arrows). (f) Wing schematics: the blue rectangle indicates the region shown in (c–c”’) and (e–e”’), the black one, the region shown in (d–d”’) (g) MI of the indicated genotypes calculated using the membrane GFP transgenic line. (h–j) 28 hAPF wings from the indicated genotypes: control (gcm>GFP/+), gcm>gcm KD and rescue (gcm>gcm KD/fra GOF). (h) gcm>GFP/+ wing shows complete migration. (i) gcm>gcm KD wing shows incomplete migration (white bracket). Note that this is a composite image. (j) gcm>gcm KD/fra GOF wing showing complete migration. Scale bar: (c–e”), 10 μm; (h, j), 80 μm.DOI: http://dx.doi.org/10.7554/eLife.15983.016
+**Figure 6.:** (a) Schematic representation of the fra gene indicated in blue. Lines indicate the introns, thin regions indicate the untranslated sequences, thick regions indicate the coding exons, pale blue arrowheads indicate the direction of transcription. GBSs are indicated in red, the black histogram above shows the gcm DAM ID peak at the indicated genomic coordinates. (a’) Represents the two GBSs that were amplified and put in front of the GFP reporter to generate a fra WT plasmid. (a”) The two GBSs were mutated in order to generate a fra Mut plasmid. (b) qRT-PCR analysis of the GFP levels using a WT (red) or a mutant reporter plasmid (yellow) upon co-transfection with increasing doses of the Gcm expression vector (reported as μg) (n=3). (c–e”’) Immunolabeling of gcm>GFP/+, gcm>gcm KD and gcm>gcm GOF wings at 28 hAPF using anti-22c10 (red), anti-Fra (gray) and anti-GFP (green). Note the reduced Fra levels in the gcm>gcm KD and the increased levels in the gcm>gcm GOF wings as compared to those in the gcm>GFP/+ wings (arrows). (f) Wing schematics: the blue rectangle indicates the region shown in (c–c”’) and (e–e”’), the black one, the region shown in (d–d”’) (g) MI of the indicated genotypes calculated using the membrane GFP transgenic line. (h–j) 28 hAPF wings from the indicated genotypes: control (gcm>GFP/+), gcm>gcm KD and rescue (gcm>gcm KD/fra GOF). (h) gcm>GFP/+ wing shows complete migration. (i) gcm>gcm KD wing shows incomplete migration (white bracket). Note that this is a composite image. (j) gcm>gcm KD/fra GOF wing showing complete migration. Scale bar: (c–e”), 10 μm; (h, j), 80 μm.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** fra as a direct Gcm target.(a) Western blot analysis on total protein extracts of transfected S2 cells showing the GFP levels from the fra-GFP reporter plasmid (representative Western Blot shows one out of a sample of three). GFP levels increase upon increasing the dose of Gcm. Anti-GFP was used for Fra detection (lower part) and anti-β-gal (top part) as a loading control. (b) Similar assay upon using a mutated fra-GFP plasmid. This analysis confirms Fra as a direct target of Gcm. (c) Quantification of the Western blot shown in (a), the y-axis indicates the relative GFP levels, the x-axis indicates the amounts of Gcm expression vector in (μg) (n=3). (d–e”) Immunolabeling with anti-Fra in a gcm>gcm GOF 15 hAPF wing. The position of the high-magnification panels (e–e”) is highlighted by the dashed white rectangles in (d–d”). Protein levels are enhanced in panels (d–e”) as compared to those in (Figure 3m–n”). (f) Schematic of a wing displaying the region shown in (d–d”). Scale bar: 10 μm.DOI: http://dx.doi.org/10.7554/eLife.15983.017
+**Figure 6—figure supplement 1.:** (a) Western blot analysis on total protein extracts of transfected S2 cells showing the GFP levels from the fra-GFP reporter plasmid (representative Western Blot shows one out of a sample of three). GFP levels increase upon increasing the dose of Gcm. Anti-GFP was used for Fra detection (lower part) and anti-β-gal (top part) as a loading control. (b) Similar assay upon using a mutated fra-GFP plasmid. This analysis confirms Fra as a direct target of Gcm. (c) Quantification of the Western blot shown in (a), the y-axis indicates the relative GFP levels, the x-axis indicates the amounts of Gcm expression vector in (μg) (n=3). (d–e”) Immunolabeling with anti-Fra in a gcm>gcm GOF 15 hAPF wing. The position of the high-magnification panels (e–e”) is highlighted by the dashed white rectangles in (d–d”). Protein levels are enhanced in panels (d–e”) as compared to those in (Figure 3m–n”). (f) Schematic of a wing displaying the region shown in (d–d”). Scale bar: 10 μm.
 
 Finally, we complemented the in vitro data with two in vivo assays. First, we showed that Fra levels are affected in opposite direction in gcm LOF and GOF wings (Figure 6c–f). In gcm GOF wings, the levels of the Fra protein already increase by 15 hAPF, in agreement with the observed precocious initiation of migration (Figure 6—figure supplement 1d–f, compare with Figure 3l–o”). Second, we hypothesized that Fra may constitute an important target of Gcm in L1 glia migration and showed that overexpressing Fra in gcm KD wings is sufficient to completely reverse the migratory phenotype that results from gcm KD (Figure 6g, patterned dark blue and brown columns and Figure 6h–j).
 
 In summary, these data suggest that the role of the transcription factor in glial cell migration is through the direct activation of the of chemoattractant receptor, Fra; this in turn implies that an early fate determinant is also capable of directly controlling late developmental events through inducing the expression of cell-surface molecules in a dose dependent manner..
 
-## Role and expression of Netrins
+### Role and expression of Netrins
 
-The Fra receptor is known to signal through the two Netrin ligands to mediate cell signaling. To understand which of these ligands were involved in the molecular pathway controlling glial cell migration, we assayed migration in animals that were null mutants for the two netrins:
+The Fra receptor is known to signal through the two Netrin ligands to mediate cell signaling. To understand which of these ligands were involved in the molecular pathway controlling glial cell migration, we assayed migration in animals that were null mutants for the two netrins: NetAΔ or NetBΔ (Harris et al., 1996; Mitchell et al., 1996; Brankatschk and Dickson, 2006). In this experiments, we find that while NetAΔ mutant glia do not display a defective migratory index (Figure 7a, compare gray and blue columns), migration is significantly affected in NetBΔ mutant glia (Figure 7a, compare gray and red columns).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig7-v2.jpg)
 
-**Figure 7.:** (a) MI of the indicated genotypes. Histogram shows the MIs quantified for WT, for NetAor Δ NetB single mutant wings and for ΔNetAor ΔNetBTM NetAwings. (ΔNetBmyc b) NP4151-Gal4 driven GFP expression of NetB in a 19 hAPF wing. Proximal NetB expression as revealed by the GFP labeling (green). Anti-22C10 is in red. (c, d) Histograms representing the MI of the indicated genotypes. (e) NP4012-Gal4 driven GFP expression of NetA in a 20 hAPF wing. NetA is expressed in the wing epithelium as revealed by the profile of GFP (green). Anti-22C10 is in red. (f, g) Histograms representing the MI of the indicated genotypes. For this figure the MI was calculated by nuclear labeling. Scale bars: (b, e), 80 μm.DOI: http://dx.doi.org/10.7554/eLife.15983.01810.7554/eLife.15983.019Figure 7—source data 1.Netrins in glia migration.This file contains underlying raw data for Figure 7.DOI: http://dx.doi.org/10.7554/eLife.15983.019
+**Figure 7.:** (a) MI of the indicated genotypes. Histogram shows the MIs quantified for WT, for NetAΔ or NetBΔ single mutant wings and for NetAΔNetBTM or NetAΔNetBmyc wings. (b) NP4151-Gal4 driven GFP expression of NetB in a 19 hAPF wing. Proximal NetB expression as revealed by the GFP labeling (green). Anti-22C10 is in red. (c, d) Histograms representing the MI of the indicated genotypes. (e) NP4012-Gal4 driven GFP expression of NetA in a 20 hAPF wing. NetA is expressed in the wing epithelium as revealed by the profile of GFP (green). Anti-22C10 is in red. (f, g) Histograms representing the MI of the indicated genotypes. For this figure the MI was calculated by nuclear labeling. Scale bars: (b, e), 80 μm.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** (a–c) Graphs representing the MI of the indicated genotypes, calculated by nuclear labeling.DOI: http://dx.doi.org/10.7554/eLife.15983.020
+**Figure 7—figure supplement 1.:** (a–c) Graphs representing the MI of the indicated genotypes, calculated by nuclear labeling.
 
 ![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig7-figsupp2-v2.jpg)
 
-**Figure 7—figure supplement 2.:** (a) Schematic of axonal bundles in a 10 hAPF wing, the green rectangle indicates the region shown in (b). (b) NP4151-Gal4-driven GFP expression of NetB in a 10 hAPF wing. Proximal NetB expression as revealed by the GFP labeling (green). Anti-22C10 is in red.DOI: http://dx.doi.org/10.7554/eLife.15983.021
+**Figure 7—figure supplement 2.:** (a) Schematic of axonal bundles in a 10 hAPF wing, the green rectangle indicates the region shown in (b). (b) NP4151-Gal4-driven GFP expression of NetB in a 10 hAPF wing. Proximal NetB expression as revealed by the GFP labeling (green). Anti-22C10 is in red.
 
 As it has long been known that Netrins can elicit short-range attraction at the Drosophila embryonic midline (Harris et al., 1996; Mitchell et al., 1996; Brankatschk and Dickson, 2006), we next checked whether NetB could act in a similar manner in the migrating L1 glia. For this purpose, we used a transgenic line that does not express NetA and that only expresses the wild type or the membrane-tethered form of NetB, which is incapable of signal transduction (Brankatschk and Dickson, 2006). The lines NetAΔ NetBTM and NetAΔ NetB had been obtained through homologous recombination and hence express the modified or the wild-type NetB protein at near endogenous levels. Glia migration was found to be comparable to that of wild-type glia in NetAΔ NetB/Y wings, whereas it is delayed in NetAΔ NetBTM/Y wings. This suggests that NetB must be secreted for proper glia migration to occur (Figure 7a, compare light and dark purple columns) implying that the NetB ligand functions as a long-range guiding cue for the receptor Fra that is expressed in glial cells.
 
@@ -161,31 +161,31 @@ Finally, NetA is almost ubiquitously expressed in the epithelium, as revealed by
 
 Altogether, our data strongly support the hypothesis that secreted NetB in the proximal wing provides a crucial chemoattractant cue for Gcm-mediated Fra expression, hence controlling the efficiency of glia migration. Our data also suggest that NetB may contribute but is not sufficient to trigger directionality.
 
-## Unc5 controls the late phase of L1 glia migration
+### Unc5 controls the late phase of L1 glia migration
 
 unc5 is a repellant receptor for Netrins and has been previously shown to be transiently expressed and required in the embryonic exit and peripheral glia (PG) associated with both the segmental and intersegmental nerves (von Hilchen et al., 2010; Keleman and Dickson, 2001; Freeman et al., 2003). We therefore asked whether unc5 might also be involved in the migration of glia in the developing wing. To do this, we first analyzed its spatio-temporal expression profile during development. Unc5 is undetectable in the wing disc at 15 hAPF (Figure 8—figure supplement 1a–a”). Its expression is first seen at 18 hAPF at low levels and this expression progressively decreases to completely fade away by 29 hAPF (Figure 8a–d’’’).
 
-If
+If unc5 were to act as a repulsive receptor, the efficiency of glia migration would increase if its expression decreases, but neither RNAi-mediated KD of unc5, nor the null unc58 mutation (Labrador et al., 2005) affect glia migration efficiency at the early and late stages of development (Figure 8e, first three columns; Figure 8—figure supplement 1b). Thus, the loss of Unc5 does not seem to enhance the migration efficiency of L1 glia in the developing wing. We then asked whether Unc5 expression must be tightly regulated, and found that overexpressing Unc5 affects the efficiency of glia migration by delaying it, a phenotype that is opposite to the Fra overexpression phenotype (Figure 8e, compare blank and green columns). This delayed migration phenotype was rescued by reducing the levels of unc5 using the unc5 KD construct or the mutant allele unc58, in this overexpression background. This rescue demonstrates a direct effect of unc5 on glia migration (Figure 8e, patterned green and purple column, Figure 8—figure supplement 1c, third column).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig8-v2.jpg)
 
-**Figure 8.:** (a–d”’) Wing immunolabeled with anti-22c10 (red), anti-Unc5 (gray) and anti-GFP (green) in the transgenic line gcm>GFP/+ at different migratory stages. Unc5 starts being expressed in glia and neurons at around 18 hAPF and fades away by 29 hAPF. Arrowheads show glia that express Unc5 at weak levels (a–c’’’) or that do not express Unc5 (d–d’’’). Note that (a–d”) are comprised of a few sections rather than maximum confocal projections. (e–g) Histograms representing the MI of the indicated genotypes, which in this figure was calculated using the membrane GFP transgenic line. Scale bars: (a–d”), 10 μm.DOI: http://dx.doi.org/10.7554/eLife.15983.02210.7554/eLife.15983.023Figure 8—source data 1.unc in glia migration.5This file contains underlying raw data for Figure 8.DOI: http://dx.doi.org/10.7554/eLife.15983.023
+**Figure 8.:** (a–d”’) Wing immunolabeled with anti-22c10 (red), anti-Unc5 (gray) and anti-GFP (green) in the transgenic line gcm>GFP/+ at different migratory stages. Unc5 starts being expressed in glia and neurons at around 18 hAPF and fades away by 29 hAPF. Arrowheads show glia that express Unc5 at weak levels (a–c’’’) or that do not express Unc5 (d–d’’’). Note that (a–d”) are comprised of a few sections rather than maximum confocal projections. (e–g) Histograms representing the MI of the indicated genotypes, which in this figure was calculated using the membrane GFP transgenic line. Scale bars: (a–d”), 10 μm.
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig8-figsupp1-v2.jpg)
 
-**Figure 8—figure supplement 1.:** (a–a”) gcm>GFP/+ wing immunolabeled at 15 hAPF shows that the Unc5 protein cannot be detected at this stage. Note that (a–a”) are comprised of a few sections rather than maximum confocal projections. Region and scale bar as in Figure 6—figure supplement 1d–d’’. (b, c) Histograms represent the MI of the indicated genotypes, calculated by using the membrane GFP transgenic line. (d) qRT PCR analysis of the GFP levels using a WT unc5 (red) or a mutant unc5 reporter plasmid (yellow) upon co-transfection with increasing doses of the Gcm expression vector (reported as μg).DOI: http://dx.doi.org/10.7554/eLife.15983.024
+**Figure 8—figure supplement 1.:** (a–a”) gcm>GFP/+ wing immunolabeled at 15 hAPF shows that the Unc5 protein cannot be detected at this stage. Note that (a–a”) are comprised of a few sections rather than maximum confocal projections. Region and scale bar as in Figure 6—figure supplement 1d–d’’. (b, c) Histograms represent the MI of the indicated genotypes, calculated by using the membrane GFP transgenic line. (d) qRT PCR analysis of the GFP levels using a WT unc5 (red) or a mutant unc5 reporter plasmid (yellow) upon co-transfection with increasing doses of the Gcm expression vector (reported as μg).
 
 Thus, fra and unc5 serve opposite roles in glia migration, with fra being necessary to trigger migration and unc5 delaying the migratory process. The two molecules seem to work in the same signaling pathway because the unc5 GOF phenotype is further enhanced by lowering the levels of Fra (Figure 8e, patterned green and light blue column). Also, the migratory phenotype induced by unc5 overexpression is rescued by simultaneously overexpressing Fra (the rescue was analyzed at an early stage for a better quantification; Figure 8f, patterned green and dark blue column). Finally, knocking down unc5 rescues the fra KD phenotype (Figure 8—figure supplement 1c, last two columns).
 
-Altogether, the data described above strongly suggest that Unc5 can act as a repellant but that its expression is not sufficient to affect migration efficiency, which is mostly controlled by Net–Fra interaction. A likely explanation for these results is that Unc5 contributes at late migratory stages, and time-lapse movies indeed show that
+Altogether, the data described above strongly suggest that Unc5 can act as a repellant but that its expression is not sufficient to affect migration efficiency, which is mostly controlled by Net–Fra interaction. A likely explanation for these results is that Unc5 contributes at late migratory stages, and time-lapse movies indeed show that unc5 overexpression delays migration but does not affect the initiation step (Figure 9—figure supplement 1a). To further test this hypothesis, we assessed the effects of knocking down Unc5 using repo-Gal4, which is a late glial driver compared to gcm-Gal4. In these conditions, we did see an acceleration in migration completion (Figure 8g). Finally, since Unc5 has been identified in microarrays obtained upon overexpressing Gcm (Freeman et al. 2003) and in the DAM ID screen performed to identify the direct targets of Gcm (Cattenoz et al., 2016), we asked whether Unc5 expression is directly induced by Gcm. Co-transfection assays in S2 cells similar to those performed on fra and using an Unc5–GFP reporter containing two GBS close to the unc5 transcription start site, suggest that Unc5 is a rather weak target of Gcm (Figure 8—figure supplement 1d). This was further confirmed in gcm gain-of-function in vivo assays (data not shown) similar to those mentioned above on fra.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig9-v2.jpg)
 
-**Figure 9.:** (a) Histogram showing the endogenous expression of fra upon S2 cell transfection with a Repo expression vector. The y-axis represents the relative expression levels in cells transfected with Repo compared to that observed in cells not transfected with the Repo expression vector (n=3). (b) Schematic summarizing the regulatory network. (c, d) Graphs representing the MI found at early and late stages in fra GOF animals crossed with the repo-Gal4 line. In this figure, the MI was calculated using the membrane GFP transgenic line.DOI: http://dx.doi.org/10.7554/eLife.15983.02510.7554/eLife.15983.026Figure 9—source data 1.repo in glia migration.This file contains underlying raw data for Figure 9.DOI: http://dx.doi.org/10.7554/eLife.15983.026
+**Figure 9.:** (a) Histogram showing the endogenous expression of fra upon S2 cell transfection with a Repo expression vector. The y-axis represents the relative expression levels in cells transfected with Repo compared to that observed in cells not transfected with the Repo expression vector (n=3). (b) Schematic summarizing the regulatory network. (c, d) Graphs representing the MI found at early and late stages in fra GOF animals crossed with the repo-Gal4 line. In this figure, the MI was calculated using the membrane GFP transgenic line.
 
 ![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/15983/elife-15983-fig9-figsupp1-v2.jpg)
 
-**Figure 9—figure supplement 1.:** fra KD wings using a late driver.(a) Graphical representation of the migratory behavior of gcm>GFP/+ and gcm>unc5 GOF wings at the Initiation phase (n=9). (b) Box plot showing the raw data, the mean and the standard errors for the three migratory phases in repo>GFP/+ and repo>fra KD wings. Stars indicate the p values. This figure relates to both Figure 8 and Figure 9.DOI: http://dx.doi.org/10.7554/eLife.15983.027
+**Figure 9—figure supplement 1.:** (a) Graphical representation of the migratory behavior of gcm>GFP/+ and gcm>unc5 GOF wings at the Initiation phase (n=9). (b) Box plot showing the raw data, the mean and the standard errors for the three migratory phases in repo>GFP/+ and repo>fra KD wings. Stars indicate the p values. This figure relates to both Figure 8 and Figure 9.
 
 In summary, these data suggest that apart from a role for chemoattraction mediated through Fra and NetB, which determines the initiation of glial cell migration, a later chemorepulsion mediated through Fra-Unc5 ensures the termination of migration. Furthermore, the expression of Unc5 is also directly regulated by the transcription factor gcm suggesting that the same early determinant controls the timely expression of effector genes that initiate and terminate glial cell migration.
 
@@ -213,7 +213,7 @@ Together, these findings in the Drosophila wing suggest that the dynamic and coo
 
 ## Materials and methods
 
-## Fly stocks and genetics
+### Fly stocks and genetics
 
 Fly stocks were raised at 25°C in standard medium. repo-Gal4 (indicated as repo>) was used to detect glial-specific expression of UAS-PH-GFP (fusion protein between the Pleckstrin homology domain of PLC-d and the GFP coding sequence). gcm-Gal4 UAS-mCD8-GFP (membrane localization) (gcm>GFP) was used as an early glial-specific driver (Jacques et al., 2009). gcm-Gal4,tubGal80ts (Soustelle et al., 2007). The other strains used were gcm 6Kb> 42; fra3 (von Hilchen et al., 2010); UAS-fra (von Hilchen et al., 2010); UAS-fra-RNAi (Manhire-Heath et al., 2013); UAS-fraΔC (Garbe et al., 2007); gcmrA87 (Vincent et al., 1996); gcmN7-4 (Vincent et al., 1996); UAS-gcm (F18A) (Bernardoni et al., 1998); UAS-gcm-RNAi; gcm>GFP/gcm>GFP (used as a homozygous mutant of gcm) (Popkova et al., 2012); UAS-string (Inaba et al., 2011); UAS-dacapo (Lane et al., 1996); gcm34 (Vincent et al., 1996); NetAΔ (von Hilchen et al., 2010; Newquist et al., 2013a, 2013b); NetBΔ (von Hilchen et al., 2010; Newquist et al., 2013a, 2013b); NetAΔ NetBTM (Brankatschk and Dickson, 2006); NetAΔ NetBmycBrankatschk and Dickson, 2006) (note that both NetAΔ NetBTM and NetAΔ NetBmyc encode the c-myc epitope tags); UAS-NetB-RNAi (Manhire-Heath et al., 2013); UAS-NetB (Timofeev et al., 2012); NP4151-Gal4 and NP4012-Gal4 (DGRC, Kyoto) (Timofeev et al., 2012; Hayashi et al., 2002); UAS-NetA-RNAi (Manhire-Heath et al., 2013); UAS-NetA (Newquist et al., 2013a, 2013b); unc58 (Labrador et al., 2005); collagen-Gal4 (Asha et al., 2003); engrailed-Gal4 driver (Hidalgo, 1994; Lawrence and Morata, 1976); GMR 29F05-Gal4 (Pfeiffer et al., 2008); UAS-unc5-RNAi; UAS-unc5 (von Hilchen et al., 2010); nsyb-Gal4>GFP-LAMP (B# 42714); elav-Gal4. The RNAi lines were obtained from Bloomington and/or the VDRC stock center.
 
@@ -221,9 +221,250 @@ To generate the coinFLP clones, the hsFLP;UAS-fra-RNAi built with hsFLP (B# 6) 
 
 The summary table here below provides the genotypes for each figure reporting MI, for the sake of simplicity.
 
-GenotypesAbbreviated asFigure 2WTControlfra3/+LOFrepo>GFP/+Controlrepo>GFP/fra3fra LOFFigure 3gcm>GFP/+Controlgcm>GFP/+;UAS fra RNAi/+fra KDgcm>GFP/+;UAS fra RNAi/UAS frafra KD, Rescuegcm>GFP/+;UAS fra/+fra GOFgcm>GFP/+UAS fraΔCFigure 4gcm>GFP/+Controlgcm>GFP/fra3fra LOFgcm>GFP/fra3;UAS gcm RNAi/+gcm>GFP/gcmrA87gcm LOFgcm>GFP/gcmrA87;UAS gcm/+gcm LOF, Rescuegcm>GFP/gcm>GFPgcm>GFP/gcm>GFP;UAS gcm/+Rescuegcm>GFP/+;UAS gcm RNAi/+gcm KDgcm>GFP/+;UAS gcm RNAi/UAS gcmgcm KD, Rescuegcm>GFP/+;UAS gcm/+gcm GOFFigure 5gcm>GFP/+Controlgcm>GFP/gcmrA87gcm LOFgcm>GFP/+;UAS gcm RNAi/+gcm KDgcm>GFP/+;UAS gcm/+gcm GOFgcm>GFP/UAS stringstring GOFgcm>GFP/UAS dacapodacapo GOFFigure 6gcm>GFP/+Controlgcm>GFP/+;UAS gcm RNAi/+gcm KDgcm>GFP/+;UAS gcm RNAi/UAS fraRescueFigure 7WTControlNetAΔ/YNetBΔ/YNetAΔNetBTM/YNetAΔNetB/YNetB>/YControlNetB>/Y;+/+;UAS NetB RNAi/+NetB KDNetB>/Y;+/+;UAS NetB RNAi/UAS NetBNetB KD, RescueNetB>/Y;+/+;UAS NetB/+NetB GOFNetA>/YControlNetA>/Y;+/+;UAS NetA RNAi/+NetA KDNetA>/Y;UAS NetA/+NetA GOFFigure 8gcm>GFP/+Controlgcm>GFP/+;UAS unc5 RNAi/+unc5 KDgcm>GFP/unc58unc5 LOFgcm>GFP/+;UAS unc5/+unc5 GOFgcm>GFP/+;UAS unc5; UAS unc5 RNAiunc5 GOF, Rescuegcm>GFP/+;UAS unc5/UAS fra RNAigcm>GFP/+;UAS unc5/UAS fragcm>GFP/+;UAS fra/+fra GOFrepo>GFP/+Controlrepo>GFP/UAS unc5 RNAiunc5 KDFigure 9repo>GFP/+Controlrepo>GFP/+;UAS fra/+fra GOF
+<table>
+  <thead>
+    <tr>
+      <th>Genotypes</th>
+      <th>Abbreviated as</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Figure 2</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>Control</td>
+    </tr>
+    <tr>
+      <td>fra3/+</td>
+      <td>LOF</td>
+    </tr>
+    <tr>
+      <td>repo&gt;GFP/+</td>
+      <td>Control</td>
+    </tr>
+    <tr>
+      <td>repo&gt;GFP/fra3</td>
+      <td>fra LOF</td>
+    </tr>
+    <tr>
+      <td colspan="2">Figure 3</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+</td>
+      <td>Control</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS fra RNAi/+</td>
+      <td>fra KD</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS fra RNAi/UAS fra</td>
+      <td>fra KD, Rescue</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS fra/+</td>
+      <td>fra GOF</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+UAS fraΔC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Figure 4</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+</td>
+      <td>Control</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/fra3</td>
+      <td>fra LOF</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/fra3;UAS gcm RNAi/+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/gcmrA87</td>
+      <td>gcm LOF</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/gcmrA87;UAS gcm/+</td>
+      <td>gcm LOF, Rescue</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/gcm&gt;GFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/gcm&gt;GFP;UAS gcm/+</td>
+      <td>Rescue</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS gcm RNAi/+</td>
+      <td>gcm KD</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS gcm RNAi/UAS gcm</td>
+      <td>gcm KD, Rescue</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS gcm/+</td>
+      <td>gcm GOF</td>
+    </tr>
+    <tr>
+      <td colspan="2">Figure 5</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+</td>
+      <td>Control</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/gcmrA87</td>
+      <td>gcm LOF</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS gcm RNAi/+</td>
+      <td>gcm KD</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS gcm/+</td>
+      <td>gcm GOF</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/UAS string</td>
+      <td>string GOF</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/UAS dacapo</td>
+      <td>dacapo GOF</td>
+    </tr>
+    <tr>
+      <td colspan="2">Figure 6</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+</td>
+      <td>Control</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS gcm RNAi/+</td>
+      <td>gcm KD</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS gcm RNAi/UAS fra</td>
+      <td>Rescue</td>
+    </tr>
+    <tr>
+      <td colspan="2">Figure 7</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>Control</td>
+    </tr>
+    <tr>
+      <td>NetAΔ/Y</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NetBΔ/Y</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NetAΔNetBTM/Y</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NetAΔNetB/Y</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NetB&gt;/Y</td>
+      <td>Control</td>
+    </tr>
+    <tr>
+      <td>NetB&gt;/Y;+/+;UAS NetB RNAi/+</td>
+      <td>NetB KD</td>
+    </tr>
+    <tr>
+      <td>NetB&gt;/Y;+/+;UAS NetB RNAi/UAS NetB</td>
+      <td>NetB KD, Rescue</td>
+    </tr>
+    <tr>
+      <td>NetB&gt;/Y;+/+;UAS NetB/+</td>
+      <td>NetB GOF</td>
+    </tr>
+    <tr>
+      <td>NetA&gt;/Y</td>
+      <td>Control</td>
+    </tr>
+    <tr>
+      <td>NetA&gt;/Y;+/+;UAS NetA RNAi/+</td>
+      <td>NetA KD</td>
+    </tr>
+    <tr>
+      <td>NetA&gt;/Y;UAS NetA/+</td>
+      <td>NetA GOF</td>
+    </tr>
+    <tr>
+      <td colspan="2">Figure 8</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+</td>
+      <td>Control</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS unc5 RNAi/+</td>
+      <td>unc5 KD</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/unc58</td>
+      <td>unc5 LOF</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS unc5/+</td>
+      <td>unc5 GOF</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS unc5; UAS unc5 RNAi</td>
+      <td>unc5 GOF, Rescue</td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS unc5/UAS fra RNAi</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS unc5/UAS fra</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gcm&gt;GFP/+;UAS fra/+</td>
+      <td>fra GOF</td>
+    </tr>
+    <tr>
+      <td>repo&gt;GFP/+</td>
+      <td>Control</td>
+    </tr>
+    <tr>
+      <td>repo&gt;GFP/UAS unc5 RNAi</td>
+      <td>unc5 KD</td>
+    </tr>
+    <tr>
+      <td colspan="2">Figure 9</td>
+    </tr>
+    <tr>
+      <td>repo&gt;GFP/+</td>
+      <td>Control</td>
+    </tr>
+    <tr>
+      <td>repo&gt;GFP/+;UAS fra/+</td>
+      <td>fra GOF</td>
+    </tr>
+  </tbody>
+</table>
 
-## Molecular cloning
+### Molecular cloning
 
 For the fra gene, oligonucleotides (see primers sequence below) surrounding the GBSs were designed with flanking restriction sites for KpnI at the 5’ extremity and NHeI at the 3’ extremity. Each pair of oligonucleotides was used to amplify the genomic region encompassing the GBSs using the Expand High fidelity polymerase (Roche). The amplicons were digested with 20 U of KpnI (NEB # R3142S) and 20 U of NheI (NEB # R3131S) in Cutsmart buffer (NEB # B7204S) for 2 hr min at 37°C. The digested amplicons were then cleaned using the PCR clean-up kit (Macherey-Nagel (MN) # 740609) according to manufacturer’s instructions.
 
@@ -277,7 +518,7 @@ unc5 Mutant reverse 2:
 
 5’ CATCGGACGACCACTGCAGTGCGCCCCTTTTTTTTTTTGTGCTACTGTG 3’
 
-## Co-transfection and Western blot assays
+### Co-transfection and Western blot assays
 
 Co-transfections in S2 cells were carried out using Lipofectamine (Invitrogen). 6 × 106 cells were cultured in 6-well plates containing Schneider medium. In each well, cells were transfected with 1 μg of fra WT or
 
@@ -287,7 +528,7 @@ mutant reporter plasmid, 1 μg of pPAC-lacZ (Flici et al., 2014; Cattenoz et a
 
 Same protocol was used for unc5 S2 cell co-transfection assays.
 
-## Reverse transcription and qRT-PCR
+### Reverse transcription and qRT-PCR
 
 Total RNA was extracted from S2 cells using tri-reagent, 1 μg of purified RNA was reverse transcribed by SuperScript II. qPCR was performed with the Roche LightCycler 480 and Sybr Green Master mix (Roche) using the following oligonucleotides:
 
@@ -305,16 +546,16 @@ LacZ reverse: GTATCGCCAAAATCACCGCC
 
 For each gene, the expression levels were automatically calculated (LightCycler480 Software, release 1.5.0) by calibration to gene-specific standard curves generated on input cDNAs. Collected values, derived from three amplification reactions, each performed in three independent experiments, were normalized to β-gal mRNA amounts.
 
-## Immunolabeling and antibodies
+### Immunolabeling and antibodies
 
 Pupae of desired stage were collected and fixed in 4% PFA PBS (paraformaldehyde in phosphate buffer saline) overnight at 4°C. They were dissected in PBT (PBS Triton-X100, 0.3%) and wings were given four quick washes of 10 min in PBT and were incubated in the blocking reagent PBT-NGS (5% normal goat serum in PBT) for 60 min at room temperature on a planar shaker. Samples were then incubated overnight in primary antibodies (diluted in PBT-NGS): mouse-anti-Repo labels glia (1:800) and mouse-anti-22c10 labels neurons (1:1000) (DSHB), rabbit-anti-HRP labels neurons (1:1000) (DSHB), chicken-anti-GFP (1:1000) (Abcam), rat anti-Elav labels neurons (1:1000) (DSHB), rabbit-anti-Unc5 and rabbit-anti-Fra (1:500) were gifts from Benjamin Altenhein. After four washes in PBT, wings were incubated for 2 hr at room temperature in secondary antibodies (1:500) raised in mouse, rat, rabbit or chicken and coupled to Cy3, Cy5 or FITC fluorescent dyes diluted in PBT-NGS. Following a final wash in PBT, wings were mounted on slides in Aqua- Poly/Mount medium (Polysciences Inc.).
 
-## In vivo imaging
+### In vivo imaging
 
 Time-lapse analyses were performed using the standard procedure as described by Aigouy et al. (2004, 2008), Kumar et al. (2015), and Soustelle et al. (2008). Photo bleaching was avoided by using low magnification and reduced exposure time. Maximum projections for time-lapse and confocal images were obtained by using the ImageJ software. Images were annotated by using Adobe Photoshop and Illustrator.
 
 Quantification methods were defined previously (Berzsenyi et al., 2011; Kumar et al., 2015). Briefly, based on the time-lapse movies, the migratory process was subdivided in three phases: the earliest one describes migration initiation around 18 hAPF; this time point defines the movement of the soma of the first cell at the front of the chain. The intermediate phase identifies the time at which the glial chain reaches the level of the nerve on the costa, which is around 22 hAPF; the latest phase refers to migration completion, upon connection of the chain with the proximal glia located on the radius nerve, at around 28 hAPF, see panels shown in Figure 1a–c. The time points (hAPF) that were used to define these three migratory phases were calculated on the basis of time-lapse movies performed in at least 10 control animals (n≥10). In order to quantify the migratory defects, the differences in time between the control and mutant wings were compared and the graphs were plotted using the standard Student's t test method.
 
-## Statistical analysis
+### Statistical analysis
 
 The number of wings dissected for each experiment and genotype were more than or equal to 30. The Migratory Index (Kumar et al., 2015) defines the percentage of wings in which glial cells have completed migration at a given time point (28 hAPF in most cases). Graphs were made using Prism software, and the Student's t test method was used for the comparison between two different experimental sets. Error bars indicate the standard error mean (s.e.m.). p values: ***p<0.0001; **p <0.001; *p<0.05.

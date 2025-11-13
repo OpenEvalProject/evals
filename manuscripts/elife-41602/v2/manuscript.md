@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.41602.001 Most efforts to estimate the reproducibility of published findings have focused on specific areas of research, even though science is usually assessed and funded on a regional or national basis. Here we describe a project to assess the reproducibility of findings in biomedical science published by researchers based in Brazil. The Brazilian Reproducibility Initiative is a systematic, multicenter effort to repeat between 60 and 100 experiments: the project will focus on a set of common methods, repeating each experiment in three different laboratories from a countrywide network. The results, due in 2021, will allow us to estimate the level of reproducibility of biomedical science in Brazil, and to investigate what aspects of the published literature might help to predict whether a finding is reproducible.
+Most efforts to estimate the reproducibility of published findings have focused on specific areas of research, even though science is usually assessed and funded on a regional or national basis. Here we describe a project to assess the reproducibility of findings in biomedical science published by researchers based in Brazil. The Brazilian Reproducibility Initiative is a systematic, multicenter effort to repeat between 60 and 100 experiments: the project will focus on a set of common methods, repeating each experiment in three different laboratories from a countrywide network. The results, due in 2021, will allow us to estimate the level of reproducibility of biomedical science in Brazil, and to investigate what aspects of the published literature might help to predict whether a finding is reproducible.
 
 ## Introduction
 
@@ -41,13 +41,13 @@ The Brazilian Reproducibility Initiative was started in early 2018 as a systemat
 
 Any project with the ambition of estimating the reproducibility of a country’s science is inevitably limited in scope by the expertise of the participating teams. We will aim for the most representative sample that can be achieved without compromising feasibility, through the use of the strategies described below. Nevertheless, representativeness will be limited by the selected techniques and biological models, as well as by our inclusion and exclusion criteria – which include the cost and commercial availability of materials and the expertise of the replicating labs.
 
-## Focus on individual experiments
+### Focus on individual experiments
 
 Our first choice was to base our sample on experiments rather than articles. As studies in basic biomedical science usually involve many experiments with different methods revolving around a hypothesis, trying to reproduce a whole study, or even its main findings, can be cumbersome for a large-scale initiative. Partly because of this, the Reproducibility Project: Cancer Biology (RP:CB), which had originally planned to reproduce selected main findings from 50 studies, has been downsized to fewer than 20 (Kaiser, 2018). Moreover, in some cases RP:CB has been able to reproduce parts of a study but has also obtained results that cannot be interpreted or are not consistent with the original findings. Furthermore, the individual Replication Studies published by RP:CB do not say if a given replication attempt has been successful or not: rather, the project uses multiple measures to assess reproducibility.
 
 Contrary to studies, experiments have well defined effect sizes, and although different criteria can be used for what constitutes a successful replication (Goodman et al., 2016; Open Science Collaboration, 2015), they can be defined objectively, allowing a quantitative assessment of reproducibility. Naturally, there is a downside in that replication of a single experiment is usually not enough to confirm or refute the conclusions of an article (Camerer et al., 2018). However, if one’s focus is not on the studies themselves, but rather on evaluating reproducibility on a larger scale, we believe that experiments represent a more manageable unit than articles.
 
-## Selection of methods
+### Selection of methods
 
 No replication initiative, no matter how large, can aim to reproduce every kind of experiment. Thus, our next choice was to limit our scope to common methodologies that are widely available in the country, in order to ensure that we will have a large enough network of potential collaborators. To provide a list of candidate methods, we started by performing an initial review of a sample of articles in Web of Science life sciences journals published in 2017, filtering for papers which: a) had all authors affiliated with a Brazilian institution; b) presented experimental results on a biological model; c) did not use clinical or ecological samples. One hundred randomly selected articles had data extracted concerning the models, experimental interventions and methods used to analyze outcomes: the main results are shown in Figure 1A and B. A more detailed protocol for this step is available at https://osf.io/f2a6y/.
 
@@ -63,7 +63,7 @@ We will restrict our sample to experiments that: a) represent one of the main fi
 
 After experiments are selected, we will record each study’s methods description in standardized description forms, which will be used to define replication protocols. These experiments will then be assigned to three laboratories each by the coordinating team, which will confirm that they have the necessary expertise in order to perform it.
 
-## Multicenter replication
+### Multicenter replication
 
 A central tenet of our project is that replication should be performed in multiple laboratories. As discussed in other replication projects (Errington et al., 2014; Gilbert et al., 2016; Open Science Collaboration, 2015) a single failed replication is not enough to refute the original finding, as there are many reasons that can explain discrepancies between results (Goodman et al., 2016). While some of them – such as misconduct or bias in performing or analyzing the original experiment – are problematic, others – such as unrecognized methodological differences or chance – are not necessarily as alarming. Reproducibility estimates based on single replications cannot distinguish between these causes, and can thus be misleading in terms of their diagnoses (Jamieson, 2018).
 
@@ -75,7 +75,7 @@ Our plan for the Brazilian Reproducibility Initiative is to perform each individ
 
 To avoid this, we will take a more naturalistic approach. Although details included in the original article will be followed explicitly in order for the replication to be as direct as possible, steps which are not described will be left open for each replication team to fill based on their best judgment. Replication teams will be required to record those choices in detailed methods description forms, but it is possible – and desirable – for them to vary according to each laboratory’s experience. Methodological discrepancies in this case should approach those observed between research groups working independently, providing a realistic estimate of inter-laboratory variation for the assessment of published findings. This approach will also allow us to explore the impact of methodological variation on the experimental results – a topic perhaps as important as reproducibility itself – as a secondary outcome of the project.
 
-## Protocol review
+### Protocol review
 
 A central issue in other replication projects has been engagement with the original authors in order to revise protocols. While we feel this is a worthy endeavor, the rate of response to calls for sharing protocols, data or code is erratic (Hardwicke and Ioannidis, 2018; Stodden et al., 2018; Wicherts et al., 2011). Moreover, having access to unreported information is likely to overestimate the reproducibility of a finding based on published information, leading results to deviate from a ‘naturalistic’ estimate of reproducibility (Coyne, 2016). Thus, although we will contact the original authors for protocol details when these are available, in order to assess methodological variation between published studies and replications, this information will not be made available to the replication teams. They will receive only the protocol description from the published article, with no mention of its results or origin, in order to minimize bias. While we cannot be sure that this form of blinding will be effective, as experiments could be recognizable by scientists working in the same field, replicating labs will be stimulated not to seek this information.
 

@@ -10,15 +10,15 @@
 
 ### Affiliations
 
-1. https://ror.org/035b05819 Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen Copenhagen Denmark
-2. https://ror.org/048a87296 Molecular Epidemiology, Department of Medical Sciences, and Science for Life Laboratory, Uppsala University Uppsala Sweden
-3. https://ror.org/035b05819 Department of Public Health, Section of Epidemiology, Faculty of Health and Medical Sciences, University of Copenhagen Copenhagen Denmark
+1. Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
+2. Molecular Epidemiology, Department of Medical Sciences, and Science for Life Laboratory, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))
+3. Department of Public Health, Section of Epidemiology, Faculty of Health and Medical Sciences, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
 
 † Corresponding author
 
 ## Abstract
 
-Physical inactivity and increased sedentary time are associated with excess weight gain in observational studies. However, some longitudinal studies indicate reverse causality where weight gain leads to physical inactivity and increased sedentary time. As observational studies suffer from reverse causality, it is challenging to assess the true causal directions. Here, we assess the bidirectional causality between physical inactivity, sedentary time, and adiposity by bidirectional Mendelian randomization analysis. We used results from genome-wide association studies for accelerometer-based physical activity and sedentary time in 91,105 individuals and for body mass index (BMI) in 806,834 individuals. We implemented Mendelian randomization using CAUSE method that accounts for pleiotropy and sample overlap using full genome-wide data. We also applied inverse variance-weighted, MR-Egger, weighted median, and weighted mode methods using genome-wide significant variants only. We found evidence of bidirectional causality between sedentary time and BMI: longer sedentary time was causal for higher BMI [beta (95% CI) from CAUSE method: 0.11 (0.02, 0.2), p = 0.02], and higher BMI was causal for longer sedentary time (0.13 (0.08, 0.17), p = 6.3 x 10 -4 ). Our analyses suggest that higher moderate and vigorous physical activity are causal for lower BMI (moderate: –0.18 (-0.3,–0.05), p = 0.006; vigorous: –0.16 (-0.24,–0.08), p = 3.8 × 10 -4 ), but indicate that the association between higher BMI and lower levels of physical activity is due to horizontal pleiotropy. The bidirectional, causal relationship between sedentary time and BMI suggests that decreasing sedentary time is beneficial for weight management, but also that targeting adiposity may lead to additional health benefits by reducing sedentary time.
+Physical inactivity and increased sedentary time are associated with excess weight gain in observational studies. However, some longitudinal studies indicate reverse causality where weight gain leads to physical inactivity and increased sedentary time. As observational studies suffer from reverse causality, it is challenging to assess the true causal directions. Here, we assess the bidirectional causality between physical inactivity, sedentary time, and adiposity by bidirectional Mendelian randomization analysis. We used results from genome-wide association studies for accelerometer-based physical activity and sedentary time in 91,105 individuals and for body mass index (BMI) in 806,834 individuals. We implemented Mendelian randomization using CAUSE method that accounts for pleiotropy and sample overlap using full genome-wide data. We also applied inverse variance-weighted, MR-Egger, weighted median, and weighted mode methods using genome-wide significant variants only. We found evidence of bidirectional causality between sedentary time and BMI: longer sedentary time was causal for higher BMI [beta (95% CI) from CAUSE method: 0.11 (0.02, 0.2), p = 0.02], and higher BMI was causal for longer sedentary time (0.13 (0.08, 0.17), p = 6.3 x 10-4). Our analyses suggest that higher moderate and vigorous physical activity are causal for lower BMI (moderate: –0.18 (-0.3,–0.05), p = 0.006; vigorous: –0.16 (-0.24,–0.08), p = 3.8 × 10-4), but indicate that the association between higher BMI and lower levels of physical activity is due to horizontal pleiotropy. The bidirectional, causal relationship between sedentary time and BMI suggests that decreasing sedentary time is beneficial for weight management, but also that targeting adiposity may lead to additional health benefits by reducing sedentary time.
 
 ## Introduction
 
@@ -38,6 +38,73 @@ Here, we aimed to assess the causality between the genetic liability of physical
 
 We used the Mendelian randomization CAUSE method to take advantage of the full genome-wide summary results (Morrison et al., 2020). We found evidence of causality between higher vigorous and moderate physical activity and lower BMI (p = 3.8 × 10–4 and p = 0.006, respectively), and between more sedentary time and higher BMI (p = 0.02) (Table 1, Figure 2, and Appendix 1—table 1 and Appendix 1—table 2). In absolute units, we approximate that each one hour daily increase in moderate physical activity or decrease in sedentary time causally decreased BMI by 0.27 kg/m2 (~0.8 kg) or 0.14 kg/m2 (~0.4 kg) (Appendix 1—table 3). The median shared effect, which reflects the effect induced by correlated horizontal pleiotropy, ranged from –0.01 to 0 for all trait pairs, indicating that there was no bias induced by horizontal pleiotropy. The low q values under the causal model (q = 0.18–0.20), which reflect the proportion of variants that show correlated horizontal pleiotropy, also suggested that horizontal pleiotropy was limited. We checked for the existence of possible outlier variants that could have a large effect on the exposure but no effect on the outcome, by producing a scatter plot for CAUSE test statistics on the causal association between BMI and sedentary time (Appendix 1—figure 1). While CAUSE is not sensitive to outliers as such, the existence of outlier variants could provide evidence against the causal model. However, we found no evidence of outlier variants. As we found high shared model q values in our CAUSE analyses (q=0.7-0.9), which may suggest that the genetic effects between the two traits are highly correlated and causality will be difficult to establish, we also assessed the genetic correlation between BMI and sedentary time. However, the genetic correlation analysis suggested only a modest genetic correlation between BMI and sedentary time (rg=0.27), which provides further reassurance that our CAUSE results are valid.
 
+**Table 1.**
+ Results for Mendelian randomization analyses using the CAUSE method.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Causal model better fit for the data</th>
+    </tr>
+    <tr>
+      <th>Direction</th>
+      <th>Median causal effect (95% CI)</th>
+      <th>Median q (CI)</th>
+      <th>P causal vs sharing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vigorous PA→ BMI</td>
+      <td>–0.16 (-0.24,–0.08)</td>
+      <td>0.19 (0, 0.86)</td>
+      <td>3.8 × 10–04</td>
+    </tr>
+    <tr>
+      <td>Moderate PA→ BMI</td>
+      <td>–0.18 (-0.3,–0.05)</td>
+      <td>0.20 (0.01, 0.86)</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Sedentary time → BMI</td>
+      <td>0.11 (0.02, 0.20)</td>
+      <td>0.19 (0, 0.86)</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>BMI → Sedentary time</td>
+      <td>0.13 (0.08, 0.17)</td>
+      <td>0.18 (0, 0.85)</td>
+      <td>6.3 × 10–4</td>
+    </tr>
+    <tr>
+      <td colspan="4">Sharing model better fit for the data</td>
+    </tr>
+    <tr>
+      <td>Direction</td>
+      <td>Median shared effect (CI)</td>
+      <td>Median q (CI)</td>
+      <td>P causal vs sharing</td>
+    </tr>
+    <tr>
+      <td>BMI → Vigorous PA</td>
+      <td>–0.16 (-0.19,–0.14)</td>
+      <td>0.90 (0.77, 0.98)</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>BMI → Moderate PA</td>
+      <td>–0.14 (-0.19,–0.11)</td>
+      <td>0.77 (0.55, 0.95)</td>
+      <td>0.31</td>
+    </tr>
+  </tbody>
+</table>
+
+_BMI, Body mass index (BMI); SE, standard error; N SNPs, number of single-nucleotide polymorphism; P, P-value; PA, physical activity; IVW, inverse variance weighted; CI, 95% confidence interval.The results display the data according to the goodness-of-fit for the causal or the sharing model. The median q value indicates the proportion of variants with correlated pleiotropy._
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/70386/elife-70386-fig2-v2.jpg)
 
 **Figure 2.:** Median causal estimates for Mendelian randomization analyses using the CAUSE method are shown in the left panel and mean causal estimates from the inverse variance weighted (IVW), weighted median (Wmedian) and weighted mode (Wmode) methods are shown in the right panel after outlier removal and accounting for horizontal pleiotropy. A diamond (♢) in the estimate for CAUSE indicates that the sharing model fit the data better than the causal model, that is that the association between the traits was more likely to be explained by horizontal correlated pleiotropy than causality. PA, physical activity; BMI, body mass index. Figure icons were created with BioRender.com.
@@ -45,6 +112,169 @@ We used the Mendelian randomization CAUSE method to take advantage of the full g
 In the reverse direction, we found no evidence of a causal effect of BMI on vigorous physical activity (p = 0.35) or moderate physical activity (p = 0.31) using CAUSE (Table 1, Figure 2, and Appendix 1—table 1 and Appendix 1—table 2). However, we found evidence of a causal effect of BMI on more sedentary time (p = 6.3 × 10–4), indicating bidirectional causality between the traits. The median shared effect in the causal association between BMI and sedentary time was zero and the q value was 0.18, suggesting that the causal association between sedentary time and BMI was unlikely to be biased by horizontal pleiotropy. In absolute units, we approximate that each kg/m2 (~3 kg) increase in BMI was causally associated with a 3.5 min increase in sedentary time per day (Appendix 1—table 3).
 
 We also estimated the causal effects of moderate physical activity, vigorous physical activity and sedentary time on BMI with four commonly used Mendelian randomization methods, including IVW, Egger, weighted median and weighted mode methods. Due to the low number of independent, genome-wide significant loci for vigorous physical activity, moderate physical activity and sedentary time that were present in the GWAS results for BMI, we used a less stringent threshold of p < 5 × 10–7 to identify genetic instruments for these traits, resulting in 5, 3, and 5 independent loci, respectively. The directions of causal estimates were consistent with the findings from CAUSE, but the evidence for causality was weaker (Table 2, Figure 2, Appendix 1, and Appendix 1—table 4). To estimate the causal effect of BMI on moderate physical activity, vigorous physical activity and sedentary time, we used genome-wide significant BMI loci (p < 5 × 10–8) as instruments (n = 57, n = 55 and n = 57, respectively). Again, the directions of causal estimates were consistent with the CAUSE results, but the associations were weaker (Table 2, Figure 2, Appendix 1, and Appendix 1—table 5).
+
+**Table 2.**
+ Mendelian randomization results for inverse variance weighted, weighted median, weighted mode, and MR-Egger methods.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Direction</th>
+      <th colspan="4">Vigorous physical activity → BMI</th>
+      <th colspan="4">Moderate physical activity → BMI</th>
+      <th colspan="4">Sedentary time → BMI</th>
+    </tr>
+    <tr>
+      <th>MR method</th>
+      <th>beta</th>
+      <th>SE</th>
+      <th>p-value</th>
+      <th>N SNPs</th>
+      <th>beta</th>
+      <th>SE</th>
+      <th>p-value</th>
+      <th>N SNPs</th>
+      <th>beta</th>
+      <th>SE</th>
+      <th>p-value</th>
+      <th>N SNPs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IVW</td>
+      <td>–0.17</td>
+      <td>0.08</td>
+      <td>0.04</td>
+      <td>5</td>
+      <td>–0.24</td>
+      <td>0.12</td>
+      <td>0.05</td>
+      <td>3</td>
+      <td>0.11</td>
+      <td>0.08</td>
+      <td>0.16</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>–0.18</td>
+      <td>0.10</td>
+      <td>0.08</td>
+      <td>5</td>
+      <td>–0.18</td>
+      <td>0.12</td>
+      <td>0.13</td>
+      <td>3</td>
+      <td>0.10</td>
+      <td>0.10</td>
+      <td>0.29</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Weighted mode</td>
+      <td>–0.19</td>
+      <td>0.12</td>
+      <td>0.19</td>
+      <td>5</td>
+      <td>–0.14</td>
+      <td>0.15</td>
+      <td>0.43</td>
+      <td>3</td>
+      <td>0.08</td>
+      <td>0.14</td>
+      <td>0.59</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>1.33</td>
+      <td>2.21</td>
+      <td>0.59</td>
+      <td>5</td>
+      <td>0.12</td>
+      <td>0.45</td>
+      <td>0.84</td>
+      <td>3</td>
+      <td>0.49</td>
+      <td>0.36</td>
+      <td>0.26</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Direction</td>
+      <td colspan="4">BMI → Vigorous physical activity</td>
+      <td colspan="4">BMI → Moderate physical activity</td>
+      <td colspan="4">BMI → Sedentary time</td>
+    </tr>
+    <tr>
+      <td>IVW</td>
+      <td>–0.07</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>57</td>
+      <td>–0.06</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>55</td>
+      <td>0.07</td>
+      <td>0.03</td>
+      <td>0.01</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>Weighted mode</td>
+      <td>–0.01</td>
+      <td>0.06</td>
+      <td>0.83</td>
+      <td>57</td>
+      <td>0.02</td>
+      <td>0.06</td>
+      <td>0.68</td>
+      <td>55</td>
+      <td>–0.06</td>
+      <td>0.08</td>
+      <td>0.46</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>–0.04</td>
+      <td>0.03</td>
+      <td>0.27</td>
+      <td>57</td>
+      <td>0.003</td>
+      <td>0.04</td>
+      <td>0.93</td>
+      <td>55</td>
+      <td>0.03</td>
+      <td>0.04</td>
+      <td>0.48</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>0.13</td>
+      <td>0.07</td>
+      <td>0.06</td>
+      <td>57</td>
+      <td>0.16</td>
+      <td>0.07</td>
+      <td>0.04</td>
+      <td>55</td>
+      <td>–0.02</td>
+      <td>0.08</td>
+      <td>0.76</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td colspan="13">BMI, Body mass index (BMI); SE, standard error; N SNPs, number of single nucleotide polymorphism; IVW, inverse variance weighted; CI, 95% confidence interval.</td>
+    </tr>
+  </tbody>
+</table>
+
+_The results display the data according to the goodness-of-fit for the causal or the sharing model. The median q value indicates the proportion of variants with correlated pleiotropy. CI, confidence interval; PA, physical activity; BMI, body mass index; P, P-value._
 
 The results from CAUSE analyses for BFP were consistent with those for BMI, that is there was evidence of a causal effect of higher vigorous and moderate physical activity on lower BFP (p = 1.4 × 10–6 and p = 0.004, respectively), and a causal effect of more sedentary time on higher BFP (p = 0.009) (Figure 2, Appendix 1—table 6 and Appendix 1—table 7, Appendix 1—figure 2). We found no evidence of a causal relationship between physical activity or sedentary time and measures of central adiposity, including WCadjBMI and WHRadjBMI (Figure 2, Appendix 1—table 6 and Appendix 1—table 7, Appendix 1—figure 2).
 
@@ -62,13 +292,13 @@ In conclusion, the present Mendelian randomization analyses indicate a bidirecti
 
 ## Materials and methods
 
-## Data sources and populations
+### Data sources and populations
 
 We used summary results from the largest published genome-wide association studies (GWAS) of objectively assessed physical activity, sedentary behavior, and BMI in individuals of European ancestry. The physical activity GWAS included up to 91,105 individuals for accelerometer-based vigorous physical activity, moderate physical activity, or sedentary time from the UK Biobank (Klimentidis et al., 2018; Doherty et al., 2018). In these studies, accelerometer was worn continuously for at least 72 hr and up to 7 days. Vigorous physical activity was defined as the fraction of accelerations > 425 milli-gravities, and moderate physical activity was predicted using a machine-learning method for moderate intensity activity time (Doherty et al., 2018). Sedentary time was defined as the time spent in activities with metabolic equivalent of task (MET) ≤1.5 during sitting, lying, or in reclining posture, except for driving and certain non-desk work instances where MET ≤2.5 was applied (Doherty et al., 2018). For BMI, we utilized GWAS results from a meta-analysis of the Genetic Investigation of Anthropometric Traits (GIANT Consortium) and the UK Biobank data, including altogether 806,834 individuals of European ancestry (Pulit et al., 2019). For Mendelian randomization analyses using the inverse variance-weighted (IVW), weighted median, weighted mode, and MR-Egger regression methods, we used only the GIANT Consortium BMI meta-analysis data of 339,224 individuals without the UK Biobank data to avoid sample overlap between the exposure and outcome traits as these methods are sensitive to bias from overlapping samples (Locke et al., 2015).
 
 In addition to BMI, we assessed causal effects of physical activity and sedentary time on body fat percentage (BFP) and on two measures of central adiposity, including waist circumference and waist-hip ratio adjusted for BMI (WCadjBMI and WHRadjBMI, respectively). GWAS results for BFP were available from an analysis of 454,633 participants of European ancestry in the UK Biobank (Elsworth et al., 2020). GWAS results for WCadjBMI and WHRadjBMI were available from GIANT Consortium meta-analyses of 231,355 and 694,649 individuals of European ancestry, respectively (Justice et al., 2017; Pulit et al., 2019).
 
-## Mendelian randomization using full genome-wide summary results for the exposure trait
+### Mendelian randomization using full genome-wide summary results for the exposure trait
 
 Only few genetic loci have been found to be associated with accelerometer-based moderate physical activity (n = 2), vigorous physical activity (n = 1) or sedentary time (n = 4) at genome-wide significance (p < 5 × 10–8) (Klimentidis et al., 2018; Doherty et al., 2018), and the loci thus provide a limited power to study causal associations with BMI using Mendelian randomization. The recently published Causal Analysis Using Summary Effect Estimates (CAUSE) Mendelian randomization method (Morrison et al., 2020) improves statistical power in such cases, by utilizing full genome-wide summary results instead of genome-wide significant loci only. Furthermore, the CAUSE method is able to correct for sample overlap between the exposure and the outcome trait, which allows using the largest sample sizes available for both traits. CAUSE has also been found to be less prone to identify false positive associations compared to other commonly used Mendelian randomization methods (Burgess et al., 2019; Morrison et al., 2020).
 
@@ -76,7 +306,7 @@ The CAUSE method calculates the posterior probabilities of the causal effect and
 
 We used the CAUSE settings and procedures originally recommended by the authors (Morrison et al., 2020), with the exception of q priors that were set to fit the strictest model possible (q_alpha = 1 and q_beta = 2) in order to avoid false positive findings. A thorough explanation of the steps used to perform CAUSE analysis is included in the supplementary text (Appendix 1).
 
-## Mendelian randomization using genome-wide significant loci for the exposure trait
+### Mendelian randomization using genome-wide significant loci for the exposure trait
 
 In addition to the CAUSE method that implements Mendelian randomization analyses using full genome-wide summary results for the exposure trait, we implemented four commonly used Mendelian randomization methods that utilize genome-wide significant loci only: the IVW, MR-Egger, weighted median and weighted mode methods (Appendix 1). We performed sensitivity analyses using Steiger filtering to remove variants that showed stronger association with the outcome than the exposure trait and that were thus not considered suitable as instruments for the exposure trait. To create the genetic instrument for the exposure trait, we only included the lead variants that showed genome-wide significant associations with the trait (p < 5 × 10–8) and with a pairwise linkage disequilibrium (LD) r2 <0.001 with their neighboring variants, in a window of 10,000 kb. Variants that were not available in the outcome trait GWAS were substituted by their LD proxies (r2 >0.8). Palindromic variants (A/T, G/C) were excluded. If less than three genetic variants were identified with these parameters, we used a less stringent p-value threshold of p < 5 × 10–7 to identify enough genetic instruments. In order to assess the strength of the genetic instrument, we obtained F-statistics for each trait. The analyses were performed using the TwoSampleMR package in R and are described in detail in the Appendix 1 (Hemani et al., 2018).
 

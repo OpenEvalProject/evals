@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.43983.001 Many ‘non-enveloped’ viruses, including hepatitis A virus (HAV), are released non-lytically from infected cells as infectious, quasi-enveloped virions cloaked in host membranes. Quasi-enveloped HAV (eHAV) mediates stealthy cell-to-cell spread within the liver, whereas stable naked virions shed in feces are optimized for environmental transmission. eHAV lacks virus-encoded surface proteins, and how it enters cells is unknown. We show both virion types enter by clathrin- and dynamin-dependent endocytosis, facilitated by integrin β 1 , and traffic through early and late endosomes. Uncoating of naked virions occurs in late endosomes, whereas eHAV undergoes ALIX-dependent trafficking to lysosomes where the quasi-envelope is enzymatically degraded and uncoating ensues coincident with breaching of endolysosomal membranes. Neither virion requires PLA2G16, a phospholipase essential for entry of other picornaviruses. Thus naked and quasi-enveloped virions enter via similar endocytic pathways, but uncoat in different compartments and release their genomes to the cytosol in a manner mechanistically distinct from other Picornaviridae .
+Many ‘non-enveloped’ viruses, including hepatitis A virus (HAV), are released non-lytically from infected cells as infectious, quasi-enveloped virions cloaked in host membranes. Quasi-enveloped HAV (eHAV) mediates stealthy cell-to-cell spread within the liver, whereas stable naked virions shed in feces are optimized for environmental transmission. eHAV lacks virus-encoded surface proteins, and how it enters cells is unknown. We show both virion types enter by clathrin- and dynamin-dependent endocytosis, facilitated by integrin β1, and traffic through early and late endosomes. Uncoating of naked virions occurs in late endosomes, whereas eHAV undergoes ALIX-dependent trafficking to lysosomes where the quasi-envelope is enzymatically degraded and uncoating ensues coincident with breaching of endolysosomal membranes. Neither virion requires PLA2G16, a phospholipase essential for entry of other picornaviruses. Thus naked and quasi-enveloped virions enter via similar endocytic pathways, but uncoat in different compartments and release their genomes to the cytosol in a manner mechanistically distinct from other Picornaviridae.
 
 ## Introduction
 
@@ -31,23 +31,75 @@ Little is known about how these two virion types enter cells, although prior stu
 
 ## Results
 
-## Determinants of HAV and eHAV endocytosis
+### Determinants of HAV and eHAV endocytosis
 
 To identify the endocytic pathways responsible for internalization of HAV and eHAV virions in Huh-7.5 human hepatoma cells, we used pharmacological and genetic approaches to disrupt the function of regulators of several canonical endocytic routes. Inhibition of clathrin- and dynamin-mediated endocytosis by the drugs chlorpromazine and dynasore, respectively, strongly inhibited the uptake of both gradient-purified HAV and eHAV virions, as measured by RT-PCR quantitation of the viral genome in cell lysates 6 hr post-infection (hpi) (Figure 1A, Figure 1—figure supplement 1). In contrast, inhibiting cavaeolae-dependent endocytosis with filipin resulted in mild impairment of eHAV entry only, whereas inhibiting cytosolic dynein, actin- and/or Rac1-dependent micropinocytosis, or heparan sulfate proteoglycan binding with various compounds had no effect on the entry of either virion type (Figure 1A). Roles for clathrin and dynamin in the uptake of both HAV and eHAV were confirmed by siRNA-mediated depletion of clathrin heavy chain (CLTC), the µ1 subunit of the clathrin-associated adaptor complex 2 (AP2M1), or dynamin-2 (DNM2) (Figure 1B, Figure 1—figure supplement 2A). Caveolin-1 (CAV1) depletion minimally inhibited entry of eHAV only, consistent with the effect of filipin treatment, while depleting the clathrin- and caveolae-independent endocytosis regulators ADP ribosylation factor 6 (ARF6) and flotillin-1 (FLOT1) had no significant effect. Consistent with these results, confocal fluorescence microscopy revealed a high-degree of co-localization of both HAV and eHAV capsid antigen with clathrin-coated vesicles between ~0.5–1 hpi, and minimal co-localization of the eHAV capsid only with caveolin-1 (Figure 1C). Thus, both HAV and eHAV entry occur primarily through clathrin- and dynamin-dependent endocytosis, although caveolin-dependent endocytosis may play a minor role in eHAV uptake.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig1-v2.jpg)
+
+**Figure 1.:** (A) Effect of endocytic inhibitors on HAV and eHAV entry quantified by RT-PCR (mean ± SD, n = 3 independent experiments). (B) Effect of siRNA-mediated depletion of endocytic regulators on HAV and eHAV entry (mean ± SD, n = 3 independent experiments). See Figure 1—figure supplement 2A for knockdown efficiencies. (C) Confocal micrographs of Huh-7.5 cells immunolabeled with anti-HAV capsid (K24F2) and anti-clathrin or anti-caveolin-1 at one hpi. Scale bar, 10 µm. (D) Effect of siRNA-mediated depletion of integrins and adhesion molecules on HAV and eHAV entry (mean ± SD, n = 3 independent experiments). See Figure 1—figure supplement 2B for knockdown efficiencies. (E) Effect of β1 integrin knockdown on HAV/eHAV attachment to cells 2 hpi at 4˚C (mean ± SD, n = 6 biological replicates from two independent experiments) or on HAV and eHAV uptake 6 hpi at 37˚C (mean ± SD, n = 3 independent experiments). (F) Levels of HAV RNA at 20 hpi in H1-HeLa engineered by CRISPR/Cas9 using a control or a specific ITGB1-targeting sgRNA (mean ± SD, n = 3 biological replicates of a representative experiment). (G) Replication of rapid-replicating HAV (18 f) in sgITGB1 H1-HeLa cells (mean ± SD, n = 3). (H) Effect of an inhibitory RGD-containing peptide or β1 integrin activating antibodies on HAV and eHAV uptake (mean ± SD, n = 3–4 biological replicates of a representative experiment). (I) Confocal micrographs of Huh-7.5 cells incubated at 4˚C or 37˚C for 1 hr and immunolabeled with anti-HAV capsid (K24F2) and anti-β1 integrin. Scale bar, 10 µm. For numeric data plotted in graphs associated with this figure, see Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Cells were then rinsed, placed on ice for 10 min, and incubated with 10–25 µg/ml Alexa 594-conjugated Transferrin or cholera toxin subunit B diluted in supplemented DMEM for 15–20 min at 37˚C prior to fixation and imaging.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Immunoblots showing knockdown efficiency of siRNA transfections related to Figure 1B. (B) Immunoblots showing knockdown efficiency of siRNA transfections related to Figure 1D.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Immunoblots of whole-cell lysates harvested from the indicated cell lines.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Scale bar, 10 µm.
 
 The host proteins associated with the eHAV quasi-envelope are similar to those identified in exosomes (McKnight et al., 2017). This suggests that eHAV entry might be mediated by integrins or adhesion molecules previously reported to be involved in the uptake of EVs (van Dongen et al., 2016). Consistent with this hypothesis, siRNA-mediated depletion of integrin β1 (ITGB1) resulted in a striking and highly significant reduction in the uptake of quasi-enveloped as well as naked virions (Figure 1D, Figure 1—figure supplement 2B). Depleting integrin β1 did not reduce the quantity of eHAV or HAV bound to the cell surface at 4°C, but significantly reduced the amount of eHAV and HAV RNA present in Huh-7.5 cells 6 hpi at 37˚C (Figure 1E). CRISPR/Cas9 knockout of ITGB1 also reduced both eHAV and HAV uptake and spread in H1-HeLa cells (Figure 1F,G). Consistent with these results, pre-treating Huh-7.5 cells with an RGD peptide containing an integrin β1-binding motif reduced uptake of both virion types by about 50% (Figure 1H). On the other hand, pre-treating cells with antibodies that activate integrin β1 by binding to and stabilizing specific β1 conformations (Su et al., 2016) increased viral uptake compared to an inert integrin β1 antibody (K-20), and revealed differences in the interaction of integrin β1 with eHAV versus HAV (Figure 1H). The activating antibody TS2/16, which binds an open conformation of β1 (Su et al., 2016), enhanced eHAV but not HAV entry, whereas 8E3 and HUTS-4, which bind extended and open headpiece β1 conformations, respectively, had the opposite effect, enhancing naked HAV but not quasi-enveloped eHAV entry. These data hint at differences in the ligands, yet to be identified, that are bound by integrin β1 during eHAV and HAV entry.
 
 In contrast to the impact of integrin β1 depletion, depletion experiments failed to confirm a requirement for any specific α integrin in the uptake of either virion (Figure 1D, Figure 1—figure supplement 2B). While RNAi-mediated depletion of integrin α1 caused a modest but statistically significant decrease in HAV uptake in Huh-7.5 cells, this was not confirmed in H1-HeLa cells with CRISPR/Cas9 knockout of ITGA1 (Figure 1D, Figure 1—figure supplement 3). Confocal microscopic imaging also suggested eHAV was associated with integrin β1, both at the surface of Huh-7.5 cells at 4°C and during virion internalization at 37˚C (Figure 1I), but not with either α5 or αV integrins (Figure 1E, Figure 1—figure supplement 4). Collectively, these results demonstrate that HAV and eHAV are dependent on distinct integrin β1 interactions for uptake by clathrin- and dynamin-mediated endocytosis, but leave unanswered the role of α integrins.
 
-## Distinct intracellular trafficking routes for naked and quasi-enveloped HAV
+### Distinct intracellular trafficking routes for naked and quasi-enveloped HAV
 
 Several GTPases are well-known for their role in the sorting of cargo through functionally distinct endosomes, with Rab5A and Rab7a involved in trafficking through early and late endosomes, respectively (Mellman, 1996; Mercer et al., 2010). Confocal microscopy of infected Huh-7.5 cells revealed transient co-localization of the capsid antigen in both naked and quasi-enveloped virions with Rab5A+ and Rab7a+ compartments around~1–2 hpi (Figure 2A). In contrast, neither type of virion was associated with Rab11A+ recycling endosomes. RNAi-mediated depletion of Rab5A or Rab7a, but not Rab11A, resulted in a significant reduction in the accumulation of intracellular HAV RNA (Figure 2B, Figure 2—figure supplement 1). Thus, both types of HAV virions traffic through early and late endosomes shortly after uptake into the cell through clathrin-mediated endocytosis.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig2-v2.jpg)
+
+**Figure 2.:** (A) Confocal micrographs of Huh-7.5 cells immunolabeled with anti-HAV capsid (K24F2) and anti-Rab5A, Rab7a, or Rab11A at two hpi. Scale bar, 10 µm. (B) Effect of siRNA-mediated depletion of Rab GTPases on HAV and eHAV entry (mean ± SD, n = 3 independent experiments). See Figure 2—figure supplement 1 for knockdown efficiencies. (C) Confocal micrographs of Huh-7.5 cells immunolabeled with anti-HAV capsid (K24F2) and anti-LAMP1 at six hpi. Scale bar, 10 µm. (D) Confocal micrographs of Huh-7.5 cells adsorbed with naked HAV or eHAV and immunolabeled with antibodies against HAV capsid (K24F2), β1 integrin, and either Rab7 or LAMP1. Scale bar, 10 µm. (E) Confocal micrographs of Huh-7.5 cells previously transfected with a control or ALIX-specific siRNAs and immunolabeled with anti-HAV capsid (K24F2) and anti-LAMP1 at 12 hpi with eHAV. Scale bar, 10 µm. See Figure 2—figure supplement 5 for knockdown efficiencies. (F) Effect of ALIX depletion by siRNA on eHAV and HAV entry and replication at 22 hpi (mean ± SD, n = 2 biological replicates for a representative experiment). For numeric data plotted in graphs associated with this figure, see Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Scale bar, 10 µm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Scale bar, 10 µm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Inoculum was removed after 1 hr and cells were fixed and immunostained 5 hr later with anti-HAV (JC polyclonal human sera) and anti-LAMP1. Scale bar, 10 µm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Cells were immunostained at eight hpi using anti-HAV capsid (K24F2) and anti-LAMP1. Scale bar, 10 µm. Knockdown efficiency was determined by immunoblotting or by RT-qPCR (table) using gene-specific primers to obtain calculate expression levels relative to control siRNA-transfected cells.
+
 Our earlier studies suggested that infection with eHAV, but not naked HAV, requires endosomal acidification since it was specifically inhibited by the lysosomal poison, chloroquine (Feng et al., 2013). Consistent with this, confocal microscopy demonstrated that the capsid antigen associated with quasi-enveloped eHAV, but not naked HAV, was selectively trafficked to LAMP1+ and VAMP8+ lysosomes as early as 4 hpi, remaining there up to 12 hpi (Figure 2C, Figure 2—figure supplement 2). Notably, naked virion capsid antigen was never found to be associated with lysosomes, suggesting that Rab7a+ late endosomes represent the final trafficking destination of naked HAV. Importantly, sorting of both eHAV and naked HAV virions was associated with co-internalization of integrin β1 to these endolysosomal compartments (Figure 2D, Figure 2—figure supplement 3). Similar results were obtained when integrin β1 expressed on the cell surface was labeled prior to virus adsorption with the activating monoclonal antibody TS2/16 (Figure 2D, Figure 2—figure supplement 4), which triggers the endocytosis and trafficking of integrin β1 to lysosomes (Margadant et al., 2012). Since components of the ESCRT machinery, particularly ALIX, are involved in endosomal sorting to the lysosome (Dores et al., 2016; Murrow et al., 2015), we asked whether eHAV trafficking to the lysosome is dependent on ESCRT. Strikingly, quasi-enveloped eHAV virions failed to reach the lysosome in cells depleted of ALIX, but not the ESCRT-III proteins CHMP1B or CHMP2A (Figure 2E, Figure 2—figure supplement 5). The apparent lack of a requirement for these ESCRT-III proteins could reflect less robust depletion of the targeted mRNA than that achieved with ALIX (Figure 2—figure supplement 5), or possibly the existence of functionally redundant homologs such as CHMP2B. Consistent with the imaging studies, depletion of ALIX had a strong negative effect on the early replication of eHAV, but not naked HAV (Figure 2F). Altogether, these results demonstrate that while both types of virions reach the late endosome, only eHAV is trafficked to the lysosome through an ALIX-dependent mechanism.
 
-## Loss of the eHAV quasi-envelope occurs within the lysosome
+### Loss of the eHAV quasi-envelope occurs within the lysosome
 
 Although an essential receptor molecule has yet to be identified for HAV (Das et al., 2017), studies with other picornaviruses (Strauss et al., 2015) suggest that the entry of both naked and quasi-enveloped virions is likely to involve binding of the capsid to a specific receptor that triggers uncoating. With quasi-enveloped eHAV, however, this can only occur after the membrane cloaking the capsid is degraded or fuses with a cellular membrane. Fusion seems unlikely given the absence of any virus-encoded proteins in the quasi-envelope (McKnight et al., 2017), whereas the selective targeting of eHAV to lysosomes suggests that the quasi-envelope, despite being stable at pH 5.0, might be degraded by cholesterol transporter proteins and hydrolytic enzymes expressed within late endosomes and lysosomes (Feng et al., 2013; Kolter and Sandhoff, 2010). A similar process has been suggested recently to facilitate the entry of phylogenetically-distinct, quasi-enveloped hepeviruses (Yin et al., 2016). Consistent with this hypothesis, partial siRNA-mediated depletion of the cholesterol transporter Niemann-Pick disease type C1 (NPC1) protein and lysosomal acid lipase (LAL), but not LAMP1, significantly impaired eHAV but not naked HAV infection, likely through altering the kinetics of quasi-envelope degradation (Figure 3A, Figure 3—figure supplement 1). Pharmacological inhibition of NPC1 and LAL with U18666A and Lalistat-2 (Lu et al., 2015; Rosenbaum et al., 2010), respectively, recapitulated these effects individually, and demonstrated an additive effect when combined (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig3-v2.jpg)
+
+**Figure 3.:** (A) Effect of siRNA-mediated depletion of lysosomal-associated proteins on HAV and eHAV entry (mean ± SD, n = 3 independent experiments). See Figure 3—figure supplement 1 for knockdown efficiencies. (B) Effect of inhibition of NPC1 or LAL by U18666A or Lalistat-2, respectively, on HAV and eHAV entry (mean ± SD, n = 3 independent experiments). (C) Strategy for membrane labeling of exosomes and eHAV with PKH26 dye. (D) Confocal micrographs of Huh-7.5 cells inoculated with PKH26-labeled eHAV and immunostained with anti-HAV capsid (K24F2) and anti-LAMP1. Histograms depict pixel intensities for the structures indicated with a yellow arrow. Scale bar, 10 µm. (E) Confocal micrographs of Huh-7.5 cells inoculated with PKH26-labeled eHAV in presence of Lalistat-2 and immunostained with anti-HAV capsid (K24F2) and anti-LAMP1. Graph displays the ratio of structures corresponding to PKH26-associated HAV capsid (green + red signal) over HAV capsids devoid of PKH26 fluorescence (green alone) within lysosomes per cell. Scale bar, 10 µm (F) Effect of Lalistat-2 on post-endocytic antibody-mediated neutralization of eHAV. Neutralizing anti-HAV (JC antibody) was added at the indicated intervals after removal of the inoculum and intracellular viral RNA was quantified at 48 hr (mean ±SD, n = 2 biological replicates for a representative experiment). For numeric data plotted in graphs associated with this figure, see Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Scale bar, 10 µm.
 
 To confirm that the quasi-envelope is degraded within the lysosome, we harvested eHAV from supernatant fluids of infected Huh-7.5 cells and labelled the virions with the membrane-intercalating, red fluorescent dye PKH26 (Figure 3C). PKH26 irreversibly stains membrane lipids, allowing the labelled virions to be purified subsequently by isopycnic ultracentrifugation, and the fate of the quasi-envelope tracked by confocal microscopy following uptake into cells. We combined this approach with immunostaining cells with a monoclonal antibody to the capsid (K24F2) under minimal permeabilization conditions. This allowed us to visualize capsid antigen associated with PKH26-labeled membranes, and to differentiate eHAV from other EVs with similar density that co-purify in iodixanol gradients (Feng et al., 2013; McKnight et al., 2017). Confocal microscopy of Huh-7.5 cells inoculated with the gradient-purified, PKH26-labeled eHAV showed that capsid antigen was surrounded by PKH26-labeled membranes within lysosomes at ~6 hpi (Figure 3D). Thus, eHAV reaches the lysosome cloaked in membranes. At later time points, however, the PKH26 fluorescence was absent although the capsid antigen was still detected within lysosomes, consistent with the quasi-envelope being degraded within the lysosome to produce a naked capsid. As HAV replicates slowly in cell culture (Whetter et al., 1994), newly synthesized capsid antigen associated with the generation of progeny virions was not detected until after ~18–24 hpi, at which time there was minimal localization of capsid antigen within lysosomes.
 
@@ -55,13 +107,29 @@ As the data presented above suggest that LAL is important for eHAV entry (Figure
 
 Although the quasi-envelope protects the virus against neutralization in quantal infectious focus-reduction neutralization assays, our previous studies show that eHAV (but not naked HAV virions) can be neutralized within an endocytic compartment when neutralizing IgG or IgA antibodies are added to cells as late as 4–6 hr after adsorption of the virus (Feng et al., 2013). To determine whether such neutralization is dependent upon LAL-mediated degradation of the quasi-envelope within lysosomes, we pre-treated Huh-7.5 cells with Lalistat-2 prior to infection with naked HAV or eHAV, and added anti-HAV-positive human plasma (‘JC’ plasma) at intervals following removal of the inoculum. Consistent with our previous results (Feng et al., 2013), neutralizing antibodies had no effect on replication of the nonenveloped, naked HAV under these conditions (Figure 3F, top), whereas replication of quasi-enveloped eHAV was substantially reduced when antibody was added as late as ~4 hr after adsorption (Figure 3F, bottom). Importantly, however, the period of time during which eHAV was vulnerable to neutralization was extended significantly in cells treated with Lalistat-2 (Figure 3F, bottom). These results are consistent with Lalistat-2 slowing the transition of eHAV to a neutralization-susceptible state. Collectively, these data show that the quasi-enveloped eHAV capsid remains wrapped in membranes until the virion reaches the lysosome, where the quasi-envelope is degraded by lysosomal enzymes and cholesterol transporter proteins, rendering the capsid susceptible to antibody-mediated neutralization and, presumably, interactions with a yet-to-be-identified receptor.
 
-## Kinetic and spatial differences in uncoating of HAV and eHAV capsids
+### Kinetic and spatial differences in uncoating of HAV and eHAV capsids
 
 To determine whether there are differences in the kinetics of uncoating of naked and quasi-enveloped capsids, we dually immunostained infected cells with a murine monoclonal antibody (K34C8) that recognizes an epitope expressed only on fully assembled capsids, and polyclonal human antibody (JC plasma) that recognizes both assembled capsids and assembly intermediates (14S pentamers) (González-López et al., 2018; Stapleton et al., 1993). Infections were done in the presence of cycloheximide to prevent synthesis of new viral proteins, such that uncoating would lead to loss of K34C8, but not JC, antigenicity. Confocal imaging of cells inoculated with naked HAV particles showed that the K34C8 signal was lost ~1–2 hpi without the capsid ever reaching the lysosome (Figure 4A). In contrast, K34C8-labeled capsid antigen was readily detected at ~4 hpi within lysosomes in cells infected with eHAV. This was followed by a progressive loss of the K34C8 signal, while JC antibody continued to detect capsid antigen within lysosomes up to 12 hpi. Thus, naked virions uncoat relatively rapidly upon entry, likely in a late endosomal compartment, whereas the capsids enclosed within eHAV vesicles do not uncoat until the virus reached the lysosome 4 hr or more following adsorbtion.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig4-v2.jpg)
+
+**Figure 4.:** (A) Confocal micrographs of Huh-7.5 cells adsorbed with HAV or eHAV in presence of cycloheximide immunostained with an antibody that recognizes intact HAV capsids (K34C8), a polyclonal human anti-HAV that recognizes denatured P1 proteins (JC), and LAMP1. Histograms depict pixel intensities for the structures indicated with a yellow arrow. Scale bar, 10 µm. (B) Kinetics of HAV RNA translation measured by nanoluciferase production by HAV-NLuc in H1-HeLa cells pre-treated or not with GnHCl to inhibit viral replication. (C) Schematic of the endolysosomal permeabilization assay using endocytosed ribotoxins. (D) Virus-induced endolysosomal membrane damage at six hpi. H1-HeLa cells were pulsed for 20 min with puromycin prior to cell lysis, and protein synthesis was analyzed by immunoblotting using an anti-puromycin antibody. Alternatively, viruses were incubated overnight at 4˚C with human ‘JC’ plasma containing neutralizing HAV antibodies prior to adsorption and adsorbed as a mix. Band intensities were normalized to actin and protein synthesis is expressed as band intensity in cells infected in presence of α-sarcin relative to cells infected with virus alone (mean ± SD from two independent cultures of a representative of four independent experiments). (E) Micrographs of Huh-7.5 cells with lysosomes pre-loaded with fluorescently-conjugated dextran (10 kDa) prior to adsorption with HAV or eHAV and immunostained using antibodies against HAV capsid (K24F2) and LAMP1. Graphs display the number of dextran +compartments per cell (n = 7–10 cells per condition for a representative of three independent experiments). Scale bar, 10 µm. For numeric data plotted in graphs associated with this figure, see Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) H1-HeLa cells were incubated with 100 µg/ml α-sarcin or 50 µg/ml Restrictocin A for 6 hr at 37˚C, followed by treatment with cycloheximide for 30 min prior to a 20 min pulse with 20 µg/ml puromycin. Protein lysates were harvested, resolved by SDS-PAGE and subjected to immunoblotting using antibodies against puromycin and actin. (B) H1-HeLa cells were adsorbed for 1 hr with gradient-purified eHAV or naked HAV (~1000 GEs/cell) at 37˚C or with HRV14 (10 PFU/cell) at 33˚C in presence or absence of 50 µg/ml Restrictocin A. The inoculum was removed, cells were rinsed with PBS, and incubated for another 5 hr. Cells were then pulsed with puromycin for 20 min and protein lysates were harvested, resolved by SDS-PAGE, and subjected to immublobotting using antibodies against puromycin and actin. Band intensities were quantified, normalized to loading control, and presented as a percentage of virus plus α-sarcin relative to virus alone. Alternatively, viruses were incubated overnight at 4˚C with human ‘JC’ plasma containing neutralizing HAV antibodies and inoculated as such.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Cells were adsorbed for 1 hr with gradient-purified eHAV or naked HAV (~100 or~1000 GEs/cell) at 37˚C or with HRV14 (10 PFU/cell) at 33˚C in presence or absence of α-sarcin followed by a puromycin pulse for 20 min. Protein lysates were harvested and resolved by SDS-PAGE and subjected to immunoblotting using antibodies against puromycin and actin. (B) H1-HeLa cells were adsorbed for 1 hr with gradient-purified eHAV or naked HAV (~1000 GEs/cell) at 37˚C or with HRV14 (10 PFU/cell) at 33˚C in presence or absence of Restrictocin A. The inoculum was removed, cells were rinsed with PBS, and incubated for an additional 2 or 7 hr. Cells were then pulsed with 20 µg/ml puromycin for 20 min, protein lysates were harvested, resolved by SDS-PAGE, and subjected to immunoblotting using antibodies against puromycin and actin.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Scale bar, 10 µm.
+
 To assess how differences in the kinetics of uncoating of naked versus quasi-enveloped virions influence the onset and rate of polyprotein translation and viral RNA replication, we inoculated H1-HeLa cells with gradient-purified virions produced by a recombinant reporter virus that expresses nanoluciferase (HAV-NLuc) from within its polyprotein. Cells were infected in the presence or absence of the picornaviral RNA synthesis inhibitor, guanidine hydrochloride (GnHCl), and production of nanoluciferase measured over time (Figure 4B). Nanoluciferase expression resulting from translation of the incoming naked virus genome could be detected as early as ~4 hpi, while translation of the eHAV genome was not detectable until ~8 hpi. In both cases, nanoluciferase expression increased similarly in the presence or absence of GnHCl for ~10 hr once translation had commenced, following which accelerating increases in the absence of GnHCl indicated the production of new viral transcripts (Figure 4B). Thus, translation of the genomic RNA as well as the first round of RNA replication occurs sooner with naked HAV than with quasi-enveloped eHAV, consistent with the relatively rapid uncoating of the naked virion.
 
-## Endolysosomal membrane damage and hepatovirus entry
+### Endolysosomal membrane damage and hepatovirus entry
 
 The data presented above indicate that late endosomes and lysosomes are the terminal trafficking destinations of naked and quasi-enveloped HAV virions, respectively, and that the capsids associated with these different virion types uncoat and release their RNA genomes within these distinct endolysosomal compartments. However, it is not clear in either case how the RNA genome released from the capsid is then translocated from the endolysosomal lumen to the cytosol where it is translated on ribosomes. The VP4 capsid peptide possesses membrane pore forming activity in vitro (Shukla et al., 2014), but neither HAV nor eHAV has been shown previously to disrupt the integrity of endolysosomal membranes during infection. To determine whether hepatoviruses induce pores in endolysosomal membranes during entry as observed with other picornaviruses, we inoculated cells with eHAV or HAV in the presence of α-sarcin or restrictocin A, membrane-impermeable ribotoxins that are released into the cytoplasm only if endolysosomal membranes are compromised (Figure 4C) (Cuadras et al., 1997; Fernández-Puentes and Carrasco, 1980; Staring et al., 2017). Global protein synthesis, quantified by puromycin incorporation, was significantly reduced in cells ~ 6 hr after adsorbtion of eHAV but not naked HAV, in the presence of either α-sarcin or restrictocin A (Figure 4D, Figure 4—figure supplement 1A,B). Reductions in protein synthesis were similar but not as strong as those observed in cells infected with human rhinovirus 14 (HRV14), included as a positive control in these experiments, and were not observed in cells inoculated with eHAV in the presence of neutralizing anti-HAV antibody which abrogated the ability of eHAV to induce endosomal escape of the ribotoxins (Figure 4D, Figure 4—figure supplement 1B). This effect was specific to eHAV, and naked HAV was never found to induce ribotoxin escape from endosomes at any time post-infection, even under conditions in which it was able to initiate translation of its genome (Figure 4D, Figure 4—figure supplement 2A,B).
 
@@ -69,9 +137,21 @@ To confirm that eHAV induces endolysosomal membrane injury and to determine more
 
 Collectively, these data indicate that eHAV uncoats within the lysosomal lumen and induces membrane damage congruent with release of its genome to the cytoplasm, whereas uncoating of naked HAV virions takes place within a late endosomal compartment in the absence of detectable endosomal membrane damage. Whether the absence of detectable endosomal rupture during HAV entry reflects a process that is mechanistically different from that by which eHAV releases its RNA genome across endolysosomal membranes is uncertain. It could be simply that late endosomal membranes breached by HAV are more capable of repair than the lysosomal membrane breached by eHAV.
 
-## Role of PLA2G16 in eHAV and HAV entry and replication
+### Role of PLA2G16 in eHAV and HAV entry and replication
 
 PLA2G16 was identified recently as an essential entry factor for several members of the Picornaviridae (Staring et al., 2017). A phospholipase, it facilitates the safe translocation of the RNA genome from the endosome to the ribosome, providing for its escape from autophagosome-dependent degradation initiated by galectin-8 recruited to sites of endosomal membrane damage. To determine whether either HAV or eHAV entry is similarly dependent on PLA2G16, wild-type and CRISPR/Cas9-edited H1-Hela cells lacking expression of PLA2G16 (ΔPLA2G16 cells) or galectin-8 (ΔLGALS8 cells) (Staring et al., 2017) were infected with the nanoluc reporter virus. Surprisingly, neither PLA2G16 or LGALS8 knockout resulted in a difference in nanoluciferase expression 12 hpi with either HAV or eHAV (Figure 5A). Thus, unlike enteroviruses and cardioviruses (Staring et al., 2017), PLA2G16 is not required for safe transport of the hepatovirus genome from the endosomal lumen to ribosomes to initiate viral protein synthesis. Although PLA2G16 knockout reduces the permissiveness of H1-HeLa cells for enterovirus infection (Staring et al., 2017), longer term studies demonstrated that the replication of both HAV and eHAV was enhanced in ΔPLA2G16 cells, with increased hepatovirus RNA abundance, more dsRNA, and greater viral protein synthesis (Figure 5B-Figure 5—figure supplement 1A,B). The replication of naked HAV was similarly boosted in Huh-7.5 cells with siRNA- or CRISPR/Cas9-mediated depletion of PLA2G16 (Figure 5B, Figure 4—figure supplement 2A,B). Thus, PLA2G16 restricts, rather than promotes hepatovirus infection. Further experiments demonstrated that this restriction occurs at a post-entry step in replication of the HAV genome, as replication of a subgenomic reporter replicon RNA (HAV-FLuc) lacking capsid-coding sequence was similarly enhanced in PLA2G16 knockout Huh-7.5 cells (Figure 5C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig5-v2.jpg)
+
+**Figure 5.:** (A) Translation of HAV RNA during viral entry (~2000 GEs/cell, 12 hpi) measured by HAV-NLuc activity in H1-HeLa cells knocked-out for PLA2G16 or LGALS8 (mean ± SD, n = 2 biological replicates for a representative experiment). (B) Replication kinetics of naked or quasi-enveloped HAV/NLuc in H1-HeLa cells (mean ± SD, n = 3 biological replicates for a representative experiment). (C) Graphs showing luciferase activity expressed by transfected HAV-FLuc subgenomic replicon RNA (left) or a replication-incompetent mutant (right) in sgControl or sgPLA2G16 Huh-7.5 cells (mean ± SD, n = 2 biological replicates for a representative experiment). At the lower right is an immunoplot of PLA2G16 in these cells (*non-specific band). (D) Micrographs of H1-HeLa cells immunolabeled with anti-HAV capsid (K24F2) and anti-PLA2G16 at six hpi with naked HAV or eHAV. White arrows indicate sites of presumed membrane damage where PLA2G16 has accumulated. Scale bar, 10 µm. Histograms depict pixel intensities across the drawn arrow on the inset overlay. Graphs show the co-localization (Mander’s coefficients) (n = 8 cells per condition) between HAV and PLA2G16 or the number of vesicles positive for both HAV capsid and PLA2G16. (E) Current model for cellular entry of naked and quasi-enveloped HAV virions. PS: phosphatidylserine. For numeric data plotted in graphs associated with this figure, see Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) H1-HeLa cells were inoculated with naked HAV (~1 GE/cell) and intracellular RNA was harvested four days post-infection (mean fold HAV RNA ± SD). (B) H1-HeLa cells were inoculated with naked HAV (~1 GE/cell), fixed 5 days post-infection, and immunostained with antibodies against dsRNA (J2 clone mAb) or HAV capsid (K24F2).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/43983/elife-43983-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Huh-7.5 cells were transfected with the indicated siRNAs for 72 hr, infected with naked HAV (~10 GEs/cell) and intracellular RNA was harvested 72 hpi (mean fold HAV RNA ± SD). (B) Huh-7.5 cells were infected with cell-free HAV-NLuc and nanoluciferase production was obtained at the indicated hours post-infection (mean ± SD).
 
 Although PLA2G16 is not required for entry of either virion type, confocal imaging showed co-localization of PLA2G16 with eHAV capsid antigen six hpi, presumably at sites of damaged lysosomal membranes (Figure 5D). Co-localization was not observed in cells infected with naked HAV. Thus, PLA2G16 appears to be recruited to sites of endolysosomal membrane damage induced by eHAV, behaving as it does in response to entry of other picornaviruses (Staring et al., 2017). However, PLA2G16 is not required to protect the RNA genome from autophagy during its delivery from the endolysosome to ribosomes, suggesting a fundamental difference in how hepatoviruses and other picornaviruses manage the final step in viral entry and deliver their RNA genomes across endolysosomal membranes.
 
@@ -91,62 +171,583 @@ We found that the phospholipase, PLA2G16, is not required for safe translocation
 
 ## Materials and methods
 
-## Cells
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species)</th>
+      <th>Designation</th>
+      <th>Source/reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Huh-7.5</td>
+      <td>PMID: 12584342</td>
+      <td>RRID: CVCL_7927</td>
+      <td>Gift from Charles Rice</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa ΔPLA2G16</td>
+      <td>PMID: 28077878</td>
+      <td></td>
+      <td>Gift from Thijn Brummelkamp</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa ΔGALS8</td>
+      <td>PMID: 28077878</td>
+      <td></td>
+      <td>Gift from Thijn Brummelkamp</td>
+    </tr>
+    <tr>
+      <td>Biological sample (virus)</td>
+      <td>HM175/18 f hepatitis A virus (HAV)</td>
+      <td>PMID: 1705995</td>
+      <td>GenBank KP879216.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (virus)</td>
+      <td>HM175/p16 hepatitis A virus (HAV)</td>
+      <td>PMID: 2833008</td>
+      <td>GenBank KP879217.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (virus)</td>
+      <td>Human rhinovirus 14 (HRV14)</td>
+      <td>PMID: 8383233</td>
+      <td></td>
+      <td>Recovered from pWR3.26; gift from Roland Rueckert</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-clathrin heavy chain</td>
+      <td>Abcam</td>
+      <td>ab21679</td>
+      <td>(WB) 1:2000, (IF) 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-AP2M1</td>
+      <td>GeneTex</td>
+      <td>GTX113332</td>
+      <td>(WB) 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-DNM2</td>
+      <td>GeneTex</td>
+      <td>GTX113171</td>
+      <td>(WB) 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-CAV1</td>
+      <td>Abcam</td>
+      <td>ab2910</td>
+      <td>(WB) 1:2000, (IF) 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-FLOT1</td>
+      <td>GeneTex</td>
+      <td>GTX104769</td>
+      <td>(WB) 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-ARF6</td>
+      <td>GeneTex</td>
+      <td>GTX112872</td>
+      <td>(WB) 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-Rab5A</td>
+      <td>Abcam</td>
+      <td>ab18211</td>
+      <td>(WB) 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit, mAb)</td>
+      <td>anti-Rab7a</td>
+      <td>Cell Signaling</td>
+      <td>9367</td>
+      <td>(WB) 1:1000, (IF) 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit, mAb)</td>
+      <td>anti-Rab11A</td>
+      <td>Cell Signaling</td>
+      <td>5589</td>
+      <td>(WB) 1:1000, (IF) 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit, mAb)</td>
+      <td>anti-NPC1</td>
+      <td>Abcam</td>
+      <td>ab134113</td>
+      <td>(WB) 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-LAL</td>
+      <td>GeneTex</td>
+      <td>GTX101169</td>
+      <td>(WB) 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse, mAb)</td>
+      <td>anti-ALIX</td>
+      <td>Santa Cruz</td>
+      <td>sc-53540</td>
+      <td>(WB) 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse, mAb)</td>
+      <td>anti-puromycin</td>
+      <td>Millipore</td>
+      <td>MABE343</td>
+      <td>(WB) 1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-PLA2G16</td>
+      <td>Cayman Chemical</td>
+      <td>10337</td>
+      <td>(WB) 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody (goat)</td>
+      <td>anti-Galectin-8</td>
+      <td>R and D Systems</td>
+      <td>AF1305</td>
+      <td>(WB) 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse, mAb)</td>
+      <td>anti-tubulin</td>
+      <td>Sigma</td>
+      <td>T6199</td>
+      <td>(WB) 1:20000</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>and anti-actin</td>
+      <td>Sigma</td>
+      <td>A2066</td>
+      <td>(WB) 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody (sheep)</td>
+      <td>anti-VCAM-1</td>
+      <td>R and D Systems</td>
+      <td>AF809</td>
+      <td>(WB) 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody (sheep)</td>
+      <td>anti-ICAM-1</td>
+      <td>R and D Systems</td>
+      <td>AF720</td>
+      <td>(WB) 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody (rat, mAb)</td>
+      <td>anti-Tspan8</td>
+      <td>R and D Systems</td>
+      <td>MAB4734</td>
+      <td>(WB) 1:150</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit, mAb)</td>
+      <td>anti-integrin β1</td>
+      <td>Cell Signaling</td>
+      <td>9699</td>
+      <td>(WB) 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit, mAb)</td>
+      <td>anti-integrin β3</td>
+      <td>Cell Signaling</td>
+      <td>13166</td>
+      <td>(WB) 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit, mAb)</td>
+      <td>anti-integrin α1</td>
+      <td>R and D Systems</td>
+      <td>MAB5676</td>
+      <td>(WB) 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit, mAb)</td>
+      <td>anti-integrin α2</td>
+      <td>Abcam</td>
+      <td>ab133557</td>
+      <td>(WB) 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-integrin α3</td>
+      <td>Millipore</td>
+      <td>AB1920</td>
+      <td>(WB) 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit, mAb)</td>
+      <td>anti-integrin α4</td>
+      <td>Cell Signaling</td>
+      <td>8440</td>
+      <td>(WB) 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-integrin α5</td>
+      <td>Cell Signaling</td>
+      <td>4705</td>
+      <td>(WB) 1:700</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-integrin αV</td>
+      <td>Cell Signaling</td>
+      <td>4711</td>
+      <td>(WB) 1:700</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-integrin α6</td>
+      <td>GeneTex</td>
+      <td>GTX100565</td>
+      <td>(WB) 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-integrin α7</td>
+      <td>Thermo Fisher Sci</td>
+      <td>PA5-37435</td>
+      <td>(WB) 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-integrin α8</td>
+      <td>Novus Biologicals</td>
+      <td>NBP1-59940</td>
+      <td>(WB) 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse, mAb)</td>
+      <td>anti-integrin α9</td>
+      <td>R and D Systems</td>
+      <td>MAB4574</td>
+      <td>(WB) 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse, mAb)</td>
+      <td>anti-integrin β1</td>
+      <td>Abcam</td>
+      <td>ab30394</td>
+      <td>(IF) 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit, mAb)</td>
+      <td>anti-integrin α5</td>
+      <td>Abcam</td>
+      <td>ab150361</td>
+      <td>(IF) 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit, mAb)</td>
+      <td>anti-integrin αV</td>
+      <td>Abcam</td>
+      <td>ab179475</td>
+      <td>(IF) 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit, mAb)</td>
+      <td>anti-Rab11</td>
+      <td>Cell Signaling</td>
+      <td>5589</td>
+      <td>(IF) 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit, mAb)</td>
+      <td>anti-LAMP1</td>
+      <td>Cell Signaling</td>
+      <td>9091</td>
+      <td>(IF) 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit, mAb)</td>
+      <td>anti-VAMP8</td>
+      <td>Abcam</td>
+      <td>ab76021</td>
+      <td>(IF) 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse, mAb)</td>
+      <td>anti-CD63</td>
+      <td>BD Biosciences</td>
+      <td>#556019</td>
+      <td>(IF) 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody (rabbit)</td>
+      <td>anti-PLA2G16</td>
+      <td>Sigma</td>
+      <td>H8290</td>
+      <td>(IF) 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse, mAb)</td>
+      <td>anti-dsRNA</td>
+      <td>Scicons</td>
+      <td>J2</td>
+      <td>(IF) 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody (human)</td>
+      <td>JC human anti-HAV</td>
+      <td>PMID: 23542590</td>
+      <td>JC</td>
+      <td>(IF) 1:600</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse, mAb)</td>
+      <td>K24F2 anti-HAV capsid</td>
+      <td>PMID: 6315771</td>
+      <td>K24F2</td>
+      <td>(IF) 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse, mAb)</td>
+      <td>K34C8 anti-HAV capsid</td>
+      <td>MacGregor et al.</td>
+      <td>K34C8</td>
+      <td>(IF) 1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse, mAb)</td>
+      <td>anti-integrin β1 K-20</td>
+      <td>Santa Cruz</td>
+      <td>sc-18887</td>
+      <td>10 µg ml−1</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse, mAb)</td>
+      <td>anti-integrin β1 TS2/16</td>
+      <td>Santa Cruz</td>
+      <td>sc-53711</td>
+      <td>10 µg ml−1</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse, mAb)</td>
+      <td>anti-integrin β1 8E3</td>
+      <td>Millipore</td>
+      <td>MABT199</td>
+      <td>10 µg ml−1</td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse, mAb)</td>
+      <td>anti-integrin β1 HUTS-2</td>
+      <td>Millipore</td>
+      <td>MAB2079Z</td>
+      <td>10 µg ml−1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>dynasore</td>
+      <td>Millipore</td>
+      <td>#324410</td>
+      <td>80 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>chlorpromazine</td>
+      <td>Sigma-Aldrich</td>
+      <td>#C8138</td>
+      <td>10 µg ml−1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>filipin</td>
+      <td>Sigma-Aldrich</td>
+      <td>#F9765</td>
+      <td>1 µg ml−1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>cytochalasin D</td>
+      <td>Sigma-Aldrich</td>
+      <td>#C2618</td>
+      <td>20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>latrunculin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>#428026</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>5-(N-Ethyl-N- isopropyl)amiloride)</td>
+      <td>Sigma-Aldrich</td>
+      <td>#A3085</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>wortmannin</td>
+      <td>Sigma-Aldrich</td>
+      <td>#W1628</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>NSC23766</td>
+      <td>Sigma-Aldrich</td>
+      <td>#SML0952</td>
+      <td>300 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>dynarrestin</td>
+      <td>PMID: 29396292</td>
+      <td></td>
+      <td>25 µM, gift from Jared Sterneckert</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>heparin</td>
+      <td>Sigma-Aldrich</td>
+      <td>#H3149</td>
+      <td>10 µg ml−1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Lalistat-2</td>
+      <td>PMID: 20557099</td>
+      <td></td>
+      <td>200 µM, gift from Paul Helquist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>U18666A</td>
+      <td>Sigma-Aldrich</td>
+      <td>#U3633</td>
+      <td>2 µg ml−1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>guanidine hydrochloride</td>
+      <td>Sigma</td>
+      <td>#G3272</td>
+      <td>5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>cycloheximide</td>
+      <td>Sigma</td>
+      <td>#C7698</td>
+      <td>25 µg ml−1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>puromycin</td>
+      <td>InvivoGen</td>
+      <td>CAS 58-58-2</td>
+      <td>5–20 µg ml−1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>α-sarcin</td>
+      <td>Santa Cruz</td>
+      <td>#sc-204427</td>
+      <td>100 µg ml−1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Restrictocin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>#R0389</td>
+      <td>50 µg ml−1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>L-Leucyl-L-Leucine- methyl ester</td>
+      <td>Cayman Chemical</td>
+      <td>#16008</td>
+      <td>2 mM</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cells
 
 Huh-7.5 cells (obtained from Charles Rice, Rockefeller University) were maintained in Dulbecco’s modified Eagle medium (DMEM) supplemented with 10% fetal bovine serum (FBS). Wild type, ΔPLA2G16, and ΔLGALS8 H1-HeLa cells have been previously characterized (Staring et al., 2017) and were maintained in DMEM supplemented with 10% FBS and 2 mM GlutaMAX. Cell lines were validated by phenotypic screening and confirmed to be mycoplasma-free using a PCR detection kit (Sigma-Millipore, # MP0035). To produce knockout Huh-7.5 cells, CRISPR/Cas9-expressing lentiviruses were generated by co-transfection of 293FT cells with sgRNA lentivectors (Applied Biological Materials, Supplementary file 1) and a third-generation lentivirus packaging mix kit (Applied Biological Materials, #LV053-G074). Supernatant fluids were collected at 48–72 hr post-transfection, spun to remove cell debris, and filtered through a 0.45 µm filter syringe. Lentivirus transduction of Huh-7.5 or H1-HeLa cells was performed by supplementation of 8 µg.ml−1 polybrene followed by antibiotic selection with 6 or 10 µg.ml−1 puromycin, respectively, was performed as previously described (Das et al., 2017). All cells were maintained at 37˚C in a 5% CO2 atmosphere.
 
-## Preparation of purified HAV and eHAV
+### Preparation of purified HAV and eHAV
 
 Infectious clones of HM175/p16.2 virus (low-passage, non-cytopathic, cell culture-adapted, GenBank KP879217.1 (McKnight et al., 2017)) and HM175/18.2 (high cell culture passage, rapid replication, cytopathic, GenBank KP879216.1 (González-López et al., 2018; Zhang et al., 1995) are variants of the HM175 strain (Jansen et al., 1988; Taylor et al., 1993) and have been previously described. The HM175/18 f.2-NanoLuc (HAV-NLuc) plasmid was created by PCR amplifying the NLuc ORF using pNL1.1 (Promega) as template and oligos containing the tri-glycine sequence flanked by XbaI and BamH1 restriction sites. The PCR amplicon was enzymatically digested and ligated into digested pSK-2A-Zeo-2B plasmid. The resulting plasmid was further digested with SacI/PflMI to release the entire 2A-NLuc-2B fragment which was then ligated into a similarly digested HM175/18 f parental plasmid. Infectious HAV mRNA transcripts were generated in vitro using the T7 RiboMAXTM Express Large-Scale RNA Production System (Promega) as per manufacturer’s protocol and transfected into Huh-7.5 cells by electroporation in a Gene Pulser Xcell Total System (Bio-Rad) as previously described (Feng et al., 2013). Cell culture supernatant fluids were then collected (9 to 15 days post-transfection) and centrifuged at 1,000 ×g for 10 min at 4˚C to remove debris and further clarified at 10,000 ×g for 30 min at 4˚C. The virus was concentrated by ultracentrifugation at 100,000 ×g for 60 min at 4˚C, and the resulting pellet was resuspended in 250 µl phosphate buffer saline (PBS) and loaded on top of a five-step gradient of 8% to 40% iodixanol (OptiPrep, Sigma) and centrifuged at 165,915 ×g (37,000 rpm) for 24 hr at 4˚C in a Beckman SW55i rotor using a Beckman Optima LE-80K ultracentrifuge. Approximately 20 fractions were collected from the top of the isopycnic gradient, and HAV RNA content and density were quantified by reverse transcription-quantitative PCR (RT-qPCR) and refractometry, respectively, as previously described (Feng et al., 2013; McKnight et al., 2017). Fractions containing eHAV and HAV at the appropriate buoyant densities (for eHAV, approximately 1.08 g/cm3, fractions 9 to 11; for naked HAV, approximately 1.22 g/cm3, fractions 18–19) were stored in aliquots at –80˚C until use.
 
-## Firefly luciferase and NanoLuciferase assays
+### Firefly luciferase and NanoLuciferase assays
 
 Huh-7.5 cells were seeded on 96-well clusters and transfected with in vitro transcribed subgenomic HAV-FLuc replicon or a replication-incompetent mutant (González-López et al., 2018; Yi and Lemon, 2002) using TransIT-mRNA transfection kit (Mirus Bio, #MIR2250) according to the manufacturer’s instructions. Cells were harvested in 1 × passive lysis buffer (PLB, Promega) at the indicated times post-transfection and luciferase activity was measured using a firefly luciferase assay system (Promega, #E1501). For HAV-NanoLuc assays, cells were lysed for 5–10 min in 1 × PLB and mixed with 1 × substrate for Oplophorus luciferase (NanoLight Technology, #325) according to the manufacturer’s instructions. All luciferase readings were obtained on a BioTek Synergy two microplate reader.
 
-## Pharmacological agents and functional antibodies
+### Pharmacological agents and functional antibodies
 
 For viral entry assays, 5 × 104 Huh-7.5 cells seeded on 12-well chamber slides were pre-treated with the indicated inhibitors at the following concentrations: 80 µM dynasore (Millipore, #324410), 10 µg.ml−1 chlorpromazine (Sigma-Aldrich, #C8138), 1 µg.ml−1 filipin (Sigma-Aldrich, #F9765), 20 µM cytochalasin D (Sigma-Aldrich, #C2618), 1 µM latrunculin A (Sigma-Aldrich, #428026), 1 µM EIPA (5-(N-Ethyl-N-isopropyl)amiloride) (Sigma-Aldrich, #A3085), 1 µM wortmannin (Sigma-Aldrich, #W1628), 300 µM NSC23766 (Sigma-Aldrich, #SML0952), 25 µM dynarrestin (kindly provided by Dr. Jared Sterneckert, Max Planck Institute for Molecular Biomedicine, (Höing et al., 2018)), 10 µg.ml−1 heparin (Sigma-Aldrich, #H3149), 200 µM Lalistat-2 (kindly provided by Paul Helquist and Bruce Malencon, University of Notre Dame), 2 µg.ml−1 U18666A (Sigma-Aldrich, #U3633), or dimethyl sulfoxide (DMSO) solvent control in supplemented DMEM for 60–120 min at 37˚C prior to virus adsorption. For functional integrin assays, cells were incubated with 100 µM RGD peptide (Santa Cruz Biotechnology, #sc-201176) for 2 hr; or 10 µg.ml−1 of either mouse IgG (Abcam, #ab37355), K-20 (Santa Cruz Biotechnology, #sc-18887), TS2/16 (Santa Cruz Biotechnology, #sc-53711), 8E3 (Millipore-Sigma, #MABT199), or HUTS-4 (Millipore-Sigma, #MAB2079Z) for 20 min on ice prior to virus adsorption at 37˚C. Other inhibitors include 5 mM guanidine hydrochloride (Sigma, #G3272), 25 µg.ml−1 cycloheximide (Sigma, #C7698), 5–20 µg.ml−1 puromycin (InvivoGen), 100 µg.ml−1 α-sarcin (Santa Cruz Biotechnology, #sc-204427), 50 µg.ml−1 Restrictocin A (Sigma-Aldrich, #R0389), and 2 mM L-Leucyl-L-Leucine-methyl ester (Cayman Chemical, #16008).
 
-## Quantitative (real-time) reverse transcription-PCR
+### Quantitative (real-time) reverse transcription-PCR
 
 RNA was extracted from cell lysates with the RNeasy Kit (Qiagen) and cDNA was synthesized with oligo(dT)20 followed by RNaseH digestion. HAV RNA GEs were quantified in a SYBR Green Real-Time qPCR (Bio-Rad) assay against a synthetic RNA standard curve using primers targeting the HAV 5’ untranslated region as previously described (Feng et al., 2013) and HAV RNA levels were normalized to total µg RNA. For siRNA-mediated knockdown efficiency, host mRNA target abundance was determined using gene-specific primers (Supplementary file 1) and normalized to glyceraldehyde-3-phosphate dehydrogenase levels; efficiency was calculated as the percent mRNA expression relative to non-targeting control siRNA samples.
 
-## siRNA-mediated knockdowns
+### siRNA-mediated knockdowns
 
 Huh-7.5 cells were transfected with 50–75 nM gene-specific SMARTPool ON-TARGETplus siRNAs (Dharmacon, Supplementary file 1) using the Lipofectamine RNAiMAX transfection reagent (Thermo Fisher Scientific) according to the manufacturer’s instructions. Three-to-four days post-transfection, cells were adsorbed with equal quantities of HAV genome equivalents (GEs) of purified naked or quasi-enveloped HAV (~10 GEs per cell) for 1 hr at 37˚C. The inoculum was removed, the cells were rinsed with PBS and incubated at 37˚C in fresh medium.
 
-## SDS-PAGE and immunoblotting
+### SDS-PAGE and immunoblotting
 
 Cells were lysed in radioimmunoprecipitation assay (RIPA) buffer (50 mM Tris-HCl [pH 7.4], 1% NP-40, 0.25% sodium deoxycholate, 150 mM NaCl, 1 mM EDTA, 1% sodium dodecyl sulfate [SDS]) supplemented with a cocktail of protease and phosphatase inhibitors for 20 min on ice and then clarified at 14,000 ×g for 10 min at 4˚C. Total protein concentration was determined using a bicinchoninic acid assay (Thermo Fisher Scientific). A total of 5–20 µg of protein was boiled for 5 min in Laemmli sample buffer, resolved by SDS-polyacrylamide gel electrophoresis (SDS-PAGE), and transferred to a polyvinylidene fluoride (PVDF) membrane by standard methods. Membranes were blocked with Odyssey blocking buffer (LI-COR Bioscience), probed with the indicated primary antibodies, and incubated with infrared-conjugated (IRDye) secondary antibodies (LI-COR Biosciences). Proteins were visualized using an Odyssey Infrared Imaging System (LI-COR Biosciences).
 
-## Indirect immunofluorescence
+### Indirect immunofluorescence
 
 Huh-7.5 or H1-HeLa cells seeded on 8-well chamber slides were adsorbed with equal quantities of HAV genome equivalents (GEs) of purified naked or quasi-enveloped HAV (~1000 GEs per cell) for 1 hr at 37˚C. The inoculum was removed, the cells were rinsed with PBS and reincubated at 37˚C in fresh medium. Cells were then fixed in 4% paraformaldehyde (PFA) for 20 min at the indicated hours post-inoculation (hpi) and, unless stated otherwise, permeabilized with 0.25% Triton X-100 in PBS for 10 min. Slides were blocked with 5–10% normal goat serum (Sigma-Aldrich) in PBS for 60 min, and incubated with the indicated primary antibodies diluted in 0.1% IgG- and protease-free bovine serum albumin (BSA) (Jackson ImmunoResearch, #001–000) for 1–2 hr at room temperature. Slides were extensively rinsed in PBS and incubated with the appropriate species-specific Alexa Fluor-conjugated secondary antibodies (Thermo Fisher Scientific) diluted in 0.1% IgG- and protease-free BSA for 1 hr at room temperature. Nuclei were counterstained with 300 nM DAPI (4’,6-diamidino-2-phenylindole) and coverslips were mounted on slides using ProLong Gold (Thermo Fisher Scientific, #P36930).
 
-## Antibodies
+### Antibodies
 
 Antibodies used for immunoblotting and their corresponding dilutions were anti-clathrin heavy chain (Abcam, ab21679, 1:2000), anti-AP2M1 (GeneTex, GTX113332, 1:1000), anti-DNM2 (GeneTex, GTX113171, 1:1000), anti-CAV1 (Abcam, ab2910, 1:2000), anti-FLOT1 (GeneTex, GTX104769, 1:1000), anti-ARF6 (GeneTex, GTX112872, 1:1000), anti-Rab5A (Abcam, ab18211, 1:1000), anti-Rab7a (Cell Signaling, 9367, 1:1000), anti-Rab11 (Cell Signaling, 5589, 1:1000), anti-NPC1 (Abcam, ab134113, 1:2000), anti-LAL (GeneTex, GTX101169, 1:1000), anti-ALIX (Santa Cruz Biotech, sc-53540, 1:500), anti-puromycin (Millipore, MABE343, 1:10000), anti-PLA2G16 (Cayman Chemical, 10337, 1:200), anti-Galectin-8 (R and D Systems, AF1305, 1:500), anti-tubulin (Sigma, T6199, 1:20000), and anti-actin (Sigma, A2066, 1:5000), anti-VCAM-1 (R and D Systems, AF809, 1:250), anti-ICAM-1 (R and D Systems, AF720, 1:250), anti-Tspan8 (R and D Systems, MAB4734, 1:150), anti-integrin β1 (Cell Signaling, 9699, 1:1000), anti-integrin β3 (Cell Signaling, 13166, 1:500), anti-integrin α1 (R and D Systems, MAB5676, 1:250), anti-integrin α2 (Abcam, ab133557, 1:500), anti-integrin α3 (Millipore, AB1920, 1:250), anti-integrin α4 (Cell Signaling, 8440, 1:250), anti-integrin α5 (Cell Signaling, 4705, 1:700), anti-integrin αV (Cell Signaling, 4711, 1:700). anti-integrin α6 (GeneTex, GTX100565, 1:500), anti-integrin α7 (Thermo Fisher Sci, PA5-37435, 1:250), anti-integrin α8 (Novus Biologicals, NBP1-59940, 1:250), and anti-integrin α9 (R and D Systems, MAB4574, 1:250). Antibodies user for indirect immunofluorescence and their corresponding dilutions were anti-clathrin heavy chain (Abcam, ab21679, 1:1000), anti-CAV1 (Abcam, ab2910, 1:500), anti-integrin β1 (Abcam, ab30394, 1:100), anti-integrin α5 (Abcam, ab150361, 1:250), anti-integrin αV (Abcam, ab179475, 1:500), anti-Rab5A (Cell Signaling, 3547, 1:200), anti-Rab7a (Cell Signaling, 9367, 1:100), anti-Rab11 (Cell Signaling, 5589, 1:100), anti-LAMP1 (Cell Signaling, 9091, 1:200), anti-VAMP8 (Abcam, ab76021, 1:250), anti-CD63 (BD Biosciences, #556019, 1:50), anti-PLA2G16 (Sigma, H8290, 1:50), J2 anti-dsRNA (Scicons, J2 clone, 1:1,000), postconvalescent polyclonal anti-HAV human plasma ‘JC’ (Feng et al., 2013, 1:600), anti-HAV capsid K24F2 and K34C8 (MacGregor et al., 1983, 1:100 and 1:300, respectively).
 
-## Transferrin and cholera toxin B uptake assays
+### Transferrin and cholera toxin B uptake assays
 
 Huh-7.5 cells seeded on 8-well chamber slides were treated with DMEM supplemented with the indicated inhibitors for 1 hr. Cells were then rinsed, placed on ice for 10 min, and incubated with 10–25 µg.ml−1 Alexa 594-conjugated Transferrin (Thermo Fisher, #T13343) or cholera toxin subunit B (Thermo Fisher, #34777) diluted in supplemented DMEM for 15–20 min at 37˚C. Cells were then fixed with 4% paraformaldehyde (PFA) and nuclei were counterstained with 300 nM DAPI.
 
-## PKH26 staining of EVs and eHAV membranes
+### PKH26 staining of EVs and eHAV membranes
 
 Supernatant fluids from uninfected or HAV-infected Huh-7.5 cells were clarified and concentrated by ultracentrifugation at 100,000 ×g for 1 hr as described above. The pellet was then resuspended 250 µl of Diluent C and mixed with 2 µM PKH26 red fluorescent cell linker (Sigma-Aldrich, MIDI26) diluted in Diluent C for 5 min according to the manufacturer’s instructions. The staining was blocked with 500 µl FBS for 3 min and the labeled vesicles/eHAV were loaded onto an iodixanol gradient and ultracentrifuged at 165,915 ×g (37,000 rpm) for 24 hr at 4˚C as described above. Fractions containing eHAV and EVs at the appropriate buoyant densities (approximately 1.08 g/cm3, fractions 9 to 11) were stored in aliquots at 4˚C until use. Recipient Huh-7.5 cells were inoculated with a 1:10 dilution of the fractions diluted in complete DMEM and fixed in 4% PFA. Slides were blocked in 10% normal goat serum, and incubated simultaneously with anti-HAV capsid (K24F2) and anti-LAMP1 for 1 hr diluted in 0.01% saponin (Sigma-Aldrich, S2149), carefully rinsed, and incubated with a mix of DAPI and Alexa fluor-conjugated secondary antibodies diluted in 0.01% saponin for 45 min at room temperature. Slides were mounted on ProLong Gold.
 
-## Antibody-mediated HAV neutralization assay
+### Antibody-mediated HAV neutralization assay
 
 Huh-7.5 cells seeded on 12-well clusters (1 × 105 cells per well) were pre-treated with 200 µM Lalistat-2 or DMSO solvent control for 1 hs at 37˚C and then adsorbed with equal quantities of HAV genome equivalents (GEs) of gradient-purified naked or quasi-enveloped HAV (~1 GE per cell) for 1 hr at 37˚C. The inoculum was removed, cells were rinsed three times with PBS, and replaced with fresh DMEM supplemented with 10% FBS and 200 µM Lalistat-2 or DMSO. At the indicated times post-infection, media was replaced with postconvalescent human plasma (‘JC plasma’) collected several months following symptomatic acute hepatitis A (Feng et al., 2013) or normal human serum control diluted 1:50 in DMEM. Intracellular viral RNA was harvested at 48 hpi, cDNA was synthesized, and HAV RNA levels were quantified by RT-qPCR as described above.
 
-## Endosomal and lysosomal membrane integrity assays
+### Endosomal and lysosomal membrane integrity assays
 
 For endosomal membrane integrity, H1-HeLa cells were inoculated with equal amounts (~1000 HAV GEs per cell) of gradient-purified HAV or eHAV, or 10 plaque-forming units (PFU) per cell of human rhinovirus-14 (HRV-14) (McKnight and Lemon, 1996) in supplemented DMEM presence of α-sarcin or Restrictocin A previously reconstituted in sterile ultrapure water and incubated for 6 hr at 37˚C (for HAV) or 33˚C (for HRV-14). Cells were then incubated with supplemented DMEM containing 20 µg.ml−1 puromycin for 20 min, rinsed twice with PBS, and total protein lysates were harvested as described above. Specific puromycin incorporation was validated by pre-treating cells with cycloheximide for 30 min prior to the puromycin pulse (Figure 4—figure supplement 1). For lysosomal membrane integrity analysis, Huh-7.5 cells seeded in 8-well chamber slides were loaded with 100 µg.ml−1 anionic-lysine fixable Alexa Fluor 594-conjugated dextran (10 kDa) (Thermo Fisher Scientific, #D22913) diluted in supplemented DMEM for 16 hr at 37˚C. Cells were rinsed with PBS, inoculated with purified HAV or eHAV (1000 HAV GEs per cell), and fixed as indicated.
 
-## Confocal microscopy and image analyses
+### Confocal microscopy and image analyses
 
 Slides were examined with an Olympus FV10000 laser-scanning confocal microscope equipped with a super corrected 60×/1.4 NA oil-immersion objective and a dichroic mirror DM405/488/543/635 was used for all experiments. The pinhole was maintained at 1 Airy unit and images were acquired in two separate channels to prevent bleed-through. The excitation/emission wavelengths were 405 nm/425–520 nm for DAPI, 488 nm/500–520 nm for Alexa Fluor 488, 543 nm/555–647 nm for Alexa Fluor 594 or PKH26, and 635 nm/647–700 nm for Alexa Fluor 647. Intensity plot profiles were generated using the ImageJ software and co-localization indexes (Mander’s coefficients) were obtained with the Just Another Colocalisation Plugin (JACoP) module for ImageJ. All micrographs are representative of at least 10 images for each sample per experiment, and each experiment was performed at least twice. Images were processed for presentation using Photoshop CS4.
 
-## Statistical analysis
+### Statistical analysis
 
 Unless stated otherwise, significance was assessed by unpaired t tests or ANOVA calculated with GraphPad Prism seven for Windows software. Significance values are shown as ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05.

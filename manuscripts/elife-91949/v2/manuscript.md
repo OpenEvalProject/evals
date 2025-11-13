@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Oxford Centre for Human Brain Activity, Wellcome Centre for Integrative Neuroimaging, Department of Psychiatry, University of Oxford Oxford United Kingdom
-2. https://ror.org/03angcq70 Centre for Human Brain Health, School of Psychology, University of Birmingham Birmingham United Kingdom
-3. https://ror.org/01aj84f44 Center for Functionally Integrative Neuroscience, Department of Clinical Medicine, Aarhus University Aarhus Denmark
+1. Oxford Centre for Human Brain Activity, Wellcome Centre for Integrative Neuroimaging, Department of Psychiatry, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. Centre for Human Brain Health, School of Psychology, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+3. Center for Functionally Integrative Neuroscience, Department of Clinical Medicine, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
 
 † Corresponding author
 
@@ -42,33 +42,73 @@ Here, we will illustrate the use of osl-dynamics using publicly available magnet
 
 In this section, we outline examples of uses of osl-dynamics to study source reconstructed MEG data. Section 2.1 presents the results of an oscillatory burst analysis pipeline. Sections 2.2–2.4 present the results of various dynamic network analysis pipelines. For comparison, we also include the results of a static network analysis pipeline in Section 2.5. For a description of the methods and dataset see Section 5.
 
-## 2.1 Burst detection using a single-region TDE-HMM
+### 2.1 Burst detection using a single-region TDE-HMM
 
 The pipeline in Figure 10 was applied to do burst detection on a single parcel in the left motor cortex. The source data was calculated using the CTF rest MEG dataset. All subjects were concatenated temporally and used to train the TDE-HMM. The results are shown in Figure 1.
 
-We see from the wavelet transform in Figure 1AI that there are short bursts of oscillatory activity in this time series. This illustrates how it would be non-trivial, using conventional bandpass filtering and thresholding methods, to identify when exactly a burst occurs and what frequencies are contained within it. Instead of a conventional burst detection method, we use a three state TDE-HMM to identify bursts in a data-driven fashion. We see from the inferred state probability time course (Figure 1BI) that there are short-lived states that describe this data. We can see from Figure 1BII that each state corresponds to unique oscillatory activity. State 1 is interpreted as a non-oscillatory background state because it does not show any significant peaks in its PSD. States 2 and 3 show oscillatory activity in the δ/θ\begin{document}$\delta/\theta$\end{document} band (1–7  Hz) and α/β\begin{document}$\alpha/\beta$\end{document} band (7–30  Hz), respectively. Figure 1BIII shows the correlation of each state probability time course with the AEs for different frequency bands (Figure 1AII). Based on this, we identify state 2 as a δ/θ\begin{document}$\delta/\theta$\end{document}-burst state and state 3 as a β\begin{document}$\beta$\end{document}-burst state. We can see from Figure 1BIV that these bursts have a variety of lifetimes ranging from a hundred to several hundred milliseconds. The reproducibility of these results is shown in Figure 1—figure supplement 1.
+![Figure 1.](https://cdn.elifesciences.org/articles/91949/elife-91949-fig1-v2.jpg)
 
-## 2.2 Detecting network dynamics using a multi-region AE-HMM
+**Figure 1.:** (A.I) Dynamic spectral properties of the first 20  s of the time series from the first subject. (A.II) Amplitude envelope calculated after bandpass filtering the time series over the $\beta$-band (top), $\alpha$-band (middle), and $\delta/\theta$-band (bottom). (B.I) The inferred state probability time course for the first 20  s of the first subject. (B.II) The power spectral density (PSD) of each state. (B.III) Pearson correlation of each state probability time course with the amplitude envelopes for different frequency bands. (B.IV) Distribution over subjects for summary statistics characterizing the bursts. Note that no additional bandpass filtering was done to the source data when calculating the mean amplitude. The script used to generate the results in this figure is here: https://github.com/OHBA-analysis/osl-dynamics/blob/main/examples/toolbox_paper/ctf_rest/tde_hmm_bursts.py; (Gohil, 2024).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91949/elife-91949-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Variational free energy for three sets of 10 runs. (B) Summary statistics for the best run from each set (indicated by the red dot in A).
+
+We see from the wavelet transform in Figure 1AI that there are short bursts of oscillatory activity in this time series. This illustrates how it would be non-trivial, using conventional bandpass filtering and thresholding methods, to identify when exactly a burst occurs and what frequencies are contained within it. Instead of a conventional burst detection method, we use a three state TDE-HMM to identify bursts in a data-driven fashion. We see from the inferred state probability time course (Figure 1BI) that there are short-lived states that describe this data. We can see from Figure 1BII that each state corresponds to unique oscillatory activity. State 1 is interpreted as a non-oscillatory background state because it does not show any significant peaks in its PSD. States 2 and 3 show oscillatory activity in the $\delta/\theta$ band (1–7  Hz) and $\alpha/\beta$ band (7–30  Hz), respectively. Figure 1BIII shows the correlation of each state probability time course with the AEs for different frequency bands (Figure 1AII). Based on this, we identify state 2 as a $\delta/\theta$-burst state and state 3 as a $\beta$-burst state. We can see from Figure 1BIV that these bursts have a variety of lifetimes ranging from a hundred to several hundred milliseconds. The reproducibility of these results is shown in Figure 1—figure supplement 1.
+
+### 2.2 Detecting network dynamics using a multi-region AE-HMM
 
 The AE-HMM pipeline in Figure 11 was applied to source reconstructed data from the Elekta task MEG dataset to identify amplitude-based network dynamics. All subjects and runs were concatenated temporally to train the model. The results are shown in Figure 2 with an example of a group-level analysis on the HMM state time courses (calculation of a group-averaged network response).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/91949/elife-91949-fig2-v2.jpg)
+
+**Figure 2.:** (A.I) For each state, group-averaged amplitude maps relative to the mean across states (top) and absolute amplitude envelope correlation networks (bottom). (A.II) State probability time course for the first 8 s of the first subject. (A.III) Distribution over subjects for the summary statistics for each state. (B.I) State time courses (Viterbi path) epoched around the presentation of visual stimuli. The horizontal bars indicate time points with p<0.05. The maximum statistic pooling over states and time points was used in permutation testing to control for the family-wise error rate. The script used to generate the results in this figure is here: https://github.com/OHBA-analysis/osl-dynamics/blob/main/examples/toolbox_paper/elekta_task/ae_hmm.py.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91949/elife-91949-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Variational free energy for three sets of 10 runs. (B) Summary statistics for the best run from each set (indicated by the red dot in A). (C) Amplitude maps relative to the mean across states for the best run from sets 2 and 3. (D) Network response to the visual task for sets 2 and 3. The horizontal bars indicate time points with p<0.05. The maximum statistic pooling over states and time was used in permutation testing to control for the family-wise error rate.
 
 We see the AE-HMM identifies plausible functional networks (Buckner et al., 2011) with fast dynamics, typically with lifetimes of around 50 ms (Figure 2AIII). We identify a default mode network (state 1); two visual networks (states 2 and 6); a frontotemporal networks (states 3 and 7); and a sensorimotor network (state 4).
 
 The AE-HMM was trained on the continuous source reconstructed data in an unsupervised manner, i.e., without any knowledge of the task. Post-HMM training, we can epoch the inferred state time course (Veterbi path) around the task (presentation of a visual stimuli [A picture of a familiar, unfamiliar, or scrambled face]) and average over trials. This gives the probability of each state being activate around a visual event. This is shown in Figure 2BI. We observe a significant increase (p<0.05) in the activation of the visual networks (states 2 and 6) between 50–100 ms after the presentation of the visual stimuli as expected. We also observe a significant activation (p<0.05) of the frontotemporal network (state 7) 300–900 ms after the visual stimuli as well as a deactivation of the visual networks (states 2 and 6). The reproducibility of these results is shown in Figure 2—figure supplement 1.
 
-## 2.3 Detecting network dynamics using a multi-region TDE-HMM
+### 2.3 Detecting network dynamics using a multi-region TDE-HMM
 
 The TDE-HMM pipeline in Figure 11 was also applied to the Elekta task MEG dataset. All subjects and runs were concatenated temporally and used to train the model. The results are shown in Figure 3.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91949/elife-91949-fig3-v2.jpg)
+
+**Figure 3.:** (A.I) For each state, group-averaged power maps relative to the mean across states (top), coherence networks (middle), and power spectral density (PSD) averaged over regions (bottom), both the state-specific (colored solid line), and static PSD (i.e. the average across states, dashed black line) are shown. (A.II) State probability time course for the first 8 s of the first subject. (A.III) Distribution over subjects for the summary statistics for each state. (B.I) State time courses (Viterbi path) epoched around the presentation of visual stimuli. The horizontal bars indicate time points with p<0.05. The maximum statistic pooling over states and time points was used in permutation testing to control for the family-wise error rate. The script used to generate the results in this figure is here: https://github.com/OHBA-analysis/osl-dynamics/blob/main/examples/toolbox_paper/elekta_task/tde_hmm.py.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91949/elife-91949-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Variational free energy for three sets of 10 runs. (B) Summary statistics for the best run from each set (indicated by the red dot in A). (C) Power maps relative to the mean across states for the best run from sets 2 and 3. (D) Network response to the visual task for sets 2 and 3. The horizontal bars indicate time points with p<0.05. The maximum statistic pooling over states and time was used in permutation testing to control for the family-wise error rate.
 
 For the high-power networks (states 1–4), we see the same spatial patterns in TDE-HMM power maps (Figure 3AI, top) and AE-HMM amplitude maps (Figure 2AI). We can see from the state PSDs (Figure 3AI, bottom) that the networks identified by the TDE-HMM exhibit distinct spectral (oscillatory) activity. The TDE-HMM networks also have fast dynamics (Figure 3AIII) with lifetimes of around 50 ms. In Figure 3BI, we can see we are able to reproduce the network response analysis we did using the AE-HMM (Figure 2BI). The reproducibility of these results is shown in Figure 3—figure supplement 1.
 
 The Elekta MEG dataset was recorded during a visual perception task. For comparison, we perform the same analysis on the CTF rest MEG dataset. All subjects were concatenated temporally and used to train the model. Figure 4 shows the results of applying a TDE-HMM pipeline to this dataset. We observe similar networks in rest (Figure 4A) as in task (Figure 3A), which is a known result from fMRI studies (Smith et al., 2009). We also include the coherence networks in Figures 3AI and 4AI. We observe regions with high power activations have high connectivity (coherence). These networks also have fast dynamics (Figure 4AIII) with lifetimes of 50–100 ms.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/91949/elife-91949-fig4-v2.jpg)
+
+**Figure 4.:** (A.I) For each state, group-averaged power maps relative to mean across states (top), absolute coherence networks (middle) and power spectral density (PSD) averaged over regions (bottom), both the state-specific (colored solid line) and static PSD (i.e. the average across states, dashed black line) are shown. (A.II) State probability time course for the first 8 s of the first subject and run. (A.III) Distribution over subjects for the summary statistics of each state. (B.I) Comparison of the summary statistics for a young (18–34 years old) and old (34–60 years old) group. The star indicates a p<0.05. The maximum statistic pooling over states and metrics was used in permutation testing to control for the family-wise error rate. The script used to generate the results in this figure is here: https://github.com/OHBA-analysis/osl-dynamics/blob/main/examples/toolbox_paper/ctf_rest/tde_hmm_networks.py; (Gohil, 2024).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91949/elife-91949-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Variational free energy for three sets of 10 runs. (B) Summary statistics for the best run from each set (indicated by the red dot in A). (C) Power maps relative to the mean across states for the best run from sets 2 and 3. (D) Comparison of the summary statistics for a young (18–34 years old) and old (34–60 years old) group. The star indicates a p<0.05. The maximum statistic pooling over states and metrics was used to control for the family-wise error rate.
+
 To illustrate a group-level analysis we could do with a dynamic network perspective, we compared two groups: 27 subjects in a young group (18–34 years old) and 38 subjects in an old group (34–60 years). Figure 4BI.I shows summary statistics for each group. We see the fractional occupancy and switching rate of the sensorimotor network (state 4) is increased in the older group (p<0.05). The mean lifetime of the visual network (state 6) is also decreased in the older group (p<0.05). The older group also has a wider distribution of mean intervals for the default mode network (state 1) and suppressed state (8) (p<0.05). The reproducibility of these results is shown in Figure 4—figure supplement 1. The age-related differences we observe here are consistent with existing studies (Coquelet et al., 2020). We will discuss the young vs old comparison further in Section 2.5.
 
-## 2.4 Dynamic network detection using multi-region TDE-DyNeMo
+### 2.4 Dynamic network detection using multi-region TDE-DyNeMo
 
 The TDE-DyNeMo pipeline in Figure 11 was applied to the CTF rest MEG dataset. All subjects were concatenated temporally and used to train the model. The results are shown in Figure 5. Note, for DyNeMo we found that learning seven modes (rather than 8) led to more reproducible results. Therefore, we present the 7-mode fit in Figure 5.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/91949/elife-91949-fig5-v2.jpg)
+
+**Figure 5.:** (A.I) For each mode, group-averaged power maps relative to the mean across modes (top), absolute coherence networks (middle), and power spectral density (PSD) averaged over regions (bottom), both the mode-specific (colored solid line) and static PSD (i.e. the average across modes, dashed black line) are shown. (A.II) Mode time course (mixing coefficients) renormalized using the trace of the mode covariances. (A.III) Pearson correlation between renormalized mode time courses calculated by concatenating the time series from each subject. (A.IV) Distribution over subjects for summary statistics (mean and standard deviation) of the renormalized mode time courses. (B.I) Comparison of the summary statistics for a young (18–34 years old) and old (34–60 years old) group. The maximum statistic pooling over modes and metrics was used in permutation testing to control for the family-wise error rate. The script used to generate the results in this figure is here: https://github.com/OHBA-analysis/osl-dynamics/blob/main/examples/toolbox_paper/ctf_rest/tde_dynemo_networks.py.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91949/elife-91949-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Variational free energy for three sets of 10 runs. (B) Summary statistics for the best run from each set (indicated by the red dot in A). (C) Power maps relative to the mean across modes for the best run from sets 2 and 3. (D) Comparison of the summary statistics for a young (18–34 years old) and old (34–60 years old) group. The double star indicates a p<0.01. The maximum statistic pooling over modes and metrics was used to control for the family-wise error rate.
 
 We can see from the power maps and coherence networks (Figure 5AI) that DyNeMo identifies much more localized power activations and a cleaner network structure than was seen with the TDE-HMM. We can see from the PSDs (Figure 5AI, bottom) that these networks also exhibit distinct spectral characteristics.
 
@@ -76,19 +116,19 @@ From the (renormalized) mode time course (Figure 5AII) we see the description pr
 
 To compare DyNeMo to the HMM in a group-level analysis, we repeat the young vs old study using the DyNeMo-specific summary statistics (i.e. the mean and standard deviation of the renormalized mode time courses). Figure 5BI shows significant group differences for young (18–34 years old) and old (34–60 years old) participants. We can see an increased mode contribution (mean renormalized mode time course) for the sensorimotor network (mode 4), which reflects the increase in fractional occupancy we saw in the TDE-HMM (Figure 4BI). We see DyNeMo is able to reveal a stronger effect size with a p<0.01 compared to the TDE-HMM, which had a p<0.05. DyNeMo also shows a decrease in the variability (standard deviation of the renormalized mode time course) for the left temporal network (mode 5, p<0.01). We will discuss the young vs old comparison further in Section 2.5. The reproducibility of these results is shown in Figure 5—figure supplement 1.
 
-## 2.5 Estimating static functional networks
+### 2.5 Estimating static functional networks
 
 For comparison, we also apply a typical static network analysis pipeline (including static functional connectivity) to the CTF rest MEG dataset. We also consider how the static perspective in a young vs old group-level analysis compares to the dynamic perspective provided by the TDE-HMM in Figure 4 and TDE-DyNeMo in Figure 5, illustrating the benefits of being able to do static and dynamic analyses within the same toolbox.
 
-Figure 6 shows the group-averaged PSD (A.I), power maps (A.II), coherence networks (A.III) and amplitude envelope correlation (AEC) networks (A.IV) were calculated using all subjects. We observe δ\begin{document}$\delta$\end{document}-power is strongest in anterior regions and α\begin{document}$\alpha$\end{document}-power is strongest in posterior regions. We also observe qualitatively similar coherence and AEC networks. In particular, we see strong occipital connectivity in the α\begin{document}$\alpha$\end{document}-band in both the coherence and AEC networks.
+Figure 6 shows the group-averaged PSD (A.I), power maps (A.II), coherence networks (A.III) and amplitude envelope correlation (AEC) networks (A.IV) were calculated using all subjects. We observe $\delta$-power is strongest in anterior regions and $\alpha$-power is strongest in posterior regions. We also observe qualitatively similar coherence and AEC networks. In particular, we see strong occipital connectivity in the $\alpha$-band in both the coherence and AEC networks.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/91949/elife-91949-fig6-v2.jpg)
 
-**Figure 6.:** In the CTF rest magnetoencephalography (MEG) dataset, this reveals frequency-specific differences in the static functional networks of young (18–34 years old) and old (34–60 years old) participants. Group-average power spectral density (PSD) (averaged over subjects and parcels, (A.I) power maps (A.II) coherence networks (A.III) and AEC networks (A.IV) for the canonical frequency bands (). (δ,θ,α,β\begin{document}$\delta,\theta,\alpha,\beta$\end{document}B.I) Power difference for old minus young (top) and p-values (bottom). Only frequency bands with at least one parcel with a p<0.05 are shown, the rest are marked with n.s. (none significant). B.II) Amplitude envelope correlation (AEC) difference for old minus young only showing edges with a p<0.05. The maximum statistic pooling over frequency bands and parcels/edges was used in permutation testing to control for the family-wise error rate. The script used to generate the results in this figure is here: https://github.com/OHBA-analysis/osl-dynamics/blob/main/examples/toolbox_paper/ctf_rest/static_networks.py.
+**Figure 6.:** In the CTF rest magnetoencephalography (MEG) dataset, this reveals frequency-specific differences in the static functional networks of young (18–34 years old) and old (34–60 years old) participants. Group-average power spectral density (PSD) (averaged over subjects and parcels, (A.I) power maps (A.II) coherence networks (A.III) and AEC networks (A.IV) for the canonical frequency bands ($\delta,\theta,\alpha,\beta$). (B.I) Power difference for old minus young (top) and p-values (bottom). Only frequency bands with at least one parcel with a p<0.05 are shown, the rest are marked with n.s. (none significant). B.II) Amplitude envelope correlation (AEC) difference for old minus young only showing edges with a p<0.05. The maximum statistic pooling over frequency bands and parcels/edges was used in permutation testing to control for the family-wise error rate. The script used to generate the results in this figure is here: https://github.com/OHBA-analysis/osl-dynamics/blob/main/examples/toolbox_paper/ctf_rest/static_networks.py.
 
-Figure 6B shows significant (p<0.05) differences in the power maps (B.I) and AEC networks (B.II) for old (34–60 years old) minus young (18–34 years old) groups. We observe a significant reduction in temporal δ\begin{document}$\delta$\end{document}-power and an increase in sensorimotor β\begin{document}$\beta$\end{document}-power. We also observe a significant increase in sensorimotor AEC in the β\begin{document}$\beta$\end{document}-band (Figure 6BII).
+Figure 6B shows significant (p<0.05) differences in the power maps (B.I) and AEC networks (B.II) for old (34–60 years old) minus young (18–34 years old) groups. We observe a significant reduction in temporal $\delta$-power and an increase in sensorimotor $\beta$-power. We also observe a significant increase in sensorimotor AEC in the $\beta$-band (Figure 6BII).
 
-The static (time-averaged) differences we see in young vs old participants can arise in many ways from the underlying dynamics of resting-state networks (Figures 4AI and 5AI). For example, an increase in static power could be due to more frequent activations of a particular network. Conversely, the dynamics of the networks may be unaffected and the power within a network could be altered. Studying the dynamic network perspective using the HMM and/or DyNeMo can help provide further insights into how the static differences arise. Looking at the dynamic network perspective provided by the TDE-HMM, we see an increase in the fractional occupancy of state 4 (Figure 4BI), which is a network with high β\begin{document}$\beta$\end{document}-power and connectivity (coherence) in the sensorimotor region. This is consistent with the static increase in β\begin{document}$\beta$\end{document}-power and AEC connectivity we observe here; i.e., the increase in static β\begin{document}$\beta$\end{document}-power and connectivity with age can be linked to a larger fraction of time spent in the sensorimotor network. The perspective provided by TDE-DyNeMo shows an increase with age in the contribution of mode 4 (Figure 5BI), which represents a sensorimotor network. This is a complementary explanation for the increase in static β\begin{document}$\beta$\end{document}-power and connectivity as a larger contribution from the sensorimotor network to the overall brain activity of older participants.
+The static (time-averaged) differences we see in young vs old participants can arise in many ways from the underlying dynamics of resting-state networks (Figures 4AI and 5AI). For example, an increase in static power could be due to more frequent activations of a particular network. Conversely, the dynamics of the networks may be unaffected and the power within a network could be altered. Studying the dynamic network perspective using the HMM and/or DyNeMo can help provide further insights into how the static differences arise. Looking at the dynamic network perspective provided by the TDE-HMM, we see an increase in the fractional occupancy of state 4 (Figure 4BI), which is a network with high $\beta$-power and connectivity (coherence) in the sensorimotor region. This is consistent with the static increase in $\beta$-power and AEC connectivity we observe here; i.e., the increase in static $\beta$-power and connectivity with age can be linked to a larger fraction of time spent in the sensorimotor network. The perspective provided by TDE-DyNeMo shows an increase with age in the contribution of mode 4 (Figure 5BI), which represents a sensorimotor network. This is a complementary explanation for the increase in static $\beta$-power and connectivity as a larger contribution from the sensorimotor network to the overall brain activity of older participants.
 
 ## Discussion
 
@@ -112,39 +152,67 @@ osl-dynamics can be used, and has been used, in a wide range of applications and
 
 ## Materials and methods
 
-## 5.1 Generative models
+### 5.1 Generative models
 
 In the study of dynamics, we are often interested in the properties of a time series, such as power spectral density (PSD), mean, covariance, etc., at a given time point. A common heuristic approach for calculating this is to use a sliding window. However, this approach only utilizes a short window around the time point of interest and suffers from a tradeoff between the temporal precision of dynamics and an accurate estimation of the properties (via a sufficiently large window). In Liuzzi et al., 2019, it was shown that this approach is inadequate for studying fast changes in functional connectivity. In osl-dynamics, we adopt an alternative approach based on generative models (Lamb, 2021). These are models that learn the probability distribution of the training data. In this report, we will focus on two generative models for time series data: the Hidden Markov Model (HMM) (Rezek and Roberts, 2005) and Dynamic Network Modes (DyNeMo) (Gohil et al., 2022). Both of these models (discussed further below) incorporate an underlying dynamic latent variable in the generative process. The objective during training is to learn the most likely latent variables to have generated the observed time series (we minimize the variational free energy [This is equivalent to maximizing the negative variational free energy, which is also known as the evidence lower bound (ELBO) Bishop and Nasrabadi, 2006] Bishop and Nasrabadi, 2006). In doing this, the model can identify non-contiguous segments of the time series that share the same latent variable. Pooling this information leads to more robust estimates of the local properties of the data.
 
-The generative model for the HMM (shown in Figure 7A) is(1)p(x1:T,θ1:T)=p(x1|θ1)p(θ1)∏t=2Tp(xt|θt)p(θt|θt−1),\begin{document}$$\displaystyle p(\boldsymbol{x}_{1:T}, \theta_{1:T}) = p(\boldsymbol{x}_1 | \theta_1) p(\theta_1) \prod_{t=2}^T p(\boldsymbol{x}_t | \theta_t) p(\theta_t | \theta_{t-1}),$$\end{document}
+The generative model for the HMM (shown in Figure 7A) is
 
-where θt∈{1,...,K}\begin{document}$\theta_{t}\in\{1,...,K\}$\end{document} is the latent state at time t\begin{document}$t$\end{document}, K\begin{document}$K$\end{document} is the number of states, and xt\begin{document}$\boldsymbol{x}_{t}$\end{document} is the generated data. p(xt|θt)\begin{document}$p(\boldsymbol{x}_{t}|\theta_{t})$\end{document} is the observation model. Here, we use(2)p(xt|θt=k)=N(μk,Dk),\begin{document}$$\displaystyle p(\boldsymbol{x}_t | \theta_t = k) = \mathcal{N}(\boldsymbol{\mu}_k, \boldsymbol{D}_k),$$\end{document}
+$$
+p(x_{1:T},\theta_{1:T})=p(x_{1}|\theta_{1})p(\theta_{1})\prodt=2Tp(x_{t}|\theta_{t})p(\theta_{t}|\theta_{t−1}),
+$$
 
-where μk∈{μ1,...,μK}\begin{document}$\boldsymbol{\mu}_{k}\in\{\boldsymbol{\mu}_{1},...,\boldsymbol{\mu}_{K}\}$\end{document} is a state mean and Dk∈{D1,...,DK}\begin{document}$\boldsymbol{D}_{k}\in\{\boldsymbol{D}_{1},...,\boldsymbol{D}_{K}\}$\end{document} is a state covariance. Dynamics in the time series are generated through state switching, which is characterized by the transition probability p(θt|θt−1)\begin{document}$p(\theta_{t}|\theta_{t-1})$\end{document}. Each pairwise state transition forms the transition probability matrix, (Rezek and Roberts, 2005)(3)Aij=p(θt=j|θt−1=i).\begin{document}$$\displaystyle A_{ij} = p(\theta_t = j | \theta_{t-1} = i).$$\end{document}
+where $\theta_{t}\in{1,...,K}$ is the latent state at time $t$, $K$ is the number of states, and $x_{t}$ is the generated data. $p(x_{t}|\theta_{t})$ is the observation model. Here, we use
+
+$$
+p(x_{t}|\theta_{t}=k)=N(\mu_{k},D_{k}),
+$$
+
+where $\mu_{k}\in{\mu_{1},...,\mu_{K}}$ is a state mean and $D_{k}\in{D_{1},...,D_{K}}$ is a state covariance. Dynamics in the time series are generated through state switching, which is characterized by the transition probability $p(\theta_{t}|\theta_{t−1})$. Each pairwise state transition forms the transition probability matrix, (Rezek and Roberts, 2005)
+
+$$
+A_{ij}=p(\theta_{t}=j|\theta_{t−1}=i).
+$$
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/91949/elife-91949-fig7-v2.jpg)
 
-**Figure 7.:** (A) Hidden Markov Model (HMM) (Vidaurre et al., 2016; Vidaurre et al., 2018a). Here, data is generated using a hidden state () and observation model, which in our case is a multivariate normal distribution parameterized by a state mean (θt\begin{document}$\theta_{t}$\end{document}) and covariance (μk\begin{document}$\boldsymbol{\mu}_{k}$\end{document}). Only one state can be active at a given time point. Dynamics are modeled via state switching using a transition probability matrix (Dk\begin{document}$\boldsymbol{D}_{k}$\end{document}), which forecasts the probability of the current state based on the previous state. (Aij\begin{document}$A_{ij}$\end{document}B) Dynamic Network Modes (DyNeMo) (Gohil et al., 2022). Here, the data is generated using a linear combination of modes ( and μj\begin{document}$\boldsymbol{\mu}_{j}$\end{document}) and dynamics are modelled using a recurrent neural network (RNN: Dj\begin{document}$\boldsymbol{D}_{j}$\end{document} and f\begin{document}$f$\end{document}), which forecasts the probability of a particular mixing ratio (g\begin{document}$g$\end{document}) based on a long history of previous values via the underlying logits (αt\begin{document}$\boldsymbol{\alpha}_{t}$\end{document}).θt\begin{document}$\boldsymbol{\theta}_{t}$\end{document}
+**Figure 7.:** (A) Hidden Markov Model (HMM) (Vidaurre et al., 2016; Vidaurre et al., 2018a). Here, data is generated using a hidden state ($\theta_{t}$) and observation model, which in our case is a multivariate normal distribution parameterized by a state mean ($\mu_{k}$) and covariance ($D_{k}$). Only one state can be active at a given time point. Dynamics are modeled via state switching using a transition probability matrix ($A_{ij}$), which forecasts the probability of the current state based on the previous state. (B) Dynamic Network Modes (DyNeMo) (Gohil et al., 2022). Here, the data is generated using a linear combination of modes ($\mu_{j}$ and $D_{j}$) and dynamics are modelled using a recurrent neural network (RNN: $f$ and $g$), which forecasts the probability of a particular mixing ratio ($\alpha_{t}$) based on a long history of previous values via the underlying logits ($\theta_{t}$).
 
 osl-dynamics uses variational Bayesian inference Bishop and Nasrabadi, 2006 to learn the most likely state to have generated the observed data. This has the advantage of being able to account for uncertainty in the latent state. For more information regarding the implementation of the HMM in osl-dynamics see the documentation: available here. The HMM has been successfully used to study dynamics in neuroimaging data in a variety of settings (Seedat et al., 2020; Khawaldeh et al., 2022; Vidaurre et al., 2018b; Quinn et al., 2018; Higgins et al., 2021; Sitnikova et al., 2018; Van Schependom et al., 2019; Vidaurre et al., 2016; Vidaurre et al., 2018a; Vidaurre et al., 2017).
 
-DyNeMo is a recently proposed model that overcomes two key limitations of the HMM: the mutually exclusive states and limited memory (Gohil et al., 2022). The generative model for DyNeMo (shown in Figure 7B) is(4)p(x1:T,θ1:T)=p(x1|θ1)p(θ1)∏t=2Tp(xt|θt)p(θt|θ1:t−1),\begin{document}$$\displaystyle p(\boldsymbol{x}_{1:T}, \boldsymbol{\theta}_{1:T}) = p(\boldsymbol{x}_1 | \boldsymbol{\theta}_1) p(\boldsymbol{\theta}_1) \prod_{t=2}^T p(\boldsymbol{x}_t | \boldsymbol{\theta}_t) p(\boldsymbol{\theta}_t | \boldsymbol{\theta}_{1:t-1}),$$\end{document}
+DyNeMo is a recently proposed model that overcomes two key limitations of the HMM: the mutually exclusive states and limited memory (Gohil et al., 2022). The generative model for DyNeMo (shown in Figure 7B) is
 
-where θt\begin{document}$\boldsymbol{\theta}_{t}$\end{document} is a latent vector at time t\begin{document}$t$\end{document} (referred to as a logit) and xt\begin{document}$\boldsymbol{x}_{t}$\end{document} is the generated data. The observation model we use is(5)p(xt|θt)=N(mt,Ct),mt=∑j=1Jαjtμj,Ct=∑j=1JαjtDj,\begin{document}$$\begin{aligned}p(\boldsymbol{x}_t | \boldsymbol{\theta}_t) &= \displaystyle \mathcal{N}(\boldsymbol{m}_t, \boldsymbol{C}_t), \\\boldsymbol{m}_t &= \displaystyle\sum_{j=1}^J \alpha_{jt} \boldsymbol{\mu}_j, \\\boldsymbol{C}_t &= \displaystyle\sum_{j=1}^J \alpha_{jt} \boldsymbol{D}_j, \\\end{aligned}$$\end{document}
+$$
+p(x_{1:T},\theta_{1:T})=p(x_{1}|\theta_{1})p(\theta_{1})\prodt=2Tp(x_{t}|\theta_{t})p(\theta_{t}|\theta_{1:t−1}),
+$$
 
-where μj∈{μ1,...,μJ}\begin{document}$\boldsymbol{\mu}_{j}\in\{\boldsymbol{\mu}_{1},...,\boldsymbol{\mu}_{J}\}$\end{document} is a mode mean, Dj∈{D1,...,DJ}\begin{document}$\boldsymbol{D}_{j}\in\{\boldsymbol{D}_{1},...,\boldsymbol{D}_{J}\}$\end{document} is a mode covariance, J\begin{document}$J$\end{document} is the number of modes and(6)αjt={softmax(θt)}j\begin{document}$$\displaystyle \alpha_{jt} = \{ \mathrm{softmax}(\boldsymbol{\theta_t})\}_j$$\end{document}
+where $\theta_{t}$ is a latent vector at time $t$ (referred to as a logit) and $x_{t}$ is the generated data. The observation model we use is
 
-is the mixing coefficient for mode j\begin{document}$j$\end{document}. Dynamics in the latent vector are generated through p(θt|θ1:t−1)\begin{document}$p(\boldsymbol{\theta}_{t}|\boldsymbol{\theta}_{1:t-1})$\end{document}, which is a distribution parameterized using a recurrent neural network (Géron, 2022). Specifically,(7)p(θt|θ1:t−1)=N(mθt,σθt2),mθt=f(θ1:t−1)σθt2=g(θ1:t−1),\begin{document}$$\begin{aligned}\displaystyle p(\boldsymbol{\theta}_t | \boldsymbol{\theta}_{1:t-1}) &= \mathcal{N}(\boldsymbol{m}_{\theta_t}, \boldsymbol{\sigma}^2_{\theta_t}), \\ \displaystyle \boldsymbol{m}_{\theta_t} &= f(\boldsymbol{\theta}_{1:t-1}) \\ \displaystyle \boldsymbol{\sigma}^2_{\theta_t} &= g(\boldsymbol{\theta}_{1:t-1}), \end{aligned}$$\end{document}
+$$
+p(x_{t}|\theta_{t})=N(m_{t},C_{t}),m_{t}=\sumj=1J\alpha_{jt}\mu_{j},C_{t}=\sumj=1J\alpha_{jt}D_{j},
+$$
 
-where f\begin{document}$f$\end{document} and g\begin{document}$g$\end{document} are calculated using a recurrent neural network. osl-dynamics uses amortized variational Bayesian inference Kingma and Welling, 2013 to learn the most likely latent vector to have generated the observed data. This is a highly efficient inference scheme that is scalable to large datasets. For more information regarding the implementation of DyNeMo in osl-dynamics see the documentation: available here.
+where $\mu_{j}\in{\mu_{1},...,\mu_{J}}$ is a mode mean, $D_{j}\in{D_{1},...,D_{J}}$ is a mode covariance, $J$ is the number of modes and
+
+$$
+\alpha_{jt}={softmax(\theta_{t})}_{j}
+$$
+
+is the mixing coefficient for mode $j$. Dynamics in the latent vector are generated through $p(\theta_{t}|\theta_{1:t−1})$, which is a distribution parameterized using a recurrent neural network (Géron, 2022). Specifically,
+
+$$
+p(\theta_{t}|\theta_{1:t−1})=N(m_{\theta_{t}},\sigma_{\theta_{t}}^{2}),m_{\theta_{t}}=f(\theta_{1:t−1})\sigma_{\theta_{t}}^{2}=g(\theta_{1:t−1}),
+$$
+
+where $f$ and $g$ are calculated using a recurrent neural network. osl-dynamics uses amortized variational Bayesian inference Kingma and Welling, 2013 to learn the most likely latent vector to have generated the observed data. This is a highly efficient inference scheme that is scalable to large datasets. For more information regarding the implementation of DyNeMo in osl-dynamics see the documentation: available here.
 
 Once trained, both models reveal a dynamic latent description of the training data. For the HMM, the latent description is a hidden state time course (Also known as the Viterbi path), which is the most likely state inferred at each time point in the training data. For DyNeMo, it is a mode time course, which is the mixing coefficient time series for each mode inferred from the training data. We will discuss in Sections 5.5.1 and 5.5.2 how these latent descriptions can be used to summarize dynamics in the training data.
 
-## 5.2 Datasets
+### 5.2 Datasets
 
 We make use of two publicly available datasets:
 
-## 5.3 Preprocessing and source reconstruction
+### 5.3 Preprocessing and source reconstruction
 
 The steps involved in estimating source data from an MEG recording are shown in Figure 8. This part of the pipeline can be performed with the OHBA Software Library (OSL) (Mats, 2023; Quinn et al., 2022b), which is a separate Python package for M/EEG analysis. The exact steps applied to the raw data for each dataset were:
 
@@ -154,7 +222,7 @@ The steps involved in estimating source data from an MEG recording are shown in 
 
 These preprocessing steps have been found to work well for a wide variety of datasets when studying dynamics. The scripts used for preprocessing and source reconstruction can be found here: https://github.com/OHBA-analysis/osl-dynamics/tree/main/examples/toolbox_paper.
 
-## 5.4 Data preparation
+### 5.4 Data preparation
 
 We usually prepare the source data before training a model. The data preparation can be different depending on what aspect of the data we are interested in studying.
 
@@ -162,21 +230,21 @@ Amplitude envelope (AE). If we are interested in studying dynamics in the amplit
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/91949/elife-91949-fig9-v2.jpg)
 
-**Figure 9.:** (A.I) Original (simulated) time series data. Only a short segment (0.2  s) is shown. Channel 1 (2) is a modulated sine wave at 15  Hz (30  Hz) with  noise added. (N(0,0.1)\begin{document}$\mathcal{N}(0,0.1)$\end{document}A.II) Covariance of the original data. (B) Amplitude envelope (AE) data (solid red line) and original data (dashed blue line). (C.I) Time-delay embedded (TDE) time series. An embedding window of ±7 lags was used. (C.II) Covariance of TDE data. (C.III) Spectral properties of the original data were estimated using the covariance matrix of TDE data. Acronyms: Autocorrelation function (ACF), Power spectral density (PSD).
+**Figure 9.:** (A.I) Original (simulated) time series data. Only a short segment (0.2  s) is shown. Channel 1 (2) is a modulated sine wave at 15  Hz (30  Hz) with $N(0,0.1)$ noise added. (A.II) Covariance of the original data. (B) Amplitude envelope (AE) data (solid red line) and original data (dashed blue line). (C.I) Time-delay embedded (TDE) time series. An embedding window of ±7 lags was used. (C.II) Covariance of TDE data. (C.III) Spectral properties of the original data were estimated using the covariance matrix of TDE data. Acronyms: Autocorrelation function (ACF), Power spectral density (PSD).
 
 Time-delay embedding (TDE). Studying the amplitude dynamics of oscillations does not reveal any insights into how different regions interact via phase synchronization. For this, we need to prepare the data using TDE (Strogatz, 2018). This augments the time series with extra channels containing time-lagged versions of the original channels. Figure 9CI shows an example of this. To perform TDE, we need to specify the number of lagged channels to add (number of embeddings) and the lag to shift each additional channel by. In osl-dynamics, we always shift by one-time point, so we only need to specify the number of lags. By adding extra channels, we embed the autocorrelation function (ACF) of the original data (as well as the cross-correlation function) into the covariance matrix of the TDE data. This is illustrated in Figure 9CII. We plot the ACF taken from the TDE covariance matrix and the PSD (calculated using a Fourier transform) in Figure 9CIII. By using TDE data we make the covariance matrix sensitive to the frequency of oscillations in the original data. The covariance matrix is also sensitive to cross channel phase synchronization via the off-diagonal elements. Training on TDE data allows us to study dynamics in oscillatory amplitude and phase synchronization between channels. When we prepare TDE data, we are normally only interested in looking for dynamics in the auto/cross correlation function via the covariance matrix, so we fix the mean to zero in the generative model.
 
 For further details and example code for preparing data in osl-dynamics see the tutorial: available here.
 
-## 5.5 First-level and group-level analysis
+### 5.5 First-level and group-level analysis
 
 Starting from the source reconstructed data, we study a dataset with a two-stage process:
 
 We will present the results of applying five pipelines to source reconstructed data calculated from the datasets mentioned in Section 5.2: a burst detection pipeline based on the HMM (discussed in Section 5.5.1); three dynamic network analysis pipelines based on the HMM and DyNeMo (discussed in Section 5.5.2) and a static network analysis pipeline (discussed in Section 5.5.3). Both the HMM and DyNeMo have been validated on simulated data for each application. See Quinn et al., 2019 for a demonstration of the HMM’s ability to identify oscillatory bursts and Vidaurre et al., 2016; Gohil et al., 2022 for a demonstration of the HMM/DyNeMo’s ability to identify dynamic networks.
 
-## 5.5.1 Burst detection
+#### 5.5.1 Burst detection
 
-We use an approach based on the HMM to detect bursts of oscillatory activity. In this approach, we prepare the source data using TDE. A typical TDE-HMM burst detection pipeline is shown in Figure 10. When the HMM state time courses are inferred from the training data, each ‘visit’ to a particular state corresponds to a burst, or transient spectral event, with spectral properties specific to the state (e.g. an increase in β\begin{document}$\beta$\end{document}-band power). This approach assumes that we are looking for bursting in a single channel (brain region) at a time; separate HMMs can be used to detect bursting in each channel. We use the state time course to calculate summary statistics that characterize the dynamics of bursts. Typical summary statistics are:
+We use an approach based on the HMM to detect bursts of oscillatory activity. In this approach, we prepare the source data using TDE. A typical TDE-HMM burst detection pipeline is shown in Figure 10. When the HMM state time courses are inferred from the training data, each ‘visit’ to a particular state corresponds to a burst, or transient spectral event, with spectral properties specific to the state (e.g. an increase in $\beta$-band power). This approach assumes that we are looking for bursting in a single channel (brain region) at a time; separate HMMs can be used to detect bursting in each channel. We use the state time course to calculate summary statistics that characterize the dynamics of bursts. Typical summary statistics are:
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/91949/elife-91949-fig10-v2.jpg)
 
@@ -184,7 +252,7 @@ We use an approach based on the HMM to detect bursts of oscillatory activity. In
 
 We calculate each of these for a particular state and subject. The averages are taken over all state activations. Given when a state is active we can use the source data to calculate the PSD of each burst type. We use the multitaper approach described in Vidaurre et al., 2016 to do this due to its ability to accurately estimate spectra. We present the results of applying a TDE-HMM burst detection pipeline to the CTF rest MEG dataset in Section 2.1.
 
-## 5.5.2 Identifying dynamic functional networks
+#### 5.5.2 Identifying dynamic functional networks
 
 osl-dynamics provides more options for modeling dynamic functional networks. Note, in this case, we train on multivariate data containing the activity at multiple regions of interest, rather than a single region, which is what we did in the burst detection pipeline (Section 5.5.1). Indeed, one perspective on using osl-dynamics to model dynamic functional networks, is that it is identifying bursts that span across multiple brain regions. Figure 11 shows the different combinations of data preparation and generative models that are available for a dynamic network analysis pipeline. We discuss each of these options and when they should be used below.
 
@@ -206,7 +274,7 @@ AE-DyNeMo. The final option is to train DyNeMo on AE data. In this case, the amp
 
 When we display the networks inferred by each of the pipelines above, we will threshold them to only show the strongest connections. In this work, we will specify the threshold using a data-driven approach where we fit a two-component GMM to the distribution of connections in each network. We interpret one of the components as the distribution for background connections and the other as the distribution for atypically strong connections, which is what we display in each plot.
 
-## 5.5.3 Identifying static functional networks
+#### 5.5.3 Identifying static functional networks
 
 A feature of osl-dynamics is that more conventional, static (time-averaged), network analyses can be carried out using the same methodology that we use in the dynamic methods. This allows for a much more straightforward comparison between static and dynamic analyses. To model static functional networks we simply need to specify the metrics we would like to use to summarize the networks and we calculate these directly from the source data. Figure 12 shows a typical static network analysis pipeline. We present the result of a static network analysis pipeline on the CTF rest MEG dataset in Section 2.5. Note, for the static networks we select the top 5% of connections to display in each plot rather than the GMM approach we used to threshold the dynamic functional networks.
 
@@ -214,13 +282,13 @@ A feature of osl-dynamics is that more conventional, static (time-averaged), net
 
 **Figure 12.:** (A) The source reconstructed data is used to calculate metrics that describe networks. (B) The subject-specific metrics are used to model a group. Acronyms: Amplitude envelope correlation (AEC), Power spectral density (PSD).
 
-## 5.6 Run-to-run variability
+### 5.6 Run-to-run variability
 
 The HMM and DyNeMo are trained by minimizing a cost function (in osl-dynamics, we use the variational free energy Rezek and Roberts, 2005; Gohil et al., 2022). As is typical, this approach suffers from a local optimum issue, where the model can converge to different explanations (latent descriptions) of the data during training. That is, different state/mode time courses can lead to similar values for the variational free energy. The final description can be sensitive to the stochasticity in updating model parameters and the initial parameter values.
 
 A strategy for dealing with this that has worked well in the past is to train multiple models from scratch (each model is referred to as a run) and only the model with the lowest variational free energy is analyzed. We consider this model as the best description of the data. We ensure any conclusions based on this model are reproducible in the best model from another set of independent runs. In all of our figures here, we present the results from the best run from a set of 10. In the supplementary information (SI) we show these results are reproducible in an independent set of runs. Other strategies for dealing with run-to-run variability involve combining multiple runs, see Alonso and Vidaurre, 2023 for a discussion of these techniques.
 
-## 5.7 Reproducibility
+### 5.7 Reproducibility
 
 We use variational Bayesian inference to learn model parameters (state/mode time courses and observation model means/covariances). This process involves updating the model parameters to minimize the variational free energy (Bishop and Nasrabadi, 2006).
 

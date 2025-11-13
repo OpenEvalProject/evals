@@ -17,29 +17,29 @@
 
 ### Affiliations
 
-1. https://ror.org/0546hnb39 Department of Biology, University of Konstanz Konstanz Germany
-2. https://ror.org/02f99v835 Gene Bank of Primates and Primate Genetics Laboratory, German Primate Center, Leibniz Institute for Primate Research Göttingen Germany
-3. https://ror.org/02f99v835 Cognitive Ethology Laboratory, German Primate Center, Leibniz Institute for Primate Research Göttingen Germany
-4. https://ror.org/01y9bpm73 Department of Primate Cognition, Georg-August-University of Göttingen Göttingen Germany
-5. https://ror.org/05ehdmg18 Leibniz-ScienceCampus Primate Cognition Göttingen Germany
-6. https://ror.org/0546hnb39 SequAna – Sequencing Analysis Core Facility, University of Konstanz Konstanz Germany
-7. https://ror.org/00qhdy563 Laboratoire CNRS ASM « Archéologie des Sociétés Méditerranéennes » (UMR 5140), Université Paul-Valéry, LabEx Archimede Montpellier France
+1. Department of Biology, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+2. Gene Bank of Primates and Primate Genetics Laboratory, German Primate Center, Leibniz Institute for Primate Research Göttingen Germany ([ROR:02f99v835](https://ror.org/02f99v835))
+3. Cognitive Ethology Laboratory, German Primate Center, Leibniz Institute for Primate Research Göttingen Germany ([ROR:02f99v835](https://ror.org/02f99v835))
+4. Department of Primate Cognition, Georg-August-University of Göttingen Göttingen Germany ([ROR:01y9bpm73](https://ror.org/01y9bpm73))
+5. Leibniz-ScienceCampus Primate Cognition Göttingen Germany ([ROR:05ehdmg18](https://ror.org/05ehdmg18))
+6. SequAna – Sequencing Analysis Core Facility, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+7. Laboratoire CNRS ASM « Archéologie des Sociétés Méditerranéennes » (UMR 5140), Université Paul-Valéry, LabEx Archimede Montpellier France ([ROR:00qhdy563](https://ror.org/00qhdy563))
 8. Musée des Confluences Lyon France
-9. https://ror.org/03wkt5x30 Muséum National d’Histoire Naturelle Paris France
-10. https://ror.org/05k35b119 Department of Zoology, State Museum of Natural History Stuttgart Stuttgart Germany
-11. https://ror.org/02p77k626 Centre of Molecular Anthropology for Ancient DNA Studies, Department of Biology, University of Rome Tor Vergata Rome Italy
-12. https://ror.org/02y22ws83 Royal Belgian Institute of Natural Sciences Brussels Belgium
-13. https://ror.org/05f950310 Department of Biology, KU Leuven Leuven Belgium
-14. https://ror.org/049s0rh22 Departments of Anthropology and Biological Sciences, Dartmouth College Hanover United States
-15. https://ror.org/0546hnb39 Zukunftskolleg, University of Konstanz Konstanz Germany
-16. https://ror.org/026stee22 Department of Migration, Max Planck Institute of Animal Behavior Konstanz Germany
-17. https://ror.org/0546hnb39 Centre for the Advanced Study of Collective Behaviour, University of Konstanz Konstanz Germany
+9. Muséum National d’Histoire Naturelle Paris France ([ROR:03wkt5x30](https://ror.org/03wkt5x30))
+10. Department of Zoology, State Museum of Natural History Stuttgart Stuttgart Germany ([ROR:05k35b119](https://ror.org/05k35b119))
+11. Centre of Molecular Anthropology for Ancient DNA Studies, Department of Biology, University of Rome Tor Vergata Rome Italy ([ROR:02p77k626](https://ror.org/02p77k626))
+12. Royal Belgian Institute of Natural Sciences Brussels Belgium ([ROR:02y22ws83](https://ror.org/02y22ws83))
+13. Department of Biology, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+14. Departments of Anthropology and Biological Sciences, Dartmouth College Hanover United States ([ROR:049s0rh22](https://ror.org/049s0rh22))
+15. Zukunftskolleg, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+16. Department of Migration, Max Planck Institute of Animal Behavior Konstanz Germany ([ROR:026stee22](https://ror.org/026stee22))
+17. Centre for the Advanced Study of Collective Behaviour, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
 
 † Corresponding author
 
 ## Abstract
 
-Adulis, located on the Red Sea coast in present-day Eritrea, was a bustling trading centre between the first and seventh centuries CE. Several classical geographers—Agatharchides of Cnidus, Pliny the Elder, Strabo—noted the value of Adulis to Greco-Roman Egypt, particularly as an emporium for living animals, including baboons ( Papio spp.). Though fragmentary, these accounts predict the Adulite origins of mummified baboons in Ptolemaic catacombs, while inviting questions on the geoprovenance of older (Late Period) baboons recovered from Gabbanat el-Qurud (‘Valley of the Monkeys’), Egypt. Dated to ca. 800–540 BCE, these animals could extend the antiquity of Egyptian–Adulite trade by as much as five centuries. Previously, Dominy et al. (2020) used stable isotope analysis to show that two New Kingdom specimens of Papio hamadryas originate from the Horn of Africa. Here, we report the complete mitochondrial genomes from a mummified baboon from Gabbanat el-Qurud and 14 museum specimens with known provenance together with published georeferenced mitochondrial sequence data. Phylogenetic assignment connects the mummified baboon to modern populations of P. hamadryas in Eritrea, Ethiopia, and eastern Sudan. This result, assuming geographical stability of phylogenetic clades, corroborates Greco-Roman historiographies by pointing toward present-day Eritrea, and by extension Adulis, as a source of baboons for Late Period Egyptians. It also establishes geographic continuity with baboons from the fabled Land of Punt (Dominy et al., 2020), giving weight to speculation that Punt and Adulis were essentially the same trading centres separated by a thousand years of history.
+Adulis, located on the Red Sea coast in present-day Eritrea, was a bustling trading centre between the first and seventh centuries CE. Several classical geographers—Agatharchides of Cnidus, Pliny the Elder, Strabo—noted the value of Adulis to Greco-Roman Egypt, particularly as an emporium for living animals, including baboons (Papio spp.). Though fragmentary, these accounts predict the Adulite origins of mummified baboons in Ptolemaic catacombs, while inviting questions on the geoprovenance of older (Late Period) baboons recovered from Gabbanat el-Qurud (‘Valley of the Monkeys’), Egypt. Dated to ca. 800–540 BCE, these animals could extend the antiquity of Egyptian–Adulite trade by as much as five centuries. Previously, Dominy et al. (2020) used stable isotope analysis to show that two New Kingdom specimens of Papio hamadryas originate from the Horn of Africa. Here, we report the complete mitochondrial genomes from a mummified baboon from Gabbanat el-Qurud and 14 museum specimens with known provenance together with published georeferenced mitochondrial sequence data. Phylogenetic assignment connects the mummified baboon to modern populations of P. hamadryas in Eritrea, Ethiopia, and eastern Sudan. This result, assuming geographical stability of phylogenetic clades, corroborates Greco-Roman historiographies by pointing toward present-day Eritrea, and by extension Adulis, as a source of baboons for Late Period Egyptians. It also establishes geographic continuity with baboons from the fabled Land of Punt (Dominy et al., 2020), giving weight to speculation that Punt and Adulis were essentially the same trading centres separated by a thousand years of history.
 
 ## Introduction
 
@@ -49,7 +49,7 @@ Echoing this account is the first-century Periplus Maris Erythraei, an anonymous
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/87513/elife-87513-fig1-v2.jpg)
 
-**Figure 1.:** Papio hamadryas).The sanctuary and temple complex featured several 35-tonne statues of P. hamadryas as the embodiment of Thoth. One of the oldest deities in the Egyptian pantheon, Thoth is best known as a god of writing and wisdom, a lunar deity, and vizier of the gods, but also as a cosmic deity, creator god, and warrior (Stadler, 2012). The quartzite statues were erected by Amenhotep III, 18th Dynasty, New Kingdom, 1390–1353 BCE. Photograph by N.J. Dominy.
+**Figure 1.:** The sanctuary and temple complex featured several 35-tonne statues of P. hamadryas as the embodiment of Thoth. One of the oldest deities in the Egyptian pantheon, Thoth is best known as a god of writing and wisdom, a lunar deity, and vizier of the gods, but also as a cosmic deity, creator god, and warrior (Stadler, 2012). The quartzite statues were erected by Amenhotep III, 18th Dynasty, New Kingdom, 1390–1353 BCE. Photograph by N.J. Dominy.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/87513/elife-87513-fig2-v2.jpg)
 
@@ -59,15 +59,544 @@ Though fragmentary, this historiography points to Adulis as a commercial source 
 
 Mummified baboons have been investigated morphologically, revealing species-level taxonomic assignments as well as individual details, such as age, sex, and pathological condition (Boessneck, 1987; Brandon-Jones and Goudsmit, 2022; Goudsmit and Brandon-Jones, 1999; Peters, 2020). Such data are telling, but insufficient for determining fine-scale geographic origins. Recent oxygen and strontium stable isotope evidence suggests that mummified hamadryas baboons were imported from a region encompassing northern Somalia, Eritrea, and Ethiopia (Dominy et al., 2020), a level of geographic precision with limited practical value. Another limitation concerns the captive breeding of some animals. For instance, stable isotopes can reveal a lifetime in Egypt but not the geoprovenance of the source population, as shown for olive baboons from the Ptolemaic catacombs of North Saqqara (Dominy et al., 2020). The analysis of ancient DNA (aDNA) recovered from baboon mummies and compared to the current distribution of baboon genetic diversity has the potential to provide more detailed insights on the geographic origin of baboons in ancient Egypt. To explore this possibility, we sequenced the mitochondrial genome (mitogenome) of a mummified baboon to infer its geographic origin through phylogenetic assignment.
 
-## Gabbanat el-Qurud
+### Gabbanat el-Qurud
 
 In Topography of Thebes, Wilkinson, 1853 noted a site called Gabbanat el-Qurud (‘Valley of the Monkeys’) located ca. 2.5 km north–northwest of Medinet Habu, the mortuary temple of Ramses III. Intrigued by this observation, French Egyptologists Louis Lortet and Claude Gaillard sought and found the site in February 1905, along with the remains of mummified baboons. They recovered ‘17 skulls and a large quantity of bones,’ which they attributed to Papio anubis and P. hamadryas (Lortet and Gaillard, 1907). The assemblage includes juvenile and adult males and females buried in jars, sarcophagi, or wooden coffins. Now accessioned in the Musée des Confluences, Lyon, France, the linen wrapping of one mummified individual (MHNL 90001206) was dated radiometrically to 803–544 cal. BC (95.4%) (Richardin et al., 2017).
 
 Ottoni et al., 2019 sampled dental calculus from 16 individuals in this same assemblage and reported the preservation of ancient microbial DNA in a subset of six. Their success motivated us to extract DNA from the remaining tooth material of ten individuals (Table 1, Supplementary file 1). In addition, we obtained samples (skin, bone, or tooth) from 21 modern historic specimens of baboons available in museum collections and representing the northeast African distribution of Papio (Table 1, Figure 2). These specimens were collected between 1855 and 1978, and we denote them ‘historic samples’ in the remainder of the article to distinguish them both from the older mummified specimens (‘mummified samples’) and recently collected material (‘modern samples’). Latitude–longitude information on the origin of the specimens was either derived from the respective museum database or assigned based on the listed provenance (Table 1).
 
+**Table 1.**
+ Information on samples analysed in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Taxon</th>
+      <th>Origin</th>
+      <th>Museum ID</th>
+      <th>Country</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>MitoClade</th>
+      <th>AccNo</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P. hamadryas</td>
+      <td>MNHN</td>
+      <td>MO-1972–357</td>
+      <td>ETH</td>
+      <td>9.320</td>
+      <td>42.119</td>
+      <td>G3-X</td>
+      <td>OQ538080</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>P. hamadryas</td>
+      <td>SMNS</td>
+      <td>SMNS-Z-MAM-001034*</td>
+      <td>ETH</td>
+      <td>11.500</td>
+      <td>39.300</td>
+      <td>G3-X</td>
+      <td>OQ538076</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>P. hamadryas</td>
+      <td>MfN</td>
+      <td>ZMB_Mam_025647_(2)</td>
+      <td>ETH</td>
+      <td>14.164</td>
+      <td>38.891</td>
+      <td>G3-X</td>
+      <td>OQ538079</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>P. hamadryas</td>
+      <td>SMNS</td>
+      <td>SMNS-Z-MAM-000960</td>
+      <td>ERI</td>
+      <td>15.783</td>
+      <td>38.453</td>
+      <td>G3-X</td>
+      <td>OQ538078</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>P. hamadryas</td>
+      <td>NHMUK</td>
+      <td>ZD.1910.10.3.1</td>
+      <td>SOM</td>
+      <td>9.933</td>
+      <td>45.200</td>
+      <td>G3-X</td>
+      <td>MT279063</td>
+      <td>Roos et al., 2021</td>
+    </tr>
+    <tr>
+      <td>P. hamadryas</td>
+      <td>MfN</td>
+      <td>ZMB_Mam_012808</td>
+      <td>ETH</td>
+      <td>9.314</td>
+      <td>42.118</td>
+      <td>G3-X</td>
+      <td>OQ538089</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>Wild</td>
+      <td></td>
+      <td>ETH</td>
+      <td>8.968</td>
+      <td>38.571</td>
+      <td>G3-X</td>
+      <td>JX946196</td>
+      <td>Zinner et al., 2013</td>
+    </tr>
+    <tr>
+      <td>P. hamadryas</td>
+      <td>MfN</td>
+      <td>ZMB_Mam_042543_(1)</td>
+      <td>ETH</td>
+      <td>9.593</td>
+      <td>41.866</td>
+      <td>G3-Z</td>
+      <td>OQ538084</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>P. hamadryas</td>
+      <td>MfN</td>
+      <td>ZMB_Mam_074849</td>
+      <td>DJI</td>
+      <td>11.589</td>
+      <td>43.129</td>
+      <td>G3-Z</td>
+      <td>OQ538085</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>P. hamadryas</td>
+      <td>MNHN</td>
+      <td>MO-1972–359</td>
+      <td>ETH</td>
+      <td>6.998</td>
+      <td>40.478</td>
+      <td>G3-Z</td>
+      <td>OQ538086</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>P. hamadryas</td>
+      <td>SMNS</td>
+      <td>SMNS-Z-MAM-001288</td>
+      <td>SDN</td>
+      <td>19.110</td>
+      <td>37.327</td>
+      <td>G3-Y</td>
+      <td>OQ538081</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>P. hamadryas</td>
+      <td>Wild</td>
+      <td></td>
+      <td>ERI</td>
+      <td>15.011</td>
+      <td>38.971</td>
+      <td>G3-Y</td>
+      <td>JX946201</td>
+      <td>Zinner et al., 2013</td>
+    </tr>
+    <tr>
+      <td>P. hamadryas</td>
+      <td>SMNS</td>
+      <td>SMNS-Z-MAM-007509†</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>G3-Y</td>
+      <td>OQ538082</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>P. hamadryas</td>
+      <td>MHNL</td>
+      <td>51000172</td>
+      <td>EGY</td>
+      <td>-</td>
+      <td>-</td>
+      <td>G3-Y</td>
+      <td>OQ538083</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>SMNS</td>
+      <td>SMNS-Z-MAM-000584 ‡</td>
+      <td>SDN</td>
+      <td>13.460</td>
+      <td>33.780</td>
+      <td>G3-Y</td>
+      <td>OQ538075</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>P. cynocephalus</td>
+      <td>Wild</td>
+      <td></td>
+      <td>TNZ</td>
+      <td>7.347</td>
+      <td>37.165</td>
+      <td>G1</td>
+      <td>JX946199</td>
+      <td>Zinner et al., 2013</td>
+    </tr>
+    <tr>
+      <td>P. cynocephalus</td>
+      <td>MNHN</td>
+      <td>ZM-MO-1977-5</td>
+      <td>SOM</td>
+      <td>3.243</td>
+      <td>45.471</td>
+      <td>G1</td>
+      <td>OQ538088</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>NHMUK</td>
+      <td>ZD1929.4.27.2</td>
+      <td>COD</td>
+      <td>0.800</td>
+      <td>26.633</td>
+      <td>J</td>
+      <td>MT279061</td>
+      <td>Roos et al., 2021</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>NHMUK</td>
+      <td>ZD1929.4.27.1</td>
+      <td>COD</td>
+      <td>1.183</td>
+      <td>27.650</td>
+      <td>J</td>
+      <td>MT279062</td>
+      <td>Roos et al., 2021</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>Wild</td>
+      <td>19GNM2220916</td>
+      <td>TNZ</td>
+      <td>4.679</td>
+      <td>29.621</td>
+      <td>J</td>
+      <td>MG787545</td>
+      <td>Roos et al., 2018</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>SMNS</td>
+      <td>SMNS-Z-MAM-032128</td>
+      <td>SSD</td>
+      <td>4.281</td>
+      <td>33.555</td>
+      <td>J</td>
+      <td>OQ538087</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>SMNS</td>
+      <td>SMNS-Z-MAM-000583</td>
+      <td>SDN</td>
+      <td>13.333</td>
+      <td>32.729</td>
+      <td>J</td>
+      <td>OQ538077</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>MfN</td>
+      <td>ZMB_Mam_074869</td>
+      <td>CMR</td>
+      <td>5.533</td>
+      <td>12.317</td>
+      <td>F</td>
+      <td>OQ538071</td>
+      <td>Kopp et al. in prep</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>Wild</td>
+      <td></td>
+      <td>NGA</td>
+      <td>7.317</td>
+      <td>11.583</td>
+      <td>F</td>
+      <td>JX946198</td>
+      <td>Zinner et al., 2013</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>MfN</td>
+      <td>ZMB_Mam_074887</td>
+      <td>CMR</td>
+      <td>9.328</td>
+      <td>12.946</td>
+      <td>F</td>
+      <td>OQ538069</td>
+      <td>Kopp et al. in prep</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>MfN</td>
+      <td>ZMB_Mam_074885</td>
+      <td>NGA</td>
+      <td>7.298</td>
+      <td>10.318</td>
+      <td>F</td>
+      <td>OQ538064</td>
+      <td>Kopp et al. in prep</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>MfN</td>
+      <td>ZMB_Mam_074883</td>
+      <td>CMR</td>
+      <td>6.334</td>
+      <td>9.961</td>
+      <td>F</td>
+      <td>OQ538072</td>
+      <td>Kopp et al. in prep</td>
+    </tr>
+    <tr>
+      <td>P. papio</td>
+      <td>Wild</td>
+      <td></td>
+      <td>SEN</td>
+      <td>12.883</td>
+      <td>12.767</td>
+      <td>E</td>
+      <td>JX946203</td>
+      <td>Zinner et al., 2013</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>NHMUK</td>
+      <td>ZD.1947.586</td>
+      <td>SLE</td>
+      <td>8.917</td>
+      <td>11.817</td>
+      <td>E</td>
+      <td>MT279064</td>
+      <td>Roos et al., 2021</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>MfN</td>
+      <td>ZMB_Mam_075043</td>
+      <td>TGO</td>
+      <td>9.260</td>
+      <td>0.781</td>
+      <td>D</td>
+      <td>OQ538066</td>
+      <td>Kopp et al. in prep</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>MfN</td>
+      <td>ZMB_Mam_011198</td>
+      <td>TGO</td>
+      <td>6.228</td>
+      <td>1.478</td>
+      <td>D</td>
+      <td>OQ538067</td>
+      <td>Kopp et al. in prep</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>Wild</td>
+      <td></td>
+      <td>CIV</td>
+      <td>8.800</td>
+      <td>3.790</td>
+      <td>D</td>
+      <td>JX946197</td>
+      <td>Zinner et al., 2013</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>MfN</td>
+      <td>ZMB_Mam_007396_(1)</td>
+      <td>TGO</td>
+      <td>6.950</td>
+      <td>0.585</td>
+      <td>D</td>
+      <td>OQ538065</td>
+      <td>Kopp et al. in prep</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>NHMUK</td>
+      <td>ZD.1939.1022</td>
+      <td>NER</td>
+      <td>17.000</td>
+      <td>7.933</td>
+      <td>D</td>
+      <td>MT279065</td>
+      <td>Roos et al., 2021</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>NHMUK</td>
+      <td>ZD.1939.1020</td>
+      <td>NER</td>
+      <td>17.683</td>
+      <td>8.483</td>
+      <td>D</td>
+      <td>MT279066</td>
+      <td>Roos et al., 2021</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>MNHN</td>
+      <td>ZM-MO-1960-476</td>
+      <td>TCD</td>
+      <td>20.344</td>
+      <td>16.786</td>
+      <td>K</td>
+      <td>MT279067</td>
+      <td>Roos et al., 2021</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>MNHN</td>
+      <td>MO-1996-2511</td>
+      <td>CAF</td>
+      <td>3.905</td>
+      <td>17.922</td>
+      <td>K</td>
+      <td>OQ538068</td>
+      <td>Kopp et al. in prep</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>NHMUK</td>
+      <td>ZD.1907.7.8.11</td>
+      <td>CAF</td>
+      <td>8.000</td>
+      <td>20.000</td>
+      <td>K</td>
+      <td>MT279068</td>
+      <td>Roos et al., 2021</td>
+    </tr>
+    <tr>
+      <td>P. anubis</td>
+      <td>MNHN</td>
+      <td>MO-1996-2510</td>
+      <td>CAF</td>
+      <td>4.966</td>
+      <td>18.701</td>
+      <td>K</td>
+      <td>OQ538070</td>
+      <td>Kopp et al. in prep</td>
+    </tr>
+    <tr>
+      <td>P.ursinus</td>
+      <td>Wild</td>
+      <td></td>
+      <td>ZAF</td>
+      <td>24.680</td>
+      <td>30.790</td>
+      <td>B</td>
+      <td>JX946205</td>
+      <td>Zinner et al., 2013</td>
+    </tr>
+    <tr>
+      <td>P. cynocephalus</td>
+      <td>Wild</td>
+      <td></td>
+      <td>TNZ</td>
+      <td>11.261</td>
+      <td>37.514</td>
+      <td>B</td>
+      <td>JX946200</td>
+      <td>Zinner et al., 2013</td>
+    </tr>
+    <tr>
+      <td>P. kindae</td>
+      <td></td>
+      <td></td>
+      <td>ZMB</td>
+      <td>12.591</td>
+      <td>30.252</td>
+      <td>C</td>
+      <td>JX946202</td>
+      <td>Zinner et al., 2013</td>
+    </tr>
+    <tr>
+      <td>P. cynocephalus</td>
+      <td>Wild</td>
+      <td>04MNM1300916</td>
+      <td>TNZ</td>
+      <td>6.119</td>
+      <td>29.730</td>
+      <td>H</td>
+      <td>MT279069</td>
+      <td>Roos et al., 2021</td>
+    </tr>
+    <tr>
+      <td>P. ursinus</td>
+      <td>Wild</td>
+      <td></td>
+      <td>ZAF</td>
+      <td>34.456</td>
+      <td>20.407</td>
+      <td>A</td>
+      <td>JX946204</td>
+      <td>Zinner et al., 2013</td>
+    </tr>
+    <tr>
+      <td>P. cynocephalus</td>
+      <td>Wild</td>
+      <td>24UNF1150317</td>
+      <td>TNZ</td>
+      <td>7.815</td>
+      <td>36.895</td>
+      <td></td>
+      <td>MT279060</td>
+      <td>Roos et al., 2021</td>
+    </tr>
+    <tr>
+      <td colspan="2">Theropithecus gelada</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>FJ785426</td>
+      <td>Hodgson et al., 2009</td>
+    </tr>
+  </tbody>
+</table>
+
+_AccNo, GenBank accession number; NHMUK, Natural History Museum, London; MNHN, Muséum National d'Histoire Naturelle, Paris; MfN, Museum für Naturkunde, Berlin; SMNS, State Museum of Natural History Stuttgart; MdC, Musée des Confluences, Lyon*Mislabelled in museum records as T. gelada.†Unclear provenance ‘Somaliland’ (not equal to present-day Somaliland).‡Misidentified provenance ‘Abyssinia’ as Ethiopia in museum records._
+
 ## Results
 
-## Mitogenomes from mummified and historic specimens
+### Mitogenomes from mummified and historic specimens
 
 We discarded seven historic samples and nine mummified samples from our analysis due to insufficient DNA content, sequencing failure, or low coverage and sequencing depth (Supplementary file 1). Thus, our results are based on the newly generated mitogenomes of 14 historic and 1 mummified individual (Table 1). In total, we obtained 896,025,770 raw sequence reads, with a mean of 34,462,530 (± SD 27,945,321) raw sequence reads per sample. On average, 95.5% of reads survived trimming and a median of 9934 (range: 244–2,722,354) reads per sample mapped to the reference mitogenome. After removal of duplicates (duplication level median: 25.1%; range: 2.5–92.6%), a median of 7398 (range: 237–497,458) mapped reads per sample resulted in the median final sequencing depth of 26× (range: 0.21–2952×). After exclusion of samples with low quality, the final dataset had a median final sequencing depth of 37× (range: 16–2952×), with a median of 0.4% undetermined sites (range: 0–1.7%) and a median breadth of coverage of at least 3× of 99.3% (range: 97.4–100%) (Supplementary file 1). All these metrics differed considerably depending on sample age (historic versus mummified) and DNA concentration (Figures 3 and 4). Capture enrichment strongly increased the number of mapped reads and final mean coverage compared to the shotgun approach (Figures 3 and 4). GC content of sequences was 40–50% (Figure 5) in the same range as the reference genomes.
 
@@ -87,13 +616,29 @@ The sequencing reads of the mummified sample (MHNL51000172) exhibit C to T and G
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/87513/elife-87513-fig7-v2.jpg)
 
-**Figure 7.:** a) exhibit fixed differences among northeastern subclades and (b) are fixed in subclade G3-Y but differ in the consensus sequence of the mummified baboon.Sites are named according to their position and the base in the G3-Y consensus sequence and coloured by base. Bases are colour-coded (A: red; C: blue; G: yellow, T: green).
+**Figure 7.:** Sites are named according to their position and the base in the G3-Y consensus sequence and coloured by base. Bases are colour-coded (A: red; C: blue; G: yellow, T: green).
 
-## Phylogenetic mapping
+### Phylogenetic mapping
 
 Phylogenetic trees inferred from maximum likelihood (ML) and Bayesian inference (BI) revealed identical topologies with generally strong node support (100% bootstrap support [BS] and posterior probability [PP] 1.0) and clearly defined geographic clades (Figure 8, Figure 8—figure supplement 1). These mitochondrial clades did not directly mirror species assignments. Within the northeastern baboons, the central olive baboon clade J from Democratic Republic of the Congo, Tanzania, South Sudan, and southern Sudan diverged first, followed by northern yellow baboons of clade G1 including a sample from Somalia. Hamadryas baboons formed clade G3, which also included olive baboons from the region. Clade G3 contained three subclades: subclade G3-Z comprised hamadryas baboons from Ethiopia and Djibouti; subclade G3-X comprised hamadryas and olive baboons from Ethiopia, Eritrea, and Somalia; and subclade G3-Y comprised hamadryas and olive baboons from northeastern Sudan and Eritrea. The mummified baboon from Gabbanat el-Qurud (MHNL 51000172) was located in subclade G3-Y, closely related to samples from Eritrea and northeastern Sudan.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/87513/elife-87513-fig8-v2.jpg)
+
+**Figure 8.:** P. cynocephalus from the Udzungwa Mountains and outgroup T. gelada were omitted from visualization for clarity. The analysed baboon mummy sample MHNL 51000172 (in bold) falls into clade G3-Y. Clade names (A–K) according to Roos et al., 2021, subclades X–Z according to Kopp et al., 2014b; sample IDs include putative species (P.ham, P. hamadryas; P.anu, P. anubis; P.cyn, P. cynocephalus; P.urs, P. ursinus; P.pap, P. papio), country of origin code (CAF, Central African Republic; CMR, Cameroon; COD, Democratic Republic of Congo; DJI, Djibouti; ERI, Eritrea; ETH, Ethiopia; NGA, Nigeria; SDN, Sudan; SSD, South Sudan; SEN, Senegal; SLE, Sierra Leone; SOM, Somalia; TGO, Togo; note that sample SMNS7509 is of unclear geoprovenance), and abbreviated museum code. Nodes with a branch support below 95% are marked with a grey dot. Mitochondrial genomes generated in this study are marked with an asterisk.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/87513/elife-87513-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Outgroups (T. gelada and P. cynocephalus-Udzungwa) were omitted from visualization for clarity. The analysed baboon mummy sample MHNL 51000172 (in bold) falls into clade G3-Y. Clade names (A–K) according to Roos et al., 2021, subclades according to Kopp et al., 2014b; sample IDs include putative species (P.ham, P. hamadryas; P.anu, P. anubis; P.cyn, P. cynocephalus; P.urs, P. ursinus; P.pap, P. papio), country of origin code (CAF, Central African Republic; CMR, Cameroon; COD, Democratic Republic of Congo; DJI, Djibouti; ERI, Eritrea; ETH, Ethiopia; NGA, Nigeria; SDN, Sudan; SSD, South Sudan; SEN, Senegal; SLE, Sierra Leone; SOM, Somalia; TGO, Togo; note that sample SMNS7509 is of unclear geoprovenance), and abbreviated museum code. Nodes with PP < 95 are marked with a grey dot. Mitochondrial genomes generated in this study are marked with an asterisk.
+
 The median-joining haplotype networks differentiated samples within clade G3 in greater detail and in a more precise geographic context (Figure 9, Figure 9—figure supplement 1). They revealed the same three subclades within the G3 clade. The HVRI and the cyt b networks were concordant both with each other and with the phylogenetic reconstructions in the attribution of samples to the different subclades, but exhibited slight discrepancies in the relation of clades to each other and the positioning of samples within the clades. Subclade G3-X contained hamadryas baboons from Ethiopia, Somalia, and Eritrea. Subclade G3-Z contained samples from Ethiopia, Somalia, Djibouti, from the southern tip of Eritrea, and the Arabian Peninsula. Subclade G3-Y contained samples from Eritrea, eastern Sudan, the Arabian Peninsula, and the mummified sample MHNL 51000172. Individuals closely related to this mummified baboon in the cyt b network were those from Sudan (on the Red Sea coast and in Senaar), Eritrea (between 14.3–16.0N 36.7–39.0E), and the Arabian Peninsula (Figure 9—figure supplement 1), and in the HVRI network samples from location ‘Bbr’ (Barka Bridge, 15.6N 38.0E) in Eritrea (Figure 9).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/87513/elife-87513-fig9-v2.jpg)
+
+**Figure 9.:** The analysed baboon mummy sample resolves in clade G3-Y (depicted in red, black arrow). Circle colour reflects species and country of origin (‘Arabia’' comprises samples from Yemen and Saudi Arabia, ‘Strait’ comprises samples from near the Bab-el-Mandab Strait, i.e. southern Eritrea, Djibouti, northern Somalia).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/87513/elife-87513-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** The analysed baboon mummy sample resolves in clade G3-Y (depicted in red, arrow). Circle colour reflects species and country of origin (‘Arabia’ comprises samples from Yemen and Saudi Arabia, ‘strait’ comprises samples from near the Bab-el-Mandab Strait, i.e. southern Eritrea, Djibouti, northern Somalia).
 
 ## Discussion
 
@@ -113,13 +658,13 @@ Punt, like Adulis, was a source of baboons for Egyptians, a history that raises 
 
 At minimum, our results reinforce the view that ancient Egyptian mariners travelled great distances to acquire living baboons. A great strength of this conclusion is that it is based on distinct but complementary methods, but of course, the sample size is paltry and limited to P. hamadryas, one of two baboon species recovered from Gabbanat el-Qurud. Moving forward, it would be desirable to expand the sample size, examine specimens of P. anubis as well as nuclear genomic data for increased precision, and include different time intervals of baboon mummification.
 
-## Future directions
+### Future directions
 
 Direct radiocarbon dating of MHNL 51000172 and other baboons from Gabbanat el-Qurud is an urgent priority, in part because doing so would put these specimens into conversation with those from the catacombs of Tuna el-Gebel. The oldest gallery at Tuna el-Gebel, Gallery D, is dated to the 26th Dynasty and contains a single species of baboon: P. anubis. Some scholars (Peters, 2020; von den Driesch et al., 2004) have argued that these olive baboons, as well as Chlorocebus aethiops (also found in Gallery D), were sourced from the Sudanese Nile Valley and adjacent areas, which predicts membership in clade G3-Y, although clade J is also plausible. Construction of Gallery C began during the first period of Persian rule in Egypt (524–404 BCE) and continued through the 30th and Ptolemaic dynasties. As every phase of Gallery C contains mummified specimens of both P. anubis and P. hamadryas, there is rich opportunity to explore diachronic changes in trade routes using phylogeographic methods. Uniform membership in clade G3-Y, for example, would affirm that Late Period Egyptians were sourcing P. hamadryas from Eritrea as early as the sixth century BCE. Testing this hypothesis may prove rewarding.
 
 ## Materials and methods
 
-## DNA extraction and sequencing
+### DNA extraction and sequencing
 
 DNA damage and degradation is expected from ancient (mummified) and nineteenth/early twentieth-century museum specimens. We therefore analysed mitochondrial DNA (mtDNA), which is available in higher copy numbers than nuclear DNA and holds greater potential for success when sample quality is poor. We analysed complete mitogenomes because they are effective for reconstructing robust mitochondrial phylogenies of modern baboons and have proven to indicate the geographic origin of the corresponding sample reliably (Roos et al., 2021; Zinner et al., 2013). Recent advances in sequencing technologies allow the successful sequencing of mitogenomes either with a shotgun sequencing approach or, for samples with very low DNA quality and quantity, with a capture enrichment approach (Schuenemann et al., 2017; Shapiro and Hofreiter, 2012).
 
@@ -131,7 +676,7 @@ For the capture enrichment approach, RNA baits (myBaits custom Kit, Arbor Biosci
 
 Sequencing was performed with 24 libraries per lane (23 samples + pooled negative control to monitor contamination) on an Illumina HiSeq4000 (50 bp, single-end read) at the NGS Integrative Genomics core unit of the University Medical Center Göttingen, Göttingen, Germany, or on a NovaSeq6000 SP flow cell (100 bp, paired-end read) at the Max Planck Institute for Molecular Genetics, Berlin, Germany. Capture enrichment libraries were reloaded and sequenced a second time to increase the number of reads.
 
-## Mitogenome assembly
+### Mitogenome assembly
 
 Raw sequencing reads were demultiplexed and adapters trimmed at the sequencing facilities. We performed subsequent sequence processing on the central high-performance computing cluster bwForCluster BinAC. We checked read quality with FastQC 0.11.8 (Andrews, 2010), trimmed and filtered reads with Trimmomatic 0.39 (Bolger et al., 2014) using the settings ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 MINLEN:30 SLIDINGWINDOW:4:20 LEADING:20 TRAILING:20, AVGQUAL:30, and confirmed adequate quality of trimmed reads again with FastQC. Reads were mapped with Burrows Wheeler Aligner (BWA) backtrack 0.7.17 (Li and Durbin, 2009) using default settings independently to each of the seven different mitogenomes of representatives of the northern baboon clades (P. anubis East JX946196; P. anubis Gombe MG787545; P. anubis West1 JX946197; P. anubis West 2JX946198; P. cynocephalus North JX946199; P. hamadryas JX946201; P. papio JX946203). We chose this approach to avoid biases in downstream analyses introduced through the choice of the reference genome and used the consensus sequence resulting from the best mapping results in downstream analyses. We did not adjust the settings as usually recommended to improve mapping results for aDNA (Schubert et al., 2012) but were stringent in mapping and filtering of reads to avoid the inclusion of nuclear mitochondrial DNA segments (NUMTs). Alignments were indexed with SAMtools 1.10 ‘index’ and filtered with ‘view’ for mapped and (in the case of paired-end data) properly paired reads with a mapping quality of at least MAPQ 30. Library complexity was estimated with the ‘EstimateLibraryComplexity’ from the Picard Toolkit 2.20.4 (Broad Institute, 2019). We merged BAM files of the same samples with ‘MergeSamFiles’ and removed duplicates with ‘MarkDuplicates’ from the Picard Toolkit. DNA damage was estimated calculating the frequency of base substitutions, insertions, and deletions at the 5′ and 3′ end, respectively, with DamageProfiler 1.0 (Neukamm et al., 2021). We calculated average sequencing depth with SAMtools 1.10 ‘depth’ (Li et al., 2009) as the sum of reads covering each position divided by the number of bases in the reference genome, and estimated GC-bias with ‘CollectGCBiasMetrics’ from the Picard Toolkit. We created a consensus sequence for each sample with the ‘doFasta’ option in ANGSD (Korneliussen et al., 2014) using the base with the highest effective depth (EBD) and setting positions with coverage below 2 to undetermined. We only retained mitogenomes for further analyses for which at least 80% of the sequence were covered at 3×.
 
@@ -141,14 +686,14 @@ For a more fine-scale geographic representation, we further included published s
 
 We assessed contamination by checking mismatches of the mapped reads from the mummified sample at sites in the mitogenome that (i) are distinct between northeastern subclades (125 fixed differences) and (ii) are fixed in subclade G3-Y (considering all samples but the mummified baboon) but differ in the consensus sequence of the mummified sample (37 sites).
 
-## Phylogenetic reconstruction
+### Phylogenetic reconstruction
 
 To identify the phylogenetic affiliation of the newly investigated samples, we reconstructed phylogenetic trees based on the final dataset of 46 mitogenomes (alignment length: 16,628 bp) using ML and BI methods with W-IQ-Tree 1.6.12 (Nguyen et al., 2015; Trifinopoulos et al., 2016) and MrBayes 3.2.7 (Huelsenbeck and Ronquist, 2001; Ronquist and Huelsenbeck, 2003), respectively. We treated the mitogenome as a single partition, the optimal substitution model for phylogenetic reconstructions was detected to be TN + F + I + G4 (Tamura and Nei, 1993) under the Bayesian information criterion and GTR + F + I + G4 (Tavaré, 1986) under the Corrected Akaike Information Criterion with Modelfinder (Kalyaanamoorthy et al., 2017) as implemented in W-IQ-Tree. The ML tree was reconstructed with 10,000 ultrafast bootstrap replications (Hoang et al., 2018) applying the TN + F + I + G4 model. The BI tree was reconstructed applying the GTR + I + G model and using four independent Markov chain Monte Carlo runs with 1 million generations, a burn-in of 25%, and sampling every 100 generations. To ensure convergence, the Potential Scale Reduction Factor was checked to be close to 1 for all parameters. We visualized phylogenetic trees with the R package ggtree 3.4.2 (Yu et al., 2017) and adopted clade nomination of Roos et al., 2021 and Kopp et al., 2014b.
 
-## Haplotype networks
+### Haplotype networks
 
 To determine the mitochondrial clade of origin of the analysed samples more precisely, we reconstructed median-joining haplotype networks (Bandelt et al., 1999) with Popart 1.7 (Leigh and Bryant, 2015) for both the HVRI (n = 644, 176 bp) and the cyt b (n = 137, 1140 bp) dataset.
 
-## Geographic maps
+### Geographic maps
 
 Geographic maps were created in R. We obtained species distribution shapefiles from IUCN (Gippoliti, 2019; Sithaldeen, 2019; Wallis, 2020a; Wallis, 2020b; Wallis et al., 2020; Wallis et al., 2021), river, lake and coastlines from Natural Earth (https://www.naturalearthdata.com) via rnaturalearth 0.1.0 (Massicotte and South, 2023).

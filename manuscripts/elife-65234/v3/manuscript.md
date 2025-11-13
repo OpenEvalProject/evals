@@ -46,37 +46,105 @@ Once inside cells, platinum compounds can bind to DNA, RNA, and proteins (Gonzal
 
 ## Results
 
-## Cells remain equally sensitive upon re-exposure to pulsed cisplatin
+### Cells remain equally sensitive upon re-exposure to pulsed cisplatin
 
 In our previous work (Hastings et al., 2020), we identified several targetable signalling pathways that were associated with resistance to cisplatin in LUAD cells. In this work, our goal was to analyse the innate mechanisms that enable cell survival after the initial exposure to cisplatin. To assess this, we analysed how cells respond to a subsequent dose of cisplatin, following recovery from an initial exposure event. To do this, we pulsed cells with cisplatin (5 µg/ml) and followed their response by time-lapse imaging. Cells were allowed to recover for 21–42 days (depending on their base rate of proliferation), before being challenged again with cisplatin, which equates to the approximate time patients normally receive a second dose in the clinic (Figure 1A). We utilised three LUAD cell lines: A549 (wild-type p53), NCI-H1573 (p53R248L mutant), and NCI-H1299 (p53 null), which were all engineered to stably express histone H2B fused to mCherry, allowing real-time quantitation of cell number and nuclear size. The initial pulse of cisplatin blocked the proliferation of A549 and NCI-H1573 cells, and significantly reduced NCI-H1299 cell numbers over a 3-day period. This was mirrored in colony formation assays, with both A549 and NCI-H1573 showing strong suppression of colony outgrowth, while p53-null H1299 cells were impacted to a lesser degree (Figure 1—figure supplement 1A). Interestingly, there was a less noticeable effect on cell confluence (Figure 1B). Subsequent visual and quantitative analysis of cells by immunofluorescence revealed a corresponding two- to sixfold increase in total cell and nuclear area across all three cell lines (Figure 1C, D), accounting for the reduced impact on confluence. Over the following 7–21 days of recovery (42 days for NCI-H1573 due to slower rate of proliferation), cells eventually recovered to their pre-pulse size and normal cell cycle distribution (Figure 1C, D, Figure 1—figure supplement 1B). In all three cell lines, subsequent cisplatin pulse of recovered cultures resulted in a near identical response to the initial pulse, both in terms of inhibition of cell number, reduced confluence, and increased cell size (Figure 1B–D). Based on these results, and our previous observation that all cells contained significantly increased levels of cisplatin-DNA adducts (Hastings et al., 2020), we concluded that cells surviving the first exposure remained equally sensitive to cisplatin and were therefore unlikely to have acquired resistance or arisen from an intrinsically resistant sub-clonal population within each cell line.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic of rechallenging experiments. Briefly, cells stably expressing H2B-mCherry were pulsed with 5 µg/ml cisplatin for 2 hr. Cell proliferation (nuclear number and cell size) was then tracked for up to 4 days. Cells were then allowed to recover for 21 (A549 and NCI-H1299) or 42 days (NCI-H1573), re-culturing once confluent, before being re-pulsed with cisplatin. (B) Cell confluence and cell number were tracked for up to 4 days using IncuCyte based time-lapse imaging. Shown are the mean ± SD of n = 3 biological repeats. (C) Immunofluorescence of cells at 72 hr post-cisplatin treatment. Nuclei: cyan; Phalloidin-Alexa 647: red, scale bar = 10 µm. (D) Quantification of cell size and nuclear size from (A), with a minimum of n = 200 cells analysed per condition. Shown are the mean ± SD. Statistical significance was determined by one-way ANOVA (****p<0.0001, n.s = not significant).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative images and quantification of colony formation assays for A549, NCI-H1573, and NCI-H1299 cells treated with or without cisplatin. Colonies were fixed, stained, and counted at 10 (A549 and NCI-H1299) or 14 days (NCI-H1573) after cisplatin exposure. Scale bar = 100 µm. Shown are the mean ± SD of three biological repeats. Statistical significance was determined by Student’s t-test (****p<0.0001, ***p<0.001, **p<0.01). (B) Long-term recovery of A549 cells treated with a single pulse of 5 µg/ml was analysed by flow cytometry for cell cycle by DNA content and cell size using forward scatter (FSC) and side scatter (SSC) parameters. Shown are the mean ± SD of n = 3 biological repeats. Statistical significance was determined by two-way (cell cycle) or one-way (cell size) ANOVA with Tukey’s multiple comparisons test (****p<0.0001, ***p=0.0006, ns = not significant).
+
 To assess this, we analysed the variability of cell and nuclear size after the initial pulse of cisplatin at 3–7 days post exposure. Visual analysis identified several colonies of cells whose size was similar to that of untreated control cells (Figure 2A, B). We hypothesised that these cells were able to proliferate and outgrow the non-proliferative (arrested) cells over the 21-to-42-day period. In support, a significant increase in senescence associated beta-galactosidase (β-gal) staining was observed both visually and by flow cytometry (C12FDG) in A549 and to a lesser extent H1573 and H1299 cell lines (Figure 2—figure supplement 1A, B). Increased levels of the cyclin-dependent kinase inhibitor p16, which is commonly linked with senescence, was associated with larger cells in NCI-H1573 and H1299 cells, while in A549 cells, which are null for p16 (Kawabe et al., 2000), p21 was similarly increased (Figure 2—figure supplement 1C). These data suggest that in each cell line the larger cells have a lower proliferative capacity and are likely senescent.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig2-v3.jpg)
+
+**Figure 2.:** (A) Representative images from cells treated as per Figure 1A showing control (Cont.), proliferative (Prolif.), and arrested (Arrest) cells. Scale bars = 100 µm. (B) Cell and nuclear size were calculated on sub-populations of cells that appeared to form clonal outgrowths. Quantification of cell size and nuclear size from (A), with a minimum of n = 100 cells analysed per condition. Shown are the mean ± SD. Statistical significance was determined by one-way ANOVA (****p<0.0001, n.s = not significant). (C) LeGO RGB colour-guided clonal cell tracking system was used to track clonal dynamics after cisplatin pulse treatment. Cells were treated as per Figure 1A, with clonal identification and quantification (D), measured at 3 and 21 days post-cisplatin exposure using Image J/Fiji (42 days post-cisplatin exposure for NCI-H1573).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative images and quantification of A549, NCI-H1573, and CI-H1299 cells 3 days after cisplatin exposure stained for beta-galactosidase. Scale bar = 100 µm. Shown are the mean ± SD of three biological repeats. Statistical significance was determined by unpaired two-tailed Student’s t-test (****p<0.0001, ***p<0.001, **p<0.01). (B) FACS analysis of beta-galactosidase activity levels (C12FDG) versus ‘cell size’ (forward scatter [FSC]) and (C) p21, p16 and at 3 days after cisplatin exposure. Shown are the mean ± SD of three biological repeats. Statistical significance was determined by unpaired two-tailed Student’s t-test (****p<0.0001, ***p<0.001, *p<0.05). (D) Three biological repeat experiments of LeGO RGB colour-guided clonal cell tracking system were used to track clonal dynamics after cisplatin pulse treatment in each cell line. Cells were treated as per Figure 1A, with clonal identification and quantification measured at 3 and 21 days post-cisplatin exposure using Image J/Fiji (42 days post-cisplatin exposure for NCI-H1573). For summary data, only colours that represented >0.1% of total population were scored.
 
 To test whether the surviving population arose from a subset of proliferating cells, we utilised the LeGO RGB colour-guided clonal cell tracking system (Weber et al., 2011). Briefly, each cell line was co-transfected with three different lentiviral vectors containing either a red, green, or blue fluorescent protein. Each cell randomly received a variable amount of each plasmid resulting in a unique colour code for each cell. Quantitative colour analysis of untreated control cells revealed that up to 64 unique colours could be detected in A549 and NCI-H1299 cells and up to 46 colours in NCI-H1573 cells (Figure 2—figure supplement 1D). After pulsed exposure to cisplatin, single-colour colony outgrowths were clearly visible in all three cell lines at 3–7 days post exposure, which was maintained at 21 for A549 and NCI-H1299 or 42 days for NCI-H1573 cells (Figure 2C, D). Colour diversity in cisplatin-recovered cells correlated with the colony formation assay data (Figure 1—figure supplement 1A), with NCI-H1299 (p53 null) cells displaying a greater variability in recovered clonal colours compared to A549 (p53 wt) and NCI-H1573 (p53 mutant) cells (Figure 2C, Figure 2—figure supplement 1D). Taken together, these results indicate that repopulation of the culture after the initial pulse exposure is primarily driven by a small fraction of cells, with the total number of clones impacted by p53 status.
 
 To confirm these results in vivo, we injected A549, NCI-H1573, or NCI-H1299 cells subcutaneously into the flanks of nude mice and allowed establishment of tumours (150 mm3) before administering a single treatment of carboplatin (60 mg/kg). Mice harvested at 3 days post treatment were analysed by imunohistochemistry (IHC) for cell size and proliferating cell nuclear antigen (PCNA)-positive staining, with all cell lines showing a significant increase in cell size (Figure 3A, B). Similar to the in vitro results, active proliferation (PCNA positivity) in A549 cells was strongly suppressed after carboplatin exposure, indicating that the majority of cells were not proliferating. In p53 mutant NCI-1573, there was no significant reduction in PCNA in vivo despite significant reduction in cell numbers in vitro cells. In contrast, NCI-H1299 cells, which lack p53, did not show any significant decrease in PCNA staining in vivo (Figure 3A, B). BrdU pulse labelling of in vitro-treated cells showed similar results, with strong suppression of active BrdU incorporation in A549 cells, with partial and no significant inhibition seen in NCI-H1573 and NCI-H1299 cells, respectively (Figure 3—figure supplement 1). In summary, these in vitro and in vivo data suggest that in LUAD cells exposure to pulsed cisplatin results in a significant proportion of cells increasing in size, with presence of functional p53 correlating with increased senescence and reduced active replication in enlarged cells. Interestingly, in all three lines, a sub-population of cells remain at a normal (stable) cell size, maintained their proliferative capacity, and drove repopulation of the cell culture. Despite this, these proliferative cells remained equally sensitive to subsequent cisplatin treatment, indicating a non-genetic mechanism of resistance.
 
-## Differential RNAseq analysis of cisplatin-treated sub-populations
+![Figure 3.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig3-v3.jpg)
+
+**Figure 3.:** (A) A549 and NCI-H1299 cells were injected subcutaneously with 2 × 106 cells into the flanks of nude mice (n = 5). Carboplatin (60 mg/kg) was delivered by a single tail-vein injection, and tumours were harvested at 3 days post treatment and analysed by IHC for cell size and PCNA-positive staining. Scale bar = 50 µm. (B) Quantification of IHC images from (A) (control n = 300, carbo n = 400). Shown are the mean ± SD. Statistical significance was determined by unpaired two-tailed Students t-test (****p<0.0001, n.s = not significant).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Cells were counter-stained with PI with DNA content and BrdU staining analysed by flow cytometry to identify cells in G1 (BrdU negative, 2 n DNA content; active S phase = between 2n and 4n) DNA and positive for BrdU, inactive S phase = 2n–4n DNA content and negative for BrdU; G2/M = 4n DNA content. The percentage of cells ± standard deviation for each population from (n = 3) independent repeats is shown.
+
+### Differential RNAseq analysis of cisplatin-treated sub-populations
 
 To better understand the potential mechanism driving the difference between cells that become enlarged and senescent compared to those that maintain stable size and proliferative capacity, we performed RNAseq analysis on each unique population. Briefly, A549 cells were pulsed with cisplatin, harvested at 72 hr, and sorted into stable or enlarged cells based on size. This was determined by forward scatter (FSC) and side scatter (SSC) parameters, with gates established based on the size of untreated control cells (Figure 4—figure supplement 1A). Pre- and post-sorted cells were then processed for RNAseq analysis (Figure 4A, B). Two-way hierarchical clustering indicated that there were clear differences in gene expression between cisplatin-treated cells that maintained a stable size compared to untreated control and enlarged cisplatin-treated cells (Figure 4C, Supplementary files 1–4). To better understand these effects, we undertook a more detailed bioinformatic analysis using Ingenuity Pathway Analysis (IPA). Strong upregulation of the CDK inhibitor p21 was present in both pre-sorted cisplatin-treated and post-sorted enlarged cells, matching the early flow data (Figure 2—figure supplement 1C). This corresponded with upregulation of p53, CHK, and G2/M cell cycle checkpoint signalling, and a corresponding reduction in DNA replication and increase in senescence pathways (Figure 4D, E), correlating with the increased β-gal and reduced proliferation observed above (Figure 1B, Figure 2—figure supplement 1B). Importantly, stable (size) cisplatin-treated cells were significantly different from untreated controls, indicating that these cells were impacted by cisplatin exposure, similar to our previous reports where all cells contained detectible cisplatin-DNA adducts post-pulsed exposure (Hastings et al., 2020). Notably, these stable cells displayed a decrease in EIF2, mTOR, and p70S6K signalling, with a corresponding increase in TREM1, GP6, and IL-17F signalling pathways (Figure 4F, Supplementary files 3 and 4). Four-way comparative analysis further highlighted key differences between each sub-population, with stable cells all showing strong upregulation of BRCA1, ATM, and DNA replication signalling pathways, which were heavily suppressed in non-proliferative cells (Figure 4G). Similarly, Gene Set Enrichment Analysis (GSEA) identified strong enrichment for cell cycle, HR-directed repair, ATR, and the Fanconi pathway in stable compared to enlarged cells (Figure 4—figure supplement 1B, C). In summary, these data suggest that the cisplatin-treated stable cells are considerably different from enlarged and untreated control cells. Specifically, stable cells do not undergo significant p53/p21-dependent cell cycle checkpoint arrest but do show prominent upregulation of DNA repair pathways involving HR/BRCA1 and ATM/ATR.
 
-## Cell cycle and p53 status at the time of exposure correlates with cell fate outcomes
+![Figure 4.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig4-v3.jpg)
+
+**Figure 4.:** (A) Schematic (created with BioRender.com) describing treatment, sorting, and analysis pipeline. (B) Representative example of pre- and post-sorted control and cisplatin-treated cells. (C) Hierarchical clustering of three independent biological repeat experiments of all altered genes identified by RNAseq. (D–F) Volcano plots displaying significantly downregulated (blue) or upregulated (orange) genes and subsequent Ingenuity Pathway Analysis (IPA) canonical pathway analysis. Predictions of inhibition (blue) or activation (orange) or no change (white) states are based on the IngenuityKnowledge Base, which compares the expected change with experimental observation to all known upstream canonical regulatory pathways. Variable stringent p-value (>1.3) and z-score (>0.5) cut-offs were used to limit pathways to top 7–8 most significant hits. (G) Hierarchical clustering of IPA comparative canonical pathway analysis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Gating strategy used for sorting control and cisplatin-treated cells based on cell size and the exclusion of doublets. (B) Cytoscape enrichment map of curated gene sets of canonical pathways for proliferative versus arrested cells. Each node represents a gene set and each line connecting nodes a gene ‘common’ to both nodes. Shown are gene sets enriched in proliferative (red) and arrested (blue) cells. The size of the node represents the normalised enrichment score (NES) score of that particular gene set. (C) Gene Set Enrichment Analysis (GSEA) plots for proliferative versus arrest cells (curated gene sets for canonical pathways). From left to right and top to bottom: cell cycle, homology-directed repair, Fanconi pathway, and ATR pathway. The green curve corresponds to the enrichment score (ES) curve, which is the running sum of the weighted enrichment score obtained from GSEA software, while the NES and the corresponding false discovery rate (FDR) value are reported within each graph.
+
+### Cell cycle and p53 status at the time of exposure correlates with cell fate outcomes
 
 The above RNAseq data indicated that there were strong cell cycle-dependent differences between proliferative and non-proliferative cisplatin-treated cells. To better understand these differences, we utilised the FUCCI biosensor system to enable real-time cell cycle status of individual cells, as published in the previous paper (Hastings et al., 2020). Briefly, asynchronous A549 cells stably expressing FUCCI were pulsed with or without cisplatin and then followed by time-lapse microscopy for 72 hr. Individual cells were manually tracked and scored for cell cycle status and cell fate as previously described (Caldon and Burgess, 2019; Hastings et al., 2020). The majority of control cells divided at least two times within the 72 hr time period (Figure 5A, Figure 5—video 1). In contrast and as demonstrated previously (Hastings et al., 2020), cisplatin-treated cells showed a range of cell cycle perturbations (Figure 5B, Figure 5—figure supplement 1A), including a significant and prolonged S/G2 phase arrest (Figure 5—figure supplement 1B), which correlated with a reduced number of total divisions (Figure 5—figure supplement 1C). Combining this with additional scoring of cisplatin-treated cells that underwent multiple (two or more) divisions within the 72 hr period revealed an enrichment for cells that were in late G1 and early S phase at the time of cisplatin exposure (Figure 5B). Unbiased analysis of an additional 400 cisplatin-treated A549 cells found a significant increase in the number of divisions arising from cells that were in G1/S or early S phase at the time of exposure compared to G1 phase cells (Figure 5C). Furthermore, the overwhelming majority of cells in late S or G2/M only completed one division during the 72 hr period. Taken together, these data suggest that there is a cell cycle-dependent mechanism driving the ability of A549 cells to continue to proliferate after cisplatin exposure.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig5-v3.jpg)
+
+**Figure 5.:** (A, B) The fate of asynchronously growing FUCCI expressing A549 individual control (n = 50) and cisplatin pulsed cells (n = 100) was tracked by time-lapse microscopy, with images taken every 30 min for 72 hr. Cisplatin-treated cell analysis was slightly biased for cells that underwent multiple divisions. (C) Violin plots of the number of divisions from cells in (A, B), based on the cell cycle phase at the time of cisplatin exposure. Statistical significance was determined by one-way ANOVA with Tukey’s correction for multiple comparisons (**p<0.01, ****p<0.0001, ns = not significant). (D) Schematic (created with BioRender.com) of optical window-based longitudinal in vivo imaging of FUCCI A549 cells. (E) Representative 3D projection images from mice imaged at days 1 and 7 with carboplatin (Carbo) or control (Saline). (F) Quantification of the proportion of red (G1), yellow (G1/S), and green (S/G2-M) cells found in tumours (n = 3) from day 0 to 7.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative images of A549 FUCCI expressing cells treated with (Cisplatin) or without (Control) 5 µg/ml cisplatin for 2 hr and then followed by time-lapse microscopy. Images were taken every 20 min for 3 days. Coloured arrows indicate specific mother and daughter cells followed through time. (B) Quantification of cell cycle phase length from data generated in (B) and (C). Statistical significance was determined by one-way ANOVA with Tukey’s correction for multiple comparisons (****p<0.0001, n.s = not significant). (C) The total number of divisions completed by biological repeats of asynchronously growing FUCCI expressing A549 cells pulsed with or without (control) with 5 µg/ml cisplatin for 2 hr. Data was extracted from time-lapse imaging analysis. Statistical significance was determined by one-way ANOVA with Tukey’s correction for multiple comparisons (****p<0.0001, ***p<0.001, **p<0.01, ns = not significant) and an unpaired two-tailed Student’s t-test for summary data (****p<0.0001).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) The total number of divisions completed by asynchronously growing FUCCI expressing A549 (data from Figure 5—figure supplement 1C) and NCI-H1299 cells treated without (control) or with 5 µg/ml cisplatin for 2 hr. Data was extracted from time-lapse imaging analysis. Statistical significance was determined by one-way ANOVA with Tukey’s correction for multiple comparisons (****p<0.0001, ns = not significant). (B) The individual fate maps of NCI-H1299 cells (n = 50 control, 100 = cisplatin) from (A), tracked by time-lapse microscopy, with images taken every 30 min for 72 hr. (C) Quantification of cell fate outcomes from (B), including G1 arrest before mitosis (G1 ABM), G1 arrest after mitosis (G1 AAM), death before mitosis (DBM), and death after mitosis (DAM) and proliferative (Prolif.), that is, cells that divided two or more times. (D) Violin plots of the number of divisions completed by cisplatin-treated NCI-H1299 cells based on the cell cycle phase at the time of cisplatin exposure. Statistical significance was determined by one-way ANOVA with Tukey’s correction for multiple comparisons (ns = not significant). (E) Additional analysis of data from Hastings et al., 2020 showing the total number of divisions completed by (n = 50) asynchronously growing FUCCI expressing A549 cells treated with either scramble (siControl) or one of two separate siRNAs targeting p53. Statistical significance was determined by one-way ANOVA with Tukey’s correction for multiple comparisons (****p<0.0001, ***p<0.001, **p<0.01, ns = not significant).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** Similar to Figure 5D–F, quantification of the proportion of red (G1), yellow (G1/S), and green (S/G2-M) cells found in tumours (n = 3) from day 0 to 7 of (A) NCI-H1573 and (B) NCI-H1299 placed under optical windows in mice treated with or without carboplatin.
 
 Our above data indicated that loss of p53 increased the number of clones capable of regrowth after cisplatin exposure. To assess this in greater detail, we analysed asynchronous FUCCI expressing NCI-H1299 (p53 null) cells pulsed with or without (Control) cisplatin. Treatment with cisplatin significantly reduced the number of overall divisions in H1299 cells (Figure 5—figure supplement 2A–C); however, compared to A549 cells, this reduction was not as pronounced, in line with the cell proliferation data observed above (Figure 1B). Single-cell fate tracking of NCI-H1299 cells suggested a small bias for higher rates of division in cells that were in late G1 and early S phase at the time of treatment (Figure 5—figure supplement 2B, C); however, this trend was not significant (Figure 5—figure supplement 2D). We further assessed p53 loss by reanalysing our previously published data on siRNA knockdown of p53 in A549 cells (Hastings et al., 2020). Notably, depletion of p53 in A549 cells resulted in a corresponding increase in the number of divisions completed after pulsed exposure to cisplatin, supporting the NCI-H1299 data (Figure 5—figure supplement 2E).
 
 To validate these results in vivo, we implanted FUCCI expressing A549, NCI-H1573, or NCI-H1299 cells under optical windows in mice (Figure 5D). Tumours were allowed to establish before mice were given a single dose of carboplatin. Individual mice were then repeatedly imaged over 7 days post treatment. Notably, prior to cisplatin treatment, approximately 70–80% of cells from each line were in G1 phase (Figure 5E, F, Figure 5—figure supplement 3A, B). Similar to in vitro results, we observed an increase in proportion of S/G2 phase cells at day 1 in all cell lines, indicating that cells were arrested in S/G2. In A549 cells, the percentage of S/G2 cells reduced gradually from day 3 to 7, resulting in over 90% of A549 cells in a G1 like state (red) at 7 days post treatment (Figure 5E, F). In contrast, the percentage of S/G2 cells in both NCI-H1573 or NCI-H1299 increased until day 3, before returning to pre-treatment levels by day 7 (Figure 5—figure supplement 3A, B). This mirrored our above in vitro data, where the presence of wild-type p53 (in A549 cells) corresponded with a higher rate of G2-exit and senescence compared to p53 null and mutant cells (Hastings et al., 2020), suggesting that the results we observed in vitro are recapitulated in vivo.
 
-## Cisplatin treatment during late G1 early S phase correlates with multiple divisions
+### Cisplatin treatment during late G1 early S phase correlates with multiple divisions
 
 The above data indicated that in p53 wild-type cells those in late G1 and early S phase at the time of exposure had a greater capacity to undergo multiple division compared to cells G1 and S-G2/M phase. To assess this in greater detail, we synchronised and released FUCCI expressing A549 cells into either G1 or early S phase using either palbociclib or thymidine, respectively (Figure 6A, B, Figure 6—video 1, Figure 6—video 2). We combined these synchronisations with pulsed exposure to cisplatin at various points following release to target G1, early or late S phase populations, which were then monitored by time-lapse microscopy. To target G1, cells were pulsed with cisplatin upon release from palbociclib (Cis at G1). This resulted in the majority of cells undergoing a prolonged S/G2 phase and then exiting back into a G1-like state without undergoing mitosis (G2-exit; Figure 6C), a state we described previously (Hastings et al., 2020). Notably, only 7/50 cells completed a single division, and no cells underwent multiple (two or more) divisions during the 72 hr time period (Figure 6A–D; proliferative). In contrast, targeting cells in G1/S (Cis at G1/S) using either palbociclib or thymidine synchronisation with cisplatin resulted in significantly more cells (13/50 and 16/50, respectively) completing two or more divisions (Figure 6A–D; proliferative). Finally, nearly all cells targeted in late S phase (Cis at S) completed the first mitosis and then underwent prolonged S/G2 arrest and G2-exit, with only 4 out of 50 cells completing two divisions within the 72 hr period (Figure 6B–D). Taken together, these data indicate that cells in late G1 and early S at the time of cisplatin exposure have a greater capacity to continue proliferating.
 
-## Disruption of DNA repair reduces ability of early S phase cells to proliferate
+![Figure 6.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig6-v3.jpg)
+
+**Figure 6.:** (A, B) Schematic of palbociclib (Palbo) and thymidine (Thy) protocols used to synchronise FUCCI expressing A549 cells in G1, G1/S, and S phase prior to 2 hr cisplatin pulse treatment. Specifically, G1 cells were released from palbociclib and pulsed immediately with cisplatin (Palbo + Cis at G1). G1/S cells were pulsed with cisplatin at 6 hr post release from palbociclib (Palbo + Cis at G1/S), or alternatively G1/S phase cells targeted by treatment with cisplatin 2 hr prior to release from thymidine (Thy + Cis at G1/S). Finally, S phase cells targeted by pulsing with cisplatin at 4 hr post-thymidine release (Thy + Cis at S). The fate of individual cells (n = 50) was tracked by time-lapse microscopy, with images taken every 30 min for 72 hr. (C) Quantification of cell fate outcomes from (A), including G1 arrest before mitosis (G1 ABM), G1 arrest after mitosis (G1 AAM), death before mitosis (DBM), and death after mitosis (DAM) and proliferative (Prolif.). (D) Quantification of the total number of cell divisions observed in each condition (n = 50). Mean is shown, statistical significance was determined by one-way ANOVA with Tukey’s correction for multiple comparisons (****p<0.0001, *p<0.05).
+
+### Disruption of DNA repair reduces ability of early S phase cells to proliferate
 
 A major target of cisplatin is DNA, with intra-strand crosslinks and ICLs disrupting replication and repair, leading to stalled replication forks and the formation of double-strand breaks (Gonzalez-Rajal et al., 2020). We therefore hypothesised that cells in late G1/early S phase were able to repair cisplatin-induced DNA damage during the first cell cycle more efficiently than cells in early G1 or late S phase, thereby allowing them to continue proliferation. To test this, we engineered A549 cells to stably co-express a truncated form of 53BP1 fused to mApple (Apple-53BP1trunc), which has previously been shown to bind double-strand break sites co-marked with γH2A.X but lacks any of the functional domains of 53BP1 (Yang et al., 2015). We combined this with a PCNA chromobody, where we replaced GFP with mNeonGreen, to mark sites of active DNA replication (Figure 7A, inset). Cells were synchronised with thymidine and pulsed with cisplatin 2 hr prior to release to enrich for early S phase-targeted cells (as per Figure 6B), and then tracked by 4D live*cell imaging. Individual cells were divided into either those in G1, early S, or mid/late S based on the pattern of PCNA foci (cyan), and then tracked through time (Burgess et al., 2012; Charrasse et al., 2017). In control cells, a small number (<20) of 53BP1-positive foci (red hot) were observed as cells underwent the first round of replication (Figure 7A, B, Figure 7—video 1). Daughter and grand-daughter cells then displayed several (<5) large foci during G1 (up to 5 µm2), which were resolved as cells entered S phase and began replicating (Figure 7C, white arrow). Cells that were in G1 at the time of cisplatin exposure entered S phase and rapidly accumulated a large number (~100) of 53BP1-positive foci; these slowly reduced over the remainder of the time lapse (Figure 7A–C), which corresponded with an increase in the average size of the foci (~1 µm2). In contrast, cells that were in early S phase and completed multiple (two or more) divisions within the 72 hr timeframe showed a rapid rise in foci number (~100), which then decreased at the conclusion of S phase, correlating with an increase in foci size. A small number of larger foci were present in the following G1 cell, although the size of these foci was smaller than those observed in control daughter cells (~1 µm2). Interestingly, in grand-daughter and great grand-daughter cells, the size of G1 foci increased (>2 µm2), in line with G1 foci observed in control cells (Figure 7A–C, Figure 7—figure supplement 1A). Finally, cells in mid-late S phase also showed a large number of 53BP1 foci, which increased in size as cells progressed through the first G2 phase. Interestingly, the average number of 53BP1 foci in mid-S were higher and were removed later, just prior to mitotic entry compared to cells from early S phase (Figure 7A–C, Figure 7—figure supplement 1B). Furthermore, the quality of mitosis was often reduced in cells from mid-S phase, with cells displaying chromatin bridges, micronuclei, and/or failed cytokinesis (Figure 7—figure supplement 1C), correlating with the increase in death during or after mitosis we observed previously (Figure 6C). The subsequent daughter cells from those exposed in mid-S phase then showed a rapid rise in the number of foci (>100) as they began replication. In contrast, the number of 53BP1 foci in early S phase cells only increased mildly during replication and was notably lower than the numbers observed in the first round of replication (Figure 7—figure supplement 1A, B). Based on these results, we concluded that early S phase cells were able to either partially repair double-strand breaks during the first round of DNA replication and/or mark damage for efficient repair in the subsequent daughter and grand-daughter cells. In contrast, cells in G1 had much greater levels of damage and remained arrested in the first G2 phase. Cells in mid/late S phase completed the first division while acquiring damage but were unable to sufficiently repair the damage before mitosis. Consequently, daughter cells with unrepaired damage had increased rates of mitotic induced breaks as they attempted the second round of DNA replication, leading to a strong S/G2 phase checkpoint arrest, similar to cells initially exposed during G1.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig7-v3.jpg)
+
+**Figure 7.:** (A) Representative maximum image projections of A549 cells co-expressing a mNeonGreen tagged PCNA chromobody (cyan) and a truncated version of 53BP1 tagged with mApple (trunc53BP1-mApple; red-hot LUT). Cells were imaged using confocal microscopy, with 10-µm-thick z-stack (1 µm slice) taken every 30 min for 72 hr. Scale bar 10 µm. (B) Quantification of the size and number of PCNA and 53BP1 foci for each cell shown in (A). (C) 3D volume renders from cells in (A) for the indicated times, with cropped zoom areas (right image). White arrows indicate 53BP1 foci that reduce in size over time (min). Scale bars 5 µm and 1 µm for left and right panels, respectively.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Quantification of the size and number of PCNA and 53BP1 foci for additional cells as per Figure 7A, B. (B) Number of 53BP1 foci in cells from early S and mid/late S phase (n = 4) were temporally aligned based on entry into and exit from the first mitosis. (C) Representative images of the first mitosis observed in cells that were in mid-S phase at the time of cisplatin exposure. White arrowheads indicate micronuclei (mn) in daughter cells, cf = cytokinesis failure. Scale bar = 10 µm.
+
 Based on these results, we hypothesised that cells in early S phase were better able to take advantage of the high-fidelity HR pathway, whose activity peaks in mid-S phase (Karanam et al., 2012) compared to G1 or late S phase. To test this, we utilised the PARP inhibitor, olaparib, to trap PARP at single-strand break sites, leading to increased rates of replication fork stalling and reduced capacity to repair double strand breaks (DSBs) by HR (Murai and Pommier, 2018). We hypothesised that this would increase the rate of damage in all cells and reduce the ability of early S phase cells to repair during the first cell cycle. To test this, A549 FUCCI cells were targeted in G1/S phase with cisplatin by synchronising with palbociclib or thymidine, as previously described (Figure 6A, B). Cells were then treated with or without olaparib (PARPi) for 1 hr prior to pulsed cisplatin exposure and monitored by time-lapse microscopy (Figure 8A). In cells treated with cisplatin, co-treatment with PARPi significantly reduced the total number of divisions (Figure 8B), indicating that cells were unable to continue proliferating. This correlated with a trend toward G1 delay in palbociclib and significant G1 delay in thymidine-synchronised cells (Figure 8C). Interestingly, although co-treatment with PARPi decreased the percentage of proliferative (two or more divisions) cells, there was only a small increase in death observed (Figure 8D), indicating that PARPi alone is not sufficient to drive increased toxicity to cisplatin in A549 cells. Importantly, inhibition of PARP did increase the rate of 53BP1 foci formation compared to cisplatin alone in asynchronous cells (Figure 8E). Furthermore, this correlated with a significant increase in both the amount of γ-H2AX staining and the size of cells (Figure 8F). We further validated these results by inhibiting RAD51 with RI-1, to target HR-mediated repair. RAD51 inhibition (RAD51i) had no significant effect on cell growth compared to untreated controls (Figure 8—figure supplement 1A). Single-cell fate tracking of FUCCI expressing A549 cells revealed a small but significant decrease in the number of divisions completed by early S phase cells treated with RI-1 and cisplatin compared to cisplatin alone. This correlated with a reduction in percentage of cells completing two or more divisions (proliferative) and an increase in the percentage of cells undergoing a G2-exit phenotype (Figure 8—figure supplement 1B–D). Taken together, these data suggest that targeting DNA repair pathways during the first replication cycle results in more DSBs and pronounced S/G2 cell cycle checkpoint arrest leading to G2-exit, likely due to a reduced ability to repair DNA damage. This in turn reduces the ability of cells to undergo further rounds of replication and division.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig8-v3.jpg)
+
+**Figure 8.:** (A) Schematic of palbociclib (Palbo) and thymidine (Thy) protocols used to synchronise FUCCI expressing A549 cells in G1, early and late S phase prior to olaparib (PARPi; 1 µM) and 2 hr cisplatin (5 µg/ml) pulse treatment. The fate of (n = 50) individual cells was tracked by time-lapse microscopy, with images taken every 30 min for 72 hr. Quantification of the total number of cell divisions (B) and G1 length after (C) first mitotic division observed in each condition. Statistical significance was determined by a one-way ANOVA test with correction for multiple comparisons (****p<0.0001, ***p<0.001, **p<0.01, *p<0.05). (D) Quantification of cell fate outcomes from (A), including G1 arrest before mitosis (G1 ABM), G1 arrest after mitosis (G1 AAM), death before mitosis (DBM), and death after mitosis (DAM) and proliferative (Prolif.), that is, cells that divided two or more times. (E) Fluorescent imaging of asynchronous A549 dual biosensor cells pulsed with cisplatin for 2 hr. The percentage of cells with <5 or >15 53BP1 foci/cell after cisplatin treatment are shown. A minimum of 250 cells per timepoint and condition were counted from (n = 3) biological repeats. Statistical significance was determined by two-way ANOVA (*p<0.05). (F) Thymidine-synchronised cells treated as per (A) were harvested and analysed for cell size and γ-H2AX by flow cytometry. Representative FACS plots and quantification from (n = 3) biological repeats are shown. Statistical significance was determined by one-way ANOVA with Tukey’s correction for multiple comparisons (***p<0.001).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/65234/elife-65234-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Representative cell proliferation curves ± SD of FUCCI expressing A549 cells treated with 5 µM of the RAD51 inhibitor IR-1 for 1 hr prior to exposure for 2 hr with 5 µg/ml cisplatin. Nuclear counts were determined from five independent fields of time-lapse imaging, using the StarDist plugin for ImageJ/Fiji. (B) Cell fate maps for (n = 100) of cells from (A). (C) Quantification of cell fate outcomes from (B), including G1 arrest before mitosis (G1 ABM), G1 arrest after mitosis (G1 AAM), death before mitosis (DBM), and death after mitosis (DAM) and proliferative (Prolif.), that is, cells that divided two or more times. (D) Violin plots of the number of divisions of cells from (B) based on the cell cycle phase at the time of cisplatin exposure. Statistical significance was determined by one-way ANOVA with Tukey’s correction for multiple comparisons (*p<0.05, **p<0.01, ****p<0.0001, ns = not significant).
 
 ## Discussion
 
@@ -98,11 +166,280 @@ In summary, this work increases the understanding of the mechanisms driving reco
 
 ## Materials and methods
 
-## Antibodies, plasmids, and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>CCL-185, RRID:CVCL_0023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H1299</td>
+      <td>ATCC</td>
+      <td>CRL-5803, RRID:CVCL_0060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H1573</td>
+      <td>ATCC</td>
+      <td>CRL-5877, RRID:CVCL_1478</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>mVenus-hGeminin (1/110) (plasmid)</td>
+      <td>Sakaue-Sawano et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>mCherry-hCdt1 (30/120) (plasmid)</td>
+      <td>Sakaue-Sawano et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Cell Cycle-Chromobody plasmid</td>
+      <td>Chromotek</td>
+      <td>ccr</td>
+      <td>Recloned into a pLVX lentiviral backbone with TagRFP replaced with mNeonGreen</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>53BP1trunc-Apple</td>
+      <td>Addgene</td>
+      <td>69531, RRID:Addgene_69531</td>
+      <td>53BP1 C-terminally fused to mApple fluorescent protein Yang et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>B_mCherry_IRES_neo3</td>
+      <td>Addgene</td>
+      <td>21044, RRID:Addgene_21044</td>
+      <td>Steigemann et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>LeGO-Cer2 (Cerulean)</td>
+      <td>Addgene</td>
+      <td>27338, RRID:Addgene_27338</td>
+      <td>Weber et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>LeGO-V2 (Venus fluorescent protein)</td>
+      <td>Addgene</td>
+      <td>27340, RRID:Addgene_27340</td>
+      <td>Weber et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>LeGO-C2 (mCherry)</td>
+      <td>Addgene</td>
+      <td>27339, RRID:Addgene_27339</td>
+      <td>Weber et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p21 Waf1/Cip1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2947, RRID:AB_330945</td>
+      <td>Flow (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p16 Ink4a (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>AB201980, RRID:AB_2891086</td>
+      <td>Flow (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-gamma H2A.X (phospho S139) antibody (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>9718, RRID:AB_2118009</td>
+      <td>Flow (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PCNA (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>AB29, RRID:AB_303394</td>
+      <td>IHC (1:500−1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor Plus 647 Secondary Antibody (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_A32733, RRID:AB_2633282</td>
+      <td>Flow (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BrdU-FITC (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>347583, RRID:AB_400327</td>
+      <td>Flow (1:20)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 647 Phalloidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_A22287, RRID:AB_2620155</td>
+      <td>IF (1:40,000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cisplatin</td>
+      <td>Hospira Australia</td>
+      <td>88S035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carboplatin</td>
+      <td>Abcam</td>
+      <td>ab120828</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Olaparib</td>
+      <td>Selleck Chem</td>
+      <td>S1060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Palbociclib</td>
+      <td>Selleck Chem</td>
+      <td>S1116</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RI-1</td>
+      <td>Selleck Chem</td>
+      <td>S8077</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PureLink RNase A</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>12091021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>C12FDG (5-Dodecanoylaminofluorescein Di-β-D-Galactopyranoside)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D2893</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Η33342</td>
+      <td>Sigma</td>
+      <td>B2261</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propidium Iodide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>P3566</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thymidine</td>
+      <td>Selleck Chem</td>
+      <td>S4803</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BrdU (5-Bromo-2′-Deoxyuridine)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>B23151</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ImaGene Green C12FDG lacZ Gene Expression Kit</td>
+      <td>Molecular Probes</td>
+      <td>I2904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Matrigel Basement Membrane</td>
+      <td>Bio-Strategy</td>
+      <td>BDAA354230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Fiji/Image J</td>
+      <td>NIH</td>
+      <td>RRID:SCR_002285</td>
+      <td>https://imagej.net/Fiji (Schindelin et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_008520</td>
+      <td>https://www.flowjo.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism (v9.1.0)</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Huygens Professional</td>
+      <td>Scientific Volume Imaging (SVI)</td>
+      <td>RRID:SCR_014237</td>
+      <td>https://svi.nl/Huygens-Professional</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LAS-X</td>
+      <td>Leica</td>
+      <td>RRID:SCR_013673</td>
+      <td>https://www.leica-microsystems.com/products/microscope-software/p/leica-las-x-ls/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies, plasmids, and reagents
 
 The γH2A.X (S139) (AB26350), p16 (AB201980), and PCNA (AB29) antibodies were from Abcam (MA, USA), and p21 antibody (2947) was purchased from Cell Signaling Technology (MA, USA). BrdU-FITC antibody was purchased from BD-Biosciences (BD-347583). Alexa-647 Conjugated Phalloidin antibody was purchased from Thermo Fisher Scientific (A22287). The plasmids for FUCCI live-cell imaging, mVenus-hGeminin(1/110) and mCherry-hCdt1(30/120), were a kind gift from Dr Atsushi Miyawaki (Riken, Japan). The LeGO plasmids were obtained from Addgene (#27338, #27339, #27340) (Weber et al., 2008). Thymidine (S4803), olaparib (S1060), palbociclib (S1116), and RI-1 (S8077) were from Selleck Chem (MA, USA). Deoxycytidine (sc-231247) was from Santa Cruz Biotechnology (TX, USA). BrdU was purchased from Thermo Fisher (B23151). Cisplatin was obtained from Hospira Australia (B23151) and carboplatin from Abcam (ab120828).
 
-## Cell lines
+### Cell lines
 
 The following LUAD cell lines were used: cell line (Homo sapiens) A549 ATCC CCL-185, RRID:CVCL_0023. Cell line (H. sapiens) NCI-H1299 ATCC CRL-5803, RRID:CVCL_0060. Cell line (H. sapiens) NCI-H1573 ATCC CRL-5877, RRID:CVCL_1478. All cell lines were authenticated by short tandem repeat polymorphism, single-nucleotide polymorphism, and fingerprint analyses, passaged for less than 6 months. All cell lines were confirmed as negative for mycoplasma contamination using the MycoAlert luminescence detection kit (Lonza, Switzerland).
 
@@ -110,43 +447,43 @@ Stable cell lines expressing the FUCCI biosensor were generated previously (Hast
 
 All LUAD cell lines were cultured in Advanced RPMI (Gibco, 12633012) containing 1% FCS and 1% GlutaMAX (35050-061, Gibco) under standard tissue culture conditions (5% CO2, 20% O2) as previously described (Hastings et al., 2020; Marini et al., 2018).
 
-## Colony formation assay and senescence-associated β-Gal assay
+### Colony formation assay and senescence-associated β-Gal assay
 
 For colony formation assays, cells were seeded on 6-well plates, pulsed with cisplatin (or not), and 1–2 weeks later, colonies were stained with 0.5% crystal violet and counted using ImageJ/Fiji software. For β-Gal assays, cells were seeded on 6-well plates, pulsed with cisplatin (or not), fixed and stained at 3 days, following manufacturer’s protocol (Cell Signaling Technology, #9860). Unpaired Student's t-tests along with bar graphs were generated using GraphPad Prism (v9.1.0).
 
-## LeGO clonal analysis
+### LeGO clonal analysis
 
 A549, NCI-H1573, and NCI-H1299 cells were transfected with LeGO lentiviral particles (Addgene plasmids #27338, #27339, #27340) Weber et al., 2008 following the method described in Weber et al., 2012. Cells were treated with/without cisplatin, and images were taken at 3 days and at 21 days (A549 and NCI-H1299) or 42 days (NCI-H1573) after cisplatin exposure. 100 images were taken per timepoint and per condition (three replicates), and the experiment was done twice. The total number of clones (unique colour cues) and the number of cells within each clone was determined. Briefly, images are opened and converted to 16-bit .tif files. An image is duplicated and converted to RGB overlay. The duplicate has background subtracted using a rolling ball at 250 considering colours separately and using a sliding parabaloid. The image is smoothed using a mean filter radius 5. Using the ‘find maxima’ function, a point within individual cells is identified and then enlarged to a circle radius of 5 pixels. These regions of interest (ROI) are then applied as a mask to the unprocessed, raw, image data and the average red, green, and blue values within these ROI collected and exported in .csv format. RGB values from each of the .csv files for each of the 100 images are compiled. Data from cells where an R, G, or B value is too high or too low are removed. 512 unique colours were identified, and cells were classified and assigned to each of the 512 colours. More than 90% of all cells were assigned to one of the 64 most represented colours, with analysis performed using these 64 groups and positive clonal colour assigned when the colour represented >0.1% of the population. Graphs were generated using GraphPad Prism (v9.1.0).
 
-## Animal experiments
+### Animal experiments
 
 Animal experiments were conducted in accordance with the Garvan/St Vincent’s Animal Ethics Committee (guidelines ARA 18_17, ARA_16_13) and in compliance with the Australian Code of Practice for Care and Use of Animals for Scientific Purposes. Mice were kept in standard housing at a 12 hr daylight cycle and fed ad libitum. Cage enrichment refinement was undertaken with mice implanted with mammary optical imaging windows, supplying the fully plastic IVC cages with papier-mâché domes, feeding supplied in trays on the cage floor and soft tissues as nesting material. For in vivo xenograft models, A549 cells (2 × 106) were resuspended in 100 μl PBS:Matrigel (1:1) and injected subcutaneously into the flanks of BALB/c-Fox1nuAusb mice (Australian BioResource). Tumour growth was assessed twice weekly by calliper measurement, and mice were randomised to treatment arms when tumours reached 150 mm3 (using the formula: width2× length × 0.5). Carboplatin (60 mg/kg) was delivered by a single i.p injection. Tumours were harvest at 3–7 days post treatment and analysed by IHC for cell size and PCNA-positive staining.
 
-## Implantation of optical imaging windows
+### Implantation of optical imaging windows
 
 BALB/c-Foxn1nu/Ausb mice were injected with 1 × 106 A549-FUCCI subcutaneously near the inguinal mammary fat pad. Following the development of palpable tumours, mice were engrafted with titanium mammary imaging windows (Russell Symes & Company) as described previously (Gligorijevic et al., 2009; Kedrin et al., 2008; Nobis et al., 2017; Ritsma et al., 2013). Briefly, mice were treated with 5 mg/kg of the analgesic carprofen (Rimadyl) in pH neutral drinking water 24 hr prior and up to a minimum of 72 hr post surgery. Mice further received subcutaneous injections of buprenorphine (0.075 mg/kg, Temgesic) immediately prior to and 6 hr post surgery. The titanium window was prepared 24 hr prior to surgery by gluing a 12 mm glass coverslip (Electron Microscopy Science) using cyanoacrylate to the groove on the outer rim of the titanium window. Following anaesthetic induction at 4% isoflurane delivered via a vaporizer (VetFlo) supplemented with oxygen, mice were kept at a steady 1–2% maintenance anaesthesia for the duration of the surgery on a heated pad. The incision site was disinfected using 0.5% chlorhexidine/70% ethanol. A straight incision was made into the skin above the developed subcutaneous tumour and following blunt dissection of the skin surrounding the incision a purse string suture (5-0 Mersilk, Ethicon) placed. The windows were then inserted and held in place by tightening the suture, disappearing along with the skin into the groove of the window and tied off. Mice were allowed to recover for a minimum of 72 hr post surgery, actively foraging, feeding, and grooming within minutes from being removed from the anaesthesia respirator. A minimum of 24 hr prior to imaging and treatment mice were weaned off the carprofen analgesic in the drinking water.
 
-## In vivo imaging
+### In vivo imaging
 
 Mice were imaged under 1–2% isofluorane on a heated stage (Digital Pixel, UK) prior to and 1 day, 2 days, 3 days, and 7 days after i.p. injection of 60 mg/kg carboplatinum (Sigma) or the saline vehicle. Multi-photon imaging was performed using a Leica DMI 6000 SP8 confocal microscope using a 25 × 0.95 NA water immersion objective on an inverted stage. For A549-FUCCI imaging the Ti:Sapphire femto-second laser (Coherent Chameleon Ultra II, Coherent) excitation source operating at 80 MHz was tuned to 920 nm and the RLD-HyD detectors with 460/40, 525/50, and 585/40 bandpass emission filters used to detect the second harmonic generation (SHG) of the collagen I, mAzamiGreen, and mKO2, respectively. Images were acquired at a line rate of 400 Hz, 512 × 512 pixel, and a line average of 8.
 
-## Flow cytometry analysis and sorting
+### Flow cytometry analysis and sorting
 
 Samples for flow cytometry were fixed in −20°C ethanol overnight, and then stained with a primary antibody against p21 (Cell Signal Technology, 2947), p16 (Abcam, ab201980), or gamma-H2A.X (S139) (Abcam, ab26350) followed by incubation with an Alexa Fluor 647 secondary antibody (Invitrogen). For DNA content analysis, cells were stained with 1µg/ml propidium iodide (PI) and treated with 0.5mg/ml RNAaseA for at lease 1 h prior to analysis. Flow cytometry was performed using a Beckman CytoFlex S. For BrdU incorporation analysis, cells were incubated with BrdU at 10 µM for 2 hr before overnight ethanol fixation at −20°C. An antibody against BrdU coupled with FITC (BD-347583) was used for staining, and flow cytometry was done using a Beckman CytoFlex S. For senescence assays, we used ImaGene Green C12FDG lacZ Gene Expression Kit (Molecular Probes, I-2904). Three days after cisplatin exposure, cells were incubated for 30 min with Bafilomycin A1 (Sigma, B1793) in RPMI medium without phenol red (Gibco) supplemented with 1% FBS before adding C12FDG to the media at 20 µM final concentration. Cells were incubated for 60 min prior to 15 min fixation with 4% PFA and processed for FACS analysis. Flow cytometry was performed using a Beckman CytoFlex S.
 
 For cell sorting and RNAseq analysis, A549 cells were treated with or without cisplatin (5 μg/ml) for 2 hr, and then allowed to recover for 3 days. Cells were collected by trypsinisation and then sorted using a BD FACS Aria III. The gates for stable and enlarged cells were determined by running untreated control cells and identifying cell size based on FSC and SSC (FSC vs. SSC) area parameters. Doublets were excluded based on area and height parameters of FSC and SSC. Sorted cells were frozen as a pellet in dry ice and stored at −80°C until RNA purification.
 
-## Immunofluorescence and live-cell imaging
+### Immunofluorescence and live-cell imaging
 
 Cells were grown on Histogrip (Life Technologies)-coated glass coverslips and fixed with 3.7% formaldehyde diluted in PHEM buffer (60 mM pipes, 25 mM HEPES, 1 mM EGTA, 2 mM MgCl2) with 0.5% Triton X-100 for 10 min. All cells were washed and then blocked (3% BSA, 0.1% Tween 20 in PBS) for 30 min. Cells were incubated with primary antibodies for 2 hr at room temperature in blocking solution. DNA was stained with H33342 and imaged using an EVOS FL2 Auto Imager (Thermo Fisher) or a Leica SP8-X confocal with white light laser using either a 20× (NA 0.75) or 63× (NA 1.40) objective. In some cases, 0.3 µm Z-sections were taken and displayed as 2D slices or maximum projections using Fiji (Image J v2.1.0/1.53c) and compiled using Adobe Photoshop CC 2020 software. Deconvolution and 3D volume renderings were performed using Huygens Professional Software (Scientific Volume Imaging, v20.04), while nuclear size analysis was performed using StarDist (Schmidt et al., 2018) plugins for Fiji/ImageJ. Live-cell imaging and IncuCyte (Sartorius) proliferation assays were performed as previously described (Hastings et al., 2020; Rogers et al., 2018). Briefly, for live-cell imaging, cells were seeded at 35% confluence on 6- or 12-well plates and imaged using a Leica DMI6000 with a 20× NA 0.4 objective. Images were taken every 10–20 min for up to 72 hr. Individual cells were followed and scored for nuclear envelope breakdown (NEBD) and first signs of anaphase as previously described (Caldon and Burgess, 2019). Mitotic length = NEBD to anaphase, while interphase length = anaphase to next daughter cell NEBD. Only the first daughter cell to divide was followed and annotated. For IncuCyte assays, cells were seeded on 12- or 24-well plates and filmed for up to 4 days at 4 hr intervals. Confluence and nuclear masks were generated and used to determine cell proliferation as previously described (McCloy et al., 2014). Statistical analysis, along with box and violin plots, was generated using GraphPad Prism (v9.1.0).
 
 For 53BP1 and PCNA chromobody experiments, cells were seeded on 8-Well Ibidi Polymer Coverslip µ-Slides (#80826), synchronised with thymidine or palbociclib and pulsed with cisplatin for 2 hr, before imaging on a Lecia SP8 confocal microscope fitted with a white light laser, hybrid detectors (HyD), a 63X HC PL APO CS2 (NA 1.40) objective and stage top incubator system set at 37°C and 5% CO2. Multiple X/Y positions and a 10 µm z-stack (1 µm Z-section) were taken every 30 min for 72 hr, with 4D deconvolution and volume rendering performed with Huygens Professional (v20.04) software (Netherlands). 53BP1 and PCNA foci analysis was performed on 2D maximim intensity projections using appropriate thresholds coupled with the Analyse Particles module within ImageJ/Fiji. The pattern of PCNA foci was used to position cells in early, mid, or late S phase, as previously described (Burgess et al., 2012; Charrasse et al., 2017).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemistry was performed on formalin-fixed paraffin-embedded sections using the Leica BOND RX (Leica, Wetzlar, Germany). Slides were first dewaxed and rehydrated, followed by heat-induced antigen retrieval performed with Epitope Retrieval Solution 1 BOND (Leica). PCNA primary antibody was diluted 1:500 (Abcam, ab29) in Leica antibody diluent and incubated for 60 min on slides. Antibody staining was completed using the Bond Polymer Refine IHC protocol and reagents (Leica). Slides were counterstained on the Leica Autostainer XL (Leica). Leica CV5030 Glass Coverslipper (Leica) and brightfield images were taken on the Aperio CS2 Slide Scanner (Leica). Quantification of PCNA staining was performed on three fields of view for each tumour section using QuPath (v0.2.3)(Bankhead et al., 2017). Student’s t-test statistical analysis, along with dot plots and bar graphs, was generated using GraphPad Prism (v9.1.0).
 
-## RNA isolation, RNA sequencing (RNAseq), SNV alignment and analysis
+### RNA isolation, RNA sequencing (RNAseq), SNV alignment and analysis
 
 Cell pellets were obtained from the different conditions/populations. Cell pellets were frozen in dry ice prior to storage at −80°C. Total RNA was purified using miRNeasy Micro Kit (QIAGEN, 217084) following the manufacturer's protocol, including a DNase treatment. RNA concentration and quality were also measured by Qubit and Nanodrop. Samples were only used if they showed a 260/280 ratio >2.0 (Nanodrop). RNA integrity was determined on an Agilent 2100 Bioanalyser, and samples were only used if they showed a RNA integrity number (RIN) of >8. Three sets of RNA were collected per condition. Compliant samples were sent to the Australian Genome Research Facility (AGRF) for RNA sequencing with poly(A) selection. Briefly, 20 million 100 bp single-end RNAseq was conducted on an Illumina NovaSeq platform. The library was prepared using the TruSeq stranded RNA sample preparation protocol (Illumina).
 

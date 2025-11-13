@@ -42,23 +42,213 @@ By contrast, several neuroimaging studies of Chinese dyslexic children have emph
 
 Therefore, to clarify the question of the commonalities and specificities of reading acquisition across different writing systems, we used a similar experimental protocol in 96 Chinese and French 10-year-old readers (48 in each language), with different reading proficiency. Half of the children had reading difficulties, meeting the criteria for dyslexia in French children (more than 2 years of reading delay) though not as marked in Chinese children. (Table 1). As in our previously published fMRI studies of reading (Dehaene-Lambertz et al., 2018; Monzalvo and Dehaene-Lambertz, 2013), all children performed the same passive viewing task with words, faces, and houses, with the mere goal to detect an occasional target star. We studied the effect of reading proficiency in whole-brain analyses and in the specific ROIs highlighted in the literature, in both Chinese and French children. The two analyses are complementary: whole-brain analyses can reveal any regions with differences between Chinese and French children, or between children with and without reading difficulties, including at unexpected brain sites, while ROI analyses have a better sensitivity to detect small differences between groups by summing voxel activity in the cluster and decreasing the number of repeated measures and thus the severity of the correction for multiple comparisons.
 
+**Table 1.**
+ Characteristics of the four groups.Table 1—source data 1.Demographic information of the four groups.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Chinese</th>
+      <th colspan="2">French</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Typical readers</th>
+      <th>Poor readers</th>
+      <th>Typical</th>
+      <th>Poor readers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sample size</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Age in months (SD)</td>
+      <td>123 (11)</td>
+      <td>123 (10)</td>
+      <td>123 (11)</td>
+      <td>123 (10)</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>13M/11F</td>
+      <td>16M/8F</td>
+      <td>13M/11F</td>
+      <td>16M/8F</td>
+    </tr>
+    <tr>
+      <td>Reading ability (CI 95%)</td>
+      <td>0.67 (0.49 ~ 0.86)</td>
+      <td>−1.74 (−1.95 ~ −1.54)</td>
+      <td>0.73 (0.39 ~ 1.07)</td>
+      <td>−2.16 (−2.38 ~ −1.94)</td>
+    </tr>
+  </tbody>
+</table>
+
 Because group analyses leave open the possibility that the observed group differences might be due to spatially more variable activations in poor readers relative to typical readers, we also performed individual-based analyses and compared the location and activation values of the most responding voxels in each child. Finally, because classical analyses may mask the presence of fine-grained activity patterns that are specific to a given subject or a given category, we also quantified the stability of subject-specific activation patterns within reading-related ROIs using multivariate pattern analyses. The goal of these analyses is to circumvent the blurring effect of group analyses, which may hinder the discovery of genuine but more dispersed activations in poor readers relative to typical readers.
 
 In addition to activations to words, we were also interested in how reading acquisition, in French and Chinese, may differently reorganize the ventral visual areas. Fusiform regions have a distinct maturation profile than more medial regions (Gomez et al., 2017) and face-specific activations expand slowly with age (Golarai et al., 2007; Golarai et al., 2015). Several studies in alphabetic languages suggest that, during reading acquisition in children, words, and faces may compete for cortical territory within the left fusiform gyrus (Centanni et al., 2018; Dehaene-Lambertz et al., 2018; Hervais-Adelman et al., 2019; Li et al., 2013; Ventura et al., 2013). Given the complexity of Chinese characters and their frequently reported bilateral activation, we investigated how face activation might be differently modulated by different reading abilities in Chinese and French children. We thus performed the same analyses for faces than those described above for words and also considered more precisely the development of the anterior-posterior gradient of activations for these two categories.
 
 ## Results
 
-## Behavioral Results
+### Behavioral Results
 
 Within the scanner, Chinese children responded faster to the target star than French children (main effect of Language: F (1,92)=60.94, p<0.001). There was no significant effect of Reading ability (F (1,92)<1) nor Language × Reading ability interaction (F (1,92)<1) (Chinese typical readers: 534.95 ± 71.47 ms, Chinese poor readers: 536.13 ± 72.84 ms; French typical reader: 661.15 ± 102.29 ms, French poor readers: 689.32 ± 99.35 ms).
 
-## Whole brain analyses
+### Whole brain analyses
 
-## Category-specific activations
+#### Category-specific activations
 
 We first examined the brain activations to each category (i.e. Words, Faces, and Houses) relative to the other two categories among all participants (see Figure 1A and Table 2). The [Words > Faces + Houses] analysis yielded the usual reading-related regions: fusiform gyrus, posterior superior temporal region, planum temporale, intra-parietal sulcus and inferior frontal regions in the left hemisphere and the posterior superior temporal gyrus in the right hemisphere. We also observed the classic mosaic of category-specific ventral visual areas, with category-specific activation to Houses occupying a medial parahippocampal location, Faces an intermediate fusiform location, and Words a lateral location in the left occipito-temporal sulcus (VWFA). Amygdala responses to Faces were also clearly seen. Those results were seen in each of the four groups of subjects, with the interesting exception that the left VWFA was not seen in both Chinese and French poor readers, contrary to the typical readers, at this classical threshold (voxel-level p<0.001, cluster-level uncorrected) (Figure 1B and Supplementary file 3).
 
-## Reading-related differences
+![Figure 1.](https://cdn.elifesciences.org/articles/54591/elife-54591-fig1-v2.jpg)
+
+**Figure 1.:** (A) Category-specific circuits across all participants (voxel-level p<0.001, cluster-level FWE corrected p<0.05). On the left, the reading circuit identified by the contrast Words > [Faces, Houses] and on the right: Face-selective (Faces > [Words, Houses]) and House selective regions (Houses > [Words, Faces]). (B) Category-specific circuits in each of the four groups (voxel-level p<0.001, cluster-level uncorrected). On the left, category-specific activations in Chinese typical readers (above) and Chinese poor readers (below). On the right, category-specific activations in French typical readers (above) and French poor readers (below). Green: regions selectively activated by words (Words > [Face, House]); Red: regions selectively by faces (Face > [Word, House]); Yellow: regions selectively activated by Houses (House > [Word, Face]).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54591/elife-54591-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A few voxels in the left fusiform gyrus, left precentral and left superior temporal sulcus reached the voxel threshold (p=0.001) in the 2 × 2 language × reading ability ANOVA analysis. Only the left precentral region survived the multiple comparisons within the mask of word-specific voxels. (B) A main effect of language was observed in the left intra-parietal sulcus (55 voxels, pFWE_corr = 0.004, z = 4.29 at [−30 −60 39]), significant at corrected-level within the mask of word-specific voxels, due to larger activation in Chinese than French children.
+
+**Table 2.**
+ Regions of significant activations for each visual category vs. the two others across all participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>MNI coordinates</th>
+      <th>Peak p-value</th>
+      <th>Peak z-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Words &gt; others</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left inferior frontal gyrus</td>
+      <td>−48 12 30</td>
+      <td>2.06e-19</td>
+      <td>8.93</td>
+    </tr>
+    <tr>
+      <td>Left precentral</td>
+      <td>−39 0 36</td>
+      <td>1.45e-18</td>
+      <td>8.72</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>−51 6 39</td>
+      <td>2.91e-14</td>
+      <td>7.51</td>
+    </tr>
+    <tr>
+      <td>Left superior temporal gyrus/sulcus</td>
+      <td>−57 −30 3</td>
+      <td>2.39e-19</td>
+      <td>8.92</td>
+    </tr>
+    <tr>
+      <td>Left middle temporal gyrus</td>
+      <td>−51 −42 6</td>
+      <td>7.89e-18</td>
+      <td>8.52</td>
+    </tr>
+    <tr>
+      <td>Left fusiform gyrus</td>
+      <td>−48 −57 −15</td>
+      <td>1.69e-17</td>
+      <td>8.43</td>
+    </tr>
+    <tr>
+      <td>Left Inferior parietal sulcus</td>
+      <td>−45 −39 42</td>
+      <td>4.29e-14</td>
+      <td>7.46</td>
+    </tr>
+    <tr>
+      <td>Right superior temporal sulcus</td>
+      <td>57 −27 3</td>
+      <td>8.94e-10</td>
+      <td>6.02</td>
+    </tr>
+    <tr>
+      <td>Faces &gt; others</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left fusiform gyrus</td>
+      <td>−39 −48 −21</td>
+      <td>3.28e-17</td>
+      <td>8.35</td>
+    </tr>
+    <tr>
+      <td>Right fusiform gyrus</td>
+      <td>42 −54 −18</td>
+      <td>6.14e-26</td>
+      <td>10.47</td>
+    </tr>
+    <tr>
+      <td>Right amygdala/hippocampus</td>
+      <td>18 −9 −18</td>
+      <td>6.11e-22</td>
+      <td>9.56</td>
+    </tr>
+    <tr>
+      <td>Left amygdala/hippocampus</td>
+      <td>−18 −9 −18</td>
+      <td>3.91e-15</td>
+      <td>7.77</td>
+    </tr>
+    <tr>
+      <td>Houses &gt; others</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left fusiform gyrus</td>
+      <td>−30 −48 −6</td>
+      <td>9.01e-53</td>
+      <td>15.24</td>
+    </tr>
+    <tr>
+      <td>Right fusiform gyrus</td>
+      <td>30 −45 −9</td>
+      <td>2.90e-50</td>
+      <td>14.86</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>27 −63 −9</td>
+      <td>2.40e-22</td>
+      <td>9.65</td>
+    </tr>
+    <tr>
+      <td>Left calcarine</td>
+      <td>−18 −54 9</td>
+      <td>8.66e-10</td>
+      <td>6.02</td>
+    </tr>
+  </tbody>
+</table>
+
+### Reading-related differences
 
 Reading scores across all 96 children were significantly correlated with fMRI activation in the [words > fixation] contrast, in the classical regions of the reading circuit in the left hemisphere (fusiform, superior temporal sulcus, middle frontal region and precentral) plus some of their right counterparts (Figure 2 and Table 3). When the French and Chinese groups were considered separately, similar regions (bilateral FFG, bilateral PCG, bilateral MFG, left STS,) were observed in each of the two languages (Figure 2B and C).
 
@@ -66,21 +256,103 @@ Reading scores across all 96 children were significantly correlated with fMRI ac
 
 **Figure 2.:** (A) The figure shows the regions whose activation in the words versus fixation contrast was positively correlated with reading scores across all participants at the whole-brain level (voxel-wise p<0.001 and cluster-wise p<0.05 FWE corrected).(B, C) Regions positively correlated with reading scores in Chinese and French children (voxel-wise p<0.001, cluster-level uncorrected).
 
+**Table 3.**
+ Regions significantly correlated with reading scores across all participants at the whole-brain level.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>MNI coordinates</th>
+      <th>Peak p-value</th>
+      <th>Peak z-value</th>
+      <th>R-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Left fusiform gyrus</td>
+      <td>−42 −45 −18</td>
+      <td>6.65e-6</td>
+      <td>4.36</td>
+      <td>0.490</td>
+    </tr>
+    <tr>
+      <td>Right fusiform gyrus</td>
+      <td>42 −66 −24</td>
+      <td>9.96e-6</td>
+      <td>4.27</td>
+      <td>0.512</td>
+    </tr>
+    <tr>
+      <td>Left precentral</td>
+      <td>−36 −3 57</td>
+      <td>2.75e-6</td>
+      <td>4.54</td>
+      <td>0.467</td>
+    </tr>
+    <tr>
+      <td>Right precentral</td>
+      <td>54 18 33</td>
+      <td>1.29e-5</td>
+      <td>4.21</td>
+      <td>0.432</td>
+    </tr>
+    <tr>
+      <td>Left middle frontal gyrus</td>
+      <td>−36 12 27</td>
+      <td>1.92e-5</td>
+      <td>4.12</td>
+      <td>0.468</td>
+    </tr>
+    <tr>
+      <td>Right middle frontal gyrus</td>
+      <td>45 6 54</td>
+      <td>7.72e-6</td>
+      <td>4.32</td>
+      <td>0.460</td>
+    </tr>
+    <tr>
+      <td>Left superior temporal sulcus</td>
+      <td>−57 −24 0</td>
+      <td>1.00e-5</td>
+      <td>4.26</td>
+      <td>0.510</td>
+    </tr>
+    <tr>
+      <td>Right middle occipital gyrus</td>
+      <td>27 −69 42</td>
+      <td>6.34e-6</td>
+      <td>4.37</td>
+      <td>0.448</td>
+    </tr>
+  </tbody>
+</table>
+
 We also observed a significant positive correlation, across all children, between reading scores and the face-evoked activation (vs fixation) in the left fusiform gyrus (left [−33 −60 −15], 74 voxels, Z = 4.31, pFWE_corr = 0.001). This region was close to coordinates of the classic left FFA (Scherf et al., 2007). A small cluster was also observed close to the classic right FFA, but did not survive the cluster-level correction ([45 −48 −15], 12 voxels, Z = 3.70).
 
-## Group comparisons
+### Group comparisons
 
 No significant difference was found between typical and poor readers in either direction when analyzing either the [Words > fixation] or the [Words > Faces+Houses] contrast across the whole brain. However, a few voxels reached the voxel-wise statistical threshold (p=0.001) in the left fusiform gyrus, left precentral and left superior temporal sulcus with greater activation in typical readers relative to poor readers (see Figure 1—figure supplement 1A).To improve the sensitivity to differences between groups and decrease the risk of false negatives, we restricted our analyses to reading sensitive regions defined by the mask comprising all voxels showing a preference for words relative to the two other categories across all participants. Typical readers showed larger activations relative to poor readers in a left precentral cluster (79 voxels, pFWE_corr = 0.027, Z = 3.69 at [−51 15 33]) and Chinese relative to French in the left intra-parietal sulcus (55 voxels, pFWE_corr = 0.004, Z = 4.29 at [−30–60 39]) in the words vs. fixation contrast (Figure 1—figure supplement 1). No region showed more activation in French children relative to Chinese nor a significant language × reading ability interaction, even when a very lenient voxel-wise threshold of p<0.05 was considered.
 
 To summarize the results so far, our analyses recovered, in a large group of 10-year-old children, the classical activations for words, faces, and houses described in adults. Reading proficiency modulated the response to words in the classical reading circuit and contralateral regions, but also to faces in the fusiform region, in both languages. However, a binary classification of the participants in typical and poor readers was less powerful, recovering a few voxels with significant hypo-activations at expected locations in the poor readers relative to the typical readers, which did not survive corrections for repeated measures. To circumvent this reduced power, we next focused on brain regions which have been reproducibly shown to be under-activated in dyslexics or modulated by Chinese writing, and studied whether and how reading ability and writing system affected their response to words.
 
-## Literature-driven analyses
+### Literature-driven analyses
 
 Figure 3A presents all foci reported in four published meta-analyses of dyslexia in alphabetic languages (Linkersdörfer et al., 2012; Maisog et al., 2008; Richlan et al., 2009; Richlan et al., 2011) and in four meta-analysis of Chinese typical reading (Bolger et al., 2005; Tan et al., 2005a; Wu et al., 2012; Zhu et al., 2014). As seen in Figure 3A, dyslexia in alphabetic languages is consistently characterized by dysfunctions in the left occipito-temporal, temporoparietal and frontal regions. All ROIs (except two ROIs in the right hemisphere) fell within the reading circuit identified in our participants (Words > other categories; see Figure 4 and Figure 4—figure supplement 1). Figure 3B presents the correlation (FDR-corrected) between reading score and activation to words in these ROIS. This correlation reached FDR-corrected significance in PCG, STS, MTG, and FFG, as well as the MFG and RIOG previously reported in Chinese readers (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/54591/elife-54591-fig3-v2.jpg)
 
 **Figure 3.:** (A) Each sphere represents a peak reported in the literature; Labels in white background indicate foci reported in meta-analyses of dyslexia in alphabetic languages; Labels in black background indicate foci reported in meta-analyses of Chinese reading. (B) ROIs used in the current study. Coordinates of foci (see the upper graph) belonging to the same functional region were averaged to create 6-mm-radius spheres at the averaged coordinates. Dots are colored according to their correlation with reading scores across all children. Red dots represent ROIs whose activation to words versus fixation were positively correlated with individual children’s reading scores, while gray dots represent non-significant ROIs (pFDR < 0.05). MFG: Middle Frontal Gyrus, PCG: Pre-Central Gyrus, STS: Superior Temporal Sulcus, MTG, Middle Temporal Gyrus, FFG: Fusiform gyrus, IOG: Inferior Occipital Gyrus.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/54591/elife-54591-fig4-v2.jpg)
+
+**Figure 4.:** Brain slices showed the literature-based ROIs (cyan) overlaid on the reading circuit (red-yellow) in our participants (Words > [Faces, Houses]). Plots show the mean activation for words > fixation, in each of the four groups and ROIs. The words ‘Reading ability’ and ‘Language’ indicate a significant main effect of reading ability and a main effect of language in the ANOVA (after FDR correction for a total of 13 ROIs). Note that no ROI showed a significant interaction of language × reading ability. Brackets indicate significant post-hoc analyses: **p<0.005, **<0.01, *<0.05, †=0.052.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54591/elife-54591-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Two ROIs on the right hemisphere (e.g. R.FFG and R.IOG) were not within the reading circuit identified in our participants. Neither the interaction of language × reading ability nor main effect of reading ability or language was found significant in these ROIs.
 
 We submitted the activation to words relative to fixation in each ROI to a 2 × 2 ANOVA with Language and Reading ability as between-subject factors. Below, we report only the p-values that survived an FDR correction over the 13 ROIs.
 
@@ -90,23 +362,109 @@ Significant reduced activation was observed in poor readers relative to typical 
 
 We used Bayesian ANOVAs on the Word activation to assess the likelihood of the null hypothesis H0 over H1 in the case of the interaction language × reading ability. As also explained in the methods, the Bayes factor (BF10) is the ratio of the amount of evidence for H1 above H0 (BF01 for H0 above H1). Evidence for H1 against H0 is generally considered as moderate for BF10 ≥ 3, and strong for BF10 ≥ 10. Bayesian analyses provided similar conclusions to frequentist analyses for the main effect of Language and Reading ability (Table 4). The BF10 for an effect of language was 80.21 in the MFG, 7.05 in the SPL and 9.91 in the pSTG. The likelihood of an effect of reading ability in the FFG was BF10 = 1528.97 higher than that of the null hypothesis; the same BF10 was 37.51 in the STS, 9.95 in the MFG and 5.63 in the PCG respectively. It was also the case in the post-hoc analyses within each language (Table 4). Notably, there was strong evidence of a reading ability effect in the fusiform gyrus (FFG) and moderate evidence in the STS and PCG in both languages. In the pSTG and also paradoxically in the MFG described as a dyslexic marker in Chinese, the evidence of a reading ability effect was strong in French (BF10 = 23.74 and 29.35 for each site respectively) but absent or weak in Chinese children (BF10 < 1 and 1.62). Sensitivity analysis revealed that the Bayes factor stayed about the same for a wide range of prior specifications (Cauchy prior width: 0–1.5) in the FFG, STS, PCG, and MFG for the comparisons between typical and poor readers in each language except for the pSTG in Chinese children.
 
+**Table 4.**
+ Bayes factor (BF10) in Bayesian ANOVA analyses of children’s activation to words versus fixation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">ROIs</th>
+      <th rowspan="2">Main effect of language</th>
+      <th rowspan="2">Main effect of reading ability</th>
+      <th rowspan="2">Interaction</th>
+      <th colspan="4">Post-hoc analyses</th>
+    </tr>
+    <tr>
+      <th>Typical readers (Chinese vs. French)</th>
+      <th>Poor readers (Chinese vs. French)</th>
+      <th>Chinese children (typical vs. poor readers)</th>
+      <th>French children (typical vs. poor readers)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FFG</td>
+      <td>0.216</td>
+      <td>1528.966</td>
+      <td>0.313</td>
+      <td>0.227</td>
+      <td>0.337</td>
+      <td>13.577</td>
+      <td>93.163</td>
+    </tr>
+    <tr>
+      <td>MFG</td>
+      <td>80.211</td>
+      <td>9.948</td>
+      <td>0.305</td>
+      <td>2.837</td>
+      <td>309.651</td>
+      <td>1.616</td>
+      <td>29.351</td>
+    </tr>
+    <tr>
+      <td>STS</td>
+      <td>0.220</td>
+      <td>37.507</td>
+      <td>0.309</td>
+      <td>0.387</td>
+      <td>0.259</td>
+      <td>6.933</td>
+      <td>5.076</td>
+    </tr>
+    <tr>
+      <td>PCG</td>
+      <td>1.532</td>
+      <td>5.625</td>
+      <td>0.275</td>
+      <td>1.782</td>
+      <td>1.075</td>
+      <td>2.662</td>
+      <td>2.661</td>
+    </tr>
+    <tr>
+      <td>SPL</td>
+      <td>7.052</td>
+      <td>0.562</td>
+      <td>0.323</td>
+      <td>4.486</td>
+      <td>1.782</td>
+      <td>0.822</td>
+      <td>0.332</td>
+    </tr>
+    <tr>
+      <td>pSTG</td>
+      <td>9.908</td>
+      <td>0.289</td>
+      <td>1.054</td>
+      <td>0.616</td>
+      <td>74.014</td>
+      <td>0.215</td>
+      <td>23.744</td>
+    </tr>
+  </tbody>
+</table>
+
+_The value of Bayes factor BF10 means that data are n times more likely under alternative hypothesis (H1) than null hypothesis (H0). The alternative hypothesis in comparisons between typical and poor readers is group 1 (typical) > group2 (poor); the alternative hypothesis in comparisons between languages is group 1 (Chinese) > group2 (French)._
+
 Turning now to the effect of language in each reading group, differences between languages were mainly observed between the groups of poor readers: Chinese children showed larger activations than French in the MFG (BF10 = 309.65) and pSTG (BF10 = 74.01) although the same tendency was present in typical readers. The above Bayes factor stayed the same for a wide range of prior specifications (Cauchy prior width: 0–1.5) in the sensitivity analysis. However, there was no evidence for a significant interaction language × reading ability in all these ROIs. On the contrary, the null effect was supported by moderate evidence in the FFG, MFG, STS, PCG, and SPL (respectively BF10 = 0.31, 0.31, 0.31, 0.27, and 0.32, i.e. the likelihood of the null hypothesis BF01 = 3.23, 3.23, 3.23, 3.70, and 3.13); there was no evidence in either direction in pSTG (BF10 = 1.05) (Table 4). Sensitivity analysis revealed that the Bayes factor stayed about the same for a wide range of prior specifications (Cauchy prior width: 0–1.5).
 
 These analyses were replicated for the activation to houses and to faces, no main effect nor interactions were found in any of these ROIs.
 
 To summarize, when analyses were focused on specific ROIs outlined in the literature as sensitive to reading performance or to differences between writing systems, we replicated the reduced activation to words in poor readers relative to typical readers in the FFG, MFG, STS, and PCG. Crucially, this reduction was observed in both French and Chinese participants with no significant interaction language × reading ability. Activation in SPL, pSTG, and MFG was also modulated by language, with greater activation in Chinese than in French children. For the pSTG, the language effect was mainly observed in the poor readers, due to a large reduction in activation in French poor readers than Chinese poor readers.
 
-## Individual analyses
+### Individual analyses
 
 The above analyses were carried out in a standardized way at the group level. It is therefore possible that the observed group differences were due to a greater inter-individual variability in brain localization in the reading-impaired group than in the typical group. This possibility would lead to a completely different interpretation of the results: each child might have a well-organized brain activity for reading, with the only anomaly being a greater anatomical dispersion in the group of poor readers compared to the group of typical readers. To test this possibility, we performed two individual-based analyses, one based on the comparison of the location and activation values of the most responding voxels and the other examining the stability of the pattern of responses across runs through a multi-voxel pattern analysis (MVPA). We focused on the ROIs previously showing significant differences due to reading ability (i.e. left FFG, MFG, PCG, and STS) and Language (i.e. left MFG, SPL, and pSTG).
 
-## Peak analyses
+### Peak analyses
 
 Considering the locations of the individual centers of mass for word activations in the left FFG, MFG, STS, PCG, SPL, pSTG, their Euclidean distance to the group peaks did not differ between poor and typical readers (Supplementary file 6), suggesting a similar dispersion among poor readers and typical readers. These results of a null effect in peak location were further confirmed by Bayesian analyses (the BF10 for an effect of reading ability were 0.22, 0.25, 0.23, 0.36, 0.23, 0.24 for left FFG, MFG, STS, PCG, SPL, and pSTG, respectively, thus supporting the null hypothesis). Furthermore, even after having selected the best responding voxels in each child, the word activation remained weaker in poor than typical readers in the left FFG, MFG, STS, PCG, and pSTG (all pFDR_corr < 0.05). French also yielded weaker activations than Chinese children in the left MFG, pSTG and SPL (all pFDR_corr < 0.05). There was no significant Language × Reading ability interaction in any of these analyses, supported also by the following BF10 in Bayesian analyses (peak location: BF10 = 0.38, 0.30, 0.70, 0.35, 0.31, 0.35; peak activation: BF10 = 0.35, 0.38, 0.59, 0.35, 0.00, 0.53 for left FFG, MFG, STS, PCG, SPL, and pSTG). These results thus corroborated the standard analyses.
 
 As concerns faces, we did not observe any effect of reading ability or Language on the peak locations and activations in bilateral fusiform face gyrus (FFA) in both frequentist (all p>0.09) and Bayesian statistics (all BF10 < 1).
 
-## MVPA of the activations to words
+### MVPA of the activations to words
 
 The previous analysis asked whether, at the individual level, the peak activity is reduced in poor readers. In the present section, we ask the same question about the stability of the response pattern across runs (i.e. the within-subject reliability of the activation patterns). Indeed, the reduced activation in the group analysis could be due to two distinct causes. Poor readers could have a genuinely reduced and erratic activation, but alternatively, poor readers could possess an identifiable and reproducible circuit similar to typical readers, only with a spatially more dispersed extent. In that case, the within-subject reproducibility of multivariate activation patterns may not differ between typical and poor readers.
 
@@ -114,29 +472,37 @@ To examine the within-subject reliability of activation across runs, we used a m
 
 In all the ROIs, when pooling over all subjects, there was an overall replicable pattern of activation evoked by words, as indicated by a significant main effect of condition, with a greater correlation coefficient within words than between words and other categories (all pFDR_corr < 0.001) (see Figure 5 and Figure 5—figure supplement 1A). Crucially, we also observed a significant interaction of condition × reading ability (typical vs. poor readers) in the left FFG (F (1, 83)=10.14, p=0.002, pFDR_corr = 0.006) and in the left pSTG (F (1, 83)=15.75, p<0.001, pFDR_corr < 0.001). Post-hoc analysis found that typical readers, but not poor readers, exhibited a significantly similar pattern of activation from one run to the next. Those results show that the above differences between typical and poor readers were not due to an artifact of group averaging, and that children struggling with reading acquisition exhibited a genuinely more erratic activation pattern for words in these regions (Figure 5).
 
-## MVPA of the activations to faces
+![Figure 5.](https://cdn.elifesciences.org/articles/54591/elife-54591-fig5-v2.jpg)
+
+**Figure 5.:** Within the designated ROIs, we computed the correlation coefficient of the multivoxel patterns for the word versus fixation contrast in run 1 and in run 2 (within-category correlation). For the between-category coefficient, the plots show the average correlation coefficient between words and faces, words and houses and faces and houses between run 1 and run 2. In each plot, the correlation is presented for the Chinese children on the left of the plot and for French children on the right. The words ‘Condition × Reading ability’ indicate a significant interaction between condition (within vs. between) and the status of children (typical vs. poor readers) (after FDR correction for a total of 13 ROIs). Typical readers, but not poor readers, exhibited a significant similar pattern of activation to words from one run to the next in the left FFG and pSTG, suggesting that the weaker activation for words in poor readers was not due to greater anatomical variability in this group but was related to genuinely less reproducible activation patterns than in typical readers.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54591/elife-54591-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** All these regions showed a main effect of condition, with higher correlation coefficients in within-category than between-category. Besides, the left MFG and STS showed a main effect of reading ability, with lower correlation coefficients across runs in poor readers than typical readers. Note that neither the interaction of condition × reading ability nor condition × reading ability × language reached significant in above regions.
+
+### MVPA of the activations to faces
 
 For the MVPA analysis in the bilateral fusiform face areas (bilateral FFA), only the main effect of condition reached significance (pFDR_corr < 0.001), with a greater correlation coefficient for within-category patterns (faces-faces) than for between-category patterns (faces-words, faces-houses, words-houses). Neither the main effect of reading ability nor the interaction of condition × reading ability reached significance. These results suggest an equally replicable pattern of activation to faces in poor and typical readers bilaterally in the fusiform face area (see Figure 5—figure supplement 1B). This pattern resulted in a triple interaction of category (words versus faces)×condition × reading ability when the fusiform data from words and faces were analyzed together, indicating that the reduced stability of activations in poor readers was limited to words.
 
 In summary, individual analyses substantiated a genuine reduction and instability of the activation to words in poor readers relative to typical readers. Importantly, this instability was not universally present in all visual categories (as might be the case if, for instance, the poor readers had greater noise or motion), because the activations to Faces in the fusiform regions did not differ between groups.
 
-## Anterior-to-posterior gradient in the visual cortex
+### Anterior-to-posterior gradient in the visual cortex
 
 Finally, given the massive impact of reading on the organization of the ventral temporal areas, we focused on these regions and examined the anterior-posterior gradient of responses for the different visual categories vs. fixation.
 
-## Words
+### Words
 
 Keeping constant x = ±48 and z = −16, we studied the activation to Words vs. fixation along the y-axis (ranging from −79 to −22). Firstly, we observed greater response to words in Chinese children compared to French children in the right hemisphere at several y coordinates, leading to a significant triple interaction of language × hemisphere × ROI. Secondly, we observed larger activation in the posterior relative to anterior sites as revealed by the main effect of ROIs. Crucially, the reading ability × ROIs interaction was significant. In more detail, compared to typical readers, poor readers had weaker activation to words at several consecutive sites (y-axis at −64, −55, −46, and −37). However, when we considered separately Chinese and French children, only one site (y = −46) survived correction for multiple comparison in both Chinese and French children. This site is only slightly anterior to the classic VWFA site (Cohen et al., 2002) (see Figure 6B).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/54591/elife-54591-fig6-v2.jpg)
 
-**Figure 6.:** (A) Slices show the activation difference between a given category and the others across all participants. (B) fMRI signal change of Words relative to fixation in both Chinese and French children in successive cortical sites along the y-axis (green dots on the left cortical slices) with constant x = ±48 and z = −16. Both Chinese and French poor readers have significantly lower activations relative to their controls at a specific y site of y = −46 (pFDR_corr = 0.048 and pFDR_corr = 0.012 respectively for Chinese and French children) corresponding to the classical coordinates of the VWFA (Cohen et al., 2002). (C) fMRI signal change of Faces relative to fixation in both Chinese and French children in successive cortical sites along the y-axis (red dots on the left cortical slices) with constant x = ±39 and z = −16. (D) fMRI signal change of Houses relative to fixation in both Chinese and French children in successive cortical sites along the y-axis (yellow dots on the left cortical slices) with constant x = ±30 and z = −16. Additional files.Figure 6—source data 1.
+**Figure 6.:** (A) Slices show the activation difference between a given category and the others across all participants. (B) fMRI signal change of Words relative to fixation in both Chinese and French children in successive cortical sites along the y-axis (green dots on the left cortical slices) with constant x = ±48 and z = −16. Both Chinese and French poor readers have significantly lower activations relative to their controls at a specific y site of y = −46 (pFDR_corr = 0.048 and pFDR_corr = 0.012 respectively for Chinese and French children) corresponding to the classical coordinates of the VWFA (Cohen et al., 2002). (C) fMRI signal change of Faces relative to fixation in both Chinese and French children in successive cortical sites along the y-axis (red dots on the left cortical slices) with constant x = ±39 and z = −16. (D) fMRI signal change of Houses relative to fixation in both Chinese and French children in successive cortical sites along the y-axis (yellow dots on the left cortical slices) with constant x = ±30 and z = −16. Additional files.
 
-## Faces
+### Faces
 
 Keeping constant x = ±39 and z = −16, we also studied the activation to Faces vs. fixation along the y-axis (ranging from −79 to −22). We observed a significant Hemisphere × ROI interaction. This effect was due to greater right than left face activation at several y coordinates (y = −73, −64, −55, −46). Besides, the main effect of reading ability reached significance, due to a lower activation to faces in poor readers compared to typical readers bilaterally and in both languages (Figure 6C).
 
-## Houses
+### Houses
 
 Along the medial house-specific activation at x = ±30 and z = −16, we similarly studied the activation to Houses vs. fixation. We found a significant triple interaction of language × hemisphere × ROI. French children had greater right than left activation at each of the six anterior-posterior y coordinates (all pFDR_corr < 0.005) while Chinese children had the same pattern only at four sites (y = −73, −46, 37, 28). We also observed a significant reading ability × ROI interaction, with decreased activation to Houses in poor readers in several sites (Figure 6D).
 
@@ -152,7 +518,7 @@ We also observed a few differences in activations depending on the children’s 
 
 We concluded our analyses by examining the reproducibility of the activation patterns between runs. The within-subject pattern of activity evoked by words was reproducible across runs in typical readers in all key reading regions, underscoring that the reading circuit is stable after 3 years of learning to read and can be reliably measured in a single fMRI run even in children. However, such was not the case for poor readers, whose activity was significantly less reliable in left fusiform and posterior superior temporal gyrus in both Chinese and French poor readers. We now discuss each of these results in turn.
 
-## The reading network is largely universal, and modulated by reading skill
+### The reading network is largely universal, and modulated by reading skill
 
 A long-standing debate in reading research is whether the neurobiological circuitry for reading is universal across languages. Previous cross-cultural fMRI studies have compared brain activations in adult readers in different languages and suggested that the expert reading network may be universal across languages (Nakamura et al., 2012; Paulesu et al., 2000; Rueckl et al., 2015). The current study extends this finding to young children by showing common activation patterns to words in children in both alphabetic and non-alphabetic writing systems after only 3–4 years of primary school. Script invariance across English and Chinese was already reported after only one year of reading acquisition in the VWFA (Krafnick et al., 2016). This region is also the most strongly modulated by reading proficiency in both French and Chinese, with no difference (Bayes factor < 1) between French and Chinese typical readers but also between French and Chinese poor readers, thus confirming that VWFA activation is a universal marker of reading proficiency. The same observation can be made to a lesser extent for the STS and the PCG, the activation of which also depends on the reading proficiency in both writing systems in a similar way.
 
@@ -172,7 +538,7 @@ We also found that Chinese children showed slightly larger activation than Frenc
 
 Overall, our findings indicate that learning to read largely involves the same key regions across cultures and ages, but with quantitative modulations depending on the specific demands of the task, the learning stage, and culture-dependent characteristics. Our novice readers, who probably needed to deploy all their resources in order to succeed in reading, may be more informative than expert adults in objectifying the entire reading circuit, unless the latter are pushed to their limits by unusual, thus less automatized, format of words presentation, as was done for instance by Cohen et al., 2008.
 
-## A universal neural phenotype for reading disability
+### A universal neural phenotype for reading disability
 
 Some authors have also proposed that the cortical regions mediating reading disability are different in Chinese and alphabetic languages (left middle frontal gyrus in Chinese versus left temporo-parietal regions in alphabetic languages) (Siok et al., 2008; Siok et al., 2004). On the contrary, our results were strikingly similar in Chinese and French poor readers tested with the same paradigm, thus suggesting a universal neural phenotype for reading disability. Those children were impaired in all classical reading-related regions, most notably the VWFA in the left FFG and the left posterior STG, regions that have been consistently reported to show lower activations in dyslexics relative to controls in alphabetic languages (Blau et al., 2009; Martin et al., 2016; van der Mark et al., 2009). The present study confirms that these reductions in activation can be observed since childhood in all writing systems, whether alphabetic systems with deep or shallow orthographies, or in Chinese characters. Hu et al., 2010 reached a similar conclusion at a later age by comparing a smaller group of 11 Chinese and 11 English dyslexics.
 
@@ -186,7 +552,7 @@ Finally, we also observed decreased activation in the left middle frontal gyrus,
 
 Unlike readers of alphabetic languages who only have to acquire a small set of letters and of grapheme-phoneme correspondences, readers of Chinese must learn a few thousands of characters. To overcome this difficulty, Chinese readers may rely more on a motor memory of writing gestures as a means for memorizing the large number of characters, and as noted earlier, writing skills predict reading ability in Chinese children (Tan et al., 2005b). The greater activation of the left MFG may therefore reflect the greater reliance of Chinese children on writing, and the dysfunction of this region in Chinese poor readers may reflect an underlying deficit in memorizing writing gestures (Ziegler, 2006). This strategy is not unique to Chinese, however: novice readers in alphabetic languages also benefit from a motor memory for hand gestures when recognizing written words (Bara et al., 2004), and a recent study found that a motor representation of handwriting gestures is automatically accessed for subliminal written words in both Chinese and French adult readers (Nakamura et al., 2012). Our findings on children further suggest that the left MFG is likely to play a pivotal role in successful reading acquisition independently of the writing system.
 
-## Limitations and future direction
+### Limitations and future direction
 
 Several limitations of the present study need to be considered. First, our task was orthogonal to reading, and involved the mere detection of a picture of a star. This choice was made to avoid any effect due to performance itself. A task that is more difficult for some children than from others could have induced greater activation, but also greater movement in the scanner. The disadvantage is that participants were not explicitly instructed to attend to words, which could have increased the differences between poor and typical readers, and between French and Chinese readers. Note, however, that our results indicate a strong sensitivity of our procedure to reading proficiency, since reading performance was correlated with activation in all key areas of the reading circuit (VWFA, posterior STG, MFG, and pre-central (Figure 2 and Table 3)).
 
@@ -198,21 +564,21 @@ In conclusion, with several convergent analyses, we revealed that the neural bas
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Ninety-six children participated in the current study, including 24 Chinese poor readers (mean age = 123 months, standard deviation (SD) = 10), 24 Chinese typical readers (mean age = 123 months, SD = 11), 24 French poor readers (mean age = 123 months, SD = 10) and 24 French typical readers (mean age = 123 months, SD = 11). All children reported normal hearing and corrected-to-normal vision and no history of neurological or psychiatric disorder. Nonverbal IQ, assessed by Raven’s Standard Progressive Matrices in Chinese children and Wechsler Intelligence Scale in French children, was in the normal range for all participants. The study was approved by local institutional review boards in Beijing (China) and Kremlin-Bicêtre (France), respectively. Written consent was obtained from all children and their parents.
 
-## Chinese participants
+### Chinese participants
 
 Because standardized tests of dyslexia are not available in Chinese, we tested a large population of 2554 primary school children in Beijing (3rd grade- 5th grade, 10- 13 years of age) to calculate the standard norms in the following tests. The first round of tests involved: (1) Chinese Character Recognition Test (CCRT) (Wang and Tao, 1993), (2) Reading Comprehension Test (RCT) (You et al., 2011), (3) Raven Progressive Matrices Test (Raven et al., 1994), and (4) Digit Cancellation Test (Mirsky et al., 1991). Children with a CCRT Z-score below −1.25 SD were identified as children with potential reading difficulties. We then invited these children and their parents to take part in a second-round of tests, which involved MRI scanning and several individually-administered tests: (5) Chinese Phonological Awareness Test (CPAT), (6) Character Reading Test (CRT) (Li et al., 2012), and (7) Rapid Automatized Naming Test. A total of 103 children with different age and reading abilities were scanned and more information about these children can be found in a previous paper (Li et al., 2018). We considered poor readers to be those whose CCRT Z-score, or CPAT Z-score, was consistently low in both rounds of tests (specifically < −1.25 SD in the first and < −1.5 in the second) and obtained 24 children. We then selected an equal number of typically developing children (>−0.5 SD in all reading-related tests) whose age, sex and non-verbal IQ matched those of the reading-struggling group (Table 1 and Supplementary file 1). By definition of the groups, the two groups were significantly different (CCRT: t = 18.03, p<0.001).
 
-## French participants
+### French participants
 
 To match the Chinese children, we selected 24 dyslexic and 24 typical readers from two previously published French studies: 21 dyslexics and 18 typical readers from the Monzalvo et al’s study (Monzalvo et al., 2012), and 3 dyslexics and six typical readers from the population of Altarelli et al., 2013 study. Dyslexia was diagnosed in a dedicated learning disability center based on extensive behavioral testing with nationally established criteria following INSERM recommendations (clinical examination, full-scale IQ, standardized tests for working memory, meta-phonology, spelling, rapid automatic naming, etc.). At the time of fMRI scanning, we checked the children current reading level with ‘L’alouette’, a standardized reading test classically used to detect dyslexia in French speaking children (Lefavrais, 1967). It consists in reading as fast and accurately as possible a meaningless text of 265 words within 3 min (Lefavrais, 1967). All French poor readers had a delay of 20 months, or more, in this test. French and Chinese children were matched in age and sex in each group (see also Table 1 and Supplementary file 2). By definition of the groups, the two groups were significantly different (‘Alouette’: t = 14.66, p<0.001).
 
 Due to differences in writing systems, the reading skills expected at a given age are different in alphabetic languages and Chinese. Here, French children were assessed by reading a text and Chinese by character recognition. Therefore, the direct comparison of children's performance across languages provides an indication of the distance between typical readers and the children with reading difficulties, rather than an absolute assessment of dyslexia. While reading scores were similar in French and Chinese typical readers (t < 1), French poor readers tended to have worse scores than Chinese poor readers (t = 2.45, p=0.07), leading to an interaction between language and group (F(1,92)=3.91, p=0.051).
 
-## Stimuli and task
+### Stimuli and task
 
 For French children, the experimental procedure was identical to Monzalvo et al., 2012. The procedure was adapted to Chinese children by replacing French words and Caucasian faces by Chinese words and Asian faces. While being scanned, Chinese and French children viewed short blocks of words, faces, and houses and of a revolving checkerboard (30 frequent regular words known by young readers and 30 black and white pictures in each category) followed by a fixation cross during 10.5 s (total bloc duration 28.5 s). In each block, 10 pairs of different images belonging to the same category (200 ms presentation for the first picture/word, 200 ms inter-stimulus, 500 ms presentation for the second picture/word) were presented, separated by a 600 ms fixation period. Besides, two stars were randomly inserted in each block, 1500 ms for each star. Children were instructed to press a button with their right index finger whenever a target star appeared. This task was designed to keep their attention focused on the visual stimuli, but without any explicit reading requirement. For Chinese children and the older French children, a supplementary category (tools) was added but not included in the present analyses as this category was not presented in the original study (Monzalvo et al., 2012) and thus missing in most of the French children reanalyzed here.
 
@@ -222,7 +588,7 @@ fMRI Acquisition Parameters fMRI data were acquired on two Siemens 3T scanners u
 
 Prior to the scanning session, all children underwent a training session in a mock scanner. This training session aimed to help children become familiar with the MRI environment and task instructions, and to teach them to keep their head motionless during the scan.
 
-## Data pre-processing and statistical analyses
+### Data pre-processing and statistical analyses
 
 Preprocessing and analyses of the data were done using SPM12. The French and Chinese data were processed together. The functional images were first corrected for differences in slice-acquisition time and realigned to the first volume in the scanning session. ArtRepair toolbox was used to detect and repair bad volumes (Mazaika et al., 2007). Two criteria were used to detect bad volumes: (1) 1.5% variation in the global average BOLD signal from scan to scan and (2) 0.5 frame-wise displacement, reflecting the sum of all head movements from scan to scan (calculated from realignment parameters). The damaged volumes that exceeded these criteria were replaced by linear interpolation of previous and subsequent images or by nearest-neighbor interpolation when several consecutive images were affected.
 
@@ -230,9 +596,9 @@ For the anatomical image, we first checked for scanner artefacts and gross anato
 
 The pre-processed functional images were then submitted to a first level statistical analysis: in each subject, a general linear model was built in which a hemodynamic response function and its time derivative were convolved with block onsets for each category and the six motion parameters entered as regressors of non-interest.
 
-## Data-driven Analyses
+### Data-driven Analyses
 
-## Whole-brain analyses
+#### Whole-brain analyses
 
 We implemented a mixed-model analysis of variance (ANOVA) with language (French vs. Chinese) and reading skill (typical vs. poor readers) as between-subject factors, and Category (Words vs. Faces vs. Houses) as a within-subject factor. We recovered category-specific activations through the contrasts [category X > mean of the other two categories] across the whole group (N = 96). We report effects at a threshold of p<0.001 at the voxel-level and p<0.05 family wise error (FWE) corrected for multiple comparisons at the cluster-level (denoted pFWE_corr).
 
@@ -240,11 +606,11 @@ To deepen our analyses of the effect of reading performances, we studied the cor
 
 For these analyses, we displayed in the corresponding figures the results in each of the four groups (N = 24) or in each language (N = 48) at a threshold of p<0.001 at the voxel-level, non-corrected at the cluster-level to provide the reader with the full information on the activation patterns in each group.
 
-## Mask-restricted analyses
+#### Mask-restricted analyses
 
 To maximize the sensitivity to differences between groups, we focused our analyses on a restricted mask of voxels corresponding to the word-specific activation across all children determined by the [Words > Faces + Houses] contrast (p<0.001 voxel-level and pFWE < 0.05 cluster-level, size ~ 7497 mm3). We performed an ANOVA with language (French vs. Chinese) and reading skill (typical vs. poor readers) as between-subject factors. To provide readers with full information, we report these results at the threshold of voxel-level p<0.001, non-corrected at the cluster-level.
 
-## Literature-driven Analyses
+### Literature-driven Analyses
 
 As the number of comparisons at the voxel-level might decrease the sensitivity to small differences between typical and poor readers, we focused on Regions of Interest (ROI), which have been repeatedly shown in the literature to show a reduced activation in dyslexics. We first searched published meta-analyses of imaging studies reporting brain regions showing functional dysfunction in dyslexics in alphabetic languages (Linkersdörfer et al., 2012; Maisog et al., 2008; Richlan et al., 2009; Richlan et al., 2011). To create representative ROIs for these dyslexia-related regions, we collected all of the foci reported in each meta-analysis corresponding to the anatomical location under consideration (see Supplementary file 4), and averaged the reported coordinates (x, y, z respectively) to create a 6-mm-radius sphere of the averaged locus as a ROI (see Figure 3).
 
@@ -254,13 +620,13 @@ We extracted the mean contrast-weighted beta values for the words vs. fixation c
 
 Because some of our analyses evaluated the null hypothesis of no difference between two factors, we also performed Bayesian analyses on the same data, with the same factors as the ANOVA above, using the JASP software (https://jasp-stats.org). These analyses yield a Bayes Factor (denoted BF10), which estimates the likelihood ratio of the positive (1) over the null (0) hypothesis. A BF10 of 0.20, for instance, indicates a five-times (1/0.20) greater likelihood in favor of the null hypothesis and is equivalent to the inverse notation BF01 = 5.
 
-## Individual analyses
+### Individual analyses
 
-## Peak analyses
+#### Peak analyses
 
 We further investigated whether children poor with reading might have a greater inter-individual variability in brain localization, which could putatively explain a lower activation at the group level in each voxel. We focused on those regions showing significant main effects of reading ability or language in the group activation analysis (i.e. left FFG, MFG, precentral, STS, pSTG, and SPL) and searched for active voxels (Words > fixation) in each participant in a sphere (radius = 12 mm) centered on the whole group peak coordinates in the [Words > Faces + Houses] contrast. We eliminated voxels with t-value inferior to one, and then selected the 10 strongest activated voxels within the search area. We first derived the individual center of mass of these voxels by averaging their x, y, z coordinates and calculated the distance between this center of mass and the group peak coordinates in each child. Second, we averaged the beta values measured in these voxels to obtain the maximal activation in each child. We then separately entered distance and activation into language × reading ability frequentist and Bayesian ANOVAs to investigate whether poor readers differed in peak location and activation intensity compared to typically developing children. We performed a similar analysis on the face responses in the bilateral fusiform face areas (FFA) to investigate whether poor readers had greater inter-individual variability in the location and intensity of face activations.
 
-## Multivariate Pattern Analysis (MVPA)
+#### Multivariate Pattern Analysis (MVPA)
 
 Our final investigation of putative differences related to language or to reading ability was based on MVPA analysis. We focused on the regions showing significant main effects of reading ability or language in the univariate activation analysis and drew a 9 mm radius sphere centered on the averaged coordinates of foci reported in meta-analyses, and then intersected each sphere with the mask [Words > Faces + Houses] described above to obtain a fair representation of the group activations in the mask. All the voxels within the mask were included for MVPA analysis.
 
@@ -270,7 +636,7 @@ We performed a similar analysis in the bilateral face fusiform areas to investig
 
 Note that six French typical readers and three French poor readers from Altarelli et al., 2013 completed only one run of the visual task, so that they were not included in this MVPA analysis. For those children who had four runs, we used their first two runs to calculate the correlation coefficients between runs. The FDR multiple-comparison method was again used as a correction for the multiple ROIs tested.
 
-## Anterior-to-Posterior organization of the ventral temporal cortex
+### Anterior-to-Posterior organization of the ventral temporal cortex
 
 In the following analyses, we focused on the ventral occipito-temporal region, because it is the site of one of the major changes related to reading: the emergence of a specific response to words in literates and also the site of the most reproducible hypoactivation in dyslexics compared to typical readers in alphabetic writing (Richlan et al., 2011). Because activations to words, faces, and houses display a gradient both along the anterior-to-posterior (i.e. ‘y’) axis and lateral-to-medial (i.e. ‘x’) axis (Baker et al., 2007; Scherf et al., 2007), we averaged the activity in successive spheres along the anterior-posterior axis at the ‘x’ privileged position for each visual category and compared typical and poor readers in Chinese and French participants. The spheres had a 6-mm-radius and were regularly spaced with the center positioned at y = −73, −64, −55, −46, −37, −28 respectively, x and z positions being kept constant (z = −16). The x position was based on the peak of the category-specific activation (category > others) in all participants, i.e. for Words: x = ±48; Faces: x = ±39; and Houses: x = ±30 (see Table 2).
 

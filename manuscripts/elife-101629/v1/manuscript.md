@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03b657f73 Department of Nutrition, Faculty of Human Sciences, Kio University Nara Japan
-2. https://ror.org/035t8zc32 Department of Oral Anatomy and Developmental Biology, Osaka University Graduate School of Dentistry Osaka Japan
-3. https://ror.org/04wn7wc95 Department of Anatomy and Neuroscience, Graduate School of Medical Sciences, Nagoya City University Nagoya Japan
+1. Department of Nutrition, Faculty of Human Sciences, Kio University Nara Japan ([ROR:03b657f73](https://ror.org/03b657f73))
+2. Department of Oral Anatomy and Developmental Biology, Osaka University Graduate School of Dentistry Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+3. Department of Anatomy and Neuroscience, Graduate School of Medical Sciences, Nagoya City University Nagoya Japan ([ROR:04wn7wc95](https://ror.org/04wn7wc95))
 
 † Corresponding author
 
@@ -36,41 +36,57 @@ Neuroscientific studies (Maruyama et al., 2012; Yamamoto and Mizuta, 2022; Yamam
 
 ## Results
 
-## Two-bottle preference tests in rats
+### Two-bottle preference tests in rats
 
-## Additive effects of ornithine at different concentrations
+#### Additive effects of ornithine at different concentrations
 
 To investigate whether ornithine has a favorable taste, we conducted a preference test by comparing distilled water (DW) with aqueous solutions containing various ornithine concentrations (Figure 1A). Two-way analysis of variance (ANOVA; solution × concentration) revealed a significant main effect of solution [F(1, 50)=33.93, p<0.0001], no main effect of concentration [F(4, 50)=0.145, P>0.05], and a significant solution-concentration interaction [F(4, 50)=4.070, p<0.01]. Post hoc Bonferroni tests showed that the intake of 10 and 30 mM ornithine was significantly greater (p<0.01) than that of plain DW, indicating a preference for higher concentrations of ornithine. Next, we examined the additive effect of ornithine at the same concentrations on the preference for 0.03 M monosodium glutamate (MSG; Figure 1B). Two-way ANOVA revealed a significant main effect of solution [F(1, 50)=175.41, p<0.0001] and a solution-concentration interaction [F(4, 50)=8.371, p<0.0001], with no main effect of concentration [F(4, 50)=0.899, p>0.05]. Subsequent Bonferroni analyses indicated that the addition of ornithine at concentrations ranging from 1 to 30 mM resulted in significantly greater intake (p<0.001) than that for MSG alone. Based on these results, we used 1 mM ornithine to examine its additive effects in subsequent experiments.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/101629/elife-101629-fig1-v1.jpg)
 
-**Figure 1.:** (A) Water intake with and without five Orn concentrations. (B) Intake of 0.03 M MSG with and without Orn. Each value represents the mean ± SEM; n=6. **p<0.01, ***p<0.001 (Bonferroni correction). MSG, monosodium glutamate; SEM, standard error of the mean.Figure 1—source data 1.
+**Figure 1.:** (A) Water intake with and without five Orn concentrations. (B) Intake of 0.03 M MSG with and without Orn. Each value represents the mean ± SEM; n=6. **p<0.01, ***p<0.001 (Bonferroni correction). MSG, monosodium glutamate; SEM, standard error of the mean.
 
-## Additive effects of 1 mM ornithine on intake of different tastants
+#### Additive effects of 1 mM ornithine on intake of different tastants
 
 We examined the intake of eight taste solutions at four concentrations, both alone and in combination with 1 mM ornithine (Figure 2). The eight solutions were sweet (sucrose), salty (NaCl), sour (citric acid), bitter (quinine hydrochloride [QHCl]) umami (MSG, monopotassium glutamate [MPG], or inosine monophosphate [IMP]), and fatty (Intralipos). Bonferroni’s multiple-comparison analysis revealed that MSG and MPG at all four concentrations were significantly preferred when combined with ornithine (p<0.05, 0.01, or 0.001; Figure 2B and C). This was also observed for IMP (Figure 2A), Intralipos (Figure 2D), and sucrose (Figure 2E) at two concentrations, as well as NaCl (Figure 2F) at one concentration. However, the rats showed no difference in preference for citric acid regardless of the addition of 1 mM ornithine. In contrast, QHCl with ornithine was preferred at three of the four concentrations, suggesting that the aversive taste of QHCl was attenuated by ornithine. Notably, the effects of ornithine differed among the umami solutions; ornithine more effectively increased the preference for MSG and MPG than for IMP.
 
-## Additive effects of ornithine in brief-exposure tests with and without antagonists
+![Figure 2.](https://cdn.elifesciences.org/articles/101629/elife-101629-fig2-v1.jpg)
+
+**Figure 2.:** Fluid intake with and without Orn is shown for IMP (A), MSG (B), MPG (C), Intralipos (D), sucrose (E), NaCl (F), citric acid (G), and QHCl (H). Each value represents the mean ± SEM; n=8. *p<0.05, **p<0.01, ***p<0.001 (Bonferroni correction). IMP, inosine monophosphate; MSG, monosodium glutamate; MPG, monopotassium phosphate; QHCl, quinine hydrochloride; SEM, standard error of the mean.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101629/elife-101629-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The addition of three concentrations of Orn (1, 3, and 10 mM, labeled T-1, T-2, and T-3, respectively) increased these three attributes along with palatability in a dose-dependent manner. All values for the kokumi attributes and palatability were set to 0 for the control miso soup without Orn (C). Each value represents the mean ± SEM; n=22. *p<0.05, **p<0.01, ***p<0.001 (paired t-test, two-tailed, comparison between control and test stimuli). SEM, standard error of the mean.
+
+#### Additive effects of ornithine in brief-exposure tests with and without antagonists
 
 To determine whether the enhancement of preference induced by ornithine was caused by an intra-oral event rather than by post-oral consequences, a brief-exposure (or short-term, 10 minute) two-bottle preference test was conducted. We confirmed that the intake of DW with 1 mM ornithine did not differ from that of plain DW (p>0.05; Figure 3A). However, the intake of 0.03 M MSG was significantly increased (p<0.01) by the addition of 1 mM ornithine (Figure 3B). This preference was maintained in the presence of 60 µM calindol, a GPRC6A antagonist (Figure 3C), but disappeared at a calindol concentration of 300 µM (Figure 3D). Similarly, the GPRC6A antagonist epigallocatechin gallate (EGCG) had no effect at a concentration of 30 μM (Figure 3E) but abolished the ornithine-enhanced preference at 100 μM (Figure 3F).
 
-## Additive effects of ornithine after chorda tympani transection
+![Figure 3.](https://cdn.elifesciences.org/articles/101629/elife-101629-fig3-v1.jpg)
+
+**Figure 3.:** (A) Intake of water with and without Orn. (B) Intake of 0.03 M MSG with and without Orn. (C) Intake of MSG with and without Orn in 60 µM calindol. (D) Intake of MSG with and without Orn in 300 µM calindol. (E) Intake of MSG with and without Orn in 30 µM EGCG. (F) Intake of MSG with and without Orn in 100 µM EGCG. Each value represents the mean ± SEM; n=7. *p<0.05, **p<0.01 (paired t-test, two-tailed). MSG, monosodium glutamate; EGCG, epigallocatechin gallate; GPRC6A, G-protein-coupled receptor family C group 6 subtype A; SEM, standard error of the mean.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101629/elife-101629-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Intake of water (W) with and without gallate (G). (B) Intake of 0.03 M MSG (M) with and without gallate. (C) Intake of MSG and EGCG (E) with and without gallate. (D) Intake of 0.01 mM QHCl (Q) with and without gallate. (E) Intake of QHCl and EGCG with and without gallate. Each value represents the mean ± SEM; n=8. *p<0.05, **p<0.01 (paired t-test, two-tailed). These results show that gallate itself is not palatable; however, it increases preference for MSG and QHCl, and a GPRC6A antagonist eliminates these preferences. GPRC6A, G-protein-coupled receptor family C group 6 subtype A; EGCG, epigallocatechin gallate; MSG, monosodium glutamate; QHCl, quinine hydrochloride; SEM, standard error of the mean.
+
+#### Additive effects of ornithine after chorda tympani transection
 
 To determine how taste information from the anterior part of the tongue influences ornithine-induced taste preferences, we compared intake during the long-term two-bottle preference test before and after transection of the chorda tympani (CT). As shown in Figure 4A and C, the combination of 1 mM ornithine and 0.03 M MSG was significantly more ingested than MSG alone (p<0.01, paired t-test, two-tailed) before both sham and experimental treatments. The same preference was observed following the sham-control operation (Figure 4B). However, in the experimental group, CT transection abolished the increased favorability induced by ornithine supplementation (Figure 4D).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/101629/elife-101629-fig4-v1.jpg)
 
-**Figure 4.:** Fluid intake before (A, C) and after (B, D) the operations. Each value represents the mean ± SEM; n=4. **p<0.01 (paired t-test, two-tailed). MSG, monosodium glutamate; SEM, standard error of the mean.Figure 4—source data 1.
+**Figure 4.:** Fluid intake before (A, C) and after (B, D) the operations. Each value represents the mean ± SEM; n=4. **p<0.01 (paired t-test, two-tailed). MSG, monosodium glutamate; SEM, standard error of the mean.
 
-## Taste-nerve recording in rats
+### Taste-nerve recording in rats
 
 The aqueous solutions of ornithine used in the behavioral experiments induced small CT responses, which increased in a dose-dependent manner, as shown by sample recordings (Figure 5A) and a graphical representation of mean response magnitudes (Figure 5D). One-way ANOVA revealed significant differences among the responses at different ornithine concentrations [F(4, 15)=14.660, p<0.001]. Additionally, the response to 30 mM ornithine survived the Bonferroni correction for multiple testing, which indicated that this response was significantly higher (p<0.01) than those at lower concentrations. The response to 1 mM ornithine, which was used in the behavioral experiments, was negligible compared to the standard response to NH4Cl. However, when 1 mM ornithine was added to 0.03 M MSG, the response increased significantly (p<0.05) compared with that for plain MSG (Figure 5E). A similar additive effect of ornithine was observed when the solution was prepared with 0.1 mM amiloride, a sodium-channel blocker (Figure 5B and E), suggesting that glutamate, rather than sodium ions, was responsible for this increased response. One-way ANOVA revealed significant differences among the relative response values shown in Figure 5E [F(3, 16)=9.174, p<0.001]. Finally, we examined the effect of calindol on the increased response to MSG with ornithine. As shown by the sample recordings (Figure 5C) and graphical representation (Figure 5F), the increased response to MSG with the addition of ornithine (p<0.01) was no longer observed when 300 µM calindol was added. One-way ANOVA revealed significant differences among these responses visualized in Figure 5F [F(2, 9)=4.690, p<0.05]. EGCG (100 µM), another GPRC6A antagonist, showed effects similar to those of calindol (data not shown).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/101629/elife-101629-fig5-v1.jpg)
 
-**Figure 5.:** (A) Nerve responses to five concentrations of ornithine (Orn). (B) Nerve responses to 0.03 M MSG with and without 1 mM Orn in water and in 0.01 mM amiloride (sodium-channel blocker). (C) Nerve responses to MSG, MSG with Orn, and MSG with Orn in 300 µM calindol. (D–F) Graphical representations of the mean magnitudes of CT responses corresponding to (A), (B), and (C), respectively. Each value represents the mean ± SEM normalized to the response to 0.1 M NH4Cl = 1.0; n=4 or 5. Note the different scaling of the ordinate in (D) and (E). *p<0.05, **p<0.01, ***p<0.001 (D and F, Bonferroni correction; E, two-tailed paired t-test). MSG, monosodium glutamate; SEM, standard error of the mean.Figure 5—source data 1.
+**Figure 5.:** (A) Nerve responses to five concentrations of ornithine (Orn). (B) Nerve responses to 0.03 M MSG with and without 1 mM Orn in water and in 0.01 mM amiloride (sodium-channel blocker). (C) Nerve responses to MSG, MSG with Orn, and MSG with Orn in 300 µM calindol. (D–F) Graphical representations of the mean magnitudes of CT responses corresponding to (A), (B), and (C), respectively. Each value represents the mean ± SEM normalized to the response to 0.1 M NH4Cl = 1.0; n=4 or 5. Note the different scaling of the ordinate in (D) and (E). *p<0.05, **p<0.01, ***p<0.001 (D and F, Bonferroni correction; E, two-tailed paired t-test). MSG, monosodium glutamate; SEM, standard error of the mean.
 
-## Immunohistochemical localization of GPRC6A in rat taste cells
+### Immunohistochemical localization of GPRC6A in rat taste cells
 
 Immunohistochemical analyses were performed to determine whether GPRC6A was expressed in the taste cells of rat fungiform, foliate, and circumvallate taste buds. In the fungiform papillae, a small number of spindle-shaped taste cells exhibited GPRC6A-immunoreactivity (Figure 6A). In the foliate and circumvallate papillae, GPRC6A-immunopositive taste cells were barely detectable, and GPRC6A-expressing cells were likely to constitute less than 1% of the total taste cell population in the respective taste papillae (Figure 6B and C). These results demonstrated that GPRC6A was preferentially located in subpopulations of fungiform taste cells in the rat.
 
@@ -79,6 +95,14 @@ Immunohistochemical analyses were performed to determine whether GPRC6A was expr
 **Figure 6.:** (A) A significant number of spindle-shaped taste cells exhibited intense GPRC6A immunoreactivity in the fungiform papillae. (B, C) GPRC6A-immunopositive taste cells were barely detectable in the foliate (B) or circumvallate (C) papillae. Left panels show GPRC6A in red, middle panels show Nomarski images of the left panels, and right panels show merged images of respective left and middle panels. Scale bars, 50 µm. GPRC6A, G-protein-coupled receptor family C group 6 subtype A.
 
 Since rat taste cells comprise several cell types, we examined the colocalization of GPRC6A and cell type-specific markers in the fungiform papillae. A small subpopulation of GPRC6A-immunopositive cells was found to be immunoreactive for IP3R3, a marker for the majority of the type II cell population (Figure 7A). Approximately 11% of GPRC6A-positive cells overlapped with IP3R3 (9 double-positive cells/80 GPRC6A-positive cells), while approximately 8.3% of IP3R3-positive cells expressed GPRC6A (9 double-positive/109 IP3R3-positive cells). In contrast, GPRC6A-positive cells were unlikely to colocalize with a-gustducin, another marker for a subset of type II cells, in single taste cells (0 double-positive cell/93 GPRC6A-positive cells) (Figure 7B). Regarding type III cell markers, GPRC6A-positive cells were unlikely to colocalize with 5-hydroxytryptamine (serotonin, 5-HT) in single taste cells (0 double-positive cell/75 GPRC6A-positive cells) (Figure 7C). As synaptosomal-associated protein 25 kDa (SNAP-25) labels not only type III cells but also the dense network of intragemmal nerve fibers, which are nerve fibers that extend directly into the structure of the taste bud to transmit taste signals from taste cells to the brain (Tizzano et al., 2015), it is difficult to detect SNAP-25-expressing taste cells surrounded by intense SNAP-25-immunoreactivity of the nerve fibers. However, as far as we investigated, no SNAP-25-expressing cells were found among GPRC6A-positive cells examined (0 double-positive cell/104 GPRC6A-positive cells) (Figure 7D). These results indicate that GPRC6A is preferentially localized in a subpopulation of IP3R3-expressing taste cells in rat fungiform papillae and suggest that GPRC6A exerts taste-modifying activity in at least some type II cells in the papillae.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/101629/elife-101629-fig7-v1.jpg)
+
+**Figure 7.:** (A) Some but not all GPRC6A-immunopositive cells exhibited immunoreactivity for IP3R3, a marker of most type II cells. White arrow indicates GPRC6A/IP3R3 double-positive taste cell. (B) α-Gustducin, another marker of a subset of type II cells, was unlikely to colocalize with GPRC6A in single taste cells. (C, D) Neither 5-HT (C) nor SNAP25 (D), specific markers of type III taste cells, were likely to colocalize with GPRC6A in single taste cells. Scale bars, 10 µm. GPRC6A, G-protein-coupled receptor family C group 6 subtype A; IP3R3, inositol 1,4,5-trisphosphate receptor type 3; 5-HT, 5-hydroxytryptamine; SNAP25, synaptosomal-associated protein 25 kDa.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/101629/elife-101629-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** GPRC6A and CaSR are expressed in distinct subpopulations of fungiform taste cells. The right panel shows the Nomarski image of the examined tissue section. Scale bar, 10 µm. GPRC6A, G-protein-coupled receptor family C group 6 subtype A; CaSR, calcium-sensing receptor.
 
 ## Discussion
 
@@ -98,11 +122,11 @@ In conclusion, when kokumi substances are present in complex foods containing um
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Eight-week-old male Wistar rats were obtained from Japan SLC (Shizuoka, Japan). The rats were individually housed in home cages within a temperature- (25°C) and humidity-controlled (60%) room. A 12:12 hour light/dark cycle was followed, with lights on at 6:00 am and experiments conducted during the light cycle. The animals had free access to food (CE-2 Rodent Diet; CLEA Japan, Inc, Tokyo, Japan) and tap water, except during the brief tests described below in which food access was partially restricted. All animal care and experimental procedures were performed in accordance with the National Institutes of Health guidelines. Experimental protocols were approved by the Institutional Animal Care and Use Committee of Kio University (protocol no. H28-01).
 
-## Behavioral experiment: Two-bottle preference tests
+### Behavioral experiment: Two-bottle preference tests
 
 Each rat was trained to drink DW from a stainless-steel spout connected to a plastic bottle. After a 1-week training period, short- and long-term two-bottle preference tests were conducted, in which two bottles were simultaneously presented to each cage. Each stainless-steel spout, designed to minimize dripping with an internal ball, had an inner diameter of 6 mm and was separated from the center of each spout by 5 cm. Each bottle contained the same taste stimulus (or DW), although one of the two was mixed with ornithine (L-ornithine; Kanto Chemical, Tokyo, Japan).
 
@@ -116,26 +140,26 @@ A total of 97 rats was divided into two groups of 6, three groups of 7, and eigh
 
 When examining the range of ornithine and tastant concentrations, we presented the solutions to the animals starting with the lowest concentration. If two different tastants were tested in one group, as in the first of the brief-exposure tests and the long-term test for citric acid and QHCl, the order of presentation was counterbalanced. Statistical analyses were performed within groups or between taste stimuli with and without ornithine, but not across different groups or taste stimuli.
 
-## Transection of the CT nerve
+### Transection of the CT nerve
 
 Eight naïve rats were randomly divided into transection and sham-operation groups (four rats each). They underwent the long-term two-bottle preference test as described above, with the bottles containing 0.03 M MSG with and without 1 mM ornithine. Thereafter, the animals were anesthetized via intraperitoneal injection of a combination anesthetic (0.3 mg/kg medetomidine, 4.0 mg/kg midazolam, and 5.0 mg/kg butorphanol). In the transection group, the ear ossicles through which the CT innervates the taste buds on the anterior part of the tongue were removed bilaterally, whereas in the sham-operation group, the operation was stopped immediately before the removal of ear ossicles. Postoperatively, the rats were injected with penicillin G sodium (100 mg/kg) to prevent infection. After 6 days of recovery, the same rats were subjected to the long-term two-bottle preference test using the same taste stimuli. The mean group preferences were then compared. After the experiment, transection was confirmed by microscopic verification of the loss of taste buds on the tongue.
 
-## Taste-nerve recordings
+### Taste-nerve recordings
 
 Five naïve rats were deeply anesthetized as described above. Each rat was tracheotomized and secured in a head-holder. The left CT nerve was exposed using a lateral approach (Yamamoto and Kawamura, 1972), excised as it exited the tympanic bulla, and dissected from the underlying tissue. The nerve was placed onto a platinum-wire recording electrode (0.1 mm diameter), while an indifferent electrode was placed in contact with a nearby exposed tissue. The responses were processed using a bandpass filter with cutoff frequencies ranging from 40 Hz to 3 kHz and visualized using an oscilloscope (VC11; Nihon Kohden, Tokyo, Japan). The responses were fed to a digitally controlled summator (Walsh and Halpern, 1974). The number of discharges was summed over 500 ms epochs using a spike counter (DSE-345; DIA Medical System, Tokyo, Japan) to derive summated responses. The data were stored on a PC, and the total spikes over the entire 30-second stimulus period were counted using the PowerLab system (PowerLab/4SP; ADInstruments, Bella Vista, NSW, Australia) for quantitative analyses.
 
 Each taste stimulus (3 mL) was applied to the anterior dorsal tongue for 30 seconds, followed by rinsing with DW for at least 60 seconds. The response to each stimulus was expressed relative to the magnitude of responses to 0.1 M NH4Cl. The analyses of CT results were based on the average values from at least three repeated trials in individual animals.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Male Wistar rats (8–12 weeks old) were deeply anesthetized with isoflurane and transcardially perfused with saline followed by 2% paraformaldehyde in 0.1 M phosphate buffer. To label serotonin-accumulating type III taste cells (Yee et al., 2001), rats were injected with 5-hydroxy-l-tryptophan at 80 mg/kg body weight 1 hour before anesthesia. Their tongues were dissected out, soaked in 20% sucrose/0.01 M phosphate-buffered saline (PBS) overnight at 4°C, embedded in optimal-cutting-temperature compound (Sakura Finetek, Tokyo, Japan), and cut into 20 µm thick sections using a cryostat. The sections were immersed in 0.01 M PBS containing 0.2% Triton X-100 and incubated overnight at 4°C with rabbit anti-GPRC6A antibody (1:50; orb385435; Biorbyt, Cambridge, UK) in combination with either goat anti-IP3R3 (1:100; NB100-2545; Novus, Centennial, CO, USA), anti-α-gustducin (1:500; LSB4942; LSBio, Seattle, WA, USA), anti-5-HT (1:100; ab66047; Abcam, Cambridge, UK), anti-SNAP25 antibody (1:100; ab31281; Abcam), or mouse anti-CaSR antibody (1:100; ab19347; Abcam) diluted in the same Triton X-100-containing solution. This was followed by Alexa Fluor 594-conjugated anti-rabbit immunoglobulin G (IgG; 1:500; A-21207; Thermo Fisher Scientific, Waltham, MA, USA) and 488-conjugated anti-goat IgG secondary antibodies (1:500; A-11055; Thermo Fisher Scientific). After washing, the sections were cover-slipped with Fluoromount (Diagnostic BioSystems, Pleasanton, CA, USA) and imaged using a Nikon A1Rs confocal laser scanning microscope (Nikon, Tokyo, Japan). The specificity of the anti-GPRC6A antibody was verified as previously described (Mizuta et al., 2021) (data not shown). IP3R3 is a marker protein in most type II taste cell populations (Sekerková et al., 2005). Further, α-gustducin, 5-HT, and SNAP25 are markers of a subset of types II, III, and III taste cells, respectively (Mizuta et al., 2021; Yee et al., 2001; Sekerková et al., 2005).
 
-## Human sensory testing
+### Human sensory testing
 
 We recruited 22 participants (19 women and 3 men, aged 21–28 years) from Kio University who were not affiliated with our laboratory, including students and staff members. All participants passed a screening test based on taste sensitivity. According to the responses obtained from a pre-experimental questionnaire, we confirmed that none of the participants had any sensory abnormalities, eating disorders, or mental disorders, or were taking any medications that may potentially affect their sense of taste. All participants were instructed not to eat or drink anything for 1 hour prior to the start of the experiment. We provided them with a detailed explanation of the experimental procedures, including safety measures and personal data protection, without revealing the specific goals of the study. Thereafter, each participant provided written informed consent. This study was approved by the Ethics Committee of Kio University (approval no. H30-10), and all experiments adhered to the principles of the Declaration of Helsinki.
 
 Miso soup with 0.7% salt was prepared by dissolving commercial miso paste (Tokujyo; Takeya Miso Co., Suwa, Japan) in hot tap water (control soup). Subsequently, three test soups were prepared by dissolving 1, 3, or 10 mM L-ornithine in the control soup. An aliquot of 30 mL of each test soup was randomly served in a paper cup along with a cup of control soup. Intensity of taste, mouthfulness, and persistence of taste were evaluated according to Ohsu et al., 2010. Intensity was expressed as the increased taste intensity 5 seconds after tasting. Persistence was defined as lingering taste intensity 20 seconds after tasting. Finally, mouthfulness was described as the reinforcement of taste sensations throughout the mouth, not just on the tongue. The participants evaluated the three attributes of the test soups on a 5-point rating scale ranging from –2 (apparently suppressed) to +2 (apparently strong). Additionally, the palatability of each sample was evaluated on a similar scale ranging from –2 (apparently bad) to +2 (apparently good). All the values for the three kokumi attributes and palatability were set to 0 for the control soup.
 
-## Statistical analyses
+### Statistical analyses
 
 Data are presented as the mean ± standard error of the mean (SEM). A Shapiro–Wilk test was performed to confirm that the data were normally distributed. Student’s t-tests (paired, two-tailed) were used to assess statistical differences between two groups. Additionally, to analyze more than three groups, we used a one-way ANOVA or repeated-measures two-way ANOVA with post hoc Bonferroni tests to account for multiple comparisons. All statistical analyses were conducted in SPSS Statistics Version 25.0 (IBM, Armonk, NY, USA). Statistical significance was set at p<0.05, except when the Bonferroni correction was used.

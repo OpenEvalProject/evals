@@ -11,12 +11,12 @@
 
 ### Affiliations
 
-1. https://ror.org/02w0trx84 Department of Earth Sciences, Montana State University Bozeman United States
-2. https://ror.org/0000pmw59 Key Laboratory of Vertebrate Evolution and Human Origins of Chinese Academy of Sciences, Institute of Vertebrate Paleontology and Paleoanthropology, Chinese Academy of Sciences Beijing China
-3. https://ror.org/047426m28 Department of Evolution, Ecology, and Behavior, School of Integrative Biology, University of Illinois Urbana-Champaign Urbana United States
-4. https://ror.org/00hj54h04 Department of Geological Sciences, University of Texas at Austin Austin United States
-5. https://ror.org/04h9pn542 School of Earth and Environmental Sciences, Seoul National University Seoul Republic of Korea
-6. https://ror.org/00hx57361 Department of Geosciences, Princeton University Princeton United States
+1. Department of Earth Sciences, Montana State University Bozeman United States ([ROR:02w0trx84](https://ror.org/02w0trx84))
+2. Key Laboratory of Vertebrate Evolution and Human Origins of Chinese Academy of Sciences, Institute of Vertebrate Paleontology and Paleoanthropology, Chinese Academy of Sciences Beijing China ([ROR:0000pmw59](https://ror.org/0000pmw59))
+3. Department of Evolution, Ecology, and Behavior, School of Integrative Biology, University of Illinois Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))
+4. Department of Geological Sciences, University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+5. School of Earth and Environmental Sciences, Seoul National University Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
+6. Department of Geosciences, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
 
 † Corresponding author
 
@@ -42,13 +42,21 @@ Here we: (i) document the microstructure and crystallography of all major clades
 
 ## Results
 
-## Description for EBSD maps
+### Description for EBSD maps
 
-## Ostrich (Struthio camelus)
+#### Ostrich (Struthio camelus)
 
 The overall microstructure and crystallography are peculiar compared to other palaeognath eggshells (Figure 1; Zelenitsky and Modesto, 2003; Grellet-Tinner, 2006). The entire thickness of the eggshell is composed of prismatic calcite grains (Zelenitsky and Modesto, 2003; Choi et al., 2019). The mammillary layer (ML) is composed of wedge-like calcite grains and these grains usually extend to the outer edge of the eggshell. Low-angle (<10°; green lines in Figure 1C) grain boundaries (GB) are widespread in the eggshell, but they are concentrated at the outer part of ML (the existence and portion of ML is clearer in polarized light microscopic and scanning electron microscopic images; Dauphin et al., 2006). This feature has not been reported in any other avian and non-avian maniraptoran eggshell. Unlike most other avian eggshells that have rugged GB in squamatic zone (SqZ) and linear GB in external zone (EZ) (Grellet-Tinner et al., 2012; Grellet-Tinner et al., 2016; Grellet-Tinner et al., 2017; Choi et al., 2019), the GB in the SqZ of ostrich eggshell are seemingly linear. This makes it hard to identify the boundaries between the ML and SqZ, and between the SqZ and EZ in inverse pole figure (IPF) Y and Euler maps (Zelenitsky and Modesto, 2003; Mikhailov, 2014). However, EBSD provides highly-magnified images such that weakly developed rugged GB in the SqZ and slightly more linear GB in the EZ are observed (Figure 1—figure supplement 1). Thus, we support the view that there is a SqZ/EZ boundary near the outer surface of eggshell (Mikhailov, 2014). The peculiar prismatic microstructure of ostrich eggshell might have been derived from weakened development of squamatic ultrastructure and ‘splaying’ calcite growth.
 
-## Rhea (Rhea sp.)
+![Figure 1.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig1-v1.jpg)
+
+**Figure 1.:** (A) IPF, (B) Euler, (C) GB, and (D) AR mappings (see Figures 13—15 for legends). The dashed lines in the maps mark the boundary between the ML and SqZ; SqZ and EZ. Scale bars equal 1000 µm. (E) A misorientation histogram. The numbers in x- and y-axis represent degree between the two selected grains (either adjacent [blue; neighbour-pair method] or random [red; random-pair method]; see also Figure 16) and frequency, respectively. The numbers at the upper right corner mean the number of selected grains in each selection method. The explanation herein is applicable to the Figures 2—12, Appendix 3—figures 1–5, and Appendix 4—figures 1–4.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Ostrich, (B) Prismatoolithus levis, (C) Triprismatoolithus stephensi, and (D) thick moa eggshell. In P. levis and T. stephensi (B,C), GB becomes slightly more linear in outer parts of eggshell, which have been suggested as EZ (Varricchio and Jackson, 2004; Jackson and Varricchio, 2010). In ostrich and thick moa eggshell (A,D), the difference in linearity is much more subtle. Scale bars equal 250 µm (A); 100 µm (B–D).
+
+#### Rhea (Rhea sp.)
 
 Rhea possesses microstructure and crystallography common to most palaeognath eggshells (Figure 2). The ML is comparatively thick and composed of wedge-like calcite. The boundary between the ML and SqZ is clear and can be identified by the contrasting microstructures. The SqZ is characterized by ‘splaying’ of the grain shape. There is crystallographic continuity between the SqZ and EZ, but calcite crystals in the EZ are usually prismatic in shape. Note that the overall microstructure is nearly the same as that of Sankofa pyrenaica and Pseudogeckoolithus, which are Late Cretaceous ootaxa (fossil egg-types) from Europe (López-Martínez and Vicens, 2012; Choi et al., 2020). Low-angle GB are mostly concentrated in the SqZ. In ML and EZ, GB are linear, while in SqZ, GB are highly rugged. This trait can be observed even in simple secondary electron SEM images of rhea eggshells (Choi et al., 2019).
 
@@ -56,15 +64,23 @@ Rhea possesses microstructure and crystallography common to most palaeognath egg
 
 **Figure 2.:** Scale bars equal 500 µm.
 
-## Emu (Dromaius novaehollandiae) and cassowary (Casuarius casuarius)
+#### Emu (Dromaius novaehollandiae) and cassowary (Casuarius casuarius)
 
 Microstructure and crystallography of both genera are nearly the same, thus, they are described together (Figures 3 and 4). The major differences are that cassowary eggshell has a higher density of calcite grains in their ML and SqZ and presence of EZ is less clear. The ML of both genera has wedge-like calcite. The boundary between the ML and SqZ is clear. SqZ is characterized by ‘splaying’ of the grain shape. The SqZ is changed into EZ in outer region of compact part of the eggshell, which is characterized by different GB conditions. The ‘resistant zone’ (sensu Zelenitsky and Modesto, 2003; see Figure 3—figure supplement 1) of the eggshell shows crystallographic continuity with EZ. Therefore, we suggest that the ‘resistant zone’ be interpreted as a modified EZ that acquired porosity (Figure 3—figure supplement 1). This view is different from that of Zelenitsky and Modesto, 2003 who regarded ‘resistant zone’ as a modified SqZ. Additionally, Grellet-Tinner, 2006 interpreted this ‘resistant zone’ as a ‘third layer’ (=EZ in our terminology), which is partly in agreement with our view. In contrast, we suggest that the outer part of the ‘second layer’ (=SqZ in our term) in Grellet-Tinner, 2006 is, in fact, part of EZ. Another unique feature of cassowary and emu eggshells is their ‘granular layer’ (sensu Mikhailov, 1997a; Figure 3—figure supplement 1). Although this layer was consistently reported in earlier studies (Mikhailov, 1997a; Zelenitsky and Modesto, 2003; Grellet-Tinner, 2006), it was usually treated as a layer simply overlying the porous EZ. However, this layer has a deep triangular ‘root’ to the middle of eggshell (Lawver and Boyd, 2018; Choi et al., 2020; note that the granular layer begins in SqZ in cassowary eggshell but in EZ in emu eggshell in our Figures 3 and 4, but it was not clade-specific and variable in both eggshells). Note that except for ‘resistant zone’ and granular layer, the overall microstructure of both emu and cassowary eggshells is very similar to those of Pseudogeckoolithus and Sankofa (López-Martínez and Vicens, 2012; Choi et al., 2020). Dissimilar to the rhea eggshell, the low-angle GB are not concentrated in SqZ, but usually present in granular layer (both outer granular part and its ‘root’). In ML, GB are linear. The GB becomes highly rugged in the SqZ. The GB becomes linear again before they reach ‘resistant zone’, but this pattern is more prominent in emu eggshells. In the outer granular layer, GB are usually linear and lie parallel to each other.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig3-v1.jpg)
+
+**Figure 3.:** Note that deposition of granular layer (GL) begins in the EZ. Scale bars equal 500 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A,C) Mikhailov, 1997a and Grellet-Tinner, 2006 suggested four layers. (B) Zelenitsky and Modesto, 2003 suggested that compact calcified part of the eggshell is composed of SqZ and Resistant Zone is an extension of SqZ. In their view, ornamentation is a homologous structure to EZ that is usually present in all avian eggshell (except for passerine; Mikhailov, 1997a). (D) Lawver and Boyd, 2018 pointed out that ornamentation has its ‘root’ inside compact calcified eggshell. It was confirmed in Choi et al., 2020 and this study. In addition, based on the GB condition of EZ, which is characterized by linear line, Choi et al., 2020 further suggested that outer compact calcified part of the eggshell is EZ, not SqZ as suggested by Zelenitsky and Modesto, 2003. In our view, therefore, ornamentation is not homologous to EZ of most avian eggshells, but is an autapomorphic character of MRCA of emu and cassowary.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig4-v1.jpg)
 
 **Figure 4.:** Note that deposition of granular layer (GL) begins in the middle of SqZ. Scale bars equal 500 µm.
 
-## Kiwi (Apteryx mantelli)
+#### Kiwi (Apteryx mantelli)
 
 In ML, grains are mostly wedge-like but in some parts, the width of the grains is very narrow so that needle-like (acicular) in shape (Figure 5; Zelenitsky and Modesto, 2003; but see Grellet-Tinner, 2006). The contour of ML is usually round. The boundary between the ML and SqZ is clear due to the contrasting grain shapes but the boundary can be extended into the middle of eggshell. The EZ crystals are massive and comparatively thick. Low-angle GB are mostly situated at the ML but low-angle GB are not abundant unlike other palaeognath eggshells. In ML and EZ, GB are linear. In SqZ, the GB are highly rugged.
 
@@ -72,7 +88,7 @@ In ML, grains are mostly wedge-like but in some parts, the width of the grains i
 
 **Figure 5.:** Scale bars equal 100 µm.
 
-## Elephant bird (Aepyornithidae)
+#### Elephant bird (Aepyornithidae)
 
 As the largest known avian egg, it has the thickest eggshell (3.8 mm in average) (Figure 6; Schönwetter, 1960, Ar et al., 1979; Juang et al., 2017). Its microstructure and crystallography are closely similar to those of rhea eggshell despite the difference in thickness (Figure 2). The ML is composed of wedge-like calcite. The boundary between the ML and SqZ is easily identifiable due to the microstructural difference. However, extent of ‘splaying’ in SqZ is far less than that of rhea eggshell and more similar to a ‘cryptoprismatic’ SqZ reported from non-avian maniraptoran eggshell Macroelongatoolithus (Jin et al., 2007). The grains in the EZ becomes weakly prismatic. Low-angle GB are mostly situated at SqZ as in rhea eggshell. In ML and EZ, GB are linear. In the SqZ, GB are rugged.
 
@@ -80,45 +96,53 @@ As the largest known avian egg, it has the thickest eggshell (3.8 mm in average)
 
 **Figure 6.:** Scale bars equal 1000 µm.
 
-## Tinamous (Eudromia elegans and Nothoprocta perdicaria)
+#### Tinamous (Eudromia elegans and Nothoprocta perdicaria)
 
 The eggshells of elegant-crested tinamou (Eudromia elegans) and Chilean tinamou (Nothoprocta perdicaria) are described together due to their similarity (Figures 7 and 8). The ML is characterized by clear needle-like calcite grains (Zelenitsky and Modesto, 2003; Grellet-Tinner and Dyke, 2005; Grellet-Tinner, 2006), which is reminiscent of that of non-avian maniraptoran eggshells (especially Elongatoolithus and Reticuloolithus) (Figure 7—figure supplement 1). The overall contour of ML is usually round (Grellet-Tinner, 2006). The boundary between the ML and SqZ is clear. In SqZ, the grain shape is highly irregular in elegant-crested tinamou eggshell, but Chilean tinamou eggshell has ‘splaying’ structure. In EZ, the grains are massive. Low-angle GB mostly exist in ML. In ML and EZ, GB are linear but in the SqZ, GB are highly rugged.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig7-v1.jpg)
+
+**Figure 7.:** Scale bars equal 100 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** When ML is confined to certain region of eggshell (A–D) AR mappings effectively show the needle-like calcite grains, which is a useful character state for fossil eggshell classification. However, when the calcite grain in ML is not limited within the ML, even wedge-like ML can have high AR (E,F). In these cases, measuring the density of calcite grains in the ML can provide a quantitative approach to diagnose needle-like versus wedge-like states in ML. Scale bars equal 250 µm (A,F); 100 µm (B,E); 50 µm (D); 25 µm (C).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig8-v1.jpg)
 
 **Figure 8.:** Scale bars equal 100 µm.
 
-## Thin (possibly Pachyornis geranoides) and middle (possibly Euryapteryx curtus) thickness moa eggshells (Dinornithiformes)
+#### Thin (possibly Pachyornis geranoides) and middle (possibly Euryapteryx curtus) thickness moa eggshells (Dinornithiformes)
 
 These samples are most likely eggshells of Pachyornis geranoides and Euryapteryx curtus, respectively, although they may belong to a single species (see Appendix 1; Gill, 2022). The overall microstructure and crystallography of both eggshells are similar to those of rhea eggshell (Figures 9 and 10). The ML is composed of wedge-like calcite grains. The boundary between the ML and SqZ is clear. The SqZ is characterized by the ‘splaying’ of the grain shape. However, the EZ is not as prominent as that of rhea eggshell although GB is comparatively linear in the middle thickness moa eggshell (Figure 10). The grains in the EZ are irregular in shape, and this may be the reason why EZ of moa eggshell was not reported until the early 2000s notwithstanding the fact that moa eggshells had been described since the late 1800s (Zelenitsky et al., 2002). The GB features for thin and middle thickness moa eggshells are similar to that of rhea eggshell. The only difference is that the GB linearity at the EZ of thin and middle thickness moa eggshells is much weaker than that of rhea eggshell.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig9-v1.jpg)
 
-**Figure 9.:** Pachyornis).Scale bars equal 500 µm.
+**Figure 9.:** Scale bars equal 500 µm.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig10-v1.jpg)
 
-**Figure 10.:** Euryapteryx).Scale bars equal 500 µm.
+**Figure 10.:** Scale bars equal 500 µm.
 
-## Thick moa (Dinornis novaezealandiae) eggshells (Dinornithiformes)
+#### Thick moa (Dinornis novaezealandiae) eggshells (Dinornithiformes)
 
 This specimen is an unequivocal eggshell of Dinornis novaezealandiae (see Appendix 1; Gill, 2022). The microstructure is similar to that of ostrich eggshell in that long prismatic shell units occupy the whole thickness of the eggshell although the shell units are not as narrow as those of ostrich eggshell (Figure 11). The ML is wedge-like. It is worth mentioning that the outline of ML is round (Figure 7—figure supplement 1). The boundary between the ML and SqZ, SqZ and EZ are not clear because the ‘splaying’ of the SqZ is very weak as in ostrich eggshell. However, as in the case of ostrich eggshell, the GB condition provides an alternative way for identification of SqZ and EZ (Figure 1—figure supplement 1). Low-angle GB are not confined to a certain layer, but widespread in the eggshell. Similar to ostrich eggshell, GB are mostly linear and lack ‘splaying’ microstructure and highly rugged GB in SqZ. However, in magnified view, one can observe slight ruggedness in SqZ (Figure 1—figure supplement 1).
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig11-v1.jpg)
 
-**Figure 11.:** Dinornis).Scale bars equal 500 µm.
+**Figure 11.:** Scale bars equal 500 µm.
 
-## Lithornis
+### Lithornis
 
 Paleocene Lithornis eggshell has many features in common with tinamou eggshells (Figure 12; Houde, 1988; Grellet-Tinner and Dyke, 2005). The ML of Lithornis celetius eggshell is composed of needle-like calcite and overall shape of ML is weakly round in some parts of the eggshell. The SqZ shows clear ‘splaying’ structure and the crystals of EZ is massive. Lithornis eggshell is more similar to the Chilean tinamou eggshell (Figure 8) compared to the elegant-crested tinamou eggshell (Figure 7). Low-angle GB is mostly present in ML. ML and EZ are composed of linear GB, while SqZ is composed of rugged GB. The prominent slash patterns inside the SqZ are calcite twinning, which are diagenetically deformed calcite structure only found in fossil eggshells (i.e. abiogenic in origin; Choi et al., 2021). See also Grellet-Tinner and Dyke, 2005 for SEM micrographs of Lithornis vulturinus eggshell that has wedge-like ML.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig12-v1.jpg)
 
-**Figure 12.:** Lithornis eggshell (see also Houde, 1988; Grellet-Tinner and Dyke, 2005).Scale bars equal 250 µm.
+**Figure 12.:** Scale bars equal 250 µm.
 
 See also Appendix 3 and 4 for selected neognath and non-avian maniraptoran dinosaur eggshells for comparison.
 
-## Overview for inverse pole figure mapping
+### Overview for inverse pole figure mapping
 
 Morphologically, palaeognath eggshells had been loosely categorized into three morphotypes (Zelenitsky and Modesto, 2003; Grellet-Tinner and Dyke, 2005; Grellet-Tinner, 2006). Ostrich-style (i.e. ostrich and thick moa eggshell) consists of wedge-like ML and prismatic shell units with near-absence of ‘splaying’ SqZ. Rhea-style (i.e. rhea, emu, cassowary, elephant bird, and thin & middle thickness moa eggshells) has been characterized by wedge-like ML and splaying SqZ. Finally, the tinamou-style (i.e. tinamou, kiwi, and Lithornis eggshells) is represented by needle-like ML, splaying SqZ, and massive EZ (but see below). Noticeable qualitative features (Figure 13) of palaeognath eggshells are: (i) calcite grains have strong vertical c-axis alignment (hence, mostly reddish in IPF Y mappings), which may be homologous to that of Mesozoic maniraptoran eggshells (Moreno-Azanza et al., 2013; Choi et al., 2019; Choi et al., 2020; Choi et al., 2022); (ii) ML is mostly composed of wedge-like calcite but needle-like calcite is present or dominant in tinamou-style eggshells (Zelenitsky and Modesto, 2003; Grellet-Tinner and Dyke, 2005; Grellet-Tinner, 2006; Figure 7—figure supplement 1); (iii) tinamou-style eggshells have round (or barrel-shaped) ML (Grellet-Tinner, 2006); thick moa eggshell appears to have round ML (Figure 1—figure supplement 1); (iv) ML and SqZ are easily differentiated due to grain shape differences except for in ostrich-style eggshells where the boundary between the two layers is unclear; (v) calcite in SqZ are mostly ‘splaying’ (sensu Panhéleux et al., 1999). However, calcite in SqZ of ostrich-style eggshells are nearly prismatic; (vi) EZ exists in all palaeognath eggshells; (vii) cassowary and emu eggshells have peculiar ornamentation on the outer surface ( = ‘granular layer’ sensu Mikhailov, 1997a) and very porous outer EZ (see Figure 3—figure supplement 1).
 
@@ -130,13 +154,25 @@ Compared to palaeognath eggshells, neognath eggshells are characterized by: (i) 
 
 Non-avian maniraptoran eggshells (see Appendix 4 for selected examples) have strong vertical c-axis alignment as in palaeognath eggshells (Moreno-Azanza et al., 2013; Choi and Lee, 2019; Choi et al., 2019; Choi et al., 2020; Choi et al., 2022). Shell unit structure of oviraptorosaur eggshells is similar to that of rhea-style palaeognath eggshells except for needle-like ML and absence of EZ, whereas shell unit structure of troodontid eggshell is strikingly similar to ostrich-style palaeognath eggshell. See Choi et al., 2019 for further information.
 
-## Grain boundary mapping and actual size & thickness of egg
+### Grain boundary mapping and actual size & thickness of egg
 
 The main features of palaeognath eggshells are: (i) ostrich-style and rhea-style eggshells have extensive low-angle GB (lower than 20 degrees; green and blue lines in Figure 14) although the positions of high densities of low-angle GB vary in each clade. In ostrich eggshell, low-angle GB are concentrated at the outer part of ML. In rhea, elephant bird, and thin moa eggshells, low-angle GB are mostly concentrated at the SqZ. In emu and cassowary eggshells, low-angle GB are not widespread in SqZ, but abundant in the granular layer. In the thick moa eggshell, low-angle GB is not confined to certain positions; (ii) High-angle GB are dominant in tinamou-style eggshells and low-angle GB are mostly present in ML as in neognath eggshells; (iii) Ruggedness of GB changes abruptly at the boundary between SqZ and EZ in rhea, emu, kiwi, elephant bird, tinamou, and Lithornis eggshells although cassowary and thin moa eggshells show less prominent change. The ruggedness of GB is very slightly changed in ostrich-style eggshells, which have prismatic shell units.
 
+![Figure 14.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig14-v1.jpg)
+
+**Figure 14.:** The green, blue, and purple lines in GB mapping denote the angle range between the calcite grains. All eggshell maps (including IPF mapping of chicken eggshell for comparison) are drawn to scale; note a scale bar at the upper left corner. The silhouettes of palaeognath are drawn to scale (note a human next to elephant bird and a chicken at the lower right corner). Egg shape and size are drawn to scale (Hauber et al., 2014; Stoddard et al., 2017). Two recently extinct lineages are marked by daggers and the extinct Lithorinithidae by a dashed branch. Landing symbols denote potential independent losses of flight (Mitchell et al., 2014; see also Sackton et al., 2019) and flying bird silhouettes denote volant taxa. Sky blue lines show microstructural and crystallographic similarities among tinamou-style eggshells that is attributable to homoplasy. Red lines mean the homoplastic similarities between ostrich-style eggshells. Purple lines represent potential homologies of rhea-style eggshells.
+
+![Figure 14—figure supplement 1.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig14-figsupp1-v1.jpg)
+
+**Figure 14—figure supplement 1.:** Note that ellipticity of palaeognath eggs are not confined to certain range. Kiwi egg has maximum ellipticity and ostrich egg has minimum ellipticity. However, in case of asymmetry, palaeognath eggs have low asymmetry compared to neognath eggs. Coloured ranges mark interquartile ranges of both indices. Modified from Stoddard et al., 2017.
+
+![Figure 14—figure supplement 2.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig14-figsupp2-v1.jpg)
+
+**Figure 14—figure supplement 2.:** In this case, rhea-style eggshells might have been independently evolved at least four times.
+
 In general, large eggs have thick eggshells and small eggs have thin eggshells (Figure 14; Ar et al., 1979; Juang et al., 2017). A notable outlier to this trend is kiwi eggs. Although kiwi eggs are large (especially compared to their body size; Abourachid et al., 2019), their eggshell is thin (Vieco-Galvez et al., 2021), comparable to that of smaller tinamou eggshell. Besides, the ellipticity and asymmetry of diverse avian eggs were investigated by Stoddard et al., 2017. We reused their data to present the egg shape indices of palaeognath eggs (Figure 14—figure supplement 1). The result shows that, compared to neognath eggs, palaeognath eggs are characterized by low asymmetry but ellipticity distribution is not very different from that of neognath eggs, consistent with the result of Deeming, 2018.
 
-## Calcite grain aspect ratio
+### Calcite grain aspect ratio
 
 The main characteristics of palaeognath eggshells are (Figure 15): (i) rhea, emu, cassowary, kiwi, tinamou, thin moa, and Lithornis eggshells have relatively low aspect ratio (AR); (ii) ostrich, elephant bird, and thick moa eggshells show high AR. Compared to other palaeognath eggshells, these three eggshells have highly positively skewed AR distribution as well. Notably, these three eggshells are also the thickest among the palaeognath eggshells (Figure 14).
 
@@ -148,19 +184,19 @@ Neognath eggshells analysed in this study do not show high AR (Appendix 3). Pris
 
 Appendix 5 and Figure 7—figure supplement 1 discuss how AR could be used to diagnose ‘needle-like’ calcite grains in ML.
 
-## Misorientation distribution
+### Misorientation distribution
 
 Choi et al., 2019 showed that low-angle (<20 degrees) are dominant in the misorientation distribution (MD) of ostrich and rhea eggshells whereas high-angle (>20 degrees) are dominant in MD of neognath eggshells analysed in that study. In this study, MD information of palaeognath eggshell is extended to all clades of Palaeognathae. Ostrich and rhea eggshells show low-angle dominant MD under neighbour-pair method (hereafter Type 1 distribution sensu Choi et al., 2019; Figure 16). This pattern is also present in elephant bird, thin, and middle thickness moa eggshell. Emu, cassowary, and thick moa eggshells show slightly different MD: low-angle is less well-dominant compared to the eggshells of the ostrich, rhea, elephant bird, and thin and middle thickness moa eggshells. In contrast, eggshells of kiwi, tinamou, and Lithornis have more high-angle dominant MD. The MD patterns of palaeognath eggshells are more diverse than previously postulated by Choi et al., 2019.
 
 ![Figure 16.](https://cdn.elifesciences.org/articles/81092/elife-81092-fig16-v1.jpg)
 
-**Figure 16.:** Figure 13).The vertical bars and numbers in the histograms mean the average point of neighbour-pair misorientation (blue) and its value, respectively. The numbers at the nodes represent the ancestral states for mean of neighbour-pair MD (note that only one MD of tinamou eggshell was shown for brevity). Up and down arrows mark the changing ancestral state trends of each node compared to the nearest ancestral states.
+**Figure 16.:** The vertical bars and numbers in the histograms mean the average point of neighbour-pair misorientation (blue) and its value, respectively. The numbers at the nodes represent the ancestral states for mean of neighbour-pair MD (note that only one MD of tinamou eggshell was shown for brevity). Up and down arrows mark the changing ancestral state trends of each node compared to the nearest ancestral states.
 
 Neognath eggshells used in this study showed high-angle (>20 degrees) dominant MD, consistent with the result of Choi et al., 2019 (hereafter, Type 2 distribution sensu Choi et al., 2019; Figure 16). As far as we know, there is no neognath eggshell that has Type 1 distribution. Even though microstructure of common murre eggshell is similar to that of rhea-style palaeognath eggshell, it does not have Type 1 distribution (Appendix 3—figure 4).
 
 As discussed in Choi et al., 2019, Type 1 and 2 distributions already existed in Cretaceous non-avian maniraptoran eggshells (Figure 16; see also Moreno-Azanza et al., 2013; Choi and Lee, 2019; Choi et al., 2020; Choi et al., 2022).
 
-## Ancestral state reconstructions
+### Ancestral state reconstructions
 
 Ancestral states for mean of neighbour-pair MD are very similar for both phylogenetic trees (Yonezawa et al., 2017; Kimball et al., 2019), with a relatively constant ancestral value (~32°) for several major palaeognath clades (Palaeognathae, Notopalaeognathae, Novaeratitae – clade names sensu Sangster et al., 2022; Figure 16). A conspicuous increase is observed for both Casuariiformes (34.7° [Kimball] or 35.3° [Yonezawa]) and Tinamiformes (35.5° [Kimball] or 37.2° [Yonezawa]), while Dinornithiformes show a slight decrease (31.2° [Kimball] or 31.4° [Yonezawa]). The Apterygiformes-Aepyornithiformes clade shows only a minor increase (33.3° for both trees), reflecting the divergence between its two sampled members (high value [40.4°] for Apteryx, low value [29.5°] for Aepyornis). In Novaeratitae and Dinocrypturi (i.e. moa +tinamou), the lowest values are observed in elephant bird and moa, potentially reflecting a low-angle trend associated with gigantism within that clade. The fact that high values are found for both small (tinamous, kiwi) and large (emu, cassowary) taxa suggests that the reverse is not true, although a larger sample size would be necessary to test that hypothesis. The ostrich shows a very low value (20.1°) compared to other Palaeognathae, suggesting a distinctive crystalline structure within its eggshell. This low value in the ostrich, however, does not affect the ancestral state at the Palaeognathae node in either tree – likely due to the inclusion of Lithornis, the earliest-diverging taxon in our sample, which shows a misorientation value of 34.0° closer to that of the recovered ancestral state for Palaeognathae (~32°).
 
@@ -168,17 +204,17 @@ Ancestral states for AR on the tree from Yonezawa et al., 2017 do not exhibit an
 
 ## Discussion
 
-## Evolution of the palaeognath eggshells through time
+### Evolution of the palaeognath eggshells through time
 
 The phylogeny of Palaeognathae has experienced a set of revolutionary changes since 2008 (compare Livezey and Zusi, 2007 and Yonezawa et al., 2017) and it provides an unexplored chance to trace the evolution of microstructure and crystallography of modern dinosaur eggshells. We interpret our results following the phylogeny of Yonezawa et al., 2017, which provides estimated speciation timelines. But it should be noted that Cloutier et al., 2019 and Sackton et al., 2019 report an alternate phylogeny, which are characterized by a switching of the positions of rhea and (tinamou +moa). See Appendix 6 for interpretation based on the phylogeny of Cloutier et al., 2019 and Sackton et al., 2019.
 
 We note that our interpretation is mainly based on the phylogeny of Yonezawa et al., 2017, but that might not be the final consensus on this issue (e.g. Sackton et al., 2019). Hence, the interpretation of palaeognath eggshell evolution should depend on the ongoing advancements of palaeognath phylogeny and should be updated accordingly (e.g. agreement on the topology of tree, revised timelines of evolution, inclusion of new fossil taxa data).
 
-## Implications to palaeontology
+### Implications to palaeontology
 
 Palaeognath eggshells provide useful insights into palaeontology (Figures 13, 15 and 16) as a modern analogue.
 
-## Future research suggestions
+### Future research suggestions
 
 Eggshells should be strong enough to protect the embryos during incubation, yet, fragile enough for late-stage embryos to hatch. Thus, mechanical strength of eggshell is an important factor for the reproductive biology of every oviparous amniote. Experimental compression or simulation studies have shown that eggshell thickness has a positive correlation with the strength of eggshells (Ar et al., 1979; Hahn et al., 2017; Juang et al., 2017; López et al., 2021), and this relationship may even provide a way to infer contact incubation in Palaeognathae (including extinct taxa; Huynen et al., 2010; Yen et al., 2021) as well as laying process of Palaeognathae (Sellés et al., 2019). However, López et al., 2021 showed that microstructures, which was usually not considered in earlier studies such as finite element method, of avian eggshell can further contribute to the strength of the eggshells. We propose that testing the influence of different microstructures (e.g. rhea-style versus ostrich-style) in eggshells with similar thicknesses may provide further insights for the functional evolution of palaeognath eggshells (Figure 14). For example, Hahn et al., 2017 showed that the average tensile failure stress of eggshell decreases with increasing egg size (and, typically, increased eggshell thickness) (but see also Chiang et al., 2021 for elastic modulus). The high aspect ratio of thick palaeognath eggshell (Figure 15) may facilitate this relationship and compensate in fragility for the thick eggshells for late-stage embryos because think eggs are hard to break from inside.
 
@@ -190,7 +226,7 @@ Zooarchaeology (or anthrozoology) is an additional serendipitous field that can 
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 Eggshells of all major clades of modern Palaeognathae were analysed (at least ten species including some that became extinct in Holocene): ostrich (Struthio camelus), rhea (Rhea sp.), emu (Dromaius novaehollandiae), cassowary (Casuarius casuarius), kiwi (Apteryx mantelli), elephant bird (Aepyornithidae), at least two species of moa (Dinornis novaezealandiae and either Euryapteryx curtus or Pachyornis geranoides; see Appendix 1; Gill, 2010; Huynen et al., 2010), and two species of tinamou (Eudromia elegans and Nothoprocta perdicaria). The materials represent the personal collection of YNL (ostrich, rhea, emu, elephant bird, and Chilean tinamou [N. perdicaria]); personal collection of MEH (cassowary); sourced from the Rainbow Springs Kiwi Sanctuary in Rotorua, New Zealand (kiwi); sourced from the Bronx Zoo, New York (elegant-crested tinamou [E. elegans]); and sourced from the Auckland War Memorial Museum in Auckland, New Zealand (moa). An eggshell of Paleocene palaeognath Lithornis celetius was analysed to acquire the data of fossil palaeognath eggshell. This material was excavated from the Fort Union Formation, Montana (Weaver et al., 2022), and its polarized light microscopic and scanning electron microscopic micrographs were presented in Houde, 1988 and Grellet-Tinner and Dyke, 2005, respectively. The material (YPM 16961) was provided by Yale Peabody Museum of Natural History (New Haven, CT, USA).
 
@@ -198,13 +234,13 @@ Eggshells of five species of Neognathae, of which EBSD results were not availabl
 
 Four Late Cretaceous non-avian maniraptoran dinosaur eggshells were analysed to provide broad overview of eggshell evolution (Figures 13, 15 and 16; Appendix 4). Three oospecies (parataxonomic classification of fossil eggshell) are presented in the main text: Prismatoolithus levis, Elongatoolithus oosp., and Macroelongatoolithus xixiaensis (or M. carlylei sensu Simon et al., 2018). Prismatoolithus levis is an ootaxon of Troodon formosus (Troodontidae; Varricchio et al., 2002) and the materials are from an egg that contains an embryo (MOR 246; Horner and Weishampel, 1988; Varricchio et al., 2002; Choi et al., 2022). Elongatoolithus (MPC-D 100/1047) and Macroelongatoolithus (SNUVP 201801) are oviraptorosaur eggshells (Norell et al., 1994; Choi et al., 2019; Bi et al., 2021; Xing et al., 2022) and Macroelongatoolithus was laid by a giant oviraptorosaur (Pu et al., 2017). We also presented EBSD image of Triprismatoolithus stephensi (ES 101; Appendix 4—figure 4; Figure 1—figure supplement 1) to present additional prismatic microstructure of the Late Cretaceous eggshell. The egg-layer of T. stephensi is unknown but suggested to be laid by a theropod dinosaur (Jackson and Varricchio, 2010; Agnolin et al., 2012). We further propose maniraptoran affinity of T. stephensi based on the existence of a SqZ, a diagnostic character of maniraptoran eggshells (Choi et al., 2019).
 
-## EBSD
+### EBSD
 
 The methodology of EBSD analysis followed established protocols of Moreno-Azanza et al., 2013 and Choi et al., 2019 except for a newly adopted aspect ratio analysis. See Appendix 2 for details. The data were presented in inverse pole figure, Euler, grain boundary mappings, and misorientation distribution histograms. We had taken more than three maps (to assess the reproducibility of our observations) and misorientation distribution from a single eggshell, and results from the most well-prepared parts of the eggshell were presented.
 
 In this study, aspect ratio mapping (Koblischka-Veneva et al., 2010) was introduced, which was successfully used to analyse the grain shape of brood parasitic and host eggshells (López et al., 2021). In this method, a calcite grain is approximated as an ellipse. Based on the ratio of long to short axes of the ellipse, the grain is assigned to a colour level. This way, the aspect ratio of calcite grains can be quantitatively presented. We measured aspect ratio of all calcite grains in the maps. However, grains that are out of 50th percentile in area are presented in aspect ratio histograms. This step was necessary because smaller grains usually have a rounder shape and are quantitatively dominant compared to larger and more representative grains.
 
-## Data analysis
+### Data analysis
 
 All statistical analyses were performed in R 4.1.2 (R Development Core Team, 2022) on each of two distinct calibrated phylogenies for Palaeognathae, taken respectively from Yonezawa et al., 2017 and Kimball et al., 2019. Log-transformed mean values were compiled for misorientation and aspect ratio, and used to perform ancestral state reconstructions on both phylogenetic trees for each trait – that is four distinct reconstructions (n=12 for all analyses). We assigned the three moa eggshell types to the species Dinornis novaezealandiae, Euryapteryx curtus, and Pachyornis geranoides, respectively (Appendix 1). Trees from Yonezawa et al., 2017 and Kimball et al., 2019 did not sample the three moa species in our dataset, but did sample their respective sister groups among moa (Baker et al., 2005; Bunce et al., 2009; Huynen and Lambert, 2014), allowing us to use their respective calibrations for each of them without altering the topology of either tree. Prior to each reconstruction, we estimated phylogenetic signal using Pagel’s lambda (Pagel, 1999) in ‘phytools’ (Revell, 2012) to estimate how strongly the trait of interest follows a Brownian Motion model on the phylogeny of interest. In addition, we fitted different evolutionary models to the data and estimated their goodness of fit based on Akaike Information Criterion corrected for small sample sizes (AICc – Burnham and Anderson, 2004), using fitContinuous in ‘geiger’ (Pennell et al., 2014a) and modSel.geiger in ‘windex’ (Arbuckle and Minter, 2015), respectively. The fitted models (see e.g. Mitchell et al., 2017) include Brownian Motion (BM), Ornstein-Uhlenbeck (OU, single-optimum), Early Burst, Linear Trend, Lambda, and White Noise (i.e. a non-phylogenetic model). We did not test for more complex models (i.e. OU with multiple optima and/or selective regimes), as these are prone to high type I error for small sample sizes (Cooper et al., 2016).
 

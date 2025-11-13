@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.34779.001 Generalization during aversive decision-making allows us to avoid a broad range of potential threats following experience with a limited set of exemplars. However, over-generalization, resulting in excessive and inappropriate avoidance, has been implicated in a variety of psychological disorders. Here, we use reinforcement learning modelling to dissect out different contributions to the generalization of instrumental avoidance in two groups of human volunteers ( N = 26, N = 482). We found that generalization of avoidance could be parsed into perceptual and value-based processes, and further, that value-based generalization could be subdivided into that relating to aversive and neutral feedback − with corresponding circuits including primary sensory cortex, anterior insula, amygdala and ventromedial prefrontal cortex. Further, generalization from aversive, but not neutral, feedback was associated with self-reported anxiety and intrusive thoughts. These results reveal a set of distinct mechanisms that mediate generalization in avoidance learning, and show how specific individual differences within them can yield anxiety.
+Generalization during aversive decision-making allows us to avoid a broad range of potential threats following experience with a limited set of exemplars. However, over-generalization, resulting in excessive and inappropriate avoidance, has been implicated in a variety of psychological disorders. Here, we use reinforcement learning modelling to dissect out different contributions to the generalization of instrumental avoidance in two groups of human volunteers (N = 26, N = 482). We found that generalization of avoidance could be parsed into perceptual and value-based processes, and further, that value-based generalization could be subdivided into that relating to aversive and neutral feedback − with corresponding circuits including primary sensory cortex, anterior insula, amygdala and ventromedial prefrontal cortex. Further, generalization from aversive, but not neutral, feedback was associated with self-reported anxiety and intrusive thoughts. These results reveal a set of distinct mechanisms that mediate generalization in avoidance learning, and show how specific individual differences within them can yield anxiety.
 
 ## Introduction
 
@@ -35,13 +35,29 @@ Here, we address three key questions: first, is there good evidence for generali
 
 The overall study design is summarised in Figure 1a. In both groups of participants, generalization of instrumental responding was tested using a costly avoidance paradigm (Figure 1c). Briefly, participants were instructed that they would see a series of flower-like shapes on their screen, some of which were ‘safe’, and some of which were ‘dangerous’. If they saw a dangerous shape and made no response, there was a high chance that they would receive a painful electric shock (fMRI sample), or lose 10 cents from their cash stake (online sample using Amazon Mechanical Turk, AMT). If they saw a safe shape, they would never receive a shock (or lose money) on that trial. In order to escape the possibility of a painful shock (or monetary loss) when they thought a dangerous shape had been presented, participants were told they could press the ‘escape’ button on their keypad. Participants were instructed that the aversive outcome would never occur on a trial when they had pressed the ‘escape’ button – but – that, importantly, pressing the button was associated with a small cost. Specifically, each time they pressed the escape button, it would be registered on a counter at the bottom of their screen. At the end of each block of the task, they would receive additional painful shocks (or lose additional cash) depending on how many times they had pressed the button during that block (one extra shock or 10 cent loss per every five button presses). The optimal strategy (in order to minimise the amount of pain received or money lost) would therefore be to press the button if they thought they saw a dangerous shape, but not press if they thought a safe shape was on the screen.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/34779/elife-34779-fig1-v2.jpg)
+
+**Figure 1.:** (a) Study design and protocol for the two participant groups; fMRI, laboratory and functional imaging sample; AMT, Amazon Mechanical Turk (web-based) sample. (b) Delayed-punished perceptual task, used to determine 75% reliably perceptually distinguishable generalization stimuli (GSs) on in individual basis for the generalization of instrumental avoidance task (c) in the fMRI sample (in the AMT sample, GSs were generated based on mean perceptual acuity determined in pilot testing). (d) Summary of behaviour on the generalization task in fMRI and (e) AMT samples. ISI, inter-stimulus interval; ITI, inter-trial interval; CS+, conditioned stimulus with pain or loss outcome, CS-, conditioned stimulus with neutral outcome (no pain or loss). Error bars represent SD. *p=0.006, **p<0.001, paired sample t-tests.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34779/elife-34779-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) fMRI, (b) AMT, samples (Spearman’s ρ = 0.692, 0.641, respectively).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/34779/elife-34779-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) fMRI, (b) AMT, samples. ns, p>0.3. ^p=0.19, **p<0.001, repeated-measures ANOVA for differences in mean avoidance across generalization stimuli (GSs). (c) fRMI, (d) AMT, samples. Error bars represent standard error.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/34779/elife-34779-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Changes in perceptual acuity as measured by the delayed-punished perceptual task, before and after conditioning (performance of the generalization of instrumental avoidance task), for each participant in the fMRI group. θ, change in stimulus ‘spikiness’ parameter ρ required to identify a shape as different on 75% of trials. (b) Results of Bayesian model comparison carried out to determine the best model of participants’ perceptual performance during the generalization of instrumental avoidance task. Model 1, a perceptual-only generalization model in which perceptual discriminability of GSs is fixed at 75%. Model 2, a perceptual-only generalization model in which perceptual discriminability of GSs is fixed at the value determined by the post-conditioning acuity test. Model 3, a perceptual-only generalization model in which GS discriminability changes linearly from the pre to post-conditioning derived value, over the course of the task. Model frequency, proportion of participants for whom a model was the best model; exceedance probability, probability that the model in question is the most frequently utilized in the population.
+
 Crucially, on a small proportion of trials, the presented shapes were generalization stimuli (GSs). GSs were individually generated using precise estimates of perceptual ability (as measured on the first study session for the fMRI group) to be 75% reliably perceptually distinguishable from the task stimuli associated with aversive outcomes (CS+ s). (Due to time constraints and lack of control over testing environment, GS were generated based on average perceptual acuity from a pilot study in the online group.) The perceptual task (Figure 1b) was custom designed based on the recommendations of a recent review (Struyf et al., 2015). Specifically, in order to provide a fair test of perceptual performance during the generalization task, stimuli were not instantly comparable (in order to ensure that GSs would be reliably discriminable in an absolute sense, when presented in isolation; [Slivinske and Hall, 1960]), and testing occurred in the same emotional context (i.e. under threat of painful shock).
 
 Importantly, the task stimulus array (in terms of arrangement of CS+ and CS- stimuli in perceptual space) was specifically chosen to probe asymmetries in generalization behaviour that result from value-based mechanisms – see Figure 1b. One such potential asymmetry is a characteristic shift in peak responding from the CS+ to surrounding GSs, away from the direction of the CS- in perceptual space (known as ‘peak shift’), that has been proposed to result from the interaction of excitatory and inhibitory generalization gradients around CS+ and CS- stimuli following Pavlovian conditioning (Hanson, 1959). Crucially, the asymmetric array used here allowed us to compare responses to CS+ GSs both near and far in perceptual space from the CS- – enabling detection of gradient interaction effects such as peak shift in instrumental avoidance, and allowing the separation of oppositely signed generalization gradients around CS+ and CS- stimuli.
 
 We conducted a series of analyses on data from our two cohorts in order to address our key questions. First, we used reinforcement learning modelling to investigate whether there was evidence of value-based generalization in avoidance behaviour. Next, we used univariate fMRI data analysis to identify brain regions that encoded modelled internal quantities specific to value-based generalization processes. We then took a multivariate approach to investigate how the distributed representation of generalization stimuli in these regions changed over the course of the task, and how this related to individual differences in generalization. Finally, we used data from our online questionnaire battery to determine whether specific elements of avoidance generalization were related self-reported psychological symptoms.
 
-## Evidence for generalization in avoidance behaviour
+### Evidence for generalization in avoidance behaviour
 
 For both groups of participants, the frequency of avoidance in response to generalization stimuli was intermediate to that evoked by CS- and CS+ stimuli (all p<0.0001, paired-sample t tests; fMRI: GS vs CS- t25 = 7.57, mean difference = 0.18 [95%CI 0.14–0.24], GS vs CS+ t25 = −17.6, mean difference = −0.60 [95%CI −0.67 to −0.54]; AMT: GS vs CS- t481 = 27.0, mean difference = 0.35 [95%CI 0.33 – 0.38], GS vs CS+ t481 = −26.6, mean difference = −0.20 [95%CI −0.19 to −0.21]; Figure 1d,e). Despite never having been associated with the aversive outcome, participants also rated GSs significantly higher than CS- (but lower than CS+) stimuli on post-task pain/loss expectancy scales (all p<0.0001, paired-sample t tests; fMRI: GS vs CS- t25 = 5.69, mean difference = 24.1 [95%CI 15–33], GS vs CS+ t25 = −8.14, mean difference = -52 [95% CI −39 to −66]; AMT: GS vs CS- t481 = 29.4, mean difference = 41.7 [95%CI 40.0–44.6], GS vs CS+ t481 = −16.5, mean different = -18 [95% CI −16.0 to −20.3], on visual analogue scales ranging 0–100; [Figure 1d,e]).
 
@@ -61,17 +77,17 @@ For both fMRI and AMT data, this model provided a good account of avoidance deci
 
 Importantly, only a model including additional value-based generalization mechanisms can generate asymmetries in avoidance behaviour across pairs of generalization stimuli (peak shift), as apparent in Figure 1—figure supplement 2. Further, example traces for two representative participants from the fMRI group (Figure 2b) illustrate that stimulus values tend to asymptote – i.e. that under this model generalization of value across stimuli is assumed to be relatively constant over time. This assumption is consistent with our behavioural data, in that a time-on-task analysis showed that after initial period of exploratory learning (blocks 1–2), generalization in terms of GS avoidance remains fairly stable. In both groups of participants, there were significant effects of both CS type and block number, and a CS type*block interaction, on proportionate avoidance responding (fMRI: F2,50=406.3, F4,100=6.14, F8,200=8.68, respectively; AMT: F2,962=1077.9, F4,1962=24.3, F8,3848=263.0, respectively; all p<0.001, repeated-measures ANOVA). In the fMRI sample, the CS type*block interaction was driven by lower avoidance for CS+ stimuli in block one compared to the rest of the task (p≤0.004; other CS types no significant differences between blocks; pairwise comparisons Bonferroni corrected for multiple comparisons). This suggests a strategy of exploratory non-avoidance to enable proper learning of CS+ stimuli in block 1, but fairly constant generalization of avoidance across later blocks. In the AMT sample, there was also lower avoidance for CS+ stimuli in block one vs other blocks (all p<0.001), but a decrease in avoidance for CS- stimuli in later blocks (3-5) vs earlier blocks (1 and 2; all p<0.001). Overall GS avoidance showed small increases then decreases over first three blocks (p<0.001), before stabilising between blocks 4 and 5 (p>0.5, Bonferroni-corrected pairwise comparisons; see [Figure 1—figure supplement 2]).
 
-## Evidence for effects of conditioning on perceptual acuity
+### Evidence for effects of conditioning on perceptual acuity
 
 In the fMRI group, perceptual acuity for task stimuli was tested both before and after carrying our the generalization of instrumental avoidance paradigm, in order to test for possible effects of aversive conditioning on discriminability of the generalization stimuli (the three test sessions were carried out on three consecutive days for all participants, so any detected changes would likely reflect post-consolidation changes in perceptual performance).
 
 There was no strong evidence for change in perceptual acuity in terms of θ value (difference in shape ‘spikiness’ parameter rho for 75% reliable perceptual discrimination) pre- vs post- conditioning (mean θ 0.071 ± 0.015 on session 1, 0.065 ± 0.019 on session 3; non-significant trend towards greater acuity on session 3, p=0.061, related-samples Wilcoxon signed rank test; [Figure 1—figure supplement 3]). Bayesian model comparison indicated that a model where generalization stimulus discriminability was held constant at 75% better accounted for avoidance data than one where discriminability was held constant at the estimated post-test (session 3) level, or a model where GS discriminability was assumed to be linear between session 1 and session three values (exceedance probability for the 75% constant model = ~1; [Figure 1—figure supplement 3]). Therefore GS discriminability was held constant across trials at 75% in all models.
 
-## Differences in avoidance behaviour between lab-based and online cohorts
+### Differences in avoidance behaviour between lab-based and online cohorts
 
 As can be seen in Figure 1, both mean avoidance and mean aversive outcome expectancy ratings for GSs (under non-avoidance) were higher in the AMT compared to the MRI sample (mean proportionate GS avoidance in MRI group: 0.22 ± 0.14, AMT: 0.63 ± 0.18; mean pain/loss expectancy rating [out of 100] in MRI group: 30 ± 23, AMT: 63 ± 19). One potential explanation for this difference is that there was lower absolute discriminability of generalization stimuli for the AMT participants. Although θ values (difference in ρ between CS+ and GS stimuli) were similar for the online and lab-based cohorts (0.071 ± 0.015 for the MRI group, and 0.065 for all AMT participants), we were unable to control factors such as participant distance from screen, and experimental window minimisation, that may have led to GSs being less discriminable than estimated in our pilot study (see Materials and methods). In addition, it is possible that participants conducting the study online paid less attention to the task than supervised lab-based participants (e.g. were multi-tasking), resulting in higher rates of stimulus-independent responding. Finally, it is possible that there were group-level differences in decision bias for the monetary loss compared to the pain reinforcer – for example due to differences in overall aversiveness between the two outcomes. Indeed, there was evidence of a difference in decision bias, as captured by the softmax bias parameter, between groups. The mean bias against deciding to avoid was 0.415 ± 0.14 in the MRI sample, and 0.315 ± 0.15 in AMT sample (p=0.0013, 95% CI for difference 0.04–0.16, t28.5=3.56; Welch-Satterthwaite two-sample t test; nb large difference in N between groups).
 
-## Brain regions encoding model quantities specific to value-based generalization
+### Brain regions encoding model quantities specific to value-based generalization
 
 As our behavioural data provided evidence for the presence of generalization in instrumental avoidance in both groups, we next employed a univariate analysis approach to our functional imaging data in order to investigate whether model quantities specific to value-related generalization processes were encoded in regional blood oxygen level-dependent (BOLD) signals.
 
@@ -87,29 +103,143 @@ In addition to expected value signals, we examined potential encoding of predict
 
 We also found evidence of significant encoding of additional variance in PE signals from the value-based generalization model in insula and striatum (Figure 3c). Specifically, BOLD signal was greater when trial PE was more negative in the anterior insula, bilaterally (left: pSVC = 9.72e-5, k = 93, peak voxel [−33,20,11], Z = 5.48; right: pSVC = 0.024, k = 19, peak voxel [33,26,-4], Z = 4.35), right insula more posteriorly (pSVC = 5.85e-5, k = 65, peak voxel [48,8,-4], Z = 4.40), putamen, bilaterally (left: pSVC = 0.024, k = 20, peak voxel [−27,–4,−1], Z = 4.29; right: pSVC = 0.009, k = 31, peak voxel [33,2,-1], Z = 4.06), and right pallidum (pSVC = 0.046, k = 14, peak voxel [18,5,2], Z = 3.74). Significant clusters were also observed in the mid cingulate cortex (pWB = 0.001, k = 103, peak voxel [6,14,44], Z = 4.46), left parietal operculum (pWB = 3.56e-5, k = 168, peak voxel [−48,–25,14], Z = 4.10), right inferior parietal lobule (pWB = 0.003, k = 90, peak voxel [54,-40,26], Z = 3.82) and inferior frontal gyrus (pWB = 0.023, k = 56, peak voxel [42,5,35], Z = 4.31) − but we found no evidence of encoding of value generalization-derived PE signals in V1, the amygdala, or vmPFC.
 
-## Changes in neural representation of generalization stimuli over the course of the task: relationship to individual differences in avoidance behaviour
+### Changes in neural representation of generalization stimuli over the course of the task: relationship to individual differences in avoidance behaviour
 
 Previous studies in animal models have shown that over the course of conditioning, the representation of the conditioned stimulus (CS+) in terms of response pattern across many individual units may come to resemble that of the primary aversive reinforcer (e.g. Grewe et al., 2017). To complement our univariate results, we therefore examined how different task stimuli were represented in multivariate space using representational similarity analysis (Kriegeskorte et al., 2008). This approach enables the consideration of the full representational geometry across specific brain regions – how information is encoded, as well as whether or not it is – and depends on the calculation of distance metrics to quantify how (dis)similarly different kinds of stimuli are represented in multivariate space (in fMRI, across all voxels in a particular brain volume).
 
 Following the approach of a recent study of aversive conditioning in rodents (Grewe et al., 2017), we examined how representational difference changed in our regions of interest earlier (blocks 1–2) vs later (blocks 3–5) in the task – and, crucially, how this change related to individual differences in overall behavioural expressions of conditioning. Specifically, we investigated whether changes in representation of GS, relative to CS+, stimuli over the course of the task related to individual tendency to generalize value from CS+ to GS stimuli – as captured behaviourally in avoidance responses on GS trials. We calculated a robust, cross-validated estimate of representational distance, Fisher’s linear discriminant contrast (see Materials and methods, Figure 4a) in order to maximise the reliability of our results. Importantly, the use of a cross-validated distance measure means that derived (dis)-similarity estimates are unbiased by noise (which may potentially vary across individuals and imaging runs), and have a meaningful zero point (Walther et al., 2016).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/34779/elife-34779-fig4-v2.jpg)
+
+**Figure 4.:** (a) Schematic of linear discriminant contrast analysis (based on [Kriegeskorte et al., 2007]). Within cross-validation folds, data from one imaging run is projected onto the optimal decision boundary derived from other runs, in order to remove inflation by noise in the final distance estimate (obtained by averaging across folds). (b) Multiple regression models detailing how changes in representational (dis)similarity over the course of the task in each ROI relate to overall relative avoidance on generalization trials, and (c) to individual differences in the model parameter governing width of generalization from aversive feedback. Error bars represent standard error. (d) Visualisation of bivariate relationships between change in representational geometry and raw GS avoidance (in primary visual cortex), and (e) between change in representational geometry and individual σA values (in the anterior insula, amygdala, and V1), weighted by individual parameter estimate precision (1/posterior variance). Larger bubble size represents greater precision (and therefore higher regression weight). Light blue shading on structural images illustrates the ROI volumes data were extracted from in each case. CV LDC, leave-one-out cross-validated linear discriminant contrast; a insula, anterior insula; vmPFC, ventromedial prefontal cortex. *p<0.05, **p<0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/34779/elife-34779-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Pre-conditioning (day 1 testing), discriminability for target stimulus ± θ was 0.75 (75% correct difference judgments), by definition. Post-conditioning (day 3 testing), mean discriminability for target ± θ was 0.79 (SD 0.14).
+
 Overall, for no region of interest was there a significant group level change in representational distance between GS and CS+ stimuli (all p>0.03, paired-sample t tests; Bonferroni-corrected threshold = 0.01 for alpha = 0.05). However, across individuals, greater increase in similarity of representation of GS to CS+ stimuli over the course of the task in primary visual cortex was related to greater behavioural generalization in terms of greater relative GS avoidance (p=0.010, multiple linear regression model; Table 1, Figure 4b). For individuals who made a higher relative proportion of avoidance responses towards generalization stimuli, V1 representation of GS stimuli came to be more similar to that of CS+ stimuli over the course of the task – but for individuals who avoided less on GS trials, GS stimuli came to be less similarly represented to CS+s in these regions (for visualisation of the relationship between raw proportionate GS avoidance and V1 distance change, see Figure 4d). There was no evidence of a significant relationship between GS−CS+ representational distance change and relative GS avoidance in the anterior insula, striatum, amygdala or vmPFC (Table 1, Figure 4b). We confirmed these results by implementing a cross-validated regularised regression (CV LASSO, see Materials and methods) on the same data (this kind of regression shrinks non-significant predictor coefficients to zero, and generally results in smaller coefficients compared to traditional linear regression). Under this robust approach, change in GS−CS+ similarity in V1, but not other regions, was retained as a significant predictor of relative GS avoidance (β = −0.040), in the model that minimised mean squared error (MSE).
+
+**Table 1.**
+ Changes in representational distance (cross-validated LDC) with conditioning: relationship to overall generalization stimulus (GS) avoidance.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Change in GS–CS+ representational distance</th>
+      <th>β</th>
+      <th>SE</th>
+      <th>t</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a. insula</td>
+      <td>−0.04287</td>
+      <td>0.06798</td>
+      <td>−0.631</td>
+      <td>0.535</td>
+    </tr>
+    <tr>
+      <td>caudate</td>
+      <td>−0.02304</td>
+      <td>0.04173</td>
+      <td>−0.552</td>
+      <td>0.587</td>
+    </tr>
+    <tr>
+      <td>amygdala</td>
+      <td>−0.09792</td>
+      <td>0.09905</td>
+      <td>−0.989</td>
+      <td>0.335</td>
+    </tr>
+    <tr>
+      <td>V1</td>
+      <td>−0.10072</td>
+      <td>0.03531</td>
+      <td>−2.852</td>
+      <td>0.010*</td>
+    </tr>
+    <tr>
+      <td>vmPFC</td>
+      <td>−0.07407</td>
+      <td>0.07938</td>
+      <td>−0.933</td>
+      <td>0.362</td>
+    </tr>
+  </tbody>
+</table>
 
 Using a post hoc test, we examined whether changes in GS−CS+ representational distance in V1 might relate to changes in absolute discriminability of generalization stimuli (as measured on the day before and day after the generalization test session). Mean discriminability for GSs (CS+ ± θ) was 0.75 on session 1, by definition, and 0.79 on session 3 (±0.14, range 0.465–0.994; although note at the group level there was no significant change in θ values measured across sessions, see above). Under this exploratory analysis, we found evidence of a significant association between change in V1 GS−CS+ representational distance during the task, and post-conditioning changes in perceptual discriminability of the GSs. Individuals who showed an increase in similarity of representation showed worse perceptual performance post-(vs pre-) conditioning, and those who showed decreased similarity showing better performance (Spearman’s ρ = 0.518, p=0.007; see [Figure 4—figure supplement 1]). There was no significant relationship between change in perceptual acuity and representational distance in any other brain region (all p>0.09).
 
 All the univariate fMRI findings presented above remained significant if re-ran using regressors derived from a model where perceptual discriminability of GSs changes linearly over the course of the task from pre- to post-conditioning measured acuity levels (full, unthresholded statistical maps for all analyses are available at Neurovault; neurovault.org/collections/3177).
 
-## Changes in neural representation of generalization stimuli over the course of the task: relationship to individual differences in value-based generalization
+### Changes in neural representation of generalization stimuli over the course of the task: relationship to individual differences in value-based generalization
 
 We also sought to relate individual changes in similarity of representation of GS towards CS+ stimuli over the course of the task to individual model parameter estimates governing width of generalization, specifically from aversive feedback (σA values).
 
 We found that greater increases in similarity of representation of the GS relative to CS+ stimuli over the course of the task in the anterior insula and amygdala were related to larger generalization from aversive feedback parameter estimates (p=0.024, p=0.012, respectively, precision-weighted multiple linear regression model; see Table 2, Figure 4c,e). We also found that GS−CS+ representational distance change in V1 was related to individual differences in aversive feedback generalisation – in the opposite direction (p<0.001; Table 2). Somewhat counter-intuitively, increases in GS−CS+ similarity in V1 were associated with lower aversive value generalisation parameter values (Figure 4c,e). One possible explanation for this finding is that it is a result of V1-mediated changes in perceptual acuity for GSs – that is increased GS−CS+ representational similarity over the course of the task, associated with decreased perceptual acuity for GS stimuli, results in a lower requirement for additional value-based generalization in these individuals. Notably, this bi-directional relationship persisted if individual σA values were re-calculated using a behavioural model that took into account potential conditioning-induced changes in perceptual acuity (i.e. perceptual discriminability of generalization stimuli changed linearly across trials from pre- to post- generalization test measured values; amygdala: β = −0.353, SE = 0.07, t = −5.42, p=2.65e-5; V1: β = 0.204, SE = 0.04, t = 5.08, p=5.77e-5). This suggests that a putative perceptual vs value-based generalization trade-off exists at the brain, rather than the behavioural level. Representational distance change in no region survived as a predictor of σA values in the more robust CV LASSO model.
 
+**Table 2.**
+ Changes in representational distance (cross-validated LDC) with conditioning: relationship to model parameter governing width of generalization from aversive feedback (σA). a. insula, anterior insula; vmPFC, ventromedial prefrontal cortex; V1, primary visual cortex; SE, standard error. *p<0.05
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Change in GS–CS+ representational distance</th>
+      <th>β</th>
+      <th>SE</th>
+      <th>t</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a. insula</td>
+      <td>−0.357</td>
+      <td>0.146</td>
+      <td>−2.448</td>
+      <td>0.024*</td>
+    </tr>
+    <tr>
+      <td>caudate</td>
+      <td>−0.082</td>
+      <td>0.043</td>
+      <td>−1.908</td>
+      <td>0.071</td>
+    </tr>
+    <tr>
+      <td>amygdala</td>
+      <td>−0.285</td>
+      <td>0.103</td>
+      <td>−2.761</td>
+      <td>0.012*</td>
+    </tr>
+    <tr>
+      <td>V1</td>
+      <td>0.299</td>
+      <td>0.064</td>
+      <td>4.684</td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>vmPFC</td>
+      <td>0.277</td>
+      <td>0.217</td>
+      <td>1.277</td>
+      <td>0.216</td>
+    </tr>
+  </tbody>
+</table>
+
 Although less well-studied compared to the aversive domain, there is evidence that the amygdala is also involved in the acquisition of information about safety in rodents and non-human primates (Rogan et al., 2005; Genud-Gabai et al., 2013), and that medial prefrontal entrainment of the amygdala is associated with learned safety (successful overcoming of generalized conditioned fear) in mice (Likhtik et al., 2014). This fits with a large literature on the vmPFC playing a role in ‘safety signalling’ in humans (Fullana et al., 2016). As a further exploratory analysis, we therefore investigated whether there was a relationship between change in GS-CS- similarity over the course of the task in the amygdala and vmPFC and individual values of the parameter governing width of generalization from neutral (non-pain) feedback, σN. (Nb, due to the arrangement of task stimuli, see Figure 1b, our design is not optimised to probe GS–CS- value generalization at the stimulus category level.)
 
 We found evidence of significant relationships between GS−CS- similarity change in the amygdala and vmPFC and individual σN values – such that individuals where representation of GSs came to be more similar to CS- in both these regions had greater neutral (‘safety’) generalization parameter values (amygdala: β = −0.043, SE 0.0086, t = −5.02, p=4.43e-5; vmPFC: β = −0.069, SE 0.009, t = −7.58, p=1.07e-7; precision-weighted multiple linear regression model). Representational change in the vmPFC (but not amygdala) was retained in the MSE-minimising CV LASSO model (β = −0.032).
 
-## Relationship between individual differences in value-based generalization and self-reported psychopathology
+### Relationship between individual differences in value-based generalization and self-reported psychopathology
 
 Hypotheses about the role of generalization in psychological disorders tend to relate to an over-generalization of aversive information – but it has also been proposed that poor discrimination (e.g. between CS+ and CS- in anxiety groups) may be due to inadequate learning about safety cues. We therefore looked first at how psychological symptoms scores related to individual σA values, but also examined possible relationships with individual σN values, in our online cohort (N = 482).
 
@@ -118,6 +248,66 @@ Following the approach of Gillan et al. (2016), the online group completed a bat
 First, we sought to identify whether individual values of the parameter governing width of generalization from aversive feedback (σA) were related to symptom scores on any measure. Total scores across measures exhibited good to excellent internal reliability (mean Cronbach’s α = 0.882, see Supplementary file 2), and, as might be expected, covaried significantly across participants (mean absolute r for inter-correlation between scores = 0.479). Regression of total scores against parameter estimates was therefore implemented in separate models for each measure, in order to enable meaningful partition of variance. The Nyholt-Bonferroni corrected p value for significance across these separate models of non-independent measures was p<0.010 to maintain an alpha of 0.05 (effective number of independent variables = 5.0, see Materials and methods).
 
 Parameter estimates governing width of generalization from aversive feedback were found to be significantly positively associated with trait anxiety scores (greater width with greater anxiety), and significantly negatively associated with trait apathy (smaller width with greater apathy; anxiety, p=0.009, apathy, p<0.001, individual precision-weighted linear regression models controlling for age and gender; see Table 3, Figure 5a). These two effects remained significant when trait anxiety and apathy scores were included in the same model, suggesting they were independent (anxiety: β = 0.050, SE 0.015, t = 3.34, apathy: β = −0.060, SE 0.014, t = −4.28; both p<0.001). This result was confirmed under the cross-validated and regularised analysis; when all predictors were entered in the same model both anxiety and apathy total scores were retained as predictors in the model that minimised MSE (β = 0.021, β = −0.032, respectively). No questionnaire total scores were significantly related to σN values (p>0.05).
+
+**Table 3.**
+ Relationship between width of generalisation from aversive feedback (σA value estimates) and questionnaire total scores.Each line represents the results of a separate model, as questionnaire scores were significantly collinear. STAI, Spielberger State-Trait Anxiety Inventory (trait scale); AMI, Apathy Motivation Index; OCI-R, Obsessive-Compulsive Index (Revised); PHQ9, Physician’s Health Questionnaire 9 (a brief measure of mood disorder symptoms); BIS-11, Barratt Impulsivity Scale (version 11); CSQ global, Cognitive Style Questionnaire cognitive globalisation score. SE, standard error. *p<0.010 (Nyholt-Bonferroni corrected p value for multiple tests on non-independent data, alpha = 0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Questionnaire measure</th>
+      <th>β</th>
+      <th>SE</th>
+      <th>t</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STAI total</td>
+      <td>0.039</td>
+      <td>0.015</td>
+      <td>2.626</td>
+      <td>0.009*</td>
+    </tr>
+    <tr>
+      <td>AMI total</td>
+      <td>−0.051</td>
+      <td>0.014</td>
+      <td>−3.687</td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>OCI-R total</td>
+      <td>0.005</td>
+      <td>0.014</td>
+      <td>0.373</td>
+      <td>0.710</td>
+    </tr>
+    <tr>
+      <td>PHQ9 total</td>
+      <td>0.021</td>
+      <td>0.015</td>
+      <td>1.476</td>
+      <td>0.141</td>
+    </tr>
+    <tr>
+      <td>BIS-11 total</td>
+      <td>−0.005</td>
+      <td>0.013</td>
+      <td>−0.410</td>
+      <td>0.682</td>
+    </tr>
+    <tr>
+      <td>CSQ global</td>
+      <td>−0.014</td>
+      <td>0.014</td>
+      <td>−0.978</td>
+      <td>0.328</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/34779/elife-34779-fig5-v2.jpg)
 
@@ -128,6 +318,45 @@ As per Gillan et al, we also sought to reduce collinearity in our battery of sel
 The ‘intrusive anxiety’ factor was mostly composed of items from the trait scale of State-Trait Anxiety Inventory (STAI; 20 items, mean loading = 0.457 ± 0.12), Obsessive-Compulsive Index (OCI; 18 items, mainly items probing intrusive thoughts and checking behaviour, mean loading = 0.602 ± 0.087), Physician’s Health Questionnaire (PHQ9; eight items probing mood disorder symptoms, mean loading = 0.531 ± 0.056), and the Barratt Impulsivity Scale (BIS; six items pertaining to racing/intrusive thoughts and restlessness, mean loading = 0.386 ± 0.15). ‘Low self-worth’ was mostly comprised of items from the Cognitive Style Questionnaire (CSQ; 37 items, mainly from low self-worth and internal attribution subscales, mean loading = 0.518 ± 0.13) and the STAI (11 items, mainly related to low self-worth/negative self-affect, mean loading = 0.322 ± 0.054). 'Low self-control' mostly comprised items from the BIS (23 items, mainly from the non-planning and attentional impulsivity subscales, mean loading = 0.485 ± 0.15), with some loading from the apathy motivation index (AMI; six items from the behavioural amotivation subscale, mean loading = 0.356 ± 0.093) and STAI (seven items relating to feel uncontent/unrested, mean loading 0.321 ± 0.04). (For full item loadings for each factor, see Supplementary file 3).
 
 The ‘intrusive anxiety’ factor analysis-derived symptom score was significantly and selectively related to individual differences in aversive generalisation width (σA values) – in both multiple linear and robust regression models (p=0.008, precision-weighted multiple regression model; see Table 4, Figure 5c; only factor retained in MSE-minimising CV LASSO model, β = 0.019). None of the factor analysis-derived symptom scores were related to individual σN values (all p>0.1).
+
+**Table 4.**
+ Relationship between generalization width from aversive feedback (σA value estimates) and factor analysis-derived symptom scores.All factor scores were included in the same model. SE, standard error. *p<0.05
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor analysis-derived symptom score</th>
+      <th>β</th>
+      <th>SE</th>
+      <th>t</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>‘Intrusive anxiety’</td>
+      <td>0.043</td>
+      <td>0.016</td>
+      <td>2.677</td>
+      <td>0.008*</td>
+    </tr>
+    <tr>
+      <td>‘Low self-worth’</td>
+      <td>−0.019</td>
+      <td>0.015</td>
+      <td>−1.255</td>
+      <td>0.210</td>
+    </tr>
+    <tr>
+      <td>‘Lack of self-control’</td>
+      <td>−0.000</td>
+      <td>0.014</td>
+      <td>−0.032</td>
+      <td>0.975</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -153,27 +382,27 @@ In summary, the findings reported here demonstrate the benefits of parsing compl
 
 ## Materials and methods
 
-## Code and data availability
+### Code and data availability
 
 All relevant code for stimulus generation, data collection, and data analysis, in addition to raw behavioural data, are available at the project’s Open Science Framework page (osf.io/25t3f). Raw functional imaging data is deposited at openfMRI (openfmri.org/dataset/ds000249) and derived statistical maps are available at NeuroVault (neurovault.org/collections/3177).
 
-## Design
+### Design
 
-## fMRI sample
+#### fMRI sample
 
-## Protocol
+##### Protocol
 
 Each participant completed three testing sessions on 3 consecutive days. On the first day, participants were pre-screened, gave informed consent, and performed initial sensory acuity testing for the generalization task stimuli. On the second day, participants completed the generalization of instrumental avoidance task (performed in fMRI scanner, using individually-generated conditioning stimuli [CSs] derived from day 1perceptual performance), followed by visual analogue scale (VAS) ratings of pain expectancy for each CS. On the third day, participants repeated the perceptual acuity test.
 
 All participants were recruited via online advertisement. Exclusion criteria were left-handedness and history of neurological or psychological illness, in addition to usual MR safety criteria. The sample size was chosen on the basis of a power calculation. Previous functional imaging studies in humans have found effect sizes in the region of r = ~0.5 for generalization-related BOLD signal and individual difference measures (Greenberg et al., 2013; Lissek et al., 2014; Cha et al., 2014). We calculated that a sample of N = 26 would allow us to detect r = 0.5 with an alpha of 0.05 and power of 80%, two-tailed (correlation point biserial model, G*Power version 3.1.9.2). Volunteers were paid £20/hr in recompense for their time and discomfort arising from the painful electrical stimulation. The study was approved by the University of Cambridge Psychology Research Ethics Committee.
 
-## Delayed-punished perceptual discrimination task
+##### Delayed-punished perceptual discrimination task
 
 Prior to starting the task, participants were introduced to the shock and electrode and a work-up procedure was performed (as described below) to set the level of painful stimulation. The delayed-punished perceptual task was then carried out, as summarized in Figure 1b. Briefly, on each trial, participants viewed an individual shape (target or comparison stimulus, order randomized on each trial), followed by a mask (scrambled mean shape image), delay period (blank screen), second shape, and second mask. At the end of each trial, participants had to indicate whether they thought the two shapes had been the same, or different. The inter-stimulus delay period of four seconds was chosen to be long enough such that comparison of stimuli could not be achieved by instantaneous mechanisms, but required comparison in short-term memory (e.g. primate data suggests discrimination performance for visual features decreases significantly from <1 s to around 4–5 s inter-stimulus delay, [Pasternak and Greenlee, 2005]), and roughly matched to the inter-trial interval from the generalization task. There were 16 trials per absolute value interval per target (160 trials total), and trials were divided into four equal blocks. At the end of each block, participants received feedback on how many incorrect judgments they had made, and received a proportionate number of painful electric shocks as punishment (one painful shock per five incorrect judgments).
 
 Stimuli were five-fold radially symmetric flower-like shapes, as described in van Dam and Ernst, 2015. These were selected on the basis that they can be continuously generated along a single perceptual axis of ‘spikiness’ using the mathematical description provided in the paper, and psychophysical evidence demonstrating that they are perceptually linear (i.e., that discrimination thresholds are constant along this axis). Shape ‘spikiness’ is parameterized by a single value, ρ (where 0 < ρ <1), which relates the inner and outer radii of the shape such that stimuli are of constant surface area. Target stimuli were shapes with ρ values of the two CS+ stimuli from the generalization task (0.25 and 0.75). These target stimuli were compared to comparison stimuli of intervals of ±0, 0.05, 0.075, 0.1, and 0.15 ρ, such that the possible range of different shapes was well tiled. Participants worked on a pre-defined set of comparison stimuli (opposed to a stair-cased approach) so that pre-exposure to conditioning task stimuli (and therefore opportunity for perceptual learning) would be matched across individuals.
 
-## Generalization of instrumental avoidance task (pain version)
+##### Generalization of instrumental avoidance task (pain version)
 
 Participants completed five blocks of 38 trials each. On each trial, participants were presented with a stimulus in the centre of their screen. This initiated a 3 s decision period, during which they must decide whether or not to make an ‘escape’ (avoidance) response. Following this, a yellow bounding box appeared around the shape, indicating the time when an avoidance response could be made was over and they would receive the outcome for that trial. If an avoidance response was made, no shock was ever delivered on that trial. If no avoidance was made, and the stimulus was a ‘safe’ shape (CS-), no shock was delivered. If the stimulus was a ‘dangerous’ shape (CS+), a painful shock was delivered on 80% of non-avoidance trials at the end of this outcome period (i.e. 6 s from stimulus onset, Figure 1c).
 
@@ -181,9 +410,9 @@ On a low frequency of trials, shapes were generalization stimuli (GSs; 2 present
 
 The stimulus array was asymmetric in perceptual space (see Figure 1b), with two CS+ (and four associated GS) stimuli – one nearer and further from an intermediary CS-. This array was chosen in order to probe the presence of characteristic asymmetries in conditioned responses that are hypothesised to arise from the interaction of oppositely signed generalization gradients (e.g. peak shift, [Hanson, 1959]), and on the basis of previous observations that change in perceptual discriminability of aversively conditioned stimuli (CS+ s) may depend on the relative ‘nearness’ of safety stimuli (CS-s) in perceptual space (Aizenberg and Geffen, 2013). Axis direction (in terms of increasing or decreasing ‘spikiness’) was counterbalanced across participants.
 
-## Online sample
+#### Online sample
 
-## Protocol
+##### Protocol
 
 In order to test relationship with real-world psychological symptoms in an appropriately powered sample, an online version of the study was also carried out, following the approach of Gillan et al. (Gillan and Daw, 2016; Gillan et al., 2016). Participants were Amazon Mechanical Turk (AMT) workers based in the USA (in practice, had an AMT account linked to US bank with provision of an US social security number). Participants were required to be over 18 years of age, but otherwise remained anonymous.
 
@@ -193,25 +422,25 @@ We calculated that a final sample size >459 should be powered to detect a small
 
 Payment rates were based on UK ethical standards for online experiments (equivalent to a minimum of £5 ph). Participants were paid a flat rate of $2.50 for taking part, plus up to around $3.00 additional bonus payment depending on task performance. The average bonus payment was $2.21 (±0.82) and the average time between accepting and submitting the task was 42 min (equivalent to $6.72 mean hourly payment rate). The study was approved by the University of Cambridge Psychology Research Ethics Committee.
 
-## Generalization of instrumental avoidance task (loss version)
+##### Generalization of instrumental avoidance task (loss version)
 
 The generalization task was identical in structure to that performed by the lab-based participants, but used monetary loss instead of painful shock as the aversive reinforcer (Figure 1c). Prior to starting the task, participants were endowed with a $6.00 stake, and instructed that, although a certain amount of loss was inevitable, whatever total remained at the end of the task would be paid directly to them as a bonus (the loss therefore had real-world value). As BOLD data was not being collected, trials were slightly shorter than for the fMRI group (second set of timing figures, Figure 1c) – although the length of the decision period was kept the same.
 
 Perceptual testing was not performed in the online sample due to time constraints, and the inability to control the testing environment (e.g. participant distance from screen, window size, etc.) over the course of testing. Generalization stimuli were therefore the same for all participants, and generated on the basis of mean perceptual performance on the perceptual task in a pilot sample. This pilot testing was carried out under the same conditions and timing parameters as described for the MRI sample, with the exception that no punishment shocks were administered (and no pain-delivery apparatus was attached to participants).
 
-## Questionnaire battery
+##### Questionnaire battery
 
 Following completion of the generalization task, participants completed several self-report measures (questionnaire order was randomized across participants). These measures were chosen to probe psychological constructs hypothesized to be related to over-generalization of aversive outcomes (anxiety, depression, and obsessive-compulsive symptomatology), as well as positive controls that might suggest a more general effect of psychopathology on task performance (impulsivity, apathy). Questionnaires consisted of the trait scale of the State-Trait Anxiety Inventory (STAI; [Spielberger et al., 1970]); the Physician’s Healthy Questionnaire 9 (PHQ9; [Martin et al., 2006]), a brief measure of mood disorder symptoms; the revised (short-form) Obsessive-Compulsive Index (OCI-R; [Foa et al., 2002]); the Barratt Impulsiveness Scale v11 (BIS-11; [Patton et al., 1995]); and the Apathy Motivation Index (AMI; [Ang et al., 2017]). All chosen measures have previously been shown to be suitable for use in the general population.
 
 A short version of the Cognitive Style Questionnaire (CSQ-SF; [Meins et al., 2012]) was also administered. This self-report measure asks participants to imagine themselves in various scenarios (e.g. ‘Imagine you go to a party and people are not interested in you’), and then probes the imagined causes of this scenario along dimensions of ‘internal’, ‘global’, and ‘stable’ attributions, plus low self-worth. On this measure, a more ‘global’ cognitive style reflects a tendency to attribute negative events to causes which are general, rather than specific (a cognitive form of over-generalization), and has been found to be a predictor of future depressed mood (Pearson et al., 2015). The CSQ-SF was administered at the end of the battery of questionnaires for all participants in order to avoid possible mood-induction effects.
 
-## Quality control procedure
+##### Quality control procedure
 
 Following previous studies utilizing AMT (Crump et al., 2013; Gillan et al., 2016), a number of exclusion criteria were applied sequentially to the dataset to attempt to exclude poor quality responses. Firstly, we excluded participants who made avoidance responses on less than 50% of total CS+ trials (indicating lack of learning/random responding on these trials), N = 62. Secondly, we further excluded participants who selected the wrong answer to a catch item inserted into the questionnaire battery (‘Please select the answer ‘a little’ if you are reading this question’), N = 6. 68 datasets were excluded in total (12.3% of those collected), yielding a final sample size of 482. Questionnaire data quality was further assessed via calculation of internal reliability coefficients for each measure (Cronbach’s α).
 
-## Data collection
+### Data collection
 
-## fMRI sample
+#### fMRI sample
 
 Stimulus presentation and response collection was coded using Cogent2000 v1.30, run in Matlab R2015b (Mathworks). Perceptual testing on day one and three took place in a laboratory, and generalization testing in an fMRI scanner. Size of stimuli in terms of visual angle subtended were matched between lab and scanner environments in order to ensure ~constant discriminability.
 
@@ -221,19 +450,25 @@ Functional imaging data were collected on a 3T Siemens Magnetom Skyra (Siemens H
 
 Field maps were acquired in order to correct for inhomogeneities in the static magnetic field (short TE = 5.19 ms, long TE = 7.56 ms, 32 × 3 mm slices). Five functional sessions of 212 volumes were collected using a gradient echo planar imaging (EPI) sequence (TR = 2000 ms, TE = 30 ms, flip angle = 90°, tilt=-30°, slices per volume = 25, voxel size 3 × 3 × 3 mm; this included three dummy volumes, in addition to the three pre-discarded by the scanner). Limited field of view (constrained by equipment used for additional physiological data collection) was aligned to the base of brain and angled away from the orbits, such that there was full coverage of the occipital and temporal lobes, plus prefrontal cortex. A T1-weighted MPRAGE structural scan (voxel size 1 × 1 × 1 mm) was also collected. Full sequence metadata are available at openfMRI (openfmri.org/dataset/ds000249).
 
-## Online sample
+#### Online sample
 
 The experiment was coded in javascript using jsPsych ([de Leeuw, 2015]; available at github.com/jspsych/jsPsych), and was deployed to Amazon Mechanical Turk via the psiTurk engine ([Gureckis et al., 2016]; available at github.com/NYUCCL/psiTurk). The experiment was hosted in the cloud using an Amazon Web Services EC2 instance. A more detailed description of this setup is available at osf.io/mjgtr. The task was not made available on mobile devices (phones or tablets) in an attempt to ensure minimum screen size.
 
-## Analysis
+### Analysis
 
-## Perceptual acuity
+#### Perceptual acuity
 
-For fMRI sample participants, psychometric functions (a logistic function with free parameters governing slope, bias, and lapse, or stimulus-independent error, rate) were fitted to response data from the perceptual task using the psignifit toolbox v2.5.6 (available at bootstrap-software.org/psignifit), run in Matlab. Formally,P(diff)=1/(1+exp⁡((α−Δρ)/β))where P(diff) is the probability of reporting the comparison shape as different (restricted between the bounds of 0 and 1−lapse rate), Δρ is the difference in shape parameter ρ between target and comparison stimuli, and α determines the bias, and β governs slope, of the logistic function. This toolbox implements the constrained maximum-likelihood method of psychometric function fitting described in Wichmann and Hill (2001).
+For fMRI sample participants, psychometric functions (a logistic function with free parameters governing slope, bias, and lapse, or stimulus-independent error, rate) were fitted to response data from the perceptual task using the psignifit toolbox v2.5.6 (available at bootstrap-software.org/psignifit), run in Matlab. Formally,
+
+$$
+P(diff)=1/(1+exp⁡((\alpha−Δρ)/\beta))
+$$
+
+where P(diff) is the probability of reporting the comparison shape as different (restricted between the bounds of 0 and 1−lapse rate), Δρ is the difference in shape parameter ρ between target and comparison stimuli, and α determines the bias, and β governs slope, of the logistic function. This toolbox implements the constrained maximum-likelihood method of psychometric function fitting described in Wichmann and Hill (2001).
 
 Individual psychometric functions were then used to calculate the different in ρ value necessary for the comparison stimulus to be distinguishable from the target on 75% of trials (henceforth, θ).
 
-## Instrumental avoidance behaviour
+#### Instrumental avoidance behaviour
 
 Avoidance behaviour was modelled using a set of modified Q-learning algorithms (Sutton and Barto, 1998). Each stimulus was modelled as a different state, with the value of executing each action (avoid or notAvoid) in each state (Vs,a) updated after each trial (t) on the basis of a simple Rescorla-Wagner rule – that is, on the basis of difference between the predicted value of that state-action pair, and the actual outcome of each trial (Rt; coded as 0 for no shock/no loss and −1 for shock/monetary loss). Formally,
 
@@ -267,15 +502,15 @@ For both samples, models were fit to choice (avoidance) data using the variation
 
 Model comparison was by random-effects Bayesian model comparison (Rigoux et al., 2014). This method of model comparison assumes that the population is composed of subjects that differ in terms of the model that describes them best, then induces a hierarchical probabilistic model that can be inverted to derive the posterior density over model frequencies, given participants’ data. Under this approach, the critical metric for any given model is its exceedance probability, or the likelihood that that particular model is more frequent than all other models in the comparison set.
 
-## Functional imaging data
+### Functional imaging data
 
-## Pre-processing
+#### Pre-processing
 
 Functional imaging data were pre-processed using SPM12 (Wellcome Trust Centre for Neuroimaging, www.fil.ion.ucl.ac.uk/spm) in Matlab. Briefly, functional images were realigned to the first functional image in each sequence, unwarped, corrected for time of acquisition, and normalized to MNI space via tissue probability maps derived from the co-registered structural image. The full pre-processing pipeline available is available at osf.io/f9drs as a BIDS-compatible Matlab script (Gorgolewski et al., 2016). Finally, images were smoothed via convolution with an 8 mm full-width at half-maximum Gaussian kernel for the univariate (but not multivariate) analysis.
 
 Breathing belt data were processed using the PhysIO toolbox ([Kasper et al., 2017]; available at translationalneuromodeling.org/tapas), which provides physiological noise correction for functional imaging data using the Fourier expansion of respiratory phase implemented in the RETROICOR algorithm (Glover et al., 2000).
 
-## Univariate analysis
+#### Univariate analysis
 
 Functional imaging data were first analysed according to a mass univariate approach based on the general linear model for time series data in each voxel, as implemented in SPM12. This enables detection of whether variance in BOLD in each voxel is significantly related to modelled internal quantities (i.e. if particular model terms are encoded in BOLD signal time course), with relative spatial specificity. Several models were fit to individual BOLD time series data using restricted maximum likelihood estimation to produce individual statistical maps at the first level, which were used to determine significance at the second level using one-sample t-tests in a random-effects framework.
 
@@ -293,7 +528,7 @@ An initial cluster-forming threshold of p<0.001 (uncorrected), cluster size ≥
 
 Only voxels present in all subjects were included in the analysis. For display purposes, statistical maps were thresholded at p<0.001 (uncorrected), and overlain on a high-quality mean MNI-space structural image available as part of the MRIcroGL package. All quoted voxel coordinates refer to MNI space, in mm.
 
-## Multivariate analysis
+### Multivariate analysis
 
 Representational similarity analysis (RSA) was carried out using materials from the RSA toolbox ([Nili et al., 2014]; available at github.com/rsagroup/rsatoolbox), run in Matlab.
 
@@ -301,13 +536,13 @@ For this analysis, time series data extracted from all voxels of each ROI were f
 
 A priori regions of interest were the same as for the univariate analysis. However, per our analysis plan, where possible anatomical ROIs were replaced by functional ROIs defined from the group-level univariate analysis. Specifically, the anterior insula and caudate clusters identified in Figure 3b were substituted for whole structure anatomical ROIs. This was done on the basis that (1) the univariate analysis indicated involvement of these voxels in specific value-related generalisation processes, and (2) previous analysis has shown that reliability of LDC RDMs falls off sharply for larger ROIs (>~250 voxels, [Walther et al., 2016]; anatomical ROIs for whole insula = 1019 voxels, for whole striatum = 3482 voxels; functional anterior insula ROI = 71 voxels, functional caudate ROI = 20 voxels, masks available at osf.io/25t3f).
 
-## Questionnaire data
+### Questionnaire data
 
 Questionnaire total and individual item scores were feature scaled (z-scored across participants) prior to further analysis.
 
 Factor analysis was carried out as described in Gillan et al (2016): implemented in R v3.4.0 (R Foundation for Statistical Computing), using the factanal function (psych package) with oblique (oblimin) rotation. The number of factors to extract was determined using the Cattell-Nelson-Gorsuch (Gorsuch and Nelson, 1981) method (nFactors package), whereby successive scree plot gradients are analysed to determine the ‘elbow’ point after which there is little gain in retaining additional factors. Factor names were chosen on the basis of the highest-loading items for each factor.
 
-## Individual differences
+### Individual differences
 
 Normality of distribution of individual variables (or within-subject differences in variables) was assessed using the Shapiro-Wilk test, and, where appropriate, non-parametric statistics were employed for pairwise tests.
 

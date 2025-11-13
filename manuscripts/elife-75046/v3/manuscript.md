@@ -22,12 +22,12 @@
 
 ### Affiliations
 
-1. https://ror.org/01esghr10 Columbia University Irving Medical Center New York United States
-2. https://ror.org/052gg0110 Nuffield Department of Medicine, University of Oxford Oxford United Kingdom
-3. https://ror.org/052gg0110 Zooniverse, Department of Physics, University of Oxford Oxford United Kingdom
-4. https://ror.org/04tnbqb63 Electron Microscopy Science Technology Platform, The Francis Crick Institute London United Kingdom
-5. https://ror.org/052gg0110 Institute of Biomedical Engineering, University of Oxford Oxford United Kingdom
-6. https://ror.org/052gg0110 Citizen Scientist, c/o Zooniverse, Department of Physics, University of Oxford Oxford United Kingdom
+1. Columbia University Irving Medical Center New York United States ([ROR:01esghr10](https://ror.org/01esghr10))
+2. Nuffield Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+3. Zooniverse, Department of Physics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+4. Electron Microscopy Science Technology Platform, The Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))
+5. Institute of Biomedical Engineering, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+6. Citizen Scientist, c/o Zooniverse, Department of Physics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
@@ -47,29 +47,49 @@ In this paper, we shall show that a crowd of volunteers, who have no microbiolog
 
 ## Results
 
-## Project launch and progress
+### Project launch and progress
 
 After a successful beta-test on 22 March 2017, BashTheBug was launched as a project on the Zooniverse citizen science platform on 8 April 2017. The launch was publicised on social media, mainly Twitter, and mentioned on several websites and the Zooniverse users were notified via email. By the end of the first week, 2029 people had participated (of which 1,259 had usernames) classifying a total of 74,949 images – this includes the beta-test. The initial set of images were completed on 11 October 2017 and a second set was classified between 8 June 2020 and 15 November 2020 (Figure 1A) to increase the number of classifications per drug image from 11 to 17.
 
-## Volunteers
+![Figure 1.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig1-v3.jpg)
+
+**Figure 1.:** (A) The classifications were done by the volunteers in two distinct batches; one during 2017 and a later one in 2020. Note that the higher participation during 2020 was due to the national restrictions imposed due to the SARS-Cov-2 pandemic. (B) The number of active users per day varied from zero to over 150. (C) The Lorenz curve demonstrates that there is considerable participation inequality in the project resulting in a Gini-coefficient of 0.85. (D) Volunteers spent different lengths of time classifying drug images after 14 days of incubation with a mode duration of 3.5 s.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** There are the 5810 usernames of all the volunteers in this montage – volunteers who did not register or sign in are not included.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Since one would expect different amounts of bacterial growth on the microdilution plates after (A) 7, (B) 10, (C) 14 and (D) 21 days the distributions of these were examined separately. All were, however, similar indicating that this did not have a significant effect.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** The mode of each distribution is labelled. The drug the volunteers spent the longest on (bedaquiline, mode 4.8 s) was also one of those with the largest number (8) of wells. As measured by its mode of 3.2 s, the volunteers spent the least time classifying delamanid.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** It uses example images to explain the task and then each of the options that they can choose to classify a drug image.
+
+### Volunteers
 
 In total, 9372 volunteers participated in classifying this dataset doing a total of 778,202 classifications (Figure 1—figure supplement 1). The number of citizen scientists is an over-estimate since users who did not register with the Zooniverse (and therefore could not be identified through their unique username) but did more than one session will be counted multiple times. On 251 of the 356 days (70 %) when these data were being collected there were ten or more volunteers active on the project (Figure 1B), and on 31% of the days 50 or more volunteers were active. This illustrates the importance of engaging with the volunteers via multiple channels to ensure an active and sustainable project. Overall, this is a mean of 84.1 classifications per volunteer; however, this hides a large amount of variation in the number of classifications done by individual volunteers. Almost half of the volunteers (4299) did ten or fewer classifications and 1115 classified only a single image whilst the ten volunteers who participated the most did 103,569 classifications between them which is 13.1% of the total. The Gini-coefficient is a useful way to measure these unequal levels of participation, and for this dataset it is 0.85 (Figure 1C).
 
-## Comparison to other Zooniverse projects
+### Comparison to other Zooniverse projects
 
 The activity within the first 100 days of launch has been used to benchmark and compare different Zooniverse projects from several academic disciplines (Spiers et al., 2020). A total of 381,964 classifications were done in the first hundred days after launch by a total of 6237 users of which 3733 were registered and so were unique. Several Zooniverse projects have attracted many more users and classifications; however, these are all ecology or astronomy projects which are the mainstay of the Zooniverse.
 
 Since the number of classifications is heavily influenced by the difficulty of the task, it can be more illuminating to compare the Gini coefficients of different projects. Cox et al., 2015 measured a mean Gini coefficient across several Zooniverse projects of 0.81, whilst a later and more comprehensive study Spiers et al., 2019 demonstrated that Zooniverse projects had Gini coefficients in the range 0.54–0.94 with a mean of 0.80. They also suggested that biomedical projects had lower Gini coefficients, with a mean Gini coefficient of 0.67; however, this was only based on three projects. BashTheBug attracted more users, completed more classifications and had a higher Gini coefficient than any of these three biomedical projects (Spiers et al., 2019). A more recent biomedical project, Etch-a-cell, that launched at a similar time to BashTheBug had a Gini coefficient of 0.83 (Spiers et al., 2020). BashTheBug therefore has a higher than average level of participation inequality, having the 17th highest Gini coefficient out of 63 Zooniverse projects surveyed (Spiers et al., 2019).
 
-## Time spent
+### Time spent
 
 The time spent by a volunteer classifying a single drug image varied from a few seconds up to hours; the latter are assumed to be data artefacts, for example when a volunteer leaves a browser window open. The distribution of time spent per image shows no appreciable differences when calculated as function of the incubation time with a mode of 3.5 s (Figure 1D, Figure 1—figure supplement 2), which is unexpected given after only 7 days of incubation there is little or no bacterial growth. After 14 days incubation there are, however, observable differences between how long the volunteers spent classifying each drug (Figure 1—figure supplement 3).
 
-## Classification validity
+### Classification validity
 
 The tutorial on the Zooniverse website (Figure 1—figure supplement 4) encouraged volunteers to check that the control wells both contain bacterial growth – if not then the drug image should be marked as having ‘No Growth in either of the ‘No Antibiotic’ wells’. They were also asked to check if any of the drug wells contain growth very different to all the others (contamination), inconsistent growth (skip wells), or anything else that would prevent a measurement being taken (artefacts). If any of these are true, they were asked to mark the drug image as “Cannot classify”. In the analysis these were aggregated into a single dilution (NR – not read). In all cases, if a simple majority make a classification of NR, then this is always returned as the result. All NR results are excluded from calculations of the exact or essential agreement.
 
-## Expert measurements
+### Expert measurements
 
 Each drug image was also measured by a laboratory scientist using a Vizion instrument as well as programmatically by some software, AMyGDA (Fowler, 2017). Although the AMyGDA software is reproducible, it will often classify artefacts, such as air bubbles, contamination, shadows and sediment, as bacterial growth and is also likely to assess a well as containing no bacterial growth when the level of growth is very low. By contrast, laboratory scientists are less consistent but can recognise and ignore artefacts. Since the sources of error for each these methods are different, we constructed a consensus dataset with an assumed reduced error rate by only including readings where both of these independent methods agree on the value of the MIC. We will refer to this as the ‘Expert +AMyGDA’ dataset and the larger dataset simply consisting of all the readings taken by the laboratory scientist as the ‘Expert’ dataset. We shall further assume the error-rate in the ‘Expert +AMyGDA’ consensus dataset is negligible, allowing us to use it as a reference dataset, which in turn will allow us to infer the performance of the volunteers by comparison.
 
@@ -81,7 +101,7 @@ A second possibility is that drug images with specific growth configurations (fo
 
 The net effect of this is that the Expert+AMyGDA dataset has a different distribution of measured MICs, including a greater proportion of drug images with a low MIC dilution (61.4% after 14 days incubation have a dilution of 1 or 2, Figure 6—figure supplement 4) compared to the parent Expert dataset (45.8%). One should bear in mind this bias when interpreting the results, and to assist we will consider if key results change when we use the Expert-only dataset.
 
-## How to compare?
+### How to compare?
 
 Ideally one would apply an international standard for antibiotic susceptibility testing (AST) for Mycobacteria which would permit us to assess if a consensus measurement obtained from a crowd of volunteers is sufficiently reproducible and accurate to be accredited as an AST device. Unfortunately, there is no international standard for Mycobacterial AST – the need to subject Mycobacteria to the same processes and standards as other bacteria has been argued elsewhere (Schön et al., 2020) – we shall therefore tentatively apply the international standard for aerobic bacteria (International Standards Organization, 2007) which requires the results of the proposed antibiotic susceptibility testing method to an appropriate reference method.
 
@@ -89,53 +109,101 @@ Neither of the measurement methods used in constructing our reference consensus 
 
 This requires a new AST method that measures MICs to be compared to the reference method using two key metrics: the exact agreement and the essential agreement. The former is simply the proportion of definite readings which agree, whilst the latter allows for some variability and is defined as the “MIC result obtained by the AST device that is within plus or minus doubling dilution step from the MIC value established by the reference method” (International Standards Organization, 2007). To meet the standard any new AST method must be ≥95% reproducible and ≥90% accurate (both assessed using essential agreement) compared to the reference method (International Standards Organization, 2007).
 
-## Variability in classifications
+### Variability in classifications
 
 Inevitably there is a large degree of variation in the classifications made by different volunteers of the same drug image. Examining all 112,163 classifications made by the volunteers on the 6205 drug images taken after 14 days incubation and comparing them to the consensus of the laboratory scientist and AMyGDA shows that a single volunteer is likely to exactly agree with the Expert +AMyGDA dataset 74.6% of the time, excluding cases where either concluded the drug image could not be read (Supplementary file 1c). This rises to 86.4% when only considering essential agreement.
 
 The magnitude of agreement varies depending on the measured dilution: if the consensus view is that a drug image contains no growth, a single volunteer is likely to agree 64.1% of the time (Figure 2A), however this falls to 47.8% if the consensus dataset indicates that the first four wells contain growth before rising to 94.5% when the laboratory scientist decides the dilution is 8. We hence recapitulate our earlier observation that drug images with no growth or growth in all wells are easier to read than drug images where only a subset of drug wells contain growth.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig2-v3.jpg)
+
+**Figure 2.:** (A) The probability that a single volunteer exactly agrees with the Expert +AMyGDA dataset varies with the dilution. (B) The distribution of all dilutions in the Expert +AMyGDA dataset after 14 days incubation. The differences are due to different drugs having different numbers of wells as well as the varying levels of resistance in the supplied strains. NR includes both plates that could not be read due to issues with the control wells and problems with individual drugs such as skip wells. (C) The distribution of all dilutions measured by the BashTheBug volunteers. (D) A heatmap showing the concordance between the Expert +AMyGDA dataset and the classifications made by individual BashTheBug volunteers. Only cells with gt0.1% are labelled. (E) Two example drug images where both the Expert and AMyGDA assessed the MIC as being a dilution of 5 whilst a single volunteer decided no growth could be seen in the image. (F) Two example drug images where both the laboratory scientist and a volunteer agreed that the MIC was a dilution of 5. (G) Two example drug images where the laboratory scientist decided there was no growth in any of the wells, whilst a single volunteer decided there was growth in the first four wells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** The probability that a single volunteer exactly agrees with the Expert dataset varies with the dilution. The distribution of all MIC dilutions after 14 days incubation read by (B) laboratory scientists and (C) BashTheBug volunteers. NR includes both plates that could not be read due to issues with the control wells and problems with individual drugs such as skip wells. (D) A heatmap showing how for each set of images assessed by the laboratory scientist has having a specific dilution as the MIC, the classifications made by BashTheBug volunteers varied considerably. It is normalised so that each row sums to 100% and only cells with >0.1 % are labelled.
+
 The BashTheBug volunteers are likely to return a higher dilution than the Expert +AMyGDA consensus; this can be seen in the greater proportion of MICs with higher dilutions (Figure 2B–D). For example a single volunteer is at least 5 ×, and often > 10 ×, more likely to return an MIC one greater than the reference rather than an MIC one lower than the reference (Figure 2D). We shall return to this bias later.
 
 When the classification made by an individual volunteer does not agree with the consensus this is often (but not always) because they have misclassified the drug image (Figure 2E–G). Comparing the classifications made by individual volunteers with the larger, but presumably less accurate, Expert dataset we see that an individual volunteer is less likely to agree with a single laboratory scientist with the overall level of exact agreement falling from 74.6% to 65.3% (Supplementary file 1, Figure 2—figure supplement 1). Regardless of the comparison dataset used, it is clear that to achieve satisfactory levels of reproducibility and accuracy one must clearly ask several volunteers to assess each drug image and then form a consensus measurement which can be compared to the reference measurement. How should we form that consensus?
 
-## Consensus
+### Consensus
 
 There are a range of methods one can use to extract a consensus from a set of classifications; the simplest being majority voting, however, this is not practical since an outright majority is not guaranteed. Alternatively one may take the mode, mean or median of the classifications, although the former is not always defined and the last two do not always yield an integer. More sophisticated methods, such as the weighted-majority algorithm (Littlestone and Warmuth, 1989), give weights to the classifiers based on their accuracy; however, this requires each volunteer to first classify a ground-truth dataset, which was not available at the start of the project. Given the high level of inequality in participation (Figure 1C), such methods would be very difficult to apply in practice in our case. We shall therefore limit ourselves here to considering only the mean, median and mode. Since these methods all require the classifications to be numerical, we excluded all readings where the Expert +AMyGDA measurement and/or half or over of the volunteers decided the drug image could not be read. If the classification distribution was bi-modal, then the lower value of the dilution is returned. If necessary, the mean or median were also rounded down.
 
-## Reproducibility
+### Reproducibility
 
 To create two consensus measurements by the volunteers of each drug image, two separate sets of 17 classifications were drawn with replacement. By applying the relevant method (mean, median or mode) a consensus dilution was arrived at for each set and then the two results compared. To begin with only drug images with 17 or more classifications were considered and this bootstrapping process was repeated ten times for each drug image in the Expert+AMyGDA dataset. Considering only those drug images taken after 14 days incubation (Figure 3A, Supplementary file 1e), they are more likely to exactly agree with one another when the mode was applied (89.2 ± 0.1%) than the median (86.9 ± 0.1%) or mean (74.3 ± 0.1%). For the essential agreement, we find that the mean now performs best (97.2 ± 0.1%), followed by the median (94.2 ± 0.1%) and mode (94.1 ± 0.1%). Here and throughout, the standard error of the mean is quoted. As one might expect, the reproducibility for MICs measured by two laboratory scientists, as quantified by essential agreement, was previously shown to be slightly higher, at 97.9 % (Rancoita et al., 2018).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig3-v3.jpg)
+
+**Figure 3.:** (A) Only calculating the mean of 17 classifications achieves an essential agreement ≥95% for reproducibility International Standards Organization, 2007, followed by the median and the mode. (B) Heatmaps of the consensus formed via the mean, median or mode after 14 days incubation. Only drug images from the Expert + AMyGDA dataset are included. (C) The essential agreement between a consensus dilution formed from 17 classifications using the median or mode and the consensus Expert +AMyGDA dilution both exceed the required 90% threshold International Standards Organization, 2007. (D) The heatmaps clearly show how the volunteer consensus dilution is likely to be the same or greater than the Expert + AMyGDA consensus.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Only calculating the mean of 17 classifications achieves an essential agreement ≥95% for reproducibility International Standards Organization, 2007, followed by the median and then the mode. There is no specified threshold for exact agreement; the trend is reversed with the mode performing best, followed by the median and then the mean. (B) Heatmaps of the consensus formed via the mean, median, or mode after 14 days incubation. Each consensus dilution is a different selection, with replacement, of the original classifications. Drug images from the larger Expert dataset are included. (C) The essential agreement between a consensus dilution formed from 17 classifications using the median or mode and the consensus Expert dilution is ≥ 90%, which is the required threshold International Standards Organization, 2007. (D) The heatmaps clearly show how the volunteer consensus dilution is likely to be the same or greater than the Expert consensus.
+
 Hence only the mean exceeds the threshold for reproducibility (International Standards Organization, 2007) when 17 classifications are used to build a consensus. Repeating the analysis for the drug images in the larger Expert dataset yields the same conclusion (Figure 3—figure supplement 1). The heatmaps (Figure 3B) show how two consensus measurements arrived at via the mean tend to be similar but not necessarily identical to one another, whilst two consensus measurements derived using the mode are more likely to agree with one another but also are more likely to arrive at very different values. The median sits in between these two extremes.
 
-## Accuracy
+### Accuracy
 
 Comparing the consensus measurements from the volunteers to the set of MICs in the Expert+AMyGDA dataset yields a different picture (Figure 3C). The mode exactly agrees with the reference 80.9 ± 0.1% of the time, followed by the median (78.1 ± 0.1%) and then mean (68.4 ± 0.1%). The mean, despite performing best for reproducibility, has the lowest level of essential agreement (as well as exact agreement) with the Expert+AMyGDA readings (88.5 ± 0.1%), with the median (90.2 ± 0.1%) and mode (91.0 ± 0.1%) both exceeding the 90% accuracy threshold (International Standards Organization, 2007).
 
 The heatmaps show how the consensus dilution of the classifications made by the volunteers is much more likely to be higher than the Expert+AMyGDA measurement than lower (Figure 3D), regardless of the consensus method, indicating perhaps that volunteers are more likely than laboratory scientists to classify any dark regions in a well as bacterial growth, or that laboratory scientists are more willing to discount some features as artefacts for example air bubbles or sediment. Repeating the analysis using the Expert dataset (Figure 3—figure supplement 1) leads to lower values for the exact and essential agreements for all consensus methods – this is to be expected since this the Expert reference dataset contains a larger proportion of errors than the Expert+AMyGDA dataset.
 
-## Which method to choose?
+### Which method to choose?
 
-Despite being the most reproducible method as measured by essential agreement, we discount the mean since it suffers from relatively poor levels of exact agreement for both reproducibility and accuracy and its performance falls faster than the other methods when n is decreased. The median and mode have very similar reproducibilities and accuracy and we conclude they perform equally well. We can infer from this that bi-modal classification distributions are rare and that the median is often identical to the mode.
+Despite being the most reproducible method as measured by essential agreement, we discount the mean since it suffers from relatively poor levels of exact agreement for both reproducibility and accuracy and its performance falls faster than the other methods when $n$ is decreased. The median and mode have very similar reproducibilities and accuracy and we conclude they perform equally well. We can infer from this that bi-modal classification distributions are rare and that the median is often identical to the mode.
 
-## Reducing the number of classifications
+### Reducing the number of classifications
 
-Clearly it would be desirable and ethical to only require the volunteers to complete the minimum number of classifications to achieve an acceptable result. The simplest way to do this is to decrease the number of classifications, n, before a drug image is retired – this reduces both the reproducibility and accuracy of the consensus measurements (Figure 4, Supplementary file 1e, f), however perhaps not by as much as one might expect. The mean exceeds the essential agreement ≥ 95% reproducibility threshold for n≥13, whilst the mode and the median satisfy the accuracy criterion of essential agreement ≥ 90% for n≥3 and n≥11, respectively (Figure 4, Supplementary file 1f). Similar trends are observed when the Expert dataset is used as the reference (Figure 4—figure supplement 1) or when the plates are incubated for different periods of time (Figure 4—figure supplements 2 and 3). Accuracy is hence less sensitive than reproducibility to reducing the number of classifications used to build the consensus and, depending on the consensus method used, the number of classifications can be reduced whilst still maintaining acceptable levels of accuracy.
+Clearly it would be desirable and ethical to only require the volunteers to complete the minimum number of classifications to achieve an acceptable result. The simplest way to do this is to decrease the number of classifications, $n$, before a drug image is retired – this reduces both the reproducibility and accuracy of the consensus measurements (Figure 4, Supplementary file 1e, f), however perhaps not by as much as one might expect. The mean exceeds the essential agreement ≥ 95% reproducibility threshold for $n\geq13$, whilst the mode and the median satisfy the accuracy criterion of essential agreement ≥ 90% for $n\geq3$ and $n\geq11$, respectively (Figure 4, Supplementary file 1f). Similar trends are observed when the Expert dataset is used as the reference (Figure 4—figure supplement 1) or when the plates are incubated for different periods of time (Figure 4—figure supplements 2 and 3). Accuracy is hence less sensitive than reproducibility to reducing the number of classifications used to build the consensus and, depending on the consensus method used, the number of classifications can be reduced whilst still maintaining acceptable levels of accuracy.
 
-## Can we improve matters?
+![Figure 4.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig4-v3.jpg)
+
+**Figure 4.:** Reducing the number of classifications, $n$, used to build the consensus dilution decreases the reproducibility and accuracy of the consensus measurement.(A) The consensus dilution becomes less reproducible as the number of classifications is reduced, as measured by both the exact and essential agreements. (B) Likewise, the consensus dilution becomes less accurate as the number of classifications is decreased, however the highest level of exact agreement using the mean is obtained when $n=3$ and the mode, and to a lesser extent the median, are relatively insensitive to the number of classifications. These data are all with respect to the Expert +AMyGDA dataset.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Reducing the number of classifications, $n$, used to build the consensus dilution decreases the reproducibility and accuracy of the consensus measurement.(A) The consensus dilution becomes less reproducible as the number of classifications is reduced, as measured by both the exact and essential agreements. (B) Likewise, the consensus dilution becomes less accurate as the number of classifications is decreased, however the highest level of exact agreement using the mean is obtained when $n=3$ and the mode, and to a lesser extent the median, are relatively insensitive to the number of classifications. These data are all with respect to the Expert dataset.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** Shown are results for the Expert +AMyGDA dataset after (A) 7, (B) 10, (C) 14 and (D) 21 days of incubation. A previous study (Rancoita et al., 2018) showed that optimal results were achieved after 14 days incubation.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** Shown are results for the Expert +AMyGDA dataset after (A) 7, (B) 10, (C) 14 and (D) 21 days of incubation. A previous study (Rancoita et al., 2018) showed that optimal results were achieved after 14 days incubation.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** The plates are split into those with (A) low (≤ 10 %) growth, (B) medium (10 < growth ≤) growth and (C) high (> 50 %) growth. The drug images from the Expert +AMyGDA dataset were used and the proportion with MIC is the proportion of consensus readings that are a definite numerical minimum inhibitory concentration.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig4-figsupp5-v3.jpg)
+
+**Figure 4—figure supplement 5.:** The plates are split into those with (A) low (≤ 10% %) growth, (B) medium (10 < growth ≤ 50 %) growth and (C) high (> 50 %) growth. The drug images from the Expert +AMyGDA dataset were used and the proportion with MIC is the proportion of consensus readings that are a definite numerical minimum inhibitory concentration.
+
+### Can we improve matters?
 
 Retiring all drug images after a fixed number of classifications is simple but does not take account of the relative difficulty of the classification task. If one was able to group the drug images by difficulty, either before upload or dynamically during classification, then one could optimally target the work undertaken by the volunteers. Due to the inherent difficulties in culturing M. tuberculosis, there is a broad distribution of growth in the positive control wells after 14 days incubation (Figure 6—figure supplement 3). One might expect that drug images with poor growth would be more challenging to classify, however, segmenting by low, medium and high growth shows the amount of growth in the positive control wells has little effect on either the reproducibility (Figure 4—figure supplement 4) or accuracy (Figure 4—figure supplement 5), regardless of the consensus method and number of classifications employed.
 
-Alternatively one could use the first few classifications performed by the volunteers to assess the difficulty of each drug image. For example, if the first n volunteers all return the same classification, then it is reasonable to assume that this is a straightforward image and it can be retired, with the remainder accruing additional classifications. Ideally one would want to develop an algorithm that assessed the likelihood of the classification not being altered by more classifications to allow a dynamic decision about when to halt, however, applying such an approach was not possible at the time in the Zooniverse.
+Alternatively one could use the first few classifications performed by the volunteers to assess the difficulty of each drug image. For example, if the first $n$ volunteers all return the same classification, then it is reasonable to assume that this is a straightforward image and it can be retired, with the remainder accruing additional classifications. Ideally one would want to develop an algorithm that assessed the likelihood of the classification not being altered by more classifications to allow a dynamic decision about when to halt, however, applying such an approach was not possible at the time in the Zooniverse.
 
-To estimate the potential value in applying a simple approach to dynamically retiring drug images, we shall consider applying the median after 14 days of incubation and will arbitrarily retire a drug image if the first three volunteers all made the same classification, with all other drug images being retired after 17 classifications. This simple protocol reduces the number of classifications required to n=8.8, a reduction of 48%, and the reproducibility, as measured by exact agreement, rises from 86.8% to 87.6%, whilst the essential agreement remains unchanged (94.2–94.4%). The accuracy, assessed in the same way, behaves similarly with the exact agreement increasing from 78.1% to 78.8% with the essential agreement remaining unaltered (90.2–90.3%). Hence retiring some of the drug images at n=3 not only dramatically reduces the number of classifications required but also improves the result in a few cases, presumably because the subsequent classifications have a small chance of altering the dilution by a single unit, hence worsening the exact agreement but not affecting the essential agreement.
+To estimate the potential value in applying a simple approach to dynamically retiring drug images, we shall consider applying the median after 14 days of incubation and will arbitrarily retire a drug image if the first three volunteers all made the same classification, with all other drug images being retired after 17 classifications. This simple protocol reduces the number of classifications required to $n=8.8$, a reduction of 48%, and the reproducibility, as measured by exact agreement, rises from 86.8% to 87.6%, whilst the essential agreement remains unchanged (94.2–94.4%). The accuracy, assessed in the same way, behaves similarly with the exact agreement increasing from 78.1% to 78.8% with the essential agreement remaining unaltered (90.2–90.3%). Hence retiring some of the drug images at $n=3$ not only dramatically reduces the number of classifications required but also improves the result in a few cases, presumably because the subsequent classifications have a small chance of altering the dilution by a single unit, hence worsening the exact agreement but not affecting the essential agreement.
 
-A fairer test is to ask if this dynamic approach improves performance if we are constrained to a fixed number of total classifications: if we choose n=9, then the reproducibility of the median (as measured by exact and essential agreements) improves from 83.0–92.2% to 87.6–94.4% and the accuracy, measured in the same way, improves slightly from 77.2–89.6% to 78.8–90.3%. We therefore conclude that even a simple dynamic approach to retiring images would minimise the work done by the volunteers / allow more images to be classified.
+A fairer test is to ask if this dynamic approach improves performance if we are constrained to a fixed number of total classifications: if we choose $n=9$, then the reproducibility of the median (as measured by exact and essential agreements) improves from 83.0–92.2% to 87.6–94.4% and the accuracy, measured in the same way, improves slightly from 77.2–89.6% to 78.8–90.3%. We therefore conclude that even a simple dynamic approach to retiring images would minimise the work done by the volunteers / allow more images to be classified.
 
-## Variation by drug
+### Variation by drug
 
 So far we have analysed the reproducibility and accuracy of consensus MICs obtained from a crowd of volunteers, thereby aggregating the results for each of the 13 anti-tuberculars (excl. PAS) present on the UKMYC5 plate design. The reproducibility of each drug, as measured by the exact and essential agreements, varies between 79.6–91.4% and 90.8–97.0%, respectively (Figure 5A). This is consistent with an earlier study which found that intra- and inter-laboratory reproducibility when the drugs were read by a scientist using a Vizion instrument varied between 93.4-99.3 % and 87.1-99.1 % (as measured by essential agreement, excl. PAS), respectively (Rancoita et al., 2018). Earlier we showed that the reproducibility of the whole plate under these conditions when assessed using the essential agreement is 94.2 ± 0.1% (Figure 3A) – this is below the 95% threshold specified by an international standard for aerobic bacteria (International Standards Organization, 2007). Applying the same threshold to each drug we find that five out of the 13 drugs meet or exceed the threshold whilst the plate as a whole does not. The accuracy of each drug varies more widely: between 48.4–88.9% and 82.8–94.7% when assessed using the exact and essential agreement, respectively. Hence whilst the accuracy of the plate as a whole was 90.2 ± 0.1%, just exceeding the 90% threshold, only six out of 13 drugs surpassed the same threshold.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig5-v3.jpg)
+
+**Figure 5.:** Consensus MICs were arrived at by taking the median of 17 classifications after 14 days incubation. The essential and exact agreements are drawn as red and green bars, respectively. For the former the minimum thresholds required are 95% and 90% for the reproducibility and accuracy, respectively (International Standards Organization, 2007). See (Figure 5—figure supplement 1) for the other consensus methods.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** A total of 17 classifications were used for each measurement and either the mean or mode was used to obtain a consensus reading of the (A) reproducibility and (B) accuracy. The essential agreement is drawn in red and the required thresholds are 95% and 90% for the reproducibility and accuracy, respectively (International Standards Organization, 2007). The exact agreement is drawn in green and no threshold is defined. The drug abbreviations are defined in (Figure 6—figure supplement 1). The dataset used was Expert +AMyGDA.
 
 The variation in reproducibility and accuracy between anti-tuberculars, as well as between the exact and essential agreement for a single compound, is due to a number of factors, not limited to the number and concentration range of the wells on the plate design, the mechanisms of both action and resistance, the prevalence of resistance and the degradation rate after lyophilisation, both during storage and after inoculation. For example, kanamycin passes the reproducibility and accuracy thresholds we have adopted and this is likely due to there being relatively few (five) drug wells on the UKMYC5 plate (Figure 6—figure supplement 1) and the mechanism of resistance being such a substantial proportion of samples either do not grow in any well, or grow in all the drug wells, making measurement more straightforward. The mechanism of action of each compound is likely to affect how ‘easy’ it is to determine the minimum inhibitory concentration. From the striking differences in exact and essential accuracies of reading ethambutol, moxifloxacin and linezolid we hypothesise the Mycobacterial growth diminishes more gradually with increasing concentration for these drugs, rather than coming to an abrupt end, as it does for other compounds.
 
@@ -157,15 +225,37 @@ Although the primary aim of this study was to assess whether the measurements pr
 
 ## Materials and methods
 
-## Plate design
+### Plate design
 
 The CRyPTIC project has collected a large number (20,637) of clinical TB samples, each having the MICs of a panel of 13 antibiotics measured using a 96-well broth microdilution plate with the majority of samples also undergoing whole genome sequencing. Samples were collected by 14 laboratories based in 11 countries spread across five continents and included all the major lineages and were biased towards drug resistance (CRyPTIC Consortium, 2022, The CRyPTIC Consortium, 2022). Two plate designs were used, with the second (UKMYC6) being an evolution of the first (UKMYC5) plate design. In this paper we shall focus on data collected using the UKMYC5 plate design which is itself a variant of the MYCOTB 96-well microdilution plate manufactured by Thermo Fisher containing 14 anti-TB drugs. UKMYC5 includes two repurposed compounds (linezolid and clofazimine) and two new compounds (delamanid and bedaquiline). Since 96-well plates have 8 rows and 12 columns, fitting 14 drugs, alongside two positive control wells, onto the plate necessitated a complex design (Figure 6—figure supplement 1).
 
 Each of the antibiotics on the UKMYC5 plate is present at 5–8 concentrations, each double the previous. The smallest concentration that prevents growth of M. tuberculosis after two weeks of incubation is the minimum inhibitory concentration (MIC). Since M. tuberculosis is notoriously difficult to culture and inspect, relying on a reading taken by a single expert (laboratory scientist) would likely have led to high levels of errors in the dataset.
 
-## Image dataset
+### Image dataset
 
 The images considered by the crowd of volunteers originated from an earlier study whose aim was to assess if the UKMYC5 plate was sufficiently reproducible and accurate for use as a high-throughput research MIC measurement device (Rancoita et al., 2018). Seven CRyPTIC laboratories were each sent thirty one vials containing one of 19 external quality assessment (EQA) M. tuberculosis strains, including the reference strain H37Rv ATCC 27294 (Kubica et al., 1972). The EQA strains varied in their resistance profiles (Rancoita et al., 2018). Thirty of the vials were blinded and the last contained the reference strain. Within the thirty vials, some of EQA strains were duplicated and two of the blinded strains were also the reference strain. Since some labs only received a subset of the 31 vials (Supplementary file 1a), a total of 447 plates were inoculated and then incubated for 3 weeks (Figure 6A). Due to the slow growth rate of M. tuberculosis, minimum inhibitory concentrations of the 14 drugs on the plate were measured after 7, 10, 14, and 21 days by two scientists using a Thermo Fisher Sensititre Vizion Digital MIC viewing system, a mirrored-box and a microscope. One or two photographs were also taken each time using the Vizion instrument (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig6-v3.jpg)
+
+**Figure 6.:** (A) 447 UKMYC5 plates were prepared and read after 7, 10, 14 and 21 days incubation. (B) The minimum inhibitory concentrations (MIC) for the 14 drugs on each plate were read by an by Expert, using a Vizion instrument. The Vizion also took a photograph which was subsequently analysed by AMyGDA – this software then composited 14 drug images from each photograph, each containing an image of the two positive control wells. To allow data from different drugs to be aggregated, all MICs were converted to dilutions. (C) All drug images were then uploaded to the Zooniverse platform before being shown to volunteers through their web browser. Images were retired once they had been classified by 17 different volunteers. Classification data were downloaded and processed using two Python modules (pyniverse +bashthebug) before consensus measurements being built using different methods.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** A previous study (Rancoita et al., 2018) showed that para-aminosalicylic acid (PAS) performed poorly and it has been removed from the subsequent UKMYC6 plate design. We have therefore excluded this drug from all analyses. Each drug was contained in 5, 6, 7, or 8 wells with each well having double the concentration of drug as the one before. The concentration of the first and last well in each drug series is labelled (mg/L). Two wells contain no drug and are therefore positive control wells.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig6-figsupp2-v3.jpg)
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** (A) The distribution of the mean positive control well growth, as measured by AMyGDA, for the Expert +AMyGDA dataset. The dataset is arbitrarily split into three categories: low (<10%), medium (10 ≤ growth < 50 %) and high (≥ 50 %) growth. The proportions of the dataset in each category are labelled. (B) The distribution of the mean positive control well growth, as measured by AMyGDA, for the Expert dataset. There are around twice as many plates in this dataset (Supplementary file 1c).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig6-figsupp4-v3.jpg)
+
+**Figure 6—figure supplement 4.:** The growth of the bacteria is also evident as the number of days the sample was incubated for is increased.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/75046/elife-75046-fig6-figsupp5-v3.jpg)
+
+**Figure 6—figure supplement 5.:** The average bias per volunteer, as defined by the difference between a volunteer’s reading and that from the Expert +AMyGDA dataset, is plotted against the total number of classifications done by each volunteer. Only volunteers who have done 10 or more classifications are plotted.
 
 The study showed that the UKMYC5 plate is reproducible and that it is optimal to read the plate using either a Thermo Fisher Vizion instrument or a mirrored-box after 14 days of incubation (Rancoita et al., 2018). It also showed that para-aminosalicylic acid (PAS) was not reproducible on the plate and therefore this drug is excluded in all subsequent analyses. Each image was processed and analysed by some bespoke software, the Automated Mycobacterial Growth Detection Algorithm (AMyGDA), that segmented each photograph, thereby providing a second independent MIC reading of all the drugs on each plate (Figure 6B; Fowler et al., 2018c).
 
@@ -173,10 +263,10 @@ Early internal tests using the Zooniverse platform showed that asking a voluntee
 
 Each UKMYC5 plate yielded 14 composite images, one for each drug. Throughout the following analysis we shall aggregate all the data from the different drugs on the UKMYC5 plate. To facilitate this we shall therefore consider the dilution, which is defined as the number of the well in the drug image with the lowest antibiotic concentration which prevents bacterial growth, rather than the minimum inhibitory concentration. Following upload to the Zooniverse platform, the retirement threshold was set to 17 classifications, however some images attracted additional classifications with 421 images having ≥ 34 classifications whilst 89 have 100 or greater (Supplementary file 1b, Figure 6—figure supplement 2). This is due, we believe, to images not being removed when retired, but instead having a ”Finished!” sticker added and hence images can accrue additional classifications, especially at times when the volunteers have completed all the uploaded images. Each volunteer is only permitted to classify each image once.
 
-## Analysis
+### Analysis
 
 The resulting classifications were downloaded from the Zooniverse platform, either by a web browser or using the panoptes-cli command line tool (McMaster et al., 2021). Two Python modules were written to parse, store, manipulate and graph this classification data. The first, pyniverse (Fowler, 2018a), is designed to be generic for Zooniverse projects whilst the second, bashthebug (Fowler, 2018b), inherits from the first and adds functionality specific to BashTheBug (Figure 6C). Both are freely available to download and use. These Python modules output several Pandas (McKinney, 2010) dataframes which were then indexed, filtered and joined to other dataframes containing the sample information and the MIC readings taken by the expert and AMyGDA software. AMyGDA also measured the growth in the two positive control wells and this was also recorded in a dataframe. All subsequent analysis was performed using Python3 in a jupyter-notebook (see Data Availability Statement) and all graphs were plotted using matplotlib.
 
-## Engagement
+### Engagement
 
 In addition to the Zooniverse project page, which contained background information, a tutorial and FAQs, we setup a blog (Fowler, 2017) and a variety of social media channels, focussing mainly on Twitter (@bashthebug). These all used a professionally designed logo and typeface (Figure 6C), allowing instantaneous recognition of the project, which is important since the Zooniverse platform hosts tens of projects at any one time, and to indirectly convey that this is a professional project and therefore of scientific and societal importance. Since the blog was launched in March 2017 we have written 71 posts, attracting 7,393 visitors who made 13,811 views. At the time of writing, the Twitter account, @bashthebug, has 393 followers and has tweeted 400 times. Finally, the volunteers interacted with one another as well as the project team via the BashTheBug Talk Boards on the Zooniverse platform. A total of 6,255 posts were made by 1042 individuals on 4834 topics. During the course of the project, one of our more experienced volunteers (EMLB) became a de facto moderator by answering so many of the questions posted (>500) which we recognised by giving her moderator status and she is also an author of this paper.

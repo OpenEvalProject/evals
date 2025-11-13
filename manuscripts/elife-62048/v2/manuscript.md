@@ -49,51 +49,267 @@ In addition to neuronal changes, ISR activation can modify immune responses via 
 
 ## Results
 
-## ISRIB resets the ISR in the brain of old mice
+### ISRIB resets the ISR in the brain of old mice
 
 ISR activation leads to global reduction in protein synthesis but also to translational up-regulation of a select subset of mRNAs whose translation is controlled by small upstream open-reading frames in their 5′-UTRs (Hinnebusch et al., 2016; Sonenberg and Hinnebusch, 2009). One well-studied ISR-upregulated target protein is ATF4 (activating transcription factor 4) (Chen et al., 2003; Pasini et al., 2015). We recently showed ISRIB administration reversed mild head trauma-induced elevation in ATF4 protein (Krukowski et al., 2020). Using the same ISRIB treatment paradigm of daily injections on 3 consecutive days (Chou et al., 2017; Krukowski et al., 2020), we found decreased age-associated ATF4 protein levels in mouse brain lysates when compared to vehicle-treated controls during ISRIB administration (Figure 1—figure supplement 1). ATF4 levels 18 days after cessation of ISRIB treatment showed persistent reduction in age-induced ATF4 protein levels that were indistinguishable from young mice (Figure 1A,B, Figure 1—figure supplement 2A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62048/elife-62048-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental dosing scheme: ISRIB treatment denoted by syringes (three injections). (B) ISRIB treatment reduced ATF4 protein levels chronically 18 days after ISRIB treatment was complete. One-way ANOVA (F = 18.8, p<0.001); with Tukey post-hoc analysis. (C) Modest age-induced increases in p-GCN2 when comparing young and old male mice. One-way ANOVA (F = 6.6, p<0.05); with Tukey post-hoc analysis. (D, E) Age and ISRIB administration did not impact p-PERK or p-PKR protein levels. Brain lysates of specific protein levels listed normalized to actin. Young n = 5, Old = 3, Old + ISRIB = 3. Individual animal values represented by dots; lines depict group mean ± SEM. *p<0.05; ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62048/elife-62048-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The impact of ISRIB on known ISR activation pathways was investigated by western blot analysis of brain lysates after 3 ISRIB injections. (A) Raw western blot data. Each lane represents an individual animal brain extract. (B) ISRIB treatment reduced ATF4 protein levels during drug administration. Old males (Chou et al., 2018) and females (Anderson et al., 1998): Old n = 10; Old + ISRIB n = 10. Student’s t-test. *p<0.05. Individual animal values represented by dots; lines depict group mean ± SEM.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62048/elife-62048-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The impact of ISRIB on known ISR kinases and activation pathways was investigated by western blot analysis of brain lysates (raw western blot data) at day 20. (A) ATF4 (B) p-GCN2, p-PKR, p-PERK. Each lane represents an individual animal brain extract.
+
 The key regulatory step in the ISR lies in the phosphorylation of eukaryotic translation initiation factor eIF2 (26). Four known kinases can phosphorylate Ser51 in its α-subunit of (eIF2α) to activate the ISR (Wek, 2018): HRI (heme-regulated inhibitor), PKR (double-stranded RNA-dependent protein kinase), PERK (PKR-like ER kinase) and GCN2 (General amino acid control nonderepressible 2). Only three of these kinases are known to be expressed in the mammalian brain (PKR, PERK, GCN2). To understand upstream modifiers of age-related ISR activation, we investigated the impact of age and ISRIB administration on the expression of these kinases. We found a modest, but significant increase in activated GCN2 (as indicated by its phosphorylated form p-GCN2) when comparing young and old brain lysates (Figure 1C, Figure 1—figure supplement 2B). Moreover, when ISRIB was administered weeks prior (Figure 1A), GCN2 activation returned to levels comparable to young brains (Figure 1C, Figure 1—figure supplement 2B). Age and ISRIB did not impact phosphorylation status of PERK and PKR in total brain lysates (Figure 1D,E, Figure 1—figure supplement 2B). Thus, brief ISRIB administration in the old brain has long-lasting effects on ISR activation.
 
-## Inhibition of the ISR reverses age-induced decline in spatial learning and memory
+### Inhibition of the ISR reverses age-induced decline in spatial learning and memory
 
 To assess whether the reduction in ISR activation affects age-related cognitive defects, we tested the capacity for spatial learning and memory in young and old mice in a radial arm water maze (Chou et al., 2017; Alamed et al., 2006). This particular forced-swim behavior tool measures hippocampal-dependent spatial memory functions in rodents and has been previously used to assess age-related cognitive deficits (Chou et al., 2018; Horowitz et al., 2020). Animals were trained for 2 days (2 learning blocks/day) to locate a platform hidden under opaque water in one of the eight arms using navigational cues set in the room (Figure 2A). We recorded the total number of entries into the non-target arm (errors) before the animal found the escape platform with automated tracking software and used it as a metric of learning. After 2 days of training, young animals averaged one error prior to successfully locating the escape platform, whereas old animals averaged three errors, indicating their reduced learning capacity (Figure 2—figure supplement 1A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62048/elife-62048-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental Design: Old (~19 months) animals underwent behavioral analysis in a radial arm water maze (RAWM) and a delayed matching to place paradigm (DMP). ISRIB or vehicle administration (2.5 mg/kg intraperitoneal) occurred daily during the learning phase of RAWM denoted by syringes (days 0–2). (B) ISRIB treatment improved memory 1 week after administration in male rodents. One-way ANOVA (F = 4.8, p<0.05); with Tukey post-hoc analysis. Young n = 10; Old n = 23; Old + ISRIB n = 21. (C) Age-induced deficits in working and episodic learning and memory restored weeks after ISRIB administration. Animals performed the DMP from day 20 to day 23. Average of all trials per group for each day. Days 20, 21 = 4 trials/day. Days 22,23 = 3 trials/day. Two-way repeated measures ANOVA reveals a significant difference between groups p<0.01 (denoted in figure legend) and time effect p<0.01. *p<0.05, **p<0.01. Old n = 18; Old + ISRIB n = 16. Individual animal scores represented by dots; lines depict group mean ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62048/elife-62048-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** RAWM was used to measure age-induced deficits in spatial learning. Animals ran two blocks (three trials/block) on each learning day. (A) Old animals performed significantly worse that young animals. Two-way repeated measures ANOVA revealed a significant interaction (p<0.001). Bonferroni post-hoc to determine differences at various blocks. Old males n = 19, Young males n = 10. *p<0.05. (B) ISRIB or vehicle administration (2.5 mg/kg intraperitoneal) occurred days 0–2. Compared with the old group, ISRIB treated animals made significantly fewer errors over the course of learning. Two-way repeated measures ANOVA reveals a significant difference between groups p<0.05. Old males n = 19; Old + ISRIB males n = 15. (C) No differences were measured between young +/- ISRIB administration. Two-way repeated measures ANOVA revealed no significant differences. Young males n = 10; Young males + ISRIB n = 10 (D) Cmp-003 (5 mg/kg intraperitoneal) administration occurred days 0–2. Old mice that received Cmp-003 performed significantly better than old mice that received vehicle. Two-way repeated measures ANOVA revealed a significant group (p<0.01) and time effect (p<0.05). Old males n = 9, Old males + Cmp-003 n = 9. **p<0.01. Data are means ± SEM.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62048/elife-62048-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** RAWM was used to measure age-induced deficits in learning and memory. ISRIB treatment improved memory 1 week after administration in female rodents. Student t-test. Old female n = 12; Old female + ISRIB n = 11. *p<0.05. Individual animal scores represented by dots, lines depict group mean and SEM.
 
 We next tested whether pharmacological inhibition of the ISR could modify the age-related spatial learning deficits. ISRIB treatment started the day before the first training day and continued with daily injections throughout the duration of the training (three injections in total; see Figure 2A, left). By the end of 2 days of training, ISRIB-treated old animals averaged two errors prior to finding the escape platform, whereas vehicle-treated old animals averaged three, denoting significant learning improvement in the mice that received ISRIB (Figure 2—figure supplement 1B). No difference in learning performance was measured in young mice that received the identical treatment paradigm (Figure 2—figure supplement 1C), suggesting that ISRIB-induced learning improvement measured in this training regime is age-dependent. These results were confirmed in an independent old animal cohort, in which we tested an additional ISR inhibitor (Cmp-003, a small molecule with improved solubility and pharmacological properties (PCT/US18/65555)), using an identical training/injection paradigm (Figure 2—figure supplement 1D). Old animals that received Cmp-003 made significantly fewer errors prior to locating the escape platform than old animals that received vehicle injections, again indicating significant learning improvement.
 
 Spatial memory of the escape location was measured 1 week later by reintroducing the animals into the pool and measuring the number of errors before they located the hidden platform. The animals did not receive any additional treatment during this task. Old mice treated with ISRIB 1 week before made significantly fewer errors compared to matched, vehicle-treated-old male (Figure 2B) and female (Figure 2—figure supplement 2) mice. Remarkably, the memory performance of old animals treated with ISRIB a week before was comparable to that of young mice (Figure 2B). These results demonstrate that brief treatment with ISRIB rescues age-induced spatial learning and memory deficits, cementing a causative role of the ISR on long-term memory dysfunction.
 
-## ISRIB administration improves age-induced deficits in working and episodic memory weeks after treatment
+### ISRIB administration improves age-induced deficits in working and episodic memory weeks after treatment
 
 Given the long-lasting effect of brief ISRIB treatment on ATF4 protein levels in the brain and on memory function 1 week after drug administration, we next tested the duration of ISRIB effects on age-related cognitive function. On experimental day 20 (18 days post-ISRIB treatment, Figure 2A, right), we measured working and episodic memory using a delayed-matching-to-place paradigm (DMP) (Chou et al., 2017; Feng et al., 2017) in the same animal cohort without additional ISRIB treatment. Previous work has demonstrated that old mice display significant impairments when compared to young mice (Yousef et al., 2019; Castellano et al., 2017). During DMP animals learned to locate an escape tunnel attached to one of 40 holes in a circular table using visual cues. The escape location was changed daily, forcing the animal to relearn its location. To quantify performance, we used analysis tracking software to measure ‘escape latency’, reporting the time taken by the mouse to enter the escape tunnel.
 
 Old mice that received ISRIB treatment 18 days earlier displayed significant improvement over the 4-day testing period (Figure 2C; Day 20 vs. Day 23). By Day 23, post-treatment animals were locating the escape tunnel on average 20 s faster than the matched-vehicle group (Figure 2C). This behavior is indicative of improved working and episodic memory. By contrast, old animals that received vehicle injections did not learn the task (Figure 2C; Day 20 vs. Day 23), as previously observed (Yousef et al., 2019; Castellano et al., 2017). These results demonstrate that ISRIB administration increases cognitive performance in a behavioral paradigm measured weeks after administration.
 
-## ISRIB treatment reverses age-associated changes in hippocampal neuron function
+### ISRIB treatment reverses age-associated changes in hippocampal neuron function
 
 To determine the neurophysiological correlates of ISRIB treatment on cognition, we investigated its effects on hippocampal neuronal function. Utilizing whole cell patch clamping, we recorded intrinsic electrophysiological firing properties and synaptic input in CA1 pyramidal neurons of young and old mice and compared them to those of old mice treated with a single injection of ISRIB the day prior to recording (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62048/elife-62048-fig3-v2.jpg)
+
+**Figure 3.:** (A) Left: Image of pipette patched onto CA1 neuron in sagittal slice of hippocampus. Right: Representative traces from hippocampal CA1 pyramidal neurons from old animals treated with either vehicle (light blue) or ISRIB (dark blue) or young animals treated with vehicle (orange) showing the response to a current injection eliciting ~50 Hz spiking activity. Spikes are truncated (dashed line), and the AHP is visualized immediately following cessation of current injection (yellow square) and quantified as the change in voltage from baseline (dotted line). (B) Age-induced increases in AHP were measured when comparing young and old animals. ISRIB treatment reversed increased AHP to levels indistinguishable from young animals. Animals were injected with ISRIB (2.5 mg/kg) or vehicle intraperitoneal 1 day prior to recordings. One-way ANOVA (F = 4.461, p<0.05); with Tukey post-hoc analysis. *p<0.05. Each neuron is represented with a symbol; lines indicate the mean ± SEM (Neurons: Young males n = 10 (5 animals); Old males n = 12 (5 animals), Old + ISRIB males n = 19 (7 animals)) with 1–5 neurons recorded per animal. (C–E) Spine density was quantified in the CA1 region of the dorsal hippocampus from young and old Thy1-YFP-H mice. (C) Diagram of hippocampal region analyzed. SR = stratum radiatum. (D) Representative images from Old and Old + ISRIB mice. (E) A decrease in dendritic spine density was measured when comparing old mice to young mice. ISRIB treatment significantly increased spine density levels of old mice when compared to vehicle-treated old mice. 63x magnification with a water immersion objective. Young males n = 7 slides (two animals); Old males + Vehicle n = 12 slides (three mice); Old males + ISRIB n = 17 slides (four mice). Individual slide scores (relative to old mice) represented in dots, lines depict group mean ± SEM. One-way ANOVA (F = 18.57, p<0.001) with Tukey post-hoc analysis. **p<0.01; ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62048/elife-62048-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative traces from CA1 pyramidal neurons showing the membrane potential response to a 250 pA current injection in neurons from old animals treated with either vehicle (light blue) or ISRIB (dark blue) or young animals treated with vehicle (orange). Quantification of the action potential (AP) including the half width (B), amplitude (C), and threshold (D) did not show significant differences between CA1 pyramidal recordings from old, old + ISRIB-treated, or young mice. Likewise, evaluation of the maximum firing frequency (E) or how the frequency of spiking changes over time, quantified by the adaptation index (F) or with current injection, quantified by the slope of the relationship of firing frequency versus amplitude of current injection (F/I slope) (G) was also not significantly different between groups. Finally, passive membrane properties including the membrane time constant (tau) (H), membrane resistance (Rm) (I), and the resting membrane potential (J) were not significantly altered by age or ISRIB treatment. Each neuron is represented with a symbol; solid lines indicate the mean ± SEM. (One-way ANOVA for all comparisons; Neurons: and Young males n = 12 (5 animals); Old males n = 15 (5 animals), Old + ISRIB males n = 22 (7 animals)) with 1–5 neurons recorded per animal.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62048/elife-62048-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative whole cell voltage-clamp recordings showing sEPSCs from CA1 pyramidal neurons from old animals treated with either vehicle (light blue) or ISRIB (dark blue) or young animals treated with vehicle (orange). Arrows denote synaptic currents. (B) The sEPSC amplitude was not significantly different between groups (one-way ANOVA). (C) The sEPSC frequency was unchanged after ISRIB treatment or compared to young mice (Kruskal-Wallis test). The median amplitude or frequency for each neuron is represented with a symbol; solid lines indicate the mean ± SEM. (Neurons: Young males n = 11 (5 animals); Old males n = 15 (5 animals), Old + ISRIB males n = 18 (7 animals) with 1–5 neurons recorded per animal.).
 
 We evaluated alterations in intrinsic excitability by measuring action potential shape and frequency properties and passive membrane response properties produced by a series of hyperpolarizing and depolarizing current steps (20 steps from −250 to 700 pA, 250 ms duration). We also assessed the hyperpolarization of the membrane potential following high frequency firing, specifically the AHP following ~50 Hz spiking activity induced with a current step (Figure 3A). In agreement with previous reports (Disterhoft and Oh, 2007; McKiernan and Marrone, 2017; Oh et al., 2010; Rizzo et al., 2014; Kaczorowski and Disterhoft, 2009), old mice displayed a significantly increased AHP amplitude when compared to young mice (Figure 3B). ISRIB treatment reversed the age-induced increase in AHP amplitude, rendering the CA1 neuronal response in ISRIB-treated old mice indistinguishable from young mice (Figure 3B). We did not find significant differences in other action potential or passive membrane properties between groups (Figure 3—figure supplement 1).
 
 We also measured spontaneous excitatory postsynaptic currents (sEPSC), while holding the cell at −75 mV in a voltage clamp. Both the frequency and amplitude of sEPSCs were indistinguishable between groups (Figure 3—figure supplement 2). These data support that ISRIB treatment in old animals restores neuronal function to levels comparable to young neurons by affecting intrinsic excitability and specifically reducing the AHP following high-frequency firing.
 
-## ISRIB treatment reduces dendritic spine loss
+### ISRIB treatment reduces dendritic spine loss
 
 To determine if ISRIB might affect age-induced synaptic structural changes, we quantified dendritic spine density after ISRIB treatment in old mice with fluorescently labeled excitatory neurons (marked by a genomically encoded Thy1-YFP fusion protein). The hippocampus of old mice is characterized by a reduction in dendritic spine density that correlates with diminished cognitive output (von Bohlen und Halbach et al., 2006; Xu et al., 2018). Old Thy1-YFP expressing mice received ISRIB treatment and 2 days of behavioral training as described in Figure 2A. At the end of Day 2, we terminated the animals and harvested the brains for quantification of dendritic spine density in the hippocampus (stratum radiatum of CA1) (Figure 3C) using confocal microscopy imaging and unbiased analysis (Figure 3D). Similar to previous reports, we measured a significant reduction in dendritic spine density in old when compared to young Thy1-YFP mice (Figure 3E; von Bohlen und Halbach et al., 2006; Xu et al., 2018). ISRIB treatment significantly increased spine numbers when compared with age-matched vehicle-treated mice (Figure 3E). Taken together these data demonstrate that ISRIB administration improves both neuron structure and function in old mice.
 
-## Age-induced inflammatory tone is reduced following ISRIB treatment
+### Age-induced inflammatory tone is reduced following ISRIB treatment
 
 Because it is known that immune dysregulation in the brain increases with age (Oliveira Pisco et al., 2020) and correlates with reduced cognitive performance in old animals (Yousef et al., 2019; Villeda et al., 2011; Villeda et al., 2014; Baruch et al., 2014), we next investigated immune parameters impacted by ISRIB administration in the old brain. To this end, we first investigated glial cell activation (microglia and astrocytes) in hippocampal sections from of old mice and ISRIB-treated old mice by fluorescent microscopic imaging (during ISRIB administration, Figure 4—figure supplement 1). We measured, astrocyte and microglia reactivity as the percent area covered by GFAP and Iba-1. In these analyses, we observed no differences between the old and ISRIB-treated old animals (Figure 4—figure supplement 1B-G).
 
 Next, we performed quantitative PCR (qPCR) analyses on hippocampi from young, old, and ISRIB-treated animals on samples taken at the same time point as in the microscopic analysis (Figure 4—figure supplement 1A). We measured a panel of inflammatory markers, many of which are known to increase with age (Oliveira Pisco et al., 2020), with a particular focus on IFN-related genes as this pathway is implicated in age-related cognitive decline (Baruch et al., 2014; Deczkowska et al., 2017). Indeed, we found that age increased expression of a number of IFN response pathway genes, Rtp4, Ifit1, and Gbp10 (Figure 4A–C). Importantly, ISRIB administration reduced expression of Rtp4, Ifit1, and Gbp10 to levels that became indistinguishable from young animals (Figure 4A–C). Other inflammatory makers were also increased with age (Ccl2, Il6) but not affected by ISRIB treatment, whereas Cd11b was increased upon ISRIB administration alone (Table 1).
 
+**Table 1.**
+ Impact of age and ISRIB on mRNA expression in the hippocampus.Inflammatory, ISR mediators and neuronal health targets were investigated by qPCR analysis of hippocampal lysates after two ISRIB injections. Columns: (i) mRNA targets (ii) Young group mean ± SEM (iii) Old group mean ± SEM (iv) Old + ISRIB group mean ± SEM (v) ANOVA F value (vi) Significant denotation between groups (vii) n/group.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>TARGET</th>
+      <th>Young</th>
+      <th>Old</th>
+      <th>Old + ISRIB</th>
+      <th>ANOVA</th>
+      <th>Btw Groups</th>
+      <th>n: Yg/Old/Old + ISRIB</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ccl2</td>
+      <td>1.0 ± 0.1</td>
+      <td>2.3 ± 0.4</td>
+      <td>1.6 ± 0.1</td>
+      <td>F = 5.6*</td>
+      <td>Yg v Old**</td>
+      <td>8/7/7</td>
+    </tr>
+    <tr>
+      <td>Cd11b</td>
+      <td>1.0 ± 0.0</td>
+      <td>1.0 ± 0.0</td>
+      <td>1.2 ± 0.0</td>
+      <td>F = 6.6**</td>
+      <td>Yg v Old + ISRIB** Old v Old + ISRIB*</td>
+      <td>8/7/8</td>
+    </tr>
+    <tr>
+      <td>Il1-β</td>
+      <td>1.1 ± 0.1</td>
+      <td>1.4 ± 0.1</td>
+      <td>1.7 ± 0.1</td>
+      <td>F = 3.6*</td>
+      <td>Yg v Old + ISRIB*</td>
+      <td>8/7/8</td>
+    </tr>
+    <tr>
+      <td>Tnf α</td>
+      <td>1.0 ± 0.1</td>
+      <td>1.6 ± 0.3</td>
+      <td>2.1 ± 0.4</td>
+      <td>F = 2.7</td>
+      <td></td>
+      <td>7/7/8</td>
+    </tr>
+    <tr>
+      <td>Il-6</td>
+      <td>1.1 ± 0.2</td>
+      <td>1.8 ± 0.1</td>
+      <td>1.8 ± 0.2</td>
+      <td>F = 4.1*</td>
+      <td>Yg v Old*</td>
+      <td>8/7/8</td>
+    </tr>
+    <tr>
+      <td>Il-10</td>
+      <td>1.0 ± 0.1</td>
+      <td>1.4 ± 0.2</td>
+      <td>1.5 ± 0.2</td>
+      <td>F = 1.1</td>
+      <td></td>
+      <td>7/7/7</td>
+    </tr>
+    <tr>
+      <td>Irf7</td>
+      <td>1.0 ± 0.1</td>
+      <td>1.4 ± 0.1</td>
+      <td>1.2 ± 0.1</td>
+      <td>F = 1.5</td>
+      <td></td>
+      <td>8/7/8</td>
+    </tr>
+    <tr>
+      <td>Ifitm3</td>
+      <td>1.0 ± 0.0</td>
+      <td>1.2 ± 0.1</td>
+      <td>1.0 ± 0.0</td>
+      <td>F = 0.8</td>
+      <td></td>
+      <td>8/7/8</td>
+    </tr>
+    <tr>
+      <td>Isg15</td>
+      <td>1.0 ± 0.0</td>
+      <td>1.3 ± 0.1</td>
+      <td>1.2 ± 0.0</td>
+      <td>F = 2.0</td>
+      <td></td>
+      <td>8/7/7</td>
+    </tr>
+    <tr>
+      <td>Ifi204</td>
+      <td>1.1 ± 0.2</td>
+      <td>1.4 ± 0.2</td>
+      <td>1.5 ± 0.1</td>
+      <td>F = 1.2</td>
+      <td></td>
+      <td>6/7/7</td>
+    </tr>
+    <tr>
+      <td>Gbp5</td>
+      <td>1.0 ± 0.0</td>
+      <td>1.2 ± 0.1</td>
+      <td>1.1 ± 0.0</td>
+      <td>F = 2.6</td>
+      <td></td>
+      <td>8/7/8</td>
+    </tr>
+    <tr>
+      <td>Oasl1</td>
+      <td>1.0 ± 0.0</td>
+      <td>1.8 ± 0.3</td>
+      <td>0.9 ± 0.1</td>
+      <td>F = 4.9*</td>
+      <td>Yg v Old*; Old v Old + ISRIB*</td>
+      <td>8/7/8</td>
+    </tr>
+    <tr>
+      <td>Ophn1</td>
+      <td>1.0 ± 0.0</td>
+      <td>0.9 ± 0.0</td>
+      <td>1.1 ± 0.0</td>
+      <td>F = 1.8</td>
+      <td></td>
+      <td>8/7/8</td>
+    </tr>
+    <tr>
+      <td>Bdnf</td>
+      <td>1.0 ± 0.0</td>
+      <td>0.9 ± 0.0</td>
+      <td>1.0 ± 0.0</td>
+      <td>F = 2.7</td>
+      <td></td>
+      <td>8/7/8</td>
+    </tr>
+    <tr>
+      <td>Gadd34</td>
+      <td>1.0 ± 0.0</td>
+      <td>0.8 ± 0.0</td>
+      <td>0.9 ± 0.0</td>
+      <td>F = 1.8</td>
+      <td></td>
+      <td>7/7/8</td>
+    </tr>
+    <tr>
+      <td>Pkr</td>
+      <td>1.0 ± 0.0</td>
+      <td>1.0 ± 0.0</td>
+      <td>1.1 ± 0.0</td>
+      <td>F = 1.0</td>
+      <td></td>
+      <td>8/7/8</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 4.](https://cdn.elifesciences.org/articles/62048/elife-62048-fig4-v2.jpg)
+
+**Figure 4.:** Inflammatory genes were investigated in the hippocampus of young and old mice by qPCR analysis. (A-C) ISRIB administration reversed age-induced increases in Rtp4, Ifit1, and Gbp10. (A) Rtp4, One-way ANOVA (F = 12.23, p<0.001) with a Tukey-post analysis. Young males n = 8; Old males n = 7; Old + ISRIB males n = 8. (B) Ifit1, One-way ANOVA (F = 8.8; p<0.01) with a Tukey-post analysis. Young males n = 8; Old males n = 7; Old + ISRIB males n = 8. (C) Gbp10, One-way ANOVA (F = F4.2, p<0.05) with a Tukey-post analysis. Young males n = 8; Old males n = 7; Old + ISRIB males n = 7. (D) Cd3 gene-expression (a marker for T cells) changes in the hippocampus of young and old animals were measured by qPCR analysis. Cd3 was significantly increased with age. ISRIB administration returned Cd3 expression levels to those comparable to young animals. One-way ANOVA (F = 5.2; p<0.05). Tukey-post hoc analysis. Young males n = 8; Old males n = 7; Old + ISRIB males n = 8. (E, F) Peripheral T cell levels were measured by flow cytometric analysis of whole blood. (E) ISRIB treatment reduced CD8+ T cell percentages (of CD45+ cells) in the peripheral blood. Student t-test. Old males n = 7; Old + ISRIB males n = 8. (F) CD4+ T cell percentages (of CD45+ cells) were not impacted. Individual animal scores represented by dots; lines depict group mean ± SEM. (G) A significant positive correlation was measured between cognitive performance on day 2 of the RAWM (errors) and multiple inflammatory markers (Cd3, Ifit1, Rtp4, Gbp10, Gbp5, Oasl1, Ccl2, Il-6). Linear regression was measured by Pearson R correlation, R value denoted with significance. *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62048/elife-62048-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) ISRIB administration scheme. (B–G) Glial cell was quantified in the stratum radiatum of the CA1 region of the dorsal hippocampus from old Thy1-YFP-H mice. GFAP was used to measure astrocyte activity. Representative images for GFAP staining of (B) old and (C) old + ISRIB mouse. (D) No differences in GFAP percent area were measured when comparing old and old + ISRIB animals. Iba-1 was used to measure microglia activity. Representative images for Iba-1 staining of (E) old and (F) old + ISRIB mouse. (G) No differences in Iba-1 percent area were measured when comparing old and old + ISRIB animals. 63x magnification with a water immersion objective. Old males n = 12–19 slides (three mice); Old males + ISRIB n = 18–20 slides (four mice). Individual slide scores (relative to old mice) represented in dots, lines depict group mean ± SEM.
+
 Using these same hippocampal extracts, we next measured T cell responses. Similar to other reports (Dulken et al., 2019; Mrdjen et al., 2018), we observed a significant increase in T cell marker mRNA expression (Cd3) in the hippocampus of old compared to young mice (Figure 4D). ISRIB treatment in the old mice reduced the expression of the T cell marker to a level comparable to that observed in young mice (Figure 4D). The ISRIB-induced reduction in T cell marker levels was not limited to the brain but extended to the peripheral blood of old animals, with CD8+ T cell percentages reduced following ISRIB administration (Figure 4E). By contrast, we observed no changes in CD4+ T cell levels (Figure 4F).
 
 Given the broad and varied response of immune parameters in response to ISRIB treatment, we next explored possible relationships between behavioral performance and age-related inflammatory tone. T cell marker mRNA expression in the brain positively correlated with cognitive performance: mice with lower T cell marker expression made fewer errors prior to locating the escape platform during memory testing on Day 2 (Figure 4G). We also observed significant positive correlations when comparing memory performance on day 2 (errors) with the mRNA levels of multiple IFN response pathway genes (Ifit1, Rtp4, Gbp10, Gbp5, Oasl1) and additional inflammatory markers (Ccl2, Il6) (Figure 4G). These data demonstrate that increased inflammatory marker expression correspond with poorer cognitive performance, even when we did not observed differences between the groups. These studies revealed that ISRIB treatment impacts a broad number of immune parameters both in the periphery and in the brain reducing the age-related inflammatory tone which strongly correlates with improved cognition.
 
-## ISRIB treatment resets age-related ISR activation
+### ISRIB treatment resets age-related ISR activation
 
 Finally, we investigated the transcriptional expression of ISR mediators and neuronal health markers in the hippocampal lysates used above. We did not detect differences in Gadd34 (Ppp1r15a), Pkr (Eif2ak2), Bdnf1, and Ophn1 mRNA levels with age or ISRIB treatment (Table 1). Interestingly however, when analyzed as individual animals, we found a negative correlation between Ppp1r15a mRNA and cognitive performance: animals with less Ppp1r15a mRNA made more errors prior to locating the escape platform during memory testing (Figure 5A). GADD34, the regulatory subunit of one of the two eIF2α phosphatases, acts in a feedback loop as a downstream target of ATF4 (Brush et al., 2003; Connor et al., 2001; Novoa et al., 2001). Induction of GADD34 leads to decreased phosphorylation of eIF2 which counteracts ISR activation. Indeed, ISRIB treatment reduced p-eIF2 levels in total brain lysates (Figure 5B; Figure 5—figure supplement 1), suggesting that ISRIB may break a feedback loop thereby resetting age-related ISR activation.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62048/elife-62048-fig5-v2.jpg)
+
+**Figure 5.:** (A) A significant negative correlation was measured between cognitive performance on day 2 of the RAWM (errors) and Ppp1r15a mRNA expression. Linear regression was measured by Pearson R correlation, R value denoted with significance. (B) ISRIB treatment reduced p-eIF2α protein levels. Brain lysates of p-eIF2α protein levels normalized to actin. Old males n = 10; ISRIB males n = 10. Student’s t-test. **p<0.01. Data are means ± SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62048/elife-62048-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The impact of ISRIB on p-eIF2 was investigated by western blot analysis of brain lysates after three ISRIB injections. Raw western blot data. Each lane represents an individual animal brain extract.
 
 ## Discussion
 
@@ -115,35 +331,35 @@ Aging is an inevitable process for all living creatures, improving our understan
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All experiments were conducted in accordance with National Institutes of Health (NIH) Guide for the Care and Use of Laboratory Animals and approved by the Institutional Animal Care and Use Committee of the University of California, San Francisco (Protocol 170302). Male and female C57B6/J wild-type (WT) mice were received from the National Institute of Aging. Thy-1-YFP-H (in C57 background) males were bred and aged in house. Old animals started experimentation at ∼19 months of age and young animals 3–6 months of age. Animal shipments were received at least 1 week prior to start of experimentation to allow animals to habituation the new surroundings. Mice were group housed in environmentally controlled conditions with reverse light cycle (12:12 hr light:dark cycle at 21 ± 1°C; ~50% humidity) and provided food and water ad libitum. Behavioral analysis was performed during the dark cycle.
 
-## Drug administration
+### Drug administration
 
 ISRIB solution was made by dissolving 5 mg ISRIB in 2.5 mLs dimethyl sulfoxide (DMSO) (PanReac AppliChem, 191954.1611). The solution was gently heated in a 40°C water bath and vortexed every 30 s until the solution became clear. Next 1 mL of Tween 80 (Sigma Aldrich, P8074) was added, the solution was gently heated in a 40°C water bath and vortexed every 30 s until the solution became clear. Next, 10 mL of polyethylene glycol 400 (PEG400) (PanReac AppliChem, 142436.1611) solution was added gently heated in a 40°C water bath and vortexed every 30 s until the solution became clear. Finally, 36.5 mL of 5% dextrose (Hospira, RL-3040) was added. The solution was kept at room temperature throughout the experiment. Each solution was used for injections up to 7 day maximum. The vehicle solution consisted of the same chemical composition and concentration (DMSO, Tween 80, PEG400% and 5% dextrose). Stock ISRIB solution was at 0.1 mg/ml and injections were at 2.5 mg/kg. Each animal received an intraperitoneal injection of 2.5x their body weight.
 
 Cmp-003 solution was made by dissolving Cmp-003 (donated by Praxis Biotech) in 50% PEG400 (PanReac AppliChem, 142436.1611) and 50% sterile water. The solution was gently heated in a 40°C water bath and vortexed every 30 s until the solution became clear. Stock Cmp-003 solution was at 0.5 mg/ml and animal injections were at 5.0 mg/kg. Solution was used immediately and made fresh daily.
 
-## Behavioral assessment of cognitive functions
+### Behavioral assessment of cognitive functions
 
 For all assays the experimenter(s) were blinded to therapeutic intervention. Prior to behavioral analysis animals were inspected for gross motor impairments. Animals were inspected for whisker loss, limb immobility (included grip strength) and eye occlusions. If animals displayed any of these impairments, they were excluded. Behavioral assessment was recorded and scored using a video tracking and analysis setup (Ethovision XT 8.5, Noldus Information Technology).
 
-## Radial arm water maze
+### Radial arm water maze
 
 The radial arm water maze (RAWM) was used to test spatial learning and memory in rodents (Chou et al., 2017; Alamed et al., 2006). The pool is 118.5 cm in diameter with eight arms, each 41 cm in length, and an escape platform. The escape platform is slightly submerged below the water level, so it is not visible to the animals. The pool was filled with water that was rendered opaque by adding white paint (Crayola, 54–2128–053). Visual cues are placed around the room such that they were visible to animals exploring the maze. Animals ran six trials a day during learning and three trials during each memory probe. On both learning and memory days there is a 10 min inter-trial interval. Animals were trained for 2 days and then tested on memory tests 24 hr and 8 days after training. During a trial, animals were placed in a random arm that did not include the escape platform. Animals were allowed 1 min to locate the escape platform. On successfully finding the platform, animals remained there for 10 s before being returned to their warmed, holding cage. On a failed trial, animals were guided to the escape platform and then returned to their holding cage 10 s later. The escape platform location was the same, whereas the start arm varied between trials.
 
 Animals were injected (intraperitoneal) with either vehicle or ISRIB (2.5 mg/kg) starting the day prior to behavior (Figure 2A) and after each of the final trials of the learning days (days 1 and 2) for a total of three doses. No injections were given when memory was tested on days 3 and 10. RAWM data were collected through a video tracking and analysis setup (Ethovision XT 8.5, Noldus Information Technology). The program automatically analyzed the number of entries into non-target arms made per trial. Every three trials were averaged into a block to account for large variability in performance; each learning day thus consisted of two blocks, whereas each memory test was one block each. Importantly, in all animal cohorts tested (regardless of age or drug treatment) learning was measured (Significant time effect observed in all Two-way repeated measure ANOVA analysis when groups are analyzed independently).
 
-## Delayed matching to place Barnes maze
+### Delayed matching to place Barnes maze
 
 Beginning at day 20 animals were tested on DMP using a modified Barnes maze (Chou et al., 2017; Feng et al., 2017). The maze consisted of a round table 112 cm in diameter with 40 escape holes arranged in three concentric rings consisting of 8, 16, and 16 holes at 20, 35, and 50 cm from the center of the maze, respectively. An escape tunnel was connected to one of the outer holes. Visual cues were placed around the room such that they were visible to animals on the table. Bright overhead lighting and a loud tone (2 KHz, 85 db) were used as aversive stimuli to motivate animals to locate the escape tunnel. The assay was performed for 4 days (days 20–23). The escape tunnel location was moved for each day and animals ran four trials on the first 2 days and three trials on the last 2 days. During a trial, animals were placed onto the center of the table covered by an opaque plastic box so they were not exposed to the environment. After they had been placed on the table for 10 s, the plastic box was removed and the tone started playing, marking the start of the trial. Animals were given 90 s to explore the maze and locate the escape tunnel. When the animals successfully located and entered the escape tunnel, the tone was stopped. If the animals failed to find the escape tunnel after 90 s, they were guided to the escape tunnel before the tone was stopped. Animals remained in the escape tunnel for 10 s before being returned to their home cage. The maze was cleaned with ethanol between each trial. A new escape tunnel was used for each trial. The experimenter was blind to the treatment groups during the behavioral assay. Each trial was recorded using a video tracking and analysis setup (Ethovision XT 8.5, Noldus Information Technology) and the program automatically analyzed the amount of time required to locate the escape tunnel. Animal improvement was calculated by Day 20 escape latency – Day 23 escape latency.
 
-## Tissue collection
+### Tissue collection
 
 All mice were lethally overdosed using a mixture of ketamine (10 mg/ml) and xylaxine (1 mg/ml). Once animals were completely anesthetized, blood was extracted by cardiac puncture and animals were perfused with 1X phosphate buffer solution, pH 7.4 (Gibco, Big Cabin, OK, −70011–044) until the livers were clear (∼1–2 min). For Western blot analysis following phosphate buffered solution (PBS), the whole brain (regions dissected discussed below) was rapidly removed and snap frozen on dry ice and stored at −80°C until processing.
 
-## Western blot analysis
+### Western blot analysis
 
 Animals received all three ISRIB injections and were terminated 20 hr after the third injection (as described above). Frozen brain lysates or hippocampi isolates were then homogenized with a T 10 basic ULTRA-TURRAX (IKa) in ice-cold buffer lysis (Cell Signaling 9803) and protease and phosphatase inhibitors (Roche). Lysates were sonicated for 3 min and centrifuged at 13,000 rpm for 20 min at 4°C. Protein concentration in supernatants was determined using BCA Protein Assay Kit (Pierce). Equal amount of proteins was loaded on SDS-PAGE gels. Proteins were transferred onto 0.2 μm PVDF membranes (BioRad) and probed with primary antibodies diluted in Tris-buffered saline supplemented with 0.1% Tween 20% and 3% bovine serum albumin.
 
@@ -151,7 +367,7 @@ ATF4 (11815) (Cell Signaling), p-GCN2 (Abcam Cat No ab-75836), p-PERK (Cell Sign
 
 ATF4, p-GCN2, p-PERK, p-PKR, and p-eIF2 levels were normalized to β-actin expression and fold-change was calculated as the levels relative to the expression in vehicle-treated derived samples, which corresponds to 1.
 
-## Electrophysiology
+### Electrophysiology
 
 Sagittal brain slices (250 µm) including the hippocampus were prepared from old mice (~19 mo) treated with either vehicle or ISRIB or young mice (~3 mo), treated with vehicle, 12–18 hr prior (n = 5, 7, and five per group, respectively). Mice were anesthetized with Euthasol (0.1 ml / 25 g, Virbac, Fort Worth, TX, NDC-051311-050-01), and transcardially perfused with an ice-cold sucrose cutting solution containing (in mM): 210 sucrose, 1.25 NaH2PO4, 25 NaHCO3, 2.5 KCl, 0.5 CaCl2, 7 MgCl2, seven dextrose, 1.3 ascorbic acid, three sodium pyruvate (bubbled with 95% O2 − 5% CO2, pH 7.4) (see Figure 3—source data 1 for reagent information). Mice were then decapitated and the brain was isolated in the same sucrose solution and cut on a slicing vibratome (Leica, VT1200S, Leica Microsystems, Wetzlar, Germany). Slices were incubated in a holding solution (composed of (in mM): 125 NaCl, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 2 CaCl2, 2 MgCl2, 10 dextrose, 1.3 ascorbic acid, three sodium pyruvate, bubbled with 95% O2 − 5% CO2, pH 7.4) at 36°C for 30 min and then at room temperature for at least 30 min until recording.
 
@@ -161,23 +377,23 @@ The passive membrane and active action potential spiking characteristics were as
 
 To measure the spontaneous excitatory postsynaptic currents (sEPSCs), cells were recorded in voltage clamp at a holding potential of −75 mV for 4 min, a holding potential that should have little inhibitory components given the reversal potential of chloride with these solutions. Analysis of sEPSCs was performed using a template matching algorithm in ClampFit 10.7 (Molecular Devices, San Jose, CA). The template was created using recordings from multiple pyramidal cells and included several hundred synaptic events. Access resistance (Ra) was monitored during recordings, and recordings were terminated if Ra exceeded 30 megaohms. Only stable recordings (<50 pA baseline change) with a low baseline noise (<8 pA root mean square) were included. The first 250 synaptic events or all the events measured in the 4-min interval from each cell were included for analysis.
 
-## Fluorescent spine imaging preparation
+### Fluorescent spine imaging preparation
 
 For fluorescent spine analysis, following PBS animals were perfused with ice-cold 4% paraformaldehyde, pH 7.5 (PFA, Sigma Aldrich, St. Louis, MO, 441244) and fixed for 4–24 hr followed by sucrose (Fisher Science Education, Nazareth, PA, S25590A) protection (15% to 30%). Brains were embedded with 30% sucrose/Optimal Cutting Temperature Compound (Tissue Tek, Radnor, PA, 4583) mixture on dry ice and stored at −80°C. Brains were sectioned into 20 μm slides using a Leica cryostat (Leica Microsystems, Wetzlar, Germany) and mounted on slides (ThermoFisher Scientific, South San Francisco, CA). Slides were brought to room temperature (20°C) prior to use. Tissues were fixed using ProLong Gold (Invitrogen, Carlsbad, CA, P36930) and a standard slide cover sealed with nail polish.
 
-## Spine density quantification
+### Spine density quantification
 
 For spine density quantification, whole brains from young and old male Thy1-YFP-H transgenic line were used. Three to six images separated by 60–140 µm in the dorsal hippocampus were imaged per animal and used for dendritic spine density analysis. 9.3 µm z-stack images were acquired on a Zeiss Laser-Scanning Confocal microscope (Zeiss LSM 780 NLO FLIM) at the HDFCCC Laboratory for Cell Analysis Shared Resource Facility. 63x magnification with a water immersion objective. All protrusions from the dendrites were manually counted as spines regardless of morphology. Two individuals (blinded to age and treatment) analyzed a total length of at least 3200 µm of dendrites from each animal using NIH FIJI analysis software (v1.52n). Individual dendritic spine was calculated as density per micron and graphed relative to old mice.
 
-## qPCR analysis
+### qPCR analysis
 
 Hippocampus samples, of approximately the same size per animal were process as previously described (Krukowski et al., 2018a; Krukowski et al., 2018b). Relative gene expression was determined using the 2−ΔΔCt method and normalized using GAPDH. Primers used were the following:
 
-## Flow cytometric analysis
+### Flow cytometric analysis
 
 To assess circulating cell populations peripheral blood was collected by cardiac puncture and transferred into an EDTA collection tube. Blood was aliquoted into flow cytometry staining tubes and stained with surface antibodies for 30–60 min at room temperature (Krukowski et al., 2018c). Surface antibodies included anti-CD45 (FITC-conjugated; BD Biosciences), Ly-6G (PE-conjugated; BD Biosciences), CD8 (PE-Cy7-conjugated; BD Biosciences), CD4 (APC-conjugated; BD B), and CD11b (APC-Cy7; BD Biosciences). Leukocyte subpopulations were identified as follows: Forward and side scatter was used to exclude debris and doublet populations. Specific T- cell populations were identified as follows: CD4 T-cell subsets were CD4+, CD45+, Ly-6G-, CD8-, CD11b-. CD8 T-cell subsets were CD8+, CD45+, Ly-6G-, CD4-,CD11b-. After surface antibody staining, red blood cells were lysed with RBC lysis (BD Biosciences). Cell population gating occurred as previously described (Krukowski et al., 2018c). (Data were collected on an LSRII (BD)) and analyzed with Flowjo software (v10, Tree Star Inc).
 
-## Statistical analysis
+### Statistical analysis
 
 Results were analyzed using Prism software or IBM SPSS Statistics. Individual animals. Individual animal scores represented by dots, lines depict group mean and SEM. Student t-test, one-way ANOVA, two-way repeated measures ANOVA and Pearson R correlations were used (individual statistical tool and post-hoc analysis denoted in Figure Legends). p values of < 0.05 considered as significant. Group outliers were determined (GraphPad Software Outlier Test-Grubb’s test) and excluded from analysis. At most a single animal was excluded from each experimental cohort.
 

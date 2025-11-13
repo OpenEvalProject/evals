@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Experimental Psychology, University College London London United Kingdom
+1. Experimental Psychology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 
 † Corresponding author
 
@@ -26,6 +26,119 @@ In contrast, some studies of abstract concepts have found greater activation in 
 
 A limitation of these studies is that they have only investigated the processing of decontextualized concepts (see e.g. Table 1 in a recent review by Del Maschio et al., 2022). That is, they (often implicitly) assume that conceptual representations in the brain are the product of a stable set of regions processing different types of information depending on whether a concept is concrete or abstract. However, this dichotomy may not account for the way in which we typically process concepts (Lebois et al., 2015), given that the information encoded during conceptual processing depends on the contextual information available. For example, the situated (i.e. contextualized in the discourse but also in the physical setting in which processing occurs) processing of concrete concepts like ‘chair’ could be linked to many abstract internal elements like goals (‘I want to rest’), motivations (‘I have been standing for 2 hr’), emotions (‘I would like to feel comfortable’), and theory of mind (‘is that older person more in the need of this chair than me?’). Conversely, an abstract concept like ‘truth’ is no longer particularly abstract when used in reference to a perceived physical situation (such as ‘snowing’) that matches the utterance’s meaning (‘it is true that it is snowing’). Here, ‘truth’ refers to a concrete state of the world (Barsalou et al., 2018).
 
+**Table 1.**
+ Complete Meta-analytic description of clusters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dimension</th>
+      <th>Abstract Clusters(N=35)</th>
+      <th>Concrete Clusters(N=20)</th>
+      <th>Kruskal-Wallis Test</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Autob. Memory</td>
+      <td>9</td>
+      <td>1</td>
+      <td>H(2)=4, P=0.05</td>
+    </tr>
+    <tr>
+      <td>Valence</td>
+      <td>8</td>
+      <td>0</td>
+      <td>H(2)=5.6, P=.01</td>
+    </tr>
+    <tr>
+      <td>Theory of Mind</td>
+      <td>6</td>
+      <td>0</td>
+      <td>H(2)=4.8, P=0.03</td>
+    </tr>
+    <tr>
+      <td>Nausea</td>
+      <td>6</td>
+      <td>0</td>
+      <td>H(2)=4.8, P=0.03</td>
+    </tr>
+    <tr>
+      <td>Pain</td>
+      <td>5</td>
+      <td>0</td>
+      <td>H(2)=4, P=0.05</td>
+    </tr>
+    <tr>
+      <td>Movement</td>
+      <td>2</td>
+      <td>11</td>
+      <td>H(2)=12.4,P&lt;.001</td>
+    </tr>
+    <tr>
+      <td>Social/Empathy</td>
+      <td>4</td>
+      <td>1</td>
+      <td>H(2)=0.7, P=0.42</td>
+    </tr>
+    <tr>
+      <td>Touch</td>
+      <td>3</td>
+      <td>0</td>
+      <td>H(2)=1.8, P=0.18</td>
+    </tr>
+    <tr>
+      <td>Speech</td>
+      <td>5</td>
+      <td>6</td>
+      <td>H(2)=1.1, P=0.29</td>
+    </tr>
+    <tr>
+      <td>Language</td>
+      <td>8</td>
+      <td>4</td>
+      <td>H(2)=0.08, P=0.78</td>
+    </tr>
+    <tr>
+      <td>Reading</td>
+      <td>3</td>
+      <td>0</td>
+      <td>H(2)=1.8, P=0.18</td>
+    </tr>
+    <tr>
+      <td>Reward/Motivation</td>
+      <td>7</td>
+      <td>3</td>
+      <td>H(2)=0.24, P=0.63</td>
+    </tr>
+    <tr>
+      <td>Vision</td>
+      <td>0</td>
+      <td>3</td>
+      <td>H(2)=5.3, P=0.02</td>
+    </tr>
+    <tr>
+      <td>Listening</td>
+      <td>3</td>
+      <td>2</td>
+      <td>H(2)=0.02, P=0.88</td>
+    </tr>
+    <tr>
+      <td>Planning</td>
+      <td>1</td>
+      <td>0</td>
+      <td>H(2)=1.7, P=0.19</td>
+    </tr>
+    <tr>
+      <td>Calculation</td>
+      <td>1</td>
+      <td>0</td>
+      <td>H(2)=1.7, P=0.19</td>
+    </tr>
+  </tbody>
+</table>
+
 Indeed, previous work has postulated flexible conceptual processing in experiential brain circuits (Binder and Desai, 2011; Pulvermüller, 2018a). Behavioral data support the view that contextual information can affect conceptual processing (e.g., Chambers et al., 2004; Cooper, 1974; Tanenhaus et al., 1995). For example, when an object is depicted in a visual context consistent with its use, the action associated with using the object is more readily available than when the context is more consistent with picking the object up (Kalénine et al., 2014). There is also neurobiological evidence that objects visually present in a situation can influence conceptual processing (Hoffman et al., 2013; Yee and Thompson-Schill, 2016). For example, task-related color-congruency of objects correlates with less activation of brain regions involved in color perception during processing – likely because less retrieval of detailed color knowledge was necessary (Hsu et al., 2011). Dynamic, context-dependent recruitment of visual and motor-related areas during semantic processing has also been established (Hoenig et al., 2008; van Dam et al., 2012; Popp et al., 2019). An understanding of conceptual knowledge as static and context-independent is insufficient to account for these dynamics (Pulvermüller, 2018b).
 
 However, no previous study has addressed whether the brain areas associated with concrete and abstract concepts are fixed or recruited in a more dynamic way during semantic processing. The present study aims to fill this gap and test the following two predictions. First, we submit that results from previous investigations of conceptual processing, which generally depict a stable dichotomy between concrete and abstract words, reflect the average experiential information of the type of situational context in which concepts are habitually experienced. Therefore, we predict that the neurobiological representation of concrete concepts, will be related to associated brain regions, because they retain experiences related to their physical referents that are predominantly characterized by sensory and motor information, (Pulvermüller, 2018b; Willems et al., 2010). In contrast, because their representations mostly reflect information related to internal/interoceptive/affective experience as well as linguistic information, we expect abstract concepts to activate brain regions associated with emotional, interoceptive, and general linguistic processing (Reinboth and Farkaš, 2022).
@@ -36,15 +149,27 @@ We propose that this erosion of the concrete/abstract dichotomy for contextualiz
 
 ## Results
 
-## Conceptual processing across contexts
+### Conceptual processing across contexts
 
 Consistent with previous studies, we predicted that across naturalistic contexts, concrete and abstract concepts are processed in a separable set of brain regions. To test this, we contrasted concrete and abstract modulators at each time point of the IRF (Figure 1). This showed that concrete produced more modulation than abstract processing in parts of the frontal lobes, including the right posterior inferior frontal gyrus (IFG) and the precentral sulcus (Figure 1, red). Known for its role in language processing and semantic retrieval, the IFG has been hypothesized to be involved in the processing of action-related words and sentences, supporting both semantic decision tasks and the retrieval of lexical semantic information (Bookheimer, 2002; Hagoort, 2005). The precentral sulcus is similarly linked to the processing of action verbs and motor-related words (Pulvermüller, 2005). In the temporal lobes, greater modulation occurred in the bilateral transverse temporal gyrus and sulcus, planum polare, and temporale. These areas, including primary and secondary auditory cortices, are crucial for phonological and auditory processing, with implications for the processing of sound-related words and environmental sounds (Binder and Desai, 2011) . The superior temporal gyrus (STG) and sulcus (STS) also showed greater modulation for concrete words and these are said to be central to auditory processing and the integration of phonological, syntactic, and semantic information, with a particular role in processing meaningful speech and narratives (Hickok and Poeppel, 2007) . In the parietal and occipital lobes, more concrete modulated activity was found bilaterally in the precuneus, which has been associated with visuospatial imagery, episodic memory retrieval, and self-processing operations and has been said to contribute to the visualization aspects of concrete concepts (Cavanna and Trimble, 2006) . More activation was also found in large swaths of the occipital cortices (running into the inferior temporal lobe), and the ventral visual stream. These regions are integral to visual processing, with the ventral stream (including areas like the fusiform gyrus) particularly involved in object recognition and categorization, linking directly to the visual representation of concrete concepts (Simmons et al., 2007). Finally, subcortically, the dorsal and posterior medial cerebellum were more active bilaterally for concrete modulation. Traditionally associated with motor function, some studies also implicate the cerebellum in cognitive and linguistic processing, including the modulation of language and semantic processing through its connections with cerebral cortical areas (Stoodley and Schmahmann, 2009).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/91522/elife-91522-fig1-v1.jpg)
+
+**Figure 1.:** Colored regions show group-level results from a linear mixed effect model and subsequent general linear tests contrasting activity for concrete (red) versus abstract (blue) modulation at each of 20 timepoints after word onset. Overlapping regions (yellow) indicate a concrete and abstract difference at one of these timepoints. Results are thresholded and corrected for multiple comparisons at α=0.01 and displayed with a cluster size ≧ 20 voxels.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91522/elife-91522-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Comparison between the language network (outline mask extracted from Neurosynth) and overlap activity for both concrete and abstract words across context. Results are thresholded and corrected for multiple comparisons at α=0.01 and displayed with a cluster size ≧ 20 voxels.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91522/elife-91522-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Voxel activation based on BOLD signal (seconds from word-onset), correlated with abstract (blue) and concrete (red). Activation for concrete and abstract concepts both started at 3 s. Processing of concrete concepts correlated more with activity in vision and motor systems, while processing of abstract concepts correlated with activation in the thalamus and somatosensory cortex. Activation for concrete concepts then spread into the superior temporal lobe (bilaterally), during 3–8 s. On the other hand, activation for abstract concepts started in the somatosensory cortex, thalamus. Activation then spreads into the anterior cingulate cortex (5 s) and spreads into medial prefrontal (LH) areas as well as Inferior frontal and angular gyrus (LH) during 5–9 s.
 
 Conversely, activation for abstract was greater than concrete words in the following regions (Figure 1, blue): In the frontal lobes, this included the right anterior cingulate gyrus, lateral and medial aspects of the superior frontal gyrus. Being involved in cognitive control, decision-making, and emotional processing, these areas may contribute to abstract conceptualization by integrating affective and cognitive components (Shenhav et al., 2013) . More left frontal activity was found in both lateral and medial prefrontal cortices, and in the orbital gyrus, regions which are key to social cognition, valuation, and decision-making, all domains rich in abstract concepts (Amodio and Frith, 2006). In the parietal lobes, bilateral activity was greater in the angular gyri (AG) and inferior parietal lobules, including the postcentral gyrus. Central to the default mode network, these regions are implicated in a wide range of complex cognitive functions, including semantic processing, abstract thinking, and integrating sensory information with autobiographical memory (Seghier, 2013). In the temporal lobes, activity was restricted to the STS bilaterally, which plays a critical role in the perception of intentionality and social interactions, essential for understanding abstract social concepts (Frith and Frith, 2003). Subcortically, activity was greater, bilaterally, in the anterior thalamus, nucleus accumbens, and left amygdala for abstract modulation. These areas are involved in motivation, reward processing, and the integration of emotional information with memory, relevant for abstract concepts related to emotions and social relations (Haber and Knutson, 2010; Phelps and LeDoux, 2005).
 
 Finally, there was an overlap in activity between modulation of both concreteness and abstractness (Figure 1, yellow). The overlap activity is due to the fact that we performed general linear tests for the abstract/concrete contrast at each of the 20 timepoints in our group analysis. Consequently, overlap means that activation in these regions is modulated by both concrete and abstract word processing but at different time-scales. In particular, we find that activity modulation associated with abstractness is generally processed over a longer time-frame (for a comparison of significant timing differences see Figure 1—figure supplement 2). In the frontal, parietal, and temporal lobes, this was primarily in the left IFG, AG, and STG, respectively. Left IFG is prominently involved in semantic processing, particularly in tasks requiring semantic selection and retrieval, and has been shown to play a critical role in accessing semantic memory and resolving semantic ambiguities, processes that are inherently time-consuming and reflective of the extended processing time for abstract concepts (Thompson-Schill et al., 1999; Wagner et al., 2001; Hoffman et al., 2015). The STG, particularly its posterior portion, is critical for the comprehension of complex linguistic structures, including narrative and discourse processing. The processing of abstract concepts often necessitates the integration of contextual cues and inferential processing, tasks that engage the STG and may extend the temporal dynamics of semantic processing (Ferstl et al., 2008; Vandenberghe et al., 2002). In the occipital lobe, processing overlapped bilaterally around the calcarine sulcus, which is associated with primary visual processing (Kanwisher et al., 1997; Kosslyn et al., 2001).
 
-## Meta-analytic results
+#### Meta-analytic results
 
 Overall, these results suggest that concrete modulation engages sensory and motor regions more, whereas abstract words engage regions more associated with semantic as well as internal/interoceptive/affective processing. Both categories overlap (though necessarily at different time points) in regions typically associated with word processing. However, these interpretations are based on informal reverse inference. To more formally and quantitatively evaluate this distinction between concrete and abstract words, we employed meta-analytic description and reverse correlation analyses. Both test whether brain regions involved in concrete and abstract conceptual processing reflect different types of habitual experience (i.e. sensory-motor vs internal/interoceptive/affective).
 
@@ -54,11 +179,136 @@ Term-based labeling demonstrates that significantly more concrete clusters are r
 
 **Figure 2.:** We used the Neurosynth meta-analysis package to find the terms associated with the centers of mass for each concrete (red), abstract (blue), and overlap (yellow) cluster from Figure 1. Numbers refer to the number of activation clusters associated with each meta-analytic term. There were significantly more concrete than abstract clusters for the term ‘Movement’ (p<0.001), whereas there were more abstract compared to concrete clusters for ‘Autobiographical Memory,’ ‘Nausea,’ ‘Pain,’ ‘Theory of Mind,’ and ‘Valence’ (all p’s <0.05). The term 'language' was significantly more associated with overlap clusters compared to concrete (p<0.001) and abstract clusters (p=0.045).
 
-## Peaks and valleys results
+#### Peaks and valleys results
 
 Comparing dimensions for abstract vs concrete modulated clusters, we found significantly more concrete compared to abstract clusters associated with the dimension ‘Torso’ H(2)=7, p<0.001. Three concrete clusters were associated with ‘Haptic’ and ‘Mouth,’ which was also significantly more than for abstract clusters (all tests H(2)=5.2, all p’s = 0.02). Two concrete clusters with ‘Foot_Leg’ compared to 0 abstract clusters was not significant, but the mean was in the expected direction H(2)=3.4, p=0.06 All concrete clusters are displayed in Figure 3 (red). Conversely, eight abstract clusters were significantly more associated with the dimension ‘Valence’ than concrete clusters (H(2)=8.3, p<0.001). Three abstract clusters were associated with the dimension ‘Auditory,’ which was not significantly different from concrete clusters (H(2)=1.9, p=0.17). All abstract clusters are displayed in Figure 3 (blue). Finally, five clusters in which modulation through concreteness and abstractness overlapped (though at different time points) were significantly more associated with the dimension ‘Mouth’ compared to two concrete clusters H(2) = 5.1, p=0.03 and 0 abstract clusters H(2)=7.8, p<0.001. All overlap clusters are displayed in Figure 3 (yellow). For all results of the peak and valley tests for each individual cluster, see Table 2.
 
-## Conceptual processing in context
+![Figure 3.](https://cdn.elifesciences.org/articles/91522/elife-91522-fig3-v1.jpg)
+
+**Figure 3.:** We extract the type of information processed in each activation cluster by looking at experience-based features of movie words that are aligned with significantly more peaks than valleys (see Figure 1). Words highly rated on the sensorimotor dimensions ‘Haptic,’ ‘Hand_Arm,’ and ‘Torso’ were significantly more associated with concrete clusters (red, all p’s <0.05), ‘Valence’ with abstract clusters (blue, p<0.001) and ‘Mouth’ with overlap clusters (yellow, p’s <0.05). For some features/terms, there were never significantly more words highly rated on that dimension occurring at peaks compared to valleys, so they do not have any significant clusters.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91522/elife-91522-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** A Kruskal-Wallis test shows that the distribution between sensorimotor and interoceptive/emotional dimensions for concrete and abstract words is significantly different from a 5 s H(2)=4,8, p=0.03, and 6 s (H(2)=5.3, p=0.02) lag.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91522/elife-91522-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Peak and valley Analysis for a 5 s lag. Internal dimensions Valence and Arousal are significantly more associated with peaks in abstract compared to concrete clusters (Valence: H(2) = 5.8, p=0.02; Arousal: H(2) = 6.7, p=0.01). Conversely, concrete clusters are more associated with sensorimotor dimensions (Hand_Arm, Foot_Leg and Visual) – though not significantly so. Overlap is significantly more associated with ‘Mouth’ (H(2) = 6.2, p=0.2).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/91522/elife-91522-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Results show that the peaks in the BOLD response are most correlated with dimensions ‘A.Mean.Sum (Arousal),’ ‘V.Mean.Sum (Valence),’ and ‘Interoceptive.mean (Interoception).’
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/91522/elife-91522-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Results show that the peaks in the BOLD response are most correlated with dimensions ‘Visual.mean (Visual),’ ‘Foot_leg.mean (Foot_Leg),’ ‘Torso.mean (Torso),’ ‘Haptic.mean (Haptic),’ and ‘Hand_arm.mean (Hand_arm).’
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/91522/elife-91522-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Results show that the peaks in the BOLD response are most correlated with the dimension ‘Mouth.mean’ (Mouth).
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/91522/elife-91522-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** p-values for all possible pairwise correlations of BOLD responses related to each feature. Only 3.85% of responses were significantly different.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/91522/elife-91522-fig3-figsupp7-v1.jpg)
+
+**Table 2.**
+ Peak and valley results between concrete and abstract activation clusters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dimension</th>
+      <th>Abstract clusters(N=35)</th>
+      <th>Concrete clusters(N=20)</th>
+      <th>Kruskal-Wallis test</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Valence</td>
+      <td>9</td>
+      <td>1</td>
+      <td>H(2)=4, p=0.05</td>
+    </tr>
+    <tr>
+      <td>Interoceptive</td>
+      <td>8</td>
+      <td>0</td>
+      <td>H(2)=5.6, p=0.01</td>
+    </tr>
+    <tr>
+      <td>Arousal</td>
+      <td>6</td>
+      <td>0</td>
+      <td>H(2)=4.8, p=0.03</td>
+    </tr>
+    <tr>
+      <td>Auditory</td>
+      <td>6</td>
+      <td>0</td>
+      <td>H(2)=4.8, p=0.03</td>
+    </tr>
+    <tr>
+      <td>Visual</td>
+      <td>5</td>
+      <td>0</td>
+      <td>H(2)=4, p=0.05</td>
+    </tr>
+    <tr>
+      <td>Head</td>
+      <td>2</td>
+      <td>11</td>
+      <td>H(2)=12.4, p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Haptic</td>
+      <td>0</td>
+      <td>3</td>
+      <td>H(2)=5.3, p=0.02</td>
+    </tr>
+    <tr>
+      <td>Foot_Leg</td>
+      <td>0</td>
+      <td>2</td>
+      <td>H(2)=3.5, p=0.06</td>
+    </tr>
+    <tr>
+      <td>Hand_Arm</td>
+      <td>0</td>
+      <td>1</td>
+      <td>H(2)=1.7, p=0.19</td>
+    </tr>
+    <tr>
+      <td>Torso</td>
+      <td>0</td>
+      <td>4</td>
+      <td>H(2)=7.3, p=0.01</td>
+    </tr>
+    <tr>
+      <td>Gustatory</td>
+      <td>0</td>
+      <td>2</td>
+      <td>H(2)=3.5, p=0.06</td>
+    </tr>
+    <tr>
+      <td>Mouth</td>
+      <td>0</td>
+      <td>3</td>
+      <td>H(2)=5.3, p=0.02</td>
+    </tr>
+    <tr>
+      <td>Head</td>
+      <td>0</td>
+      <td>0</td>
+      <td>/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Conceptual processing in context
 
 Activation associated with the main effect of word_type overlapped with processing of concrete and abstract words across context in superior temporal sulcus, superior temporal gyrus and middle temporal gyrus (bilateral), in angular gyrus (bilateral), in the central sulcus and precentral and postcentral gyrus (right hemisphere), in lateral and medial frontal cortices as well as in the occipital lobe (see Figure 4A). Activation for the main effect of context was found bilaterally in posterior temporal lobe at the intersection with occipital lobe, as well as in nodes of the default mode network (DMN), including precuneus, medial prefrontal regions and angular gyrus (Figure 4B). The interaction between word_type and context-modulated activity in the main nodes of the DMN (amongst other regions), including precuneus, medial prefrontal regions, and angular gyrus (all bilaterally, see Figure 4C). Indeed, the thresholded interaction map with 1501 voxels was ‘decoded’ using the Neurosynth package, where the Pearson correlation is computed between the vectorized map and all the maps in the Neurosynth database. The top four associated terms (excluding brain regions or methodological terms) were the ‘DMN’ (r(1500)=0.194, p<0.001), ‘Default Mode’ (r(1500)=0.219, p<0.001), and ‘Default’ (r(1500)=0.226, p<0.001) as well as ‘Semantic Control’ (r(1500)=0.206, p<0.001).
 
@@ -70,7 +320,7 @@ To better understand the nature of this interaction and how it relates to respon
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/91522/elife-91522-fig5-v1.jpg)
 
-**Figure 5.:** A) as well as situated concrete and displaced concrete (B).The displaced concrete activation mask was later correlated with abstract processing across context (see Figure 6). The situated abstract activation mask was later correlated with concrete processing across context (see Figure 6). Nodes of the default mode network (DMN) are especially active in the displaced condition for both abstract and concrete words. Visual and sensorimotor areas are especially active in situated conditions for both abstract and concrete words. Results are thresholded and corrected for multiple comparisons at α=0.01 and displayed with a cluster size ≧ 20 voxels.
+**Figure 5.:** The displaced concrete activation mask was later correlated with abstract processing across context (see Figure 6). The situated abstract activation mask was later correlated with concrete processing across context (see Figure 6). Nodes of the default mode network (DMN) are especially active in the displaced condition for both abstract and concrete words. Visual and sensorimotor areas are especially active in situated conditions for both abstract and concrete words. Results are thresholded and corrected for multiple comparisons at α=0.01 and displayed with a cluster size ≧ 20 voxels.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/91522/elife-91522-fig6-v1.jpg)
 
@@ -84,7 +334,7 @@ Conversely, in displaced context, the contrasted modulation by concreteness (Fig
 
 Conceptual processing is typically investigated in experiments where words are stripped away from their naturally occurring context: most studies use isolated words, and sometimes sentences (see Table 1 in Del Maschio et al., 2022). However, conceptual processing in its ecology occurs in rich multimodal contexts. Our study investigated naturalistic conceptual processing during movie-watching to begin to understand the effect of multimodal context on the neurobiological organization of real-world conceptual representation.
 
-## Conceptual processing across contexts
+### Conceptual processing across contexts
 
 First, we asked where in the brain concrete and abstract concepts are processed across different contexts as well as the type of information they encode. Given the hypothesis that conceptual representations reflect contextual information, we expected a set of regions that correspond to the most typical set of experiences (e.g. as encountered during word learning in development) to activate across different contexts. Specifically, we expected concrete conceptual encoding to activate regions more involved in sensory and motor processing and abstract conceptual encoding to activate regions associated with more internal/interoceptive/affective as well as general linguistic processing (Anderson et al., 2019; Meteyard et al., 2012; Binder et al., 2005).
 
@@ -96,7 +346,7 @@ At the level of brain regions, our study aligns with previous literature identif
 
 However, the regions involved in processing concrete and abstract concepts across contexts did not imply a fully dichotomous encoding of experiences. First, we found that regions involved in sensory (mostly in visual cortices) and motor processing are involved in processing both types of words (Figure 1). Moreover, we found overlap activation in regions associated with language processing in general (Tang et al., 2022, Figure 1). Such results are in line with proposals in which both concrete and abstract representations rely on experiential information as well as their linguistic relationships with other words (e.g. Vigliocco et al., 2009; Vigliocco et al., 2009; Piantadosi and Hill, 2022). This latter hypothesis is also supported by our Peaks and Valleys analysis, more specifically that information related to ‘Mouth’ (i.e. the language organ) drives activation in overlap clusters. This is furthermore evidence against hypotheses in which the mouth is specifically associated with abstract concepts (Borghi and Zarcone, 2016).
 
-## Conceptual processing in context
+### Conceptual processing in context
 
 Though results across contexts presumably represent a form of experiential central tendency, the behavioral, neuroimaging, and electrophysiological literature suggests that conceptual representations might not be stable and may vary as a function of context (Elman, 1995; Spivey and Dale, 2006; Cai and Vigliocco, 2018; Kutas and Federmeier, 2011; Yee and Thompson-Schill, 2016; Deniz et al., 2023). For this reason, we conducted a second set of analyses with the goal of understanding the extent to which representations associated with concrete or abstract conceptual processing in the brain change as a function of context (Barsalou et al., 2018).
 
@@ -108,11 +358,11 @@ Breaking up the interaction between word_type and context, we find that the DMN 
 
 In considering the impact of visual context on the neural encoding of concepts generally, it is furthermore essential to recognize that the mechanisms observed may extend beyond visual processing to encompass more general sensory processing mechanisms. The human brain is adept at integrating information across sensory modalities to form coherent conceptual representations, a process that is critical for navigating the multimodal nature of real-world experiences (Barsalou et al., 2018; Smith, 2007). While our findings highlight the role of visual context in modulating the neural representation of abstract and concrete words, similar effects may be observed in contexts that engage other sensory modalities. For instance, auditory contexts that provide relevant sound cues for certain concepts could potentially influence their neural representation in a manner akin to the visual contexts examined in this study. Future research could explore how different sensory contexts, individually or in combination, contribute to the dynamic neural encoding of concepts, further elucidating the multimodal foundation of semantic processing.
 
-## Conceptual processing and language
+### Conceptual processing and language
 
 The exact relationship between concepts and language remains an open question, but it is undisputed that, as determinants of meaning, concepts are necessary for language (Jackendoff, 2002; Bloom, 2000; Fauconnier and Turner, 2002). The present study examined language-driven conceptual processing, as we looked at brain activation during word processing. Our results imply that the underlying neurobiological processes are dynamically distributed and contextually determined. This view fits well with models of ‘natural’ organization of language in the brain where it is argued that language processing more generally is a whole brain process whose patterns of activation are determined by available context (Skipper and Willems, 2015; Skipper and Willems, 2015). These more distributed regions may be averaged away when indiscriminately analyzed together and following thresholding because (i) they are more variable given they are associated with different experiences (as we have seen here), linguistic categories (e.g. ‘formulaic speech;’ see Skipper et al., 2022), and processes (e.g. different types of syntax) (ii) there are individual differences in all of these (e.g. Skipper et al., 2022; Skipper and Willems, 2015). These suppositions are supported by the fact that concrete and abstract modulation overlaps in typical perisylvian ‘language regions’ (Figure 1—figure supplement 1).
 
-## Conclusions
+### Conclusions
 
 Our work emphasizes the merits of investigating conceptual processing in naturalistic multimodal contexts. This paves the way for future analyses systematically quantifying different types of contexts (e.g. in terms of related objects, actions, emotions, or social interactions) and examining how these can affect conceptual processing in the brain. Such work might further our understanding of the neurobiology of conceptual processing in naturalistic settings by clarifying what type of contexts affect processing and how. This may inform the recent development of multimodal large language models, where processing depends on context beyond purely text-based information (Driess et al., 2023) - especially in naturalistic settings (Kewenig et al., 2023). Apart from commercial applications, gaining a better understanding of the mechanisms underlying naturalistic conceptual processing in the brain might bear important implications for clinical domains, e.g., by informing progress towards helping patients who lost the ability to speak by real-time semantic reconstruction of non-invasive brain recordings with the help of large language models (Tang et al., 2022).
 
@@ -120,17 +370,17 @@ Our work emphasizes the merits of investigating conceptual processing in natural
 
 The present study analyzed the ‘Naturalistic Neuroimaging Database (NNDb)’ (Aliko et al., 2020). All code is made available on a designated repository under (https://github.com/ViktorKewenig/Naturalistic_Encoding_Concepts, copy archived at ViktorKewenig, 2024).
 
-## Participants and task
+### Participants and task
 
 The Naturalistic Neuroimaging Database (Aliko et al., 2020, https://openneuro.org/datasets/ds002837/versions/2.0.0) includes 86 right-handed participants (42 females, range of age 18–58 years, M = 26.81, SD = 10.09 years) undergoing fMRI while watching one of 10 full-length movies selected across a range of genres. All had unimpaired hearing and (corrected) vision. None had any contraindication for magnetic resonance imaging (MRI), history of psychiatric or neurological disorder, or language-related learning disabilities. All participants gave informed consent, and the study was approved by the University College London Ethics Committee (Reference Number 143/003).
 
-## Data acquisition and preprocessing
+### Data acquisition and preprocessing
 
 Functional and anatomical images were obtained using a 1.5T Siemens MAGNETOM Avanto, equipped with a 32-channel head coil. Whole-brain images were captured, each consisting of 40 slices per volume at an isotropic resolution of 3.2 mm. These were obtained using a multiband echo-planar imaging (EPI) sequence with no in-plane acceleration, a multiband factor of 4 x, a repetition time of 1 s, an echo time of 54.8 milliseconds, and a flip angle of 75 degrees. Each study participant yielded a number of brain volumes equivalent to movie runtime in seconds. Due to software constraints limiting the EPI sequence to 1 hr of continuous scanning, there were mandatory breaks during the movie for all participants.
 
 The data were preprocessed with AFNI (Cox, 1996) and included despiking, slice-time correction, coregistration, blurring, and nonlinear alignment to the MNI152 template brain. The time series underwent smoothing using an isotropic full-width half-maximum of 6 mm, with detrending accomplished through regressors for motion, white matter, cerebrospinal fluid, and run length. Adjustments were made to account for breaks in movie viewing, and artifacts identified by spatial independent component analysis were regressed out. Detailed information on data acquisition and preprocessing is available in Aliko et al., 2020 and on openneuro.org.
 
-## Materials
+### Materials
 
 All words in the movies were annotated using automated approaches with a machine learning-based speech-to-text transcription tool from Amazon Web Services (AWS; https://aws.amazon.com/transcribe/). The resulting transcripts contained on and offset timings for individual words. However, as not all words were transcribed or accurately transcribed, timings were subsequently corrected manually.
 
@@ -142,11 +392,11 @@ We used luminance and loudness to control for visual and acoustic properties of 
 
 For the analysis looking at conceptual processing within context, we similarly wanted to check for collinear variables in the 2 s context window preceding each word, which could have confounding effects. In particular, we looked at surprisal given linguistic context, as well as the visual variables motion (optical flow), color saturation, and spatial frequency. We extracted the visual features for each frame in the 2 s context window preceding each label using the scikit-image package (Walt et al., 2014).
 
-## Conceptual processing across contexts
+### Conceptual processing across contexts
 
 In this analysis, we tested the prediction that when contextual information is averaged away, the neurobiological organization of conceptual processing will reflect brain systems involved in experiential and linguistic information processing, broadly in line with previous studies. Specifically, sensory and motor system engagement for concrete concepts and internal/interoceptive/affective and more general linguistic processing system engagement for abstract concepts. All statistical analyses on the preprocessed NiFTI files were carried out in AFNI (Cox, 1996; Cox and Hyde, 1997). Individual AFNI programs used are indicated parenthetically or in italics in subsequent descriptions.
 
-## Deconvolution analysis
+#### Deconvolution analysis
 
 We used an amplitude (also known as parametric) modulated deconvolution regression to estimate activity associated with concrete and abstract words from the preprocessed fMRI data. Specifically, we estimated four sets of amplitude-modulated impulse response functions (IRF) for (1) abstract words; (2) concrete words; (3) remaining words; and (4) other time points. Both concrete and abstract words included word onset and five modulators, two of interest, and five nuisance modulators. These were the independent ratings of concreteness and abstractness and luminance, loudness, duration, word frequency, and speaking rate (calculated as the number of phonemes divided by duration) for each word. We also estimated the IRFs in the same manner and with the same amplitude modulators for all the remaining words in the movie that were not of interest to our hypothesis. Finally, we generated IRFs (without amplitude modulators) for all time points which did not include any speech. The deconvolution model also included general linear tests for (1) abstract words under the curve; (2) concrete words under the curve; (3) contrasts between concrete and abstract words at each timepoint (for a comparison of significant timing differences see Figure 1—figure supplement 2).
 
@@ -154,23 +404,23 @@ In contrast to a standard convolution-based regression analysis, deconvolution d
 
 Furthermore, traditional ‘main effect’ analysis confounds various non-specific processes, such as acoustic processing, which co-vary with each presented word (especially during dynamic, naturalistic stimuli). In contrast, amplitude modulation allows us to isolate regions that exhibit activational fluctuations specifically in relation to the concreteness modulator beyond the ‘main effect’ and fluctuations in the amplitude response caused by other modulators included in our model. Including nuisance modulators can help serve as controls, mitigating potentially confounding effects - in our case the significant differences between luminance and loudness. By adjusting for these sensory attributes, we ensure that the final betas from this analysis represent the estimated BOLD response specifically associated with concreteness.
 
-## Group-level analysis
+#### Group-level analysis
 
 We then used the 20 amplitude-modulated beta-coefficients from the concrete-abstract contrasts in a linear mixed effects model for group-level analysis using ‘3dLME’ (Chen et al., 2013). The model included the factors ‘contrast’ with levels ‘abstract’ and ‘concrete’ and ‘time’ with 20 levels. The model also included a centered covariate for age of participant, and covariates for gender (two levels) and movie ID (10 levels). Besides a random intercept for participant we included a control implemented in '3dLME' for the potentially auto-correlative structure of residuals to make sure that we model the true effect estimates of the multiple basis function (Hefley et al., 2017). The final model formula was: contrast + age + gender + movie. We included 20 general linear tests, one for each contrast between concrete and abstract activation at each of the 20 timepoints, because we wanted to see how the amplitude of the activation associated with concreteness and abstractness changes over time. We thought that the timing and/or amplitude of the response for concrete and abstract words might vary and that this might be particularly true of the subsequent context analysis. We provide information on timing differences in the supplementary material (Figure 3—figure supplement 7).
 
-## Correction for multiple comparisons
+#### Correction for multiple comparisons
 
 To correct for multiple comparisons in the LME, we used a multi-threshold approach rather than choosing an arbitrary p value at the individual voxel level threshold. In particular, we used a cluster simulation method to estimate the probability of noise-only clusters using the spatial autocorrelation function from the LME residuals (‘3dFWHMx’ and ‘3dClustSim’). This resulted in the cluster sizes to achieve a corrected alpha value of 0.01 at 9 different p values (i.e. 0.05, 0.02, 0.01, 0.005, 0.002, 0.001, 0.0005, 0.0002, and 0.0001). We thresholded each map at the corresponding z-value for each of these nine p-values and associated cluster sizes. We then combined the resulting maps, leaving each voxel with its original z-value. For additional protection and presentation purposes, we use a minimum cluster size 20 voxels for all results using ‘3dMerge’. For tables, we determined the center of mass for each of these clusters using ‘3dCM.’ See Cox et al., 2017 for a validation of a related method and Skipper et al., 2022 for an earlier application.
 
-## Analyses of experiential features
+#### Analyses of experiential features
 
 In order to more closely characterize the functional specificity of the spatial activation maps from the preceding LME analysis, we carried out the following two additional analyses. In both, the goal is to determine whether brain activity associated with concrete and abstract word modulation relates to separable experiential domains that roughly map onto the aforementioned sensory-motor vs internal/interoceptive/affective/linguistic distinction, respectively.
 
-## Meta-analytic descriptions
+##### Meta-analytic descriptions
 
 The resulting coordinates of the center of mass of each cluster associated with modulation of concreteness and abstractness were inputed into Neurosynth (https://neurosynth.org/, Yarkoni et al., 2011), an online tool that includes activation maps of 14,371 neuroscientific studies (accessed April, 2023). Neurosynth automatically mines all words in titles and abstracts of these articles and performs a two-way ANOVA, testing for the presence of a non-zero association between terms reporting activation that overlaps with the input location. We scraped all terms with z scores above 3.12 (p<0.001) (excluding those related to specific brain regions and nondescript terms related to methods, tasks, or results) and repeated this procedure for each concrete and abstract cluster to determine functionally associated terms. We then tested whether any of these terms were more important for concrete or abstract words across clusters using a Kruskal-Wallis test. We did not correct for multiple comparisons, as this analysis was exploratory in nature and we did not have a prediction about how many terms we would end up with.
 
-## Peak and valley analysis
+##### Peak and valley analysis
 
 The meta-analytic approach can only provide relatively general functional descriptions of concrete and abstract words as it is based only on high frequency terms in published titles and abstracts. To provide more precise functional specificity, we used a variant of the ‘reverse correlation’ method (Hasson et al., 2004), called the ‘Peaks and Valleys Analysis’ (Hasson et al., 2008; Skipper et al., 2009). For each participant, this analysis averaged the time series of voxels within clusters of modulated activity associated with concreteness and abstractness and relates this directly to features of the perceived stimulus. The approach assumes that, if a brain region encodes certain features, e.g. sensorimotor features, valence, or arousal, then activity will rise (creating peaks) in that region when the feature is present in the stimulus and fall (resulting in valleys) when it is absent.
 
@@ -184,11 +434,11 @@ Specifically, for concrete clusters, we expected significantly more sensory-moto
 
 For each of these dimensions, we created two categorical arrays, one for peaks and one for valleys, noting down 0 if the word mentioned at a peak or valley was not highly rated on the dimension and 1 if it was rated highly. This was defined as a deviation of at least one standard deviation from the mean. Given the distributional nature of this data, we then conducted a Kruskal-Wallis test between these arrays to determine whether a given experiential dimension occurred significantly more with peaks than valleys in the averaged time series of a cluster (Figure 7, (4)). We repeated this procedure for a 4 s, 5 s, and a 6 s time series lag and conducted a cosine-similarity test between each result using the ‘Sklearn’ package in Python Pedregosa et al., 2011 in order to determine if they were significantly different. The results for the 5 s and 6 s lag converge but not for 4 s. This was expected, because the delay of the HRF is somewhere between 5 and 6 s. In the main results, we randomly decided between presenting the 5 s and 6 s lag. The 5 s lag is now displayed in Figure 3—figure supplement 1, the 4 s lag in Figure 3—figure supplement 2.
 
-## Conceptual processing in context
+### Conceptual processing in context
 
 The previous analyses tested whether, when activation is considered across contexts, concrete and abstract words are processed in separable brain regions encoding different types of experiential information. Here, we test if these response profiles dynamically change depending on the objects present in the viewing context. We predict that when abstract concepts are situated in highly related contexts (e.g. the word ‘love’ is processed while watching two people kissing), they engage neurobiological regions that are usually involved in processing concrete concepts and are related to processing of external visual information. Conversely, when concrete concepts are displaced from the visual context (e.g. processing the word ‘apple’ while watching the interior of a house), we predict them to engage more abstract-like regions in the brain that are related to processing of internal/interoceptive/affective information. Note that we chose to do the analysis in two stages (first across context, then within context) because only a subset of the 440 words used in our analysis across context for concrete and abstract words are related to the objects present in the scene in a way that situates them in visual context (see below). We wanted to have as much power as possible for the first deconvolution/LME to look beyond the effects of context.
 
-## Estimating contextual situatedness
+#### Estimating contextual situatedness
 
 To test our predictions, we estimated a measure of contextual situatedness for each concrete and abstract word included in the first analysis. To that end, we utilized two pre-trained visual recognition models, Faster R-CNN (He et al., 2015) and OmniSource (Duan et al., 2020), to extract object features using computer vision toolboxes (Mkrtychian et al., 2019), respectively. For each prediction frame (about every four frames, i.e. 4*0.04=0.16 s), the object recognition model generated a list of detected object labels and kept those that had a prediction confidence of 90% or greater (Figure 8, 1). Then, we excluded all objects that were recognized at least three standard deviations more often by the model compared to the mean recognition rate of objects (which was 682 appearances), because they would bias our measure of situatedness. These labels were ‘person’ (17,856 appearances per movie on average), ‘chair’ (9718 appearances per movie on average), and ‘tie’ (8123 appearances per movie on average). After exclusion of these labels, the final object features were represented as the average of the vectorized object labels using GloVe (Pennington et al., 2014; Figure 8, 2), which represents the meaning of each label via global co-occurrence statistics.
 
@@ -200,14 +450,14 @@ We then estimated a representation of a 2 s (or 60 frames) context window, which
 
 Though we use visual nuisance regressors, we note that there may be additional confounding visual information when estimating contextual situatedness: high situatedness may correlate positively with the number of objects present and, therefore, ‘naturally’ engage visual processing more for abstract situated concepts. To alleviate this concern, we counted the number of objects in the abstract situated (8315 objects across movies) and abstract displaced (7443 across movies) conditions. The difference between the two (872) is not statistically significant (H(2)=4.1, p<0.09).
 
-## Deconvolution analysis
+### Deconvolution analysis
 
 The deconvolution analysis was as described previously except that the sets of concrete and abstract words were broken into four equal subsets of regressors, i.e., situated concrete, displaced concrete, situated abstract, and displaced abstract words and modulators with 164 words per each set. The four contrasts included were: (1) abstract situated vs abstract displaced, (2) concrete situated vs concrete displaced, (3) abstract situated vs concrete situated, and (4) abstract displaced vs concrete displaced. Mean concreteness rating for the resulting sets of concrete words were 3.39 for displaced words and 3.35 for situated words, compared to 1.84 for abstract situated words and 1.71 for abstract displaced words. The mean log frequency and mean length for concrete words was 4.91 and 4.88 for situated words and 5.33 and 4.91 for displaced words, compared to 5.11 and 5.08 for abstract situated words and 5.20 and 5.27 for abstract displaced words. Mean surprisal ratings for concrete situated words were 21.98 bits, 22.02 bits for the displaced concrete words, 22.10 for the situated abstract words and 22.25 for the abstract displaced words. Mean semantic diversity ratings were 1.88 for the concrete situated words, 2.19 for the concrete displaced words, 2.03 for the abstract situated words, and 1.95 for the abstract displaced words. As concerns visual variables, mean optical flow was 0.85, mean color saturation was 0.33, and mean spatial frequency was 0.02 for the 2 s context windows before abstract situated words. Mean optical flow was 0.81, mean color saturation was 0.35 and mean spatial frequency was 0.04 for the 2 s context windows before abstract displaced words. Mean optical flow was 0.76, mean color saturation was 0.41 and mean spatial frequency was 0.10 for the 2 s context windows before concrete situated words. Mean optical flow was 0.86, mean color saturation was 0.33, and mean spatial frequency was 0.05 for the 2 s context windows before concrete displaced words. Pairwise T-tests between all of the mentioned measures for all groups revealed no significant differences.
 
-## Group-level analysis
+### Group-level analysis
 
 A linear mixed effects model for group-level analysis was conducted on the 20 amplitude-modulated betas from each condition (concrete situated, abstract situated, concrete displaced, situated displaced) using ‘3dLME’ (Chen et al., 2013). The model included factors ‘word_type’ (concrete and abstract), ‘context’ (displaced and situated), and ‘time’ (20 levels) and all possible interactions between these factors. We again included covariates for age, gender, and movie, a random intercept for participant, and a control of the auto-correlative structure of residuals. The final model formula was: word_type * context * time + age + gender + movie. We had no prediction on whether the timing and/or amplitude of the response for concrete and abstract words would vary in the present analysis. Therefore, we included four general linear tests, one for each contrast across time: one for the abstract situated vs. abstract displaced contrast, one for the concrete situated vs. concrete displaced contrast, one for the abstract situated vs abstract displaced contrast, and one for the concrete situated vs concrete displaced contrast.
 
-## Code
+### Code
 
 We implemented our data analysis in Bash, Python, and R. Our code will be provided as online supplemental material upon publication and hosted openly on a dedicated Github repository under: (https://github.com/ViktorKewenig/Naturalistic_Encoding_Concepts, copy archived at ViktorKewenig, 2024).

@@ -21,17 +21,17 @@
 
 ### Affiliations
 
-1. https://ror.org/002pd6e78 Division of Gastroenterology, Massachusetts General Hospital Boston United States
-2. https://ror.org/03vek6s52 Harvard Medical School Boston United States
-3. https://ror.org/03vek6s52 Harvard T.H. Chan School of Public Health Boston United States
-4. https://ror.org/00q32j219 Boehringer Ingelheim Pharma GmbH & Co Biberach Germany
-5. https://ror.org/04kj1hn59 Harvard Stem Cell Institute Cambridge United States
+1. Division of Gastroenterology, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+2. Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+3. Harvard T.H. Chan School of Public Health Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+4. Boehringer Ingelheim Pharma GmbH & Co Biberach Germany ([ROR:00q32j219](https://ror.org/00q32j219))
+5. Harvard Stem Cell Institute Cambridge United States ([ROR:04kj1hn59](https://ror.org/04kj1hn59))
 
 † Corresponding author
 
 ## Abstract
 
-Chronic liver injury causes fibrosis, characterized by the formation of scar tissue resulting from excessive accumulation of extracellular matrix (ECM) proteins. Hepatic stellate cell (HSC) myofibroblasts are the primary cell type responsible for liver fibrosis, yet there are currently no therapies directed at inhibiting the activity of HSC myofibroblasts. To search for potential anti-fibrotic compounds, we performed a high-throughput compound screen in primary human HSC myofibroblasts and identified 19 small molecules that induce HSC inactivation, including the polyether ionophore nanchangmycin (NCMC). NCMC induces lipid re-accumulation while reducing collagen expression, deposition of collagen in the extracellular matrix, cell proliferation, and migration. We find that NCMC increases cytosolic Ca 2+ and reduces the phosphorylated protein levels of FYN, PTK2 (FAK), MAPK1/3 (ERK2/1), HSPB1 (HSP27), and STAT5B. Further, depletion of each of these kinases suppress COL1A1 expression. These studies reveal a signaling network triggered by NCMC to inactivate HSC myofibroblasts and reduce expression of proteins that compose the fibrotic scar. Identification of the antifibrotic effects of NCMC and the elucidation of pathways by which NCMC inhibits fibrosis provide new tools and therapeutic targets that could potentially be utilized to combat the development and progression of liver fibrosis.
+Chronic liver injury causes fibrosis, characterized by the formation of scar tissue resulting from excessive accumulation of extracellular matrix (ECM) proteins. Hepatic stellate cell (HSC) myofibroblasts are the primary cell type responsible for liver fibrosis, yet there are currently no therapies directed at inhibiting the activity of HSC myofibroblasts. To search for potential anti-fibrotic compounds, we performed a high-throughput compound screen in primary human HSC myofibroblasts and identified 19 small molecules that induce HSC inactivation, including the polyether ionophore nanchangmycin (NCMC). NCMC induces lipid re-accumulation while reducing collagen expression, deposition of collagen in the extracellular matrix, cell proliferation, and migration. We find that NCMC increases cytosolic Ca2+ and reduces the phosphorylated protein levels of FYN, PTK2 (FAK), MAPK1/3 (ERK2/1), HSPB1 (HSP27), and STAT5B. Further, depletion of each of these kinases suppress COL1A1 expression. These studies reveal a signaling network triggered by NCMC to inactivate HSC myofibroblasts and reduce expression of proteins that compose the fibrotic scar. Identification of the antifibrotic effects of NCMC and the elucidation of pathways by which NCMC inhibits fibrosis provide new tools and therapeutic targets that could potentially be utilized to combat the development and progression of liver fibrosis.
 
 ## Introduction
 
@@ -45,15 +45,27 @@ Here, we expanded our screen approximately 10-fold to include 15,867 experimenta
 
 ## Results
 
-## A high-throughput small molecule screen identifies compounds that inactivate human hepatic stellate cell myofibroblasts
+### A high-throughput small molecule screen identifies compounds that inactivate human hepatic stellate cell myofibroblasts
 
 To identify small molecules that induce reversion of HSC myofibroblasts to an inactive phenotype, we screened 24 compound libraries consisting of 15,867 experimental wells using a high-throughput method to quantify lipid droplet accumulation as an indicator of HSC inactivation (Chen et al., 2017; Figure 1A, Supplementary files 1and and 2). Activated HSCs were seeded in 384-well plates, treated with compounds for 48 hr, fixed, and stained with Bodipy, a fluorescent lipid dye, to analyze the accumulation of lipid droplets. This approach allowed us to screen based on a feature characteristic of quiescent-like inactivated HSCs instead of limiting the readout to expression of a specific gene for the primary screen. Expression of COL1A1 and ACTA2 were then added as a secondary screen to focus on compounds that induced lipid accumulation and reduction of genes that mark the activation and fibrotic activity of HSCs. DMSO and nortriptyline were included as negative and positive controls, respectively on each plate. A scaled value was calculated for each experimental well based on the average percentage of Bodipy-positive cells, toxicity, and reproducibility and was normalized according to negative and positive controls on the same plate to minimize plate-specific effects.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of the small molecule screen. The number of candidate compounds (# of hits) is indicated at each step. The number in parenthesis represents the number of compounds tested in the final dose response curve (DRC) analysis due to availability. (B) Results of the primary lipid accumulation screen. Each dot indicates the mean scaled value of two replicates for each condition at 48 hr. Red dots represent negative control wells (DMSO), green dots represent positive control wells (nortriptyline, 27 µM), and blue dots represent experimental wells. (C) Results of the secondary mRNA screen. Each dot indicates the mean fold change of ACTA2 and COL1A1 after treatment with compounds (normalized to DMSO controls). PSMB2 was used as the reference gene (n=4). Green dots represent positive hits (<0.5), and blue dots represent non-hits (negative). (D) Dose-response curves were plotted for 39 compounds and were scored by three researchers independently. The mean score for each compound was plotted. The dotted line indicates the score of the positive control nortriptyline. Green dots represent positive hits, and blue dots represent non-hits (negative). This figure has two supplements.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Expression of house-keeping genes in HSCs was plotted by RPKM as previously quantified (Chen et al., 2017). Three pairs of samples were used in this analysis: ceramide treatment vs control, nortriptyline treatment vs control, nortriptyline treatment vs control in TGF-β treated HSCs (Chen et al., 2017). Each dot represents the result from one sample, and bars represent mean ± standard deviation (sd). The value of sd is indicated above each mRNA. The fold change (fc) of EMC7, VCP, PSMB2, and VPS29 in inactivated HSCs (ceramide or nortriptyline-treated) compared to corresponding control groups is indicated below the dots. Two groups of reference mRNAs were analyzed – commonly used ones (left) and genes that are expressed uniformly across tissues (Eisenberg and Levanon, 2013). Red arrows indicate samples with sd of 0.15 or less. Blue arrows highlight the reference mRNAs with fold change of no more than 10% in inactivated HSCs and were selected for further analysis. GAPDH, which is used routinely as a reference control was also included. (B) Quantification of expression of EMC7, GAPDH, GUSB, POLR2A, and PSMB2 from HSC cDNA samples (left: n=14, right: n=53) that were reverse transcribed from equal amounts of total input RNA. All samples were normalized to the mean value of its own control group before they were combined for each of the reference mRNAs. Each dot represents the result from one sample, and bars represent mean ± standard deviation (sd) of all the tested samples. The value of sd is indicated above each mRNA.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** HSCs from human donor 2 were treated with compounds at indicated concentrations. Each dot represents one well (n=2 technical replicates per concentration). Curves were generated by fitting the data into a sigmoidal equation. For digitoxigenin and digoxin, the highest two or three concentrations respectively were not used for fitting the curves due to the toxicity at these concentrations. If a compound was tested more than one time, only one representative curve is shown here, while the average score from all curves was used for ranking the compounds. Results from each individual experiment and data from all replicates are in Supplementary file 6.
 
 Experimental wells with a scaled value higher than 0.85, a cutoff set as the top 10th percentile of nortriptyline-treated wells on the same plate, were defined as hits. To avoid losing potential hits due to plate-specific effects, the top three experimental wells with the highest scaled values on each plate were also included as hits even if their scaled values did not meet the 0.85 cutoff. A total of 711 experimental wells, containing 464 different compounds, met these criteria and were identified as primary hits (Figure 1B and Supplementary file 3).
 
 To further narrow the candidate list for secondary screening, the 711 hits were separated into 102 clusters based on their chemical structure, with an average cluster size of seven compounds. The highest scoring hit with the most common structure within each cluster was selected as the representative compound for the cluster. Among the 102 representative compounds, ten compounds were removed because they contained pan assay interference structures (Baell and Nissink, 2018) or were themselves frequently identified as hits in screens. One compound was removed because it was a TCA, and we have previously demonstrated that TCAs target the sphingolipid pathway to inhibit HSC activity (Chen et al., 2017). One additional compound was removed because it had the same molecular formula as another selected hit (Supplementary file 4). In addition to representative compounds selected from each cluster, 50 compounds with high scaled values or promising structures were also selected. In total, 140 unique compounds were included in the secondary screen (Figure 1A and Supplementary file 5).
 
-## Development of a secondary screening assay in primary human HSCs
+### Development of a secondary screening assay in primary human HSCs
 
 Activated HSCs are characterized by increased expression of α-SMA (encoded by ACTA2) and type 1 collagen (encoded by COL1A1) (Bataller and Brenner, 2005; Friedman, 2008). We developed a high-throughput secondary assay to quantify ACTA2 and COL1A1 mRNA levels as indicators of HSC activity. HSCs were treated with compounds for 48 hr and then lysed for multiplexed qRT-PCR to quantify the house-keeping reference mRNA in the same well as ACTA2 or COL1A1. Since a proper reference mRNA is critical for qRT-PCR based assays, we evaluated 18 housekeeping genes, consisting of seven commonly used genes as well as eleven reference genes identified from the literature (Eisenberg and Levanon, 2013). We first analyzed RNA sequencing data from HSCs under multiple conditions (Chen et al., 2017). Among these candidates, GUSB, POLR2A, EMC7, VCP, PSMB2, and VPS29 showed the lowest standard deviation (0.15 or less). Further comparison of expression of these genes in inactivated HSCs (induced by the addition of nortriptyline or ceramide Chen et al., 2017) and culture-activated HSCs revealed that GUSB, POLR2A, EMC7, and PSMB2 had the least fold change in expression (10% or less upon HSC inactivation). Thus, we selected these four reference mRNAs for further evaluation. GAPDH, which is used routinely as a reference control, was also included for comparison (Figure 1—figure supplement 1A). We quantified expression using qRT-PCR in HSC cDNA samples reverse-transcribed from equal amounts of total RNA. PSMB2, which encodes proteasome 20 S subunit beta 2, showed the least variation as indicated by standard deviation and was chosen as the reference mRNA for the secondary qRT-PCR-based screen (Figure 1—figure supplement 1B).
 
@@ -61,33 +73,198 @@ qRT-PCR was performed to quantify ACTA2, COL1A1, and PSMB2 mRNA levels in each s
 
 Next, we evaluated dose response curves (DRCs) for each compound at eight different concentrations, from 10 pM to 10 µM, using a Bodipy lipid accumulation assay similar to that employed in the primary screen. Dose response curves were scored blindly by three researchers (Supplementary file 6 and Materials and methods), and nortriptyline served as a reference. Of the 39 compounds, 19 received an average score that was the same as or higher than nortriptyline controls (Figure 1D, Figure 1—figure supplement 2, and Table 1).
 
+**Table 1.**
+ Candidates from small molecule screening.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Compound Name</th>
+      <th>DRC Score</th>
+      <th>Known function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cyproheptadine *</td>
+      <td>1.0</td>
+      <td>Serotonin antagonist and antihistamine</td>
+    </tr>
+    <tr>
+      <td>Emetine *</td>
+      <td>1.0</td>
+      <td>Anti-protozoal, inhibitor of Zika and Ebola viruses</td>
+    </tr>
+    <tr>
+      <td>Homoharringtonine *</td>
+      <td>1.0</td>
+      <td>Translation elongation inhibitor</td>
+    </tr>
+    <tr>
+      <td>Nanchangmycin *</td>
+      <td>1.0</td>
+      <td>Polyether ionophore antibiotic, inhibitor of Zika virus</td>
+    </tr>
+    <tr>
+      <td>Ouabain *</td>
+      <td>1.3</td>
+      <td>Na/K-ATPase inhibitor</td>
+    </tr>
+    <tr>
+      <td>Digitoxigenin *</td>
+      <td>1.7</td>
+      <td>Na/K-ATPase inhibitor</td>
+    </tr>
+    <tr>
+      <td>Digoxin *</td>
+      <td>1.7</td>
+      <td>Na/K-ATPase inhibitor</td>
+    </tr>
+    <tr>
+      <td>Trichostatin A *</td>
+      <td>1.7</td>
+      <td>Histone deacetylase inhibitor</td>
+    </tr>
+    <tr>
+      <td>AT7867, HMSL10154-101-1</td>
+      <td>1.8</td>
+      <td>Multi-kinase inhibitor</td>
+    </tr>
+    <tr>
+      <td>PCI-24781 (Abexinostat) *</td>
+      <td>2.0</td>
+      <td>Histone deacetylase inhibitor</td>
+    </tr>
+    <tr>
+      <td>Dasatinib</td>
+      <td>2.0</td>
+      <td>Multi-kinase inhibitor</td>
+    </tr>
+    <tr>
+      <td>ChemBridge 35093961</td>
+      <td>2.3</td>
+      <td>IKK inhibitor</td>
+    </tr>
+    <tr>
+      <td>Homochlorcyclizine dihydrochloride</td>
+      <td>2.3</td>
+      <td>Antihistamine</td>
+    </tr>
+    <tr>
+      <td>LY2608204</td>
+      <td>2.3</td>
+      <td>Glucokinase activator</td>
+    </tr>
+    <tr>
+      <td>Vandetanib</td>
+      <td>2.3</td>
+      <td>Multi-kinase inhibitor</td>
+    </tr>
+    <tr>
+      <td>BIX01294 (hydrochloride hydrate)</td>
+      <td>2.7</td>
+      <td>G9a histone methyltransferase inhibitor</td>
+    </tr>
+    <tr>
+      <td>HMSL10378-101</td>
+      <td>2.7</td>
+      <td>Predicted to target GSK3B at 1 nM (ChEMBL)</td>
+    </tr>
+    <tr>
+      <td>Crizotinib</td>
+      <td>2.8</td>
+      <td>Multi-kinase inhibitor</td>
+    </tr>
+    <tr>
+      <td>Solifenacin succinate</td>
+      <td>3.0</td>
+      <td>Muscarinic receptor antagonist</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Compounds with an EC50 less than 5 μM._
+
 We then selected compounds for additional validation based on their EC50 and DRC scores to identify those considered the most potent. Of the nine compounds selected, two subgroups of compounds were identified based on similar bioactivity – histone deacetylase inhibitors (HDACIs), including trichostatin A and abexinostat, and Na/K-ATPase inhibitors, including ouabain, digitoxigenin, and digoxin. Histone deacetylases are linked to a variety of fibrotic disorders, including liver fibrosis (Pang and Zhuang, 2010). HDACIs, such as MC1568 and Valproate, have been reported to reduce HSC activation and alleviate liver fibrosis in animal models (Yoon et al., 2019). The presence of HDACIs in our final candidate list supports the validity of our screening approach in identifying potential liver fibrosis inhibitors. Na/K-ATPase activity may play a role in non-alcoholic fatty liver disease (Sodhi et al., 2017), but it is not clear how Na/K-ATPases regulate HSC activity and liver fibrosis. Due to the toxicity and narrow therapeutic dose range of cardiac glycosides, which limit their potential application in treatment of liver fibrosis, we decided not to pursue further evaluation of this group of compounds. Nanchangmycin (NCMC), a natural product of Streptomyces nanchangensis, is a polyether insecticidal antibiotic (Sun et al., 2002) and is one of the most potent hits. Studies of NCMC are limited, but it has been shown to have a broad spectrum of antiviral activity against diverse arboviruses (Rausch et al., 2017) and potentially SARS-CoV-2 infection (Dittmar et al., 2020; Li et al., 2020; Svenningsen et al., 2020). It also suppresses breast cancer stem cell activity and inhibits growth of breast cancer and multiple myeloma cells (Huang et al., 2018; Xu et al., 2020). The cellular targets of NCMC remain largely unknown, and its effect on HSC activation and liver fibrosis has not been investigated. Therefore, we selected this compound to further validate its function in regulating HSC activity and explore its mechanism of action.
 
-## Nanchangmycin induces lipid accumulation in both human and mouse primary HSCs
+### Nanchangmycin induces lipid accumulation in both human and mouse primary HSCs
 
 First, we confirmed the effect of NCMC on lipid accumulation in primary HSCs isolated from four human donors of different age, gender and race (donor information provided in Materials and methods). We observed that NCMC treatment significantly increased lipid droplet accumulation in primary HSC lines compared to controls (Figure 2A), consistent with HSC inactivation. Compared to nortriptyline (Chen et al., 2017), NCMC exhibited higher potency in HSCs from all four donors, where 100–300 nM of NCMC exhibited similar effects on lipid droplet accumulation to 10 µM nortriptyline (Figure 2B and Figure 2—figure supplement 1). As we switched to NCMC from a different source with higher purity, we found that the new NCMC stock has a lower EC50 in HSCs from human donors and HSCs from C57BL/6 mice (Figure 2C–D and Figure 2—figure supplement 2). These results show that NCMC induces lipid accumulation in both human and murine HSCs.
 
-## NCMC inhibits fibrotic gene expression in HSCs
+![Figure 2.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative microscopic images of HSCs treated with DMSO and NCMC for 48 hr. Cells were stained with Bodipy to identify lipid droplets (green) and Hoechst to define nuclei (blue). Scale bar represents 100 µm. (B) Dose response curves for NCMC (purple) and nortriptyline (blue) in HSCs isolated from four different human donors at 48 hr. Dotted line represents the mean percentage of Bodipy-positive cells in DMSO control wells. Error bars represent mean ± SEM (n=12). One experiment was performed independently for each of four donor lines. Curves were generated by fitting the data to a sigmoidal model. The data from the highest two concentrations of NCMC treatment (11 and 33 µM) were not used for fitting due to higher toxicity at these concentrations, as indicated by cell number (Figure 2—figure supplement 1). (C) Dose response curve for NCMC treatment in murine primary HSCs at 48 hr. Dotted lines represent the averaged percentage of Bodipy-positive cells in DMSO-negative control wells (lower) and nortriptyline-positive control wells (10 µM, upper). Error bars represent mean ± SEM (n=6). Data are representative of three independent experiments. (D) Representative images of murine HSCs treated with DMSO and NCMC for 48 hr and stained with Bodipy to identify lipid droplets (green) and Hoechst to define nuclei (blue). Scale bar represents 100 µm. This figure has two supplements.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Effects of NCMC (purple) and nortriptyline (blue) on cell numbers in HSCs isolated from four different human donors at 48 hr. Dotted line represents the mean number of cells per microscopic field in DMSO control wells. Error bars represent mean ± SEM (n=12). One experiment was performed independently in each of the four donors.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** HSCs isolated from human donor 1 (left two panels), human donor 3 (middle two panels) and mouse (right two panels) were used. Dotted line represents the mean percentage of Bodipy-positive cells in DMSO negative control wells (lower) or nortriptyline positive control wells (upper). Error bars represent mean ± SEM (n=6). EC50 and R2 are shown. At least one experiment was performed independently for each donor line.
+
+### NCMC inhibits fibrotic gene expression in HSCs
 
 We next quantified the effect of NCMC on ACTA2 and COL1A1 expression in multiple primary human HSC lines. NCMC treatment reduced both ACTA2 and COL1A1 levels at 100 nM or higher (Figure 3A–B). We also observed that NCMC reduced Acta2 and Col1a1 expression at multiple concentrations in murine HSCs at day 2 (Figure 3C). To investigate how NCMC affects the level of collagen deposited into the ECM, we performed the scar-in-a-jar assay to accelerate the process of ECM deposition with addition of molecular crowding reagents and TGF-β (Chen et al., 2009; Good et al., 2019). NCMC treatment significantly decreased collagen staining intensity and fiber area (Figure 3D–E). In addition to two-dimensional (2D) cell culture models, we also tested NCMC’s effect on COL1A1 expression in spheroids consisting of primary human HSCs and primary rat hepatocytes. Both the basal expression of COL1A1 and TGF-β-induced COL1A1 expression were significantly reduced by NCMC treatment (Figure 3F).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig3-v1.jpg)
+
+**Figure 3.:** (A-B) Effect of 48 hr NCMC treatment on ACTA2 and COL1A1 in HSCs from human donors 1 (A) and 3 (B). Error bars represent mean ± SEM (n=3). Data are representative of three independent experiments. ns indicates not significant, *** indicates p<0.001, and **** indicates p<0.0001 (one-way ANOVA test). (C) Effect of 48 hr NCMC treatment on Acta2 and Col1a1 in primary mouse HSCs. Error bars represent mean ± SEM (n=4). Data are representative of three independent experiments. **** indicates p<0.0001 (one-way ANOVA test). (D–E) Effect of 48 hr NCMC treatment (1 µM) on collagen deposition in ECM. (D): representative images. Scale bar represents 100 µm. Collagen protein is indicated in green and nuclei for the same field are indicated in blue. (E): quantified results. Error bars represent mean ± SEM (n=4). Data are representative of three independent experiments. **** indicates p<0.0001 (Student’s t-test). (F) qPCR analysis of COL1A1 in HSC-hepatocyte spheroids treated with NCMC with and without TGF-β (Tβ). Error bars represent mean ± SEM (n=3). One experiment was performed independently for each donor shown. * indicates p<0.05 (Student’s t-test) and ** indicates p<0.01 (Student’s t-test). Analysis was performed on day 3 (3D). (G–H) RNA sequencing analysis of HSCs (donor 1) treated with DMSO or 1 µM NCMC for 48 hr. (G) Representative gene sets from the gene set enrichment analysis (GSEA). NES refers to normalized enrichment score. Nom P refers to Nominal P value. Vertical black lines refer to affected genes in the indicated signatures. Red color indicates positive correlation, and blue color indicates negative correlation. (H): Heatmap showing RNA-seq expression for the canonical HSC gene signature (Zhang et al., 2016). All genes from the signature that are expressed in HSCs (with a minimum of five reads) were shown regardless of their expression patterns. Z-score values are also provided in Supplementary file 8. This figure has three supplements.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** NES refers to Normalized Enrichment Score. Nom P refers to Nominal P value. Vertical black lines refer to the gene hits in the indicated signatures. Red color indicates positively correlated, and blue color indicates negatively correlated.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** RPKM of PPARG in control (DMSO treated) and NCMC treated cells as measured by RNA sequencing was plotted. The full list of significantly differentially expressed genes from the RNA sequencing analysis is provided as Supplementary file 9. ** indicates p<0.01 (Student’s t-test).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The genes whose expressions were significantly (FDR <0.05) up-regulated (>2 fold increase) by NCMC treatment were analyzed for pathway enrichment in five databases, including Reactome 2016, MSigDB Hallmark 2020, WikiPathway 2021 Human, Elsevier Pathway Collection, and KEGG 2021 Human. The color of the bars indicates the range of the pathway’s combined score calculated by the enrichment analysis tool Enrichr (Chen et al., 2013; Kuleshov et al., 2016; Xie et al., 2021).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** The genes whose expressions were significantly (FDR <0.05) down-regulated (>2 fold decrease) by NCMC treatment were analyzed for pathway enrichment in five databases, including Reactome 2016, MSigDB Hallmark 2020, WikiPathway 2021 Human, Elsevier Pathway Collection, and KEGG 2021 Human. The color of the bars indicates the range of the pathway’s combined score calculated by the enrichment analysis tool Enrichr (Chen et al., 2013; Kuleshov et al., 2016; Xie et al., 2021).
+
 HSCs were next treated with NCMC and analyzed by RNA-sequencing analysis, which revealed that NCMC broadly affects genes associated with fibrosis. Among the top gene sets negatively enriched in the NCMC-treated group were ECM-related signatures, including ECM structural constituent and collagen-containing ECM, as well as signatures relevant to migration, including contractile fibers. Of note, genes associated with oligosaccharide lipid intermediate biosynthetic process were positively enriched, possibly contributing to the re-accumulation of lipid droplets (Figure 3G and Supplementary file 7). We compared the RNA sequencing data with a canonical HSC gene signature (Zhang et al., 2016), an HSC-specific signature that is highly and uniquely expressed in HSCs and correlates with the extent of fibrosis (Zhang et al., 2016), and the liver cirrhosis signature from Disgenet database (Piñero et al., 2020). We observed that these signatures were significantly negatively enriched (Figure 3—figure supplement 1 and Supplementary file 8). Visualization of the canonical HSC gene signature (Zhang et al., 2016) also demonstrated that many genes that promote liver fibrosis, including those that encode collagens, TGF-β, and PDGF pathway components, are inhibited by NCMC (Figure 3H and Supplementary file 8). The mRNA level of the classic quiescent or inactivated HSC marker PPARG (PPARγ) is also induced with NCMC treatment (Figure 3—figure supplement 2). Taken together, these data suggest that NCMC triggers a global change in HSC gene expression, resulting in a decrease in profibrotic activity. We also used the Enrichr online pathway analysis tool (Chen et al., 2013; Kuleshov et al., 2016; Xie et al., 2021) to analyze the 1904 genes that are significantly (FDR <0.05) upregulated greater than two fold and the 2,620 genes that are significantly (FDR <0.05) downregulated more than twofold by NCMC (Supplementary file 9). The results from analysis of five databases were compared, including Reactome 2016, MSigDB Hallmark 2020, WikiPathway 2021 Human, Elsevier Pathway Collection, and KEGG 2021 Human (Figure 3—figure supplements 3 and 4 and Supplementary file 10). Among the 30 pathways significantly enriched (FDR <0.05) for NCMC-upregulated genes, the unfolded protein response, sterol regulatory element-binding proteins (SREBP) signaling and cholesterol synthesis were identified through analysis of multiple databases. Among the 270 pathways significantly enriched (FDR <0.05) for NCMC-downregulated genes, a few pathways were identified to be represented more than once, for example, TGF-β signaling, Ca2+ response and regulation, interferon response, estrogen response, and focal adhesion-PI3K/Akt signaling pathway. These pathways may contribute to the HSC-inactivating effects of NCMC.
 
-## NCMC reduces migration and proliferation of HSCs
+### NCMC reduces migration and proliferation of HSCs
 
 In addition to secretion of ECM proteins, activated HSCs demonstrate enhanced migration capabilities (Hernandez-Gea and Friedman, 2011). Thus, we performed transwell migration and scratch wound healing assays to evaluate how NCMC affects HSC migration. HSCs were pre-treated with NCMC for two days before seeding in cell culture inserts with permeable membranes. After 6–24 hr, HSCs that migrated through the membrane were stained and counted. NCMC treatment significantly reduced the number of cells that migrated through the membrane compared to DMSO controls (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig4-v1.jpg)
+
+**Figure 4.:** (A) Transwell migration assay results of HSCs treated with DMSO or 1 µM NCMC for 48 hr. Top: representative images. Scale bar represents 500 µm. Bottom: quantification of migrated cells (n=3 for each experiment). ** indicates p<0.01, and **** indicates p<0.0001 (Student’s t-test). (B) Wound healing assay results of HSCs treated with DMSO or NCMC. HSCs were seeded in complete medium, and immediately after generating the wound field, DMSO and 1 µM NCMC were added. The closure of the wound field was monitored for up to 30 hr as indicated. Left: representative images. White bars highlight the width of the wound field. Scale bar represents 1000 µm. Right: quantification of wound width. (n=2). Data are representative of three independent experiments. (C) Cell count for HSCs treated with DMSO or NCMC over the indicated time in days. Top: human HSCs from donor 1. Middle: human HSCs from donor 3. Bottom: mouse HSCs. Error bars represent mean ± SEM (n=6) but are too small to be visualized. One experiment was performed independently for each HSC line shown. (D) Flow cytometry analysis of Annexin V and propidium iodide (PI) stained HSCs from human donor 1 (top) and 3 (bottom) treated with DMSO or NCMC for 48 hr. Plots are representative of two independent experiments. (E) Flow cytometry analysis of Ki-67 and PI stained HSCs from human donor 1 treated with DMSO or NCMC for 24 hr. Plots are representative of two independent experiments. (F) Measurement of cytosolic calcium level using fluo-4 NW. HSCs from donor 3 were pre-loaded with fluo-4 NW and fluorescent intensity was read immediately after adding compounds (NCMC: nanchangmycin [red], TG: thapsigargin [blue], INMC: ionomycin [green]). The plot demonstrates results from three independent experiments. Solid dots represent mean, and dotted lines represent SEM (n=3). RFU: Relative fluorescence unit. (G) Measurement of cytosolic calcium level after adding NCMC at indicated concentrations in HSCs from donor 3 (magenta: control (no compound, no DMSO), blue: 10 nM, green: 100 nM, red 1 µM, orange: 10 µM). The plot demonstrates results from one experiment for 10 µM and five independent experiments for the other concentrations. Solid dots represent mean, and dotted lines represent SEM (n=3). This figure has two supplements.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** HSCs from human donor 3 were treated with DMSO or nanchangmycin (NCMC) for 24 hr prior to flow cytometry analysis with Ki-67 and PI. Plots are representative of two independent experiments.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) HSCs from donor 3 were pre-loaded with fluo-4 NW and fluorescent intensity was read immediately after adding compounds in the presence of 1 mM EGTA (NCMC: nanchangmycin [red], TG: thapsigargin [blue], INMC: ionomycin [green]). The plot demonstrates results from three independent experiments. Solid dots represent mean, and dotted lines represent SEM (n=3). RFU: Relative fluorescence unit. (B) HSCs from donor 3 were pre-loaded with fluo-4 NW and fluorescent intensity was read immediately after adding 0.2% DMSO or 10 nM NCMC dissolved in DMSO (without EGTA). The plot demonstrates results from three independent experiments. Solid dots represent mean, and dotted lines represent SEM (n=8 for DMSO, n=4 for NCMC). DMSO at 0.2% was selected as a negative control, as this was the highest concentration of DMSO to which HSCs were exposed, as a solvent. NCMC, TG, and INMC were all dissolved in DMSO.
 
 We also examined the wound healing capability of HSCs. HSCs were seeded onto plates containing inserts that block cells from accessing and attaching to a strip at the bottom of the well. After removal of the insert, DMSO or 1 µM NCMC was added, and HSCs filled the gap or ‘wound’ field through migration and proliferation. After 30 hr of treatment, the DMSO-treated control cells closed the gap, whereas the gap remained for NCMC-treated cells (Figure 4B). While inhibition of HSC migration by NCMC is likely the major contributor to the difference observed between NCMC treatment and controls at shorter time points, such as 6 hr for the transwell assay, the difference at longer time points could be attributed to reductions in both migration and proliferation.
 
 We next determined how NCMC affects HSC proliferation. We treated HSCs isolated from two human donors with DMSO control and increasing concentrations of NCMC and counted Hoechst-stained nuclei on five consecutive days. NCMC treatment reduced cell proliferation at concentrations of 25 nM and higher, and this effect on proliferation was first evident on day 2 (Figure 4C). A fraction of HSCs undergo apoptosis with the removal of fibrotic stimuli in vivo (Kisseleva et al., 2012), and we evaluated the contribution of apoptosis to the effect of NCMC on day 2. Based on the analysis of Annexin V and propidium iodide (PI) by flow cytometry, NCMC treatment only showed a small increase in the percentage of apoptotic cells in one of two donor HSC lines at 1 µM and no increase at 100 nM. There was also a small increase in necrotic cells in NCMC treatment compared to controls (Figure 4D). In addition, analysis of the proliferation marker Ki-67 and PI showed that NCMC treatment increased the percentage of G0 quiescent cells (Figure 4E and Figure 4—figure supplement 1). Taken together, these results suggest that HSCs enter a more quiescent-like, non-proliferative state upon NCMC treatment, and apoptosis was only observed in a small fraction of cells.
 
-## Modulation of Ca2+ signaling may contribute to the effect of NCMC on HSC inactivation
+### Modulation of Ca2+ signaling may contribute to the effect of NCMC on HSC inactivation
 
 NCMC is a polyether ionophore and has been shown to increase cytosolic Ca2+ in a cancer cell line (Huang et al., 2018). We examined the activity of NCMC as a calcium ionophore in HSCs. We loaded HSCs with a fluorescent Ca2+ indicator (Fluo-4 NW) and treated cells with NCMC. Ionomycin and thapsigargin were included as positive controls (Jones and Sharpe, 1994; Morgan and Jacob, 1994). At 10 µM, NCMC increased cytosolic Ca2+ as did ionomycin and thapsigargin (Figure 4F). We also performed the same analysis with ethylene glycol tetraacetic acid (EGTA) to chelate Ca2+ and eliminate any contribution from extracellular Ca2+ during the assay. Similar to the effect observed with thapsigargin (Ribeiro et al., 2018), the increase of cytosolic Ca2+ in response to NCMC was not sensitive to EGTA (Figure 4—figure supplement 2A), suggesting that the immediate increase of cytosolic Ca2+ following NCMC treatment is due to release of calcium from intracellular stores. Analysis of a dose response of NCMC demonstrated an increase in cytosolic Ca2+ at concentrations as low as 10 nM (Figure 4G and Figure 4—figure supplement 2B).
 
-## NCMC reduces COL1A1 expression in HSCs through the FYN pathway
+### NCMC reduces COL1A1 expression in HSCs through the FYN pathway
 
 Calcium signaling regulates mitogen-activated protein kinases and non-receptor tyrosine kinases (Filvaroff et al., 1990; Rusanescu et al., 1995; Xia et al., 1996), and we analyzed a kinase array to define kinase signaling molecules modulated by NCMC. HSCs were treated with DMSO or 1 μM NCMC for 1 and 18 hours (Figure 5A). Among the 45 proteins tested, FYN phosphorylation at Y420 was reduced by approximately 40% at both 1 hr and 18 hr. We selected HSPB1 (HSP27), MAPK1/3 (ERK2/1), STAT5A/B, and PTK2 (FAK) to study further in addition to FYN because (1) they also showed decreased phosphorylation at 18 hr, and (2) genes encoding these products are expressed at a relatively high level in HSCs, as indicated from RNA sequencing data, suggesting that these may also be potential mechanistic targets of NCMC in HSCs.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig5-v1.jpg)
+
+**Figure 5.:** (A) Kinase array analysis of HSCs treated with DMSO or 1 µM NCMC for 1 or 18 hr. Blue bars indicate mean fold change (n=2) in phosphorylation at specified sites in NCMC-treated cells compared to DMSO-treated cells at 1 hr (light blue) or 18 hr (dark blue). Red triangles indicate the mean RPKM of each corresponding kinase mRNA based on RNA sequencing of HSCs (Chen et al., 2017). The three dotted lines represent 20% increase/decrease or no change in phosphorylation. Kinases highlighted in red were chosen for further investigation. (B) The expression of each candidate kinase gene was depleted using pooled siRNAs, and after 72 hr, COL1A1 level was determined by qRT-PCR in HSCs isolated from human donor 1 (top), 3 (middle), or 4 (bottom). A non-targeting siRNA is used as a control (NTC). Error bars represent mean ± SEM (n≥4, as indicated by the number of dots). ns indicates not significant (p>0.05), * indicates p<0.05, ** indicates p<0.01, *** indicates p<0.001, and **** indicates p<0.0001 (one-way ANOVA test). (C) Knockdown efficiency of each siRNA pool in HSCs from human donor 1. Error bars represent mean ± SEM (n≥4). ns indicates not significant (p>0.05), * indicates p<0.05, ** indicates p<0.01, *** indicates p<0.001, and **** indicates p<0.0001 (Student’s t-test performed for FYN, HSPB1, and PTK2 depletion, and one-way ANOVA test performed for MAPK1, MAPK3, STAT5A, and STAT5B depletion). One experiment was performed independently for each HSC line shown. This figure has one supplement.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Error bars represent mean ± SEM (n=4). One experiment was performed independently for each donor shown. ns indicates not significant (p>0.05), * indicates p<0.05, ** indicates p<0.01, *** indicates p<0.001, and **** indicates p<0.0001 (one-way ANOVA test).
 
 To further investigate the role of these seven kinases in human HSCs, we depleted each kinase using pooled siRNAs in human HSCs from three donors. We observed a consistent reduction of COL1A1 with depletion of FYN, HSPB1, MAPK1, MAPK3, and STAT5B (Figure 5B–C, Figure 5—figure supplement 1), suggesting that each kinase contributes to regulation of COL1A1 expression.
 
@@ -95,7 +272,27 @@ Among the kinases that consistently reduced COL1A1 expression, the reduction of 
 
 Both depletion of FYN using two different siRNA duplexes (Figure 6A–B) and treatment with 1-Naphthyl PP1, an inhibitor of v-Src, FYN, and ABL (Figure 6C), significantly reduced COL1A1 mRNA level in HSCs. Collagen deposition in the ECM was also impaired by FYN depletion, as indicated by the reduced collagen intensity and fiber area in the scar-in-a-jar assay (Figure 6D). In addition, ectopic expression of a dominant negative Y213A FYN mutant (Kaspar and Jaiswal, 2011) reduced COL1A1 expression in HSCs but did not further decrease COL1A1 level in NCMC-treated cells, suggesting that FYN inhibition is likely to be downstream of NCMC (Figure 6E). Lastly, expression of dominant negative FYN in HSCs resulted in a decrease in phosphorylated MAPK (Figure 6F), suggesting that FYN may crosstalk with the MAPK pathway to exert its function.
 
-## MAPK1/3 and PTK2 regulate HSC migration
+![Figure 6.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig6-v1.jpg)
+
+**Figure 6.:** (A-B) FYN was depleted in HSCs with two siRNAs (si1 and si2). The expression levels of COL1A1 (A) and FYN (B) were analyzed by qPCR after 72 hr in comparison to a non-targeting control siRNA (NTC). Error bars represent mean ± SEM (n=3). At least one experiment was performed independently for each of three donor lines. ** indicates p<0.01, *** indicates p<0.001, and **** indicates p<0.0001 (one-way ANOVA test). (C) HSCs were treated with NCMC or 1-Naphthyl PP1 (PP1) for 48 hr. COL1A1 level was analyzed by qPCR. Error bars represent mean ± SEM (n=3 for donor 1, and n=6 for donor 3). Data are representative of three independent experiments for donor 1 and experiment for donor 3. **** indicates p<0.0001 (one-way ANOVA test). (D) Effect of FYN-depletion on collagen deposition in ECM. Top: representative images. Scale bar represents 100 µm. Bottom: quantified results. Error bars represent mean ± SEM (n=6). Data are representative of two independent experiments. ** indicates p<0.01, and **** indicates p<0.0001 (one-way ANOVA test). (E) HSCs transduced with control virus or virus containing the cDNA encoding dominant negative mutant FYN (FYN-DN) were treated with DMSO or 100 nM NCMC for 48 hr. Expression of COL1A1 was quantified by qPCR. Error bars represent mean ± SEM (n=3). Data are representative of three independent experiments. ns indicates not significant (p>0.05), * indicates p<0.05, ** indicates p<0.01, and **** indicates p<0.0001 (two-way ANOVA test). (F) Phospho-MAPK and phospho-PTK2 levels were determined by western blot in control HSCs and HSCs overexpressing DN-FYN. Left: representative Western blot results. Right: quantified results. Representative of two independent experiments. This figure has four supplements.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The same samples were loaded for A and B on the same gel. The membrane was cut and incubated with FYN and p-Src family antibodies separately. Bands were detected for FYN at 64 kiloDaltons (kD) (Upper band) and 51 kD (Lower band). Two different exposure times are shown for FYN in (A) and p-Src (B) to evaluate both bands. β-actin is used as a loading control. (Data are representative of three independent experiments).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** HSCs were transfected with siRNAs targeting FYN (si1 and si2) and a non-targeting siRNA control (NTC). Western blot was performed on day 3 (representative of two independent experiments).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** HSCs were treated with NCMC for indicated number of days (D). FYN level was analyzed by qPCR. Error bars represent mean ± SEM (n=3). Data are representative of two independent experiments. ns indicates not significant (p>0.05) by one-way ANOVA for donor 1 and Student’s t-test for donor 3. Data are representative of two independent experiments for each of the two donor lines.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/74513/elife-74513-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** Western blot of HSCs treated with DMSO control or 1 µM NCMC for 18 hr. β-actin is used as a loading control (representative of three independent experiments).
+
+### MAPK1/3 and PTK2 regulate HSC migration
 
 Next, we asked if FYN regulates other HSC phenotypes that are observed with NCMC treatment. HSCs were transfected with pooled FYN siRNAs, and after 3 days, cells were seeded for transwell migration assay. As PTK2 is known to regulate migration of lung fibroblasts (Zhao et al., 2016) and HSCs (Zhao et al., 2017), we included PTK2 siRNAs as a positive control. While PTK2 depletion consistently suppressed migration of HSCs isolated from three different human donors, FYN depletion only reduced migration in one HSC line (Figure 7A–B). We also observed that dominant negative FYN promotes phosphorylation of PTK2 (Figure 6F), while NCMC reduces phosphorylation of PTK2 (Figure 6—figure supplement 4), suggesting that NCMC controls PTK2 phosphorylation and HSC migration through a pathway that is independent of FYN.
 
@@ -105,11 +302,132 @@ Next, we asked if FYN regulates other HSC phenotypes that are observed with NCMC
 
 We further tested how other kinases affected by NCMC (MAPK1/3 and HSPB1) regulate HSC migration. Depletion of MAPK1/3 consistently reduced migration across different donors, whereas the influence of HSPB1 depletion varied across HSCs from different donors (Figure 7C). These data indicate that NCMC regulates HSC migration through multiple downstream signaling pathways likely targeting PTK2 and MAPK1/3 as the primary paths to inhibit migration.
 
-## Pharmacokinetic studies of NCMC
+### Pharmacokinetic studies of NCMC
 
 We next sought to determine whether NCMC itself could serve as an antifibrotic compound in vivo. Previous studies showed that dosing of 1 mg/kg every other day via intraperitoneal (IP) injection for three weeks resulted in decreased breast cancer tumor size (Huang et al., 2018), and that oral administration of 2 mg/kg or 4 mg/kg NCMC daily for 20 days reduces multiple myeloma subcutaneous xenografts in nude mice without affecting liver functions, as indicated by aspartate aminotransferase (AST), alkaline phosphatase (ALP), and alanine aminotransferase (ALT) levels (Xu et al., 2020). To estimate the dose necessary to achieve NCMC exposure in the liver at which an antifibrotic response might be observed, we initially performed pharmacokinetic (PK) studies following IP injection of NCMC at 1 mg/kg to mice. We found a relatively flat plasma concentration-time profile of NCMC after a single dose of 1 mg/kg. The maximum plasma concentration (Cmax) of 108±39.7 nM was reached at 4 hr followed by a decrease to less than 50 nM after 12 hr. Based on the analysis of plasma concentration over time, we estimated a terminal elimination half-life (t1/2) of 5.7±0.87 hr. As anticipated from the flat concentration-time curve, the calculated volume of distribution (Vss/F) is nearly 10 L/kg, indicating substantial distribution into tissue.
 
 We next repeated IP dosing daily at 1 mg/kg for 4 days to determine how this affects plasma and tissue concentrations. The plasma concentration-time profile measured after the fourth dose was comparable to that after single dose, giving no hint of an accumulation of the compound after multiple dosing (Table 2). We detected 10-fold higher NCMC concentration in fat tissue compared to plasma, whereas it was undetectable in liver and muscle. The trough total plasma concentration was in the range of EC50 in cell culture, which would result in a lower effective concentration when taking into consideration the fraction of NCMC bound to serum proteins, which we measured at >99% (the reported plasma concentrations refer to the total = free + bound plasma concentrations). Further, hepatic microsomes from mice showed evidence of degradation of NCMC by phase I liver metabolism, as indicated by the short half-life (37.8 min) and high derived intrinsic clearance (36.7 µl/min/mg protein).
+
+**Table 2.**
+ Pharmacokinetics of NCMC in vivo.Plasma and tissue concentrations of NCMC were measured at the indicated time points after once daily intraperitoneal injection of 1.0 mg/kg NCMC to male C57/B6N mice (n=4) for 4 days.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>Time[h]</th>
+      <th>Tissue</th>
+      <th>N</th>
+      <th>mean[nmol/L]</th>
+      <th>SD[nmol/L]</th>
+      <th>CV[%]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>4</td>
+      <td>Plasma</td>
+      <td>4</td>
+      <td>109.7</td>
+      <td>23.19</td>
+      <td>21.1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>24</td>
+      <td>Plasma</td>
+      <td>4</td>
+      <td>38.25</td>
+      <td>3.18</td>
+      <td>8.3</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>24</td>
+      <td>Plasma</td>
+      <td>4</td>
+      <td>32.15</td>
+      <td>3.99</td>
+      <td>12.4</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2</td>
+      <td>Plasma</td>
+      <td>4</td>
+      <td>69.43</td>
+      <td>2.92</td>
+      <td>4.2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>4</td>
+      <td>Plasma</td>
+      <td>4</td>
+      <td>66.70</td>
+      <td>13.77</td>
+      <td>20.6</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>8</td>
+      <td>Plasma</td>
+      <td>4</td>
+      <td>80.13</td>
+      <td>13.55</td>
+      <td>16.9</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>12</td>
+      <td>Plasma</td>
+      <td>4</td>
+      <td>67.58</td>
+      <td>12.54</td>
+      <td>18.6</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>24</td>
+      <td>Plasma</td>
+      <td>4</td>
+      <td>35.25</td>
+      <td>8.97</td>
+      <td>25.4</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>24</td>
+      <td>Muscle</td>
+      <td>4</td>
+      <td>NOP</td>
+      <td>na</td>
+      <td>na</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>24</td>
+      <td>Liver</td>
+      <td>4</td>
+      <td>NOP</td>
+      <td>na</td>
+      <td>na</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>24</td>
+      <td>Fat</td>
+      <td>4</td>
+      <td>375.3</td>
+      <td>145.2</td>
+      <td>38.7</td>
+    </tr>
+  </tbody>
+</table>
+
+_N: number of mice, SD: standard deviation, CV: coefficient of variance, NOP: no peak, na: not applicable_
 
 In summary, the pharmacokinetic data suggest that NCMC will not reach sufficient exposure in the liver to achieve hepatic antifibrotic effects in vivo.
 
@@ -135,37 +453,480 @@ In summary, this study has identified NCMC as a compound that increases cytosoli
 
 ## Materials and methods
 
-## Cell culture and compounds
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>FYN (dominant negative mutant with Y213A mutation)</td>
+      <td>Amplified from the Addgene plasmid pRK5 DN-Fyn</td>
+      <td>Addgene plasmid pRK5 DN-Fyn (#16033)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK-293</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Primary human hepatic stellate cells (donor 1)</td>
+      <td>Isolated from human nonparenchymal liver cells (NPCs) purchased from Lonza (cat# HUCNP)</td>
+      <td>Lonza ID: 4105</td>
+      <td>Age: 45; Gender: Male; Race: Caucasian</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Primary human hepatic stellate cells (donor 2)</td>
+      <td>Isolated from human nonparenchymal liver cells (NPCs) purchased from Lonza (cat# HUCNP)</td>
+      <td>Lonza ID: 4270</td>
+      <td>Age: 35; Gender: Male; Race: Caucasian</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Primary human hepatic stellate cells (donor 3)</td>
+      <td>Lonza (cat# HUCLS)</td>
+      <td>Lonza ID: 180761</td>
+      <td>Age: 57; Gender: Female; Race: Caucasian</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Primary human hepatic stellate cells (donor 4)</td>
+      <td>Lonza (cat# HUCLS)</td>
+      <td>Lonza ID: 182821</td>
+      <td>Age: 24; Gender: Female; Race: African American</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Primary human hepatic stellate cells (donor 5)</td>
+      <td>Isolated from human nonparenchymal liver cells (NPCs) purchased from Lonza (cat# HUCNP)</td>
+      <td>Lonza ID: 4258</td>
+      <td>Age: 51; Gender: Male; Race: African American</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-collagen type I (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>C2456</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FYN (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#4023</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-Src family (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#6943</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-p44/42 MAPK (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#4370</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-β-Actin antibody (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-47778 HRP</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit IgG secondary antibody (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>#32460</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-mouse Alexa Fluor 488 secondary antibody (Donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A-21202</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLJM1-eGFP (plasmid)</td>
+      <td>Addgene</td>
+      <td>plasmid# 19319</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRK5 DN-Fyn</td>
+      <td>Addgene</td>
+      <td>plasmid# 16033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLJM1-DN-FYN (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>This is a plasmid generated by this study for the expression of dominant negative (Y213A) FYN in HSCs using lentivirus system. Refer to the Materials and Methods section for more information.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FYN-forward primer</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>This is the forward PCR primer for cloning human FYN gene. The sequence is 5’-CAT GCTAGC GCCACC ATGGGCTGTGTGCAATGTAAGG-3’. Refer to the Materials and Methods section for more information.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FYN-reverse primer</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>This is the reverse PCR primer for cloning human FYN gene. The sequence is 5’-AGC GAATTC TTACAGGTTTTCACCAGGTTGGTAC-3’. Refer to the Materials and Methods section for more information.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: non-targeting control</td>
+      <td>Horizon Discovery</td>
+      <td>D-001210–05</td>
+      <td>siGENOME</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pooled siRNAs: FYN</td>
+      <td>Horizon Discovery</td>
+      <td>MQ-003140–04</td>
+      <td>siGENOME SMARTpool</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pooled siRNAs: HSPB1/HSP27</td>
+      <td>Horizon Discovery</td>
+      <td>M-005269–01</td>
+      <td>siGENOME SMARTpool</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pooled siRNAs: MAPK3/ERK1</td>
+      <td>Horizon Discovery</td>
+      <td>M-003592–03</td>
+      <td>siGENOME SMARTpool</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pooled siRNAs: MAPK1/ERK2</td>
+      <td>Horizon Discovery</td>
+      <td>M-003555–04</td>
+      <td>siGENOME SMARTpool</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pooled siRNAs: PTK2/FAK</td>
+      <td>Horizon Discovery</td>
+      <td>M-003164–02</td>
+      <td>siGENOME SMARTpool</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pooled siRNAs: STAT5A</td>
+      <td>Horizon Discovery</td>
+      <td>M-005169–02</td>
+      <td>siGENOME SMARTpool</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pooled siRNAs: STAT5B</td>
+      <td>Horizon Discovery</td>
+      <td>M-010539–02</td>
+      <td>siGENOME SMARTpool</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA#1: FYN</td>
+      <td>Horizon Discovery</td>
+      <td>D-003140–10</td>
+      <td>siGENOME</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA#2: FYN</td>
+      <td>Horizon Discovery</td>
+      <td>D-003140–24</td>
+      <td>siGENOME</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Real-time PCR Assay: Human ACTA2</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs00426835_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Real-time PCR Assay: Human COL1A1</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs00164004_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Real-time PCR Assay: Human FYN</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs00176628_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Real-time PCR Assay: Human HSPB1/HSP27</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs00356629_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Real-time PCR Assay: Human MAPK1/ERK2</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs01046830_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Real-time PCR Assay: Human MAPK3/ERK1</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs00385075_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Real-time PCR Assay: Human PSMB2</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs01002946_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Real-time PCR Assay: Human PTK2/FAK</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs01056457_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Real-time PCR Assay: Human STAT5A</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs00559643_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Real-time PCR Assay: Human STAT5B</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs00560026_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Real-time PCR Assay: Mouse Acta2</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm00725412_s1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Real-time PCR Assay: Mouse Col1a1</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm00801666_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Real-time PCR Assay: Mouse Psmb2</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Mm00449477_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Proteome Profiler Human Phospho-Kinase Array Kit</td>
+      <td>R&amp;D Systems</td>
+      <td>ARY003B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nanchangmycin (NCMC)</td>
+      <td>Selleck Chemicals</td>
+      <td>S1450</td>
+      <td>Used for the initial confirmation of dose response curves in multiple HSC lines</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nanchangmycin (NCMC)</td>
+      <td>Adooq</td>
+      <td>A10621</td>
+      <td>Used for all other follow-up experiments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-Naphthyl PP1</td>
+      <td>Tocris</td>
+      <td>#3603</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thapsigargin</td>
+      <td>Sigma-Aldrich</td>
+      <td>T9033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin</td>
+      <td>Biogems</td>
+      <td>#5608212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BIOVIA Pipeline Pilot</td>
+      <td>Dassault Systèmes</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GSEA</td>
+      <td>UC San Diego and Broad Institute</td>
+      <td>http://www.gsea-msigdb.org/gsea/index.jsp</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td>Babraham Bioinformatics</td>
+      <td>v 0.11.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RSEM</td>
+      <td>https://github.com/deweylab/RSEM; Dewey Lab, 2020</td>
+      <td>v 1.3.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Enrichr</td>
+      <td>https://maayanlab.cloud/Enrichr/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and compounds
 
 HEK-293 cell line was obtained from ATCC (CRL-1573) and cultured in Dulbecco’s Modified Eagle Medium (DMEM) with 10% fetal calf serum (FCS) and 1% Penicillin/Streptomycin (P/S). The cells are mycoplasma negative. Human primary hepatic stellate cells from donors 1, 2, and 5 were isolated from human nonparenchymal liver cells (NPCs) purchased from Lonza (cat# HUCNP) as described previously (Chen et al., 2017). Human primary hepatic stellate cells from donors 3 and 4 were purchased as isolated hepatic stellate cells from Lonza (cat# HUCLS). Donor information is listed below.
+
+<table>
+  <thead>
+    <tr>
+      <th>Donor</th>
+      <th>Lonza ID</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Race</th>
+      <th>BMI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>4105</td>
+      <td>45</td>
+      <td>M</td>
+      <td>Caucasian</td>
+      <td>24.2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>4270</td>
+      <td>35</td>
+      <td>M</td>
+      <td>Caucasian</td>
+      <td>42.1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>180761</td>
+      <td>57</td>
+      <td>F</td>
+      <td>Caucasian</td>
+      <td>23.6</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>182821</td>
+      <td>24</td>
+      <td>F</td>
+      <td>African American</td>
+      <td>48.8</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>4258</td>
+      <td>51</td>
+      <td>M</td>
+      <td>African American</td>
+      <td>24.5</td>
+    </tr>
+  </tbody>
+</table>
 
 All hepatic stellate cells were cultured in DMEM with 10% FCS and 1% P/S. The primary lipid accumulation screen and secondary mRNA screen were conducted with HSCs from donor 1 at passage 8, the dose response curve screen was conducted with HSCs from donor 2 at passage 8 or 9, and all other experiments were conducted with HSCs from donors as indicated at passage 8–10.
 
 Nanchangmycin (NCMC) was purchased from two sources. The initial confirmation of dose response curves in multiple HSC lines (Figure 2B and Figure 2—figure supplement 1) were performed with NCMC purchased from Selleck Chemicals (cat# S1450). All other experiments were performed with NCMC purchased from Adooq (cat# A10621) for higher purity. 1-Naphthyl PP1 was purchased from Tocris (cat# 3063). Thapsigargin was purchased from Sigma (cat# T9033). Ionomycin was purchased from Biogems (cat# 5608212). Stock solutions were made with DMSO.
 
-## Animal experiments
+### Animal experiments
 
 Housing of the animals as well as the animal experiments were conducted in accordance with the European Animal Welfare Act (Directive 2010/63/EU) and the derived German Animal Welfare act (TierSchG) and Animal welfare directive (TierSchVersV). The experimental procedures were authorized by the Regierungspräsidium Tübingen as the responsible local German authority under reference number 19–004 G.
 
-## Primary high-throughput lipid accumulation screen
+### Primary high-throughput lipid accumulation screen
 
 For each of the 5-day screening cycle, cells were plated on day 1 at 1000 cells/well in 30 µl/well of regular complete media (DMEM +10% FCS+1% P/S) in 384-well plates using Multidrop Combi (Thermo). On day 3, 100 nL/well of compounds from the libraries were transferred by a stainless-steel pin array and Seiko compound transfer robot to the assay plates in duplicates. On day 5, the cells were fixed with 4% paraformaldehyde (diluted with DPBS from 16% stock, Electron Microscopy Sciences, cat# 15710) and incubated at room temperature for 15 min. The cells were washed one time with DPBS and incubated with Bodipy 493/503 (0.25 μg/mL, Invitrogen, cat# D3922) and Hoechst (5 μg/mL, Invitrogen, cat# H1399) for 45 min at room temperature. The plates were washed three times with DPBS, and then 50 µl/well DPBS was added before sealing the plates with adhesive foil cover. The plates were imaged using the ImageXpress Micro Confocal (Molecular Devices) at the Institute of Chemistry and Cell Biology (ICCB)-Longwood screening facility. Images of each well were analyzed using MetaXpress software to calculate the percentage of positive cells (the total number of Bodipy-positive cells [cutoff was adjusted for each plate] divided by the total cell count).
 
 We developed a scoring system to rank the strength of a compound in inducing HSC reversion to the inactive phenotype. A score was calculated as follows: 1. Averaged percent positive cells from duplicates was used to calculate the distance from the baseline of the plate (percentile 75%), 2. Toxicity was penalized (the distance from the average number of cells in the compound wells to the number of cells in the nortriptyline wells), and 3. Poor reproducibility was penalized (the error of the two points to the average value of the duplicates). The score was then normalized using nortriptyline and DMSO scores for each plate. A new parameter was calculated termed ‘Scaled’ with the formula: Scaled = –1*(median (nortriptyline)-score)/abs(median (nortriptyline)-median(DMSO)).
 
-## Consolidation of screening library
+### Consolidation of screening library
 
 Chemical structures of the screening library were consolidated using the data science workflow software BIOVIA Pipeline Pilot. Protonation states of the structures were standardized, and counter ions were eliminated. We used canonical Simplified Molecular Input Line Entry System (SMILES) as a unique linear textual representation of the chemical structure. This way, the initial 15,867 structures could be mapped onto 7696 unique canonical SMILES of which 4329 are represented by a single well in the library and 3367 occur in up to 19 wells. Multiple occurrences of individual canonical SMILES could be traced to multiple vendors and/or multiple molar concentrations of the individual probes. Using this analysis, the 711 experimental wells defined as hits were determined to represent 464 individual compounds.
 
-## Clustering analysis of primary screen candidates and selection for secondary analysis
+### Clustering analysis of primary screen candidates and selection for secondary analysis
 
 Hits were clustered into 102 groups of structurally similar compounds based on Tanimoto similarities using the computational analysis software BIOVIA Pipeline Pilot. The distance to the center of the cluster was calculated for each compound in the cluster using BIOVIA Pipeline Pilot, and the most common structure for each cluster was defined based on this value. The strongest hit with the most common structure for each cluster was selected as the representative for the cluster. Promiscuous bioactive compounds that contain pan assay interference structures (PAINS) (Baell and Nissink, 2018), or that we identified as frequent hits in screens at ICCB-L were not included for further analysis, as the exhibited bioactivity may be attributed to interference with specific assay readouts and/or nonspecific, intractable mechanism of action (Matlock et al., 2018). Frequent hits were defined as having a positive hit rate of more than 20% in screens performed at ICCB-L or more than 10 total positive hits in the database of ICCB-L screens. One additional compound was removed because the molecular formula was the same as another selected compound, and one compound was removed due to similarity in structure to nortriptyline (Supplementary file 4).
 
-## Secondary mRNA screen for cherrypicked small molecules
+### Secondary mRNA screen for cherrypicked small molecules
 
 For each of the 5-day screening cycle, cells were plated in 384-well plates as in primary screen on day 1. Compounds were added on day 3 using a digital non-contact dispenser D300e (Hewlett Packard) in quadruplicate. On day 5, cell lysates for qPCR were prepared using the Cells-to-CT 1-Step Taqman Kit (Invitrogen, cat# A25603) according to manufacturer’s instructions. Briefly, cells were incubated with 25 µL/well lysis buffer (plus DNase) for 5 min at room temperature, and the reaction was stopped by adding 2.5 µL stop solution and incubating for 2 min at room temperature. A total of 2 µL cell lysates were used in the multiplexed qRT-PCRs to measure ACTA2, COL1A1, and PSMB2 mRNA levels. To reduce technical variations, the TaqMan probe for endogenous control gene PSMB2 was VIC-labeled and primer-limited, so that the PSBM2 probe can be multiplexed with FAM-labeled probe for ACTA2 or COL1A1 in the same qRT-PCR. Details for probes are included in the ‘qPCR analysis’ section. The results were analyzed by fitting the data to the following linear models: Ct_ACTA2 ~Ct_PSMB2 +plate + chemical or Ct_COL1A1~Ct_PSMB2 +plate + chemical. Relative fold changes were calculated from the estimate of each chemical as compared to DMSO control.
 
-## Dose response curve screen
+### Dose response curve screen
 
 The dose response curve screen was performed using an adapted lipid accumulation assay with live human primary HSCs. Briefly, cells were plated at a density of 2500 cells/well in 384-well plates. After 24 hr, compounds were added in duplicate at concentrations from 0.001 to 10 µM. Nortriptyline (10 µM) and DMSO (0.1%) served as controls. Cells were incubated with compounds for 24 hr, followed by treatment with Bodipy (1 µg/ml; ThermoFisher, cat# D3922) and NucLight Rapid Red (final dilution 1:4000; Essen BioSciences, cat# 4725) for an additional 12 hr to stain lipid droplets and nuclei. Fluorescent signals were measured using an Incucyte S3 system.
 
@@ -173,91 +934,154 @@ Bodipy stained area and nuclei count were determined selecting two fields per we
 
 The dose-response measurements were reviewed and scored independently by three researchers based on the following criteria: Priority 1: the percentage of lipid accumulation (% CTL) is increased at 1 μM, the shape suggests a sigmoidal distribution, and at least two concentrations show increased Bodipy staining before the compound becomes toxic; Priority 2: compound treatment at 3.03 μM and 10 μM (highest concentrations) shows increased Bodipy staining, and % CTL is at least 70% at 10 μM; Priority 3: compound treatment at 3.03 μM and 10 μM (highest concentrations) shows increased Bodipy staining, and % CTL is less than 70% at 10 μM; Priority 4: only treatment at the highest concentration (10 μM) shows increased Bodipy staining; Priority 5: the curve is almost flat (no response).
 
-## Estimation of EC50 for NCMC
+### Estimation of EC50 for NCMC
 
 HSCs were plated in 384-well plates (Figure 2B) or 96-well plates (Figure 2C–D and Figure 2—figure supplement 2), treated with NCMC at indicated concentrations for time points as specified, and analyzed by lipid accumulation assay similar to the primary screen. Once the percentage of Bodipy-positive cells was determined, the data were fitted into a sigmoidal four parameter logistic model in Graphpad Prism software to estimate the EC50 of NCMC under each condition.
 
-## Fluorescent microscopy
+### Fluorescent microscopy
 
 HSCs were seeded in black-wall 96-well plates (Corning, cat# 3603) and treated with NCMC at different concentrations as indicated. After 48 hr, plates were fixed with 4% paraformaldehyde and stained with Bodipy and Hoechst as in the primary lipid accumulation screen. After the last wash, 200 µl/well DPBS was added, and plates were imaged using a Nikon A1R confocal microscope.
 
-## qPCR analysis
+### qPCR analysis
 
 qPCR analysis related to depletion of kinase candidates was performed using lysates prepared with the Cells-to-CT 1-Step Taqman Kit similar to the secondary mRNA screen, except that HSCs were seeded in 96-well plates and 50 µl lysis buffer (with DNase) and 5 µl stop solution were used. For the other qPCR analyses, RNA samples were prepared using TRIzol (Invitrogen, cat# 15596026), and the concentrations were quantified using Qubit 3 fluorometer (Invitrogen) and the Qubit RNA BR Assay Kit (Invitrogen, cat# Q10211) according to manufacturer’s instructions. Reverse transcription was performed using iScript gDNA Clear cDNA Synthesis Kit (BIO-RAD, cat# 1725035) with 1 µg total RNA input, and quantitative real-time PCR was performed using TaqMan Universal PCR Master Mix (Applied Biosystems, cat# 4305719) and TaqMan Real-time PCR Assays (ThermoFisher Scientific) for specific genes listed below.
 
-## Scar-in-a-jar (Siaj) assay
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Assay ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human ACTA2</td>
+      <td>Hs00426835_g1</td>
+    </tr>
+    <tr>
+      <td>Human COL1A1</td>
+      <td>Hs00164004_m1</td>
+    </tr>
+    <tr>
+      <td>Human FYN</td>
+      <td>Hs00176628_m1</td>
+    </tr>
+    <tr>
+      <td>Human HSPB1/HSP27</td>
+      <td>Hs00356629_g1</td>
+    </tr>
+    <tr>
+      <td>Human MAPK1/ERK2</td>
+      <td>Hs01046830_m1</td>
+    </tr>
+    <tr>
+      <td>Human MAPK3/ERK1</td>
+      <td>Hs00385075_m1</td>
+    </tr>
+    <tr>
+      <td>Human PSMB2</td>
+      <td>Hs01002946_m1</td>
+    </tr>
+    <tr>
+      <td>Human PTK2/FAK</td>
+      <td>Hs01056457_m1</td>
+    </tr>
+    <tr>
+      <td>Human STAT5A</td>
+      <td>Hs00559643_m1</td>
+    </tr>
+    <tr>
+      <td>Human STAT5B</td>
+      <td>Hs00560026_m1</td>
+    </tr>
+    <tr>
+      <td>Mouse Acta2</td>
+      <td>Mm00725412_s1</td>
+    </tr>
+    <tr>
+      <td>Mouse Col1a1</td>
+      <td>Mm00801666_g1</td>
+    </tr>
+    <tr>
+      <td>Mouse Psmb2</td>
+      <td>Mm00449477_m1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Scar-in-a-jar (Siaj) assay
 
 To test the effect of NCMC on collagen deposition in ECM, HSCs were seeded in black-wall 96-well plates (Corning, cat# 3603) and treated with DMSO or 100 nM NCMC for 48 hr in Ficoll medium, that is complete medium supplemented with 50 µg/ml L-ascorbic acid 2-phosphate sesquimagnesium salt hydrate (Sigma, cat# A8960), 37.5 mg/ml Ficoll-PM70 (Sigma, cat# F2878), 25 mg/ml Ficoll-PM400 (Sigma, cat# F4375), and 5 ng/mL TGF-β (R&D Systems, cat# 240-B-002). To test the effect of FYN depletion on collagen deposition, HSCs were reverse transfected in 96-well plates with 50 nM non-targeting control siRNA or siRNAs against FYN (see the ‘RNAi-mediated depletion of genes’ section for specific information on siRNAs and transfection reagents). After 48 hr, cells were incubated with Ficoll medium for an additional 48 hr.
 
 Cells were then fixed with ice-cold methanol for 2 min on ice, washed one time with DPBS and then incubated with primary antibody against collagen type I in DPBS (1:1000, Sigma, cat# C2456) at 4°C overnight. After three washes with PBS-Tween (0.05% v/v), cells were incubated with donkey anti-mouse Alexa Fluor 488 secondary antibody (1:500, Invitrogen, cat# A-21202) and Hoechst (1:4000) in DPBS at room temperature for 1 hr. Plates were washed three times with PBS-Tween, and after the final wash, 200 µL/well of DPBS was added. Plates were imaged using the ImageXpress Micro Confocal microscope (Molecular Devices) with 10 x Plan Apo lens, and collagen fibers were analyzed using a custom module built within the MetaXpress software.
 
-## Liver spheroid experiment
+### Liver spheroid experiment
 
 Liver spheroids were prepared as previously described (Leite et al., 2016) except spheroids were formed from primary rat hepatocytes (Lonza, cat# RSCP01) and primary human HSCs. Cells were seeded in ultra-low attachment round bottom 96-well plates (Greiner Bio-One, cat# 650970) at a ratio of 1:2. The cells were incubated in HCM hepatocyte culture media (Lonza, cat# CC-3198) for one day with orbital shaking to allow the generation of liver spheroids. The spheroids were then treated with DMSO or NCMC for 72 hr with or without TGF-β (5 ng/mL). Spheroids were collected, and RNA was extracted to quantify expression of human COL1A1 and ACTA2 expression through qPCR.
 
-## RNA sequencing
+### RNA sequencing
 
 HSCs were treated with DMSO or 1 µM NCMC for 48 hr. RNA was extracted using RNeasy Mini kit (Qiagen, cat# 74104), followed by quality assessment via Agilent 2,200 Tape Station. Two biological samples were prepared for DMSO treatment and three biological samples were prepared for NCMC treatment, and all samples had an RNA integrity number (RIN) greater than 9. RNA library was prepared using TruSeq Stranded mRNA Library Prep Kit (Illumina, cat# 20020594) and sequenced on a HiSeq2000.
 
 For data analysis, reads were quality assessed using the FASTQC (v 0.11.8) and aligned to the human reference genome (GRCh38_release_37) from GENCODE with Star aligner (v2.7.3) using RSEM (v1.3.1) with default parameters. First, the human reference genome was indexed using the GENCODE annotations (gencode.v37) with rsem-prepare-reference from RSEM software. Next, rsem-calculate-expression was used to align the reads and quantify the gene abundance. The output of rsem-calculate-expression gives separately the read count and transcripts per million (TPM) value for each gene.
 
-## Differential expression analysis
+### Differential expression analysis
 
 Differential expression analysis was performed using gene read counts with DESeq2 package (v 1.32.0) to produce LFC values and corresponding p-values (FDR) applying a Benjamini–Hochberg correction for multiple testing. The heatmap was created using normalized gene count values from Deseq2, using R gplots package heatmap.2 function with row scaling.
 
-## Gene set enrichment analysis (GSEA)
+### Gene set enrichment analysis (GSEA)
 
 Gene set enrichment analysis was performed using the GSEA software downloaded from http://www.gsea-msigdb.org/gsea/index.jsp (Mootha et al., 2003; Subramanian et al., 2005). An expression dataset containing gene name and log2 (fold change) was generated based on the RNA sequencing results and loaded to the software as the input file. The c5.all.v7.4 gene matrix was used as the database of gene sets, and gene sets smaller than 10 or larger than 1000 in size were excluded for the analysis. The canonical HSC gene signature and specific HSC gene signature were obtained from previous publication (Zhang et al., 2016), and the liver cirrhosis signature was downloaded from Disgenet database (Piñero et al., 2020). Among the 44 genes in the canonical HSC signature, 35 were found in our differential expression list. Among the 122 genes in the specific HSC signature, 97 were found in our differential expression list. Among the 103 genes in the liver cirrhosis signature, 69 were found in our differential expression list. These genes were listed in Supplementary file 8.
 
-## Transwell migration assay
+### Transwell migration assay
 
 HSCs were treated with DMSO or 1 µM NCMC for 48 hr or transfected with siRNAs for 72 hr in six-well plates. HSCs were then trypsinized and counted to seed at 5000–10,000 cells per insert depending on donor and assay duration (Corning, cat# CLS3422) in serum-free DMEM. Complete medium (with 10% FBS) was added to the bottom well to induce cell migration through the pores (diameter: 8 µm) of the membrane at the bottom of the insert. After the indicated assay time, cells were fixed with 4% paraformaldehyde at room temperature for 15 min and stained with crystal violet (1% w/v in 20% methanol, Sigma, cat# C0775) for 1 hr. Inserts were washed with DPBS, and the cells that had not migrated through the pores and remained on the upper side of the membrane were removed with cotton swabs. Images were taken using EVOS XL Core microscope with 10 x lens under brightfield.
 
-## Wound healing assay
+### Wound healing assay
 
 HSCs were plated in CytoSelect 24-well wound healing assay plates with inserts (Cell Biolabs, cat# CBA-120) at 400,000 cells/well in complete medium. Eighteen hours after plating, inserts were removed to generate a 0.9 mm wound field, and cells were incubated with complete medium containing DMSO or NCMC for an additional 30 hr. Images were taken using EVOS FL microscope.
 
-## Proliferation assay
+### Proliferation assay
 
 HSCs were seeded in black-wall 96-well plates (Corning, cat# 3603) at 3000 cells/well, and 18 hr later, DMSO and NCMC at different concentrations as indicated were added with six replicates. One plate was fixed on each day with 4% paraformaldehyde for five days consecutively and stored at 4 °C until all plates were ready for staining with Hoechst. ImageXpress Micro Confocal microscope (Molecular Devices) was used for taking four images/well with 10 x Plan Apo lens, and MetaXpress software was used for counting the number of nuclei.
 
-## Apoptosis analysis by flow cytometry
+### Apoptosis analysis by flow cytometry
 
 HSCs were treated with DMSO or NCMC at indicated concentrations for 48 hr, followed by trypsinization and staining with Annexin V and propidium iodide using Dead Cell Apoptosis Kit (Invitrogen, cat# V13241) according to manufacturer’s instructions. Cells were analyzed using FACSAria II (BD Biosciences).
 
-## Quiescence/cell cycle analysis by flow cytometry
+### Quiescence/cell cycle analysis by flow cytometry
 
 HSCs were treated with DMSO or NCMC at indicated concentrations for 48 hr, trypsinized, harvested, washed with DPBS, and resuspended in 0.5 mL DPBS. Cells were fixed by adding 4.5 mL ice-cold 70% ethanol in a drop wise manner while vortexing and were then kept at –20 °C for at least 2 hr. Cells were washed twice with FACS buffer (DPBS supplemented with 2% heated-inactivated filtered fetal bovine serum and 1 mM EDTA) before resuspending in FACS buffer at 1×106 cells/100 μL. Cells were then incubated with Ki-67 antibody (0.25 μg/100 μL, clone SolA15, Invitrogen, cat# 11-5698-82) in the dark for 30 min at room temperature. After incubation, cells were washed twice with FACS buffer, followed by incubation with propidium iodide staining solution (DPBS supplemented with 50 μg/ml propidium iodide (Invitrogen, cat# P3566), 10 μg/ml RNase (Thermo Scientific, cat# EN0531) and 2 mM MgCl2) for another 20 min at room temperature before analysis by FACSAria II (BD Biosciences).
 
-## Calcium measurements
+### Calcium measurements
 
 Fluo-4 NW calcium assay starter kit (Invitrogen, F36206) was used to measure cytosolic calcium according to the manufacturer’s protocol in the presence and absence of 1 mM EGTA. HSCs were plated on a Corning 96 well UV transparent plate 24 hr prior to analysis. Media was removed and cells were washed with 1 X calcium and magnesium chloride free PBS before adding the dye mix with probenecid with and without EGTA to each well. Plates were covered in aluminum foil and incubated at 37 °C for 30 min. Plates were equilibrated to room temperature for 30 min prior to analysis. Measurements were performed on a Tecan Infinite M Plex M-200 using I-control 2.0 software from Austria GmbH to measure fluorescence intensity with excitation at 494 nm and emission at 516 nm. Readings were performed by loading the plate immediately following treatment with DMSO or compounds at the indicated concentration. All measurements were normalized to time 0 by subtracting the initial value for each well. Based on this approach, the increase in Ca2+ levels measured for ionomycin may be reduced due to a more rapid response to the compound. Measurements were plotted as change in relative fluorescence unit (RFU) at 50% gain on the Y-axis relative to time 0 in seconds on the X-axis using Graphpad Prism 8.4.3.
 
-## Kinase array analysis
+### Kinase array analysis
 
 HSCs from donor 3 were treated with DMSO or 1 µM NCMC for 1 hr or 18 hr. Cell lysates were prepared and analyzed using the Proteome Profiler Human Phospho-Kinase Array Kit (R&D Systems, cat# ARY003B) according to manufacturer’s instructions. Scanned films were quantified using ImageJ.
 
-## RNAi-mediated depletion of gene expression
+### RNAi-mediated depletion of gene expression
 
 HSCs were reverse transfected with siRNAs as indicated using Dharmafect-1 transfection reagent (Horizon Discovery, cat# T-2001) according to manufacturer’s instructions. For 12-well plates, 60 µL of 1 µM siRNAs were added to 180 µL Opti-MEM (Gibco, cat# 31985070) for the final concentration of 50 nM and then mixed with diluted Dharmafect-1 in Opti-MEM (1.2 µL Dharmafect-1 in 238.8 µL Opti-MEM). After 30 min, HSCs resuspended in transfection medium (DMEM supplemented with 16% FCS) were seeded in the wells containing the siRNA/Dharmafect-1 mixture at 70,700 cells/mL in 720 µL/well medium. Transfection in other plate formats were scaled up or down accordingly based on surface area. Cells were incubated with siRNAs and transfection reagents for 72 hr before analysis, unless indicated otherwise.
 
 The siRNAs used in this study were purchased from Horizon Discovery, including siGENOME non-targeting control siRNA #5 (D-001210–05), siGENOME SMARTpool siRNAs for FYN (MQ-003140–04), HSPB1 (M-005269–01), MAPK3 (M-003592–03), MAPK1 (M-003555–04), PTK2 (M-003164–02), STAT5A (M-005169–02) and STAT5B (M-010539–02) and individual siGENOME siRNAs for FYN (siRNA#1: D-003140–10, siRNA#2: D-003140–24).
 
-## Cloning, lentivirus packaging, and infection
+### Cloning, lentivirus packaging, and infection
 
 The cDNA encoding the dominant negative Y213A FYN mutant was amplified from the plasmid pRK5 DN-Fyn (gift from Filippo Giancotti, Addgene plasmid # 16033) using the following PCR primers: forward primer: 5’-CAT GCTAGC GCCACC ATGGGCTGTGTGCAATGTAAGG-3’; reverse primer: 5’- AGC GAATTC TTACAGGTTTTCACCAGGTTGGTAC-3’. The amplified PCR product was digested with NheI and EcoRI enzymes and inserted into linearized pLJM1 plasmid (gift from David Sabatini, Addgene, plasmid# 19319). Whole plasmid sequencing was performed to confirm that the DN-FYN sequence was correct.
 
 HEK-293 cells were transfected with pLJM1-eGFP or pLJM1-DN-FYN plasmid together with lentivirus packing and envelope plasmids pMD2.G (gift from Didier Trono, Addgene plasmid# 12259) and psPAX2 (gift from Didier Trono, Addgene plasmid# 12260) using X-tremeGENE 9 DNA transfection reagent (Roche, cat# 6365779001) according to manufacturer’s instructions. For a 10 cm dish of 293 cells, 30 µL X-tremeGENE 9 reagent, 750 ng psPAX2, 250 ng pMD2.G and 1 µg pLJM1-eGFP or pLJM1-DN-FYN were mixed in 500 µL Opti-MEM and incubated for 15 min before added to culture medium in a drop wise manner. Twenty-four hr later, culture medium was changed, and cells were incubated with fresh regular medium for another 24 hr. Conditioned medium containing virus was then collected and filtered through 0.45 µm filters. HSCs were seeded to reach 30–40% confluency after 18 hr and then infected with viruses. Polybrene (Sigma-Aldrich, cat# TR-1003-G) was used at a final concentration of 10 µg/mL to enhance infection efficiency.
 
-## Western blot
+### Western blot
 
 Cells were pelleted and lysed with RIPA buffer (150 mM sodium chloride, 1.0% Triton X-100, 0.5% sodium deoxycholate, 0.1% SDS (sodium dodecyl sulfate) and 50 mM Tris, pH 8.0) supplemented with protease inhibitors (Thermo Scientific, cat# 87786) and phosphatase inhibitors (Thermo Scientific, cat# 78420). Cell lysates were centrifuged to remove debris. Protein concentrations were measured using Pierce BCA Protein Assay Kit (Thermo Scientific, cat# 23227). Bolt LDS Sample Buffer (Invitrogen, cat# B0007) and Bolt Sample Reducing Agent (Invitrogen, cat# B0009) were added to cell lysates and the sample mixture was boiled for 10 min before loading. Bolt 4% to 12% Bis-Tris gels (Invitrogen, cat# NW04120BOX) were used for electrophoresis, followed by transferring with iBlot 2 Dry Blotting System (Invitrogen, cat# IB21002S). Membranes were blocked with 1% BSA (Thermo Scientific, cat# 37520, for phospho-Src family) or 3% milk (Lab Scientific, cat# M0841, for other proteins) at room temperature for 1 hr and incubated with primary antibody at 4 °C for 2 days (for FYN) or overnight (for other proteins). Membranes were washed three times with Tris Buffered Saline-Tween (TBST) buffer (Boston BioProducts, cat# IBB-181–6), incubated with secondary antibody for another 1 hr, washed three times with TBST buffer, and then incubated with SuperSignal West Pico PLUS chemiluminescent substrates (Thermo Scientific, cat# 34580) for 5 min before exposure to film (Ece Scientific Co, cat# E3018). The following antibodies were used: FYN antibody (1:1000, Cell Signaling Technology, cat# 4023), phospho-Src family antibody (1:1000, Cell Signaling Technology, cat# 6943), HRP-β-Actin antibody (1:5000, Santa Cruz Biotechnology, cat# sc-47778), phospho-p44/42 MAPK (Erk1/2) (Thr202/Tyr204) antibody (1:1000, Cell Signaling Technology, cat# 4370), and goat anti-rabbit IgG secondary antibody (Invitrogen, cat# 32460).
 
-## Pharmacokinetics (PK) studies
+### Pharmacokinetics (PK) studies
 
 One mg/kg Nanchangmycin (867.1 Da), suspended in saline (0.9%), was dosed intraperitoneally (10 mL/kg) once day or once daily for 4 days in four male mice (C57BL/6 N). Plasma samples for the determination of compound concentrations were taken on day one at 4 hr and 24 hr post injection, on day two at 24 hr and on day four at 2, 4, 8, 12, and 24 hr to generate a full PK profile at the end of the study. In addition, tissue samples from epididymal fat, liver and tibial muscle were collected at the end of the experiment. Tissue homogenization with a Precellys device was essentially done as described (Cui et al., 2019). Prior to bioanalysis, plasma and tissue homogenate samples were spiked with internal standard solution and diluted with acetonitrile/methanol for protein precipitation. Quantification was done by means of HPLC-MS/MS at mass transition of 865.5–251.1 Dalton.
 
-## Microsome analysis
+### Microsome analysis
 
 The metabolic degradation of the test compound is assayed at 37 °C with pooled liver microsomes from (male/female) mice (CD1). The final incubation volume of 100 µl per time point contains TRIS buffer pH 7.6 at room temperature (0.1 M), magnesium chloride (5 mM), microsomal protein (0.5 mg/ml) and NCMC at a final concentration of 1 µM. Following a short pre-incubation period at 37 °C, the reactions were initiated by addition of β-nicotinamide adenine dinucleotide phosphate, reduced form (NADPH, 1 mM) and terminated by transferring an aliquot into solvent after different time points. Additionally, the NADPH-independent degradation was monitored in incubations without NADPH, terminated at the last time point. The quenched incubations were pelleted by centrifugation (10,000 g, 5 min). An aliquot of the supernatant was assayed by LC-MS/MS for the amount of NCMC. The half-life (t1/2 in vitro) is determined by the slope of the semilogarithmic plot of the concentration-time profile. The intrinsic clearance (CL_INTRINSIC) is calculated by considering the amount of protein in the incubation:
 

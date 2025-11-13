@@ -36,17 +36,33 @@ Here we use a combination of smFRET, biochemical assays and cryo-EM to investiga
 
 ## Results
 
-## dnaX FSS inhibits intersubunit rotation during translation along the slippery sequence
+### dnaX FSS inhibits intersubunit rotation during translation along the slippery sequence
 
 We investigated how the interaction of FSSs with the ribosome affects cyclic forward and reverse rotations between ribosomal subunits that accompany each translation elongation cycle (Frank and Gonzalez, 2010). Following aminoacyl-tRNA binding to the ribosomal A site and peptide-bond formation, the pre-translocation ribosome predominantly adopts a rotated (R) conformation (Aitken and Puglisi, 2010; Cornish et al., 2008; Ermolenko et al., 2007). In this conformation, the small ribosomal subunit (the 30S subunit in bacteria) is rotated by 7–9° relative to the large subunit (the 50S subunit) (Dunkle et al., 2011; Frank and Agrawal, 2000; Frank and Gonzalez, 2010), and two tRNAs adopt the intermediate hybrid states (Blanchard et al., 2004b; Moazed and Noller, 1989; Valle et al., 2003). EF-G-catalyzed mRNA/tRNA translocation on the small subunit is coupled to the reverse rotation of the ribosomal subunits relative to each other, restoring the nonrotated (NR) conformation in the post-translocation ribosome (Aitken and Puglisi, 2010; Ermolenko et al., 2007; Ermolenko and Noller, 2011).
 
 To probe the effect of FSSs on intersubunit rotation accompanying translation, we employed a model dnaX_Slip mRNA that was derived from the E. coli dnaX transcript (Figure 1). dnaX mRNA encodes the τ and γ subunits of DNA polymerase III. The γ subunit is produced by a −1 PRF event that occurs with 50–80% efficiency. We chose dnaX mRNA because it is one of the most extensively studied −1 PRF systems that has been investigated using both ensemble and single-molecule kinetic approaches (Caliskan et al., 2017; Chen et al., 2014; Choi et al., 2020; Kim et al., 2014; Kim and Tinoco, 2017). The model dnaX_Slip mRNA contained a Shine-Dalgarno (SD, ribosome-binding site) sequence, a short ORF with the slippery sequence AAAAAAG and a downstream 10 basepair-long FSS mRNA hairpin, which together program −1 PRF in dnaX mRNA (Larsen et al., 1997; Figure 1). In addition, upstream of the SD sequence, the dnaX_Slip mRNA contained a 25 nucleotide-long sequence complementary to a biotin-derivatized DNA oligonucleotide used to tether the mRNA to a microscope slide for smFRET experiments (Figure 1). The beginning of the ORF encodes Met-Val-Lys-Lys-Arg in 0 frame and Met-Val-Lys-Lys-Glu in −1 frame.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/55799/elife-55799-fig1-v2.jpg)
+
+**Figure 1.:** The effect of frameshift-inducing mRNA stem-loops on translation elongation was studied using FRET between cy5 (red) and cy3 (green) attached to 30S protein S6 and 50S protein L9, respectively. S6-cy5/L9-cy3 ribosomes were immobilized on quartz slides using neutravidin and biotinylated DNA oligomers annealed to the mRNA. dnaX_Slip mRNA contains an internal SD sequence (green), a slippery sequence (magenta) and an FSS (red). In the non-slippery (NS) dnaX and HIV mRNAs, the slippery sequences were replaced by non-slippery codons. Two different HIV_NS mRNAs contain either a UAC or a GAG (orange) codon. Corresponding polypeptide sequences are shown below each mRNA. The ΔFSS mRNAs are truncated as indicated by blue bars.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55799/elife-55799-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Ribosomes containing P-site N-Ac-Val-tRNAVal were programmed with either dnaX_Slip or dnaX_Slip ΔFSS mRNA. The ribosomes were incubated with EF-G•GTP, EF-Tu•GTP, Lys-tRNALys, Arg-tRNAArg (binds in 0 frame) and [3H]Glu-tRNAGlu (binds in −1 frame) for 6 min. [3H]Glu-tRNAGlu binding was measured by filter-binding assay. Frameshifting efficiency (ribosome A-site occupancy by [3H]Glu-tRNAGlu) was normalized by the P-site occupancy of N-Ac-[3H]Glu-tRNAGlu non-enzymatically bound to the ribosome programmed with dnaX_Slip ΔFSS mRNA. Error bars show standard deviations of triplicated measurements.
 
 We determined the efficiency of −1 PRF on the dnaX_Slip mRNA during translation along the slippery sequence via the filter-binding assay. To that end, ribosomes bound with dnaX_Slip mRNA and P-site N-Ac-Val-tRNAVal were incubated with EF-G•GTP, EF-Tu•GTP, Lys-tRNALys, Arg-tRNAArg (binds in 0 frame) and [3H]Glu-tRNAGlu (binds in −1 frame). Consistent with previous publications (Caliskan et al., 2017; Kim and Tinoco, 2017; Larsen et al., 1997), we observed a frameshifting efficiency of ~60% (Figure 1—figure supplement 1). When ribosomes were programmed with the truncated dnaX_Slip ΔFSS mRNA, which lacks the FSS (Figure 1), the efficiency of −1 PRF decreased to ~25%, demonstrating that the FSS stimulates ribosome frameshifting.
 
 To follow intersubunit rotation during translation along the slippery sequence of the dnaX_Slip mRNA, we measured smFRET between fluorophores attached to the 50S protein L9 and the 30S protein S6. The NR and R conformations of the ribosome have been shown to correspond to 0.6 and 0.4 FRET states of S6-cy5/L9-cy3 FRET pair (Cornish et al., 2008; Ermolenko et al., 2007).
 
 We asked whether dnaX FSS positioned near the entrance of the mRNA channel perturbs ribosome intersubunit dynamics during frameshifting. To this end, we monitored elongation on S6-cy5/L9-cy3 ribosomes bound with P-site N-Ac-Val-Lys-tRNALys and dnaX_Slip mRNA immobilized on a microscope slide (Figure 1). In this ribosome complex, the second Lys codon of the slippery sequence is positioned in the A site, and the FSS is expected to be one nucleotide downstream of the entrance to the mRNA channel (Yusupova et al., 2001; Zhang et al., 2018). Consistent with previous reports, ribosomes containing P-site peptidyl-tRNA (N-Ac-Val-Lys-tRNALys) are predominately in the NR (0.6 FRET) state (Figure 2A, Figure 2—figure supplement 1A; Cornish et al., 2008; Ermolenko et al., 2007). After 10 s of imaging, EF-Tu•GTP•Lys-tRNALys and EF-G•GTP were injected to bind Lys-tRNALys to the second Lys codon of the slippery sequence and induce tRNA/mRNA translocation. After the injection, the ribosomes showed an NR (0.6 FRET)-to-R (0.4 FRET) transition (Figure 2A, Figure 2—figure supplement 1A). The transpeptidation reaction and subsequent movement of tRNAs into hybrid states are typically much faster than tRNA binding to the A site (Blanchard et al., 2004a; Johansson et al., 2008; Juette et al., 2016; Rodnina and Wintermeyer, 2001; Sharma et al., 2016). Hence, the dwell time between the injection and the transition from the NR (0.6 FRET) to R (0.4 FRET) state, τbd, primarily reflects the rate of Lys-tRNALys binding to the A site of the ribosome.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/55799/elife-55799-fig2-v2.jpg)
+
+**Figure 2.:** S6-cy5/L9-cy3 ribosomes containing P-site N-Ac-Val-Lys-tRNALys were programmed with either dnaX_Slip (A, C, E) or dnaX_Slip ΔFSS (B, D, F) mRNAs. After 10 s of imaging, EF-Tu•GTP•Lys-tRNALys and EF-G•GTP were co-injected into the flow-through chamber. (A–B) Representative smFRET traces show cy3 fluorescence (green), cy5 fluorescence (red), FRET efficiency (blue) and the HHM fit of FRET efficiency (magenta). τbd is the dwell time between the injection and Lys-tRNALys binding to the A site, which corresponds to the transition from NR (0.6 FRET) to R (0.4 FRET) state of the ribosome. τtrl is the dwell time between A-site binding of Lys-tRNALys and EF-G-catalyzed tRNA translocation, which corresponds to the transition from R to the stable (i.e. lasting over 4 s) NR state of the ribosome. The full-length views of smFRET traces are shown in Figure 2—figure supplement 1A,B. (C–F) Histograms (2 s binning size) compiled from over 100 traces show the distributions and median values of τbd and τtrl. N indicates the number of FRET traces assembled into each histogram.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55799/elife-55799-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) The full-length view of smFRET traces shown in Figure 2A–B with a single-step photobleaching of both Cy3 and Cy5 fluorophores. (C) Ribosome programmed with dnaX_Slip ΔFSS mRNA showed excursion from 0.4 to 0.6 FRET in pre-translocation state. (D–E) In the ribosome containing deacylated tRNAPhe in the P site, distributions of dwell time in 0.4 (τ0.4, (D) and 0.6 (τ0.6, (E) FRET state are fitted to single exponential decay shown as solid black line. N indicates the total number of 0.4-to-0.6 (D) and 0.6-to-0.4 (E) transitions, respectively.
 
 The subsequent reverse transition from the R to the stable NR state (0.6 FRET lasting over 4 s) indicated translocation of mRNA and tRNA. In 64% of traces, the transition from R to NR was preceded by one or two short-lived excursions from R to NR, characteristic of pre-translocation ribosomes (Figure 2A, Figure 2—figure supplement 1A). This observation is consistent with published smFRET experiments demonstrating that under dnaX FSS-induced pausing, two Lys tRNAs undergo multiple unproductive fluctuations between the hybrid and classical states (Kim et al., 2014).
 
@@ -56,7 +72,7 @@ To further test whether the transition from R to NR indeed corresponds to tRNA t
 
 Ribosome complexes assembled with dnaX mRNA lacking the FSS (dnaX_Slip ΔFSS mRNA) showed markedly different behavior in comparison with dnaX_Slip mRNA complexes. When EF-Tu•GTP•Lys-tRNALys and EF-G•GTP were added to S6-cy5/L9-cy3 ribosomes programmed with dnaX_Slip ΔFSS mRNA and P-site peptidyl-tRNA (N-Ac-Val-Lys-tRNALys), rapid transition from NR to R was followed by rapid transition to the stable NR state (Figure 2B, Figure 2—figure supplement 1B). In contrast to dnaX_Slip FSS mRNA programmed ribosomes, which showed spontaneous fluctuations between R and NR states before the transition to the stable post-translocation NR state, only 6% of ribosomes programmed with dnaX_Slip ΔFSS mRNA showed short-lived excursions from R to NR before translocation (Figure 2—figure supplement 1C). Median values of τbd (3.8 s) and τtrl (1.5 s) for dnaX_Slip ΔFSS mRNA (Figure 2D,F) were 5- and 7-fold shorter, respectively, than those measured in ribosomes programmed with dnaX_Slip mRNA. In agreement with previously published results (Caliskan et al., 2017; Chen et al., 2014; Choi et al., 2020; Kim et al., 2014), our data demonstrate that dnaX FSS positioned near the mRNA channel entrance strongly inhibits mRNA/tRNA translocation (Figure 2E,F). In addition, our data unexpectedly revealed that dnaX FSS also strongly inhibits A-site tRNA binding during the elongation cycle (Figure 2C,D). Because such FSS-induced inhibition of A-site binding has not been observed before, we further explored this phenomenon using smFRET, biochemical and cryo-EM approaches.
 
-## In the presence of non-slippery sequence, the FSS from dnaX mRNA stalls the ribosome in the NR conformation
+### In the presence of non-slippery sequence, the FSS from dnaX mRNA stalls the ribosome in the NR conformation
 
 We next asked whether the spacing between the FSS and the mRNA entry channel of the ribosome affects the ability of the FSS to inhibit A-site binding. Because frameshifting changes the position of the FSS relative to the mRNA entry channel of the ribosome, we aimed to decouple FSS-induced ribosome pausing from frameshifting. To that end, we replaced the two consecutive Lys codons of the dnaX slippery sequence with UUC (Phe) and UAC (Tyr) ‘non-slippery’ codons to create dnaX_NS (‘non-slippery’) mRNA (Figure 1). Mutations in the slippery sequence of dnaX were shown to decrease frameshifting efficiency to low (≤5%) or undetectable levels (Bock et al., 2019; Caliskan et al., 2017; Kim and Tinoco, 2017; Larsen et al., 1997; Tsuchihashi and Brown, 1992).
 
@@ -66,7 +82,7 @@ When EF-Tu•GTP•Phe-tRNAPhe was added to ribosomes with the FSS positioned fo
 
 **Figure 3.:** Histograms show FRET distributions in S6-cy5/L9-cy3 ribosomes programmed with dnaX_NS (A–B, E–G) or dnaX_NS ∆FSS (C–D, H–J) mRNA, respectively. Ribosomes were bound with P-site peptidyl tRNA analogs, N-Ac-Val-tRNAVal (A, C) or N-Ac-Phe-tRNAPhe (E, G). The ribosomes were then incubated with either EF-Tu•GTP•Phe-tRNAPhe (B, D) or EF-Tu•GTP•Tyr-tRNATyr (F, H) for 5 min and imaged after removal of unbound aminoacyl-tRNAs. Yellow lines show individual Gaussian fits of FRET distributions. Black lines indicate the sum of Gaussian fits. N indicates the number of FRET traces compiled into each histogram. The fractions of the ribosome in R and NR conformations are shown above the corresponding 0.4 and 0.6 Gaussian peaks, respectively.
 
-## The FSS from HIV also stalls the ribosome in the NR conformation
+### The FSS from HIV also stalls the ribosome in the NR conformation
 
 We considered if other frameshift-inducing mRNA stem-loops can induce ribosome stalling in the NR conformation, similar to the FSS from dnaX mRNA. We chose to study the 12 basepair-long RNA hairpin from HIV (Figure 1) that in combination with the slippery sequence UUUUUUA, induces −1 PRF with 5–10% efficiency to produce the Gag-Pol polyprotein. mRNAs containing the slippery sequence and HIV FSS undergo frameshifting in bacterial (E. coli) ribosomes in vitro and in vivo at frequencies comparable to those observed for HIV frameshifting in eukaryotic translation systems (Brunelle et al., 1999; Korniy et al., 2019a; Léger et al., 2004; Mazauric et al., 2009). The FSS from HIV can be studied in E. coli, analogous to −1 PRF on mRNA derived from another eukaryotic virus (avian infectious bronchitis virus, IBV) that could also be reconstituted in the E. coli translation system (Caliskan et al., 2014), suggesting a common mechanism of frameshifting and ribosomal stalling induced by FSS in bacteria and eukaryotes.
 
@@ -78,15 +94,35 @@ Similar to dnaX_NS mRNA, we designed an HIV_NS mRNA that contained a 25-nucleoti
 
 To test whether identities of A-site codon and A-site tRNA affect the observed ribosome stalling in the NR conformation, we made HIV_NS (GAG) mRNA, in which the original UAC (Tyr) codon of HIV_NS mRNA was replaced with a GAG (Glu) codon (Figure 1). The resulting complexes behaved similarly to the complexes assembled with the original HIV_NS mRNA (Figure 5A–D). The majority of ribosomes (60%) with the FSS at the mRNA entry channel remained in the NR conformation after addition of EF-Tu•GTP•Glu-tRNAGlu (Figure 5B) while ribosomes programmed with HIV_NS (GAG) ∆FSS mRNA switched to the R conformation (Figure 5D). Thus, we show that the FSS-induced inhibition of tRNA binding is independent of A-site codon identity.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/55799/elife-55799-fig5-v2.jpg)
+
+**Figure 5.:** Histograms show FRET distributions in S6-cy5/L9-cy3 ribosomes programmed with HIV_NS (GAG) (A–B) or HIV_NS (GAG) ∆FSS (C–D) mRNA, respectively. Ribosomes containing P-site N-Ac-Phe-tRNAPhe (A, C) were incubated with EF-Tu•GTP•Tyr-tRNATyr (B, D) for 5 min and imaged after removal of unbound aminoacyl-tRNAs. Yellow lines show individual Gaussian fits of FRET distributions. Black lines indicate the sum of Gaussian fits. N indicates the number of FRET traces compiled into each histogram. The fractions of the ribosome in R and NR conformations are shown above the corresponding 0.4 and 0.6 Gaussian peaks, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55799/elife-55799-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Histograms show FRET distributions in S6-cy5/L9-cy3 ribosomes programmed with the dnaX_NS (A, B), HIV_NS (C, D), or HIV_NS (GAG) ∆FSS (E–G) mRNA, respectively. Ribosomes containing P-site N-Ac-Phe-tRNAPhe (A, C, E) were incubated with 150- (B, D, G) or 30- (F) fold molar excess of total aminoacyl-tRNAs•EF-Tu•GTP (mixture of all aminoacyl-tRNAs except Tyr-tRNATyr) for 5 min and imaged after removal of unbound aminoacyl-tRNA.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55799/elife-55799-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Histograms show FRET distributions in S6-cy5/L9-cy3 ribosomes, which contained deacylated tRNAPhe in the P site and were programmed with the dnaX_NS (A), dnaX_NS ∆FSS (B), HIV_NS (C), or HIV_NS ∆FSS (D) mRNA, respectively.
+
 Next, we tested whether the stalling in the NR conformation observed with dnaX_NS and HIV_NS mRNAs was due to mRNA frameshifting that prevented A-site binding of Tyr-tRNATyr (or Glu-tRNAGlu in the case of ribosomes programmed with HIV_NS (GAG) mRNA). S6-cy5/L9-cy3 ribosomes, which were programmed with either dnaX_NS (UAC) or HIV_NS (UAC) mRNA and bound with P-site N-Ac-Phe-tRNAPhe (Figure 5—figure supplement 1A,C), were incubated for 5 min with EF-Tu•GTP and 150-fold molar excess of total tRNA from E. coli aminoacylated with 19 natural amino acids except for Tyr. Incubation with total aa-tRNA (minus Tyr) did not lead to an appreciable increase in the fraction of the R (0.4 FRET) conformation (Figure 5—figure supplement 1B,D), indicating the lack of A-site tRNA binding in the absence of Tyr-tRNATyr. By contrast, as a positive control, just a 30-fold molar excess of total aa-tRNA (minus Tyr) was sufficient to decode an in-frame Glu (GAG) codon in ribosomes programmed with HIV_NS (GAG) ∆FSS mRNA as evident from the conversion of the ribosome population from the NR to R conformation (Figure 5—figure supplement 1E–G). Therefore, in the absence of the slippery sequence, FSS-induced frameshifting is negligible and does not account for ribosome stalling in the NR conformation observed in the experiments with ribosomes programmed with dnaX_NS or HIV_NS mRNAs.
 
 HIV and dnaX FSSs placed near the entry to the mRNA channel could stall the ribosome in the NR conformation by either (i) inhibiting A-site tRNA binding, (ii) blocking the peptidyltransfer reaction after the binding of A-site tRNA or (iii) stabilizing the pre-translocation ribosome in the NR conformation. Pretranslocation-like S6-cy5/L9-cy3 ribosomes containing deacylated P-site tRNAPhe exhibited similar intersubunit dynamics regardless of whether they were programmed with dnaX_NS, dnaX_NS ∆FSS, HIV_NS or HIV_NS ∆FSS mRNAs. These complexes fluctuated between the R (0.4 FRET) and NR (0.6 FRET) states at rates of 0.2–0.3 sec−1 (0.4 FRET to 0.6 FRET) and 0.7–0.8 sec−1, (0.6 FRET to 0.4 FRET), respectively, and spent 80% of time in the R conformation (Figure 5—figure supplement 2A–D). Hence, neither dnaX FSS nor HIV FSS placed near the entry of the mRNA channel directly affect intersubunit dynamics. dnaX and HIV FSSs also did not change the sensitivity of P-site N-Ac-Phe-tRNAPhe toward the A-site aminoacyl-tRNA mimic, antibiotic puromycin (Figure 6—figure supplement 1A), indicating that the frameshifting-inducing stem-loops placed at the entry of the mRNA channel do not block the transpeptidase activity of the ribosome. Therefore, in our smFRET experiments, FSSs from dnaX and HIV likely stall the ribosome in the NR conformation by inhibiting A-site tRNA binding.
 
-## dnaX and HIV FSS inhibit tRNA binding to the A site of the ribosome
+### dnaX and HIV FSS inhibit tRNA binding to the A site of the ribosome
 
 To further test whether FSSs positioned near the entry of the mRNA channel inhibit tRNA binding, we used a filter-binding assay to measure binding of radio-labeled aa-tRNA during translation through four (Met, Val, Phe and Tyr) consecutive codons along the dnaX_NS mRNA. The ribosomes containing P-site N-Ac-Met-tRNAMet were then incubated with EF-G•GTP, EF-Tu•GTP, Val-tRNAVal, Phe-tRNAPhe and Tyr-tRNATyr before loading ribosomes onto a nitrocellulose filter and washing away unbound aa-tRNA. The experiment was repeated three times with one of the three aminoacyl-tRNAs radio labeled, that is using [14C]Val-tRNAVal, [3H]Phe-tRNAPhe or [3H]Tyr-tRNATyr. Similar experiments were performed with ribosomes programmed with HIV_NS mRNA to measure binding of radio-labeled aa-tRNA during translation through three (Met, Phe and Tyr) consecutive codons.
 
 In ribosomes programmed with dnaX_NS mRNA, binding of [3H]Tyr-tRNATyr was considerably diminished while the incorporation of Val and Phe into the polypeptide chain were only mildly inhibited compared to levels measured in ribosomes programmed with dnaX_NS ∆FSS mRNA lacking the FSS (Figure 6A). Likewise, in ribosomes programmed with HIV_NS mRNA, binding of [3H]Tyr-tRNATyr was strongly inhibited while binding [3H]Phe-tRNAPhe was unaffected (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/55799/elife-55799-fig6-v2.jpg)
+
+**Figure 6.:** (A–B) Incorporation of radio-labeled amino acids during translation through first four codons of dnaX_NS mRNA (A) or first three codons of HIV_NS mRNA (B) were measured by filter-binding assays. (C) Kinetics of EF-Tu-catalyzed [3H]Tyr-tRNATyr binding to the A site of ribosomes containing N-Ac-Phe-tRNAPhe in the P site. Ribosomes were programmed with dnaX_NS mRNA (blue) or HIV_NS mRNA (red). Single exponential fits are shown as line graphs. (D) Kinetics of EF-Tu-catalyzed [3H]Tyr-tRNATyr binding to the A site of ribosomes containing N-Ac-Phe-tRNAPhe in the P site. Ribosomes were programmed with HIV_NS mRNA (red), HIV_NS12-nt linker mRNA (green), and HIV_NS13-nt linker mRNA (yellow), respectively. The binding of radio-labeled amino acids to ribosomes programmed with FSS-containing mRNA is shown relative to that observed in ribosomes programmed with corresponding ∆FSS mRNA (A–D). Asterisks indicate that amino acid incorporation into ribosomes programmed with FSS-containing mRNA was significantly different from that in ribosomes programmed with ∆FSS mRNA, as p-values determined by the Student t-test were below 0.05. Error bars in each panel show standard deviations of triplicated measurements.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55799/elife-55799-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Ribosomes bound with P-site N-Ac-[3H]Phe-tRNAPhe and FSS-containing mRNA were incubated with puromycin. The amount of N-Ac-[3H]Phe-puromycin extracted from the ribosomes programmed with dnaX_NS or HIV_NS mRNA was normalized by the amount of N-Ac-[3H]Phe-puromycin extracted from the ribosomes programmed with corresponding ∆FSS mRNAs. (B) The extent of N-Ac-[3H]Tyr-tRNATyr binding to ribosomes bound with P-site deacylated tRNAPhe and programmed with dnaX or HIV_NS mRNA after 10 min incubation. The binding of N-Ac-[3H]Tyr-tRNATyr determined by filter-binding assay is shown relative to that measured in ribosomes programmed with corresponding ∆FSS mRNAs. Asterisks indicate that amino acid incorporation into ribosomes programmed with FSS-containing mRNA was significantly different from that in ribosomes programmed with ∆FSS mRNA, as p-values determined by the Student t-test were below 0.05. Error bars in each panel show standard deviations of triplicated measurements.
 
 Next, we examined the kinetics of [3H]Tyr-tRNATyr binding to the A site of ribosomes, which contained P-site N-Ac-Phe-tRNAPhe and were programmed with either dnaX_NS or HIV_NS mRNA. Both dnaX and HIV FSSs dramatically slowed the rate of [3H]Tyr-tRNATyr binding as the apparent pseudo first order rate of tRNA binding was reduced to 0.3 and 0.1 min−1, respectively (Figure 6C). When ribosomes were programmed with either dnaX_NS ∆FSS or HIV_NS ∆FSS mRNAs, the rate of [3H]Tyr-tRNATyr binding was too fast to be measured by the filter-binding assay, which involves manual mixing of ribosomes and tRNA. These kinetic experiments also show that while dnaX and HIV FSSs strongly inhibit A-site tRNA binding, they do not completely block it.
 
@@ -100,11 +136,23 @@ Additionally, we found that in the absence of EF-Tu, FSSs from dnaX and HIV also
 
 Taken together, our smFRET and filter-binding experiments indicate that when positioned 11–12 nucleotides downstream of the first nucleotide of the P-site codon, the FSSs from HIV and dnaX mRNAs can substantially inhibit binding of aminoacyl-tRNA to the A site of the ribosome. Assuming that dnaX and HIV mRNA are threaded through the 30S mRNA channel, an 11–12 nucleotide distance from the P-site codon corresponds to positioning of the FSSs at the entry of the mRNA channel. Consistent with this hypothesis, a recent cryo-EM reconstruction revealed that the dnaX FSS placed 12 nucleotides downstream from the P-site codon interacts with ribosomal proteins uS3, uS4, and uS5 located at the 30S mRNA entry channel (Zhang et al., 2018). However, the mRNA entry channel is ~20 Å away from the 30S decoding center. How the FSS positioned at the mRNA entry channel inhibits tRNA binding to the A site remains unclear.
 
-## Cryo-EM analysis reveals HIV FSS hairpin binding to the A site
+### Cryo-EM analysis reveals HIV FSS hairpin binding to the A site
 
 To investigate the structural basis for the tRNA binding inhibition by the FSSs, we performed single-particle cryo-EM of the HIV FSS mRNA-ribosome complex. We prepared a 70S E. coli ribosome complex programmed with HIV_NS (GAG) mRNA (Figure 1) and bound with a peptidyl-tRNA analog, N-Ac-Phe-tRNAPhe, in the P site. Our smFRET and filter-binding experiments showed that in this complex, the HIV FSS inhibits binding of Glu-tRNAGlu to the Glu (GAG) codon in the A site (Figures 5 and 7).
 
 Maximum-likelihood classification of a 640,261-particle data set revealed predominant ribosome states that contained strong density in both the P and A sites, which we interpreted as P-site tRNA and the FSS hairpin, respectively (64% particles total) (Figure 8—figure supplement 1). Two classes comprise the ribosome in classical NR states (NR-I and NR-II,~1° 30S rotation) with P/P tRNA (Figure 8A, Figure 8—figure supplement 2A), while one class represents a R ribosome state with P/E tRNA (R-I,~7° 30S rotation) (Figure 8B, Figure 8—figure supplement 2B), at overall resolutions between 3.1 Å and 3.4 Å. Additional classes contained weaker density in the A site, likely reflecting compositional and/or conformational heterogeneity (see Materials and methods). By contrast, there is no density at the entry site of the mRNA channel, indicating that the HIV FSS does not bind to the mRNA entry channel.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/55799/elife-55799-fig8-v2.jpg)
+
+**Figure 8.:** (A) Cryo-EM structures of the 70S ribosome in non-rotated (NR-I) and (B) rotated (R–I) conformations. The large subunits (50S) are shown in aqua, the small subunits (30S) in yellow, P-site tRNA in blue, and HIV FSS hairpin in red. (C and D) Close-up views of the codon and anti-codon basepairs of the NR-I (C) and R-I (D) states illustrating in-frame basepairing of the HIV_NS(GAG) mRNA (red) with the P-site tRNA (blue). The first position of the GAG A-site codon is shown in purple. The cryo-EM map (gray mesh) was sharpened by applying a B-factor of −50 Å2. (E) Overlay of NR-I P-site tRNA with P-site tRNA bound in the P/P classical site (PDB ID: 4V5D) shows a 11.8 Å rotation of the tRNA elbow towards the E site.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/55799/elife-55799-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Representative micrograph. (B) Fourier shell correlation as a function of resolution for the NR (I and II) and R structures. (C) 640,261 particles were aligned to a single model. Focused 3D classification using a spherical mask around the A and P sites yielded one class of R and one class of NR ribosomes. Each class was extracted and refined separately at 5 Å. Sub-classification of each class with a spherical mask around the A site yielded two classes of R and NR ribosomes with weak density for the HIV FSS hairpin in the A site. Particles were extracted based on HIV FSS hairpin occupancy and further sub-classified with a mask as described for the previous step.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/55799/elife-55799-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** The cryo-EM maps are colored as in Figure 5. (C) Comparison of P-site tRNA of the NR-I structure from this work (blue) with tRNA from states I-III of recycling factor 1 and 3 (RF1 and RF3) bound ribosome structures stalled with Apidaecin 137 (gray) (Graf et al., 2018). (D–E) Fitting of a tRNA (gray) into the hairpin density of the (C) NR-I and (D) R-I states shows that tRNA cannot be accommodated without steric clashes with the 50S A-site finger (aqua) in either of the observed states. This rules out that the density corresponds to a tRNA.
 
 P-site tRNA is base paired with mRNA, indicating the absence of frameshifting. In all three classes NR-I, NR-II and R-I, density allows for the distinction of purines from pyrimidines (Figure 8C,D), revealing Watson-Crick pairing between N-Ac-Phe-tRNAPhe and an in-frame UUC codon. This is consistent with smFRET data showing that in the absence of the slippery sequence, dnaX and HIV FSSs do not promote frameshifting (Figure 5—figure supplement 1).
 
@@ -126,7 +174,7 @@ In this study, we investigated molecular mechanisms by which FSSs from E. coli d
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/55799/elife-55799-fig10-v2.jpg)
 
-**Figure 10.:** dnaX and HIV FSSs perturb translation elongation.Upon encountering the ribosome, the FSS can hinder tRNA binding by docking to the A site of the ribosome or inhibit translocation by interacting with the mRNA entry channel.
+**Figure 10.:** Upon encountering the ribosome, the FSS can hinder tRNA binding by docking to the A site of the ribosome or inhibit translocation by interacting with the mRNA entry channel.
 
 While dnaX and HIV FSSs dramatically perturb the kinetics of the elongation cycle, our data provide no evidence that these stem-loops induce a unique conformation of the ribosome with a ‘super-rotated’ orientation of ribosomal subunits reported previously (Qin et al., 2014). The super-rotated conformation, in which the ribosomal 30S subunit rotates by ~20 degrees against the 50S subunit, was inferred from smFRET data showing a 0.2 FRET value for the S6/L9 FRET pair when the ribosome encountered a dnaX FSS or mRNA/DNA duplex. In our smFRET study using ribosomes programmed with dnaX_Slip mRNA, we only detected fluctuations between 0.4 and 0.6 FRET states corresponding to R and NR conformations while no FRET states below 0.4 were observed. Previously observed 0.2 FRET of the S6/L9 FRET pair might correspond to nuclease- or protease-damaged ribosomes, or they are induced by the interaction of ribosomes with the microscope slide surface.
 
@@ -146,15 +194,281 @@ Our findings of hairpin competition with tRNA expose a novel mechanism that stem
 
 ## Materials and methods
 
-## Ribosome, EF-G, EF-Tu and tRNA preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Escherichia coli)</td>
+      <td>dnaX</td>
+      <td>doi: 10.1093/nar/14.20.8091</td>
+      <td>Uniprot ID: P06710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Human Immunodeficiency Virus Type 1)</td>
+      <td>gag-pol</td>
+      <td>doi: 10.1089/aid.1987.3.57</td>
+      <td>Uniprot ID: P04585</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>MRE600</td>
+      <td>ATCC</td>
+      <td>ATCC #29417, (NCTC #8164, NCIB #10115)</td>
+      <td>E. coli strain K-12 that lacks the RNase I activity</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α competent cell</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog #: 18265017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Escherichia coli)</td>
+      <td>tRNA</td>
+      <td>Chemical Block</td>
+      <td>tRNAPhe tRNATyrtRNAfMet tRNAMettRNAGlu tRNAValtRNALys tRNAArg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Escherichia coli)</td>
+      <td>Total tRNA from E. coli MRE600</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog #: 10109541001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Escherichia coli)</td>
+      <td>pSP64 poly (A)</td>
+      <td>Promega</td>
+      <td>Catalog #: P1241</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Escherichia coli)</td>
+      <td>ribosome (30S, 50S and 70S)</td>
+      <td>doi: 10.1016/j.jmb.2007.04.042 doi: 10.1073/pnas.1520337112</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SacI-HF</td>
+      <td>New England Biolabs</td>
+      <td>Catalog #: R3156</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BglII</td>
+      <td>New England Biolabs</td>
+      <td>Catalog #: R0144</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HindIII-HF</td>
+      <td>New England Biolabs</td>
+      <td>Catalog #: R3104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T4 DNA ligase</td>
+      <td>New England Biolabs</td>
+      <td>Catalog #: M0202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>elongation factor Tu (EF-Tu)</td>
+      <td>doi: 10.1016/j.jmb.2007.04.042</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>elongation factor G (EF-G)</td>
+      <td>doi: 10.1016/j.jmb.2007.04.042</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T7 polymerase</td>
+      <td>doi: 10.1073/pnas.95.2.515</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Plasmid Miniprep System</td>
+      <td>Promega</td>
+      <td>Catalog #: A1223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gel and PCR Clean-Up System</td>
+      <td>Promega</td>
+      <td>Catalog #: A9281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA oligo synthesis</td>
+      <td>INTEGRATED DNA TECHNOLOGIES (IDT)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA sequencing</td>
+      <td>ACGT, INC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>puromycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog #: P8833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cy3 maleimide</td>
+      <td>Click Chemistry Tools</td>
+      <td>Catalog #: 1009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cy5 maleimide</td>
+      <td>Click Chemistry Tools</td>
+      <td>Catalog #: 1004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenylalanine, L -[2,3,4,5,6-3H]-</td>
+      <td>PerkinElmer</td>
+      <td>Catalog #: NET112201MC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Valine, L-[U-14C]-</td>
+      <td>PerkinElmer</td>
+      <td>Catalog #: NEC291EU050UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methionine, L-[35S]-</td>
+      <td>PerkinElmer</td>
+      <td>Catalog #: NEG009T001MC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutamic Acid, L-[3,4–3H]-</td>
+      <td>PerkinElmer</td>
+      <td>Catalog #: NET490001MC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tyrosine, L -[ring-3,5</td>
+      <td>PerkinElmer</td>
+      <td>Catalog #: NET127001MC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>smFRET data acquisition and analysis package</td>
+      <td>Taekjip Ha’s laboratory website at Johns Hopkins University (http://ha.med.jhmi.edu/resources/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IDL</td>
+      <td>ITT, INC. (https://www.harrisgeospatial.com/Software-Technology/IDL)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HaMMy</td>
+      <td>Taekjip Ha’s laboratory website at Johns Hopkins University (http://ha.med.jhmi.edu/resources/) doi: 10.1529/biophysj.106.082487</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>(https://bio3d.colorado.edu/SerialEM/) doi: 10.1016/j.jsb.2005.07.007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cisTEM</td>
+      <td>(https://cistem.org/) doi: 10.7554/eLife.35383</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix-1.17.1–3660</td>
+      <td>(https://www.phenix-online.org/) doi:10.1107/S2059798319011471</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot v0.9 pre-EL</td>
+      <td>Part of CCPEM 1.3.0 suite (https://www.ccpem.ac.uk/index.php) doi:10.1107/S2059798317007859</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMol 2.3.2</td>
+      <td>Schrödinger, LLC (https://pymol.org)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ribosome, EF-G, EF-Tu and tRNA preparation
 
 tRNAfMet, tRNAMet, tRNAPhe, tRNAVal, tRNATyr, tRNALys, and tRNAGlu (purchased from Chemical Block) were aminoacylated as previously described (Lancaster and Noller, 2005; Moazed and Noller, 1989). Tight couple 70S ribosomes used for biochemical experiments and ribosomal subunit used for cryo-EM sample assembly were purified from E. coli MRE600 stain as previously described (Ermolenko et al., 2007). S6-Cy5/L9-Cy3 ribosomes were prepared by partial reconstitution of ΔS6-30S and ΔL9-50S subunits with S6-41C-Cy5 and L11-11C-Cy3 as previously described (Ermolenko et al., 2007; Ling and Ermolenko, 2015). Histidine-tagged EF-G and EF-Tu were expressed and purified using previously established procedures (Ermolenko et al., 2007).
 
-## Preparation of model mRNAs
+### Preparation of model mRNAs
 
 Sequences encoding dnaX and HIV mRNAs were cloned by directional cloning downstream of T7 promoter in pSP64 plasmid vector (Promega Co). Model mRNAs (Supplementary file 1) were generated by T7 polymerase-catalyzed run-off in vitro transcription and purified by denaturing PAGE. Prior to transcription, 3’ ends of the model mRNAs were defined by linearizing the corresponding DNA templates at specific restriction sites (Supplementary file 1). smFRET measurements smFRET measurements were done as previously described (Cornish et al., 2008; Ling and Ermolenko, 2015) with modifications. The quartz slides used for total internal reflection fluorescence (TIRF) microscopy were treated with dichlorodimethylsilane (DDS) (Hua et al., 2014). The DDS surface was coated with biotinylated BSA (bio-BSA). Uncoated areas were then passivated by 0.2% Tween-20 prepared in H50 buffer which contained 20 mM HEPES (pH 7.5) and 50 mM KCl. 30 μL 0.2 mg/mL neutravidin (dissolved in H50 buffer) was bound to the biotin-BSA. For each flow-through chamber, non-specific sample binding to the slide was checked in the absence of neutravidin. Ribosomal complexes were imaged in polyamine buffer (50 mM HEPES (pH7.5), 6 mM Mg2+, 6 mM β-mercaptoethanol, 150 mM NH4Cl, 0.1 mM spermine and 2 mM spermidine) with 0.8 mg/mL glucose oxidase, 0.625% glucose, 1.5 mM 6-hydroxy-2,5,7,8-tetramethylchromane-2-carboxylic (Trolox) and 0.4 μg/mL catalase. smFRET data were acquired with 100 ms time resolution.
 
-IDL software (ITT) was used to extract flourescence intensities of Cy3 donor (ID) and Cy5 acceptor (IA), from which apparent FRET efficiency (EFRET, hence referred as FRET) was calculated:EFRET= IAIA+ID
+IDL software (ITT) was used to extract flourescence intensities of Cy3 donor (ID) and Cy5 acceptor (IA), from which apparent FRET efficiency (EFRET, hence referred as FRET) was calculated:
+
+$$
+E_{FRET}=\frac{I_{A}}{I_{A}+I_{D}}
+$$
 
 Traces showing single-step photobleachings for both Cy5 and Cy3 were selected using MATLAB scripts. FRET distribution histograms compiled from hundreds of smFRET traces were smoothed with a 5-point window using MATLAB and fit to two Gaussians corresponding to 0.4 and 0.6 FRET states (Ling and Ermolenko, 2015; Cornish et al., 2008; Ermolenko et al., 2007). To determine rates of fluctuations between 0.4 and 0.6 FRET states, smFRET traces were idealized by 2-state Hidden Markov model (HMM) using HaMMy software (McKinney et al., 2006).
 
@@ -162,23 +476,23 @@ Ribosome complexes used in smFRET experiments were assembled as follows. To fill
 
 To prepare dnaX_Slip mRNA-programmed ribosomes that contained N-Ac-Val-Lys-tRNALys in the P site (Figure 2), N-Ac-Val-tRNAVal and Lys-tRNALys were bound to the P and A sites of the S6/L9-labeled ribosome, respectively, as described above. After complex immobilization on the slide and removal of unbound Lys-tRNALys, ribosomes were incubated with 1 μM EF-G•GTP at room temperature for 10 min. Next, EF-G•GTP was replaced with the imaging buffer and a mixture of 1 μM of EF-Tu•GTP•Lys-tRNALys and 1 μM EF-G•GTP (in imaging buffer) was delivered at 0.4 mL/min speed by a syringe pump (J-Kem Scientific) after 10 s of imaging.
 
-## Puromycin assay
+### Puromycin assay
 
 0.6 μM 70S ribosomes were incubated with 1.2 μM dnaX_NS mRNA and 1.2 μM N-Ac-[3H]Phe-tRNAPhe in polyamine buffer at 37°C for 15 min followed by 10 min incubation with 1 mM puromycin. The puromycin reaction was terminated by diluting the ribosome samples using MgSO4-saturated 0.3 M sodium acetate (pH 5.3), and the N-Ac-[3H]-Phe-puromycin was extracted ethyl acetate.
 
-## Filter-binding assay
+### Filter-binding assay
 
 The filter-binding assay was performed as previously described (Salsi et al., 2016; Spiegel et al., 2007) with minor modifications. Ribosome complexes were assembled with radiolabeled tRNAs ([14C]Val-tRNAVal, [3H]Phe-tRNAPhe, [3H]Tyr-tRNATyr, [3H]Glu-tRNAGlu and N-Ac-[3H]Tyr-tRNATyr as indicated in figure legends) similarly to smFRET experiments described above. Ribosome complexes were applied to a nitrocellulose filter (MiliporeSigma), which was subsequently washed with 500 μl (for complexes programmed with dnaX mRNA) or 800 μl (for complexes programmed with HIV mRNA) of ice-cold polyamine buffer containing 20 mM Mg2+ to remove unbound tRNAs. 20 mM Mg2+ concentration was used to stabilize ribosome complexes under non-equilibrium conditions.
 
-## Frameshifting assay
+### Frameshifting assay
 
 0.6 μM 70S ribosomes were incubated with 1.2 μM dnaX_Slip mRNA and 1.2 μM N-Ac-Val-tRNAVal in polyamine buffer at 37°C for 15 min. The ribosomes were then incubated with 4 μM EF-G•GTP, 10 μM EF-Tu•GTP, 2.4 μM Lys-tRNALys, 1.2 μM Arg-tRNAArg (binds in 0 frame) and 1.2 μM [3H]Glu-tRNAGlu (binds in - one frame) at 37°C for 6 min. Incorporation of [3H]Glu into the ribosome was measured by filter-binding assay as described above. Frameshifting efficiency (ribosome A-site occupancy by [3H]Glu-tRNAGlu) was normalized by the P-site occupancy of N-Ac-[3H]Glu-tRNAGlu non-enzymatically bound to the ribosome programmed with dnaX_Slip ΔFSS mRNA.
 
-## HIV mRNA-70S ribosome complex assembly for cryo-EM analysis
+### HIV mRNA-70S ribosome complex assembly for cryo-EM analysis
 
 The 70S ribosomes re-associated from 30S and 50S subunits were purified using sucrose gradient. 0.4 μM 70S ribosomes were bound with 0.7 μM N-Ac-Phe-tRNAPhe and 0.8 μM HIV_NS (GAG) mRNA in polyamine buffer.
 
-## Cryo-EM and image processing
+### Cryo-EM and image processing
 
 C-flat grids (Copper, 1.2/1.3, Protochips) were glow-discharged for 30 s in a PELCO glow-discharge unit at 15 mA. 3 μl of the 70S•HIV FSS-mRNA complex at 250 nM concentration were applied to the grid and incubated for 30 s before vitrification using an FEI Vitrobot Mark IV (ThermoFisher). The grids were blotted for 3 s using blotting force 3 at 4°C and ~90% humidity, plunged in liquid ethane, and stored in liquid nitrogen.
 
@@ -192,7 +506,7 @@ The classification for the R conformation was done as described for the NR confo
 
 Finally, the obtained maps were sharpened in cisTEM and using the local resolution dependent function in phenix.autosharpen (Terwilliger et al., 2018).
 
-## Model building and refinement
+### Model building and refinement
 
 As the starting model for refinement we used the structure of the E. coli 70S ribosome with a ternary complex (PDB ID 5UYL), omitting EF-Tu and the A-site tRNA. An NMR structure of the HIV-1 frameshifting element (PDB ID 1PJY) was used as the starting model for the hairpin and to generate secondary-structure restraints. Missing parts of the mRNA were built manually and the geometry was regularized in phenix.geometry_minimization before refinement. The A-site finger was modeled using nucleotides 873–904 from PDB ID 5KPS where the A-site finger is well-ordered. Protein secondary structure restraints were generated in Phenix (Adams et al., 2010) and edited manually. We generated base-pairing (hydrogen bonds) restraints using the ‘PDB to 3D Restraints’ web-server (http://rna.ucsc.edu/pdbrestraints/, [Laurberg et al., 2008]) and added stacking restraints manually for the hairpin, and A-site finger.
 

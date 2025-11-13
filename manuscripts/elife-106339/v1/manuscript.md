@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/024mw5h28 Pritzker School of Molecular Engineering, University of Chicago Chicago United States
-2. https://ror.org/024mw5h28 Biological Sciences Division, University of Chicago Chicago United States
-3. https://ror.org/024mw5h28 Department of Chemistry, University of Chicago Chicago United States
+1. Pritzker School of Molecular Engineering, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+2. Biological Sciences Division, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+3. Department of Chemistry, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 
@@ -38,11 +38,11 @@ Our motivation for this article is twofold. First, we seek to introduce bioengin
 
 Here, we explore the current state of bioengineered trained immunity and suggest avenues for future research and innovation. We will begin by defining central and peripheral training and outlining the key challenges in activating one or more modes of training. Then, we explore passive and active targeting approaches, including nanotherapeutics, as a potential solution. Next, mechanotransduction and cellular engineering approaches are discussed as both research and therapeutic methods. Finally, we propose the use of machine learning to identify new drug and protein targets and extract training-like signatures from preexisting clinical and epidemiologic datasets. We hope to encourage the translation of trained immunity from bench to bedside through the application of bioengineering techniques.
 
-## Central vs. peripheral trained immunity
+### Central vs. peripheral trained immunity
 
 Central trained immunity is the epigenetic and metabolic reprogramming of the long-lived progenitor cells of the bone marrow, hematopoietic stem cells (HSCs) (Kaufmann et al., 2018). Peripheral trained immunity is the immunometabolic reprogramming of mature, terminally differentiated, tissue-resident cells such as alveolar macrophages and skin epithelial cells (Geller et al., 2022). While there is interest in inducing central and peripheral trained immunity either independently or in combination, the challenge of disentangling these two types of training has not yet been overcome. Furthermore, without the ability to selectively activate one type of training or the other, it is difficult to determine the contribution of each type of training to the immune response.
 
-## Maladaptive central training in hematopoietic stem cells: a target for training suppression
+#### Maladaptive central training in hematopoietic stem cells: a target for training suppression
 
 Depending on the original stimulus, training has been observed to endure as long as one year (Netea et al., 2020). Induction of central training in HSCs occurs in the bone marrow and allows for epigenetic reprogramming, which is passed down to daughter cells that eventually differentiate into trained effector cells (e.g. monocytes and macrophages) (Netea et al., 2016). The mechanisms by which HSCs in the bone marrow niche acquire trained immunity is being extensively investigated, with many insights stemming from studies using systemic delivery of Bacille Calmette-Guérin (BCG) and β-glucan (Kaufmann et al., 2018; de Laval et al., 2020; Mills et al., 2024; Moorlag et al., 2020).
 
@@ -58,7 +58,7 @@ Beyond chronic conditions and environmental factors, central training and its co
 
 In each of these experimental models and patient cohorts, training drives susceptibility to secondary inflammatory conditions. These direct relationships between central training and autoinflammatory diseases give pause when considering central trained immunity as a therapeutic target. If training-based therapeutics access the bone marrow and induce central training, then there is a risk of inducing or worsening these training-mediated autoinflammatory conditions. However, strategies to directly inhibit central trained immunity may reduce hyper-inflammation in chronic diseases while preserving peripheral immune responses for local defense, providing a new therapeutic target for these common chronic diseases. In each of these diseases, maladaptive central training is implicated as a direct driver of pathology, and pathology can be reproduced by the adoptive transfer of the trained HSCs into naïve mice. Therefore, selective suppression of training in HSCs via bioengineering approaches such as nanotherapeutics, gene therapies, or epigenetic-directed inhibitors are promising strategies to suppress the progression of these autoinflammatory diseases. Such methods will be discussed further in the Cellular Engineering section.
 
-## Peripheral trained immunity in immune and non-immune cells: targets for tissue-specific protection
+#### Peripheral trained immunity in immune and non-immune cells: targets for tissue-specific protection
 
 Peripheral trained immunity is local and can be more transient compared to central trained immunity (Figure 2). This form of immunity is induced by direct environmental interactions with pathogens or other stimuli in tissue-resident cells, in tissues such as the skin and lungs (Netea and Joosten, 2018). A study by Yao et al., 2018 found that the formation and maintenance of alveolar macrophages show memory features that occur independently of monocytes or bone marrow progenitors using a model of adenovirus lung infection (Yao et al., 2018). Other tissue-resident macrophages, such as Kupffer cells or microglia, self-renew independently of HSCs, making them promising targets for lasting innate training (Liu et al., 2022; Heng et al., 2021; Gomez Perdiguero et al., 2015). In an immunosuppressive tumor microenvironment, β-glucan-mediated trained innate immune responses establish an anti-tumor microenvironment that may be sufficient to eradicate the typically immunosuppressive pancreatic tumor, further cementing the effectiveness of peripheral trained immunity in combating disease (Geller et al., 2022). The same group demonstrated the role of interstitial macrophages in the host resistance of metastatic lesions in an intravenous melanoma model (Ding et al., 2023).
 
@@ -72,7 +72,7 @@ Inflammatory memory in epithelial cells is not limited to the skin—it has also
 
 Together, these studies highlight the importance of tissue-specific training cues and their ability to halt the spread of infection. The variable durability, cell specificity, and tissue-specific response of peripheral training provide opportunities to use bioengineering to create tissue-specific vaccines and therapies that enhance host defenses while minimizing the risk of harmful inflammatory responses posed by central trained immunity. Approaches to selectively target peripheral trained immunity will be explored in the Passive and Active Targeting Approaches.
 
-## Therapeutic targets and challenges for trained immunity
+### Therapeutic targets and challenges for trained immunity
 
 Selectively modulating peripheral innate immune memory could provide opportunities to create therapies that strengthen host defense while minimizing harmful inflammatory responses, albeit with many challenges. For example, local tissue training can, in some cases, lead to systemic therapeutic effects. Talimogene laherparepvec (T-VEC), a modified herpes simplex virus engineered to encode GM-CSF, exerts anti-tumor effects through direct oncolysis at the site of administration but also through innate immune cell-driven systemic responses. This virus has been approved by the FDA to treat unresectable melanoma (Kaufman et al., 2022; Jennings et al., 2019). Another example where trained immunity has been attributed to increased systemic effects includes the anti-tumor response following intratumoral administration of mRNA encoding IL-12, IFN-ɑ, IL-15, and GM-CSF (Hotz et al., 2021). Delivering mRNA encoding tumor-specific antigens or cytokines to antigen-presenting cells (APCs) can result in a systemic anti-tumor response mediated by the local innate immune activation (Rojas et al., 2023; Cafri et al., 2020; Sahin et al., 2020). Most recently, trained immunity has been applied to sepsis treatment to overcome immune paralysis using the potential of apolipoprotein nanotechnology (Schrijver et al., 2023. Schrijver et al., 2023) discovered that apolipoprotein nanoparticles loaded with IL-4 could control sepsis via induction of trained immunity in myeloid cells (Schrijver et al., 2023). In each of these models, the training of peripheral innate immune cells coordinated a protective systemic response.
 
@@ -80,9 +80,9 @@ Exploiting trained immunity mechanisms could also enhance vaccine efficacy, part
 
 Vaccine adjuvants have also been demonstrated to induce trained immunity signatures. For example, the addition of oil-based adjuvant AS03 in an influenza vaccine induces epigenetic changes in myeloid cells, generating in vitro resistance to unrelated viruses such as Dengue and Zika (Wimmers et al., 2021). A TLR7/8 agonist, 3M052, also drives epigenetic and transcriptomic modifications in murine myeloid cells (Lee et al., 2022). Thus, trained immunity-related epigenetic changes in myeloid cells may increase the responsiveness of these trained cells to subsequent vaccine doses and improve the crosstalk between lymphocytes and myeloid cells during vaccination. In clinical applications, trained immunity can independently enhance protection against diseases and amplify the response to immune-targeted therapies, like vaccines and cancer treatments.
 
-## Passive and active targeting approaches
+### Passive and active targeting approaches
 
-## Cellular delivery
+#### Cellular delivery
 
 While both central and peripheral training can play a role in therapeutic protection and pathogenesis, targeting these compartments directly within cells and tissues remains an unaddressed challenge. One approach to cell-specific, targeted delivery of trained immunity-inducing stimuli is nanocarriers. Nanocarriers can target many tissues, including the gut and lung, and can be directed to nearly any cell type. However, they are naturally suited to target cells of the mononuclear phagocyte system, especially macrophages, which are primary drivers of trained immunity.
 
@@ -90,15 +90,56 @@ Targeting specific cell types via surface markers is a common bioengineering str
 
 In addition to active targeting approaches, nanoparticle morphology can be designed to influence uptake in specific tissues or cell types via passive targeting. Inherent characteristics of nanomaterials, including surface charge, shape, size, and topography are known to affect their uptake and distribution in vivo (Mitragotri and Lahann, 2009; Champion and Mitragotri, 2006; Augustine et al., 2020). For example, to bias delivery to phagocytic cells, such as macrophages, size- and morphology-restricted nanoparticles can be useful. Macrophages preferentially uptake particles upwards of 400 nm in size, whereas neutrophils prefer elongated, rod-shaped particles (Safari et al., 2020; Li et al., 2021). These nanoparticles can have many different compositions and characteristics, from complex lipid nanoparticles to self-assembling polymersomes, each with different properties and benefits (Table 1). Liposome-based systems, in particular, offer a non-inflammatory, inexpensive method for the delivery of both hydrophobic and hydrophilic cargo (Minocha and Kumar, 2022).
 
+**Table 1.**
+ Some nanocarrier types and characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Advantages</th>
+      <th>Disadvantages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Polymeric Lu et al., 2021</td>
+      <td>StabilityMore amenable to surface decorationControlled releaseCan be designed for stimulus-specific degradation</td>
+      <td>No endosomal escape mechanismLower loading abilityImmunogenicDifficult to synthesize in a controlled fashion</td>
+    </tr>
+    <tr>
+      <td>Liposomes, Micelles, and Emulsions Lu et al., 2021</td>
+      <td>Modular componentsFDA-approved productsBiocompatibleSimple to produceCan load hydrophobic and hydrophilic cargo</td>
+      <td>Scale upExtra-hepatic delivery is challengingLess stable</td>
+    </tr>
+    <tr>
+      <td>Lipid Nanoparticles Lu et al., 2021</td>
+      <td>FDA-approved productsIdeal for nucleic acid cargoEndosomal escapeBiocompatible</td>
+      <td>ImmunogenicExtra-hepatic delivery is challengingLess stable, especially at 4 °C</td>
+    </tr>
+    <tr>
+      <td>Lipoprotein Damiano et al., 2013; Thaxton et al., 2016</td>
+      <td>BiocompatibleBiomimicryNatural metabolic trafficking target</td>
+      <td>Complex - quality control and scale up is costlyPurification challenges</td>
+    </tr>
+    <tr>
+      <td>Exosomes Colombo et al., 2014</td>
+      <td>Physiologic delivery systemLow risk of immunogenicityLonger circulation times</td>
+      <td>Heterogeneous loadingLabor-intensive isolation</td>
+    </tr>
+  </tbody>
+</table>
+
 Several groups are already pursuing various nanocarrier-based delivery systems to induce trained immunity. Exosomes, either engineered ex vivo or endogenously derived, can hijack the native intracellular communication system to induce or modulate training, as demonstrated via both bacterial and stem cell sources (Liu et al., 2024b; Feng et al., 2020). In one study from Mulder et al., 2019, muramyl dipeptide (MDP) was lipidated and loaded onto a scaffold of apolipoprotein A (ApoA), the primary component of high-density lipoprotein (HDL) (Priem et al., 2020). This biomimetic nanocarrier induced trained immunity in mice and significantly improved their response to checkpoint inhibition in a B16F10 melanoma model. In an alternative approach, β-glucan was encapsulated in poly lactic-co-glycolic acid (PLGA) nanoparticles, resulting in extended release of β-glucan and prolongation of the training period (Ajit et al., 2022). Mice that were trained with the β-glucan PLGA nanoparticles significantly resisted engraftment of B16F10 tumors. Due to their inherent interactions with innate immune cells, particularly the cells that comprise the mononuclear phagocyte system, nanoparticles are an attractive delivery modality for inducing trained immunity in a more precise and controllable manner. While nanoparticle-based induction of trained immunity is being explored in preclinical studies, there are no ongoing clinical trials using this approach.
 
-## Tissue delivery
+#### Tissue delivery
 
 Similar methods can be used to target delivery to specific tissues rather than individual cell types, since nanocarriers also preferentially accumulate in different organs depending on their physical and chemical characteristics (Table 1, Figure 2; Wang et al., 2023b; Su et al., 2024). For example, intravenously administered nanoparticles naturally traffic to the liver and may be useful for inducing trained immunity to prophylactically combat septic liver injury or hepatitis (Kumar et al., 2023; Liu et al., 2024a; Wang et al., 2024; Hong et al., 2015). Intravesical delivery of BCG is currently used as a trained immunity-inducing treatment in bladder cancer; therefore, targeted delivery of other inducers of training to the kidneys and epithelial cells of the urogenital tract may offer a less invasive alternative (Alexandroff et al., 1999; Buffen et al., 2014). This strategy may also allow researchers to selectively induce peripheral or central trained immunity, depending on the goal of the treatment. Small molecules, in particular, can easily be formulated for topical delivery to the skin, aerosol-based delivery to the respiratory mucosa, or oral delivery to the gut with delayed release capabilities (Ma et al., 2021; Uhl et al., 2021; Souto et al., 2022; Wang et al., 2023a). Several groups have demonstrated that epithelial cells of mucosal surfaces are trained by inflammatory stimuli, which then alter the expression of key adhesion molecules on their surface (Subudhi et al., 2024; Russell et al., 2023; Rosenblum and Naik, 2022; Naik and Fuchs, 2022). This phenomenon presents an exciting opportunity to modulate susceptibility to environmental exposures, infectious or otherwise, by training mucosal surfaces directly. Nanoparticle systems may also be employed to reverse the effects of trained immunity in the case of maladaptive training. Therefore, there is much interest in employing nanoparticle-based systems for the precise delivery of trained immunity-modifying therapeutics.
 
-## Biomechanical approaches
+### Biomechanical approaches
 
-## Mechanotransduction and epigenetics
+#### Mechanotransduction and epigenetics
 
 A new, exciting approach to induce training is the manipulation of mechanical signaling. Mechanotransduction is critical to the ability of immune cells to communicate with adjacent or remote cells, to migrate to the site of infection, or to adapt to disrupted local environments. These processes rely on the cell’s ability to sense both the biochemical and mechanical changes around them (Wozniak et al., 2004; Geiger et al., 2009). Disruptions and changes in the stresses and strains in the extracellular matrix (ECM) can stem from numerous sources, such as degraded ECM during a bacterial infection. Cells sense such mechanical changes in their microenvironment via focal adhesions, a specialized complex of adhesion proteins. In particular, integrins are a superfamily of transmembrane cell receptors that comprise focal adhesions (Hood and Cheresh, 2002). Integrins are crucial mechanotransducers, converting mechanical forces from the ECM into intracellular biochemical signals and vice versa.
 
@@ -108,7 +149,7 @@ Our current understanding of how mechanotransduction can alter and influence the
 
 Interestingly, many studies note the importance of mechanical stimulation in the induction of longer-term changes in cell phenotypes by epigenetic modifications. For example, the lineage commitment of mesenchymal stem cells is reliant on mechanical cues. Mesenchymal stem cells (MSCs) seeded in stiffer substrates undergo osteogenic differentiation; in softer substrates, they undergo adipogenic or neuronal differentiation (Engler et al., 2006). Rapid ATP synthesis ensuing dynamic loading enables chromatin condensation, a key step in differentiation, showing the importance of mechanical loading on both metabolic and epigenetic regulation (Heo et al., 2016). Matrix stiffness can regulate nuclear translocation of both methyltransferases and acetyltransferases, inducing methylation, or chromatin condensation, and acetylation, or chromatin relaxation, respectively (Jang et al., 2021; Zhao et al., 2021; Song et al., 2024). In summary, mechanical force is a crucial cellular signal that controls gene expression and has potential as a robust method to manipulate epigenetics.
 
-## Scaffold-based manipulation of epigenetics
+#### Scaffold-based manipulation of epigenetics
 
 The forces applied onto cells by scaffolds or extracellular matrices provide stress-strain stimulation to cells often necessary for homeostasis. Consequently, changes in the scaffold can lead to altered cellular responses. For example, the high-tension environment made by the highly aligned and packed collagen fibers in tendons promotes an anabolic state in tenocytes at homeostasis. The loss of this tension leads to a decrease in chromatin accessibility in tenocytes, increasing the expression of a matrix of catabolic genes (Jones et al., 2023). In bone, sensitivity to fluid shear stress has been shown to be enhanced by Sirtuin-3, a histone deacetylase, which also plays an important role in regulating bone mass (Li et al., 2023a). In another study with chondrocytes, three-dimensional hydrogels were used to demonstrate the importance of mechanical memory on chondrogenic potential by comparing the threshold after exposure to a two-dimensional stiff substrate (Scott et al., 2023). Importantly, a recent study reported on the pivotal role of integrin-mediated adhesion in regulating the epigenetic landscape to restrict DC maturation (Guenther et al., 2021). Additionally, adhesion-mediated reprogramming led to less effective anti-tumor responses by DCs, further suggesting the critical role of mechanical cues in maintaining immune cell phenotype and function (Harjunpää et al., 2024).
 
@@ -124,7 +165,7 @@ Scaffolds can be engineered to have specific mechanical properties and can be pu
 
 Overall, these studies show scaffolds can induce epigenetic changes by providing mechanical cues and by acting as deposits of molecules that induce epigenetic reprogramming. Additionally, bioengineered scaffolds are inexpensive, easily modifiable tools to interrogate the role of mechanosensing in trained immunity. How these mechanical cues influence trained immunity in cells, both independently and in the context of chemical signals, remains a clear gap in knowledge that could be addressed with bioengineering approaches.
 
-## Cellular engineering
+### Cellular engineering
 
 Epigenetic and metabolic reprogramming are the principal mechanisms underlying the induction and maintenance of trained immunity. Epigenetic modification of histones, especially H3K4Me1, H3K4Me3, and H3K27Ac, increases the accessibility of chromatin in trained innate immune cells, thus improving their ability to rapidly transcribe effector proteins on demand (Novakovic et al., 2016; Saeed et al., 2014). This process is influenced by a set of long non-coding RNAs (lncRNAs) called immune gene priming lncRNAs (IPLs), which alter the 3D structure of the genome to facilitate epigenetic training (Fanucchi et al., 2019). Furthermore, transcription factors (TFs), including Jun and Fos, play a role in both the establishment and maintenance of training-induced epigenetic modifications (Larsen et al., 2021). Though it is a defining feature, epigenetic reprogramming is not the only hallmark of trained immunity. Alterations in cellular metabolism are necessary for the induction of training in a variety of model systems. Trained innate immune cells are more metabolically active than their untrained counterparts. The first known metabolic pathway demonstrated to be upregulated in trained immunity was glycolysis (Cheng et al., 2014). Blocking glycolysis using a non-hydrolyzable form of glucose inhibits training by BCG or β-glucan (Cheng et al., 2014; Arts et al., 2016a). Exploiting native cellular metabolism by modulating intermediate metabolites directly can also result in a trained phenotype in human monocytes, as in the case of mevalonate and itaconate (Bekkering et al., 2018; Domínguez-Andrés et al., 2019; Ferreira et al., 2023). This upregulation in glycolysis results in the accumulation of metabolic intermediates that are used as methyl- and acetyl-group sources for histone-modifying enzymes; therefore, the epigenetic and metabolic drivers of trained immunity are inherently linked (Arts et al., 2016b; Fanucchi et al., 2021; Riksen and Netea, 2021).
 
@@ -142,7 +183,7 @@ Another approach to improve the delivery of genetic components to a specific cel
 
 Chimeric antigen receptor (CAR) macrophages are a newer ACT, analogous to CAR T cells. Immunocompromised patients may benefit from receiving such an ACT in which macrophages are produced with a trained phenotype before being infused back into the patient. CAR macrophages (also known as CAR-Macs) are currently in clinical trials for cancer treatment due to their ability to infiltrate the tumor microenvironment as tumor-associated macrophages (TAMs) (Reiss et al., 2025). Macrophages are processed ex vivo to express a tumor-specific receptor, becoming CAR-Macs that preferentially accumulate in the tumor. Training CAR-Macs before infusion could allow them to resist the immunosuppressive signals of the tumor microenvironment. By overexpressing key genes involved in training to increase immunogenicity, the tumor environment could be flipped from ‘cold’ and immunosuppressive to ‘hot’ and immunocompetent, thus improving patient outcomes. In summary, cellular engineering can deepen our fundamental understanding of trained immunity by identifying the core genes underlying the training mechanism and expand therapeutic applications of innate training by direct cellular manipulation.
 
-## Computational systems and machine learning
+### Computational systems and machine learning
 
 During the past several years, machine learning tools and their applications have revolutionized drug discovery and mechanistic research. Trained immunity, with its history rooted in large, complex datasets, is uniquely poised to benefit from these approaches. Particularly, bioinformatics and machine learning systems can be used to identify evidence of training in epidemiologic and clinical datasets, integrate training signals across omics platforms, and identify novel pathways and targets for investigation.
 
@@ -158,20 +199,20 @@ The introduction of training-based therapies into clinical practice can be accel
 
 The determination of druggable protein targets for trained immunity induction can be expedited by utilizing known small-molecule inducers for mechanistic interrogation (Knight et al., 2024; Ajit et al., 2024). Unlike endogenous signalling molecules and pathogen-derived sources, such as BCG and β-glucan, which have been used for mechanistic interrogation thus far, the use of small molecules is well precedented in in silico ligand-based target prediction tools such as SwissTargetPrediction and TargetHunter (Wang et al., 2013; Yang et al., 2023; Li et al., 2017; Daina et al., 2019). In addition to providing additional in silico and experimental methods for druggable target prediction, small molecule-based mechanistic interrogation creates an avenue for which peripheral or central trained immunity-specific targets can be recognized by an artificial neural network (ANN)-based machine learning architecture (Liao et al., 2022). Additional small molecule training inducers could be identified with data-driven ML models, which systematically guide high-throughput molecular screening via quantitative structure-activity relationship (QSAR) study (Bernatavicius et al., 2024; Niazi and Mariam, 2023). With limited small-molecule screening data, a deep representational learning-based QSAR framework can identify candidate molecules by iterative feedback from additional experimental data and molecular docking simulations (Tang et al., 2023). While it is still unclear where trained immunity and machine learning will intersect, the many opportunities created by these computational models offer exciting new areas of research in immunology and engineering.
 
-## Conclusions and future directions
+### Conclusions and future directions
 
 As our understanding of the applications of trained immunity continues to grow, new approaches are needed to fully explore the therapeutic and fundamental aspects of training, which are inextricably connected. While the implications of trained immunity in the context of autoinflammatory and autoimmune disease are rapidly expanding, practical approaches to suppress maladaptive training and engage the beneficial applications of training in human diseases are still lacking.
 
-## Looking towards the future: the clinical state of trained immunity therapeutics
+#### Looking towards the future: the clinical state of trained immunity therapeutics
 
 While there are clear clinical implications for applying trained immunity to the treatment of disease, most new human studies on trained immunity are early-stage observational studies with descriptive in vitro endpoints rather than interventional clinical trials. For example, current clinical studies on trained immunity in the recruitment phase include: vaccination with live vaccines including BCG, MMR (Eklöf, 2024), and yellow fever (Institut Pasteur, 2024), and inactivated tuberculosis vaccine MV130 Inmunotek, 2024; impact of sleep disorders on trained immunity in the context of COVID-19 Freixinet, 2024; impact of pheochromocytoma (Radboud University Medical Center, 2024), colon carcinoma, and thyroid carcinoma (Radboud University Medical Center, 2023) on trained immunity with or without ex vivo exposure to additional training stimuli; and effect of statin treatment on training state in patients with high cholesterol (Cheng, 2023). These studies often interrogate differences in the immune response of peripheral mononuclear cells of different patient populations, with or without certain conditions or treatments, to determine which population exhibits enhanced innate responses, without evaluating functional changes in disease processes. While these studies provide useful data and are minimally invasive to the study participants, this strategy is a major limitation of current clinical applications of trained immunity, as it is difficult to make strong claims about clinical efficacy of trained immunity from observational studies alone. Additionally, methods to suppress or reverse maladaptive central trained immunity in chronic inflammatory disease are currently understudied in clinical settings, which is unsurprising as the link between training and comorbid autoinflammatory conditions was only made in the last decade. Furthermore, with the new understanding that training responses are stimulus-specific, stimuli beyond BCG and β-glucan will be required to access other forms of trained immunity for specific applications. Future studies involving direct intervention for the modulation and prevention of disease are needed to provide clinical evidence for training-based therapies.
 
-## Bioengineered therapies and the potential for combinatorial training regimens
+#### Bioengineered therapies and the potential for combinatorial training regimens
 
 Bioengineering-based therapies, however, are a major focus of ongoing interventional clinical trials across multiple disease areas, including cancer, tissue grafting, and chronic disease. Currently, recruiting trials using bioengineering approaches include: tissue engineering for arthritis (University Hospital, Basel, Switzerland, 2025), skin grafts (Ma, 2025; Jiayuan, 2020; Andalusian Network for Design and Translation of Advanced Therapies, 2023), and breast reconstruction Quanta Medical, 2025; engineered T-cells for chronic kidney disease (Centre Hospitalier Régional d’Orléans, 2024) and advanced solid tumors Therapeutics, 2024; and allograft for periodontal regeneration (Pulido, 2024), among many others. Each of these cases represents unique opportunities for integrating trained immunity into cutting-edge therapeutic applications. Autologous or allograft-engineered tissue may benefit from the training of epithelial cells and progenitors to enhance tissue healing and prevent graft rejection. Trained, engineered macrophages could be co-administered with engineered T-cells to enhance engraftment and efficacy in cancer or chronic kidney disease. Finally, periodontal disease has known effects on trained immunity, so integrating training suppressors alongside an allograft could mitigate the risk of concurrent autoinflammatory disease. In these systems, trained immunity may serve as adjuvant therapy to enhance the efficacy of bioengineered therapeutics.
 
 By implementing trained immunity alongside well-tested bioengineering interventions in combinatorial approaches, trained immunity is more likely to exhibit clinically significant success. For many diseases of interest, especially cancer, engaging the innate immune system alone via trained immunity may be limited in its potential to control disease, making a combinatorial approach that also activates adaptive immunity or limits disease pathogenesis more preferable. The combinatorial approach is already in use for one training-based therapy: intravesicular BCG is commonly used as adjuvant therapy following surgical resection for the treatment of bladder cancer (Alexandroff et al., 1999; Buffen et al., 2014). Additionally, combinatorial therapeutic approaches are often the preferred clinical approach when evaluating experimental treatments in cancer, to mitigate both ethical and efficacy concerns.
 
-## Conclusions
+#### Conclusions
 
 In this review, we propose that the strategic application of bioengineering-derived techniques would allow us to refine the activation of trained immunity for safer, more localized, and more effective training-based therapeutics. For localization, nanotherapeutics are modular, well-studied systems that can precisely deliver inducers of trained immunity to select tissues. For effectiveness, understanding the biomechanics of training at a cellular level will influence our approach to studying and manipulating trained cells in both in vivo and ex vivo experimental systems and therapeutics. For clinical translation, using training in cell-based therapies is a key next step to ensure these highly effective, costly therapeutics retain their function in suppressive disease microenvironments. Conversely, using cellular engineering to turn off training in hyperinflammatory states could slow the progression of diseases like atherosclerosis. Looking toward the near future, machine learning can identify trained immunity phenotypes in pre-existing, multi-omic, and clinical datasets. Employing ML models to determine where training already occurs will improve our understanding of the landscape of training, both in detrimental and protective cases. Bioengineering will be both necessary and sufficient to transition trained immunity from scientific observation to interventional therapeutics.

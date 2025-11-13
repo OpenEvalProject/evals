@@ -13,13 +13,13 @@
 
 ### Affiliations
 
-1. https://ror.org/05bnh6r87 Department of Psychology, Cornell University Ithaca United States
+1. Department of Psychology, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
 
 † Corresponding author
 
 ## Abstract
 
-Social animals, including both humans and mice, are highly motivated to engage in social interactions. Short-term social isolation promotes social behavior, but the neural circuits through which it does so remain incompletely understood. Here, we sought to identify neurons that promote social behavior in single-housed female mice, which exhibit increased rates of social investigation, social ultrasonic vocalizations (USVs), and mounting during same-sex interactions that follow a period of short-term (3 days) isolation. We first used immunostaining for the immediate early gene Fos to identify a population of neurons in the preoptic hypothalamus (POA) that increase their activity in single-housed females following same-sex interactions (POA social neurons) but not in single-housed females that did not engage in social interactions. TRAP2-mediated chemogenetic silencing of POA social neurons in single-housed females significantly attenuates the effects of short-term isolation on social investigation, USV production, and mounting. In contrast, caspase-mediated ablation of POA social neurons in single-housed females robustly attenuates mounting but does not decrease social investigation or USV production. Optogenetic activation of POA social neurons in group-housed females promotes social investigation and USV production but does not recapitulate the effects of short-term isolation on mounting. To understand whether a similar population of POA social neurons promotes social behavior in single-housed males, we performed Fos immunostaining in single-housed males following either same-sex or opposite-sex social interactions. These experiments revealed a population of POA neurons that increase Fos expression in single-housed males following opposite-sex, but not same-sex, interactions. Chemogenetic silencing of POA social neurons in single-housed males during interactions with females reduces mounting but does not affect social investigation or USV production. These experiments identify a population of hypothalamic neurons that promote social behavior following short-term isolation in a sex- and social context-dependent manner.
+Social animals, including both humans and mice, are highly motivated to engage in social interactions. Short-term social isolation promotes social behavior, but the neural circuits through which it does so remain incompletely understood. Here, we sought to identify neurons that promote social behavior in single-housed female mice, which exhibit increased rates of social investigation, social ultrasonic vocalizations (USVs), and mounting during same-sex interactions that follow a period of short-term (3 days) isolation. We first used immunostaining for the immediate early gene Fos to identify a population of neurons in the preoptic hypothalamus (POA) that increase their activity in single-housed females following same-sex interactions (POAsocial neurons) but not in single-housed females that did not engage in social interactions. TRAP2-mediated chemogenetic silencing of POAsocial neurons in single-housed females significantly attenuates the effects of short-term isolation on social investigation, USV production, and mounting. In contrast, caspase-mediated ablation of POAsocial neurons in single-housed females robustly attenuates mounting but does not decrease social investigation or USV production. Optogenetic activation of POAsocial neurons in group-housed females promotes social investigation and USV production but does not recapitulate the effects of short-term isolation on mounting. To understand whether a similar population of POAsocial neurons promotes social behavior in single-housed males, we performed Fos immunostaining in single-housed males following either same-sex or opposite-sex social interactions. These experiments revealed a population of POA neurons that increase Fos expression in single-housed males following opposite-sex, but not same-sex, interactions. Chemogenetic silencing of POAsocial neurons in single-housed males during interactions with females reduces mounting but does not affect social investigation or USV production. These experiments identify a population of hypothalamic neurons that promote social behavior following short-term isolation in a sex- and social context-dependent manner.
 
 ## Introduction
 
@@ -31,25 +31,49 @@ In recent work, we found that short-term (3 days) social isolation exerts robust
 
 ## Results
 
-## Neurons in the preoptic hypothalamus increase Fos expression in socially isolated female mice following same-sex social interactions
+### Neurons in the preoptic hypothalamus increase Fos expression in socially isolated female mice following same-sex social interactions
 
 To identify changes in neuronal activity that may underlie the effects of short-term isolation on female social behavior, we performed immunostaining for the immediate early gene Fos in brain sections collected from group-housed and single-housed (3 days) subject females following 30-min social encounters in their home cages with a novel, group-housed visitor female (Figure 1A). In line with our previous behavioral findings (Zhao et al., 2021), we observed that single-housed female residents spent more time investigating visitors (Figure 1B; t-test, p=0.001) and in many trials mounted visitors, a behavior that was not observed in group-housed residents (Figure 1C; 0 of 12 group-housed residents and 11 of 13 single-housed residents mounted visitors; z-test for independent proportions, p<0.001; see Supplementary file 1 for complete statistical details). Female pairs that contained a single-housed resident also produced higher rates of ultrasonic vocalizations (USVs) than pairs with a group-housed resident (Figure 1D; Mann-Whitney U test, p<0.001). Although either female in a dyad can produce USVs (Warren et al., 2020), the robust effects of short-term isolation on the non-vocal social behaviors of single-housed females suggest that at least some of the elevation in total USVs is driven by increased USV production by the single-housed resident. Given the robust effects of short-term isolation on these three aspects of female social behavior, we focused our analyses on two hypothalamic regions implicated in regulating these behaviors: the preoptic area (POA), which regulates social approach (McHenry et al., 2017), social reward (Hu et al., 2021), mounting (Floody, 1989; Karigo et al., 2021; Wei et al., 2018) and USV production (Chen et al., 2021; Gao et al., 2019; Green et al., 2018; Karigo et al., 2021; Michael et al., 2020); and the ventromedial hypothalamus (VMH), which regulates mounting (Hashikawa et al., 2017; Karigo et al., 2021; Lee et al., 2014; Liu et al., 2022). We also examined Fos expression within the caudolateral periaqueductal gray (PAG), based on the well-established role of this region in the control of vocalization in vertebrates and USV production in mice (Chen et al., 2021; Jürgens, 1994; Michael et al., 2020; Tschida et al., 2019; Ziobro et al., 2024). To test whether any observed differences in Fos expression in these three regions were associated with isolation-induced changes in social behavior rather than baseline differences between groups, we also measured Fos expression in the POA, the VMH, and the PAG of group-housed and single-housed females that did not engage in social interaction with novel female visitors (Figure 1E and F; Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/94924/elife-94924-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of experiment to measure Fos expression in group-housed and single-housed females following same-sex social interactions. (B) Total time spent engaged in resident-initiated social investigation for group-housed residents (teal) and single-housed residents (maroon). (C) Same as (B), for proportion of trials with resident-initiated mounting. (D) Same as (B), for total USVs recorded from pairs containing group-housed or single-housed residents. (E) Left-most image shows the location of the POA in a coronal brain section. Representative confocal images show Fos expression (green) in the POA of a group-housed female (left) and a single-housed female (right) following same-sex social interactions. Blue, Neurotrace. (F) Quantification of Fos-positive neurons is shown for the POA (left), the VMH (middle), and the caudolateral PAG (right) for group-housed and single-housed females. Open bars show data from females that did not engage in social interactions with novel females (baseline), and closed bars show data from females following social interactions with novel females (interaction). (G) Total time spent in resident-initiated interaction is plotted for 17 day single-housed (maroon) and re-group-housed females (teal) during same-sex interactions that occurred prior to isolation (day 0), following 3 days of isolation (day 3), and on the test day (day 17). (H) Same as (G), for total resident-initiated mounting time. (I) Same as (G), for total USVs. (J) Quantification of Fos-positive POA neurons is shown for 17 day single-housed females (maroon) and re-group-housed females (teal). All error bars show standard deviation.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94924/elife-94924-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative confocal images show Fos expression (green) in the VMH of a group-housed female (left) and a single-housed female (right) following same-sex social interactions. Blue, Neurotrace. (B) Same as (A), for the caudolateral PAG. (C) Left, the relationship between total time spent in resident-initiated social investigation and numbers of Fos-positive POA neurons is shown for group-housed (teal) and single-housed (maroon) female residents following interactions with novel females. Middle, same as left, for total resident-initiated mounting time vs. numbers of Fos-positive POA neurons. Data only shown for single-housed residents because group-housed residents did not mount female visitors. Right, same as left, for total USVs vs. numbers of Fos-positive POA neurons. (D) Left, the relationship between total time spent in resident-initiated social investigation and numbers of Fos-positive VMH neurons is shown for group-housed (teal) and single-housed (maroon) female residents following interactions with novel females. Middle, same as left, for total resident-initiated mounting time vs. numbers of Fos-positive VMH neurons. Right, same as left, for total USVs vs. numbers of Fos-positive VMH neurons. (E) Left, the relationship between total time spent in resident-initiated social investigation and numbers of Fos-positive caudolateral PAG neurons is shown for group-housed (teal) and single-housed (maroon) female residents following interactions with novel females. Middle, same as left, for total resident-initiated mounting time vs. numbers of Fos-positive PAG neurons. Right, same as left, for total USVs vs. numbers of Fos-positive PAG neurons.
 
 These analyses revealed that baseline levels of Fos expression within the POA and the VMH did not differ between group-housed and single-housed females (Figure 1F, left and middle, open bars; two-way ANOVA to analyze Fos expression within each brain region, factor 1=housing status, factor 2=social interaction, followed by post-hoc Tukey’s HSD tests). Following social interactions with novel female visitors, single-housed females exhibited robust increases in Fos expression within the POA (Figure 1F, left; p<0.001) but not within the VMH (Figure 1F, middle; p>0.05). In contrast, Fos expression within these two brain areas did not increase significantly in group-housed females that interacted with novel female visitors (Figure 1F; p>0.05 for both comparisons). Similar to the POA, baseline Fos expression within the PAG did not differ between group-housed and single-housed females (p>0.05), and only single-housed females displayed increased PAG Fos expression following social interactions with novel female visitors (Figure 1F, right; p<0.001), a finding that further supports the idea that single-housed females increase USV production during same-sex interactions. POA Fos expression was significantly and positively correlated with the total amount of time spent in resident-initiated investigation for both group-housed and single-housed females (Figure 1—figure supplement 1C; linear regression, p<0.05), as well as with the total time spent mounting by single-housed resident females (Figure 1—figure supplement 1C; p=0.01). In both group-housed and single-housed female residents, POA Fos expression tended to correlate positively with total USVs, but these relationships were not significant (Figure 1—figure supplement 1C; p=0.05 for group-housed and p=0.09 for single-housed; see Figure 1—figure supplement 1D, E also for relationships of VMH Fos and PAG Fos to vocal and non-vocal social behaviors). In summary, POA Fos expression increases selectively in single-housed females following same-sex social interactions, and levels of POA Fos expression are also well related to the production of specific types of social behaviors by both group-housed and single-housed females.
 
 To ask whether the effects of short-term isolation on female social behavior and POA Fos expression are long-lasting, we measured social behaviors of female residents at three timepoints: (1) on day 0, when female subjects were still group-housed; (2) on day 3, after female subjects had been single-housed for 3 days; and (3) on day 17, after half of the subject females had been re-group-housed with their same-sex siblings for two weeks and the other half of the subject females remained single-housed for an additional two weeks (Figure 1G–I). Brains of re-group-housed and 17 day single-housed subject females were collected 2 hr after the start of the day 17 social interaction, and Fos expression within the POA was examined (Figure 1J). Consistent with our earlier findings, rates of social investigation and USV production significantly increased following 3 days of social isolation (Figure 1G and I; p<0.05 for day 0 vs. day 3 in both groups for both behaviors). Following re-group-housing, time spent in social investigation and rates of USV production tended to decrease to pre-isolation levels (Figure 1G and I, top plots; p=0.08 for day 0 vs. day 17 investigation time and p=0.06 for day 0 vs. day 17 total USVs in re-group-housed females). In contrast, females that were single-housed for 17 days continued to spend increased time in social investigation (Figure 1G, bottom plot; p<0.05 for day 0 vs. day 3 investigation and for day 0 vs. day 17 investigation), and pairs containing 17-day single-housed residents continued to produce elevated rates of USVs (Figure 1I, bottom plot; p<0.05 for day 0 vs. day 3 USVs and for day 0 vs. day 17 USVs). Time spent mounting tended to follow the same trends as rates of social investigation and USV production in re-group-housed and 17-day single-housed females (Figure 1H). Along with the attenuation of female social behaviors following re-group-housing, we also found that POA Fos expression was significantly lower in re-group-housed females relative to 17 day single-housed females (Figure 1J; t-test, p<0.001). These findings support the idea that changes in female social behavior following short-term isolation are reversible and are accompanied by decreased POA Fos expression. Hereinafter, we refer to the population of POA neurons that increase Fos expression in single-housed females that have engaged in same-sex interactions as POAsocial neurons, and we next conducted experiments to test whether functional manipulations of POAsocial neuronal activity impact the effects of short-term isolation on female social behavior.
 
-## Chemogenetic inhibition of POAsocial neurons attenuates social investigation, mounting, and USV production in single-housed females
+### Chemogenetic inhibition of POAsocial neurons attenuates social investigation, mounting, and USV production in single-housed females
 
 If increased activity of POAsocial neurons promotes social behavior in single-housed females, one prediction is that reducing the activity of POAsocial neurons in single-housed females will attenuate the effects of isolation on female social behavior. To test this idea, we employed the TRAP2 activity-dependent labeling strategy to chemogenetically silence POAsocial neurons in single-housed females during social interactions with novel, group-housed female visitors (Figure 2A). Briefly, the POA of TRAP2 female mice was injected bilaterally with a virus driving the Cre-dependent expression of the inhibitory DREADDs receptor hM4Di. Three weeks later, females were single-housed for 3 days and then given a 30-min social encounter with a novel, group-housed female visitor in their home cage. Following the social interaction, resident females were given an I.P. injection of 4-hydroxytamoxifen (4-OHT), which drives the transient expression of Cre recombinase in recently active neurons and thereby enables the expression of hM4Di in POAsocial neurons. Subject females remained single-housed for an additional 24 hr and then were re-group-housed with siblings for 2 weeks. Subject females were then single-housed a second time for 3 days and subsequently given a 30-min same-sex interaction following I.P. injection of either saline (control) or clozapine-n-oxide (CNO) (saline and CNO tests were run 3 days apart, females remained single-housed during these 3 days, and the order was counterbalanced across experiments).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/94924/elife-94924-fig2-v1.jpg)
+
+**Figure 2.:** (A) Experimental timeline and viral strategy to chemogenetically inhibit the activity of POAsocial neurons in single-housed females. (B) Total time spent in resident-initiated social investigation is shown on saline and CNO days for 4 experimental groups: (red symbols) experimental females in which hM4Di is expressed in POAsocial neurons; (black symbols) control females in which GFP is expressed in POAsocial neurons; (brown symbols) control females in which hM4Di is expressed in ‘TRAPed’ AH neurons; (gray symbols) control females in which hM4Di is expressed in ‘TRAPed’ VMH neurons. (C) Same as (B), for proportion of trials with resident-initiated mounting. (D) Same as (B), for total USVs. (E) Total movement is plotted for females with hM4Di expressed in POAsocial neurons, on saline days vs. CNO days.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94924/elife-94924-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Time spent by POAsocial-hM4Di females engaged in social investigation during the TRAPing session is compared to the subsequent change in social investigation in the test sessions (CNO minus saline). (B) Same as (A), for time spent mounting. (C) Same as (A), for total USVs. (D) Experimental timeline and viral strategy to chemogenetically inhibit the activity of POA neurons TRAPed in single-housed females that were not given a social interaction. (E) Total time spent in resident-initiated social investigation is shown on saline and CNO days. (F) Same as (E), for proportion of trials with resident-initiated mounting. (G) Same as (E), for total USVs.
 
 Comparison of the social behaviors of single-housed females between CNO and saline sessions revealed that chemogenetic silencing of POAsocial neurons significantly reduced resident-initiated investigation (Figure 2B; n=17; red points; two-way ANOVA with repeated measures on one factor; p<0.01). Inhibition of POAsocial neurons also significantly reduced the proportion of females that exhibited mounting (Figure 2C; McNemar’s test for paired proportions; p=0.04 for POAsocial CNO vs. saline). Finally, inhibition of POAsocial neurons significantly reduced USV production (Figure 2D; two-way ANOVA with repeated measures on one factor; p<0.01). In contrast, CNO treatment did not affect the production of any of these social behaviors in single-housed females with GFP expressed in POAsocial neurons (Figure 2B–D; n=14; black points; p>0.05 for all CNO vs. saline comparisons in the POAsocial-GFP control group). To investigate the specificity of these effects to chemogenetic silencing of POAsocial neurons, we also performed control experiments in which activity-dependent chemogenetic silencing in single-housed females was performed caudal to the POA within the anterior hypothalamus (AH; Figure 2B–D; n=12; brown points) or within the VMH (Figure 2B–D; n=5; gray points). No significant effects of CNO treatment on resident-initiated investigation, mounting, or total USVs were observed in these control groups (Figure 2C and D; p>0.05 for all). The effect of chemogenetic inhibition of POAsocial neurons to decrease female social behavior also cannot be attributed to an overall decrease in movement (Figure 2E; paired t-test; p>0.5 for difference in movement between saline and CNO sessions; see Materials and methods).
 
 We next asked whether the magnitude of the effects of chemogenetic silencing of POAsocial neurons on different female social behaviors was related to the rates at which these behaviors were produced during TRAPing sessions that immediately preceded 4-OHT treatment. To this end, we compared total resident-initiated investigation, total resident-initiated mounting, and total USVs produced during TRAPing sessions to changes in these behaviors for each female following chemogenetic silencing of POAsocial neurons (calculated as [CNO behavior – saline behavior]). These comparisons revealed no significant relationships (Figure 2—figure supplement 1A–C; linear regression; p>0.05 for all). Although we designed our experiments to TRAP and subsequently manipulate the activity of POA neurons that upregulated Fos expression following the production of social behaviors in single-housed females, one possibility is that our strategy inadvertently led to the labeling of POA neurons that upregulate Fos in a manner that reflects the experience of social isolation per se. To test this idea, we performed chemogenetic silencing of POA neurons in females that were single-housed but were not given a social interaction prior to 4-OHT treatment (n=5 non-social controls; Figure 2—figure supplement 1D). In these control single-housed females, CNO treatment had no effect on social investigation, mounting, or USV production during same-sex interactions (Figure 2—figure supplement 1E–G; p>0.05). In summary, we demonstrate that chemogenetic silencing of POAsocial neurons reduces social investigation, mounting, and USV production in single-housed female mice, and that these effects in turn require the production of social behaviors during the TRAPing sessions that precede 4-OHT treatment.
 
-## Ablation of POAsocial neurons attenuates mounting in single-housed females
+### Ablation of POAsocial neurons attenuates mounting in single-housed females
 
 In previous work investigating the role of the POA in regulating rodent social behaviors, studies have reported different effects on behaviors according to whether they employed reversible or irreversible neuronal silencing strategies. Studies that used chemogenetic or optogenetic methods to reversibly silence genetically-defined subsets of POA neurons report decreases in both USV production in males (Chen et al., 2021; Karigo et al., 2021) and mounting in males and females during interactions with female social partners (Gao et al., 2019; Karigo et al., 2021). In contrast, studies employing caspase-mediated ablation of genetically-defined subsets of POA neurons (Gao et al., 2019; Wei et al., 2018) or electrolytic lesions of the POA (Bean et al., 1981) report decreased mounting but no effects on rates of USV production. To test whether permanent ablation of POAsocial neurons attenuates social behaviors in single-housed females in a manner similar to the effects of chemogenetic inhibition, we used the TRAP2 activity-dependent labeling strategy to express caspase in and to thereby ablate POAsocial neurons (Figure 3A; see Materials and methods). Vocal and non-vocal social behaviors of resident females were compared pre- and post-ablation, and the same measurements were made in control females expressing GFP in POAsocial neurons.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/94924/elife-94924-fig3-v1.jpg)
+
+**Figure 3.:** (A) Experimental timeline and viral strategy for caspase-mediated ablation of POAsocial neurons in single-housed females. (B) Total time spent in resident-initiated social investigation is shown pre- and post-4-OHT treatment for 2 experimental groups: (red symbols) experimental females in which caspase is expressed in POAsocial neurons; (black symbols) control females in which GFP is expressed in POAsocial neurons. (C) Same as (B), for proportion of trials with resident-initiated mounting. (D) Same as (B), for total USVs.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94924/elife-94924-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Time spent in resident-initiated investigation is shown pre- vs. post-4-OHT treatment for TRAP2 heterozygous POAsocial-caspase females (TRAP2;Ai14, red symbols, n=11) and TRAP2 homozygous POAsocial-caspase females (orange symbols, n=9). (B) Same as (A), for proportion of trials with resident-initiated mounting. (C) Same as (A), for total USVs. (D) Counts of Fos-positive POA neurons are shown for TRAP2 homozygous POAsocial-caspase females following a same-sex social interaction (orange bar, n=5), control group-housed females with no social interaction (teal open, n=8), control group-housed females following a same-sex social interaction (teal filled, n=12), control single-housed females with no social interaction (maroon open, n=8), and control single-housed females following a same-sex social interaction (maroon filled, n=13). Control female groups are the same as those plotted in Figure 1F. Error bars show standard deviation. (E) The relationship between total time spent in resident-initiated social investigation and numbers of Fos-positive POA neurons is shown for TRAP2 homozygous POAsocial-caspase females. (F) Same as (E), for the relationship between total USVs and Fos-positive POA neurons.
 
 Similar to the effects of chemogenetically inactivating POAsocial neurons, ablation of POAsocial neurons significantly reduced mounting in single-housed females (Figure 3C; McNemar’s test for paired proportions; p=0.03 for proportion of trials with mounting on pre-4-OHT vs. post-4-OHT tests in POAsocial-caspase females; p>0.05 for pre-4-OHT vs. post-4-OHT in POAsocial-GFP females). In contrast to the effects of chemogenetic inhibition of POAsocial neurons, we found that caspase-mediated ablation of POAsocial neurons did not affect rates of social investigation in single-housed females, although both experimental and control females spent more time investigating visitors in the post-4-OHT session (Figure 3B; two-way ANOVA with repeated measures on one factor; p>0.05 for main effect of group, p<0.01 for main effect of time, p>0.05 for interaction effect). Ablation of POAsocial neurons also failed to reduce USV production in pairs containing single-housed females (Figure 3D; two-way ANOVA with repeated measures on one factor; p>0.05 for pre-4-OHT vs. post-4-OHT total USVs in POAsocial-caspase females). Together with our chemogenetic inhibition data, these results show that both reversible inhibition or irreversible ablation of POAsocial neurons in single-housed female mice reduces mounting, whereas only chemogenetic inhibition of POAsocial neurons attenuates the effects of short-term isolation on female social investigation and USV production.
 
@@ -57,13 +81,13 @@ One possibility is that a difference in the efficacy of the strategies used to i
 
 To ensure that ablation of POAsocial neurons in TRAP2 homozygous females was effective in eliminating POA neurons that would normally upregulate Fos following same-sex interactions in single-housed females, we compared counts of Fos-positive POA neurons in a subset of TRAP2 homozygous POAsocial-caspase females to those recorded in control group-housed and single-housed females that either did or did not engage in same-sex interactions (Figure 3—figure supplement 1D; control female Fos data are the same as those plotted in Figure 1F). This analysis revealed that ablation of POAsocial neurons reduced Fos expression in the POA below the levels normally seen in either group-housed or single-housed females following same-sex interactions, down to levels observed in group-housed and single-housed females that were not given social interactions (Figure 3—figure supplement 1D; p<0.05 for POAsocial-caspase vs. group-housed and single-housed social interaction control groups; p>0.05 for POAsocial-caspase vs. group-housed and single-housed baseline control groups). Moreover, the remaining POA Fos expression in TRAP2 homozygous POAsocial-caspase females was not significantly related to either rates of social investigation or to USV production (Figure 3—figure supplement 1E, F; linear regression; p>0.05 for both; compare to relationships between POA Fos and behavior in Figure 1—figure supplement 1). Taken together, these findings show that ablation of POAsocial neurons in TRAP2 homozygous females is more effective at attenuating single-housed female social behaviors than ablation in TRAP2 heterozygotes. However, in spite of a robust reduction in social behavior-driven POA Fos expression, the effects of irreversible ablation of POAsocial neurons on female social behavior differ from those of chemogenetic inhibition.
 
-## Optogenetic activation of POAsocial neurons elicits USV production and promotes social investigation
+### Optogenetic activation of POAsocial neurons elicits USV production and promotes social investigation
 
 To understand whether artificial activation of POAsocial neurons can recapitulate the effects of short-term isolation on female social behavior, we assessed the effects of optogenetic activation of POAsocial neurons on the social behaviors of group-housed females. The TRAP2 strategy was used to express either channelrhodopsin (ChR2) or GFP in POAsocial neurons (Figure 4A; see Materials and methods), and females were re-group-housed for two weeks before beginning optogenetic activation experiments. The effects of optogenetically activating POAsocial neurons were first assessed for each subject female in a 5-min solo session, in which the female was tested alone in a behavior chamber while pulses of blue light were delivered unilaterally to the POA (473 nm, 10 mW, 20–50 Hz, 10–20ms pulses, 5–10 s train durations). The effects of optogenetically activating POAsocial neurons were then assessed for each subject female in a 20-min social session, in which a novel, group-housed female visitor was added to the behavior chamber. The pair was allowed to interact in the absence of optogenetic stimulation for the first and last 5 min of the social session, and pulses of blue light were delivered to the POA of the subject female throughout the middle 10 min of the session (Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/94924/elife-94924-fig4-v1.jpg)
 
-**Figure 4.:** social neurons on the behaviors of group-housed female mice.(A) Experimental timeline and viral strategy to optogenetically activate POAsocial neurons in group-housed females. (B) Mean total USVs produced during solo sessions shown for pre-laser periods and during laser stimulation periods for experimental females with ChR2 expressed in POAsocial neurons (red symbols; n=9) and for control females with GFP expressed in POAsocial neurons (black symbols, n=6). (C) Same as (B), for social sessions. (D) Spectrograms are shown from a representative POAsocial-ChR2 female to illustrate USVs that were elicited through optogenetic activation of POAsocial neurons in a solo session (top) and a social session (bottom). Blue bars indicate timing of laser stimulation. (E) Percentage of laser stimulations followed by a bout of social investigation, plotted for POAsocial-ChR2 and POAsocial-GFP females. Error bars show standard deviation. (F) Probability of social investigation aligned with onset of laser stimulation is plotted over time for POAsocial-ChR2 and POAsocial-GFP females. Error bars show standard error. (G) Mean duration of social investigation bouts that overlapped with laser stimulation vs. bouts that did not overlap with laser stimulation is shown for POAsocial-ChR2 and POAsocial-GFP females.
+**Figure 4.:** (A) Experimental timeline and viral strategy to optogenetically activate POAsocial neurons in group-housed females. (B) Mean total USVs produced during solo sessions shown for pre-laser periods and during laser stimulation periods for experimental females with ChR2 expressed in POAsocial neurons (red symbols; n=9) and for control females with GFP expressed in POAsocial neurons (black symbols, n=6). (C) Same as (B), for social sessions. (D) Spectrograms are shown from a representative POAsocial-ChR2 female to illustrate USVs that were elicited through optogenetic activation of POAsocial neurons in a solo session (top) and a social session (bottom). Blue bars indicate timing of laser stimulation. (E) Percentage of laser stimulations followed by a bout of social investigation, plotted for POAsocial-ChR2 and POAsocial-GFP females. Error bars show standard deviation. (F) Probability of social investigation aligned with onset of laser stimulation is plotted over time for POAsocial-ChR2 and POAsocial-GFP females. Error bars show standard error. (G) Mean duration of social investigation bouts that overlapped with laser stimulation vs. bouts that did not overlap with laser stimulation is shown for POAsocial-ChR2 and POAsocial-GFP females.
 
 When POAsocial-ChR2 females were tested alone, we found that optogenetic activation of POAsocial neurons elicited weak-to-moderate USV production in 4 of 9 females, but the comparison of USV rates from pre-laser baseline to the laser stimulation period was not significant at the level of the entire group (Figure 4B; Mann Whitney U test performed on the difference in USV rates (laser - pre-laser), p=0.09). In POAsocial-GFP control females, laser stimulation failed to elicit USV production (0±0 USVs elicited in n=6 POAsocial-GFP controls). Interestingly, we found that when laser stimulation was applied during social sessions, optogenetic activation of POAsocial neurons more readily elicited USV production than in solo sessions (Figure 4C; USVs elicited by blue laser stimulation in 8 of 9 POAsocial-ChR2 females; Mann Whitney U test performed on the difference in USV rates (laser - pre-laser), p=0.006). Moreover, optogenetic activation elicited higher rates of USVs when applied at times when subject females were in close proximity to visitor females (within 2 mouse body lengths) as compared to times when the females were farther apart (mean increase in USV rates from pre-laser to laser period was 2.96±2.32 USVs/s for ‘near’ stimulations, 1.84±1.75 USVs/s for ‘far’ stimulations; paired t-test performed on the difference in USV rates (laser - pre-laser) for ‘far’ vs. ‘near’ stimulations; p=0.02). In summary, optogenetic activation of POAsocial neurons elicits USV production in group-housed females, and the efficacy of this effect is modulated by social context and proximity to a social partner.
 
@@ -71,7 +95,7 @@ We next considered whether optogenetic activation of POAsocial neurons modulates
 
 In contrast to the effects on USV production and social investigation, optogenetic activation of POAsocial neurons only infrequently elicited mounting (activation elicited 1 bout of mounting in n=1 POAsocial-ChR2 female and 0 bouts of mounting in the remaining n=8 POAsocial-ChR2 females). In summary, optogenetic activation of POAsocial neurons partially mimics the effects of short-term social isolation on female behavior by promoting USV production and social investigation during same-sex interactions.
 
-## Experiments to test whether POA neurons regulate social behaviors during same-sex interactions in group-housed females
+### Experiments to test whether POA neurons regulate social behaviors during same-sex interactions in group-housed females
 
 Given our findings that POAsocial neurons promote social behaviors in single-housed females during same-sex interactions, we wondered whether a similar population of POA neurons regulates the social behaviors of group-housed females during same-sex interactions. This idea is supported by our earlier finding that Fos expression in the POA of group-housed females is significantly related to rates of resident-initiated social investigation (Figure 1—figure supplement 1; p=0.01) and tends to be related to rates of USV production (Figure 1—figure supplement 1; p=0.05) during same-sex interactions including two group-housed females.
 
@@ -83,17 +107,25 @@ To further test this idea, we performed two experiments to manipulate the activi
 
 Because group-housed females spend a relatively small amount of time engaged in social investigation, do not exhibit mounting, and produce low rates of USVs relative to single-housed females (Figure 1B–D), one important caveat to these experiments is that TRAP2-based activity-dependent labeling may not work efficaciously in mice that produce low rates of social behaviors. That is to say that although POA neurons may regulate social behaviors in group-housed females, these POA neurons may not strongly upregulate Fos following group-housed social interactions (see Figure 1F). To test whether the POA regulates the social behaviors of group-housed females using a non-activity-dependent viral strategy, we injected a non-Cre-dependent inhibitory DREAADs virus (AAV-hSyn-hM4Di) into the POA of group-housed B6 female mice (Figure 5I). Three weeks later, the effects of CNO treatment on social behavior during same-sex interactions were tested. We found no effects of CNO treatment on resident-initiated social investigation in group-housed females (Figure 5J; p>0.05), and as expected, none of the group-housed females exhibited mounting in either saline or CNO sessions (Figure 5K). Notably, we found that although rates of USV production were quite low, chemogenetic inhibition of POA neurons significantly reduced total USVs produced during same-sex interactions between group-housed females (Figure 5L; paired t-test, p=0.048). Following these tests, female subjects were single-housed for 3 days and then tested a second time. Consistent with our previous experiments, single-housing dramatically elevated rates of female social investigation, mounting, and USV production (compare saline day panels in Figure 5J–L vs. Figure 5M–O). We found that chemogenetic inactivation of POA neurons in single-housed females dramatically reduced all three behaviors (Figure 5M–O; paired t-tests, p<0.05 for all behaviors). These additional experiments reinforce our TRAP2-based findings that the POA regulates the social behaviors of single-housed female mice. These experiments also suggest that the POA may regulate the social behaviors of group-housed females, but that any effects may be more challenging to detect given the low rates of social behaviors produced by group-housed females during same-sex interactions.
 
-## Characterization of female POAsocial neuron molecular markers and axonal projections
+### Characterization of female POAsocial neuron molecular markers and axonal projections
 
 Previous studies have found that USV production can be elicited in female and male mice by artificial activation of VGAT+ POA neurons (Gao et al., 2019), Esr1+ POA neurons (which are predominantly VGAT+; Chen et al., 2021; Michael et al., 2020), as well as POA neurons that send axonal projections to the caudolateral PAG (which are predominantly VGAT+; Chen et al., 2021; Michael et al., 2020). To ask to what extent POAsocial neurons overlap with these previously described populations, we first evaluated the neurotransmitter phenotype of POAsocial neurons by performing two-color in situ hybridization for c-fos mRNA and vesicular GABA transporter (VGAT) mRNA and calculating the percentage of Fos+ POA neurons that co-expressed VGAT. This analysis revealed that a majority of POAsocial neurons are GABAergic (Figure 6A and B; n=4, 76 ± 8.8%). We next used the TRAP2 activity-dependent labeling strategy to express GFP in POAsocial neurons and found GFP-positive axons within the caudolateral PAG, indicating that at least some POAsocial neurons send axonal projections to the PAG (Figure 6C and D; see Materials and methods). Finally, we combined retrograde tracing from the caudolateral PAG with Fos immunostaining to quantify the percentage of PAG-projecting POA neurons that increase Fos expression in single-housed females following same-sex interactions. This experiment revealed that around 20% of PAG-projecting POA neurons express Fos in single-housed females following same-sex interactions (Figure 6E–G; n=4 females, percentage of tdTomato neurons that are Fos-positive=18.3 ± 2.9%). These findings suggest that a subset of POAsocial neurons overlap with GABAergic, PAG-projecting POA neurons that have been demonstrated in previous work to promote USVs via disinhibition of excitatory PAG neurons important to USV production, although only ~20% of PAG-projecting POA neurons upregulate Fos in association with female USV production (Chen et al., 2021; Michael et al., 2020).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/94924/elife-94924-fig6-v1.jpg)
 
-**Figure 6.:** social neurons.(A) Representative confocal images of in situ hybridization performed on brain sections containing the POA, showing overlap of expression of Fos (green) and VGAT (magenta). Blue, DAPI. (B) Quantification of proportion of Fos-positive POA neurons that expressed VGAT. (C) Experimental timeline and viral strategy to express GFP in POAsocial neurons. (D) Confocal images showing GFP-labeled axons of POAsocial neurons within the caudolateral PAG. Blue, Neurotrace. (E) Experimental timeline and viral strategy to retrogradely label PAG-projecting POA neurons with tdTomato. (F) Confocal image showing tdTomato labeling in a coronal section containing the POA, and dotted circles in insets indicate examples of double-labeled neurons. Neurotrace, blue. (G) Quantification of proportion of tdTomato-expressing POA neurons that are also Fos-positive. All error bars show standard deviation.
+**Figure 6.:** (A) Representative confocal images of in situ hybridization performed on brain sections containing the POA, showing overlap of expression of Fos (green) and VGAT (magenta). Blue, DAPI. (B) Quantification of proportion of Fos-positive POA neurons that expressed VGAT. (C) Experimental timeline and viral strategy to express GFP in POAsocial neurons. (D) Confocal images showing GFP-labeled axons of POAsocial neurons within the caudolateral PAG. Blue, Neurotrace. (E) Experimental timeline and viral strategy to retrogradely label PAG-projecting POA neurons with tdTomato. (F) Confocal image showing tdTomato labeling in a coronal section containing the POA, and dotted circles in insets indicate examples of double-labeled neurons. Neurotrace, blue. (G) Quantification of proportion of tdTomato-expressing POA neurons that are also Fos-positive. All error bars show standard deviation.
 
-## POA neurons increase their activity in single-housed male mice following opposite-sex but not same-sex social interactions
+### POA neurons increase their activity in single-housed male mice following opposite-sex but not same-sex social interactions
 
 Given our findings that POAsocial neurons contribute to isolation-induced changes in the social behaviors of female mice, we next wondered whether a similar population of POA neurons contributes to isolation-induced changes in social behavior in male mice. To address this question, we measured the vocal and non-vocal social behaviors of sexually naive males, which were either group-housed with same-sex siblings or single-housed for 3 days and then given a 30-min social interaction with a novel, group-housed visitor. To consider the effects of isolation on male social behavior in different social contexts, males were given either a social encounter with a same-sex visitor (MM context) or with an opposite-sex visitor (MF context). Following these social interaction tests, we collected the brains of the subject males and performed immunostaining to measure Fos expression within the POA. With respect to resident-initiated investigation, we found significant main effects of both housing and social context: single-housed males spent more time investigating visitors than group-housed males, and males spent more time investigating female visitors than male visitors (Figure 7A; two-way ANOVA, p=0.02 for main effect of housing; p<0.001 for main effect of social context; p>0.05 for interaction effect). With respect to mounting, we found that single-housed males were more likely than group-housed males to mount female visitors, but the proportion of trials with mounting did not differ for single-housed males vs. group-housed males during male-male interactions (Figure 7B; z-tests for independent proportions; p=0.046 for group-housed vs. single-housed with female visitor, p>0.05 for group-housed vs. single-housed with male visitor). Similarly, there was a context-dependent effect of social isolation on male USV production, whereby only single-housed males that interacted with female visitors exhibited increased USV production relative to group-housed males (Figure 7C; two-way ANOVA with post-hoc Tukey’s HSD tests; p<0.001 for total USVs in single-housed MF vs. group-housed MF trials; p>0.05 for total USVs in single-housed MM vs. group-housed MM trials). The finding that short-term isolation exerts larger effects on male social behavior during subsequent opposite-sex interactions relative to same-sex interactions is consistent with prior work (Zhao et al., 2021). When we examined POA Fos expression in these four groups of males, we found that POA Fos was significantly elevated in single-housed males following interactions with females relative to the other three groups (Figure 7D; two-way ANOVA, Tukey’s post-hoc HSD tests; p<0.05 for difference in POA Fos between single-housed MF and all other groups). In summary, the effects of short-term isolation on male social behavior are social context-dependent, and increased Fos expression within the POA is seen in single-housed males following interactions with females, a social context marked by increased male social investigation, mounting, and USV production.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/94924/elife-94924-fig7-v1.jpg)
+
+**Figure 7.:** (A) Total time spent in resident-initiated social investigation is shown for group-housed male residents (teal) and single-housed male residents (maroon) during interactions with either female visitors (left) or male visitors (right). (B) Same as (A), for proportion of trials with resident-initiated mounting. (C) Same as (A), for total USVs recorded from pairs containing group-housed or single-housed male residents. (D) Total number of Fos-positive POA neurons is shown for group-housed male residents (teal) and single-housed male residents (maroon) following interactions with female visitors (left) or male visitors (right). (E) Experimental timeline and viral strategy to chemogenetically inhibit the activity of POAsocial neurons in single-housed males. (F) Total time spent in resident-initiated social investigation is shown on saline and CNO days for experimental males in which hM4Di is expressed in POAsocial neurons (red symbols, n=10) and control males in which GFP is expressed in POAsocial neurons (black symbols, n=10). (G) Same as (F), for proportion of trials with resident-initiated mounting. (H) Same as (F), for total USVs. All error bars show standard deviation.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/94924/elife-94924-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Total time spent in resident-initiated social investigation during 30-min TRAPing session interactions with novel females is shown for male (red, n=9) and female (black, n=16) POAsocial-hM4Di mice. (B) Same as (A), for time spent in resident-initiated mounting. (C) Same as (A), for total USVs. Please note that n=2 POAsocial-hM4Di males and n=1 POAsocial-hM4Di female were excluded because their TRAPing session videos were not saved due to experimenter error. All error bars show standard deviation.
 
 To test whether neural activity in male POAsocial neurons contributes to isolation-induced changes in male social behavior, we used the TRAP2 strategy to chemogenetically silence POAsocial neurons in single-housed males during social interactions with novel, group-housed females (see Materials and methods). The vocal and non-vocal behaviors of single-housed subject males were measured and compared during 30-min social interactions following I.P. injection of either saline or CNO. Control males were treated identically but were injected with a virus to drive expression of GFP in POAsocial neurons. As in females, chemogenetic inhibition of male POAsocial neurons significantly reduced the proportion of trials with mounting (Figure 7G; z-test for difference between proportions; p=0.04 for proportion of trials with mounting on CNO vs. saline days in POAsocial-hM4Di males; p>0.05 for proportion of trials with mounting on CNO vs. saline days in POAsocial-GFP males). In contrast to our findings in females, chemogenetic inhibition of male POAsocial neurons did not alter rates of resident-initiated social investigation (Figure 7F; two-way ANOVA with repeated measures on one factor; p<0.001 for main effect of group; p>0.05 for main effect of drug and for interaction effect) and also did not affect total USVs (Figure 7H; two-way ANOVA with repeated measures on one factor; p>0.05 for main effects and interaction effect). Although we are uncertain of the reason for the unexpected difference in social investigation times between POAsocial-hM4Di and POAsocial-GFP males, we note that these cohorts of mice were tested at different times and thus interacted with different groups of female visitors, which may have in turn contributed to different rates of social investigation between experimental and control males.
 
@@ -115,82 +147,253 @@ The current study adds to an emerging body of literature implicating the POA in 
 
 ## Materials and methods
 
-## Lead contact
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>TRAP2 Fostm2.1(icre/ERT2)Luo/J</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:030323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Ai14 B6.CgGt(ROSA)26Sortm14(CAG-tdTomato)Hze/J</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>C57BL/6 J</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>c-Fos (9F6) Rabbit mAb(rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2247211CAT#:2250S</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat-anti-rabbit(goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_143165CAT#:A-11008</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2/1-hSyn-FLEX-hM4Di-mCherry</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_44262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2/1-Ef1alpha-hChR2(h134R)-EYFP-WPRE-HGHpA</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_20298</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAVrg-pgk-Cre</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_24593</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV2/5-flex-taCasp3-TEVp</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_45580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV2/5-hSyn-hM4Di-mCherry</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_50475</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2/1-pCAG-FLEX-EGFP-WPRE</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_51502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HCR v3.0</td>
+      <td>Molecular Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine N-oxide dihydrochloride</td>
+      <td>Hello Bio</td>
+      <td>CAT#:HB6149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Hydroxytamoxifen</td>
+      <td>Hello Bio</td>
+      <td>CAT#:HB6040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spike2</td>
+      <td>CED</td>
+      <td>RRID:SCR_000903</td>
+      <td>http://ced.co.uk</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td>https://imagej.net/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Behavioral Observation Research Interactive Software (v. 8.13)</td>
+      <td>Open Behavior</td>
+      <td>RRID:SCR_021509</td>
+      <td>https://github.com/olivierfriard/BORIS</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Project for Statistical Computing</td>
+      <td>R Core Team</td>
+      <td>RRID:SCR_001905</td>
+      <td>http://www.r-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Studio</td>
+      <td>Posit</td>
+      <td>RRID:SCR_000432</td>
+      <td>https://posit.co/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Neurotrace 435/455 Blue</td>
+      <td>Thermo Fischer Scientific</td>
+      <td>CAT#:N21479</td>
+      <td>1:500</td>
+    </tr>
+  </tbody>
+</table>
+
+### Lead contact
 
 Further information and requests for resources should be directed to and will be fulfilled by the lead contact, Katherine Tschida (kat227@cornell.edu).
 
-## Experimental models and subject details
+### Experimental models and subject details
 
-## Animal statement
+#### Animal statement
 
 All experiments and procedures were conducted according to protocols approved by the Cornell University Institutional Animal Care and Use Committee (protocol #2020–001).
 
-## Animals
+#### Animals
 
 TRAP2 (Jackson Laboratories, 030323), Ai14 (Jackson Laboratories, 007914), TRAP2;Ai14, and C57Bl/6 J (Jackson Laboratories, 000664) mice were at least 8 weeks old at the time of the experiments or surgeries. TRAP2;Ai14 mice were generated by crossing TRAP2 with Ai14. All mice were kept on a 12:12 reversed light/dark cycle, were housed in ventilated micro-isolator cages in a controlled environment with regulated temperature and humidity and were provided with unrestricted access to food and water. A running wheel (Innovive) was present in all home cages from the time of weaning and was subsequently removed immediately before initiating the social interaction test. Mouse cages were cleaned weekly, and experiments were never conducted on cage change days.
 
 TRAP2 female and male subjects were used in all experiments, with the exception of n=11 TRAP2;Ai14 females subjects used in the neuronal ablation experiments (Figure 3, Figure 3—figure supplement 1), n=4 Ai14 females used in anatomical experiments to examine overlap between PAG-projecting POA neurons and POA neurons that upregulate Fos following same-sex interactions in single-housed females (Figure 6), and n=7 B6 females used for non-Cre-dependent chemogenetic silencing of POA (Figure 5I–O).
 
-## Methods details
+### Methods details
 
-## Social isolation and social interaction tests
+#### Social isolation and social interaction tests
 
 Female and male subject mice were either group-housed with same-sex siblings or separated from their cage mates and individually housed in clean cages for 3 days prior to behavioral tests. In the case of group-housed subject mice, siblings were temporarily removed from the home cage for the duration of the test. The subject animal’s home cage was then placed in a sound-attenuating recording chamber (Med Associates) equipped with an ultrasonic microphone (Avisoft), an infrared light source (Tendelux), and a webcam (Logitech, with the infrared filter removed to enable video recording under infrared lighting conditions). A novel, group-housed visitor mouse (female or male mouse on a C57BL/6 background) was placed in the home cage of the subject mouse, and vocal and non-vocal behaviors were recorded for 30 min. Visitor mice were used across multiple experiments (<6 in total), including in interactions with both group-housed and single-housed subject mice. Visitor females used in male-female interactions were never used for female-female experiments, but a subset of visitors used in female-female interactions were subsequently used in male-female experiments.
 
 A separate cohort of female mice was used to investigate the effects on social behavior of re-group-housing following a period of social isolation. For this cohort of mice, social interaction tests with novel, group-housed female visitors were conducted at three timepoints: (1) on day 0, when subject females were still group-housed; (2) On day 3, after being single-housed for 3 days; (3) on day 17, after a randomly selected subset of subject females were re-group-housed with their siblings for 2 weeks, and the remaining female subjects remained single-housed for 2 weeks.
 
-## USV recording and detection
+#### USV recording and detection
 
 USVs were recorded with an ultrasonic microphone (Avisoft, CMPA/CM16), amplified (Presonus TubePreV2), and digitized at 250 kHz (Avisoft UltrasoundGate 166 H or CED Power 1401). USVs were detected with custom MATLAB codes (Tschida et al., 2019) using the following parameters (mean frequency >45 kHz; spectral purity >0.3; spectral discontinuity <1.00; minimum USV duration = 5ms; minimum inter-syllable interval = 30ms).
 
-## Analyses of non-vocal social behaviors
+#### Analyses of non-vocal social behaviors
 
 Trained observers used BORIS software (v.8.13) to score the following non-vocal behaviors: resident-initiated social investigation and resident-initiated mounting. Social investigation included sniffing and following. Resident-initiated mounting of the visitor typically occurred following a period of resident-initiated social investigation, with the resident mouse positioning its forelimbs on top of the body of the visitor, sometimes with pelvic thrusts and sometimes without. Neither visitor-initiated mounting nor fighting were observed in our dataset.
 
 In some trials, total movement was estimated using a custom MATLAB code that allows the user to mark the position of a mouse in every 30th frame (i.e.,once per second). Total movement was then calculated as the sum of changes in position across pairs of marked frames.
 
-## Fos immunohistochemistry
+#### Fos immunohistochemistry
 
 Two hours following the start of the social interaction test (or from the start of the solo behavior session for the no-interaction, baseline groups of mice), mice were deeply anesthetized using isoflurane and then transcardially perfused with phosphate-buffered saline (PBS, pH 7.4), followed by 4% paraformaldehyde (PFA; Sigma-Aldrich, in 0.1 M PBS, pH 7.4). Brains were subsequently dissected and post-fixed in 4% PFA for 24 hr at 4 °C, followed by immersion in 30% sucrose solution in PBS for 48 hr at 4 °C. Afterward, brains were embedded in frozen section embedding medium (Surgipath, VWR), flash frozen in a dry ice-ethanol (100%) bath, and then stored at –80 °C until sectioning. Sections were cut on a cryostat (Leica CM1950) to a thickness of 80 μm, washed in PBS (3x5 min at RT), permeabilized for 2–3 hr in PBS containing 1% Triton X-100 (PBST), and then blocked in 0.3% PBST containing 10% Blocking One (Nacalai USA) for 1 hr at RT on a shaker. Sections were then incubated for 24 hr at 4 °C with primary antibody in blocking solution (1:1000 rabbit-anti-Fos, Cell Signaling Technologies, 2250 S), washed 3x30 min in 0.3% PBST, then incubated for 24 hr at 4 °C with secondary antibody in blocking solution (1:1000, Alexa Fluor 488 goat-anti-rabbit, Invitrogen, plus 1:500 NeuroTrace, Invitrogen) Finally, sections were washed for 2x10 min in 0.3% PBST, followed by washing for 2x10 min in PBS. After mounting on slides, sections were dried and coverslipped with Fluromount G (Southern Biotech). Slides were imaged with a 10 x objective on a Zeiss 900 laser scanning confocal microscope, and Fos-positive neurons within regions of interest were counted manually by trained observers.
 
-## Floating section two-color in situ hybridization
+#### Floating section two-color in situ hybridization
 
 In situ hybridization was conducted using hybridization chain reaction (HCR v3.0, Molecular Instruments). Ten minutes after the completion of the 30-min social interaction tests, mice underwent transcardial perfusion with RNase-free PBS (DEPC-treated), followed by 4% PFA. Dissected brain samples were post-fixed overnight in 4% PFA at 4 °C, cryoprotected in a 30% sucrose solution in DEPC-PBS at 4 °C for 48 hr, flash frozen in section embedding medium, and stored at –80 °C until sectioning. 40-μm-thick coronal floating sections were collected into sterile 24-well plates in DEPC-PBS. These sections were briefly fixed once again for 5 min in 4% PFA and subsequently immersed in 70% EtOH in DEPC-PBS overnight. Sections were then rinsed in DEPC-PBS, incubated for 45 min in 5% SDS in DEPC-PBS, followed by a series of rinses and incubations: 2 x SSCT, pre-incubation in HCR hybridization buffer at 37 °C, and incubation in HCR hybridization buffer containing RNA probes (VGAT and Fos) overnight at 37 °C. Sections were then rinsed 4x15 min at 37 °C in HCR probe wash buffer, rinsed in 2 X SSCT, pre-incubated in HCR amplification buffer, and then incubated in HCR amplification buffer containing HCR amplifiers at RT for approximately 48 hr. On the final day, sections were rinsed in 2 x SSCT, counterstained with DAPI (Thermo Fisher, 1:5000), rinsed again with 2 x SSCT, mounted on slides, and coverslipped with Fluoromount-G (Southern Biotech). After drying, slides were imaged with a 10 x or 20 x objective on a Zeiss 900 laser scanning microscope. Neurons were scored from three sections of tissue from the POA from each mouse, and the absence of presence of staining for different probes was quantified manually by trained scorers.
 
-## Viruses
+#### Viruses
 
 The following viruses and injection volumes were used: AAV2/1-hSyn-FLEX-hM4Di-mCherry (Addgene #44262, 200 nL), AAV2/1-CAG-FLEX-EGFP-WPRE (Addgene #51502, 200 nL), AAV2/5-Ef1alpha-FLEX-taCasp3-TEVp (Addgene #45580, 200 nL), AAV2/1-Ef1alpha-hChR2(h134R)-EYFP-WPRE-HGHpA (Addgene #20298, 200 nL), AAVrg-pgk-Cre (Addgene #24593, 200 nL), and AAV2/5-hSyn-hM4Di-mCherry (Addgene #50475, 200 nL). The final injection coordinates were as follows: POA, AP = –0.1 mm, ML = 0.6 mm, DV = 5.1 mm; AH, AP = –0.7 mm, ML = 0.6 mm, DV = 5.1 mm; VMH, AP = –1.5 mm, ML = 0.7 mm, DV = 5.4 mm; PAG, AP = –4.7 mm, ML = 0.6 mm, DV = 1.75 mm. Viruses were pressure-injected using a pulled glass pipettes mounted in a programmable nanoliter injector (Nanoject III, Drummond) at a rate of 15 nL every 60 s.
 
-## Stereotaxic surgery
+#### Stereotaxic surgery
 
 Mice were anesthetized using isoflurane (2.5% for induction, then 1.5–2.5% for maintenance) and then securely positioned in a stereotaxic apparatus (Angle Two, Leica). A midline incision in the scalp was made to expose the skull, and small craniotomies were created dorsal to each injection site using a surgical drill. Viral injection pipettes were left in place for a minimum of 10 min before and after viral injections to minimize backflow upon pipette withdrawal from the brain. Surgical sutures (LOOK 774B, Fisher Scientific) and tissue adhesive (3 M) were used to close the incision.
 
 For optogenetic activation experiments, an optogenetic ferrule (RWD Fiber Optic Cannula, Ø1.25 mm Ceramic Ferrule, 200 µm Core, 0.22 NA, L=7 mm) was implanted approximately 250 µm above the viral injection site immediately following the viral injection and was secured in place with Metabond (Parkell).
 
-## TRAP activity-dependent labeling
+#### TRAP activity-dependent labeling
 
 Solutions of 4-hydroxytamoxifen (4-OHT, HelloBio, HB6040) were prepared by dissolving 4-OHT powder at 20 mg/mL in ethanol by shaking at 37 °C, and aliquots (75 µL) were then stored at –20 °C. Before use, 4-OHT was redissolved in ethanol by shaking at 37 °C and filtered corn oil was added (150 µL). Ethanol was then evaporated by vacuum under centrifugation to give a final concentration of 10 mg/mL, and the 4-OHT solution was used on the same day it was prepared.
 
 To express viral transgenes in recently active neurons, we used the Targeted Recombination in Active Populations (TRAP2) strategy. Three weeks following viral injection, TRAP2 and TRAP2;Ai14 mice were single-housed for 3 days and then given 30-min social encounters (as described above). Following the social encounter, subject mice received I.P. injections of 4-OHT (150 µL of 10 mg/mL 4-OHT in filtered corn oil) to enable expression of viral transgenes in recently active neurons. To minimize neural activity triggered by stimuli outside of the social interaction test, all subject animals were individually housed for an additional 24 hr following 4-OHT treatment before being re-group-housed with their same-sex siblings. In some control experiments, mice remained group-housed prior to the 30-min social encounter and 4-OHT treatment (Figure 5A–H) or were single-housed but were not given a social encounter prior to 4-OHT treatment (Figure 2—figure supplement 1D–G).
 
-## Chemogenetic inhibition
+#### Chemogenetic inhibition
 
 To reversibly reduce neuronal activity, TRAP2 female mice received bilateral injections of an Cre-dependent inhibitory DREADDs virus into the hypothalamus (AAV2/1-hSyn-FLEX-hM4Di-mCherry; injected into the POA, AH, or VMH) as described above. TRAP2 male mice received the same viral injections into the POA only. Three weeks later, mice were single-housed for 3 days and then were subsequently given a 30 min social encounter in their home cage with a novel, group-housed female visitor. Subject mice then received an I.P. injection of 4-OHT to enable expression of hM4Di in activity-defined populations of hypothalamic neurons. Following the TRAPing session, subjects remained single-housed for an additional 24 hr. Subjects were then re-group-housed with same-sex siblings for 2 weeks and were single-housed a second time prior to behavioral testing. On the first day of testing, subject mice received an I.P. injection of either sterile saline (as a control) or clozapine-n-oxide (CNO, 4 mg/kg, Hello Bio HB6149; to inhibit neurons expressing hM4Di) 30 minutes prior to a social interaction test. Following this first test, mice remained single-housed. Three days later, mice that previously were treated with saline received an I.P. injection of CNO, and mice that were previously treated with CNO received an I.P. injection of saline, 30 min prior to another social interaction. Rates of USV production and non-vocal social behaviors were compared between saline and CNO days within animals to assess the effects of neuronal inhibition on social behaviors. Control mice received unilateral injections into the POA of a Cre-dependent AAV driving the expression of GFP (AAV2/1-CAG-FLEX-EGFP) and were otherwise treated identically to experimental animals.
 
-## Neuronal ablation
+#### Neuronal ablation
 
 To permanently ablate neurons, TRAP2;Ai14 or TRAP2 female mice received bilateral injections of an AAV2/5-ef1alpha-FLEX-taCasp3-TEVp virus into the POA. Following a three-week recovery period, these animals were individually housed for three days and subsequently given a 30-min social encounter in their home cage with a novel, group-housed female visitor. Subject mice then received an I.P. injection of 4-OHT to enable expression of caspase in activity-defined POA neurons. Two weeks later, females were single-housed for 3 days and then given a second 30min social interaction test. Social behaviors of subject females were compared between the pre-ablation and post-ablation interaction tests to assess the effects of neuronal ablation.
 
-## Optogenetic activation
+#### Optogenetic activation
 
 Female TRAP2 mice received unilateral injections into the POA of AAV-ef1α-FLEX-ChR2 (experimental) or AAV-CAG-FLEX-GFP (control). In the same surgery, an optogenetic ferrule was implanted approximately 250 µm above the viral injection site. Three weeks later, females were single-housed for 3 days and then given a 30-min social interaction with a novel group-housed, female visitor. Subject females then received an I.P. injection of 4-OHT. Two weeks later, females were first placed alone in a clean testing chamber for a 5-min habituation period after connecting the laser patch cable to the female’s optogenetic ferrule. Optogenetic activation sessions consisted of a 5-min period in which optogenetic activation was performed in solo females, followed by a 20-min period in which activation was performed as subject females interacted with a novel, group-housed female visitor. The social session was further divided into three phases: 5 min without optogenetic activation, 10 min with optogenetic activation, and 5 min without optogenetic activation. During the middle 10 min of the social session, some laser stimuli were delivered at times when the two females were near to one another (inter-animal distance <~2 mouse body lengths), and other stimuli were delivered at times when the females were not in close contact. POAsocial neurons were optogenetically activated with illumination from a 473 nM laser (10 mW) at 20–50 Hz (10–20ms pulses, trains lasted 5–10 s) Laser stimuli were driven by computer-controlled voltage pulses (Spike 2 version 10.8, CED).
 
-## Anatomical tracing
+#### Anatomical tracing
 
 Female TRAP2 mice used as GFP controls in the chemogenetic inhibition experiments were subsequently used for anterograde mapping of the axonal projections of POAsocial neurons. Three weeks following unilateral injection into the POA of a Cre-dependent AAV driving the expression of GFP (AAV2/1-CAG-FLEX-EGFP), females were single-housed for 3 days and subsequently given a 30-min social interaction test. Subject mice then received an I.P. injection of 4-OHT. Six weeks later, females were perfused, brains were collected and sectioned, and a confocal microscope was used to image GFP-positive axon terminals within coronal brain tissue sections.
 
 To examine the overlap between PAG-projecting POA neurons and Fos expression, Ai14 females first received a unilateral injection into the PAG of an AAV driving the retrograde expression of Cre-recombinase (AAVrg-pgk-Cre). Two weeks later, these females were given a 30-min social interaction test. Ninety minutes after the test, subject females were perfused, brains were collected, and coronal brain sections containing the POA were collected for Fos immunohistochemistry as described above. Brain tissue sections were imaged with a 10 x objective on a Zeiss 900 laser scanning confocal microscope, and POA neurons that were Fos-positive and tdTomato-positive were counted manually by trained observers.
 
-## Statistics
+#### Statistics
 
 Two-sided statistical comparisons were used in all analyses (alpha = 0.05). The Shapiro-Wilk test was performed to analyze the normality of each data distribution, and non-parametric statistical tests were used for comparisons that included non-normally distributed data. No statistical methods were used to pre-determine sample size. Mice were randomly assigned to either experimental or control groups. Video scoring of non-vocal social behaviors was conducted by trained scorers that were blinded to group identity. Mice were only excluded from analysis in cases in which viral injections were not targeted accurately. Details of the statistical analyses used in this study are included in Supplementary file 1.

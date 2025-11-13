@@ -10,13 +10,13 @@
 
 ### Affiliations
 
-1. https://ror.org/02grkyz14 Western Institute for Neuroscience, Western University, London Ontario Canada
-2. https://ror.org/05gq02987 Cognitive, Linguistics, & Psychological Science, Brown University Providence United States
-3. https://ror.org/042nb2s44 McGovern Institute, Massachusetts Institute of Technology Cambridge United Kingdom
-4. https://ror.org/01an7q238 Department of Psychology, University of California, Berkeley Berkeley United States
-5. https://ror.org/01an7q238 Helen Wills Neuroscience Institute, University of California Berkeley Berkeley United States
-6. https://ror.org/02grkyz14 Department of Statistical and Actuarial Sciences, Western University London Ontario Canada
-7. https://ror.org/02grkyz14 Department of Computer Science, Western University, London Ontario Canada
+1. Western Institute for Neuroscience, Western University, London Ontario Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+2. Cognitive, Linguistics, & Psychological Science, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
+3. McGovern Institute, Massachusetts Institute of Technology Cambridge United Kingdom ([ROR:042nb2s44](https://ror.org/042nb2s44))
+4. Department of Psychology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+5. Helen Wills Neuroscience Institute, University of California Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+6. Department of Statistical and Actuarial Sciences, Western University London Ontario Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+7. Department of Computer Science, Western University, London Ontario Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
 
 † Corresponding author
 
@@ -42,7 +42,7 @@ We then applied the approach in a cognitive domain. Working memory tasks have be
 
 ## Results
 
-## Motor task
+### Motor task
 
 To test the selective recruitment hypothesis in the motor domain, we used a task which involved alternating finger presses of middle and ring finger (Figure 1). Starting at a baseline level of 1 Hz and 2.5 N, we either increased the force of each response or the required rate (Table 1). Both manipulations are expected to produce an increase in the BOLD response in neocortical motor areas (Diedrichsen et al., 2013; Thickbroom et al., 1998). As such, our task-invariant connectivity model predicts increased cerebellar activity with both increases in speed and force (Spraker et al., 2012). Critically, selective recruitment predicts that for equivalent activity levels in the neocortex, cerebellar activity should be higher in the speed than in the force condition.
 
@@ -50,9 +50,68 @@ To test the selective recruitment hypothesis in the motor domain, we used a task
 
 **Figure 1.:** The height of the target force area indicated the target force, the number of white squares the target number of taps. During the press interval, the participant alternatively tapped the middle and ring finger. After each tap, the next box turned green. Reward feedback (e.g.,+4) was based on their performance.
 
+**Table 1.**
+ Mean and between-subject standard deviation (±) of force, speed, and error rate for each condition across subjects.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Target force (N)</th>
+      <th>Target # taps in 6 s</th>
+      <th>Average force (N)</th>
+      <th>Average # taps in 6 s</th>
+      <th>Error rate (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>High speed</td>
+      <td>2.5</td>
+      <td>18</td>
+      <td>2.93 ± 0.48</td>
+      <td>17.72 ± 0.84</td>
+      <td>5 ± 0.21</td>
+    </tr>
+    <tr>
+      <td>Medium speed</td>
+      <td>2.5</td>
+      <td>10</td>
+      <td>2.84 ± 0.45</td>
+      <td>10.12 ± 0.44</td>
+      <td>1 ± 0.12</td>
+    </tr>
+    <tr>
+      <td>Baseline</td>
+      <td>2.5</td>
+      <td>6</td>
+      <td>2.80 ± 0.41</td>
+      <td>6.32 ± 0.8</td>
+      <td>15 ± 0.36</td>
+    </tr>
+    <tr>
+      <td>Medium force</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6.10 ± 0.49</td>
+      <td>6.04 ± 0.2</td>
+      <td>4 ± 0.18</td>
+    </tr>
+    <tr>
+      <td>High force</td>
+      <td>10</td>
+      <td>6</td>
+      <td>9.73 ± 0.66</td>
+      <td>6.04 ± 0.2</td>
+      <td>2 ± 0.13</td>
+    </tr>
+  </tbody>
+</table>
+
 Participants complied well with task instructions, as evidenced by the group-averaged peak forces and number of taps, which were close to the target values (Table 1). The high error rate for the baseline condition reflects the fact that some of the participants completed the six taps in less than the minimum interval of 4 s in this very easy condition.
 
-## Increasing force and speed leads to increased activation in cortico-cerebellar motor network
+### Increasing force and speed leads to increased activation in cortico-cerebellar motor network
 
 As expected for right-hand movements, activation was observed in the hand areas of left (contralateral) M1 and S1 (Figure 2). Compared to the baseline condition, the combined M1/S1 region of interest (ROI) showed a significant activation increase in the high-force (t15 = 9.41, p = 1.10 × 10−7) and the high-speed conditions (t15 = 8.29, p = 5.54 × 10−7). Similarly, activity in the right anterior and posterior motor areas of the cerebellum (outlined in light gray in Figure 2, see Methods for details on ROI) increased with increasing force (t15 = 14.21, p = 4.14 × 10−10) and speed (t15 = 7.60, p = 1.59 × 10−6). The medium force and speed conditions were between baseline and high conditions, replicating previous findings of a parametric modulation of activity with both force (Spraker et al., 2012) and speed (Jäncke et al., 1999).
 
@@ -62,19 +121,27 @@ As expected for right-hand movements, activation was observed in the hand areas 
 
 Visual inspection of the activation maps (Figure 2D vs. 2F) suggests that cerebellar activity increased more with speed than with force. One might take this result alone as an indication that recruitment of the cerebellum is relatively greater when the task requires the coordination of rapid finger movements compared to when an increase in force is required. However, the neocortical activation patterns for speed and force conditions were not completely matched (Figure 2A vs. 2C): Increasing speed led to more widespread activation in secondary motor areas compared to increasing force. Therefore, the observed differences in cerebellar activity could have resulted from additional fixed inputs from premotor and supplementary motor areas, rather than from a task-dependent recruitment of cerebellar circuits for the speed task.
 
-## Cerebellar activity for increased speed is larger than predicted by task-invariant connectivity
+### Cerebellar activity for increased speed is larger than predicted by task-invariant connectivity
 
 To distinguish these two hypotheses, we used our task-invariant cortico-cerebellar connectivity model (L2-regularized multiple regression, see methods), trained on a separate set of participants across a large range of tasks (King et al., 2023). This model provides an estimate of cerebellar activity expected from fixed anatomical connections with the neocortex. We take this as the reference point for asking if observed activation levels are greater than expected; what we use as our operational definition of selective recruitment. Figure 3A shows the connectivity weights from this model for the cerebellar right-hand area, region M3 (Nettekoven et al., 2024b). According to the model, inputs to cerebellar M3 do not only come from contralateral M1 and S1, but also from premotor and supplementary motor regions.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/96386/elife-96386-fig3-v1.jpg)
+
+**Figure 3.:** (A) Average connectivity weights from a group-level connectivity model (Ridge regression, multi-domain task battery [MDTB], task set A) for the cerebellar right-hand area shown on inflated surface of the left hemisphere. For evaluation of alternative connectivity models see Figure 3—figure supplement 1. (B) Average observed cerebellar activation (y-axis) plotted against average prediction from the connectivity model (x-axis). Resting baseline (located at 0,0) is not shown explicitly but included in the regression. The error bars indicate the standard error of the mean of the signed residuals.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96386/elife-96386-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The connectivity model used in the main analysis was trained on task set A of the multi-domain task battery (MDTB) dataset using Ridge regression (King et al., 2023). As alternative connectivity models, we used Lasso regression on the same training set and a ridge regression model trained on five task-based datasets including MDTB (Nettekoven et al., 2024b). Predictive accuracy was calculated as the cosine similarity between observed and predicted activity patterns of all the task conditions used in this paper. Error bars indicate the standard error of predictive accuracy of the evaluated models.
 
 We multiplied the neocortical activity patterns from each individual and condition with the connectivity weights from the model to predict the corresponding cerebellar M3 activity level. Note that the connectivity weights were estimated on subjects from independent task-based functional magnetic resonance imaging (fMRI) datasets; therefore, the predicted values were on a different scale compared to the observed values (Figure 3B). To account for this scaling difference, we used a simple linear regression between observed and predicted values.
 
 In general, the predicted values closely match the observed values (average R2 = 0.60, standard error of the mean = 0.01). However, relative to the force conditions, the speed conditions resulted in larger cerebellar activity, even though the predicted activity was smaller. To test for systematic deviations across subjects, we submitted the signed residuals for all conditions to a one-way analysis of variance (ANOVA), revealing a significant effect of condition (F4, 60 = 6.796, p = 1.1 × 10−4). Post hoc tests revealed that the signed residual for the high-speed condition was significantly higher than for the high-force condition (t15 = 2.37, p = 0.0157). This was also the case when comparing medium speed and medium force (t15 = 1.94, p = 0.035). In summary, the increases in cerebellar activity for speed outstripped the activity increases for force, even when we accounted for differences in activity for the two conditions in neocortical input regions.
 
-## Alternative connectivity models
+### Alternative connectivity models
 
 We recognize that our results depend on the connectivity model used to predict cerebellar activity. To ensure that our findings were robust, we replicated the results using two additional connectivity models (Figure 3—figure supplement 1). First, we used an L1-regularized model, which resulted in sparser connectivity weights. In our previous study, we found that this model performed only slightly worse in predicting left-out data compared to the L2-regularized model (King et al., 2023). Second, we used a connectivity model that was trained on the entire multi-domain task battery (MDTB) dataset plus four additional large task-based datasets (Fusion model, see Methods). For both connectivity models, the predicted difference in the residual for the high-speed vs. high-force condition remained significant (L1 regression: t15 = 2.373, p = 0.0315, Fusion model: t15 = 2.140, p = 0.0492). Thus, consistent across various connectivity models, the results indicate selective recruitment of the cerebellum when the demands on finger coordination are increased relative to when the demands on force output are increased.
 
-## Working memory task
+### Working memory task
 
 We conducted our initial test of the selective recruitment hypothesis using a motor task, for which we had a strong a priori prediction concerning the factors that lead to an upregulation of cortical input to the cerebellum. Having validated our approach here, we next turned to the cognitive domain, asking if our approach could help shed light on the functional contribution of the cerebellum to verbal working memory. Cerebellar activation, particularly in Lobules VI, Crus I, and VIII is consistently observed in fMRI studies of working memory (Cohen et al., 1997; Courtney et al., 1997; D’Esposito and Postle, 2015; Nee et al., 2013). Here, we test if these cerebellar areas are especially recruited for a specific component process of working memory.
 
@@ -90,7 +157,7 @@ Figure 4B shows the error rate (trials with at least one wrong press) during the
 
 **Figure 5.:** Group-averaged activation during the encoding (A) and retrieval (B) phases on an inflated representation of the left cerebral hemisphere (as in Figure 2). (C, D) Group average activity during the two phases in the cerebellum. The D3R subregion of the multi-demand network in the right cerebellar hemisphere was used in the main analysis (outlined in light gray).
 
-## Cerebellar activity for encoding at high load is larger than predicted by task-invariant connectivity
+### Cerebellar activity for encoding at high load is larger than predicted by task-invariant connectivity
 
 To estimate which neocortical regions provide input to our cerebellar ROI (D3R), we again used the task-invariant model of cortico-cerebellar connectivity model (King et al., 2023). The connectivity weights from the model (Figure 6A) suggest converging input from area 55b (located at the inferior end of the middle frontal gyrus), premotor eye field, area 6r (anterior to the primary motor cortex), and supplementary and cingulate eye field (SCEF, dorsomedial frontal cortex; Glasser et al., 2016). The model was used to predict activity in the cerebellar ROI for each condition and participant. After fitting a linear regression to account for scale differences between predicted and observed activations, we found that the predicted values matched the observed values relatively well at the individual level (R2 = 0.42, standard error = 0.01).
 
@@ -132,17 +199,17 @@ Whichever combination of mechanisms is responsible for our observed effect, task
 
 ## Methods
 
-## Participants
+### Participants
 
 All participants gave informed consent under an experimental protocol approved by the Institutional Review Board at Western University (Protocol #107293). None of the participants reported a history of neurological or psychiatric disorders or current use of psychoactive medications. A total of 21 participants started the experiment. Of these, four participants were not scanned because of poor performance during the behavioral training session. The remaining 17 participants performed the tasks inside the scanner. The data for one participant were excluded due to an incidental finding. Therefore, the analyses were based on the data from 16 participants (8 females, 8 males, mean age = 25, std age = 2).
 
-## Apparatus and stimuli
+### Apparatus and stimuli
 
 Participants used a custom-made 5-key finger keyboard to perform the finger tapping and digit span tasks. A force transducer, located under each key (FSG15N1A, Honeywell Sensing and Control; dynamic range, 0–25 N), continuously recorded the isometric force exerted by each finger at a rate of 500 Hz. We recalibrated each sensor (no force applied) at the beginning of each run to correct for drift. The applied force was continuously displayed to the participants in form of five short horizontal bars that moved along the vertical axis proportional to force exerted by each finger (Figure 1A: applied forces).
 
-## Procedure
+### Procedure
 
-## Finger tapping task
+#### Finger tapping task
 
 Each trial was randomly selected from one of five conditions (Table 1). In all conditions, the response interval lasted for 6 s and participants were instructed to adopt a rate to distribute their responses evenly across this interval. For the Baseline condition, the target force was 2.5 N, and the instructed number of presses was 6 (i.e., optimal performance is 1 response/s). For the medium and high-force conditions, the target force was either 6 or 10 N, with the target number of presses fixed at 6. For the medium and high-speed conditions, the target number of presses was 10 or 18, with the target force fixed at 2.5 N.
 
@@ -152,7 +219,7 @@ After the 500 ms cueing phase, the two rectangles framing the digits turned from
 
 After the response phase, participants received performance feedback. If the participant made the required number (±2) of alternating movements and completed the set of responses within 4–6 s, they received visual feedback indicating they had earned four points. This response time window was relatively liberal, because our main focus was not to match speeds exactly, but to get sufficient variation across conditions. All other outcomes were considered errors and were not rewarded (0 points). If the average exerted force for the trial exceeded 120% of the target force, the experimenter provided verbal feedback, asking the participant to press with less force. The message ‘TOO FAST’ was displayed if total movement time was shorter than 4 s or if the number of produced presses exceeded the instructed number by more than two. The message ‘TOO SLOW’ was displayed if the number of produced presses by the end of the 6-s interval was 3 or more below the instructed number of presses. Visual feedback (points or error message) remained on the screen for 500 ms. After a delay of 500 ms (inter-trial interval), the next trial began with the appearance of the next cue.
 
-## Digit span task
+#### Digit span task
 
 Each trial started with a short cuing phase (500 ms), during which a red frame was presented outlining where the digits would appear along with a colored square on the left side that specified the recall direction (orange = forward recall; blue = backward recall). A white box within the red frame outlined the digits that would have to be remembered (2, 4, or 6). After the cue phase, a 6-s encoding phase started. Six digits were presented sequentially (1 s/digit) from left to right. The digits were drawn randomly (with replacement) from the set 1–5. The digits in the white box changed to a # symbol after 1 s; the other digits remained on the screen. For loads 2 and 4, the white box always encompassed the digits in the middle of the sequence (e.g., 13##45 or 1####5).
 
@@ -160,19 +227,19 @@ The encoding phase ended after the 1-s display time of the last digit and was fo
 
 Participants received visual feedback immediately after each response. If the response was correct, the corresponding hashtag or digit turned green, if incorrect, red. Only one response was allowed for each item. At the end of the retrieval phase, participants received additional feedback for 500ms summarizing trial performance (+4: all correct; +3: 1 error; +2: 2 errors; 0: otherwise). This point system was selected to encourage participants to attempt to recall each item.
 
-## Experimental sessions
+#### Experimental sessions
 
 Each participant completed two sessions, a practice session conducted outside the scanner and a test session conducted in the scanner. Each session involved five runs of the finger tapping task interleaved with five runs of the digit span task. Each run of the finger tapping task consisted of 5 repetitions of each of the 5 conditions with the order randomized (total of 25 trials/run, approx. 5 min/run). Each run of the digit span task consisted of three Go trials and one No-Go trial for each of the six conditions (3 Set sizes × 2 Recall Directions) with the order fully randomize (total of 24 trials/run, approx. 8 min/run). The practice session was completed between 3 and 10 days prior to the scanning session.
 
-## Image acquisition
+### Image acquisition
 
 MRI data were acquired on a 3T Siemens Prisma at the Center for Functional and Metabolic Mapping (CFMM) at Western University. A high-resolution whole-brain anatomical MPRAGE image was acquired at the beginning of the scanning session voxel size = 1 mm3, field-of-view = 25.6 × 25.6 × 25.6 cm3. Whole-brain functional images were acquired using an echo-planar imaging sequence with Repetition time (TR) = 1000 ms, Echo time (TE) = 30 ms, voxel size = 2.5 × 2.5 × 3 mm3, field-of-view = 20.8 × 20.8 × 20.8 cm3, 48 slices, P to A phase encoding direction, with multi-band acceleration factor = 3 (interleaved) and in-plane acceleration factor = 2. Gradient echo field maps were acquired to correct for distortions due to B0 inhomogeneities (acquisition parameters: voxel size = 3 × 3 × 3 mm3, field-of-view = 24 × 24 × 24 cm3). Physiological signals of heartbeat and respiration were recorded online during each functional run. Each functional run of the finger tapping task lasted ~5 min (260 volumes) and each run of the digit span task lasted for ~8 min (412 volumes).
 
-## fMRI data processing
+### fMRI data processing
 
 We used tools from SPM12 (Friston et al., 1994) and custom written code in MATLAB 2018b to process the functional and anatomical data. We defined an individual coordinate system for each subject by setting the origin of the anatomical image to the approximate location of the anterior commissure. Anatomical images were segmented into gray matter, white matter, csf, and skull. Functional images were corrected for head motion using the six-parameter rigid body transformation and were then co-registered to the individual anatomical image. The mean functional image and the results of anatomical segmentation were used to generate a gray matter mask for functional images. Slice timing correction, smoothing, and group normalization were not applied at this stage.
 
-## fMRI first-level analysis
+### fMRI first-level analysis
 
 A first-level general linear model (GLM) was fit to the time series data of each run separately using SPM12. For the motor dataset, each condition was modeled as a separate regressor using a 6-s boxcar covering the response interval, convolved with a canonical hemodynamic response function (HRF). Error trials (approx. 5% of all trials) were modeled as one single regressor in the GLM and this regressor was discarded from further analysis.
 
@@ -180,23 +247,23 @@ For the working memory task, the encoding phase was modeled using a 7-s boxcar i
 
 Beta weights estimated by the first-level GLM were divided by residual-root-mean-square image, resulting in normalized activity estimates for each voxel, condition, and run. Rest was not modeled explicitly but served as an implicit baseline. Functional and anatomical data were transformed into a cortical and cerebellar atlas using a unified code framework (available on GitHub; copy archived at Nettekoven et al., 2024a).
 
-## Cerebellar normalization
+### Cerebellar normalization
 
 The cerebellum was isolated from the rest of the brain and segmented into white and gray matter using the Spatially Unbiased Infratentorial Template (SUIT) toolbox (Diedrichsen, 2006), followed in some cases by hand correction. Cerebellar white and gray matter probabilistic maps were deformed simultaneously into SUIT atlas space using a non-linear deformation algorithm (Ashburner, 2007). The deformation was applied to both anatomical images, and the normalized beta weights from the first-level GLM. Before normalization, the isolation mask was applied to discard the influence of adjacent inferior and occipital neocortical areas. For visualizations, the functional maps were projected onto a flat representation of the cerebellum (Diedrichsen and Zotow, 2015) using the SUIT toolbox.
 
-## Neocortical normalization
+### Neocortical normalization
 
 For each participant, the anatomical image was used to reconstruct neocortical white matter and pial surface using Freesurfer (Fischl, 2012). Reconstructed surfaces were inflated to a sphere and registered to the fsLR 32 k node template (Van Essen et al., 2012) using a sulcal-depth map and local curvature. Neocortical activity patterns were projected onto these surfaces by averaging the activation values of voxels touching the line between corresponding vertices of the individual white matter and pial surface.
 
-## ROI selection
+### ROI selection
 
 For both datasets, we used a new symmetric functional atlas of the human cerebellum (Nettekoven et al., 2024b) that integrates data from seven large task-based datasets. The regions within this parcellation were estimated using a hierarchical Bayesian approach, with the constraint that the boundaries between regions were symmetric in the left and right hemispheres. For the motor dataset, we focused on right M3, a subregion of the motor domain that shows high selectivity for right-hand movements. For the working memory dataset, we focused on right D3, a subregion of the multi-demand network that that showed the clearest response to verbal digit span and verbal N-back tasks in the training data for the atlas.
 
-## Connectivity model
+### Connectivity model
 
 We used task-invariant models of cortico-cerebellar connectivity to predict the activity pattern in the cerebellar ROI given the activity pattern in the cerebral cortex (King et al., 2023). This served as the null model from which we could evaluate the deviations in activity patterns, the test of the selective recruitment hypothesis. The models were trained on a large dataset with N = 24 subjects, each of whom was scanned for ~6 hr using two sets of tasks spanning a large range of motor and cognitive domains (MDTB; King et al., 2019). Each task set was performed in two sessions. For each participant, the neocortical surface was subdivided using regular icosahedron parcellations of different granularities, resulting in P = 80–1848 parcels. The normalized activity estimates (see first-level analysis) for all N conditions were then averaged within each parcel and collected into a N × P matrix. These neocortical activations served as the predictors in the model (X). The normalized activity estimates for the cerebellum were extracted in SUIT space at an isotropic resolution of 3 mm, resulting in an N × Q (29 × 6918) matrix (Y). We estimated the P × Q matrix of connectivity weight (W) by minimizing the square error of the linear regression model Y = X W + E. To regularize this underspecified estimation problem, we employed either L1 regularization (Lasso) or L2-regualrizarion (Ridge regression). Hyperparameters were tuned using fivefold cross-validation within the training data (see King et al., 2023 for details).
 
-The models were trained on the first task set (N = 29 task conditions) and evaluated on the second task set of the MDTB (N = 32 different task conditions acquired from the same participants). Predictive accuracy of the model was defined as the Pearson correlation between the observed and predicted response profile of each voxel across the tasks. For the present paper, we selected the model with the highest predictive accuracy across subjects, a ridge-regression model with a regularization parameter of λ=exp⁡ (8) and 1848 neocortical parcels/predictors. We also used the Lasso model λ=exp⁡ (−5), 1848 neocortical parcels, to assess the generality of the results.
+The models were trained on the first task set (N = 29 task conditions) and evaluated on the second task set of the MDTB (N = 32 different task conditions acquired from the same participants). Predictive accuracy of the model was defined as the Pearson correlation between the observed and predicted response profile of each voxel across the tasks. For the present paper, we selected the model with the highest predictive accuracy across subjects, a ridge-regression model with a regularization parameter of $\lambda=exp⁡$ (8) and 1848 neocortical parcels/predictors. We also used the Lasso model $\lambda=exp⁡$ (−5), 1848 neocortical parcels, to assess the generality of the results.
 
 Finally, we also tested an improved connectivity model that was obtained by integrating data from five task-based datasets (including MDTB), totaling 376 task conditions, 87 subjects, and 383 hr of imaging data (Nettekoven et al., 2024b). These new connectivity models were optimized and estimated on the individual subject level within each dataset, using L2-regularized regression (Ridge), and then averaged across all subjects and datasets. The data from the current study were not included in the derivation of these connectivity models.
 

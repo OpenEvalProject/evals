@@ -56,25 +56,569 @@ Phytochrome proteins control the growth, reproduction, and photosynthesis of pla
 
 Phytochrome photosensor proteins are crucial for the optimal development of all vegetation on Earth (Butler et al., 1959; Gan et al., 2014; Quail et al., 1995). Prototypical phytochromes can exist in two photochemical states with differential cellular signaling activity, called red light-absorbing (Pr) and far-red light-absorbing (Pfr) state (Figure 1—figure supplement 1). As a result, phytochromes can distinguish two colors of light, providing plants, fungi, and bacteria with primitive two-color vision. Light is detected by a bilin chromophore, which is covalently linked to the photosensory core of the protein (Wagner et al., 2005), comprising of PAS (Per/Arndt/Sim), GAF (cGMP phosphodiesterase/adenyl cyclase/FhlA) and PHY (phytochrome-specific) domains. Two propionate side chains additionally anchor the chromophore non-covalently to the protein (Figure 1b). The signaling sites of the phytochrome are found in its C- and N-terminal output domains, which vary between species. Important for the signaling is a stretch of amino acids in the PHY domain, called the PHY-tongue, which changes from a β-sheet in Pr into an α-helix in Pfr state (Essen et al., 2008; Yang et al., 2008; Takala et al., 2014; Sanchez et al., 2019) The chromophore connects to the PHY-tongue via a strictly conserved aspartatic acid, which is expected to play a crucial role in signal transduction.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/53514/elife-53514-fig1-v2.jpg)
+
+**Figure 1.:** (a) The observed difference electron density map at 1 ps is displayed together with the DrBphPdark structure. Red and green electron density peaks, contoured at 4.5 σ, denote negative and positive densities, respectively. Monomer A is colored blue and monomer B is in aqua. (b) Schematic illustration of the biliverdin chromophore. The hydrogen-bonding networks between the propionate groups and the protein are marked with dashed lines. In DrBphP, the chromophore is covalently linked to a cysteine residue in the PAS domain (solid line).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53514/elife-53514-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Schematic illustration of the photoconversion between Pr and Pfr states in DrBphP. We note that the final state of the PAS-GAF fragment (also referred to as chromophore-binding domain, CBD) does not have the same spectral shape as in full-length phytochromes. (b) Raw absorption spectra of the DrBphPCBD microcrystals in buffer (black), scattering correction (1/λ4, dash dot), scattering corrected absorption spectra of the DrBphPCBD microcrystals (blue), and DrBphPCBD in solution in the Pr-state (red). (c) Transmission spectra of the grease (black), grease mixed with crystallization buffer (red), DrBphPCBD microcrystals in the grease matrix (measured in the 50 µm path length), and DrBphPCBD microcrystals in buffer. The microcrystals delivered to the beam are mixed with a viscous grease media. Although the Super Lube grease used in SFX experiments has a low background for X-rays, once it is mixed with the aqueous crystal buffer, the microcrystal/grease mixture exhibits significant scattering of visible light. The scattering varied with the mixing procedure. For the optical measurements, we reproduced the mixing procedure used at the XFEL as closely as possible. We estimate that the light intensities inside the grease jet are attenuated by at least two orders of magnitude. (d) Transient absorption spectra of DrBphPCBD microcrystals in buffer taken at different time delays after excitation. The spectra show a typical excited state signal of phytochromes (Toh et al., 2010). A Lumi-R signal was not observed, which is typically present on the ns-timescale after the excitation in the transient optical absorption data of phytochromes in solution.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53514/elife-53514-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The crystals reported here were shaped as needles of 20–70 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/53514/elife-53514-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Unit cell parameters for dark data set. (b) Unit cell parameters for 1 ps data set. Both data sets indicate orthorhombic crystals.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/53514/elife-53514-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Difference electron density maps at 1 ps and 10 ps for monomer A and B are shown together with the DrBphPdark structure (monomer A: blue, monomer B: aqua). Red and green contour surfaces denote negative and positive densities, respectively. The maps are contoured at electron density levels as indicated. We determine the background level to be at 3σ for 1 ps and at 3.4σ for 10 ps, since below these levels random signals outside the chromophore region appear.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/53514/elife-53514-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** The observed difference electron density map at (a) 1 ps plotted for monomer A, (b) at 10 ps for monomer A, (c) at 1 ps monomer B, and (d) at 10 ps for monomer B. The maps are plotted at 3.5σ and 3σ for 1 ps and 10 ps, respectively. Most off the difference features discussed here are present in both maps, although at a lower signal strength in the 10 ps map.
+
 Key to phytochrome function is the primary photoresponse on picosecond time scales. Here, light signals are translated into conformational changes. The changes arise in the electronically excited bilin, but must then be transduced to the surrounding protein residues. This prepares the protein for a formation of the first intermediate (Lumi-R for prototypical phytochromes), in which isomerization of the D-ring has likely occurred (Rüdiger et al., 1983; Dasgupta et al., 2009; Yang et al., 2012; Rockwell et al., 2009; Ihalainen et al., 2018). The mechanism that leads to the first intermediate is currently not well understood, because crystallographic observations of phytochromes directly after photoexcitation have not been available.
 
 ## Results
 
-To address this gap of knowledge, we recorded time-resolved serial femtosecond X-ray crystallographic (SFX) data of the PAS-GAF domains of the phytochrome from Deinococcus radiodurans (DrBphPCBD) at 1 ps and 10 ps after femtosecond optical excitation. The experiments were performed in Japan, using the SPring-8 Angstrom Compact Free Electron Laser (SACLA) tuned to 7 KeV (Tono et al., 2015). For homogeneous excitation of the crystals, we photoexcited micrometer-sized crystals in a grease jet with a photon density of 1.7 mJ/mm2 (1/e2 measure, see Materials and methods) into the flank of the absorption peak at 640 nm (Figure 1—figure supplement 1). Taking into account the significant light scattering in the grease-buffer mixture (Figure 1—figure supplement 1), we estimate that the average number of photons per chromophore is 0.5–1 (see Materials and methods). We recorded the SFX data at 1 ps for several excitation fluences (Figure 2). Lowering the excitation density tenfold from 1.7 mJ/mm2 photons to 0.2 mJ/mm2 resulted in a joint reduction of all difference signals. Critical signals, like the twist of the D-ring and the photodissociation of the pyrrole water from the chromophore sustained when lowering the excitation densities, indicating that the signal arises predominately from one-photon excitation. The refined structure in dark (DrBphPdark), 2.07 Å resolution (Table 1), was very similar to our previous dark structure solved by SFX (5K5B, RMSD 0.646 Å and 0.610 Å for monomers A and B) (Edlund et al., 2016), but the present crystals contained two monomers in the asymmetric unit (Figure 1a, Figure 1—figure supplement 2, Figure 1—figure supplement 3). The refined 1 ps structure was solved to 2.21 Å (Table 1).
+To address this gap of knowledge, we recorded time-resolved serial femtosecond X-ray crystallographic (SFX) data of the PAS-GAF domains of the phytochrome from Deinococcus radiodurans (DrBphPCBD) at 1 ps and 10 ps after femtosecond optical excitation. The experiments were performed in Japan, using the SPring-8 Angstrom Compact Free Electron Laser (SACLA) tuned to 7 KeV (Tono et al., 2015). For homogeneous excitation of the crystals, we photoexcited micrometer-sized crystals in a grease jet with a photon density of 1.7 mJ/mm2 ($1/e^{2}$ measure, see Materials and methods) into the flank of the absorption peak at 640 nm (Figure 1—figure supplement 1). Taking into account the significant light scattering in the grease-buffer mixture (Figure 1—figure supplement 1), we estimate that the average number of photons per chromophore is 0.5–1 (see Materials and methods). We recorded the SFX data at 1 ps for several excitation fluences (Figure 2). Lowering the excitation density tenfold from 1.7 mJ/mm2 photons to 0.2 mJ/mm2 resulted in a joint reduction of all difference signals. Critical signals, like the twist of the D-ring and the photodissociation of the pyrrole water from the chromophore sustained when lowering the excitation densities, indicating that the signal arises predominately from one-photon excitation. The refined structure in dark (DrBphPdark), 2.07 Å resolution (Table 1), was very similar to our previous dark structure solved by SFX (5K5B, RMSD 0.646 Å and 0.610 Å for monomers A and B) (Edlund et al., 2016), but the present crystals contained two monomers in the asymmetric unit (Figure 1a, Figure 1—figure supplement 2, Figure 1—figure supplement 3). The refined 1 ps structure was solved to 2.21 Å (Table 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/53514/elife-53514-fig2-v2.jpg)
 
-**Figure 2.:** The DrBphPdarkstructure (green) is shown together with the observed difference electron density, contoured at 3.5 σ, at 1 ps collected using (a) 0.2 mJ/mm, (2b) 0.4 mJ/mm, (2c) 1.3 mJ/mm, and (2d) 1.7 mJ/mm. All spot sizes were computed assuming Gaussian line shapes with the 2 convention. The data shown in panel A-C were collected at SACLA in May 2019, whereas the data shown in panel D was collected in October 2018. The same experimental setup was used in both occasions. The laser energy of the experiment in 2018 can be found in the Materials and methods section. The energies for the experiment in 2019 were 16 µJ, 42 µJ, and 106 µJ (panels A-C, respectively). During the experiment in 2019, the femtosecond laser beam was misaligned by 50 µm distance from the interaction spot between X-rays and jet in the direction of flow. The laser intensities were corrected for this displacement assuming a Gaussian line shape. The excitation fluence is similar to previous femtosecond time-resolved SFX experiments ((1/e2)Nogly et al., 2018; Pande et al., 2016; Barends et al., 2015; Coquelle et al., 2018); however, we found high scattering in the grease/buffer mixture (Figure 1—figure supplement 1). Since the crystallographic signals were reduced when lowering the excitation fluence and disappeared completely when reaching 1/10 of the maximum value, we conclude that the excitation fluence that actually reaches the crystals in the grease matrix is much lower than the incoming photon fluence and that the photoexcitation is in the single-photon regime.
+**Figure 2.:** The DrBphPdarkstructure (green) is shown together with the observed difference electron density, contoured at 3.5 σ, at 1 ps collected using (a) 0.2 mJ/mm2, (b) 0.4 mJ/mm2, (c) 1.3 mJ/mm2, and (d) 1.7 mJ/mm2. All spot sizes were computed assuming Gaussian line shapes with the $(1/e^{2})$ convention. The data shown in panel A-C were collected at SACLA in May 2019, whereas the data shown in panel D was collected in October 2018. The same experimental setup was used in both occasions. The laser energy of the experiment in 2018 can be found in the Materials and methods section. The energies for the experiment in 2019 were 16 µJ, 42 µJ, and 106 µJ (panels A-C, respectively). During the experiment in 2019, the femtosecond laser beam was misaligned by 50 µm distance from the interaction spot between X-rays and jet in the direction of flow. The laser intensities were corrected for this displacement assuming a Gaussian line shape. The excitation fluence is similar to previous femtosecond time-resolved SFX experiments (Nogly et al., 2018; Pande et al., 2016; Barends et al., 2015; Coquelle et al., 2018); however, we found high scattering in the grease/buffer mixture (Figure 1—figure supplement 1). Since the crystallographic signals were reduced when lowering the excitation fluence and disappeared completely when reaching 1/10 of the maximum value, we conclude that the excitation fluence that actually reaches the crystals in the grease matrix is much lower than the incoming photon fluence and that the photoexcitation is in the single-photon regime.
 
-From the time-resolved data, we calculated Fourier difference electron density maps (|Fo|l⁢i⁢g⁢h⁢t-|Fo|d⁢a⁢r⁢k), which report on the change of structure due to optical excitation (see Materials and methods). Briefly, the diffraction data for light and dark were scaled to each other and subtracted, assuming preservation of the phases (see Materials and methods for details). The map at 1 ps indicates many significant changes in difference electron density (Figure 1a) above the background level of 3.0 standard deviations (σ) (Figure 1—figure supplement 4). The changes cluster around the chromophore, with the strongest negative densities for the pyrrole water (monomer A: −8.2σ, B: −9.4σ, Table 2). The map at 10 ps contains similar significant features, but at weaker overall intensity (pyrrole water A: −5.0σ, B:−6.5σ) (Figure 1—figure supplement 4 and Figure 1—figure supplement 5). We ascribe this to a lower population of the activated state at 10 ps compared to 1 ps. Monomer A has a lower signal strength than monomer B, but provided a clearer difference map around the chromophore. We refined a structural model (DrBphP1ps) using extrapolated structure factors (Figure 3—figure supplement 1; Pande et al., 2016). The refinement of the structure against the 1 ps data was successful using a photoexcitation density of 8%. However, we aborted our attempts to refine a structural model against the 10 ps data, as the model would have become unreliable due to an even lower photoactivation yield. We focus our discussion on monomer A and the 1 ps time point, although all conclusions are supported by monomer B and the features observed in the difference maps at 10 ps (Table 2, Figure 1—figure supplement 5).
+**Table 1.**
+ Crystallographic table.
 
-First, we inspect the D-ring region at 1 ps (Figure 3). We observe strong negative difference density features on the atoms of the D-ring (marked I, II, III), correlating with density gains at both faces of the ring (IV, V, VI). These features strongly indicate that the D-ring twists. The positive feature IV homes the N-H and C = O groups, whereas V and VI indicate densities for the methyl and vinyl groups in the twisted ring (Figure 3c). Excellent agreement was obtained between the observed difference map and the difference map calculated from DrBphP1ps (Fc1⁢p⁢s-Fcd⁢a⁢r⁢k), when the D-ring twists (C14-C15-C16-ND) from around 20° in the dark to 60° monomer A) and 90° monomer B) at 1 ps (Figure 3c and e). Although the twisting movement is clearly indicated by the difference map, we judge the precision of the angle to be low and approximately ±25°.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Dark</th>
+      <th>one ps</th>
+      <th>10 ps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDB code</td>
+      <td>6T3L</td>
+      <td>6T3U</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Temperature (K)</td>
+      <td>293</td>
+      <td>293</td>
+      <td>293</td>
+    </tr>
+    <tr>
+      <td>Space Group</td>
+      <td>P212121</td>
+      <td>P212121</td>
+      <td>P212121</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions (a, b, c)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>54.98 116.69 117.86</td>
+      <td>54.98 116.69 117.86</td>
+      <td>54.98 116.69 117.86</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (∘)</td>
+      <td>90.0 90.0 90.0</td>
+      <td>90.0 90.0 90.0</td>
+      <td>90.0 90.0 90.0</td>
+    </tr>
+    <tr>
+      <td>Data resolution overall (Å)‡</td>
+      <td>45.77–2.07</td>
+      <td>41.46–2.21</td>
+      <td>45.77–2.14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(2.10–2.07)</td>
+      <td>(2.25–2.21)</td>
+      <td>(2.17–2.14)</td>
+    </tr>
+    <tr>
+      <td>Rs⁢p⁢l⁢i⁢t (%)†‡</td>
+      <td>5.79 (120.05)</td>
+      <td>10.59 (114.64)</td>
+      <td>5.70 (121.86)</td>
+    </tr>
+    <tr>
+      <td>SNR (I/σ(I))‡</td>
+      <td>9.21 (0.83)</td>
+      <td>6.10 (0.88)</td>
+      <td>10.11 (0.99)</td>
+    </tr>
+    <tr>
+      <td>CC(1/2)‡</td>
+      <td>0.99 (0.33)</td>
+      <td>0.98 (0.38)</td>
+      <td>0.99 (0.344)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)‡</td>
+      <td>100 (100)</td>
+      <td>100 (100)</td>
+      <td>100 (100)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity‡</td>
+      <td>461.35 (65.9)</td>
+      <td>106.11 (34.3)</td>
+      <td>347.36 (62.1)</td>
+    </tr>
+    <tr>
+      <td>Number of hits</td>
+      <td>149074</td>
+      <td>42853</td>
+      <td>159997</td>
+    </tr>
+    <tr>
+      <td>Number of indexed patterns</td>
+      <td>70726</td>
+      <td>21150</td>
+      <td>70335</td>
+    </tr>
+    <tr>
+      <td>Indexing rate(%)&amp;</td>
+      <td>47.44</td>
+      <td>49.35</td>
+      <td>43.96</td>
+    </tr>
+    <tr>
+      <td>Number of total reflections</td>
+      <td>24017763</td>
+      <td>5310179</td>
+      <td>17823530</td>
+    </tr>
+    <tr>
+      <td>Number of unique reflections</td>
+      <td>52060</td>
+      <td>39316</td>
+      <td>43279</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)‡</td>
+      <td>45.82–2.07</td>
+      <td>36.94–2.21</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(2.12–2.07)</td>
+      <td>(2.27–2.21)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rw⁢o⁢r⁢k / Rf⁢r⁢e⁢e‡</td>
+      <td>0.162/0.191</td>
+      <td>0.230/0.256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(0.317/0.346)</td>
+      <td>(0.411/0.443)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of atoms</td>
+      <td>5123</td>
+      <td>5135</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Average B factor (Å2)</td>
+      <td>76.44</td>
+      <td>78.63</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R.m.s deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.007</td>
+      <td>0.006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond angles (∘)</td>
+      <td>1.251</td>
+      <td>1.152</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_† Rsplit = 1/2⁢Σ⁢h⁢k⁢l⁢|I⁢e⁢v⁢e⁢n-I⁢o⁢d⁢d|1/2⁢Σ⁢h⁢k⁢l⁢|I⁢e⁢v⁢e⁢n+I⁢o⁢d⁢d|‡ .‡ Highest resolution shell is shown in parentheses. § Ratio of the number of indexed images to the total number of hits._
+
+From the time-resolved data, we calculated Fourier difference electron density maps ($|F_{o}|^{l⁢i⁢g⁢h⁢t}-|F_{o}|^{d⁢a⁢r⁢k}$), which report on the change of structure due to optical excitation (see Materials and methods). Briefly, the diffraction data for light and dark were scaled to each other and subtracted, assuming preservation of the phases (see Materials and methods for details). The map at 1 ps indicates many significant changes in difference electron density (Figure 1a) above the background level of 3.0 standard deviations (σ) (Figure 1—figure supplement 4). The changes cluster around the chromophore, with the strongest negative densities for the pyrrole water (monomer A: −8.2σ, B: −9.4σ, Table 2). The map at 10 ps contains similar significant features, but at weaker overall intensity (pyrrole water A: −5.0σ, B:−6.5σ) (Figure 1—figure supplement 4 and Figure 1—figure supplement 5). We ascribe this to a lower population of the activated state at 10 ps compared to 1 ps. Monomer A has a lower signal strength than monomer B, but provided a clearer difference map around the chromophore. We refined a structural model (DrBphP1ps) using extrapolated structure factors (Figure 3—figure supplement 1; Pande et al., 2016). The refinement of the structure against the 1 ps data was successful using a photoexcitation density of 8%. However, we aborted our attempts to refine a structural model against the 10 ps data, as the model would have become unreliable due to an even lower photoactivation yield. We focus our discussion on monomer A and the 1 ps time point, although all conclusions are supported by monomer B and the features observed in the difference maps at 10 ps (Table 2, Figure 1—figure supplement 5).
+
+**Table 2.**
+ Difference electron density features listed for certain atoms.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Object</th>
+      <th>Label</th>
+      <th>1ps</th>
+      <th>1ps</th>
+      <th>10ps</th>
+      <th>10ps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>A</td>
+      <td>B</td>
+      <td>A</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>Pyrrole Water</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pyrrole Water (-)</td>
+      <td>XV</td>
+      <td>−8.2σ</td>
+      <td>−9.4σ</td>
+      <td>−5.0σ</td>
+      <td>−6.5σ</td>
+    </tr>
+    <tr>
+      <td>Pyrrole Water (+) Alt. 1</td>
+      <td>XVI</td>
+      <td>4.8σ</td>
+      <td>4.2σ</td>
+      <td>3.0σ</td>
+      <td>3.4σ</td>
+    </tr>
+    <tr>
+      <td>Pyrrole Water (+) Alt. 2</td>
+      <td>XVII</td>
+      <td>4.4σ</td>
+      <td>5.8σ</td>
+      <td>3.0σ</td>
+      <td>3.3σ</td>
+    </tr>
+    <tr>
+      <td>D-ring</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D-ring N-H/C = O (-)</td>
+      <td>I</td>
+      <td>−4.2σ</td>
+      <td>−7.3σ</td>
+      <td>−6.4σ</td>
+      <td>−5.1σ</td>
+    </tr>
+    <tr>
+      <td>D-ring Methyl (-)</td>
+      <td>II</td>
+      <td>−4.3σ</td>
+      <td>−3.5σ</td>
+      <td>−2.9σ</td>
+      <td>−4.9σ</td>
+    </tr>
+    <tr>
+      <td>D-ring Vinyl (-)</td>
+      <td>III</td>
+      <td>−4.0σ</td>
+      <td>−4.8σ</td>
+      <td>−3.5σ</td>
+      <td>−3.4σ</td>
+    </tr>
+    <tr>
+      <td>D-ring N-H/C = O (+)</td>
+      <td>IV</td>
+      <td>4.6σ</td>
+      <td>6.4σ</td>
+      <td>4.6σ</td>
+      <td>4.1σ</td>
+    </tr>
+    <tr>
+      <td>D-ring Methyl (+)</td>
+      <td>V</td>
+      <td>3.5σ</td>
+      <td>3.4σ</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>D-ring Vinyl (+)</td>
+      <td>VI</td>
+      <td>4.1σ</td>
+      <td>4.6σ</td>
+      <td>3.4σ</td>
+      <td>2.6σ</td>
+    </tr>
+    <tr>
+      <td>C-ring</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C-propionate (-)</td>
+      <td>IX</td>
+      <td>−6.4σ</td>
+      <td>−5.8σ</td>
+      <td>−5.9σ</td>
+      <td>−4.7σ</td>
+    </tr>
+    <tr>
+      <td>C-ring (-)</td>
+      <td>VII</td>
+      <td>−5.5σ</td>
+      <td>−4.4σ</td>
+      <td>−5.1σ</td>
+      <td>−3.2σ</td>
+    </tr>
+    <tr>
+      <td>C-propionate (+)</td>
+      <td>X</td>
+      <td>6.9σ</td>
+      <td>6.4σ</td>
+      <td>7.4σ</td>
+      <td>4.9σ</td>
+    </tr>
+    <tr>
+      <td>C-ring (+)</td>
+      <td>VIII</td>
+      <td>4.9σ</td>
+      <td>5.2σ</td>
+      <td>3.2σ</td>
+      <td>5.4σ</td>
+    </tr>
+    <tr>
+      <td>A-ring</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A-ring C = O (-)</td>
+      <td>XVIII</td>
+      <td>−4.3σ</td>
+      <td>−4.7σ</td>
+      <td>−3.6σ</td>
+      <td>−2.9σ</td>
+    </tr>
+    <tr>
+      <td>A-ring C = O (+)</td>
+      <td>XIX</td>
+      <td>5.2σ</td>
+      <td>5.0σ</td>
+      <td>5.7σ</td>
+      <td>4.7σ</td>
+    </tr>
+    <tr>
+      <td>His260</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>His260 Sidechain(-)</td>
+      <td>XI</td>
+      <td>−6.7σ</td>
+      <td>−5.2σ</td>
+      <td>−6.3σ</td>
+      <td>−4.1σ</td>
+    </tr>
+    <tr>
+      <td>His260 Sidechain(+)</td>
+      <td>XII</td>
+      <td>4.3σ</td>
+      <td>4.5σ</td>
+      <td>3.5σ</td>
+      <td>3.2σ</td>
+    </tr>
+    <tr>
+      <td>Tyr263</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tyr263 Sidechain(-)</td>
+      <td>XIII</td>
+      <td>−6.9σ</td>
+      <td>−7.0σ</td>
+      <td>−4.7σ</td>
+      <td>−6.2σ</td>
+    </tr>
+    <tr>
+      <td>Tyr263 Sidechain(+)</td>
+      <td>XIV</td>
+      <td>4.8σ</td>
+      <td>4.9σ</td>
+      <td>3.0σ</td>
+      <td>4.3σ</td>
+    </tr>
+    <tr>
+      <td>Asp207</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asp207 Sidechain (-)</td>
+      <td>XX</td>
+      <td>−6.2σ</td>
+      <td>−6.7σ</td>
+      <td>−5.6σ</td>
+      <td>−3.4σ</td>
+    </tr>
+    <tr>
+      <td>Asp207 Sidechain(+)</td>
+      <td>XXI</td>
+      <td>5.7σ</td>
+      <td>5.0σ</td>
+      <td>4.2σ</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Asp207 Backbone (-)</td>
+      <td>XXII</td>
+      <td>−6.2σ</td>
+      <td>−5.4v</td>
+      <td>−5.1σ</td>
+      <td>−4.5σ</td>
+    </tr>
+    <tr>
+      <td>Asp207 Backbone (+)</td>
+      <td>XIII</td>
+      <td>4.6σ</td>
+      <td>4.4σ</td>
+      <td>4.5σ</td>
+      <td>3.5σ</td>
+    </tr>
+    <tr>
+      <td>Tyr176</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tyr176 Sidechain(-)</td>
+      <td></td>
+      <td>−4.9σ</td>
+      <td>−3.9σ</td>
+      <td>−5.1σ</td>
+      <td>−3.8σ</td>
+    </tr>
+    <tr>
+      <td>Phe203</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Phe203 Sidechain(-)</td>
+      <td></td>
+      <td>−4.1σ</td>
+      <td>−4.6σ</td>
+      <td>−4.6σ</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+First, we inspect the D-ring region at 1 ps (Figure 3). We observe strong negative difference density features on the atoms of the D-ring (marked I, II, III), correlating with density gains at both faces of the ring (IV, V, VI). These features strongly indicate that the D-ring twists. The positive feature IV homes the N-H and C = O groups, whereas V and VI indicate densities for the methyl and vinyl groups in the twisted ring (Figure 3c). Excellent agreement was obtained between the observed difference map and the difference map calculated from DrBphP1ps ($F_{c}^{1⁢p⁢s}-F_{c}^{d⁢a⁢r⁢k}$), when the D-ring twists (C14-C15-C16-ND) from around 20° in the dark to 60° monomer A) and 90° monomer B) at 1 ps (Figure 3c and e). Although the twisting movement is clearly indicated by the difference map, we judge the precision of the angle to be low and approximately ±25°.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53514/elife-53514-fig3-v2.jpg)
+
+**Figure 3.:** The observed difference electron density with the refined DrBphPdark(blue) and DrBphP1ps(beige) structures, shown for (a) the B-, C-, and D-ring surroundings, (b) the strictly conserved His260 and Tyr263, and (c) the D-ring. The calculated difference electron density shown for (d) His260 and Tyr263 and (e) the D-ring. The D-ring twists counter-clockwise when viewed along C15-C16 bond toward the C-ring. The observed difference electron density is contoured at 3.3 σ. And the calculated difference electron density is contoured at 3.5 and 5.0 σ for panel d and e, respectively. Monomer A is shown in this figure.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53514/elife-53514-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Extrapolated maps at $\alpha=25$ demonstrate that the D-ring twists in the photoactivated state.(a). Rings A to C of monomer A together with the $2⁢F⁢o-F⁢c$ maps of the refined dark structure (DrBphPdark: blue). (b). The same data for the D-ring in a different orientation. (c) and (d). Equivalently, the refined structure (DrBphP1ps: beige) of the chromophore in monomer A together with the extrapolated map $F⁢T⁢(F⁢e)$ at 1 ps. ($F⁢o$, phases from the dark structure). We observed a round-shape feature for the D-ring, but flat densities for C-ring (downward shift) and B-ring (almost unshifted). This suggests that the D-ring twists significantly. For the A-ring we observe a broad density, with the strongest contribution indicating a twisted or tilted ring.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53514/elife-53514-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a). The observed difference electron density map (3.3 σ) is displayed for the B-D ring surroundings of the DrBphPdark (blue) and the DrBphP1ps structure (beige) for monomer A. (b). The same view and structures displayed with the calculated difference electron density map contoured at 4.5 σ.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/53514/elife-53514-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Correlating negative and positive density features indicate that the C-ring moves downwards, together with the C-ring propionate. The negative density features located on the propionate groups, three waters (W1, W2 and W3), Arg254, and Ser257 collectively indicate that the hydrogen bonding network is resolved at 1 ps. Difference electron density features are not observed on the B-ring. DrBphPdark is shown in blue and DrBphP1ps in beige. The chromophore is shown for monomer A together with the observed difference map at 1 ps delay time, contoured at 3.0 σ.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/53514/elife-53514-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (a). Difference (DrBphP1ps-DrBphPdark) in distances between each Cα and the pyrrole water (DrBphPdark) plotted for all differences that are larger than 0.45 Å for monomer B. Longer distances are colored red and biliverdin is shown as pink sticks. The regions that move the most, the ’DIP region’ and the ’capping helix’ above the chromophore are marked with red circles. (b). The observed difference electron densities indicate backbone movements away from the chromophore for residues 201–209 and 257–269, and an expansion of the chromopore-binding pocket. The DrBphPdark structure is colored blue and the DrBphP1ps structure is colored beige. The observed electron density map is contoured at 4.0 σ. The dashed lines indicate the proposed signal transduction pathway from D-ring to B-ring propionate.
 
 Concomitant with the twist of the D-ring, the C-ring translates by approximately 0.69 Å as indicated by the correlated negative (VII) and positive (VIII) electron density (Figure 3a). Furthermore, the C-ring propionate chain detaches from its conserved anchoring residues Ser272 and Ser274 (IX and X, Figure 3a). The strictly conserved His260 retracts from its position (XI and XII) and Tyr263 moves upward at 1 ps (XIII and XIV, Figure 3b). The water network connecting the C-ring propionate, the D-ring C = O, and His290 rearranges accordingly (Figure 3a). The excellent agreement between calculated and observed difference maps confirms these observations (Figure 3d and e, Figure 3—figure supplement 2). We conclude that the twist of the D-ring causes detachment of the C-ring propionate from the protein scaffold by dislocation of the C-ring, facilitated by the associated hydrogen bonding network.
 
 Turning our attention to the B-ring, we find that the B-ring propionate breaks its salt bridge to Arg254 (Figure 3—figure supplement 3). However, this is not caused by movements of the chromophore backbone, as we observe little change on the B-ring itself. Instead, we find that a water bridge between the B- and C-ring propionates is broken as indicated by negative difference electron densities on the waters (Figure 3—figure supplement 3). Additionally, the highly conserved helix from Ser257 to Val269, moves away from the chromophore by an average of 0.36 Å in monomer A and 0.62 Å in monomer B (distances relative to the pyrrole water, Figure 3—figure supplement 4). The changes of the D-ring are transduced to Ser257 via the side chains of His260 and Tyr263, and as a result, the hydrogen bond of Ser257 to the B-ring propionate group breaks. The amino acids in the stretch are over 50% conserved (Figure 3—figure supplement 4), suggesting that it has evolved to transfer an ultrafast signal. We conclude that relaxation of the protein is necessary for the detachment of the B-ring propionate from the protein scaffold.
 
 Next to the changes around the D-ring, the maps reveal strong difference electron density on the A-ring (XVIII and XIX), Asp207 (XX to XXIII) (Figure 4a) and the pyrrole water (XV) (Figure 4b). When interpreted and modelled as downward movement of the A-ring and Asp207 and photodissociation of the pyrrole water from the chromophore, excellent agreement between calculated and observed difference electron density is obtained (Figure 4—figure supplement 1). The A-ring is covalently attached to the protein backbone in phytochromes (Song et al., 2014), which renders complete isomerization impossible, but is sufficiently flexible to accommodate the proposed changes. The pyrrole water may either move to feature (XVI), or occupy an anisotropic, worm-shaped feature which extends from the A-ring to the D-ring (XVII) (Figure 4b).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53514/elife-53514-fig4-v2.jpg)
+
+**Figure 4.:** (a). The observed difference electron density displayed with the DrBphPdark (blue) and DrBphP1ps (beige) structures around the A-ring, Asp207 and pyrrole water (PW). The structural model was inconclusive as to whether the A-ring twists around the double bond between the B- and A-ring, or whether it tilts downward hinged on the connection between C- and B-ring. (b). The regions of the pyrrole water (PW) and the area between the pyrrole rings show negative and positive densities, respectively. The observed difference electron density is contoured at 3.3σ. (c). Density displayed for the backbone below the A-ring, including side chains of the strictly conserved Ile208 and Tyr176 as well as the surrounding water network. Monomer A is shown in this figure.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53514/elife-53514-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a). The observed difference electron density is displayed together with the DrBphPdark (blue) and the DrBphP1ps (beige) structures for monomer A. The data is shown around the A-ring, Asp207 and pyrrole water (PW). (b). For the backbone below the A-ring, side chains shown for the strictly conserved Ile208 and Tyr176 as well as the surrounding water network. (c). The same view as panel A displayed together with the calculated difference electron density. (d). The same view as panel B displayed together with the calculated difference electron density. The observed and calculated difference electron density maps are contoured at 3.3 σ and 3.5 σ, respectively.
 
 Furthermore, correlated negative and positive electron density features are observed on backbone atoms of the highly conserved stretch from Pro201 to His209. These difference electron density features indicate that the residues move away from the centre of the chromophore by an average of 0.54 Å and 0.57 Å in monomers A and B, respectively (Figure 3—figure supplement 4b). The stretch includes Asp207 and it is located between the A-ring and the PHY domain, which makes it plausible that the changes in the chromophore cause this protein rearrangement. The changes are complemented by significant rearrangements of a stretch of waters and a conserved Tyr176 (Figure 4c).
 
@@ -84,7 +628,7 @@ The structure of DrBphPCBD 1 ps after photoexcition reveals changes of the bili
 
 Infrared spectral data indicate significant reorganization of the chromophore and several amino acids including the PHY-tongue region as early as in Lumi-R state, which is the first known ground state intermediate in the photoconversion from Pr to Pfr (Ihalainen et al., 2018; van Thor et al., 2007). However, the structure of the bilin and the binding pocket in Lumi-R is not known, because structural information is missing. Since the quantum yield of reaching the Lumi-R state is low (on the order of 10%), spectroscopic investigation of the mechanism is difficult, and it is currently not fully established how the Lumi-R state is reached. Crystallographic data does not report on whether the chromophore is electronically excited or not, hence we cannot determine whether the structure that we observe is in a relaxed excited state or in a ground state. The time delay (1 ps) supports that our structure presents an intermediate enroute to the Lumi-R state.
 
-The D-ring of the bilin chromophore isomerizes around the C15-C16 bond from (Z) in Pr to (E) in Pfr (Rüdiger et al., 1983; Burgie et al., 2016; Takala et al., 2014; Yang et al., 2008; Essen et al., 2008). Circular dichroism spectroscopy and solid-state NMR spectroscopy have indicated that the position of the D-ring inverts from an ’α’-facial (Pr) to a ’β’-facial (Pfr) position in cyanobacterial and plant phytochromes, whereas it stays ’α’-facial in bacterial phytochromes (Rockwell et al., 2009; Song et al., 2011; Song et al., 2018). Based on anticipated steric clashes with the C-ring methyl group, it has been proposed that the D-ring rotates counter-clockwise in plant and cyanobacterial phytochromes, but clockwise in bacterial phytochromes (Rockwell et al., 2009). Moreover, spectroscopy has shown that the D-ring of the bilin chromophore is already isomerized in the Lumi-R state (van Thor et al., 2007; Heyne et al., 2002; Yang et al., 2012).
+The D-ring of the bilin chromophore isomerizes around the C15-C16 bond from (Z) in Pr to (E) in Pfr (Rüdiger et al., 1983; Burgie et al., 2016; Takala et al., 2014; Yang et al., 2008; Essen et al., 2008). Circular dichroism spectroscopy and solid-state NMR spectroscopy have indicated that the position of the D-ring inverts from an ’$\alpha$’-facial (Pr) to a ’$\beta$’-facial (Pfr) position in cyanobacterial and plant phytochromes, whereas it stays ’$\alpha$’-facial in bacterial phytochromes (Rockwell et al., 2009; Song et al., 2011; Song et al., 2018). Based on anticipated steric clashes with the C-ring methyl group, it has been proposed that the D-ring rotates counter-clockwise in plant and cyanobacterial phytochromes, but clockwise in bacterial phytochromes (Rockwell et al., 2009). Moreover, spectroscopy has shown that the D-ring of the bilin chromophore is already isomerized in the Lumi-R state (van Thor et al., 2007; Heyne et al., 2002; Yang et al., 2012).
 
 Seemingly contradictory, we now observe that the D-ring is rotated counter-clockwise by tens of degrees for the bacterial DrBphP at 1 ps time delay (Figure 3c and e). The conformation is strongly supported by the difference map. It contains two positive peaks (V and VI in Figure 3c), which indicate the new position of the vinyl and methyl group of the D-ring. We tested models in which the D-ring was rotated in a clockwise direction, but the agreement with the experimental difference map decreased. Thus, it may be that the D-ring indeed rotates counter-clockwise in bacterial phytochromes, similar to plant and cyanobacterial phytochromes. For complete isomerization, this would mean that the C-ring moves out of the way during the rotation. We observe significant movements of the C-ring, which may be an indication for that such a mechanism is possible. Raising a note of caution, we cannot fully exclude that the truncation of our phytochrome construct or the crystal packing influences the direction of rotation. NMR studies have reported conformational heterogeneity in the chromophore binding pocket of phytochromes in solution (Song et al., 2011; Lim et al., 2018; Song et al., 2018; Gustavsson et al., 2020). Crystallization could select one of the conformations, which may have a preferred rotation in the counter-clockwise direction. More experiments are needed to clarify this question.
 
@@ -106,42 +650,42 @@ Phytochromes have to be able to stabilize the bilin and to direct its photoisome
 
 ## Materials and methods
 
-## Protein purification and crystallization
+### Protein purification and crystallization
 
-The H⁢i⁢s6-tagged PAS-GAF domain from D. radiodurans (aa 1–321) in vector pET21b(+) (Wagner et al., 2005) was expressed and purified as previously described (Lehtivuori et al., 2013; Takala et al., 2014). The recombinant protein was expressed in Escherichia coli strain BL21(DE3), either with or without Ho1 to yield holo- or apoprotein, respectively. Cells were lysed with Emulsiflex and cleared by centrifugation (20,000 rpm, 30 min, +4°C). Full biliverdin incorporation was ensured by adding 8 mg of biliverdin hydrochloride (Frontier Scientific) per litre of cell culture to the cell lysate, followed by overnight incubation on ice. The protein was then purified at room temperature with HisTrap HP column (GE Healtcare) in 30 mM Tris, 50 mM NaCl and 5 mM imidazole (pH 8) and eluted with increasing imidazole concentration (gradient elution over 5–500 mM). Size-exclusion chromatography was then conducted with a HiLoad 26/600 Superdex 200 pg column (GE Healthcare) in buffer (30 mM Tris pH 8.0). Finally, the protein was concentrated to 30–50 mg/mL and flash-frozen in liquid nitrogen.
+The $H⁢i⁢s_{6}$-tagged PAS-GAF domain from D. radiodurans (aa 1–321) in vector pET21b(+) (Wagner et al., 2005) was expressed and purified as previously described (Lehtivuori et al., 2013; Takala et al., 2014). The recombinant protein was expressed in Escherichia coli strain BL21(DE3), either with or without Ho1 to yield holo- or apoprotein, respectively. Cells were lysed with Emulsiflex and cleared by centrifugation (20,000 rpm, 30 min, +4°C). Full biliverdin incorporation was ensured by adding 8 mg of biliverdin hydrochloride (Frontier Scientific) per litre of cell culture to the cell lysate, followed by overnight incubation on ice. The protein was then purified at room temperature with HisTrap HP column (GE Healtcare) in 30 mM Tris, 50 mM NaCl and 5 mM imidazole (pH 8) and eluted with increasing imidazole concentration (gradient elution over 5–500 mM). Size-exclusion chromatography was then conducted with a HiLoad 26/600 Superdex 200 pg column (GE Healthcare) in buffer (30 mM Tris pH 8.0). Finally, the protein was concentrated to 30–50 mg/mL and flash-frozen in liquid nitrogen.
 
 Crystals were set up under green safe light and grown in dark. Batch crystallization was performed as described (Edlund et al., 2016). 50 µL of purified protein (25–30 mg/mL) was added to 450 µL of reservoir solution (60 mM Sodium acetate pH 4.95, 3.3% PEG 400, 1 mM DTT and 30% 2-methyl-2,4-pentanediol) and immediately mixed. Initial microcrystals were grown on a tipping table at 4 °C for 48 hr. Once the microcrystals were formed, additional protein was added to increase crystal size. The microcrystals were first pelleted by brief centrifugation and 400 µL of supernatant was removed. 200 µL of diluted protein (14 mg/mL in 30 mM Tris pH 8.0) was then added to the microcrystals along with 200 µL of fresh reservoir solution. After 48 hr incubation on a tipping table at room temperature, crystals of diffraction quality (20–70 µm long needles) were formed (Figure 1—figure supplement 2 and Table 1).
 
-## Transient absorption experiment of microcrystals
+### Transient absorption experiment of microcrystals
 
 Transient absorption experiments were performed on a home build setup based on a Ti:sapphire femtosecond laser system (1 kHz, 800 nm). The main beam was split into pump and probe beams. The pump beam was sent through the home build noncollinear optical parametric amplifier to produce excitation pulses at 640 nm central wavelength. The probe beam was focused on a 2 mm sapphire plate to generate broadband (400–760 nm) white light which was split by 50/50 beamsplitter to reference and probe beams. The mutual polarization of the pump and probe beams was set to the magic angle (54.7°) by Berek compensator. The probe beam was focused on a sample cuvette that was continuously translated in vertical axis to prevent sample degradation. The microcrystals were washed with crystallization buffer five time in order to remove the solubilized proteins. 2.5 µL of microcrystals including a small amount of crystallization buffer were placed between two CaF2 windows without a spacer. The OD of the sample was about 0.6. Time-resolved absorption changes were measured by detecting probe and reference beams dispersed on the double-diode array; the time delay between pump and probe pulses was set by a computer controlled delay line placed in the probe beam path. All measurements were carried out in room temperature.
 
-## Light scattering of the grease jet
+### Light scattering of the grease jet
 
 In order to estimate the light intensity of the optical laser in the grease jet, the optical transmission of the grease, grease mixed with crystallization buffer, microcrystals in the grease matrix and pure microcrystals were measured with a transmittance diode-array UV-Vis spectrometer (Cary 8454, Agilent Technologies) (Figure 1—figure supplement 1c). 2.5 µl each of sample was placed between two CaF2 windows with a 50 µm Teflon spacer and squeezed together, resembling the characteristics of the jet during the XFEL experiments. The raw spectra of microcrystals (Figure 1—figure supplement 1c) in the buffer has been measured between two CaF2 windows without spacer to minimize the absorption loss, the pathlength was estimated to be ≤ 50µm.
 
-## Fluence calculations
+### Fluence calculations
 
-The optical laser parameters used for the experiment were as follows: wavelength was 640 nm, the laser-spot dimensions at the focus was 100 × 80 μm2 FWHM (170 × 136 μm2 at 1/e2 intensity), the pulse energy was 40 µJ, the nominal pulse duration was 70 fs (not confirmed at the sample position), and the repetition rate was 30 Hz. The energy of a photon at 640 nm is 3.1×10-19⁢J. Using the photon density of the laser at 1/e2 convention of 1.7 mJ/mm2, we obtain a photon fluence of 5.48×1015⁢photons⋅mm-2. The extinction coefficient of biliverdin in the phytochrome at 640 nm (ϵ640) is 27.7×103⁢M-1⁢cm-1 and the cross section is then σ640=l⁢n⁢(10)⋅ϵ640⋅1000/NA=1.06×10-14⁢mm2⋅molecule-1, where NA is Avogadro’s number. Multiplying the photon fluence with the cross section yields 58 photons per molecule. Light scattering in the carrier matrix decreases the effective fluence of photons that interact with the crystals. Our absorption spectra of the grease (Figure 1—figure supplement 1) indicate that the grease is transparent when untreated, but attenuates the light intensity by 2 orders of magnitude in the visible region when mixed with crystallization buffer or crystals (pathlength 50 µm). This indicates that almost every photon is scattered. Therefore, even when neglecting the scattering of the jet surface, crystals will be exposed to a photon fluence that is significantly reduced. A reduction of the photon fluence by 2 orders of magnitude is a realistic assumption as we used grease jets with a diameter of 75 µm or 100 µm. Another factor that contributes to the reduction of the number of photons per chromophore and non-homogeneous illumination of the microcrystals is the orientation of the crystals and the high chromophore density in them. The first few chromophores in the light path will shade the remaining chromophores in the needle-shaped crystals. Since the X-rays probe every molecule in their path with approximately same likelihood, the average photon fluence per probed chromophore is reduced. Assuming that the effective fluence inside the grease jet is reduced by a factor of 100, we estimate an average number of 0.5–1 photons per chromophore. This is consistent with the photoexcitation yield of 8% and with our experimental finding that the difference signal vanishes under the noise signal when reducing the photon fluence by a factor of 10 (Figure 2).
+The optical laser parameters used for the experiment were as follows: wavelength was 640 nm, the laser-spot dimensions at the focus was 100 × 80 μm2 FWHM (170 × 136 μm2 at $1/e^{2}$ intensity), the pulse energy was 40 µJ, the nominal pulse duration was 70 fs (not confirmed at the sample position), and the repetition rate was 30 Hz. The energy of a photon at 640 nm is $3.1\times10^{-19}⁢J$. Using the photon density of the laser at $1/e^{2}$ convention of 1.7 mJ/mm2, we obtain a photon fluence of $5.48\times10^{15}⁢photons⋅mm^{-2}$. The extinction coefficient of biliverdin in the phytochrome at 640 nm ($ϵ_{640}$) is $27.7\times10^{3}⁢M^{-1}⁢cm^{-1}$ and the cross section is then $\sigma_{640}=l⁢n⁢(10)⋅ϵ_{640}⋅1000/N_{A}=1.06\times10^{-14}⁢mm^{2}⋅molecule^{-1}$, where $N_{A}$ is Avogadro’s number. Multiplying the photon fluence with the cross section yields 58 photons per molecule. Light scattering in the carrier matrix decreases the effective fluence of photons that interact with the crystals. Our absorption spectra of the grease (Figure 1—figure supplement 1) indicate that the grease is transparent when untreated, but attenuates the light intensity by 2 orders of magnitude in the visible region when mixed with crystallization buffer or crystals (pathlength 50 µm). This indicates that almost every photon is scattered. Therefore, even when neglecting the scattering of the jet surface, crystals will be exposed to a photon fluence that is significantly reduced. A reduction of the photon fluence by 2 orders of magnitude is a realistic assumption as we used grease jets with a diameter of 75 µm or 100 µm. Another factor that contributes to the reduction of the number of photons per chromophore and non-homogeneous illumination of the microcrystals is the orientation of the crystals and the high chromophore density in them. The first few chromophores in the light path will shade the remaining chromophores in the needle-shaped crystals. Since the X-rays probe every molecule in their path with approximately same likelihood, the average photon fluence per probed chromophore is reduced. Assuming that the effective fluence inside the grease jet is reduced by a factor of 100, we estimate an average number of 0.5–1 photons per chromophore. This is consistent with the photoexcitation yield of 8% and with our experimental finding that the difference signal vanishes under the noise signal when reducing the photon fluence by a factor of 10 (Figure 2).
 
-## SFX data acquisition
+### SFX data acquisition
 
 Serial femtosecond crystallographic data were collected at SPring-8 Angstrom Compact Free Electron Laser (SACLA) in two beamtimes in October 2018 and May 2019. The microcrystals were pelleted by brief centrifugation and the crystal pellet was mixed with 180 µL of grease. The grease/crystal mixture was loaded into a 4 mm sample reservoir for data acquisition. The sample was delivered to the X-ray beam at a flow rate of 2.5 µL/min or 4.2 µL/min for 75 µm and 100 µm diameter nozzles, respectively. The time resolution of the experiment was limited by the jitter of the XFEL of 100 fs r.m.s. The experimental settings were nominally the same for the 1 ps and 10 ps delay times and all data were recorded during 7 hr of beamtime. We also recorded data at 3 ps delay time, but these generated electron density maps of poor quality due to an unknown reason and were therefore not analyzed further.
 
-## Data processing
+### Data processing
 
 The background of the detector was estimated by averaging the first 150 dark images in each run and then subtracted from each diffraction pattern. Diffraction images with Bragg spots (the ‘hits’) were found by a version of Cheetah adapted for SACLA (Nakane et al., 2016; Barty et al., 2014). These hits were indexed by the program CrystFEL (version 0.6.3) (White et al., 2012). Indexing was performed using Dirax and Mosflm (Duisenberg, 1992; Battye et al., 2011). Spot finding in each diffraction image was done with the peakfinder8 algorithm using the parameters (min SNR = 4.5, threshold = 100, minimum pixel counts = 3). The indexed patterns were merged and scaled using partialator in CrystFEL and hkl files were produced. The figure of merits (Table 1) were calculated by using compare_hkl and check_hkl in CrystFEL. The histograms of the unit cell parameters are presented in Figure 3. All diffraction images have been deposited to CXIDB under ID 121.
 
-## Refinement of dark structure
+### Refinement of dark structure
 
 The initial phases were solved by molecular replacement with Phaser (McCoy et al., 2007) and the PAS-GAF crystal structure (PDB ID 5K5B) (Edlund et al., 2016) as a search model. The structure was refined with REFMAC version 5.8.0135 (Murshudov et al., 2011) with a weight factor for the geometry restraints of 0.05, accompanied by model building steps with Coot 0.8.2 (Emsley et al., 2010). The final structure (DrBphPdark) had Rwork/Rfree of 0.161/0.192 and no Ramachandran outliers (Table 1). The coordinates and structure factors have been deposited in the Protein Data Bank under the accession code 6T3L.
 
-## Computation of difference electron density maps
+### Computation of difference electron density maps
 
-The difference structure factors (Δ⁢F) are computed from the measured structure factor amplitudes in dark and for preset delay times between laser and X-ray pulses as |Δ⁢Fo|=w⁢(|Fol⁢i⁢g⁢h⁢t|-|Fod⁢a⁢r⁢k|) and with phases taken from the dark structural model (DrBphPdark). |Fod⁢a⁢r⁢k| and |Fol⁢i⁢g⁢h⁢t| were brought to the absolute scale by first scaling |Fod⁢a⁢r⁢k| to |Fcd⁢a⁢r⁢k| and then scaling |Fol⁢i⁢g⁢h⁢t| to |Fod⁢a⁢r⁢k| using the CCP4 program Scaleit (Winn et al., 2011). Difference Fourier density maps were calculated with a low resolution scaling cut-off at 18 Å . A weighting factor (w) was determined for each reflection to reduce the influence of outliers (Ren et al., 2001). From the weighted Δ⁢F, a difference electron density map (Δ⁢ρ) is calculated using the program ‘fft’ from the ccp4 suite of programs (Winn et al., 2011). Since Δ⁢F are on the absolute scale, Δ⁢ρ is on half the absolute scale as a result of the difference Fourier approximation (Henderson and Moffat, 1971; Pandey et al., 2020).
+The difference structure factors ($Δ⁢F$) are computed from the measured structure factor amplitudes in dark and for preset delay times between laser and X-ray pulses as $|Δ⁢F_{o}|=w⁢(|F_{o}^{l⁢i⁢g⁢h⁢t}|-|F_{o}^{d⁢a⁢r⁢k}|)$ and with phases taken from the dark structural model (DrBphPdark). $|F_{o}^{d⁢a⁢r⁢k}|$ and $|F_{o}^{l⁢i⁢g⁢h⁢t}|$ were brought to the absolute scale by first scaling $|F_{o}^{d⁢a⁢r⁢k}|$ to $|F_{c}^{d⁢a⁢r⁢k}|$ and then scaling $|F_{o}^{l⁢i⁢g⁢h⁢t}|$ to $|F_{o}^{d⁢a⁢r⁢k}|$ using the CCP4 program Scaleit (Winn et al., 2011). Difference Fourier density maps were calculated with a low resolution scaling cut-off at 18 Å . A weighting factor ($w$) was determined for each reflection to reduce the influence of outliers (Ren et al., 2001). From the weighted $Δ⁢F$, a difference electron density map ($Δ⁢ρ$) is calculated using the program ‘fft’ from the ccp4 suite of programs (Winn et al., 2011). Since $Δ⁢F$ are on the absolute scale, $Δ⁢ρ$ is on half the absolute scale as a result of the difference Fourier approximation (Henderson and Moffat, 1971; Pandey et al., 2020).
 
-## Structure refinement of light structure
+### Structure refinement of light structure
 
-Extrapolated structural factors were assembled from amplitudes computed as |Fe|=|Fcd⁢a⁢r⁢k|+α*|Δ⁢Fo|. The Fcd⁢a⁢r⁢k denotes the calculated structure factors of the refined dark structure (DrBphPdark). The phases were taken from DrBphPdark is inversely related to the population of the photoinduced state by (100/α)*2 (Pandey et al., 2020; Henderson and Moffat, 1971). We estimated α based on Fe map features in the chromophore-binding pocket. Too high values for α lead to physically unrealistic negative electron density. We converged to α=25, which corresponds to 8% photoexcitation yield.
+Extrapolated structural factors were assembled from amplitudes computed as $|F_{e}|=|F_{c}^{d⁢a⁢r⁢k}|+\alpha*|Δ⁢F_{o}|$. The $F_{c}^{d⁢a⁢r⁢k}$ denotes the calculated structure factors of the refined dark structure (DrBphPdark). The phases were taken from DrBphPdark is inversely related to the population of the photoinduced state by $(100/\alpha)*2$ (Pandey et al., 2020; Henderson and Moffat, 1971). We estimated $\alpha$ based on $F_{e}$ map features in the chromophore-binding pocket. Too high values for $\alpha$ lead to physically unrealistic negative electron density. We converged to $\alpha=25$, which corresponds to 8% photoexcitation yield.
 
-Fe represents the pure structure factor of the photo-activated state (Figure 3—figure supplement 1). Refinement of a structural model was then performed in real and reciprocal space, using Coot (Emsley et al., 2010) and Phenix (Adams et al., 2010). The equilibrium values for the restraints used in the refinement of the biliverdin chromophore were taken from a minimal energy biliverdin ground state geometry that was obtained at the B3LYP/6–31G* level of density functional theory. Torsional restraints for the excited state geometry with the twisted D-ring were obtained at the SA(5)- CASSCF(12,12)/cc-pVDZ level of ab initio theory. We removed the torsion restrains for the C/D-ring (C14-C15-C16-C17; C14-C15-C16-ND; C13-C14-C15-C16; NC-C14-C15-C16) and for the A/B-ring (C3-C4-C5-C6; NA-C4-C5-C6; C4-C5-C6-C7; C4-C5-C6-NB) during refinement. The overall aim of the refinement was to maximize the agreement between the observed and calculated difference maps. To evaluate the agreement, we subtracted the calculated from the observed difference electron density (Δ⁢ρo-Δ⁢ρc). The computation of this difference-difference maps require scaling of the maps to each other. To do so, the highest and lowest intensities of Δ⁢ρo were scaled to the corresponding maximum and minimum of Δ⁢ρc and the observed Δ⁢ρo were interpolated linearly according to this scaling. The resulting difference-difference electron density map was used to identify sites, which required further optimization in subsequent refinement steps. Calculation of Pearson Correlation Coefficient (PCC) values between the Δ⁢ρo and Δ⁢ρc were applied to guide refinement of specific regions, such as the D-ring and the whole chromophore region. To do so, the correlation was determined based on electron density within a sphere with a radius of 3.5 Å or 10 Å centred on the D-ring or pyrrole water, respectively. As a final step in the refinement procedure, we refined the models with REFMAC version 5.8.0135 (Murshudov et al., 2011) with high geometry restraints (weight factor 0.005). This was done against phased extrapolated structure factors, using the phases of the refined light and dark structure for computation of phased Δ⁢F as described (Pande et al., 2016). The structures did not change much, although the R factors dropped in this last step of refinement to Rwork/Rfree of 0.230/0.256 (Table 1). The coordinates and structure factors have been deposited in the Protein Data Bank under the accession code 6T3U.
+$F_{e}$ represents the pure structure factor of the photo-activated state (Figure 3—figure supplement 1). Refinement of a structural model was then performed in real and reciprocal space, using Coot (Emsley et al., 2010) and Phenix (Adams et al., 2010). The equilibrium values for the restraints used in the refinement of the biliverdin chromophore were taken from a minimal energy biliverdin ground state geometry that was obtained at the B3LYP/6–31G* level of density functional theory. Torsional restraints for the excited state geometry with the twisted D-ring were obtained at the SA(5)- CASSCF(12,12)/cc-pVDZ level of ab initio theory. We removed the torsion restrains for the C/D-ring (C14-C15-C16-C17; C14-C15-C16-ND; C13-C14-C15-C16; NC-C14-C15-C16) and for the A/B-ring (C3-C4-C5-C6; NA-C4-C5-C6; C4-C5-C6-C7; C4-C5-C6-NB) during refinement. The overall aim of the refinement was to maximize the agreement between the observed and calculated difference maps. To evaluate the agreement, we subtracted the calculated from the observed difference electron density ($Δ⁢ρ_{o}-Δ⁢ρ_{c}$). The computation of this difference-difference maps require scaling of the maps to each other. To do so, the highest and lowest intensities of $Δ⁢ρ_{o}$ were scaled to the corresponding maximum and minimum of $Δ⁢ρ_{c}$ and the observed $Δ⁢ρ_{o}$ were interpolated linearly according to this scaling. The resulting difference-difference electron density map was used to identify sites, which required further optimization in subsequent refinement steps. Calculation of Pearson Correlation Coefficient (PCC) values between the $Δ⁢ρ_{o}$ and $Δ⁢ρ_{c}$ were applied to guide refinement of specific regions, such as the D-ring and the whole chromophore region. To do so, the correlation was determined based on electron density within a sphere with a radius of 3.5 Å or 10 Å centred on the D-ring or pyrrole water, respectively. As a final step in the refinement procedure, we refined the models with REFMAC version 5.8.0135 (Murshudov et al., 2011) with high geometry restraints (weight factor 0.005). This was done against phased extrapolated structure factors, using the phases of the refined light and dark structure for computation of phased $Δ⁢F$ as described (Pande et al., 2016). The structures did not change much, although the R factors dropped in this last step of refinement to Rwork/Rfree of 0.230/0.256 (Table 1). The coordinates and structure factors have been deposited in the Protein Data Bank under the accession code 6T3U.

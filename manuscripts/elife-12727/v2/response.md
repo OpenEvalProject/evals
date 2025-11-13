@@ -49,9 +49,7 @@ B) The frequency analysis suggested by the reviewer requires a larger database. 
 
 C) The time bins we used reflect the different GECI kinetics (longer for slower GECIs). Performing the same analysis with a constant time bin (i.e. 250ms like in Chen et al., 2013) does not change the mean response much, but increases the variability, and reduces the detection sensitivity. We added a clarification to the text.
 
-D) We modified Figure 5D (Figure 6D in the revised manuscript) to show the data distribution.10.7554/eLife.12727.032Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.12727.032
-
-DOI: http://dx.doi.org/10.7554/eLife.12727.032
+D) We modified Figure 5D (Figure 6D in the revised manuscript) to show the data distribution.10.7554/eLife.12727.032Author response image 1.
 
 5) Appearance of the green species: Is it present right after onset of expression or a consequence of long term expression? If so, it would be useful to see a time course of green species expression profiles in vivo after viral gene delivery. This could help users to find a suitable time window that offers best conditions for their experiments.We now show that jRGECO1a (but not jRCaMP1a/b) accumulates in lysosomes and that this phenomenon is more pronounced during long-term expression in vivo compared to cultured neurons. We also show that this accumulation contributes to lower response amplitudes (Figure 6—figure supplement 1). In addition we added a more detailed characterization of the greenish emission and the change of the jRGECO1a greenish component with time, as the reviewers suggested (Figure 6—figure supplement 3).
 
@@ -59,6 +57,4 @@ DOI: http://dx.doi.org/10.7554/eLife.12727.032
 
 7) The authors write, "GECI responses are larger and faster in the cytoplasm than in the nucleus (unpublished data)." Although the "faster" part is consistent with the findings in other labs, it has been observed by others that the signal can sometimes actually be larger in the nucleus than in the cytoplasm. Thus, it would be helpful if the authors could share some of this unpublished data in the supplement.
 
-In comparisons using red GECIs with and without an NES we consistently find smaller responses without an NES (where sensor is found in both the cytoplasm and nucleus). See for example Author response image 2. The data show that responses are smaller and slower in the nucleus. We feel that our description in the text is adequate.10.7554/eLife.12727.033Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.12727.033
-
-DOI: http://dx.doi.org/10.7554/eLife.12727.033
+In comparisons using red GECIs with and without an NES we consistently find smaller responses without an NES (where sensor is found in both the cytoplasm and nucleus). See for example Author response image 2. The data show that responses are smaller and slower in the nucleus. We feel that our description in the text is adequate.10.7554/eLife.12727.033Author response image 2.

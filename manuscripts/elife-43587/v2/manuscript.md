@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.43587.001 A series of recent studies identified key structures in the mesencephalic locomotor region and the caudal brainstem of mice involved in the initiation and control of slow (exploratory) and fast (escape-type) locomotion and gait. However, the interactions of these brainstem centers with each other and with the spinal locomotor circuits are poorly understood. Previously we suggested that commissural and long propriospinal interneurons are the main targets for brainstem inputs adjusting gait (Danner et al., 2017). Here, by extending our previous model, we propose a connectome of the brainstem-spinal circuitry and suggest a mechanistic explanation of the operation of brainstem structures and their roles in controlling speed and gait. We suggest that brainstem control of locomotion is mediated by two pathways, one controlling locomotor speed via connections to rhythm generating circuits in the spinal cord and the other providing gait control by targeting commissural and long propriospinal interneurons.
+A series of recent studies identified key structures in the mesencephalic locomotor region and the caudal brainstem of mice involved in the initiation and control of slow (exploratory) and fast (escape-type) locomotion and gait. However, the interactions of these brainstem centers with each other and with the spinal locomotor circuits are poorly understood. Previously we suggested that commissural and long propriospinal interneurons are the main targets for brainstem inputs adjusting gait (Danner et al., 2017). Here, by extending our previous model, we propose a connectome of the brainstem-spinal circuitry and suggest a mechanistic explanation of the operation of brainstem structures and their roles in controlling speed and gait. We suggest that brainstem control of locomotion is mediated by two pathways, one controlling locomotor speed via connections to rhythm generating circuits in the spinal cord and the other providing gait control by targeting commissural and long propriospinal interneurons.
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Using the model, we investigated (a) the involvement of CnF and PPN in the contr
 
 ## Results
 
-## Model description
+### Model description
 
 To model and computationally investigate the brainstem control of locomotion, we built upon our previous model of spinal circuits, consisting of four RGs (each controlling one limb), which interact via local cervical and lumbar CINs and LPNs connecting cervical and lumbar compartments (Danner et al., 2017).
 
@@ -53,15 +53,181 @@ In contrast, the LPGi-Glu-2 populations receive bilateral excitatory inputs only
 
 To keep the extensor centers in a tonic mode (Zhong et al., 2012; Shevtsova et al., 2015; Danner et al., 2016; Shevtsova and Rybak, 2016; Danner et al., 2017; Ausborn et al., 2018) a constant input drive (DVN,ex = 2.15) was applied to the left and right brainstem VN populations which project to all four RG extensor centers (E, Figure 2, see also Danner et al., 2016). The VN populations in our model represent vestibular nuclei as well as other potential sources of excitatory inputs to the extensor centers of the central pattern generator involved in postural control. Vestibulospinal neurons are known to be tonically active (Orlovsky, 1972), preferentially project to spinal interneurons and slow motoneurons of the extensor pools (Miller et al., 1975; Lemon, 2008; Basaldella et al., 2015) and have been implicated in mediating extensor tone (Fulton et al., 1930; Burke et al., 1972). However, other supraspinal centers might also be involved. All other lumbar and cervical circuits and their local, ascending and descending interconnections shown in Figure 2 are described in Danner et al. (2017). Connection weights are listed in Table 1.
 
-## Differential role of multiple brainstem centers
+**Table 1.**
+ Connection weights.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Target (wij)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Within brainstem</td>
+    </tr>
+    <tr>
+      <td>CnF-Glu</td>
+      <td>i-PPN-Glu (0.56), i-LPGi-Glu-1 (0.95), i-LPGi-Glu-2 (1.02),c-CnF-Glu (0.1), c-PPN-Glu (0.15), c-LPGi-Glu-1 (0.45),c-LPGi-Glu-2 (0.08),</td>
+    </tr>
+    <tr>
+      <td>CnF-GABA/GLY</td>
+      <td>i-CnF-Glu (−0.5), i-PPN-Glu (−0.5)</td>
+    </tr>
+    <tr>
+      <td>PPN-Glu</td>
+      <td>i-LPGi-Glu-1 (1), c-LPGi-Glu-1 (0.4)</td>
+    </tr>
+    <tr>
+      <td>PPN-GABA/GLY</td>
+      <td>i-PPN-Glu (−0.5),</td>
+    </tr>
+    <tr>
+      <td>LPGi-GABA/GLY</td>
+      <td>i-LPGi-Glu-1 (−0.5), i-LPGi-Glu-2 (−0.5)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Vestibular input to spinal cord</td>
+    </tr>
+    <tr>
+      <td>VN</td>
+      <td>i-RG-E (1)</td>
+    </tr>
+    <tr>
+      <td colspan="2">From brainstem to relay neurons</td>
+    </tr>
+    <tr>
+      <td>LPGi-Glu-1</td>
+      <td>i-Ine (1), i-CINe (1)</td>
+    </tr>
+    <tr>
+      <td>LPGi-Glu-2</td>
+      <td>i-dIni (1), c-dIni (1)</td>
+    </tr>
+    <tr>
+      <td>LPGi-GABA/GLY</td>
+      <td>c-Ine(−0.5), c-CINe (−0.5)</td>
+    </tr>
+    <tr>
+      <td colspan="2">From relay neurons to spinal circuits</td>
+    </tr>
+    <tr>
+      <td>Ine</td>
+      <td>i-RG-F (1)</td>
+    </tr>
+    <tr>
+      <td>Ini</td>
+      <td>i-V0D (4), i-V0V (1.7), i-f-V0D-LPN (7.5)</td>
+    </tr>
+    <tr>
+      <td>CINe</td>
+      <td>c-RG-F (1)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Within girdle and side of the cord</td>
+    </tr>
+    <tr>
+      <td>RG-F (fore and hind)</td>
+      <td>i-InF (0.4), i-V0D (0.7), i-V2a-lr (1), i-V3 (0.35), i-V2a-diag (0.5)</td>
+    </tr>
+    <tr>
+      <td>f-RG-F (fore only)</td>
+      <td>i-LPNi (0.7), i-V0D-LPN (0.5)</td>
+    </tr>
+    <tr>
+      <td>RG-E</td>
+      <td>i-InE (0.4), i-CINi (0.4), i-Sh2-LPN (0.5)</td>
+    </tr>
+    <tr>
+      <td>InF</td>
+      <td>i-RG-E (–1)</td>
+    </tr>
+    <tr>
+      <td>InE</td>
+      <td>i-RG-F (–0.08)</td>
+    </tr>
+    <tr>
+      <td>V2a-lr</td>
+      <td>i-V0V (1)</td>
+    </tr>
+    <tr>
+      <td>V2a-diag</td>
+      <td>i-V0V-LPN (0.9)</td>
+    </tr>
+    <tr>
+      <td>Ini</td>
+      <td>i-RG-F (–0.075)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Between left and right circuits within a girdle</td>
+    </tr>
+    <tr>
+      <td>V0D</td>
+      <td>c-RG-F (–0.07)</td>
+    </tr>
+    <tr>
+      <td>V0V</td>
+      <td>c-Ini (0.6)</td>
+    </tr>
+    <tr>
+      <td>V3</td>
+      <td>c-RG-F (0.03)</td>
+    </tr>
+    <tr>
+      <td>CINi</td>
+      <td>c-RG-F (–0.03)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Between fore and hind circuits</td>
+    </tr>
+    <tr>
+      <td>f-LPNi</td>
+      <td>ih-RG-F (–0.01)</td>
+    </tr>
+    <tr>
+      <td>f-Sh2-LPN</td>
+      <td>ih-RG-F (0.01)</td>
+    </tr>
+    <tr>
+      <td>h-Sh2-LPN</td>
+      <td>if-RG-F (0.075)</td>
+    </tr>
+    <tr>
+      <td>f-V0D-LPN</td>
+      <td>ch-RG-F (–0.1)</td>
+    </tr>
+    <tr>
+      <td>f-V0V-LPN</td>
+      <td>ch-RG-F (0.02)</td>
+    </tr>
+    <tr>
+      <td>h-V0V-LPN</td>
+      <td>cf-RG-F (0.065)</td>
+    </tr>
+  </tbody>
+</table>
+
+_i-, ipsilateral; c-, contralateral; f-, fore; h-, hind; CINi, inhibitory commissural interneurons; Ini, inhibitory interneurons; InE, extensor center inhibitory interneuron; InF, flexor center inhibitory interneuron; LPNi, inhibitory long propriospinal neuron; dIni, inhibitory relay neurons; Ine, ipsilaterally projecting tonically active excitatory relay neurons; CINe, commissural tonically active excitatory relay neurons; RG-F, flexor center, RG-E, extensor center. For target neurons with copies in both, the cervical and the lumbar circuits, connection weights are identical unless otherwise noted._
+
+### Differential role of multiple brainstem centers
 
 In their recent studies, Caggiano et al. (2018) and Josset et al. (2018) have explored the anatomical and molecular heterogeneity of the MLR, highlighting the differential role of glutamatergic neurons within the CnF and PPN. Our model was implemented and adjusted to reproduce their main results:
+
+![Figure 3.](https://cdn.elifesciences.org/articles/43587/elife-43587-fig3-v2.jpg)
+
+**Figure 3.:** (A) Unilateral stimulation of CnF Glu neurons (mCnF = 1.35; bCnF = 3.95) elicited locomotion with a wide range of frequencies with all four gaits expressed depending on stimulation strength (α). The results of these simulations closely correspond to the results of simulations using our previous model (Danner et al., 2017). Gait analyses for (A) are shown in Figure 3—figure supplement 1. (B) Unilateral stimulation of PPN Glu neurons (mPPN = 1.5; bPPN = 4) produced only lower locomotor frequencies and alternating gaits: walk and trot. (C) Unilateral activation of CnF Glu neurons (mCnF = 2.55; bCnF = 4.2), while PPN activity was suppressed bilaterally, generated all four gaits but maximum frequency was slightly reduced. (D) Unilateral activation of all LPGi Glu neurons (mLPGi = 1.1; bLPGi = 2.45) produced locomotor frequencies and gaits similar to those shown in (A). Normalized phase differences of 0.5 correspond to alternation, whereas differences of 0 and 1 correspond to synchronization. Blue and red lines indicate stable phase differences with stepwise increase and decrease of the bifurcation parameter α, respectively. Colored areas indicate the expressed gaits or regions of bistability between two adjacent gaits. Bifurcation diagrams are calculated as described in Danner et al. (2017).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43587/elife-43587-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** These simulations show correspondence of the present model behavior with that of the previous model under similar conditions. (A) Rhythmic extensor activity for all four RGs and (B) phase differences for the four characteristic gaits (walk, trot, gallop and bound) when CnF- glutamatergic neurons were stimulated unilaterally (same data as in Figure 3A). These simulations are comparable with those shown in Danner et al. (2017). lh: left hind; lf: left fore; rh: right hind; rf: right fore; RG: rhythm generator. Gait analyses where performed as described in Material and methods.
 
 While stimulation of the MLR can initiate and support locomotion of different frequencies and gaits, it does so - in the biological system (Capelli et al., 2017) as well as in our model - through activation of glutamatergic neurons in the RF, whose axons descend bilaterally to spinal circuits and presumably activate spinal RGs. Specifically, Capelli et al. (2017) have recently shown that unilateral selective stimulation of glutamatergic neurons of the LPGi, a structure within the medullary RF, can initiate locomotion and elicit locomotor oscillations and gaits in a range corresponding to that of selective CnF stimulation. Our model was able to reproduce these findings as well. Unilateral stimulation of glutamatergic LPGi populations in the model produced a similarly wide range of locomotor frequencies and corresponding gaits as was the case for unilateral stimulation of glutamatergic neurons in the CnF (Figure 3D). This suggests that the RF, and particularly the LPGi, is involved in mediating MLR control of locomotion.
 
 Together, the above simulations have demonstrated that the proposed brainstem-spinal cord connectome allowed our model to reproduce the experimentally observed effects of stimulation of glutamatergic populations within the CnF, PPN, and LPGi.
 
-## Frequency-dependent gait expression and the effects of PPN inactivation
+### Frequency-dependent gait expression and the effects of PPN inactivation
 
 To explicitly examine the dependence of distinct locomotor gaits on locomotor frequency, the bifurcation diagrams of Figure 3A and C were rebuilt to plot changes in phase difference against locomotor frequency (Figure 4A). We then compared locomotor gaits when glutamatergic neurons of the left CnF where stimulated (Figure 4A top diagram, same simulation as in Figure 3A) with the same stimulation while the PPN was bilaterally inactivated (Figure 4A, bottom diagram, same simulation as Figure 3C). The inactivation of the PPN shifted the transition from alternating gaits (walk and trot) to synchronized gaits (gallop and bound) to lower locomotor frequencies.
 
@@ -69,17 +235,17 @@ To explicitly examine the dependence of distinct locomotor gaits on locomotor fr
 
 **Figure 4.:** (A)-(C) Comparison of model behavior when CnF glutamatergic neurons were stimulated unilaterally without (top graphs) and with (bottom graphs) bilateral inactivation of the PPN. (A) Hindlimb left-right phase differences plotted against locomotor frequency using data from Figure 3A and C. Comparison of the top and bottom diagram shows that the transition from alternating gaits - walk and trot - to synchronous gaits - gallop and bound - shifted towards lower frequencies when the PPN was bilaterally inactivated. (B) Schematic representation of this shift. Dashed lines and arrow indicate the shift of the beginning of gallop. (C) Step-by-step variability for hind left-right phase differences illustrates that synchronous gaits were also shifted to lower frequencies on a step-by-step basis. Normalized phase differences of 0.5 correspond to alternation, whereas phase differences of 0 and 1 correspond to synchronization. Blue and red lines in (A) indicate the stable phase differences with stepwise increase and decrease of the bifurcation parameter α, respectively. Colored areas indicate the expressed gaits or regions of bistability between two adjacent gaits. Bifurcation diagrams are calculated as described in Danner et al. (2017). In (C), step-by-step variability with increased noise was calculated as described in Materials and methods.
 
-The mechanism of this shift in our model is the following. As described above, the LPGi-Glu-1 pathways control locomotor frequency and the LPGi-Glu-2 pathways control gait by promoting the transition from alternating to synchronous gaits (Figures 1 and 2). When the PPN was bilaterally inactivated, only the drives to LPGi-Glu-1 were reduced since the PPN on each side only projects to LPGi-Glu-1 while the drive to LPGi-Glu-2 (promoting the transition to synchronous gaits) on each side remained unaffected (Figures 1 and 2). Thus, frequency increased more slowly with increasing CnF stimulation and the transition to synchronous gaits (gallop and bound) occurred at lower locomotor frequencies (Figure 4A,B). This shift was even more pronounced after increasing noisy current in all neurons (σNoise increased from 0.005 pA to 1.0 pA; Figure 4C). Incorporating a moderate noise allowed us to reproduce a natural step-to-step variability and variable frequency-dependent changes similar to those during natural locomotion. Phase differences were evaluated for each step cycle and plotted in equally spaced bins between 0 and 1 over the corresponding locomotor frequency (partitioned in 0.25 Hz bins). All values were then normalized to the total number of bins and can be interpreted as the relative frequency of occurrence of each phase difference-frequency pair (see Materials and methods). Figure 4C shows that inactivation of the PPN, while the left CnF glutamatergic population was stimulated, resulted not only in a shift of the transition from alternating to synchronized gaits to a lower frequency (Figure 4A,B) but also affected the stability of the steady-state gaits. This can be seen by an increased variability of the left-right phase differences around their stable-state solutions when the PPN is inactivated. The variability increased with increasing frequency and resulted in a wider transition period between trot (left-right alternation) and gallop (left-right synchronization).
+The mechanism of this shift in our model is the following. As described above, the LPGi-Glu-1 pathways control locomotor frequency and the LPGi-Glu-2 pathways control gait by promoting the transition from alternating to synchronous gaits (Figures 1 and 2). When the PPN was bilaterally inactivated, only the drives to LPGi-Glu-1 were reduced since the PPN on each side only projects to LPGi-Glu-1 while the drive to LPGi-Glu-2 (promoting the transition to synchronous gaits) on each side remained unaffected (Figures 1 and 2). Thus, frequency increased more slowly with increasing CnF stimulation and the transition to synchronous gaits (gallop and bound) occurred at lower locomotor frequencies (Figure 4A,B). This shift was even more pronounced after increasing noisy current in all neurons ($\sigma_{Noise}$ increased from 0.005 pA to 1.0 pA; Figure 4C). Incorporating a moderate noise allowed us to reproduce a natural step-to-step variability and variable frequency-dependent changes similar to those during natural locomotion. Phase differences were evaluated for each step cycle and plotted in equally spaced bins between 0 and 1 over the corresponding locomotor frequency (partitioned in 0.25 Hz bins). All values were then normalized to the total number of bins and can be interpreted as the relative frequency of occurrence of each phase difference-frequency pair (see Materials and methods). Figure 4C shows that inactivation of the PPN, while the left CnF glutamatergic population was stimulated, resulted not only in a shift of the transition from alternating to synchronized gaits to a lower frequency (Figure 4A,B) but also affected the stability of the steady-state gaits. This can be seen by an increased variability of the left-right phase differences around their stable-state solutions when the PPN is inactivated. The variability increased with increasing frequency and resulted in a wider transition period between trot (left-right alternation) and gallop (left-right synchronization).
 
-## Analysis of relative probabilities of gait expression
+### Analysis of relative probabilities of gait expression
 
-Incorporation of step-to-step variability, as described at the end of the previous section, also allows the analysis of variable gait expression as observed in natural locomotion. To approximate frequency-dependent gait expression under noise conditions, we calculated frequency-dependent relative probabilities of expression of each gait (see Materials and methods) for three cases: when stimulation was applied to either CnF, PPN, or LPGi glutamatergic neurons (Figure 5). Activation of glutamatergic neurons in the CnF with fixed noise (σNoise = 1 pA) and varying drives (α) produced a wide range of frequencies and expression of left-right alternating (walk and trot) as well as left-right synchronous gaits (gallop and bound), while activation of glutamatergic neurons in the PPN resulted in lower maximum frequencies and only expression of left-right alternating gaits (Caggiano et al., 2018). While gait distributions were not reported for LPGi stimulations our model suggests that LPGi stimulation can induce both alternating and synchronized gaits (Figure 5C). Those gait transitions are expected given the relationship between gait and speed.
+Incorporation of step-to-step variability, as described at the end of the previous section, also allows the analysis of variable gait expression as observed in natural locomotion. To approximate frequency-dependent gait expression under noise conditions, we calculated frequency-dependent relative probabilities of expression of each gait (see Materials and methods) for three cases: when stimulation was applied to either CnF, PPN, or LPGi glutamatergic neurons (Figure 5). Activation of glutamatergic neurons in the CnF with fixed noise ($\sigma_{Noise}$ = 1 pA) and varying drives (α) produced a wide range of frequencies and expression of left-right alternating (walk and trot) as well as left-right synchronous gaits (gallop and bound), while activation of glutamatergic neurons in the PPN resulted in lower maximum frequencies and only expression of left-right alternating gaits (Caggiano et al., 2018). While gait distributions were not reported for LPGi stimulations our model suggests that LPGi stimulation can induce both alternating and synchronized gaits (Figure 5C). Those gait transitions are expected given the relationship between gait and speed.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/43587/elife-43587-fig5-v2.jpg)
 
 **Figure 5.:** (A) Unilateral stimulation of glutamatergic neurons in the CnF resulted in frequency-dependent expression of all gaits: walk, trot and gallop/bound. (B) Unilateral stimulation of glutamatergic neurons in the PPN elicited only alternating gaits, walk and trot, at a lower frequency range. (C) Unilateral stimulation of glutamatergic neurons in the LPGi resulted in frequency-dependent expression of all gaits similar to that in (A). The relative probabilities of frequency-dependent gait expression were analyzed as described in Materials and methods.
 
-## Role of brainstem inhibitory neurons in modulating locomotion
+### Role of brainstem inhibitory neurons in modulating locomotion
 
 Unilateral activation of inhibitory neurons in the CnF, PPN, or LPGi decelerates or stops ongoing locomotor activity (Capelli et al., 2017; Caggiano et al., 2018). In freely behaving mice, optogenetic activation of CnF inhibitory neurons (defined by expression of the Vgat promoter) reduces locomotor speed and, in some trials, halts locomotion completely, while activation of PPN inhibitory neurons reduces locomotor frequency to a much lesser extent with only occasional stopping of locomotion (Extended Data Figure 3 in Caggiano et al., 2018). The optogenetic activation of LPGi inhibitory neurons, like that of CnF inhibitory neurons, reduces locomotor speed down to a complete halt of locomotion at higher stimulation intensities (Figure 2g in Capelli et al., 2017).
 
@@ -101,7 +267,7 @@ Importantly, despite similarities of the effects, the underlying mechanisms for 
 
 ## Discussion
 
-## Brainstem-spinal cord pathways and mechanisms for control of locomotor speed and gait
+### Brainstem-spinal cord pathways and mechanisms for control of locomotor speed and gait
 
 In our previous modeling studies (Danner et al., 2016; Danner et al., 2017) we suggested that locomotor speed and gait (limb coordination) are controlled by descending brainstem drives to different targets within the spinal cord. Specifically, locomotor speed (which is dependent on the frequency of the locomotor rhythm) is determined by descending brainstem drives to the locomotor rhythm generating circuits (RGs) controlling the limbs, whereas the phase relationships between these RGs (defining inter-limb coordination and thus gait) is controlled by descending brainstem drives to the specific CIN and LPN populations mediating left-right and fore-hind interactions between the RGs. However, the previous models did not include brainstem centers and the brainstem drives were simply introduced as external inputs. In the present model, we explicitly simulated brainstem circuits and their descending pathways to the spinal cord.
 
@@ -109,7 +275,7 @@ To simulate MLR-controlled locomotion, the brainstem model included two bilatera
 
 Finally, based on our simulations we suggest that each (left and right) LPGi has separate glutamatergic populations that give rise to two separate pathways controlling locomotor frequency through activation of spinal rhythm generating circuits and gait via regulation of specific spinal CIN and LPN populations (Figures 1 and 2). We also suggest that the activities of these LPGi populations are mediated and distributed within the spinal cord bilaterally and between cervical and lumbar circuits by ipsi- and contralaterally projecting populations of interneurons (such as the Ine, CINe, and dIni populations in Figure 2). Such spinal interneurons that receive descending inputs from the RF and distribute their activity widely within the spinal cord have been found in cats (Jankowska et al., 2003; Matsuyama et al., 2004) and rats (Mitchell et al., 2016). These suggestions await experimental testing in the future.
 
-## Distinct brainstem-spinal cord pathways for control of slow and fast locomotion
+### Distinct brainstem-spinal cord pathways for control of slow and fast locomotion
 
 Recent studies in mice raised a possibility that slow exploratory-type locomotion and fast escape-like locomotion might be initiated and controlled by distinct brainstem circuits. Specifically, it has been shown that slow locomotion can be evoked by activation of glutamatergic neurons in the PPN (Caggiano et al., 2018), whereas fast locomotion is initiated and controlled by glutamatergic neurons in the CnF (Caggiano et al., 2018; Josset et al., 2018). The role of the PPN in the generation (Caggiano et al., 2018) and control (Josset et al., 2018) of slow locomotion appears to be more complex. In contrast to Caggiano et al. (2018), Josset et al. (2018) conclude that activation of PPN glutamatergic neurons in resting animals can only activate flexor muscles but is not very effective in initiating locomotion per se. Yet, similar to Caggiano et al. (2018), the suppression of the PPN in Josset et al. (2018) also reduces the locomotor speed.
 
@@ -117,17 +283,17 @@ To simulate and propose a mechanistic explanation for the functional difference 
 
 A unilateral progressive stimulation of glutamatergic populations in the LPGi produces effects - similar to those during unilateral monotonic activation of the glutamatergic population in the CnF - a monotonic increase of locomotor frequency and frequency-dependent gait transitions (Figures 3D and 5C). While the increase of frequency during unilateral monotonic activation of glutamatergic neurons in the LPGi is consistent with the results of Capelli et al. (2017), the authors of this study did not analyze gaits during their experiments, but our results suggest sequential gait changes with increasing frequencies similar to that of CnF stimulation.
 
-## The effects of PPN inactivation on the locomotor speed and gaits
+### The effects of PPN inactivation on the locomotor speed and gaits
 
 Inactivation of glutamatergic neurons in the PPN leads to an overall reduction of locomotor speed (Caggiano et al., 2018; Josset et al., 2018). More specifically, Caggiano et al. (2018) studied the effect of pharmacological inactivation of the PPN on locomotor characteristics. They found that inactivation of the PPN led to a reduction of locomotor speed, but the animals were still able to express the full spectrum of locomotor gaits. Our simulations were qualitatively consistent with this conclusion (see Figure 3C). Moreover, our simulations have shown that the suppression of the PPN shifts the transition from alternating to synchronized gaits towards lower locomotor frequencies (Figure 4A,B). This shift is even more pronounced after adding noise to the model (Figure 4C).
 
-## Role of brainstem inhibitory neurons in modulating locomotion
+### Role of brainstem inhibitory neurons in modulating locomotion
 
 It has been shown that unilateral optogenetic stimulation of Vgat inhibitory neurons within the CnF in freely moving mice reduces locomotor speed and can fully stop locomotion, while the same stimulation of inhibitory neurons in the PPN affects locomotor speed to a lesser extent and usually does not stop locomotion (Caggiano et al., 2018, their Extended Data Figure 3a–c). The fact that optogenetic activation of inhibitory neurons in the CnF can fully suppress locomotor activity suggests that CnF inhibitory neurons inhibit the PPN, which was implemented in our model (Figures 1 and 2). These inhibitory connections, however have not been shown experimentally. Optogenetic activation of inhibitory neurons in the RF including the LPGi progressively decreases locomotor speed and can fully stop locomotion (Capelli et al., 2017, their Figure 2f,g and Extended Data Figure 6d,h).
 
 Our simulations were qualitatively consistent with these experimental findings (Figure 6). Notably, in our simulations, the decrease of locomotor frequency during unilateral activation of inhibitory populations in the CnF, PPN and LPGi was always accompanied by orderly progressive changes of locomotor gaits toward slower gaits like trot and walk (Figure 6D–F). Although Caggiano et al. (2018) and Capelli et al. (2017) did not analyze gait transitions during progressive increase of stimulation intensity to inhibitory neurons in these areas, our findings suggest that frequency/gait relations are not affected by unilateral activation of inhibitory neurons in these areas.
 
-## Model limitations
+### Model limitations
 
 In this study we aimed to reproduce new experimental data on the brainstem control of locomotion and the specific role of CnF and PPN nuclei and the RF (Capelli et al., 2017; Caggiano et al., 2018; Josset et al., 2018) within the framework of our previous model (Danner et al., 2017). Correspondingly, we incorporated MLR and RF circuits into the model with only minimal changes to the original network structure. This ensures that our previous model assumptions and conclusions hold true for the extended model as well, but at the same time increases the complexity of the model to a point where thorough mathematical and performance analyses are not feasible. Therefore, in future studies it will be beneficial, in parallel with detail models, to generate related, but simplified network models allowing systems level mathematical analysis and more thorough investigation of the dynamic mechanisms underlying the brainstem control of locomotor frequency and gait. An example of such simplifications and systems level analyses has been performed by others for our previous model (Lodi et al., 2017; Lodi et al., 2018),
 
@@ -135,27 +301,47 @@ Similar to our previous modeling investigations (Danner et al., 2016; Danner et 
 
 ## Materials and methods
 
-## Model architecture
+### Model architecture
 
 The model represents a bilateral network of interconnected populations of neurons and includes the simulated brainstem and spinal cord compartments. The present model was based on, and represents an extension of, our previous model (Danner et al., 2017). While keeping the same spinal cord circuitry we added brainstem compartments including bilaterally interacting CnF and PPN compartments as well as LPGi compartments mediating descending brainstem drives to the spinal cord (Figures 1 and 2). Several additional relay neuron populations (Ine, CINe, and dIni) were incorporated to mediate and distribute brainstem signals to the spinal cord bilaterally and between the cervical and lumbar compartments of the cord (Figure 2, more detailed description of new network structures in Results).
 
-## Models of neuron populations and model parameters
+### Models of neuron populations and model parameters
 
-Each population in the model was represented by a non-spiking, ‘activity-based’ model (Ermentrout, 1994). The flexor and extensor RG centers (F and E populations, see Figure 2) incorporated a persistent sodium current and had intrinsic oscillating properties. The average membrane potential, V, in these populations was described as:(1)C⋅dV/dt=−INaP−IL−ISynE−ISynI−INoise.
+Each population in the model was represented by a non-spiking, ‘activity-based’ model (Ermentrout, 1994). The flexor and extensor RG centers (F and E populations, see Figure 2) incorporated a persistent sodium current and had intrinsic oscillating properties. The average membrane potential, V, in these populations was described as:
 
-In all other populations, the average membrane potential obeyed the following equation:(2)C⋅dV/dt=−IL−ISynE−ISynI−INoise,where C is the membrane capacitance, INaP the persistent sodium current, IL the leak current, ISynE and ISynI excitatory and inhibitory synaptic currents, respectively, and INoise a noisy current. The output function f(V) translates V into the integrated population activity representing population output as defined by the linear piecewise function:(3)f(V)={0,if V<Vthr(V−Vthr)/(Vmax−Vthr),if Vthr≤V<Vmax1,if V≥Vmax.
+$$
+C⋅dV/dt=−I_{NaP}−I_{L}−I_{SynE}−I_{SynI}−I_{Noise}.
+$$
+
+In all other populations, the average membrane potential obeyed the following equation:
+
+$$
+C⋅dV/dt=−I_{L}−I_{SynE}−I_{SynI}−I_{Noise},
+$$
+
+where C is the membrane capacitance, INaP the persistent sodium current, IL the leak current, ISynE and ISynI excitatory and inhibitory synaptic currents, respectively, and INoise a noisy current. The output function f(V) translates V into the integrated population activity representing population output as defined by the linear piecewise function:
+
+$$
+f(V)={0,if V<V_{thr}(V−V_{thr})/(V_{max}−V_{thr}),if V_{thr}\leqV<V_{max}1,if V\geqV_{max}.
+$$
 
 A complete description of the population model and parameters are presented in Danner et al. (2017). In all brainstem (CnF, PPN, and LPGi) and relay (Ine, CINe, and Ini) neuron populations the conductance variable, gL, was equal to 5 nS.
 
 Synaptic connection weights were adapted from our previous model (Danner et al., 2017) and weights for newly introduced connections were selected within their operating ranges and tuned to produce gait transitions similar to those of our model from Danner et al. (2017) and to reproduce the relevant experimental data (Capelli et al., 2017; Caggiano et al., 2018). Connection weights are listed in Table 1.
 
-To simulate the effect of activation of a neuron population i (i ∈ [CnF, PPN, LPGi, VN]) in the brainstem, we applied a tonic excitatory drive, Di,j to this population. The stimulation strength Di,j was given by the following equation:(4)Di,j(α)=mi⋅α+bi,where mi is the slope and bi the intercept. The scalar α ∈ [0, 1.05] characterizes the variable stimulation strength. The index j (j ∈ [ex, in]) indicates if excitatory (ex, Glu) or inhibitory (in, GABA/Gly) populations are stimulated.
+To simulate the effect of activation of a neuron population i (i $\in$ [CnF, PPN, LPGi, VN]) in the brainstem, we applied a tonic excitatory drive, Di,j to this population. The stimulation strength Di,j was given by the following equation:
 
-## Computer simulations and data analysis
+$$
+D_{i,j}(\alpha)=m_{i}⋅\alpha+b_{i},
+$$
+
+where mi is the slope and bi the intercept. The scalar α $\in$ [0, 1.05] characterizes the variable stimulation strength. The index j (j $\in$ [ex, in]) indicates if excitatory (ex, Glu) or inhibitory (in, GABA/Gly) populations are stimulated.
+
+### Computer simulations and data analysis
 
 The set of differential equations was solved with the same custom C++ code using odeint of the boost library used in Danner et al. (2017). The C++ code was compiled as a python module and python 3.6 was used to interface with the simulation and to analyze the results. Source code and python scripts to create all simulations presented here are available on GitHub at https://github.com/SimonDanner/CPGNetworkSimulator (Danner, 2019; copy archived at https://github.com/elifesciences-publications/CPGNetworkSimulator). Data analysis procedures are described in Danner et al. (2017).
 
-## Analysis of model performance
+### Analysis of model performance
 
 Similar to our previous models (Shevtsova et al., 2014; Shevtsova et al., 2015; Danner et al., 2016; Danner et al., 2017), the extensor RG centers in the current model were in a tonic mode while the flexor RG centers were oscillating.
 
@@ -165,6 +351,6 @@ The bifurcation diagrams (Figure 3) were built for four normalized phase differe
 
 To consider step-by-step variability (Figure 4C) and relative probabilities of frequency-dependent gait expression (Figure 5), simulations were performed with increased noisy currents (σNoise = 1 pA, see Equation (14) in Danner et al., 2017). To this end, the free parameter α was increased from 0.0 to 1.05 in steps of 0.01. At each step, the simulation was run for 100 s. For the left-right hindlimb phase difference and for the gait, bivariate histograms were created with cycle frequency as the second variable. The phase difference was partitioned into 65 equally spaced bins between 0 and 1 and the frequency was partitioned into 0.25 Hz wide bins from 0 to 14 Hz (Figure 4C). Gaits were evaluated at each step cycle based on the definition in Table 2 of Danner et al. (2017) and gallop and bound were grouped together (Figure 5). The counts per 2D-bin were then divided by the total number of locomotor cycles. Thus, these numbers represent the relative frequency of occurrence of each phase difference-frequency or gait-frequency pair and can be interpreted as a probability.
 
-To simulate the effect of activation of inhibitory (GABA/Gly) neurons in the CnF, PPN, or LPGi, the locomotor-like activity was initially evoked by bilateral application of excitatory drive to glutamatergic neurons in the CnF (DCnF,ex ∈ [2.78, 3.06] in 0.02 steps). Then, to simulate activation of inhibitory (Gly/GABA) populations in the CnF, PPN, or LPGi, for each value of DCnF,ex, the excitatory drive was unilaterally applied to the corresponding inhibitory population (DCnF/PPN/LPGi,in ∈ [1.15, 2.85] in 0.07 steps).
+To simulate the effect of activation of inhibitory (GABA/Gly) neurons in the CnF, PPN, or LPGi, the locomotor-like activity was initially evoked by bilateral application of excitatory drive to glutamatergic neurons in the CnF (DCnF,ex $\in$ [2.78, 3.06] in 0.02 steps). Then, to simulate activation of inhibitory (Gly/GABA) populations in the CnF, PPN, or LPGi, for each value of DCnF,ex, the excitatory drive was unilaterally applied to the corresponding inhibitory population (DCnF/PPN/LPGi,in $\in$ [1.15, 2.85] in 0.07 steps).
 
 To test the robustness of the model, we simultaneously varied all connection weights by multiplying each weight by a normally distributed random number with a mean of 1 and standard deviation σp between 0.02 and 0.2 in steps of 0.02. For each σp, 100 random models were built and bifurcation diagrams were calculated. With σp ≤ 0.04 all randomized models retained all stable regimes and their sequential transitions with changes of α. With increasing σp an increasing number of models lost some stable solutions (gaits such as bound or trot) and 50% of the models were unstable at σp = 0.2. Thus, the final model represents a coarse system allowing parameter variations without dramatic (qualitative) changes in behavior.

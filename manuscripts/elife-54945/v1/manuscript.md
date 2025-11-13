@@ -59,7 +59,7 @@ This study aims to clarify the developmental origin of the PG neurons comprising
 
 ## Results
 
-## Zebrafish transgenic line labeling the visual afferent projection to the pallium
+### Zebrafish transgenic line labeling the visual afferent projection to the pallium
 
 In order to generate a transgenic line that labels the ‘thalamocortical-like pathway’ in zebrafish, we performed a genetic screen using the Tol2 transposon-based gene trap construct, and collected transgenic fish with expression of the engineered Gal4 transcription factor in specific cell populations. The Gal4 expression was visualized by crossing the transgenic fish with a reporter line carrying EGFP under the control of UAS (Tg(UAS:GFP)) (Asakawa and Kawakami, 2009; Kawakami et al., 2010; Lal et al., 2018).
 
@@ -67,43 +67,111 @@ Among these lines, we identified a Gal4-expressing transgenic fish line, Tg(gSAG
 
 In the Tg(279A-GFP), abundant GFP+ fibers are present in the Dl (Figure 2A), and GFP+ cell bodies are found in a part of PG (Figure 2B). 3D reconstruction of confocal images of the entire brain allowed us to follow the projection from the PG to the pallium (Figure 2C,D and Video 1). We confirmed that axonal projections originating from the PG terminate in the ipsilateral Dl (Figure 2C and Video 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig2-v1.jpg)
+
+**Figure 2.:** (A and B) Frontal sections of Tg(279A-GFP) adult brain showing the GFP+ fibers in Dl of the pallium (A), and GFP+ cell bodies in PG (more specifically, PGl; B). The levels of the frontal sections are indicated on the schematic drawing of a lateral view of the brain (upper right). (A) Abundant GFP+ fibers are found in the zebrafish Dl, which corresponds to the main visual area in the goldfish pallium (upper left schematic drawing adapted from Yamamoto, 2009). (B) A brain section at the level of PG. Higher magnification of the right side of PG is shown in the inset. Based on the nomenclature from goldfish, we define the GFP+ PG cell cluster projecting to the Dl as PGl in the present study. (C and D) Selected visualization of the GFP+ projections from PGl to the pallium. After 3D reconstruction of the whole brain imaging of Tg(279A-GFP), the GFP+ signal of the PGl cells was selectively visualized in order to follow their projections (see Materials and methods). C shows the dorsal view of the brain and D shows the lateral view. The original movie is shown in Video 1. Abbreviations: Dl, lateral part of dorsal telencephalic area; Dm, medial part of dorsal telencephalic area; PG, preglomerular complex; PGl, lateral preglomerular nucleus; TeO, optic tectum. Brain orientation: r, rostral; c, caudal; d, dorsal; v, ventral. Scale bars = 100 µm (A and B); 500 µm (C and D).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A and B) Sagittal sections of the Tg(279A-GFP) adult brain (anterior to the left). A is a more lateral section showing the PG and Dl, and B is a more medial section showing the PG axons coursing to the Dl (arrows). (C) Schematic drawing of a sagittal section indicating the level of the frontal sections shown in (D–L). (D–L) Frontal sections of the Tg(279A-GFP) adult brain from anterior to posterior. The PG-pallial projection fibers are indicated with arrows in (F), (G), and (H). Note that the GFP expression is not exclusive to the PG-pallial projection neurons, but some other structures such as the olfactory bulb (OB) and the hypothalamus (Hy) are also labeled. Abbreviations: Cb, cerebellum; Dl, lateral part of dorsal telencephalic area; Dm, medial part of dorsal telencephalic area; IL, inferior lobe; Hy, hypothalamus; OB, olfactory bulb; ORR, optic recess region; Pal, pallium; PG, preglomerular complex; SPa, subpallium; TeO, optic tectum; Tg, tegmentum. Brain orientation: r, rostral; c, caudal; d, dorsal; v, ventral. Scale bars,=200 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The structure of the gene trap construct T2KgSAGFF. (B) The integration site of T2KgSAGFF in the Tg(gSAGFF279A) line. The Tg(gSAGFF279A) fish was analyzed by southern blot, and DNA adjacent to the insertion was cloned by inverse PCR and sequenced. The integration site was mapped within an intron of the inpp5ka gene on the chromosome 15 (GPCz11).
+
+![Video 1.](https://cdn.elifesciences.org/articles/54945/elife-54945-video1.mp4.jpg)
+
+**Video 1.:** Confocal images of the entire zebrafish brain were reconstructed to demonstrate axonal projections in 3D. Selective visualization of GFP+ signal by manual segmentation (shown in orange) demonstrates axonal projections originating from the PG neurons to the ipsilateral Dl.
+
 This projection from the PG to the Dl is quite similar to the ascending visual projection of other cyprinid species such as goldfish and carp (Yamamoto and Ito, 2008). In goldfish and carp, the vast majority of retinal axons terminate in TeO, and the TeO neurons project to the PGl, which in turn projects to the Dl in the pallium. In Tg(279A-GFP) zebrafish brain, GFP+ cells form a cluster within a nucleus corresponding to the goldfish PGl. Sagittal sections through the PG demonstrate the GFP+ cell cluster as a prominent oval-shaped structure (Figure 2—figure supplement 1A). Thus, based on the comparison with other cyprinids, we here refer to the GFP+ PG cell cluster projecting to the Dl as PGl.
 
 The PGl-Dl projection is not yet observable at 4 weeks post-fertilization (wpf) (Figure 3A,B, and Figure 3—figure supplement 1). A few GFP+ cell bodies appear at the level of PG around 6 wpf. The GFP+ cell cluster in PG (which we consider as PGl) becomes prominent at 8 wpf (Figure 3D), yet the GFP+ fiber labeling in the Dl appear very weak at this stage (Figure 3C). At 3 months post-fertilization (mpf), there are around 200 GFP+ cells in the PG in each side of the brain (Figure 2B–D, Figure 3F, and Figure 2—figure supplement 1I), and they project heavily to the Dl (Figure 2A,C,D, Figure 3E, and Figure 2—figure supplement 1A,B,F).
 
-## Validation of the tectofugal visual pathway in zebrafish
+![Figure 3.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig3-v1.jpg)
+
+**Figure 3.:** Frontal sections of 4 wpf (A and B), 8 wpf (C and D), and the adult (E and F) brains at the level of the telencephalon (A, C, and E) and PG (B, D, and F). Approximate antero-posterior levels are indicated in the schematic drawing on the top. At 4 wpf, there is no GFP+ fiber in the Dl (A) nor GFP+ cell around the PG (B). The GFP+ cells (presumably in the PGl) become obvious at 8 wpf (D), but their fiber labeling in the Dl is significantly weaker (C) in comparison to the adult (E). Abbreviations: Dl, lateral part of dorsal telencephalic area; PG, preglomerular complex; TeO, optic tectum. Scale bar = 200 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Frontal sections of the juvenile brain from anterior to posterior. Approximate levels of frontal sections are indicated in the schematic drawing on the top. The PGl-Dl projection is not observable at this stage. Abbreviations: IL, inferior lobe; Hy, hypothalamus; OB, olfactory bulb; ORR, optic recess region; Tel, telencephalon; TeO, optic tectum; Tg, tegmentum. Scale bar = 200 µm.
+
+### Validation of the tectofugal visual pathway in zebrafish
 
 In order to verify whether the GFP+ projections can be regarded as a tectofugal visual pathway in zebrafish, we performed tract-tracing studies using DiI, biocytin, or biotinylated dextran amine (BDA).
 
 It has been known that retinal projections terminate in the upper layers of TeO in a wide range of species of ray-finned fish (von Bartheld and Meyer, 1987), and it is also the case in zebrafish (Figure 4—figure supplement 1). In order to confirm whether the zebrafish PG receives visual inputs from the TeO, we injected DiI into the PG of the Tg(279A-GFP) line, targeting the lateral subdivision (PGl) with a guide of GFP (Figure 4A, asterisk). After 2–3 weeks of incubation, we observed retrogradely labeled cell bodies in a deep layer of TeO (Figure 4B). Each cell extends its dendrites up to the retino-recipient upper layer of TeO (the stratum fibrosum et griseum superficiale; SFGS), and this morphology is identical to the neurons receiving retinal inputs in carp and goldfish (Yamamoto and Ito, 2008). BDA injections into the TeO (Figure 4C, asterisk) labeled axon terminals in the PGl (Figure 4D, arrowheads), confirming that the PGl receives tectal inputs.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig4-v1.jpg)
+
+**Figure 4.:** Schematic drawings indicate the injection site of each tracer and levels of the frontal sections shown on the right panels. In all the frontal sections shown in A-L, the lateral side of the brain is to the left. (A–F) PGl receiving tectal inputs. (A and B) DiI retrograde labeling (magenta), showing the injection site in the PGl (A; asterisk), and a retrogradely labeled neuron (B; arrow) located in a deep layer (SPV) of the optic tectum (TeO). This neuron extends its dendrites (B; arrowheads) to the upper layer (SFGS) where retinal projections terminate. (C and D) BDA anterograde labeling (brown) showing the injection site in TeO (C; asterisk) and anterogradely labeled terminals in the ipsilateral PGl (D; arrowheads). (E) Cresyl violet staining showing the cytoarchitecture of the zebrafish PG: the lateral (PGl) and the anterior (PGa) subdivisions can be identified, based on the comparison with the goldfish PG (the nomenclature applied from goldfish; Yamamoto and Ito, 2008). (F) GFP+ labeling in the PG of Tg(279A-GFP) zebrafish line (20 µm projection of confocal images; GFP in green and DAPI in grey), showing a section comparable to the level shown in (E). GFP+ perikarya are mostly found in PGl. (G–L) PGl neurons projecting to Dl of the pallium. (G and H) Biocytin injection site in the PGl (G; asterisk) and anterogradely labeled terminals in the ipsilateral Dl (H). The right top inset in (H) shows a higher magnification of the squared area showing numerous labeled terminals. (I) GFP+ fiber labeling in the Dl of Tg(279A-GFP) zebrafish line, demonstrating an arborization pattern comparable to the anterograde biocytin labeling shown in (H). (J and K) Biocytin injection site in the Dl (J; asterisk), and retrogradely labeled neurons in the ipsilateral PGl (K) that extend dendrites ramifying in the neuropil. (L) GFP+ perikarya labeling in the PGl of Tg(279A-GFP) zebrafish line (arrowheads; 5 µm projection), demonstrating the almost identical cell localization as shown in (K). Abbreviations: Dl, lateral part of dorsal telencephalic area; PGa, anterior preglomerular nucleus; PGl, lateral preglomerular nucleus; SAC, stratum album centrale; SFGS, stratum fibrosum et griseum superficiale; SGC, stratum griseum centrale; SPV, stratum periventriculare; TeO, optic tectum. Brain orientation: r, rostral; c, caudal; d, dorsal; v, ventral. Scale bars = 50 µm (A, D-G, K, and L); 20 µm (B); 200 µm (C); 100 µm (H–J).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Frontal sections of the adult TeO (lateral to the left) visualizing biocytin-labeled structures subsequent injection in the optic nerve. (A) The most anterior part of TeO shown with intensively labeled optic tract (ot). (B) More posterior TeO showing the biocytin-labeled nerve terminals in the upper layer of TeO. C and D show a higher magnification of the squared areas in (B), showing the layered cytoarchitecture of the TeO. Abbreviations: ot, optic tract; SAC, stratum album centrale; SFGS, stratum fibrosum et griseum superficiale; SGC, stratum griseum centrale; SM, stratum marginale; SO, stratum opticum; SPV, stratum periventriculare; Tel, telencephalon; TeO, optic tectum. Brain orientation: r, rostral; c, caudal; d, dorsal; v, ventral. Scale bars = 200 µm (A and B); 50 µm (C and D).
+
 Following the biocytin injection into PGl (Figure 4G, asterisk), we observed abundant fiber labeling in the Dl (Figure 4H). This Dl labeling pattern is identical to the GFP+ fiber labeling of the Tg(279A-GFP) (Figure 2A and Figure 4I). Conversely, biocytin injections into Dl (Figure 4J, asterisk) labeled perikarya of PGl neurons (Figure 4K), coinciding with the position of the GFP+ cells in Tg(279A-GFP) (Figure 4L, arrowheads). These data confirm that the PGl neurons project to the Dl of the pallium.
 
 Thus, we conclude that the PGl conveys visual information from the TeO to the Dl, and that the GFP+ projection from the PG to the Dl in Tg(279A-GFP) recapitulates this visual pathway.
 
-## Mesencephalic progenitors give rise to the GFP+ PG cells
+### Mesencephalic progenitors give rise to the GFP+ PG cells
 
 Based on a cell lineage method using tamoxifen inducible Cre-lox recombination, we recently demonstrated that many cells of mesencephalic (midbrain) origin are present in some brain structures that have been considered to be of prosencephalic (forebrain) origin (Bloch et al., 2019). PG was one of them, thus we further investigated the development of PG cells, including those in PGl.
 
 We used a double transgenic line generated by crossing Tg(her5:ERT2CreERT2) and Tg(βactin:lox-stop-lox-hmgb1-mCherry), in which mCherry is expressed in the progenies of her5-expressing cells by a tamoxifen induction. The transcription factor her5 is exclusively expressed in the midbrain-hindbrain boundary (MHB) at 24 hr post-fertilization (hpf) (Figure 5A), and in ventricular cell clusters in the midbrain (alar part such as the tectum) at juvenile stages (Galant et al., 2016; Bloch et al., 2019).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig5-v1.jpg)
+
+**Figure 5.:** (A) In situ hybridization (ISH) of ert2Cre showing that the expression of Cre in this line is limited to the midbrain-hindbrain boundary (MHB) at 24 hpf. (B–G) Sagittal (B, D, F) and frontal (C, E, G) views of brains showing the development of PG region. The schematic drawing of the zebrafish brain shows the position of PG (indicating the level of the frontal sections shown in C, E, and G). Higher magnifications of the PG region are shown in the insets. mCherry+ cells are shown in magenta, and brain morphology (DiD fiber labeling in B and C, DAPI in D and E) is shown in grey. (B and C) 3D reconstruction from confocal images of 5–7 dpf larval brains (images reused from Bloch et al., 2019). The arrows indicate the PG primordium. (D–G) Adult brain sections, with (D and E) and without DAPI (F and G). Abbreviations: Cb, cerebellum; IL, inferior lobe; MHB, midbrain-hindbrain boundary; PG, preglomerular complex; PGa, anterior preglomerular nucleus; PGl, lateral preglomerular nucleus; Tel, telencephalon; TeO, optic tectum. Brain orientation: r, rostral; c, caudal; d, dorsal; v, ventral. Scale bars = 100 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** A and B show frontal sections of juvenile brains, and C–E show of adult brains. The level of the frontal sections is indicated in the schematic drawing on the top. (A and B) mCherry+ cells at the level of PG at two different juvenile stages. The left half of the frontal section shows the distribution of mCherry (red), whereas the right half shows DAPI staining (grey) to illustrate the cytoarchitecture of the brain. At 19 dpf (A), the nucleus is labeled as ‘PG/TLa’, because they develop as a continuous structure and not easy to distinguish until around 5 wpf (B). (C) Adult brain sections at the level of PGl comparing the mCherry expression in Tg(her5:ERT2CreERT2;βactin:lox-stop-lox-hmgb1-mCherry) and GFP expression in Tg(279A-GFP). Abundant mCherry+ cells are found in the adult PGl, overlapping the location of GFP+ pallial projection neurons. (D and E) Adult brain sections showing more caudal levels than (C). The left half of the frontal section shows the distribution of mCherry (red), whereas the right half shows DAPI staining (grey) to illustrate the cytoarchitecture of the brain. E shows more caudal than D. The mCherry labelings are found throughout the PG, including the caudal PGl and PGm. Abbreviations: Cb, cerebellum; IL, inferior lobe; PG, preglomerular complex; PGl, lateral preglomerular nucleus; PGm, medial preglomerular nucleus; Tel, telencephalon, TeO, optic tectum; TLa, torus lateralis. Brain orientation: r, rostral; c, caudal; d, dorsal; v, ventral. Scale bars = 50 µm (B), 200 µm (C).
+
 By following the mCherry-positive (mCherry+) cells at different developmental stages after induction at 24 hpf, we observe that PG is constituted as the most rostro-ventral end of a cell cluster migrating from the MHB (Figure 5B,D,F and Video 2). The her5-mCherry+ cells are distributed in the entire PG, including the PGl where the 279A-GFP+ pallial projection neurons are located (Figure 5 and Figure 5—figure supplement 1). Thus, we conclude that many of PG cells, if not all, are of midbrain origin.
 
+![Video 2.](https://cdn.elifesciences.org/articles/54945/elife-54945-video2.mp4.jpg)
+
+**Video 2.:** mCherry+ cells are shown in magenta, and DiD fiber labeling is shown in grey.
+
 To further confirm whether the GFP+ and mCherry+ signals co-localize, we generated a quadruple transgenic line Tg(her5:ERT2CreERT2;βactin:lox-stop-lox-hmgb1-mCherry;279A-GFP) (Figure 6—figure supplement 1), and performed tamoxifen induction at 24 hpf. We have verified that the quadruple transgenic line is identical to the double transgenic lines in terms of expressions of GFP and mCherry, and that their brain development is unaltered. Observing the PG in the adult stage (3 mpf), we found that there are GFP+ PG cells co-expressing mCherry (Figure 6C–F, arrowheads). This suggests that at least some of the GFP+ pallial projection neurons originate from the MHB.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic drawing of the adult zebrafish brain indicating the level of section through the PG shown in B-F. (B) A single plane confocal image showing a global view of the frontal section of a 3 mpf zebrafish brain. The white square indicates the PGl shown in C-F at a higher magnification. (C–F) A confocal image (5 µm projection) showing the co-localization of GFP and mCherry in PGl (arrowheads). Inset of E shows the double-labeled cell at a higher magnification. Abbreviations: Dl, lateral part of dorsal telencephalic area; PG, preglomerular complex; PGa, anterior preglomerular nucleus; PGl, lateral preglomerular nucleus; TeO, optic tectum. Brain orientation: r, rostral; c, caudal; d, dorsal; v, ventral. Scale bars = 200 µm (B); 30 µm (C; applicable to D-F); 10 µm (inset of E).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig6-figsupp1-v1.jpg)
 
 Since the GFP+ projection neurons become observable after 4 wpf (Figure 3), we hypothesized that they may be generated also during the juvenile stages. Thus, we decided to perform the tamoxifen induction at different developmental stages. However, the fertility of the her5 quadruple transgenic line (number of eggs and survival rate of young larva) was relatively low. For this reason, we used an additional transgenic line for the induction at later developmental stages.
 
 As an alternative to the Tg(her5:ERT2CreERT2), we used Tg(Dr830:ERT2CreERT2) (Heuzé, 2017). The enhancer sequence ‘830’ (human enhancer is named ‘Hs830’, and zebrafish enhancer is ‘Dr830’) is a highly conserved regulatory sequence in mouse and in zebrafish, which acts as a putative enhancer of the transcription factor Meis2 (meis2a in zebrafish) selectively in the tectum (Heuzé, 2017). In this line, the expression territory of Cre is larger than Tg(her5:ERT2CreERT2) at 24 hpf, but the expression is limited to the tectal area after 30–48 hpf (Figure 7 and Figure 7—figure supplement 1). We first generated the double transgenic line Tg(Dr830:ERT2CreERT2;βactin:lox-stop-lox-hmgb1-mCherry), then crossed with Tg(279A-GFP), in order to generate a quadruple transgenic fish Tg(Dr830:ERT2CreERT2;βactin:lox-stop-lox-hmgb1-mCherry;279A-GFP) (Figure 8—figure supplement 1).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig7-v1.jpg)
+
+**Figure 7.:** (A–C) Sagittal sections of embryonic brains (rostral to the left). At 24 hpf (A), ert2Cre is highly expressed in the mesencephalic domain, and a weak expression is also found in the anterior part of the brain. Later, at 30 hpf (B), the ertCre expression becomes limited to the mesencephalon. At 48 hpf (C), the ertCre expression is found exclusively in the tectal area. In C, the section plane is slightly tilted showing a more dorsal view of the embryo. Abbreviations: Mes, mesencephalic area; Tel, telencephalic area. Scale bars = 100 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A–F) Frontal sections of juvenile brains showing the telencephalic (Tel) and mesencephalic (Mes) areas. The levels of the frontal sections are indicated on the schematic drawing of a lateral view of the brain. In the 2 wpf (A and B), 3 wpf (C and D), and 5 wpf (E and F) juvenile brains, ert2Cre is expressed exclusively in the tectal area (B, D, and F). Abbreviations: IL, inferior lobe; Mes, mesencephalic area; Tel, telencephalic area; TeO, optic tectum. Scale bars = 100 µm (A–E); 200 µm (F).
+
 We performed tamoxifen induction at different developmental stages from 24 hpf up to 8 wpf (Supplementary file 1), and examined the adult brains to verify whether GFP+ pallial projection neurons co-express mCherry. Similarly to the cases using Tg(her5:ERT2CreERT2), tamoxifen treatments induced mCherry expression in many cells in the PG including the PGl. Counting mCherry+ cells from individuals induced at different time points suggests that at least 60% of PG cells would originate from the midbrain region (Figure 8—figure supplement 2).
 
 We found GFP/mCherry co-expressing cells consistently at all the induction time-points until 6 wpf (Figure 8). The mCherry+ cells became less and less abundant along development. At 6 wpf, there were very few mCherry+ cells in PG, and we found only one cell co-expressing GFP and mCherry among all the specimens examined (Figure 8G). We didn’t observe any co-expression in the case of induction at 8 wpf.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig8-v1.jpg)
+
+**Figure 8.:** (A–G) Confocal images (5 µm projection) of frontal sections through the PG showing the co-localization of GFP and mCherry (arrowheads). The GFP/mCherry co-localization was consistently observed in the animals induced up to 6 wpf. Co-labelled cells are shown at a higher magnification in the insets in merged images. The section plane shown here is identical to that in Figure 6. Scale bar = 30 µm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig8-figsupp1-v1.jpg)
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/54945/elife-54945-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Proportion of mCherry+ cells in relation to the total number of DAPI labelled cells was calculated. The dark grey represents the percentage of mCherry labeling observed after tamoxifen induction at the indicated time points, and the entire bar represents cumulative percentage including the earlier developmental stages (light grey).
 
 Thus, our results suggest that GFP+ PGl cells are gradually added throughout the larval/juvenile stages around up to 6 wpf. Considering the small number of GFP+ cells in PGl and the short-term tamoxifen induction time, it would be reasonable to conclude that the majority of GFP+ pallial projection neurons are progenies of cells derived from the tectal region.
 
 ## Discussion
 
-## Ontogeny of the zebrafish PG
+### Ontogeny of the zebrafish PG
 
 By using the tamoxifen inducible Cre-lox system in zebrafish, we labeled with mCherry the cells that were located in the midbrain region during development (between 24 hpf and 6 wpf). The abundance of mCherry+ cells in the adult PG suggests that the majority of PG cells derive from the mesencephalic region. PG cells were consistently labeled with mCherry following the treatments at all the developmental stages examined. This suggests that PG progressively grows by addition of cells migrating from the mesencephalon.
 
@@ -117,7 +185,7 @@ This earlier data had been interpreted as demonstrating a forebrain origin of PG
 
 GFP+ fiber labeling in Dl appears to be prominent only at around 8 wpf (Figure 3C). Unlike the thalamocortical projections in amniotes that are already abundant at late embryonic stages (Cordery and Molnár, 1999; Bielle et al., 2011; Molnár et al., 2012), the visual ascending projections to the pallium in zebrafish are not mature until late juvenile stages. Yet zebrafish larvae can coordinate body orientation against the current, capture food, or escape from predators using relatively simple tectal circuitries (retina → TeO → motor outputs) (Del Bene et al., 2010; Grama and Engert, 2012; Barker and Baier, 2013). Such visuo-motor processing at the level of tectum (without reaching the forebrain) may be comparable to the circuitry involved in saccadic eye movements in mammals (Yamamoto and Bloch, 2017). It is possible that larval and early juvenile zebrafish behaviors are largely dependent on the tectal circuitries, and the visual system involving telencephalic circuitry becomes more important at later stages.
 
-## Evolution of ascending visual pathways
+### Evolution of ascending visual pathways
 
 Based on mammalian studies, the presence of ‘two visual systems’ terminating in the mammalian cortex has been proposed (Schneider, 1969). One system is called the ‘thalamofugal’ or ‘geniculate’ pathway, in which retinal inputs reach the striate visual cortex (V1) via a thalamic nucleus (lateral geniculate nucleus in the case of mammals). The other is called the ‘tectofugal’ or ‘extrageniculate’ pathway, in which retinal inputs reach the extrastriate visual cortex via two intermediate structures, the tectum (superior colliculus in mammals) and another thalamic nucleus (pulvinar in primates and lateral posterior nucleus in other mammals like rodents). Since then, most studies in non-mammals have been interpreted based on this notion of ‘two visual systems’ (Hall and Ebner, 1970; Karten and Hodos, 1970; Riss and Jakway, 1970; Ingle, 1973; Karten et al., 1973; Hagio et al., 2018).
 
@@ -133,7 +201,7 @@ Substantial tectofugal visual pathways to the pallium are observed only in amnio
 
 In combination, these observations strongly suggest that the teleost and amniote pathways are not homologous to one another, but have evolved independently.
 
-## Thalamocortical-like functions by midbrain neurons in teleosts?
+### Thalamocortical-like functions by midbrain neurons in teleosts?
 
 The amniote thalamo-pallial projections (thalamocortical projections in mammals) are intra-forebrain projections, from the dorsal diencephalon to the dorsal telencephalon. Due to the enlargement of the forebrain in mammals especially in humans, forebrain evolution has drawn much attention for the study of sensory processing and cognitive functions.
 
@@ -143,7 +211,7 @@ In addition to the variation in neuronal connectivity that we reveal here, we ha
 
 ## Materials and methods
 
-## Zebrafish lines
+### Zebrafish lines
 
 For tract-tracing study, wild-type zebrafish (Danio rerio) with the Oregon AB genetic background of both sexes were used.
 
@@ -153,19 +221,19 @@ The Tg(279A-GFP) fish line was crossed with other transgenic lines to perform ce
 
 For in situ hybridization (ISH) of ert2Cre, double transgenic lines Tg(her5:ERT2CreERT2;βactin:lox-stop-lox-hmgb1-mCherry) and Tg(Dr830:ERT2CreERT2;βactin:lox-stop-lox-hmgb1-mCherry) were used.
 
-## Fish maintenance and staging
+### Fish maintenance and staging
 
 Zebrafish used for the tract tracing were maintained at Nagoya University (Japan) in aquaria at 22–26°C. For the rest of the experiments, zebrafish were raised in the animal facility in Neuro-PSI (Gif-sur-Yvette, France). Embryos/larvae up to 5 days post-fertilization (dpf) were maintained and staged as described (Kimmel et al., 1995). After larval stages, zebrafish were raised in a fish facility (maintained at 26–28°C). Zebrafish at 3 mpf or older is considered as adult. In all experiments performed in this study, we randomly used both male and female.
 
 The experimental protocols and care of laboratory animals were conducted in compliance with the official regulatory standards and approval of the French Government (reference document n°APAFIS#1286–2015062616102603 v5), the official Japanese regulations for research on animal, and the regulations on Animal Experiments in Nagoya University.
 
-## DiI tract-tracing
+### DiI tract-tracing
 
 To examine neural connectivity in the adult zebrafish, we placed crystals of DiI (1,1'-dilinoleyl-3,3,3',3'-tetramethylindocarbocyanine, 4-Chlorobenzenesulfonate; FAST DiI solid, Thermo Fisher Scientific-Molecular Probes, D7756) in the telencephalon and the optic tectum post-mortem. DiI is a fluorescent lipophilic tracer that diffuses along lipid membranes, allowing both anterograde and retrograde labeling of neural processes. Adult zebrafish (n = 40) were fixed with 4% paraformaldehyde (PFA) in phosphate buffered saline (PBS) overnight at 4°C.
 
 The brains were dissected out and a small crystal was inserted into the brain using a glass pipette. The crystal was left in the brain for dye diffusion from 10 days to 2 weeks at 37°C in PBS, or PBS containing 0.05% sodium azide to avoid fungal contamination. The brains were embedded in 3% agarose, and sectioned at 80 µm (in frontal and sagittal) using a vibratome (Leica VT 1000 s).
 
-## Biocytin and BDA tract-tracing
+### Biocytin and BDA tract-tracing
 
 Biocytin (Sigma-Aldrich, B4261) was injected into adult zebrafish brains (n = 40), both in vivo and in vitro. For some in vivo injections into the TeO, BDA (molecular weight 3000; Thermo Fisher Scientific-Molecular Probes, D7135) was also used (n = 3), because labeled terminals in the PGl were clearer than those with biocytin.
 
@@ -177,13 +245,13 @@ Postoperative fish were maintained in aquaria for 1–5 hr. After the survival p
 
 We also injected biocytin into the TeO, PGl, and Dl in vitro because it was difficult to maintain postoperative fish in aquaria for hours following injections in vivo. A detailed in vitro tract-tracing method has been reported previously (Yamamoto and Ito, 2008). Fish were deeply anesthetized with MS222 (over 200 mg/L). We quickly dissected the brain from the skull and then injected crystals of biocytin into TeO, PGl, and Dl with a minute insect pin. The brain was kept in a container filled with 50 mL normal artificial cerebrospinal fluid solution for marine teleosts (126 mM NaCl, 4.0 mM KCl, 1.0 mM MgSO4, 1.7 mM CaCl2, 26 mM NaHCO3, 1.0 mM NaH2PO4, and 10 mM glucose; Tsutsui et al., 2001) at room temperature. The solution was aerated and changed every 30 min. After 3–4.5 hr, we fixed the brain by immersion in 2% paraformaldehyde and 1% glutaraldehyde in 0.1 M PB for 1–3 days at 4°C.
 
-## Tissue processing following biocytin and BDA injections
+### Tissue processing following biocytin and BDA injections
 
 The fixed brains were cryo-protected by immersion in 0.1 M PB containing 20% sucrose at 4°C overnight. Cryo-protected brains were embedded in 5% agarose (type IX, ultra-low gelling temperature; Sigma-Aldrich, A2576) containing 20% sucrose and frozen in n-hexane at −60°C. Then, frontal sections were cut at a thickness of 40 µm on a cryostat and mounted on gelatin-coated glass slides. The sections were dried for one hour at room temperature and washed once with 0.05 M TBS containing 0.1% Tween 20 (TBST) and twice with TBS each for 10 min. To quench non-specific peroxidase activities, sections were steeped in methanol containing 0.3% H2O2 for 10 min and washed three times with TBS and once with 0.03% TBST each for 10 min. Sections were incubated with a solution of avidin-biotin-peroxidase complex (1:100; VECTASTAIN Elite ABC Standard Kit, Vector Laboratories, PK-6100) overnight at room temperature. After a wash with TBST and three washes with TBS each for 10 min, sections were incubated for one hour with 0.05% 3,3’-diaminobenzidine (Sigma-Aldrich, D5637) solution in 0.1 M PB containing 0.04% nickel ammonium sulfate and 0.01% H2O2. The reaction was stopped by four times washes with TBS, and the sections were counterstained with 0.05–0.1% cresyl violet, dehydrated, and coverslipped with Permount (Fisher Scientific, SP15-500).
 
 One fish was used for histological analysis with Nissl-stained sections (frontal section). Fixation and tissue processing were performed as mentioned above for in vivo tract-tracing materials, except that the section thickness was 30 µm. After going through an ascending series of ethanol to remove lipid, the sections were rehydrated through a descending series of ethanol. The sections were stained with 0.1% cresyl violet, dehydrated, cleared in xylene, and coverslipped with Permount.
 
-## Tamoxifen treatment
+### Tamoxifen treatment
 
 Tamoxifen treatments were performed in quadruple transgenic fish (see above) as described previously (Galant et al., 2016; Bloch et al., 2019). 4-Hydroxytamoxifen (Sigma-Aldrich, T176) was dissolved in ethanol at a concentration of 10 mg/ml and stored at −20°C until use. The working solution was freshly prepared before the treatment, then further diluted with embryo medium (for 24 hpf, 30 hpf, and seven dpf) or fish water (for 2–6 wpf). The fish were incubated in the tamoxifen working solution at 28°C in the dark.
 
@@ -193,7 +261,7 @@ For juveniles (2–6 wpf), fish were placed in a beaker (100–200 ml fish water
 
 The tamoxifen treatments were performed at least twice per each developmental stage, and each treatment contained at least 10 individuals (see Supplementary file 1 for number of fish analyzed). The tamoxifen-induced mCherry expression was systematically observed at 3 mpf. The fish were sacrificed and double-immunofluorescence anti-GFP and anti-dsRed were performed (see below).
 
-## Tissue preparations for immunofluorescence or in situ hybridization (ISH)
+### Tissue preparations for immunofluorescence or in situ hybridization (ISH)
 
 Zebrafish embryos up to 48 hpf were fixed in ice-cold 4% paraformaldehyde (PFA; Electron Microscopy Sciences) in 0.01 M PBS containing 0.1% Tween 20 (PBST) overnight at 4°C. Zebrafish older than 5 dpf were deeply anesthetized using 0.2% tricaine methanesulfonate (MS222; Sigma-Aldrich) diluted in fish water. The fish were fixed in 4% PFA in PBST overnight at 4°C, then brains were dissected out.
 
@@ -203,7 +271,7 @@ For a whole-brain imaging for zebrafish younger than 2 wpf (14 dpf), a simplifie
 
 For tissue clearing of older zebrafish brains, a passive CLARITY technique (zPACT) was performed (Affaticati et al., 2017). Dissected brains were fixed in freshly prepared ice-cold methanol-free 4% PFA in PBS (pH 7.4) at 4°C overnight. Samples were then soaked in a precooled solution of hydrogel (0.01 M PBS, 0.25% VA-044 initiator, 5% dimethyl sulfoxide, 1% PFA, 4% acrylamide, and 0.0025% bis-acrylamide) at 4°C for 2 days. The hydrogel polymerization was triggered by replacing atmospheric oxygen with nitrogen in a desiccation chamber at 37°C for 3 hr. Passive tissue clearing was performed at 37°C for 5 days in the clearing solution (8% SDS, 0.2 M boric acid, pH adjusted to 8.5) under rotation in a hybridization oven. After clearing, brains were washed in PBST at room temperature with gentle shaking for 2 days. Brains were incubated in a depigmentation solution (0.5X SSC (150 mM NaCl, 15 mM sodium citrate, pH 7.2), 5% formamide, 0.5X SSC, 3% H2O2, 0.1% Tween 20) for 40 min under light until all remaining pigments were bleached. After washing in PBST brains were post-fixed in PFA 4% in PBS (pH 7.4) at 4°C overnight.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Double immunolabeling for GFP (1:1000; Aves Labs, GFP-1020; RRID:AB_10000240) and dsRed (1:600, Takara Bio, 632496; RRID:AB_10013483) was performed on adult brain sections of quadruple transgenic zebrafish. Samples were incubated in primary antibodies in PBST containing 4% NGS and 0.3% Triton X-100 at 4°C overnight. Then, samples were incubated with secondary antibodies conjugated to fluorophores (1:1000; Alexa Fluor 488 and 546, Thermo Fisher Scientific-Molecular Probes) in PBST at 4°C overnight. Goat anti-chicken antibody labelled with Alexa Fluor 488 (A-11039; RRID:AB_142924) was used for anti-GFP, and goat anti-rabbit antibody labelled with Alexa Fluor 546 (A-11010; RRID:AB_143156) was used for dsRed. The same protocol was used for single-color immunofluorescence (either GFP or dsRed only) on adult and juvenile brain sections of the parent transgenic lines. In order to visualize the brain morphology, the sections were counterstained with DAPI (4′,6-diamidino-2-phenylindole dihydrochloride; 5 µg/ml, Sigma-Aldrich) at room temperature for 20 min.
 
@@ -211,7 +279,7 @@ Immunofluorescence on larval zebrafish brains in toto (14 dpf or earlier) was pe
 
 CLARITY-processed adult brains were incubated in blocking solution (0.01 M PBS, 0.1% Tween 20, 1% Triton X-100, 10% dimethyl sulfoxide, 10% normal goat serum, 0.05 M glycine) at 20°C for 3 hr. Subsequently samples were incubated in labeling solution (0.01 M PBS, 0.1% Tween 20, 0.1% Triton X-100, 9% dimethyl sulfoxide, 2% normal goat serum, 0.05% sodium azide) with the chicken anti-GFP antibody (1:400) for 7 days at room temperature under gentle agitation. After four washing steps in PBST, samples were incubated in labeling solution with the goat anti-chicken antibody labelled with Alexa Fluor 488 (1:400) at room temperature for 7 days. Samples were washed for 2 days in PBST and mounted in a fructose-based high refractive index solution (fHRI); 70% fructose, 20% DMSO in 0.002 M PBS, 0.005% sodium azide. The refractive index of the solution was adjusted to 1.457 using a refractometer (Kruss). The clarified samples were incubated in 50% fHRI for 6 hr and further incubated in 100% fHRI for 1 day. For imaging, samples were mounted in 1% low melting point agarose and covered with fHRI.
 
-## In situ hybridization (ISH)
+### In situ hybridization (ISH)
 
 ISH for ert2Cre (Dirian et al., 2014; Galant et al., 2016; Heuzé, 2017) was performed for zebrafish brains of different developmental stages, in order to verify the expression of Cre recombinase. Detailed ISH procedures have been described in our previous publications (Affaticati et al., 2015; Xavier et al., 2017).
 
@@ -221,21 +289,21 @@ For embryos, the entire ISH procedures were performed in toto. Embryos were embe
 
 Each experimental condition contained at least 4 samples for juvenile brains and at least 10 samples for embryos. The experiments were repeated at least 3 times for each developmental stage of tamoxifen treatments (Supplementary file 1), except for 8 wpf, in which we did not observe any mCherry/GFP co-localization (see Results).
 
-## Image acquisition
+### Image acquisition
 
 A Leica TCS SP8 laser scanning confocal microscope was used to image adult sections with a 25x or 40x water immersion objective. For clarified brains, the same microscope was used with a Leica HC Fluotar L 25x/1.00 IMM motCorr objective. For all these acquisitions, fluorescence signal was detected through photomultipliers (PMTs) after sequential laser excitation of fluorophores at 405, 488, 552 nm. Steps along the Z-axis were set at 1 µm. Epifluorescence images were acquired using a Multizoom AZ100 (Nikon).
 
 Bright-field images were acquired with upright microscopes, either BX43 or BX60 (Olympus). Acquired images were adjusted for brightness and contrast using ImageJ/FIJI software (Schindelin et al., 2012).
 
-## Quantification of mCherry+ cells in PG
+### Quantification of mCherry+ cells in PG
 
 The mCherry+ cells in the adult PG were counted from confocal images using the ImageJ cell counter plugin. We used stacks of 5 μm from frontal sections containing the PGl. The total number of cells was determined with DAPI nuclear labeling, and proportion of mCherry+ cells was calculated. The cell count was performed in the brains induced at 4 different time points: 24 hpf, 48 hpf, 2 wpf, and 3 wpf, and the average from two specimens was presented as data for each time point (Figure 8—figure supplement 2).
 
-## 3D image reconstruction of young zebrafish brains
+### 3D image reconstruction of young zebrafish brains
 
 In order to visualize the global distribution of mCherry+ cells in the brains of larval/juvenile (5, 7, 14 dpf) zebrafish, 3D reconstruction of confocal images was performed as described in Bloch et al., 2019. A whole brain imaged with confocal microscopy was reconstructed in 3D, using Imaris 8.0.1 software (Oxford Instruments) by means of the ‘3D view’ visualization tool on a Dell T3610 workstation.
 
-## Selective visualization of PGl fiber projections in Tg(279A-GFP)
+### Selective visualization of PGl fiber projections in Tg(279A-GFP)
 
 The signal of the Tg(279A-GFP) was selectively visualized by manual segmentation of the fiber projections in Amira (Thermo Fisher Scientific, FEI). For the classification of the staining of the specimen, we broke down the staining pattern into four categories: background, specimen background, specimen signal, and specimen auxiliary signal that contains a widely distributed population of cells outside the scope of this study. The process of manual segmentation is an iterative succession of initial freehand (Brush) segmentation and subsequent refinement with interactive thresholding tools (Magic wand, Threshold). The segmentation was initialized by a coarse manual segmentation of the pattern of interest and was refined region by region in up to seven iterations. The rather high number of manual and threshold-based segmentation iterations is due to the auxiliary signal, which is also located in close proximity to the pattern of interest. Local thresholds for the (negative) segmentation of the auxiliary signal were adapted with respect to the voxel values of the surrounding region to a lower boundary value of 150–180 (higher boundary always was 255). The resulting regions of exceptionally bright voxels were dilated in all three dimensions by two pixels for removing the auxiliary signal in their entirety from the region of interest.
 

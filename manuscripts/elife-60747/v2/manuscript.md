@@ -53,33 +53,439 @@ However, the limited availability of relevant animals or in vitro model systems 
 
 The dependence of hepatocytes on spatial and matrix-derived signals had until recently prevented their long-term in vitro culturing. Organoid culture technology involves the generation of cell-derived genetically stable in vitro 3D organ models of human origin. We have previously established a primary liver culture system based on isolation and expansion of primary cells that allows for the long-term expansion of liver cells as organoids (Huch et al., 2013; Huch et al., 2015). In this culture system, isolated adult hepatic cells are expanded through multiple passages in an optimized expansion medium (EM) without induction of genomic alterations (Huch et al., 2015). When switched to a differentiation medium (DM) where proliferation signals are removed and ductal (progenitor) fate is inhibited, liver organoid cultures differentiate into functional hepatocytes in vitro as exemplified by their polygonal cell shape (Figure 1A) and hepatocyte functions, including albumin production and cytochrome CYP3A4 expression and activity (Huch et al., 2015). Here we use the human liver organoid platform to model and study HBV infection and replication, as well as related tumorigenesis in patient-derived organoids generated from HBV-infected donors. This expandable model yields patient-specific organoids in quantities amenable to molecular and functional characterization and allows us to generate a living biobank of HBV-infected patient-derived cells amenable to downstream genomic, transcriptomic, and proteomic analysis as well as screening for HBV-directed therapeutics. We first described the ex vivo HBV infection of healthy donor (hD)-derived liver organoids, as a model to investigate viral infection and replication in hepatocytes. We used the HBV-infected organoid model as a platform for drug screening that can measure both drug-induced anti-HBV transcription and replication activity as well as drug-induced toxicity. We also demonstrated that transgenic modification of liver organoids provides an in vitro mechanistic platform to study the molecular determinants of HBV infection and replication. Finally, we performed transcriptomic analysis of HBV-infected patient-derived organoids and described the discovery of an early cancer gene signature, a potentially invaluable prognostic biomarker for HCC.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60747/elife-60747-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative images of liver organoids in expansion medium (EM) and differentiation medium (DM). (B) Experimental design of infection experiments. Arrows indicate the time points for hepatitis B virus (HBV) detection. (C) Levels of HBV DNA in supernatants of infected organoid cultures were quantified at indicated times by quantitative polymerase chain reaction (qPCR) and compared to the cultures challenged with heat-inactivated (HI) virus. (D) Schematic of the HBV genome showing open reading frames (ORFs) (arrows), HBV RNA transcripts (black circular lines) and the localization of PCR products (blue boxes). The agarose gel demonstrates expression of 3.5kb RNA transcript and total HBV RNA by nested PCR performed on complementary DNA (cDNA) obtained from two in vitro infected healthy donor (hD) organoid lines. (E) Immunofluorescent staining showing the expression of HBV core antigen (HBcAg) (green) together with sodium taurocholate co-transporting polypeptide (NTCP) (magenta), β-catenin (gray), or Hepatocyte Nuclear Factor 4 Alpha (HNF4α) (red) performed in different hD organoids 6 days after HBV infection in the differentiation medium. (F) Quantification of total intracellular HBV DNA (left Y-axis) and covalently closed circular DNA (cccDNA) (right Y-axis) purified from four hD organoid lines 6 days post infection. Quantification of total HBV DNA and cccDNA is also shown from HepG2.2.15-produced virus (inoculum, negative control for cccDNA) and from double-stranded HBV plasmid (as positive control for cccDNA) as indicated. (G) Quantification of HBV early antigen (HBeAg) was performed by enzyme-linked immunosorbent assay (ELISA) from the supernatant of infected organoids. Challenge with HI virus and uninfected organoids was used as a control for HBeAg present in the inoculum. Positive and neg bars correspond to positive and negative controls provided by the kit manufacturer. (H) Expression of intracellular HBV RNA relative to beta-2-microglobulin in three hD organoid lines infected with organoid-produced HBV (concentrated from pooled supernatants of organoid cultures infected with HepG2.2.15-produced HBV). (I) Immunofluorescent staining showing the expression of HBV surface antigen (HBsAg) (green) in DM organoids infected with recombinant HBV and patient serum. Scale bars represent 50 µm. Bar graphs show total HBV RNA levels in the culture at the time of staining.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60747/elife-60747-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Immunofluorescent staining showing the expression of hepatitis B virus core antigen (HBcAg) (green) together with sodium taurocholate co-transporting polypeptide (NTCP) (magenta) or HNF4α (red) performed in different healthy donor (hD) organoids 6 days after HBV infection in expansion condition (expansion medium [EM]). (B) Representative immunofluorescent images of differentiated organoid (differentiation medium [DM]) showing the expression of HBcAg (green) 6 days after HBV infection. (C) Quantification of total HBV DNA (orange) and covalently closed circular DNA (cccDNA) (green) present in intracellular DNA purified from three hD organoid lines after 6 days post infection with HBV under DM condition. Quantification of total HBV DNA and cccDNA is also shown from supernatant of infected organoids (inoculum) and from double-stranded HBV plasmid (as a positive control for cccDNA).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60747/elife-60747-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Bright-field images and levels of hepatitis B virus (HBV) DNA in the supernatant of infected organoids at different days post infection. (B) HBV DNA in the supernatant of infected organoids undergoing short expansion medium (EM) pulse treatments after infection. HBV DNA was quantified by quantitative polymerase chain reaction (qPCR) and compared to the mock-infected (heat-inactivated, HI) cultures. (C) Quantification of total HBV DNA from intracellular DNA of a healthy donor (hD) organoid after 6 days post infection with HBV. Error bars represent mean ± SD from four independent experiments (unpaired two-tailed t-test); *p<0.05; **p<0.01; ***p<0.001. (D) Quantification of total HBV DNA from intracellular DNA from two hD organoids 6 days post infection with HBV under differentiation medium (DM) in two different passages for each organoid line. Error bars represent mean ± SD from four independent experiments (unpaired two-tailed t-test); ***p<0.001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/60747/elife-60747-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Levels of hepatitis B virus (HBV) DNA in the supernatant of healthy donor (hD) organoids infected with either the recombinant virus derived from HepG2.2.15 cells or the serum obtained from HBV-positive individuals. (B) Immunofluorescent staining showing the expression of HBV surface Ag (green) in differentiation medium (DM) organoids 5 days after infection with the serum obtained from HBV-positive individuals (patient 2); scale bars represent 50 µm. Bar graph shows total HBV RNA levels in the culture at the time of staining.
+
 ## Results
 
-## Human liver organoids allow modeling of HBV infection in vitro
+### Human liver organoids allow modeling of HBV infection in vitro
 
 We first used the previously characterized liver organoid platform (Huch et al., 2015) on materials generated from healthy donors to set up a novel ex vivo HBV-infection system to study HBV replication. Liver organoids from healthy donors were grown in either EM or DM (Figure 1A) for 7 days prior to infection with recombinant HBV generated from HepG2.2.15, an HepG2 cell line subclone stably expressing HBV (Figure 1B). As control for the inoculum, we also infected organoids with heat-inactivated (HI) HBV. HBV infection and replication were validated by quantifying the levels of HBV DNA in the supernatant (Figure 1C), detection of intracellular HBV RNA (Figure 1D), visualizing HBV-specific proteins by immunofluorescence microscopy (Figure 1E), and quantifying intracellular covalently closed circular DNA (cccDNA) from infected organoids (Figure 1F). HBV DNA was detected in organoid culture supernatants from 4 days post infection, but not from the HI virus-infected cells, pointing to successful HBV replication (Figure 1C). Differentiated organoids maintained in DM were more efficiently infected and produced higher viral titers than organoids maintained in EM (Figure 1C–D). The RNA intermediates necessary for protein production and viral replication (3.5 kb RNA transcript and total HBV RNA) were present in infected DM organoids and detected by nested polymerase chain reaction (PCR) analysis, but not in the HI virus-infected cells (Figure 1D). As a further measure of active HBV replication, HBV early antigen (HBeAg) was also measured in supernatants of infected organoids and quantified (Figure 1G). Immunostaining, using antibodies recognizing HBV core antigen (HBcAg), showed specific nuclear and cytoplasmic staining in multiple infected healthy donor liver organoid lines, confirming the presence of foci of HBV replication in HBV-infected cells predominantly in infected DM organoids (Figure 1E and Figure 1—figure supplement 1A–B). Furthermore, infection of DM organoids resulted in the production of cccDNA, a definitive marker of HBV replication, as detected by a quantitative polymerase chain reaction (qPCR)-based cccDNA detection method of intracellular HBV DNA after digestion with a nuclease to specifically remove non-cccDNA (Figure 1F and Figure 1—figure supplement 1C). Inoculum that lacks cccDNA was used as a negative control for the cccDNA-specific qPCR and HBV plasmid DNA was used as a positive control (Figure 1F and Figure 1—figure supplement 1C). HBV replication, infection, and spread appeared to be persistent until 8 days after infection when viral production dropped significantly, likely because of the limited half-life of differentiated organoids in culture (Figure 1—figure supplement 2A). Periodic culturing of the organoids in EM in order to stimulate the recovery and proliferation of the organoids modestly extended the half-life of the infected cultures, where viral production was maintained for approximately 1 month post infection (Figure 1—figure supplement 2B). Donor-specific differences in efficiency of HBV infection were observed consistent with variable HBV permissiveness of primary human hepatocytes (Shlomai et al., 2014), while HBV infection was observed with similar efficiency in different passages of the same donor line (Figure 1—figure supplement 2C–D). To determine whether the organoids are capable of producing infectious HBV, supernatants containing virus produced by organoids were collected, concentrated, and used for subsequent spinoculation of hD organoids. As shown in Figure 1H, infection of hD organoids with organoid-produced HBV resulted in expression of intracellular HBV RNA, indicating that organoids produce infectious viral particles. Growth of viral isolates from patient material has been limited by the lack of an adequate primary model system. However, differentiated organoids were able to support infection and replication when challenged with HBV-infected patient sera, as shown by production of viral DNA, expression of viral transcripts, and positive immunostaining for HBV surface antigen (HBsAg) (Figure 1I and Figure 1—figure supplement 3). Differentiated liver organoids therefore provide a useful ex vivo HBV-infection platform in which the role of specific host and viral factors can be investigated.
 
-## Ex vivo HBV-infected liver organoids are a viable platform for anti-viral drug screening and drug-induced toxicity
+### Ex vivo HBV-infected liver organoids are a viable platform for anti-viral drug screening and drug-induced toxicity
 
 We next examined whether the ex vivo infected liver organoid platform would be amenable to anti-HBV drug screening to monitor antiviral activity and drug-induced toxicity of two different drugs, tenofovir and fialuridine, according to the schematic outlined in Figure 2A. Tenofovir is a nucleoside reverse transcriptase inhibitor that inhibits the reverse transcription of HBV pre-genomic RNA to DNA. Fialuridine, also a nucleoside analog that inhibits reverse transcription, was shown to cause severe hepatotoxicity in patients (McKenzie, 1995). In the organoids, HBV viral DNA production in the culture supernatant was inhibited by both tenofovir and fialuridine in three independent hD-derived organoids, whereas, as expected, RNA levels remained the same (Figure 2B). Therefore, the organoid ex vivo infection platform not only allows measurement of drug-induced antiviral activity, but also offers insight into the mechanism of drug action by allowing delineation of distinct steps of the HBV life cycle targeted and inhibited. As expected, treatment of HepG2.2.15 cells with tenofovir and fialuridine resulted in similar decreases in released HBV DNA, but no change in intracellular HBV RNA levels (Figure 2C), reaffirming the mechanism of action of these drugs in a cell-line model of HBV replication. Due to the well-established detrimental effects of fialuridine on the viability of primary human hepatocytes, we sought to evaluate fialuridine-induced toxicity on primary human liver organoids as well as in HepG2 cells. We measured the viability of organoids and HepG2 cells using the alamarBlue viability assay and by monitoring their phenotype upon fialuridine and tenofovir treatment using microscopy. HepG2 cells demonstrated no change in cell viability upon treatment with tenofovir and increasing concentrations of fialuridine as compared to the mock-treated cells (Figure 2D). The phenotype of HepG2 cells was also comparable across all treatments as observed by microscopy (Figure 2E). Strikingly, the liver organoids treated with fialuridine at as low a concentration as 1 µM demonstrated a significant reduction in viability as measured by alamarBlue assay when compared to mock-treated cells (Figure 2F and Figure 2—figure supplement 1A). The organoids treated with higher fialuridine concentrations (5–20 µM) as well as with 20 µM tenofovir also demonstrated impaired viability (Figure 2F and Figure 2—figure supplement 1A). The decreased cell viability was also apparent in the phenotype of the 1–20 µM fialuridine-treated and 20-µM tenofovir-treated organoids compared to vehicle controls as observed by microscopy (Figure 2G and Figure 2—figure supplement 1B). This highlights that fialuridine-induced toxicity is evident and quantifiable in the primary human liver organoid model but not in the HepG2.2.15 model of HBV replication. Thus, we demonstrate that ex vivo-infected differentiated liver organoids support the full replication cycle of HBV and, following further characterization, may serve as an ideal novel primary platform for drug screening as well as elucidation of the molecular events underlying HBV replication. Moreover, human liver organoids serve as an ideal platform for monitoring drug-induced toxicity in pre-clinical studies.
 
-## HBV replication can be investigated in transgenically modified liver organoids
+![Figure 2.](https://cdn.elifesciences.org/articles/60747/elife-60747-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental design of drug treatment of hepatitis B virus (HBV)-infected liver organoids followed by assessment of antiviral activity and toxicity. Arrows indicate time points for HBV detection or assessment of viability. Levels of HBV DNA (orange) in the supernatant and intracellular HBV RNA (blue) (normalized to beta-2-microglobulin) were quantified by quantitative polymerase chain reaction (qPCR) and reverse transcription PCR (RT-PCR), respectively, for three independent healthy donors (B) and HepG2.2.15 cells (C) upon treatment with control vehicle, fialuridine (10 μM), or tenofovir (10 μM) as indicated. Data are shown as mean ± SD of at least three replicate treatments (paired two-tailed t-test); *p<0.05; **p<0.01; ***p<0.001. (D) Relative viability of HepG2 cells was measured using the alamarBlue cell viability assay after treatment with vehicle control, fialuridine, or tenofovir for 2 or 6 days as indicated, normalized to vehicle control, and plotted as the average of percent viability ± SD of at least four replicate treatments (paired two-tailed t-test) (ns = not significant). (E) Representative bright-field images taken of HepG2 cells treated with antiviral drugs for 2 or 6 days as indicated. (F) Bar diagrams representing relative cellular viability of healthy donor (hD) liver organoids after 2 or 6 days of treatment with fialuridine or tenofovir at the different concentrations indicated using the alamarBlue cell viability assay. All values are normalized to the vehicle-treated control and plotted as the average of percent viability ± SD of at least three replicate treatments (paired two-tailed t-test); *p<0.05; **p<0.01. The dotted line represents the lower limit of quantification based on values obtained from wells free of organoids containing the basement membrane matrix (BME) only. (G) Representative bright-field images taken of liver organoids treated for 2 or 6 days with the vehicle control or increasing concentrations of the antiviral drugs tenofovir or fialuridine as indicated.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60747/elife-60747-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Bar diagrams representing relative cellular viability of differentiated patient-derived liver organoids (iP-BCC2 and iP-BC2) after 2 or 10 days of treatment with fialuridine or tenofovir at the different concentrations indicated using the alamarBlue cell viability assay. All values are normalized to the vehicle-treated control and plotted as the average of percent viability ± SD (n = 3) (paired two-tailed t-test). The dotted line represents the lower limit of quantification based on values obtained from wells free of organoids containing the BME matrix only. (B) Representative bright-field images taken of differentiated patient-derived liver organoids (iP-BCC2 and iP-BC2) as indicated with fialuridine and tenofovir.
+
+### HBV replication can be investigated in transgenically modified liver organoids
 
 We observed higher HBV infection efficiency in DM organoids as compared to EM organoids (Figure 1C). This correlated with higher levels of sodium taurocholate co-transporting polypeptide (NTCP) expression, a cellular receptor expressed on the surface of hepatocytes implicated in HBV entry (Yan et al., 2012), in differentiated organoids as compared to organoids in EM (Figure 3A–B). HBV infection of liver organoids was dependent on NTCP as (pre)treatment with the competitive entry inhibitor myrcludex-B decreased infection of organoids as shown by quantitation of HBV intracellular RNA (Figure 3C) as well as HBV DNA (Figure 3D) and HBeAg (Figure 3E) in the supernatant of infected organoids. Exogenous expression of NTCP in hepatoma cell lines was shown to confer susceptibility to infection (Yan et al., 2012) in line with our observations of increased HBV infection in differentiated organoids, likely because of the higher level of NTCP expression. Since differentiated organoid cultures have a limited half-life, we sought to generate transgenically modified hD organoids exogenously expressing NTCP under expansion conditions (Figure 3F–H and Figure 3—figure supplement 1A) in order to improve infection efficiency and facilitate downstream analyses and investigation of the molecular events involved in HBV replication. We used a lentiviral construct harboring the coding sequence of Flag-tagged NTCP ubiquitously expressed under a Cytomegalovirus (CMV) promoter, followed by a blasticidin selection marker (Figure 3F). Immunofluorescence experiments performed on NTCP-liver organoids in the expansion phase confirmed high levels of NTCP protein expression correctly localized to the cellular membrane (Figure 3H and Figure 3—figure supplement 1B). Cholesterol target genes were induced in response to statin treatment in NTCP transgenic organoids, confirming the functionality of exogenously expressed NTCP (Figure 3—figure supplement 1B–C). We then evaluated viral production following HBV infection in transgenically modified NTCP organoid lines as compared to parental lines (Figure 3I–J). Interestingly, comparable levels of HBV DNA and HBsAg were observed in the supernatants of both parental and NTCP-expressing organoid lines (Figure 3I–J), suggesting that expression of NTCP alone is not sufficient to improve HBV infection rate in liver organoids grown in EM (Figure 3I–J and Figure 3—figure supplement 1D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/60747/elife-60747-fig3-v2.jpg)
+
+**Figure 3.:** (A) mRNA expression levels of the hepatitis B virus (HBV) receptor sodium taurocholate co-transporting polypeptide (NTCP) in undifferentiated (EM) and differentiated (DM) organoids (n = 3); mRNA levels were calculated according to the 2ΔCt method using GAPDH as the reference gene. (B) Immunofluorescent staining showing the expression of NTCP (magenta) in EM and DM organoids. Nuclei were counterstained with Hoechst 33343 (cyan). Scale bars represent 50 µm. (C–E) Inhibition of HBV infection of liver organoids by (pre)treatment with myrcludex-B (10 µM). Control or myrcludex-B-treated differentiated liver organoids were infected with HBV, and intracellular HBV RNA (C), copy numbers of HBV DNA genome in the culture supernatant (D), and HBV early antigen (HBeAg) (E) produced in the culture supernatant were determined 5–6 days after inoculation. Error bars represent mean ± SD from three independent donors (unpaired two-tailed t-test); ***p<0.001; ****p<0.0001. (F) Schematic representation of the experimental procedure for the transduction experiments. Following infection with a lentiviral vector expressing Flag-NTCP, organoids were selected with blasticidin for 5 days in order to obtain lines expressing NTCP in the expansion phase. (G) Levels of expression of NTCP were evaluated by reverse transcription polymerase chain reaction (RT-PCR) in the untransduced (parental) and the transduced (NTCP) lines. Expression of NTCP was calculated according to the 2ΔCt method using the housekeeping gene GAPDH as the reference gene and confirmed by immunofluorescence staining targeting NTCP (magenta) or Flag (red) (l). (H) HBV surface antigen (HBsAg) released in the supernatant of parental and NTCP organoid lines grown in EM or DM 10 days after HBV infection was detected by enzyme-linked immunosorbent assay (ELISA). Challenge with heat-inactivated virus was used to control for HBsAg present in the inoculum. Pos and neg bars correspond to positive and negative controls provided by the kit manufacturer. Threshold for positivity (red line) was calculated as the average OD + 2SD of negative controls. (J) HBV DNA in the supernatant of NTCP-expressing organoid cultures was quantified 5 days after infection and compared to DNA detected in the supernatant of untransduced HBV-infected organoids (n = 3). Bars represent the fold increase in HBV DNA detected in the supernatant, and untransduced HBV-infected organoids were used as the reference. Relative amounts of (K) HBV DNA and (L) HBsAg produced by healthy donor (hD) lenti-HBV organoid lines.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60747/elife-60747-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Levels of expression of sodium taurocholate co-transporting polypeptide (NTCP) were evaluated by reverse transcription polymerase chain reaction (RT-PCR) in the untransduced (parental) and the transduced (NTCP) lines. Expression of NTCP was calculated according to the 2∆Ct method using the housekeeping gene GAPDH as the reference. (B) Expression of NTCP was confirmed by immunofluorescence staining using antibodies against Flag (red). (C) Evaluation of changes in cholesterol metabolism genes following transgenic expression of NTCP in liver organoids. The levels of LDLR and PCSK9 were evaluated by real-time PCR following treatment with atorvastatin and rosuvastatin. Fold difference in gene expression was calculated according to the 2∆∆Ct method using untreated cells as reference. (D) Hepatitis B virus (HBV) DNA levels in the supernatant of parental cultures grown in expansion medium (EM) and NTCP cultures (of donors hD7 and hD15) grown in EM or differentiation medium (DM) were quantified by real-time PCR 10 days after infection.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60747/elife-60747-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B) A fragment encoding 1.3 times the wild-type hepatitis B virus (wt-HBV) genome was amplified from HepG2.2.15 and cloned into the pEntr plasmid. Using the gateway system, HBV was then transferred to a lentiviral expression vector under the control of CMV promoter. CMV promoter upstream of HBV genome was then removed from the construct (C). (D) Experimental procedure for the generation of transgenic organoid lines expressing full-length HBV. Undifferentiated (EM) organoids were infected with a lentiviral vector including a construct encoding 1.3 copies of the HBV genome and selected with blasticidin for 5 days in order to obtain stable transgenic organoid lines. Viral production was determined by quantitative polymerase chain reaction (qPCR), measuring the amount of HBV DNA secreted in the supernatant at regular intervals and up to 62 days after lentiviral infection.
+
 To further highlight the ability of liver organoids to be transgenically modified, we produced a long-term, expandable, primary HBV-producing liver organoid model system that can be used to study HBV transcription events. We utilized a lentiviral construct to produce transgenic organoid lines containing an integrated copy of HBV (Figure 3—figure supplement 2). ‘Lenti-HBV’ (Figure 3—figure supplement 2C–D) allowed for the generation of replication-competent, expandable, long-term, hD transgenic lenti-HBV organoid lines, in which transcription from the HBV transgene results in the production of viral proteins and particles (Figure 3K–L, Figure 3—figure supplement 2D). This model system provides a primary platform to screen for inhibitors of HBV transcription and is a primary-cell alternative to the HepG2.2.15 cell lines that produce very low levels of cccDNA (Sells et al., 1988), for studies into HBV pathogenesis. Thus, the amenability of human liver organoids to transgenic modification enables investigation of HBV replication and in-depth characterization of the molecular events involved.
 
-## Characterization of non-tumor HBV-infected patient-derived liver organoids
+### Characterization of non-tumor HBV-infected patient-derived liver organoids
 
 The ability to generate a patient-derived primary model is a key advantage of using the liver organoid platform. We applied the previously characterized method to generate liver organoids from healthy donors (Huch et al., 2015) to generate novel patient-derived organoids from HBV-infected individuals undergoing liver transplantation (Figure 4A). The explant used for generating patient-derived organoids was HBV-infected, chronically cirrhotic liver tissue obtained from 18 explanted livers from people infected with HBV (Figure 4A and B, Table 1). We generated and expanded organoid cultures from fresh and frozen explant tissue from all donors with similar efficiency (data not shown).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/60747/elife-60747-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative panel showing the procedure to generate organoid cultures or biobanks from liver tissue. (B) Hematoxylin-eosin-stained sections of explanted liver tissue and phase-contrast pictures showing the morphology of liver organoids derived from hepatitis B virus (HBV)-infected individuals. (C) Expression profile of the progenitor markers LGR5, KRT7, HNF4α, and Sox9 in EM (undifferentiated) organoids derived from liver of healthy donors (hD) (n = 4) and HBV-infected individuals (iP) (n = 5). Levels of expression were calculated according to the 2ΔCT method using GAPDH as the reference gene. (D) Differentiation capacity of organoid cultures derived from liver of hDs (n = 4) and iPs (n = 5). Bars represent the fold difference in the expression of hepatocyte-specific genes encoding albumin, cytochrome CYP3A4, and sodium taurocholate co-transporting polypeptide (NTCP), and the progenitor-specific gene LGR5 in DM (differentiated) cultures compared to EM organoids using the 2ΔΔCT method. (E) Immunofluorescent staining targeting albumin (green) and HNF4α (red) was performed in EM and DM organoids. Phase-contrast images, depicting the morphology of the cells, are shown as reference.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60747/elife-60747-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Partial genome map of hepatitis B virus (HBV) with gene names and primer positions used for identifying the integrated regions. (B) Agarose gel electrophoresis of polymerase chain reaction (PCR)-amplified products of six infected patients (iPs) and one infected donor (iDonor1) using XC primer set. (C) Agarose gel electrophoresis of four organoid lines that show integration with XC primer set. Primer pairs in both upstream (PolA, PolB, XA, and XB) and downstream (Core) directions of XC region were used to identify the integrated region of HBV inside the genome of organoid lines.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60747/elife-60747-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Phase-contrast images (5X and 20X magnification) of organoid cultures seeded from healthy donors (hDs) and infected patients (iPs) show comparable morphological changes in the organization upon differentiation of organoid cultures. (B) Immunofluorescent staining indicates comparable expression of the hepatocyte marker Albumin (green) and HNF4α (red) in hD and iP liver organoids in expansion media (EM) and after 7 days of culture in differentiation media (DM). Nuclei are counterstained with Hoechst 33342 (cyan). Scale bars represent 50 µm.
+
+**Table 1.**
+ Characteristics of patients included in the study.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Patient</td>
+      <td>Age</td>
+      <td>Sex</td>
+      <td>Diagnosis</td>
+      <td>Treatment (Y/N)</td>
+      <td>HBsAg (P/N)</td>
+      <td>HBcAg (P/N)</td>
+      <td>HBeAg (P/N)</td>
+      <td>Anti-HBsAg</td>
+      <td>Anti-HBcAg</td>
+      <td>Anti-HBeAg</td>
+      <td>DNA</td>
+    </tr>
+    <tr>
+      <td>iDonor 1</td>
+      <td>44</td>
+      <td>F</td>
+      <td>DONOR, cleared HBV</td>
+      <td>N</td>
+      <td>N</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>P</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>iDonor 2</td>
+      <td>48</td>
+      <td>F</td>
+      <td>DONOR, cleared HBV</td>
+      <td>N</td>
+      <td>N</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>P</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>iDonor 3</td>
+      <td>62</td>
+      <td>M</td>
+      <td>DONOR, cleared HBV</td>
+      <td>N</td>
+      <td>N</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>N</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>iDonor 4</td>
+      <td>56</td>
+      <td>M</td>
+      <td>DONOR, cleared HBV</td>
+      <td>N</td>
+      <td>N</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>P</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>iP-BC</td>
+      <td>49</td>
+      <td>M</td>
+      <td>Liver cirrhosis based on chronic HBV infection</td>
+      <td>Y</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>P</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>&lt;20</td>
+    </tr>
+    <tr>
+      <td>iP-BCC1</td>
+      <td>65</td>
+      <td>M</td>
+      <td>HBV liver cirrhosis with HCC</td>
+      <td>Y</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>N</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>iP-BCC2</td>
+      <td>54</td>
+      <td>M</td>
+      <td>Chronic liver cirrhosis along with HCC</td>
+      <td>Y</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>N</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>&lt;20</td>
+    </tr>
+    <tr>
+      <td>iP-BCC3</td>
+      <td>68</td>
+      <td>M</td>
+      <td>Chronic HBV liver cirrhosis with HCC</td>
+      <td>Y</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>N</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>&lt;20</td>
+    </tr>
+    <tr>
+      <td>iP-BCC4</td>
+      <td>52</td>
+      <td>M</td>
+      <td>HBV liver cirrhosis with multiple HCC</td>
+      <td>Y</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>N</td>
+      <td>N</td>
+      <td>P</td>
+      <td>P</td>
+      <td>&lt;20</td>
+    </tr>
+    <tr>
+      <td>iP-BCC5</td>
+      <td>51</td>
+      <td>M</td>
+      <td>HBV liver cirrhosis with HCC</td>
+      <td>Y</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>N</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>&lt;20</td>
+    </tr>
+    <tr>
+      <td>iP-BCC6</td>
+      <td>63</td>
+      <td>M</td>
+      <td>HBV liver cirrhosis with HCC</td>
+      <td>Y</td>
+      <td>P</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>P</td>
+      <td>P</td>
+      <td>&lt;20</td>
+    </tr>
+    <tr>
+      <td>iP-BCC7</td>
+      <td>61</td>
+      <td>M</td>
+      <td>HBV liver cirrhosis with HCC</td>
+      <td>Y</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>N</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>iP-BCC8</td>
+      <td>53</td>
+      <td>M</td>
+      <td>HBV liver cirrhosis with HCC</td>
+      <td>Y</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>N</td>
+      <td>N</td>
+      <td>P</td>
+      <td>P</td>
+      <td>&lt;20</td>
+    </tr>
+    <tr>
+      <td>iP-BFA</td>
+      <td>54</td>
+      <td>F</td>
+      <td>Acute liver failure based on HBV with Crohn’s disease</td>
+      <td>N</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>N</td>
+      <td>N</td>
+      <td>P</td>
+      <td>P</td>
+      <td>&lt;20</td>
+    </tr>
+    <tr>
+      <td>iP-BFA2</td>
+      <td>62</td>
+      <td>M</td>
+      <td>Acute liver failure based on HBV</td>
+      <td>N</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>P</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>iP-BDFA</td>
+      <td>28</td>
+      <td>M</td>
+      <td>Acute liver failure based on HBV and HDV co-infection</td>
+      <td>N</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>N</td>
+      <td>NA</td>
+      <td>P</td>
+      <td>P</td>
+      <td>1180</td>
+    </tr>
+    <tr>
+      <td>iP-BDFA2</td>
+      <td>60</td>
+      <td>F</td>
+      <td>Acute liver failure based on HBV and HDV co-infection</td>
+      <td>Y</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>N</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>1080</td>
+    </tr>
+    <tr>
+      <td>iP-BDCC</td>
+      <td>59</td>
+      <td>M</td>
+      <td>HCC, HBV co-infected with HDV</td>
+      <td>Y</td>
+      <td>P</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>N</td>
+      <td>P</td>
+      <td>P</td>
+      <td>&lt;20</td>
+    </tr>
+    <tr>
+      <td>Patient</td>
+      <td>Age</td>
+      <td>Sex</td>
+      <td>Diagnosis</td>
+      <td>Treatment (Y/N)</td>
+      <td>HBsAg (P/N)</td>
+      <td>HBcAg (P/N)</td>
+      <td>HBeAg (P/N)</td>
+      <td>Anti-HBsAg</td>
+      <td>Anti-HBcAg</td>
+      <td>Anti-HBeAg</td>
+      <td>DNA</td>
+      <td>Nash (Y/N)</td>
+    </tr>
+    <tr>
+      <td>CN1</td>
+      <td>69</td>
+      <td>F</td>
+      <td>Nash-HCC</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>NA</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>CN2</td>
+      <td>71</td>
+      <td>M</td>
+      <td>Nash-HCC</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>NA</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>CN3</td>
+      <td>66</td>
+      <td>F</td>
+      <td>Nash-HCC</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>NA</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>CN4</td>
+      <td>60</td>
+      <td>F</td>
+      <td>Nash-HCC</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>NA</td>
+      <td>Y</td>
+    </tr>
+  </tbody>
+</table>
+
 Non-tumor HBV-infected patient-derived (infected patient [iP]) organoids were expanded in culture (EM) and displayed proliferation rates (Figure 4B and data not shown) and expression of progenitor markers LGR5, KRT7, HNF4α, and Sox9 (Figure 4C) comparable to those of hD organoids. When grown in DM, in which proliferation signals are removed and the progenitor fate is inhibited, liver organoid cultures from both healthy and HBV-infected sources acquired the hepatocyte fate and differentiated into functional hepatocytes, similar to previously obtained data for healthy liver organoids (Huch et al., 2015). In DM, both hD and iP liver organoid cultures showed increased expression of hepatocyte-specific genes encoding albumin, cytochrome CYP3A4, and NTCP, the cellular receptor implicated in HBV hepatocyte entry, concomitant with decreased expression of the stem cell-specific gene LGR5 (Figure 4D). None of the iP organoids showed signs of HBV production at the RNA, DNA, or protein level (data not shown), suggesting that adult stem cells, from which the liver organoids are derived, do not contain actively replicating HBV. Interestingly, five out of six iP organoids contained portions of integrated HBV, corresponding to the HBx coding region (Figure 4—figure supplement 1). In accordance with our findings, in previous genome-wide analyses in tissues derived from donors with HCC, this region of the HBV genome was also found to be highly integrated in both HCC and non-tumor hepatocytes from infected patients (Sung et al., 2012; Zhao et al., 2016). Interestingly, in one donor, who was previously infected with HBV but cleared the infection (iDonor1), integration corresponding to a part of the HBV genome, including the HBx region, was also observed (Figure 4—figure supplement 1). This finding indicates that despite clearance of active HBV replication, portions of the genome may remain integrated in the hepatocyte genome, for which the functional consequences remain to be elucidated. At the phenotypic level, while EM organoids grew larger in size and were translucent, differentiated iP organoids showed hepatocyte morphology and physiology comparable to hD organoids, with thickening of the outer cell layer, comparable to hD organoids (Figure 4E and Figure 4—figure supplement 2A) and production of albumin as detected by immunofluorescence staining (Figure 4E and Figure 4—figure supplement 2B). Thus, non-tumor HBV iP organoids display phenotypes comparable to hD-derived organoids, retain the capacity for differentiation, and are conducive to downstream genomic, transcriptomic, and proteomic analysis.
 
-## HBV-infected patient-derived liver organoids display a distinct early gene expression signature
+### HBV-infected patient-derived liver organoids display a distinct early gene expression signature
 
 The early detection of HBV-related HCC is a challenge that remains critical to direct optimal clinical management of the disease. Despite widely practiced periodic surveillance of patients with cirrhosis, patients with HCC are mostly diagnosed in a late stage. The presence of diagnostic biomarkers for early events in liver cell tumorigenesis would therefore be invaluable for early detection. In order to identify potential early biomarker genes for HBV-induced HCC, we performed mRNA sequencing of the organoid lines derived from HBV-iP and compared their gene expression profiles to those of organoids derived from hDs. We performed hierarchical clustering of protein-coding differentially expressed genes obtained from the comparison between organoids from five hD organoid lines and those from five iP lines (Figure 5A, Table 1). The iP organoid lines were seeded from five HBV mono-infected patients with cirrhotic liver, four of whom presented with small tumors at the time of the explant (Figure 5A, Table 1). Interestingly, although the hD and iP organoids were phenotypically indistinguishable, the iP organoids clustered separately from the healthy donors (Figure 5A). This comparison resulted in identification of a gene signature characteristic of iP-derived organoids (henceforth ‘iP-signature’) (Figure 5A and Supplementary file 1). We then ranked the differentially expressed genes according to the relative distance of their expression in hD- vs iP-derived organoids and identified a group of 33 putative early biomarker genes (Figure 5B). Gene ontology (GO)-term and KEGG-pathway analysis revealed that the ‘early signature’ genes were enriched in metabolic pathway-associated genes (Supplementary file 2). Among these, CCNA1 and STMN2, which we found to be upregulated in the non-tumor infected patient-derived organoids, were previously identified to be upregulated in HCC (Allain et al., 2016; Chen et al., 2019; Gao et al., 2008; Paradis et al., 2003). Conversely, WNK2, RUSC2, CYP3A4, and RGN, among the significantly downregulated genes in the non-tumor iP organoids, have been described as tumor suppressors downregulated in HCC (Allain et al., 2016; Ashida et al., 2017; Tao et al., 2011; Yamaguchi, 2015). We further checked if these targets were also upregulated in primary hepatocytes obtained from the tissues from which iP vs hD organoids had been seeded (Figure 5C) or in ex vivo HBV-infected organoids (Figure 5—figure supplement 1). Indeed, we observed upregulation of mRNA expression of the organoid-derived signature genes ADAMTS1, CORO1A, PTHLH, STMN2, and STY5 in primary hepatocytes obtained from HBV-infected patients as compared to those obtained from healthy donors (Figure 5C). Similarly, signature genes were upregulated upon ex vivo HBV infection of hD organoids (Figure 5—figure supplement 1). Therefore, transcriptomic analyses of healthy vs patient-derived organoids resulted in the identification of an HBV infection early gene signature and possible biomarkers for HBV infection.
 
-## Transcriptomic analysis of HBV-patient-derived organoids results in identification of cancer gene signature
+![Figure 5.](https://cdn.elifesciences.org/articles/60747/elife-60747-fig5-v2.jpg)
+
+**Figure 5.:** (A) Hierarchical clustering heatmap of differentially expressed genes derived from the comparison between the group of five healthy donors (hDs) and five infected patients (iPs) presenting hepatitis B virus (HBV) infection and cirrhosis (all) and hepatocellular carcinoma (HCC) (four out of five). (B) Box plot of DESeq normalized counts of 33 putative biomarker genes obtained from hD organoids (depicted in green) or HBV-iP organoids (depicted in red). (C) Relative expression of mRNAs of signature genes ADAMTS1, CCNA1, CORO1A, PTHLH, STMN2, and STY5 in hD primary hepatocytes (n = 4, black circles) and in hepatocytes from HBV-infected patients (n = 5, each donor with its own colored square) was quantified by reverse transcription polymerase chain reaction (RT-PCR) using cyclophilin A mRNA as an internal control. All expression values are normalized to the average mRNA expression of the hDs (unpaired two-tailed Mann-Whitney test); ns = not significant; *p<0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60747/elife-60747-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Relative expression of ADAMTS1, CCNA1, CORO1A, STAMN2, and HBV (Core) mRNA in three healthy donor (hD) organoids 6 days post infection with hepatitis B virus (HBV) (each donor represented by blue, red, or green symbols, respectively) was quantified by reverse transcription polymerase chain reaction (RT-PCR) using cyclophilin A mRNA as an internal control. All expression values are normalized to the average mRNA expression of the target genes in heat-inactivated virus-infected hD organoids.
+
+### Transcriptomic analysis of HBV-patient-derived organoids results in identification of cancer gene signature
 
 We then applied the iP-signature derived from our analysis (Figure 5A) to all our liver organoid samples. Table 1 describes all patients, groups, and clinical characteristics. Our subsequent analysis included six healthy donors (orange circles, hD), six HBV-infected samples (green triangles, iP), and four healthy donors that had previously been infected with HBV, but had subsequently cleared infection and displayed no aberrant phenotype (blue squares, infected donor [iDonor]) (Figure 6A and B). The application of the iP-signature to these samples groups hDs (gray bars) apart from iPs (black bars), as expected (Figure 6A). Interestingly, the organoids generated from the iDonors (light orange bars), which had cleared HBV infection, clustered together and more closely to the larger group of iP organoids derived from patients with HBV-driven cirrhosis and HCC (maroon bars) (Figure 6A). This observation of iDonors’ clustering closely with iP-HBV-HCC indicated the presence of the early HCC-like gene signature in these infected donor livers, despite clearance of HBV infection and absence of phenotypic and functional abnormalities at the time of donation, an observation that may be important to be considered for transplantation purposes and surveillance. This is also in accordance with our observation that some iDonors also contain integrated parts of the HBV genome corresponding to HBx (Figure 4—figure supplement 1). We then applied the iP-signature to organoids from 11 iPs (green triangles, iP), 6 healthy donors (orange circles, hD), 4 infected donors (blue squares, iDonors), and 4 donors diagnosed with non-alcoholic steatohepatitis (NASH) not caused by HBV infection (purple pentagons, CN) (Figure 6C–D). Table 1 describes all patients, groups, and clinical characteristics. Included amongst the iP group were also organoids seeded from HBV-infected patients who at the time of collection had HCC (iP-BCC), acute liver failure (iP-BFA), HBV-infection-induced cirrhosis without HCC (iP-BC), as well as HBV-HDV coinfection either with HCC (iP-BDCC) or with acute liver failure (iP-BDFA). The iP-signature separates and groups together the non-infected samples (gray bars) and iP organoids (black bars) (Figure 6C). Importantly, although the CN samples were obtained from cirrhotic livers (green bars), they grouped apart from the HBV-infected iPs and hDs (Figure 6C–D), indicating that our gene signature is defined by HBV-infection status, rather than the cirrhotic status. In agreement, multidimensional scaling analysis of all iP and hD samples indicated that all hD organoids are clearly separated from the rest and tightly grouped together, while the iP organoids form separate groups corresponding to HDV (hepatitis D virus) coinfection, HCC, acute liver failure, or previous/cirrhotic HBV infection and cluster together, but away from CN samples (Figure 6A–D). We have, therefore, identified a specific gene signature/group that discriminates between the hD and iP organoids among more complex classifications (Figure 6A–D). We applied this gene signature to all samples in The Cancer Genome Atlas Liver Hepatocellular Carcinoma (TCGA-LIHC) database, a depository of sequences from HCC patients. The application of this gene signature when mapped onto the relevant TCGA gene expression data distinctly separated the TCGA HCC samples from non-HCC samples (Figure 6E). This important observation indicates that transcriptomic analysis of our patient-derived liver organoid model identified a novel early liver cancer gene signature in non-tumor HBV-infected patient-derived liver organoids, despite the absence of phenotypic signs of aberrant growth. Thus, HBV-infected patient-derived liver organoids are a novel primary 3D cell culture model that resembles the diseased tissue of origin and can be used for genomic, transcriptomic, proteomic, and clinical applications to identify biomarkers for disease states during HBV infection.
 
@@ -103,51 +509,430 @@ Early surveillance of the changes in gene expression or biomarkers that predict 
 
 ## Materials and methods
 
-## Liver tissue
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HepG2</td>
+      <td>ATCC</td>
+      <td>HB-8065 RRID:CVCL_0027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HepG2.2.15</td>
+      <td>CCTCC</td>
+      <td>CCTCC-GDC0141 RRID:CVCL_L855</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hepatitis B Virus Core Antigen Antibody (1-5) (mouse monoclonal)</td>
+      <td>ThermoFisher</td>
+      <td>RRID:AB_1075044</td>
+      <td>IF: (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Hepatitis B Virus Core Antigen antibody (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_10903422</td>
+      <td>IF: (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hepatitis B Virus Surface Antibody (S 26) (mouse monoclonal)</td>
+      <td>ThermoFisher</td>
+      <td>RRID:AB_1075056</td>
+      <td>IF: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ALB/Albumin Antibody (F-10) (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-271605 RRID:AB_10647230</td>
+      <td>IF: (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HNF-4alpha (H-171) antibody (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-8987 RRID:AB_2116913</td>
+      <td>IF: (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SLC10A1 antibody produced in rabbit</td>
+      <td>Sigma-Aldrich</td>
+      <td>SAB2104761 RRID:AB_10668685</td>
+      <td>IF: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Purified Anti-β-Catenin (mouse monoclonal)</td>
+      <td>BD Transduction Laboratories</td>
+      <td>610154 RRID:AB_397555</td>
+      <td>IF: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ANTI-FLAG M2 antibody (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3165 RRID:AB_259529</td>
+      <td>IF: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pENTR/D-TOPO (plasmid backbone)</td>
+      <td>ThermoFisher</td>
+      <td>Invitrogen: K240020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti6/V5-DEST Gateway Vector (plasmid backbone)</td>
+      <td>ThermoFisher</td>
+      <td>Invitrogen: V49610</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Monolisa HBsAg ULTRA</td>
+      <td>Biorad</td>
+      <td>Biorad: 72346</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human Hepatitis B e Antigen (HBeAg) ELISA Kit</td>
+      <td>Cusabio</td>
+      <td>CSB-E13557h</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RealiaPrep RNA Cell Miniprep System</td>
+      <td>Promega</td>
+      <td>Promega: Z6012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNase I</td>
+      <td>ThermoFisher</td>
+      <td>Invitrogen: 18047019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript II Reverse Transcriptase</td>
+      <td>ThermoFisher</td>
+      <td>Invitrogen: 18064022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GoTaq qPCR Master Mix</td>
+      <td>Promega</td>
+      <td>Promega: A6001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAamp MinElute Virus Spin Kit</td>
+      <td>Qiagen</td>
+      <td>Qiagen: 57704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy Blood and Tissue Kits</td>
+      <td>Qiagen</td>
+      <td>Qiagen: 69504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T5 Exonuclease</td>
+      <td>New England Biolabs</td>
+      <td>NEB: M0363</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Plasmid-Safe ATP-Dependent DNase</td>
+      <td>Epicentre</td>
+      <td>E3101K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tenofovir disoproxil fumarate</td>
+      <td>Sigma-Aldrich</td>
+      <td>SML1794</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fialuridine</td>
+      <td>Cayman Chemical</td>
+      <td>15867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Myrcludex-B</td>
+      <td>Creative Peptides</td>
+      <td>10-101-139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blasticidine S hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma: 15205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase D</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma: 11088858001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>TrypLE Express</td>
+      <td>ThermoFisher</td>
+      <td>Gibco:12604013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cultrex Reduced Growth Factor Basement Membrane Extract, Type 2, Pathclear</td>
+      <td>R and D Systems</td>
+      <td>3533-010-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B-27 Supplement, minus vitamin A</td>
+      <td>ThermoFisher</td>
+      <td>Gibco: 12587010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-2 Supplement</td>
+      <td>ThermoFisher</td>
+      <td>Gibco: 17502048</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Acetyl-L-cysteine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma: A7250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nicotinamide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma: N3376</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Recombinant [Leu15]-Gastrin I human</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma: G9145</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Recombinant Human EGF</td>
+      <td>PeproTech</td>
+      <td>GMP100-15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Recombinant Human FGF-10</td>
+      <td>PeproTech</td>
+      <td>100–26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Recombinant Human HGF</td>
+      <td>PeproTech</td>
+      <td>100–39H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Forskolin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma: F3917</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Recombinant Human Noggin</td>
+      <td>PeproTech</td>
+      <td>120–10C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>A 83–01</td>
+      <td>Tocris</td>
+      <td>Tocris: 2939</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ROCK Inhibitor (Y-27632)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma: SCM075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPT</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma: D5942</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma: D4902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Recombinant Human BMP-7</td>
+      <td>PeproTech</td>
+      <td>120–03P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Recombinant Human FGF-19</td>
+      <td>PeproTech</td>
+      <td>100–32</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Code used for RNA-Seq data analysis</td>
+      <td>Moulos and Hatzis, 2015</td>
+      <td></td>
+      <td>The R package used for the RNA-Seq data analysis is available at https://www.bioconductor.org/packages/release/bioc/html/metaseqR.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>https://graphpad.com</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 5</td>
+    </tr>
+  </tbody>
+</table>
+
+### Liver tissue
 
 The Medical Ethical Council of the Erasmus Medical Center approved the use of this material for research purposes (reference number: MEC-2014–060, Department of Surgery, Erasmus MC), and informed consent was provided from all patients. Biopsies from explanted HBV-infected livers and HBV-infected donor liver were fixed for 24 hr at room temperature (RT) in 4% formaldehyde solution (Klinipath) immediately after collection in the operating room. Fixed biopsies were processed according to the standard protocol to dehydrate and infiltrate with paraffin wax and subsequently embedded into paraffin blocks. Sections of 4 μm were cut using a microtome and mounted on glass microscope slides. After deparaffination according to the standard procedure, the tissue slides were stained with haematoxylin and eosin (Haemalum – Mayer’s, VWR) according to the manufacturer’s protocol, dehydrated, and mounted for microscopic analysis.
 
-## Dissociation of human liver hepatocytes and seeding of organoids
+### Dissociation of human liver hepatocytes and seeding of organoids
 
 Liver specimens from healthy donors and HBV-infected patients were dissociated and seeded to grow organoids using the method previously described by Huch et al., 2015 with minor modifications. In brief, liver specimens (1–2 cm3) were washed once with Dulbecco's Modified Eagle Medium (DMEM) (Sigma) supplemented with 1% fetal calf serum (FCS) and with 0.1% penicillin/streptomycin (PS, Sigma), minced, and incubated at 37°C with the digestion solution (collagenase 2.5 mg/ml in Earle's Balanced Salt Solution [EBSS]). Incubation was performed for 30 min, further mincing and mixing the tissue every 10 min. To recover the cells, digestion solution was passed through a 70 µM strainer in a 50 ml tube (GreinerBio) and washed with 45 ml Advanced DMEM (Gibco) supplemented with 1% phosphatidylserine (PS), 10 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES) (Gibco), and 1% GlutaMax (Gibco), henceforth Ad+++. Partially digested tissue was recovered from the strainer and further incubated with TrypLE Express (Thermoscientific) for 15 min at 37°C. Cells obtained from the first and second digestion were pooled together and washed twice with Ad+++.
 
 After the second centrifugation (200 xg, 5 min), cells were counted and 1–3 x 106 cells were collected in 1 ml Trizol reagent (Sigma) for RNA isolation by following the manufacturer’s instructions. To seed organoids, approximately 10,000–15,000 cells were mixed with a fixed amount of BME solution (ratio: 2/3 Basement Membrane Extract, type 2 (Pathclear), diluted with 1/3 Ad+++) and seeded in 25 µl drops in 48-well suspension plates (GreinerBio). After incubation at 37°C from 30 min, the BME solution had solidified and wells were filled with 250 µl of human liver organoid isolation medium consisting of Ad+++ supplemented with 1X B27 supplement without retinoic acid (Gibco), 1X N2 supplement (Gibco), 1.25 mM N-acetyl-L-cysteine (Sigma), 20% (vol/vol) Rspo-1 conditioned medium (Huch et al., 2013), 1.25% (vol/vol) Wnt3a conditioned medium (Barker et al., 2010), 10 mM nicotinamide (Sigma), 10 nM recombinant human (Leu15)-gastrin I (Sigma), 50 ng/ml recombinant human epidermal growth factor (EGF) (Peprotech), 100 ng/ml recombinant human fibroblast growth factor 10 (FGF10) (Peprotech), 25 ng/ml recombinant human hepatocyte growth factor (HGF) (Peprotech), 10 μM forskolin (Sigma), 5 μM A8301 (Tocris), 25 ng/ml Noggin (Peprotech), and 10 μM Y27632 Rho Kinase (ROCK) Inhibitor (Sigma).
 
-## Expansion and maintenance of organoids in culture
+### Expansion and maintenance of organoids in culture
 
 After 1 week of seeding the organoids, isolation media were changed to human liver expansion media (EM; Ad+++ supplemented with 1X B27 supplement without retinoic acid (Gibco), 1X N2 supplement (Gibco), 1.25 mM N-acetyl-L-cysteine (Sigma), 20% (vol/vol) Rspo-1 conditioned medium, 1.25% (vol/vol) Wnt3a conditioned medium [Barker et al., 2010], 10 mM nicotinamide (Sigma), 10 nM recombinant human (Leu15)-gastrin I (Sigma), 50 ng/ml recombinant human EGF (Peprotech), 100 ng/ml recombinant human FGF10 (Peprotech), 25 ng/ml recombinant human HGF (Peprotech), 10 μM forskolin (Sigma), and 5 μM A8301 (Tocris)) (Huch et al., 2015).
 
 EM was changed twice a week, and cultures were split every 7–10 days according to organoid density. For passaging (1:4-1:8, depending on growth rate of the culture), organoids were resuspended in 10 ml Ad+++, incubated in ice for 10 min, and collected by centrifugation (5 min at 200 xg). Subsequently, organoids were incubated for 1–2 min in TrypLE Express at RT and mechanically disrupted by pipetting. After a further wash in Ad+++, cells were resuspended in BME solution and seeded in 24- or 48-well suspension plates. After BME solution had solidified, wells were filled with 500 µl (24 wells) or 250 µl (48 wells) of human liver organoid expansion medium.
 
-## Hepatic differentiation of liver organoids
+### Hepatic differentiation of liver organoids
 
 Human liver organoid cultures derived from healthy and HBV-infected livers were seeded and cultured for 4 days in EM without Wnt3a conditioned medium supplemented with 25 ng/ml of Bone Morphogenetic Protein 7 (BMP7) (Peprotech). Hepatic differentiation was induced by culturing human liver organoids in DM (Ad+++ supplemented with 1X B27 supplement without retinoic acid, 1X N2 supplement, 1 mM N-acetylcysteine, 10 nM recombinant human [Leu15]-gastrin I, 50 ng/ml recombinant human EGF, 25 ng/ml recombinant human HGF, 0.5 μM A83-01, 10 μM N-[N-(3,5-Difluorophenacetyl)-L-alanyl]-S-phenylglycine t-butyl ester (DAPT) (Sigma), 3 μM dexamethasone (Sigma), 25 ng/ml BMP7, and 100 ng/ml recombinant human FGF19 (Peprotech)). DM was changed twice a week for 7 days before infection or 10 days before staining for albumin and HNF4α (Huch et al., 2015). The differentiated hepatocyte markers, which indicate liver cell properties, remain stably expressed in DM organoids and can be maintained for up to 2 months with intermittent culturing in expansion media. For subsequent downstream analysis, the following amounts of organoids were required (Table 2).
 
-## Total RNA isolation and quantitative RT-qPCR
+**Table 2.**
+ Recommended scale of starting material.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Procedure</th>
+      <th>Number of wells/condition</th>
+      <th>Number of organoids/well</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DNA isolation</td>
+      <td>One well of a 24-well plate</td>
+      <td rowspan="4">≈100–200 organoids/well</td>
+    </tr>
+    <tr>
+      <td>RNA isolation</td>
+      <td>One well of a 24-well plate</td>
+    </tr>
+    <tr>
+      <td>cccDNA isolation</td>
+      <td>20–24 wells of a 24-well plate</td>
+    </tr>
+    <tr>
+      <td>Immunofluorescence staining</td>
+      <td>5–10 wells of a 24-well plate</td>
+    </tr>
+  </tbody>
+</table>
+
+### Total RNA isolation and quantitative RT-qPCR
 
 RNA extraction was performed starting from 1 to 2 wells of a 24-well plate. Organoids were collected either in 500 µl of cell lysis buffer and processed using RealiaPrep RNA Cell Miniprep System (Promega), according to the manufacturer’s instructions, or in 1 ml of Trizol reagent (Sigma) and RNA was extracted according to the manufacturer’s instructions. Purified RNA was treated with DNase I (Invitrogen) to remove potential HBV DNA contamination and, subsequently, cDNA synthesis was performed starting from 300 to 1000 ng of RNA using Superscript II Reverse Transcriptase (Invitrogen) kit following manufacturer’s protocol for random primer cDNA synthesis. cDNA was diluted either 1:5 or 1:2.5 in nuclease-free water and 2 µl of the diluted product was used for real-time PCR with the following reagents: 5 µl of GoTaq qPCR Master Mix (Promega), 2 µl of nuclease-free water, and 1 µl of 10 mM primer mix. Amplification was performed on the CFX Connect Real-Time PCR Detection System thermocycler (BioRad) using the following thermal program starting with 3 min at 95°C, followed by 40 cycles of 95°C for 10 s and 60°C for 30 s. Specificity of the quantitative reverse transcription PCR (RT-qPCR) products was assessed by melting curve analysis. No RT control was routinely included in the procedure. Primers used for real-time qPCR are listed below.
 
 Gene expression levels were calculated using the 2ΔCt method, whereas fold increase was calculated using the 2ΔΔCt method (Schmittgen and Livak, 2008). GAPDH and cyclophillin A were used as housekeeping controls as indicated.
 
-## Detection of HBV RNA
+### Detection of HBV RNA
 
 cDNA obtained from reverse transcription of intracellular RNA (see previous section for details) was analyzed using a TaqMan-based qPCR assay. For each reaction, a 25-ul mixture was prepared containing 2.5 µl 10X buffer, 1.75 µl 25 mM MgCl2, 1 µl 10 mM dNTPs, 1U of Platinum Taq, 0.125 µl of 100 µM forward (5’-GCAACTTTTTCACCTCTGCCTA-3’) and reverse (5’-AGTAACTCCACAGTAGCTCCAAATT-3’) primers, 0.075 µl of 50 µM probe (FAM-TTCAAGCCTCCAAGCTGTGCCTTGGGTGGC-BHQ1), and 4 µl (cDNA) of template. Beta-2-microglobulin was used as a housekeeping control for expression analysis of cDNA samples (B2M Fwd 5’-AGCGTACTCCAAAGATTCAGGTT-3’, B2M Rev 5’-ATGATGCTGCTTACATGTCTCGAT-3’, B2M probe FAM-TCCATCCGACATTGAAGTTGACTTACTG-BHQ1).
 
 Detection of the 3.5-kb RNA transcript and total HBV RNA was performed using a previously published nested PCR protocol (Wong et al., 2011) followed by agarose gel electrophoresis with cDNA samples as templates for the nested PCR. Primers used for the nested PCR are listed below.
 
-## Detection of HBsAg and HBeAg
+### Detection of HBsAg and HBeAg
 
 50 µl of the organoid supernatant was collected after 3–6 days post infection and used for the detection of HBsAg and HBeAg. Monolisa HBs Ag ULTRA (BioRad) and Human Hepatitis B e Antigen (HBeAg) ELISA Kit (Cusabio) were used for the detection of HBsAg and HBeAg, respectively, from the supernatant of the infected organoids following manufacturer’s instructions. Absorbance values at 450 nm for the samples were normalized by the negative control provided by the manufacturers and depicted as signal over control (S/CO).
 
-## Immunofluorescence and image analysis
+### Immunofluorescence and image analysis
 
 Human liver organoids were collected and washed three times with cold Ad+++ to remove BME, then fixed with 4% paraformaldehyde for 30 min in ice, and permeabilized using 0.3% (HBcAg, HNF4α, and NTCP) or 1% (albumin) Triton X-100 (Sigma) in phosphate-buffered saline (PBS) for 30 min at RT. For HBsAg staining, cells were fixed and permeabilized in 100% acetone. Specimens were incubated for 2 hr at RT in PBS plus 10% bovine serum albumin (BSA) (Roche) and 0.5% FCS (HBsAg) or PBS plus 0.5% FCS, 0.3% triton, 1% BSA 1% DMSO (albumin, HBcAg, HNF4α, and SLC10A1). Following blocking, human liver organoids were incubated overnight with primary antibodies (mouse anti-HBcAg, mouse anti- HBsAg (ThermoScientific), mouse anti-HBcAg (Abcam)), mouse anti-albumin, rabbit anti-HNF4α (Santa Cruz Biotechnology), and rabbit anti-SLC10A1 (NTCP, Sigma) diluted in PBS + 10% blocking buffer. After extensive washing, human liver organoids were stained with appropriate Alexa Fluor dye-conjugated secondary antibodies (Life Technologies). Nuclei were stained with Hoechst33342 (Molecular Probes). Immunofluorescence images were acquired using a confocal microscope (Leica, SP5). Images were analyzed and processed using Leica LAS AF Lite software (Leica SP5 confocal). All phase-contrast pictures were acquired using a Leica DMIL microscope and a DFC420C camera.
 
-## Production of HBV virus and HBV infection
+### Production of HBV virus and HBV infection
 
 HepG2.2.15 cells, a HepG2-derived cell line stably transfected with full-length HBV (kindly provided by Prof. Bart Haagmans, Erasmus MC), were cultured in DMEM medium (Gibco) supplemented with 10% fetal bovine serum (Gibco) and 1% penicillin/streptomycin. For virus production, 3 x 106 cells were plated in collagen-coated 10 cm plates, cultured in supplemented DMEM until confluency and subsequently in Ad+++ for 4 days. The supernatant of HepG2.2.15 cells was then collected, filtered, and concentrated using the PEG Virus Precipitation Kit (Abcam) following the manufacturer's instructions. Precipitated virus was aliquoted and stored at −80°C until use. Human serum was obtained from residual samples from HBV-infected individuals attending Erasmus MC for routine clinical activity. As a negative control, an aliquot of the virus equivalent to the inoculum was inactivated by incubation at 100°C for 30 min. Human liver organoids were resuspended using either active virus or heat-inactivated control at a multiplicity of infection (MOI) of 1–10 x 103 copies HBV DNA/organoid, transferred to 24-well plates, and centrifuged for 1 hr at 600 xg. Following spinoculation, plates were incubated at 37°C for 5 hr and then seeded in BME following the culturing protocol. After BME solution has solidified, liver organoids were maintained in EM for 16 hr, washed four times with Ad+++, and cultured in EM or DM as indicated. To check the NTCP dependency for infection, organoids were treated before infection for 2 hr with 10 µM myrcludex-B followed by the continuous presence of 10 µM myrcludex-B throughout the whole infection procedure. Myrcludex-B treatment was then continued till 6 days post infection.
 
-## Isolation of HBV DNA
+### Isolation of HBV DNA
 
 To isolate HBV DNA from the supernatants of HepG2.2.15 cells and organoid cultures infected with either infectious HepG2.2.15-produced virus or HI virus, the QIAamp MinElute Virus Spin Kit was used following the manufacturer’s instructions.
 
@@ -155,51 +940,51 @@ To isolate intracellular HBV DNA from hD organoid cultures infected with either 
 
 For the alkali lysis plasmid DNA-isolation protocol, organoids were treated with TrypLE Express and incubated for 30–50 s at RT. Organoids were washed with PBS, collected by centrifugation (5 min at 1000 rpm), and resuspended with 800 µl of ice-cold cell lysis buffer (1 mM EDTA (pH 8.0), 5 mM Tris HCl (pH 7.5), and 0.05% Nonidet P-40). After 10 min of incubation on ice, an equal volume of alkali lysis buffer (0.1 M NaOH, 6% sodium dodecyl sulfate (SDS)) was added and the solution was incubated for 30 min at 37°C. DNA was neutralized by adding 3 M potassium acetate (pH 5.0) to a final concentration of 0.6 M and centrifuged for 5 min at 12,000 rpm. The supernatant was extracted two times with phenol followed by extraction with butanol:isopropanol (7:3) for removal of any residual phenol. Subsequently, the DNA was precipitated with 1 ml 100% ethanol, 400 µl 7.5 M ammonium acetate, and 1 µl 20 mg/ml glycogen overnight at −80°C. Next day, the cccDNA sample was spun down for 30 min at 4°C, 14,000 rpm, and washed with 70% ethanol. After spinning the samples for 15 min at 4°C, 14,000 rpm, the pellet was resuspended in 50 µl of nuclease-free water. To remove the chromosomal DNA or any linear HBV DNA, 25 µl of the isolated DNA was digested with plasmid-safe DNase according to the manufacturer’s protocol and the samples were digested for 1 hr at 37°C followed by 30 min of heat inactivation at 70°C. The digested samples were purified once with phenol:chloroform:isoamyalcohol (Sigma-Aldrich) followed by treatment with chloroform: isoamylalcohol (24:1), cccDNA was precipitated with 20 ul 3 M NaAC (pH 5.2), 1 ul glycogen (20 mg/ml), 1 ml 100% ethanol and washed as described above, and the final DNA pellet was resuspended in 30 µl of nuclease-free water.
 
-## Detection of HBV DNA
+### Detection of HBV DNA
 
 HBV DNA extracted from culture supernatant and intracellular HBV DNA were analyzed in duplicate using a TaqMan-based qPCR assay. For each reaction, a 25-ul mixture was prepared containing 2.5 µl 10X buffer, 1.75 µl 25 mM MgCl2, 1 µl 10 mM dNTPs, 1U of Platinum Taq, 0.125 µl of 100 µM forward (5’-GCAACTTTTTCACCTCTGCCTA-3’) and reverse (5’-AGTAACTCCACAGTAGCTCCAAATT-3’) primers, 0.075 µl of 50 µM probe (FAM-TTCAAGCCTCCAAGCTGTGCCTTGGGTGGC-BHQ1), and 7.5 µl (DNA) of template. Each PCR included a standard curve made of dilutions of a plasmid containing the full-length HBV genome ranging from 4 to 4 x 105 copies of plasmid. Amplification was performed on the CFX Connect Real-Time PCR Detection System thermocycler (BioRad) using the following thermal program starting with 10 min at 95°C, followed by 45 cycles of 95°C for 10 s, 60°C for 30 s, and 72°C for 10 s.
 
 For quantification of cccDNA, a TaqMan-based qPCR was performed, whereby for each reaction, a 20-µl reaction mix was prepared containing 4.2 µl of the cccDNA template, 10 µl LightCycler480 Probes Master (Roche), 1 µM primer mix (Fwd 5’-GTCTGTGCCTTCTCATCTGC-3’; Rev 5’-AGTAACTCCACAGTAGCTCCAAATT-3’), 0.2 µM probe (FAM-TTCAAGCCTCCAAGCTGTGCCTTGGGTGGC-BHQ1), and 4% dimethyl sulfoxide (DMSO). qPCR was carried out using a previously published protocol: 95°C for 10 min, followed by 50 cycles of 95°C for 15 s and 61°C for 1 min (Winer et al., 2017). Lenti-HBV plasmid construct containing 1.3mer HBV genome (Figure 3—figure supplement 2C) was used as a positive control for the qPCR.
 
-## Detection of integrated HBV DNA in HBV-infected patient-derived liver organoid genome
+### Detection of integrated HBV DNA in HBV-infected patient-derived liver organoid genome
 
 Intracellular DNA, isolated from iPs and iDs using DNeasy Blood and Tissue kit by Qiagen, was used to detect the region of HBV DNA integrated in the organoid genome. To amplify the integrated region, PCR containing ~500–800 ng of DNA template, 2X GoTaq qPCR Master Mix (Promega) to a final concentration of 1X, and primer mix to a final concentration of 500 nM was prepared. Amplification was performed on the CFX Connect Real-Time PCR Detection System thermocycler (BioRad) using the following thermal program starting with 3 min at 95°C, followed by 45 cycles of 95°C for 10 s and 58°C for 30 s. Primers used for PCR are listed below:
 
 PCR-amplified DNA fragments corresponding to different regions of HBV Core, X, and Pol as indicated were visualized by running the fragments on 1.5% agarose gels. Gel images were acquired using Uvidoc HD2 (Uvitec Cambridge) gel documentation system.
 
-## Infection with HBV generated from organoids
+### Infection with HBV generated from organoids
 
 The supernatant produced by infected organoids at 4–8 days post infection was collected and concentrated using Amicon Ultra-15 100K (Milipore). Human liver organoids were resuspended using either concentrated HBV virus or HI control. After an hour of spinoculation at 32°C, 600 xg, the plate was incubated at 37°C overnight and then washed and seeded in BME following the HBV infection and culturing protocol.
 
-## Cell culture
+### Cell culture
 
 HepG2 cells were obtained from ATCC and HepG2.2.15 cells were obtained from CCTCC. The identity of the cells was authenticated by the manufacturers by short tandem repeats (STR) profiling and cell lines were routinely tested for mycoplasma. HepG2 and HepG2.2.15 cells were cultured in DMEM medium (Gibco) supplemented with 10% fetal bovine serum (Gibco) and 1% penicillin/streptomycin and incubated in 5% CO2 at 37°C.
 
-## Viability assays
+### Viability assays
 
 HepG2 cells with a cell density of 2 × 104 cells/ml were seeded in 24-well plates with DMEM high-glucose media supplemented with fetal bovine serum (10% v/v) and penicillin/streptomycin (1% v/v) and incubated in 5% CO2 at 37°C for overnight. Human liver organoids seeded from healthy donor or HBV-infected patient livers were split in the ratio 1:10, seeded in 20 µl BME 3D culture in 48-well plates, and differentiated as described above. 10 days post differentiation for human liver organoids and 24 hr post seeding of the HepG2 cells, they were treated with different concentrations of Fialuridine (Cayman, 15867–1) or Tenofovir disproxil fumarate (Sigma, SML1794) (1–20 µM) or the vehicle control. At different time points (2–10 days) post treatment, organoid viability was measured using the alamarBlue viability assay (alamarBlue Invitrogen DAL1025, 1:10 in DM) according to the manufacturer’s instructions. Briefly, treatment DM medium was removed from wells and 10% alamarBlue with DM was added to each well and incubated for 4 hr (organoids) or 2 hr (HepG2 cells) at 37°C before absorbance readings were taken at 570 and 600 nm. The results were normalized to control vehicle-treated differentiated organoids. The lower limit of quantitation of the assay was determined by values obtained from BME without organoids and is represented by dotted lines in figure panels. Each treatment condition was repeated at least three times and readings were done in duplicate. Cell imaging was performed after each alamarBlue assay.
 
-## 3’ mRNA sequencing
+### 3’ mRNA sequencing
 
 For each RNA preparation, two wells of organoids in expansion phase were collected in Trizol reagent (Sigma) 4–5 days after splitting. RNA was extracted according to the manufacturer’s instruction and resuspended in 30 µl of nuclease-free water. Total RNA was quantitated (ND1000 Spectrophotometer – PEQLAB). Samples were diluted accordingly to a mean concentration of approximately 100–150 ng/μl and their quality assessed on a Bioanalyzer (Agilent Technologies) using the Agilent RNA 6000 Nano Kit reagents and protocol (Agilent Technologies). RNA samples were processed for library preparation using the 3’ mRNA-Seq Library Prep Kit Protocol for Ion Torrent (QuantSeq-LEXOGEN, Vienna, Austria), according to the manufacturer’s instructions. Briefly, up to 500 ng from each RNA sample was used for first strand synthesis. The RNA was subsequently removed and second-strand synthesis was initiated by a random primer, containing Ion Torrent compatible linker sequences and appropriate in-line barcodes. Second-strand synthesis was followed by magnetic bead-based purification and the resulting library was PCR-amplified for 14 cycles and re-purified. Library quality and quantity was assessed on a Bioanalyzer using the DNA High Sensitivity Kit reagents and protocol (Agilent Technologies). The quantified libraries were pooled together at a final concentration of 100 pM. The pools were templated and enriched on an Ion Proton One Touch system. Templating was performed using the Ion PI Hi-Q OT2 200 Kit (Thermo Fisher Scientific), followed by sequencing using the Ion PI Hi-Q Sequencing 200 Kit on Ion Proton PI V2 chips (Thermo Fisher Scientific), an Ion Proton System, according to the manufacturer's instructions.
 
-## Short-read mapping
+### Short-read mapping
 
 The Quant-Seq FASTQ files obtained from Ion Proton sequencing were mapped on the UCSC hg19 reference genome using a two-phase mapping procedure. Firstly, the short reads were mapped using tophat2 (Kim et al., 2013), with the following non-default settings: --read-mismatches 3 --read-gap-length 3 --read-edit-dist 3 --no-novel-juncs, other settings at default. Additional transcript annotation data for the hg19 genome from Illumina iGenomes (http://cufflinks.cbcb.umd.edu/igenomes.html) were also provided to tophat2 for guidance. Next, the reads that remained unmapped were converted back to FASTQ files using bam2fastq from the BEDTools (Quinlan and Hall, 2010) suite and submitted to a second round of mapping using Bowtie2 (Langmead and Salzberg, 2012) against the hg19 genome with the --local and --very-sensitive-local switches turned on. All resulting BAM files were visualized in the UCSC Genome Browser using BEDTools and tools provided by the UCSC Genome Browser toolkit.
 
-## Statistical analysis of Quant-Seq data
+### Statistical analysis of Quant-Seq data
 
 The resulting Quant-Seq BAM files were analyzed with the Bioconductor package metaseqR (Moulos and Hatzis, 2015), which has built-in support for Quant-Seq data. Briefly, the raw BAM files, one for each organoid sample, were summarized to a 3’ UTR read counts table from Ensembl longest (dominant) transcripts (version 90). The original 3’ UTR regions were extended 500 bp upstream and downstream to accommodate the variable read length of Ion Proton reads. In the resulting read counts table, each row represented one 3’ UTR region, each column one Quant-Seq sample, and each cell the corresponding read counts associated with each row and column. The final 3’ UTR read counts table was normalized for inherent systematic or experimental biases using the Bioconductor package DESeq (Anders et al., 2012) after removing areas that had zero counts over all the Quant-Seq samples. Prior to the statistical testing procedure, the 3’ UTR read counts were filtered for possible artifacts that could affect the subsequent statistical testing procedures. 3’ UTR areas presenting any of the following were excluded from further analysis: (i) 3’ UTR areas corresponding to genes smaller than 500 bp, (ii) 3’ UTRs with read counts below the median read counts of the total normalized count distribution (similar expression thresholds [e.g., the median of the count distribution] have been previously used in the literature [Mokry et al., 2012], where the authors use the median reads per kilobase of transcript, per million mapped reads (RPKM) value instead of normalized counts), and (iii) 3’ UTR areas corresponding to genes with the following Ensembl biotypes: rRNA, TR_V_pseudogene, TR_J_pseudogene, IG_C_pseudogene, IG_J_pseudogene, IG_V pseudogene. The remaining 3’ UTR counts table after filter application was subjected to differential expression analysis for the appropriate contrasts using the PANDORA algorithm implemented in metaseqR. 3’ UTR areas (and their corresponding genes) presenting a PANDORA p-value less than 0.05 and a fold change (for each contrast) greater than 1 or less than −1 in log2 scale were considered as differentially expressed.
 
-## Clustering analysis
+### Clustering analysis
 
 Hierarchical clustering was performed using the Euclidean distance and complete linkage for the construction of the dendrograms. The expression values used to generate the heatmap were DESeq-normalized read counts in log2 scale. Multidimensional scaling was performed using the Spearman correlation distance metric on the gene expression matrix using DESeq-normalized read counts in log2 scale. All calculations and visualizations were performed using facilities from the R language. All analysis scripts and logs of the analysis pipelines are available upon request.
 
-## Gene ontology and pathway analysis
+### Gene ontology and pathway analysis
 
 GO enrichment and biochemical pathway analysis was performed using GeneCodis (Tabas-Madrid et al., 2012). For the GeneCodis GO and pathway analysis, the 361 iP ‘signature’ genes were used.
 
-## Generation of the lentiviral vectors and transduction of liver organoids
+### Generation of the lentiviral vectors and transduction of liver organoids
 
 A gene block fragment encoding human NTCP was designed based on the reference sequence retrieved from NCBI nucleotide database (NM_003049.3). A 3X Flag PCR fragment including NTCP coding sequence was amplified using the NTCP_FWD (CACCATGGATTACAAGGATGACGACGATAAGGATTACAAGGATGACGACGATAAGGATTACAAGGATGACGACGATAAGATGGAGGCCCACAACGCGTCTgcccca) and NTCP_REV (TTACTAGGCTGTGCAAGGGGAGCA) primers and cloned in the pENTR/D-TOPO entry vector (Invitrogen) following the manufacturer’s instructions.
 
@@ -215,6 +1000,6 @@ To determine NTCP functionality following transduction with NTCP lentiviral vect
 
 To determine HBV production following transduction with the full-length HBV lentiviral vector, the supernatant and cells from transduced cultures were collected at different time points after completion of blasticidin selection. Presence of viral DNA in the supernatant and cellular-associated viral RNA was assessed using the real-time protocol detailed as mentioned before in detection of HBV DNA and RNA section. Presence of HBsAg in organoid supernatant was assessed using the MonaLisa Kit (Promega) according to the manufacturer’s instructions.
 
-## Statistical analysis
+### Statistical analysis
 
 The data were first analyzed by analysis of variance (ANOVA), and then each pair was compared through Dunnett's multiple comparisons test. A value of p<0.05 was considered statistically significant. Data are shown as mean ± SD of at least three replicate treatments; *p<0.05; **p<0.01. The data were analyzed and graphs were depicted by GraphPad Prism software 5 (GraphPad Software, La Jolla, CA, USA). Obtained data from drug screening of infected organoids have two to eight technical replicates for each donor. Thus, the obtained data from each donor were analyzed by ANOVA separately or as stated in the figure legends.

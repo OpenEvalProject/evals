@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.35388.001 The endoplasmic reticulum (ER) protein folding capacity is balanced with the protein folding burden to prevent accumulation of un- or misfolded proteins. The ER membrane-resident kinase/RNase Ire1 maintains ER protein homeostasis through two fundamentally distinct processes. First, Ire1 can initiate a transcriptional response through a non-conventional mRNA splicing reaction to increase the ER folding capacity. Second, Ire1 can decrease the ER folding burden through selective mRNA decay. In Saccharomyces cerevisiae and Schizosaccharomyces pombe, the two Ire1 functions have been evolutionarily separated. Here, we show that the respective Ire1 orthologs have become specialized for their functional outputs by divergence of their RNase specificities. In addition, RNA structural features separate the splicing substrates from the decay substrates. Using these insights, we engineered an S. pombe Ire1 cleavage substrate into a splicing substrate, which confers S. pombe with both Ire1 functional outputs.
+The endoplasmic reticulum (ER) protein folding capacity is balanced with the protein folding burden to prevent accumulation of un- or misfolded proteins. The ER membrane-resident kinase/RNase Ire1 maintains ER protein homeostasis through two fundamentally distinct processes. First, Ire1 can initiate a transcriptional response through a non-conventional mRNA splicing reaction to increase the ER folding capacity. Second, Ire1 can decrease the ER folding burden through selective mRNA decay. In Saccharomyces cerevisiae and Schizosaccharomyces pombe, the two Ire1 functions have been evolutionarily separated. Here, we show that the respective Ire1 orthologs have become specialized for their functional outputs by divergence of their RNase specificities. In addition, RNA structural features separate the splicing substrates from the decay substrates. Using these insights, we engineered an S. pombe Ire1 cleavage substrate into a splicing substrate, which confers S. pombe with both Ire1 functional outputs.
 
 ## Introduction
 
@@ -30,9 +30,21 @@ Interestingly, the two Ire1 modalities co-exist in metazoan cells (Hollien and W
 
 ## Results
 
-## S. pombe and S. cerevisiae Ire1's cytosolic domains are functionally divergent
+### S. pombe and S. cerevisiae Ire1's cytosolic domains are functionally divergent
 
 Despite their common role as UPR effectors and conserved domain structures (Figure 1A), S. pombe and S. cerevisiae Ire1 orthologs share 29% sequence identity, and sequence variation may confer Ire1’s functional divergence. To explore this notion, we swapped the homologous IRE1 genes between the two yeast species by expressing S. cerevisiae Ire1 in ∆ire1 S. pombe cells and, vice versa, S. pombe Ire1 in ∆ire1 S. cerevisiae cells. To this end, we constructed strains in which we integrated the foreign IRE1 genes into the genomes of the other yeast such that their expression was regulated by the host species-endogenous IRE1 promoters and the resulting mRNAs contained host species-endogenous 5' and 3' untranslated regions (UTR). The IRE1 genes contained sequences encoding FLAG-tags that we inserted into an unstructured loop in their ER-lumenal domains in a position known to preserve Ire1 function (Rubio et al., 2011). In both yeasts, the foreign genes expressed Ire1 at comparable levels (Figure 1B and C, lanes 3). However, when grown on plates containing tunicamycin, a drug that blocks N-linked glycosylation and induces ER stress, the foreign Ire1s failed to support cell growth of either S. pombe and S. cerevisiae cells (Figure 1D and E, lanes 3), indicating that S. pombe and S. cerevisiae Ire1s are not interchangeable.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/35388/elife-35388-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cartoon illustration of lumenal domain (LD), transmembrane/cytosolic linker domain (TMD + L) and kinase/RNase domain (KR) for S. pombe (Sp) (blue) and S. cerevisiae (Sc) Ire1 (orange). (B, C) Expression levels of S. cerevisiae Ire1 (128 kD), S. cerevisiae lumenal S. pombe cytosolic Ire1 (126 kD), S. pombe lumenal S. cerevisiae cytosolic Ire1 (125 kD) and S. pombe Ire1 (122 kD) in S. pombe (B) and S. cerevisiae cells (C). Extracts were immunoblotted for 3xFLAG-Ire1. Ponceau stain (B) or Pgk1 (C) was used as loading control. (D, E) Cell growth assay on tunicamycin (Tm) plates. Serial dilutions of S. pombe (D) or S. cerevisiae (E) cells, which expressed the indicated Ire1 constructs, were spotted onto plates containing 0.05 μg/ml (D) or 0.1 μg/ml (E) of Tm. Plates were photographed after incubation at 30°C for 4 days. (F, G) qPCR assay for S. pombe GAS2 (F) or BIP1 (G) mRNA fold change upon 1 μg/ml Tm treatment for 1 hr. Experiments were done in triplicates. In (G), uncleaved (dark grey) or total (light grey) BIP1 mRNA was detected using the corresponding PCR primers illustrated as arrows in the schematic insert. The red dashed line indicates the Ire1 cleavage position on BIP1 mRNA. (H) Detection of S. cerevisiae HAC1 mRNA splicing by RT-PCR across the splice junction. Cells were treated with or without 1 μg/ml of Tm for 1 hr.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35388/elife-35388-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Northern blots of S. pombe GAS2 (A) and BIP1 (B) mRNA. Cells were treated with 1 μg/ml of Tm for 1 hr.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/35388/elife-35388-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Illustration of the HAC1 mRNA derived splicing reporter. The splicing reporter contains a part of the HAC1 mRNA 5’ exon replaced by the green fluorescent protein (GFP) coding sequence. In the unspliced reporter mRNA, translation is inhibited by a translation block formed by the intron and 5'UTR (indicated by the red arrow). Upon splicing, intron is removed and translation begins. (B) Measuring the HAC1 mRNA splicing dynamics in S. cerevisiae using automated flow cytometry. After 1.5 hr of incubation, either no Tm or 0.25 μg/ml, 0.5 μg/ml, 1 μg/ml, 2 μg/ml of Tm was added. Then, we monitored the splicing dynamics for 10 hr. The splicing dynamics under various conditions is plotted. Green lines represent the strains of interest, which expressed indicated Ire1 variants, and the black line represents WT control strain under the same condition. (C) Examining Ire1 foci formation in S. cerevisiae cells via fluorescence microscopy with or without 1 μg/ml Tm treatment for 20 min. (D) Growth assay on Tm plate for S. cerevisiae cells expressing Ire1 constructs with or without mCherry inserted into the cytosolic linker. The inserted mCherry does not affect Ire1's ability to alleviate ER stress.
 
 There are two plausible, not mutually exclusive scenarios that could explain the failure of cross-species complementation: (i) the foreign Ire1 lumenal domains fail to sense ER stress, or (ii) the foreign Ire1 cytosolic domains fail to recognize species-appropriate RNA substrates. Since the Ire1 lumenal domains have lower sequence identity (21%) than the cytosolic kinase/RNase domains (45%), we first swapped the Ire1 lumenal domains, generating chimeras with foreign lumenal domains and host species-endogenous transmembrane/cytosolic domains. Both chimeras supported growth on tunicamycin plates, suggesting that the divergent Ire1 lumenal domains share a conserved mechanism to sense ER stress and transduce the signal across ER membrane (Figure 1D and E, lanes 4). Next, we swapped the Ire1 transmembrane/cytosolic domains. These Ire1 chimeras failed to restore growth on tunicamycin plates of both S. pombe and S. cerevisiae cells (Figure 1D and E, lanes 5), indicating that the Ire1 transmembrane/cytosolic domains cause the Ire1 functional incompatibility when expressed in the opposing yeast. As a control, we expressed FLAG-tagged host species-endogenous Ire1s into Δire1 strains of both yeasts. These strains phenocopied the wild type (WT) cells on tunicamycin plates (Figure 1D and E, lanes 6). We again confirmed by immunoblotting that all of the FLAG-tagged Ire1 constructs were stably expressed at near-endogenous level in both yeasts (Figure 1B and C).
 
@@ -40,27 +52,55 @@ We next asked whether the Ire1 constructs would process the host species-appropr
 
 Correspondingly in S. cerevisiae cells, we examined HAC1 mRNA splicing by PCR across its splice junction. Consistent with the cell growth phenotype on tunicamycin, the two Ire1 constructs bearing the S. pombe cytosolic domains did not splice HAC1 mRNA in S. cerevisiae cells (Figure 1H, lanes 6, 10). By contrast, the Ire1 chimera bearing the S. pombe lumenal domain and S. cerevisiae cytosolic domains spliced HAC1 mRNA (Figure 1H, lane 8), albeit at reduced efficiency compared to WT S. cerevisiae Ire1 (Figure 1H, lane 2). We confirmed the activity of the various Ire1 constructs in HAC1 mRNA splicing by monitoring UPR dynamics with a HAC1 mRNA-derived splicing reporter (Figure 1—figure supplement 2A and B) previously described (Aragón et al., 2009; Zuleta et al., 2014). The reduced HAC1 mRNA splicing efficiency observed for Ire1 bearing the S. pombe lumenal domain (Figure 1H, lane 8, and Figure 1—figure supplement 2B, column 4) can be explained by the observation that the S. pombe lumenal domain mediates a lower degree of oligomerization than its S. cerevisiae counterpart, as demonstrated by the reduced ability of Ire1-mCherry fusion constructs to form foci visible by fluorescent microscopy (Figure 1—figure supplement 2C). Consistent with previous studies (Aragón et al., 2009), the insertion of the mCherry module into the Ire1 cytosolic linker, which connects Ire1 transmembrane domain and cytosolic kinase/RNase domain, did not affect its ability to sustain cell growth (Figure 1—figure supplement 2D).
 
-## Ire1 kinase/RNase domains have distinct RNase specificity
+### Ire1 kinase/RNase domains have distinct RNase specificity
 
 To further confine the Ire1 region giving rise of the species differences in outputs, we expressed an Ire1 chimera that, in addition to the S. cerevisiae lumenal domain, also included the S. cerevisiae transmembrane and cytosolic linker domains fused to the S. pombe kinase/RNase domain. This chimeric Ire1 weakly rescued cell growth and mildly restored the HAC1 mRNA splicing upon ER stress (Figure 2A lane 4, and Figure 2B lane 6), compared to the chimera containing S. pombe transmembrane and cytosolic linker domains, although both constructs were expressed at similar protein levels (Figure 2C). This result indicates that the major difference lies in the kinase/RNase domains, but that the transmembrane and cytosolic linker domains can afford a marginal rescue, most likely by reintroducing cytosolic linker elements that facilitate HAC1 mRNA docking (van Anken et al., 2014).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/35388/elife-35388-fig2-v1.jpg)
 
-**Figure 2.:** S. pombe and S. cerevisiae Ire1 have distinct RNase specificity.(A) Growth assay for S. cerevisiae cells expressing indicated Ire1 constructs on Tm plates, as Figure 1E. (B) Measuring HAC1 mRNA splicing, as Figure 1H. (C) Comparing the expression levels of the indicated 3xFLAG-tagged Ire1 chimeras using immunoblotting. Ponceau stain was used as loading control. (D, E, F, G) In vitro RNA cleavage assays. 5'-radiolabeled hairpin RNA substrates were incubated with 12.5 μM S. cerevisiae or S. pombe Ire1 kinase/RNase domains (KR) at 30°C for the indicated time. (D) Hairpin RNA substrate derived from the 3' splice site of S. cerevisiae HAC1 mRNA. The calculated kobs is 9.4 ± 0.9 × 10−4 s−1 for S. cerevisiae Ire1 KR and 0.15 ± 0.01 × 10−4 s−1 for S. pombe Ire1 KR. (E) Hairpin RNA substrate derived from the Ire1 cleavage site on S. pombe BIP1 mRNA. The calculated kobs is 0.079 ± 0.0006 × 10−4 s−1 for S. cerevisiae Ire1 KR and 37.3 ± 4.4 × 10−4 s−1 for S. pombe Ire1 KR. (F) Hairpin RNA substrate derived from the Ire1 cleavage site on S. pombe SPAC4G9.15 mRNA, encoding a gene of unknown function. The calculated kobs was below our detection limit for S. cerevisiae Ire1 KR and 15.6 ± 2.2 × 10−4 s−1 for S. pombe Ire1 KR. (G) Hairpin RNA substrate derived from the Ire1 cleavage site on S. pombe PLB1 mRNA. The calculated kobs is 0.2 ± 0.003 × 10−4 s−1 for S. cerevisiae Ire1 KR and 19.0 ± 2.5 × 10−4 s−1 for S. pombe Ire1 KR.
+**Figure 2.:** (A) Growth assay for S. cerevisiae cells expressing indicated Ire1 constructs on Tm plates, as Figure 1E. (B) Measuring HAC1 mRNA splicing, as Figure 1H. (C) Comparing the expression levels of the indicated 3xFLAG-tagged Ire1 chimeras using immunoblotting. Ponceau stain was used as loading control. (D, E, F, G) In vitro RNA cleavage assays. 5'-radiolabeled hairpin RNA substrates were incubated with 12.5 μM S. cerevisiae or S. pombe Ire1 kinase/RNase domains (KR) at 30°C for the indicated time. (D) Hairpin RNA substrate derived from the 3' splice site of S. cerevisiae HAC1 mRNA. The calculated kobs is 9.4 ± 0.9 × 10−4 s−1 for S. cerevisiae Ire1 KR and 0.15 ± 0.01 × 10−4 s−1 for S. pombe Ire1 KR. (E) Hairpin RNA substrate derived from the Ire1 cleavage site on S. pombe BIP1 mRNA. The calculated kobs is 0.079 ± 0.0006 × 10−4 s−1 for S. cerevisiae Ire1 KR and 37.3 ± 4.4 × 10−4 s−1 for S. pombe Ire1 KR. (F) Hairpin RNA substrate derived from the Ire1 cleavage site on S. pombe SPAC4G9.15 mRNA, encoding a gene of unknown function. The calculated kobs was below our detection limit for S. cerevisiae Ire1 KR and 15.6 ± 2.2 × 10−4 s−1 for S. pombe Ire1 KR. (G) Hairpin RNA substrate derived from the Ire1 cleavage site on S. pombe PLB1 mRNA. The calculated kobs is 0.2 ± 0.003 × 10−4 s−1 for S. cerevisiae Ire1 KR and 19.0 ± 2.5 × 10−4 s−1 for S. pombe Ire1 KR.
 
 To study the differences by which the Ire1 kinase/RNase domains select their respective substrate mRNAs, we purified recombinant S. cerevisiae and S. pombe kinase/RNase domains and performed in vitro RNA cleavage assays. The S. cerevisiae Ire1 kinase/RNase efficiently cleaved a cognate 29-nucleotide RNA hairpin derived from the 3' splice site of S. cerevisiae HAC1 mRNA (Figure 2D). By contrast, under the same conditions the S. pombe Ire1 kinase/RNase cleaved the S. cerevisiae HAC1 mRNA-derived substrate ~60 fold slower (Figure 2D). Reciprocally, the S. pombe Ire1 kinase/RNase efficiently cleaved a cognate 32-nucleotide RNA hairpin derived from the cleavage site in S. pombe BIP1 mRNA and cognate RNA hairpins derived from the RIDD cleavage sites in S. pombe SPAC4G9.15 and PLB1, whereas S. cerevisiae Ire1 kinase/RNase cleaved the BIP1 mRNA-derived substrate and the S. pombe SPAC4G9.15 >500 fold slower and PLB1 mRNA-derived hairpins ~100 fold slower (Figure 2E,F,G). These in vitro data validate and expand the conclusions from the experiments conducted in vivo, suggesting that the different Ire1 RNase specificities separate their functional outputs and that they are not dependent on other cellular factors such as associated proteins or lipids.
 
-## Ire1 kinase/RNase domains recognize distinct RNA sequence and structural features
+### Ire1 kinase/RNase domains recognize distinct RNA sequence and structural features
 
 Ire1 recognizes its substrates based on both RNA sequence and structural features. The required RNA sequence motifs were characterized previously and differ between species: for S. cerevisiae Ire1 a nucleotide sequence of CNG|CNGN or CNG|ANGN (‘|' indicates the Ire1 cleavage position) situated in a strictly conserved 7-membered loop is required (Gonzalez et al., 1999). By contrast, for S. pombe Ire1 a three-nucleotide sequence of UG|C is required and no additional structural features have yet been characterized (Kimmig et al., 2012; Guydosh et al., 2017). To fill this gap in our knowledge, we examined the RNA secondary structures in vivo. To this end, we treated the S. pombe cells with dimethyl sulfate (DMS), which allows detection of exposed (unpaired and not blocked by proteins) adenine/cytosine residues (illustrated as green dots in Figure 3A). RNA was extracted, reverse transcribed and deep-sequenced. The DMS modifications stop reverse transcriptase and generate truncated DNA fragments that we mapped through deep sequencing. We then used identified unpaired bases to guide in silico RNA secondary structure predictions (Rouskin et al., 2014). For example, near one of the GAS2 mRNA cleavage sites, five bases, labeled in green in Figure 3B, have high DMS modification signals. In the RNA folding software mfold (Zuker, 2003), we provided the constraint such that these five residues are unpaired and obtained the predicted RNA secondary structure (Figure 3C). In this structure, the GAS2 mRNA forms a 9-membered stem loop with the cleavage consensus sequence UG|C located near the center of the loop. In similar analyses of 13 additional S. pombe Ire1 substrate mRNA cleavage sites previously identified by both Kimmig, Diaz et al. and Guydosh et al. (Guydosh et al., 2017; Kimmig et al., 2012), we found in all of them cleavage sites located near the center of loops in RNA stem-loop structures (Figure 3—figure supplement 1A,B). By contrast to those found in S. cerevisiae HAC1 mRNA, the predicted loops were of variable sizes, with the smallest being a 3-membered loop (e.g., the SPAC4G9.15 mRNA cleavage site) and the largest being a 9-membered loop (e.g., the BIP1 mRNA cleavage site). We summarize that S. pombe Ire1 is tolerant to loop size variation, while the S. cerevisiae Ire1 stringently recognizes 7-membered stem loops. Thus, the S. cerevisiae and S. pombe Ire1 recognize distinct RNA sequence and structural features (Figure 3D).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/35388/elife-35388-fig3-v1.jpg)
+
+**Figure 3.:** (A) Illustration of RNA structural mapping by DMS modifications. Dimethyl sulfate (DMS) allows detection of unpaired adenine and cytosine RNA bases (green dots). (B) The normalized DMS modification signals near the Ire1 cleavage site on S. pombe GAS2 mRNA (cleavage site is indicated by the red dashed line). The positions with high DMS modification signals are labeled in green and the previously identified S. pombe Ire1 UG|C motif is labeled in red. (C) In sillico RNA secondary structure prediction of the Ire1 cleavage site on GAS2 mRNA. Structure prediction was constrained by forcing the positions with high DMS modification signals (green) to be unpaired. (D) RNA sequence and structural motifs recognized by the S. cerevisiae and S. pombe Ire1. (E) In vitro cleavage assay using an RNA hairpin derived from human XBP1 mRNA 3' splice site, which is predicted to be a shared substrate for S. cerevisiae and S. pombe Ire1 KR. The calculated kobs is 16.7 ± 2.3 × 10−4 s−1 for S. cerevisiae Ire1 KR and 38.9 ± 4.0 × 10−4 s−1 for S. pombe Ire1 KR. (F) Illustrations of the S. pombe BIP1 mRNA variants and (G) their uncleaved (dark grey) or total (light grey) mRNA fold change upon ER stress in S. pombe cells. Experiments were done in triplicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35388/elife-35388-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A list of all 14 S. pombe Ire1 mRNA cleavage sites, which were independently identified by both Kimmig, Diaz et al. and Guydosh et al. (Guydosh et al., 2017; Kimmig et al., 2012). The UG|C motifs are labeled in red. The positions with high DMS modification signals are labeled in green. (B) Predicted RNA secondary structures of S. pombe Ire1 cleavage sites. DMS modification signals were used to guide the secondary structure prediction of S. pombe Ire1 mRNA cleavage sites. The red dashed lines indicate the Ire1 cleavage sites.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/35388/elife-35388-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Sequence and predicted RNA secondary structures of Ire1 cleavage sites on (A) S. pombe BIP1 mRNA, (B) BIP1-HAC1 hybrid mRNA and (C) BIP1-HAC1 hybrid mRNA with an A to U mutation. The part included in the dashed box is derived from S. cerevisiae HAC1 mRNA 5' splice site.
 
 A prediction of this model is that RNAs that combine S. cerevisiae and S. pombe Ire1 motifs should be substrates to Ire1 from either species. To test this prediction, we analyzed a substrate satisfying criteria for both species. Specifically, we examined a substrate predicted to form a 7-membered stem loop with the sequence CUG|CAGC, meeting the criteria of both the S. cerevisiae Ire1 motif (CNG|CNGN) and the S. pombe Ire1 motif (UG|C). Indeed, both enzymes cleaved this RNA in vitro with similar efficiency, in strong support of our model (Figure 3E).
 
 We further challenged the model in vivo by modifying the S. pombe BIP1 mRNA. First, we replaced the Ire1 cleavage site in the 3’ UTR of BIP1 mRNA with a sequence derived from the S. cerevisiae HAC1 mRNA 5' splice site. This modification is predicted to change the endogenous 9-membered loop to a 7-membered one. The new construct (‘BIP1-HAC1 hybrid mRNA’) contained the sequence AG|C, which is different from the S. pombe Ire1 sequence motif UG|C. In support of our model, S. pombe Ire1 failed to cleave the BIP1-HAC1 hybrid mRNA upon UPR induction (Figure 3G, bar 3 and 4, Figure 3—figure supplement 2A,B). Next, we mutated the non-cognate A to a cognate U, such that the S. pombe Ire1 cleavage motif UG|C was restored. Indeed, the single nucleotide change restored the S. pombe Ire1 cleavage (Figure 3G, bar 5 and 6, Figure 3—figure supplement 2C). Taken together, we conclude that the Ire1 orthologs in S. cerevisiae and S. pombe have divergent substrate preferences.
 
-## Engineering non-conventional mRNA splicing in S. pombe
+### Engineering non-conventional mRNA splicing in S. pombe
 
 While these results revealed the differences between the S. cerevisiae and S. pombe UPR at the step of Ire1 cleavage, it was not clear what determines the fates of the RNA cleavage fragments, that is RNA ligation in S. cerevisiae and RNA degradation in S. pombe. To address this question, we tested whether S. pombe cells contain functional mRNA ligation machinery. To this end, we expressed the S. cerevisiae HAC1 mRNA-derived splicing reporter (Figure 1—figure supplement 2A) in ∆ire1 S. pombe cells, bearing genomic copies of various Ire1 constructs. A chimeric Ire1 bearing the S. pombe cytosolic domain failed to splice the reporter mRNA, in agreement with our model (Figure 4A, lane 5 and 6). Interestingly, both Ire1 constructs bearing the S. cerevisiae cytosolic domains successfully spliced the reporter mRNA (Figure 4A, lanes 1–4). Thus, the S. pombe cells ligated the mRNA cleavage fragments as long as the correct RNA substrates were provided. This result suggested that features in the RNA substrates determine their fate post Ire1 cleavage.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/35388/elife-35388-fig4-v1.jpg)
+
+**Figure 4.:** (A) Measuring the non-conventional mRNA splicing in S. pombe cells, which were transformed with the S. cerevisiae HAC1 mRNA splicing reporter (SR) and the indicated Ire1 constructs. Cells were treated with 1 μg/ml Tm for 1 hr. (B) Illustration of the engineered S. pombe BIP1 mRNA splicing variant. (C) Measuring the non-conventional mRNA splicing of the engineered S. pombe BIP1 mRNA splicing variant. Experimental conditions are the same as those for Figure 4A. (D) Sequencing reads of the spliced BIP1 mRNA. The schematic illustration (E) and the splicing assay (F) of the synthetic splicing substrate in S. pombe. Cells were treated with 1 μg/ml Tm for 1 hr.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35388/elife-35388-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The part included in the dashed box is the inserted synthetic splicing cassette. The red dashed lines indicate the Ire1 cleavage sites. The S. pombe Ire1 UG|C motifs are labeled in red.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/35388/elife-35388-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Red dashed lines mark the cleavage sites and the red letters indicate the previously identified sequence motif.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/35388/elife-35388-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) The sequence alignment and colored with BoxShade Server. (B) The sequence identities between the indicated pairs of Ire1 constructs.
 
 Recently, we reported that in mammalian cells the XBP1 mRNA actively participates in the splicing reaction. In particular, a conformational RNA rearrangement promotes XBP1 mRNA intron ejection and exon ligation (Peschek et al., 2015). We wondered if this mechanism could be the factor that diverges the fates of the RNA cleavage fragments. To address this question, we aimed to synthetically create the Ire1-dependent non-conventional mRNA splicing reaction in S. pombe cells initiated by endogenous S. pombe Ire1. First, we identified the analogous RNA conformational rearrangement in S. cerevisiae HAC1 mRNA. To obtain a HAC1-derived RNA splicing cassette optimized for S. pombe Ire1, we then engineered the two Ire1-cleavage sites at the splice junctions to match the S. pombe Ire1 UG|C motif and pruned the intron (originally 252 bp in S. cerevisiae) to the very residues predicted to be critical for the mRNA conformational rearrangement (30 bp). Finally, we inserted the S. pombe-optimized mRNA splicing cassette into S. pombe BIP1 mRNA, replacing its endogenous Ire1 cleavage site (Figure 4B, Figure 4—figure supplement 1). Indeed, we found that the BIP1 mRNA containing the synthetic splicing cassette was spliced in S. pombe upon induction of ER stress (Figure 4C lane 2). Sequencing of the lower band in Figure 4C (lane 2) verified the designed identity of the splicing product (Figure 4D). To show that insertion of the splicing cassette triggers mRNA splicing independent of particular flanking elements, we inserted the splicing cassette into the 3’UTR of another synthetic mRNA. In this case, we constructed a synthetic mRNA containing the 5' UTR of tubulin (NDA2) mRNA, the open reading frame of a GAS2 mutant mRNA in which all of its RIDD cleavage sites were mutated, and the 3' UTR of NDA2 mRNA with the inserted splicing cassette (Figure 4E). As for the mRNA described above, this construct was efficiently spliced in S. pombe upon ER stress (Figure 4F). Thus, we conclude that the substrate RNA structure determines the fate of the RNA cleavage fragments.
 
@@ -80,31 +120,229 @@ Our study revealed that Ire1's RNase specificity and its RNA substrate structure
 
 ## Materials and methods
 
-## Strains, plasmids and growth conditions
+### Strains, plasmids and growth conditions
 
 Standard S. cerevisiae and S. pombe genome editing and growth conditions were used (Moreno et al., 1991; Guthrie and Fink, 2002). Strains used in this study are listed in the Table 1. Specifically, all Ire1 constructs have a 3x FLAG-tag in their lumenal domains replacing an unstructured region (255–274 in S. pombe and 267–286 in S. pombe). S. cerevisiae Ire1 domain boundaries were previously described (Rubio et al., 2011), S. pombe Ire1 domains were determined by sequence alignment with S. cerevisiae Ire1. Specifically, the lumenal domain is 1–526 for S. cerevisiae and 1–507 for S. pombe. The transmembrane/cytosolic linker is 527–672 for S. cerevisiae and 508–651 for S. pombe. Kinase/RNase is 673–1115 for S. cerevisiae and 652–1073 for S. pombe. Ire1 constructs were integrated into the HO locus in S. cerevisiae (backbone plasmid: HO-Poly-KanMX4-HO) and Leu locus in S. pombe (backbone plasmid: pJK148). S. pombe BIP1 variants were integrated at the BIP1 locus through homologous recombination and uracil selection. The mCherry-tagged Ire1 constructs and the splicing reporter were previously described (Aragón et al., 2009).
 
-## Growth assay
+**Table 1.**
+ Yeast strains used in this study.All strains are derived from WL001 and WL002. All Ire1 constructs listed below are 3x FLAG-tagged within their lumenal domains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Species</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>yWL001</td>
+      <td>Sc</td>
+      <td>WT, mat A, leu2-3,112 TRP1 can1-100 ura3-1 ADE2 his3-11,15</td>
+    </tr>
+    <tr>
+      <td>yWL002</td>
+      <td>Sc</td>
+      <td>ire1∆::NATR</td>
+    </tr>
+    <tr>
+      <td>yWL003</td>
+      <td>Sc</td>
+      <td>ire1∆::NATR, HO::Sp IRE1</td>
+    </tr>
+    <tr>
+      <td>yWL004</td>
+      <td>Sc</td>
+      <td>ire1∆::NATR, HO::SpLumScCyto IRE1</td>
+    </tr>
+    <tr>
+      <td>yWL005</td>
+      <td>Sc</td>
+      <td>ire1∆::NATR, HO::ScLumSpCyto IRE1</td>
+    </tr>
+    <tr>
+      <td>yWL006</td>
+      <td>Sc</td>
+      <td>ire1∆::NATR, HO::Sc IRE1</td>
+    </tr>
+    <tr>
+      <td>yWL007</td>
+      <td>Sc</td>
+      <td>ire1∆::NATR, HO::ScLum/transmembrane/linkerSpKR IRE1</td>
+    </tr>
+    <tr>
+      <td>yWL008</td>
+      <td>Sc</td>
+      <td>WT, leu2::5'hac1-gfp-3'hac1</td>
+    </tr>
+    <tr>
+      <td>yWL009</td>
+      <td>Sc</td>
+      <td>ire1∆::NATR, leu2::5'hac1-gfp-3'hac1</td>
+    </tr>
+    <tr>
+      <td>yWL010</td>
+      <td>Sc</td>
+      <td>ire1∆::NATR, leu2::5'hac1-gfp-3'hac1, HO::Sp IRE1</td>
+    </tr>
+    <tr>
+      <td>yWL011</td>
+      <td>Sc</td>
+      <td>ire1∆::NATR, leu2::5'hac1-gfp-3'hac1, HO:: SpLumScCyto IRE1</td>
+    </tr>
+    <tr>
+      <td>yWL012</td>
+      <td>Sc</td>
+      <td>ire1∆::NATR, leu2::5'hac1-gfp-3'hac1, HO:: ScLumSpCyto IRE1</td>
+    </tr>
+    <tr>
+      <td>yWL013</td>
+      <td>Sc</td>
+      <td>ire1∆::NATR, leu2::5'hac1-gfp-3'hac1, HO::Sc IRE1</td>
+    </tr>
+    <tr>
+      <td>yWL014</td>
+      <td>Sc</td>
+      <td>leu2::5'hac1-gfp-3'hac1, his3::pTdh3-mCherry</td>
+    </tr>
+    <tr>
+      <td>yWL015</td>
+      <td>Sp</td>
+      <td>WT, mat h+, ade6-M210, ura4-D18, leu1-32</td>
+    </tr>
+    <tr>
+      <td>yWL016</td>
+      <td>Sp</td>
+      <td>ire1∆::KANR</td>
+    </tr>
+    <tr>
+      <td>yWL017</td>
+      <td>Sp</td>
+      <td>ire1∆::KANR, leu1::Sp IRE1</td>
+    </tr>
+    <tr>
+      <td>yWL018</td>
+      <td>Sp</td>
+      <td>ire1∆::KANR, leu1::SpLumScCyto IRE1</td>
+    </tr>
+    <tr>
+      <td>yWL019</td>
+      <td>Sp</td>
+      <td>ire1∆::KANR, leu1::ScLumSpCyto IRE1</td>
+    </tr>
+    <tr>
+      <td>yWL020</td>
+      <td>Sp</td>
+      <td>ire1∆::KANR, leu1::Sc IRE1</td>
+    </tr>
+    <tr>
+      <td>yWL021</td>
+      <td>Sp</td>
+      <td>ire1∆::KANR, leu1::SpLumScCyto IRE1, ura4::5'hac1-gfp-3'hac1</td>
+    </tr>
+    <tr>
+      <td>yWL022</td>
+      <td>Sp</td>
+      <td>ire1∆::KANR, leu1::ScLumSpCyto IRE1, ura4::5'hac1-gfp-3'hac1</td>
+    </tr>
+    <tr>
+      <td>yWL023</td>
+      <td>Sp</td>
+      <td>ire1∆::KANR, leu1::Sc IRE1, ura4::5'hac1-gfp-3'hac1</td>
+    </tr>
+    <tr>
+      <td>yWL024</td>
+      <td>Sp</td>
+      <td>bip1::bip1-hac1 hybrid</td>
+    </tr>
+    <tr>
+      <td>yWL025</td>
+      <td>Sp</td>
+      <td>bip1::bip1-hac1 hybrid A-&gt;U</td>
+    </tr>
+    <tr>
+      <td>yWL026</td>
+      <td>Sp</td>
+      <td>bip1::bip1 splicing variant</td>
+    </tr>
+    <tr>
+      <td>yWL027</td>
+      <td>Sp</td>
+      <td>ura4::synthetic splicing substrate</td>
+    </tr>
+  </tbody>
+</table>
+
+### Growth assay
 
 Serial dilutions of S. cerevisiae or S. pombe cells were spotted onto YPD plates with 0.1 μg/ml tunicamycin (for S. cerevisiae) or YE5S plates with 0.05 μg/ml tunicamycin (for S. pombe). Plates were photographed after incubating at 30°C for 4 days.
 
-## Immunoblotting
+### Immunoblotting
 
 For both S. cerevisiae and S. pombe cells, total protein was isolated from yeast cultures growing at exponential phase by vortexing with glass beads in 8 M urea, 50 mM Hepes, pH 7.4, and 1% sodium dodecylsulfate (SDS). Samples were boiled and then centrifuged at 16,000 x g for 10 min. A sample containing 20 μg total protein was separated using electrophoresis and then transferred to nitrocellulose. The 3xFLAG-tagged Ire1 was probed with monoclonal anti-FLAG antibody (Sigma F3165).
 
-## qPCR assays
+### qPCR assays
 
 Total RNA was purified from yeast cultures using phenol extraction (Köhrer and Domdey, 1991). RNA samples were resuspended in RNase-free water and quantified by spectrophotometry. cDNA was synthesized by reverse transcription using random hexamer DNA primers (Thermo Fisher Scientific), SuperScript II Reverse Transcriptase (Thermo Fisher Scientific) and 1 μg total RNA as described previously (Kimmig et al., 2012). 1% of the cDNAs was employed for qPCR reactions using SYBR green qPCR kit (Bio-Rad). qPCR was performed in triplicates using CFX96 Touch Real-Time PCR Detection System (Bio-rad). qPCR primers are listed in Table 2. mRNA levels were normalized to NDA2 mRNA in S. pombe.
 
-## In vivo mRNA splicing assay
+**Table 2.**
+ qPCR primers used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>qPCR primers description</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>uncleaved Sp BiP1 mRNA forward primer</td>
+      <td>GAATCGTGACTCTATAGCCATTAACA</td>
+    </tr>
+    <tr>
+      <td>uncleaved Sp BiP1 mRNA reverse primer</td>
+      <td>CAATTATTGTCAGTTCCACAAAGC</td>
+    </tr>
+    <tr>
+      <td>total Sp BiP1 mRNA forward primer</td>
+      <td>TGGTAAGGTTGATCCCGAAG</td>
+    </tr>
+    <tr>
+      <td>total Sp BiP1 mRNA reverse primer</td>
+      <td>CATCGAGTTTTTGACGCTGA</td>
+    </tr>
+    <tr>
+      <td>Sp GAS2 mRNA forward primer</td>
+      <td>GTTGTCAACAATGCCTCGAA</td>
+    </tr>
+    <tr>
+      <td>Sp GAS2 mRNA reverse primer</td>
+      <td>CGGTCTCAGAGTTGGTGTCA</td>
+    </tr>
+    <tr>
+      <td>Sp NDA2 mRNA forward primer</td>
+      <td>TCCATGAATCCAACAGCGTA</td>
+    </tr>
+    <tr>
+      <td>Sp NDA2 mRNA reverse primer</td>
+      <td>CTAGTAACGGCAGCCTGGAC</td>
+    </tr>
+  </tbody>
+</table>
+
+### In vivo mRNA splicing assay
 
 cDNA was synthesized the same way as described in the qPCR section. Then we used Phusion High-Fidelity PCR Kit (NEB) and performed PCR with cDNA and a set of primers across the splice junction. For HAC1 mRNA, the forward primer was ATGGAAATGACTGATTTTGAACTAACTAGTAATTCG. The reverse primer was TCATGAAGTGATGAAGAAATCATTCAATTCAAATG. The PCR was performed for 26 cycles with annealing temperature of 51.5°C and extension time of 30 s. For the S. pombe BIP1 mRNA containing the splicing cassette, the forward primer was GAATCGTGACTCTATAGCCATTAACA. The reverse primer was CAATTATTGTCAGTTCCACAAAGC. The PCR was performed for 36 cycles with annealing temperature of 63.4°C and extension time of 15 s. For S. cerevisiae HAC1 mRNA derived splicing reporter expressed in S. pombe cells, the forward primer was GAACTACAAGACACGTGCTGAAG. The reverse primer was GATGAAGAAATCATTCAATTCAAATG. The PCR was performed for 60 cycles with annealing temperature of 63.2°C and extension time of 20 s. For the synthetic splicing substrate in S. pombe, the forward primer was CTCATTTAGATTAGCAATTCAAATG. The reverse primer was GATTAGATCAACAATTCAAATGATC. The PCR was performed for 40 cycles with annealing temperature of 59.7°C and extension time of 20 s.
 
-## Recombinant protein purification
+### Recombinant protein purification
 
 S. cerevisiae Ire1 kinase/RNase was purified as previously described (Korennykh et al., 2009). Details of the S. pombe Ire1 kinase/RNase purification will be described in a separate paper. Briefly, S. pombe Ire1 kinase/RNase was N-terminally fused with Glutathione S-transferase (GST) tag through a linker containing Human Rhinovirus (HRV) 3C protease cleavage site, and was regulated by T7 promoter. This S. pombe Ire1 kinase/RNase expression cassette was transformed into E. coli cells. 16 hr after transformation, we mixed and collected all the colonies on the transformation plates by scraping them off from the agar plate into 50 ml of LB medium. After 3 hr incubation at 37°C, the sample was diluted to 12 l of LB medium and further incubated at 37°C until optical density reached 1. Protein expression was induced by adding 0.5 mM IPTG. Then, the culture was incubated at 25°C for 4 hr before we pelleted the cells by centrifugation. Cells were resuspended in GST binding buffer (50 mM Tris/HCl pH 7.5, 500 mM NaCl, 2 mM Mg(OAc)2, 2 mM DTT, 10% Glycerol) and homogenized using high-pressure homogenizer (EmulsiFlex, Avestin). The cell lysate was applied to GST-affinity column and eluted with GST elusion buffer (50 mM Tris/HCl pH 7.5, 200 mM NaCl, 2 mM Mg(OAc)2, 2 mM DTT, 10% Glycerol, 10 mM glutathione). The column elution was treated with GST-tagged HRV 3C protease (PreScission Protease, GE Health). At the same time, the sample was dialyzed to remove glutathione in the elution buffer. Next, the sample was further purified through negative chromatography by passing through a GST-affinity column (to remove free GST and residue GST-fused Ire1 kinase/RNase) and an anion exchange column (to remove contaminating nucleic acids). Finally, the sample was subject to gel filtration, concentrated to about 14 μM in storage buffer (50 mM Tris/HCl pH 7.5, 200 mM NaCl, 2 mM Mg(OAc)2, 2 mM TCEP, 10% Glycerol), and flash frozen in liquid nitrogen. The final purity, as well as purity at intermediate steps, was assessed by SDS-PAGE using Coomassie blue staining.
 
-## In vitro RNA cleavage assays
+### In vitro RNA cleavage assays
 
 Short RNA oligos were purchased from Dharmacon, Inc. RNA oligos were gel extracted, acetone precipitated and resuspended in RNase-free water. Then, oligos were 5' end radio-labeled with γ-[32P]-ATP (Perkin Elmer) using T4 polynucleotide kinase (NEB) and cleaned using ssDNA/RNA Clean and Concentrator kit (Zymo Research D7010). To fold the RNA oligos, we heated the RNA oligos to 90°C for 3 min and slowly cooled them down at a rate of 1°C per minute until the temperature reached 10°C. In the Ire1 cleavage assays, the reaction samples contained 12.5 μM of S. cerevisiae or S. pombe Ire1 kinase/RNase. The cleavage reaction was performed at 30°C in reaction buffer (50 mM Tris/HCl pH 7.5, 200 mM NaCl, 2 mM Mg(OAc)2, 2 mM TCEP, 10% Glycerol). At each time point, an aliquot of 0.75 μl was transferred to 5 μl STOP buffer (10 M urea, 0.1% SDS, 1 mM EDTA, 0.05% xylene cyanol, 0.05% bromophenol blue). RNAs were separated using denaturing 15% urea-PAGE gels (run at 100 V for 90 min). Gels were imaged with a Phosphorimager (Typhoon FLA 9500, GE Health) and the band intensities were quantified using imageJ. The cleaved portion was calculated as the cleaved band intensity divided by the sum of the cleaved band and uncleaved band intensities. The kobs were obtained by fitting the data to first-order (‘one-phase’) decay equation using Prism. For the cleavage reactions that less than 10% of the substrates were cleaved, because the substrate concentration was approximately constant, the cleavage dynamics was fitted to a linear equation to obtain kobs. The sequence of hairpin RNA substrate derived from Ire1 cleavage site on S. pombe BIP1 mRNA is CGCGAGAUAACUGGUGCUUUGUUAUCUCGCG.
 
@@ -114,14 +352,14 @@ The sequence of hairpin RNA substrate derived from S. cerevisiae HAC1 mRNA 3' sp
 
 The sequence of hairpin RNA substrate derived from XBP1 mRNA 3' splice site is UGCACCUCUGCAGCAGGUGCA.
 
-## Automated flow cytometry
+### Automated flow cytometry
 
 Measuring S. cerevisiae UPR dynamics using automated flow cytometry was previously described in detail (Zuleta et al., 2014). Briefly, we co-cultured two S. cerevisiae strains, a strain of interest and a control strain. The control strain contained a constitutively expressed mCherry reporter. The signal from the control strain was computationally separate based on its high mCherry level. In an 11.5 hr time course at 30°C, a data point was taken every 20 min. 1.5 hr after inoculation, DMSO (as control) or 0.25 μg/ml, 0.5 μg/ml, 1 μg/ml, 2 μg/ml of Tm were added. Splicing dynamics were monitored for another 10 hr. The GFP signal was normalized to the signal at time zero.
 
-## Probing in vivo mRNA structure in S. pombe cells
+### Probing in vivo mRNA structure in S. pombe cells
 
 A culture of 15 ml S. pombe cells, which were exponentially growing at 30°C, was treated with 400 μl of DMS for 3.5 min. DMS was then quenched by adding 30 ml of solution containing 30% β-mercaptoethanol and 25% isoamyl alcohol. Then, cells were pelleted by centrifugation at 4°C, and washed with 15 ml 30% β-mercaptoethanol. Total RNA was extracted using phenol extraction. Poly(A)+ mRNAs were isolated using poly(A)+ Dynabeads (Invitrogen). The sequencing library was generated and sequenced, and the DMS modifications were computed as previously described (Rouskin et al.).
 
-## mRNA secondary structure prediction
+### mRNA secondary structure prediction
 
 Near the Ire1 cleavage sites, we first identified the most highly reactive base and set its DMS modification signal as 1. Then, the DMS modification signal raw data for other bases was normalized proportionally. Finally, we put a 38-base-pair RNA sequence (19 base pair upstream and downstream from the Ire1 cleavage site) into the RNA secondary structure prediction program mfold (Zuker, 2003). Bases with normalized DMS modification signals >0.2 were forced to be single stranded to constrain the RNA folding prediction.

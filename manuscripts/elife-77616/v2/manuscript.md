@@ -14,10 +14,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0464eyp60 Department of Biochemistry and Molecular Biotechnology, University of Massachusetts Medical School Worcester United States
-2. https://ror.org/01an7q238 Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States
-3. https://ror.org/01an7q238 Center for Computational Biology, University of California, Berkeley Berkeley United States
-4. https://ror.org/0464eyp60 Program in Bioinformatics and Integrative Biology, University of Massachusetts Medical School Worcester United States
+1. Department of Biochemistry and Molecular Biotechnology, University of Massachusetts Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+2. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+3. Center for Computational Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+4. Program in Bioinformatics and Integrative Biology, University of Massachusetts Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
 
 † Corresponding author
 
@@ -39,7 +39,7 @@ Here, we set out to explore the utility of OTTR for analysis of intact tRNAs and
 
 ## Results
 
-## Cloning of full-length tRNAs in budding yeast, and mouse testis
+### Cloning of full-length tRNAs in budding yeast, and mouse testis
 
 We initially sought to compare OTTR with several commercial protocols for analysis of small (18–40 nt) RNA populations in mouse sperm. Our proof-of-concept datasets revealed abundant nucleotide mismatches at presumed sites of tRNA nucleotide modifications (see below), as observed in multiple prior deep sequencing analyses of tRNAs (Zheng et al., 2015; Cozen et al., 2015; Dai et al., 2017; Behrens et al., 2021). We therefore set out first to sequence intact tRNAs to empirically characterize effects of nucleotide modifications on deep sequencing libraries, to help guide bioinformatic analyses of tRNA-derived sequences.
 
@@ -47,13 +47,29 @@ We focused on two biological systems. First, given the ease of growing large qua
 
 For each sample, we generated total RNA, then either fractionated RNAs over a spin column to enrich for <200 nt RNAs (Figure 1—figure supplement 1A), or gel-purified 60–100 nt RNAs. A second size selection step was added following cDNA synthesis to deplete adaptor dimers and enrich for libraries carrying ~60–100 bp inserts. Resulting OTTR libraries were then sequenced to an average of ~10 million reads. Surprisingly, we consistently recovered more full-length tRNAs when using the more lenient RNA sizing by mirVana spin column (Figure 1A), suggesting that the process of gel-mediated size selection likely results in tRNA fragmentation. We therefore focused downstream analyses on tRNA-mapping reads in the mirVana-sized OTTR libraries.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77616/elife-77616-fig1-v2.jpg)
+
+**Figure 1.:** (A) Insert length distributions for full-length tRNA OTTR libraries for budding yeast, and mouse testis, as indicated. Libraries were prepared following one of two initial size selection steps: ‘Gel’ refers to libraries from total RNA subject to acrylamide gel-based purification of 60–100 nt RNAs, ‘Mirvana’ refers to libraries build using the small (<200 nt) fraction recovered from mirVana RNA spin columns (Figure 1—figure supplement 1), and ‘rep’1 and 2 refer to replicate datasets. (B, C) Efficient capture of full length tRNAs from mouse (B) and yeast (C) samples using OTTR. For each tRNA species with over 1000 reads, percentage of full length tRNA reads was calculated. See also (Figure 1—figure supplement 2). (D) Coverage plots for three exemplar tRNAs in the yeast OTTR dataset. Red and green bars show sequence start and stop nt, respectively, while blue bars show sequence coverage internal to a start or stop. WT indicates wild-type. (E) Improved full-length tRNA coverage in trm1Δ yeast lacking m22G, plotted as in panel (C). (F) Coverage plots for an exemplar tRNA comparing WT and trm1Δ yeast. Coverage plots (normalized to the coverage at the tRNA 3’ end for each library) are superimposed, with light blue WT over purple trm1Δreads; purple thus highlights the differential between libraries.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77616/elife-77616-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Gel shows mirVana column-enriched short and long RNA fractions, isolated from yeast and various mouse tissues, as indicated. (B) Length distribution for mouse testis tRNA reads; while data for Figure 1A show lengths of tRNA-mapping reads with detectable 5’ and 3’ adaptor sequences, data here include longer reads that are too long to include the 3’ adaptor. Note the second peak at ~82–85 nt, corresponding to the subset of tRNAs with longer variable loops (Leu and Ser tRNAs). Unfortunately, we did not capture any longer reads as this dataset was inadvertently generated using the Illumina 75 cycle sequencing kit (which nonetheless yields up to 85 nt of sequence). As a result, our characterization of full-length tRNA capture (Figure 1, Figure 1—figure supplements 2–3) modestly underestimates full length capture of tRNAs with long variable loops.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77616/elife-77616-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Comparison of full length tRNA capture across various deep sequencing approaches to tRNA sequencing. Datasets from yeast (A), mouse (B), and human (C) samples are shown. For each dataset, pie charts show fractions of tRNA-mapping reads reflecting full-length tRNAs, 5’ or 3’ tRNA fragments, and miscellaneous tRNA-mapping reads (internal fragments, sequences mapping to precursor tRNA sequences including 5’ and 3’ leader and trailer sequences). Bar plots underneath show coverage for a typical tRNA for each dataset. For datasets with multiple cell types or tissues, the selected datasets are representative of tRNA capture across the remaining samples (not shown).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/77616/elife-77616-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Scatterplots show levels of tRNAs measured by OTTR (x axis for all plots) compared to levels measured in the indicated methods, shown on the y axes. For each species – yeast (A) and mouse (B) – top panels show tRNA levels calculated using all tRNA-mapping reads, so that partial tRNA fragments captured by protocols with poor recovery of full-length tRNAs (ARM, for example, where premature RT termination results in intact tRNAs being captured as 3’ fragments) are counted towards overall tRNA levels. For mouse samples in (B), 1 ‘pseudoread’ was added to all tRNA abundance values as a subset of tRNAs were not captured in one or both protocols being compared and zeroes cannot be visualized on a log scale scatterplot. Bottom panels show comparisons for intact tRNA reads for the protocols with >25% intact tRNAs. This includes data from Table S11 from Lucas et al., 2024, a Nanopore-based tRNA sequencing method not included in Figure 1—figure supplement 2. For mouse samples (B), note that LIDAR was the only published method used for analysis of intact tRNAs in the mouse testis; the comparisons to the QuantM liver and cortex samples are not ‘apples to apples’, and differences between datasets could result either from tissue-specific tRNA pools, or from technical differences between protocols.
+
 Initial mapping of OTTR reads to mature tRNA sequences using standard analytical pipelines was hindered by the high numbers of sequence mismatches resulting from reverse transcription ‘errors’ at modified nucleotides in tRNAs. We therefore turned to the tRAX analytical pipeline (Holmes et al., 2022), a mismatch-tolerant pipeline that accounts for the wide range of post-transcriptional modifications to tRNAs that can complicate typical RNA mapping pipelines. For each tRNA, we calculated the percentage of full-length reads, finding that the majority (~70–90% of reads) of tRNAs were full length in both mouse and yeast samples (Figure 1B–D, Figure 1—figure supplement 1B).
 
 Comparison to a range of prior tRNA sequencing datasets (Gogakos et al., 2017; Zheng et al., 2015; Cozen et al., 2015; Behrens et al., 2021; Shigematsu et al., 2017; Erber et al., 2020; Pinkard et al., 2020; Scacchetti et al., 2024; Watkins et al., 2022; Scheepbouwer et al., 2023) revealed that YAMAT-seq was the most efficient protocol for intact tRNA capture, with reads almost completely derived from full length tRNAs (Figure 1—figure supplement 2). That said, YAMAT-seq data were very low complexity, with two tRNAs (Lys-CTT, Glu-GTC) representing 82–86% of all tRNA mapping reads across all three cell lines analyzed (not shown). After YAMAT-seq, OTTR and mim-tRNAseq (Behrens et al., 2021) were comparable in terms of capturing full-length tRNAs with ~70–90% of tRNA-mapping reads representing full-length sequences, while the remaining protocols captured various types of partial tRNAs potentially attributable to premature RT termination, internal RT priming, or other forms of tRNA degradation or breakage (Figure 1—figure supplement 2). Moreover, we find good overall quantitative agreement between intact tRNA levels measured by OTTR and datasets from comparable samples (e.g. actively growing yeast, and mouse testis), including a dataset obtained using the Nanopore-based nano-tRNAseq (Lucas et al., 2024) protocol (Figure 1—figure supplement 3). Finally, we explored the ability of these various protocols to capture the known correspondence between tRNA gene copy number and tRNA abundance, with mim-tRNAseq exhibiting the best performance (R=0.96), followed by OTTR (R=0.5–0.7 across datasets), followed by ARM-seq, Lotte, and nano-tRNAseq (R=0.4–0.5 for all three protocols).
 
 Visualization of sequence coverage and read start and stop locations for several tRNAs (Figure 1D) suggested that known nucleotide modification sites, including the common m1G modification found at position 9 of many tRNAs (eg, tRNA-Ile-AAT), could be barriers to reverse transcription. To directly test whether premature termination is affected by nucleotide modifications, we prepared full-length tRNA libraries from trm1Δ yeast lacking the methylase responsible for m22G (Hopper et al., 1982). We find further gains in the efficiency of full-length tRNA capture in this strain background (Figure 1E and F), suggesting that this nucleotide modification presents a partial barrier to reverse transcription (see below).
 
-## Signatures of nucleotide modifications in full-length tRNA sequences
+### Signatures of nucleotide modifications in full-length tRNA sequences
 
 Many of the nucleotide modifications in tRNAs involve chemical alterations that affect the pattern of hydrogen bond donors and acceptors at the base pairing interface. As a result, ‘incorrect’ nucleotides (relative to those expected from tRNA genomic sequences) can be incorporated into cDNA at these positions during the process of reverse transcription, resulting in a ‘mutation/misincorporation’ signature for modified nucleotides in deep sequencing data. Examination of individual yeast tRNAs revealed high levels of misincorporation at multiple positions throughout the tRNA (Figure 2A), with mismatches localized at various known modification sites, including the expected mismatches at m1G, m22G, m3C, and m1A nucleotides. Examination of the same tRNA species in our trm1Δ dataset revealed the expected loss of nucleotide misincorporation at G26 in this mutant (Figure 2B), confirming that the m22G nucleotide modification is responsible for the mutational signature at this position.
 
@@ -65,9 +81,21 @@ To explore the effects of modified nucleotides on RT misincorporation globally a
 
 Beyond the mutational signature observed at known locations of m22G, m1G, and m1A, several other locations were associated with sequencing mismatches (Figure 2C and F). These included known locations for 3-methylcytidine (32), inosine and 1-methylinosine (34 and 37), and wybutosine (37), as well as lower frequency of misincorporation at several locations currently annotated as unmodified nucleotides in the MODOMICS database (Dunin-Horkawicz et al., 2006). Taken together, these data demonstrate the utility of OTTR for analysis of a range of nucleotide modifications.
 
-## Analysis of tRNA cleavage in budding yeast following nuclease overexpression
+### Analysis of tRNA cleavage in budding yeast following nuclease overexpression
 
 Turning to analysis of smaller (<40 nt) RNAs, we next set out to benchmark several small RNA cloning protocols in the experimentally tractable budding yeast model system. Cellular tRNAs can be cleaved by a number of different nucleases, including RNase A, T, and L family members, in a variety of species (Lee and Collins, 2005; Thompson et al., 2008; Yamasaki et al., 2009; Thompson and Parker, 2009; Andersen and Collins, 2012). Conveniently, budding yeast do not encode any RNase A or L family members, and encode a single RNase T2 family member, RNY1p. As RNY1p overexpression has previously been reported to drive high levels of tRNA cleavage (Thompson and Parker, 2009), we generated a construct bearing RNY1 under the control of the galactose-inducible pGAL1-10 promoter. We confirmed by Northern blot analysis that overexpression of RNY1p lead to high levels of tRNA-Gly-GCC cleavage in our hands (Figure 3A, Figure 3—figure supplement 1A and B), providing a convenient system for the production of high levels of tRNA fragments for benchmarking small RNA cloning protocols.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/77616/elife-77616-fig3-v2.jpg)
+
+**Figure 3.:** (A) Northern blots for tRNA-Gly-GCC 3′ end during a time course of RNY1p overexpression (from uninduced to 6 hr induction) in budding yeast. (B) Size distributions for tRNA-mapping reads in various small RNA libraries prepared from yeast following six hours of RNY1p overexpression. See also Figure 3—figure supplement 1. (C) Overall coverage of all tRNA isoacceptors – calculated by summing all reads mapping to a given tRNA species – shown for the indicated small RNA cloning protocols. (D, E) Left panels show coverage maps for tRNA-Gly-GCC (D) or tRNA-Asp-GTC (E) for the six indicated cloning protocols. Each plot shows the distribution of all 5′ (start) and 3′ (end) ends of the relevant sequencing reads, as well as the cumulative sequencing coverage across the tRNA. Right panels for each tRNA show Northern blots for the 5′ side, and the 3′ side, of the relevant tRNA (from yeast subject to 6 hr of RNY1p overexpression), as indicated. Black arrow highlights the full-length tRNA band. The deep sequencing datasets from NEBNext and Fu et al., 2018 protocols capture only the 3′ half of tRNA-Gly-GCC, and the 5′ half of Asp-GTC, while OTTR captures both 5′ and 3′ halves. In both cases, Northern blots confirm the validity of the OTTR dataset, with both 5′ and 3′ halves present at similar abundance for both of these tRNAs.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77616/elife-77616-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Size distribution of tRNA-mapping reads in the indicated libraries prepared from yeast carrying the pGal:RNY1 plasmid grown under noninducing raffinose conditions (top panel), or grown for 6 hours in galactose to induce RNY1p (bottom panel). The wide rage of fragment sizes prior to RNY1p induction likely reflects tRNA degradation during RNA handling, in contrast to the induction of precise cleavage at the anticodon following RNY1p induction. In addition, spike-ins of Schizosaccharomyces pombe total RNA for normalization confirm an ~10-fold increase (not shown) in tRNA fragments following RNY1p induction in S. cerevisiae. (B) Coverage of tRNA-Gly-GCC in OTTR libraries before (top) and after (bottom) RNY1p overexpression. As in panel (A), specific cleavage at the anticodon is readily distinguished from the more nonspecific tRNA degradation seen in uninduced conditions. (C) Coverage of tRNA fragments in RNY1p-induced yeast. As in Figure 3C, for all libraries sequenced. (D) 5′ and 3′ tRF detection. As in panel (C), but here reads were separately mapped to tRNA 5′ or 3′ halves and the two halves are plotted separately, as indicated.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77616/elife-77616-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** As in Figure 3D and E, for two additional tRNAs.
 
 To compare small RNA cloning protocols, we overexpressed RNY1 for six hours in large cultures, purified total RNA, and split the RNA into aliquots for cloning. We generated an initial sequencing dataset to enable comparisons between three basic protocols: (1) a ssRNA ligase strategy (Fu et al., 2018) based on RNA ligase-dependent adaptor ligation strategies common to most small RNA-seq protocols; (2) the widely-used NEBNext Small RNA kit; and (3) OTTR. In each case, libraries carrying inserts <50 nt were size selected by gel prior to sequencing, to focus on tRNA fragments (Figure 3B). All three protocols captured tRFs of similar lengths, albeit with moderate differences between the three protocols – NEBNext was a particular outlier in this regard, with peaks of read counts for specific tRF lengths that were far more prominent in these libraries than in libraries made with the other two protocols.
 
@@ -75,15 +103,27 @@ To compare these cloning protocols in more granular detail, we calculated the re
 
 To enable validation by comparison to an independent measure of tRNA fragment levels, we next examined nucleotide-resolution coverage data for several tRNAs that exhibited substantial differences in measured abundance between the three protocols. Figure 3D and E show coverage plots for two exemplar tRNAs – chosen based on dramatic differences in capture of the two halves of the tRNA across the three different protocols – with coverage of the tRNA shown in blue along with the locations of tRNA fragment 5′ and 3′ ends. For example, although all three protocols robustly captured the 3′ half of tRNA-Gly-GCC, OTTR uniquely captured the 5′ fragments of this tRNA that were absent from the other two libraries (Figure 3D). To validate these protocols by comparison to an independent ground truth, we assayed the 5′ and 3′ halves of four tRNAs by Northern blotting (Figure 3D and E, right panels, and Figure 3—figure supplement 2). For the two tRNAs for which the different deep sequencing protocols showed substantial differences in tRNA coverage, OTTR more faithfully captured the tRNA fragment ratio detected by Northern blots. Taken together, our data show that OTTR captures a wider range of tRNA fragments, more even levels of 5′ and 3′ tRNA halves, and better agrees with ground truth Northern blots, all of which strongly support the utility of OTTR for analysis of tRNA-derived small RNAs.
 
-## The small RNA payload of mature mouse spermatozoa
+### The small RNA payload of mature mouse spermatozoa
 
 We next turned to analysis of small RNAs in the mouse germline. Scores of studies over the past decade have documented abundant tRNA fragments in mammalian sperm, with the majority of published datasets documenting highly abundant 5′ tRFs, with the 5′ halves of tRNA-Glu-CTC, tRNA-Val-CAC, and tRNA-Gly-GCC representing the three most abundant tRFs in mouse sperm (Peng et al., 2012; Sharma et al., 2016). However, it has been clear for years that standard deep sequencing analyses are insufficient to fully capture the sperm RNA payload. First, RNA cleavage by RNase A, T, or L family members is known to leave RNA 3′ ends bearing a cyclic 2′–3′ phosphate (which can spontaneously resolve to 2′- or 3′-phosphorylated ends), a modification that prevents RNA ligation during cloning. Indeed, resolving cyclic 2′–3′ phosphates via T4 Polynucleotide Kinase (PNK) treatment (Honda et al., 2015) resulted a dramatic shift in captured sperm RNAs (Sharma et al., 2018), revealing a far greater abundance and diversity of rRNA cleavage products than previously appreciated, along with longer 5′ tRFs that presumably reflect the primary cleavage site for reproductive tract nucleases (see below). In addition, Northern blotting studies in sperm and epididymis samples revealed the presence of 3′ tRNA halves that are not represented in deep sequencing datasets (Sharma et al., 2018; Zhang et al., 2018), further emphasizing our incomplete understanding of the mammalian sperm RNA payload.
 
 To directly compare the performance of various small RNA cloning protocols in capturing mouse sperm RNAs, we pooled cauda epididymal sperm from 10 males for total RNA extraction. Total RNAs were mirVana size selected prior to being split into three large aliquots and either (1) left untreated, (2) treated with PNK in the absence of ATP to catalyze 3′ end dephosphorylation, or (3) treated with PNK and ATP to both resolve 3′ phosphates and to phosphorylate RNA 5′ ends. Each pool was then further split into three aliquots and cloned using either Illumina TruSeq, NEBNext Small RNA, or OTTR. Figure 4A–C show insert size distributions, mapping rates to various RNA species, and abundance of various tRNA species, respectively.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/77616/elife-77616-fig4-v2.jpg)
+
+**Figure 4.:** (A) Small RNA length distributions, as in Figure 3B, for tRNA-mapping reads in various mouse sperm RNA libraries generated using the indicated protocols. (B) Pie charts showing overall mapping of each library to the indicated RNA classes. (C) Overall coverage of all tRNA species in each dataset, as in Figure 3C. Here, each dataset also has a pie chart showing the percentage of tRNA-mapping reads derived from the 5′ or the 3′ half of tRNAs, as indicated. See also Figure 4—figure supplement 1. (D) Coverage plots for four typical tRNAs, as in Figure 3D and E.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77616/elife-77616-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Coverage of all mouse tRNAs species in the indicated libraries, plotted as in Figure 4C. Note that for each library type, we performed two biological replicate experiments; as these were essentially indistinguishable, only one replicate is shown here. The right column includes data from a second batch of OTTR datasets, in which we generated two biological replicates for mouse sperm and for mouse cauda epididymis. Again, only one of the two replicates is shown here as both replicates were nearly identical. (B) As in panel (A), including published mouse sperm datasets obtained using LIDAR (Scacchetti et al., 2024) or PANDORA (Shi et al., 2021).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/77616/elife-77616-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) For each set of libraries – TruSeq, NEB, OTTR reps1-2, and OTTR reps3-4 – relative abundance of 5′ and 3′ tRFs for each dataset was normalized relative to the median value across the four untreated (eg no PNK) libraries. Dataset labels describe the sample (mouse), library preparation protocol (IT, NEB, OTTR), and protocol variation (nt: untreated; 18 H: extended RT time; PNK: PNK treatment without ATP; PNK_ATP; PNK + ATP). This visualization reveals increased abundance of a wide range of tRFs resulting from PNK treatment, as for example 3′ tRNA fragments were generally increased in abundance in TruSeq and NEB libraries following PNK + ATP treatment. That said, even after PNK +ATP treatment these tRFs were still scarce in TruSeq and NEB libraries compared to OTTR libraries with or without PNK pre-treatment (not visualized here using within-protocol normalization; see Figure 4C). Many 5′ tRFs were enriched following PNK treatment in all three library conditions (eg Leu-CAA), while a smaller subset of 5′ tRFs were PNK-enriched in TruSeq and NEB datasets only (eg Cys-GCA). The capacity for OTTR to capture 2′–3′ cyclic phosphate-containing templates excluded by ligase-dependent library preparations likely contributed to the reported improvements in library capture bias in ribosome profiling libraries where RNase I was used to prepare mRNA ribosome protected fragments (Ferguson et al., 2023). (B) Example of PNK-dependent cleavage-site capture in OTTR libraries. All three panels show read start, stop, and coverage for tRNA-His-GTG. Red arrow shows the 3′ end of a longer 5′ tRF seen only following PNK treatment. (C) For each tRNA in the mouse genome with over 100 reads of total coverage, the percentage of read starts (left column) or read ends (right column) was calculated for each library type. Read starts and stops percentages were then averaged across all tRNAs, and are plotted for untreated, PNK-treated, and PNK + ATP-treated libraries. Red arrows highlight PNK-specific peaks, green arrows highlight PNK + ATP-specific peaks, and black arrows highlight peaks enriched in both PNK and PNK + ATP treatments compared to untreated RNA libraries.
+
 Focusing first on commercially available kits, our untreated TruSeq and NEBNext datasets recapitulated features of mouse sperm RNAs documented in many prior TruSeq studies (Peng et al., 2012; Sharma et al., 2016), including abundant 5′ tRFs deriving primarily from tRNA-Glu-CTC, tRNA-Val-CAC, and tRNA-Gly-GCC (Figure 4C and D, Figure 4—figure supplement 1A). In contrast, we find that OTTR reveals a far greater range of tRFs than either of the commercial protocols, capturing both 5’ and 3’ tRNA fragments from a much broader representation of tRFs than either of the commercial protocols. These findings are consistent with prior Northern blot studies demonstrating the presence of both 5′ and 3′ tRNA halves in mouse sperm. Moreover, comparing our data to two recent tRF-focused mouse sperm datasets, we find that OTTR captured the most diverse population of tRNA fragments, followed closely by LIDAR (Scacchetti et al., 2024), and contrasting with the heavily biased tRF populations captured by PANDORA (Shi et al., 2021; Figure 4—figure supplement 1B).
 
-## Variations on the OTTR protocol and technical guidance
+### Variations on the OTTR protocol and technical guidance
 
 Finally, given the well-known impact of nucleotide modifications, and 3′ end chemistry (Sharma et al., 2018; Honda et al., 2015; Wang et al., 2021,) on RNA cloning, we set out to characterize the impact of these RNA features on the RNA species captured by the OTTR protocol. As noted above, RNA cleavage by nucleases of the RNase A, T, or L families leaves behind either a cyclic 2′–3′ phosphate or 2′ or 3′ phosphates at the 3′ end of the 5′ fragment. This modification clearly interferes with RNA ligation, but whether it impacts the ligation-independent OTTR protocol is unknown. We therefore first sought to compare the effects of PNK treatment on the spectrum of RNA species captured by various small RNA cloning protocols. Focusing first on the ligation-based cloning methods, we confirm prior reports (Sharma et al., 2018; Shi et al., 2021; Wang et al., 2021) showing that PNK treatment (with or without ATP) resulted in a substantial increase in capture of rRNA-derived fragments (Figure 4B), consistent with the hypothesis that rRNA fragments in mammalian sperm are generated by a nuclease of the RNase A, T, or L families. PNK treatment also enabled improved capture of specific cleavage products in the TruSeq and NEB libraries, as assessed by increased overall levels of particular tRFs (Figure 4—figure supplement 2).
 
@@ -111,7 +151,7 @@ Taken together, the ability to reliably capture a wide variety of RNAs end-to-en
 
 A variety of enzymatic or chemical RNA treatments can be envisioned that would modify the range of RNAs captured by OTTR. We show here that AlkB-mediated demethylation of various tRNA nucleotides – as pioneered in the ARM-Seq and DM-Seq methods (Zheng et al., 2015; Cozen et al., 2015; Dai et al., 2017) – results in significantly improved capture of 3′ tRNA halves (Figure 5C and D). Moreover, eliminating m22G via deletion of Trm1 also results in improved capture of relevant tRNA halves (Figure 5D). Taken together, for tRNA or tRF quantification, we recommend carrying out OTTR on AlkB-demethylated input RNAs. That said, modifications such as m22G cannot yet be easily removed; it is therefore essential to keep in mind that altered levels of tRNAs or tRNA halves in a given biological system could either reflect changes to tRNA production or stability, or could result from altered levels of inhibitory nucleotide modifications. The latter case should, however, be identifiable by analysis of nucleotide misincorporation signatures (Figure 2), at least for those modifications that leave such signatures. OTTR could also be applied to profile tRNA charging, for example by preferential capture of uncharged RNAs (after isolation of total RNA under acidic conditions) or by using aminoacylation as a protection against 3′ nucleotide removal (via periodate oxidation and β-elimination), followed by base treatment to deacylate charged tRNAs. These and other modifications may prove beneficial depending on the goals of any particular study.
 
-## Revisiting the mouse sperm RNA payload
+### Revisiting the mouse sperm RNA payload
 
 Biologically, our primary interest in benchmarking OTTR was to further explore the still-mysterious small RNA composition of mammalian sperm populations. Over the past decade, scores of studies have largely agreed in defining the mammalian sperm small RNA payload as being dominated by 5′ tRFs, with 5′ ends of tRNA-Glu-CTC, Val-CAC, Val-AAC, Gly-GCC, and Gly-CCC being most abundant (Peng et al., 2012; Sharma, 2019). rRNA fragments have also been highlighted in several studies of mammalian sperm, although in our experience rRNA fragments proved the most variable between experimentalists, raising the concern that levels of rRNA fragments might be particularly susceptible to artifacts arising during cell lysis, RNA isolation, and/or library preparation.
 
@@ -127,15 +167,61 @@ Together, our data significantly update our understanding of the sperm epigenome
 
 ## Materials and methods
 
-## Mouse husbandry and tissue collection
+### Mouse husbandry and tissue collection
 
 All samples were obtained from male mice of the FVBN/J strain background, consuming control diet Ain-93g, euthanized at 12 weeks of age according to IACUC protocol. For testis samples, both testes were collected from a single FVBN/J male, separated from the epididymis and cleaned of adhering fat, washed with PBS and snap frozen in liquid N2 for later RNA extraction.
 
 For cauda sperm isolation, cauda epididymis samples were collected from 10 males and placed into Donners complete media and tissue was cleared of fat and connective tissue before incisions were made using a 26 G needle while keeping the bulk tissue intact. Tissue was gently squeezed allowing sperm to escape into solution. After incubation at 37 °C for 1 hr, sperm containing media was transferred to a fresh tube and collected by centrifugation at 5000 rpm for 5 min followed by a 1 X PBS wash. To eliminate somatic cell contamination, sperm were subjected to a 1 mL 1% Triton X-100 incubation 37 °C for 15 min with 1500 rpm on Thermomixer and collected by centrifugation at 5000 rpm for 5 min. Somatic cell lysis was followed by a 1 x ddH2O wash and 30 s spin 14,000 rpm to pellet sperm.
 
-## Yeast RNA purification and size selection
+### Yeast RNA purification and size selection
 
 The yeast strains used in this study were built on the BY4741 haploid strain background according to standard methods, generating the following strains:
+
+<table>
+  <thead>
+    <tr>
+      <th>Yeast Strains</th>
+      <th>Parent</th>
+      <th>Genotype</th>
+      <th>Plasmid</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>yTG66</td>
+      <td>BY4741</td>
+      <td>MATa ura3Δ0 leu2Δ0 his3Δ1 met15Δ0</td>
+      <td>pRS416</td>
+    </tr>
+    <tr>
+      <td>yTG72</td>
+      <td>BY4741</td>
+      <td>MATa ura3Δ0 leu2Δ0 his3Δ1 met15Δ0 rny1Δ::kanMX6</td>
+      <td>pTG35</td>
+    </tr>
+    <tr>
+      <td>yTG109</td>
+      <td>BY4741</td>
+      <td>MATa ura3Δ0 leu2Δ0 his3Δ1 met15Δ0 trm1Δ::kanMX6</td>
+      <td>pTG35</td>
+    </tr>
+    <tr>
+      <td>Plasmids</td>
+      <td>Parent</td>
+      <td>Genotype</td>
+    </tr>
+    <tr>
+      <td>pRS416</td>
+      <td></td>
+      <td>URA3 CEN/ARS</td>
+    </tr>
+    <tr>
+      <td>pTG35</td>
+      <td>pRS416</td>
+      <td>URA3 CEN/ARS PGAL1-10-RNY1</td>
+    </tr>
+  </tbody>
+</table>
 
 For all experiments, cells were grown at 30 °C and harvested by centrifugation (2 min at 4000 RPM in 4 °C) and snap frozen in liquid nitrogen.
 
@@ -145,31 +231,31 @@ For tRF experiments, yTG72 were grown overnight in selective synthetic media con
 
 Total RNA was prepared by resuspending cell pellets in TNE buffer (50 mM Tris-Cl pH7.4, 100 mM NaCl, 10 mM EDTA) and then vortexed with beads for a total of 2 min (with incubation on ice for a minute after the first minute of vortexing). Equal volume acid phenol chloroform, and SDS to a final volume of 1% was added and samples were vortexed to mix, and then incubated at 65 °C for 7 min, followed by an additional vortex. An additional acid phenol chloroform extraction was performed followed by a chloroform extraction before RNA was precipitated, washed, and resuspended in H2O.
 
-## Sperm RNA purification and small RNA size selection
+### Sperm RNA purification and small RNA size selection
 
 For mouse sperm RNAs, immediately following cauda sperm purification, sperm RNAs were isolated using the mirVana miRNA Isolation Kit following the enrichment procedure for small RNAs as per manual. Protocol was modified with one half volume of 100% ethanol added to the aqueous phase recovered from organic extraction (recommended volume is one third).
 
-## Northern blots
+### Northern blots
 
 ~3 μg of total RNA from RNY1p-expressing yeast was run on a 15% PAGE-Urea gel at 15 W until dye front reached bottom of gel (~20 min). Probes were as follows:
 
-## T4 polynucleotide kinase (PNK) treatment
+### T4 polynucleotide kinase (PNK) treatment
 
 Column purified small RNAs from 10 animals were pooled and split into groups: T4 PNK treatment with ATP, T4 PNK treatment without ATP, and a control no treatment group. T4 PNK treatment with ATP was incubated at 37 °C for 30 min in T4 PNK reaction buffer, 10 mM ATP, and 50U T4 PNK (NEB) M0201S. T4 PNK treatment without ATP was incubated at 37 °C for 30 min in reaction buffer pH6 and 50U T4 PNK (M0201S). All sperm small RNAs samples were then cleaned and concentrated using RNA Clean & Concentrator–5 (Zymo) prior to library preparation.
 
-## AlkB treatment
+### AlkB treatment
 
 Up to 5 µg of total RNA was treated with rtStar tRF&tiRNA Pretreatment Kit (Arraystar) according to protocol. AlkB-treated RNA was then cleaned and size selected with RNA Clean & Concentrator (Zymo Research). T4 PNK treatment with ATP was incubated at 37 °C for 30 min. After reaction was stopped, the RNA was cleaned with PCI, precipitated with Isopropanol, and resuspended in 30 µl H2O. AlkB treatment was incubated at 25 °C for 240 min. After quenching the reaction, RNA was cleaned with RNA Clean & Concentrator–5 (Zymo) prior to library preparation.
 
-## Small RNA sequencing
+### Small RNA sequencing
 
 Small RNA sequencing was performed using one of four protocols: TruSeq Small RNA Library Preparation Kit (Illumina), NEBNext Small RNA Library Prep Set for Illumina (NEB), a standard in-house ligation-based cloning protocol (Fu et al., 2018; see below), and Collins Lab OTTR Library Preparation Kit (Upton et al., 2021). TruSeq and NEBNext library preparation was performed according to manufacturer instructions. In addition, we carried out a slightly altered NEBNext protocol incorporating UMIs to account for potential jackpotting during library preparation. Here, we used the same UMIs as described in Fu et al., 2018, where we incorporated UMIs at both ends (NEB +2 UMIs), as well as 5’ end only (NEB +1 UMI).
 
-## Fu et al., 2018 ligation-based library preparation
+### Fu et al., 2018 ligation-based library preparation
 
 A 3′ DNA adapter – containing an UMI sequence in 3 nt blocks of random nucleotides separated by pre-defined 3nt consensus sequences, an adenylated 5′ end and a dideoxycytosine blocked 3′end – was ligated to size-selected small RNAs using T4 Rnl2tr K227Q (NEB, M0351L) for 16 hr at 25 °C. The ligated product was then purified on a 10% PAGE-Urea gel, followed by gel extraction and ethanol precipitation. The purified ligated product was then ligated to a mix of equimolar 5′ RNA adaptors containing UMIs in 3nt blocks of random nucleotides separated by two distinct pre-defined 3nt consensus sequence with T4 RNA ligase (Ambion, AM2141) for 2 hr at 25 °C. The final ligated product was then ethanol precipitated, and cDNA synthesis was performed with AMV reverse transcriptase (NEB, M0277L). cDNA was finally PCR amplified with standard Illumina sequencing primers with AccuPrime Pfx DNA polymerase for 12–14 cycles. Final PCR product was cleaned up with PCI extraction followed by ethanol precipitation and finally separated by 7.5% PAGE-Urea to remove adaptor dimers. The desired product was excised from the gel and eluted in 750 µl elution buffer overnight at room temperature, followed by isopropanol precipitation and resuspension in 9 µl H2O. Final libraries were pooled and sequenced on Illumina NextSeq 500 with a 75-cycle high-output kit.
 
-## Ordered two-template relay
+### Ordered two-template relay
 
 OTTR was performed as described in Upton et al., 2021 Briefly, total RNA was size selected either by mirVana (<200 nt) or gel purification (60-100nt). Input RNA was labeled at the 3′ end by incubation in terminal transferase buffer containing ddATP for 90 min in 30 °C, followed by an addition of ddGTP and another incubation at 30 °C for 30 min. After heat inactivation of the labelling reaction (65 °C for 5 min), unincorporated ddATP/ddGTP were hydrolyzed by incubation in 5 mM MgCl2 and 0.5 units of shrimp alkaline phosphatase (rSAP) at 37 °C for 15 min. rSAP reaction was stopped by addition of 5 mM EGTA and incubation at 65°C for 5 min. Samples were then incubated in templated cDNA synthesis buffer, adaptors, and dNTPs at 37 °C for 20 min, followed by heat inactivation at 65 °C for 5 min.
 
@@ -179,15 +265,15 @@ UMIs in OTTR are introduced by using an adapter template where the 3′rC is rep
 
 During the end stages of manuscript preparation, we observed extensive variability in capture of 5′ tRNA fragments from day to day. We ultimately identified the terminal transferase step – the non-templated adenosine addition to input RNA molecules that is the first step of OTTR – as the culprit for failed 5′ tRNA fragment capture. We found that robust RNA labeling was compromised by both oxidation of the manganese, which was critical to switch polymerase activity from cDNA synthesis to terminal transferase, and by the oxidation of dithiothreitol (DTT) in the neutral polymerase storage buffer. Manganese oxidation was reduced by incorporating 10 mM sodium acetate pH 5.5 and 28 mM (NH4)2SO4, while polymerase storage buffer DTT was replaced with 0.2 mM TCEP, which is known to be less sensitive to long-time storage at a neutral pH. These optimizations, and other modifications, are unpublished at this time (Ferguson et al, under review) but available from KarnaTeq.com.
 
-## Extended 3′ adaptor ligation
+### Extended 3′ adaptor ligation
 
 For each of the two ligation-based protocols used for mouse sperm (Truseq, NEB Next), two replicate libraries for mouse sperm were prepared with the additional condition of an 18 hr ligation at 16 °C for the ligation of the 3′ adapter in the attempt to increase ligation efficiency. For OTTR, an 18 hr incubation was added for half of libraries after terminal labeling, during the cDNA synthesis step. However, these interventions had minimal effect on sperm small RNA profiles and both replicates are interchangeable.
 
-## Data analysis
+### Data analysis
 
 To analyze small RNA sequencing data, we first removed adapters using cutadapt (version 2.9) and PCR duplicate were removed with seqkit (version 0.14.0). The trimmed and deduplicated reads were then analyzed using both an in-house pipeline and the unpublished tool tRAX (version 1.0.0; http://trna.ucsc.edu/tRAX/; Holmes et al., 2022) and the results were compared. Firstly, we used Bowtie (version 1.1.0) to map the reads to the annotated rRNA, snoRNA, snRNA, and tRNA sequences in the corresponding species (yeast, mouse, and human) in descending priority, and then the unmappable reads to the respective genomes. The Bowtie parameters used for rRNA, snoRNA, snRNA and genome alignment were ‘-v 0 k 1’; while the Bowtie parameters used for tRNA alignment were ‘-y -k 100 --best --strata’ considering tRNA nucleotide modifications. The abundance of each type of small RNAs was normalized by the total sequencing depth, that is, the total number of small RNA and genome mapping reads in a sequencing library. Secondly, we used tRAX Holmes et al., 2022 to process the trimmed and deduplicated reads with default parameters; the results largely agreed with what was obtained with our in-house pipeline.
 
-## Comparison to published datasets
+### Comparison to published datasets
 
 Datasets were downloaded and trimmed as follows. If nothing else is noted, adaptor timing was performed with cutadapt 4.1; only reads with a minimum read length of 15 nt and quality scores over 20 were kept for downstream analysis. Trimming details follow for specific datasets.
 

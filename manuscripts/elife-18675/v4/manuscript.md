@@ -21,17 +21,17 @@
 
 ## Abstract
 
-10.7554/eLife.18675.001 In their active GTP-bound form, Rab proteins interact with proteins termed effector molecules. In this study, we have thoroughly characterized a Rab effector domain that is present in proteins of the Mical and EHBP families, both known to act in endosomal trafficking. Within our study, we show that these effectors display a preference for Rab8 family proteins (Rab8, 10, 13 and 15) and that some of the effector domains can bind two Rab proteins via separate binding sites. Structural analysis allowed us to explain the specificity towards Rab8 family members and the presence of two similar Rab binding sites that must have evolved via gene duplication. This study is the first to thoroughly characterize a Rab effector protein that contains two separate Rab binding sites within a single domain, allowing Micals and EHBPs to bind two Rabs simultaneously, thus suggesting previously unknown functions of these effector molecules in endosomal trafficking. DOI: http://dx.doi.org/10.7554/eLife.18675.001
+In their active GTP-bound form, Rab proteins interact with proteins termed effector molecules. In this study, we have thoroughly characterized a Rab effector domain that is present in proteins of the Mical and EHBP families, both known to act in endosomal trafficking. Within our study, we show that these effectors display a preference for Rab8 family proteins (Rab8, 10, 13 and 15) and that some of the effector domains can bind two Rab proteins via separate binding sites. Structural analysis allowed us to explain the specificity towards Rab8 family members and the presence of two similar Rab binding sites that must have evolved via gene duplication. This study is the first to thoroughly characterize a Rab effector protein that contains two separate Rab binding sites within a single domain, allowing Micals and EHBPs to bind two Rabs simultaneously, thus suggesting previously unknown functions of these effector molecules in endosomal trafficking.
 
 ## Introduction
 
 Rab proteins, the biggest subfamily within the superfamily of small GTPases, are major regulators of vesicular trafficking in eukaryotic cells (Takai et al., 2001). Like all small GTPases, Rab proteins cycle between an inactive GDP-bound and an active GTP-bound state. The cycling is tightly regulated and mediated by two families of enzymes: guanine nucleotide exchange factors (GEFs) that catalyze the GDP/GTP exchange and GTPase activating proteins that stimulate GTP hydrolysis (Stenmark, 2009). Additionally, a variety of different effector proteins interact specifically with GTP-bound Rab proteins and mediate their versatile physiological roles in membrane trafficking, including budding of vesicles from a donor membrane, directed transport through the cell and finally tethering and fusion with a target membrane (Grosshans et al., 2006). Especially in long-distance vesicular transport processes (e.g. in neuronal axons and dendrites), directed vesicular transport along cytoskeletal tracks appears to be an obvious mechanism and, consistently, different effector proteins have been reported to link Rab proteins to the cytoskeleton (Kevenaar and Hoogenraad, 2015; Horgan and McCaffrey, 2011).
 
-One such family of effector proteins that was reported to link Rab proteins and the cytoskeleton is the Mical (molecules interacting with CasL) family (
+One such family of effector proteins that was reported to link Rab proteins and the cytoskeleton is the Mical (molecules interacting with CasL) family (Figure 1) (Fischer et al., 2005). Most of these Mical proteins contain an N-terminal monooxygenase domain that was reported to regulate actin dynamics via reversible oxidation of a methionine residue (Hung et al., 2011; Lee et al., 2013; Hung et al., 2013). Additionally, all Mical proteins except the Mical C-terminal like protein (Mical-cL) contain a calponin homology (CH) and a Lin11, Isl-1 and Mec-3 (LIM) domain that have been reported to assist the interaction with actin and other cytoskeletal proteins, respectively (Giridharan and Caplan, 2014). Finally, all except Mical-2 contain a C-terminal coiled-coil domain that is also termed domain of unknown function (DUF) 3585 and that is known to interact with different Rab proteins (Giridharan and Caplan, 2014) (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/18675/elife-18675-fig1-v4.jpg)
 
-**Figure 1.:** Besides their C-terminal RBD (referred to as bivalent Mical/EHBP Rab binding (bMERB) domain), most Mical proteins contain an N-terminal Monooxygenase (red), a CH- and a LIM-domain (both orange). EHBPs also contain an actin binding CH-domain and an N-terminal membrane binding C2-domain (yellow) as well as a C-terminal prenylation motif (CaaX-box) following the bMERB domain. Two proteins predicted to contain only the bMERB domains (Mical-cL and C16orf45) are also shown. For proteins with multiple known splice variants, domain boundaries are indicated for isoform 1 (Mical-1: Uniprot ID Q8TDZ2, genomic location 6q21; Mical-L1: Uniprot ID Q8N3F8, genomic location 22q13.1; Mical-L2: Uniprot ID Q8IY33, genomic location 7p22.3; Mical-3: Uniprot ID Q7RTP6, genomic location 22q11.21; Mical-cL: Uniprot ID Q6ZW33, genomic location 11p15.3; EHBP1: Uniprot ID Q8NDI1, genomic location 2p15; EHBP1L1 Uniprot ID Q8N3D4, genomic location 11q13.1). The reader is referred to the main text for further details.DOI: http://dx.doi.org/10.7554/eLife.18675.002
+**Figure 1.:** Besides their C-terminal RBD (referred to as bivalent Mical/EHBP Rab binding (bMERB) domain), most Mical proteins contain an N-terminal Monooxygenase (red), a CH- and a LIM-domain (both orange). EHBPs also contain an actin binding CH-domain and an N-terminal membrane binding C2-domain (yellow) as well as a C-terminal prenylation motif (CaaX-box) following the bMERB domain. Two proteins predicted to contain only the bMERB domains (Mical-cL and C16orf45) are also shown. For proteins with multiple known splice variants, domain boundaries are indicated for isoform 1 (Mical-1: Uniprot ID Q8TDZ2, genomic location 6q21; Mical-L1: Uniprot ID Q8N3F8, genomic location 22q13.1; Mical-L2: Uniprot ID Q8IY33, genomic location 7p22.3; Mical-3: Uniprot ID Q7RTP6, genomic location 22q11.21; Mical-cL: Uniprot ID Q6ZW33, genomic location 11p15.3; EHBP1: Uniprot ID Q8NDI1, genomic location 2p15; EHBP1L1 Uniprot ID Q8N3D4, genomic location 11q13.1). The reader is referred to the main text for further details.
 
 According to the SMART database (Schultz et al., 1998), this largely uncharacterized DUF3585 domain is present in more than 450 eukaryotic proteins (including 8 human proteins, see Figure 1). In humans, besides the Mical proteins this includes the family of EH (Eps15-homology) domain binding proteins (EHBPs) and one uncharacterized protein (C16orf45; see Figure 1). Interestingly, the EHBPs also contain a CH-domain and have been described to couple vesicular transport to the actin cytoskeleton (Shi et al., 2010; Guilherme et al., 2004).
 
@@ -43,37 +43,104 @@ This study is the first to show the structural basis of Rab proteins interacting
 
 ## Results
 
-## The bMERB domain preferentially binds Rab8 family proteins
+### The bMERB domain preferentially binds Rab8 family proteins
 
-Previously reported interactions of different bMERB domain containing proteins with Rab proteins included Rab1, Rab8, Rab10, Rab13, Rab15, Rab35 and Rab36 (Giridharan and Caplan, 2014; Shi et al., 2010), although not all possible combinations of the effectors and the different Rab proteins were tested nor interactions quantified. We therefore set out to systematically confirm and quantify the interaction of 5 of these Rab proteins with the bMERB domains of Mical-1, Mical-3, Mical-cL, EHBP1 and EHBP1L1 via analytical size exclusion chromatography (aSEC) (see Table 1, the aSEC data is shown in Figure 2—figure supplement 1). In these experiments, stable complex formation was detected with Rab8, Rab10, Rab13 and Rab15 (since Rab8, Rab10, Rab13 and Rab15 are closely related in amino acid sequence, we refer to them as the Rab8 family [Klöpper et al., 2012]). Rab1, however, failed to form stable complexes with bMERB-domain proteins, indicating low affinity.10.7554/eLife.18675.003Table 1.Systematic analysis of interactions between Rab proteins and the bMERB domains of different proteins. Binding was systematically tested by analytical size exclusion chromatography (+ indicates binding in these experiments, − indicates that no complex formation was observed) and affinities were determined by ITC.DOI: http://dx.doi.org/10.7554/eLife.18675.003Mical-1Mical-3Mical-cLEHBP1EHBP1L1Rab1 KD+ 2.2 µM+ 2.6 µM+ 5.2 µM− > 10 µM− > 10 µMRab35 KDn.d.n.d+ 1.8 µMn.dn.dRab8 KD,1 KD,2+ 55.5 nM 480 nM+ 27.9 nM 4.4 µM+ 253 nM+ 397 nM+ 159 nM 159 nMRab10 KD+ n.d.+ n.d.+ 790 nM+ n.d.+ n.d.Rab13 KD+ n.d.+ n.d.+ 94 nM+ n.d.+ n.d.Rab15 KD+ n.d.+ n.d.+ 33 nM+ n.d.+ n.d.
+Previously reported interactions of different bMERB domain containing proteins with Rab proteins included Rab1, Rab8, Rab10, Rab13, Rab15, Rab35 and Rab36 (Giridharan and Caplan, 2014; Shi et al., 2010), although not all possible combinations of the effectors and the different Rab proteins were tested nor interactions quantified. We therefore set out to systematically confirm and quantify the interaction of 5 of these Rab proteins with the bMERB domains of Mical-1, Mical-3, Mical-cL, EHBP1 and EHBP1L1 via analytical size exclusion chromatography (aSEC) (see Table 1, the aSEC data is shown in Figure 2—figure supplement 1). In these experiments, stable complex formation was detected with Rab8, Rab10, Rab13 and Rab15 (since Rab8, Rab10, Rab13 and Rab15 are closely related in amino acid sequence, we refer to them as the Rab8 family [Klöpper et al., 2012]). Rab1, however, failed to form stable complexes with bMERB-domain proteins, indicating low affinity.
 
-In order to quantitatively verify the preference of the bMERB domain for Rab8 family members rather than Rab1 we performed isothermal titration calorimetry (ITC) measurements comparing the interaction of Rab1 and Rab8 with the different bMERB domains. Whereas we observed K
+**Table 1.**
+ Systematic analysis of interactions between Rab proteins and the bMERB domains of different proteins. Binding was systematically tested by analytical size exclusion chromatography (+ indicates binding in these experiments, − indicates that no complex formation was observed) and affinities were determined by ITC.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mical-1</th>
+      <th>Mical-3</th>
+      <th>Mical-cL</th>
+      <th>EHBP1</th>
+      <th>EHBP1L1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rab1 KD</td>
+      <td>+ 2.2 µM</td>
+      <td>+ 2.6 µM</td>
+      <td>+ 5.2 µM</td>
+      <td>− &gt; 10 µM</td>
+      <td>− &gt; 10 µM</td>
+    </tr>
+    <tr>
+      <td>Rab35 KD</td>
+      <td>n.d.</td>
+      <td>n.d</td>
+      <td>+ 1.8 µM</td>
+      <td>n.d</td>
+      <td>n.d</td>
+    </tr>
+    <tr>
+      <td>Rab8 KD,1 KD,2</td>
+      <td>+ 55.5 nM 480 nM</td>
+      <td>+ 27.9 nM 4.4 µM</td>
+      <td>+ 253 nM</td>
+      <td>+ 397 nM</td>
+      <td>+ 159 nM 159 nM</td>
+    </tr>
+    <tr>
+      <td>Rab10 KD</td>
+      <td>+ n.d.</td>
+      <td>+ n.d.</td>
+      <td>+ 790 nM</td>
+      <td>+ n.d.</td>
+      <td>+ n.d.</td>
+    </tr>
+    <tr>
+      <td>Rab13 KD</td>
+      <td>+ n.d.</td>
+      <td>+ n.d.</td>
+      <td>+ 94 nM</td>
+      <td>+ n.d.</td>
+      <td>+ n.d.</td>
+    </tr>
+    <tr>
+      <td>Rab15 KD</td>
+      <td>+ n.d.</td>
+      <td>+ n.d.</td>
+      <td>+ 33 nM</td>
+      <td>+ n.d.</td>
+      <td>+ n.d.</td>
+    </tr>
+  </tbody>
+</table>
+
+In order to quantitatively verify the preference of the bMERB domain for Rab8 family members rather than Rab1 we performed isothermal titration calorimetry (ITC) measurements comparing the interaction of Rab1 and Rab8 with the different bMERB domains. Whereas we observed KD values of 2.2–5.2 µM for Rab1 binding to the bMERB domains of Mical proteins and no detectable binding of Rab1 to the bMERB domains of EHBPs (Table 1 and Figure 2a), we detected strong binding and ca. 100 nanomolar affinities for Rab8 and the different bMERB domains (see Table 1 and Figure 2b). Using Mical-cL as one representative of the bMERB family, we saw that all members of the Rab8 family bound Mical-cL with high nanomolar affinities, compared to Rab1 (KD = 5.2 µM) and Rab35 (KD = 1.8 µM; Table 1 and Figure 2—figure supplement 2). The highest affinity observed was that of Rab15 and Mical-cL with a KD of 33 nM. In accordance with the strong specificity of EHBPs towards the Rab8 family, Rab1a, Rab1b and Rab35 (a close relative of Rab1 which is also sometimes referred to as Rab1c) were previously shown not to interact with EHBP1/EHBP1L1 (Shi et al., 2010; Nakajo et al., 2016).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/18675/elife-18675-fig2-v4.jpg)
 
-**Figure 2.:** (a) Whereas Rab1 binds to Mical-1, Mical-3 and Mical-cL with low affinity and does not show detectable binding to EHBPs, (b) Rab8 binds with high affinity to all effector domains tested. Additionally, we observed two separate binding sites in the ITC experiments for Rab8 and Mical-1, Mical-3 and EHBP1L1 (the results of the binding fit including the stoichiometry, the KD, the binding enthalpy and the binding entropy are shown within the ITC spectra). (c) Mixing different ratios of Rab8 and the RBDs (1.2:1, 1.6:1 and 2.2:1), the 2:1 stoichiometry of binding was confirmed by aSEC for Rab8:Mical-1 and Rab8:EHBP1L1, whereas a 1:1 stoichiometry was observed for Rab8:Mical-3, Rab8:Mical-cL and Rab8:EHBP1L1 as indicated by a second peak corresponding to free excess Rab8. Note that the second low affinity binding site present in Mical-3 observed via ITC could not be detected via gel filtration.DOI: http://dx.doi.org/10.7554/eLife.18675.004
+**Figure 2.:** (a) Whereas Rab1 binds to Mical-1, Mical-3 and Mical-cL with low affinity and does not show detectable binding to EHBPs, (b) Rab8 binds with high affinity to all effector domains tested. Additionally, we observed two separate binding sites in the ITC experiments for Rab8 and Mical-1, Mical-3 and EHBP1L1 (the results of the binding fit including the stoichiometry, the KD, the binding enthalpy and the binding entropy are shown within the ITC spectra). (c) Mixing different ratios of Rab8 and the RBDs (1.2:1, 1.6:1 and 2.2:1), the 2:1 stoichiometry of binding was confirmed by aSEC for Rab8:Mical-1 and Rab8:EHBP1L1, whereas a 1:1 stoichiometry was observed for Rab8:Mical-3, Rab8:Mical-cL and Rab8:EHBP1L1 as indicated by a second peak corresponding to free excess Rab8. Note that the second low affinity binding site present in Mical-3 observed via ITC could not be detected via gel filtration.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/18675/elife-18675-fig2-figsupp1-v4.jpg)
 
-**Figure 2—figure supplement 1.:** The Rab protein (130 µM, black) preparatively loaded with the non-hydrolyzable GTP-analogue GppNHp, the different bMERB domains (112.5 µM, red) and the mixture of both (130 µM Rab + 112.5 µM RBD) were subjected to analytical size exclusion chromatography (aSEC) and tested for complex formation between the RBDs (from left to right: Mical-1, Mical-3, Mical-cL, EHBP1, EHBP1L1) and the Rabs ((a) – Rab1, (b) – Rab8, (c) – Rab10, (d) – Rab13, (e) – Rab15). Note the missing (Rab1:EHBP1 and Rab1:EHBP1L1) or incomplete (Rab1:Mical-3 and Rab1:Mical-cL) complex formation in (a) indicating low-affinity binding.DOI: http://dx.doi.org/10.7554/eLife.18675.005
+**Figure 2—figure supplement 1.:** The Rab protein (130 µM, black) preparatively loaded with the non-hydrolyzable GTP-analogue GppNHp, the different bMERB domains (112.5 µM, red) and the mixture of both (130 µM Rab + 112.5 µM RBD) were subjected to analytical size exclusion chromatography (aSEC) and tested for complex formation between the RBDs (from left to right: Mical-1, Mical-3, Mical-cL, EHBP1, EHBP1L1) and the Rabs ((a) – Rab1, (b) – Rab8, (c) – Rab10, (d) – Rab13, (e) – Rab15). Note the missing (Rab1:EHBP1 and Rab1:EHBP1L1) or incomplete (Rab1:Mical-3 and Rab1:Mical-cL) complex formation in (a) indicating low-affinity binding.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/18675/elife-18675-fig2-figsupp2-v4.jpg)
 
-**Figure 2—figure supplement 2.:** (a) The ITC data nicely show the relatively weak affinity of Rab1 towards Mical-cL (KD = 5.2 µM) compared to Rab8 (KD = 233 nM), Rab10 (KD = 787 nM), Rab13 (KD = 93 nM) and Rab15 (KD = 33 nM). Rab35 (sometimes also referred to as Rab1c) has an intermediate affinity for Mical-cL (KD = 1.8 µM). Since preparative loading of Rab35 with GppNHp (see below) was not successful, the concentration of the Rab35 protein fraction in the active state was deduced from HPLC analysis (see below) and the ITC data was corrected accordingly. (b) Comparison of the nucleotide status of Rab8 and Rab35 by HPLC analysis (black trace – absorption at 254 nm, red trace – absorption at 280 nm). The lower lane shows the trace of a nucleotide mix consisting of guanosine, GMP, GDP, GppNHp and GTP and a small impurity of GppNH2 as a reference, the retention times (in minutes) for each nucleotide are shown above the peak and in the table on the right. Whereas Rab8 could be preparatively loaded with GppNHp and analysis showed approximately 94% bound GppNHp, Rab35 was only 82% GppNHp-bound and the trace shows a major impurity of GppNH2 (18%). For this reason, the Rab35 protein concentration used in the ITC data in (a) was corrected for this.DOI: http://dx.doi.org/10.7554/eLife.18675.006
+**Figure 2—figure supplement 2.:** (a) The ITC data nicely show the relatively weak affinity of Rab1 towards Mical-cL (KD = 5.2 µM) compared to Rab8 (KD = 233 nM), Rab10 (KD = 787 nM), Rab13 (KD = 93 nM) and Rab15 (KD = 33 nM). Rab35 (sometimes also referred to as Rab1c) has an intermediate affinity for Mical-cL (KD = 1.8 µM). Since preparative loading of Rab35 with GppNHp (see below) was not successful, the concentration of the Rab35 protein fraction in the active state was deduced from HPLC analysis (see below) and the ITC data was corrected accordingly. (b) Comparison of the nucleotide status of Rab8 and Rab35 by HPLC analysis (black trace – absorption at 254 nm, red trace – absorption at 280 nm). The lower lane shows the trace of a nucleotide mix consisting of guanosine, GMP, GDP, GppNHp and GTP and a small impurity of GppNH2 as a reference, the retention times (in minutes) for each nucleotide are shown above the peak and in the table on the right. Whereas Rab8 could be preparatively loaded with GppNHp and analysis showed approximately 94% bound GppNHp, Rab35 was only 82% GppNHp-bound and the trace shows a major impurity of GppNH2 (18%). For this reason, the Rab35 protein concentration used in the ITC data in (a) was corrected for this.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/18675/elife-18675-fig2-figsupp3-v4.jpg)
 
-**Figure 2—figure supplement 3.:** Rab8:GppNHp (130 µM, black), Rab13:GppNHp (130 µM, green) the different bMERB domains (112.5 µM, red) and the mixture of both (130 µM Rab + 112.5 µM RBD; dark blue for Rab8 and magenta for Rab13 in complex with the RBD) were subjected to analytical size exclusion chromatography (aSEC) and tested for complex formation between the Rabs and the RBDs. Additionally, the proteins were mixed in a ratio of 130 µM Rab8, 130 µM Rab13 and 112.5 µM RBD (light blue), clearly indicating that a 1:1:1 complex can be formed with 2 different Rab proteins bound to the respective RBDs.DOI: http://dx.doi.org/10.7554/eLife.18675.007
+**Figure 2—figure supplement 3.:** Rab8:GppNHp (130 µM, black), Rab13:GppNHp (130 µM, green) the different bMERB domains (112.5 µM, red) and the mixture of both (130 µM Rab + 112.5 µM RBD; dark blue for Rab8 and magenta for Rab13 in complex with the RBD) were subjected to analytical size exclusion chromatography (aSEC) and tested for complex formation between the Rabs and the RBDs. Additionally, the proteins were mixed in a ratio of 130 µM Rab8, 130 µM Rab13 and 112.5 µM RBD (light blue), clearly indicating that a 1:1:1 complex can be formed with 2 different Rab proteins bound to the respective RBDs.
 
-## EHBPs colocalize with Rab8-family members
+### EHBPs colocalize with Rab8-family members
 
-Interestingly, in addition to the RBDs, EHBPs also contain CaaX-boxes at their C-termini (EHBP1: CVLQ; EHBP1L1: CVLS;
+Interestingly, in addition to the RBDs, EHBPs also contain CaaX-boxes at their C-termini (EHBP1: CVLQ; EHBP1L1: CVLS; Figure 1) for posttranslational modification with prenyl-groups. Therefore, we set out to test whether these motifs can be prenylated in vitro and if prenylation is responsible and necessary for correct intracellular localization. In vitro, both proteins can be farnesylated and geranylgeranylated by FTase and GGTase I, respectively. However, in accordance with the C-terminal amino acids of the CaaX-boxes being glutamine or serine (Zhang and Casey, 1996), we observed preferential farnesylation (Figure 3a). Using constructs containing the RBD with or without the CaaX-boxes, we next looked at the intracellular localization. These experiments clearly showed a CaaX-box dependent localization of both proteins to intracellular structures resembling endosomes (Figure 3b), as previously reported for the full length proteins (Shi et al., 2010). Additionally, both proteins showed strong colocalization with constitutively active Rab8 and Rab10 (i.e. Rab8Q67L and Rab10Q68L), both known to act at endosomes (Figure 3c), further supporting the function of this family of effector proteins as Rab8-family binding partners.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/18675/elife-18675-fig3-v4.jpg)
 
-**Figure 3.:** (a) EHBP1 and EHBP1L1 can be prenylated in vitro as shown by mass spectrometry. After incubation of the purified proteins including the CaaX-motifs (theoretical masses of the purified proteins: 22253.3 Da (EHBP1); 22214.0 Da (EHBP1L1); left panel) with Farnesytransferase (FTase, middle panel) or Geranylgeranyltransferase (GGTase, right panel) farnesylation/geranylgeranylation lead to an increase in mass of 205.4/272.5 Da, respectively. Note that farnesylation, in contrast to geranylgeranylation, appears to be more efficient under similar conditions and goes to completion. This is in agreement with the sequence of the CaaX-motifs in both proteins containing a Gln/Ser at their C-terminus which has been shown to favor farnesylation. (b) Whereas the constructs containing the bMERB domain and the CaaX-motif (EHBP11047-1231, EHBP1L11340-1523) localize to intracellular structures resembling endosomes, deletion of the CaaX-motif (∆CaaX) leads to a cytosolic distribution for both EHBP1 and EHBP1L1 (Scale bars: 10 µm). (c) Both EGFP-EHBP11047-1231 and EGFP-EHBP1L11340-1523 (upper panel) show strong colocalisation with mCherry-Rab8Q67L and mCherry-Rab10Q68L (middle panel) as indicated in the merged images (lower panel). The localization pattern resembles that of endosomes (Scale bars: 10 µm).DOI: http://dx.doi.org/10.7554/eLife.18675.008
+**Figure 3.:** (a) EHBP1 and EHBP1L1 can be prenylated in vitro as shown by mass spectrometry. After incubation of the purified proteins including the CaaX-motifs (theoretical masses of the purified proteins: 22253.3 Da (EHBP1); 22214.0 Da (EHBP1L1); left panel) with Farnesytransferase (FTase, middle panel) or Geranylgeranyltransferase (GGTase, right panel) farnesylation/geranylgeranylation lead to an increase in mass of 205.4/272.5 Da, respectively. Note that farnesylation, in contrast to geranylgeranylation, appears to be more efficient under similar conditions and goes to completion. This is in agreement with the sequence of the CaaX-motifs in both proteins containing a Gln/Ser at their C-terminus which has been shown to favor farnesylation. (b) Whereas the constructs containing the bMERB domain and the CaaX-motif (EHBP11047-1231, EHBP1L11340-1523) localize to intracellular structures resembling endosomes, deletion of the CaaX-motif (∆CaaX) leads to a cytosolic distribution for both EHBP1 and EHBP1L1 (Scale bars: 10 µm). (c) Both EGFP-EHBP11047-1231 and EGFP-EHBP1L11340-1523 (upper panel) show strong colocalisation with mCherry-Rab8Q67L and mCherry-Rab10Q68L (middle panel) as indicated in the merged images (lower panel). The localization pattern resembles that of endosomes (Scale bars: 10 µm).
 
-## Some bMERB domains can bind two Rab proteins simultaneously
+### Some bMERB domains can bind two Rab proteins simultaneously
 
 Besides the specificity of bMERB domains towards the Rab8 family, another interesting observation was made in the ITC experiments comparing the stoichiometry of binding of Rab8 and the different RBDs: Whereas Rab8 bound in a 1:1 stoichiometry to Mical-cL and EHBP1, a 2:1 stoichiometry binding was observed for Mical-1, Mical-3 and EHBP1L1 (Table 1 and Figure 2b). For Rab8 and Mical-1/Mical-3, the ITC experiments show one high-affinity enthalpy-driven and one lower affinity entropy-driven binding site, compared to two binding sites with similar affinity for Rab8 and EHBP1L1.
 
@@ -81,57 +148,274 @@ In order to confirm the observed differences, we repeated the aSEC experiments w
 
 The presence of two distinct Rab binding sites on certain bMERB domains was a striking observation pointing towards a possible function of these effector proteins in sorting cargo and/or linking different endosomal trafficking pathways regulated by different Rab proteins. In accordance with this idea, recent studies on Mical-L2 dependent GLUT4 translocation showed that trafficking was dependent on a concerted action of Rab8 and Rab13 (Sun et al., 2010, 2016). We consequently also tested whether the effector proteins might be able to simultaneously bind two different Rab proteins in a 1:1:1 (RabX:effector:RabY) complex using both Rab8 and Rab13 and the corresponding aSEC experiments clearly confirmed the formation of a ternary complex of Rab8:Mical-1:Rab13 as well as Rab8:EHBP1L1:Rab13 (Figure 2—figure supplement 3).
 
-## The structural basis of Rab:bMERB interaction
+### The structural basis of Rab:bMERB interaction
 
-In order to understand the mode of interaction of Rab proteins and the C-terminal Rab-binding domain of Micals/EHBPs, we first aimed at determining the structure of the RBD of one member of these families. We succeeded in crystallizing a selenomethionine derivative of Mical-31841-1990 containing the whole predicted bMERB domain and solved the structure with a resolution of 2.7 Å (data and refinement statistics are shown in Table 2).10.7554/eLife.18675.009Table 2.Data-collection and processing statistics (values in parentheses are for the outer shell).DOI: http://dx.doi.org/10.7554/eLife.18675.009 SeMet Mical-31841-19902†Rab1:Mical-cL534-683Rab8:Mical-cL534-683Data collection*X-Ray SourceX10SA at SLSX10SA at SLSX10SA at SLSWavelength (Å)0.9789560.999921.00009Resolution range (Å)47.8–2.7 (2.8–2.7)45.8–2.3 (2.4–2.3)46.0–2.85 (2.95–2.85)Space groupP 21 21 21I 2 2 2C 2 2 21Unit cell a, b, c (Å) α, β, γ (°)51.9, 78.8, 95.6 90.0, 90.0, 90.061.75, 129.38, 129.85 90.0, 90.0, 90.062.4, 122.4, 139.15 90.0, 90.0, 90.0No. of reflections Total Unique272679 (28873) 20544 (2119)308332 (36902) 23530 (2760)162311 (16579) 12810 (1224)Multiplicity13.313.112.7Completeness99.1 (98.5)100.00 (100.00)99.9 (100.0)Rmerge (%)13.8 (114.6)10.5 (74.3)8.9 (77.6)Rmeas (%)14.4 (119.1)10.9 (77.2)9.2 (80.6)I/σ(I)16.8 (3.6)16.27 (3.89)16.45 (3.19)f’ / f’’-7.29 / 3.84--RefinementResolution range (Å)47.8–2.7 (2.77–2.7)45.8–2.3 (2.4–2.3)46.0–2.85 (3.07–2.85)No. of reflections (work set)105532352112808Rwork (%)25.1 (20.5)17.9 (26.9)23.7 (31.1)Rfree (%)28.2 (36.2)20.7 (29.8)28.8 (35.0)No. of atoms Protein Ligands Water2095 14 -2552 33 272426 33 2B-factors Protein Ligands Water72.9 65.2 -76.7 49.8 73.1101.2 111.2 122.6R.m.s deviations Bond length (Å) Bond angles (°)0.016 1.8090.008 1.1040.009 1.175Ramachandran plot Favored Additionally allowed Outliers98.8 1.2 098.4 1.6 096.1 3.3 0.7PDB entry code5SZG5SZH5SZIRab10:Mical-cL534-683Rab101-175:Mical-1918-1067Rab1R8N:Mical-cL534-683Data collectionX-Ray SourceX10SA at SLSX10SA at SLSX10SA at SLSWavelength (Å)1.000090.999970.91908Resolution range (Å)48.2–2.66 (2.7–2.66)44.0–2.8 (2.9–2.8)44.8–2.8 (2.85–2.8)Space groupP 21 21 2P 21 21 21C 2 2 21Unit cell a, b, c (Å) α, β, γ (°)153.7, 61.9, 55.6 90.0, 90.0, 90.058.4, 59.0, 198.2 90.0, 90.0, 90.062.2, 117.0, 139.4 90.0, 90.0, 90.0No. of reflections Total Unique187267 (6488) 15861 (676)222905 (21259) 17508 (1689)170436 (8892) 12904 (645)Multiplicity11.812.719.2Completeness99.9 (100.0)99.6 (99.9)100.0 (100.0)Rmerge (%)13.7 (158.6)11.8 (72.3)7.6 (110.6)Rmeas (%)14.3 (167.8)12.3 (75.4)7.9 (114.9)I/σ(I)12.2 (1.4)14.1 (3.3)22.8 (2.45)f’ / f’’---RefinementResolution range (Å)48.2–2.66 (2.83–2.66)44.0–2.8 (2.98–2.80)44.8–2.8 (3.0–2.80)No. of reflections (work set)158571749912904Rwork (%)22.4 (30.2)23.7 (29.4)20.8 (30.8)Rfree (%)26.6 (36.9)28.8 (35.6)26.1 (38.4)No. of atoms Protein Ligands Water2559 40 393676 66 42565 33 3B-factors Protein Ligands Water77.8 77.9 70.288.6 85.4 68.786.2 81.2 73.8R.m.s deviations Bond length (Å) Bond angles (°)0.004 0.7560.013 1.5060.010 1.178Ramachandran plot Favored Additionally allowed Outliers98.1 1.9 096.7 3.3 098.1 1.6 0.3PDB entry code5SZJ5LPN5SZK*All data sets were collected from one single crystal on beamline X10SA of the Swiss Light Source (Paul Scherrer Institute, Villigen, Switzerland)†Data collections statistics for SAD data refer to unmerged Friedel pairs.
+In order to understand the mode of interaction of Rab proteins and the C-terminal Rab-binding domain of Micals/EHBPs, we first aimed at determining the structure of the RBD of one member of these families. We succeeded in crystallizing a selenomethionine derivative of Mical-31841-1990 containing the whole predicted bMERB domain and solved the structure with a resolution of 2.7 Å (data and refinement statistics are shown in Table 2).
 
-The asymmetric unit contains two copies of Mical-3 that form a central 4-stranded coiled-coil composed of α-helices 2 and 3 of each monomer flanked by α-helices 1 on both sides (
+**Table 2.**
+ Data-collection and processing statistics (values in parentheses are for the outer shell).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>SeMet Mical-31841-19902†</th>
+      <th>Rab1:Mical-cL534-683</th>
+      <th>Rab8:Mical-cL534-683</th>
+    </tr>
+    <tr>
+      <th>Data collection*</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X-Ray Source</td>
+      <td>X10SA at SLS</td>
+      <td>X10SA at SLS</td>
+      <td>X10SA at SLS</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.978956</td>
+      <td>0.99992</td>
+      <td>1.00009</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>47.8–2.7 (2.8–2.7)</td>
+      <td>45.8–2.3 (2.4–2.3)</td>
+      <td>46.0–2.85 (2.95–2.85)</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 21 21 21</td>
+      <td>I 2 2 2</td>
+      <td>C 2 2 21</td>
+    </tr>
+    <tr>
+      <td>Unit cell a, b, c (Å) α, β, γ (°)</td>
+      <td>51.9, 78.8, 95.6 90.0, 90.0, 90.0</td>
+      <td>61.75, 129.38, 129.85 90.0, 90.0, 90.0</td>
+      <td>62.4, 122.4, 139.15 90.0, 90.0, 90.0</td>
+    </tr>
+    <tr>
+      <td>No. of reflections Total Unique</td>
+      <td>272679 (28873) 20544 (2119)</td>
+      <td>308332 (36902) 23530 (2760)</td>
+      <td>162311 (16579) 12810 (1224)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>13.3</td>
+      <td>13.1</td>
+      <td>12.7</td>
+    </tr>
+    <tr>
+      <td>Completeness</td>
+      <td>99.1 (98.5)</td>
+      <td>100.00 (100.00)</td>
+      <td>99.9 (100.0)</td>
+    </tr>
+    <tr>
+      <td>Rmerge (%)</td>
+      <td>13.8 (114.6)</td>
+      <td>10.5 (74.3)</td>
+      <td>8.9 (77.6)</td>
+    </tr>
+    <tr>
+      <td>Rmeas (%)</td>
+      <td>14.4 (119.1)</td>
+      <td>10.9 (77.2)</td>
+      <td>9.2 (80.6)</td>
+    </tr>
+    <tr>
+      <td>I/σ(I)</td>
+      <td>16.8 (3.6)</td>
+      <td>16.27 (3.89)</td>
+      <td>16.45 (3.19)</td>
+    </tr>
+    <tr>
+      <td>f’ / f’’</td>
+      <td>-7.29 / 3.84</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>47.8–2.7 (2.77–2.7)</td>
+      <td>45.8–2.3 (2.4–2.3)</td>
+      <td>46.0–2.85 (3.07–2.85)</td>
+    </tr>
+    <tr>
+      <td>No. of reflections (work set)</td>
+      <td>10553</td>
+      <td>23521</td>
+      <td>12808</td>
+    </tr>
+    <tr>
+      <td>Rwork (%)</td>
+      <td>25.1 (20.5)</td>
+      <td>17.9 (26.9)</td>
+      <td>23.7 (31.1)</td>
+    </tr>
+    <tr>
+      <td>Rfree (%)</td>
+      <td>28.2 (36.2)</td>
+      <td>20.7 (29.8)</td>
+      <td>28.8 (35.0)</td>
+    </tr>
+    <tr>
+      <td>No. of atoms Protein Ligands Water</td>
+      <td>2095 14 -</td>
+      <td>2552 33 27</td>
+      <td>2426 33 2</td>
+    </tr>
+    <tr>
+      <td>B-factors Protein Ligands Water</td>
+      <td>72.9 65.2 -</td>
+      <td>76.7 49.8 73.1</td>
+      <td>101.2 111.2 122.6</td>
+    </tr>
+    <tr>
+      <td>R.m.s deviations Bond length (Å) Bond angles (°)</td>
+      <td>0.016 1.809</td>
+      <td>0.008 1.104</td>
+      <td>0.009 1.175</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot Favored Additionally allowed Outliers</td>
+      <td>98.8 1.2 0</td>
+      <td>98.4 1.6 0</td>
+      <td>96.1 3.3 0.7</td>
+    </tr>
+    <tr>
+      <td>PDB entry code</td>
+      <td>5SZG</td>
+      <td>5SZH</td>
+      <td>5SZI</td>
+    </tr>
+  </tbody>
+</table>
+
+_*All data sets were collected from one single crystal on beamline X10SA of the Swiss Light Source (Paul Scherrer Institute, Villigen, Switzerland)†Data collections statistics for SAD data refer to unmerged Friedel pairs._
+
+The asymmetric unit contains two copies of Mical-3 that form a central 4-stranded coiled-coil composed of α-helices 2 and 3 of each monomer flanked by α-helices 1 on both sides (Figure 4a). Interactions between the monomers mainly occur via two hydrophobic patches and some additional charged interactions (Figure 2b). Overall, the structure shows that each monomer consists of a central helix (α2, residues K1891-R1937) and N- and C-terminal helices folding back on this central helix.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/18675/elife-18675-fig4-v4.jpg)
 
-**Figure 4.:** Mical-3 folds into three α-helices, the central α-helix 2 and α-helices 1 and 3 folding back on the central helix. The dimer observed in the asymmetric unit is formed mostly by hydrophobic interactions involving the same hydrophobic patches in both monomers, and α-helices 2 and 3 from each monomer form a central 4-stranded coiled-coil.DOI: http://dx.doi.org/10.7554/eLife.18675.010
+**Figure 4.:** Mical-3 folds into three α-helices, the central α-helix 2 and α-helices 1 and 3 folding back on the central helix. The dimer observed in the asymmetric unit is formed mostly by hydrophobic interactions involving the same hydrophobic patches in both monomers, and α-helices 2 and 3 from each monomer form a central 4-stranded coiled-coil.
 
 The completely α-helical fold of this protein is common to many Rab effector proteins and most of them bind the interacting Rab proteins via two α-helices (Mott and Owen, 2015). In order to test whether this is also true for the bMERB domains, we screened for crystallization conditions of bMERB:Rab complexes. Well diffracting crystals were found using the RBD of Mical-cL (residues 534–683) in complex with different Rab proteins (Rab1, Rab8 and Rab10). All structures were solved using a single chain of Mical-3 and the structure of Rab1 (pdb id 3nkv) or Rab8 (pdb id 4lhw) as search models for molecular replacement (the data collection and refinement statistics are shown in Table 2).
 
-In all structures (Rab1:Mical-cL, Rab8:Mical-cL and Rab10:Mical-cL) we found one Rab protein bound to one molecule of Mical-cL (
+In all structures (Rab1:Mical-cL, Rab8:Mical-cL and Rab10:Mical-cL) we found one Rab protein bound to one molecule of Mical-cL (Figure 5a), in agreement with the previous observations that all Rab proteins tested bind only one site in Mical-cL. Most interactions were visible between the Rab proteins and α-helix 3 of Mical-cL with some additional contributing residues from α-helix 2, forming extensive contacts involving residues within switch I and II of the Rab proteins (Figure 5b). In all cases, hydrophobic interactions between the hydrophobic patch II in Mical-cL and residues from Rabs forming a hydrophobic pocket (residues Ile43, Phe70 and Ile73 in Rab8) and a triad of aromatic amino acids (Phe45, Trp62, Tyr77 in Rab8) known from all Rab:effector complexes solved to date (Itzen and Goody, 2011) were also observed in the Rab:Mical-cL structures.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/18675/elife-18675-fig5-v4.jpg)
 
-**Figure 5.:** (a) A superposition of the complex structures of Rab1:Mical-cL, Rab8:Mical-cL, Rab10:Mical-cL and Rab1R8N:Mical-cL shows that Rabs bind Micals via their N-terminus (including RabSF1), RabSF2 as well as the switch regions (Rabs are shown in cartoon representation, switch I – red, switch II – blue, RabSF1 – orange, RabSF2, magenta; Micals are shown in cartoon representation and colored in dark green (Mical-cL interacting with Rab1), yellow (Mical-cL interacting with Rab8), light green (Mical-cL interacting with Rab10) or brown (Mical-cL interacting with Rab1R8N). The sequence alignments of different Rab proteins clearly shows that the interacting residues of Rab proteins with Micals (red residues) are highly conserved (orange residues) in Rab1 and Rab8 family members (Rab1a, Rab1b, Rab35, Rab8, Rab10, Rab13, Rab15), but not in other Rabs (below the black line). (b) In all structures of Rab proteins in complex with Mical-cL, the N-termini of the Rab proteins point towards a negatively charged patch of Mical-cL (Rabs are shown in cartoon representation as above; the surface of Mical-cL is colored by charge, red – negative charge, blue – positive charge). The sequence of the N-terminal residues of each Rab protein is shown below the corresponding structure: Whereas Rab1 contains a negatively charged glutamate at position 4, Rab8 and Rab10 contain one or two lysine residues at position 3 or at position 3 and 4, respectively. Consistently, the negatively charged N-terminus of Rab1 seems to repel α-helices 1 and 2 of Mical-cL and they adopt a conformation slightly further away from Rab1 compared to Rab8 and Rab10 (also see (a)). However, after mutating the 4 N-terminal residues of Rab1 to the corresponding sequence of Rab8 (the resulting chimera is called Rab1R8N), the structure of Rab1R8N:Mical-cL shows a similar conformation of α-helices 1 and 2 as in the structure of Rab8:Mical-cL. (c) Consistently, ITC measurements show that the affinity of binding increases approximately five-fold after mutating the N-terminal residues (Rab1:Mical-cL: KD = 5.2 µM; Rab1R8N:Mical-cL: KD = 1.1 µM; Rab8:Mical-cL: KD = 0.23 µM).DOI: http://dx.doi.org/10.7554/eLife.18675.011
+**Figure 5.:** (a) A superposition of the complex structures of Rab1:Mical-cL, Rab8:Mical-cL, Rab10:Mical-cL and Rab1R8N:Mical-cL shows that Rabs bind Micals via their N-terminus (including RabSF1), RabSF2 as well as the switch regions (Rabs are shown in cartoon representation, switch I – red, switch II – blue, RabSF1 – orange, RabSF2, magenta; Micals are shown in cartoon representation and colored in dark green (Mical-cL interacting with Rab1), yellow (Mical-cL interacting with Rab8), light green (Mical-cL interacting with Rab10) or brown (Mical-cL interacting with Rab1R8N). The sequence alignments of different Rab proteins clearly shows that the interacting residues of Rab proteins with Micals (red residues) are highly conserved (orange residues) in Rab1 and Rab8 family members (Rab1a, Rab1b, Rab35, Rab8, Rab10, Rab13, Rab15), but not in other Rabs (below the black line). (b) In all structures of Rab proteins in complex with Mical-cL, the N-termini of the Rab proteins point towards a negatively charged patch of Mical-cL (Rabs are shown in cartoon representation as above; the surface of Mical-cL is colored by charge, red – negative charge, blue – positive charge). The sequence of the N-terminal residues of each Rab protein is shown below the corresponding structure: Whereas Rab1 contains a negatively charged glutamate at position 4, Rab8 and Rab10 contain one or two lysine residues at position 3 or at position 3 and 4, respectively. Consistently, the negatively charged N-terminus of Rab1 seems to repel α-helices 1 and 2 of Mical-cL and they adopt a conformation slightly further away from Rab1 compared to Rab8 and Rab10 (also see (a)). However, after mutating the 4 N-terminal residues of Rab1 to the corresponding sequence of Rab8 (the resulting chimera is called Rab1R8N), the structure of Rab1R8N:Mical-cL shows a similar conformation of α-helices 1 and 2 as in the structure of Rab8:Mical-cL. (c) Consistently, ITC measurements show that the affinity of binding increases approximately five-fold after mutating the N-terminal residues (Rab1:Mical-cL: KD = 5.2 µM; Rab1R8N:Mical-cL: KD = 1.1 µM; Rab8:Mical-cL: KD = 0.23 µM).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/18675/elife-18675-fig5-figsupp1-v4.jpg)
 
-**Figure 5—figure supplement 1.:** (a) Schematic presentation of the interactions between Rabs and Mical-cL (Switch I and II are shown in red and blue respectively; RabSF1, RabSF2 and RabF1 are shown in orange, magenta and green; Hydrophobic interactions are indicated by black dashed lines, ionic interactions and h-bonds are indicated by orange dashed lines). (b) Mutating the four N-terminal residues of Rab1 (1-MNPE…) to the sequence corresponding to Rab8 (1-MAKT…) leads to increased binding of EHBPs: Whereas Rab1 does not form a complex with EHBP1L1 (left) and EHBP1 (second from the right), the chimeric protein Rab1R8N forms a complex with both (EHBP1L1, second from the left; EHBP1, right) as assessed by aSEC.DOI: http://dx.doi.org/10.7554/eLife.18675.012
+**Figure 5—figure supplement 1.:** (a) Schematic presentation of the interactions between Rabs and Mical-cL (Switch I and II are shown in red and blue respectively; RabSF1, RabSF2 and RabF1 are shown in orange, magenta and green; Hydrophobic interactions are indicated by black dashed lines, ionic interactions and h-bonds are indicated by orange dashed lines). (b) Mutating the four N-terminal residues of Rab1 (1-MNPE…) to the sequence corresponding to Rab8 (1-MAKT…) leads to increased binding of EHBPs: Whereas Rab1 does not form a complex with EHBP1L1 (left) and EHBP1 (second from the right), the chimeric protein Rab1R8N forms a complex with both (EHBP1L1, second from the left; EHBP1, right) as assessed by aSEC.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/18675/elife-18675-fig5-figsupp2-v4.jpg)
 
-**Figure 5—figure supplement 2.:** The main interacting helix (α3) in the structure of Rab10:Mical-cL adopts a very similar relative position as the main interacting helices of the effector proteins in the structures of Rab3:Rabphilin-3a (pdb 1ZBD) (Ostermeier and Brunger, 1999), Rab27:Slp2a (pdb 3BC1) (Chavas et al., 2008) and Rab27:Slac2-a (pdb 2ZET) (Kukimoto-Niino et al., 2008). Furthermore, a basic Arg and an acidic Asp are conserved in all structures (in Rab3:Rabphilin-3a, only the Arg is conserved) and contact the residues corresponding to Asp45 and Gln61 in Rab10.DOI: http://dx.doi.org/10.7554/eLife.18675.013
+**Figure 5—figure supplement 2.:** The main interacting helix (α3) in the structure of Rab10:Mical-cL adopts a very similar relative position as the main interacting helices of the effector proteins in the structures of Rab3:Rabphilin-3a (pdb 1ZBD) (Ostermeier and Brunger, 1999), Rab27:Slp2a (pdb 3BC1) (Chavas et al., 2008) and Rab27:Slac2-a (pdb 2ZET) (Kukimoto-Niino et al., 2008). Furthermore, a basic Arg and an acidic Asp are conserved in all structures (in Rab3:Rabphilin-3a, only the Arg is conserved) and contact the residues corresponding to Asp45 and Gln61 in Rab10.
 
 Interestingly, the Rab-binding interface in Mical-cL has a substantial overlap with the dimer interface observed in the structure of Mical-3 above. Additionally, even though all Mical constructs used have a similar molecular weight of ~18 kDa, whereas Mical-1 runs as an apparent monomer in aSEC and binding of a Rab protein induces a clear shift to higher molecular weight, both Mical-3 and Mical-cL run as apparent dimers in aSEC and binding of a Rab protein disrupts the dimer, thus not leading to a shift in retention time upon complex formation (Figure 2—figure supplement 1). It is however not clear at this point whether the dimer formation of Mical-3 and Mical-cL and the disruption of the dimer upon Rab-binding is of functional significance.
 
 The specificity of effector proteins towards certain Rab families is generally achieved via interaction with regions termed Rab subfamily motifs (RabSFs) 1–4 (Khan and Ménétrey, 2013; Moore et al., 1995; Pereira-Leal and Seabra, 2000). In the Rab:Mical-cL structures, we observed extensive interaction of Mical-cL with RabSF1 (Tyr6, Asp7, Leu9, Lys11 in Rab10) and (less interactions) with RabSF2 (Asp31, Ser40 in Rab10). Accordingly, the sequence alignment of different Rab proteins (Figure 5) shows strong conservation of the interacting amino acids within these motifs amongst Rab1 (Rab1a/b, Rab35) and Rab8 (Rab8a/b, Rab10, Rab13, Rab15) family members that interact with bMERB domains, but not for other Rab proteins (a comparative scheme of the residues involved in interactions in the different complexes is shown in Figure 5—figure supplement 1a). Since the interacting residues in the RabSF1 and RabSF2 regions are strongly conserved between both Rab1 and Rab8 families, this did not explain the observed preference of the RBD towards the Rab8 family. However, we observed that the main chain atoms of the N-terminal residues preceding the RabSF1 motif can be traced in the electron density and seem to interact with amino acids within α-helix 1 and 2 of Mical-cL, even though the electron density in this region did not allow a precise localization of the side chains. In contrast to the main interacting helix α3, which adopts a similar position in all three structures, we observed slightly different orientations of the α-helices 1 and 2, adopting a position slightly further away from Rab1 compared to Rab8 and Rab10 (Figure 5a). Interestingly, whereas Rab1 contains a glutamate near the N-terminus (Glu4), all Rab8 family members contain one or (in the case of Rab10) two lysine residues in this region that point towards a negatively charged patch in Mical-cL (Figure 5b). Additionally, Rab35 contains an Arg residue within this N-terminal region and also displays a slightly higher affinity towards Mical-cL compared to Rab1 (Figure 2—figure supplement 2). We therefore tested whether these N-terminal residues of the Rab proteins might determine the specificity of bMERB domains towards Rab8 and its homologues rather than Rab1. We constructed a chimera of Rab1 containing the 4 N-terminal aa of Rab8, thus exchanging the negatively charged glutamate for a positively charged lysine. The x-ray crystallographic structure of this Rab1 chimera (termed Rab1R8N) in complex with Mical-cL clearly showed that the helices 1 and 2 move closer and adopt a similar conformation as observed in the structures of Rab8:Mical-cL and Rab10:Mical-cL (Figure 5a). Additionally, ITC measurements showed that the chimera had an approximately five-fold increased binding affinity compared to Rab1 (Figure 5c). In contrast to Rab1, the chimera Rab1R8N bound both EHBP1 and EHBP1L1 in aSEC experiments (Figure 5—figure supplement 1b), thus clearly indicating that the N-terminus is important for the interaction and contributes to the observed specificity of bMERB domains towards Rab proteins.
 
-## The second Rab binding site has evolved by gene duplication
+### The second Rab binding site has evolved by gene duplication
 
-Stimulated by the evidence for two Rab binding sites in some bMERB domains (Mical-1, Mical-3 and EHBP1L1), we searched for crystallization conditions of these RBDs with Rabs in a 1:2 stoichiometry. Crystallization conditions were found using a complex of Rab10
+Stimulated by the evidence for two Rab binding sites in some bMERB domains (Mical-1, Mical-3 and EHBP1L1), we searched for crystallization conditions of these RBDs with Rabs in a 1:2 stoichiometry. Crystallization conditions were found using a complex of Rab101–175 and the RBD of Mical-1 (residues 918–1067), yielding crystals that diffracted to a resolution of 2.8 Angstrom at a synchrotron X-ray source and the resulting structure indeed showed two molecules of Rab10 bound to Mical-1 (Figure 6a). In addition to the binding site corresponding to the one previously observed in Mical-cL, an additional binding site was identified: Whereas this site is composed of the N-terminal half of the bMERB domain (α-helix 1 and the first half of α-helix 2), the Rab binding site observed in both Mical-1 and Mical-cL comprises the C-terminal half (second half of α-helix 2 and α-helix 3).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/18675/elife-18675-fig6-v4.jpg)
 
-**Figure 6.:** (a) The structure of Mical-1 in complex with Rab10 shows two molecules of Rab10 bound to Mical-1 at different sites. Whereas one Rab protein binds to α-helix 1 and the first half of α-helix 2 (Mical-1918-991, binding site 1, blue), the second molecule of Rab10 binds the second half of α-helix 2 and α-helix 3 (Mical-1994-1060, binding site 2, green). Upon superimposition of both binding sites, the strong similarity becomes obvious and the helices from both binding sites adopt very similar positions. Furthermore, the interactions are highly similar in both cases as can be seen in the close-up view on the right (similar Rab-interacting residues within binding site 1 and 2 are shown in blue and green, respectively). (b) The strong conservation of interacting residues within both halves of the Mical-1 bMERB domain can also be seen in the sequence alignment of the N- and C-terminal halves. Additionally, the alignment shows that α-helix 1 and the first half of α-helix 2 (binding site 1) correspond to the second half of α-helix 2 and α-helix 3 (binding site 2), respectively (the secondary structure is indicated above and below the corresponding sequences, interacting and conserved residues within binding site 1 and 2 are highlighted in blue and green). (c) Whereas the whole bMERB domain of Mical-1 can bind two Rab molecules (left), deletion of either α-helix 1 (middle) or α-helix 3 (right) impairs binding to binding site 1 or 2, respectively. This effect could be shown both by aSEC and ITC (note the enthalpy-driven high-affinity binding site 2 and the entropy-driven lower-affinity binding site 1 that can be clearly distinguished, a schematic drawing of the different constructs is shown within the aSEC graphs). (d) Based on the observations made above, we propose that both binding sites must have evolved from a common ancestor by gene duplication of a 200 bp DNA fragment coding for the original gene product, a single α-hairpin. The fusion lead to the arrangement of the α-helices observed in bMERB domains, with the central α-helix 2 as a continuous connecting helix of both repeats, similar to the architecture of spectrin repeats.DOI: http://dx.doi.org/10.7554/eLife.18675.014
+**Figure 6.:** (a) The structure of Mical-1 in complex with Rab10 shows two molecules of Rab10 bound to Mical-1 at different sites. Whereas one Rab protein binds to α-helix 1 and the first half of α-helix 2 (Mical-1918-991, binding site 1, blue), the second molecule of Rab10 binds the second half of α-helix 2 and α-helix 3 (Mical-1994-1060, binding site 2, green). Upon superimposition of both binding sites, the strong similarity becomes obvious and the helices from both binding sites adopt very similar positions. Furthermore, the interactions are highly similar in both cases as can be seen in the close-up view on the right (similar Rab-interacting residues within binding site 1 and 2 are shown in blue and green, respectively). (b) The strong conservation of interacting residues within both halves of the Mical-1 bMERB domain can also be seen in the sequence alignment of the N- and C-terminal halves. Additionally, the alignment shows that α-helix 1 and the first half of α-helix 2 (binding site 1) correspond to the second half of α-helix 2 and α-helix 3 (binding site 2), respectively (the secondary structure is indicated above and below the corresponding sequences, interacting and conserved residues within binding site 1 and 2 are highlighted in blue and green). (c) Whereas the whole bMERB domain of Mical-1 can bind two Rab molecules (left), deletion of either α-helix 1 (middle) or α-helix 3 (right) impairs binding to binding site 1 or 2, respectively. This effect could be shown both by aSEC and ITC (note the enthalpy-driven high-affinity binding site 2 and the entropy-driven lower-affinity binding site 1 that can be clearly distinguished, a schematic drawing of the different constructs is shown within the aSEC graphs). (d) Based on the observations made above, we propose that both binding sites must have evolved from a common ancestor by gene duplication of a 200 bp DNA fragment coding for the original gene product, a single α-hairpin. The fusion lead to the arrangement of the α-helices observed in bMERB domains, with the central α-helix 2 as a continuous connecting helix of both repeats, similar to the architecture of spectrin repeats.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/18675/elife-18675-fig6-figsupp1-v4.jpg)
 
-**Figure 6—figure supplement 1.:** (a) Sequence alignments of the N- (blue) and C-terminal (green) halves of human bMERB domains made with Clustal Omega (Sievers et al., 2011). The residues in Mical-1 involved in binding Rab10 are shown in bold letters and the corresponding colors blue and green for binding site 1 and 2, respectively. In order to simplify comparison of the sequences, vertical lines are shown. The approximate positions of α-helices 1, 2 and 3 are also indicated. (b) Phylogenetic tree of the aligned sequences (the N- and C-terminal halves are again colored in blue and green, respectively). Uniprot accession IDs are Q8TDZ2 (Mical-1), Q8N3F8 (Mical-L1), Q8IY33 (Mical-L2), Q7RTP6 (Mical-3), Q6ZW33 (Mical-cL), Q8NDI1 (EHBP1) and Q8N3D4 (EHBP1L1).DOI: http://dx.doi.org/10.7554/eLife.18675.015
+**Figure 6—figure supplement 1.:** (a) Sequence alignments of the N- (blue) and C-terminal (green) halves of human bMERB domains made with Clustal Omega (Sievers et al., 2011). The residues in Mical-1 involved in binding Rab10 are shown in bold letters and the corresponding colors blue and green for binding site 1 and 2, respectively. In order to simplify comparison of the sequences, vertical lines are shown. The approximate positions of α-helices 1, 2 and 3 are also indicated. (b) Phylogenetic tree of the aligned sequences (the N- and C-terminal halves are again colored in blue and green, respectively). Uniprot accession IDs are Q8TDZ2 (Mical-1), Q8N3F8 (Mical-L1), Q8IY33 (Mical-L2), Q7RTP6 (Mical-3), Q6ZW33 (Mical-cL), Q8NDI1 (EHBP1) and Q8N3D4 (EHBP1L1).
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/18675/elife-18675-fig6-figsupp2-v4.jpg)
 
-**Figure 6—figure supplement 2.:** (a) Cartoon representation of the Rab10:Mical-1:Rab10 complex (centre) and selected close-up views (left and right). Left: Whereas Lys981 and Asn982 within the binding site (BS) 1 contact Asp45 and Gln61 in Rab10, the same residues in the other Rab10 molecule are contacted by Arg1044 and Asp1045 from BS2. Right: The hydrophobic residues Leu956BS1/Leu1011BS2, Val971BS1/Leu1034BS2, Leu975BS1/Val1038BS2 and Val978BS1/Val1041BS2 contacting Ile42Rab10, Ile44Rab10, Phe46Rab10, Trp63Rab10 and Ile74Rab10 (BS1, BS2 and Rab10 denote residues within binding site 1, binding site 2 or Rab10, respectively). (b) Schematic presentation of contacts between Rab10 and BS2 (left) or BS1 (right). Hydrophobic interactions are indicated by black dashed lines, ionic interactions and h-bonds are indicated by orange dashed lines.DOI: http://dx.doi.org/10.7554/eLife.18675.016
+**Figure 6—figure supplement 2.:** (a) Cartoon representation of the Rab10:Mical-1:Rab10 complex (centre) and selected close-up views (left and right). Left: Whereas Lys981 and Asn982 within the binding site (BS) 1 contact Asp45 and Gln61 in Rab10, the same residues in the other Rab10 molecule are contacted by Arg1044 and Asp1045 from BS2. Right: The hydrophobic residues Leu956BS1/Leu1011BS2, Val971BS1/Leu1034BS2, Leu975BS1/Val1038BS2 and Val978BS1/Val1041BS2 contacting Ile42Rab10, Ile44Rab10, Phe46Rab10, Trp63Rab10 and Ile74Rab10 (BS1, BS2 and Rab10 denote residues within binding site 1, binding site 2 or Rab10, respectively). (b) Schematic presentation of contacts between Rab10 and BS2 (left) or BS1 (right). Hydrophobic interactions are indicated by black dashed lines, ionic interactions and h-bonds are indicated by orange dashed lines.
 
 ![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/18675/elife-18675-fig6-figsupp3-v4.jpg)
 
-**Figure 6—figure supplement 3.:** Residues known from the structures of Rab:bMERB complexes to make contacts with Rab proteins are highlighted in dark green (binding site 1) or dark orange (binding site 2). Conserved residues in other bMERB domains are colored light green or light orange, respectively. The approximate position of α-helices 1, 2 and 3 are indicated above the sequences. Uniprot accession IDs are Q8TDZ2 (Mical-1), Q8N3F8 (Mical-L1), Q8IY33 (Mical-L2), Q7RTP6 (Mical-3), Q6ZW33 (Mical-cL), Q8NDI1 (EHBP1) and Q8N3D4 (EHBP1L1).DOI: http://dx.doi.org/10.7554/eLife.18675.017
+**Figure 6—figure supplement 3.:** Residues known from the structures of Rab:bMERB complexes to make contacts with Rab proteins are highlighted in dark green (binding site 1) or dark orange (binding site 2). Conserved residues in other bMERB domains are colored light green or light orange, respectively. The approximate position of α-helices 1, 2 and 3 are indicated above the sequences. Uniprot accession IDs are Q8TDZ2 (Mical-1), Q8N3F8 (Mical-L1), Q8IY33 (Mical-L2), Q7RTP6 (Mical-3), Q6ZW33 (Mical-cL), Q8NDI1 (EHBP1) and Q8N3D4 (EHBP1L1).
 
-Upon closer inspection and alignment, a strong similarity between the two Rab binding sites in Mical-1 became obvious, involving the same/similar residues both within the two different molecules of Rab10 as well as the two binding sites in Mical-1, respectively (Figure 6a). An alignment of the sequences of the corresponding N- and C-terminal halves of all different Micals (Mical-1, Mical-cL, Mical-3, Mical-L1 and Mical-L2), EHBP1 and EHBP1L1 (see Figure 6—figure supplement 1, the example for Mical-1 is shown in Figure 6b) with Clustal Omega (Sievers et al., 2011) highlights the striking similarity between the binding sites and shows the strong conservation of Rab-interacting residues within the two binding sites. A non-exhaustive list and a close-up view of several of these interactions is shown in Table 3 and Figure 6—figure supplement 2, respectively. It should be noted that use of the N- and C-terminal halves of only one of the bMERB domains was not sufficient for Clustal Omega alignment to converge and find the conserved residues within the separate halves. In contrast, the webserver HHrepID (Biegert and Söding, 2008) nicely predicted and aligned the two repeats present in Mical-1 with a p-value of 1.1–5.10.7554/eLife.18675.018Table 3.Non-exhaustive list of conserved interactions between Rab10 and the separate binding sites in Mical-1.DOI: http://dx.doi.org/10.7554/eLife.18675.018Mical-1Rab10Binding site 1Binding site 2Glu964Glu1030Arg70Lys981Arg1044Asp45Asn982Asp1045Gln61Leu956Leu1011Ile42Val971Leu1034Ile42Leu975Val1038Ile44, Ile74Val978Val1041Ile44, Phe46, Trp63Val985Ile1048Leu9, Phe46, Ile48
+Upon closer inspection and alignment, a strong similarity between the two Rab binding sites in Mical-1 became obvious, involving the same/similar residues both within the two different molecules of Rab10 as well as the two binding sites in Mical-1, respectively (Figure 6a). An alignment of the sequences of the corresponding N- and C-terminal halves of all different Micals (Mical-1, Mical-cL, Mical-3, Mical-L1 and Mical-L2), EHBP1 and EHBP1L1 (see Figure 6—figure supplement 1, the example for Mical-1 is shown in Figure 6b) with Clustal Omega (Sievers et al., 2011) highlights the striking similarity between the binding sites and shows the strong conservation of Rab-interacting residues within the two binding sites. A non-exhaustive list and a close-up view of several of these interactions is shown in Table 3 and Figure 6—figure supplement 2, respectively. It should be noted that use of the N- and C-terminal halves of only one of the bMERB domains was not sufficient for Clustal Omega alignment to converge and find the conserved residues within the separate halves. In contrast, the webserver HHrepID (Biegert and Söding, 2008) nicely predicted and aligned the two repeats present in Mical-1 with a p-value of 1.1–5.
+
+**Table 3.**
+ Non-exhaustive list of conserved interactions between Rab10 and the separate binding sites in Mical-1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Mical-1</th>
+      <th>Rab10</th>
+    </tr>
+    <tr>
+      <th>Binding site 1</th>
+      <th>Binding site 2</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Glu964</td>
+      <td>Glu1030</td>
+      <td>Arg70</td>
+    </tr>
+    <tr>
+      <td>Lys981</td>
+      <td>Arg1044</td>
+      <td>Asp45</td>
+    </tr>
+    <tr>
+      <td>Asn982</td>
+      <td>Asp1045</td>
+      <td>Gln61</td>
+    </tr>
+    <tr>
+      <td>Leu956</td>
+      <td>Leu1011</td>
+      <td>Ile42</td>
+    </tr>
+    <tr>
+      <td>Val971</td>
+      <td>Leu1034</td>
+      <td>Ile42</td>
+    </tr>
+    <tr>
+      <td>Leu975</td>
+      <td>Val1038</td>
+      <td>Ile44, Ile74</td>
+    </tr>
+    <tr>
+      <td>Val978</td>
+      <td>Val1041</td>
+      <td>Ile44, Phe46, Trp63</td>
+    </tr>
+    <tr>
+      <td>Val985</td>
+      <td>Ile1048</td>
+      <td>Leu9, Phe46, Ile48</td>
+    </tr>
+  </tbody>
+</table>
 
 Consistent with the localization of the two separate binding sites within the N-terminal and the C-terminal half of the bMERB domain, respectively, deletion constructs lacking either α-helix 1 (Mical960–1067) or α-helix 3 (Mical-1918–1020) displayed a clear 1:1 stoichiometry of Rab binding both in aSEC and ITC experiments (Figure 6c). Furthermore, the ITC data allowed us to clearly allocate the high affinity binding to the C-terminal binding site and the lower affinity binding to the N-terminal binding site.
 
@@ -157,27 +441,27 @@ In the last part of the study, we have shown that the two binding sites share a 
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 Rab proteins were expressed and purified as described previously (Rab1 [Schoebel et al., 2009] and other Rab proteins [Bleimling et al., 2009]) and preparatively loaded with GppNHp (Guanosine-5’-[β-γ-Imido]-triphosphat) for interaction studies with their effector proteins. For this purpose, the proteins were incubated in the presence of 5 mM EDTA, 5–10% glycerol, three-fold molar excess of GppNHp over the Rab protein and 0.5 units alkaline phosphatase per mg Rab protein for 2 hr at 20°C or at 4°C overnight. Subsequently the proteins were purified via gel filtration in a buffer containing 20 mM Hepes pH 7.5, 50 mM NaCl, 2 mM DTE, 2 mM MgCl2 and 10 µM GppNHp. bMERB domains (amino acid boundaries and Uniprot accession IDs are shown in Figure 6—figure supplement 3) were cloned into a modified pET19 expression vector and proteins were expressed in E. coli BL21 DE3 RIL cells (growth at 37°C to OD600 nm = 0.8–1.0, stored at 4°C for 30 min, expression was induced by addition of 0.3–0.5 mM IPTG and cells were grown for 14–18 hr at 20°C). Subsequently the proteins were purified by Ni2+-affinity chromatography, cleavage of the His6-tag with TEV-protease and a second Ni2+-affinity purification. Final purification was achieved by gel filtration (Rabs: 20 mM Hepes pH 7.5, 50 mM NaCl, 2 mM DTE, 2 mM MgCl2, 10 µM GDP or GppNHp; Micals: 20 mM Hepes pH 7.5, 50 or 100 mM NaCl, 2 mM DTE). In order to express the selenomethionine labeled version of the coiled coil domain of Mical-3, the methionine biosynthesis inhibition method (Van Duyne et al., 1993) was used. The labeled protein was purified as described above. FTase and GGTase I were purified as described previously (Dursina et al., 2006; Kalinin et al., 2001).
 
 For prenylation, EHBP11047-1231/EHBP1L11340-1523, substrate (farnesyl pyrophosphate (FPP) or geranylgeranyl pyrophosphate (GGPP); Sigma) and prenyltransferase (FTase or GGTase I) were mixed in a 1:5:0.5 ratio in buffer containing 25 mM Hepes pH 7.2, 40 mM NaCl and 2 mM MgCl2 and incubated for 3 hr at room temperature. To check the extent of prenylation, samples were analyzed by ESI-MS.
 
-## Analytical size exclusion chromatography
+### Analytical size exclusion chromatography
 
 Complex formation of Rab proteins preparatively loaded with GppNHp and the bMERB effector domains was assessed by analytical size exclusion chromatography (aSEC). The effector domains were used at a concentration of 113 µM, Rab proteins were used at concentrations of 130 µM (Rab:effector stoichiometry of 1.2:1), 180 µM (1.6:1) or 250 µM (2.2:1) and 30 µl of the protein solutions were injected into a Superdex S75 10/300 GL gel filtration column (flow rate 0.5 ml/min, detection of absorption at 280 nm, buffer: 20 mM Hepes pH 7.5, 50 mM NaCl, 2 mM DTE, 2 mM MgCl2).
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 Protein-protein interaction was studied by ITC using an iTC200 microcalorimeter (MicroCal). Measurements were performed in buffer containing 20 mM Hepes pH 7.5, 50 mM NaCl, 2 mM MgCl2 and 1 mM tris (2-carboxymethyl) phosphine (TCEP) at 25°C and for every experiment a technical replicate was performed. 400 µM Rab was titrated into the cell containing 20–40 µM of Mical. Data were analyzed with Origin (Version 7.0, MicroCal).
 
-## X-ray crystallography
+### X-ray crystallography
 
 Initial crystallization conditions for single effector proteins and all protein complexes described here were determined with the JSG Core I-IV, Pact and Protein Complex suites from Qiagen. The sitting-drop vapor diffusion method was used, with a reservoir volume of 70 μl and a drop volume of 0.1 μl protein (15–25 mg ml−1) and 0.1 μl reservoir solution at 20°C. The best conditions were then optimized using the hanging-drop vapor diffusion method in order to obtain well diffracting crystals. The seleno-L-methionine labelled Mical-31841–1990 was finally crystallized in 0.1 M Tris pH 7.0 und 45 – 50% PEG 200 (protein concentration 5.5 – 11 mg/ml). Mical-cL534–683 in a 1 to 1 complex ratio with all tested Rab proteins crystallized in similar conditions. The complex with Rab1bFl was crystallized in 0.1 M bis-tris-propane pH 8.4–8.6, 0.2 M tri-sodium citrate and 20–22% (w/v) PEG 3350, with Rab8aFl in 0.1 M bis-tris-propane pH 8.3–8.7, 0.2 M tri-sodium citrate and 18–20% (w/v) PEG 3350 and finally with Rab10Fl in 0.2–0.3 M sodium acetate and 18–22% (w/v) PEG 3,350. The hybrid Rab1bR8N (chimera) in complex with Mical-cL534–683 was crystallized in 0.1 M bis-tris pH 7.5, 0.2 M sodium malonate and 20% (w/v) PEG3350. Mical-1918–1067 crystallized with Rab101-175 in a 1 to 2 ratio under the following conditions: 0.1 M imidazole pH 7.6–8.0 and 6–10% (w/v) PEG 8,000.
 
 Best diffracting crystals were flash-cooled in liquid nitrogen and diffraction data were collected on beamline X10SA at the Swiss Light Source (Paul Scherrer Institute, Villigen, Switzerland) and processed with XDS (Kabsch, 2010). The structure of Mical-31841–1992 was solved by the single anomalous diffraction method using data collected at the selenium absorption edge. Initial phases and an initial model were obtained with PHENIX AutoSol (Adams et al., 2010). All protein complex structures were solved by the maximum likelihood molecular replacement method using the structures of Mical-31841–1992, Mical-cL534–683, Rab1b (pdb id 3nkv) and Rab8a (pdb id 4lhw) as search models. The initial structure models were completed by hand in Coot (Emsley et al., 2010) and refined with phenix.refine (Adams et al., 2010) or Refmac5 (Murshudov et al., 1997) of the CCP4 package (Winn et al., 2011) using the TLS option. Data collection and refinement statistics, as well the Protein Data Bank accession numbers of each presented structure are summarized in Table 1.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 Rab constructs were cloned into pmCherry vector using the XhoI and BamHI restriction sites and to obtain active Rab mutants (Rab8Q67L, Rab10Q68L) quick change mutagenesis was performed. Further EHBP11047-1231, EHBP11047-1227 (missing the CaaX-box), EHBP1L11340-1523 and EHBP1L11340–1519 (missing the CaaX-box) constructs were cloned into pEGFP(C1) vector between EcoRI and SalI sites.
 

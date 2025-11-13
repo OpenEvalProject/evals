@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.46207.001 Self-assembly of ESCRT-III complex is a critical step in all ESCRT-dependent events. ESCRT-III hetero-polymers adopt variable architectures, but the mechanisms of inter-subunit recognition in these hetero-polymers to create flexible architectures remain unclear. We demonstrate in vivo and in vitro that the Saccharomyces cerevisiae ESCRT-III subunit Snf7 uses a conserved acidic helix to recruit its partner Vps24. Charge-inversion mutations in this helix inhibit Snf7-Vps24 lateral interactions in the polymer, while rebalancing the charges rescues the functional defects. These data suggest that Snf7-Vps24 assembly occurs through electrostatic interactions on one surface, rather than through residue-to-residue specificity. We propose a model in which these cooperative electrostatic interactions in the polymer propagate to allow for specific inter-subunit recognition, while sliding of laterally interacting polymers enable changes in architecture at distinct stages of vesicle biogenesis. Our data suggest a mechanism by which interaction specificity and polymer flexibility can be coupled in membrane-remodeling heteropolymeric assemblies.
+Self-assembly of ESCRT-III complex is a critical step in all ESCRT-dependent events. ESCRT-III hetero-polymers adopt variable architectures, but the mechanisms of inter-subunit recognition in these hetero-polymers to create flexible architectures remain unclear. We demonstrate in vivo and in vitro that the Saccharomyces cerevisiae ESCRT-III subunit Snf7 uses a conserved acidic helix to recruit its partner Vps24. Charge-inversion mutations in this helix inhibit Snf7-Vps24 lateral interactions in the polymer, while rebalancing the charges rescues the functional defects. These data suggest that Snf7-Vps24 assembly occurs through electrostatic interactions on one surface, rather than through residue-to-residue specificity. We propose a model in which these cooperative electrostatic interactions in the polymer propagate to allow for specific inter-subunit recognition, while sliding of laterally interacting polymers enable changes in architecture at distinct stages of vesicle biogenesis. Our data suggest a mechanism by which interaction specificity and polymer flexibility can be coupled in membrane-remodeling heteropolymeric assemblies.
 
 ## Introduction
 
@@ -42,11 +42,31 @@ We previously reported the crystal structure of Snf7 (Tang et al., 2015), which 
 
 ## Results
 
-## Mutations in the peripheral helix-4 of Snf7 induce cargo-sorting defects
+### Mutations in the peripheral helix-4 of Snf7 induce cargo-sorting defects
 
 Our structural analysis of Snf7 allowed us to specify helices 1, 2 and 3 as the core polymeric interface that drives longitudinal polymerization. Structure/function studies of the Drosophila Snf7 (Shrub) confirmed the existence of this interface in the polymer, showing nearly identical packing arrangement in the polymer (Tang et al., 2015; McMillan et al., 2016), despite some differences in the side-chain residues. Additionally, the structure of the similarly organized CHMP1B in its helical assembly with IST1 suggests that the same core interface drives ESCRT-III polymerization with an evolutionarily conserved mechanism of ESCRT-III assembly (McCullough et al., 2015; McCullough et al., 2018; Talledge et al., 2019).
 
 Helix-4 of Snf7 lies at the periphery of this core longitudinal interface (Figure 1A–1B) and stretches from residue ~120 to~150. In the crystal structure of Snf7core, which included residues 12–150, we observed that residues D124 to E138 are structured, while the rest of the amino acids are not visible. Helix-4 is mostly acidic in nature, with the acidic residues falling on one interface (Figure 1A, Figure 1—figure supplement 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig1-v2.jpg)
+
+**Figure 1.:** (A) Domain organization of Snf7, depicting the different helices (top). Bottom figure shows the sequence of helix-4, with the predicted helical motif highlighted with a box. Acidic residues are denoted in red, while cyan residues are basic amino acids. Bottom – structure of the helix-4 (from PDB 5fd7) in two orientations, highlighting the acidic residues on one surface. (B) Cartoon model of the polymeric arrangement of Snf7 in its linear form observed in the crystal lattice. (C) Canavanine sensitivity and Mup1-pHluorin flow-cytometry data (right) showing cargo-sorting/endocytosis defects of the helix-4 mutants of Snf7. Mup1-pHluorin data were collected 90 min after methionine addition. Error bars represent standard deviation from 3 to 7 independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Electrostatic depiction of the crystal lattice of Snf7 showing interaction between two laterally interacting strands of Snf7. Helix-4 (α4) is observed to be predominantly acidic in nature. (B) Sequence conservation of the helix-4 region of Snf7, with acidic residues highlighted in red.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Canavanine-sensitivity assay (A) and Mup1-pHluorin assay (B). In ESCRT mutants, the model membrane proteins are unable to be trafficked to the vacuole for degradation.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Canavanine sensitivity assay (A) and Mup1-pHluorin degradation analysis (B) of several charge mutations in helix-4 residues of Snf7. Arrows point to the most sensitive mutations. (C) Mup1-pHluorin flow cytometry data of the mutations in two different surfaces (figure on the right) of Snf7 helix-4. Error bars represent standard deviation from three independent experiments.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Electron microscopy (EM) images of Snf7 R52E and Snf7 R52E D131K mutations. Images on the far right are zoomed-in pictures. 10 μM Snf7 R52E and 10 μM Snf7 R52E D131K were used, incubated for 10 min on EM grids. (B) In vitro membrane-binding properties of Snf7 R52E and Snf7 R52E D131K. Experiments were performed with 200 nM of proteins and 0.5 mg/mL liposomes. Quantification on the right represent data from three technical replicates (three experiments with the same protein and lipid preparation samples). (C) Size-exclusion profiles of Snf7 R52E and Snf7 R52E D131K performed using an SD200increase column.
 
 We had previously observed that deleting helix-4 of Snf7 resulted in a defect in recruiting Vps24-GFP to endosomes, although we did not have a mechanistic understanding behind this phenotype (Henne et al., 2012). Interestingly, the previously solved cryo-EM structure of CHMP1B (which is the mammalian homolog of Did2) depicted extensive electrostatic contacts made by CHMP1B’s acidic residues of helices 4 and 5 with the basic helix-1 of IST1 (McCullough et al., 2015). The overall acidity of Snf7 helix-4 is conserved in the Snf7 orthologues of Saccharomyces cerevisiae, Homo sapiens, Mus musculus, Xenopus laevis, Drosophila melanogaster, Caenorhabditis elegans, and Schizosaccharomyces pombe (Figure 1—figure supplement 1B), which suggests an important role of the electrostatics mediated by these charged residues.
 
@@ -62,7 +82,7 @@ In our assays, we observed that mutations in residues D127, D131, E138 and E142 
 
 The effects of the helix-4 mutants that we have observed are not due to the instability of the mutated proteins. In in vitro assays using the mutation D131K, the protein behaves similarly to the non-mutated version. We have previously analyzed the activating mutation in Snf7 (R52E), as the mutation lowers the critical concentration for polymerization (Henne et al., 2012). This mutation allows us to observe polymers of Snf7 on electron microscopy grids and on lipid monolayers. The helix-4 mutant D131K (with R52E) is able to form polymers of Snf7 (Figure 1—figure supplement 4A). One important exception here was that the D131K mutant showed defects in its lateral interaction, as it preferentially makes thinner filaments (Figure 1—figure supplement 4A -inset). A similar fraction (~50%) of Snf7 bound to liposomes with both Snf7R52E and Snf7 R52E D131K proteins (Figure 1—figure supplement 4B). Furthermore, both proteins showed a similar size-exclusion chromatogram (Figure 1—figure supplement 4C). These analyses suggest that the helix-4 mutation does not adversely affect folding of Snf7.
 
-## Helix-4 mutations in Snf7 inhibit its interaction with Vps24
+### Helix-4 mutations in Snf7 inhibit its interaction with Vps24
 
 In the crystal lattice of Snf7core, the helix-4 residue D131 makes electrostatic contacts with helix-1 residues K21 and K25 in trans on a laterally interacting polymer strand (Figure 2—figure supplement 1A). In vivo, mutating K21 and K25 individually do not have any defect in cargo sorting, while the double mutation K21E K25E has a mild defect (~60% MVB function (Figure 2—figure supplement 1B–C). Although these data do not rule out the possibility that this interface is involved in Snf7-Snf7 lateral interaction, further analyses below suggest that this is an interface mimicking Snf7’s interaction with its partner Vps24.
 
@@ -70,15 +90,43 @@ The requirement of Snf7 to recruit Vps24 at endosomes has been well documented i
 
 First, we found that helices 1–4 of Snf7 can recruit VPS24-GFP to endosomes. However, deleting helix-4 or making specific mutations in helix-4 (D131K) reduced the recruitment (Figure 2A, Figure 2—figure supplement 2A). In subcellular fractionation experiments, the helix-4 mutant snf7D131K recruited ~5 fold lower amount of Vps24 than the wild-type protein in the P13 (endosome-enriched) fraction (Figure 2—figure supplement 2B). Similarly, in co-immunoprecipitation experiments, the amount of Snf7D131K bound to Vps24 was reduced by >10 fold compared to wild-type (Figure 2B). Furthermore, in in vitro lipid monolayer assays, the Snf7R52E D131K mutant was unable to form 3D helical spirals with Vps24 and Vps2 (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig2-v2.jpg)
+
+**Figure 2.:** (A) Helix-4 mutants fail to recruit Vps24-GFP. Vps24-GFP is present in endosomal dots in cells expressing SNF7 WT on a plasmid in a snf7Δ;Vps24-GFP strain, while with the mutation on Snf7, Vps24-GFP is more diffuse in the cytoplasm. (B) Coimmunoprecipitation experiments, immunoprecipitating Vps24 and blotting for either wild-type Snf7 or the mutant D131K. (C) Electron microscopy assay on lipid monolayers, depicting co-assembly of Snf7 R52E with Vps24 and Vps2 into helices. Snf7 R52E D131K fails to form similar structures. Experiments were done with 1 μM of each protein incubated for 1 hr on lipid monolayers. (D) ‘In vivo’ glycerol-gradient experiments using a gradient of 10% to 40%, using various mutant strains annotated on the far-right. Western-blots were performed against Snf7 (left) or Vps24 (right).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Depiction of the contact between helix-4 of Snf7 with residues of helix-1, a trans polymer in the lattice. Zoomed-in box shows image of the D131 interacting with K21 and R25 of helix-1. (B) MVB-sorting (Mup-pHluorin degradation) of helix-1 mutants of Snf7. Error bars represent standard deviation from three independent experiments. (C) Canavanine sensitivity assay of helix-1 mutants of Snf7.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Vps24-GFP recruitment experiment in a snf7Δ;Vps24-GFP strain expressing different mutants of Snf7 on a plasmid. (B) Membrane-fractionation experiments with wild-type or mutant Snf7 D131K showing relative amounts of Vps24 pelleted to endosomal (P13) or cytosolic (S13) fractions.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A).The cryo-EM structure of CHMP1B-IST1 copolymer (PDB 3JC1, McCullough et al., 2015). CHMP1B is colored in orange-red and IST1 is depicted in cyan. (B).Zoomed-in image of the contact between the helix-1 residues of IST1 with helix-4 residues of CHMP1B. (C).Sequence alignment of a part of helix-4 of human CHMP1B and yeast Snf7. (D).Overlay of the IST1 structure (PDB 3FRR, Bajorek et al., 2009b) with the homology model of yeast Vps24 (yVps24). The crystal structure of CHMP3 (PDB 3FRT, Bajorek et al., 2009b) was used to create the homology model.
+
 To further analyze ESCRT-III polymerization in vivo, we used rate-zonal velocity gradient assays. In these assays, we found that the Snf7 helix-4 mutant phenocopies the vps24Δ strain. We previously observed that in cells lacking Vps24, Snf7 sediments to fractions containing higher percent glycerol, indicating formation of higher order polymers of Snf7 (Teis et al., 2008). This phenomenon most likely occurs because of the inability of vps24Δ to recruit the AAA-ATPase Vps4 to endosomes, eliminating Vps4-mediated disassembly of ESCRT-III polymers. In the helix-4 mutant snf7D131K strain, we observed a strikingly similar phenotype, as the Snf7D131K protein sediments towards the bottom of the gradient, indicating that snf7D131K VPS24 phenocopies SNF7 vps24Δ (Figure 2D).
 
 Altogether, these experiments provide strong evidence that the Snf7 helix-4 mutant is defective in recruiting Vps24.
 
-## Basic to acidic mutations in helix-1 of Vps24 rescue the defect of Snf7 helix-4 mutants
+### Basic to acidic mutations in helix-1 of Vps24 rescue the defect of Snf7 helix-4 mutants
 
 To identify parameters that can overcome the defect of Snf7 helix-4 mutations and therefore to characterize the interacting surface of Snf7 on Vps24, we performed unbiased mutagenesis of Vps24 to look for suppressors of snf7D131K. The snf7D131K mutant strain is canavanine sensitive, as ESCRT mutants are defective in endocytosis of Can1 (Figure 1—figure supplement 2A). Taking advantage of the canavanine sensitivity of snf7D131K, we used random mutagenesis to select mutants of vps24 that could rescue the defect of the Snf7 helix-4 mutation.
 
 This selection approach identified several mutations on the helix-1 surface of Vps24 (Q16E, K26E and K33E of Vps24) that were canavanine resistant in the snf7D131K background. Of these, Q16E mutation on Vps24 gave the strongest effect in suppressing the defect of snf7D131K, as ~70% of Mup1-pHluorin is sorted with the vps24Q16E mutation in the background of snf7D131K (Figure 3A, Figure 3—figure supplement 1A–1C). Interestingly, Vps24 mutants Q16E and R19E additionally also suppress the defects of other Snf7 mutations D127K and D142K (Figure 3A). Importantly, the expression levels of the Vps24 mutant proteins were similar to wild-type Vps24 (Figure 3—figure supplement 1B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig3-v2.jpg)
+
+**Figure 3.:** (A) Locations of random mutations on the homology model of Vps24 (top), obtained through canavanine-resistance selection with mutagenized Vps24. The crystal structure of CHMP3 (PDB 3FRT) was used to create the homology model. Figure on the top-right shows the electrostatics of the same model. Graphs below represent Mup1-pHluorin assays, where the mutations in helix-1 of Vps24 rescue the defects of the indicated Snf7 mutants. Error bars represent standard deviation from three to five independent experiments. (B) Ex vivo BMOE mediated crosslinking assays between cysteines in Snf7 and Vps24 at the indicated positions. Immunoblots were performed against Snf7 or HA (on Vps24). Arrows indicate crosslinked species. Quantification on the right represents three independent replicates of the fraction of Vps24 (mutant) crosslinked with Snf7 D131C.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mup1-pHluorin flow-cytometry assay with acidic charge mutations in helix-1 of Vps24 in the background of the snf7 D131K mutant. Error bars represent standard deviation from three independent experiments. (B) Expression levels of various helix-1 mutants of Vps24 used in this study. (C) Kinetic analysis of the suppression of helix-4 mutant snf7 D131K for cargo sorting defects of Mup1-pHluorin. Samples were collected for immunoblots every 20 min after addition of methionine.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Ex vivo BMOE mediated crosslinking assays between Snf7 D131C and Vps24-R19C at indicated cysteine mutations, in the presence of additional background mutations in Snf7 helix-4. Immunoblots were performed against HA tag on Vps24 (left) or with Snf7 (middle). The merged image is shown on the right panel, with Snf7 blot in red and the Vps24-HA blot in green. The bottom figure illustrates how the cis-crosslinking of Snf7 with Snf7 is possible with the D131C mutation. (B) BMOE mediated crosslinking between Snf7 D131C and mutants of Vps24-HA (as in Figure 3B). Here, the crosslinked Snf7:Snf7 species are clearly separated from the Snf7:Vps24 species.
 
 To study whether the residues of helix-1 of Vps24 lie in the vicinity of helix-4 of Snf7, we used ex vivo crosslinking approaches to crosslink these two proteins. Consistent with the idea that Snf7 helix-4 interacts with the helix-1 surface of Vps24, the sulfhydryl crosslinker BMOE crosslinks Snf7D131C to cysteine mutations in helix-1 of Vps24 (Vps24Q16C, Vps24R19C and Vps24K26C) (Figure 3B, Figure 3—figure supplement 2B). In these assays, we also see Snf7D131C:Snf7D131C crosslinks probably due to the fact that Snf7 spirals are flexible enough to bend and form crosslinks through the longitudinal surface (Figure 3—figure supplement 2A–B). The amount of crosslinked Vps24 decreases with additional mutations in the vicinity of D131 in Snf7 that reduce Vps24 binding (adding the D127K and E142K mutations - Snf7 D131C D127K and Snf7 D131C D127K E142K) (Figure 3—figure supplement 2A). With the presence of these D127K and E142K mutants, we see stronger Snf7-Snf7 crosslinking, consistent with the observation that in the absence of Vps24, Snf7 forms higher amounts of polymers (Figure 2D).
 
@@ -86,13 +134,21 @@ Comparison of our data with the cryo-EM structure of CHMP1B and IST1 (McCullough
 
 Overall, the specific point mutations on Vps24 that suppress the defect of Snf7 helix-4 mutations also provide additional evidence that helix-4 of Snf7 is involved in recruiting its partner Vps24. Helix-4 on Snf7 is located at the periphery of the core polymer, indicating that Vps24 binds at the sides of the core polymer of Snf7. The location of the suppressor mutations on Vps24 also points to helix-1 of Vps24 as the interaction surface. These data are supported by the crosslinking assay, and the comparison with an orthogonal ESCRT-III assembly structure of CHMP1B and IST1 (McCullough et al., 2015). The suppression of separate residues D127 and E142 in Snf7 that are >21 Å apart (D127 and E138 are 21 Å apart and residues beyond E138 are not visible in the structure) by Vps24 helix-1 residues indicated an interacting surface that possesses weaker specificity.
 
-## Charge inversion mutations in helix-4 are genetic suppressors of cargo-sorting defects
+### Charge inversion mutations in helix-4 are genetic suppressors of cargo-sorting defects
 
 Through mutagenesis approaches, we have previously been able to identify several Snf7 activating mutations that allowed us to decipher how Snf7 is activated by upstream nucleating factors (Tang et al., 2016). We hypothesized that we would be able to similarly identify parameters in Snf7 that would enhance the affinity of Snf7 to Vps24, using the snf7D131K mutant that has defects in Vps24 binding. Therefore, we additionally performed error-prone mutagenesis with Snf7 to look for intragenic suppressors of D131K. We mutagenized snf7D131K on a plasmid and selected for mutants that rescue the canavanine-sensitivity phenotype.
 
 Through this genetic selection approach, we found that several additional mutations in helix-4 of Snf7 that balanced the acidity of the helix rescued the defect of the D131K mutation. As described above, charge-inversion mutations on the helix-1 surface of Vps24 rescued the defect of the Snf7 helix-4 mutations. Consistent with this, the following pieces of data suggest that rescuing the acidic defect of the D131K mutation rescues functional phenotype of the Snf7 helix-4 mutations.
 
 We found that charge-inversion double mutations D131K R134D and D131K R149D in the helix-4 region of Snf7 completely sorts Mup1-pHluorin (~100%), unlike the defective single mutant D131K (Figure 4A–4B, Figure 4—figure supplement 1C). Additionally, the double mutant D127A D131A was also rescued by the additional inclusion of the mutations R134D or R149D (Figure 4—figure supplement 1A and C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig4-v2.jpg)
+
+**Figure 4.:** (A) Helical-wheel representation of the helix-4 region of Snf7, highlighting acidic (red) and basic (cyan) residues. (B) Canavanine-sensitivity (left) and Mup1-pHluorin assays (right). Opposite charge mutations (positive to negative charges) rescue cargo-sorting defects of Snf7 mutants. Error bars represent standard deviation from three independent experiments. (C) Similar experiments as in (B - right) showing Mup1-pHluorin degradation over time after addition of methionine with mutants snf7 D131K and snf7 D131K R149D, immunoblotting for pHluorin.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Helix-wheel on the left indicate the positions of the mutations analyzed in this figure. Canavanine sensitivity or Mup1-pHluorin assays with opposite charge mutations in helix-4. With D127A D131A mutations including the R134D or R149D, the endocytosis defect is restored. Mutating R134 or R149 to alanine also suppress the defect of D131K, and also suppress the mutant D127A D131A. Bottom-panel depict mutations in opposite surface of helix-4, which do not suppress the defects observed in endocytosis. Error bars represent standard deviation from three independent experiments. (B) Similar Can1 and Mup1 assays with mutations at the E142 location of Snf7. The same surface charge-rebalancing mutations (E142K R134D or E142K R149D) are completely functional in cargo-sorting assays. Error bars represent standard deviation from three independent experiments. (C) Mup1-pHluorin degradation over time after addition of methionine with mutants snf7 D127A D131A and snf7 D127A D131A R149D, blotting for pHluorin. Adding a Glu in place of Arg to helix-4 rescues the defect of the double mutation D127A D131A. (D) Quantification of the Mup1-pHluorin assays with mutations at the D127 position of Snf7, whose defect is rescued by charge-balancing mutations in the helix. Error bars represent standard deviation from three independent experiments.
 
 Upon further analysis, to our surprise, mutating the basic residue R134 or R149 to alanine also rescued the defect of the D131K or the double-mutant D127A D131A (Figure 4—figure supplement 1A). These observations hold true for both model cargos Can1 and Mup1.
 
@@ -102,7 +158,7 @@ These charge-inversion suppression effects were also observed with the defects o
 
 These data strongly argue that the overall acidic nature of the helix-4 surface of Snf7 is important for its function. Following the observations that mutations in helix-4 affect binding to Vps24, the overall acidity of helix-4 appears to mediate recruitment of Snf7’s partner Vps24 to the polymer.
 
-## Lateral cooperative interactions mediated by electrostatics drive ESCRT-III co-assembly
+### Lateral cooperative interactions mediated by electrostatics drive ESCRT-III co-assembly
 
 ESCRT-III assemblies are unique biological polymers, as they form membrane-bound spirals of different architectures that achieve a topologically unique form of membrane bending. Snf7 alone primarily forms flat spirals in vitro (Henne et al., 2012; Chiaruttini et al., 2015; Shen et al., 2014). Overexpression of CHMP4, the mammalian homologue of Snf7 produces flat spirals or 3D helical structures in cells, that are similar to the spirals observed in vitro (Hanson et al., 2008).
 
@@ -116,17 +172,45 @@ The activation mutant R52E predominantly forms laterally interacting filaments o
 
 To observe the earlier stages of copolymer assembly, in our assays, we used wild-type Snf7 in the presence of Snf7’s nucleator Vps20. With these assays, we observed predominantly single-stranded filaments of Snf7 (width of ~4–5 nm) (Figure 5). Under these conditions of earlier stages of polymer assembly, Snf7 filaments also do not form complete spirals (Figure 5). With the addition of Vps24 and Vps2, thicker filaments were formed, suggesting that Vps24 and Vps2 induce formation of laterally-interacting polymers, consistent with previous observations (Mierzwa et al., 2017). Importantly, the helix-4 mutant Snf7D131K is defective in inducing lateral bundles (Figure 5) with Vps24/Vps2, while the suppressor Vps24Q16E mutant forms a higher density of polymers and also partially rescues the bundling property.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig5-v2.jpg)
+
+**Figure 5.:** (A) Electron microscopy analysis of 10 μM Vps20, 1 μM Snf7 or (Snf7 D13K), 1 μM Vps24 (or Vps24 Q16E) and 1 μM Vps2. Experiments were done on lipid monolayers, with incubation of proteins for 1 hr. Painted lines on the middle-panel are guide to the eye to demonstrate differences in the thickness of the copolymers. The right panel shows hypothetical model of the structures of the polymers made from the different proteins.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** First column depicts spirals of 1 μM Snf7 R52E. Upon addition of 1 μM Vps24 (second column), the spirals remain 2-dimensional. 3D helices form with 1 μM Snf7 R52E, 1 μM Vps24 and 1 μM Vps2 (right column). Three different images of the polymers under each condition are shown. Images were collected after 10 min of incubation on lipid monolayers.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Snf7 R52E and Vps24 form 3D helices of different morphologies at higher concentrations (7 μM Snf7 R52E). Helix formation is more robust with the inclusion of all three proteins (bottom right). (B) ‘Helical’ structures of Snf7 R52E alone, which form at low frequency (Figure 5—figure supplement 2C). (C) Kinetic analysis of the assembly of Snf7 R52E, Vps24 and Vps2 at different concentrations and time. Quantification indicates percentage of images in which helices were observed. Quantification was performed with 50 images under each condition, with images taken at random spots on the grid.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Electron microscopy images of 500 nM Snf7 R52E protein on lipid monolayers at 5 and 10 min. With 1 μM Snf7 R52E, mostly bundles of polymers are seen at 10 min (right).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** A)Electron microscopy images of 10 μM Vps20, 1 μM Snf7 R52E, 1 μM Vps24 and 1 μM Vps2, incubated for one hour on lipid monolayers. B) Electron microscopy images of 5 μM GST-Vps25, 10 μM Vps20, 1 μM Snf7 (WT), 1 μM Vps24 and 1 μM Vps2, incubated for one hour on lipid monolayers.
+
 With wild-type Snf7, even with the inclusion of the nucleator Vps20, we do not observe helices of Snf7-Vps24-Vps2. With the activated mutant Snf7R52E, along with Vps24 and Vps2, the presence of Vps20 does not inhibit helix formation (Figure 5—figure supplement 4). These data suggest that Vps20 alone is insufficient to fully activate Snf7 in our in vitro assays. This most likely occurs because our in vitro protein Vps20 is not myristoylated, as it is normally in vivo (Teis et al., 2010). Snf7 is activated by Vps20, and also by ESCRT-II (Henne et al., 2012). Adding an additional component in our assay – an ESCRT-II component (GST tagged Vps25), induces helicity (Figure 5—figure supplement 4), consistent with the idea that a higher level of activation of Snf7 in the in vitro assays is necessary to produce helices.
 
 Our data are most consistent with the model that Vps24 and Vps2 can laterally associate with Snf7 filaments to induce bundles of ESCRT-III at earlier times and lower activation threshold. Over time and at later stages of polymerization, ESCRT-III filaments mold into 3D helices that are more likely to be the mature polymers, structures that can generate the mechanical force important for vesicle-budding reactions. The lateral interactions are promiscuous and likely flexible enough for the polymers to be able to constrict into different architectures.
 
-## In vivo analyses of cooperative assembly of Snf7, Vps24 and Vps2
+### In vivo analyses of cooperative assembly of Snf7, Vps24 and Vps2
 
 Our in vitro data imply that Vps24 and Vps2 cooperatively bind to the Snf7 filament, inducing bundling and architectural changes in the polymer. To analyze cooperative assembly of Snf7, Vps24 and Vps2 in vivo, we utilized the property of helix-4 mutants’ cargo-sorting defects.
 
 We reasoned that if simply the affinity of Vps24 to Snf7 is reduced in the charge-inversion mutants of helix-4 in Snf7, we would be able to partially restore this interaction, and the in vivo defects in cargo-sorting, by over-expressing Vps24.
 
 Since Vps24 and Vps2 get cooperatively recruited by Snf7 (Babst et al., 2002b; Mierzwa et al., 2017; Adell et al., 2017), the same effect should be observed with overexpressed Vps2 as well, as the bound fraction of the complex of Vps24/Vps2 would increase upon overexpression of one of the components (Figure 6C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig6-v2.jpg)
+
+**Figure 6.:** (A) Mup1-pHluorin endocytosis data after 90 min of methionine addition, showing overexpression of Vps24 or Vps2 rescuing the defect of the helix-4 mutant D131K. 2-fold overexpression (O.E.) corresponds to expressing either Vps24 or Vps2 with a CEN plasmid, while ~16 fold represents experiments performed with these genes on a CMV promoter with a tet-off operator. Error bars represent standard deviation from three to five independent experiments. (B).Overexpression of Vps24 (on a plasmid with a tet-off operator), rescues Mup1-pHluorin degradation defect of the D131K mutant, as shown immunoblotting of pHluorin over 60 min of methionine addition. (C).Model showing the hypothesized recruitment of Vps24/Vps2 in helix-4 mutant under normal (left) or under overexpressed (right) Vps24/Vps2 conditions.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Expression levels of Vps24 at endogenous, overexpressed with CEN plasmid, or overexpressed with the pCM189 plasmid which contains a CMV promoter and a tet-off operator.(B) Cartoon depiction of the locations of the Snf7 mutants used in the subsequent experiments. R25, H29 and K36 fall on helix-1 of Snf7, which make contacts with the Snf7 helix-3 residues E95, E105 and E109 in the longitudinal polymeric arrangement of Snf7. (C) Mup1-pHluorin degradation experiments, blotting for pHluorin over time, with Snf7 mutants, while overexpressing Vps24. (D) Mup1-pHluorin flow-cytometry data under overexpression of Vps24 or Vps2 with Snf7 mutants. Error bars represent standard deviation from three independent experiments.
 
 We expressed Vps24 and Vps2 under two different expression systems (Figure 6—figure supplement 1A). Over-expressing Vps24 or Vps2 by ~2 fold (using a CEN plasmid) did not rescue the defect of the Snf7 helix-4 mutant. However, overexpressing Vps24 or Vps24 by ~16 fold (with a CMV promoter under a tet-off operator) completely rescued the snf7D131K defect (Figure 6A–B).
 
@@ -156,6 +240,14 @@ Charge-inversion mutations in helix-1 of Vps24 rescue the defects exhibited by d
 
 Interestingly, we observe that the overall electrostatics on one surface of helix-4 in Snf7 is important for this recognition, rather than a consensus sequence on that surface. The suppressor mutations in Vps24 lie in the basic helix-1 region. We note that our data point to the R19/K26 region of Vps24 as the binding surface for Snf7, and do not directly show that the binding surface may be spread out throughout the basic helix-1 region. However, it is possible that on a polymeric surface of Vps24 (and Vps2) where Snf7 is bound, each Snf7 monomer may engage with the same location of Vps24 (R19) through different residues of helix-4 (D127, D131, E142) (Figure 7A). This continuous charge-charge interaction among the polymers of ESCRT-III may be an important aspect of ESCRT-III co-assembly (McCullough et al., 2015; McCullough et al., 2018). On the one hand, multiplication of electrostatic interactions among each protomer would enhance the avidity of Snf7 to Vps24/Vps2 in the context of the polymer (Figure 7B). On the other hand, the uninterrupted presentation of charges as a binding surface would allow Vps24/Vps2 to adopt different positions along the filament (Figure 7A–B, Figure 8A). As the polymer constricts, the lack of a requirement for residue-to-residue specificity would enable Vps24/Vps2 to bind at different locations, allowing the polymers to adapt, by sliding side-by-side, to different curvatures in the polymer (Figure 7A–C, Figure 8A).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig8-v2.jpg)
+
+**Figure 8.:** (A) Figure on the left depicts a model of ESCRT-III spirals budding membranes by utilizing different curvatures. Figure on the right depicts how laterally associating polymers can reposition themselves utilizing electrostatics at different curvatures. In the figures, H represent a position of high curvature and L represents a position of low curvature. (B) Model depicting different steps of the simultaneous recruitment of Snf7/Vps24/Vps2, which form spirals that drive membrane budding reactions.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/46207/elife-46207-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Hypothetical model of how the Snf7/Vps24/Vps2 polymers engage membranes (right), compared to the structure-based model of CHMP1B-IST1 assembly (left). (B) Figure illustrates a hypothetical model of how the helices of Snf7 and its partners may be arranged on the membrane. Note that only helices 1–3 are shown in this model. Arrows point to the different positions of helices along the polymer.
+
 In the possible scenario that the dynamics of Snf7-Snf7 assembly and Vps24/Vps2 assembly are different (i.e. the on and off rates of Snf7 to the polymer is different from that of Vps24/Vps2) (Chiaruttini and Roux, 2017), the heteropolymer would further be able to embrace variable architectures capable of encircling cargo. Additionally, our crystal structure suggests that helix-4, and most likely the C-terminal region, which lie at the periphery of the polymer and away from it, can also exist in different conformations (Tang et al., 2015). An ability to easily change conformations at the periphery of the polymer could additionally enable the polymer to change its architecture.
 
 Our data and the reported structure of CHMP1B/IST1 suggest that, similar to the core longitudinal assembly mechanism that are similar between these ESCRT-III proteins, the recognition of partners through helix-4 or the C-terminal peripheral region could be a general feature in ESCRT-III assembly. It is important to note that CHMP1B also contacts IST1 through the C-terminal regions of CHMP1B (Talledge et al., 2019). In the case of the Snf7-Vps24 interaction, we find that Vps24-GFP is recruited to endosomes even with a Snf7 construct in which the C-terminus (helices-5 and beyond) is deleted (Figure 2—figure supplement 2A; Henne et al., 2012). This could mean that the C-terminus of Snf7 contacts Vps24 only with a weak affinity and therefore we are unable to see an obvious effect in our cellular assays. It is also possible that the C-terminus of Snf7 does not contact Vps24. Since the topology of membrane vesicles created by the reported CHMP1B-IST1 copolymer and those created by Snf7-Vps24/Vps2 at endosomes are opposite to one another, further analyses of these two systems is necessary for us to fully understand the similarities and differences between them. One possibility on how these two systems could create opposite topologies while possessing similar heteropolymer contacts is provided in Figure 8—figure supplement 1. In this model, while CHMP1B is bound to the membrane and resides inside of the polymer helix, Snf7 could reside on the outside, with the membrane bound to Snf7.
@@ -170,58 +262,58 @@ Currently, structural analyses only depict an energetically stable complex with 
 
 ## Materials and methods
 
-## Yeast strains, plasmids and reagents
+### Yeast strains, plasmids and reagents
 
 Strains, plasmids and reagents used in this study are listed in the Key Resources table. Previously used strains, plasmids, reagents were from the following references (Robinson et al., 1988; Adell et al., 2017; Henne et al., 2012; Ghazi-Tabatabai et al., 2008; Tang et al., 2015; Tang et al., 2016; Buchkovich et al., 2013; Sikorski and Hieter, 1989; Garí et al., 1997; Babst et al., 1998) and are also listed and referenced to in the table.
 
-## Canavanine-sensitivity assays
+### Canavanine-sensitivity assays
 
 Canavanine-sensitivity spot plating assays were performed as described before (Lin et al., 2008). Mid-log cells were diluted back to an optical density (at 600 nm) of 0.1. 10-fold serial dilutions were made and the dilutions applied to plates with selective drop-out media with different concentrations of canavanine. Images of the plates were taken after three or more days. Experiments were performed at least twice in all cases.
 
-## Random mutagenesis
+### Random mutagenesis
 
 Canavanine resistance was used to select for mutations in Snf7 or Vps24 that function as suppressors of helix-4 mutant. To select for Vps24 mutants, a strain harboring a chromosomally integrated snf7D131K and vps24Δ was transformed with a plasmid library of randomly mutagenized VPS24. Random mutation was performed by error-prone PCR, as previously described (Tang et al., 2016), using primers annealing to the 5’ and 3’ ends of the VPS24 ORF. Suppressing mutations on Snf7 were similarly obtained, mutagenizing the whole ORF of snf7D131K on a plasmid and then transforming to a snf7Δ strain.
 
-## Mup1-pHluorin flow cytometry and immunoblotting
+### Mup1-pHluorin flow cytometry and immunoblotting
 
 Flow cytometry analysis of Mup1-pHluorin endocytosis and trafficking was performed as described (Henne et al., 2012). Briefly, mid-log cells were treated with 20 μg/mL of L-methionine for 90 min. Cells were spun down and resuspended in synthetic dextrose complete minimal medium (SCD). Mean fluorescence of 100,000 cells were recorded using a BD Accuri C6 Flow Cytometer. % MVB sorting was calculated by normalizing the WT sorting to 100% and mutant (ESCRT deletion) to 0%. At least three independent experiments were performed to calculated standard deviation.
 
 Western blots of Mup1-pHluorin was performed as follows. 5 OD equivalent of cells treated with 20 μg/mL methionine were collected by centrifugation at different time points at 4000 xg. Centrifuged cells were then washed with 1 mL of cold H2O, and then centrifuged again at 4000 xg. Cells were then precipitated with 10% TCA for >1 hr on ice. Cells were washed twice with 1 mL of acetone, resuspending pellets between washes by bath sonication. Pelleted cells were then lysed in 100 μL lysis buffer (50 mM Tris-HCl, pH 7.5, 8 M urea, 2% SDS, and 1 mM EDTA) by bead beating for 10 min. 100 μL of sample buffer (150 mM Tris-Cl, pH 6.8, 8 M urea, 10% SDS, 24% glycerol, 10% v/v βME, and bromophenol blue) was then added to the sample and vortexed for 10 min. After centrifugation for 6 min at 21,000 xg, supernatant was loaded on an SDS-PAGE gel and transferred onto a nitrocellulose membrane. Rabbit polyclonal GFP antibody (Torrey Pines) was used to detect pHluorin. Imaging of the western blots was performed using an Odyssey CLx imaging system and analyzed using the Image Studio Lite 4.0.21 software (LI-COR Biosciences).
 
-## Sequence alignment and structural analyses
+### Sequence alignment and structural analyses
 
 Snf7 sequences were aligned using Mafft (Katoh et al., 2002). Jalview (Clamp et al., 2004) was used to visualize the sequences. Homology modeling of the Vps24 structure was performed using Modeller (Fiser and Sali, 2003), using the CHMP3 (PDB 3FRT) structure as the template. Helical wheel analysis was performed using Heliquest (Gautier et al., 2008). Structures were viewed and analyzed using UCSF Chimera (Pettersen et al., 2004).
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 1 mL of mid-log cells expressing VPS24-GFP were centrifuged for 2 min at 10,000 xg, and resuspended in 25 mL of synthetic media. Microscopy was performed on a Deltavision Elite system with an Olympus IX-71 inverted microscope, using a 100X/1.4 NA oil objective. Image extraction and analysis were performed using the FiJi software (Schindelin et al., 2012).
 
-## Subcellular fractionation
+### Subcellular fractionation
 
 15 ODs of mid-log cells were harvested and spheroplasted using zymolyase treatment as previously described (Buchkovich et al., 2013). Spheroplasts were lysed by douncing on ice in 50 mM Tris pH 7.5, 200 mM sorbitol with protease inhibitors. Lysates were centrifuged at 500 xg at 4°C. This supernatant (S5) was then centrifuged at 13,000 xg for 10 min at 4°C, which provided us P13 (endosome enriched pellet fraction at 13,000 xg) and S13 (supernatant fraction). The P13 and S13 fractions were then precipitated in TCA, and immunoblotted as described above for Mup1-pHluorin.
 
-## Co-immuoprecipitation
+### Co-immuoprecipitation
 
 30 ODs of mid-log cells were harvested and spheroplasted as done for subcellular fractionation experiments. Lysis was performed by douncing in 50 mM Hepes pH 7.5, 200 mM Sorbitol, 150 mM NaCl, 1 mM EDTA, 1 mM DTT and 1%-TritonX-100. Lysate was then centrifuged at 13,000 xg. Supernatant was then treated with protein G beads (Dynabeads) for 30 min at 4°C to clear background binding to beads. After centrifugation at 500 xg for 10 min, supernatant was then incubated with anti-Vps24 antibody (at 1/250 dilution) for 2 hr. Protein G beads were then used to pull-down Vps24 bound complexes. After washing three times with PBS buffer at 20 fold excess volume of the beads, the beads were treated with sample buffer (150 mM Tris-Cl, pH 6.8, 8 M urea, 10% SDS, 24% glycerol, 10% v/v βME, and bromophenol blue). After SDS-PAGE, western blots were performed, and anti-Snf7 and anti-Vps24 antibodies were used to probe bound complexes.
 
-## Crosslinking
+### Crosslinking
 
 30 ODs of cells were harvested in 50 mM Hepes pH 7.5, 200 mM Sorbitol, 150 mM NaCl, 1 mM EDTA, fresh 0.5 mM DTT and Roche’s complete protease inhibitor. Lysis was performed by bead-beating (Zirconia-Silicon beads) twice for 30 s, with 30 s intervals on ice. After lysis, the lysate was supplemented with 1% of Triton-X 100 and incubated at 4°C for 20 min. Lysate was cleared by centrifugation at 500 xg for 5 min at 4°C. Supernatant was treated with 3.3 mM of BMOE (bismaleimidoethane) and 10 mM EDTA and incubated at 4°C for 10 min. Reaction was stopped using 10 mM of DTT and the solution then treated with 10% of TCA. TCA precipitation was performed for >1 hr. Western blots were performed as described above.
 
-## Glycerol gradient fractionation
+### Glycerol gradient fractionation
 
 30 ODs of cells were harvested in PBS buffer, fresh 0.5 mM DTT and Roche’s complete protease inhibitor. Lysis was performed by bead-beating (Zirconia-Silicon beads). Glycerol gradients were made using Gradient Master 108 from Biocomp. Centrifugation was performed at 100,000 xg for 4 hr at 4°C. 1 mL fractions were collected from the solutions, TCA precipitated and immunoblotted as described above.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Snf7, Vps24 and Vps2 and Vps20 proteins were expressed from a modified pET28a(+) vector expressing His6-SUMO protein at the N-terminus. GST-Vps25 was expressed using the pGEX6p1 vector. Expression of ESCRT-III was performed using the Rosetta E. coli strain. Snf7, Vps20, Vps24 and GST-Vps25 were constructs were expressed at 37°C for 4 hr by inducing with 0.5 mM IPTG. Snf7-D131K and Vps2 were expressed at 26°C overnight, inducing with 0.5 mM IPTG.
 
 Harvested cells were lysed by sonication. Affinity purification of the proteins through the His6 tag was performed using Co2+ talon resin. The SUMO tag was cleaved overnight at 4°C on the beads using ULP1 protease. Eluate was subjected to a Hi-trap Q Seph FF column. The anion exchange eluate was concentrated and ran through a Superdex 200increase column. GST-Vps25 was purified using GSH-sepharose beads, eluted using glutathione, concentrated and ran through a Superdex 200 column. Eluted proteins were concentrated, flash-frozen in liquid nitrogen and stored at −80°C.
 
-## Liposome sedimentation
+### Liposome sedimentation
 
 Liposomes were made using a mixture of 60% POPC and 40% POPS. Lipids in chloroform were mixed at the appropriate molar ratios and dried overnight under vacuum. Lipids were hydrated for 3 hr and resuspended in 25 mM Hepes 7.5, 150 mM NaCl, to make a lipid concentration of 1 mg/mL. Large unilamellar vesicles (LUVs) were made using extrusion filters of 800 nm pores from Avanti Polar Lipids. Proteins were added to the liposomes at a final concentration of 200 nM and a final lipid concentration of 0.5 mg/mL. After incubation for 30 min at room temperature, centrifugation was performed in a TLA-100 (Beckman Coulter) at 70,000 rpm for 10 min at 4°C. SDS-PAGE was used to determine fraction of protein pelleted with the liposomes.
 
-## Lipid monolayers formation and electron microscopy
+### Lipid monolayers formation and electron microscopy
 
 Lipid monolayers were formed using a ratio of 60% POPC, 30% POPS and 10% PI3P in chloroform. Monolayers were formed above an aqueous buffer solution, and lipids were injected underneath the monolayer, using a home-made Teflon apparatus, as described before (Henne et al., 2012). Carbon-coated electron microscope grids were applied to the top of the aqueous solution simultaneously with the application of proteins. Incubation of proteins on the monolayers/grids were performed at various times as indicated in the text. Grids were then stained with 2% ammonium molybdate and imaged on FEI Morgagni 268 TEM.

@@ -42,27 +42,59 @@ Here we show that hyperpolarization of CR neurons by Kir2.1-dependent expression
 
 ## Results
 
-## Subsets of CRs die in an activity-dependent manner
+### Subsets of CRs die in an activity-dependent manner
 
 The ΔNp73cre/+ mouse line targets approximately 80% of CRs, namely hem-CRs (Wnt3a lineage) and SE-CRs (Tissir et al., 2009; Griveau et al., 2010; Yoshida et al., 2006). ΔNp73-CRs, but not Wnt3a-derived hem-CRs, were shown to be eliminated postnatally via Bax-dependent death, indicating that SE-CRs undergo apoptosis. However, the trigger of such apoptosis or the mechanisms regulating the death of other CR populations are still unknown (Ledonne et al., 2016). To decipher whether activity might regulate the death of specific subsets of CRs in vivo, we first overexpressed the hyperpolarizing channel Kir2.1 (R26Kir2.1mcherry/+) (Moreno-Juan et al., 2017) using the ΔNp73cre/+ line. Tracing of CRs at several postnatal stages in control and Kir2.1-expressing mice was performed using DsRed immunostainings to visualize tdTomato and mcherry reporters, respectively. We found that the density of CRs in the somatosensory barrel cortex was unchanged in these animals at postnatal day 7 (P7), that is before CRs undergo massive cell death (Figure 1A and B). In contrast, Kir2.1 channel overexpression in ΔNp73-CRs resulted in an increase of CRs with respect to controls in the somatosensory cortex at P15 and P25 (Figure 1A and B). Importantly, using whole-cell recording, we checked that rescued CRs were, as expected, hyperpolarized and displayed a decrease in the input resistance without exhibiting changes in action potential properties at both P15 and P25 (Figure 1—figure supplement 1A-C). Biocytin-filling and immunostaining further revealed that most morphological properties were preserved in Kir2.1-expressing CRs, apart from a reduced soma at P25 (Figure 1—figure supplement 1D). In particular, rescued CRs displayed similar branching length in LI (Figure 1—figure supplement 1B and E) and co-expressed Reelin (Reln) from P7 to P25 (Figure 1—figure supplement 1F and G). Taken together, these experiments show that hyperpolarization of ΔNp73-CRs does not drastically alter cardinal morphological features of CRs but prevents their complete elimination.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50503/elife-50503-fig1-v1.jpg)
+
+**Figure 1.:** (A) Confocal images of cortical sections from P7, P15 and P25 ΔNp73cre/+;R26mT/+ controls (left) and ΔNp73cre/+;R26Kir2.1/+ mutants (right) stained for DsRed (red) and Hoechst (blue). Arrowheads indicate DsRed+ CRs at P15 and P25. (B) Quantification of CR density (CRs/mm3) at the pial surface in the somatosensory (S1) cortex (P7: n = 6 for controls and n = 4 for mutants, p=0.716; P15: n = 4 for controls and n = 10 for mutants, p=0.001; P25: n = 3 for controls and n = 8 for mutants, p=0.006). (C) Confocal images of cortical sections from P7, P15 and P25 Wnt3acre/+;R26mT/+ controls (left) and Wnt3acre/+;R26Kir2.1/+ mutants (right) stained for DsRed (red) and Hoechst (blue). Arrowheads indicate DsRed+ CRs at P15 and P25. For simplicity, arrowheads were not displayed at P7, as there are too many CRs at this stage. (D) Quantification of CR density (CRs/mm3) at the pial surface in the somatosensory (S1) cortex (P7: n = 5 for controls and n = 6 for mutants, p=0.2251; P15: n = 4 for controls and n = 3 for mutants, p=0.771; P25: n = 3 for controls and n = 3 for mutants, p=0.813). Mann-Whitney U Test. Scale bar represents 200 μm. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 1—figure supplement 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50503/elife-50503-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic representation of the electrophysiological recordings from ΔNp73cre/+ CRs. (B) Biocytin-filled CRs in ΔNp73cre/+;R26mT/+ at P17 and ΔNp73cre/+;R26Kir2.1/+ at P15 and P28 displayed a similar characteristic morphology of CRs. (C) Electrophysiological properties of control and rescued CRs expressing Kir2.1. Note that rescued CRs expressing Kir2.1 are hyperpolarized (resting potential, Vrest) at both P15-P17 (n = 16 for controls and n = 17 for mutants, p=0.0001) and P25-29 (n = 11 for mutants, p=0.002; Kruskal-Wallis test followed by a Bonferroni multiple comparison). Moreover, Kir2.1 expression modifies input resistance (Rin), without showing modifications of the amplitudes and durations of the first and second spikes or the afterhyperpolarization (AHP) (n = 12 for controls and n = 15 for mutants at P15-P17 and n = 7–8 for mutants at P25-P29; p<0.0001 for both ages; ANOVA test followed by a Bonferroni multiple comparison). (D) Quantifications of soma diameter of rescued ΔNp73cre/+;R26Kir2.1/+ CRs at P15-P17 and P25-P29 compared to control ΔNp73cre/+;R26mT/+ CRs at P13-P17 (n = 8 for controls and n = 8 for mutants at P15-P17, p=0.075; n = 9 for mutants at P25-P29, p=0.004, compared to P13-P17 controls; one-way ANOVA test followed by a Bonferroni multiple comparison). (E) Quantifications of filament length of ΔNp73cre/+;R26Kir2.1/+ CRs at P15-P17 and P25-P29 compared to control ΔNp73cre/+;R26mT/+ CRs at P13-P17 (n = 8 for controls and n = 7 for mutants at P15-P17, p=0.636; n = 8 for mutants at P25-P29, p=0.964, compared to P13-P17 controls). (F) Merged and single channel confocal images of P7 and P25 mutant and control brains stained for DsRed (red), Reelin (Reln, green) and Hoechst (blue), showing that DsRed positive cells express Reln. Scale bars represent 100 μm. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 1—figure supplement 1—source data 1.
+
 A similar proportion of CRs were rescued either by hyperpolarization (Figure 1A and B) or by preventing apoptosis (Ledonne et al., 2016), raising the intriguing possibility that the same subpopulation of CRs, SE-CRs, might be preserved in both conditions. Since hem-CRs are not eliminated via a Bax-dependent process (Ledonne et al., 2016), we investigated whether their survival is sensitive to hyperpolarization. We thus overexpressed Kir2.1 specifically in hem-CRs using the Wnt3acre/+, which corresponds to about 70% of the ΔNp73-CRs at early postnatal stages (Figure 1C and D). We found that hem-CR death was unaffected in this mouse line (Figure 1C and D). Moreover, taking into account cortical growth, the proportions of rescued cells in the somatosensory cortex at P25 was evaluated to approximately 30% of the initial pool of ΔNp73-CRs, which corresponds to the expected number of SE-CRs (Bielle et al., 2005; Yoshida et al., 2006; Tissir et al., 2009). Collectively, these results show that the death of a specific subset of ΔNp73cre/+ SE-CRs is both Bax-dependent and activity-dependent.
 
-## CRs rescued by hyperpolarization or blocking Bax-dependent apoptosis are integrated in neuronal circuits
+### CRs rescued by hyperpolarization or blocking Bax-dependent apoptosis are integrated in neuronal circuits
 
 It has been established that CRs are integrated in functional circuits early in the developing postnatal neocortex (Kilb and Luhmann, 2001; Soda et al., 2003; Sava et al., 2010; Cocas et al., 2016). CRs receive GABAergic synaptic inputs and, despite the expression of NMDA receptors (NMDARs) on CR membranes, the presence of NMDAR-mediated synaptic responses is still under debate (Kilb and Luhmann, 2001; Soda et al., 2003; Sava et al., 2010; Schwartz et al., 1998; Mienville and Pesold, 1999; Radnikow et al., 2002; Anstötz et al., 2014). To test whether CRs harbored functional GABAergic and/or glutamatergic synapses during the cell death period and after their rescue, we recorded spontaneous (sPSCs) and evoked postsynaptic currents (ePSCs) of fluorescent CRs with a KCl-based intracellular solution. First, at P9-11 in control ΔNp73cre/+;R26mt/+ mice, sPSCs sensitive to the GABAA receptor (GABAAR) antagonist SR95531 (10 µM) were observed in CRs held at −60 mV, confirming that CRs are innervated mainly by functional GABAergic synaptic inputs (Figure 2—figure supplement 1A–B; data not shown for SR95531 application; n = 7). Low-frequency stimulations in LI easily elicited ePSCs that were also completely blocked by SR95531 application (Figure 2—figure supplement 1C–D), even in 0 mM Mg2+ condition, which relieves the Mg2+ block of NMDA receptors. Taken together, these results indicate that ePSCs were mediated by GABAARs and not by AMPA or NMDA receptors. In agreement with previous studies (Sun et al., 2019), the presence of GABAergic synaptic inputs on CRs was confirmed by immunostainings against the presynaptic marker GAD65/67 and the postsynaptic marker Gephyrin (Figure 2—figure supplement 1E). Since the depolarizing action of GABA in CRs was proposed to be partly due to the lack of expression of KCC2, the chloride transporter responsible for maintaining a low intracellular chloride concentration (Mienville, 1998; Achilles et al., 2007; Pozas et al., 2008; Blanquie et al., 2017a; Blanquie et al., 2017b), we also checked for the protein expression of this transporter. In agreement with previous reports (Achilles et al., 2007; Pozas et al., 2008), control GFP+ CRs in ΔNp73cre/+;TauGFP/+ mice expressed very low to undetectable levels of KCC2 (Figure 2—figure supplement 1F). Thus, during the timeperiod of their activity-dependent death, CR cells receive solely GABAergic synaptic inputs.
 
 We further explored whether these inputs are maintained at later stages, when CR cells are not eliminated. To this aim, we performed the same experiments at P23-28 in ΔNp73cre/+;R26Kir2.1/+ and ΔNp73cre/+;Baxlox/lox;R26mT/+ mice (Figure 2A–B). First, we found that sPSCs in rescued CRs had similar frequencies, amplitudes and kinetics in both models (Figure 2A–B). Moreover, sPSCs were completely abolished by GABAAR antagonist SR95531, indicating that rescued CRs remained innervated by functional GABAergic synaptic inputs (data not shown for SR95531 application, n = 8 and n = 5 for ΔNp73cre/+;R26Kir2.1/+ and ΔNp73cre/+;Baxlox/lox;R26mT/+ mice, respectively). Consistently, the complete block of ePSCs by SR95531, even in 0 mM Mg2+, revealed that ePSCs were exclusively mediated by GABAARs at hyperpolarized holding potentials, as observed in younger mice (Figure 2C–D and Figure 2—figure supplement 1C–D). While these GABAergic inputs were preserved in rescued CRs, we observed a reduced sPSC frequency and ePSC amplitude compared to P9-P11 mice, suggesting a decreased CR connectivity in the more mature neocortex (Figure 2A–B and Figure 2—figure supplement 1A–B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/50503/elife-50503-fig2-v1.jpg)
+
+**Figure 2.:** (A) Spontaneous PSCs (sPSCs) recorded in rescued CRs from ΔNp73cre/+;R26Kir2.1/+ at P27 (blue) and ΔNp73cre/+;Baxlox/lox mutants at P26 (green), respectively. (B) Plots of the frequency and amplitude of sPSCs (n = 11 for ΔNp73cre/+; R26Kir2.1/+ and n = 11 for ΔNp73cre/+; Baxlox/lox mice at P24-29; frequency: p=0.552, amplitude: p=0.580, Student T Test). Rise time is 2.10 ± 0.42 ms vs 1.02 ± 0.20 ms and decay time 34.26 ± 6.39 ms vs 29.14 ± 3.56 ms for ΔNp73cre/+;R26Kir2.1/+ and ΔNp73cre/+;Baxlox/lox mice, respectively. (C) Mean evoked PSCs (ePSCs) for rescued CRs respectively from a ΔNp73cre/+;R26Kir2.1/+ mutant at P29 (blue) and a ΔNp73cre/+;Baxlox/lox mutant at P26 (green) upon stimulation of LI neuronal fibers (stimulation time, arrowhead) in control conditions (top), with SR95531 (middle) and SR95531 in Mg2+-free solution (bottom). Note that ePSCs completely disappeared after bath application of SR95531. (D) Amplitudes of ePSCs in control conditions, with SR95531 and with SR95531 in Mg2+-free solution (ΔNp73cre/+;R26Kir2.1/+ mice at P24-29: ncontrol = 10, nSR95531 = 8 and nSR95531/Mg2+free=8; ΔNp73cre/+;Baxlox/lox: ncontrol = 8, nSR95531 = 5 and nSR95531/Mg2+free=5; Kruskal-Wallis test followed by a Bonferroni multiple comparison when comparing the three conditions for each mutant; Student T test for comparison of control ePSCs between ΔNp73cre/+;R26Kir2.1/+ and ΔNp73cre/+;Baxlox/lox mutants, p=0.638). To detect CRs in ΔNp73cre/+;Baxlox/lox mutants the R26mT/+ reporter line was used. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 2—figure supplement 1—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50503/elife-50503-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Spontaneous PSCs (sPSCs) recorded in a control CR from ΔNp73cre/+;R26mt/+ at P10. (B) Plots of the frequency and amplitude of sPSCs (n = 8) (p=0.0025 and p=0.0022 for the frequency of sPSCs of controls compared to rescued CRs of both ΔNp73cre/+;R26Kir2.1/+ and ΔNp73cre/+;Baxlox/lox;R26mT/+ mice (Figure 2A); one-way ANOVA followed by a Bonferroni post hoc test). (C) Mean evoked PSCs (ePSCs) for a control CR at P9-11 upon stimulation of LI neuronal fibers in control conditions (top), with SR95531 (middle) and SR95531 in Mg2+-free solution (bottom). Note that ePSCs completely disappeared after bath application of SR95531. Stimulation artefacts were blanked for visibility. The stimulation time is indicated (arrowheads). (D) Amplitudes of ePSCs in control conditions (p=0.0027 and p=0.0067 for the amplitude of ePSCs in controls compared to rescued CRs of ΔNp73cre/+;R26Kir2.1/+ and ΔNp73cre/+;Baxlox/lox;R26mT/+mice, (Figure 2D); one-way ANOVA followed by a Bonferroni post hoc test), in the presence of SR95531 and with SR95531 in Mg2+-free solution (ncontrol = 8, nSR95531 = 7 and nSR95531/Mg2+free=7; Kruskal-Wallis test followed by a Bonferroni multiple comparison). (E) Confocal images of a control CR at P10 in ΔNp73cre/+;TauGFP/+ mice expressing GFP (green), Gephyrin (red) and contacted by GABAergic GAD65/67-positive presynaptic terminals (blue; objective 93×; stack of 109 Z sections, each 0.07 µm, n = 11). Arrowheads show GABAergic synapses onto the CR. Note the partial co-localization of GAD65/67 and Gephyrin on the GFP+ membrane of the CR (Inset). Scale bars: 5 µm and 1 µm (inset). (F) Confocal images of a Layer I CR in the cortex and non-CR in the hypothalamus at P10 stained for DAPI (blue), KCC2 (red) and GFP (green) in ΔNp73cre/+; TauGFP/+ mice (objective 93×; single plane of 0.07 µm, n = 6). Note the low level of KCC2 expression in control CR (upper panels) compared to non-CR of ΔNp73cre/+;TauGFP/+ mice (bottom panels). Scale bar represents 5 µm. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 2—figure supplement 1—source data 1.
+
 Altogether, these results indicate that rescued CRs, as previously showed in the early postnatal neocortex (Soda et al., 2003; Sava et al., 2010; Kilb and Luhmann, 2001), receive solely GABAergic synaptic inputs at the time of their death. They further demonstrate that rescued CRs in both mouse models, inspite of a reduced connectivity compared to earlier stages, are kept integrated in functional neuronal circuits.
 
-## Survival of electrically-active CRs triggers dendritic exuberance of upper layer pyramidal neurons
+### Survival of electrically-active CRs triggers dendritic exuberance of upper layer pyramidal neurons
 
 In order to test whether CR aberrant survival may alter the function of other neurons in upper cortical layers, we used biocytin-filling and confocal 3D reconstructions to study the morphology of Layer II (LII) and LIII pyramidal neurons in the somatosensory barrel cortex of both ΔNp73cre/+;R26Kir2.1/+ and ΔNp73cre/+;Baxlox/lox mice. While no major changes were observed in the morphology of LII/III pyramidal neurons of ΔNp73cre/+;R26Kir2.1/+ mice compared to their matched controls (Figure 3—figure supplement 1), major defects were observed for these neurons in ΔNp73cre/+;Baxlox/lox mutants (Figure 3). Quantitative analyses revealed an increase in the number of apical and basal dendritic branches at P25 in ΔNp73cre/+;Baxlox/lox compared to controls (Figure 3B). In order to further characterize cell complexity in relation with the distance from the soma, we performed a Sholl analysis. We observed that LII/III pyramidal cells displayed an increased complexity for apical dendrites (between 180 µm and 240 µm from the soma) as well as for basal dendrites (between 60 and 80 µm from the soma) (Figure 3C). Interestingly, no statistically different changes in the number of dendritic branches (Figure 3—figure supplement 1B) or the complexity of apical and basal dendrites (Figure 3—figure supplement 1C) were detected in LII/LIII pyramidal neurons of the ΔNp73cre/+;R26Kir2.1/+ model, in which SE-CRs survive but are hyperpolarized. Thus, the survival of a specific subset of CRs has a general promoting impact onto the dendritic tree of upper layer pyramidal neurons only when they keep their normal intrinsic excitability. Collectively, our analyses show that SE-CRs survival in LI promotes an exuberance of apical and basal dendrites of LII/LIII pyramidal neurons in an activity-dependent manner.
 
-## Survival of electrically-active CRs increases excitatory entries in upper layer pyramidal neurons
+![Figure 3.](https://cdn.elifesciences.org/articles/50503/elife-50503-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative examples of LII/III pyramidal neurons filled with biocytin in control (P25) and ΔNp73cre/+;Baxlox/lox mutant (P24) somatosensory cortex. (B) Quantification of the number of dentritic branches in control and ΔNp73cre/+;Baxlox/lox mutant LII/III pyramidal neurons, expressed as a percentage of dendritic branches relative to the mean of controls (n = 7 for controls and n = 8 for mutants at P23-28 p=0.0182 for apical dendrites and p=0.014 for basal dendrites; Mann-Whitney U Test). (C) Sholl analysis for the apical and basal dendrites in control and ΔNp73cre/+;Baxlox/lox mutants showing an increased cell complexity between 180 and 240 µm (p-value=0.04, 0.027, 0.0007 and 0.005, respectively) and 60 and 80 µm (p value=0.027 and 0.019, respectively) from the soma, respectively (n = 7 for controls and n = 8 for mutants). Multiple T-test. Scale bar represents 100 μm. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 3—figure supplement 1—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50503/elife-50503-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative examples of somatosensory cortex LII/III pyramidal neurons filled with biocytin in control (P24) and ΔNp73cre/+;R26Kir2.1/+ (P27) mice. (B) Quantification of number of dendritic branches of LII/III pyramidal neurons in controls and ΔNp73cre/+;R26Kir2.1/+ mice, expressed as a percentage relative to the mean of controls (apical dendrites n = 7 for controls and n = 9 for mutants at P23-P29, p=0.550; basal dendrites n = 7 for controls and n = 8 for mutants at P23-P29, p=0.199; Mann-Whitney U Test). (C) Sholl analysis for the apical and basal dendrites in control and ΔNp73cre/+;R26Kir2.1/+ mutant mice showing no significant change in cell complexity with respect to the distance from the soma, (apical dendrites n = 7 for controls and n = 9 for mutants; basal dendrites n = 7 for controls and n = 8 for mutants). Multiple T-test. Scale bar represents 100 μm. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 3—figure supplement 1—source data 1.
+
+### Survival of electrically-active CRs increases excitatory entries in upper layer pyramidal neurons
 
 To examine whether the defects of the dendritic arborization of LII/III pyramidal neurons were related to changes in the synaptic inputs received by these neurons, we first examined spines on both apical and basal dendrites of biocytin-filled pyramidal cells (Figure 4A–D). Because excitatory synapses are formed on dendritic spines, the latter can be used as a proxy for the quantification of those synapses. For apical dendrites, we examined terminal ramifications in LI, whereas for basal dendrites, we considered horizontal branches approximately at the same distance from the soma. Spine density on both apical and basal dendrites of pyramidal cells was significantly increased in ΔNp73cre/+;Baxlox/lox mutants compared to controls (Figure 4A and B) whereas no differences were observed in ΔNp73cre/+;R26Kir2.1/+ mutants (Figure 4C and D). These results indicate that the survival of electrically-active CRs not only triggers a dendritic exuberance, but also drives an increase in spine densities.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50503/elife-50503-fig4-v1.jpg)
+
+**Figure 4.:** (A, C) Representative confocal images showing spines in apical and basal dendritic segments of controls (left) and ΔNp73cre/+;Baxlox/lox (A, right) and ΔNp73cre/+;R26Kir2.1/+ mutants (C, right) at P24-25. (B, D) Quantification of the spine density (number of spines/µm) in apical and basal dendrites in LII/LIII pyramidal neurons for both controls and mutants from the same litters (for ΔNp73cre/+;Baxlox/lox apical and basal dendrites: n = 8 for controls and n = 12 for mutants at P23-28, p=0.012 for apical dendrites and p=0.0014 for basal dendrites; for ΔNp73cre/+;R26Kir2.1/+ apical dendrites: n = 10 for controls and n = 6 for mutants at P23-P29, p=0.166; basal dendrites: n = 9 for controls and n = 7 for mutants, p=0.652; Mann-Whitney U Test). Scale bar represents 5 μm. (E, G) Pyramidal neurons recorded in voltage-clamp at −70 mV and 0 mV in control at P26 (E, left) and P24 (G, left) and in a ΔNp73cre/+;Baxlox/lox mutant at P23 (E, right) and a ΔNp73cre/+;R26Kir2.1/+ mutant at P28 (G, right) during the extracellular stimulation of LII/III fibers as indicated (E, inset). Stimulation artefacts were blanked for visibility. The stimulation time is indicated (arrowheads). (F, H) Plots of E/I ratio calculated from eEPSCs and eIPSCs in controls and ΔNp73cre/+;Baxlox/lox mutants (F) and ΔNp73cre/+; R26Kir2.1/+ mutants (H) (for ΔNp73cre/+;Baxlox/lox: n = 10 for controls and n = 14 for mutants, p=0.031, Student T Test; for ΔNp73cre/+;R26Kir2.1/+: n = 8 for controls and n = 7 for mutants, p=0.612; Mann-Whitney U Test). Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 4—figure supplement 1—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50503/elife-50503-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Plots of the mean amplitude of eEPSCs (left) and eIPSCs (right) evoked by extracellular stimulation for the same pyramidal neurons of Figure 4 held at −70 mV and 0 mV, respectively, in controls and ΔNp73cre/+;Baxlox/lox (A) and ΔNp73cre/+;R26Kir2.1/+ (B) mutants. Note the significant increase in the mean amplitude of eEPSCs for ΔNp73cre/+;Baxlox/lox (p=0.042) but not for ΔNp73cre/+;R26Kir2.1/+ mutants (p=0.902). eIPSCs remained unchanged. (C) sEPSCs recorded in pyramidal neurons held at −70 mV in a control at P26 (black) and a ΔNp73cre/+;Baxlox/lox mutant at P23 (green). (D, E) Plots of the mean frequencies of sEPSCs in ΔNp73cre/+;Baxlox/lox (D) and ΔNp73cre/+;R26Kir2.1/+ (E) mutants at P23-26 and P23-28, respectively. Note the significant increase in the mean frequency of sEPSCs for ΔNp73cre/+;Baxlox/lox but not for ΔNp73cre/+;R26Kir2.1/+ mutants (n = 9 for controls and n = 11 for ΔNp73cre/+;Baxlox/loxp=0.038, Student T test; n = 7 for controls and n = 8 for ΔNp73cre/+;R26Kir2.1/+ mice p=0.942, Mann-Whitney U test). For the same cells, mean sEPSC amplitudes: −17.5 ± 2.2 pA for controls vs −19.2 ± 1.4 pA for ΔNp73cre/+;Baxlox/lox mice (p=0.501; Student T test) and −12.20 ± 0.81 pA for controls vs –14.30 ± 1.95 pA for ΔNp73cre/+;R26Kir2.1/+ mice (p=0.9551; Mann-Whitney U test). (F) Current-clamp recording of a ChR2-expressing rescued CR upon light stimulation in a ΔNp73cre/+;Baxlox/lox;ChR2lox/+ mouse (see diagram). Note that photoactivation (blue pulses, 1 ms) evoked action potentials in response to every light pulse of a 5 Hz-light train of 10 s (bottom left). Similar results were obtained with a 5 Hz-light train of 30 s (n = 7) and in the presence of ionotropic receptor antagonists 10 µM NBQX, 50 µM AP5 and 10 µM SR95351 (n = 2). Average percentage of success to elicit action potentials with light trains of 10 s delivered from 2 to 20 Hz (right). Note the decreased number of action potentials triggered by photoactivation from 10 Hz (n = 7; Kruskal-Wallis test followed by a Bonferroni multiple comparison). (G) Simultaneous Layer II/III extracellular recording and whole-cell recording of a Layer I interneuron localized nearby a ChR2-expressing rescued CR (see diagram, top left). The firing of the interneuron in response to 800 ms depolarizing and hyperpolarizing steps is shown (inset, top right). A 5 Hz-light train of 10 s did not induce Layer II/III LFPs or postsynaptic currents in the recorded interneuron held at −70 mV (bottom left). Similarly, no responses were observed during extracellular recordings of Layer I (n = 3), Layer II/III (n = 5) and Layer V (n = 3) or during whole-cell recordings of Layer I interneuron (n = 3) in normal conditions or in the presence of 0 mM Mg2+, 3 mM Ca2+ and 4AP (n = 3). Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 4—figure supplement 1—source data 1.
 
 To test whether these morphological modifications in ΔNp73cre/+;Baxlox/lox mutants is accompanied by modifications in excitatory synaptic inputs, we performed whole-cell recordings of upper layer pyramidal neurons during the extracellular stimulation of LII/III fibers. First, the membrane potential of recorded cells was maintained at −70 mV or 0 mV to respectively record evoked excitatory (eEPSCs) and inhibitory (eIPSCs) postsynaptic currents. Pyramidal cells in ΔNp73cre/+;Baxlox/lox mutants showed a significant increase in the mean amplitude of eEPSCs, while that of eIPSCs remained unchanged compared to controls (Figure 4E, Figure 4—figure supplement 1A). This modification is highlighted by a significant increase in the E/I ratio (Figure 4F). Together with the increased spine density, these data strongly suggest that pyramidal neurons have enhanced excitatory synaptic inputs. To corroborate this possibility, we then analyzed the spontaneous EPSCs (sEPSCs) of recorded pyramidal neurons. As expected for an increased number of inputs, the sEPSC frequency was significantly higher in ΔNp73cre/+;Baxlox/lox mutants with respect to controls while the mean sEPSC amplitude remained unchanged (Figure 4—figure supplement 1C-D). When the same experiments were performed in ΔNp73cre/+;R26Kir2.1/+ mutants, no differences were observed either in the amplitudes of both eEPSCs and eIPSCs or in the E/I ratio (Figure 4G–H, Figure 4—figure supplement 1B). In line with this, changes were neither observed in the frequency of sEPSCs of these mutants (Figure 4—figure supplement 1E), showing that defects in the synaptic activity of pyramidal neurons is dependent on the intrinsic activity of rescued CRs. To test whether the effect on pyramidal cells could be due to a direct action of CR activity on excitatory circuits, we produced ΔNp73cre/+;Baxlox/lox; ChR2lox/+ mutant mice to photoactivate rescued CRs while recording neuronal network activity. After defining an efficient photostimulation protocol for reliably eliciting action potentials on recorded CRs (Figure 4—figure supplement 1F), we combined photostimulation with of Layer I interneuron recordings in whole-cell configuration and/or local field potentials (LFPs) in different layers (Figure 4—figure supplement 1G). We could never detect light-evoked responses during patch-clamp or extracellular recordings, even in the presence of 0 mM Mg2+, 3 mM Ca2+ and 50 µM of the potassium channel blocker 4AP, a treatment that renders all neurons more excitable (Figure 4—figure supplement 1G). Although these results do not rule out that rescued CRs contact other neurons through bona fide glutamatergic synapses, the low proportion of these cells compared to pyramidal neurons and the lack of electrical extracellular responses during their sustained light stimulation suggest that direct synaptic inputs from CRs cannot account for the robust morphological and functional changes induced in pyramidal cells by the aberrant CR survival.
 
@@ -72,13 +104,13 @@ Overall, these experiments show that the survival of electrically-active SE-CRs 
 
 Our results show that the elimination of specific subsets of CRs, SE-CRs, is activity-dependent and that this process is essential for proper cortical wiring. Indeed, the persistence of SE-CRs beyond their normal phase of elimination triggered major deficits in LII/LIII somatosensory pyramidal neurons. Not only the analyzed neurons displayed an increased dendritic arborization and spine density, but they also consistently showed enhanced excitatory inputs leading to a functional E/I imbalance. Remarkably, these anatomical and electrophysiological deficits all relied on the fact that persistent CRs were electrically-active. Our study thus demonstrates that activity is required to eliminate SE-CRs, whose survival would otherwise perturb cortical wiring in an activity-dependent manner. Taken together, it reveals an elegant interplay between transient CRs and neuronal activity in the construction of functional cortical excitatory circuits.
 
-## CR subtype-specific pathways in programmed cell death
+### CR subtype-specific pathways in programmed cell death
 
 Activity was reported to promote survival of both glutamatergic and GABAergic neurons in the neocortex and in general in the nervous system ( Blanquie et al., 2017a; Causeret et al., 2018; Wong and Marín, 2019), providing a mean to integrate around 70% of neurons into functional circuits. CRs, which completely undergo programmed cell death in the cerebral cortex (Ledonne et al., 2016; Causeret et al., 2018), have been previously proposed to behave differently. These neurons display ‘immature’ features such as a depolarized resting potential and a very high input resistance (Kirischuk et al., 2014). Especially, GABA is depolarizing in these cells due to their elevated intracellular chloride concentration resulting from the activity of the chloride inward transporter NKCC1 in the absence of expression of chloride outward transporter KCC2 (Mienville, 1998; Achilles et al., 2007; Pozas et al., 2008). Interestingly, the pharmacological blockade of NKCC1 in cell cultures or the genetic ablation of this transporter in vivo promotes the survival of a CR population, probably by preventing GABAA receptor-mediated depolarization (Blanquie et al., 2017b). It must be considered, however, that the depolarizing effect of GABA will depend most probably on the levels of neuronal activity since high activity levels attenuate the GABAA receptor-mediated excitatory drive in CRs (Kolbaev et al., 2011). Here, we confirmed that CRs receive exclusively functional GABAergic synaptic inputs and express low levels of KCC2 in the second postnatal week, that is during the period of massive cell death. Our findings raise the question of the identity of possible GABAergic neurons that regulate CR subtype elimination. CRs receive GABAergic synaptic inputs from different sources, including local interneurons of Layer I, the underlying layers of the neocortex and the subplate, a transient cortical structure absent in the fourth postnatal week, as well as the zona incerta (Kirmse et al., 2007; Myakhar et al., 2011; Kirischuk et al., 2014; Chen and Kriegstein, 2015; Sun et al., 2019). A related issue is how GABAergic inputs to CRs might change overtime, since we found that rescued CRs receive less inputs than at earlier stages. One interesting possibility is that rescued CRs in Layer I might lose GABAergic innervation from transient or distant populations (i.e. subplate and zona incerta) during maturation of neuronal networks, restricting their connectivity with more local neocortical inputs. Further investigation is needed to determine the different interneuron subtypes impinging on CRs in immature cortical circuits and after their aberrant survival in adults.
 
 Using conditional Kir2.1 expression in a large subpopulation of CRs, we unequivocally show that only a specific subset of CRs, SE-CRs, dies in an activity-dependent manner in vivo. Since CRs are highly hyperpolarized in this mouse model, a plausible explanation is that GABAergic inputs cannot exert their depolarizing effect as in normal conditions, thereby preventing cell death. In this context, it is also tempting to hypothesize that, as shown in other systems, neuronal activity via intracellular calcium signals could trigger apoptosis, as reported during excitotoxicity (Blanquie et al., 2017a). The timing of SE-CRs death, namely the second postnatal week, corresponds to a major switch in cortical activity (Luhmann and Khazipov, 2018) and in GABAergic circuits (Cossart, 2011), raising the possibility that the elimination of CRs is part of a more global activity-dependent remodeling of cortical circuits. Irrespective of the underlying mechanism, surviving Kir2.1-expressing CRs displayed a relatively normal morphology, expressed Reln and received GABAergic synaptic inputs. Remarkably, SE-CRs is also the subpopulation undergoing a Bax-dependent apoptosis. Quantification of CRs that persist in both models suggests that a vast majority of SE-CRs survives. Indeed, in both deletion of Bax (Ledonne et al., 2016) or over-expression of Kir2.1 (this manuscript) models, a five-fold increase in CR numbers, corresponding to approximately 30% of the initial pool at P7, is detected when using the ΔNp73Cre line, in contrast to none when using the hem-specific Wnt3aCre line. Since hem-CRs constitute about 70% of the population targeted by the ΔNp73Cre line (Bielle et al., 2005; Yoshida et al., 2006; Tissir et al., 2009), our findings support that the 30% of rescued CRs in ΔNp73Cre corresponds to a large fraction, if not all, of the SE-CR population. Together, these results demonstrate that hem-derived CRs die in a Bax- and activity-independent manner, in contrast to SE-CRs that survive in Bax and Kir2.1 mutants. Hence, our work reveals that subpopulations of CRs are eliminated by very distinct mechanisms. Interestingly, hippocampal CRs, which mostly derive from the cortical hem (Louvi et al., 2007) display a delayed death which seems to occur independently of the apoptotic-specific Caspase-3 activity (Anstötz et al., 2016; Anstötz et al., 2018). Together, these data support the notion that CR subtypes are intrinsically different in the mechanism determining their demise and argues in favor of complex yet unappreciated subtype-specific pathways leading ultimately to cell death.
 
-## CRs aberrant survival perturbs the morphology and connectivity of upper layer neurons in an activity-dependent manner
+### CRs aberrant survival perturbs the morphology and connectivity of upper layer neurons in an activity-dependent manner
 
 In this work, we have demonstrated that SE-CRs persistence in mice has a strong effect on LII/III pyramidal neuron morphology and excitatory circuits. Notably, in the ΔNp73cre/+;Baxlox/lox mutants, we observed an impact on both apical and basal dendrites. While the effect on apical dendrites could be direct via local surviving SE-CRs, the impact on basal ones might be circuit-mediated since excitatory entries in apical dendritic tufts were shown to modify basal dendrite synaptic plasticity (Williams and Holtmaat, 2019). Moreover, SE-CRs survival leads in ΔNp73cre/+;Baxlox/lox mutants to increased synaptic density with major functional consequences on the E/I ratio. Conversely, recent work showed that aberrant reduction of CRs during development triggers decreased apical dendritic tufts and dendritic spine density of LII/III pyramidal neurons accompanied by a reduction in the E/I ratio (de Frutos et al., 2016). Taken together our findings reveal that the proper balance of CRs constitutes an essential, yet underappreciated, regulator of LII/III pyramidal neuron morphology and wiring.
 
@@ -88,19 +120,274 @@ Our study thus shows that the elimination of SE-CRs in the somatosensory cortex 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain Mus musculus (males and female)</td>
+      <td>C57BL6J</td>
+      <td>Janvier</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mus musculus (males and female)</td>
+      <td>ΔNp73CreIRESGFP</td>
+      <td>Tissir et al., 2009</td>
+      <td>ΔNp73Cre</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mus musculus (males and female)</td>
+      <td>Wnt3aCre</td>
+      <td>Yoshida et al., 2006</td>
+      <td>Wnt3aCre</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mus musculus (males and female)</td>
+      <td>TauloxP-stop-loxP-MARCKSeGFP-IRES-nlslacZ</td>
+      <td>Hippenmeyer et al., 2005</td>
+      <td>TauGFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mus musculus (males and female)</td>
+      <td>Baxtm2Sjk;Bak1tm1Thsn/J</td>
+      <td>Takeuchi et al., 2005</td>
+      <td>Baxlox/lox</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mus musculus (males and female)</td>
+      <td>ROSA26loxP-stop-loxP-Tomato</td>
+      <td>Madisen et al., 2010</td>
+      <td>R26mT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mus musculus (males and female)</td>
+      <td>ROSA26 loxP-stop-loxP- Kcnj2-cherry/+</td>
+      <td>Moreno-Juan et al., 2017</td>
+      <td>R26Kir2.1/+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mus musculus (males and female)</td>
+      <td>Ai32(RCL-ChR2(H134R)/EYFP</td>
+      <td>https://www.jax.org/strain/012569</td>
+      <td>ChR2lox</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-DsRed</td>
+      <td>Takara</td>
+      <td>RRID:AB_10013483</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Reelin</td>
+      <td>Merck Millipore</td>
+      <td>RRID:AB_565117</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Gephyrin</td>
+      <td>Synaptic systems</td>
+      <td>RRID:AB_2619837</td>
+      <td>IF(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-GAD65/67</td>
+      <td>Merck</td>
+      <td>RRID: AB_22 78725</td>
+      <td>IF(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>guinea-pig anti-KCC2</td>
+      <td>D Ng and S Morton TM Jessell’s lab</td>
+      <td></td>
+      <td>IF(1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-mouse Alexa-488</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>RRID:AB_2340846</td>
+      <td>IF(1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-rabbit Cy3</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>RRID:AB_2307443</td>
+      <td>IF(1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-rabbit Alexa-647</td>
+      <td>Molecular Probes</td>
+      <td>RRID:AB_2536183</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-chick Alexa-488</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>RRID:AB_2340375</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-mouse Alexa-555</td>
+      <td>Molecular Probes</td>
+      <td>RRID:AB_2536180</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-guinea pig Alexa-555</td>
+      <td>Molecular Probes</td>
+      <td>RRID:AB_2535856</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DAPI (4', 6-diamidino-2-phenylindole)</td>
+      <td>Invitrogen Molecular Probes</td>
+      <td>RRID:AB_2629482</td>
+      <td>IF(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight 488 streptavidin</td>
+      <td>Vector Labs</td>
+      <td>SP-4488</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CRE genotyping 188 f 167 r</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>188 f: TGA TGG ACA TGT TCA GGG ATC 167 r: GAA ATC AGT GCG TTC GAA CGC TAG A</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R26Kir2.1/+genotyping AAY101 AAY103 SD297</td>
+      <td></td>
+      <td>PCR primers</td>
+      <td>AAY101: AAAGTCGCTCTGAGTTGTTAT (Rosa26 forward WT) AAY103: GGGAGCGGGAGAAATGGATATG (Rosa26 reverse WT) SD297: GGCCATTTACCGTAAGTTATG (CAG promoter reverse)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT:P6148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton 100X</td>
+      <td>Eurobio</td>
+      <td>CAT:GAUTTR00-07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SR95531</td>
+      <td>Abcam</td>
+      <td>Ab120042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-AP</td>
+      <td>Sigma Aldrich</td>
+      <td>A-0152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMARIS software 8.4.</td>
+      <td>IMARIS</td>
+      <td>RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7.0</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_000306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/FIJI</td>
+      <td>NIH</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop CS6</td>
+      <td>Adobe Systems</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp10.1</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGOR Pro 6.0</td>
+      <td>Wavemetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuroMatic</td>
+      <td>Wavemetrics</td>
+      <td>RRID:SCR_004186</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 ΔNp73CreIRESGFP(ΔNp73Cre) (Tissir et al., 2009), Wnt3aCre (Yoshida et al., 2006), ROSA26loxP-stop-loxP-Tomato(R26mT) (Madisen et al., 2010), TauloxP-stop-loxP-MARCKSeGFP-IRES-nlslacZ (TauGFP) (Hippenmeyer et al., 2005) and ChR2lox (Ai32(RCL-ChR2(H134R)/EYFP) (https://www.jax.org/strain/012569​)) transgenic mice were kept in a C57BL/6J background. The Baxtm2Sjk;Bak1tm1Thsn/J line (Takeuchi et al., 2005) harboring the floxed Bax and the Bak knock-out alleles was purchased from the Jackson laboratory as mixed B6;129. ΔNp73Cre and Wnt3aCre lines were crossed with the R26mT or TauGFP reporter lines to permanently label CR subtypes. ΔNp73Cre line was crossed to the Baxtm2Sjk;Bak1tm1Thsn/J line (Baxlox/lox) to inactivate Bax function in specific CR subtypes. The conditional knock-out also harbored a reporter allele R26mT in order to trace the neurons in which recombination had occurred. ΔNp73Cre and Wnt3aCre lines were crossed to ROSA26 loxP-stop-loxP- Kcnj2-cherry/+ (R26Kir2.1/+) (Moreno-Juan et al., 2017) to overexpress the Kcnj2 gene, which encodes Kir2.1, in specific CR subpopulations. Controls used were littermates heterozygous Bax for the Bax model and ΔNp73+/+;R26Kir2.1/+ for the Kir2.1 model. Animals were genotyped by PCR using primers specific for the different alleles. All animals were handled in strict accordance with good animal practice as defined by the national animal welfare bodies, and all mouse work was approved by the Veterinary Services of Paris (Authorization number: 75–1454) and by the Animal Experimentation Ethical Committee Buffon (CEEA-40) (Reference: CEB-34–2012) and by the Animal Experimentation Ethical Committee Darwin (Reference: 02224.02).
 
-## Tissue preparation and immunohistochemistry
+### Tissue preparation and immunohistochemistry
 
 For staging of animals, the birth date was considered as postnatal day 0 (P0). Animals were anesthetized with Isoflurane and intracardially perfused with 4% paraformaldehyde (PFA) in 0.1 M PBS, pH 7.4 and post-fixed over-night in 4% PFA at 4°C. Brain were embedded in 3.5% agarose and sectioned in 70 µm free-floating slices at all stages in Figure 1 and Figure 1—figure supplement 1. For Figure 2—figure supplement 1E, brains were cryoprotected and sectioned in 50 µm free-floating slices. Immunostaining was performed as previously described (Bielle et al., 2005; Griveau et al., 2010; de Frutos et al., 2016). Primary antibodies used for immunohistochemistry were: mouse anti-Reelin (MAB5364, Millipore 1:300), rabbit anti-DsRed (Takara 632496, 1:500), mouse anti-Gephyrin (147 011, Synaptic Systems, 1:250), Rabbit anti-GAD65/67 (AB1511, Merck, 1:250), guinea pig anti-KCC2 (Gift of S.Morton and D.Ng, 1:4000). Secondary antibodies used against primary antibodies were: donkey anti-mouse Alexa-488 (Jackson ImmunoResearch Laboratories, 1:800), donkey anti-rabbit Cy3 (Jackson ImmunoResearch Laboratories, 1:800), donkey anti-chick Alexa-488 (Jackson ImmunoResearch Laboratories, 1:1000), donkey anti-mouse Alexa-555 (A-31570, Molecular Probes, 1:1000), donkey anti-rabbit Alexa-647 (A31573, Molecular Probes, 1:500), goat anti-guinea pig Alexa-555 (A-21435, Molecular Probes, 1:1000). Hoechst (Sigma-Aldrich 33342, 1:1000) and DAPI (D1306, ThermoFisher Scientific, 1:2000) were used for fluorescent nuclear counterstaining the tissue and mounting was done in Vectashield (Vector Labs).
 
-## Image acquisition and cell countings
+### Image acquisition and cell countings
 
 Immunofluorescence images were acquired using a confocal microscope (Leica TCS SP5), except for anti-KCC2, Gephyrin and GAD65/67 (Figure 2—figure supplement 1E, f) that were acquired on a LEICA SP8 confocal microscope with 93X objective and 2.5 digital zoom (a single optical plane or around 100 z-stacks of 0.07 µm respectively). DsRed+ neurons, detected by immunofluorescence, were counted using the ImageJ software, in the somatosensory barrel cortex (S1) for each age and genotype. For each section, the density of CRs (DsRed+ CRs/mm3) was calculated taking into account the thickness of the section and the surface of Layer I, measured using ImageJ software.
 
-## Acute slice preparation, electrophysiology and photostimulation
+### Acute slice preparation, electrophysiology and photostimulation
 
 Acute coronal slices (300 µm) of the neocortex were obtained from ΔNp73cre/+;Baxlox/lox and ΔNp73cre/+;R26Kir2.1/+ mutants. Excitation light to visualize the tdTomato or Cherry fluorescent proteins was provided by a green Optoled Light Source (Cairn Research, UK) and images were collected with an iXon+ 14-bit digital camera (Andor Technology, UK), as previously described (Orduz et al., 2015). Patch-clamp recordings were performed at RT using an extracellular solution containing (in mM): 126 NaCl, 2.5 KCl, 1.25 NaH2PO4, 26 NaHCO3, 20 glucose, five pyruvate, 2 CaCl2 and 1 MgCl2 (95% O2, 5% CO2). Fluorescent CRs were recorded at P13-17 and P24-29 with different intracellular solutions according to the experiment and containing (in mM): either 130 K-Gluconate (K-Glu) or 130 KCl, 0.1 EGTA, 0.5 CaCl2, 2 MgCl2, 10 HEPES, 2 Na2-ATP, 0.2 Na-GTP and 10 Na2-phosphocreatine and 5.4 mM biocytin (pH ≈ 7.3). When using a KGlu-based intracellular solution in whole-cell configuration, potentials were corrected for a junction potential of −10 mV. Recordings were made without series resistance (Rs) compensation; Rs was monitored during recordings and cells showing a change of more than 20% in Rs were discarded. To evaluate the effect of SR95351 (10 µM; Abcam, Cambridge, UK), drug perfusion reached a steady state at 3 min in the recording chamber. This time was respected before quantification of either spontaneous or evoked PSCs. To test for the presence of eEPSCs mediated by NMDARs receptors at hyperpolarized potentials, the extracellular concentration of MgCl2 was replaced by CaCl2 in order to relieve the Mg2+ block of these receptors.
 
@@ -108,10 +395,10 @@ Photostimulation of fluorescent ChR2-expressing rescued CRs recorded in whole-ce
 
 Recordings were obtained using Multiclamp 700B and pClamp10.1 (Molecular Devices), filtered at 4 kHz and digitized at 20 kHz. Digitized data were analyzed off-line using Neuromatic within IGOR Pro 6.0 environment (Wavemetrics, USA) (Rothman and Silver, 2018). Extracellular stimulations were performed using a monopolar electrode (glass pipette) placed in Layer I for CRs and Layer II/III for pyramidal neurons (20–99 V, 100 µs stimulations each 8–12 s; Iso-Stim 01D, npi electronic GmbH, Tamm, Germany). Spontaneous postysynaptic currents were detected with a threshold of 2 times the noise standard deviation during a time window of 3 min for CRs and 1.5 min for pyramidal cells. The Vm was estimated in current-clamp mode as soon as the whole-cell configuration was established. The analysis of Rin, action potential amplitudes and duration was performed during pulses of 800 ms in current-clamp configuration from −80 mV during increasing steps of 5 pA as previously described (Ledonne et al., 2016).
 
-## Morphological analyses
+### Morphological analyses
 
 For morphological analysis, CRs and layer II/III pyramidal cells were loaded with biocytin through patch pipette during whole-cell recordings. The slices were fixed 2 hr in 4% paraformaldehyde at 4°C, rinsed three times in PBS for 10 min, and incubated with 1% triton X-100% and 2% BSA during 1 hr. Then, they were washed three times in PBS and incubated in DyLight 488 streptavidin (Vector Labs, Burlingame, USA) for 2 hr. Successfully labeled CRs and Layer II/III pyramidal cells were visualized either using a LEICA SP5 or SP8 confocal microscope with a 40X objective and a 1.3 digital zoom. Around 250 optical sections of 0.6 μm were necessary to image the whole dendritic tree of each neuron. For dendritic spines, images of apical dendrites in Layer I and basal dendrites in Layer II/III were acquired with a 63X objective (100 optical sections of 0.25 μm each). For apical dendrites, a terminal ramification in Layer I was acquired, while for basal dendrites a horizontal dendrite in Layer II/III was acquired approximately at 60 μm distance from the soma after the first ramification. 3D reconstruction was performed using the IMARIS software 8.4. Statistical analyses were performed based on the data given by IMARIS in apical and basal dendrites separately. Counting of spines was performed manually using ImageJ software on black and white maximum projections on two different segments approximately 50 µm long for each image. For morphological analysis of CRs, statistical analyses were performed based on the values calculated by image analyses using the IMARIS software (soma diameter and filament length).
 
-## Statistical analysis
+### Statistical analysis
 
 All data were expressed as mean ± SEM. A P-value less than 0.05 was considered significant. For statistical groups larger than 7, we performed a D’Agostino-Pearson normality test. According to the data structure, two-group comparisons were performed using two-tailed unpaired Student T test or Mann-Whitney U Test. Bonferroni multiple comparisons were used as post-hoc test following one-way or two-way ANOVA or the non-parametric Kruskal-Wallis Tests. For small statistical groups (less than 7), we systematically performed non-parametric tests (Mann-Whitney U Test or Kruskal-Wallis Tests with Dunn’s correction). A reconstructed pyramidal neuron displaying an exceptional basal dendrite projecting to Layer I was submitted to Grubbs test and excluded as an extreme outlier. Statistics and plotting were performed using GraphPad Prism 7.00 (GraphPad Software Inc, USA). *p<0.05, **p<0.01, ***p<0.001.

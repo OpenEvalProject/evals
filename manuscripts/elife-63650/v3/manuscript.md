@@ -42,6 +42,18 @@ To identify the PAB of strepsirrhines, we used an approach relying on sequencing
 
 Figure 1A–B shows the results for the grey mouse lemur. Using the human X chromosome to order the grey mouse lemur X scaffolds, we found that the scaffolds corresponding to human PAR1 and strata 4 and 5 have a M:F depth ratio around 1 (Figure 1B), indicating that these regions have remained pseudoautosomal in grey mouse lemurs in agreement with older cytogenetic data (Glaser et al., 1999). The rest of the grey mouse lemur X is X-specific with a M:F ratio close to 0.5. However, five regions in the X-specific region show an elevated ratio. Detailed analysis of these five regions showed that they are fragments of autosomes (see Materials and methods and Supplementary file 1B). It is not clear, however, whether this comes from contamination of the assembly of the X chromosome by autosomal scaffolds or if this has resulted from fusion of autosomal DNA fragments to the PAR during evolution, which are misplaced in the current assembly of the X chromosome. With the fragmented assembly that is available our approach can only reliably identify the PAB, not the size of the PAR. If some autosomal material were translocated to the PAR, and thus enlarging it, it would not be possible to detect it with our approach. Only an improved assembly of the X chromosome in the grey mouse lemur could confirm one of these alternatives. Despite these limitations, it is nonetheless clear that the regions homologous to human PAR1 and strata 4 and 5 are still recombining in grey mouse lemur.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63650/elife-63650-fig1-v3.jpg)
+
+**Figure 1.:** (A) Synteny plot of the human and grey mouse lemur X chromosomes. The human X was used to order the grey mouse lemur scaffolds (see Materials and methods). Black dots represent orthologous genes between the human and grey mouse lemur X chromosomes. Human strata number and boundaries follow Skaletsky et al., 2003 and Hughes and Rozen, 2012. Note that old strata have been split into smaller strata in Pandey et al., 2013. Human strata are indicated by different colours. S4 and S5 are in yellow. PARs are in red.(B) M:F read depth ratio along the grey mouse lemur X chromosome. Inferred PAR is shown in red. Regions of elevated M:F coverage ratio (inferred PAR plus other regions in grey) are indicated on panel A plot. (C) M:F read depth ratio for all seven strepsirrhine species. Inferred PARs for both the lemurs and the lorises are shown in red. Details on the PAR and the grey regions of the lorises can be found in Figure 1—figure supplement 1. In all panels, red lines indicate scaffold boundaries. See Materials and methods and Supplementary file 1B for the detailed analysis of the regions with elevated M:F coverage ratio shown in grey.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63650/elife-63650-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Synteny plot of the human and northern greater galago X chromosomes. (B) M:F read depth ratio along the northern greater galago X chromosome. See legend of Figure 1 for more details.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63650/elife-63650-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Combined M:F read depth ratio for northern greater galago (red), senegal bushbaby (green), slow loris (blue). (B) Combined M:F M:F read depth ratio for aye-ayes (red), grey mouse lemur (blue), red-bellied lemur (light blue), greater bamboo lemur (purple). Position of the PABs in lemurs and lorises is the same (see legend of Figure 1 for more details). Positions of the PABs in Mb shown here differ because of differences in the X chromosome assembly between M. murinus and O. garnetti.
+
 We repeated the same analysis for the other six species (Figure 1C). For the lemurs, we used the grey mouse lemur reference genome for the mapping because it is the only one available, and for the lorises, we used the northern greater galago reference genome for the same reason (see Maerials and methods and Figure 1—figure supplement 1 for the dot plot with the human X). Some species are quite distantly related to focal species with the reference genome and so mapping was consequently more difficult. This explains why in some cases the M:F depth ratio is more variable. The results of the aye-ayes analyses are especially noisy because of the large phylogenetic distance to the grey mouse lemur (Figure 1C). However, in all seven species studied here, the pattern is very similar (Figure 1C and a zoom on the PABs in Figure 1—figure supplement 2). All studied strepsirrhines harbour a large pseudoautosomal region including the genes that are in PAR1 and strata 4 and 5 in humans (compare Figure 1A and C for lemurs and Figure 1—figure supplement 1 and C for lorises; both lemur and loris PABs correspond to the boundary between human strata 4 and 3). We can therefore conclude that no suppression of recombination between the X and the Y has occurred in strepsirrhines since the origin of the group >65 millions years ago (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/63650/elife-63650-fig2-v3.jpg)
@@ -58,6 +70,215 @@ Our findings are consistent with the hypothesis that recombination suppression b
 
 We collected phenotypic data from the literature for our set of 13 primate species and confirmed that our sets of strepsirrhine and haplorrhine species differ significantly in sexual dimorphism (teeth and body size, assuming that they reflect the global level of sexual dimorphism in an organism; see Materials and methods and Table 1) but not in sperm competition (testes size, see Materials and methods and Table 1).
 
+**Table 1.**
+ Measures of sexual dimorphism and other features in the set of studied haplorrhine and strepsirrhine species.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Male canine height in mm (sexual selection)</th>
+      <th>Female canine height in mm (sexual selection)</th>
+      <th>Refs*</th>
+      <th>Combined testes mass in g (sperm competition)</th>
+      <th>Male body mass in g (sperm competition)</th>
+      <th>Refs*</th>
+      <th>Male body mass in g (sexual selection)</th>
+      <th>Female body mass in g (sexual selection)</th>
+      <th>Refs*</th>
+      <th>Social and mating system</th>
+      <th>Refs*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Callithrix jacchus</td>
+      <td>5.08</td>
+      <td>4.81</td>
+      <td>[1]</td>
+      <td>1.3</td>
+      <td>320</td>
+      <td>[1]</td>
+      <td>317</td>
+      <td>324</td>
+      <td>[1]</td>
+      <td>Multimale</td>
+      <td>[1]</td>
+    </tr>
+    <tr>
+      <td>D. madagascariensis</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>2621</td>
+      <td>2446</td>
+      <td>[8]</td>
+      <td>Multimale</td>
+      <td>[9]</td>
+    </tr>
+    <tr>
+      <td>E. rubriventer</td>
+      <td>10.49</td>
+      <td>9.98</td>
+      <td>[2]</td>
+      <td>1.76</td>
+      <td>2512</td>
+      <td>[1]</td>
+      <td>1980</td>
+      <td>1940</td>
+      <td>[1]</td>
+      <td>Monogamous</td>
+      <td>[1]</td>
+    </tr>
+    <tr>
+      <td>G. senegalensis</td>
+      <td>4.01</td>
+      <td>3.61</td>
+      <td>[2]</td>
+      <td>1.66</td>
+      <td>210</td>
+      <td>[3]</td>
+      <td>227</td>
+      <td>199</td>
+      <td>[2]</td>
+      <td>Unimale/Polygynous</td>
+      <td>[2]</td>
+    </tr>
+    <tr>
+      <td>Gorilla gorilla</td>
+      <td>30.26</td>
+      <td>17.4</td>
+      <td>[2]</td>
+      <td>29.6</td>
+      <td>169000</td>
+      <td>[1]</td>
+      <td>170400</td>
+      <td>71500</td>
+      <td>[1]</td>
+      <td>Polygynous</td>
+      <td>[1]</td>
+    </tr>
+    <tr>
+      <td>Homo sapiens</td>
+      <td>10.85</td>
+      <td>9.97</td>
+      <td>[2]</td>
+      <td>40.5</td>
+      <td>66825</td>
+      <td>[1]</td>
+      <td>72100</td>
+      <td>62100</td>
+      <td>[1]</td>
+      <td>Monogamous/Unimale/ Polygynous</td>
+      <td>[2]</td>
+    </tr>
+    <tr>
+      <td>Macaca mulatta</td>
+      <td>16.97</td>
+      <td>8.13</td>
+      <td>[2]</td>
+      <td>46</td>
+      <td>9200</td>
+      <td>[4]</td>
+      <td>11000</td>
+      <td>8800</td>
+      <td>[1]</td>
+      <td>Multimale</td>
+      <td>[1]</td>
+    </tr>
+    <tr>
+      <td>M. murinus</td>
+      <td>2.07</td>
+      <td>2.08</td>
+      <td>[2]</td>
+      <td>2.49</td>
+      <td>60</td>
+      <td>[5]</td>
+      <td>59</td>
+      <td>63</td>
+      <td>[2]</td>
+      <td>Unimale/Polygynous***</td>
+      <td>[2]</td>
+    </tr>
+    <tr>
+      <td>N. coucang</td>
+      <td>7.05</td>
+      <td>6.8</td>
+      <td>[2]</td>
+      <td>1.2</td>
+      <td>1058</td>
+      <td>[6]</td>
+      <td>679</td>
+      <td>626</td>
+      <td>[2]</td>
+      <td>Unimale/Polygynous</td>
+      <td>[2]</td>
+    </tr>
+    <tr>
+      <td>O. garnettii</td>
+      <td>6.53</td>
+      <td>6.04</td>
+      <td>[2]</td>
+      <td>8.93</td>
+      <td>320</td>
+      <td>[7]</td>
+      <td>794</td>
+      <td>734</td>
+      <td>[2]</td>
+      <td>Unimale/Polygynous</td>
+      <td>[2]</td>
+    </tr>
+    <tr>
+      <td>Pan troglodytes</td>
+      <td>21.72</td>
+      <td>15.26</td>
+      <td>[2]</td>
+      <td>128.9</td>
+      <td>44670</td>
+      <td>[1]</td>
+      <td>59700</td>
+      <td>45800</td>
+      <td>[1]</td>
+      <td>Multimale</td>
+      <td>[1 , 10]</td>
+    </tr>
+    <tr>
+      <td>Pongo pygmaeus</td>
+      <td>27</td>
+      <td>15.95</td>
+      <td>[2]</td>
+      <td>35.3</td>
+      <td>74640</td>
+      <td>[1]</td>
+      <td>78500</td>
+      <td>35800</td>
+      <td>[1]</td>
+      <td>Unimale/Multimale</td>
+      <td>[2]</td>
+    </tr>
+    <tr>
+      <td>P. simus**</td>
+      <td>5.94</td>
+      <td>5.91</td>
+      <td>[2]</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>2532</td>
+      <td>2248</td>
+      <td>[8]</td>
+      <td>Monogamous</td>
+      <td>[2]</td>
+    </tr>
+  </tbody>
+</table>
+
+_*References are [1] Lüpold et al., 2019, [2] Thorén et al., 2006, [3] Gomendio et al., 2011, [4] Harcourt et al., 1995, [5] Lüpold, 2013, [6] Anderson et al., 1999, [7] Dixson and Anderson, 2004, [8] Taylor and Schwitzer, 2011, [9] Mittermeier et al., 2013, [10] Soulsbury, 2010.**or Hapalemur griseus or H. alaotrensis ***or multimale, see Soulsbury, 2010. Male body mass values for sperm competition and sexual selection analyses of the same species may differ because they come from different sources (even when a single reference is mentioned)._
+
 ## Discussion
 
 Our work shows that, during primate evolution, the PAB has remained unchanged in strepsirrhines while several X-Y recombination suppression events have shortened the PAR in haplorrhines. We interpreted this as a consequence of differences in sexual dimorphism, and therefore sexual conflict, in both groups. However, strepsirrhines and haplorrhines differ in many ways and it is of course possible that other aspect(s) of their biology drove the pattern that we found. Strata formation may be influenced for example by gene flow (Matsumoto et al., 2017) and meiotic drive (Scott and Otto, 2017) as suggested recently. Previous work has shown that the genetic diversity of strepsirrhines is highly variable (e.g. Perry et al., 2012). It is however unknown whether strepsirrhines and haplorrhines exhibit systematic differences in gene flow rates and meiotic drive dynamics. A limit of this work is the use of a qualitative description of sexual dimorphism and not a quantitative one, which we could have compared to the number of strata. Future work could explore strata formation in more species and gain sufficient statistical power to compare the number of strata to phenotypic data on sexual dimorphism in primates using trait-evolution phylogenetic methods, which requires large datasets.
@@ -68,21 +289,21 @@ Although sexual dimorphism is generally low in strepsirrhines, there are some di
 
 ## Materials and methods
 
-## Research plan
+### Research plan
 
 To test whether recombination suppression is less frequent on strepsirrhine sex chromosomes compared to haplorrhines, we selected strepsirrhine species that would maximise the representation of this group’s diversity, and that were also readily accessible. We then sequenced a male and female of each species and mapped the obtained male and female reads to a reference X chromosome. The male to female depth ratio was then computed along the length of the X chromosome and the PAB was identified as the boundary between zones with a ratio of one (indicative of the PAR) and zones with a ratio of 0.5 (indicative of the non-recombining region).
 
-## Sampling
+### Sampling
 
 We selected seven species covering as much phylogenetic diversity of Strepsirrhini as possible (see Supplementary file 1A). Both infra-orders (Lemuriformes and Lorisiformes) are equally represented. A male and a female individual were sampled for all species (except O. garnettii, the northern greater galago, for which sequence data from a female individual were retrieved from NCBI, see Supplementary file 1A). Blood samples of E. rubriventer (red-bellied lemur) and P. simus (greater bamboo lemur) were collected from living animals at Zoo de Lyon in EDTA blood collection tubes to avoid coagulation. Hair samples (with follicles and roots) of the female Daubentonia madagascarensis (aye-aye) were collected from a living animal at Zoo Frankfurt. Samples of M. murinus belong to the Brunoy laboratory (UMR7179, France; agreement E91-114-1 from the Direction Départementale de la Protection des Populations de l’Essonne): the biopsies were obtained from muscle tissues after the animals’ natural death. Tissues samples of a male D. madagascariensis, and samples of G. senegalensis (Senegal bushbaby), Nycticebus coucang (slow loris) and of a male O. garnettii were obtained from the tissues and cryopreserved cell collection of the National Museum of Natural History (MNHN, Paris, see Supplementary file 1A).
 
-## DNA extraction and sequencing
+### DNA extraction and sequencing
 
 DNA from E. rubriventer, P. simus and female D. madagascariensis were extracted using two different Macherey Nagel kits. Blood samples were treated with NucleoSpin Blood Quickpure kit. Hair samples were treated with NucleoSpin DNA trace kit after a mechanical crushing of hair bulbs. DNA from the tissues and cells samples (for other species) was extracted using the DNeasy Blood and Tissue kit (Qiagen) following the manufacturer’s instructions. DNA was stored at −20° C and sent on dry ice to the sequencing platform.
 
 A genomic DNA library was constructed for each sample using Illumina kits (TruSeq nano LT for Hiseq 2500 and 3000 sequencing). Paired-end sequencing was conducted using an Illumina Hiseq 2500 (2 × 125 bp) or 3000 (2 × 150 bp) with one or two individuals per lane at Genotoul, the INRA sequencing platform in Toulouse. Sequences were all found to be of high quality (using FastQC, https://www.bioinformatics.babraham.ac.uk/projects/fastqc) and without contamination. Consequently, no trimming was done. Sequence data and coverage are shown in Supplementary file 1A.
 
-## Chromosome assembly
+### Chromosome assembly
 
 Reference X chromosomes were not available for any species and genome assemblies were only available for two species that were (1) closely related to, or the same as the species being studied, and (2) assembled to an extent that it would be possible to construct a de novo X chromosome. These were M. murinus (grey mouse lemur, Mmur_2.0 version from NCBI) and O. garnettii (northern greater galago, OtoGar4 version from NCBI).
 
@@ -90,15 +311,15 @@ De novo X chromosomes were constructed for these species using scaffolds from wh
 
 As the results of some of the analyses in this study required normalisation using an autosome from the corresponding species, a reference autosome was constructed using the same process. In this case, the human chromosome four was used to construct a de novo chromosome four for M. murinus and O. garnettii, which was selected for its similar size to the X chromosome.
 
-## Read mapping
+### Read mapping
 
 Male and female reads for each species were aligned separately to their most closely related de novo X chromosome using Bowtie version 2–2.2.7 (Langmead et al., 2009). The reads were then sorted according to their position on the de novo X chromosome using Samtools version 1.3.1 (Li et al., 2009; Li, 2011).
 
-## Coverage analysis
+### Coverage analysis
 
 Read depth was calculated for each sex at each position from the mapped reads on the de novo X using Samtools. The coverage for each sex was then normalised by dividing the depth at each position by the mean coverage depth for that species and sex on an autosome (chromosome four). The ratio of normalised male to female coverage was then calculated at each position and the data was summarised as a sliding window average using a window size of 150 kb sliding at increments of 10 kb or larger windows and increments depending on the species. This data manipulation was performed using AWK version 4.1.3.
 
-## Analysis of the regions of the strepsirrhine X chromosomes with unusual male:female coverage ratio
+### Analysis of the regions of the strepsirrhine X chromosomes with unusual male:female coverage ratio
 
 In Figure 1, both lemur and loris X chromosomes exhibit regions with male:female coverage ratio close to 1 (shown in grey) in their X-specific parts, where a ratio of 0.5 is expected. The grey mouse lemur has five such regions, the northern greater galago three. The dot plots of the strepsirrhine and the human X chromosomes (see Figure 1 and Figure 1—figure supplement 1) clearly show that little or no homologous genes are found in those regions, which suggest that they may be homologous to other human chromosomes. This would be consistent with the male:female coverage ratio of 1, typical of autosomal regions, that we found for these regions. To explore this possibility, we extracted the sequences of those regions and performed a tblastn against all the human proteins (human genome version GRCh38). In case of isoforms, the longest protein was kept so that a human gene was present only once. We then filtered the tblastn results by keeping only hits with >80% similarity (based on average nucleotide divergence between lemurs and humans) and e-value <10–9. From those, we kept human proteins covered by hits to >80% using SiLix (Miele et al., 2011). Only proteins matching to no more than one region were kept. The results of the tblastn are shown in the supplementary file 1B.
 
@@ -106,25 +327,51 @@ For all regions except one, most homologs that we identified are from the human 
 
 Changing tblastn outputs filtering did not change qualitatively the results. With lower %identity thresholds, we detected autosomal homologs for region 30.3–33.2 (for example, with %identity >65, we found two proteins from chrom. 1, one from chrom. 2 and 1 from chrom 19).
 
-## SNP density analysis
+### SNP density analysis
 
 To detect potential regions that may have stopped recombining between strepsirrhine X and Y chromosomes relatively recently, the difference in male to female SNP density was examined for all species. For each sex of each species, SNPs were called from the mapped reads using Samtools mpileup and then converted to profiles using sam2pro version 0.8 from the mlRho package (Haubold et al., 2010). Specifically, sites with coverage <5 were excluded from the analysis and SNPs were called when a site had a minor allele frequency of 0.3 times the site coverage. The ratio of male to female SNP density was calculated for 600 kb sliding windows at increments of 10 kb. 0.001 was added to allow for a Log transformation and male to female SNP density was calculated at each window as Log(sum male SNPs) – Log(sum female SNPs). This calculation was performed using R version 3.3.2. We also calculated SNP density across an autosome (chromosome four) using the same approach and computed mean male to female SNP density and 97.5% and 2.5% quantiles across all windows.
 
-## Statistical test on strata formation
+### Statistical test on strata formation
 
-We partitioned the phylogenetic tree with total branch length Δt into two subtrees with branch lengths Δt1 and Δt2, Δt = Δt1+Δt2. Assuming a constant rate λ for the formation of new evolutionary stratum, the number S of new strata formed during a time interval Δt is Poisson-distributed with parameter λΔt(1)P(S=k)=(λΔt)ke−λΔtk!.
+We partitioned the phylogenetic tree with total branch length Δt into two subtrees with branch lengths Δt1 and Δt2, Δt = Δt1+Δt2. Assuming a constant rate λ for the formation of new evolutionary stratum, the number S of new strata formed during a time interval Δt is Poisson-distributed with parameter λΔt
+
+$$
+P(S=k)=\frac{(\lambdaΔt)^{k}e^{−\lambdaΔt}}{k!}.
+$$
 
 On the subtree i, during the time interval Δti we observe the formation of Si new strata. We wanted to contrast the following two hypotheses:
 
-We used the number S1 of strata formed in the time interval Δt1 as the test statistics and compute the conditional probability to observe a larger value given the total number S1 +S2 of strata formed in the time interval Δt1+Δt2 under the null hypothesis H0:(2)P(S1≥k1|S1+S2=k1+k2,Δt1,Δt2)=(k1+k2)!(λ0(Δt1+Δt2))k1+k2e−λ0(Δt1+Δt2)×∑j=k1k1+k2λ0K1+k2Δt1jΔt2k1+k2−je−λ0(Δt1+Δt2)j!(k1+k2−j)!=∑j=k1k1+k2(k1+k2j)(Δt1Δt1+Δt2)j(Δt2Δt1+Δt2)k1+k2−j,where we recognized the binomial distribution. Note that this probability is independent of the common rate λ0 of the Poisson process. Applying this test is conceptually equivalent to tossing an unbalanced coin k1+k2 times with a probability p = Δt1 / (Δt1+Δt2) to get a head and computing the probability to obtain at least k1 times a head.
+We used the number S1 of strata formed in the time interval Δt1 as the test statistics and compute the conditional probability to observe a larger value given the total number S1 +S2 of strata formed in the time interval Δt1+Δt2 under the null hypothesis H0:
 
-The phylogenetic relationships and mean divergence times for the included primate species were recovered from a previously published primate phylogeny and divergence dates (Pozzi et al., 2014). Detailed phylogenetic relationships among strepsirrhine lineages (Horvath et al., 2008) were used to infer phylogenetic relationships in the cases when species in our analysis were not included in this reference study. The divergence times are shown in a see Supplementary file 1C. Generation times in the studied primate species are highly variable, and we are mostly interested in comparing per generation rather than per year rates of strata formation. For this purpose, the branch lengths in the phylogenetic tree needed to be rescaled by the generation times. We used the age at first reproduction as a proxy for generation time following the example of Gaillard et al., 2005. Ages at first reproduction for the extant species in the phylogenetic trees were obtained from Ernest, 2003 and maximum-likelihood estimates of this trait were obtained for internal nodes of the phylogenetic tree with the fastAnc method implemented in phytools (Revell, 2012). This method assumes that the age at first reproduction evolves neutrally according to a Brownian motion model (Felsenstein, 1973; Schluter et al., 1997). The branch lengths of the phylogenetic tree were rescaled by the generation times. In order to take into account variable generation time along a branch, we used the following method: We denoted g the time counted in generations and t the time counted in years along a phylogenetic branch. The instantaneous generation time (expressed in years per generation) along a given branch at any time t is γ(t) = dt / dg. We assume a linear trend for γ(t) between an ancestral node (at t = ta, for which γ(ta) = γa) and a descendant node (at t = td, for which γ(td) = γd). This assumption raised the following ordinary differential equation:γ(t)=dtdg=γa+λ(t−ta),where λ = (γd - γa) / (td - ta). The general form for the solutions of this equation isg(t)=1λln⁡(γa+λ(t−ta))+K,where K is an integration constant. The number of generations elapsed on the branch between times ta and td is thus(3)g(td)−g(ta)=td−taγd−γalnγdγa.
+$$
+P(S_{1}\geqk_{1}|S_{1}+S_{2}=k_{1}+k_{2},Δt_{1},Δt_{2})=\frac{(k_{1}+k_{2})!}{(\lambda_{0}(Δt_{1}+Δt_{2}))^{k_{1}+k_{2}}e^{−\lambda_{0}(Δt_{1}+Δt_{2})}}\times\sumj=k_{1}k_{1}+k_{2}\frac{\lambda_{0}^{K_{1}+k_{2}}Δt_{1}^{j}Δt_{2}^{k_{1}+k_{2}−j}e^{−\lambda_{0}(Δt_{1}+Δt_{2})}}{j!(k_{1}+k_{2}−j)!}=\sumj=k_{1}k_{1}+k_{2}(k_{1}+k_{2}j)(\frac{Δt_{1}}{Δt_{1}+Δt_{2}})^{j}(\frac{Δt_{2}}{Δt_{1}+Δt_{2}})^{k_{1}+k_{2}−j},
+$$
+
+where we recognized the binomial distribution. Note that this probability is independent of the common rate λ0 of the Poisson process. Applying this test is conceptually equivalent to tossing an unbalanced coin k1+k2 times with a probability p = Δt1 / (Δt1+Δt2) to get a head and computing the probability to obtain at least k1 times a head.
+
+The phylogenetic relationships and mean divergence times for the included primate species were recovered from a previously published primate phylogeny and divergence dates (Pozzi et al., 2014). Detailed phylogenetic relationships among strepsirrhine lineages (Horvath et al., 2008) were used to infer phylogenetic relationships in the cases when species in our analysis were not included in this reference study. The divergence times are shown in a see Supplementary file 1C. Generation times in the studied primate species are highly variable, and we are mostly interested in comparing per generation rather than per year rates of strata formation. For this purpose, the branch lengths in the phylogenetic tree needed to be rescaled by the generation times. We used the age at first reproduction as a proxy for generation time following the example of Gaillard et al., 2005. Ages at first reproduction for the extant species in the phylogenetic trees were obtained from Ernest, 2003 and maximum-likelihood estimates of this trait were obtained for internal nodes of the phylogenetic tree with the fastAnc method implemented in phytools (Revell, 2012). This method assumes that the age at first reproduction evolves neutrally according to a Brownian motion model (Felsenstein, 1973; Schluter et al., 1997). The branch lengths of the phylogenetic tree were rescaled by the generation times. In order to take into account variable generation time along a branch, we used the following method: We denoted g the time counted in generations and t the time counted in years along a phylogenetic branch. The instantaneous generation time (expressed in years per generation) along a given branch at any time t is γ(t) = dt / dg. We assume a linear trend for γ(t) between an ancestral node (at t = ta, for which γ(ta) = γa) and a descendant node (at t = td, for which γ(td) = γd). This assumption raised the following ordinary differential equation:
+
+$$
+\gamma(t)=\frac{dt}{dg}=\gamma_{a}+\lambda(t−t_{a}),
+$$
+
+where λ = (γd - γa) / (td - ta). The general form for the solutions of this equation is
+
+$$
+g(t)=\frac{1}{\lambda}ln⁡(\gamma_{a}+\lambda(t−t_{a}))+K,
+$$
+
+where K is an integration constant. The number of generations elapsed on the branch between times ta and td is thus
+
+$$
+g(t_{d})−g(t_{a})=\frac{t_{d}−t_{a}}{\gamma_{d}−\gamma_{a}}ln\frac{\gamma_{d}}{\gamma_{a}}.
+$$
 
 The ages at first reproduction for the extant species and their maximum-likelihood estimates as well as the rescaled branch lengths in the primate phylogeny are shown in Supplementary file 1D.
 
 The haplorrhine lineages in our sample have evolved for Δt1 = 188.52 My (44.23 million generations) during which S1 = 3 new strata were formed. The strepsirrhine lineages evolved for Δt2 = 321.32 My (158.52 million generations) and no new strata was formed (S2 = 0). Comparing the rates of strata formation expressed in number of events per million year lead to a marginally significant p-value (one-tailed binomial test, p=0.051), this trend became significant when considering the rates expressed in number of events per million generations (one-tailed binomial test, p=0.010).
 
-## Statistical analysis of phenotypic differences among primates
+### Statistical analysis of phenotypic differences among primates
 
 All statistical analyses were conducted with the R statistical software (R Development Core Team, 2019). Sexual dimorphism based on body mass (SSD, size-based sexual dimorphism) or on canine length (CSD, canine height based sexual dimorphism) was quantified as the logarithm of the ratio of the male to the female values (for instance, SSD = ln(male body mass/female body mass), Plavcan, 2004). The relative testes mass (RTM) was computed as the residual of the linear regression ln(combinedtestesmass)∼ln(malebodymass).
 
@@ -136,6 +383,6 @@ Sexual dimorphism based on canine height (CSD) showed the same kind of pattern: 
 
 Based on our n = 11 observations, the average relative testes mass did not significantly differ between haplorrhines (0.18 ± 0.24) and strepsirrhines (−0.21 ± 0.32). In order to avoid using residuals of a generalised least square model, we also compared testes mass in an analysis of covariance model (see Lemaître et al., 2009, for an example) including the male body mass as a covariate using the following statistical model in R: ln(combinedtestesmass)∼ln(malebodymass)+group. The results were however qualitatively unchanged (the p-value associated with the ‘group’ factor was p=0.4).
 
-## Data and code accessibility
+### Data and code accessibility
 
 All the data generated in this study is available at NCBI (project # PRJNA482296). Scripts for the entire coverage analysis pipeline (suitable for compute clusters using Torque job scheduling) are available on GitHub (https://github.com/rylanshearn/sex-read-depth; Shearn, 2018; copy archived at swh:1:rev:0e33f6b8158f4e1385af58117afeb762576cc0fb).

@@ -16,12 +16,12 @@
 
 ### Affiliations
 
-1. https://ror.org/01y2jtd41 McArdle Laboratory for Cancer Research, Department of Oncology, University of Wisconsin-Madison Madison United States
-2. https://ror.org/01y2jtd41 Molecular Cellular Pharmacology Graduate Program, University of Wisconsin-Madison Madison United States
-3. https://ror.org/01hjzeq58 Department of General Surgery, Graduate School of Medicine, Chiba University Chiba Japan
-4. https://ror.org/04a5szx83 Department of Biomedical Science, University of North Dakota School of Medicine and Health Science Grand Forks United States
-5. https://ror.org/03k1gpj17 Department of Biochemistry and Molecular Biology, Colorado State University Fort Collins United States
-6. https://ror.org/01y2jtd41 Carbone Comprehensive Cancer Center, University of Wisconsin-Madison Madison United States
+1. McArdle Laboratory for Cancer Research, Department of Oncology, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+2. Molecular Cellular Pharmacology Graduate Program, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+3. Department of General Surgery, Graduate School of Medicine, Chiba University Chiba Japan ([ROR:01hjzeq58](https://ror.org/01hjzeq58))
+4. Department of Biomedical Science, University of North Dakota School of Medicine and Health Science Grand Forks United States ([ROR:04a5szx83](https://ror.org/04a5szx83))
+5. Department of Biochemistry and Molecular Biology, Colorado State University Fort Collins United States ([ROR:03k1gpj17](https://ror.org/03k1gpj17))
+6. Carbone Comprehensive Cancer Center, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
 
 † Corresponding author
 
@@ -41,25 +41,61 @@ The p38 mitogen-activated protein kinase (MAPK) signaling pathway, activated by 
 
 ## Results
 
-## CMPD1 induces robust prometaphase arrest in breast cancer cell lines
+### CMPD1 induces robust prometaphase arrest in breast cancer cell lines
 
 Cell cycle inhibitors, particularly MTAs, are standard chemotherapy drugs for breast cancer (Jordan and Wilson, 2004). To investigate whether CMPD1 induces G2/M arrest in breast cancer cells, we treated MDA-MB-231 cells, a triple-negative breast cancer (TNBC) cell line, with varying concentrations of CMPD1 and analyzed its effects on cell cycle progression using flow cytometry. The results demonstrated that CMPD1 effectively arrested MDA-MB-231 cells in the G2/M phase at concentrations ranging from 1 to 10 µM (Figure 1B), consistent with previous observations in glioblastoma cells (Gurgis et al., 2015). Given that flow cytometry is unable to distinguish between G2 phase and mitosis, we performed high-temporal resolution live-cell imaging to further dissect the impact of CMPD1 on cell cycle progression across various breast cancer cell lines, including MDA-MB-231 (TNBC), CAL-51 (TNBC), and T-47D (luminal A) (Dai et al., 2017; Neve et al., 2006). Our findings revealed that CMPD1 induced a severe prometaphase arrest across all tested breast cancer cell lines, regardless of subtypes, with most cells remaining arrested in prometaphase for over 10 hr, while control cells divided within 30–60 min (Figure 1C and D and Videos 1–2). Since CAL-51 cells harbor wild-type TP53, whereas the other two cell lines do not (Huovinen et al., 2011; Tentler et al., 2015), these results suggest that CMPD1 induces a robust prometaphase arrest in breast cancer cells through a p53-independent mechanism.
 
-## Breast cancer cells exhibit heightened sensitivity to CMPD1 treatment compared to normal cells
+![Video 1.](https://cdn.elifesciences.org/articles/104859/elife-104859-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/104859/elife-104859-video2.mp4.jpg)
+
+### Breast cancer cells exhibit heightened sensitivity to CMPD1 treatment compared to normal cells
 
 We demonstrated that concentrations exceeding 1 µM of CMPD1 effectively induced a robust prometaphase arrest in multiple breast cancer cell lines (Figure 1D). In contrast, recent studies on MTA treatment for breast cancer have identified that the clinically relevant concentration of PTX in tissue culture cells ranges from 5 to 50 nM (Scribano et al., 2021). Within this range of concentration, PTX does not induce severe mitotic arrest as observed at higher concentrations (>1 µM), but it significantly increases the incidence of mitotic errors, thereby promoting chromosomal instability (CIN) and ultimately leading to cancer cell death (Scribano et al., 2021). Given these findings, we next explored whether sub-µM concentrations of CMPD1 could induce CIN in breast cancer cells. To this end, we treated MDA-MB-231 and CAL-51 cells, along with two non-transformed cell lines (breast epithelial MCF10A cells and retinal pigment epithelial RPE1 cells), which served as a normal cell control, with either 10 or 50 nM CMPD1. We then compared the impact of CMPD1 on chromosome segregation using live-cell imaging. In the absence of CMPD1, no significant differences in mitotic duration were observed among MCF10A, RPE1, MDA-MB-231, and CAL-51 cells (Figure 2A–C and Figure 2—figure supplement 1A–C). However, upon treatment with 10 or 50 nM CMPD1, all cell lines were arrested in prometaphase, except for MCF10A (Figure 2A–C). Notably, MDA-MB-231 and CAL-51 cells displayed significantly prolonged mitotic duration compared to MCF10A and RPE1 cells (Figure 2A–C and Figure 2—figure supplement 1A–C), indicating greater sensitivity of breast cancer cells to CMPD1 treatment relative to normal cells. Given that mitotic errors are a direct cause of CIN, we next assessed the frequency of mitotic errors, including misaligned chromosomes, chromosome bridges, lagging chromosomes, and multipolar division under these conditions (Figure 2D). Both MDA-MB-231 and CAL-51 cells exhibited a significantly higher rate of mitotic errors when exposed to 10 or 50 nM CMPD1 (Figure 2E). For instance, approximately 90% and 100% of CAL-51 cells experienced mitotic errors in the presence of 10 and 50 nM CMPD1, respectively (Figure 2E). Conversely, 90–100% of MCF10A and RPE1 cells underwent faithful cell division even at the same concentrations of CMPD1 (Figure 2E and Figure 2—figure supplement 1A–C). To determine whether CMPD1 selectively targets cancer cells compared to other MTAs, we evaluated mitotic error rates in the same cell lines treated with a clinically relevant concentration of PTX (10 nM). Our results demonstrated that both RPE1 and breast cancer cell lines displayed comparably high rates of mitotic errors when treated with 10 nM PTX treatment (Figure 2F), consistent with previous observations (Scribano et al., 2021). In summary, unlike PTX, CMPD1 induces CIN with selective toxicity toward breast cancer cells.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/104859/elife-104859-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative time-lapse images (interval: 3 min) of RPE1, MDA-MB-231, and CAL-51 cells treated with DMSO or low dose of CMPD1 (10 and 50 nM). Time is indicated in minutes post-nuclear envelope breakdown (NEBD). (B) Quantification of mitotic duration of cells as shown in (A). n=70, 60, 60, 60, 60, 65, 50, 84, 101 cells from left to right. (C) The enlarged plot of a red box region as shown in (B). (D) Representative images of mitotic defects. Note that ‘misaligned’ and ‘no metaphase (M) plate’ were annotated only when the cells exhibited this phenotype upon anaphase onset. (E) Normalized fraction of mitotic cells exhibiting accurate chromosome segregation in each condition. The data derived from CMPD1-treated cells were normalized to the data derived from DMSO-treated cells for each cell line. (F) Left: representative time-lapse images (interval: 3 min) of untreated RPE1 cells, and RPE1, MDA-MB-231, and CAL-51 cells treated with 10 nM PTX. Right: the quantification of the fraction of mitotic cells showing mitotic errors. The p-value was calculated using Tukey’s multiple comparisons test. Time is indicated in minutes post-washout. (G) Representative images of RPE1, MDA-MB-231, and CAL-51 cells in CMPD1 washout experiments. Briefly, cells were treated with 2 μΜ CMPD1 for 4 hr, followed by a wash with complete media and live-cell imaging. Time is indicated in minutes post-washout. (H) The mitotic duration of mitotic cells that were arrested by CMPD1 in the beginning of the imaging. The mitotic duration was defined as the time from the start of the imaging to anaphase onset or mitotic exit. The mean value was shown at the top right of each condition. n=54, 60, and 37 cells for RPE1, MDA-MB-231, and CAL-51 cells, respectively. The p-value was calculated using Tukey’s multiple comparisons test. (I) Quantification of the percentage of mitotic cells showing normal chromosome segregation. The mean value was shown at the top right of each condition. n=50 cells in each condition pooled from two biological replicates. The p-value was calculated using Tukey’s multiple comparisons test. The results are the mean ± s.d.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/104859/elife-104859-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative time-lapse images (interval: 4 min) of MCF10A cells treated with DMSO or low dose of CMPD1 (10 or 50 nM). DNA of MCF10A cells was stained by SiR-DNA. Time is indicated in minutes post-nuclear envelope breakdown (NEBD). (B) Quantification of mitotic duration (from NEBD to anaphase onset) of cells as shown in (A). (C) Quantification of the normalized percentage of mitotic cells showing normal chromosome segregation. Data in each condition are normalized to those in control cells. Results are the mean ± s.d. Two biological replicates were performed for each condition. The statistical comparison was conducted using Tukey’s multiple comparison test.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/104859/elife-104859-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative time-lapse images (interval: 3 min) of tubulin-mNeonGreen and H2B-mScarlet CAL-51 cells after CMPD1 washout. Time is indicated in minutes post-nuclear envelope breakdown (NEBD). (B) The percentage of mitotic RPE1 cells with normal chromosome segregation in the presence of DMSO, 2 μΜ CMPD1, or after washout of 2 μΜ CMPD1. n=at least 100 cells pooled from two biological replicates for each condition. (C) Quantification of the frequency of aberrant mitosis for cells that entered mitosis after CMPD1 washout. n=236 and 209 cells pooled from two biological replicates (from left to right). (D) Quantification of the frequency of apoptosis during interphase followed by mitosis after CMPD1 washout. n=2557 and 824 cells pooled from three to four biological replicates (from left to right). (E) Quantification of the frequency of overall apoptosis (including mitosis and interphase) after CMPD1 washout. n=2557 and 824 cells pooled from two biological replicates (from left to right). The p-values were calculated using two-tailed t-test.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/104859/elife-104859-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A–D) The normalized cell viability of MDA-MB-231 cells (A), CAL-51 cells (B), MDA-MB-231 cells (C), and p53 KO CAL-51 cells (D) treated with different concentrations of CMPD1. IC50 and the number of biological replicates are shown above each plot.
 
 To further investigate the selectivity of CMPD1 in breast cancer cells, we conducted a CMPD1 washout assay using the above cell lines, aiming to recapitulate the clinical condition where the concentration of chemotherapy drugs in patients is diluted due to the ‘drug holiday’ between regular treatments. In this assay, we treated the cells with 2 µM CMPD1 for 12 hr, followed by a washout before imaging. We observed that the mitotic duration was significantly prolonged in both MDA-MB-231 and CAL-51 cells upon CMPD1 washout (85 and 151 min, respectively) compared to RPE1 cells (14 min) (Figure 2G and H and Figure 2—figure supplement 2A and B). This suggests that breast cancer cells struggle to recover from CMPD1-induced mitotic arrest, whereas normal cells can immediately resume progression to proper anaphase. Notably, 90% and 81% of mitotic cells in MDA-MB-231 and CAL-51 cell lines, respectively, exhibited mitotic errors, whereas 50% of RPE1 cells displayed normal chromosome segregation (Figure 2G and I). These findings reinforce the hypothesis that breast cancer cells are more sensitive to CMPD1 treatment under clinically relevant conditions. Interestingly, approximately 60% of MDA-MB-231 cells that entered mitosis after CMPD1 washout still exhibited mitotic errors, while only ~10% of RPE1 cells showed errors. This suggests a prolonged impact of CMPD1 on mitosis in breast cancer cells (Figure 2—figure supplement 2C). Consistent with the increased sensitivity in breast cancer cells to CMPD1, MDA-MB-231 cells exhibited a significantly higher frequency of apoptotic cell death during or shortly after mitosis within 24 hr of CMPD1 washout, compared to RPE1 cells (Figure 2—figure supplement 2D and E).
 
 To further validate the heightened sensitivity of breast cancer cells to CMPD1, we measured its IC50 in MDA-MB-231, CAL-51, and MCF10A cells. Consistent with our live-cell imaging results, both MDA-MB-231 and CAL-51 cells exhibited significantly lower IC50 (0.21 and 0.74 µM, respectively), compared to MCF10A cells (1.16 µM) (Figure 2—figure supplement 3A–C). Moreover, IC50 of p53 knockout CAL-51 cells (Redman-Rivera et al., 2021) (0.88 µM) was comparable to that of wild-type CAL-51 cells (0.74 µM) (Figure 2—figure supplement 3B and D), further supporting the notion that CMPD1 induces a robust prometaphase arrest in breast cancer cells via a p53-independent mechanism. Collectively, these results underscore that breast cancer cells are more sensitive to CMPD1 treatment than normal MCF10A and RPE1 cells, particularly in a clinically relevant context.
 
-## CMPD1 inhibits anchorage-independent growth and tumor growth in mouse xenograft
+### CMPD1 inhibits anchorage-independent growth and tumor growth in mouse xenograft
 
 We subsequently evaluated the efficacy of CMPD1 in inhibiting anchorage-independent growth, a critical hallmark of tumorigenesis, in MDA-MB-231 cells. CMPD1 demonstrated a potent dose-dependent inhibition, with 500 nM being sufficient to completely suppress colony formation (Figure 3A and B and Figure 3—figure supplement 1A and B). Remarkably, even at a relatively lower concentration (250 nM), CMPD1 significantly reduced colony formation, surpassing the inhibitory effects of 10 µM PTX. These findings suggest that CMPD1 is more effective than PTX in inhibiting the anchorage-independent growth of MDA-MB-231 cells.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/104859/elife-104859-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative images of anchorage-independent growth assay using MDA-MB-231 cells treated with DMSO, CMPD1 at different concentrations (0.01, 0.05, 0.1, 0.25, 0.5, and 1 µM), or 10 μΜ paclitaxel (PTX). (B) The normalized number of cell colonies formed in each condition. Results are the mean ± s.d. Three biological replicates were performed for each condition. The p-value was calculated using Tukey’s multiple comparison test. (C) Schematic diagram of the mouse xenograft experiment using MDA-MB-231 and the drug treatment schedule. (D) The photo of tumors in each condition at the time of necropsy. The tumors were arranged in order based on their size. (E) Quantification of the gross weight of tumors in the mouse xenograft experiment using MDA-MB-231 cells at the time of necropsy. The p-value was calculated using Tukey’s multiple comparison test. (F) Quantification of the tumor volume during the treatment regimen in the mouse xenograft experiment using CAL-51 cells. (G) Quantification of the gross weight of tumors in the mouse xenograft experiment using CAL-51 cells at the time of necropsy. The p-value was calculated using Tukey’s multiple comparison test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/104859/elife-104859-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The whole image of the anchorage-independent growth assay as shown in Figure 3A. (B) Additional images of 10 μΜ paclitaxel (PTX)-treated or 0.01, 0.25, or 1 μΜ CMPD1-treated MDA-MB-231 cells subjected to anchorage-independent assay which are related to Figure 3A and B. (C) Quantification of the tumor volume in each condition as shown in Figure 3F and G. ** indicates that two PTX-treated mice died on day 48. (D) Schematic diagram of the mouse xenograft experiment using CAL-51 cells and the drug treatment schedule.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/104859/elife-104859-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Longitudinal monitoring of body weight in mice undergoing xenograft treatment. (B) Kaplan-Meier survival analysis of mice during the treatment regime.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/104859/elife-104859-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Representative liver histology from vehicle-, paclitaxel (PTX)-, and CMPD1-treated mice. Examples 1 and 2 are derived from different individual animals. (B) Representative kidney histology from vehicle-, PTX-, and CMPD1-treated mice. Examples 1 and 2 are derived from different individual animals. Scale bars represent 200 µm. (C) Representative hematoxylin and eosin (H&E) staining of blood smears used for white blood cell (WBC) counting. (D) Quantification of blood markers reflecting liver and kidney function, as well as WBC counts. Results are the mean values of each group.
+
 We demonstrated that CMPD1 effectively inhibits cancer cell growth in a tissue culture model. Next, we investigated whether CMPD1 could also inhibit tumor growth in vivo. To this end, we employed MDA-MB-231 and CAL-51 xenograft mouse models and found that CMPD1 significantly suppressed the tumor growth (Figure 3C–G, Figure 3—figure supplement 1C and D). Notably, while both PTX and CMPD1 suppressed tumor growth in mice, CMPD1 achieved comparable efficacy at concentrations 10–100 times lower than PTX (Figure 3D–G). Furthermore, mice in the CMPD1 treatment group continued to gain weight during the entire treatment regimen, comparable to the control group (vehicle-treated mice), with no observed mortality (Figure 3—figure supplement 2A and B). In contrast, the PTX-treated group exhibited a significant reduction in body weight and an increased number of deaths of individuals (Figure 3—figure supplement 2A and B). Additionally, anatomical examination showed no apparent abnormalities in kidneys or livers of CMPD1-treated mice, and blood marker analysis confirmed no significant impairment in these organ functions in CMPD1-treated mice compared to control (Figure 3—figure supplement 3A-D). Notably, the numbers of white blood cells (WBCs) were comparable between CMPD1-treated and control groups, while PTX-treated group showed a marked decrease in WBC levels (Figure 3—figure supplement 3C and D). These findings suggest that CMPD1 is not only effective in inhibiting tumor growth in both in vitro and in vivo models but also appears to be more potent and safer than PTX, a standard chemotherapeutic agent for breast cancer treatment.
 
-## CMPD1 exhibits a preferential depolymerizing effect on the microtubule plus end
+### CMPD1 exhibits a preferential depolymerizing effect on the microtubule plus end
 
 We demonstrated that at least ≥1 µM CMPD1 induced a robust prometaphase arrest in breast cancer cell lines (Figure 1D). A previous study suggests that CMPD1 may possess the ability to inhibit tubulin polymerization, as indicated by in vitro tubulin polymerization assay (Gurgis et al., 2015). To elucidate the mechanism underlying the CMPD1-induced prometaphase arrest, we performed high spatiotemporal resolution live-cell imaging to monitor microtubule dynamics in metaphase CAL-51 cells (see Materials and methods). In these cells, α-tubulin and histone H2B genes were endogenously labeled with mNeonGreen and mScarlet, respectively, using CRISPR-Cas9 technology (Scribano et al., 2021). Our results revealed that the signal intensity of mitotic spindles dramatically decreased to less than 10% within 8 min following CMPD1 treatment (Figure 4A and B and Videos 3–4). Concurrently, the formation of multipolar spindle poles was observed (Figure 4A). The decrease in spindle signal intensity correlated with a gradual disruption of the metaphase plate, likely due to the loss of kinetochore-microtubule attachments (Figure 4A). Moreover, we observed that CMPD1-treated cells exited the G2 phase and underwent nuclear envelope breakdown (NEBD), even though these cells were unable to assemble mitotic spindles (Figure 4C). This finding further supports that CMPD1 specifically arrests cells in prometaphase rather than G2 phase. To determine whether CMPD1 induces rapid microtubule depolymerization or the degradation of tubulin proteins, we pre-treated the cells with MG132, a proteasome inhibitor, for 1 hr prior to CMPD1 treatment (Figure 4A and B and Video 5). We found that proteasome inhibition did not prevent the CMPD1-mediated reduction in spindle signals (Figure 4A and B), suggesting that CMPD1 directly induces microtubule depolymerization in breast cancer cells.
 
@@ -67,9 +103,15 @@ We demonstrated that at least ≥1 µM CMPD1 induced a robust prometaphase arres
 
 **Figure 4.:** (A) Representative time-lapse images of CAL-51 cells expressing α-tubulin-mNeonGreen and H2B-mScarlet upon the treatment with DMSO, 2 µM CMPD1, or 10 µΜ ΜG132 along with 2 µΜ CMPD1. CMPD1 was added into the cell culture media immediately after images at the first time point were acquired. Time is indicated in minutes. (B) The quantification of the signal levels of mitotic spindles over time in each condition as shown in (A). (C) Representative time-lapse images (interval: 2 min) of a G2 phase CAL-51 cell expressing α-tubulin-mNeonGreen and H2B-mScarlet in the presence of 2 μM CMPD1. Note that the two bright dots in the tubulin channel indicate the two clustered centrosomes before nuclear envelope breakdown (NEBD). The arrow in the DNA channel indicates the time of NEBD. Time is indicated in minutes. (D) Representative kymographs depicting microtubule plus- and minus-end dynamics before and after the addition of polymerization mix supplemented with 15 µM tubulin alone, or 15 µM tubulin supplemented with either 20 µM CMPD1 or 5 µM vinblastine, as indicated (GMPCPP-stabilized microtubule seeds, magenta; microtubules polymerized from seeds, green; see Materials and methods). Plus ends are positioned to the right, and minus ends are positioned to the left of the seeds in all kymographs. Red arrow and dashed line indicate the time of addition of tubulin alone or tubulin plus drug. (E) Plot depicting the fraction of microtubules with detectable plus or minus ends 1 min after addition of drug, or tubulin alone (n=27, 29, and 30 microtubules from left to right). Results are the mean ± s.d. (F) Representative images from a time-lapse sequence showing microtubule plus- and minus-end lengths 10 s prior to, and 5 and 15 s after the addition of polymerization mix supplemented with 20 µM CMPD1. (G) Plots depicting plus-end catastrophe frequencies (n=51 and 41 microtubules from left to right), plus-end growth rates (n=172 and 91 events from left to right), and normalized maximum length (n=55 and 41 microtubules from left to right) achieved over the imaging period. (H) Plots depicting minus-end catastrophe frequencies (n=51 and 41 microtubules from left to right), minus-end growth rates (n=129 and 63 events from left to right), and normalized maximum length (n=55 and 40 microtubules from left to right) achieved over the imaging period. Results are the mean ± s.d. Data were pooled from at least two to four biological replicates (G–H).
 
+![Video 3.](https://cdn.elifesciences.org/articles/104859/elife-104859-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/104859/elife-104859-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/104859/elife-104859-video5.mp4.jpg)
+
 To further investigate the mechanism underlying CMPD1-induced microtubule depolymerization, we conducted total internal reflection fluorescence microscopy (TIRFM) experiments to observe microtubule behaviors in response to CMPD1 treatment. Although the conventional TIRFM assay using PTX-stabilized, immobilized microtubules is widely employed for its simplicity, it fails to recapitulate the dynamic behaviors of microtubules in living cells. This limitation hinders the assessment of CMPD1’s effects under more physiologically relevant conditions. To overcome this limitation, we utilized GMPCPP-stabilized microtubule seeds combined with rhodamine-labeled tubulin, which allows for the observation of microtubule growth and shrinkage at both ends, thereby better mimicking the dynamic behavior of microtubules in mitotic cells. As expected, microtubules exhibited repeated cycles of growth and shrinkage at both plus and minus ends, with a higher stability at minus ends (Figure 4D). Upon treatment with CMPD1, there was a marked reduction in the proportion of microtubules with plus-end extensions within just 1 min (Figure 4D–F), along with an increased frequency of microtubule catastrophes, reduced growth rates, and decreased maximum lengths of plus-end extensions (Figure 4G and H). Interestingly, CMPD1’s effects on the minus ends of microtubules were notably different. Neither the fraction of microtubules with minus-end extensions nor the catastrophe frequency at minus ends was significantly different from the control (Figure 4D–H). However, minor reductions were observed in the average maximum length of minus-end extensions and their growth rates (Figure 4H). In contrast, vinblastine, a well-characterized microtubule destabilizer, rapidly depolymerized microtubules from both ends (Figure 4D and E), highlighting that CMPD1 uniquely and preferentially depolymerizes microtubules from the plus ends. Collectively, our cell biology and biochemical data demonstrate that CMPD1 alone can depolymerize microtubules, with a pronounced preference for plus-end depolymerization.
 
-## CMPD1 inhibits cell migration and invasion
+### CMPD1 inhibits cell migration and invasion
 
 Since proper microtubule dynamics is essential for regulating cell locomotion (Vasiliev et al., 1970; Liao et al., 1995; Etienne-Manneville, 2013), we hypothesized that the improper microtubule dynamics induced by CMPD1 might inhibit cell migration. To investigate this, we evaluated the migratory capacity of CAL-51 cells using a wound healing assay following treatment with CMPD1. Our findings revealed that CMPD1, at concentrations ranging from 100 nM to 10 µM, significantly inhibited wound closure compared to the DMSO-treated control (Figure 5A and B), demonstrating its potential to suppress cancer cell migration and invasion. To further examine this hypothesis, we conducted a transwell-invasion assay using MDA-MB-231 cells. Treatment with CMPD1 at concentrations greater than 100 nM significantly suppressed breast cancer cell invasion, and at 1 µM, CMPD1 completely abolished this cancer invasion (Figure 5C and D).
 
@@ -79,9 +121,29 @@ Since proper microtubule dynamics is essential for regulating cell locomotion (V
 
 To determine whether CMPD1 inhibits cancer cell invasion in vivo, we assessed the frequency of invasion of cancer cells into blood vessels by examining the tissue sections of mice with cancer cell-derived xenografts described in Figure 3C. CMPD1-treated mice displayed a significantly reduced frequency of cancer cell-infiltrated vessels compared to vehicle-treated mice, suggesting that CMPD1 significantly inhibits metastasis in vivo (Figure 5E). Together, these results show that CMPD1 suppresses cancer cell migration and invasion in vitro and in vivo.
 
-## Inhibiting the p38-MK2 pathway significantly enhances the efficacy of microtubule depolymerizing agents
+### Inhibiting the p38-MK2 pathway significantly enhances the efficacy of microtubule depolymerizing agents
 
 CMPD1’s distinct capacity to inhibit tumor growth may stem from its dual inhibitory effects on both the p38-MK2 signaling pathway and microtubule dynamics. To rigorously test the hypothesis that inhibition of the p38-MK2 pathway could potentiate the efficacy of MTAs, we assessed the combinatorial effects of MK2-IN-3 (hereafter referred to as MK2i), a selective MK2 inhibitor (Anderson et al., 2007), and vinblastine at clinically relevant concentrations (1 or 5 nM) on mitotic progression in CAL-51 cells. We first confirmed that MK2i effectively inhibits MK2 activity in CAL-51 cells, as both 1 and 10 µM concentrations significantly reduced phosphorylation levels of Hsp27, a key downstream phosphorylation substrate of MK2 (Stokoe et al., 1992; Lopes et al., 2009), following H2O2-induced oxidative stress (Figure 6—figure supplement 1A and B). In contrast, treatment with 10 µM MK2i alone had no detectable impact on cell proliferation of CAL-51 cells over a 4-day period (Figure 6—figure supplement 1C). Consistent with these findings, treatment with either 10 µM MK2i or 1 nM vinblastine alone did not significantly alter the frequency of mitotic slippage or mitotic cell death compared to the control (Figure 6A). However, both individual treatments modestly prolonged mitotic duration and increased the frequency of mitotic errors (approximately two- to threefold compared to control) (Figure 6A). Strikingly, the combination of 10 µM MK2i with 1 nM vinblastine resulted in a profound synergistic effect, extending mitotic duration by approximately 13-fold and markedly increasing the frequency of mitotic errors and cell death (Figure 6A, Condition 4). A similar synergistic effect was also observed when cells were simultaneously treated with 10 µM MK2i and 5 nM vinblastine, although the 5 nM vinblastine alone induced a more pronounced mitotic arrest compared to the control and 1 nM vinblastine (Figure 6A, Condition 6). Importantly, similar synergistic effects, characterized by elevated mitotic index and increased errors during metaphase and anaphase, were also observed upon MK2 depletion by siRNA in cells treated with 1 nM vinblastine, further reinforcing the notion that suppression of the MK2 signaling pathway can enhance MTA efficacy (Figure 6—figure supplement 2A–C). To investigate whether this synergy extends beyond mitosis, we next assessed the effects of MK2i and vinblastine co-treatment on TNBC cell migration. As expected, both MK2i and vinblastine individually impaired cell migration in CAL-51 cells; however, the combination treatment resulted in significantly greater inhibition compared to the individual treatment group or the control group (Figure 6—figure supplement 3A-C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/104859/elife-104859-fig6-v1.jpg)
+
+**Figure 6.:** (A) Left: representative time-lapse images of mitotic CAL-51 cells treated with indicated combinations of drugs (10 μΜ MK2i, 1 nM vinblastine, 5 nM vinblastine). Right: quantification of the mitotic duration, mitotic error rate, mitotic slippage rate, and the frequency of death in mitosis. The fate of mitotic cells was color-coded as indicated above the quantification plots. N=100 cells pooled from two biological replicates for each condition. Time shown on the upper right corner of the representative images is indicated in minutes after nuclear envelope breakdown (NEBD). (B) Volcano plot displaying changes in gene expression following CMPD1 treatment in MDA-MB-231 cells. RNA-seq was conducted with three biological replicates. Differentially expressed genes (DEGs) are highlighted in red (upregulated) and blue (downregulated). (C) Pathway enrichment analysis of DEGs using the Gene Ontology (GO) Biological Processes (BP). Enrichment analysis was performed with the DAVID online tool. (D) Comparison of GO BP enrichment analysis of DEGs unique to MDA-MB-231 cells relative to RPE1 cells. Genes uniquely up- or downregulated in MDA-MB-231 cells, but not in RPE1 cells, were subjected to GO BP enrichment analysis.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/104859/elife-104859-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative immunofluorescence images of CAL-51 cells stained with phospho-Hsp27 (p-Hsp27) antibody following the stimulation of 500 μM H2O2 along with treatment with either 1 or 10 µM MK2 inhibitor (MK2i) for 1 hr. (B) Quantification of p-Hsp27 fluorescence intensity from (A). Each dot indicates one cell. More than 100 cells were analyzed and pooled from two color-coded biological replicates. The p-value was calculated using Tukey’s multiple comparison test. (C) Growth curves of DMSO-treated control CAL-51 cells versus 10 µM MK2i-treated CAL-51 cells over a 4-day period. The number of cells counted on each day was normalized to the number of cells seeded on day 0 and indicated in a log2 format. Results are mean ± s.d. Two biological replicates were performed.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/104859/elife-104859-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Quantification of the mitotic index in CAL-51 cells under the following conditions: DMSO control, 1 nM vinblastine (24 hr), MK2 siRNA (48 hr), and MK2 siRNA (48 hr) combined with 1 nM vinblastine (24 hr). The p-value was calculated using Tukey’s multiple comparison test. (B) Quantification of the frequency of errors in metaphase observed under the conditions described in (A). The p-value was calculated using Tukey’s multiple comparison test. (C) Quantification of the frequency of errors in anaphase under the conditions described in (A).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/104859/elife-104859-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Schematic overview of the trans-well migration assay performed using CAL-51 cells. Briefly, CAL-51 cells were starved in the media without serum for 24 hr, followed by reseeding in a trans-well in the presence of indicated drugs. (B) Representative images of migrated CAL-51 cells 16 hr posttreatment with DMSO, 10 µM MK2 inhibitor (MK2i), 0.1 nM vinblastine, or a combination of 10 µM MK2i and 0.1 nM vinblastine. The migrated cells located at the lower side of the trans-well were stained by crystal violet. (C) Quantification of migrated cells under the treatment conditions described in (B). Two biological replicates were performed and color-coded. Each dot represents the normalized number of cells in the same size of the field of view. The p-value was calculated using Tukey’s multiple comparison test.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/104859/elife-104859-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** The top 20 upregulated (left) and downregulated (right) genes identified in MDA-MB-231 cells following treatment with CMPD1 were shown, along with control (vehicle) and PTX-treated gene expression data. Heatmaps display normalized read counts in each condition.
 
 To better understand the impact of CMPD1 treatment on cancer cells at the gene expression level, we conducted RNA-seq analysis in MDA-MB-231 cells. When an FDR<0.05 was applied using DESeq2 for differential gene expression analysis, 351 genes were found to be upregulated, and 425 genes were downregulated 24 hr after treatment with 10 μM CMPD1 (Figure 6B, Figure 6—figure supplement 4 and Figure 6—source data 1). Gene Ontology (GO) Biological Process (BP) pathway enrichment analysis revealed that the most significantly enriched pathways in upregulated genes relate to cell migration, while downregulated genes are predominantly associated with mitosis and chromosome segregation (Figure 6C, Figure 6—figure supplement 4). To explore whether unique pathways were up- or downregulated specifically in cancer cells, RNA-seq analysis was also performed on RPE1 cells. Comparing differentially expressed genes between MDA-MB-231 cells and RPE1 cells, cell death and apoptosis pathways were significantly enriched in genes uniquely upregulated in MDA-MB-231 cells (Figure 6D and Figure 6—source data 2). Genes specifically downregulated in MDA-MB-231 cells were again enriched in pathways related to mitosis and chromosome segregation (Figure 6D), consistent with the results that cancer cells are more sensitive to CMPD1 treatment (Figure 2). Collectively, CMPD1 upregulates cell death pathways while selectively downregulating mitotic genes in cancer cells, highlighting its potent cancer cell specificity. The pivotal role of the p38-MK2 signaling pathway in enhancing the efficacy of microtubule destabilizers likely contributes to these observed alterations in gene expression.
 
@@ -97,19 +159,162 @@ To gain a deeper understanding of CMPD1’s cancer cell selectivity, we conducte
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>hTERT RPE-1</td>
+      <td>ATCC</td>
+      <td>CRL-4000, RRID:CVCL_4388CVCL_4388</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF10A</td>
+      <td>ATCC</td>
+      <td>CRL-10317</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>CAL-51</td>
+      <td>Scribano et al., Sci Transl Med. (2021)</td>
+      <td>RRID:CVCL_1110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Histone H2B-mScarlet, α-tubulin-mNeonGreen CAL-51</td>
+      <td>Scribano et al., Sci Transl Med. (2021)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>p53-KO CAL-51</td>
+      <td>Redman-Rivera et al., Nat Commun. (2021)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MDA-MB-231</td>
+      <td>ATCC</td>
+      <td>CRM-HTB-26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>T47-D</td>
+      <td>ATCC</td>
+      <td>HTB-133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA to MK2 (SMARTpool)</td>
+      <td>Horizon Discovery</td>
+      <td>L-003516-00-0010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Phospho-HSP27 (Ser82) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9709S, RRID:AB_11217429</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CMPD1</td>
+      <td>MedChemExpress</td>
+      <td>Cat# HY-108643</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paclitaxel</td>
+      <td>MedChemExpress</td>
+      <td>Cat# HY-B0015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vinblastine</td>
+      <td>MedChemExpress</td>
+      <td>Cat# HY-13780</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MK2-IN-3 hydrate (MK2i)</td>
+      <td>MedChemExpress</td>
+      <td>Cat# HY-112457</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MG132</td>
+      <td>MedChemExpress</td>
+      <td>Cat# HY-13259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MPS1 Inhibitor III, AZ3146</td>
+      <td>Sigma</td>
+      <td>Cat# 5319760001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BP231-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VitroGel Cell Invasion Assay Kit</td>
+      <td>TheWell Bioscienc</td>
+      <td>Cat# IA-VHM01-4P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Crystal Violet Stain Solution 1% Aqueous</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat# 26105-01</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 RPE1, MCF10A, CAL-51, MDA-MB-231, and T-47D cells were originally obtained from ATCC. Dulbecco’s modified Eagle’s medium (DMEM; Gibco) was used for culturing RPE1, CAL-51, MDA-MB-231, and T-47D cells, and DMEM/F12 supplemented with 5% (vol/vol) horse serum, 20 ng/ml hEGF, 0.5 mg/ml hydrocortisone, 100 ng/ml cholera toxin, 10 μg/ml insulin was used for culturing MCF10A cells. All the base media were additionally supplemented with 10% FBS (Sigma), 100 U/ml penicillin, and 100 mg/ml streptomycin (Gibco). All the cell lines we used were grown at 37°C in a humid incubator with 5% CO2. Routine screening for Mycoplasma contamination was performed. CMPD1 (MCE, HY-108643), PTX (MCE, HY-B0015), vinblastine (MCE, HY-13780), MK2i (MCE, HY-112457), MG132 (MCE, HY-13259), and MPS1 inhibitor (Sigma, 5319760001) were dissolved in DMSO (Thermo, BP231-1). The concentration and the treatment duration of the above drugs are shown in figures or figure legends. For the washout assay, cells were treated with 2 µM CMPD1 for 4 hr, and then washed with pre-warmed complete media four times before starting live-cell imaging. For the siRNA-mediated knockdown experiment shown in Figure 6—figure supplement 2, Lipofectamin RNAiMAX Transfection Reagent (Invitrogen, 13778075) and ON-TARGETplus SMARTpool siRNA targeting MK2 (a mixture of four siRNAs; Horizon Discovery) were used according to the manufacturer’s protocols.
 
-## Imaging
+### Imaging
 
 For time-lapse image acquisition shown in Figures 1C, 2A, F, and G, Figure 2—figure supplement 1A, and Figure 2—figure supplement 2A, Z-stack images were obtained with a step size of 3 µm (12–15 µm in total) to cover entire mitotic cells using Nikon Elements software and a high-resolution Nikon Ti-2 inverted microscope equipped with a high-resolution Hamamatsu Flash V2 CMOS camera. The following objectives were used with the above scope: ×20 (NA 0.75, air) and ×40 (NA 1.25, silicon, for spindle depolymerization inside a cell). Images were taken every 2, 3, or 4 min for 24–72 hr. Cells were grown on glass bottom dishes with #1.5 coverslips and incubated in a Tokai Hit STX stage top incubator with PureBox Shiraito clean box (Tokai Hit). Feedback control of the Tokai Hit stage top incubator was used to stably maintain 37°C at growth medium. At least two biological replicates were performed. For fixed-cell experiments (immunofluorescence), cells were grown on high-precision #1.5 coverslips and imaged by a Nikon Ti-2 equipped with a Yokogawa SCU-W1-SoRa spinning disc confocal, Uniformizer, and a Hamamatsu Flash V3 CMOS camera. Quantitative image analysis was performed with Nikon Element (Nikon) and MetaMorph (Molecular Devices). No post-image processing was performed in all images. All imaging experiments were performed with biological replicates, repeated at least two to four times.
 
-## Image analysis
+### Image analysis
 
 Mitotic duration was defined as the time between NEBD and anaphase onset or mitotic exit if the cells underwent mitotic slippage. The DNA morphology visualized by histone H2B-EGFP or -mScarlet was used for the determination of mitotic substages. Those images were analyzed using Nikon Element. At least two to four biological replicates were performed.
 
-## In vitro microtubule dynamics assays
+### In vitro microtubule dynamics assays
 
 Microtubules nucleated from GMPCPP-stabilized seeds were prepared and imaged as follows. A microtubule seed mixture was assembled from 50 µM tubulin (7:1:2, unlabeled:488-labeled: biotin-labeled) in BRB80 (80 mM PIPES, 1 mM MgCl2, 1 mM EGTA, pH 6.9), clarified by centrifugation at 90 K rpm for 10 min, divided into 2 µl aliquots, snap-frozen in liquid nitrogen, and stored at –80°C. On the day of imaging, one of these aliquots was thawed, and to this, 0.4 µl 10 mM GMPCPP (Jena Biosciences; 1 mM final) and 1.6 µl BRB80 were added to bring the tubulin to a final concentration of 20 µM. The reaction was incubated at 37°C for 10 min (to promote polymerization) and stored at room temperature for up to 1 day. To prepare for an imaging session, 1 µl of the polymerized biotinylated-seed mixture was diluted 100× (to 200 nM final) into 79 µl BRB80 and 20 µl 0.75% methylcellulose (dissolved in BRB80), both at room temperature (the mixture was pipetted up and down to sheer seeds into smaller sizes). Flow chambers (~4–6 µl in volume) were assembled by adhering plasma-cleaned and biotin/PEGylated glass coverslips (as described in a previous study; Chandradoss et al., 2014) to glass slides using double-stick tape. Streptavidin (0.1 mg/ml; in BRB80) was introduced into the imaging chamber, after which the chamber was incubated at room temperature for 2–10 min. The chamber was washed with 10 µl BRB80 supplemented with 1% Pluronic and incubated for ~10–30 s, after which 10 µl of the diluted biotinylated-seed mixture was introduced. The imaging chamber was then immediately placed on a microscope stage pre-warmed to 37°C to monitor seed density in the chamber (we did our best to ensure each chamber had a similar density of seeds). Chambers were washed with 10 µl BRB80 supplemented with 1% Pluronic.
 
@@ -117,58 +322,58 @@ For the polymerization mix, a stock solution of 50 µM tubulin (12.5:1, unlabele
 
 Microtubule dynamics were imaged using TIRFM on an inverted Nikon Ti-E using a 1.49 NA ×100 objective equipped with a Ti-S-E motorized stage (Nikon), piezo Z-control (Physik Instrumente), a motorized filter cube turret, a stage-top incubation system (LiveCell, Pathology Devices), and an iXon X3 DU897 cooled EM-CCD camera (Andor). We used 488 nm and 561 nm lasers (Nikon), a multi-pass quad filter cube set (C-TIRF for 405 nm/488 nm/561 nm/638  nm; Chroma), and emission filters mounted in a filter wheel (525 nm/50  nm, 600  nm/50 nm; Chroma). Images were acquired every 10 s. The microscope system was controlled by NIS-Elements software (Nikon), and images were analyzed using FIJI/ImageJ (NIH). Microtubule plus and minus ends were identified by exhibiting dynamics parameters distinct to each end (see kymographs in Figure 4D for examples).
 
-## Anchorage-independent growth assay
+### Anchorage-independent growth assay
 
 Six-well plates (Eppendorf) were used for the anchorage-independent growth assay. 2 ml of cell culture media mixed with autoclaved 1% agarose was used to form a bottom layer in each well. After the bottom layer solidified, 2.4×104 MDA-MB-231 cells were mixed with 2 ml of 0.8% agarose/media with or without CMPD1 or PTX and added to the top of the lower layer. After the top layer gel solidified, cells were incubated at 37°C in a humid atmosphere with 5% CO2 for 3 weeks. 3 drops of the complete media were supplied in each well every 3 days to avoid drying out. Cells were stained by 100 µg/ml of iodonitrotetrazolium chloride solution (Sigma) prior to imaging.
 
-## Cell viability assay
+### Cell viability assay
 
 Cell viability was assessed using the MTT assay. Briefly, the same number of cells was seeded in a 24-well cell culture plate for each experiment. On day 2, the media in each well was replaced with those containing DMSO or different concentrations of CMPD1, and the incubation was continued for 2 days. On day 4, the media was replaced with the media containing 1 mg/ml MTT reagent (3-(4,5 dimethylthiazol-2-yl)-2,5diphenyltetrazolium bromide) and incubated for 3 hr. Viable cells have enzymes to reduce MTT to formazan, a purple product. Formazan was released from cells by adding 320 μl of DMSO and 40 μl Sorenson’s glycine buffer (0.1 M glycine, 0.1 M NaCl [pH10.5]) to each well. The cell viability is assessed by measuring absorbance on a plate reader at 540 nm. IC50 was calculated using GraphPad Prism (version 9.5).
 
-## Cell growth assay
+### Cell growth assay
 
 Same number of cells were seeded in 24-well cell culture plate. Cells were trypsinized and resuspended with cell culture media. Viable cells were stained by Trypan blue solution and counted under the microscope.
 
-## Wound healing assay
+### Wound healing assay
 
 Histone H2B-mscarlet CAL-51 cells were plated in an eight-well chamber slide (ibidi, 80807). 24 hr after cell seeding, a stripe of cell-free zone (the wound) was manually created on a highly confluent monolayer of cells using a sterile pipette tip. The cell culture media was then immediately replaced with a new one containing the indicated drug (DMSO, 0.1, 0.5, 1, and 10 μΜ CMPD1). Then, the cell locomotion dynamics was monitored using live-cell imaging at an interval of 30 min. To quantify the cell migration efficiency in each condition, we used an ImageJ macro to measure the distance between two boundaries of the wound. Briefly, the two boundaries of the wound were drawn and defined manually. Then, 40 lines perpendicular to the two boundaries were drawn automatically, and the length of each line was calculated and shown. The distance of cell movement was calculated by subtracting the distance at 20 hr post-drug treatment from the original distance at 0 hr. Each condition was normalized to the control (DMSO-treated cells).
 
-## Cell invasion assay
+### Cell invasion assay
 
 CytoSelect 24-well cell invasion assay kit with basement membrane-coated inserts (Cell Biolabs, CBA-110) was used to assess the effects of CMPD1 and PTX on cell invasion. Following the overnight starvation of MDA-MB-231, the cells were seeded at 3.0×104 cells/well in the upper chamber and incubated in the media containing DMSO (control), CMPD1 (0.1, 1, 2, 5, 10 µΜ), or 10 µΜ PTX. The invasive cells passing through the basement membrane layer were stained, and the absorbance of each well was measured at 560 nm after extraction.
 
-## Cell migration assay
+### Cell migration assay
 
 VitroGel Cell Invasion Assay Kit (TheWell Bioscience, IA-VHM01-4P) is used to assess the synergistic effect of MK2i and Vinblastine on cell migration. We used VitroPrime Cell Culture Inserts (8 μm) to perform a transwell assay without using the hydrogel matrix provided by the kit. Following the overnight starvation of CAL-51 cells, the cells were seeded at 3.0×104 cells/well in the upper chamber and incubated in the media containing DMSO (control), 10 µΜ MK2i, 0.1 nM vinblastine, or 10 µΜ MK2i plus 0.1 nM vinblastine for 16 hr. The migrated cells passing through the membrane were fixed by PFA for 10 min and permeabilized by methanol for 2 min. Cells were stained by 1% crystal violet for 2 min and washed with PBS three times. After removing the cells at the upper side of the membrane using cotton swabs, cells located on the lower side of the membrane were imaged using a Nikon Ti Microscope equipped with Plan Fluor 10x DIC L N1 (NA = 0.30) and Nikon Digital Sight 10 camera.
 
-## Tumor xenograft
+### Tumor xenograft
 
 CB17-Prkdcscid/Jcl mice were used for the establishment of an orthotopic breast cancer model and therapy. This mice strain was purchased from CLEA Japan, Inc (Tokyo, Japan). Mice were maintained under specific pathogen-free conditions at Chiba University. All experimental procedures were performed in strict accordance with the National Institute of Health guidelines and were approved by the Institutional Animal Care and Use Committee of Chiba University. For in vivo experiments, sample sizes were determined on the basis of knowledge of inter-tumor growth rate variability, gained from previous model-specific experience. MDA-MB-231 and CAL-51 cells (1×106 cells/0.1 ml) in 1:1 PBS:Matrigel were subcutaneously injected into the mammary fat pad of female mice. The experiment was performed twice. The first experiment used MDA-MB-231 cells, and the second experiment used both MDA-MB-231 and CAL-51 cells. In the first experiment, tumors were allowed to develop for 30 days, after which mice were randomly assigned to each treatment group, ensuring that baseline tumor volumes were balanced between treatment arms. The mice were treated with CMPD1 (i.p., 15 μg/mouse/injection, 10 times for 3 weeks) or PTX (i.p., 5 mg/kg/injection, 10 times for 3 weeks). In the second experiment, treatment was started on the 10th day after transplantation, and the treatment drug was administered five times over 16 days until the 26th day. During the second experiment, weight was measured, blood was collected at the end of the study, and the liver and kidneys were also removed for further analysis. Both maximum and minimum diameters of the resulting tumors were measured every other day using a slide caliper. Tumor volumes were calculated as previously described. Mice were euthanized via CO2 inhalation. The maximum tumor diameter permitted under the relevant animal protocols is 25 mm, and this limit was not exceeded in any experiment.
 
-## H&E staining
+### H&E staining
 
 Hematoxylin and eosin (H&E) staining was performed using tissue samples obtained from the xenograft model. Tissue samples were thin sliced to a thickness of 4 µm. For staining, slides were first stained with hematoxylin for 5 min, followed by eosin staining for 2 min. The slides were then dehydrated through a series of ethanol solutions, cleared in xylene, and mounted. The staining was evaluated based on the tissue morphology.
 
-## Blood invasion evaluation
+### Blood invasion evaluation
 
 All slides from mouse tumors with or without CMPD1 treatment were stained with H&E stain and were screened for vascular invasion using strict criteria based on previous reports (Pinder et al., 1994; Lauria et al., 1995). All slides were blindly evaluated by two investigators (MT and HY). All these vascular invasions were adopted only if they were picked up on H&E staining. Vascular invasion was determined by observing tumor cells within blood vessels. The cases were categorized as blood vessel invasion positive or negative. Representative histological images of positive and negative blood vessel invasion status are shown in Figure 5E.
 
-## Biochemical analysis of animal models
+### Biochemical analysis of animal models
 
 Whole blood samples were collected from all mice, and blood biochemistry determinations were performed with an Automatic Analyzer Model 7070 (Hitachi Co., Ltd., Tokyo, Japan). Parameters were aspartate aminotransferase, alanine aminotransferase, γ-glutamyl transpeptidase, blood urea nitrogen, and creatinine (Oriental Yeast Co., Ltd., Tokyo, Japan).
 
-## Giemsa staining
+### Giemsa staining
 
 Slides were fixed in absolute methanol for 30 s to facilitate cell attachment and preserve optimal staining characteristics, then allowed to air-dry. The slides were immersed in Wright-Giemsa stain (container 1) for 60 s without agitation. For the Rapid Wright’s One-Step Stain reagent, the staining duration was reduced to 15–30 s. Excess stain was removed by draining or blotting the edges of the slides, avoiding direct contact with the smear. The slides were then immersed in buffer solution (container 2) for 60 s (15–45 s for the RapidWright’s reagent), followed by draining to remove excess buffer. Subsequently, the slides were dipped in rinse solution (container 3) for 2–10 s, with the RapidWright’s reagent requiring quick dips for 25 s. Excessive buffering and rinsing were avoided to prevent decolorization. The slides were air-dried in a vertical position on a paper towel. For microscopic analysis, leukocytes were counted per field at low magnification, ensuring that fields were selected uniformly across specimens.
 
-## FACS
+### FACS
 
 MDA-MB-231 cells were incubated with or without CMPD1 for 24 hr. Cells were then twice washed with PBS. Approximately 2×106 cells were fixed with ice-cold ethanol for 16 hr. Samples were washed with cold PBS and stained with PI (Sigma) containing Triton-X (Sigma) and DNAse-free RNAse A (Sigma) in PBS for 30 min. Then, samples were measured by a flow cytometer.
 
-## RNA-seq
+### RNA-seq
 
 24 hr after 10 μM CMPD1 treatment, RNAs were purified by the RNeasy Mini Kit (QIAGEN). For MDA-MB-231 cells, RNA-seq library preparation was conducted with the QuantSeq 3’ mRNA-Seq Library Prep Kit FWD for Illumina (LEXOGEN), and the libraries were sequenced on a NextSeq500 at Kazusa DNA Research Institute. In the case of RPE1 cells, sequencing libraries were prepared using the TruSeq Stranded mRNA Kit and sequenced on a NovaSeq 6000 at Macrogen Japan. Adapter sequences were removed from the raw sequencing data, and after adapter trimming, reads were mapped to the human reference genome (GRCh38) using the STAR aligner (Dobin et al., 2013). Read counts for each gene were collected by featureCounts (version v1.6.4) (Liao et al., 2014). Differentially expressed genes were identified with DESeq2 (Love et al., 2014) using filtering thresholds of FDR<0.05. Pathway enrichment analysis was performed by DAVID (Huang et al., 2009).
 
-## Statistics
+### Statistics
 
 Statistical significance was determined using two-tailed unpaired Student’s t-test for comparison between two independent groups or one-way ANOVA for multiple comparisons. For TIRF experiments in Figure 2G–I, p-values were calculated from Z scores (Figure 2G; as previously described in Marzo et al., 2019), Mann-Whitney tests (Figure 2H and I, left and right), or by unpaired two-tailed Welch’s t-tests (Figure 2H and I, middle). The latter two tests were selected as follows: the unpaired two-tailed Welch’s t-test was used when the datasets were determined to be normal (by the D’Agostino and Pearson test for normality; p>0.05). In the case where only one (or neither) was determined to be normal (p<0.05), the Mann-Whitney test was used. For significance, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 were considered statistically significant. All quantifications were based on at least two independent biological replicates.

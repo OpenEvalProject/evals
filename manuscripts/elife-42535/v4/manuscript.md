@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.42535.001 The Alphaproteobacteria is an extraordinarily diverse and ancient group of bacteria. Previous attempts to infer its deep phylogeny have been plagued with methodological artefacts. To overcome this, we analyzed a dataset of 200 single-copy and conserved genes and employed diverse strategies to reduce compositional artefacts. Such strategies include using novel dataset-specific profile mixture models and recoding schemes, and removing sites, genes and taxa that are compositionally biased. We show that the Rickettsiales and Holosporales (both groups of intracellular parasites of eukaryotes) are not sisters to each other, but instead, the Holosporales has a derived position within the Rhodospirillales . A synthesis of our results also leads to an updated proposal for the higher-level taxonomy of the Alphaproteobacteria . Our robust consensus phylogeny will serve as a framework for future studies that aim to place mitochondria, and novel environmental diversity, within the Alphaproteobacteria .
+The Alphaproteobacteria is an extraordinarily diverse and ancient group of bacteria. Previous attempts to infer its deep phylogeny have been plagued with methodological artefacts. To overcome this, we analyzed a dataset of 200 single-copy and conserved genes and employed diverse strategies to reduce compositional artefacts. Such strategies include using novel dataset-specific profile mixture models and recoding schemes, and removing sites, genes and taxa that are compositionally biased. We show that the Rickettsiales and Holosporales (both groups of intracellular parasites of eukaryotes) are not sisters to each other, but instead, the Holosporales has a derived position within the Rhodospirillales. A synthesis of our results also leads to an updated proposal for the higher-level taxonomy of the Alphaproteobacteria. Our robust consensus phylogeny will serve as a framework for future studies that aim to place mitochondria, and novel environmental diversity, within the Alphaproteobacteria.
 
 ## Introduction
 
@@ -36,23 +36,160 @@ Here, we revised the phylogeny of the Alphaproteobacteria by using a large datas
 
 ## Results
 
-## The genomes and phylogenetic positions of three novel endosymbiotic alphaproteobacteria (Rickettsiales and Holosporales)
+### The genomes and phylogenetic positions of three novel endosymbiotic alphaproteobacteria (Rickettsiales and Holosporales)
 
 We sequenced the genomes of the novel holosporalean ‘Candidatus Finniella inopinata’, an endosymbiont of the rhizarian amoeboflagellate Viridiraptor invadens (Hess et al., 2016), and two undescribed rickettsialeans, one associated with the heterolobosean amoeba Stachyamoeba lipophora and the other with the euglenoid flagellate Peranema trichophorum. The three genomes are small with a reduced gene number and high A + T% content, strongly suggesting an endosymbiotic lifestyle (Table 1). Comparisons of their rRNA genes show that these genomes are truly novel, being considerably divergent from other described alphaproteobacteria. As of February 2018, the closest 16S rRNA gene to that of the Stachyamoeba-associated rickettsialean belongs to Rickettsia massiliae str. AZT80, with only 88% identity. On the other hand, the closest 16S rRNA gene to that of the Peranema-associated rickettsialean belongs to an endosymbiont of Acanthamoeba sp. UWC8, which is only 92% identical. Phylogenetic analysis of both the 16S rRNA gene and a dataset that comprises 200 single-copy conserved marker genes (see below) confirm that each species belongs to different families and orders within the Alphaproteobacteria (Supplementary file 1 and Figure 2—figure supplement 1). ‘Candidatus Finniella inopinata’ belongs to the recently described ‘Candidatus Paracaedibacteraceae’ in the Holosporales (Hess et al., 2016), whereas the Stachyamoeba-associated rickettsialean belongs to the Rickettsiaceae, and the Peranema-associated rickettsialean belongs to the ‘Candidatus Midichloriaceae’, in the Rickettsiales.
 
-## Compositional heterogeneity appears to be a major confounding factor affecting phylogenetic inference of the Alphaproteobacteria
+**Table 1.**
+ Genome features for the three novel rickettsialeans sequenced in this study.See Supplementary file 1 as well.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>‘Candidatus Finniella inopinata’</th>
+      <th>Stachyamoeba-associated rickettsialean</th>
+      <th>Peranema-associated rickettsialean</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genome size</td>
+      <td>1,792,168 bp</td>
+      <td>1,738,386 bp</td>
+      <td>1,375,759 bp</td>
+    </tr>
+    <tr>
+      <td>N50</td>
+      <td>174,737 bp</td>
+      <td>1,738,386 bp</td>
+      <td>28,559 bp</td>
+    </tr>
+    <tr>
+      <td>Contig number</td>
+      <td>28</td>
+      <td>1</td>
+      <td>125</td>
+    </tr>
+    <tr>
+      <td>Gene number†</td>
+      <td>1741</td>
+      <td>1588</td>
+      <td>1223</td>
+    </tr>
+    <tr>
+      <td>A + T% content</td>
+      <td>56.58%</td>
+      <td>67.01%</td>
+      <td>59.13%</td>
+    </tr>
+    <tr>
+      <td>Family</td>
+      <td>'Candidatus Paracaedibacteraeae'</td>
+      <td>Rickettsiaceae</td>
+      <td>‘Candidatus Midichloriaceae’</td>
+    </tr>
+    <tr>
+      <td>Order</td>
+      <td>Holosporales</td>
+      <td>Rickettsiales</td>
+      <td>Rickettsiales</td>
+    </tr>
+    <tr>
+      <td>Completeness‡</td>
+      <td>94.96%</td>
+      <td>97.12% (=100%)</td>
+      <td>92.08%</td>
+    </tr>
+    <tr>
+      <td>Redundancy‡</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>2.1%</td>
+    </tr>
+  </tbody>
+</table>
+
+_†as predicted by Prokka v.1.13 (rRNA genes were searched with BLAST).‡as estimated by Anvi’o v.2.4.0 using the Campbell et al., 2013 marker gene set._
+
+### Compositional heterogeneity appears to be a major confounding factor affecting phylogenetic inference of the Alphaproteobacteria
 
 The average-linkage clustering of amino acid compositions shows that the Rickettsiales, Pelagibacterales (together with alphaproteobacterium HIMB59) and Holosporales are clearly distinct from other alphaproteobacteria. This indicates that these three taxa have divergent proteome amino acid compositions (Figure 1A). These taxa also have the lowest GARP:FIMNKY amino acid ratios in all the Alphaproteobacteria (Figure 1A; GARP amino acids are encoded by G + C%-rich codons, whereas FIMNKY amino acids are encoded by A + T%-rich codons. Proteomes that have low GARP:FIMNKY ratios are compositionally biased and therefore come from A + T%-rich genomes); the Pelagibacterales (including alphaproteobacterium HIMB59) being the most divergent, followed by the Rickettsiales and then the Holosporales. Such biased amino acid compositions appear to be the consequence of genome nucleotide compositions that are strongly biased toward high A + T%—a scatter plot of genome G + C% and proteome GARP:FIMNKY ratios shows a similar clustering of the Rickettsiales, Pelagibacterales (including alphaproteobacterium HIMB59) and Holosporales (Figure 1B). This compositional similarity in the proteomes of the Rickettsiales, Pelagibacterales (plus alphaproteobacterium HIMB59) and Holosporales, which also turn out to be the longest-branched alphaproteobacterial groups in previously published phylogenies (e.g. Wang and Wu, 2015), could be the outcome of either a shared evolutionary history (i.e. the groups are most closely related to one another), or alternatively, evolutionary convergence (e.g. because of similar lifestyles or evolutionary trends toward small cell and genome sizes).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig1-v4.jpg)
 
-**Figure 1.:** Alphaproteobacteria is a major factor that confounds phylogenetic inference.There are great disparities in the genome G + C% content and amino acid compositions of the Rickettsiales, Pelagibacterales (including alphaproteobacterium HIMB59) and Holosporales with all other alphaproteobacteria. (A) A UPGMA (average-linkage) clustering of amino acid compositions (based on the 200 gene set for the Alphaproteobacteria) shows that the Rickettsiales (brown), Pelagibacterales (maroon), and Holosporales (light blue) all have very similar proteome amino acid compositions. At the tips of the tree, GARP:FIMNKY amino acid ratio values are shown as bars. (B) A scatterplot depicting the strong correlation between G + C% (nucleotide compositions) and GARP:FIMNKY ratios (amino acid composition) for the 120 taxa in the Alphaproteobacteria (and outgroup) shows a similar clustering of the Rickettsiales, Pelagibacterales (including alphaproteobacterium HIMB59) and Holosporales.
+**Figure 1.:** There are great disparities in the genome G + C% content and amino acid compositions of the Rickettsiales, Pelagibacterales (including alphaproteobacterium HIMB59) and Holosporales with all other alphaproteobacteria. (A) A UPGMA (average-linkage) clustering of amino acid compositions (based on the 200 gene set for the Alphaproteobacteria) shows that the Rickettsiales (brown), Pelagibacterales (maroon), and Holosporales (light blue) all have very similar proteome amino acid compositions. At the tips of the tree, GARP:FIMNKY amino acid ratio values are shown as bars. (B) A scatterplot depicting the strong correlation between G + C% (nucleotide compositions) and GARP:FIMNKY ratios (amino acid composition) for the 120 taxa in the Alphaproteobacteria (and outgroup) shows a similar clustering of the Rickettsiales, Pelagibacterales (including alphaproteobacterium HIMB59) and Holosporales.
 
 As a first step to discriminate between these two alternatives, we used maximum likelihood to estimate a tree on a dataset that comprised 200 single-copy and rarely laterally transferred marker genes for the Alphaproteobacteria (as determined by Phyla-AMPHORA; see Materials and methods for more details; Wang and Wu, 2013) under the site-heterogenous model LG+PMSF(ES60)+F+R6. The resulting tree united the Rickettsiales, Pelagibacterales (with alphaproteobacterium HIMB59 at its base) and Holosporales in a fully supported clade (Figure 2A; see Figure 2—figure supplement 1 for labeled trees). The clustering of these three groups is suggestive of a phylogenetic artefact (e.g. long-branch attraction or LBA); indeed, such a pattern resembles the one seen in the tree of proteome amino acid compositions (see Figure 1A). This is because the three groups have the longest branches in the Alphaproteobacteria tree and have compositionally biased and fast-evolving genomes (see Figure 2). If evolutionary convergence in amino acid compositions is confounding phylogenetic inference for the Alphaproteobacteria, methods aimed at reducing compositional heterogeneity might disrupt the clustering of the Rickettsiales, Pelagibacterales and Holosporales.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig2-v4.jpg)
+
+**Figure 2.:** All branch support values are 100% SH-aLRT and 100% UFBoot unless annotated. (A) A maximum-likelihood tree inferred under the LG + PMSF(ES60)+F + R6 model and from the untreated dataset which is highly compositionally heterogeneous. The three long-branched orders, the Rickettsiales, Pelagibacterales (including alphaprotobacterium HIMB59) and Holosporales, that have similar amino acid compositions form a clade. (B) A maximum-likelihood tree inferred under the LG + PMSF(ES60)+F + R6 model and from a dataset whose compositional heterogeneity has been decreased by removing 50% of the most biased sites according to ɀ. In this phylogeny, the clustering of the Rickettsiales, Pelagibacterales and Holosporales is disrupted. The Pelagibacterales is sister to the Rhodobacterales, Caulobacterales and Rhizobiales. The Holosporales, and alphaproteobacterium HIMB59, become sister to the Rhodospirillales. The Rickettsiales remains as the sister to the Caulobacteridae. See Figure 2—figure supplement 1 for taxon names. See Figure 2—figure supplement 3 for the Bayesian consensus trees inferred in PhyloBayes MPI v1.7 under the CAT-Poisson+Γ4 model. See also Figure 2—figure supplements 2 and 4–7.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig2-figsupp1-v4.jpg)
+
+**Figure 2—figure supplement 1.:** Branch support values are 100% SH-aLRT and 100% UFBoot unless annotated.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig2-figsupp2-v4.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig2-figsupp3-v4.jpg)
+
+**Figure 2—figure supplement 3.:** Branch support values are 1.0 posterior probabilities unless annotated. (A) Bayesian consensus tree inferred from the full dataset which is highly compositionally heterogeneous. (B) Bayesian consensus tree inferred from a dataset whose compositional heterogeneity has been decreased by removing 50% of the most biased sites according to ɀ. See Figure 2A and B for the most likely trees inferred in IQ-TREE v1.5.5 and the LG + PMSF(C60)+F + R6 model.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig2-figsupp4-v4.jpg)
+
+**Figure 2—figure supplement 4.:** Branch support values are 100% SH-aLRT and 100% UFBoot unless annotated. (A) A tree that results from the analysis of the untreated dataset. (B) A tree that results from the analysis of a dataset from which the 50% most compositionally biased sites have been removed. (C) A tree that results from the analysis of a dataset that has been recoded into the four-character state recoding scheme S4 (recoding scheme: RNCM EHIPTWV ADQLKS GFY). (D) A tree that results from the analysis of a dataset that only comprises the 40 most compositionally homogeneous genes.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig2-figsupp5-v4.jpg)
+
+**Figure 2—figure supplement 5.:** In this tree, derived from an analysis using a model that does not account for compositional heterogeneity across sites, the Geminicoccaceae has a more derived placements within the Rhodospirillales as sister to the Acetobacteraceae.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig2-figsupp6-v4.jpg)
+
+**Figure 2—figure supplement 6.:** Magnetococcales in gray; Rickettsiales in brown; Pelagibacterales in maroon; Holosporales in light blue; Rhizobiales in green; Caulobacterales in orange; Rhodobacterales in red; Sneathiellales in pink; Rhodospirillales in purple; Beta- and Gammaproteobacteria in black.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig2-figsupp7-v4.jpg)
+
 To further test whether the clustering of the Rickettsiales, Pelagibacterales and Holosporales is real or artefactual, we used several different strategies to reduce the compositional heterogeneity of our dataset (see Figure 2—figure supplement 2 for the diverse strategies employed). When removing the 50% most compositionally biased (heterogeneous) sites according to ɀ (a novel metric that measures amino acid compositional disparity at a site; see Materials and methods), the clustering between the Rickettsiales, Pelagibacterales, alphaproteobacterium HIMB59 and Holosporales is disrupted (Figure 2B; see also Figure 2—figure supplement 3). The new more derived placements for the Pelagibacterales, alphaproteobacterium HIMB59 and Holosporales are well supported (further described below), and support tends to increase as compositionally biased sites are removed (Supplementary file 2A). Furthermore, when each of these long-branched and compositionally biased taxa is analyzed in isolation (i.e. in the absence of the others), and compositional heterogeneity is further decreased, new phylogenetic patterns emerge that are incompatible, or in conflict, with their clustering (Figure 2—figure supplement 4 and Figure 3—figure supplements 1–5). Various strategies to reduce compositional heterogeneity, such as removing the most compositionally biased sites, recoding the data into reduced character-state alphabets, or using only the most compositionally homogeneous genes, converge to very similar phylogenetic patterns for the Alphaproteobacteria in which the clustering of the Rickettsiales, Pelagibacterales, alphaprotobacterium HIMB59 and Holosporales is disrupted; the Pelagibacterales, alphaproteobacterium HIMB59 and Holosporales have much more derived phylogenetic placements (e.g., Figure 3, Figure 2—figure supplement 4 and Figure 3—figure supplements 1–5). On the other hand, removing fast-evolving sites does not disrupt the clustering of these three long-branched groups (Supplementary file 2B), suggesting that high evolutionary rates per site are not a major confounding factor when inferring the phylogeny of the Alphaproteobacteria.
 
-## The Holosporales is unrelated to the Rickettsiales and is instead most likely derived within the Rhodospirillales
+![Figure 3.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig3-v4.jpg)
+
+**Figure 3.:** Branch support values are 100% SH-aLRT and 100% UFBoot unless annotated. (A) A maximum-likelihood tree, inferred under the LG + PMSF(ES60)+F + R6 model, to place the Holosporaceae in the absence of the Rickettsiales, Pelagibacterales, and alphaproteobacterium HIMB59 and when compositional heterogeneity has been decreased by removing 50% of the most biased sites. The Holosporaceae is sister to the Azospirillaceae fam. nov. within the Rhodospirillales. (B) A maximum-likelihood tree, inferred under the GTR + ES60 S4+F + R6 model, to place the Holosporaceae in the absence of the Rickettsiales, Pelagibacterales, and alphaproteobacterium HIMB59, and when the data have been recoded into a four-character state alphabet (the dataset-specific recoding scheme S4: ARNDQEILKSTV GHY CMFP W) to reduce compositional heterogeneity. This phylogeny shows a pattern that matches that inferred when compositional heterogeneity has been alleviated through site removal. See Figure 3—figure supplement 6 for the Bayesian consensus trees inferred in PhyloBayes MPI v1.7 and under the and the CAT-Poisson+Γ4 model. See also Figure 3—figure supplements 1–5 and 7–8.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig3-figsupp1-v4.jpg)
+
+**Figure 3—figure supplement 1.:** Branch support values are 100% SH-aLRT and 100% UFBoot unless annotated. (A) A tree that results from the analysis of the untreated dataset. () A tree that results from the analysis of a dataset from which the 50% most compositionally biased sites have been removed. (C) A tree that results from the analysis of a dataset that has been recoded into the four-character state recoding scheme S4 (recoding scheme: ARNDQEILKSTV GHY CMFP W). (D) A tree that results from the analysis of a dataset that only comprises the 40 most compositionally homogeneous genes.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig3-figsupp2-v4.jpg)
+
+**Figure 3—figure supplement 2.:** Branch support values are 100% SH-aLRT and 100% UFBoot unless annotated. (A) A tree that results from the analysis of the untreated dataset. (B) A tree that results from the analysis of a dataset from which the 50% most compositionally biased sites have been removed. (C) A tree that results from the analysis of a dataset that has been recoded into the four-character state recoding scheme S4 (recoding scheme: PY RNMF GHLKTW ADCQEISV). (D) A tree that results from the analysis of a dataset that only comprises the 40 most compositionally homogeneous genes.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig3-figsupp3-v4.jpg)
+
+**Figure 3—figure supplement 3.:** Branch support values are 100% SH-aLRT and 100% UFBoot unless annotated. (A) A tree that results from the analysis of the untreated dataset. (B) A tree that results from the analysis of a dataset from which the 50% most compositionally biased sites have been removed. (C) A tree that results from the analysis of a dataset that has been recoded into the four-character state recoding scheme S4 (recoding scheme: RNMF GHLKTW ADCQEISV PY). (D) A tree that results from the analysis of a dataset that only comprises the 40 most compositionally homogeneous genes. Branch support values are 100% SH-aLRT and 100% UFBoot unless annotated.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig3-figsupp4-v4.jpg)
+
+**Figure 3—figure supplement 4.:** Branch support values are 100% SH-aLRT and 100% UFBoot unless annotated. (A) A tree that results from the analysis of the untreated dataset. (B) A tree that results from the analysis of a dataset from which the 50% most compositionally biased sites have been removed. (C) A tree that results from the analysis of a dataset that has been recoded into the four-character state recoding scheme S4 (recoding scheme: EGIV ARNDQHKMPSY LFT CW). (D) A tree that results from the analysis of a dataset that only comprises the 40 most compositionally homogeneous genes.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig3-figsupp5-v4.jpg)
+
+**Figure 3—figure supplement 5.:** Branch support values are 100% SH-aLRT and 100% UFBoot unless annotated.( A) A tree that results from the analysis of the untreated dataset. (B) A tree that results from the analysis of a dataset from which the 50% most compositionally biased sites have been removed. (C) A tree that results from the analysis of a dataset that has been recoded into the four-character state recoding scheme S4 (recoding scheme: RLKMT ANDQEIPSV CW GHFY). (D) A tree that results from the analysis of a dataset that only comprises the 40 most compositionally homogeneous genes.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig3-figsupp6-v4.jpg)
+
+**Figure 3—figure supplement 6.:** Branch support values are 1.0 posterior probabilities unless annotated. (A) Bayesian consensus tree inferred to place the Holosporales in the absence of the Rickettsiales and the Pelagibacterales and when compositional heterogeneity has been decreased by removing 50% of the most biased sites according to ɀ. (B) Bayesian consensus tree inferred to place the Holosporales in the absence of the Rickettsiales and the Pelagibacterales and when the data have been recoded into a four-character state alphabet (the dataset-specific recoding scheme S4: ARNDQEILKSTV GHY CMFP W) to reduce compositional heterogeneity. See Figure 2A and B for the most likely trees inferred in IQ-TREE v1.5.5 and the LG + PMSF(C60)+F + R6 and GTR + ES60 S4+F + R6 models, respectively.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig3-figsupp7-v4.jpg)
+
+**Figure 3—figure supplement 7.:** Branch support values are 100% SH-aLRT and 100% UFBoot unless annotated.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/42535/elife-42535-fig3-figsupp8-v4.jpg)
+
+**Figure 3—figure supplement 8.:** Branch support values are 1.0 posterior probabilities unless annotated.
+
+### The Holosporales is unrelated to the Rickettsiales and is instead most likely derived within the Rhodospirillales
 
 The Holosporales has traditionally been considered part of the Rickettsiales sensu lato because it appears as sister to the Rickettsiales in many trees (e.g. Hess et al., 2016; Montagna et al., 2013; Santos and Massard, 2014). It is exclusively composed of endosymbiotic bacteria living within diverse eukaryotes, and such a lifestyle is shared with all other members of the Rickettsiales (with the possible exception of a recently reported ectosymbiotic rickettialean; see Castelli et al., 2018). When we decrease, and then account for, compositional heterogeneity, we recover tree topologies in which the Holosporales moves away from the Rickettsiales (e.g. Figure 2B, Figure 2—figure supplement 4B and D). For example, the Holosporales becomes sister to all free-living alphaproteobacteria (the Caulobacteridae) when only the 40 most homogeneous genes are used (Figure 2—figure supplement 4D) or when 10% of the most compositionally biased sites are removed (Supplementary file 2A). When compositional heterogeneity is further decreased by removing 50% of the most compositionally biased sites, the Holosporales becomes sister to the Rhodospirillales (Figure 2B and Supplementary file 2A; and see also Figure 2—figure supplement 4B).
 
@@ -60,15 +197,15 @@ Similarly, when the long-branched and compositionally biased Rickettsiales, Pel
 
 A fourth independent analysis further supports a derived placement of the Holosporales nested within the Rhodospirillales. Bayesian inference using the CAT-Poisson+Γ4 model, on a dataset whose compositional heterogeneity had been decreased by removing 50% of the most compositionally biased sites but for which no taxon had been removed, also recovered the Holosporales as sister to the Azospirillaceae (see Figure 2—figure supplement 3).
 
-## The Rhodospirillales is a diverse order and comprises five well-supported families
+### The Rhodospirillales is a diverse order and comprises five well-supported families
 
 The Rhodospirillales is an ancient and highly diversified group, but unfortunately this is rarely obvious from published phylogenies because most studies only include a few species for this order (Williams et al., 2007; Georgiades et al., 2011; Ferla et al., 2013). We have included a total of 31 Rhodospirillales taxa to better cover its diversity. Such broad sampling reveals trees with five clear subgroups within the Rhodospirillales that are well-supported in most of our analyses (e.g. Figures 2B and 3). First is the Acetobacteraceae which comprises acetic acid (e.g. Acetobacter oboediens), acidophilic (e.g. Acidisphaera rubrifaciens), and photosynthetic (bacteriochlorophyll-containing; for example, Rubritepida flocculans) bacteria. The Acetobacteraceae is strongly supported and relatively divergent from all other families within the Rhodospirillales. Sister to the Acetobacteraceae is another subgroup that comprises many photosynthetic bacteria, including the type species for the Rhodospirillales, Rhodospirillum rubrum, as well as the magnetotactic bacterial genera Magnetospirillum, Magnetovibrio and Magnetospira (Figure 3). This subgroup best corresponds to the poorly defined and paraphyletic Rhodospirillaceae family. We amend the Rhodospirillaceae taxon and restrict it to the clade most closely related to the Acetobacteraceae. As described above, when artefacts are accounted for, the Holosporales most likely branches within the Rhodospirillales and therefore we suggest the Holosporales sensu Szokoli et al. (2016) be lowered in rank to the family Holosporaceae (containing for example, Caedibacter sp. 37–49 and ‘Candidatus Paracaedibacter symbiosus’), which is sister to the Azospirillaceae fam. nov. (Figure 3). The Azospirillaceae contains the purple bacterium Rhodocista centenaria and the epibiotic (neither periplasmic nor intracellular) predator Micavibrio aeruginosavorus, among others. The Holosporaceae and the Azospirillaceae clades appear to be sister to the Rhodovibriaceae fam. nov. (Figure 3), a well-supported group that comprises the purple nonsulfur bacterium Rhodovibrio salinarum, the aerobic heterotroph Kiloniella laminariae, and the marine bacterioplankter ‘Candidatus Puniceispirillum marinum’ (or the SAR116 clade). Each of these subgroups and their interrelationships—with the exception of the Holosporaceae that branches within the Rhodospirillales only after compositional heterogeneity is countered—are strongly supported in nearly all of our analyses (e.g. see Figures 2B and 3).
 
-## The Geminicoccaceae might be sister to all other free-living alphaproteobacteria (the Caulobacteridae)
+### The Geminicoccaceae might be sister to all other free-living alphaproteobacteria (the Caulobacteridae)
 
 The Geminicocacceae is a recently proposed family within the Rhodospirillales (Proença et al., 2018). It is currently represented by only two genera, Geminicoccus and Arboriscoccus (Foesel et al., 2007; Proença et al., 2018). In most of our trees, however, Tistrella mobilis is often sister to Geminicoccus roseus with full statistical support (e.g., Figures 2B and 3A, but see Figure 3—figure supplement 6 for an exception) and we therefore consider it to be part of the Geminococcaceae. Interestingly, the Geminicoccaceae tends to have two alternative stable positions in our analyses, either as sister to all other families of the Rhodospirillales (e.g. Figures 2A and 3A), or as sister to all other orders of the Caulobacteridae (i.e. representing the most basal lineage of free-living alphaproteobacteria; Figure 2B and Figure 2—figure supplement 3B, Figure 3B and Figure 3—figure supplement 6, or Figure 2—figure supplement 4B, Figure 3—figure supplement 1C, Figure 3—figure supplement 2B–D, Figure 3—figure supplement 3B and D, and Figure 3—figure supplement 5C). Our analyses designed to alleviate compositional heterogeneity, specifically site removal and recoding (without taxon removal), favor the latter position for the Geminicoccaceae (Figures 2B and 3B). Moreover, as compositionally biased sites are progressively removed, support for the affiliation of the Geminicoccaceae with the Rhodospirillales decreases, and after 50% of the sites have been removed, the Geminicoccaceae emerges as sister to all other free-living alphaproteobacteria with strong support (>95% UFBoot; Supplementary file 2A). In further agreement with this trend, the much simpler model LG4X places the Geminicocacceae in a derived position as sister to the Acetobacteraceae (Figure 2—figure supplement 5), but as model complexity increases, and compositional heterogeneity is reduced, the Geminicoccaceae moves closer to the base of the Alphaproteobacteria (Figures 2A and 3A). Such a placement suggests that the Geminicoccaceae may be a novel and independent order-level lineage in the Alphaproteobacteria. However, because of the uncertainty in our results we opt here for conservatively keeping the Geminicoccaceae as the sixth family of the Rhodospirillales (Figure 3A).
 
-## Other deep relationships in the Alphaproteobacteria (Pelagibacterales, Rickettsiales, alphaproteobacterium HIMB59)
+### Other deep relationships in the Alphaproteobacteria (Pelagibacterales, Rickettsiales, alphaproteobacterium HIMB59)
 
 The clustering of the Pelagibacterales (formerly the SAR11 clade) with the Rickettsiales and Holosporales is more easily disrupted than that of the Holosporales, either when long-branched (or compositionally biased) taxon removal is performed to control for compositional attractions or not. The removal of compositionally biased sites (from 30% on; 16,320 out of 54,400 sites; see Supplementary file 2A, Figure 2B, Figure 2—figure supplement 3B and Figure 3—figure supplement 4B), data recoding into four-character states (Figure 3—figure supplement 4C), and a set of the most compositionally homogeneous genes (Figure 3—figure supplement 4D), all support a derived placement of the Pelagibacterales as sister to the Rhodobacterales, Caulobacterales and Rhizobiales. Attempts to account for compositional heterogeneity both across sites (e.g. Rodríguez-Ezpeleta and Embley, 2012; Viklund et al., 2012; Viklund et al., 2013; Martijn et al., 2018) and taxa (e.g. Luo et al., 2013; Luo, 2015) tend to disrupt the potentially artefactual clustering of the Pelagibacterales and the Rickettsiales (in contrast to the studies of for example, Williams et al., 2007; Thrash et al., 2011; Georgiades et al., 2011) that did not account for compositional heterogeneity). The Caulobacterales is sister to the Rhizobiales, and the Rhodobacterales sister to both (e.g. Figures 2B and 3). This is consistent throughout most of our results and such interrelationships become very robustly supported as compositional heterogeneity is increasingly alleviated (Supplementary file 2A). The placement of the Rickettsiales as sister to the Caulobacteridae (i.e. all other alphaproteobacteria) remains stable across different analyses (see Supplementary file 2A, and also Figure 2B and Figure 3—figure supplement 2); this is also true when the other long-branched taxa, the Pelagibacterales, alphaproteobacterium HIMB59 and Holosporales, and even the Beta- Gammaproteobacteria outgroup, are removed (see Figure 3—figure supplement 2 and Figure 3—figure supplement 3). Yet, the interrelationships inside the Rickettsiales order remain uncertain; the ‘Candidatus Midichloriaceae’ becomes sister to the Anaplasmataceae when fast-evolving sites are removed (Supplementary file 2B), but to the Rickettsiaceae when compositionally biased sites are removed (Supplementary file 2A). The placement of alphaproteobacterium HIMB59 is uncertain (e.g. see Figure 2 and Figure 2—figure supplement 3, and Figure 2—figure supplement 4 and Figure 3—figure supplement 5; in contrast to Grote et al., 2012); taxon-removal analyses suggest that alphaproteobacterium HIMB59 is sister to the Caulobacteridae (Figure 3—figure supplement 5), but the inclusion of any other long-branched group immediately destabilizes this position (e.g. see Figure 2 and Figure 2—figure supplement 2, and Figure 2—figure supplement 4). This is consistent with previous reports that suggest that alphaproteobacterium HIMB59 is not closely related to the Pelagibacterales (Viklund et al., 2013; Martijn et al., 2018).
 
@@ -84,11 +221,65 @@ The order Rhodospirillales is quite diverse and includes many purple nonsulfur b
 
 Based on our fairly robust phylogenetic patterns, we have updated the higher-level taxonomy of the Alphaproteobacteria (Table 2). We exclude the Magnetococcales from the Alphaproteobacteria class because of its divergent nature (e.g. see Figure 1 in Esser et al., 2007 which shows that many of Magnetococcus’ genes are more similar to those of beta-, and gammaproteobacteria). In agreement with its intermediate phylogenetic placement, we endorse the Magnetococcia class as proposed by Parks et al. (2018). At the highest level we define the Alphaproteobacteria class as comprising two subclasses sensu Ferla et al. (2013), the Rickettsidae and the Caulobacteridae. The former contains the Rickettsiales, and the latter contains all other orders, which are primarily and ancestrally free-living alphaproteobacteria. The order Rickettsiales comprises three families as previously defined, the Rickettsiaceae, the Anaplasmataceae, and the ‘Candidatus Midichloriaceae’. On the other hand, the Caulobacteridae is composed of seven phylogenetically well-supported orders: the Rhodospirillales, Sneathiellales, Sphingomonadales, Pelagibacterales, Rhodobacterales, Caulobacterales and Rhizobiales. Among the many species claimed to represent new order-level lineages on the basis of 16S rRNA gene trees (Cho and Giovannoni, 2003; Kwon et al., 2005; Kurahashi et al., 2008; Wiese et al., 2009; Harbison et al., 2017), only Sneathiella deserves order-level status (Kurahashi et al., 2008), since all others have derived placements in our trees and those published by others (Williams et al., 2012; Bazylinski et al., 2013; Venkata Ramana et al., 2013; Harbison et al., 2017). The Rhodospirillales order comprises six families, three of which are new, namely the Holosporaceae, Azospirillaceae and Rhodovibriaceae (Table 2). This new higher-level classification of the Alphaproteobacteria updates and expands those presented by Ferla et al. (2013), the ‘Bergey’s Manual of Systematics of Archaea and Bacteria’ (Garrity et al., 2005; Whitman, 2015), and ‘The Prokaryotes’ (Rosenberg et al., 2014). The classification scheme proposed here could be partly harmonized with that recently proposed by Parks et al. (2018) by elevating the six families within the Rhodospirllales to the order level; the trees by Parks et al. (2018), however, are in conflict with those shown here and many of their proposed taxa are as well.
 
-## Conclusions
+**Table 2.**
+ A higher-level classification scheme for the Alphaproteobacteria and the Magnetococcia classes within the Proteobacteria, and the Rickettsiales and Rhodospirillales orders within the Alphaproteobacteria.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Class 1. Alphaproteobacteria Garrity et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Subclass 1. Rickettsidae Ferla et al., 2013 emend. Muñoz-Gómez et al. 2019 (this work)</td>
+    </tr>
+    <tr>
+      <td>Order 1. Rickettsiales Gieszczkiewicz, 1939 emend. Dumler et al., 2001</td>
+    </tr>
+    <tr>
+      <td>Family 1. Anaplasmataceae Philip, 1957                                           Family 2. 'Candidatus Midichloriaceae' Montagna et al., 2013                                          Family 3. Rickettsiaceae Pinkerton, 1936</td>
+    </tr>
+    <tr>
+      <td>Subclass 2. Caulobacteridae Ferla et al., 2013 emend. Muñoz-Gómez et al. 2019</td>
+    </tr>
+    <tr>
+      <td>Order 1. Rhodospirillales Pfennig and Trüper, 1971 emend. Muñoz-Gómez et al. 2019</td>
+    </tr>
+    <tr>
+      <td>Family 1. Acetobacteraceae (ex Henrici 1939) Gillis and De Ley, 1980                                          Family 2. Rhodospirillaceae Pfennig and Trüper, 1971 emend. Muñoz-Gómez et al. 2019                                          Family 3. Azospirillaceae fam. nov. Muñoz-Gómez et al. 2019                                          Family 4. Holosporaceae Szokoli et al., 2016                                           Family 5. Rhodovibriaceae fam. nov. Muñoz-Gómez et al. 2019                                          Family 6. Geminicoccaceae Proença et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Order 2. Sneathiellales Kurahashi et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Order 3. Sphingomonadales Yabuuchi and Kosako, 2005</td>
+    </tr>
+    <tr>
+      <td>Order 4. Pelagibacterales Grote et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Order 5. Rhodobacterales Garrity et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Order 6. Caulobacterales Henrici and Johnson, 1935</td>
+    </tr>
+    <tr>
+      <td>Order 7. Rhizobiales Kuykendall, 2005</td>
+    </tr>
+    <tr>
+      <td>Class 2. Magnetococcia Parks et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Order 1. Magnetococcales Bazylinski et al., 2013</td>
+    </tr>
+  </tbody>
+</table>
+
+### Conclusions
 
 We employed a combination of methods to decrease compositional heterogeneity in order to disrupt artefacts that arise when inferring the phylogeny of the Alphaproteobacteria. This is an example of the complex nature of the historical signal contained in modern genomes and the limitations of our current evolutionary models to capture these signals. A robust phylogeny of the Alphaproteobacteria is a precondition for placing the mitochondrial lineage. This is because including mitochondria certainly exacerbates the already strong biases in the data, and therefore represents additional sources of artefacts in phylogenetic inference (as seen in Wang and Wu, 2015) where the Holosporales is attracted by both mitochondria and the Rickettsiales). The robust phylogenetic framework developed here will serve as a reference for future studies that aim to place mitochondria and novel not-yet-cultured environmental diversity within the Alphaproteobacteria.
 
-## Taxon descriptions
+### Taxon descriptions
 
 Rickettsidae emend. (Alphaproteobacteria) Rickettsia is the type genus of the subclass. The Rickettsidae subclass is here amended by redefining its circumscription so it remains monophyletic by excluding the Pelagibacterales order. The emended Rickettsidae subclass within the Alphaproteobacteria class is defined based on phylogenetic analyses of 200 genes which are predominantly single-copy and vertically inherited (unlikely laterally transferred) when compositional heterogeneity was decreased by site removal or recoding. Phylogenetic (node-based) definition: the least inclusive clade containing Anaplasma phagocytophilum HZ, Rickettsia typhi Wilmington, and ‘Candidatus Midichloria mitochondrii’ IricVA. The Rickettsidae does not include: Pelagibacter sp. HIMB058, ‘Candidatus Pelagibacter sp.’ IMCC9063, alphaproteobacterium HIMB59, Caedibacter sp. 37–49, ‘Candidatus Nucleicultrix amoebiphila’ FS5, ‘Candidatus Finniella lucida’, Holospora obtusa F1, Sneathiella glossodoripedis JCM 23214, Sphingomonas wittichii, and Brevundimonas subvibrioides ATCC 15264.
 
@@ -104,7 +295,7 @@ Holosporaceae (Rhodospirillales, Alphaproteobacteria) Holospora is the type genu
 
 ## Materials and methods
 
-## Genome sequencing
+### Genome sequencing
 
 Cultures of Viridiraptor invadens strain Virl02, the host of ‘Candidatus Finniella inopinata’, were grown on the filamentous green alga Zygnema pseudogedeanum strain CCAC 0199 as described in Hess and Melkonian (2013). Once the algal food was depleted, Viridiraptor cells were harvested by filtration through a cell strainer (mesh size 40 µm to remove algal cell walls) and centrifugation (~1000 g for 15 min). For short-read sequencing, DNA extraction of total gDNA was carried out with the ZR Fungal/Bacterial DNA MicroPrep Kit (Zymo Research) using a BIO101/Savant FastPrep FP120 high-speed bead beater and 20 µL of proteinase K (20 mg/mL). A sequencing library was made using the NEBNext Ultra II DNA Library Prep Kit (New England Biolabs). Paired-end DNA sequencing libraries were sequenced with an Illumina MiSeq instrument (Dalhousie University; Canada). (number of reads = 3,006,282, read length = 150 bp). For long-read sequencing, DNA extraction was performed using a CTAB and phenol-chloroform method. Total gDNA was further cleaned through a QIAGEN Genomic-Tip 20/G. A sequencing library was made using the Nanopore Ligation Sequencing Kit 1D (SQK-LSK108). Sequencing was done on a portable MinION instrument (Oxford Nanopore Technologies). (total bases = 191,942,801 bp, number of reads = 73,926, longest read = 32,236 bp, mean read length = 2,596 bp, mean read quality = 9.4).
 
@@ -112,11 +303,11 @@ Peranema trichophorum strain CCAP 1260/1B was obtained from the Culture Collecti
 
 Stachyamoeba lipophora strain ATCC 50324 cells feeding on Escherichia coli were harvested and then broken up with pestle and mortar in the presence of glass beads (<450 µm diameter). Total gDNA was extracted using the QIAGEN Genomic G20 Kit. A paired-end sequencing library was made using a TruSeq DNA Library Prep Kit (Illumina). DNA sequencing libraries were sequenced with an Illumina MiSeq instrument (Genome Quebec Innovation Centre; Canada). (number of reads = 35,605,415, read length = 100 bp).
 
-## Genome assembly and annotation
+### Genome assembly and annotation
 
 Short sequencing reads produced in an Illumina MiSeq from Viridiraptor invadens, Peranema trichophorum, and Stachyamoeba lipophora were first assessed with FASTQC v0.11.6 and then, based on its reports, trimmed with Trimmomatic v0.32 (Bolger et al., 2014) using the options: HEADCROP:16 LEADING:30 TRAILING:30 MINLEN:36. Illumina adapters were similarly removed with Trimmomatic v0.32 using the option ILLUMINACLIP. Long-sequencing reads produced in a Nanopore MinION instrument from Viridiraptor invadens were basecalled with Albacore v2.1.7, adapters were removed with Porechop v0.2.3, lambda phage reads were removed with NanoLyse v0.5.1, quality filtering was done with NanoFilt v2.0.0 (with the options ‘--headcrop 50 -q 8 l 1000’), and identity filtering against the high-quality short Illumina reads was done with Filtlong v0.2.0 (and the options ‘--keep_percent 90 --trim --split 500 --length_weight 10 min_length 1000’). Statistics were calculated throughout the read processing workflow with NanoStat v0.8.1 and NanoPlot v1.9.1. A hybrid co-assembly of both processed Illumina short reads and Nanopore long reads from Viridiraptor invadens was done with SPAdes v3.6.2 (Bankevich et al., 2012). Assemblies of the Illumina short reads from Peranema trichophorum and Stachyamobea lipophora were separately done with SPAdes v3.6.2 (Bankevich et al., 2012). The resulting assemblies for both Viridiraptor invadens and Peranema trichophorum were later separately processed with the Anvi’o v2.4.0 pipeline (Eren et al., 2015) and refined genome bins corresponding to ‘Candidatus Finniella inopinata’ and the Peranema-associated rickettsialean were isolated primarily based on tetranucleotide sequence composition and taxonomic affiliation of its contigs. A single contig corresponding to the genome of the Stachyamoeba-associated rickettsialean was obtained from its assembly and this was circularized by collapsing the overlapping ends of the contig. Gene prediction and genome annotation was carried out with Prokka v.1.13 (see Table 1).
 
-## Dataset assembly (taxon and gene selection)
+### Dataset assembly (taxon and gene selection)
 
 The selection of 120 taxa was largely based on the phylogenetically diverse set of alphaproteobacteria determined by Wang and Wu (2015). To this set of taxa, recently sequenced and divergent unaffiliated alphaproteobacteria were added, as well as those claimed to constitute novel order-level taxa. Some other groups, like the Pelagibacterales, Rhodospirillales and the Holosporales, were expanded to better represent their diversity. A set of four betaproteobacteria and four gammaproteobacterial were used as outgroup (see Figure 2—figure supplement 6 for taxon names; see Supplementary file 2C for accession numbers).
 
@@ -124,28 +315,38 @@ A set of 200 gene markers (54,400 sites; 9.03% missing data, see Figure 2—figu
 
 Variations of our full set were made to specifically assess the placement of each long-branched and compositionally biased group individually. In other words, each group with comparatively long branches (the Rickettsiales, Pelagibacterales, Holosporales, and alphaproteobacterium HIMB59) was analyzed in isolation, that is, in the absence of other long-branched and compositionally biased taxa. This was done with the purpose of reducing the potential artefactual attraction among these groups. Taxon removal was done in addition to compositionally biased site removal and data recoding into reduced character-state alphabets (for a summary of the different methodological strategies employed see Figure 2—figure supplement 2).
 
-## Removal of compositionally biased and fast-evolving sites
+### Removal of compositionally biased and fast-evolving sites
 
-As an effort to reduce artefacts in phylogenetic inference from our dataset (which might stem from extreme divergence in the evolution of the Alphaproteobacteria), we removed sites estimated to be highly compositionally heterogeneous or fast evolving. The compositional heterogeneity of a site was estimated by using a metric intended to measure the degree of disparity between the most %AT-rich taxa and all others. Taxa were ordered from lowest to highest proteome GARP:FIMNKY ratios; ‘GARP’ amino acids are encoded by %GC-rich codons, whereas ‘FIMNKY’ amino acids are encoded by %AT-rich codons. The resulting plot was visually inspected and a GARP:FIMNKY ratio cutoff of 1.06 (which represented a discontinuity or gap in the distribution which separated the long-branched and compositionally biased taxa Pelagibacterales, Holosporales and Rickettsiales from all others) was chosen to divide the dataset into low GARP:FMINKY (or %AT-rich) and higher GARP:FIMNKY (or ‘GC-rich’) taxa (Figure 2—figure supplement 7). Next, we determined the degree of compositional bias per site (ɀ) for the frequencies of both FIMNKY and GARP amino acids between the %AT-rich and all other (‘GC-rich’) alphaproteobacteria. To calculate this metric for each site the following formula was used:ɀ=(πFIMNKY%AT−rich−πFIMNKY%GC−rich)+(πGARP%GC−rich−πGARP%AT−rich)where πFIMNKY and πGARP are the sum of the frequencies for FIMNKY and GARP amino acids at a site, respectively, for either ‘% AT-rich’ or ‘% GC-rich’ taxa. According to this metric, higher values measure a greater disparity between %AT-rich alphaproteobacteria and all others; a measure of compositional heterogeneity or bias per site. The most compositionally heterogeneous sites according to ɀ were progressively removed using the software SiteStripper (Verbruggen, 2018) in increments of 10%. We also progressively removed the fastest evolving sites in increments of 10%. Conditional mean site rates were estimated under the LG+C60+F+R6 model in IQ-TREE v1.5.5 using the ‘-wsr’ flag (Nguyen et al., 2015).
+As an effort to reduce artefacts in phylogenetic inference from our dataset (which might stem from extreme divergence in the evolution of the Alphaproteobacteria), we removed sites estimated to be highly compositionally heterogeneous or fast evolving. The compositional heterogeneity of a site was estimated by using a metric intended to measure the degree of disparity between the most %AT-rich taxa and all others. Taxa were ordered from lowest to highest proteome GARP:FIMNKY ratios; ‘GARP’ amino acids are encoded by %GC-rich codons, whereas ‘FIMNKY’ amino acids are encoded by %AT-rich codons. The resulting plot was visually inspected and a GARP:FIMNKY ratio cutoff of 1.06 (which represented a discontinuity or gap in the distribution which separated the long-branched and compositionally biased taxa Pelagibacterales, Holosporales and Rickettsiales from all others) was chosen to divide the dataset into low GARP:FMINKY (or %AT-rich) and higher GARP:FIMNKY (or ‘GC-rich’) taxa (Figure 2—figure supplement 7). Next, we determined the degree of compositional bias per site (ɀ) for the frequencies of both FIMNKY and GARP amino acids between the %AT-rich and all other (‘GC-rich’) alphaproteobacteria. To calculate this metric for each site the following formula was used:
 
-## Data recoding
+$$
+ɀ=(\piFIMNKY_{%AT−rich}−\piFIMNKY_{%GC−rich})+(\piGARP_{%GC−rich}−\piGARP_{%AT−rich})
+$$
 
-Our datasets were recoded into four- and six-character state amino acid alphabets using dataset-specific recoding schemes aimed at minimizing compositional heterogeneity in the data (Susko and Roger, 2007). The program minmax-chisq, which implements the methods of Susko and Roger (2007), was used to find the best recoding schemes—please see Figure 3, Figure 2—figure supplement 4 and Figure 3—figure supplement 1–6, and Figure 3—figure supplement 8 legends for the specific recoding schemes used for each dataset. The approach uses the chi-squared (X2) statistic for a test of homogeneity of frequencies as a criterion function for determining the best recoding schemes. Let πi denote the frequency of bin i for the recoding scheme currently under consideration. For instance, suppose the amino acids were recoded into four bins: RNCM EHIPTWV ADQLKS GFY, then π4 would be the frequency with which the amino acids G, F or Y were observed. Let πis be the frequency of bin i for the sth taxa. Then the X2 statistic for the null hypothesis that the frequencies are constant, over taxa, against the unrestricted hypothesis ists= ∑is(πis−πi)2/πi
+where $\piFIMNKY$ and $\piGARP$ are the sum of the frequencies for FIMNKY and GARP amino acids at a site, respectively, for either ‘% AT-rich’ or ‘% GC-rich’ taxa. According to this metric, higher values measure a greater disparity between %AT-rich alphaproteobacteria and all others; a measure of compositional heterogeneity or bias per site. The most compositionally heterogeneous sites according to ɀ were progressively removed using the software SiteStripper (Verbruggen, 2018) in increments of 10%. We also progressively removed the fastest evolving sites in increments of 10%. Conditional mean site rates were estimated under the LG+C60+F+R6 model in IQ-TREE v1.5.5 using the ‘-wsr’ flag (Nguyen et al., 2015).
 
-The X2 statistic provides a measure of how different the frequencies for the sth taxa are from the average frequencies. The maximum ts over s is taken as an overall measure of how heterogeneous the frequencies are for a given recoding scheme. The minmax-chisq program searches through recoding schemes, moving amino acids from one bin to another, to try to minimize the max⁡ts (Susko and Roger, 2007).
+### Data recoding
 
-## Phylogenetic inference
+Our datasets were recoded into four- and six-character state amino acid alphabets using dataset-specific recoding schemes aimed at minimizing compositional heterogeneity in the data (Susko and Roger, 2007). The program minmax-chisq, which implements the methods of Susko and Roger (2007), was used to find the best recoding schemes—please see Figure 3, Figure 2—figure supplement 4 and Figure 3—figure supplement 1–6, and Figure 3—figure supplement 8 legends for the specific recoding schemes used for each dataset. The approach uses the chi-squared (X2) statistic for a test of homogeneity of frequencies as a criterion function for determining the best recoding schemes. Let $\pi_{i}$ denote the frequency of bin $i$ for the recoding scheme currently under consideration. For instance, suppose the amino acids were recoded into four bins: RNCM EHIPTWV ADQLKS GFY, then $\pi_{4}$ would be the frequency with which the amino acids G, F or Y were observed. Let $\pi_{is}$ be the frequency of bin $i$ for the $s$th taxa. Then the X2 statistic for the null hypothesis that the frequencies are constant, over taxa, against the unrestricted hypothesis is
+
+$$
+t_{s}= \sumis(\pi_{is}−\pi_{i})^{2}/\pi_{i}
+$$
+
+The X2 statistic provides a measure of how different the frequencies for the $s$th taxa are from the average frequencies. The maximum $t_{s}$ over $s$ is taken as an overall measure of how heterogeneous the frequencies are for a given recoding scheme. The minmax-chisq program searches through recoding schemes, moving amino acids from one bin to another, to try to minimize the $max⁡t_{s}$ (Susko and Roger, 2007).
+
+### Phylogenetic inference
 
 The inference of phylogenies was primarily done under the maximum likelihood framework and using IQ-TREE v1.5.5 (Minh et al., 2013; Nguyen et al., 2015). ModelFinder in IQ-TREE v1.5.5 (Kalyaanamoorthy et al., 2017) was used to assess the best-fitting amino acid empirical matrix (e.g. JTT, WAG, and LG), on a maximum-likelihood tree, to our full dataset of 120 taxa and 200 conserved single-copy marker genes (see Supplementary file 2E and Supplementary file 2F). We first inferred guide trees (for a PMSF analysis) with a model that comprises the LG empirical matrix, with empirical frequencies estimated from the data (F), six rates for the FreeRate model to account for rate heterogeneity across sites (R6), and a mixture model with 60 amino acid profiles (C60) to account for compositional heterogeneity across sites—LG + C60+F + R6. Because the computational power and time required to properly explore the whole tree space (given such a big dataset and complex model) was too high, constrained tree searches were employed to obtain these initial guide trees (see Figure 2—figure supplement 6 for the constraint tree). Many shallow nodes were constrained if they received maximum UFBoot and SH-aLRT support in a LG + PMSF(C60)+F + R6 analysis. All deep nodes, those relevant to the questions addressed here, were left unconstrained (Figure 2—figure supplement 6). The guide trees were then used together with a dataset-specific mixture model ES60 to estimate site-specific amino acid profiles, or a PMSF (Posterior Mean Site Frequency Profiles) model, that best account for compositional heterogeneity across sites (Wang et al., 2018). The dataset-specific empirical mixture model ES60 also has 60 categories but, unlike the general C60, was directly estimated from our large dataset of 200 genes and 120 alphaproteobacteria (and outgroup) using the methods described in Susko et al. (2018); ModelFinder (Kalyaanamoorthy et al., 2017) suggests that the LG + ES60+F + R6 model is the best-fitting model; the R6 model component, however, considerably increases computational burden; see Supplementary file 2F and Supplementary file 2G). Final trees were inferred using the LG + PMSF(ES60)+F + R6 model and a fully unconstrained tree search. Those datasets that produced the most novel topologies under maximum likelihood were further analyzed under a Bayesian framework using PhyloBayes MPI v1.7 and the CAT-Poisson+Γ4 model (Lartillot and Philippe, 2004; Lartillot et al., 2009). This model allows for a very large number of classes to account for compositional heterogeneity across sites and, unlike in the more complex CAT-GTR+Γ4 model, also allows for convergence to be more easily achieved between MCMC chains. PhyloBayes MCMC chains were run for at least 10,000 cycles until convergence between the chains was achieved and the largest discrepancy (i.e. maxdiff parameter) was ≤0.4 (except for the untreated dataset analyzed in Figure 2—figure supplement 3A; see Supplementary file 2H for several summary statistics for each PhyloBayes MCMC chain, including discrepancy and effective sample size values). A consensus tree was generated from two PhyloBayes MCMC chains using a burn-in of 500 trees and sub-sampling every 10 trees.
 
 Phylogenetic analyses of recoded datasets into four-character state alphabets were analyzed using IQ-TREE v1.5.5 and the model GTR + ES60 S4+F + R6. ES60S4 is an adaptation of the dataset-specific empirical mixture model ES60 to four-character states. It is obtained by adding the frequencies of the amino acids that belong to each bin in the dataset-specific four-character state scheme S4 (see Data Recoding for details). Phylogenetics analyses of recoded datasets into six-character state alphabets were analyzed using PhyloBayes MPI v1.7 and the CAT-Poisson+Γ4 model. Maximum-likelihood analyses with a six-state recoding scheme could not be performed because IQ-TREE currently only supports amino acid datasets recoded into four-character states.
 
-## Other analyses
+### Other analyses
 
 The 16S rRNA genes of ‘Candidatus Finniella inopinata’, and the presumed endosymbionts of Peranema trichophorum and Stachyamoeba lipophora were identified with RNAmmer 1.2 server and BLAST searches. A set of 16S rRNA genes for diverse rickettsialeans and holosporaleans, and other alphaproteobacteria as outgroup, were retrieved from NCBI GenBank. The selection was based on Hess and Melkonian (2013), Szokoli et al. (2016) and Wang and Wu (2015). Environmental sequences for uncultured and undescribed rickettsialeans were retrieved by keeping the 50 best hits resulting from a BLAST search of our three novel 16S rRNA genes against the NCBI GenBank non-redundant (nr) database. The sequences were aligned with the SILVA aligner SINA v1.2.11 and all-gap sites were later removed. Phylogenetic analyses on this alignment were performed on IQ-TREE v1.5.5 using the GTR + F + R8 model.
 
 A UPGMA (average-linkage) clustering of amino acid compositions based on the 200 gene set for the Alphaproteobacteria was built in MEGA 7 (Kumar et al., 2016) from a matrix of Euclidean distances between amino acid compositions of sequences exported from the phylogenetic software P4 (Foster, 2004; http://p4.nhm.ac.uk/index.html).
 
-## Data availability
+### Data availability
 
 Sequencing data were deposited in NCBI GenBank under the BioProject PRJNA501864. The genomes of 'Candidatus Finniella inopinata', endosymbiont of Peranema trichophorum strain CCAP 1260/1B and endosymbiont of Stachyamoeba lipophora strain ATCC 50324 were deposited in NCBI GenBank under the accessions GCA_004210305.1, GCA_004210275.1 and GCA_003932735.1. Raw sequencing reads were deposited on the NCBI SRA archive under the accessions SRR8145469, SRR8145470, SRR8156519, SRR8156520, SRR8156521, SRR8156522. Multi-gene datasets as well as phylogenetic trees inferred in this study were deposited at Mendeley Data under the DOI: 10.17632/75m68dxd83.2.

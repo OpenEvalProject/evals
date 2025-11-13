@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.31922.001 Identification of optimal transcription factor expression patterns to direct cellular differentiation along a desired pathway presents significant challenges. We demonstrate massively combinatorial screening of temporally-varying mRNA transcription factors to direct differentiation of neural progenitor cells using a dynamically-reconfigurable magnetically-guided spotting technology for localizing mRNA, enabling experiments on millimetre size spots. In addition, we present a time-interleaved delivery method that dramatically reduces fluctuations in the delivered transcription factor copy numbers per cell. We screened combinatorial and temporal delivery of a pool of midbrain-specific transcription factors to augment the generation of dopaminergic neurons. We show that the combinatorial delivery of LMX1A, FOXA2 and PITX3 is highly effective in generating dopaminergic neurons from midbrain progenitors. We show that LMX1A significantly increases TH -expression levels when delivered to neural progenitor cells either during proliferation or after induction of neural differentiation, while FOXA2 and PITX3 increase expression only when delivered prior to induction, demonstrating temporal dependence of factor addition.
+Identification of optimal transcription factor expression patterns to direct cellular differentiation along a desired pathway presents significant challenges. We demonstrate massively combinatorial screening of temporally-varying mRNA transcription factors to direct differentiation of neural progenitor cells using a dynamically-reconfigurable magnetically-guided spotting technology for localizing mRNA, enabling experiments on millimetre size spots. In addition, we present a time-interleaved delivery method that dramatically reduces fluctuations in the delivered transcription factor copy numbers per cell. We screened combinatorial and temporal delivery of a pool of midbrain-specific transcription factors to augment the generation of dopaminergic neurons. We show that the combinatorial delivery of LMX1A, FOXA2 and PITX3 is highly effective in generating dopaminergic neurons from midbrain progenitors. We show that LMX1A significantly increases TH-expression levels when delivered to neural progenitor cells either during proliferation or after induction of neural differentiation, while FOXA2 and PITX3 increase expression only when delivered prior to induction, demonstrating temporal dependence of factor addition.
 
 ## Introduction
 
@@ -44,19 +44,19 @@ Standard transfection methods cause considerable fluctuations in the copy number
 
 ## Results
 
-## Modified mRNA constructs and magnetofection
+### Modified mRNA constructs and magnetofection
 
 We constructed mRNA expression vectors to address common issues in mRNA delivery and protein expression, such as vector instability, poor translation, and cytotoxicity (Figure 1a, see also Materials and methods). The mRNA template was constructed with a T7 promoter and was engineered with untranslated regions (UTRs) of highly stable Human β–globin (Hbb) at both 5’ and 3’ ends (Angel and Yanik, 2010), since UTRs play a significant role in mRNA stability (Yu and Russell, 2001; Jiang et al., 2006). Polyadenylated transcripts with a cap-1 structure were synthesized with complete substitution of uridine and cytidine with the modified nucleosides pseudouridine-5-triphosphate (pseudo-UTP) and 5-methylcytidine-5’-triphosphate (5-methyl-CTP), respectively to increase stability and reduce cytotoxicity by evading the innate immune system (Karikó et al., 2005; Karikó and Weissman, 2007; Karikó et al., 2008; Stepinski et al., 2001; Jemielity et al., 2003; Motorin and Helm, 2011).
 
 Magnetofection has been used for DNA and RNA transfection of cultured cells and yields faster and higher transfection efficiencies than most lipid-based transfection methods, especially for hard-to-transfect cell types such as primary neurons (Sapet et al., 2011; Plank et al., 2011). Standard transfection approaches rely on stochastic diffusion and collision of transfection reagents with cells, which is a slow process that transfects cells non-specifically over the entire surface of the cell culture plate (leftmost panels in Figure 1b and Figure 1c). In magnetofection, transfection vehicles complexed with magnetic nanoparticles (e.g. CombiMag) are drawn towards the target cells using an external magnet positioned underneath the plate. However, due to the non-uniform nature of the magnetic field around a single magnet, magnetofection of cells is not spatially limited by the magnet's physical boundaries and therefore results in partial transfection of cells that lie outside the target area (middle panels in Figure 1b and Figure 1c). This is a significant limitation for a screening platform intended to precisely restrict transfection to isolated spots using a compact array of small magnets. Magnetotransfection has been traditionally used only in standard bench-top or low-throughput assays.
 
-## Focused delivery of magnetic nanoparticles by dual-magnetic array
+### Focused delivery of magnetic nanoparticles by dual-magnetic array
 
 To overcome these limitations, we first introduce a simple dual-magnet configuration which focuses the magnetic field to millimeter-size spots in between pairs of magnets positioned above and below the surface of the plate with opposite poles facing one another (rightmost panel in Figure 1b). This configuration enables spatially restricted transfection of cells with minimal background transfection outside the boundaries of the magnets (rightmost panels in Figure 1c). To make an array of such focused magnetic fields, we note that only the bottom magnets need to be small and spatially defined. Therefore, we use large top magnets that cover the entire wells of the plate (e.g. ~22 mm diameter magnets for a 12-well plate) (Figure 1d). This significantly reduces the complexity of setup, requiring us to program the spatial arrangement of only the bottom magnets.
 
 We used neodymium (NdFeB) rare-earth magnets because of their high magnetic field strength compared to other types of magnets. They possess high magnetic anisotropy (i.e. they preferentially align their magnetic moment along an ‘easy’ axis) and high magnetic coercivity (the ability to resist demagnetisation under an external magnetic field). Both properties are highly desirable in our screening platform, where numerous small magnets are positioned in close proximity. In addition to NdFeB magnets, we tested Alnico five magnets and electromagnets and found both to be inadequate due to insufficient magnetic field (electromagnet; B ~ 10 mT) or failure to withstand demagnetisation (Alnico 5). The top magnetic plate is comprised of 12 large 22 mm diameter NdFeB disk magnets (Supplementary file 1) positioned in a 3 × 4 matrix. The precise configuration and dimension of the top magnets is dictated by the desired cell culture plate format (standard 12-well cell culture plates are used in this study). The strength of the magnetic field was measured ~500 mT on the surface of top magnets. The bottom magnetic plate is a matrix of miniature 1.5 mm-diameter NdFeB disk magnets (Supplementary file 1) positioned in close proximity (3 mm center-to-center spacing) inside a compact array [an 8 × 12 cm Teflon substrate accommodating a matrix of 25 × 40 (i.e. 1000) magnets]. The magnetic field density on the surface of each magnet is B ~ 300 mT in isolation and B ~ 100 mT when inside the array.
 
-## Programming of the dual-magnet array
+### Programming of the dual-magnet array
 
 In order to drag the mRNA/Lipid/Magnetic particles onto user-defined spot patterns, we program the magnetic field pattern on the substrate by moving each bottom magnet independently closer to (‘active’) or further away from (‘inactive’) the bottom of the cell culture plate (Figure 1d, see also cross-section A-B there). To achieve this, all bottom magnets are first pushed upwards into the active position by a ‘reset-plate’ (via the pins mounted underneath each magnet) (Figure 1d, Step 1). Afterwards, the reset-plate retracts downwards (Figure 1d, Step 2). Since the pins move inside a teflon substrate filled with high viscosity grease, they remain in the elevated active position (5 mm above) after retraction of the reset-plate. Next, selected magnets are pushed down (away from the cell culture plate) using an array of pneumatic actuators located above the magnets (Figure 1d, Step 3). This eliminates the magnetic field of these bottom magnets and prevents the transfection of cells at these spots.
 
@@ -72,11 +72,11 @@ Here, we use our magnetically-guided spotting platform to show that we are able 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/31922/elife-31922-fig2-v2.jpg)
 
-**Figure 2.:** (a) Schematic illustration of multiple interleaved transfections using GFP and mCherry mRNAs. Each mRNA is delivered in multiple interleaved rounds of transfection, as opposed to being delivered all at once in a single transfection. (b) Neural progenitor cells transfected with GFP and mCherry mRNA using a standard single transfection protocol (‘1 × 1’; i.e. the full dose of each mRNA is applied in a single transfection) versus an interleaved transfection protocol (‘4 × ¼"; i.e. one quarter doses of each mRNA are applied using four interleaved transfections). All images were acquired using automated software to prevent saturation. (c) Ratio of red (mCherry) to green (GFP) fluorescence intensity per cell for both single and interleaved transfection protocols. Image correlation analysis was performed on the images shown in (b) using WCIF plugin for ImageJ. Efficiency of interleaved transfection is calculated using Pearson’s Correlation Coefficient (PCC) and Mander’s Overlap Coefficient (MOC). PCC = 0.85 and MOC = 0.92 for interleaved transfections compared to PCC = 0.54 and MOC = 0.79 for single transfections (−1 < PCC < 1; 0 < MOC < 1). Both PCC and MOC represent average values from three independent experiments. (d) Precise RNA dosage control using the magnetically reconfigurable spotting platform. GFP mRNA was spotted in a 3 × 3 matrix at three different dosages: right column (1x), middle column (2x) and left column (4x). mCherry mRNA was delivered to the same spots at three different dosages as follows: bottom row (1x), middle row (2x) and top row (4x). To generate this pattern, we delivered GFP and mCherry mRNAs using our interleaved transfection protocol to achieve highest co-transfection efficiency (this pattern is also reproducible using standard transfection protocols, although with reduced efficiency). In the process, 1x concentration of GFP (1.8 ng; 0.2 ng per spot) was delivered to the plate while all nine magnets were active. In the next step, another 1x concentration of GFP (1.2 ng; 0.2 ng per spot) was delivered to the cells while the 3 magnets of the rightmost column were inactive. Finally, 2x concentration of GFP (1.2 ng; 0.4 ng per spot) was delivered to the cells while the middle and the rightmost columns of 6 magnets were inactive. A similar process was repeated for the mCherry along the perpendicular direction (i.e. by activating/inactivating magnets along the horizontal rows rather than the vertical columns). Scale bars: 100 µm in (b), 1 mm in (d).10.7554/eLife.31922.004Figure 2—source data 1.
+**Figure 2.:** (a) Schematic illustration of multiple interleaved transfections using GFP and mCherry mRNAs. Each mRNA is delivered in multiple interleaved rounds of transfection, as opposed to being delivered all at once in a single transfection. (b) Neural progenitor cells transfected with GFP and mCherry mRNA using a standard single transfection protocol (‘1 × 1’; i.e. the full dose of each mRNA is applied in a single transfection) versus an interleaved transfection protocol (‘4 × ¼"; i.e. one quarter doses of each mRNA are applied using four interleaved transfections). All images were acquired using automated software to prevent saturation. (c) Ratio of red (mCherry) to green (GFP) fluorescence intensity per cell for both single and interleaved transfection protocols. Image correlation analysis was performed on the images shown in (b) using WCIF plugin for ImageJ. Efficiency of interleaved transfection is calculated using Pearson’s Correlation Coefficient (PCC) and Mander’s Overlap Coefficient (MOC). PCC = 0.85 and MOC = 0.92 for interleaved transfections compared to PCC = 0.54 and MOC = 0.79 for single transfections (−1 < PCC < 1; 0 < MOC < 1). Both PCC and MOC represent average values from three independent experiments. (d) Precise RNA dosage control using the magnetically reconfigurable spotting platform. GFP mRNA was spotted in a 3 × 3 matrix at three different dosages: right column (1x), middle column (2x) and left column (4x). mCherry mRNA was delivered to the same spots at three different dosages as follows: bottom row (1x), middle row (2x) and top row (4x). To generate this pattern, we delivered GFP and mCherry mRNAs using our interleaved transfection protocol to achieve highest co-transfection efficiency (this pattern is also reproducible using standard transfection protocols, although with reduced efficiency). In the process, 1x concentration of GFP (1.8 ng; 0.2 ng per spot) was delivered to the plate while all nine magnets were active. In the next step, another 1x concentration of GFP (1.2 ng; 0.2 ng per spot) was delivered to the cells while the 3 magnets of the rightmost column were inactive. Finally, 2x concentration of GFP (1.2 ng; 0.4 ng per spot) was delivered to the cells while the middle and the rightmost columns of 6 magnets were inactive. A similar process was repeated for the mCherry along the perpendicular direction (i.e. by activating/inactivating magnets along the horizontal rows rather than the vertical columns). Scale bars: 100 µm in (b), 1 mm in (d).
 
 Precise dosage control and transfection gradients can be achieved as shown in Figure 2d where NPCs were spotted with GFP and mCherry mRNAs at three different dosages horizontally and vertically, respectively. This resulted in a matrix of spots with varying combinatorial dosages of two mRNAs ranging from 4x/4x (top left spot) to 1x/1x (bottom right spot).
 
-## Screening of transcription factors for dopaminergic neurons
+### Screening of transcription factors for dopaminergic neurons
 
 Parkinson's disease is one of the most common neurodegenerative disorders resulting from the functional loss of dopaminergic neurons in substantia nigra pars compacta of midbrain (Lees et al., 2009). Dopamine replacement therapy and deep-brain stimulation can improve the quality of life, however the long-term shortcomings of these treatments make the alternative option of cellular replacement attractive. Therefore, deriving dopaminergic neurons in vitro from pluripotent stem cells or progenitors either for cell therapy or for basic research is of critical importance, since other cell resources are quite limited and unreliable. However, deriving sufficiently pure cultures of dopaminergic neurons remains a key challenge.
 
@@ -86,7 +86,7 @@ We used two different mediums: (1) an initial expansion medium containing the mi
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/31922/elife-31922-fig3-v2.jpg)
 
-**Figure 3.:** (a) Timeline of the mRNA-induced differentiation process (proliferative NPC stage from day −2 to 0; early induction stage after day 0). Red arrows indicate time points of transfection before mitogen growth factor removal, transfection after growth factor removal (induction stage), and the final analysis at 17 days after growth factor removal. (b) Immunocytochemistry at day 17 for TH (green) showing upregulation of TH when FOXA2 is delivered to NPCs (FoN), when PITX3 is delivered to NPCs (PtN), and when LMX1A is delivered either to NPCs (LmN) or during induction (LmI). Combinations of these three conditions also increase the number TH+ neurons. (c) Double staining (MAP2+/TH+) results from cells transfected with the most effective combination (FoN +PtN + LmI) compared to non-transfected cells (Diff. Medium). (d and e) Quantitative TH gene expression analysis at day 17 comparing all single factors delivered at NPC (N) and early induction (I) stages (d), and temporal transfection of the selected combinations of double and triple factors (e). All quantifications were done with n = 3 independent experiments (mean ±s.e.m), ***(p<0.001), **(p<0.01), *(p<0.05) (compared to control, Dunnett's test). Abbreviations: TH, tyrosine hydroxylase; Ot, OTX2; Lm, LMX1A, Fo, FOXA2; As, ASCL1; Ng, NGN2; Nr, NURR1; Pt, PITX3; Superscript ‘N’, proliferative NPC stage; Superscript ‘I’, induction stage after mitogen withdrawal. Scale bars: 1 mm in (b), 100 µm in (c).10.7554/eLife.31922.006Figure 3—source data 1.
+**Figure 3.:** (a) Timeline of the mRNA-induced differentiation process (proliferative NPC stage from day −2 to 0; early induction stage after day 0). Red arrows indicate time points of transfection before mitogen growth factor removal, transfection after growth factor removal (induction stage), and the final analysis at 17 days after growth factor removal. (b) Immunocytochemistry at day 17 for TH (green) showing upregulation of TH when FOXA2 is delivered to NPCs (FoN), when PITX3 is delivered to NPCs (PtN), and when LMX1A is delivered either to NPCs (LmN) or during induction (LmI). Combinations of these three conditions also increase the number TH+ neurons. (c) Double staining (MAP2+/TH+) results from cells transfected with the most effective combination (FoN +PtN + LmI) compared to non-transfected cells (Diff. Medium). (d and e) Quantitative TH gene expression analysis at day 17 comparing all single factors delivered at NPC (N) and early induction (I) stages (d), and temporal transfection of the selected combinations of double and triple factors (e). All quantifications were done with n = 3 independent experiments (mean ±s.e.m), ***(p<0.001), **(p<0.01), *(p<0.05) (compared to control, Dunnett's test). Abbreviations: TH, tyrosine hydroxylase; Ot, OTX2; Lm, LMX1A, Fo, FOXA2; As, ASCL1; Ng, NGN2; Nr, NURR1; Pt, PITX3; Superscript ‘N’, proliferative NPC stage; Superscript ‘I’, induction stage after mitogen withdrawal. Scale bars: 1 mm in (b), 100 µm in (c).
 
 Transcription factors were delivered individually either during the proliferative NPC stage (Day −2, before mitogen removal) or the induction stage (Day 0, upon mitogen removal) as indicated by the superscripts N or I on each factor, respectively. Immunofluorescence results at day 17 indicated a significant increase in tyrosine hydroxylase (TH)+ neuron yield only in spots transfected with LMX1A, FOXA2, or PITX3 (Figure 3b and d). Interestingly, among spots transfected during induction stage, LMX1A (LmI) was the only factor that significantly increased the yield of TH+ neurons on its own (p<0.01, 40 ± 5% TH+/MAP2+ cells compared to the control, 22 ± 4%). On the other hand, significantly more TH+ neurons were counted in spots transfected during the NPC stage with either FOXA2 (FoN) (TH+/MAP2+, 27 ± 4%, p<0.05), PITX3 (PtN) (TH+/MAP2+, 35 ± 3%, p<0.01), or LMX1A (LmN) (TH+/MAP2+, 32 ± 3%, p<0.01), albeit with less effect than post-induction transfection with LMX1A (LmI) (Figure 3b). These results suggest that FOXA2 and PITX3 are more efficient when delivered to NPCs whereas LMX1A is more efficient when delivered during induction of differentiation after mitogen removal. Although OTX2, ASCL1, NGN2 are thought to play a role in dopaminergic differentiation, in our experiment their direct overexpression did not increase TH+ neurons. Since we used human NPCs, previous results reporting that ASCL1 enhances TH +neurons derived from IPSCs (Theka et al., 2013)may indicate that ASCL1 is only required during pre- or immediate early-neurogenesis stages. OTX2 expression may also have a similar role, since it is known to be necessary for the early patterning of midbrain/hindbrain regional identity.
 
@@ -106,34 +106,176 @@ Our high-throughput technology enables the rapid exploration of large combinator
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>OTX2</td>
+      <td>NA</td>
+      <td>HGNC:8522</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>LMX1A</td>
+      <td>NA</td>
+      <td>HGNC:6653</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>FOXA2</td>
+      <td>NA</td>
+      <td>HGNC:5022</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>ASCL1</td>
+      <td>NA</td>
+      <td>HGNC:738</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>NGN2</td>
+      <td>NA</td>
+      <td>HGNC:13805</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>NURR1</td>
+      <td>NA</td>
+      <td>HGNC:7981</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>PITX3</td>
+      <td>NA</td>
+      <td>HGNC:9006</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>hNP1</td>
+      <td>EMD Millipore</td>
+      <td>EMD Millipore:SCR055; RRID:CVCL_GS51</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FOXA2 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab60721</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MAP2 (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab5392</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tyrosine Hydroxylase (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab112</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>VMAT2 (TaqMan assay)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:Hs00996835_m1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH (TaqMan assay)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:Hs02758991_g1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OTX2 (TaqMan assay)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:Hs00222238_m1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PITX3 (TaqMan assay)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:Hs01013935_g1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FOXA2 (TaqMan assay)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:HS00232764_m1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LMX1A (TaqMan assay)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:Hs00892663_m1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TH (TaqMan assay)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:Hs0016594_m1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MAP2 (TaqMan assay)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:Hs00258900_m1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NURR1 (TaqMan assay)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:Hs00443062_g1</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 The H9-derived human neural progenitor cell line (hNP1) was obtained from Aruna Biomedical (Athens, GA; now distributed as ENStem-A, EMD Millipore #SCR055). Each lot of ENStem-ATM Human Neural Progenitor Cells has been validated for high levels of expression of Nestin and Sox2 and low level expression of Oct4. The ability of ENStem-ATM cells to differentiate into multiple neuronal phenotypes and maintain a normal karyotype after multiple passages has been verified by the manufacturer, and the cells have been confirmed to be negative for mycoplasma. Cells were expanded on Matrigel-coated (Corning Inc., Corning, NY) six-well plates with the supplier’s expansion medium. Starting from passage two, the expansion medium was gradually changed (25% medium replacement per passage) to N2/B27 in DMEM/F12 supplied with bFGF/EGF (20 ng/ml, Thermo Fisher Scientific, Waltham, MA). Cells were passaged at the split ratio of 1:2 by cell scraper. All experiments were done with cells in passages 7–11.
 
-## Synthesis of modified synthetic transcription factor mRNAs
+### Synthesis of modified synthetic transcription factor mRNAs
 
 Our mRNA synthesis methodology has been previously described (Angel and Yanik, 2010). Briefly, dsDNA templates were linearized from cDNA clones in pCMV6 vectors for OTX2, LMX1A, FOXA2, ASCL1, NGN2, NURR1, PITX3, EGFP, and mCherry (OriGene, Rockville, MD). To maximize the stability of mRNA transcripts and increase protein translation, we added 5’ and 3’ untranslated regions from human Beta-globin gene (Hbb) to the templates by ligating with E. coli DNA ligase (New England Biolabs, Ipswich, MA). A T7 promoter was also added to the 5’ UTR to facilitate in vitro transcription. Assembled templates were cloned into the pCR-Blunt II TOPO vector and inserted in TOP10 chemically competent E Coli to propagate using the Zero Blunt TOPO PCR Cloning Kit (Thermo Fisher Scientific). Plasmids were purified using EndoFree Plasmid Maxi Kit (Qiagen, Hilden, Germany). Templates were linearized from plasmids then amplified by high-fidelity PCR using KAPA HiFi PCR Kit (KAPA Biosystems, Wilmington, MA). PCR products were separated by agarose gel electrophoresis and purified using QIAquick Gel Extraction Kit (Qiagen). Cap 1-capped, poly(A) tailed mRNA was synthesized from the purified templates by in vitro transcription using the mScript mRNA Production Kit (CellScript, Madison, WI). All mRNAs were synthesized with complete substitution of uridine and cytidine with the modified nucleosides pseudouridine-5-triphosphate (pseudo-UTP) and 5-methylcytidine-5’-triphosphate (5-methyl-CTP), respectively. The mRNAs were purified using an RNeasy Mini kit (Qiagen). To ensure the transcripts were produced with right poly(A) tail, we analysed the samples both before and after tailing using formaldehyde-agarose gel electrophoresis. SUPERase In RNase Inhibitor (Thermo Fisher Scientific) was added to mRNAs at concentration of 1 ug/20 ug.
 
-## RNA transfection and differentiation
+### RNA transfection and differentiation
 
 For directed differentiation experiments without spotting, cells from passages 7–11 were plated on 12-well plates in expansion medium (DMEM/F12/N2/B27/bFGF/EGF). For temporal analysis, growth factors (bFGF and EGF) were kept in the medium for two additional days, which led us to seed the cells at the appropriate split ratio to reach the optimal surface confluency of 30–40% the next day and final cell density of 90% after removal of growth factors. For mRNA transfection, we used lipid-based Stemfect RNA transfection kit (Stemgent, Cambridge, MA) and complexed it with each RNA separately with 10 min of incubation. For all transfections, 100 ng total RNA was complexed with 1 µl Stemfect reagent in 20 µl Stemfect buffer. Cell culture medium was changed to N2/B27 without growth factors, and complexed RNA was resuspended in the medium followed by 4 hr of incubation. After transfection, for transfection at the proliferative NPCs stage (N), the medium was changed back to N2/B27/bFGF/EGF for two more days. For transfection post-induction (I), the medium was changed to B27 without growth factors 4 hr prior to transfection, and followed by the addition of RNA/lipid complex, 4 hr of incubation, and changing to fresh B27 medium. For both pre- and post-neural induction (with or without mitogens, respectively) transfection protocols, differentiation was started 72 hr after plating the cells by removing the growth factors and changing the medium to B27. The medium was changed every other day. On day 4, medium was supplemented with brain-derived neurotrophic factor (BDNF, 20 ng/ml; R and D Systems, Minneapolis, MN), glial-derived neurotrophic factor (GDNF, 20 ng/ml; R and D Systems), ascorbic acid (0.2 mM; Tocris), dibutyryl cyclic adenosine monophosphate (Dc-Amp, 0.5 mM; Sigma-Aldrich, St. Louis, MO), and transforming growth factor type β3 (TGF-β3, 1 ng/ml; R and D Systems). Cells were cultured in this medium until they were ready for end-point assays at day 17 post-differentiation, and were either fixed for image analysis or collected for qRT-PCR analysis.
 
-## Magnetic spotting methodology
+### Magnetic spotting methodology
 
 For magnetofection of cells with spotted synthetic mRNA, cells from passages 7–11 were transferred to 12-well glass-bottom plates (Cellvis, Mountain View, CA) at optimised density of 30–40% in expansion medium (DMEM/F12/N2/B27/bFGF/EGF). With the 12-well plate format, a total number of 36 magnetic hotspots could be accommodated under each well. In order to deliver the RNA to the magnetic hotspots, we used CombiMag magnetofection transfection reagent (OZBiosciences, Marseille, France). CombiMag contains magnetic nanoparticles that can be mixed with all transfection reagents and improves their efficiency by means of magnetic field. We mixed mRNA with magnetic nanoparticles and complexed it with Stemfect reagent during a 5–10 min incubation according to the manufacturers’ recommended ratios. Localized transfection was initiated by replacing the medium in the wells with N2/B27 medium in which the complexed mRNA/lipid/nanoparticles had been resuspended. The concentration of the mRNA complex was adjusted based on the number of spots to be transfected per well (0.6 ng RNA per 1.5 mm diameter spot), ensuring that each spot received an equivalent amount of mRNA. Plates were then moved onto the spotting system with the desired magnetic patterns pre-programmed as described. The incubation time for magnetofection was 2 min per transfection. This transfection process was repeated for each mRNA factor until all desired combination were delivered to the spots. The medium was changed between each transfection with new N2/B27 containing the appropriate mRNA complex. The number of medium changes scale linearly with the number of transcription factors delivered to each well. For temporal transfection during the proliferative NPC stage, growth factors were added to the medium after the final round of spotting. For differentiation, the medium was changed to B27 with the remainder of the protocol similar to the standard differentiation protocols discussed in the previous section.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Cell were fixed in 4% paraformaldehyde in TBST for 15 min, permeabilized for 10 min in 0.2% Triton X-100, blocked with 1% casein for 60 min, and incubated overnight at 4°C with appropriate antibodies in 50/50 1% casein/TBST. Fixed cells were then incubated with secondary antibodies for 60 min (Alexa Fluor 488, 555 and 647 Dye, Molecular Probes, Eugene, OR). DAPI (Thermo Fisher Scientific) was used as nuclear counterstain. Antibodies used are as follows: mouse Foxa2 (ab60721, Abcam, Cambridge, MA), chicken MAP2 (ab5392, Abcam) and rabbit TH (ab112, Abcam)
 
-## Gene expression analysis (qRT-PCR)
+### Gene expression analysis (qRT-PCR)
 
 Total RNA was collected and purified using an RNeasy Mini Kit (Qiagen), measured using a NanoDrop 1000 spectrophotometer (Thermo Fisher Scientific), and gene expression analysis was performed using commercially available TaqMan gene expression assay (Applied Biosystems, Foster City, CA; a list of TaqMan assays is given in Supplementary file 2). The qRT-PCR was done in one-step, 20 µl reactions with 15 min reverse transcription at 50°C, 2 min initial denaturing at 95°C followed by 40 cycles of 15 s/95°C and 1 min/60°C. Three individual samples with three replicates each were used for gene expression analysis, and the data were normalized to GAPDH.
 
-## Cell counting and statistical analysis
+### Cell counting and statistical analysis
 
 For image acquisition, we used a high-performance laser-based confocal imaging system (INCell 6000, GE Healthcare, Chicago, IL). For non-spotting experiments, a total of 27 random images were taken for each condition from three independent experiments. For spotting experiments, images were taken from spotted areas in three independent experiments. Cell counting was performed using CellProfiler (Carpenter et al., 2006). To count the cells, we first counted the number of DAPI-positive cells, followed by counting the number of cells expressing the marker of interest. Student's t-test (comparing two groups) was used for statistical analysis. Co-localization analysis was performed using the WCIF-ImageJ software package and the Image Correlation Analysis plugin (Schneider et al., 2012). The plugin uses Pearson’s Correlation Coefficient (PCC) for quantifying the correlation between two channels, as well as calculating Mander’s Overlap Coefficient (MOC).
 
-## Code availability
+### Code availability
 
 LabView files for programming of the dual-magnet array are available online from GitHub (https://github.com/rezaie99/ELIFE-050518; copy archived at https://github.com/elifesciences-publications/Yanik_et_al_2018) (Ghannad-Rezaie, 2018).

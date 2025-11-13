@@ -9,13 +9,13 @@
 
 ### Affiliations
 
-1. https://ror.org/019wvm592 Research School of Biology, Australian National University Canberra Australia
+1. Research School of Biology, Australian National University Canberra Australia ([ROR:019wvm592](https://ror.org/019wvm592))
 
 † Corresponding author
 
 ## Abstract
 
-Voltage-gated sodium channels (Naᵥ) are membrane proteins which open to facilitate the inward flux of sodium ions into excitable cells. In response to stimuli, Naᵥ channels transition from the resting, closed state to an open, conductive state, before rapidly inactivating. Dysregulation of this functional cycle due to mutations causes diseases including epilepsy, pain conditions, and cardiac disorders, making Naᵥ channels a significant pharmacological target. Phosphoinositides are important lipid cofactors for ion channel function. The phosphoinositide PI(4,5)P 2 decreases Naᵥ1.4 activity by increasing the difficulty of channel opening, accelerating fast inactivation and slowing recovery from fast inactivation. Using multiscale molecular dynamics simulations, we show that PI(4,5)P 2 binds stably to inactivated Naᵥ at a conserved site within the DIV S4–S5 linker, which couples the voltage-sensing domain (VSD) to the pore. As the Naᵥ C-terminal domain is proposed to also bind here during recovery from inactivation, we hypothesize that PI(4,5)P 2 prolongs inactivation by competitively binding to this site. In atomistic simulations, PI(4,5)P 2 reduces the mobility of both the DIV S4–S5 linker and the DIII–IV linker, responsible for fast inactivation, slowing the conformational changes required for the channel to recover to the resting state. We further show that in a resting state Naᵥ model, phosphoinositides bind to VSD gating charges, which may anchor them and impede VSD activation. Our results provide a mechanism by which phosphoinositides alter the voltage dependence of activation and the rate of recovery from inactivation, an important step for the development of novel therapies to treat Naᵥ-related diseases.
+Voltage-gated sodium channels (Naᵥ) are membrane proteins which open to facilitate the inward flux of sodium ions into excitable cells. In response to stimuli, Naᵥ channels transition from the resting, closed state to an open, conductive state, before rapidly inactivating. Dysregulation of this functional cycle due to mutations causes diseases including epilepsy, pain conditions, and cardiac disorders, making Naᵥ channels a significant pharmacological target. Phosphoinositides are important lipid cofactors for ion channel function. The phosphoinositide PI(4,5)P2 decreases Naᵥ1.4 activity by increasing the difficulty of channel opening, accelerating fast inactivation and slowing recovery from fast inactivation. Using multiscale molecular dynamics simulations, we show that PI(4,5)P2 binds stably to inactivated Naᵥ at a conserved site within the DIV S4–S5 linker, which couples the voltage-sensing domain (VSD) to the pore. As the Naᵥ C-terminal domain is proposed to also bind here during recovery from inactivation, we hypothesize that PI(4,5)P2 prolongs inactivation by competitively binding to this site. In atomistic simulations, PI(4,5)P2 reduces the mobility of both the DIV S4–S5 linker and the DIII–IV linker, responsible for fast inactivation, slowing the conformational changes required for the channel to recover to the resting state. We further show that in a resting state Naᵥ model, phosphoinositides bind to VSD gating charges, which may anchor them and impede VSD activation. Our results provide a mechanism by which phosphoinositides alter the voltage dependence of activation and the rate of recovery from inactivation, an important step for the development of novel therapies to treat Naᵥ-related diseases.
 
 ## Introduction
 
@@ -39,9 +39,37 @@ Here, we used a combination of coarse-grained and atomistic MD simulations to id
 
 To investigate how diverse lipid species interact with Naᵥ1.4, we carried out coarse-grained simulations of Naᵥ1.4 (PDB ID: 6agf, inactivated state) embedded in a complex mammalian membrane for 16 µs in triplicate (Figure 2A). Glycosphingolipid, PIP, and diacylglycerol (DG) were highly enriched around Naᵥ1.4 (Figure 2B). Additionally, we observed modest enrichment of lysophosphatidylcholine (LPC), phosphatidylinositol (PI), phosphatidylserine (PS), and phosphatidylethanolamine, and slight depletion of ceramide, sphingomyelin, phosphatidylcholine, and cholesterol. To investigate specific interactions, we generated z-density maps and calculated the per-residue occupancy of the 12 different lipid types (Figure 2C, Figure 2—figure supplements 1–2). Binding residues of interest were identified by constructing occupancy distributions by residue for each lipid type and identifying outlying values with high occupancies (Figure 2—figure supplement 3). DG lipids form significant interactions within the lateral fenestrations of Naᵥ1.4 (Figure 2—figure supplement 2). LPC and PI also frequently interact with different VSD residues (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig2-v1.jpg)
+
+**Figure 2.:** (A) Naᵥ1.4 embedded in a 360 Å × 360 Å model mammalian membrane containing 63 lipid species. (B) Lipid depletion enrichment index of lipids around Naᵥ1.4 grouped into 12 headgroup classes. (C) Naᵥ1.4, shown from the intracellular (left) and membrane (right) sides, colored by PIP occupancy (darker purple = greater PIP occupancy). (D) Distribution of PIP binding occupancies (left) and occupancy of lipid species at four residues with the highest PIP occupancy. Error bars show standard error, n = 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Shows lipid species (LPC), glycosphingolipid (GM), ceramide (CER), phosphoinositide (PIP), phosphatidic acid (PA), and phosphotidylinositol (PI). Density maps for each lipid type are show on the right. Contact occupancy structures are visualized from the intracellular view, the voltage-sensing domain (VSD)-IV side view, the extracellular view and the VSD-II side view (left to right).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Shows phosphatidylserine (PS), sphingomyelin (SM), phosphatidylethanolamine (PE), phosphatidylcholine (PC), cholesterol (CL), and diacylglycerol (DG). Density maps for each lipid type are show on the right. Contact occupancy structures are visualized from the intracellular view, the voltage-sensing domain (VSD)-IV side view, the extracellular view and the VSD-II side view (left to right).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Error bars show standard error, n = 3.
+
 Given our interest in understanding the modulation of Naᵥ1.4 by PIPs, we focus on their interactions for the remainder of this manuscript. Despite the very low concentration of PIPs (0.5% each of PIP1, PIP2, and PIP3) in the mammalian membrane, they are highly enriched around Naᵥ1.4, particularly near the DIII–IV linker and the VSD-IV (Figure 2C). Contact analysis revealed a putative PIP binding site involving the K1330 residue of the DIII–IV linker and residues R1463, K1466, and R1469 in the DIV S4–S5 linker, which connects the pore and VSD-IV (Figure 2D). Across all three replicates, only residues within this site were occupied by PIPs for more than 80% (quartile 3+1.5×interquartile range) of simulation time on average (Figure 2D). We note that these residues have higher occupancies for PIP compared to other lipids, including other negatively charged phospholipids (PA, PS, and PI) (Figure 2D).
 
 Simulations in a complex mammalian membrane showed that PIP species bind specifically and selectively to Naᵥ1.4 in the presence of other negatively charged lipids and at low, physiological concentrations. However, the large membrane required, and long PIP binding durations prevented sampling of large numbers of binding and unbinding events. To address this, we carried out additional simulations where Naᵥ1.4 was placed in a smaller POPC membrane with a 5% concentration of each PIP species in the cytoplasmic leaflet (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig3-v1.jpg)
+
+**Figure 3.:** (A) Enriched PIP simulation system, with Naᵥ1.4 embedded in a POPC membrane (transparent gray) and 5% each of PIP1 (blue), PIP2 (purple), and PIP3 (pink) added to the cytoplasmic leaflet. (B) Representative snapshots from the five longest binding events from different replicates, showing the three different PIP species (PIP1 in blue, PIP2 in purple, and PIP3 in pink) binding to voltage-sensing domain (VSD)-IV and the DIII–IV linker. Naᵥ1.4 is shown in white with interacting residues on the DIV S4–S5 linker and the DIII–IV linker colored in green and orange, respectively. (C) A frequency distribution showing interaction times for each PIP species, defined as the length of a continuous period in which a PIP was within 0.7 nm of two VSD-IV binding site residues. (D) Frequency plots showing number of positive residues interacting with bound PIP in the DIII–IV linker (vertical) and VSD-IV (horizontal). (E) Minimum distance between binding residues on Naᵥ1.4 and bound PIPs lipid across simulation time for the five longest binding events, colored by distance and the type of PIP bound.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig3-figsupp2-v1.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Error bars show standard error, n = 3.
 
 Across 10 replicates of these enriched PIP simulations, each carried out for 80 µs, we observed all three PIP species binding at the identified site on VSD-IV and DIII–IV linker (Figure 3B). PIPs can approach and bind to this site from either side of the VSD, however, PIP1 only forms stable interactions when it approaches and binds from the VSD-I side while PIP2 and PIP3 usually bind from the VSD-III side (Figure 3B). These enriched PIP simulations also revealed additional positively charged residues in the DIII–IV linker (K1329, K1333, and K1352) and DIV S4 (R1460) which support binding.
 
@@ -54,6 +82,22 @@ The minimum distance between the interacting PIP headgroup and each binding resi
 Coarse-grained simulations enhance sampling by reducing the number of particles, enabling larger time steps and construction of a smoother energy surface. To examine interactions and protein conformational changes in atomistic detail, we backmapped representative snapshots from our PIP-enriched simulations, where we observed stable, long-term binding events between Naᵥ1.4 and PIP1/PIP2. The coarse-grained PIP1 and PIP2 molecules were converted to the atomistic PI(4)P and PI(4,5)P2, respectively. For each system, 7.5 µs of atomistic simulations were performed (5 replicates, 1.5 µs each).
 
 In these simulations, the PI(4,5)P2 headgroup was stable at the binding site identified in coarse-grained simulations (root mean square deviation [RMSD] <2.2 Å) (Figure 4A, Figure 4—figure supplement 1). PI(4,5)P2 binding is predominantly coordinated by R1469 on the DIV S4–S5 linker, as well as R1466 and R1463. In one replicate, PI(4,5)P2 associates with R1460 via the phosphate group (PO4) that connects the headgroup to the PIP tails. The PI(4,5)P2 headgroup also forms electrostatic interactions with K1329 and K1330 in the DIII–IV linker, but forms few contacts with K1333 (Figure 4B, Figure 4—figure supplement 2). This loop portion of the DIII–IV linker is highly flexible (Figure 4—figure supplement 1), thus the lysine side chains can flip between binding the PI(4,5)P2 headgroup and facing the intracellular space.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative snapshots of PI(4,5)P2 bound from the voltage-sensing domain (VSD)-I side (purple stick) and PI(4)P bound from the VSD-III side (cyan stick), with six basic residues forming the binding site located on the DIII–IV linker (orange VDW representation) and VSD-IV S4–S5 linker (shown in green VDW representation) visualized from the intracellular face of the protein. (B) Proportion of frames where each of the binding site residues were identified to be within 4.5 Å with the different headgroup regions, P4, P5, and PO4, for PI(4,5)P2 (left) and PI(4)P (right). Error bars show standard error, n = 5. (C) Comparison of RMSF per carbon-alpha for simulations with and without bound PI(4,5)P2, showing residues on the S4–S5 linker and DIV linker with significant differences in mobility (student’s t-test, p-value <0.05). (D) Interaction network plots between the phosphoinositide (PIP) headgroup and basic binding residues on DIII–IV linker (orange) and DIV S4–S5 linker (green), generated by ProLIF – showing the dominant interactions across simulations of PI(4,5)P2 and PI(4)P. (E) Density plots showing differences in the distributions of distance between IFM/IQM motif and its binding pocket in the presence and absence of PIPs for the Naᵥ1.4 wild-type (left) and IFM->IQM mutant (right); with representative snapshots showing the two distinct conformations of the IQM motif in the mutant.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Five replicates were simulated – rep1 (blue), rep2 (red), rep3 (green), rep4 (orange), rep5 (purple).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** ProLIF bar charts describing the occurrence of anionic and hydrogen bond interactions between the PI(4,5)P2 headgroup and binding residues; error bars show standard error, n = 5 (top). Per replicate data, showing the number of electrostatic interactions detected between the PI(4,5)P2 headgroup and each of the binding residues (left); atomic interactions summarized in a ProLIF LigPlot (right).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** ProLIF bar charts describing the occurrence of anionic and hydrogen bond interactions between the PI(4)P1 headgroup and binding residues; error bars show standard error, n = 5 (top). Per replicate data, showing the number of electrostatic interactions detected between the PI(4)P1 headgroup and each of the binding residues (left); atomic interactions summarized in a ProLIF LigPlot (right).
 
 The 4’-phosphate formed interactions with residues belonging to the DIII–IV linker (K1329 and K1333) and DIV S4–S5 linker (K1666 and R1469) with similar frequency, in 55–60% of simulation frames (Figure 4B). In contrast, the 5’-phosphate formed contacts with three VSD-IV S4–S5 residues (R1463, K1466, and R1469) in 70–98% of simulation frames and DIII–IV linker residues in 37–48% of frames. Taken together, this data suggests that although the headgroup is flexible when bound, the 5’-phosphate is more important for coordinating VSD-IV S4–S5 residues while the 4’-phosphate associates with both regions of the binding site.
 
@@ -71,6 +115,22 @@ The PIP binding poses seen in our simulations are similar to resolved binding po
 
 To assess possible state- and subtype-dependent differences in PIP binding, we simulated three structures of Naᵥ1.7 with different VSD conformations in a PIP-enriched membrane (Figure 6A). The inactivated Naᵥ1.7 structure (blue, PDB ID: 6j8g) contains all VSDs in the activated/up state and a bound DIII–IV linker. We also simulated a NaᵥPas (American cockroach) chimera structure with a human Naᵥ1.7 VSD-IV in the deactivated/down state (VSDs I–III are activated, and from NaᵥPas) (pink, PDB ID: 6nt4). This structure (Clairfeuille et al., 2019) features a dissociated DIII–IV linker and a resolved CTD bound to the DIV S4–S5 linker (forming the ‘inactivation switch’) at residues identified to form part of our PIP binding site. To assess PIP binding at VSD I–III in the deactivated/down state, we modeled the Naᵥ1.7 resting state based on templates structures in which different VSDs have been captured in deactivated states with the aid of toxins. These structures feature three or more of the gating charge residues below the hydrophobic constriction site (HCS) and displacement of the S4–S5 linker (Figure 6—figure supplement 1). Given that no resting state mammalian Naᵥ channel structure has been resolved, it is possible that the modeled VSDs may not reflect the fully deactivated state.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig6-v1.jpg)
+
+**Figure 6.:** (A) Atomistic representation of the three different Naᵥ1.7 structures simulated: (1) the inactivated state (blue, PDB ID: 6j8g) with the VSDs all in the activated, up state, (2) the Naᵥ1.7-NaᵥPas chimera (pink, PDB ID: 6nt4) with the Naᵥ1.7 VSD-IV in the deactivated, down state and a bound NaᵥPas C-terminal domain (CTD), (3) a Naᵥ1.7 resting state model (orange, model generation detailed in Materials and methods) with all four VSDs in the deactivated, down state. Panel insets show the different conformations of VSD-IV (left) and VSD-II (right) across different structures. The inactivation switch formed by the CTD and VSD-IV S4–S5 linker proposed by Clairfeuille et al. is shown (middle). (B) Combined occupancy of all PIP species (PIP1, PIP2, PIP3) at binding site residues in the three systems; error bars show standard error, n = 3. (C) Distribution of PIP binding durations at the identified site. (D) Intracellular view of CTD covering the resting state VSD-IV. Representative snapshot of PIP binding at DIV S4–S5 linker in the Naᵥ1.7-NaᵥPas system. The CTD (dark pink) prevents PIP access to DIII–IV linker lysines, K1492 and K1495. (E) Combined PIP occupancy at the bottom three gating charges on VSD I–III in the inactivated (blue) and resting state model (orange) simulations. For VSD-IV, PIP occupancy in the Naᵥ1.7-NaᵥPas system (pink) is also shown. (F) Representative simulation snapshot showing PIP (purple) binding at the gating charges (orange) in the resting state model simulations.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Each of the four voltage-sensing domains (VSDs) aligned separately, comparing the inactivated structure (6j8g, in blue) to the resting state model. All the S4 gating charges and the PHE/TYR residue on S2 to indicate the hydrophobic constriction site (HCS) for each VSD (in stick representation). The templates that each corresponding VSD was modeled from are shown in translucent representation. S3 helix hidden for better visualization of gating charge positions.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Five long-term binding events for the inactivated structure of Naᵥ1.7 (PDB ID: 6j8g) are shown on the left. Naᵥ1.7-NaᵥPas chimera (top right, PDB ID: 6nt4) and Naᵥ1.7 resting state model (bottom right) have fewer longer term interactions with PIP at this site. These interactions do not involve residues belonging to the DIII–IV linker (K1147/1492 and K1150/1495).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/91218/elife-91218-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Binding duration distributions for PIP binding events at residues belonging to the bottom three gating charges in the S4 helix of voltage-sensing domain (VSD) I–III are shown for the inactivated structure of Naᵥ1.7 (PDB ID: 6j8g, all VSDs up) and resting Naᵥ1.7 model (all VSDs down, C-terminal domain [CTD] not modeled). For VSD-IV, the distribution for the Naᵥ1.7-NaᵥPas chimera (VSD-IV down, CTD bound) is also shown. (B) Minimum distance between terminal three gating charges on each VSD and bound PIP for long duration (>20 µs) binding events shown for the resting Naᵥ1.7 model (top) and inactivated Naᵥ1.7 structure (bottom). (C) Combined PIP occupancy at the bottom three gating charges on VSD I–IV in the inactivated (blue) and resting state model (orange) simulations of a Naᵥ1.4 resting state model; error bars show standard error, n = 3.
+
 In triplicate 50 µs coarse-grained simulations, PIPs bind to the analogous site to that seen in inactivated Naᵥ1.4 in the inactivated Naᵥ1.7 structure, interacting with residues belonging to both the DIII–IV linker and VSD-IV for durations comparable to Naᵥ1.4, (Figure 6B–C, Figure 6—figure supplement 2). Binding of PIP to the DIV S4–S5 linker to the deactivated VSD-IV in the Naᵥ1.7-NaᵥPas chimera and resting state model was also observed (Figure 6B–C). However, in the Naᵥ1.7-NaᵥPas chimera, the PIP bound at the S4–S5 linker cannot simultaneously associate with the DIII–IV linker (Figure 6—figure supplement 2), due to its sequestration by the CTD, which moves the lysines away from the binding VSD-IV residues (Figure 6D). Instead, K1491, K1492, and K1495 (on the DIII–IV linker) are occupied by different PIPs on the other side of the VSD. In the resting state model, which features an unbound DIII–IV linker PIPs binding at the DIV S4–S5 residues also do not associate with the DIII–IV linker (Figure 6—figure supplement 2). Comparison of binding durations at this site across the three systems reveals a greater number of long PIP interactions (>20 µs) with inactivated Naᵥ1.7 (Dib-Hajj et al., 2013) compared to Naᵥ1.7-NaᵥPas (Venance et al., 2006) or the resting state model (Mantegazza et al., 2021) where VSD-IV is down, and the DIII–IV linker is dissociated.
 
 There are state-dependent differences in PIP occupancy at the gating charges in each VSD (Figure 6E–F, Figure 6—figure supplement 3A and B). PIP can associate with the lowest three gating charges VSD-I of the resting state model, but not in the inactivated state (Figure 6E). This is likely due to the large displacement in the DI-S4 helix, which moves down three helical turns in the resting state model so that all gating charges are below the HCS (Figure 6—figure supplement 1). In VSD-II and -III, the PIP interaction differences between inactivated and resting state are present but less pronounced, owing to a smaller difference in the relative displacement between the gating charges between states (Figure 6—figure supplement 1). PIP occupancy is also higher at VSD-IV when it is in the deactivated conformation, however, the presence of a bound CTD as seen in the Naᵥ1.7-NaᵥPas model reduces this occupancy of PIP (Figure 6E). Additional simulations of a resting state model of Naᵥ1.4 built using our Naᵥ1.7 resting state model as a template suggest that similar gating charge interactions occur for Naᵥ1.4 when the VSDs are deactivated (Figure 6—figure supplement 3C).
@@ -87,6 +147,51 @@ More generally, the S4–S5 linkers in all four domains couple the VSD to the po
 
 The PIP binding residues identified here are conserved in Naᵥ1.1–1.9 (Figure 5C), suggestive of a shared binding site and mechanism for PIP-mediated modulation across subtypes. Mutations at these conserved residues in other subtypes lead to various gain-of-function diseases (Table 1). For example, analogous to the Naᵥ1.4 R1469 residue, the R1642C mutation (in Naᵥ1.3) leads to developmental epileptic encephalopathy (Zaman et al., 2018), and R1644C/H mutations in Naᵥ1.5 (analogous to R1469 in Naᵥ1.4) cause cardiac arrythmias, characterized by accelerated rates of channel recovery from inactivation (Frustaci et al., 2005). Consistent with our observations, these diseases with mutations on the DIII–IV linker are likely to reduce PI(4,5)P2 binding, which could be a contributing factor to instability of inactivated state in these pathogenic variants. These inactivation-deficient variants, as well as the IQM variant that we simulated, further emphasize that interactions between PI(4,5)P2 with Naᵥ channels could be important for prolonging the fast-inactivated state.
 
+**Table 1.**
+ Disease causing point mutations at analogous phosphoinositide (PIP) binding residues in Naᵥ subtypes (described in the UniProt database).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Naᵥ1.4 residue #</th>
+      <th>Analogous residue #</th>
+      <th>Subtype</th>
+      <th>Disease information; mechanism</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>K1330</td>
+      <td>K1505N</td>
+      <td>Naᵥ1.5</td>
+      <td>Long QT3 syndrome; unknown significance</td>
+    </tr>
+    <tr>
+      <td>R1463</td>
+      <td>K1641N</td>
+      <td>Naᵥ1.2</td>
+      <td>Benign familial infantile seizure; unknown significance</td>
+    </tr>
+    <tr>
+      <td rowspan="3">R1469</td>
+      <td>R1657C</td>
+      <td>Naᵥ1.1</td>
+      <td>Generalized epilepsy with febrile seizures plus; depolarizing shift in voltage dependence of activation, reduced current, accelerated recovery from slow inactivation</td>
+    </tr>
+    <tr>
+      <td>R1642C</td>
+      <td>Naᵥ1.3</td>
+      <td>Developmental epileptic encephalopathy; accelerated recovery from inactivation</td>
+    </tr>
+    <tr>
+      <td>R1644C R1644H</td>
+      <td>Naᵥ1.5</td>
+      <td>Long QT3 syndrome Brugada syndrome</td>
+    </tr>
+  </tbody>
+</table>
+
 The PIP binding site identified here harbors sequence and structural similarity to PI(4,5)P2 binding sites found in other cation channels (Figure 5B). For example, PI(4,5)P2 is resolved at a similar site near the VSD and S4–S5 linker in a recent cryo-EM structure of Kᵥ7.1, where the phosphate headgroup forms analogous contacts to R249 and R243 (PDB ID: 6v01) (Sun and MacKinnon, 2020). Despite differences in the role of PI(4,5)P2, which negatively regulates Naᵥ1.4 but is required for Kᵥ7.1 pore opening, the binding site appears to be conserved. Based on the PI(4,5)P2 binding site, a structurally similar compound was developed as an activator of Kᵥ7 channels and proposed to be a future antiarrhythmic therapy (Liu et al., 2020).
 
 PI(4,5)P2 also binds to the down, deactivated state of VSD-II in Caᵥ2.2 (PDB ID: 7mix) (Gao et al., 2021). In this structure, the PI(4,5)P2 headgroup interacts with two VSD-II gating charges, R584 and K587. Compared to the positioning of PI(4,5)P2 in our simulations of Naᵥ1.4 with an activated VSD-IV, the headgroup associates further up the S4 helix in Caᵥ2.2 due to the VSD being in a deactivated state. This is also seen in Kᵥ7.1 which contains an extended GGT loop in the S4–S5 linker which prevents PI(4,5)P2 binding in the VSD-down state (Mandala and MacKinnon, 2023). In our coarse-grained simulations of the resting Naᵥ1.7 model, we observe a similar state-dependent difference in PI(4,5)P2 interactions with the deactivated states of each VSD. Since activation of VSDs I–III are known to be coupled to channel opening (Goldschen-Ohm et al., 2013), we propose that PIP binding at these VSDs impedes their ability to activate and thus increases the voltage threshold required of opening. PI(4,5)P2 binding at VSD-IV is prevented by the presence of the CTD (and absence of the DIII–IV linker) in the resting state, thus not affecting the kinetics of inactivation onset.
@@ -97,7 +202,7 @@ Simulations using the Martini2.2 forcefield have previously been used to investi
 
 In this work we made use of the Martini2.2 model for our coarse-grained simulations, however recently the refined Martini3 (Souza et al., 2021) has become available and will be a useful tool for further interrogating protein-lipid interactions, as a greater number of lipid parameters become available. Our coarse-grained simulations also allow us to investigate the association of other lipid types with Naᵥ1.4. While we focus on PIP here, there are other lipid species that have modulatory effects on Naᵥ channels, such as cholesterol (Amsalem et al., 2018), glycolipids, DG, LPC, and PI, and their interactions warrant further investigation.
 
-## Conclusion
+### Conclusion
 
 Using multiscale simulations, we show that PI(4,5)P2 binds stably to inactivated structures of Naᵥ1.4 and Naᵥ1.7 at a conserved site within the DIV S4–S5 linker. As the CTD is proposed to also bind here during recovery from inactivation, we hypothesize that PI(4,5)P2 competes with the CTD to bind to this site, prolonging inactivation. At this site, PI(4,5)P2 simultaneously binds to the DIII–IV linker which is responsible for allosterically blocking the pore during fast inactivation (Figure 7). Its binding reduces the mobility of both the DIV S4–S5 and DIII–IV linkers, potentially slowing the conformational changes required for the channel to recover to the resting state. We also propose that in the resting state, PIPs form additional interactions with S4 gating charges, particularly in VSD-I, anchoring them to the membrane in a way which may make the upward movement required for their activation more difficult. Our results provide insight into how sodium channels are modulated by PIPs, an important step for the development of novel therapies to treat Naᵥ-related diseases.
 
@@ -105,7 +210,7 @@ Using multiscale simulations, we show that PI(4,5)P2 binds stably to inactivated
 
 ## Materials and methods
 
-## Coarse-grained simulations
+### Coarse-grained simulations
 
 Coarse-grained simulations of Naᵥ1.4 embedded in a complex mammalian membrane were carried out to investigate lipid-protein interactions. The inactivated Naᵥ1.4 alpha subunit (PDB ID: 6agf) (Pan et al., 2018) was coarse-grained using the CHARMM-GUI Martini Maker (Jo et al., 2008; Qi et al., 2015) and embedded in a 360 Å × 360 Å complex membrane using insane.py (Wassenaar et al., 2015). The composition of the complex mammalian membrane is as reported in Ingólfsson et al., 2014. Three replicate simulations, each with different starting coordinates, were carried out for 16 µs each.
 
@@ -113,15 +218,61 @@ To better sample binding events, we also carried out PIP-enriched simulations in
 
 To explore possible state- and subtype-dependent differences in PIP binding, the inactivated Naᵥ1.7 structure (PDB ID: 6j8g) (Shen et al., 2019) and the Naᵥ1.7-NaᵥPas chimera with CTD bound and VSD-IV in the deactivated state (PDB ID: 6nt4) (Clairfeuille et al., 2019) were also coarse-grained and simulated in PIP-enriched membranes (same protocol as above) for three replicates of 50 µs each. Additionally, a model Naᵥ1.7 with all four VSDs in the deactivated state was built using Modeller (Sali and Blundell, 1993) and simulated in triplicate for 50 µs each. The template and structural information for this model are detailed in Table 2. In brief, VSD-I down was modeled from 7xve (Huang et al., 2022), VSD-II and VSD-III were both modeled from the deactivated VSD-II from 7k48 (Wisedchaisri et al., 2021), and VSD-IV and the unbound DIII–IV linker were modeled from the corresponding regions in 6nt4 (Clairfeuille et al., 2019). Adjacent S5/S6 regions to each VSD were also modeled from each specified template to ensure proper contacts between the pore domain and VSDs. The CTD was not included in the model. Using these Naᵥ1.7 templates, the resting state model of Naᵥ1.4 was generated and simulated for three replicates in coarse grain with the protein backbone restrained, in a PIP-enriched membrane for 50 µs.
 
+**Table 2.**
+ Generation of the resting state model using a combination of multiple templates for different voltage-sensing domains (VSDs) and pore domains (PDs) of Naᵥ1.7.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Template pdb</th>
+      <th>Domains used</th>
+      <th>Res IDs (from template)</th>
+      <th>Res IDs (human Naᵥ1.7 numbering)</th>
+      <th>Template info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7xve</td>
+      <td>VSDI, PDI, PDII</td>
+      <td>1–404, 541–650</td>
+      <td>8–411, 864–972</td>
+      <td>Naᵥ1.7 mutant (L866F, T870M, and A874F on S5II; V947F, M952F, and V953F on S6II; and V1438I, V1439F, and G1454C on S6III, E156K on S2I and G779R on S2II) VSDI deactivated (VSDII partially deactivated but not used)</td>
+    </tr>
+    <tr>
+      <td>7k48</td>
+      <td>VSDII, PDII, VSDIII, PDIII, PDIV</td>
+      <td>405, 938, 1115–1244</td>
+      <td>728–973, 1175–1462, 1639–1768</td>
+      <td>Naᵥ1.7/NaᵥAb chimera, where top half of each VSD is Naᵥ1.7 VSDII; all VSDs deactivated with engineered tarantula toxin m3-Huwentoxin-IV bound</td>
+    </tr>
+    <tr>
+      <td>6nt4</td>
+      <td>VSDIV, PDIV, PDI</td>
+      <td>939–1244, 239–404</td>
+      <td>1463–1768, 246–411</td>
+      <td>Naᵥ1.7/NaᵥPas chimera, full Naᵥ1.7 VSDI, and VSDIV deactivated with α-scorpion neurotoxin AaH2 bound</td>
+    </tr>
+    <tr>
+      <td>7w9k</td>
+      <td>Loops between S5 and S6 regions for PDII, PDIII, and PDIV</td>
+      <td>563–619, 811–918, 1141–1213</td>
+      <td>886–942, 1335–1442, 1665–1737</td>
+      <td>Fast-inactivated Naᵥ1.7 (all VSDs activated) DIII–IV linker bound to pore</td>
+    </tr>
+  </tbody>
+</table>
+
 All systems were solvated and ionized with 150 mM NaCl. All coarse-grained simulations were carried out with GROMACS 2022 (Bauer et al., 2023) using the Martini2.2 forcefield (de Jong et al., 2013) and the PIP parameters for each charge state, where PIP1 is based on PI(3)P and PIP2 is based on PI(3,4)P2 (López et al., 2013). Energy minimization was carried out on each system using the steepest descent method for 1000 steps. Following this, equilibration in the constant pressure, constant volume (NVT) ensemble at 1 atm for 10 ps was carried out with backbone position restraints (1000 kJ mol−1nm−2) using a 2-fs time step. Following this, constant pressure and temperature (NPT) equilibration simulations were carried out, using 5, 10, and 20 fs time steps in sequence, with each running for 5000 steps. 1 atm pressure was maintained using a Berendsen barostat with semi-isotropic conditions. Production simulations were carried out in the NPT ensemble, kept at a temperature of 310 K using the Nose-Hoover thermostat (Evans and Holian, 1985) and a pressure of 1 bar using the Parrinello-Rahman barostat (Parrinello and Rahman, 1981). A time step of 20 fs was used. During production simulations, the backbone beads were weakly restrained to their starting coordinates using a force constant of 10 kJ mol−1 nm−2.
 
-## Atomistic simulations
+### Atomistic simulations
 
 Atomistic simulations were performed to characterize atomic interactions between Naᵥ1.4 residues and the bound PI(4,5)P2 headgroup. Frames from a stable PIP2 binding event (from replicate 1 of enriched PIP simulations) were clustered using a selection of the bound PIP2 headgroup beads (C1 C2 C3 PO4 P1 P2) and binding residues K1329, K1330, K1333, K1463, K1466, and R1469 with an RMSD cutoff of 2.5 Å. The protein and bound PIP2 were extracted from the representative frame of the cluster and backbone beads of the coarse-grained VSD-IV were aligned to the corresponding carbon-alpha atoms in the original cryo-EM structure of Naᵥ1.4 (Pan et al., 2018). PIP2 was backmapped to atomistic coordinates of SAPI24 (the CHARMM lipid for PI(4,5)P2 with –2e charge on P5, –1e charge on P4, and –1e on the PO4, as shown in Figure 4D) and the protein was replaced with the 6agf structure. The system was embedded in a 140 Å × 140 Å POPC membrane, solvated, and 0.15 M NaCl added using the CHARMM-GUI Membrane Builder (Jo et al., 2008; Wu, 2014; Lee et al., 2016). An identical system was set up with Naᵥ1.4 in a POPC membrane without PIP.
 
 Atomistic simulations were performed with Amber20 (Case, 2020), using the CHARMM36m (Huang et al., 2017) and TIP3P water (Jorgensen et al., 1983) forcefields. Equilibration steps were performed (minimization, heating, pressurizing), with 5 kJ mol–1 restraints on the protein backbone, followed by 24 ns of gradually reducing restraints. Five replicates of unrestrained production equilibrium simulations were performed, run for 1.5 µs each. The temperature was set at 310 K using the Langevin thermostat (Loncharich et al., 1992) and at a collision frequency of 5 ps–1. Pressure was set at 1 bar using the Monte Carlo barostat (Åqvist et al., 2004) with anisotropic scaling and relaxation time of 1 ps. 12 Å van der Waals cutoff and hydrogen bond SHAKE constraints were used. Hydrogen mass repartitioning was used to enable a 4 fs timestep (Hopkins et al., 2015). PI(4)P1 was also simulated with the same atomistic procedures, using the SAPI14 CHARMM lipid (with –2e charge on P4 and –1e on the PO4, as shown in Figure 4D).
 
-## Analysis
+### Analysis
 
 Coarse-grained lipid-protein interactions were characterized using in-house python scripts which used the numpy, MDAnalysis (Michaud-Agrawal et al., 2011), and pandas libraries (as done previously in Chang Lin et al., 2022). A cutoff of 0.7 nm was used to define interactions between lipids and protein residues. Distance heatmaps were generated based on the minimum distance between a PIP bead and the side chain (SC2) bead of the interacting arginine or lysine residue. Binding durations were calculated by first counting the number of interactions between each PIP and VSD-IV binding residues (R1460, R1463, K1466, and R1469). A binding event is defined as the time between the first and last time that PIP interacts with two or more binding residues on VSD-IV, if it interacts with a minimum of one binding residue between this period. Stability of IFM/IQM motif binding in flexible linker coarse-grained simulations was assessed by measuring the distance between the center of mass of the phenylalanine/glutamine residue to the center of mass of three residues (L1153, I1485, and N1591) within the IFM receptor site.
 

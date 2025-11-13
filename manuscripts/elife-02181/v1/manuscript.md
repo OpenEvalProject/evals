@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.02181.001 Drosophila syncytial nuclear divisions limit transcription unit size of early zygotic genes. As mitosis inhibits not only transcription, but also pre-mRNA splicing, we reasoned that constraints on splicing were likely to exist in the early embryo, being splicing avoidance a possible explanation why most early zygotic genes are intronless. We isolated two mutant alleles for a subunit of the NTC/Prp19 complexes, which specifically impaired pre-mRNA splicing of early zygotic but not maternally encoded transcripts. We hypothesized that the requirements for pre-mRNA splicing efficiency were likely to vary during development. Ectopic maternal expression of an early zygotic pre-mRNA was sufficient to suppress its splicing defects in the mutant background. Furthermore, a small early zygotic transcript with multiple introns was poorly spliced in wild-type embryos. Our findings demonstrate for the first time the existence of a developmental pre-requisite for highly efficient splicing during Drosophila early embryonic development and suggest in highly proliferative tissues a need for coordination between cell cycle and gene architecture to ensure correct gene expression and avoid abnormally processed transcripts. DOI: http://dx.doi.org/10.7554/eLife.02181.001
+Drosophila syncytial nuclear divisions limit transcription unit size of early zygotic genes. As mitosis inhibits not only transcription, but also pre-mRNA splicing, we reasoned that constraints on splicing were likely to exist in the early embryo, being splicing avoidance a possible explanation why most early zygotic genes are intronless. We isolated two mutant alleles for a subunit of the NTC/Prp19 complexes, which specifically impaired pre-mRNA splicing of early zygotic but not maternally encoded transcripts. We hypothesized that the requirements for pre-mRNA splicing efficiency were likely to vary during development. Ectopic maternal expression of an early zygotic pre-mRNA was sufficient to suppress its splicing defects in the mutant background. Furthermore, a small early zygotic transcript with multiple introns was poorly spliced in wild-type embryos. Our findings demonstrate for the first time the existence of a developmental pre-requisite for highly efficient splicing during Drosophila early embryonic development and suggest in highly proliferative tissues a need for coordination between cell cycle and gene architecture to ensure correct gene expression and avoid abnormally processed transcripts.
 
 ## Introduction
 
@@ -29,49 +29,245 @@ In yeast, Drosophila, and human cells, pre-mRNA splicing is mostly co-transcript
 
 ## Results and discussion
 
-## Drosophila Fandango/Xab2 is required for blastoderm cellularization
+### Drosophila Fandango/Xab2 is required for blastoderm cellularization
 
-Previously we isolated a collection of maternal mutants defective in blastoderm cellularization and/or germ-band extension (
+Previously we isolated a collection of maternal mutants defective in blastoderm cellularization and/or germ-band extension (Pimenta-Marques et al., 2008). Complementation group 7 contained two different mutant alleles with similar defects in blastoderm cellularization. Through deficiency mapping and a candidate gene approach we concluded that both were allelic to the uncharacterized coding gene CG6197 (Flybase). To confirm the mutants’ identity, we rescued their zygotic lethality, female sterility (germ-line clones), and blastoderm cellularization defects (maternal mutant embryos) using a genomic fragment construct that contained a wild-type copy of CG6197 (Figure 1—figure supplement 1A, data not shown). Both isolated alleles of CG6197 showed identical phenotypes: maternal mutant embryos (hereafter referred to as mutant embryos) showed normal syncytial nuclear divisions (Figure 1A,B) but subsequently failed to elongate the cortical nuclei, which became mislocalized during blastoderm cellularization (Figure 1C–F, quantification in Figure 1G). The blastoderm cellularization phenotype was remarkably similar to that described for kugelkern/charleston mutant embryos (Brandt et al., 2006; Pilot et al., 2006). Based on the observed phenotypes, we named the corresponding gene fandango, after the Iberian folk dance.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/02181/elife-02181-fig1-v1.jpg)
 
-**Figure 1.:** (A and B) Panels show embryos with normal syncytial blastoderm nuclear divisions in control embryos (hs-FLP; FRT42B) (A) and fand germ-line clone embryos (1hs-FLP; FRT42B fand, maternal mutant) (1B). Embryos were stained for DNA (green) and p-Tyrosine (red). (C–F) Panels show blastoderm cellularized embryos. Control embryos showed normal epithelial architecture with elongated nuclei and columnar cell shape (C). fand germ-line clone mutant embryos showed abnormal epithelial architecture, the cortical nuclei failed to elongate and became mislocalized (1D). (E and F) Magnification of C and D, respectively. Embryos were stained for Slam (green), Neurotactin (red), and DNA (blue). (G) Quantification of fandango maternal mutant embryo phenotype during blastoderm cellularization. Early cellularization: control: 100% normal (n = 44), fand: 100% normal (n = 49); mid cellularization: control: 100% normal (n = 25), 1fand: 28% normal (n = 21); late cellularization: control: 100% normal (n = 42), 1fand: 0% normal (n = 38). (1H) Maternally controlled oogenesis was normal in fandango mutant clones. Absence of endogenous nGFP (green) indicated that the cells were homozygous for fand mutation. Ovaries were stained for F-actin (red) and WGA (blue). (1I) Western blot of whole protein extracts from embryos and ovaries mutant for fand and 1fand alleles (germ-line clones) showed a clear reduction in Fandango protein levels compared to control tissues. It should be noticed that due to experimental constraints the total protein extracts from mutant ovaries included not only signal from mutant germ-line cells (homozygous for 2fand), but also the tightly associated heterozygote somatic follicle cells. α-Tubulin was used as a loading control. (1J) Real-time qPCR analysis showed no significant differences in fandango mRNA levels between control and fand embryos during development (Two-way ANOVA p>0.05 ns.). fandango mRNA levels were normalized with β-actin mRNA levels. (1K–N) in situ hybridization for nanos RNA (maternal) and even-skipped RNA (early zygotic) in blastoderm cellularized embryos. Both control (K) and fand mutant (1L) embryos showed normal nos localization pattern in the pole cells. fand embryos (1N) showed A–P patterning defects of eve compared to control embryos (M).DOI: http://dx.doi.org/10.7554/eLife.02181.003
+**Figure 1.:** (A and B) Panels show embryos with normal syncytial blastoderm nuclear divisions in control embryos (hs-FLP; FRT42B) (A) and fand1 germ-line clone embryos (hs-FLP; FRT42B fand1, maternal mutant) (B). Embryos were stained for DNA (green) and p-Tyrosine (red). (C–F) Panels show blastoderm cellularized embryos. Control embryos showed normal epithelial architecture with elongated nuclei and columnar cell shape (C). fand1 germ-line clone mutant embryos showed abnormal epithelial architecture, the cortical nuclei failed to elongate and became mislocalized (D). (E and F) Magnification of C and D, respectively. Embryos were stained for Slam (green), Neurotactin (red), and DNA (blue). (G) Quantification of fandango maternal mutant embryo phenotype during blastoderm cellularization. Early cellularization: control: 100% normal (n = 44), fand1: 100% normal (n = 49); mid cellularization: control: 100% normal (n = 25), fand1: 28% normal (n = 21); late cellularization: control: 100% normal (n = 42), fand1: 0% normal (n = 38). (H) Maternally controlled oogenesis was normal in fandango mutant clones. Absence of endogenous nGFP (green) indicated that the cells were homozygous for fand1 mutation. Ovaries were stained for F-actin (red) and WGA (blue). (I) Western blot of whole protein extracts from embryos and ovaries mutant for fand1 and fand2 alleles (germ-line clones) showed a clear reduction in Fandango protein levels compared to control tissues. It should be noticed that due to experimental constraints the total protein extracts from mutant ovaries included not only signal from mutant germ-line cells (homozygous for fand1), but also the tightly associated heterozygote somatic follicle cells. α-Tubulin was used as a loading control. (J) Real-time qPCR analysis showed no significant differences in fandango mRNA levels between control and fand1 embryos during development (Two-way ANOVA p>0.05 ns.). fandango mRNA levels were normalized with β-actin mRNA levels. (K–N) in situ hybridization for nanos RNA (maternal) and even-skipped RNA (early zygotic) in blastoderm cellularized embryos. Both control (K) and fand1 mutant (L) embryos showed normal nos localization pattern in the pole cells. fand1 embryos (N) showed A–P patterning defects of eve compared to control embryos (M).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/02181/elife-02181-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** fandango mutant alleles contain changes in highly conserved amino acids.(A) Panels show the rescue of the transheterozygous zygotic lethality of fand and 1fand alleles. Only transheterozygous mutant females carrying the wild-type copy of 2fandango (wt-fandango; FRT42B, fand/1fand) were viable (dark gray box). Transheterozygous mutant males without receiving the genomic fragment (FRT42B, 2fand/1fand) died (light gray box). In the reciprocal cross, both females and males transheterozygous mutants carrying the wild-type copy of 2fandango, were viable (dark gray box). (B) Fandango has multiple copies of a tetratricopeptide repeat (TPR) motif, a protein–protein interaction module found in a number of functionally different proteins. A scheme displaying the distribution of conserved TPR protein domains in Fandango (top). Mutations of fand and 1fand alleles affect highly conserved amino acids of the TPR domains 7 and 6, respectively. 2fand contained a missense point mutation changing an alanine to a valine at aminoacid position 401 (A401V) and 1fand contained a microdeletion which resulted in loss of six conserved amino acids from position 355 to 360 (Δ355–360). Partial alignment of Fandango (2Drosophila melanogaster CG6197, ref.NP_610891.1) with orthologous Xab2 (Homo sapiens, ref. NP_064581.2), Xab2 (Mus musculus, ref. NP_080432.1), Xab2 (Danio rerio, ref.NP_001038248.1), C50F2.3 (Caenorhabditis elegans, ref. NP_491250.1), cwf3 (Schizosaccharomyces pombe, ref. NP_596612.1), and SYF1 (Saccharomyces cerevisiae, ref. NP_010704.1) (bottom).DOI: http://dx.doi.org/10.7554/eLife.02181.004
+**Figure 1—figure supplement 1.:** (A) Panels show the rescue of the transheterozygous zygotic lethality of fand1 and fand2 alleles. Only transheterozygous mutant females carrying the wild-type copy of fandango (wt-fandango; FRT42B, fand1/fand2) were viable (dark gray box). Transheterozygous mutant males without receiving the genomic fragment (FRT42B, fand1/fand2) died (light gray box). In the reciprocal cross, both females and males transheterozygous mutants carrying the wild-type copy of fandango, were viable (dark gray box). (B) Fandango has multiple copies of a tetratricopeptide repeat (TPR) motif, a protein–protein interaction module found in a number of functionally different proteins. A scheme displaying the distribution of conserved TPR protein domains in Fandango (top). Mutations of fand1 and fand2 alleles affect highly conserved amino acids of the TPR domains 7 and 6, respectively. fand1 contained a missense point mutation changing an alanine to a valine at aminoacid position 401 (A401V) and fand2 contained a microdeletion which resulted in loss of six conserved amino acids from position 355 to 360 (Δ355–360). Partial alignment of Fandango (Drosophila melanogaster CG6197, ref.NP_610891.1) with orthologous Xab2 (Homo sapiens, ref. NP_064581.2), Xab2 (Mus musculus, ref. NP_080432.1), Xab2 (Danio rerio, ref.NP_001038248.1), C50F2.3 (Caenorhabditis elegans, ref. NP_491250.1), cwf3 (Schizosaccharomyces pombe, ref. NP_596612.1), and SYF1 (Saccharomyces cerevisiae, ref. NP_010704.1) (bottom).
 
 fandango encodes the Drosophila ortholog of yeast SYF1 (synthetic lethal with cdc41) (Russell et al., 2000) and human XAB2 (XPA binding protein 2) (Nakatsu et al., 2000; Kuraoka et al., 2008). These proteins were described as subunits of the NTC/Prp19 complexes, which are important for spliceosome stabilization and activation (Chan et al., 2003; Chang et al., 2009; Hogg et al., 2010). Fandango protein has multiple tetratricopeptide repeat (TPR) motifs, which is a protein–protein interaction module (Zeytuni and Zarivach, 2012). Sequencing both alleles of fandango (fand1 and fand2) revealed distinct mutations within the fandango open reading frame (ORF). fand1 contained a missense point mutation in a highly conserved residue within TPR domain VII (from an alanine to a valine; A401V), whereas fand2 contained a microdeletion of 18 nucleotides within TPR domain VI, which deleted six conserved amino acids from position 355 to 360 (Figure 1—figure supplement 1B). In total protein extracts, both fand1 and fand2 mutant embryos showed a significant reduction in Fandango protein levels compared to control (Figure 1I). fandango mRNA levels, analyzed by real-time qPCR, were similar between control and fand1 mutant embryos (Figure 1J), suggesting that the mutation did not alter the stability of the encoding pre-mRNA.
 
-## Drosophila Fandango/Xab2 is differentially required for splicing of maternal and early zygotic pre-mRNAs
+### Drosophila Fandango/Xab2 is differentially required for splicing of maternal and early zygotic pre-mRNAs
 
-As noted above
+As noted above fandango maternal mutant embryos and kugelkern (kuk) mutant embryos showed remarkably similar blastoderm cellularization defects (Brandt et al., 2006; Pilot et al., 2006). Since fandango encodes a protein whose yeast and human orthologs are required for efficient spliceosome activity, we hypothesized that Fandango was required for splicing of kuk transcripts. kuk encodes two different transcripts, which vary in intron size (Figure 2A). Both transcripts are predicted to encode the same protein. Analysis of publicly available modENCODE transcriptome datasets (Graveley et al., 2011) suggested that the large kuk transcript was maternally expressed, whereas the small kuk transcript was only expressed zygotically. Through RT-PCR analysis we confirmed that similarly to control maternal genes (nanos and oskar) the large kuk transcript was maternally expressed (being present in unfertilized eggs), whereas the small kuk transcript was exclusively zygotically expressed (being present only in fertilized eggs) as the case of well-known early zygotic genes (even-skipped and krüppel) (Figure 2—figure supplement 1A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/02181/elife-02181-fig2-v1.jpg)
 
-**Figure 2.:** fandango mutants.(A) The kugelkern (kuk) locus encodes two transcripts of different size, kuk-lt containing a large intron and kuk-st with a short intron. Orientation and position of primers used for splicing analysis is indicated (arrows). (B) RT-PCR analysis of kuk transcripts. Control embryos yielded PCR products in the size predicted for the properly spliced forms of both kuk transcripts using exon–exon (e–e) primers (green dots, kuk-lt: 431 bp and kuk-st: 437 bp). fandango maternal mutant embryos (fand and 1fand alleles) showed splicing defects only in the 2kuk-st transcript; PCR products were detected by e–e primers in the size expected for intron retention (red dots, kuk-st: 596 bp) and by intron–exon (i–e) primers (kuk-st: 474 bp). Splicing of the kuk-lt was not affected in fandango mutant background; PCR products were only detected with e–e primers in the predicted size for the correctly spliced pre-mRNA (green dots, kuk-lt: 431 bp). ‘No RT’ controls (only total RNA as template) yielded no amplification, meaning there was no contamination with genomic DNA in the samples tested. (C) RT-PCR analysis of maternal and early zygotic genes. Maternal transcripts were properly spliced, in both, control and fand mutant embryos; PCR products were only detected using e–e primers (green dots, 1grk: 527, nos: 581, osk: 762 bp). In contrast, early zygotic transcripts were correctly spliced only in control embryos (green dots, kr: 559, eve: 828, ftz: 753 bp). fand mutant embryos yielded PCR products in the size predicted for intron retention with e–e primers (red dots, 1kr: 932, eve: 899, ftz: 900 bp) and with i–e primers (kr: 629, eve: 720, ftz: 595 bp). All PCR bands showed in the panels were cloned and sequenced to confirm their identity. Green dots indicate correctly spliced transcripts, red dots indicate unspliced transcripts (intron retention). (D) RNA-Seq data confirmed that zygotic but not maternally encoded transcripts displayed a large fraction of splicing defects (intron retention) in fand mutant embryos. The panel shows box plot of the distribution of numbers of reads per bp relative to the total number of reads falling inside a 100 bp window centered around the 5′splice sites of zygotic (n = 408 splice sites from 270 genes) or maternal genes (n = 5876 splice sites from 2048 genes).1DOI: http://dx.doi.org/10.7554/eLife.02181.005
+**Figure 2.:** (A) The kugelkern (kuk) locus encodes two transcripts of different size, kuk-lt containing a large intron and kuk-st with a short intron. Orientation and position of primers used for splicing analysis is indicated (arrows). (B) RT-PCR analysis of kuk transcripts. Control embryos yielded PCR products in the size predicted for the properly spliced forms of both kuk transcripts using exon–exon (e–e) primers (green dots, kuk-lt: 431 bp and kuk-st: 437 bp). fandango maternal mutant embryos (fand1 and fand2 alleles) showed splicing defects only in the kuk-st transcript; PCR products were detected by e–e primers in the size expected for intron retention (red dots, kuk-st: 596 bp) and by intron–exon (i–e) primers (kuk-st: 474 bp). Splicing of the kuk-lt was not affected in fandango mutant background; PCR products were only detected with e–e primers in the predicted size for the correctly spliced pre-mRNA (green dots, kuk-lt: 431 bp). ‘No RT’ controls (only total RNA as template) yielded no amplification, meaning there was no contamination with genomic DNA in the samples tested. (C) RT-PCR analysis of maternal and early zygotic genes. Maternal transcripts were properly spliced, in both, control and fand1 mutant embryos; PCR products were only detected using e–e primers (green dots, grk: 527, nos: 581, osk: 762 bp). In contrast, early zygotic transcripts were correctly spliced only in control embryos (green dots, kr: 559, eve: 828, ftz: 753 bp). fand1 mutant embryos yielded PCR products in the size predicted for intron retention with e–e primers (red dots, kr: 932, eve: 899, ftz: 900 bp) and with i–e primers (kr: 629, eve: 720, ftz: 595 bp). All PCR bands showed in the panels were cloned and sequenced to confirm their identity. Green dots indicate correctly spliced transcripts, red dots indicate unspliced transcripts (intron retention). (D) RNA-Seq data confirmed that zygotic but not maternally encoded transcripts displayed a large fraction of splicing defects (intron retention) in fand1 mutant embryos. The panel shows box plot of the distribution of numbers of reads per bp relative to the total number of reads falling inside a 100 bp window centered around the 5′splice sites of zygotic (n = 408 splice sites from 270 genes) or maternal genes (n = 5876 splice sites from 2048 genes).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/02181/elife-02181-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** fandango mutants.(A) RT-PCR analysis of kuk transcripts from unfertilized and fertilized eggs. kuk-lt is maternal and kuk-st only zygotically expressed. kuk-st (437 bp) transcripts are only detected in fertilized eggs, as are other well-known early zygotic transcripts (kr: 559, eve: 828 bp). kuk-lt (431 bp) is amplified from both fertilized and unfertilized eggs, as are other known maternal transcripts (nos: 581, osk: 762 bp). (B) RT-PCR analysis of kuk transcripts with a specific reverse primer for kuk-st (kuk-st4). Control embryos yielded PCR products with the size expected for properly spliced kuk transcripts using e–e primers (green dots, kuk-lt: 431 bp and kuk-st: 2257 bp). fand maternal mutant embryos showed splicing defects in 1kuk-st; PCR products were detected in the size expected for intron retention with e–e primers (red dot, kuk-st: 2413 bp) and by i–e primers (kuk-st: 2293 bp). Splicing of the kuk-lt was not affected in fandango mutant background; a PCR product was only detected with e–e primers in the expected size for correctly spliced pre-mRNAs (green dot, kuk-lt: 431 bp). (C) RT-PCR analysis of kuk-st showed the rescue of splicing defects observed in both fandango alleles by a genomic fragment construct derived from the third chromosome that contained a wild-type copy of fandango. Embryos analyzed were laid by GLC females FRT42B fand/CyO; 1wt-fandango or FRT42B fand/CyO; 2wt-fandango. GLC FRT42B and mutant GLC fand and 1fand embryos were used as controls. (2D) RT-PCR analysis of maternally encoded transcripts from wild-type and fandango mutant ovaries (germ-line clones) failed to detect any splicing defects. The PCR products detected in both samples were of the size predicted for properly spliced pre-mRNAs (green dots, nos: 581, osk: 762, stg: 614 bp). All PCR products shown in these panels were cloned and sequenced to confirm their identity. Green dots indicate correctly spliced transcripts and red dots indicate unspliced transcripts (intron retention).DOI: http://dx.doi.org/10.7554/eLife.02181.006
+**Figure 2—figure supplement 1.:** (A) RT-PCR analysis of kuk transcripts from unfertilized and fertilized eggs. kuk-lt is maternal and kuk-st only zygotically expressed. kuk-st (437 bp) transcripts are only detected in fertilized eggs, as are other well-known early zygotic transcripts (kr: 559, eve: 828 bp). kuk-lt (431 bp) is amplified from both fertilized and unfertilized eggs, as are other known maternal transcripts (nos: 581, osk: 762 bp). (B) RT-PCR analysis of kuk transcripts with a specific reverse primer for kuk-st (kuk-st4). Control embryos yielded PCR products with the size expected for properly spliced kuk transcripts using e–e primers (green dots, kuk-lt: 431 bp and kuk-st: 2257 bp). fand1 maternal mutant embryos showed splicing defects in kuk-st; PCR products were detected in the size expected for intron retention with e–e primers (red dot, kuk-st: 2413 bp) and by i–e primers (kuk-st: 2293 bp). Splicing of the kuk-lt was not affected in fandango mutant background; a PCR product was only detected with e–e primers in the expected size for correctly spliced pre-mRNAs (green dot, kuk-lt: 431 bp). (C) RT-PCR analysis of kuk-st showed the rescue of splicing defects observed in both fandango alleles by a genomic fragment construct derived from the third chromosome that contained a wild-type copy of fandango. Embryos analyzed were laid by GLC females FRT42B fand1/CyO; wt-fandango or FRT42B fand2/CyO; wt-fandango. GLC FRT42B and mutant GLC fand1 and fand2 embryos were used as controls. (D) RT-PCR analysis of maternally encoded transcripts from wild-type and fandango mutant ovaries (germ-line clones) failed to detect any splicing defects. The PCR products detected in both samples were of the size predicted for properly spliced pre-mRNAs (green dots, nos: 581, osk: 762, stg: 614 bp). All PCR products shown in these panels were cloned and sequenced to confirm their identity. Green dots indicate correctly spliced transcripts and red dots indicate unspliced transcripts (intron retention).
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/02181/elife-02181-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** fandango mutants.(A) Zygotic genes display intron retention in the fand mutant, while maternal genes do not. This panel shows Integrative Genomics Viewer (IGV) screenshots of RNA-Seq read coverage from tophat alignments of a selected set of known early zygotic and maternally expressing genes. Within each gene, the image scale is identical for both 1fand and control. (1B) Zygotic genes in fand mutant present clear evidence of intron retention, independent of intron size. The panel displays box plot distributions of percentage intron retention of exon–intron boundaries of early zygotic and maternal genes in 1fand and control. Exon–intron boundaries were divided in bins, by intron size (less than 100 bp; from 100 to 500 bp; and greater than 500 bp). Sizes were selected empirically to have comparable dataset sizes in each bin (150–200 boundaries for zygotic genes, 1000–3000 for maternal genes). The frequency of intron retention was determined by comparing the number of unsplit reads overlapping the splice site with the number of reads that showed an exon–exon split (see ‘Materials and methods’ for more details). (1C) Splice sites in zygotic and maternal genes presented the same characteristic sequence pattern (5′ GT; 3′ AG). (D) Zygotic genes and maternal genes (see ‘Materials and methods’ for more details) did not reveal any distinguishing features in terms of exon–intron structure. The exon frequency is close to that expected from a random distribution, roughly 50% (with the obvious exception of gene endings—TSS and TTS). For comparison, the 59 early zygotic genes described by (De Renzis et al., 2007), 70% of which are intronless, display a very distinct, non-random, pattern.DOI: http://dx.doi.org/10.7554/eLife.02181.007
+**Figure 2—figure supplement 2.:** (A) Zygotic genes display intron retention in the fand1 mutant, while maternal genes do not. This panel shows Integrative Genomics Viewer (IGV) screenshots of RNA-Seq read coverage from tophat alignments of a selected set of known early zygotic and maternally expressing genes. Within each gene, the image scale is identical for both fand1 and control. (B) Zygotic genes in fand1 mutant present clear evidence of intron retention, independent of intron size. The panel displays box plot distributions of percentage intron retention of exon–intron boundaries of early zygotic and maternal genes in fand1 and control. Exon–intron boundaries were divided in bins, by intron size (less than 100 bp; from 100 to 500 bp; and greater than 500 bp). Sizes were selected empirically to have comparable dataset sizes in each bin (150–200 boundaries for zygotic genes, 1000–3000 for maternal genes). The frequency of intron retention was determined by comparing the number of unsplit reads overlapping the splice site with the number of reads that showed an exon–exon split (see ‘Materials and methods’ for more details). (C) Splice sites in zygotic and maternal genes presented the same characteristic sequence pattern (5′ GT; 3′ AG). (D) Zygotic genes and maternal genes (see ‘Materials and methods’ for more details) did not reveal any distinguishing features in terms of exon–intron structure. The exon frequency is close to that expected from a random distribution, roughly 50% (with the obvious exception of gene endings—TSS and TTS). For comparison, the 59 early zygotic genes described by (De Renzis et al., 2007), 70% of which are intronless, display a very distinct, non-random, pattern.
 
 To investigate by RT-PCR whether Fandango was required for splicing of kuk pre-mRNAs, specific sets of primers (exon–exon, e–e; intron–exon, i–e) were designed for each kuk transcript, taking advantage of a longer 3′UTR in the small kuk transcript (Figure 2A). Surprisingly, whereas fandango embryos showed significant splicing defects of the small zygotic kuk transcript, the large maternal kuk transcript was correctly spliced (Figure 2B; Figure 2—figure supplement 1B). Splicing defects were fully rescued by a genomic fragment construct that contained a wild type copy of fandango (Figure 2—figure supplement 1C). The differential requirement of Fandango for splicing of kuk transcripts prompted us to investigate more than 20 other maternal and early zygotic genes. RT-PCR analysis of fandango embryos invariably showed splicing defects of early zygotic but not maternally encoded transcripts (Figure 2C, data not shown). High-throughput transcriptome sequencing (RNAseq) confirmed that splicing of early zygotic but not maternally encoded gene products was affected in fandango embryos (Figure 2D, Figure 2—figure supplement 2A). Maternal transcripts, whose intron size was equivalent to those observed in early zygotic transcripts, were unaffected (Figure 2—figure supplement 2B), which showed that Fandango was not specifically rate limiting for splicing of small introns. Comparison analysis of 5′ and 3′ splice site consensus sequences between maternal and zygotic pre-mRNA transcripts showed no significant differences (Figure 2—figure supplement 2C) and the two populations of transcripts displayed a similarly heterogeneous exon–intron structure (Figure 2—figure supplement 2D). RT-PCR analysis of maternally encoded transcripts from wild-type and fandango mutant ovaries (germ-line clones) also failed to detect splicing defects (Figure 2—figure supplement 1D). This suggested that the absence of splicing defects of maternally encoded transcripts in fandango embryos was not due to specific degradation of unspliced transcripts during oogenesis.
 
 The differential requirement of Fandango for splicing of early zygotic encoded transcripts is fully consistent with the observation that maternally controlled oogenesis, primordial germ-cell formation, and syncytial nuclear divisions were normal in fandango mutants (Figure 1A,B,H,K,L), whereas the first detectable phenotype only occurred during zygotically controlled blastoderm cellularization (Figure 1C–F). Despite the fact that clonal analysis of the female germ line for both alleles of fandango showed normal oogenesis and egg laying (Figure 1H) (data not shown), Fandango protein levels were significantly reduced in the mutant ovaries (germ-line clones) (Figure 1I). fandango embryos also failed to initiate germ-band extension after blastoderm cellularization (data not shown). It was previously shown that anterior–posterior (A–P) patterning is required for germ-band extension (Zallen and Wieschaus, 2004). Consistently, fandango embryos showed A–P patterning defects in the early zygotic pair-rule gene even-skipped (Figure 1M,N).
 
-## Fandango is similarly associated with the NTC/Prp19 complexes during oogenesis and early embryonic development
+### Fandango is similarly associated with the NTC/Prp19 complexes during oogenesis and early embryonic development
 
 The highly conserved NTC/Prp19 and NTC/Prp19-related complexes are essential for pre-mRNA splicing as they facilitate the formation and progression between distinct spliceosome conformations during the splicing reaction (Chan et al., 2003; Hogg et al., 2010).
 
-Endogenous Fandango and Prp19 physically interacted in the early embryo (
+Endogenous Fandango and Prp19 physically interacted in the early embryo (Figure 3A). Moreover, both endogenous Fandango and Prp19 physically interacted with endogenous ISY1 and CDC5L (Figure 3A), confirming that Fandango is a bona fide subunit of Drosophila NTC/Prp19 complexes. Immunoprecipitation of Myc-tagged Fandango and Myc-tagged Prp19 from embryonic protein extracts also identified an identical group of interacting proteins (Table 1; Supplementary file 1). Whereas Myc-Fandango mostly interacted with the NTC/Prp19-related complex subunits, Myc-Prp19 interacted principally with the NTC/Prp19 complex subunits. This illustrated that, as in humans, distinct but interacting NTC/Prp19 complexes exist in Drosophila, in agreement with the recent suggestion that a remarkable degree of conservation of distinct splicing complexes exists among metazoans (Herold et al., 2009).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/02181/elife-02181-fig3-v1.jpg)
 
-**Figure 3.:** (A) Pull down assay from nuclear-enriched protein extracts using a polyclonal antibody of Prp19. Endogenous Prp19 interacts physically with Fandango and other subunits of the NTC/Prp19 complexes (ISY1 and CDC5L). Pre-immune serum was used in the control. (B) Size-exclusion chromatography of control and fand mutant protein extracts from 0–3 hr embryo collections using a Superose 6 10/300 column. After separation, each fraction was analyzed by Western blot. NTC/Prp19 complexes subunits (Prp19, Fandango, and ISY1) were part of a ∼600–800 kDa complex and also co-purified in a significantly larger complex (fraction 4 and 5). 1fand mutant protein extracts showed a significant reduction in levels of Fandango and ISY1 subunits and a size reduction of the Prp19-positive ∼600–800 kDa complex. (1C) Western-blot analysis of total protein extracts from ovaries (left) and 0–3 hr embryos (right) from control and both fandango alleles, showed a reduction of Fandango and ISY1 protein levels in both tissues. Protein levels of Prp19 and CDC5L were not affected. α-Tubulin was used as loading control. Fandango Western blot is the same as shown in Figure 1I.DOI: http://dx.doi.org/10.7554/eLife.02181.008
+**Figure 3.:** (A) Pull down assay from nuclear-enriched protein extracts using a polyclonal antibody of Prp19. Endogenous Prp19 interacts physically with Fandango and other subunits of the NTC/Prp19 complexes (ISY1 and CDC5L). Pre-immune serum was used in the control. (B) Size-exclusion chromatography of control and fand1 mutant protein extracts from 0–3 hr embryo collections using a Superose 6 10/300 column. After separation, each fraction was analyzed by Western blot. NTC/Prp19 complexes subunits (Prp19, Fandango, and ISY1) were part of a ∼600–800 kDa complex and also co-purified in a significantly larger complex (fraction 4 and 5). fand1 mutant protein extracts showed a significant reduction in levels of Fandango and ISY1 subunits and a size reduction of the Prp19-positive ∼600–800 kDa complex. (C) Western-blot analysis of total protein extracts from ovaries (left) and 0–3 hr embryos (right) from control and both fandango alleles, showed a reduction of Fandango and ISY1 protein levels in both tissues. Protein levels of Prp19 and CDC5L were not affected. α-Tubulin was used as loading control. Fandango Western blot is the same as shown in Figure 1I.
+
+**Table 1.**
+ LC-MS analysis of co-immunoprecipitation assays from ovaries and embryos
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Drosophila</th>
+      <th rowspan="3">Human/yeast</th>
+      <th colspan="4">Fandango-myc</th>
+      <th colspan="2">Prp19-myc</th>
+    </tr>
+    <tr>
+      <th>CG</th>
+      <th>gene</th>
+      <th colspan="2">ovaries</th>
+      <th colspan="2">embryos</th>
+      <th colspan="2">embryos</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>rep1</th>
+      <th>rep2</th>
+      <th>rep1</th>
+      <th>rep2</th>
+      <th>rep1</th>
+      <th>rep2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="9">prp19 complex</td>
+    </tr>
+    <tr>
+      <td>CG5519</td>
+      <td>prp19</td>
+      <td>PRP19/Prp19</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>CG6905</td>
+      <td>cdc5-like</td>
+      <td>CDC5L/Cef1</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>CG1796</td>
+      <td>Tango4</td>
+      <td>PLRG1/Prp46</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CG4980</td>
+      <td>-</td>
+      <td>BCAS2/Snt309</td>
+      <td>–</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CG12135</td>
+      <td>c12.1</td>
+      <td>CWC15/cwc15</td>
+      <td>+</td>
+      <td>–</td>
+      <td>–</td>
+      <td>-</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td colspan="9">Prp19 related</td>
+    </tr>
+    <tr>
+      <td>CG6197</td>
+      <td>Fandango</td>
+      <td>Xab2/Syf1</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CG31368</td>
+      <td>–</td>
+      <td>AQR/–</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CG4886</td>
+      <td>cyp33</td>
+      <td>PPIE/–</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CG9667</td>
+      <td>–</td>
+      <td>ISY1/ISY1</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CG8264</td>
+      <td>Bx42</td>
+      <td>SNW1/Prp45</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CG14641</td>
+      <td>–</td>
+      <td>RBM22/Cwc2</td>
+      <td>–</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>CG3193</td>
+      <td>Crn</td>
+      <td>CRNKL1/Clf1</td>
+      <td>–</td>
+      <td>+</td>
+      <td>–</td>
+      <td>–</td>
+      <td>+</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>CG13892</td>
+      <td>cypl</td>
+      <td>PPIL1/-</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>+</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>CG1639</td>
+      <td>l(1)10Bb</td>
+      <td>BUD31/Bud31</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>+</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_Co-immunoprecipitations were performed using total protein extracts from the different tissues expressing Myc-tagged Fandango or Myc-tagged-Prp19. Human and yeast homologues and the different sub-complexes are shown as described in (Herold et al., 2009). (−), (+), (++), (+++) correspond to 0, 1–9, 10–19, and >20 non-repeated peptides respectively. None of the proteins shown were detected in the negative controls (for detailed LC-MS analysis see Supplementary file 1)._
 
 The differential requirements of Fandango for pre-mRNA splicing of maternal and early zygotic transcripts potentially suggest distinct interactions between Fandango and other splicing proteins during oogenesis and early embryonic development. Nevertheless, immunoprecipitation of Myc-Fandango specifically expressed in the female germ line during oogenesis and in the early embryo identified a virtually identical group of interacting proteins: mostly subunits of the NTC/Prp19-related complex, and to a lesser extent, subunits of the NTC/Prp19 complex (Table 1; Supplementary file 1). These results showed that Fandango physically interacts with a similar group of splicing proteins during oogenesis and in the early embryo.
 
@@ -79,37 +275,37 @@ To better understand the splicing defects observed in fandango embryos, we inves
 
 Levels of ISY1 were similarly affected in fandango mutants during oogenesis and in the early embryo (Figure 3C), suggesting this decrease did not explain the differential requirements of Fandango for splicing of early zygotic and maternally encoded transcripts. Mutant clonal analysis of a stronger allele of fandango (nonsense mutation), showed a complete loss of the female germ line in adult ovaries (data not shown). This demonstrated that the two isolated alleles of fandango are hypomorphic and suggested that Fandango was required, albeit at lower levels, for splicing of maternal transcripts. We concluded it is unlikely that a differential expression and/or association of core components of the spliceosome could potentially explain the differential requirements for Fandango between oogenesis and the early embryo. The most likely explanation is that Fandango is quantitatively (but not qualitatively) differentially required during early embryonic development.
 
-## Reduction in Fandango levels affects mainly its splicing function
+### Reduction in Fandango levels affects mainly its splicing function
 
-Transcriptional elongation can affect co-transcriptional splicing (
+Transcriptional elongation can affect co-transcriptional splicing (de la Mata et al., 2003; Ip et al., 2011). It was recently shown that Syf1, the yeast ortholog of Fandango, is also important for RNApol II transcriptional activity (Chanarat et al., 2011; David et al., 2011), therefore we decided to investigate transcription in fandango embryos. Three intronless early zygotic genes (nullo, snail, and scute) and two early zygotic genes with introns (even-skipped and tailless) were selected for further analysis by real-time qPCR. During mid/late-syncytial blastoderm (stage B) (Figure 4A, ‘Materials and methods’), no significant differences in transcript abundance were observed between control and fandango (Figure 4—figure supplement 1A), whereas embryos mutant for grapes showed the expected reduction of transcript levels (Figure 4—figure supplement 1A; Sibon et al., 1997).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/02181/elife-02181-fig4-v1.jpg)
 
-**Figure 4.:** fandango mutants.(A) Embryos were divided into three different groups according to developmental stage (‘Materials and methods’), stage A: early/mid-syncytial blastoderm embryos, stage B: mid/late-syncytial blastoderm embryos, and stage C: blastoderm cellularization embryos. (B) Western blot for RNApol II CTD Ser2 phosphorylation levels. Control and fand embryos showed a similar increase in the global levels of RNApol II CTD Ser2 phosphorylation over the course of early embryonic development. α-Tubulin was used as a loading control. (1C) Quantification of the CTD Ser2 phosphorylation from five independent western blot assays showed no significant difference at any of the embryonic developmental stages analyzed (Two-way ANOVA p>0.05 ns.).DOI: http://dx.doi.org/10.7554/eLife.02181.010
+**Figure 4.:** (A) Embryos were divided into three different groups according to developmental stage (‘Materials and methods’), stage A: early/mid-syncytial blastoderm embryos, stage B: mid/late-syncytial blastoderm embryos, and stage C: blastoderm cellularization embryos. (B) Western blot for RNApol II CTD Ser2 phosphorylation levels. Control and fand1 embryos showed a similar increase in the global levels of RNApol II CTD Ser2 phosphorylation over the course of early embryonic development. α-Tubulin was used as a loading control. (C) Quantification of the CTD Ser2 phosphorylation from five independent western blot assays showed no significant difference at any of the embryonic developmental stages analyzed (Two-way ANOVA p>0.05 ns.).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/02181/elife-02181-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** fandango mutants.(A) Real-time qPCR analysis to measure levels of early zygotic transcripts from intronless (nullo, snail, and scute) and containing introns genes (even-skipped and tailless) during embryonic development. mRNA levels from early zygotic genes were normalized with β-actin mRNA levels. At stage B, when early zygotic genes are transcribed, there was no significant differences in mRNA abundance for any of the genes analyzed in either control or fandango samples (Two-way ANOVA p>0.05 ns.).DOI: http://dx.doi.org/10.7554/eLife.02181.011
+**Figure 4—figure supplement 1.:** (A) Real-time qPCR analysis to measure levels of early zygotic transcripts from intronless (nullo, snail, and scute) and containing introns genes (even-skipped and tailless) during embryonic development. mRNA levels from early zygotic genes were normalized with β-actin mRNA levels. At stage B, when early zygotic genes are transcribed, there was no significant differences in mRNA abundance for any of the genes analyzed in either control or fandango samples (Two-way ANOVA p>0.05 ns.).
 
 During transcriptional elongation, RNApol II is specifically phosphorylated on the Ser2 residue of its carboxy-terminal domain (CTD) (Hsin and Manley, 2012). In agreement with the onset of early zygotic transcription, we observed a significant increase in RNApol II CTD Ser2 phosphorylation as the embryo developed from early/mid-syncytial blastoderm (stage A), into mid/late-syncytial blastoderm (stage B), and blastoderm cellularization (interphase 14) (stage C) (Figure 4A,B). Both control and fandango embryos showed a similar increase in global levels of RNApol II CTD Ser2 phosphorylation (Figure 4B,C). As transcriptional regulation during interphase 14 (stage C) relies on correct expression of early zygotic genes and degradation of many maternal RNAs (MZT) (Tadros and Lipshitz, 2009), we concluded that transcriptional changes at this stage (Figure 4—figure supplement 1A) were most likely a consequence of the widespread defects occurring during mid/late-syncytial blastoderm. Altogether, we concluded that the observed reduction in Fandango levels affects mainly its splicing function.
 
-## Ectopic maternal expression of an early zygotic transcript in the mutant background was sufficient to suppress its splicing defects
+### Ectopic maternal expression of an early zygotic transcript in the mutant background was sufficient to suppress its splicing defects
 
-To investigate if the differential requirement of Fandango for splicing of early zygotic and maternally encoded transcripts potentially resulted from distinct transcript sequences, we generated an early zygotic
+To investigate if the differential requirement of Fandango for splicing of early zygotic and maternally encoded transcripts potentially resulted from distinct transcript sequences, we generated an early zygotic kuk transcript (kuk-LacZ) under the control of an UAS/Gal4 inducible promoter, where the open reading frame (ORF) was replaced by LacZ (Figure 5A, see ‘Materials and methods’ for more details). As expected, when this construct was expressed zygotically, it was correctly spliced in control but not in fandango embryos (Figure 5B). In contrast, splicing of the kuk-LacZ construct occurred normally in both control and fandango mutants when it was expressed maternally (Figure 5B). Since maternal expression of an early zygotic transcript, in a fandango mutant background, was enough to suppress its splicing defects, we concluded that the differential requirement of Fandango for splicing of early zygotic transcripts was most likely due to the developmental context of gene expression and not a particularity in the early zygotic pre-mRNA sequences. Consistently, we failed to detect differences related to intron size, splice sites consensus, and exon–intron structure between maternal and zygotic transcripts (Figure 2—figure supplement 2B–D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/02181/elife-02181-fig5-v1.jpg)
 
-**Figure 5.:** (A) The kuk-LacZ construct was built using the 5′UTR, the intron and the 3′UTR of the kuk small transcript (dark gray), and replacing the kuk ORF (black) by the LacZ coding sequence (light gray). To induce the expression of this construct it was put under the control of the UAS promoter (green) to drive the tissue specific expression with GAL4 drivers. Orientation and position of primers used for splicing analysis is indicated (arrows). (B) RT-PCR analysis of the kuk-LacZ construct. When it was zygotically expressed, it was correctly spliced in control but not in fand embryos (similarly to the endogenous small 1kuk transcript). Intron retention with e–e primers (red dots, kuk-st: 596 bp and kuk-LacZ: 869 bp) and a PCR product with i–e primers (751 bp) were observed in the mutant. When it was maternally expressed, kuk-LacZ construct was correctly spliced both in control and fand embryos, being detected just the spliced form of the construct (green dots, 1kuk-st: 437 bp and kuk-LacZ: 713 bp). In contrast, the endogenous zygotically expressed small kuk transcript (kuk-st) is still poorly spliced in fand embryos carrying the 1kuk-LacZ construct. Open circles indicate unspecific PCR products (confirmed by sequencing). Green dots indicate correctly spliced transcripts, whereas red dots indicate unspliced transcripts (intron retention).DOI: http://dx.doi.org/10.7554/eLife.02181.012
+**Figure 5.:** (A) The kuk-LacZ construct was built using the 5′UTR, the intron and the 3′UTR of the kuk small transcript (dark gray), and replacing the kuk ORF (black) by the LacZ coding sequence (light gray). To induce the expression of this construct it was put under the control of the UAS promoter (green) to drive the tissue specific expression with GAL4 drivers. Orientation and position of primers used for splicing analysis is indicated (arrows). (B) RT-PCR analysis of the kuk-LacZ construct. When it was zygotically expressed, it was correctly spliced in control but not in fand1 embryos (similarly to the endogenous small kuk transcript). Intron retention with e–e primers (red dots, kuk-st: 596 bp and kuk-LacZ: 869 bp) and a PCR product with i–e primers (751 bp) were observed in the mutant. When it was maternally expressed, kuk-LacZ construct was correctly spliced both in control and fand1 embryos, being detected just the spliced form of the construct (green dots, kuk-st: 437 bp and kuk-LacZ: 713 bp). In contrast, the endogenous zygotically expressed small kuk transcript (kuk-st) is still poorly spliced in fand1 embryos carrying the kuk-LacZ construct. Open circles indicate unspecific PCR products (confirmed by sequencing). Green dots indicate correctly spliced transcripts, whereas red dots indicate unspliced transcripts (intron retention).
 
-## A small early zygotic transcript with multiple introns was poorly spliced in wild-type embryos
+### A small early zygotic transcript with multiple introns was poorly spliced in wild-type embryos
 
 fandango mutants showed a significant reduction in Fandango and ISY1 protein levels (Figure 3C), which most likely impaired efficient activation of the spliceosome (Villa and Guthrie, 2005). Since mitosis inhibits splicing (Shin and Manley, 2002), pre-mRNA splicing of early zygotic transcripts needs to be highly efficient for these genes to be correctly expressed. This suggests the existence of a developmental pre-requisite for highly efficient splicing, so that a suboptimal activation of the spliceosome would specifically impair pre-mRNA splicing of early zygotic but not maternal transcripts. Wild-type embryos already showed a detectable amount of intron retention in early zygotic transcripts (Figure 2B,D, Figure 2—figure supplement 2B), which was dramatically exacerbated in fandango embryos (Figure 2B,D, Figure 2—figure supplement 2B).
 
-We hypothesized that regardless of transcript size, there was also a constraint on pre-mRNA splicing of early zygotic transcripts in wild-type embryos. We generated a gene where the 5′UTR sequence including the intron of the small zygotic
+We hypothesized that regardless of transcript size, there was also a constraint on pre-mRNA splicing of early zygotic transcripts in wild-type embryos. We generated a gene where the 5′UTR sequence including the intron of the small zygotic kuk transcript was quadruplicate to test this hypothesis (Figure 6A,D see ‘Materials and methods’ for more details). Quadruplicate introns were linked by in-frame LacZ coding sequences, and the entire construct (4x intron kuk-LacZ) was under the control either of an endogenous early zygotic minimal promoter (nullo-4x intron kuk-LacZ, ∼2.5 Kb) (Figure 6A) or an inducible UAS/Gal4 promoter (UAS-4x intron kuk-LacZ, ∼2.5 Kb) (Figure 6D). The total size of the encoded pre-mRNAs was comparable to many other endogenous early zygotic genes (e.g., kugelkern, runt, krupple). As a control, we introduced point mutations in the splice sites of these constructs to generate comparable intronless transcripts (no intron kuk-LacZ) (Figure 6A,D).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/02181/elife-02181-fig6-v1.jpg)
 
-**Figure 6.:** (A and D) The 4x intron kuk-LacZ construct was a variant of the kuk-LacZ that contains four copies of kuk small transcript intron (dark gray). Each intron is separated by 201 nucleotides of an in frame Lac-Z sequence (light gray). The no intron kuk-LacZ construct has all splice sites present in the 4x intron kuk-LacZ construct mutated to thymidines. The constructs were fused to a nullo minimal promoter (blue) (A), or fused to an inducible UAS promoter (green) (D). Orientation and position of primers used for splicing analysis is indicated (arrows). (B) RT-PCR analysis showed significant splicing defects (intron retention) of the 4x intron kuk-LacZ construct when expressed under the control of an endogenous early zygotic promoter (nullo promoter). The first intron was correctly spliced, being detected mainly the PCR product corresponding to the spliced form (green dot). The remaining introns (second, third, and fourth) were completely unspliced (red dots, intron retention). In the intronless (no intron kuk-LacZ) construct, under the control of the same nullo promoter were only observed PCR bands whose sizes correspond to unspliced forms (red dots, intron retention). (C) Real-time qPCR analysis showed that the 4x intron kuk-LacZ and no intron kuk-LacZ constructs were expressed to the same extent when under the control of the nullo minimal promoter (t test p>0.05 ns.). (E) RT-PCR analysis of the 4x intron kuk-LacZ construct showed significant splicing defects (intron retention) when zygotically expressed in wild-type embryos under the control of an inducible UAS promoter. Although the most 5′-localized introns (first and second) were still partially spliced, being observed two PCR bands corresponding to the spliced (green dots, int1: 191 and int2: 385 bp), and unspliced forms (red dots, int1: 347 and int2: 541 bp). The furthest 3′-localized introns (third and fourth) were completely unspliced, being only observed one PCR band with the size corresponding to intron retention (red dots, int3: 463 and int4: 385 bp). Maternal expression of the 4x intron kuk-LacZ construct was sufficient to significantly suppress splicing defects in the four introns analyzed (green dots, spliced forms: int1: 191, int2: 385, int3: 307, int4: 229 bp; red dots, unspliced forms: int1: 347, int2: 541, int3: 463, int4: 385 bp). Zygotic and maternal expression of the no intron kuk-LacZ construct only showed PCR bands with sizes corresponding to unspliced forms (red dots, intron retention). (F) Real-time qPCR analysis showed that the 4x intron kuk-LacZ and no intron kuk-LacZ constructs were expressed to the same extent both maternally (Two-way ANOVA p>0.05 ns.) and zygotically (p>0.05 ns.) in wild-type embryos. All PCR bands shown in these panels were cloned and sequenced to confirm their identity. Green dots indicate correctly spliced transcripts, red dots indicate unspliced transcripts (intron retention).DOI: http://dx.doi.org/10.7554/eLife.02181.013
+**Figure 6.:** (A and D) The 4x intron kuk-LacZ construct was a variant of the kuk-LacZ that contains four copies of kuk small transcript intron (dark gray). Each intron is separated by 201 nucleotides of an in frame Lac-Z sequence (light gray). The no intron kuk-LacZ construct has all splice sites present in the 4x intron kuk-LacZ construct mutated to thymidines. The constructs were fused to a nullo minimal promoter (blue) (A), or fused to an inducible UAS promoter (green) (D). Orientation and position of primers used for splicing analysis is indicated (arrows). (B) RT-PCR analysis showed significant splicing defects (intron retention) of the 4x intron kuk-LacZ construct when expressed under the control of an endogenous early zygotic promoter (nullo promoter). The first intron was correctly spliced, being detected mainly the PCR product corresponding to the spliced form (green dot). The remaining introns (second, third, and fourth) were completely unspliced (red dots, intron retention). In the intronless (no intron kuk-LacZ) construct, under the control of the same nullo promoter were only observed PCR bands whose sizes correspond to unspliced forms (red dots, intron retention). (C) Real-time qPCR analysis showed that the 4x intron kuk-LacZ and no intron kuk-LacZ constructs were expressed to the same extent when under the control of the nullo minimal promoter (t test p>0.05 ns.). (E) RT-PCR analysis of the 4x intron kuk-LacZ construct showed significant splicing defects (intron retention) when zygotically expressed in wild-type embryos under the control of an inducible UAS promoter. Although the most 5′-localized introns (first and second) were still partially spliced, being observed two PCR bands corresponding to the spliced (green dots, int1: 191 and int2: 385 bp), and unspliced forms (red dots, int1: 347 and int2: 541 bp). The furthest 3′-localized introns (third and fourth) were completely unspliced, being only observed one PCR band with the size corresponding to intron retention (red dots, int3: 463 and int4: 385 bp). Maternal expression of the 4x intron kuk-LacZ construct was sufficient to significantly suppress splicing defects in the four introns analyzed (green dots, spliced forms: int1: 191, int2: 385, int3: 307, int4: 229 bp; red dots, unspliced forms: int1: 347, int2: 541, int3: 463, int4: 385 bp). Zygotic and maternal expression of the no intron kuk-LacZ construct only showed PCR bands with sizes corresponding to unspliced forms (red dots, intron retention). (F) Real-time qPCR analysis showed that the 4x intron kuk-LacZ and no intron kuk-LacZ constructs were expressed to the same extent both maternally (Two-way ANOVA p>0.05 ns.) and zygotically (p>0.05 ns.) in wild-type embryos. All PCR bands shown in these panels were cloned and sequenced to confirm their identity. Green dots indicate correctly spliced transcripts, red dots indicate unspliced transcripts (intron retention).
 
 Only the first intron (int1) of the 4x intron kuk-LacZ construct was correctly spliced when it was zygotically expressed in wild-type embryos under the control of an endogenous early zygotic minimal promoter (Figure 6B). Likewise, when the 4x intron kuk-LacZ construct was early zygotically expressed under the control of the inducible promoter UAS/Gal4 there were similar splicing defects (intron retention) (Figure 6E).
 
@@ -125,7 +321,7 @@ In plants it was recently shown that removal of retained introns regulates trans
 
 ## Materials and methods
 
-## Fly work and genetics
+### Fly work and genetics
 
 Flies were raised using standard techniques. The fandango alleles were isolated in a previously reported maternal screen (Pimenta-Marques et al., 2008). Maternal mutant embryos and germ-line mutant clones were generated using the FLP/FRT ovoD system (Chou and Perrimon, 1992). Germ-line clones of fand1 and fand2 were established by crossing FRT42B fand1/CyO or FRT42B fand2/CyO virgins to hs-FLP; FRT42B ovoD/CyO males and the progeny was heat shocked once at 37°C for 1 hr during second and third larval instar stages. As control we generated germ-line clones with FRT42B by crossing FRT42B/CyO virgins to hs-FLP; FRT42B ovoD/CyO males and followed by the heat shock procedure described before.
 
@@ -153,7 +349,7 @@ To analyze zygotic expression of the 4x intron kuk-LacZ and no intron kuk-LacZ c
 
 To drive embryonic and ovarian expression of Myc-tagged Fandango and Myc-tagged Prp19 proteins, Nanos-Gal4 homozygous virgins were crossed with UAS-Fandango-6xMyc males or UAS-Prp19-6xMyc/TM6B males, respectively. After eclosion females (in case of Myc-Fandango) or Tb+ females (in case of Myc-Prp19) were selected, dissected ovaries from 4–5-day-old females, or laid embryos after a cross with wild-type males were used for protein extraction.
 
-## Cloning of fandango alleles
+### Cloning of fandango alleles
 
 To identify the gene responsible for lethality in fandango alleles, we performed a complementation analysis using the Bloomington 2R Deficiency kit.
 
@@ -161,11 +357,11 @@ Deficiency Df(2R)CX1 (covering an interval from cytological band 49C1 to 50D2, B
 
 To confirm the identity of our mutants, we digested DNA from genomic clone (BACR14P04, Flybase) with restriction enzymes XbaI and EcoRI to generate a genomic fragment comprising the wild-type gene sequence of CG6197 (wt-fandango). Then we cloned the fragment into pCasper vector and used it to generate transgenic stocks (Bestgene, Chino Hills, CA, USA). A genomic wild-type copy of CG6197 under the control of its endogenous promoter fully complemented all known phenotypes in both fandango alleles.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 0–3 hr (after egg laying) embryos, both maternally mutant for fandango and control, were fixed and stained using standard procedures (Pimenta-Marques et al., 2008). For Neurotactin and Slam immunostaining, the fixation procedure was modified: embryos were added to boiling heat fix solution (68 mM NaCl +0.1% Triton) and stirred for 1 min, then cooled by adding an equal volume of cooled fix solution. Immunostaining for oogenesis phenotypic analysis was performed as described in Guilgur et al. (2012). Following primary antibodies used were: mouse anti-Neurotactin clone BP106 at 1:133 (DSHB, Iowa City, Iowa, USA); mouse anti-pTyr at 1:1000 (9411; Cell Signaling, Danvers, MA, USA), and rabbit anti-slam at 1:1000 (Ruth Lehman Lab). For F-actin staining, a 5-min incubation with phalloidin-Rhodamine at 1:200 dilution (Sigma, St Louis, MO, USA; stock concentration 1 mg/ml) was employed at room temperature. For DNA staining, we used SYTOX Green (Invitrogen, Grand Island, NY, USA) at 1:5000 dilution with 5 mg/ml RNase A in PBT (PBS+0.1% Tween-20) for 30 min at room temperature. Cy3- or Cy5-conjugated secondary antibodies were used at 1:1000 dilution (Jackson ImmunoResearch, West Grove, PA, USA) and anti-rabbit Alexa Fluor 488 at 1:1000 dilution (Molecular Probes, Grand Island, NY, USA).
 
-## Generation of constructs and cloning
+### Generation of constructs and cloning
 
 The kuk-LacZ construct was synthesized using the 5′UTR and intron of the kuk small transcript (kuk-RB, Flybase). The kuk ORF was replaced by the LacZ coding sequence and was followed by the 3′ UTR of the original transcript (Figure 5A). The kuk-LacZ construct was fused to a UASg promoter (Gateway system, Invitrogen, Grand Island, NY, USA).
 
@@ -175,21 +371,21 @@ Fandango open reading frame, kuk-LacZ, 4x intron kuk-LacZ, and no intron kuk-Lac
 
 Prp19 and Fandango ORFs were subcloned into a vector containing the UASp promoter and 6x C-terminal Myc-tag (Gateway, Invitrogen, Grand Island, NY, USA). All constructs were then used to generate transgenic flies stocks (BestGene, Chino Hills, CA, USA).
 
-## RT-PCR
+### RT-PCR
 
 Total RNA was extracted from 0–3 hr (after egg laying) embryos, unfertilized embryos, and 4-day-old female ovaries mutant for fandango and control (FRT42B) following standard procedures (PureLink RNA Mini Kit, Ambion, Grand Island, NY, USA). 1 μg of RNA was then used for reverse transcription with Oligo(dT)12–18 and/or random hexamers primers following the manufacturer’s protocol (Transcriptor First Strand cDNA Synthesis Kit, ROCHE, Germany). Primer combinations used were designed with PrimerSelect (Lasergene, Madison, WI, USA) and PCR was performed using GoTaq DNA polymerase (Promega, Fitchburg, WI, USA). Sequences of all primers used are listed in Supplementary file 2.
 
-## Real-time qPCR
+### Real-time qPCR
 
 To measure transcription levels, embryos were staged in three different groups based on the embryonic morphology: stage A (embryos from cycle 1 to 8, no pole cells, and no cortical nuclei are observed); stage B (embryos from cycle 8/9 to 13, pole cells present, and cortical nuclei are observed); and stage C (embryos at interphase 14, blastoderm cellularized). Three independent replicas for each stage, containing each 10 manually selected embryos were generated. Three different genetic backgrounds were analyzed (control (FRT42B), FRT42B fandango, and grapes as positive control). To measure fandango mRNA levels, unfertilized eggs were analyzed (three replicas). To measure transcription level of the 4x intron kuk-LacZ and no intron kuk-LacZ constructs, 0–3 hr (after egg laying) embryo collections were used to analyze both maternal and zygotic induced expression.
 
 Total RNA was extracted from samples and then used for reverse transcription with Oligo(dT)12–18 as described above. Real-time mRNA quantification was performed following the manufacturer’s protocol (QuantiFast SYBR Green RT-PCR Kit, Qiagen, Germany). For analysis of transcription levels of early zygotic genes (nullo, snail, scute, even-skipped, and tailless) the Drosophila QuantiTect Primer Assay (Qiagen, Germany) was used. For mRNA level measurements of fandango, 4x intron kuk-LacZ and no intron kuk-LacZ constructs primers were designed with Primer3 (Supplementary file 2).
 
-## Antibodies generated
+### Antibodies generated
 
 Anti-Fandango and anti-Prp19 rabbit polyclonal antibodies were raised against recombinant proteins corresponding to amino acids 551–750 of Fandango/CG6197-PA, and to amino acids 20–219 of Prp19-PA, respectively (Metabion international AG, Germany). In both cases it was used His-tagged recombinant proteins as antigen and the antibodies were affinity purified.
 
-## Biochemistry
+### Biochemistry
 
 Protein extracts were obtained from 0–3 hr (after egg laying) embryos or 4-day-old female ovaries. Embryos were dechorionated with 50% commercial bleach solution and ovaries dissected in PBS, samples then homogenized in NB buffer (150 mM NaCl, 50 mM Tris–HCl pH 7,5, 2 mM EDTA, 0,1% NP-40, 1 mM DTT, 10 mM NaF, and EDTA-free protease inhibitor cocktail, Roche, Germany), and centrifuge at 20000×g for 3 min. Supernatant was recovered and centrifuged twice.
 
@@ -205,7 +401,7 @@ Levels of RNApol II CTD Ser2 phosphorylation were analyzed in embryos dechoriona
 
 Antibodies used were: polyclonal rabbit anti-Prp19 at 1:8000 dilution; polyclonal rabbit anti-Fandango at 1:1000 dilution; mouse anti-alpha-Tubulin Dm1A at 1:50,000 dilution (Sigma, St Louis, MO, USA); mouse anti-RNA Polymerase II H5 at 1:500 dilution (MMS-129R, Covance, Princeton, NJ, USA); rabbit anti-ISY1 at 1:500 dilution (ab121250; Abcam, United Kingdom); and mouse anti-CDC5L [2136C1a] at 1:200 dilution (ab51320; Abcam, United Kingdom).
 
-## Mass spectrometry
+### Mass spectrometry
 
 Peptides mixtures were analyzed by LC-MS-MS/MS (liquid chromatography coupled to tandem mass spectrometry) using Nano-Acquity (Waters, Milford, MA, USA) LC system and Orbitrap Velos mass spectrometer (Thermo Electron Corp., San Jose, CA, USA). Prior to analysis, proteins were subjected to standard ‘in-solution digestion’ procedure, during which proteins were reduced with 100 mM DTT (for 30 min at 56°C), alkylated with 0,5 M iodoacetamide (45 min in darkroom at room temperature), and digested overnight with trypsin (sequencing Grade Modified Trypsin—Promega V5111). The peptide mixture was applied to an RP-18 precolumn (nanoACQUITY Symmetry C18—Waters 186003514) using water containing 0,1% TFA as mobile phase, then transferred to nano-HPLC RP-18 column (nanoACQUITY BEH C18–Waters 186003545) using an acetonitrile gradient (0%–35% AcN in 180 min) in the presence of 0.05% formic acid with a flow rate of 250 nl/min. The column outlet was directly coupled to the ion source of the spectrometer, operating in the regime of data dependent MS to MS/MS switch. A blank run ensuring no cross contamination from previous samples preceded each analysis.
 
@@ -213,7 +409,7 @@ Raw data were processed by Mascot Distiller followed by Mascot Search (Matrix Sc
 
 Human orthologs were determined using DSRC Integrative Ortholog Prediction Tool (DIOPT) (http://www.flyrnai.org/cgi-bin/DRSC_orthologs.pl). Only scores above two were considered such as the best matches when there was more than one match per input.
 
-## High-throughput transcriptome sequencing (RNAseq)
+### High-throughput transcriptome sequencing (RNAseq)
 
 Total RNA was isolated from 0–3 hr collections of fandango maternal mutant and control (FRT42B) embryos using TRIzol Reagent (Invitrogen, Grand Island, NY, USA), following standard protocol. DNAse I (Promega, Fitchburg, WI, USA) treatment was performed during 30 min at 37°C. DNAse was extracted by Phenol-Chloroform extraction; the RNA was precipitated with ethanol, and dissolved it in 25 µl of DEPC water. Bioanalyzer testing was used to analyze quality and concentration of the samples and made up to the volume to 100 µl with water, 50 µl of 7.5 M NH4OAc added, 0.5 µl of glycogen, and 250 µl of absolute ethanol. cDNA library was generated applying the standard Illumina protocol for RNA-Seq (polyA RNAs) and sequenced with an Illumina HiSeq (Oklahoma Medical Research Foundation, Oklahoma City, OK, USA). These generated RNA-Seq data for two biological replicates each of wild-type and fandango mutant (fand1), consisting of about 150 million illumina paired-end 100 bp reads per sample.
 
@@ -233,14 +429,14 @@ Early zygotic and maternal genes were defined using RNA-Seq developmental gene e
 
 All scripts used for this analysis are available upon request. RNA-Seq data are available in the ArrayExpress database (www.ebi.ac.uk/arrayexpress) under accession number E-MTAB-2321.
 
-## In situ hybridization
+### In situ hybridization
 
 The procedure has been described in Stein et al. (2002). Antisense digoxigenin-labeled RNA probes were synthesized using the DIG RNA labeling Kit (Roche, Germany). eve and nos probes were made from pBluescript plasmids containing the respective cDNAs.
 
-## Sequence alignment
+### Sequence alignment
 
 Sequences were aligned using ClustalW2 (http://www.ebi.ac.uk/Tools/msa/clustalw2/) and BoxShade 3.21 (http://www.ch.embnet.org/software/BOX_form.html) for printing and shading of multiple alignment file.
 
-## Statistical analysis
+### Statistical analysis
 
 Unpaired t test and two-way ANOVA were performed using Prism 5.00 for Windows (GraphPad Software, San Diego, CA, USA).

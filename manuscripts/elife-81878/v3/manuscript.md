@@ -12,16 +12,16 @@
 
 ### Affiliations
 
-1. https://ror.org/02crz6e12 Singapore Eye Research Institute Singapore Singapore
-2. https://ror.org/01tgyzw49 Ophthalmology and Visual Sciences Academic Clinical Program, Duke-NUS Medical School Singapore Singapore
-3. https://ror.org/01tgyzw49 Department of Statistics and Data Science, National University of Singapore Singapore Singapore
-4. https://ror.org/036j6sg82 Department of Renal Medicine, Singapore General Hospital Singapore Singapore
+1. Singapore Eye Research Institute Singapore Singapore ([ROR:02crz6e12](https://ror.org/02crz6e12))
+2. Ophthalmology and Visual Sciences Academic Clinical Program, Duke-NUS Medical School Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
+3. Department of Statistics and Data Science, National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
+4. Department of Renal Medicine, Singapore General Hospital Singapore Singapore ([ROR:036j6sg82](https://ror.org/036j6sg82))
 
 † Corresponding author
 
 ## Abstract
 
-Machine learning (ML) techniques improve disease prediction by identifying the most relevant features in multidimensional data. We compared the accuracy of ML algorithms for predicting incident diabetic kidney disease (DKD). We utilized longitudinal data from 1365 Chinese, Malay, and Indian participants aged 40–80 y with diabetes but free of DKD who participated in the baseline and 6-year follow-up visit of the Singapore Epidemiology of Eye Diseases Study (2004–2017). Incident DKD (11.9%) was defined as an estimated glomerular filtration rate (eGFR) <60 mL/min/1.73 m 2 with at least 25% decrease in eGFR at follow-up from baseline. A total of 339 features, including participant characteristics, retinal imaging, and genetic and blood metabolites, were used as predictors. Performances of several ML models were compared to each other and to logistic regression (LR) model based on established features of DKD (age, sex, ethnicity, duration of diabetes, systolic blood pressure, HbA1c, and body mass index) using area under the receiver operating characteristic curve (AUC). ML model Elastic Net (EN) had the best AUC (95% CI) of 0.851 (0.847–0.856), which was 7.0% relatively higher than by LR 0.795 (0.790–0.801). Sensitivity and specificity of EN were 88.2 and 65.9% vs. 73.0 and 72.8% by LR. The top 15 predictors included age, ethnicity, antidiabetic medication, hypertension, diabetic retinopathy, systolic blood pressure, HbA1c, eGFR, and metabolites related to lipids, lipoproteins, fatty acids, and ketone bodies. Our results showed that ML, together with feature selection, improves prediction accuracy of DKD risk in an asymptomatic stable population and identifies novel risk factors, including metabolites. This study was supported by the Singapore Ministry of Health’s National Medical Research Council, NMRC/OFLCG/MOH-001327-03 and NMRC/HCSAINV/MOH-001019-00. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+Background:Machine learning (ML) techniques improve disease prediction by identifying the most relevant features in multidimensional data. We compared the accuracy of ML algorithms for predicting incident diabetic kidney disease (DKD).Methods:We utilized longitudinal data from 1365 Chinese, Malay, and Indian participants aged 40–80 y with diabetes but free of DKD who participated in the baseline and 6-year follow-up visit of the Singapore Epidemiology of Eye Diseases Study (2004–2017). Incident DKD (11.9%) was defined as an estimated glomerular filtration rate (eGFR) <60 mL/min/1.73 m2 with at least 25% decrease in eGFR at follow-up from baseline. A total of 339 features, including participant characteristics, retinal imaging, and genetic and blood metabolites, were used as predictors. Performances of several ML models were compared to each other and to logistic regression (LR) model based on established features of DKD (age, sex, ethnicity, duration of diabetes, systolic blood pressure, HbA1c, and body mass index) using area under the receiver operating characteristic curve (AUC).Results:ML model Elastic Net (EN) had the best AUC (95% CI) of 0.851 (0.847–0.856), which was 7.0% relatively higher than by LR 0.795 (0.790–0.801). Sensitivity and specificity of EN were 88.2 and 65.9% vs. 73.0 and 72.8% by LR. The top 15 predictors included age, ethnicity, antidiabetic medication, hypertension, diabetic retinopathy, systolic blood pressure, HbA1c, eGFR, and metabolites related to lipids, lipoproteins, fatty acids, and ketone bodies.Conclusions:Our results showed that ML, together with feature selection, improves prediction accuracy of DKD risk in an asymptomatic stable population and identifies novel risk factors, including metabolites.Funding:This study was supported by the Singapore Ministry of Health’s National Medical Research Council, NMRC/OFLCG/MOH-001327-03 and NMRC/HCSAINV/MOH-001019-00. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
 
 ## Introduction
 
@@ -35,43 +35,43 @@ In the current study, we aimed to evaluate the performance of a set of the most 
 
 ## Methods
 
-## Study population
+### Study population
 
 Data for this study was derived from the Singapore Epidemiology of Eye Diseases (SEED) study, a population-based prospective study of eye diseases in 10,033 Asian adults aged 40–80 y in Singapore. The follow-up study was conducted after a median duration of 6.08 y (interquartile range: [5.56, 6.79]), with 6762 participants. The detailed methodology of SEED has been published elsewhere (Majithia et al., 2021). Briefly, the name list of adults residing in the southwestern part of Singapore was provided by the Ministry of Home Affairs, and then an age-stratified random sampling procedure was conducted. A total of 3280 Malays (2004–2007) (Foong et al., 2007), 3400 Indians (2007–2009), and 3353 Chinese (2009–2011) (Lavanya et al., 2009) participated in the baseline study with response rates of 78.7, 75.6 and 72.8%, respectively. As all three studies followed the same methodology and were conducted in the same study clinic, we combined the three populations for the present study. For the current analysis, we included only those with diabetes, defined as random glucose ≥11.1 mmol/L, HbA1c ≥ 6.5% (48 mmol/mol), self-reported antidiabetic medication use, or having been diagnosed with diabetes by a physician. Of the 6762 participants who attended both baseline and follow-up visit, after excluding those without diabetes (n = 5307), prevalent CKD (n = 315), missing information on eGFR (n = 90), the final sample size for analysis was 1365 (47.5% Indians, 27.8% Malays, and 24.7% Chinese). The sample size available for each dataset after removing participants missing >10% data was between 976 and 1364 (Supplementary file 1-Table 1a). SEED was conducted in accordance with the Declaration of Helsinki and was approved by the SingHealth Centralised Institutional Review Board (2018/2717, 2018/2921, 2012/487/A, 2015/2279, 2018/2006, 2018/2594, 2018/2570). Informed consent was obtained from all participants.
 
-## Assessment of DKD
+### Assessment of DKD
 
 Incident DKD was defined as an eGFR <60 mL/min/1.73 m2 with at least a 25% decrease in eGFR at follow-up in participants who had eGFR ≥ 60 mL/min/1.73 m2 at baseline. Combining change in eGFR category together with a minimal percent change ensures that small changes in eGFR, for example, from 61 to 59 mL/min/1.73 m2, are not misinterpreted as incident CKD as the eGFR is < 60 mL/min/1.73 m2 (Yip et al., 2017; Stevens et al., 2013). The reduction in eGFR at follow-up was calculated as a percentage of the baseline eGFR as (eGFR at baseline – eGFR at follow-up)/eGFR at baseline * 100%. GFR was estimated from plasma creatinine using the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) equation (Levey et al., 2009). Blood creatinine was measured by the Jaffe method on the Beckman DXC800 analyzer calibrated to the Isotope Dilution Mass Spectrometry (IDMS) method using the National Institute of Standards and Technology (NIST) Reference material.
 
-## Variables for prediction
+### Variables for prediction
 
 We evaluated 339 features such as demographic, lifestyle, socioeconomic, physical, laboratory, retinal imaging, genetic and blood metabolomics profile. The entire list of variables is presented in Supplementary file 1-Table 1b. We organized the variables into five different domains: traditional risk factors, extended risk factors, imaging parameters, genetic parameters, and blood metabolites. For ML analysis, based on different combinations of the five domains, we tested six models (A to F): A = traditional risk factors; B = A + extended risk factors; C = B + imaging parameters; D = B + genetic parameters; E = B + blood metabolites; F = B + imaging parameters + blood metabolites + genetic parameters.
 
-## Traditional risk factors (n = 7)
+### Traditional risk factors (n = 7)
 
 Age, sex, ethnicity (Chinese, Malays, and Indians), body mass index (BMI, kg/m2), systolic blood pressure (BP, mm Hg), duration of diabetes (years), and HbA1c% were included as traditional risk factors.
 
-## Extended risk factors (n = 22)
+### Extended risk factors (n = 22)
 
 Participant information was collected using an interviewer-administered questionnaire (demographic, socioeconomic, lifestyle factors, and personal history of diseases and medication use), physical examination (height, weight, BP), and laboratory examination (blood glucose, creatinine, lipid profile) (Majithia et al., 2021). Marital status, educational level (primary/below [≤6 y], secondary/above [7 y and above of education]), monthly income, smoking status (current smokers vs. former and nonsmokers), alcohol consumption (ever vs. nondrinkers), history of CVD (self-reported history of myocardial infarction, stroke or angina), hypertension status, diastolic BP, pulse pressure, blood glucose, total, high-density lipoprotein (HDL) and low-density lipoprotein (LDL) cholesterol levels, antidiabetic including oral hypoglycemia drugs and insulin, antihypertensive, and anticholesterol medication use were included as part of extended risk factors.
 
-## Blood metabolites (n = 223)
+### Blood metabolites (n = 223)
 
 We quantified 228 metabolic measures from stored serum/plasma samples at baseline using a high-throughput NMR metabolomics platform (Nightingale Health, Helsinki, Finland). The metabolites included routine lipids, lipoprotein subclasses with lipid concentrations within 14 subclasses, fatty acids, amino acids, ketone bodies, and glycolysis-related metabolites. The 14 lipoprotein subclasses include six subclasses of VLDL (extremely large, very large, large, medium, small, very small), IDL, three subclasses of LDL (large, medium, small), and four subclasses of HDL (very large, large, medium, small). Lipid concentration within each lipoprotein particle included triacylglycerol, total cholesterol, non-esterified cholesterol and cholesteryl ester levels, and phospholipid concentrations (Quek et al., 2021). Of the 228 metabolites, pyruvate, glycerol, and glycine were not available in Malays. In addition, creatinine and glucose were measured as part of the blood biochemistry. After excluding these five metabolites, 223 were included under the metabolites dataset.
 
-## Genetic parameters (n = 76)
+### Genetic parameters (n = 76)
 
 We included 76 type 2 diabetes-associated single-nucleotide polymorphisms (SNPs) identified in the largest meta-analysis of type 2 diabetes genome-wide association studies by the DIAbetes Genetics Replication and Meta-analysis consortium (Chong et al., 2017).
 
-## Imaging parameters (n = 11)
+### Imaging parameters (n = 11)
 
 Using a semi-automated computer program (Singapore I Vessel Assessment, SIVA), we quantified retinal imaging parameters from digital retinal photographs. The parameters included retinal arteriolar and venular diameters, vessel tortuosity, branching angle, fractal dimension, etc. (Yip et al., 2017). Diabetic retinopathy (DR) was assessed by trained graders using a standard protocol (Sabanayagam et al., 2019).
 
-## Machine learning algorithms
+### Machine learning algorithms
 
 We tested nine different ML algorithms, including LR, least absolute shrinkage and selection operator (LASSO), elastic net (EN), classification and regression tree (CART), random forest (RF), gradient boosting decision tree (GBDT), extreme gradient boosting (XGB), support vector machine (SVM), and naïve Bayes (NB) (Hastie et al., 2009).
 
-## Model development
+### Model development
 
 We split the study samples randomly into training (80%) and test sets (20%) of equal CKD case rate by stratified sampling, with 40 random repeats of 5-fold cross-validation to evaluate the model performance. Predictive accuracy was assessed using metrics such as area under the receiver operating characteristic curve (AUC) with 95% confidence interval (CI) , sensitivity and specificity calculated at the optimal cut-point (determined by Youden’s index). In preliminary analyses, testing different combinations of features (Figure 1A–F), performance of all ML models was below 0.80 in dataset D including genetic features (best AUC = 0.785 by RF) and dataset F including all 339 features (best AUC = 0.788 by XGB). Hence, we dropped these two datasets (D and F) from further analyses. The performance of all ML models based on AUC (IQR) in datasets 1A–F is shown in Supplementary file 1-Table 1c and based on sensitivity and specificity is shown in Supplementary file 1-Table 1d.
 
@@ -81,11 +81,11 @@ We split the study samples randomly into training (80%) and test sets (20%) of e
 
 Of the ML models, performances of CART, SVM, and NB were lower compared to other models, hence these models were also dropped. Consequently, ML models EN, GBDT, LASSO, XGB, and RF were considered for subsequent analyses using datasets A, B, C, and E including 252 features.
 
-## Feature selection
+### Feature selection
 
 All algorithms included in the current study can perform feature selection but using different selection criteria. In LR, stepwise selection according to the Akaike information criterion (AIC) is widely used but it lacks stability. LASSO is an extension of LR with L1 regularization to drop the less important variables. EN is like LASSO but with a milder regularization, resulting in a larger number of retained variables. In order to select only the most predictive features, we recursively apply EN until the retained variable subset is optimized, that is, recursive feature selection (RFE). In RF, GBDT, and XGB, the most predictive variables were identified based on their relative importance to model performance. Feature selection was also performed according to their selection frequency during repeated cross-validation. We identified the top 15 predictors by each of the best-performing ML models, then compared the performance of the ML models based on the top variables with that of LR based on seven traditional risk factors (age, sex, ethnicity, BMI, HbA1c, duration of diabetes, and systolic BP) in another 40 random repeats of 5-fold cross-validation. Subgroup analyses were conducted for the three ethnic groups separately.
 
-## Statistical analyses
+### Statistical analyses
 
 We compared the baseline characteristics of participants with diabetes by incident DKD status using χ2 test or Mann–Whitney U test as appropriate for the variable and compared the socioeconomic status by ethnicity using χ2 test and Kruskal–Wallis test as appropriate for the variable. Statistical significance was defined as a p-value<0.05. Subgroup numbers such as DR status may not add up due to the presence of missing data. For modeling, we used mean values/modes for missing value imputation as appropriate for each variable because the missing proportions were all below 10%. Improvement in prediction accuracy by ML over the traditional risk factor model was calculated as (ML AUC – traditional model AUC)/traditional model AUC * 100%. All analyses were conducted using R software version 4.0.2. To assess whether the features selected by ML models were meaningful, we visualized the association of top 15 variables with incident DKD in forest plots or a variable importance plot as appropriate for the algorithm.
 
@@ -95,11 +95,195 @@ The 6-year incidence of DKD was 11.9% in the study population. The incidence of 
 
 As shown in Table 1, compared to those without incident DKD, those with were significantly older, more likely to be Malays, primary/below educated, had higher prevalence of hypertension, DR, CVD, antidiabetic medication use; had longer duration of diabetes, and higher levels of systolic BP and HbA1c%.
 
-## Performance of LR using traditional risk factors (reference) and other domain features
+**Table 1.**
+ Baseline characteristics of SEED diabetic participants by incident DKD status.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristics</th>
+      <th>No DKD(n = 1203)</th>
+      <th>DKD(n = 162)</th>
+      <th>p-value</th>
+      <th>Overall(n = 1365)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>57.95 (8.78)</td>
+      <td>64.63 (7.98)</td>
+      <td>&lt;0.001</td>
+      <td>58.74 (8.95)</td>
+    </tr>
+    <tr>
+      <td>Sex, female</td>
+      <td>580 (48.2)</td>
+      <td>87 (53.7)</td>
+      <td>0.219</td>
+      <td>667 (48.9)</td>
+    </tr>
+    <tr>
+      <td>Ethnicity</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Indians (ref)</td>
+      <td>599 (49.8)</td>
+      <td>49 (30.2)</td>
+      <td></td>
+      <td>648 (47.5)</td>
+    </tr>
+    <tr>
+      <td>Malays</td>
+      <td>310 (25.8)</td>
+      <td>70 (43.2)</td>
+      <td></td>
+      <td>380 (27.8)</td>
+    </tr>
+    <tr>
+      <td>Chinese</td>
+      <td>294 (24.4)</td>
+      <td>43 (26.5)</td>
+      <td></td>
+      <td>337 (24.7)</td>
+    </tr>
+    <tr>
+      <td>Primary/below education (%)</td>
+      <td>706 (58.7)</td>
+      <td>121 (74.7)</td>
+      <td>&lt;0.001</td>
+      <td>827 (60.6)</td>
+    </tr>
+    <tr>
+      <td>Current smoker (%)</td>
+      <td>173 (14.4)</td>
+      <td>16 (9.9)</td>
+      <td>0.15</td>
+      <td>189 (13.9)</td>
+    </tr>
+    <tr>
+      <td>Alcohol consumption (%)</td>
+      <td>111 (9.2)</td>
+      <td>11 (6.8)</td>
+      <td>0.389</td>
+      <td>122 (9.0)</td>
+    </tr>
+    <tr>
+      <td>Hypertension (%)</td>
+      <td>845 (70.4)</td>
+      <td>155 (95.7)</td>
+      <td>&lt;0.001</td>
+      <td>1000 (73.4)</td>
+    </tr>
+    <tr>
+      <td>Diabetic retinopathy (%)</td>
+      <td>228 (19.2)</td>
+      <td>56 (35.4)</td>
+      <td>&lt;0.001</td>
+      <td>284 (21.1)</td>
+    </tr>
+    <tr>
+      <td>Cardiovascular disease (%)</td>
+      <td>153 (12.7)</td>
+      <td>32 (19.8)</td>
+      <td>0.02</td>
+      <td>185 (13.6)</td>
+    </tr>
+    <tr>
+      <td>Duration of diabetes (years)</td>
+      <td>2.68 [0.00, 8.56]</td>
+      <td>6.08 [1.44, 11.63]</td>
+      <td>&lt;0.001</td>
+      <td>3.20 [0.00, 9.37]</td>
+    </tr>
+    <tr>
+      <td>Antidiabetic medication (%)</td>
+      <td>681 (56.6)</td>
+      <td>122 (75.3)</td>
+      <td>&lt;0.001</td>
+      <td>803 (58.8)</td>
+    </tr>
+    <tr>
+      <td>Insulin use (%)</td>
+      <td>39 (3.3)</td>
+      <td>11 (7.1)</td>
+      <td>0.036</td>
+      <td>50 (3.8)</td>
+    </tr>
+    <tr>
+      <td>Body mass index (kg/m2)</td>
+      <td>26.96 (4.62)</td>
+      <td>27.05 (4.36)</td>
+      <td>0.764</td>
+      <td>26.97 (4.59)</td>
+    </tr>
+    <tr>
+      <td>Systolic blood pressure (mm Hg)</td>
+      <td>139.42 (18.95)</td>
+      <td>155.24 (20.01)</td>
+      <td>&lt;0.001</td>
+      <td>141.29 (19.74)</td>
+    </tr>
+    <tr>
+      <td>Diastolic blood pressure (mm Hg)</td>
+      <td>78.25 (9.74)</td>
+      <td>79.14 (10.70)</td>
+      <td>0.278</td>
+      <td>78.35 (9.85)</td>
+    </tr>
+    <tr>
+      <td>Random blood glucose (mmol/L)</td>
+      <td>9.53 (4.26)</td>
+      <td>10.44 (5.01)</td>
+      <td>0.052</td>
+      <td>9.64 (4.36)</td>
+    </tr>
+    <tr>
+      <td>HbA1c (%)</td>
+      <td>7.61 (1.58)</td>
+      <td>8.04 (1.83)</td>
+      <td>0.003</td>
+      <td>7.66 (1.62)</td>
+    </tr>
+    <tr>
+      <td>Blood total cholesterol (mmol/L)</td>
+      <td>5.14 (1.14)</td>
+      <td>4.98 (1.15)</td>
+      <td>0.124</td>
+      <td>5.12 (1.15)</td>
+    </tr>
+    <tr>
+      <td>Blood HDL cholesterol (mmol/L)</td>
+      <td>1.12 (0.31)</td>
+      <td>1.16 (0.35)</td>
+      <td>0.178</td>
+      <td>1.12 (0.32)</td>
+    </tr>
+    <tr>
+      <td>eGFR (mL/min/1.73 m2)</td>
+      <td>89.98 (14.34)</td>
+      <td>79.40 (11.69)</td>
+      <td>&lt;0.001</td>
+      <td>88.72 (14.46)</td>
+    </tr>
+    <tr>
+      <td colspan="5"></td>
+    </tr>
+  </tbody>
+</table>
+
+_Values for categorical variables are presented as number (percentages); values for continuous variables are given as mean (SD) or median [IQR]. p-values are given by χ2 test or Mann–Whitney U test as appropriate for the variable.DKD, diabetic kidney disease; HDL, high-density lipoprotein cholesterol; IQR, interquartile range; SD, standard deviation; SEED, Singapore Epidemiology of Eye Diseases._
+
+### Performance of LR using traditional risk factors (reference) and other domain features
 
 The LR using the seven traditional risk factors (age, sex, ethnicity, BMI, HbA1c, duration of diabetes, and systolic BP) had an AUC of 0.796. The performance of LR improved to 0.821 using the traditional + extended risk factors. With additional features, the performance of LR dropped significantly (AUC of 0.622 in E and 0.811 in C).
 
-## Performance of ML models using multidimensional data
+### Performance of ML models using multidimensional data
 
 Using datasets, A, B, C, and E, the performances of the five ML models (Figure 1A–C and E) were as follows:
 
@@ -111,7 +295,7 @@ Figure 2 shows the AUCs of the top 3 performing models. Using the top 15 predict
 
 The corresponding estimates for LASSO were 0.820 (0.816–0.825), 84.4% and 67.0%; 0.819 (0.814–0.824), 80.6% and 70.1% for GBDT. The AUCs of EN, LASSO, and GBDT were 7.0, 3.1, and 3.0% relatively higher than that of LR.
 
-## Top 15 predictors
+### Top 15 predictors
 
 Figure 3 shows the top 15 predictors visualized using forest plots for EN and LASSO and a variable importance plot for GBDT. We found low collinearity in EN-selected features (Spearman’s correlation coefficients: –0.49 to 0.43), while LASSO and GBDT selected some variables of higher correlation (e.g., systolic BP and pulse pressure).
 
@@ -128,6 +312,59 @@ The results of the current study suggest that prediction using ML models with se
 Our results showed that ML models combined with feature selection improved the accuracy for predicting incident DKD in high-dimensional datasets. The AUC of MLs based on dataset E including metabolites (+risk factors) scored the highest, while the one based on dataset D including genetic features scored the lowest compared to other domain features. This finding suggests that modifiable risk factors and metabolites predict DKD risk better than genetic features. The predictive performance was the best by EN, followed by LASSO and GBDT. The top 15 predictors selected by LASSO and GBDT were largely consistent to that by EN.
 
 Few previous studies have evaluated the performance of ML models for predicting the risk of incident DKD (Table 2). Ravizza et al. identified seven key features (age, BMI, eGFR, concentration of creatinine, glucose, albumin, and HbA1c%) by a data-driven feature selection strategy for predicting DKD using electronic health records (EHR) data from 417,912 people with diabetes retrieved from the IBM Explorys Database and developed a random forest model in 82,912 people with diabetes retrieved from the Indiana Network for Patient Care (INPC). The RF algorithm using seven prioritized key features achieved an AUC of 0.833 compared to 0.827 by LR (Ravizza et al., 2019).
+
+**Table 2.**
+ Machine learning model for predicting incident CKD in literature.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Author, journal</th>
+      <th>Study cohort,country</th>
+      <th>Study populationFollow-up</th>
+      <th>CKD definition and incidence</th>
+      <th>Number of predictors</th>
+      <th>ML performance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ravizza et al., 2019, Nature Medicine</td>
+      <td>EHR data from the IBM Explorys and INPC datasets, the United States</td>
+      <td>Development cohort (IBM): &gt;500,000 adults with diabetes. Validation (INPC) = 82,912 adults with T2DM; FU = 3 y.</td>
+      <td>ICD 9/10 codes</td>
+      <td>300 features</td>
+      <td>Based on seven prioritized features, AUC by RF = 0.833 and the Roche/IBM supervised algorithm by LR = 0.827</td>
+    </tr>
+    <tr>
+      <td>Song et al., 2020., JMIR</td>
+      <td>EHR data, the United States (2007–2017)</td>
+      <td>14,039 adults with T2DM.FU = 1 y.</td>
+      <td>eGFR &lt; 60 or UACR ≥30 mg/g;34.1%</td>
+      <td>&gt;3000</td>
+      <td>GBMAUC = 0.83</td>
+    </tr>
+    <tr>
+      <td>Huang et al., 2020a., Diabetes</td>
+      <td>KORA cohort, Germany</td>
+      <td>1838 adults with prediabetes and T2DM.FU = 6.5 y.</td>
+      <td>eGFR &lt; 60 or UACR ≥30 mg/g at FU;10.9%</td>
+      <td>125 mets + 14 clinical factors</td>
+      <td>SVM, RF, Ada BoostBest set: Mets-SM and PC + age, TC, FPG, eGFR, UACR, AUC = 0.857Traditional LR using 14 variables, AUC = 0.809</td>
+    </tr>
+    <tr>
+      <td>Sabanayagam et al., 2023, current study</td>
+      <td>SEED population data, Singapore</td>
+      <td>1365 adults with diabetes.FU = 6 y.</td>
+      <td>eGFR &lt; 60 + 25% decline in eGFR from baseline</td>
+      <td>339 features</td>
+      <td>EN + RFE selected 15 features, AUC = 0.851 vs. 0.795 using seven features by traditional LR</td>
+    </tr>
+  </tbody>
+</table>
+
+_AUC, area under the receiver operating characteristic curve; CKD, chronic kidney disease; eGFR, estimated glomerular filtration rate; EHR, electronic health records; EN, Elastic Net; FPG, Fasting plasma glucose; FU, follow-up; GBM, Gradient Boosting Machine; ICD, International Classification of Diseases; INPC, Indiana Network for Patient Care; LR, logistic regression; ML, machine learning; RF, random forest; RFE, recursive feature selection; SEED, Singapore Epidemiology of Eye Diseases; SVM, support vector machine; T2DM, type 2 diabetes mellitus; TC, total cholesterol; UACR, urine albumin-creatinine ratio._
 
 Song et al. predicted 1-year risk of DKD based on electronic health records (EHR) data using gradient boosting machine (GBM) algorithm with an AUC of 83% (Song et al., 2020). As the median duration of development of DKD was ~10 y since the onset of diabetes, predicting 1-year risk may not be sufficient. Huang et al. predicted DKD risk in 1838 adults with diabetes and prediabetes who participated in the KORA study in Germany. The authors used ML models SVM, RF, and Ada Boost based on 14 clinical factors and 125 metabolites. The best achieved AUC was 0.857, which is similar to that of our model using EN (AUC = 0.851) (Huang et al., 2020a).
 

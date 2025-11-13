@@ -38,7 +38,7 @@
 
 ## Abstract
 
-10.7554/eLife.13662.001 Human calcium-sensing receptor (CaSR) is a G-protein-coupled receptor (GPCR) that maintains extracellular Ca 2+ homeostasis through the regulation of parathyroid hormone secretion. It functions as a disulfide-tethered homodimer composed of three main domains, the Venus Flytrap module, cysteine-rich domain, and seven-helix transmembrane region. Here, we present the crystal structures of the entire extracellular domain of CaSR in the resting and active conformations. We provide direct evidence that L-amino acids are agonists of the receptor. In the active structure, L-Trp occupies the orthosteric agonist-binding site at the interdomain cleft and is primarily responsible for inducing extracellular domain closure to initiate receptor activation. Our structures reveal multiple binding sites for Ca 2+ and PO 4 3- ions. Both ions are crucial for structural integrity of the receptor. While Ca 2+ ions stabilize the active state, PO 4 3- ions reinforce the inactive conformation. The activation mechanism of CaSR involves the formation of a novel dimer interface between subunits. DOI: http://dx.doi.org/10.7554/eLife.13662.001
+Human calcium-sensing receptor (CaSR) is a G-protein-coupled receptor (GPCR) that maintains extracellular Ca2+ homeostasis through the regulation of parathyroid hormone secretion. It functions as a disulfide-tethered homodimer composed of three main domains, the Venus Flytrap module, cysteine-rich domain, and seven-helix transmembrane region. Here, we present the crystal structures of the entire extracellular domain of CaSR in the resting and active conformations. We provide direct evidence that L-amino acids are agonists of the receptor. In the active structure, L-Trp occupies the orthosteric agonist-binding site at the interdomain cleft and is primarily responsible for inducing extracellular domain closure to initiate receptor activation. Our structures reveal multiple binding sites for Ca2+ and PO43- ions. Both ions are crucial for structural integrity of the receptor. While Ca2+ ions stabilize the active state, PO43- ions reinforce the inactive conformation. The activation mechanism of CaSR involves the formation of a novel dimer interface between subunits.
 
 ## Introduction
 
@@ -54,49 +54,233 @@ Structural information for class C GPCRs is available for the extracellular doma
 
 ## Results
 
-## Structure of CaSR ECD homodimer
+### Structure of CaSR ECD homodimer
 
-The ECD of human CaSR was secreted from baculovirus-infected insect cells as a disulfide-tethered homodimer (Figure 1—figure supplement 1). It contains 11 potential N-linked glycosylation sites. Disruption of three of the glycosylation sites did not alter CaSR signaling (Figure 1—figure supplement 1). Formation of well-diffracting crystals required partial deglycosylation of the receptor through mutation and enzymatic digestion. We obtained two different forms of CaSR ECD crystals. Form I was crystallized in the absence and presence of 2 mM Ca2+, and form II in the presence of 10 mM L-Trp and 10 mM Ca2+ (Table 1).10.7554/eLife.13662.003Table 1.Data collection and refinement statistics.DOI: http://dx.doi.org/10.7554/eLife.13662.00310.7554/eLife.13662.004Table 1—source data 1.Statistics for anomalous data collection.DOI: http://dx.doi.org/10.7554/eLife.13662.00410.7554/eLife.13662.005Table 1—source data 2.Data collection and refinement statistics for endogenous ligand-bound CaSR ECD.DOI: http://dx.doi.org/10.7554/eLife.13662.005Functional stateInactive (2 mM Ca2+)Active (10 mM Ca2+, 10 mM L-Trp)CrystalForm IForm IIData collectionSpace groupF222C2Wavelength (Å)0.97921.7712Cell dimensions a, b, c (Å)126.3, 150.2, 214.6107.7, 127.5, 146.8 α, β, γ (°)90.0, 90.0, 90.090.0, 108.7, 90.0Resolution (Å)88.1 - 3.1 (3.6 - 3.1)139.0 - 2.6 (2.9 - 2.6)Rsym or Rmerge0.051 (0.702)0.043 (0.575)I / σI21.3 (2.1)22.1 (2.3)Completeness (%)99.9 (100.0)98.0 (97.1)Redundancy6.6 (6.8)6.9 (6.8)CC1/2 (%)100.0 (93.1)99.9 (96.9)RefinementResolution (Å)107.2 - 3.137.5 - 2.6No. of reflections16,74748,839Rwork / Rfree (%)22.2 / 23.921.1 / 22.2No. of atoms Protein45648454 Ligand (Trp)-30 Cation (Ca2+)18 Anion15 (SO42-)20 (PO43-) Sugar9870 Water43331B-factors (Å2) Protein110.468.3 Ligand-39.9 Cation (Ca2+)105.496.3 Anion102.1 (SO42-)61.0 (PO43-) Sugar152.980.4 Water76.953.8R.m.s. deviations Bond lengths (Å)0.0080.009 Bond angles (°)1.151.14Values in parentheses are for highest-resolution shell.CC1/2 is defined in reference (Karplus and Diederichs, 2012).
+The ECD of human CaSR was secreted from baculovirus-infected insect cells as a disulfide-tethered homodimer (Figure 1—figure supplement 1). It contains 11 potential N-linked glycosylation sites. Disruption of three of the glycosylation sites did not alter CaSR signaling (Figure 1—figure supplement 1). Formation of well-diffracting crystals required partial deglycosylation of the receptor through mutation and enzymatic digestion. We obtained two different forms of CaSR ECD crystals. Form I was crystallized in the absence and presence of 2 mM Ca2+, and form II in the presence of 10 mM L-Trp and 10 mM Ca2+ (Table 1).
 
-In both CaSR ECD structures, the two protomers interact in a side-by-side fashion while facing opposite directions (
+**Table 1.**
+ Data collection and refinement statistics.Table 1—source data 1.Statistics for anomalous data collection.Table 1—source data 2.Data collection and refinement statistics for endogenous ligand-bound CaSR ECD.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Functional state</th>
+      <th>Inactive (2 mM Ca2+)</th>
+      <th>Active (10 mM Ca2+, 10 mM L-Trp)</th>
+    </tr>
+    <tr>
+      <th>Crystal</th>
+      <th>Form I</th>
+      <th>Form II</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Data collection</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>F222</td>
+      <td>C2</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9792</td>
+      <td>1.7712</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>126.3, 150.2, 214.6</td>
+      <td>107.7, 127.5, 146.8</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90.0, 90.0, 90.0</td>
+      <td>90.0, 108.7, 90.0</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>88.1 - 3.1 (3.6 - 3.1)</td>
+      <td>139.0 - 2.6 (2.9 - 2.6)</td>
+    </tr>
+    <tr>
+      <td>Rsym or Rmerge</td>
+      <td>0.051 (0.702)</td>
+      <td>0.043 (0.575)</td>
+    </tr>
+    <tr>
+      <td>I / σI</td>
+      <td>21.3 (2.1)</td>
+      <td>22.1 (2.3)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.9 (100.0)</td>
+      <td>98.0 (97.1)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>6.6 (6.8)</td>
+      <td>6.9 (6.8)</td>
+    </tr>
+    <tr>
+      <td>CC1/2 (%)</td>
+      <td>100.0 (93.1)</td>
+      <td>99.9 (96.9)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>107.2 - 3.1</td>
+      <td>37.5 - 2.6</td>
+    </tr>
+    <tr>
+      <td>No. of reflections</td>
+      <td>16,747</td>
+      <td>48,839</td>
+    </tr>
+    <tr>
+      <td>Rwork / Rfree (%)</td>
+      <td>22.2 / 23.9</td>
+      <td>21.1 / 22.2</td>
+    </tr>
+    <tr>
+      <td>No. of atoms</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>4564</td>
+      <td>8454</td>
+    </tr>
+    <tr>
+      <td>Ligand (Trp)</td>
+      <td>-</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Cation (Ca2+)</td>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Anion</td>
+      <td>15 (SO42-)</td>
+      <td>20 (PO43-)</td>
+    </tr>
+    <tr>
+      <td>Sugar</td>
+      <td>98</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>43</td>
+      <td>331</td>
+    </tr>
+    <tr>
+      <td>B-factors (Å2)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>110.4</td>
+      <td>68.3</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>-</td>
+      <td>39.9</td>
+    </tr>
+    <tr>
+      <td>Cation (Ca2+)</td>
+      <td>105.4</td>
+      <td>96.3</td>
+    </tr>
+    <tr>
+      <td>Anion</td>
+      <td>102.1 (SO42-)</td>
+      <td>61.0 (PO43-)</td>
+    </tr>
+    <tr>
+      <td>Sugar</td>
+      <td>152.9</td>
+      <td>80.4</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>76.9</td>
+      <td>53.8</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.008</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.15</td>
+      <td>1.14</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values in parentheses are for highest-resolution shell.CC1/2 is defined in reference (Karplus and Diederichs, 2012)._
+
+In both CaSR ECD structures, the two protomers interact in a side-by-side fashion while facing opposite directions (Figure 1; Figure 1—figure supplement 2). Each CaSR ECD protomer consists of three domains, LB1, LB2 and CR. The two lobe-shaped domains LB1 and LB2 form a VFT module similar to that of mGluRs (Kunishima et al., 2000; Muto et al., 2007; Tsuchiya et al., 2002) and GABAB receptor (Geng et al., 2013, 2012). The relative orientation between the LB2 and CR domains is fixed through an interdomain disulfide linkage (C236-C561), and the CR domain is positioned to amplify and transmit the conformational variations within the VFT module.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig1-v2.jpg)
 
-**Figure 1.:** (A) Inactive-state structure of CaSR ECD homodimer in the presence of 2 mM Ca2+. (B) Active-state structure of CaSR ECD homodimer in the presence of 10 mM Ca2+ and 10 mM L-Trp. Each structure is shown in cartoon (front view) or surface (side view) representations that are related by a 90°-rotation about the vertical axis. Each protomer is colored according to its individual domains (LB1, light blue; LB2, blue; CR, purple). The various ligands (L-Trp, Ca2+, PO43-, SO42-) are displayed as space-filling models. Observed carbohydrates are shown as ball-and-stick models in gray. Disulfide bridges are in yellow.DOI: http://dx.doi.org/10.7554/eLife.13662.006
+**Figure 1.:** (A) Inactive-state structure of CaSR ECD homodimer in the presence of 2 mM Ca2+. (B) Active-state structure of CaSR ECD homodimer in the presence of 10 mM Ca2+ and 10 mM L-Trp. Each structure is shown in cartoon (front view) or surface (side view) representations that are related by a 90°-rotation about the vertical axis. Each protomer is colored according to its individual domains (LB1, light blue; LB2, blue; CR, purple). The various ligands (L-Trp, Ca2+, PO43-, SO42-) are displayed as space-filling models. Observed carbohydrates are shown as ball-and-stick models in gray. Disulfide bridges are in yellow.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Superdex-200 size exclusion chromatography of secreted wild-type (wt) CaSR ECD. (B) SDS gel of wt-CaSR ECD before and after Endo H digestion under reducing condition. () Superdex-200 size exclusion chromatography of secreted CaSR ECD mutant carrying three glycosylation-site mutations (N386Q, S402N and N468Q). (CD) SDS gel of purified CaSR ECD mutant from (C) under reducing (+DTT) and non-reducing (-DTT) conditions. (E) Dose-dependent Ca2+-stimulated IP accumulation in cells expressing wild-type or mutant CaSR. The full-length CaSR contains either two (N386Q, S402N) or three (N386Q, S402N and N468Q) glycosylation-site mutations.DOI: http://dx.doi.org/10.7554/eLife.13662.007
+**Figure 1—figure supplement 1.:** (A) Superdex-200 size exclusion chromatography of secreted wild-type (wt) CaSR ECD. (B) SDS gel of wt-CaSR ECD before and after Endo H digestion under reducing condition. (C) Superdex-200 size exclusion chromatography of secreted CaSR ECD mutant carrying three glycosylation-site mutations (N386Q, S402N and N468Q). (D) SDS gel of purified CaSR ECD mutant from (C) under reducing (+DTT) and non-reducing (-DTT) conditions. (E) Dose-dependent Ca2+-stimulated IP accumulation in cells expressing wild-type or mutant CaSR. The full-length CaSR contains either two (N386Q, S402N) or three (N386Q, S402N and N468Q) glycosylation-site mutations.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** (A) Cartoon representation of the inactive (form I) CaSR ECD crystal structure. (B) Cartoon representation of the active (form II) CaSR ECD crystal structure. Each homodimer structure is shown in five views: front (center), top (top), bottom (bottom), and two side (center left and right) views. Each protomer is colored according to its individual domains (LB1, light blue; LB2, blue; CR, purple). The various ligands (L-Trp, Ca2+, PO43-, SO42-) are displayed as space-filling models. Observed carbohydrates are shown as ball-and-stick models in gray. Disulfide bridges are in yellow.DOI: http://dx.doi.org/10.7554/eLife.13662.008
+**Figure 1—figure supplement 2.:** (A) Cartoon representation of the inactive (form I) CaSR ECD crystal structure. (B) Cartoon representation of the active (form II) CaSR ECD crystal structure. Each homodimer structure is shown in five views: front (center), top (top), bottom (bottom), and two side (center left and right) views. Each protomer is colored according to its individual domains (LB1, light blue; LB2, blue; CR, purple). The various ligands (L-Trp, Ca2+, PO43-, SO42-) are displayed as space-filling models. Observed carbohydrates are shown as ball-and-stick models in gray. Disulfide bridges are in yellow.
 
 Form I crystal structure of CaSR ECD represents the inactive configuration since the VFT modules of both protomers are in the open conformation associated with the resting state (open-open), and the interdomain cleft is empty. In addition, each protomer structure contains one Ca2+ ion and three SO42- ions (Figure 1A).
 
 In the form II crystal structure, both protomers of CaSR ECD have the closed conformation associated with agonist binding (closed-closed). Surprisingly, the ligand-binding cleft of each protomer is solely occupied by an L-Trp molecule. Ca2+ is bound at four novel sites in the CaSR ECD structure, including one at the homodimer interface. Each CaSR ECD molecule also contains two PO43- ions (Figure 1B).
 
-Agonist binding induces large conformational changes within the CaSR ECD homodimer. First, the VFT module of each protomer undergoes domain closure. Alignment based on the LB1 domains showed that the LB2 domains of inactive and active structures are related by a 29° rotation (
+Agonist binding induces large conformational changes within the CaSR ECD homodimer. First, the VFT module of each protomer undergoes domain closure. Alignment based on the LB1 domains showed that the LB2 domains of inactive and active structures are related by a 29° rotation (Figure 2A). Second, the LB2 domains of the two protomers approach each other, resulting in an expansion of the homodimer interactions involving LB2 domains. Third, the CR domains of the two subunits interact to form a large homodimer interface that is unique to the active state. The CR domains are brought into close contact by the motion involving LB2 since the two domains are rigidly associated within each subunit. Finally, the structural reorganization of CR domains reduces the distance between the C-termini of the two subunits from 83 Å to 23 Å (Figure 2B,C). This CR domain movement may cause reorientation of the transmembrane domains during receptor activation.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig2-v2.jpg)
 
-**Figure 2.:** (A) Superposition of the inactive (orange) and active (blue) CaSR ECD structures based on the LB1 domain of one protomer (front view, left; side view, right). Green line is the axis of rotation that relates the LB2 domains of the superimposed protomers (rotation χ = 29°, screw translation τχ = −2.2 Å). (B, C) Surface representation of inactive (B) and active (C) structures in front (top) and bottom (bottom) views. Distance between C-termini of the two subunits (yellow) is marked by dashed line for each homodimer.DOI: http://dx.doi.org/10.7554/eLife.13662.009
+**Figure 2.:** (A) Superposition of the inactive (orange) and active (blue) CaSR ECD structures based on the LB1 domain of one protomer (front view, left; side view, right). Green line is the axis of rotation that relates the LB2 domains of the superimposed protomers (rotation χ = 29°, screw translation τχ = −2.2 Å). (B, C) Surface representation of inactive (B) and active (C) structures in front (top) and bottom (bottom) views. Distance between C-termini of the two subunits (yellow) is marked by dashed line for each homodimer.
 
-## Common protomer-protomer interactions
+### Common protomer-protomer interactions
 
-The inactive structure of CaSR ECD shows that subunit association in the resting state is primarily mediated by the LB1 domains (
+The inactive structure of CaSR ECD shows that subunit association in the resting state is primarily mediated by the LB1 domains (Figure 3A; Figure 3—figure supplement 1). This dimer interface is largely conserved in the active structure, indicating that the LB1-LB1 interaction mostly serves to faciliate dimerization between receptor subunits (Figure 3B; Figure 3—figure supplement 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig3-v2.jpg)
 
-**Figure 3.:** (A) Cα trace of inactive structure with elements involved in homodimer formation highlighted by cartoons. The interface is divided into three regions I, II, and IV. Site II is further separated into two symmetrical parts II_a and II_b. Specific contacts at each interface region are shown in surrounding panels. Dashed lines indicate hydrogen bonds. (B) Cα trace of active structure showing elements involved in homodimer formation. The interface is divided into six regions, I, II, III, IV, V, and VI. Specific contacts at the interface areas III, IV, V, and VI are shown in surrounding panels. For both structures, the domains involved in dimerization at each interface region are: I: LB1-LB1; II: LB1-LB1; III: LB2-LB1; IV: LB2-LB2; V: LB2-CR; VI: CR-CR. (C) Dose-dependent Ca2+-stimulated IP accumulation in cells transiently expressing wild-type (wt) or mutant CaSR. Naturally occurring inactivating mutations L159P, R172G, D215G, R227L, R551K, and G557E are located at the homodimer interface. The single mutation W458A was designed based on structure to affect receptor homodimerization.DOI: http://dx.doi.org/10.7554/eLife.13662.010
+**Figure 3.:** (A) Cα trace of inactive structure with elements involved in homodimer formation highlighted by cartoons. The interface is divided into three regions I, II, and IV. Site II is further separated into two symmetrical parts II_a and II_b. Specific contacts at each interface region are shown in surrounding panels. Dashed lines indicate hydrogen bonds. (B) Cα trace of active structure showing elements involved in homodimer formation. The interface is divided into six regions, I, II, III, IV, V, and VI. Specific contacts at the interface areas III, IV, V, and VI are shown in surrounding panels. For both structures, the domains involved in dimerization at each interface region are: I: LB1-LB1; II: LB1-LB1; III: LB2-LB1; IV: LB2-LB2; V: LB2-CR; VI: CR-CR. (C) Dose-dependent Ca2+-stimulated IP accumulation in cells transiently expressing wild-type (wt) or mutant CaSR. Naturally occurring inactivating mutations L159P, R172G, D215G, R227L, R551K, and G557E are located at the homodimer interface. The single mutation W458A was designed based on structure to affect receptor homodimerization.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A, B) Cα traces of inactive (A) and active (B) CaSR ECD structures. Each structure is presented in three views: top (left), front (center) and side (right). Structural elements involved in homodimer formation are highlighted by cartoons. (C, D) A detailed view of the structural elements at the homodimer interface region I of inactive (C) and active (D) CaSR ECD structures. For each structure, the angle between the D-helices of the two subunits is shown and is used to represent dimer orientation at this interface. (E, F) Cα traces of inactive (E; PDB code: 4MQE) and active (F; PDB code: 4MS4) GABAB receptor (GABABR) ECD structures. (G, H) A detailed view of the structural elements at the heterodimer interface of inactive (G) and active (H) GABABR ECD structures. For each structure, the angle between the C-helices of the two subunits is shown. (I, J) Cα traces of inactive (I; PDB code: 1EWT) and active (J; PDB code: 1EWK) mGluR1 VFT module structures. (, KL) A detailed view of the structural elements at the homodimer interface of inactive (G) and active (H) mGluR1 VFT structures. For each structure, the angle between the C-helices of the two subunits is shown. Panels (E) – (L) were adapted from Supplementary Figure 13 of (Geng et al., 2013).DOI: http://dx.doi.org/10.7554/eLife.13662.011
+**Figure 3—figure supplement 1.:** (A, B) Cα traces of inactive (A) and active (B) CaSR ECD structures. Each structure is presented in three views: top (left), front (center) and side (right). Structural elements involved in homodimer formation are highlighted by cartoons. (C, D) A detailed view of the structural elements at the homodimer interface region I of inactive (C) and active (D) CaSR ECD structures. For each structure, the angle between the D-helices of the two subunits is shown and is used to represent dimer orientation at this interface. (E, F) Cα traces of inactive (E; PDB code: 4MQE) and active (F; PDB code: 4MS4) GABAB receptor (GABABR) ECD structures. (G, H) A detailed view of the structural elements at the heterodimer interface of inactive (G) and active (H) GABABR ECD structures. For each structure, the angle between the C-helices of the two subunits is shown. (I, J) Cα traces of inactive (I; PDB code: 1EWT) and active (J; PDB code: 1EWK) mGluR1 VFT module structures. (K, L) A detailed view of the structural elements at the homodimer interface of inactive (G) and active (H) mGluR1 VFT structures. For each structure, the angle between the C-helices of the two subunits is shown. Panels (E) – (L) were adapted from Supplementary Figure 13 of (Geng et al., 2013).
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Specific contacts at the interface areas I, II_a, and II_b of the active CaSR ECD structure.DOI: http://dx.doi.org/10.7554/eLife.13662.012
+**Figure 3—figure supplement 2.:** Specific contacts at the interface areas I, II_a, and II_b of the active CaSR ECD structure.
 
 The LB1-LB1 dimer interface buries over 3800 Å2 of solvent-accessible surface area, and can be divided into two regions. Site I is located at the center of LB1 domain and is flanked on either side by the two symmetric parts of site II (Figure 3A,B).
 
@@ -106,7 +290,7 @@ The dimer interactions at site I of CaSR are predominantly hydrophobic and invol
 
 Site II is unique to the CaSR ECD structures. It involves an arm-like long loop stretched out from one subunit to reach its binding partner (Figure 3A,B; Figure 3—figure supplement 1). The dimer interactions at site II include hydrogen bonds and hydrophobic contacts. Several disease-causing mutations are located at this interface (S53P, P55L, and Y161C) (Hendy et al., 2009). Substitution of a deeply buried interfacial residue W458 with alanine also decreased the potency of Ca2+ (Figure 3C). These observations indicate that formation of a stable homodimer is important for CaSR function.
 
-## Agonist-induced homodimer interface
+### Agonist-induced homodimer interface
 
 Agonist binding causes an expansion of the dimer interactions involving LB2 domain. In the inactive homodimer, only minimal contacts occur between the LB2 domains (Figure 3A). In the active state, LB2 of one protomer interacts with all three domains of a second protomer (Figure 3B). These contacts are predominantly hydrophilic, and bury 1000 Å2 of solvent accessible surface area.
 
@@ -114,21 +298,21 @@ LB2 mediates dimer interactions primarily through a central helix (G) that trans
 
 Agonist binding also induces the formation of a novel homodimer interface between the CR domains that covers approximately 1200 Å2 of solvent accessible surface area (site VI) (Figure 3B). The CR-CR interactions are mediated by two β-strands and their connecting loop from each subunit. Key contacts include two cross-subunit hydrogen bonds (T560, E558), hydrophobic contacts (I554, P569), and electrostatic interactions (R551). Among these, R551K is a known disease-causing mutation that reduced the receptor response (Hendy et al., 2009; Toke et al., 2007) (Figure 3C).
 
-## Amino acid recognition
+### Amino acid recognition
 
-In the active structure, the amino acid L-Trp is bound at the interdomain cleft of the VFT module, in agreement with previous mutational data (
+In the active structure, the amino acid L-Trp is bound at the interdomain cleft of the VFT module, in agreement with previous mutational data (Mun et al., 2005; Mun et al., 2004; Zhang et al., 2014, 2002) (Figure 4A; Figure 4—figure supplement 1). L-Trp facilitates extracellular domain closure of CaSR by contacting both LB1 and LB2 domains of the VFT module (Figure 4B,C; Figure 4—figure supplement 1). The interactions between CaSR ECD and L-Trp are primarily mediated by hydrogen bonds. (1) The carboxylic acid group of L-Trp forms hydrogen bonds through both oxygen atoms with LB1 residues S147, A168, and S170. (2) The backbone nitrogen of L-Trp is hydrogen-bonded to A168 and S170 of LB1 domain. (3) The indole nitrogen of L-Trp forms two hydrogen bonds with E297 of LB2 domain. (4) L-Trp is engaged in hydrophobic contacts with both LB1 and LB2 residues including W70, T145, Y218, and A298. The extensive contacts between backbone atoms of L-Trp and the receptor suggest that other amino acids may bind to CaSR in a similar fashion to induce domain closure.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig4-v2.jpg)
 
-**Figure 4.:** (A) Molecular surface of a L-Trp-bound CaSR ECD protomer in the active structure. L-Trp is displayed as a space-filling model. (B) Specific contacts between CaSR ECD (gray) and L-Trp (yellow). Mesh represents the final 2Fo-Fc electron density map contoured at 1σ. Hydrogen bonds are represented by dashed lines. (C) Schematic diagram of the interactions between CaSR ECD and bound L-Trp. Selected contacts are highlighted; hydrogen bonds, dashed lines; hydrophobic contacts, wiggled lines. (D) Dose-response curves of nonradioactive L-Trp inhibiting [3H]-L-Trp binding to CaSR ECD in the presence of 0 mM or 2 mM Ca2+. (E–F) Dose-dependent L-Trp-induced intracellular Ca2+ mobilization at various extracellular Ca2+ concentrations in cells stably expressing CaSR. (E) Effect of increments of L-Trp (final concentrations: 0.1, 0.2, 0.5, 1.0, 2.0, 5.0, 10, 20 mM) in the presence of 1.5 mM extracellular Ca2+. The experiments were followed by an exposure to 0.5 mM extracellular Ca2+ to demonstrate reversibility of the L-Trp-induced intracellular Ca2+ oscillation, and a later exposure to 8 mM extracellular Ca2+ to demonstrate the maximal response. (F) Integrated response curves of L-Trp at 0.5, 1.5, and 2.5 mM Ca2+. Intracellular Ca2+ responses are presented in integrated response units (IRUs, F340/F380.min). (G) Effect of L-Trp on Ca2+-stimulated intracellular Ca2+ mobilization in cells transiently expressing wt CaSR. (H–L) Dose-dependent Ca2+-stimulated IP accumulation in cells transiently expressing wild-type or mutant CaSR. Naturally-occurring inactivating mutations Y218S and E297K are located at the L-Trp binding site. The single mutations T145I, S147A, and S170A were designed based on structure to disrupt L-Trp recognition.DOI: http://dx.doi.org/10.7554/eLife.13662.013
+**Figure 4.:** (A) Molecular surface of a L-Trp-bound CaSR ECD protomer in the active structure. L-Trp is displayed as a space-filling model. (B) Specific contacts between CaSR ECD (gray) and L-Trp (yellow). Mesh represents the final 2Fo-Fc electron density map contoured at 1σ. Hydrogen bonds are represented by dashed lines. (C) Schematic diagram of the interactions between CaSR ECD and bound L-Trp. Selected contacts are highlighted; hydrogen bonds, dashed lines; hydrophobic contacts, wiggled lines. (D) Dose-response curves of nonradioactive L-Trp inhibiting [3H]-L-Trp binding to CaSR ECD in the presence of 0 mM or 2 mM Ca2+. (E–F) Dose-dependent L-Trp-induced intracellular Ca2+ mobilization at various extracellular Ca2+ concentrations in cells stably expressing CaSR. (E) Effect of increments of L-Trp (final concentrations: 0.1, 0.2, 0.5, 1.0, 2.0, 5.0, 10, 20 mM) in the presence of 1.5 mM extracellular Ca2+. The experiments were followed by an exposure to 0.5 mM extracellular Ca2+ to demonstrate reversibility of the L-Trp-induced intracellular Ca2+ oscillation, and a later exposure to 8 mM extracellular Ca2+ to demonstrate the maximal response. (F) Integrated response curves of L-Trp at 0.5, 1.5, and 2.5 mM Ca2+. Intracellular Ca2+ responses are presented in integrated response units (IRUs, F340/F380.min). (G) Effect of L-Trp on Ca2+-stimulated intracellular Ca2+ mobilization in cells transiently expressing wt CaSR. (H–L) Dose-dependent Ca2+-stimulated IP accumulation in cells transiently expressing wild-type or mutant CaSR. Naturally-occurring inactivating mutations Y218S and E297K are located at the L-Trp binding site. The single mutations T145I, S147A, and S170A were designed based on structure to disrupt L-Trp recognition.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Molecular surface of L-Trp-bound CaSR ECD homodimer. L-Trp is displayed as a space filling model. (B, C) Specific contacts between CaSR ECD (gray) and L-Trp (yellow) within each protomer of the active structure. Mesh represents the final 2Fo-Fc electron density map contoured at 1σ. Hydrogen bonds are represented by black dashed lines. (D) Superposition of the L-Trp-binding site in CaSR (gray) and Glu-binding site in mGluR1 (cyan). Agonist-binding residues that are located at the same locations of the two receptor structures are highlighted.DOI: http://dx.doi.org/10.7554/eLife.13662.014
+**Figure 4—figure supplement 1.:** (A) Molecular surface of L-Trp-bound CaSR ECD homodimer. L-Trp is displayed as a space filling model. (B, C) Specific contacts between CaSR ECD (gray) and L-Trp (yellow) within each protomer of the active structure. Mesh represents the final 2Fo-Fc electron density map contoured at 1σ. Hydrogen bonds are represented by black dashed lines. (D) Superposition of the L-Trp-binding site in CaSR (gray) and Glu-binding site in mGluR1 (cyan). Agonist-binding residues that are located at the same locations of the two receptor structures are highlighted.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** (A) Active-state structure of CaSR ECD homodimer showing unexplained electron density at the interdomain crevice of each protomer when crystals of CaSR ECD were grown in the presence of 10 mM Ca2+ and absence of any additional L-amino acids. (B, C) Close-up view of the region surrounding the extra density. Mesh represents a 2Fo-Fc electron density map contoured at 1σ.DOI: http://dx.doi.org/10.7554/eLife.13662.015
+**Figure 4—figure supplement 2.:** (A) Active-state structure of CaSR ECD homodimer showing unexplained electron density at the interdomain crevice of each protomer when crystals of CaSR ECD were grown in the presence of 10 mM Ca2+ and absence of any additional L-amino acids. (B, C) Close-up view of the region surrounding the extra density. Mesh represents a 2Fo-Fc electron density map contoured at 1σ.
 
 We measured the direct interaction between L-Trp and CaSR ECD by scintillation proximity assay (SPA) (Quick and Javitch, 2007) (Figure 4D). CaSR ECD exhibited binding of [3H]-L-Trp in the absence and presence of Ca2+. Isotope dilution of [3H]-L-Trp with nonradioactive L-Trp led to a displacement of [3H]-L-Trp in a concentration-dependent manner. The addition of 2 mM Ca2+ increased the amount of L-Trp bound to CaSR ECD at any given concentration, suggesting that extracellular Ca2+ enhances L-Trp binding, possibly by affecting the L-Trp-binding affinity and kinetics of CaSR. The half-maximal inhibitory concentration of L-Trp (IC50, concentration at which 50% displacement of [3H]-L-Trp was observed) was approximately 2 mM regardless of whether the experiment was performed in the absence (2.11 ± 0.72 mM) or presence (2.04 ± 0.10 mM) of 2 mM Ca2+. Nevertheless, the binding affinity of L-Trp to CaSR ECD with and without Ca2+ may still differ as it depends on the concentration and binding affinity of the radiolabeled ligand. Further studies are needed to characterize the effect of Ca2+ on L-amino acid binding at the orthosteric agonist site of CaSR.
 
@@ -136,23 +320,23 @@ We found that L-Trp directly stimulated intracellular Ca2+ mobilization through 
 
 L-Trp is also important for Ca2+-stimulated CaSR response. First, L-Trp elevated the sensitivity of CaSR toward extracellular Ca2+ (Conigrave et al., 2000) (Figure 4G). The presence of 10 mM L-Trp lowered the EC50 of extracellular Ca2+ by about 30%. Second, the residues involved in L-Trp binding are crucial for Ca2+-dependent receptor activation. Previous and current studies demonstrate that each of the individual mutations S147A, S170A, Y218A, and E297K abolishes Ca2+-induced receptor response (Silve et al., 2005; Zhang et al., 2002) (Figure 4H–L). Furthermore, E297K is a naturally occurring inactivating mutation that can lead to life-threatening hyperparathyroidism (Bai et al., 1996; Hendy et al., 2009; Pollak et al., 1993). These observations suggest that the binding of an amino acid is required for extracellular Ca2+-sensing by CaSR.
 
-## Ca2+-binding
+### Ca2+-binding
 
-We identified four distinct Ca
+We identified four distinct Ca2+-binding sites within each protomer of the active structure using anomalous difference maps, and named these sites 1 through 4 (or 1′-4’ in the second protomer) (Figure 5A,B; Figure 5—figure supplement 1; Table 1—source data 1). The inactive structure revealed electron density at site 2 that is consistent with a bound Ca2+ ion (Figure 5C,D). None of the Ca2+-binding sites observed in the CaSR ECD structures has been reported previously.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig5-v2.jpg)
 
-**Figure 5.:** 2+-binding sites.(A) Active-state structure showing peaks in anomalous difference Fourier map (magenta mesh; 3σ contour level) that correspond to bound Ca2+ ions. Sites are labeled 1–4 or 1'-4' for each protomer. (B) Specific contacts between CaSR ECD and each bound Ca2+ ion within one protomer of the active structure. Anomalous difference Fourier map (magenta): sites 1–3, 6σ; site 4, 4.5σ. Fo-Fc difference map (blue): sites 1–3, 4.5σ; site 4, 2.5σ. Distances between Ca2+ and oxygen atoms (dashed lines) are within 3.0 Å. Dashed lines between water and protein atoms are hydrogen bonds. (C) Inactive-state structure showing peaks in anomalous difference Fourier map (magenta mesh; 3σ) at Ca2+-binding sites 2 and 2'. (D) Specific contacts between CaSR ECD and bound Ca2+ ion within one protomer of the inactive structure. Anomalous difference Fourier map (magenta): 5σ. Fo-Fc difference map (blue): 4.5σ.DOI: http://dx.doi.org/10.7554/eLife.13662.016
+**Figure 5.:** (A) Active-state structure showing peaks in anomalous difference Fourier map (magenta mesh; 3σ contour level) that correspond to bound Ca2+ ions. Sites are labeled 1–4 or 1'-4' for each protomer. (B) Specific contacts between CaSR ECD and each bound Ca2+ ion within one protomer of the active structure. Anomalous difference Fourier map (magenta): sites 1–3, 6σ; site 4, 4.5σ. Fo-Fc difference map (blue): sites 1–3, 4.5σ; site 4, 2.5σ. Distances between Ca2+ and oxygen atoms (dashed lines) are within 3.0 Å. Dashed lines between water and protein atoms are hydrogen bonds. (C) Inactive-state structure showing peaks in anomalous difference Fourier map (magenta mesh; 3σ) at Ca2+-binding sites 2 and 2'. (D) Specific contacts between CaSR ECD and bound Ca2+ ion within one protomer of the inactive structure. Anomalous difference Fourier map (magenta): 5σ. Fo-Fc difference map (blue): 4.5σ.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** 2+-binding sites in the active homodimer.(A) Active-state structure of CaSR ECD showing peaks in anomalous difference Fourier map (magenta mesh; 3σ contour level) that correspond to bound Ca2+ ions. Sites are labeled 1–4 or 1'-4' for each protomer. (B, C) Specific contacts between CaSR ECD and each bound Ca2+ ion within both protomers of the active structure. Anomalous difference Fourier map (magenta mesh): sites 1–3, 6σ; site 4, 4.5σ. Fo-Fc difference map (blue mesh): sites 1–3, 4.5σ; site 4, 2.5σ. The distances between Ca2+ and oxygen atoms (dashed lines) are within 3.0 Å. Dashed lines between water and protein atoms are hydrogen bonds. (D) Comparison of inactive (red) and active (blue) structures in the region of each Ca2+-binding site.DOI: http://dx.doi.org/10.7554/eLife.13662.017
+**Figure 5—figure supplement 1.:** (A) Active-state structure of CaSR ECD showing peaks in anomalous difference Fourier map (magenta mesh; 3σ contour level) that correspond to bound Ca2+ ions. Sites are labeled 1–4 or 1'-4' for each protomer. (B, C) Specific contacts between CaSR ECD and each bound Ca2+ ion within both protomers of the active structure. Anomalous difference Fourier map (magenta mesh): sites 1–3, 6σ; site 4, 4.5σ. Fo-Fc difference map (blue mesh): sites 1–3, 4.5σ; site 4, 2.5σ. The distances between Ca2+ and oxygen atoms (dashed lines) are within 3.0 Å. Dashed lines between water and protein atoms are hydrogen bonds. (D) Comparison of inactive (red) and active (blue) structures in the region of each Ca2+-binding site.
 
-Site 1 is located in a loop region at the top of LB1 domain (
+Site 1 is located in a loop region at the top of LB1 domain (Figure 5A,B). The bound Ca2+ ion is primarily coordinated by backbone carbonyl oxygen atoms of I81, S84, L87, and L88 (site 1′). The structural configuration of site 1 is similar in the inactive and active structures even though it is only occupied in the active state (Figure 5—figure supplement 1). The disease-causing mutation I81M (Hendy et al., 2009) is located at site 1, and it abolished Ca2+-dependent receptor response, possibly by disrupting a tightly packed hydrophobic patch adjacent to Ca2+-binding site 1 (Figure 6A,B). This implies that the local conformation of this loop region is important for receptor function, and the Ca2+ ion stabilizes the observed conformation in the active state.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig6-v2.jpg)
 
-**Figure 6.:** 2+-binding sites.(A, B) Dose-dependent Ca2+-stimulated IP accumulation (A) and intracellular Ca2+ mobilization (B) in cells transiently expressing wt or mutant CaSR. Naturally occurring inactivating mutations I81M and T100I are located at various Ca2+-binding sites. The single mutation N102I was designed based on structure to interfere with Ca2+-binding.DOI: http://dx.doi.org/10.7554/eLife.13662.018
+**Figure 6.:** (A, B) Dose-dependent Ca2+-stimulated IP accumulation (A) and intracellular Ca2+ mobilization (B) in cells transiently expressing wt or mutant CaSR. Naturally occurring inactivating mutations I81M and T100I are located at various Ca2+-binding sites. The single mutation N102I was designed based on structure to interfere with Ca2+-binding.
 
 The inactive and active structures share a common Ca2+-binding mode at site 2, suggesting that the bound Ca2+ is an integral part of the CaSR structure (Figure 5A–D; Figure 5—figure supplement 1). Site 2 is positioned directly above the interdomain crevice in LB1 domain, and it abuts the L-Trp binding site in the cleft. The Ca2+ ion is coordinated by the hydroxyl group of T100 in both states, and by the carboxyl group of N102 through a water molecule in the active structure. In addition, T145, another residue lining the site, forms part of the L-Trp binding cleft in the active state. Therefore, an intact Ca2+ site 2 provides an essential framework for L-Trp recognition. Indeed, introducing a hydrophobic residue at this site through mutations T100I, N102I, or T145I nearly eliminated Ca2+-induced receptor activity (Figure 4D; Figure 6A,B).
 
@@ -162,27 +346,27 @@ Among all four Ca2+-binding sites in CaSR ECD structure, site 4 is most closely 
 
 The Ca2+ ions have different peak heights in the anomalous difference maps, which are correlated with different Ca2+-occupancies at various sites. The Ca2+ ions at sites 1 and 2 have strong peaks (12.1–13.1 σ), indicating that these are high-occupancy sites. The Ca2+ ions at sites 3 (7.3 – 9.0 σ) and 4 (5.8 σ) have weaker anomalous peaks, which suggest low occupancy and possibly low affinity. The Ca2+ ion at site 4 has the weakest peak compared with other sites, which is consistent with the site being occupied only at elevated Ca2+ concentration for receptor activation.
 
-## Anion binding
+### Anion binding
 
-We identified a total of four anion-binding sites in the inactive and active CaSR ECD structures based on anomalous difference maps (1–4 or 1'-4’ in the second protomer) (
+We identified a total of four anion-binding sites in the inactive and active CaSR ECD structures based on anomalous difference maps (1–4 or 1'-4’ in the second protomer) (Figure 7; Figure 7—figure supplement 1; Table 1—source data 1). Sites 1–3 are located above the interdomain cleft in the LB1 domain, and site 4 is part of LB2 domain.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig7-v2.jpg)
 
-**Figure 7.:** (A) Inactive-state structure showing peaks in anomalous difference Fourier map (green mesh; 3σ) that correspond to bound SO42- ions. Sites are labeled 1–3 or 1'-3' for each protomer. (B) Specific contacts between CaSR ECD and each bound SO42- ion within one protomer of the inactive structure. Anomalous difference Fourier map (green): 3.5σ. Fo-Fc map (blue): 4σ. Dashed lines represent hydrogen bonds. (C) Active-state structure showing peaks in anomalous difference Fourier map (green mesh; 3σ) that correspond to bound PO43- ions. Sites are labeled 2 and 4 or 2' and 4' for each protomer. (D) Specific contacts between CaSR ECD and each bound PO43- ion within one protomer of the active structure. Anomalous difference Fourier map (green): 3.5σ. Fo-Fc map (blue): 4σ. (E) Active-state structure of CaSR ECD showing the additional hydrogen bonds formed across the interdomain cleft in the absence of any bound anion at sites 1 and 3 (left). Comparison of inactive (red) and active (light blue) structures in the region of anion binding sites 1 (center) and 3 (right).DOI: http://dx.doi.org/10.7554/eLife.13662.019
+**Figure 7.:** (A) Inactive-state structure showing peaks in anomalous difference Fourier map (green mesh; 3σ) that correspond to bound SO42- ions. Sites are labeled 1–3 or 1'-3' for each protomer. (B) Specific contacts between CaSR ECD and each bound SO42- ion within one protomer of the inactive structure. Anomalous difference Fourier map (green): 3.5σ. Fo-Fc map (blue): 4σ. Dashed lines represent hydrogen bonds. (C) Active-state structure showing peaks in anomalous difference Fourier map (green mesh; 3σ) that correspond to bound PO43- ions. Sites are labeled 2 and 4 or 2' and 4' for each protomer. (D) Specific contacts between CaSR ECD and each bound PO43- ion within one protomer of the active structure. Anomalous difference Fourier map (green): 3.5σ. Fo-Fc map (blue): 4σ. (E) Active-state structure of CaSR ECD showing the additional hydrogen bonds formed across the interdomain cleft in the absence of any bound anion at sites 1 and 3 (left). Comparison of inactive (red) and active (light blue) structures in the region of anion binding sites 1 (center) and 3 (right).
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** (A) Active-state structure of CaSR ECD showing the peaks in anomalous difference Fourier map (3σ) that correspond to bound PO43- ions. The sites are labeled 2 and 4 or 2' and 4' for each protomer. (B, C) Specific contacts between CaSR ECD and each bound PO43- ion within both protomers of the active structure. Anomalous difference Fourier map (green): 3.5σ. Fo-Fc map (blue): 4σ. Dashed lines represent hydrogen bonds.DOI: http://dx.doi.org/10.7554/eLife.13662.020
+**Figure 7—figure supplement 1.:** (A) Active-state structure of CaSR ECD showing the peaks in anomalous difference Fourier map (3σ) that correspond to bound PO43- ions. The sites are labeled 2 and 4 or 2' and 4' for each protomer. (B, C) Specific contacts between CaSR ECD and each bound PO43- ion within both protomers of the active structure. Anomalous difference Fourier map (green): 3.5σ. Fo-Fc map (blue): 4σ. Dashed lines represent hydrogen bonds.
 
 In the inactive structure, electron densities revealed that anions were bound at sites 1–3 (Figure 7A,B). In the active structure, only sites 2 and 4 are occupied (Figure 7C,D). We modeled the anions as SO42- ions in the inactive state and PO43- ions in the active state given their respective presence in the crystallization reagents. It is also possible that endogenous anions other than SO42- and PO43- are bound at these sites.
 
 The anion at site 1 is coordinated by the guanidine group of R62 and backbone nitrogen of Y63 (Figure 7B). In the absence of a bound anion in the active state, the side chain of LB1 residue R62 reaches across the interdomain cleft to form a salt bridge with E277 of LB2 domain (Figure 7E). This contact stabilizes the closed conformation of the CaSR VFT module.
 
-The anion bound at site 2 is held in place by multiple hydrogen bonds with the side chains of R66, R69, W70, and S417, and main chains of R415, I416, and S417 (
+The anion bound at site 2 is held in place by multiple hydrogen bonds with the side chains of R66, R69, W70, and S417, and main chains of R415, I416, and S417 (Figure 7B,D). The structural integrity of this site is important for receptor function. Each of the mutations R66H, R69E, and S417L essentially eradicated receptor signaling (Figure 8A,B). Among these, R66H is a disease-associated mutation (Hendy et al., 2009; Pidasheva et al., 2006).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig8-v2.jpg)
 
-**Figure 8.:** (A, B) Dose-dependent Ca2+-stimulated IP accumulation (A) and intracellular Ca2+ mobilization (B) in cells transiently expressing wt or mutant CaSR. Naturally-occurring inactivating mutations R66H, R69E, and S417L are located at anion-binding site 2 (or 2'). (C) Effect of SO42- ion on Ca2+-stimulated IP accumulation in cells transiently expressing wild-type CaSR.DOI: http://dx.doi.org/10.7554/eLife.13662.021
+**Figure 8.:** (A, B) Dose-dependent Ca2+-stimulated IP accumulation (A) and intracellular Ca2+ mobilization (B) in cells transiently expressing wt or mutant CaSR. Naturally-occurring inactivating mutations R66H, R69E, and S417L are located at anion-binding site 2 (or 2'). (C) Effect of SO42- ion on Ca2+-stimulated IP accumulation in cells transiently expressing wild-type CaSR.
 
 Anion-binding site 3 is adjacent to site 2. The bound anion is also coordinated by R66 and additionally by T412 (Figure 7B). In the active state, the side chain of LB1 residue R66 forms a hydrogen bond with S301 of LB2 domain (Figure 7E). This interaction also serves to maintain the CaSR ECD in a closed conformation.
 
@@ -192,7 +376,7 @@ We measured the effect of anion on Ca2+-dependent receptor response and found th
 
 ## Discussion
 
-## Implications for agonist-dependent receptor activation
+### Implications for agonist-dependent receptor activation
 
 Our structural analyses of CaSR ECD provide direct evidence that amino acids are agonists of CaSR, and they act concertedly with Ca2+ to achieve full receptor activation. L-Trp, the amino acid used in this study, fits the role of an orthosteric agonist for CaSR. (1) It binds at the interdomain crevice of the VFT module, the canonical agonist-binding site for class C GPCRs (Geng et al., 2013; Kunishima et al., 2000; Muto et al., 2007; Tsuchiya et al., 2002). (2) L-Trp shares a common receptor-binding mode with the endogenous agonists of mGluRs and GABAB receptor, which are also amino acids or their analogs (Geng et al., 2013; Kunishima et al., 2000; Muto et al., 2007; Tsuchiya et al., 2002). The residues involved in agonist recognition are located at the same positions in the structures of these receptors (Figure 4—figure supplement 1). For example, a conserved serine residue is responsible for securing the carboxylate of L-Trp, glutamate and GABA in CaSR (S147), mGluRs (S165) (Kunishima et al., 2000) and GABAB receptor (S130) (Geng et al., 2013), respectively. (3) L-Trp interacts with both LB1 and LB2 domains to facilitate extracellular domain closure, a crucial first step during CaSR activation. In contrast, no Ca2+ ion is found at the putative orthosteric agonist-binding site to induce domain closure. (4) Mutations of L-Trp-binding residues completely blocked Ca2+-induced IP accumulation and intracellular Ca2+ mobilization (Silve et al., 2005; Zhang et al., 2002), indicating that L-Trp is required for Ca2+-mediated receptor response. (6) L-Trp directly activates CaSR-mediated intracellular Ca2+ mobilization in the presence of extracellular Ca2+.
 
@@ -204,19 +388,19 @@ Metabolic balances of Ca2+ and PO43- are linked through hormonal factors such as
 
 The presence of anion-binding sites in CaSR may also provide a mechanism for CaSR to sense polycations such as polyamines. Increasing concentrations of polyamines could potentially compete with arginine residues at the anion-binding sites to bind to PO43-, thereby prompting the dissociation of PO43- from relatively weak sites, and releasing their inhibitory effect on the receptor. This would drive CaSR toward its active-state conformation. Our hypothesis would predict that polycations with higher number of positive charges will be more effective agonists. Indeed, previous studies have shown that polyamines mediate an increase in intracellular inositol phosphate and Ca2+ accumulation with the rank order seprmine > spermidine > putrescine (Cheng et al., 2004; Quinn et al., 1997).
 
-In summary, activation of CaSR involves an intricate interplay of amino acids, Ca
+In summary, activation of CaSR involves an intricate interplay of amino acids, Ca2+, and possibly PO43- ions. Like other GPCRs (Rosenbaum et al., 2011), CaSR exists in a conformational equilibrium between inactive and active states (Figure 9). (1) CaSR adopts an open conformation in the resting state, and PO43- ions promote the inactive configuration. (2) An L-amino acid closes the groove in the extracellular VFT module, thereby inducing the formation of a novel homodimer interface between subunits. (3) Ca2+ ions stabilize the active state by enhancing homodimer interactions between membrane-proximal domains to fully activate the receptor. The combination of agonist-induced VFT closure and specific association of membrane-proximal CR domains in CaSR will likely lead to rearrangement of the transmembrane domains for receptor activation.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/13662/elife-13662-fig9-v2.jpg)
 
-**Figure 9.:** The schematic diagram shows the equilibrium between the resting and active states of CaSR and the effects of L-amino acid and Ca2+ binding.DOI: http://dx.doi.org/10.7554/eLife.13662.022
+**Figure 9.:** The schematic diagram shows the equilibrium between the resting and active states of CaSR and the effects of L-amino acid and Ca2+ binding.
 
-## Common class C GPCR activation mechanism
+### Common class C GPCR activation mechanism
 
 Structural and functional data suggest a universal activation mechanism for class C GPCRs. First, agonist causes VFT closure in all three receptor systems of CaSR, mGluRs and GABAB receptor. Second, receptor activation requires the association of membrane-proximal domains. For CaSR, this involves the formation of a novel homodimer interface between the LB2 and CR domains. For GABAB receptor, which lacks the CR region, agonist leads to the formation of a large heterodimer interface between the LB2 domains (Geng et al., 2013). Similarly for mGluRs, single-molecule fluorescence resonance energy transfer (FRET) studies indicate that the LB2 domains of mGluRs come into proximity to stabilize the active state (Vafabakhsh et al., 2015). Furthermore, disulfide crosslinking experiments of mGluR demonstrate that a precise association between the CR domains is sufficient for full receptor activation (Huang et al., 2011). Third, agonist binding is accompanied by a decrease in separation between the C-terminal ends of extracellular domains. This will likely result in rearrangement of the transmembrane domain dimer for receptor activation. Indeed, FRET and crosslinking studies have detected movement between interacting transmembrane domains of mGluRs and GABAB receptor upon activation (Matsushita et al., 2010; Tateyama et al., 2004; Xue et al., 2015). In conclusion, agonist-induced VFT closure that leads to the specific association of membrane-proximal domains is a common mechanism shared by all class C GPCRs during ligand-dependent receptor activation.
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 The extracellular domain of human CaSR (1–612) was cloned into the pFBDM vector (Berger et al., 2004) for expression in baculovirus-infected insect cells. Wild-type CaSR was heavily glycosylated, and we took two approaches to remove carbohydrates from CaSR ECD: (1) elimination of potential glycosylation sites through mutation, and (2) enzymatic deglycosylation.
 
@@ -226,7 +410,7 @@ Wild-type and mutant CaSR ECD were secreted from sf9 insect cells infected with 
 
 We applied an enzymatic deglycosylation procedure to wild-type receptor and the CaSR ECD mutant with two glycosylation-site mutations. Each construct was expressed in sf9 cells in the presence of the N-glycosylation processing inhibitor kifunensine (1 mg/L) to produce high mannose glycoproteins that were sensitive to enzymatic cleavage by endoglycosidase H (Endo H). The cell supernatant was applied to an M2 anti-Flag antibody affinity column, and the bound CaSR ECD protein was eluted with 100 µg/ml Flag peptide in 50 mM Tris, pH 7.5 and 150 mM NaCl. Well-folded CaSR ECD was separated from aggregates by gel filtration chromatography in 20 mM Tris, pH 8.0, and 150 mM NaCl. The CaSR ECD protein was subsequently digested overnight with Endo H in 50 mM Na Citrate, pH 5.5. The partially deglycosylated CaSR ECD protein was further purified by ion exchange chromatography in 20 mM Tris, pH8.0 using a linear salt gradient from 0 to 1 M NaCl. The protein purification and enzymatic deglycosylation procedures were performed either in the absence or presence of 2 mM CaCl2, which is within the normal range of Ca2+ concentrations in plasma.
 
-## Crystallization and data collection
+### Crystallization and data collection
 
 Wild-type CaSR ECD did not form well-diffracting crystals possibly because the presence of flexible and heterogeneous carbohydrates on the protein surface interfered with crystallization.
 
@@ -240,7 +424,7 @@ Multiple anomalous data sets were also collected at λ = 1.7712 Å for form 
 
 A total of four anomalous data sets were collected at low energy (λ=1.7712 Å) for L-Trp-bound form II crystals of CaSR ECD, each from a single crystal. The four data sets were processed individually by XDS (Kabsch, 2010) and CCP4 programs (Winn et al., 2011). The data set with the highest resolution limit (2.6 Å) was used to determine the active-state CaSR ECD structure in the presence of L-Trp and excess Ca2+. The four data sets were also scaled and merged for the calculation of anomalous difference Fourier maps.
 
-## Structure determination
+### Structure determination
 
 The structure of L-Trp-bound CaSR ECD in form II crystal was solved by molecular replacement. A two-fold non-crystallographic symmetry (NCS) axis was identified from the self-rotation function. Polyalanine models generated from the individual LB1 and LB2 domains of mGluR3 ECD structure (Muto et al., 2007) (PDB code: 2E4U) were used as search probes to locate the VFT modules of both CaSR ECD molecules in the crystal. After phase improvement by two-fold NCS-averaging, additional density appeared for the CR domain of CaSR ECD. A complete model of the CaSR ECD homodimer was developed through a succession of manual fittings and iterative refinement. The final model contained the CaSR ECD residues 20–119, 135–359 and 393–598 in one protomer, and residues 22–122, 136–360 and 392–602 in the other protomer. Each protomer contained eight intrasubunit disulfide bridges. Electron density was visible for carbohydrate residues (N-acetyl-glucosamine) attached to Asn90, Asn287, Asn488, Asn541 of one protomer, and Asn541 of its dimer partner. Finally, each protomer was also bound to one L-Trp ligand, four Ca2+ ions, and two PO43- ions. The Ca2+ and PO43- ions were identified by anomalous difference Fourier maps calculated using data collected at a wavelength of 1.7712 Å. We modeled PO43- as the anions in the CaSR ECD structure because they were major components of the crystallization solution. The anomalous scattering of Ca2+ at 1.75 Å has been used successfully to identify the Ca2+-binding sites in a voltage-gated calcium channel (Tang et al., 2014). Ramachandran analysis places 94.9% of all residues in favored regions and 0.28% in outlier regions.
 
@@ -250,7 +434,7 @@ The structure of partially deglycosylated CaSR ECD in form I crystal was solved 
 
 Molecular replacement searches were carried out using PHASER (McCoy et al., 2007). Model building was performed with COOT (Emsley and Cowtan, 2004). Structural refinement was executed using BUSTER (Roversi et al., 2000). Anomalous difference Fourier maps were calculated with PHENIX (Adams et al., 2010). Ramachandran statistics were obtained for each structure using MolProbity (Chen et al., 2010). Pairwise structural comparison was performed using LSQMAN (Novotny et al., 2004). Protein contacts were analyzed using the CCP4 program CONTACT (Collaborative Computational Project, 1994). Software installation support was provided by SBGrid (Morin et al., 2013).
 
-## Cell surface expression
+### Cell surface expression
 
 Full-length human CaSR was cloned into a pcDNA3.1(+) vector (Life Technologies, USA) for expression in human embryonic kidney (HEK) 293 cells. A Flag tag was inserted after the signal peptide of CaSR. Mutants of CaSR were constructed using the QuikChange mutagenesis system (Agilent Technologies, California, USA).
 
@@ -260,29 +444,33 @@ The cells were blocked with 5% milk, and then incubated with mouse anti-Flag M1 
 
 Most of the mutants were expressed on the cell surface at levels comparable to that of the wild-type receptor. The exceptions were R66H, R69E, I81M, T100I, N102I, and S417L, which reduced the surface expression of the mutant receptors to approximately 70–75% of the wild-type level.
 
-## Inositol phosphate measurement
+### Inositol phosphate measurement
 
 Measurement of inositol phosphate (IP) accumulation was carried out using the homogenous time-resolved fluorescence (HTRF) IP-one Tb kit (Cisbio Bioassays, USA). This assay quantifies the accumulation of inositol 1-monophosphate (IP1), a degradation product of inositol 1,4,5-triphosphate (IP3) that is stable in the presence of LiCl. Briefly, HEK293 T/17 cells were transiently transfected with wild-type or mutant full-length CaSR plasmids. The cells were stimulated with increasing concentrations of Ca2+ two days post transfection in a buffer containing 10 mM HEPES pH 7.4, 0.5 mM MgCl2, 4.2 mM KCl, 146 mM NaCl, 5.5 mM glucose, and 50 mM LiCl. The reaction mixture was then incubated with an IP1 analog coupled to a d2 fluorophore (acceptor) and an anti-IP1 monoclonal antibody labeled with Eu Cryptate (donor). The IP1 produced by cells upon activation of CaSR competes with IP1 coupled to the dye d2 for binding to the anti-IP1 antibody. The resulting FRET signal is inversely proportional to the concentration of IP1 in the sample. The fluorescence data was acquired at 620 and 665 nm using an EnVision plate reader (Perkin Elmer, USA) after laser excitation at 320 nm. The FRET signal was calculated as the fluorescence ratio (665 nm/620 nm). Basal activity was determined in the absence of Ca2+ stimulation. The percent stimulation of each receptor mutant was calculated based on the wild-type response obtained under the same condition. Data analysis was performed using the non-linear regression algorithms in Prism (GraphPad Software, USA). Data points represent average ± s.e.m. of triplicate measurements.
 
 The effect of anion on Ca2+-stimulated IP accumulation was determined using SO42- instead of PO43- because of the modest solubility of CaHPO4 (1.5 mM), the predominant form of calcium phosphate salt at physiological pH (7.4). Specifically, dose-dependent Ca2+-induced IP accumulation was measured in the absence and presence of 10 mM Li2SO4 in the reaction buffer.
 
-## Intracellular Ca2+ flux measurement
+### Intracellular Ca2+ flux measurement
 
 Measurement of intracellular Ca2+ mobilization was performed using a FLIPR Fluorescent Imaging Plate Reader (FLIPR) Calcium Assay kit (Molecular Devices). Briefly, HEK293 cells were transiently transfected with wild-type or mutant full-length CaSR plasmids and cultured overnight. The cells were incubated in a loading medium containing 50% Opti-MEM, 50% Ca2+-free Hank’s balanced salt solution, 2.5% fetal bovine serum, 20 mM HEPES pH 7.4, 2.5 mM probenecid and 2 µM fluorescent Ca2+ indicator Fluo-4 AM (Life Technologies) for 1 hr, and then placed into the FLIPR. CaCl2 (prepared in Hank’s balanced salt solution and 20 mM HEPES, pH 7.4) was added at 10 s, and changes in fluorescence were monitored over a period of 250 s following excitation at a wavelength of 488 nm and detection at 510–560 nm. Data analysis was performed using the non-linear regression algorithms in Prism (GraphPad Software). Data points represent average ± s.e.m. of triplicate measurements.
 
 To measure the potentiating effect of L-Trp on the response of CaSR to extracellular Ca2+, HEK293 cells were transiently transfected with wild-type CaSR plasmid and cultured for 48 hr. The cells were washed three times with an assay buffer (20 mM HEPES, pH 7.4, 1 mM CaCl2, 1 mM MgCl2, 1 mg/ml BSA, 5.5 mM D-glucose, 5.3 mM KCl, 138 mM NaCl, 4.2 mM NaHCO3, 0.44 mM KH2PO4, 0.34 mM Na2HPO4) to remove any endogenously bound ligand, and pre-incubated with 10 mM L-Trp for 20 min before stimulation with extracellular Ca2+.
 
-## Single-cell intracellular Ca2+ microfluorimetry
+### Single-cell intracellular Ca2+ microfluorimetry
 
 HEK293 cells that stably expressed the CaSR (HEK-CaSR cells) were cultured on coverslips in 24-well plates, and loaded in the dark with fura2-AM (5 µM) in physiological saline solution (PSS; 125 mM NaCl, 4 mM KCl, 0.1% w/v D-glucose, 1 mM MgCl2, 20 mM HEPES-NaOH, pH 7.45) that contained 1 mM CaCl2, 0.8 mM NaH2PO4 and 1 mg/ml BSA for 1.5 hr at 37°C. The cells were washed and stored in a fura2-AM-free loading solution prior to experiments. Fura2-loaded HEK-CaSR cells were transferred into a perifusion chamber, placed in the light path of a Zeiss Axiovert fluorescence microscope (Zeiss, USA), and perifused with PSS containing various concentrations of Ca2+ and L-Trp.
 
 Fura2-loaded HEK-CaSR cells were excited by a Lambda DG-4 150 Watt xenon light source (Sutter, Novato, USA), using alternating wavelengths of 340 and 380 nm at 0.5 s intervals, and imaged at 510 nm. For each data set, regions of interest corresponding to the locations of 10 individual cells were selected and digital images were captured using an AxioCam camera controlled by Stallion SB.4.1.0 PC software (Intelligent Imaging Innovations, USA).
 
-Single-cell intracellular Ca2+ mobilization data consisted of excitation ratios (F340/F380) plotted against time (min). Ratio data were integrated, expressed as integrated response units (IRUs), and corrected for baseline (PSS containing 0.5 mM Ca2+). Concentration-dependent response data were fitted to the equation:R=b+(a−b)Cn/(en+Cn)
+Single-cell intracellular Ca2+ mobilization data consisted of excitation ratios (F340/F380) plotted against time (min). Ratio data were integrated, expressed as integrated response units (IRUs), and corrected for baseline (PSS containing 0.5 mM Ca2+). Concentration-dependent response data were fitted to the equation:
+
+$$
+R=b+(a−b)C^{n}/(e^{n}+C^{n})
+$$
 
 in which: a = maximum response; b = basal response; C = activator concentration; e = EC50 in mM; and n = Hill co-efficient. Estimates of curve-fitting parameters were obtained using Prism (GraphPad Software).
 
-## Scintillation proximity assay
+### Scintillation proximity assay
 
 Wild-type CaSR ECD protein was purified by anti-Flag M2 antibody affinity chromatography and gel filtration chromatography in the absence of additional CaCl2 and amino acids. The protein was incubated in 100 mM NaCitrate, pH 5.5 overnight to remove any endogenously bound ligand. The CaSR ECD protein was then separated from any free ligand by gel filtration chromatography in 20 mM HEPES, pH 8.0 and 150 mM NaCl.
 

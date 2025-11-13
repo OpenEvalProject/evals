@@ -25,7 +25,7 @@
 
 ## Abstract
 
-Pain is the most prominent symptom of osteoarthritis (OA) progression. However, the relationship between pain and OA progression remains largely unknown. Here we report osteoblast secret prostaglandin E2 (PGE2) during aberrant subchondral bone remodeling induces pain and OA progression in mice. Specific deletion of the major PGE2 producing enzyme cyclooxygenase 2 (COX2) in osteoblasts or PGE2 receptor EP4 in peripheral nerve markedly ameliorates OA symptoms. Mechanistically, PGE2 sensitizes dorsal root ganglia (DRG) neurons by modifying the voltage-gated sodium channel Na V 1.8, evidenced by that genetically or pharmacologically inhibiting Na V 1.8 in DRG neurons can substantially attenuate OA. Moreover, drugs targeting aberrant subchondral bone remodeling also attenuates OA through rebalancing PGE2 production and Na V 1.8 modification. Thus, aberrant subchondral remodeling induced Na V 1.8 neuronal modification is an important player in OA and is a potential therapeutic target in multiple skeletal degenerative diseases.
+Pain is the most prominent symptom of osteoarthritis (OA) progression. However, the relationship between pain and OA progression remains largely unknown. Here we report osteoblast secret prostaglandin E2 (PGE2) during aberrant subchondral bone remodeling induces pain and OA progression in mice. Specific deletion of the major PGE2 producing enzyme cyclooxygenase 2 (COX2) in osteoblasts or PGE2 receptor EP4 in peripheral nerve markedly ameliorates OA symptoms. Mechanistically, PGE2 sensitizes dorsal root ganglia (DRG) neurons by modifying the voltage-gated sodium channel NaV1.8, evidenced by that genetically or pharmacologically inhibiting NaV1.8 in DRG neurons can substantially attenuate OA. Moreover, drugs targeting aberrant subchondral bone remodeling also attenuates OA through rebalancing PGE2 production and NaV1.8 modification. Thus, aberrant subchondral remodeling induced NaV1.8 neuronal modification is an important player in OA and is a potential therapeutic target in multiple skeletal degenerative diseases.
 
 ## Introduction
 
@@ -41,41 +41,73 @@ In this study, we take the initiative to show that aberrant subchondral bone rem
 
 ## Results
 
-## NaV1.8 was modified in the subchondral bone and mediate OA progression
+### NaV1.8 was modified in the subchondral bone and mediate OA progression
 
 To identify the primary voltage-gated sodium channel in subchondral sensory fibers that responsible for mechanical hypersensitivity during OA progression, we tested the expression levels of different sensory related sodium channel NaVs in OA mice post anterior cruciate ligament transection (ACLT). The transcription levels of mRNAs that encode NaVs in DRG including NaV1.1, NaV1.2, NaV1.3, NaV1.6, NaV1.7, NaV1.8, NaV1.9 were measured by qPCR using mRNA isolated from mouse ipsilateral L3-5 DRGs one month post-ACLT or sham surgery. Compares to the sham-operated group, the expression of mRNA encoding NaV1.8 increased 2.5 folds in the ACLT group as the highest upregulation among all the NaVs. The mRNAs encoding NaV1.7 and NaV1.9 showed moderate upregulation in the ACLT group relative to that of the Sham group while the changes of NaV1.1 NaV1.2 NaV1.3 or NaV1.6 were not detected (Figure 1a). Therefore, we further investigated NaV1.8 protein expression in the immune-histological analysis of OA subchondral bone. The intensity of NaV1.8 immunofluorescence in subchondral bone was also elevated about 2 to 3 folds in OA mice compared to sham- operated mice one- or two-months post-surgery (Figure 1b and c). To examine whether the increase of NaV1.8 expression is limited to in a certain subtype(s) of the DRG neuron that innervates subchondral bone in OA mice, NaV1.8 was co-stained with different markers for sensory nerve subtypes based on the current classification of DRG neurons (Usoskin et al., 2015). The expression rate of NaV1.8 in total nerve fibers (labeled by pan neuron marker PGP9.5) innervated in subchondral bone significantly increased post-ACLT (Figure 1—figure supplement 1a,f). Moreover, the elevated NaV1.8 expression was highly co-localized with the peptidergic nociceptor marked by calcitonin gene-related peptide (CGRP) (Brain et al., 1985; Figure 1—figure supplement 1b,f) and mechanosensitive low-threshold mechanoceptors (labeled by PIEZO2) (Eijkelkamp et al., 2013). The expression of NaV1.8 was also slightly elevated in the synovium (Figure 1—figure supplement 1f 1 hr, j). Both western blot analysis (Figure 1f) and immunostaining (Figure 1—figure supplement 1f 1 g, i) of ipsilateral lumbar 3–5 DRG confirmed the upregulation of NaV1.8 expression at the DRG level. We then further validated whether DRG neurons with upregulated NaV1.8 expression directly innervates fibers in the subchondral bone. We injected a neurophilic fluorescent dye (DiI) into the subchondral bone to label the distal nerve fibers (Ferreira-Gomes et al., 2010). We found that the NaV1.8+ neurons labeled by DiI significantly increased in the DRG neurons of OA rats relative to sham-operated rats (Figure 1g,h), indicating that DiI was transported into DRG neurons by the sensory fibers innervated subchondral bone in a retrograde manner. These results suggest that the expression of pain-related sodium channel NaV1.8 is upregulated in DRG neurons and their axons that innervate subchondral bone during progression. We then examined the association between NaV1.8 neuronal activity and OA pain. Von Frey test showed that the hind paw withdrawal threshold (HPWT) dropped nearly 60% and maintained at this level throughout the two month-period post ACLT relative to the sham-operated group, suggesting that development of mechanical allodynia in OA mice (Figure 1g; Chen et al., 2017). To assess the potential role of NaV1.8 in DRG neuronal excitability, we used an in vivo DRG imaging in PirtGCaMP3fl/-mice that we recently developed. In this genetically targeted mice, genetic-encoded Ca2+ indicator GCaMP3 is specifically expressed in >95% of all DRG neurons under the control of the Pirt promoter. In the PirtGCaMP3fl/-mice, the excitability of the nociceptive neurons in DRG can be visualized by fluorescence signals of calcium influx. The number of excited DRG neurons ipsilateral to the surgery significantly increased in OA mice compared to sham-operated mice, and importantly, administration of NaV1.8 inhibitor (A-803467)(Jarvis et al., 2007) blunted the signal in DRG (Figure 1h and i). To validate the excitation of DRG neurons related to NaV1.8, we performed patch-clamp in the DRG neurons that were isolated from mice that underwent ACLT or sham surgery. The action potential number and NaV1.8 current density significantly elevated in ACLT mice relative to sham-operated mice, and the elevations were blocked by A-803467 (Figure 1j–l, Figure 1—figure supplement 1f 1 k and l). Thus, the activation of NaV1.8 mediates OA pain related DRG neuron hypersensitivity.
 
-## Excessive PGE2 secreted by osteoblasts modifies NaV1.8 for OA
+![Figure 1.](https://cdn.elifesciences.org/articles/57656/elife-57656-fig1-v2.jpg)
+
+**Figure 1.:** (a) Heatmap of relative expression levels of NaV channels in ipsilateral L3-L5 DRGs after sham or ACLT surgery. (b, c) Immunostaining of NaV1.8+ (green) nerve fibers (b) and statistical analysis (c) in mouse tibial subchondral bone after sham or ACLT surgery at 1 m and 2 m. Scale bars, 20 μm, n = 6 per group. (d, e) Immunostaining of NaV1.8+ (green) nerve fibers (d) and statistical analysis (e) in ipsilateral sciatic nerve after sham or ACLT surgery at 1 m. Scale bars, 40 μm, n = 6 per group. (f) Western blots of NaV1.8 in mouse ipsilateral L3-5 DRGs 1 month post sham or ACLT surgery. the experiment was repeated three times and a representative result was chosen. (g, h) Retrograde tracing of Nav1.8 (green) and DiI (red) and DAPI (blue) double-labeled neurons (g) and percentage of double labeled neurons (h) in ipsilateral L4 DRG of rat after sham or ACLT surgery in 3 m. Scale bar, 80 μm. n = 6 per group. **p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group at different time points. Statistical significance was determined by multifactorial ANOVA WITH BONFERRONI POST HOC TEST (c, k, l), unpaired Student’s t test (e an i) and all data are shown as scattered plots with means ± standard deviations. (h, i) Representative photomicrographs (h) and statistically analysis of activated neurons (i) in ipsilateral L4 DRG using in vivo Pirt-GCaMP3 imaging treated before or after A803467 1 month post sham or ACLT surgery. n = 6 per group. (j–l) Representative traces of Aps (j upper), maximal current density (j lower), statistical analysis of AP numbers (k) and NaV1.8 currents (l) of DRG 1 month post sham or ACLT. **p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group at different time points. Statistical significance was determined by multifactorial ANOVA WITH BONFERRONI POST HOC TEST (c, k, l), unpaired Student’s t test (e an i) and all data are shown as scattered plots with means ± standard deviations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57656/elife-57656-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a–f) Representative photographs showing NaV1.8 colocalization with PGP9.5 (a), CGRP (b), NF200 (c), P2 × 3 (d), PIEZO2 (e) and statistical analysis (f) in tibial subchondral bone in mice 4 weeks after ACLT or sham surgery. scale bar, 20 μm, n = 6 per group. (g–h) Representative photographs of NaV1.8 expression in DRGs (g) and synovial tissue (h) in mice 4 weeks after ACLT or sham surgery. scale bar, 50 μm (g), 20 μm (h). (i–j) Statistical analysis data of NaV1.8 expression in DRGs (i) and synovial tissue (j) in mice 4 weeks after ACLT or sham surgery. (k–i) Representative photographs of Aps (k) and NaV1.8 (green), PGP9.5 (red) and DAPI (blue) colocalization (l) in cultured DRG neurons treated with PGE2 (1 μM) or PBS. scale bar, 20 μm (left), 5 μm (right), experiments were repeated three times. *p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group or healthy donors at different time points. Statistical significance was determined by unpaired Student’s t test (f, i and j), and all data are shown as scattered plots with means ± standard deviations.
+
+### Excessive PGE2 secreted by osteoblasts modifies NaV1.8 for OA
 
 We then examined the mechanism of upregulation of NaV1.8 expression during OA progression. To examine whether excessive PGE2 contributes to the upregulation of NaV1.8, we firstly performed immunostaining of cyclooxygenase 2 (Cox2) in subchondral bone sections. Cox2 expression was significantly increased in subchondral bone and primarily in osteocalcin positive osteoblastic cells post ACLT mice compared with sham-operated mice (Figure 2a and b). Consistently, PGE2 concentration in subchondral bone increased about three times in OA mice relative to sham-operated mice (Figure 2c, Figure 2—figure supplement 1a–d). To examine if elevated PGE2 upregulates the expression of NaV1.8 for the mechanical allodynia in OA, we generated osteoblast specific Cox2 deficient mice (Cox2Oc-/- mice) by crossbreeding Cox2fl/fl mice with Bglap-Cre mice. PGE2 concentration in subchondral bone was significantly lower in Bglap-Cre::Cox2fl/fl mice compared with Cox2fl/fl mice post ACLT (Figure 2h). Notably, the NaV1.8 immunofluorescence intensity in subchondral bone immunostaining was also significantly reduced in Bglap-Cre::Cox2fl/fl mice compared with Cox2fl/fl mice (Figure 2d and i). In addition, the number of NaV1.8+ neurons in DRG was also significantly decreased (Figure 2e and j) in the Bglap-Cre::Cox2fl/fl mice relative to Cox2fl/fl mice. We then investigated whether a decrease of PGE2 alleviates OA pain. We crossed Bglap-Cre::Cox2fl/fl mice with Pirt GCaMP3fl/- mice to measure the DRG neuronal excitability in Bglap-Cre::Cox2fl/fl::Pirt GCaMP3fl/- mice post ACLT. Pirt-GCaMP3 DRG imaging showed that the number of excited neurons was significantly reduced in Bglap-Cre::Cox2fl/fl::PirtGCaMP3fl/- mice compared with Cox2fl/fl::Pirt GCaMP3fl/- mice post ACLT (Figure 2f and k). Moreover, the single neuron excitability in ipsilateral L4 DRG was functionally tested by whole cell patch clamp electrophysiology. The whole cell current clamp revealed that the action potential firing number was significantly decreased in Bglap-Cre::Cox2fl/fl mice compared with Cox2fl/fl mice after ACLT (Figure 2g and l). Concurrently, the NaV1.8 current density was reduced for about 40% recorded by the whole-cell voltage-clamp (Figure 2g and m). The mechanical allodynia was simultaneously attenuated in Bglap-Cre::Cox2fl/flmice relative to Cox2fl/fl mice as revealed by the Von Frey behavior test (Figure 2n). Catwalk analysis also showed that the Maximal Contact At and Maximal Intensity of ipsilateral hind paw was significantly higher in Bglap-Cre::Cox2fl/fl mice compared with Cox2fl/fl mice post ACLT (Figure 2o). Thus, PGE2 derived from osteoblastic cells stimulates the pain hypersensitivity in OA mice likely by upregulating of NaV1.8 in subchondral nociceptive neurons.
 
-## PGE2 signals through the EP4 receptor to sensitize sensory nerves in OA subchondral bone
+![Figure 2.](https://cdn.elifesciences.org/articles/57656/elife-57656-fig2-v2.jpg)
+
+**Figure 2.:** (a,b) Representative pictures (a) and statistical analysis (b) of OCN and Cox2 co-stained cells of murine tibial subchondral bone after sham or ACLT surgery and 1 m. Scale bars, 50 μm (left) and 10 μm (right), n = 6 per group. (c) Relative concentration of subchondral PGE2 compared with total protein concentration before and after ACLT. (e–g) Nav1.8 (green) immunostaining in subchondral bone (d), NeuN (red), NaV1.8 (green) and DAPI (blue) co-immunostaining in ipsilateral L4 DRG (e), Activated neurons in ipsilateral L4 DRG using in vivo Pirt-GCaMP3 imaging (f) and AP traces and NaV currents (g) after sham or ACLT surgery at 1 m. Scale bars, 20 μm (h), 100 μm (e, f). (h–o) Statistical analysis of subchondral PGE2 concentration (h), NaV1.8 immunofluorescence signal in subchondral bone (i), number of NeuN, Nav1.8 co-immunostained neurons in ipsilateral L4 DRG (j), number of activated neurons in ipsilateral L4 DRG using in vivo Pirt-GCaMP3 imaging (k), AP traces (l) and NaV currents (m), Catwalk gait analysis (n) and left HPWT (o) after sham or ACLT surgery. n = 6 per group, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group at different time points. Statistical significance was determined by multifactorial ANOVA WITH BONFERRONI POST HOC TEST (h) or unpaired Student’s t test (b, c, h–m and o), and all data are shown as scattered plots with means ± standard deviations.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57656/elife-57656-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a, b) Representative photos of knee joint Safranin Orange and fast green staining (a) and statistical analysis (b) in Bglap-Cre::Cox2fl/fl or Cox2fl/f mice 4 weeks after sham or ACLT surgery at 1 m. Scale bars, 500 μm. (c, d) Statistical analysis of BV/TV (c) and Tb. Pf (d) in Bglap-Cre::Cox2fl/f mice 4 weeks after sham or ACLT surgery at 1 m. n = 6 per group. (e, f) Representative photos of knee joint Safranin Orange and fast green staining (e) and statistical analysis (f) in Avil-Cre::Ptger4fl/fl or Ptger4fl/fl mice 4 weeks after sham or ACLT surgery at 1 m. Scale bars, 500 μm. (g, h) Statistical analysis of BV/TV (g) and Tb. Pf (h) in Ptger4Avi-/- mice 4 weeks after sham or ACLT surgery at 1 m. n = 6 per group. (i) western blot of EPs knockdown on the effect of Nav1.8 upregulation after PGE2 stimulation in DRG. *p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group or healthy donors at different time points. Statistical significance was determined by unpaired Student’s t test (b, c, d, f, g and h), and all data are shown as scattered plots with means ± standard deviations.
+
+### PGE2 signals through the EP4 receptor to sensitize sensory nerves in OA subchondral bone
 
 To examine whether EP4 at sensory neurons is the primary receptor that propagates PGE2 signals in upregulating NaV1.8and OA pain, we specifically knocked out EP4, the skeletal pain related receptor for PGE2 (Yoshida et al., 2002), in peripheral sensory nerves by crossbreeding Advillin-Cre (Avil-Cre) (Zurborg et al., 2011) mice with Ptger4 fl/fl mice (Ptger4 is the gene that encodes EP4 receptor). Consistently with Bglap-Cre::Cox2fl/fl mice, the intensity of NaV1.8 immunofluorescence was significantly reduced in Avil-Cre::Ptger4 fl/fl mice compared with Ptger4 fl/fl mice post-ACLT (Figure 3a,d, Figure 2—figure supplement 1e–h). We then further confirm this finding in DRG neurons that cultured in PGE2. We found that NaV1.8 protein expression was significantly reduced by siRNA against EP4 in western blot analysis of levels from the cell lysates. Knocking-down the expression of EP1-EP3 did not have a significant effect on Nav1.8 expression (Figure 2—figure supplement 1i). To determine the effect of conditional deletion of EP4 on DRG neuronal excitability, we generated Avil-Cre::Ptger4 fl/fl::Pirt - GCaMP3fl/- and Ptger4 fl/fl::Pirt GCaMP3fl/- ACLT mice. In vivo ipsilateral L4 DRG Pirt GCaMP3 imaging demonstrated significantly dampened excitability in the Ptger4 fl/fl:: Pirt - GCaMP3fl/- mice relative to the control group (Figure 3b and e). The patch-clamp analysis further revealed that the DRG neuronal hypersensitivity and NaV1.8 currents were significantly reduced in Avil-Cre::Ptger4 fl/fl mice relative to Ptger4 fl/fl mice post-ACLT (Figure 3c,f,g). Moreover, both Von Frey test and catwalk analysis showed attenuation of OA pain when EP4 is conditionally deleted in sensory neurons (Figure 3h and i). Thus, the EP4 receptor expressed in DRG neurons is responsible for the propagation of subchondral PGE2-induced upregulation of NaV1.8 and neuronal excitability in OA mice.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/57656/elife-57656-fig3-v2.jpg)
 
-**Figure 3.:** V1.8 expression and ameliorated mechanical allodynia in Avil-Cre::Ptger4 ACLT mice.fl/fl(a, b) NaV1.8 immunostaining in subchondral bone (a), Activated neurons in ipsilateral L4 DRG using in vivo Pirt-GCaMP3 imaging (b) after sham or ACLT surgery at 1 m. Scale bars, 20 μm (a), 100 μm (b). (c) Representative traces of action potentials (upper) and Nav1.8 currents (lower) of ipsilateral L3-5 DRG neurons after sham or ACLT surgery at 1 m. (d–i) Statistical analysis of Nav1.8 immunofluorescence signal in subchondral bone (d), number of activated neurons in ipsilateral L4 DRG using in vivo Pirt-GCaMP3 imaging (e), AP traces (f), max Nav1.8 current density (g), catwalk gait analysis (h) and left hindpaw PWT (i) after sham or ACLT surgery. n = 6 per group, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group at different time points. Statistical significance was determined by multifactorial ANOVA WITH BONFERRONI POST HOC TEST (i) or unpaired Student’s t test (d–h), and all data are shown as scattered plots with means ± standard deviations.Figure 3—source data 1.GcAMP3 imaging, and electrophysiological recordings.
+**Figure 3.:** (a, b) NaV1.8 immunostaining in subchondral bone (a), Activated neurons in ipsilateral L4 DRG using in vivo Pirt-GCaMP3 imaging (b) after sham or ACLT surgery at 1 m. Scale bars, 20 μm (a), 100 μm (b). (c) Representative traces of action potentials (upper) and Nav1.8 currents (lower) of ipsilateral L3-5 DRG neurons after sham or ACLT surgery at 1 m. (d–i) Statistical analysis of Nav1.8 immunofluorescence signal in subchondral bone (d), number of activated neurons in ipsilateral L4 DRG using in vivo Pirt-GCaMP3 imaging (e), AP traces (f), max Nav1.8 current density (g), catwalk gait analysis (h) and left hindpaw PWT (i) after sham or ACLT surgery. n = 6 per group, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group at different time points. Statistical significance was determined by multifactorial ANOVA WITH BONFERRONI POST HOC TEST (i) or unpaired Student’s t test (d–h), and all data are shown as scattered plots with means ± standard deviations.
 
-## PGE2 stimulates NaV1.8 transcription by inducing the binding of pCREB to NaV1.8 promoter
+### PGE2 stimulates NaV1.8 transcription by inducing the binding of pCREB to NaV1.8 promoter
 
 To investigate the mechanism of PGE2 stimulated upregulation of NaV1.8 expression, RT-qPCR was performed with mRNA isolated from primary DRG neurons treated with PGE2. The result showed that NaV1.8 transcription levels were significantly elevated at 6 and 12 hr after incubation with PGE2 (Figure 4a). Moreover, PGE2 stimulated phosphorylation of protein kinase A (PKA) (Gold et al., 1998) and cAMP response element-binding protein (Creb1) (Lonze and Ginty, 2002; Figure 4b). Notably, the effect of PGE2 and Forskolin, a cAMP stimulant in the upregulation of NaV1.8 protein expression was dampened by Creb1 inhibitor 666–15 (Figure 4c), indicating PGE2 stimulates Nav1.8 expression through the PKA-Creb1 signaling pathway. Consistently, the neuronal excitability and NaV1.8 current density stimulated by PGE2 was abolished by the application of PKA inhibitor (PKI) or CREB inhibitor 666–15 (Figure 4d–f). Co-immunofluorescence staining further demonstrated that PKA levels significantly increased in NaV1.8 positive DRG neurons in ACLT mice compared with sham-operated mice (Figure 4g and h). To examine the mechanism of PGE2-induced NaV1.8 transcription, we performed chromatin immunoprecipitation (ChIP) assay with three potential pCreb1-binding elements in the NaV1.8 promoter. ChIP assay revealed that pCreb1 binds to the NaV1.8 promoter at binding site two to stimulate transcription of NaV1.8 gene (Figure 4i–k). Taken together, our findings reveal that PGE2 induces transcription of NaV1.8 by stimulation phosphorylation PKA and pCreb1, which directly binds to NaV1.8 promoter.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/57656/elife-57656-fig4-v2.jpg)
 
-**Figure 4.:** V1.8 through PKA signaling.(a) RT-QPCR analysis of Nav1.8 in cultured lumbar DRG neurons treated with PGE2 (1 μM) for 2–12 hr. n = 6 per group. (b) Representative of western blots of PKA-c, CREB and p-CREB in cultured lumbar DRG neurons treated with PGE2 (1 μM) for 40–160 min. (c) Representative of western blots of the Nav1.8 in cultured lumbar DRG neurons treated with PGE2 (1 μM), forskolin (10 μM), or 666–15 (1 μM) for 6 hr. Representative traces of action potentials (d, upper) and Nav1.8 currents (d, lower) and statistical analysis of maximal Nav1.8 current density (f) of cultured lumbar DRG neurons after sham or ACLT surgery at 1 m. n = 6 per group. (e, f) Co-immunostaining of NeuN and Nav1.8 (g) and statistical analysis of merged cell numbers (h) in ipsilateral L4 DRGs after sham or ACLT surgery at 1 m. n = 6 per group.(i–k) ChIP experiment showing putative primers (i), PCR (j) and gel running results (k) of NaV1.8 promoter, the experiments were repeated three times. n.s, non significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group at different time points. Statistical significance was determined by multifactorial ANOVA WITH BONFERRONI POST HOC TEST (a, e and f), unpaired Student’s t test (h), all data are shown as scattered plots with means ± standard deviations.Figure 4—source data 1.Figure 4—source data 2.Figure 4b.Figure 4—source data 3.Figure 4c.Figure 4—source data 4.Figure 4k.
+**Figure 4.:** (a) RT-QPCR analysis of Nav1.8 in cultured lumbar DRG neurons treated with PGE2 (1 μM) for 2–12 hr. n = 6 per group. (b) Representative of western blots of PKA-c, CREB and p-CREB in cultured lumbar DRG neurons treated with PGE2 (1 μM) for 40–160 min. (c) Representative of western blots of the Nav1.8 in cultured lumbar DRG neurons treated with PGE2 (1 μM), forskolin (10 μM), or 666–15 (1 μM) for 6 hr. Representative traces of action potentials (d, upper) and Nav1.8 currents (d, lower) and statistical analysis of maximal Nav1.8 current density (f) of cultured lumbar DRG neurons after sham or ACLT surgery at 1 m. n = 6 per group. (e, f) Co-immunostaining of NeuN and Nav1.8 (g) and statistical analysis of merged cell numbers (h) in ipsilateral L4 DRGs after sham or ACLT surgery at 1 m. n = 6 per group.(i–k) ChIP experiment showing putative primers (i), PCR (j) and gel running results (k) of NaV1.8 promoter, the experiments were repeated three times. n.s, non significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group at different time points. Statistical significance was determined by multifactorial ANOVA WITH BONFERRONI POST HOC TEST (a, e and f), unpaired Student’s t test (h), all data are shown as scattered plots with means ± standard deviations.
 
-## The deletion of NaV1.8 in sensory nerve attenuates OA
+### The deletion of NaV1.8 in sensory nerve attenuates OA
 
 We next tested whether the deletion of NaV1.8+ neurons could attenuate OA pain. Scn10a -Cre mice were crossed with Rosa26iDTRfl/fl mice to generate Scn10a -Cre:: Rosa26iDTRfl/fl mice. In these mice, the NaV1.8+ neurons underwent apoptosis upon receiving the injection of diphtheria toxin (Buch et al., 2005). The ablation of NaV1.8+ neurons had no effect on the articular cartilage deterioration, as shown by similar OARSI scores between Scn10a -Cre:: Rosa26iDTRfl/fl mice and Rosa26iDTRfl/fl mice post-ACLT (Figure 5a,e). The efficacy of specific neuron ablation was evidenced by a significant reduction of NaV1.8+ signals at both subchondral bone and DRG level (Figure 5b,c,f,g). Consistently, the DRG hypersensitivity was reduced as indicated by a decreased AP firing (Figure 5d and h). We further investigated whether the ablation of NaV1.8+ sensory neurons reduces the pain in OA mice by catwalk gait analysis (Lakes and Allen, 2016). The results showed that max intensity, which reflected mechanical pain sensitivity (Kameda et al., 2017), was increased in Scn10a -Cre:: Rosa26iDTRfl/fl mice (Figure 5i). Similarly, the Von Frey test displayed a significant reduction of HPWT in Scn10a -Cre:: Rosa26iDTRfl/fl mice compared with Rosa26iDTRfl/fl mice after ACLT (Figure 5j). Taken together, the Scn10a -Cre:: Rosa26iDTRfl/fl mice indicates that specific ablation NaV1.8 can alleviate OA pain in OA mice.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/57656/elife-57656-fig5-v2.jpg)
 
-**Figure 5.:** Scn10a-Cre::Rosa26 ACLT mice.iDTRfl/fl(a–d) Representative photos of knee joint Safranin Orange and fast green staining (a), Nav1.8 (green) and DAPI (blue) immunofluorescence in subchondral bone (b) and NeuN (red, Nav1.8 (green) and DAPI (blue) co-immunostaining of ipsilateral L4 DRGs (c) and APs (d) after sham or ACLT surgery at 1 m. Scale bars, 500 μm (a), 20 μm (b) and 100 μm (c), n = 6 per group. (e–j) Statistical analysis of OARSI score (e), Nav1.8 immunofluorescence signal in subchondral bone (f), number of NeuN, Nav1.8 co-immunostained neurons in ipsilateral L4 DRG (g), number of AP (h), catwalk gait analysis (i) and left hindpaw PWT (j) after sham or ACLT surgery. n = 6 per group, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group at different time points. Statistical significance was determined by multifactorial ANOVA WITH BONFERRONI POST HOC TEST (e–h and j) or unpaired Student’s t test (i), and all data are shown as scattered plots with means ± standard deviations.Figure 5—source data 1.
+**Figure 5.:** (a–d) Representative photos of knee joint Safranin Orange and fast green staining (a), Nav1.8 (green) and DAPI (blue) immunofluorescence in subchondral bone (b) and NeuN (red, Nav1.8 (green) and DAPI (blue) co-immunostaining of ipsilateral L4 DRGs (c) and APs (d) after sham or ACLT surgery at 1 m. Scale bars, 500 μm (a), 20 μm (b) and 100 μm (c), n = 6 per group. (e–j) Statistical analysis of OARSI score (e), Nav1.8 immunofluorescence signal in subchondral bone (f), number of NeuN, Nav1.8 co-immunostained neurons in ipsilateral L4 DRG (g), number of AP (h), catwalk gait analysis (i) and left hindpaw PWT (j) after sham or ACLT surgery. n = 6 per group, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group at different time points. Statistical significance was determined by multifactorial ANOVA WITH BONFERRONI POST HOC TEST (e–h and j) or unpaired Student’s t test (i), and all data are shown as scattered plots with means ± standard deviations.
 
-## Improvement of subchondral bone structure downregulates NaV1.8 and attenuates OA progression
+### Improvement of subchondral bone structure downregulates NaV1.8 and attenuates OA progression
 
 We previously showed that inhibition of excessive TGF-β activity attenuated OA progression by restringing the coupling of subchondral bone remodeling (Figure 6—figure supplement 1a–n, Figure 6—figure supplement 2 4a-e). We have developed a small molecule drug by conjugating TGF-β type I receptor kinase inhibitor (TβR1I) covalently with alendronate through a metabolically cleavable carbamate linkage (Qin et al., 2018). The conjugate is effectively delivered to the bone surface where TβR1I is released by cleavage of the carbamate linkage in vivo. (Figure 6—figure supplement 3a). Administration of the conjugate in human MSCs effectively inhibited TGF-β signaling evidenced by a significant reduction of pSMAD2/3 (Figure 6—figure supplement 3b and c). As excessive PGE2 production and subsequent upregulation of Nav1.8 are triggered by abnormal bone remodeling, we investigated whether conjugate treatment can alleviate OA pain by downregulates the activity of Nav1.8. As expected, the articular cartilage degeneration was attenuated with a weekly injection of conjugate 100 ug/kg in ACLT mice compared with the vehicle group, with a significant improvement of the OARSI score (Figure 6a and g). In concurrent with the cartilage protection, the subchondral bone microarchitecture was improved in μCT analysis of ACLT mice treated with the conjugate treatment compared with the vehicle group (Figure 6b and h, Figure 6—figure supplement 3f). As shown in Figure 6c and i, phosphorylation of Smad2/3 was effectively inhibited by the conjugate in the subchondral bone. The number of TRAP+ osteoclastic cells and Osterix+ pre-osteoblast were reduced (Figure 6—figure supplement 3e and g, Figure 6d and j). As a result, the BML in tibial subchondral bone was significantly reduced in the conjugate treated group (Figure 6f) further indicating that coupling of the osteoclast bone resorption and osteoblastic bone formation were restored.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/57656/elife-57656-fig6-v2.jpg)
+
+**Figure 6.:** (a–f) Representative photos of Safranin Orange and fast green staining (a), μCT 3D reconstruction (b), pSMAD2/3 (red) and DAPI (blue) immunostaining (c) Osterix immunostaining (d) Nav1.8 (green) and DAPI (blue) immunostaining (e) and T2 weighted fat suppression μMRI image showing bone marrow lesion (yellow arrows) (f) of murine tibial subchondral bone after sham or ACLT surgery at 1 m. Scale bars, 500 μm (a), 2 mm (b), 10 μm (c, d), 20 μm (e), and 5 mm (f), n = 6 per group. (g–l) Quantitative analysis of OARSI score (g), BV/TV (h), number of pSMAD2/3+ cells per mm2 (i) and number of Osterix+ cells per mm2 (j), relative pixel of Nav1.8 immunofluorescence signal (k) and subchondral PGE2 concentrations (l), after sham or ACLT surgery at 1 m. (m) Representative western blots of NaV1.8 and GAPDH of ipsilateral L3-5 DRG lysate, experiments were repeated three times. (n–p) Representative traces of Aps (n upper), maximal current density (n lower), statistical analysis of AP numbers (o) and NaV1.8 currents (p) of DRG 1 month post sham or ACLT. (q, r), left HPWT (q) and catwalk gait analysis (r) n = 6 per group, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group at different time points. Statistical significance was determined by multifactorial ANOVA WITH BONFERRONI POST HOC TEST (j, k, L, m, n, o, q and r) or unpaired Student’s t test (c), and all data are shown as scattered plots with means ± standard deviations.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57656/elife-57656-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a–g) Parameters of subchondral bone remodeling in OA progression. Safranin Orange and fast green staining (a), H and E staining (b), μCT 3D reconstruction (c), representatives of T2 weighted fat suppression μMRI image showing bone marrow lesion (yellow arrows) (d), pSMAD2/3 (green) immunostaining (e) and Osterix immunostaining (f) and TRAP staining (g) of murine tibial subchondral bone after sham or ACLT surgery at 1 m and 2 m. Scale bars, 500 μm (a, b), 2 mm (c), 5 mm (d), 10 μm (e–g), n = 6 per time point. (h–n) Quantitative analysis of OARSI score (h), number of pSMAD2/3+ cells per mm2 (i), number of Osterix+ cells per mm2 (j), number of TRAP+ cells per mm2 (k), TV (l), BV/TV (g) and Tb Pf (n) after sham or ACLT in 1 m, n = 6 per time point. *p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group or healthy donors at different time points. Statistical significance was determined by multifactorial ANOVA WITH BONFERRONI POST HOC TEST (h–n) and all data are shown as scattered plots with means ± standard deviations.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/57656/elife-57656-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a, b) Representative photographs (a) and statistical analysis (b) of TRAP staining in mice 1 month and 2 month after ACLT of sham surgery. scale bar, 50 μm, n = 6 per group. (c, d) μCT 3D analysis data: TV (c) and Tb. Pf (d) of mice knee subchondral bone 4 w after ACLT or sham surgery, n = 6 per group. (e, f) H and E staining of cartilage and subchondral bone of mice ACLT or sham surgery (e) and human OA or healthy samples (f). scale bar, 50 μm (e), 200 μm (f). (g) Demographic data of human patients. *p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group or healthy donors at different time points. Statistical significance was determined by unpaired Student’s t test (b, c and d), and all data are shown as scattered plots with means ± standard deviations.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/57656/elife-57656-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (a) De novo synthesis of Alendronate-TβR1I inhibitor conjugate. (b, c) Representative photos (b) and statistical analysis (c) of pSMAD signal in immunostaining of human MSCs, 20 μm. (d, e) Representative photos of knee joint H and E (d) and TRAP (e) staining in mice 4 weeks after sham or ACLT or surgery or treatment at 1 m. Scale bars, 50 μm (b), 20 μm (c). (f, g) Statistical analysis of Tb. Pf (f) and TRAP+ cells (g) in WT mice 4 weeks after sham or ACLT surgery or treatment at 1 m. n = 6 per group. *p<0.01, ***p<0.001, ****p<0.0001 compared with the sham-operated group or healthy donors at different time points. Statistical significance was determined by multifactorial ANOVA WITH BONFERRONI POST HOC TEST (f, g), unpaired Student’s t test (c) and all data are shown as scattered plots with means ± standard deviations.
 
 Finally, we examined whether the conjugate effect on the improvement of subchondral bone structure and articular cartilage degeneration could also relieve OA pain. Interestingly, subchondral PGE2 concentration was significantly reduced in ACLT mice with the conjugate treatment relative to the vehicle group (Figure 6l). Importantly, the expression of NaV1.8 was also reduced in both subchondral bone (Figure 6e and k), and ipsilateral lumbar DRG (Figure 6m). Moreover, the electrophysiological tests demonstrate that data showed that conjugate treatment blunted the upregulation of DRG neuron activity (Figure 6n and o) and NaV1.8 currents (Figure 6n and p) in ACLT mice. The effect of the conjugate on joint pain related behaviors were examined in the Catwalk test. HPWT, maximal contact AT and swing phase were significantly ameliorated in ACLT mice with the administration of conjugate relative to the vehicle group (Figure 6q and r). These data suggest that alendronate-TβR1I conjugate relieves OA pain by modifying the disease. This was likely achieved by the decrease of PGE2 in the improvement of subchondral bone structure.
 
@@ -91,64 +123,450 @@ Pain sensation and OA progression are often dissociated. Late stage of radiograp
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/57656/elife-57656-fig7-v2.jpg)
 
-**Figure 7.:** V1.8 modification.
-
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, Strain backgroud (Mus musculus)</td>
+      <td>Ptger4floxed</td>
+      <td>(Chen et al., 2019)</td>
+      <td>N/A</td>
+      <td>C57BL/6 background</td>
+    </tr>
+    <tr>
+      <td>Strain, Strain background (Mus musculus)</td>
+      <td>Bglap-Cre</td>
+      <td>(Tomlinson et al., 2016)</td>
+      <td>N/A</td>
+      <td>C57BL/6 background</td>
+    </tr>
+    <tr>
+      <td>Strain, Strain background (Mus musculus)</td>
+      <td>Pirt-GcaMP3 floxed</td>
+      <td>(Kim et al., 2008)</td>
+      <td>N/A</td>
+      <td>C57BL/6 background</td>
+    </tr>
+    <tr>
+      <td>Strain, Strain background (Mus musculus)</td>
+      <td>Advillin-Cre(Avil-Cre)</td>
+      <td>(Zurborg et al., 2011)</td>
+      <td>N/A</td>
+      <td>C57BL/6 background</td>
+    </tr>
+    <tr>
+      <td>Strain, Strain background (Mus musculus)</td>
+      <td>Rosa26iDTRfloxed</td>
+      <td>Jackson Laboratory</td>
+      <td>C57BL/6-Gt(ROSA)26Sortm1(HBEGF)Awai/J Stock No: 007900</td>
+      <td>C57BL/6 background</td>
+    </tr>
+    <tr>
+      <td>Strain, Stran background Rattus norvegicus</td>
+      <td>Sprague Dawley (SD)</td>
+      <td>Charles River</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, Strain backgroud (Mus musculus)</td>
+      <td>Scn10a-Cre</td>
+      <td>(Duan et al., 2018)</td>
+      <td>N/A</td>
+      <td>C57BL/6 background</td>
+    </tr>
+    <tr>
+      <td>Strain, Strain backgroud (Mus musculus)</td>
+      <td>Cox2 floxed</td>
+      <td>Harvey Herschman</td>
+      <td>N/A</td>
+      <td>C57BL/6 background</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn10a-Cre forward</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-TGTAGATGGACTGCAGAGGATGGA-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn10a-Cre reverse</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-AAATGTTGCTGGATAGTTTTTACTGCC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Pirt-GCaMP3 fl primer 1</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-TCCCCTCTACTGAGAGCCAG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Pirt-GCaMP3fl primer 2</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-GGCCCTATCATCCTGAGCAC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Pirt-GCaMP3fl primer 3</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-ATAGCTCTGACTGCGTGACC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Avil-Cre: forward</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-CCCTGTTCACTGTGAGTAGG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Avil-Cre: reverse</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-GCGATCCCTGAACATGTCCATC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Avil-Cre: wildtype</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-AGTATCTGGTAGGTGCTTCCAG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Bglap-Cre: forward</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-CAAATAGCCCTGGCAGATTC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Bglap-Cre: reverse</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>Reverse: 5′-TGATACAAGGGACATCTTCC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Cox2 loxP allele forward:</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-AATTACTGCTGAAGCCCACC-3</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Cox2 loxP allele reverse</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-GAATCTCCTAGAACTGACTGG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Ptger4 loxP allele forward</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-TCTGTGAAGCGAGTCCTTAGGCT-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Ptger4 loxP allele reverse</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-CGCACTCTCTCTCTCCCAAGGAA-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Rosa26iDTRfloxed forward</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-GCGAAGAGTTTGTCCTCAACC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Rosa26iDTRfloxed reverse</td>
+      <td></td>
+      <td>PCR Primer</td>
+      <td>5′-AAAGTCGCTCTGAGTTGTTAT-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Gapdh forward</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-TCCATGACAACTTTGGCATTG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Gapdh reverse</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-CAGTCTTCTGGGTGGCAGTGA-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn1a forward</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-AACAAGCTTGATTCACATACAATAAG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn1a reverse</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-AGGAGGGCGGACAAGCTG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn2a forward</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-GGGAACGCCCATCAAAGAAG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn2a reverse</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-ACGCTATCGTAGGAAGGTGG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn3a forward</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-AGGCATGAGGGTGGTTGTGAACG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn3a reverse</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-CAGAAGATGAGGCACACCAGTAGC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn8a forward</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-AGTAACCCTCCAGAATGGTCCAA-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn8a reverse</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-GTCTAACCAGTTCCACGGGTCT-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn9a forward</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-TCCTTTATTCATAATCCCAGCCTCAC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn9a reverse</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-GATCGGTTCCGTCTCTCTTTGC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn10a forward</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-ACCGACAATCAGAGCGAGGAG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn10a reverse</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-ACAGACTAGAAATGGACAGAATCACC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn11a forward</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-TGAGGCAACACTACTTCACCAATG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Scn11a reverse</td>
+      <td></td>
+      <td>RT-PCR Primer</td>
+      <td>5′-AGCCAGAAACCAAGGTACTAATGATG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Creb1 forward</td>
+      <td></td>
+      <td>ChIP-PCR Primer 1</td>
+      <td>5′-AGTATGGTCCTTCGTGGAATACCAG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Creb1reverse</td>
+      <td></td>
+      <td>ChIP-PCR Primer 1</td>
+      <td>5′-GCTATACTGCAGGAAACTGGCGA-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Creb1forward</td>
+      <td></td>
+      <td>ChIP-PCR Primer 2</td>
+      <td>5′-AGCTCCCTTCTCAGCTCTCAC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Creb1reverse</td>
+      <td></td>
+      <td>ChIP-PCR Primer 2</td>
+      <td>5′-CAATCTACCCAGTCTCCCTCTTTGG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Creb1forward</td>
+      <td></td>
+      <td>ChIP-PCR Primer 3</td>
+      <td>5′-GAGCACCATCCAGCAAGCAG-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Creb1reverse</td>
+      <td></td>
+      <td>ChIP-PCR Primer 3</td>
+      <td>5′-CCAGCTCTGCGAAACTTACACT-3′</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-Nav1.8</td>
+      <td>Alomone Labs</td>
+      <td>ASC-016,</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-pSmad2/3</td>
+      <td>Santa Cruz Bio</td>
+      <td>sc-11769</td>
+      <td>1:50,</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-Osterix</td>
+      <td>Abcam</td>
+      <td>ab22552</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti- Osteocalcin</td>
+      <td>Takara bio Inc,</td>
+      <td>M173</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti- Cox2</td>
+      <td>Abcam</td>
+      <td>ab15191</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monocloncal anti-PKA-c</td>
+      <td>Abcam</td>
+      <td>ab75991</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Graphpad 8.0</td>
+      <td></td>
+      <td>Statistical Analysis</td>
+      <td>graph preparation, statistical analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 We purchased C57BL/6J (WT) 3 months old male mice from Jackson Laboratories. We purchased Sprague Dawley (SD) 3 months old male rats from Charles River company. To develop the mechanical instability related OA model, we used ACLT surgery (Malfait and Little, 2015). Briefly, after ketamine and xylazine anesthesia, the left ACL was surgically transected and sham operations were performed on other groups of mice. For the time-course experiments, mice were euthanized at 4, 8 or 12 weeks after surgery (n = 6 per group).
 
 The Rosa26iDTRfl/fl mice were purchased from Jackson Laboratory. The Advillin-Cre (Avil-Cre) and PirtGCaMP3 mouse strain were kindly provided by Xingzhong Dong (The Johns Hopkins University). The Bglap-Cre mice were provided by Thomas J. Clemens (The Johns Hopkins University). The Cox2fl/fl mice were kindly provided by Harvey Herschman (University of California, Los Angeles). The Ptger4 fl/fl mice were provided by Brian L. Kelsall (the National Institutes of Health). The Scn10a-Cre mice were kindly provided by Yun Guan (The Johns Hopkins University). Heterozygous Bglap-Cre mice were crossed with a Cox2fl/fl mouse; the offspring were intercrossed to generate the following genotypes: WT, Bglap-Cre, Cox2fl/fl, Bglap-Cre::Cox2fl/fl. Cox2fl/fl or Bglap-Cre::Cox2fl/fl mice were further crossed with PirtGCaMP3fl/- mice to generate Cox2fl/fl::PirtGCaMP3fl/- mice or Bglap-Cre::Cox2::PirtGCaMP3 fl/- mice for in vivo GCaMP3 DRG imaging. Heterozygous Avil-Cre mice were crossed with Ptger4fl/fl mice. The offspring were intercrossed to generate the following genotypes: wild type (referred as ‘WT’ in the text), Avil-Cre (Cre recombinase expressed driven by Advillin promoter), Ptger4fl/fl, Avil-Cre:: Ptger4fl/fl (conditional deletion of EP4 receptor in Advillin lineage cells). Ptger4fl/fl or Avil-Cre:: Ptger4fl/fl mice were further crossed with Pirt-GCaMP3 fl/- mice to generate Ptger4fl/fl::Pirt-GCaMP3fl/- mice or Avil-Cre:: Ptger4fl/fl::PirtGCaMP3 fl/ mice for in vivo GCaMP3 DRG imaging. Heterozygous Scn10a-Cre mice were crossed with the Rosa26iDTRfl/f mouse; the offspring were intercrossed to generate the following genotypes: WT, Scn10a-Cre::Rosa26iDTRfl/fl, Scn10a-Cre::Rosa26iDTRfl/fl mice. We injected 12-week-old Scn10a-Cre:: Rosa26iDTRfl/fl or Rosa26iDTRfl/fl mice with 1 μg/kg DTX intraperitoneally three times per week after ACLT for 4 weeks. We obtained femurs, tibiae and DRG from the mice after euthanasia. For conjugate injections, we used intraperitoneal injection method and 1 mg/kg per week dosage according to previous toxicological experiments. All animals were maintained at the animal facility of The Johns Hopkins University School of Medicine. All the experimental protocols were approved by the Animal Care and Use Committee of The Johns Hopkins University (Protocol number: Mo18M308).
 
-## Human samples
+### Human samples
 
 After approval by the Institutional Review Board of The Johns Hopkins Hospital,, we collected tibial plateau specimens from eight individuals with osteoarthritis that underwent total knee arthroplasty. The knee joints from three healthy young adults underwent lower limb amputations after trauma serves as healthy controls. The demographic data of patients were collected. The samples were used to perform histology and immunohistochemistry after decalcification.
 
-## Histology
+### Histology
 
 Immediately after euthanasia, we resected and fixed the animals knee joints or DRG in 10% buffered formalin for 24 hr, decalcified them in 0.5 M ethylenediaminetetraacetic acid (EDTA, pH 7.4) for 14 d and embedded them in paraffin or gelatin solution (20% D-sucrose, 2% Polyvinylpyrrolidone (PVP) and 8% gelatin in PBS). Four-micrometer sagittal oriented sections of the medial compartment of left knees were processed for hematoxylin and eosin, safranin orange and fast green and Tartrate-resistant acid phosphatase (TRAP) staining (Sigma). For immunohistology and immunofluorescence, slides (4 μm for immunohistology, 20 μm for DRG, 60 μm for knee immunofluorescence) were incubated with antigen retrieval buffer (Dako, S169984-2) at 96°C for 15 min, gradually cooled to room temperature and washed with tris-buffered saline with Tween (TBST). After blocking, the slides were incubated with primary antibodies overnight at 4°C. Secondary antibody (1:200) was used to incubate the samples for 1 hr at room temperature. For immunohistochemical staining, a horseradish peroxidase–streptavidin detection system (Dako) was used to detect immunoactivity, followed by counterstaining with hematoxylin (Sigma-Aldrich). For immunofluorescence, the fluorescent conjugated secondary antibody (1:200) was applied. The photographs of the immunohistology sections were recorded by light microscopy (DP71 microscope camera, Olympus) and analyzed by OsteoMeasure XP software (OsteoMetrics). We calculated OARSI scores as previously described (Glasson et al., 2010). The OARSI scores were evaluated by two independent graders and the averages were taken. For the immunofluorescence, the photographs were shot under laser confocal microscopy (Zeiss, LSM 780) and Zen 2.2 software.
 
-## μCT and in vivo μMRI
+### μCT and in vivo μMRI
 
 The mice knees were scanned using high-resolution μCT (SkyScan 1275, Bruker microCT) as previously described (Zhen et al., 2013). The scanner was set at a voltage of 65 kVp, a current of 153 μA and a resolution of 5.7 μm per pixel. We reconstructed and analyzed outcomes using NRecon v1.6, and CTAn v1.9, respectively. Three-dimensional reconstructions were done by CTVol v2.0 (Bruker microCT). We defined the region of interest to cover the trabecular part of the medial compartment of tibial subchondral bone, and five consecutive images from the medial tibial plateau were used for 3-dimensional reconstruction. We analyzed 3D parameters as following: TV (total tissue volume; containing both trabecular and cortical bone), BV/TV (trabecular bone volume per tissue volume) and Tb.Pf (trabecular pattern factor).
 
 We performed in vivo μMRI studies on a horizontal 9.4T Bruker Biospec preclinical scanner according to our previous protocol (Zhen et al., 2013). Briefly, we showed subchondral BML by T2-weighted scanning with 2D RARE (rapid acquisition with relaxation enhancement) sequence, a TE/TR (echo time/repetition time) of 15.17 ms/3,000 ms, 30 slices at 0.35 mm thickness, 1.75 cm ×1.75 cm field of view (FOV) with a matrix size of 256 × 128. The fat suppression was done in T2-weighted imaging with a chemical shift selective fat saturation pulse tuned to the fat resonant frequency.
 
-## Cell culture
+### Cell culture
 
 Bilateral lumbar DRGs were harvested from 4 week male WT mice. For DRG neuron culture medium, MEM was supplemented with 5% fetal bovine serum (Gibco), 2X penicillin and streptomycin solution (Gibco), 1X GlutaMAX (Thermo Fisher), 20 μM 5-fluoro-2-deoxyuridine (Sigma-Aldrich) and 20 μM uridine (Sigma-Aldrich). DRG neurons were digested and dissociated with 1 mg/ml collagenase D (Roche) for 90 min and then 1X TrypLE Express solution (Thermo Fisher) for 15 min. The dissociated DRG neurons were placed on a precoated dish with 100 μg / ml poly-D-lysine (thermal fisher) and 10 μg / ml laminin (thermal fisher). 100 ng / ml Nerve growth factor (R and D) was applied to maintain the neuronal activity. After 24 hr incubation, PGE2 (1 μM) or PBS were applied to stimulate the DRG neurons. In vitro RNA interference was performed using commercially available RNAi products from Thermal Scientific (s72365, s72370, s72373, and s72375) and the protocol was followed by the manufacture’s instruction. Briefly, after neuron seeding for 24 hr, media were replaced for the cells to be prepared for transfection. Lipofectamine RNAi MAX (13778100, Invitrogen) was diluted in OptiMEM (31985062, Thermal Fisher) and incubated for 5 min, then mixed with siRNAs or scramble control RNAs for five mins. Diluted DNA and Lipofectamine RNAi MAX were mixed and incubated at room temperature for 20 min and then used to transfect the DRG neurons. The medium was replaced 10 hr following transfection and neurons were harvested 24 hr after transfection. Similarly, the human GFP labeled MSC was purchased from Cyagen and is cultured in MEM with 10% fetal bovine serum (Gibco), 1X penicillin and streptomycin solution (Gibco).
 
-## In vivo Pirt-GCaMP3 DRG imaging
+### In vivo Pirt-GCaMP3 DRG imaging
 
 We used Pirt-GCaMP3f/- mice in DRG imaging. In order to monitor the activity of large populations of DRG neurons in intact live animals, Dr Xinzhong Dong’s Lab developed an in vivo imaging technique by using PirtGCaMP3 genetically engineered mice, in which the genetic-encoded Ca2+indicator GCaMP3 is specifically expressed in >95% of all DRG neurons by Pirt promoter (Kim et al., 2008; Kim et al., 2014b).After surgical exposure of ipsilateral L4 DRG, in vivo imaging was immediately performed. Similarly as previously described (Miller et al., 2018), the animals were maintained under inhalation anesthesia with assisted ventilation through endotracheal incubation. A laser scanning confocal microscope (Leica LSI microscope system) with a water immersed lens was used to capture the fluorescent signals. Live images were acquired at 10 frames with 600 Hz in frame-scan mode per 6–7 s, at depths below the dura ranging from 0 to 70 µm. 25 g of direct compression was applied to the ipsilateral knee after ACLT or sham surgery using a rodent pincher (IITC Life Science) to stimulate DRG neuronal firing. The duration of the mechanical force application maintained 15–30 s after 40–50 s of baseline imaging and the activated neuron number was counted and analyzed.
 
-## Electrophysiology
+### Electrophysiology
 
 Whole-cell current-clamp recordings were performed to perform the action potential of DR neurons according to the previous study (Bierhaus et al., 2012). Only small and medium-sized DRG neurons with a resting membrane potential more negative than −40 mV were recorded. The extracellular solution contained (in mM): NaCl 140, KCl 4, CaCl2 2, MgCl2 1; HEPES 10, NaOH 4.55, glucose 5 (pH 7.4, 300–310 mOsm/kg H2O). The pipette solution contained (in mM): KCl 135, MgCl2 0.1, Mg-ATP 1.6, HEPES 10, EGTA 2, (pH 7.3 at 25°C, adjusted with NaOH). The voltage was firstly clamped at −60 mV. For action potential stimulation, the frequency is by 2 × and 3 × rheobase and ramp current stimulation (0.1, 0.3, 0.5, and 1.0 nA/sec ramp current).
 
 To measure the TTX resistant NaV1.8 currents in DRG neurons, the voltage-clamp technique was used. For recordings on DRG neurons, the extracellular solution contained (mM): NaCl 60, KCl 3, Choline-Cl 80, CaCl2 0.1, MgCl2 0.1, HEPES 10, tetraethylammonium chloride 10, glucose 10 and CdCl2 0.1 (pH adjusted to 7.4, 300–310 mOsm/kg H2O) TTX (1 uM) and TC-N 1572 (1.6uM) were applied to the solution to block TTX sensitive sodium current and NaV1.9 currents. The pipette solution contained (mM) CsF 140, EGTA 5, MgCl 1, and HEPES 10, glucose 10 (pH 7.4, osmolarity 285–295 mOsm/kg H2O). Only cells with an initial seal >1 GΩ were recorded. The NaV1.8 currents were recorded responding to potential from –70 to +50 mV in 10 mV increments. The maximal current densities (pA/pF) were calculated and analyzed.
 
-## Behavioral test
+### Behavioral test
 
 Electronic Von Frey hair algesiometer (IITC Life Science) was used to measure the hind paw withdrawal threshold. Before starting the test, mice were separately placed in elevated Plexiglas chambers on metal mesh flooring for 30 mins. A von Frey hair with bending force (0.6 g, 1 g, 1.4 g, 2 g, 4 g) was exerted perpendicular to the plantar surface of the hind paw until it just bent and the hind paw of mice of elevated. The force displayed on the electronic device were recorded. The threshold force required to elicit withdrawal of the paw was determined three times on each hind paw and averaged.
 
 Gait analysis was performed on mice 4 weeks after ACLT by the CatWalk system (Noldus) according to our previous protocol (Zhen et al., 2013). Briefly, each mouse was placed walkway and allowed to allow the free movement from one side to the other side for at least three times. Mice were trained previously in the formal experiment. After the recording of mouse gait, several parameters were generated, and 5 of the most relevant parameters to OA pain were analyzed. (1) stands, (2) maximal contact at. (3) maximal (4) swing and (5) single stance.
 
-## Western blotting and ELISA
+### Western blotting and ELISA
 
 Western blotting was performed on the lysates of DRG neuron culture and tibial subchondral bone marrow. The samples were separated by SDS-PAGE gel and transferred onto a nitrocellulose membrane (Bio-Rad Laboratories). After incubation with specific primary and secondary antibodies, signals were detected by an enhanced chemiluminescence kit (Amersham Biosciences). The primary antibodies used are as follow rabbit anti-NaV1.8 (1:500, ASC-016, Alomone), rabbit anti-CREB (1:2000, #9179, Cell Signaling Technology), rabbit anti-pCREB (1:1000, 9198, Cell Signaling Technology), rabbit anti-PKA c- c-α (1:1000, 4782, Cell Signaling Technology) and rabbit anti-GAPDH (1:1000, 5174, Cell Signaling Technology). The experiments were repeated three times and a representative film was selected.
 
 To measure the concentration of PGE2 in the subchondral bone marrow of mice tibiae, a PGE2 ELISA kit (514010, Cayman) was used according to the manufacturer’s manual. Briefly, we harvest the subchondral bone and then homogenized by ultrasound. The supernatant was aspired after high-speed centrifugation (13,200 g) for 10 mins. The concentration of PGE2 was normalized by total protein concentration using the BCA assay.
 
-## ChIP assay
+### ChIP assay
 
 The ChIP assay was carried out using the epiquik ChIP Kit (Epigentek catalog number: P-2002–1). Briefly, the cultured lumbar DRG cells were crosslinked with 1% formaldehyde at for 10 min. After the collection of the cell, the sonication was performed until the DNA was broken into fragments with a mean length of 200 bps – 500 bps. The samples were subjected to immunoprecipitation with 2 mg of rabbit antibodies against pCreb1 (CST, 1:50) for 90 min at room temperature and 10% of the sample for immunoprecipitation was used as an input (a positive control). After purification, the DNA fragments were amplified using qRT-PCR with the primers for NaV1.8 promoter listed in Supplementary Table 2.
 
-## Retrograde tracing
+### Retrograde tracing
 
 Retrograde tracing was performed at 3-month-old male SD rats (Charles River Laboratories) (300–400 g, n = 6 per group) 2 months after ACLT. According to the previous study (Ferreira-Gomes et al., 2010), a 20 mm parapatellar incision was made over the medial side of the left knee. Ipsilateral femoral and tibial subchondral bone were subject to retrograde labeling. We injected 2 μl DiI (Molecular Probes; with 5 mg/ml in N, N dimethylformamide) into the femoral and tibial subchondral bone areas using a Hamilton syringe with a 27-gauge needle. Immediately after injection, bone wax was used to seal the drilling holes to prevent tracer leakage. Animals were euthanized 2 weeks after retrograde injection and the left lumbar DRGs (L3-5) were isolated for fluorescence detection. Twenty sections from each DRG were used for statistical analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as means ± standard deviations. Error bars represent standard deviations. We used unpaired or paired two-tailed Student’s t-tests for comparisons between two groups, and one-way ANOVA with Bonferroni post hoc test for multiple comparisons, in comparison between three or more groups, two-way ANOVA with Bonferroni post hoc test were used. All data demonstrated a normal distribution and similar variation between groups. For all experiments, p<0.05 was considered to be significant.

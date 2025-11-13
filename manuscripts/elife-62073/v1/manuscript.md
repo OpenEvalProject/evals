@@ -29,11 +29,29 @@ To resolve these outstanding issues, we drew on a recent dataset (Hoekstra et al
 
 ## Results
 
-Wakefulness and REM sleep can be considered to be the opposite of NREM sleep in brain temperature dynamics. In the cortical activated states of wakefulness and REM sleep, brain temperature increases, whereas during NREM sleep when cortical input is reduced and neuronal activity becomes synchronized, temperature decreases (Obál et al., 1985; Franken et al., 1992a). Therefore, based on a previously described model in the rat (Franken et al., 1992b), we used the following exponential equations to iteratively simulate changes of brain temperature in the mouse:Duringwaking/REMsleep:Tt=U−(U−Tt−1)⋅e−ΔtτWRDuringNREMsleep:Tt=L−(Tt−1−L)⋅e−ΔtτN
+Wakefulness and REM sleep can be considered to be the opposite of NREM sleep in brain temperature dynamics. In the cortical activated states of wakefulness and REM sleep, brain temperature increases, whereas during NREM sleep when cortical input is reduced and neuronal activity becomes synchronized, temperature decreases (Obál et al., 1985; Franken et al., 1992a). Therefore, based on a previously described model in the rat (Franken et al., 1992b), we used the following exponential equations to iteratively simulate changes of brain temperature in the mouse:
 
-With a time step (Δt) of 0.0011 hr (i.e., the 4-s epochs at which sleep–wake states were scored), the current temperature (Tt) was calculated based on the preceding temperature (Tt−1) according to the distance from an upper asymptote (U) and time constant τWR when the mouse was awake or in REM sleep at time t or, when in NREM sleep, according to the distance from the lower asymptote (L) and time constant τN. The four free parameters of this basic model were the two time constants (in hours) and the values of the two asymptotes (in °C) between which brain temperature could vary. Drawing on previous results and assumptions (Franken et al., 1992b), we initially set the values for both time constants to 0.47 hr, the lower and upper asymptotes to the minimum and maximum temperatures reached in each animal during the 96-hr recording, respectively, and the initial temperature (T0) to the average temperature in the first 5 min of the recording. However, the following features were further developed to improve the simulation: (1) as already mentioned above, we defined 2 different time constants to represent the increase and decrease in temperature, instead of just 1 for both processes, (2) the asymptote values were free parameters, (3) all free parameters were simultaneously optimized for each mouse, (4) optimization took into consideration the entire recording, including sleep deprivation and recovery, instead of the baseline period alone, and (5) performance was assessed at a sub-minute time scale; that is, the 4-s resolution at which the sleep–wake states were determined, rather than at an hourly resolution.
+$$
+Duringwaking/REMsleep:T_{t}=U−(U−T_{t−1})⋅e^{\frac{−Δt}{\tauWR}}
+$$
+
+
+
+$$
+DuringNREMsleep:T_{t}=L−(T_{t−1}−L)⋅e^{\frac{−Δt}{\tauN}}
+$$
+
+With a time step ($Δt$) of 0.0011 hr (i.e., the 4-s epochs at which sleep–wake states were scored), the current temperature ($T_{t}$) was calculated based on the preceding temperature ($T_{t−1}$) according to the distance from an upper asymptote (U) and time constant $\tau_{WR}$ when the mouse was awake or in REM sleep at time t or, when in NREM sleep, according to the distance from the lower asymptote (L) and time constant $\tau_{N}$. The four free parameters of this basic model were the two time constants (in hours) and the values of the two asymptotes (in °C) between which brain temperature could vary. Drawing on previous results and assumptions (Franken et al., 1992b), we initially set the values for both time constants to 0.47 hr, the lower and upper asymptotes to the minimum and maximum temperatures reached in each animal during the 96-hr recording, respectively, and the initial temperature ($T_{0}$) to the average temperature in the first 5 min of the recording. However, the following features were further developed to improve the simulation: (1) as already mentioned above, we defined 2 different time constants to represent the increase and decrease in temperature, instead of just 1 for both processes, (2) the asymptote values were free parameters, (3) all free parameters were simultaneously optimized for each mouse, (4) optimization took into consideration the entire recording, including sleep deprivation and recovery, instead of the baseline period alone, and (5) performance was assessed at a sub-minute time scale; that is, the 4-s resolution at which the sleep–wake states were determined, rather than at an hourly resolution.
 
 Based on this more refined model, referred to as Model 0, we simulated the temperature recordings based on the individual sleep–wake state sequence data (Figure 1), with an average correlation coefficient (r) of 0.91, and a median root mean square (RMS) error of 0.36°C across animals. Generally, the time constant of wakefulness was higher than the one of NREM sleep (i.e., in 9 out of 11 mice; with median of 0.33 vs. 0.23 hr), indicating that the rate of increase of cortical temperature during wakefulness was slower than its decrease in NREM sleep. The difference between the upper and lower asymptotes varied by roughly 3°C, with the upper asymptotes consistently near the temperature values observed during SD (Supplementary file 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62073/elife-62073-fig1-v1.jpg)
+
+**Figure 1.:** (A) A representative example of a 96-hr recording in one mouse of brain temperature (blue) and simulated data (orange). Green lines represent the model's lower and upper asymptotes. The 4-s hypnogram of wake (W), non–rapid-eye-movement sleep (N), and rapid-eye-movement sleep (R) appears above the lower asymptote. White/gray backgrounds represent 12 hr light–dark periods, respectively, and the salmon background starting at 48 hr indicates the 6 hr of sleep deprivation. Red arrows point to examples of over/under estimation of the model in the light–dark periods, respectively. (B) Hourly differences (mean ± STD) between simulation output and data. Red marks below the graph represent significant differences, tested by paired t-tests and false discovery rates corrected at p<0.05. Hourly values are plotted at the interval midpoint. White/gray/salmon backgrounds as in (A).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62073/elife-62073-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Residuals (as in Figure 1B) of the basic model after adding a circadian element by modulating both asymptotes according to a sine-wave function with amplitude and phase as free parameters (the period was set to 24 hr). Note the ~0.5°C underestimation during sleep deprivation (SD). Median residual RMS over all mice and hours amounted to 0.32°C. White/gray/salmon backgrounds in both panels indicate light/dark/SD periods, respectively. Dashed lines mark the mean temperature residuals of Model 0, from Figure 1B.
 
 However, the simulation presented deviations from the measured cortical temperature, especially when higher temperatures were reached during the light phase and sometimes around lower values during the dark phase (see arrows in Figure 1A). When we examined the time course of the average hourly residuals of the model across animals (Figure 1B), we found a systematic fluctuation in the fit; during the baseline light periods simulated values were too high and during the dark periods too low, compared to the recorded temperature values. The residual RMS (i.e., the RMS of the averaged hourly residuals) amounted to 0.19°C. However, the residuals during sleep deprivation (SD) which occurred during the light period resembled those observed during the dark period, which argues against a simple circadian modulation. Although incorporating a circadian modulation of both asymptotes as previously done in the rat (Franken et al., 1992b) somewhat improved the overall fit (RMS error = 0.32°C; residual RMS = 0.15°C), it did not abolish the apparent periodicity in the baseline residuals in mice and resulted in an even poorer fit during SD (Figure 1—figure supplement 1). Given the time-of-day independent similarity between the residuals during the SD and the dark phase, an alternative factor that could contribute to a temporary upregulation of brain temperature (beyond the sleep–wake state- driven changes already captured by the simulation) could be the prior periods of sustained wakefulness (Obermeyer et al., 1991). To explore this possibility, instead of a circadian modulation, we changed the asymptotes according to the prevalence of wakefulness (and REM sleep, for consistency) prior to each data point. We refer to this factor as ‘prior wake prevalence’. The window size over which prior wake prevalence was calculated, as well as the time lag for affecting the asymptotes, were kept as free parameters. Modulation of the asymptotes according to prior wake prevalence considerably improved the fit (r = 0.95; RMS error = 0.28°C; Figure 2) and removed most of the excessive overestimations during light periods, as well as the underestimation of temperature during the dark periods (see arrows in Figure 2A). We found that the optimal window size was 4.0 hr, with a shift of 1.5 hr prior to the time point under consideration, and a scaling factor of 1.2°C. The latter parameter represents the maximum possible modulation of either asymptote (i.e., 100% wakefulness or 100% NREM sleep during a given 4.0 hr window; Supplementary file 2). We optimized all the parameters simultaneously in this new model (i.e., Model 1) and found that all of the values obtained with Model 0 changed significantly (p≤0.002; F(2,10) ≥ 9.98, one-way repeated measures analysis of variance [rANOVA]): the lower asymptote increased, leading to a substantial reduction in the inter-asymptote temperature range from 3.1°C to 2.0°C, which might have contributed to the substantial shortening of the time constants (0.18 and 0.13 hr for wake/REM sleep and NREM sleep, respectively), as they need to be faster to compensate for the reduced distance from the asymptote so that a similar increase/decrease temperature rate can be achieved.
 
@@ -43,17 +61,264 @@ However, the simulation presented deviations from the measured cortical temperat
 
 Interestingly, after incorporating the prior wake-prevalence factor, the residuals of the new model showed a consistent light–dark (circadian) modulation (Figure 2B), with an over-estimation of the temperatures in the light periods, including the SD (residual RMS = 0.12°C). To account for this modulation, we again applied a 24 hr sine-wave modulation onto the asymptotes. The combined effect of modulating the asymptotes according to prior wake-prevalence and circadian time (i.e., Model 2) almost flattened the residuals (residual RMS = 0.09°C; Figure 2C) and further improved the fit (r = 0.96; RMS error = 0.26°C). The amplitude of the sine wave was 0.19°C with a phase of −0.63 hr, placing the trough of the circadian influence at ZT5.37. The window size over which the prior wake- prevalence was calculated shortened to 3.0 hr and the difference between the asymptotes decreased to 1.85°C (Table 1). Relative to Model 1, the only free parameter that exhibited a significant change was the scaling factor of the prior wake prevalence window (which dropped from 1.2 to 1.0°C, paired t-test, T(10) = 5.4; p=0.0003). Figure 3 shows the final fit of Model 2 to the temperature data for each of the 11 animals. Note that mouse #616 displayed exceptionally long waking periods (see periods of uninterrupted high temperature levels in the dark periods) that likely contributed to the exceptionally long prior wake prevalence window (5.5 hr) and the large scale factor relative to the circadian influence (1.05 vs. 0.11°C), modulating the asymptotes in this animal. These aberrant parameters, might in turn, explain the exceptional phase of the trough of the circadian factor (ZT15.6).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/62073/elife-62073-fig3-v1.jpg)
+
+**Figure 3.:** The graphs show the fit (orange) of the final model to the data (blue) of all 11 animals (ordered as in Table 1). Example data in Figures 1A and 2A correspond to mouse number 617 in the 8th row. White/gray/salmon backgrounds indicate light/dark/sleep deprivation (SD) periods, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62073/elife-62073-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Yellow (41.98%), blue (12.34%), and red (1.75%) areas correspond to the unique explained variance of the sleep–wake state, prior wake-prevalence, and circadian factors, respectively. The overlapping areas in orange (4.19%), green (27.35%), and purple (3.39%) indicate the shared explained variance for any two factors. Note that the explained variance shared by all three factors was zero.
+
+**Table 1.**
+ Model 2 parameters for each animal.Optimized values for each of the model parameters, and additional three descriptive variables: the difference between the upper and lower asymptotes (fourth column), the root mean squared error, and the correlation coefficient (two last columns). Columns 7–9 list the parameters of the prior wake-prevalence window: ‘Size’ refers to the window size, ‘Shift’ to the interval between the end of the window and the time point being evaluated, and ‘Scale’ to the conversion from % waking within the window to its temperature modulation of the asymptotes. Column 11 lists the phase of the 24-hr sinewave modulating the asymptotes (starting at zero) relative to ZT0. The last row summarizes the median value for each parameter, except for the correlation coefficient which is averaged after a Fisher transformation. Asterisks indicate KO mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Animal</th>
+      <th colspan="3">Asymptotes (°C)</th>
+      <th colspan="2">Time constants (hr)</th>
+      <th colspan="3">Prior wake prevalence</th>
+      <th colspan="2">Circadian</th>
+      <th rowspan="2">RMS error (°C)</th>
+      <th rowspan="2">Correlation</th>
+    </tr>
+    <tr>
+      <th>Lower</th>
+      <th>Upper</th>
+      <th>Difference</th>
+      <th>Wake/REM</th>
+      <th>NREM</th>
+      <th>Size (hr)</th>
+      <th>Shift (hr)</th>
+      <th>Scale (°C)</th>
+      <th>Amplitude (°C)</th>
+      <th>Phase (hr)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>603</td>
+      <td>34.26</td>
+      <td>35.82</td>
+      <td>1.56</td>
+      <td>0.21</td>
+      <td>0.06</td>
+      <td>4.75</td>
+      <td>−1.90</td>
+      <td>1.02</td>
+      <td>0.13</td>
+      <td>0.86</td>
+      <td>0.28</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>606</td>
+      <td>34.74</td>
+      <td>36.59</td>
+      <td>1.85</td>
+      <td>0.23</td>
+      <td>0.10</td>
+      <td>2.75</td>
+      <td>−1.30</td>
+      <td>1.01</td>
+      <td>0.25</td>
+      <td>−0.71</td>
+      <td>0.26</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>608</td>
+      <td>32.28</td>
+      <td>33.77</td>
+      <td>1.49</td>
+      <td>0.22</td>
+      <td>0.08</td>
+      <td>2.75</td>
+      <td>−1.40</td>
+      <td>0.92</td>
+      <td>0.25</td>
+      <td>−0.41</td>
+      <td>0.23</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>609</td>
+      <td>34.04</td>
+      <td>36.28</td>
+      <td>2.24</td>
+      <td>0.22</td>
+      <td>0.11</td>
+      <td>1.75</td>
+      <td>−1.10</td>
+      <td>0.68</td>
+      <td>0.19</td>
+      <td>−2.66</td>
+      <td>0.25</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>612</td>
+      <td>32.60</td>
+      <td>34.45</td>
+      <td>1.85</td>
+      <td>0.23</td>
+      <td>0.11</td>
+      <td>1.50</td>
+      <td>−0.90</td>
+      <td>0.73</td>
+      <td>0.18</td>
+      <td>−0.63</td>
+      <td>0.24</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>613</td>
+      <td>34.15</td>
+      <td>36.07</td>
+      <td>1.92</td>
+      <td>0.11</td>
+      <td>0.17</td>
+      <td>3.25</td>
+      <td>−1.00</td>
+      <td>1.12</td>
+      <td>0.26</td>
+      <td>−0.83</td>
+      <td>0.30</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <td>616*</td>
+      <td>34.01</td>
+      <td>36.11</td>
+      <td>2.10</td>
+      <td>0.17</td>
+      <td>0.14</td>
+      <td>5.50</td>
+      <td>−2.70</td>
+      <td>1.05</td>
+      <td>0.11</td>
+      <td>9.59</td>
+      <td>0.26</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>617*</td>
+      <td>34.54</td>
+      <td>36.30</td>
+      <td>1.76</td>
+      <td>0.16</td>
+      <td>0.16</td>
+      <td>3.25</td>
+      <td>−1.00</td>
+      <td>1.01</td>
+      <td>0.17</td>
+      <td>−1.17</td>
+      <td>0.23</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>619*</td>
+      <td>34.53</td>
+      <td>36.40</td>
+      <td>1.87</td>
+      <td>0.21</td>
+      <td>0.11</td>
+      <td>3.00</td>
+      <td>−1.60</td>
+      <td>0.62</td>
+      <td>0.06</td>
+      <td>−1.07</td>
+      <td>0.25</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>620*</td>
+      <td>36.89</td>
+      <td>38.21</td>
+      <td>1.32</td>
+      <td>0.12</td>
+      <td>0.05</td>
+      <td>2.75</td>
+      <td>−1.40</td>
+      <td>1.16</td>
+      <td>0.22</td>
+      <td>1.29</td>
+      <td>0.29</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>622</td>
+      <td>36.14</td>
+      <td>38.11</td>
+      <td>1.97</td>
+      <td>0.20</td>
+      <td>0.09</td>
+      <td>4.75</td>
+      <td>−2.00</td>
+      <td>1.02</td>
+      <td>0.19</td>
+      <td>−0.41</td>
+      <td>0.31</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median</td>
+      <td>34.26</td>
+      <td>36.28</td>
+      <td>1.85</td>
+      <td>0.21</td>
+      <td>0.11</td>
+      <td>3.00</td>
+      <td>−1.40</td>
+      <td>1.01</td>
+      <td>0.19</td>
+      <td>−0.63</td>
+      <td>﻿0.26</td>
+      <td>0.96</td>
+    </tr>
+  </tbody>
+</table>
+
 Since Model 2 explained roughly 91% of the variance in the data, we next examined the contribution of each of the three factors. To do so, we decomposed the simulated temperature signal into its three constituent factors by removing the circadian and/or prior wake-prevalence factors, and subtracting the respective result from the Model 2 output (see 'Materials and methods'). Consistent with the R2 value of 83% achieved in Model 0, the factor sleep–wake state accounted for the largest portion of the variance, that is, 74% (Figure 3—figure supplement 1). Some of this explained variance was, however, shared with the other two factors in the model, that is, prior wake prevalence (27%) and circadian time (4%), leaving 42% as the unique contribution of the sleep–wake state. In comparison, the uniquely explained variance contributed by the prior wake prevalence and the circadian process were considerably smaller (12% and 2%, respectively). In total, the overall explained variance contributed by prior wake prevalence was 43% and by the circadian process 9%, of which 3% was shared.
 
 In 5 of these 11 mice, we ran additional experiments with a similar design but shorter SD (2 and/or 4 hr, starting at ZT0) and only one day of recovery. To verify whether the parameters found in the main experiment were not overfitted to the specific experiment, we tested the performance of Model 2 in each of the additional recordings, using the individually optimized parameters from the 6 hr SD experiment (Table 1). The simulation proved to be robust for all the new recordings (all r values ≥0.91, and RMS errors ≤0.37), thus convincingly demonstrating the generalization of parameters within animals over time and across different experiments (Supplementary file 3).
 
 Finally, given the high precision of the simulations, we inquired whether the algorithm could go beyond the simulations based on parameters adjusted specifically to an individual mouse. To this end, we used the median parameter values found previously (Table 1) to predict brain temperature in a different cohort of mice (n = 5) recorded in the context of another study. The experiment had the same 96 hr design as the current study, and none of those data were used to optimize the model parameters. To test the model without providing temperature data, and because the model is iterative, we needed to estimate the initial temperature (T0) to start the first iteration. We first used the main dataset to associate the average temperature and the percentage of Wake/REM state in the first 7 min of recording by linear regression, and then estimated the T0 values in the current dataset based on wake/REM prevalence in the first 7 min (see 'Materials and methods', and Figure 4—figure supplement 1). After obtaining T0, we used Model 2 to simulate the brain temperature of the independent cohort. Remarkably, all the correlation coefficients were between 0.93 and 0.95, although the median of the RMS error was 0.48°C since some recordings had consistent differences in absolute temperatures from physiological values, as was also observed in the main dataset (see columns 2-3 in Table 1). When we brought the empirical temperature data to the same average level as the predicted temperature traces (without changing scale), the median of the RMS error was reduced to 0.34°C and the fine overlap between predicted and observed temperature measures was again revealed (Figure 4, and Figure 4—figure supplement 2). Repeating this process for the test group with the medians of the more basic models 0 and 1, yielded correlation coefficients in the 0.86–0.89 and 0.91–0.93 ranges, respectively.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/62073/elife-62073-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative example of the Model 2 fit (orange) to novel raw data (blue) not used for optimization, using the median of the optimized parameters from the original dataset (Table 1). (B) Temperature residuals of Model 2 (mean ± STD) across all animals in the novel dataset. Notice the small number of red markers, indicating significant deviations from zero. White/gray/salmon backgrounds in both panels indicate light/dark/sleep deprivation periods, respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62073/elife-62073-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The average of the normalized temperatures (see 'Materials and methods') in the first 7 min of the recording (i.e., light onset of baseline 1) is plotted against the fraction of occurrence of wake and REM sleep in the same time window for the 11 individual recordings from the main experiment. The high correlation justifies predicting the temperature values of further sessions from sleep–wake state sequences alone.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/62073/elife-62073-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The graphs show the fit (orange) according to Model 2, for an additional set of five animals (data in blue), based on the median parameters of our main group of mice (Table 1). Mouse number 810 in the fourth row appears also in Figure 4A. White/gray/salmon backgrounds in both panels indicate light/dark/sleep deprivation (SD) periods, respectively.
+
 ## Discussion
 
 We developed and made available a tool to predict brain temperature dynamics based on the sleep–wake state sequence. The model showed a very accurate fit with data obtained under undisturbed baseline conditions, and during and following SD of varying lengths. It equally well predicted the global temperature dynamics on a time scale of hours and the changes following sleep–wake transitions on the order of seconds. In addition to two known factors modulating brain temperature, that is, the sleep–wake state and circadian influences, we identified a novel contributing factor involving the prior wake prevalence, which accounted for the up-regulation of brain temperature observed during periods of sustained wakefulness.
 
-## Model parameters
+### Model parameters
 
 In mice kept under our experimental conditions, specifically a 25°C ambient temperature, a 12:12 hr light–dark cycle, housed singly, and food ad libitum, we observed a dynamic brain temperature range of a little over 3°C. However, at any given time of the experiment, the range of observed temperature fluctuations did not surpass 2°C. This range, delimited by the upper and lower asymptotes in the model, represents a homeostatically defended range within which the brain temperature can vary according to the animal’s behavior without eliciting a thermoregulatory response (Parmeggiani et al., 1975; Satinoff, 1983). Both asymptotes were modulated by two factors. The first was a time-of-day factor modeled by a sine wave, lowering and raising the defended temperature range with an amplitude of 0.19°C, reaching lowest levels close to the light period midpoint, that is, ZT5.4. Although we referred to this factor as ‘circadian’, given the experimental conditions, this fluctuation could also relate to the imposed light–dark cycle. Nevertheless, using a different analytical approach, our previous work in rats maintained under different photoperiods and under constant dark conditions arrived at very similar amplitudes for the time-of-day modulation of cortical temperature (0.13–0.21°C; Franken et al., 1992b; Franken et al., 1995), supporting the interpretation that the time-of-day factor does not depend on the lighting condition and is likely to represent a modulation of circadian origin.
 
@@ -61,58 +326,76 @@ The model identified a second factor dubbed ‘prior wake-prevalence’, that mo
 
 The other optimized parameters were the time constants describing the changes in cortical temperature occurring at the sleep–wake transitions. Mathematically, a time constant value represents the time it will take to close ~63% of the gap between the current temperature and the asymptote, a duration that is constant regardless of the actual distance from the asymptote. To limit the number of free parameters in the model we did not differentiate between the rates of increase in wakefulness and REM sleep. Although this assumption is likely to be false (see, e.g., Hoekstra et al., 2019), we reasoned that it would not impact the model’s performance significantly since REM sleep was relatively sparsely represented in our data (6% of recording time). The simulation identified time constants in the range of minutes for both the increases during wakefulness (and REM sleep) and the decreases in cortical temperature during NREM sleep. It also found longer time constants for the increase than for the decrease (13 and 7 min, respectively), pointing to a slower buildup of heat relative to its dissipation during NREM sleep. This difference is consistent with the concept that the blood that perfuses the brain acts as a heat sink, and that increases in temperature underestimate the rate of heat production since cooling occurs simultaneously (Hayward and Baker, 1969).
 
-## Explained variance
+### Explained variance
 
 Using linear regression analysis between the hourly values of wakefulness and brain temperature, the sleep–wake state was reported to explain 84% of the variance in brain temperature (Franken et al., 1992b; Hoekstra et al., 2019). Although the overall fraction of the variance explained in the final iteration of our simulation was higher (91% in Model 2), the sleep–wake state factor explained less of the variance in brain temperature (74%; see Figure 3—figure supplement 1 for a summary). This discrepancy is due to the additional factors the model identified, primarily the prior wake-prevalence with which the sleep–wake state factor shared an important part of the explained variance. The linear regression results mentioned above should optimally be compared to the results of Model 0, in which only the sleep–wake state sequence was considered. In fact, Model 0 explained a very similar portion of the variance, that is, 83%. As suggested previously (Franken et al., 1992b), the circadian factor carried surprisingly little information about brain temperature. Of the 9% of the variance that could be attributed to circadian modulation, most was redundant with that of the other two factors and only <2% was uniquely circadian. In the model, both the circadian and prior wake-prevalence factors modulated the asymptotes. Consistent with the fivefold larger portion of variance explained by the latter, the maximum possible modulation of the asymptote was also fivefold larger.
 
-## Comparison to previous models
+### Comparison to previous models
 
 Compared to our earlier effort to simulate brain temperature in the rat (Franken et al., 1992b), we made a number of key modifications that enhanced the accuracy of the simulation. In the previous model, only the time constants were optimized but the estimates for the asymptotes were taken directly from the data. Moreover, the same time constants were used to simulate the increases and decreases in temperature accompanying sleep–wake state transitions. The current analysis showed that increase and decay rates differ considerably with a faster temperature decay in NREM sleep than the increase in wakefulness. Other factors estimated from the residuals in the original model were not formally optimized in one model simultaneously. The first such factor is the time-of-day (‘circadian’) modulation, whose amplitude was surprisingly similar in the two studies and species. Moreover, in the rat study, a down-regulation of the asymptote was needed to accurately fit the initial 12 hr of recovery because the actual temperature levels were lower than those predicted based on the sleep–wake distribution. This down-regulation after SD was not observed in the current study even when the prior wake-prevalence factor was not incorporated (Figure 1—figure supplement 1). This difference could reflect a thermoregulatory response to the longer SD in the rat (24 hr vs. 6 hr in the mouse) or could result from the assumption of equal decay and increase rates, because during the recovery, time spent in NREM sleep was increased and in the current study NREM sleep was found to be associated with a faster decay rate. The final difference between the two studies is the considerably slower time constants in the rat (0.47 hr) compared to the mouse, which may be attributed to a species difference.
 
 The differences between the simulations were probably also affected by the modifications we made to address previous criticism. As previously noted by others (e.g., Witting and Mirmiran, 1997), the sequential evaluation of the contribution of different factors may lead to an overestimation of those assessed first because shared (or redundant) variance will be added to the first but not the second. We addressed this problem by optimizing the parameters for the various factors simultaneously and by explicitly assessing the shared variance among factors. Another criticism concerned the use of hourly mean values to evaluate the model’s performance, since it removes a large portion of the variability and leads to inflated correlations (Heller et al., 2011). We found no support for this criticism: performance assessed at a 4 s resolution yielded high correlations similar to the hourly values (Franken et al., 1992b).
 
-## Additional factors affecting brain temperature dynamics
+### Additional factors affecting brain temperature dynamics
 
 Our simulation predicted brain temperature with high accuracy under the specific conditions of our study, but other factors affecting brain temperature could not be considered. For example, the efficacy with which blood removes heat from the brain depends on the ambient temperature (Hayward and Baker, 1969), which was kept constant during experiments. Although brain temperature dynamics during sleep–wake state transitions seem qualitatively similar across a wide range of ambient temperatures (Alföldi et al., 1990), it is nevertheless likely that the model parameters, and in particular the time constants, would need to be optimized for each ambient temperature. Moreover, increases in brain temperature accompanying intense activity such as wheel running (Fuller et al., 1998; Kunstetter et al., 2014), or activating stimuli such as a tail pinch or cage change (Kiyatkin et al., 2002), cannot be captured by the current version of our model because we considered wakefulness to be a uniform brain state. Similarly, sleeping alone or in a group, or having access to a nest, will likely affect the dynamics of brain temperature during sleep through its impact on heat dissipation (Gordon, 2017). Although these refinements of the simulation are currently lacking, the model could be easily expanded to accommodate these factors, once experimental data are available.
 
-## Brain vs. body temperature
+### Brain vs. body temperature
 
 Rhythms in temperature are generally considered a direct output of the circadian time-keeping system (Refinetti and Menaker, 1992). Our model showed, however, that the circadian contribution to brain temperature in the mouse is small and that the observed circadian rhythmicity in brain temperature under undisturbed conditions is driven primarily by the circadian sleep–wake distribution. Because circadian studies often rely on core body temperature measures, it remains unclear whether the model could predict changes in body temperature with similar precision. In rodents in general, body and brain temperatures change in parallel (Blessing, 2018), suggesting that their gross dynamics are governed by similar rules and that the daily dynamics (e.g., hourly mean values) of body temperature can be predicted using assumptions similar to those in our model. However, at the finer time scale at which we optimized our model, the few available studies suggest that the temperatures of the brain and body behave differently (Ootsuka et al., 2009). One noticeable example of this is that body temperature does not increase during REM sleep (Alföldi et al., 1990). Moreover, during extreme sleep disturbance (Obermeyer et al., 1991; Baud et al., 2013) or thermal manipulations (Donhoffer et al., 1959; Kiley et al., 1984), brain and body temperatures can deviate considerably, suggesting that their underlying regulatory mechanisms differ. Therefore, the extent of the model’s accuracy in predicting changes in body temperature at small time scales should be tested experimentally.
 
-## Implications
+### Implications
 
 As the model can predict brain temperature dynamics with high accuracy even without optimization of the parameters in individual mice, a number of applications can be envisioned. For instance, neuroactive drugs do not only affect brain temperature (Kiyatkin, 2018) but often also impact the sleep–wake state. By predicting the effects of the sleep–wake state on brain temperature, the model can isolate the direct effect of the intervention on brain temperature, that is, the residuals of the simulation that cannot be explained by the sleep–wake state. Second, brain temperature affects many properties of neuronal functioning (Kiyatkin, 2010) and therefore may influence cognitive performance (Walter and Carraretto, 2016). Given the dynamics of brain temperature formulated by the model, it would be interesting to examine the putative associations between impaired cognitive functioning and distinctive thermoregulatory states, as has been observed during sleep inertia after awakening (Kräuchi et al., 2004). This would require determining first of all whether brain temperature in humans is governed by similar rules. Although such data in humans are sparse, one study reported similar temperature dynamics to those in the mouse (Landolt et al., 1995). The authors, however, reasoned that the underlying driving influence is circadian rather than the sleep–wake state, based on locomotor activity and NREM sleep depth arguments. Since studies in rodents have shown that both locomotor activity (Shirey et al., 2015; Hoekstra et al., 2019) and NREM sleep depth (Franken et al., 1991; Tobler et al., 1994) only have a minimal association with brain temperature, brain temperature in humans might be driven by the sleep–wake distribution, consistent with the assumptions of our simulation.
 
 ## Materials and methods
 
-## Data acquisition
+### Data acquisition
 
 Detailed descriptions of the data acquisition, surgical procedures, and experimental design can be found elsewhere (Mang and Franken, 2012; Hoekstra et al., 2019) but is briefly described in this section. Data from 11 male C57BL6/J mice (seven wild types [WT]) and four lacking the gene encoding cold-inducible RNA-binding protein (Cirbp KO mice), 10–15 weeks of age were included. Sleep–wake distribution and brain temperature were unaltered in KO mice (Hoekstra et al., 2019) and likewise the results reported here did not differ statistically between the two genotypes. All mice were housed individually under a 12:12 hr light–dark cycle with ZT0 and ZT12, corresponding to light onset and dark onset, respectively. Ambient temperature was maintained at 25°C and food and water were provided ad libitum. Electroencephalograms (EEGs), recorded from a frontal-parietal derivation, and electromyograms (EMGs), recorded from the neck muscles, were used to ‘score’ the sleep–wake states 'wakefulness', 'NREM sleep', and 'REM sleep', at a 4 s resolution. Sleep–wake states marked as having EEG artefacts were included in the temperature analyses. Brain temperature was measured by a thermistor placed on top of the right visual cortex corresponding to the midpoint of the frontal-parietal EEG electrode pair on the left hemisphere, and was sampled at 10 Hz and the median value for each 4 s epoch represented that epoch. Recordings lasted 96 hr, started at light onset, and included two 24 hr days serving as baseline (termed baseline 1 and baseline 2), 6 hr of SD starting at light onset on day 3, followed by an 18-hr (recovery 1) and a 24-hr (recovery 2) recovery period. SD was achieved by gentle handling (Mang and Franken, 2012). In addition to the main experiment above, a subset of five animals (1 WT and 4 KO mice) was subjected to a 2- and 4-hr SD following the same protocol as for the 6-hr SD experiment but without recovery 2 (Hubbard et al., 2020). One session was excluded due to a technical problem resulting in abrupt discontinuity of the temperature data. A final, independent cohort of five WT mice of the same strain, same sex, same age, and that underwent the same 4-day protocol with 6 hr SD, was used to test the predictions of the model. All experiments were approved by the Ethics Committee of the State of Vaud Veterinary Office Switzerland under license VD2743 and VD3201.
 
-## Analysis
+### Analysis
 
-## Model 0: optimization details
+#### Model 0: optimization details
 
 All code was programmed in Matlab and optimization used the fmincon function of the Optimization Toolbox, by minimizing the mean squared error between the simulated and recorded temperature signals. All free parameters were always optimized simultaneously, even when additional ones were added at later stages. For each animal, we constrained the base values of both asymptotes to the range of empirical temperature values plus a 2°C deviation in either direction. The upper and lower asymptotes were always defined as vectors with same size (86’400 4 s epochs) as the 96 hr experiment recordings. The code assumed 12:12 hr light–dark cycles, the start of recording at light onset, sleep scoring only included wake, NREM sleep and REM sleep states, and 48 hr of baseline.
 
-## Model 1: modulation of asymptotes according to prior wake-prevalence
+#### Model 1: modulation of asymptotes according to prior wake-prevalence
 
 To modulate the asymptotes at each time point based on the preceding prevalence of the sleep–wake state (referred to as the ‘prior wake-prevalence’), for each time t, we calculated the fraction (0–1) of time spent in wake or REM sleep within a given time window ending at time t–1. We estimated temperature values for time points prior to the start of the recording (i.e., before the light onset of baseline 1), by averaging corresponding time points from the two days of baseline. Finally, we subtracted the averaged wake/REM fraction of total recording time (4 days) and multiplied by 2 so that the resulting values vary between –﻿1 and +1, and then multiplied the result by a scale factor to translate the fraction of time spent awake/REM sleep into a degree Celsius modulation of the asymptote. In addition, to enable the window not to end strictly at time t–1, we also implemented a window shift relative to time t by moving the produced vector back and forth in time. Since this shift was allowed in both directions and we could not predict values after the end of the recording, we assumed zero values (i.e., no modulation of the asymptotes). The outcome vector was added to both asymptotes.
 
 In contrast to the window scale factor and all other free parameters in this study, which were continuous variables, the window size and window shift were discrete parameters that eventually translated into integer numbers of specific cell indices in a vector. Due to the requirement of the fmincon function for differentiability, to optimize these two parameters we applied a brute force method: (1) we defined possible values for each of the two variables, (2) for each unique combination of the values we ran the fmincon on the rest of the parameters and calculated the error, and (3) kept the parameters (continuous and discrete) that yielded the lowest error output. In this study we chose to test window size values between 0 and 10 hr (step size of 0.25 hr) and window shift values between −5.0 and +0.5 hr (increments of 0.1 hr). For none of the mice was the best fit obtained with parameter values at the limits of these defined ranges.
 
-## Model 2: addition of circadian modulation of the asymptotes
+#### Model 2: addition of circadian modulation of the asymptotes
 
-To introduce a circadian modulation of the asymptotes we used the following formulas:Lt=Lt−sin(2⋅π⋅t+P)⋅AUt=Ut−sin(2⋅π⋅t+P)⋅Awhere A and P are the free parameters for optimization and stand for the amplitude and phase (in hours) of the sine wave, respectively. Lt and Ut are the lower and upper asymptote values at time t; hence, both asymptotes were changed in parallel and to the same extent. The minus sign before the sine function is due to the fact that the recording started at light onset.
+To introduce a circadian modulation of the asymptotes we used the following formulas:
 
-## Prediction of initial simulated temperature value without actual temperature data
+$$
+L_{t}=L_{t}−sin(2⋅\pi⋅t+P)⋅A
+$$
 
-In the original algorithm, the initial temperature was determined based on the recorded data, but to generalize our algorithm to predict brain temperatures of datasets without brain temperature recordings, we needed a different method to estimate the value of the initial temperature. Although the temperatures of most animals ranged between 34°C and 36°C, some recordings showed non-physiological lower (32–34°C) or higher (36–38°C) ranges (Hoekstra et al., 2019), which probably resulted from technical problems. Nevertheless, the difference between the asymptote values was stable across animals (around 2°C), and simulation performance was high, regardless of the average absolute levels (Table 1). Therefore, to estimate the initial temperature when exclusively using the state sequence, we produced a predictive formula based on our existing data. First, we normalized the temperature data of each recording in the 96 hr experiment to a range between 34°C and 36°C. Then, we calculated the correlation between the percentage ‘occurrence’ of wake/REM sleep in a window at the start of the recording, and the average temperature in the same time window. In this way, we could reliably predict the temperature in the first minutes of the recording (r = 0.98, Figure 4—figure supplement 1), which we used as an estimated initial temperature. We chose a 7 min window size since it yielded the highest correlations across values between 1 and 10 min (analysis not shown). Finally, we applied linear regression to obtain the following equation:initialtemperature=0.92265⋅occurrence+34.3282where occurrence is a value between 0 and 1, with 0 referring to 7 min of continuous NREM sleep and 1 to continuous REM sleep and/or waking. Note that this estimate of the initial temperature is valid solely for recordings that start at light onset and under a 12:12 hr light–dark cycle.
 
-## Units and statistics
+
+$$
+U_{t}=U_{t}−sin(2⋅\pi⋅t+P)⋅A
+$$
+
+where A and P are the free parameters for optimization and stand for the amplitude and phase (in hours) of the sine wave, respectively. Lt and Ut are the lower and upper asymptote values at time t; hence, both asymptotes were changed in parallel and to the same extent. The minus sign before the sine function is due to the fact that the recording started at light onset.
+
+#### Prediction of initial simulated temperature value without actual temperature data
+
+In the original algorithm, the initial temperature was determined based on the recorded data, but to generalize our algorithm to predict brain temperatures of datasets without brain temperature recordings, we needed a different method to estimate the value of the initial temperature. Although the temperatures of most animals ranged between 34°C and 36°C, some recordings showed non-physiological lower (32–34°C) or higher (36–38°C) ranges (Hoekstra et al., 2019), which probably resulted from technical problems. Nevertheless, the difference between the asymptote values was stable across animals (around 2°C), and simulation performance was high, regardless of the average absolute levels (Table 1). Therefore, to estimate the initial temperature when exclusively using the state sequence, we produced a predictive formula based on our existing data. First, we normalized the temperature data of each recording in the 96 hr experiment to a range between 34°C and 36°C. Then, we calculated the correlation between the percentage ‘occurrence’ of wake/REM sleep in a window at the start of the recording, and the average temperature in the same time window. In this way, we could reliably predict the temperature in the first minutes of the recording (r = 0.98, Figure 4—figure supplement 1), which we used as an estimated initial temperature. We chose a 7 min window size since it yielded the highest correlations across values between 1 and 10 min (analysis not shown). Finally, we applied linear regression to obtain the following equation:
+
+$$
+initialtemperature=0.92265⋅occurrence+34.3282
+$$
+
+where occurrence is a value between 0 and 1, with 0 referring to 7 min of continuous NREM sleep and 1 to continuous REM sleep and/or waking. Note that this estimate of the initial temperature is valid solely for recordings that start at light onset and under a 12:12 hr light–dark cycle.
+
+#### Units and statistics
 
 Throughout this manuscript, the time measures are expressed in hours, the temperature in degrees Celsius, and correlation coefficients (r) are the outcomes of Pearson correlations, unless stated otherwise. Optimized parameters are summarized as median values, and correlation coefficients as averages after Fisher transformation (Fisher, 1915; Silver and Dunlap, 1987). Paired Student's t-tests with false discovery rates correction (Benjamini and Hochberg, 1995) for multiple comparisons at a significance level of p<0.05 tested for significant effects for the 96 hr time series. Individual fits are summarized as the median of the root mean square (RMS) of the difference between the simulated data and the recorded data (referred to as ‘RMS error' in the text), while effect sizes of the model residuals were assessed by the RMS of the mean residuals for hourly values (referred to as the ‘residual RMS’). Differences in parameters across genotypes and models were assessed by t-tests, or by rANOVA with Tukey’s range test when more than two values were assessed. The relative contribution of the three factors (sleep–wake state, prior wake prevalence, and circadian) to the variance explained by Model 2 was calculated as follows. The model output was first disassembled into three traces, corresponding to the effects of sleep–wake state, prior wake prevalence, and circadian. The unique variance explained by each factor was then calculated as the ratio of the variance of each factor’s trace to the overall variance in the data. For the shared variance among factors, we subtracted the corresponding unique explained variances from the variance of the sum of the traces. The results of explained variance are presented as a Venn diagram using a tool available online (Micallef and Rodgers, 2014).
 
-## Code availability
+### Code availability
 
 The two core Matlab scripts for brain temperature simulation (Source Code File 1) and parameters optimization (Source Code File 2) are provided as Supplementary material, together with running scripts (Source Code Files 3 and 4) and an example of the data (Source Code File 5). In addition, the recorded temperatures, sleep scoring, and simulated temperatures of the three models are available for each of the 11 animals in the main experiment, as an Excel file (Supplementary file 4).

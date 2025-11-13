@@ -14,8 +14,8 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Department of Bioengineering and Therapeutic Sciences, University of California, San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Department of Pharmaceutical Chemistry, University of California, San Francisco San Francisco United States
+1. Department of Bioengineering and Therapeutic Sciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Department of Pharmaceutical Chemistry, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 3. Atomwise Inc San Francisco United States
 
 † Corresponding author
@@ -36,19 +36,31 @@ The prior version of qFit-ligand used iterative sampling over each torsional deg
 
 ## Results
 
-## Overview of the qFit-ligand algorithm
+### Overview of the qFit-ligand algorithm
 
 The qFit-ligand algorithm takes as input a crystal or cryo-EM structure of an initial protein–ligand complex with a single-conformer ligand in PDBx/mmCIF format, a density map or structure factors (encoded by a ccp4 formatted map or an MTZ), and a SMILES string for the ligand. The SMILES string is used for bond order assignment internally (Methods). The algorithm produces a multiconformer model of the ligand, embedded into the context of the rest of the unaltered structural model. This version of qFit-ligand leverages advances to the code base that have improved the stability of the code for protein modeling applications (Wankowicz et al., 2024c) and uses the Chem.rdDistGeom module of RDKit, which implements ETKDG, for conformational sampling (Wang et al., 2020; Riniker and Landrum, 2015) (see Conformer Generation).
 
 To ensure compatibility with the surrounding protein, the ensemble is generated under constraints defined by the geometry of the binding site (see Biasing conformer generation), generating 5000–7000 ligand conformations depending on the size of the ligand. We then use quadratic programming (QP) and MIQP optimization algorithms to determine the best fit of the coordinate and occupancy of conformers to the experimental map. For X-ray data, we restrict the algorithm to output a maximum of three conformations, whereas cryo-EM is restricted to outputting a maximum of two conformations. Examples can be found in the qFit Github repository (https://github.com/ExcitedStates/qfit-3.0 copy archived at Riley et al., 2025) under version 2025.1 and is packaged as part of SBGrid (Morin et al., 2013).
 
-## Conformer generation
+### Conformer generation
 
 For an input molecule (Figure 1), the RDKit Chem.rdDistGeom.EmbedMultipleConfs function generates a distance bounds matrix containing the minimum and maximum allowable distances between every pair of atoms for an input molecule (Figure 1—figure supplement 1; Blaney and Scott Dixon, 2007). The algorithm then explores the conformational space by stochastically generating distances within the defined distance bounds, generating diverse and chemically plausible conformers across torsional angles (Figure 1A–E). For example, within a torsion angle formed by four atoms, the minimum distance between atoms 1 and 4 corresponds to the syn conformation, and the maximum distance corresponds to the anti conformation. Conformations are generated with torsional angles between the maximum and minimum, while obeying other constraints, ensuring exploration of the molecule’s conformational space within realistic and chemically meaningful limits.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig1-v1.jpg)
+
+**Figure 1.:** All ligands undergo three preliminary searches: unconstrained, fixed terminal atoms, and blob search, allowing varying degrees of freedom (A–C). If the ligand has short or long side chains, the algorithm progresses to more specialized searches: branch search for ligands with side chains of at least four atoms (D), and long chain search for those exceeding 30 atoms (E). The algorithm then determines the best fit of generated conformers to electron density through quadratic programming, followed by additional sampling with rotations and translations (F). The remaining conformers then undergo quadratic and mixed-integer quadratic programming to ensure that only the most well-supported conformers are included in the final model.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** These bounds are informed by experimental data and chemical knowledge of bond length, angle, and dihedral angle preferences obtained from the Cambridge Structural Database. Within a torsion angle formed by four atoms, the minimum distance between atoms 1 and 4 corresponds to the syn conformation, and the maximum distance corresponds to the anti conformation. These specific distances, d for syn and d’ for anti, are recorded in the bounds matrix as the lower and upper bounds, respectively. This is performed for every distance between each atom in the molecule. Randomly sampling these bounds with RDKit’s implementation of Experimental-Torsion Knowledge Distance Geometry (ETKDG) gives rise to different conformations of the torsion angle.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** A strong Pearson correlation of 0.75 indicates that as you increase the size of your input molecule, qFit-ligand will take longer to run.
+
 The sampled distances are converted into three-dimensional coordinates through an embedding procedure. Next, torsional angles are refined using potentials derived from experimental distributions observed in the Cambridge Structural Database (CSD) (Allen, 2002; Groom and Allen, 2014) (Methods). Following torsional minimization, we apply the optionally available force field minimization step, using the MMFF94 force field (Tosco et al., 2014) to eliminate steric clashes and reduce molecular strain (Wang et al., 2020; Riniker and Landrum, 2015). All these steps help to ensure that only conformers with low torsional strain are allowed to be selected for final fitting.
 
-## Biasing conformer generation
+### Biasing conformer generation
 
 To guide the conformation generation from the Chem.rdDistGeom based on the ligand type and protein pocket, we developed a suite of specialized sampling functions to bias the conformational search toward structures more likely to fit well into the receptor’s binding site. For a given molecule, up to six of these modified sampling functions are used to refine the conformational search. All steps are initialized with the input ligand model and are run in parallel.
 
@@ -62,15 +74,15 @@ By default, each run of qFit-ligand generates 5000 conformers if the input ligan
 
 To select the set of conformers that best explains the observed density, qFit-ligand employs a QP optimization algorithm. For each sampled conformer, we generate a calculated density map based on the ligand’s atomic coordinates, element types, B-factors, and the map resolution. Each conformer is assigned a weight (occupancy) that collectively optimizes the real space residual of the observed density versus the weighted sum of all the calculated densities. The algorithm has two constraints, first that all weights are non-negative and that the sum of all weights lies between 0–1. QP usually outputs 1–80 conformations (Methods). We then further sample these remaining conformers by applying rotational and translational perturbations (Figure 1F). New conformations are created by rotating by 15° in 5° increments and translating by 0.3 (Å) along the x, y, and z axes. Conformers are then selected through an additional round of QP. The final conformations are then selected using MIQP, where the optimization problem is the same (optimizing real space residuals of observed versus weighted sum of all calculated densities), but with additional linear constraints to limit the final multiconformer model to a maximum of three (or two for cryo-EM) conformers. The output is then one to three ligand conformations with relative occupancies that collectively best explain the observed density (Methods).
 
-## Refinement of qFit-ligand models
+### Refinement of qFit-ligand models
 
 qFit-ligand builds a parsimonious multiconformer ligand model and outputs both an independent ligand structure and the protein–ligand complex embedded in the rest of the system (containing solvent, other heteroatoms, etc). After running qFit-ligand, we refine this complex using phenix.refine (Afonine et al., 2012) or phenix.real_space_refine for cryo-EM structures (Afonine et al., 2018). The resulting final, refined model is used for all subsequent comparisons throughout the rest of the paper.
 
-## qFit-ligand runtime
+### qFit-ligand runtime
 
 qFit-ligand operates on up to five CPU cores, demonstrating efficient performance on a standard laptop, if all five cores are engaged, with typical runtimes for most ligands (70.6%) being less than 10 min (mean: 8.6 min, median: 6.1 min, range: 1.9–44.9 min). qFit-ligand is not parallelized by default, but an optional command line flag ‘-p’ is available to set the number of cores used during conformer generation. Analysis across a large dataset of structures reveals a strong correlation between the size of the input ligand and the runtime (Pearson correlation coefficient of 0.75), with larger ligands resulting in longer processing times (Figure 1—figure supplement 2).
 
-## Detection of experimental true positive multiconformer ligands
+### Detection of experimental true positive multiconformer ligands
 
 To develop the new qFit-ligand algorithm, we collected a set of true positive multiconformer ligand models from the PDB. We identified 2,199 PDB files containing ligands with multiple conformations, more than 10 heavy atoms, and resolutions better than 2.0 Å. We removed structures that had alternative conformers in common crystallographic additives (n = 453), as well as structures with the same protein and ligand pair (n = 212). This further pruned our collection to 1,534 structures, with resolutions ranging from 0.73 to 1.99 Å. We randomly sampled 150 structures and after a manual inspection, removed 15 where the deposited conformations did not visually resolve well into the density, leaving us with 135 structures as a development set for improving qFit-ligand (Figure 2—figure supplement 1, Supplementary file 1, table 1).
 
@@ -80,21 +92,51 @@ To evaluate the impact of qFit-ligand algorithmic improvements, we compared the 
 
 qFit-ligand modeled an alternative conformation in 72.5% (n = 98) of structures. Compared with the modified true positive models, 83.7% (n = 113) of qFit-ligand models have a better RSCC, and 77.0% (n = 104) structures saw an improvement in EDIAm, representing an improved fit to experimental data in the vast majority of structures. Further, the majority of structures (61.5%, n = 83) exhibited reduced torsional strain with qFit-ligand, with a mean difference of –0.2 kcal/mol (Figure 2A, B, Figure 2—figure supplement 2). This suggests that over half of the qFit-ligand models were more energetically favorable compared to the modified true positive models, however, the majority of these improvements were of relatively low magnitude. The increased strain of the modified true positives may be due to the removal of correctly modeled alternate conformations observed in the deposited structures, followed by re-refinement of an incomplete single-conformer model using Phenix. Thus, the reduced strain observed in our qFit-ligand models relative to the modified true positives is not unexpected. Overall, 48.9% (n = 66) of ligands had both improved RSCC and reduced torsional strain, demonstrating that we frequently improved the fit between experimental data, while also maintaining or improving the strain.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig2-v1.jpg)
+
+**Figure 2.:** (A) Differences in real space correlation coefficients (RSCC) (x-axis) and torsion strain (y-axis) between qFit-ligand predicted structures and modified true positives. The lower right quadrant shows structures for which we improve both RSCC and strain. (B) Gallery of examples for which the new qFit-ligand models have improved RSCC, strain, and EDIAm compared to the modified true positives. The composite omit density map is contoured at 1σ for every structure. (C) Differences in EDIAm between qFit-ligand models and modified true positives. Positive delta values indicate structures where the qFit-ligand model is a better fit to the experimental density. (D) Differences in RSCC and torsion strain between the new qFit-ligand and the prior qFit-ligand. The lower right quadrant shows structures for which we improve both RSCC and strain.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The deposited ‘A’ conformer is shown in gray and the deposited ‘B’ conformer in green. The qFit-ligand conformer closest to the deposited ‘B’ is shown in purple. This demonstrates qFit-ligand’s ability to accurately recapitulate the original deposited multiconformer model. The composite omit density map is contoured at 1σ for every structure.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The five structures for which the refined qFit-ligand model strain was most significantly increased from the deposited model strain are highlighted.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Real space correlation coefficients (RSCC) of new versus prior qFit-ligand predicted conformations across the true positive dataset. Bars to the right of the vertical line are for structures where the new qFit-ligand model has a higher (better) RSCC. (B) Torsion strain of new versus prior qFit-ligand predicted conformations across the true positive dataset. Bars to the left of the vertical line are for structures where the new qFit-ligand model has improved (lower) internal strain. (C) EDIAm of new versus prior qFit-ligand predicted conformations. Bars to the right of the vertical line are for structures where the new qFit-ligand model has a higher (better) EDIAm. (D) Gallery of examples for which the new qFit-ligand models are both higher in RSCC/EDIAm and lower in strain compared to the prior qFit-ligand models. The composite omit density map is contoured at 1σ for every structure.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Modified true positive model (input for qFit-ligand), new qFit-ligand model, and prior qFit-ligand model for PDB 2JJK, showing their respective real space correlation coefficients (RSCC), strain, EDIAm, and conformer occupancies. Compared to the prior qFit-ligand model, the new model increased RSCC by 0.2, increased EDIAm by 0.1, and decreased strain by 7.3 kcal/mol. The composite omit density map is contoured at 1σ.
+
 To identify places for algorithmic improvement, we examined the five qFit-ligand structures for which there was the greatest degradation in strain compared to the input model. In most cases, the unrefined qFit-ligand model displayed strain levels that were much closer to the modified true positive, but strain increased after refinement with Phenix (Figure 2—figure supplement 3). While refinement improves the correlation between the model and the electron density map, it may inadvertently increase strain without careful calibration of geometry weights and restraint files. This should be carefully examined by the modeler.
 
 To assess improvements over the prior version of qFit-ligand, we examined how the prior version performed on the modified true positive dataset. Compared to the prior version, we found that the new qFit-ligand achieved higher RSCC values in 57.8% (n = 78) of the structures (Figure 2—figure supplement 4A), lower strain in 68.9% (n = 93) (Figure 2C, Figure 2—figure supplement 4B), and higher EDIAm in 85.9% (n = 116) (Figure 2—figure supplement 4C, D). We closely examined outlier cases where the new qFit-ligand most dramatically outperformed its predecessor. Among the 10 structures with the largest strain reduction and concurrent increase in RSCC and EDIAm, 6 of the deposited true positive models exhibited branching disorder, where a side chain in the ligand adopts an alternate conformation. In these models, the new qFit-ligand decreased strain by up to 8.1 kcal/mol, increased RSCC by up to 0.4, and increased EDIAm by up to 0.6. These examples highlight an improvement in our modeling of non-localized conformational disorder, where the structural heterogeneity affects large portions or the entirety of the ligand, often involving shifts in all atomic coordinates or branching side chains (Figure 2—figure supplement 5).
 
 Interestingly, among the structures where the prior algorithm produced a model with a higher RSCC (n = 56), 67.9% (n = 38/56) were found to be higher in strain compared to the models created by the new qFit-ligand. This suggests that while the prior algorithm sometimes provided a better fit to the density, it often did so by compromising on structural or geometric integrity of the ligand. Moreover, of the structures where the prior qFit-ligand produced a model with a better RSCC (n = 56), only 14.3% (n = 8/56) had a new model RSCC lower than 0.80, indicating that the new qFit-ligand models were still generally well correlated to the experimental data. This demonstrates that the new qFit-ligand algorithm strikes a better balance between agreement with the density data and low-strain conformations. This directly addresses a major limitation in the prior version of qFit-ligand, which often produced conformers that fit the density but were physically or chemically unrealistic, as evidenced by their higher strain.
 
-## Determining the operational bounds of qFit-ligand using synthetic data
+### Determining the operational bounds of qFit-ligand using synthetic data
 
 To determine the lowest ligand occupancy qFit-ligand can accurately recognize and model across resolution ranges, we constructed a synthetic dataset comprised of four main ligand types. These include a ligand with a localized ring flip (3SC), a long linear ligand with non-localized displacement (3P3), one with localized disorder from a simple torsional shift (9BM), and a macrocycle with both branching and terminal end rotation heterogeneity (AR9) (Figure 3—figure supplement 1). For each ligand type, we designed an alternate conformation in COOT (Emsley et al., 2010) and created synthetic density data across a range of conformer occupancy ratios (0.50/0.50, 0.40/0.60, 0.30/0.70, 0.20/0.80, and 0.10/0.90) and map resolutions (0.8–2.5 Å, in 0.1 Å increments) (Methods). This resulted in 360 unique pairs of electron density maps and models, representing various combinations of conformer occupancy and resolution, which we refer to as the ‘true’ structures (Figure 3—figure supplement 1). We then inserted only the ‘A’ conformers into qFit-ligand to evaluate its ability to predict and approximate the ‘B’ conformer for each ligand type.
 
 We directly compare the RSCC of the output qFit-ligand models with the true structures containing both conformers (Figure 3A, B). We observe a decrease in RSCC as resolution gets worse for all occupancy ratios. As map resolution approaches 2.0 Å, regardless of the occupancy split, there is a notable decline in qFit-ligand model RSCC. This suggests that qFit-ligand performs most effectively and consistently with map resolutions better than 2.0 Å.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig3-v1.jpg)
+
+**Figure 3.:** (A) Real space correlation coefficients (RSCC) of the synthetic true benchmark structures plotted against map resolution (in Ångstroms) for different conformer occupancy ratios, showing a decrease in RSCC with deteriorating map resolution. (B) RSCC of qFit-ligand generated multiconformer models, plotted against map resolution and grouped by conformer occupancy split. (C) Root mean square deviation (RMSD) between the closest qFit-ligand conformer and the true ‘B’ conformer. (D, left) True structure and qFit-ligand predicted structure of 3SC multiconformer ligand with a map resolution of 0.8 Å and conformer occupancy split of 0.50/0.50. (D, right) True structure and qFit-ligand predicted structure of 3SC multiconformer ligand with a map resolution of 0.8 Å and conformer occupancy split of 0.80/0.20.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Here, they are shown at a map resolution of 0.8 Å at 1σ.
+
 While RSCC quantifies the overall map to model fit, our ultimate objective is the accurate recovery of alternate conformers. Therefore, we further utilized RMSD calculations to examine qFit-ligand’s ability to recover the ‘B’ conformer present in the true model. We found that doing this successfully was correlated with the alternative conformer occupancy (Figure 3C). qFit-ligand models originating from a true model with an occupancy ratio of 0.50/0.50 and 0.60/0.40 exhibit comparable accuracy. Models with a 0.70/0.30 split begin to display marginally higher RMSD values, as well as an increase in inconsistency across map resolutions, though still remaining within acceptable limits. However, models at 0.80/0.20 exhibit greater variability across resolutions, with those at 0.90/0.10 showing even more pronounced inconsistencies. We show an example of the true versus qFit-ligand generated models for the 3SC ligand at a map resolution of 0.8 Å, with a true model conformer occupancy split of 0.50/0.50 and 0.20/0.80 (Figure 3D). These results suggest that the qFit-ligand occupancy detection limit is around 30%.
 
-## qFit-ligand applied to unbiased dataset of experimental true positives
+### qFit-ligand applied to unbiased dataset of experimental true positives
 
 To determine how qFit-ligand performed on an independent dataset, we curated a new benchmark from the initial true positive collection of 1534 structures, excluding those used in the development set. Recognizing the impracticality of manually inspecting every structure and the detection limit we identified in the synthetic dataset, we applied additional filtering metrics to ensure data quality. Structures were required to have two deposited conformers with a root mean squared deviation (RMSD) of at least 0.2 Å, an average ligand B-factor of less than 80 Å2, and conformer occupancies of at least 0.3. This process yielded a final set of 589 structures for analysis (Figure 2—figure supplement 1).
 
@@ -106,7 +148,7 @@ For all structures, we generated a modified true positive by deleting alternativ
 
 qFit-ligand shows particular strength in scenarios with strong evidence of unmodeled alternate conformations, often improving the fit to density, while sometimes improving the torsional strain. Interestingly, despite modeling a single conformer in nearly half of the structures, there is little to no evidence of qFit-ligand decreasing model-to-map fit. In fact, some of these single conformers show improved quality relative to the modified true positives (Figure 4B). These findings reinforce that qFit-ligand is not only capable of detecting alternate conformers when supported by the data, but also serves as a valuable alternative to manual ligand modeling even in single-conformer cases.
 
-## Evaluating qFit-ligand on a set of structures known to be highly strained
+### Evaluating qFit-ligand on a set of structures known to be highly strained
 
 High ligand strain is energetically unfavorable, and the associated energy penalty paid to adopt a distorted bound conformation reduces overall binding affinity (Smola et al., 2021; Jain et al., 2023). Because of this, it is generally accepted that drug-like molecules should adopt low-energy, minimally strained geometries. However, optimizing both fit to density and internal energetics simultaneously remains a challenge (Liebeschuetz, 2021). While our modified true positive datasets demonstrate that qFit-ligand can alleviate distortion by recovering alternate conformations, these cases are somewhat artificial; removing a valid altloc and re-refining can artificially inflate energetic penalties. To further validate our approach, we tested qFit-ligand on deposited structures with genuinely unfavorable conformations to gain a better understanding of whether our modeling algorithm impacts strain by discovering multiple low-energy conformations that satisfy the density as well, or better, than a single high-energy conformation.
 
@@ -114,7 +156,15 @@ To this end, we curated a dataset of deposited structures containing ligands wit
 
 qFit-ligand modeled 75.4% (n = 144) of the structures with a single conformer, while 19.4% (n = 37) had two conformers, and 5.2% (n = 10) had three conformers (Figure 5A). Interestingly, even without modeling an alternative conformer in the majority of structures, RSCC increased over the deposited model in 53.4% of structures (n = 102), EDIAm increased in 81.2% (n = 155), and strain decreased in 66.5% (n = 127) (Figure 5B, Figure 5—figure supplement 1). Many of these strain improvements came from the pool of 144 single-conformer outputs, suggesting that qFit-ligand is able to sample from highly strained input models to result in new models that are out of a local minima (Figure 5C, top). In fact, the largest strain reductions in this dataset came from this pool of improved single-conformer models. We also identified several examples of qFit-ligand lowering strain through the addition of a well-modeled alternate conformation (Figure 5C, bottom; 5D). In summary, our analysis reveals that qFit-ligand models adopt strain energies that are generally lowered from geometrically distorted deposited models, which supports using qFit-ligand to correct those distortions, even in the single-conformer case.
 
-## qFit-ligand can automatically detect and model multiple conformations of macrocycles
+![Figure 5.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig5-v1.jpg)
+
+**Figure 5.:** (A) Distribution of the number of conformers modeled by qFit-ligand across 191 deposited structures with ligand torsional strain >10 kcal/mol. (B) Real space correlation coefficients (RSCC) and strain differences in the refined deposited models and the qFit-ligand predicted models. The lower right quadrant shows structures for which we improve both RSCC and strain. (C, top) Differences in torsion strain between the qFit-ligand models and the refined deposited models for structures where qFit-ligand predicted a single-conformer model. Negative delta values, all bars to the left of the vertical axis, represent structures for which the qFit-ligand model has a lower strain. (C, bottom) Differences in torsion strain between the qFit-ligand models and the refined deposited models for structures where qFit-ligand predicted a multiconformer model. Negative delta values, all bars to the left of the vertical axis, represent structures for which the qFit-ligand model has a lower strain. (D) Gallery of examples for which qFit-ligand successfully recovers well-fitting alternate conformers, and therefore reduces strain. The composite omit density map is contoured at 1σ for every structure.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Positive delta values, all bars to the right of the vertical axis, represent structures for which the qFit-ligand model has a higher EDIAm.
+
+### qFit-ligand can automatically detect and model multiple conformations of macrocycles
 
 While small molecules are great for inhibiting proteins with deep pockets, many proteins with pharmaceutical interests are classified as ‘undruggable’, due to their flat surfaces or involvement in protein–protein interactions. Macrocycles, cyclic molecules consisting of 12 or more atoms, have a great ability to interact with flat surfaces or shallow grooves (Yudin, 2015; Driggers et al., 2008; Cummings and Sekharan, 2019; Russo et al., 2016; Garcia Jimenez et al., 2023; Vinogradov et al., 2019). Due to their high degrees of freedom, the conformations of macrocycles are difficult to sample exhaustively and are likely to adopt a diverse ensemble in solution and even when bound to a receptor (Appavoo et al., 2019).
 
@@ -124,9 +174,17 @@ All the originally deposited macrocycle models contain only single-conformer lig
 
 Analysis of qFit-ligand models for these 73 macrocycles shows the following distribution of conformers per model: 39.7% (n = 29) having one conformation, 34.3% (n = 25) having two conformations, and 26.0% (n = 19) having three conformations (Figure 6—figure supplement 1A). Compared to the single-conformer deposited models, qFit-ligand improved the RSCC in 69.9% (n = 51) of structures (Figure 6A). We observed a correlation between the number of conformers generated by qFit-ligand and the RSCC of the input model (Figure 6—figure supplement 1B), where a lower input RSCC increases the likelihood of identifying more alternate conformers. For our EDIAm calculations, we assume that the electron density contribution from an atom adopts a spherical shape. This assumption becomes invalid at map resolutions worse than 2 Å, as the atomic scattering factors can no longer be reliably approximated by the Gaussian functions. Only 36 structures met the 2 Å resolution criteria, and we computed EDIAm values for this subset. Among them, 58.3% (n = 21/36) showed higher EDIAm values in the qFit-ligand models compared to their corresponding deposited structures (Figure 6B). Torsion strain analysis showed that 57.5% (n = 42/73) of structures had a lower qFit-ligand model strain, with a mean strain difference of –0.1 kcal/mol. This indicates that, on average, our models maintain a similar level of energetic favorability as the deposited structures, while improving the fit to density (Figure 6A, C).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig6-v1.jpg)
+
+**Figure 6.:** (A) Differences in real space correlation coefficients (RSCC) and torsion strain between qFit-ligand predicted structures and refined deposited single-conformer macrocycles. The lower right quadrant shows structures for which we improve both RSCC and strain. (B) Differences in EDIAm values between the qFit-ligand and deposited models. Bars to the right of the vertical axis represent structures where the qFit-ligand model fits better to the electron density map. (C) Gallery of examples for which the qFit-ligand models have improved RSCC and strain compared to the deposited single-conformer macrocycle ligand. The composite omit density map is contoured at 1σ for every structure.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Distribution of the number of conformers in qFit-ligand output models, showing varied conformer presence with a median of two conformers per structure. (B) Correlation between the number of conformers output by qFit-ligand and the real space correlation coefficients (RSCC) of the input model. Higher input RSCC tends to yield a lower number of qFit-ligand conformers. (C) Comparison of strain between the single conformer deposited macrocycle and the qFit-ligand ‘B’ conformer for PDB 4Z2G using the COOT ligand distortion tool. The penalty scores for the two most distorted bonds and angles in the deposited model (left), compared to the same bonds and angles in the qFit-ligand ‘B’ conformer (right), demonstrating reduced strain in the alternate conformation. The deposited conformer is highly strained, with the highest bond penalty scores of 71.97 (C1–O2) and 69.32 (C14–O3), and the highest angle penalty scores of 29.97 (C2–C1–O2) and 25.5 (O3–C14–N1). The qFit-ligand ‘B’ conformer is significantly less distorted at these locations. For the same bonds and angles, it produces a penalty score of 1.93 (C1–O2), 0.45 (C14–O3), 0.90 (C2–C1–O2), and 1.19 (O3–C14–N1).
+
 A few outlier cases have substantially reduced strain in the qFit-ligand models, particularly PDB 4Z2G, which shows a decrease of 4.61 kcal/mol (Figure 6—figure supplement 1C). In this case, qFit-ligand generated two conformers: one similar, including the strained pathologies, to the deposited model and a second, distinct conformer. Using COOT’s ligand distortion tool, we compared the strain between the deposited and this distinct qFit-ligand ‘B’ conformer by analyzing each bond and angle (Emsley, 2017). This tool evaluates deviations from ideal geometries based on COD (Crystallography Open Database) data, with restraint dictionaries generated through the AceDRG program (Long et al., 2017b; Long et al., 2017a) (Methods). In the qFit model, the overall strain is lower because alternative conformer ‘A’ is now at partial occupancy, and the ‘B’ conformer has much lower strain. Overall, while qFit-ligand primarily improves RSCC across most models, in a subset of cases, it also substantially reduces strain, demonstrating its ability to enhance both the fit and the energetic favorability of macrocycle conformations.
 
-## qFit-ligand recovers heterogeneity in fragment-soaked event maps
+### qFit-ligand recovers heterogeneity in fragment-soaked event maps
 
 X-ray crystallography-based fragment screens have taken off in academic and industry settings (Günther et al., 2021; Gahbauer et al., 2023; Hartshorn et al., 2005; Badger, 2012). Accurately modeling fragments is essential for effective building and merging strategies to create more drug-like molecules. However, as fragments are often bound at low occupancy, modeling into traditional 2Fo − Fc maps is incredibly difficult. To overcome this, ‘event maps’ are often created to detect low-occupancy ligands by averaging electron density across many apo datasets and subtracting these from the density of a potential ligand-bound structure (Pearce et al., 2017). This produces a ligand binding ‘event map’ and an estimate of the ligand occupancy. Once event maps are created, a modeler must manually fit the single or multiple conformations of the ligand into it. Therefore, we wanted to determine if qFit-ligand could automatically identify and model multiple conformations in event maps.
 
@@ -134,11 +192,23 @@ To assess qFit-ligand’s ability to detect multiple conformations in event maps
 
 We created a modified true positive dataset (n = 20) by removing all ‘B’ conformers and setting the ‘A’ conformer occupancy to 1.0. qFit-ligand was then run as described above, but with an event map, rather than a composite omit map (Methods). To determine how precisely we captured the second conformation, we calculated the RMSD between the manually modeled ‘B’ conformer and the closest qFit-ligand conformer for each structure (Figure 7A). Only 9 of the structures exhibit an RMSD of less than 0.5 Å, indicating that for approximately half of the cases, our algorithm struggles to recapitulate the second deposited conformer. Of the 11 fragments with poor RMSD, about a third (n = 4/11) adopted a completely different binding pose, which our current algorithm often fails to capture accurately due to reliance on the input model. This highlights a limitation of our sampling strategy and suggests a potential direction for future development (Figure 7—figure supplement 1).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig7-v1.jpg)
+
+**Figure 7.:** (A) Root mean square deviation (RMSD) between the deposited ‘B’ conformer and the closest qFit-ligand conformer. Lower values correlate with a closer recapitulation of the deposited heterogeneity. (B) Real space correlation coefficients (RSCC) and torsion strain differences in the deposited models and the qFit-ligand predicted models. The lower right quadrant shows structures for which we improve both RSCC and strain. (C) Differences in EDIAm values between the qFit-ligand and modified true positive models. Bars to the right of the vertical axis represent structures where the qFit-ligand model fits better to the event map. (D) Gallery of examples for which qFit-ligand successfully recovers well-fitting alternate conformers. The composite omit density map is contoured at 1σ for every fragment.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Due to qFit-ligand’s sampling bias toward the input structure, we largely fail to recover the known heterogeneity of this sample, with an RMSD of 0.70 Å between the qFit model and the deposited ‘B’. qFit real space correlation coefficients (RSCC) and strain show improvements over the single conformer modified true positive, but EDIAm worsens. The event density map is contoured at 1σ for both structures.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/103797/elife-103797-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** qFit-ligand generates a multiconformer model with a relatively high root mean square deviation (RMSD) (0.5 Å) to the deposited ‘B’ conformer. The closest qFit-ligand conformer (yellow) shares an extremely similar atomic space with the deposited ‘B’, differing primarily due to a flipped Thiophene, resulting in the high RMSD. Despite this, the qFit-ligand model has an improved fit to the electron density, indicating that multiple distinct conformations can accurately explain the experimental data.
+
 Despite this, compared to the modified true positive models, the qFit-ligand models had a higher RSCC in 17 structures and a higher EDIAm in 15 (Figure 7B, C). There are a number of structures for which we calculate an RMSD >0.5 Å and also an improved qFit-ligand map-to-model fit. In many of these cases, the improvement is generally very small. In others, we believe they represent situations where multiple combinations of conformations can accurately represent the underlying data. For instance, in PDB 7HHW, the qFit-ligand model generated a flipped Thiophene compared to the deposited model, resulting in a relatively high RMSD to the deposited 'B' while still providing an equally good fit to the electron density (Figure 7—figure supplement 2). In addition, the torsion strain analysis reveals that 13 structures have a lower strain in the qFit-ligand model, and 12 structures have both a higher RSCC and a lower model strain in the qFit-ligand model (Figure 7B). While the mean strain improvement in the qFit-ligand models was marginal, only –0.6 kcal/mol, it indicates that we can reliably fit to density without straining the molecule (Figure 7D).
 
 In this use case, qFit-ligand models alternative conformations into an event map, which represents only partial occupancy of the unit cell. Therefore, we scale the output ligand conformer occupancies to estimated occupancy from the background density correction prior to merging into the full system. Following this scaling, we perform standard refinement and note that the sum of occupancy across ligand conformations is a refined variable that can be <1. Together, these results suggest that qFit-ligand can be used alongside manual modeling of fragment modeling, but additional development is needed where there are large ligand conformational changes.
 
-## qFit-ligand models multiple conformations of ligands into cryo-EM density maps
+### qFit-ligand models multiple conformations of ligands into cryo-EM density maps
 
 Recent advances in cryo-EM are resulting in many reconstructions with better than 2 Å resolution. At this resolution, it is possible to resolve conformational heterogeneity at the atomic level, prompting us to determine if qFit-ligand can capture this heterogeneity. To evaluate the performance of qFit-ligand on cryo-EM data, we examined recently deposited inhibitors of human CDK-activating kinase, a three-subunit protein complex recognized as a compelling candidate for cancer and antiviral drug development (Cushing et al., 2024). Four of their molecules were manually modeled as multiconformer ligands, providing a valuable set of true positives (Figure 8). All map resolutions were better than 2 Å, and ligand molecular weights were between 350 and 397 Da (Supplementary file 7, table 7).
 
@@ -168,7 +238,7 @@ Finally, we ultimately strive for modeling the conformational heterogeneity acro
 
 ## Methods
 
-## Running qFit-ligand
+### Running qFit-ligand
 
 SMILES strings used as input for qFit-ligand are fetched from the PDB, given the three-letter ligand identifier. Our RDKit-based conformer sampling is initialized from the input PDB file; however, RDKit often misassigns bond orders when interpreting PDBs directly. Therefore, we use the SMILES string as a template for correcting bond orders in the generated conformers.
 
@@ -180,15 +250,19 @@ To run qFit-ligand when using a cryo-EM map, we used the following command:
 
 Code for running qFit-ligand is available in our Github repository (https://github.com/ExcitedStates/qfit-3.0 copy archived at Riley et al., 2025) under version 2024.3 and SBGrid (https://sbgrid.org/).
 
-## RDKit’s ETKDG implementation
+### RDKit’s ETKDG implementation
 
-ETKDG is an enhancement of traditional Distance Geometry (DG), implemented within RDKit’s EmbedMultipleConfs function (Riniker and Landrum, 2015). During the distance bounds matrix construction, bounds are set for 1–2 (bonded atoms), 1–3 (bond angle related atoms), 1–4 (torsion angle related atoms), and 1–5 interactions, based on empirical knowledge of ideal bond lengths and angles from chemical structures. These bounds are subsequently sampled and embedded into 3D coordinates. Next, a minimization step is performed using SMARTS patterns to identify torsional substructures in the molecule (Schärfer et al., 2013), where for each SMARTS identified torsion pattern, the corresponding torsional potential is applied to the sampled conformation. These energy functions describe the energetic preference for specific dihedral angles and guide the RDKit-generated torsions toward experimentally observed angle ranges. The functional form is expressed as a cosine series expansion, and the parameters are fit to experimental torsion angle distributions from the CSD. Following the torsional minimization, we apply a force field minimization using the MMFF94 force field via the ForceField.rdForceField module of RDKit. The force field has the functional form ofEMMFF=∑EBij+∑EAijk∑EBAijk+∑EOOPijk;l+∑ETijkl+∑EcdWij+∑EQij\begin{document}$$\displaystyle  E_{MMFF} =\sum EB_{ij} +\sum EA_{ijk} \sum EBA_{ijk}+\sum EOOP_{ijk;l}+\sum ET_{ijkl}+\sum EcdW_{ij}+\sum EQ_{ij}$$\end{document}
+ETKDG is an enhancement of traditional Distance Geometry (DG), implemented within RDKit’s EmbedMultipleConfs function (Riniker and Landrum, 2015). During the distance bounds matrix construction, bounds are set for 1–2 (bonded atoms), 1–3 (bond angle related atoms), 1–4 (torsion angle related atoms), and 1–5 interactions, based on empirical knowledge of ideal bond lengths and angles from chemical structures. These bounds are subsequently sampled and embedded into 3D coordinates. Next, a minimization step is performed using SMARTS patterns to identify torsional substructures in the molecule (Schärfer et al., 2013), where for each SMARTS identified torsion pattern, the corresponding torsional potential is applied to the sampled conformation. These energy functions describe the energetic preference for specific dihedral angles and guide the RDKit-generated torsions toward experimentally observed angle ranges. The functional form is expressed as a cosine series expansion, and the parameters are fit to experimental torsion angle distributions from the CSD. Following the torsional minimization, we apply a force field minimization using the MMFF94 force field via the ForceField.rdForceField module of RDKit. The force field has the functional form of
+
+$$
+E_{MMFF}=\sumEB_{ij}+\sumEA_{ijk}\sumEBA_{ijk}+\sumEOOP_{ijk;l}+\sumET_{ijkl}+\sumEcdW_{ij}+\sumEQ_{ij}
+$$
 
 Where the terms refer to bond stretching, angle bending, stretch-bend, out-of-plane bending, torsional, van der Waals, and electrostatic, respectively (Tosco et al., 2014).
 
-## Pre-qFit refinement protocol
+### Pre-qFit refinement protocol
 
-## For X-ray maps
+#### For X-ray maps
 
 Before running qFit-ligand, all input models are stripped of their alt confs, resulting in a set of single-conformer coordinate files with ‘A’ ligand occupancies set to 1.0. We use phenix.ready_set (or phenix.elbow if phenix.ready_set fails) to generate cif files for ligand restraint during refinement. All pre-qFit refinement uses the following parameters.
 
@@ -196,11 +270,11 @@ After refinement, we generate a composite omit map from the refined model to use
 
 Setting exclude_bulk_solvent=True prevents the bulk solvent model from being applied, which typically accounts for disordered solvent by filling low-density areas in the map. When bulk solvent correction is included, it adjusts the electron density by assuming the presence of uniform solvent in regions of low density, such as areas surrounding the ligand. This can reduce the contrast between weak ligand density and the surrounding solvent, potentially smearing or flattening the electron density around flexible or poorly ordered regions like alternative ligand conformations. By excluding bulk solvent correction, you retain the raw electron density in those regions, ensuring the density is not artificially raised or smoothed. This allows clearer visualization of weak or partial densities that might indicate alternative conformers.
 
-## For cryo-EM maps
+### For cryo-EM maps
 
 For cryo-EM data, we use a similar refinement protocol, but instead use phenix.real_space_refine (Afonine et al., 2018). We mainly use default parameters, but specify the following:
 
-## Post-qFit refinement protocol
+### Post-qFit refinement protocol
 
 After qFit-ligand is run, and before the final refinement, if there are any conformers <0.1 occupancy, they are culled from the output multiconformer model. Again, we use phenix.ready_set (or phenix.elbow if phenix.ready_set fails) to generate cif files for ligand restraint during refinement. All crystal structures are subsequently refined with the following parameters.
 
@@ -210,69 +284,115 @@ After five macro cycles of refinement, we then remove and redistribute the occup
 
 If running qFit-ligand on an event map, the refinement process involves an additional step. When using the optional --BDC flag, the script scales the occupancies of the qFit-ligand generated conformers by a factor of (1 − BDC), and produces a new protein-ligand PDB file with the adjusted occupancies. The new PDB file is then processed through the standard refinement protocol, as described above.
 
-## Ligand geometry validation of macrocycles
+### Ligand geometry validation of macrocycles
 
 To validate the geometry of the macrocyclic ligands, we employed a quick check to ensure that the chemical structure had not been altered during refinement. Specifically, we checked that the chemical connectivity of the ligand remained unchanged, even if the conformation varied.
 
 This method serves as a fast, automated ‘sanity check’ to flag potential problems, helping to avoid the need for manual inspection of each PDB file.
 
-## COOT’s ligand distortion tool
+### COOT’s ligand distortion tool
 
-To examine how conformational differences impacted strain in select examples from the macrocycle dataset, we used COOT’s ligand distortion tool (Emsley, 2017). The penalty score is calculated using Hooke’s Law, where target values and sigma values from the restraint files are used. The non-bonded interactions are penalized using the Lennard–Jones potential, with atom radii taken from the CCP4 geometry tables. Larger deviations from ideal geometries result in higher penalties, and the overall penalty score is calculated as (deviationσ)2\begin{document}$\left (\frac{deviation}{\sigma }\right)^{2}$\end{document}, where σ represents the standard deviation of the target value, functioning as the spring constant in Hooke’s Law.
+To examine how conformational differences impacted strain in select examples from the macrocycle dataset, we used COOT’s ligand distortion tool (Emsley, 2017). The penalty score is calculated using Hooke’s Law, where target values and sigma values from the restraint files are used. The non-bonded interactions are penalized using the Lennard–Jones potential, with atom radii taken from the CCP4 geometry tables. Larger deviations from ideal geometries result in higher penalties, and the overall penalty score is calculated as $(\frac{deviation}{\sigma})^{2}$, where σ represents the standard deviation of the target value, functioning as the spring constant in Hooke’s Law.
 
-## Scoring
+#### Scoring
 
-QP solvers handle Quadratic Programming problems (Agrawal et al., 2017; Diamond and Boyd, 2016). These problems involve an objective function that is quadratic (a polynomial of degree two) and is subject to linear constraints. The primary goal in the QP framework is to find the combination of conformer occupancies, stored in vector ω=<ω0,...,ωn>\begin{document}$\omega =<\omega _{0},...,\omega _{n}\gt $\end{document}, that minimize the difference between the observed electron density and the electron density calculated from the model. Mathematically, this minimizes a residual sum-of-squares function, rss(ω)\begin{document}$rss\left (\omega \right)$\end{document}:minω(rss(ω))=minω(∥ρcω−ρo∥2)\begin{document}$$\displaystyle  min_{\omega } (rss(\omega ))=min_{\omega } (\parallel \rho ^{c}\omega - \rho ^{o}\parallel^{2} )$$\end{document}
+QP solvers handle Quadratic Programming problems (Agrawal et al., 2017; Diamond and Boyd, 2016). These problems involve an objective function that is quadratic (a polynomial of degree two) and is subject to linear constraints. The primary goal in the QP framework is to find the combination of conformer occupancies, stored in vector $\omega=<\omega_{0},...,\omega_{n}>$, that minimize the difference between the observed electron density and the electron density calculated from the model. Mathematically, this minimizes a residual sum-of-squares function, $rss(\omega)$:
 
-These occupancies are meaningful parameters, so we require that their sum is within the unit interval, ensuring the total model density does not surpass 100% occupancy.Σωi≤1\begin{document}$$\displaystyle  \Sigma \omega _{i}\leq 1$$\end{document}
+$$
+min_{\omega}(rss(\omega))=min_{\omega}(∥ρ^{c}\omega−ρ^{o}∥^{2})
+$$
 
-Each individual occupancy must be a positive fractional number, meaning each conformer’s contribution is between none and full.0≤ωi≤1\begin{document}$$\displaystyle  0\leq \omega _{i}\leq 1$$\end{document}
+These occupancies are meaningful parameters, so we require that their sum is within the unit interval, ensuring the total model density does not surpass 100% occupancy.
+
+$$
+Σ\omega_{i}\leq1
+$$
+
+Each individual occupancy must be a positive fractional number, meaning each conformer’s contribution is between none and full.
+
+$$
+0\leq\omega_{i}\leq1
+$$
 
 MIQP solvers extend the capabilities of QP solvers by incorporating integer constraints into the optimization problem.
 
 Again, we set up the minimization problem:
 
-minω(rss(ω))=minω(∥ρcω−ρo∥2)\begin{document}$min_{\omega } (rss(\omega ))=min_{\omega } (\parallel \rho ^{c}\omega - \rho ^{o}\parallel^{2} )$\end{document}Σωi≤1\begin{document}$$\displaystyle  \Sigma \omega _{i}\leq 1$$\end{document}
+$min_{\omega}(rss(\omega))=min_{\omega}(∥ρ^{c}\omega−ρ^{o}∥^{2})$
 
-Here, we select up to a predetermined number of conformers (cardinality) that meets a minimum occupancy threshold, with all others set to zero. This selection is achieved through mixed-integer linear constraints:zitmin≤ωi≤zi\begin{document}$$\displaystyle  z_{i}t_{min}\leq \omega _{i}\leq z_{i}$$\end{document}
+$$
+Σ\omega_{i}\leq1
+$$
 
-wherezi∈{0,1}\begin{document}$$\displaystyle  z_{i}\in \left \{0,1\right \}$$\end{document}
+Here, we select up to a predetermined number of conformers (cardinality) that meets a minimum occupancy threshold, with all others set to zero. This selection is achieved through mixed-integer linear constraints:
 
-tmin\begin{document}$t_{min}$\end{document} is the minimum-allowable occupancy value for ωi\begin{document}$\omega _{i}$\end{document}. If ωi\begin{document}$\omega _{i}$\end{document} in non-zero, it must be at least tmin\begin{document}$t_{min}$\end{document}.
+$$
+z_{i}t_{min}\leq\omega_{i}\leqz_{i}
+$$
 
-The integer constraint limits the number of conformers explicitly. Cardinality is set to three, and the minimum occupancy tmin\begin{document}$t_{min}$\end{document} set to 0.20, so only up to three conformers can have non-zero weights (of at least tmin\begin{document}$t_{min}$\end{document}) in the final multiconformer model.
+where
+
+$$
+z_{i}\in{0,1}
+$$
+
+$t_{min}$ is the minimum-allowable occupancy value for $\omega_{i}$. If $\omega_{i}$ in non-zero, it must be at least $t_{min}$.
+
+The integer constraint limits the number of conformers explicitly. Cardinality is set to three, and the minimum occupancy $t_{min}$ set to 0.20, so only up to three conformers can have non-zero weights (of at least $t_{min}$) in the final multiconformer model.
 
 Should the user include the optional ‘--cryo_em_ligand’ flag on the command line, the cardinality will be reduced from three to two.
 
-## RSCC
+#### RSCC
 
-The RSCC is a metric used to assess how well a modeled structure fits into the observed electron density in a crystallographic experiment. It compares the observed electron density values with the electron density values calculated from the model. RSCC values range from 0 to 1, with values above 0.80 generally indicating a good fit. RSCC is calculated using a linear sample correlation coefficient formula:RSCC=coor(ρobs,ρcalc)=cov(ρobs,ρcalc)var(ρobs)var(ρcalc)\begin{document}$$\displaystyle  RSCC=coor(\rho _{obs},\rho _{calc}) = \frac{cov(\rho_{obs}, \rho_{calc})}{\sqrt{var(\rho_{obs})var(\rho_{calc})} }$$\end{document}=∑∣ρobs−<ρobs>∣∑∣ρcalc−<ρcalc>∣∑∣ρobs−<ρobs>∣2∑∣ρcalc−<ρcalc>∣2\begin{document}$$\displaystyle  \quad\quad\quad\quad=\frac{\sum\mid \rho _{obs}-<\rho _{obs}>\mid \sum\mid \rho _{calc}-<\rho _{calc}>\mid }{\sqrt{\sum\mid \rho _{obs}-<\rho _{obs}>\mid ^{2}\sum\mid \rho _{calc}-<\rho _{calc}>\mid ^{2} } }$$\end{document}
+The RSCC is a metric used to assess how well a modeled structure fits into the observed electron density in a crystallographic experiment. It compares the observed electron density values with the electron density values calculated from the model. RSCC values range from 0 to 1, with values above 0.80 generally indicating a good fit. RSCC is calculated using a linear sample correlation coefficient formula:
 
-where ρobs\begin{document}$\rho _{obs}$\end{document} is the observed electron density at grid points covering the residue of interest (the input density map), and ρcalc\begin{document}$\rho _{calc}$\end{document} is the density map calculated from the model (Tickle, 2012).
+$$
+RSCC=coor(ρ_{obs},ρ_{calc})=\frac{cov(ρ_{obs},ρ_{calc})}{\sqrt{var(ρ_{obs})var(ρ_{calc})}}
+$$
+
+
+
+$$
+=\frac{\sum∣ρ_{obs}−<ρ_{obs}>∣\sum∣ρ_{calc}−<ρ_{calc}>∣}{\sqrt{\sum∣ρ_{obs}−<ρ_{obs}>∣^{2}\sum∣ρ_{calc}−<ρ_{calc}>∣^{2}}}
+$$
+
+where $ρ_{obs}$ is the observed electron density at grid points covering the residue of interest (the input density map), and $ρ_{calc}$ is the density map calculated from the model (Tickle, 2012).
 
 To calculate RSCC, we must first determine which density map voxels belong to the ligand. We created a mask around the coordinates of the full qFit-ligand ensemble, and only the density values under this mask’s footprint are extracted for the calculation. The same mask is used to calculate the RSCC of the input (single-conformer) model versus the qFit-ligand model.
 
 Code for calculating RSCC is available on our GitHub repository.
 
-## EDIAm
+#### EDIAm
 
-EDIA is a method for estimating the electron density support for an individual atom in a density map. This is determined by sampling grid points p\begin{document}$p$\end{document} in a sphere around the atom of interest a\begin{document}$a$\end{document}, and calculating the weighting factor, an ownership value, and the density score (Meyder et al., 2017).EDIA(a)=∑p∈M2f0−fcw(p,a)o(p,a)z(p)∑p∈M2f0−fc|w(p,a)>0w(p,a)\begin{document}$$\displaystyle  {\rm EDIA}(a)=\frac{\sum\limits^{p\in M_{2f0-fc}}{w(p,a)\,o\,(p,a)z(p)} }{\sum\limits_{p\in M_{2f0-fc|w(p,a)>0}}{w(p,a)}}$$\end{document}
+EDIA is a method for estimating the electron density support for an individual atom in a density map. This is determined by sampling grid points $p$ in a sphere around the atom of interest $a$, and calculating the weighting factor, an ownership value, and the density score (Meyder et al., 2017).
 
-The distance-dependent weighting factor ω(p,a)\begin{document}$\omega \left (p,a\right)$\end{document} distinguishes between meaningful and excess electron density near atom a\begin{document}$a$\end{document}, assigning negative weights to density located outside the atom’s expected region. The ownership function o(p,a)\begin{document}$o\left (p,a\right)$\end{document} allocates each grid point p\begin{document}$p$\end{document} to one or more atoms, determining which parts of the map are attributed to which atoms. The density score z(p)\begin{document}$z\left (p\right)$\end{document} for an atom a\begin{document}$a$\end{document} is then computed as follows:z(p)={0if ρ(p)−μσ<0.0ρ(p)−μσif 0≤ρ(p)−μσ≤ζζif ρ(p)−μσ>ζ\begin{document}$$\displaystyle  z(p)=\left\{ \begin{array}{ll} 0 & \text{if } \frac{\rho(p) - \mu}{\sigma} < 0.0 \\ \frac{\rho(p) - \mu}{\sigma} & \text{if } 0 \leq \frac{\rho(p) - \mu}{\sigma} \leq \zeta \\ \zeta & \text{if } \frac{\rho(p) - \mu}{\sigma} > \zeta \end{array} \right.$$\end{document}
+$$
+EDIA(a)=\frac{\sump\inM_{2f0−fc}w(p,a)o(p,a)z(p)}{\sump\inM_{2f0−fc|w(p,a)>0}w(p,a)}
+$$
 
-where ζ=1.2\begin{document}$\zeta =1.2$\end{document}, ρ(p)\begin{document}$\rho \left (p\right)$\end{document} represents the density at grid point p\begin{document}$p$\end{document}, µ is the mean of the 2fo−fc\begin{document}$2_{fo- fc}$\end{document} map, and σ\begin{document}$\sigma $\end{document} is the root mean square of the 2fo−fc\begin{document}$2_{fo- fc}$\end{document} map. To quantify the fit of an entire molecule to the electron density map (EDIAm), the EDIA score is first computed for each atom individually and then combined across all atoms in the ligand. Code for calculating EDIAm is available on our GitHub repository.
+The distance-dependent weighting factor $\omega(p,a)$ distinguishes between meaningful and excess electron density near atom $a$, assigning negative weights to density located outside the atom’s expected region. The ownership function $o(p,a)$ allocates each grid point $p$ to one or more atoms, determining which parts of the map are attributed to which atoms. The density score $z(p)$ for an atom $a$ is then computed as follows:
 
-## RMSD
+$$
+z(p)={0if \frac{ρ(p)−\mu}{\sigma}<0.0\frac{ρ(p)−\mu}{\sigma}if 0\leq\frac{ρ(p)−\mu}{\sigma}\leqζζif \frac{ρ(p)−\mu}{\sigma}>ζ
+$$
+
+where $ζ=1.2$, $ρ(p)$ represents the density at grid point $p$, µ is the mean of the $2_{fo−fc}$ map, and $\sigma$ is the root mean square of the $2_{fo−fc}$ map. To quantify the fit of an entire molecule to the electron density map (EDIAm), the EDIA score is first computed for each atom individually and then combined across all atoms in the ligand. Code for calculating EDIAm is available on our GitHub repository.
+
+#### RMSD
 
 RMSD is a widely used metric in structural biology for comparing molecular conformations. It measures the average distance between corresponding atoms of two superimposed structures and is valuable for assessing differences in conformers, protein structures, and ligand poses.
 
-The RMSD between two sets of atomic coordinates is calculated using the formula:RMSD=1N∑i=1N[(xi(1)+xi(2))+(yi(1)−yi(2))+(zi(1)−zi(2))]\begin{document}$$\displaystyle  RMSD=\sqrt{\frac{1}{N}\sum\limits_{i=1}^{N} [(x^{(1)}_{i} +x^{(2)}_{i} )+(y^{(1)}_{i} -y^{(2)}_{i})+(z^{(1)}_{i} -z^{(2)}_{i})] } $$\end{document}
+The RMSD between two sets of atomic coordinates is calculated using the formula:
 
-where N\begin{document}$N$\end{document} is the number of atoms, and (xi(1),yi(1),zi(1))\begin{document}$\left (x_{i}^{\left (1\right)},y_{i}^{\left (1\right)},z_{i}^{\left (1\right)}\right)$\end{document} and (xi(2),yi(2),zi(2))\begin{document}$\left (x_{i}^{\left (2\right)},y_{i}^{\left (2\right)},z_{i}^{\left (2\right)}\right)$\end{document} are the coordinates of the ith atom in the two conformers.
+$$
+RMSD=\sqrt{\frac{1}{N}\sumi=1N[(x_{i}^{(1)}+x_{i}^{(2)})+(y_{i}^{(1)}−y_{i}^{(2)})+(z_{i}^{(1)}−z_{i}^{(2)})]}
+$$
+
+where $N$ is the number of atoms, and $(x_{i}^{(1)},y_{i}^{(1)},z_{i}^{(1)})$ and $(x_{i}^{(2)},y_{i}^{(2)},z_{i}^{(2)})$ are the coordinates of the ith atom in the two conformers.
 
 Code for calculating the RMSD between two conformers of a ligand is available on our GitHub repository.
 
-## Torsion strain
+### Torsion strain
 
 To calculate molecular strain, we take advantage of software available at https://tldr.docking.org/ Gu et al., 2021.
 
@@ -280,7 +400,7 @@ The TLDR software employs a statistical method based on torsion patterns observe
 
 For each torsion pattern, the software retrieves a histogram of observed dihedral angles and their associated energies. The dihedral angle of the molecule’s conformation is matched to this histogram, and the corresponding energy is determined. This process is repeated for all torsion patterns in the molecule, and the total strain energy is calculated by summing the individual torsion energies.
 
-## Generating a synthetic dataset
+### Generating a synthetic dataset
 
 To create our synthetic dataset, we constructed four multiconformer ligands using COOT (Emsley et al., 2010). We generated five new PDB files for each ligand, varying the occupancy between the two conformers in the ratios: 0.50/0.50, 0.40/0.60, 0.30/0.70, 0.20/0.80, and 0.10/0.90. These files represent different relative populations of the conformers. For each of these ligand models, we produced a series of electron density maps covering resolutions from 0.8 to 2.5 Å, with increments of 0.1 Å using phenix.fmodel. This process involves the following steps.
 
@@ -290,17 +410,17 @@ phenix.fmodel is used with the following parameters:
 
 The full script is available at: https://github.com/fraser-lab/qFit_biological_testset (copy archived at Ravikumar and Wankowicz, 2024).
 
-## X-ray crystallography
+### X-ray crystallography
 
 Mac1 crystals (P43 construct, residues 3–169) were grown by sitting-drop vapor diffusion in 28% wt/vol 570 polyethylene glycol 3000 and 100 mM N-cyclohexyl-2-aminoethanesulfonic acid pH 9.5 as described previously (Gahbauer et al., 2023; Schuller et al., 2021). Compounds prepared in DMSO (100 mM) were added to crystal drops using an Echo 650 acoustic dispenser (final concentration of 10 mM) (Collins et al., 2017). Crystals were incubated at room temperature for 2–4 hr prior to vitrification in liquid nitrogen without additional cryoprotection. X-ray diffraction data were collected at the Advanced Light Source (ALS beamline 8.3.1) or the Stanford Synchrotron Light Source (SSRL beamline 9–2). Data were indexed, integrated, and scaled with XDS (Kabsch, 2010) and merged with Aimless (Evans and Murshudov, 2013). The P43 Mac1 crystals contain two copies of the protein in the asymmetric unit (chains A and B). The active site of chain A is open; however chain B is blocked by a crystal contact. We previously observed that potent Mac1 inhibitors dissolve crystals, likely through the displacement of the B chain crystal contact (Gahbauer et al., 2023). In addition, crystal packing in the chain A active site restricts movement of the Ala129–Gly134 loop, leading to decreased occupancy for compounds with substituents on the pyrrolidinone. To aid modeling the resulting conformational and compositional disorder, we used the PanDDA method (Pearce et al., 2017) to model ligands where the occupancy was low (<25%) or where there was substantial disorder. After modeling ligands, structures were refined using phenix.refine (Liebschner et al., 2019) as described previously (Gahbauer et al., 2023). Data collection settings and statistics are reported in Supplementary file 6, table 6.
 
-## Chemical synthesis
+### Chemical synthesis
 
 Unless otherwise noted, all chemical reagents and solvents used are commercially available. Air and/or moisture-sensitive reactions were carried out under an argon atmosphere in oven-dried glassware using anhydrous solvents from commercial suppliers. Air and/or moisture-sensitive reagents were transferred via syringe or cannula and were introduced into reaction vessels through rubber septa. Solvent removal was accomplished with a rotary evaporator at ca. 10–50 Torr. Microwave reactions were carried out in a CEM Discover microwave reactor. Chromatography was carried out using the Isolera Four flash chromatography system with SiliaSep silica gel cartridges from Silicycle.
 
 Chemical shifts are reported in d units (ppm). NMR spectra were referenced relative to residual NMR solvent peaks. Coupling constants (J) are reported in hertz (Hz). NMR spectra were recorded on Bruker Avance III HD 400 MHz spectrometer or Bruker 500 MHz spectrometer.
 
-## 4-Chloro-9H-pyrimido[4,5-b]indol-8-amine
+### 4-Chloro-9H-pyrimido[4,5-b]indol-8-amine
 
 A solution of 3-fluoro-2-nitroaniline (11 g, 70.51 mmol) in acetic anhydride (20 ml) was stirred at room temperature for 16 hr. The reaction mixture was filtered, and the solids were washed with petroleum ether (100 ml) and dried to obtain 10.7 g (77%) of N-(3-fluoro-2-nitrophenyl)acetamide as a brown solid. LC–MS (ESI): m/z = 199.3 (M+H)+.
 
@@ -314,50 +434,50 @@ A solution of 8-amino-9H-pyrimido[4,5-b]indol-4-ol (3.5 g, 17.5 mmol) in formami
 
 To a solution of N-(4-hydroxy-9H-pyrimido[4,5-b]indol-8-yl)formamide (3.5 g, 15.35 mmol) in phosphorus oxychloride (30 ml) was added N,N-diiisopropylethylamine (5.94 g, 46.05 mmol). After refluxing for 16 hr, the reaction mixture was cooled to room temperature, concentrated, and poured into water (20 ml). The resulting solid was filtered to obtain 500 mg of a mixture of N-(4-chloro-9H-pyrimido[4,5-b]indol-8-yl)formamide and 4-chloro-9H-pyrimido[4,5-b]indol-8-amine as a black solid. This mixture was taken in 4 N HCl in dioxane (15 ml). After stirring at room temperature for 4 hr, the reaction mixture was concentrated under reduced pressure, and the residue was adjusted to pH 7 with aq.Na2CO3, and extracted with EA (3 × 30 ml). The organic layers were dried over sodium sulfate, concentrated under reduced pressure, and the residue was purified by reverse phase chromatography (water/acetonitrile/0.1% ammonium bicarbonate) to obtain 320 mg (10%) of 4-chloro-9H-pyrimido[4,5-b]indol-8-amine as a white solid. 1H NMR (500 MHz, DMSO) δ 12.42 (s, 1H), 8.74 (s, 1H), 7.58 (d, J = 7.8 Hz, 1H), 7.25–7.08 (m, 1H), 6.93 (d, J = 7.7 Hz, 1H), 5.76 (s, 2H). LC–MS (ESI): m/z = 219.2 (M+H)+.
 
-## AVI-4197/RLA-5830
+### AVI-4197/RLA-5830
 
 To a solution of N-(4-chloro-9H-pyrimido[4,5-b]indol-8-yl)formamide and 4-chloro-9H-pyrimido[4,5-b]indol-8-amine (110 mg, 0.447 mmol), (R)-valinol (69.01 mg, 0.67 mmol) in DMSO (2 ml) was added triethylamine (171.6 mg, 1.41 mmol). After stirring at 100°C for 16 hr, the reaction mixture was extracted with ethyl acetate (3 × 20 ml), washed with brine (20 ml). The organic layer was dried over Na2SO4. The organic extracts were concentrated, and the residue was purified by silica gel column chromatography (50% ethyl acetate/petroleum ether) to obtain (R)-N-(4-((1-hydroxy-3-methylbutan-2-yl)amino)-9H-pyrimido[4,5-b]indol-8-yl)formamide as a white solid (45 mg, yield: 15.2%). LC–MS (ESI): m/z = 314.3 (M+H)+; RT = 1.30 min.
 
 A solution of (R)-N-(4-((1-hydroxy-3-methylbutan-2-yl)amino)-9H-pyrimido[4,5-b]indol-8-yl)formamide (40 mg, 0.13 mmol) in HCl-dioxane (15 ml) was stirred at room temperature for 4 hr. The mixture was adjusted to pH 7 with aq.Na2CO3, and extracted with ethyl acetate (3 × 30 ml). The organic layer was dried over Na2SO4, the organic was concentrated and the residue was purified by reverse phase chromatography (0.1% NH4HCO3 in water, 10–100% ACN) to obtain (R)-2-((8-amino-9H-pyrimido[4,5-b]indol-4-yl)amino)-3-methylbutan-1-ol (AVI-4197) as a white solid (28.1 mg, yield: 70.52%). 1H NMR (500 MHz, MeOD) δ 8.27 (s, 1H), 7.38 (d, J = 7.8 Hz, 1H), 7.12 (t, J = 7.8 Hz, 1H), 6.82 (d, J = 7.7 Hz, 1H), 4.30–4.26 (m, 1H), 3.88 (dd, J = 11.3, 4.8 Hz, 1H), 3.80 (dd, J = 11.3, 4.0 Hz, 1H), 2.17 (d, J = 7.1 Hz, 1H), 1.06 (dd, J = 15.1, 6.8 Hz, 6H). LC–MS (ESI): m/z 286.3 (M+H)+.
 
-## AVI-3367/RLA-5721
+### AVI-3367/RLA-5721
 
 A mixture of 4-chloro-9H-pyrimido[4,5-b]indol-8-amine (28 mg, 0.13 mmol) and 1-aminopyrrolidin-2-one hydrochloride (35 mg, 0.26 mmol) in isopropanol/water (10:1, 1.1 ml) was heated to 100°C for 18 hr. The reaction mixture was filtered, the residue was washed with ethyl acetate and dried to obtain 28 mg (77%) of 1-((8-amino-9H-pyrimido[4,5-b]indol-4-yl)amino)pyrrolidin-2-one as brown solid. 1H NMR (DMSO-d6, 400 MHz) δ 12.99 (br s, 1H), 8.62 (s, 1H), 7.92 (br d, 1H, J = 7.5 Hz), 7.27 (t, 1H, J = 7.9 Hz), 7.05 (br d, 1H, J = 7.5 Hz), 3.70 (br t, 2H, J = 6.9 Hz), 2.44–2.53 (m, 2H), 2.20 (br t, 2H, J = 7.4 Hz). 13C NMR (METHANOL-d4, 100 MHz) δ 175.9, 155.9, 154.3, 153.2, 132.5, 125.7, 121.9, 119.4, 111.3, 111.1, 97.0, 48.6, 47.9, 28.5, 15.9. LC–MS (ESI): m/z = 283 (M+H)+.
 
 To a solution of 1-((8-amino-9H-pyrimido[4,5-b]indol-4-yl)amino)pyrrolidin-2-one (15 mg, 0.053 mmol) and triethylamine (0.015 ml, 0.11 mmol) in THF (1 ml), was added ethyl chloroformate (0.005 ml, 0.056 mmol). After stirring at 65°C for 18 hr, the reaction mixture was purified by reverse phase chromatography (water/acetonitrile/0.1% formic acid) to obtain 2.7 mg (13%) of ethyl (4-((2-oxopyrrolidin-1-yl)amino)-9H-pyrimido[4,5-b]indol-8-yl)carbamate formic acid salt (AVI-3367) as tan solid. 1H NMR (METHANOL-d4, 400 MHz) δ 8.42 (s, 1H), 7.94 (d, 1H, J = 7.8 Hz), 7.59 (br s, 1H), 7.28 (t, 1H, J = 7.9 Hz), 4.1–4.26–4.30 (m, 2H), 3.84 (t, 2H, J = 7.1 Hz), 2.60 (t, 2H, J = 8.0 Hz), 2.30–2.33 (m, 2H), 1.36–1.39 (m, 3H). LC–MS (ESI): m/z = 355 (M+H)+.
 
-## (R)-2-((6-Bromo-7H-pyrrolo[2,3-d]pyrimidin-4-yl)amino)-3-methylbutan-1-ol
+### (R)-2-((6-Bromo-7H-pyrrolo[2,3-d]pyrimidin-4-yl)amino)-3-methylbutan-1-ol
 
 To a solution of 6-bromo-4-chloro-7H-pyrrolo[2,3-d]pyrimidine (900 mg, 3.9 mmol) in dry DMSO (10 ml) was added (R)-2-amino-3-methylbutan-1-ol (602 mg, 5.8 mmol) and TEA (787 mg, 7.8 mmol), the mixture was stirred at 110°C for 16 hr. LC–MS analysis showed the complete consumption of compound 6-bromo-4-chloro-7H-pyrrolo[2,3-d]pyrimidine. The mixture was diluted with ethyl acetate (40.0 ml) and washed with water (5.0 ml) and brine (5.0 ml). The organic layer was dried over Na2SO4 and concentrated under reduced pressure. The residue was purified by prep-HPLC (0.1% NH4HCO3 in water, 10–100% ACN) to give (R)-2-((6-bromo-7H-pyrrolo[2,3-d]pyrimidin-4-yl)amino)-3-methylbutan-1-ol as a white solid (522 mg, yield: 45%). 1H NMR (500 MHz, DMSO-d6) δ 12.22 (s, 1H), 8.03 (s, 1H), 7.00 (d, 1H, J = 8.8 Hz), 6.79 (s, 1H), 4.62 (t, 1H, J = 5.2 Hz), 4.13 (s, 1H), 3.52 (dd, 2H, J = 9.4, 4.0 Hz), 1.98 (dt, 1H, J = 13.6, 6.8 Hz), 0.91 (dd, 6 H, J = 8.6, 6.9 Hz). LC–MS (ESI): m/z = 299.2 (M+H)+.
 
-## AVI-4099 (RLA-5789)
+### AVI-4099 (RLA-5789)
 
 A mixture of (R)-2-((6-bromo-7H-pyrrolo[2,3-d]pyrimidin-4-yl)amino)-3-methylbutan-1-ol (10.0 mg, 33.4 μmol), 5-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)-1H-pyrazole (13.0 mg, 66.9 μmol), Pd(dppf)Cl2 (4.9 mg, 6.7 μmol) and CsOH (12.5 mg, 83.6 μmol) in 0.25 ml of mixed solvent (nBuOH/H2O = 4/1) was stirred at 130°C for 20 min with microwave. The residue was purified by prep-HPLC (water, 0–30% ACN with 0.1% formic acid) to give (R)-2-((6-(1H-pyrazol-5-yl)-7H-pyrrolo[2,3-d]pyrimidin-4-yl)amino)-3-methylbutan-1-ol, formic acid salt (AVI-4099) as a white solid (3.7 mg, yield: 39%). 1H NMR (400 MHz, MeOD) (mixture of rotamers was observed) δ 8.42 (brs, 1H), 8.12 (brs, 1H), 7.73 (d, 1H, J = 2.3 Hz), 6.97 (s, 1H), 6.72 (d, 1H, J = 2.3 Hz), 4.16–4.11 (m, 1H), 3.84–3.75 (m, 2H), 2.16–2.06 (m, 1H), 1.09–1.02 (m, 6H). LC–MS (ESI): m/z = 287 (M+H)+.
 
-## AVI-4211 (RLA-5849)
+### AVI-4211 (RLA-5849)
 
 A mixture of (R)-2-((6-bromo-7H-pyrrolo[2,3-d]pyrimidin-4-yl)amino)-3-methylbutan-1-ol (15.0 mg, 50.1 μmol), phenylboronic acid (12.2 mg, 100.0 μmol), Pd(dppf)Cl2 (3.7 mg, 5.01 μmol), and Cs2CO3 (40.8 mg, 125 μmol) in 0.22 ml of mixed solvent (dioxane/H2O = 10/1) was stirred at 110°C for 17 hr. The residue was purified by prep-HPLC (water, 0–70% ACN with 0.1% formic acid) to give (R)-3-methyl-2-((6-phenyl-7H-pyrrolo[2,3-d]pyrimidin-4-yl)amino)butan-1-ol, formic acid salt (AVI-4211) as a white solid (9.7 mg, yield: 57%). 1H NMR (400 MHz, MeOD) (mixture of rotamers was observed) δ 8.41 (brs, 1H), 8.11 (brs, 1H), 7.79 (brd, 1H, J = 8.0 Hz), 7.45 (brdd, 2H, J = 8.0, 7.5 Hz), 7.33 (brt, 1 H, J = 7.5 Hz), 7.03 (brs, 1H), 4.16–4.12 (m, 1H), 3.85–3.75 (m, 2H), 2.15–2.08 (m, 1H), 1.08–1.04 (m, 6H). LC–MS (ESI): m/z = 297 (M+H)+.
 
-## AVI-372/RLA-5628
+### AVI-372/RLA-5628
 
 To a solution of 4-chloro-5-iodopyrimidine (400 mg, 1.66 mmol) in acetonitrile (5 ml) was added 1-aminopyrrolidin-2-one hydrochloride (250 mg, 1.84 mmol) and potassium carbonate (460 mg, 3.33 mmol). The reaction mixture was stirred at 80°C for 1 hr. The mixture was added water (15.0 ml) and extracted with ethyl acetate (30 ml *3). The combined organics were washed with brine (10 ml). The organic layer was dried over sodium sulfate and concentrated under reduced pressure. The residue was purified by silica gel column chromatography (10:1 dichloromethane/methanol) to afford 384 mg (76%) of 1-((5-iodopyrimidin-4-yl)amino)pyrrolidin-2-one. LC–MS (ESI): m/z = 305.
 
 To a solution of 1-((5-iodopyrimidin-4-yl)amino)pyrrolidin-2-one (20 mg, 0.066 mmol) in 1,4-dioxane (1 ml) was added 2-fluoro-6-(tributylstannyl)pyridine (26 mg, 0.066 mmol), copper (I) iodide (1.3 mg, 0.0066 mmol), triethylamine (0.028 ml, 0.2 mmol) and Pd(PPh3)4(7.6 mg, 0.0066 mmol). After stirring at 110°C for 18 hr, the reaction mixture was filtered through a celite pad and purified by reverse phase chromatography (water/acetonitrile/0.1% formic acid) to obtain 8 mg (40%) of 1-((5-(6-fluoropyridin-2-yl)pyrimidin-4-yl)amino)pyrrolidin-2-one formic acid salt (AVI-372) as a pale yellow oil. 1H NMR (METHANOL-d4, 400 MHz) δ 8.71 (br s, 1H), 8.65 (br s, 1H), 8.56 (br s, 1H), 8.34 (br s, 1H), 7.66 (t, 1H, J = 5.6 Hz), 3.68 (t, 2H, J = 7.2 Hz), 2.47 (br t, 2H, J = 8.0 Hz), 2.16–2.20 (m, 2H). LC–MS (ESI): m/z = 274 (M+H)+.
 
-## AVI-411/RLA-5549
+### AVI-411/RLA-5549
 
 A mixture of 4,6-dichloropyrimidine (100 mg, 0.671 mmol, 1.0 equiv), tert-Butyl 5-amino-1H-indazole-1-carboxylate (157 mg, 0.671 mmol, 1.0 equiv) and NEt3 (196 µl, 1.41 mmol, 2.1 equiv) in i-PrOH (3 ml) was stirred in the microwave at 100°C for 20 min. The reaction mixture was cooled and evaporated under reduced pressure. The residue was diluted with saturated NaHCO3 solution (20 ml) and extracted with EtOAc (3 × 20 ml). The combined organic extracts were washed with water (2 × 20 ml), brine (1 × 40 ml), dried (MgSO4), filtered and purified by silica gel chromatography (0–5% MeOH/DCM) to obtain 30.8 mg (19%) of N-(6-chloropyrimidin-4-yl)-1H-indazol-5-amine as a light yellow solid.
 
 A mixture of N-(6-chloropyrimidin-4-yl)-1H-indazol-5-amine (30 mg, 0.12 mmol, 1.0 equiv) and 1-aminopyrrolidin-2-one hydrochloride (17 mg, 0.12 mmol, 1.0 equiv) in i-PrOH (0.4 ml) was stirred in the microwave at 100°C for 20 min. The reaction mixture was cooled and evaporated under reduced pressure. The residue was diluted with saturated NaHCO3 solution (20 ml) and extracted with EtOAc (3 × 20 ml). The combined organic extracts were washed with water (2 × 20 ml), brine (1 × 40 ml), dried (MgSO4), filtered and purified by reverse phase chromatography (water/MeCN/0.1% formic acid) to obtain 8.1 mg (21%) of 1-((6-((1H-indazol-5-yl)amino)pyrimidin-4-yl)amino)pyrrolidin-2-one as a colorless oil. 1H NMR (METHANOL-d4, 400 MHz) δ 8.14 (s, 1H), 8.03 (s, 1H), 7.84 (d, 1H, J = 1.7 Hz), 7.56 (d, 1H, J = 8.8 Hz), 7.39 (dd, 1H, J = 1.8, 8.9 Hz), 5.84 (s, 1H), 3.63 (t, 2H, J = 7.1 Hz), 2.43–2.48 (m, 2H), 2.15 (t, 2H, J = 7.7 Hz). LC–MS (ESI): m/z = 283 (M+H)+.
 
-## AVI-1495 (RLA-5688)
+### AVI-1495 (RLA-5688)
 
 A mixture of 5-bromo-4-chloro-7H-pyrrolo[2,3-d]pyrimidine (15.0 mg, 64.5 μmol), 1-(aminomethyl)cyclopropan-1-ol (13.3 mg, 129.0 μmol) in 0.22 ml of mixed solvent IPA/H2O (10:1) was stirred at 100°C for 16 hr. The residue was purified by prep-HPLC (water, 0–40% ACN) to give 1-(((5-bromo-7H-pyrrolo[2,3-d]pyrimidin-4-yl)amino)methyl)cyclopropan-1-ol (AVI-1495), as a brown solid (6.3 mg, yield: 34%). 1H NMR (400 MHz, MeOD) δ 8.13 (s, 1H), 7.18 (s, 1H), 3.74 (s, 2H), 0.82–0.78 (m, 2H), 0.74–0.71 (m, 2H). LC–MS (ESI): m/z = 310 (M+H)+.
 
-## AVI-3571 (RLA-5703)
+### AVI-3571 (RLA-5703)
 
 A mixture of 4-chloro-5-methyl-7H-pyrrolo[2,3-d]pyrimidine (15.0 mg, 89.5 μmol), 1-(aminomethyl)cyclobutan-1-ol (18.1 mg, 179.0 μmol) in 0.22 ml of mixed solvent IPA/H2O (10:1) was stirred at 100°C for 4 days. The residue was purified by prep-HPLC (water, 0–5% ACN with 0.1% formic acid) to give 1-(((5-methyl-7H-pyrrolo[2,3-d]pyrimidin-4-yl)amino)methyl)cyclobutan-1-ol (AVI-3571), formic acid salt as a white solid (7.7 mg, yield: 31%). 1H NMR (400 MHz, MeOD) δ 8.08 (s, 1H), 6.87 (s, 1H), 3.74 (s, 2H), 2.46 (s, 3H), 2.19–2.07 (m, 4H), 1.83–1.75 (m, 1H), 1.70–1.63 (m, 1H). LC–MS (ESI): m/z = 233 (M+H)+.
 
-## AVI-1507 (RLA-5699)
+### AVI-1507 (RLA-5699)
 
 To a solution of 4-chloro-7H-pyrrolo[2,3-d]pyrimidine (70 mg,0.45 mmol) in dry DMSO (5 ml) was added (R)-pyrrolidin-2-ylmethanol (51 mg, 0.50 mmol) and TEA (227 mg, 2.25 mmol), the mixture was stirred at 110°C for 16 hr. The mixture was diluted with ethyl acetate (50.0 ml) and washed with water (10.0 ml), brine (10.0 ml). The organic layer was dried over Na2SO4 and concentrated under reduced pressure. The residue was purified by prep-HPLC (0.1% NH4HCO3 in water, 5–45% ACN) to give (R)-(1-(7H-pyrrolo[2,3-d]pyrimidin-4-yl)pyrrolidin-2-yl)methanol (AVI-1507) as a white solid (35 mg, yield: 35%). 1H NMR (500 MHz, MeOD) δ 8.07 (d, J = 5.4 Hz, 1H), 7.08 (d, J = 3.6 Hz, 1H), 6.66 (d, J = 3.6 Hz, 1H), 4.66–4.44 (m, 1H), 3.93 (d, J = 8.8 Hz, 1H), 3.87–3.71 (m, 2H), 3.63 (dd, J = 10.9, 6.5 Hz, 1H), 2.21–1.99 (m, 4H). LC–MS (ESI): m/z = 219.1 (M+H)+.

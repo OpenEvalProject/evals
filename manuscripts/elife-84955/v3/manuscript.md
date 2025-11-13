@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00hx57361 Princeton Neuroscience Institute, Princeton University Princeton United States
-2. https://ror.org/00hx57361 Howard Hughes Medical Institute, Princeton University Princeton United States
-3. https://ror.org/00hx57361 Department of Psychology, Princeton University Princeton United States
+1. Princeton Neuroscience Institute, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
+2. Howard Hughes Medical Institute, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
+3. Department of Psychology, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
 
 † Corresponding author
 
@@ -36,37 +36,180 @@ Broadly, our framework offers a unified, mechanistic, and probabilistic descript
 
 We analyzed behavioral and neural data from rats trained to perform a perceptual decision-making task (Brunton et al., 2013). Rats listened to two simultaneous series of randomly timed auditory clicks, one from a speaker on the left and one from a speaker on the right. After the end of the click train, the rat had to orient to the side with a greater number of clicks to receive a reward (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/84955/elife-84955-fig1-v3.jpg)
+
+**Figure 1.:** (A) Rats performed a pulse-based evidence accumulation task. A central LED illuminates indicating that the rat can begin a trial by poking its nose in a central port. After a delay of random duration, an auditory stimulus of variable duration is delivered—a series of brief auditory pulses played from a left and a right speaker. Upon cessation of the stimulus, the rat must orient to the direction of the greater number of pulses to receive a water reward. (B) The model relates the click-based sensory stimulus to two types of observations—the animal’s choice and neural activity observed during the task. The latent variable model is a bounded accumulator. Left and right clicks (green and red arrows, respectively) push the variable to one side or the other; if the accumulator variable reaches the bound B (dotted line) accumulation ceases. Seven parameters govern the dynamics of a(t) (see main text). Two different hypothetical trajectories of a(t) are illustrated (black and blue) for the same click stimulus; the two trajectories differ due to the diffusive and stimulus noise in the model. a(t) relates to the animal’s choice by a Heaviside step function and to neural activity by way of a softplus nonlinearity and a Poisson distribution. a(t) is common for all simultaneously recorded neurons and each neuron has its own parameters that determine its tuning curve.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84955/elife-84955-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Synthetic data was generated with parameters $\sigma_{i}=5$, B=15, $\lambda=-0.5$, $\sigma_{a}=100$, $\sigma_{s}=20$, $ϕ=0.4$, $\tau_{ϕ}=0.02$. Two synthetic ’sessions’ were generated, with 400 trials and 3 neurons each. Softplus gain parameters were randomly generated between –2 and 2. Parameters for decisions were c=1 (bias), $\gamma=0.05$ (lapse). (A) Peri-stimulus time histograms (PSTHs) for two example neurons for synthetic data and simulated data after model fitting. Trials were averaged for strong evidence to the right (red) and left (brown). (B) Psychometric curves for synthetic data and simulated data after model fitting. (C) Optimization was initialized at a random set of parameters (‘initial’). Maximum likelihood parameters (‘final’) converged to within two standard deviations (error bars computed by Laplace approximation) of the parameters used to generate the data (dotted lines). $\theta_{ij}$ refers to the neuron parameters for the jth neuron from the ith session.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84955/elife-84955-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Four synthetic datasets with different model parameters (red, cyan, green, blue) were generated as in Figure 1—figure supplement 1 (two sessions per dataset, with three neurons in each session). Dotted lines in each panel indicate the generative parameters. Optimization was initialized at a random set of parameters (‘init.’). Maximum likelihood parameters (‘final’) almost always converge to within two standard deviations (error bars computed by Laplace approximation) of the parameters used to generate the data. $\theta_{ij}$ refers to the neuron parameters for the jth neuron from the ith session.
+
 We analyzed behavioral choice data and electrophysiological neural recordings from 11 rats. In total, we analyzed 37,179 behavioral choices and 141 neurons from three brain areas—the PPC, the FOF, and the ADS. Prior electrophysiological and lesions studies have shown that these brain regions play a key role in evidence accumulation (Ding and Gold, 2013; Ding and Gold, 2010; Erlich et al., 2015; Erlich et al., 2011; Gold and Shadlen, 2007; Gold and Shadlen, 2000; Hanks et al., 2015; Huk and Shadlen, 2005; Kim and Shadlen, 1999; Mante et al., 2013; Roitman and Shadlen, 2002; Shadlen and Newsome, 2001; Yartsev et al., 2018).
 
 Data were collected after the animals were well trained and exhibiting a high level of performance (Brunton et al., 2013; Hanks et al., 2015; Yartsev et al., 2018); these data were collected as part of two earlier studies and have been previously analyzed (Hanks et al., 2015; Yartsev et al., 2018). Data were subject to a selection criterion for inclusion in our study. We selected neurons with significant tuning for choice during the stimulus period (two-sample t-test, p<0.01) because choice tuning is a prerequisite for reflecting accumulation-like signals. Information about the data is summarized in Table 1. Once tuning significance was determined, our dataset consisted of 68 neurons from FOF, with 7382 behavioral choices recorded from five rats over 46 behavioral sessions; 25 neurons from PPC, with 9037 behavioral choices from three rats over 24 sessions; and 48 neurons from ADS, with 10,760 behavioral choices from three rats over 27 behavioral sessions.
 
-## A latent variable model of behavioral choice and neural activity
+**Table 1.**
+ Number of neurons, sessions, and trials for each rat.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Rat</th>
+      <th>Region</th>
+      <th>Sessions</th>
+      <th>Neurons</th>
+      <th>Trials</th>
+      <th>Sessions with greater than 1 neuron</th>
+      <th>Max. # of simultaneously recorded neurons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B068</td>
+      <td>FOF</td>
+      <td>11</td>
+      <td>13</td>
+      <td>5859</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>T034</td>
+      <td>FOF</td>
+      <td>9</td>
+      <td>10</td>
+      <td>4138</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>T036</td>
+      <td>FOF</td>
+      <td>8</td>
+      <td>12</td>
+      <td>3026</td>
+      <td>4</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>T063</td>
+      <td>FOF</td>
+      <td>17</td>
+      <td>32</td>
+      <td>4002</td>
+      <td>9</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>T030</td>
+      <td>FOF</td>
+      <td>1</td>
+      <td>1</td>
+      <td>357</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>T035</td>
+      <td>PPC</td>
+      <td>15</td>
+      <td>16</td>
+      <td>5919</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>T011</td>
+      <td>PPC</td>
+      <td>7</td>
+      <td>7</td>
+      <td>2235</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>B053</td>
+      <td>PPC</td>
+      <td>2</td>
+      <td>2</td>
+      <td>883</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>T080</td>
+      <td>ADS</td>
+      <td>5</td>
+      <td>6</td>
+      <td>1731</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>T103</td>
+      <td>ADS</td>
+      <td>19</td>
+      <td>38</td>
+      <td>8332</td>
+      <td>9</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>E021</td>
+      <td>ADS</td>
+      <td>3</td>
+      <td>4</td>
+      <td>697</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+### A latent variable model of behavioral choice and neural activity
 
 One of the most common normative models of the internal mental processes that underlie evidence accumulation is the drift-diffusion to bound model (DDM; Figure 1B; Bogacz et al., 2006; Brunton et al., 2013; Gold and Shadlen, 2007; Ratcliff and McKoon, 2008). While previous work has tended to fit this model (either explicitly or implicitly) using either choice data (e.g., Brunton et al., 2013; Chandrasekaran and Hawkins, 2019; Gold and Shadlen, 2007; Ratcliff et al., 2016; Shinn et al., 2020; Wiecki et al., 2013; Zylberberg et al., 2016) or neural response data (e.g., Bollimunta et al., 2012; Brody and Hanks, 2016; Churchland et al., 2011; Ditterich, 2006; Genkin et al., 2021; Hanks et al., 2015; Howard et al., 2018; Latimer et al., 2015; Zoltowski et al., 2019; Zoltowski et al., 2020), here, we seek to jointly model the relationship between accumulated evidence, choices, and neural activity.
 
 The essence of our model is to describe a DDM-based accumulation process driven by sensory stimuli following Brunton et al., 2013, and relate the latent accumulation process to both neural responses and the rat’s choice. Previous results have shown that this model is sufficiently flexible to accommodate the various behavioral strategies rats exhibit while performing this task (Brunton et al., 2013). The resulting model has a single latent variable, denoted a(t), that evolves in time and represents the current, inner mental representation of the evidence in support of a left or right choice at each moment in time. This latent variable is shared by the neurons within a region (except where explicitly noted), so that each neuron’s time-varying firing rate is a function of a(t) on each trial. The key distinction of our approach is that the accumulator variable a(t) drives both choices and neural activity, as described below.
 
-Formally, the temporal evolution of the latent evidence a(t) is governed by:(1)da=λadt+Δ(t)dt+σadW +σsΣ(t)ηdt,
+Formally, the temporal evolution of the latent evidence a(t) is governed by:
 
-where da is the amount a(t) changes in a time dt. λ is a leak parameter. Δ(t) and Σ(t) indicate the difference and sum, respectively, of the number of right and left sensory clicks at time t, after the magnitude of the clicks has been adapted based on recent stimulus history (see parameters governing adaptation below, and Methods for additional details). σadW is a diffusive Gaussian noise process (or Weiner process) with scaling σa. σsΣ(t)η is additive Gaussian noise induced by each click input, where σsΣ(t) is the standard deviation of the click noise and η is a Gaussian random variable with a mean of 0 and standard deviation 1.
+$$
+da=\lambdaadt+Δ(t)dt+\sigma_{a}dW +\sigma_{s}Σ(t)ηdt,
+$$
+
+where da is the amount a(t) changes in a time dt. λ is a leak parameter. $Δ(t)$ and $Σ(t)$ indicate the difference and sum, respectively, of the number of right and left sensory clicks at time t, after the magnitude of the clicks has been adapted based on recent stimulus history (see parameters governing adaptation below, and Methods for additional details). $\sigma_{a}dW$ is a diffusive Gaussian noise process (or Weiner process) with scaling $\sigma_{a}$. $\sigma_{s}Σ(t)η$ is additive Gaussian noise induced by each click input, where $\sigma_{s}Σ(t)$ is the standard deviation of the click noise and $η$ is a Gaussian random variable with a mean of 0 and standard deviation 1.
 
 If a(t) becomes greater in magnitude than a symmetric boundary with magnitude B (Figure 1B, dotted lines), then da = 0, and accumulation ceases for the remainder of the trial. To illustrate, the blue trajectory in Figure 1B crosses the boundary B roughly one-third of the way through the trial, and thus remains constant thereafter.
 
-The four terms of Equation 1 each account for specific ways a(t) might reflect accumulated evidence. The first two terms are designed to account for deterministic (non-random) dynamics exhibited by a(t). The first term specifies how recent values of a(t) influence future values and is governed by λ that determines the timescale of this effect. Positive values of λ correspond to unstable dynamics so that a(t) grows exponentially. In this setting, early clicks have greater influence on a(t) than recent clicks, because their impact grows with time. By contrast, negative values of λ correspond to leaky dynamics. In this setting, early clicks have a weaker influence on a(t) than recent clicks because the impact of early clicks decays with time. When λ equals zero, the sensory clicks are perfectly integrated. Previous results have shown that rats exhibit a range of accumulation strategies spanning these values of λ (Brunton et al., 2013). The second term, Δ(t)dt, specifies how the click stimulus is incorporated into a(t). Because the task requires reporting whether there was a greater number of left or right clicks, only the total click difference is required to correctly perform it.
+The four terms of Equation 1 each account for specific ways a(t) might reflect accumulated evidence. The first two terms are designed to account for deterministic (non-random) dynamics exhibited by a(t). The first term specifies how recent values of a(t) influence future values and is governed by λ that determines the timescale of this effect. Positive values of λ correspond to unstable dynamics so that a(t) grows exponentially. In this setting, early clicks have greater influence on a(t) than recent clicks, because their impact grows with time. By contrast, negative values of λ correspond to leaky dynamics. In this setting, early clicks have a weaker influence on a(t) than recent clicks because the impact of early clicks decays with time. When λ equals zero, the sensory clicks are perfectly integrated. Previous results have shown that rats exhibit a range of accumulation strategies spanning these values of λ (Brunton et al., 2013). The second term, $Δ(t)dt$, specifies how the click stimulus is incorporated into a(t). Because the task requires reporting whether there was a greater number of left or right clicks, only the total click difference is required to correctly perform it.
 
-To account for stochasticity in the accumulation dynamics, the model also contains two forms of noise in a(t). The first noise term, σadW, corresponds to diffusive noise that corrupts a(t) continuously in time. The final term, σsΣ(t)ηdt, introduces noise into a(t) that is proportional to the total number of clicks that occur at a given moment. The sum of clicks Σ(t) is included so that the magnitude of the noise increases depending on the number of sensory clicks experienced at time t. Figure 1B illustrates the effects of these two noise terms: although the sensory inputs and leak are identical for both blue and black trajectories of a(t), differences in noise lead the two trajectories to diverge so that one hits the boundary +B while the other remains sub-threshold and continues to integrate the sensory stimulus.
+To account for stochasticity in the accumulation dynamics, the model also contains two forms of noise in a(t). The first noise term, $\sigma_{a}dW$, corresponds to diffusive noise that corrupts a(t) continuously in time. The final term, $\sigma_{s}Σ(t)ηdt$, introduces noise into a(t) that is proportional to the total number of clicks that occur at a given moment. The sum of clicks $Σ(t)$ is included so that the magnitude of the noise increases depending on the number of sensory clicks experienced at time t. Figure 1B illustrates the effects of these two noise terms: although the sensory inputs and leak are identical for both blue and black trajectories of a(t), differences in noise lead the two trajectories to diverge so that one hits the boundary +B while the other remains sub-threshold and continues to integrate the sensory stimulus.
 
-To model animal choices, we assume that the accumulation variable a(t) directly governs the animal’s choice on each trial. Specifically, we describe the probability of a rightward choice as depending on a(T), the accumulated evidence at the end of the stimulus period T, using a step function with ‘lapses’. With probability γ the animal picks one of the two sides without considering the stimulus, referred to as a ‘lapse’. With probability (1−γ) the animal does not lapse, and makes a rightward choice if a(T)>c and a leftward choice if a(T)<c, where c denotes the choice criterion. This model can be expressed as:(2)P(d=R)=γ/2+(1−γ)H(aT−c)
+To model animal choices, we assume that the accumulation variable a(t) directly governs the animal’s choice on each trial. Specifically, we describe the probability of a rightward choice as depending on a(T), the accumulated evidence at the end of the stimulus period T, using a step function with ‘lapses’. With probability $\gamma$ the animal picks one of the two sides without considering the stimulus, referred to as a ‘lapse’. With probability $(1−\gamma)$ the animal does not lapse, and makes a rightward choice if a(T)>c and a leftward choice if a(T)<c, where c denotes the choice criterion. This model can be expressed as:
 
-where d∈{L,R} is the decision variable and H(⋅) is the Heaviside step function. As described above, when a(t) crosses the decision bound B a choice commitment is made, either to the left or the right, and no further evidence accumulation occurs. Previous work has found that parameterizing choice this way creates a model that is sufficiently flexible to describe animals’ choice (Brunton et al., 2013) while remaining as simple as possible.
+$$
+P(d=R)=\gamma/2+(1−\gamma)H(a_{T}−c)
+$$
 
-To model spike train data, we describe the time-varying firing rate of each neuron as a soft rectified linear function of the same accumulated evidence variable a(t):(3)fθn(a(t))=softplus(θna(t)+θn0(t)),
+where $d\in{L,R}$ is the decision variable and $H(⋅)$ is the Heaviside step function. As described above, when a(t) crosses the decision bound B a choice commitment is made, either to the left or the right, and no further evidence accumulation occurs. Previous work has found that parameterizing choice this way creates a model that is sufficiently flexible to describe animals’ choice (Brunton et al., 2013) while remaining as simple as possible.
 
-where n indexes neurons, the softplus function (Figure 1B) is given by softplus(x)=log(1+exp(x)), and θn denotes the slope of the linear relationship between a(t) and neuron n’s firing rate. The slope parameter, θn, is fit separately for each neuron. A time-varying offset, θn0(t), is included to capture time-varying changes in firing rate that do not depend on a(t) (see Methods). The spikes of each neuron are modeled as a Poisson process with a time-dependent conditional intensity function fθn(a(t)). The softplus function (smooth rectified linear function) was used to ensure the expected firing rate was positive, and was selected because it is the simplest function to achieve this goal, and also based on prior success in similar studies (e.g., Latimer et al., 2015).
+To model spike train data, we describe the time-varying firing rate of each neuron as a soft rectified linear function of the same accumulated evidence variable a(t):
 
-We refer to the set of all parameters that govern a(t) and its relationship to the neural activity and choice data as Θ={σi,,B,λ,σa,σs,ϕ,τϕ,θ1:N,c,γ}, where σi is the variance of a(t) at the start of the trial, and φ and τϕ determine how the magnitude of each click is adapted based on the timing of recent clicks (see Methods). We fit Θ separately for each brain region using maximum likelihood (see Methods). Maximizing the likelihood of the data requires computing the temporal evolution of the probability distribution of a(t) over the duration of a single trial, for all trials, and computing the probability of the observed spikes and choices under this distribution. The dynamics of this probability distribution can be expressed using the Fokker-Planck equation, and previous work has developed methods for numerically solving it (Brunton et al., 2013; see Methods). We refer to the value of Θ that maximizes the likelihood of the data as Θ^. We verified that our method was able to recover the parameters that generated synthetic physiologically relevant spiking and choices data (Figure 1—figure supplement 1), and that parameter recovery was robust across a range of parameter values (Figure 1—figure supplement 2).
+$$
+f_{\theta_{n}}(a(t))=softplus(\theta_{n}a(t)+\theta_{n}^{0}(t)),
+$$
 
-## Shared accumulator model captures neural responses and choices
+where n indexes neurons, the softplus function (Figure 1B) is given by softplus(x)=log(1+exp(x)), and $\theta_{n}$ denotes the slope of the linear relationship between a(t) and neuron n’s firing rate. The slope parameter, $\theta_{n}$, is fit separately for each neuron. A time-varying offset, $\theta_{n}^{0}(t)$, is included to capture time-varying changes in firing rate that do not depend on a(t) (see Methods). The spikes of each neuron are modeled as a Poisson process with a time-dependent conditional intensity function $f_{\theta_{n}}(a(t))$. The softplus function (smooth rectified linear function) was used to ensure the expected firing rate was positive, and was selected because it is the simplest function to achieve this goal, and also based on prior success in similar studies (e.g., Latimer et al., 2015).
+
+We refer to the set of all parameters that govern a(t) and its relationship to the neural activity and choice data as $Θ={\sigma_{i,},B,\lambda,\sigma_{a},\sigma_{s},ϕ,\tau_{ϕ},\theta_{1:N},c,\gamma}$, where $\sigma_{i}$ is the variance of a(t) at the start of the trial, and φ and $\tau_{ϕ}$ determine how the magnitude of each click is adapted based on the timing of recent clicks (see Methods). We fit Θ separately for each brain region using maximum likelihood (see Methods). Maximizing the likelihood of the data requires computing the temporal evolution of the probability distribution of a(t) over the duration of a single trial, for all trials, and computing the probability of the observed spikes and choices under this distribution. The dynamics of this probability distribution can be expressed using the Fokker-Planck equation, and previous work has developed methods for numerically solving it (Brunton et al., 2013; see Methods). We refer to the value of Θ that maximizes the likelihood of the data as $Θ^$. We verified that our method was able to recover the parameters that generated synthetic physiologically relevant spiking and choices data (Figure 1—figure supplement 1), and that parameter recovery was robust across a range of parameter values (Figure 1—figure supplement 2).
+
+### Shared accumulator model captures neural responses and choices
 
 We fit the model separately to data from each brain region. To verify model fits were consistent with data, we compared the peri-stimulus time histograms (PSTHs; Figure 2A and B) and psychometric curves (Figure 2C) of the empirical data to synthetic data simulated from the fitted model for each brain region. The PSTH of most neurons showed a characteristic choice preference that increased over time, consistent with accumulation. The model was able to capture this (Figure 2A). The model provided an accurate account of mean responses in all three brain areas (Figure 2B), with a median R2 of 0.91, 0.68, and 0.87 for the FOF, PPC, and ADS, respectively (Figure 2B, colored lines). Figure 2C shows a comparison between true psychometric curves and the psychometric curve of the fitted model, confirming that the model also accounted for psychophysical choice behavior (R2: 0.99—FOF; 0.99—PPC; ADS—0.97; see Methods for details). These analyses confirm that a shared accumulator model for each brain region is sufficient to capture the animals’ choice sensitivity to the stimulus and strength of accumulated evidence reflected in each neuron’s response.
 
@@ -74,17 +217,49 @@ We fit the model separately to data from each brain region. To verify model fits
 
 **Figure 2.:** (A) Peri-stimulus time histograms (PSTHs) of three example neurons for each brain region (each row; frontal orienting fields [FOF]: red/green, posterior parietal cortex [PPC]: blue/orange, anterior-dorsal striatum [ADS]: purple/yellow). Spike trains were binned, filtered with a Gaussian kernel (std = 50 ms), grouped based on the strength of evidence, and averaged. Transparent shaded regions are ±1 standard error of the mean for the empirical data for each grouping. Colored curves are the mean of synthetic data simulated from the model with the parameters that maximize the likelihood of the data, grouped in a similar fashion. The black curve shows the trial-averaged firing rate, for all evidence strengths. Gray vertical lines indicate the average delay between the stimulus and the response for each brain region (see Methods). (B) Coefficient of determination (R2) between empirical PSTH and synthetic data PSTH, for each neuron in each brain region. The data are plotted as a function of average firing rate. The median across the population is shown as a line. Points indicated with a ‘star’ refer to the data plotted in (A). (C) Probability of making a rightward choice as a function of cumulative difference in the number of clicks (psychometric curves) for empirical data (black lines) and data simulated from the model with the best fitting parameters (colored curves; FOF: red, PPC: blue, ADS: purple). Each curve is the curve of best fit, as computed by logistic regression. Rectangles indicate 25-th and 75-th quantiles of the data.
 
-## Different regions reflect different accumulator models, which all differ from model describing behavior
+### Different regions reflect different accumulator models, which all differ from model describing behavior
 
 The primary motivation of our study was to learn accumulator models that incorporate precise stimulus-timing information and describe the animal’s choices and temporally structured neural activity. Previous efforts only modeled choices using stimulus-timing information (Brunton et al., 2013) or modeled neural activity without choices for tasks without detailed stimulus-timing information (Latimer et al., 2015; Zoltowski et al., 2019). We refer to our model that describes both neural activity and choices as the ‘joint neural-behavioral model’ or the ‘joint model’. We compared the joint neural-behavioral model to a model where only the stimulus is used to model the animal’s choice (i.e., neural activity is not used). To fit such a ‘choice-only’ accumulator model, we fit the same latent variable model using only choice data (see Methods).
 
-Figure 3A shows the maximum likelihood parameters for the joint and choice-only accumulator models for each brain region. Neural data was not used for the choice model so brain region designates the cohort of animals from which the choice data was taken. We stress that because of this, each fitted choice model uses different behavioral choice data, and thus the fitted parameters vary from fitted model to fitted model. Both fitted models exhibited strong adaptation (ϕ<< 1) consistent with prior work fitting choice accumulator models (Brunton et al., 2013). This indicates that a stimulus pulse that occurs in rapid succession following other pulses has a smaller effect on a(t) than an isolated pulse. Each model was impacted by different forms of noise: choice models exhibited small diffusive noise (σa≈0) and large stimulus noise (σs>>1), consistent with earlier findings, while joint models exhibited large diffusive noise (σa>0) and large initial variability in a(t) (σi>>0). The effect of these different parameters can be seen in Figure 3B: choice models have smaller initial variance and more variability when clicks arrive, while joint accumulator models have larger initial variance and diffusive noise. Large initial variance in the joint model likely reflects variability in neural responses prior to stimulus onset (Churchland et al., 2010). Strong accumulation noise in the joint model was also found when the negative binomial distribution, a more flexible observation model, was used, suggesting that this finding was not sensitive to the Poisson observation model (Figure 3—figure supplement 1). Differences in diffusive noise between the joint and choice-only models suggest that accumulation dynamics underlying neural activity is impacted by noise that is resolved at the level of a behavioral accumulator model.
+Figure 3A shows the maximum likelihood parameters for the joint and choice-only accumulator models for each brain region. Neural data was not used for the choice model so brain region designates the cohort of animals from which the choice data was taken. We stress that because of this, each fitted choice model uses different behavioral choice data, and thus the fitted parameters vary from fitted model to fitted model. Both fitted models exhibited strong adaptation ($ϕ<< 1$) consistent with prior work fitting choice accumulator models (Brunton et al., 2013). This indicates that a stimulus pulse that occurs in rapid succession following other pulses has a smaller effect on a(t) than an isolated pulse. Each model was impacted by different forms of noise: choice models exhibited small diffusive noise $(\sigma_{a}≈0)$ and large stimulus noise ($\sigma_{s}>>1$), consistent with earlier findings, while joint models exhibited large diffusive noise $(\sigma_{a}>0)$ and large initial variability in a(t) $(\sigma_{i}>>0)$. The effect of these different parameters can be seen in Figure 3B: choice models have smaller initial variance and more variability when clicks arrive, while joint accumulator models have larger initial variance and diffusive noise. Large initial variance in the joint model likely reflects variability in neural responses prior to stimulus onset (Churchland et al., 2010). Strong accumulation noise in the joint model was also found when the negative binomial distribution, a more flexible observation model, was used, suggesting that this finding was not sensitive to the Poisson observation model (Figure 3—figure supplement 1). Differences in diffusive noise between the joint and choice-only models suggest that accumulation dynamics underlying neural activity is impacted by noise that is resolved at the level of a behavioral accumulator model.
 
-We also compared the best-fit parameters across the three, separately fit, brain regions (Figure 3A). We focus on one of the most salient differences—the leak or instability parameter λ. Although there was no significant difference in the value of λ across the cohorts of animals in the choice-only model, we found substantial differences across brain regions in the joint model fits (Figure 3A). The PPC and ADS data were best fit by leaky accumulator models (λ<0). Surprisingly however, the FOF data was best described by a model with unstable accumulation dynamics (λ>0) meaning that the model’s accumulator (and thus firing rates) are more strongly affected by early stimulus clicks. The stronger weighting of earlier clicks was compounded further by the low accumulation bound of the model that best described FOF data. Such a low bound, in conjunction with unstable accumulation, causes a(t) to stop evolving early in the trial (Figure 3B). This results in a phenomenon known as ‘primacy encoding’, in which early clicks more strongly impact the animal’s choice while later clicks are ignored. We confirmed this finding in the FOF using a generalized linear model (GLM; see Methods and Figure 3—figure supplement 2). This result is consistent with previous work suggesting that the FOF has a categorical representation of a(t) (Hanks et al., 2015). We expand on these findings in light of other studies of the FOF in the Discussion. Collectively, these results indicate that all three brain regions were best described by accumulator models that differed in their best fitting parameters (and thus exhibit dramatically different accumulation dynamics), and that each region’s data was likewise best described by a model that differed from that which best described accumulation at the level of the animal’s choice.
+![Figure 3.](https://cdn.elifesciences.org/articles/84955/elife-84955-fig3-v3.jpg)
 
-## ADS is better described by multiple, independent accumulators
+**Figure 3.:** (A) Maximum likelihood parameters that govern a(t) for the joint neural-behavioral model and the choice-only model. Error bars, computed by the Laplace approximation (Methods), are ±2 standard deviations. Parameters are σi: initial variance, B: accumulation bound, λ: drift, σa: accumulation noise variance, σs: click noise variance, φ: adaptation strength, τɸ: adaptation timescale. (B) 10 example trajectories with different noise instantiations for one trial for the choice model (top) and the joint model (middle) for each brain region, and cumulative sum of the click stimulus for each trial (bottom). The dotted black lines (top and middle) indicate the accumulation boundary value for each model.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84955/elife-84955-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Parameters are $\sigma_{i}$: initial variance, B: accumulation bound, λ: drift, $\sigma_{a}$: accumulation noise variance, $\sigma_{s}$: click noise variance, φ: adaptation strength, $\tau_{ϕ}$: adaptation timescale. Each point is a data fold (1 of 5). Maximum likelihood parameters were similar for the two observation models. Cross-validated log-likelihood was statistically indistinguishable (frontal orienting fields [FOF]: p=0.99; posterior parietal cortex [PPC]: 0.93; anterior-dorsal striatum [ADS]: 0.98) and the average difference in cross-validated log-likelihood was small (FOF: 1.11e-5; PPC: –0.036; ADS: –0.035). (B) Histogram of the negative binomial dispersion parameter (r) across all neurons for each region. For large values of r, as seen here, the negative binomial approaches the Poisson distribution.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/84955/elife-84955-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Poisson GLM with a softplus nonlinearity was fit with exponentially filtered clicks as the regressors (see Methods), using the same data as in Figure 2 and Figure 3. Each dot is the maximum likelihood drift (λ) parameter for a session. Sessions are ordered (from left to right) based on the fraction of the cumulative sum (across all sessions for a brain region) of the change in log-likelihood (LL) over the null model (see Methods for null model). For example, the leftmost dot for each brain region is the session with the largest change in LL. Dots on the right were from sessions with the smallest change in LL over the null. The colored lines are the cumulative mean of λ weighted by that session’s normalized change in LL. Dots on the far right have little change in LL and thus contribute to this mean only weakly. (B) GLM as in (A) but fit with a boundary, such that if the filtered clicks crossed a boundary B, the value of the regressors remained equal to B henceforth in a trial (see Methods). In each plot, the dashed colored lines are the values of λ from the full model fit (as in Figure 2 and Figure 3).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/84955/elife-84955-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** Error bars, computed by the Laplace approximation (Methods), are ±2 standard deviations. Parameters are $\sigma_{i}$: initial variance, B: accumulation bound, λ: drift, $\sigma_{a}$: accumulation noise variance, $\sigma_{s}$: click noise variance, φ: adaptation strength, $\tau_{ϕ}$: adaptation timescale.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/84955/elife-84955-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Circles with error bars are for models fit to all data. Error bars for models fit to full data computed by the Laplace approximation (Methods) are ±2 standard deviations. ‘Plus (+) ’ marks are models (five for each model type) fit to cross-validation data (fivefold). Parameters are $\sigma_{i}$: initial variance, B: accumulation bound, λ: drift, $\sigma_{a}$: accumulation noise variance, $\sigma_{s}$: click noise variance, φ: adaptation strength, $\tau_{ϕ}$: adaptation timescale. (B) Test log-likelihood for models fit to all data (i.e., using trials reserved as testing trials when cross-validation is done) plotted against test log-likelihood for cross-validation models, for each model type (joint, choice, joint (ind.)), for all three brain regions.
+
+We also compared the best-fit parameters across the three, separately fit, brain regions (Figure 3A). We focus on one of the most salient differences—the leak or instability parameter λ. Although there was no significant difference in the value of λ across the cohorts of animals in the choice-only model, we found substantial differences across brain regions in the joint model fits (Figure 3A). The PPC and ADS data were best fit by leaky accumulator models ($\lambda<0$). Surprisingly however, the FOF data was best described by a model with unstable accumulation dynamics ($\lambda>0$) meaning that the model’s accumulator (and thus firing rates) are more strongly affected by early stimulus clicks. The stronger weighting of earlier clicks was compounded further by the low accumulation bound of the model that best described FOF data. Such a low bound, in conjunction with unstable accumulation, causes a(t) to stop evolving early in the trial (Figure 3B). This results in a phenomenon known as ‘primacy encoding’, in which early clicks more strongly impact the animal’s choice while later clicks are ignored. We confirmed this finding in the FOF using a generalized linear model (GLM; see Methods and Figure 3—figure supplement 2). This result is consistent with previous work suggesting that the FOF has a categorical representation of a(t) (Hanks et al., 2015). We expand on these findings in light of other studies of the FOF in the Discussion. Collectively, these results indicate that all three brain regions were best described by accumulator models that differed in their best fitting parameters (and thus exhibit dramatically different accumulation dynamics), and that each region’s data was likewise best described by a model that differed from that which best described accumulation at the level of the animal’s choice.
+
+### ADS is better described by multiple, independent accumulators
 
 Our model describes the spiking activity of a population of simultaneously recorded neurons as relying on a single shared latent variable. To assess whether this is indeed the best description of the data, we compared it to an ‘independent-noise accumulator model’ where each neuron is driven by an accumulator with its own independent noise (Figure 4A; Methods). It is worth emphasizing that the independent-noise model is identical to the shared-noise model in the way it is parameterized (i.e., number and form of the model parameters) but only differs in the structure of the latent accumulation noise. If trial-to-trial spiking covariation is produced by temporal covariation in the accumulator due to noise, the independent-noise model (which does not share this covariation) should not account for the data as well, suggesting that correlations in the data can be attributed to correlated diffusive noise reflected in the shared model. We fit the parameters of the independent-noise model using the same optimization method but with a different log-likelihood function (see Methods). Because the independent-noise model contained multiple accumulators (one for each neuron), the animal’s choice was modeled differently than for the shared-noise model (see Methods). We focused on the FOF and ADS datasets because they contained a sufficient number of simultaneously recorded neurons to make this comparison (Table 1). The maximum likelihood parameters for the two models for both regions were similar (Figure 4—figure supplement 1), except for the initial accumulator variance parameter which differed significantly.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/84955/elife-84955-fig4-v3.jpg)
+
+**Figure 4.:** (A) For the shared-noise accumulator model (top), a set of parameters defines the dynamics of a single accumulator, which drives the spiking activity of the entire population. In the independent-noise accumulator model, a set of parameters defines the dynamics of an ensemble of independent accumulator models, which each individually determine the spiking of a single neuron. (B) Difference in test log-likelihood (bits/trial) for the shared-noise vs. independent-noise accumulator models. (C) Empirical (red) and synthetic (shared: black; independent; gray) shuffle-corrected cross-correlation function for three simultaneously recorded neurons from the frontal orienting fields (FOF). Corresponding peri-stimulus time histograms (PSTHs) are shown below for reference. (D) Same as (C) for three (of five) simultaneously recorded neurons from the ADS.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84955/elife-84955-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Error bars, computed by the Laplace approximation (Methods), are ±2 standard deviations. Parameters are $\sigma_{i}$: initial variance, B: accumulation bound, λ: drift, $\sigma_{a}$: accumulation noise variance, $\sigma_{s}$: click noise variance, φ: adaptation strength, $\tau_{ϕ}$: adaptation timescale.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/84955/elife-84955-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** $ΔLL$ between the shared-noise and independent-noise accumulator model.(A) Difference in log-likelihood for each session for frontal orienting fields (FOF) and anterior-dorsal striatum (ADS) data plotted as a function of the number of neurons in each session. (B) When the number of neurons in each session for the ADS dataset was subsampled to match the maximum number of neurons in an FOF session (three neurons) the ADS was still favored by an independent-noise accumulator model (purple, no fill; averaged across two subsample permutations of the ADS recordings). (C) Same as (A) but plotted as a function of dimension, as computed by the participation ratio (see Methods). Sessions in the ADS with higher dimension favored the independent-noise accumulator model, leading to the net effect seen in Figure 4B. (D) The difference in log-likelihood was similar when the choice data was omitted from both models.
 
 We used fivefold cross-validation to determine which model better described each dataset. Comparing the cross-validated log-likelihood, we found that the independent-noise model provided a better description of choices and neural activity from ADS, while the shared-noise model provided a slightly better description of FOF data (Figure 4B). This finding supports the conclusion that neural responses within the ADS reflect independent accumulation processes, while neurons in the FOF reflect a single latent accumulator. Although ADS datasets with four or more neurons provided the primary contribution to these results (Figure 4—figure supplement 2A), when the number of neurons in ADS datasets was subsampled to match the maximum number of neurons in FOF sessions (three neurons), the ADS recordings still favored an independent-noise accumulator model (Figure 4—figure supplement 2B). We fit the shared-noise and independent-noise model to neural data only (excluding choice data) and found consistent results (Figure 4—figure supplement 2D), suggesting this difference is not due to contributions from the animal’s choice, which was modeled differently in each model (see above).
 
@@ -94,7 +269,7 @@ Synthetic data of both models captured trends in the shuffle-corrected cross-cor
 
 To validate that neural responses in the ADS weakly covary, as suggested by an independent-noise model, we computed a measure of response dimensionality known as the participation ratio (Litwin-Kumar et al., 2017). The participation ratio is computed using the eigenvalues of the covariance matrix of firing rates (Methods). If all firing rates are independent the eigenvalues will all be equal and the participation ratio will equal the number of neurons. If the firing rates are correlated such that some eigenvalues are small (or perhaps zero) the participation ratio will reflect this and the dimensionality of the data will be less than the number of neurons. Consistent with our modeling results, we found that responses in ADS had higher dimensionality than in FOF (i.e., ADS exhibited less firing rate covariation) and that ADS sessions with greater dimensionality were those that favored the independent-noise model (Figure 4—figure supplement 2C).
 
-## Neural data provides more information about accumulated evidence than choice
+### Neural data provides more information about accumulated evidence than choice
 
 Next we examined how neural data affected inferences about accumulated evidence. We computed the posterior distribution over the accumulator variable a(t) for the joint model, given choice data only, or given neural and choice data. The posterior distribution combines information from multiple sources—stimulus, choice, and neural activity—to offer a concise window into the animal’s internal state of evidence accumulation. Figure 5A shows the posterior distribution for three example trials (one for each brain region) when only choice data was included and when both choice and neural data were included. The choice data posterior was broad; a large set of a(t) trajectories were all consistent with the animal’s choice. However, when we considered both choice and neural spiking activity, we obtained a substantially narrower distribution over a(t), meaning including neural data in the joint model offers greater confidence in the precise value of accumulated evidence at each moment within a trial.
 
@@ -104,13 +279,23 @@ Next we examined how neural data affected inferences about accumulated evidence.
 
 To quantify this difference, we computed the standard deviation of the two posteriors (Figure 5B). For all brain regions, the median posterior standard deviation given neural data and choice was substantially smaller than when conditioning only on choice (Figure 5B; median difference FOF: 0.46; PPC: 0.72; ADS: 2.23). This reduction in the posterior width increased with the number of neurons (Figure 5C). The increased certainty about a(t) provided by neural activity makes intuitive sense: temporally specific spiking activity (e.g., in the middle of a trial) allows one to infer that a(t) has increased in favor of a choice, whereas choice information can only offer certainty about the range of a(t) at the end of the trial.
 
-## Joint neural-behavioral model improves choice decoding
+### Joint neural-behavioral model improves choice decoding
 
 We designed our joint model with the expectation that combining choice data, neural responses, and stimulus information within an accumulation framework would lead to greater insight into decision-making than models that lacked these features. We tested this expectation by comparing choice decoding accuracy of the joint model on single trials to models that used stimulus information and only choice data or only neural data (see Methods). We found that choices could be predicted more accurately under the joint model, which took into account the stimulus, neural activity, and choices, than under the choice model, which used stimulus information and choices alone. We quantified this improvement in test log-likelihood and percent correct (Figure 6A). The joint model had higher test log-likelihood for choice data and choice-prediction accuracy for all three brain regions, with the joint model of FOF data showing an almost 50% improvement in test log-likelihood and a 6% increase in prediction accuracy. The posterior mean of the joint model and the posterior mean of the choice model is shown in Figure 6B for three example trials. In all examples, the joint model correctly predicted the choice the animal made (indicated by the arrow), whereas the choice-only model failed because its prediction was based on the stimulus. This increased performance derives from the choice-informative spiking information contained in the posterior (Figure 5) that the choice model lacks.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/84955/elife-84955-fig6-v3.jpg)
+
+**Figure 6.:** (A) Choice-prediction accuracy, quantified with log-likelihood (left) and percent correct (right) on test choice data for four models: joint neural-behavioral model, choice-only model, and two logistic regression models (Methods). Values greater than zero indicate that the model can predict choices better than a baseline model that only knows the marginal probability of a rightward choice. (B) Posterior mean of a(t) conditioned on the neural activity for the joint model (colors), the distribution of a(t) for the choice-only model (black), and the cumulative click difference (gray) for three example trials (one for each brain region). ‘Animal’s choice’ arrow indicates the choice (left or right) the animal made on that trial. (C) Putative change of mind events, where the posterior mean of the joint model crossed the decision threshold. The corresponding distribution of a(t) for the choice-only model (black) and the cumulative click difference (gray) for the same trial are shown for comparison. ‘Animal’s choice’ arrow indicates the choice (left or right) the animal made on that trial. (D) Fraction of trials that contain at least one putative change of mind event for the cumulative click difference, the choice model, and the joint model, for each brain region. (E) Fraction of trials for which a putative change of mind event occurs at the specified time relative to the end of the stimulus for the joint model (color) and the cumulative click difference (black) for each brain region. (F) Choice response latency as a function of timing of putative change of mind events relative to stimulus offset for each brain region. Bar plots show the 25–75 percentiles of the choice response latency for putative change of mind events occurring at similar times. The colored lines indicate the line of best fit for each brain region computed by linear regression.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/84955/elife-84955-fig6-figsupp1-v3.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/84955/elife-84955-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Accuracy of the rat for data from each brain region for putative change of mind event trials and trials that lacked events (‘no event’). (B) Same as (A) but for accuracy of the joint model for each brain region.
+
 If neural activity is highly correlated with the motor report (e.g., activity from motor neurons controlling orientation), we would expect the neural activity to be a good predictor of the animal’s choice. In such a case, a model that predicted choice without the framework of the DDM accumulator but using neural activity would have high accuracy. We compared our accumulator-based joint model to a logistic regression model (i.e., Bernoulli GLM) which used the final accumulated click difference and the trial-summed spike count for each neuron as regressors (Methods). Decoding under the joint accumulator model significantly outperformed logistic regression (Figure 6A, GLM). The performance of the GLM did not depend strongly on the time window considered: decoding of choice using spikes from the last 50 ms (Figure 6A, GLM 50 ms), 100 ms, 150 ms, 200 ms, and 250 ms before a decision all performed similarly (Figure 6—figure supplement 1). This shows that the joint accumulation framework and the fine timescale dynamics of the joint model captures features of the spike trains that are useful for predicting the animal’s choice, above and beyond the information carried by spike counts in particular time windows before the choice.
 
-## Putative changes of mind are common in ADS, rare in FOF
+### Putative changes of mind are common in ADS, rare in FOF
 
 The previous analysis illustrated how the joint accumulation framework, combined with temporally precise neural responses, can accurately predict animal choices. Numerous studies have shown that subjects making decisions based on noisy stimuli will vacillate before reporting a decision (Kaufman et al., 2015; Kiani et al., 2014; Resulaj et al., 2009). Switches of a subject’s provisional decision have been referred to as ‘changes of mind’ (Boyd-Meredith et al., 2022; Peixoto et al., 2021). We used our joint accumulator model to identify putative changes of mind from our neural recordings, to examine how decision commitment is manifested in different brain regions. We examined the temporal dynamics of the joint model posterior, conditioned on neural activity only, to find putative changes of mind: moments when posterior mean crossed from one side of the decision threshold to the other. We required that the conditioned posterior mean remained on one side of the decision threshold for at least 50 ms before and after the crossing and achieved an absolute magnitude greater than 2 during that 100 ms window (see Methods).
 
@@ -140,178 +325,270 @@ Several extensions of our framework are readily apparent. Increasing the number 
 
 ## Methods
 
-## Latent variable model
+### Latent variable model
 
-We model accumulated evidence as a one-dimensional DDM with a symmetric absorbing boundary (Brunton et al., 2013). On a single behavioral trial, the evolution of the accumulated evidence, a(t), is governed by(4)da=λadt+σadW +σsdt(η′δt,tRCR(t)−η′δt,tLCL(t))
+We model accumulated evidence as a one-dimensional DDM with a symmetric absorbing boundary (Brunton et al., 2013). On a single behavioral trial, the evolution of the accumulated evidence, a(t), is governed by
 
-where λ is the inverse of the drift time constant. σadW is a Wiener process with scaling σa. σsη` are Gaussian variables with variance σs2 and mean 1. δt,tL and δt,tR are the timing of left and right pulses, respectively, and CL(t) and CR(t) are the magnitude that each left or right click, respectively, has at time t. The impact of each click is modulated by sensory adaptation, based on the following equation:, (5)dCαdt=1−Cατϕ+(ϕ−1)(Cαδt,tα)
+$$
+da=\lambdaadt+\sigma_{a}dW +\sigma_{s}dt(η^{′}\delta_{t,t_{R}}C_{R}(t)−η^{′}\delta_{t,t_{L}}C_{L}(t))
+$$
 
-where α={L,R}. We define the difference of the adapted click magnitude at time t as Δ(t)=δt,tRCR(t)−δt,tLCL(t) and the sum of the adapted click magnitude at time t as Σ(t)=δt,tRCR(t)+δt,tLCL(t). By doing so, we can express Equation 4 as:, (6)da=λadt+Δ(t)dt+σadW+σsΣ(t)ηdt
+where $\lambda$ is the inverse of the drift time constant. $\sigma_{a}dW$ is a Wiener process with scaling $\sigma_{a}$. $\sigma_{s}η^{`}$ are Gaussian variables with variance $\sigma_{s}^{2}$ and mean 1. $\delta_{t,t_{L}}$ and $\delta_{t,t_{R}}$ are the timing of left and right pulses, respectively, and $C_{L}(t)$ and $C_{R}(t)$ are the magnitude that each left or right click, respectively, has at time t. The impact of each click is modulated by sensory adaptation, based on the following equation:
 
-where η is a standard Normal. An absorbing boundary, B, if crossed, prevents a(t) from evolving further (i.e. da = 0 if a(t)>B). The initial state of a(t) is distributed normally with mean 0 and variance σi2. We refer to all parameters that govern the dynamics of a(t) as θa={σi,λ,B,σa,σs,ϕ,τϕ}.
+$$
+\frac{dC_{\alpha}}{dt}=\frac{1−C_{\alpha}}{\tau_{ϕ}}+(ϕ−1)(C_{\alpha}\delta_{t,t_{\alpha}})
+$$
 
-## Computing the distribution of the latent state
+where $\alpha={L,R}$. We define the difference of the adapted click magnitude at time t as $Δ(t)=\delta_{t,t_{R}}C_{R}(t)−\delta_{t,t_{L}}C_{L}(t)$ and the sum of the adapted click magnitude at time t as $Σ(t)=\delta_{t,t_{R}}C_{R}(t)+\delta_{t,t_{L}}C_{L}(t)$. By doing so, we can express Equation 4 as:
 
-The temporal dynamics of the probability distribution of a(t), P(a(t)), can be expressed as a Fokker-Planck equation,(7)∂P(a(t))∂t=σa2+σs2Σ(t)2∂2P∂a2−∂((λa+Δ(t))P)∂a
+$$
+da=\lambdaadt+Δ(t)dt+\sigma_{a}dW+\sigma_{s}Σ(t)ηdt
+$$
 
-We numerically compute the solution to Equation 7 by dividing P(a(t)) into a set of n discrete spatial bins, and determine how mass moves after a discrete temporal interval, Δt. The discrete time dynamics of P(at) are Markov, and obey the following equation:, (8)P(at)=M(θa,δt)P(at−1)
+where $η$ is a standard Normal. An absorbing boundary, B, if crossed, prevents a(t) from evolving further (i.e. da = 0 if a(t)>B). The initial state of a(t) is distributed normally with mean 0 and variance $\sigma_{i}^{2}$. We refer to all parameters that govern the dynamics of a(t) as $\theta_{a}={\sigma_{i},\lambda,B,\sigma_{a},\sigma_{s},ϕ,\tau_{ϕ}}$.
 
-where δt is the collection of left and right clicks at time t. The transition matrix M(θa,δt) is determined using methods established in Brunton et al., 2013. Briefly, for each spatial bin, the deterministic effect of the dynamics on the probability mass is computed, and this is convolved with a discrete approximation to a Gaussian distribution with the appropriate variance and a finer spatial resolution than the initial spatial resolution described above, to determine the various locations of that probability mass at the next time bin. Because the location of each bin of mass after the Gaussian convolution is not likely to correspond to the spatial grid defined for P(at), the mass is ‘settled’ into appropriate bins based on the distance of each bit of mass and the nearest two bins. Mass located in the first and last bin, corresponding to mass that has been captured by the boundary, cannot change locations, and the entries of M(θa,δt) that determines how the mass in these bins moves reflects this. n=53 and Δt = 10 ms for all results presented here.
+### Computing the distribution of the latent state
 
-## Relating a(t) to spikes and choices
+The temporal dynamics of the probability distribution of a(t), P(a(t)), can be expressed as a Fokker-Planck equation,
 
-On a single behavioral trial, the observed spike count of the n-th neuron at time t, yn,t, is a Poisson random variable,, (9)P(yn,t|at,θn)=(fθn(at))Δtyn,texp⁡(−fθn(at)Δt)
+$$
+\frac{∂P(a(t))}{∂t}=\frac{\sigma_{a}^{2}+\sigma_{s}^{2}Σ(t)}{2}\frac{∂^{2}P}{∂a^{2}}−\frac{∂((\lambdaa+Δ(t))P)}{∂a}
+$$
 
-where θn defines the expected firing rate function f for the n-th neuron. We choose fθn to be a softplus function, i.e., softplus(x)=log(1+exp(x)). Each neuron has their own parameter θn that relates fθn to at. θy={θ1,θ2,...θN} is the collection of all neural parameters for the population of N neurons.
+We numerically compute the solution to Equation 7 by dividing $P(a(t))$ into a set of n discrete spatial bins, and determine how mass moves after a discrete temporal interval, $Δt$. The discrete time dynamics of $P(a_{t})$ are Markov, and obey the following equation:
 
-We define fθn(at) as, (10)fθn(at)=softplus(θnat+θn,t0)
+$$
+P(a_{t})=M(\theta_{a},\delta_{t})P(a_{t−1})
+$$
 
-where θ0n,t accounts for the time-varying trial-average (i.e., invariant to a(t)) firing rate of the n-th neuron. θ0n,t is learned prior to fitting the full model, i.e., before learning θa and θy. We approximate θ0n,t with a set of six Gaussian radial basis functions(11)θn,t0=∑i6wi,nRBFN(μi,σRBF2)
+where $\delta_{t}$ is the collection of left and right clicks at time t. The transition matrix $M(\theta_{a},\delta_{t})$ is determined using methods established in Brunton et al., 2013. Briefly, for each spatial bin, the deterministic effect of the dynamics on the probability mass is computed, and this is convolved with a discrete approximation to a Gaussian distribution with the appropriate variance and a finer spatial resolution than the initial spatial resolution described above, to determine the various locations of that probability mass at the next time bin. Because the location of each bin of mass after the Gaussian convolution is not likely to correspond to the spatial grid defined for $P(a_{t})$, the mass is ‘settled’ into appropriate bins based on the distance of each bit of mass and the nearest two bins. Mass located in the first and last bin, corresponding to mass that has been captured by the boundary, cannot change locations, and the entries of $M(\theta_{a},\delta_{t})$ that determines how the mass in these bins moves reflects this. n=53 and $Δt$ = 10 ms for all results presented here.
 
-The mean of the functions, μi, are spaced uniformly from time 0 to the maximum trial length for each respective neuron. The variance of the functions, σ2RBF, is equal to the distance between the function means. We learn wi,nRBF by assuming that yn,t is distributed Poisson with an intensity function θ0n,t and maximize the likelihood. In other words, for the n-th neuron we define the likelihood of the observed spikes for a trial of duration T, yn, assuming a time-varying intensity function θ0n,t, (12)P(yn|θn0)=∏t=1T(θn,t0Δt)yn,texp⁡(−θn,t0Δt)
+### Relating a(t) to spikes and choices
 
-and maximize this likelihood across K trials with respect to the parameters wi,nRBF.
+On a single behavioral trial, the observed spike count of the n-th neuron at time t, $y_{n,t}$, is a Poisson random variable,
 
-Although both θna(t) and θ0n(t) vary in time to define each neuron’s expected firing rate, they are uniquely identifiable, because θna(t) varies from trial to trial depending on the stimulus while θ0n(t) does not. We verified through numerical experimentation and parameter recovery using synthetic data that each process can be identified.
+$$
+P(y_{n,t}|a_{t},\theta_{n})=(f_{\theta_{n}}(a_{t}))Δt^{y_{n,t}}exp⁡(−f_{\theta_{n}}(a_{t})Δt)
+$$
 
-On a single behavioral trial, with a probability 1-γ the subject’s choice, d, is a deterministic function of a(t) at the end of the trial (time T), (Brunton et al., 2013); with probability γ the choice is made without considering a(t). γ captures ‘lapses’ in the subject’s performance. For choices that depend on a(t), if a(T) is greater than a cutoff value c, d=1, otherwise d=0. Thus, the probability of the choice, given a(t) and θd, can be written as:,, (13)P(d|aT,θd)=(γ2+(1−γ)H(aT−c))d(γ2+(1−γ)(1−H(aT−c)))1−d
+where $\theta_{n}$ defines the expected firing rate function f for the n-th neuron. We choose $f_{\theta_{n}}$ to be a softplus function, i.e., softplus(x)=log(1+exp(x)). Each neuron has their own parameter $\theta_{n}$ that relates $f_{\theta_{n}}$ to $a_{t}$. $\theta_{y}={\theta_{1},\theta_{2},...\theta_{N}}$ is the collection of all neural parameters for the population of N neurons.
 
-where H(⋅) is the Heaviside function. We refer to the parameters relating a(t) to the likelihood of a subject’s choice as θd={c,γ}.
+We define $f_{\theta_{n}}(a_{t})$ as
 
-## Relative binning of clicks and spikes
+$$
+f_{\theta_{n}}(a_{t})=softplus(\theta_{n}a_{t}+\theta_{n,t}^{0})
+$$
 
-A minor but key implementation detail concerns defining the start and end times of the temporal bin edges that are used to bin the click inputs and the spikes trains. Through numerical experimentation, we identified that our numerical procedure produces a systematic error in estimating the model parameters when the temporal bins for the clicks are aligned with the temporal bins for the spikes. To circumvent this issue, we offset the bins for the spikes by Δt/2, so that the bin edges for spikes at time t surround the forward bin edge of the clicks by ±Δt/2. This procedure is similar to the central difference formulation of a finite difference approximation to a differential equation.
+where $\theta^{0}_{n,t}$ accounts for the time-varying trial-average (i.e., invariant to a(t)) firing rate of the n-th neuron. $\theta^{0}_{n,t}$ is learned prior to fitting the full model, i.e., before learning $\theta_{a}$ and $\theta_{y}$. We approximate $\theta^{0}_{n,t}$ with a set of six Gaussian radial basis functions
 
-## Inferring model parameters with maximum likelihood
+$$
+\theta_{n,t}^{0}=\sumi6w_{i,n}^{RBF}N(\mu_{i},\sigma_{RBF}^{2})
+$$
 
-We refer to the set of all parameters for models fit to spikes and choices as Θ={θa,θy,θd}. Given the Markov dynamics described above, the relationship between a(t) and the observed data, and the model parameters, we can write out the likelihood of the spike train data Y from N neurons for T time bins, the behavioral choice d, and the latent variable a for T time bins as:(14)P(a,Y,d|Θ)=P(a0|θa)∏t=1TP(at|at−1,θa,δt)∏n=1NP(yn,t|at,θn)P(d|aT,θd)
+The mean of the functions, $\mu_{i}$, are spaced uniformly from time 0 to the maximum trial length for each respective neuron. The variance of the functions, $\sigma^{2}_{RBF}$, is equal to the distance between the function means. We learn $w_{i,n}^{RBF}$ by assuming that $y_{n,t}$ is distributed Poisson with an intensity function $\theta^{0}_{n,t}$ and maximize the likelihood. In other words, for the n-th neuron we define the likelihood of the observed spikes for a trial of duration T, $y_{n}$, assuming a time-varying intensity function $\theta^{0}_{n,t}$
 
-We compute the likelihood of the data by integrating over a(15)P(Y,d|Θ)=∑aP(a,Y,d|Θ)
+$$
+P(y_{n}|\theta_{n}^{0})=\prodt=1T(\theta_{n,t}^{0}Δt)^{y_{n,t}}exp⁡(−\theta_{n,t}^{0}Δt)
+$$
 
-Because of the way in which we compute P(at|at−1,θa,δt) (see above) computing the log-likelihood of the data can be done with a single forward pass over the data using the ‘forward-backward’ algorithm method for hidden Markov models (Bishop, 2006). We maximize the sum over K behavioral trials of the logarithm of this quantity with respect to Θ^ via gradient ascent. To compute the gradient of ∑kKlogP(Yk,dk|Θ) with respect to Θ, we use a standard automatic differentiation package (Revels et al., 2016). We refer to the set of parameters that maximizes the likelihood as Θ^.
+and maximize this likelihood across K trials with respect to the parameters $w_{i,n}^{RBF}$.
+
+Although both $\theta_{n}a(t)$ and $\theta^{0}_{n}(t)$ vary in time to define each neuron’s expected firing rate, they are uniquely identifiable, because $\theta_{n}a(t)$ varies from trial to trial depending on the stimulus while $\theta^{0}_{n}(t)$ does not. We verified through numerical experimentation and parameter recovery using synthetic data that each process can be identified.
+
+On a single behavioral trial, with a probability $1-\gamma$ the subject’s choice, d, is a deterministic function of a(t) at the end of the trial (time T), (Brunton et al., 2013); with probability $\gamma$ the choice is made without considering a(t). $\gamma$ captures ‘lapses’ in the subject’s performance. For choices that depend on a(t), if a(T) is greater than a cutoff value c, d=1, otherwise d=0. Thus, the probability of the choice, given a(t) and $\theta_{d}$, can be written as:,
+
+$$
+P(d|a_{T},\theta_{d})=(\frac{\gamma}{2}+(1−\gamma)H(a_{T}−c))^{d}(\frac{\gamma}{2}+(1−\gamma)(1−H(a_{T}−c)))^{1−d}
+$$
+
+where $H(⋅)$ is the Heaviside function. We refer to the parameters relating a(t) to the likelihood of a subject’s choice as $\theta_{d}={c,\gamma}$.
+
+### Relative binning of clicks and spikes
+
+A minor but key implementation detail concerns defining the start and end times of the temporal bin edges that are used to bin the click inputs and the spikes trains. Through numerical experimentation, we identified that our numerical procedure produces a systematic error in estimating the model parameters when the temporal bins for the clicks are aligned with the temporal bins for the spikes. To circumvent this issue, we offset the bins for the spikes by $Δt/2$, so that the bin edges for spikes at time t surround the forward bin edge of the clicks by ±$Δt/2$. This procedure is similar to the central difference formulation of a finite difference approximation to a differential equation.
+
+### Inferring model parameters with maximum likelihood
+
+We refer to the set of all parameters for models fit to spikes and choices as $Θ={\theta_{a},\theta_{y},\theta_{d}}$. Given the Markov dynamics described above, the relationship between a(t) and the observed data, and the model parameters, we can write out the likelihood of the spike train data Y from N neurons for T time bins, the behavioral choice d, and the latent variable a for T time bins as:
+
+$$
+P(a,Y,d|Θ)=P(a_{0}|\theta_{a})\prodt=1TP(a_{t}|a_{t−1},\theta_{a},\delta_{t})\prodn=1NP(y_{n,t}|a_{t},\theta_{n})P(d|a_{T},\theta_{d})
+$$
+
+We compute the likelihood of the data by integrating over a
+
+$$
+P(Y,d|Θ)=\sumaP(a,Y,d|Θ)
+$$
+
+Because of the way in which we compute $P(a_{t}|a_{t−1},\theta_{a},\delta_{t})$ (see above) computing the log-likelihood of the data can be done with a single forward pass over the data using the ‘forward-backward’ algorithm method for hidden Markov models (Bishop, 2006). We maximize the sum over K behavioral trials of the logarithm of this quantity with respect to $Θ^$ via gradient ascent. To compute the gradient of $\sumkKlogP(Y_{k},d_{k}|Θ)$ with respect to Θ, we use a standard automatic differentiation package (Revels et al., 2016). We refer to the set of parameters that maximizes the likelihood as $Θ^$.
 
 We note that all K trials for many of the models we fit were not recorded on the same behavioral session, and therefore, all N neurons are not recorded for every trial. For example, neurons 1–3 might be recorded on trials 1–500, while neurons 4–6 might be recorded on trials 501–1000. Although our notation does not reflect this in order to keep the notation simple, only neurons recorded on a trial contribute to the likelihood on that trial.
 
-## Bounded optimization
+### Bounded optimization
 
-Several model parameters are only defined within a restricted domain; for example, all variances parameters, such as σa2, are only defined on the positive real axis. Alternatively, other parameters, although defined on a more expansive domain, have values that correspond to models that are not very likely; for example, although B is defined on the positive real axis, values much greater than 40 are not likely to be exhibited in the data, given the specifics of the stimulus, where greater than 40 clicks were rare. For these reasons, we define the following domain over which parameter optimization was performed:
+Several model parameters are only defined within a restricted domain; for example, all variances parameters, such as $\sigma_{a}^{2}$, are only defined on the positive real axis. Alternatively, other parameters, although defined on a more expansive domain, have values that correspond to models that are not very likely; for example, although B is defined on the positive real axis, values much greater than 40 are not likely to be exhibited in the data, given the specifics of the stimulus, where greater than 40 clicks were rare. For these reasons, we define the following domain over which parameter optimization was performed:
 
-The occurrence of parameters hitting the bound can be seen in Figure 3, Figure 3—figure supplement 4. The most common boundary hitting situation was a variance parameter (σi, σa, σs) hitting the lower boundary of zero, which means that the model did not support noise of that kind in the model fit. σi and σa were found to do this for the choice-only model, consistent with the results of Brunton et al. The other bound that was frequently hit was the upper bound for the accumulation bound parameter B, a result also consistent with the results of Brunton et al. The log-likelihood surface as B grows very large becomes very flat, because it becomes increasingly unlikely that probability mass P(a(t)) crosses the boundary. Thus, the model fits do not change appreciably if this optimization boundary is relaxed.
+The occurrence of parameters hitting the bound can be seen in Figure 3, Figure 3—figure supplement 4. The most common boundary hitting situation was a variance parameter ($\sigma_{i}$, $\sigma_{a}$, $\sigma_{s}$) hitting the lower boundary of zero, which means that the model did not support noise of that kind in the model fit. $\sigma_{i}$ and $\sigma_{a}$ were found to do this for the choice-only model, consistent with the results of Brunton et al. The other bound that was frequently hit was the upper bound for the accumulation bound parameter B, a result also consistent with the results of Brunton et al. The log-likelihood surface as B grows very large becomes very flat, because it becomes increasingly unlikely that probability mass $P(a(t))$ crosses the boundary. Thus, the model fits do not change appreciably if this optimization boundary is relaxed.
 
-## Confidence intervals for maximum likelihood parameters
+### Confidence intervals for maximum likelihood parameters
 
 To compute confidence bounds of estimated parameters (as in Figure 3 and Figure 1—figure supplement 1, Figure 4—figure supplement 1, Figure 3—figure supplement 3, Figure 3—figure supplement 4), we use the Laplace approximation to the log-likelihood. Using automatic differentiation, we compute the Hessian (the matrix of second derivatives) of the log-likelihood at the maximum likelihood parameters. The diagonal entries of the Hessian’s inverse quantify the sharpness of the curvature of the log-likelihood surface, and therefore the uncertainty of the estimate of each parameter. We define the confidence bound as ±2 times the square root of each diagonal entry; approximating the log-likelihood surface as Gaussian, this describes the range of parameters that would fall within approximately 95% of the log-likelihood volume.
 
 For some sets of maximum likelihood parameters, further consideration was necessary. In cases where confidence bounds extend beyond an optimization bound that corresponds to a strict boundary on the domain of a parameter (e.g., variance parameters being strictly positive), we truncate these intervals at the bound. In some cases, we found that Hessian was not positive semi-definite, a necessary condition to invert it. This most often occurred when a maximum likelihood parameter encroached upon a strict parameter boundary (e.g., variance parameters being strictly positive). We dealt with these scenarios in two ways. In some cases, numerical line search along any Hessian eigenvector with negative eigenvalue confirmed the convexity of the log-likelihood was local whereas more globally the log-likelihood was concave. In light of this, we numerically computed the global concavity of the log-likelihood with a numerical line search and approximated this curve with a quadratic function. We replaced the negative eigenvalue of the Hessian with two times the coefficient of this quadratic approximation (the multiplier two is used because the Hessian is two times the second-order approximation of the log-likelihood via Taylor series approximation, where the second-order term contains a 1/2 prefactor). In other cases, computing the Hessian in a transformed space (e.g., log space) where troublesome parameters were free to take on any value rectified the non-concavity (Yartsev et al., 2018). After computing confidence intervals in the transformed space, we mapped these values back into the standard space by the inverse transform.
 
-## Data selection
+### Data selection
 
 Details regarding behavioral data collection and neural recordings and spike sorting can be found in Hanks et al., 2015 and Yartsev et al., 2018. To select which neurons were used, a firing rate for each neuron was computed by summing spikes over the duration of the stimulus period and dividing this by the length of the stimulus period. A two-sided t-test was applied, comparing the firing rate distribution on trials when the animal chose left and when the animal chose right. Neurons with a p-value less than 0.01 were included for analysis.
 
-## Data grouping
+### Data grouping
 
 We grouped together rats that had neural recordings from the same brain region (five FOF rats, three PPC rats, three ADS rats; see Table 1 for information about the data) to improve our estimation of the model parameters for each region. For the PPC and ADS recordings, the majority of recorded neurons came from a single rat (Table 1). Although individual FOF rats had enough neurons to support fitting each rat alone, the maximum likelihood parameters for FOF rats fit individually were qualitatively similar (Figure 3—figure supplement 3).
 
-## Response latency
+### Response latency
 
 Previous analyses have identified a response latency between the stimulus and the neural responses, and that this latency can be different in different brain regions (Hanks et al., 2015). To account for this, we shifted the time of the neural responses relative to the clicks based on these prior results. FOF and ADS responses had a latency of 60 ms, while PPC responses had a latency of 120 ms.
 
-## Specifics of data selection for each analyses
+### Specifics of data selection for each analyses
 
 Our reports of the maximum likelihood parameters for each model are for models fit to the entire dataset. Each model was also fit using cross-validation (i.e., training on a subset of the data, while reserving data for testing) but the maximum likelihood parameters did not qualitatively change from those identified using the entire dataset, and the log-likelihood computed on test data using parameters identified with training data did not differ appreciably from the log-likelihood computed on those same trials using parameters identified with the entire dataset (Figure 3—figure supplement 4). This consistency is likely due to the modest number of model parameters.
 
 When we compute various quantities related to the data, such as PSTHs, cross-correlation functions, and psychometric functions, we likewise use the entire dataset. We did not find that we could accurately estimate the PSTH when only using a small subset of the data (i.e., test data) due to the fact that our task lacks repeated stimulus conditions. Additionally, when we simulate data from a fit model (e.g., Figure 2A), we used the maximum likelihood parameters derived from model fits to the entire dataset, and used the stimuli of the entire dataset to generate these data. Again, because the maximum likelihood parameters did not qualitatively change when the model was fit to a subset of the data, we found it easier to focus our analyses on a single model. The above statements apply to analyses in the following figures: Figure 2, Figure 3, Figure 4C, D, Figure 5, Figure 6B–F, Figure 3—figure supplement 2, Figure 4—figure supplement 1, Figure 3—figure supplement 3, Figure 6—figure supplement 2.
 
-When comparing performance across models, cross-validation is necessary, and we did so in those cases (e.g. Figure 4B, Figure 6A, Figure 4—figure supplement 2, Figure 6—figure supplement 1, Figure 3—figure supplement 4B). In these cases, we performed fivefold cross-validation by dividing the dataset into a training set that consisted of 80% of the data and a test set that consisted of 20% of the data. We fit each model using the training data of each fold, and computed the test log-likelihood using the test data and the parameters derived from the training data. Test performance was averaged across the five folds. Again, we stress that the test performance on cross-validated data did not appreciably differ from that computed using a model trained to the entire dataset (Figure 3—figure supplement 4). We note, however, that even in cases when we performed cross-validation, we still computed an approximation to each neuron’s trial-averaged firing rates, θ0n,t, using all available data, prior to fitting the full model.
+When comparing performance across models, cross-validation is necessary, and we did so in those cases (e.g. Figure 4B, Figure 6A, Figure 4—figure supplement 2, Figure 6—figure supplement 1, Figure 3—figure supplement 4B). In these cases, we performed fivefold cross-validation by dividing the dataset into a training set that consisted of 80% of the data and a test set that consisted of 20% of the data. We fit each model using the training data of each fold, and computed the test log-likelihood using the test data and the parameters derived from the training data. Test performance was averaged across the five folds. Again, we stress that the test performance on cross-validated data did not appreciably differ from that computed using a model trained to the entire dataset (Figure 3—figure supplement 4). We note, however, that even in cases when we performed cross-validation, we still computed an approximation to each neuron’s trial-averaged firing rates, $\theta^{0}_{n,t}$, using all available data, prior to fitting the full model.
 
 Because most of our models were fit simultaneously to data from multiple experimental sessions (in which different neurons are recorded), to perform cross-validation, we randomly divided trials within each session into a train and test set, and trained and tested the model collectively on those groups of trials. Testing the model in this way will determine parameter robustness across all sessions (for model parameters that are shared across all sessions) and individual parameter robustness within a session (for parameters that are specific to an individual session). This procedure also worked for the ‘independent-noise model’, for which model parameters were shared across all sessions, but individual neuron parameters were session specific.
 
-## Other fit models
+### Other fit models
 
-## Independent-noise accumulator models
+#### Independent-noise accumulator models
 
-We refer to the set of all parameters for the model with independent accumulator noise per neuron as Θind. The likelihood of the spike train data from the n-th neuron Yn for T time bins is(16)P(Yn|Θind)=∑anP(a0,n|θa)∏t=1TP(an,t|an,t−1,θa,δt)P(yn,t|an,t,θn)
+We refer to the set of all parameters for the model with independent accumulator noise per neuron as $Θ_{ind}$. The likelihood of the spike train data from the n-th neuron $Y_{n}$ for T time bins is
 
-The joint likelihood for the spike train data from all neurons is the product of the likelihood for each neuron: P(Y|Θind)=∏n=1NP(Yn|Θind). Our primary interest in this analysis was capturing the neural responses, so we considered a simple model of choice for this model: on each trial, choice is determined by randomly selecting one of the accumulators. The likelihood of the choice d under such a model is the average of the n accumulators at time T:(17)P(d|Θind)=1N∑n=1NP(d|an,Tθd)
+$$
+P(Y_{n}|Θ_{ind})=\suma_{n}P(a_{0,n}|\theta_{a})\prodt=1TP(a_{n,t}|a_{n,t−1},\theta_{a},\delta_{t})P(y_{n,t}|a_{n,t},\theta_{n})
+$$
 
-The full likelihood is the product of these terms: P(Y,d|Θind)=P(d|Θind)P(Y|Θind).
+The joint likelihood for the spike train data from all neurons is the product of the likelihood for each neuron: $P(Y|Θ_{ind})=\prodn=1NP(Y_{n}|Θ_{ind})$. Our primary interest in this analysis was capturing the neural responses, so we considered a simple model of choice for this model: on each trial, choice is determined by randomly selecting one of the accumulators. The likelihood of the choice d under such a model is the average of the n accumulators at time T:
 
-## Choice-only model
+$$
+P(d|Θ_{ind})=\frac{1}{N}\sumn=1NP(d|a_{n,T}\theta_{d})
+$$
 
-We refer to the set of all parameters for the model fit to choices only as Θd={θa,θd}. The likelihood of the behavioral choice d is(18)P(d|Θd)=∑aP(a0|θa)∏t=1TP(at|at−1,θa,δt)P(d|aT,θd)
+The full likelihood is the product of these terms: $P(Y,d|Θ_{ind})=P(d|Θ_{ind})P(Y|Θ_{ind})$.
 
-## Bernoulli GLM
+#### Choice-only model
+
+We refer to the set of all parameters for the model fit to choices only as $Θ_{d}={\theta_{a},\theta_{d}}$. The likelihood of the behavioral choice d is
+
+$$
+P(d|Θ_{d})=\sumaP(a_{0}|\theta_{a})\prodt=1TP(a_{t}|a_{t−1},\theta_{a},\delta_{t})P(d|a_{T},\theta_{d})
+$$
+
+#### Bernoulli GLM
 
 To benchmark our method’s ability to predict the animal’s choice, we considered a basic logistic regression model (i.e., Bernoulli GLM) that included stimulus information and neural activity (e.g., Figure 6A and Figure 6—figure supplement 1). For each trial, we computed the total number of spikes each neuron produced during the specified temporal window and the final cumulative click difference, and used them as regressors in a standard Bernoulli GLM to predict the animal’s choice. A constant bias was also included, as well as a single lapse parameter that scaled the minimum and maximum values of the logistic inverse link function. Cross-validation was performed on this model as described above.
 
-## Null choice model
+#### Null choice model
 
 In Figure 6A, we assess how well each of our fitted models can predict choice. We compare all models against a baseline model where each choice is a Bernoulli random variable with probability of making a right choice equal to the empirical fraction of choices made to the right.
 
-## Null joint model
+#### Null joint model
 
-To compare the improvement of the joint model in absolute terms (i.e., when not comparing two fitted models), we compute a null model of the spiking activity and choices (Figure 3—figure supplement 4B). The null likelihood of the choice data is as described above. The null likelihood of the spike train data assumes that the time-varying expected firing rate of each neuron is equal to its estimated time-varying trial-average firing rate, i.e., fθn(t)=θ0n,t.
+To compare the improvement of the joint model in absolute terms (i.e., when not comparing two fitted models), we compute a null model of the spiking activity and choices (Figure 3—figure supplement 4B). The null likelihood of the choice data is as described above. The null likelihood of the spike train data assumes that the time-varying expected firing rate of each neuron is equal to its estimated time-varying trial-average firing rate, i.e., $f_{\theta_{n}}(t)=\theta^{0}_{n,t}$.
 
-The improved performance (i.e., cross-validated log-likelihood) of our joint model over the null model shown in Figure 3—figure supplement 4 further confirms that θna(t) and θ0n(t) are uniquely identifiable, and that they are not redundant (i.e., the joint model is not overparameterized).
+The improved performance (i.e., cross-validated log-likelihood) of our joint model over the null model shown in Figure 3—figure supplement 4 further confirms that $\theta_{n}a(t)$ and $\theta^{0}_{n}(t)$ are uniquely identifiable, and that they are not redundant (i.e., the joint model is not overparameterized).
 
-## Poisson GLM
+#### Poisson GLM
 
-To validate the maximum likelihood parameters derived from the joint model, we fit a variant of a Poisson GLM to the spiking responses (Figure 3—figure supplement 2). As a regressor, we used the adapted, exponentially filtered click inputs,, (19)da=λadt+dtΔ(t)
+To validate the maximum likelihood parameters derived from the joint model, we fit a variant of a Poisson GLM to the spiking responses (Figure 3—figure supplement 2). As a regressor, we used the adapted, exponentially filtered click inputs,
 
-where Δ(t) is defined as above. The expected firing rate of each neuron is defined as in the full model, by Equation 10. For the bounded Poisson GLM model, the dynamics of a(t) follow Equation 19, except that if a(t) crosses B, a(t) stops evolving (i.e. da = 0 if a(t)>B). The parameters λ, B, ϕ, τϕ, and θy that maximize the likelihood of the spike data were learned using gradient ascent. The null model described in Figure 3—figure supplement 2 is the null joint model, described above.
+$$
+da=\lambdaadt+dtΔ(t)
+$$
 
-## Negative binomial
+where $Δ(t)$ is defined as above. The expected firing rate of each neuron is defined as in the full model, by Equation 10. For the bounded Poisson GLM model, the dynamics of a(t) follow Equation 19, except that if a(t) crosses B, a(t) stops evolving (i.e. da = 0 if a(t)>B). The parameters $\lambda$, B, $ϕ$, $\tau_{ϕ}$, and $\theta_{y}$ that maximize the likelihood of the spike data were learned using gradient ascent. The null model described in Figure 3—figure supplement 2 is the null joint model, described above.
 
-In Figure 3—figure supplement 1, we compare a Poisson observation model to a negative binomial model. To do this, we model the spikes as:(20)P(yn,t|at,θn)=NB(θnNB,θnNBfθn(at)Δt+θnNB)
+#### Negative binomial
 
-where NB(⋅,⋅) is the negative binomial distribution, and θnNB controls the variance of the distribution for each neuron and can take values between 0 and positive infinity. When θnNB becomes large the negative binomial distribution approaches the Poisson distribution. θnNB was fit for each neuron using gradient ascent, as described above.
+In Figure 3—figure supplement 1, we compare a Poisson observation model to a negative binomial model. To do this, we model the spikes as:
 
-## Quantifying model fit
+$$
+P(y_{n,t}|a_{t},\theta_{n})=NB(\theta_{n}^{NB},\frac{\theta_{n}^{NB}}{f_{\theta_{n}}(a_{t})Δt+\theta_{n}^{NB}})
+$$
 
-## Computing PSTHs and cross-correlation functions on empirical data
+where $NB(⋅,⋅)$ is the negative binomial distribution, and $\theta_{n}^{NB}$ controls the variance of the distribution for each neuron and can take values between 0 and positive infinity. When $\theta_{n}^{NB}$ becomes large the negative binomial distribution approaches the Poisson distribution. $\theta_{n}^{NB}$ was fit for each neuron using gradient ascent, as described above.
 
-We computed a ‘single-trial’ firing rate for each neuron by convolving its binned spikes with a Gaussian kernel of standard deviation 50 ms. We call this single-trial rate rt,k,n for the n-th neuron on the k-th trial at time t. We divide all the trials into two equally sized groups based on the cumulative click difference at the end of the trial and average rt,k,n based on these groupings. Because trials are not of equal duration, at time t we use whichever trials have data at that time. We refer to this average as r̄c,n,t where the index c runs from 1 to 2.
+### Quantifying model fit
 
-We used the empirical binned spikes counts to compute cross-correlation functions. Raw cross-correlation functions were normalized by the (across time) mean firing rates of the two neurons being used so they provided a measure of excess spike rate. The equation for the raw cross-correlation function was, (21)Rm,n(τ)=1mm(1K∑kK1Nk(τ)∑tTyn,k,tΔtym,k,t−τΔt)−mn
+#### Computing PSTHs and cross-correlation functions on empirical data
 
-where t is over all bins for the k-th trial, yn,k,t and ym,k,t-τ are the binned spike train of neuron n and m at time t and t-τ respectively, and Nk(τ) is the number of bins such that both yn,k,t and ym,k,t-τ are valid. mn and mm are the mean firing rates of the n-th and mth neuron respectively, computed by taking the average spike count across all times.
+We computed a ‘single-trial’ firing rate for each neuron by convolving its binned spikes with a Gaussian kernel of standard deviation 50 ms. We call this single-trial rate $r_{t,k,n}$ for the n-th neuron on the k-th trial at time t. We divide all the trials into two equally sized groups based on the cumulative click difference at the end of the trial and average $r_{t,k,n}$ based on these groupings. Because trials are not of equal duration, at time t we use whichever trials have data at that time. We refer to this average as $r̄_{c,n,t}$ where the index c runs from 1 to 2.
 
-To compute the shuffled-corrected cross-correlation, we computed the cross-correlation of the expected firing rate of each neuron provided by the PSTH, i.e., r̄n,c,t,, (22)Rm,nPSTH(τ)=1mm(1C∑cC1Nc(τ)∑tTr¯n,c,tr¯m,c,t−τ)−mn
+We used the empirical binned spikes counts to compute cross-correlation functions. Raw cross-correlation functions were normalized by the (across time) mean firing rates of the two neurons being used so they provided a measure of excess spike rate. The equation for the raw cross-correlation function was
 
-where C=2 is the number of conditions used to define the PSTH, Nc(τ) is defined similarly as above, and mn and mm are as defined above. The shuffle-corrected cross-correlation is the raw cross-correlation minus the cross-correlation of the expected firing rate: Rm,n(τ)-RPSTHm,n(τ).
+$$
+R_{m,n}(\tau)=\frac{1}{m_{m}}(\frac{1}{K}\sumkK\frac{1}{N_{k}(\tau)}\sumtT\frac{y_{n,k,t}}{Δt}\frac{y_{m,k,t−\tau}}{Δt})−m_{n}
+$$
 
-## Computing PSTHs and cross-correlation functions on synthetic data
+where t is over all bins for the k-th trial, $y_{n,k,t}$ and $y_{m,k,t-\tau}$ are the binned spike train of neuron n and m at time t and $t-\tau$ respectively, and $N_{k}(\tau)$ is the number of bins such that both $y_{n,k,t}$ and $y_{m,k,t-\tau}$ are valid. $m_{n}$ and $m_{m}$ are the mean firing rates of the n-th and mth neuron respectively, computed by taking the average spike count across all times.
 
-We generated synthetic data from a model by using the maximum likelihood parameters to generate the expected firing rate of each neuron on each trial, i.e., ft,k,n. We averaged this expected rate for each neuron on each trial over 20 different realizations of the latent noise to reduce variation due to the latent process. We then grouped and averaged these average expected rates, as described above, to generate a synthetic PSTH, which we denote by f̄n,c,t, as used in Figure 2 and Figure 1—figure supplement 1.
+To compute the shuffled-corrected cross-correlation, we computed the cross-correlation of the expected firing rate of each neuron provided by the PSTH, i.e., $r̄_{n,c,t}$,
 
-We used the synthetic expected firing rate, ft,k,n, to compute cross-correlation function for synthetic data,, (23)Rm,nsyn(τ)=1mm(1K∑kK1Nk(τ)∑tTfn,k,tfm,k,t−τ)−mn
+$$
+R_{m,n}^{PSTH}(\tau)=\frac{1}{m_{m}}(\frac{1}{C}\sumcC\frac{1}{N_{c}(\tau)}\sumtTr¯_{n,c,t}r¯_{m,c,t−\tau})−m_{n}
+$$
 
-where K, Nk(τ), mn, and mm are as defined above. The shuffle-corrected cross-correlation function of synthetic data is the raw cross-correlation function minus the cross-correlation function of the expected synthetic firing rate provided by the synthetic PSTH, f̄n,c,t.
+where C=2 is the number of conditions used to define the PSTH, $N_{c}(\tau)$ is defined similarly as above, and $m_{n}$ and $m_{m}$ are as defined above. The shuffle-corrected cross-correlation is the raw cross-correlation minus the cross-correlation of the expected firing rate: $R_{m,n}(\tau)-R^{PSTH}_{m,n}(\tau)$.
 
-## Goodness-of-fit metrics
+#### Computing PSTHs and cross-correlation functions on synthetic data
 
-To compare empirical and synthetic PSTHs, we computed the coefficient of determination. Because fewer and fewer trials were included in computing the PSTH at large time values (because trials of great length were rare), we included PSTH values 200 ms before the stimulus onset up until 500 ms after stimulus onset in this calculation. Based on the definitions of the empirical and synthetic PSTHs, the coefficient of determination is defined as:, (24)Rn2=1−∑cC∑tT(r¯n,c,t−fn,c,t)2∑cC∑tT(r¯n,c,t−<r¯n,c,t>c,t)2
+We generated synthetic data from a model by using the maximum likelihood parameters to generate the expected firing rate of each neuron on each trial, i.e., $f_{t,k,n}$. We averaged this expected rate for each neuron on each trial over 20 different realizations of the latent noise to reduce variation due to the latent process. We then grouped and averaged these average expected rates, as described above, to generate a synthetic PSTH, which we denote by $f̄_{n,c,t}$, as used in Figure 2 and Figure 1—figure supplement 1.
 
-where <r¯n,c,t>ct is the mean of r̄n,c,t over trial groupings and times. Pearson correlation (r) was used to compare empirical and synthetic cross-correlation functions. When computing r we considered values of τ between –800 and 800 ms.
+We used the synthetic expected firing rate, $f_{t,k,n}$, to compute cross-correlation function for synthetic data,
 
-## Psychometric functions
+$$
+R_{m,n}^{syn}(\tau)=\frac{1}{m_{m}}(\frac{1}{K}\sumkK\frac{1}{N_{k}(\tau)}\sumtTf_{n,k,t}f_{m,k,t−\tau})−m_{n}
+$$
 
-We used a Bernoulli GLM (i.e., logistic regression) to compute psychometric functions for empirical and synthetic data. We generated synthetic data from a model by using the maximum likelihood parameters to generate the probability of a choice, and sampled the choice from a Bernoulli distribution. For the Bernoulli GLM, for each trial, we computed the final click difference and used it as a regressor to predict the animal’s choice. A constant bias was also included, as well as a single lapse parameter that scaled the minimum and maximum values of the logistic inverse link function. R2 values comparing empirical and synthetic psychometric functions were defined as above, but using the psychometric functions whose domain was from the minimum final cumulative click difference to the maximum final cumulative click difference.
+where K, $N_{k}(\tau)$, $m_{n}$, and $m_{m}$ are as defined above. The shuffle-corrected cross-correlation function of synthetic data is the raw cross-correlation function minus the cross-correlation function of the expected synthetic firing rate provided by the synthetic PSTH, $f̄_{n,c,t}$.
 
-## Choice decoding
+#### Goodness-of-fit metrics
 
-We used two metrics to determine how well choice could be decoded from various models: choice-prediction accuracy and test log-likelihood. Test likelihood was reported in bits per trial, i.e.,(25)ΔLL=LLmodel−LLnulllog2(K)
+To compare empirical and synthetic PSTHs, we computed the coefficient of determination. Because fewer and fewer trials were included in computing the PSTH at large time values (because trials of great length were rare), we included PSTH values 200 ms before the stimulus onset up until 500 ms after stimulus onset in this calculation. Based on the definitions of the empirical and synthetic PSTHs, the coefficient of determination is defined as:
 
-where K is the number of trials in the test set and LLnull is the appropriate null model, as described above, or a second model with which to test against. Fivefold cross-validation was performed, as described above. Accuracy was determined, depending on the model, by computing the probability that the model predicted a right choice, given all available data (i.e. inputs and spikes in a model that includes spikes). If the model had a greater than 0.5 probability of choosing right, we considered that a prediction of a rightward choice. Accuracy is the fraction of correct choice predictions.
+$$
+R_{n}^{2}=1−\frac{\sumcC\sumtT(r¯_{n,c,t}−f_{n,c,t})^{2}}{\sumcC\sumtT(r¯_{n,c,t}−<r¯_{n,c,t}>_{c,t})^{2}}
+$$
 
-## Identifying putative changes of mind
+where $<r¯_{n,c,t}>_{ct}$ is the mean of $r̄_{n,c,t}$ over trial groupings and times. Pearson correlation (r) was used to compare empirical and synthetic cross-correlation functions. When computing r we considered values of $\tau$ between –800 and 800 ms.
+
+#### Psychometric functions
+
+We used a Bernoulli GLM (i.e., logistic regression) to compute psychometric functions for empirical and synthetic data. We generated synthetic data from a model by using the maximum likelihood parameters to generate the probability of a choice, and sampled the choice from a Bernoulli distribution. For the Bernoulli GLM, for each trial, we computed the final click difference and used it as a regressor to predict the animal’s choice. A constant bias was also included, as well as a single lapse parameter that scaled the minimum and maximum values of the logistic inverse link function. $R^{2}$ values comparing empirical and synthetic psychometric functions were defined as above, but using the psychometric functions whose domain was from the minimum final cumulative click difference to the maximum final cumulative click difference.
+
+#### Choice decoding
+
+We used two metrics to determine how well choice could be decoded from various models: choice-prediction accuracy and test log-likelihood. Test likelihood was reported in bits per trial, i.e.,
+
+$$
+ΔLL=\frac{LL_{model}−LL_{null}}{log_{2}(K)}
+$$
+
+where K is the number of trials in the test set and $LL_{null}$ is the appropriate null model, as described above, or a second model with which to test against. Fivefold cross-validation was performed, as described above. Accuracy was determined, depending on the model, by computing the probability that the model predicted a right choice, given all available data (i.e. inputs and spikes in a model that includes spikes). If the model had a greater than 0.5 probability of choosing right, we considered that a prediction of a rightward choice. Accuracy is the fraction of correct choice predictions.
+
+#### Identifying putative changes of mind
 
 Based on a recent study (Peixoto et al., 2021) we defined putative changes in mind in the following way. For each model and each trial, we computed the posterior distribution of a(t) given all available data except for the choice. In the case of the choice-only model, this means using only the stimulus, and is equivalent to the forward pass of the model. In the case of the joint model, this is equivalent to the posterior distribution of a(t) given the spikes on that trial. We computed the expected value of the posterior distribution for each trial and identified moments when it crossed the decision threshold as determined for each model (i.e., the c parameter of the choice likelihood). We required that the expected value remain on one side of the threshold for 50 ms, remain on the other side following the crossing for 50 ms, and achieve an absolute magnitude greater than or equal to 2 at some point during that 100 ms window.
 
 To relate putative change of mind events to the animal’s behavior, we performed linear regression between the time of the event relative to the end of the stimulus (i.e., how close to a decision the event occurred) and a measure of the animal’s reaction time. In this task, the animal is required to fixate in the center poke for the duration of the stimulus, so it does not exhibit a true reaction time in the standard sense of the term. However, following the end of the stimulus, it does take the animal time to withdraw from the center port to make its choice (see Figure 1A, bottom, upper two lines). We refer to the difference between the end of the stimulus and when the animal withdrew from the center port as the animal’s reaction time, which we used in our analysis.
 
-## Estimating dimension
+#### Estimating dimension
 
-To estimate the effective dimension of groups of simultaneously recorded neurons, we computed the ‘participation ratio’ (Litwin-Kumar et al., 2017). Single-trial firing rates were computed by convolving the spike trains with a Gaussian kernel (std = 50 ms), and the covariance matrix of these rates was computed. The participation ratio is, (26)(∑nNλn)2∑nN(λn)2
+To estimate the effective dimension of groups of simultaneously recorded neurons, we computed the ‘participation ratio’ (Litwin-Kumar et al., 2017). Single-trial firing rates were computed by convolving the spike trains with a Gaussian kernel (std = 50 ms), and the covariance matrix of these rates was computed. The participation ratio is
 
-where λ are the eigenvalues of the covariance matrix. If the firing rates are independent, the eigenvalues will all be equal and the participation ratio will equal the number of neurons. If the firing rates are correlated such that some eigenvalues are small (or perhaps even zero) the participation ratio will be less than the number of neurons.
+$$
+\frac{(\sumnN\lambda_{n})^{2}}{\sumnN(\lambda_{n})^{2}}
+$$
+
+where $\lambda$ are the eigenvalues of the covariance matrix. If the firing rates are independent, the eigenvalues will all be equal and the participation ratio will equal the number of neurons. If the firing rates are correlated such that some eigenvalues are small (or perhaps even zero) the participation ratio will be less than the number of neurons.

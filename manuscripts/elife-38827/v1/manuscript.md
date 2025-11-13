@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.38827.001 The origin of angiosperms has been a long-standing botanical debate. The great diversity of angiosperms in the Early Cretaceous makes the Jurassic a promising period in which to anticipate the origins of the angiosperms. Here, based on observations of 264 specimens of 198 individual flowers preserved on 34 slabs in various states and orientations, from the South Xiangshan Formation (Early Jurassic) of China, we describe a fossil flower, Nanjinganthus dendrostyla gen. et sp. nov.. The large number of specimens and various preservations allow for an evidence-based reconstruction of the flower. From the evidence of the combination of an invaginated receptacle and ovarian roof, we infer that the seeds of Nanjinganthus were completely enclosed. Evidence of an actinomorphic flower with a dendroid style, cup-form receptacle, and angiospermy, is consistent with Nanjinganthus being a bona fide angiosperm from the Jurassic, an inference that we hope will re-invigorate research into angiosperm origins.
+The origin of angiosperms has been a long-standing botanical debate. The great diversity of angiosperms in the Early Cretaceous makes the Jurassic a promising period in which to anticipate the origins of the angiosperms. Here, based on observations of 264 specimens of 198 individual flowers preserved on 34 slabs in various states and orientations, from the South Xiangshan Formation (Early Jurassic) of China, we describe a fossil flower, Nanjinganthus dendrostyla gen. et sp. nov.. The large number of specimens and various preservations allow for an evidence-based reconstruction of the flower. From the evidence of the combination of an invaginated receptacle and ovarian roof, we infer that the seeds of Nanjinganthus were completely enclosed. Evidence of an actinomorphic flower with a dendroid style, cup-form receptacle, and angiospermy, is consistent with Nanjinganthus being a bona fide angiosperm from the Jurassic, an inference that we hope will re-invigorate research into angiosperm origins.
 
 ## Introduction
 
@@ -37,53 +37,93 @@ Despite the importance of, the great interest in and intensive effort spent on i
 
 ## Results
 
-## Genus
+### Genus
 
 Nanjinganthus gen. nov.
 
-## Generic diagnosis
+### Generic diagnosis
 
 Flowers subtended by bracts. Bracts fused basally. Flowers pedicellate, actinomorphic, epigynous, with inferior ovary. Sepals 4–5, rounded in shape, each with usually 4–6 longitudinal ribs in the center and two lateral rib-free laminar areas, attached to the receptacle rim with their whole bases, surrounding the petals when immature, with epidermal cells with straight cell walls. Petals 4–5, cuneate, concave, each with usually 5–6 longitudinal ribs in the center and two lateral rib-free laminar areas, with rounded tips, surrounding the gynoecium when immature, with epidermal cells with straight cell walls. Gynoecium in the center, unilocular, fully closed by a cup-form receptacle from the bottom as well as sides and by an integral ovarian roof from the above. Style centrally attached on the top of the ovarian roof, dendroid-formed. One to three seeds inside the ovary, elongated oval, hanged on the ovarian wall by a thin funiculus, with the micropyle-like depression almost opposite the chalaza.
 
-## Type species
+### Type species
 
 Nanjinganthus dendrostyla gen. et sp. nov.
 
-## Etymology
+### Etymology
 
 Nanjing- for Nanjing, the city where the specimens were discovered, and -anthos for ‘flower’ in Latin.
 
-## Type locality
+### Type locality
 
 Wugui Hill, Sheshan Town, Qixia District, Nanjing, China (N32˚08″ 19′ , E118˚58″ 20′) (Figure 1—figure supplement 1).
 
-## Horizon
+### Horizon
 
 The South Xiangshan Formation, the Lower Jurassic.
 
-## Species
+### Species
 
 Nanjinganthus dendrostyla gen. et sp. nov.
 
-## Specific diagnosis
+### Specific diagnosis
 
 the same as the genus.
 
-## Description
+### Description
 
 The flowers are frequently concentrated and preserved in groups on certain bedding surfaces (Figures 1a–g and 2a–b), although many of them are preserved as isolated individuals on other slabs.
 
-## Flower bud
+#### Flower bud
 
 A flower bud is preserved as a coalified compression, 6.4 mm long and 3 mm wide, with characteristic longitudinal ribs on the sepals and petals (Figure 2g). The sepals are estimated to be 1.3–2.2 mm long and approximately 1.8 mm wide (Figure 2g). The petals (including the eclipsed portion) are estimated to be approximately 3.7 mm long (Figure 2g). The receptacle/ovary is approximately 3 mm in diameter (Figure 2g).
 
-## Mature flower
+#### Mature flower
 
 The flowers are preserved in various states (including coalification), with cup-form receptacle, epigynous with an inferior ovary, 8.4–10.7 mm in length and 6.8–12.8 mm in diameter, actinomorphic in the bottom and top views (Figures 1a-g, 2a-f,h, 3a-b,d-f, 4a-b,d,g, 5e-i, 6a,f,j,l and 7a,e). The pedicel is approximately 0.76 mm in diameter (Figure 6a,b). Basally fused bracts 0.7–3.7 mm long are observed at the bottom in a few flowers, and a stoma is seen on a bract (Figures 4g-h, 7e,h, and 8h). The receptacle is cup-form, 3–4.8 mm in diameter and 2–4.5 mm high, surrounded by a 0.3 mm thick wall in the bottom and sides, and covered by an ovarian roof from the above (Figures 2h–i, 4d, 5h, 6a–b and 7a,e–f,i). Scales are attached on the sides of the receptacle/ovary (Figures 3a–b, 4a,g–h, 5i and 7a,e,i). The sepals are 1.7–3 mm long and 2.7–4.3 mm wide, with two lateral rib-free laminar areas and usually four longitudinal ribs in the center, and attached to the receptacle rim with their whole bases (Figures 2c-f, 3d-f, 4a,b,d-e, 5i,l, 6l, 7e,i, 9a). The elongated epidermal cells are, 44–156 μm x 33–54 μm, with straight cell walls in the middle region, while isodiametric epidermal cells 16–71 μm x 10–54 μm are seen in the lateral laminar areas of the sepals (Figures 8g, 9h-k and 10d-f). The petals are 3.1–6.6 mm long, 1.9–5.4 mm wide, compressed to only about 11 μm thick, with two lateral rib-free laminar areas, a cuneate base, and 5–6 longitudinal ribs in the center, located inside the sepals on the rim of the receptacle (Figures 2c–f,h,j,4a,b,d,6a,f,7a,e,i,8a–f,9a–g). The ribs are approximately 0.12 mm wide, forking only basally, with elongated epidermal cells with straight cell walls, 32–144 μm x 17–30 μm on the abaxial and 19–72 μm x 13–29 μm on the adaxial (Figures 8a-f, 10a-b). The lateral laminar areas are free of ribs, and each is approximately 1.2 mm wide, with isodiametric epidermal cells 23–64 μm x 18–37 μm (Figures 8e, 9g). A possibly immature stoma is seen on one of the petals (Figure 10c). An unknown organ (staminode?) is seen once on the rim of the receptacle (Figure 6a,m). The ovarian roof is horizontal, with smooth integral outer and inner surfaces, 0.14–0.22 mm thick, with a style vertically located on its center (Figures 4c, 5h, 6f and 7a–c,e–g). The style is 0.3–0.8 mm in diameter, with lateral branches that make the width of the style 3–6 mm (Figures 2h–i, 3a–b, 5i–j, 6a,c and 7a–d). The basalmost pair of the lateral branches appear oppositely arranged along the style (Figures 2h and 3b) while the upper ones appear irregularly arranged (Figures 2i, 6a and 7c–d). There are longitudinal faint striations on the surface of the style (Figures 3c and 5j). There are 1.6–3.6 mm long and 1.7–2.2 mm wide round-triangular scales on the sides of the ovary (Figures 2g, 3b, 4a,g–h and 5i). Each ovary contains one to three seeds that are 0.65–3 mm x 0.5–1.7 mm, elongated or oval-shaped (Figures 2f, 5a,c and 6d,f–l), hanged on the inner wall of the ovary by a 0.08–0.27 mm wide funiculus (Figures 5e and 6d–e). A micropyle-like depression 0.15 × 0.36 mm is seen on a seed (Figure 5a,d).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig1-v1.jpg)
+
+**Figure 1.:** All bars are 1 cm long. (A) Six flowers (1-6) on the same slab, and an associated triangular leaflet with parallel venation. PB22227. (B) Several flowers on the same slab. 1–3 are shown in detail in Figures 2f and 6d,e. PB22226. (C) Several flowers (1-8) on the same slab and the associated Nilssonia parabrevis (top). PB22220. (D) Several flowers (1-6) on the same slab. 1–3 are shown in detail in Figures 2h and 3a–c. PB22224. (E) Many flowers on the same slab. Some of the numbered ones are shown in detail in later figures. PB22222a. (F) A slab with numerous flowers. PB22221. (G) A slab almost fully covered with flowers. PB22228.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Fossil locality (red dot) in Nanjing, eastern China. (B) Stratigraphic column showing the fossiliferous strata, strata for isotopic dating, and layers (XW010 to XW014) sampled for palynological dating. (C) Type locality (red asterisk, N32˚08′ 19″, E118˚58′ 20″) of Nanjinganthus in the suburbs of Nanjing, China. (D) Geological map of the region near the type locality, dark green represents the outcrop of the Xiangshan Group. (E) Fossiliferous strata (red line) of the South Xiangshan Formation exposed in the quarry of Xiaoyetian Cement Company Ltd. Note one of the strata (red line) yielding many flowers of Nanjinganthus. (F–G) Comparison of relative probability plot of zircon data (F: all data; G: concordance >90%). (H) Close-up of one of the Nanjinganthus-yielding layers (red line).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig2-v1.jpg)
+
+**Figure 2.:** Bar = 1 mm except otherwise annotated. (A) Numerous flowers preserved on a single slab. Some of the numbered ones are detailed in later figures. PB22222B. Bar = 1 cm. (B) Numerous coalified flowers on the same slab. Some of the numbered ones are detailed in Figure 3d–e. PB22223. Bar = 1 cm. (C) Bottom view of Flower 1 in Figure 2a, showing five sepals (s) and five petals (p) with longitudinal ribs. PB22222B. (D) Bottom view of Flower 2 in Figure 2a, showing four sepals (s) and four petals (p) with longitudinal ribs. PB22222B. (E) Bottom view of the flower in Figure 3f, showing a sepal (s) and three petals (p) radiating from the center, which is obliquely broken to show the relationship among the sepals and petals as in Figure 2j. PB22278. (F) Top view of Flower 1 in Figure 1b with sepals (s), petals (p), and seeds (arrow, enlarged in Figure 6h) inside the receptacle. PB22226. (G) Side view of a flower bud (Flower 1 in Figure 2b) with longitudinal ribs (arrows) on the sepals (s) and petals (p). PB22223. (H) Side view of Flower 1 in Figure 1d, showing a receptacle (h), perianth (black arrows), and a dendroid style (white arrow). PB22224. (I) Side view of Flower 15 in Figure 1e, without sepals or petals. PB22222a. Bar = 1 mm. (J) Detailed view of the flower shown in Figure 2e, showing the arrangement of three petal bases (1-3) inside the sepals (s). These petals bases correspond to the three petals (1-3) in Figure 2e. PB22278.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Bar = 10 μm. (A) Cyathidites australis Couper. (B) C. minor Couper. (C) Deltoidospora sp. (D) Retitriletes clavatoides Döring. (E) Striatella seebergensis Madler. (F) Gleicheniidites senonicus Ross. (G) Manumia delcourtii (Pocock) Dybkjær. (H) Anulispora sp. (I) Cycadopites follicularis Wilson and Webster. (J) Perinopollenites elatoides Couper. (K) Platysaccus sp. (L) Monosulcites sp. (M, N) Classopollis spp. (O) Alisporites robustus Nilsson. (P) Tetrad Classopollis sp.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig3-v1.jpg)
+
+**Figure 3.:** Bar = 1 mm except otherwise annotated. (A–C, PB22224) (A) Flower 2 in Figure 1d (before the dégagement), showing the petal (1) and style (2) still embedded in the sediments. (B The same flower as in Figure 3a, after dégagement, showing the exposed dendroid style (white arrow) and petal (1), and the scale (sc) on the side of receptacle. (C) Detailed view of the style shown in Figure 3b with faint striations (arrows). Bar = 0.5 mm. (D–E) Flower 2 in Figure 2b after and before the organic material of the sepals (white arrows) and petals (black arrows) were removed for cuticle analysis. PB22223. (F) Bottom view of a flower before processing. Internal details are shown in Figure 2e,j. PB22278.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Bar = 1 mm except otherwise annotated. (A) Neocalamites horridus. PB22234. Bar = 1 cm. (B). Detailed view of the prickles on the stem surface of Neocalamites horridus. (C). Neocalamites. PB22235. Bar = 1 cm. (D). Clathropteris meniscioides. PB22245. Bar = 1 cm. (E). Detailed view of the 4-order reticulate venation of Clathropteris meniscioides, enlarged from Fig. D. PB22245. (F). Reticulate venation of Clathropteris platyphylla. PB22232. (G). Two leaves of Clathropteris meniscioides. PB22233. Bar = 1 cm. (H). Detailed view of the 4-order reticulate venation, enlarged from Fig. G. (I). Cladophlebis. PB22214. Bar = 1 cm. (J). Coniopteris. PB22244. (K). Nilssoniopteris vittata with a robust midrib. PB22238. Bar = 1 cm. (L). Detailed view of the smooth margin and lateral veins branching off from the midrib, enlarged from Fig. K. PB22238. (M). Cladophlebis. PB22251. Bar = 1 cm. (N). ?Hymenophyllaceae. PB22213. Bar = 5 mm. (O). Spiropteris. PB22239. (P). Cladophlebis. PB22219. Bar = 1 cm. (Q). Cladophlebis. PB22217. Bar = 1 cm. (R). Raphaelia. PB22233. (S-T). Otozamites. PB22248B.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig4-v1.jpg)
+
+**Figure 4.:** Bar = 1 mm except otherwise annotated. (A) An oblique longitudinally split flower (Flower 11 in Figure 1e) with scales (sc), sepals (s), and petals (p). PB22222a. (B) A longitudinally split flower (Flower 12 in Figure 1e) with sepals (s) and petals (p). PB22222a. (C) Integral surface of an ovarian roof with a scar (arrow) left by a broken off style, from the flower shown in Figure 5h. PB22279. Bar = 0.5 mm. (D) Bottom view of a flower (Flower 14 in Figure 1e) with three sepals (s) and five petals (p) visible. PB22222a. (E) One of the sepals in Figure 4d, showing longitudinal ribs forking (arrow). PB22222a. (F) One of the petals in Figure 4d, showing longitudinal ribs. PB22222a. (G) Side view of a flower, showing scales (sc) on the ovary side and connate bracts (b) at the bottom. PB22229. (H) Detailed view of the connate bracts (b) and scales (sc) in Figure 4g. Note the outline (white line) of the fused bracts. PB22229. (I) The locule surrounded by the ovary wall (arrows) of the flower shown in Figure 4d. PB22222a.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Bar = 1 mm except otherwise annotated. (A) Pinnae of Coniopteris szeiana, enlarged from Fig. H. PB22243. Bar = 2 mm. (B) Detailed view of the pinnae of Coniopteris szeiana, enlarged from Fig. A. (C) Leaves of Desmiophyllum on a slab. PB22231. Bar = 1 cm. (D) A leaf of Ferganiella with midrib and parallel veins. PB22245. (E) Detailed view of the parallel veins of the leaf in Fig. D. (F) One of the leaves with at least two orders of longitudinal veins (white arrows) and occasional branching (black arrows), enlarged from Fig. G. (G) A leaf closely associated with Nanjinganthus with parallel veins (white arrows) and occasional branching (black arrows). PB22241. (H) Frond of Coniopteris szeiana associated with two Nanjinganthus (arrows). PB22243. Bar = 1 cm. (I) Ptilophyllum showing pinnae with parallel venation. Bar = 1 cm. (J) A slab loaded with fossils of Clathropteris meniscioides (1), Nilssonia parabrevis (2), and Ptilophyllum contiguum (3). PB22237. Bar = 1 cm.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig5-v1.jpg)
+
+**Figure 5.:** Bar = 1 mm except otherwise annotated. (A) A seed (outlined) inside the ovary of Flower 16 in Figure 1e. Note the oboval micropyle (black arrow) and funiculus (white arrow). PB22222a. Bar = 0.2 mm. (B) Detailed view of the funiculus (between the arrows) of the seed in Figure 5a. PB22222a. Bar = 0.1 mm. (C) A seed (detailed in Figure 6i) inside the ovary of Flower 7 in Figure 1e. PB22222a. (D) Detailed view of the oval micropyle (arrows) of the seed in Figure 5a. PB22222a. Bar = 0.1 mm. (E) A seed (arrow, detailed in Figure 6d–e) inside the receptacle in Flower two in Figure 1b. PB22226. (F, G) Two facing parts of the same flower (Flower 10 in Figure 1e). PB22222a. (H) Top view of a flower with organically-preserved sepals (s), petals (p) and integral ovarian roof (fr), which is detailed in Figure 4c. PB22279. (I) Side view of a longitudinally split flower with scales (sc) on ovary side, sepals (s), petals (p) and partially preserved style (arrow). PB22489. (J) Detailed view of basal portion of the style (between arrows) arrowed in Figure 5i, with faint longitudinal striations. PB22489. Bar = 0.2 mm. (K) Detailed view of the narrowing base (between arrows) of the right petal in Figure 5i. PB22489. Bar = 0.5 mm.( L) Detailed view of a sepal in Figure 5i. PB22489. Bar = 0.2 mm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Top view showing the white petals with narrowing bases (arrow) and green sepals in the background. (B) Scales (white arrows), sepals (black arrows), and white petals.
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig6-v1.jpg)
 
-**Figure 6.:** in situ seeds, and details of flowers.PB22222a, Bar = 1 mm except otherwise annotated. (A) A longitudinally split flower (counterpart of Flower 10 in Figure 1e, the same as in Figure 5f–g) showing the sepal (s) and petals (p), style base (white arrow), and an unknown organ (black arrow). (B) Detailed view showing the pedicel (lower arrow) terminating at the bottom of the ovary in Figure 6a. Note the level of ovarian roof (upper arrow). Bar = 0.5 mm. (C) Detailed view of the basal portion of the style marked by white arrow in Figure 6a. Bar = 0.5 mm. (D) A seed (white line) hanging by its funiculus (between arrows) on the ovarian wall of the Flower 2 in Figure 1b. PB22226. Bar = 0.5 mm. (E) Detailed view of the funiculus (between arrows) of the seed in Figure 6d. PB22226. Bar = 0.1 mm.( F) Top view of Flower 8 in Figure 1e with sepals and petals surrounding the ovary containing two seeds (s). Note the residue (arrows) of the ovarian roof. (G) Detailed view of one of the oval seeds (s) inside the ovary in Figure 6f. Bar = 0.2 mm. (H) Two seeds (white line), one overlapping the other, inside the ovary shown in Figure 2f. PB22226. Bar = 0.2 mm. (I) An oval seed (white line) inside the ovary of Flower 7 in Figure 1e. Bar = 0.2 mm. (J) Detailed view of Flower 1 in Figure 1g, showing seeds within ovary. PB22228. (K) Detailed view of three seeds (1-3) inside the ovary of the flower shown in Figure 6j. PB22228. Bar = 0.5 mm. (L) Top view of a flower showing petals (p), sepal (sp), seed (s) visible under the ovarian roof (fr). PB22222d. (M) Detailed view of the unknown organ (staminode?) marked by the black arrow in Figure 6a. Bar = 0.5 mm.
+**Figure 6.:** PB22222a, Bar = 1 mm except otherwise annotated. (A) A longitudinally split flower (counterpart of Flower 10 in Figure 1e, the same as in Figure 5f–g) showing the sepal (s) and petals (p), style base (white arrow), and an unknown organ (black arrow). (B) Detailed view showing the pedicel (lower arrow) terminating at the bottom of the ovary in Figure 6a. Note the level of ovarian roof (upper arrow). Bar = 0.5 mm. (C) Detailed view of the basal portion of the style marked by white arrow in Figure 6a. Bar = 0.5 mm. (D) A seed (white line) hanging by its funiculus (between arrows) on the ovarian wall of the Flower 2 in Figure 1b. PB22226. Bar = 0.5 mm. (E) Detailed view of the funiculus (between arrows) of the seed in Figure 6d. PB22226. Bar = 0.1 mm.( F) Top view of Flower 8 in Figure 1e with sepals and petals surrounding the ovary containing two seeds (s). Note the residue (arrows) of the ovarian roof. (G) Detailed view of one of the oval seeds (s) inside the ovary in Figure 6f. Bar = 0.2 mm. (H) Two seeds (white line), one overlapping the other, inside the ovary shown in Figure 2f. PB22226. Bar = 0.2 mm. (I) An oval seed (white line) inside the ovary of Flower 7 in Figure 1e. Bar = 0.2 mm. (J) Detailed view of Flower 1 in Figure 1g, showing seeds within ovary. PB22228. (K) Detailed view of three seeds (1-3) inside the ovary of the flower shown in Figure 6j. PB22228. Bar = 0.5 mm. (L) Top view of a flower showing petals (p), sepal (sp), seed (s) visible under the ovarian roof (fr). PB22222d. (M) Detailed view of the unknown organ (staminode?) marked by the black arrow in Figure 6a. Bar = 0.5 mm.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig7-v1.jpg)
 
@@ -95,29 +135,29 @@ The flowers are preserved in various states (including coalification), with cup-
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig9-v1.jpg)
 
-**Figure 9.:** Nanjinganthus.(A-C) light stereomicroscopy; (D) (H) SEM; (E-G) (I-K) fluorescence light microscopy. PB22223. Bar = 1 mm except otherwise annotated. (A) Side view of Flower 3 in Figure 2b, showing the arrangement of the petals (p) and sepal (s). (B) The same flower as in Figure 9a. Note that some organic material of the petal has been removed for detailed observation. (C). Margins (arrows) of the petal (p) with cuneate base and their relationship to the sepal (s). (D) The petal removed from Figure 9a. SEM. Bar = 0.5 mm. (E) Cellular details of the petal in Figure 9d Bar = 0.5 mm. (F) Elongated epidermal cells arranged in files, enlarged from Figure 9e. Bar = 0.2 mm. (G) Isodiametric epidermal cells in the laminar area portion of the petal in Figure 9e. Bar = 0.1 mm. (H) A fragment of the sepal seen in Figure 9a. Bar = 0.5 mm. (I) Cellular details of the sepal in Figure 9h. Bar = 0.2 mm. (J) Elongated epidermal cells arranged in files on the sepal in Figure 9i. Bar = 0.1 mm. (K) Isodiametric epidermal cells on the laminar area of the sepal in Figure 9a. Bar = 0.1 mm.
+**Figure 9.:** (A-C) light stereomicroscopy; (D) (H) SEM; (E-G) (I-K) fluorescence light microscopy. PB22223. Bar = 1 mm except otherwise annotated. (A) Side view of Flower 3 in Figure 2b, showing the arrangement of the petals (p) and sepal (s). (B) The same flower as in Figure 9a. Note that some organic material of the petal has been removed for detailed observation. (C). Margins (arrows) of the petal (p) with cuneate base and their relationship to the sepal (s). (D) The petal removed from Figure 9a. SEM. Bar = 0.5 mm. (E) Cellular details of the petal in Figure 9d Bar = 0.5 mm. (F) Elongated epidermal cells arranged in files, enlarged from Figure 9e. Bar = 0.2 mm. (G) Isodiametric epidermal cells in the laminar area portion of the petal in Figure 9e. Bar = 0.1 mm. (H) A fragment of the sepal seen in Figure 9a. Bar = 0.5 mm. (I) Cellular details of the sepal in Figure 9h. Bar = 0.2 mm. (J) Elongated epidermal cells arranged in files on the sepal in Figure 9i. Bar = 0.1 mm. (K) Isodiametric epidermal cells on the laminar area of the sepal in Figure 9a. Bar = 0.1 mm.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig10-v1.jpg)
 
-**Figure 10.:** Nanjinganthus.A, D-E, Fluorescence light microscopy; B-C, F, SEM. PB22223. (A) Elongated epidermal cells in longitudinal files in the middle portion of the petal in Figure 8b. Bar = 0.1 mm. (B) Elongated epidermal cells on the rib of the petal in Figure 8b. Bar = 50 μm. (C) A possible stoma on the petal shown in Figure 8b. Bar = 2 μm. (D) Elongated epidermal cells in files on the sepal of flower in Figure 3d–e. Bar = 0.2 mm. (E) Isodiametric epidermal cells on the sepal of flower in Figure 3d–e. Bar = 0.1 mm. (F) Isodiametric epidermal cells on the sepal of flower in Figure 3d–e. Bar = 20 μm.
+**Figure 10.:** A, D-E, Fluorescence light microscopy; B-C, F, SEM. PB22223. (A) Elongated epidermal cells in longitudinal files in the middle portion of the petal in Figure 8b. Bar = 0.1 mm. (B) Elongated epidermal cells on the rib of the petal in Figure 8b. Bar = 50 μm. (C) A possible stoma on the petal shown in Figure 8b. Bar = 2 μm. (D) Elongated epidermal cells in files on the sepal of flower in Figure 3d–e. Bar = 0.2 mm. (E) Isodiametric epidermal cells on the sepal of flower in Figure 3d–e. Bar = 0.1 mm. (F) Isodiametric epidermal cells on the sepal of flower in Figure 3d–e. Bar = 20 μm.
 
-## Holotype
+### Holotype
 
 Figure 2d (PB22222B).
 
-## Isotypes
+### Isotypes
 
 Figure 6a,f (PB22222a), Figure 7e–i (PB22281), Figure 5h (PB22279).
 
-## Specimens
+### Specimens
 
 PB22222-PB22229, PB22236, PB22238, PB22241-PB22243, PB22245-PB22247, PB22256-PB22260, PB22278-PB22282, PB22489.
 
-## Etymology
+### Etymology
 
 dendrostyla, for ‘tree-like’ (dendri-) and ‘style’ (-stylus) in Latin.
 
-## Remarks
+### Remarks
 
 The receptacle is ‘the axis of a flower on which the perianth, androecium and gynoecium are borne’ (Stevens, 2018). This is the definition followed here. The important characteristic of the receptacle in Nanjinganthus is its cup form, a form frequently seen in more derived angiosperms according to the APG system.
 
@@ -133,7 +173,7 @@ We cannot recognize the maturity of the ovules/seeds in Nanjinganthus, the lengt
 
 ## Discussion
 
-## Alternative interpretations
+### Alternative interpretations
 
 The Mesozoic was an age of gymnosperms, so the Jurassic age of Nanjinganthus makes it necessary to compare Nanjinganthus with common fossil gymnosperms frequently seen in the Mesozoic first. The potential candidates for Nanjinganthus include Caytoniales, Corystospermales, Ginkgoales, Czekanowskiales, Coniferales, Iraniales, Pentoxyales, Bennettitales, and Gnetales.
 
@@ -157,6 +197,89 @@ Besides the above comparison among female organs of seed plants, it is noteworth
 
 From the above comparison, we infer that none of the known gymnosperms, fossil or extant, are comparable to Nanjinganthus. The enclosed seeds distinguish Nanjinganthus from gymnosperms, which are not supposed to enclose their ovules in such a way (Table 1).
 
+**Table 1.**
+ Comparison between Nanjinganthus and Mesozoic gymnosperms.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Nanjinganthus</th>
+      <th>Caytonia</th>
+      <th>Bennettitales</th>
+      <th>Corystospermales</th>
+      <th>Ginkgoales</th>
+      <th>Coniferales</th>
+      <th>Iraniales</th>
+      <th>Czekanowskiales</th>
+      <th>Pentoxylales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Symmetry</td>
+      <td>Radial</td>
+      <td>Bilateral</td>
+      <td>Radial</td>
+      <td>Bilateral</td>
+      <td>Radial</td>
+      <td>Radial</td>
+      <td>Radial?</td>
+      <td>Bilateral</td>
+      <td>Radial?</td>
+    </tr>
+    <tr>
+      <td>With foliar appendages</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>?</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Enclosed seed</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No?</td>
+      <td>?</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Opening in female part</td>
+      <td>No</td>
+      <td>Adaxial basal</td>
+      <td>Terminal?</td>
+      <td>Adaxial basal</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>?</td>
+      <td>Distal slit</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>Penetrating cone axis</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>?</td>
+      <td>Yes</td>
+      <td>?</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
 There are several reports of Jurassic angiosperms, including Schmeissneria (Wang et al., 2007), Xingxueanthus (Wang and Wang, 2010), Juraherba (Han et al., 2016), and Euanthus (Liu and Wang, 2016). These genera are from the Middle-Late Jurassic of northeastern China. The cup-form receptacle, inferior ovary, and dendroid style distinguish Nanjinganthus from all these Jurassic peers, and justify Nanjinganthus as a new genus of angiosperm.
 
 Although multiple characters have been suggested to identify fossil angiosperms (Herendeen et al., 2017), angio-ovuly before pollination is the key character that distinguishes an angiosperm from other seed plants (Tomlinson and Takaso, 2002; Wang, 2010a; Wang, 2018). This criterion has been repeatedly applied to identify fossil angiosperms (i.e. Archaefructus (Sun et al., 1998), which initially had no other features (stamen, venation, pollen grains) but enclosed seeds to support their angiospermous affinity). The integral ovarian roof of Nanjinganthus has no opening (Figures 4c and 5h). After burial, this ovarian roof can block the sediment from entering the ovarian locule (Figure 7e–g). That this space remained free of sediment suggests a full enclosure of the ovules/seeds, securing an angiospermous affinity for Nanjinganthus.
@@ -165,7 +288,7 @@ The radial arrangement of two whorls of foliar parts (sepals and petals) in Nanj
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/38827/elife-38827-fig11-v1.jpg)
 
-**Figure 11.:** Nanjinganthus.1, branches of dendroid style; 2, dendroid style; 3, sepal; 4, ovarian roof; 5, scale; 6, seed; 7, cup-form receptacle/ovary; 8, bract; 9, petal; 10, unknown organ (staminode?).
+**Figure 11.:** 1, branches of dendroid style; 2, dendroid style; 3, sepal; 4, ovarian roof; 5, scale; 6, seed; 7, cup-form receptacle/ovary; 8, bract; 9, petal; 10, unknown organ (staminode?).
 
 There have been several suggested models of ancestral angiosperms (Arber and Parkin, 1907; Cronquist, 1988; Endress and Doyle, 2015; Sauquet et al., 2017). These models were drawn more or less after the assumed basalmost living angiosperms, either Magnolia or Amborella. The common features of these model plants include apocarpy, superior ovary, lack of obvious style, etc. However, these features are rarely seen in Nanjinganthus or other early angiosperms (Wang et al., 2007; Wang and Zheng, 2009; Wang, 2010b; Wang, 2018; Han et al., 2013; Han et al., 2016; Han et al., 2017; Liu and Wang, 2016; Liu and Wang, 2017; Liu et al., 2018; Liu and Wang, 2018). Instead, an inferior ovary, a feature unexpected by, at least, most theories of angiosperm evolution, is clearly seen in Nanjinganthus and quite many Early Cretaceous flowers (Friis, 1984; Friis, 1990; Friis et al., 2011). This discrepancy between fossil observation and theories suggests EITHER that inferences based on living plants have limited capability of ‘predicting’ past history, OR that angiosperms originated polyphyletically, each lineage has followed a different evolution route, and Nanjinganthus represents one of the many, OR that angiosperms have a history that dates back to a time much earlier than the Cretaceous, and Nanjinganthus is one of the many derived from such assumed ancestor, OR a combination of these. Whatever the implications are, the currently dominant theories of angiosperm evolution apparently need to be reassessed.
 
@@ -175,23 +298,23 @@ Various studies (including palaeobotany) on the South Xiangshan Formation in the
 
 The systematic position of Nanjinganthus is now apparently open to further investigation, although it demonstrates a certain resemblance to Pentapetalae sensu (Judd et al., 2016). We cannot determine whether Nanjinganthus stands for a Jurassic stem group of angiosperms that started their radiation later in the Cretaceous or a lateral branch leading to an evolutionary dead end. It is premature to determine its phylogenetic position before more information of contemporaneous peers is available, although we welcome all phylogeneticists to evaluate Nanjinganthus in their own ways and perspectives.
 
-## Conclusion
+### Conclusion
 
 Nanjinganthus is recognized based on at least 198 individual flower fossils from the Early Jurassic that are preserved in various states and orientations. We infer that the seeds were enclosed by a cup-form receptacle and an ovarian roof, traits which suggest an angiospermous affinity for Nanjinganthus. It would be intriguing to figure out in future research whether Nanjinganthus represents a stem group, a group derived from more ancient ancestors, or an evolutionary dead end of polyphyletic angiosperms. We hope that the discovery of Nanjinganthus will re-invigorate research on the origin and early history of angiosperms.
 
 ## Materials and methods
 
-## Geological background
+### Geological background
 
 Initially, what is now known as the Xiangshan Group was called the ‘Nanking Sandstein’ that was put in the Upper Carboniferous by Richthofen (1912). Liu and Chao (1924) thought that the Nanking Sandstein belonged to the Jurassic and renamed it the ‘Tsung Shan Formation’. Hsieh (1928) subdivided the Tsungshan Formation into six units, namely, in ascending order, Huang Ma Ching Shale, Quartzitic Conglomerate, Tzu Hsia Tung Series, Lingkusssu Shale, Light Yellow Sandstone, Variegated Sandstone and Shale. Li et al. (1935) found fossil plants including Equisetites, Neocalamites, Cladophlebis, Otozamites, Pterophyllum, Dictyophyllum, Pagiophyllum, Baiera guilhaumatii, and Podozamites lanceolatus. They also changed the ‘Tsungshan Formation’ to ‘Xiangshan Layers’, and regarded its age as being the Early Jurassic. Sze and Chow (1962) used the term ‘Xiangshan Group’ for the previous ‘Xiangshan Layers’, and this has been the convention followed ever since. The age of the Xiangshan Group has been concluded by various authors to range from the Late Triassic to the Middle Jurassic. Ju (1987) divided the Xiangshan Group into a lower South Xiangshan Formation and an upper North Xiangshan Formation, respectively. The standard section of the lower part of the Xiangshan Group (the South Xiangshan Formation, the Lower Jurassic) is 394 meters thick in South Xiangshan in Nanjing, and has yielded abundant fossil plants. The standard section of the upper part of the Xiangshan Group (the North Xiangshan Formation, the Middle Jurassic) is in North Xiangshan in Nanjing. It is 1005 meters thick, and has only yielded a few stem fossils (Ju, 1987). Based on fossil plants, Cao (1982) thought that the age of the South Xiangshan Formation could not be later than the Early Jurassic, and considering that the early Early Jurassic flora (in the middle and lower parts of the Guanyintan Formation in southwest Hunan) (Zhou and Li, 1980) is biostratigraphically below the South Xiangshan Formation, Cao (1982) regarded the age of the lower part of Xiangshan Group (=South Xiangshan Formation) as the middle-late Early Jurassic.
 
 The South Xiangshan Formation (lower part of the Xiangshan Group) has yielded abundant bivalve and plant fossils. Its outcrops are scattered in Jiangning, Longtan, and Zhenjiang (all in the suburbs of Nanjing). In these areas, the outcrops are well exposed and especially fossiliferous near the South Xiangshan and Cangbomen regions. The formation includes sandstones, siltstones, shales, carbonaceous shales, and coal seams. There are abundant plant fossils in the South Xiangshan Formation, and almost all of the plants in the Xiangshan Group are from this formation. Various authors have collected fossil plants of the Xiangshan Flora (Cao, 1982; Cao, 1998; Cao, 2000; Wang et al., 1982; Huang, 1983; Huang, 1988; Ju, 1987). According to Cao (1982), Cao (1998), Cao (2000), Wang et al. (1982), and Ju (1987), the Xiangshan Group includes at least 46 genera of plants and is very similar to the flora of the Hsiangchi Group in western Hubei. Cycadophytes (34%) dominate the flora, and ferns are the second most dominant group (20%), among which Dipteridaceae play an important role. Ginkgoales are also abundant (19%) (Ju, 1987). The important and frequently observed taxa include Hysterites, Selaginellites, Equisetites cf. lateralis, E. aff. multidentatus Oishi, E. sarrani (Zeiller) Halle, Neocalamites hoerensis (Schimper) Halle, N. dangyangensis Chen, Marattiopsis asiatica Kawasaki, M. hoerensis (Schimper) Schimper, Todites goeppertianus (Münster) Krasser, T. princeps (Presl) Gothan, Osmundopsis Harris, Cladophlebis denticulata (Brongniart) Fontaine, C. goeppertianus (Münster) Krasser, C. raciborskii Zeiller, Spiropteris Schimper, Phlebopteris polypodioides Brongniart, Danaeopsis Heer ex Schimper, Thaumatopteris pusilla (Nathorst) Oishi et Yamasita, Dictyophyllum nathorstii Zeiller, D. nilssonii (Brongniart) Goeppert, Clathropteris meniscioides Brongniart, Cl. platyphylla Goeppert, Cl. obovata Oishi, Coniopteris hymenophylloides (Brongniart) Seward, Thinnfeldia Ettingshausen, Augustiphyllum yaobuensis Huang, Scoresbya dentata Harris, Pterophyllum firmifolium Ye, Pt. propinquum Goeppert, Pt. subaequale Hartz, Nilssonia complicatis Li, N. orientalis Heer, N. minor Harris, N. cf. compta (Schenk) Ye, N. cf. polymorpha Schenk, N. pterophylloides Nathorst, N. cf. saighanensis Seward, N. taeniopterioides Halle, N. parabrevis Huang, N. moshanensis Huang, Nilssoniopteris vittata (Brongn.) Florin, Ctenis Lindley et Hutton, Ctenozamites cf. ptilozamioides Zhou, C. cf. cycadea (Berger) Schenk, Cycadolepis corrugata Zeiller, Anomozamites cf. minor Nathorst, A. cf. major (Brong) Huang, A. cf. inconstans (Goeppert) Schimper, A. quadratus Cao, Tyrmia nathorstii (Schenk) Yeh, T. latior Ye, T. lepida Huang, T. susongensis Cao, Otozamites minor Tsao, Ot. hsiangchiensis Sze, Ot. mixomorphus Ye, Ot. tangyanensis Sze, Ptilophyllum hsingshanense (Wu) Cao, Pt. contiguum Sze, Pt. pecten (Philips) Morris, Hsiangchiphyllum trinervis Sze, Ginkgoites cf. tasiakouensis Wu et Li, G. cf. sibiricus (Heer) Seward, G. cf. magnifolius Du Tiot, Baiera cf. furcata (L. et H.) Braun, B. asadai Yabe et Oishi, B. guilhaumatii Zeiller, B. multipartita Sze et Lee, B. cf. gracilis Bunbury, Sphenobaiera huangii (Sze) Hsu ex Li, S. spectabilis (Nath.) Florin, Czekanowskia rigida Heer, C. hartzii Harris, Phoenicopsis Heer, Ginkgodium Yokoyama, Desmiophyllum Lesquereux, Stenorachis (Nathorst) Saporta, Vittifoliolum multinerve Zhou, Pityophyllum longifolium (Nathorst) Möller, Podozamites lanceolatus (L. et H.) Braun, Ferganiella Prynada, Elatocladus Halle, Swedenborgia cryptomerioides Nathorst, Taeniopteris cf. richthofenii (Schenk) Sze, T. inouyei Tateiwa, Conites and Carpolithus (Figure 3—figure supplement 1; Figure 4—figure supplement 1).
 
-## Palynological assemblage
+### Palynological assemblage
 
 Preliminary analysis of the strata yielding Nanjinganthus has recognized abundant palynomorphs. The palynoflora includes Anapiculatisporites sp., Annulispora folliculosa (Rogalska) De Jersey, Contignisporites sp., Cyathidites australis Couper, C. minor Couper, Deltoidospora sp., D. minor Pocock, Dictyophyllidites harrisii Couper, D. mortonii (De Jersey) Playford and Dettmann, Gleicheniidites sp., G. senonicus Ross, Ischyosporites sp., I. variegatus (Couper) Schultz, Leptolepidites verrucatus Couper, Manumia delcourtii (Pocock) Dybkjær, Neoraistrickia ramosus (Balme and Hennelly) Hart, Osmundacidites wellmanii Couper, Polycingulatisporites triangularis (Bolchovitina) Playford and Dettmann, Punctatosporites sp., Retitriletes austroclavatidites (Cookson) Döring et al., R. clavatoides (Couper) Döring et al., Sestrosporites pseudoalveolatus (Couper) Dettmann, Striatella scanica (Nilsson) Filatoff and Price, S. seebergensis Mädler, Alisporites sp., A. robustus Nilsson, Callialasporites dampieri (Balme) Dev, C. minus (Tralau) Guy, C. trilobatus (Balme) Dev, C. turbatus (Balme) Schulz, Cerebropollenites macroverrucosus (Thiergart) Pocock, Chasmatosporites sp., C. apertus (Rogalska) Nilsson, C. hians Nilsson, Classopollis chateaunovi Reyre, C. classoides (Pflug) Pocock and Jansonius, C. meyeriana (Klaus) De Jersey, C. simplex (Danzé-Corsin and Laveine) Reiser and Williams, Cycadopites sp., C. follicularis Wilson and Webster, Ephedripites sp., Monosulcites sp., M. minimus Cookson, Perinopollenites elatoides Couper, Platysaccus sp., Podocarpidites sp., Quadraeculina anellaeformis Maljavkina, Q. enigmata (Couper) Xu and Zhang, Q. minor (Pocock) Xu and Zhang, Spheripollenites psilatus Couper, Vitreisporites pallidus Nilsson (Figure 2—figure supplement 1) (Santos et al., 2018). This palynological assemblage suggests a latest Early Jurassic age for Nanjinganthus.
 
-## Isotopic dating
+### Isotopic dating
 
 The samples were processed by crushing, initial heavy liquid and subsequent magnetic separation at Langfang Yuneng Rock Mineral Separation Technology Service Co., Ltd. in Langfang City. More than 1000 grains of zircons were hand-picked under a binocular microscope. More than 200 grains of representative zircons for each sample were coined in epoxy resin mounts, ground and polished to expose the central part of zircons, and then photographed under microscope in transmitting light and reflected light. Afterward, the internal structure of the zircons was studied by means of cathodoluminescence (CL) imaging at the Beijing Gaonianlinghang Technology Co., Ltd. in Beijing City. U-Pb dating of these samples were carried out using laser ablation multicollector inductively coupled plasma mass spectrometry (LA-MC-ICP-MS) at the Tianjin Institute of Geology and Mineral Resources. The laser beam was 35 μm in diameter. Concentrations of U, Th, and Pb elements were calibrated using SRM 610 as the external reference standard. For the analysis method please see refer Li et al., 2009. Repeated analyses of standards yielded precisions at better than 10% for most elements. 207Pb/206Pb, 206Pb/238U, 207Pb/235U and 208Pb/232Th ratios and apparent ages were calculated using ICPMSDataCal software (Liu et al., 2010a; Liu et al., 2010b) and corrected for both instrumental mass bias and depth dependent elemental and isotopic fractionation using zircon GJ-1 as the external standard. U-Pb age Concordia diagram and histograms apparent ages diagram were drawn by using ISOPLOT (ver.3) (Ludwig and Ludwig, 2003).
 
@@ -199,10 +322,10 @@ There was no previous isotopic age for the Xiangshan Group. We sampled the layer
 
 Taking all dating information into consideration, we think that the age of Nanjinganthus falls in the scope ranging from 174 to 207 Ma and is closer to 174 Ma (the latest Early Jurassic). Such a conclusion on absolute age of Nanjinganthus is in agreement with megafossil biostratigraphical analysis (Cao, 1982; Huang, 1983; Huang, 1988; Ju, 1987), although Neocalamites horridus was previously known only in the Late Triassic (Zan et al., 2012).
 
-## Materials
+### Materials
 
 The fossils studied here were collected from an outcrop of the South Xiangshan Formation at a quarry owned by the Xiaoyetian Cement Company Ltd. in the northeastern suburb of Nanjing, Jiangsu, China (N32˚08′ 19′′, E118˚58′ 20′′) (Figure 1—figure supplement 1). Plant fossils of the formation have been extensively studied by various scholars (Sze and Chow, 1962; Cao, 1982; Cao, 1998; Cao, 2000; Wang et al., 1982; Huang, 1983; Huang, 1988; Ju, 1987), and our collection from the local outcrop indicates that the fossil plants closely associated with Nanjinganthus constitute a flora dominated by Dipteridaceae (Clathropteris) and various cycadophytes (mainly Nilssonia, Ptilophyllum, and Pterophyllum), which is consistent with previous works. Some of these associated plant fossils are shown in Figure 3—figure supplement 1 and Figure 4—figure supplement 1.
 
-## Methods
+### Methods
 
 The specimens were initially photographed using a Sony ILCE-7 digital camera. The sediment covering the specimens was dégaged using a JUN-AIR pneumatic drill, and the details of the fossils were observed and photographed using a Nikon SMZ1500 stereomicroscope equipped with a Digital Sight DS-Fi1 camera. Organically preserved sepals and petals were processed with 40% peroxide for cuticle analysis according to routine methods, and the processed cuticles and cleaned organic material of the sepals and petals were observed and photographed using the Rhod fluorescent light in a Zeiss Z2 Imager with an AxioCam HRc camera. Extended-focus images were generated using the Z-stack function in an AxioVs40 × 64 V4.9.1.0. The removed cuticles were coated with gold and observed using a Leo 1530 VP scanning electron microscope (SEM), and serial pictures were obtained after the internal details of the flower were exposed through grinding with a pneumatic drill. One of the organically-preserved petals was embedded in resin and sectioned for light microscopy and transmission electron microscopy (TEM). One fragment of the distal portion of a flower embedded in sediments was observed by Micro Computed Laminography (Micro-CL) (Wei et al., 2017) to show the dendroid style embedded in the sediments. All photographs were saved in TIFF format and assembled for publication using Photoshop 7.0.

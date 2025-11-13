@@ -16,17 +16,17 @@
 
 ### Affiliations
 
-1. https://ror.org/02pttbw34 Department of Molecular and Cellular Biology, Baylor College of Medicine Houston United States
-2. https://ror.org/04a9tmd77 Departments of Medicine and Pharmacological Sciences and Center for translational Medicine and Pharmacology, Icahn School of Medicine at Mount Sinai New York United States
-3. https://ror.org/04byxyr05 Molecular Genomics Core, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health Bethesda United States
-4. https://ror.org/03d1wq758 Center for Clinical and Translational Research, Maine Medical Center Research Institute Scarborough United States
-5. https://ror.org/05cf8a891 Departments of Biochemistry and Systems and Computational Biology, Albert Einstein College of Medicine Bronx United States
+1. Department of Molecular and Cellular Biology, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+2. Departments of Medicine and Pharmacological Sciences and Center for translational Medicine and Pharmacology, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+3. Molecular Genomics Core, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health Bethesda United States ([ROR:04byxyr05](https://ror.org/04byxyr05))
+4. Center for Clinical and Translational Research, Maine Medical Center Research Institute Scarborough United States ([ROR:03d1wq758](https://ror.org/03d1wq758))
+5. Departments of Biochemistry and Systems and Computational Biology, Albert Einstein College of Medicine Bronx United States ([ROR:05cf8a891](https://ror.org/05cf8a891))
 
 † Corresponding author
 
 ## Abstract
 
-MAF1, a key repressor of RNA polymerase (pol) III-mediated transcription, has been shown to promote mesoderm formation in vitro. Here, we show that MAF1 plays a critical role in regulating osteoblast differentiation and bone mass. Global deletion of MAF1 ( Maf1 mice) produced a high bone mass phenotype. However, osteoblasts isolated from -/- Maf1 mice showed reduced osteoblastogenesis ex vivo. Therefore, we determined the phenotype of mice overexpressing MAF1 in cells from the mesenchymal lineage ( -/- Prx1 -Cre;LSL- MAF1 mice). These mice showed increased bone mass. Ex vivo, cells from these mice showed enhanced osteoblastogenesis concordant with their high bone mass phenotype. Thus, the high bone mass phenotype in Maf1 mice is likely due to confounding effects from the global absence of MAF1. MAF1 overexpression promoted osteoblast differentiation of ST2 cells while MAF1 downregulation inhibited differentiation, indicating MAF1 enhances osteoblast formation. However, other perturbations used to repress RNA pol III transcription, inhibited osteoblast differentiation. However, decreasing RNA pol III transcription through these perturbations enhanced adipogenesis in ST2 cells. RNA-seq analyzed the basis for these opposing actions on osteoblast differentiation. The different modalities used to perturb RNA pol III transcription resulted in distinct gene expression changes, indicating that this transcription process is highly sensitive and triggers diverse gene expression programs and phenotypic outcomes. Specifically, MAF1 induced genes known to promote osteoblast differentiation. Furthermore, genes that are induced during osteoblast differentiation displayed codon bias. Together, these results reveal a novel role for MAF1 and RNA pol III-mediated transcription in osteoblast fate determination, differentiation, and bone mass regulation. -/-
+MAF1, a key repressor of RNA polymerase (pol) III-mediated transcription, has been shown to promote mesoderm formation in vitro. Here, we show that MAF1 plays a critical role in regulating osteoblast differentiation and bone mass. Global deletion of MAF1 (Maf1-/- mice) produced a high bone mass phenotype. However, osteoblasts isolated from Maf1-/- mice showed reduced osteoblastogenesis ex vivo. Therefore, we determined the phenotype of mice overexpressing MAF1 in cells from the mesenchymal lineage (Prx1-Cre;LSL-MAF1 mice). These mice showed increased bone mass. Ex vivo, cells from these mice showed enhanced osteoblastogenesis concordant with their high bone mass phenotype. Thus, the high bone mass phenotype in Maf1-/- mice is likely due to confounding effects from the global absence of MAF1. MAF1 overexpression promoted osteoblast differentiation of ST2 cells while MAF1 downregulation inhibited differentiation, indicating MAF1 enhances osteoblast formation. However, other perturbations used to repress RNA pol III transcription, inhibited osteoblast differentiation. However, decreasing RNA pol III transcription through these perturbations enhanced adipogenesis in ST2 cells. RNA-seq analyzed the basis for these opposing actions on osteoblast differentiation. The different modalities used to perturb RNA pol III transcription resulted in distinct gene expression changes, indicating that this transcription process is highly sensitive and triggers diverse gene expression programs and phenotypic outcomes. Specifically, MAF1 induced genes known to promote osteoblast differentiation. Furthermore, genes that are induced during osteoblast differentiation displayed codon bias. Together, these results reveal a novel role for MAF1 and RNA pol III-mediated transcription in osteoblast fate determination, differentiation, and bone mass regulation.
 
 ## Introduction
 
@@ -40,33 +40,113 @@ It is known that MAF1 regulates mesoderm formation and adipocyte differentiation
 
 ## Results
 
-## MAF1 overexpression stimulates osteoblast lineage cells to differentiate into mature osteoblasts, and enhances adipogenesis
+### MAF1 overexpression stimulates osteoblast lineage cells to differentiate into mature osteoblasts, and enhances adipogenesis
 
 To determine the role of MAF1 on bone mass and bone formation in vivo, we examined the bone phenotype of the global Maf1-/- mouse model (Bonhoure et al., 2015). Micro-computed tomography (µCT) was used to determine femur, tibia, and spine bone volume and microstructural parameters in mature male mice at 12 weeks of age. When compared to age-matched wild-type (WT) mice, Maf1-/- mice showed a significant increase in bone volume, trabecular number, and trabecular thickness in the spine and increased bone volume and trabecular thickness in the tibia. Femur samples showed a similar trend without reaching statistical significance (Figure 1—figure supplement 1). To further determine the mechanism of this increase in bone mass, we performed histomorphometric analysis (Figure 1—figure supplement 2). This showed that bone formation parameters, mineralizing surface, mineral apposition rate, and bone formation rate, were significantly increased in the spine. Tibiae showed an increase in mineralization surface. Overall, these data suggest that the increase in bone mass in Maf1-/- mice is due to increased bone formation. To determine changes at the cellular level, we isolated primary bone marrow stromal cells and hematopoietic cells from these mice to determine their ex vivo capacity to form osteoblasts and osteoclasts, respectively. Surprisingly, osteoblast formation was reduced, while osteoclastogenesis was increased in cells derived from Maf1-/- mice (Figure 1—figure supplement 3). This suggests that MAF1 increases osteoblast and decreases osteoclast formation in long-term ex vivo cultures. However, this change does not reflect the increase in bone volume seen in Maf1-/- mice. Because ex vivo cultures are not affected by signals originating from external tissues, we hypothesized that the increase in bone formation in Maf1-/- mice is likely the result of non-cell-autonomous effects arising from the deletion of MAF1 in other tissues. The ex vivo data indicate that MAF1 is a positive regulator of osteoblast differentiation, and its overexpression in osteoblasts would therefore be expected to increase osteoblastogenesis.
 
 We determined the effect of MAF1 overexpression specifically in the long bones by developing a transgenic mouse strain with an HA-tagged MAF1 construct inserted in the Rosa26 locus. The expression of MAF1 was driven by a hybrid cytomegalovirus enhancer chicken β-actin (CAGGS) promoter with a lox-stop-lox cassette inserted between the promoter and MAF1. This Rosa-lox-stop-lox-MAF1-HA (LSL-MAF1) strain was then crossed to a Prx1-Cre mouse to overexpress MAF1 in the mesenchyme of the developing limb bud (Logan et al., 2002). HA expression in the femur following Cre-recombination was confirmed by western blotting. qRT-PCR showed a ~16 fold increase in MAF1 transgene expression compared to endogenous MAF1 mRNA (Figure 1A–B). No gross phenotypic changes were observed, and the weight of the mice at 12 weeks was unchanged (Figure 1C). To assess the effect of increased MAF1 expression on bone mass, we employed µCT analysis on femurs of 12-week-old male mice. MAF1 overexpression in Prx1-Cre; LSL-MAF1 mice led to an increase in bone volume, trabecular number and thickness, and connectivity density, and a corresponding reduction in trabecular separation when compared with Cre-controls. Cortical thickness was not significantly increased (Figure 1D). Histomorphometric analysis confirmed an increase in trabecular number and a reduction in trabecular separation, while other parameters were not significantly affected (Figure 1—figure supplement 4).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig1-v2.jpg)
+
+**Figure 1.:** (A) Western blot of HA expression in the femur of 12-week-old male Prx1-Cre MAF1-HA mice compared to Prx1-Cre-WT and WT-MAF1-HA mice. (B) qRT-PCR analysis showing MAF1 RNA in femurs from Prx1-Cre-MAF1 mice and control Prx1-Cre mice (n=8). (C) Weights in gram of 12-week-old Prx1-Cre or Prx1-Cre-MAF1 mice. (D) Left, representative images of µCT of femoral bone. Right, quantification of µCT analysis: bone volume/total volume (BV/TV), trabecular number (Tb.N), trabecular thickness (Tb.Th), trabecular separation (Tb.Sp), connectivity density (Conn-Dens.), and cortical thickness (Ct.Th). n=13 for Prx1-Cre and n=17 for MAF1 mice. (E) qRT-PCR of MAF1 and pre-tRNAs in primary stromal cells isolated from 6- to 8-week old WT or MAF1 overexpressing mice (n=6). (F) Representative plate of Alizarin red-labeled mineralization of WT and MAF1-HA primary stromal cells (top). Quantification of Alizarin red after destaining with 10% CPC. (G) qRT-PCR of Opg and Rankl in Prx1-Cre and MAF1 overexpressing femurs at 12 weeks (n=8). Results represent means ± SD, *p<0.05, **p<0.01, ***p<0.001 determined by Student’s t-test. Figure 1—source data 1 contains uncropped images of western blots.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Spines, femurs, and tibiae were taken from 12-week-old male Maf1-/- mice or their WT counterparts. µCT measurements from the spine (A), the femoral bone (B), or the tibia (C). Representative images of µCT of the spine (top) (A), femur (top) (B), or tibia (left) (C). Quantification of µCT analysis bottom for spine (A), femur (B), or right (C): bone volume/total volume (BV/TV), trabecular number (Tb.N), trabecular thickness (Tb.Th), trabecular separation (Tb.Sp), connectivity density (Conn-Dens.), and cortical thickness (Ct.Th). WT n=10 Maf1-/- n=9. Results represent means ± SD, *p<0.05, **p<0.01, ***p<0.001 determined by Student’s t-test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Dynamic histomorphometry of 12-week-old spines from WT (n=10) and Maf1-/- (n=9) (B) dynamic histomorphometry of femoral samples from WT (n=10) and Maf1-/- (n=9) mice. (C) Dynamic histomorphometry data from 12-week-old tibiae WT (n=9) and Maf1-/- (n=9). Mineralizing surface/bone surface (MS/BS), mineral apposition rate (MAR), and bone formation rate (BFR). Results represent means ± SD, *p<0.05, **p<0.01, ***p<0.001, determined by Student’s t-test.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative image (left) and quantification (right) of alkaline phosphatase-labeled colony-forming units-fibroblastoids (Cfu-F), right quantification. (B) Representative image (left) and quantification (right) of Von Kossa-labeled colony-forming units-osteoblastoid (Cfu-ob). (C) Representative image (left) and quantification (right) of Acp5+ cells after osteoclast differentiation using 100 ng/mL rank-l. Results represent means ± SD, *p<0.05, **p<0.01 determined by Student’s t-test.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Static histomorphometric measurements of 12-week-old femurs from Prx1-Cre and Prx1-Cre-MAF1-HA mice. Bone volume/total volume (BV/TV), bone surface/ total volume (BS/BV), trabecular thickness (Tb.Th), trabecular number (Tb.N), and trabecular separation (Tb.Sp). (B) Dynamic histomorphometry results. Mineralizing surface/bone surface (MS/BS), mineral apposition rate (MAR), and bone formation rate (BFR). (C) Osteoblast and osteoclast values in femurs. Number of osteoblast/bone perimeter (N. Ob./B. Pm), Number of osteoclast/bone perimeter (N. Oc./B. Pm), n=8 for Prx1-Cre and n=11 for Prx1-Cre-MAF1-HA. Results represent means ± SD, *p<0.05 determined by two-tailed Student’s t-test.
+
 To determine the effect of MAF1 overexpression at the cellular level, primary stromal cells were isolated from femurs and tibia of Prx1-Cre; LSL-MAF1 mice and cultured ex vivo. These primary cells displayed an increase in MAF1 expression and showed a corresponding decrease in tRNA gene transcription (Figure 1E). When MAF1-overexpressing stromal cells were allowed to differentiate into bone-forming osteoblasts in media containing ascorbic acid and β-glycerolphosphate, there was a clear increase in their mineralizing capacity seen by alizarin red staining (Figure 1F). These results suggest that MAF1 enhances the differentiation or function of osteoblasts. We found no change in the osteoclastogenic cytokines receptor activator of NF-κβ ligand (RANKL) and osteoprotegerin (OPG) in the femurs, indicating that changes in the OPG/RANKL ratio did not play a role (Figure 1G).
 
 To further confirm a role for MAF1 on osteoblast differentiation, we overexpressed MAF1 in the mouse stromal cell line ST2 using a doxycycline (Dox)-inducible MAF1-HA construct. Cells stably expressing either the MAF1-HA construct or a control vector were treated with 1 µM Dox and differentiated into osteoblasts. Ectopic MAF1 expression was confirmed by western blot (Figure 2A) and qRT-PCR and resulted in the reduction of pre-tRNAIle and pre-tRNALeu gene transcription (Figure 2B). MAF1 overexpression resulted in enhanced staining for alkaline phosphatase (Alp), a marker for early osteoblast differentiation (Figure 2C), as well as increased in vitro mineralization as noted on alizarin red staining (Figure 2D). MAF1 overexpression also resulted in a significant increase in the expression of osteoblast marker genes, namely collagen type 1 alpha (Col1A), Sp7, osteocalcin, Alp, and bone sialoprotein (Bsp) (Figure 2E).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig2-v2.jpg)
+
+**Figure 2.:** ST2 cells were infected with a doxycycline (Dox)-inducible pInd20-MAF1HA or control construct. Cells were treated with 1 µM Dox starting 1 day before differentiation was started. (A) Western blot analysis showing MAF1, Runx2, and Vinculin in ST2 cells differentiated into osteoblast on day 0 and day 10. (B) qRT-PCR analysis showing MAF1 and pre-tRNA expression in ST2 cells pre- and during osteoblast differentiation. (C) Representative image of alkaline phosphatase (Alp) staining of control and MAF1-HA expressing cells. (D) Representative image of alizarin red analysis of ST2 cells overexpressing control or MAF1-HA after culture in osteoblast differentiation medium. (E) qRT-PCR analysis showing relative expression of Runx2, Col1α, Sp7 (Osterix), Alp, and Bone sialoprotein before and 10 days after the addition of osteoblast differentiation medium. Results represent means ± SD of three independent replicates, *p<0.05, **p<0.01, ***p<0.001 determined by Student’s t-test with Holm correction. Figure 2—source data 1 contains uncropped western blot images, Figure 2—source data 2 contains uncropped images of stained plates.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** MAF1 or a control vector were expressed in ST2 cells and cells were subsequently differentiated into adipocytes as described in Materials and methods. (A) Western blot analysis shows MAF1, Fabp4, Pparγ, and Vinculin expression on day 0 and day 6 of adipocyte differentiation. (B) qRT-PCR analysis of MAF1 and pre-tRNAs in control and MAF1 overexpressing ST2 cells before and during adipocyte differentiation. (C) qRT-PCR of Pparγ, Pparγ2, C/ebpα, and Fabp4 of ST2 cells expressing a control or MAF1-HA vector before and after adipocyte differentiation. (D) Representative images of Oil red O staining of adipocytes differentiated from ST2 cells expressing control or MAF1-HA (left), 10× images (middle) quantification of Oil red O positive cells (right). Results represent means ± SD of three independent replicates, *p<0.05, **p<0.01, ***p<0.001 determined by Student’s t-test with Holm correction. Figure 2—figure supplement 1—source data 1 contains uncropped images of western blot analysis. Figure 2—figure supplement 1—source data 2 contains uncropped images of the Oil red O-stained cells, additional 10× images and stitched images at 4× used for analysis.
+
 In parallel, loss of function studies, MAF1 expression was decreased in ST2 cells using two different shRNAs (Figure 3A). As expected, this resulted in an increase in pre-tRNA expression, particularly on day 10 (Figure 3B). MAF1 knockdown resulted in a decrease in Alp staining (Figure 3C) and a robust reduction in mineralization (Figure 3D). Osteoblast markers, namely Sp7, Alp, and Bsp were significantly downregulated in these cells (Figure 3E).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig3-v2.jpg)
+
+**Figure 3.:** (A) Western blot analysis showing MAF1, Runx2, and Vinculin expression in cells infected with a Scramble construct or MAF1 shRNA before, or 10 days after adding osteoblast differentiation medium. (B) qRT-PCR analysis of MAF1 and pre-tRNAs of ST2 cells expressing Scramble of shMaf1 before and on day after adding osteoblast differentiation medium. (C) Alkaline phosphatase staining of ST2 cells expressing scramble or lentiviral MAF1 shRNA after culture in osteoblast differentiation medium. (D) Alizarin red analysis of cells with scramble or MAF1 shRNA after culture in osteoblast differentiation medium. (E) qRT-PCR analysis showing relative expression of Runx2, Col1α, Sp7, Alp, and Bone sialoprotein before, and 10 days after addition of osteoblast differentiation medium. Results represent means ± SD of three independent replicates, *p<0.05, **p<0.01, ***p<0.001 determined by Student’s t-test with Holm correction. Figure 3—source data 1 contains uncropped western blot images, Figure 3—source data 2 contains uncropped images of stained plates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Primary stromal cells isolated from femurs of 6- to 8-week-old Maf1-/- or WT male mice. (A) qRT-PCR analysis of pre-tRNAs in WT or Maf1-/- cells. Results from 12 independent replicates. (B) Oil Red O staining of WT and Maf1-/- cells differentiated into adipocytes for 9 days. Representative image (left), 10× images (middle) quantification of Oil red O positive cells (right). Results of three independent replicates. (C) Histological analysis of 12-week-old femurs of WT and Maf1-/- mice. Adipocyte number and adipocyte volume/ total volume (Ad.V/TV). n=8 for WT and n=8 for Maf1-/- mice femurs. Results represent means ± SD, *p<0.05, **p<0.01, ***p<0.001 determined by Student’s t-test. Figure 3—figure supplement 1—source data 1 contains uncropped images of the Oil red O-stained cells, additional 10× images, and stitched images at 4× used for analysis.
 
 Collectively, these results indicate that MAF1 functions to promote osteoblast differentiation. Reduced expression of MAF1 in ST2 cells and in bone marrow stromal cells derived from Maf1-/- mice resulted in a decrease in osteoblast differentiation. MAF1 overexpression in ST2 cells increased osteoblast differentiation while MAF1 overexpression, specifically in the mesenchymal cells of the long bones, increased bone mass. The paradoxical phenotype in Maf1-/- mice therefore likely resulted from yet uncharacterized, non-cell-autonomous confounding effects on osteoblasts arising from global MAF1 deletion.
 
 Finally, MAF1 has been shown to promote adipogenesis since knockdown of MAF1 in pre-adipocytes reduces adipocyte formation (Chen et al., 2018). We therefore examined how alterations in MAF1 expression may affect the differentiation of ST2 cells into adipocytes. We found that MAF1 overexpression produced an increase in Oil red O stained cells and upregulated the expression of adipogenesis genes Pparg, Cebpa and Fabp4 (Figure 2—figure supplement 1). To determine if adipocyte formation was affected MAF1 deficient mice, we isolated primary cells from Maf1-/- mice. These cells showed increased tRNA transcription as expected and showed decreased differentiation into adipocytes as seen by Oil Red O stain (Figure 3—figure supplement 1A, B). Consistent with these results, histological analysis of femurs from 12-week-old Maf1-/- mice showed that both adipocyte number and adipocyte volume was reduced (Figure 3—figure supplement 1C). These results confirm that in addition to promoting osteogenesis, MAF1 enhances adipocyte differentiation.
 
-## MAF1-independent approaches to repress RNA pol III-dependent transcription decrease osteoblast differentiation
+### MAF1-independent approaches to repress RNA pol III-dependent transcription decrease osteoblast differentiation
 
 As MAF1 functions as a repressor of RNA pol III-dependent transcription (Johnson et al., 2007; Orioli et al., 2016), we determined if other approaches that inhibit RNA pol III-dependent transcription would produce a similar increase in osteoblast differentiation. ST2 cells were treated with ML-60218, a chemical inhibitor of RNA pol III (Wu et al., 2003) or with DMSO vehicle as the control. Cells were treated for three days, starting one day before the addition of differentiation media. Two days after the initiation of differentiation, ML-60218 was removed, and cells were allowed to differentiate without further manipulation. tRNA gene transcription was significantly reduced by ML-60218 treatment (Figure 4A). However, in contrast to what was observed with MAF1 overexpression, reduction of RNA pol III transcription by ML-60218 resulted in a decrease in Alp and Alizarin red staining (Figure 4B and C) and a significant reduction in the expression of osteoblast marker genes (Figure 4D). This effect was not specific to ST2 cells, as the differentiation of primary stromal cells derived from C57BL/6 mice was also significantly reduced by ML-60218 treatment (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig4-v2.jpg)
+
+**Figure 4.:** ST2 cells were treated with 40 µM ML-60218 for 3 days, starting on day –1 and differentiated into osteoblasts by addition of osteoblast differentiation medium on day 0. (A) qRT-PCR analysis of pre-tRNAs before and during differentiation after ML-60218 or DMSO treatment of ST2 cells. (B) Representative image of alkaline phosphatase (Alp) staining of ST2 cells after osteoblast differentiation in DMSO or ML60218 treated cells. (C) Representative image of alizarin red analysis of ST2 cells after osteoblast differentiation and ML-60218 or DMSO treatment. (D) qRT-PCR analysis of Runx2, Col1α, Sp7, Osteocalcin, Alp and Bone Sialoprotein in ST2 cells on day 0, day 2 and day 10 during osteoblast differentiation. Results represent means ± SD of three independent replicates. *p<0.05, **p<0.01, ***p<0.001 determined by Student’s t-test with Holm correction. Figure 4—source data 1 contains uncropped images of stained plates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Primary stromal cells isolated from 6–8 week-old C57BL/6 WT mice were treated with ML-60218 for 3 days before, and during differentiation into osteoblasts by addition of osteoblast differentiation medium on day 0. (A) Representative image of Alp staining of ST2 cells after osteoblast differentiation of DMSO or ML60218 treated cells. (B) Representative image of alizarin red analysis of ST2 cells after osteoblast differentiation and ML-60218 or DMSO treatment. (C) qRT-PCR analysis of Runx2, Col1α, Sp7, Osteocalcin, Alp and bone sialoprotein expression relative to β-actin in primary stromal cells on day 0, day 2, and day 10 during osteoblast differentiation. Results represent means ± SD of three independent replicates, *p<0.05, **p<0.01, ***p<0.001 determined by Student’s t-test with Holm correction. Figure 4—figure supplement 1—source data 1 contains uncropped images of stained plates.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** ST2 cells were treated for 3 days with 40 µM ML-60218 or DMSO between day –1 and day 2 of adipocyte differentiation. (A) qRT-PCR analysis of pre-tRNA expression before and during adipocyte differentiation. (B) Western blot analysis of Pparγ, Fabp4, and Vinculin. (C) qRT-PCR analysis of adipocyte markers Pparγ, Pparγ2, C/ebpα and Fabp4. (D) Oil red O staining of adipocytes on day 8 of adipocyte differentiation. Representative wells (left), representative 10× microscope image (middle), relative Oil red O positive cells as determined by citation 5 scanning of 3 wells (right). *p<0.05, **p<0.01, ***p<0.001 determined by Student’s t-test with Holm correction. Figure 4—figure supplement 2—source data 1 contains uncropped images of western blot analysis. Figure 4—figure supplement 2—source data 2 contains uncropped images of the Oil red O-stained cells, additional 10× images and stitched images at 4× used for analysis.
+
 Using a complementary approach, we downregulated the expression of the RNA pol III-specific transcription factor Brf1 to reduce RNA pol III transcription (Figure 5A and B). Similar to ML-60218 treatment, Brf1 knockdown decreased Alp and Alizarin red staining, as well as osteoblast marker expression (Figure 5C–E). These results indicate that, while different approaches to decrease RNA pol III-dependent transcription all affect osteoblast differentiation, increased MAF1 expression promotes differentiation, while Brf1 knockdown and ML-60218 treatment repress osteoblast differentiation.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig5-v2.jpg)
+
+**Figure 5.:** ST2 cells were stably infected with scramble or Brf1 shRNA lentivirus and differentiated into osteoblasts by addition of osteoblast differentiation medium on day 0. (A) Western blot analysis showing Brf1 and Vinculin expression in cells infected with a scramble construct Brf1 shRNA before or 10 days after adding osteoblast differentiation medium. (B) qRT-PCR analysis of Brf1 and pre-tRNAs of ST2 cells expressing Scramble of shBrf1 before and on day after adding osteoblast differentiation medium. (C) Representative image of alkaline phosphatase (Alp) staining of ST2 cells expressing scramble or lentiviral Brf1 shRNA after culture in osteoblast differentiation medium. (D) Representative image of alizarin red analysis of cells with Scramble or Brf1 shRNA after culture in osteoblast differentiation medium. (E) qRT-PCR analysis showing relative expression of Runx2, Col1α, Sp7 (Osterix), Alp, and Bone sialoprotein before and 10 days after the addition of osteoblast differentiation medium. Results represent means ± SD of three independent replicates, *p<0.05, **p<0.01, ***p<0.001 determined by Student’s t-test with Holm correction. Figure 5—source data 1 contains uncropped western blot images, Figure 5—source data 2 contains uncropped images of stained plates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** ST2 cells were stably infected with scramble or two different shBrf1 constructs and differentiated into adipocytes as described in ‘Materials and methods’. (A) Western blot analysis of Brf1, Pparγ, Fabp4, and Vinculin expression on day 0 and day 6 of adipocyte differentiation. (B) qRT-PCR analysis of Brf1, and pre-tRNA expression during adipocyte differentiation. (C) qRT-PCR analysis of adipocyte markers Pparγ, Pparγ2, C/ebpα, and Fabp4. (D) Oil red O staining of adipocytes on day 8 of adipocyte differentiation. Representative wells (top), representative10× microscope image (bottom), relative Oil red O-positive cells as determined by citation 5 scanning of two wells (right). *p<0.05, **p<0.01, ***p<0.001 determined by Student’s t-test with Holm correction. Figure 5—figure supplement 1—source data 1 contains uncropped images of western blot analysis. Figure 5—figure supplement 1—source data 2 contains uncropped images of the Oil red O-stained cells, additional 10× images and stitched images at 4× used for analysis.
 
 To further delve into the opposing effects of MAF1 overexpression versus Brf1 downregulation or ML-60218 treatment, we examined the relative effects of these three perturbations on adipocyte differentiation from ST2 cells. MAF1-independent approaches to repress RNA pol III-dependent transcription produced an increase in adipogenesis observed upon Oil red O staining and adipocyte marker expression (Figure 4—figure supplement 2, Figure 5—figure supplement 1). Interestingly, this was similar to what was observed by MAF1 overexpression. Thus, while all three mechanisms of inhibiting RNA pol III transcription (ML-60218 treatment, Brf1 knockdown and MAF1 overexpression) enhance adipocyte differentiation, only MAF1 overexpression enhances osteoblast differentiation.
 
-## RNA sequencing shows that different perturbations to alter RNA pol III transcription result in distinct gene expression profiles
+### RNA sequencing shows that different perturbations to alter RNA pol III transcription result in distinct gene expression profiles
 
 To investigate the contrasting effect of altering MAF1 expression versus ML-60218 treatment or Brf1 knockdown on osteoblast differentiation, we performed RNA-seq on ST2 cells harvested before the start of differentiation, day 0, and on day 4. Each manipulation was compared to their own appropriate controls and triplicates were analyzed for each datapoint. Genes with an adjusted p-value <0.05 and a log2fold change >0.7 in either direction were considered. Each intervention used to manipulate RNA pol III-dependent transcription resulted in distinct changes in gene expression on both day 0 and day 4 (Figure 6A–B). There was little overlap in gene expression changes caused by each approach used to manipulate RNA pol III transcription. To explore whether these changes relate to specific biological processes, we performed gene ontology (GO) enrichment analysis on the data at day 0. Comparing the 20 most significantly enriched subgroups, we found that MAF1 overexpression and Brf1 knockdown resulted in enrichment for GO terms previously shown to relate to the regulation osteoblast differentiation, such as extracellular matrix organization and ossification. In contrast, ML-60218 treatment enriched mostly for lipid metabolism and adipocyte differentiation genes. The enrichment observed for these GO terms, without inducing differentiation, suggests that manipulating RNA pol III-dependent transcription positions cells in a manner that affects lineage determination. Our GO analysis also uncovered other biological processes that were changed. However, these varied between the subgroups (Figure 6—figure supplement 1, Figure 6—figure supplement 2, Figure 6—figure supplement 3, Figure 6—figure supplement 4). Overall, these results reveal that different approaches to manipulate RNA pol III can produce disparate gene expression changes that lead to different biological outcomes.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig6-v2.jpg)
+
+**Figure 6.:** Changes in gene expression were determined by padj<0.05 and foldchange >|log2 0.7|. Venn diagram showing overlap in gene changes (either increased or decreased) on day 0 (A) or (B) day 4 (B). Genes that were changed in all groups are denoted. MAF1OE genes changes between pInd20-MAF1 and Pind20-Control; shMAF1 was compared to scramble control, shBrf1 was compared to scramble control; ML-60218 was compared to DMSO control. Figure 6—source data 1 contains excel files with all differentially expressed genes.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Top 20 biological process-related gene ontology (GO) enrichment terms of genes changed by MAF1 overexpression on day 0. Genes with padj<0.05 and log2fold>0.7 in either direction, were used for analysis.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Top 20 biological process-related gene ontology (GO) enrichment terms of genes changed by MAF1 knockdown on day 0. Genes with padj<0.05 and log2fold>0.7 in either direction, were used for analysis.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Top 20 biological process-related GO enrichment terms of genes changed by ML-60218 treatment on day 0. Genes with padj<0.05 and log2fold>0.7 in either direction, were used for analysis.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Top 20 biological process-related GO enrichment terms of genes changed by Brf1 knockdown on day 0. Genes with padj<0.05 and log2fold >0.7 in either direction, were used for analysis.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** Genes that were significantly altered on day 0 in opposing directions by MAF1 overexpression and MAF1 knockdown by at least log2fold 0.7 are shown. Changes in corresponding genes after Brf1 knockdown or ML-60218 treatment are shown. NS: not significantly affected.
 
 To determine which genes were specifically altered by MAF1, we compared changes in gene expression on day 0 by MAF1 overexpression and MAF1 knockdown. We only considered genes that were at least log2fold 0.7 changed in an opposing direction in each treatment set (Figure 6—figure supplement 3). This uncovered several genes that were not changed in the same direction by Brf1 knockdown or ML-60218 treatment which have known effects on bone. Among these were phosphate-regulating endopeptidase homolog, X linked (Phex), which increased upon MAF1 overexpression and decreased by Brf1 knockdown or ML-60218 treatment. Of note, Phex plays a key role in promoting bone mineralization and phosphate homeostasis (Rowe, 2012). In addition, Col15a1, which is associated with early osteoblast differentiation (Lisignoli et al., 2017), and Lysyl oxidase like 2 (Loxl2), which is involved in collagen crosslinking (Mitra et al., 2019), were also increased by MAF1 overexpression. In contrast, Rhomboid 5 homolog 2 (Rhbdf2) expression was decreased. Rhbdf2 knockout mice display a high bone mass phenotype (Levy et al., 2020), suggesting RHBDF2 may play a role in regulating bone mass. Together, the results suggest that MAF1 may specifically regulate a subset of genes that play a role in regulating bone mass.
 
@@ -74,11 +154,76 @@ To identify a potential mechanism, we further compared changes in gene expressio
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/74740/elife-74740-fig7-v2.jpg)
 
-**Figure 7.:** Relative changes in codon usage during osteoblast differentiation day 4, compared to day 0 for SCR control cells (left) or of genes that are members of the GO term 0001649 (osteoblast differentiation) (right). Figure 7—source data 1 contains excel files with all codon analysis.Figure 7—source data 1.
+**Figure 7.:** Relative changes in codon usage during osteoblast differentiation day 4, compared to day 0 for SCR control cells (left) or of genes that are members of the GO term 0001649 (osteoblast differentiation) (right). Figure 7—source data 1 contains excel files with all codon analysis.
 
 ## Discussion
 
 MAF1 is a key repressor of transcription by RNA pol III (Johnson et al., 2007; Vorländer et al., 2019). Changes in MAF1 expression have been shown to enhance adipocyte differentiation (Chen et al., 2018; Figure 2—figure supplement 1 and Figure 3—figure supplement 1). Maf1-/- mice are shorter than WT mice and exhibit a lean phenotype with resistance to diet-induced obesity, decreased fertility and fecundity, and increased longevity/healthspan (Bonhoure et al., 2015). Here, we demonstrate that these mice display an increase in bone volume and bone formation. However, Maf1-/- derived primary stromal cells showed a decrease in osteoblast formation in ex vivo cultures. While it is possible this is due to different culture conditions, this latter finding was consistent with the effects of MAF1 overexpression specifically in the mesenchyme of long bones, which resulted in enhanced osteoblast differentiation and an increase in bone mass. In these latter mice, compared with Maf1-/- mice, any confounding actions due to the absence of MAF1 in other tissues, such as possible endocrine or paracrine effects, are limited. Thus, our results indicate that the ability of MAF1 to regulate bone mass involves both cell autonomous and non-cell-autonomous actions. This idea is further corroborated by our in vitro results showing that osteoblast differentiation is regulated by increasing or decreasing MAF1 expression in ST2 cells, suggesting that MAF1 promotes osteoblast differentiation and mineralization. Our findings are summarized in Table 1. As MAF1 also enhances adipogenesis (Chen et al., 2018; Figure 2—figure supplement 1, Figure 3—figure supplement 1), we conclude that MAF1 is an important regulator in the development and differentiation of mesenchymal cells into multiple lineages.
+
+**Table 1.**
+ Summary of results found by distinct manipulations of RNA pol III-mediated transcription.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome/Phenotype</th>
+      <th>Mouse line Maf1-/-</th>
+      <th>Mouse line Prx1-Cre-MAF</th>
+      <th>ST2 cell line MAF1 OE</th>
+      <th>ST2 cell line shMAF1</th>
+      <th>ST2 cell line shBrf1</th>
+      <th>ST2 cell line ML-60218</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RNA pol III transcription</td>
+      <td>Increased</td>
+      <td>Decreased</td>
+      <td>Decreased</td>
+      <td>Increased</td>
+      <td>Decreased</td>
+      <td>Decreased</td>
+    </tr>
+    <tr>
+      <td>Bone mass</td>
+      <td>Increased</td>
+      <td>Increased</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>In vitro osteoblast differentiation/ mineralization</td>
+      <td>Decreased</td>
+      <td>Increased</td>
+      <td>Increased</td>
+      <td>Decreased</td>
+      <td>Decreased</td>
+      <td>Decreased</td>
+    </tr>
+    <tr>
+      <td>In vivo bone marrow adipocyte number</td>
+      <td>Decreased</td>
+      <td>ND</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>In vitro adipocyte differentiation</td>
+      <td>Decreased</td>
+      <td>ND</td>
+      <td>Increased</td>
+      <td>ND</td>
+      <td>Increased</td>
+      <td>Increased</td>
+    </tr>
+  </tbody>
+</table>
 
 MAF1 is a well-established repressor of RNA pol III-mediated transcription through its direct interaction with RNA pol III (Vorländer et al., 2019; Vannini et al., 2010). To further determine whether MAF1 functions to promote osteoblast differentiation through its ability to regulate RNA pol III-dependent transcription, we used complementary approaches to repress this transcription process. During differentiation, we observed an overall increase in tRNA gene transcripts. This increase was repressed by MAF1 overexpression, Brf1 downregulation, or chemical inhibition of RNA pol III. Surprisingly, however, in contrast to the positive regulation of osteoblast differentiation by MAF1, chemical inhibition of RNA pol III or Brf1 knockdown resulted in a decrease in osteoblast differentiation (Table 1). Thus, while different perturbations in RNA pol III-dependent transcription all affect the differentiation process, MAF1-mediated changes produce an opposing action compared with chemical inhibition of RNA pol III or decreased Brf1 expression. This is in contrast to what we observed for adipogenesis, where all three approaches to repress RNA pol III transcription similarly increased adipocyte formation (Figure 2—figure supplement 1, Figure 3—figure supplement 1, Figure 4—figure supplement 2, Figure 5—figure supplement 1 and Table 1; Chen et al., 2018).
 
@@ -90,42 +235,409 @@ In all, our results describe a novel role for MAF1 and RNA pol III in bone biolo
 
 ## Materials and methods
 
-## Mouse lines and bone analyses
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Rosa26-Lox-stop-lox-MAF1-HA;LSL-MAF1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>An engineered construct of Rosa26-Lox-stop-lox-MAF1-HA was injected into C57Bl6/J mice embryonic stem cells. chimeric mice were created by by blastocyst injection of homologous recombinant clones.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Maf1-/-</td>
+      <td>Bonhoure et al., 2015</td>
+      <td></td>
+      <td>Mouse line maintained in Dr. I Willis lab.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Prrx1Cre</td>
+      <td>Jackson laboratory</td>
+      <td>Strain #:005584</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>ST2</td>
+      <td>RIKEN cell bank</td>
+      <td>#RCB0224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Scramble shRNA</td>
+      <td>Addgene, Sheila Steward</td>
+      <td>#17,920</td>
+      <td>Lentiviral construct to express shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>MAF1 shRNA#1</td>
+      <td>Millipore sigma</td>
+      <td>TRCN0000125776</td>
+      <td>Lentiviral construct to express shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>MAF1 shRNA#2</td>
+      <td>Millipore sigma</td>
+      <td>TRCN0000125778</td>
+      <td>Lentiviral construct to express shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Brf1 shRNA#1</td>
+      <td>Millipore sigma</td>
+      <td>TRCN0000119897</td>
+      <td>Lentiviral construct to express shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Brf1 shRNA#2</td>
+      <td>Millipore sigma</td>
+      <td>TRCN0000119901</td>
+      <td>Lentiviral construct to express shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pInducer20</td>
+      <td>Addgene Stephen Elledge</td>
+      <td>#44,012</td>
+      <td>Lentiviral construct to express shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Human)</td>
+      <td>pInducer20-MAF1-HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pInd20-MAF1-HA was cloned by taking MAF1-HA from pFTREW-MAF1-HA into a pInducer20 construct by gateway cloning using LR clonase. Cell line M. musculus construct: human</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcein</td>
+      <td>Millipore Sigma</td>
+      <td>C0875</td>
+      <td>10 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Xylenol orange</td>
+      <td>Millipore Sigma</td>
+      <td>X0127</td>
+      <td>90 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LR clonase</td>
+      <td>Thermo Fisher</td>
+      <td>#11791020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline hyclate</td>
+      <td>Millipore Sigma</td>
+      <td>#D9891</td>
+      <td>Used at 1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ML-60218</td>
+      <td>Millipore Sigma</td>
+      <td>#557,403</td>
+      <td>RNA pol III inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ascorbic acid</td>
+      <td>Sigma</td>
+      <td>#A4544</td>
+      <td>Used at 50 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Β-glycerolphosphate</td>
+      <td>Millipore Sigma</td>
+      <td>#35,675</td>
+      <td>Used at 10 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cetylpyridinium chloride</td>
+      <td>Sigma</td>
+      <td>#C0732</td>
+      <td>Used at 10% for alizarin red extraction</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>rosiglitazone</td>
+      <td>Sigma</td>
+      <td>R2408</td>
+      <td>Used at 1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-isobutyl-1-methyl xanthine</td>
+      <td>Sigma</td>
+      <td>I5879</td>
+      <td>Used at 0.5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dexamethasone</td>
+      <td>Sigma</td>
+      <td>D4902</td>
+      <td>Used at 2 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin</td>
+      <td>Sigma</td>
+      <td>I05016</td>
+      <td>Used at 10 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNA stat-60</td>
+      <td>Tel-test Inc</td>
+      <td>#NC9256697</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alizarin Red</td>
+      <td>Sigma</td>
+      <td>#A5533</td>
+      <td>Used at 1% at ph 4.2</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oil red O</td>
+      <td>Sigma</td>
+      <td>#01391</td>
+      <td>Used at 0.3%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>collagenase IV</td>
+      <td>Gibco</td>
+      <td>#17104019</td>
+      <td>Used at 2.5%</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRAP staining kit</td>
+      <td>Sigma</td>
+      <td>#387A-1KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Von Kossa staining</td>
+      <td>Statlab</td>
+      <td>#KTVKO</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Alkaline phosphatase staining</td>
+      <td>Vector laboratories</td>
+      <td>#SK5300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick-RNA miniprep kit</td>
+      <td>Zymo</td>
+      <td>#R1055</td>
+      <td>Used for RNA isolation from cell culture</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zol RNA miniprep kit</td>
+      <td>Zymo</td>
+      <td>#R2052</td>
+      <td>Used for RNA isolation from femurs</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superscript IV First Strand Synthesis Kit</td>
+      <td>Invitrogen</td>
+      <td>#18091050</td>
+      <td>cDNA synthesis</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR fast qPCR mastermix</td>
+      <td>KAPA Biosystems</td>
+      <td>#KK4602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>M-CSF</td>
+      <td>Peprotech</td>
+      <td>#300–25</td>
+      <td>Used at 30 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RANK-L</td>
+      <td>Peprotech</td>
+      <td>#310–01 C</td>
+      <td>Used at 100 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FGF2</td>
+      <td>Biovision</td>
+      <td>#4,038</td>
+      <td>Used at 10 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DC protein assay</td>
+      <td>Biorad</td>
+      <td>#5000112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MAF1 (H2)(mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>#SC-515614</td>
+      <td>(Wb 1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TFIIIB90(mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>#SC-390821</td>
+      <td>Antibody to Brf1.(Wb 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VINCULIN(mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td># sc-73614 AF488</td>
+      <td>(Wb 1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RUNX2(rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>#12,556</td>
+      <td>(Wb 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PPARγ(rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>#2,435</td>
+      <td>(Wb 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FABP4(rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>#3,544</td>
+      <td>(Wb 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA(Rat monoclonal)</td>
+      <td>Roche</td>
+      <td>#11867423001</td>
+      <td>(Wb 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R- studio</td>
+      <td>https://rstudio.com</td>
+      <td></td>
+      <td>Version 4.1.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeSeq2</td>
+      <td>10.18129/B9.bioc.DESeq2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>clusterProfiler</td>
+      <td>doi.org/10.1016 /j.xinn.2021.100141</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>InteractiVenn</td>
+      <td>10.1186 /s12859-015-0611-3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad prism</td>
+      <td>https://www.graphpad.com/</td>
+      <td></td>
+      <td>Version 9.3.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse lines and bone analyses
 
 All mouse experiments were performed according to a protocol approved by the Institutional Animal Care and Use Committee at Baylor College of Medicine and Albert Einstein College of Medicine. Rosa26-Lox-stop-lox-MAF1-HA (LSL-MAF1) mice were generated by injecting an engineered construct into mouse (C57Bl6/J strain) embryonic stem cells and selecting for homologous recombinant clones. The selected clones were used to generate chimeric mice by blastocyst injection. The chimeric mice were bred to found the LSL-MAF1 colony. Prx1-Cre lines were a kind gift from Dr. Brendan Lee (Baylor College of Medicine). LSL-MAF1 mice were mated with Prx1-Cre for conditional overexpression of MAF1-HA. Littermate controls expressing only Cre were used as a control. To measure dynamic bone histomorphometric parameters, mice were injected with calcein (Sigma) 10 mg/kg at a 6-day interval, 8 and 2 days before euthanasia. Left femurs were collected for µCT histomorphometry at 12 weeks. They were fixed for 48 hr in 4% paraformaldehyde (PFA) and stored at 4 °C in 70% ethanol. µCT of left femurs was performed using the Scanco µCT-40 system at 16 µm resolution. About 75 slices in the metaphyseal region of each femur were analyzed, starting at 10 slices beyond disappearance of the growth plate. Histomorphometry measurements were performed by the bone histomorphometry core at M.D. Anderson Cancer Center (Houston, TX). Tibiae and right femurs were dissected, bone marrow was washed out, and bones were subsequently snap frozen in liquid nitrogen for subsequent protein and RNA isolation. For the Maf1-/- mice, 12-week-old mice were used for µCT and histomorphometry. Mice were double labeled by injecting Calcein (Sigma) 10 mg/kg 8 days before sacrifice and Xylenol Orange (Sigma) at 90 mg/kg 2 days before euthanasia. We calculated traditional metrics for bone formation through manual imaging and morphometry on blinded samples. Derived parameters include mineralized surfaces (MS), mineral apposition rate (MAR), and bone formation rate (BFR). µCT measurements at the spine, femurs and tibiae were performed through the courtesy of Dr. Jay Cao (USDA, North Dakota) using a Scanco µCT-40 scanner.
 
-## ST2 cell culture and differentiation
+### ST2 cell culture and differentiation
 
 ST2 cells were acquired from RIKEN BRC cell bank. Cells, which tested negative for mycoplasma, were grown in basic medium, ascorbic acid free α-MEM (Caisson laboratories) supplemented with 10% FBS (Gibco). For the knockdown experiments, cells were infected with a scrambled control gift from Sheila Stewart addgene #17,920 (Saharia et al., 2008), MAF1 shRNA (#1 TRCN0000125776 and #2 TRCN0000125778), or Brf1 shRNA (#1 TRCN0000119897 or #2 TRCN0000119901). pInd20-MAF1-HA was cloned by taking MAF1-HA from pFTREW-MAF1-HA (Palian et al., 2014) into a pInducer20 construct by gateway cloning using LR clonase (Thermo Fisher). The empty pInducer20 vector was a gift from Stephen Elledge (Addgene #44012) (Meerbrey et al., 2011). Virus production and cell infection was performed as described previously (Chen et al., 2018). Cells were used for differentiation within three passages of selection. For MAF1 overexpression, pInducer20-MAF1HA infected, or pInducer20-empty cells were treated with 1 µM Dox 24 hr before differentiation was started. For ML-60218 treatment, cells were treated starting 24 hr before differentiation with 40 µM ML-60218 in DMSO (Millipore) or an equal volume of DMSO as control. ML-60218 treatment continued for 2 days after differentiation was initiated after which the compound was removed. For osteoblast differentiation, ST2 cells were plated at 1.8×105 cells per well in a 6-well plate. Cells were grown to confluence after which osteoblast differentiation medium, basic media with 50 µg/mL ascorbic acid and 10 mM β-glycerolphosphate was added (day 0) and changed every two days. For adipocyte differentiation, ST2 cells were plated at 1.8×105 cells per well in a 6-well plate and grown to confluency. On day 0, adipogenic medium was added (basic media with 1 µM rosiglitazone, 0.5 mM 3-isobutyl-1-methyl xanthine, 2 µM dexamethasone, and 10 µg/mL insulin). After 2 days, the media was changed to maintenance medium (basic media with 10 µg/mL insulin), which was changed every 2 days for the remainder of the experiment. For in vitro experiments, each experiment was performed using three independent replicates and repeated at least three times. One representative experiment is shown.
 
-## Osteoclast cultures
+### Osteoclast cultures
 
 Bone marrow cells were isolated from femora and tibiae of Maf1-/- and WT mice in alpha-MEM. Cells were cultured for 2 days with M-CSF (30 ng/mL). Non-adherent cells were collected and purified by Ficoll-Plus (Amersham Pharmacia). They were then incubated with M-CSF (30 ng/mL) and RANK-L (100 ng/mL) for 4–6 days followed by staining for Tartrate-resistant acid phosphatase (TRAP) using a kit (Sigma) per manufacturer’s instruction. The number of TRAP-positive cells was counted.
 
-## Cfu-f and Cfu-ob cultures
+### Cfu-f and Cfu-ob cultures
 
 Marrow stromal cells were cultured in the presence of ascorbate-2-phosphate (1 mM) (Sigma). Colony-forming units-fibroblastoid (Cfu-f) and colony-forming units-osteoblastoid (Cfu-ob) were counted, respectively, following alkaline phosphatase staining after 14 day cultures, or von Kossa staining after 21 day cultures.
 
-## Primary stromal cell culture
+### Primary stromal cell culture
 
 Primary stromal cells were isolated from 6- to 8-week-old Prx1-Cre; LSL-MAF1-HA mouse femurs and tibiae. Bones were dissected, cleaned and the marrow was flushed out. Bone pieces were digested using 2.5% collagenase IV (Gibco) for 2–4 hr at 37°C. Cells were strained and maintained in basic medium with 10 ng/mL FGF2 (Biovision). For differentiation, cells were plated in a 48 or 6 well plates and differentiation was performed as described above.
 
-## RNA isolation and quantitative PCR
+### RNA isolation and quantitative PCR
 
 Total RNA from cells was isolated using the quick-RNA miniprep kit (Zymo Research) following manufacturer’s protocol. For femurs, samples were ground using mortar and pestle in liquid nitrogen, and then further disrupted in RNA stat-60 (Tel-Test Inc) using a polytron. RNA was isolated using the Direct-zol miniprep kit (Zymo Research). cDNA was synthesized using Superscript IV First Strand Synthesis Kit (Invitrogen). Quantitative PCR was performed using SYBR fast qPCR mastermix (KAPA Biosystems) on the Roche 480 Lightcycler. Gene-specific primers are described in Supplementary file 1. RNA was quantified relative to Ef1a for osteoblast differentiation and Ppia1 for adipocyte differentiation unless otherwise denoted.
 
-## Protein isolation
+### Protein isolation
 
 Cells were washed twice and lysed in RIPA buffer. Tibia were ground in mortal and pestle, and further disrupted in RIPA buffer using a polytron. Samples were then sonicated. Cell lysate concentrations were measured using DC protein assay (Biorad) and similar amounts of protein lysate were loaded. The following antibodies were used: MAF1 (H2), TFIIIB90 (Brf1) (A8), Vinculin (7F9), and β-actin (C4) (Santa Cruz), Runx2, Pparγ, Fabp4 (Cell signaling) and HA (Roche).
 
-## Staining
+### Staining
 
 Cells were fixed for 10 min in 4% PFA, washed twice with PBS and once with water. Oil red O staining was performed using 0.3% Oil Red O solution (Sigma). Alkaline phosphatase staining used an alkaline phosphatase blue substrate kit (Vector Laboratories). Alizarin red staining was performed using 1% alizarin red (Sigma-Aldrich) at a pH of 4.2. Cell counts were taken using the Cytation 5 Microscope. Alizarin Red was extracted using 10% cetylpyridinium chloride (CPC) and absorption was measured at 563 nM.
 
-## Sequencing
+### Sequencing
 
 ST2 cells were prepared, plated, and differentiated as described above. shBrf1#2 and shMAF1#2 were used for sequencing analysis. Triplicates of each sample were used for each analysis and RNA was extracted on day 0 and day 4. For each replicate, three wells of a 6-well plate were combined. For each condition, triplicate RNA was isolated using the quick RNA miniprep kit (Zymo Research). Library preparation and RNA-seq were performed by Novogene Co. (Sacramento, CA, USA). Differentially expressed genes were determined using DESeq2 with FDR <0.05 and |log2foldchange| >0.7. One replicate of shBrf1 at day 0 was considered an outlier by principal component analysis and hierarchical clustering and removed from analysis. GO analysis was performed using the clusterProfiler R package (Wu et al., 2021a). Venn diagrams were made using InteractiVenn (Heberle et al., 2015). For codon usage analysis, an exhaustive list of gene-coding sequences was obtained from GENCODE (M27) and codon use rates were calculated. For each codon, a selection rate against other potential isodecoders was determined. Gene subsets were established from alteration in RNAseq at over log2foldchange 0.7 in either direction and padj<0.05 by DESeq2, or by membership in gene ontology as osteoblast differentiation. For comparisons between two groups two-tailed Student’s t-test were performed followed by Benjamini-Hochberg correction of the full comparison set.
 
-## Statistical analysis
+### Statistical analysis
 
 For comparisons between two groups, two-tailed Student’s t-test were performed. For comparisons with more than two groups, ANOVA was used followed by paired t-tests with Holm correction. Significance was determined at p<0.05.

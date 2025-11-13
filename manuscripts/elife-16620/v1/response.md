@@ -22,9 +22,7 @@ We agree with the reviewers’ observation that there are more Mad2-Cdc20 binary
 
 Additionally, we performed the proposed reviewer experiments of evaluating the phosphorylation status of two key residues of Cdc20 in FL-BubR1 and BubR1ΔI MEFs (S153 and S92 by Bub1 kinase and Plk1 kinase respectively) to determine if MCC-independent mechanism were contributing to heightened SAC activity. We found the indicated antibodies were indeed able to detect murine Cdc20. However, we did not find an increase in phosphorylation of these residues, suggesting this signaling pathway is not hyperactivated in our mutants. These data can be found in revised Figure 6D of the manuscript and have been incorporated in the text in the last paragraph of the subsection “The mitotic checkpoint complex composition is unique in BubR1ΔI MEFs”.
 
-We also analyzed the phosphorylation status of Cdc20 by Phos-tag western blotting, which confirmed that phosphorylation-mediated inhibition of Cdc20 is unchanged in BubR1ΔI MEFs. Please see Author response image 1.10.7554/eLife.16620.034Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.16620.034
-
-DOI: http://dx.doi.org/10.7554/eLife.16620.034
+We also analyzed the phosphorylation status of Cdc20 by Phos-tag western blotting, which confirmed that phosphorylation-mediated inhibition of Cdc20 is unchanged in BubR1ΔI MEFs. Please see Author response image 1.10.7554/eLife.16620.034Author response image 1.
 
 While it is counterintuitive that MEFs overexpressing BubR1ΔI show more robust SAC signaling than those overexpressing FL-BubR1 given the substantial difference in MCC formation, BubR1ΔI MEFs are unique in that they are sensitive to mild perturbations in microtubule-kinetochore attachment caused by low concentrations of nocodazole. Therefore, one potential explanation is that a decreased threshold for activation or sustainability of SAC signaling (or both) affords BubR1ΔI MEFs a more robust SAC. We have now more clearly discussed this potential explanation in the revised manuscript. Please see the first paragraph of the subsection “The mitotic checkpoint complex composition is unique in BubR1ΔI MEFs”.
 

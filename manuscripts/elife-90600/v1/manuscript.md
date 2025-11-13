@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00hx57361 Princeton Neuroscience Institute, Princeton University Princeton United States
+1. Princeton Neuroscience Institute, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
 
 † Corresponding author
 
@@ -27,29 +27,65 @@ The CA2 has been called a social memory ‘hub’ because it receives and integr
 
 ## Results
 
-## abGCs project to inhibitory interneurons and pyramidal cells of the CA2 region
+### abGCs project to inhibitory interneurons and pyramidal cells of the CA2 region
 
 In the CA2, we verified abGC projections using 3R-Tau, a marker of abGC axons (Llorens-Martín et al., 2015), as well as mature granule cell projections using ZnT3, a marker of mature mossy fibers (Wenzel et al., 1997; Figure 1a and ai–aiii). We further determined that abGC projections to the CA2 are preferentially associated with the proximal dendrites of parvalbumin-positive (PV +) interneurons labeled with cre-dependent AAV mCherry compared to the proximal dendrites of pyramidal cells immunolabeled with PCP4 (Figure 1b–d). Although we cannot determine whether a similar relationship exists with projections to distal dendrites or whether these connections represent active synapses, this preferential association with PV + interneurons over pyramidal cells mirrors abGC projection patterns to the CA3 (Restivo et al., 2015). Because the CA2 region is involved in the retrieval of remote developmental memories (Laham et al., 2021) and abGCs have been linked to the storage and retrieval of recently encountered mice (Cope et al., 2020), we next investigated whether abGCs are necessary for the retrieval of developmental memories of the mother.
 
-## abGCs are necessary for retrieval, but not maintenance, of remote developmental memories
+![Figure 1.](https://cdn.elifesciences.org/articles/90600/elife-90600-fig1-v1.jpg)
+
+**Figure 1.:** (a-aiii) Confocal images of dentate gyrus granule cells, both mature (ZnT3+) and adult-born (3R-Tau+), and their robust projections to CA2. Confocal images of adult-born granule cell (abGC) 3R-Tau+axons (arrows) (b) near proximal dendrite of a CA2 PCP4 + pyramidal cell and (c) near proximal dendrite of a CA2 mCherry + PV+ interneuron. (d) abGC fibers (3R-Tau+) in the CA2 are more abundant near proximal dendrites (n=7; paired t-test: t6=3.163, p=0.0195) of PV + interneurons (mCherry+) than those of pyramidal cells (PCP4+). (e) Timeline for behavioral experiment. (f) Schematic demonstrating direct social interaction assay used at three experimental time points. (g) Ablation of abGCs abolishes difference in investigation time between mother and novel mother (CD1: n=17; TK: n=14; two-way RM ANOVA: Genotype x Drug: F2,58 = 5.352, p=0.0074; Šídák’s test p=0.0021). After removing valganciclovir (VGCV) from rodent chow and allowing adult neurogenesis to recover over the course of 6 weeks, mice were able to discriminate between mother and novel mother again (p>0.999). (h-hii) Confocal images of abGCs in the DG at three different drug time points. VGCV administration produces a dramatic loss of (h-hii) abGCs (3R-Tau + cells) in DG (VGCV-: n=8; VGCV+: n=8; unpaired t-test: t14=6.588, p<0.0001) and (i-iii) 3R-Tau+ fibers in CA2 (VGCV: n=8; VGCV+: n=8; unpaired t-test: t14=3.488, p=0.0036). 6 weeks after removing VGCV from the rodent chow, DG abGC number (j, k) undergoes a 70% recovery (CD1: n=8; TK: n=8; unpaired t-test: t14=3.218, p=0.0062), and (l, m) 3R-Tau+ fibers present in CA2 undergo a complete recovery (CD1: n=8; TK: n=8; unpaired t-test: t14=0.7271, p=0.4791). *p<0.05, bars represent mean + SEM. Scale bars = 200 μm for a, h, i; 2 μm for b, c. ns = not significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90600/elife-90600-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Total investigation times of the mother and a novel mother were assessed for CD1 and GFAP-TK mice before (VGCV-), during (VGCV+), and after valganciclovir (VGCV) administration (VGCV- Recovery) (CD1: n=17; TK: n=14; RM ANOVA: Genotype x Drug: F6,116 = 1.672, p=0.1339; Drug: F1.173 = 5.515, p=0.0072). (b) Total investigation times of the mother and a novel mother were quantified for Nestin-cre mice and Nestin-cre:Gi mice with a 4–6-week-old population of inhibitory DREADD + adult-born granule cells (abGCs) (Nestin-cre: n=31; Nestin-cre:Gi: n=33; Mixed-effects ANOVA: Genotype x Drug x Stimulus: F1,56 = 4.290, p=0.0430; Tukey’s test: Nestin-cre Veh Mother vs Novel p=0.0004, Nestin-cre CNO Mother vs Novel p=0.0274, Nestin-cre:Gi Veh Mother vs Novel p=0.0326, Nestin-cre:Gi CNO Mother vs Novel p=0.9904). (c) Total investigation times of the mother and a novel mother were quantified for Nestin-cre mice and Nestin-cre:Gi mice with a 10–12-week-old population of inhibitory DREADD + abGCs (Nestin-cre: n=21; Nestin-cre:Gi: n=17; Mixed-effects ANOVA: Genotype x Drug x Stimulus: F1,12 = 1.204, p=0.2941; Drug: F1,40 = 60.46, p<0.0001). Bars represent mean + SEM. This figure contains data that relates to both main Figures 1 and 2.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/90600/elife-90600-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) GFAP-TK mice display normal locomotion during social interaction after 6 weeks of VGCV administration (CD1: n=17; TK: n=14; three-way ANOVA: Genotype x Drug x Stimulus: F1,29 = 0.01998, p=0.8886). CNO administration has no effect on locomotion during (b) baseline (Nestin-cre: n=7; Nestin-cre:Gi: n=9; two-way RM ANOVA: Genotype x Drug: F1,14 = 0.02291, p=0.8818) or (c) social stimulus trials (Nestin-cre: n=7; Nestin-cre:Gi: n=9; three-way ANOVA: Genotype x Drug x Stimulus: F1,14 = 0.06126, p=0.8081) in Nestin-cre and Nestin-cre:Gi mice. A significant two-way interaction was observed during social trials, but all post hoc tests failed to reach significance (two-way ANOVA: Genotype x Drug: F1,14 = 7.180, p=0.0180). Bars represent mean + SEM. ns = not significant. This figure contains data that relates to both main Figures 1 and 2.
+
+### abGCs are necessary for retrieval, but not maintenance, of remote developmental memories
 
 Using the GFAP-TK transgenic mouse model in which abGCs are ablated upon valganciclovir (VGCV) administration (Snyder et al., 2011), we found that adult GFAP-TK mice and CD1 littermates with control levels of abGCs investigate their own mother less than a novel mother (Figure 1e–g, Figure 1—figure supplement 1a), similar to what has been observed in C57 mice (Laham et al., 2021). Because adult mice prefer novel stimuli over familiar stimuli, lower investigation times of previously encountered mice compared to novel mice can be interpreted as recognition. Thus, our social investigation data in adult mice with intact abGCs suggest that these mice can recognize mothers as familiar even after being separated since weaning (at P21). In contrast, mice with depleted abGCs are no longer able to discriminate between their own mother and a novel mother, as indicated by investigation times (Figure 1—figure supplement 1a). No changes were observed in overall locomotion during social trials after abGC depletion (Figure 1—figure supplement 2a), suggesting that any physical activity differences between groups are not responsible for differences in social investigation times. Cessation of VGCV treatment in GFAP-TK mice enabled a 70% recovery of abGCs in the DG (Figure 1h, j and k) and complete recovery of abGC 3R-Tau+ axon intensity in the CA2 (Figure 1i, l and m). Coinciding with the recovery of adult neurogenesis, GFAP-TK animals regained the ability to discriminate between their mother and a novel mother with differential investigation times (Figure 1—figure supplement 1a). These results reveal that abGCs are not necessary for maintaining developmental social memories, but instead support retrieval of remote memories of the mother. Because it is known that abGCs project to the CA2 (Llorens-Martín et al., 2015), a region which has been linked to retrieval of developmental social memories (Laham et al., 2021), we next inhibited projections from abGCs to the CA2 to investigate how this circuit affects mother memory retrieval.
 
-## abGC projections to the CA2 play a time-limited role in the retrieval of remote developmental memories
+### abGC projections to the CA2 play a time-limited role in the retrieval of remote developmental memories
 
 To determine if developmental social memory retrieval requires activation of the abGC-CA2 circuit, we used a tamoxifen-inducible double transgenic mouse where Gi-DREADD expression was confined to abGCs in a temporally specific way (Nestin-cre:Gi). Nestin-cre littermates were used as single transgenic controls. Targeted clozapine-N-oxide (CNO) infusion through bilateral cannula aimed at the CA2 enabled inhibition of Gi-DREADD + abGC axon terminals in the vicinity of the cannula in Nestin-cre:Gi mice. Previous studies have shown that abGCs are important for nonsocial memories only during a limited time after they are generated, i.e., 4–6 weeks after mitosis (Gu et al., 2012; Song et al., 2012; Kropff et al., 2015). Accordingly, tamoxifen-treated adult mice underwent behavioral testing at two post-injection time points (4–6 weeks and 10–12 weeks post-injection) to assess whether different aged abGCs are involved in developmental social memory retrieval (Figure 2a–d). As expected, we found that Nestin-cre:Gi mice investigated the mother less than the novel mother when vehicle was infused; however, inhibition of this pathway after CNO infusion in CA2 prevented this ability (Figure 2e, Figure 1—figure supplement 1b). There were no differences in locomotion at baseline or during the social trials in any groups, suggesting that the effects of social investigation time were not the result of physical activity differences (Figure 2, Figure 1—figure supplement 2b and c). CNO treatment in the same abGC cohort 6 weeks later (10–12 week-old abGCs) had no effect on Nestin-cre:Gi animals’ ability to discriminate between their mother and a novel mother (Figure 2f, Figure 1—figure supplement 1c). These findings suggest that abGCs are required for retrieving remote social memories of the mother when the cells are immature (4–6 weeks post-mitosis), but not when they are mature (10–12 weeks post-mitosis), presumably because a younger abGC cohort has taken over this function. It should be noted that although cannula were placed over the CA2 region, we cannot rule out the possibility that CNO affected abGC terminals in the nearby CA3a region. An additional experiment explored if abGCs contribute to peer social memory consolidation (Figure 2g). Immature abGCs were silenced immediately after the investigation of a novel adult mouse. When reintroduced to the now familiar adult mouse 6 hr later, a time at which studies have shown that the effects of CNO on other behaviors have worn off (Alexander et al., 2009; Whissell et al., 2016; Ray et al., 2011), mice exhibited control-like social discrimination (Figure 2h), suggesting that abGC activity may not be required for social memory consolidation.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/90600/elife-90600-fig2-v1.jpg)
 
-**Figure 2.:** (a) Schematic of breeding to produce Nestin-cre:Gi double transgenic offspring. (b) Timeline outlining tamoxifen administration, cannula implantation, and behavioral testing. (c) Schematic demonstrating direct social interaction testing. (d-dii) Confocal images depicting 4–6-week-old Gi-DREADD + abGCs in the DG. (e) Inhibiting 4–6-week-old adult-born granule cell (abGC) projections to CA2 with clozapine-N-oxide (CNO) prevents discrimination between mother and novel mother (Nestin-cre: n=31; Nestin-cre:Gi: n = 33; two-way RM ANOVA: Genotype x Drug: F1,62 = 4.042, p=0.0487; Šídák’s test p=0.0057). (f) Inhibiting 10–12-week old abGC projections to CA2 does not influence discrimination between mother and novel mother Nestin-cre: n=21 (Veh), n=17 (CNO); Nestin-cre:Gi: n=18 (Veh), n=15 (CNO); Mixed-effects ANOVA: Genotype x Drug:1,67 = 1.669, Pp=0.2008. (g) Schematic for experiment assessing abGC contributions to social memory consolidation. (h) Systemic inhibition of abGCs during memory consolidation has no significant effect on social memory (Nestin-cre: n=21; Nestin-cre:Gi: n=18; two-way RM ANOVA: Genotype x Drug: F1,37 = 1.238, p=0.2730). *p<0.05, bars represent mean + SEM. ns = not significant. Scale bars in d=200 μm.Figure 2—source data 1.
+**Figure 2.:** (a) Schematic of breeding to produce Nestin-cre:Gi double transgenic offspring. (b) Timeline outlining tamoxifen administration, cannula implantation, and behavioral testing. (c) Schematic demonstrating direct social interaction testing. (d-dii) Confocal images depicting 4–6-week-old Gi-DREADD + abGCs in the DG. (e) Inhibiting 4–6-week-old adult-born granule cell (abGC) projections to CA2 with clozapine-N-oxide (CNO) prevents discrimination between mother and novel mother (Nestin-cre: n=31; Nestin-cre:Gi: n = 33; two-way RM ANOVA: Genotype x Drug: F1,62 = 4.042, p=0.0487; Šídák’s test p=0.0057). (f) Inhibiting 10–12-week old abGC projections to CA2 does not influence discrimination between mother and novel mother Nestin-cre: n=21 (Veh), n=17 (CNO); Nestin-cre:Gi: n=18 (Veh), n=15 (CNO); Mixed-effects ANOVA: Genotype x Drug:1,67 = 1.669, Pp=0.2008. (g) Schematic for experiment assessing abGC contributions to social memory consolidation. (h) Systemic inhibition of abGCs during memory consolidation has no significant effect on social memory (Nestin-cre: n=21; Nestin-cre:Gi: n=18; two-way RM ANOVA: Genotype x Drug: F1,37 = 1.238, p=0.2730). *p<0.05, bars represent mean + SEM. ns = not significant. Scale bars in d=200 μm.
 
 Our findings suggest that abGC projections to the CA2 play a role in retrieval of remote memories of the mother. However, to date, no studies have investigated how abGC inputs affect CA2 network activity. Because neuronal oscillations, including SWRs and PAC, in the CA2 have been linked to social recognition of recently encountered conspecifics (Oliva et al., 2020; Zhu et al., 2023), we next investigated whether abGC inputs to the CA2 modulate these events during exposure to mothers and novel mothers, specifically.
 
-## abGCs are necessary for differential network activity in the CA2 during exposure to novel versus familiar social stimuli
+### abGCs are necessary for differential network activity in the CA2 during exposure to novel versus familiar social stimuli
 
 To test whether abGCs affect CA2 SWRs, we recorded neuronal oscillations in the CA2 with and without inhibition of 4–6-week-old abGCs in separate groups of Nestin-cre and Nestin-cre:Gi mice (Figure 3a and b). We found that SWR production (Figure 3c and d) is increased during exposure to a social stimulus (Figure 3e and k), and that more SWRs are produced during novel mother exposure, presumably during encoding social memories, than during mother exposure, presumably during retrieval of developmental social memories (Figure 3—figure supplement 1a and b; Figure 3—figure supplement 2a). However, inhibition of abGCs in the presence of a social stimulus altered several features of SWR production, including decreasing SWR frequency, integral, and duration (Figure 3—figure supplement 1a and b; Figure 3—figure supplement 2a), but no effects on SWR peak amplitude (Figure 3h). Inhibition of abGCs during baseline recordings showed no change in SWR frequency, but an increase in SWR peak amplitude (Figure 3i and j). Conversely, inhibition of 10–12 week-old abGCs had no statistically significant effect on social novelty-induced increases in CA2 SWRs, nor did it affect other features of SWR production (Figure 3k, Figure 3—figure supplements 1d, e and 2b). These findings suggest that 4–6-week-old abGCs, but not 10–12-week-old abGCs, are necessary for promoting appropriate SWR responses during social novelty exploration and developmental social memory retrieval. In an additional study, we investigated if CA2 SWRs were modulated by the presence of a nonsocial stimulus (an object) (Figure 3—figure supplement 3a–f). Surprisingly, CA2 SWR generation was suppressed upon exposure to a nonsocial stimulus (Figure 3—figure supplement 3b). Inhibiting immature abGCs had no statistically significant effects on SWR features in response to a nonsocial stimulus (Figure 3—figure supplement 3b–e).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90600/elife-90600-fig3-v1.jpg)
+
+**Figure 3.:** (a) Timeline of experiment demonstrating tamoxifen injection schedule and electrode implantation in CA2. (b) Confocal image demonstrating accuracy of electrode placement. (c) Example of SWR trace and (d) filtered trace recorded from CA2. (e) CA2 SWR frequency is increased during social interactions, regardless of whether the stimulus is the novel mother or mother (Veh: n=14; CNO: n=14; 2-way RM ANOVA: Stimulus: F1,13 = 46.40, p<0.0001). (f) Inhibiting 4–6-weekold adult-born granule cells (abGCs) with clozapine-N-oxide (CNO) prevents characteristic SWR production patterns present during exposure to novel mothers vs mothers (Nestin-cre: n=7; Nestin-cre:Gi: n=9; Mixed-effects ANOVA: Genotype x Drug: F1,110 = 18.6529, p<0.0001; Tukey’s test p<0.0001). (g) Inhibiting 4–6-week old abGCs significantly reduces social trial SWR production (Nestin-cre: n=7; Nestin-cre:Gi; n=9; Mixed-effects ANOVA: Genotype x Drug: F1,228 = 16.2465, P<0.0001; Tukey’s test p=0.0018). (h) Inhibiting 4–6 week old abGCs increases SWR peak amplitude during social interaction trials (Nestin-cre: n=7; Nestin-cre:Gi: n=9; Mixed-effects ANOVA: Genotype x Drug: F1,238 = 3.69, p=0.0559) and (j) baseline (Nestin-cre: n=7; Nestin-cre:Gi: n=9; Mixed-effects ANOVA: Genotype x Drug: F1,237 = 6.0322, p=0.01477; Tukey’s test p=0.0133). (i) Changes in baseline SWR production did not reach significance (Nestin-cre: n=7; Nestin-cre:Gi: n=9; Mixed-effects ANOVA: Genotype x Drug: F1,238 = 3.5101, p=0.0622). (k) At the 10–12 week abGC time point, CA2 SWR frequency is increased during social interactions, regardless of stimulus (Veh: n=9; CNO: n=11; Mixed-effects ANOVA: Stimulus: F1,10 = 133.1, p<0.0001). (l) Inhibiting 10–12-week old abGCs has no influence on characteristic SWR production patterns present during exposure to the novel mother vs mother (Nestin-cre: n=4 (Veh), n=5 (CNO); Nestin-cre:Gi: n=7 (Veh and CNO); Mixed-effects ANOVA: Genotype x Drug: F1,82 = 1.7431, p=0.1904), nor on (m) SWR production during social trials (Nestin-cre: n=4 (Veh), n=5 (CNO) Nestin-cre:Gi: n=8 (Veh and CNO); Mixed-effects ANOVA: Genotype x Drug: F1,170 = 0.4496, p=0.503), or (o) during baseline recording (Nestin-cre: n=4 (Veh), n=5 (CNO); Nestin-cre:Gi: n=8 (Veh and CNO); Mixed-effects ANOVA: Genotype x Drug: F1,170 = 2.0552, p=0.15352). (n) Inhibiting 10–12-week old adult-born granule cells (abGCs) has no influence on SWR peak amplitude social interaction trials (Nestin-cre: n=4 (Veh), n=5 (CNO); Nestin-cre:Gi: n=8 (Veh and CNO); Mixed-effects ANOVA: Genotype x Drug: F1,18 = 0.9744, p=0.3250) or (p) during baseline (Nestin-cre: n=4 (Veh), n=5 (CNO); Nestin-cre:Gi: n=8 (Veh and CNO); Mixed-effects ANOVA: Genotype x Drug: F1,172 = 0.540, p=0.8165), *p<0.05, bars represent mean + SEM. Scale bar in b=1500 μm. ns = not significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90600/elife-90600-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Schematic of electrophysiological recordings during baseline and social trials during the 4–6-week-old abGC timepoint. (b) Silencing 4–6-week old abGCs reduces average CA2 SWR integral (Nestin-cre: n=7; Nestin-cre:Gi: n=9; Mixed-effects ANOVA: Genotype x Drug: F1,236 = 12.83, p=0.0004017; Tukey’s test p=0.0099). (c) Silencing 4–6-week old abGCs reduces average CA2 SWR duration (Nestin-cre: n=7; Nestin-cre:Gi: n=9; Mixed-effects ANOVA: Genotype x Drug: F1,223 = 24.077, p<0.0001; Tukey’s test p<0.0001). (d) Silencing 10–12-week old abGCs has no effect on average CA2 SWR integral but a significant interaction is observed (Nestin-cre: n=4 (Veh), n=5 (CNO); Nestin-cre:Gi: n=8 (Veh and CNO); Mixed-effects ANOVA: Genotype x Drug: F1,172 = 4.0061, p=0.0469; Tukey’s test p=0.7457). (e) Silencing 10–12-week old abGCs does not reduce average CA2 SWR duration but a significant interaction is observed (Nestin-cre: n=4 (Veh), n=5 (CNO); Nestin-cre:Gi: n=8 (Veh and CNO); Mixed-effects ANOVA: Genotype x Drug: F1172 = 8.5609, p=0.003898; Tukey’s test p=0.1439). *p<0.05, bars represent mean + SEM. ns = not significant.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/90600/elife-90600-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Silencing 4–6-week-old adult-born granule cells (bGCs) alters CA2 SWR generation (Nestin-cre: n=7; Nestin-cre:Gi: n=9; Mixed-effects ANOVA: Genotype x Drug x Stimulus: F1,234 = 13.3621, p=0.000317; Tukey’s test: Nestin-cre Veh Mother vs Novel p=0.0042, Nestin-cre CNO Mother vs Novel p< 0.0001, Nestin-cre:Gi Veh Mother vs Novel p0.0003, Nestin-cre:Gi CNO Mother vs Novel p=0.7190). (b) Silencing 10–12 week-old abGCs has no influence on CA2 SWR generation (Nestin-cre: n=5; Nestin-cre:Gi: n=7; Mixed-effects ANOVA: Genotype x Drug x Stimulus: F1,161 = 2.1093, p=0.14834; Stimulus: F1,161 = 33.0013, p<0.0001). *p<0.05, bars represent mean + SEM.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/90600/elife-90600-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Schematic of electrophysiological recordings during baseline and exposure to nonsocial object (plastic toy animal) trials during the 4–6-week old abGC timepoint. (b) Nonsocial stimuli slightly inhibit CA2 SWR frequency (Veh: n=14; CNO: n=16; 2-way RM ANOVA: Stimulus: F1,28 = 7.760, p=0.0095). (c) Silencing 4–6-week old adult-born granule cells (abGCs) has no influence on CA2 SWR frequency during object exposure (Nestin-cre: n=5 (Veh), n=7 (CNO); Nestin-cre:Gi: n=8 (Veh), n=9 (CNO); Mixed-effects ANOVA: Genotype x Drug: F1,95 = 0.7761, p=0.3806), (d) average integral (Nestin-cre: n=5, n=7 (CNO); Nestin-cre:Gi: n=9 (Veh and CNO); Mixed-effects ANOVA: Genotype x Drug: F1,108 = 0.1653, p=0.2027). (e) Silencing 4–6-week old abGCs reduces average SWR duration during object trials (Nestin-cre: n=5 (Veh), n=7 (CNO); Nestin-cre:Gi: n=9 (Veh and CNO); Mixed-effects ANOVA: Genotype x Drug: F1,106 = 7.9118, p=0.005849; Tukey’s test p=0.0094). (f) Silencing 4–6-week old abGCs has no effect on SWR peak z-score (Nestin-cre: n=5 (Veh), n=7 (CNO); Nestin-cre:Gi: n=9 (Veh and CNO); Mixed-effects ANOVA: Genotype x Drug: F1,111 = 0.0003, p=0.9874). *p<0.05, bars represent mean + SEM. ns = not significant.
+
 We next investigated abGC contributions to theta-gamma PAC (Figure 4a), which is increased after exposure to social stimuli (Zhu et al., 2023) and has been linked to nonsocial memory retrieval (Tronel et al., 2015). We found that exposure to the mother was associated with increased theta-mid-gamma PAC, and that this increase was prevented after inhibition of 4–6-week-old abGCs (Figure 4b–d). Conversely, 4–6-week-old abGCs had no influence on CA2 oscillation power across theta, low-gamma, and mid-gamma frequency bands (Figure 4—figure supplement 1a–f). Inhibition of a 10–12-week-old cohort of abGCs had no statistically significant effect on PAC signatures evoked during exposure to the mother (Figure 4e–g), although there appears to be an overall shift in gamma phase within theta cycles, especially during the mother exposure condition (Figure 4g). This suggests that abGC influence on CA2 network activity is limited to a specific abGC age range. Taken together with our SWR results, these findings suggest that 4–6-week-old abGCs support CA2 network oscillations present during both encoding and retrieval of social memories.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/90600/elife-90600-fig4-v1.jpg)
+
+**Figure 4.:** (a) Example trace of raw local field potential (LFP) (black), 4–12 Hz theta oscillation (magenta), and 50–100 Hz gamma oscillation (green). (b,c) Graphs demonstrating mid-gamma amplitude modulation across theta phases in Nestin-cre:Gi mice. (d) Inhibiting 4–6-week old adult-born granule cells (abGCs) abolishes the increase in theta-mid-gamma PAC present during exposure to the mother (Nestin-cre: n=7; Nestin-cre:Gi: n=8; Mixed-effects ANOVA: Genotype x Drug: F1,103 = 4.6729, p=0.03296; Šídák’s test p=0.0219). (e,f) Graphs demonstrating mid-gamma amplitude modulation across theta phases in Nestin-cre:Gi mice. (g) Inhibiting 10–12-week old abGCs has no influence on theta-mid-gamma PAC during exposure to the mother (Nestin-cre: n=4 (Veh), n=5 (CNO); Nestin-cre:Gi: n=8 (Veh), n=7 (CNO); Mixed-effects ANOVA: Genotype x Drug: F1,18 = 0.2616, p=0.6153). *p<0.05, bars represent mean + SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90600/elife-90600-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a,ai,c,ci,e,ei) Normalized power spectra graphs (Social stimulus/baseline). (b) Silencing 4–6-week old abGCs has no influence on theta power (Nestin-cre: n=7; Nestin-cre:Gi: n=9; Mixed-effects ANOVA: Genotype x Drug: F1,14 = 0.2303, p=0.6387). (d) Silencing 4–6-week old abGCs has no influence on low-gamma power (Nestin-cre: n=7; Nestin-cre:Gi: n=9; Mixed effects ANOVA: Genotype x Drug: F1,14 = 0.7979, p=0.3868). (f) Silencing 4–6-week old abGCs has no influence on mid-gamma power (Nestin-cre: n=7; Nestin-cre:Gi: n=9; Mixed-effects ANOVA: Genotype x Drug: F1,28 = 0.3702, p=0.5478). Bars represent mean + SEM for a-ai,cci,e-ei; + SEM for b,d,e. ns = not significant.
 
 ## Discussion
 
@@ -65,45 +101,146 @@ A time-limited role for abGCs in nonsocial memory has been previously reported (
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background(Mus musculus - males and females)</td>
+      <td>C57Bl/6-Tg(Nes-cre/ERT2)KEisc/J,</td>
+      <td>Jackson labs</td>
+      <td>016261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus - males and females)</td>
+      <td>B6.129-Gt(ROSA)26Sortm1(CAG-CHRM4*,-mCitrine)Ute/J,</td>
+      <td>Jackson labs</td>
+      <td>026219</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus - males and females)</td>
+      <td>C57Bl/6,</td>
+      <td>Jackson labs</td>
+      <td>000644</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus - males and females)</td>
+      <td>B6.129P2-Pvalbtm1(cre)Arbr/J,</td>
+      <td>Jackson labs</td>
+      <td>017320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>3R-Tau, mouse, monoclonal</td>
+      <td>Millipore Sigma</td>
+      <td>05–803</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Znt3, rabbit, polyclonal</td>
+      <td>Alomone Labs</td>
+      <td>AZT-013</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RGS14, mouse, monoclonal</td>
+      <td>UC Davis/NIH Neuromab</td>
+      <td>75–170</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PCP4, rabbit, polyclonal</td>
+      <td>Sigma-Aldrich</td>
+      <td>HPA005792</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9.2.0</td>
+      <td>Graphpad</td>
+      <td>GraphPad Software</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuroExplorer</td>
+      <td>NEX5</td>
+      <td>NEX Technologies</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cre-dependent mCherry AAV2/5, pAAV-hSyn-DIO-mCherry</td>
+      <td>Addgene</td>
+      <td>50459</td>
+      <td>Virus – see surgical procedures in Methods</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All animal procedures were approved by the Princeton University Institutional Animal Care and Use Committee and were in accordance with the National Research Council Guide for the Care and Use of Laboratory Animals. C57BL/6 male and female mice were obtained from Jackson laboratories and were used for immunolabeling. Transgenic mice expressing herpes simplex virus thymidine kinase (TK) under the GFAP promoter were bred in the Princeton Neuroscience Institute animal colony with founders provided by Dr. Heather Cameron at the National Institute of Mental Health for adult neurogenesis ablation studies. GFAP-TK mice were generated by crossbreeding CD1 male mice with heterozygous GFAP-TK female mice (Snyder et al., 2011). Nestin-CreERT2 and R26LSL-hM4Di single transgenic mice were obtained from Jackson labs and bred in the Princeton Neuroscience Institute as single or double transgenic mice for cannula implantation and electrophysiology experiments. PV-cre mice were obtained from Jackson labs and bred in the Princeton Neuroscience Institute to investigate abGC projections to CA2 PV + interneurons. All studies used mixed-sex groups. Transgenic mice were genotyped by Transnetyx from ear punches at P15 using real-time PCR, separated from their dams at P21, and housed in same-sex groups. GFAP-TK and CD1 mice were treated with VGCV starting around P60. Nestin-cre and nestin-cre:Gi transgenic mice were subjected to craniotomy for bilateral cannula implantation, or unilateral electrode implantation starting around P60. GFAP-TK mice were group housed by genotype as well as sex to avoid any potential behavioral differences after ablation of abGCs (Tsuda et al., 2023), while single and double transgenic animals were group-housed with mixed genotypes. Animals were housed in Optimice cages on a reverse 12/12 hr light/dark cycle.
 
-## Behavioral testing
+### Behavioral testing
 
 The direct social interaction test was used (Laham et al., 2021) to determine whether adult offspring were able to discriminate between their mother and a novel mother. Novel mothers were female mice of the same age and reproductive experience as the mothers, which the adult offspring had never encountered. To avoid the confound of altered social preference during times of sexual receptivity, the estrous cycle was tracked in the mother and novel mother, and behavioral testing only occurred when stimulus mice were in diestrus (Cora et al., 2015). Adult GFAP-TK, Nestin-cre, and Nestin-cre:Gi offspring underwent a social interaction test in which they directly interacted with the mother, or a novel mother for 5 min. After a 1 hr delay spent in the home cage with cage mates, mice were introduced to the stimulus mouse not previously encountered for 5 min. The order of stimulus mouse exposure was counterbalanced in all tests. All behavioral tests were recorded, and a trained observer scored behavior testing under blind conditions. Testing apparatuses were cleaned with 70% ethanol after each trial. Bouts of investigation were characterized as direct sniffing of the stimulus mouse’s anogenital region, body, and head.
 
 An additional experiment explored abGC contributions to social memory consolidation. Nestin-cre and Nestin-cre:Gi mice were placed in a testing apparatus with a novel adult mouse and were permitted to investigate for 5 min. Immediately after the interaction, mice received a systemic injection of Veh or 5 mg/kg CNO and were returned to their cages in the vivarium for 6 hr. At the conclusion of the 6 hr intertrial interval, mice were returned to the testing apparatus housing the stimulus mouse they had previously encountered and allowed to investigate for an additional 5 min. Previous studies have shown that 6 hr after CNO treatment, other types of behavioral changes return to baseline, and baseline neuronal activity is largely restored (Alexander et al., 2009; Whissell et al., 2016; Ray et al., 2011). For each experiment that involved a social interaction measure, the time spent moving was recorded. Total locomotion was divided by trial duration to create a % locomotion measure.
 
-## Surgical procedures
+### Surgical procedures
 
 Mice were deeply anesthetized with isoflurane (2–3%) and placed in a stereotaxic apparatus (Kopf) under a temperature-controlled thermal blanket for all surgeries. The head was leveled using bregma, lambda, and medial-lateral reference points before virus injection or implantation of cannula or electrode. PV-cre mice received bilateral injections of a cre-dependent mCherry AAV into CA2 (AP: –1.82, ML:+/-2.15, DV: –1.67) through a WPI nanofil 33-gauge beveled needle. Nestin-cre and Nestin-cre:Gi mice were bilaterally implanted with cannula (Plastics One, Cat# C315GS-5/SP) targeting CA2. Dummy cannula (Plastics One, Cat# C315DCS5/SPC) were tightened inside guides prior to implantation. After lowering to the desired target region, cannula were secured in place using metabond followed by dental cement (Bosworth Trim). For CA2 recordings, Nestin-cre and Nestin-cre:Gi mice were implanted unilaterally with a custom-made 4-wire electrode array (Microprobes) into the right hemisphere targeting CA2. 4 bone screws were implanted into the skull with one screw positioned on the contralateral hemisphere serving as ground. The ground wire was wrapped around the ground screw and covered with metallic paint to ensure maximum contact. Electrode implants were kept in place using metabond followed by dental cement (Bosworth Trim). Two weeks after surgery, cannula mice were infused with either vehicle or CNO (see Drug treatments) before being tested on behavioral tasks (see Behavioral testing); electrode mice received systemic injections of vehicle or CNO 30 min prior to electrophysiological recordings (see Electrophysiology recordings).
 
-## Drug treatments
+### Drug treatments
 
 Administration of the antiviral drug valganciclovir (VGCV) ablates adult neurogenesis in GFAP-TK animals. CD1 and GFAP-TK mice underwent behavioral testing at three time points. Animals first underwent testing prior to VGCV administration (VGCV- trial). After the first round of behavioral testing, VGCV was added to powdered rodent chow (227 mg of VGCV per kg chow) for 6 weeks. After 6 weeks of consuming VGCV chow, animals underwent behavioral testing for a second time (VGCV + trial). At the conclusion of the VGCV + trial, VGCV chow was removed from all cages and replaced with standard chow. After 6 weeks of standard chow consumption, animals underwent a third round of behavioral testing (VGCV- recovery). Mice were perfused shortly after the third round of behavioral testing to assess the extent of adult neurogenesis recovery.
 
 Cannula-implanted Nestin-cre and Nestin-cre:Gi mice underwent social discrimination testing (with novel mother and mother stimulus mice) twice, once after vehicle cannula infusion and once after CNO cannula infusion. The order of drug administration (vehicle or CNO) was counterbalanced across groups. Electrode-implanted mice underwent direct social interaction testing with systemic vehicle or CNO administration. Mice were given a 48 hr minimum rest period between vehicle and CNO tests. 30 min prior to the first stimulus mouse exposure, test mice received vehicle or CNO cannula infusions. For cannula infusions, 200 nl of vehicle or CNO (2 μg/μl of CNO dissolved in DMSO suspended in saline) (Chang and Gean, 2019) was infused per hemisphere over 1 min into CA2 using a syringe pump (Harvard Apparatus) mounted with a 1 μl syringe (Hamilton). The internal cannula remained in place for 1 additional minute after the infusion was completed to allow for diffusion of the drug.
 
-## Electrophysiology recordings
+### Electrophysiology recordings
 
 Local field potentials (LFPs) were recorded using a wireless head stage (TBSI, Harvard Biosciences). To habituate mice to the weight of the recording head stage, mice were connected to a custom head stage with equivalent weight while in the home cage for 10 min a day for five consecutive days. The behavioral testing paradigm consisted of a 3 min baseline followed by a 5 min social interaction period. Animals underwent this recording paradigm for both mother and novel mother trials. Vehicle or 5 mg/kg CNO was administered via IP injection 30 min before testing. In an additional experiment, Nestin-cre and Nestin-cre:Gi mice with CA2 electrodes were recorded during a 1 min baseline followed by a 2 min nonsocial object exposure trial. The nonsocial stimulus was a plastic toy animal of similar size to the mouse. Both baseline and nonsocial stimulus trials took place in an apparatus identical to that of the social stimulus experiments. The nonsocial stimulus trials were conducted after the conclusion of all social testing at the 4–6-week-old abGC time point. LFPs were recorded continuously throughout baseline and stimulus trials. The data were transmitted to a wireless receiver (Triangle Biosystems) and recorded using NeuroWare software (Triangle Biosystems).
 
-## Sharp wave ripple analysis
+### Sharp wave ripple analysis
 
 All recordings were processed using Neuroexplorer software (Nex Technologies) and custom Python scripts (Laham and Zahn, 2023). For SWR analyses, continuous LFP data were notched at 60 Hz and band-pass filtered between 140 and 220 Hz. Signal underwent Hilbert transform before being z-scored. Using a custom Python script, SWRs were considered as events exceeding three standard deviations for a minimum of 15 ms. SWRs occurring within 15 ms of one another were merged into a single SWR event. SWR frequency, peak amplitude, integral, duration, and raw number were normalized to the respective baseline trial. SWR integral, which provides information about the average total power of SWR events and has been shown to influence SWR propagation (De Filippo and Schmitz, 2023) was calculated by summing z-scored amplitude values from beginning to the end of each SWR envelope, and then averaging these values across all summed envelopes. SWR measures were determined for baseline, novel mother, and mother trials for the entirety of each testing period.
 
-## Phase-amplitude coupling analysis
+### Phase-amplitude coupling analysis
 
 Theta (4–12 Hz), low-gamma (25–50 Hz), and mid-gamma (50–100 Hz) oscillations were extracted from the raw LFP signal obtained during the entire baseline, novel mother exposure, and mother exposure recordings using a custom Python script. Theta and mid-gamma recordings underwent a Hilbert transform, and theta phase and mid-gamma analytic signal were stored. PAC was quantified using a Modulation Index (Tort et al., 2010).
 
-## Histology
+### Histology
 
 Mice were deeply anesthetized with Euthasol (Virbac) and were transcardially perfused with cold 4% paraformaldehyde (PFA). Extracted brains were postfixed for 48 hr in 4% PFA at 4°C followed by an additional 48 hr in 30% sucrose at 4°C for cryoprotection before being frozen in cryostat embedding medium at –80°C. Hippocampal coronal sections (40 μm) were collected using a cryostat (Leica). Sections were blocked for 1.5 hr at room temperature in a PBS solution that contained 0.3% Triton X-100 and 3% normal donkey serum. Sections were then incubated overnight while shaking at 4°C in the blocking solution that contained combinations of the following primary antibodies: mouse anti-3-repeat-tau protein (3R-Tau, 1:500, Millipore, Cat# 05–803), rabbit anti-Purkinje cell protein 4 (PCP4, 1:500, Sigma-Aldrich, Cat# HPA005792), rabbit anti-zinc transporter 3 (ZnT3, 1:500, Alomone labs, Cat# AZT-013). For 3R-Tau immunohistochemistry, sections were subjected to an antigen retrieval protocol that involved incubation in sodium citrate and citric acid buffer for 30 min at 80°C prior to blocking solution incubation. Washed sections were then incubated for 1.5 hr at room temperature in secondary antibody solutions that contained combinations of the following secondaries: donkey anti-rat Alexa Fluor 568 (1:500, Abcam), donkey anti-mouse Alexa Fluor 568 or 647 (1:500, Invitrogen), or donkey anti-rabbit Alexa Fluor 488 (1:500, Invitrogen).
 
 Washed sections were then counterstained with Hoechst 33342 for 10 min (1:5000 in PBS, Molecular Probes), mounted onto slides, and coverslipped with Vectashield (Vector labs). Slides were coded until the completion of the data analysis. Sections through the dorsal hippocampus from cannula and electrophysiology studies were stained for Hoechst 33342 to verify accurate cannula and electrode placement.
 
-## Optical intensity measurements
+### Optical intensity measurements
 
 Z-stack images of the CA2 and corpus callosum were taken using a 40 x objective with a 0.5 μm step size through the entire 40 μm stack on a Leica SP8 confocal with LAS X software (version 35.6). The CA2 was defined by PCP4 labeling. Collected z-stack images were analyzed for optical intensity in Fiji (NIH).
 
@@ -111,10 +248,10 @@ For high magnification (40 X objective with 3 X zoom) intensity analyses of 3R-T
 
 For overall intensity values of 3R-Tau to assess abGC innervation of CA2, the ROI included the pyramidal cell layer and stratum lucidum. The mean gray value of the ROI was calculated for each z-slice and the maximum mean gray value for each z-stack was taken from three sections per brain. The maximum of the CA2 ROI was divided by the maximum of the corpus callosum ROI for each section. Averages were obtained for each brain and statistical comparisons were made between lower magnification 3R-Tau intensity across different GFAP-TK groups.
 
-## Cell density and percentage measurements
+### Cell density and percentage measurements
 
 3R-Tau + cell bodies were counted in the dorsal dentate gyrus of the hippocampus on four neuroanatomically matched sections using an Olympus BX-60 microscope with a 100 x oil objective. The area measurements were collected using Stereo Investigator software (MBF). The density of 3R-Tau+ cells was determined by dividing the total number of positively labeled cells by the volume of the subregion (ROI area multiplied by 40 μm section thickness).
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses are presented in the figure legends. For histological analyses, datasets were analyzed using an unpaired two-tailed Student’s t-test or Mann-Whitney U tests. For behavioral analyses involving two group comparisons, data sets were analyzed using either unpaired two-tailed Student’s t-tests or a repeated measures two-way ANOVA, as appropriate. For behavioral analyses involving virus manipulations, data sets were analyzed using either a two-way ANOVA, a mixed-effects model, or a repeated measures three-way ANOVA with Šídák or Tukey post hoc tests. Because electrophysiological measurements were taken from multiple electrodes within each mouse, these data were analyzed with linear mixed-effects ANOVAs using the lme4 package (Bates et al., 2015). The level of the measurement was explained by drug, virus, genotype, the two-way interaction, the three-way interaction, and a random effect of mouse. Tukey post hoc comparisons were used to follow up any significant main effects or interactions using the emmeans package (Lenth, 2022). All data sets are expressed as the mean ± SEM on the graphs and statistical significance was set at p<0.05 with 95% confidence. GraphPad Prism 9.2.0 (GraphPad Software), Excel (Microsoft), or R studio were used for statistical analyses. All graphs were prepared using GraphPad Prism 9.2.0 (GraphPad Software).

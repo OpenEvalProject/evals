@@ -6,8 +6,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02feahw73 Centre national de la recherche scientifique (CNRS) Paris France
-2. https://ror.org/03wkt5x30 Muséum national d'Histoire naturelle Paris France
+1. Centre national de la recherche scientifique (CNRS) Paris France ([ROR:02feahw73](https://ror.org/02feahw73))
+2. Muséum national d'Histoire naturelle Paris France ([ROR:03wkt5x30](https://ror.org/03wkt5x30))
 
 † Corresponding author
 

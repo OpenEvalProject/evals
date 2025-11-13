@@ -11,14 +11,14 @@
 
 ### Affiliations
 
-1. https://ror.org/02v51f717 Department of Immunology, School of Basic Medical Sciences, NHC Key Laboratory of Medical Immunology, Medicine Innovation Center for Fundamental Research on Major Immunology-related Diseases, Peking University Beijing China
-2. https://ror.org/02yd1yr68 Institute of Life Sciences, Jinzhou Medical University Jinzhou China
+1. Department of Immunology, School of Basic Medical Sciences, NHC Key Laboratory of Medical Immunology, Medicine Innovation Center for Fundamental Research on Major Immunology-related Diseases, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
+2. Institute of Life Sciences, Jinzhou Medical University Jinzhou China ([ROR:02yd1yr68](https://ror.org/02yd1yr68))
 
 † Corresponding author
 
 ## Abstract
 
-The newly generated CD4 single-positive (SP) T lymphocytes are featured by enhanced IL-4 but repressed IFN-γ production. The mechanisms underlying this functional bias remain elusive. Previous studies have reported that CD4 + T cells from mice harboring dendritic cell (DC)-specific deletion of IL-27p28 display an increased capacity of IFN-γ production upon TCR stimulation. Here, we demonstrated that similarly altered functionality occurred in CD4SP thymocytes, recent thymic emigrants (RTEs), as well as naive T cells from either Cd11c-p28 mice or mice deficient in the α subunit of IL-27 receptor. Therefore, DC-derived IL-27p28-triggered, IL-27Rα-mediated signal is critically involved in the establishment of functional bias against IFN-γ production during their development in the thymus. Epigenetic analyses indicated reduced DNA methylation of the f/f Ifng locus and increased trimethylation of H3K4 at both Ifng and Tbx21 loci in CD4SP thymocytes from Cd11c-p28 mice. Transcriptome profiling demonstrated that f/f Il27p28 ablation resulted in the coordinated up-regulation of STAT1-activated genes. Concurrently, STAT1 was found to be constitutively activated. Moreover, we observed increased accumulation of STAT1 at the Ifng and Tbx21 loci and a strong correlation between STAT1 binding and H3K4me3 modification of these loci. Of note, Il27p28 deficiency exacerbated the autoimmune phenotype of Aire mice. Collectively, this study reveals a novel mechanism underlying the functional bias of newly generated CD4 -/- + T cells and the potential relevance of such a bias in autoimmunity.
+The newly generated CD4 single-positive (SP) T lymphocytes are featured by enhanced IL-4 but repressed IFN-γ production. The mechanisms underlying this functional bias remain elusive. Previous studies have reported that CD4+ T cells from mice harboring dendritic cell (DC)-specific deletion of IL-27p28 display an increased capacity of IFN-γ production upon TCR stimulation. Here, we demonstrated that similarly altered functionality occurred in CD4SP thymocytes, recent thymic emigrants (RTEs), as well as naive T cells from either Cd11c-p28f/f mice or mice deficient in the α subunit of IL-27 receptor. Therefore, DC-derived IL-27p28-triggered, IL-27Rα-mediated signal is critically involved in the establishment of functional bias against IFN-γ production during their development in the thymus. Epigenetic analyses indicated reduced DNA methylation of the Ifng locus and increased trimethylation of H3K4 at both Ifng and Tbx21 loci in CD4SP thymocytes from Cd11c-p28f/f mice. Transcriptome profiling demonstrated that Il27p28 ablation resulted in the coordinated up-regulation of STAT1-activated genes. Concurrently, STAT1 was found to be constitutively activated. Moreover, we observed increased accumulation of STAT1 at the Ifng and Tbx21 loci and a strong correlation between STAT1 binding and H3K4me3 modification of these loci. Of note, Il27p28 deficiency exacerbated the autoimmune phenotype of Aire-/- mice. Collectively, this study reveals a novel mechanism underlying the functional bias of newly generated CD4+ T cells and the potential relevance of such a bias in autoimmunity.
 
 ## Introduction
 
@@ -32,51 +32,83 @@ In this paper, we have demonstrated that DC-derived IL-27p28 plays a crucial rol
 
 ## Results
 
-## DC-specific deletion of IL-27p28 endows the newly generated CD4+ T cells with inherently enhanced capacity of IFN-γ production
+### DC-specific deletion of IL-27p28 endows the newly generated CD4+ T cells with inherently enhanced capacity of IFN-γ production
 
 Although IL-27 is widely reported to promote peripheral Th1 differentiation in vitro, CD4+ T cells from Cd11c-p28f/f mice exhibit enhanced IFN-γ production, a capacity seemingly acquired in their development in the thymus (Zhang et al., 2013). To investigate the possibility that thymic DC-derived IL-27 shapes the functionality of newly generated CD4+ T cells, CD4SP thymocytes, CD4+ RTEs, and CD4+ naive T cells were purified from Cd11c-p28f/f (cKO) mice and their wild-type (WT) littermates harboring a Rag2-GFP transgene, which allows easy tracking of newly generated thymocytes and RTEs (Ashby and Hogquist, 2024). The purified cells were then compared for cytokine expression in response to anti-CD3 and anti-CD28 stimulation under non-polarizing conditions. As expected, CD4+ naive T cells from cKO mice exhibited a significantly higher level of Ifng mRNA expression compared to WT cells (Figure 1A). Intracellular staining (Figure 1B) and ELISA assay of the culture supernatant (Figure 1C) confirmed enhanced IFN-γ production at the protein level. Notably, this difference was already detectable at the SP thymocyte stage, indicating that it was developmentally regulated. Another prominent feature of CD4SP thymocytes is the hyperproduction of Th2 cytokines (Fink and Hendricks, 2011; Makar et al., 2003). Despite the profound impact of IL-27p28 deficiency on IFN-γ production, we observed no significant difference in IL-4 expression between cKO and WT T cells (Figure 1A and C). Moreover, there was no significant difference in the expression of IL-2 and TNF-α between cKO and WT T cells (Figure 1A, Figure 1—figure supplement 1). These results suggest that DC-specific deletion of IL-27p28 specifically enhances IFN-γ production in newly generated T cells without affecting Th2 cytokines.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/96868/elife-96868-fig1-v1.jpg)
+
+**Figure 1.:** (A) CD4SP (GFP+CD4+CD8-CD44lo) thymocytes, CD4+ RTEs (GFP+CD4+CD8-CD25-CD44lo) and CD4+ naive (GFP-CD4+CD8-CD25-CD44lo) T cells were sorted from 6- to 8-week-old Cd11c-p28f/f mice and WT littermates, stimulated with plate coated anti-CD3 (2 µg/mL) and soluble anti-CD28 (1 µg/mL) for 12 hr. mRNA levels of Ifng, Il4, and Il2 were determined by qPCR. Data: mean ± SD (n=4, duplicates). (B) Sorted cells were cultured under Th0 conditions for 3 days. The frequency of IFN-γ-producing CD4+ T cells were measured by intracellular staining. Representative dot plots (left) and statistical data (right, mean ± SD, n=3). (C) Supernatants from 3-day cultures were analyzed for IFN-γ and IL-4 by ELISA. Data: mean ± SD (n=3). (D) mRNA levels of Tbx21 and Gata3 in sorted cells were determined by qPCR. Data: mean ± SD (n=4, duplicates). (E–F) T-bet protein levels were assessed by western blot (E) and flow cytometry (F) after 3-day culture. Data: mean ± SD (n=3). (G) Freshly sorted cells were lysed in Trizol, and Ifng and Tbx21 mRNA levels were determined by qPCR. Data: mean ± SD (n=4, duplicates). Statistical differences: * p<0.05, ** p<0.01, *** p<0.001 (Student’s t-test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96868/elife-96868-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** CD4SP thymocytes, CD4+ RTEs and naive CD4+ T cells from Cd11c-p28f/f and WT mice were sorted, cultured under Th0 conditions for 3 days, and analyzed by intracellular staining. Representative dot plots (left) and statistical data (mean ± SD, right; n=3) were shown. No significant differences were observed (Student’s t-test).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96868/elife-96868-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Sorted CD4SP thymocytes, CD4+ RTEs, and CD4+ naive T cells from Cd11c-p28f/f and WT mice were cultured under Th1 (A–B), Th2 (C–D), Th17 (E) and Treg (F) conditions for 3 days. (A) Frequency of IFN-γ+ cells measured by intracellular staining. Representative dot plots (left) and statistical data (mean ± SD, right; n=4). (B) IFN-γ concentration in the supernatants from Th1 cultures measured by ELISA (mean ± SD, n=3). (C) Frequency of IL-4+ cells measured by intracellular staining. Representative dot plots (left) and statistical data (mean ± SD, right; n=2). (D) IL-4 concentration in supernatants from Th2 cultures measured by ELISA (mean ± SD, right; n=2). (E–F) Frequency of IL-17A+ (E) or Foxp3+ (F) cells were measured by intracellular staining. Representative dot plots (left) and statistical data (mean ± SD, right; n=3). (G) CD8+ naive T cells were cultured under Th0 conditions for 3 days. The frequency of IFN-γ-, and granzyme B-producing CD8+ T cells were determined analyzed by intracellular staining. Representative dot plots (left) and quantification (right, mean ± SD, n=6). (H) Frequency of IFN-γ+ cells in CD4SP thymocytes and CD4+ naive T cells from Il27ra-/- and WT mice cultured under Th1 conditions. Representative dot plots (top) and statistical data (mean ± SD, bottom; n=3). No significant differences were observed (Student’s t test).
+
 Next, we investigated the expression of T-box transcription factor (T-bet) and GATA3, which are the master regulators of Th1 and Th2 differentiation, respectively (Fang et al., 2022). The differential impact of IL-27p28 deficiency on IFN-γ and IL-4 production was accompanied by an increase in Tbx21 expression but no significant alteration in Gata3 expression (Figure 1D). Western blotting and flow cytometry confirmed the upregulation of T-bet protein expression (Figure 1E and F). Furthermore, we extended our analyses onto CD4+ T cells at steady state or under polarizing conditions. Higher basal levels of Ifng and Tbx21 transcripts were detected in CD4SP thymocytes and naive T cells from cKO mice than the counterparts from WT mice even without stimulation (Figure 1G), indicating the constitutive activation of these loci. When cultured under polarizing conditions, these cells were effectively induced to differentiate into Th1, Th2, Th17 and Treg lineages. In contrast to the previous report of different differentiation potentials of RTEs versus naive T cells (Hendricks and Fink, 2011), CD4SP thymocytes, RTEs and naive T cells showed similar capacity to differentiate into effector cells. Moreover, cKO and WT cells were equally positioned for the differentiation (Figure 1—figure supplement 2A–F), suggesting that IL-27p28 deficiency does not affect effector cell differentiation under optimal conditions. Moreover, the frequency of IFN-γ-, and granzyme B-producing CD8+ T cells under Th0 conditions was comparable between cKO and WT T cells (Figure 1—figure supplement 2G). Taken together, these data support that IL-27p28 is actively involved in the functional maturation of developing CD4SP thymocytes, biasing them away from the Th1 lineage.
 
-## Il27ra-deficient CD4+ T cells are similarly predisposed for potent IFN-γ production
+### Il27ra-deficient CD4+ T cells are similarly predisposed for potent IFN-γ production
 
 Apart from acting as a subunit of IL-27, IL-27p28 have been reported to possess activities independent of IL-27, by acting on its own or coupling with other proteins, such as IL-Y (p28/p40, binding to IL-27Rα/IL-12Rβ1 to activate STAT3; Flores et al., 2015) and CLY (p28/CLF, binding to gp130/IL-6Rα to activate STAT1 and STAT3; Tormo et al., 2013). To ascertain whether the phenotype in the Cd11c-p28f/f mice results from defective IL-27Rα signaling, we investigated the functional characters of T lineage cells in mice deficient in Il27ra. Reminiscent to what was observed in Il27p28-deficient mice, increased expression of Ifng and Tbx21 were detected in Il27ra-/- CD4SP thymocytes and naive CD4+ T cells, whereas Il4, Il2, and Gata3 transcripts were equally present in WT and Il27ra-/- cells (Figure 2A). Intracellular staining confirmed the enhanced IFN-γ production by Il27ra-deficient cells stimulated under non-polarizing conditions (Figure 2B). IFN-γ production by Il27ra-/- and WT cells, however, was comparable under Th1 polarizing conditions (Figure 1—figure supplement 2H). The similar phenotype shared by Il27p28 and Il27ra knockout mice indicates that the altered T cell functionality in the absence of IL-27p28 is indeed a reflection of disrupted IL-27Rα signaling.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96868/elife-96868-fig2-v1.jpg)
 
-**Figure 2.:** Il27ra-/- mice initiated at the CD4SP thymocytes stage.(A) CD4SP thymocytes and naive CD4+ T cells were isolated from Il27ra-/- and WT mice, stimulated with plate-coated anti-CD3 (2 µg/mL) and soluble anti-CD28 (1 µg/mL) for 12 hours. mRNA levels of Ifng, Il4, Il2, Tbx21, and Gata3 were determined by qPCR. Data: mean ± SD (n=3, duplicates). (B) CD4SP thymocytes and CD4+ naive T cells were cultured under Th0 conditions for 3 days. The frequency of IFN-γ-producing CD4+ T cells were analyzed by intracellular staining. Representative dot plots (left) and quantification (right, mean ± SD, n=3). Significance: * p<0.05, ** p<0.01 (Student’s t-test).
+**Figure 2.:** (A) CD4SP thymocytes and naive CD4+ T cells were isolated from Il27ra-/- and WT mice, stimulated with plate-coated anti-CD3 (2 µg/mL) and soluble anti-CD28 (1 µg/mL) for 12 hours. mRNA levels of Ifng, Il4, Il2, Tbx21, and Gata3 were determined by qPCR. Data: mean ± SD (n=3, duplicates). (B) CD4SP thymocytes and CD4+ naive T cells were cultured under Th0 conditions for 3 days. The frequency of IFN-γ-producing CD4+ T cells were analyzed by intracellular staining. Representative dot plots (left) and quantification (right, mean ± SD, n=3). Significance: * p<0.05, ** p<0.01 (Student’s t-test).
 
-## IL-27p28 deficiency induces permissive epigenetic changes at Ifng and Tbx21 loci
+### IL-27p28 deficiency induces permissive epigenetic changes at Ifng and Tbx21 loci
 
 Developmentally regulated transcriptional activation and repression of genes or cell-type specific expression patterns are largely achieved by modifying the chromatin template at a gene locus (Ivashkiv, 2018). Murine neonatal CD4+ T cells have been documented to be poised to rapid Th2 cytokine secretion due to the pre-existing hypomethylation at a key Th2 cytokine regulatory region (Rose et al., 2007). In other reports, Th2 polarization in adult SP thymocytes and RTEs is attributable to active recruitment of DNA methyltransferases and increased H3K4 methylation at Il4 locus (Berkley et al., 2013; Makar et al., 2003). In addition, DNA methylation and histone modification are found to be important for the control of Ifng and Tbx21 expression (Fang et al., 2022; Friedman et al., 2023; Jones and Chen, 2006). Therefore, we next evaluated the contribution of epigenetic modifications to the enhanced IFN-γ production in the absence of IL-27p28. Firstly, we performed bisulfite genomic sequencing on DNA of CD4 SP thymocytes from Cd11c-cre p28f/f mice and WT littermates. We focused on the nine CpG sites (Figure 3A) most proximal to the Ifng transcription start site, among which the –53 CpG has previously been suggested to play a key role in IFN-γ repression in Th2 effector cells (Jones and Chen, 2006). DNA methylation was significantly reduced at three CpG sites (−53,–34 and +16 site) of the Ifng locus in CD4SP thymocytes from Cd11c-cre p28f/f mice (Figure 3B). On the contrary, the five CpG sites in the Il4 promoter region (Figure 3C and D), whose demethylation was associated with high level IL-4 production (Lee et al., 2002), showed no difference between cKO and WT CD4SP thymocytes.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/96868/elife-96868-fig3-v1.jpg)
+
+**Figure 3.:** (A) DNA methylation analysis of nine CpG sites in the Ifng promoter using sodium bisulfite-treated genomic DNA from GFP+CD4+CD8-CD44lo CD4SP thymocytes. Each row represents a sequenced allele (n=10 clones from one of the three independent experiments). Filled (●) and open (○) circles denote methylated and unmethylated cytosine, respectively. (B) Left: Percent methylation at individual CpG sites from one representative experiment. Right: Average methylation of three adjacent site groups (group1: −205,–190, –170; group2: −53,–45, –34; group3:+16,+96,+120) and all CpG sites (mean ± SD, n=3). (C) DNA methylation analysis of five CpG sites upstream of the Il4 transcription start site using sodium bisulfite-treated genomic DNA from GFP+CD4+CD8-CD44lo CD4SP thymocytes. Each row represents a sequenced allele (n=10 clones from the two independent experiments). Filled (●) and open (○) circles denote methylated and unmethylated cytosine, respectively. (D) Left: graphs show the percentage of methylation at each individual site (left panel) or all CpG sites (right panel). (E–G) Histone trimethylation analysis in freshly isolated CD4SP thymocytes from IL27p28-deficient and WT mice. ChIP-qPCR was performed using antibodies against H3K4me3 (E), H3K27me3 (F), and H3K9me3 (G). qPCR primers targeted promoter and trans-regulatory regions of Ifng, Tbx21, Il4, and Gata3. Data: mean ± SEM (n=3, duplicates). Significance: * p<0.05; ** p<0.01 (Student’s t-test). Abbreviation: pro., promoter.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96868/elife-96868-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Global H3K4me3, H3K27me3, and H3K9me3 levels in CD4+ naive T cells detected by western blotting. H3 served as an internal control. Results are representative of three independent experiments. (B) WT CD4SP thymocytes were sorted, stimulated with IL-27 (2 ng/mL) for 12 hr, and analyzed for mRNA levels of histone methyltransferases, demethylases, and DNA methyltransferases by qPCR. Data, shown as fold change over untreated cells (mean ± SEM; n=3–5), revealed no significant differences. (C) Relative FPKM of epigenetic related enzymes in CD4SP thymocytes from RNA-seq data (Figure 4), shown as FPKMCd11c-p28f/f/FPKMWT. No significant changes were observed.
+
 As much as histone modifications are concerned, histone H3 lysine 27 trimethylation (H3K27me3) and H3 lysine 9 trimethylation (H3K9me3) are typically associated with repressed Ifng and Tbx21 expression in Th cells, whereas histone H3 lysine 4 trimethylation (H3K4me3) enhances gene expression (Fang et al., 2022; Friedman et al., 2023). To evaluate the histone trimethylation modifications at Ifng, Tbx21, Il4, and Gata3 loci in CD4SP thymocytes from WT and Cd11c-p28f/f mice, chromatin immunoprecipitation was performed using antibodies against H3K4me3, H3K9me3 and H3K27me3. H3K4me3 was found to be accumulated at Ifng and Tbx21 loci in cKO CD4SP thymocytes, while its level in Gata3 and Il4 loci was comparable to that of wild type cells (Figure 3E). On the other hand, neither the occupancy of H3K9me3 and H3K27me3 at Ifng, Tbx21, Il4, and Gata3 loci was altered (Figure 3F and G), nor were the total protein levels of H3K4me3, H3K9me3 H3K27me3 or the mRNA level of enzymes catalyzing the formation of these modifications (Figure 3—figure supplement 1A–C). These results suggest a link between up-regulated Ifng and Tbx21 expression and altered epigenetic modifications in the absence of IL-27p28.
 
-## Coordinated up-regulation of STAT1-activated genes in CD4SP thymocytes from Cd11c-p28f/fmice
+### Coordinated up-regulation of STAT1-activated genes in CD4SP thymocytes from Cd11c-p28f/fmice
 
 To better understand the molecular mechanisms underlying the altered functionality, the transcriptional profile of CD4SP thymocytes from Cd11c-p28f/f mice was explored by RNA-Seq and compared with that of the WT counterparts. The two sets of differentially expressed genes (DEGs) were subjected to analyze for gene ontology (GO) biological process terms and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways. The up-regulated DEGs showed significant enrichment in genes related to host defense to viral infection, including interferon response and Jak-STAT signaling (Figure 4A). No meaningful hit, on the other hand, was revealed for the down-regulated gene set (data not shown).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/96868/elife-96868-fig4-v1.jpg)
 
-**Figure 4.:** Cd11c-p28 mice.f/fRNA-seq was performed to analyze the transcriptome of CD4SP thymocytes from Cd11c-p28and WT mice. (f/fA) Top 10 enriched Gene Ontology (GO) biological process and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways for up-regulated differentially expressed genes (DEGs) in Cd11c-p28 mice. (f/fB) Overlap between DEGs in Cd11c-p28 mice and STAT1-activated and suppressed genes. Numbers indicate overlapping genes in each category. (f/fC) Validation of RNA-Seq results by qPCR for representative up-regulated genes. Data: fold change in Cd11c-p28 versus WT mice (mean ± SEM, n=3, duplicates). (f/fD) Gene Set Enrichment Analysis (GSEA) showing coordinated upregulation of STAT1-activated genes in Cd11c-p28 CD4SP thymocytes. (f/fE) Protein-protein interaction network of DEGs. Nodes represent proteins; edges indicate interactions. Larger nodes denote higher interaction degrees. Red: up-regulated; green: down-regulated; gray: non-DEGs connected to the network (added by Network Analyst).
+**Figure 4.:** RNA-seq was performed to analyze the transcriptome of CD4SP thymocytes from Cd11c-p28f/fand WT mice. (A) Top 10 enriched Gene Ontology (GO) biological process and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways for up-regulated differentially expressed genes (DEGs) in Cd11c-p28f/f mice. (B) Overlap between DEGs in Cd11c-p28f/f mice and STAT1-activated and suppressed genes. Numbers indicate overlapping genes in each category. (C) Validation of RNA-Seq results by qPCR for representative up-regulated genes. Data: fold change in Cd11c-p28f/f versus WT mice (mean ± SEM, n=3, duplicates). (D) Gene Set Enrichment Analysis (GSEA) showing coordinated upregulation of STAT1-activated genes in Cd11c-p28f/f CD4SP thymocytes. (E) Protein-protein interaction network of DEGs. Nodes represent proteins; edges indicate interactions. Larger nodes denote higher interaction degrees. Red: up-regulated; green: down-regulated; gray: non-DEGs connected to the network (added by Network Analyst).
 
 Given that STAT1 is a key mediator downstream of IL-27 signaling (Philips et al., 2022), we were particularly interested in the altered expression of STAT1-regulated genes in the absence of IL-27p28. A previous study by Hirahara et al., 2015 has compared the transcriptomes of wild-type and STAT1-deficient CD4+ T cells stimulated by IL-27. Using their data (GSE65621), we compiled a list of genes potentially under regulation of STAT1. The DEGs were then examined for overlaps with this gene set. Surprisingly, over 50% of up-regulated DEGs (69 out of 137) fell into the category of STAT1-activated genes, whereas none of them belonged to STAT1-suppressed genes (Figure 4B). To validate the RNA-Seq data, qPCR was carried out for a group of overlapping genes, including Gm12250, Oasl2, Oas3, Parp14, Ifit3, Usp18, Igtp, Irf1, Ifi44, Oas2, Rsad2, Il12r. As shown in Figure 4C, all these genes showed differential expression between WT and cKO CD4SP thymocytes. To further illustrate modest but coordinate changes in the expression of STAT1-regulated genes, gene set enrichment analysis (GSEA) was performed without imposing an arbitrary fold-change cutoff. Indeed, significant enrichment of STAT1-activated genes was detected in the transcriptome of CD4SP thymocytes from the knockout mice (NES = 1.67, NOM p-val=10–16, Figure 4D). Therefore, IL-27p28 deficiency resulted in an enhanced STAT1 activity.
 
 To reveal functionally important connections of the DEGs, protein-protein interaction network was generated using Network Analyst (Xia et al., 2015). After removal of isolated and loosely connected nodes, the rest of the proteins encoded by the DEGs were imported into Network Analyst for network construction. As shown in Figure 4E, STAT1 was centrally positioned in the network with the highest degree of interactions. Taken together, these results indicate that IL-27p28 deficiency is strongly associated with an altered transcriptional program featured by enhanced expression of STAT1-activated genes.
 
-## Constitutive activation of STAT1 in CD4SP thymocytes in the absence of IL-27p28
+### Constitutive activation of STAT1 in CD4SP thymocytes in the absence of IL-27p28
 
 The distinct transcriptional signature prompted us to examine the activation status of STAT1 in freshly isolated CD4SP thymocytes from Cd11c-p28f/f mice and the WT littermates. Total thymocytes were stained for CD4 and CD8, followed by intracellular staining with antibodies against phosphorylated STATs. Significant levels of STAT1 Y701 phosphorylation were observed in cKO but not in WT cells. On the other hand, both cKO and WT cells were stained negative for phosphorylated STAT3 and STAT4 (Figure 5A). Phosphorylated and total STAT proteins were also analyzed by western blotting in purified CD4SP thymocytes, RTEs and naive CD4+ T cells. While the total protein of STAT1 was comparable between cKO and WT cells in all populations examined, elevated levels of phosphorylated STAT1 Y701 were constantly detected in cKO cells. Moreover, the phosphorylation of STAT1 Y701 appeared to be developmentally regulated, increasing progressively from CD4SP thymocytes to naive T cells (Figure 5B). Another predominant phosphorylation site in STAT1 is serine 727, which is crucial for maximal STAT1 transcription activity (Barnholt et al., 2009). Basal levels of S727 phosphorylation were also observed in CD4SP thymocytes, but with no difference in WT and cKO cells (data not shown). As much as STAT3 and STAT4 were concerned, neither total nor phosphorylated STAT3 and STAT4 were found to be altered with IL-27p28 ablation (Figure 5B), indicating that the impact was specific for STAT1.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/96868/elife-96868-fig5-v1.jpg)
+
+**Figure 5.:** (A) Intracellular staining of freshly isolated thymocytes from Cd11c-p28f/f and WT mice using antibodies against phosphorylated STAT1 (Y701), STAT3 (Y705), and STAT4 (Y693). Representative histograms for CD4SP thymocytes (left) and mean fluorescence intensity (MFI) from three independent experiments (right, mean ± SD). (B) Western blot analysis of total and phosphorylated STAT1 (Y701), STAT3 (Y705), and STAT4 (Y693) in purified CD4SP thymocytes, CD4+ RTEs, and naive CD4+ T cells from Cd11c-p28f/f and WT mice. Representative blots (left) and relative protein levels quantified by densitometry and normalization to β-actin (right, mean ± SD, n=3). (C) Increased STAT1 binding to promoter and regulatory regions of Tbx21 and Ifng loci in Cd11c-p28f/f mice. (D) Correlation between STAT1 binding and H3K4me3 levels at Tbx21 and Ifng loci. Significance: * p<0.05; ** p<0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96868/elife-96868-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** CD4SP thymocytes and naive CD4+ T cells were freshly isolated from WT and Cd11c-p28f/f mice, and SOCS3 expression was assessed by western blotting. β-actin served as an internal control. Data are representative of three independent experiments.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/96868/elife-96868-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) The CD4SP thymocytes and naive CD4+ T cells from Cd11c-p28f/f and WT mice were stimulated with plate-bound anti-CD3 (2 μg/mL) and soluble anti-CD28 (1 μg/mL) without or with anti-IFN-γ (10 μg/mL) for 12 hr. Ifng and Tbx21 mRNA levels were determined by qPCR. Data (mean ± SEM) are representative of three independent experiments. *, p<0.05 and **, p<0.01 (Student’s t-test). (B) The CD4SP thymocytes and CD4+ naive T cells from Cd11c-p28f/f and WT mice were cultured without or with anti-IFN-γ (10 μg/mL) for 2 hr. STAT1 phosphorylation (pY701) was examined by western blotting. Data are representative of three independent experiments.
+
 STAT1 plays an important role in the development of Th1 response by regulating Tbx21 and Ifng expression (Fang et al., 2022). To explore the correlation of the increased STAT1 activation with the enhanced T-bet expression and IFN-γ production, we assessed STAT1 binding on the Tbx21 and Ifng loci by ChIP assay. Possibly due to the relatively low abundance of activated STAT1, poor consistency was observed from one experiment to another with freshly isolated CD4SP thymocytes. Therefore, we chose to treat the cells with anti-CD3 and anti-CD28 for 3 days prior to the assay. Under such conditions, STAT1 was found to be markedly accumulated in the promoter and regulatory regions of both Tbx21 and Ifng loci of cKO mice (Figure 5C). Notably, there were strong positive correlations between the levels of STAT1 binding and H3K4me3 (Pearson’s correlation coefficient for Ifng locus r=0.917, p=0.010 and Tbx21 locus r=0.991, p<0.001, Figure 5D), indicating the implication of STAT1 in the epigenetic modifications of the loci. Together, these data suggest that IL-27p28-medaited signal normally imposes an inhibitory effect on STAT1 activation, which in turn helps the establishment of functional bias against the Th1 lineage.
 
-## Augmented autoimmune phenotype of Aire-deficient mice in the absence of IL-27p28
+### Augmented autoimmune phenotype of Aire-deficient mice in the absence of IL-27p28
 
 The physiological significance remains elusive of the bias against the Th1 effector functions for CD4SP thymocytes and RTEs. One hypothesis proposes that it favors the development of peripheral tolerance by avoiding a more inflammatory and potential detrimental response to self-antigens (Cunningham et al., 2018; Fink and Hendricks, 2011; Hendricks and Fink, 2011). The disruption of such a bias in Cd11c-p28f/f mice provided a good model to test this hypothesis. Flow cytometric analysis of the peripheral T cell compartment demonstrated a significant increase of CD44hiCD62L- activated T cells with a concomitant decrease of CD44loCD62L+ naive T cells in the cKO mice compared to the WT littermates (Figure 6A). Nevertheless, the cKO mice displayed no obvious signs of autoimmunity up to the age of 24–30 weeks when assessed by auto-antibodies against double-strand DNA (Figure 6B) and tissue pathology (Figure 6C). Occasionally, small lymphoid foci were observed in the lung of cKO mice. But the CD4+ T cells recovered from the lung tissues displayed a similar cytokine secretion profile to that of WT mice except for the intrinsic augmentation of IFN-γ production (Figure 6D). Therefore, IL-27p28 deficiency alone is insufficient to drive the development of autoimmunity.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/96868/elife-96868-fig6-v1.jpg)
 
-**Figure 6.:** Aire-/- mice in the absence of IL27p28.(A) CD44 and CD62L expression in CD4+ T cells from splenocytes of 6–8 week-old WT (n=6) and Cd11c-p28 (n=6) mice. Representative dot plots (left) and percentages of CD44f/floCD62L+ naive and CD44hiCD62L- activated T cells are shown (right, mean ± SD). (B–D) WT, Cd11c-p28, f/fAire-/-, and Cd11c-p28f/fAire-/- mice (24–30 weeks old) were analyzed. Each symbol represents one mouse (mean ± SD). (B) Serum anti-dsDNA antibody levels (ELISA). (C) H&E staining (left) and histological scores (right) of the lung and stomach. Arrows mark lymphocytic infiltrates. Scale bar = 100 μm. (D) Percentages of IFN-γ+, IL-4+, and IL-17A+ CD4+ T cells in lung tissue after PMA/ionomycin stimulation. (E) Splenocytes from 12-week-old mice were stained for CD44, Foxp3, CD73, and FR4. Percentages of anergic (CD4+Foxp3−CD44hiCD73hiFR4hi), effector/memory (CD4+Foxp3−CD44hiCD73loFR4lo), and regulatory (CD4+Foxp3+) T cells are shown. (F) Schematic summary of the study. * p<0.05; ** p<0.01; ns, not significant.
+**Figure 6.:** (A) CD44 and CD62L expression in CD4+ T cells from splenocytes of 6–8 week-old WT (n=6) and Cd11c-p28f/f (n=6) mice. Representative dot plots (left) and percentages of CD44loCD62L+ naive and CD44hiCD62L- activated T cells are shown (right, mean ± SD). (B–D) WT, Cd11c-p28f/f, Aire-/-, and Cd11c-p28f/fAire-/- mice (24–30 weeks old) were analyzed. Each symbol represents one mouse (mean ± SD). (B) Serum anti-dsDNA antibody levels (ELISA). (C) H&E staining (left) and histological scores (right) of the lung and stomach. Arrows mark lymphocytic infiltrates. Scale bar = 100 μm. (D) Percentages of IFN-γ+, IL-4+, and IL-17A+ CD4+ T cells in lung tissue after PMA/ionomycin stimulation. (E) Splenocytes from 12-week-old mice were stained for CD44, Foxp3, CD73, and FR4. Percentages of anergic (CD4+Foxp3−CD44hiCD73hiFR4hi), effector/memory (CD4+Foxp3−CD44hiCD73loFR4lo), and regulatory (CD4+Foxp3+) T cells are shown. (F) Schematic summary of the study. * p<0.05; ** p<0.01; ns, not significant.
 
 We next sought to determine whether IL-27p28 deficiency would affect the autoimmune phenotype in the Aire-/- mouse, which are predisposed to developing autoimmunity due to a defect in clonal deletion of autoreactive T cells (van Laar et al., 2022; Wang et al., 2021a). To this end, Cd11c-p28f/f mice were crossed with Aire-/- mice to generate double knockout mice. Histological examination revealed increased lymphocyte infiltration and more severe structural distortion in the lung and stomach in double knockout mice in comparison to mice deficient for Aire only (Figure 6C). In addition, the double knockout mice exhibited an elevated level of autoantibodies to double-strand DNA, although the difference did not reach a statistical significance (p=0.068) possibly due to the limited sample size (Figure 6B). When CD4+ T cells recovered from the lung tissues were analyzed for IFN-γ, IL-4, and IL-17 production, the double knockout mice were virtually indistinguishable from the Aire-/- mice, except for increased IFN-γ production (Figure 6D).
 
@@ -98,11 +130,469 @@ Taken together, our data demonstrate that DC-derived IL-27p28 serves as an endog
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Cd11c-p28f/f mice(C57BL/6)</td>
+      <td>provided by Dr. Zhinan Yin from Jinan University (Guangzhou, China)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Il27ra-/- mice (C57BL/6)</td>
+      <td>provided by Dr. Zhinan Yin from Jinan University (Guangzhou, China)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Rag2p-EGFP mice (C57BL/6)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>FVB-Tg (Rag2-EGFP) 1Mnz/J mice were purchased from Jackson Laboratory (Bar Harbor, ME) and were backcrossed for 10 generations onto the C57BL/6 background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Aire-/- mice (C57BL/6)</td>
+      <td>provided by Yangxin Fu (University of Chicago, IL)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7-conjugated anti-mouse CD4 (RM4-5)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 561099RRID:AB_394461</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE- conjugated anti-mouse CD8a (53–6.7)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 561095RRID:AB_394571</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-mouse CD8a (53–6.7)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 561093RRID:AB_398527</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-mouse IL-2 (JES6-5H4)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 562041RRID:AB_398555</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7-conjugated anti-mouse TNF-α (MP6-XT22)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 561041RRID:AB_396761</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-mouse Stat1 (pY701) (4 a)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 612564RRID:AB_399855</td>
+      <td>FACS (20 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP-Cy5.5-conjugated anti-mouse Stat3 (pY705) (4/P-STAT3)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 560114RRID:AB_1645335</td>
+      <td>FACS (20 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-conjugated anti-mouse Stat4 (pY693) (38/p-Stat4)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 558136RRID:AB_397051</td>
+      <td>FACS (20 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE- conjugated anti-mouse CD25 (PC61.5)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 12-0251-82RRID:AB_465607</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-mouse CD25 (PC61.5)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 17-0251-82RRID:AB_469366</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-mouse CD44 (IM7)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 12-0441-82RRID:AB_465664</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-mouse CD44 (IM7)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 17-0441-82RRID:AB_469390</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC-conjugated anti-mouse FR4 (eBio12A5)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 11-5445-82RRID:AB_842799</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP-eFluor710-conjugated anti-mouse CD73 (eBioTY/11.8)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 46-0731-82RRID:AB_10853356</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC-conjugated anti-mouse IL-4 (BVD6-24G2)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 11-7042-82RRID:AB_465388</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-mouse IL-17A (eBio17B7)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 12-7177-81RRID:AB_763582</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-mouse FOXP3 (3G3)</td>
+      <td>eBioscience</td>
+      <td>Cat#: MA5-16224RRID:AB_2537742</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>biotin-conjugated anti-mouse CD8a (53–6.7)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 13-0081-82RRID:AB_466346</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-mouse IFN-γ (XMG1.2)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 505807RRID:AB_315401</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP-Cy5.5-conjugated anti-mouse T-bet (4B10)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 644805RRID:AB_1595488</td>
+      <td>FACS (5 µL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-STAT1(Tyr701) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 9167RRID:AB_561284</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-STAT-1(S727) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 8826RRID:AB_2773718</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-STAT1 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 14994RRID:AB_2716759</td>
+      <td>WB (1:1000)ChIP (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-STAT3 (Tyr705) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 9131RRID:AB_331588</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-STAT3 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 4904RRID:AB_331269</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-STAT4 (Tyr693) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 4143RRID:AB_10545742</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-STAT4 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 2653RRID:AB_2255156</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOCS3 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 52113RRID:AB_2799408</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-Actin (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 4970RRID:AB_2223172</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K4me3(Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#: 07–473RRID:AB_1977252</td>
+      <td>WB (1:5000)ChIP (2 µL/test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K27me3(Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#: 07–449RRID:AB_310624</td>
+      <td>WB (1:5000)ChIP (4 µL/test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K9me3(Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab8898RRID:AB_306473</td>
+      <td>WB (1:1000)ChIP (2–4 μg/test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Functional grade monoclonal antibodies for murine CD3 (145–2 C11)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 16-0031-82RRID:AB_468847</td>
+      <td>Cell culture (2 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Functional grade monoclonal antibodies for murine CD28 (37.51)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 16-0281-82RRID:AB_468921</td>
+      <td>Cell culture (1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>neutralizing anti-IL4 (11B11)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 16-7041-81RRID:AB_469208</td>
+      <td>Cell culture (10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>neutralizing anti-IFN-γ (clone XMG1.2)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 16-7311-81RRID:AB_469242</td>
+      <td>Cell culture (10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifng-F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCAAGTGGCATAGATGTGGAAGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifng-R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGGCTCTGCAGGATTTTCATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il4-F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACAGGAGAAGGGACGCCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il4-R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAAGCCCTACAGACGAGCTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifng gene promoter CpG sites semi-nested PCR1-F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGTGTGAAGTAAAAGTGTTTTTAGAGAATTTTAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifng gene promoter CpG sites semi-nested PCR1-R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAATAACAACCAAAAACAACCATAAAAAAAAACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifng gene promoter CpG sites semi-nested PCR2-F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGTGTGAAGTAAAAGTGTTTTTAGAGAATTTTAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifng gene promoter CpG sites semi-nested PCR2-R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCATAAAAAAAAACTACAAAACCAAAATACAATA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il4 gene promoter CpG sites semi-nested PCR-F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGATCCACACGGTGCAAAGAGAGACCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il4 gene promoter CpG sites semi-nested PCR-R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCGGCCTTTCAGACTAATCTTATCAGC</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant murine IL-2</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat. #: 402 ML</td>
+      <td>Cell culture (2 ng/mL)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant murine IL-4</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat. #: 404 ML</td>
+      <td>Cell culture (20 ng/mL)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant murine IL-6</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat. #: 406 ML</td>
+      <td>Cell culture (10 ng/mL)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant murine IL-12</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat. #: 419 ML</td>
+      <td>Cell culture (10 ng/mL)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant human TGF-β1</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat. #: 7754-BH</td>
+      <td>Cell culture (1 ng/mL)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IFN-γ ELISA kits</td>
+      <td>BioLegend</td>
+      <td>Cat. #:430807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-4 ELISA kits</td>
+      <td>BioLegend</td>
+      <td>Cat. #: 431107</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZ DNA methylation kit</td>
+      <td>Zymo Research</td>
+      <td>Cat. #: D5005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce Agarose Chip Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. #: 26156</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kaluza</td>
+      <td>Beckman Coulter</td>
+      <td>RRID:SCR_016182</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>anti-CD8 (Ly-2) MicroBeads</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat. #: 130-117-044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>dsDNA</td>
+      <td>Sigma</td>
+      <td>Cat. #: 31149</td>
+      <td>ELISA (100 mg/mL)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 C57BL/6 mice were obtained from the Vital River Laboratories (Beijing, China). Cd11c-p28f/f mice (DC-specific deletion of p28) and Il27ra-/- mice on C57BL/6 background were kindly provided by Dr. Zhinan Yin from Jinan University (Guangzhou, China). FVB-Tg (Rag2-EGFP) 1Mnz/J mice were purchased from Jackson Laboratory (Bar Harbor, ME) and were backcrossed for 10 generations onto the C57BL/6 background (termed as Rag2p-EGFP in this paper). Rag2p-EGFP mice were bred with Cd11c-p28f/f mice to generate Cd11c-p28f/f Rag2p-EGFP mice. Aire-/- mice were generously provided by Yangxin Fu (University of Chicago, IL) and were bred with Cd11c-p28f/f mice to generate Aire-/-Cd11c-p28 f/f mice. Mice were used at 6–8 weeks of age unless stated otherwise. All the animal procedures were conformed to the Chinese Council on Animal Care Guidelines and the study was approved by the ethics committee of Peking University Health Science Center with an approval number of LA2014178.
 
-## Antibodies and reagents
+### Antibodies and reagents
 
 PE-Cy7-conjugated anti-mouse CD4 (RM4-5), PE- and APC-conjugated anti-mouse CD8a (53–6.7), APC-conjugated anti-mouse IL-2 (JES6-5H4), PE-Cy7-conjugated anti-mouse TNF-α (MP6-XT22), PE-conjugated anti-mouse Stat1 (pY701) (4 a), PerCP-Cy5.5-conjugated anti-mouse Stat3 (pY705) (4/P-STAT3), Alexa Fluor 488-conjugated anti-mouse Stat4 (pY693) (38/p-Stat4) were purchased from BD Biosciences (San Diego, CA). PE- and APC-conjugated anti-mouse CD25 (PC61.5) and CD44 (IM7), FITC-conjugated anti-mouse FR4 (eBio12A5), PerCP-eFluor710-conjugated anti-mouse CD73 (eBioTY/11.8), FITC-conjugated anti-mouse IL-4 (BVD6-24G2), PE-conjugated anti-mouse IL-17A (eBio17B7), APC-conjugated anti-mouse FOXP3 (3G3), and biotin-conjugated anti-mouse CD8a (53–6.7) were obtained from eBioscience (Waltham, MA). PE-conjugated anti-mouse IFN-γ (XMG1.2) and PerCP-Cy5.5-conjugated anti-mouse T-bet (4B10) were purchased from BioLegend (San Diego, CA).
 
@@ -110,46 +600,46 @@ Functional grade monoclonal antibodies for murine CD3 (145–2 C11) and CD28 (37
 
 Anti-phospho-STAT1(Tyr701), anti-phospho-STAT-1(S727), anti-STAT1, anti-phospho-STAT3 (Tyr705), anti-STAT3, anti-phospho-STAT4 (Tyr693), anti-STAT4, anti-SOCS3, anti-Actin and HRP-labeled goat-anti-rabbit or anti-mouse IgGs for western blot assay were purchased from Cell Signaling Technology (Danvers, MA). Phorbol 12-myristate 13-acetate (PMA) and ionomycin were obtained from Sigma-Aldrich.
 
-## Cell sorting and CD4+ T-cell differentiation in vitro
+### Cell sorting and CD4+ T-cell differentiation in vitro
 
 To enrich CD4SP thymocytes, CD8- thymocytes were obtained by negative selection using anti-CD8 (Ly-2) MicroBeads (Miltenyi Biotec). The cells were then stained with fluorescently labeled antibodies to CD4, CD8 and CD44. CD4+ SP thymocytes with the phenotype of GFP+CD4+CD8-CD44lo were then sorted. For the isolation of CD4+ RTEs and mature naive CD4+ T cells, GFP+CD4+CD8-CD25-NK1.1- (RTEs) and GFP-CD4+CD8-CD25-CD44lo (naive T) cells were sorted from lymph nodes. All these cells were sorted to >99% purity with a FACS Aria II (BD Biosciences, San Diego, CA).
 
 For in vitro activation, CD4SP thymocytes, RTEs and mature naive T cells were cultured at a density of 2×106 /mL with plate-coated anti-CD3 (clone 2C11; 2 µg/mL) and soluble anti-CD28 (clone 37 N; 1 µg/mL) in RPMl 1640 medium supplemented with 10% fetal bovine serum (Biochrom Ag, Berlin), penicillin, streptomycin and 50 µM 2-mercaptoethanol. Conditions for CD4+ T-cell differentiation were as follows: Th0 cells, IL-2 (2 ng/mL); Th1 cells, IL-12 (10 ng/mL), IL-2 (2 ng/mL), anti-IL-4 (10 µg/mL); Th2 cells, IL-4 (20 ng/mL), IL-2 (2 ng/mL), anti-IFN-γ (10 µg/mL); Th17 cells, recombinant human TGFβ1 (10 ng/mL), IL-6 (10 ng/mL), anti-IL-4 (10 µg/mL), anti-IFN-γ (10 µg/mL); and Treg cells, TGFβ1 (1 ng/mL), IL-2 (10 ng/mL), anti-IL-4 (10 µg/mL), anti-IFN-γ (10 µg/mL). After 3 days of differentiation, supernatants were collected and cells were subjected to intracellular cytokine staining and ﬂow cytometry analyses.
 
-## Intracellular staining and flow cytometry
+### Intracellular staining and flow cytometry
 
 For detection of surface molecules, T cells were labeled with the appropriate fluorescent mAbs on ice for 30  min. For detection of cytoplasmic molecules, T-bet, and FOXP3, T cells were collected, stained with surface molecules, fixed, permeabilized with the Foxp3/Transcription Factor Staining Buffer (eBioscience), and stained with fluorochrome-conjugated mouse antibodies on ice for 30  min. For intracellular cytokine staining, 5 hr before harvest, T cells were stimulated with PMA (50 ng/mL) plus ionomycin (1 mg/mL) in the presence of a protein transport inhibitor, monensin (2 μM) or BFA (3 μg/mL; eBioscience). Cells were collected, washed, fixed, permeabilized (FIX AND PERM, Invitrogen) and stained with IFN-γ, IL-4, IL-2, TNF-α, and IL-17 antibodies according to the manufacturer’s instructions. For detection of phosphorylated STATs, 1×107 thymocytes were fixed for 10 min at 37 °C with 2% (wt/vol) paraformaldehyde. After fixing, cells were permeabilized for 30 min on ice with 90% (vol/vol) methanol, and stained with the appropriate antibodies. Flow cytometry was conducted on a Galios (Beckman Coulter) and data analysis was performed using Kaluza software.
 
-## Enzyme-Linked Immunosorbent Assay (ELISA)
+### Enzyme-Linked Immunosorbent Assay (ELISA)
 
 Supernatants of in vitro cell cultures were obtained at 72 hr. IFN-γ and IL-4 production were determined using ELISA kits (BioLegend, San Diego, CA) according to the manufacturer’s instructions.
 
 For the analysis of anti-dsDNA antibodies, serum was collected from 24- to 30-week-old Aire-/-Cd11c-Cre p28f/f, Aire-/-, Cd11c-Cre p28f/f and WT mice. Nunc MaxiSorp ELISA plates were precoated with dsDNA (100 mg/mL, Sigma, St. Louis, MO) in phosphate-buffered saline (PBS) at 4° C overnight. Plates were blocked with 5% BSA for 1 hr at 37° C, then washed and incubated with 1/100 dilutions of mouse sera for 2 hr at 37° C. Plates were washed, and anti-dsDNA antibodies were detected with a 1/1000 dilution of alkaline phosphatase–conjugated goat anti-mouse IgG (BioLegend) for 1 hr at 37° C and developed with a phosphatase substrate for 30 min at 37° C.
 
-## Quantitative PCR (qPCR)
+### Quantitative PCR (qPCR)
 
 RNA was purified from various T cell subsets cultured under Th0 conditions for 12 hr using Trizol reagent (Invitrogen). cDNA was synthesized using reverse transcription kit (Progema). qPCR was performed using FastStart Universal SYBR Green Master mix (Roche, Basel, Switzerland) on an iCycler real-time PCR system (Bio-Rad Laboratories, Hemel Hempstead, U.K.), with each sample in triplicate. The quantification was based on delta delta CT calculations and was normalized to β-actin as loading controls. The primers used in the study were listed in Supplementary file 1.
 
-## DNA methylation
+### DNA methylation
 
 Bisulfite modification of genomic DNA from FACS purified cells was performed using the EZ DNA methylation kit (Zymo Research). For methylation analysis on Ifng gene promoter CpG sites, bisulfite-treated DNA was amplified in semi-nested PCR using primers: 5’-GGTGTGAAGTAAAAGTGTTTTTAGAGAATTTTAT-3’ and 5’-CAATAACAACCAAAAACAACCATAAAAAAAAACT-3’, then 5’-GGTGTGAAGTAAAAGTGTTTTTAGAGAATTTTAT-3’ and 5’-CCATAAAAAAAAACTACAAAACCAAAATACAATA-3’. For methylation analysis on Il4 gene promoter CpG sites, bisulfite-treated DNA was amplified in PCR using primers: 5-GGATCCACACGGTGCAAAGAGAGACCC-3’ and 5′-TCGGCCTTTCAGACTAATCTTATCAGC-3’ The PCR products were gel purified and cloned into the pGEM-T vector (Promega; Madison, WI, USA). The inserted PCR fragments of individual clones were sequenced by Tsing KE Biological Technology, Beijing, China. For all samples, 10 reads per CpG site were used to determine the average percentage of methylated CpG.
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 ChIP assays were carried out by using Pierce Agarose Chip Kit (Pierce Biotechnology). Briefly, cells were cross-linked for 10 min with 1% formaldehyde and lysed with Nuclease. 10% of the digested chromatin was preserved as input control and the rest of the digested chromatin were incubated with specific antibody or normal IgG (as a control). The purified DNA from immunoprecipitation and the input samples were analyzed by qPCR using primers specific listed in Supplementary file 1. Data is presented as a percent input of each IP sample relative to input chromatin. The following antibodies were used in ChIP analysis: H3K4me3 (Millipore), H3K27me3 (Millipore), H3K9me3 (Abcam), and STAT1 (Cell Signaling Technology).
 
-## Western blotting
+### Western blotting
 
 For short-term TCR stimulation, CD4SP thymocytes and mature naive T cells were incubated with 2 µg/mL anti-mouse CD3 and 1 µg/mL anti-mouse CD28 on ice for 20 min, followed by cross-linking for 10 min at 37 °C with 5 μg/mL goat-anti-hamster IgG. Cells were then washed with PBS. Freshly isolated T cells or stimulated T cells were lysed in RIPA buffer for 30 min. Whole-cell lysates (5–10 μg per sample) were separated by SDS/PAGE and analyzed by immunoblotting with antibodies to phospho-STAT-1 (Tyr701), phospho-STAT-1 (Ser727), STAT-1, phospho-STAT-3 (Tyr705), STAT-3, phospho-STAT-4 (Tyr693), STAT-4, SOCS3 and Actin. HRP-conjugated anti-Rabbit IgG was used as the detection antibody. The bands were quantified using ImageJ software.
 
-## RNA-seq
+### RNA-seq
 
 Total RNA was extracted from approximately 2×106 CD4SP thymocytes from WT and Cd11c-p28f/f mice using Trizol reagent (Invitrogen). Each sample was a mixture of equal amounts of CD4SP thymocytes from three mice. RNA underwent quality control testing using a bionalayser followed by cDNA library preparation. Library construction and sequencing on Illumina HiSEq 2000 were performed by BIOPIC, Peking University. The analyzed FPKM values are provided in the Supplementary Materials (Supplementary file 2).
 
-## H&E
+### H&E
 
 Organs from 24- to 30-week-old Aire-/-Cd11c-p28f/f mice, Aire-/- mice and WT mice were collected and fixed overnight in 10% formalin, embedded in paraffin, sectioned and stained with hematoxylin and eosin (H&E). The degree of lymphocytic infiltrates was analyzed in a blinded fashion. In general, 0, 1, 2, and 3 indicate no, mild, moderate, or severe lymphocytic infiltration, respectively.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are reported as the mean  ± SD. Differences between groups were analyzed by Student’s t test or two-way ANOVA (for multiple variant comparisons) using GraphPad Prism software (GraphPad). Throughout the text, figures, and figure legends, the following terminology is used to denote statistical significance: *, p<0.05; **, p<0.01; ***, p<0.001; NS, not significant.

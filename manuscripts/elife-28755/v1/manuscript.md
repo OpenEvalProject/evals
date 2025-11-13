@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.28755.001 Systemic vascular pressure in vertebrates is regulated by a range of factors: one key element of control is peripheral resistance in tissue capillary beds. Many aspects of the relationship between central control of vascular flow and peripheral resistance are unclear. An important example of this is the relationship between hypoxic response in individual tissues, and the effect that response has on systemic cardiovascular adaptation to oxygen deprivation. We show here how hypoxic response via the HIF transcription factors in one large vascular bed, that underlying the skin, influences cardiovascular response to hypoxia in mice. We show that the response of the skin to hypoxia feeds back on a wide range of cardiovascular parameters, including heart rate, arterial pressures, and body temperature. These data represent the first demonstration of a dynamic role for oxygen sensing in a peripheral tissue directly modifying cardiovascular response to the challenge of hypoxia.
+Systemic vascular pressure in vertebrates is regulated by a range of factors: one key element of control is peripheral resistance in tissue capillary beds. Many aspects of the relationship between central control of vascular flow and peripheral resistance are unclear. An important example of this is the relationship between hypoxic response in individual tissues, and the effect that response has on systemic cardiovascular adaptation to oxygen deprivation. We show here how hypoxic response via the HIF transcription factors in one large vascular bed, that underlying the skin, influences cardiovascular response to hypoxia in mice. We show that the response of the skin to hypoxia feeds back on a wide range of cardiovascular parameters, including heart rate, arterial pressures, and body temperature. These data represent the first demonstration of a dynamic role for oxygen sensing in a peripheral tissue directly modifying cardiovascular response to the challenge of hypoxia.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ The literature on the response of animals to systemic hypoxia and its cardiovasc
 
 ## Results
 
-## Loss of HIFα isoforms in the epidermis differentially affects blood pressure and skin temperature across diurnal cycles
+### Loss of HIFα isoforms in the epidermis differentially affects blood pressure and skin temperature across diurnal cycles
 
 In this study we utilise mouse strains with conditional alleles of Hif1a (Ryan et al., 2000), Epas1(HIF-2α)(Gruber et al., 2007), the HIF-1α target gene, nitric oxide synthase-2 (Nos2) and the HIF-2α target gene, arginase-1(Arg1)(El Kasmi et al., 2008), crossed to mouse strains expressing Cre recombinase under the control of the keratin 14 (Krt14) promoter (Vasioukhin et al., 1999). All mice are extensively backcrossed (more than 10 generations after selection by strain-specific SNP analysis) into the C57/Bl6J strain background. This promoter drives the excision of the gene of interest where the K14 promoter is active, that is, within basal layers of the epidermis and in restricted numbers of cells in a small number of other epithelial tissues, chiefly the oesophagus and salivary and mammary glands (Vasioukhin et al., 1999).
 
@@ -48,7 +48,7 @@ Continuous monitoring of unrestrained, non-anesthetised mice via radio-telemetri
 
 Cutaneous temperatures were also monitored by radiotelemetry (Figure 1C). Here, we saw that cutaneous temperatures in K14cre-Arg-1 mutants was significantly higher than littermate controls and trend lower in HIF-1α mutants. These data confirm our previous observations using tail-cuff occlusion and infra-red analysis of skin temperature (Cowburn et al., 2013). Analysis of physical activity showed no significant difference in the movement levels between the mutant groups and littermate control mice, suggesting these differences in temperature do not result from variable activity (Figure 1D).
 
-## Cardiovascular responses to 48 hr of hypoxia: brief initial hypertension and tachycardia, followed by hypotension and bradycardia
+### Cardiovascular responses to 48 hr of hypoxia: brief initial hypertension and tachycardia, followed by hypotension and bradycardia
 
 The effects of hypoxia in mammals have been studied in humans and a range of animals(Korner and Edwards, 1960; Butler, 1967; Yasuma and Hayano, 2000; Heinonen et al., 2016; Kawaguchi et al., 2005). Curiously, published measurements to date indicate that almost all studies examining the cardiovascular effects of hypoxia have been carried out either over long time frames, that is, weeks and months, as part of studies of high altitude adaptations, or over very short time frames of approximately 5 to 10 min, typically under anaesthesia. To better understand how hypoxia at varying levels affects the cardiovascular parameters of blood pressure, heart rate, and cutaneous temperature in mice over time, we subjected wild-type (C57/Bl6) mice with implanted radiotelemetric reporters to 15%, 12%, and 10% normobaric oxygen over 48 hr, followed by 24 hr of recovery at 21% normobaric oxygen. The transition to low oxygen levels occurred in each case at the dark-light interphase (dark cycle equates to the shaded regions in the graphs).
 
@@ -62,7 +62,7 @@ Analysis of subcutaneous temperature has previously been used as an indirect mea
 
 At the lowest FiO2 studied, 10% oxygen, there was an initial phase of response lasting 10–20 min that includes increased blood pressures and heart rates; then a longer depression, resulting in profound hypotension and bradycardia; followed finally by a chronic acclimation phase, with gradually recovering blood pressures, heart rates, temperatures and activity levels. We defined recovery as the point at which the animal reached 90% of heart rates and blood pressures seen at the same time of the diurnal cycle in normoxia; with this definition, recovery occured in 36 hr at 10% oxygen levels in wild type controls. In wild type mice this tri-phasic response is readily apparent at the two lower concentrations of oxygen (Figure 2). We chose to use a 10% oxygen challenge for the remainder of our experiments, as this level of hypoxia had the most pronounced (and thus easily dissected) phases of response, and yet still showed a return to normoxic cardiovascular parameters over time.
 
-## Loss of HIF-1α in the epidermis retards cardiovascular adaptation to hypoxia
+### Loss of HIF-1α in the epidermis retards cardiovascular adaptation to hypoxia
 
 As shown above, mice lacking HIF-1α, HIF-2α, NOS2 and Arg-1 expression in the epidermis show significant changes in systemic blood pressures and cutaneous temperatures relative to littermate control animals. All of these genes are involved in cellular adaptations to hypoxia. However, it is unclear how this cellular adaptation leads to more general tissue-specific adaptations to hypoxia. Even less well understood is how a peripheral tissue response might affect systemic responses to hypoxia. To undertake an analysis of that question, using the skin as a model for a peripheral tissue with a substantial vascular bed, we analysed the effect of loss of these hypoxia-responsive genes on the cardiovascular hypoxic response. We began with an analysis of the role of HIF-1α.
 
@@ -78,7 +78,7 @@ In Figure 3E and F, the acute and chronic changes in heart rate in littermate co
 
 Physical activity is reduced in littermate control and mutant animals during the initial 12 hr of hypoxia. Activity slowly increases during the acclimation period, but does not fully recover until the animals are restored to normoxia (Figure 3H). Overall, loss of HIF-1α in the epidermis appears to delay the cardiovascular changes that occur in response to hypoxia; this is correlated with an increase in peripheral resistance and in heart rates.
 
-## Loss of HIF-2α in the epidermis modifies cardiovascular adaptation to hypoxia
+### Loss of HIF-2α in the epidermis modifies cardiovascular adaptation to hypoxia
 
 We have proposed a model for hypoxic responses involving HIF isoform activity and nitric oxide homeostasis in the skin that argues that hypoxia results in an initial HIF-1α/NOS2/NO mediated increase in vascular diameter, and resulting increases in perfusion; followed by a HIF-2α/Arginase-induced reduction of intracellular L-arginine (Cowburn et al., 2013). As L-arginine is necessary for NO production, this would suppress NO production by NO synthases, and ultimately cause vasoconstriction.
 
@@ -94,7 +94,7 @@ The effect of hypoxia on the heart rate of the epidermal HIF-2α knockout animal
 
 These results indicate a complex response of the skin to systemic hypoxia, and also demonstrate that that complexity is mirrored in the effect of those responses on the cardiovascular system. The crossover seen in skin temperature and blood pressure at 24 hr also indicates that there is likely a phase of adaptation at that time point revealed by the HIF-2α deletion, and related to a temporally specific action of HIF-2α in the adaptation and response to hypoxia.
 
-## Expression patterns and levels of NO in peripheral tissues during hypoxia indicate tissue-specific variation in response
+### Expression patterns and levels of NO in peripheral tissues during hypoxia indicate tissue-specific variation in response
 
 Given the complex role of HIF-2α in the epidermis, and our hypothesis that this could be determined by the differential effect of HIF-1α and HIF-2α on NO homeostasis, we next analysed the overall levels of NO metabolites induced by hypoxia in specific tissues following hypoxic exposure (Figure 5). As can be seen in Figure 5A, there was a steep drop in plasma NO metabolites over the first day of hypoxia, followed by a more gradual decline over the following 3 days of exposure (Figure 5A). However, as shown in Figure 5B, in skin, and in Figure 5C, in lungs, differing levels of expression of hypoxia-sensitive genes involved in the NO synthesis pathway are evident. Of note, the skin shows an initial spike in arginase-1 and -2 expression in the first 24 hr of exposure, which then declines. Skin NOS2 expression over the same time is marginally higher, however. In the lung there is no substantial increase in NOS2 or arginase-1 or -2 expression until after two days of exposure to hypoxia.
 
@@ -104,7 +104,7 @@ Given the complex role of HIF-2α in the epidermis, and our hypothesis that this
 
 The levels of NO metabolites seen in the skin and lung reflect the expression levels of arginase and NOS2 mRNA, with an increase seen in the skin at 24 hr and a subsequent decline to baseline levels after 2 days of hypoxia (Figure 5D). This is in contrast to the lung, which shows a gradual decline in NO metabolites at 48–72 hr (Figure 5E). These data indicate a temporal and tissue-specific shift in the expression of NOS2 and Arg-1/-2 in vivo.
 
-## Loss of epidermal NOS2 influence residual NOS expression and influences cardiovascular acclimation to hypoxia
+### Loss of epidermal NOS2 influence residual NOS expression and influences cardiovascular acclimation to hypoxia
 
 To test the hypothesis that keratinocyte HIF-1α/NOS/NO influences shifts in skin temperature, systemic blood pressure and heart rates during exposure to hypoxia, we next generated mice with NOS2 deletions in keratinocytes. Deletion efficiency of epidermal NOS2 in K14cre+ mice was calculated to be greater than 98% in all mice analysed (Figure 6B). The deletion of epidermal NOS2 shows changes in baseline skin temperature (which is likely correlated with peripheral vascular resistance) and systemic blood pressures similar to those seen in HIF-2α mutant mice, and initial changes in heart rate similar to those seen in HIF-1α mutant mice.
 
@@ -118,7 +118,7 @@ The distinct tensive/cardiac response to hypoxia reported above may be due to a 
 
 Interestingly, comparative analysis of VEGF-A identified no compensatory expression in K14cre-NOS2 mice (Figure 6H). Physical activity is greatly reduced in littermate and mutant animals during the initial 12 hr of hypoxia and slowly recovers between 12–48 hr, although it does not fully recover until the animals are restored to normoxia (Figure 6I).
 
-## Loss of Arginase1 in the epidermis partially mirrors the effects seen from loss of HIF-2α
+### Loss of Arginase1 in the epidermis partially mirrors the effects seen from loss of HIF-2α
 
 To determine if the complex shifts in skin temperature, blood pressure and heart rate during hypoxia seen in HIF-2α mutant animals were due to HIF-2α regulation of the arginase pathway, we next analysed mice with Arg1 deletions in keratinocytes. As can be seen in Figure 7A, and similarly to what was seen in HIF-2α mutant mice, these animals display an elevated skin temperature relative to littermate control mice during the first twelve hours of hypoxic exposure, followed by a relative decline at 24 hr (for statistical analysis see Figure 9P). In Figure 7B (for statistical analysis see Figure 9Q) it is apparent that there is a small increase in systolic and diastolic pressures for the first 10 min hypoxia, followed by a decrease in both systolic and diastolic pressure. This occurs in a manner similar to that of littermate control animals. The recovery of a normotensive state in K14cre-Arg1 mutant mice, is somewhat similar to that seen in littermate controls (Figure 7C)(for statistical analysis see Figure 9R). However, the effect on heart rate is similar in some regards to that seen in HIF-2α mutants, with an overall increase relative to the hypoxia-induced decline seen in littermate control animals (Figure 7D)(for statistical analysis see Figure 9S), and a more rapid return to the normal pattern of diurnal variation in heart rate (Figure 7E)(for statistical analysis see Figure 9T).
 
@@ -128,7 +128,7 @@ To determine if the complex shifts in skin temperature, blood pressure and heart
 
 Metabolic activity of the Arg-1 animals also follows a similar trajectory to that seen in HIF-2α mutant animals. Both VO2 and VCO2 (Figure 7F–G) substantially increased between 12 and 48 hr of hypoxia, and this again coincided with heightened physical activity (Figure 7H). In each case, the changes seen in Arg-1 mutants were less striking than those seen in HIF-2α mutants, likely due in part to the presence of Arg-2 in the skin of these animals. These data indicate that a significant aspect of the HIF-2α-mediated changes in the cardiovascular response to hypoxia may be mediated via its regulation of arginase expression.
 
-## Ventilatory response to hypoxia and carotid body development
+### Ventilatory response to hypoxia and carotid body development
 
 We next questioned whether epidermal deletion of HIFα isoforms influenced the basal or hypoxia-induced ventilatory response. Whole-body plethysmography showed that resting ventilation rates are similar in the HIFα mutant animals relative to littermate controls (Figure 8A–B). All mice responded normally to acute hypoxia by increasing ventilation rates. K14cre-HIF-1α, K14cre-HIF-2α, and wild type littermate control mice increased their respiratory rate for the initial 10 min of hypoxic exposure, before reducing their ventilation rates 30 min after exposure to hypoxia began (Figure 8A–B). Oxygen partial pressures in the blood were not significantly different from those seen in littermate animals during an acute hypoxic challenge (Figure 8C).
 
@@ -162,45 +162,45 @@ In summary, we present here the first dissection of the murine cardiovascular re
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All animals were housed in an association and accreditation of laboratory animal care international-approved facility. All protocols and surgical procedures were approved by the UK Home Office and the University of Cambridge Animal Welfare Ethical Review Board (AWERB) under project license 80/2565 from the UK Home Office.
 
 Targeted deletion of Hif1a (HIF-1α), Epas1 (HIF-2α), Nos2 (NOS2)and Arg1 (arginase-1) in keratinocytes was accomplished by crossing mice (in a C57/Bl6J background ascertained by extensive backcrossing and SNP analysis) homozygous for the floxed allele in HIF-1α, HIF-2α, NOS2 or Arginase-1 into a background of Cre recombinase expression driven by the K14 promoter, which is specific to cells of the keratinocyte linage. The NOS2 mouse was generated by Ozgene (Perth, Aus) in C57Bl6 embryonic stem cells via homologous recombination, and uses a placement of the loxP sites flanking exons 3. Cre recombinase-mediated deletion of the loxP-flanked exon introduces a translational frameshift, rendering downstream exons non-functional.
 
-## Radio-telemetry implantation
+### Radio-telemetry implantation
 
 All radio-telemetry hardware and software was purchase from Data Science International. (St Paul, MN, USA). All procedures regarding preparation of the transmitter are carried out in aseptic conditions. The regulated procedure describing the aseptic implantation of the radio-telemetry device has previously been described (Cesarovic et al., 2011). Data acquisition only commenced following the complete recovery of the animal from the regulated surgical procedure (at least 10 days). All baseline telemetry data was collected over a 96 hr period in a designated quiet room to ensure accurate and repeatable results. Radio-telemetry/hypoxia challenge was conducted in combination with Oxymax Lab animal monitoring system (CLAMS)(Columbus Instruments, Columbus, OH, USA). Mice were placed in environmental chambers and allowed to acclimate for 24 hr before the oxygen content of the flow gas was reduced to 10%. The mice were continuously monitored for the next 48 hr before being returned to normal atmospheric oxygen for a further 24 hr.
 
-## Carotid body histology
+### Carotid body histology
 
 Carotid body histology was performed as previously reported (Macías et al., 2014). Briefly, carotid bifurcations were dissected, fixed for 2 hr with 4% paraformaldehyde (Santa Cruz) and cryopreserved with 30% sucrose in PBS. 10 μm-thick cryosections were obtained (Bright cryostat) and tyrosine hydroxylase (TH) positive cells were detected by immunofluorescence using rabbit anti-TH antibody (Novus bioscience ref: 300–109) and goat anti-rabbit Alexa568 antibody (Life technologies ref: A11036). Carotid body volume and cell numbers were quantified on microscope images (Leica DM-RB) using ImageJ software.
 
-## Whole body unrestrained plethysmography
+### Whole body unrestrained plethysmography
 
 A single chamber plethysmograph (Data Science) was used in conjunction with a pressure transducer. This utilises the barometric analysis technique that compares the pressure difference between the animal chamber and a reference chamber to measure airway physiological parameters. Unanesthetized mice were randomly placed into the plethysmograph and allowed to acclimate. Baseline averages of breathing frequency, tidal volume, inspiration and expiration volumes/times were recorded. Once acclimated to the chamber, the composition of the flow gas was switched from 21% O2 to 10% O2 using a PEGAS mixer (Columbus instruments). The mice were housed in the reduced oxygen environment for 60 min before being returned to atmospheric oxygen.
 
-## Nitrite/nitrate analysis
+### Nitrite/nitrate analysis
 
 Blood samples were centrifuged to separate plasma and were passed through a column with a 10 kDa cut-off filter. All samples were analysed for total NO(X) content using a NOA 280i (Siever, GE Healthcare) according to the manufacturers instructions.
 
-## Isolation and culture of primary keratinocytes
+### Isolation and culture of primary keratinocytes
 
 The preparation of primary keratinocytes from adult mouse tail skin is comprehensively described by Lichti et al. (2008).
 
-## RNA/DNA isolation and qPCR
+### RNA/DNA isolation and qPCR
 
 Total RNA was isolated from skin using TRI-reagent (Sigma), followed by RNA clean-up and DNase digest using RNeasy column kits (Qiagen, Manchester, UK). First-strand synthesis was performed with 1 μg of total RNA using a high-capacity cDNA kit (Applied Biosystems, Paisley, UK) according to the manufacturer’s instructions. Relative gene expression was determined by qPCR (ABI system, Applied Biosystems) and amplified in Sybr-green master mix (Roche) using relevant primers from Qiagen. Deletion efficiency was characterised for NOS2 in the K14cre+ mouse using DNA isolated from skin samples using TRIzol/DNeasy columns (Qiagen, Manchester. UK). The PCR primers and Taqman probe were designed in-house and synthesised by Sigma (Gillingham UK) fwd 5’-TCCAGAATCCCTGGACAAG rev 5’-TGGTGAAGAGTGTCATGCAA, probe 5’-FAM-TGTGACATCGACCCGTCCACA.
 
-## Metabolic analysis
+### Metabolic analysis
 
 Energy expenditure of the K14cre mice and their littermate controls was measured using the Columbus Instruments Oxymax system according to the manufacturers instructions (Cowburn et al., 2013).
 
-## Mouse skin temperature analysis
+### Mouse skin temperature analysis
 
 Surface temperatures were measured with a FLIR Thermovision A20 thermal infrared camera, and image data were analyzed using FLIR image analysis software
 
-## Statistical methods
+### Statistical methods
 
 Baseline radiotelemetry parameters in Figure 1 were analysed by determining the area under curved for each mouse per group and then performing a mann-Whitney test to determine the statistical difference across groups compared to littermate. Mann-Whitney test was used to analyse RT-qPCR gene expression and plasma/tissue nitrate data in Figure 5.
 

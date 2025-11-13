@@ -38,7 +38,7 @@
 
 ## Abstract
 
-10.7554/eLife.29944.001 The extinct ‘New World stilt-legged’, or NWSL, equids constitute a perplexing group of Pleistocene horses endemic to North America. Their slender distal limb bones resemble those of Asiatic asses, such as the Persian onager. Previous palaeogenetic studies, however, have suggested a closer relationship to caballine horses than to Asiatic asses. Here, we report complete mitochondrial and partial nuclear genomes from NWSL equids from across their geographic range. Although multiple NWSL equid species have been named, our palaeogenomic and morphometric analyses support the idea that there was only a single species of middle to late Pleistocene NWSL equid, and demonstrate that it falls outside of crown group Equus . We therefore propose a new genus, Haringtonhippus , for the sole species H. francisci . Our combined genomic and phenomic approach to resolving the systematics of extinct megafauna will allow for an improved understanding of the full extent of the terminal Pleistocene extinction event.
+The extinct ‘New World stilt-legged’, or NWSL, equids constitute a perplexing group of Pleistocene horses endemic to North America. Their slender distal limb bones resemble those of Asiatic asses, such as the Persian onager. Previous palaeogenetic studies, however, have suggested a closer relationship to caballine horses than to Asiatic asses. Here, we report complete mitochondrial and partial nuclear genomes from NWSL equids from across their geographic range. Although multiple NWSL equid species have been named, our palaeogenomic and morphometric analyses support the idea that there was only a single species of middle to late Pleistocene NWSL equid, and demonstrate that it falls outside of crown group Equus. We therefore propose a new genus, Haringtonhippus, for the sole species H. francisci. Our combined genomic and phenomic approach to resolving the systematics of extinct megafauna will allow for an improved understanding of the full extent of the terminal Pleistocene extinction event.
 
 ## Introduction
 
@@ -54,17 +54,33 @@ We analyzed 26 full mitochondrial genomes and 17 partial nuclear genomes from la
 
 ## Results
 
-## Phylogeny of North American late Pleistocene and extant equids
+### Phylogeny of North American late Pleistocene and extant equids
 
 We reconstructed whole mitochondrial genomes from 26 NWSL equids and four New World caballine Equus (two E. lambei, two E. cf. scotti). Using these and mitochondrial genomes of representatives from all extant and several late Pleistocene equids, we estimated a mitochondrial phylogeny, using a variety of outgroups (Appendix 1, Appendix 2—tables 1–2, and Supplementary file 1). The resulting phylogeny is mostly consistent with previous studies (Der Sarkissian et al., 2015; Vilstrup et al., 2013), including confirmation of NWSL equid monophyly (Weinstock et al., 2005). However, we recover a strongly supported placement of the NWSL equid clade outside of crown group diversity (Equus), but closer to Equus than to Hippidion (Figure 1, Figure 1—figure supplement 1a, Figure 1—source data 1, and Appendix 2—tables 1–2). In contrast, previous palaeogenetic studies placed the NWSL equids within crown group Equus, closer to caballine horses than to non-caballine asses and zebras (Barrón-Ortiz et al., 2017; Der Sarkissian et al., 2015; Orlando et al., 2008, 2009; Vilstrup et al., 2013; Weinstock et al., 2005). To explore possible causes for this discrepancy, we reconstructed mitochondrial genomes from previously sequenced NWSL equid specimens and used a maximum likelihood evolutionary placement algorithm (Berger et al., 2011) to place these published sequences in our phylogeny a posteriori. These analyses suggested that previous results were likely due to a combination of outgroup choice and the use of short, incomplete, or problematic mtDNA sequences (Appendix 2 and Appendix 2—table 3).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/29944/elife-29944-fig1-v1.jpg)
+
+**Figure 1.:** Purple node-bars illustrate the 95% highest posterior density of node heights and are shown for nodes with >0.99 posterior probability support. The range of divergence estimates derived from our nuclear genomic analyses is shown by the thicker, lime green node-bars ([Orlando et al., 2013]; this study). Nodes highlighted in the main text are labeled with boxed numbers. All analyses were calibrated using as prior information a caballine/non-caballine Equus divergence estimate of 4.0–4.5 Ma (Orlando et al., 2013) at node 3, and, in the mitochondrial analyses, the known ages of included ancient specimens. The thicknesses of nodes 2 and 3 represent the range between the median nuclear and mitochondrial genomic divergence estimates. Branches are coloured based on species provenance and the most parsimonious biogeographic scenario given the data, with gray indicating ambiguity. Fossil record occurrences for major represented groups (including South American Hippidion, New World stilt-legged equids, and Old World Sussemiones) are represented by the geographically coloured bars, with fade indicating uncertainty in the first appearance datum (after (Eisenmann et al., 2008; Forsten, 1992; O'Dea et al., 2016; Orlando et al., 2013) and references therein). The Asiatic ass species (E. kiang, E. hemionus) are not reciprocally monophyletic based on the analyzed mitochondrial genomes, and so the Asiatic ass clade is shown as ‘E. kiang + hemionus’. Daggers denote extinct taxa. NW: New World.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29944/elife-29944-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** This topology resulted from the analysis of mtDNA data set 3 (see Appendix 1) with all partitions and Hippidion included, and dog and ceratomorphs as outgroup (not shown). Numbers above branches are Bayesian posterior probability support values from equivalent MrBayes and BEAST analyses, with those below indicating ML bootstrap values calculated in RAxML, and are shown for major nodes. (A) Full phylogeny of the analyzed equid sequences. (B) The Haringtonhippus (NWSL equid) clade, with tips color coded by geographic origin: east Beringia, blue; contiguous USA, red (following Figure 3). Tips in bold were included in the BEAST analysis (see also Supplementary file 1).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/29944/elife-29944-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** A comparison of relative private transversion frequencies between the nuclear genomes of a caballine Equus (horse, E. caballus; green), a non-caballine Equus (donkey, E. asinus; red), and 17 NWSL equids (=Haringtonhippus francisci; blue) at different read lengths, with reads divided into 10 base pair (bp) bins. Analyses are based on alignment to the horse (A) or donkey (B) genome coordinates. To account for bins with low data content, we only display comparisons with at least 200,000 observable sites.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/29944/elife-29944-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Relative branch lengths are from Figure 1—source data 3. Minimum (darker blue) and maximum (lighter blue) estimates are shown for the NWSL equid branch.
+
 To confirm the mtDNA result that NWSL equids fall outside of crown group equid diversity, we sequenced and compared partial nuclear genomes from 17 NWSL equids to a caballine (horse) and a non-caballine (donkey) reference genome. After controlling for reference genome and ancient DNA fragment length artifacts (Appendices 1–2), we examined differences in relative private transversion frequency between these genomes (Appendix 1—figure 1). We found that the relative private transversion frequency for NWSL equids was ~1.4–1.5 times greater than that for horse or donkey (Appendix 2, Figure 1—source data 3, Figure 1—figure supplement 2, and Figure 1—source data 2). This result supports the placement of NWSL equids as sister to the horse-donkey clade (Figure 1—figure supplement 3), the latter of which is representative of living Equus diversity (e.g. [Der Sarkissian et al., 2015; Jónsson et al., 2014]) and is therefore congruent with the mitochondrial genomic analyses.
 
-## Divergence times of Hippidion, NWSL equids, and Equus
+### Divergence times of Hippidion, NWSL equids, and Equus
 
 We estimated the divergence times between the lineages leading to Hippidion, the NWSL equids, and Equus. We first applied a Bayesian time-tree approach to the whole mitochondrial genome data. This gave divergence estimates for the Hippidion-NWSL/Equus split (node 1) at 5.15–7.66 Ma, consistent with (Der Sarkissian et al., 2015), the NWSL-Equus split (node 2) at 4.09–5.13 Ma, and the caballine/non-caballine Equus split (node 3) at 3.77–4.40 Ma (Figure 1 and Figure 1—source data 1). These estimates suggest that the NWSL-Equus mitochondrial split occurred only ~500 thousand years (ka) prior to the caballine/non-caballine Equus split. We then estimated the NWSL-Equus divergence time using relative private transversion frequency ratios between the nuclear genomes, assuming a caballine/non-caballine Equus divergence estimate of 4–4.5 Ma (Orlando et al., 2013) and a genome-wide strict molecular clock (following [Heintzman et al., 2015]). This analysis yielded a divergence estimate of 4.87–5.69 Ma (Figure 1—figure supplement 3), which overlaps with that obtained from the relaxed clock analysis of whole mitochondrial genome data (Figure 1). These analyses suggest that the NWSL equid and Equus clades diverged during the latest Miocene or early Pliocene (4.1–5.7 Ma; late Hemphillian or earliest Blancan).
 
-## Systematic palaeontology
+### Systematic palaeontology
 
 The genus Equus (Linnaeus, 1758) was named to include three living equid groups – horses (E. caballus), donkeys (E. asinus), and zebras (E. zebra) – whose diversity comprises all extant, or crown group, equids. Previous palaeontological and palaeogenetic studies have uniformly placed NWSL equids within the diversity of extant equids and therefore this genus (Barrón-Ortiz et al., 2017; Bennett, 1980; Der Sarkissian et al., 2015; Harington and Clulow, 1973; Orlando et al., 2008; 2009; Scott, 2004; Vilstrup et al., 2013; Weinstock et al., 2005). This, however, conflicts with the phylogenetic signal provided by palaeogenomic data, which strongly suggest that NWSL equids fall outside the confines of the equid crown group (Equus). Nor is there any morphological or genetic evidence warranting the assignment of NWSL equids to an existing extinct taxon such as Hippidion. We therefore erect a new genus for NWSL equids, Haringtonhippus, as defined and delimited below:
 
@@ -80,37 +96,57 @@ Genus: Haringtonhippus, gen. nov. urn:lsid:zoobank.org:act:35D901A7-65F8-4615-9E
 
 Type species. Haringtonhippus francisci Hay 1915.
 
-## Etymology
+#### Etymology
 
 The new genus is named in honor of C. Richard Harington, who first described NWSL equids from eastern Beringia (Harington and Clulow, 1973). ‘Hippus’ is from the Greek word for horse, and so Haringtonhippus is implied to mean ‘Harington’s horse’.
 
-## Holotype
+#### Holotype
 
 A partial skeleton consisting of a complete cranium, mandible, and a stilt-legged third metatarsal (MTIII) (Figure 2a and Figure 2—figure supplement 1b), which is curated at the Texas Vertebrate Paleontology Collections at The University of Texas, Austin (TMM 34–2518). This specimen is the holotype of ‘E’. francisci, originally described by Hay (1915), and is from the middle Pleistocene Lissie Formation of Wharton County, Texas (Hay, 1915; Lundelius and Stevens, 1970).
 
-## Referred material
+![Figure 2.](https://cdn.elifesciences.org/articles/29944/elife-29944-fig2-v1.jpg)
+
+**Figure 2.:** (A) Crania of Haringtonhippus francisci, upper: LACM(CIT) 109/156450 from Nevada, lower: TMM 34–2518 from Texas. (B) From upper to lower, third metatarsals of: H. francisci (YG 401.268), E. lambei (YG 421.84), and E. cf. scotti (YG 198.1) from Yukon. Scale bar is 5 cm. (C) Principal component analysis of selected third metatarsals from extant and middle-late Pleistocene equids, showing clear clustering of stilt-legged (hemionine Equus (orange) and H. francisci (green)) from stout-legged (caballine Equus; blue) specimens (see also Figure 2—source data 1). Symbol shape denotes the specimen identification method (DNA: square, triangle: DNA/morphology, circle: morphology). The first and second principal components explain 95% of the variance.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29944/elife-29944-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) LACM(CIT) 109/156450 from Nevada, identified through mitochondrial and nuclear palaeogenomic analysis. Upper: right side (reflected for comparison), lower: left side. (B) Part of the H. francisci holotype, TMM 34–2518 from Texas.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/29944/elife-29944-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Third metatarsals from H. francisci (upper; YG 401.268), E. lambei (middle; YG 421.84), and E. cf. scotti (lower; YG 198.1). (B) Third metacarpals from H. francisci (upper; YG 404.663), E. lambei (middle; YG 109.6), and E. cf. scotti (lower; YG 378.15). (C) Proximal fragments of radii from H. francisci (left; YG 303.1085), and E. lambei (right; YG 303.325). (D) First phalanges from H. francisci (left; YG 130.3), E. lambei (middle; YG 404.22), and E. cf. scotti (right; YG 168.1).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/29944/elife-29944-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** This specimen (KU 47800; JK260) was originally referred to Equus sp., but is here identified as H. francisci on the basis of mitochondrial and nuclear genome data. We note the relative slenderness of this specimen, which is comparable to YG 404.663 (H. francisci) from Yukon in Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/29944/elife-29944-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** This specimen (LACM(CIT)109/150708; JW277/JK166) was originally identified by Weinstock et al., 2005. List of Source data files.
+
+#### Referred material
 
 On the basis of mitochondrial and nuclear genomic data, we assign the following material confidently to Haringtonhippus: a cranium, femur, and MTIII (LACM(CIT): Nevada); three MTIIIs, three third metacarpals (MCIII), three premolar teeth, and a molar tooth (KU: Wyoming); two radii, 12 MTIIIs, three MCIIIs, a metapodial, and a first phalanx (YG: Yukon Territory); and a premolar tooth (University of Texas El Paso, UTEP: New Mexico); (Figure 2—figure supplements 1–4 and Supplementary file 1; (Barrón-Ortiz et al., 2017; Weinstock et al., 2005). This material includes at least four males and at least six females (Appendix 2, Appendix 2—Table 4 and Appendix 2—Table 4—source data 1). We further assign MTIII specimens from Yukon Territory (n = 13), Wyoming (n = 57), and Nevada (n = 4) to Haringtonhippus on the basis of morphometric analysis (Figure 2c and Figure 2—source data 1). On the basis of short mitochondrial DNA sequences, we tentatively assign to Haringtonhippus a premolar tooth (LACM(CIT): Nuevo Leon); a premolar and a molar (UTEP: New Mexico); and a premolar (Royal Alberta Museum, RAM/PMA: Alberta) (Barrón-Ortiz et al., 2017). We also tentatively assign 19 NWSL equid metapodial specimens from the Fairbanks area, Alaska (Guthrie, 2003) to Haringtonhippus, but note that morphometric and/or palaeogenomic analysis would be required to confirm this designation.
 
-## Geographic and temporal distribution
+#### Geographic and temporal distribution
 
 Haringtonhippus is known only from the Pleistocene of North America (Figure 3). In addition to the middle Pleistocene holotype from Texas, Haringtonhippus is confidently known from the late Pleistocene of Yukon Territory (Klondike region), Wyoming (Natural Trap Cave), Nevada (Gypsum Cave, Mineral Hill Cave), and New Mexico (Dry Cave), and is tentatively registered as present in Nuevo Leon (San Josecito Cave), Alberta (Edmonton area), and Alaska (Fairbanks area) (Appendix 2, Supplementary file 1, and Appendix 2—table 3; [Barrón-Ortiz et al., 2017; Vilstrup et al., 2013; Weinstock et al., 2005]).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/29944/elife-29944-fig3-v1.jpg)
 
-**Figure 3.:** Haringtonhippus.Blue circles are east Beringian localities (KL: Klondike region, Yukon Territory, Canada). Red circles are contiguous USA localities (NTC: Natural Trap Cave, Wyoming, USA; GC: Gypsum Cave, Nevada, USA; MHC: Mineral Hill Cave, Nevada, USA; DC: Dry Cave, New Mexico, USA [Barrón-Ortiz et al., 2017; Weinstock et al., 2005]). Orange circles are localities with tentatively assigned Haringtonhippus specimens only (FB: Fairbanks, Alaska, USA; ED: Edmonton, Alberta, Canada, USA; SJC: San Josecito Cave, Nuevo Leon, Mexico; (Barrón-Ortiz et al., 2017; Guthrie, 2003). The green-star-labeled HT is the locality of the francisci holotype, Wharton County, Texas, USA. This figure was drawn using Simplemappr (Shorthouse, 2010).
+**Figure 3.:** Blue circles are east Beringian localities (KL: Klondike region, Yukon Territory, Canada). Red circles are contiguous USA localities (NTC: Natural Trap Cave, Wyoming, USA; GC: Gypsum Cave, Nevada, USA; MHC: Mineral Hill Cave, Nevada, USA; DC: Dry Cave, New Mexico, USA [Barrón-Ortiz et al., 2017; Weinstock et al., 2005]). Orange circles are localities with tentatively assigned Haringtonhippus specimens only (FB: Fairbanks, Alaska, USA; ED: Edmonton, Alberta, Canada, USA; SJC: San Josecito Cave, Nuevo Leon, Mexico; (Barrón-Ortiz et al., 2017; Guthrie, 2003). The green-star-labeled HT is the locality of the francisci holotype, Wharton County, Texas, USA. This figure was drawn using Simplemappr (Shorthouse, 2010).
 
 To investigate the last appearance date (LAD) of Haringtonhippus in eastern Beringia, we obtained new radiocarbon dates from 17 Yukon Territory fossils (Appendix 1 and Supplementary file 1). This resulted in three statistically-indistinguishable radiocarbon dates of ~14.4 14C ka BP (derived from two independent laboratories) from a metacarpal bone (YG 401.235) of Haringtonhippus, which represents this taxon’s LAD in eastern Beringia (Supplementary file 1). The LAD for North America as a whole is based on two dates of ~13.1 14C ka BP from Gypsum Cave, Nevada (Supplementary file 1; [Weinstock et al., 2005]).
 
-## Mitogenomic diagnosis
+#### Mitogenomic diagnosis
 
 Haringtonhippus is the sister genus to Equus (equid crown group), with Hippidion being sister to the Haringtonhippus-Equus clade (Figure 1). Haringtonhippus can be differentiated from Equus and Hippidion by 178 synapomorphic positions in the mitochondrial genome, including four insertions and 174 substitutions (Appendix 1—Table 2 and Appendix 1—table 2—source data 1). We caution that these synapomorphies are tentative and will likely be reduced in number as a greater diversity of mitochondrial genomes for extinct equids become available.
 
-## Morphological comparisons of third metatarsals
+#### Morphological comparisons of third metatarsals
 
 We used morphometric analysis of caballine/stout-legged Equus and stilt-legged equids (hemionine/stilt-legged Equus, Haringtonhippus) MTIIIs to determine how confidently these groups can be distinguished (Figure 2c). Using logistic regression on principal components, we find a strong separation that can be correctly distinguished with 98.2% accuracy (Appendix 2; Heintzman et al., 2017). Hemionine/stilt-legged Equus MTIIIs occupy the same morphospace as H. francisci in our analysis, although given a larger sample size, it may be possible to discriminate E. hemionus from the remaining stilt-legged equids. We note that Haringtonhippus seems to exhibit a negative correlation between latitude and MTIII length, and that specimens from the same latitude occupy similar morphospace regardless of whether DNA- or morphological-based identification was used (Figure 2c and Figure 2—source data 1).
 
-## Comments
+#### Comments
 
 On the basis of morphology, we assign all confidently referred material of Haringtonhippus to the single species H. francisci Hay (1915) (Appendix 2). Comparison between the cranial anatomical features of LACM(CIT) 109/156450 and TMM 34–2518 reveal some minor differences, which can likely be ascribed to intraspecific variation (Figure 2a and Appendix 2 and Figure 2—figure supplement 1). Further, the MTIII of TMM 34–2518 is comparable to the MTIIIs ascribed to Haringtonhippus by palaeogenomic data, and is consistent with the observed latitudinally correlated variation in MTIII length across Haringtonhippus (Figure 2c and Appendix 2).
 
@@ -118,7 +154,7 @@ This action is supported indirectly by molecular evidence, namely the lack of mi
 
 ## Discussion
 
-## Reconciling the genomic and fossil records of Plio-Pleistocene equid evolution
+### Reconciling the genomic and fossil records of Plio-Pleistocene equid evolution
 
 The suggested placement of NWSL equids within a taxon (Haringtonhippus) sister to Equus is a departure from previous interpretations, which variably place the former within Equus, as sister to hemionines or caballine horses (Figure 1). According to broadly accepted palaeontological interpretations, the earliest equids exhibiting morphologies consistent with NWSL and caballine attribution appear in the fossil record only ~2–3 and ~1.9–0.7 Ma ago (Eisenmann et al., 2008; Forsten, 1992), respectively, whereas our divergence estimates suggest that these lineages to have diverged between 4.1–5.8 and 3.8–4.5 Ma, most likely in North America. Dating incongruence might be attributed to an incomplete fossil record, but this seems unlikely given the density of the record for late Neogene and Pleistocene horses. Conversely, incongruence might be attributed to problems with estimating divergence using genomic evidence. However, we emphasize that the NWSL-Equus split is robustly calibrated to the caballine/non-caballine Equus divergence at 4.0–4.5 Ma, which is in turn derived from a direct molecular clock calibration using a middle Pleistocene horse genome (Orlando et al., 2013).
 
@@ -126,13 +162,13 @@ Other possibilities to explain the incongruence include discordance between the 
 
 Although we can offer no solution to the general problem of mismatches between molecular and morphological divergence estimators–an issue scarcely unique to equid systematics–this model predicts that some previously described North American Pliocene and early Pleistocene Equus species (e.g. E. simplicidens, E. idahoensis; [Azzaroli and Voorhies, 1993]), or specimens thereof, may be ancestral to extant Equus and/or late Pleistocene Haringtonhippus.
 
-## Temporal and geographic range overlap of Pleistocene equids in North America
+### Temporal and geographic range overlap of Pleistocene equids in North America
 
 Three new radiocarbon dates of ~14.4 14C ka BP from a Yukon Haringtonhippus fossil greatly extends the known temporal range of this genus in eastern Beringia. This result demonstrates, contrary to its previous LAD of 31,400 ± 1200 14C years ago (AA 26780; [Guthrie, 2003]), that Haringtonhippus survived throughout the last glacial maximum in eastern Beringia (Clark et al., 2009) and may have come into contact with humans near the end of the Pleistocene (Goebel et al., 2008; Guthrie, 2006). These data suggest that populations of stilt-legged Haringtonhippus and stout-legged caballine Equus were sympatric, both north and south of the continental ice sheets, through the late Pleistocene and became extinct at roughly the same time. The near synchronous extinction of both horse groups across their entire range in North America suggests that similar causal mechanisms may have led each to their demise.
 
 The sympatric nature of these equids raises questions of whether they managed to live within the same community without hybridizing or competing for resources. Extant members of the genus Equus vary considerably in the sequence of Prdm9, a gene involved in the speciation process, and chromosome number (karyotype) (Ryder et al., 1978; Steiner and Ryder, 2013), and extant caballine and non-caballine Equus rarely produce fertile offspring (Allen and Short, 1997; Steiner and Ryder, 2013). It is unlikely, therefore, that the more deeply diverged Haringtonhippus and caballine Equus would have been able to hybridize. Future analysis of high coverage nuclear genomes, ideally including an outgroup such as Hippidion, will make it possible to test for admixture that may have occurred soon after the lineages leading to Haringtonhippus and Equus diverged, as occurred between the early caballine and non-caballine Equus lineages (Jónsson et al., 2014). It may also be possible to use isotopic and/or tooth mesowear analyses to assess the potential of resource partitioning between Haringtonhippus and caballine Equus in the New World.
 
-## Fossil systematics in the palaeogenomics and proteomics era: concluding remarks
+### Fossil systematics in the palaeogenomics and proteomics era: concluding remarks
 
 Fossils of NWSL equids have been known for more than a century, but until the present study their systematic position within Plio-Pleistocene Equidae was poorly characterized. This was not because of a lack of interest on the part of earlier workers, whose detailed anatomical studies strongly indicated that what we now call Haringtonhippus was related to Asiatic wild asses, such as Tibetan khulan and Persian onagers, rather than to caballine horses (Eisenmann et al., 2008; Guthrie, 2003; Scott, 2004; Skinner and Hibbard, 1972). That the cues of morphology have turned out to be misleading in this case underlines a recurrent problem in systematic biology, which is how best to discriminate authentic relationships within groups, such as Neogene equids, that were prone to rampant convergence. The solution we adopted here was to utilize both palaeogenomic and morphometric information in reframing the position of Haringtonhippus, which now clearly emerges as the closest known outgroup to all living Equus.
 
@@ -142,19 +178,19 @@ Our success in this regard demonstrates that an approach which incorporates phen
 
 We provide an overview of methods here; full details can be found in Appendix 1.
 
-## Sample collection and radiocarbon dating
+### Sample collection and radiocarbon dating
 
 We recovered Yukon fossil material (17 Haringtonhippus francisci, two Equus cf. scotti, and two E. lambei; Supplementary file 1) from active placer mines in the Klondike goldfields near Dawson City. We further sampled seven H. francisci fossils from the contiguous USA that are housed in collections at the University of Kansas Biodiversity Institute (KU; n = 4), Los Angeles County Museum of Natural History (LACM(CIT); n = 2), and the Texas Vertebrate Paleontology Collections at The University of Texas (TMM; n = 1). We radiocarbon dated the Klondike fossils and the H. francisci cranium from the LACM(CIT) (Supplementary file 1).
 
-## Morphometric analysis of third metatarsals
+### Morphometric analysis of third metatarsals
 
 For morphometric analysis, we took measurements of third metatarsals (MTIII) and other elements. We used a reduced data set of four MTIII variables for principal components analysis and performed logistic regression on the first three principal components, computed in R (R Development Core Team, 2008) (Source code 1).
 
-## DNA extraction, library preparation, target enrichment, and sequencing
+### DNA extraction, library preparation, target enrichment, and sequencing
 
 We conducted all molecular biology methods prior to indexing PCR in the dedicated palaeogenomics laboratory facilities at either the UC Santa Cruz or Pennsylvania State University. We extracted DNA from between 100 and 250 mg of bone powder following either Rohland et al. (2010) or Dabney et al. (2013a). We then converted DNA extracts to libraries following the Meyer and Kircher protocol (Meyer and Kircher, 2010), as modified by (Heintzman et al., 2015) or the PSU method of (Vilstrup et al., 2013). We enriched libraries for equid mitochondrial DNA. We then sequenced all enriched libraries and unenriched libraries from 17 samples using Illumina platforms.
 
-## Mitochondrial genome reconstruction and analysis
+### Mitochondrial genome reconstruction and analysis
 
 We prepared raw sequence data for alignment and mapped the filtered reads to the horse reference mitochondrial genome (Genbank: NC_001640.1) and a H. francisci reference mtDNA genome (Genbank: KT168321), resulting in mitogenomic coverage ranging from 5.8× to 110.7× (Supplementary file 1). We were unable to recover equid mtDNA from TMM 34–2518 (the francisci holotype) using this approach (Appendix 2). We supplemented our mtDNA genome sequences with 38 previously published complete equid mtDNA genomes. We constructed six alignment data sets and selected models of molecular evolution for the analyses described below (Appendix 1—table 1, and Supplementary file 1; Heintzman et al., 2017).
 
@@ -162,7 +198,7 @@ We tested the phylogenetic position of the NWSL equids (=H. francisci) using mtD
 
 To facilitate future identification of equid mtDNA sequences, we constructed, using data set six, a list of putative synapomorphic base states, including indels and substitutions, that define the genera Hippidion, Haringtonhippus, and Equus at sites across the mtDNA genome.
 
-## Phylogenetic inference, divergence date estimation, and sex determination from nuclear genomes
+### Phylogenetic inference, divergence date estimation, and sex determination from nuclear genomes
 
 To test whether our mtDNA genome-based phylogenetic hypothesis truly reflects the species tree, we compared the nuclear genomes of a horse (EquCab2), donkey (Orlando et al., 2013), and the shotgun sequence data from 17 of our NWSL equid samples (Figure 1—source data 2, Appendix 1, Appendix 1—figure 1, and Supplementary file 1). We applied four successive approaches, which controlled for reference genome and DNA fragment length biases (Appendix 1).
 
@@ -170,14 +206,14 @@ We estimated the divergence between the NWSL equids and Equus (horse and donkey)
 
 We determined the sex of the 17 NWSL equid samples by comparing the relative mapping frequency of the autosomes to the X chromosome.
 
-## DNA damage analysis
+### DNA damage analysis
 
 We assessed the prevalence of mitochondrial and nuclear DNA damage in a subset of the equid samples using mapDamage (Jónsson et al., 2013).
 
-## Data availability
+### Data availability
 
 Repository details and associated metadata for curated samples can be found in Supplementary file 1. MTIII and other element measurement data are in Figure 2—source data 1, and the Rscript used for morphometric analysis is in the DRYAD database (Heintzman et al., 2017). MtDNA genome sequences have been deposited in Genbank under accessions KT168317-KT168336, MF134655-MF134663, and an updated version of JX312727. All mtDNA genome alignments (in NEXUS format) and associated XML and TREE files are in the DRYAD database (Heintzman et al., 2017). Raw shotgun sequence data used for the nuclear genomic analyses and raw shotgun and target enrichment sequence data for TMM 34–2518 (francisci holotype) have been deposited in the Short Read Archive (BioProject: PRJNA384940).
 
-## Nomenclatural act
+### Nomenclatural act
 
 The electronic edition of this article conforms to the requirements of the amended International Code of Zoological Nomenclature, and hence the new name contained herein is available under that Code from the electronic edition of this article. This published work and the nomenclatural act it contains have been registered in ZooBank, the online registration system for the ICZN. The ZooBank LSIDs (Life Science Identifiers) can be resolved and the associated information viewed through any standard web browser by appending the LSID to the prefix ‘http://zoobank.org/'. The LSID for this publication is: urn:lsid:zoobank.org:pub:8D270E0A-9148-4089-920C-724F07D8DC0B. The electronic edition of this work was published in a journal with an ISSN, and has been archived and is available from the following digital repositories: PubMed Central and LOCKSS.

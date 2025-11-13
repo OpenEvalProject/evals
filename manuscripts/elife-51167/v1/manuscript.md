@@ -44,7 +44,7 @@ As a result of this planning process we have developed a research roadmap that f
 
 **Figure 1.:** The ASAP initiative will support collaboration between the existing PD research community and other researchers, generate resources for research, and make data widely available. It will fund research in the three themes shown above, as well as research on how these themes influence the progression of PD.
 
-## Objective 1: Supporting meaningful collaboration
+### Objective 1: Supporting meaningful collaboration
 
 For almost a century curiosity-driven basic science – mostly on projects initiated by individual investigators – has been the engine of advance in biomedicine. And yet, for certain difficult problems that require a variety of skills to tackle, a team effort may be preferable. This approach is made more difficult in academic science today by a reward structure that favors the individual over the team. Research laboratories, led by a single faculty member, compete for attention as measured too often by first-author and senior-author positions on papers published in so-called high-profile journals. This has led to a decline in both the rigor of scientific research and its creative output (Alberts et al., 2014). Meanwhile, it is increasingly recognized that certain problems can only be solved if researchers from different disciplines work together. This has resulted in a growing body of literature on successful collaboration, particularly in sectors such as biotech, where team effort moves specific goals forward.
 
@@ -60,13 +60,13 @@ Successful teams will be selected on the basis of several criteria meant to eval
 
 The research program will be managed to encourage cooperation and collaboration amongst investigators and funders alike, to reduce redundancy, and enable researchers to pursue their most ambitious ideas. We will award up to $9m per team over three years, with a possible extension to five years with additional funds, to eligible teams that bring truly diverse expertise to bear on fundamental aspects of PD disease mechanisms. We have no target number of teams to fund. Our decisions will be based entirely on the quality of the teams and of their proposals.
 
-## Objective 2: Generating research resources
+### Objective 2: Generating research resources
 
 To date, no simple biomarker can conveniently be applied to patients, family members, or to those who present with hyposmia and REM sleep disorder, which have been observed to precede motor symptoms in PD. And even for the traditional morphologic hallmark of the disease, brain Lewy bodies, no non-invasive probe is available. Diagnosis is made by microscopic inspection of a tissue biopsy taken on the death of a patient. Patients and their family members must rely on cognitive and behavioral diagnosis; absent a window into underlying biological processes, the uncertain path of the disease precludes any long-term planning. Chemical, protein or cellular biomarkers could reveal distinct types of PD and allow quantitative assessment of their progression. At a deeper level, the identification of predictable molecular changes may lead to new approaches to define the origin and mechanism of progression of the disease.
 
 To enable biomarker discovery, ASAP will fund the establishment of research-enabling tools and platforms (such as isogenic induced pluripotent stem cell lines and longitudinal patient cohorts) to fuel mechanistic studies using human samples. We will enlarge the effort to identify biomarkers that can quantitatively measure disease progression. Further, ASAP will support the ongoing search for new genetic determinants of PD in ethnically diverse populations to bolster the search for rational drug targets and refine our understanding of disease risk. An initial investment of $150 m over the next five years will kick-off this work. These efforts aim to serve the entire neuroscience community – they are not limited to groups funded by ASAP.
 
-## Objective 3: Democratizing data
+### Objective 3: Democratizing data
 
 Large-scale data-sharing and analysis is frequently hampered by the difficulty of integrating complex datasets: as a result, the effort required to pool and standardize large datasets often overwhelms individual investigators. ASAP will address these issues by making data and other research objects discoverable, publicly available, and fully integrated into the PD data ecosystem.
 
@@ -76,19 +76,19 @@ We expect to generate enormous datasets through projects such as the evaluation 
 
 ASAP will focus on three scientific themes discussed below, with the influence of these processes on the progression of PD being an important fourth theme.
 
-## Theme 1: Biology of PD-associated genes
+### Theme 1: Biology of PD-associated genes
 
 Genome-wide association studies have identified nearly 90 risk loci for PD, perhaps 20 of which are considered causal (Nalls, 2019). With current estimates attributing up to 30% of PD risk to genetic influences, a great deal of interest has developed around the functional significance of genes such as SNCA, GBA, LRRK2, PINK1, and PARKIN in normal cellular processes with obvious relevance to PD. What about the many other genes that are now being uncovered? Do they fit into a single neat pathway or, more likely, which pathways intervene to produce the spectrum of PD pathology? This molecular effort must be extended to brain circuits functionally linked to dopaminergic neurons in order to place the influences of these gene products in a physiologic context. Which experimental systems will best characterize the roles of these gene products: biochemical, cellular, brain organoid or animal models? Are specific genetic influences involved in the progression of roughly 30% of PD patients to dementia?
 
-## Theme 2: Neuro-immune interactions
+### Theme 2: Neuro-immune interactions
 
 Neuroinflammation has long been implicated in PD, however the underlying molecular mechanisms mediating this process remain unknown (McGeer et al., 1988). In Alzheimer’s disease, this development has enabled genetic studies that implicate microglial cells, a primary component of the brain’s innate immune system, in the inflammatory response to neurodegeneration (Schapansky et al., 2015). Could these cells be responsible for clearing Lewy bodies or could extrinsic factors unleash an attack on dopaminergic neurons? Recent research suggests that PD is not purely a neurodegenerative disease of the brain, but involves peripheral organ systems including the immune system and microbiome.
 
-## Theme 3: Circuitry and brain-body interactions
+### Theme 3: Circuitry and brain-body interactions
 
 The recent understanding of PD as a multisystem disorder requires a more holistic approach that considers the interactions of various systems involved in the condition. This analysis must consider neuromodulatory dysfunction beyond dopamine, the substantia nigra, and other deep brain regions to include interactions across the entirety of the central and peripheral nervous systems. This will enable a better understanding of what potentiates motor and non-motor symptoms associated with the disease. It would be interesting to explore how new tools developed through the BRAIN Initiative could be integrated into basic PD research.
 
-## Theme 4: Progression
+### Theme 4: Progression
 
 It is increasingly recognized that by the time a patient is diagnosed, the pathophysiology of PD has been set in motion for years, possibly decades. The fact that 60–80% of dopamine-producing neurons in the substantia nigra have already degenerated upon diagnosis (Fearnley and Lees, 1991; Pakkenberg et al., 1991), and that non-motor precursor symptoms can be identified up to 20 years prior to that point, suggest that there may be opportunities to identify the presence of PD in early stages and intervene before the onset of symptoms. Yet, we know very little about how the brain becomes gradually compromised at the cellular level. This in turn limits our ability to identify biomarkers and develop mechanism-based diagnostic tools. This research area is interconnected with each of the aforementioned themes, as progression affects every aspect of the underlying disease pathology.
 

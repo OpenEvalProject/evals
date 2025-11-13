@@ -20,11 +20,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01g9ty582 Semmelweis University, Department of Genetics, Cell- and Immunobiology Budapest Hungary
-2. https://ror.org/01jsq2704 ELTE Eötvös Loránd University, Department of Plant Physiology and Molecular Plant Biology Budapest Hungary
+1. Semmelweis University, Department of Genetics, Cell- and Immunobiology Budapest Hungary ([ROR:01g9ty582](https://ror.org/01g9ty582))
+2. ELTE Eötvös Loránd University, Department of Plant Physiology and Molecular Plant Biology Budapest Hungary ([ROR:01jsq2704](https://ror.org/01jsq2704))
 3. HUN-REN-SU Translational Extracellular Vesicle Research Group Budapest Hungary
-4. https://ror.org/01jsgmp44 Laboratory of Neuroimmunology, HUN-REN Institute of Experimental Medicine Budapest Hungary
-5. https://ror.org/01jsq2704 ELTE Eötvös Loránd University, Department of Anatomy, Cell and Developmental Biology Budapest Hungary
+4. Laboratory of Neuroimmunology, HUN-REN Institute of Experimental Medicine Budapest Hungary ([ROR:01jsgmp44](https://ror.org/01jsgmp44))
+5. ELTE Eötvös Loránd University, Department of Anatomy, Cell and Developmental Biology Budapest Hungary ([ROR:01jsq2704](https://ror.org/01jsq2704))
 6. Department of Image Analysis, 3DHISTECH Ltd Budapest Hungary
 7. HCEMM-SU Extracellular Vesicle Research Group, Hungary Budapest Hungary
 
@@ -44,11 +44,47 @@ In this study, we analyzed in situ fixed, cultured cells with the released EVs p
 
 By the analysis of transmission electron micrographs of all tested cell types, we identified budding (Figure 1A–G) and secretion (Figure 1H–N) of MV-lEVs carrying ILVs. Importantly, in all cases we found evidence for the extracellular rupture of the limiting membrane of MV-lEVs and the release of ILVs (Figure 1O–U). For this novel type of sEV release, we suggest the designation ‘torn bag mechanism’, which is distinct from the exocytosis of MVBs and amphisomes (Buzas, 2023; Théry et al., 2018; Welsh et al., 2024; Jeppesen et al., 2019) and from the release of plasma membrane-derived sEVs by ectocytosis (Mathieu et al., 2021).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/95828/elife-95828-fig1-v1.jpg)
+
+**Figure 1.:** Major steps of the release of MV-lEVs were detected in the case of all tested cell lines including the immortal, non-tumorous HEK293T-PalmGFP (A, H, O), HEK293 (B, I, P), the tumorous cell lines HepG2 (C, J, Q) and HT29 (D, K, R), the beating cardiomyocyte cell line HL1 (E, L, S) and the primary suspension of bone marrow-derived mast cells (BMMCs) (F, M, T). The different phases of EV secretion were also captured in the circulation of mouse kidney (V) and liver (W, X). According to the electron micrographs, we found evidence for the budding (A–G, X) and secretion (H–N, V, W) of the MV-lEVs. We also detected the extracellular rupture of the limiting membrane of the released MV-lEVs with the escape of the intraluminal vesicles (ILVs) by a ‘torn bag mechanism’ (O–U, V). Although it is not always clear whether the secreted MV-lEVs have a single or double limiting membrane, several micrographs suggest the presence of the double membrane (Y–AF) in the secreted MV-lEVs. In the case of BMMCs (Y), the release phase of a multivesicular structure is captured. The bottom portion of this structure embedded in the cytoplasm is surrounded by a single membrane (white arrowhead) while the upper (budding) portion is covered by double membrane (asterisk). In the schematic figures (G, N, U) the limiting membrane of MV-lEV presumably with plasma membrane origin was indicated by red, the original limiting membrane of intracellular amphisomes, which may be fragmented during the release process was indicated by blue while the ILVs of the MV-lEV were shown by gray color. Panel G was created with BioRender.com. Panel N was created with BioRender.com. Panel U was created with BioRender.com.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95828/elife-95828-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** For further evaluation of the presence of different extracellular vesicles (EVs) in mouse kidney (A–E) and liver (F–I), low and high magnification images are shown. Presence of individual small and large EVs is indicated by asterisk in the case of mouse kidney (A, C, D) and mouse liver (F, H, I). The multivesicular large EVs (MV-lEVs) and individual EVs were present simultaneously (C, D, F, H, I). In the mouse liver ultrathin section (G), MV-lEV secretion by endothelial and subendothelial cells (black and white arrow heads, respectively) were detectable in the same image.
+
 Most relevant to the in vivo conditions, we also observed the same phenomenon within the ultrathin sections of both murine kidney (Figure 1V) and liver (Figure 1W and X). In these cases, both the intact MV-lEVs (Figure 1V–X) and the ‘torn bag release’ of sEVs (Figure 1V) were detected. Figure 1X shows that a circulating leukocyte releases MV-lEVs by ectocytosis. In Figure 1—figure supplement 1, MV-lEVs, lEVs, and sEVs were captured simultaneously in both kidney (Figure 1—figure supplement 1C and D) and liver (Figure 1—figure supplement 1F, H, I). In the mouse liver section (Figure 1—figure supplement 1G), MV-lEV secretion by both endothelial and subendothelial cells can be detected.
 
 Based on the transmission electron microscopy (TEM) analysis of ultrathin sections, it was not always obvious whether the secreted MV-lEVs had a single or double membrane. However, several micrographs suggested an at least partially intact double membrane (Figure 1Y-AF) of MV-lEVs. In the case of BMMCs (Figure 1Y), the release phase of a multivesicular structure is captured. The bottom portion of this structure, embedded in the cytoplasm, is surrounded by a single membrane while the upper (budding) portion is covered by double membrane. We hypothesize that disruption of the original amphisome membrane mainly occurs after separation of the MV-lEV from the cell to avoid the release of ILVs inside the cell.
 
 Next, we decided to further investigate the subcellular origin of the ILVs within the secreted MV-lEVs. First, we analyzed the microenvironment of in situ fixed HEK293T-PalmGFP cells by confocal microscopy. The PalmGFP signal of HEK293T-PalmGFP cells principally associates with the plasma membrane (Kovács et al., 2023; Figure 2—figure supplement 1A–C), therefore the green fluorescence helped us to identify the plasma membrane-derived limiting membrane of MV-lEVs. In agreement with our previous findings on HT29 colorectal cancer cells, within the MV-lEVs, we found CD63/ALIX (Figure 2A and G), CD81/ALIX (Figure 2B and H), CD63/TSG101 (Figure 2C and I), and CD81/TSG101 (Figure 2D and J) double positive ILVs or ILV clusters.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/95828/elife-95828-fig2-v1.jpg)
+
+**Figure 2.:** Widely used sEV markers (CD63, CD81, ALIX, and TSG101) and LC3B were tested in multivesicular large EVs (MV-lEVs) found in the microenvironment of the releasing cells by confocal microscopy after in situ fixation (A–F). Normalized fluorescence intensities were calculated to determine the relative localization of the limiting membrane (PalmGFP), the conventional sEV markers, and the LC3B signal (G–L). Fluorescence intensity peaks of sEV markers were largely overlapping with each other, while the LC3B signal and the sEV markers showed separation. Co-localization rates were also calculated (M). The sEV markers co-localized with one another as no significant difference was found among them. In contrast, low co-localization rates were detected between the ‘classical’ sEV markers and LC3B (one-way ANOVA, p<0.0001, n=8-26 confocal images). Error bars represent standard deviation. Real-time release of LC3 positive sEVs by the ‘torn bag mechanism’ was studied in the case of HEK293T-PalmGFP-LC3RFP cells by Elyra7 SIM2 super-resolution live-cell imaging (N,O). Images were recorded continuously and selected serial time points are shown. LC3 positive, red fluorescent small particles were released within a 5 min timeframe (O) and are indicated by white arrows. Presence of CD63 and LC3B were detected in the case of an sEV fraction separated from serum-free condition medium using immunogold transmission electron microscopy (TEM). HEK293T-PalmGFP-derived sEV fraction is shown by negative-positive contrast without immune labeling (P). In double-labeled immunogold TEM images (Q, R), distinct LC3B positive (Q) and CD63 positive (R) sEVs were found. However, CD63-LC3B double positive EVs were not detected. Black arrowheads indicate 10 nm gold particles identifying LC3B, while white arrowheads show 5 nm gold particles corresponding to the presence of CD63. Quantitative analysis of TEM images was performed (S), and the diameters of different EV populations were determined. The LC3B negative population was significantly smaller than the LC3B positive one (p<0.0001, t-test; n=79–100). No difference was detected when the immunogold labeled sEV fraction (either LC3B positive or negative, LC3B+/-) and the unlabeled sEV fraction (sEV) were compared (p<0.05, t-test, n=112–179).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95828/elife-95828-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The GFP positivity of the HEK293TPalmGFP cells was controlled by immunofluorescence microscopy on control (A) and 30 µM Chloroquine-treated (B) cells. Co-localization of PalmGFP and the anti-GFP signal was calculated in the plasma membrane and in the cytoplasm (C) and Pearson’s correlations were visualized. The green fluorescence in the plasma membrane was clearly GFP-dependent in the case of control (Ctrl Membrane) and Chloroquine-treated (Chloro Membrane) samples, while in the cytoplasm, the correlation was significantly weaker (Ctrl Cytoplasm and Chloro Cytoplasm). Within the cytoplasm, the correlation was stronger in Chloroquine-treated cells, suggesting that endosomal membrane may contain PalmGFP possibly as a result of the membrane endocytotic or recycling processes (p<0.0001, t-test; n = 45). Error bars represent standard deviation.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/95828/elife-95828-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The intraluminal extracellular vesicles (EVs) of multivesicular large EVs (MV-lEVs) were found to be positive for LC3B and CD81 in HepG2 (A) and HT29 cells (D). The presence of ALIX/CD81 (B) and TSG101/CD63 (C) was also examined in the released amphiectosomes of the HepG2 cell line. In the case of HT29 cells, phases of the ‘torn bag mechanism’ were captured, including a secreted intact amphiectosome (E), amphiectosomes with ruptured limiting membrane releasing internal vesicles (G, white arrow), an inside-out secreted amphiectosome (H, white arrow), and an amphiectosome with a fully disintegrated limiting membrane and released small EVs (sEVs) (F). Co-localization rates of marker proteins were calculated (I). The typical sEV markers of HepG2 co-localized with each other. A significant difference was not found among them. In contrast, low co-localization rates were detected between the ‘classical’ sEV markers (CD63 and CD81) and LC3B. The co-localization rates between ‘classical’ sEV markers (LC3B) and within ‘classical’ EV markers (TSG101-CD63 and ALIX-CD81) were found significantly different (one-way ANOVA, p<0.0001, n=11–17 confocal images). Error bars represent standard deviation.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/95828/elife-95828-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Released amphiectosomes of H9c2 rat cardiomyoblast cell line were captured. They contain CD63, CD81, or LC3B positive intraluminal vesicles (ILVs) (A, B). The MV-lEVs released by HEK293T-PalmGFP (C) and HepG2 cells (D) were tested for CD63 and the Rab7 late endosomal marker. Both CD63 and Rab7 were present in association with the ILVs.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/95828/elife-95828-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Whole-cell lysates from three distinct human cell lines (HEK293, HepG2, and HT29) were employed in the validation process to reduce the cell line-specific variations in this qualitative study. Protein bands lacking posttranslational modifications are noted as ‘w/o PTM’. The found posttranslational modifications of CD63 and CD81 are widely and well recognized, the results are in agreement with the western blot data provided by the antibody suppliers.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/95828/elife-95828-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Confocal microscopy (A) and western blot analysis (B) were employed to characterize the HEK293T-PalmGFP-LC3RFP cell line. For overnight Chloroquine treatment, 30 μM Chloroquine was applied. Punctate LC3 fluorescence observed in (A) corresponds to autophagosomes or amphisomes. In panel (B), whole-cell lysates from HEK293T-PalmGFP (lane i), HEK293T-PalmGFP-LC3RFP (lane ii), and Chloroquine-treated HEK293T-PalmGFP-LC3RFP (lane iii) samples were examined. Gray arrows indicate LC3I, while black arrows highlight the lipidated LC3II.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/95828/elife-95828-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** Multivesicular body (MVB, A), autophagosome (B), amphisome (C), amphiectosome (D), and secreted small extracellular vesicles (sEVs) (E) were identified by transmission electron microscopy (TEM) with and without immunogold labeling of HEK293T-PalmGFP cell cultures. Panel A was created with BioRender.com. Panel B was created with BioRender.com. Panel C was created with BioRender.com. Panel D was created with BioRender.com. Panel E was created with BioRender.com. White arrowheads (5 nm gold particles) indicate CD63 and black arrowheads (10 nm gold particles) show LC3B. While MVBs (F) were LC3B negative (K), we detected CD63 positivity on the surface of the intraluminal vesicles (ILVs) (K). In an autophagosome (G), the limiting membrane layers were positive for CD63 and LC3B (L). In contrast, the internal membranes of autophagosome were CD63 single positive (L). In the case of an amphisome (H), heterogeneous membrane structures were visible with variable size and morphology. The ILVs were either CD63 or LC3B positive (M). The amphiectosomes were located in the extracellular space and contained ILVs of different size and shape (I). The ILVs of amphiectosome (as in case of amphisome) were either CD63 or LC3B positive (N). Secreted sEVs purified from serum-free conditioned medium (J) with immunogold labeling (O) were also found to be either CD63 or LC3B positive. Release of an amphiectosome is shown (P) with CD63 and LC3B immunogold signals. Higher magnification of the insert is indicated by the black rectangle. It shows either CD63 or LC3B positive ILVs. Size distributions of ILVs of MVBs, amphisomes, and amphiectosomes were determined on Epon-embedded ultrathin sections (Q). Although the ILV sizes differed significantly (one-way ANOVA, ****: p<0.0001, n=73, 138, and 595, respectively), the majority of ILVs had a diameter between 40 and 100 nm. The diameter of LC3B positive and negative ILVs of amphiectosomes was assessed on TEM images of immunogold labeled ultrathin sections (R). LC3B negative ILVs were significantly smaller than the LC3B positive ones, while the ILVs in the Epon-embedded sections did not differ from the LC3B positive ones (one-way ANOVA, p<0.001, n = 595, 101, and 70, respectively).
 
 We also studied the possible autophagy-related aspects of the secreted MV-lEVs. ILVs were tested for the autophagy marker LC3B in parallel with CD63 and CD81. Although LC3B, CD63, and CD81 were all present in association with the ILVs (Figure 2E and F), the LC3B and CD63 (Figure 2K) and the LC3B and CD81 (Figure 2L) signals did not overlap. Figure 2M shows that while the known sEV markers (CD63, CD81, TSG101, and ALIX) strongly co-localized with each other, LC3B positivity hardly showed co-localization with CD63 or CD81. Immunocytochemistry analysis of HT29, HepG2, and the cardiomyoblast H9c2 cells further validated the findings obtained with the HEK293T-PalmGFP cells (Figure 2—figure supplements 2 and 3). The ILVs of HEK293T-PalmGFP and HepG2 cell lines were also Rab7 positive (Figure 2—figure supplement 3A and B), suggesting a late endosomal origin. Western blotting of the applied antibodies is summarized in Figure 2—figure supplement 4.
 
@@ -59,6 +95,14 @@ To conclude our marker studies, we detected the presence of CD63, CD81, TSG101, 
 The ‘torn bag mechanism’ was also monitored by live-cell SIM2 super-resolution microscopy analysis of HEK293T-PalmGFP-LC3RFP cells (Figure 2N and O). The release of the LC3 positive red fluorescent signal was detected within a relatively short period of time (the first LC3 positive ILVs left the amphiectosome within 40 s, the whole ‘torn bag’ sEV release process was completed within 260 s) (Figure 2O). We could rule out the possibility that rupture of the limiting membrane detected by TEM (Figure 1O–T, V) was a fixation artifact by showing the spontaneous release of LC3 positive sEVs from amphiectosomes with live-cell imaging. Characterization of the in-house developed HEK293T-PalmGFP-LC3RFP cell line is shown in Figure 2—figure supplement 5.
 
 In the following step, we addressed the question whether LC3, associated with the ILVs of MV-lEVs, indeed reflected autophagy origin. We tested MVBs (Figure 2—figure supplement 6A, F, and K), autophagosomes (Figure 2—figure supplement 6B, G, and L), amphisomes (Figure 2—figure supplement 6C, H, and M), amphiectosomes (Figure 2—figure supplement 6D, I, and N), and isolated sEV fractions of the same cells (Figure 2—figure supplement 6E, J, and O). Using immune electron microscopy, as expected, we found CD63 single positivity in MVBs (Figure 2—figure supplement 6K). In autophagosomes, the limiting phagophore membrane was LC3B positive, and CD63 positivity was also present (Figure 2—figure supplement 6L). The limiting membrane of amphisomes was LC3B negative, and the internal membranous structures were either LC3B or CD63 positive (Figure 2—figure supplement 6M). The same immunoreactivity was also observed in the ILVs of the released amphiectosomes (Figure 2—figure supplement 6N). Importantly, sEVs separated from serum-free conditioned medium of HEK293T-PalmGFP cells were either LC3B or CD63 positive (Figure 2—figure supplement 6O). Thus, we confirmed our confocal microscopy results at the ultrastructural level. Using immunogold TEM, we provided further evidence for the budding/ectocytosis mechanism of amphiectosome release (Figure 2—figure supplement 6P). The diameters of ILVs within MVBs, amphisomes, and amphiectosomes were compared (Figure 2—figure supplement 6Q), and the differences were likely due to the different membrane composition, pH, and osmotic conditions within these structures. In agreement with our observations with separated sEVs, LC3B positive ILVs had a significantly larger diameter than the LC3B negative ones (Figure 2—figure supplement 6R) possibly indicating difference in membrane composition and their different intracellular origin. Based on all the above findings, we propose the following model (Figure 3A): autophagosomes and MVBs fuse to form amphisomes, and the inner, LC3 positive membrane of autophagosomes undergoes fragmentation (Klionsky, 2021). Membrane fragments curl up and form LC3 positive ILVs. Therefore, amphisomes contain both MVB-derived CD63 positive/LC3 negative and autophagosome-derived, CD63 negative/LC3 positive ILVs. The amphisome is next released from the cell by ectocytosis. Finally, the plasma membrane-derived outer membrane ruptures enabling the ILVs escape to the extracellular space by a ‘torn bag mechanism’. By using stimulated emission depletion (STED) microscopy, we documented the intracellular phases of our proposed model: MVB (Figure 3B), autophagosome (Figure 3D), the fusion of MVB and autophagosome (Figure 3C), fragmentation of the LC3 positive membrane and ILV formation from the membrane fragments (Figure 3F) and mature amphisome (Figure 3E). The plasma membrane origin of the external membrane of amphiectosome was further supported by wheat germ agglutinin (WGA)-based live-cell labeling (Figure 3G).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/95828/elife-95828-fig3-v1.jpg)
+
+**Figure 3.:** Based on our data, a model of amphiectosome release was generated (A). Panel A was created with BioRender.com. According to this model, the fusion of multivesicular bodies (MVBs) and autophagosomes forms amphisomes. The LC3B positive membrane layer (indicated in cyan) undergoes disintegration and forms LC3B positive intraluminal vesicles (ILVs) inside the amphisome. Later, the amphisome is released into the extracellular space by ectocytosis and can be identified extracellularly as an amphiectosome. Finally, the limiting membrane(s) of the amphiectosome is ruptured and the ILVs are released as small extracellular vesicles (sEVs) into the extracellular space by a ‘torn bag mechanism’. Steps of amphisome formation including LC3 positive ILV formation in 30 µM Chloroquine-treated HEK293T-PalmGFP cells was followed by super-resolution (stimulated emission depletion [STED]) microscopy (B–F). The super-resolution STED channels were LC3B (cyan) and CD63 (magenta), while yellow indicates the confocal PalmGFP signal. Intracellular vesicular structures (such as endosomes, MVBs, and amphisomes) may receive PalmGFP from the plasma membrane. An MVB (B), an autophagosome with PalmGFP negative membrane (D), fusion of an autophagosome and an MVB (C), formation of LC3B positive ILVs in an amphisome (F), and a mature amphisome (E) were detected. To confirm the origin of the external membrane layer of amphiectosomes, fluorescently labeled wheat germ agglutinin (WGA) was applied. The plasma membrane of the living non-fluorescent HEK293 cells was labeled. As the external membrane of the budding amphiectosome was WGA positive, its plasma membrane origin is confirmed (G). To further support our model on amphiectosome release and ‘torn bag’ EV secretion, different in vitro treatments were applied. Cytochalasin B, Colchicine, Chloroquine, Bafilomycin A1, and Rapamycin were used to modulate amphiectosome release. Targeted molecular processes are summarized (H). Panel H was created with BioRender.com. While Cytochalasin B inhibits actin-dependent membrane budding and cell migration, Colchicine blocks the microtubule-dependent intracellular trafficking. While Chloroquine and Bafilomycin have similar, Rapamycin has opposite effect on lysosome-autophagosome or lysosome-amphisome fusion. Chloroquine and Bafilomycin inhibit lysosomal degradation while Rapamycin accelerates it. Based on confocal microscopy, Cytochalasin B (CytoB) did not alter the dynamics of amphiectosome release (I). In contrast, both Colchicine (Colch) and Rapamycin (Rapa) significantly inhibited the release of amphiectosomes, while Chloroquine (Chloro) and Bafilomycin (Bafilo) increased the release frequency. There was no difference between the effect of Chloroquine and Bafilomycin (I). Results are shown as mean ± SD of three to four independent biological replicates, analyzed by one-way ANOVA and Student’s t test, *: p<0.05, **: p<0.01, ns: non-significant. Original LASX files, which served as a basis of our quantification, are publicly available (doi: 10.6019/S-BIAD1456). Example for the calculation is shown in Figure 3—figure supplement 1H. Presence of membrane-bound (lipidated) LC3II was tested by western blotting. The total protein content of serum-, cell-, and large EV-depleted conditioned medium of HEK293T-PalmGFP (PalmGFP) and HEK293T-PalmGFP-LC3RFP (PalmGFP-LC3RFP) cells was precipitated by TCA and 20 µg of the protein samples were loaded on the gel (J). The lipidated LC3II band was detected in all cases. Relative expression of control (Ctrl) and Chloroquine (Chloro)-treated samples were determined by densitometry. Chloroquine treatment increased the LC3II level by approximately twofold. Results are shown as mean ± SD of n=6 biological replicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95828/elife-95828-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Relative metabolic activity was assessed through a Resazurin assay (A–E) during treatment optimization. The red dashed line indicates 100% metabolic activity, representing control cells. Results are presented as mean ± SD values of n=3–4 independent biological replicates. Student’s unpaired t-test was performed to compare control and treated cells (*: p<0.05, **: p<0.01, ****: p<0.0001). For Colchicine treatment, alterations in the microtubular network were observed through immunocytochemistry (F) and documented using an epifluorescent microscope. Changes in the diameter of released MV-lEVs under various treatments were determined on confocal microscopy images. A significant reduction in size was identified only in the case of Rapamycin treatment (G, one-way ANOVA test *: p<0.05, n=95–101). An example for MV-lEV number calculation based on confocal images is shown (H).
 
 To investigate the process of amphiectosome release, we exposed the MV-lEV releasing cells to different in vitro treatments (Figure 3H). The release of MV-lEVs was monitored by confocal microscopy of in situ fixed cell cultures. Optimal test conditions were determined (Figure 3—figure supplement 1A–F) and the results are summarized in Figure 3I. Original LASX files which served as a basis of our quantification are publicly available (doi: 10.6019/S-BIAD1456). An example for our approach to count the MV-lEVs is shown in Figure 3—figure supplement 1H. Cytochalasin B did not have any effect on the discharge of MV-lEVs suggesting that the release did not involve a major actin-dependent mechanism. In contrast, there was a significant reduction of the MV-lEV secretion upon exposure of the cells to Colchicine indicating a role of microtubules in the release of the MV-lEVs. While Rapamycin significantly reduced the discharge of MV-lEVs, Chloroquine and Bafilomycin induced an enhanced MV-lEV secretion. Rapamycin activates autophagic degradation (Xie et al., 2021), therefore, it induces a shift toward degradation as opposed to secretion. The lysosomotropic agents Chloroquine and Bafilomycin are known to interfere with the acidification of lysosomes (Chen et al., 2011; Wang et al., 2021). By blocking the degradation pathway of MVBs/amphisomes (Figure 3H), an enhanced sEV secretion is observed. This effect is well known for exosome secretion from MVBs (Edgar et al., 2016; Ortega et al., 2019). The diameters of the released MV-lEVs were determined based on confocal images (Figure 3—figure supplement 1G). Metabolic activity of the cells was determined by a Resazurin assay, and a significant reduction was detected upon exposure of the cells to Rapamycin (Figure 3—figure supplement 1D) in line with previously published data (Zhang et al., 2020). LC3II is the membrane-associated, lipidated autophagic form of LC3 (Tanida et al., 2008) and it is the hallmark of autophagy-related membranes (Klionsky, 2021). Importantly, by western blot, we not only showed the presence of the membrane-bound LC3II in serum-free, lEV-depleted (sEV containing) conditioned medium of both HEK293T-PalmGFP and HEK293T-PalmGFP-LC3RFP cells, but the amount of LC3II substantially increased upon Chloroquine treatment (Figure 3J). Raw data of western blots are available in Figure 3—source data 2 and Figure 3—source data 3.
 
@@ -72,7 +116,339 @@ Our approach, involving in situ fixation of cultures and tissues, made it possib
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293human kidney(embryonic)</td>
+      <td>ECACC (Sigma)</td>
+      <td>#85120602RRID:CVCL_0045</td>
+      <td>Batch No: 18E026</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HT29Caucasian colon adenocarcinoma grade II</td>
+      <td>ECACC (Sigma)</td>
+      <td>#91072201RRID:CVCL_0320</td>
+      <td>Batch No: 09K003</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HepG2human hepatocyte carcinoma</td>
+      <td>ECACC (Sigma)</td>
+      <td>#85011430RRID:CVCL_0027</td>
+      <td>Batch No: 19B009</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>HL1mouse cardiomyocyte cellline, atrial</td>
+      <td>Merck</td>
+      <td># SCC065RRID:CVCL_0303</td>
+      <td>Batch No:RD1601001</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293TPalmGFPhuman kidney(embryonic) expressing palmitoylated GFP</td>
+      <td>Kind gift ofCharles Laihttps://doi.org:10.1038/ncomms8029</td>
+      <td></td>
+      <td>Resorted before MCB preparation</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T-PalmGFPLC3RFPhuman kidney(embryonic) expressing palmitoylated GFP and RFP taggedLC3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>BMMC bone marrow-derived mast cells</td>
+      <td>Primary cell culturehttps://doi.org/10.1 002/jev2.12023</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Rattus norvegicus)</td>
+      <td>H9C2 (2-1) rat cardiovascular , Myoblast</td>
+      <td>ECACC (Sigma)</td>
+      <td>#88092904, RRID:CVCL_0286</td>
+      <td>Batch No: 17A028</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>LentiBriteRFP-LC3LentiviralBiosensor</td>
+      <td>Merck</td>
+      <td>17-10143</td>
+      <td>Batch No: 3530171</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>own animal house</td>
+      <td></td>
+      <td>C57BL/6RRID:MGI:2159769</td>
+      <td>male, 12 weeks of age</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-CD63 (Cterminal)</td>
+      <td>Sigma/Merck</td>
+      <td>SAB2109138</td>
+      <td>IF (1:200) WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-CD63</td>
+      <td>Santa CruzBiotechnology</td>
+      <td>MX-49.129.5 clone: sc-5275RRID:AB_627877</td>
+      <td>IF (1:200)TEM (1:50)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-CD81</td>
+      <td>Sigma/Merck</td>
+      <td>SAB3500454RRID:AB_10640751</td>
+      <td>IF (1:200)WB (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-CD81</td>
+      <td>Invitrogen</td>
+      <td>MA5-13548clone: 1.3.3.22RRID:AB_10987151</td>
+      <td>IF (1:100) WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-TSG101</td>
+      <td>Sigma/Merck</td>
+      <td>HPA006161RRID:AB_1080408</td>
+      <td>IF (1:200)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-ALIX (Cterminal)</td>
+      <td>Sigma/Merck</td>
+      <td>SAB420047</td>
+      <td>IF (1:200)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-LC3B</td>
+      <td>Sigma/Merck</td>
+      <td>ZRB100clone: 12K5</td>
+      <td>IF (1:200)TEM (1:50)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-LC3A</td>
+      <td>Sigma/Merck</td>
+      <td>ZRB1125clone: 3J12</td>
+      <td>IF (1:200)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-TSPAN4</td>
+      <td>Bioss</td>
+      <td>BS-9413R</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Rab7</td>
+      <td>Sigma/Merck</td>
+      <td>R8779 clone: Rab7117RRID:AB_609910</td>
+      <td>IF (1:200)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-α-tubulin</td>
+      <td>Sigma/Merck</td>
+      <td>T9026 clone: DM1ARRID:AB_477593</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-GFP</td>
+      <td>Sigma/Merck</td>
+      <td>G6539 clone: GFP-20RRID:AB_259941</td>
+      <td>IF (1:200)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-RFP</td>
+      <td>Invitrogen</td>
+      <td>MA5-15257 clone: RF5RRRID:AB_10999796</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat antimouse IgGATTO550</td>
+      <td>Sigma/Merck</td>
+      <td>43394RRID:AB_1137651</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat antirabbit IgG-ATTO647N</td>
+      <td>Sigma/Merck</td>
+      <td>40839RRID:AB_1137669</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat antimouse Star 635P</td>
+      <td>Abberior</td>
+      <td>ST635P-1001–500UGRRID:AB_2893232</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat antirabbit Star 580</td>
+      <td>Abberior</td>
+      <td>ST580-1002-500UGRRID:AB_2910107</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-rabbitIgG Fc (HRP)</td>
+      <td>abcam</td>
+      <td>ab97200RRID:AB_10679899</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-mouse IgG Fc (HRP)</td>
+      <td>abcam</td>
+      <td>ab97265RRID:AB_10680426</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-rabbit IgG (whole molecule) 10 nm gold preadsorbed</td>
+      <td>abcam</td>
+      <td>ab27234RRID:AB_954427</td>
+      <td>TEM (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-mouse IgG (whole molecule) 5 nm gold preadsorbed</td>
+      <td>Sigma/Merck</td>
+      <td>G7527RRID:AB_259955</td>
+      <td>TEM (1:50)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CF488A conjugated Wheat Germ Agglutinin (WGA)</td>
+      <td>Biotium</td>
+      <td>29022-1</td>
+      <td>Lot Number:21C0224-1149057</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bafilomycin A1</td>
+      <td>Sigma/Merck</td>
+      <td>B1793</td>
+      <td>Lot Number:0000190389</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Colchicine</td>
+      <td>Serva</td>
+      <td>77120.02</td>
+      <td>Lot Number: 190300</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroquine diphosphate</td>
+      <td>Invitrogen</td>
+      <td>P36236 C</td>
+      <td>Lot Number: 2441325</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>Sigma/Merck</td>
+      <td>R0395</td>
+      <td>Lot Number:0000084976</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cytochalasin B</td>
+      <td>Sigma</td>
+      <td>C2743</td>
+      <td>Lot Number: 037M4083V</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FBS</td>
+      <td>Biosera</td>
+      <td>FB-1090/500</td>
+      <td>Lot Number: 015BS575</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TFF Easy</td>
+      <td>HansaBioMed Life Sciences</td>
+      <td>HBM-TFF/1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LASX</td>
+      <td>Leica</td>
+      <td>LeicaApplicationSuite X3.5.5.19976</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN Blue</td>
+      <td>Zeiss</td>
+      <td>ZEN 2.3 lite</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iTEM</td>
+      <td>Olympus</td>
+      <td>iTEM 5.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://imagej.n et/ij/</td>
+      <td>v1.54g</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism9</td>
+      <td>GraphPad</td>
+      <td>GraphPad Prism 9.4.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioRender</td>
+      <td>https://www.biorender.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 The HEK293 human embryonic kidney, the HepG2 human hepatocyte carcinoma cell line, the HT29 human colon adenocarcinoma cell lines, and the H9c2 rat cardiomyoblast cell line were purchased from the European Collection of Authenticated Cell Cultures (ECACC) through their distributor (Sigma). The HL1 cell line was purchased from Millipore. The HEK293TPalmGFP human embryonic kidney cells were kindly provided by Lai et al., 2015. Mouse BMMCs were differentiated and expanded as we described previously (Vukman et al., 2020). The HEK293, HEK293TPalmGFP, HepG2, and H9c2 cell lines were grown in DMEM (Gibco) (Koncz et al., 2023; Németh et al., 2023; Németh et al., 2021), the HT29 cells were cultured in RPMI 1640 (Gibco) (Valcz et al., 2019), while the HL1 cells were grown in Claycomb medium (Koncz et al., 2023). All cells were cultured with 10% fetal bovine serum (FBS, BioSera) in the presence of 100 U/mL of penicillin and 100 µg/mL streptomycin (Sigma). Before analysis by confocal microscopy, the cells were cultured on the surface of gelatin-fibronectin-coated glass coverslips (VWR). The coating solution contained 0.02% gelatin (Sigma) and 5 mg/mL fibronectin (Invitrogen). Coverslips were coated overnight (O/N) at 37°C.
 
@@ -84,11 +460,11 @@ Cell cultures were tested regularly for mycoplasma infection by PCR, with the fo
 
 GAAGAWATGCCWTATTTAGAAGATGG and CCRTTTTGACTYTTWCCAC-CMAGTGGTTGTTG (Koncz et al., 2023).
 
-## Generation of HEK293T-PalmGFP-LC3RFP cell line
+### Generation of HEK293T-PalmGFP-LC3RFP cell line
 
 For the generation of a stable HEK293T-PalmGFP-LC3RFP cell line, HEK293T-PalmGFP cells were transfected by LentiBrite RFP-LC3 Lentiviral particles (Merck) according to the instructions of the manufacturer. The GFP-RFP double positive cells were sorted by an HS800 Cell Sorter (SONY), and cell banks (MCB and WCB) were prepared. The success of the stable transfection was analyzed by immunocytochemistry and western blotting. Results are shown in Figure 2—figure supplement 5.
 
-## Confocal microscopy
+### Confocal microscopy
 
 Confocal microscopy was carried out as we described earlier (Koncz et al., 2023) with some modifications. As serum starvation significantly affects autophagy (Wang et al., 2023), and EV-depleted FBS in the cell culture medium may influence cellular physiology and morphology (Lehrich et al., 2021), FBS was not removed before fixation. Our study focuses on lEVs with diameter >350–500 nm. EVs in this size range are negligible in FBS because of sterile filtration and heat inactivation of the serum. Unlike the majority of the studies in the field of EVs, here we analyzed untouched, in situ fixed and cultured cells together with their microenvironment. Since centrifugation may disrupt the limiting membrane of amphiectosomes, the in situ fixation made it possible to observe them in their intact form. The culture medium was gently removed by pipetting from above the cells leaving a thin medium layer only (approximately 150 µL of liquid on the cells). Without any further washing, cells were in situ fixed by 4% paraformaldehyde (PFA) in phosphate buffered saline (PBS) for 20 min at room temperature (RT). The released lEVs were either fixed and captured during the release or were preserved on the gelatin/fibronectin surface coating. After fixation, 3×5 min washes with 50 mM glycine in PBS were carried out. In the case of the non-fluorescent HepG2 and HT29 cells, a lactadherin-based plasma membrane staining was performed (Kovács et al., 2023; Vukman et al., 2020; Németh et al., 2023). Lactadherin (Haematologic Technologies) was conjugated to ATTO488 fluorophore (abcam) according to the instructions of the manufacturer. The lactadherin-ATTO488 conjugate was added to the fixed cells in 1:100 dilution in PBS (for 1 hr, RT) before permeabilization. The unbound lactadherin was removed by washing with PBS (three times, 5 min, RT) and post-fixation was carried out by 4% PFA (20 min, RT). PFA was removed by washes with 50 mM glycine in PBS (three times, 5 min, RT). Blocking and permeabilization of the cells were performed by 10% FBS with 0.1% Triton X-100 (Sigma) in PBS (1 hr, RT). In general, primary antibodies were applied in 1:200 dilution O/N at 4°C in the above blocking and permeabilization solution. Excess primary antibodies were eliminated by washing with the blocking and permeabilization solution (three times, 5 min, RT). The secondary antibodies were applied in 1:1000 dilution in 1% FBS in PBS (1 hr, RT). Unbound secondary antibodies were eliminated by washing (1% FBS, in PBS, two times, 5 min; PBS two times, 5 min; water two times, 5 min) and the samples were mounted in ProLong Diamond with DAPI (Invitrogen).
 
@@ -96,15 +472,15 @@ In order to provide evidence for the plasma membrane origin of the outer membran
 
 Microscopic slides were examined by Leica SP8 Lightning confocal microscope with adaptive lightning mode using an HC PL APO CS2 ×63/1.40 OIL objective with hybrid detector. Where we showed released MV-lEVs, they were not joined to cells in another detected Z-plane. The applied lookup tables (LUT) were linear during this study. For image analysis and co-localization studies, we applied Leica LASX software using unprocessed raw images. In case of co-localization studies, a 20% threshold and 10% background settings were applied.
 
-## Multi-channel STED super-resolution imaging
+### Multi-channel STED super-resolution imaging
 
 Immunofluorescent labeling for multi-channel STED nanoscopy was performed as in the case of confocal microscopy. The primary antibodies used were: LC3B (rabbit) and CD63 (mouse). Abberior Star 635P Goat anti Mouse and Abberior Star 580 Goat anti Rabbit secondary antibodies for STED microscopy have been obtained from Abberior GmbH. Samples were mounted with SlowFade Diamond Antifade Mountant (Thermo). Immunofluorescence was analyzed using an Abberior Instruments Facility Line STED Microscope system built on an Olympus IX83 fully motorized inverted microscope base (Olympus), equipped with a ZDC-830 TrueFocus Z-drift compensator system, an IX3-SSU ultrasonic stage, a QUADScan Beam Scanner scanning head, APD detectors, and an UPLXAPO60XO ×60 oil immersion objective (NA 1.42). We used the 488, 561, and 640 nm solid-state lasers for imaging, and a 775 nm solid-state laser for STED depletion. Image acquisition was performed using the Imspector data acquisition software (version: 16.3.14278-w2129-win64).
 
-## Purification of sEV fraction
+### Purification of sEV fraction
 
 sEV fractions for TEM analysis were separated from serum-free conditioned medium of HEK293T-PalmGFP cells by gravity filtration, differential centrifugation, and tangential flow filtration (TFF Easy, HansaBiomed) as described previously (Németh et al., 2021).
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Adherent cells (HEK293, HEK293T-PalmGFP, HepG2, HT29, and HL1), as well as mouse (C57BL/6) kidney and liver tissues pieces (approximately 1.5 mm × 1.5 mm) were immersed in and fixed by 4% glutaraldehyde (48 hr, 4°C), post-fixed by 1% osmium tetroxide (2 hr, RT) and were embedded into EPON resin (Electron Microscopy Sciences) as described previously (Olah et al., 1992). In the case of BMMCs, 920 μL cell suspension was complemented with 80 μL 50% glutaraldehyde to reach the final 4% glutaraldehyde concentration. Cells were fixed for 48 hr at 4°C and were post-fixed by 1% osmium tetroxide (2 hr, RT). During sample preparation, BMMCs were collected by gravity-based sedimentation. Due to the high viscosity of EPON resin, BMMCs were embedded in LR White low viscosity resin (SPI Supplies) according to the instructions of the manufacturer. Ultrathin sections (60 nm) were contrasted by uranyl acetate (3.75%, 10 min, RT) and lead citrate (12 min, RT).
 
@@ -116,15 +492,15 @@ A detailed list of the used antibodies is available in the Key resources table.
 
 For all electron microscopic studies, a JEOL 1011 TEM was used. Images were captured with the help of Olympus iTEM software and for image analysis, ImageJ software was used.
 
-## Live-cell imaging
+### Live-cell imaging
 
 The HEK293T-PalmGFP-LC3RFP stable cell line was cultured the same way as HEK293T-PalmGFP cells. Before the experiments, gelatin-fibronectin-coated 10-well coverslip bottom chamber slide (Greiner-BioOne) was seeded and treated by 30 μM Chloroquine O/N. Release of migrasomes, amphiectosomes, and sEVs were followed by the Leica SP8 Lightning confocal microscope equipped with an Okolab environmental chamber and a Zeiss ELYRA 7 with Lattice SIM² super-resolution fluorescent microscope with the help of ×63/1.4 plan apochromat Oil objective. For image analysis, we applied Leica LASX, Zeiss ZEN Blue, and ImageJ software.
 
-## Modulation of amphiectosome release
+### Modulation of amphiectosome release
 
 To test the release mechanism of amphiectosomes and to distinguish them from migrasomes, different treatments were applied O/N in fresh, serum containing cell culture medium except for Colchicine, where 1 hr treatment was selected. Maturation and fusion of endosomes and lysosomes were inhibited by 30 μM Chloroquine (Invitrogen) or 10 nM BafilomycinA1 (Sigma). Actin polymerization was inhibited by 125 ng/mL Cytochalasin B (Sigma). Tubulin polymerization and function were inhibited by 250 pg/mL Colchicine, while an autophagy-related degradation was induced by 50 ng/mL Rapamycin. The selected concentrations were determined based on both literature data and our preliminary experiments (Figure 3—figure supplement 1). Cellular metabolic activity was determined by a metabolic activity-based Resazurin assay (Koncz et al., 2023). Fresh cell culture medium was added to control cultures a day before the in situ fixation. Reagents were diluted in fresh cell culture medium. Leica TCS SP8 Lightning confocal microscope was used for detection of amphiectosome release. A few hundred µm2 sized area with 15–20 µm in height was tile-scanned with a few hundred cells. The MV-lEVs were recognized as CD63 positive EVs surrounded by GFP positive membrane. They were counted and were normalized to the number of nuclei. Raw images were deposited in BioImage Archive (https://www.ebi.ac.uk/bioimage-archive/) with the accession number S-BIAD1456 (doi: https://www.ebi.ac.uk/biostudies/studies/S-BIAD1456).
 
-## Western blotting
+### Western blotting
 
 Presence of proteins and specificity of the used primary antibodies were confirmed by western blotting as described previously (Koncz et al., 2023). For accurate quantification (free from variations potentially caused by EV purification), we analyzed cell-, serum- and lEV (diameter>800 nm) free conditioned medium. The cells were cultured O/N in a serum-free culture medium. After harvesting cells were eliminated by centrifugation (300×g, 10 min at 4°C) followed by a 2000×g centrifugation (30 min at 4°C) to eliminate lEVs. Total protein content of the conditioned, serum-, cell- and lEV-free medium was precipitated by trichloroacetic acid as described previously (Koncz et al., 2023; Koontz, 2014). The protein pellets were suspended in cOmplete Protease Inhibitor Cocktail (Roche) containing radio-immunoprecipitation assay (RIPA) buffer.
 
@@ -132,6 +508,6 @@ When whole-cell lysate was tested for validation of antibodies and the HEK293T-P
 
 Polyacrylamide gel electrophoresis was carried out using 10% gels (acrylamide/bis-acrylamide ratio 37.5:1) or any kDa precast gels (Bio-Rad) and a MiniProtean (Bio-Rad) gel running system. For better solubilization of membrane proteins, equal volumes of 0.1% Triton X-100, Laemmli buffer, and samples were mixed as described previously (Visnovitz et al., 2012). Approximately 10–30 µg protein were loaded into each well. Following electrophoretic separation, proteins were transferred to PVDF membranes (Serva). Membranes were blocked with 5% skimmed milk powder or 5% BSA in washing buffer for 1 hr. Primary antibodies were applied in 1:1000 dilution except for the anti-CD63 (rabbit), anti-CD81 (rabbit), and anti-CD81 (mouse) antibodies where 1:500, 1:2500, and 1:100 dilutions were used, respectively. Peroxidase-labeled secondary antibodies were applied in 1:10,000 dilution. The signals were detected by ECL Western Blotting Substrate (Thermo Scientific) with an Imager CHEMI Premium (VWR) image analyzer system. In case of quantification, equal protein amounts were loaded to the gels. Within a biological replicate, the control and Chloroquine-treated samples were run on the same gels. To enable comparison, the relative expression of control and Chloroquine-treated samples were determined and compared.
 
-## Software and statistical analysis
+### Software and statistical analysis
 
 For image capturing, analysis, and co-localization studies, Leica LAS X, Zeiss ZEN Blue, Olympus iTEM, and ImageJ software were used. Figures and graphs were generated using GraphPad Prism 9.4.1 and BioRender (BioRender.com). For statistical analysis, standard deviation was calculated. Unpaired two-tailed Student’s t-tests and one-way ANOVA were used (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).

@@ -21,9 +21,7 @@ Essential revisions:
 
 We have included new experiments (Figure 4—figure supplement 1) where we included a time course analysis to compare the kinetics of SPRTN self-cleavage with and without ubiquitin (Figure 4—figure supplement 1A). In addition, we include as controls both SPRTN-E112A and SPRTN-Y117C (Figure 4—figure supplement 1B).
 
-We have removed the Wss1 self-cleavage assay in the presence of free sumo or free ubiquitin. After repeating this assay with more controls, we found that sumo enhances Wss1 self-cleavage as we initially observed (lane 6), but unfortunately, we also see this sumo-dependent effect with the Wss1 EQ catalytic mutant (lane 7) and in the negative control (lane 11- presence of EDTA). Finally, the use of commercial sumo had no effect on Wss1 self-cleavage (not shown).10.7554/eLife.21491.015Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.21491.015
-
-DOI: http://dx.doi.org/10.7554/eLife.21491.015
+We have removed the Wss1 self-cleavage assay in the presence of free sumo or free ubiquitin. After repeating this assay with more controls, we found that sumo enhances Wss1 self-cleavage as we initially observed (lane 6), but unfortunately, we also see this sumo-dependent effect with the Wss1 EQ catalytic mutant (lane 7) and in the negative control (lane 11- presence of EDTA). Finally, the use of commercial sumo had no effect on Wss1 self-cleavage (not shown).10.7554/eLife.21491.015Author response image 1.
 
 2) For completeness, the authors need to show the levels of SPRTN over-expression in experiments where SPRTN is over-expressed.
 

@@ -34,7 +34,7 @@ Here, we show that autophagy is dynamically modulated in migrating cells in the 
 
 ## Results
 
-## Autophagy is dynamically regulated in migrating neuroblasts
+### Autophagy is dynamically regulated in migrating neuroblasts
 
 To investigate the involvement of autophagy in cell migration in vivo, we first performed immunostaining for two key autophagic proteins, microtubule-associated protein 1 light chain 3 (LC3, isoforms A and B) and Atg5, on sagittal sections of the adult mouse forebrain. Neuroblasts were labeled using GFP-expressing retroviruses injected into the SVZ (Figure 1A). LC3 and Atg5 were highly expressed in GFP+ migrating neuroblasts in the RMS (Figure 1B–C). Between 55 and 60% of the neuroblasts were immunolabeled for Atg5 or LC3 (Figure 1B–D). In contrast, less than 10% of astrocytes in the RMS of GFAP-GFP mice were immunolabeled for autophagy-related proteins (Figure 1D). To confirm the presence of autophagosome vesicles, which are characterized by a double membrane (Klionsky et al., 2012), we examined RMS samples by electron microscopy. We took advantage of tamoxifen-inducible Slc1a3(Glast)CreErt2::GFP mice in which GFP is expressed in astrocytes and stem cells and their progeny following tamoxifen injection. GFP+-immunolabeled neuroblasts, which were identified based on their typical bipolar morphology with leading and trailing processes, exhibited numerous double-membrane autophagosomes (Figure 1E). LC3 is present in a non-lipidated form (LC3-I) in the cytoplasm and a conjugated phosphatidylethanolamine lipidated form (LC3-II) in the autophagosomal membrane (Kabeya et al., 2004). The presence of LC3-II is a sign of autophagosome formation (Klionsky et al., 2012). Western blots of micro-dissected OB and RMS, two regions that contain migrating neuroblasts, showed the presence of autophagosome-associated LC3-II (Figure 1F). The presence of autophagosomes in neuroblasts could be due to active autophagic flux or interrupted autophagy such as the absence of fusion of autophagosomes with lysosomes, leading to vesicle accumulation. To distinguish between these two possibilities, we infected neuroblasts with a retrovirus encoding the RFP-GFP-LC3 fusion protein. The expression of RFP-GFP-LC3 makes it possible to distinguish autophagosomes (RFP+/GFP+ vesicles) from autolysosomes (RFP+ vesicles) due to GFP quenching in the acidic lysosomal environment. We observed a higher proportion of RFP+ than of GFP+/RFP+ vesicles and a highly dynamic bidirectional movement of RFP-LC3 punctae (Figure 1G–I; Video 1). Interestingly, 1 hr time-lapse imaging of migrating neuroblasts infected with the RFP-GFP-LC3 retrovirus revealed a dynamic regulation and non-homogeneous distribution of autophagosomes/autolysosomes during the different cell migration phases (Figure 1K–L). The migratory and stationary phases of neuroblasts were associated, respectively, with lower and higher numbers of GFP+/RFP+ autophagosomes with respect to RFP+ autophagosomes/autolysosomes (35.5 ± 3.1% and 44.4 ± 3.1% for the migratory and stationary phases, respectively; p<0.005) (Figure 1K). Moreover, the density of RFP+ punctae was lower during the migratory phases, whereas the entry of cells into the stationary phase led to a higher density of autophagosomes/autolysosomes (100 ± 8.8% and 66 ± 6.9% for the stationary and migratory phases, respectively; p<0.05) (Figure 1L). Altogether, these results suggest for an active autophagic flux in the migratory neuroblasts which is dynamically modulated during the different phases of cell migration.
 
@@ -42,23 +42,67 @@ To investigate the involvement of autophagy in cell migration in vivo, we first 
 
 **Figure 1.:** (A) Experimental design for the quantification of autophagy in migrating neuroblasts (B–D) Confocal images and quantification showing Atg5, LC3A, and LC3B expression by neuroblasts and astrocytes. The percentage of co-localization was calculated as the number of GFP+ cells (neuroblasts or astrocytes) with labeling for one of these proteins over the total number of GFP+ cells. (E) Electron microscopy (EM) analysis of autophagy in neuroblasts in the RMS of Slc1a3(Glast)CreErt2::GFP mice. The neuroblasts were labeled with anti-GFP immunogold particles. An autophagosome is indicated with an arrowhead. (F) Western blot analysis of LC3 in OB and RMS samples. (G) Scheme of the RFP-GFP-LC3 fusion protein used to study autophagic flux. The RFP-GFP-LC3 fusion protein makes it possible to label autophagosomes for RFP and GFP. Autolysosomes were only labeled for RFP because GFP was quenched due to the acidic pH in the lysosomes. (H) Percentage of GFP+/RFP+ vesicles with respect to RFP+ vesicles in neuroblasts in fixed brain sections obtained after stereotaxic injections of retrovirus-encoding RFP-GFP-LC3 (n = 10 cells from three animals) (I) Wide-field time-lapse imaging and kymograph of RFP-LC3 vesicles in the leading process of migrating neuroblasts. (J) Example of two-photon imaging of RFP-GFP-LC3 vesicles in the leading process of migrating neuroblasts in acute brain sections. RFP+ autophagosomes/autolysosomes are indicated with arrows, while GFP+/RFP+ autophagosome is indicated with an arrowhead. (K:) Quantification of GFP+/RFP+ vesicles among RFP+ vesicles during the different phases of cell migration (n = 18 cells from three animals). Data are expressed as means ± SEM, **p<0.005 with the Student t-test. (L) Quantification of changes in the RFP+ punctae of individual neuroblasts during the different phases of cell migration. Data are plotted as the density of RFP+ autophagosomes/autolysosomes in neuroblasts during the different migration phases (n = 11 cells from six animals). The results were normalized to the density of the first stationary phase to be able to make inter-cell and inter-animal comparisons. Data are expressed as means ± SEM, *p<0.05 with the Student t-test. See also Video 1.
 
-## The suppression of autophagy hampers cell migration and leads to the accumulation of neuroblasts in the RMS
+![Video 1.](https://cdn.elifesciences.org/articles/56006/elife-56006-video1.mp4.jpg)
+
+**Video 1.:** Time-lapse imaging of RFP-LC3 punctae in neuroblasts. The time is indicated in the upper left corner.
+
+### The suppression of autophagy hampers cell migration and leads to the accumulation of neuroblasts in the RMS
 
 To investigate the role of autophagy in cell migration we first assessed the migration of GFP+ neuroblasts in the RMS following the application of bafilomycin (4 µM), which is known to inhibit the fusion of autophagosomes with lysosomes (Yamamoto et al., 1998). We stereotactically injected a GFP-encoding retrovirus in the SVZ and analyzed cell migration in the RMS 7–10 days later (Figure 2A). Time-lapse imaging of migrating neuroblasts in acute brain sections revealed that bafilomycin reduces the distance of migration of GFP+ neuroblasts (46.1 ± 2.9 µm for the control vs. 27.6 ± 3.3 µm following the application of bafilomycin, p<0.001, n = 55 and 41 cells from three mice per condition, respectively; Figure 2B–C). The decrease in migration distance was caused by changes in the percentage of the migratory phases (53.2 ± 1.6% and 33.8 ± 1.8% in the control and bafilomycin-treated cells, respectively, p<0.001, Figure 2E). There was no change in the speed of migration, which was estimated exclusively during the migratory phases (114.9 ± 5.0 µm/h and 97.6 ± 5.6 µm/h in control and bafilomycin-treated cells, respectively, Figure 2D). In these and all other migration experiments, we did not take into consideration cells that remained stationary during the entire imaging period, which likely underestimate the autophagy-dependent effects on cell migration.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56006/elife-56006-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental design for the pharmacological impairment of autophagy using bafilomycin. (B) Time-lapse imaging of GFP+ neuroblasts in acute brain sections. (C–E) Distance of migration, speed of migration, and percentage of migratory phases of neuroblasts under control condition and following application of bafilomycin (n = 55 and 41 cells from three mice for the control and bafilomycin mice, respectively, ***p<0.001 with the Student t-test). (F) Experimental design to conditionally delete Atg5 in adult mice. (G) Time-lapse imaging of Atg5 cKO and Atg5 WT neuroblasts in acute brain sections. (H–J) Distance of migration, speed of migration, and percentage of migratory phases of Atg5 cKO and Atg5 WT neuroblasts (n = 188 and 198 cells from 9 Atg5 WT and 9 Atg5 cKO mice, respectively. ***p<0.001 with the Student t-test). (K) Experimental design to conditionally delete Atg5 in adult mice to follow the impact of autophagy on the entire cell population. (L) Example of DAB staining of coronal sections from Atg5 cKO and Atg5 WT mice obtained from brains fixed 7 days after a single tamoxifen injection. (M) Quantification of GFP+ neuroblast density in the SVZ, RMS, RMSOB, and OB of Atg5 WT and cKO mice (n = 8 for the Atg5 cKO mice and n = 7 for the Atg5 WT mice, *p<0.05 with the Student t-test). See also Figure 2—figure supplement 1 and Video 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56006/elife-56006-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A-B) Example of electron microscopic images of neuroblasts in the RMS of Atg5 WT and Atg5 cKO mice. The neuroblasts were labeled with anti-GFP immunogold particles. The autophagosomes are indicated with an arrowhead. (C) Quantification of the percentage of the autophagosome area in Atg5 WT and Atg5 cKO mice (n = 57 cells for Atg5 WT and n = 73 cells for Atg5 cKO, three animals per condition). ***p<0.001 with the Student t-test. (D) Quantification of the individual autophagosome size in Atg5 WT and Atg5 cKO mice. (n = 57 cells for Atg5 WT and n = 73 cells for Atg5 cKO, three animals per condition).
+
 We next employed a genetic strategy to ablate Atg5, an essential autophagy gene, using the transgenic Slc1a3(Glast)CreErt2::Atg5fl/fl::GFP mouse model in which a tamoxifen injection causes the inducible conditional knock-out of Atg5 (hereafter, Atg5 cKO) in stem cells and their progeny (Figure 2F). We first verified the efficiency of autophagy impairment by performing an EM analysis of GFP+ neuroblasts in the RMS of Slc1a3(Glast)CreErt2::Atg5wt/wt::GFP (Atg5 WT) and Atg5 cKO mice and showed that the area of the cells occupied by autophagosomes was 75% lower in the neuroblasts from the Atg5 cKO mice, with no change in the size of individual autophagosomes, indicating that there was a decrease in the total number of autophagosomes (Figure 2—figure supplement 1). These results confirmed that the impairment of autophagy in Atg5 cKO cells is efficient. Time-lapse imaging of migrating neuroblasts in acute brain sections from Atg5 WT and Atg5 cKO mice showed that Atg5-deficient neuroblasts have a defect in the distance of migration (43.4 ± 1.5 µm in control mice vs. 28.5 ± 1.3 µm, p<0.001, n = 188 and 198 cells from nine mice per condition for the Atg5 WT and cKO mice, respectively; Figure 2G–H, Video 2). This decrease was caused by changes in the percentage of the migratory phases (47.8 ± 0.8% in Atg5 WT mice vs. 35.1 ± 0.8% in Atg5 cKO mice, p<0.001), with no change in the speed of migration, which was estimated exclusively during the migratory phases (116.2 ± 2.3 µm/h in Atg5 WT mice vs. 110.4 ± 2.4 µm/h in Atg5 cKO mice; Figure 2G–J). To study the impact of autophagy suppression on the total neuroblast population, we performed GFP immunostaining on serial coronal sections from the OB to the SVZ of the Atg5 WT and Atg5 cKO mice 7 days after a single tamoxifen injection (Figure 2K–L). An Atg5 deficiency led to the accumulation of neuroblasts in the RMS close to the SVZ (594.5 ± 62.9 cell/mm2 in Atg5 WT mice vs. 793.3 ± 50.9 cell/mm2 in Atg5 cKO mice; p<0.05, n = 7 WT mice and n = 8 cKO mice), with an accompanying decrease in the density of neuroblasts in the rostral RMS (RMS of the OB; noted as RMSOB) (239.2 ± 31.1 cell/mm2 in Atg5 WT mice vs. 171.1 ± 9.7 cell/mm2 in Atg5 cKO mice; p<0.05) and the OB (8.5 ± 1.8 cell/mm2 in Atg5 WT mice vs. 3.8 ± 0.7 cell/mm2 in Atg5 cKO mice, p<0.05) (Figure 2M). Taken together, these results show that Atg5-dependant autophagy is required to maintain a normal periodicity of the migratory and stationary phases of migration and the correct routing of neuroblasts toward the OB.
+
+![Video 2.](https://cdn.elifesciences.org/articles/56006/elife-56006-video2.mp4.jpg)
+
+**Video 2.:** Time-lapse imaging of GFP+ neuroblasts in sections from Atg5 WT (left) and Atg5 cKO (right) mice. The time is indicated in the upper left corner.
 
 In these experiments, the expression of Atg5 was affected at the very beginning of the stem cell lineage, which may have indirectly affected the migration of the progeny derived from these stem cells. We thus stereotactically injected a mixture of retroviruses encoding Cre-mNeptune or GFP into the SVZ of Atg5fl/fl and Atg5wt/wt mice (Figure 3A). The retroviruses infect rapidly dividing cells such as neuroblasts but not slowly dividing stem cells. Atg5fl/fl neuroblasts expressing Cre displayed the same deficiency in migratory parameters as neuroblasts in Atg5 cKO mice (Figure 3B–E and Video 3). Importantly, neuroblasts from Atg5wt/wt mice infected either with Cre-mNeptune or GFP retroviral particles or neuroblasts from Atg5fl/fl mice infected with GFP retroviral particles displayed normal migration patterns (Figure 3B–E). These results suggest that the deficiency in cell migration does not arise from the progression and differentiation of the stem cell lineage.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/56006/elife-56006-fig3-v2.jpg)
+
+**Figure 3.:** (A) Experimental procedure for GFP- and Cre-mNeptune-encoding retroviral labeling of neuroblasts from Atg5wt/wt and Atg5fl/fl mice. (B) Example of time-lapse imaging of neuroblasts expressing GFP or Cre-mNeptune. (C–E) Distance of migration, speed of migration, and percentage of migratory phases for Atg5wt/wt and Atg5fl/fl mice injected with GFP or Cre-mNeptune retroviruses. Atg5wt/wt-GFP (n = 143 cells from eight mice), Atg5wt/wt-Cre-mNeptune (n = 208 cells from nine mice), Atg5fl/fl-GFP (n = 106 cells from seven mice), and Atg5fl/fl-Cre-mNeptune (n = 121 cells from five mice). ***p<0.001 with a one-way ANOVA followed by an LSD-Fisher post hoc test. (F) Experimental procedure for the electroporation of plasmids expressing Cas9-T2A-mCherry and gRNAs. Plasmids were injected into the lateral ventricle of P1-P2 pups followed by the application of electrical pulses. Acute sections were prepared 8–13 days post-electroporation, and the migration of electroporated cells was assessed by time-lapse imaging. (G) Example of immunostaining of Atg12 on cells expressing LacZ gRNA (green) and Atg12 gRNA (red). (H) Time-lapse imaging of neuroblasts electroporated with LacZ gRNA or Atg12 gRNA in acute brain sections. (I–K) Distance of migration, speed of migration, and percentage of migratory phases of cells electroporated with LacZ gRNA or Atg12 gRNA (n = 19 and 40 cells from 5 and 13 animals for LacZ gRNA and Atg12 gRNA, respectively, *p<0.05 and ***p<0.001 with Student t-test). Individual values and means ± SEM for all time-lapse imaging experiments are shown. (L) Example of a brain section showing neuroblasts electroporated with LacZ gRNA (left) or Atg12 gRNA (right) in the RMS. (M) Quantification of Cas9-T2A-mCherry+ neuroblast density in the SVZ, RMS, RMSOB, and OB of LacZ gRNA- and Atg12 gRNA-electroporated mice. Data are expressed as a percentage of the cell density with 100% defined as the cell density in the SVZ (n = 8 mice for LacZ gRNA and seven mice for Atg12 gRNA, *p<0.05). See also Figure 3—figure supplement 1 and Video 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56006/elife-56006-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** SVZ cells were isolated and were cultured in vitro. The cells were transfected with plasmids carrying Cas9 and various gRNAs. The PCR reaction was performed on genomic DNA, and HRM curves were generated over a 65–95°C range in 0.2°C increments.
+
+![Video 3.](https://cdn.elifesciences.org/articles/56006/elife-56006-video3.mp4.jpg)
+
+**Video 3.:** Example of time-lapse imaging of neuroblasts on acute slices from Atg5fl/fl mice infected with retroviruses expressing GFP and Cre-mNeptune. The images were acquired every 15 s for 1 hr. The time is indicated in the upper left corner.
+
 It has been recently reported that Atg5 deletion may produce an autophagy-independent effect (Galluzzi and Green, 2019). To verify this possibility, we genetically impaired the expression of Atg12, another essential autophagy-related gene, using CRISPR/Cas9 technology. We electroporated plasmids carrying Cas9-T2A-mCherry and Atg12 gRNAs in the early postnatal period (Figure 3F). We used LacZ gRNAs as a control. We used HRM qRT-PCR to confirm the presence of mutated Atg12 RNA transcripts after the infection with the gRNAs (Figure 3—figure supplement 1). We also confirmed the loss of the protein in vivo in Atg12 gRNA-electroporated cells by performing immunolabeling against Atg12 in brain sections containing the SVZ and RMS (Figure 3G). We observed an 80% decrease in the percentage of neuroblasts expressing Atg12 and electroporated with Atg12 gRNA as compared to LacZ gRNA-electroporated cells (100 ± 0% of Atg12-expressing neuroblasts in LacZ gRNA-electroporated cells and 20.5 ± 2.4% in Atg12 gRNA-electroporated cells, n = 28 cells for LacZ gRNA and n = 43 cells for Atg12 gRNA, three animals per group). We next performed time-lapse imaging of mCherry+ cells in the RMS 8–13 days post-electroporation and observed that Atg12 gRNAs cause the same defects in cell migration (the distance of migration was 38.5 ± 3.3 µm for LacZ gRNA cells vs. 30.4 ± 2.4 µm for Atg12 gRNA cells, p<0.05, and the percentage of migratory phases was 48.4 ± 1.7% for LacZ gRNA cells vs. 35.5 ± 1.5% for Atg12 gRNA cells, p<0.001) as an Atg5 deficiency (Figure 3H–K). To determine whether an Atg12 deficiency also results in the accumulation of neuroblasts in the RMS close to the SVZ, we acquired images of sagittal brain sections in mice electroporated with either LacZ or Atg12 gRNAs 9 days post-electroporation and quantified the density of the cells along the SVZ-OB pathway. As electroporation efficiency may vary between animals and given the fact that all the cells present in the RMS, RMSOB, and OB were derived from cells electroporated in the SVZ, we normalized the cell density along the migratory path to the density of mCherry+ cells in the SVZ. Our analysis revealed an accumulation of Atg12 gRNA-expressing cells in the RMS as compared to LacZ gRNA cells (103.4 ± 17.4% in Atg12 gRNA mice vs. 51.5 ± 4.9% in LacZ gRNA mice, p<0.005), with a decreased cell density in the RMSOB (25.9 ± 5.4% in Atg12 gRNA mice vs. 47.0 ± 6.5% in LacZ gRNA mice; p<0.05) and OB (9.2 ± 1.0% in Atg12 gRNA mice vs. 15.4 ± 1.9% in LacZ gRNA mice; p<0.05, n = 8 and 7 animals for LacZ gRNA- and Atg12 gRNA-electroporated mice, respectively; Figure 3L–M). These data are in line with those obtained with Atg5 cKO mice (Figure 2M) and suggest that a deficiency in either Atg5 or Atg12 leads to the accumulation of neuroblasts in the RMS proximal to the SVZ concomitant with a decrease in the number of migrating cells in the distal portions of the RMS and OB. Altogether, our results with pharmacological and genetic perturbations of autophagy in the migrating cells indicate that this self-catabolic pathway is required for cell migration.
 
-## Autophagy is induced by bioenergetic demand during cell migration
+### Autophagy is induced by bioenergetic demand during cell migration
 
 Autophagy is associated with energetic stress (Kroemer et al., 2010). The energy status of cells, represented by the ATP/ADP ratio, is closely related to the ability of metastatic cancer cells to migrate in vitro (Zanotelli et al., 2018). We used a ratiometric biosensor of ATP/ADP (PercevalHR) (Tantama et al., 2013) to explore energy consumption during cell migration and to investigate the link between energy consumption and autophagy. PercevalHR- and TdTomato-encoding lentiviruses were co-injected into the SVZ of adult mice. We first validated the functionality of PercevalHR by incubating acute slices in rotenone to impair mitochondrial function and observed a concentration-dependent decrease in the ATP/ADP ratio in migrating neuroblasts (Figure 4—figure supplement 1A–B). We next performed time-lapse imaging of TdTomato+ and PercevalHR+ neuroblasts in the RMS in acute brain sections 5–10 days post-injection to assess changes in the ATP/ADP ratio during the different phases of cell migration (Figure 4A and Video 4). Interestingly, the ATP/ADP ratio was dynamically regulated during the different phases of cell migration (Figure 4B–D) similar to the dynamic changes observed for autophagosomes (Figure 1K–L). Shortly after the beginning of the migratory phases, the ATP/ADP ratio started to decrease. This was accompanied by the entry of the cells into the stationary phase and a progressive recovery of the ATP/ADP ratio (Figure 4B–C). To assess changes in the ATP/ADP ratio during the different phases of cell migration in individual cells and across different cells, the ratio was normalized to the duration of the migratory and stationary phases and was counted as changes in the charge. This analysis revealed a significant difference in ATP/ADP levels during the migratory and stationary phases of cell migration (−0.001 ± 0.001 AU in the stationary phase vs. −0.004 ± 0.001 AU in the migratory phase, p<0.05, Figure 4D). As the fluorescence intensity of PercevalHR is sensitive to pH (Tantama et al., 2011), we ensured that changes in the PercevalHR ratio did not arise from variations in the intracellular pH during the different phases of cell migration. To do so, we electroporated plasmid-encoding pHRed, a pH sensor, prepared acute brains sections 5–7 days post-electroporation, and monitored changes in pH during the different phases of cell migration (Figure 4—figure supplement 1C). Our time-lapse imaging data suggested that changes in the ATP/ADP ratio during the different phases of cell migration, as determined with the PercevalHR sensor, are not due to changes in the intracellular pH (Figure 4—figure supplement 1D). These results indicate that the ATP/ADP ratio is dynamically regulated during cell migration and suggest the presence of mechanisms leading to the recovery of ATP levels following the decrease during the migratory phases.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/56006/elife-56006-fig4-v2.jpg)
+
+**Figure 4.:** (A–B:) Example and quantification of changes in the ATP/ADP ratios of individual neuroblasts during the different cell migration phases. Yellow boxes indicate the migratory phases. As the duration of the migratory and stationary phases in individual neuroblasts as well as across different cells varies, we calculated the changes in the ATP/ADP ratio as the changes in the charge (area under the curve; gray areas) divided by the duration of the different phases. The baseline for the area under the curve was fixed as the mean PercevalHR ratio during the stationary period. (C–D:) Quantification of changes in the ATP/ADP ratio of neuroblasts during the migratory and stationary phases (n = 19 cells from eight animals). Data are expressed as means ± SEM, *p<0.05 with the Student t-test. (E:) Experimental procedure for the electroporation of plasmids expressing Cas9-T2A-mCherry and gRNAs. (F:) Time-lapse imaging of neuroblasts electroporated with LacZ, Ulk1, and Ulk2 gRNAs in acute brain sections. (G–I:) Distance of migration, speed of migration, and percentage of migratory phases of cells electroporated with LacZ, Ulk1, and Ulk2 gRNAs (n = 19 cells for LacZ and Ulk1 gRNAs, and 20 cells for Ulk2 gRNAs from 5, 7, and four animals, respectively, **p<0.005 and ***p<0.001 with a one-way ANOVA followed by an LSD-Fisher post hoc test). (J:) Experiments to study the role of AMPK in autophagy-dependent neuronal migration. Acute sections from Atg5 WT and Atg5 cKO mice were incubated for 2 hr with DMSO or cC (20 µM) followed by time-lapse imaging of cell migration in the presence of DMSO or cC. (K:) Example of time-lapse imaging of cell migration of Atg5 WT and Atg5 cKO neuroblasts in the presence of DMSO or cC. (L–N:) Distance of migration, speed of migration, and percentage of migratory phases of neuroblasts (n = 79 cells from five mice for Atg5 WT+DMSO, n = 56 cells from five mice for Atg5 WT+cC, n = 85 cells from six mice for Atg5 cKO+DMSO, and n = 72 cells from seven mice for Atg5 cKO+cC, ***p<0.001 with a one-way ANOVA followed by an LSD-Fisher post hoc test). Individual values and means ± SEM for all the time-lapse imaging experiments are shown. See also Video 4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56006/elife-56006-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A:) Experimental procedure to visualize the impact of rotenone on the ATP/ADP ratio. (B:) Quantification of changes in the PercevalHR ratio in neuroblasts following the incubation of acute brain sections with 1, 10, or 20 µM rotenone (n = 29 cells for the baseline, and 32, 31, and 33 cells from three mice for 1, 10, and 20 µM rotenone). Data are expressed as the mean ± SEM. ***p<0.001 with a one-way ANOVA followed by a post hoc LSD-Fisher test. ( C:) Example of changes in pH in individual neuroblasts during cell migration. (C–D:) Quantification of changes in the pHRed ratio compared to changes in the PercevalHR ratio in neuroblasts during the migratory and stationary phases. Data are expressed as the percentage of change. Data are expressed as the mean ± SEM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56006/elife-56006-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** SVZ cells were isolated and were cultured in vitro. The cells were transfected with plasmids carrying Cas9 and various gRNAs. The PCR reaction was performed on genomic DNA, and HRM curves were generated over a 65–95°C range in 0.2°C increments.
+
+![Video 4.](https://cdn.elifesciences.org/articles/56006/elife-56006-video4.mp4.jpg)
+
+**Video 4.:** Time-lapse imaging of neuroblasts infected with PercevalHR-encoding and Td-Tomato-encoding lentiviruses. PercevalHR was used for ratiometric measurements of changes in the ATP/ADP ratio. The ATP/ADP ratio is shown. Note that the ATP/ADP ratio dynamically changes during the different cell migration phases. The time is indicated in the upper left corner.
+
 The main sensor of energy levels in cells is AMPK, which is phosphorylated when the ATP/ADP ratio decreases (Hardie et al., 2012). The phosphorylation of AMPK may induce autophagy (Egan et al., 2011) by phosphorylating Ulk1 and Ulk2 (Klionsky et al., 2012), which may mechanistically link the observed dynamic changes in the autophagosomes and the ATP/ADP ratio during the migratory and stationary phases. To assess the link between energy consumption and autophagy in the migrating cells we used genetic and pharmacological approaches. Since the phosphorylation of Ulk1 and Ulk2 by AMPK is crucial for the induction of autophagy, we first electroporated plasmids carrying Cas9-T2A-mCherry and Ulk1 and Ulk2 gRNAs (LacZ gRNAs were used as a control) in the early postnatal period (Figure 4E–I). We used HRM qRT-PCR to confirm the presence of mutated Ulk1 and Ulk2 RNAs transcripts after the infection with the gRNAs (Figure 4—figure supplement 1). We observed a reduced distance of migration for neuroblasts electroporated with Ulk1 or Ulk2 gRNAs (Figure 4F–G) because of reduced migratory phases (Figure 4I), with no any effect on the speed of migration (Figure 4H). To investigate further the interplay between energy consumption and autophagy in the migrating cells, we used a pharmacological approach to block AMPK using Compound C (cC) (Kim et al., 2011) in control and Atg5-deficient neuroblasts. We hypothesized that if AMPK induces the activation of autophagy, then blocking this kinase with cC in autophagy-deficient neuroblasts should not have any additional effect. Acute sections were prepared from Slc1a3(Glast)CreErt2::GFP mice following a tamoxifen injection, and the cells were imaged in the presence of cC (Figure 4J–K). cC reduced the distance of cell migration because of a decrease in the percentage of the migratory phases. The speed of migration did not change (Figure 4K–N). We next inhibited AMPK with cC in acute sections from Atg5 cKO mice and observed no additional changes in the distance of migration or in the duration of the migratory phases (Figure 4K–N). These results highlight the importance of AMPK in controlling the periodicity of the migratory and stationary phases during cell migration and indicate that changes in the energy status of cells induce autophagy.
 
-## Autophagy activation is necessary to maintain focal adhesion recycling
+### Autophagy activation is necessary to maintain focal adhesion recycling
 
 We next investigated how autophagy affects cell migration. Previous studies have shown that paxillin, a focal adhesion protein, is a direct target of LC3-II and is recycled by autophagy during the migration of non-neuronal cells in vitro (Sharifi et al., 2016; Kenific et al., 2016). As the induction of autophagy and cargo recycling is cell- and context-dependent (Klionsky et al., 2012), we wondered whether paxillin was also recycled by autophagy in migrating neuroblasts in vivo. We electroporated plasmids carrying paxillin-GFP and RFP-LC3 in pups and analyzed their co-localization 5 days later in the RMS (Figure 5A). Our analysis revealed that 24.5 ± 2% to 28.4 ± 1.7% of paxillin-GFP co-localized in RFP-LC3 vesicles in the cell body and the proximal part of the leading process in WT mice, while 42.5 ± 7.9% of paxillin-GFP co-localized in the distal part of the leading process (n = 30 cells from three mice; Figure 5B), suggesting that paxillin is more actively recycled at the leading edge of migrating neuroblasts in the RMS. To determine whether a lack of autophagy leads to altered recycling of paxillin, we performed immunolabeling for paxillin in Atg5 WT and Atg5 cKO mice. We observed that a deficiency in autophagy leads to increased immunolabeling of paxillin in the leading process of neuroblasts, with no changes in the cell soma (n = 38 cells from three mice for Atg5 WT and n = 31 cells from three mice for Atg5 cKO, Figure 5C–D). We obtained similar results with cells electroporated with Atg12 gRNA. Immunolabeling for paxillin in brain sections from Atg12 gRNA-electroporated mice revealed that this focal adhesion molecule accumulates in the leading process of neuroblasts compared to control LacZ gRNA-electroporated cells (n = 10 cells from three mice for LacZ gRNA and for Atg12 gRNA, Figure 5E–F). Altogether these data indicate that autophagy regulates neuronal migration in vivo by recycling paxillin, which preferentially localizes at the leading edge of migrating neuroblasts.
 
@@ -66,7 +110,7 @@ We next investigated how autophagy affects cell migration. Previous studies have
 
 **Figure 5.:** (A) Example of paxillin-GFP and RFP-LC3 punctae in migrating neuroblasts. Arrowheads indicate paxillin-GFP/RFP-LC3 punctae whereas arrows indicate RFP-LC3 punctae. (B) Quantification of paxillin-GFP+ and RFP-LC3+ vesicles in the cell body and the proximal and distal parts of the leading process (28.4 ± 1.7% of GFP+/RFP+ in the cell body, 24.5 ± 2.0% in the proximal leading process, and 42.5 ± 7.9% in the distal leading process, n = 30 cells from three mice; **p<0.005 with a one-way ANOVA followed by an LSD-Fisher post hoc test). (C) Example of paxillin immunolabeling in neuroblasts from Atg5 WT and Atg5 cKO mice. (D) Quantification of the fluorescence intensity of paxillin in the soma and in the proximal and distal parts of the leading process. For Atg5 WT mice, the fluorescence was 47.7 ± 2.7 AU for the soma, 58.43 ± 3.4 AU for the proximal leading process, and 58.3 ± 3.9 AU for the distal part of the leading process; for Atg5 cKO mice, the fluorescence intensity was 46.4 ± 4.62 AU for the soma, 76.3 ± 4.5 AU for the proximal leading process, and 74.2 ± 4.8 AU for the distal part of the leading process; n = 38 cells from three mice for Atg5 WT and n = 31 cells from three mice for Atg5 cKO (**p<0.005 with Student t-test). (E) Example of paxillin immunolabeling in neuroblasts expressing LacZ gRNA or Atg12 gRNA. (F) For the LacZ gRNA, the fluorescence intensity was 24.7 ± 4.9 AU for the soma, 32.1 ± 8.4 AU for the proximal part of the leading process, and 27.2 ± 2.4 AU for the distal part of the leading process; for the Atg12 gRNA, the fluorescence intensity was 38.4 ± 1.6 AU for the soma, 50.4 ± 5.5 AU for the proximal part of the leading process, and 46.5 ± 2.5 AU for the distal part of the leading process; n = 10 cells from three mice for LacZ gRNA and for Atg12 gRNA, *p<0.05 with the Student t-test.
 
-## The pharmacological modulation of cell migration induces changes in autophagy
+### The pharmacological modulation of cell migration induces changes in autophagy
 
 Although our results show that pharmacological and genetic perturbations of autophagy-related genes affect cell migration and that energy levels are linked to autophagy induction, it remained unclear whether autophagy levels are dynamically regulated in response to migration-promoting or migration-inhibiting cues to sustain cell migration. To address this issue, we incubated adult forebrain sections with factors known to affect neuroblast migration in the RMS (Snapyan et al., 2009; Bolteus and Bordey, 2004; Lee et al., 2006; Shinohara et al., 2012), dissected out the RMS, and immunoblotted these samples for LC3 (Figure 6). We used BDNF (10 ng/mL), which promotes neuroblast migration (Snapyan et al., 2009), GABA (10 µM), which reduces the speed of migration (Snapyan et al., 2009; Bolteus and Bordey, 2004), GM60001 (100 µM), which inhibits matrix metalloproteinases and impacts neuroblast migration in the RMS (Lee et al., 2006; Rempe et al., 2018), and Y27632 (50 µM) and blebbistatin (100 µM), which affect neuroblast migration by inhibiting Rock and myosin II (Shinohara et al., 2012). Intriguingly, all these treatments induced changes in LC3-II, the lipidated autophagosomal form of LC3 (Figure 6A and D), suggesting that changes in autophagy are a common signature for neurons displaying either up- or down-regulated migration. Since an increase in LC3-II levels could reflect either an increase in autophagic flux (i.e. an increased autophagosome formation) or an accumulation of autophagosomes (i.e. an impairment of autophagosome fusion with lysosomes) (Klionsky et al., 2012), we investigated proteins that may be sequestered and recycled by the autophagic process, such as p62/SQSTM1, a major autophagy substrate (Pankiv et al., 2007), or paxillin (Sharifi et al., 2016; Kenific et al., 2016). We thus performed immunoblotting for p62 and paxillin on RMS samples. Interestingly, while the level of p62 did not change after these pharmacological treatments (Figure 6B), the level of paxillin increased when cell migration decreased and decreased when cell migration increased (Figure 6A–E). This is in line with our previous analysis showing the presence of paxillin-GFP in RFP+ autophagosomes and the accumulation of paxillin in Atg5- and Atg12-deficient neuroblasts (Figure 5). To provide further support for dysregulated autophagy in the context of affected cell migration, we immunostained sections containing neuroblasts infected with RFP-GFP-LC3 for Lamp1, a lysosome marker, to determine the autophagosome/autolysosome ratio (Figure 6F–G). In line with previous results, drugs that decreased migration caused an increase in the autophagosome/autolysosome ratio, indicating deficient autophagy (Figure 6G). These results indicate that several signaling pathways known to affect neuroblasts migration converge on autophagy to sustain the pace and periodicity of cell migration through a constant assembly and disassembly of focal adhesions required for cell motility.
 
@@ -84,21 +128,593 @@ We also showed that a decrease in ATP/ADP levels leads to the activation of AMPK
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus, male and female)</td>
+      <td>CAG-CAT-EGFP</td>
+      <td>Waclaw et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male and female)</td>
+      <td>Slc1a3(Glast)CreErt2 mice</td>
+      <td>Mori et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male and female)</td>
+      <td>Atg5fl/fl</td>
+      <td>Riken</td>
+      <td>B6.129S-Atg5 &lt; tm1Myok&gt; RRID:IMSR_RBRC02975</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male and female)</td>
+      <td>CD1</td>
+      <td>Charles Rivers</td>
+      <td>Strain code: 022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male)</td>
+      <td>C57BL/6NCRL</td>
+      <td>Charles Rivers</td>
+      <td>Strain code: 027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male and female)</td>
+      <td>GFAP-GFP</td>
+      <td>Jackson</td>
+      <td>Strain code: 003257FVB/N-Tg(GFAPGFP)14Mes/J</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Synthetic)</td>
+      <td>RV-GFP</td>
+      <td>Molecular Tool Platform, CERVO Brain Research Center</td>
+      <td>Lot #RV 39</td>
+      <td>Retroviral construct</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Synthetic)</td>
+      <td>RV-Cre-mNeptune</td>
+      <td>Molecular Tool Platform, CERVO Brain Research Center</td>
+      <td>Lot #RV 34</td>
+      <td>Retroviral construct</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (R. norvegicus)</td>
+      <td>RV- RFP-GFP-LC3</td>
+      <td>Molecular Tool Platform, CERVO Brain Research Center</td>
+      <td>Lot #RV15</td>
+      <td>Retro viral construct</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Synthetic)</td>
+      <td>LV-CMV-PercevalHR</td>
+      <td>University of North Carolina Vector Core Facility</td>
+      <td>Lot #43–44213 PercevalHR</td>
+      <td>Lentiviral construct</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Synthetic)</td>
+      <td>LV-CMV-TdTomato</td>
+      <td>University of North Carolina Vector Core Facility</td>
+      <td>Lot #43–44213 TdTomato</td>
+      <td>Lentiviral construct</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#A-11122; RRID:AB_221569</td>
+      <td>DAB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Chicken polyclonal)</td>
+      <td>Avés</td>
+      <td>GFP-1020; RRID:AB_10000240</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LC3B (Rabbit polyclonal)</td>
+      <td>Novus</td>
+      <td>Cat#NB100-2220, RRID:AB_10003146</td>
+      <td>IF (1:200) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- Cleaved LC3A (Rabbit polyclonal)</td>
+      <td>Abgent</td>
+      <td>Cat#AP1805a, RRID:AB_2137587</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-murine Atg5 (Rabbit polyclonal)</td>
+      <td>Novus</td>
+      <td>Cat#NB110-53818, RRID:AB_828587</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LAMP-1 (CD107a) (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#AB2971, RRID:AB_10807184</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-paxillin (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#610051, RRID:AB_397463</td>
+      <td>IF (1:100) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P62/SQSTM1 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat#18420–1-AP, RRID:AB_10694431</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#MA5-15738, RRID:AB_10977387</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, biotin-SP conjugate (Goat polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#AP132B, RRID:AB_11212148</td>
+      <td>DAB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab290, RRID:AB_303395</td>
+      <td>EM (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Nanogold-Fab goat anti-rabbit</td>
+      <td>Nanoprobe</td>
+      <td>Cat#2004, RRID:AB_2631182</td>
+      <td>EM (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Atg12 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab155589</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry (16D7) (Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #M11217, RRID:AB_2536611</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUGW-PercevalHR (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_49083</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCSCMV:tdTomato (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_30530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ptfLC3 (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_21074</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PU6-BbsI-CBh-Cas9-T2AmCherry (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_64324</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pmRFP-LC3 (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_21075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRK GFP paxillin (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_50529</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GW1-pHRed (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_31473</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Atg12-gRNA1-Fw</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CGGAAACAGCCACCCCAGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Atg12-gRNA1-Rs</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GCCCACTAACGGATGTTGACATTACTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Atg12-gRNA2-Fw</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>ACGCTGCTACGTCACTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Atg12-gRNA2-Rs</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GCTCTGGAAGGCTCTCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ulk1-gRNA1-Fw</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TCGCAAGGACCTGATTGGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ulk1-gRNA1-Rs</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CCTCGCAATCCCGGACTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ulk1-gRNA2-Fw</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CATCTGCTTTTTATCCCAGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ulk1-gRNA2-Rs</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CTGCAACAGAGCCAGGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ulk2-gRNA1-Fw</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TACTGCAAGCGGGACCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ulk2-gRNA1-Rs</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TTTCGCACCAGACAACGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ulk2-gRNA2-Fw</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CTCTGAGTGAAGATACTATCAGAGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ulk2-gRNA2-Rs</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GATCCCTGTGGATTATCCCTTT</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy Blood and Tissue Kit</td>
+      <td>Qiagen</td>
+      <td>Cat#69504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LightCycler 480 High Resolution Melting Master</td>
+      <td>Roche</td>
+      <td>Cat#04909631001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VECTASTAIN ABC-Peroxidase Kit</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#PK4000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HQ Silver Enhancement kit</td>
+      <td>Product</td>
+      <td>Cat#2012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NeuroCult Proliferation Supplement</td>
+      <td>StemCell Technologies</td>
+      <td>Cat#05701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NeuroCult Basal Medium</td>
+      <td>StemCell Technologies</td>
+      <td>Cat#05700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EGF</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#E4127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>bFGF</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#SRP4038-50UG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Heparin</td>
+      <td>StemCell Technologies</td>
+      <td>Cat#07980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MgCl2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#M8266; CAS 7786-30-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#P6148; CAS: 30525-89-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#T5648; CAS: 10540-29-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anhydrous ethyl alcohol</td>
+      <td>Commercial Alcohols</td>
+      <td>1019C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sunflower seed oil</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#S5007 CAS: 8001-21-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease Inhibitor Cocktail Set III</td>
+      <td>Millipore</td>
+      <td>539134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blebbistatin</td>
+      <td>Research Chemicals Inc Toronto</td>
+      <td>Cat#B592490-10 CAS: 674289-55-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GM6001</td>
+      <td>Abmole</td>
+      <td>Cat#M2147-10MG CAS: 142880-36-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Y-27632</td>
+      <td>Cayman Chemical</td>
+      <td>Cat#10005583–5 CAS: 129830-38-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Compound C</td>
+      <td>EMD Millipore</td>
+      <td>Cat#171260–10 MG CAS: 866405-64-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BDNF</td>
+      <td>Peprotech</td>
+      <td>Cat#450–02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GABA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A5835-25G CAS: 56-12-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris 7.2</td>
+      <td>Bitplane, Oxford Instrument</td>
+      <td>https://imaris.oxinst.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB 2016a</td>
+      <td>Mathworks</td>
+      <td>https://www.mathworks.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB scripts PercevalHR imaging analysis</td>
+      <td>This paper</td>
+      <td>https://github.com/SagLab-CERVO/PercevalHR-fluorescence-intensity</td>
+      <td>To track cell and measure PercevalHR fluorescence intensity (Labrecque et al., 2020; copy archived at https://github.com/elifesciences-publications/PercevalHR-fluorescence-intensity)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.net/Welcome</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 2016</td>
+      <td>OriginLab Corporation</td>
+      <td>https://www.originlab.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Statistica 6.1</td>
+      <td>Stat Soft</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Primer-Blast software</td>
+      <td>NCBI</td>
+      <td>https://www-ncbi-nlm-nih-gov.acces.bibl.ulaval.ca/tools/primer-blast/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChopChop online software</td>
+      <td>Labun et al., 2019</td>
+      <td>https://chopchop.cbu.uib.no/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LightCycler 480 SW1.5.1 software</td>
+      <td>Roche</td>
+      <td>04994884001</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Experiments were performed using two- to four-month-old C57BL/6 mice (Charles River, strain code: 027), glial fibrillary acidic protein (GFAP)-GFP mice (The Jackson Laboratory, strain code: 003257FVB/N-Tg(GFAPGFP)14Mes/J), Slc1a3(Glast)CreErt2::Atg5fl/fl::CAG-CAT-GFP (Atg5 cKO, strain code: B6.129S-Atg5 < tm1Myok>, RRID:IMSR_RBRC02975), and Slc1a3(Glast)CreErt2::Atg5wt/wt::CAG-CAT-GFP (Atg5 WT) mice as well as two-week-old CD-1 pups (The Jackson Laboratory, strain code: 022), which were electroporated on postnatal day 1–2. To obtain the Atg5 WT and Atg5 cKO mice, we first crossed Slc1a3(Glast)CreErt2 mice (Mori et al., 2006) with CAG-CAT-GFP mice Waclaw et al., 2010 to obtain Slc1a3(Glast)CreErt2::GFP mice. This mouse strain was then crossed with Atg5fl/fl mice (B6.129S-Atg5 < tm1Myok>, RBRC02975, Riken) to obtain the Atg5 WT and Atg5 cKO mice. All the experiments were approved by the Université Laval animal protection committee. The mice were housed one to five per cage. They were kept on a 12 hr light/dark cycle at a constant temperature (22°C) with food and water ad libitum.
 
-## Stereotactic injections
+### Stereotactic injections
 
 For the retrovirus and lentivirus injections, C57BL/6 mice were anesthetized with isoflurane (2–2.5% isoflurane, 1 L/min of oxygen) and were kept on a heating pad during the entire surgical procedure. Lentiviruses or retroviruses were stereotactically injected in the dorsal and ventral subventricular zones (SVZd and SVZv) at the following coordinates for C57BL/6 (with respect to the bregma): anterior-posterior (AP) 0.70 mm, medio-lateral (ML) 1.20 mm, dorso-ventral (DV) 1.90 mm, and AP 0.90 mm, ML 1 mm, and DV 2.75 mm. For Atg5fl/fl and Atg5wt/wt, the following coordinates were used: AP 0.90 mm and AP 1.10 mm were used for SVZd and SVZv, respectively. The following viruses were used: CMV-PercevalHR (1 × 1010 TU/mL, produced at the University of North Carolina Vector Core Facility based on plasmid # 49083, Addgene, kindly provided by Dr. Yellen, Harvard Medical School); CMV-Td-Tomato-encoding lentivirus (1.5 × 1010 TU/mL, produced at the University of North Carolina Vector Core Facility based on plasmid # 30530, Addgene, kindly provided by Dr. Ryffel, University of Duisburg-Essen); RFP-GFP-LC3-encoding retrovirus (9.3 × 107 TU/mL, produced at the Molecular Tools Platform at the CERVO Brain Research Center based on plasmid #21074, Addgene, kindly provided by Dr. Yoshimori, Osaka University); GFP-encoding retrovirus (2.9 × 107 TU/mL, Molecular Tools Platform at the CERVO Brain Research Center), and Cre-mNeptune-encoding retrovirus (4 × 107 TU/mL, Molecular Tools Platform at the CERVO Brain Research Center).
 
 For the electroporation of plasmids, P1-P2 CD-1 pups were anesthetized using isoflurane (2–2.5% isoflurane, 1 L/min of oxygen). The plasmids (1.3 µL, 3–6 µg/µL total) were injected in the lateral ventricle at the following coordinates (with respect to the lambda): AP 1.8 mm, ML 0.8 mm, and DV 1.6 mm. Immediately after the injection, an electric field (five 50 ms pulses at 100 mV at 950 ms intervals) was applied using an electrode positioned on the surface of the bones. The pups were used 8 to 15 days post-injection. We used gRNAs for Ulk1, Ulk2, and Atg12. We used gRNAs for LacZ as a control. We used two different gRNAs for each gene and co-electroporated them. To assess the autophagy-dependent recycling of paxillin, we co-electroporated pmRFP-LC3 (Addgene, #21075, kindly provided by Dr. Yoshimori, Osaka University) with pRK paxillin-GFP (Addgene, #50529, kindly provided by Dr. Yamada, National Institute of Dental and Craniofacial Research) at P1-P2 and analyzed migrating neuroblasts in the RMS 8–10 days later. To assess changes in the pH of migrating cells, we co-electroporated pHRed (Addgene, #31473, kindly provided by Dr. Yellen, Harvard Medical School) with FUGW-PercevalHR (Addgene, #49083, kindly provided by Dr. Yellen, Harvard Medical School).
 
-## CRISPR target site selection and assembly
+### CRISPR target site selection and assembly
 
 The gRNAs were designed and selected using ChopChop online software (Labun et al., 2019). We used two different gRNAs to target each gene to increase the efficiency of the CRISPR editing. The gRNAs were cloned in the BbsI site of the PU6-(BbsI)_CBh-Cas9-T2A-mCherry plasmid (Addgene, #64324, kindly provided by Dr. Kuehn, Berlin Institute of Health). The following gRNA sequences were used:
 
-gRNA sequences(5' −3')Atg12 gRNA1TGCAGTTTCGCCCGGAACGGAtg12 gRNA2GGTTGTGCTGCAGCTCCCCTUlk1 gRNA1CTTCAAGGGTCGACACCGCGUlk1 gRNA2GGGAGACATCAGCTCCCCTGUlk2 gRNA1CCCCCGGAAGACCACAGCGAUlk2 gRNA2AGTGTTTCTCCATCAGATTGLacZ gRNATGCGAATACGCCCACGCGAT
+<table>
+  <thead>
+    <tr>
+      <th>gRNA sequences</th>
+      <th>(5' −3')</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Atg12 gRNA1</td>
+      <td>TGCAGTTTCGCCCGGAACGG</td>
+    </tr>
+    <tr>
+      <td>Atg12 gRNA2</td>
+      <td>GGTTGTGCTGCAGCTCCCCT</td>
+    </tr>
+    <tr>
+      <td>Ulk1 gRNA1</td>
+      <td>CTTCAAGGGTCGACACCGCG</td>
+    </tr>
+    <tr>
+      <td>Ulk1 gRNA2</td>
+      <td>GGGAGACATCAGCTCCCCTG</td>
+    </tr>
+    <tr>
+      <td>Ulk2 gRNA1</td>
+      <td>CCCCCGGAAGACCACAGCGA</td>
+    </tr>
+    <tr>
+      <td>Ulk2 gRNA2</td>
+      <td>AGTGTTTCTCCATCAGATTG</td>
+    </tr>
+    <tr>
+      <td>LacZ gRNA</td>
+      <td>TGCGAATACGCCCACGCGAT</td>
+    </tr>
+  </tbody>
+</table>
 
 The efficiency of the gRNAs was verified by high-resolution melting curve PCR (Thomas et al., 2014) on primary cultures of adult NPCs transfected with the above-mentioned plasmids. Briefly, the thin layer of SVZ bordering the lateral ventricle, excluding the striatal parenchyma and corpus callosum, was dissected from the SVZ of 8- to 12-week-old C57BL/6 mice. The tissue was minced and digested in a 0.05% trypsin-EDTA solution, following which an equal volume of soybean trypsin inhibitor was added. After trituration, the resulting single cell suspension was cultured in NeuroCult Basal Medium (StemCell Technologies, #05701) with NeuroCult Proliferation Supplement (StemCell Technologies, #05701), EGF and bFGF (10 ng/mL each, Sigma-Aldrich, #E4127 and #SRP4038-50UG), and heparin (2 μg/mL, StemCell Technologies, #07980).
 
@@ -106,15 +722,72 @@ Genomic DNA was isolated using DNeasy Blood and Tissue kits (Qiagen, #69504) acc
 
 The PCR reactions were performed with 5 μL of LightCycler 480 High Resolution Melting Master (Roche, #04909631001), 0.5 μL of each primer (10 μM), 1.2 μL of MgCl2 (25 mM, Sigma-Aldrich, #M8266; CAS 7786-30-3), 2 μL of genomic DNA, and 1.3 µL of water for a total volume of 10 μL. The PCR was performed in a LightCycler 480 (Roche) using 96-well plates (Bio-Rad). The amplification started with an initial denaturation step at 95°C for 5 min, followed by 48 cycles at 95°C for 10 s, 60°C for 30 s, and 72°C for 25 s. Melting curves were generated over a 65–95°C range in 0.2°C increments and were analyzed using LightCycler 480 SW1.5.1 software. The following primers were used:
 
-HRM primers(5' −3')Atg12-gRNA1-FwCGGAAACAGCCACCCCAGAGAtg12-gRNA1-RsGCCCACTAACGGATGTTGACATTACTTAtg12-gRNA2-FwACGCTGCTACGTCACTTCCAtg12-gRNA2-RsGCTCTGGAAGGCTCTCGCUlk1-gRNA1-FwTCGCAAGGACCTGATTGGACUlk1-gRNA1-RsCCTCGCAATCCCGGACTCUlk1-gRNA2-FwCATCTGCTTTTTATCCCAGCAUlk1-gRNA2-RsCTGCAACAGAGCCAGGAGUlk2-gRNA1-FwTACTGCAAGCGGGACCTUlk2-gRNA1-RsTTTCGCACCAGACAACGGGUlk2-gRNA2-FwCTCTGAGTGAAGATACTATCAGAGTGUlk2-gRNA2-RsGATCCCTGTGGATTATCCCTTT
+<table>
+  <thead>
+    <tr>
+      <th>HRM primers</th>
+      <th>(5' −3')</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Atg12-gRNA1-Fw</td>
+      <td>CGGAAACAGCCACCCCAGAG</td>
+    </tr>
+    <tr>
+      <td>Atg12-gRNA1-Rs</td>
+      <td>GCCCACTAACGGATGTTGACATTACTT</td>
+    </tr>
+    <tr>
+      <td>Atg12-gRNA2-Fw</td>
+      <td>ACGCTGCTACGTCACTTCC</td>
+    </tr>
+    <tr>
+      <td>Atg12-gRNA2-Rs</td>
+      <td>GCTCTGGAAGGCTCTCGC</td>
+    </tr>
+    <tr>
+      <td>Ulk1-gRNA1-Fw</td>
+      <td>TCGCAAGGACCTGATTGGAC</td>
+    </tr>
+    <tr>
+      <td>Ulk1-gRNA1-Rs</td>
+      <td>CCTCGCAATCCCGGACTC</td>
+    </tr>
+    <tr>
+      <td>Ulk1-gRNA2-Fw</td>
+      <td>CATCTGCTTTTTATCCCAGCA</td>
+    </tr>
+    <tr>
+      <td>Ulk1-gRNA2-Rs</td>
+      <td>CTGCAACAGAGCCAGGAG</td>
+    </tr>
+    <tr>
+      <td>Ulk2-gRNA1-Fw</td>
+      <td>TACTGCAAGCGGGACCT</td>
+    </tr>
+    <tr>
+      <td>Ulk2-gRNA1-Rs</td>
+      <td>TTTCGCACCAGACAACGGG</td>
+    </tr>
+    <tr>
+      <td>Ulk2-gRNA2-Fw</td>
+      <td>CTCTGAGTGAAGATACTATCAGAGTG</td>
+    </tr>
+    <tr>
+      <td>Ulk2-gRNA2-Rs</td>
+      <td>GATCCCTGTGGATTATCCCTTT</td>
+    </tr>
+  </tbody>
+</table>
 
-## Tamoxifen injection
+### Tamoxifen injection
 
 For time-lapse imaging of neuroblasts in acute brain sections from Atg5 WT and Atg5 cKO mice, the tamoxifen was injected intraperitonially (180 mg/kg, Sigma-Aldrich, #T5648, CAS: 10540-29-1) once a day for 3 days. The tamoxifen was diluted in sunflower seed oil (Sigma-Aldrich, #S5007, CAS: 8001-21-6) and anhydrous ethanol (10% final, Commercial Alcohols, #1019C). The mice were used 7 to 15 days after the last tamoxifen injection.
 
 The mice received a single intraperitoneal tamoxifen injection (180 mg/kg, Sigma-Aldrich) to assess neuroblast distribution in vivo along the SVZ-OB pathway. They were sacrificed 7 days later.
 
-## Immunostaining
+### Immunostaining
 
 The mice were deeply anesthetized with sodium pentobarbital (12 mg/mL; 0.1 mL per 10 g of body weight) and were perfused intracardially with 0.9% NaCl followed by 4% paraformaldehyde (PFA) (Sigma-Aldrich, #P6148; CAS: 30525-89-4). Brains were collected and were kept overnight in 4% PFA. Sagittal sections (30 or 40 µm) were cut using a vibratome (Leica). For immunolabeling experiments with acute brain sections, 250-µm-thick sections were fixed in 4% PFA overnight and were pre-permeabilized with methanol and acetone (30 min each at –30°C) prior to immunostaining. The brain sections were incubated with the following primary antibodies: anti-LC3B (1:200, Novus, #NB100-2220, RRID:AB_10003146), anti-LC3A (1:100, Abgent, #AP1805a, RRID:AB_2137587), anti-Atg5 (1:400, Novus, #NB110-53818, RRID:AB_828587), anti-Atg12 (1:500, Abcam, #ab155589), anti-Lamp1 (1:500, EMD Millipore, #AB2971, RRID:AB_10807184), and anti-GFP (1:1000, Avés, #GFP-1020; RRID:AB_1000024). For anti-LC3A, LC3B, and Atg5, sections were incubated in 10 mM citrate buffer (pH 6.0) for 20 min at 80°C. The primary antibodies were diluted in either 0.2% or 0.5% Triton X-100% and 4% milk. Images were acquired using an inverted Zeiss microscope (LSM 700, AxioObserver) with a 20X objective (NA: 0.9) or a 63X oil immersion objective (NA: 1.4).
 
@@ -124,13 +797,13 @@ For diaminobenzidine (DAB) staining, 40 µm coronal sections separated by 240 µ
 
 To determine the density of LacZ gRNA- and Atg12 gRNA-expressing cells, sagittal 40 µm sections were obtained from fixed pup brains electroporated with gRNAs using a vibratome. The brain sections containing the SVZ, RMS, and OB were stained with DAPI. Whole section images were acquired using TissueScope 4000 (Huron), and the density of mCherry+ cells (either LacZ or Atg12 gRNA) was determined manually using the ImageJ cell counter plugin. DAPI counterstaining was used to define the surfaces of the SVZ, RMS, RMSOB, and OB.
 
-## Electron microscopy
+### Electron microscopy
 
 Two weeks after the i.p. injection of tamoxifen, seven mice (4 Atg5 WT and 3 Atg5 cKO) were deeply anesthetized with a mixture of ketamine (100 mg/kg, i.p.) and xylazine (10 mg/kg, i.p.). They were transcardially perfused with 40 mL of ice-cold sodium phosphate-buffered saline (0,1 M PBS; pH 7.4) followed by 100 mL of cold 2% acroleine and 100 mL of cold 4% PFA to which 0.1% glutaraldehyde was added. The brains were excised and were post-fixed for 4 hr in 4% PFA at 4°C. They were then cut with a vibratome (model VT1200 S; Leica, Germany) into 50-µm-thick sagittal sections collected in PBS.
 
 After a 30 min incubation in a 0.1 M sodium borohydride/PBS solution at room temperature, the sagittal sections containing the RMS were immunostained for GFP. Briefly, free-floating sections were sequentially incubated at room temperature (RT) in blocking solution containing 2% normal goat serum and 0.5% gelatin (1 hr), the same blocking solution containing a rabbit anti-GFP antibody (1:1000, Abcam, #ab290, RRID:AB_303395) (24 hr, RT), and then the same blocking solution containing a 1:20 dilution of Nanogold-Fab goat anti-rabbit antibody (Nanoprobe, #2004, RRID:AB_2631182) (24 hr, 4°C). After thoroughly rinsing the sections in 3% sodium acetate buffer (pH 7.0), the gold immunostaining was amplified using an HQ Silver Enhancement Kit (Nanoprobe, #2012) according to the manufacturer’s protocol. The sections were then osmicated, dehydrated in ethanol and propylene oxide, and flat-embedded in Durcupan (Fluka). Quadrangular pieces containing RMS were cut from the flat-embedded GFP-immunostained sections. After being glued to the tip of a resin block, 50 nm sections were cut using an ultramicrotome (model EM UC7, Leica). The ultrathin sections were collected on bare 150-mesh copper grids, stained with lead citrate, and examined with a transmission electron microscope (Tecnai 12; Philips Electronic, 100 kV) equipped with an integrated digital camera (XR-41, Advanced Microscopy Techniques Corp.). Labeled cell bodies were then randomly selected, and autophagosomal vesicles were identified and measured based on careful selection criteria (Eskelinen, 2008).
 
-## Time-lapse imaging
+### Time-lapse imaging
 
 Measurement of the ATP/ADP ratio: Seven days after co-injecting lentiviral particles expressing PercevalHR or TdTomato in the SVZ, the mice were sacrificed and acute sections were prepared as described previously (Bakhshetyan and Saghatelyan, 2015). Briefly, the mice were anesthetized with ketamine (100 mg/kg) and xylazine (10 mg/kg) and were perfused transcardially with modified oxygenated artificial cerebrospinal fluid (ACSF) containing (in mM): 210.3 sucrose, 3 KCl, 2 CaCl2.2H2O, 1.3 MgCl2.6H2O, 26 NaHCO3, 1.25 NaH2PO4.H2O, and 20 glucose. The brains were then quickly removed, and 250-µm-thick sections were cut using a vibratome (HM 650V; Thermo Fisher Scientific). The sections were kept at 37°C in ACSF containing (in mM): 125 NaCl, 3 KCl, 2 CaCl2.2H2O, 1.3 MgCl2.6H2O, 26 NaHCO3, 1.25 NaH2PO4.H2O, and 20 glucose under oxygenation for no more than 6–8 hr. PercevalHR imaging was performed using a BX61WI (Olympus) upright microscope with a 60X water immersion objective (NA = 0.9), a CCD camera (CoolSnap HQ), and a DG-4 illumination system (Sutter Instrument) equipped with a Xenon lamp for rapid wavelength switching. The field of view was chosen to have sparse virally labeled cells. The cells were excited at 430 nm and 482 nm, and images were acquired at 525 nm for PercevalHR. The imaging was performed every 30 s for 2 hr with multiple z stacks (4–8 stacks, depending on the cell orientation, at 3 µm intervals). The images were analyzed using a custom script written in Matlab. Briefly, a maximum intensity projection of the z stack was created for each wavelength. The migration of the cells was assessed based on the morphological marker TdTomato. The means of the fluorescence intensities at 430 nm and 482 nm were extracted, and the ratio of fluorescence for these two wavelengths was calculated. The speed of migration, as well as the migratory and stationary phases, were determined as described below. To estimate changes in the ATP/ADP ratio, we measured the charge, which was defined as the area under the ATP/ADP ratio curves for each stationary and migratory phase divided by the duration of the phases. To calculate the area under the curves, we used the mean of the PercevalHR ratio during the stationary phases of the entire time-lapse movie of an individual cell as the baseline. Combined pHRed and PercevalHR imaging was performed under the same conditions. The cells were excited at 430 and 482 nm for PercevalHR and at 440 and 585 nm for pHRed. Fluorescence was collected at 525 and 624 nm for PercevalHR and pHRed, respectively. The same calculations were made for pHRed. To compare the pHRed and PercevalHR ratios both were presented as a percentage, with 100% representing the highest value for individual cells in the phases.
 
@@ -142,10 +815,10 @@ For the autophagosome density analysis during the migratory and stationary phase
 
 To investigate autophagosome flux dynamics, acute sections from C57BL/6 mice injected with RFP-GFP-LC3 retroviruses were obtained as described above and were imaged using a two-photon microscope (Scientifica). Images were acquired with a water immersion 20X objective (XLUMPlanFI, NA = 0.95; Olympus) every 30 s for 1 hr with multiple z stacks (10 stacks at 4 µm intervals). Insight X3 dual lasers were used to provide excitation at 940 and 1040 nm for GFP and RFP, respectively. Emission photons were collected simultaneously using two separate GaAsP PMTs. RFP+ punctae and GFP+/RFP+ punctae were counted manually using the ImageJ cell counter plugin.
 
-## Western blotting
+### Western blotting
 
 Acute adult mouse forebrain sections were incubated with the pharmacological compounds. The RMS was manually dissected under an inverted microscope (Olympus FV1000, 10X objective, NA = 0.4). The tissue was snap frozen in liquid nitrogen and was then incubated in lysis buffer (50 mM HCl, 1 mM EDTA, 1 mM EGTA, 1 mM sodium orthovanadate, 50 mM sodium fluoride, 5 mM sodium pyrophosphate, 10 mM sodium β-glycerophosphate, 0.1% 2-mercaptoethanol, 1% Triton X-100, pH 7.5) supplemented with a protease inhibitor cocktail III (Calbiochem, #539134). The concentration of total protein was measured using the Bradford assay (Bio-Rad). Proteins were separated on 16% NuPage gels (Invitrogen) in SDS running buffer and were transferred to nitrocellulose membranes (Life Technologies). The following primary antibodies were used: anti-LC3B (1:1000, Novus), anti-p62 (1:500, Proteintech, #18420–1-AP, RRID:AB_10694431), anti-paxillin (1:1000, BD biosciences, #610051, RRID:AB_397463), and anti-GAPDH (1:5000, Thermo Fisher Scientific, #MA5-15738, RRID:AB_10977387).
 
-## Statistical analysis
+### Statistical analysis
 
 Data are expressed as means ± SEM. Statistical significance was determined using an unpaired two-sided Student's t-test or a one-way ANOVA followed by an LSD-Fisher post hoc test, depending on the experiment, as indicated. Equality of variance for the unpaired t-test was verified using the F-test. The levels of significance were as follows: *p<0.05, **p<0.01, ***p<0.001.

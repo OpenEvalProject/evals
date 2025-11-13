@@ -9,15 +9,15 @@
 
 ### Affiliations
 
-1. https://ror.org/02y3ad647 Department of Biology, University of Florida Saint Augustine United States
-2. https://ror.org/05p8w6387 Department of Biological Sciences, Florida Atlantic University Jupiter United States
-3. https://ror.org/01f5ytq51 Texas A&M University College Station United States
+1. Department of Biology, University of Florida Saint Augustine United States ([ROR:02y3ad647](https://ror.org/02y3ad647))
+2. Department of Biological Sciences, Florida Atlantic University Jupiter United States ([ROR:05p8w6387](https://ror.org/05p8w6387))
+3. Texas A&M University College Station United States ([ROR:01f5ytq51](https://ror.org/01f5ytq51))
 
 † Corresponding author
 
 ## Abstract
 
-Animals can evolve dramatic sensory functions in response to environmental constraints, but little is known about the neural mechanisms underlying these changes. The Mexican tetra, Astyanax mexicanus , is a leading model to study genetic, behavioral, and physiological evolution by comparing eyed surface populations and blind cave populations. We compared neurophysiological responses of posterior lateral line afferent neurons and motor neurons across A. mexicanus populations to reveal how shifts in sensory function may shape behavioral diversity. These studies indicate differences in intrinsic afferent signaling and gain control across populations. Elevated endogenous afferent activity identified a lower response threshold in the lateral line of blind cavefish relative to surface fish leading to increased evoked potentials during hair cell deflection in cavefish. We next measured the effect of inhibitory corollary discharges from hindbrain efferent neurons onto afferents during locomotion. We discovered that three independently derived cavefish populations have evolved persistent afferent activity during locomotion, suggesting for the first time that partial loss of function in the efferent system can be an evolutionary mechanism for neural adaptation of a vertebrate sensory system.
+Animals can evolve dramatic sensory functions in response to environmental constraints, but little is known about the neural mechanisms underlying these changes. The Mexican tetra, Astyanax mexicanus, is a leading model to study genetic, behavioral, and physiological evolution by comparing eyed surface populations and blind cave populations. We compared neurophysiological responses of posterior lateral line afferent neurons and motor neurons across A. mexicanus populations to reveal how shifts in sensory function may shape behavioral diversity. These studies indicate differences in intrinsic afferent signaling and gain control across populations. Elevated endogenous afferent activity identified a lower response threshold in the lateral line of blind cavefish relative to surface fish leading to increased evoked potentials during hair cell deflection in cavefish. We next measured the effect of inhibitory corollary discharges from hindbrain efferent neurons onto afferents during locomotion. We discovered that three independently derived cavefish populations have evolved persistent afferent activity during locomotion, suggesting for the first time that partial loss of function in the efferent system can be an evolutionary mechanism for neural adaptation of a vertebrate sensory system.
 
 ## Introduction
 
@@ -79,15 +79,15 @@ By employing neurophysiological approaches in the lateral line system of A. mexi
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Fish were progeny of pure-bred stocks originally collected in Mexico (Duboué et al., 2011) that have been maintained at the Florida Atlantic University core facilities. Larvae were raised in 10% Hank’s solution (137 mM NaCl, 5.4 mM KCl, 0.25 mM Na2HPO4, 0.44 mM KH2PO4, 1.3 mM CaCl2, 1.0 mM MgSO4, 4.2 mM NaHCO4; pH 7.3) at 26°C. All experiments were performed according to protocols approved by the University of Florida or Florida Atlantic University Institutional Animal Care and Use Committee (IACUC201603267, IACUC202200000056). Animal health was assessed by monitoring blood flow throughout each experiment.
 
-## Neuromast imaging
+### Neuromast imaging
 
 To assess neuromast quantities, larvae aged 6 dpf were submerged in 5 µg/ml DASPEI dissolved in embryo medium for 15 min as previously described (Van Trump et al., 2010). Larvae were then transferred to ice-cold water for 30–45 s then immersed in 8% methylcellulose for imaging. Images were taken using a Nikon DS-Qi2 monochrome microscope camera mounted on a Nikon SMZ25 Stereo microscope (Nikon; Tokyo, Japan). Neuromasts innervated by posterior lateral line afferents and ALL afferents were tabulated separately. To image hair cells that comprise each neuromast, larvae (5–7 dpf) were immersed in 2 µM YO-PRO1 (Invitrogen; Y3603) in embryo media for 30 min, rinsed three times in embryo media (Santos et al., 2006). Larvae were then embedded on their sides in low-melting point-1.6% agarose and imaged on a confocal microscope (Leica TCS SP5, ×63/1.2 water immersion, 200 Hz, emission: 644–698 nm). Images were processed on ImageJ (v1.48; U. S. National Institutes of Health, Bethesda, MD).
 
-## Electrophysiology
+### Electrophysiology
 
 Prior to recordings, A. mexicanus larvae (4–7 dpf) were paralyzed using 0.1% α-bungarotoxin (Lunsford and Liao, 2021). Once paralyzed, larvae were then transferred into extracellular solution (134 mM NaCl, 2.9 mM KCl, 1.2 mM MgCl2, 2.1 mM CaCl2, 10 mM glucose, 10 mM HEPES buffer; pH 7.8, adjusted with NaOH) and pinned with etched tungsten pins through their dorsal notochord and otic vesicle into a Sylgard-bottom dish.
 
@@ -95,11 +95,11 @@ Multiunit extracellular recordings of the posterior lateral line afferent gangli
 
 All recordings were analyzed in Matlab (vR2019b) using custom written scripts. Both spontaneous afferent spikes and swimming motor activity identified using a combination of spike parameters previously described (Lunsford et al., 2019). Afferent neuron activity within a time interval equal to the subsequent fictive swim bout, hereafter termed ‘pre-swim’, was quantified and compared to afferent activity during swimming to measure relative changes in spontaneous firing.
 
-## Efferent ablations
+### Efferent ablations
 
 Hindbrain efferent neurons were backfilled with tetramethylrhodamine (TRITC, 3 kDa; Molecular Probes, Eugene, OR). A. mexicanus larvae (4 dpf) were anesthetized in MS-222 (Tricaine, Western Chemical Inc, Ferndale, WA) and embedded in agar. To selectively label the hindbrain cholinergic efferent neurons, we systematically electroporated (Axoporator 800A Single Cell Electroporator, Axon CNS Systems, Molecular Devices LLC, San Jose, CA) TRITC into the efferent terminals that innervate the D1, D2, L1, and L2 neuromasts of the lateral line in surface fish (n = 14) and Pachón cavefish (n = 7; Figure 4Ci). Electroporation does not ensure labeling of all efferent neurons so we standardized parameters (30 V, 50 Hz, 500 ms, square pulse) and targeted the same neuromasts across populations to minimize variation in labeling efficacy. Larvae were then gently freed from the agar and allowed to swim freely and recover overnight. Larvae (5 dpf) were then paralyzed via α-bungarotoxin immersion, remounted in agar dorsal surface down, and imaged on a Leica SP5 confocal microscope (Leica Microsystems, Wetzlar, Germany). Efferent soma size and quantity were measured within identified TRITC-labeled cells in ImageJ (v1.48; U. S. National Institutes of Health, Bethesda, MD). To perform targeted ablations of surface fish (n = 5) and cavefish (n = 6) efferent neurons, a near-ultraviolet laser was focused at a depth corresponding to the maximum fluorescence intensity of each soma, to ensure we were targeting its center. We applied the FRAP Wizard tool in Leica application software to target individual cells. We ablated target cells with a 30-s exposure to the near-ultraviolet laser line (458 nm), and successful targeting was confirmed by quenching of the backfilled dye. This method has been successfully applied and validated in similar systems (Liu and Fetcho, 1999; Soustelle et al., 2008). Fish were again freed from agar and allowed to swim freely and recover overnight. Electrophysiological recordings were performed on ablated surface fish (n = 4) and cavefish (n = 5) at 6 dpf to simultaneously monitor afferent activity and motor activity.
 
-## Statistical analysis
+### Statistical analysis
 
 Neuromast data were analyzed using GraphPad Prism 8.4.3. Normality was assessed via Shapiro–Wilk test. ALL neuromast count data were found to be normally distributed. ALL neuromast quantities in surface and cave larvae were compared using an unpaired t-test. Posterior lateral line neuromast count was found to not be normally distributed and was subsequently analyzed via Mann–Whitney U-test neuromast hair cell data were analyzed using MatLab (v2019b). Surface and cavefish hair cell counts per neuromast compared using an unpaired two-way t-test.
 

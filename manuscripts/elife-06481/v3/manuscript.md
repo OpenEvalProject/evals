@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.06481.001 In the human brain, a default mode or task-negative network shows reduced activity during many cognitive tasks and is often associated with internally-directed processes, such as mind wandering and thoughts about the self. In contrast to this task-negative pattern, we show increased activity during a large and demanding switch in task set. Furthermore, we employ multivoxel pattern analysis and find that regions of interest within default mode network are encoding task-relevant information during task performance. Activity in this network may be driven by major revisions of cognitive context, whether internally or externally focused. DOI: http://dx.doi.org/10.7554/eLife.06481.001
+In the human brain, a default mode or task-negative network shows reduced activity during many cognitive tasks and is often associated with internally-directed processes, such as mind wandering and thoughts about the self. In contrast to this task-negative pattern, we show increased activity during a large and demanding switch in task set. Furthermore, we employ multivoxel pattern analysis and find that regions of interest within default mode network are encoding task-relevant information during task performance. Activity in this network may be driven by major revisions of cognitive context, whether internally or externally focused.
 
 ## Introduction
 
@@ -26,51 +26,155 @@ Recently, Andrews-Hanna et al. (2010) have argued that the DMN separates into th
 
 Here, we consider a simple conceptualisation of DMN function and apply it within the Andrews-Hanna framework. Arguably, imagination, mind-wandering, and taking another's perspective have in common a substantial change from the current cognitive context. Similarly, conscious recollection is typically conceived as reactivation of a previously-experienced episode, with components linked into a complex surrounding, context. Substantial shifts of context may be common in everyday activity, for example, a shift from cooking dinner to giving directions to guests over the phone, but less common in the constrained setting of typical laboratory tasks. For example, in a recent review of neuroimaging studies of task switching (Kim et al., 2011), tasks that they argue required a contextual switch involved either a change in simple attended features or binary categorization rules using a fixed, small set of possible stimuli. Irrespective of specific high-level processes involved, we reasoned that the DMN may be involved in any large switch of cognitive context—an operation presumably calling for relaxation of many aspects of a current attentional focus, with concomitant activation of representations and processes relevant to the new context.
 
-To test this hypothesis, we used a novel experimental paradigm that required participants to switch between similar and dissimilar tasks, within a relatively large set of six tasks (
+To test this hypothesis, we used a novel experimental paradigm that required participants to switch between similar and dissimilar tasks, within a relatively large set of six tasks (Figure 1). The six tasks were each associated with a different rule, as determined by the colour border surrounding the task stimulus. The tasks were split into three groups defined by stimulus category, with two possible tasks per stimulus type. A no-switch trial occurred when participants had to apply the same rule that was applied on the previous trial. A similar-task-switch trial—resembling switches in typical neuroimaging studies—occurred when participants had to apply the other rule from the same category as the previous trial. A dissimilar-task-switch occurred when participants had to apply a rule from a different category compared to the previous trial.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/06481/elife-06481-fig1-v3.jpg)
 
-**Figure 1.:** The experiment required participants to learn six tasks prior to scanning. (A) The six tasks were each associated with a different rule, as determined by the colour border. The tasks were split into three groups defined by stimulus category, with two possible tasks per stimulus type. (B) Experimental design. Within each run, trials using the six tasks occurred in random order. A no-switch trial occurred when participants had to apply the same task that was applied on the previous trial. A similar-task-switch trial occurred when participants had to apply the other task from the same category as the previous trial. A dissimilar-task-switch occurred when participants had to apply a task from a different category compared to the previous trial.DOI: http://dx.doi.org/10.7554/eLife.06481.003
+**Figure 1.:** The experiment required participants to learn six tasks prior to scanning. (A) The six tasks were each associated with a different rule, as determined by the colour border. The tasks were split into three groups defined by stimulus category, with two possible tasks per stimulus type. (B) Experimental design. Within each run, trials using the six tasks occurred in random order. A no-switch trial occurred when participants had to apply the same task that was applied on the previous trial. A similar-task-switch trial occurred when participants had to apply the other task from the same category as the previous trial. A dissimilar-task-switch occurred when participants had to apply a task from a different category compared to the previous trial.
 
 Contrary to the common concept of a task-negative system, we predicted increased DMN recruitment for the most difficult condition of switching between dissimilar tasks. We found this to be the case and furthermore, that the activity increase was selectively found in the Core and MTL sub-networks. In addition, we provide evidence that all sub-networks of the DMN represented task-related information during task performance.
 
 ## Results
 
-## Behavioral results
+### Behavioral results
 
 Accuracy on all tasks was high (median accuracy for all tasks >95%, inter quartile range <6%). As predicted, response time (RT) was significantly longer when switching between dissimilar tasks (2043 ms) compared both to trials when no task switch occurred (1670 ms; t17 = 8.6, p < 0.001), and to trials with switches between similar tasks (1746 ms; t17 = 8.1, p < 0.001). Switches between similar tasks also produced significantly longer RTs compared to no-switch trials (t17 = 2.8, p = 0.006).
 
-## Task-switch related activity in the DMN
+### Task-switch related activity in the DMN
 
-Preprocessing steps for fMRI data included realignment of the raw echo-planar images (EPI), slice-time correction, coregistration of the EPI images with the structural image, normalisation to the Montreal Neurological Institute (MNI) template brain, smoothing with an 8 mm full-width at half-maximum Gaussian kernel and filtering with a high-pass filter (see ‘Materials and methods’). Univariate analysis of fMRI data was used to compare dissimilar-task-switch with no-switch trials through the standard general linear model (GLM) approach. A regressor was constructed for each switch type with events modelled from stimulus onset until response and convolved with the haemodynamic response function. The resulting beta values for each switch type were compared and thresholded at p < 0.05, correcting for the false discovery rate. We identified widespread activation predominantly in regions of in the DMN (
+Preprocessing steps for fMRI data included realignment of the raw echo-planar images (EPI), slice-time correction, coregistration of the EPI images with the structural image, normalisation to the Montreal Neurological Institute (MNI) template brain, smoothing with an 8 mm full-width at half-maximum Gaussian kernel and filtering with a high-pass filter (see ‘Materials and methods’). Univariate analysis of fMRI data was used to compare dissimilar-task-switch with no-switch trials through the standard general linear model (GLM) approach. A regressor was constructed for each switch type with events modelled from stimulus onset until response and convolved with the haemodynamic response function. The resulting beta values for each switch type were compared and thresholded at p < 0.05, correcting for the false discovery rate. We identified widespread activation predominantly in regions of in the DMN (Figure 2A), with peaks found in bilateral HF, PHC, Rsp, PCC, AMPFC, and left pIPL (Table 1). It is worth noting that all of these regions fall within either the Core or MTL sub-networks. In comparison, no regions from the DMPFC sub-network showed significant activation at the whole-brain level. A contrast of similar-task-switch against no-switch trials revealed no significant activation across the whole brain.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/06481/elife-06481-fig2-v3.jpg)
 
-**Figure 2.:** Region labels and regions of interest (ROIs) are color-coded according to the sub-network to which they belong: yellow for Core, green for medial temporal lobe (MTL), blue for dorsomedial prefrontal cortex (DMPFC). (A) Whole brain rendering in axial slices: the numbers above each slice indicate z-coordinate of that slice. The contrast of dissimilar-task-switch > no-switch (T = 3.23, p < 0.05, FDR corrected) shows activations in regions previously identified as the DMN. (B) Locations of DMN ROIs distinguished by Andrews-Hanna et al. (C) Change in activation of similar-task-switch (darker colours) and dissimilar-task-switch (lighter colours) relative to no-switch trials in the DMN ROIs. APMFC: anterior medial prefrontal cortex, PCC: posterior cingulate cortex, pIPL: posterior inferior parietal lobe, Rsp: retrosplenial cortex, PHC: parahippocampal cortex, HF: hippocampal formation, VMPFC: ventromedial prefrontal cortex, TPJ: temporoparietal junction, LTC: lateral temporal cortex, TempP: temporal pole, DMPFC: dorsomedial prefrontal cortex. * indicates p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.06481.004
+**Figure 2.:** Region labels and regions of interest (ROIs) are color-coded according to the sub-network to which they belong: yellow for Core, green for medial temporal lobe (MTL), blue for dorsomedial prefrontal cortex (DMPFC). (A) Whole brain rendering in axial slices: the numbers above each slice indicate z-coordinate of that slice. The contrast of dissimilar-task-switch > no-switch (T = 3.23, p < 0.05, FDR corrected) shows activations in regions previously identified as the DMN. (B) Locations of DMN ROIs distinguished by Andrews-Hanna et al. (C) Change in activation of similar-task-switch (darker colours) and dissimilar-task-switch (lighter colours) relative to no-switch trials in the DMN ROIs. APMFC: anterior medial prefrontal cortex, PCC: posterior cingulate cortex, pIPL: posterior inferior parietal lobe, Rsp: retrosplenial cortex, PHC: parahippocampal cortex, HF: hippocampal formation, VMPFC: ventromedial prefrontal cortex, TPJ: temporoparietal junction, LTC: lateral temporal cortex, TempP: temporal pole, DMPFC: dorsomedial prefrontal cortex. * indicates p < 0.05.
+
+**Table 1.**
+ Peak coordinates of DMN regions that showed significantly greater activation for dissimilar-task-switch over no-switch
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ROI</th>
+      <th>hemisphere</th>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+      <th>t-statistic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">HF</td>
+      <td>left</td>
+      <td>−30</td>
+      <td>−36</td>
+      <td>−6</td>
+      <td>3.64</td>
+    </tr>
+    <tr>
+      <td>right</td>
+      <td>33</td>
+      <td>−36</td>
+      <td>−9</td>
+      <td>3.73</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PHC</td>
+      <td>left</td>
+      <td>−21</td>
+      <td>−42</td>
+      <td>9</td>
+      <td>4.87</td>
+    </tr>
+    <tr>
+      <td>right</td>
+      <td>30</td>
+      <td>−39</td>
+      <td>6</td>
+      <td>6.81</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Rsp</td>
+      <td>left</td>
+      <td>−9</td>
+      <td>−48</td>
+      <td>12</td>
+      <td>3.97</td>
+    </tr>
+    <tr>
+      <td>right</td>
+      <td>9</td>
+      <td>−51</td>
+      <td>12</td>
+      <td>3.89</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PCC</td>
+      <td>left</td>
+      <td>−12</td>
+      <td>−54</td>
+      <td>24</td>
+      <td>5.12</td>
+    </tr>
+    <tr>
+      <td>right</td>
+      <td>12</td>
+      <td>−51</td>
+      <td>24</td>
+      <td>5.16</td>
+    </tr>
+    <tr>
+      <td rowspan="2">AMPFC</td>
+      <td>left</td>
+      <td>−9</td>
+      <td>51</td>
+      <td>−6</td>
+      <td>3.24</td>
+    </tr>
+    <tr>
+      <td>right</td>
+      <td>9</td>
+      <td>48</td>
+      <td>−3</td>
+      <td>3.72</td>
+    </tr>
+    <tr>
+      <td>pIPL</td>
+      <td>left</td>
+      <td>−39</td>
+      <td>−75</td>
+      <td>33</td>
+      <td>3.58</td>
+    </tr>
+  </tbody>
+</table>
+
+_Coordinates are in MNI space. HF = hippocampal formation, PHC = parahippocampus, Rsp = retrosplenial cortex, PCC = posterior cingulate cortex, AMPFC = anterior medial prefrontal cortex, pIPL = posterior inferior parietal lobe._
 
 To examine changes in activation from the perspective of the DMN sub-networks, we used individual DMN regions of interest (ROIs) previously defined (Buckner et al., 2009; Andrews-Hanna et al., 2010). The mean beta value was extracted from each ROI following each switch type. Planned, paired two-tailed t-tests revealed significant increase in activity during dissimilar-task-switch compared to no-switch in core (bilateral AMPFC, PCC) and MTL (Rsp, PHC) sub-networks, with a tendency to de-activation in the DMPFC sub-network (significant in right TPJ) (Figure 2C). Again, no ROIs revealed a significant difference between the similar-task-switch trials and no-switch trials. Two-way repeated measures ANOVAs were performed separately for each sub-network, with factors of ROI (Core: 4, MTL: 9, DMPFC: 7) and switch type (no-switch, dissimilar-task-switch). Main effects of task-switching were found for the Core (F(1,17) = 16.7, p = 0.001) and MTL (F(1,17) = 6.1, p = 0.03) sub-networks, showing increased activity for dissimilar switches. In contrast, the DMPFC sub-network showed a marginally significant de-activation (F(1,17) = 4.1, p = 0.06). Corresponding ANOVAs were performed to test for the difference between similar-task-switch and no-switch, but these revealed no main effect in any sub-network. To investigate differences at the sub-network level, beta values were averaged across the ROIs within each sub-network each of the three trial types, and a two-way repeated measures ANOVA (factors of sub-network and switch type) was performed on the mean beta values. This analysis revealed a main effect of sub-network (F(2,34) = 18.9, p < 0.001) and an interaction of switch type and sub-network (F(4,68) = 17.8, p < 0.001). These data therefore show a dissociation within the DMN: While the DMPFC sub-network displayed the characteristic pattern of reduced activity during executive control, switching between dissimilar tasks showed an opposite pattern of increased activity in Core and MTL sub-networks.
 
-In an exploratory analysis, we looked at the univariate activation associated with dissimilar switches between specific categories compared to no-switch trials, in the three DMN sub-networks, for example, from a semantic task to a lexical task, compared with repetition of the lexical task. This was performed for all six between category switch types.
+In an exploratory analysis, we looked at the univariate activation associated with dissimilar switches between specific categories compared to no-switch trials, in the three DMN sub-networks, for example, from a semantic task to a lexical task, compared with repetition of the lexical task. This was performed for all six between category switch types. Figure 3 shows that all types of switch showed a relative increase in Core sub-network activation and decrease in DMFPC sub-network activation. The MTL sub-network shows increases for 4 of the 6 switch types and a marginal decrease when switching from the perceptual task. Especially for the Core and DMPFC sub-networks, these data suggest little variation in the pattern of results across different task types.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/06481/elife-06481-fig3-v3.jpg)
 
-**Figure 3.:** An exploratory analysis looking at the activation/deactivation associated with switching between each of the three task categories. Core and MTL sub-networks predominantly show increased activation following a dissimilar task switch across switch types, whereas DMPFC shows a relative decrease in activation. Abbreviations: sem = semantic category, per = perceptual, lex = lexical. * denotes p < 0.05 from a paired, two-tailed t-test.DOI: http://dx.doi.org/10.7554/eLife.06481.006
+**Figure 3.:** An exploratory analysis looking at the activation/deactivation associated with switching between each of the three task categories. Core and MTL sub-networks predominantly show increased activation following a dissimilar task switch across switch types, whereas DMPFC shows a relative decrease in activation. Abbreviations: sem = semantic category, per = perceptual, lex = lexical. * denotes p < 0.05 from a paired, two-tailed t-test.
 
-## Multivariate decoding demonstrates task representation across the DMN
+### Multivariate decoding demonstrates task representation across the DMN
 
-For the multivariate analysis, the same preprocessing pipeline was followed with the omission of the smoothing step. We reasoned that if the DMN was involved in switching between tasks, then the differences between tasks might be represented within the network. To test this hypothesis, we performed a multivariate pattern analysis on the same ROIs. For each ROI, classifiers were trained to discriminate between the voxel-wise pattern of activation for each task pair (6 tasks, therefore 15 task pairs) and these classifiers were subsequently tested on independent data using leave-one-run-out cross-validation (see ‘Materials and methods’). The matrices in
+For the multivariate analysis, the same preprocessing pipeline was followed with the omission of the smoothing step. We reasoned that if the DMN was involved in switching between tasks, then the differences between tasks might be represented within the network. To test this hypothesis, we performed a multivariate pattern analysis on the same ROIs. For each ROI, classifiers were trained to discriminate between the voxel-wise pattern of activation for each task pair (6 tasks, therefore 15 task pairs) and these classifiers were subsequently tested on independent data using leave-one-run-out cross-validation (see ‘Materials and methods’). The matrices in Figure 4A show the classification accuracy (CA) for each task pair in each ROI, averaged across participants. The strongest decoding of task was found in bilateral HF, pIPL and the PCC, while bilateral TPJ, Rsp, AMPFC, and DMPFC on the midline showed weaker but still significant decoding.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/06481/elife-06481-fig4-v3.jpg)
 
-**Figure 4.:** (A) Classification accuracies between different task pairs in all DMN ROIs. Large correlation matrix used as example is the same as left HF. The colour of the circle in the key matches with the colour borders used to indicate each task in Figure 1A: Red for ‘bigger than a shoebox?’, blue for ‘living?’, brown for ‘same shape?’, pink for ‘same height?’, green for ‘does adding A make a word?’, purple for ‘does adding I make a word’? Matrices show the classification accuracy of decoding each task pair; values below the diagonal show classification accuracy for all task pairs, while non-grey values above the diagonal show only decoding that survived the threshold for statistical significance. The colour borders indicate the sub-network that the ROIs belong to: core (yellow), MTL (green), and DMPFC (blue). ROIs on the left side of each box are from the left hemisphere, those on the right are from the right hemisphere. (B) All three sub-networks demonstrated above-chance classification accuracy when decoding dissimilar tasks, while only the DMPFC sub-network demonstrated significant decoding of similar task pairs. Error bars indicate standard error. * indicates p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.06481.007
+**Figure 4.:** (A) Classification accuracies between different task pairs in all DMN ROIs. Large correlation matrix used as example is the same as left HF. The colour of the circle in the key matches with the colour borders used to indicate each task in Figure 1A: Red for ‘bigger than a shoebox?’, blue for ‘living?’, brown for ‘same shape?’, pink for ‘same height?’, green for ‘does adding A make a word?’, purple for ‘does adding I make a word’? Matrices show the classification accuracy of decoding each task pair; values below the diagonal show classification accuracy for all task pairs, while non-grey values above the diagonal show only decoding that survived the threshold for statistical significance. The colour borders indicate the sub-network that the ROIs belong to: core (yellow), MTL (green), and DMPFC (blue). ROIs on the left side of each box are from the left hemisphere, those on the right are from the right hemisphere. (B) All three sub-networks demonstrated above-chance classification accuracy when decoding dissimilar tasks, while only the DMPFC sub-network demonstrated significant decoding of similar task pairs. Error bars indicate standard error. * indicates p < 0.05.
 
 Decoding of task between dissimilar task pairs is likely driven by many differences in task features. In contrast, differences between similar tasks will be predominantly driven by the internal representation of the specific decision rule. To quantify the extent to which rule and other features were driving the CA scores, CAs for ROIs within the Core, MTL and DMPFC sub-networks were averaged separately for similar task pairs and dissimilar task pairs. This analysis (Figure 4B) revealed significant decoding of dissimilar task pairs in all DMN sub-networks, and weaker but significant decoding of similar task pairs in the DMPFC sub-network.
 
-Recently concern has arisen that differences in RT may be driving differences in CA (
+Recently concern has arisen that differences in RT may be driving differences in CA (Todd et al., 2013; for contrary arguments see; Woolgar et al., 2014). We performed a regression analysis of CA against absolute difference in RT in each of the three sub-networks separately. First, we extracted the CA associated with each task pair in each ROI in each subject. We then calculated the mean CA across the component ROIs of the Core, MTL, and DMPFC sub-networks in each individual, producing a 3-dimensional matrix of CA values for 3 sub-networks × 18 subjects × 15 task pairs. A similar matrix was produced for absolute RT differences. We segregated the dissimilar–task pairs and similar–task pairs and conducted a Spearman's correlational analysis of RT against CA for each task-pair type within each sub-network. The results showed strong discrimination of dissimilar task pairs, and weak discrimination of similar task pairs, irrespective of RT difference (Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/06481/elife-06481-fig5-v3.jpg)
 
-**Figure 5.:** (A) Correlation between classification accuracy and RT difference in the three DMN sub-networks. Each point represents data for a single task pair in a single subject, with mean CA across ROIs of the named sub-network plotted against absolute RT difference. The darker shades in each graph are taken from the similar task pairs, while the lighter shades are taken from the dissimilar task pairs. (B) Beta estimates for the association of CA and RT in each subject for similar and dissimilar task pairs of the three DMN sub-networks. In each graph subjects' beta estimates are sorted is in ascending order. Top row, a–c, displays beta estimates for similar task pairs in the Core, MTL and DMPFC, respectively. Bottom row, d–f, shows beta estimates for dissimilar task pairs in the Core, MTL and DMPFC, respectively. The p-value from a 2-tailed, 1-way t-test of each graph's beta values is shown.DOI: http://dx.doi.org/10.7554/eLife.06481.008
+**Figure 5.:** (A) Correlation between classification accuracy and RT difference in the three DMN sub-networks. Each point represents data for a single task pair in a single subject, with mean CA across ROIs of the named sub-network plotted against absolute RT difference. The darker shades in each graph are taken from the similar task pairs, while the lighter shades are taken from the dissimilar task pairs. (B) Beta estimates for the association of CA and RT in each subject for similar and dissimilar task pairs of the three DMN sub-networks. In each graph subjects' beta estimates are sorted is in ascending order. Top row, a–c, displays beta estimates for similar task pairs in the Core, MTL and DMPFC, respectively. Bottom row, d–f, shows beta estimates for dissimilar task pairs in the Core, MTL and DMPFC, respectively. The p-value from a 2-tailed, 1-way t-test of each graph's beta values is shown.
 
 A second analysis considered data from each subject separately, with a separate regression analysis for similar and dissimilar task pairs in each ROI. A general linear model was constructed with a regressor for the absolute RT difference for either the similar-task-pairs or dissimilar-task-pairs, which was fit to the corresponding CA data. This produced a beta estimate for similar and dissimilar-task-pairs in each ROI, in each subject. Beta estimates were subsequently averaged across the component ROIs of each sub-network. Figure 5B shows the mean beta estimate for the similar and dissimilar task pairs in each subject for the Core, MTL, and DMPFC sub-networks. Within each graph, data from the 18 subjects are sorted in ascending order. Overall, the graphs suggest that RT does not systematically predict CA across participants, especially for the dissimilar task pairs (bottom row) for which CA was highest.
 
@@ -94,17 +198,17 @@ Many studies suggest sustained DMN activity in rest compared to active task perf
 
 An unexpected aspect of our results is the lack of switch-associated activity when changing between similar tasks, which does show a robust behavioral cost compared to no-switch trials. In previous studies, apparently similar cases of task switching have been associated with widespread recruitment of a fronto-parietal, executive control network (Sohn et al., 2000; Braver et al., 2003; Monsell, 2003; Yeung et al., 2006; Kim et al., 2011), and it is unclear why no similar activity was seen in our data. One contributing factor may be our explicit modelling of RT differences between conditions, convolving the canonical haemodynamic response with the duration of each trial from stimulus presentation until response. As this procedure is designed to correct for activation differences due simply to longer RT on switch trials, it may reduce or remove differences seen in studies that do not adopt such a correction. Our results also raise the possibility, however, that traditional task-switching results may not generalise to the more complex conditions of our experiment. Future work will be needed to resolve this discrepancy.
 
-## Conclusion
+### Conclusion
 
 In conclusion, we propose that the DMN may be recruited whenever large changes of cognitive context are required. This may apply in complex cases of self-referential processing, mind wandering etc, but also in relatively simple acts of cognitive or executive control. The DMN, widely seen as a ‘task-negative’ network, may respond positively to any task which demands a switch from one broad context to another.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 18 right-handed participants (10 females) aged between 18 and 40 were recruited from the Medical Research Council Cognition and Brain Sciences Unit subject panel. Of 21 original subjects scanned, three had to be removed for excessive head-movements (over 10 mm translation and/or 6° rotation). No participant had a history of neurological or psychiatric illness. Participants were reimbursed for their time. Ethics approval was given by the Cambridge Psychology Research Ethics Committee.
 
-## Task description
+### Task description
 
 All three tasks were created using the Psychophysics Toolbox for MATLAB (Brainard, 1997). Within the scanner, the stimulus display was projected onto a mirror mounted to a 32-channel head-coil.
 
@@ -114,11 +218,11 @@ Each trial began with the simultaneous appearance of the colour border (visual a
 
 Participants learned the tasks prior to scanning. An event-related design was adopted, with 73 trials per run. Each run had at least 12 trials of each of the six task types. Task switch type was also balanced within a run: 24 no-switch trials, 24 similar-task-switches, and 24 dissimilar-task-switches. Post scanning, when questioned, no participants reported having any sense of what task to expect on a given trial.
 
-## fMRI acquisition
+### fMRI acquisition
 
 Scans were acquired with a 3T Siemens Trim Trio scanner. 32 3-mm slices (0.75 mm interslice gap) in axial orientation gave an in-plane resolution of 3 × 3 mm and were acquired using a TR of 2 s. T2*-weighted EPI capturing blood oxygen level dependent contrast was employed with a flip angle of 78°. For both experiments, the first eight images were discarded to avoid T1 equilibration effects.
 
-## Univariate analysis
+### Univariate analysis
 
 For the univariate analysis, images were preprocessed and analysed with SPM5 (Wellcome Department of Cognitive Neurology). In the first preprocessing step, data were checked for obvious artefacts, and all images were realigned to the first image. Next we performed slice time correction and coregistration of the structural with the functional EPI images. Finally, data were normalized to the standard MNI template, smoothed with an 8 mm full-width at half-maximum Gaussian kernel and subjected to a high-pass filter with cut-off at 128 s.
 
@@ -128,7 +232,7 @@ For ROI analysis, mean contrast values within each ROI were extracted for each s
 
 For the exploratory analysis into the activation associated with switches between specific categories a separate GLM was constructed. 36 regressors were used (one regressor for each possible switch type) and modelled as before. The resulting beta estimates were then processed using the same ROI analysis method as before with the same ROIs.
 
-## Multivoxel pattern analysis
+### Multivoxel pattern analysis
 
 Multivoxel pattern analysis was performed using the Decoding Toolbox (Christophel et al., 2012; Görgen et al., 2012). Preprocessing of the data was the same as for the univariate whole-brain analysis, except for the omission of the smoothing step. Again, a fixed effects analysis was performed on each participant's data using a general linear model. For this GLM, each task was modelled as a separate regressor, constructed as a rectangular function from the onset of each stimulus to the moment of response and convolved with the canonical hemodynamic response function. The same ROIs as previously (Figure 2B) were used.
 

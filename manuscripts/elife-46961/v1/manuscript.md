@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.46961.001 Stone tools in the prehistoric record are the most abundant source of evidence for understanding early hominin technological and cultural variation. The field of primate archaeology is well placed to improve our scientific knowledge by using the tool behaviours of living primates as models to test hypotheses related to the adoption of tools by early stone-age hominins. Previously we have shown that diversity in stone tool behaviour between neighbouring groups of long-tailed macaques ( Macaca-fascicularis ) could be explained by ecological and environmental circumstances (Luncz et al., 2017b). Here however, we report archaeological evidence, which shows that the selection and reuse of tools cannot entirely be explained by ecological diversity. These results suggest that tool-use may develop differently within species of old-world monkeys, and that the evidence of material culture can differ within the same timeframe at local geographic scales and in spite of shared environmental and ecological settings.
+Stone tools in the prehistoric record are the most abundant source of evidence for understanding early hominin technological and cultural variation. The field of primate archaeology is well placed to improve our scientific knowledge by using the tool behaviours of living primates as models to test hypotheses related to the adoption of tools by early stone-age hominins. Previously we have shown that diversity in stone tool behaviour between neighbouring groups of long-tailed macaques (Macaca-fascicularis) could be explained by ecological and environmental circumstances (Luncz et al., 2017b). Here however, we report archaeological evidence, which shows that the selection and reuse of tools cannot entirely be explained by ecological diversity. These results suggest that tool-use may develop differently within species of old-world monkeys, and that the evidence of material culture can differ within the same timeframe at local geographic scales and in spite of shared environmental and ecological settings.
 
 ## Introduction
 
@@ -50,15 +50,66 @@ By focusing on intensity of use wear as a proxy for tool re-use and by accountin
 
 In total, we analysed 115 stone tools combined from both locations (Table 1).
 
+**Table 1.**
+ Total number of tools associated with specific prey species.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Prey</th>
+      <th>Lobi Bay</th>
+      <th>Boi Yai Island</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monodonta labio</td>
+      <td>9</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Morulla spp.</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Nerita spp.</td>
+      <td>18</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Oysters</td>
+      <td>10</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Thais bitubercularis</td>
+      <td>9</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Total limestone hammerstones used</td>
+      <td>46</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>Total granite hammerstones used</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
 The stone tool variation of the macaque populations of Boi Yai Island and Lobi Bay are separated into two categories; use wear by prey and size of tools selected by prey. Figure 2 shows examples of the distinct differences of use wear intensity of tools used to process rock oysters (Figure 2B) between Lobi Bay (Figure 2A) and Boi Yai Island (Figure 2C). Similarly, Figure 3 illustrates the profound differences between use wear grading (UWG) ratings for tools used to exploit Thais bitubercularis (Figure 3B) on Lobi Bay (Figure 3A) and Boi Yai Island (Figure 3C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/46961/elife-46961-fig2-v1.jpg)
 
-**Figure 2.:** Saccostrea cucullate).(a) Examples of stone tools used at Lobi Bay. (b) Examples of stone tools used on Boi Yai Island. (c) rock oyster prey species available on both islands and.
+**Figure 2.:** (a) Examples of stone tools used at Lobi Bay. (b) Examples of stone tools used on Boi Yai Island. (c) rock oyster prey species available on both islands and.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/46961/elife-46961-fig3-v1.jpg)
 
-**Figure 3.:** Thais bitubercularis.(a) Examples of stone tools used at Lobi Bay. (b) examples of stone tools used on Boi Yai Island. (c) Thais bitubercularis prey species available on both islands.
+**Figure 3.:** (a) Examples of stone tools used at Lobi Bay. (b) examples of stone tools used on Boi Yai Island. (c) Thais bitubercularis prey species available on both islands.
 
 The comparison between UWG revealed differences between the sites. Stone tools used to crack open oysters are more intensively used on Boi Yai Island compared to Lobi Bay (Figure 4, Mann-Whitney U test: U = 32, N1 = 10, N2 = 26, p<0.001). Similar results can be found for UWG on stone tools used to crack Thais bitubercularis shells (Figure 4, Mann-Whitney U test: U = 1.5, N1 = 9, N2 = 12, p<0.001). The three morphologically similar marine snails (Nerita spp., Monodonta Labio and Morulla spp.) however, produced little in terms of inter-group UWG variation of tool intensity (Figure 4, Mann-Whitney U test: U = 381.5, N1 = 27, N2 = 29, p=0.832).
 
@@ -74,7 +125,7 @@ A comparison of tool size selection associated with prey type revealed differenc
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/46961/elife-46961-fig6-v1.jpg)
 
-**Figure 6.:** The plot is showing the mean with bootstrapped 95% confidence intervals.10.7554/eLife.46961.009Figure 6—source data 1.
+**Figure 6.:** The plot is showing the mean with bootstrapped 95% confidence intervals.
 
 To exploit oysters, however, macaques on Boi Yai Island used heavier tools than those used for processing the same prey in Lobi Bay (Figure 7, Linear model: E = 0.451 SE = 0.181 F(1,34)=6.197 P=0.018). Oyster size on Boi Yai Island were, in general, larger than in Lobi Bay (Figure 8, Mann-Whitney U test: z = −2.862, N1 = 341, N2 = 436, p=0.002).
 
@@ -84,7 +135,7 @@ To exploit oysters, however, macaques on Boi Yai Island used heavier tools than 
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/46961/elife-46961-fig8-v1.jpg)
 
-**Figure 8.:** The plot is showing the mean with bootstrapped 95% confidence intervals.10.7554/eLife.46961.012Figure 8—source data 1.
+**Figure 8.:** The plot is showing the mean with bootstrapped 95% confidence intervals.
 
 Several (n = 7) stone tools on Boi Yai Island showed multiple use wear patterns (on the face and on the tip of the tool). Using the methods of Haslam et al. (2013), these damage patterns are indicative of being used on more than one prey species.
 
@@ -92,7 +143,7 @@ Average weight of available raw material (bootstrapped 95% confidence intervals)
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/46961/elife-46961-fig9-v1.jpg)
 
-**Figure 9.:** (A) Weight of stones available at point transects. (B) Number of availability of stones. The plots show the mean with bootstrapped 95% confidence intervals.10.7554/eLife.46961.014Figure 9—source data 1.
+**Figure 9.:** (A) Weight of stones available at point transects. (B) Number of availability of stones. The plots show the mean with bootstrapped 95% confidence intervals.
 
 ## Discussion
 
@@ -126,7 +177,7 @@ Unfortunately, the number of islands where long-tailed macaques are known to use
 
 ## Materials and methods
 
-## Study sites
+### Study sites
 
 We collected data in January and February 2017 and 2018 on two shorelines at islands in the Ao Phang Nga National Park. The first site, Lobi Bay, is located in the northwest tip of Yao Noi Island (8°10′ 51.06’ N, 98° 37′ 42.52’ E, Figure 1A). The second site is 9 km to the southwest, on the southern end of Boi Yai Island (8° 07′41.09’ N, 98° 33′ 25.04’ E, Figure 1B). Below the shoreline is an intertidal zone extending up to 200 m at spring tides. The area above the shoreline is comprised of steep coastal forest. Because the macaque populations at Boi Yai Island and Lobi Bay are not habituated to the presence of humans, the field of primate archaeology offers the most appropriate way of reconstructing tool selection and analyse damage pattern (use wear) (Haslam et al., 2013; Haslam et al., 2016a). This approach however also imposes limitations, as we are not able to differentiate between the sex and age of the tool user. However, tool use is a social activity in long-tailed macaques, with most of the group foraging together along the shore. Previous studies at Lobi Bay and Boi Yai Island using camera traps to document nut cracking behaviour confirmed that both groups comprised mixed demographics, where males and females in all age ranges use tools habitually (Luncz et al., 2017a). Furthermore, during low tide, we were able to observe shellfish foraging of monkeys on the shore from far away. Identification of individual group members was not possible, however since shellfish foraging is a social even in long-tailed macaques, most group members were counted simultaneously foraging together. Unfortunately, camera traps are not feasible in the ocean setting of shellfish foraging and therefore our study relies on indirect evidence of stone tools and prey remains. Based on the mtDNA phylogenetic analysis, these two populations are genetically similar (Malaivijitnond S., in prep.).
 
@@ -138,6 +189,66 @@ At both sites, Lobi Bay and Boi Yai Island, we conducted line transects along th
 
 All tools were subsequently cleaned, weighed and all raw material types were documented. Use wear was recorded following a modified technique adopted by Haslam et al. (2013). Each tool was divided into ten zones and use wear (pitting, crushing, and fracture) was recorded for each zone. The 3-level system adopted by Haslam et al. (2013) to grade severity of use wear did not provide the necessary resolution to distinguish variations as it originally was designed to assess functional use. Therefore, for each type of use wear, we adopted a use wear grading system (UWG) describing five different use wear intensities (Table 2).
 
+**Table 2.**
+ Grading of use wear by zone (adapted from Haslam et al., 2013)
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Use Wear Grade (numerical)</th>
+      <th>Use Wear Grade (descriptive)</th>
+      <th>Pitting</th>
+      <th>Crushing</th>
+      <th>Fracture</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Definition</td>
+      <td></td>
+      <td>Distinct indentations from discrete strikes that can culminate in the creation of more general craters in the stone surface</td>
+      <td>Rounding and flattening of the tool surface, especially the protruding parts on the points and edges.</td>
+      <td>A breakage of the tool caused by chipping or flaking</td>
+    </tr>
+    <tr>
+      <td>Grade 0</td>
+      <td>None</td>
+      <td>No trace</td>
+      <td>No trace</td>
+      <td>No trace</td>
+    </tr>
+    <tr>
+      <td>Grade 1</td>
+      <td>Slight</td>
+      <td>Trace - minimal and isolated damage. Isolated points of impact</td>
+      <td>Trace - minimal and isolated damage</td>
+      <td>Trace - minimal and isolated fracture</td>
+    </tr>
+    <tr>
+      <td>Grade 2</td>
+      <td>Medium</td>
+      <td>Overlapping impact points that have formed a coherent platform of damage</td>
+      <td>Surface clearly damaged but limited evidence of repeated use.</td>
+      <td>Moderate - larger fractureaffecting &lt; 30% of the use zone</td>
+    </tr>
+    <tr>
+      <td>Grade 3</td>
+      <td>High</td>
+      <td>Cumulative damage with a pitting to a depth of 2 mm</td>
+      <td>Cumulative - rounding can be observed and felt.</td>
+      <td>Extensive - Fracture affecting between 30% and 60% of the use zone</td>
+    </tr>
+    <tr>
+      <td>Grade 4</td>
+      <td>Very-High</td>
+      <td>Cratered - a larger more extensive indentation that is more than 2 mm deep and 5 mm in diameter.</td>
+      <td>More progressive rounding that has produced a flatter surface on the use zone.</td>
+      <td>General - fracture extending beyond 60% of the use zone</td>
+    </tr>
+  </tbody>
+</table>
+
 The system designed by Haslam categorised use wear into the following three subsets: (1) Trace - superficial and isolated points of damage only, possibly incidental; (2) moderate – the stone surface was clearly damaged but this damage was spatially restricted with only minor evidence of repeated wear; and (3) extensive - cumulative damage that may cover a significant portion of the use-zone. The aim of Haslam et al was to use the wear patterns on the tools to identify foraging behaviours and therefore a limited scale of differentiation of damage intensity was sufficient. Here the objective was to specifically compare use wear intensity and potential re-use of tools used by two discrete populations of macaques. Therefore, a three grade scale was insufficient as it can skew results in the direction of amplifying observed differences. The emphasis was placed on designing a key that was reliable in differentiating between the higher end of the use wear scale to more accurately interpret the likelihood of reuse. Using the UWG definitions (Table 2), multiple separate analyses of the material was undertaken by two researchers to ensure replicability of results.
 
 In respect of pitting, where use wear was rated as grade 4, we recorded the length, width and depth of each pit. Pit depth was measured digitally using a pit gage across an axis that lay across two opposing edges of the pit and crossed the deepest part of it. This method which anchors the arms of the gage at the pit edge and lays across the deepest part ensures that results are replicable. Given that the UWG distinguishes between grades 3 and 4 (Table 2) only based on a pit being greater than 2 mm deep, digital microscopic measurement was not considered necessary.
@@ -146,7 +257,7 @@ To compare use wear intensity, we identified the highest score of damage inflict
 
 Furthermore, we compared the intensity of the tool damage between the sites by comparing the occurrence of the different use wear intensities. The damage with the highest intensity rate was used in a Mann-Whitney U-test separated by prey species.
 
-## Environmental comparisons
+### Environmental comparisons
 
 Because the macaques are not habituated, direct observations during shellfish foraging along the shore are not possible. In order to collect used tools, we inspected the areas at the shore where monkeys were directly observed foraging from afar during the low tide and repeatedly returned after low tide to assess the area for more tool use. On Boi Yai Island this totalled a shoreline of approximately 1100 metres, whilst on Lobi Bay this resulted in a shoreline length of approximately 900 meters.
 

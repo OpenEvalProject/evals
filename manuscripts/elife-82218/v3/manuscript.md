@@ -13,18 +13,18 @@
 
 ### Affiliations
 
-1. https://ror.org/00rd5t069 The Second Affiliated Hospital and Yuying Children's Hospital, Wenzhou Medical University Wenzhou China
+1. The Second Affiliated Hospital and Yuying Children's Hospital, Wenzhou Medical University Wenzhou China ([ROR:00rd5t069](https://ror.org/00rd5t069))
 2. Key Laboratory of Structural Malformations in Children of Zhejiang Province Wenzhou China
 3. Key Laboratory of Perinatal Medicine of Wenzhou Wenzhou China
-4. https://ror.org/05cf8a891 Department of Biochemistry and Gruss-Lipper Biophotonics Center, Albert Einstein College of Medicine Bronx United States
+4. Department of Biochemistry and Gruss-Lipper Biophotonics Center, Albert Einstein College of Medicine Bronx United States ([ROR:05cf8a891](https://ror.org/05cf8a891))
 5. Center for Neuroscience Research, Children's National Research Institute, Children's National Hospital Washington United States
-6. https://ror.org/05gq02987 Department of Neurology, Department of Molecular Biology, Cell Biology, and Biochemistry, Brown University Providence United States
+6. Department of Neurology, Department of Molecular Biology, Cell Biology, and Biochemistry, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
 
 † Corresponding author
 
 ## Abstract
 
-Mutations in the microtubule (MT)-binding protein doublecortin (DCX) or in the MT-based molecular motor dynein result in lissencephaly. However, a functional link between DCX and dynein has not been defined. Here, we demonstrate that DCX negatively regulates dynein-mediated retrograde transport in neurons from Dcx or -/y Dcx mice by reducing dynein’s association with MTs and disrupting the composition of the dynein motor complex. Previous work showed an increased binding of the adaptor protein C-Jun-amino-terminal kinase-interacting protein 3 (JIP3) to dynein in the absence of DCX. Using purified components, we demonstrate that JIP3 forms an active motor complex with dynein and its cofactor dynactin with two dyneins per complex. DCX competes with the binding of the second dynein, resulting in a velocity reduction of the complex. We conclude that DCX negatively regulates dynein-mediated retrograde transport through two critical interactions by regulating dynein binding to MTs and regulating the composition of the dynein motor complex. -/y ;Dclk1 -/-
+Mutations in the microtubule (MT)-binding protein doublecortin (DCX) or in the MT-based molecular motor dynein result in lissencephaly. However, a functional link between DCX and dynein has not been defined. Here, we demonstrate that DCX negatively regulates dynein-mediated retrograde transport in neurons from Dcx-/y or Dcx-/y;Dclk1-/- mice by reducing dynein’s association with MTs and disrupting the composition of the dynein motor complex. Previous work showed an increased binding of the adaptor protein C-Jun-amino-terminal kinase-interacting protein 3 (JIP3) to dynein in the absence of DCX. Using purified components, we demonstrate that JIP3 forms an active motor complex with dynein and its cofactor dynactin with two dyneins per complex. DCX competes with the binding of the second dynein, resulting in a velocity reduction of the complex. We conclude that DCX negatively regulates dynein-mediated retrograde transport through two critical interactions by regulating dynein binding to MTs and regulating the composition of the dynein motor complex.
 
 ## Introduction
 
@@ -40,37 +40,263 @@ In this study, we show that DCX plays critical roles in dynein-mediated retrogra
 
 ## Results
 
-## Dynein-mediated retrograde trafficking increases in the absence of DCX
+### Dynein-mediated retrograde trafficking increases in the absence of DCX
 
 Our previous work showed that DCX is essential for the function of the MT plus-end-directed kinesin-3 motor KIF1A and regulates its anterograde trafficking (Liu et al., 2012). DCX has also been shown to associate with the MT minus-end-directed motor dynein (Tanaka et al., 2004). In addition, we recently reported that dynein is involved in the DCX-mediated trafficking of Golgi extensions into dendrites, suggesting a functional link between DCX and dynein (Li et al., 2021). To determine whether functional interactions between DCX and dynein exist, we tested whether DCX affects the retrograde trafficking of dynein.
 
 To visualize dynein function in vivo, we first transfected either WT, Dcx-/y; or Dcx-/y;Dclk-/- dissociated cortical neuronal cultures with a construct expressing RFP-tagged, neuron-specific dynein intermediate chain (DIC) isoform IC-1B on days in vitro (DIV) 6 (Ha et al., 2008). Time-lapse imaging of DIC IC-1B-RFP was performed on DIV8 to visualize dynein motor activity directly in axons. Recorded images were converted to kymographs (Figure 1A). For all calculations and measurements of dynein-mediated movement, DIC above an intensity threshold located in the proximal region of axons (~100 µm away from cell body) were analyzed. A complex was counted as mobile only if the displacement was at least 5 µm over the course of the 180 s; otherwise, it was counted as stationary. Distribution calculations of DIC mobility status (anterograde, retrograde, and stationary) demonstrate that mobile DIC predominantly display retrograde movements in axons, and the percentages or run frequency of moving dynein complexes are similar in different neurons (Figure 1B). Remarkably, both the run length (the average distance traveled during the recorded time period) and the velocity of the fluorescently tagged dynein complexes were significantly increased in both Dcx-/y and Dcx-/y;Dclk1-/- axons compared with WT axons (Figure 1C, Figure 1—videos 1 and 2; run length and velocity distributions of retrograde moving DIC in different neurons are shown in Figure 1—figure supplement 1A). Reintroduction of DCX fully rescued the retrograde trafficking of DIC observed in Dcx-/y neurons (Figure 1C, p is 0.57 and 0.18 for DCX rescue compared with WT for DIC run length and speed, respectively). In contrast, DCLK1, a DCX domain-containing protein that is structurally similar to DCX, only partially rescued the phenotype (Figure 1C, p is 0.07 and 0.25 for DCLK1 rescue compared with Dcx-/y for DIC run length and speed, respectively).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig1-v3.jpg)
+
+**Figure 1.:** (A) WT, Dcx-/y or Dcx-/y;Dclk1-/- associated cortical neuronal culture were transfected with plasmids expressing DIC-RFP on days in vitro (DIV) 6 and imaged on DIV8. For rescue experiments, Dcx-/y neurons were transfected with plasmids expressing DIC-RFP combined with plasmids expressing either DCX-GFP or DCLK1-GFP. Representative kymographs of DIC-RFP transport in axons are shown. (B) Distribution calculations of the DIC vesicle mobility status (anterograde, retrograde, and stationary) are demonstrated. No significant differences are observed among different neurons. (C) Quantifications of DIC-RFP run length (mean+/- SEM) within 300 s and velocity (mean+/-SEM) are shown. DCX, but not DCLK1, fully rescued the increased dynein motor transport observed in DCX-deficient axons. p-Values comparing WT and DCX rescue for run length and speed are 0.57 and 0.18, respectively. Other p-values are shown in the figure. (D) Dissociated cortical neuronal cultures from WT or Dcx-/y mice were transfected with plasmids expressing TrkB-RFP with/without plasmids expressing DCX-GFP on DIV6 and imaged on DIV8. Representative kymographs of TrkB-RFP transport in axons are shown. (E) Quantification of vesicle run length (mean+/- SEM) within 180 s and velocity (mean+/- SEM) are demonstrated. DCX rescued the increased TrkB-RFP transport in DCX-deficient axons. Data are based on three independent experiments of each condition. Total numbers of neurons (N) and vesicles (V) used in the calculations are indicated in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Run length and velocity distributions of retrograde DIC complexes in different neurons are shown. Total numbers of neurons (N) and vesicles (V) used in the calculations are indicated in the panel. (B) Distribution calculations of the TrkB vesicle mobility status (anterograde, retrograde, and stationary) are demonstrated. No significant differences are observed among different neurons from test. (C) The analysis of anterograde transport of TrkB vesicles. No significant differences are observed in both velocity and run length of anterogradely transported TrkB vesicles between wild type (39 vesicles from 27 neurons, n = 4) and Dcx-/y neurons (43 vesicles from 27 neurons, n = 4). (D) Run length and velocity distributions of retrograde TrkB complexes in different neurons are shown. Total numbers of neurons (N) and vesicles (V) used in the calculations are indicated in the panel.
+
 To determine whether the dynein motility changes we see in neurons can also be observed for a physiologically relevant dynein cargo, we tested the retrograde trafficking of tropomyosin receptor kinase B (TrkB), the neurotrophin receptor whose retrograde transport is mediated by dynein (Ha et al., 2008; Heerssen et al., 2004; Yano et al., 2001; Zhou et al., 2012). As with IC-1B, the run length and velocity of retrogradely moving TrkB are also significantly increased in Dcx-/y axons (Figure 1D and E, Figure 1—videos 3 and 4), and reintroduction of DCX into Dcx-/y neurons rescued the phenotype (Figure 1E, p is 0.64 and 0.057 for DCX rescue compared with WT for TrkB run length and speed, respectively). The run length and velocity distributions of retrogradely transported TrkB vesicles were also calculated and are shown in Figure 1—figure supplement 1D. Like IC-1B, the majority of mobile TrkB vesicles in axons were transported in retrograde direction and no significant differences were found between the percentage of vesicles measured under WT, Dcx-/y, and rescue conditions for anterograde, retrograde moving particles, and stationary vesicles (Figure 1—figure supplement 1B). About 10% of the imaged TrkB vesicles were transported in anterograde direction, and we analyzed those TrkB vesicles to determine whether DCX has effects on anterograde TrkB transport. We observed no significant differences in both velocity and run length of anterogradely transported TrkB vesicles between WT and Dcx-/y neurons (Figure 1—figure supplement 1C). Overall, our data indicate that loss of DCX increases dynein-mediated vesicular retrograde transport in the axon.
 
-## The effect of DCX on retrograde transport is mediated through interactions between DCX and dynein
+### The effect of DCX on retrograde transport is mediated through interactions between DCX and dynein
 
 In addition to its binding to MTs, DCX also associates with the dynein motor complex (Tanaka et al., 2004; Taylor et al., 2000). To further probe the interaction of DCX with dynein, we used recombinant HA (negative control) and HA-DCX constructs as bait to pull down DCX-interacting proteins from mouse brains using mass-spectrometry analysis. Table 1 shows that our analysis identified cytoplasmic dynein 1 intermediate chain 2 and dynactin subunit 5 as DCX-interacting proteins. Although this analysis does not rule out the possibility that other unknown proteins are required for the interaction of DCX with IC2 and the dynactin subunit 5, it is very likely that dynein and DCX interact directly as DCX affects the composition of DDJ motor complexes that are formed from recombinantly expressed proteins (see below).
 
+**Table 1.**
+ Pull-down assay results show cytoskeleton proteins associated with doublecortin (DCX).Table 1—source data 1.Full list of proteins identified from pull-down assay.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Protein IDs</th>
+      <th rowspan="2">Protein names</th>
+      <th rowspan="2">Q-value</th>
+      <th rowspan="2">Score</th>
+      <th colspan="2">Average normalized intensity</th>
+    </tr>
+    <tr>
+      <th>Control (HA)</th>
+      <th>HA-DCX</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Q61301</td>
+      <td>Catenin alpha-2</td>
+      <td>0</td>
+      <td>83</td>
+      <td>0</td>
+      <td>158960000</td>
+    </tr>
+    <tr>
+      <td>P57780</td>
+      <td>Alpha-actinin-4</td>
+      <td>0</td>
+      <td>76</td>
+      <td>0</td>
+      <td>246655000</td>
+    </tr>
+    <tr>
+      <td>Q8BMK4</td>
+      <td>Cytoskeleton-associated protein 4</td>
+      <td>0</td>
+      <td>70</td>
+      <td>0</td>
+      <td>124115000</td>
+    </tr>
+    <tr>
+      <td>Q02248</td>
+      <td>Catenin beta-1</td>
+      <td>0</td>
+      <td>55</td>
+      <td>0</td>
+      <td>133995000</td>
+    </tr>
+    <tr>
+      <td>P05213</td>
+      <td>Tubulin alpha-1B chain; tubulin alpha-4A chain</td>
+      <td>0</td>
+      <td>52</td>
+      <td>0</td>
+      <td>600270000</td>
+    </tr>
+    <tr>
+      <td>Q9D6F9</td>
+      <td>Tubulin beta-4A chain</td>
+      <td>0</td>
+      <td>38</td>
+      <td>0</td>
+      <td>91708000</td>
+    </tr>
+    <tr>
+      <td>Q8BTM8</td>
+      <td>Filamin-A</td>
+      <td>0</td>
+      <td>38</td>
+      <td>0</td>
+      <td>48710000</td>
+    </tr>
+    <tr>
+      <td>Q8K341</td>
+      <td>Alpha-tubulin N-acetyltransferase 1</td>
+      <td>0</td>
+      <td>36</td>
+      <td>0</td>
+      <td>9883000</td>
+    </tr>
+    <tr>
+      <td>Q99KJ8</td>
+      <td>Dynactin subunit 2</td>
+      <td>0</td>
+      <td>32</td>
+      <td>0</td>
+      <td>67364000</td>
+    </tr>
+    <tr>
+      <td>Q3TPJ8</td>
+      <td>Cytoplasmic dynein 1 intermediate chain 2</td>
+      <td>0</td>
+      <td>25</td>
+      <td>0</td>
+      <td>34566000</td>
+    </tr>
+    <tr>
+      <td>Q9CPW4</td>
+      <td>Actin-related protein 2/3 complex subunit 5</td>
+      <td>0</td>
+      <td>21</td>
+      <td>0</td>
+      <td>32742000</td>
+    </tr>
+    <tr>
+      <td>Q9D898</td>
+      <td>Actin-related protein 2/3 complex subunit 5-like protein</td>
+      <td>0</td>
+      <td>17</td>
+      <td>0</td>
+      <td>3859300</td>
+    </tr>
+    <tr>
+      <td>Q6R891</td>
+      <td>Neurabin-2</td>
+      <td>0</td>
+      <td>15</td>
+      <td>0</td>
+      <td>6523000</td>
+    </tr>
+    <tr>
+      <td>P28667</td>
+      <td>MARCKS-related protein</td>
+      <td>0</td>
+      <td>14</td>
+      <td>0</td>
+      <td>52599500</td>
+    </tr>
+    <tr>
+      <td>Q9JM76</td>
+      <td>Actin-related protein 2/3 complex subunit 3</td>
+      <td>0</td>
+      <td>14</td>
+      <td>0</td>
+      <td>30507500</td>
+    </tr>
+    <tr>
+      <td>Q7TPR4</td>
+      <td>Alpha-actinin-1</td>
+      <td>0</td>
+      <td>12</td>
+      <td>0</td>
+      <td>6880500</td>
+    </tr>
+    <tr>
+      <td>P60710</td>
+      <td>Actin, cytoplasmic 1, N-terminally processed</td>
+      <td>0</td>
+      <td>9</td>
+      <td>0</td>
+      <td>30897500</td>
+    </tr>
+    <tr>
+      <td>Q3UX10</td>
+      <td>Tubulin alpha chain-like 3</td>
+      <td>0</td>
+      <td>8</td>
+      <td>0</td>
+      <td>7851000</td>
+    </tr>
+    <tr>
+      <td>Q9CQV6</td>
+      <td>Microtubule-associated proteins 1A/1B light chain 3B</td>
+      <td>0</td>
+      <td>7.5</td>
+      <td>0</td>
+      <td>42111500</td>
+    </tr>
+    <tr>
+      <td>Q922F4</td>
+      <td>Tubulin beta-6 chain</td>
+      <td>0.001</td>
+      <td>7.3</td>
+      <td>0</td>
+      <td>12908500</td>
+    </tr>
+    <tr>
+      <td>Q9QZB9</td>
+      <td>Dynactin subunit 5</td>
+      <td>0.007</td>
+      <td>6.2</td>
+      <td>0</td>
+      <td>2061750</td>
+    </tr>
+  </tbody>
+</table>
+
 To define which domain of DCX is critical for its association with the dynein motor complex, we expressed HA-tagged full-length DCX (FL-DCX), an N-terminal DCX construct (N-DCX) containing the R1 and R2 MT-binding domains (amino acids 1–270), or a C-terminal construct containing the serine/proline (SP)-rich domain of DCX (C-DCX) (amino acids 271–361, Figure 2A) in HEK293 cells. Consistent with the previous report (Tanaka et al., 2004), DIC precipitated with FL-DCX (Figure 2B). Interestingly, more DIC precipitated with N-DCX than FL-DCX (Figure 2B); similarly, N-DCX showed an increased immunoprecipitation of the DHC compared with FL-DCX (Figure 2—figure supplement 1A). This result suggests that N-DCX has a stronger affinity for the dynein motor complex than FL-DCX. We reasoned that if the interaction of DCX with dynein plays an important role in regulating dynein function, then N-DCX should have a stronger effect on regulating dynein-mediated retrograde transport than FL-DCX. Indeed, introducing N-DCX either into DCX knockout neurons (Figure 2C and D, Figure 2—figure supplement 2A and B) or WT neurons (Figure 2F and G, Figure 2—figure supplement 2C and D) decreases the retrograde transport of TrkB to a greater extent than FL-DCX. Our results suggest that DCX decreases dynein-mediated retrograde transport through interactions with dynein motor complex.
 
-## The C-terminal S/P-rich domain of DCX decreases DCX-dynein interactions
+![Figure 2.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig2-v3.jpg)
+
+**Figure 2.:** (A) A schematic of DCX protein domain structure. N-DCX has N-terminal R1 and R2 domains representing microtubule (MT)-binding domains of DCX, while C-DCX has DCX C-terminal serine/proline (SP) rich domain. (B) More N-DCX proteins are pulled down with DIC compared with full-length DCX. HEK293 cells were transfected with plasmids expressing HA-tagged either full-length DCX (FL) or N-DCX (N) for 2 days. Protein lysates were used for immunoprecipitation using antibodies for HA and analyzed by Western blot for DIC and HA. (C) Dissociated cortical neuronal culture from Dcx-/y;Dclk1-/- mice were transfected with plasmids expressing TrkB-RFP with/without plasmids expressing DCX or N-DCX on days in vitro (DIV)6 and imaged on DIV8. Representative kymographs of TrkB-RFP transports in axons are shown. (D) Quantifications of TrkB-RFP run length (mean+/- SEM) within 180s and velocity (mean+/-SEM) are shown. The expression of either full-length DCX or N-DCX in DCX knockout neurons significantly decreased TrkB retrograde transport while N-DCX has stronger effect compared with full-length DCX. (E) C-DCX decreases DCX/DIC association. HEK293 cells were transfected with plasmids expressing HA-tagged full-length DCX (FL) with/without plasmid expressing C-DCX for 2 days. Protein lysates were used for immunoprecipitation using antibodies for HA and analyzed by Western blot for DIC and HA. (F) Dissociated cortical neuronal culture from wild-type mice were transfected with plasmids expressing TrkB-RFP with/without plasmids expressing DCX, N-DCX, or C-DCX on DIV6 and imaged on DIV8. Representative kymographs of TrkB-RFP transports in axons are shown. (G) Run length within 180 s and velocity distributions of retrograde TrkB complexes in axons are quantified. C-DCX overexpression in wild-type neurons mimicked the phenotype of TrkB retrograde trafficking observed in Dcx-/y axons. All quantification data are based on three independent experiments of each condition. p-Values from t-tests are shown in each panel. Total numbers of neurons (N) and vesicles (V) used in the calculations are indicated in Figure 2—figure supplement 2. See also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) HEK293 cells are transfected with full-length DCX (FL) or N-DCX (N) for 2 days. Protein lysates were used for immunoprecipitation and analyzed by Western blot as indicated in the figure. More N-DCX proteins are precipitated with DHC compared to full-length DCX, while similar amount of full-length DCX and N-DCX is expressed in transfected cells. (B) HEK293 cells are transfected with full-length DCX (FL) with/without C-DCX (C) for 2 days. The presence of C-DCX decreases association of full-length DCX with DHC. (C) Similarly, C-DCX decreases the association of N-DCX with DHC. C-DCX does not bind DHC.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Distribution calculations of the TrkB vesicle mobility status (anterograde, retrograde, and stationary) are demonstrated. No significant differences are observed among different neurons. (B) Run length and velocity distributions of retrograde TrkB complexes in axons from different neurons are shown. Total numbers of neurons (N) and vesicles (V) used in the calculations are indicated in the panel. (C) Distribution calculations of the TrkB vesicle mobility status (anterograde, retrograde, and stationary) in axons from WT cells with different transfections are demonstrated. Overexpression of DCX or N-DCX significantly increased percentage of stationary TrkB vesicles in axons, while decreased the percentile of both anterograde and retrograde transport. (D) Run length and velocity distributions of retrograde TrkB complexes in axons from different neurons are shown. Total numbers of neurons (N) and vesicles (V) used in the calculations are indicated in the panel.
+
+### The C-terminal S/P-rich domain of DCX decreases DCX-dynein interactions
 
 In contrast to FL-DCX and N-DCX, C-DCX did not immunoprecipitate with dynein (Figure 2—figure supplement 1B and C), consistent with previous report (Taylor et al., 2000). Since N-DCX, which misses the C-terminal domain, has a stronger affinity for dynein than FL-DCX, we hypothesized that the C-terminus of DCX inhibits the interaction between DCX and dynein. Indeed, in the presence of C-DCX, significantly less DIC precipitated with FL-DCX (Figure 2E); similarly, less DHC was precipitated with either FL-DCX or N-DCX in the presence of C-DCX (Figure 2—figure supplement 2B and C). Furthermore, C-DCX overexpression in WT neurons significantly increased dynein-mediated retrograde transport of TrkB (Figure 2F and G, Figure 2—figure supplement 2C and D). Taken together, these data indicate that DCX decreases dynein-mediated retrograde transport through interactions with the dynein motor complex through its N-terminus, while the C-terminal domain of DCX negatively impacts this interaction to influence dynein-based cargo trafficking.
 
-## The effects of DCX on retrograde trafficking require DCX-MT interactions
+### The effects of DCX on retrograde trafficking require DCX-MT interactions
 
 Previous work has shown that the binding of DCX to MTs contributes to DCX’s cellular functions (Moslehi et al., 2019; Reiner, 2013; Schaar et al., 2004; Yap et al., 2012) and that DCX’s MT interactions occur cooperatively (Bechstedt and Brouhard, 2012). To test whether MT binding and the underlying cooperativity of DCX’s MT interactions play a role in regulating dynein-based vesicular transport, we tested whether two DCX mutants, DCX A71S and T203R, could rescue the increase in retrograde transport of TrkB vesicles in DCX knockout neurons. These mutations, located in the R1 and R2 region of DCX, respectively, cause lissencephaly in humans and have been shown to decrease the cooperative MT binding of DCX (Bechstedt and Brouhard, 2012). Importantly, these mutations have no effect on DCX’s ability to associate with dynein in vitro (Figure 2—figure supplement 1D). Both mutants were unable to rescue the phenotype of increased retrograde transport of TrkB (Figure 3A, Figure 3—figure supplement 1), suggesting that the cooperative binding of DCX to MTs is required for the DCX-induced decrease in dynein-based retrograde transport. In addition, our MT-binding assay demonstrates that, while C-DCX itself does not bind MTs, C-DCX increases the interactions of DCX with MTs (Figure 3B). This suggests that the interactions between DCX and MTs are enhanced by DCX’s C-terminal domain, which is consistent with recent findings that the tail of DCX (amino acid 303 to the C-terminal end) helps to maintain the associations between DCX molecules on the MT lattice (Rafiei et al., 2022).
 
-## DCX decreases dynein association with MTs
+![Figure 3.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig3-v3.jpg)
+
+**Figure 3.:** (A). Dissociated cortical neuronal cultures from WT or Dcx-/y mice were transfected with plasmids expressing TrkB-RFP with/without plasmids expressing DCX-GFP, DCXA71S, or DCXT203R on days in vitro (DIV)6 and imaged on DIV8. Quantification of Run length (mean +/- SEM) within 180 s and velocity (mean+/-SEM) is demonstrated. DCX, but not DCXA71S or DCXT203R, rescued the increased TrkB-RFP transport in DCX-deficient axons. All quantifications are based on three independent experiments of each condition. p-Values from t-tests are shown in each panel. Total numbers of neurons (N) and vesicles (V) used in the calculations are indicated in Figure 3—figure supplement 1. (B). Protein lysate from HEK293 cells expressing HA-DCX or HA-DCX plus HA-C-DCX are incubated with exogenously added MTs, which are then pelleted by ultracentrifugation. Western blot for HA in supernatant (S) or pellet (P) is performed to determine the amount of DCX or C-DCX associated with MTs. Representative Western blots are shown. Fraction of DCX bound to tubulin is calculated (tubulin bound = P/(S + P)) and compared. Significantly more DCX is bound to MTs in the presence of C-DCX. p-Value from t-test is shown. (C, D) Brain lysate from P0 WT, Dcx-/y or Dcx-/y;Dclk1-/- mice are incubated with exogenously added MTs, which are then pelleted by ultracentrifugation. Polymerized MTs are in the pellet. Western blot of dynein intermediate chain (DIC) in supernatant (S) or pellet (P) is performed to determine the amount of DIC associated with MTs. Representative Western blots are shown. Fraction of DIC bound to tubulin is calculated (tubulin bound = P/(S + P)) and compared between WT and Dcx-/y; or WT and Dcx-/y;Dclk1-/-. Significantly more DIC is bound to MTs in the absence of DCX. p-Value from t-test is shown. All quantifications are based on three independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Distribution calculations of the TrkB vesicle mobility status (anterograde, retrograde, and stationary) in different cells are demonstrated. No significant differences are observed among different neurons. (B) Run length and velocity distributions of retrograde TrkB complexes in axons from different neurons are shown. Total numbers of neurons (N) and vesicles (V) used in the calculations are indicated in the panel.
+
+### DCX decreases dynein association with MTs
 
 Since DCX enhances the binding of KIF1A to MTs and regulates KIF1A-mediated transport (Liu et al., 2012), we tested whether DCX also alters dynein’s interactions with MTs by performing an MT-binding assay using brain lysate from either WT, Dcx-/y, or Dcx-/y;Dclk1-/- mice. Our results show that significantly more DIC protein precipitates with MTs in the absence of DCX (Figure 3C and D). Therefore, in contrast to DCX’s positive effects on KIF1A’s association with MTs (Liu et al., 2012), DCX decreases dynein-MT interactions.
 
-## DCX negatively regulates dynein-mediated retrograde transport by regulating JIP3 association with dynein
+### DCX negatively regulates dynein-mediated retrograde transport by regulating JIP3 association with dynein
 
 Various binding partners are known to regulate dynein-based cargo transport (Vallee et al., 2012), and DCX could achieve its effect on the retrograde transport of TrkB by altering dynein’s association with regulatory proteins. Indeed, we previously reported that DCX regulates the interaction of dynein with its cargo adaptor JIP3 (Li et al., 2021), suggesting that DCX may regulate dynein-based cargo transport by controlling dynein-dynactin complex assembly and/or dynein-cargo attachment. In support of this idea, JIP3 also decreases the binding of DCX to dynein (Figure 4A). As JIP3 serves as an adaptor protein for both kinesin and dynein (Arimoto et al., 2011; Drerup et al., 2013), DCX could differentially regulate anterograde vs. retrograde transport by competing with JIP3 for the binding of dynein. To test this possibility, we examined the retrograde transport of TrkB-RFP in Dcx knockout cortical neurons transfected with either control shRNA or JIP3 shRNA. Knockdown of JIP3 indeed significantly decreases the retrograde transport of TrkB (Figure 4B and C, Figure 4—figure supplement 1, Figure 4—video 1) while overexpression of JIP3 in WT neurons increases the retrograde transport TrkB (Figure 4B and C, Figure 4—figure supplement 1, Figure 4—video 2). Based on these results, we conclude that at least two mechanisms are at play when DCX regulates dynein-based transport: first, through negatively regulating dynein interactions with MTs, and secondly, through negatively regulating dynein interactions with JIP3.
 
-## Dynein, dynactin, and JIP3 form a processive tripartite complex in vitro
+![Figure 4.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig4-v3.jpg)
+
+**Figure 4.:** (A) The presence of JIP3 decreases the interaction between DCX and dynein intermediate chain (DIC). HEK293 cells were transfected with plasmids expressing neuron-specific dynein intermediate chain isoform IC-1B and HA-tagged DCX with or without JIP3. Antibody for HA was used to precipitate HA-DCX and associated proteins. Western blot analysis of DIC and HA was performed to detect DIC immunoprecipitated with DCX. In the presence of JIP3, less DIC was associated with DCX, while total protein amount of either HA-DCX or DIC in the lysate was the same. Quantification of DIC bands of Western blot results (three independent experiments) after IP with HA were calculated and normalized with DIC levels in the lysate. p-Value from t-test is shown. (B) Cultured cortical neurons from P0 WT mouse brains were transfected with plasmids expressing TrkB-RFP with or without JIP3-GFP. Neurons from Dcx-/y mouse brains were transfected with plasmids expressing TrkB-RFP with or without JIP3 shRNA. Representative kymographs of TrkB-RFP trafficking are demonstrated. (C) Quantification of TrkB run length and velocity. Overexpression of JIP3 significantly increases run length and velocity of TrkB in WT neurons. Downregulation of JIP3 by shRNA in Dcx-/y neurons decreases TrkB retrograde transport. p-Values from t-tests are shown. All quantification data are based on three independent experiments of each condition. p-Values from t-tests are shown in each panel. Total numbers of neurons (N) and vesicles (V) used in the calculations are indicated in Figure 4—figure supplement 1. See also Figure 4—video 1 and Figure 4—video 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Run length and velocity distributions of retrograde TrkB complexes in axons from different neurons are shown.
+
+### Dynein, dynactin, and JIP3 form a processive tripartite complex in vitro
 
 To directly determine how DCX affects the motion of the dynein motor complex, we used total internal reflection fluorescence (TIRF) microscopy and performed single-molecule motility studies using purified components. Dynein, which assumes an autoinhibited conformation in isolation (Torisawa et al., 2014; Zhang et al., 2017), moves processively along coverslip-attached MTs after its activation through the formation of a complex with its largest cofactor dynactin and a coiled-coil cargo adaptor protein such as Bicaudal D2 (BicD2) (McKenney et al., 2014; Splinter et al., 2012). Complexes such as dynein-dynactin-BicD2 (DDB), dynein-dynactin-BicDR1 (Bicaudal-D-related protein 1) (DDR), and dynein-dynactin-Hook3 (DDH), which have been recently shown to bind up to two dyneins (Grotjahn et al., 2018; Urnavicius et al., 2018), have been extensively studied using single-molecule TIRF assays (Christensen et al., 2021; McClintock et al., 2018; McKenney et al., 2014; Sladewski et al., 2018; Urnavicius et al., 2018). However, whether dynein-dynactin-JIP3 (DDJ) motor complexes can be reconstituted in vitro remains unknown.
 
@@ -78,9 +304,33 @@ Previous biochemical studies have shown that JIP3 interacts with dynein’s ligh
 
 To test whether JIP3 can form an active DDJ motor complex, we generated and expressed a mouse JIP3 construct containing the N-terminal coiled-coil and the predicted adjacent intrinsically disordered domain (amino acids 1–240) in Escherichia coli (Figure 5A, Figure 5—figure supplement 2A). The homolog of this construct in Caenorhabditis elegans has been shown to interact with dynein through the dynein LIC (Arimoto et al., 2011). To generate and purify full-length human dynein with its associated five subunits (IC, LIC, Tctex, LC8, and Robl), we co-expressed the five subunits with the HC of dynein in insect cells as done before (Schlager et al., 2014; Figure 5—figure supplement 2C). To allow single-molecule fluorescence imaging of both dynein and JIP3, we labeled the dynein HC with SNAP-TMR via an N-terminal SNAP-tag and JIP3 with Halo-JF646 via a C-terminal HaloTag (Figure 5A).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig5-v3.jpg)
+
+**Figure 5.:** (A) Illustrations of the JIP3 and DCX constructs (left) and the DDJ motor complex (right). (B) Kymographs of dynein in the absence and presence of dynactin, JIP3, DCX, and N-DCX. Dynein was labeled with SNAP-TMR (green) and JIP3 was labeled with Halo-JP646 (red). (C) The velocity of DDJ motor complexes, KIF5B, and gliding MTs powered by surface-absorbed single-headed dynein. The green bars represent the median with 95% CI. DDJ (DDJ only): 0.76 [0.65, 0.89] µm/s; DDJ + DCX (DDJ with 10 nM DCX): 0.62 [0.50, 0.70] µm/s (KS test, *p<0.1); DDJ + N-DCX (DDJ with 10 nM N-DCX): 0.54 [0.45, 0.67] µm/s (KS test, ***p<0.001); DDJ + N-DCX pre (dynein, dynactin, JIP3, and N-DCX assembled in the ratio of 1:1:1:1): 0.41 [0.32, 0.60] µm/s (KS test, ****p<0.0001). kif5b (kif5b only): 0.63 [0.61, 0.63] µm/s; kif5b + DCX (kif5b with 10 nM DCX): 0.50 [0.48, 0.51] µm/s (unpaired t-test, ****p<0.0001); kif5b + N-DCX (kif5b with 10 nM N-DCX): 0.66 [0.64, 0.67] µm/s (unpaired t-test, n.s.). MT gliding (powered by single-headed human dynein): 0.59 [0.56, 0.63] µm/s; dynein + DCX (MT gliding with 10 nM DCX): 0.55 [0.48, 0.58] µm/s (unpaired t-test, *p<0.1); dynein + N-DCX (MT gliding with 10 nM N-DCX): 0.58 [0.53, 0.61] µm/s (unpaired t-test, n.s.). From left to right, n = 342, 275, 252, 115, 234, 103, 117, 33, 31, and 28. See also Figure 5—figure supplements 1–5 and Figure 5—video 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cryo-EM structure of DDB complex (PDB 5AFU) (Urnavicius et al., 2015). The structure shows that the first coiled coil of BicD2 (dark gray) is up to aa 275, which spans the full length of dynactin shoulder. (B) Predicted BicD2 (UniProt Q8TD16) structure. The dark gray indicated the first α-helix that was predicted to extend to aa 272 (Jumper et al., 2021), which corresponds to the cryo-EM structure. (C) Predicted JIP3 (UniProt Q9UPT6) structure. The dark gray indicated the first α-helix is predicted to be up to aa184. The region between aa 185 and aa 240 was predicted to be disordered. The red labels in (A) indicate the beginning (aa 6) of the BicD2 α-helix, the position of aa 187 to show the estimated end of the predicted α-helix in JIP3 in (C), and the position of aa 240 to show the estimated aa 240 position of JIP3, should the disorder region of JIP3 forms α-helix upon interaction with dynactin. The red labels in (B) and (C) indicate the beginning and end of the predicted first α-helix in BicD2 and JIP3, respectively.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) JIP3(aa1-240)-HaloTag. (B) DCX-ybbR and N-DCX-ybbR. (C) Human dynein complex, containing a heavy chain (HC) with a SNAP-tag, an intermediate chain (IC), a light intermediate chain (LIC), and three light chains (Tctex1, LC8, Rob1). (D) Single-head human dynein-GFP.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Kymograph of JIP3 on microtubules, without (left) or with (right) dynein present. Without dynein, JIP3 shows no affinity for microtubules; in the presence of dynein, JIP3 demonstrated brief binding events via dynein. The concentration of dynein was 1 nM, and the concentration of JIP3 was 10 nM. (B) The dwell time JIP3 on microtubule via dynein. Without dynein, there was no measurable dwelling of JIP3; with dynein, the dwell time of JIP3 on dynein is 0.42 [0.38, 0.46] s (median [95% CI]).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig5-figsupp4-v3.jpg)
+
+**Figure 5—figure supplement 4.:** (A) At 10 nM concentration, DCX uniformly decorates MTs. DCX-ybbR was labeled with CoA-CF488, and MTs were labeled with Cy5. (B) At 10 nM concentration, N-DCX does not bind to MTs in the motility buffer. N-DCX-ybbR was labeled with CoA-CF488. (C) At 10 nM concentration, N-DCX decorates MTs in a buffer that is half of the ionic strength of motility buffer.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig5-figsupp5-v3.jpg)
+
+**Figure 5—figure supplement 5.:** (A) The dwell time of single-head human dynein on MTs in various nucleotide states is not altered by DCX. Unpaired Kolmogorov–Smirnov t-test was performed. ns (not significant), p>0.1; *p<0.1; ***p<0.001. The green bars represent the median values: ADP: 1.4 s (n = 206); ADP + DCX: 1.3 s (n = 187); ATP: 1 s (n = 140); ATP + DCX: 1.1 s (n = 120); AMPPNP: 1.1 s (n = 166); AMPPNP + DCX: 1.2 s (n = 111). (B) In AMPPNP and ADP state, the landing rate of single-head human dynein on MTs is reduced by DCX, while in ATP state, the rate is unaffected. For each condition, the numbers of motors on 10 MTs were counted. Unpaired t-test was performed. ns (not significant), p>0.1; *p<0.1; ****p<0.0001. The green bars represent the mean with SEM: ADP: 2.1 ± 0.2; ADP + DCX: 1.6 ± 0.2; ATP: 1.6 ± 0.2; ATP + DCX: 1.4 ± 0.1; AMPPNP: 2.1 ± 0.1; AMPPNP + DCX: 1.1 ± 0.1.
+
 As expected for an autoinhibited motor, the purified dynein only diffused along MTs or bound rigidly (McKenney et al., 2014; Schlager et al., 2014), and addition of dynactin (purified from cow brain; Schlager et al., 2014) did not activate its motion (Figure 5B). While JIP3 transiently interacts with dynein (Figure 5—figure supplement 3A, Figure 5—video 1), it can neither stably bind to dynein (Figure 5—figure supplement 3B) nor activate dynein motion (Figure 5B), similar to other studied dynein adaptors (McKenney et al., 2014; Schlager et al., 2014). However, strikingly, when we incubated JIP3 with dynein and dynactin on ice for 1 hr in a 1:1:1 stoichiometry, DDJ complexes formed and moved processively along MTs (Figure 5B) at a velocity of 0.8 [0.7, 0.9] µm/s (median with 95% CIs) (Figure 5C), which is comparable to other dynein complexes (Elshenawy et al., 2019; McKenney et al., 2014; Urnavicius et al., 2018). Our results demonstrate that JIP3 and dynactin are involved in dynein activation and that JIP3 can form highly processive DDJ complexes despite its predicted short coiled-coil domain.
 
-## DCX decreases the velocity of DDJ motor complexes
+### DCX decreases the velocity of DDJ motor complexes
 
 To determine whether DCX negatively impacts the velocity of DDJ motor complexes as suggested by our in vivo results, we expressed full-length DCX and N-DCX with a C-terminal ybbR-tag (Yin et al., 2006) for labeling with CoA-CF488 or CoA-JF549 in E. coli (Figure 5—figure supplement 2B). We chose the small α-helical ybbR tag over the commonly used GFP tag (Bechstedt and Brouhard, 2012; Ettinger et al., 2016) to reduce possible steric blocking of dynein MT-binding sites by the introduced tag. At 10 nM concentration, DCX fully decorated MTs in the dynein motility buffer (Figure 5—figure supplement 4A), while N-DCX had a much weaker affinity for MTs (Figure 5—figure supplement 4B), which is consistent with our immunoprecipitation data that demonstrated that the addition of C-DCX increased the affinity of DCX for MTs (Figure 3B). Only when the ionic strength of the buffer was reduced, increasing amounts of N-DCX bound to MTs (Figure 5—figure supplement 4C). These observations confirm that our ybbR-tagged and labeled DCX constructs are functional.
 
@@ -92,7 +342,7 @@ To dissect which component of the dynein motor complex N-DCX regulates, we first
 
 To determine how DCX reduces MT gliding by dynein, we measured how it affects the rate of dynein-MT binding (on-rate) and the time dynein stays MT bound (dwell time) using a TIRF assay with surface-absorbed MTs and GFP-tagged single-headed dynein. Our results show that while DCX does not affect the time dynein stays MT bound (Figure 5—figure supplement 5A), it results in a significant reduction in the MT on-rate of dynein (Figure 5—figure supplement 5B), which explains the reduced speed of MT gliding by dynein in the presence of DCX. In summary, our data suggest that DCX regulates dynein function via two pathways: through interactions with the dynein motor complex and through its interactions with MTs.
 
-## DCX interferes with the recruitment of a second dynein to DDJ
+### DCX interferes with the recruitment of a second dynein to DDJ
 
 Previous studies have demonstrated that BicD2 can recruit two dimeric dyneins and that a DDB complex with two dyneins shows higher velocities compared with a DDB complex with one dynein (Elshenawy et al., 2019; Sladewski et al., 2018; Urnavicius et al., 2018). Adaptors such as BicDR1 and Hook3, which predominantly recruit two dyneins, also show increased velocities compared with DDR and DDH complexes with only one dynein (Elshenawy et al., 2019; Urnavicius et al., 2018). We note that the velocity reduction of DDJ in the presence of N-DCX is similar to the velocity reduction when a two-dynein motor assembly loses a dynein motor. Moreover, when we assembled DDJ complexes in the presence of N-DCX, the velocity of DDJ was reduced further (0.41 [0.32, 0.60] µm/s, ****p<0.0001) (Figure 5C).
 
@@ -102,13 +352,13 @@ To test the hypothesis that N-DCX displaces the second dynein from a DDJ motor c
 
 **Figure 6.:** (A) Kymograph of DDJ assembled in the absence (top) or presence (bottom) of N-DCX with dynein that were labeled separately with SNAP-TMR and SNAP-Alexa 647. (B) The ratio of two-color moving molecules versus the total moving molecules. The green bars represent mean ± SEM. DDJ: 42 ± 2%; DDJ + N-DCX pre: 27 ± 3% (unpaired t-test, **p<0.01). The molecules within each field of view were counted to produce a single value (50 µm × 50 µm). (C) The velocity of two-color moving molecules. The green bars represent median with 95% CI. DDJ: 0.79 [0.63, 0.87] µm/s; DDJ + N-DCX pre: 0.54 [0.27, 0.79] µm/s (KS test, *p<0.1).
 
-## Rescuing retrograde transport defects in Dcx-/y;Dclk1-/- neurons ameliorates neuronal migration defects
+### Rescuing retrograde transport defects in Dcx-/y;Dclk1-/- neurons ameliorates neuronal migration defects
 
 One of the characteristics of DCX-linked lissencephaly is a profound defect in cortical neuronal migration. We therefore asked whether the effects of DCX on dynein-based retrograde transport we observe play a role in the migration of cortical neurons during development. If the answer is yes, rescuing the abnormally increased dynein-based retrograde trafficking should mitigate the cortical neuronal migration defects observed in the developing Dcx-/y;Dclk1-/- mouse brain (Deuel et al., 2006; Koizumi et al., 2006). Since cortical neuronal migration is relatively normal in the Dcx-/y mouse (Corbo et al., 2002), we used a Dcx-/y;Dclk1-/- mouse, which has a cortical neuronal migration defect as the Dcx-redundant gene Dclk1is knocked out as well (Deuel et al., 2006; Koizumi et al., 2006). A plasmid expressing GFP and an shRNA that specifically targets DHC (Tsai et al., 2007) was microinjected into the lateral ventricle of embryonic day (E)14.5 Dcx-/y;Dclk1-/- mouse brains and transfected using in utero electroporation. Mouse embryos were then sacrificed on E18.5. As expected, downregulating DHC partially rescued the retention of neuroblasts in the deeper region of the cortex observed in Dcx-/y; Dclk1-/- mouse brains (Figure 7A and B). Based on these results, we wondered whether the dysregulation of dynein is in part due to increased association of JIP3 with dynein in the absence of DCX and whether downregulation of JIP3 expression may also ameliorate neuronal migration defects. To test this possibility, we microinjected plasmids expressing JIP3 shRNA1 and GFP into the lateral ventricle of E14.5 Dcx-/y;Dclk1-/- embryos and transfected the plasmids into neural progenitors using in utero electroporation. In agreement with our hypothesis, downregulation of JIP3 in Dcx-/y;Dclk1-/- mouse brain significantly rescued the lamination defect (Figure 7C and D). Collectively, our results demonstrate the importance of the regulation of dynein-dependent retrograde trafficking by DCX and JIP3 during neuronal migration.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/82218/elife-82218-fig7-v3.jpg)
 
-**Figure 7.:** Dcx in mouse cortex partially rescues the defect of pyramidal cell migration.-/y;Dclk1-/-(A) GFP-positive neurons were imaged and counted at embryonic day (E)18.5 after electroporation at E14.5 with vectors expressing control (CRL) shRNA (+GFP) or DHC shRNA (+GFP). (B) Percent of GFP-positive cells in evenly divided regions of the cortex (1–10) from the pia to the lateral ventricle. Asterisks denote statistically significant p-values (t-test, p<0.05) between WT with CRL shRNA and Dc with CRL shRNA. Number sign (#) denotes p<0.05 of x-/y;Dclk1-/-t-test between Dcx with CRL shRNA and -/y;Dclk1-/-Dcx with DHC shRNA. The data represent the mean ± SEM of three different brains in each condition. (-/y;Dclk1-/-C) GFP-positive neurons were imaged and counted at P0 after electroporation at E14.5 with vectors expressing control (CRL) shRNA (+GFP) or JIP3 shRNA (+GFP). (D) Percent of GFP-positive cells in evenly divided regions of the cortex (1–10) from the pia to the lateral ventricle of different mouse brains. * denotes p<0.05 of t-test between WT with CRL shRNA and Dcx with CRL shRNA. Number sign (#) denotes p<0.05 of -/y;Dclk1-/-t-test between Dcx with CRL shRNA and -/y;Dclk1-/-Dcx with JIP3 shRNA. The data represent the mean ± SEM of three individual brains in each condition.-/y;Dclk1-/-
+**Figure 7.:** (A) GFP-positive neurons were imaged and counted at embryonic day (E)18.5 after electroporation at E14.5 with vectors expressing control (CRL) shRNA (+GFP) or DHC shRNA (+GFP). (B) Percent of GFP-positive cells in evenly divided regions of the cortex (1–10) from the pia to the lateral ventricle. Asterisks denote statistically significant p-values (t-test, p<0.05) between WT with CRL shRNA and Dcx-/y;Dclk1-/- with CRL shRNA. Number sign (#) denotes p<0.05 of t-test between Dcx-/y;Dclk1-/- with CRL shRNA and Dcx-/y;Dclk1-/- with DHC shRNA. The data represent the mean ± SEM of three different brains in each condition. (C) GFP-positive neurons were imaged and counted at P0 after electroporation at E14.5 with vectors expressing control (CRL) shRNA (+GFP) or JIP3 shRNA (+GFP). (D) Percent of GFP-positive cells in evenly divided regions of the cortex (1–10) from the pia to the lateral ventricle of different mouse brains. * denotes p<0.05 of t-test between WT with CRL shRNA and Dcx-/y;Dclk1-/- with CRL shRNA. Number sign (#) denotes p<0.05 of t-test between Dcx-/y;Dclk1-/- with CRL shRNA and Dcx-/y;Dclk1-/- with JIP3 shRNA. The data represent the mean ± SEM of three individual brains in each condition.
 
 ## Discussion
 
@@ -118,7 +368,7 @@ Previous reports have linked DCX, a causative gene for X-linked lissencephaly th
 
 **Figure 8.:** Cargo-bound dynein motor complex drives retrograde transport from plus end of microtubules (MTs) (distal axon) to minus end of MTs (cell body). In WT neurons, DCX association with kinesin-3 helps kinesin-3-mediated anterograde transports (Liu et al., 2012). DCX decreases dynein-MT interactions (represented by tilted dynein complex along MT). DCX and JIP3 competitively associate with dynein. When DCX binds dynein, very few JIP3 proteins associate with dynein, the retrograde transport is normal. In DCX KO neurons (without DCX), kinesin-3-mediated anterograde transports are decreased without DCX (Liu et al., 2012). Meanwhile, more JIP3 molecules bind dynein, which also associates with MT stronger without DCX. The dynein-mediated retrograde transport is faster. The balance between anterograde transport and retrograde transport is broken without DCX.
 
-## DCX regulates anterograde and retrograde transport through differential effects on MT-associated motors
+### DCX regulates anterograde and retrograde transport through differential effects on MT-associated motors
 
 Our previous work showed that the KIF1A-driven anterograde transport of Vamp2 is significantly decreased in the absence of DCX compared with WT neurons, a result which our in vitro studies indicate is the consequence of a DCX-induced increase in the MT-binding strength of KIF1 in its weak ADP state. However, how DCX regulates KIF5-mediated axonal transport is less clear. Here, our in vitro data show that DCX reduces the velocity of KIF5B, consistent with a previous report (Monroy et al., 2020). Yet, we find that the anterograde transport of TrkB, which is regulated by KIF5 (Arimura et al., 2009; Huang et al., 2011; Sun et al., 2017), remains unchanged in DCX knockout neurons. The anterograde transport of mitochondria, which is mainly mediated by KIF5 (Cai et al., 2005; Iqbal and Hood, 2014; Lawrence et al., 2016; Morcillo et al., 2021; Qin et al., 2020; Zorgniotti et al., 2021), is also unaffected by DCX deficiency, both in terms of percentage of mobile mitochondria and run length (Liu et al., 2012).
 
@@ -126,7 +376,7 @@ This begs the question: why have no significant changes in KIF5-mediated anterog
 
 These possibilities are not mutually exclusive and illustrate the complexity of the network of factors regulating intracellular transport, in general, and the complexity of DCX regulation of axonal transport, in particular. DCX regulates axonal transport through multiple related pathways, and the net impact of DCX deficiency on vesicular transport is therefore the sum of alterations in these interrelated pathways. What is clear is that DCX affects MT-associated motor proteins differentially to regulate both anterograde and retrograde cargo transport. Our data here show that DCX accomplishes this in part through direct interactions with at least two MT motors, the KIF1A and the DDJ complex.
 
-## DCX negatively regulates dynein motion through interactions with both dynein and MTs
+### DCX negatively regulates dynein motion through interactions with both dynein and MTs
 
 We show that DCX inhibits dynein-mediated transport directly, both through its interactions with the dynein motor complex and through its binding to MTs. We demonstrate that DCX interacts with dynein through its N-terminal domain (Figure 2E) and that the C-terminal domain decreases binding of DCX to dynein, suggesting that DCX binds dynein in a ‘closed’ conformation (facilitated through intramolecular interactions between the N-terminal and C-terminal domains) in which the C-terminal domain is incapable of interfering with DCX-dynein binding. This could suggest that DCX binds to dynein as an autoinhibited monomer.
 
@@ -136,13 +386,13 @@ DCX binds MTs in a dimerized form or as oligomers of higher order, and it has be
 
 We hypothesize that the association of DCX with MTs and the dynein complex is a dynamic and of competitive nature. When more DCX associates with MT, less will bind to the dynein complex and vice versa. This dynamic process is likely regulated directly by the interactions of the C-terminal and N-terminal domains or indirectly through phosphorylation of residues in the C-terminal domain. Since the C-terminal domain has several phosphorylation sites (Graham et al., 2004; Jin et al., 2010; Shmueli et al., 2006; Slepak et al., 2012; Tanaka et al., 2004), it will be interesting in future studies to determine whether phosphorylation of residues in the C-terminal domain regulates the intramolecular interactions of the C- and N-terminal domain and with it DCX’s ‘closed’ state. In doing so, phosphorylation of the C-terminal domain could regulate whether DCX preferentially binds MTs or the DDJ complex.
 
-## DCX regulates dynein-mediated retrograde transport through JIP3
+### DCX regulates dynein-mediated retrograde transport through JIP3
 
 DCX’s association with dynein also alters the composition of the dynein motor complex. We found that the presence/absence of DCX most strongly altered the amount of the signaling adaptor protein, JIP3, that immunoprecipitated with the dynein motor complex (Li et al., 2021). In this study, we find that DCX and JIP3 competitively associate with dynein and that a DCX-induced reduction in the association of JIP3 with dynein results in diminished dynein-mediated retrograde transport. Thus, when DCX is absent, more dynein motors associate with MTs, and more JIP3 associates with dynein – events that greatly promote retrograde trafficking of TrkB.
 
 JIP3 belongs to the JIP family of proteins, and all mammalian JIP proteins are expressed in the brain (Dickens et al., 1997; Ito et al., 1999; Kelkar et al., 2000; Kelkar et al., 2005; Yasuda et al., 1999). JIP3 is an adaptor that regulates both anterograde and retrograde transport through its binding to kinesin and dynein, respectively (Celestino et al., 2022). Sunday Driver, the JIP3 homolog in Drosophila, directly binds to kinesin-1 (Bowman et al., 2000; Byrd et al., 2001; Sun et al., 2011), and UNC16, the JIP3 homolog in C. elegans, interacts with both kinesin-1 and dynein (Byrd et al., 2001). JIP3 colocalizes with the dynein-dynactin motor complex and serves as an adaptor protein for dynein-mediated retrograde transport of active JNK and lysosomes (Cavalli et al., 2005; Drerup et al., 2013). We found that the interaction of JIP3 with dynein was increased in DCX-deficient neurons, although the total JIP3 levels were not changed compared with WT neurons (Li et al., 2021). These findings are supported by our in vitro data, which demonstrate that while JIP3 predominantly recruits two dyneins per DDJ motor complex in the absence of DCX, it mostly recruits only one dynein in the presence of DCX. As JIP3 is also involved in the anterograde transport of TrkB by KIF5 (Arimoto et al., 2011; Huang et al., 2011), it will be interesting to determine whether JIP3 association with KIF5 is affected by DCX.
 
-## DCX regulates the assembly and motility of the dynein-dynactin-JIP3 motor complex
+### DCX regulates the assembly and motility of the dynein-dynactin-JIP3 motor complex
 
 We have revealed that DCX competes with the binding of the second dynein to DDJ, resulting in reduced velocities of the moving motor complexes by reconstituting for the first time the in vitro motility of DDJ motor complexes using two-color single-molecule colocalization studies. While numerous dynein-dynactin-adaptor complexes such as DDB, DDR, and DDH have been extensively studied in vitro using single-molecule TIRF microscopy (Christensen et al., 2021; McClintock et al., 2018; McKenney et al., 2014; Sladewski et al., 2018; Urnavicius et al., 2018), it was the consensus that the predicted ~180 amino acids α-helical coiled-coil region in JIP3 is too short to be capable of forming a tripartite complex with dynein and dynactin (Chaaban and Carter, 2022; Lee et al., 2020; Reck-Peterson et al., 2018). Surprisingly, however, we found that a truncated JIP3 construct containing the N-terminal coiled-coil and the predicted adjacent intrinsically disordered domain (amino acids 1–240) can form an active DDJ complex with two dyneins. N-DCX reduced the velocity of DDJ complexes with two dyneins from ~0.8 µm/s to ~0.4 µm/s as a result of the dissociation of the second dynein. Moreover, we found that N-DCX, which does not bind MTs under our assay condition, does not impact the MT-gliding activity by a tail-truncated single-head dynein (a recombinant construct that contains the motor domain and the linker), while FL-DCX, which decorates MTs well, reduces the MT-gliding velocity slightly. These results suggest that N-DCX’s inhibitory effect on DDJ is through its interactions with dynein’s tail domain or dynein’s associated subunits, but not through interactions with dynein’s motor domain or the MTs. On the other hand, FL-DCX decreases dynein’s MT-gliding velocity slightly, and our single-molecule landing-rate assay showed that while DCX does not alter the time of dynein spends bound to MTs, it reduces the MT on-rate of dynein. Thus, DCX affects the composition of the DDJ complex as well as dynein’s interactions with MTs.
 
@@ -150,7 +400,7 @@ The fact that DDJ complexes are active and associate with two dyneins implies th
 
 Our findings collectively suggest that cargo adaptors fine-tune dynein’s activity by utilizing different interactions with dynein and dynactin. While we also found that a longer JIP3 construct (aa 1–548) formed an active complex with dynein and dynactin (data not shown), this construct was prone to aggregation. Of note, full-length BicD2 has been shown to be autoinhibited by its third coiled-coil domain (Hoogenraad et al., 2001; McClintock et al., 2018). It is therefore possible that our longer JIP3 construct is more prone to be autoinhibited. To circumvent this problem, we used the shorter JIP3 construct for our studies. Collectively, our in vitro reconstitution studies with purified proteins agree with our in vivo observations that DCX downregulates dynein’s activity, and that the C-terminus of DCX autoinhibits DCX’s interaction with dynein.
 
-## How does disinhibition of dynein by DCX-based loss of function lead to defects in early neuronal development?
+### How does disinhibition of dynein by DCX-based loss of function lead to defects in early neuronal development?
 
 Both loss-of-function mutations in DCX, dynein, and its cofactors cause cortical malformations (Feng and Walsh, 2004; Pawlisz et al., 2008; Poirier et al., 2013; Reiner et al., 1993; Sasaki et al., 2005; Youn et al., 2009), and JIP3 knockout in mouse results in similar phenotypes as seen in DCX -/y; Dclk1-/- mice (Deuel et al., 2006; Fu et al., 2013; Koizumi et al., 2006) with disrupted formation of the telencephalon and the agenesis of the telencephalic commissures, possibly through impaired vesicle transport and defects in axon guidance (Ha et al., 2005; Kelkar et al., 2003). Furthermore, previous studies showed that JIP3 regulates axon branching through GSK3β-signaling pathway by phosphorylation of DCX at Ser327, which is located at C-terminal S/P-rich region of DCX (Bilimoria et al., 2010). The phosphorylation of DCX by the JNK pathway is important for neuronal migration (Gdalyahu et al., 2004). Thus, loss-of-function mechanisms in cytoskeleton motor proteins are well-accepted as causative in neural developmental disorders.
 
@@ -160,88 +410,476 @@ Furthermore, loss of dynein inhibition may have direct effects on important sign
 
 ## Materials and methods
 
-## Antibodies and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Dcx-/y, 129/SvJ</td>
+      <td>Deuel et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Dcx-/y;Dclk1-/-, 129/SvJ</td>
+      <td>Deuel et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td>The identity of HEK293 was authenticated from ATCC upon purchase and tested negative for mycoplasma contamination</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>BL21-CodonPlus (DE3)-RIPL competent cells</td>
+      <td>Agilent</td>
+      <td>#230280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>DH10Bac competent cells</td>
+      <td>Gibco</td>
+      <td>#10361012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DCX (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab18723</td>
+      <td>(1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DHC (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab6305</td>
+      <td>(1:250 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DIC (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab23905</td>
+      <td>(1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tubulin (rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab6161</td>
+      <td>(1 µg/ml dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-JIP3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab196761</td>
+      <td>(1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (mouse monoclonal)</td>
+      <td>EMD Millipore</td>
+      <td>05-904</td>
+      <td>(1 μg/ml dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (mouse monoclonal)</td>
+      <td>YenZym</td>
+      <td>https://www.yenzym.com/default.html</td>
+      <td>(0.1 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-conjugated goat anti-rabbit IgG (H+L) (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A11036</td>
+      <td>(1:10,000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 568-conjugated goat anti-rabbit IgG (H+L) (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-11036</td>
+      <td>(1:10,000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-conjugated goat anti-mouse IgG (H+L) (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A32723</td>
+      <td>(1:10,000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 568-conjugated goat anti-mouse IgG (H+L) (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-11031</td>
+      <td>(1:10,000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>6His-PreScission-DCX-EGFP-StrepII(plasmid)</td>
+      <td>Addgene</td>
+      <td>#83918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>kif5b(1-560)-EGFP-6His (plasmid)</td>
+      <td>Addgene</td>
+      <td>#15219</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Sfp-6His (plasmid)</td>
+      <td>Addgene</td>
+      <td>#75015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Construct pGEX-4T-1 encoding JIP3 (plasmid)</td>
+      <td>Gift from Dr. Valeria Cavalli; Sun et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Construct pCDNA3 encoding JIP3(plasmid)</td>
+      <td>Gift from Dr. Roger Davis; Kelkar et al., 2000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSNAP-tag(T7)2 (plasmid)</td>
+      <td>NEB</td>
+      <td>NEB #N9181S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFastBac plasmid with codon-optimized full-length human dynein (plasmid)</td>
+      <td>A gift from the Carter lab; Schlager et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>The pFastBac plasmid encoding tail-truncated human dynein (amino acids 1320–4646) (plasmid)</td>
+      <td>Gift from the Reck-Peterson Lab; Htet et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Construct expressing IC-1B (plasmid)</td>
+      <td>Gift from Dr. Kevin Pfister; Ha et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Construct expression TrkB-RFP (plasmid)</td>
+      <td>Gift from Dr. Xiaowei Zhuang</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid pBA (plasmid)</td>
+      <td>Gift from Dr. Gary Banker; Jacobson et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>The pBA plasmid encoding HA-tagged N-DCX mutant (plasmid)</td>
+      <td>This paper</td>
+      <td>Available upon request</td>
+      <td>‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>The pBA plasmid encoding HA-tagged C-DCX mutant (plasmid)</td>
+      <td>This paper</td>
+      <td>Available upon request</td>
+      <td>‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>The pBA plasmid encoding HA-tagged DCX mutant T203R (plasmid)</td>
+      <td>This paper</td>
+      <td>Available upon request</td>
+      <td>‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>The pBA plasmid encoding HA-tagged DCX mutant A71S (plasmid)</td>
+      <td>This paper</td>
+      <td>Available upon request</td>
+      <td>‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSilencer-GFP (plasmid)</td>
+      <td>Gift from Dr. Shirin Bonni; Sarker et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSilencer-GFP plasmid encoding JIP3 shRNA (plasmid)</td>
+      <td>This paper; Li et al., 2021</td>
+      <td></td>
+      <td>‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S.O.C. medium</td>
+      <td>Gibco</td>
+      <td>#15544034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B-PER complete</td>
+      <td>Thermo Scientific</td>
+      <td>#89821</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>QIAGEN buffer</td>
+      <td>QIAGEN</td>
+      <td>#27104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FuGene HD transfection reagent</td>
+      <td>Promega</td>
+      <td>E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease inhibitor cocktail tablet</td>
+      <td>Roche</td>
+      <td>#11836170001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IgG Sepharose 6 Fast Flow beads</td>
+      <td>Cytiva</td>
+      <td>#17096901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SNAP-Cell TMR</td>
+      <td>New England Biolabs</td>
+      <td>#S9105S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TEV protease</td>
+      <td>New England Biolabs</td>
+      <td>#P8112S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tubulin</td>
+      <td>Cytoskeleton</td>
+      <td>#TL590M-A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zeba 7 kDa unit</td>
+      <td>Thermo Scientific</td>
+      <td>#89882</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dynactin</td>
+      <td>A gift from the laboratory of Andrew Carter, MRC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polyornithine</td>
+      <td>Sigma-Aldrich</td>
+      <td>#P4957-50ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B27</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#17504044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>bFGF</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#PHG0024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Papain dissociation system</td>
+      <td>Worthington BiochemicalCorporation</td>
+      <td>LK003150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaMorph Premier</td>
+      <td>MetaMorph</td>
+      <td>https://www.metamorphsoftware.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Six-well plates</td>
+      <td>Corning</td>
+      <td>#3516</td>
+      <td>Used in neuronal culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glass coverslips (for 24-well)</td>
+      <td>Warner Instruments</td>
+      <td>Cat# 64-0712</td>
+      <td>Used in neuronal culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glass coverslips (for 6-well plate)</td>
+      <td>Warner Instruments</td>
+      <td>Cat# 64-0715</td>
+      <td>Used in neuronal culture</td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies and reagents
 
 Cell culture reagents were purchased from Life Technologies (Grand Island, NY). HEK-293 cells were purchased from ATCC (#CRL-1573). The authentication of this cell lines was provided by ATCC, and the cell line was tested negative for mycoplasma contamination. Antibodies to DCX (ab18723), DHC (ab6305), DIC (ab23905), JIP3 (ab196761), and Tubulin (ab6161) were purchased from Abcam (Cambridge, MA). Antibody to HA was from EMD Millipore (Billerica, MA). Construct expressing IC-1B was generously provided by Dr. Kevin Pfister (UVA). Construct expression JIP3 was generously provided by Dr. Roger Davis (UMASS MED). Construct expression TrkB-RFP was generously provided by Dr. Xiaowei Zhuang (Harvard University). All other reagents were purchased from Sigma-Aldrich (St. Louis, MO).
 
-## Mammalian expression and RNA interference constructs
+### Mammalian expression and RNA interference constructs
 
 DNA sequences for HA-tagged N-DCX (1–270 N-terminal amino acids) and C-DCX (271–361 amino acids) were synthesized by PCR using construct expressing FL-DCX (Liu et al., 2012) as template, and then cloned into plasmid pBA (Jacobson et al., 2006). HA-tagged DCX mutant T203R were created using QuikChange Site-Directed Mutagenesis kit (Stratagene). HA-tagged DCX mutant A71S was synthesized commercially (Genewiz) and subcloned into plasmid pBA. All RNAi control or target sequences (hp) were cloned into the pSilencer 1.0-U6 plasmid. The complementary RNAi oligos were annealed and ligated into pSilencer-GFP (gift from Shirin Bonni) (Sarker et al., 2005).
 
-## Animals and primary cortical neuron cultures
+### Animals and primary cortical neuron cultures
 
 All animal procedures were approved by the Committee on the Ethics of Animal Experiments of Wenzhou Medical University (#wydw2019-0723). P0 cortices were dissected and dissociated using the Worthington papain dissociation system (Worthington Biochemical Corp., Lakewood, NJ). Neurons were plated on poly-l-ornithine solution-coated coverglasses in neuronal culture medium (Neurobasal medium plus B27, glutamine, FGF [10 ug/ml] and Pen/Strep) until experiments.
 
-## Time-lapse imaging
+### Time-lapse imaging
 
 Cultured cortical neurons were transfected with different constructs on DIV6 using Lipofectamine 2000 according to the manufacturer’s instruction. Images were acquired on an inverted epifluorescence microscope (IX-81, Olympus America Inc, Melville, NY) equipped with high numerical aperture lenses (Apo 603 NA 1.45, Olympus) and a stage top incubator (Tokaihit, Japan) maintained at 37°C at a rate of one capture per 3 s. Fluorescence excitation was carried out using solid-state lasers (Melles Griot, Carlsbad, CA) emitting at 488 nm (for green) and 561 nm (for red) fluorophores. Emission was collected through appropriate emission band-pass filters obtained from Chroma Technologies Corp. (Brattleboro, VT). Images were acquired with a 12-bit cooled CCD ORCA-ER (Hamamatsu Photonics) with a resolution of resolution of 1280×1024 pixel size of 6.45 mm2. The camera, lasers, and shutters were all controlled using Slidebook 5 (Intelligent Imaging Innovations, Denver, CO). For all calculations and measurements of vesicle movement, only bright vesicles located in the proximal region of axons (~100 µm away from cell body) are analyzed. A vesicle is counted as mobile only if the displacement is at least 5 µm. A vesicle is counted as stationary if it moves less than 5 µm. To calculate the run length and velocity, vesicles were analyzed only if the net run length is at least 5 µm in retrograde direction. The velocity is calculated as the length of a continuous retrograde movement divided by the length of the time. Those stationary vesicles are not counted for velocity. Analysis of time-lapse imaging was performed with MetaMorph for tracking and the ImageJ Manual Tracking plugin as described (http://rsbweb.nih.gov/ij/plugins/track/track.html).
 
-## Pull-down assay and mass-spectrometry procedure and analysis
+### Pull-down assay and mass-spectrometry procedure and analysis
 
 HA or HA-tagged DCX proteins were immobilized on anti-HA agarose beads and subsequently mixed with protein lysates from E18 mouse brains and incubated with rotation for 16 hr at 4°C to pull down associating proteins. The beads were washed four times. The beads were then incubated with DL-dithiothreitol (DTT) solution (final concentration of 10 mmol/l) and reduced in a 56°C water bath for 1 hr. Iodoacetamide (IAA) solution was added (final concentration of 50 mmol/l) and protected from light for 40 min. The proteins were digested with trypsin overnight at 37°C. After digestion, the peptides were desalted using a desalting column, and the solvent was evaporated in a vacuum centrifuge at 45°C. The peptides were dissolved in sample solution (0.1% formic acid [FA] in water) and ready for mass-spectrometry analysis. Samples were loaded onto Nanocolumn (100 μm × 10 cm) packed with a reversed-phase ReproSil-Pur C18-AQ resin (3 μm, 120 Å, Dr. Maisch GmbH, Germany). The mobile phases consisted of A (0.1% FA in water) and B (acetonitrile [ACN]). Total flow rate is 600 nl/min using a nanoflow liquid chromatograph (Easy-nLC1000, Thermo Fisher Scientific, USA). LC linear gradient: from 4% to 8% B for 2 min, from 8% to 28% B for 43 min, from 28% to 40% B for 10 min, from 40% to 95% B for 1 min, and from 95% to 95% B for 10 min. Eluted peptides were introduced into the mass spectrometer (Q Exactive Hybrid Quadrupole-Orbitrap Mass Spectrometer, Thermo Fisher Scientific). The spray voltage was set at 2.2 kV and the heated capillary at 270°C. The machine was operated with MS resolution at 70,000 (400 m/z survey scan), MS precursor m/z range: 300.0–1800.0. The raw MS files were analyzed and searched against protein database based on the species of the samples using MaxQuant (1.6.2.10). The parameters were set as follows: the protein modifications were carbamidomethylation (C) (fixed), oxidation (M) (variable), acetyl (protein N-term) (variable); the enzyme specificity was set to trypsin; the maximum missed cleavages were set to 2; the precursor ion mass tolerance was set to 20 ppm, and MS/MS tolerance was 20 ppm. Only high-confident identified peptides were chosen for downstream protein identification analysis. RIPA Lysis and Extraction Buffer, Pierce BCA Protein Assay Kit were purchased from Thermo Fisher Science. DTT, IAA, FA, ACN were purchased from Sigma (St. Louis, MO), and trypsin from bovine pancreas was purchased from Promega (Madison, WI). Ultrapure water was prepared from a Millipore purification system. An Ultimate 3000 system was coupled with a Q Exactive Hybrid Quadrupole-Orbitrap Mass Spectrometer (Thermo Fisher Scientific) with an ESI nanospray source.
 
-## Microtubule-binding assay
+### Microtubule-binding assay
 
 Mouse brains are dissected and flash-frozen and kept at –80°C until experiment. Flash-frozen mouse brains are pulverized with a mortar and pestle and added to cold lysis buffer (0.01% Triton X100, 1× proteinase and phosphatase inhibitor cocktail, 1 mM GTP in 1× BRB80 buffer) and left on ice for 20 min. Proteins were collected in the supernatant after centrifugation for 20 min at 15,000 rpm. Tubulin (Cytoskeleton, Inc) was diluted to 10 mg/ml in lysis buffer and incubated at 37°C for 30 min, 100 μM taxol was added afterward. Equal amounts of proteins from different mouse brains were warmed up to 37°C and incubated with polymerized MTs at 37°C for 1 hr. Samples are centrifuged at 100,000 × g at 37°C for 40 min. Supernatants were saved and pellets resuspended in lysis buffer of the same volume of supernatant.
 
-## In utero electroporation
+### In utero electroporation
 
 In utero electroporation-mediated gene transfer was performed as previously described (Saito and Nakatsuji, 2001; Tabata and Nakajima, 2001). Briefly, E14.5 pregnant mice were anesthetized with ketamine/xylazine (100/10 mg/kg) and their uterine horn exposed. DNA plasmid (2–5 mg/ml) was injected via a pulled glass pipette into the lateral ventricle of each embryo, followed by electrodes placed on each side of the head parallel to the sagittal plane. Electrical current (five 50 ms pulses of 41 V with 950 ms intervals) was used to drive the plasmid DNA into lateral cortical areas. After sacrifice, mice were screened through visualizing of GFP expression using a stereo fluorescence microscope. GFP-expressing mouse brains were dissected out and fixed in 3.7% paraformaldehyde for 3 hr. Samples were then transferred to PBS buffer with 30% sucrose and left at 4°C overnight. The mouse brains were sectioned at 20 μm using a Microtome (MICROM HM525).
 
-## Western analysis
+### Western analysis
 
 Standard Western blot analysis was performed using antibodies as detailed above. The dual-channel signal detection LI-COR system from Odyssey was used to analyze levels over a linear dynamic range.
 
-## Constructs for protein expression in E. coli
+### Constructs for protein expression in E. coli
 
 The plasmids for 6His-PreScission-DCX-EGFP-StrepII (Addgene #83918), kif5b(1-560)-EGFP-6His (Addgene #15219), and Sfp-6His (Addgene #75015) were ordered from Addgene. The plasmid for JIP3 was a gift from Cavalli lab (Valeria Cavalli, Department of Anatomy and Neurobiology, Washington University in St Louis, School of Medicine, St Louis, MO) (Sun et al., 2011). For DCX, EGFP was replaced by a ybbR-tag using Q5 mutagenesis. For kif5b, the sequence encoding amino acids 1–490 was amplified with NdeI and EcoRI overhangs and inserted into a modified backbone based on pSNAP-tag(T7)2 (NEB #N9181S) before a SNAPf-EGFP-6His tag (Budaitis et al., 2021). For JIP3, the sequence encoding amino acids 3–240 (or 3–548) was amplified with NdeI-6His and EcoRI overhangs. The first two amino acids are Met in JIP3, which were therefore skipped because a 6His-tag was inserted at the N-terminus. The amplified sequence was then inserted into a modified backbone based on pSNAP-tag(T7)2 before a HaloTag-StrepII tag. All constructs were verified by restriction enzyme digestion and DNA sequencing.
 
-## Protein expression in E. coli
+### Protein expression in E. coli
 
 Protein expression in E. coli was done as previously described (Budaitis et al., 2021). Briefly, a plasmid was transformed into BL21-CodonPlus(DE3)-RIPL-competent cells (Agilent #230280), and a single colony was inoculated in 1 ml of TB with 50 µg/ml of chloramphenicol and 25 µg/ml of carbenicillin or 15 µg/ml of kanamycin in the case of Sfp. The culture was shaken at 37°C overnight, and then inoculated into 400 ml of TB, which was shaken at 37°C for 5 hr, and subsequently cooled down to 18°C. IPTG was added to the culture to a final concentration of 0.1 mM, and the expression was induced overnight at 18°C with shaking. The culture was harvested by centrifugation at 3000 rcf for 10 min. Following the removal of the supernatant, the cell pellet was resuspended in 5 ml of B-PER complete (Thermo Scientific #89821) supplemented with 4 mM MgCl2, 2 mM EGTA, 0.2 mM ATP, 2 mM DTT, and 2 mM PMSF. The cell suspension was then flash-frozen and stored at –80°C.
 
-## Purification and labeling of Sfp, JIP3, DCX, and KIF5B
+### Purification and labeling of Sfp, JIP3, DCX, and KIF5B
 
 The purification of E. coli expressed protein was done as previously described (Budaitis et al., 2021). For the JIP3 and DCX constructs, a two-step purification was performed. For Sfp and kif5b, only the His-tag purification was performed. Briefly, the cell pellet was thawed at 37°C, and then nutated at room temperature for 20 min. The lysate was dounced for 10 strokes on ice and cleared via centrifugation at 80,000 × rpm (260,000 × g) for 10 min at 4°C using a TLA 110 rotor (Beckman) in a tabletop Beckman ultracentrifuge. At the same time, 500 µl of the Ni-NTA slurry (Roche cOmplete His-Tag purification resin) was washed with 2 × 1 ml of wash buffer (WB, 50 mM HEPES, 300 mM KCl, 2 mM MgCl2, 1 mM EGTA, 1 mM DTT, 0.1 mM ATP, 1 mM PMSF, 0.1% [w/v] Pluronic F-127, pH 7.2) in a 10 ml column (Bio-Rad #7311550). After the centrifugation, the supernatant was loaded into the column and allowed to flow through the resin by gravity. The resin was then washed with 3 × 2 ml of WB.
 
 For Halo-tag labeling, halo-tag ligand was added to final 10 µM, and the resin was incubated at room temperature for 10 min. For ybbR-tag labeling, the CoA-dye ligand for ybbR-tag was generated by reacting coenzyme A (CoA) with a dye containing a maleimide group in 1:1 ratio at room temperature for 30 min. The final product was quenched with 50 mM DTT, aliquoted, flash-frozen, and stored at –80°C. To label the ybbR-tag, CoA-dye and Sfp was added to the resin to a final concentration of 10 µM. The resin was nutated at 4°C for 3 hr. After the labeling, the resin was washed with 3 × 3 ml of WB and eluted with Ni-NTA elution buffer (Ni-EB, 50 mM HEPES, 150 mM KCl, 2 mM MgCl2, 1 mM EGTA, 1 mM DTT, 0.1 mM ATP, 1 mM PMSF, 0.1% [w/v] Pluronic F-127, 250 mM imidazole, pH 7.2). For Sfp and kif5b, the protein was aliquoted, flash-frozen, and stored at –80°C until further usage. For JIP3 and DCX, the concentrated fraction was pooled and flown through 1 ml of streptactin slurry (IBA #2-1201) that had been washed with 2 × 1 ml WB. The resin was then washed with 3 × 2 ml WB, and then eluted with streptactin elution buffer (St-EB, 50 mM HEPES, 150 mM KCl, 2 mM MgCl2, 1 mM EGTA, 1 mM DTT, 0.1 mM ATP, 1 mM PMSF, 0.1% [w/v] Pluronic F-127, 2.5 mM dethiobiotin, pH 7.2). The concentrated fraction was pooled and further concentrated via centrifugation using Amicon 0.5 ml 10 kDa unit. The protein was verified on a PAGE gel, and the concentration was determined using Bradford assay.
 
-## Constructs for protein expression in insect cells
+### Constructs for protein expression in insect cells
 
 The pFastBac plasmid with codon-optimized full-length human dynein was a gift from the Carter lab (MRC Laboratory of Molecular Biology, Francis Crick Avenue, Cambridge, UK) (Schlager et al., 2014). The pFastBac plasmid that encodes tail-truncated human dynein (amino acids 1320–4646 of DYNC1H1) was a gift from the Reck-Peterson Lab (Department of Cellular and Molecular Medicine, University of California, San Diego, CA) (Htet et al., 2020).
 
-## Protein expression in insect cells
+### Protein expression in insect cells
 
 Full-length human dynein and tail-truncated human dynein were expressed in Sf9 cells as described previously (Schlager et al., 2014; Htet et al., 2020). Briefly, the pFastBac plasmid containing full-length human dynein or tail-truncated dynein was transformed into DH10Bac-competent cells (Gibco, #10361012) with heat shock at 42°C for 45 s followed by incubation at 37°C for 4 hr in S.O.C. medium (Gibco, #15544034). The cells were then plated onto LB agar plates containing kanamycin (50  μg/ml), gentamicin (7 μg/ml), tetracycline (10  μg/mL), BluoGal (100  μg/mL), and isopropyl-β-d-thiogalactoside (IPTG; 40  μg/mL), and positive clones were identified by a blue/white color screen after 36 hr. Bacmid DNA was extracted from overnight culture using an isopropanol precipitation method with QIAGEN buffer (QIAGEN, #27104) as described previously (Schlager et al., 2014). To generate baculovirus for Sf9 insect cell transfection, 2 ml of Sf9 cells at 0.5 × 106 cells per ml in six-well plates (Corning, #3516) were transfected with 2 μg of fresh bacmid DNA and 6 μl of FuGene HD transfection reagent (Promega, E2311) according to the manufacturer’s instruction. The cells were incubated for 4 days, and the supernatant containing V0 virus was collected. To generate V1 virus, 0.5 ml of V0 virus was used to transfect 50 ml of Sf9 cells at 1.5 × 106 cells per ml. The supernatant containing V1 virus was collected by centrifugation at 200 × g for 5 min at 4°C after 3 days. The V1 virus was stored at 4°C in the dark until use. For protein expression, 5 ml of the V1 virus was used to transfect 500 ml Sf9 cells at 2 × 106 cells per ml. After 60 hr incubation, cells were collected by centrifugation at 3000 × g for 10 min at 4°C. The cell pellet was resuspended in 15 ml ice-cold PBS and centrifuged again. The supernatant was then removed, and the cell pellet was flash-frozen in liquid nitrogen and stored at –80°C.
 
-## Purification and labeling of tail-truncated and full-length human dynein
+### Purification and labeling of tail-truncated and full-length human dynein
 
 Full-length dynein and tail-truncated dynein were purified from frozen Sf9 pellets as described previously (Schlager et al., 2014; Htet et al., 2020). Frozen pellets from 500 ml insect cell culture were thawed on ice and resuspended in lysis buffer (50 mM HEPES pH 7.4, 100 mM NaCl, 1 mM DTT, 0.1 mM ATP, 10% [v/v] glycerol, 2 mM PMSF) supplemented with one protease inhibitor cocktail tablet (cOmplete-EDTA free, Roche, #11836170001) to a final volume of 50 ml. Cells were then lysed using a Dounce homogenizer with 20 strokes. The lysate was cleared by centrifugation at 279,288 × g for 10 min at 4°C using a Beckman Coulter tabletop centrifuge unit. The clarified supernatant was incubated with 3 ml of IgG Sepharose 6 Fast Flow beads (Cytiva, #17096901) for 4 hr with rotation. After incubation, the protein-bound IgG beads were transferred to a gravity flow column and washed with 100 ml lysis buffer and 100 ml TEV buffer (50 mM Tris–HCl pH 8.0, 250 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 1 mM DTT, 0.1 mM Mg-ATP and 10% [v/v] glycerol). To fluorescently label the carboxy-terminal SNAPf tag of full-length human dynein, dynein-coated beads were incubated with 5 μM SNAP-Cell TMR (New England Biolabs, #S9105S) in the column for 10 min at room temperature. The beads were then washed with 100 ml TEV buffer at 4°C to remove unbound dyes. Subsequently, the beads were resuspended in TEV buffer (final volume 5 ml) with 100 μl TEV protease (New England Biolabs, #P8112S) and incubated at 4°C on a roller overnight. After TEV cleavage, the beads were removed and protein of interest was concentrated using a 100 kDa molecular weight cut-off (MWCO) concentrator (Millipore, #Z648043) to 1 ml and flash-frozen in liquid nitrogen.
 
-## Microtubule polymerization
+### Microtubule polymerization
 
 Microtubule polymerization was performed as described before (Rao et al., 2018). Briefly, 2 µl of 10 mg/ml unlabeled tubulin (Cytoskeleton) was mixed with 2 µl of 1 mg/ml biotin-tubulin and 2 µl of 1 mg/ml dye-labeled tubulin on ice. 0.5 µl of 10 mM GTP was added to the mixture, and the mixture was incubated at 37°C for 20 min. Afterward 0.7 µl of 0.2 mM taxol (in DMSO) was added, and the solution was incubated at 37°C for another 15 min. The unincorporated tubulin was removed by centrifuging through a glycerol cushion (80 mM PIPES, 2 mM MgCl2, 1 mM EGTA, 60% glycerol, 10 µM taxol, 1 mM DTT, pH 6.8) at 80,000 × rpm (250,000 × g) for 5 min at room temperature using TLA 100 motor (Beckman) in a tabletop Beckman ultracentrifuge. The supernatant was discarded, and the pellet was resuspended in 12 µl resuspension buffer (80 mM PIPES, 2 mM MgCl2, 1 mM EGTA, 10% glycerol, 10 µM taxol, 1 mM DTT, pH 6.8) to obtain a final 2 mg/ml MT concentration for the TIRF assay. For the MT-binding and -release assay, 5 µl of 10 mg/ml unlabeled tubulin was used to polymerize the MTs, and the pellet was resuspended in 10 µl of the resuspension buffer to obtain a final 5 mg/ml MT concentration.
 
-## Microtubule-binding and -release assay of kif5b and single-head human dynein
+### Microtubule-binding and -release assay of kif5b and single-head human dynein
 
 Impaired/inactive motors were removed by an MT-binding and -release assay as described before (Budaitis et al., 2021; Rao et al., 2019). Briefly, 50 µl of protein solution was exchanged into a binding buffer (30 mM HEPES, 50 mM KCl, 2 mM MgCl2, 1 mM EGTA, 10% glycerol, 1 mM DTT, 0.1 mM AMPPNP, pH 7.2) using Zeba 7 kDa unit (Thermo Scientific #89882). The protein solution was warmed to room temperature, and taxol was added to final 20 µM concentration. For kif5b, AMPPNP was also added to a final 1 mM concentration. 3 µl of the 5 mg/ml MT stock was added to the protein solution and then mixed well. The solution was then carefully layered on top of 100 µl of glycerol cushion for kif5b (80 mM PIPES, 2 mM MgCl2, 1 mM EGTA, 60% glycerol, 10 µM taxol, 1 mM DTT, pH 6.8) or sucrose cushion for dynein (30 mM HEPES, 50 mM KCl, 2 mM MgCl2, 10% glycerol, 25% w/v sucrose, 10 µM taxol, 1 mM DTT, pH 7.2) in a TLA 100 rotor (Beckman), and centrifuged at 45,000 × rpm (80,000 × g) for kif5b or 80,000 × rpm (250,000 × g) for dynein at room temperature for 10 min. Afterward the supernatant was removed and the pellet was washed with 2 × 20 µl wash buffer (30 mM HEPES, 50 mM KCl, 2 mM MgCl2, 10% glycerol, 10 µM taxol, 1 mM DTT, pH 7.2). The pellet was then resuspended in 47 µl of high-salt release buffer (HSRB, 30 mM HEPES, 300 mM KCl, 2 mM MgCl2, 10% glycerol, 10µM taxol, 1 mM DTT, pH 7.2), and 3 µl of 100 mM ATP was added to the solution. The solution was centrifuged at 40,000 × rpm (60,000 × g) for 5 min, and the supernatant was aliquoted, flash-frozen, and stored at –80°C for further usage.
 
-## DDJ complex assembly
+### DDJ complex assembly
 
 DDJ complex was assembled following a published protocol (Urnavicius et al., 2018). Briefly, dynein, dynactin (a gift from the laboratory of Andrew Carter, MRC), and JIP3 were mixed on ice in 1:1:1 ratio (final concentration of 200 nM each) and incubated for 1 hr on ice in the dark. For DDJ complex formation in the presence of N-DCX, N-DCX was added in equal amount as dynein.
 
-## TIRF motility assay
+### TIRF motility assay
 
 The TIRF motility assay was performed as described before (Budaitis et al., 2021). Briefly, a coverslip was cleaned using ethanol and assembled into a flow chamber. 10 µl of 0.5 mg/ml biotin-BSA was introduced into the flow chamber, and the flow chamber was incubated at room temperature for 10 min in a humidity chamber. The chamber was then washed with 3 × 20 µl of blocking buffer (BB, 80 mM PIPES, 2 mM MgCl2, 1 mM EGTA, 10 µM taxol, 1% [w/v] Pluronic F-127, 2 mg/ml BSA, 1 mg/ml α-casein, pH 6.8), and incubated for 10 min. The solution in the chamber was completely removed using vacuum, and 10 µl of 0.25 mg/ml streptavidin was flown in and incubated at room temperature for 10 min. The chamber was then washed with 3 × 20 µl of BB, and the solution was completely removed afterward. 0.5 µl of 0.2 mg/ml fluorescently labeled MTs was diluted in 19.5 µl of BB and flown into the chamber. The chamber was then washed with 2 × 20 µl BB and 20 µl of motility buffer (MB, 60 mM HEPES, 50 mM KAc, 2 mM MgCl2, 1 mM EGTA, 0.5% [w/v] Pluronic F-127, 10 µM taxol, 1 mM DTT, 5 mg/ml BSA, 1 mg/ml α-casein, pH 7.2). 1 µl of 100 mM ATP, 1 µl of 50 mM biotin, and 1 µl of oxygen scavenger system were added to 46 µl of MB, and 1 µl of 10 nM DDJ complex was added subsequently. For DCX and N-DCX experiments, DCX was added to a final 10 nM in the final solution. The solution was mixed well and flown into the chamber. The chamber was then sealed with vacuum grease. The acquisition time was 200 ms per frame, and a total of 600 frames was taken for each movie. The data was analyzed using a custom-built MATLAB software. Alternatively, ImageJ could be used to generate and analyze the kymographs, which yields the same results. The statistical analysis and data visualization were performed using Prism.
 
-## TIRF gliding assay
+### TIRF gliding assay
 
 A slide chamber was assembled as described above. 10 µl of 0.1 mg/mL anti-GFP antibody (YenZym) was introduced into the chamber, which was then incubated in a humidity chamber for 10 min. The chamber was washed with 3 × 20 µl BB and 20 µl of MB. 1 µl of MTBR fraction of single-head human dynein was diluted in 19 µl of MB, and the solution was flown into the chamber and incubated for 2 min. The chamber was washed with 3 × 20 µl of MB to remove unbound dynein. 1 µl of 100 mM ATP, 0.5 µl of 0.2 mg/ml MTs, and 1 µl of oxygen scavenger system were added to 47.5 µl of MB, which was flown into the chamber. The chamber was sealed with vacuum grease. The imaging condition and analysis were done as described above.
 
-## TIRF landing assay
+### TIRF landing assay
 
 A slide chamber was constructed and MTs were immobilized on the coverslip as in the TIRF mobility assay. Single-head human dynein was diluted to appropriate concentration in the motility buffer. 2 mM ATP was used for the ATP state; 2 mM ADP and 0.05 U/µl hexokinase were used for the ADP state; 2 mM AMPPNP was used for the AMPPNP state. The image acquisition and data analysis were done as in the TIRF motility assay.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using GraphPad Prism 7.0 software (GraphPad Software Inc, San Diego, CA). All data are presented as the mean ± SEM of at least three independent experiments. Statistical significance was determined using one-way analysis of variance (ANOVA) followed by Tukey’s test if more than two groups were analyzed. Two-tailed test and Student’s t-test were used to compare two groups. p<0.05 was considered significant (*p<0.05; #p<0.01, if not specified otherwise).

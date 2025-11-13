@@ -19,7 +19,7 @@
 
 ## Abstract
 
-The chloroplast proteome contains thousands of different proteins that are encoded by the nuclear genome. These proteins are imported into the chloroplast via the action of the TOC translocase and associated downstream systems. Our recent work has revealed that the stability of the TOC complex is dynamically regulated by the ubiquitin-dependent chloroplast-associated protein degradation pathway. Here, we demonstrate that the TOC complex is also regulated by the small ubiquitin-like modifier (SUMO) system. Arabidopsis mutants representing almost the entire SUMO conjugation pathway can partially suppress the phenotype of ppi1 , a pale-yellow mutant lacking the Toc33 protein. This suppression is linked to increased abundance of TOC proteins and improvements in chloroplast development. Moreover, data from molecular and biochemical experiments support a model in which the SUMO system directly regulates TOC protein stability. Thus, we have identified a regulatory link between the SUMO system and the chloroplast protein import machinery.
+The chloroplast proteome contains thousands of different proteins that are encoded by the nuclear genome. These proteins are imported into the chloroplast via the action of the TOC translocase and associated downstream systems. Our recent work has revealed that the stability of the TOC complex is dynamically regulated by the ubiquitin-dependent chloroplast-associated protein degradation pathway. Here, we demonstrate that the TOC complex is also regulated by the small ubiquitin-like modifier (SUMO) system. Arabidopsis mutants representing almost the entire SUMO conjugation pathway can partially suppress the phenotype of ppi1, a pale-yellow mutant lacking the Toc33 protein. This suppression is linked to increased abundance of TOC proteins and improvements in chloroplast development. Moreover, data from molecular and biochemical experiments support a model in which the SUMO system directly regulates TOC protein stability. Thus, we have identified a regulatory link between the SUMO system and the chloroplast protein import machinery.
 
 ## Introduction
 
@@ -37,25 +37,41 @@ To explore the relationship between the chloroplast protein import and SUMO syst
 
 ## Results
 
-## The E2 SUMO conjugating enzyme mutant sce1-4 and the E3 SUMO ligase mutants siz1-4 and siz1-5 partially suppress the phenotype of the Toc33 mutant ppi1
+### The E2 SUMO conjugating enzyme mutant sce1-4 and the E3 SUMO ligase mutants siz1-4 and siz1-5 partially suppress the phenotype of the Toc33 mutant ppi1
 
 Two key components of the CHLORAD pathway, SP1 and SP2, were identified in a forward genetic screen for suppressors of ppi1, an Arabidopsis Toc33 null mutant (Ling et al., 2012; Ling et al., 2019). Both sp1 and sp2 mutants can partially suppress the ppi1 phenotype with respect to chlorophyll accumulation, chloroplast development, and TOC protein abundance. To investigate whether the TOC complex is targeted by the SUMO system, we obtained several Arabidopsis SUMO system mutants, crossed them with ppi1, and carefully examined the phenotypes of the resulting double mutants. This reverse genetic approach was possible because the basic architecture of the Arabidopsis SUMO system is remarkably simple. In the SUMO pathway, the ubiquitin-like SUMO modifier protein is conjugated to substrates by the coordinated action of E1 activating enzymes, E2 conjugating enzymes, and E3 SUMO ligases. Although thousands of proteins are SUMOylated in Arabidopsis, there is just one known E1 SUMO activating enzyme, one known E2 SUMO conjugating enzyme, and only two known E3 SUMO ligases of canonical function (Saracco et al., 2007; Ishida et al., 2009).
 
 First, we analyzed sce1-4, a weak mutant allele of the sole E2 SUMO conjugating enzyme gene in Arabidopsis, which is an essential gene (Saracco et al., 2007). The sce1-4 mutant shows a moderate reduction in the expression of SCE1 and in global levels of SUMOylation, but it displays no obvious visible phenotypic defects under steady-state conditions (Saracco et al., 2007). The ppi1 sce1-4 double mutant was phenotypically characterized, and, intriguingly, it appeared greener than the ppi1 single mutant (Figure 1A, Figure 1—figure supplement 1A). This was linked to a moderate increase in leaf chlorophyll concentration (Figure 1B, Figure 1—figure supplement 1B). Next, we asked whether the phenotypic suppression observed in ppi1 sce1-4 was linked to changes in the development of chloroplasts. The chloroplasts of ppi1 sce1-4 were visualized via transmission electron microscopy. Interestingly, the chloroplasts of the ppi1 sce1-4 double mutant appeared larger and better developed than those of the ppi1 control (Figure 1C). The transmission electron micrographs were quantitatively analyzed, and the ppi1 sce1-4 chloroplasts were indeed found to be significantly larger than those of ppi1 (Figure 1D), with larger, more interconnected thylakoidal granal stacks (Figure 1E and F).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60960/elife-60960-fig1-v2.jpg)
+
+**Figure 1.:** (A) The ppi1 sce1-4 double mutant appeared greener than ppi1 after approximately 5 weeks of growth on soil. (B) The ppi1 sce1-4 double mutant showed enhanced accumulation of chlorophyll relative to ppi1 after approximately 5 weeks of growth on soil. Measurements were taken from the plants shown in (A) on the day of photography, as well as additional similar plants. There were significant differences between the ppi1 and ppi1 sce1-4 plants (two-tailed t-test, unpaired samples, T = 6.15, p=0.000049). (C) Transmission electron microscopy revealed improved chloroplast development in mature rosette leaf mesophyll tissue of ppi1 sce1-4 plants relative to ppi1. Plants that had been grown on soil for approximately 4 weeks were analyzed, and representative images are shown. Scale bar = 2 µm. (D) Chloroplast plan area was elevated in ppi1 sce1-4 relative to ppi1. The transmission electron microscopy dataset was quantified. There were significant differences between the ppi1 and ppi1 sce1-4 plants (two-tailed t-test, unpaired samples, T = 4.65, p=0.009674). (E, F) Thylakoid membrane development was increased in ppi1 sce1-4 relative to ppi1. The number of stacked thylakoidal lamellae per granum (E), and the number of stromal thylakoidal lamellae emanating from each granum (granal interconnections) (F), was analyzed using the transmission electron microscopy dataset. There were significant differences between the ppi1 and ppi1 sce1-4 plants (two-tailed t-test, unpaired samples: T = 5.53, p=0.005221 [E]; T = 3.38, p=0.0277 [F]). (G) The ppi1 siz1-4 and ppi1 siz1-5 double mutants appeared greener than ppi1 after different periods of growth on soil. The plants were photographed after 3 weeks of growth (right panel) and then again after 5 weeks of growth (left panel). (H) The ppi1 siz1-4 double mutant showed enhanced accumulation of chlorophyll relative to ppi1 after approximately 5 weeks of growth on soil. Measurements were taken from the plants shown in (G) on the day of photography, as well as additional similar plants. There were significant differences between the ppi1 and ppi1 siz1-4 plants (two-tailed t-test, unpaired samples, T = 11.01, p<0.00001). (I) TOC protein accumulation was improved in ppi1 siz1-4 and ppi1 siz1-5 relative to ppi1. Analysis of the levels of Toc75 and Toc159 in ppi1 siz1-4, ppi1 siz1-5, and relevant control plants was conducted by immunoblotting. Protein samples were taken from whole seedlings that had been grown on soil for approximately 2 weeks (the plants shown in Figure 1—figure supplement 1C on the day of photography). Tic110, a TIC-associated protein, was included as a compartment-specific loading control (Inaba et al., 2005). Migration positions of standards are displayed to the left of the gel images, and sizes are indicated in kDa. Unprocessed membrane images are displayed in Source data 1. (J, K) Toc159 and Toc75 protein accumulation was improved in ppi1 siz1-4 and ppi1 siz1-5 relative to ppi1. Specific bands in (I) and in Source data 1 were quantified. There were significant differences between the ppi1 and ppi1 siz1-4 samples (one-tailed t-test, unpaired samples: T = 2.26, p=0.032316 [J, Toc159]; T = 2.93, p=0.021334 [K, Toc75]) and between the ppi1 and ppi1 siz1-5 samples (one-tailed t-test, unpaired samples: T = 2.76, p=0.01639 [J, Toc159]; T = 3.36, p=0.014118 [K, Toc75]). In all bar charts, error bars indicate standard deviation from the mean, and open red circles indicate individual data points. The numbers above the graphs indicate the number of biological replicates per sample. Statistical significance is indicated as follows: *p<0.05; **p<0.01; ****p<0.0001; *****p<0.00001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60960/elife-60960-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The ppi1 sce1-4 double mutant appeared greener than ppi1 after approximately 3 weeks of growth on soil, while the single sce1-4 mutant appeared no greener than the wild-type control. (B) The ppi1 sce1-4 double mutant showed enhanced accumulation of chlorophyll relative to ppi1 after approximately 3 weeks of growth on soil (T = 8.19, p<0.0001), while the single sce1-4 mutant displayed no enhanced accumulation of chlorophyll relative to the wild-type control. Measurements were taken from the plants shown in (A) on the day of photography, as well as additional similar plants. (C) The ppi1 siz1-4 and ppi1 siz1-5 double mutants appeared greener than ppi1 after approximately 2 weeks of growth on soil, while the single siz1-4 and siz1-5 mutants appeared no greener than the wild-type control. (D) The ppi1 siz1-4 and ppi1 siz1-5 double mutants showed enhanced accumulation of chlorophyll relative to ppi1 after approximately 2 weeks of growth on soil (T = 7.16, p<0.0001 and T = 8.26, p<0.0001, respectively), while the single siz1-4 and siz1-5 mutants displayed no enhanced accumulation of chlorophyll relative to the wild-type control. Measurements were taken from the plants shown in (C) on the day of photography, as well as additional similar plants. In all bar charts, error bars indicate standard deviation from the mean, and open red circles indicate individual data points. The numbers above the graphs indicate the number of biological replicates per sample. Statistical significance is indicated as follows: *****p<0.00001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60960/elife-60960-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic representation of the SIZ1 (At5g60410) gene, annotated with the positions of the siz1 T-DNA insertions. The siz1-4 and siz1-5 insertion sites were verified in this study by DNA sequencing. The black boxes indicate exons, while the interconnecting black lines represent introns. The white boxes indicate untranslated regions. (B) Analysis of SIZ1 mRNA expression in siz1-4 and siz1-5. RNA samples were taken from 2-week-old seedlings and used as a template for cDNA synthesis. Primers specific to SIZ1 and the reference gene eIF4E1 were used in two parallel RT-PCR experiments. gDNA: genomic DNA. Migration positions of standards are displayed to the right of the gel images, and sizes are indicated in base pairs.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/60960/elife-60960-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** 14-day-old seedlings of the indicated genotypes were subjected to heat shock (42°C for 1 hr, followed by a 1 hr recovery period at 22°C). Protein samples were taken from whole seedlings and analyzed by immunoblotting. The siz1-4 and siz1-5 mutants displayed a moderate reduction of global SUMOylation, and this reduction was similar in magnitude to the reduction observed in the previously characterized siz1-2 and siz1-3 mutants. The unprocessed membrane images are displayed in Source data 1.
+
 SUMO conjugation is usually dependent on the action of E3 SUMO ligases. In Arabidopsis, the best characterized E3 SUMO ligase is SIZ1 (Kurepa et al., 2003; Miura et al., 2005; Saracco et al., 2007). SIZ1 is not essential, but null mutants display severely dwarfed phenotypes. In order to include SIZ1 in our genetic analysis, we obtained two new T-DNA insertion alleles and named them siz1-4 and siz1-5. While both mutants were visibly similar to the published mutants (Miura et al., 2005; Liu et al., 2019), siz1-4 showed a milder phenotype with only moderate growth retardation when grown to maturity. We mapped the integration sites of the T-DNA insertions in these two mutants (Figure 1—figure supplement 2A) and showed that both display a strong reduction in SIZ1 transcript by RT-PCR analysis (Figure 1—figure supplement 2B). In addition, both mutants displayed defects in global SUMOylation in response to heat shock, similar to the published alleles (Figure 1—figure supplement 3). The two new siz1 mutants were crossed with ppi1 and the resulting double mutants were phenotypically characterized. Both the ppi1 siz1-4 and the ppi1 siz1-5 double mutants appeared greener than the ppi1 control (Figure 1G, Figure 1—figure supplement 1C). In addition, the double mutants showed dramatic increases in leaf chlorophyll concentration relative to ppi1 (Figure 1H, Figure 1—figure supplement 1D). Next, we asked whether the phenotypic suppression observed in ppi1 siz1-4 and ppi1 siz1-5 was linked to changes in the abundance of TOC proteins. To this end, protein samples were taken from the two double mutants and relevant control plants and resolved via immunoblotting. Both double mutants displayed clear increases in the abundance of Toc159 and Toc75, two core components of the TOC complex, relative to ppi1 (Figure 1I, J and K).
 
-## The suppression effects mediated by the SUMO system mutants are specific
+### The suppression effects mediated by the SUMO system mutants are specific
 
 As discussed in the previous section, the SUMO system is encoded by a remarkably small number of genes in Arabidopsis. As a consequence, SUMO system mutants have highly pleiotropic molecular and physiological phenotypes. We therefore asked whether the partial suppression of ppi1 by SUMO system mutants was specific to the ppi1 background. We crossed sce1-4 with tic40-4 and hsp93-V-1, two TIC-complex-associated mutants. These mutants are chlorotic, due to defects in protein import across the chloroplast inner membrane, and in this respect are highly similar to ppi1 (Kovacheva et al., 2005). Significantly, the resulting double mutants, tic40-4 sce1-4 and hsp93-V-I sce1-4, were indistinguishable from tic40-4 and hsp93-V-1, their respective single mutant controls (Figure 2A and C). Moreover, the double mutants did not display changes in leaf chlorophyll accumulation relative to the single mutant controls (Figure 2B and D). We therefore concluded that the suppression effects observed in ppi1 sce1-4 plants were background-specific and associated with the TOC complex.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/60960/elife-60960-fig2-v2.jpg)
 
-**Figure 2.:** sce1-4 and siz1-4 mutations.(A) The tic40-4 sce1-4 double mutant did not appear greener than tic40-4 after approximately 4 weeks of growth on soil. (B) The tic40-4 sce1-4 double mutant did not show an enhanced accumulation of chlorophyll relative to tic40-4 after approximately 4 weeks of growth on soil. Measurements were taken from the plants shown in (A) on the day of photography, as well as additional similar plants. There were no significant differences between the tic40-4 and tic40-4 sce1-4 plants (two-tailed t-test, unpaired samples, T = 1.25, p=0.280106). (C) The hsp93-V-1 sce1-4 double mutant did not appear greener than hsp93-V-1 after approximately 4 weeks of growth on soil. (D) The hsp93-V-1 sce1-4 double mutant did not show an enhanced accumulation of chlorophyll relative to hsp93-V-1 after approximately 4 weeks of growth on soil. Measurements were taken from the plants shown in (C) on the day of photography, as well as additional similar plants. There were no significant differences between the hsp93-V-1 and hsp93-V-1 sce1-4 plants (two-tailed t-test, unpaired samples, T = 0.18, p=0.860702). (E) The sce1-4 single mutant did not appear greener than wild-type plants after approximately 4 weeks of growth on soil. (F) The sce1-4 single mutant did not show an enhanced accumulation of chlorophyll relative to wild-type plants after approximately 4 weeks of growth on soil. Measurements were taken from the plants shown in (E) on the day of photography, as well as additional similar plants. There were no significant differences between the sce1-4 and wild-type plants (two-tailed t-test, unpaired samples, T = 0.38, p=0.708484). (G) The siz1-4 single mutant did not appear greener than wild-type plants after approximately 5 weeks of growth on soil. (H) The siz1-4 single mutant did not show an enhanced accumulation of chlorophyll relative to wild-type plants after approximately 5 weeks of growth on soil. Measurements were taken from the plants shown in (G) on the day of photography, as well as from additional similar plants. There were no significant differences between the siz1-4 and wild-type plants (T = 0.96, p=0.370055). In all bar charts, error bars indicate standard deviation from the mean, and open red circles indicate individual data points. The numbers above the graphs indicate the number of biological replicates per sample. Statistical significance is indicated as follows: ns: not significant.
+**Figure 2.:** (A) The tic40-4 sce1-4 double mutant did not appear greener than tic40-4 after approximately 4 weeks of growth on soil. (B) The tic40-4 sce1-4 double mutant did not show an enhanced accumulation of chlorophyll relative to tic40-4 after approximately 4 weeks of growth on soil. Measurements were taken from the plants shown in (A) on the day of photography, as well as additional similar plants. There were no significant differences between the tic40-4 and tic40-4 sce1-4 plants (two-tailed t-test, unpaired samples, T = 1.25, p=0.280106). (C) The hsp93-V-1 sce1-4 double mutant did not appear greener than hsp93-V-1 after approximately 4 weeks of growth on soil. (D) The hsp93-V-1 sce1-4 double mutant did not show an enhanced accumulation of chlorophyll relative to hsp93-V-1 after approximately 4 weeks of growth on soil. Measurements were taken from the plants shown in (C) on the day of photography, as well as additional similar plants. There were no significant differences between the hsp93-V-1 and hsp93-V-1 sce1-4 plants (two-tailed t-test, unpaired samples, T = 0.18, p=0.860702). (E) The sce1-4 single mutant did not appear greener than wild-type plants after approximately 4 weeks of growth on soil. (F) The sce1-4 single mutant did not show an enhanced accumulation of chlorophyll relative to wild-type plants after approximately 4 weeks of growth on soil. Measurements were taken from the plants shown in (E) on the day of photography, as well as additional similar plants. There were no significant differences between the sce1-4 and wild-type plants (two-tailed t-test, unpaired samples, T = 0.38, p=0.708484). (G) The siz1-4 single mutant did not appear greener than wild-type plants after approximately 5 weeks of growth on soil. (H) The siz1-4 single mutant did not show an enhanced accumulation of chlorophyll relative to wild-type plants after approximately 5 weeks of growth on soil. Measurements were taken from the plants shown in (G) on the day of photography, as well as from additional similar plants. There were no significant differences between the siz1-4 and wild-type plants (T = 0.96, p=0.370055). In all bar charts, error bars indicate standard deviation from the mean, and open red circles indicate individual data points. The numbers above the graphs indicate the number of biological replicates per sample. Statistical significance is indicated as follows: ns: not significant.
 
 Next, we asked whether the sce1-4 and siz1-4 single mutants display an increase in chlorophyll concentration even in the wild-type background. However, neither mutant appeared greener than wild-type plants (Figure 2E and G, Figure 1—figure supplement 1A and C) or displayed an increase in leaf chlorophyll concentration (Figure 2F and H, Figure 1—figure supplement 1B and D). We therefore concluded that the suppression effects mediated by the SUMO mutants were synthetic phenotypes specific to the ppi1 background.
 
-## BiFC analysis reveals that SCE1 physically interacts with TOC proteins
+### BiFC analysis reveals that SCE1 physically interacts with TOC proteins
 
 Our reverse genetic experiments revealed a genetic interaction between the E2 SUMO conjugating enzyme, SCE1, and the protein import machinery at the chloroplast outer membrane. To determine whether SCE1 directly interacts with the TOC complex, we carried out BiFC experiments in Arabidopsis protoplasts. The SCE1 coding sequence was cloned into a vector that C-terminally appends the C-terminal half of YFP (cYFP) to its insert. This construct was co-expressed with various other constructs encoding TOC proteins bearing the complementary, N-terminal moiety of the YFP protein (nYFP), appended N-terminally; or with a negative control construct encoding ΔOEP7 bearing the nYFP moiety appended C-terminally. In this system, protein-protein interactions are inferred via the detection of a YFP signal, caused by the nYFP and cYFP fragments coming together to reconstitute a functional YFP protein.
 
@@ -65,21 +81,53 @@ Strikingly, SCE1-cYFP was found to physically associate with all tested TOC prot
 
 **Figure 3.:** Bimolecular fluorescence complementation (BiFC) analysis of SCE1 protein-protein interactions was performed by imaging Arabidopsis protoplasts co-expressing proteins fused to complementary N-terminal (nYFP) and C-terminal (cYFP) fragments of the YFP protein, as indicated. Chlorophyll autofluorescence images were used to orientate the YFP signals in relation to the chloroplasts. SCE1 physically associated with all tested TOC proteins. The images shown are representative confocal micrographs indicating associations between SCE1 and Toc159, Toc132, Toc34, and Toc33. In contrast, SCE1 did not physically associate with ΔOEP7 (comprising the transmembrane domain of OEP7, which is sufficient to direct targeting to the chloroplast outer envelope), which served as a negative control. Scale bars = 10 µm.
 
-## Manipulating the expression of three SUMO isoforms alters the phenotypic severity of ppi1
+### Manipulating the expression of three SUMO isoforms alters the phenotypic severity of ppi1
 
 To further explore the genetic interaction between the chloroplast protein import and SUMO systems, we crossed ppi1 with several SUMO protein mutants. There are three major SUMO isoforms in Arabidopsis – SUMO1, SUMO2, and SUMO3. The SUMO1 and SUMO2 genes are expressed at a relatively high level throughout the plant and are largely functionally redundant (Saracco et al., 2007; van den Burg et al., 2010). In addition, they are highly similar to each other in terms of amino acid sequence (Saracco et al., 2007). In contrast, at steady state, SUMO3 is expressed at a relatively low level throughout the plant, while the SUMO3 amino acid sequence is significantly divergent with respect to the other two SUMO isoforms (van den Burg et al., 2010).
 
 First, we analyzed SUMO1 and SUMO2. We obtained sum1-1 and sum2-1, two previously characterized null mutants (Saracco et al., 2007), and crossed them with ppi1. To account for the functional redundancy between these two genes, we also sought a ppi1 sum1-1 sum2-1 triple mutant. However, as SUMO1 and SUMO2 are collectively essential, ppi1 sum1-1 sum2-1 plants that were homozygous with respect to ppi1 and sum2-1, but heterozygous with respect to the sum1-1 mutation, were selected from a segregating population. The double and triple mutants were phenotypically characterized, and all three appeared larger and greener than the ppi1 control plants (Figure 4A). Moreover, the double and triple mutants showed corresponding increases in leaf chlorophyll concentration, with the triple mutant showing a larger increase than the double mutants (Figure 4B). These were synthetic effects as the sum1-1, sum2-1, and sum1-1 sum2-1 single and double mutants did not appear greener than wild-type plants or show increases in chlorophyll accumulation (Figure 4—figure supplement 1). We therefore concluded that the sum1-1 and sum2-1 mutants can additively suppress the phenotype of ppi1.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/60960/elife-60960-fig4-v2.jpg)
+
+**Figure 4.:** (A) The ppi1 sum1-1, ppi1 sum2-1, and ppi1 sum1-1† sum2-1 double and triple mutants appeared greener than ppi1 after approximately 4 weeks of growth on soil. The ‘†’ symbol indicates that the triple mutant was heterozygous with respect to the sum1-1 mutation. (B) The ppi1 sum1-1, ppi1 sum2-1, and ppi1 sum1-1† sum2-1 double and triple mutants showed enhanced accumulation of chlorophyll relative to ppi1 after approximately 4 weeks of growth on soil. Measurements were taken from the plants shown in (A) on the day of photography, as well as additional similar plants. There were significant differences between the samples as measured via a one-way ANOVA (F = 26.21, p=6.65 × 10–14). A post-hoc Tukey HSD test indicated that there was a significant difference between the ppi1 and ppi1 sum1-1 samples (p<0.00001). There were also significant differences between the ppi1 and ppi1 sum2-1 samples (p<0.00001), and between the ppi1 and ppi1 sum1-1† sum2-1 samples (p<0.00001). (C) The ppi1 SUMO1 overexpression (OX) lines appeared smaller and paler than ppi1 after approximately 4 weeks of growth on soil. (D) The ppi1 SUMO1 OX lines showed reduced accumulation of chlorophyll relative to ppi1 after approximately 4 weeks of growth on soil. Measurements were taken from the plants shown in (C) on the day of photography, as well as additional similar plants. There were significant differences between the ppi1 and ppi1 SUMO1 OX #1 plants (two-tailed t-test, unpaired samples, T = 2.27, p=0.026832), and between the ppi1 and ppi1 SUMO1 OX #2 plants (two-tailed t-test, unpaired samples, T = 2.49, p=0.01634). (E) The ppi1 sum3-1 double mutant did not appear greener than ppi1 after approximately 4 weeks of growth on soil. (F) The ppi1 sum3-1 double mutant did not show an enhanced accumulation of chlorophyll relative to ppi1 after approximately 4 weeks of growth on soil. Measurements were taken from the plants shown in (E) on the day of photography, as well as additional similar plants. There were no significant differences between the ppi1 and ppi1 sum3-1 plants (two-tailed t-test, unpaired samples, T = 0.54, p=0.59407). (G) The ppi1 SUMO3 overexpression line appeared smaller and paler than ppi1 after approximately 3 weeks of growth on soil. (H) The ppi1 SUMO3 overexpression line showed reduced accumulation of chlorophyll relative to ppi1 after approximately 3 weeks of growth on soil. Measurements were taken from the plants shown in (G) on the day of photography, as well as additional similar plants. There were significant differences between the ppi1 SUMO3 OX plants and ppi1 (two-tailed t-test, unpaired samples, T = 2.99, p=0.008688). In all bar charts, error bars indicate standard deviation from the mean, and open red circles indicate individual data points. The numbers above the graphs indicate the number of biological replicates per sample. Statistical significance is indicated as follows: ns: not significant; *p<0.05; **p<0.01; ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60960/elife-60960-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The sum1-1, sum2-1, and sum1-1† sum2-1 mutants did not appear greener than wild-type plants after approximately 4 weeks of growth on soil. (B) The sum1-1, sum2-1, and sum1-1† sum2-1 mutants did not show enhanced chlorophyll accumulation relative to wild-type plants after approximately 4 weeks of growth on soil. The ‘†’ symbol indicates that the double mutant was heterozygous with respect to the sum1-1 mutation. Error bars indicate standard deviation from the mean, and open red circles indicate individual data points. The numbers above the graph indicate the number of biological replicates per sample.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60960/elife-60960-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Total RNA was extracted from the rosette tissue of plants that had been grown on soil for approximately 4 weeks. The expression of SUMO1 (A) or SUMO3 (B), and of the control gene, eIF4E1, was analyzed by semi-quantitative RT-PCR. A limited number of amplification cycles (n = 26) were employed to prevent saturation. Migration positions of standards are displayed to the left of the gel images, and sizes are indicated in base pairs.
+
 To complement the preceding experiment, we generated transgenic plants overexpressing SUMO1 in the ppi1 background. The SUMO1 coding sequence was cloned into a vector carrying a strong, constitutive promotor (cauliflower mosaic virus 35S) upstream of the cloning site. The resulting construct was stably introduced into the ppi1 background via Agrobacterium-mediated transformation. Two lines carrying a single, homozygous transgene insert were identified and taken forward for analysis. The overexpression of SUMO1 was confirmed in both lines by RT-PCR (Figure 4—figure supplement 2A). Significantly, both lines displayed an accentuation of the ppi1 phenotype: the plants were significantly smaller and paler than the ppi1 control plants (Figure 4C), and showed decreases in leaf chlorophyll concentration (Figure 4D).
 
 Next, we turned our attention to SUMO3. We obtained sum3-1, a previously characterized null mutant (van den Burg et al., 2010), and crossed it with ppi1. The resulting double mutant was phenotypically characterized, but it did not appear obviously different from the ppi1 control (Figure 4E). Correspondingly, it did not display any clear increase in leaf chlorophyll concentration relative to ppi1 (Figure 4F). To complement this experiment, we generated transgenic plants overexpressing SUMO3 in the ppi1 background using the approach described above, and a line carrying a single, homozygous insert was identified and taken forward for analysis. The overexpression of SUMO3 was confirmed by RT-PCR (Figure 4—figure supplement 2B). Interestingly, the transgenic plants showed a striking increase in the severity of the ppi1 phenotype: the plants were severely dwarfed and paler than the ppi1 control (Figure 4G), and displayed a significant decrease in leaf chlorophyll accumulation (Figure 4H). These findings are particularly noteworthy when considered alongside a previous report, which explored the consequences of overexpressing SUMO3 in wild-type plants (van den Burg et al., 2010). In that study, SUMO3 overexpression was not found to alter the appearance of the transgenic plants, which implies a degree of specificity in the phenotypic accentuation observed here.
 
-## Biochemical analysis supports SUMO action on TOC proteins in vivo
+### Biochemical analysis supports SUMO action on TOC proteins in vivo
 
 The genetic and molecular experiments described thus far strongly suggested that TOC proteins are SUMOylated. However, to our knowledge, conclusive evidence that chloroplast-resident proteins are SUMOylated is currently lacking. To investigate whether chloroplast proteins may be SUMOylated, we isolated chloroplasts from seedlings by cell fractionation and analyzed them by anti-SUMO immunoblotting. For this analysis, we employed a proven commercial antibody against SUMO1, which is one of the most abundant SUMO isoforms in Arabidopsis making it more tractable for analysis, and which furthermore is known to accumulate in response to heat and other stresses (Kurepa et al., 2003; van den Burg et al., 2010). To enhance detection of SUMOylated proteins in our samples, we subjected some of the seedlings to heat shock before chloroplast isolation and/or treatment with 10 mM N-ethylmaleimide (NEM) during chloroplast isolation. NEM is a potent inhibitor of SUMO-specific proteases (Hilgarth and Sarge, 2005). Importantly, we detected protein SUMOylation in the isolated chloroplast samples, and this SUMOylation was increased by NEM treatment (Figure 5—figure supplement 1).
 
 Next, we carried out a series of biochemical experiments to investigate whether TOC proteins may be SUMOylated. In the first of these, the SCE1 coding sequence was cloned into a vector that appends a C-terminal YFP tag (Karimi et al., 2002). We confirmed that the resulting SCE1-YFP construct delivers good expression and the expected nucleocytoplasmic fluorescence pattern when transiently expressed in protoplasts (Figure 5—figure supplement 2A). Then, we transfected a large volume of protoplasts with the SCE1-YFP construct (or with a YFP-HA negative control construct) and performed IP using YFP-Trap magnetic beads. The samples were analyzed by immunoblotting. The YFP-HA and SCE1-YFP fusion proteins both showed robust expression and strong recovery in the IP elutions (Figure 5A). Remarkably, the SCE1-YFP fusion protein was found to be associated with native Toc159 and Toc132, but not with the negative control proteins Tic110 or Tic40 (Figure 5A; Kovacheva et al., 2005; Inaba et al., 2005 ). Conversely, YFP-HA did not associate with any of the tested proteins. Given that SCE1 is a promiscuous enzyme that associates with thousands of proteins (Elrouby and Coupland, 2010), and that these interactions are likely to be transient, it is remarkable that TOC co-elution was detectable in this experiment.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60960/elife-60960-fig5-v2.jpg)
+
+**Figure 5.:** (A) SCE1 physically associated with native TOC proteins. Arabidopsis protoplasts expressing YFP-HA (left panel) or SCE1-YFP (right panel) were solubilized and subjected to IP analysis. The YFP-HA construct served as a negative control. In both cases, three samples were analyzed: the ‘Total lysate’ sample (total protein extract from solubilized protoplasts); the ‘Flow through’ sample (the total protein sample after incubation with anti-YFP beads); and the ‘IP’ sample (the eluted fraction of the total protein sample that bound to the anti-YFP beads). The samples were analyzed by immunoblotting, revealing that SCE1-YFP, but not the YFP-HA control, was associated with native Toc159 and Toc132 (indicated by the arrows). Neither SCE1-YFP nor YFP-HA was associated with native Tic110 or Tic40, which were included as negative control proteins. (B) All three SUMO isoforms physically associated with native Toc159. Protoplasts expressing YFP-HA, YFP-SUMO1, YFP-SUMO2, or YFP-SUMO3 were solubilized and subjected to IP analysis as in (A). In all four cases, two samples (the ‘Total lysate’ and the ‘IP’ samples) were analyzed by immunoblotting. Toc159 was resolved on an 8% acrylamide gel for 4 hr to maximize the resolution of high molecular weight bands. All three YFP-SUMO proteins were found to associate with native Toc159; however, YFP-SUMO3 immunoprecipitated Toc159 with the greatest efficiency. None of the four YFP fusion proteins associated with native Tic40, which served as a negative control protein. (C) YFP-SUMO3 physically associated with Toc33-HA and related high molecular weight species. Protoplasts co-expressing YFP-SUMO3 or YFP-HA together with Toc33-HA were solubilized and subjected to IP analysis as in (A). In both cases, two samples (the ‘Total lysate’ and ‘IP’ samples) were analyzed by immunoblotting. The results showed that YFP-SUMO3, but not YFP-HA, was associated with Toc33-HA (indicated by the lower arrow). Bands corresponding to the molecular weight of Toc33-HA bearing one, two, or several YFP-SUMO3 motifs were detected on the membrane (indicated by the upper arrows). The predicted molecular weight of YFP-SUMO3 is approximately 38.9 kDa. Neither YFP-SUMO3 nor YFP-HA was associated with Tic40, which served as a negative control protein. The asterisk indicates a nonspecific band. Short (SE) and long (LE) exposures are shown. Migration positions of standards are displayed to the left of the gel images, and sizes are indicated in kDa. The unprocessed membrane images are displayed in Source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60960/elife-60960-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Anti-SUMO1 immunoblot of protein samples taken from whole seedlings (left-hand side) and isolated chloroplasts (right-hand side). Where indicated, seedlings were exposed to heat shock (42°C for 1 hr) and/or incubated with 10 mM N-ethylmaleimide (NEM) to aid the detection of SUMOylated proteins. The anti-SUMO1 antibody shows significant cross-reactivity with SUMO2. Migration positions of standards are displayed to the left of the gel images, and sizes are indicated in kDa.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/60960/elife-60960-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The expression of the SCE1-YFP construct (A), and of the three YFP-SUMO constructs (B), was analyzed and confirmed by imaging transfected Arabidopsis protoplasts. Chlorophyll autofluorescence images were employed to orientate the YFP signals in relation to the chloroplasts. Representative confocal micrographs show a typical protoplast in each case. Scale bars = 10 µm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/60960/elife-60960-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) The immunoprecipitation experiment shown in Figure 5B was repeated. Tic110 was included as an additional negative control. The samples were run on a 10% acrylamide gel for 1 hr as opposed to an 8% acrylamide gel for 4 hr (as in Figure 5B). Migration positions of standards are displayed to the left of the gel images, and sizes are indicated in kDa. The unprocessed membrane images are displayed in Source data 1. (B) The Toc159 bands in the eluted fractions in the two experiments, in (A) and in Figure 5B, were quantified. Error bars indicate standard deviation from the mean, and open red circles indicate individual data points.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/60960/elife-60960-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** The membrane shown is the same as the one presented in Figure 5B (YFP panel). In this case, the membrane was visualized using a long exposure to aid the detection of weakly abundant protein bands. As well as the YFP-SUMO monomers, additional high molecular bands and smears were seen in the immunoprecipitation (IP) samples, indicating the capture of large numbers of SUMOylated proteins. This shows that all three YFP-SUMO probes could be successfully conjugated, as expected (Ayaydin and Dasso, 2004). The positions of the YFP-SUMO monomers (lower pair of arrows), and of the various SUMO adducts (vertical bar) potentially including di-SUMO (upper pair of arrows), are indicated. Note that YFP-SUMO3 migrated more slowly than the other two fusions, as expected. The asterisks indicate nonspecific bands. Migration positions of standards are displayed to the left of the gel images, and sizes are indicated in kDa.
 
 In the second experiment, we cloned the SUMO1, SUMO2, and SUMO3 coding sequences into a vector that appends an N-terminal YFP tag to its insert (Karimi et al., 2002), a modification that previous studies have shown to be tolerated (Ayaydin and Dasso, 2004). All three constructs expressed well and showed the expected nucleocytoplasmic fluorescence pattern when transiently expressed in protoplasts (Figure 5—figure supplement 2B). The three constructs were expressed in parallel in protoplasts alongside the YFP-HA negative control construct. As in the previous experiment, the protoplasts were subjected to YFP-Trap IP, and the samples were subsequently analyzed by immunoblotting. Remarkably, all three YFP-SUMO proteins were found to physically associate with Toc159, although YFP-SUMO3 clearly bound Toc159 with the greatest affinity (Figure 5B, Figure 5—figure supplement 3). Moreover, inspection of an extended exposure of the anti-YFP blot revealed a number of higher molecular weight bands that we interpret to be SUMO adducts and indicative of the functionality of the fusions (Figure 5—figure supplement 4). In contrast with the SUMO fusions, the YFP-HA negative control did not associate with Toc159, and none of the four YFP fusion proteins physically associated with Tic40, a negative control protein (Figure 5B).
 
@@ -88,6 +136,290 @@ The IP experiment described above identified SUMO3 as having the highest affinit
 ## Discussion
 
 This work has revealed a genetic and molecular link between the SUMO system and the chloroplast protein import apparatus. The genetic experiments demonstrated that SUMO system mutations can suppress the phenotype of the Toc33 mutant, ppi1, while the molecular and biochemical experiments indicated that TOC proteins associate with key SUMO system proteins and are likely SUMOylated. Visible suppression effects observed in the ppi1 / SUMO system double mutants were linked to improvements in chloroplast development and enhanced accumulation of key TOC proteins. Thus, our results suggest that SUMOylation acts to destabilize the TOC complex, and that when such SUMOylation is perturbed the TOC proteins are stabilized. We interpret that TOC complexes containing Toc34, Toc75, and Toc159 accumulate at higher levels in ppi1 / SUMO system double mutants, and that this synthetically improves the double mutant phenotypes relative to the ppi1 control. Importantly, each core TOC protein, including all of those analyzed in this study, was predicted with high probability to have one or more SUMOylation sites (Table 1; Zhao et al., 2014; Beauclair et al., 2015).
+
+**Table 1.**
+ Bioinformatic analysis predicts that the core TOC proteins in Arabidopsis contain SUMOylation sites and small ubiquitin-like modifier (SUMO) interaction motifs.The GPS-SUMO algorithm was applied to the amino acid sequences of Toc159, Toc132, Toc120, Toc90, Toc75, Toc33, and Toc34 using the ‘high stringency’ setting, and the results generated are shown in columns 2–4. ‘Consensus’ sites fall within canonical SUMO site motifs: ψ-K-X-E (where ψ indicates a hydrophobic amino acid, and X indicates any amino acid residue). ‘Non-consensus’ sites do not fall within canonical SUMO site motifs; analysis shows that ~40% of SUMOylation may occur at non-consensus sites (Zhao et al., 2014). ‘SUMO interaction’ sites are predicted to mediate the non-covalent interaction between proteins and SUMO peptides. The JASSA algorithm was also applied to the amino acid sequences using the ‘high cutoff’ setting (see column 5). aa denotes amino acids.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein name(identifier and length)</th>
+      <th>Position (aa)</th>
+      <th>p-Value</th>
+      <th>Type</th>
+      <th>Also predicted by JASSA (high stringency)?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>atToc159</td>
+      <td>95</td>
+      <td>0.021</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>(At4g02510)</td>
+      <td>106</td>
+      <td>0.034</td>
+      <td>Consensus</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>1503 aa</td>
+      <td>126</td>
+      <td>0.032</td>
+      <td>Consensus</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>144</td>
+      <td>0.02</td>
+      <td>Consensus</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>151</td>
+      <td>0.02</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>246–250</td>
+      <td>0.005</td>
+      <td>SUMO interaction</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>408–412</td>
+      <td>0.009</td>
+      <td>SUMO interaction</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>486–490</td>
+      <td>0.009</td>
+      <td>SUMO interaction</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>498</td>
+      <td>0.022</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>502</td>
+      <td>0.049</td>
+      <td>Non-consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>539</td>
+      <td>0.026</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1,300</td>
+      <td>0.049</td>
+      <td>Non-consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1,370</td>
+      <td>0.01</td>
+      <td>Consensus</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>atToc132</td>
+      <td>30</td>
+      <td>0.006</td>
+      <td>Consensus</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>(At2g16640)</td>
+      <td>66</td>
+      <td>0.036</td>
+      <td>Consensus</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>1206 aa</td>
+      <td>352</td>
+      <td>0.002</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>895</td>
+      <td>0.005</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1077</td>
+      <td>0.014</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>atToc120</td>
+      <td>52</td>
+      <td>0.008</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>(At3g16620)</td>
+      <td>57</td>
+      <td>0.031</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>1084 aa</td>
+      <td>209</td>
+      <td>0.05</td>
+      <td>Non-consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>777</td>
+      <td>0.006</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>959</td>
+      <td>0.013</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>atToc90</td>
+      <td>191</td>
+      <td>0.027</td>
+      <td>Consensus</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>(At5g20300)</td>
+      <td>481</td>
+      <td>0.017</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>793 aa</td>
+      <td>711</td>
+      <td>0.02</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>786</td>
+      <td>0.042</td>
+      <td>Non-consensus</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>atToc75</td>
+      <td>434</td>
+      <td>0.049</td>
+      <td>Non-consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>(At3g46740)</td>
+      <td>513</td>
+      <td>0.029</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>818 aa</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>atToc33</td>
+      <td>291</td>
+      <td>0.044</td>
+      <td>Non-consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>(At1g02280)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>297 aa</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>atToc34</td>
+      <td>290</td>
+      <td>0.026</td>
+      <td>Consensus</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>(At5g05000)313 aa</td>
+      <td>298</td>
+      <td>0.043</td>
+      <td>Non-consensus</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
 
 The ppi1 suppression effects described here are remarkably similar to those mediated by the sp1 and sp2 mutations (Ling et al., 2012; Ling et al., 2019). Like sp1 and sp2, SUMO system mutations can partially suppress ppi1 with respect to chlorophyll concentration, TOC protein accumulation, and chloroplast development. This similarity suggests that SUMOylation may regulate the activity of the CHLORAD pathway. This is an attractive hypothesis as both SUMOylation and the CHLORAD pathway are activated by various forms of environmental stress (Kurepa et al., 2003; Ling and Jarvis, 2015; Ling et al., 2019). One possibility is that the SUMOylation of TOC proteins promotes their CHLORAD-mediated degradation. Indeed, as already noted, the ability to carry out SUMOylation is negatively correlated with the stability of TOC proteins in the context of the developed plants studied here. However, it should be kept in mind that SUMOylation can both promote and antagonize the effects of ubiquitination in different situations (Desterro et al., 1998; Ahner et al., 2013; Liebelt and Vertegaal, 2016); and so our results do not preclude the possibility that SUMOylation may have different consequences for chloroplast biogenesis in other contexts. The Toc159 receptor is regulated by SP1 when integrated into the outer envelope membrane (Ling et al., 2012; Ling et al., 2019), but by a different E3 ligase when it exists as a cytosolic precursor during the earliest stages of development before germination (Shanmugabalaji et al., 2018). Thus, regulation by SUMOylation might be similarly different in these two distinct developmental contexts.
 
@@ -99,21 +431,534 @@ It is now well established that the regulation of chloroplast protein import has
 
 ## Materials and methods
 
-## Plant material and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>Col-0</td>
+      <td>NASC</td>
+      <td>NASC (RRID:SCR_004576)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ppi1-1 (Col-0)</td>
+      <td>NASC</td>
+      <td>NASC_ID:N2107726</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>sce1-4 (Col-0)</td>
+      <td>NASC</td>
+      <td>NASC_ID:N506164</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>siz1-2 (Col-0)</td>
+      <td>NASC</td>
+      <td>NASC_ID:N6559</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>siz1-3 (Col-0)</td>
+      <td>NASC</td>
+      <td>NASC_ID:N6560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>siz1-4 (Col-0)</td>
+      <td>NASC</td>
+      <td>NASC_ID:N862769</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>siz1-5 (Col-0)</td>
+      <td>NASC</td>
+      <td>NASC_ID:N611280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>sum1-1 (Col-0)</td>
+      <td>NASC</td>
+      <td>NASC_ID:N872916</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>sum2-1 (Col-0)</td>
+      <td>NASC</td>
+      <td>NASC_ID:N629775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>sum3-1 (Col-0)</td>
+      <td>NASC</td>
+      <td>NASC_ID:N623673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ppi1 SUMO1 OX #1Col-0</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ppi1 SUMO1 OX #2Col-0</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>ppi1 SUMO3 OX #1Col-0</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SUMO1(rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab5316</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Toc75-III(rabbit polyclonal)</td>
+      <td>doi:10.1111/j.1365–313 X.2011.04551.x</td>
+      <td>Custom-made</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Toc159(rabbit polyclonal)</td>
+      <td>doi:10.1038/35003214</td>
+      <td>Custom-made</td>
+      <td>WB (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Toc132(rabbit polyclonal)</td>
+      <td>doi:10.1126/science.1225053</td>
+      <td>Custom-made</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Toc33(rabbit polyclonal)</td>
+      <td>doi:10.1111/j.1365–313 X.2011.04551.x</td>
+      <td>Custom-made</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tic110(rabbit polyclonal)</td>
+      <td>doi:10.1111/j.1365–313 X.2010.04242.x</td>
+      <td>Custom-made</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tic40(rabbit polyclonal)</td>
+      <td>doi:10.1111/j.1365–313 X.2011.04551.x</td>
+      <td>Custom-made</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP(rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>SAB4301138</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG HRP(goat polyclonal)</td>
+      <td>Sigma</td>
+      <td>12-348</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG alkaline phosphatase(goat polyclonal)</td>
+      <td>Sigma</td>
+      <td>A3687</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSAT4(A)-nEYFP-N1</td>
+      <td>doi:10.1007/s11103-005-0340-5doi:10.1016/j.jmb.2006.08.017</td>
+      <td></td>
+      <td>Kind gift from the Gelvin lab (Purdue University)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSAT4-cEYFP-C1-B</td>
+      <td>doi:10.1007/s11103-005-0340-5doi:10.1016/j.jmb.2006.08.017</td>
+      <td></td>
+      <td>Kind gift from the Gelvin lab (Purdue University)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSAT4(A)-cEYFP-N1</td>
+      <td>doi:10.1007/s11103-005-0340-5doi:10.1016/j.jmb.2006.08.017</td>
+      <td></td>
+      <td>Kind gift from the Gelvin lab (Purdue University)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDONR201</td>
+      <td>Invitrogen</td>
+      <td>RRID:Addgene#2392</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDONR207</td>
+      <td>Invitrogen</td>
+      <td>RRID:Addgene#2393</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pH2GW7</td>
+      <td>doi:10.1016/s1360-1385 (02)02251–3doi:10.1016/j.tplants.2005.01.008</td>
+      <td></td>
+      <td>VIB-UGent Center for Plant Systems Biology</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p2GWY7</td>
+      <td>doi:10.1016/s1360-1385 (02)02251–3doi: 10.1016/j.tplants.2005.01.008</td>
+      <td></td>
+      <td>VIB-UGent Center for Plant Systems Biology</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p2YGW7</td>
+      <td>doi:10.1016/s1360-1385 (02)02251–3doi:10.1016/j.tplants.2005.01.008</td>
+      <td></td>
+      <td>VIB-UGent Center for Plant Systems Biology</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-ethylmaleimide</td>
+      <td>Merck</td>
+      <td>E3876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GPS-SUMO</td>
+      <td>http://sumosp.biocuckoo.org/online.php</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JASSA</td>
+      <td>http://www.jassa.fr/index.php</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant material and growth conditions
 
 All Arabidopsis thaliana plants used in this work were of the Columbia-0 (Col-0) ecotype. The mutants used in most of the analyses (ppi1, sce1-4, sum1-1, sum2-1, sum3-1, hsp93-V-I, tic40-4) have been described previously (Jarvis et al., 1998; Kovacheva et al., 2005; Saracco et al., 2007; van den Burg et al., 2010). The siz1-4 (SAIL_805_A10) and siz1-5 (SALK_111280) mutants were obtained from the Salk Institute Genomic Analysis Laboratory (SIGnAL) (Alonso et al., 2003) via the Nottingham Arabidopsis Stock Centre (NASC). Each line was verified via PCR genotyping (see Table 2 for primer sequences) and phenotypic analysis (including the double and triple mutants). The positions of the T-DNA insertions were mapped via PCR. The following primer pairs were used to generate diagnostic amplicons from genomic DNA: LB1 and Siz1-Seq-1R (for mapping siz1-4), and LBb1 and Siz1-Seq-3R (for mapping siz1-5) (see Table 2D and E). The amplicons were sequenced and the positions of the T-DNA insertions inferred from the sequence data.
 
+**Table 2.**
+ Primers used during the course of this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">(A)Primers used in restriction cloning procedures</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Primer name</td>
+      <td>Sequence</td>
+      <td>Used to generate …</td>
+    </tr>
+    <tr>
+      <td>SCE1 F(HindIII)</td>
+      <td>AAAAGCTTATGGCTAGTGGAATCGCTC</td>
+      <td>pSAT4(A)-nEYFP-N1 SCE1</td>
+    </tr>
+    <tr>
+      <td>SCE1 R(EcoRI)</td>
+      <td>AAGAATTCGACAAGAGCAGGATACTGCTTG</td>
+      <td>pSAT4(A)-nEYFP-N1 SCE1</td>
+    </tr>
+    <tr>
+      <td>Toc159-5 F (EcoRI)</td>
+      <td>AAGAATTCAATGGACTCAAAGTCGGTT</td>
+      <td>pSAT4-cEYFP-C1-B Toc159</td>
+    </tr>
+    <tr>
+      <td>Toc132-5 F (XhoI)</td>
+      <td>AACTCGAGCTATG GGAGATGGGACTGAG</td>
+      <td>pSAT4-cEYFP-C1-B Toc159</td>
+    </tr>
+    <tr>
+      <td>Toc132-3 R (SmaI)</td>
+      <td>AACCCGGGTCATTGTCCATATTGCGT</td>
+      <td>pSAT4-cEYFP-C1-B Toc132</td>
+    </tr>
+    <tr>
+      <td>Toc33-5 F (HindIII)</td>
+      <td>AGAAGCTTCGATGGGGTCTCTCGTTCGT</td>
+      <td>pSAT4-cEYFP-C1-B Toc132</td>
+    </tr>
+    <tr>
+      <td>Toc33-3 R (XbaI)</td>
+      <td>AATCTAGATTAAAGTGGCTTTCCACT</td>
+      <td>pSAT4-cEYFP-C1-B Toc33</td>
+    </tr>
+    <tr>
+      <td>Toc34-5 F (HindIII)</td>
+      <td>AGAAGCTTCGATGGCAGCTTTGCAAACG</td>
+      <td>pSAT4-cEYFP-C1-B Toc34</td>
+    </tr>
+    <tr>
+      <td>Toc34-3 R (XbaI)</td>
+      <td>AATCTAGATCAAGACCTTCGACTTGC</td>
+      <td>pSAT4-cEYFP-C1-B Toc34</td>
+    </tr>
+    <tr>
+      <td>OEP7 F (XhoI)</td>
+      <td>CTCGAGATGGGAAAAACTTCGGGA</td>
+      <td>pSAT4(A)-cEYFP-N1 ΔOEP7</td>
+    </tr>
+    <tr>
+      <td>OEP7-35 R (KpnI)</td>
+      <td>GGTACCGGAATTTATCGAGGAAAGG</td>
+      <td>pSAT4(A)-cEYFP-N1 ΔOEP7</td>
+    </tr>
+    <tr>
+      <td colspan="3">(B)Primers used in Gateway cloning procedures</td>
+    </tr>
+    <tr>
+      <td>SCE1 Gateway F</td>
+      <td>GGGGACAAGTTTGTACAAAAAAGCAGGCTCCATGGCTAGTGGAATCGCTC</td>
+      <td>p2GWY7 SCE1</td>
+    </tr>
+    <tr>
+      <td>SCE1 Gateway R</td>
+      <td>GGGGACCACTTTGTACAAGAAAGCTGGGTTGACAAGAGCAGGATACTGC</td>
+      <td>p2GWY7 SCE1</td>
+    </tr>
+    <tr>
+      <td>SUMO1 Gateway F</td>
+      <td>GGGGACAAGTTTGTACAAAAAAGCAGGCTCCTCTGCAAACCAGGAGGAAGACAAG</td>
+      <td>p2YGW7 SUMO1</td>
+    </tr>
+    <tr>
+      <td>SUMO1 Gateway R</td>
+      <td>GGGGACCACTTTGTACAAGAAAGCTGGGTTTCAGGCCGTAGCACCACC</td>
+      <td>p2YGWYSUMO1</td>
+    </tr>
+    <tr>
+      <td>SUMO2 Gateway F</td>
+      <td>GGGGACAAGTTTGTACAAAAAAGCAGGCTCCTCTGCTACTCCGGAAGAAGAC</td>
+      <td>p2YGW7 SUMO2</td>
+    </tr>
+    <tr>
+      <td>SUMO2 Gateway R</td>
+      <td>GGGGACCACTTTGTACAAGAAAGCTGGGTTCTAAAAGCAGAAGAGCTTCAGGCC</td>
+      <td>p2YGW7 SUMO2</td>
+    </tr>
+    <tr>
+      <td>SUMO3 Gateway F</td>
+      <td>GSGGGACAAGTTTGTACAAAAAAGCAGGCTCCTCTAACCCTCAAGATGACAAGCCC</td>
+      <td>p2YGW7SUMO3</td>
+    </tr>
+    <tr>
+      <td>SUMO3 Gateway R</td>
+      <td>GGGGACCACTTTGTACAAGAAAGCTGGGTTTTAAAGCCCATTATGATCGAAAAGC</td>
+      <td>p2YGW7SUMO3</td>
+    </tr>
+    <tr>
+      <td colspan="3">(C)Primers used in RT-PCR experiments</td>
+    </tr>
+    <tr>
+      <td>SUMO1 F(2)</td>
+      <td>AAAAAGCAGGCTCCACAAAAGCCACGGCCAATTAG</td>
+      <td>SUMO1</td>
+    </tr>
+    <tr>
+      <td>SUMO1 R(2)</td>
+      <td>AGAAAGCTGGGTTCCATTCATATCACACACAAGCCC</td>
+      <td>SUMO1</td>
+    </tr>
+    <tr>
+      <td>SUMO3 F</td>
+      <td>ACAGACTGGAGTTTTTGTTTC</td>
+      <td>SUMO3</td>
+    </tr>
+    <tr>
+      <td>SUMO3 R</td>
+      <td>CTCATGAGTCATTTACACACACG</td>
+      <td>SUMO3</td>
+    </tr>
+    <tr>
+      <td>eIF4E1 F</td>
+      <td>AAGATTTGAGAGGTTTCAAGCGGTGTAAG</td>
+      <td>eIF4E1</td>
+    </tr>
+    <tr>
+      <td>eIF4E1 R</td>
+      <td>AAACAATGGCGGTAGAAGACACTC</td>
+      <td>eIF4E1</td>
+    </tr>
+    <tr>
+      <td>Siz1-HindIII-F</td>
+      <td>AAAAGCTTATGGATTTGGAAGCTAATTGTAAG</td>
+      <td>SIZ1 (for siz1-4)</td>
+    </tr>
+    <tr>
+      <td>Siz1-seq-1R</td>
+      <td>TCTGCATTGTGCTTGCAC</td>
+      <td>SIZ1 (for siz1-4)</td>
+    </tr>
+    <tr>
+      <td>Siz1-F</td>
+      <td>GGATTATCTTCCAGTAATAGGCAAG</td>
+      <td>SIZ1 (for siz1-5)</td>
+    </tr>
+    <tr>
+      <td>Siz1-R</td>
+      <td>CCCGACTGAGCTGAAGCATC</td>
+      <td>SIZ1 (for siz1-5)</td>
+    </tr>
+    <tr>
+      <td colspan="3">(D)Primers used to genotype mutants</td>
+    </tr>
+    <tr>
+      <td>Primer name</td>
+      <td>Sequence</td>
+      <td>Used to genotype…</td>
+    </tr>
+    <tr>
+      <td>SUMO1 F(2)</td>
+      <td>AAAAAGCAGGCTCCACAAAAGCCACGGCCAATTAG</td>
+      <td>sum1-1</td>
+    </tr>
+    <tr>
+      <td>SUMO1 R(2)</td>
+      <td>AGAAAGCTGGGTTCCATTCATATCACACACAAGCCC</td>
+      <td>sum1-1</td>
+    </tr>
+    <tr>
+      <td>SUMO2 F</td>
+      <td>CGTTGTTGGTACTTGGTTGG</td>
+      <td>sum2-1</td>
+    </tr>
+    <tr>
+      <td>SUMO2 R</td>
+      <td>CAAAACTCTAAACTGGTCGG</td>
+      <td>sum2-1</td>
+    </tr>
+    <tr>
+      <td>SUMO3 F</td>
+      <td>ACAGACTGGAGTTTTTGTTTC</td>
+      <td>sum3-1</td>
+    </tr>
+    <tr>
+      <td>SUMO3 R</td>
+      <td>CTCATGAGTCATTTACACACACG</td>
+      <td>sum3-1</td>
+    </tr>
+    <tr>
+      <td>SCE1 F</td>
+      <td>CGCCGCGAAATCTGGACC</td>
+      <td>sce1-4</td>
+    </tr>
+    <tr>
+      <td>SCE1 R</td>
+      <td>TTCCTCTCTTCAGCTAAACG</td>
+      <td>sce1-4</td>
+    </tr>
+    <tr>
+      <td>SIZ1 F(2)</td>
+      <td>GCAAACAGGGAAAGAAGCAGG</td>
+      <td>siz1-4</td>
+    </tr>
+    <tr>
+      <td>SIZ1 R(2)</td>
+      <td>CATTGAGTCTGTTTCTAGCG</td>
+      <td>siz1-4</td>
+    </tr>
+    <tr>
+      <td>LBb1</td>
+      <td>GCGTGGACCGCTTGCTGCAACT</td>
+      <td>SALK lines (left border)</td>
+    </tr>
+    <tr>
+      <td>LB1</td>
+      <td>GCCTTTTCAGAAATGGATAAATAGCCTTGCTTCC</td>
+      <td>SAIL lines (left border)</td>
+    </tr>
+    <tr>
+      <td colspan="3">(E)Primers used to map thesiz1-4andsiz1-5T-DNA insertions</td>
+    </tr>
+    <tr>
+      <td>Primer name</td>
+      <td>Sequence</td>
+      <td>Used to map …</td>
+    </tr>
+    <tr>
+      <td>Siz1-Seq-1R</td>
+      <td>TCTGCATTGTGCTTGCAC</td>
+      <td>siz1-4 T-DNA insertion</td>
+    </tr>
+    <tr>
+      <td>Siz1-Seq-3R</td>
+      <td>TGACAACCACTGTATGCAGG</td>
+      <td>siz1-5 T-DNA insertion</td>
+    </tr>
+  </tbody>
+</table>
+
+_Underlining indicates restriction sites (A and C), or attB1 and attB2 recombination sequences (B)._
+
 In most experiments, plants were grown on soil (80% [v/v] compost [Levington M2], 20% [v/v] vermiculite [Sinclair Pro, medium particle size]). However, where plants were grown for selection of transformants or for chloroplast isolation, seeds were surface sterilized and sown on petri plates containing Murashige–Skoog (MS) agar medium. The plates were stored at 4°C for 48 hr before being transferred to a growth chamber. Both soil-grown and plate-grown plants were kept in a growth chamber (Percival Scientific) under long-day conditions (16 hr light, 8 hr dark). The light intensity was approximately 120 µE m–2 s–1, the temperature was held constant at 20°C, and the humidity was held constant at approximately 60% (relative humidity).
 
-## Chlorophyll measurements
+### Chlorophyll measurements
 
 Chlorophyll measurements were taken from mature rosette leaves in each instance. A handheld Konica-Minolta SPAD-502 meter was used to take each measurement, and the raw values were converted into chlorophyll concentration values (nmol/mg tissue) via published calibration equations (Ling et al., 2011).
 
-## Chloroplast isolation and protein extraction
+### Chloroplast isolation and protein extraction
 
 Chloroplasts were isolated from 14-day-old, plate-grown seedlings as described previously (Flores-Pérez and Jarvis, 2017). Some of the seedlings were heat-shocked immediately prior to chloroplast isolation. To do this, the plates containing the seedlings were wrapped in clingfilm and placed into a water bath (42°C for 1 hr, followed by a 1 hr recovery period at 22°C). Protein samples were prepared from the isolated chloroplasts by extraction using SDS-PAGE sample buffer, as well as from whole 14-day-old seedlings as previously described (Kovacheva et al., 2005). In some cases, the samples were treated with 10 mM NEM (Hilgarth and Sarge, 2005); this was added directly to the protein extraction buffer (whole seedling samples) or to the chloroplast isolation buffer following polytron homogenization and all subsequent buffers (chloroplast samples).
 
-## Plasmid constructs
+### Plasmid constructs
 
 The constructs used in the BiFC experiments were generated as follows. The coding sequences of SCE1, SIZ1, TOC159, TOC132, TOC34, and TOC33 were PCR amplified from wild-type cDNA (see Table 2 for primer sequences). In the case of ΔOEP7, the first 105 base pairs of the OEP7 coding sequence were amplified; this encodes a truncated sequence, which is sufficient to efficiently target the full-length YFP protein to the chloroplast outer envelope membrane (Lee et al., 2001). The inserts were cloned into one of the following complementary vectors: pSAT4(A)-cEYFP-N1 (SCE1), pSAT4-nEYFP-C1 (TOC159, TOC132, TOC34, TOC33), or pSAT4(A)-nEYFP-N1 (ΔOEP7), which were described previously (Tzfira et al., 2005; Citovsky et al., 2006).
 
@@ -121,32 +966,32 @@ The constructs used in the IP experiments were generated as follows. The coding 
 
 The constructs used to generate transgenic plants were generated as follows. The coding sequences of SUMO1 and SUMO3 were PCR amplified from wild-type cDNA using primers bearing 5′ attB1 and attB2 adaptor sequences (see Table 2 for primer sequences). The inserts were then cloned into pDONR201 (Invitrogen), a Gateway entry vector. The inserts from the resulting entry clones were then transferred to the pH2GW7 binary destination vector (Karimi et al., 2002; Karimi et al., 2005).
 
-## Transient expression assays
+### Transient expression assays
 
 Protoplasts were isolated from mature rosette leaves of wild-type Arabidopsis plants and transfected in accordance with an established method (Wu et al., 2009; Ling et al., 2012). In the BiFC experiments, 100 µL protoplast suspension (containing approximately 105 protoplasts) was transfected with 5 µg plasmid DNA; in the IP experiments, 600 µL protoplast suspension (containing approximately 6 × 105 protoplasts) was transfected with 30 µg plasmid DNA. In both cases, the samples were analyzed after 15–18 hr.
 
-## Stable plant transformation
+### Stable plant transformation
 
 Transgenic lines carrying the SUMO1 OX or SUMO3 OX constructs were generated via Agrobacterium-mediated floral dip transformation (Clough and Bent, 1998). Transformed plants (T1 generation) were selected on MS medium containing phosphinothricin. Multiple T2 families were analyzed in each case, and lines bearing a single T-DNA insertion were taken forward for further analysis. Transgene expression was analyzed by semi-quantitative RT-PCR as described previously (Kasmati et al., 2011; see Table 2 for primer sequences).
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Transmission electron micrographs were recorded using mature rosette leaves as previously described (Huang et al., 2011). Images were taken from three biological replicates (different leaves from different individual plants), and at least 10 images were taken per replicate. The images were analyzed using ImageJ (Schneider et al., 2012). The freehand tool was used to measure the plan area of the chloroplasts. For this, between 9 and 28 chloroplasts were analyzed for each biological replicate (i.e., for each plant), and then an average value for each replicate was calculated and used for statistical comparisons. The analysis of chloroplast ultrastructure was performed as in previous work (Huang et al., 2011). For this, between 3 and 8 chloroplasts were analyzed per biological replicate, and the data were processed as above.
 
-## BiFC experiments
+### BiFC experiments
 
 The BiFC experiments were carried out as described previously (Ling et al., 2019). Protoplasts were co-transfected with two constructs encoding fusion proteins bearing complementary fragments of the YFP protein (nYFP and cYFP; Citovsky et al., 2006). After transfection and overnight incubation, the protoplasts were imaged using a Leica TCS SP5 laser scanning confocal microscope equipped with a Leica HC Plan Apochromat CS2 63.0× UV water immersion lens with a numerical aperture (N.A.) of 1.2. YFP was excited with an argon-ion laser at 514 nm, selected using an acousto-optic tuneable filter (AOTF), and was detected using a 525–600 nm bandpass filter and a photomultiplier. Chlorophyll fluorescence was simultaneously excited with 514 nm excitation and detected with a 680–700 nm bandpass filter using a photomultiplier. Images were collected in 8-bit resolution with the pinhole set at 111.5 µm (1 Airy Unit), using 16-line averaging and a scan speed of 400 Hz. The image size was 512 × 512 pixels, with an (x,y) pixel size of 0.239 µm. Images were processed in the Leica Application Suite (LAS) software.
 
-## Immunoblotting and immunoprecipitation
+### Immunoblotting and immunoprecipitation
 
 Protein extraction and immunoblotting were performed as described previously (Kovacheva et al., 2005). Total protein samples were extracted from 50 mg of intact, pooled seedlings after 2 weeks of growth. To detect proteins, we used an anti-SUMO1 antibody (Ab5316, Abcam), an anti-Toc75-III antibody (Kasmati et al., 2011), an anti-Toc159 antibody (Bauer et al., 2000), an anti-Toc132 antibody (Ling et al., 2012), an anti-Toc33 antibody (Kasmati et al., 2011), an anti-Tic110 antibody (Aronsson et al., 2010), an anti-Tic40 antibody (Kasmati et al., 2011), and an anti-green fluorescent protein antibody (Sigma, SAB4301138). In most cases, the secondary antibody used was goat anti-rabbit immunoglobulin G (IgG) conjugated with horseradish peroxidase (Sigma, 12-348); and protein bands were visualized via chemiluminescence using an ECL Plus western blotting detection kit (GE Healthcare) and an LAS-4000 imager (GE Healthcare). However, in the case of Figure 5—figure supplement 1, the secondary antibody was goat anti-rabbit IgG conjugated with alkaline phosphatase (Sigma, A3687), and the membrane was incubated with BCIP/NBT chromogenic substrate (Sigma, B3679).
 
 The IP experiments were carried out as described previously (Ling et al., 2019). Constructs encoding YFP-conjugated fusion proteins (YFP-HA, SCE1-YFP, YFP-SUMO1, YFP-SUMO2, YFP-SUMO3) were transiently expressed in protoplasts. In some cases, the constructs were co-expressed with a construct encoding Toc33-HA. The protoplasts were solubilized using IP buffer containing 1% Triton X-100, and the resulting lysates were incubated with GFP-Trap beads (Chromotek). After four washes in IP buffer, the protein samples were eluted by boiling in SDS-PAGE loading buffer, and then analyzed by immunoblotting.
 
-## Statistical analysis
+### Statistical analysis
 
 The data from each experiment were analyzed in R. In most cases, two-tailed t-tests were performed. However, in one case, a one-way ANOVA was performed in conjunction with a Tukey HSD test (as indicated in the figure legend). The figures are annotated to indicate the level of significance, as follows: ns: not significant; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001; *****p<0.00001.
 
-## SUMO site prediction
+### SUMO site prediction
 
 The amino acid sequences of Toc159, Toc132, Toc120, Toc90, Toc75, Toc33, and Toc34 were retrieved from The Arabidopsis Information Resource (TAIR) website (Berardini et al., 2015). The GPS-SUMO algorithm was applied to all seven sequences (http://sumosp.biocuckoo.org/online.php; Zhao et al., 2014). The ‘high stringency’ setting was applied. The p-values were generated by the GPS-SUMO algorithm, and hits that were accompanied by p-values exceeding >0.05 were manually removed. The JASSA algorithm was also applied to all seven amino acid sequences (http://www.jassa.fr/index.php; Beauclair et al., 2015). In this case, the ‘high cutoff’ setting was applied. The GPS-SUMO and JASSA algorithms use fundamentally different methodologies (Chang et al., 2018).

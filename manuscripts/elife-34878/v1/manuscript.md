@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.34878.001 Organisms possessing genetic codes with unassigned codons raise the question of how cellular machinery resolves such codons and how this could impact horizontal gene transfer. Here, we use a genomically recoded Escherichia coli to examine how organisms address translation at unassigned UAG codons, which obstruct propagation of UAG-containing viruses and plasmids. Using mass spectrometry, we show that recoded organisms resolve translation at unassigned UAG codons via near-cognate suppression, dramatic frameshifting from at least −3 to +19 nucleotides, and rescue by ssrA -encoded tmRNA, ArfA, and ArfB. We then demonstrate that deleting tmRNA restores expression of UAG-ending proteins and propagation of UAG-containing viruses and plasmids in the recoded strain, indicating that tmRNA rescue and nascent peptide degradation is the cause of impaired virus and plasmid propagation. The ubiquity of tmRNA homologs suggests that genomic recoding is a promising path for impairing horizontal gene transfer and conferring genetic isolation in diverse organisms.
+Organisms possessing genetic codes with unassigned codons raise the question of how cellular machinery resolves such codons and how this could impact horizontal gene transfer. Here, we use a genomically recoded Escherichia coli to examine how organisms address translation at unassigned UAG codons, which obstruct propagation of UAG-containing viruses and plasmids. Using mass spectrometry, we show that recoded organisms resolve translation at unassigned UAG codons via near-cognate suppression, dramatic frameshifting from at least −3 to +19 nucleotides, and rescue by ssrA-encoded tmRNA, ArfA, and ArfB. We then demonstrate that deleting tmRNA restores expression of UAG-ending proteins and propagation of UAG-containing viruses and plasmids in the recoded strain, indicating that tmRNA rescue and nascent peptide degradation is the cause of impaired virus and plasmid propagation. The ubiquity of tmRNA homologs suggests that genomic recoding is a promising path for impairing horizontal gene transfer and conferring genetic isolation in diverse organisms.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ Studies of ribosomal stalling arising at rare codons (Hayes et al., 2002) or in 
 
 ## Results
 
-## Suppression, ribosomal frameshifting, and tmRNA-mediated peptide tagging occur at unassigned codons
+### Suppression, ribosomal frameshifting, and tmRNA-mediated peptide tagging occur at unassigned codons
 
 In prior work, we constructed an Escherichia coli strain in which all UAG codons were mutated to UAA, permitting the deletion of release factor 1 (RF1) and resulting in an organism that lacks a codon assignment of UAG. This genomically recoded organism (GRO) (Isaacs et al., 2011; Lajoie et al., 2013b) exhibited resistance to multiple viruses and failure to propagate conjugative plasmids (Lajoie et al., 2013b; Ma and Isaacs, 2016) attributable to the unassigned UAG codon, but the molecular mechanisms that resolve unassigned UAG codons during translation remained unknown. In this study, we conducted two main experiments to uncover these mechanisms: (1) analysis of proteins translated from UAG-ending transcripts via mass spectrometry and western blots and (2) phenotypic assays to assess whether gene deletions of specific rescue factors restored the ability of conjugative plasmids and viruses to exploit the GRO. Since we hypothesized that the tmRNA-mediated response may resolve ribosomal stalling at the UAG codon, we also mutated the degradation tag encoded by the tmRNA from AANDENYALAA (AA-tag) to AANDENYALDD (DD-tag) for protein expression for mass spectrometry experiments. This mutation increases the half-life of protein products released by tmRNA (Keiler et al., 1996; Roche and Sauer, 1999), enabling their detection via mass spectrometry.
 
@@ -45,7 +45,161 @@ We assembled plasmids (pUAG-GFP and pUAA-GFP) encoding GFP genes with C-terminal
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/34878/elife-34878-fig2-v1.jpg)
 
-**Figure 2.:** (A) Schematic of the GFP construct with a C-terminal 6x-His tag and a UAG stop codon, showing 102 nucleotides downstream of the UAG codon and the positions of other stop codons in the downstream tail. (B) Peptides identified from the C-terminus of a UAG-ending GFP construct expressed in the GRO (using libraries detailed in Supplementary file 3 and 4). Purified GFP protein was digested with trypsin, processed via MS/MS, and the resulting data were computationally searched using libraries encoding all possible suppressors and all possible subsequent reading frames. Peptides are mapped to the C-terminus of the original GFP construct and grouped by reading frame, with the number of bases skipped listed in the left column. Green text represents GFP, blue text represents the C-terminal 6xHis tag and unframeshifted readthrough, orange text represents the position of a UAG stop codon, purple text represents frameshifted readthrough, and red text represents the tmRNA tag. Black dashes represent ribosomal frameshifts (Figure 2—source datas 1 and 2). (C) MS-MS spectra for two peptides: the C-terminus of GFP with the appended degradation tag (LEHHHHHHAANDENYALDD) and the C-terminus of GFP demonstrating a + 10 base skip in translation (LEHHHHHHGDPMVR). The other spectra validated from UAG-GFP expressing GRO.AA are shown in Supplementary file 2.10.7554/eLife.34878.005Figure 2—source data 1.Supplementary file 3).10.7554/eLife.34878.006Figure 2—source data 2.Supplementary file 4).
+**Figure 2.:** (A) Schematic of the GFP construct with a C-terminal 6x-His tag and a UAG stop codon, showing 102 nucleotides downstream of the UAG codon and the positions of other stop codons in the downstream tail. (B) Peptides identified from the C-terminus of a UAG-ending GFP construct expressed in the GRO (using libraries detailed in Supplementary file 3 and 4). Purified GFP protein was digested with trypsin, processed via MS/MS, and the resulting data were computationally searched using libraries encoding all possible suppressors and all possible subsequent reading frames. Peptides are mapped to the C-terminus of the original GFP construct and grouped by reading frame, with the number of bases skipped listed in the left column. Green text represents GFP, blue text represents the C-terminal 6xHis tag and unframeshifted readthrough, orange text represents the position of a UAG stop codon, purple text represents frameshifted readthrough, and red text represents the tmRNA tag. Black dashes represent ribosomal frameshifts (Figure 2—source datas 1 and 2). (C) MS-MS spectra for two peptides: the C-terminus of GFP with the appended degradation tag (LEHHHHHHAANDENYALDD) and the C-terminus of GFP demonstrating a + 10 base skip in translation (LEHHHHHHGDPMVR). The other spectra validated from UAG-GFP expressing GRO.AA are shown in Supplementary file 2.
+
+**Table 1.**
+ Strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain Abbreviation*</th>
+      <th>Ancestor (source)†</th>
+      <th>Genotype</th>
+      <th># UAG Codons‡</th>
+      <th>RF1 Status§</th>
+      <th>Ribosomal rescue gene deletion</th>
+      <th>ssrA tag Status#</th>
+      <th>Investigated in</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GRO.DD.prfA+</td>
+      <td>GRO.AA (this study)</td>
+      <td>ΔmutS:zeo.Δ(ybhB-bioAB):[λcI857.Δ(cro-ea59):tetR-bla]</td>
+      <td>0</td>
+      <td>+RF1</td>
+      <td>n/a</td>
+      <td>DD</td>
+      <td>GFP expression for mass spectrometry (Figure 2)</td>
+    </tr>
+    <tr>
+      <td>GRO.DD</td>
+      <td>GRO.AA (this study)</td>
+      <td>ΔmutS:zeo.Δ(ybhB-bioAB):[λcI857.Δ(cro-ea59):tetR-bla], ΔprfA, ΔtolC</td>
+      <td>0</td>
+      <td>∆RF1</td>
+      <td>n/a</td>
+      <td>DD</td>
+      <td>GFP expression for mass spectrometry (Figure 2)</td>
+    </tr>
+    <tr>
+      <td>ECNR2.AA</td>
+      <td>E. coli MG1655 (Wang et al., 2009)</td>
+      <td>MG1655 ΔmutS:zeo.Δ(ybhB-bioAB):[λcI857.Δ(cro-ea59):tetR-bla]</td>
+      <td>321</td>
+      <td>+RF1</td>
+      <td>n/a</td>
+      <td>AA</td>
+      <td>Fitness, conjugation, and viral infection (Figures 3 and 4)</td>
+    </tr>
+    <tr>
+      <td>GRO.AA</td>
+      <td>ECNR2.AA (Lajoie et al., 2013b)</td>
+      <td>ΔmutS:zeo.Δ(ybhB-bioAB):[λcI857.Δ(cro-ea59):tetR-bla], ΔprfA, ΔtolC</td>
+      <td>0</td>
+      <td>∆RF1</td>
+      <td>n/a</td>
+      <td>AA</td>
+      <td>Fitness, conjugation, and viral infection (Figures 3 and 4)</td>
+    </tr>
+    <tr>
+      <td>GRO.AA.∆ssrA</td>
+      <td>GRO.AA (this study)</td>
+      <td>ΔmutS:zeo.Δ(ybhB-bioAB):[λcI857.Δ(cro-ea59):tetR-bla], ΔprfA, ΔtolC</td>
+      <td>0</td>
+      <td>∆RF1</td>
+      <td>∆ssrA</td>
+      <td>AA</td>
+      <td>Fitness, conjugation, and viral infection (Figures 3 and 4)</td>
+    </tr>
+    <tr>
+      <td>GRO.AA.∆arfA</td>
+      <td>GRO.AA (this study)</td>
+      <td>ΔmutS:zeo.Δ(ybhB-bioAB):[λcI857.Δ(cro-ea59):tetR-bla], ΔprfA, ΔtolC</td>
+      <td>0</td>
+      <td>∆RF1</td>
+      <td>∆arfA</td>
+      <td>AA</td>
+      <td>Fitness, conjugation, and viral infection (Figures 3 and 4)</td>
+    </tr>
+    <tr>
+      <td>GRO.AA.∆arfB</td>
+      <td>GRO.AA (this study)</td>
+      <td>ΔmutS:zeo.Δ(ybhB-bioAB):[λcI857.Δ(cro-ea59):tetR-bla], ΔprfA, ΔtolC</td>
+      <td>0</td>
+      <td>∆RF1</td>
+      <td>∆arfB</td>
+      <td>AA</td>
+      <td>Fitness, conjugation, and viral infection (Figures 3 and 4)</td>
+    </tr>
+    <tr>
+      <td>GRO.AA.∆ssrA.∆arfB</td>
+      <td>GRO.AA (this study)</td>
+      <td>ΔmutS:zeo.Δ(ybhB-bioAB):[λcI857.Δ(cro-ea59):tetR-bla], ΔprfA, ΔtolC</td>
+      <td>0</td>
+      <td>∆RF1</td>
+      <td>∆ssrA, ∆arfB</td>
+      <td>AA</td>
+      <td>Fitness, conjugation, and viral infection (Figures 3 and 4)</td>
+    </tr>
+    <tr>
+      <td>GRO.AA.∆arfA. ∆arfB</td>
+      <td>GRO.AA (this study)</td>
+      <td>ΔmutS:zeo.Δ(ybhB-bioAB):[λcI857.Δ(cro-ea59):tetR-bla], ΔprfA, ΔtolC</td>
+      <td>0</td>
+      <td>∆RF1</td>
+      <td>∆arfA, ∆arfB</td>
+      <td>AA</td>
+      <td>Fitness, conjugation, and viral infection (Figures 3 and 4)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*All strains derived from ECNR2, as described in Wang et al. (2009).†See Key Resources Table for additional information on strains and sources. The GenBank accession number for E. coli MG1655 is U00096, and the GenBank accession number for GRO.AA is CP006698.‡ Out of a total of 321 in the original ECNR2 strain.§RF1 terminates translation at UAG and UAA. Deletion of RF1 eliminates recognition of UAG during translation; translational termination continues through RF2, which recognizes UAA and UGA.#The ssrA gene encodes the tmRNA, which appends the ssrA degradation tag to stalled ribosomes. The wild-type sequence is AANDENYALAA; mutation of the C-terminus to AANDENYALDD slows degradation of peptides to enable detection by mass spectrometry._
+
+**Table 2.**
+ Components of peptide library constructed to search and analyze tandem mass spectrometry data.The LEHHHHHHXXX library was separate from the library that contained the entries of the first three rows of the table (see Supplementary file 3 and 4).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Library component</th>
+      <th>Example peptides (from Figure 2A)</th>
+      <th>Enables detection of…</th>
+      <th>Complete peptide list</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Any one of 20 canonical amino acids inserted at the UAG codon</td>
+      <td>LEHHHHHHQGAR</td>
+      <td>Near-cognate suppression</td>
+      <td>Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Any length of C-tail following UAG codon to the next non-UAG stop codon or to 38 amino acids downstream of the UAG codon, whichever came first</td>
+      <td>ALGDPMVR</td>
+      <td>Readthrough, frameshifting, and rescue by ArfA or ArfB</td>
+      <td>Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>AANDENYALDD degradation tag</td>
+      <td>LEHHHHHHGDAANDENYALDD</td>
+      <td>Rescue by tmRNA-SmpB</td>
+      <td>Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>All peptides of form LEHHHHHHXXX, where X is any amino acid</td>
+      <td>LEHHHHHHQLD</td>
+      <td>Loss of translational fidelity</td>
+      <td>Supplementary file 4</td>
+    </tr>
+  </tbody>
+</table>
 
 In the GRO lacking UAG assignment, the UAG codon elicited a combination of ribosomal rescue mechanisms and mistranslation events, including tmRNA-mediated tagging, near-cognate suppression, and frameshifting. The mutated ssrA DD-tag appended directly to the C-terminus of GFP (LEHHHHHHAANDENYALDD) appeared in both UAG- and UAA-ending transcripts in GRO.DD and GRO.DD.prfA+ (Figure 2, Supplementary file 1 – Table S1), consistent with previous reports that overexpressed proteins are targeted for degradation by the tmRNA (Baneyx and Mujacic, 2004; Li et al., 2007; Moore and Sauer, 2005; Tu et al., 1995). Both samples also contained the unmodified C-terminus of GFP (LEHHHHHH). In GRO.DD.prfA+, this is likely due to translational termination via RF1, while in GRO.DD this may represent rescue of nonstop ribosomes by ArfA/ArfB, release of nascent peptides undergoing translation at the time of cell lysis, or spontaneous dissociation of the ribosome, although this last event is estimated to occur fewer than once per 100,000 codon decoding events (Keiler and Feaga, 2014). While these were the only C-terminal fragments detected in GRO.DD expressing UAA-GFP and in GRO.DD.prfA+ expressing UAG-GFP, GRO.DD [pUAG-GFP] contained greater than 30 unique C-terminal sequences (Supplementary file 2).
 
@@ -55,9 +209,17 @@ Prior research in vitro revealed that a mistranslation event increases the likel
 
 Although several alternative hypotheses may explain these random tripeptides, these explanations are either incomplete or unlikely given our current understanding of prokaryotic translation. First, it is improbable that these fragments arose from routine errors in mRNA transcription because this would require at least two transcriptional errors in a nine-nucleotide span. The transcription error rate in E. coli is estimated to be ~1 in 10,000 bases (Blank et al., 1986; Rosenberger and Hilton, 1983) and our strains have no known mutations that would lead to greater error rates in transcription. Second, it is possible that ArfA or ArfB may have terminated translation in these peptides due to 3’ exonuclease shortening of the mRNA transcript as the ribosome is stalled at the UAG codon (Keiler and Feaga, 2014; Yamamoto et al., 2003). However, this does not explain the non-encoded tripeptides appended to the LEHHHHHH peptide. Lastly, the peptides LEHHHHHHQQR, LEHHHHHHSLK, and LEHHHHHHYQR may have been part of longer peptides that were cleaved off during trypsin digest. In this case, translation may have continued past the C-terminal R or K observed in these peptides, but this consideration would not apply to LEHHHHHHEKP and LEHHHHHHQLD and again does not explain the non-encoded tripeptide sequence observed appended to LEHHHHHH. Given this, we hypothesize that these five peptides result from loss of translational fidelity after stalling at the UAG codon that may lead to (1) spontaneous termination of translation due to the untemplated action of RF2 following mistranslation or (2) ArfA- or ArfB-mediated release predicated on 3’ exonuclease degradation of the mRNA. The rare event of spontaneous hydrolysis of the peptide from the ribosome is also possible.
 
-## ssrA and arfB mediate degradation of proteins containing unassigned UAG codons
+### ssrA and arfB mediate degradation of proteins containing unassigned UAG codons
 
 Since mass spectrometry data indicated that a combination of mechanisms could resolve stalled translation at the unassigned UAG codon, we generated targeted deletions of the ribosomal rescue systems (ssrA, arfA, and arfB) in strains with wild-type ssrA sequence (GRO.AA) to determine whether protein production from UAG-ending transcripts in ΔRF1 cells could be restored to levels seen in +RF1 cells. Using recombineering (Sharan et al., 2009), we produced single and double deletions of the ssrA, arfA, and arfB genes that encode the ribosomal rescue systems. Efforts to generate a double deletion of ssrA and arfA failed (data not shown) because the resulting phenotype is synthetic lethal (Chadani et al., 2010). We transformed each deletion strain with the UAG-GFP construct under a highly expressing, inducible pLtetO promoter (Lutz and Bujard, 1997) and induced GFP expression for 20 hr, measuring the effect of protein expression on cellular growth through doubling time and maximum optical density at 600 nm (OD600) (Figure 3A and B, Supplementary file 1 – Table S3). To quantify protein expression, we then assayed whole-cell lysate from equal cell numbers, as determined by OD600, for abundance of protein via anti-GFP western blot alongside GFP standards of known concentration as described previously (Figure 3C, Figure 3—source data 6) (Pirman et al., 2015). We also included as positive controls (1) a wild-type strain (ECNR2) expressing the UAG-GFP construct and (2) GRO.AA expressing UAA-GFP.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/34878/elife-34878-fig3-v1.jpg)
+
+**Figure 3.:** (A) Comparison of doubling times for WT and GRO strains carrying listed deletions with and without GFP induction. Error bars show standard deviation centered at mean, n = 3; data were analyzed using Source code 1 (Figure 3—source datas 1 and 2). (B) Change in maximum optical density at 600 nm (OD600) due to expression of UAG-GFP or UAA-GFP in wild-type (WT) and GRO strains carrying listed deletions. Error bars show standard deviation centered at mean, n = 3 (Figure 3—source datas 1 and 2). (C) Quantification of GFP abundance per 1 mL of cells at OD600 of 2.5 via western blot from biological replicates of indicated strains (Figure 3—source datas 3–6). Error bars show standard deviation centered at mean, n = 3 (Figure 3—source datas 3–5). See Figure 3—figure supplement 1 for linear calibration curves used to quantify GFP abundance for each replicate experiment. Image of representative western blot is below the graph. p-values are calculated in relation to the GRO containing the UAG-ending GFP (GRO – UAG) and are as follows: * is p≤0.05, ** is p≤0.01, *** is p≤0.001, and **** is p≤0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/34878/elife-34878-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Replicate 1 corresponds to the western blot shown in Figure 3—source data 3; Replicate 2 corresponds to the western blot shown in Figure 3—source data 4; Replicate 3 corresponds to the western blot shown in Figure 3—source data 5.
 
 Expression of UAG-GFP impaired GRO growth rate and cell density, generating a 54% increase in doubling time and 8% reduction in maximum OD600 compared to cells not expressing UAG-GFP, and a 25% greater doubling time and 14% lower maximum OD600 compared to cells expressing UAA-GFP. In contrast, ECNR2 exhibited only a 7% increase in doubling time and a 5% reduction in maximum OD600 when expressing UAG-GFP. Although deletion strains experienced reduced growth rate as measured by doubling time compared to the GRO.AA, they exhibited a less pronounced increase in doubling time when expressing UAG-GFP (increases in doubling time between 12% and 50%) as compared to the GRO.AA (54% increase in doubling time) (Figure 3A). However, deletion of ssrA reduced fitness during protein expression as measured by maximum OD600, with GRO.AA.∆ssrA demonstrating a 34% reduction in max OD600 and GRO.AA.∆ssrA.∆arfB demonstrating a 61% decrease in max OD600. This is potentially due to increased presence of misfolded or prematurely truncated peptides that are ordinarily tagged and degraded by the tmRNA. Interestingly, deletion of arfB produces a 50% increase in doubling time during protein expression, suggesting ArfB may play a role in ribosomal rescue during high levels of ribosomal stalling.
 
@@ -65,13 +227,13 @@ We then investigated the impact of unassigned codons on protein production using
 
 A deletion of arfB leads to strikingly low- protein abundances from UAG-GFP transcripts that approach the lower limit of detection of our assay, although this apparent reduction in protein production was not statistically significant in comparison to protein production by GRO.AA [pUAG-GFP]. These ArfB deletion data, together with the fitness reduction observed in the GRO, suggest that ArfB is constitutively expressed and relieving low levels of ribosomal stalling in E. coli. These data also suggest that while deletion of ssrA partially recovers protein production from UAG-ending transcripts in the GRO, deletion of both ssrA and arfB is necessary to fully recover protein expression from UAG-ending transcripts to levels seen from the translation of UAA-ending transcripts in the GRO.
 
-## Deletion of ssrA restores conjugative plasmid propagation and viral infection in the GRO
+### Deletion of ssrA restores conjugative plasmid propagation and viral infection in the GRO
 
 To determine whether deletions of of ssrA or arfB could restore propagation of horizontally-transferred genetic elements in the GRO, we assessed conjugation efficiency and growth rate from plasmids RK2 and F on GRO strains with single and double deletions of ssrA, arfA, and arfB. Previous research indicates that the UAG stop codon in the trfA gene on RK2 leads to impaired conjugation efficiency and replication in the GRO (Ma and Isaacs, 2016), likely because the TrfA protein is required to initiate plasmid replication (Pansegrau et al., 1994). Phenotypically, this manifests as reduced efficiency of plasmid transfer in conjugation experiments and increased doubling times for RK2+ strains in media selecting for plasmid maintenance due to loss of plasmid and concomitant antibiotic resistance genes. We found that deletion of ssrA increased the ability of the GRO to both receive (Figure 4A, Supplementary file 1 – Table S4) and replicate RK2 (Figure 4B, Supplementary file 1 – Table S5). RK2 conjugation efficiency in GRO.AA.∆ssrA improved to 99% (compared to 87% in GRO.AA), and the strain showed an increase in doubling time of only 6% compared to a 28% increase for GRO.AA (p<0.0001). We observed similar results for GRO.AA.∆ssrA.∆arfB. However, single deletion of arfB halved RK2 conjugative efficiency (Figure 4A, p=0.0002). This strain also exhibited a 38% increase in doubling time when bearing RK2, compared to the 28% increase in doubling time seen in the GRO with no ribosomal rescue gene deletions (Figure 4B, p<0.0001).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/34878/elife-34878-fig4-v1.jpg)
 
-**Figure 4.:** ssrA restores propagation of both viruses and conjugative plasmids in the genomically recoded organism.(A) Percent transfer of conjugative plasmid RK2 from a wild-type donor into wild-type (WT), GRO, or GRO with designated deletions (KO) as recipients (Figure 4—source data 1). Data are obtained from technical triplicates generated from a single biological sample. (B) Percent increase in doubling time for strains carrying plasmid RK2 compared to strains lacking RK2 (Figure 4—source datas 2 and 3). (C) Number of conjugation events for conjugative plasmid F from wild-type, GRO, or GRO with designated gene deletions as donors to a wild-type recipient (Figure 4—source data 4). Data are obtained from technical triplicates generated from a single biological sample. (D) Relative titer on wild-type, GRO, and GRO with designated deletions of phage λ (Figure 4—source data 5). Error bars show standard deviation centered at mean, n = 3. p-values are calculated in relation to the GRO condition and are as follows: * is p≤0.05, ** is p≤0.01, *** is p≤0.001, and **** is p≤0.0001. (E) Effects of sequential deletions of ribosomal rescue mechanisms on conjugative plasmid transfer efficiency. (F) Effects of sequential deletions of ribosomal rescue mechanisms on viral susceptibility.10.7554/eLife.34878.018Figure 4—source data 1.Figure 4A.Note: These data represent technical triplicates generated from the same biological sample.10.7554/eLife.34878.019Figure 4—source data 2.Source code 1, used for data represented in Figure 4B.10.7554/eLife.34878.020Figure 4—source data 3.Figure 4B.10.7554/eLife.34878.021Figure 4—source data 4.Figure 4C.Note: These data represent technical triplicates generated from the same biological sample.10.7554/eLife.34878.022Figure 4—source data 5.Figure 4D.
+**Figure 4.:** (A) Percent transfer of conjugative plasmid RK2 from a wild-type donor into wild-type (WT), GRO, or GRO with designated deletions (KO) as recipients (Figure 4—source data 1). Data are obtained from technical triplicates generated from a single biological sample. (B) Percent increase in doubling time for strains carrying plasmid RK2 compared to strains lacking RK2 (Figure 4—source datas 2 and 3). (C) Number of conjugation events for conjugative plasmid F from wild-type, GRO, or GRO with designated gene deletions as donors to a wild-type recipient (Figure 4—source data 4). Data are obtained from technical triplicates generated from a single biological sample. (D) Relative titer on wild-type, GRO, and GRO with designated deletions of phage λ (Figure 4—source data 5). Error bars show standard deviation centered at mean, n = 3. p-values are calculated in relation to the GRO condition and are as follows: * is p≤0.05, ** is p≤0.01, *** is p≤0.001, and **** is p≤0.0001. (E) Effects of sequential deletions of ribosomal rescue mechanisms on conjugative plasmid transfer efficiency. (F) Effects of sequential deletions of ribosomal rescue mechanisms on viral susceptibility.
 
 For plasmid F (Figure 4C, Supplementary file 1 – Table S6), which contains UAG-ending genes traY and traL that are essential for conjugation between cells (Ma and Isaacs, 2016), we found that deletion of ssrA increased conjugation events from the GRO donor 1,000-fold to 3.56 × 107 (p=0.0015) compared to GRO.AA (3.30 × 104 events), arfA deletion (3.41 × 104 events), and arfB deletion (3.47 × 104 events). GRO.AA.∆ssrA.∆arfB and GRO.AA.∆arfA.∆arfB exhibited 5.2- and 2.3-fold decrease in conjugative efficiency when compared to GRO.AA.∆ssrA and GRO.AA.∆arfA single deletion strains, respectively (p<0.01 for each, Figure 4C). These reductions in RK2 and F conjugative efficiency attributable to arfB deletion indicate that ArfB likely contributes to relief of nonstop ribosomes when encoded in its native ribosomal context, supporting evidence of ArfB’s ribosomal rescue activity previously validated in vitro (Handa et al., 2011) and when over-expressed in the absence of ssrA and arfA in vivo (Chadani et al., 2010). However, deletion of ssrA is sufficient to restore both conjugation and propagation of RK2 and F in the GRO. We next attempted infection with phage λ on our suite of deletion strains (Figure 4D, Supplementary file 1 – Table S7). Although deletion of arfA or arfB does not recover viral infection, deletion of the ssrA gene—either alone (p=0.0016) or alongside deletion of arfB (p<0.0001)—recovers λ infection of the GRO to levels similar to wild-type, with about 108 plaque forming units per mL (PFU/mL) (Figure 4D). These results demonstrate that removal of ssrA has the greatest influence in restoring conjugative plasmid transfer efficiency and viral susceptibility in the GRO (Figure 4E and F).
 
@@ -89,46 +251,382 @@ Our findings suggest that we can use unassigned codons to engineer organisms wit
 
 ## Materials and methods
 
-## Strains and media
+**Key resources table**
+ Genetic reagents, bacterial strains, antibodies, and software used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+      <th>Isaacs Lab Reference #</th>
+      <th>Full genotype of strains</th>
+      <th># UAG Codons</th>
+      <th>RF1 status</th>
+      <th>Ribosomal rescue gene knockout</th>
+      <th>ssrA tag status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Escherichia  coli)</td>
+      <td>pUAG-GFP</td>
+      <td>this paper</td>
+      <td>eGFP-6xHis -UAG; Plasmid NJM88; Strain NJM1242</td>
+      <td>eGFP protein with a C-terminal 6-His tag for protein purification, terminating translation in a UAG codon.</td>
+      <td>Plasmid NJM88; Strain NJM1242</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Gene (E. coli)</td>
+      <td>pUAA-GFP</td>
+      <td>this paper</td>
+      <td>eGFP-6xHis -UAA; Plasmid NJM89; Strain NJM1249</td>
+      <td>eGFP protein with a C-terminal 6-His tag for protein purification, terminating translation in a UAA codon.</td>
+      <td>Plasmid NJM89; Strain NJM1249</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>RK24</td>
+      <td>10.1126/science .1205822; 10.1016/j.cels .2016.06.009</td>
+      <td>pRK24; Strain NJM699</td>
+      <td>Conjugative RK2 plasmid (10.1006/ jmbi.1994.1404), but lacks functional AmpR gene.</td>
+      <td>Strain NJM699</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>F</td>
+      <td>Yale University Coli Genetic Stock Center (CGSC), Strain #4401</td>
+      <td>pF; Strain EMG2; Strain CGSC#4401; Strain NJM426; Strain NJM473</td>
+      <td>Conjugative F plasmid, as described by PMID: 4568763. Obtained from the Yale CGSC.</td>
+      <td>Strain NJM426; Strain NJM473</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pZE21_ UAG-GFP</td>
+      <td>this paper</td>
+      <td>pZEtR-eGFP -cHis-TAG- v02; Plasmid NJM88; Strain NJM1242</td>
+      <td>pZE21 plasmid with pLtetO promoter driving inducible expression of eGFP with a C-terminal 6-His tag and terminating in UAG codon. Inducible with anhydro-tetracycline.</td>
+      <td>Plasmid NJM88; Strain NJM1242</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli)</td>
+      <td>pZE21_ UAA-GFP</td>
+      <td>this paper</td>
+      <td>pZEtR-eGFP -cHis-TAA-v02 ; Plasmid NJM89; Strain NJM1249</td>
+      <td>pZE21 plasmid with pLtetO promoter driving inducible expression of eGFP with a C-terminal 6-His tag and terminating in UAA codon. Inducible with anhydro-tetracy cline.</td>
+      <td>Plasmid NJM89; Strain NJM1249</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Enteroba cteria phage λ)</td>
+      <td>λ.CI857</td>
+      <td>Coli Genetic Stock Center (CGSC), Yale University (contact John Wertz directly)</td>
+      <td>λ.CI857; λ phage; Phage NJM102</td>
+      <td>Phage λ with temperature- sensitive CI repressor gene; when incubated at 37° C, phage becomes obligate lytic</td>
+      <td>Phage NJM102</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Cell line (E.  coli)</td>
+      <td>GRO.DD</td>
+      <td>this paper</td>
+      <td>C31GIB. tmRNA-DD; Strain #987</td>
+      <td>MG1655-derived strain with all 321 UAG codons mutated to UAA, deletion of RF1, and tmRNA tag C-terminal amino acids mutated from AA to DD. Retains lambda red cassette for recombineering. Investigated in Figure 2.</td>
+      <td>Strain #987</td>
+      <td>ΔmutS:zeo. Δ(ybhB- bioAB) :[λcI857. Δ(cro-ea59) :tetR-bla]. ΔprfA.ΔtolC .tmRNADD</td>
+      <td>0</td>
+      <td>+RF1</td>
+      <td>n/a</td>
+      <td>DD</td>
+    </tr>
+    <tr>
+      <td>Cell line (E. coli)</td>
+      <td>GRO. DD.prfA+</td>
+      <td>this paper</td>
+      <td>C31GIB. prfA+.tmRNA -DD; Strain #996</td>
+      <td>MG1655-derived strain with all 321 UAG codons mutated to UAA, retains RF1, and tmRNA tag C-terminal amino acids mutated from AA to DD. Retains lambda red cassette for recombineering. Investigated in Figure 2.</td>
+      <td>Strain #996</td>
+      <td>ΔmutS:zeo. Δ(ybhB- bioAB) :[λcI857. Δ(cro-ea59): tetR-bla]. ΔtolC.tm RNADD</td>
+      <td>0</td>
+      <td>∆RF1</td>
+      <td>n/a</td>
+      <td>DD</td>
+    </tr>
+    <tr>
+      <td>Cell line (E. coli)</td>
+      <td>ECNR2</td>
+      <td>10.1016/j.cels .2016.06.009</td>
+      <td>ECNR2.Δmut S:zeocin.Δ λRed; Strain #795</td>
+      <td>MG1655-derived strain that contains 321 UAG codons and retains RF1. Investigated in Figures 3 and 4.</td>
+      <td>Strain #795</td>
+      <td>ΔmutS:zeo</td>
+      <td>321</td>
+      <td>+RF1</td>
+      <td>n/a</td>
+      <td>AA</td>
+    </tr>
+    <tr>
+      <td>Cell line (E. coli)</td>
+      <td>GRO.AA</td>
+      <td>10.1016/j.cels .2016.06.009</td>
+      <td>C31.final. ΔmutS: zeocin.ΔprfA .ΔλRed; Strain #796</td>
+      <td>MG1655-derived strain with all 321 UAG codons mutated to UAA, deletion of RF1. Investigated in Figures 3 and 4.</td>
+      <td>Strain #796</td>
+      <td>ΔmutS: zeo.ΔprfA (GenBank ID: CP006698)</td>
+      <td>0</td>
+      <td>∆RF1</td>
+      <td>n/a</td>
+      <td>AA</td>
+    </tr>
+    <tr>
+      <td>Cell line (E. coli)</td>
+      <td>GRO. AA.∆arfB</td>
+      <td>this paper</td>
+      <td>C31GIB.arfB: tolCorf. ΔλRed; Strain #1230</td>
+      <td>MG1655-derived strain with all 321 UAG codons mutated to UAA, deletion of RF1, and deletion of arfB. Investigated in Figures 3 and 4.</td>
+      <td>Strain #1230</td>
+      <td>ΔmutS: zeo.ΔprfA .arfB:tolC</td>
+      <td>0</td>
+      <td>∆RF1</td>
+      <td>∆ssrA</td>
+      <td>AA</td>
+    </tr>
+    <tr>
+      <td>Cell line (E. coli)</td>
+      <td>GRO. AA.∆ssrA</td>
+      <td>this paper</td>
+      <td>C31GIB.ssrA :tolC.ΔλRed; Strain #1231</td>
+      <td>MG1655-derived strain with all 321 UAG codons mutated to UAA, deletion of RF1, and deletion of ssrA. Investigated in Figures 3 and 4.</td>
+      <td>Strain #1231</td>
+      <td>ΔmutS: zeo.ΔprfA. ssrA:tolC</td>
+      <td>0</td>
+      <td>∆RF1</td>
+      <td>∆arfA</td>
+      <td>AA</td>
+    </tr>
+    <tr>
+      <td>Cell line (E. coli)</td>
+      <td>GRO. AA.∆arfA</td>
+      <td>this paper</td>
+      <td>C31GIB.arfA :tolC.ΔλRed ; Strain #1232</td>
+      <td>MG1655-derived strain with all 321 UAG codons mutated to UAA, deletion of RF1, and deletion of arfA. Investigated in Figures 3 and 4.</td>
+      <td>Strain #1232</td>
+      <td>ΔmutS: zeo.ΔprfA. arfA:tolC</td>
+      <td>0</td>
+      <td>∆RF1</td>
+      <td>∆arfB</td>
+      <td>AA</td>
+    </tr>
+    <tr>
+      <td>Cell line (E. coli)</td>
+      <td>GRO.AA .∆ssrA.∆arfB</td>
+      <td>this paper</td>
+      <td>C31GIB.ΔarfB .ssrA:tolC.Δ λRed; Strain #1233</td>
+      <td>MG1655-derived strain with all 321 UAG codons mutated to UAA, deletion of RF1, and deletion of ssrA and arfB. Investigated in Figures 3 and 4.</td>
+      <td>Strain #1233</td>
+      <td>ΔmutS: zeo.ΔprfA .ΔarfB.ssrA:tolC</td>
+      <td>0</td>
+      <td>∆RF1</td>
+      <td>∆ssrA. ∆arfB</td>
+      <td>AA</td>
+    </tr>
+    <tr>
+      <td>Cell line (E. coli)</td>
+      <td>GRO.AA .∆arfA. ∆arfB</td>
+      <td>this paper</td>
+      <td>C31GIB.Δarf B.arfA:tolC. ΔλRed; Strain #1234</td>
+      <td>MG1655-derived strain with all 321 UAG codons mutated to UAA, deletion of RF1, and deletion of arfA and arfB. Investigated in Figures 3 and 4.</td>
+      <td>Strain #1234</td>
+      <td>ΔmutS: zeo.ΔprfA .ΔarfB.arfA :tolC</td>
+      <td>0</td>
+      <td>∆RF1</td>
+      <td>∆arfA. ∆arfB</td>
+      <td>AA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-GFP antibody</td>
+      <td>other</td>
+      <td>Invitrogen (Ref#: 332600, Lot#: 1513862A)</td>
+      <td>Invitrogen (Ref#: 332600, Lot#: 1513862A); (5.5 μL antibody in 3 mL Milk  + TBST)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse antibody</td>
+      <td>other</td>
+      <td>AbCam (Ref#: ab7023, Lot#: GR157827-1)</td>
+      <td>AbCam (Ref#: ab7023, Lot#: GR157827-1); (2.2 μL antibody in 10 mL Milk  + TBST)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ssrA:tolC</td>
+      <td>this paper; for use, see tolC positive /negative selection in 10.1038/nprot .2014.081</td>
+      <td>dsDNA NJM111</td>
+      <td>The E. coli native tolC gene used to delete ssrA gene via recombineering (10.1038/nprot. 2008.227).</td>
+      <td>dsDNA NJM111</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>arfA:tolC</td>
+      <td>this paper; for use, see tolC positive /negative selection in 10.1038/nprot .2014.081</td>
+      <td>dsDNA NJM112</td>
+      <td>The E. coli native tolC gene used to delete arfA gene via recombineering (10.1038/nprot. 2008.227).</td>
+      <td>dsDNA NJM112</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>arfB:tolC</td>
+      <td>this paper; for use, see tolC positive /negative selection in 10.1038/nprot .2014.081</td>
+      <td>dsDNA NJM113</td>
+      <td>The E. coli native tolC gene used to delete arfB gene via recombineering (10.1038/nprot. 2008.227).</td>
+      <td>dsDNA NJM113</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Doubling time algorithm</td>
+      <td>10.1126/ science.1241459</td>
+      <td>Growth_ Analyze_ GK.m</td>
+      <td>Doubling time used in 10.1126 /science.1241459, written by Gleb Kuznetsov in the lab of Dr. George Church.</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant v1.5.1.2</td>
+      <td>other</td>
+      <td>N/A</td>
+      <td>Commercial software for mass spectrometry analysis.</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism 7</td>
+      <td>other</td>
+      <td>N/A</td>
+      <td>Commercial software for statistical analysis and graphing, provided through Yale University.</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and media
 
 All bacteria used in this study are derived from E. coli ECNR2, which is in turn derived from E. coli MG1655 (GenBank ID: U00096) in which mutS is replaced by a zeocin resistance cassette (Wang et al., 2009; Lajoie et al., 2013b). Additionally, the native bioAB genes found in MG1655 are replaced by the lambda red cassette in ECNR2. This strain is designated ECNR2.AA (see Table 1 for full genotype). For experiments expressing UAG-GFP and UAA-GFP for mass spectrometry, strains with all 321 UAG codons changed to UAA (designated ‘GRO’ strains) were used to control for potential differences in protein expression arising from these mutations (GenBank ID for GRO.AA: CP006698). For all other experiments, control strains labeled wild-type (WT) are MG1655 derivatives retaining all 321 UAG codons. All deletions of ssrA, arfA, and arfB were generated with a tolC resistance cassette via recombineering (Sharan et al., 2009). Modification of the ssrA tag from AANDENYALAA to AANDENYALDD (AA->DD) to increase stability of tagged proteins was performed with MAGE as described previously (Gallagher et al., 2014; Wang et al., 2009). All modifications to strains made in this study were validated through Sanger sequencing (GeneWiz; South Plainfield, NJ).
 
 We performed all protein expression assays and conjugation assays in LB Lennox at pH 7.5. We performed all phage assays in Tryptone-KCl (TK) media as described previously (Jaschke et al., 2012; Ma and Isaacs, 2016; Valentine et al., 2002).
 
-## Phages and plasmids
+### Phages and plasmids
 
 For viral relative titers, we used phage λ cI857 obtained from Dr. John Wertz at the Yale Coli Genetic Stock Center (CGSC) because it is obligately lytic at 37°C, preventing possible confounding factors from lysogeny. We used the conjugative plasmid RK2 described in Isaacs et al. (2011), which is a derivative of the RK2 plasmid described in Pansegrau et al. (1994) carrying blaR instead of kanR. The complete nucleotide sequence for the plasmid is available in NCBI database, Accession L27758.1 and GI 508311. We obtained the F plasmid from the Yale CGSC (NCBI Accession AP001918.1, GI: 8918823) and added KanR from plasmid pZE21 for antibiotic selection.
 
 To create the UAG-GFP and UAA-GFP constructs for protein expression, we cloned an eGFP construct with a C-terminal 6xHis tag downstream of pLtetO into a modified pZE21 vector with kanamycin resistance (kanR)carrying a copy of the tet repressor gene (tetR) to prevent leaked gene expression. We then modified the stop codon of the eGFP construct to end in either a UAG or UAA stop codon.
 
-## Protein expression and purification
+### Protein expression and purification
 
 To obtain GFP for analysis via mass spectrometry, we transformed UAG-GFP and UAA-GFP constructs into wild-type and GRO strains carrying the AA->DD modification in the ssrA tag to prolong the half-life of tagged peptides. Experiments in the absence of the AA->DD modification yielded no peptides with ssrA degradation tags (data not shown). We then grew 50 mL cultures of each strain at 33°C in LB Lennox with 30 μg/mL kanamycin to an OD600 of 1.0 and induced protein expression with the addition of 30 ng/uL anhydrotetracycline (aTC). After incubation overnight, we pelleted cells and resuspended them in sterile phosphate buffer solution, then lysed cells via sonication. Cell debris was then pelleted by centrifugation and GFP purified from supernatant via a nickel resin affinity column. To concentrate protein and exchange buffer for subsequent trypsin digest, we then concentrated GFP via Millipore Amicon spin columns.
 
 For whole western blots on whole cell lysates, we transformed UAG-GFP and UAA-GFP constructs into wild-type, GRO, and GRO strains with deletions of the ribosomal rescue systems. We then grew 5 mL cultures of each strain at 33°C in LB Lennox with kanamycin overnight, then diluted all cultures OD600 of 0.15 in fresh media containing 30 μg/mL kanamycin and 30 ng/uL aTC for 20 hr. To quantify protein expression and compare across strains, we normalized the OD600 of all cultures to 2.5 and pelleted 1 mL of this culture, which we placed in the −80C for 2 hr. We then re-suspended cell pellets in lysis buffer described previously (Aerni et al., 2015), incubated for 10 min on ice, centrifuged lysate, and ran 1:10 dilutions of resulting supernatant on gels for western blot analysis. Overnight starter cultures were diluted to an OD600 of 0.15 into three separate culture tubes, and cells within each tube were induced in parallel for GFP expression. GFP was purified from each of these cultures in parallel.
 
-## Mass spectrometry and proteomic analysis
+### Mass spectrometry and proteomic analysis
 
 Trypsin digest, sample preparation for mass spectrometry, and liquid chromatography elution gradients were performed as described previously (Aerni et al., 2015). Desalted peptides were injected onto a 75 μm ID PicoFrit column (New Objective) packed to 50 cm in length with 1.9 μm ReproSil-Pur 120 Å C18-AQ (Dr. Maisch). Samples were eluted over a 90 min gradient using an EASY-nLC 1000 UPLC (Thermo) paired with a Q Exactive Plus (Thermo), using the following parameters: (MS1) 70,000 resolution, 3 × 106 AGC target, 300–1700 m/z scan range; (MS2) 17,500 resolution, 1 × 106 AGC target, top 10 mode, 1.6 m/z isolation window, 27 normalized collision energy, 90 s dynamic exclusion, unassigned and +1 charge exclusion. Peptide identification from collected spectra was performed using MaxQuant v1.5.1.2 (Cox and Mann, 2008). Samples were searched using custom databases representing potential translational outcomes in response to the UAG codon within the GFP reporter construct (Supplementary file 3 and 4), as well as the E. coli proteome (EcoCyc K-12 MG1655 v17). The searches considered carbamidomethyl (Cys) as a fixed modification and the following variable modifications: acetyl (N-terminal), oxidation (Met), deamidation (Asn, Gln), and phosphorylation (Ser/Thr/Tyr). Discovered peptides had a minimum length of five amino acids and could contain up to three trypsin miscleavage events. A 1% false discovery rate was used. The mass spectrometry proteomics data and the custom search databases have been deposited to the ProteomeXchange Consortium (http://proteomecentral.proteomexchange.org) via the PRIDE partner repository (Vizcaíno et al., 2014) with the dataset identifier PXD009643. Mass spectrometry spectra were manually validated by identifying all spectra with an MS/MS score over 15 and verifying the presence sufficient b- and/or y-ion series.
 
-## Western blot experiments and analysis
+### Western blot experiments and analysis
 
 Western blots were run as described previously using SDS-PAGE gels (Pirman et al., 2015). We ran GFP-6xHis standards of known amount (1, 10, 50, and 100 ng) alongside experimental samples and used these standards to generate linear-range calibration curves to quantify protein abundance in experimental samples (Figure 3—figure supplement 1). Because the antibody signal appeared sublinear in the 0–10 ng regime when we performed linear regression using all standards, we generated separate linear fits using the 1–10 ng standards and the 10–100 ng standards. We then determined experimental sample concentrations using these linear approximations. 20 of the 24 experimental samples quantified fell within or slightly above the 10–100 ng range (with the highest-intensity sample quantified as 136 ng), and 3 of the 24 samples fell within the 1–10 ng range. The one remaining sample, which had a weaker intensity than that of the 1 ng standard, was quantified through a linear approximation between the intensity of the 1 ng sample and of a blank lane with an assumed intensity of zero.
 
 We expressed GFP-6xHis as described above, normalized cell cultures to an OD600 of 2.5, and lysed cells using BugBuster protein extraction reagent (Merck, Darmstadt, Germany). We then ran 10 µl of 1/150 diluted lysate per lane of the SDS-PAGE gel. We obtained primary mouse anti-GFP antibody from Invitrogen (Ref#: 332600, Lot#: 1513862A; RRID:AB_2234927) and goat anti-mouse antibody from AbCam (Ref#: ab7023, Lot#: GR157827-1; RRID:AB_955413). Western blots were developed using Bio-Rad Clarity Western ECL Blotting Substrate and Imaged on a GE Amersham Imager 600. We performed quantification of western blot bands as described previously (Pirman et al., 2015). We repeated three western blots in parallel for each strain induced in separate culture tubes (i.e. biological triplicates, see Protein expression and purification).
 
-## Viral relative titers
+### Viral relative titers
 
 To quantify relative titers, we mixed 100-fold dilutions of phage with 300 µL of mid-log (OD600 = 0.5) cells in 3 mL of TK soft agar and poured onto TK solid agar plates. Starter cultures of cells were diluted to an OD600 of 0.5 into three separate culture tubes, and cells within each tube were infected with phage lambda in parallel (i.e. biological triplicate). Each tube was plated on a separate TK solid agar plate. We incubated plates overnight at 37°C, and counted plaques the next day.
 
-## Quantifying conjugation
+### Quantifying conjugation
 
 We used conjugation conditions described previously (Ma and Isaacs, 2016; Ma et al., 2014). Briefly, we grew cultures of donor and recipient cells to late log in antibiotics selecting for plasmid or recipient and then rinsed and re-suspended in media to remove antibiotics. After concentrating cells to an OD600 of 20, we mixed donors and recipients in 1:1 ratio and spotted onto pre-warmed LB Lennox agar plates in 2 × 20 uL and 6 × 10 uL pattern. For F, we incubated plates at 37°C for 2 hr, then rinsed cells off plate, diluted serially 10-fold, and plated serial dilutions on plates containing antibiotic selecting for conjugants and incubated overnight at 37°C. For RK2, we incubated plates at 37°C for 1 hr, then plated on agar plates selecting for the recipient. To quantify the rate of transfer, we then picked 86 colonies from plates selecting for the recipient strain and patched them onto plates selecting for both recipient and conjugative plasmid, incubated plates overnight at 37°C, and counted the number of patched colonies that grew. After the conjugation, colonies were plated three times to generate technical triplicates.
 
-## Statistical and data analysis
+### Statistical and data analysis
 
 We performed all t-tests and one-way ANOVA tests for statistical significance in GraphPad Prism 7. We calculated doubling times and maximum OD600 values from growth curve data using MATLAB (Newton, MA) code that we generated (Source code 1).
 
-## Experimental replicates
+### Experimental replicates
 
 We used the definitions for biological and technical replicates outlined in Blainey et al., 2014. Biological replicates consist of parallel measurements of different biological samples subjected to the same experiment, and technical replicates are parallel measurements of a single biological sample subjected to experimentation. Data represented in (Figures 3, 4B and D) are biological replicates; data represented in (Figure 4A and C) are technical replicates. Data for all 96-well plate assays (Figures 3A, B and 4B) were obtained as biological replicates: One well of each sample was grown overnight as a starter culture in a 96-well plate. Starter cultures were then inoculated into three separate wells in a separate 96-well plate.

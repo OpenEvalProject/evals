@@ -15,18 +15,18 @@
 
 ### Affiliations
 
-1. https://ror.org/04ev03g22 Science for Life Laboratory, School of Electrical Engineering and Computer Science, KTH Royal Institute of Technology Stockholm Sweden
-2. https://ror.org/03ht1xw27 National Center for Biological Sciences, Tata Institute of Fundamental Research Bangalore India
-3. https://ror.org/02jqj7156 Department of Bioengineering, Volgenau School of Engineering, George Mason University Fairfax United States
-4. https://ror.org/03efmqc40 School of Mathematical and Statistical Sciences, Arizona State University Tempe United States
-5. https://ror.org/02s376052 Blue Brain Project, École Polytechnique Fédérale de Lausanne Lausanne Switzerland
-6. https://ror.org/056d84691 Department of Neuroscience, Karolinska Institute Stockholm Sweden
-7. https://ror.org/033003e23 Faculty of Medicine and Health Technology, Tampere University Tampere Finland
-8. https://ror.org/0069bkg23 Neuroscience Institute, Lithuanian University of Health Sciences Kaunas Lithuania
-9. https://ror.org/04y7eh037 Department of Informatics, Vytautas Magnus University Kaunas Lithuania
-10. https://ror.org/01f7bcy98 Molecular and Cellular Modeling Group, Heidelberg Institute for Theoretical Studies (HITS) Heidelberg Germany
-11. https://ror.org/038t36y30 Center for Molecular Biology (ZMBH), ZMBH-DKFZ Alliance, University of Heidelberg Heidelberg Germany
-12. https://ror.org/038t36y30 Interdisciplinary Center for Scientific Computing (IWR), Heidelberg University Heidelberg Germany
+1. Science for Life Laboratory, School of Electrical Engineering and Computer Science, KTH Royal Institute of Technology Stockholm Sweden ([ROR:04ev03g22](https://ror.org/04ev03g22))
+2. National Center for Biological Sciences, Tata Institute of Fundamental Research Bangalore India ([ROR:03ht1xw27](https://ror.org/03ht1xw27))
+3. Department of Bioengineering, Volgenau School of Engineering, George Mason University Fairfax United States ([ROR:02jqj7156](https://ror.org/02jqj7156))
+4. School of Mathematical and Statistical Sciences, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
+5. Blue Brain Project, École Polytechnique Fédérale de Lausanne Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
+6. Department of Neuroscience, Karolinska Institute Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+7. Faculty of Medicine and Health Technology, Tampere University Tampere Finland ([ROR:033003e23](https://ror.org/033003e23))
+8. Neuroscience Institute, Lithuanian University of Health Sciences Kaunas Lithuania ([ROR:0069bkg23](https://ror.org/0069bkg23))
+9. Department of Informatics, Vytautas Magnus University Kaunas Lithuania ([ROR:04y7eh037](https://ror.org/04y7eh037))
+10. Molecular and Cellular Modeling Group, Heidelberg Institute for Theoretical Studies (HITS) Heidelberg Germany ([ROR:01f7bcy98](https://ror.org/01f7bcy98))
+11. Center for Molecular Biology (ZMBH), ZMBH-DKFZ Alliance, University of Heidelberg Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
+12. Interdisciplinary Center for Scientific Computing (IWR), Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
 
 † Corresponding author
 
@@ -58,23 +58,31 @@ In order to further develop modeling workflow capabilities fulfilling the FAIR c
 
 As we consider the modeling workflow shown in Figure 2, we discuss how FAIR principles can be introduced to this process. To illustrate these steps with a concrete example, we use a classical model of activity-dependent synaptic plasticity, the Bienenstock–Cooper–Munro (BCM) rule (Bienenstock et al., 1982), described in detail below. Here, plasticity depends on pre- and postsynaptic activity, and leads to long-term depression (LTD) or long-term potentiation (LTP). The BCM rule is chosen as an example because it was first modeled phenomenologically and also has been subsequently reproduced using mechanistic models with increasing levels of detail as more data and knowledge have accumulated (Lisman, 1989). More recent models of signaling underlying the BCM rule are substantially data driven (Castellani et al., 2005; Hayer and Bhalla, 2005).
 
-## An example: the BCM rule
+### An example: the BCM rule
 
 The BCM rule is a synaptic plasticity model (Bienenstock et al., 1982) formulated in the context of the development of orientation selectivity in the visual system. It states that as postsynaptic activity increases, there are two domains of plasticity that induce either depression or potentiation. This rule has since been used as the basis for considerable theoretical and experimental work on synaptic plasticity, and here it is employed to illustrate approaches for modeling plasticity and to motivate our discussion of modeling workflows and FAIR approaches.
 
-The original BCM rule describes the rate of change of synaptic weight  asdm(t)dt=ϕ(c(t)) s(t) − ϵ m(t) ,
+The original BCM rule describes the rate of change of synaptic weight  as
 
-where  is the synapse input current, ϵ is the time constant of synaptic decay, and c is the postsynaptic activity. ϕ represents the postsynaptic activation function, formulated asϕ(c)<0forc<ΘMandϕ(c)>0forc>ΘM
+$$
+\frac{dm(t)}{dt}=ϕ(c(t)) s(t) − ϵ m(t) ,
+$$
 
-where ΘM is the activity threshold at which the synaptic strengths are modified. The BCM rule is phenomenological because ϕ does not map to any biological mechanisms, and the authors showed that this learning rule can account for the formation of orientation selectivity for a wide range of values for ΘM. A typical graph of ϕ is depicted in Figure 3A, and similar curves have been obtained experimentally (Kirkwood et al., 1996).
+where  is the synapse input current, $ϵ$ is the time constant of synaptic decay, and $c$ is the postsynaptic activity. $ϕ$ represents the postsynaptic activation function, formulated as
+
+$$
+ϕ(c)<0forc<Θ_{M}andϕ(c)>0forc>Θ_{M}
+$$
+
+where $Θ_{M}$ is the activity threshold at which the synaptic strengths are modified. The BCM rule is phenomenological because $ϕ$ does not map to any biological mechanisms, and the authors showed that this learning rule can account for the formation of orientation selectivity for a wide range of values for $Θ_{M}$. A typical graph of $ϕ$ is depicted in Figure 3A, and similar curves have been obtained experimentally (Kirkwood et al., 1996).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/69013/elife-69013-fig3-v1.jpg)
 
-**Figure 3.:** (A) Original version where the rate of plasticity change, , is a function of the stimulus strength ϕ. At the threshold c the sign of synaptic change flips from negative to positive. (ΘMB) Simplified mechanistic (chemical) model based on known pathways that could implement the BCM rule. The calcium stimulus activates both a kinase, CaMKII, and a phosphatase, CaN. These act in an antagonistic manner on the AMPA receptor, leading to its dephosphorylation and removal from the synapse when the calcium concentration, [Ca2+], is moderate, but insertion when [Ca2+] is high. The output from the model is p_AMPAR, the phospho-form of AMPAR, which is inserted into the membrane. (C) Simulated response of the model in Panel B, measured as phosphorylated receptor p_AMPAR. This curve has the same shape as the abstract BCM curve model in Panel A, including a threshold level of [Ca2+] =  at which the synaptic change as measured by AMPA phosphorylation changes sign from negative to positive. The basal fraction of p_AMPAR is 0.4. Model from accession 96 on DOQCS (see ΘMTable 1, Row 15).
+**Figure 3.:** (A) Original version where the rate of plasticity change, $ϕ$, is a function of the stimulus strength $c$. At the threshold $Θ_{M}$ the sign of synaptic change flips from negative to positive. (B) Simplified mechanistic (chemical) model based on known pathways that could implement the BCM rule. The calcium stimulus activates both a kinase, CaMKII, and a phosphatase, CaN. These act in an antagonistic manner on the AMPA receptor, leading to its dephosphorylation and removal from the synapse when the calcium concentration, [Ca2+], is moderate, but insertion when [Ca2+] is high. The output from the model is p_AMPAR, the phospho-form of AMPAR, which is inserted into the membrane. (C) Simulated response of the model in Panel B, measured as phosphorylated receptor p_AMPAR. This curve has the same shape as the abstract BCM curve model in Panel A, including a threshold level of [Ca2+] = $Θ_{M}$ at which the synaptic change as measured by AMPA phosphorylation changes sign from negative to positive. The basal fraction of p_AMPAR is 0.4. Model from accession 96 on DOQCS (see Table 1, Row 15).
 
 This model was published in a widely read society journal and predates today’s FAIR principles. The article included simulations of the model equations, but, lacking today’s open-source, code-sharing infrastructure, readers were left to their own skills to replicate these implementations. Like many abstract models, the BCM model is a mostly qualitative representation of concepts derived from a substantial amount of data, including many features of synaptic plasticity, network-level data for orientation selectivity, and data for the degradation of orientation selectivity in the case of monocular deprivation and similar experiments. The publication includes simulations of several such cases, showing a qualitative match to data but does not explain how parameters were derived. In summary, due to the minimal, abstract nature of the model, the BCM study is not difficult to reproduce; however, there is no reference implementation available for simulations, and the parameters for several simulations are not available. Thus, the published simulations and parameters are not consistent with today’s FAIR principles.
 
-Moving forward a few decades, one finds mechanistic, mass-action models of synaptic signaling and the BCM rule, where the relevance of FAIR and data-driven approaches becomes more apparent. First, the quantities under consideration (input activity and synaptic strength) correspond directly to synaptic molecules. Experimental data tell us that intracellular calcium concentration is a good proxy for postsynaptic activity, c, and that the phosphorylation state of the AMPA receptor is one of the proxies for synaptic efficacy, m. Filling in the reaction diagram, one obtains a simplified reaction network of the form shown in Figure 3B. Remarkably, the properties of these molecules result in a response that resembles the BCM curve. The phosphatase calcineurin (CaN) has a high affinity for calcium bound calmodulin, and also can partly become activated directly by calcium (Creamer, 2020). Hence, it is activated at moderate calcium and triggers an initial decrease in phosphorylated AMPAR and LTD (ϕ(c)<0 from the BCM formulation). Calcium/calmodulin-dependent protein kinase II (CaMKII) has a weaker affinity for calcium bound calmodulin, but is present in overwhelming amounts, so its activation surpasses CaN at high calcium concentrations, thus implementing ϕ(c)>0 for c>ΘM, and leading to increase in phosphorylated AMPAR and thus LTP. The resulting curve from this mechanistic but simplified model matches the BCM curve (Figure 3C). More detailed mechanistic versions of the BCM model have been implemented using known synaptic chemistry in considerably greater detail (Lisman, 1989; Hayer and Bhalla, 2005).
+Moving forward a few decades, one finds mechanistic, mass-action models of synaptic signaling and the BCM rule, where the relevance of FAIR and data-driven approaches becomes more apparent. First, the quantities under consideration (input activity and synaptic strength) correspond directly to synaptic molecules. Experimental data tell us that intracellular calcium concentration is a good proxy for postsynaptic activity, $c$, and that the phosphorylation state of the AMPA receptor is one of the proxies for synaptic efficacy, $m$. Filling in the reaction diagram, one obtains a simplified reaction network of the form shown in Figure 3B. Remarkably, the properties of these molecules result in a response that resembles the BCM curve. The phosphatase calcineurin (CaN) has a high affinity for calcium bound calmodulin, and also can partly become activated directly by calcium (Creamer, 2020). Hence, it is activated at moderate calcium and triggers an initial decrease in phosphorylated AMPAR and LTD ($ϕ(c)<0$ from the BCM formulation). Calcium/calmodulin-dependent protein kinase II (CaMKII) has a weaker affinity for calcium bound calmodulin, but is present in overwhelming amounts, so its activation surpasses CaN at high calcium concentrations, thus implementing $ϕ(c)>0$ for $c>Θ_{M}$, and leading to increase in phosphorylated AMPAR and thus LTP. The resulting curve from this mechanistic but simplified model matches the BCM curve (Figure 3C). More detailed mechanistic versions of the BCM model have been implemented using known synaptic chemistry in considerably greater detail (Lisman, 1989; Hayer and Bhalla, 2005).
 
 How FAIR and data driven are these more recent models? The Lisman, 2017 is not consistent with our current definition of FAIR: it provides full disclosure of equations and rate constants, but reuse requires reimplementation. The more recent model (Hayer and Bhalla, 2005) exists in at least two open-access databases, the Database of Quantitative Cellular Signaling, DOQCS (Sivakumaran et al., 2003), and BioModels (Li et al., 2010), hence is findable and accessible. It has been converted to the standardized SBML model description format, promoting interoperability and reusability. The DOQCS version has citations and calculations for the derivation of some of the parameters, and the BioModels version maintains the provenance, referencing the DOQCS entry from which it was derived.
 
@@ -86,9 +94,165 @@ To summarize, the history of models that implement the BCM rule demonstrates a c
 
 A typical model development process can be divided into different stages or modules, as illustrated in Figure 2. The model foundation (Figure 2, box 1) stage corresponds to the process of collecting the experimental data and prior knowledge that will be used for the rest of the modeling process and combine these into an initial plan for the model structure (or topology), that is, a description of the different model entities and how they interact. In the next stage, the specification of the model and data (Figure 2, box 2a), the information from step 1 is formalized into a standardized, machine readable format. During the model refinement stage (Figure 2, box 2b), the model is transferred to a mathematical formalism, simulated, calibrated, and refined. After model refinement is complete, the specification files are to be updated with this new information. Finally, during the model usage stage (Figure 2, box 3), the resulting model is validated, analyzed, and used to predict or investigate additional phenomena. Some examples of tools and formats that can be used in this process are given in Table 1–4. Note that these tables do not provide an exhaustive list, but rather a starting point for discussion.
 
-## Model foundation: experimental data and prior knowledge
+### Model foundation: experimental data and prior knowledge
 
 The Model foundation (Figure 2, box 1) may include information from published literature, novel unpublished experimental data, experimental data and models retrieved from databases, or, for multiscale modeling, information from models at other biological scales (Table 1). These different data sources may include qualitative as well as quantitative data. Qualitative data give information about qualitative traits such as the possibility that two proteins interact or knowledge of positive or negative correlations, which are useful for defining the structure of the model, that is the modeling entities and how they interact. As an example, in the case of intracellular pathway models, such model structure defines which molecular species and reactions to consider, as exemplified in the chemical signaling network in Figure 3B. Quantitative data, on the other hand, are needed to specify quantitative entities in models, such as rate constants, equilibrium constants, or initial concentrations of molecules. This can be done either through direct measurements or indirectly during the model refinement stage (Figure 2, box 2b), where model outputs are compared to experimental readouts.
+
+**Table 1.**
+ Databases in cellular neuroscience and systems biology.These are some of the commonly used databases for creating and constraining models at the intracellular and cellular scale.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Database, alphabetically</th>
+      <th>Purpose/focus</th>
+      <th>Reference</th>
+      <th>Homepage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="4">Computational models</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>BioModels Database</td>
+      <td>Physiologically and pharmaceutically relevant mechanistic models in standard formats</td>
+      <td>Li et al., 2010</td>
+      <td>http://www.ebi.ac.uk/biomodels/</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>MoDEL Central Nervous System</td>
+      <td>Atomistic-MD trajectories for relevant signal transduction proteins</td>
+      <td></td>
+      <td>http://mmb.irbbarcelona.org/MoDEL-CNS/</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>NeuroML-DB</td>
+      <td>Models of channels, cells, circuits, and their properties and behavior</td>
+      <td>Birgiolas et al., 2015</td>
+      <td>https://neuroml-db.org/</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>NeuroElectro</td>
+      <td>Extract and compile from literature electrophysiological properties of diverse neuron types</td>
+      <td>Tripathy et al., 2014</td>
+      <td>https://neuroelectro.org</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>ModelDB</td>
+      <td>Computational neuroscience model</td>
+      <td>McDougal et al., 2017</td>
+      <td>https://senselab.med.yale.edu/modeldb/</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Ion Channel Genealogy</td>
+      <td>Ion channel models</td>
+      <td>Podlaski et al., 2017</td>
+      <td>https://icg.neurotheory.ox.ac.uk/</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Experimental data</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Allen Brain Atlas</td>
+      <td>Human and mouse brain data</td>
+      <td>Lein et al., 2007</td>
+      <td>http://www.brain-map.org/</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>BRENDA</td>
+      <td>Enzyme kinetic data</td>
+      <td>Chang et al., 2021</td>
+      <td>https://www.brenda-enzymes.org/</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>CRCNS - Collaborative Research in Computational Neuroscience</td>
+      <td>Forum for sharing tools and data for testing computational models and new analysis methods</td>
+      <td>Teeters et al., 2008</td>
+      <td>https://CRCNS.org</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>NeuroMorpho</td>
+      <td>Neuronal cell 3D reconstructions</td>
+      <td>Ascoli et al., 2007</td>
+      <td>http://neuromorpho.org/</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Protein Data Bank (PDB)</td>
+      <td>3D structures of proteins, nucleic acids, and complex assemblies</td>
+      <td>wwPDB consortium, 2019</td>
+      <td>http://www.wwpdb.org/</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Sabio-RK</td>
+      <td>Curated database on biochemical reactions, kinetic rate equations with parameters and experimental conditions</td>
+      <td>Wittig et al., 2012</td>
+      <td>http://sabio.h-its.org/</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Yale Protein Expression Database (YPED)</td>
+      <td>Proteomic and small molecules</td>
+      <td>Colangelo et al., 2019</td>
+      <td>https://medicine.yale.edu/keck/nida/yped/</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Experimental data and models</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Channelpedia</td>
+      <td>Ion channel data and channel models</td>
+      <td>Ranjan et al., 2011</td>
+      <td>https://channelpedia.epfl.ch/</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>DOQCS The Database of Quantitative Cellular Signaling</td>
+      <td>Kinetic data for signaling molecules and interactions</td>
+      <td>Sivakumaran et al., 2003</td>
+      <td>http://doqcs.ncbs.res.in/</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>EBRAINS (including EBRAINS Knowledge Graph)</td>
+      <td>Digital research infrastructure that gathers data, models and tools for brain-related research</td>
+      <td></td>
+      <td>https://ebrains.eu(https://search.kg.ebrains.eu)</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>FAIRDOMHub</td>
+      <td>The FAIRDOMHub is a repository for publishing FAIR Data, Operating procedures and Models for the Systems Biology community</td>
+      <td>Wolstencroft et al., 2017</td>
+      <td>https://fairdomhub.org/</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Open Source Brain</td>
+      <td>A resource for sharing and collaboratively developing computational models of neural systems</td>
+      <td>Gleeson et al., 2019</td>
+      <td>https://www.opensourcebrain.org/</td>
+    </tr>
+  </tbody>
+</table>
 
 Findable data, data provenance, and data reusability are key components of the FAIR principles (Wittig et al., 2017) and are important for this first step of the modeling process. FAIR modeling workflows are facilitated by the many databases that can be used to constrain neuroscience models, which also includes databases for models from earlier studies. As mentioned above, the focus of this review is on cellular- and intracellular-level models, and data and model sharing resources for this level can be found in Table 1. For example, summary statistics (e.g. [Tripathy et al., 2014]) and morphological data for different neuron types (e.g. [Ascoli et al., 2007]), and integrated data for gene expression, connectivity, and neuroanatomy (e.g. Allen Brain Atlas [Lein et al., 2007; Sunkin et al., 2013]) are useful for constructing models at the cellular level. Often, published computational neuroscience models are shared via ModelDB (McDougal et al., 2017), which includes over 1700 models and is tightly coupled with NeuronDB, a database of neuronal properties that are used to constrain models based on experimental observations. Other repositories of neuroscience models include NeuroML-DB with over 1500 models in NeuroML format at multiple scales (Birgiolas et al., 2015), and Open Source Brain, a platform for collaborating, simulating, and sharing neuroscience models (Gleeson et al., 2019). Systems biology databases, such as BRENDA (Chang et al., 2021) and SABIO-RK (Wittig et al., 2018), contain kinetic data on enzyme kinetics and protein–protein interactions, which are critical for modeling subcellular signaling pathways. SABIO-RK is a curated database that was specifically designed to facilitate systems biology modeling, which provides reaction kinetics data along with information on experimental conditions, units, and kinetic rate equations. Systems biology models are also available through model databases such as BioModels, which includes many models that are relevant to systems biology level models in neuroscience (Malik-Sheriff et al., 2020). One important feature of databases for experimental data and models is the accompanying metadata, which are critical for finding and using these data. For example, associating ontology references to biological terms makes it possible to use the associated domain knowledge in formulating search strategies (Birgiolas et al., 2015) and in the model building process.
 
@@ -96,13 +260,149 @@ For the synaptic plasticity model example described here, the models that employ
 
 In spite of the large amounts of data available at different biological scales, data are still sparse if one wants to build mechanistic, ‘bottom-up’ models to better understand multiscale, causal chains of events such as how properties of proteins affect cellular-level phenomena or how cellular and synaptic properties affect network dynamics and function (Klipp et al., 2010). However, it is sometimes possible to use predictions from a model at finer biological resolution to provide constraints to model parameters at the next level of abstraction (Boras et al., 2015; Stein et al., 2007; Wang et al., 2018; Xie et al., 2014). For example, molecular dynamics simulations which use biomolecular structural data can provide important quantitative or qualitative constraints on kinetic parameters, binding affinities, and their modulation by allosteric interactions in intracellular signaling pathway models (Bruce et al., 2019b, Bruce et al., 2019a; Gabdoulline et al., 2003; van Keulen et al., 2022). Tools exist to facilitate the use of biomolecular structural data in model building (Stein et al., 2007). For example, SYCAMORE (Weidemann et al., 2008) can use protein structural data along with published kinetic measurements for parameter assignment in the construction of signaling pathway models. Additional modeling tools and use cases for reuse of model components in multiscale models are being implemented through the EBRAINS infrastructure (ebrains.eu). This combination and reuse of model components at multiple biological scales emphasizes the importance of FAIR principles, since model components must be not only reusable, but also interoperable and findible for this to be achieved.
 
-## Specifications of model and data
+### Specifications of model and data
 
 An important part of a FAIR modeling workflow is the specification of the model and experimental data (Figure 2, box 2a). Standardized formats for models have been developed with a goal of making it possible to efficiently reproduce the modeling results of another laboratory. Specifically, standardized model formats are critical for both interoperability and reuse. If we want to reproduce the entire modeling process, including model refinement, this requires information not only about the model, but also the quantitative data used for calibration and validation, a description of the different simulation experiments performed (corresponding to the biological experiments to be reproduced or predicted), as well as the prior assumptions made on parameters, all in machine readable format. A minimal requirement on such a specification is (but not limited to):
 
 The prior assumptions on parameter values inform the model refinement process and may contain parameter ranges or distributions, or previously estimated values based on data, including error bounds. To be complete, the model and data specification may also include metadata on the calibration method used and identifiers for all model entities. This recommendation is similar to MIASE (Minimum Information About a Simulation Experiment) compliance; in Waltemath et al., 2011 the authors list more specific measures that authors can take to make their models easier to simulate by others. These simulation experiments can range from a time series simulation, to a parameter scan, to a sensitivity or bifurcation analysis, methods that are further described below. COMBINE (co.mbine.org, Hucka et al., 2015) is an initiative to coordinate the development of the various community standards and formats for computational models.
 
 There are many ways to archive and share this information, and we discuss several possibilities. One approach is to maintain all information in one location, but often, a more distributed approach is required. In either case, the information should be clearly described and linked through metadata, including unique persistent identifiers to the different components like models or experimental data. In Table 2, we list various model description standards and file formats that can be used, and in later sections we describe ways to retrieve permanent unique identifiers.
+
+**Table 2.**
+ Model standards and file formats in cellular neuroscience and systems biology.The formats described in this table allow standardized representation of models and their porting across simulation platforms.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Purpose</th>
+      <th>Webpage</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="4">Formats for intracellular models in systems biology</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>SBML</td>
+      <td>Systems biology markup language, for storing and sharing models</td>
+      <td>https://sbml.org</td>
+      <td>Hucka et al., 2003</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>SBtab</td>
+      <td>Systems Biology tables, for storing models (and data for parameter estimation) in spreadsheet form</td>
+      <td>https://sbtab.net/</td>
+      <td>Lubitz et al., 2016</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>CellML</td>
+      <td>Store and exchange mathematical models, primarily in Biology</td>
+      <td>https://www.cellml.org/</td>
+      <td>Kohl et al., 2001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Formats for cellular and network-level models in Neuroscience</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>NeuroML</td>
+      <td>A XML-based description language that provides a common data format for defining and exchanging descriptions of neuronal cell and network models</td>
+      <td>http://www.neuroml.org/</td>
+      <td>Gleeson et al., 2010</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>NineML</td>
+      <td>Unambiguous description of neuronal network models</td>
+      <td>https://github.com/INCF/nineml-spec</td>
+      <td>Raikov et al., 2011</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>NestML</td>
+      <td>Domain-specific language for the specification of neuron models (python)</td>
+      <td>https://github.com/nest/nestml</td>
+      <td>Plotnikov et al., 2016</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Custom formats for specific simulators</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>sbproj</td>
+      <td>Simbiology Project file</td>
+      <td>https://se.mathworks.com/products/simbiology.html</td>
+      <td>Schmidt and Jirstrand, 2006</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>COPASI project file</td>
+      <td>COPASI native format for models and simulations</td>
+      <td>http://copasi.org/</td>
+      <td>Hoops et al., 2006</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>SONATA</td>
+      <td>Efficient descriptions of large-scale neural neworks</td>
+      <td>https://github.com/AllenInstitute/sonata</td>
+      <td>Dai et al., 2020</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>JSON (HillTau)</td>
+      <td>JSON files for FindSim and HillTau model reduction method</td>
+      <td>https://github.com/BhallaLab/HillTau</td>
+      <td>Bhalla, 2020</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>MOD</td>
+      <td>Expanding NEURON’s repertoire of mechanisms with NMODL</td>
+      <td>https://www.neuron.yale.edu/neuron/</td>
+      <td>Hines and Carnevale, 2000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Formats for specification of parameter estimation problems</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>SBtab</td>
+      <td>Systems Biology tables, for storing both models and data for parameter estimation in spreadsheet form</td>
+      <td>https://sbtab.net/</td>
+      <td>Lubitz et al., 2016</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>PEtab</td>
+      <td>Interoperable specification of parameter estimation problems in systems biology</td>
+      <td>https://github.com/PEtab-dev/PEtab</td>
+      <td>Schmiester et al., 2021</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Formats for specification of experiments and data</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>SED-ML</td>
+      <td>Simulation Experiment Description Markup Language</td>
+      <td>https://sed-ml.org</td>
+      <td>Waltemath et al., 2011</td>
+    </tr>
+  </tbody>
+</table>
 
 At the systems biology level, examples of existing storage formats for the information above include SBtab (Lubitz et al., 2016) and the JSON format used in FindSim (Viswan et al., 2018). SBtab is well structured, so it is machine readable as well as human readable, and it is able to capture information about biochemical network models and associated calibration data in a single location. SBtab has defined fields for sbo (systems biology ontology) terms (Courtot et al., 2011), as well as database identifiers (e.g. to UniprotKB [UniProt Consortium, 2021] or KEGG [Kanehisa and Goto, 2000]), and additional information can be included to map between experimental readouts and model simulation outputs. In the FindSim framework, an experiment is codified as a file with information about the experimental stimuli and the readouts, as well as how they map to the model output.
 
@@ -112,9 +412,198 @@ For neuron and circuit models at other scales, several standards have been devel
 
 How should the abstract and the mechanistic BCM models be specified using a standardized approach? The abstract version of the model should be defined using an existing simulator independent standard, such as SBtab or SBML, and should include the published data for the shape of the curve (Kirkwood et al., 1996). Similarly, the mechanistic version of the BCM model should be specified using SBML or SBtab, where the chemical experiments are defined using, for example, SBtab or JSON for FindSim. An important validation step for the mechanistic model would be to recreate the same final curve used to constrain the abstract model, demonstrating that the two formulations converge. To be able to reproduce the parameter estimation process, information on prior assumptions made on possible parameter ranges should be added to the files, as well as metadata concerning the optimization procedure.
 
-## Model simulation
+### Model simulation
 
 Over the past 25 years, many general purpose and domain-specific simulation tools have been developed for modeling and simulation of biochemical and biophysical events in cells and circuits and even whole brain regions (Figure 2, boxes 2b and 3). Representative examples of these tools are provided in Table 3.
+
+**Table 3.**
+ Software for model simulation.These tools span a wide range of scales and levels of abstraction.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Purpose</th>
+      <th>Interchange file formats supported</th>
+      <th>Homepage</th>
+      <th>RRID</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="6">Molecular level</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>BioNetGen</td>
+      <td>Rule-based modeling framework (NFsim)</td>
+      <td>BNGL, SBML</td>
+      <td>http://bionetgen.org/</td>
+      <td></td>
+      <td>Harris et al., 2016</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>COPASI</td>
+      <td>Biochemical system simulator</td>
+      <td>SBML</td>
+      <td>http://copasi.org/</td>
+      <td>SCR_014260</td>
+      <td>Hoops et al., 2006</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>IQM Tools</td>
+      <td>Systems Biology modeling toolbox in MATLAB; successor to SBPOP</td>
+      <td>SBML</td>
+      <td>https://iqmtools.intiquan.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>MCell</td>
+      <td>Simulation tool for modeling the movements and reactions of molecules within and between cells by using spatially realistic 3D cellular models and specialized Monte Carlo algorithms</td>
+      <td>SBML</td>
+      <td>https://mcell.org/</td>
+      <td>SCR_007307</td>
+      <td>Stiles et al., 1996; Stiles and Bartol, 2001, Kerr et al., 2008</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>NeuroRD</td>
+      <td>Stochastic diffusion simulator to model intracellular signaling pathways</td>
+      <td>XML</td>
+      <td>http://krasnow1.gmu.edu/CENlab/software.html</td>
+      <td>SCR_014769</td>
+      <td>Oliveira et al., 2010</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Simbiology</td>
+      <td>MATLAB’s systems biology toolbox (Mathworks)</td>
+      <td>sbproj</td>
+      <td>https://www.mathworks.com/products/simbiology.html</td>
+      <td></td>
+      <td>Schmidt and Jirstrand, 2006</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>STEPS</td>
+      <td>Simulation tool for cellular signaling and biochemical pathways to build systems that describe reaction–diffusion of molecules and membrane potential</td>
+      <td>SBML</td>
+      <td>http://steps.sourceforge.net/STEPS/default.php</td>
+      <td>SCR_008742</td>
+      <td>Hepburn et al., 2012</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>VCell</td>
+      <td>Simulation tool for deterministic, stochastic, and hybrid deterministic–stochastic models of molecular reactions, diffusion and electrophysiology</td>
+      <td>SBML, CellML</td>
+      <td>https://vcell.org/</td>
+      <td>SCR_007421</td>
+      <td>Schaff et al., 1997</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="6">Cellular level</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>NEURON</td>
+      <td>Simulation environment to build and use computational models of neurons and networks of neurons; also subcellular simulations with the reaction–diffusion module</td>
+      <td>SONATA (after conversion) for networks, but can also use NeuroML and SBML</td>
+      <td>https://neuron.yale.edu/neuron/</td>
+      <td>SCR_005393</td>
+      <td>Carnevale and Hines, 2009; Hines and Carnevale, 1997</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="6">Network level</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>BRIAN</td>
+      <td>Simulation tool for spiking neural networks</td>
+      <td>SONATA</td>
+      <td>https://briansimulator.org/</td>
+      <td>SCR_002998</td>
+      <td>Goodman and Brette, 2008; Stimberg et al., 2019</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>NEST</td>
+      <td>Simulation tools for large-scale biologically realistic neuronal networks</td>
+      <td>SONATA (after conversion)</td>
+      <td>https://www.nest-initiative.org/</td>
+      <td>SCR_002963</td>
+      <td>Diesmann et al., 1999</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>PyNN</td>
+      <td>A Common Interface for Neuronal Network Simulators</td>
+      <td>SONATA</td>
+      <td>http://neuralensemble.org/PyNN/</td>
+      <td>SCR_005393</td>
+      <td>Davison et al., 2008</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="6">Multiscale</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>MOOSE</td>
+      <td>Multiscale object-oriented simulation environment to simulate subcellular components, neurons, circuits, and large networks.</td>
+      <td>SBML, NeuroML</td>
+      <td>https://moose.ncbs.res.in/</td>
+      <td>SCR_002715</td>
+      <td>Ray and Bhalla, 2008</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>NetPyNe</td>
+      <td>Multiscale models for subcellular to large network levels</td>
+      <td>NeuroML/SONATA</td>
+      <td>netpyne.org</td>
+      <td>SCR_014758</td>
+      <td>Dura-Bernal et al., 2019</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>PottersWheel</td>
+      <td>Comprehensive modeling framework in MATLAB</td>
+      <td></td>
+      <td>https://potterswheel.de/</td>
+      <td>SCR_021118</td>
+      <td>Maiwald and Timmer, 2008</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>SYCAMORE</td>
+      <td>Building, simulation, and analysis of models of biochemical systems</td>
+      <td>SBML</td>
+      <td>http://sycamore.h-its.org/sycamore/</td>
+      <td>SCR_021117</td>
+      <td>Weidemann et al., 2008</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>The Virtual Brain</td>
+      <td>Create personalized brain models and simulate multiscale networks</td>
+      <td>hdf5, Nifti, GIFTI</td>
+      <td>https://thevirtualbrain.org/</td>
+      <td>SCR_002249</td>
+      <td>Sanz-Leon et al., 2015</td>
+    </tr>
+  </tbody>
+</table>
 
 In simulations, molecular reactions and cellular- or network-level behavior and interactions are often described by a set of ordinary differential equations (Hodgkin and Huxley, 1952) or stochastic differential equations (Manninen et al., 2006). Standardized model specifications like those described above are interpreted by simulators as terms and parameters in the differential equations, and given appropriate initial values, the mathematical equations are solved using numerical solvers. In systems biology, Boolean networks have also been applied successfully, for example Calzone et al., 2010. Another useful modeling paradigm is rule-based modeling (Boutillier et al., 2018; Danos and Laneve, 2004; Harris et al., 2016).
 
@@ -122,11 +611,11 @@ For biochemical models, a common approach is to model them deterministically usi
 
 Table 3 provides examples of widely used model simulation frameworks for different spatial scales – from the molecular level to networks of spiking neurons and whole brain regions (Brette et al., 2007; Sanz-Leon et al., 2015; Einevoll et al., 2019) It is, of course, valueble when such simulators and also other software are interoperable. This is facilitated by standardized, machine readable formats for model descriptions. Interoperability can have another meaning in addition to file format compatibility among simulators and other software: the possibility to run two simulation frameworks in parallel (e.g., at different biological scales), denoted cosimulation, and establish communication between them (Cannon et al., 2007; Djurfeldt et al., 2010; Newton et al., 2018).
 
-## Model refinement
+### Model refinement
 
 Once a model can be simulated, the next critical step in model development is model refinement: the adjustment of the model structure and parameter values (Figure 2, box 2b). Here, we emphasize automation and the use of new data science methodologies to improve this process. This is important as the amount of data rapidly increases, and models become more complex. Other important aspects of model refinement are the inclusion of measures of uncertainty into the parameter estimates and predictions, as well as making the refinement process reproducible.
 
-## Model structure constraints
+#### Model structure constraints
 
 There are often physical or mathematical conditions that relate to the structure of the model, which must be respected for the model to be valid, in most cases to make sure that physical laws of some kind are not violated. Automatic methods for such structure refinement require machine readable standardized model specifications that can be updated easily in an automatic fashion, like those described above. Such standardized formats also enable interoperability so that different software can be used for different types of refinement on the same model.
 
@@ -134,7 +623,7 @@ For models at the biological scale of neurons or circuits, model structure refin
 
 Models at the subcellular level often require structure refinements that include modifications due to mass conservation laws and thermodynamic parameter relationships (Wegscheider, 1902; Klipp et al., 2016, chapter 4). Mass conservation means that the total quantity of a substance should not change, for example the total of all forms of protein kinase A (holoenzyme or bound to cAMP) should remain constant. The exception is when molecules are deliberately introduced or removed from the simulation. Thermodynamic constraints require that the combined reaction rates from a set of substrates to a set of products need to be the same regardless of the route taken. Checking for conservation laws and thermodynamic constraints can be done in a semi-automatic fashion through stoichiometric analysis, as is done for conserved substances by the Copasi simulator (Hoops et al., 2006). Software is also available to introduce such relationships semiautomatically into the SBtab format (Santos et al., 2021).
 
-## Parameter estimation and uncertainty quantification
+#### Parameter estimation and uncertainty quantification
 
 The refinement of model parameter values, called parameter estimation or calibration, is typically an iterative process where the model is simulated, compared to experimental data, and then updated — repeatedly (Figure 2, box 2b). This requires model and experimental data in a machine readable (preferably standardized) form and software that efficiently searches the parameter space. Parameter estimation is a field under development, and here we describe classical optimization methods as well as some data science methods for uncertainty quantification more novel to this field. More information is given in, for example, Ashyraliyev et al., 2009; Mitra and Hlavacek, 2019; Sun et al., 2012.
 
@@ -144,6 +633,143 @@ In the section ‘Model specification and data’, we describe different formats
 
 Numerous approaches have been developed for finding parameters that allow a model to match experimental data through optimization (Ashyraliyev et al., 2009; Villaverde et al., 2019). For most models, the optimization method must be able to deal with multiple local minima. A key aspect of optimization is to specify the function that compares simulations with experimental data to find the best set of parameters. This function is often called the objective function, cost function, or energy function and includes a decision on how the different experiments should be weighed against each other. The most common function to use is the sum of the squared differences between simulations and data, weighted by the measurement error (Ashyraliyev et al., 2009). Some existing tools that can be used for parameter estimation are listed in Table 4.
 
+**Table 4.**
+ Tools for model refinement and analysis.This table exemplifies some common and new tools for parameter estimation and different types of model analyses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Purpose</th>
+      <th>Interchange file formats supported</th>
+      <th>Homepage</th>
+      <th>RRID</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Ajustador</td>
+      <td>Data-driven parameter estimation for Moose and NeuroRD models. Provides parameter distributions.</td>
+      <td>CSV, MOOSE, NeuroRD</td>
+      <td>https://neurord.github.io/ajustador/</td>
+      <td></td>
+      <td>Jedrzejewski-Szmek and Blackwell, 2016</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>AMICI</td>
+      <td>High-level language bindings to CVODE and SBML support.</td>
+      <td>SBML</td>
+      <td>https://amici.readthedocs.io/en/latest/index.html</td>
+      <td></td>
+      <td>Fröhlich et al., 2021</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>BluePyOpt</td>
+      <td>Data-driven model parameter optimization.</td>
+      <td></td>
+      <td>https://github.com/BlueBrain/BluePyOpt</td>
+      <td>SCR_014753</td>
+      <td>Van Geit et al., 2016</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>PottersWheel</td>
+      <td>Parameter estimation, profile likelihood: determination of identifiabilty and confidence intervals for parameters.</td>
+      <td>SBML</td>
+      <td>https://potterswheel.de/</td>
+      <td>SCR_021118</td>
+      <td>Maiwald and Timmer, 2008; Raue et al., 2009</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>pyABC</td>
+      <td>Parameter estimation through Approximate Bayesian Computation (likelihood free Bayesian approch).</td>
+      <td>PEtab, SBML via AMICI</td>
+      <td>https://pyabc.readthedocs.io/en/latest/</td>
+      <td></td>
+      <td>Klinger et al., 2018</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Simbiology</td>
+      <td>MATLAB’s systems biology toolbox (Mathworks), performs, for example, parameter estimation, local and global sensitivity analysis, and more.</td>
+      <td>SBML</td>
+      <td>https://se.mathworks.com/products/simbiology.html</td>
+      <td></td>
+      <td>Schmidt and Jirstrand, 2006</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Uncertainpy</td>
+      <td>Global Sensitivity Analysis</td>
+      <td>NEURON and NEST models</td>
+      <td>https://github.com/simetenn/uncertainpy</td>
+      <td></td>
+      <td>Tennøe et al., 2018</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>XPPAUT/AUTO</td>
+      <td>Model analysis including phase plane analyses, stability analysis, vector fields, null clines, and more XPPAUT contains a frontend to AUTO for bifurcation analysis.</td>
+      <td></td>
+      <td>http://www.math.pitt.edu/~bard/xpp/xpp.html</td>
+      <td>SCR_001996</td>
+      <td>Ermentrout, 2002 (XPPAUT)</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>pyPESTO</td>
+      <td>Toolbox for parameter estimation</td>
+      <td>SBML, PEtab</td>
+      <td>https://github.com/ICB-DCM/pyPESTO/</td>
+      <td>SCR_016891</td>
+      <td>Stapor et al., 2018</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>COPASI</td>
+      <td>Simulation and analysis of biochemical network models</td>
+      <td>SBML</td>
+      <td>https://copasi.org</td>
+      <td>SCR_014260</td>
+      <td>Hoops et al., 2006</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>PyBioNetFit</td>
+      <td>Parameterizing biological models</td>
+      <td>BNGL, SBML, BPSL</td>
+      <td>https://bionetfit.nau.edu/</td>
+      <td></td>
+      <td>Mitra et al., 2019</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Data2Dynamics</td>
+      <td>Establishing ODE models based on experimental data</td>
+      <td>SBML</td>
+      <td>https://github.com/Data2Dynamics/d2d</td>
+      <td></td>
+      <td>Raue et al., 2015</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>HippoUnit</td>
+      <td>Testing scientific models</td>
+      <td>HOC language</td>
+      <td>https://github.com/KaliLab/hippounit</td>
+      <td></td>
+      <td>Sáray et al., 2021</td>
+    </tr>
+  </tbody>
+</table>
+
 Criticisms are often heard about the large numbers of parameters in modeling studies implying that ‘anything can be fitted’. Implicitly, this means that the model lacks explanatory and predictive power. This is a more common criticism for models that include many details, like mechanistic models built at a fine granularity in a bottom-up manner. However, it is important to note that the mechanistic model structure itself puts a lot of restrictions on the possible model behaviors. Also, since the parameters and variables that are associated with mechanistic models can be mapped to biological entities, these are also restricted through known physiological constraints, increasing the specificity of the model. Thus, it can actually be very hard (or impossible) to fit a specific dataset. If solutions exist, however, it is often so that there are many parameter sets that produce simulation results with a good fit to data, thus explaining the data equally well (Gutenkunst et al., 2007). Different parameter sets may however give different model predictions (Eriksson et al., 2019). This calls for methods that go beyond the use of a single parameter set, accounting for uncertainty in the modeling of neuroscience systems. Such uncertainty can come from sparse experimental data or structural unidentifiability (Raue et al., 2009) or it may reflect actual biological variability (Marder et al., 2015). In key studies, Prinz et al., 2004 investigated the possibility of variability in small neural invertebrate circuits using computational models. With an ensemble model approach, they showed in models of the pyloric rhythm of the crustacean stochastic ganglion that similar oscillatory network activity could arise from widely disparate circuit parameters (Prinz et al., 2004), suggesting that there could be considerable animal-to-animal variability in many of the parameters that control network activity. This has also been confirmed in experiments (Schulz et al., 2006).
 
 Although computationally expensive, Bayesian approaches provide the perfect tools for describing such uncertainty in parameter estimates (Vanlier et al., 2013). These approaches often use Markov Chain Monte Carlo (MCMC) methods to explore the possible parameter space, resulting in a joint distribution describing good parameter values (e.g. Girolami and Calderhead, 2011). However, currently, MCMC methods are only applicable for medium sized models, on the order of dozens of parameters. A less costly approach with a similar goal is profile likelihood (Raue et al., 2009), which provides a possible range for each of the uncertain parameters, but not the joint parameter distribution. Global sensitivity analysis can also be used to investigate uncertainty, assuming that the parameters have specific predefined distributions (Tennøe et al., 2018).
@@ -152,11 +778,11 @@ Parameter space exploration is a process that could benefit from additional auto
 
 To be able to reproduce the model refinement process, it is important that the model, experimental data, and prior parameter assumptions are well described and explicitly specified, as described above. If this is the case, then ideally different parameter estimation tools should come to similar conclusions, at least if a methodology including a distribution of possible parameter values is used.
 
-## BCM example
+#### BCM example
 
 Parameter estimation is not confined to data-driven, mechanistic models. Even abstract models reflect the observables that they set out to explain. Thus, one can ‘tune’ parameters in abstract models to data using the same techniques discussed above. The authors of the original BCM model (Bienenstock et al., 1982) did this to obtain observed ocular dominance properties in their simulations. Another early model of synaptic plasticity (Lisman, 1989) explicitly proposed a set of pathways that could result in bidirectional plasticity equivalent to the BCM curve and implemented chemical reactions with rates that were tuned to obtain properties consistent with the BCM model. Today more efficient parameter estimation methods are used, and a next step could be to quantify the uncertainty in the parameter estimates and predictions through a Baysian methodology, if possible, or perform a global sensitivity analysis, to understand the effects of different parameters on the model behavior.
 
-## Model validation and usage
+### Model validation and usage
 
 Following the model refinement process, we obtain the final version of the model that can be validated, analyzed, and used in simulation studies to make predictions and test hypotheses (Figure 2, Box 3). In multiscale modeling the output from the model can also be used as the input for another scale. Ideally, before the model is used for predictions, it is validated against data that were not used in the model construction and refinement process. However, data may be sparse requiring that validation occur through experimental tests of model predictions. After the model is finalized, the predictions from the model can be extended and better informed through model analysis. This could be done by sensitivity analysis, with tools from dynamical systems theory or through experimental design. Some examples of tools for model analysis are listed in Table 4.
 

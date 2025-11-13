@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.45056.001 RNA splicing is an essential part of eukaryotic gene expression. Although the mechanism of splicing has been extensively studied in vitro, in vivo kinetics for the two-step splicing reaction remain poorly understood. Here, we combine transient transcriptome sequencing (TT-seq) and mathematical modeling to quantify RNA metabolic rates at donor and acceptor splice sites across the human genome. Splicing occurs in the range of minutes and is limited by the speed of RNA polymerase elongation. Splicing kinetics strongly depends on the position and nature of nucleotides flanking splice sites, and on structural interactions between unspliced RNA and small nuclear RNAs in spliceosomal intermediates. Finally, we introduce the ‘yield’ of splicing as the efficiency of converting unspliced to spliced RNA and show that it is highest for mRNAs and independent of splicing kinetics. These results lead to quantitative models describing how splicing rates and yield are encoded in the human genome.
+RNA splicing is an essential part of eukaryotic gene expression. Although the mechanism of splicing has been extensively studied in vitro, in vivo kinetics for the two-step splicing reaction remain poorly understood. Here, we combine transient transcriptome sequencing (TT-seq) and mathematical modeling to quantify RNA metabolic rates at donor and acceptor splice sites across the human genome. Splicing occurs in the range of minutes and is limited by the speed of RNA polymerase elongation. Splicing kinetics strongly depends on the position and nature of nucleotides flanking splice sites, and on structural interactions between unspliced RNA and small nuclear RNAs in spliceosomal intermediates. Finally, we introduce the ‘yield’ of splicing as the efficiency of converting unspliced to spliced RNA and show that it is highest for mRNAs and independent of splicing kinetics. These results lead to quantitative models describing how splicing rates and yield are encoded in the human genome.
 
 ## Introduction
 
@@ -38,25 +38,41 @@ To study kinetics of splicing in vivo, we performed TT-seq (Schwalb et al., 2016
 
 ## Results
 
-## RNA labeling monitors intron removal
+### RNA labeling monitors intron removal
 
 To monitor global RNA metabolism in human cells, we performed TT-seq analysis in K562 cells after different times of RNA labeling with 4-thiouracil (4sU) (Figure 1A). We previously showed that such a labeling time series can estimate splicing rates in the yeast S. pombe (Eser et al., 2016). We exposed K562 cells to 500 μM of 4sU for a labeling time of 2, 5, 10, 15, 20, 30, or 60 min, isolated RNA, and conducted both TT-seq and total RNA-seq (Figure 1A). On average, we obtained 250 million and 55 million 150-nucleotide (nt) paired-end reads for each of the TT-seq and RNA-seq samples, respectively. We next mapped TT-seq and RNA-seq data to the human genome (Materials and methods). The experiments were highly reproducible (Figure 1—figure supplement 1A). Visual inspection of the mapped reads revealed strong TT-seq signals in transcribed regions covering both introns and exons (Figure 1B), whereas RNA-seq data covered mainly exons (Figure 1B, Figure 1—figure supplement 1B). The relative number of intronic reads in TT-seq data decreased with 4sU-labeling time, whereas the signal for exons increased. These observations were consistent with capture of newly synthesized precursor RNA because spliced introns are more rapidly degraded than exons that are maintained in mature, stable RNA. Thus, our time series data contained information about the kinetics of precursor RNA splicing that we exploited further.
 
-## New and alternative splice sites
+![Figure 1.](https://cdn.elifesciences.org/articles/45056/elife-45056-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental design. TT-seq and RNA-seq were performed after 2, 5, 10, 15, 20, 30 and 60 min of 4sU-labeling in human K562 cells. The number of reads spanning exon-intron/intron-exon splice-sites (non-split reads) gradually decrease with longer labeling duration, while exonic reads and reads spanning exon-exon junctions (split reads) increase during the time course, converging to levels similar to RNA-seq. (B) Coverage track of MYNN gene for 2, 5, 10, 15, 20, 30 and 60 min of 4sU-labeling followed by TT-seq and 2 min of 4sU-labeling followed by total RNA-seq. (C) Distribution of non-split reads (left) and split-reads (right) in previously published 4sU-seq (orange) and TT-seq (blue) (Schwalb et al., 2016) split by quartiles of the transcription start site to donor splice-site distance. Black bars represent the median values for each group. Lower and upper boxes are the first and third quartile, respectively. (D) Fractions of novel splicing events detected in intragenic and intergenic genomic regions. Solid boxes represent known exons, dashed boxes represent novel exons. (D based on Supplementary file 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45056/elife-45056-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Gene coverage in second against first biological replicates for 5 min and 60 min samples in TT-seq and RNA-seq experiments, with the corresponding Spearman correlation. (B) Coverage track of the MYNN gene for 2, 5, 10, 15, 20, 30, 60 min of 4sU-labeling followed by total RNA-seq. (C) Distribution of split and non-split reads in TT-seq and matching RNA-seq samples for each time point. Replicates were pooled together.
+
+### New and alternative splice sites
 
 We first analyzed our TT-seq data for the occurrence of reads that are informative of precursor RNA splicing, that is reads spanning exon-exon boundaries (‘split reads’) and reads spanning exon-intron (‘donor’) and intron-exon (‘acceptor’) boundaries (‘non-split reads’). Using a threshold of at least 10 split reads for an exon-exon boundary, we found 341,855 putative introns (Materials and methods). The relative number of these non-split reads compared to split reads was highest after 2 min of 4sU-labeling and progressively decreased with longer labeling times, eventually converging to a similar coverage as in the RNA-seq samples (Figure 1—figure supplement 1C). Coverage with split reads decreased with the distance to the transcription start site (TSS) in 4sU-seq data but not in TT-seq data (Figure 1C, data from Schwalb et al., 2016), suggesting that the previously reported estimation of splicing rates with 4sU-seq (Mukherjee et al., 2017; Rabani et al., 2014), overestimated splicing rates for 5’ introns compared to 3’ introns. With the use of TT-seq we could avoid a 5’-bias in splicing rate estimations.
 
 About one half of the putative introns (177,322) mapped to splice sites that had been annotated in the database of transcribed regions GENCODE (Materials and methods), whereas the other half did not (164,533). Of these putative introns that had not been previously annotated as splice sites in GENCODE, more than 99% represented introns ending with the GT|AG canonical dinucleotides. Moreover, 21% represented new combinations of already annotated donors and acceptors (Figure 1D). Furthermore, 18% map to a non-annotated donor site and to a previously annotated acceptor site, 22% to a non-annotated acceptor site and to a previously annotated donor site. Interestingly, another 38% mapped to both non-annotated donor sites and non-annotated acceptor sites. Of these, about one half was located within an annotated GENCODE gene (intronic), whereas the other half was located in regions of the genome not annotated in GENCODE (intergenic). Overall, this analysis indicates that the number of splice sites has previously been underestimated, in agreement with recent studies that integrated very large datasets of the public RNA-seq repository (Nellore et al., 2016) or studies that used full-length mRNA sequencing (Anvar et al., 2018).
 
-## Kinetic modeling
+### Kinetic modeling
 
 Defining the kinetics of RNA synthesis, splicing, and degradation from short-read-based protocols is inherently ambiguous due to the many RNA species overlapping any genomic position, including precursor RNAs and multiple splice isoforms. In the future, quantitative and high-throughput full-length transcriptome sequencing may become available to improve the situation; however, co-transcriptional alternative splicing would still cause ambiguities. We have therefore shown it is accurate to analyze the metabolism of phosphodiester bonds rather than RNA species themselves (Wachutka and Gagneur, 2017). Following this idea, we modeled the steady-state rates of synthesis and degradation (or equivalently cleavage) of each of three different phosphodiester bonds individually: the exon-intron bond at the donor site, the intron-exon bond at the acceptor site, and the bond between the two joined exons after successful exon ligation to yield product RNA (Figure 2A left, Appendix). We refer to these definitions throughout when we use the terms ‘splicing kinetics’ or ‘splice site kinetics’.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/45056/elife-45056-fig2-v2.jpg)
+
+**Figure 2.:** (A) Definition of kinetic parameters at the level of individual phosphodiester bonds enables independent estimation of the rates of donor (red) and acceptor (blue) bond half-life and of junction (product, green) formation (left). Reads covering the introns were extracted and divided into three classes: reads starting at the upstream exon and extending into the intron (red), reads starting within the intron and extending to the downstream exon (blue) and reads mapped to the upstream and downstream exon but gaping the intron (green). Theoretical analytical curves as well as the curves corrected for cross-contamination for TT-seq and RNA-seq are shown. Sequencing depth-normalized counts are provided for both replicates (circle, triangle). Estimated standard errors are depicted in grey. A dip in expectation value of the junction count was observed at 30 min 4sU-labeling time due to variation of cross-contamination across samples (unlabeled RNA in TT-seq samples), (right). (B–D) Violin plots representing the distribution of synthesis rate (B), average donor and acceptor bond half-life (C) and junction bond half-life (D) for mRNAs (n = 8,770), lincRNAs (n = 204), antisense RNAs (asRNA, n = 162) and other ncRNAs (n = 290). Black bars represent the median values for each group. Lower and upper boxes are the first and third quartile, respectively. (B–D based on Supplementary file 3).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45056/elife-45056-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Relevant parameters and their relation for modeling and estimation of rates, where is the concentration of the donor, acceptor or junction bond. (B) Comparison of estimated donor synthesis rates (left), acceptor synthesis rates (middle) and junction half-life (right) of 1st against 2nd, 2nd against 3rd, 3rd against 4th and 4th against 5th introns in major isoforms, with the corresponding Spearman correlation. (C) Number of antisense RNAs (asRNA, n=162), lincRNAs (n=204), mRNAs (n=8,770) and other ncRNAs (n=290) with respect to the GENCODE annotation for which kinetic rates were estimated. (D) Major-isoform aggregated synthesis, splicing and degradation rates estimated by Mukherjee et al. (2017) against this study, with corresponding Spearman correlation and P-value. (E) Number of junctions belonging to antisense RNAs (asRNA, n= 462), lincRNAs (n=644), mRNAs (n=84,749) and other ncRNAs (n= 1,196) with respect to the GENCODE annotation for which kinetic rates were estimated. (F-J) Distribution of site-specific rates of donor synthesis rate (F), acceptor synthesis rate (G), donor bond half-life (H), acceptor bond half-life (I) and junction bond half-life (J) for junctions in mRNAs (n=84,749), lincRNAs (n=644) antisense RNAs (auRNA, n=462), and other ncRNAs (n=1,196). Black bars represent the median values for each group. Lower and upper boxes are the first and third quartile, respectively. Mirrored curves show density estimates (B,C, E-J based on Supplementary file 2).
 
 We then considered the metabolism of these three phosphodiester bond types at steady-state. Synthesis balances out degradation at steady-state for any molecular species, independently of the kinetics. The steady-state synthesis rate (amount produced per unit of time) and the steady-state degradation rate (ratio of steady state amount by the steady-state synthesis rate) are defined quantities without any assumption on the kinetics (Appendix). Synthesis of the donor and acceptor bonds reflects precursor RNA synthesis. Cleavage of the donor bond is caused by either splicing or by precursor RNA degradation. The half-life of those donor bonds that get spliced depends on intronic transcription at least up to the branchpoint and on the first transesterification step. Cleavage of the acceptor bond is caused by either splicing or by precursor RNA degradation. The half-life of those acceptor bonds that get spliced is determined by the first and the second transesterification step but not by intronic transcription. Synthesis of the junction bond is the outcome of completed splicing. Cleavage of the junction bond indicates RNA degradation (Materials and methods, Appendix).
 
 Our experimental design includes the injection of labeled and unlabeled spike-ins at constant concentrations in all samples, prior to the purification step. These spike-ins allowed for estimating the variations in sequencing depth as well as the overall newly synthesized RNA fraction of every sample (Materials and methods). The unlabeled spike-ins also allowed estimating the amount of cross-contamination, that is of unlabeled RNAs that are purified and which can represent a large fraction of all RNA-seq reads at short labeling durations (Materials and methods). These technical parameters estimated from the spike-ins read counts were then used as covariates to model expected read counts of all three types of bonds in each sample.
 
-## Application and testing of the kinetic model
+### Application and testing of the kinetic model
 
 Using these considerations, we fitted the abundance of each of these three types of bonds with a first-order kinetic model for a total of 162,134 donor, 177,543 acceptor and 156,825 junction bonds that showed at least 100 supporting reads across the full dataset (Figure 2A right, Materials and methods, Appendix). Overall, TT-seq read counts agreed with the expected counts of our kinetic model (Figure 2A central column, Figure 2—figure supplement 1A). The synthesis rates for donors and acceptors, and the product half-life inferred from distinct splice junctions (Materials and methods) agreed well, demonstrating the robustness of our approach (Spearman rank correlation >0.33 for synthesis time downstream of the first exon, p<2 × 10−16 and Spearman rank correlation >0.76 for half-life, p<2 × 10−16, variation of 180% fold for synthesis rate, and 32% fold for half-life, Materials and methods, Figure 2—figure supplement 1B). Variations were larger for synthesis rates because these estimates are in a first approximation proportional to the coverage in the short-labeled TT-seq samples and are therefore more sensitive to sequencing biases. In contrast, half-lives, which are in a first approximation proportional to the ratio of coverages in short-labeled TT-seq samples and in RNA-seq, better control for sequencing biases.
 
@@ -64,21 +80,37 @@ We furthermore conducted extensive simulations to assess the performance and lim
 
 First-order kinetic models are simple models that grossly model the underlying biochemical processes. We also investigated two alternative models that potentially capture more complex kinetics. The first one is a delay differential equation model for donor bond kinetics that modeled the time to transcribe the intron up to the branchpoint with a delay, followed by first-order kinetics for the first transesterification step (Appendix). Simulations indicated that identifying the parameters of this delay differential equation model is difficult (Appendix 1—figures 2, 20–22) because the data do not support distinguishing the contribution of transcription from the one of the first transesterification step. However, fitting a first order kinetic model on data simulated according to the delay differential equation model showed that the estimated donor bond half-life approximately equated the sum of the intronic transcription delay and the half-time of the first transesterification step (Appendix 1—figure 5, yet usually underestimating with a median relative level of 0.89). The second alternative model is a coupled differential equation model for the junction bonds that modeled junction formation as the outcome of a first-order kinetics splicing process rather than as a constant. Simulations showed that the data did not allow to easily distinguish this coupled kinetics from first-order kinetics (Appendix 1—figure 3). Moreover, the junction bond half-life estimated by the first order kinetics model approximately equated the sum of the splicing half-time and of the half-life of the processed RNA (Appendix 1—figure 7, yet usually overestimating with a median relative level of 1.2). Unless specifically mentioned, we used the first order kinetics model in the remaining analyses because of its robustness and its approximate equivalence with alternative models (Appendix).
 
-## Splicing times are in the range of minutes
+### Splicing times are in the range of minutes
 
 Based on GENCODE annotation, the analyzed bonds mapped to 8,770 mRNAs, 162 RNAs antisense to protein-coding genes (asRNA), 204 long intergenic non-coding RNAs (lincRNA), and 290 other non-coding RNAs (Figure 2—figure supplement 1C). When averaged within major isoforms (Materials and methods), synthesis rates and half-lives of donors and acceptors ranged over two orders of magnitude (42-fold and 48-fold change, 90% equi-tailed range), whereas the junction bond half-life spanned only slightly over one order of magnitude (8.1-fold 90% equi-tailed range, Figure 2B–D). These major isoform aggregated rates generally agreed with previously reported splicing rates and RNA half-lives (Figure 2—figure supplement 1D; Mukherjee et al., 2017). Moreover, mRNAs were spliced significantly faster (median of 7.2 min) than lincRNAs (median of 11 min, p<2 × 10−16) and other non-coding RNAs (Figure 2C). Also, mRNAs had junction bonds with the longest half-lives (median of 316 min) (Figure 2D), consistent with previous studies (Mukherjee et al., 2017; Schlackow et al., 2017; Schwalb et al., 2016). Similar conclusions can be reached using site-specific rates (Figure 2—figure supplement 1E–J). The obtained apparent splicing times in the range of minutes agree with many previous estimates that were obtained using different methods, but argue against fast splicing, within less than a minute, that was suggested by some studies (Carmo-Fonseca and Kirchhausen, 2014).
 
-## Intron length constrains splicing times
+### Intron length constrains splicing times
 
 Intron length has been suggested to affect splicing kinetics (Hicks et al., 2010; Khodor et al., 2011; Pai et al., 2017; Proudfoot, 2003; Windhager et al., 2012), and we therefore investigated this further. First, our de novo annotation of introns is in agreement with a minimal intron length of about 80 nt (Figure 3A), as expected from the spatial needs within the spliceosome (Ruskin et al., 1985; Wieringa et al., 1984). Second, we find that among introns shorter than 2,000 nt, acceptor and donor bond half-life showed similar distributions and decreased with increasing intron length (Figure 3B). The reasons for why short introns are spliced more slowly than long ones remain to be investigated. It is possible that for longer introns the splice site definition by the following exon facilitates splicing and that there are less restraints for splicing for longer introns. This observation also strongly argues for pre-ordering of the spliceosome on the transcribing polymerase.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/45056/elife-45056-fig3-v2.jpg)
+
+**Figure 3.:** (A) Number of introns against intron length. Dashed line represents the minimum estimated intron length. (B) Distribution of donor and acceptor bond half-life for introns split by intron length septiles. Black bars represent the median values for each group. Lower and upper boxes are the first and third quartile, respectively. (C) Donor bond half-life against intron length for all observed introns, minimum estimated intron length (black vertical line), and theoretical elongation boundary for a intronic polymerase elongation rate of 4 kb min−1 (black lines) and 95% confidence interval estimates (dashed lines, Materials and method). Colors encode data point density. (D) Distribution of half-life of donor (red) and acceptor (blue) bonds for first and last introns in major isoforms compared to other introns. (A–D based on Supplementary file 2).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45056/elife-45056-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Number of introns per distance between the acceptor site and the identified branchpoint by LaBranchoR. (B) Scatter plot representing the distance between branchpoint and acceptor site against donor bond half-life.
 
 Our analysis also reveals that donor and acceptor bond half-lives differ for long introns. Among introns longer than 2,000 nt, acceptor bond half-life plateaued at a median value of about 4 min, whereas donor bond half-life increased with intron length up to a median value of about 8 min for introns larger than 7,700 nt (last septile). A possible explanation for this significant difference is that donor sites of long introns are transcribed much earlier than acceptor sites and splicing can only start when the intron is transcribed. Indeed, the donor bond half-life is determined by the elongation time needed to transcribe at least the branchpoint and by the first transesterification step, whereas the acceptor bond half-life is determined by both the time for the first transesterification step and for the second transesterification step to be completed. Assuming a maximum polymerase elongation velocity of 4 kb/min (Fuchs et al., 2014; Gressel et al., 2017; Jonkers and Lis, 2015; Saponaro et al., 2014; Veloso et al., 2014), we observed very few introns violating this predicted limit (Figure 3C). This limit for donor bond half-life affects only a small proportion of all introns (last septile) so that, overall, there is no positive correlation between donor bond half-life and intron length (Figure 3C). For shorter introns, the donor bond half-life and the acceptor bond half-life were similar (Figure 3B), indicating that the second transesterification step is fast compared to the overall splicing kinetics.
 
 Another prediction of this model is that for slowly transcribed introns the donors should take longer to cleave than the acceptors. Consistent with this hypothesis, the median half-life was 2.5-fold (p<2×10−16) longer for donor bonds than for acceptor bonds of first introns (Figure 3D), which are known to be more slowly transcribed (Danko et al., 2013; Fuchs et al., 2014; Jonkers and Lis, 2015; Saponaro et al., 2014; Veloso et al., 2014). A small significant difference was also found for the last intron (1.4-fold, p<2×10−16), which could reflect slower polymerases near the transcript end or different kinetics of splicing of the last intron (Davis-Turak et al., 2015; Rigo and Martinson, 2008). In conclusion, these data show that donor half-life and thus the beginning of splicing is limited by transcription elongation for long introns. Taken together, our results are generally consistent with the co-transcriptional nature of splicing and reveal that the length of the intron influences splicing kinetics in at least two different ways.
 
-## Several snRNA interactions are related to donor cleavage kinetics
+### Several snRNA interactions are related to donor cleavage kinetics
 
 Whereas overall trends in splicing kinetics can be explained by global features such as intron length and polymerase elongation velocity, the kinetics of splicing also critically depend on the RNA sequence context around the donor, acceptor, and branchpoint. To gain insights into the sequence determinants for splicing, we built a linear model (Materials and methods) that allowed us to estimate changes in donor bond half-life as a function of single nucleotide changes relative to the consensus sequence. The single nucleotide model could explain 19% of the observed variance in log-transformed donor bond half-life and achieved a median relative error for individual sites of 150%, which is small compared to the dynamic range across sites spanning two orders of magnitude (Figure 4A). This analysis showed that nucleotide deviations from the consensus splice-site increase donor bond half-life. These findings are consistent with evolutionary pressure for donor sequences optimized for fast splicing.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/45056/elife-45056-fig4-v2.jpg)
+
+**Figure 4.:** (A) Measured donor bond half-life against single nucleotide model prediction (median relative error of 150%, Spearman's rank correlation ρ = 0.45, p<10−16). (B) Nucleotide frequency (middle track) and prediction of the relative effect on donor bond half-life (upper track) for single nucleotide deviation from consensus sequence around donor, acceptor splice-site and branchpoint. Grey color marks positions predicted to have no effect (Materials and methods). RNA map of base-pairing interactions between four snRNAs (U1, U2, U5, U6) and precursor RNA sequences used in three published spliceosome structures of U1 snRNP binding to 5´splice-site, B and C* complex (bottom track) (exon (blue), intron (red), U1 snRNA (light blue), U2 snRNA (green), U5 snRNA (orange), U6 snRNA (yellow)). Canonical and non-canonical base-pairing interactions are depicted by black solid lines and black dots, respectively. (B based on Supplementary file 4). (C) Structure of U1 snRNA interactions with precursor RNA 5´splice-site (Kondo et al., 2015). (D) Structure of U5 and U6 snRNA interactions with precursor RNA in spliceosome B complex (Bertram et al., 2017a).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45056/elife-45056-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Distribution of the mean absolute effect of single nucleotide effects on donor and acceptor bond half-lives for the reported interactions between the precursor RNA and the snRNAs of the available spliceosomal complex structures for 5´splice-site recognition (Kondo et al., 2015), B-complex (Bertram et al., 2017a), Bact complex (Haselbach et al., 2018), C complex (Galej et al., 2016), C*-complex (Zhang et al., 2017), and P-complex (Bai et al., 2017) (top). Schematic representation of snRNAs during the different splicing stages (bottom). (Based on Supplementary file 4).
 
 In order to elucidate the contribution a single nucleotide change might have on interactions within the spliceosome, we compared our predicted single nucleotide effects with base interactions observed in three different spliceosome structures (Figure 4B, bottom). Recognition of the donor site by U1 snRNP plays a crucial role during early spliceosome assembly. RNA-RNA interaction between precursor RNA and U1 snRNA are mainly stabilized through Watson-Crick interactions (Figure 4C; Kondo et al., 2015). In our model, substitution of the highly frequent G at +1 or −1 from the donor site with a C resulted in an increase in bond half-life (Figure 4B), likely because C cannot form a stable interaction with a C in the U1 snRNA, in agreement with previous in vitro studies (Kondo et al., 2015). In contrast, at position +3 from the donor site, a change from A to G has only a minor effect on the bond half-life (Figure 4B), likely because G can still form a non-canonical base pair with U in the U1 snRNA (Kondo et al., 2015). These results suggest that interactions of the precursor RNA donor region with U1 snRNA contribute to the observed donor bond half-lives.
 
@@ -92,15 +124,23 @@ Completion of step-one results in the C complex that is then converted to the ac
 
 Taken together, variation in the in vivo kinetics for the donor cleavage can in part be rationalized with early interactions of precursor RNA with U1 snRNA, and with later U5 snRNA interactions observed in structures of the B and Bact complexes. Moreover, the stability of the C* complex appears to also affect donor bond half-life, possibly because it prevents the reverse reaction of donor site cleavage (Tseng and Cheng, 2008). Since several precursor RNA positions are involved in different types of interactions in different splicing intermediates, the observed overall kinetics of donor cleavage reflect a combination of distinct microscopic rates, which cannot be distinguished by our in vivo approach. Furthermore, not all observed effects of nucleotide changes could be explained with available structures. For example, the first nucleotide of the downstream exon (acceptor +1 position) was important for donor cleavage kinetics. Although it remains unclear why, this could be related with co-transcriptional recruitment and recycling of splicing factors, maybe favored by Pol II 3´splice-site pausing, similar to that suggested in Aitken et al. (2011).
 
-## Sequence and structural contributions to acceptor bond half-life
+### Sequence and structural contributions to acceptor bond half-life
 
 We also built a regression model predicting log-transformed acceptor bond half-life from sequence (Figure 5B, 20% of variance explained, median relative error of 150%). Single nucleotide changes around the acceptor site generally had larger effects on acceptor bond half-life, reflecting effects on step two kinetics, whereas changes around the donor site had greater effects on donor bond half-life, reflecting effects on step one kinetics (Figure 5C). The post-catalytic complex (P complex), which is specific to step two splicing reaction, is not yet structurally characterized in human. Nevertheless, nucleotide changes that influence base pair interactions reported for the P-complex in S. cerevisiae (Bai et al., 2017) showed stronger effects on the acceptor bond half-life than for the donor bond half-life (Figure 4—figure supplement 1A). Nucleotide positions in the precursor RNA that are not involved in base pair interaction with snRNAs in B-type and C* complex structures were irrelevant for predicting acceptor bond half-life (grey highlighting in Figures 4B and 5C, feature selection, Materials and methods).
 
 Most nucleotides showed similar effects in the donor and acceptor bond half-life models but some noticeable differences were observed between them (Figure 5D). Our results indicate that a non-canonical G branchpoint does not affect acceptor bond half-life but increases donor bond half-life. We also observed that the predominant G at the donor −1 nucleotide leads to fast donor cleavage kinetics but to slow acceptor cleavage kinetics, maybe because this interferes with positioning of the neighboring +1 donor nucleotide that serves as a nucleophile during step two. Despite this disadvantage in acceptor cleavage kinetics, the donor −1 position is predominantly G, presumably because this improves donor site recognition by base pairing with a C in U1 snRNA as described above. Taken together, available structural information on the spliceosome help to rationalize some of the effects of base changes around splice sites. Even though the contributions of several mechanistic processes to the observed kinetics cannot be disentangled, our results reveal which nucleotide positions around splice sites are critical for fast splicing kinetics.
 
-## Regulatory precursor RNA motifs contribute to splicing kinetics
+### Regulatory precursor RNA motifs contribute to splicing kinetics
 
 Splicing is modulated by auxiliary factors, including serine/arginine-rich proteins and hnRNPs (heterogeneous nuclear ribonucleoproteins), that bind to regulatory motifs around the splice sites (Fu and Ares, 2014; Matlin et al., 2005; Wang and Burge, 2008). We therefore aimed to identify putative regulatory motifs and to quantify their contribution to splicing kinetics. We derived two extended models for donor and acceptor bond half-life including the single nucleotide effects in the core regions investigated so far and all 65,536 possible RNA octamers in four extended intronic regions, 100 nt downstream of the donor site, 100 nt upstream of the acceptor site, and 100 nt upstream of the branchpoint and the region between branchpoint and acceptor site (Figure 6A, Materials and methods). We also included intron length and GC content, but did not include exonic regions, because this would require isoform annotations. Because of the very large number of octamers, we used a feature selection method (Lasso regression), which yielded 551 octamers jointly predicting donor bond half-life and 2,319 octamers jointly predicting acceptor bond half-life (Materials and methods).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/45056/elife-45056-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic representation of the regions used for the octamer search (BP = branchpoint, polyY = polyY track). In case of short intron, the regions 5ʹ downstream, 3ʹ upstream, and BP upstream were cropped to not extend into the exonic regions. Poly-Y track was defined as the region from the branchpoint up to the acceptor site. (B–C) Proportion of variance explained by the joint model (purple) for log-transformed donor (B) or acceptor (C) bond half-lives, as well as proportion of variance explained by individual features (orange) and drop of the proportion of variance explained when individual features are removed from the joint model (green). 5´ds = 5´downstream, 3´us = 3´upstream. (D) Effect on donor bond half-life of octamers matching to RNA-binding proteins (RBP, rows) motifs identified using the ATtRACT database. Each column represents one octamer; the color depicts strength and direction of the effect. (E) Distribution of the phylogenetic conservation score (PhastCons 100-way) of random octamers (green), significant octamers matching (red) and not matching (blue) the ATtRACT database of RNA-binding motifs, estimated by region (column) and model (row). Black bars represent the median values for each group. Lower and upper boxes are the first and third quartile, respectively. Stars above boxes depict pairwise significance levels by Wilcoxon signed rank test. (D based on Supplementary file 5).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45056/elife-45056-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Double bar chart showing the number of significant octamers found in each region used for the octamer search (5´ds = 5´downstream, BP up = branchpoint upstream, polyY = polyY track, 3´up = 3´upstream). In the upper part, the log-transformed donor bond half-life is used as response variable. In the lower part, the log-transformed acceptor bond half-life is used as response variable. Octamers were classified in whether they show a prolonging (red) or shortening (blue) effect on the bond half-lives and whether they match to a known PWM of the ATtRACT RBP database (Materials and methods). (B) Histogram of the octamer and single nucleotide effect sizes in the joint model. The models with log-transformed donor and acceptor bond half-life as response variable are considered together. (C) Effect on acceptor bond half-life of octamers matching to RNA binding proteins (RBP, rows) motifs identified using ATtRACT database. Each column represents one octamer; the color depicts strength and direction of the effect. (A–C based on Supplementary files 4,5).
 
 Compared to the single nucleotide models, the extended models substantially increased the proportion of variance explained from 19% to 26% for the log-transformed donor bond half-life and from 20% to 29% for the log-transformed acceptor bond half-life (Figure 6B and C). These proportions of variance increased when we restricted the analysis to junctions of major isoforms, showing that the results are not over-estimated due to double counting of donors and acceptors belonging to multiple exon junctions (donor bond half-life model by 1.3% and the acceptor bond half-life model by 1.4%). Cumulatively, the proportions of variance explained of these non-overlapping regions largely exceed the proportion of variance explained by the joint model, indicating widespread co-occurrence of splicing-regulatory sequences across introns.
 
@@ -108,9 +148,17 @@ The improved prediction of the extended models over the single nucleotide models
 
 To identify putative regulatory factors that could bind to the predicted RNA octamers, we scored the octamers binding affinities to the 159 human RNA-binding proteins of the ATtRACT database (Giudice et al., 2016). We found 258 octamers predicted by the donor bond half-life model (47% versus 42% of non-selected octamers, p=0.017, Fisher test) associating with 69 RNA-binding proteins and 1,039 octamers identified by the acceptor bond half-life model (45% versus 42% of non-selected octamers, p=0.007, Fisher test) associating with 99 RNA-binding proteins motifs (Figure 6D, Figure 6—figure supplement 1C, relative position weight matrix score >0.9 and selecting for the 5% highest absolute scores, Materials and methods). Our results suggest that several serine/arginine-rich and hnRNP proteins (Supplementary file 5) regulate donor and acceptor bond half-life in both positive and negative fashions, depending on the location of their binding site. Octamers associated with the binding site of the polypyrimidine tract-binding protein Ptpb1 are predictive of short donor bond half-life when present between branchpoint and acceptor site but they prolong the donor bond half-life when located near the donor site (Figure 6D). The remaining octamers may reflect cis-regulatory elements bound by splicing factors that remain to be characterized. To address the evolutionary conservation of the identified octamers, we aligned them to conserved sequences across 99 mammalian and other vertebrate genomes. Except for octamers predicted to affect donor bond half-life in the region 100 nt downstream of the donor site, the remaining ones show significantly higher phylogenetic conservation compared to a negative control of random octamers (Figure 6E), providing evidence of their biological significance.
 
-## Splicing yield differs between RNA classes
+### Splicing yield differs between RNA classes
 
 Cleavage of the phosphodiester bonds at the donor and acceptor sites can lead to ligation of the two exon ends, thus completing splicing. However, cleavage of these bonds may also be non-productive in the sense that exon ligation can fail and RNA may be degraded after cleavage. To account for this, we defined the ‘splicing yield’ as the proportion of precursor RNA successfully converted into spliced RNA (Figure 7A). A splicing yield of 1 means that all precursor RNAs that are synthesized are also successfully spliced, whereas a splicing yield less than one means that only a fraction of the precursor RNA is converted to spliced product. We estimated the splicing yield using the junction bonds modeled with the coupled model and the acceptor bonds modeled with first-order kinetics, because alternative kinetic models or using the donor bonds led to systematic biases (Appendix). Hence, we did not computationally constrain our splicing yield estimates to be bounded by 1. Due to estimation errors of the synthesis rates, yields sometimes turn out to be greater than 1.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/45056/elife-45056-fig7-v2.jpg)
+
+**Figure 7.:** (A) Definition of synthesis rate at individual phosphodiester bonds enables the estimation of splicing yield for acceptor splice sites (ηacceptor). (B) Distribution of splicing yield of acceptor splice sites for introns of mRNAs (n=64,555), lincRNAs (n=398) antisense RNAs (asRNA, n=265), and other ncRNAs (n=876) of major transcripts (Materials and methods) for GENCODE genes. Black bars represent the median values for each group. Lower and upper boxes are the first and third quartile, respectively. (C–D) Distributions of the observed acceptor spicing yield (C) and donor and acceptor bond half-life (D) of splice-sites split by major (U2-type) and minor (U12-type) spliceosome. (E). Single nucleotide effects for branchpoint and acceptor splice site on ηacceptor. Color depicts effect on yield relative to consensus nucleotide (Materials and methods). Relative frequency of the nucleotides is shown for all modeled introns. (B–E based on Supplementary file 2).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/45056/elife-45056-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Distribution of acceptor splicing yield split by septiles of intron lengths. Black bars represent the median values for each group. Lower and upper boxes are the first and third quartile, respectively. (B) Upper part: number of introns preferential spliced from major (U2-type) or minor (U12-type) spliceosome: GUAG (n = 69,672), GCAG (n = 594), others (n = 33), GUUG (n = 10), AUAC (n = 91). Lower part: box plots depicting changes of donor bond half-life [min] across different combinations of characteristic dinucleotides (±2 nt from donor and acceptor sites). (A, B based on Supplementary file 2). Global donor and acceptor splicing site kinetics in human cells.
 
 We found that the splicing yield across sites was much higher for mRNAs (median = 1.2, Figure 7B) than for antisense RNAs (median = 0.2), lincRNAs (median = 0.3), and other non-coding RNAs (median = 0.5), suggesting that degradation pathways are competing with splicing more intensively for non-coding RNAs than for coding RNAs. Moreover, the higher yield of mRNAs compared to lincRNAs also held when stratifying by cumulative read coverage across all samples and by half-life (Appendix 1—figures 26 and 27), two possible confounders associating with synthesis rate estimation biases in simulations (Appendix). Furthermore, splicing yield was the same for the 139,344 (99.9%) introns harboring the canonical terminal dinucleotides GU and AG recognized by the major spliceosome (U2-type) than for the 182 (0.1%) introns harboring the terminal dinucleotides AU and AC recognized by the minor spliceosome (U12-type) (Figure 7C). Although introns targeted by the minor spliceosome showed two-fold slower donor and acceptor bond half-lives compared to those targeted by the major spliceosome (Figure 7D, Figure 7—figure supplement 1B), the minor spliceosome nonetheless reached similar splicing yields.
 
@@ -132,84 +180,207 @@ Taken together, we have analyzed the metabolism of individual donor and acceptor
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens; female)</td>
+      <td>K562 chronic myeloid leukemia in blast crisis</td>
+      <td>DSMZ</td>
+      <td>DSMZ Cat# ACC-10, RRID:CVCL_0004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Plasmo Test Mycoplasma Detection Kit</td>
+      <td>InvivoGen, San Diego, CA USA</td>
+      <td>rep-pt1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ovation Universal RNA-Seq System</td>
+      <td>NuGEN, Leek, The Netherland</td>
+      <td>0343–32</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-thiouracil</td>
+      <td>Carbosynth, UK</td>
+      <td>NT06186</td>
+      <td>CAS 13957-31-8</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>STAR</td>
+      <td>https://github.com/alexdobin/STAR</td>
+      <td>RRID:SCR_015899</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Picard</td>
+      <td>http://broadinstitute.github.io/picard/</td>
+      <td>RRID:SCR_006525</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Salmon</td>
+      <td>https://combine-lab.github.io/salmon/</td>
+      <td>RRID:SCR_017036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>glmnet</td>
+      <td>https://cran.r-project.org/web/packages/glmnet/index.html</td>
+      <td>RRID:SCR_015505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>PyMOL</td>
+      <td>https://pymol.org/2/</td>
+      <td>RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>LaBranchoR</td>
+      <td>https://kipoi.org/models/labranchor</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>CleTimer</td>
+      <td>https://kipoi.org/models/CleTimer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>rCube</td>
+      <td>https://github.com/gagneurlab/rCube</td>
+      <td></td>
+      <td>Last commit number: 463119</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 K562 cells were obtained from DSMZ (DSMZ no.: ACC-10) and grown in RPMI 1640 medium (Thermo Fisher Scientific, 31870–074) supplemented with 10% heat-inactivated fetal bovine serum (Thermo Fisher Scientific, 10500–064) and 2 mM GlutaMAX (Thermo Fisher Scientific, 35050087) at 37°C and 5% CO2. Cells were routinely verified to be free of mycoplasma contamination using Plasmo Test Mycoplasma Detection Kit (InvivoGen, rep-pt1). K562 cells were authenticated at the DSMZ Identification Service according to standards for STR profiling (ASN-0002).
 
-## TT-seq time series
+### TT-seq time series
 
 TT-seq was performed as described (Schwalb et al., 2016), with minor modifications. Specifically, 2.5 × 107 cells from two biological replicates were used for each time point. Cells were exposed to 500 µM of 4-thiouracil (4sU, Carbosynth, NT06186) for 2, 5, 10, 15, 20, 30, 60 min at 37°C and 5% CO2. Cells were harvested by centrifugation at 600 g for 2 min at 37°C. Cell pellets were lysed in 5 mL of QIAzol (Qiagen) and 150 ng of RNA spike-ins mix were added to each sample. RNA spike-ins were produced in house, based on ERCC-RNA sequences (sequences of spike-ins are described in Supplementary file 6). RNA spike-ins were produced as described (Schwalb et al., 2016). RNAs were extracted using QIAzol according to the manufacturer’s instructions. RNAs were sonicated to obtain fragments of <6 kbp using AFAmicro tubes in a S220 Focused-ultrasonicator (Covaris Inc, parameters: 10 s, peak power 100, cycles 200, duty cycle 1%). The quality of RNAs and the size of fragmented RNAs were checked using Fragment Analyzer. 1 μg of each of the sonicated RNAs was stored at −80°C as total RNA (RNA-seq) and later eluted with miRNAeasy Micro Kit (Qiagen, 217084) together with 4sU-labeled purified RNAs.
 
 4sU-labeled RNAs were purified from 300 µg of each of the fragmented RNAs. Biotinylation and purification of 4sU-labeled RNAs was performed as described (Dölken et al., 2008; Schwalb et al., 2016). Biotinylated 4sU-labeled RNAs were separated from unlabeled RNAs with streptavidin beads (Miltenyi Biotec, Bergisch Gladbach, Germany) and eluted in 100 mM DTT as described in Dölken et al. (2008) and Schwalb et al. (2016). 0.3M sodium acetate was added to 4sU-labeled purified RNAs and to total RNAs prior RNA extraction. RNAs were extracted and eluted using miRNAeasy Micro Kit (Qiagen, 217084). The on-column DNAse I treatment (Qiagen, 79254) was performed for 15 min at 25°C. Prior to library preparation, total RNAs and 4sU-labeled purified RNAs were quantified using Qubit. Enrichment of 4sU-labeled versus unlabeled RNAs was analyzed by RT-qPCR using oligonucleotides amplifying selected regions of 4sU-labeled and unlabeled spike-ins (sequences of oligonucleotides are described in Supplementary file 6). Only 4sU-labeled purified samples showing ΔΔCt changes from 4 to 6 were subjected to library preparation (total RNAs were used as a control for normalization). 100 ng of input RNA was used for strand-specific library preparation according to the Ovation Universal RNA-seq System (NuGEN). Libraries were prepared using random hexamer priming only. The size-selected libraries were analyzed on a Fragment Analyzer before sequencing on the Illumina HiSeq 4000.
 
-## Read alignment and counting
+### Read alignment and counting
 
 Paired-end 150 bp reads with additional 6 bp of barcodes were obtained for each sample. Reads were aligned using STAR version 2.5.0a (Dobin et al., 2013) in single pass mode. The genome Index was built against the full GENCODE version 24 annotation and the hg38 (GRCh38) genome assembly (Human Genome Reference Consortium) using 150 bp overhang size. Additional specified parameters were alignSJDBoverhangMin 2, chimSegmentMin 15, chimScoreMin 15, chimScoreSeparation 10, and chimJunctionOverhangMin 15. The aligned reads were filtered for duplicates using Picard tools version 2.5.0 (https://broadinstitute.github.io/picard/) using the option MarkDuplicates REMOVE_DUPLICATES = true. In average, each TT-seq sample yielded about 250 M reads and each RNA-seq sample about 55 M reads. For each sample, ~90% of the reads could be uniquely mapped to the reference genome. The duplication ratio was estimated to 55% by FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/).
 
 Using the rCube package (https://github.com/gagneurlab/rCube), all split reads (containing N stretches in Cigar string) were extracted to create a database of potential introns (~341 k). The obtained introns were classified relative to annotated introns and genetic elements from the GENCODE annotation (version 24 obtained from https://www.gencodegenes.org/releases/24.html). For each intron three characteristic counts were calculated: The numbers of reads starting in the upstream exon and extending into the intron (‘donor’), the number of reads starting in the intron and extending into the downstream exon (‘acceptor’), and all split reads matching the introns coordinates (‘junction’). The reads were filtered using a bam quality score of 255. Reads having secondary alignment flag were discarded.
 
-## Estimation of sample normalization factors and cross-contamination
+### Estimation of sample normalization factors and cross-contamination
 
-To estimate the sample normalization factors Fj that account for variations in sequencing depth as well as the overall newly synthesized RNA fraction and the fraction of cross-contamination χj of non-labeled reads in the TT-seq data, we modeled the expectation of counts Eij of spike-in i in sample j using a statistical model similar to the one of Schwalb et al. (2016).(1)Eij=Fjpij(χj-δiχj+δi)
+To estimate the sample normalization factors $F_{j}$ that account for variations in sequencing depth as well as the overall newly synthesized RNA fraction and the fraction of cross-contamination $χ_{j}$ of non-labeled reads in the TT-seq data, we modeled the expectation of counts $E_{ij}$ of spike-in $i$ in sample $j$ using a statistical model similar to the one of Schwalb et al. (2016).
 
-χj is set to 1 for all RNA-seq samples, δi is 0 for labeled spike-ins and 1 for unlabeled spike-ins. The parameter pij is the condition and spike-in specific extraction probability. The difference with (Schwalb et al., 2016) is to allow the parameter pij to be condition-specific (TT-seq or RNA-seq), which turned out to model better cross-contamination of unlabeled RNA in the short duration TT-seq libraries. We set pij=pik for all sets of j and k belonging to either RNA-seq samples, TT-seq samples or if i belongs to a labeled spike-in. We assumed read count data to follow a negative binomial distribution with a common dispersion parameter for all data. The model parameters and the dispersion parameter were fitted as generalized linear model using maximum likelihood.
+$$
+E_{ij}=F_{j}p_{ij}(χ_{j}-\delta_{i}χ_{j}+\delta_{i})
+$$
 
-## Kinetic rate modeling and estimation
+$χ_{j}$ is set to 1 for all RNA-seq samples, $\delta_{i}$ is 0 for labeled spike-ins and 1 for unlabeled spike-ins. The parameter $p_{ij}$ is the condition and spike-in specific extraction probability. The difference with (Schwalb et al., 2016) is to allow the parameter $p_{ij}$ to be condition-specific (TT-seq or RNA-seq), which turned out to model better cross-contamination of unlabeled RNA in the short duration TT-seq libraries. We set $p_{ij}=p_{ik}$ for all sets of $j$ and $k$ belonging to either RNA-seq samples, TT-seq samples or if $i$ belongs to a labeled spike-in. We assumed read count data to follow a negative binomial distribution with a common dispersion parameter for all data. The model parameters and the dispersion parameter were fitted as generalized linear model using maximum likelihood.
 
-For each detected intron i we modeled the concentrations ci,l of each of three characteristic bonds (donor, acceptor, junction) independently following a first order kinetic rate equation. Without loss of generality, we consider in the following just one of the three equations - the other two behave the same.(2)ddtci(t)=αi-βici(t)
+### Kinetic rate modeling and estimation
 
-We assume that all newly synthesized RNAs are labeled. The concentration of labeled bonds, assuming an initial concentration of 0, follows:(3) cit, labeled=αiβi(1-e-tβi)
+For each detected intron $i$ we modeled the concentrations $c_{i,l}$ of each of three characteristic bonds (donor, acceptor, junction) independently following a first order kinetic rate equation. Without loss of generality, we consider in the following just one of the three equations - the other two behave the same.
 
-Also, the old, non-labeled RNA decays exponentially as  ci(t, unlabeled)=αiβie−tβi. Using the normalization factor Fj of sample j, the labeling time tj and χj the cross-contamination of unlabeled RNAs in the purified fraction, the concentration can be mapped to its expected count Ei,j:(4)Ei,j=Fjαiβi(1 +e−tjβi (χj − 1))forTT-seq;Ei,j=FjαiβiforRNA-seq
+$$
+\frac{d}{dt}c_{i}(t)=\alpha_{i}-\beta_{i}c_{i}(t)
+$$
 
-We modeled read counts using the negative binomial distribution, a count distribution often used for RNA-seq data because it captures sampling noise and further sources of variations. The kinetic parameters αi,βi are estimated by maximizing the log likelihood l=∑i,j log⁡(NBki,jEi,j(αi,βi), θ, where ki,j are the observed counts, using the BFGS numerical optimization algorithm and using the dispersion parameter obtained from the spike-ins analysis. The optimization was initialized 10 times with independent random parameters; the final solution comprises the median of all αi,βi over the different runs to compensate for numerical instabilities. We removed all donors, acceptors, junctions with too few counts (∑jki,j<100) from the modeling.
+We assume that all newly synthesized RNAs are labeled. The concentration of labeled bonds, assuming an initial concentration of 0, follows:
 
-Using the table in Figure 2—figure supplement 1A we map the rates α,β to the characteristic kinetic parameters of donor, acceptor, and junction. The whole modeling approach was implemented in R and is available as apackage called rCube (https://github.com/gagneurlab/rCube). Because the donor and acceptor bond half-life models work on a logarithmic scale, we present model errors as multiplicative errors given by the equation median (exp⁡(|log⁡(yy^)|)), with y as the observation and y^ the prediction. More details about kinetic models are provided in the Appendix.
+$$
+c_{i}t,labeled=\frac{\alpha_{i}}{\beta_{i}}(1-e^{-t\beta_{i}})
+$$
 
-## Determination of the major isoforms
+Also, the old, non-labeled RNA decays exponentially as $ c_{i}(t, unlabeled)=\frac{\alpha_{i}}{\beta_{i}}e^{−t\beta_{i}}$. Using the normalization factor $F_{j}$ of sample $j$, the labeling time $t_{j}$ and $χ_{j}$ the cross-contamination of unlabeled RNAs in the purified fraction, the concentration can be mapped to its expected count $E_{i,j}:$
+
+$$
+E_{i,j}=\frac{F_{j}\alpha_{i}}{\beta_{i}}(1 +e^{−t_{j}\beta_{i}} (χ_{j} − 1))forTT-seq;E_{i,j}=\frac{F_{j}\alpha_{i}}{\beta_{i}}forRNA-seq
+$$
+
+We modeled read counts using the negative binomial distribution, a count distribution often used for RNA-seq data because it captures sampling noise and further sources of variations. The kinetic parameters $\alpha_{i},\beta_{i}$ are estimated by maximizing the log likelihood $l=\sum_{i,j}log⁡(NBk_{i,j}E_{i,j}(\alpha_{i},\beta_{i}),\theta$, where $k_{i,j}$ are the observed counts, using the BFGS numerical optimization algorithm and using the dispersion parameter obtained from the spike-ins analysis. The optimization was initialized 10 times with independent random parameters; the final solution comprises the median of all $\alpha_{i},\beta_{i}$ over the different runs to compensate for numerical instabilities. We removed all donors, acceptors, junctions with too few counts ($\sumjk_{i,j}<100$) from the modeling.
+
+Using the table in Figure 2—figure supplement 1A we map the rates $\alpha,\beta$ to the characteristic kinetic parameters of donor, acceptor, and junction. The whole modeling approach was implemented in R and is available as apackage called rCube (https://github.com/gagneurlab/rCube). Because the donor and acceptor bond half-life models work on a logarithmic scale, we present model errors as multiplicative errors given by the equation $median (exp⁡(|log⁡(\frac{y}{y^})|))$, with y as the observation and $y^$ the prediction. More details about kinetic models are provided in the Appendix.
+
+### Determination of the major isoforms
 
 We applied the software Salmon (Patro et al., 2017) (index kmer size = 31) to all RNA-seq samples and mapped them against the full transcriptome of the GENCODE (Ver. 24) annotation. For each gene, we selected the isoform with the maximum mean TPM value across all RNA-seq samples as the major isoform. The major isoform was only used in the analyses in Figures 2B–D, 3D and 7B. Elsewhere, analyses were only relying on individual junction annotations.
 
-## Estimation of the relative uncertainty for the kinetic parameters
+### Estimation of the relative uncertainty for the kinetic parameters
 
 To estimate relative uncertainty of the kinetic parameters in a conservative way we assumed that all donors and acceptors of the major isoform of a given GENCODE gene shared the same synthesis rate equal to the transcription rate of the gene. We further assumed that all products (‘junctions’) shared the same half-life equal to the mature RNA half-life. Because noise of these rate estimates is typically multiplicative, we computed the standard errors of the logarithm of these rates and reported relative uncertainties as the exponential of these standard errors.
 
-## Comparison of 4sU-seq and TT-seq
+### Comparison of 4sU-seq and TT-seq
 
-Alignment, counting and estimation of normalization and cross-contamination factors of the RNA-seq data sets of Schwalb et al. (2016) was done as described above for our data. Counts for 4sU-seq and TT-seq was normalized using Ki,j^=Ki,jFj−χjKi,RNA-seqFRNA-seq, where i denotes the split / unsplit reads as shown if Figure 2A for each intron of the major transcripts and j is the sample (4sU- / TT-seq and replicate). Both replicates were pooled together.
+Alignment, counting and estimation of normalization and cross-contamination factors of the RNA-seq data sets of Schwalb et al. (2016) was done as described above for our data. Counts for 4sU-seq and TT-seq was normalized using $K_{i,j}^=\frac{K_{i,j}}{F_{j}}−\frac{χ_{j}K_{i,RNA-seq}}{F_{RNA-seq}}$, where $i$ denotes the split / unsplit reads as shown if Figure 2A for each intron of the major transcripts and $j$ is the sample (4sU- / TT-seq and replicate). Both replicates were pooled together.
 
-## Branchpoint identification
+### Branchpoint identification
 
 Due to the limited availability of experimental branchpoint measurements, the prediction algorithm LaBranchoR (Paggi and Bejerano, 2018) was utilized to predict branchpoint positions within introns. We applied the model within the kipoi framework (http://kipoi.org/) to score the last 100 nucleotides of each intron and took the nucleotide with the maximum score for being the utilized branchpoint. The results were validated using experimental data of Mercer et al. (2015) where available.
 
-## Estimation of single nucleotide effects
+### Estimation of single nucleotide effects
 
 We identified nucleotide positions not predictive of donor or acceptor bond half-life and estimated the effect of the remaining single nucleotides on the donor bond half-life and on the acceptor bond half-life by regression. To this end, we modeled log-transformed half-lives of the donor bonds (and with a separate model of the acceptor bonds) as a weighted sum of each of the 20 nucleotides upstream or downstream of the donor, acceptor site and branchpoint, as well as of the GC frequency of the whole intron, the donor site, and the acceptor site. In this linear model, the reference sequence was chosen to be the consensus sequence so that the coefficients can be interpreted as the effects of substituting a consensus nucleotide to an alternative nucleotide. Lasso regression (Tibshirani, 1996) is a regularized linear regression method that can estimate some of the coefficients to be exactly 0 and that is therefore often used to select explanatory variables. We performed Lasso regression as implemented in glmnet (Friedman et al., 2010), choosing the largest shrinkage parameter at which the mean squared error (MSE) was within one standard error of the minimal MSE using 10-fold cross-validation. For donor bond half-life, as well as for acceptor bond half-life, the Lasso regression fit led to several nucleotide coefficients to be exactly 0. We then removed all the nucleotide positions where all single nucleotide effects had a coefficient equal to 0. Next, we estimated the single nucleotide effects of all remaining positions as well as the effect of GC frequency of the whole intron, the donor site, and the acceptor site on log-transformed donor and acceptor bond half-lives using ordinary least squares regression.
 
-## Structures modeling
+### Structures modeling
 
 Images of spliceosome structures (PDB code 4PJO, 5O9Z, 5XJC) were drawn using Pymol (https://pymol.org/).
 
-## Estimation of octamer effects and multivariate model
+### Estimation of octamer effects and multivariate model
 
 The number of occurrences of all 65,536 nucleotide octamers in the regions 15–100 nt downstream of the donor site, 100 nt upstream of the branchpoint, all nucleotides between the branchpoint and the five nt upstream of the acceptor site and 5–100 nt upstream of the acceptor site were counted allowing for two mismatches. The 15 nt immediately downstream of the donor site or 5 nt upstream of the acceptor site were excluded from the octamer search space because they were already incorporated in the single nucleotide model. Regions extending in the upstream or downstream exon were cropped to keep them within the intron. The base 2 logarithm of octamer pseudo-counts log2 (count +1) were used as covariates together with the GC frequency of the intron and the GC frequency of each region. The log-transformed donor/acceptor bond half-lives were the response variable. Lasso regression was applied to each region independently with 5-fold cross-validation to choose the optimal shrinkage parameter and select potential significant octamers. In a second step all selected octamers of each region were used together with the single nucleotide model as well as the GC frequency of the different regions, intron length and whether an intron is the first within the major transcript in a joint model to refine the selection of octamers (Lasso 10-fold cross-validation).
 
-## Octamer match to ATtRACT database
+### Octamer match to ATtRACT database
 
 We compared each octamer to all reported PWMs with at least 5 nucleotides of the ATtRACT database and calculated the ratio between the probability of the best matching position (PWM-score) and the highest possible probability for any octamer (RPM-score, Cook et al., 2011). Each octamer was padded with an equal number of ‘N’s at both sides if the PWM was longer than the octamer. We ranked all matches based on their RPM-score and kept only the best 5% for each PWM and removed afterwards all matches with a RPM-score less than 0.9. The remaining matches were considered as hits.
 
-## Phylogenetic conservation of octamers
+### Phylogenetic conservation of octamers
 
 To calculate the phylogenetic conservation score for each octamer, we retrieved the PhastCons 100-way track (http://hgdownload.cse.ucsc.edu/goldenpath/hg38/phastCons100way/), which reports conservation across 99 vertebrates aligned to the human genome, and extracted the mean of all nucleotides for all matching positions. Octamers of the region 100 nt downstream of the donor site found to be predictive for donor site or acceptor bond half-life were also searched in the region 100 nt downstream of the donor site. Octamers of the region 100 nt upstream of the branchpoint or acceptor site or between the branchpoint and the acceptor site found to be predictive for donor or acceptor bond half-life were jointly searched in the region 100 nt upstream of the acceptor site, since these three regions were strongly overlapping. We also included as list of 2000 random octamers to estimate the background distribution in the same regions.
 
-## Calculation of splicing yield
+### Calculation of splicing yield
 
-We define the splicing yield of donor ηdonor and acceptor  ηacceptor as follows:(5)ηdonor=∑{acceptor}αjunction(donor,acceptor)αdonorηacceptor=∑{donor}ajunction(donor,acceptor)aacceptorwhere αdonor and αacceptor denote the synthesis rates of the donor site and of the acceptor site phosphodiester bond, respectively, and αjunctiondonor,acceptor denote the synthesis rate of the spliced exon-exon phosphodiester bond utilizing the specified donor and acceptor. Since the first-order kinetic model does systematically underestimate junction synthesis rates and overestimate donor synthesis rates, we switched to the alternative kinetic models to estimate these rates. However, since the first-order kinetic model is more robust and the acceptor kinetics do not include a delay we used the first-order kinetic model for the estimation of the acceptor synthesis rate. We defined the intron splicing yield η as the acceptor site splicing yield because its estimation is more robust compared to the donor site splicing yield.
+We define the splicing yield of donor $η_{donor}$ and acceptor $η_{acceptor}$ as follows:
 
-## Code availability
+$$
+η_{donor}=\sum{acceptor}\frac{\alpha_{junction}(donor,acceptor)}{\alpha_{donor}}η_{acceptor}=\sum{donor}\frac{a_{junction}(donor,acceptor)}{a_{acceptor}}
+$$
+
+where $\alpha_{donor}$ and $\alpha_{acceptor}$ denote the synthesis rates of the donor site and of the acceptor site phosphodiester bond, respectively, and $\alpha_{junction}donor,acceptor$ denote the synthesis rate of the spliced exon-exon phosphodiester bond utilizing the specified donor and acceptor. Since the first-order kinetic model does systematically underestimate junction synthesis rates and overestimate donor synthesis rates, we switched to the alternative kinetic models to estimate these rates. However, since the first-order kinetic model is more robust and the acceptor kinetics do not include a delay we used the first-order kinetic model for the estimation of the acceptor synthesis rate. We defined the intron splicing yield $η$ as the acceptor site splicing yield because its estimation is more robust compared to the donor site splicing yield.
+
+### Code availability
 
 All the code used for counting donor site, acceptor sites, and junction reads as well as estimating the kinetic rates is available in the R package rCube (https://github.com/gagneurlab/rCube; Wachutka et al., 2017). The single nucleotide model is shared in the model repository Kipoi (http://kipoi.org/models/CleTimer/; Avsec et al., 2019).
 
-## Accession code
+### Accession code
 
 The sequencing data and processed files were deposited in NCBI Gene Expression Omnibus (GEO) database under accession code GSE129635.

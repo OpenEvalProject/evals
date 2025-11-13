@@ -10,16 +10,16 @@
 
 ### Affiliations
 
-1. https://ror.org/02vm5rt34 Department of Molecular Physiology and Biophysics, School of Medicine, Vanderbilt University Nashville United States
-2. https://ror.org/02vm5rt34 Center for Structural Biology, Vanderbilt University Nashville United States
-3. https://ror.org/05dq2gs74 Department of Anesthesiology, Vanderbilt University Medical Center Nashville United States
-4. https://ror.org/02vm5rt34 Department of Pharmacology, School of Medicine, Vanderbilt University Nashville United States
+1. Department of Molecular Physiology and Biophysics, School of Medicine, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
+2. Center for Structural Biology, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
+3. Department of Anesthesiology, Vanderbilt University Medical Center Nashville United States ([ROR:05dq2gs74](https://ror.org/05dq2gs74))
+4. Department of Pharmacology, School of Medicine, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
 
 † Corresponding author
 
 ## Abstract
 
-Volume-regulated anion channels (VRACs) mediate volume regulatory Cl - and organic solute efflux from vertebrate cells. VRACs are heteromeric assemblies of LRRC8A-E proteins with unknown stoichiometries. Homomeric LRRC8A and LRRC8D channels have a small pore, hexameric structure. However, these channels are either non-functional or exhibit abnormal regulation and pharmacology, limiting their utility for structure-function analyses. We circumvented these limitations by developing novel homomeric LRRC8 chimeric channels with functional properties consistent with those of native VRAC/LRRC8 channels. We demonstrate here that the LRRC8C-LRRC8A(IL1 25 ) chimera comprising LRRC8C and 25 amino acids unique to the first intracellular loop (IL1) of LRRC8A has a heptameric structure like that of homologous pannexin channels. Unlike homomeric LRRC8A and LRRC8D channels, heptameric LRRC8C-LRRC8A(IL1 25 ) channels have a large-diameter pore similar to that estimated for native VRACs, exhibit normal DCPIB pharmacology, and have higher permeability to large organic anions. Lipid-like densities are located between LRRC8C-LRRC8A(IL1 25 ) subunits and occlude the channel pore. Our findings provide new insights into VRAC/LRRC8 channel structure and suggest that lipids may play important roles in channel gating and regulation.
+Volume-regulated anion channels (VRACs) mediate volume regulatory Cl- and organic solute efflux from vertebrate cells. VRACs are heteromeric assemblies of LRRC8A-E proteins with unknown stoichiometries. Homomeric LRRC8A and LRRC8D channels have a small pore, hexameric structure. However, these channels are either non-functional or exhibit abnormal regulation and pharmacology, limiting their utility for structure-function analyses. We circumvented these limitations by developing novel homomeric LRRC8 chimeric channels with functional properties consistent with those of native VRAC/LRRC8 channels. We demonstrate here that the LRRC8C-LRRC8A(IL125) chimera comprising LRRC8C and 25 amino acids unique to the first intracellular loop (IL1) of LRRC8A has a heptameric structure like that of homologous pannexin channels. Unlike homomeric LRRC8A and LRRC8D channels, heptameric LRRC8C-LRRC8A(IL125) channels have a large-diameter pore similar to that estimated for native VRACs, exhibit normal DCPIB pharmacology, and have higher permeability to large organic anions. Lipid-like densities are located between LRRC8C-LRRC8A(IL125) subunits and occlude the channel pore. Our findings provide new insights into VRAC/LRRC8 channel structure and suggest that lipids may play important roles in channel gating and regulation.
 
 ## Introduction
 
@@ -31,45 +31,408 @@ Defining the molecular basis by which VRAC and other volume-sensitive channels d
 
 We describe here the cryo-EM structures of the LRRC8C-LRRC8A(IL125) chimera, hereafter termed 8C-8A(IL125). 8C-8A(IL125) consists of a 25-amino acid sequence unique to the first intracellular loop, IL1, of LRRC8A inserted into the corresponding region of LRRC8C (Figure 1). Like native VRAC/LRRC8 channels, 8C-8A(IL125) chimeras are activated strongly by cell swelling and low intracellular ionic strength (Yamada and Strange, 2018). We demonstrate that the 8C-8A(IL125) chimeric channel is a large-pore seven-subunit heptamer, like homologous pannexin channels (Bhat and Sajjad, 2021; Deng et al., 2020; Jin et al., 2020; Kuzuya et al., 2022; Michalski et al., 2020; Mou et al., 2020; Qu et al., 2020; Ruan et al., 2020). The pore diameter is similar to that estimated for native VRACs, and permeability to large organic anions is significantly higher than that of homohexameric LRRC8A channels. Lipid-like densities are located between 8C-8A(IL125) channel subunits and occlude the channel pore, as has been shown recently for human pannexin 1 (Kuzuya et al., 2022). Our results, together with the previous studies (Deneka et al., 2021; Deneka et al., 2018; Kasuya et al., 2018; Kefauver et al., 2018; Kern et al., 2019; Nakamura et al., 2020), demonstrate that LRRC8 proteins can form anion channels with different subunit numbers.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig1-v2.jpg)
+
+**Figure 1.:** (A) Sequence alignment of LRRC8A and LRRC8C around the swapped IL125 region. The swapped region in the 8C-8A(IL125) construct is shown inside a black box. The key below amino acid sequences denotes identical (*), conservative (:), and semi-conservative (.) sequences. Space indicates the residues that are not conserved. (B) The amino acid sequence of the 8C-8A(IL125) construct around the swapped IL125 region. (C) Schematic diagram of the 8C-8A(IL125) protein highlighting the relative position of the swapped IL125 region.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** SDS-PAGE (A), native-PAGE (B), and size exclusion chromatography (C) analysis of the purified LRRC8A and 8C-8A(IL125) proteins.
+
 ## Results
 
-## Structure determination
+### Structure determination
 
 To facilitate structure-function understanding of VRAC/LRRC8 channel regulation and pore properties, we expressed the 8C-8A(IL125) chimera in Sf9 insect cells and purified the detergent-solubilized complexes by affinity and size exclusion chromatography (Figure 1—figure supplement 1). The purified 8C-8A(IL125) complex appeared larger than the LRRC8A hexamers in both native-PAGE and size exclusion chromatography analysis (Figure 1—figure supplement 1B–C). We performed single-particle cryo-EM analysis to determine the structure of the complex (Figure 2 and Figure 2—figure supplements 1 and 2). Following 2D classification and ab initio 3D reconstruction, we performed 3D classification and obtained five distinct 3D classes for 8C-8A(IL125) (Figure 2—figure supplement 1). The 8C-8A(IL125) maps showed no apparent symmetric arrangement. Therefore, the final reconstructions were done without enforcing any symmetry and resulted in five structures with resolutions in the range of 3.4–4.0 Å (Figure 2A and B, Figure 2—figure supplements 1 and 2, and Table 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig2-v2.jpg)
+
+**Figure 2.:** (A–B) Cryo-EM maps of 8C-8A(IL125) class 1 structure viewed through the membrane plane (A) and from the cytoplasm (B). (C) Ribbon representation of the 8C-8A(IL125) class 1 structure viewed through the membrane plane. (D–E) Unsharpened cryo-EM maps of 8C-8A(IL125) class 1 structure viewed through the membrane plane (D) and from the cytoplasm (E), emphasizing low-resolution features. (F) Structural comparison of the 8C-8A(IL125) (cyan) and LRRC8A (magenta, PDB ID: 5ZSU) subunits.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Flowchart detailing the particle selection and refinement procedure to obtain the cryo-EM maps of 8C-8A(IL125). Local resolution maps are shown on maps viewed at two different thresholds in Chimera. FSC curves and angular distributions are shown for the refined classes.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Cryo-EM map of 8C-8A(IL125) class 1 structure colored by individual subunits. (B) Masks used for local refinement of individual subunits are shown as transparent gray surfaces. Each mask was used separately for local refinement. (C) The cryo-EM maps after local refinement for each subunit are aligned onto the original map. (D) Ribbon representation of the 8C-8A(IL125) structure. (E–F) Representative images of the cryo-EM density and the modeled structure covering parts of extracellular domain (ECD) (E), transmembrane domain (TMD) (F), and intracellular domain (ICD) (G). The map in panel (G) is obtained after local refinement, and the maps in panels (E) and (F) are the original maps.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A–C) Ribbon representations of LRRC8A (PBD ID: 5ZSU) (A), 8C-8A(IL125) class 1 structure (B), and pannexin 1 (PDB ID: 6VD7) (C) viewed from the extracellular space (top), through the membrane plane (middle) and from the cytoplasm (bottom). Leucine-rich repeat motif-containing domains (LRRDs) for 8C-8A(IL125) and LRRC8A were not shown. Each subunit is colored differently.
+
+**Table 1.**
+ Cryo-electron microscopy (cryo-EM) data collection, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Data collection and processing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microscope</td>
+      <td colspan="5">FEI Krios G3i microscope</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td colspan="5">Gatan K3 direct electron camera</td>
+    </tr>
+    <tr>
+      <td>Nominal magnification</td>
+      <td colspan="5">×81,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td colspan="5">300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e/Å2)</td>
+      <td colspan="5">54</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td colspan="5">–0.8 to –1.5</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td colspan="5">1.1</td>
+    </tr>
+    <tr>
+      <td>Number of Micrographs</td>
+      <td colspan="5">3198</td>
+    </tr>
+    <tr>
+      <td>Particles images (no.)</td>
+      <td colspan="5">846,122</td>
+    </tr>
+    <tr>
+      <td>Conformational state</td>
+      <td>Class 1</td>
+      <td>Class 2</td>
+      <td>Class 3</td>
+      <td>Class 4</td>
+      <td>Class 5</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+      <td>C1</td>
+      <td>C1</td>
+      <td>C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Final particles images (no.)</td>
+      <td>203,011</td>
+      <td>132,722</td>
+      <td>100,772</td>
+      <td>93,179</td>
+      <td>85,591</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)(FSC threshold = 0.143)</td>
+      <td>3.4</td>
+      <td>3.6</td>
+      <td>3.7</td>
+      <td>3.8</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)(original map, FSC threshold = 0.5)</td>
+      <td>3.6</td>
+      <td>3.9</td>
+      <td>3.9</td>
+      <td>4.2</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <td>B-factor used for map sharpening (Å2)</td>
+      <td>–102.0</td>
+      <td>–88.2</td>
+      <td>–84.7</td>
+      <td>–70.5</td>
+      <td>–83</td>
+    </tr>
+    <tr>
+      <td colspan="2">Model composition</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>17,499</td>
+      <td>17,499</td>
+      <td>17,465</td>
+      <td>10,435</td>
+      <td>10,435</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>2101</td>
+      <td>2101</td>
+      <td>2097</td>
+      <td>2101</td>
+      <td>2101</td>
+    </tr>
+    <tr>
+      <td colspan="2">Mean B factors (Å2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>32.4</td>
+      <td>23.5</td>
+      <td>32.4</td>
+      <td>44.9</td>
+      <td>38.34</td>
+    </tr>
+    <tr>
+      <td colspan="2">R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.003</td>
+      <td>0.002</td>
+      <td>0.003</td>
+      <td>0.002</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.563</td>
+      <td>0.525</td>
+      <td>0.553</td>
+      <td>0.516</td>
+      <td>0.807</td>
+    </tr>
+    <tr>
+      <td>Molprobity score</td>
+      <td>1.72</td>
+      <td>1.68</td>
+      <td>1.75</td>
+      <td>1.37</td>
+      <td>1.49</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td>5.04</td>
+      <td>4.84</td>
+      <td>6.02</td>
+      <td>1.14</td>
+      <td>1.54</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>92.9</td>
+      <td>93.5</td>
+      <td>93.6</td>
+      <td>89.95</td>
+      <td>88.3</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>7.1</td>
+      <td>6.5</td>
+      <td>6.4</td>
+      <td>10.0</td>
+      <td>11.6</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.05</td>
+      <td>0.1</td>
+    </tr>
+  </tbody>
+</table>
+
 Similar to LRRC8A and LRRC8D structures, the 8C-8A(IL125) structure comprises four domains, the extracellular domain (ECD), transmembrane domain (TMD), intracellular domain (ICD), and leucine-rich repeat (LRR) motif-containing domain (LRRD) (Figure 2). The cryo-EM maps for the ECD and TMD revealed high-resolution features allowing us to build an atomic model comprising most of the ECD and TMD except residues 60–94 in the ECD and the first 15 residues of the N-terminus. The quality of the cryo-EM maps for the ICDs was improved by performing local refinements, and the resulting maps were used to build a model (Figure 2—figure supplement 2). However, the first intracellular loop containing the swapped IL125 region remained unresolved. Although the unsharpened maps revealed clear features for the entire protein, the local resolution for the LRRD was insufficient to build an atomic model, and the local refinement strategy we applied did not provide any meaningful improvement in LRRD resolution (Figure 2A–E and Figure 2—figure supplements 1 and 2). Therefore, we did not build an atomic model for the LRRD and used the maps without B-factor sharpening to assess their structure and overall arrangement relative to the rest of the protein complex (Figure 2D–E).
 
-## 8C-8A(IL125) chimeras form heptameric channels
+### 8C-8A(IL125) chimeras form heptameric channels
 
 The overall structure of an individual 8C-8A(IL125) subunit is similar to that of LRRC8A (Figure 2F) and LRRC8D. However, unlike homomeric LRRC8A and LRRC8D channels, which are hexamers (Deneka et al., 2021; Deneka et al., 2018; Kasuya et al., 2018; Kefauver et al., 2018; Kern et al., 2019; Nakamura et al., 2020), the 8C-8A(IL125) chimeric channel is a seven-subunit heptamer, similar to the homologous pannexin channels (Figure 2B and E; Figure 2—figure supplement 3; Bhat and Sajjad, 2021; Deng et al., 2020; Jin et al., 2020; Kuzuya et al., 2022; Michalski et al., 2020; Mou et al., 2020; Qu et al., 2020; Ruan et al., 2020).
 
 The subunit arrangement of the 8C-8A(IL125) heptameric channel is asymmetric as opposed to LRRC8A and LRRC8D hexamers, which have two-, three-, or sixfold symmetric arrangements (Deneka et al., 2021; Deneka et al., 2018; Kasuya et al., 2018; Kefauver et al., 2018; Kern et al., 2019; Nakamura et al., 2020). When the ICD and TMD are viewed from the cytoplasm, 8C-8A(IL125) subunits are organized into two distinct groups, one with four subunits and the other with three subunits (Figure 3A–D). These two groups of subunits associate via a loose interface, while the subunits within each group associate via a tight interface (Figure 3A–D and Figure 3—figure supplements 1–3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) Surface representation of the 8C-8A(IL125) class 1 structure viewed from two sides, highlighting the ‘tight’ (A) and ‘loose’ (B) interfaces. (C–E) Intracellular domain (ICD), transmembrane domain (TMD), and extracellular domains (ECDs) are viewed from the cytoplasm with a depth of view, as shown in panel (B).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Overlay of two 8C-8A(IL125) subunit pairs of the class 1 structure that form tight and loose interfaces. Structures were aligned on their extracellular domains (ECDs). (B–C) Close-up view of the ECDs forming the tight (B) and loose (C) interfaces. Select residues at the interfaces are shown in stick representation and labeled.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Overlay of two 8C-8A(IL125) subunit pairs of the class 1 structure that form tight and loose interfaces. Structures were aligned on their extracellular domains (ECDs). (B–C) Close-up view of the transmembrane domains (TMDs) forming the tight (B) and loose (C) interfaces. Select residues at the interfaces are shown in stick representation and labeled.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Overlay of two 8C-8A(IL125) subunit pairs of the class 1 structure that form tight and loose interfaces. Structures were aligned on their extracellular domains (ECDs). (B–C) Close-up view of the intracellular domains (ICDs) forming the tight (B) and loose (C) interfaces. Select residues at the interfaces are shown in stick representation and labeled.
+
 In contrast to the ICDs and TMDs, the ECDs are arranged symmetrically and form extensive contacts between the subunits in both tight and loose interfaces (Figure 3E and Figure 3—figure supplement 1). Most of the subunit interaction is between the residues on ELH1 and the linker that connects EL2β1 and EL2β2 in one subunit and the residues on the three β-strands of the neighboring subunit (Figure 3E and Figure 3—figure supplement 1). The contacts between each subunit pair bury about 1900 Å2 of solvent-accessible surface area at the ECDs (Table 2). The buried solvent-accessible surface areas between the subunit pairs in the TMDs and ICDs are considerably smaller and exhibit high variability between the tight and the loose interfaces. In the TMD, the buried areas are about 650 and 110 Å2 for the tight and loose interfaces, respectively (Table 2). The residues within the core of the TMD are loosely associated and the major interactions of the subunits within the TMD are mediated by the residues closer to the ECDs or ICDs at the tight interface (Figure 3—figure supplement 2). At the loose interface, only residues closer to the ECD are in close range for direct interaction (Figure 3—figure supplement 2). In the ICD, the buried areas in the tight interfaces range from 290 to 560 Å2, whereas there are no solvent-inaccessible contacts at the loose interfaces (Figure 3E, Figure 3—figure supplements 2–3, and Table 2).
+
+**Table 2.**
+ Total buried solvent-accessible surface area between subunits for each domain.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="7">Buried surface area between the neighboring subunits (Å2)*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>SubunitsA-B</td>
+      <td>Subunits B-C</td>
+      <td>Subunits C-D</td>
+      <td>Subunits D-E</td>
+      <td>Subunits E-F</td>
+      <td>Subunits F-G</td>
+      <td>Subunits G-A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tight</td>
+      <td>Tight</td>
+      <td>Tight</td>
+      <td>Loose</td>
+      <td>Tight</td>
+      <td>Tight</td>
+      <td>Loose</td>
+    </tr>
+    <tr>
+      <td>ECD†</td>
+      <td>1995</td>
+      <td>1897</td>
+      <td>1964</td>
+      <td>1905</td>
+      <td>1900</td>
+      <td>1896</td>
+      <td>1869</td>
+    </tr>
+    <tr>
+      <td>TMD†</td>
+      <td>664</td>
+      <td>625</td>
+      <td>620</td>
+      <td>122</td>
+      <td>660</td>
+      <td>670</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <td>ICD†</td>
+      <td>462</td>
+      <td>294</td>
+      <td>500</td>
+      <td>0</td>
+      <td>559</td>
+      <td>502</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Buried solvent-accessible surface area calculations were performed using the software NACCESS v2.1.1 (Hubbard and Thornton, 1993).†Domain definitions used for these calculations are as follows: ECD: residues 49–121 and 288–310; TMD: residues 20–48, 122–150, 260–287, and 311–342; ICD: residues 151–259 and 343–405._
 
 The asymmetric arrangement observed for the TMDs and ICDs is likely due to their divergent orientation relative to the ECDs. Figure 4A shows the alignment of the seven subunits on their ECDs. TMDs do not align and exhibit up to an 8° difference in their orientation relative to the ECD, while the difference is larger for the ICDs (Figure 4A). Another notable difference between the subunits is in the linker that connects the first β-strand on extracellular loop 1, EL1β1, of the ECD to the transmembrane helix 1 (TM1) of the TMD (Figure 4A–B). In two of the subunits in the class 1 structure, K51 points toward the pore, while D50 points in the opposite direction. In the five other subunits, D50 points toward the pore, and K51 is oriented toward the subunit interface (Figure 4C). When K51 points toward the pore, it creates a groove between the subunits (Figure 4D). These grooves, located between the subunits forming the loose interface in the class 1 structure, connect the space within the ECD to the membrane-facing surface of the TMD (Figure 4E). When D50 points toward the pore, the side chain of K51 occupies this space, closing the groove (Figure 4F).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig4-v2.jpg)
 
-**Figure 4.:** 25) protomers.(A) Structural comparison of the 8C-8A(IL125) subunits in the class 1 structure. The structures are aligned based on their extracellular domains (ECDs). (B) Close-up view of the box region in panel (A), highlighting the structural differences in the loop that connects transmembrane helix 1 (TM1) to EL1β1. Only two subunits are shown. (C) Close-up view of the pore around the residues D50 and K51, which are shown as sticks. The residues that adopt different conformations compared to others are labeled in red. The dashed circle indicates the pore-lining surface. (D) The same view as panel (C) but including the surface representation (transparent) to highlight the distinct interfaces between the subunits. (E–F) Close-up view of the interfaces from the points of view shown in panel (D).
+**Figure 4.:** (A) Structural comparison of the 8C-8A(IL125) subunits in the class 1 structure. The structures are aligned based on their extracellular domains (ECDs). (B) Close-up view of the box region in panel (A), highlighting the structural differences in the loop that connects transmembrane helix 1 (TM1) to EL1β1. Only two subunits are shown. (C) Close-up view of the pore around the residues D50 and K51, which are shown as sticks. The residues that adopt different conformations compared to others are labeled in red. The dashed circle indicates the pore-lining surface. (D) The same view as panel (C) but including the surface representation (transparent) to highlight the distinct interfaces between the subunits. (E–F) Close-up view of the interfaces from the points of view shown in panel (D).
 
-## Structural heterogeneity of 8C-8A(IL125) chimeras
+### Structural heterogeneity of 8C-8A(IL125) chimeras
 
 We obtained five distinct 3D classes for the 8C-8A(IL125) chimera. The most apparent difference between the structures is in the arrangement of the LRRDs (Figure 5A–B). In class 1, all seven LRRDs are arranged circularly with roughly sevenfold symmetry. For class 5, one of the LRRDs is positioned outside of the quaternary assembly formed by six LRRDs arranged with pseudo-twofold symmetry. The density for the LRRD located outside the assembly is poorly visible, indicating high flexibility relative to the rest of the complex (Figure 5A–B). The arrangements of the LRRDs in the other three 3D classes exhibit diverse arrangements and subunit interactions. As a result, several different subunit interfaces exist between the neighboring LRRDs. However, a detailed analysis of these interfaces is not possible due to the limited resolution of the cryo-EM maps for these regions, prohibiting the building of the models with amino acid assignments.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig5-v2.jpg)
+
+**Figure 5.:** (A–B) Cryo-electron microscopy (cryo-EM) maps (before sharpening) of 8C-8A(IL125) 3D classes viewed through the membrane plane (A) and from the cytoplasm (B). Individual subunits are colored as in Figure 1. The detergent micelle is shown in white. Red arrows point to the weak density of the leucine-rich repeat motif-containing domain (LRRD), which is not located within the LRRD quaternary assembly. Lines represent the depth of the view for LRRD, intracellular domain (ICD), and transmembrane domain (TMD). (C–D) Ribbon representation of the ICD (C) and TMD (D) structures viewed from the cytoplasm with a depth of view indicated in panel (A). The Cα atoms for G163 in ICD and V33 in TMD are shown as spheres. The distances between these atoms in neighboring subunits are shown as lines (in black and red for the tight and loose interfaces, respectively) and labeled in Å.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Overlay of 8C-8A(IL125) structures in different classes viewed through the membrane plane. (B–D) Overlay of 8C-8A(IL125) structures in different classes viewed from the intracellular space focusing on the extracellular domain (ECD) (B), transmembrane domain (TMD) (C), and intracellular domain (ICD) (D). Structures are aligned on their ECDs and colored as indicated in the figure. The depths of the views for panels (B)–(D) are indicated in panel (A) with straight lines.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Close-up view of the pore around the residues D50 and K51, which are shown as sticks. The residues that adopt different conformations compared to others are labeled in red. The dashed circle indicates the pore-lining surface.
 
 Consistent with the conformational differences in the arrangements of the LRRDs, the ICDs also exhibit conformational heterogeneity, albeit less pronounced, among the five 3D classes we observed (Figure 5C and Figure 5—figure supplement 1). Figure 5C shows the arrangement of the ICDs and the distances between the Cα atoms of G163 of the neighboring subunits. The non-symmetric and diverse subunit arrangement is evident. The distances between the subunits forming the tight interfaces appear similar in all classes, whereas the distances between the subunits forming the loose interfaces are variable among different classes. A similar variation is also observed within the TMD (Figure 5D and Figure 5—figure supplement 1). However, there are no apparent structural differences at the ECD of the structures (Figure 5—figure supplement 1).
 
 The distinct arrangement of the loops formed by D50 and K51 is also observed in other classes (Figure 5—figure supplement 2). However, the number of subunits with K51 pointing toward the pores differs. For example, the class 2 structure has only one subunit with K51 pointing toward the pore, compared to two subunits in the class 1 structure (Figure 5—figure supplement 2). The groove created by the distinct K51 arrangement is located between the subunits that form one of the two loose interfaces in the class 2 structure, despite the presence of two loose interfaces. It is plausible that this loop is flexible and adopts distinct conformations, possibly depending on the orientation of the TMD relative to the ECD. However, it is not clear if there is any direct correlation between the K51 orientation and the loose interfaces.
 
-## Pore structure
+### Pore structure
 
 Figure 6 shows the pore domain of the 8C-8A(IL125) heptameric chimera compared to the pore domain of LRRC8A hexameric channels. The narrowest region of the heptameric 8C-8A(IL125) channel pore has an average solvent-accessible radius of 4.7 Å and is formed by L105 located on the extracellular side of the protein (Figure 6A). This is considerably larger than the pore radius of 2.0 Å determined from cryo-EM structures of hexameric LRRC8A channels (Figure 6B–C; Deneka et al., 2018; Kasuya et al., 2018; Kefauver et al., 2018; Kern et al., 2019).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig6-v2.jpg)
+
+**Figure 6.:** (A–B) Pore openings of the 8C-8A(IL125) heptameric channel (class 1 structure) (A) and LRRC8A (PDB ID: 5ZSU) homohexameric channel (B) calculated using the software program HOLE (Smart et al., 1996). Only two opposing subunits are shown. Residues forming the constriction sites are shown as sticks. The first modeled residues at the N-termini are labeled as NT. (C) 1D graph of the average radius along the length of the 8C-8A(IL125) (cyan) and LRRC8A (magenta) channel pores. (D) Relative (Px/PCl) glutathione and lactobionate permeabilities calculated from reversal potential changes induced by replacing bath Cl- with the test anion. Values are means ± SEM (N=4–7). Statistical significance was determined using Student’s unpaired t-test. (E) Representative LRRC8A and 8C-8A(IL125) current traces in the presence of bath Cl- or after substitution with glutathione (Glut-) or lactobionate (Lac-). Currents were elicited by ramping membrane voltage from −100 to +100 mV.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The relative current was quantified as the fold change in current measured immediately after whole-cell access was achieved and currents measured 120 s later. As we have shown previously (Yamada et al., 2021), LRRC8A currents activate only very slowly when intracellular ionic strength is reduced from a normal level of 0.162 to 0.062 M. However, no statistically significant (p>0.9) current activation is detected 120 s after whole-cell access even at the lowest intracellular ionic strength of 0.062 M. In striking contrast, significant (p=0.02) 8C-8A(IL125) current is detected at an intracellular ionic strength of 0.136 M. Reducing ionic strength further leads to more rapid current activation and larger current amplitudes measured at 120 s. The effect of ionic strength on the rate of 8C-8A(IL125) current activation is similar to what we have reported previously for native VRAC/LRRC8 channels (Cannon et al., 1998). The current amplitude was quantified at +60 mV above the measured reversal potential. Values are means ± SEM (N=5–8). Statistical significance was determined using Student’s unpaired t-test.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–C) Close-up cytoplasmic view of the narrowest constriction sites of 8C-8A(IL125) class 1 structure (A), LRRC8A (PDB ID: 5ZSU) (B), and LRRC8D (PDB ID: 6M04) (C). (D) The heptameric LRRC8A and LRRC8D models were obtained by overlaying one of the LRRC8A or LRRC8D subunits on the seven subunits of 8C-8A(IL125) heptamer by aligning the extracellular domains (ECDs). (E–F) Pores of hypothetical LRRC8A (E) and LRRC8D (F) heptamers. Residues forming the constriction are shown as sticks. The circles and the dashed lines represent the solvent-accessible pore size and radius, respectively. The radii of the pores were calculated using the software HOLE (Smart et al., 1996) and shown on top of each panel.
+
 The difference in pore diameters of hexameric LRRC8A channels and heptameric 8C-8A(IL125) channels implies that subunit number impacts channel solute permeability. To assess this directly, we quantified the relative permeabilities (i.e., Px/PCl) of LRRC8A and 8C-8A(IL125) to the large organic anions glutathione and lactobionate. Pglutathione/PCl and Plactobionate/PCl were both significantly (p<0.01) higher for the 8C-8A(IL125) heptameric channel (Figure 6D–E), consistent with its larger pore diameter.
 
-## Interaction of lipids with the 8C-8A(IL125)
+### Interaction of lipids with the 8C-8A(IL125)
 
 As shown in Figure 7A, we observe non-protein densities penetrating through the openings between the subunits in the TMD. The shape and length of these densities are consistent with lipid molecules. Similar densities are observed in LRRC8A hexameric channels reconstituted in lipid nanodiscs (Kern et al., 2019). We observe these lipid-like densities on both the cytoplasmic and extracellular sides of the TMD. The lipid-like densities on the extracellular side do not show apparent differences between tight and loose interfaces. However, the lipid-like density closer to the intracellular side is considerably weaker at the loose interfaces compared to the ones at the tight interfaces (Figure 7A). This difference may be due to the larger separation of the subunits at the loose interface, creating more room for the lipid molecules to move.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig7-v2.jpg)
+
+**Figure 7.:** (A) Ribbon representation of the 8C-8A(IL125) class 1 structure along with the lipid-like cryo-electron microscopy (cryo-EM) densities (yellow) between the subunits viewed through the membrane plane. Loose and tight interfaces are indicated with arrows. (B) Close-up views of the boxed regions in panel (A). The cryo-EM map for the entire region visualized is shown as gray mesh. The phospholipid molecule shown as yellow sticks within the lipid-like density is used for illustration purposes only and not included in the deposited coordinate files. Select residues near the lipid-like densities are shown as sticks and labeled. (C–D) Surface representation of the 8C-8A(IL125) pore colored based on electrostatic charge (C) and hydrophobicity (D). The hypothetical lipid bilayer around the transmembrane domain (TMD) is built using CHARMM-GUI (Wu et al., 2014) and shown as sticks (cyan). Positioning of the protein within the bilayer is calculated using PPM 2.0 (Lomize et al., 2012). (E) A sliced view of the unsharpened cryo-EM map (gray, transparent) with the ribbon representation of the 8C-8A(IL125) class 1 structure. Arrows indicate densities corresponding to pore-blocking lipid-like densities and detergent micelles. (F) Hypothetical interaction of lipids with the inner surface of the pore is shown by placing phospholipids using CHARMM-GUI (Wu et al., 2014). Surface representation of the 8C-8A(IL125) colored based on hydrophobicity as in panel (D).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/82431/elife-82431-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Flowchart detailing the particle selection and refinement procedure to obtain the cryo-EM maps of the 8C-8A(IL125) nanodiscs. FSC curves and angular distributions are shown. (B–C) Full (B) and sliced (C) views of the cryo-EM maps of the 8C-8A(IL125) nanodiscs.
 
 Although the quality of the maps does not allow us to identify the lipid molecules leading to the densities we observe, the ones with the strongest features suggest phospholipids as the most likely candidates (Figure 7B). As shown in Figure 7B, a phospholipid molecule can be reasonably fitted into the strongest density we observe. The polar phosphate moiety of the lipid molecule is coordinated by two lysine residues (K125 and K318) and a histidine residue (H314) of the neighboring subunits (Figure 7B). W122, Y126, and L130 are close to the acyl chains (Figure 7B). One of the acyl chains extends through the space between the subunit and reaches the interior surface of the channel. The second acyl chain is less defined. The area contains additional non-protein densities suggesting the presence of other ordered lipid molecules.
 
@@ -105,33 +468,33 @@ The mechanisms by which eukaryotic cells sense cell volume changes and transduce
 
 ## Methods
 
-## Constructs
+### Constructs
 
 Human LRRC8A and LRRC8C cDNAs cloned into pCMV6 were purchased from OriGene Technologies. The 8C-8A(IL125) chimera cDNA construct was generated using the Phusion High-Fidelity PCR kit (New England BioLabs). All cDNAs were tagged on their carboxy terminus with Myc-DDK epitopes. For protein expression, the cDNAs encoding human LRRC8A and the 8C-8A(IL125) chimera were sub-cloned with a C-terminal FLAG tag into pAceBac1 vectors and incorporated into baculovirus using the Multibac expression system (Fitzgerald et al., 2006). All constructs were verified by DNA sequencing.
 
-## Cell lines
+### Cell lines
 
 Patch-clamp experiments were performed using Lrrc8-/- HCT116 cell line in which the five Lrrc8 genes were disrupted by genome editing. Lrrc8-/- cells were prepared and authenticated in the Thomas Jentsch Lab (Ullrich et al., 2016). They were a generous gift from Thomas Jentsch. The absence of VRAC/LRRC8 channel activity in the Lrrc8-/- cell line was confirmed routinely by patch-clamp electrophysiology performed on cells transfected with GFP cDNA only. The cells were tested negative for Mycoplasma contamination.
 
 The cells were grown in McCoy’s 5A media (HyClone) supplemented with 10% fetal bovine serum (R&D Systems), 50 units/ml of penicillin, and 50 µg/ml streptomycin in a humidified incubator at 37°C with 5% CO2.
 
-## Protein expression and purification
+### Protein expression and purification
 
 8C-8A(IL125) chimera was expressed in Sf9 cells (4×106 cells/ml) at 27°C for 48 hr. Cells were harvested by centrifugation (2000 × g) and resuspended in a lysis buffer composed of 150 mM NaCl and 50 mM Tris-HCl, pH 8.0, 1 mM phenylmethylsulfonyl fluoride. After cell lysis using Avastin EmulsiFlex-C3, the cell lysate was clarified from large debris by centrifugation at 6000 × g for 20 min. The cleared lysate was centrifuged at 185,000 × g (Type Ti45 rotor, Beckman) for 1 hr. Membrane pellets were resuspended and homogenized in ice-cold resuspension buffer (150 mM NaCl, 50 mM Tris-HCl, pH 8.0) and solubilized using 0.5% lauryl maltose neopentyl glycol (LMNG) at a membrane concentration of 100 mg/ml. The solubilized pellets were stirred gently for 4 hr at 4°C, and the insoluble material was separated by centrifugation at 185,000 × g (Type Ti45 rotor, Beckman) for 40 min. The supernatant was then mixed with anti-FLAG affinity gel resin (Sigma) at 4°C for 1 hr. After washing the resin with 10 column volume wash buffer composed of 150 mM NaCl, 50 mM Tris-HCl, pH 8.0, and 0.005% LMNG, the protein was eluted using the wash buffer supplemented with 100 µg/ml FLAG peptide. Protein was further purified by size exclusion chromatography using a Superose 6 Increase column (10/300 GL, GE Healthcare) equilibrated with 150 mM NaCl, 50 mM Tris-HCl, pH 8.0, 0.005% LMNG. The peak fraction corresponding to 8C-8A(IL125) was concentrated to 3.0 mg/ml, centrifuged at 220,000 × g using an S110-AT rotor (Thermo Fisher Scientific) for 10 min, and used immediately for cryo-EM imaging. Human LRRC8A with a C-terminal Flag tag was purified using the same protocol described above for 8C-8A(IL125).
 
 For nanodisc incorporation, 8C-8A(IL125) chimera was purified as described above except n-dodecyl-β-D-maltopyranoside (DDM, 1% for solubilization of the membrane and 0.05% in the purification buffers) was used instead of LMNG. The membrane scaffold protein MSP1E3D1 was expressed using the p MSP1E3D1 plasmid, a gift from Stephen Sligar (Addgene plasmid # 20066; http://n2t.net/addgene:20066; RRID: Addgene_20066) (Denisov et al., 2007). MSP1E3D1 was expressed in Escherichia coli BL21(DE3) cells and purified as described previously using Ni2+ affinity resin (Ritchie et al., 2009). The histidine tag was cleaved off using TEV protease, and the protein was further purified by SEC using a HiLoad 16/600 Superdex 200 pg column equilibrated with 300 mM NaCl and 40 mM Tris-HCl, pH 8.0. Peak fractions containing MSP1E3D1 were collected and stored at –80°C for the nanodisc formation.
 
-## MSP1E3D1 nanodisc formation
+### MSP1E3D1 nanodisc formation
 
 The preparation of nanodiscs was performed by mixing 8C-8A(IL125) purified in the presence of DDM with POPC lipids (Avanti Polar Lipids, Inc) and MSP1E3D1 at a final molar ratio of 1:2.5:250 (8C-8A(IL125):MSP1E3D1:POPC). The mixture was incubated with Biobeads SM2 (Bio-Rad) overnight. After removing the biobeads by centrifugation, the protein sample was concentrated and purified by SEC using a Superose 6 10/300 Increase column equilibrated with 150 mM NaCl and 50 mM Tris-HCl, pH 8.0. Peak fractions corresponding to 8C-8A(IL125)-MSP1E3D1 nanodiscs were concentrated to 2.0 mg/ml and used for cryo-EM grid preparation immediately.
 
-## Cryo-EM sample preparation and data collection
+### Cryo-EM sample preparation and data collection
 
 Purified 8C-8A(IL125) was applied to 300 mesh UltrAuFoil holey gold 1.2/1.3 grids (Quantifoil Microtools) that were glow discharged for 10 s at 25 mA. The grids were blotted for 4 s at force 12 using double-layer Whatman filter papers (1442-005, GE Healthcare) before plunging into liquid ethane using an FEI MarkIV Vitrobot at 8°C and 100% humidity. Samples were imaged using a 300 kV FEI Krios G3i microscope equipped with a Gatan K3 direct electron camera. Movies containing 400 frames were collected in super-resolution mode at ×81,000 magnification with a physical pixel size of 1.1 Å/pixel and defocus values at a range of –0.8 to –1.5 µm using the automated imaging software SerialEM (Mastronarde, 2005).
 
 8C-8A(IL125) nanodisc grids were prepared as described above. Samples were imaged using a 300 kV FEI Krios G4 microscope equipped with a Gatan K3 direct electron camera. Movies containing 50 frames were collected in super-resolution mode at ×103,000 magnification with a physical pixel size of 0.818 Å/pixel and defocus values at a range of –0.8 to –2.2 µm using the automated imaging software EPU (Thermo Fisher Scientific).
 
-## Cryo-EM data processing
+### Cryo-EM data processing
 
 All image processing was performed using CryoSparc2 (Punjani et al., 2017). Motion correction and CTF estimations were performed locally using Patch Motion Correction and Patch CTF Estimation procedures. Initial particle picking was performed by blob search. Particles were then binned 4× and extracted. After 2D classification, classes with clear structural features were selected and used for template-based particle picking. The new set of particles was binned four times and extracted. After 2D classification, a cleaned particle set was used for the ab initio 3D reconstruction. The resulting map was used as a model for 3D classification. After a series of 2D and 3D classification runs, particles were reextracted with a box size of 360×360 pixels. These particles were separated into six classes using 3D classification. Five out of six classes revealed interpretable density maps, and these particles were processed further using non-uniform refinement to obtain the final cryo-EM maps for each class.
 
@@ -139,19 +502,198 @@ To improve the quality of the cryo-EM maps around the ICDs, we performed local r
 
 Data processing for 8C-8A(IL125) nanodiscs was performed as described above, with the following exceptions. Motion correction was performed using MotionCor2 (Zheng et al., 2017) in Relion 3.0 (Zivanov et al., 2018). The final set of particles was extracted with a box size of 480×480 pixels, and they were classified into three 3D classes.
 
-## Model building
+### Model building
 
 Models were built using Coot (Emsley and Cowtan, 2004). We initially placed the human LRRC8C model from the AlphaFold protein structure prediction database (Jumper et al., 2021; Varadi et al., 2022) in the class 1 density. We manually fitted the individual residues into the density while removing the parts that did not have corresponding interpretable densities. Once we built a complete subunit, we copied the model into the other six protomers and manually fit individual residues into the density. The model was refined using Phenix real-space refinement (Afonine et al., 2018). We performed iterative build-refine cycles till a satisfactory model was obtained. The resulting model was fitted into the class 2 and 3 maps and fitted into the density using the same build-refine iterations as described above. Because of their limited resolution, most parts of class 5 and 6 structures were modeled without their side chains (i.e., as alanines) while maintaining their correct labeling for the amino acid type. The LRRDs were not modeled in all five structures. 8A-IL125 is longer by four amino acids than the corresponding region in LRRC8C (Figure 1). Therefore, the residue numbering after 8A(IL125) in the 8C-8A(IL125) chimera increases by four amino acids in the polypeptide. However, we kept the LRRC8C numberings in the models to facilitate easier comparison with other studies. Validations of the structural models were performed using MolProbity (Williams et al., 2018) implemented in Phenix (Afonine et al., 2018).
 
 Some of the data processing and refinement software was supported by SBGrid (Morin et al., 2013).
 
-## Patch-clamp electrophysiology
+### Patch-clamp electrophysiology
 
 LRRC8A and 8C-8A(IL125) cDNA constructs were expressed in Lrrc8-/- HCT116 cells transfected using Turbofectin 8.0 (OriGene Technologies) with 0.125 μg GFP cDNA and 0.25 μg of 8A and 8C-8A(IL125).
 
 Transfected cells were identified by GFP fluorescence and patch clamped in the whole-cell mode at room temperature using patch electrodes pulled from 1.5 mm outer-diameter silanized borosilicate microhematocrit tubes. Recordings were not performed on cells where access resistance was >2-fold that of the pipette resistance.
 
 The composition of the control bath and pipette solutions used in these studies is shown in Table 3. Intracellular ionic strength was reduced by the removal of CsCl or cesium methanesulfonate from the patch pipette solution and replacement with sucrose to maintain solution osmolality.
+
+**Table 3.**
+ Composition of patch pipette and solutions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Patch pipette solutions</th>
+      <th></th>
+      <th colspan="2">Bath solutions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Control</td>
+      <td>Control</td>
+      <td></td>
+      <td>Control</td>
+      <td>Hypotonic</td>
+    </tr>
+    <tr>
+      <td>CsCl</td>
+      <td>126 mM</td>
+      <td>26 mM</td>
+      <td></td>
+      <td>75 mM</td>
+      <td>75 mM</td>
+    </tr>
+    <tr>
+      <td>Cesium methanesulfonate</td>
+      <td></td>
+      <td>100 mM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MgSO4</td>
+      <td>2 mM</td>
+      <td>2 mM</td>
+      <td></td>
+      <td>5 mM</td>
+      <td>5 mM</td>
+    </tr>
+    <tr>
+      <td>Ca-gluconate2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1 mM</td>
+      <td>1 mM</td>
+    </tr>
+    <tr>
+      <td>ATP-Na2</td>
+      <td>2 mM</td>
+      <td>2 mM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GTP-Na2</td>
+      <td>0.5 mM</td>
+      <td>0.5 mM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Glutamine</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2 mM</td>
+      <td>2 mM</td>
+    </tr>
+    <tr>
+      <td>EGTA</td>
+      <td>1 mM</td>
+      <td>1 mM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HEPES</td>
+      <td>20 mM</td>
+      <td>20 mM</td>
+      <td></td>
+      <td>12 mM</td>
+      <td>12 mM</td>
+    </tr>
+    <tr>
+      <td>Tris</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>8 mM</td>
+      <td>8 mM</td>
+    </tr>
+    <tr>
+      <td>CsOH</td>
+      <td>12 mM</td>
+      <td>12 mM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HCl</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2 mM</td>
+      <td>2 mM</td>
+    </tr>
+    <tr>
+      <td>Glucose</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>5 mM</td>
+      <td>5 mM</td>
+    </tr>
+    <tr>
+      <td>Sucrose</td>
+      <td>16 mM</td>
+      <td>16 mM</td>
+      <td></td>
+      <td>115 mM</td>
+      <td>70 mM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pH*</td>
+      <td>7.2</td>
+      <td>7.2</td>
+      <td></td>
+      <td>7.4</td>
+      <td>7.4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Osmolality</td>
+      <td>275 mOsm</td>
+      <td>275 mOsm</td>
+      <td></td>
+      <td>300 mOsm</td>
+      <td>250 mOsm</td>
+    </tr>
+    <tr>
+      <td>Ionic strength</td>
+      <td>0.162 M</td>
+      <td>0.162 M</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*The pH of patch pipette and bath solutions was adjusted with CsOH and HCl, respectively._
 
 Whole-cell currents were measured with an Axopatch 200A (Axon Instruments) patch-clamp amplifier. Electrical connections to the patch-clamp amplifier were made using Ag/AgCl wires and 3 M KCl/agar bridges. Series resistance was compensated by >85% to minimize voltage errors. Data acquisition and analysis were performed using pClamp 10 software (Axon Instruments).
 
@@ -161,6 +703,6 @@ Relative anion permeability (PX/PCl) was measured from Cl- substitute-induced ch
 
 Electrophysiological data are presented as means ± SEM. All patch-clamps studies were performed on at least two independently transfected groups of cells. n represents the number of patch-clamped cells from which currents were recorded. Statistical significance was determined using Student’s t test for unpaired means.
 
-## Figure preparation
+### Figure preparation
 
 Figures were prepared using Chimera (Pettersen et al., 2004), ChimeraX (Pettersen et al., 2021), and The PyMOL Molecular Graphics System (Version 2.0, Schrödinger, LLC). Calculation of the pore radii was performed using the software HOLE (Smart et al., 1996).

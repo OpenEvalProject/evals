@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Department of Biochemistry & Biophysics, University of California, San Francisco San Francisco United States
+1. Department of Biochemistry & Biophysics, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 2. Biochemistry Department, Weill Cornell Medicine New York United States
-3. https://ror.org/043mz5j54 Cardiovascular Research Institute, University of California, San Francisco San Francisco United States
+3. Cardiovascular Research Institute, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
@@ -34,25 +34,65 @@ Whether the need for local cAMP generation is unique to cell types or specific G
 
 ## Results
 
-## Nanobody-based conformational-sensitive biosensors detect active D1DR and Gs protein at subcellular membranes
+### Nanobody-based conformational-sensitive biosensors detect active D1DR and Gs protein at subcellular membranes
 
 We have previously shown that a single-domain camelid antibody, nanobody 80 (Nb80), originally developed to stabilize an active conformation of beta 2 adrenergic receptor (β2AR) for crystallography purposes (Rasmussen et al., 2011), can be repurposed as a conformational biosensor to detect activated β2AR and β1AR in living cells (Irannejad et al., 2017; Irannejad et al., 2013). Through directed evolution on Nb80, a high-affinity nanobody (Nb6B9) was generated that stabilizes the active conformation of epinephrine-bound β2AR (Ring et al., 2013). Given that β2AR/Nb6B9 binding sites are highly conserved among other aminergic receptors such as β1AR and D1DR (Figure 1—figure supplement 1a; Rasmussen et al., 2011), we reasoned that this nanobody could also be used as a conformational-sensitive biosensor to detect activated D1DR in real time and living cells (Figure 1a). In HeLa cells expressing Snap-tagged D1DR, Nb6B9 fused to GFP (Nb6B9-GFP) was diffuse throughout the cytoplasm (Figure 1b, 0 min). Upon stimulation of these cells with 10 μM DA, Nb6B9-GFP was rapidly recruited first to the plasma membrane and shortly after to the Golgi apparatus (Figure 1b, 2 min, Figure 1—video 1). Nb6B9-GFP recruitment to the plasma membrane and the Golgi was dose dependent starting at 10 and 100 nM DA stimulations, respectively (Figure 1c, Figure 1—figure supplement 1b). Similar Nb6B9-GFP dose-dependent recruitments were observed upon activation of β1AR at the plasma membrane and the Golgi (Figure 1—figure supplement 1c and d). Importantly, no Nb6B9 recruitment to any membrane was detected when delta opioid GPCRs, which lack sequence homology to Nb6B9 binding sites, were activated (Figure 1—figure supplement 1e), suggesting the specificity of this conformational biosensor. Together, these data suggest that the D1DR Golgi pool is activated in response to extracellular DA addition. Contrary to HeLa cells, treatment of D1DR-expressing HEK293 cells with 10 μM DA resulted in the recruitment of NB6B9-GFP to only the plasma membrane (Figure 1b, lower panel, Figure 1d, 2 min, Figure 1—video 2). By contrast, SKF81297, a selective membrane-permeant D1DR agonist, activated both the plasma membrane and the Golgi receptor pools in both HeLa and HEK293 cells (Figure 1—figure supplement 2, Figure 1—videos 3 and 4). In addition to the Golgi recruitment and consistent with a previous report (Kotowski et al., 2011), Nb6B9 was also found to colocalize with D1DR at the endosomes, at a later time after agonist addition, indicating an active pool of D1DR at endosomes (Figure 1—video 2). We further used mini-Gs protein, a more general biosensor for Gs-coupled GPCRs (Wan et al., 2018), to show that the active pool of D1DR at the plasma membrane, endosomes, and the Golgi can also be detected by mini-Gs recruitment to these locations. Although we do not have exact measurements for Nb6B9 and miniGs binding affinities to activated D1DR, these observations suggest that miniGs is more sensitive, allowing the detection of activated D1DR at the Golgi starting at 10 nM DA addition (Figure 1—figure supplement 3a and b).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/75468/elife-75468-fig1-v2.jpg)
+
+**Figure 1.:** (a) Nb6B9 binds to the receptor exclusively in its active conformation. We fused Nb6B9 to GFP and used it as a conformational biosensor for D1DR. (b) Confocal images of representative D1DR-expressing HeLa (top panel) and HEK293 cells (lower panel) with Nb6B9-GFP and GalT-mRFP expression before and after 10 µM DA addition. Stimulation with 10 µM DA results in recruitment of Nb6B9 to active D1DR at the plasma membrane and the Golgi in HeLa cells (n = 37 cells, Pearson’s coefficient = 0.62, respectively, nine biological replicates); 10 µM DA treatment only activates plasma membrane-localized D1DR in HEK293 cells (n = 17 cells, Pearson’s coefficient = 0.15, five biological replicates). Lower panels show zoomed images of insets for Snap-D1DR, Nb6BP, and the Golgi marker. Arrows indicate active D1DR at plasma membrane; arrowhead indicates active D1DR at Golgi membrane; Scale bar = 10 µm. (c) Quantification of D1DR activation at the Golgi in HeLa cells upon addition of increasing concentrations of DA; normalized fluorescence intensity of Nb6B9 at Golgi relative to Snap-tagged-D1DR at Golgi. Quantifications were baseline corrected after addition of each dose (n = 27 cells, four biological replicates). (d) Quantification of D1DR activity at Golgi in HeLa and HEK293 cells; normalized fluorescence intensity of Nb6B9 at Golgi relative to D1DR at Golgi labeled with Snap-tagged-D1DR.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75468/elife-75468-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Nanobody binding motifs are conserved between β2AR and D1DR. (b) Quantification of D1DR activation at the plasma membrane (PM) in HeLa cells upon addition of increasing dopamine (DA) concentrations; normalized fluorescence intensity of Nb6B9 at PM relative to Snap-tagged-D1DR at PM (n = 26, three biological replicates). (c) Quantification of β1AR activation at the Golgi in HeLa cells upon addition of increasing epinephrine concentrations; normalized fluorescence intensity of Nb6B9 at Golgi relative to Snap-tagged- β1AR at Golgi (n = 27, three biological replicates). (d) Quantification of β1AR activation at the PM in HeLa cells upon addition of increasing epinephrine concentrations; normalized fluorescence intensity of Nb6B9 at PM relative to Snap-tagged- β1AR at PM (n = 33, three biological replicates). Quantifications were baseline corrected after addition of each dose. (e) Quantification of delta opioid receptor (DOR) activation at the PM in HeLa cells upon addition of 10 μM D-Ala2-D-Leu2-Enkephalin (DADLE). Normalized fluorescence intensity of Nb6B9 at PM relative to GFP-DOR at the PM (n = 14, two biological replicates).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75468/elife-75468-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Representative Flag-D1DR-expressing HEK293 and HeLa cells with Nb6B9-GFP and GalT-mRFP localization at indicated times after 10 µM SKF81297 addition. Stimulation with 10 µM SKF81297 results in recruitment of Nb6B9 to active D1DR at the plasma membrane and the Golgi in both HEK293 and HeLa cells. Arrowheads indicate active D1DR at Golgi membrane; Scale bar = 10 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/75468/elife-75468-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Representative Snap-D1DR-expressing HeLa cell with miniGs-mVenus and GalT-mRFP localizations at indicated times after 10 nM SKF81297 (left panels) and dopamine (DA) (right panels) addition. Arrows indicate active D1DR at plasma membrane; Arrowheads indicate active D1DR at Golgi membrane; Scale bar = 10 µm. (b) Quantification of D1DR activation at the Golgi in HeLa cells upon addition of increasing DA concentrations; normalized fluorescence intensity of miniGs-mVenus relative to Snap-tagged-D1DR at Golgi (left) or the plasma membrane (right). Quantifications were baseline corrected after addition of each dose (n = 30, three biological replicates).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/75468/elife-75468-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Representative HeLa cell expressing Snap-D1DR and Nb6B9-GFP. Cells were incubated with 30 µM Dyngo-4a, a dynamin inhibitor that blocks endocytosis, stimulated with 10 µM dopamine (DA) at indicated times. Golgi-localized D1DR is activated when endocytosis is blocked, suggesting that activation of the Golgi pool is not dependent on D1DR internalization. White arrowhead indicates active D1DR at Golgi membrane; Scale bar = 10µm (b) Representative HeLa cell expressing Snap-D1DR and Nb37-GFP at indicated times after 10 µM DA addition. Nb37 binds to the GPCR-Gs protein complex in the nucleotide-free state. White arrowheads indicate active D1DR-Gs protein complex at the Golgi; yellow arrows indicate active D1DR-Gs complex at the plasma membrane; Scale bar = 10µm. (c) Quantification of Nb37-GFP and Nb6B9-GFP intensity at Golgi, normalized to Golgi-D1DR. Both nanobodies show similar kinetics of Golgi-localized D1DR activation after addition of 10 µM DA.
+
 To investigate whether activated D1DRs couple to G proteins to elicit a G-protein-mediated response at the Golgi, we took advantage of another nanobody-based biosensor, Nb37-GFP. We previously used Nb37-GFP to detect transiently active β1AR/Gs and β2AR/Gs complexes at the Golgi and endosomes, respectively (Irannejad et al., 2017; Irannejad et al., 2013). Nb37-GFP was recruited to the plasma membrane and the Golgi upon stimulation with DA, suggesting that the D1DR Golgi pool couples to G protein and activates it (Figure 1—figure supplement 4b and c). Together, these findings suggest a distinct spatiotemporal regulation of D1DR signaling at the plasma membrane and the Golgi membranes.
 
-## OCT2 facilitates the transport of dopamine to the Golgi-localized D1DR
+### OCT2 facilitates the transport of dopamine to the Golgi-localized D1DR
 
 These observations raised the key question of how DA, a hydrophilic/membrane-impermeant monoamine, can access the Golgi pool of D1DR. The first clue came from the observation that DA activates Golgi-D1DR in HeLa cells but not HEK293 cells (Figure 1b, Figure 1—videos 1 and 2), whereas SKF81297, a hydrophobic/membrane-permeant agonist, activates the Golgi pool of D1DR in both cell types (Figure 1—figure supplement 2, Figure 1—videos 3 and 4). These distinct effects of DA and SKF81297 are not based on their differential potency for activating D1DR as they have comparative EC50 values in inducing cAMP responses (Figure 2—figure supplement 1a). Moreover, D1DR activation at the Golgi is not dependent on receptor internalization as inhibiting endocytosis by blocking dynamin did not block D1DR activation at the Golgi (Figure 1—figure supplement 4a and c). We previously found that a membrane transporter, organic cation transporters 3 (OCT3), facilitates epinephrine transport, resulting in activation of the Golgi-localized β1AR. OCT3 is a member of the solute carrier (SLC) family 22, uptake 2 transporters that are electrogenic and transport catecholamines in a bidirectional manner. Importantly, OCT transporters are localized on the plasma membrane and intracellular compartments, including nuclear envelope, thus they can transport catecholamines across the plasma membrane and across internal membrane compartments (Gasser et al., 2017; Irannejad et al., 2017). Therefore, we hypothesized that another OCT family transporter can similarly function in DA transport to allow for its delivery to the Golgi and for the activation of Golgi-localized D1DR pools.
 
 There are three main OCTs that have largely overlapping distribution but distinct substrates (Nies et al., 2011; Roth et al., 2012; Schomig et al., 2006; Taubert et al., 2007). OCT3 facilitates the transport of epinephrine and norepinephrine (Nies et al., 2011). DA has been identified as a key endogenous substrate for another member of the SLC22A family, OCT2 (SLC22A2) (Amphoux et al., 2006; Bednarczyk et al., 2003; Busch et al., 1998; Gründemann et al., 1998; Schomig et al., 2006; Taubert et al., 2007). Therefore, we asked whether OCT2 has a role in transporting DA to the Golgi membranes. We found robust OCT2 protein expression in HeLa cells as measured by Western blotting, whereas expression in HEK293 cells was significantly lower (Figure 2—figure supplement 1b). In immunostaining experiments, we found OCT2 localization on both the plasma membrane and the Golgi in HeLa cells by using an OCT2-specific antibody. This immunostaining was abrogated in HeLa cells expressing SLC22A2-specific shRNAs but not those expressing the control, scrambled shRNA (Figure 2—figure supplement 1d). To test the role of OCT2 in DA transport, we first used corticosterone, an inhibitor that has been shown to broadly inhibit OCTs but more frequently used to inhibit OCT3 (Gasser and Lowry, 2018; Koepsell, 2019; Nies et al., 2011). We found that corticosterone did not inhibit DA-mediated D1DR activation at the Golgi in HeLa cells (Figure 2b, Figure 2—figure supplement 2a). We then used imipramine, which at lower concentrations is thought to selectively inhibit OCT2. At both 10 and 100 μM concentrations, imipramine inhibited DA-mediated D1DR activation at the Golgi (Figure 2b). By contrast, SKF81297, a membrane-permeant D1DR agonist that can diffuse across membranes and does not require facilitated transport, could still access and activate Golgi-D1DR in imipramine-treated cells (Figure 2a–c, Figure 2—video 1). Next, we overexpressed OCT2-mApple in HEK293 cells and used Nb6B9-GFP to assess D1DR activation. By overexpressing OCT2-mApple in HEK293 cells, we found that Nb6B9-GFP could now be recruited to activated D1DR at the Golgi membranes (Figure 1c, Figure 2—figure supplement 1c, Figure 2—video 2). To further confirm the role of OCT2 in DA transport, we used two different SLC22A2 shRNAs to decrease OCT2 expression (Figure 2e). We found that DA-mediated, but not that of SKF81297, D1DR activation at the Golgi was inhibited in HeLa cells expressing SLC22A2 shRNA (Figure 2d–g, Figure 2—video 3). Control, scrambled shRNA did not inhibit DA-mediated D1DR activation at the Golgi (FigureFigure 2—figure supplement 2b). Together, these results suggest that OCT2 facilitates the transport of DA to the Golgi lumen where it then activates D1DR at the Golgi membranes.
 
-## Regulation of dopamine-mediated activation of the Golgi-localized D1DR in striatal MSNs by OCT2
+![Figure 2.](https://cdn.elifesciences.org/articles/75468/elife-75468-fig2-v2.jpg)
+
+**Figure 2.:** (a) Representative HeLa cell expressing Snap-D1DR, Nb6B9-GFP, and GalT-mRFP expression pretreated with 100 μM imipramine for 15 min, before and after 10 μM DA addition. Inhibition of OCT2 blocks Golgi-localized D1DR activation but SKF81297 can still reach the Golgi membranes and activate D1DR Golgi pool (n = 30 cells, Pearson’s coefficient = 0.2 and 0.68 after DA and SKF addition, respectively, three biological replicates). Arrow indicates active D1DR at plasma membrane; arrowhead indicates active D1DR at Golgi membrane; Scale bar = 10 µm. (b) Quantification of Nb6B9-GFP recruitment at Golgi upon 10 μM DA stimulation in HeLa cells pretreated with 10 and 100 μM imipramine, 10 μM corticosterone, and (c) after 10 μM SKF81297 addition; normalized fluorescence intensity of Nb6B9-GFP relative to Snap D1DR at Golgi (n = 30, three biological replicates). (d) Representative HeLa cell expressing Snap-D1DR, miniGs-mApple, and SLC22A2 shRNA-B-GFP, before and after 10 μM DA addition. SLC22A2 shRNA blocks Golgi-localized D1DR activation. 10 μM SKF81297 addition activates D1DR at the Golgi (n = 16 cells, Pearson’s coefficient = –0.05 and 0.74 after DA and SKF addition, respectively, three biological replicates). (e) Detection of OCT2 expression in HeLa cells expressing different shRNAs by Western blot. (f) Quantification of D1DR activation at the Golgi in HeLa cells expressing scramble or SLC22A2 shRNAs upon addition of 10 μM DA; normalized fluorescence intensity of Nb6B9 at Golgi relative to Snap-tagged-D1DR at Golgi. (g) Quantification of D1DR activation at the Golgi in HeLa cells expressing SLC22A2 shRNA-B and D upon addition of 10 μM SKF81297.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75468/elife-75468-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Dose–response curve of forskolin-normalized D1DR-mediated cAMP response in HEK293 cells treated with SKF81297 or dopamine (DA); SKF and DA have similar potency and efficacy, thus differences in signaling at Golgi in HEK293 cells are not due to differences in drug potency or efficacy (mean ± SEM, n = 3 biological replicates). (b) Detection of OCT2 expression by Western blot. HeLa cells express OCT2, while HEK293 cells do not. (c) Representative HEK293 cell expressing Snap-D1DR, Nb6B9-GFP, and OCT2-mApple at indicated times after 10 µM DA addition. Overexpression of OCT2 in HEK293 cells rescues Golgi-localized D1DR activation (n = 16 cells, Pearson’s coefficient = 0.67, six biological replicates). Arrow indicates active D1DR at plasma membrane; arrowhead indicates active D1DR at Golgi membrane; Scale bar = 10 µm. (d) Endogenous localization of OCT2 at the plasma membrane and the Golgi membranes. HeLa cells are labeled with OCT2-specific antibody and the Golgi antibody (GM130) (top panels). Antibody staining of OCT2 is not detectable in SLC22A2 shRNA expressing cells; n = 25 cells, Pearson’s coefficient = 0.64, three biological replicates. Arrow indicates active OCT2 at plasma membrane; arrowhead indicates active OCT2 at Golgi membrane; Scale bar = 10 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75468/elife-75468-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Representative HeLa cell expressing Snap-D1DR, Nb6B9-GFP, and GalT-mRFP pretreated with 10 μM corticosterone, an OCT3-selective inhibitor, for 15 min, before and after 10 µM dopamine addition. Inhibition of OCT3 does not block Golgi-localized D1DR activation (n = 18 cells, Pearson’s coefficient = 0.72, two biological replicates). (b) Representative HeLa cell expressing Snap-D1DR, miniGs-mApple, and scramble shRNA-GFP, before and after 10 µM dopamine addition. Scramble shRNA does not block Golgi-localized D1DR activation (n = 10 cells, Pearson’s coefficient = 0.6, four biological replicates). Arrowheads indicate active D1DR at the Golgi; Scale bar = 10 µm.
+
+### Regulation of dopamine-mediated activation of the Golgi-localized D1DR in striatal MSNs by OCT2
 
 To investigate the role of OCT2 in D1DR signaling in physiologically relevant cell types, we measured OCT2 expression patterns in cell types derived from the kidney and the brain, the two main organs where D1DRs are known to have function. Previous reports, some of which were dependent on RNA measurements, had suggested that OCT2 is robustly expressed in the striatum and cortex, where D1DR is known to express and have function (Castro et al., 2013; Hallett et al., 2006; Tang and Bezprozvanny, 2004), but at low levels in the hippocampus and substantia nigra, regions in which D1DR also has known functions (Alburges et al., 1992; Arnsten et al., 1995; Busch et al., 1998; Double and Crocker, 1995). By Western blotting using a validated antibody (Figure 2e), we similarly found significant OCT2 expression in the striatum and cortex, low expression in the hippocampus, and negligible expression in substantia nigra (Figure 3—figure supplement 1a).
 
 To determine the role of OCT2 in regulating a distinct pool of D1DR signaling in neurons, we isolated primary murine striatal MSNs, where OCT2 is expressed at high levels (Figure 3—figure supplement 1a; Bacq et al., 2012; Matsui et al., 2016). Within the striatum, D1DR-expressing MSNs have been shown to play roles in DA-regulated processes such as motivation, aversion, and reward seeking (Alburges et al., 1992; Di Chiara and Imperato, 1988; Kim et al., 2015; Nestler and Luscher, 2019; Romach et al., 1999). We detected endogenous D1DR on both the plasma membrane and the Golgi membranes in MSNs using two different D1DR antibodies (Figure 3—figure supplement 1b, lower panel, Figure 3—figure supplement 1c). D1DR immunostaining was diminished when MSNs were immunostained in the presence of D1DR blocking peptide (Figure 3—figure supplement 1c). Using the same OCT2 antibody that was used in HeLa cells (Figure 2—figure supplement 1d), we also showed that MSNs express OCT2 on both the plasma membrane and the Golgi (Figure 3—figure supplement 1d). Stimulating D1DR-expressing MSNs with DA resulted in the recruitment of Nb6B9-GFP to both the plasma membrane and the perinuclear regions (Figure 3a and c, Figure 3—video 1). The perinuclear region in MSN is indeed colocalized with the Golgi membranes markers (Figure 3—figure supplement 1b, top panel). Importantly, OCT2 inhibition resulted in the inhibition of DA-mediated Golgi-D1DR activation. By contrast, the membrane-permeant SKF81297 activated D1DR at the Golgi (Figure 3b and c, Figure 3—video 2). To demonstrate that D1DR can form a functional complex with G protein at the Golgi in MSNs, we took advantage of Nb37-GFP to detect transient D1DR/G protein coupling. Similar to what we have observed in HeLa cells, DA stimulation resulted in the recruitment of Nb37-GFP to the Golgi, suggesting that the D1DR Golgi pool is able to couple to G protein and activate it in MSNs (Figure 3d). These data demonstrate that Golgi-localized G protein signaling by D1DRs occurs in a physiologically relevant cell type and that this signaling requires OCT2. Moreover, as there are cell types that express D1DR but not OCT2, our findings suggest that OCT2 expression could determine which cell types exhibit both plasma membrane and Golgi-localized D1DR signaling under physiological conditions.
 
-## Golgi and plasma membrane-localized D1DR both contribute to the cAMP response
+![Figure 3.](https://cdn.elifesciences.org/articles/75468/elife-75468-fig3-v2.jpg)
+
+**Figure 3.:** (a) Representative medium spiny neurons (MSN) expressing Snap-D1DR and Nb6B9-GFP at indicated times after 10 µM DA addition. DA stimulates D1DR activation at the Golgi in MSNs (n = 22 cells, Pearson’s coefficient = 0.67, six biological replicates). Arrow indicates active D1DR at plasma membrane; Arrowhead indicates active D1DR at Golgi membrane; Scale bar = 10 µm. (b) Representative MSN cell expressing Snap-D1DR and Nb6B9-GFP, pretreated with 100 μM imipramine for 15 min, before and after 10 µM DA addition. Inhibition of OCT2 blocks Golgi-localized D1DR activation at MSN n = 18 cells, Pearson’s coefficient = 0.38, six biological replicates but SKF81297 can still reach the Golgi membranes and activate D1DR Golgi pool (n = 6 cells, Pearson’s coefficient = 0.75, four biological replicates). Arrow indicates active D1DR at plasma membrane; Arrowhead indicates active D1DR at Golgi membrane; scale bar = 10 μm. (c) Quantification of Nb6B9-GFP recruitment at Golgi upon 10 μM DA stimulation in MSNs cells pretreated with OCT2 inhibitor; normalized fluorescence intensity of Nb6B9-GFP relative to Snap D1DR at Golgi (n = 12 and 7, respectively, five biological replicates). (d) Representative MSN expressing Snap-D1DR and Nb37-GFP before and after 10 µM DA addition. DA stimulates G protein activation at the Golgi in D1DR-expressing MSNs (n = 10 cells, Pearson’s coefficient = 0.34 and 0.62 before and after 10 µM DA stimulation, six biological replicates). Arrowhead indicates active Gs at Golgi membrane; right panels show zoomed images of insets for Snap-D1DR, Nb37-GFP, and the Golgi marker (GM130). Scale bar = 10 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75468/elife-75468-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Detection of OCT2 expression in different tissue extracts and brain slices by Western blot. (b) Top panel: colocalization of Nb6B9-GFP at the Golgi after 10 μM dopamine (DA) stimulation for 10 min. Lower panel: endogenous localization of D1DR at the plasma membrane and the Golgi membranes. Medium spiny neuron (MSN) cells were labeled with D1DR-specific antibody and the Golgi antibody (GM130). Arrowhead indicates Golgi localizations. (c) Endogenous localization of D1DR at the plasma membrane and the Golgi membranes in the presence or absence of blocking peptide. MSN cells were labeled with D1DR-specific antibody and the Golgi antibody (GM130) (n = 36 cells, Pearson’s coefficient = 0.67, three biological replicates). Arrowhead indicates active D1DR at Golgi membrane; scale bar = 10 µm. (d) Endogenous localization of OCT2 at the plasma membrane and the Golgi membranes. MSN cells were labeled with OCT2-specific antibody and the Golgi antibody (GM130) (n = 34 cells, Pearson’s coefficient = 0.6, three biological replicates).
+
+### Golgi and plasma membrane-localized D1DR both contribute to the cAMP response
 
 Our data suggested that the plasma membrane and the Golgi pools of D1DR both couple to the Gs protein. In addition to its presence at the plasma membrane, AC has been reported to localize at the Golgi/perinuclear membranes (Boivin et al., 2006; Cancino et al., 2014). We therefore asked whether D1DR/Gs complexes at both the plasma membrane and the Golgi activate Gs-mediated cAMP responses. To address this question, we utilized a rapamycin dimerization system composed of FK506-binding protein (FKBP) and FKBP-rapamycin binding domain of FRAP (FRB) to rapidly induce recruitment of Nb6B9 to specific membrane compartments. This makes it possible to specifically block D1DR/Gs coupling at each distinctly localized pool. We have previously shown that βARs nanobody, Nb80, which binds to the same region as G protein (Chung et al., 2011; Rasmussen et al., 2011), blocks either the plasma membrane or the Golgi-β1AR-mediated cAMP responses when it is recruited locally to these compartments at high concentrations (Irannejad et al., 2017). This inhibition is likely due to steric occlusion of the Gαs protein. Using HEK293 cells expressing either FKBP at the plasma membrane or the Golgi with FRB fused to Nb6B9 (FRB-Nb6B9), we demonstrated that treatment with rapalog, a rapamycin analog, specifically targets Nb6B9 to either membrane (Figure 4a–c). Upon stimulation with membrane-permeant agonist SKF81297, Nb6B9 targeted to the plasma membrane disrupts plasma membrane-D1DR/G proteins coupling, while Golgi-D1DR is still able to elicit a cAMP response (Figure 4d). In turn, treatment with rapalog in cells expressing Golgi-targeted FKBP and FRB-Nb6B9 and subsequent stimulation with SKF81297 resulted in inhibition of the Golgi-D1DR pool (Figure 4e). Importantly, rapalog treatment alone had no effect on the overall cAMP production elicited by Forskolin, a direct activator of AC (Figure 4f). These data indicate that Golgi-localized D1DR is able to promote cAMP response.
 
@@ -60,13 +100,23 @@ Our data suggested that the plasma membrane and the Golgi pools of D1DR both cou
 
 **Figure 4.:** Model of blocking D1DR-Gs coupling at the plasma membrane (PM) (a) and the Golgi membrane (b) after recruitment of mVenus-FRB-Nb6B9. FKBP was targeted to either the PM (a) or the Golgi membrane (b), and its binding partner FRB-mVenus was fused to Nb6B9. Upon addition of rapalog (rapamycin analog), FKBP and FRB heterodimerize and sequester Nb6B9 to either membrane, disrupting G protein coupling to the receptor and thus blocking signaling from each respective location. (c) Representative confocal images of HEK293 cells expressing either PM or Golgi targeted FKBP showing mVenus-FRB Nb6B9 localization at indicated times after rapalog addition. Representative cells confirm inducible sequestration of Nb6B9 to either PM or Golgi. Arrow indicates PM; arrowhead indicates Golgi. (d) Forskolin-normalized D1DR-mediated cAMP response with and without rapalog pretreatment (1 µM, 15 min) and SKF81297 at indicated concentrations in HEK293-expressing PM-FKBP (mean ± SEM, n = 6 biological replicates, p-values of 0.0021 and 0.0015 at 10–7 and 10–6, respectively). (e) Forskolin-normalized D1DR-mediated cAMP response with and without rapalog pretreatment (1 µM, 15 min) and SKF81297 at indicated concentrations in HEK293-expressing Golgi-FKBP (mean ± SEM, n = 6 biological replicates, p-values of <0.0001 at 10–7 and 10–6). (f) Effect of 1 and 10 µM rapalog on forskolin-mediated cAMP response (n = 3 biological replicates).
 
-## Local activation of PKA at the Golgi depends on selective activation of Golgi-localized D1DR
+### Local activation of PKA at the Golgi depends on selective activation of Golgi-localized D1DR
 
 A key downstream effector sensed by cAMP is protein kinase A (PKA). PKA is a holoenzyme, consisting of two catalytic and two regulatory subunits (Figure 5a). There are two PKA types (types I and II) that are anchored to distinct subcellular locations through interactions with distinct A kinase anchoring proteins (Soberg and Skålhegg, 2018). PKA type II has been shown to localize to the perinuclear/Golgi membranes (Nigg et al., 1985). Binding of cAMP to the PKA regulatory subunit induces rapid dissociation and activation of the PKA catalytic subunit (Figure 5a; Tillo et al., 2017; Walker-Gray et al., 2017). To test whether cAMP generation by Golgi-localized D1DR/Gs complex results in the activation of PKA at the perinuclear/Golgi, we utilized a previously described HEK293T knock-in cell line expressing a split fluorescent protein, labeling native PKA catalytic subunit gene with GFP (PKAcat-GFP) (Feng et al., 2017; Peng et al., 2021). Stimulation of HEK293T PKAcat-GFP knock-in cell lines expressing D1DR with 10 nM SKF81297, a concentration that activates both pools of D1DR (Figure 1—figure supplement 3a), resulted in rapid dissociation of PKAcat-GFP from the perinuclear/Golgi membranes (Figure 5b, top panel). Quantification of these data shows that stimulation with SKF81297 results in sustained activation of PKA at the perinuclear/Golgi regions (Figure 5c, Figure 5—figure supplement 1). We then asked whether PKAcat dissociation is mediated by the activation of D1DR Golgi pool. Given that HEK293T express very low levels of OCT2 transporter (Figure 2—figure supplement 1b) and thus DA cannot be sufficiently transported to the Golgi membranes, we used DA to specifically activate the plasma membrane pool of D1DR. Importantly, stimulation of HEK293T PKAcat-GFP knock-in cells with 10 nM DA, a concentration with similar potency as SKF81297 (Figure 2—figure supplement 1a), did not promote PKAcat dissociation (Figure 5b, lower panel, and c, Figure 5—figure supplement 1). Together, these data indicate that activation of D1DR at the Golgi, but not the plasma membrane, results in local PKA activation at the perinuclear/Golgi regions.
 
-## Dopamine uncaging triggers rapid activation of Golgi-localized D1DR and local PKA
+![Figure 5.](https://cdn.elifesciences.org/articles/75468/elife-75468-fig5-v2.jpg)
+
+**Figure 5.:** (a) Model of PKA activation; cAMP binds PKA regulatory subunit (R), rendering PKA catalytic subunit (PKA-cat) dissociation. (b) Confocal images of representative D1DR-expressing HEK293 cells with endogenous PKA-cat-GFP and GalT-mRFP expression at indicated times after 10 nM SKF81927 (top panels; n = 11 cells, Pearson’s coefficient 0.53, three biological replicates) or 10 nM dopamine (DA) (lower panels, n = 12 cells, Pearson’s coefficient = 0.64, three biological replicates). Arrowhead indicates PKAcat at Golgi membrane; scale bar = 10 µm. (c) Normalized fluorescence intensity of PKAcat relative to Golgi-D1DR after treatment with 10 nM DA or 10 nM SKF81927.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75468/elife-75468-fig5-figsupp1-v2.jpg)
+
+### Dopamine uncaging triggers rapid activation of Golgi-localized D1DR and local PKA
 
 To further investigate the role of Golgi-localized D1DR in activating PKA locally, we utilized a photo-sensitive caged DA that becomes uncaged upon blue light exposure (Figure 6a). Unlike DA, caged DA is hydrophobic and thus membrane permeant (Castro et al., 2013; Yapo et al., 2017). To ensure that caged DA accumulates inside the cell and reaches the Golgi-localized D1DR, we incubated HEK293T PKAcat-GFP knock-in cells with 1 μM caged DA for 10 min in a dark incubator. Addition of caged DA to HEK293T PKAcat-GFP cells did not activate D1DR, as indicated by cytoplasmic localization of Nb6B9-mApple, confirming that DA is inactive in its caged form (Figure 6b, top panel). Upon stimulation of cells with blue light for 10 s, we observed D1DR activation at the Golgi, as detected by rapid Nb6B9-mApple recruitment to the Golgi membranes within seconds after blue light exposure (Figure 6b and c, Figure 6—video 1). This was then followed by PKAcat-GFP dissociation from the perinuclear/Golgi regions as a result of cAMP production and PKA activation (Figure 6b and c, Figure 6—video 1). These data further support the notion that Golgi-localized D1DR activates PKA locally.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75468/elife-75468-fig6-v2.jpg)
+
+**Figure 6.:** (a) Dopamine is uncaged from (N)–1-(2 nitrophenyl) ethylcarboxy-3,4-dihydroxyphenethylamine (NPEC) upon blue light (UV) exposure. (b) Confocal images of representative D1DR-expressing HEK293 cells with endogenous PKA-cat-GFP and Nb6B9-mApple expression, incubated with 1 μM NPEC-caged dopamine and at indicated times after blue light exposure (n = 46 cells, four biological replicates). Arrowhead indicates Nb6B9 recruitment to the Golgi membrane; scale bar = 10 µm. (c) Normalized fluorescence intensity of Nb6B9-mApple and PKAcat relative to Golgi-D1DR after blue light exposure.
 
 ## Discussion
 
@@ -86,30 +136,292 @@ The present results expand the concept of GPCR-compartmentalized signaling and o
 
 ## Materials and methods
 
-## Cell culture, cDNA constructs, and transfection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th colspan="2">Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td colspan="2">HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573.3</td>
+      <td>Mycoplasma tested negative</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td colspan="2">HEK293T</td>
+      <td>ATCC</td>
+      <td>ACS-4500</td>
+      <td>Mycoplasma tested negative</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td colspan="2">HeLa</td>
+      <td>ATCC</td>
+      <td>CRM-CCL-2</td>
+      <td>Mycoplasma tested negative</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Anti-dopamine receptor D1(rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab216644</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Anti-GM130(mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>610822</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Anti-SLC22A2 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab170871</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Anti-SLC22A2 (rabbit polyclonal)</td>
+      <td>ABclonal</td>
+      <td>A14061</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Anti-GAPDH (mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>60004-1</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Anti-HRP-conjugated IgG (rabbit polyclonal)</td>
+      <td>GE Healthcare</td>
+      <td>P132460</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Anti-mouse IgG(donkey polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>A32766</td>
+      <td>IF (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Anti-rabbit IgG(donkey polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>A32794</td>
+      <td>IF (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Anti-dopamine receptor D1 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>17934-1-AP</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td colspan="2">D1DR blocking peptide</td>
+      <td>Proteintech</td>
+      <td>Ag12366</td>
+      <td>IF (1:25)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td colspan="2">Snap-Cell 647</td>
+      <td>NEB</td>
+      <td>S9102S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td colspan="2">Dopamine hydrochloride</td>
+      <td>Sigma</td>
+      <td>200-527-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td colspan="2">SKF81297 hydrobromide</td>
+      <td>Tocris</td>
+      <td>1447</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td colspan="2">NPEC-caged-dopamine</td>
+      <td>Tocris</td>
+      <td>3992</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td colspan="2">A/C heterodimerizer</td>
+      <td>Takara</td>
+      <td>635056</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td colspan="2">Dyngo</td>
+      <td>Abcam</td>
+      <td>ab120689</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td colspan="2">Forskolin</td>
+      <td>Sigma</td>
+      <td>F6886-10MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td colspan="2">Imipramine</td>
+      <td>Sigma</td>
+      <td>113-52-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td colspan="2">Corticosterone</td>
+      <td>Sigma</td>
+      <td>200-019-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">ImageJ</td>
+      <td>Imagej.net/contributors</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">MATLAB R2014b</td>
+      <td>MathWorks</td>
+      <td>DOI:10.5281/zenodo.5146169</td>
+      <td>Bakr et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pGloSensor-20F</td>
+      <td>Promega</td>
+      <td>E1171</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">Signal sequence Snap-D1DR</td>
+      <td>This study</td>
+      <td></td>
+      <td>pCDNA3 backbone; snap vector, see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pVenus-FRB-Nb6B9</td>
+      <td>This study</td>
+      <td></td>
+      <td>pVenus-C1 vector, see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">FKBP-GalT-mApple</td>
+      <td>This study</td>
+      <td></td>
+      <td>pm-Apple-M1 vector, see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">Lyn-2xFKBP-CFP</td>
+      <td>Addgene</td>
+      <td>20149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pCAG-Snap-D1DR</td>
+      <td>This study</td>
+      <td></td>
+      <td>pCAG vector, see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">pCAG-Nb6B9-GFP pCAG-Nb37-GFP</td>
+      <td>This study</td>
+      <td></td>
+      <td>pCAG vector, see Materials and methods</td>
+    </tr>
+    <tr>
+      <td colspan="2">Sequence-based reagent</td>
+      <td>SLC22A2 shRNAs</td>
+      <td>OriGene</td>
+      <td>TL517269</td>
+      <td>pGFP-C-shLenti</td>
+    </tr>
+    <tr>
+      <td colspan="2">Sequence-based reagent</td>
+      <td>Scamble shRNAs</td>
+      <td>OriGene</td>
+      <td>TR30021</td>
+      <td>pGFP-C-shLenti</td>
+    </tr>
+    <tr>
+      <td colspan="2">Biological sample (Mus musculus, male and female)</td>
+      <td>CD1</td>
+      <td>Charles Rivers</td>
+      <td>Crl:CD1(ICR)</td>
+      <td>Isolated medium spiny neurons from neonatal mouse striatal, see Material and methods</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture, cDNA constructs, and transfection
 
 HeLa and HEK293 cells (purchased from ATCC as authenticated lines CCL-2, CRL-1573 and CRL 1446, respectively) were grown in Dulbecco’s minimal essential medium supplemented with 10% fetal bovine serum (FBS) without antibiotics. Cell cultures were free of mycoplasma contamination. Signal Sequence-Snap-tagged D1DR was created by amplifying D1DR from Flag-D1DR using 5′-GCCTGGGCTGGGTCTTGGATCCGATGACGCCATGGACG -3′; 5′-ATAGGGCCCTCTAGAGCCTCAGGTTGGGTGCTG-3′ primers, and inserted into the Snap vector using BamHI and XbaI. pVenus-FRB-Nb6B9 was created by amplifying Nb6B9 and FRB from Nb6B9-GFP (Irannejad et al., 2017), and pC4-RHE plasmid (ARIAD Pharmaceuticals), using 5′-TGGTGGACAGGTGCAGCT-3′; 5′- GGATCCTCATGAGGAGACGGTGACCTGGGT-3′ and 5′-GCTTCGAATTCAATCCTCTGGCAT-3′; 5′-TGCACCTGTCCACCAGCACTA-3 primers, respectively, such that it contained the linker sequence GATAGTGCTGGTAGTGCTGGTGGAC, and inserted into the pVenus-C1 vector using EcoRI and BamH1. FKBP-GalT-mApple was created by amplifying FKBP and GalT from KDELr-FKBP and GalT-mCherry plasmids (a generous gift from Dr.Farese lab), using 5′-CATGCTAGCGCCGCCACCATGGGAGTGCAGGTGGAAACCAT-3′, 5′-GAGCTCGAGACCAGCACTACCAGCACTATCCTCCAGCTTCAGCAGCTCCACG3′ and 5′- GCTCAAAGCTTGCCGCCACCGGAAGGCTTCGGGAGCCG-3′, 5′-ACCGGATCCTTAGGCCCCTCCGGTCCGGAGCTCCCCG-3′ primers, respectively, and inserted into the pmApple-N1 vector using NheI, XhoI for FKBP and HindIII and BamHI for GalT (Irannejad et al., 2017). Transfections were performed using Lipofectamine 2000 (Invitrogen) according to the manufacturer’s instructions. Snap-tagged human D1DR constructs were labeled with Snap-cell 647 SiR (New England Biolabs, S9102S) as described previously (Lukinavičius et al., 2013).
 
-## Isolation of murine striatal neurons
+### Isolation of murine striatal neurons
 
 Primary striatal neurons were prepared from P1-P2 CD1 pups. In brief, striatum tissues isolated from brains in cold HBSS (w/o Mg2+, Ca2+, and phenol-red) buffer with 10 mM HEPES were treated by HBSS with 0.25% Trypsin and 10 mM HEPES buffer at 37°C for 15 min. The digested striatum tissues were rinsed by neural plating media (DMEM with 10% FBS, 30 mM HEPES, and PS) twice, and then dissociated by trituration using fire-polished Pasteur pipet in neural plating media. Suspended cells that pass through a 40 µm strainer were collected by centrifuging at 350 × g for 5 min. Cells were plated at 103 cells per mm2 on the 100 μg/mL poly-d-lysine (Sigma)-coated imaging dishes or coverslips in neural plating media. After 16–24 hr, the culture media were replaced by neural differentiation media (Neural basal media with 10 mM GlutaMAX, B27, and PS). The 50% media were replaced by fresh neural differentiation media every 3–4 days.
 
-## Live-cell confocal imaging
+### Live-cell confocal imaging
 
 Live-cell imaging was carried out using Nikon spinning disk confocal microscope with a ×60, 1.4 numerical aperture, oil objective and a CO2 and 37°C temperature-controlled incubator. A 488, 568 nm and 640 Voltran was used as light sources for imaging GFP, mRFP/mApple, and Snap-647 signals, respectively. Cells expressing both Snap-tagged receptor (2 μg) and the indicated nanobody–GFP (200 ng) were plated onto glass coverslips. Receptors were surface labeled by addition of Snap-Cell 647 SiR (1:1000, New England Biolabs) to the media for 20 min, as described previously. Live-cell images where endocytosis was inhibited were carried out by incubating the cells in 30 μM Dyngo 4a (ab120689) at 37°C for 30 min before indicated agonist was added. HEK293 PKA-Cat-GFP knock-in cells were a generous gift from the Huang Lab. Indicated agonists (dopamine hydrochloride [Sigma], SKF81297 hydrobromide [Tocris]) were added and cells were imaged every 20 s for 20 min in DMEM without phenol red supplemented with 30 mM HEPES, pH 7.4. NPEC-caged-dopamine (Tocris) was incubated for 10 min before cells were stimulated with 3.2 μW/cm2 blue light. Time-lapse images were acquired with a CMOS camera (Photometrics) driven by Nikon Imaging Software (NS Elements).
 
-## Fixed-cell confocal imaging
+### Fixed-cell confocal imaging
 
 Cells were permeabilized with saponin to reduce the cytoplasmic background, as described previously (Lobert and Stenmark, 2012). Briefly, HeLa cells were permeabilized with 0.05% saponin (Sigma) in PEM buffer (80 mM K-Pipes, pH 6.8, 5 mM EGTA, 1 mM MgCl2) for 5 min on ice. Cells were then fixed with 3% paraformaldehyde in PBS for 10 min and then quenched with 50 mM NH4Cl in PBS for 15 min. Primary antibodies D1DR antibody (ab216644) (1:100), D1DR (Proteintech 17934-1AP) (1:100) with or without D1DR blocking peptide (Proteintech Ag12366) (1:25), GM130 (BD Biosciences 610822) (1:1000), and SLC22A2/OCT2 antibody (ab170871) or SLC22A2/OCT2 (ABClonal-A14061) (1:100), were diluted in PBS supplemented with 0.05% saponin. Striatal neurons at DIV5 were fixed by 3.7% formaldehyde in PEM buffer for 15 min and then permeabilized by 0.3% Triton in PBS for 5 min at room temperature. D1DR and GM130 antibodies were diluted in TBS with 5% donkey serum and 0.1% Triton X-100. Confocal images were taken using Nikon spinning disk confocal microscope with a 60 × 1.4 numerical aperture, oil objective.
 
-## Image analysis and statistical analysis
+### Image analysis and statistical analysis
 
 Images were saved as 16-bit TIFF files. Quantitative image analysis was carried out on unprocessed images using ImageJ software (http://rsb.info.nih.gov/ij). For measuring kinetics of Nb6B9–GFP and miniGs recruitment at the Golgi membrane over time in confocal images and kinetics of PKA-Cat GFP dissociation from the Golgi, analyses were performed on unprocessed TIFF images using a previously published scripts written in MATLAB, available through open access on zenoob (Bakr et al., 2021; Jullié et al., 2020). Briefly, the Golgi region was selected and a mask of labeled receptor (using Snap label) or Golgi marker were generated by thresholding the receptor or the Golgi marker signal within the selected region. The average fluorescence intensity of Nb6B9 or miniG were measured within the masked region and outside of the masked region, before and after addition of agonists. Values were normalized by calculating the percent relative to the maximum value, then baseline corrected using Prism 6.0 software so that the first value of each condition was set to 0. The same MATLAB script was used to analyze the dose–response kinetics of both Nb6B9-GFP and miniGs-mApple recruitment to the Golgi membrane in response to increasing concentrations of agonists. In this case, to better quantify the increase in fluorescence at the Golgi after addition of agonist, values were normalized to the baseline following each addition of agonist. This was done in Microsoft Excel, and each baseline value was set to 1 to measure the fold change in fluorescence. Colocalization analysis at the Golgi was estimated by calculating the Pearson’s coefficient between the indicated image channels with the Golgi marker channel using the colocalization plug-in for ImageJ (Coloc2). p-Values are from two-tailed unpaired Student’s t-tests calculated using Prism 6.0 software (GraphPad Software).
 
-## Luminescence-based cAMP assay
+### Luminescence-based cAMP assay
 
 HEK293 cells stably expressing D1DR were transfected with a plasmid encoding a cyclic-permuted luciferase reporter construct (pGloSensor-20F, Promega) and luminescence values were measured, as described previously (Irannejad et al., 2013). Briefly, cells were plated in 96-well dishes (~100,000 cells per well) in 500 μL DMEM without phenol red/no serum and equilibrated to 37°C in the SpectraMax plate reader and luminescence was measured every 1.5 min. Software was used to calculate integrated luminescence intensity and background subtraction. In rapamycin heterodimerization experiments, cells were pre-incubated with 1 μM A/C heterodimerizer, a rapamycin analog (Takara 635056) for 15 min. 5 μM forskolin was used as a reference value in each multi-well plate and for each experimental condition. The average luminescence value (measured across duplicate wells) was normalized to the maximum luminescence value measured in the presence of 5 μM forskolin. For rapamycin-treated cells, the average luminescence value was normalized to the maximum luminescence value measured in the presence of 5 μM forskolin and 1 μM rapamycin.
 
-## Western blotting
+### Western blotting
 
 Cells from HEK293, HEK293T, and HeLa were lysed in extraction buffer (0.2% Triton X-100, 50 mM NaCl, 5 mM EDTA, 50 mM Tris at pH 7.4 and cOmplete EDTA-free Protease Inhibitor Cocktail [Roche]). Kidney and neural tissues from B6 adult mice were disrupted in RIPA buffer (50 mM Tris at pH 7.4, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100, 1% sodium deoxycholate 0.1% SDS, and cOmplete EDTA-free Protease Inhibitor Cocktail). After agitation at 4°C for 30 min, supernatants of samples were collected after centrifuging at 15,000 × rpm for 10 min at 4°C. Supernatants were mixed with SDS sample buffer for the protein denaturation. The proteins were resolved by SDS-PAGE and transferred to PVDF membrane and blotted for anti-SLC22A2 (ab170871, 1:1000) or GAPDH (1:10,000) antibodies to detect OCT2 and GAPDH expression by horseradish-peroxidase-conjugated rabbit IgG, sheep anti-mouse and rabbit IgG (1:10,000 Amersham Biosciences), and SuperSignal extended duration detection reagent (Pierce).

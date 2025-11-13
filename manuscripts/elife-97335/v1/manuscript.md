@@ -15,11 +15,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00f1zfq44 Fourth Department of Gynecologic Oncology, Hunan Cancer Hospital, The Affiliated Cancer Hospital of Xiangya School of Medicine, Central South University Changsha China
-2. https://ror.org/02v51f717 Department of Pathology, Third Hospital, School of Basic Medical Sciences, Peking University Health Science Center Beijing China
+1. Fourth Department of Gynecologic Oncology, Hunan Cancer Hospital, The Affiliated Cancer Hospital of Xiangya School of Medicine, Central South University Changsha China ([ROR:00f1zfq44](https://ror.org/00f1zfq44))
+2. Department of Pathology, Third Hospital, School of Basic Medical Sciences, Peking University Health Science Center Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
 3. Department of Gynecologic Oncology, Changsha Kexin Cancer Hospital Changsha China
-4. https://ror.org/00f1zfq44 Department of Pathology, Hunan Cancer Hospital/The Affiliated Cancer Hospital of Xiangya School of Medicine, Central South University Changsha China
-5. https://ror.org/00f1zfq44 Xiangya Cancer Center, Xiangya Hospital, Central South University Changsha China
+4. Department of Pathology, Hunan Cancer Hospital/The Affiliated Cancer Hospital of Xiangya School of Medicine, Central South University Changsha China ([ROR:00f1zfq44](https://ror.org/00f1zfq44))
+5. Xiangya Cancer Center, Xiangya Hospital, Central South University Changsha China ([ROR:00f1zfq44](https://ror.org/00f1zfq44))
 6. Hunan International Science and Technology Collaboration Base of Precision Medicine for Cancer Changsha China
 7. Key Laboratory of Molecular Radiation Oncology of Hunan Province Changsha China
 
@@ -27,7 +27,7 @@
 
 ## Abstract
 
-Cervical adenocarcinoma (ADC) is more aggressive compared to other types of cervical cancer (CC), such as squamous cell carcinoma (SCC). The tumor immune microenvironment (TIME) and tumor heterogeneity are recognized as pivotal factors in cancer progression and therapy. However, the disparities in TIME and heterogeneity between ADC and SCC are poorly understood. We performed single-cell RNA sequencing on 11 samples of ADC tumor tissues, with other 4 SCC samples served as controls. The immunochemistry and multiplexed immunofluorescence were conducted to validate our findings. Compared to SCC, ADC exhibited unique enrichments in several sub-clusters of epithelial cells with elevated stemness and hyper-malignant features, including the Epi_10_CYSTM1 cluster. ADC displayed a highly immunosuppressive environment characterized by the enrichment of regulatory T cells (Tregs) and tumor-promoting neutrophils. The Epi_10_CYSTM1 cluster recruits Tregs via ALCAM-CD6 signaling, while Tregs reciprocally induce stemness in the Epi_10_CYSTM1 cluster through TGFβ signaling. Importantly, our study revealed that the Epi_10_CYSTM1 cluster could serve as a valuable predictor of lymph node metastasis for CC patients. This study highlights the significance of ADC-specific cell clusters in establishing a highly immunosuppressive microenvironment, ultimately contributing to the heightened aggressiveness and poorer prognosis of ADC compared to SCC. Funded by the National Natural Science Foundation of China (82002753; 82072882; 81500475) and the Natural Science Foundation of Hunan Province (2021JJ40324; 2022JJ70103).
+Background:Cervical adenocarcinoma (ADC) is more aggressive compared to other types of cervical cancer (CC), such as squamous cell carcinoma (SCC). The tumor immune microenvironment (TIME) and tumor heterogeneity are recognized as pivotal factors in cancer progression and therapy. However, the disparities in TIME and heterogeneity between ADC and SCC are poorly understood.Methods:We performed single-cell RNA sequencing on 11 samples of ADC tumor tissues, with other 4 SCC samples served as controls. The immunochemistry and multiplexed immunofluorescence were conducted to validate our findings.Results:Compared to SCC, ADC exhibited unique enrichments in several sub-clusters of epithelial cells with elevated stemness and hyper-malignant features, including the Epi_10_CYSTM1 cluster. ADC displayed a highly immunosuppressive environment characterized by the enrichment of regulatory T cells (Tregs) and tumor-promoting neutrophils. The Epi_10_CYSTM1 cluster recruits Tregs via ALCAM-CD6 signaling, while Tregs reciprocally induce stemness in the Epi_10_CYSTM1 cluster through TGFβ signaling. Importantly, our study revealed that the Epi_10_CYSTM1 cluster could serve as a valuable predictor of lymph node metastasis for CC patients.Conclusions:This study highlights the significance of ADC-specific cell clusters in establishing a highly immunosuppressive microenvironment, ultimately contributing to the heightened aggressiveness and poorer prognosis of ADC compared to SCC.Funding:Funded by the National Natural Science Foundation of China (82002753; 82072882; 81500475) and the Natural Science Foundation of Hunan Province (2021JJ40324; 2022JJ70103).
 
 ## Introduction
 
@@ -43,55 +43,677 @@ To extensively investigate the cellular and molecular heterogeneity of CC, parti
 
 ## Results
 
-## Single-cell transcriptomic landscape of cervical cancer
+### Single-cell transcriptomic landscape of cervical cancer
 
 We collected 15 samples of CC tissues from 15 individual patients immediately after undergoing radical hysterectomy surgery. Among these cases, 11 were ADC types, with 5 being HPV-negative and 6 being HPV-positive. The remaining four cases were SCC types, with an even distribution of HPV-positive and HPV-negative status (Supplementary file 1). Prior to surgery, all 15 patients were diagnosed as early FIGO stages (stage I–IIA) based on evaluation of CT, MRI, and physical examination. However, after surgery, five cases turned out to be upstaged with pathological evidence of LN metastasis (i.e., FIGO stage IIICP), requiring theses patients to receive radiation therapy according to NCCN guidelines. Therefore, in addition to investigate the difference between histological types and HPV infection status, we also focused on the issue of post-surgical upstaging by comparing different FIGO stages.
 
 In order to analyze the genomic profiling, we resolved these samples at the single-cell level using the 10X Genomics chromium platform. The cell viability and sample quality were ensured beforehand, and a total of 102,012 qualified cells were utilized for further analysis (Figure 1A). Uniform Manifold Approximation and Projection (UMAP) was utilized to reduce the dimension of gene profiling data for visualization. The obtained cells were primarily categorized into 12 cell clusters, which were further re-clustered into 9 distinct cell types, based on specific gene markers (Li et al., 2022; Figure 1B and C). These cell types included T cells (38,627 cells in total, proportioning 37.87%, marked with PTPRC, CD3D, CD3E, and CD3G), epithelial cells (32,199 cells in total, proportioning 31.56%, marked with EPCAM, SLP1, and CD24), neutrophils (12,586 cells in total, proportioning 12.34%, marked with CSF3R), macrophages (6798 cells in total, proportioning 12.34%, marked with CD68 and CD163), fibroblasts (4258 cells in total, proportioning 4.17%, marked with COL1A2 and DCN), plasma cells (4044 cells in total, proportioning 3.96%, marked with JCHAIN), endothelial cells (1389 cells in total, proportioning 1.36%, marked with ENG and VWF), B cells (1326 cells in total, proportioning 1.30%, marked with CD79A and MS4A1), and mast cells (785 cells in total, proportioning 0.77%, marked with MS4A2) (Figure 1D and E and Supplementary files 2 and 3).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig1-v1.jpg)
+
+**Figure 1.:** (A) The schematic design of sample collection, single-cell RNA sequencing, data processing, and clinical validating through 10X Genomics platform (the sketch of scRNA-sq machine, as well as the plot of dimension-reduction visualization, was originally cited from the official website of 10X Genomics: https://www.10xgenomics.com). (B) Uniform Manifold Approximation and Projection (UMAP) plots of all single cells by original clustering and cell type reclustering, according to the published lineage-specific marker genes, respectively. (C) Violin plots demonstrating the expression of marker genes that correspond to each of the major cell types. (D) UMAP plots demonstrating the most typical marker gene specific to each type of cell cluster. (E) UMAP plot and histogram plot showing the occupation ratios of the major cell types in each individual sample, with human papillomavirus (HPV) status and histological type summarized. (F) UMAP (up) and histogram (down) plots to show the differences of distribution and proportion of each cell type between different histological types (adenocarcinoma [ADC] vs. squamous cell carcinoma [SCC]). Statistics were performed using R software with two-sided Wilcoxon test (p values for each group are listed below: T cell: p=0.661; epithelial cell: p=0.039; neutrophil: p=0.026; macrophage: p=0.661; fibroblast: p=0.661; plasma: p=0.078; endothelial cell: p=0.851; B cell: p=0.104; mast cell: p=0.753). Statistics are shown as *p<0.05; **p<0.01; n.s., not significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Uniform Manifold Approximation and Projection (UMAP) and histogram plots to show the differences of distribution (left) and proportion (right) of each cell type between different human papillomavirus (HPV) infection status (HPV+ vs. HPV-). Statistics were performed using R software with two-sided Wilcoxon test (p values for each group are listed below: T cell: p=0.178; epithelial cell: p=0.017; neutrophil: p=0.792; macrophage: p=0.004; fibroblast: p=1.000; plasma: p=0.126; endothelial cell: p=0.017; B cell: p=0.247; mast cell: p=1). (B) The UMAP and histogram plots were used to compare the differences of distribution (left) and proportion (right) of each cell type between different stages (stage I–II vs. stage IIIC). Statistics were performed using and R software with two-sided Wilcoxon test. p values for each group are listed below: T cell: p=0.514; epithelial cell: p=0.953; neutrophil: p=0.953; macrophage: p=0.953; fibroblast: p=0.075; plasma: p=0.859; endothelial cell: p=0.440; B cell: p=0.953; mast cell: p=0.594. All statistics are shown as *p<0.05; **p<0.01; n.s., not significant.
+
 According to our scRNA-seq data, ADC exhibited a significant higher proportion of neutrophils than SCC (20.05% vs 4.23%). The proportion of T cells was also higher in ADC (41.13%) compared to SCC (35.48%). Conversely, SCC showed a nearly threefold enrichment of epithelial cell (47.43%) compared to ADC (16.48%) (Figure 1F). When considering the HPV infection status, HPV-negative patients demonstrated decreased proportions of epithelial cells (7.78% vs 28.38%) and neutrophils (16.66% vs 24.68%) compared to HPV-positive patients. The proportion of T cells enriched in HPV-negative cases (45.77%) was higher than that in HPV-positive cases (32.42%). HPV-negative patients exhibited prominently higher proportions of plasma cells (10.13% vs 1.99%) and B cells (2.84% vs 0.77%) compared to HPV-positive patients, even though their proportions were lower than T cells, epithelial cells, and neutrophils (Figure 1—figure supplement 1A). Furthermore, we conducted a comparison between early-stage and late-stage cases, revealing that late-stage patients have a higher proportion of epithelial cells (35.50%) than early-stage cases (28.82%) (Figure 1—figure supplement 1B). In summary, these data describes primarily a complex microenvironment in CC, especially in the ADC type, with varied composition of immune and tumor cells under different conditions.
 
-## Sub-clusters of epithelial cells in ADC exhibit elevated stem-like features
+### Sub-clusters of epithelial cells in ADC exhibit elevated stem-like features
 
 The aforementioned data has shown that the majority of the CC tumor is composed of epithelial cells. In order to explore the characteristics of these epithelial cells within the TIME of ADC, we further classified them into 12 sub-clusters based on the subsets of differently expressed genes (DEGs) in each group (Figure 2A). Each sub-cluster was named based on the most prominently upregulated gene in each panel of signature genes (Figure 2B and C). Several epithelial cell clusters were strongly enriched in ADC than SCC, such as Epi_04_TFF2, Epi_06_TMC5, Epi_07_CAPS, and Epi_08_SCGB3A1. Notably, Epi_09_SST, Epi_10_CYSTM1, Epi_11_REG1A, and Epi_12_RRAD seemed to be exclusively enriched in ADC, not in SCC (Figure 2D). The stratified enrichment of different cluster between ADC and SCC has captured our attention for further investigation. Additionally, Epi_09_SST, Epi_10_CYSTM1, and Epi_11_REG1A were solely enriched in HPV-positive cases, although no distinctive clusters had been found in HPV-negative patients (Figure 2—figure supplement 1A). When comparing samples from patients in the early stages with those who have LN metastasis, three clusters (Epi_02_IGLC2, Epi_05_CCL5, and Epi_12_RRAD) were slightly increased among the late-stage patients. Surprisingly, we found that the sub-cluster Epi_10_CYSTM1 was exclusively present in stage IIIC patients, indicating that it might be a potential target for identification of the biomarkers for late-stage patients (Figure 2—figure supplement 1B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig2-v1.jpg)
+
+**Figure 2.:** (A) Uniform Manifold Approximation and Projection (UMAP) plots showing the distribution of epithelial cells in 15 samples and the sub-clustering into 12 clusters according to ectopic gene expressions. Each cluster of epithelial cells was named using the most highly enriched gene. (B) Heatmap plot showing the annotation of each epithelial sub-cluster with top 5 differently expressed genes (DEGs). (C) UMAP plots demonstrating the most specific gene as the marker for each sub-cluster. (D) UMAP (left) and histogram (right) plots to compare the differences of distribution and proportion of each epithelial cell sub-cluster between different histological types (adenocarcinoma [ADC] vs. squamous cell carcinoma [SCC]). Statistics were performed using R software with two-sided Wilcoxon test (p values for each group are listed below: Epi_01_NTS: p=0.040; Epi_02_IGLC2: p=0.661; Epi_03_TMRPSS11E: p=0.661; Epi_04_TTF2: p=0.104; Epi_05_CCL5: p=0.950; Epi_06_TMC5: p=0.412; Epi_07_CAPS: p=0.040; Epi_08_SCGB3A1: p=0.412; Epi_09_SST: p<0.001; Epi_10_CYSTM1: p<0.001; Epi_11_REG1A: p<0.001; Epi_12_RRAD: p<0.001). Statistics were shown as *p<0.05; **p<0.01; n.s., not significant. (E) UMAP plot of CytoTRACE showing the thermal imaging projection of predicted developmental order (left) and histogram plot showing the ranking of CytoTRACE scores (right). (F) UMAP plot of malignancy analysis demonstrating the cell malignancy features (up) and ranking of scores (down). (G) GOBP analyses showing the top 15 enriched signaling pathways of Epi_10_CYSTM1 that are more active in ADC than SCC (up), particularly pathways related to cell-to-cell interactions (down). The histogram data are transformed from -Log10(p-value) for visualization. Ig: immunoglobulin; MHC: major histocompatibility complex.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Uniform Manifold Approximation and Projection (UMAP) and histogram plots to compare the differences of distribution (up) and proportion (down) of each epithelial cell sub-cluster between different human papillomavirus (HPV) infection status (HPV+ vs. HPV-, p values for each group are listed below: Epi_01_NTS: p=0.017; Epi_02_IGLC2: p=0.792; Epi_03_TMRPSS11E: p=0.792; Epi_04_TTF2: p=0.662; Epi_05_CCL5: p=0.247; Epi_06_TMC5: p=0.082; Epi_07_CAPS: p=0.429; Epi_08_SCGB3A1: p=0.009; Epi_09_SST: p<0.001; Epi_10_CYSTM1: p<0.001; Epi_11_REG1A: p<0.001; Epi_12_RRAD: p=0.662) and different stages (stage I–II vs. stage IIIC, p values for each group are listed below: Epi_01_NTS: p=0.953; Epi_02_IGLC2: p=0.679; Epi_03_TMRPSS11E: p=0.440; Epi_04_TTF2: p=0.100; Epi_05_CCL5: p=0.371; Epi_06_TMC5: p=0.440; Epi_07_CAPS: p=0.514; Epi_08_SCGB3A1: p=0.440; Epi_09_SST: p<0.001; Epi_10_CYSTM1: p<0.001; Epi_11_REG1A: p<0.001; Epi_12_RRAD: p=0.161). (C) Pseudotime trajectory plots from four individual cases to represent the predicted developmental potential of epithelial cells. Statistics were performed using R software with two-sided Wilcoxon test. All statistics are shown as *p<0.05; **p<0.01; n.s., not significant.
 
 We further evaluated the features of each epithelial cluster, especially their predicted roles in regulating tumorigenesis. To assess the differentiation potential of each cell cluster, we employed the Cellular Trajectory Reconstruction Analysis using gene Counts and Expression (CytoTRACE) method (Figure 2E). The results showed that clusters of Epi_07_CAPS, Epi_09_SST, Epi_10_CYSTM1, and Epi_12_RRAD ranked the top 4 in CytoTRACE score, indicating the potential for pluripotency and differentiation, also referred to stem-like features. Interestingly, Epi_09_SST, Epi_10_CYSTM1, and Epi_12_RRAD were exclusively enriched in ADC. The proportion of cluster Epi_07_CAPS, which acquired the highest level of stemness, was higher in ADC, although Epi_07_CAPS was also identified in SCC (Figure 2D). Subsequently, pseudotime analysis was conducted to elucidate the differentiation trajectories. The results showed that Epi_07_CAPS, Epi_09_SST, and Epi_10_CYSTM1 were positioned toward the end of pseudotime developmental trajectory, which was in consistence with their high stem-like characteristics and indicated a higher degree of malignancy in ADC than SCC (Figure 2—figure supplement 1C). In addition, we performed the malignancy scoring analysis, which demonstrated that cluster Epi_10_CYSTM1 was predicted to exhibit the highest degree of malignancy compared to other clusters (Figure 2F). Interestingly, cluster Epi_10_CYSTM1 displayed a diverse developmental profile and was exclusively identified in ADC. Conversely, Epi_07_CAPS and Epi_12_RRAD, which exhibited high stem-like characteristics, were ranking lower in terms of malignancy scoring compared to other clusters. The observation of cluster Epi_10_CYSTM1 and its potential specificity to ADC raises the question of whether this cluster is associated with the aggressiveness of ADC.
 
 Besides, we performed Gene Ontology Biological Process (GOBP) analysis on specific signaling pathways based on the gene expression pattern of cluster Epi_10_CYSTM1 (Figure 2G). The results revealed that cluster Epi_10_CYSTM1 tended to be more active in regulating immunity-related pathways, which indicated this cluster might be possibly associated with dysfunction of immunity. In addition, cluster Epi_10_CYSTM1 was predicted to be more active in regulating cell-to-cell interaction (Figure 2G). Therefore, further investigation is warranted to explore the intricate crosstalk networks between epithelial cells and other cell types in the TIME of ADC.
 
-## ADC-specific epithelial cluster-derived gene SLC26A3 is a potential prognostic marker for lymph node metastasis
+### ADC-specific epithelial cluster-derived gene SLC26A3 is a potential prognostic marker for lymph node metastasis
 
 Based on the aggressive characteristics of cluster Epi_10_CYSTM1 from above bioinformatic predictions, we further examined the correlation between this cluster and the clinical features of CC. For validation, we alternatively examined cluster Epi_12_RRAD (Figure 3—figure supplement 1A), which was another malignant cluster predominantly found in ADC (Figure 2D). We firstly checked the DEGs of these two clusters. In Epi_12_RRAD cluster, we identified Insulin-like growth factor 2 (IGF2) and alcohol dehydrogenase 1C (ADH1C), which were exclusively expressed in Epi_12_RRAD, as two most specific genes of this cluster (Figure 3—figure supplement 1B). However, the immunohistochemistry (IHC) staining showed that IGF2 was almost negative across cases with different clinical stages (Figure 3—figure supplement 1C). On the other hand, ADH1C was strongly expressed in both early-stage and late-stage cases (Figure 3—figure supplement 1C). Likewise, the survival analysis of Epi_12_RRAD-enriched gene signatures did not demonstrate a significant difference between the two groups (Figure 3—figure supplement 1D). These results suggest that cluster Epi_12_RRAD may not be a potential target when relating to the clinical features of ADC.
 
 In the cluster of Epi_10_CYSTM1, the DEG with the highest expression is CYSTM1 (Figure 3A). However, CYSTM1 was also expressed in other cell clusters and showed low specificity (Figure 3B). On the other hand, SLC26A3, ORM1, and ORM2 were specifically enriched in Epi_10_CYSTM1 and could be considered as potential candidate biomarkers for representation of this cluster. Nevertheless, ORM1/OMR2 were positively expressed but were not satisfied to distinguish the severity of CC cases due to an irrelevance between expression intensity and clinical stages (Figure 3—figure supplement 1E). Interestingly, SLC26A3, as a representative marker of cluster Epi_10_CYSTM1, showed potential value to associated with late clinical stages for CC patients (Figure 3—figure supplement 1E). This is encouraging since currently it lacks biomarkers to predict late stages of CC and the only way to detect LN metastasis beforehand is using radiological tools, which have technical limitations.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig3-v1.jpg)
+
+**Figure 3.:** (A) Heatmap showing the top 50 differently expressed genes (DEGs) of Epi_10_CYSTM1 cluster in comparison to all the other sub-clusters (red: Epi_10_CYSTM1 cluster; green: other epithelial cell sub-clusters). (B) Violin plots showing the expression difference between two groups (top), with Uniform Manifold Approximation and Projection (UMAP) plots (bottom) demonstrating the specificity of each candidate gene, filtering SLC26A3 as the most identical marker for this sub-cluster. (C) Immunohistochemistry (IHC) staining showing the protein expression of SLC26A3 in surgically resected adenocarcinoma (ADC) samples which are classified as early stages (International Federation of Gynecology and Obstetrics [FIGO] stage I–IIA) and late stages (FIGO stage IIIC1–2p). Images from six individual cases are shown as representatives for each group. (D) IHC staining showing the protein expression of SLC26A3 in biopsy ADC samples which are classified as early stages (FIGO stage I–IIA) and late stages (FIGO stage IIIC1–2p). Images from four individual cases are shown as representatives for each group. The method of H-score is used and the scoring system is as follows: negative (0), weak (1), intermediate (2), and strong (3). Expression is quantified by the H-score method.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Heatmap showing the top 50 differently expressed genes (DEGs) in cluster Epi_12_RRAD, comparing to all the other sub-clusters. (B) Violin plots showing the each gene’s expression differences between two groups (top), with Uniform Manifold Approximation and Projection (UMAP) plots (bottom) demonstrating the specificity of each candidate gene, filtering IGF2 as the most identical marker for this sub-cluster. (C) Immunohistochemistry (IHC) staining for validation of the protein expression of IGF2 and ADH1C in adenocarcinoma (ADC) samples which are classified as early stages (International Federation of Gynecology and Obstetrics [FIGO] stage I–IIA) and late stages (FIGO stage IIIC1–2p). (D) Kaplan–Meier curves showing the overall survival rate of CC patients stratified by the top 50 genes-scaled signature of Epi_12_RRAD. (E) IHC staining for validation of the protein expression of ORM1/ORM2 and SLC26A3 in ADC samples which are classified as early stages and late stages. As for (C) and (E), the intensity of each protein marker is shown on four individual samples and the scoring is as follows: negative (0), weak (1), intermediate (2), and strong (3). Expression is quantified by the H-score method. (F) The selecting procedure for stratified comparison (considering HPV status, histological type, etc.) in Cohort 1 (top, in blue) and Cohort 2 (bottom, in red), respectively. In each comparison module, the case number and rate of post-surgical upstaging are presented.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Image of immunohistochemistry (IHC) staining via using SLC26A3 antibody to test the expression of this protein on surgically resected ADC sample #5. The positive (left square) and negative (right square) regions are presented separately.
+
 This is a problem because misdiagnosis of clinical staging affects the disease outcome and treatment approach for CC patients. In order to examine the fact of post-surgical upstaging, we merged data from two independent patient cohorts obtained from two clinical centers: Xiangya Hospital (Cohort 1) and Hunan Cancer Hospital (Cohort 2). The criterion for objective selection is outlined in Figure 3—figure supplement 1F. The rates of upstaging for each center are 10.85% (23 out of 212 in Cohort 1) and 15.31% (214 out of 1398 in Cohort 2), respectively. These rates fall within the range reported by previous studies (Dabi et al., 2018; Thelissen et al., 2022). Interestingly, both cohorts of data revealed that the misdiagnose rate was significantly higher in HPV-negative patients than HPV-positive patients, especially among ADC patients. From the data of Cohort 2, it was observed that ADC patients were more likely to be misdiagnosed, which means that metastatic LNs were more difficult to detect in ADC patients via radiological tools. In Cohort 1, we have also observed the same tendency although without significant difference between different histological types, probably due to a smaller sample size (Tables 1 and 2).
+
+**Table 1.**
+ The association between post-surgical upstaging and clinical characteristics in patient Cohort 1 (from Xiangya Hospital).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Characteristics</th>
+      <th rowspan="2">Case number</th>
+      <th colspan="2">Upstaging after surgery</th>
+      <th rowspan="2">χ2</th>
+      <th rowspan="2">p value</th>
+    </tr>
+    <tr>
+      <th>Yes</th>
+      <th>No</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>215</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Histological types</td>
+      <td>209</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADC</td>
+      <td>55</td>
+      <td>8 (14.55%)</td>
+      <td>47 (85.45%)</td>
+      <td>0.955</td>
+      <td>0.328</td>
+    </tr>
+    <tr>
+      <td>SCC</td>
+      <td>154</td>
+      <td>15 (9.74%)</td>
+      <td>139 (90.26%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HPV status</td>
+      <td>196</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HPV+</td>
+      <td>181</td>
+      <td>18 (9.94%)</td>
+      <td>163 (90.06%)</td>
+      <td>3.887</td>
+      <td>0.049*</td>
+    </tr>
+    <tr>
+      <td>HPV-</td>
+      <td>15</td>
+      <td>4 (26.67%)</td>
+      <td>11 (73.33%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADC with HPV status</td>
+      <td>50</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HPV+</td>
+      <td>40</td>
+      <td>4 (10.00%)</td>
+      <td>36 (90.00%)</td>
+      <td>5.357</td>
+      <td>0.021*</td>
+    </tr>
+    <tr>
+      <td>HPV-</td>
+      <td>10</td>
+      <td>4 (40.00%)</td>
+      <td>6 (60.00%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SCC with HPV status</td>
+      <td>143</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HPV+</td>
+      <td>138</td>
+      <td>13 (9.42%)</td>
+      <td>125 (90.58%)</td>
+      <td>0.518</td>
+      <td>0.472</td>
+    </tr>
+    <tr>
+      <td>HPV-</td>
+      <td>5</td>
+      <td>0 (0.00%)</td>
+      <td>5 (100%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_In each comparison panel, patients with insufficient data were excluded from analysis. The total number is 215, among which 6 cases are specific histological types (3 are neuroendocrine carcinoma [Neuro]; 2 are adenosquamous carcinoma; 1 is malignant melanoma) and has been excluded for comparison between ADC and SCC. Because the HPV status information is unclear in 16 cases, a total number of 196 cases have been used for comparison between different HPV statuses. As for sub-classification between different HPV status under different histological types, three Neuro cases have been excluded.*p<0.05 is considered significantly different. p<0.01 is presented as **.ADC, adenocarcinoma; HPV, human papillomavirus; SCC, squamous cell carcinoma._
+
+**Table 2.**
+ The association between post-surgical upstaging and clinical characteristics in patient Cohort 2 (from Hunan Cancer Hospital).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Characteristics</th>
+      <th rowspan="2">Case number</th>
+      <th colspan="2">Upstaging after surgery</th>
+      <th rowspan="2">χ2</th>
+      <th rowspan="2">p value</th>
+    </tr>
+    <tr>
+      <th>Yes</th>
+      <th>No</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>1398</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Histological types</td>
+      <td>1336</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADC</td>
+      <td>190</td>
+      <td>40 (21.05%)</td>
+      <td>150 (78.95%)</td>
+      <td>4.911</td>
+      <td>0.027*</td>
+    </tr>
+    <tr>
+      <td>SCC</td>
+      <td>1146</td>
+      <td>169 (14.75%)</td>
+      <td>977 (85.25%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HPV status</td>
+      <td>1166</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HPV+</td>
+      <td>1031</td>
+      <td>131 (12.71%)</td>
+      <td>900 (87.29%)</td>
+      <td>66.616</td>
+      <td>&lt;0.001**</td>
+    </tr>
+    <tr>
+      <td>HPV-</td>
+      <td>135</td>
+      <td>54 (40.00%)</td>
+      <td>81 (60.00%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADC with HPV status</td>
+      <td>162</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HPV+</td>
+      <td>131</td>
+      <td>18 (13.74%)</td>
+      <td>113 (86.26%)</td>
+      <td>24.999</td>
+      <td>&lt;0.001**</td>
+    </tr>
+    <tr>
+      <td>HPV-</td>
+      <td>31</td>
+      <td>17 (54.84%)</td>
+      <td>14 (45.16%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SCC with HPV status</td>
+      <td>958</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HPV+</td>
+      <td>864</td>
+      <td>109 (12.62%)</td>
+      <td>755 (87.38%)</td>
+      <td>40.229</td>
+      <td>&lt;0.001**</td>
+    </tr>
+    <tr>
+      <td>HPV-</td>
+      <td>94</td>
+      <td>35 (37.23%)</td>
+      <td>59 (62.77%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neuro with HPV status</td>
+      <td>27</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HPV+</td>
+      <td>21</td>
+      <td>3 (14.29%)</td>
+      <td>18 (85.71%)</td>
+      <td>0.964</td>
+      <td>0.326</td>
+    </tr>
+    <tr>
+      <td>HPV-</td>
+      <td>6</td>
+      <td>0 (0.00%)</td>
+      <td>6 (100.00%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ADSCC with HPV status</td>
+      <td>14</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HPV+</td>
+      <td>12</td>
+      <td>1 (8.33%)</td>
+      <td>11 (91.67%)</td>
+      <td>2.431</td>
+      <td>0.119</td>
+    </tr>
+    <tr>
+      <td>HPV-</td>
+      <td>2</td>
+      <td>1 (50.00%)</td>
+      <td>1 (50.00%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_In each comparison panel, patients with insufficient data were excluded from analysis. The total number is 1398 and 62 cases have been excluded for comparison between ADC and SCC, due to special pathological types (carcinosarcoma: 1; melanoma: 1; neuroendocrine carcinoma: 38; basaloma: 1; adenosquamous carcinoma: 18; malignant peripheral nerve sheath tumor: 1; fibroblastic sarcoma: 1; adenosarcoma: 1). Because the HPV status information is unclear in 232 cases, a total number of 1166 cases has been used for comparison between different HPV status. As for subclassification between two HPV statuses under different histological types, the excluded case numbers for each group are as follows due to unknown HPV status: 28 in ADC; 188 in SCC; 11 in Neuro; 4 in ADSCC (Figure 3—figure supplement 1).*p<0.05 is considered significantly different. p<0.01 is presented as **.ADC, adenocarcinoma; ADSCC, adenosquamous carcinoma of cervix; HPV, human papillomavirus; Neuro, neuroendocrine carcinoma; SCC, squamous cell carcinoma._
 
 As one of stage IIIC-specific (Figure 2—figure supplement 1B) cell clusters, Epi_10_CYSTM1, with its representative marker gene SLC26A3, presents potential diagnostic value to predict LN metastasis, which has been shown above (Figure 3B, Figure 3—figure supplement 1E). Therefore, we try to validate SLC26A3’s association with staging of IIIC, via detecting the expression pattern on post-surgical ADC samples, and more practically on biopsy samples. The results from IHC staining showed that ADC patients with stage IIIC had a higher expression of SLC26A3 (Figure 3C and D, Tables 3 and 4). In summary, our results propose that SLC26A3 might be considered a diagnostic marker to predict LN metastasis in ADC patients.
 
-## Enrichment of regulatory T cells indicates an immunosuppressive status of ADC
+**Table 3.**
+ The association between clinical characteristics and SLC26A3 protein expression via IHC tested on post-surgical samples.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Characteristics</th>
+      <th rowspan="2">Case number</th>
+      <th colspan="2">SLC26A3 expression</th>
+      <th rowspan="2">χ2</th>
+      <th rowspan="2">p value</th>
+    </tr>
+    <tr>
+      <th>High</th>
+      <th>Low</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>56</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>56</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>≥50</td>
+      <td>28</td>
+      <td>8 (28.57%)</td>
+      <td>20 (71.43%)</td>
+      <td>0.717</td>
+      <td>0.397</td>
+    </tr>
+    <tr>
+      <td>&lt;50</td>
+      <td>28</td>
+      <td>11 (39.29%)</td>
+      <td>17 (60.71%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Histological grading</td>
+      <td>51</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G1, G1-2</td>
+      <td>20</td>
+      <td>5 (25.00%)</td>
+      <td>15 (75.00%)</td>
+      <td>1.527</td>
+      <td>0.217</td>
+    </tr>
+    <tr>
+      <td>G2, G2-3, G3</td>
+      <td>31</td>
+      <td>13 (41.94%)</td>
+      <td>18 (50.06%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FIGO stages</td>
+      <td>56</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I–II (LN-M-)</td>
+      <td>47</td>
+      <td>12 (25.53%)</td>
+      <td>35 (74.47%)</td>
+      <td>9.198</td>
+      <td>0.002**</td>
+    </tr>
+    <tr>
+      <td>IIICp (LN-M+)</td>
+      <td>9</td>
+      <td>7 (77.78%)</td>
+      <td>2 (22.22%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HPV status</td>
+      <td>53</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HPV+</td>
+      <td>44</td>
+      <td>13 (29.55%)</td>
+      <td>31 (70.45%)</td>
+      <td>2.254</td>
+      <td>0.133</td>
+    </tr>
+    <tr>
+      <td>HPV-</td>
+      <td>9</td>
+      <td>5 (55.56%)</td>
+      <td>4 (44.44%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*p<0.05 is considered significantly different. p<0.01 is presented as **.FIGO, International Federation of Gynecology and Obstetrics; HPV, human papillomavirus; IHC, immunohistochemistry._
+
+**Table 4.**
+ The association between clinical characteristics and SLC26A3 protein expression via IHC tested on biopsy small specimens.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Characteristics</th>
+      <th rowspan="2">Case number</th>
+      <th colspan="2">SLC26A3 expression</th>
+      <th rowspan="2">χ2</th>
+      <th rowspan="2">p value</th>
+    </tr>
+    <tr>
+      <th>High</th>
+      <th>Low</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>43</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>≥50</td>
+      <td>16</td>
+      <td>3 (18.75%)</td>
+      <td>13 (81.25%)</td>
+      <td>4.605</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <td>＜50</td>
+      <td>27</td>
+      <td>14 (51.85%)</td>
+      <td>13 (48.15%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Histological grading</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G1, G1–2</td>
+      <td>9</td>
+      <td>4 (44.44%)</td>
+      <td>5 (55.56%)</td>
+      <td>0.115</td>
+      <td>0.735</td>
+    </tr>
+    <tr>
+      <td>G2, G2–3, G3</td>
+      <td>34</td>
+      <td>13 (38.24%)</td>
+      <td>21 (61.76%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FIGO stages</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I–II (consistent staging)</td>
+      <td>29</td>
+      <td>7 (24.14%)</td>
+      <td>22 (75.86%)</td>
+      <td>8.833</td>
+      <td>0.003*</td>
+    </tr>
+    <tr>
+      <td>IIICp (upstaging)</td>
+      <td>14</td>
+      <td>10 (71.43%)</td>
+      <td>4 (28.57%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HPV status</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HPV+</td>
+      <td>32</td>
+      <td>10 (31.25%)</td>
+      <td>22 (68.75%)</td>
+      <td>3.592</td>
+      <td>0.058</td>
+    </tr>
+    <tr>
+      <td>HPV-</td>
+      <td>11</td>
+      <td>7 (63.64%)</td>
+      <td>4 (36.36%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*p<0.05 is considered significantly different. p<0.01 is presented as **.FIGO, International Federation of Gynecology and Obstetrics; HPV, human papillomavirus; IHC, immunohistochemistry._
+
+### Enrichment of regulatory T cells indicates an immunosuppressive status of ADC
 
 T cells play a crucial role as the primary effectors of tumor immunity. Our data reveals that T cells constitute the predominant cell population within the TIME of CC (Figure 1F). A total of 52,297 T cells were categorized into eight main clusters (Figure 4A). The gene expression patterns of T cells in CC were in accord with those observed in other types of cancers (Sorin et al., 2023; Xue et al., 2022). Based on canonical genes (Li et al., 2022), these cells were re-clustered as the following four types of T cells: exhausted T cells (marked with CD8, TIGIT, PDCD1, LAG3, HAVCR2), cytotoxic T cells (marked with CD8 and CD3), regulatory T cells (Treg, marked with CD4, FOXP3, and IL2RA), and activated T cells (marked with CD8, C69, and CD3G) (Figure 4A–C). The subsets of DEGs from each type of T cells are shown in Figure 4—figure supplement 1C. When comparing the checkpoint pathway states among different T cell clusters, we observed relatively higher levels of LAG3 and PDCD1 (PD1) in exhausted T cells, while CTLA4 and TIG1 were more highly expressed in Tregs. These genes were identified to present immunosuppressive functions (Qiu et al., 2023; Figure 4D). On the other hand, genes such as ICOS and TNFRSF, which indicate the activation of immune checkpoint pathways, exhibited low expression levels in cytotoxic T cells and activated T cells (Figure 4D). These findings lead us to hypothesize that the establishment of an immunosuppressive TIME in ADC may involve the recruitment of regulatory T cells (Tregs) to the tumor area and the subsequent inactivation of a substantial proportion of cytotoxic T cells.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig4-v1.jpg)
+
+**Figure 4.:** (A) Uniform Manifold Approximation and Projection (UMAP) plots showing the sample distribution (left), original cell clustering of T cells (middle, eight clusters in total) and re-clustering of T cell subtypes (right, four major sub-clusters: exhausted T cell, cytotoxic T cell, regulatory T cell, and activated T cell) according to acknowledged marker genes. (B) Violin plot showing the expression of specific marker genes that annotate each sub-type of T cells. (C) UMAP plots showing the widely recognized classification markers that denote each type of T cell sub-cluster. (D) Dot heatmap plots that demonstrate the level of marker genes representing the signaling pathways of immune checkpoint activation and inhibition for grouped sub-clusters. (E) Differences of distribution and proportion of each T cell sub-cluster between different histological types (ADC vs. squamous cell carcinoma [SCC]). Statistics were performed using R software with two-sided Wilcoxon test (p values for each group are listed below: exhausted T: p=0.571; cytotoxic T: p=0.078; Treg: p<0.01; activated T: p=0.040). Statistics are shown as *p<0.05; **p<0.01; n.s., not significant. Treg: regulatory T cell.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Uniform Manifold Approximation and Projection (UMAP) and histogram plots to show the distribution (left) and proportion (right) of each T cell sub-cluster between different human papillomavirus (HPV) infection status (HPV+ vs. HPV-, p values for each group are listed below: exhausted T: p=0.537; cytotoxic T: p=0.662; Treg: p=0.329; activated T: p=0.792) and different stages (stage I–II vs. stage IIIC, p values for each group are listed below: exhausted T: p=0.768; cytotoxic T: p=0.768; Treg: p=0.514; activated T: p=1.000). (C) Dot heatmap plot of row-scaled expression of overexpressed genes for each sub-cluster of T cells. Statistics were performed using R software with two-sided Wilcoxon test. All statistics are shown as *p<0.05; **p<0.01; n.s., not significant.
+
 We further compared different status of CC with different attribution of T cell subtypes. It was demonstrated that ADC had a significantly higher proportion of Tregs compared to SCC (Figure 4E). Meanwhile, ADC patients who tested negative for HPV showed a higher enrichment of Tregs and a lower proportion of activated T cells compared to those with HPV-positive status (Figure 4—figure supplement 1). These findings shed light on the underlying mechanism for immunotherapy insensitivity of ADC, especially in HPV-negative status.
 
-## Tumor-associated neutrophils (TANs) surrounding ADC tumor area may contribute to the formation of a malignant microenvironment
+### Tumor-associated neutrophils (TANs) surrounding ADC tumor area may contribute to the formation of a malignant microenvironment
 
 The large-scale enrichment of specific gene subsets in neutrophils in CC prompted us to further examine their roles. A total of 12,586 neutrophils were detected and the composition proportion in ADC (20.05%) was almost five times higher than that in SCC (4.23%) (Figure 1F). Based on this observation, we hypothesize that ADC-specific neutrophil clusters may be related to poor prognosis and increased malignancy. All the cells were initially grouped into six clusters based on the gene expression modules (Figure 5A). In the context of cancer, TANs can exhibit dual functions, either promoting tumor (pro-tumor TANs) or inhibiting tumor progression (anti-tumor TANs). Based on the consensus markers identified by Jaillon et al., 2020 and Xue et al., 2022, we performed further clustering of the neutrophils in our dataset, resulting in the identification of three sub-types of TANs: pro-tumor TANs (Neu_03, marked with CD66, CD11, and MT1X), anti-tumor TANs (Neu_02, marked with CD66, CD11, CCL5, KRT5, and ELF3), TANs with isg (interferon-stimulated genes), and other undefined types (Neu_01, distinguished by CD66, CD11, IFITM2, S100A8, and LST1) (Figure 5B and C). Generally, the Neu_01 sub-cluster, which consists of TANs with isg with the subset of specific genes, accounted for the largest proportion among all neutrophils. Notably, the presence of pro-tumor TANs was significantly higher in ADC compared to SCC (Figure 5D), as well as in HPV-negative cases compared to HPV-positive cases (Figure 5—figure supplement 1A). On the other hand, the proportion of anti-tumor TANs in ADC was predominantly lower than that in SCC (Figure 5D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig5-v1.jpg)
+
+**Figure 5.:** (A) Uniform Manifold Approximation and Projection (UMAP) plots showing the distribution of neutrophils in 15 samples (left), original clustering (middle) the re-clustering (right) into three sub-clusters according to gene markers of TANs. (B) Dot heatmap showing the top 5 differently expressed genes (DEGs) in each sub-cluster of TANs. (C) UMAP plots for annotation of each sub-type of TANs with published marker genes presented: pro-tumor TANs, anti-tumor TANs, and TANs with isg. (D) UMAP and histogram plots to compare the differences of distribution and proportion of each sub-types of TANs between different histological types (ADC vs. squamous cell carcinoma [SCC]). Statistics were performed using R software with two-sided Wilcoxon test (p values for each group are listed below: TANs with isg: p=0.002; anti-TANs: p=0.002; pro-TANs: p=0.049). Statistics are shown as *p<0.05; **p<0.01; n.s., not significant. (E) Gene Ontology Biological Process (GOBP) analyses of signaling pathways that are more active in ADC than SCC, in terms of the pro-tumor TANs cluster. The histogram data are transformed from -Log10 (p-value). (F) Kaplan–Meier curve showing the overall survival rate of CC patients stratified by the top 90 genes-scaled signature of pro-TANs.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Uniform Manifold Approximation and Projection (UMAP) and histogram plots to compare the differences of distribution (left) and proportion (right) of each sub-type of TANs between different human papillomavirus (HPV) infection status (HPV+ vs. HPV-, p values for each group are listed below: TANs with isg: p=0.427; anti-TANs: p=0.931; pro-TANs: p=0.178) and different stages (stage I–II vs. stage IIIC, p values for each group are listed below: TANs with isg: p=1.000; anti-TANs: p=0.514; pro-TANs: p=0.951). (C) Kaplan–Meier curve to show the overall survival rate of CC patients stratified by the top 90 genes-scaled signature of the sub-cluster of TANs with isg. Statistics were performed using R software with two-sided Wilcoxon test. All statistics are shown as *p<0.05; **p<0.01; n.s. not significant.
 
 We further conducted the GOBP analysis on gene subsets derived from pro-tumor TANs to predict their potential functions. The findings indicated that pro-tumor TANs in ADC might be more active in regulating cell-to-cell interactions and chemotaxis. Specifically, they were involved in pathways such as chemokine-mediated or cytokine-mediated signaling, neutrophil activation, and receptor internalization (Figure 5E). These results suggest that pro-tumor TANs may engage in communication with various cell types. Interestingly, pro-tumor TANs were predicted to acquire enhanced activation in mediating inhibitory pathways related to immunity (Figure 5E). These pathways include the negative regulation of leukocyte proliferation and lymphocyte activation, as well as the suppression of IL-10 production, which is known to promote immune responses (Saraiva et al., 2020; Sarvaria et al., 2017).
 
 The role of pro-tumor TANs in association with disease prognosis was further investigated using the TCGA database. The patients with higher expression of gene panels specific to pro-tumor TANs exhibited a poorer prognosis compared to those with lower expression (Figure 5F). These findings suggest that the increased malignancy observed in ADC, particularly in HPV-negative cases, may also be related to the enrichment of pro-tumor TANs.
 
-## Cellular heterogeneity of plasma/B cells in ADC
+### Cellular heterogeneity of plasma/B cells in ADC
 
 In our study, we identified six distinctive clusters of plasma/B cells based on the set of gene enrichment: Plasma/B_01 (marked with IGHA2, IGHG2, and IGLC2), Plasma/B_02 (marked with HLA-DRA, HLA-DPB, and CD37), Plasma/B_03 (marked with KRT17 and S100A2), Plasma/B_04 (marked with CCL5, CXCL13, IL-32, and CCL4), Plasma/B_05 (marked with CXCL8), and Plasma/B_06 (marked with HMGB2) (Figure 6A–C). Among these clusters, the most abundant one was Plasma/B_01_IGHA2 (Figure 6D, Figure 6—figure supplement 1A and B). Interestingly, the proportion of Plasma/B_01_IGHA2 was found to be higher in ADC compared to SCC, and it was also slightly higher in HPV-negative cases than in HPV-positive cases (Figure 6D, Figure 6—figure supplement 1A). Generally, B-lymphocytes are known to have tumor-inhibitory properties. However, the ectopic gene expression module of plasma/B cells in ADC suggested that some sub-clusters might present a tumor-promoting role. When we combined the top 50 signature genes in Plasma/B_01_IGHA2-enriched subset and performed the survival analysis using TCGA database, we observed that higher expression of the signature genes predicted a poorer prognosis of CC patients (Figure 6E). Taken together, the cellular heterogeneity of plasma/B cells in the TIME of ADC is identified at the single-cell level.
 
-## Crosstalk among tumor cells, Tregs, and neutrophils establishes the immunosuppressive TIME in ADC
+![Figure 6.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig6-v1.jpg)
+
+**Figure 6.:** (A) Uniform Manifold Approximation and Projection (UMAP) plots showing the distribution of plasma/B cells in 15 samples (left) and the re-clustering into six clusters (right) according to ectopic expressions of genes. (B) Plot heatmap showing the annotation of each sub-cluster with top 5 differently expressed genes (DEGs). (C) UMAP plots demonstrating the most specific genes as the marker for each sub-cluster. (D) UMAP and histogram plots to compare the differences of distribution and proportion of each plasma/B cell sub-cluster between different histological types. Statistics were performed using R software with two-sided Wilcoxon test (p values for each group are listed below: Plasma/B_01_IGHA2: p=0.040; Plasma/B_02_HLA-DAR: p=0.177; Plasma/B_03_KRT17: p=0.040; Plasma/B_04_CCL5: p=0.388; Plasma/B_05_CXCL8: p=0.169; Plasma/B_06_HMGB2: p=0.211). Statistics are shown as *p<0.05; **p<0.01; n.s., not significant. (E) Kaplan–Meier curve showing the overall survival rate of CC patients stratified by the top 50 genes-scaled signature of Plasma/B_01_IGHA2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Uniform Manifold Approximation and Projection (UMAP) and histogram plots to show the differences of distribution (left) and proportion (right) of each plasma/B cell sub-cluster between different human papillomavirus (HPV) infection status (HPV+ vs. HPV-, p values for each group are listed below: Plasm/B_01_IGHA2: p=0.931; Plasm/B_02_HLA-DAR: p=0.662; Plasm/B_03_KRT17: p=0.931; Plasm/B_04_CCL5: p=0.007; Plasm/B_05_CXCL8: p=1.000; Plasm/B_06_HMGB2: p=0.410). (B) UMAP and histogram plots to compare the differences of distribution and proportion of each plasma/B cell sub-cluster between different clinical stages (stage I–II vs. stage IIIC, p values for each group are listed below: Plasma/B_01_IGHA2: p=0.768; Plasma/B_02_HLA-DAR: p=0.768; Plasma/B_03_KRT17: p=1.000; Plasma/B_04_CCL5: p=0.950; Plasma/B_05_CXCL8: p=0.667; Plasma/B_06_HMGB2: p=0.294). Statistics were performed using R software with two-sided Wilcoxon test. All statistics are shown as *p<0.05; **p<0.01; n.s., not significant.
+
+### Crosstalk among tumor cells, Tregs, and neutrophils establishes the immunosuppressive TIME in ADC
 
 In the above description, we have outlined that certain ADC-enriched cell sub-clusters, such as Epi_10_CYSTM1, Tregs, and pro-tumor TANs, might play oncogenic roles in regulating various cellular activities, including maintenance of stemness and evasion of immune surveillance. To gain deeper insights into the interplay among these clusters and their influence on ADC progression, we harnessed the CellChat tool (Jin et al., 2021). Our primary focus revolved around unraveling the mechanisms governing Treg recruitment to the tumor microenvironment and the maintenance of stemness within ADC-enriched cell sub-clusters.
 
 Given that the three ADC-specific sub-clusters (Epi_07_CAPS, Epi_10_CYSTM1, and Epi_12_RRAD) of epithelial cells were predicted to exhibit high levels of stem-like properties, and particularly that Epi_10_CYSTM1 presented the highest degree of malignancy among them, we further analyzed their possible interactions with other types of cells. Firstly, in comparison to SCC, ADC-enriched epithelial sub-clusters exhibited a higher propensity for interaction with Tregs through ligand-receptor signaling pathways, including ALCAM (ALCAM>>CD6) and MHC-II (HLA-DR>>CD4) (Figure 7A–E), which have been reported to be essential for Treg recruitment, expansion, and stabilization to establish the immunosuppressive microenvironment (Chalmers et al., 2022; Ferragut et al., 2021; Freitas et al., 2019). To further uncover the underlying reason for the enhanced stemness observed in ADC epithelial cells, we focused on the signaling received by Epi_10_CYSTM1 cell cluster. Interestingly, the CellChat analysis revealed that, compared to other pathways, such as CD46>>JAG1 and GZMA>>PARD3, the interaction of TGFβ>>TGFBR between Tregs and epithelial cells (particularly in cluster Epi_10_CYSTM1) was activated in ADC but not in SCC (Figure 7F and G). TGFβ is a canonical secreted protein that induces carcinogenesis, such as cancer cell proliferation, invasion, self-renewal, and epithelial-to-mesenchymal transition (EMT) (Derynck et al., 2021; Massagué, 2008; Tauriello et al., 2022). Thus, we speculate that the recruited Tregs might secrete TGFβ to stimulate the tumor epithelial cells of ADC, leading to increased stemness. Additionally, pro-tumor TANs were also recruited to the tumor area and interacted with Epi_10_CYSTM1, as well as Epi_07_CAPS and Epi_12_RRAD cells, via the ANNEXIN-to-FPR1/FPR2 signaling pathway (Figure 7—figure supplement 1A and B). Previous studies have reported that the ANNEXIN pathway can promote the chemotaxis of neutrophils (Araújo et al., 2021). Likewise, TANs expressing isg, which have been shown to promote tumorigenesis as mentioned earlier (Figure 5—figure supplement 1C), were also recruited to the tumor area through the ANNEXIN pathway. These findings suggest that the aggressive clusters of TANs may contribute to the formation of an ADC-specific TIME.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig7-v1.jpg)
+
+**Figure 7.:** (A) Circle plots showing the interacting networks between epithelial cell sub-clusters and T cell sub-clusters via the pathway of ALCAM by comparing adenocarcinoma (ADC) and squamous cell carcinoma (SCC). (B) Circle plots simplified from (A) to show the interactions among target cell clusters via ALCAM pathway. (C) Circle plots showing the interacting networks between epithelial cell sub-clusters and T cell sub-clusters via the pathway of MHC-II by comparing ADC and SCC. (D) Circle plots simplified from (C) to show the interactions among target cell clusters via MHC-II pathway. From (A) to (D), the direction of each arrow shows the regulation from outputting cells to incoming cells. The width of the each line shows the predicted weight and strength of regulation. (E) Bubble plot showing the probability of ligand-to-receptor combination of each pathway between two different target sub-clusters of cells by comparing ADC with SCC. (F) Circle plots showing Tregs regulate epithelial cells via the TGF-β pathway, which is solely activated in ADC. (G) Bubble plot showing the probability of ligand-to-receptor combination of TGF-β pathway between Tregs and epithelial cells by comparing ADC with SCC. The pathways of ADGRE5, CD46, GZMA, and NAMPT are used as negative controls. (H) Dual immunofluorescence (IF) staining confirming that in SLC26A3high regions of CC tissues, more FOXP3+ cells are recruited than in SLC26A3low regions (left). The numbers of recruited FOXP3+ cell are quantified using histogram plot (right). Three individual samples with ROI were calculated and p<0.01 were marked with **, showing significant difference. (I) Multiplexed IF staining confirming the interaction between CD6 (on FOXP3+ cells) and ALCAM (on SLC26A3high epithelial cells) in the ALCAM pathway. (J) Multiplexed IF staining showing that the recruitment of FOXP3 + cells toward SLC26A3high cells might induce EMT (marked with E-cadherin) and increase the stemness (marked with ALDH1A1) of tumor cells, via TGF-β pathway.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Circle plots showing the interacting networks between epithelial cell sub-clusters and neutrophil sub-clusters via pathways such as ANNEXIN and Gallectin by comparing adenocarcinoma (ADC) and squamous cell carcinoma (SCC). The direction of one arrow shows the regulation from outputting cells to incoming cells. The width of the each line shows the predicted weight and strength of regulation. (B) Bubble plot showing the probability of ligand-to-receptor combination of each pathway (corresponding to A) between two different sub-types of cells by comparing ADC with SCC. (C) Dual immunofluorescence (IF) staining showing that in SLC26A3high regions the stemness of tumor epithelial cells is actively induced than that in SLC26A3low regions. (D) Dual IF staining showing that in SLC26A3high regions the EMT of tumor epithelial cells is actively induced than in SLC26A3low regions.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/97335/elife-97335-fig7-figsupp2-v1.jpg)
 
 To test these hypotheses, we conducted immunofluorescence (IF) analysis and observed a greater recruitment of Tregs (marked by FOXP3) in close proximity to regions exhibiting high SLC26A3 expression (Epi_10_CYSTM1 cell cluster) (Figure 7H). Furthermore, when compared to regions with low SLC26A3 expression, tumors displaying high SLC26A3 levels exhibited significantly increased expression of Aldehyde Dehydrogenase 1 Family Member A1 (ALDH1A1), a known marker for cancer stem cells in CC (Douville et al., 2009; Figure 7—figure supplement 1C). Notably, we identified SLC26A3high tumor cells expressing ALCAM in close proximity to CD6+Tregs, suggesting potential involvement of ALCAM>>CD6 signaling in Treg recruitment (Figure 7I). Additionally, we observed reduced E-cadherin expression in tumor cells within SLC26A3high regions, possibly induced by TGFβ secreted by adjacent Tregs (Figure 7J, Figure 7—figure supplement 1D). Altogether, these findings confirm the intricate crosstalk between the Epi_10_CYSTM1 cell cluster and Tregs, which might help to establish an immunosuppressive TIME and sustain heightened stemness in tumor cells.
 
@@ -115,58 +737,58 @@ In summary, we characterized the genomic landscape of the TIME in ADC at a singl
 
 ## Materials and methods
 
-## Clinical sample collection
+### Clinical sample collection
 
 The 15 cases of fresh CC tissues were collected from Hunan Cancer Hospital, with informed consent obtained from 15 independent patients. The inclusion criteria are as follows: (1) the diagnosis of CC, with pathological type of ADC or SCC, should be confirmed by pathologists; (2) pre-surgical FIGO stages should be within the range from IB (which means the tumor mass should be detectable via CT or MRI) to IIA (which means no parametrial involvement, nor distant metastasis), in which patients have explicit indication for radical surgery following NCCN guidelines; (3) no neo-adjuvant treatments should be given before the surgery, including chemotherapy and radiotherapy; (4) the surgery options should be type C radical hysterectomy and include pelvic lymphadenectomy with/without para-aortic lymphadenectomy. Detailed information of the 15 patients is listed in Supplementary file 1. This study was supervised and approved by the Ethics Committee Board of Hunan Cancer Hospital.
 
-## Sample preparation for single-cell isolation
+### Sample preparation for single-cell isolation
 
 Immediately after surgical removal, the fresh tumor tissues were washed by saline for three times and stored in cold storage solution (MACS Tissue Storage Solution) for transportation. To prepare high-quality samples, the tissues were cut into pieces to 1 mm3 and were incubated at 37°C for 30 min. 0.25% trypsin solution was used to digest the tissue pieces at 37°C for 10 min. Then single-cell samples were filtered through a 70 μm meshed filter and suspended in a red blood cell lysis buffer (MACS Red Blood Cell Lysis Solution) for dissolution. Before instrumental sequencing, suspension of single cells were visualizing by TC20 Automated Cell Counter to assess the cell viability. Each sample was confirmed to have a cell viability rate of over 80%.
 
-## Single-cell RNA sequencing
+### Single-cell RNA sequencing
 
 The suspension of single cells was transferred onto the 10X Chromium Single-Cell instrument to generate single-cell beads in the emulsion (GEMs). Then the scRNA-seq libraries were constructed by using the Chromium Controller and Chromium Single Cell 3′Reagent Kits (v3 chemistry CG000183) and sequenced by using the sequencer Novaseq6000 (Illumina, USA). All procedures followed the manufacturer’s protocol.
 
-## Data processing, dimension reduction, and cell clustering
+### Data processing, dimension reduction, and cell clustering
 
 The raw scRNA-seq reads were processed for barcode processing, genome mapping, and the gene expression matrixes were generated by using the Cell Ranger toolkit (version 5.0.0) of 10X Genomics platform. The GRCh38 human reference genome was utilized in the read alignment process. The unique molecular identifiers (UMIs) were counted in each cell. As for data processing, cells with low qualities, which showed <200 expressed genes or >25% mitochondrial UMIs, were excluded. The package of Seurat R (version 4.0.5R) was applied for quality control. The Scrublet software (version 0.2.2) was utilized to identify and remove potential doublets. As for data normalization and conversion, the LogNormalize method was implemented in the NormalizeData function, and then the normalized counts were log-transformed. With the function of RunPCA, the principal component analysis (PCA) was used for data dimension reduction. The functions of FindNeighbors and FindClusters were used for cell clustering. For visualization, the RunUMAP function was performed. In each unsupervised cell cluster, the gene markers were identified by the function of FindAllMarkers with comparison to other clusters.
 
-## Cell type annotation
+### Cell type annotation
 
 The cell typing was conducted and annotated according to the selected gene markers via CellMarker database and publications (Li et al., 2022; Qiu et al., 2023; Xue et al., 2022). The expression of DEGs was used to determine each cell type following the rules: Log2Foldchange should be >0.2 and adjusted p-values should be <0.05.
 
-## Pseudotime trajectory analysis
+### Pseudotime trajectory analysis
 
 To identify the developmental changes of epithelial cells, the pseudotime trajectory analyses were performed by using Monocle2 R package (version 2.22.0), in which Seurat was used as input. Calculated using the Monocle algorithm, the top 50–1000 genes were conducted for differential GeneTest. Then, the DDR-Tree and default parameters were generated to visualize the translational relationship and developmental orders among different epithelial sub-clusters.
 
-## Cell malignancy scoring
+### Cell malignancy scoring
 
 Among these epithelial cells, the malignancy score of each single cell was predicted by using scCancer R package (Guo et al., 2021). The malignant cells were distinguished from non-malignant cells by inferring large-scale copy number variations, which was calculated by the interCNV R package as described (Guo et al., 2021; Xue et al., 2022).
 
-## Signaling pathway enrichment analysis
+### Signaling pathway enrichment analysis
 
 The biological signaling pathway of each cell cluster was identified by performing Gene Ontology (GO) analyses and Hallmark Pathway enrichment analyses, according to the Molecular Signature Database (MSigDB version 7.5.1). Then DEGs of each cell cluster were converted to ClusterProfiler (version 4.2.2) package for the analyses of predicted functions.
 
-## CytoTRACE
+### CytoTRACE
 
 In order to predict the differential state of cells, scRNA-seq-derived data were passed to the CytoTRACE software (version 0.3.3) with R package for further analyses.
 
-## Survival analysis
+### Survival analysis
 
 The CESC dataset from the TCGA database was downloaded from Xena, with clinical characteristics, survival endpoints, and treatments, was included. The Kaplan–Meier survival curves were generated using R software.
 
-## Cellular communication analysis
+### Cellular communication analysis
 
 The possible interactions, with ligand-to-receptor communicating signaling pathway, between two types of cells were analyzed using the R packages of CellChat (version 1.5.0). Seurat was used for normalization, and the rank with significance was calculated. The probability of ligand-to-receptor interaction in each signaling pathway was plotted by p-value and intensity.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 The paraffin-embedded ADC samples (whether post-surgical or biopsy samples) were sectioned into 4 μm slides. The protocol of IHC strictly followed our previous published works (Peng et al., 2019). The primary antibody of SLC26A3 was purchased from Santa Cruz Biotechnology (Cat# sc-376187) and diluted at the ratio of 1:20. The protein expression of SLC26A3 was determined using the method of H-scoring: H-score = intensity score × percentage of positivity. The intensity was scored as negative = 0, weak = 1, moderate = 2, strong = 3. Samples were grouped as the higher expression group (H-score ≥150) and the lower expression (H-score <150) group of SLC26A3.
 
-## Multiplexed immunofluorescence (multi-IF)
+### Multiplexed immunofluorescence (multi-IF)
 
 The multi-IF was performed using the Opal 6-Plex Manual Detection Kit (Akoya Biosciences, NEL811001KT), following the manufacturer’s instructions. Generally, the slides were stained with each primary antibody sequentially following the staining steps in each cycle as (1) antigen retrieval by citrate (pH = 6) at water bath for 30 minutes; (2) independent primary antibody incubation at 4°C atmosphere overnight or 37°C atmosphere for 1 hour; (3) common HRP-crosslinked secondary antibody incubation at 37°C atmosphere for 30 minutes; and (4) independent opal reactive fluorophore solution at intended wavelength (opal 570 was excluded in order to save for FOXP3 signal). Each independent primary antibody started a new cycle. After all cycles finished, the slides were prepared for incubation of FOXP3 monoclonal antibody with eFluor 570 (Thermo Fisher, Cat#41-4777-82) conjugated, as well as DAPI (Sigma-Aldrich, Cat#28718-90-3) for nucleus staining.
 
-## Statistics
+### Statistics
 
 Specific analyses of scRNA-seq data were decoded and visualized using the R software. Statistics were processed using IBM-SPSS Statistics 20.0 software and R software as well, including Student’s t-test, two-sided Wilcoxon test, etc. Correlations analysis was performed using the χ2 test. Survival analysis was performed using the Kaplan–Meier method. p values <0.05 were considered statistically significant.

@@ -9,11 +9,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00671me87 Language and Computation in Neural Systems group, Max Planck Institute for Psycholinguistics Nijmegen Netherlands
+1. Language and Computation in Neural Systems group, Max Planck Institute for Psycholinguistics Nijmegen Netherlands ([ROR:00671me87](https://ror.org/00671me87))
 2. Language and Computation in Neural Systems group, Donders Centre for Cognitive Neuroimaging Nijmegen Netherlands
-3. https://ror.org/02jz4aj89 Department of Cognitive Neuroscience, Faculty of Psychology and Neuroscience, Maastricht University Maastricht Netherlands
-4. https://ror.org/02tyrky19 ADAPT Centre, School of Computer Science and Statistics, University of Dublin, Trinity College Dublin Ireland
-5. https://ror.org/05trd4x28 CIMeC - Center for Mind/Brain Sciences, University of Trento Trento Italy
+3. Department of Cognitive Neuroscience, Faculty of Psychology and Neuroscience, Maastricht University Maastricht Netherlands ([ROR:02jz4aj89](https://ror.org/02jz4aj89))
+4. ADAPT Centre, School of Computer Science and Statistics, University of Dublin, Trinity College Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
+5. CIMeC - Center for Mind/Brain Sciences, University of Trento Trento Italy ([ROR:05trd4x28](https://ror.org/05trd4x28))
 
 † Corresponding author
 
@@ -35,11 +35,19 @@ To answer this question, we designed an experiment in which participants were in
 
 ## Results
 
-## Behaviour
+### Behaviour
 
 Overall task performance was above chance and participants complied with task instructions (Figure 1; see Figure 1—figure supplement 1 for individual data). We found a significant interaction between condition and task (F(2,72.0) = 11.51, p < 0.001) as well as a main effect of task (F(2,19.7) = 44.19, p < 0.001) and condition (F(2,72.0) = 29.0, p < 0.001). We found that only for the word-combination (phrasal-level) task, the sentence condition had a significantly higher accuracy than the word list condition (t(54.0) = 6.97, p < 0.001). For the other two tasks, no significant condition effect was found (syllable: t(54.0) = 0.62, p = 1.000; word list: t(54.0) = 1.74, p = 0.176). Investigating the main effect of task indicated a difference between all tasks (phrase–syllable: t(18.0) = 3.71, p = 0.003; phrase–word: t(22.4) = −6.34, p < 0.001; syllable–word: t(19.2) = −8.67, p < 0.001).
 
-## Mutual information
+![Figure 1.](https://cdn.elifesciences.org/articles/77468/elife-77468-fig1-v2.jpg)
+
+**Figure 1.:** Accuracy for the three different tasks. Double asterisks indicate significance at the 0.01 level using a paired samples t-test (n=19). Box edges indicate the standard error of the mean.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77468/elife-77468-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Accuracy for the three different tasks. Double asterisks indicate significance at the 0.01 level using a paired samples t-test (n=19).
+
+### Mutual information
 
 The overall time–frequency response in the three different regions of interest (ROI) using the top-20 PCA components was as expected, with an initial evoked response followed by a more sustained response to the ongoing speech (Figure 2). From these regions-of-interest, we extracted mutual information (MI) in three different frequency bands (phrasal, word, and syllable). Here, we focus on the phrasal band as this is the band that differentiates word lists from sentences and showed the strongest modulation for this contrast in our previous study (Kaufeld et al., 2020). MI results for all other bands are reported in the supplementary materials.
 
@@ -49,19 +57,43 @@ The overall time–frequency response in the three different regions of interest
 
 For the phrasal timescale in STG, we found significantly higher MI in the sentence compared to the word list condition (F(3,126) = 67.39, p < 0.001; Figure 3; see Figure 3—figure supplement 1 for individual data). No other effects were significant (p > 0.1). This finding paralleled the effect found in Kaufeld et al., 2020. For the MTG, we saw a different picture: Besides the main effect of condition (F(3,126) = 50.24, p < 0.001), an interaction between task and condition was found (F(3,126) = 2.948, p = 0.035). We next investigated the effect of condition per task and found for all tasks except the passive task a significant effect of condition, with stronger MI for the sentence condition (passive: t(126) = 1.07, p = 0.865; syllable: t(126) = 4.06, p = 0.003; word: t(126) = 5.033, p < 0.001; phrase: t(126) = 4.015, p = 0.003). For the IFG, we found a main effect of condition (F(3,108) = 21.89, p < 0.001) as well as a main effect of task (F(3,108) = 2.74, p = 0.047). The interaction was not significant (F(3,108) = 1.49, p = 0.220). Comparing the phrasal task with the other tasks indicated higher MI for the phrasal compared to the word task (t(111) = 2.50, p = 0.028). We also found a trend for the comparison between the phrasal and syllable tasks (t(111) = 2.17, p = 0.064), as well as the phrasal and passive tasks (t(111) = 2.25, p = 0.052).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/77468/elife-77468-fig3-v2.jpg)
+
+**Figure 3.:** Single and double asterisks indicate significance at the 0.05 and 0.01 level using a paired samples t-test (n=19). T indicates trend level significance (p < 0.1). Inset at the top left of the graph indicates whether a main effect of condition was present (with higher MI for sentences versus word lists; this inset does not reflect real data). Averages of conditions are only shown if there was a main task effect without an interaction. Box edges indicate the standard error of the mean.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77468/elife-77468-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Single and double asterisks indicate significance at the 0.05 and 0.01 level using a paired samples t-test (n=19). T indicates trend level significance (p < 0.1). Inset at the top left of the graph indicates whether a main effect of condition was present (with higher MI for sentences versus word lists; this inset does not reflect real data). Averages of conditions are only shown if there was a main task effect.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77468/elife-77468-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Double asterisks indicate significance at the 0.01 level using a paired samples t-test (n=19). Inset at the top left of the graph indicates whether a main effect of condition was present (with higher MI for word lists versus sentences; this inset does not reflect real data).
+
 For the word and syllable frequency bands no interactions were found (all p > 0.1; Figure 3—figure supplement 2). For all six models, there was a significant effect of condition, with stronger MI for word lists compared to sentences (all p < 0.001). The main effect of task was not significant in any of the models (p > 0.1; for the MTG syllable level there was a trend: F(3,126) = 2.40, p = 0.071).
 
 When running the power control analysis, we did not find that significant effects in power differences (also see next section for power in generic bands; mostly due to main effects of condition) influenced our tracking results for any of the bands investigated.
 
-## Power
+### Power
 
 We repeated the linear mixed modelling using power instead of MI to investigate if power changes paralleled the MI effects. For the delta band, we found for the STG a main effect of condition (F(1,18) = 6.11, p = 0.024; Figure 4. See Figure 4—figure supplement 1 for individual data) and task (F(3,108) = 3.069, p = 0.031). For the interaction we found a trend (F(3,108) = 2.620, p = 0.054). Overall sentences had stronger delta power than word lists. We found lower power for the phrase compared to the passive task (t(111) = 2.31, p = 0.045) and lower power for the phrase compared to the syllable task (t(111) = 2.43, p = 0.034). There was no significant difference between the phrase and word task (t(111) = 0.642, p = 1.00).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/77468/elife-77468-fig4-v2.jpg)
+
+**Figure 4.:** Single and double asterisks indicate significance at the 0.05 and 0.01 level using a paired samples t-test (n=19). T indicates trend significance (p < 0.1) Inset at the right top of the graph indicates whether a main effect of condition was present (with higher activity for sentences versus word lists; this inset does not reflect real data). Averages of conditions are only shown if there was a main task effect. Box edges indicate the standard error of the mean.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77468/elife-77468-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Single and double asterisks indicate significance at the 0.05 and 0.01 level using a paired samples t-test (n=19). T indicates trend significance (p < 0.1) Inset at the left top of the graph indicates whether a main effect of condition was present (with higher activity for sentences versus word lists; this inset does not reflect real data). Averages of conditions are only shown if there was a main task effect.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/77468/elife-77468-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Single and double asterisks indicate significance at the 0.05 and 0.01 level using a paired samples t-test (n=19). T indicates trend significance (p < 0.1) Inset at the top left of the graph indicates whether a main effect of condition was present (with higher activity for sentences versus word lists; this inset does not reflect real data).
 
 The MTG delta power effect overall paralleled the STG effects with a significant condition (F(1,124.94) = 12.339, p < 0.001) and task effect (F(3,124.94) = 4.326, p = 0.006). The interaction was trend significant (F(3,124.94) = 2.58, p = 0.056). Pairwise comparisons of the task effect showed significantly stronger power for the phrase compared to the passive task (t(128) = 2.98, p = 0.007) and lower power for the phrase compared to the syllable task (t(128) = 3.10, p = 0.024). The passive–word comparison was not significant (t(128) = 2.577, p = 0.109). Finally, for the IFG we only found a trend effect for condition (F(1,123.27)=4.15, p = 0.057), with stronger delta power in the sentence condition.
 
 The results for all other bands can be found in the supplementary materials (Figure 4—figure supplement 2). In summary, no interaction effects were found for any of the models (all p > 0.1). In all bands, power was generally higher for sentences than for word lists. Any task effect generally showed stronger power for the lower hierarchical level (e.g. generally higher power for passive versus word-combination tasks).
 
-## Connectivity
+### Connectivity
 
 Overall connectivity patterns showed the strongest connectivity in the delta and alpha frequency band (Figure 5). In the delta band, we found a main effect of task for the STG–IFG connectivity (F(3,122.06) = 4.1078, p = 0.008; Figure 6; see Figure 6—figure supplement 1 for individual data). Follow-up analysis showed a significant difference between the phrasal and passive tasks with higher connectivity in the phrasal compared to the passive task (t(125) = 3.254, p = 0.003). The other comparisons with the phrasal task were not significant. The effect of task remained significant even when correcting for power differences between the passive and phrasal tasks (F(1,53.02) = 12.39, p < 0.001; note the change in degrees of freedom as only the passive and phrasal tasks were included in this mixed model as any power correction is done on pairs). Initially, we also found main effects of condition for the delta and beta bands for the MTG–IFG connectivity (stronger connectivity for the sentence compared to the word list condition), however after controlling for power, these effects did not remain significant (Figure 6—figure supplement 2).
 
@@ -69,17 +101,37 @@ Overall connectivity patterns showed the strongest connectivity in the delta and
 
 **Figure 5.:** (A) ROI connections displayed on one exemplar participant surface. (B) Time–frequency weighted phase-lagged index (WPLI) response at each ROI.
 
-## MEG–behavioural performance relation
+![Figure 6.](https://cdn.elifesciences.org/articles/77468/elife-77468-fig6-v2.jpg)
+
+**Figure 6.:** Double asterisks indicate significance at the 0.01 level using a paired samples t-test (n=19) after correcting for power differences between the two conditions (we plot the original data, not corrected for power, as we can only perform pairwise power and consequently data will be different for each control). Averages of conditions are only shown if there was a main task effect. Box edges indicate the standard error of the mean.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77468/elife-77468-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Single and double asterisks indicate significance 0.01 level using a paired samples t-test (n=19) after correcting for power differences between the two conditions (we plot the original data, not corrected for power, as we can only perform pairwise power and consequently data will be different for each control). Averages of conditions are only shown if there was a main task effect.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/77468/elife-77468-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Connectivity is displayed before correcting for power differences. None of the effects survived correcting for power differences. Inset at the top left of the graph indicates whether a main effect of condition was present (with higher activity for sentences versus word lists; this inset does not reflect real data).
+
+### MEG–behavioural performance relation
 
 We found for the MI analysis a significant effect of accuracy only in the MTG. Here, we found a three-way interaction between accuracy × task × condition (F(2,91.9) = 3.459, p = 0.036). Splitting up for the three different tasks we found only an uncorrected significant effect for the condition × accuracy interaction for the phrasal task (F(1,24.8) = 5.296, p = 0.03) and not for the other two tasks (p > 0.1). In the phrasal task, we found that when accuracy was high, there was a stronger difference between the sentence and the word list condition compared to when accuracy was low, with stronger accuracy for the sentence condition (Figure 7A).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/77468/elife-77468-fig7-v2.jpg)
+
+**Figure 7.:** (A) Predicted values for the phrasal band MI in the middle temporal gyrus (MTG) for the word-combination task separately for the two conditions. (B) Predicted values for the delta-band weighted phase lag index (WPLI) in the superior temporal gyrus (STG)–MTG connection separately for the two conditions. Error bars indicate the 95% confidence interval of the fit. Coloured lines at the bottom indicate individual datapoints.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/77468/elife-77468-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Predicted values for delta power for the two conditions dependent on age in superior temporal gyrus (STG, left) and middle temporal gyrus (MTG, right). (B) Predicted values for delta power for the four tasks dependent on age in MTG. Error bars indicate the 95% confidence interval of the fit. Coloured lines at the bottom indicate individual datapoints.
+
 No relation between accuracy and power was found. For the connectivity analysis, we found a significant condition × accuracy interaction for the STG–MTG connection (F(1,80.23) = 5.19, p = 0.025; Figure 7B). Independent of task, when accuracy was low the difference between sentence and word lists was stronger with higher weighted phase lag index (WPLI) fits for the sentence condition. After correcting for accuracy there was also a significant task × condition interaction (F(2,80.01) = 3.348, p = 0.040) and a main effect of condition (F(1,80.361) = 5.809, p = 0.018). While overall there was a stronger WPLI for the sentence compared to the word list condition, the interaction seemed to indicate that this was especially the case during the word task (p = 0.005), but not for the other tasks (p > 0.1).
 
-## Age control
+### Age control
 
 Adding age to the analysis did not change any of the original findings (all original effects were still significant). We did however find for the power analysis age-specific interactions with condition and task. Specifically, for both the STG and the MTG we found an interaction between age and condition (F(1,28.87) = 6.156, p = 0.0192 and F(1,31) = 10.31, p = 0.003). In both ROIs, there was a stronger difference between sentences and word lists (higher delta power for sentences) for the younger compared to the older participants (Figure 7—figure supplement 1). In the MTG, there was also an interaction between task and age (F(1,31) = 5.020, p = 0.006). Here, in a follow-up we found that only in the word task there was a correlation between age and power (p = 0.023 uncorrected), but not for the other tasks (p > 0.1).
 
-## Number of component control
+### Number of component control
 
 Overall, the amount of PCA components did not influence any of the qualitative differences in the condition. It did seem however that 10 PCA components were not sufficient to show all original effects with the same power. Specifically, the IFG task and MTG task × condition effect were only trend significant for 10 components (p = 0.06 and p = 0.1, respectively). The other effects did remain significant with 10 components. Using 30 components made some of our effects stronger than with 20 components. Here, the IFG task and MTG task × condition effects had p values of 0.034 and 0.006, respectively. We conclude that the amount of PCAs components did not qualitative change any of our reported effects.
 
@@ -105,54 +157,106 @@ It is difficult to decide on the most natural task in an experimental setting, t
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 In total, 20 Dutch native speakers (16 females; age range: 18–59; mean age = 39.5) participated in the study. All were right handed, reported normal hearing, had normal or corrected-to-normal vision, and did not have any history of dyslexia or other language-related disorders. Participants performed a screening for their eligibility in the MEG and MRI and gave written informed consent. The study was approved by the Ethical Commission for human research Arnhem/Nijmegen (project number CMO2014/288). Participants were reimbursed for their participation. One participant was excluded from the analysis as they did not finish the full session.
 
-## Materials and design
+### Materials and design
 
 Materials were identical to the stimuli used in Kaufeld et al., 2020. They consisted of naturally spoken sentences or word lists which consisted of 10 words (see Table 1 for examples). The sentences contained two coordinate clauses with the following structure: [Adj N V N Conj Det Adj N V N]. All words were disyllabic except for the words ‘de’ (the) and ‘en’ (and). Word lists were word-scrambled versions of the original sentences which always followed the structure [V V Adj Adj Det Conj N N N N] or [N N N N Det Conj V V Adj Adj] to ensure that they were grammatically incorrect. In total, 60 sentences were used. All sentences were presented at a comfortable sound level.
 
+**Table 1.**
+ Stimuli and task examples.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Sentence</td>
+      <td colspan="4">[bange helden] [plukken bloemen] en de [bruine vogels] [halen takken][timid heroes] [pluck flowers] and the [brown birds] [gather branches]</td>
+    </tr>
+    <tr>
+      <td>Word list</td>
+      <td colspan="4">[helden bloemen] [vogels takken] de en [plukken halen] [bange bruine][heroes flowers] [birds branches] and the [pluck gather] [timid brown]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">Sentence</td>
+      <td colspan="2">Word list</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Correct</td>
+      <td>Incorrect</td>
+      <td>Correct</td>
+      <td>Incorrect</td>
+    </tr>
+    <tr>
+      <td>Syllable</td>
+      <td>/bɑ/</td>
+      <td>/lɑ/</td>
+      <td>/bɑ/</td>
+      <td>/lɑ/</td>
+    </tr>
+    <tr>
+      <td>Word</td>
+      <td>bloemen[flowers]</td>
+      <td>vaders[fathers]</td>
+      <td>bloemen[flowers]</td>
+      <td>vaders[fathers]</td>
+    </tr>
+    <tr>
+      <td>Word combination</td>
+      <td>bange helden[timid heroes]</td>
+      <td>halen bloemen[gather flowers]</td>
+      <td>helden bloemen[heroes flowers]</td>
+      <td>vogels bloemen[birds flowers]</td>
+    </tr>
+  </tbody>
+</table>
+
+_For each condition (sentence and word list) one example stimulus (top) and corresponding tasks are shown (bottom)._
+
 Participants were asked to perform four different tasks on these stimuli: a passive task, a syllable task, a word task, and a word-combination task. For the passive task, participants did not need to perform any task other than comprehension – they only needed to press a button to go to the next trial. For the syllable task, participants heard after every sentence two part-of-speech sounds, each consisting of one syllable. The sound fragments were a randomly determined syllable from the previously presented sentence and a random syllable from all other sentences. Participants’ task was to indicate via a button press which of the two sound fragments was part of the previous sentence. For the word task, two words were displayed on the screen after each trial (a random word from the just presented sentence and one random word from all other sentences excluding ‘de’ and ‘en’), and participants needed to indicate which of the two words was part of the sentence before. For the word-combination task, participants were presented with two word pairs on the screen. Each of the four words was part of the just presented sentence, but only one of the pairs was in the correct order. Participants needed to indicate which of the two pairs was presented in the sentence before. Presented options for the sentence condition were always a grammatically and semantically plausible combination of words. See Table 1 for an example of the tasks for each condition (sentences and word lists). The three active tasks required participants to focus on the syllabic (syllable task), word (word task), or phrasal (word combination or also called phrasal task) timescales. Note that different trials within a task were not matched for task difficulty. For example, in the syllable task syllables that make a word are much easier to recognize than syllables that do not make a word. Additionally, trials pertaining to the beginning of the sentence are more difficult than ones related to the end of the sentence due to recency effects.
 
-## Procedure
+### Procedure
 
 At the beginning of each trial, participants were instructed to look at a fixation cross presented at the middle of the screen on a grey background. Audio recordings were presented after a random interval between 1.5 and 3 s; 1 s after the end of the audio, the task was presented. For the word and word-combination task, this was the presentation of visual stimuli. For the syllable task, this entailed presenting the sound fragments one after each other (with a delay of 0.5 s in between). For the passive task, this was the instruction to press a button to continue. In total, there were eight blocks (two conditions × four tasks) each lasting about 8 min. The order of the blocks was pseudo-randomized by independently randomizing the order of the tasks and the conditions. For a single participant, we then always presented the same task twice in a row to avoid task-switching costs. As a consequence, condition was always alternated (a possible order of blocks would be: passive-sentence, passive-word list, word-sentence, word-word list, syllable-sentence, syllable-word list, word-combination-sentence, word-combination-word list). Across participants the starting condition was counterbalanced. After the main experiment, an auditory localizer was collected which consisted of listening to 200 ms sinewave and broadband sounds (centred at 0.5, 1, and 2 kHz; for the broadband at a 10% frequency band) at approximately equal loudness. Each sound had a 50 ms linear on and off ramp and was presented for 30 times (with random inter-stimulus interval between 1 and 2 s).
 
 At arrival, participants filled out a screening. Electrodes to monitor eye movements and heart beat were placed (left mastoid was used as ground electrode) at an impedance below 15 kΩ. Participants wore metal free clothes and fitted earmolds on which two of the three head localizers were placed (together with a final head localizer placed at the nasion). They then performed the experiment in the MEG. MEG was recorded using a 275-channel axial gradiometer CTF MEG system at a sampling rate of 1.2 kHz. After every block participants had a break, during which head position was corrected (Stolk et al., 2013). After the session, the headshape was collected using Polhemus digitizer (using as fiducials the nasion and the entrance of the ear canals as positioned with the earmolds). For each participant, an MRI was collected with a 3T Siemens Skyra system using the MPRAGE sequence (1 mm isotropic). Also for the MRI acquisition participants wore the earmolds with vitamin pills to optimize the alignment.
 
-## Behavioural analysis
+### Behavioural analysis
 
 We performed a linear mixed model analysis with fixed factors task (syllable, word, and word combination) and condition (sentence and word list) as implemented by lmer in R4.1.0. The dependent variable was accuracy. First, any outliers were removed (values more extreme than median ± 2.5 IQR). Then, we investigated what the best random model was, including a random intercept or a random slope for one or two of the factors. The models with varying random factors were compared with each other using an analysis of variance. With no significant difference, the model with the lowest number of factors was included (with minimally a random intercept). Finally, lsmeans was used for follow-up tests using the kenward-roger method to calculate the degrees of freedom from the linear mixed model. For significant interactions, we investigated the effect of condition per task. For main effects, we investigated pairwise comparisons. We corrected for multiple comparisons using adjusted Bonferroni corrections unless specified otherwise. For all further reported statistical analyses for the MEG data, we followed the same procedure (except that there was one more level of task, i.e. the passive task). To avoid exploding the amount of comparisons, we a priori decided for any task effects in the MEG analysis to only compare the individual tasks with the phrase task.
 
-## MEG pre-processing
+### MEG pre-processing
 
 First source models from the MRI were made using a surface-based approach in which grid points were defined on the cortical sheet using the automatic segmentation of freesurfer6.0 (Fischl, 2012) in combination with pre-processing tools from the HCP workbench1.3.2 (Glasser et al., 2013) to down-sample the mesh to 4 k vertices per hemisphere. The MRI was co-registered to the MEG using the previously defined fiducials as well as an automatic alignment of the MRI to the Polhemus headshape using the Fieldtrip20211102 software (Oostenveld et al., 2011).
 
 Pre-processing involved epoching the data between −3 and +7.9 s (+3 relative to the longest sentence of 4.9 s) around sentence onset. We applied a dftfilter at 50, 100, and 150 Hz to remove line noise, a Butterworth bandpass filter between 0.6 and 100 Hz, and performed baseline correction (−0.2 to 0 s baseline). Trials with excessive movements or squid jumps were removed via visual inspection (20.1 ± 18.5 trials removed; mean ± standard deviation). Then data were resampled to 300 Hz and we performed ICA decomposition to correct for eye blinks/movement and heart beat artefacts (4.7 ± 0.99 components removed; mean ± standard deviation). Trials with remaining artefacts were removed by visual inspection (11.3 ± 12.4 trials removed; mean ± standard deviation). Then we applied a lcmv filter to transform the data to have single-trial source space representations. A common filter across all trials was calculated using a fixed orientation and a lambda of 5%. We only extracted time courses for our ROI, STG (Friederici, 2011; Park et al., 2015; Fegen et al., 2015; Koelsch et al., 2009), medial temporal gyrus (Pinker and Jackendoff, 2005; Peelle and Davis, 2012; Luo and Poeppel, 2007), and inferior frontal cortex (Ding et al., 2016; Kayser et al., 2015; Har-Shai Yahav and Zion Golumbic, 2021); numbers correspond to label-coding from the aparc parcellations implemented in Freesurfer. These time courses were baseline corrected (−0.2 to 0 s). To reduce computational load and to ensure that we used relevant data within the ROI, we extracted the top 20 PCA components per ROI for all following analyses based on a PCA using the time window of interest (0.5–3.7 s; 0.5 to ensure that all initial evoked responses were not included and 3.7 as it corresponds to the shortest trials). All following analyses were done per ROI. With enough statistical power one would add ROI as a separate factor in the analyses, but unfortunately, we did not have enough power to find a potential three-way interaction (ROI × condition × task). We therefore cannot make strong conclusions about one ROI having a stronger effect than another.
 
-## MI analysis
+### MI analysis
 
 First, we extracted the speech envelopes by following previous procedures (Kaufeld et al., 2020; Keitel et al., 2018; Gross et al., 2013; Ince et al., 2017). The acoustic waveforms (third-order Butterworth filter) were filtered in eight frequency bands (100–8000 Hz) equidistant on the cochlear frequency map (Smith et al., 2002). The absolute of the Hilbert transform was computed, we low passed the data at 100 Hz (third order Butterworth) and then down-sampled to 300 Hz (matching the MEG sampling rate). Then, we averaged across all bands.
 
 MI was calculated between the filtered speech envelopes (using a third-order Butterworth filter) and the filtered MEG data at three different frequency bands corresponding to information content at different linguistic hierarchical levels: phrase (0.8–1.1 Hz), word (1.9–2.8 Hz), and syllable (3.5–5.0 Hz). The frequency bands were extracted based on the rate of the linguistic information in the speech signal. We hypothesized that tracking of relevant information should happen at those respective bands. While in our stimulus set the boundaries of the linguistic levels did not overlap, in natural speech the brain has an even more difficult task as there is no one-to-one match between band and linguistic unit (Obleser et al., 2012). Our main analysis focuses on the phrasal band, as that is where our previous study found the strongest effects (Kaufeld et al., 2020), but for completeness we also report on the other bands. MI was estimated after the evoked response (0.5 s) until the end of the stimulus at five different delays (60, 80, 100, 120, and 140 ms) and averaged across delays between the phase estimations of the envelopes and MEG data. A single MI value was generated per condition per ROI by concatenating all trials before calculating the MI (MEG and speech). Statistical analysis was performed per ROI per frequency band.
 
-## Power analysis
+### Power analysis
 
 Power analysis was performed to compare the MI results with absolute power changes. On the one hand, we did this analysis as MI differences could be a consequence of signal-to-noise differences in the original data (which would be reflected in power effects). On the other hand, generic delta power has been associated with language processing (Meyer, 2018; Kazanina and Tavano, 2021). Therefore, we choose to analyse classical frequency bands instead of the stimulus informed ones (as used in the MI analysis) in order to compare these results with other studies. Moreover, as this analysis does not measure tracking to the stimulus (like the MI analysis does) it did not seem appropriate to match the frequency content to the stimulus content. We first extracted the time–frequency representation for all conditions and ROIs separately. To do so, we performed a wavelet analysis with a width of 4, with a frequency of interest between 1 and 30 (step size of 1) and time of interest between −0.2 and 3.7 s (step size of 0.05 s). We extracted the logarithm of the power and baseline corrected the data in the frequency domain using a −0.3 and −0.1 s window. For four different frequency bands (delta: 0.5–3.0 Hz; theta: 3.0–8.0 Hz; alpha: 8.0–15.0 Hz; beta: 15.0–25.0 Hz) we extracted the mean power in the 0.5–3.7 s time window per task, condition, and ROI. Again, our main analysis focuses on the delta band, but we also report on the other bands for completeness. For each ROI, we performed the statistical analysis on power as described in the behavioural analysis.
 
-## Connectivity analysis
+### Connectivity analysis
 
 For the connectivity analysis, we repeated all pre-processing as in the power analysis, but separately for the left and right hemispheres (as we did not expect connections for PCA across hemispheres), after which we averaged the connectivity measure across hemispheres (using the Fourier spectrum and not the power spectrum). We used the debiased WPLI for our connectivity measure, which ensures that no zero-lag phase differences are included in the estimation (avoiding effects due to volume conduction). All connections between the three ROIs were investigated for the mean WPLI for the four different frequency bands also used in the power analysis in the 0.5–3.7 s time window. Also in this case, the same statistical analysis was applied. Note that not for all frequency bands we found a clear peak in the power signal (only clearly so for the alpha band), this indicates that the connectivity likely does not reflect endogenous oscillatory activity (Donoghue et al., 2020), but might still pertain to connected regions operating at those timescales.
 
-## MEG–behavioural performance analysis
+### MEG–behavioural performance analysis
 
 To investigate the relation between the MEG measures and the behavioural performance we repeated the analyses (MI, power, and connectivity) but added accuracy as a factor (together with the interactions with the task and condition factor). As there is no accuracy for the passive task, we removed this task from the analysis. We then followed the same analyse steps as before. Since we reduced our degree of freedom, we could however only create random intercept and not random slope models.
 
-## Power control analysis
+### Power control analysis
 
 The reliability of phase estimations is influenced by the signal-to-noise ratio of the signal (Zar, 1998). As a consequence, trials with generally high power have more reliable phase estimations compared to low power trials. This could influence any measure relying on this phase estimation, such as MI and connectivity (Ince et al., 2017; Bastos and Schoffelen, 2015). It is therefore possible that power differences between conditions lead to differences between connectivity or MI. To ensure that our reported effects are not due to signal-to-noise effects, we controlled any significant power difference between conditions for the connectivity and MI analysis. To do this, we iteratively removed the highest and lowest power trials between the mean highest and mean lowest of the two relevant conditions (either collapsing trials across tasks/conditions or using individual conditions; for the MI analysis we used power estimated within its respective frequency band). We repeated this until the original condition with the highest power had lower power than the other condition. Then we repeated the analysis and statistics, investigating if the effect of interest was still significant. The control analysis is reported along the main MI and connectivity sections.
 
-## Other control analysis
+### Other control analysis
 
 We performed two final control analyses. Firstly, we investigated if age had an influence on any of our primary outcome measures. Secondly, we repeated the analyses using either 10 or 30 PCA components instead of the original 20 components. These controls ensure a robustness check of all the reported results. Note that this study was not intended to investigate age related differences. We therefore only report on interaction effect with our task and condition variables. Any main effect of age is difficult to interpret as it is unclear if the effect pertains to overall age-related differences (or anatomical variation leading to differential MEG responses) or language-related age differences.

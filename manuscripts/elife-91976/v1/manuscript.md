@@ -15,22 +15,34 @@
 
 ### Affiliations
 
-1. https://ror.org/02y72wh86 Department of Biomedical and Molecular Sciences, Queen’s University Kingston Canada
-2. https://ror.org/0316ej306 Department of Earth and Planetary Sciences, The Weizmann Institute of Science Rehovot Israel
-3. https://ror.org/03qxff017 The Robert H. Smith Faculty of Agriculture, Food and Environment, Institute of Biochemistry, Food Science, and Nutrition, The Hebrew University of Jerusalem Rehovot Israel
-4. https://ror.org/03v76x132 Department of Microbial Pathogenesis, Yale University School of Medicine New Haven United States
+1. Department of Biomedical and Molecular Sciences, Queen’s University Kingston Canada ([ROR:02y72wh86](https://ror.org/02y72wh86))
+2. Department of Earth and Planetary Sciences, The Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
+3. The Robert H. Smith Faculty of Agriculture, Food and Environment, Institute of Biochemistry, Food Science, and Nutrition, The Hebrew University of Jerusalem Rehovot Israel ([ROR:03qxff017](https://ror.org/03qxff017))
+4. Department of Microbial Pathogenesis, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
 
 † Corresponding author
 
 ## Abstract
 
-In nature, frost can form at a few degrees below 0 °C. However, this process requires the assembly of tens of thousands of ice-like water molecules that align together to initiate freezing at these relatively high temperatures. Water ordering on this scale is mediated by the ice nucleation proteins (INPs) of common environmental bacteria like Pseudomonas syringae and Pseudomonas borealis . However, individually, these 100 kDa proteins are too small to organize enough water molecules for frost formation, and it is not known how giant, megadalton-sized multimers, which are crucial for ice nucleation at high sub-zero temperatures, form. The ability of multimers to self-assemble was suggested when the transfer of an INP gene into Escherichia coli led to efficient ice nucleation. Here, we demonstrate that a positively charged subdomain at the C-terminal end of the central β-solenoid of the INP is crucial for multimerization. Truncation, relocation, or change of the charge of this subdomain caused a catastrophic loss of ice nucleation ability. Cryo-electron tomography of the recombinant E. coli showed that the INP multimers form fibres that are ~5 nm across and up to 200 nm long. A model of these fibres as an overlapping series of antiparallel dimers can account for all their known properties and suggests a route to making cell-free ice nucleators for biotechnological applications.
+In nature, frost can form at a few degrees below 0 °C. However, this process requires the assembly of tens of thousands of ice-like water molecules that align together to initiate freezing at these relatively high temperatures. Water ordering on this scale is mediated by the ice nucleation proteins (INPs) of common environmental bacteria like Pseudomonas syringae and Pseudomonas borealis. However, individually, these 100 kDa proteins are too small to organize enough water molecules for frost formation, and it is not known how giant, megadalton-sized multimers, which are crucial for ice nucleation at high sub-zero temperatures, form. The ability of multimers to self-assemble was suggested when the transfer of an INP gene into Escherichia coli led to efficient ice nucleation. Here, we demonstrate that a positively charged subdomain at the C-terminal end of the central β-solenoid of the INP is crucial for multimerization. Truncation, relocation, or change of the charge of this subdomain caused a catastrophic loss of ice nucleation ability. Cryo-electron tomography of the recombinant E. coli showed that the INP multimers form fibres that are ~5 nm across and up to 200 nm long. A model of these fibres as an overlapping series of antiparallel dimers can account for all their known properties and suggests a route to making cell-free ice nucleators for biotechnological applications.
 
 ## Introduction
 
 Ice crystals grow from ice embryos, which are crystalline aggregates of water molecules that spontaneously form (homogeneous nucleation) in pure H2O at approximately −38 °C (Hoose and Möhler, 2012). Ice can arise in nature at much warmer temperatures because various surfaces act as stabilizers of ice embryos (heterogeneous nucleation). Only once an ice embryo reaches a critical number of organized water molecules will it become stable enough to spontaneously grow at elevated temperatures, a process called ice nucleation (Vali et al., 2015). The most active heterogeneous ice nucleators are bacterial ice nucleation proteins (INPs), which can stabilize an ice embryo at temperatures as warm as −2 °C (Lukas et al., 2022). INP-producing bacteria are widespread in the environment where they are responsible for initiating frost (Lindow, 1983) and atmospheric precipitation (Hill et al., 2014). As such, these bacteria play a significant role in the Earth’s hydrological cycle and in agricultural productivity.
 
 As described in the literature, INPs are large proteins (up to ~150 kDa) that are thought to form multimers on the surface of the bacteria that express them (Govindarajan and Lindow, 1988; Lindow et al., 1989). AlphaFold predictions have provided some insight into the INP monomer structure (Figure 1A; Forbes et al., 2022). For the INP from Pseudomonas borealis (PbINP) AlphaFold predicted a folded domain of ~100 residues at the N terminus followed by a flexible linker of ~50 residues, a repetitive domain composed of 65 16-residue tandem repeats, and a small 41-residue C-terminal capping structure (supported by model confidence metrics, Figure 1—figure supplement 1). The predicted fold of the repetitive domain agrees with some previous homology-based models in which each 16-residue repeat forms a single coil of a β-solenoid structure (Graether and Jia, 2001; Garnham et al., 2011b).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/91976/elife-91976-fig1-v1.jpg)
+
+**Figure 1.:** (A) AlphaFold2 model of PbINP coloured by domain. Purple: N-terminal domain, pink: flexible linker, green: water-organizing (WO) coils, blue: arginine-rich (R) coils, yellow: C-terminal cap. The inset shows a cross-section through the solenoid coil. (B) 16-residue tandem repeat forming one coil from the β-solenoid with positions numbered from N- to C-terminus. (C) The number of repeats in the WO- and R-coils for each unique sequence. PbINP is included and indicated in orange. n = 121. (D) Sequence logos constructed from each 16-residue repeat present in the dataset.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91976/elife-91976-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Predicted location dependent difference test (pLDDT) shows the residue-by-residue confidence of the model generated by AlphaFold. Low values may indicate low confidence or intrinsic disorder. (B) Predicted aligned error (pAE) plots indicate the confidence in the relative orientation of the models. The x- and y-axes indicate residue position of the model, with low (blue) values indicating high confidence and high (red) indicating low. Rigid domains often appear as squares along the diagonal axis.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91976/elife-91976-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Ten known ice nucleation proteins (INPs) from literature were used to generate a consensus sequence for WO-coils which was then used as a query in a BLAST against NCBI’s non-redundant protein database to identify INPs. NCBI E-Utils were used to generate a dataset using only genes from long-read DNA sequencing data.
 
 In INP sequences, most coils of the β-solenoid contain putative water-organizing motifs like Thr–Xaa–Thr (TxT) that occupy the same position in each coil to form long parallel arrays, and where Xaa is an inward pointing amino acid residue (Figure 1B). Shorter versions of similar arrays have convergently evolved in insects to form the ice-binding sites of several hyperactive antifreeze proteins (AFPs) (Graether et al., 2000; Graham et al., 2007; Kristiansen et al., 2011). These arrays are thought to organize sufficient ice-like water molecules on their surface to facilitate AFP adsorption to the ice crystal surface (Garnham et al., 2011a). In the much longer INP arrays, which further form multimers, the organizing effect on nearby water molecules is thought to increase to the point where ice embryos can be sufficiently stabilized to cause spontaneous growth of ice at high sub-zero temperatures. Consistent with this idea, we recently demonstrated that interrupting these water-organizing motifs decreased the ice nucleation temperature by the same amount as extensive deletions of the water-organizing coils (Forbes et al., 2022).
 
@@ -44,13 +56,13 @@ Here, we have studied the role of the R-coils in INPs through a series of mutati
 
 ## Results
 
-## Bioinformatic analysis reveals conservation in the number of R-coils across all INPs
+### Bioinformatic analysis reveals conservation in the number of R-coils across all INPs
 
 A bioinformatic analysis of bacterial INPs was undertaken to identify their variations in size and sequence to understand what is common to all that could guide experiments to probe higher order structure and help develop a collective model of the INP multimer. In PbINP, there are 53 WO-coils and 12 R-coils (Figure 1A), each composed of 16 residues (Figure 1B). To determine whether this ratio of coil types is consistent across known INPs, we analysed INP and INP-like solenoid sequences in the NCBI’s non-redundant protein (nr) database. The long tandem arrays of coils in INPs make them prone to mis-assembly when using short-read DNA sequencing (Wick et al., 2017) so we opted to limit our dataset to sequences obtained by long-read technologies (Oxford Nanopore and Pacific Biosciences SMRT sequencing). From this bioinformatics study, it is apparent that the number of WO-coils varies considerably from over 70 coils to around 30, with a median length of 58 coils (Figure 1C). In contrast, the length of the R-coil region is much less variable across sequences, with 107 of 120 sequences containing either 10 or 12 R-coils (Figure 1C). The stark difference in length variation between the numbers of WO-coils and the R-coils supports the hypothesis that these two regions have different functions.
 
 The differences observed between the PbINP WO-coil consensus sequence and the R-coil consensus sequence, which include the loss of putative WO motifs in the former and the appearance of basic residues at position 12 in the latter, are consistent across the entire dataset (Figure 1D). This is apparent from the sequence logos comparing them. Also worth noting is the similarity of the sequence logos for WO- and R-coils in PbINP (Forbes et al., 2022) with those based on 120 sequences from the database.
 
-## Incremental replacement of R-coils with WO-coils severely diminishes ice nucleating activity
+### Incremental replacement of R-coils with WO-coils severely diminishes ice nucleating activity
 
 Given the remarkable conservation of the R-coil count compared to the variability of the WO-coil numbers, we measured the functional impact of shortening the R-coil region. We designed mutants in which the R-coils were incrementally replaced with WO-coils, shortening the R-coil subdomain from 12 to 10, 8, 6, 4, or 1 coil(s), while retaining the same overall length as wild-type PbINP (Figure 2A). To avoid disrupting any potential interaction between the C-terminal cap structure and the R-coils, one R-coil was left in place to produce the 1 R-coil mutant. As previously described these constructs were tagged with GFP as an internal control for INP production, and its addition had no measured effect on ice nucleation activity (Forbes et al., 2022).
 
@@ -60,7 +72,7 @@ Given the remarkable conservation of the R-coil count compared to the variabilit
 
 Ice nucleation assays were performed on intact E. coli expressing PbINP to assess the activity of the incremental replacement mutants. In theory, replacement of R-coils by WO-coils could result in a gain of function as the water-organizing surface increased in area. However, as the number of R-coils was reduced, the nucleation temperature decreased (Figure 2B, C). Replacing two or four R-coils to leave ten or eight in place resulted in a slight loss of activity compared to the wild-type protein (T50 = −9.1 and −10.2 °C, respectively, where T50 is the temperature at which 50% of droplets have frozen, p < 0.001). Reducing the R-coil count to six dramatically decreased the activity (T50 = −35.7 °C). The construct with only four R-coils in place showed only the slightest amount of activity, and activity was entirely lost in the construct containing only one R-coil. Evidently, small decreases in the R-coil region length produce disproportionately large decreases in activity. Halving the length of the R-coils by replacing just six coils reduced ice nucleation activity by 26.9 °C, whereas reducing the WO-coil length in half decreased the T50 by less than 2 °C (Forbes et al., 2022). Since the R-coils mostly lack the motifs required for water- organizing, we attribute the observed changes in nucleation temperature to changes in INP multimer formation.
 
-## The location of the R-coil subdomain is crucial
+### The location of the R-coil subdomain is crucial
 
 In addition to its length, we investigated whether the location of the R-coil subdomain is important for ice nucleation activity. We produced constructs where 11 of the 12 R-coils were relocated to either the N-terminal end of the solenoid or the approximate midpoint of the solenoid (Figure 3A). As before, the C-terminal R-coil was left in place adjacent to the cap structure. We also produced an R-coil deletion construct, where the same 11 R-coils were deleted entirely from the protein.
 
@@ -70,7 +82,7 @@ In addition to its length, we investigated whether the location of the R-coil su
 
 The N-terminal relocation construct displayed markedly lower activity with a T50 = −22.4 °C compared to wild-type PbINP, and the midpoint relocation construct displayed almost no activity (T50 = −36.1 °C), and was indistinguishable in activity from the construct where the R-coils were deleted (Figure 3B).
 
-## Targeted mutations reveal that positively charged residues are important for R-coil function
+### Targeted mutations reveal that positively charged residues are important for R-coil function
 
 Having established the importance of R-coil position and length for high activity, we next investigated the features of this subdomain that are required for its activity. Looking at the charge distribution along the solenoid from N terminus to C terminus (Figure 4A), we noted a switch at the start of the R-coils from an abundance of acidic residues to their replacement by basic residues. To probe the significance of this observation, we mutated all basic residues (R/K/H) in the R-coils to match those found in the same repeat positions of the WO-coils (D/G/E for positions 11 and 12, and S for position 14) (Figure 1D). In total, 17 basic residues – 10 arginine (R), 4 lysine (K), and 3 histidine (H) – were replaced in the R-coils to generate the RKH replacement mutant. The side chains at these positions are predicted by the AlphaFold model to point outward from the solenoid, so these mutations are unlikely to compromise the stability of the solenoid core.
 
@@ -82,7 +94,7 @@ There was a 10.3 °C drop in T50 from wild-type activity after RKH replacement (
 
 In the final mutated PbINP construct in this series, all arginines in the R-coils were replaced by lysines (K-coils). This mutant nucleated ice formation at essentially the same temperature as the wild type (Figure 4B) (p = 0.89), suggesting that positive charges in these locations are more important than side chain geometry.
 
-## Droplet freezing assays show recombinant cell lysate supernatant has ice nucleation activity that is affected by pH
+### Droplet freezing assays show recombinant cell lysate supernatant has ice nucleation activity that is affected by pH
 
 The experiments described above were performed using whole recombinant bacteria rather than extracted INPs. In E. coli, the vast majority of the expressed INP is intracellular (Kassmannhuber et al., 2017). Indeed, with our GFP-tagged constructs, we observe intense green fluorescence in the cytoplasm. To see how important electrostatic interactions were in the multimerization of PbINP as reflected by its ice nucleation activity, it was necessary to lyse the E. coli to change the pH surrounding the INP multimers. After centrifuging the sonicate to remove cell debris and passing the supernatant through a 0.2-μm filter to remove any unbroken cells, the extracts were tested to see how ice nucleation activity is affected by pH between 2.0 and 11.0. The activity of the filtered supernatant was only a few degrees lower than that of whole bacteria (T50 = −9.6 °C) (Figure 5A), which agrees with the results of Kassmannhuber et al., 2020. This indicates that large INP structures are present within the bacterial cytoplasm.
 
@@ -92,7 +104,7 @@ The experiments described above were performed using whole recombinant bacteria 
 
 The effect of pH on Snomax activity has been previously reported (Lukas et al., 2020). However, Snomax is comprised of freeze-dried P. syringae cells in which the INPs are thought to be membrane bound. Our assays on bacterial lysate tested free, cytoplasmic PbINP complexes, producing a similar trend regarding the effect of pH but with somewhat greater loss of activity on the lower end of the optimal range (Figure 5B). Ice nucleation activity decreased by a few degrees below pH 5.0, and by ~8 °C at pH 2.0. The loss of activity in the alkaline buffers up to pH 11.0 was minimal. Similar to the findings of Chao et al., 1994, we did not observe a major change in activity (i.e. ΔT50 > 10 °C) even at the extremes of pH 2.0 and 11.0, suggesting that the mechanism of ice nucleation is not pH-dependent.
 
-## INP activity is remarkably heat resistant
+### INP activity is remarkably heat resistant
 
 Having access to lysate also provided an opportunity to examine the heat stability of the INP complexes. The filtered lysate was heat treated to 60, 70, 80, 90, or 99 °C for 10 min in sealed tubes before being chilled and assayed for ice nucleation activity (Figure 6A). The activity of the 60 °C sample (T50 = −9.9 °C) was nearly identical to the non-treated wild-type control (T50 = −9.6 °C), and the 70 °C sample only displayed a minor loss of activity (T50 = −10.2 °C). From 80 to 99 °C the activity incrementally decreased (T50 = −11.3, −12.7, and −14.6 °C, respectively), but the activity loss never exceeded 6 °C. Indeed, the heat resistance of the INP complex is remarkable. The C-terminal GFP tag provided an internal control for the effectiveness of heat treatment, as GFP denatures at around 73 °C (Melnik et al., 2011). The green colour of the bacteria was robust at 65 °C and with very few exceptions, gone at 75 °C (Figure 6B). There was no fluorescence at 90 °C.
 
@@ -102,7 +114,7 @@ Having access to lysate also provided an opportunity to examine the heat stabili
 
 To assess what role the WO-coils play in multimer stability, we also assayed the lysate of a construct from our previous study in which repeats 16–47 (residues 411–923) of the solenoid had been deleted, leaving 32 coils (Forbes et al., 2022). The overall freezing profile remained the same, indicating that this construct is also extremely resistant to heat denaturation, with each temperature sample freezing at slightly lower temperatures than their full-length counterparts (Figure 6A). While the Δ411–923 construct had slightly lower overall activity, its heat resistance was not affected by the truncation, suggesting that the R-coil and C-terminal cap subdomains are mainly responsible for multimer stability.
 
-## The β-solenoid of INPs is stabilized by a capping structure at the C terminus, but not at the N terminus
+### The β-solenoid of INPs is stabilized by a capping structure at the C terminus, but not at the N terminus
 
 There is a clear C-terminal capping structure in the AlphaFold model (Figure 1A), but a possible N-terminal cap was more nebulous. Most protein solenoids are N- and/or C-terminally capped to help maintain the fold and/or prevent end-to-end associations (Kajava and Steven, 2006b). Looking at the N-terminal sequence, we tested if any part of the extended linker region serves as an N-terminal capping motif. To investigate this, we made a series of incremental N-terminal deletions starting at residues Asp150 (Truncation 1), Gln159 (Truncation 2), and Gln175 (Truncation 3) (Figure 7A). Truncation 1 lacked most of the N-terminal domain, leaving the last few residues of the unstructured linker. Truncation 2 removed those linker residues so that the putative cap (a single β-strand) was located at the very N-terminal end of the protein. Truncation 3 removed the β-strand along with the rest of the first coil of the solenoid. When tested, there was no difference between the activities of the three truncations and the wild type (p = 0.82) (Figure 7D). This result is in line with those from Kassmannhuber et al., 2020, which showed that deletion of the N-terminal domain does not significantly affect ice nucleation activity.
 
@@ -112,9 +124,17 @@ There is a clear C-terminal capping structure in the AlphaFold model (Figure 1A)
 
 Previously, we demonstrated that the C-terminal cap is essential for ice nucleation activity (Forbes et al., 2022). Bioinformatic analysis showed a high degree of conservation in the C-terminal cap residues (Figure 7B). Rather than deleting the cap, we made targeted mutations: F1204D, D1208L, and Y1230D, to disrupt the structure predicted by AlphaFold. Residues for mutations were chosen based on the putative key roles of those residues in the AlphaFold model. For an enhanced effect of the mutations hydrophobic residues were replaced with charged ones and vice versa. F1204 sits atop the final R-coil to cover its hydrophobic core. D1208 helps to maintain a tight loop through strategic hydrogen bonds, and Y1230 fills a gap in the surface of the cap (Figure 7C). When comparing these selections to the aligned C-terminal cap sequences, we see that all three residues are highly conserved. The resulting triple mutant displayed greatly reduced activity (T50 = −27.8 °C), which helps validate the AlphaFold-predicted structure of the cap and its importance to the stability of the solenoid it covers.
 
-## Cryo-ET reveals INPs multimers form bundled fibres in recombinant cells
+### Cryo-ET reveals INPs multimers form bundled fibres in recombinant cells
 
 The idea that INPs must assemble into larger structures to be effective at ice nucleation has persisted since their discovery (Govindarajan and Lindow, 1988). In the interim the resolving power of cryo-EM has immensely improved. Here, we elected to use cryo-ET to view the INP multimers in situ and avoid any perturbation of their superstructure during isolation. E. coli cells recombinantly overexpressing INPs were plunge frozen and milled into ~150 nm thick lamella using cryo-FIB (Figure 8A). Grids containing lamellae were transferred into either a 200- or a 300-kV transmission electron microscope for imaging under cryogenic conditions. Many E. coli cells were observed within the low-magnification cryo-TEM overview image of the lamella (Figure 8B). Tilt series were collected near individual E. coli cells, and 3D tomograms were reconstructed to reveal cellular and extracellular features. Strikingly, E. coli cells overproducing wild-type INPs appear to be lysed after 3 days of cold acclimation at 4 °C and contain clusters of fibres in the cytoplasm (Figure 8C–E, tomograms in Figure 8—videos 1 and 2). Individual fibres are up to a few hundred nanometres in length but only a few nanometres in width. Intriguingly, these fibre clusters were not observed in E. coli that overexpress INP mutants lacking R-coils, and the cell envelopes stay integral after being cold acclimated over the same period as those of wild-type INP-producing E. coli (Figure 8—figure supplement 1).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/91976/elife-91976-fig8-v1.jpg)
+
+**Figure 8.:** (A) Ion-beam image of a thin lamella containing E. coli cells expressing INP obtained from cryo-FIB milling. (B) Zoomed-in view of a cryo-transmission electron microscopy (TEM) image of the lamella in (A). Boxes with dashed lines indicate areas where tilt series were collected. (C, D) Snapshots from 3D cryo-tomograms reconstructed from tilt series collected in the boxed regions in (B) showing striking fibrous bundles (yellow arrowheads). The E. coli cell envelopes are indicated with thick dash lines. (E) Further examples of the fibrous bundles produced by INP-expressing E. coli. Size markers in (A) is 10 µm, in (B) is 2 µm, and in (C), (D), and (E) are 100 nm, respectively.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/91976/elife-91976-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A–D) Representative snapshots from 3D cryo-tomograms showing cytoplasmic and extracellular features of various E. coli cells overexpressing an INP mutant in which all but the C-terminal R-coil have been replaced by WO-coils. All four images are in the same scale and the scale bar represents 100 nm.
 
 ## Discussion
 
@@ -128,13 +148,17 @@ In the absence of detailed structural information, we have probed the properties
 
 The minimal effects of pH change on native INP activity are reminiscent of the insensitivity of antifreeze activity to pH (Chao et al., 1994; Liu et al., 2016). The ice-binding sites of AFPs are typically devoid of charged residues and there should be no effect of pH on the ability of these sites to organize ice-like waters. The same can be said for the water-organizing motifs in INPs. We noted the extraordinary heat stability of INP multimers. Even after heating to 99 °C for 10 min, the bacterial extracts only lost 5 °C of ice nucleation activity, whereas the heat-stable internal GFP control was denatured at 75 °C. We cannot rule out the possibility that the INP multimers were also denatured by heat treatment but could reassemble on cooling.
 
-## Working model of the INP multimer
+### Working model of the INP multimer
 
 The fundamental unit of the INP multimer in this hypothetical model is a dimer (Figure 9). The dimerization interface involves an interaction of the stacked tyrosine ladders from the two INP monomers as previously suggested (Garnham et al., 2011b; Hartmann et al., 2022). However, in this model the INPs are aligned antiparallel to each other (Figure 9B). This orientation is more likely than a parallel alignment since the R-coils and C-terminal cap structure appear to clash when modelled parallel to each other (Figure 9—video 1). The antiparallel dimer would not be a rigid, flat sheet but could hinge at the tyrosine ladder. Another advantage of the antiparallel arrangement is that the two dimer termini are identical, allowing end-to-end linking to form a long fibre.
 
+![Figure 9.](https://cdn.elifesciences.org/articles/91976/elife-91976-fig9-v1.jpg)
+
+**Figure 9.:** (A) A possible assembly of INP solenoids to form long fibres composed of antiparallel INP dimers (indicated by orange and yellow pairs). (B) Dimers are formed along the tyrosine ladder, a previously proposed dimerization interface. They are joined end to end by forming electrostatic interactions between negatively (red) and positively (blue) charged surfaces. All threonines are coloured light green, displaying the arrays of TxT WO motifs. The termini of the INP solenoids are labeled N and C and coloured to match panel A. This illustration uses a manually flattened AlphaFold model of PbINP. (C) Cross-sections of the model at positions indicated in (A). Monomers are rotated approximately 90° to each other and dimerized along their tyrosine ladders (purple). Towards their termini, a pair of dimers can be matched by oppositely charged electrostatic surfaces (teal).
+
 The end-to-end dimer associations involve electrostatic interactions between the basic side of the R-coils and the acidic side of the WO-coils. If these interactions can also form with the proteins at an approximate right angle, it should be possible for end-linked dimers to form a compact fibre (Figure 9B) with a diameter close to that seen by cryo-ET (Figure 8). The antiparallel arrangement of the dimers gives a sidedness to the multimer where TxT motifs (light green) face outwards and inwards in an alternating pattern with SxT motifs (on the underside) in the opposite phase (Figure 9B). Cross-sectional views of the INP fibre (Figure 9C) show the interactions between the negatively (red) and positively (blue) charged regions where the dimers overlap to form a ring of four solenoids, and here and elsewhere the interaction of the two monomers through the tyrosine ladder pairing.
 
-## Working model of the INP multimer is consistent with the properties of INPs and their multimers
+### Working model of the INP multimer is consistent with the properties of INPs and their multimers
 
 We previously showed that the length of the WO-coil region can be shortened by ~60% with only a few degrees Celsius decrease in ice nucleation temperature (Forbes et al., 2022). The working model can accommodate these huge deletions simply by closing the gap between the dimers. For example, the deletion of 32 WO-coils, leaving just 21 along with the 12 R-coils, retains all the molecular interactions seen in the longer fibre but with fewer stacked tyrosine interactions. This can help explain the heat stability of the INP multimers and the minimal difference (2–3 °C) in activity loss between full-length PbINP with 65 coils and the truncated version with 33 coils (Figure 6). Similarly, longer WO-coil regions can be accommodated by lengthening the gap. This can explain the wide range of WO-coil lengths seen in nature (Figure 2). They all fit in the same model.
 
@@ -152,15 +176,15 @@ Solving the structure of the INP fibres at atomic detail will be the key to unde
 
 ## Methods
 
-## Materials availability statement
+### Materials availability statement
 
 Newly designed genes are all modifications of the INP found in Pseudomonas borealis (PbINP) (GenBank accession: EU573998). Their design and construction are described below.
 
-## AlphaFold prediction
+### AlphaFold prediction
 
 The AlphaFold model for PbINP was generated by Forbes et al. as described (Forbes et al., 2022).
 
-## Bioinformatic analysis of INPs
+### Bioinformatic analysis of INPs
 
 NCBI’s BLAST was accessed using the BioPython library v1.81 (Cock et al., 2009). The consensus sequence for the 16-residue coil ‘AGYGSTQTAGEDSSLT’ was used as the query against the non-redundant protein database. The PAM30 scoring matrix was used due to the short query.
 
@@ -168,7 +192,7 @@ Quality control (QC) was performed using a custom Python script, making use of B
 
 Sequence logos were made using the Logomaker package v0.8 (Tareen and Kinney, 2019). Alignment of C-terminal cap sequences was performed using JalView software v2.11.2.6 (Waterhouse et al., 2009).
 
-## Synthesis of PbINP genes
+### Synthesis of PbINP genes
 
 Experiments for this project used a synthetic PbINP gene previously developed by our group. This codon-optimized gene encodes the P. borealis INP gene (GenBank accession: EU573998). Additionally, the DNA sequence for enhanced green fluorescent protein (eGFP) (GenBank accession: AAB02572) was fused to the 3′-end of the PbINP gene using a hexanucleotide encoding two linker residues (Asn–Ser). More details about the PbINP-eGFP sequence are provided in Forbes et al., 2022.
 
@@ -180,19 +204,19 @@ The R-coils were either relocated within the protein or deleted (Figure 3A), whi
 
 Targeted mutations were introduced to the R-coil region gene to produce four additional constructs (Figure 4A). For the first construct (‘RKH replace‘ in Figure 4A), any positively charged residues (Arg, Lys, and His) in positions 11, 12, or 14 in the R-coils were replaced with residues commonly found in those locations in the WO-coils (Asp, Glu, and Gly for positions 11 and 12, Ser for position 14). The second construct (‘Y-extend’ in Figure 4A) extends the stacked tyrosine ladder present at position 3 of the coils through seven additional coils towards the C terminus of the solenoid. The third construct (‘RKH + Y-extend’ in Figure 4A) is a combination of both mutants. The fourth construct (‘K-coils’ in Figure 4A) converted every Arg residue in the R-coil section to a Lys residue.
 
-## Protein expression in E. coli
+### Protein expression in E. coli
 
 Each PbINP construct was transformed into the ArcticExpress strain of E. coli (Agilent Technologies, Catalog #230192), since its expression of two cold-adapted chaperones, Cpn10 and Cpn60, promotes the correct folding of proteins at low temperatures (Belval et al., 2015). Transformation and induction with isopropyl ß-D-1-thiogalactopyranoside (IPTG) were performed according to the supplier’s instructions. Cells expressed at 10 °C for 24 hr post-induction. The eGFP tag allowed expression to be confirmed using fluorescence microscopy (Forbes et al., 2022).
 
-## Ice nucleation assays by WISDOM
+### Ice nucleation assays by WISDOM
 
 Constructs were assayed on WISDOM (WeIzmann Supercooled Droplets Observation on a Microarray) (Reicher et al., 2018) in a similar way as described in Forbes et al., 2022.
 
-## Ice nucleation assays by nanoliter osmometer
+### Ice nucleation assays by nanoliter osmometer
 
 Ice nucleation activity was quantified using a droplet freezing assay protocol (Lee et al., 2023) that makes use of a LabVIEW-operated nanoliter osmometer (Micro-Ice, Israel) (Braslavsky and Drori, 2013). Briefly: Following induction and cold incubation, nanoliter-sized droplets of liquid cultures were pipetted into oil-filled wells resting on a cold stage. The temperature of the cold stage was lowered at a rate of 1 °C/min while a video recording was taken of the sample grid. Freezing was characterized by a distinct change in droplet appearance. After assay completion, the videos were analysed to record the temperatures of all freezing events. The fraction of frozen droplets (fice) as a function of temperature was plotted, generating ice nucleation curves for each sample. This apparatus could not reach temperatures as low as those achieved on WISDOM, but results are in agreement between the two approaches (Figure 2B).
 
-## Heat treatment and pH
+### Heat treatment and pH
 
 To obtain cell lysates, E. coli cultures were centrifuged at 3200 × g for 30 min post-induction. Cell pellets were then resuspended in a lysis buffer of 50 mM Tris–HCl, 150 mM NaCl, containing Pierce Protease Inhibitor (Thermo Scientific, Canada) before sonication at 70% amplitude for 30 s rounds. Lysate was centrifuged at 31,000 × g and the resulting supernatant was passed through a 0.2-μm filter.
 
@@ -200,18 +224,18 @@ For heat treatment, filtered lysate in sealed Eppendorf tubes was heated at 60, 
 
 For the pH experiments, aliquots of filtered lysate were diluted 50-fold in pH-adjusted buffer of 100 mM sodium citrate, 100 mM sodium phosphate, and 100 mM sodium borate following the protocol by Chao et al., 1994. Before assaying, we verified using universal indicator strips that addition of lysate to the buffer mixtures did not meaningfully affect the pH of the final mixtures.
 
-## Preparation of the cryo-EM grids
+### Preparation of the cryo-EM grids
 
 After confirming eGFP-INP expression, the E. coli cultures were incubated at 4 °C for an additional 3 days. The E. coli cells were spun down and resuspended in PBS to an OD600 of ~3. These concentrated E. coli samples were deposited onto freshly glow-discharged QUANTIFOIL holey carbon grids (Electron Microscopy Sciences). The grids were then blotted from the back side with the filter paper for 5 s before being plunge frozen in liquid ethane, using a manual plunger-freezing apparatus as described previously (Liu et al., 2009; Zhao et al., 2013).
 
-## Cryo-FIB milling
+### Cryo-FIB milling
 
 The plunge-frozen grids with E. coli cells were clipped into cryo-FIB AutoGrids and mounted into the specimen shuttle under liquid nitrogen. An Aquilos2 cryo-FIB system (Thermo Fisher Scientific) was used to mill the thick bacterial samples into lamellae of <200 nm in thickness. The milling process was completed using a protocol as previously described (Xiang et al., 2021).
 
-## Cryo-ET data acquisition and tomogram reconstruction
+### Cryo-ET data acquisition and tomogram reconstruction
 
 Grids containing the lamellae obtained from cryo-FIB milling were loaded into either a 300-kV Titan Krios electron microscope (Thermo Fisher Scientific) equipped with a Direct Electron Detector and energy filter (Gatan) or a 200-kV Glacios Electron Microscope at Yale University. The FastTOMO script was used with the SerialEM software to collect tilt series with defocus values of approximately −6 μm (Xu and Xu, 2021), and a cumulative dose of 70 e−/Å covering angles from −48° to 48° (3° tilt step). Images were acquired at ×42,000 magnification with an effective pixel size of 2.148 Å. All recorded images were first drift corrected by MotionCor2 (Zheng et al., 2017), stacked by the software package IMOD (Kremer et al., 1996), and then aligned by IMOD using Pt particles as fiducial markers. TOMO3D was used to generate tomograms by simultaneous iterative reconstruction technique (SIRT) (Agulleiro and Fernandez, 2015). In total, 10 tomograms were reconstructed with TOMO3D for the wild-type INP while 5 tomograms were produced for the R-coil mutant.
 
-## Statistics
+### Statistics
 
 p-values reported were calculated by one-way analysis of variance.

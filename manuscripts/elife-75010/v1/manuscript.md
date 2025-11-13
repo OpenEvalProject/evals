@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Rif1 is a large multifaceted protein involved in various processes of DNA metabolism – from telomere length regulation and replication to double-strand break repair. The mechanistic details of its action, however, are often poorly understood. Here, we report functional characterization of the Rif1 homologue from methylotrophic thermotolerant budding yeast Hansenula polymorpha DL-1. We show that, similar to other yeast species, H. polymorpha Rif1 suppresses telomerase-dependent telomere elongation. We uncover two novel modes of Rif1 recruitment at H. polymorpha telomeres: via direct DNA binding and through the association with the Ku heterodimer. Both of these modes (at least partially) require the intrinsically disordered N-terminal extension – a region of the protein present exclusively in yeast species. We also demonstrate that Rif1 binds Stn1 and promotes its accumulation at telomeres in H. polymorpha .
+Rif1 is a large multifaceted protein involved in various processes of DNA metabolism – from telomere length regulation and replication to double-strand break repair. The mechanistic details of its action, however, are often poorly understood. Here, we report functional characterization of the Rif1 homologue from methylotrophic thermotolerant budding yeast Hansenula polymorpha DL-1. We show that, similar to other yeast species, H. polymorpha Rif1 suppresses telomerase-dependent telomere elongation. We uncover two novel modes of Rif1 recruitment at H. polymorpha telomeres: via direct DNA binding and through the association with the Ku heterodimer. Both of these modes (at least partially) require the intrinsically disordered N-terminal extension – a region of the protein present exclusively in yeast species. We also demonstrate that Rif1 binds Stn1 and promotes its accumulation at telomeres in H. polymorpha.
 
 ## Introduction
 
@@ -37,45 +37,136 @@ Here, we explored the conservation of the telomeric roles of Rif1 protein within
 
 ## Results
 
-## Rif1 protein regulates telomere length in H. polymorpha
+### Rif1 protein regulates telomere length in H. polymorpha
 
 Iterative PSI-BLAST search against NCBI protein database yielded a single plausible H. polymorpha Rif1 homologue: the open reading frame HPODL_04218 (UniProt accession number W1QFB8). Amino acid sequence similarity between ScRif1 and HpRif1 is very low (16% identity); however, alignment of multiple budding yeast homologues revealed several conserved elements within HpRif1 (Figure 1A, Supplementary file 1): the RVxF/SILK motif (residues 277–306), the N-terminal HEAT repeats containing domain (Rif1NTD, residues ~ 310–1000) and the C-terminal domain (Rif1CTD, residues ~ 1475–1521). HpRif1 also contains large potentially disordered regions (residues ~ 1000–1475 and 1–277). The residues located N-terminally to the RVxF/SILK motif we term N-terminal extension or NTE (residues 1–277).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75010/elife-75010-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic illustration of the domain organization of the full length HpRif1 and HA-tagged Rif1 fragments expressed in H. polymorpha. (B) Southern blot analysis of terminal restriction fragments from the indicated mutant strains. Genomic DNA was isolated from the strains after the Nth streak (where N is a number under a lane; each streak is ~20 generations). ‘0’ streak – gDNA was isolated from the colonies on the transformation plate, without additional restreaks. ‘M’ – telomeric DNA containing fragments that served as markers of length (their sizes are indicated on the left of each blot). (C) Viability of the strains with the indicated genotypes was monitored during three serial restreaks on YPD agar plates, the plates were photographed after 2 days growth at 37 °C. (D) ChIP analysis. Chromatin from the indicated strains was immunoprecipitated on anti-HA magnetic beads. DNA was analyzed by qPCR with primers targeting either subtelomere region of the right end of chromosome VII (‘TEL’) or ALA1 gene locus (negative control, ‘ALA1’). The amount of DNA fragments in the IP samples as a percentage of the input DNA was calculated, the % of input of the ‘TEL’ Rif1-HA sample was set to 1. Error bars indicate SD, n = 3. ‘Rif1*-HA’ – the strain expressing the Rif1-HA protein but in a slightly different background (see Materials and methods). (E) Same as (B) but with different strains. (F) Western blot analysis of the total proteins isolated from the indicated strains using antibodies targeting HA epitope (upper panel). Ponceau S-stained membrane (lower panel) served as a loading control.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75010/elife-75010-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic illustration of the leu2 locus on the chromosome I in the WT, intTEL0 and intTEL18 strains. ‘TEL18’ – 18 telomeric repeats, ‘Subtel’ – 304 bp region of the subtelomeric DNA derived from HARS36 (see Materials and methods). Arrows correspond to qPCR primers targeting the WSC3 gene (located right next to the internal telomeric DNA). (B) ChIP analysis. Chromatin from the indicated strains was immunoprecipitated on anti-HA magnetic beads. DNA was analyzed by qPCR with primers targeting internal telomeric repeats/WSC3 gene locus (‘WSC3’), subtelomere region of the right end of chromosome VII (‘TEL’), ALA1 gene locus (negative control, ‘ALA1’) or RPS2 gene locus (negative control, ‘RPS2’). The amount of DNA fragments in the IP samples as a percentage of the input DNA was calculated (% of input). Error bars indicate SD, n = 3. (C) Same as (B) but with Rif1-HA-containing strains.
 
 To test whether the identified HpRif1 homologue is involved in telomere maintenance, we deleted the RIF1 gene and measured telomere length in the mutant strain. We observed markedly elongated telomeres in the Δrif1 strain (Figure 1B). Concomitant deletion of the RAD52 gene did not influence telomere overelongation in the Δrif1 strain, whereas deletion of telomerase RNA gene (TER) led to telomere shortening (Figure 1B). The Δrif1Δter double knock-out strain senesced upon continuous propagation, with no substantial increase in survival compared to the Δter strain (Figure 1C). These observations suggest that the more likely target of Rif1’s inhibition is telomerase, and not the recombination pathway of telomere elongation.
 
 Next, we investigated telomeric localization of HpRif1. We created the RIF1-HA strain expressing HpRif1 protein tagged with hemagglutinin epitope (HA) at the C-terminus. Chromatin immunoprecipitated from this strain via anti-HA antibodies was enriched with telomere proximal fragment ‘TEL’ compared to the internal fragment ‘ALA1’, suggesting that Rif1 localizes at H. polymorpha telomeres in vivo (Figure 1D). Thus, Rif1 is a telomeric protein inhibiting telomerase action in H. polymorpha similar to its S. cerevisiae homologue.
 
-## Involvement of Rap1 in recruitment of Rif1 to telomeres
+### Involvement of Rap1 in recruitment of Rif1 to telomeres
 
 Telomeric localization of ScRif1 is largely dependent on the interaction with ScRap1, and mutation in the Rif1RBM, located within the C-terminal part of the protein, greatly reduce the amount of telomere-bound ScRif1 (Shi et al., 2013). We could not find a similar Rap1-binding motif in the HpRif1 sequence (Supplementary file 1), suggesting that HpRif1 may be recruited at telomeres in a Rap1-independent fashion, or such RBM is located in a different region of the protein. Phenotypic consequences of the ScRif1 loss or removal of the C-terminal domain of ScRap1 are similar, as they both result in the telomerase-dependent telomere overelongation. Telomere elongation in the ∆rif1 strain of H. polymorpha appear to rely exclusively on telomerase action (Figure 1B and C). However, we have previously found that elongation of telomeres in the B1–526 strain (expressing C-terminally truncated Rap1B) is largely Rad52-dependent, providing further indication for a Rap1-independent Rif1 function. If Rap1B is not involved in Rif1 recruitment – then Rif1 should not bind to double stranded telomeric DNA. To test this, we constructed the intTEL18 strain of H. polymorpha by inserting 18 telomeric repeats upstream of the WSC3 gene on the chromosome I (Figure 1—figure supplement 1A). As expected, Rap1B binds telomeric repeats with similar efficiency at the internal locus or at the chromosome end (only ~2 fold difference between WSC3 and TEL signals for the intTEL18 strain, Figure 1—figure supplement 1B). On the contrary, Rif1 association with the internal telomeric repeats is weak and close to the background levels (ChIP WSC3 signal is ~8 fold lower than TEL, Figure 1—figure supplement 1C). Therefore, we conclude that interaction with Rap1 is not a major determinant of telomeric localization of Rif1 in H. polymorpha.
 
-## NTE aids in recruitment of HpRif1 at telomeres
+### NTE aids in recruitment of HpRif1 at telomeres
 
 In an attempt to identify portions of HpRif1 important for its telomeric localization, we substituted the RIF1 locus with several HA-tagged C-terminal truncation constructs of Rif1. However, the only variant showing robust expression was the 1–264 fragment containing residues from the NTE region of HpRif1. Quite unexpectedly, we found that this Rif1NTE1-264 fragment can be efficiently recruited to telomeres, according to our ChIP experiments (Figure 1D). Moreover, removal of residues 1–264 from HpRif1 (Rif1∆NTE) strongly reduced its ability to associate with telomeric DNA (Figure 1D), and led to telomere elongation (Figure 1E), while having no effect on the accumulation of the protein (Figure 1F). Thus, Rif1NTE1-264 is an important determinant of Rif1 telomeric localization in H. polymorpha.
 
-## Rif1NTE1-264 is intrinsically disordered in H. polymorpha
+### Rif1NTE1-264 is intrinsically disordered in H. polymorpha
 
 Multiple protein sequence alignment of Rif1 homologues from distantly related budding yeasts revealed that N-terminal extensions have no significant similarity (Supplementary file 1), suggesting that Rif1 NTE may not have any conserved folding. Moreover, MetaDisorder prediction (Kozlowski and Bujnicki, 2012) for 1–264 fragment of HpRif1 suggests that it lacks any secondary structure (Figure 2A), that is HpRif1NTE may be unstructured or intrinsically disordered. It is worth noting that during gel-filtration and denaturing gel electrophoresis 28 kDa Rif1NTE1-264 behaves like a protein with higher molecular weight (Figure 2B and C), which is common for many intrinsically disordered proteins (IDPs) (Tompa, 2002). To directly examine the Rif1NTE1-264 structure we applied biophysical methods. Circular dichroism spectra of Rif1NTE1-264 recorded at different temperatures demonstrated that it contains no significant α-helical or β-strand secondary structural elements over this temperature range, as judged by the absence of well-defined peaks in the 215–230 nm region (Figure 2D). The isoelliptical point near 210 nm is indicative of the equilibrium between left-handed PPII and truly unordered conformation, which has been often observed in CD spectra of IDPs (Bienkiewicz et al., 2000). We also recorded two-dimensional 1H-15N HSQC NMR spectrum of 15N-labeled Rif1NTE1-264. Narrow chemical shift dispersion of amide protons (7,8–8,6 ppm) in the spectrum confirms that Rif1NTE1-264 is intrinsically disordered (Figure 2E).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/75010/elife-75010-fig2-v1.jpg)
 
-**Figure 2.:** (A) Disorder prediction by Metadisorder (Kozlowski and Bujnicki, 2012) for 1–264 fragment of HpRif1 using three different combinations of algorythms: MetaDisorder (black), MetaDisorderMD (purple), MetaDisorderMD2 (blue). All residues with the disorder probability over 0.5 are considered to be disordered. (B) An aliquot of the purified recombinant Rif1NTE1-264 was analyzed by SDS-PAGE and Coomassie staining. (C) Profiles of size-exclusion chromatography of the mixture of the standard proteins (upper profile) and the recombinant Rif1NTE1-264 (lower profile). (D) Circular dichroism spectra of the Rif1NTE1-264 recorded at 5 °C (purple), 15 °C (blue), 25 °C (green), 35 °C (yellow), and 50 °C (red). (E) Two-dimensional 1H-15N HSQC NMR spectrum of 15N-labeled Rif1NTE1-264 recorded at 25 °C.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Disorder prediction by Metadisorder (Kozlowski and Bujnicki, 2012) for 1–264 fragment of HpRif1 using three different combinations of algorythms: MetaDisorder (black), MetaDisorderMD (purple), MetaDisorderMD2 (blue). All residues with the disorder probability over 0.5 are considered to be disordered. (B) An aliquot of the purified recombinant Rif1NTE1-264 was analyzed by SDS-PAGE and Coomassie staining. (C) Profiles of size-exclusion chromatography of the mixture of the standard proteins (upper profile) and the recombinant Rif1NTE1-264 (lower profile). (D) Circular dichroism spectra of the Rif1NTE1-264 recorded at 5 °C (purple), 15 °C (blue), 25 °C (green), 35 °C (yellow), and 50 °C (red). (E) Two-dimensional 1H-15N HSQC NMR spectrum of 15N-labeled Rif1NTE1-264 recorded at 25 °C.
 
-## Two ‘clusters’ within Rif1NTE are important for DNA binding in vitro and promote telomeric localization in vivo
+### Two ‘clusters’ within Rif1NTE are important for DNA binding in vitro and promote telomeric localization in vivo
 
 DNA binding by Rif1 has been demonstrated in several species (including mammals, fission, and budding yeasts; Kanoh et al., 2015; Mattarocci et al., 2017; Moriyama et al., 2018; Sukackaite et al., 2014; Xu et al., 2010). We decided to test whether Rif1-DNA interaction is important for its telomeric localization in H. polymorpha. We divided HpRif1 into several parts (Figure 3A) and expressed them as 6His-S-tagged recombinant proteins in E. coli. After affinity chromatography on Ni-NTA resin, we obtained protein preparations significantly enriched with the HpRif1 fragments (Figure 3B). We analyzed the ability of these fragments to interact with ss- and ds-DNA oligonucleotides (FAM-Tel4(G) and FAM-Tel4(GC), respectively) comprised of four telomeric repeats using EMSA. We found that only two fragments (both containing amino acids 1–264 of HpRif1) could bind telomeric DNA (both single- and double-stranded, Figure 3C). Thus, HpRif1 contains a DNA-binding domain at its N-terminus.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75010/elife-75010-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic illustration of the 6His-S-tagged Rif1 fragments expressed in E. coli and used in EMSA assays. (B) Aliquots of the Ni-NTA purified fragments were analyzed by SDS- PAGE and Coomassie staining. “M” – protein weight marker. (C) 5 μM of the indicated 6His-S-tagged HpRif1 fragments were subjected to the electrophoretic mobility shift assay, using 0.5 μM of either ss- (Tel4(G)) or ds- (Tel4(GC)) DNA oligonucleotide comprising four telomeric repeats as a probe. ‘–’ – no protein control. Positions of the free DNA and protein/DNA complexes are indicated by arrows. (D) Quantification of the titration EMSA experiment (two replicates) with increasing concentration of recombinant (tag-free) Rif1NTE1-264 (0, 1, 3, 10, 30, 100, 300, 1000, 3000, 10,000 nM) and 30 nM FAM-Tel4(G) (black circles) or FAM-Tel4(GC) (black squares) as probes (gels are shown in Figure 3—figure supplement 1A). The fits into the ‘Specific binding with Hill slope’ model are shown in dark red (FAM-Tel4(G) – solid curves; FAM-Tel4(GC) – dashed curves). The best-fit values for Kd apparent and Hill coefficient are shown. (E) Quantification of the competition EMSA experiment (the correspondent gels are shown in Figure 3—figure supplement 1B) with 30 nM FAM-Tel4(G), 1 μM (tag-free) Rif1NTE1-264 and increasing concentration of competitor DNA oligonucleotides (0.1, 0.3, 1, 3, 10, 30 μM). The sequences of the competitors are in Table 1. We note that competition with the Tel4(C) oligo may be difficult to interpret since it may first titrate out the FAM-Tel4(G) probe.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75010/elife-75010-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The titration EMSA experiment with increasing concentration of recombinant (tag-free) Rif1NTE1-264 (0, 1, 3, 10, 30, 100, 300, 1000, 3000, 10,000 nM) and 30 nM FAM-Tel4(G) (upper gel) or FAM-Tel4(GC) (lower gel) as probes. (B) Competition EMSA with 30 nM FAM-Tel4(G), 1 μM (tag-free) Rif1NTE1-264 and increasing concentration of the indicated competitor DNA oligonucleotides (0.1, 0.3, 1, 3, 10, 30 μM).
+
 The titration experiments revealed that affinities for telomeric ssDNA and dsDNA are very close (Kdapp ~ 240 nM for FAM-Tel4(G), and Kdapp ~ 430 nM for FAM-Tel4(GC)) in our experimental conditions (Figure 3D, Figure 3—figure supplement 1A). The competition EMSA confirmed that Rif1NTE1-264 poorly differentiates between Tel4(G), Tel4(C) (C-rich telomeric strand) and Tel4(GC) oligonucleotides (Figure 3E, Figure 3—figure supplement 1B). However, it also revealed that Rif1NTE1-264 has some preference towards telomeric substrates compared with the G/C-poor DNA oligonucleotides (Figure 3E, Figure 3—figure supplement 1B, Table 1).
 
+**Table 1.**
+ Oligonucleotides used in the EMSA experiments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Oligo name</th>
+      <th>Sequence (5'–3')</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tel4(G)</td>
+      <td>GGGTGGCGGGGTGGCGGGGTGGCGGGGTGGCG</td>
+    </tr>
+    <tr>
+      <td>Tel4(C)</td>
+      <td>CGCCACCCCGCCACCCCGCCACCCCGCCACCC</td>
+    </tr>
+    <tr>
+      <td>Tel4(GC)</td>
+      <td>annealed from Tel4(G) and Tel4(C)</td>
+    </tr>
+    <tr>
+      <td>ssrnd1</td>
+      <td>ACGACTCACTGTAGATACGACTCACTGTAGAT</td>
+    </tr>
+    <tr>
+      <td>ssrnd2</td>
+      <td>ATCTACAGTGAGTCGTATCTACAGTGAGTCGT</td>
+    </tr>
+    <tr>
+      <td>ssrnd3</td>
+      <td>AAATCTAGACATGAAAAAAAAAATGTTAGTAATCGAAATCTC</td>
+    </tr>
+    <tr>
+      <td>dsrnd1</td>
+      <td>annealed from ssrnd1 and ssrnd2</td>
+    </tr>
+    <tr>
+      <td>dsrnd2antisense</td>
+      <td>GAGATTTCGATTACTAACATTTTTTTTTTCATGTCTAGATTT</td>
+    </tr>
+    <tr>
+      <td>dsrnd2</td>
+      <td>annealed from ssrnd3 and dsrnd2antisense</td>
+    </tr>
+  </tbody>
+</table>
+
 Next, we sought to identify residues within the N-terminal extension of HpRif1 which are involved in DNA binding, in order to provide evidence for direct interaction between HpRif1 and telomeric DNA in living cells. Lack of conservation and intrinsic disorder of Rif1NTE1-264 precluded us from predicting DNA-contacting residues by comparison with other known DNA-binding proteins. We tested several NTE truncation constructs for their ability to shift telomeric DNA in vitro and found amino acids 101–264 to be dispensable for DNA-binding activity (Figure 4—figure supplement 1). Then we noticed that region 1–100 of HpRif1 contains two similar clusters enriched in positively charged residues (38KRNNRSR44 and 79KRSTNNKSK87, Figure 4A). Lysines and arginines often mediate DNA-protein contacts, and we presumed that these two clusters might be responsible for the observed Rif1NTE1-264-DNA interaction. We expressed and purified three mutant 6His-S-Rif1NTE1-264 proteins (Figure 4A and B): two with four alanine substitutions in either cluster 1 or cluster 2 (38AANNASA44 or 4 A1, 79AASTNNASA87 or 4 A2) and one with eight alanine substitutions (38AANNASA44 /79AASTNNASA87 or 8 A). According to the results of the EMSA experiments, 8ARif1NTE1-264 retained little (if any) ability to bind DNA in vitro (Figure 4C). Thus, we conclude that regions 38–44 and 79–87 are crucial elements of DNA-binding activity of Rif1NTE1-264 in vitro.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/75010/elife-75010-fig4-v1.jpg)
+
+**Figure 4.:** (A) Sequences of the two clusters enriched in positively charged residues in the wild type and mutant versions of HpRif1. (B) Aliquots of the Ni- NTA purified wild type (‘WT’) and mutant 1–264 fragments of HpRif1 were analyzed by SDS-PAGE and Coomassie staining. ‘M’ – protein weight marker. (C) 10 μM of the indicated 6His-S-tagged proteins were subjected to EMSA, using 1 μM of ss- oligonucleotide comprising four telomeric repeats (FAM-Tel4(G)) as a probe. ‘–’ – no protein control. ‘30x’ – 30 μM of the 8 A mutant protein. Positions of the free DNA and protein/DNA complexes are indicated by arrows. (D) ChIP analysis of the indicated strains, same as in Figure 1D; the % of input of the ‘TEL’ Rif1*-HA WT sample was set to 1. Error bars indicate SD, n = 3. (E) Western blot analysis of the total proteins isolated from the indicated strains using antibodies targeting HA epitope (upper panel). Ponceau S-stained membrane (lower panel) served as a loading control. (F) Southern blot analysis as in Figure 1B but with different strains.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75010/elife-75010-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** E. coli as 6His-S- fusions. 10 μM of the indicated fragments were subjected to the EMSA using 1 μM of FAM-Tel4(G) probe. ‘–’ – no protein control. ‘100 x’ – 100 μM of the protein used in the reaction.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75010/elife-75010-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) List of the ScRif1NTD residues potentially involved in the DNA binding (‘ScRif1’) and corresponding residues in the HpRif1 (‘HpRif1’) (alignment in the Supplementary file 1). ScRif1 residues which were confirmed to be important for telomeric function are in bold. Conserved residues are marked by red. * – different HpRif1 residues correspond to ScRif1 K514 according to alignments with different algorithms. (B) Anti-HA western blot analysis (upper panel). Ponceau S-stained membrane (lower panel) served as a loading control. (C) ChIP analysis of the indicated strains, same as in Figure 1D. (D) Southern blot analysis as in Figure 1B but with different strains.
 
 Then effect of the mutations in N-terminal extension of HpRif1 on its telomeric functions in vivo was tested. Even four alanine substitutions (in either motif) reduce HpRif1 association with telomere VII to the background levels (Figure 4D), while having little effect on the protein abundance (Figure 4E). Telomeres in all three mutant strains were elongated, and comparable to the Rif1∆NTE strain (Figure 4F). Collectively, these data demonstrate an important role of regions 38–44 and 79–87 for HpRif1 function and argue that DNA-binding activity of the N-terminal extension helps to recruit HpRif1 to telomeres.
 
 ScRif1 binds DNA in vitro via its crook-shaped structural NTD, however we did not observe DNA binding activity of the HpRif1 fragments corresponding to this region of the protein (Figure 3). This may be explained by the difficulties to correctly fold large protein fragments in a heterologous system, and we tried to find whether DNA-contacting residues from ScRif1 NTD are conserved in HpRif1. According to the published ScRif1NTD/DNA structure, 19 charged residues have the potential to contact the DNA backbone (Mattarocci et al., 2017). Of these 19, only four are conserved in H. polymorpha Rif1 (Figure 4—figure supplement 2A, Supplementary file 1). Double mutant HpRif1K658E/K666E is expressed at considerably lower levels than WT HpRif1, indicating that residues K658 and K666 are important for protein stability (Figure 4—figure supplement 2B). Substitution of the other two conserved amino acids (K504 and R539) for glutamines does not lead to detectable changes in Rif1 telomere occupancy or telomere length (Figure 4—figure supplement 2C,D). Thus, HpRif1 may lack the DNA-binding mode described for ScRif1 or it utilizes different amino acids for such interaction.
 
-## Rif1 telomere localization depends on the Ku heterodimer
+### Rif1 telomere localization depends on the Ku heterodimer
 
 To further investigate the mechanism of Rif1 recruitment, we sought to identify protein-protein interactions in which Rif1 may be involved at H. polymorpha telomeres. Rif1 and several other telomeric proteins were tested in yeast-two-hybrid (Y2H) assay, which revealed two Rif1-interacting partners: Ku80 and Stn1 (Figure 5A). Interestingly, the interaction with Ku80 (but not with Stn1) appears to be mediated through the Rif1NTE1-264 fragment, according to the Y2H analysis (Figure 5A). By testing several deletion constructs of the Rif1NTE1-264, we found that the residues required for Ku80 binding are localized within the 220–240 region of Rif1 (hereafter referred to as Rif1 Ku80-binding motif, or Rif1KBM) (Figure 5—figure supplement 1). This region is fairly conserved in five species closely related to H. polymorpha (Figure 5B, Supplementary file 2), and substitution of either F225 or R230 with a negatively charged glutamic acid residue abolish the Rif1NTE150-264-Ku80 interaction in the Y2H system (Figure 5C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75010/elife-75010-fig5-v1.jpg)
+
+**Figure 5.:** (A) Y2H analysis. AH109 colonies expressing pairs of the indicated proteins (fused to either Gal4-BD (GBD) or Gal4-AD (GAD)); cultures with A600 ~0.5 and four 10-fold serial dilutions were plated on the SC medium lacking amino acids as indicated, and incubated at 30°С for 4 days. “T” – SV40 large T antigen. (B) A fragment of the alignment of the NTE regions from H. polymoprha DL-1 (HANPO) and five of its closest relatives. Full alignment is in Supplementary file 2. (C) Y2H analysis as in (A), 'NTER230’ and ‘NTEF225E’ – 150–264 fragments of Rif1 with the R230E and F225E mutations, respectively. (D) Co-IP analysis. IP on the anti-Flag resin. The amount of tagged proteins in whole cell extracts (WCE) and the IP samples (IP) was monitored by Western blot (WB) using anti-Flag and anti-HA antibodies. The IP experiment was performed in the presence of benzonase nuclease. (E, F) ChIP analysis of the indicated strains, same as in Figure 1D; the % of input of the ‘TEL’ Rif1-HA WT sample was set to 1 (E); the % of input of the ‘TEL’ Rif1NTE1-264-HA WT sample was set to 1 (F). (G) Western blot analysis. Same as in Figure 1F, but with different strains. (H) ChIP analysis of the indicated strains, same as in Figure 1D; Error bars indicate SD, n = 3. ‘6 A’ mutation: 225FQAVVR230/225AAAAAA230. (I, J) Southern blot analysis as in Figure 1B (J) Mean lengths of the brightest TFR bands are: RIF1KU80 476 bp, RIF1∆ku80 399 bp. WT telomere length reported to be ~160 bp (~20 telomeric repeats, Sohn et al., 1999), therefore telomere length is reduced by ~50% in the knockout strain.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75010/elife-75010-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** AH109 colonies expressing pairs of the indicated proteins (fused to either Gal4-BD [GBD] or Gal4-AD [GAD]); cultures with A600 ~0.5 and four 10-fold serial dilutions were plated on the SC medium lacking amino acids as indicated, and incubated at 30°С for 4 days. KBS – Ku80 binding site.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/75010/elife-75010-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Anti-HA ChIP analysis of the indicated strains, same as in Figure 1D. The amount of DNA fragments in the IP samples is represented as a percentage of the input DNA (mean ± SD, n = 3). (B) Southern blot analysis as in Figure 1B but with different strains. Mean lengths of the brightest TFR bands are: WT 474 bp, ∆ku70 430 bp, ∆ku80 433 bp. WT telomere length reported to be ~160 bp (~20 telomeric repeats, Sohn et al., 1999), therefore telomere length is reduced by ~25% in each knockout strain. (C, D) Anti-HA ChIP analysis same as (A) (E) Southern blot analysis (as in Figure 1B) of the strains analyzed by ChIP in (D). Mean length of the brightest TFR bands are: TER 485 bp, ∆ter 420 bp (telomere length is reduced by ~40% in the ∆ter strains compared to TER). (F) RNA co-precipitated from the indicated strains on anti-HA agarose was analyzed by qRT-PCR targeting HpTER or snU1 RNA (HpU1). The amount of RNA fragments in the IP samples is represented as a percentage of the input RNA (mean ± SD, n = 3). (G) Y2H analysis. cultures with A600 ~0.5 and four 10-fold serial dilutions were plated on the SC medium lacking amino acids as indicated, and incubated at 30°С for 4 days.
 
 Rif1-Ku interaction can also be observed in vivo by Co-IP experiments (Figure 5D). Deletion of either KU80 or KU70 led to a ~ 4 fold reduction in Rif1-HA telomere occupancy (Figure 5E), consistent with the idea that binding to Ku is important for Rif1 telomere association. In agreement with the Y2H data, Rif1NTE1-264 fragments with either F225E or R230E mutation were unable to localize to telomeres (Figure 5F and G), confirming that Rif1NTE-Ku80 interaction does occur in vivo. However, F225E and R230E substitutions did not affect the ability of the full-length Rif1 to bind telomeric DNA (Figure 5H). Double mutation F225E/R230E and substitution of amino acids 225–230 with alanines (the 6A mutant) also did not perturb Rif1 telomere binding (Figure 5H). Moreover, neither mutation led to a noticeable telomere length increase (Figure 5I). Thus, Rif1 contains other sites for Ku binding which are more important in vivo than Rif1NTE-Ku80 interaction.
 
@@ -83,9 +174,21 @@ The idea that Rif1 is recruited at telomeres by Ku relies on the assumption that
 
 Interestingly, RIF1 deletion in a ∆ku80 background does not lead to strong telomere elongation compared to the parental ∆ku80 strain, suggesting that inhibition of telomerase by Rif1 is attenuated in the absence of Ku (Figure 5J). Moreover, inhibition by the Rif1NTE1-264 fragment is lost completely: no telomere lengthening is observed in the Rif1∆NTE∆ku80 strain compared to the ∆ku80 strain (Figure 5J). These results suggest that Ku potentially recruits some telomere addition factor, while the Rif1 fragment may compete with this putative factor for Ku80 binding. In S. cerevisiae, Ku is one of the accessory subunits of telomerase stably bound to its RNA component. We found that HpTER cannot be efficiently co-purified with Ku80-HA, while it robustly binds TERT-HA, Est1-HA, and Est3-HA in the same experimental conditions (Figure 5—figure supplement 2F, Shepelev et al., 2020), suggesting that HpKu is not a stable telomerase component. This does not exclude, however, the possibility of weak or transient association between Ku and telomerase in H. polymorpha. Consistent with this idea, we observe weak but noticeable interaction between HpTERT and HpKu80 in the Y2H assay (Figure 5—figure supplement 2G).
 
-## Rif1 is important for recruitment of Stn1 protein to telomeres
+### Rif1 is important for recruitment of Stn1 protein to telomeres
 
 Next, we decided to study telomeric role of the interaction between Rif1 and Stn1. First, we confirmed the ability of the proteins to form a complex in vivo by the Co-IP experiment. Stn1-HA co-elutes with Rif1-HA following immunoprecipitation on the anti-Flag resin (Figure 6A). Benzonase treatment of the extracts prior to the IP does not diminish the amount of co-precipitated Stn1 (Figure 6A), suggesting that the Rif1-Stn1 interaction is DNA-independent. We were unable to test the effect of the STN1 knockout on the Rif1 telomere binding, since Stn1 is essential for cell viability (as two other components of the CST complex – Cdc13 and Ten1, Figure 6—figure supplement 1A). However, we found that removal of either N- or C-terminal Stn1 domains is sufficient to completely disrupt binding to Rif1 in the Y2H assay (Figure 6B and C). C-terminal truncations in Stn1 are well tolerated by cells, although the Stn1∆C381-Flag and Stn1∆C221-Flag strains have greatly elongated telomeres (Figure 6D), similar to the Stn1 truncation mutants in S. cerevisiae (Petreaca et al., 2007; Petreaca et al., 2006; Puglisi et al., 2008). Rif1 telomere association is reduced in the strains with these stn1 mutations, although the reduction is relatively modest (~2.5 fold, Figure 6E). Interestingly, we found that Stn1 telomere binding is completely abolished upon RIF1 deletion, suggesting that it is actually Rif1 that recruits Stn1 to telomeres, and not vice versa (Figure 6F). Stn1 telomere occupancy is also diminished (~2 fold) in the ∆ku80 strain, which has smaller amount of the telomere-bound Rif1 (Figure 6F). Finally, we found that Rif1 bind Stn1 in Y2H through its conserved NTD, more precisely – the 265–897 region (Figure 6G).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75010/elife-75010-fig6-v1.jpg)
+
+**Figure 6.:** (A) Co-IP analysis. Same as in Figure 5I, but with different strains; the IP experiment was performed either with or without benzonase treatment as indicated. (B) Y2H analysis. Same as in in Figure 5A, but with different protein pairs. (C) Schematic illustration of the domain organization of the full-length HpStn1 and its truncation variants used in this study. (D) Southern blot analysis as in Figure 1B but with different strains. (E, F) ChIP analysis of the indicated strains, same as in Figure 1D (IP on the anti-HA beads); the % of input of the ‘TEL’ Rif1-HA/Stn1-Flag sample was set to 1. Error bars indicate SD, n = 3. (E) Or the % of input of the ‘TEL’ Stn1-HA sample was set to 1 (F). (G) Y2H analysis. Same as in in Figure 5A, but with different protein pairs.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75010/elife-75010-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Results of the analysis of random spores derived from the indicated heterozygous strains. After ether treatment and growth on YPD plate, 24 colonies derived from each heterozygous strain were randomly picked, resuspended in water, plated onto the indicated selective plates, grown for 4 days at 37°C and photographed. Each plate also contained the parental heterozygous strains (phenotype: Ade+Ura+Leu+). None of the spores from strains CDC13+/-; STN1+/- and TEN1+/- displayed the Leu+ phenotype, whereas 50% (12/24) of the spores from the KU70+/- had the Leu+ phenotype (as expected for the non-essential KU70 gene). (B) Y2H analysis. AH109 colonies expressing pairs of the indicated proteins (fused to either Gal4-BD (GBD) or Gal4-AD (GAD)); cultures with A600 ~0.5 and four 10-fold serial dilutions were plated on the SC medium lacking amino acids as indicated, and incubated at 30°С for 4 days.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/75010/elife-75010-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Double thick line represents subtelomeric (gray) and telomeric (black) DNA. Thin lines denote interactions, blunt arrows – inhibitory effect.
 
 ## Discussion
 
@@ -111,7 +214,7 @@ In summary, in the present study we have identified several novel aspects of Rif
 
 ## Materials and methods
 
-## Yeast strains and constructs
+### Yeast strains and constructs
 
 The strains used in this study are listed in Supplementary file 1. The DL1-L strain (Sohn et al., 1996) was used as a wild type (no tag) control in all experiments. Gene replacements (detailed below) and random spore analysis was performed as described (Malyavko et al., 2019). The gene replacements were verified by PCR, mutagenesis was verified by sequencing.
 
@@ -125,42 +228,42 @@ In the heterozygous H. polymorpha CBS4732 strains the portions of the genes (−
 
 For the intTEL18 strain creation we generated the pUC19LGPH36 plasmid by cloning leu2 gene (from DL1-L genome) with flanking regions (primers F: 5’-gcgcgtgtctcagcatgaac-3’; R: 5’-ggtgtgggaggtagaagagg-3’) at the pUC19 SmaI site. The leu2 ORF was replaced (primers F: 5’-aaaaagatctaattatactgttgcgcgaagtagtcccatggtaggatctcgaataattcctaaataatcc-3’; R: 5’-gattgcaaaatgatggaactattttgc-3’) by the PstI(blunted)-BclI fragment of the HARS36 sequence (Sohn et al., 1999) from the AMIpSL1 vector (Agaphonov et al., 1999). Then the G418R gene (primers F: 5’-aaaaaagacaggaatgagtaaatgaagatcctttgatcttttctacgg-3’; R: 5’-ccgggaaaaactgaaaaaccattggcacgacaggtttcccgac-3’ from the pKAM555 vector) was inserted at the ClaI site using HiFi assembly (NEB). For the intTEL0 strain creation the pUC19LG plasmid (lacking the PstI(blunted)-BclI fragment of the HARS36 sequence) was used.
 
-## Yeast growth conditions
+### Yeast growth conditions
 
 Normally, single colonies from the transformation plates were restreaked on YPD plates and grown for 2 days at 37°C. After 10 restreaks (~230 cell divisions) cells were grown in 10 ml of YPD at 37 °C overnight and used for Southern blot analysis.
 
 For the ∆ter strains viability assay (Figure 1B and C) several colonies from the transformation plate were resuspended in 100 µl of water: 50 µl were used for yeast colony PCR, 2 µl were plated onto a fresh YPD plate and grown for 2 days at 37 °C (‘streak 1’ plate), 48 µl were added to 10 ml of YPD and grown overnight at 37 °C (used for gDNA isolation and Southern blot, ‘streak 0’). Single colonies from the ‘streak 1’ plate were resuspended in 10 µl of water, 3 µl were plated onto a fresh YPD plate and grown for 2 days at 37 °C (‘streak 2’ plate), 7 µl were added to 10 ml of YPD and grown overnight at 37 °C (used for gDNA isolation and Southern blot, ‘streak 1’). Single colonies from the ‘streak 2’ (smears of colonies in case of the ∆ter strains) plate were restreaked onto a fresh YPD plate and grown for 2 days at 37 °C (‘streak 3’ plate). The TER strains were restreaked seven additional times, single colonies from the ‘streak 10’ were grown in 10 ml of YPD overnight at 37 °C and used for Southern blot. Two colonies of each genotype were analyzed in this experiment (biological replicates).
 
-## Telomere Southern blots
+### Telomere Southern blots
 
 Southern blot experiments were carried out as previously described (Shepelev et al., 2020). TRF length were calculated using the ImageQuant TL 1D software version 7.0.
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 ChIP experiments were performed as previously described (Malyavko et al., 2019) with the following modifications. Cells were grown in 100  ml of YPD at 37°C and fixed with 1% formaldehyde for 30  min at 25°C. Lysates were incubated with anti-HA magnetic beads for 2 hr. High-salt lysis buffer contained 0.5 M NaCl, and wash buffer did not contain any SDS. We used the standard deviation between at least three replicates (cultures from three colonies of the same strain) as a value of the experimental error.
 
-## Co-immunoprecipitation (Co-IP) and western blots
+### Co-immunoprecipitation (Co-IP) and western blots
 
 Co-IP experiments were performed as previously described (Shyian et al., 2020) with the following modifications. OD600 ~ 0.9 cell cultures were used to prepare 1 ml of lysate. Cells were broken with glass beads in a Precellys Evolution homogenizer. 20 µl of anti-Flag M2 gel (Sigma) per 1 ml of lysate were used. Proteins were eluted by boiling at 95 °C for 10 min in 30 µl of 2 x SDS-PAGE buffer (100 mM Tris pH 8, 4% SDS, 10% glycerol, 0.2% bromophenol blue). Total proteins were isolated as previously described (Kushnirov, 2000). Proteins were separated on 8% PAGE gels, transferred onto Hybond P 0.22 PVDF membrane (GE Healthcare), stained with Ponceau S (Amresco), and blocked in 5% BSA. Anti-HA-HRP antibodies (clone 3F10, Sigma) at 1:5000, anti-FLAG M2 antibodies (Sigma) at 1:5000, goat anti-mouse IgG-HRP (62–6520, Thermo Fisher Scientific) at 1:5000 and SuperSignal West Femto Maximum Sensitivity Substrate (Thermo Fisher Scientific) were used for protein detection.
 
 RNA Co-IP experiments were performed as described in Shepelev et al., 2020.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Rif1 fragments for EMSA were expressed and purified as HpRap1B protein (Malyavko et al., 2019).
 
 For CD and NMR studies 1–264 HpRif1 fragment was purified in 50 mM phosphate buffer, pH 7.5, 500 mM NaCl, 10 mM β-ME, 10% glycerol, 0,05% Tween 20, 30 mM Imidazole, 0,3 mM PMSF followed by ion-exchange chromatography on Heparine agarose (Sigma). Then 6His- and S-tags were excised by overnight incubation with recombinant TEV protease at 4°CC; tags and TEV protease were removed by an additional round of affinity chromatography on Ni-NTA-agarose (Sigma). As a final step gel filtration on a Superdex 75 column in 20 mM phosphate buffer, pH 7.5, 50 mM NaCl, 5% glycerol was applied. 750 μg of ovalbumin, 400 μg of carbonic anhydrase and 400 μg of lactalbumin were injected separately to serve as standards. For the 15N isotope, labeling cells were cultivated at 37 °C in M9 minimal medium with 1 g/L 15NH4Cl (Cambridge Isotope Laboratories, Inc).
 
-## Biophysical measurements
+### Biophysical measurements
 
 CD spectra were recorded at the following temperatures: 5, 15, 25, 35°C and 50 °C. A protein concentration of 0.3 mg/ml was used in 20 mM phosphate buffer, pH 7.5, 50 mM NaCl, 5% glycerol. CD measurements were made on a Chirascan CD spectrometer (Applied Photophysics) using a 0.1 mm path length.
 
 The NMR samples with concentration of 0.2 mM 15N-labeled protein were prepared in 90% H2O/10% D2O, 50 mM NaCl, and 20 mM sodium phosphate buffer (pH 7.2). Spectra were acquired at 298 K on a Bruker Avance 600 MHz spectrometer equipped with a triple resonance (1H, 13C and 15N) pulsed field z gradient probe. NMR spectra were processed and analyzed using the Mnova software (Mestrelab Research, Spain).
 
-## Electrophoretic mobility shift assay (EMSA)
+### Electrophoretic mobility shift assay (EMSA)
 
 The sequences of the oligonucleotides used in EMSA are in Table 1. EMSA experiments were performed as described (Malyavko et al., 2019) with the following modification. Reaction buffer contained 10  mM HEPES-NaOH, pH 7.5, 100  mM NaCl, 0.5 mM DTT, 0.25  mg/ml bovine serum albumin, 5% glycerol. Band intensities (BI) were quantified in ImageQuant TL 7.0, values of ‘fraction DNA bound’ (FDB) were calculated using formula FDB = BI*(complex)/(BI*(complex)+ BI(free DNA)), where BI*(complex) is BI of the complex minus BI of the corresponding area in the ‘no protein control’ lane. The fits into the ‘Specific binding with Hill slope’ were done using GraphPad Prism version 7.00.
 
-## Yeast two-hybrid (Y2H) system
+### Yeast two-hybrid (Y2H) system
 
 Y2H experiments were carried out as previously described (Malyavko and Dontsova, 2020).

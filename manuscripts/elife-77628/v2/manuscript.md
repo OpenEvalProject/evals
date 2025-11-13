@@ -14,9 +14,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03yeq9x20 University of Lincoln, School of Life & Environmental Sciences, Joseph Banks Laboratories, Green Lane Lincoln United Kingdom
-2. https://ror.org/035jbxr46 Smithsonian Tropical Research Institute Balboa Panama
-3. https://ror.org/008x57b05 CoSys Lab, Faculty of Applied Engineering, University of Antwerp Antwerp Belgium
+1. University of Lincoln, School of Life & Environmental Sciences, Joseph Banks Laboratories, Green Lane Lincoln United Kingdom ([ROR:03yeq9x20](https://ror.org/03yeq9x20))
+2. Smithsonian Tropical Research Institute Balboa Panama ([ROR:035jbxr46](https://ror.org/035jbxr46))
+3. CoSys Lab, Faculty of Applied Engineering, University of Antwerp Antwerp Belgium ([ROR:008x57b05](https://ror.org/008x57b05))
 4. Flanders Make Strategic Research Centre Lommel Belgium
 
 † Corresponding author
@@ -33,7 +33,7 @@ For katydids (or ‘bush crickets’: Orthoptera: Tettigoniidae), a family with 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/77628/elife-77628-fig1-v2.jpg)
 
-**Figure 1.:** Copiphora gorgonensis.(A) Location of the ear in the foreleg with a smaller panel illustrating the ear canal extending from the prothorax (acoustic spiracle) to the femoro-tibial “knee” joint through the foreleg. (B) 3D reconstruction of the tympanal organ of C. gorgonensis, showing external and internal structures. Inset in the upper right corner shows a cross section through the ear, inset in the lower left corner shows a lateral view of the crista acustica with sensory cells. EC = ear canal, TP = tympanal plate, ATM = anterior tympanal membrane, PTM posterior tympanal membrane, PEC = posterior ear canal division AEC = anterior ear canal division, CA = crista Acustica, AV = auditory vesicle. APC = anterior pinnal cavity, PPC = posterior pinnal cavity; (C) 3D anatomy of the ear, with pinnae present, removed, and pinnal cavity volumes; (D) Examples of cuticular pinnae of various katydids from three ensiferan subfamilies: (L–R): C. gorgonensis (Conocephalinae), Conocephalus fuscus (Conocephalinae), Eubliastes aethiops (Pseudophyllinae), Ischnomela gracilis (Pseudophyllinae), Arachnoscelis arachnoides (Meconematinae), and Supersonus aequoreus (Meconematinae).
+**Figure 1.:** (A) Location of the ear in the foreleg with a smaller panel illustrating the ear canal extending from the prothorax (acoustic spiracle) to the femoro-tibial “knee” joint through the foreleg. (B) 3D reconstruction of the tympanal organ of C. gorgonensis, showing external and internal structures. Inset in the upper right corner shows a cross section through the ear, inset in the lower left corner shows a lateral view of the crista acustica with sensory cells. EC = ear canal, TP = tympanal plate, ATM = anterior tympanal membrane, PTM posterior tympanal membrane, PEC = posterior ear canal division AEC = anterior ear canal division, CA = crista Acustica, AV = auditory vesicle. APC = anterior pinnal cavity, PPC = posterior pinnal cavity; (C) 3D anatomy of the ear, with pinnae present, removed, and pinnal cavity volumes; (D) Examples of cuticular pinnae of various katydids from three ensiferan subfamilies: (L–R): C. gorgonensis (Conocephalinae), Conocephalus fuscus (Conocephalinae), Eubliastes aethiops (Pseudophyllinae), Ischnomela gracilis (Pseudophyllinae), Arachnoscelis arachnoides (Meconematinae), and Supersonus aequoreus (Meconematinae).
 
 At the external auditory input, many katydid species (>65%, Cigliano et al., 2021) possess cuticular pinnae (also referred to as folds, flaps or tympanal covers) partially enclosing one or both of their tympana within an air cavity. Morphologies of cuticular pinnae vary greatly between species (Figure 1C and D), but their role(s) remain unclear. Before experimental evidence of the dual input system in katydids was published (Jonsson et al., 2016; Michelsen et al., 1994), early observations suggested that pinnae aid in determining the direction of sound (Bailey and Stephen, 1978; Autrum, 1963; Autrum, 1942; Autrum, 1940). Others suggested that pinnae are merely protective structures sheltering the fragile tympanum (Pumphrey, 1940; Lewis, 1974b). Subsequently, several authors tested Autrum’s hypothesis using electrophysiological techniques and could not demonstrate a role for the pinnae in directional hearing, and instead showed that ear sensitivity depends on sound directed to acoustic spiracles (Lewis, 1974a; Lewis, 1974b; Nocke, 1975; Eisner and Popov, 1978; Hill and Oldfield, 1981; Hoffmann and Jatho, 1995; Michelsen and Nocke, 1974; Shen, 1993). Lewis, 1974b was the first to suggest a role for the pinnae in maintaining a high sensitivity of the organ at high frequencies. Studies of ultrasonic rainforest Pseudophyllinae provided more evidence of principal sound reception for conspecific communication using the external tympanal input instead of their exceptionally small spiracle sizes (Mason et al., 1991). It was reported that diffraction of very short wavelengths along the pinnal cavity entrances (or slits, Figure 1B) produced the strongest responses when stimuli was presented directly opposite the cavity entrances, and weakest contralaterally to the same stimuli. This difference in intensity between the two ears potentially contributes to directional orientation in rainforest katydids.
 
@@ -43,35 +43,256 @@ We hypothesized that tympanal pinnae function as detectors for high ultrasonic f
 
 ## Results
 
-## The effect of pinnae on temporal dynamics of sound arrival at the tympana
+### The effect of pinnae on temporal dynamics of sound arrival at the tympana
 
 We investigated the role of pinnae in sound capture by testing how the incidence direction of the sound stimulus induced tympanal displacement at three frequencies (23, 40, and 60 kHz) with the cuticular pinnae intact and later ablated. Frequencies above 60 kHz were not tested due to the acoustic limitations of the experimental setup (see Materials and methods). A total of 2736 measurements were performed on 13 ears (1512 measurements for four male specimens; 1224 for three female specimens).
 
 We found a significant interaction between the presence of pinnae with angle of incidence (21° semicircle azimuth frontal to ear; Figure 2A) and with frequency (Table 1). Post-hoc analysis showed that pinnae significantly delayed the time of arrival at 23 kHz from 0.56 ± 0.05 µs to 0.55 ± 0.05 µs (t-ratio = –11.15, p < 0.001), and at 40 kHz from 0.56 ± 0.05 µs to 0.56 ± 0.05 (t-ratio = –7.43, p < 0.001), but not at 60 kHz (t-ratio = –1.86, p = 0.063). Thus, the effect of pinnae on arrival times was less pronounced at increasing frequencies. Sound arrived at the posterior tympanum ~2 µs later than at the anterior tympanum, a significant delay, and mean displacement amplitude at the posterior tympanum was also significantly lower (by 21.5%; Table 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/77628/elife-77628-fig2-v2.jpg)
+
+**Figure 2.:** (A) Time plots from five incidence angles for the 60 kHz test sound illustrating changes in oscillation phase between the anterior (ATM, in red) and posterior (PTM, in blue) tympana of the same ear. Notice the phase difference of 0.25 cycles is 90° at –10° and 10°. An anatomical cross section of the ear is shown with each tympanum (ATM and PTM), auditory vesicle (AV), posterior and anterior bifurcated ear canal branches (PEC and AEC), haemolymph channel (HC) and posterior and anterior pinnal structures (PP and AP). (B) Mean displacement amplitudes (nm) of the tympanal membranes for each tested frequency (23, 40, and 60 kHz) with and without the presence of cuticular pinnae (n = 9 ears). (C) Cavity-induced pressure gains with pinnae compared to sound pressure (Pa) predictions with the pinnae ablated from numerical models using Comsol Multiphysics (17 ears; 10 females, 7 males). For means comparison plots (B) & (C), significance symbols from post hoc analyses: ‘***’ 0.001, ‘**’ 0.01, ‘*’ 0.05, ‘ns’ 0.1, and ‘ ’ 1. Grey bars with cuticular pinnae and black bars without cuticular pinnae showing standard error.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77628/elife-77628-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77628/elife-77628-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The loudspeaker was rotated along a 12 cm semi-circle in 1° steps (each automated step about 0.56 mm) from –10° to 10° perpendicular to the centre of the ear and presented a four-cycle sinusoidal wave at the frequencies 23, 40, and 60 kHz in sequence.
+
+**Table 1.**
+ Linear mixed models (LMM) of experimental and numerical simulation data.Parameters showing effects of angle, pinnae, frequency, tympanum, angle × pinnae and pinnae × frequency for time domain data (experimental time and displacement) and sound pressure (numerical simulations and 3D print models). Experimental models n = 13 ears. Numerical model n = 17 ears. 3D model n = 4 ears.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Parameter</th>
+      <th>F</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Experimental Time Domain</td>
+      <td>Angle (polynomial)</td>
+      <td>5.35</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Pinnae (Y/N)</td>
+      <td>254.60</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Frequency</td>
+      <td>2097.26</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tympanum</td>
+      <td>5.07</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Angle × Pinnae</td>
+      <td>4.47</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pinnae × Frequency</td>
+      <td>31.93</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Experimental Displacement</td>
+      <td>Angle (polynomial)</td>
+      <td>3.29</td>
+      <td>0.037</td>
+    </tr>
+    <tr>
+      <td>Pinnae (Y/N)</td>
+      <td>0.90</td>
+      <td>0.344</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Frequency</td>
+      <td>270.57</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tympanum</td>
+      <td>17.32</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Angle × Pinnae</td>
+      <td>4.89</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pinnae × Frequency</td>
+      <td>5.41</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td rowspan="2">NumericalSound Pressure</td>
+      <td>Angle (polynomial)</td>
+      <td>0.72</td>
+      <td>0.489</td>
+    </tr>
+    <tr>
+      <td>Pinnae (Y/N)</td>
+      <td>336.55</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Frequency</td>
+      <td>69.29</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tympanum</td>
+      <td>0.02</td>
+      <td>0.879</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Angle × Pinnae</td>
+      <td>1.31</td>
+      <td>0.271</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pinnae × Frequency</td>
+      <td>761.46</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>3D ModelSound Pressure</td>
+      <td>Pinnae (Y/N)</td>
+      <td>1175.9</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Frequency</td>
+      <td>314.58</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tympanum</td>
+      <td>0.01</td>
+      <td>0.9111</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pinnae × Frequency</td>
+      <td>296.70</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
 For displacement amplitude, there was a significant interaction between the presence of pinnae and frequency (Table 1). Post-hoc analysis showed maximum displacement amplitudes at 23 kHz with both intact and ablated pinnae, but the greatest displacement with the pinnae ablated (t-ratio = 3.20, p < 0.001; Figure 2B). This demonstrates that pinnae do not enhance auditory perception of the carrier frequency in C. gorgonensis, and that the observed displacement, even after ablation, results from the fact that tympanal natural resonance produces maximum vibrational amplitude at 23 kHz, the carrier frequency of the species call as demonstrated by Jonsson et al., 2016; Montealegre-Z et al., 2012. There were no differences in displacement at either 40 kHz (t-ratio = 0.84, p = 0.399; Figure 2B) or 60 kHz (t-ratio = –0.61, p = 0.540; Figure 2B) regardless of the presence or absence of pinnae. We also found a significant interaction between the presence of pinnae and angle of incidence, with pinnae increasing arrival time with increased angle (Table 1). Responses were strongest for sound presented perpendicular to each respective cavity (n = 7; average 3.08 ± 2.91 nm at 10°, average 2.90 ± 2.98 nm at –9°) with the lowest displacement amplitudes occurring when sound was directed at the region of the dorsal cuticle between the cavities, also referred as ‘point zero’ (n = 7; average 1.99 ± 1.90 nm at –1°) with the pinnae intact due to cuticle obstructing the response of the tympanal membrane. In contrast, point zero and adjacent angles showed the greatest displacement amplitude with the pinnae ablated (n = 7; average 3.04 ± 3.42 nm at –1°) with incident angles on either side of point zero returning a gradually decreasing response to the stimulus (n = 7; average 2.73 ± 3.27 nm at 10°, average 2.54 ± 2.57 nm at –10°).
 
 Phase angle (φ°) was calculated from the absolute value of the difference between the vibrations of the anterior and posterior tympana per recording (n = 7; 1532 in total). Pinnae maintained mean Δ φ° at 80.9° for 23 kHz, 88.8° for 40 kHz, and 84.1° for 60 kHz, but with the pinnae ablated, phase differences were smaller particularly at 60 kHz (Δ φ° at 62.7° for 23 kHz, 78.7° for 40 kHz, and 49° for 60 kHz).
 
-## Evidence of cavity-induced sound pressure gains
+### Evidence of cavity-induced sound pressure gains
 
-## Anatomical measurements of the external tympanal input
+#### Anatomical measurements of the external tympanal input
 
 The anatomical features of the ear were measured to predict resonance and compare intraspecific variation in pinna size (Table 2). 2D measurements of the area of the pinnal entrance (slit), distance between the centre of the ear (septum) and edge of the pinna (pinnal protrusion), and distance between slits (septum width) were studied using an Alicona Infinite Focus microscope. 3D measurements of the cavities and cross section of the ears were performed with the micro-computed tomography scanner using the software Amira-Aviso 6.7 (n = 8 ears; 3 females and 2 males). We found that the average size of the slits (0.16 ± 0.01 mm2) and cavities (0.14 ± 0.01 mm3) were nearly identical between the anterior and posterior pinnae. The posterior pinnae (0.44 ± 0.03 mm) was wider than the anterior pinnae (0.39 ± 0.02 mm). The mean cross-sectional width of the ear was 1.14 ± 0.35 mm.
 
-## Pinnal cavity resonance calculations
+**Table 2.**
+ Measured parameters of the ear of C. gorgonensis (n = 8 ears; 3 females, 2 males).Given are mean values (± SD). Abbreviations: APC  = anterior pinnal cavity; PPC  = posterior pinnal cavity.
 
-We used slit area and cavity volume to estimate the resonance of the pinnal cavities (Table 2). This was calculated with the assumption that the 2D slit entrances were a perfect circle (to determine radius) and the 3D cavity acted as a cylindrical tube using a neckless Helmholtz resonance equation. Here, c is speed of sound in air (343 m s−1), cross-sectional area of the entrance with radius r, 1.85 is the correction length of the neck and V denotes the volume of the resonator/cavity (Rossing and Fletcher, 2004).fh=c2π1.85rV
+
+<table>
+  <thead>
+    <tr>
+      <th>APC volume (mm3)</th>
+      <th>PPC volume (mm3)</th>
+      <th>Distance between slits (mm)</th>
+      <th>Cross-sectional width of foreleg below ear (mm)</th>
+      <th>Cross-sectional width of ear (mm)</th>
+      <th>APC slit area (mm2)</th>
+      <th>PPC slit area (mm2)</th>
+      <th>Protrusion of anterior pinna (mm)</th>
+      <th>Protrusion of posterior pinna (mm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.14 (±0.01)</td>
+      <td>0.15 (±0.01)</td>
+      <td>0.42(±0.03)</td>
+      <td>0.84(±0.02)</td>
+      <td>1.14(±0.35)</td>
+      <td>0.16(±0.01)</td>
+      <td>0.16(±0.01)</td>
+      <td>0.39(±0.02)</td>
+      <td>0.45(±0.03)</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Pinnal cavity resonance calculations
+
+We used slit area and cavity volume to estimate the resonance of the pinnal cavities (Table 2). This was calculated with the assumption that the 2D slit entrances were a perfect circle (to determine radius) and the 3D cavity acted as a cylindrical tube using a neckless Helmholtz resonance equation. Here, c is speed of sound in air (343 m s−1), cross-sectional area of the entrance with radius r, 1.85 is the correction length of the neck and V denotes the volume of the resonator/cavity (Rossing and Fletcher, 2004).
+
+$$
+fh=\frac{c}{2\pi}\sqrt{\frac{1.85r}{V}}
+$$
 
 The pinnal cavities (n = 8) showed a neckless Helmholtz resonance of 94.28 ± 3.53 kHz for the anterior cavity and 91.69 ± 3.93 kHz for the posterior cavity. These calculations suggest that the pinnal cavities resonate far closer to bat hunting frequencies than to the 23 kHz calling song frequency of C. gorgonensis.
 
-## 3D printed model time and frequency domain measurements of pinnal cavities
+#### 3D printed model time and frequency domain measurements of pinnal cavities
 
 3D printed scaled models of the ear were used to measure sound pressure gains and resonances, to overcome the limitations imposed by the small size of the animals (Figure 3). 3D printed ears (n = 8; 4 prints from males and 4 prints from females, 2 ears each, ± pinnae) were printed at a scale of 1:~11.5 and the acoustic stimuli were scaled by the same factor for pure tones (2.01 kHz for 23 kHz, 3.50 kHz for 40 kHz, 5.25 kHz for 60 kHz, and 9.63 kHz for 110 kHz) and for broadband (2–15 kHz for 11.5–170 kHz). Sound pressure (dB) did not significantly differ between the anterior and posterior pinnal cavities, but it was significantly affected by the interaction between frequency and the presence/absence of pinnae (Table 1). Pinnae increased sound pressure across all frequencies tested, and this effect was greatest at higher frequencies (23 kHz: t-ratio = –2.54, p = 0.014; 40 kHz: t-ratio = –8.69, p < 0.001; 60 kHz t-ratio = –15.66, p < 0.001; 110 kHz t-ratio = 41.70, p < 0.001; Figure 4A; Video 1). Overall, the greatest pressure gains were detected at 101.47 ± 3.43 kHz for both the anterior (26.33 ± 4.06 dB) and posterior pinnal cavities (30.04 ± 1.34 dB) with the pinnae intact. With the pinnae ablated, the greatest pressure gain was at 101.41 ± 0.86 kHz for both the anterior (9.69 ± 0.87 dB) and posterior (9.83 ± 0.97 dB) pinnal cavities. Stimulation of the 3D printed models with broadband sound showed that both pinnal cavities resonate across a broad range of high ultrasonic frequencies between around 60 and 120 kHz. When the pinnae were removed the sound pressure gain was significantly reduced, although a low amplitude resonance persists due to a recessed V-shaped cavity that remains after pinnal ablation. See next section, Figure 4E and F and Videos 2 and 3 for more details, and for a comparison with the numerical simulations.
 
-## Tuning properties of the pinnal cavities
+![Figure 3.](https://cdn.elifesciences.org/articles/77628/elife-77628-fig3-v2.jpg)
 
-## Numerical modelling
+**Figure 3.:** (A) Sound pressure gains (dB SPL) of 3D printed ears (n = 8; 4 males and 4 females) calculated from scaled time domain recordings for 23, 40, 60, and 110 kHz 4-cycle pure tones. (B) An example of a 3D printed ear model with pinnae present (dorsal view) showing the probe microphone inside the posterior tympanum. (C) An example of a 3D printed ear model with pinnae ablated (anterior lateral view), showing probe microphone placement.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77628/elife-77628-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Ischnomela gracilis (Pseudophyllinae) printed scale 1:12 showing resonance peaks of 104 kHz in both anterior (APC) and posterior (PPC), Eubliastes aethiops (Pseudophyllinae) printed scale of 1:13.1 showing resonance peaks of 102 kHz APC and 104 kHz PPC, and Supersonus aquoreus (Meconematinae) printed scale 1:21.5 showing resonance showing resonance peaks of 125 kHz APC and 142 kHz PPC. APC in blue continuous outline, and PPC in blue dashed lines (relative gain in dB, blue axis). Shaded grey area represents a frequency spectrum of the conspecific calling song of each species (relative amplitude dB).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/77628/elife-77628-fig4-v2.jpg)
+
+**Figure 4.:** Panels (A), (C), and (E) depict cavity-induced sound pressure distribution and gains with pinnae, panels (B), (D), and (F) represent sound pressure gains without the pinnae. (A and B) Numerical simulations obtained on 3D ear geometries. Cross-section of the ear of Copiphora gorgonensis with the pinnae intact (A) and ablated (B). Sound pressure intensities depicted with colours for simulations of 23, 40, 60, and 110 kHz. Low sound pressure dB (blue) to high sound pressure dB (red) distributions inside and outside the cavities. (C and D) Simulated sound pressure gains (dB SPL) in the frequency ranges of 20–150 kHz for each tympanum. (E and F) Relative dB gain of the pinnal cavities in the 3D printed ears. APC in red and PPCin blue.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77628/elife-77628-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The air acoustic domain of a truncated sphere with a 3 mm radius centered around the reconstructed micro-CT geometry of the ear. (B) Finite element mesh sphere composed of tetrahedral elements of maximum diameter $h_{max}=\frac{c}{6\timesf_{0}}$ , where $c=343m/s$ and $f_{0}=150kHz$ enclosing 3 mm diameter ear.
+
+![Video 1.](https://cdn.elifesciences.org/articles/77628/elife-77628-video1.mp4.jpg)
+
+**Video 1.:** Video recording of probe microphone placement inside the 3D printed ear of C. gorgonensis. A digital micromanipulator with a holder restraining the 3D printed ear moved the ear along the probe tip. The microphone remained stationary. Scaled stimuli 6.67 kHz (60 kHz).
+
+![Video 2.](https://cdn.elifesciences.org/articles/77628/elife-77628-video2.mp4.jpg)
+
+**Video 2.:** 3D printed ear of C. gorgonensis (1:11.512) receiving a scaled broadband chirp of 2.6–17 kHz (corresponding to 30–200 kHz) as the ear is moved into position with the probe microphone inside the cavity. Gain shown in magnitude (mPa). (Note: printed ear and broadband chirp frequency range shown in video are not representative of actual experiments).
+
+![Video 3.](https://cdn.elifesciences.org/articles/77628/elife-77628-video3.mp4.jpg)
+
+**Video 3.:** Quantitative imaging of acoustic waves using refracto-vibrometry in the field around the 3D printed ear of C. gorgonensis (Malkin et al., 2014). Screen recording software of scaled stimuli 9.63 kHz (110 kHz). Note the wave passing over the ear and the piston motion of the air inside showing the effect of the Helmholtz resonator.
+
+### Tuning properties of the pinnal cavities
+
+#### Numerical modelling
 
 Using life-scale 3D geometries of each experimental ear (n = 17 ears; 8 with pinnae, 9 with pinnae ablated), we used Finite Element Analysis (FEA) to simulate sound pressure gains and the effect of incident angle at frequencies exceeding those experimentally possible with live specimens (see Materials and methods). For sound pressure measurements there was a significant interaction between the presence of pinnae and frequency (Table 1). At 23 kHz, ears without pinnae received significantly higher sound pressures (t-ratio = 3.45, p < 0.001), but the effect was reversed at 40 kHz (t-ratio = –5.94, p < 0.001) and 60 kHz (t-ratio = –28.52, p < 0.001), with differences increasing as frequency increased (Figure 2C). Sound pressure level was not significantly affected by the angle of sound incidence (–10°, –5°, 0°, 5°, 10°), and did not significantly differ between the anterior and posterior pinnal cavities (Table 1).
 
@@ -79,25 +300,344 @@ Simulated sound pressure gains and their distribution maps (Figure 4A and B) sho
 
 The effects of angle, pinnae, tympanum, interaction of angle and pinnae, and the interaction of pinnae and frequency were not significant on arrival times. However, the effect of frequency was significant on arrival times: We found longer arrival times at 23 kHz (0.068 ± 0.018 ms) with decreasing arrival times at increasing frequencies at 40 kHz (0.039 ± 0.008 ms), at 60 kHz (0.026 ± 0.005 ms). 23 vs 60 kHz t-ratio = 30.739, p < 0.001; 23 vs 60 kHz: t-ratio = 45.857, p < 0.001; 40 vs 60 kHz: t-ratio = 15.117, p < 0.001.
 
-## Tympanal response to broadband stimulation
+#### Tympanal response to broadband stimulation
 
 For broad tympanal responses, we exposed seven specimens with intact pinnae to broadband periodic chirp stimulation in the range 20–120 kHz in a free sound field and recorded the vibrations of all four tympana across both ears using a micro-scanning laser Doppler vibrometer. There was a relatively stable response (measured as velocity per sound pressure) of the tympanal membranes between 20 and 70 kHz. However, above 80 kHz the tympanal response increased dramatically with resonant peaks at 107.84 ± 3.74 kHz for the posterior tympanum and 111.13 ± 4.24 kHz for the anterior tympanum (Figure 5A). However, the gain of the posterior tympanum was about three-fold larger than that of the anterior tympanum.
 
-## Behavioural and neural responses to broadband stimulation
+![Figure 5.](https://cdn.elifesciences.org/articles/77628/elife-77628-fig5-v2.jpg)
 
-## Behavioural audiograms
+**Figure 5.:** (A) Vibrational responses to broadband chirps (20–120 kHz) of real tympanal membranes (n = 7; 14 ears; four males and three females) of live C. gorgonensis. Maxima resonance peaks at 107.84 ± 3.74 kHz for the posterior tympanum and 111.13 ± 4.24 kHz for the anterior tympanum. Blue bar for PTM and red bar for ATM. (B) Black outline with grey shadow indicate the behavioural audiogram of ultrasound response in nine (n = 9) female C. gorgonensis. Note the drop in threshold within the pinnal frequency range (within the dotted lines) which indicates increased sensitivity. Black outline shows mean vector of SPL response at a particular frequency, shaded area represents the standard deviation across measured SPL. (C) Mean ± SEM neural responses at 70 dB across all sound frequencies tested (n = 5). Dotted lines indicate high-frequency sensitivity in each measurement, within the range of pinnal resonances.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77628/elife-77628-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Example of the neural response in the auditory nerve when a sound stimulus (top) is presented. The neural response was root-mean-square transformed (bottom) and the area under the curve during (red) and in between (blue) sound stimuli measured, giving a response in units of µVs. (B) The coloured mesh shows the mean neuronal activity during the presentation of sound, and the grey mesh the mean neuronal activity during silent inter-pulse intervals. White circular symbols indicate a significant difference (p < 0.05) in paired t-tests comparing the sound-on and sound-off responses in each katydid tested; black circular symbols indicate a non-significant difference (n = 5). A strong neuronal response was apparent across a wide range of frequencies including to calling song (23 kHz) and to the high ultrasonic frequencies used by hunting bats (e.g., 100 kHz).
+
+### Behavioural and neural responses to broadband stimulation
+
+#### Behavioural audiograms
 
 Behavioural audiograms of startle behaviour were obtained from nine tethered females walking on a treadmill. Audiograms were obtained with stimuli in the range 20–120 kHz. Audiograms showed that the startle response of females decline sharply for stimuli between 20 kHz and 35 kHz, however, response increases at around 35 kHz, and remains essentially constant at higher frequencies over the entire tested frequency range (Figure 5B; Table 3). A decline in threshold was found at the resonances of the pinnal cavities (90 kHz to 120 kHz) 59.28 ± 1.80 dB SPL (Figure 5B).
 
-## Neural audiograms
+**Table 3.**
+ Raw data for the behavioural audiogram of ultrasound response in nine female C. gorgonensis.NaN denotes that no response was shown to a particular stimulus. Mean and standard deviation calculated ignoring missing data (NaN) for each frequency in the lower rows of the table. All values in dB SPL.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th colspan="21">Frequency (kHz)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>20</td>
+      <td>25</td>
+      <td>30</td>
+      <td>35</td>
+      <td>40</td>
+      <td>45</td>
+      <td>50</td>
+      <td>55</td>
+      <td>60</td>
+      <td>65</td>
+      <td>70</td>
+      <td>75</td>
+      <td>80</td>
+      <td>85</td>
+      <td>90</td>
+      <td>95</td>
+      <td>100</td>
+      <td>105</td>
+      <td>110</td>
+      <td>115</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>F1</td>
+      <td>90</td>
+      <td>55</td>
+      <td>NaN</td>
+      <td>50</td>
+      <td>NaN</td>
+      <td>55</td>
+      <td>50</td>
+      <td>50</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>55</td>
+      <td>NaN</td>
+      <td>55</td>
+      <td>NaN</td>
+      <td>50</td>
+      <td>50</td>
+      <td>55</td>
+      <td>50</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>F2</td>
+      <td>85</td>
+      <td>60</td>
+      <td>55</td>
+      <td>55</td>
+      <td>55</td>
+      <td>50</td>
+      <td>55</td>
+      <td>55</td>
+      <td>55</td>
+      <td>55</td>
+      <td>55</td>
+      <td>NaN</td>
+      <td>60</td>
+      <td>55</td>
+      <td>60</td>
+      <td>55</td>
+      <td>55</td>
+      <td>55</td>
+      <td>55</td>
+      <td>55</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>F3</td>
+      <td>80</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>NaN</td>
+      <td>60</td>
+      <td>NaN</td>
+      <td>60</td>
+      <td>60</td>
+      <td>55</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>F4</td>
+      <td>75</td>
+      <td>65</td>
+      <td>65</td>
+      <td>55</td>
+      <td>65</td>
+      <td>65</td>
+      <td>65</td>
+      <td>65</td>
+      <td>65</td>
+      <td>65</td>
+      <td>65</td>
+      <td>65</td>
+      <td>65</td>
+      <td>65</td>
+      <td>65</td>
+      <td>65</td>
+      <td>70</td>
+      <td>NaN</td>
+      <td>60</td>
+      <td>65</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>F5</td>
+      <td>60</td>
+      <td>70</td>
+      <td>50</td>
+      <td>50</td>
+      <td>70</td>
+      <td>70</td>
+      <td>50</td>
+      <td>70</td>
+      <td>60</td>
+      <td>70</td>
+      <td>70</td>
+      <td>55</td>
+      <td>50</td>
+      <td>70</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>55</td>
+      <td>75</td>
+      <td>50</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>F6</td>
+      <td>75</td>
+      <td>75</td>
+      <td>55</td>
+      <td>50</td>
+      <td>50</td>
+      <td>60</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>60</td>
+      <td>55</td>
+      <td>80</td>
+      <td>75</td>
+      <td>NaN</td>
+      <td>50</td>
+      <td>60</td>
+      <td>NaN</td>
+      <td>60</td>
+      <td>NaN</td>
+      <td>60</td>
+      <td>70</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>F7</td>
+      <td>80</td>
+      <td>70</td>
+      <td>60</td>
+      <td>50</td>
+      <td>55</td>
+      <td>55</td>
+      <td>50</td>
+      <td>60</td>
+      <td>55</td>
+      <td>55</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>65</td>
+      <td>65</td>
+      <td>55</td>
+      <td>NaN</td>
+      <td>60</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>F8</td>
+      <td>85</td>
+      <td>55</td>
+      <td>55</td>
+      <td>55</td>
+      <td>50</td>
+      <td>50</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>55</td>
+      <td>60</td>
+      <td>NaN</td>
+      <td>50</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>55</td>
+      <td>50</td>
+      <td>70</td>
+      <td>65</td>
+      <td>50</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>F9</td>
+      <td>90</td>
+      <td>60</td>
+      <td>60</td>
+      <td>50</td>
+      <td>55</td>
+      <td>60</td>
+      <td>55</td>
+      <td>50</td>
+      <td>60</td>
+      <td>NaN</td>
+      <td>55</td>
+      <td>NaN</td>
+      <td>60</td>
+      <td>60</td>
+      <td>55</td>
+      <td>55</td>
+      <td>50</td>
+      <td>50</td>
+      <td>NaN</td>
+      <td>60</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>80</td>
+      <td>63</td>
+      <td>57.5</td>
+      <td>53</td>
+      <td>57.5</td>
+      <td>58</td>
+      <td>55</td>
+      <td>59</td>
+      <td>58.8</td>
+      <td>60</td>
+      <td>62.1</td>
+      <td>59</td>
+      <td>57</td>
+      <td>58.6</td>
+      <td>57.1</td>
+      <td>58.3</td>
+      <td>60</td>
+      <td>56</td>
+      <td>59</td>
+      <td>58</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>STD</td>
+      <td>9</td>
+      <td>7</td>
+      <td>4.63</td>
+      <td>4</td>
+      <td>7.07</td>
+      <td>6.6</td>
+      <td>5.77</td>
+      <td>7.5</td>
+      <td>3.54</td>
+      <td>5.77</td>
+      <td>10.4</td>
+      <td>9.7</td>
+      <td>5.7</td>
+      <td>7.48</td>
+      <td>4.88</td>
+      <td>6.06</td>
+      <td>8.7</td>
+      <td>5.3</td>
+      <td>7.9</td>
+      <td>7</td>
+      <td>6.4</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Neural audiograms
 
 Extracellular whole auditory nerve recordings, made with suction electrodes, were used to produce neural audiograms (Figure 5C). The auditory nerve is a mixed nerve, containing the axons of many neurons beside those of auditory afferents, leading to high levels of activity unrelated to auditory stimuli. Furthermore, the high firing rates and small amplitudes of auditory afferent action potentials spread across a population of responsive afferents meant that individual action potentials could not be resolved (Figure 5—figure supplement 1A). Instead, the sum neuronal activity in the auditory nerve during sound stimuli was compared with that during silent intervals. Responsiveness was measured by root-mean-square transforming the data (time constant = 0.66 ms) and measuring the area under the curve (Figure 5—figure supplement 1A; red, during sound stimulation, blue in between sound stimuli). Auditory stimulation produced significantly greater responses in the neural audiogram recordings compared to neuronal activity during silent periods (Figure 5—figure supplement 1B, coloured mesh and grey mesh, respectively) for most combinations of sound frequency and intensity (Figure 5—figure supplement 1B, white symbols). Only a small number of the stimuli failed to produce a significant difference in neuronal response, which occurred when frequency was high and sound pressure low (Figure 5—figure supplement 1B, black symbols).
 
 At every SPL, the largest responses were seen at the calling song frequency of 23 kHz (Figure 5—figure supplement 1B). Taking 70 dB as a representative SPL (Figure 5C), the response was 62.7 ± 15.8 µVs during stimulation, which was 86.1% higher than the equivalent off response (Figure 5—figure supplement 1B). There was generally a gradual falling away of responsiveness as stimulus frequency increased above 23 kHz: the response to 40 kHz stimulation was 51.8 ± 12.2 µVs; at 60 kHz it was 49.1 ± 14.1 µVs and at 80 kHz stimulation 44.5 ± 12.3 µVs, but measured responses to sound were still substantially above background activity. At 100 kHz, a frequency used by co-occurring echolocating bats, the response of 47.5 ± 12.7 µVs was 43% greater than background activity (and responses at 100 kHz were still resolvable against background activity even for the quietest sound pressure of 46 dB; Figure 5—figure supplement 1B). The weakest set of responses was to 120 kHz, which were not distinguishable from the background until above 70 dB SPL (Figure 5—figure supplement 1B), but nevertheless demonstrated that very high ultrasonic frequencies can be detected in C. gorgonensis if sufficiently loud.
 
-## Echolocation calling frequencies of co-occurring bats
+### Echolocation calling frequencies of co-occurring bats
 
 We compared the ultrasonic hearing range of C. gorgonensis to the echolocation frequencies of the most common co-occuring insectivorous gleaning bats (Murillo et al., 2014), which were recorded in a previous study (Geipel et al., 2021). Gardnerycteris crenulatum emits multi-harmonic, frequency-modulated (FM) echolocation calls with a call duration of 0.69 ± 0.2 ms, a peak frequency (frequency with maximum amplitude) of 71.1 ± 4.1 kHz and minimum and maximum frequencies (lowest frequency below and highest frequency above the peak frequency with a threshold of –20 dB) of 63.2 ± 3.4 kHz and 95.9 ± 4.8 kHz, respectively (n = 50 calls, 1 individual; Geipel et al., 2021). Tonatia saurophila produces multi-harmonic FM-calls with a duration of 0.69 ± 0.16 ms, a peak frequency at 71.1 ± 8.9 kHz and minimum and maximum frequencies at 34.9 ± 10.4 and 99.2 ± 9.4 kHz, respectively (n = 50 calls, 1 individual; Geipel et al., 2021). The multi-harmonic FM-calls of M. microtis (previously known as M. megalotis) have a duration of 0.57 ± 0.04 ms, with a peak frequency at 97.6 ± 5.0 kHz and minimum and maximum frequencies at 60.3 ± 1.8 and 136.4 ± 5.0 kHz, respectively (n = 350 calls, 7 individuals; Geipel et al., 2021). Single calls of each species are presented in Figure 6 and Figure 6—figure supplement 1B.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/77628/elife-77628-fig6-v2.jpg)
+
+**Figure 6.:** Numerical results of sound pressure level gains (left subpanel) induced by the pinnae are present only at frequencies above c.a. 50 kHz, covering the range of echolocation frequencies of three native insectivorous gleaning bat species. The conspecific call of C. gorgonensis (dominant frequency and harmonics) on the other hand (dBpeak at 23 kHz), is not enhanced by the presence of the pinnae (dB loss). Dotted line indicates the frequency at which gain = 0 dB. Spectrogram parameters: FFT size 512, Hamming window, 50% overlap; frequency resolution: 512 Hz, temporal resolution: 0.078ms. APC = anterior pinnal cavity, PPC = posterior pinnal cavity.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77628/elife-77628-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Ecological relevance of pinnae in Supersonus aequoreus and Eubliastes aethiops. Sound pressure level gains (left) induced by the pinnae are present only at frequencies >80 kHz, covering the range of echolocation frequencies of the three native insectivorous gleaning bat species recorded for Gorgona (Murillo et al., 2014) Gorgona phyllostomid 1 and Gorgona phyllostomid 2 represent two representative bat calls recorded on the island. The conspecific call of Eubliastes aethiops is not enhanced by the pinnae (dBpeak at 22 kHz); however, Supersonus aequoreus likely uses pinnae for both conspecific calls and bat detection, if predated by bats (dBpeak at 144 kHz). Spectrogram parameters: FFT size 512, Hamming window, 50% overlap, frequency resolution: 512 Hz, temporal resolution: 0.078ms. (B). Elaborated echolocation descriptions from four (Gardnercyteris crenulaum, Micronycteris microtis, Tonatia saurophila, Gorgona phyllostomid) insectivorous phyllostomid bats (Chiroptera: Phyllostomidae). For each species, the waveform (top), frequency spectrum and FFT power spectrum (lateral to each spectrogram, 30 dB below peak shown) of a single call is presented. Spectrogram parameters: FFT size 512, Hamming window, 50% overlap, frequency resolution: 512 Hz, temporal resolution: 0.078ms. (C) Conspecific call description of male Copiphora gorgonensis. Waveform of multiple syllables within a call, showing the interval between chirps (top). Spectrogram of full signal in the same time range, and FFT power spectrum (lateral, 30 dB below peak shown). Spectrogram parameters: FFT size 512, Hamming window, 50% overlap, frequency resolution: 512 Hz, temporal resolution: 0.078ms.
 
 ## Discussion
 
@@ -107,7 +647,7 @@ In all our experiments, the presence of pinnae had a significant effect on recep
 
 At high ultrasonic frequencies (>60 kHz), the pinnae-enclosed tympanal membranes of C. gorgonensis show strong mechanical vibrations induced by the resonances of the pinnal cavities (Figure 5A). This suggests that pinnae enhance sound pressure gains at high frequencies. It was previously demonstrated that even minuscule tympanal displacements in C. gorgonensis create large displacements of the crista acustica (Montealegre-Z and Robert, 2015). Tympanal displacements are magnified in the crista acustica and auditory vesicle as the effect of the lever action imposed by the vibration of the tympanum and tympanal plates (Figure 1B; Montealegre-Z et al., 2012). Insect mechanosensory auditory neurons are capable of detecting incredibly small mechanical displacements, down to 100 pm (Windmill et al., 2007), approaching the theoretical limits of sensitivity (Bialek, 1987). Therefore, the sound pressure gain induced by the pinnae at ultrasonic frequencies (>60 kHz; Figure 3 and Figure 5A) should produce sufficient tympanal displacement to induce a response in the auditory receptors, without amplification by the ear canal. Electrophysiological recordings of the auditory nerve from our experiments show a significant neural response to a broad range of frequencies (23–120 kHz) and sound pressures (46–94 dB SPL; Figure 5C and Figure 5—figure supplement 1, B), demonstrating that C. gorgonensis can detect very high ultrasonic frequencies.
 
-## Ear pinnae as ultrasound detectors
+### Ear pinnae as ultrasound detectors
 
 Many papers testing the auditory role of pinnae in katydids were inconclusive, and limitations of equipment meant that researchers focused on testing the tympanal organ’s response to conspecific frequencies. Autrum, 1940; Autrum, 1942; Autrum, 1963 based his theory of the role of the pinnae in directional hearing on the assumption that sound acts only on the outer surface of the two tympana and did not consider the effect of sound entering the acoustic spiracle and ear canal, which was shown later, by other authors, to be the main source for acoustic orientation. Here we argue in support of Lewis, 1974b original observations that the pinnae in katydid ears act as ultrasound detectors. However, it is likely that some katydids do not use spiracular inputs, and that conspecific localization and predator detection depend solely on the external input (see below).
 
@@ -117,7 +657,7 @@ Pinnal asymmetry produces different resonances in the pinnal cavities, and these
 
 In C. gorgonensis, the dual inputs of the spiracle and the four external inputs function as a frequency range compensation system. As previously shown for C. gorgonensis (Celiker et al., 2020a), and in other species with large acoustic spiracles (Heinrich et al., 1993; Michelsen et al., 1994), the ear canal with its finite horn geometry acts as a highpass filter, but with limited capabilities in providing pressure gains to high ultrasonic frequencies (<60 kHz, for C. gorgonensis) (Lewis, 1974a). In C. gorgonensis the ear canal enhances detection of the conspecific carrier frequency. While the reduction in sound velocity within the ear canal (~16% delay in C. gorgonensis, Veitch et al., 2021) contributes exceptional binaural directional cues, the external input provides in-real-time sensitivity to exploit fading bat ultrasounds, and to detect incoming bats from the onset of the echolocation sweep. Hence the ear canal is a less efficient method of bat detection as the angle of incidence and the reduction of sound velocity could delay reaction times and obfuscate the localisation of the predator. This suggests that katydids without pinnae should either exhibit other strategies for ultrasound detection, such as in the ear canal morphology, or not require the detection of ultrasounds exceeding ~60 kHz.
 
-## Bat detection by katydid ear pinnae
+### Bat detection by katydid ear pinnae
 
 Katydids form a key part of the diet of many insectivorous bat species worldwide (Arlettaz et al., 1993; Buchler and Childs, 1981; Davison and Zubaid, 1992; Fenton and Royal Ontario Museum, 1975; LaVal and LaVal, 1980; Raghuram et al., 2015; Whitaker and Black, 1976; Zhang et al., 2005). However, such ecological interactions have been more intensively studied in the Neotropical regions. Gorgona Island, Colombia, is home to over 33 bat species including at least three substrate gleaning bats of the neotropical leaf-nosed bat family Phyllostomidae (Murillo et al., 2014). The habitat of C. gorgonensis is in cluttered vegetation of the tropical forest understory (Montealegre-Z et al., 2014). In such environments, acoustic signals are heavily attenuated (Romer and Lewald, 1992), which leads to significant transmission loss (Rheinlaender and Romer, 1986; Wiley and Richards, 1978). Nevertheless, insects have evolved a variety of sophisticated receivers to perform call discrimination in these acoustically challenging environments (Römer, 1993). Neotropical katydids evolved behavioural and hearing strategies for survival against substrate gleaning bats (Belwood, 1990; Belwood and Morris, 1987; Nickle and Castner, 1995; ter Hofstede et al., 2010; Ter Hofstede et al., 2017). Acoustic adaptations by katydids to evade bat predation include the use of narrow bandwidths (tonal calls), high carrier frequencies, and sporadic calling in order to diminish signal proliferation in the environment (Belwood and Morris, 1987; Morris et al., 1994; Morris and Beier, 1982; Rentz, 1975; Heller, 1995). Certain adaptations are a trade-off as the katydid becomes more conspicuous and vulnerable to other predators as the communication method changes. For example, katydids that perform vibrotaxis can likely attract spiders, scorpions (Robinson and Hall, 2002) and primates, as well as bats (Geipel et al., 2020). Likewise, bats foraging in the cluttered understory also face similar acoustic shortcomings, affecting their echolocation abilities (Page et al., 2020; Geipel et al., 2020). Thus, several phyllostomid substrate gleaning bats are very well adapted to hear prey-produced cues like rustling noises or mating calls, including those of male katydids (Belwood and Morris, 1987; Falk et al., 2015; Geipel et al., 2021). At least one common gleaning bat species, Micronycteris microtis (Phyllostomidae), uses a sophisticated echolocation strategy to detect katydids concealed in vegetation (Geipel et al., 2019; Geipel et al., 2013). Despite their passive acoustic defences, calling from sheltered locations and being equipped with very large mandibles and sharp fastigia, katydids like C. gorgonensis are predated by phyllostomid bats (Ter Hofstede et al., 2017).
 
@@ -127,7 +667,7 @@ These broad responses to ultrasound are common in several pinnae-bearing katydid
 
 The pressure – time difference receiver of many katydids is a unique system that can capture different ranges of frequencies between the multiple entry inputs that can obviate the limitations of each but is also capable of compensating for limitations in auditory orientation (Michelsen et al., 1994; Veitch et al., 2021). For katydids, incident sounds from elevation are difficult to perceive (Römer, 2020). Hence, the ability of the ears to be physically positioned and rotated in accordance with the movement of the foretibial leg joints (Autrum, 1940; Autrum, 1963) permits the ear to hear elevated sounds. For ultrasonic reception, a total of four external inputs (left and right anterior and posterior tympana) plus the sub-slit cavities asymmetrically recessed to the distal end, may be behaviourally articulated to enhance the detection of bats calling from elevated positions toward the katydids. The physical separation between the external inputs of each ear should yield sufficient binaural cues, and merits further investigation.
 
-## Ideas and Speculation: Katydid ear pinnae and the fossil record
+### Ideas and Speculation: Katydid ear pinnae and the fossil record
 
 The presence of ear pinnae in katydids in the fossil record is known from late Eocene (Gorochov, 2010), but has been neglected. Katydid ancestors (e.g. Haglidae and Prophalangopsidae from Upper Jurassic; Gu et al., 2012; Plotnick and Smith, 2012) and early katydids (Tettigoniidae) from the middle Paleogene (early Eocene; Greenwalt and Rust, 2014; Rust et al., 1999) all show naked tympana without pinnae (likely the plesiomorphic condition). Auditory pinnae may have evolved as a relatively recent apomorphic character in the family Tettigoniidae for more sophisticated hearing in bat detection. The earliest echolocating bats are from the early Eocene, ~55 mya (Teeling et al., 2005). The fossil record places a potential emergence of pinnae some 40–44 mya (Gorochov, 2010). Analogous ear pinnal adaptations are observed in some Eneopterinae crickets (tribe Lebinthini) (Schneider et al., 2017), which differ from field crickets in their use of high frequencies for specific communication (12–28 kHz). These crickets also emerged in the Eocene (Vicente et al., 2017) and while their ancestors exhibit only one (posterior) functional tympanum, the extant forms show two functional, asymmetric tympana, with the anterior tympanum covered by pinnae (Schneider et al., 2017). Such adaptations suggest a new paradigm of the dual role of the ears, in detecting conspecific and bat echolocation calls. As a working hypothesis, we propose that ear pinnae have a unique origin across the ca. 8,100 living species of Tettigoniidae (Cigliano et al., 2021) in response to the emergence of bats during the early Eocene, and that it was subsequently lost or modified several times.
 
@@ -137,11 +677,11 @@ Other adaptions involve dwelling in dense vegetation that challenges hunting bat
 
 ## Materials and methods
 
-## Specimens
+### Specimens
 
 Copiphora gorgonensis (Tettigoniidae: Copiphorini) is endemic to Gorgona National Natural Park, Colombia (02°58′03″N 78°10′49″W). The original generation of the species were imported to the UK under the research permit granted by the Colombian Authority (DTS0-G-090 14/08/2014) in 2015. The specimens were ninth generationfrom captive bred colonies maintained at 25 °C, 70% RH, light: day 11 h: 23 h. They were fed ad libitum diet of bee pollen (Sevenhills, Wakefield, UK), fresh apple, dog food (Pedigree Schmackos, UK) and had access to water. Live experiments were conducted on seven adults of C. gorgonensis from our laboratory breeding colonies at the University of Lincoln (Lincoln, UK). Following experimentation, these specimens plus an additional four females already stored in ethanol were micro-computed tomography scanned for finite element modelling; totalling 17 ears (10 female, 7 male). Live specimens were subsequently preserved in 100% ethanol-filled jars and stored in a freezer at –22 °C at the University of Lincoln.
 
-## Simultaneous recordings of tympanal vibrations using laser Doppler Vibrometry
+### Simultaneous recordings of tympanal vibrations using laser Doppler Vibrometry
 
 Insects were chemically anesthetized using triethylamine-based agent FlyNap (Carolina Biological Supply, USA) for 15 min prior to the mounting process, and remained awake throughout the duration of the experiment. The animals were dorsally mounted using a specialized platform to isolate the external and internal sound inputs and also mimic their natural stance (Figure 2—figure supplement 1). A rosin-beeswax mix was used to fix the pronotum, and the mid- and hindlegs, to the mount. This specialized platform (Jonsson et al., 2016) consists of two Perspex panels (1.61 mm thick) that are joined by latex and suspended in the air by a 12 × 12 mm metal frame attached to a micromanipulator (World Precision Instruments, Inc, USA; see Montealegre-Z et al., 2012). At the Perspex junction, the forelegs of the insect were extended through arm holes cut in the Perspex and attached on a rubber block with metal clasps. A metal clasp was placed on each foretibia and forefemur (total of 4) to arrest foreleg motion. The arm holes and frame borders were sealed with latex to block sound propagation to the spiracle.
 
@@ -153,15 +693,15 @@ The sensor heads were manually focused on the external tympanal surface using th
 
 After recording the vibrations for both ears of the tested individual, the cuticular pinnae were carefully excised using a razor blade (taking care not to damage the tympanal organs or the fine layer of tissue ventrally connected to the tympanal membranes). The measurements were repeated for each ear following the same protocol.
 
-Time and displacement measurements were analysed by identifying the second oscillation of the four-cycle tone generated waves in each software window (PSV 9.4 Presentation software, Polytec, Germany). Phase calculations were obtained using the equation φ∘=360∘×f×Δt where f is frequency (kHz) and Δt (ms) the difference in arrival times between the anterior and posterior tympana.
+Time and displacement measurements were analysed by identifying the second oscillation of the four-cycle tone generated waves in each software window (PSV 9.4 Presentation software, Polytec, Germany). Phase calculations were obtained using the equation $\phi^{∘}=360^{∘}\timesf\timesΔt$ where f is frequency (kHz) and Δt (ms) the difference in arrival times between the anterior and posterior tympana.
 
-## Anatomical measurements of the external tympanal input
+### Anatomical measurements of the external tympanal input
 
 To produce 3D data for modelling, 17 ears of C. gorgonensis were scanned using a SkyScan 1172 X-ray micro-computed tomography scanner (Bruker Corporation, Billerica, MA, USA) with a resolution between 1.3 and 2.9 µm (55 kV source voltage, 180 µA source current, 300ms exposure and 0.1° rotation steps). As experimental procedures required removal of the cuticular pinnae, eight additional specimens with intact pinnae were scanned. The micro-computed tomography projection images were reconstructed with NRecon (v.1.6.9.18, Bruker Corporation, Billerica, MA, USA) to produce a series of orthogonal slices. The 3D segmentation of the ear, measurements of the ear cross section and width, and volumetric measurements of the pinnal cavities were performed with the software Amira-Aviso 6.7 (Thermo Fisher Scientific, Waltham, Massachusetts, USA). Micro-computed tomography stereolithography files (STL) were generated for numerical modelling using established protocols (Jonsson et al., 2016; Veitch et al., 2021) and to 3D print ear models.
 
 For 2D measurements of the cavity slit area, pinnal protrusion, and the distance between the pinnal cavities, an Alicona InfiniteFocus microscope (G5, Bruker Alicona Imaging, Graz, Austria) at 5× objective magnification was used to capture images of collection specimens with intact pinnae, with a resolution of about 100 nm (n = 8 ears).
 
-## 3D printed model time and frequency domain measurements of pinnal cavities
+### 3D printed model time and frequency domain measurements of pinnal cavities
 
 For time domain measurements, 3D models of the ears (n = 8; 1 male and 1 female ± pinnae) were placed on a micromanipulator arm with blu-tac (Bostik Ltd, Stafford, UK) and positioned frontally 30 cm from a MF1 loudspeaker at the same elevation. A 25 mm tipped B&K Type 4182 probe microphone (Brüel & Kjær, Nærum, Denmark) with a 1 × 25 mm (0.99″) probe tube length and 1.24 mm (0.05″) interior diameter, calibrated using a B&K Type 4237 sound pressure calibrator was placed ventral to the ear. The ear moved on the microphone using an electronic micromanipulator (TR10/MP-245, Sutter Instrument, Novato, California, USA), to a position 1 cm from the back of the cavity. Stimuli delivered were individually scaled to match the wavelength of a real-size ear (e.g. for a 1:10 scale printed model, the frequency delivered to simulate 120 kHz would be 120/10 = 12 kHz) to account for variation in printed model scaling. 3D printed models were scaled 1:11.43 (male 1:11.33; female 1:11.53) with the corresponding average scaled stimuli of 2.01 kHz for 23 kHz, 3.50 kHz for 40 kHz, 5.25 kHz for 60 kHz, and 9.63 kHz for 110 kHz. Four cycle pure tones were produced using the function generator, and the amplitude set to deliver 1 Pa to the microphone at each frequency. Received signals were amplified using a B&K 1708 conditioning amplifier (Brüel & Kjær, Nærum, Denmark), and acquired using a PSV-500 internal data acquisition board at a sampling frequency of 512 kHz. The microphone remained stationary during the experiments, nor was its direct path to the speaker obstructed. Instead, the microphone entered the ear via a drilled hole, allowing the pinnae to surround the tip of the microphone. Thus, the reported sound pressure gains result solely from the cavities of the 3D model, and not the motion of the microphone. When the microphone was positioned inside the cavities, the gap between the drilled hole and microphone probe was sealed with blu-tac to mimic the real cavity and avoid acoustic leaking (see Videos 1 and 2).
 
@@ -171,7 +711,7 @@ For comparative purposes, the ears of the following sympatric and pinnae-bearing
 
 To 3D print the ears of Copiphora gorgonensis, Ischnomela gracilis, Supersonus aquoreus and Eubliastes aethiops, micro-CT stereolithography files (STL) were imported into the software CHITUBOX 64 (Chitubox, Guangdong, China). The models were scaled to be approximately 12× larger than the actual ears. Support structures and a base printing platform were then added to support the model, with a 0.2 mm attachment thickness to the model. Supported models were delivered via USB to a Mars Elegoo Pro 2 3D Printer (Elegoo Inc, Shenzhen, China). Models were printed using grey ABS-like photopolymer resin (exposure parameters: 20 s first layer, 5 s normal layers) with a solidification wavelength of 405 nm. When printing was complete (about 1 hr 30 min), models were washed in 100% isopropyl alcohol, rinsed in cold water, then exposed to UV light in an Elegoo Mercury Plus curing station (Elegoo Inc, Shenzhen, China) for 8 min. To prepare the models for entry of the probe microphone into the pinnal cavities, 2 mm diameter holes were drilled into the centre of the base of each cavity (Figure 3).
 
-## Numerical modelling
+### Numerical modelling
 
 The mathematical models have been constructed as a scattering acoustic – structure interaction problem and simulate the acoustic response of the pinnal cavities to an incident plane acoustic wave in an air domain. Hence, the 3D model considers the interaction of the sound wave with the ear, for which realistic material properties have been incorporated. The air acoustic domain is truncated as a sphere with a 3 mm radius that is centered around the ear (Figure 4—figure supplement 1A). Two different geometries of the ears were taken as part of the mathematical model domain: pinnae intact and pinnae removed (Figure 4—figure supplement 1B).
 
@@ -179,41 +719,81 @@ The models were considered both in the frequency and the time domains, and were 
 
 For the numerical simulation of the problem, we solved a system of equations representing the sound pressure (SPL dB) inside and around the C. gorgonensis ear, resulting from the interaction of the ear with an incident plane acoustic wave in an air domain. The air acoustic domain is truncated as a sphere with a 3 mm radius that is centered around the ear (Figure 4—figure supplement 1A).
 
-Two different sets of mathematical models were considered in the described geometry, within the frequency and the time domains. For the frequency domain calculations, the solution to the Helmholtz equation(1)1ρΔpf+k2pf=0
+Two different sets of mathematical models were considered in the described geometry, within the frequency and the time domains. For the frequency domain calculations, the solution to the Helmholtz equation
 
-was considered for the acoustic system, where the parameters  ρ = is the density of air, k=ω/c is the wavenumber, ω is the angular frequency and  c = 343 m s−1 is the speed of sound in air. The variable pfx is the total pressure in the frequency domain, which is dependent on the 3D spatial variables x=x,y,z , and Δ=∂2∂x2+∂2∂y2+∂2∂z2 is the Laplace operator.
+$$
+\frac{1}{ρ}Δp_{f}+k^{2}p_{f}=0
+$$
 
-At the outer perimeter of the sphere, to allow for a radiated or scattered spherical wave to travel out of the modelling domain without reflections, a spherical radiation boundary condition was applied in the following form:(2)n.∇pf+(ik+1r)pf−rΔ||pf2(ikr+1)=n.∇pfi+(ik+1r)pfi−rΔ||pfi2(ikr+1)
+was considered for the acoustic system, where the parameters  $ρ$ = is the density of air, $k=\omega/c$ is the wavenumber, $\omega$ is the angular frequency and  $c$ = 343 m s−1 is the speed of sound in air. The variable $p_{f}x$ is the total pressure in the frequency domain, which is dependent on the 3D spatial variables $x=x,y,z$ , and $Δ=\frac{∂^{2}}{∂x^{2}}+\frac{∂^{2}}{∂y^{2}}+\frac{∂^{2}}{∂z^{2}}$ is the Laplace operator.
 
-where n is the normal vector, r is the distance from the source location, the operator Δ|| denotes the Laplace operator in the tangent plane at a particular point and i=-1 . This boundary condition was based on an expansion in spherical coordinates given in Bayliss et al., 1982 and implemented to the second order. The right-hand side of equation (2) allows for an incoming plane wave defined aspfi=e−ik(x.ek||ek||)
+At the outer perimeter of the sphere, to allow for a radiated or scattered spherical wave to travel out of the modelling domain without reflections, a spherical radiation boundary condition was applied in the following form:
 
-with magnitude 1 Pa and frequency ranging from 2 to 150 kHz. The wave travels from the direction ek , which was taken as normal to the front of the ear (point zero).
+$$
+n.∇p_{f}+(ik+\frac{1}{r})p_{f}−\frac{rΔ_{||p_{f}}}{2(ikr+1)}=n.∇p_{fi}+(ik+\frac{1}{r})p_{fi}−\frac{rΔ_{||p_{fi}}}{2(ikr+1)}
+$$
 
-The ear itself was considered as an isotropic shell system which allowed for the calculation of displacement and stresses resulting from the fluid load. The tympanal membranes were defined as a shell made of a homogeneous, linear elastic material with a Young’s modulus of 2 GPa, density of 1300 kg/ m3, Poisson’s ratio of 0.3, and thickness 5 μm (Montealegre-Z and Robert, 2015; Figure 4—figure supplement 1B). The rest of the ear was assumed to have a thickness of 175 μm and the same material properties as the tympana.
+where $n$ is the normal vector, r is the distance from the source location, the operator $Δ_{||}$ denotes the Laplace operator in the tangent plane at a particular point and $i=\sqrt{-1}$ . This boundary condition was based on an expansion in spherical coordinates given in Bayliss et al., 1982 and implemented to the second order. The right-hand side of equation (2) allows for an incoming plane wave defined as
 
-Finally, the continuity between the acoustic and shell systems was retained by accounting for the interaction between the two systems. After calculating the frequency response of the ear to the fluid load in the form of harmonic displacements and stresses, the model used the displacement magnitude of the solid surface in the acoustic domain inner boundary to ensure continuity. This is represented by the equationsn.1ρ∇pf=ω2Usf,FAf=pfn,
+$$
+p_{fi}=e^{−ik(\frac{x.e_{k}}{||e_{k}||})}
+$$
 
-At the intersection of the ear with the sphere, where Usf is the ear (shell) displacement and FAf is the load (force per unit area) experienced by the shell structure.
+with magnitude 1 Pa and frequency ranging from 2 to 150 kHz. The wave travels from the direction $e_{k}$ , which was taken as normal to the front of the ear (point zero).
 
-An analogous model was also considered in the time domain, for which instead of equation (1), the wave equationc2∆pt=∂2pt∂t2
+The ear itself was considered as an isotropic shell system which allowed for the calculation of displacement and stresses resulting from the fluid load. The tympanal membranes were defined as a shell made of a homogeneous, linear elastic material with a Young’s modulus of 2 GPa, density of 1300 kg/ $m^{3},$ Poisson’s ratio of 0.3, and thickness 5 μm (Montealegre-Z and Robert, 2015; Figure 4—figure supplement 1B). The rest of the ear was assumed to have a thickness of 175 μm and the same material properties as the tympana.
 
-was solved for in the acoustic domain, where ptx,t is the total pressure in the time domain, which is dependent on both the space variables x and the time variable t. The boundary condition (2) was also replaced by the time dependent spherical wave conditionn.∇pt+(1c∂pt∂t+1rpt)=n.∇pti+(1c∂pti∂t+1rpti),
+Finally, the continuity between the acoustic and shell systems was retained by accounting for the interaction between the two systems. After calculating the frequency response of the ear to the fluid load in the form of harmonic displacements and stresses, the model used the displacement magnitude of the solid surface in the acoustic domain inner boundary to ensure continuity. This is represented by the equations
 
-where the incident wave pti=sin(2πf0(t−x.ekc||ek||)) , at frequencies f0=23,40and60kHz.
+$$
+n.\frac{1}{ρ}\nablap_{f}=\omega^{2}U_{sf},
+$$
 
-Finally, the continuity of the acoustic and shell systems was ensured with the equationsn.1ρ∇pt=∂Ust2∂t2,FAt=ptn,
 
-at the intersection of the ear with the sphere, where Ust is the time dependent displacement of the ear and FAt is the time dependent load experienced by the shell structure.
 
-The numerical solution to the problem was obtained using the finite element method for the spatial variables in both the time and frequency domain simulations. For forming the finite-element mesh, the maximum diameter used for the tetrahedral elements in the sphere was hmax=c6×f0 , where c=343m/s and f0=150kHz (Figure 4—figure supplement 1B, B). Hence, even at the largest frequency considered, there were six tetrahedral elements per wavelength. Quadratic Lagrange elements were applied for the solution.
+$$
+F_{Af}=p_{f}n,
+$$
 
-For the time domain solution, the time variable was solved for using the Generalized alpha method, with a constant time step of  ∆t=160×150s, so that the Courant-Friedrichs-Lewy (CFL) condition (Courant et al., 1967), defined as CFL=c×hmax∆t was 0.1, which gives a reliable approximation of the solution.
+At the intersection of the ear with the sphere, where $U_{sf}$ is the ear (shell) displacement and $F_{Af}$ is the load (force per unit area) experienced by the shell structure.
 
-## Tympanal response to broadband stimulation
+An analogous model was also considered in the time domain, for which instead of equation (1), the wave equation
+
+$$
+c^{2}\Deltap_{t}=\frac{\partial^{2}p_{t}}{\partialt^{2}}
+$$
+
+was solved for in the acoustic domain, where $p_{t}x,t$ is the total pressure in the time domain, which is dependent on both the space variables $x$ and the time variable $t$. The boundary condition (2) was also replaced by the time dependent spherical wave condition
+
+$$
+n.∇p_{t}+(\frac{1}{c}\frac{∂p_{t}}{∂t}+\frac{1}{r}p_{t})=n.∇p_{ti}+(\frac{1}{c}\frac{∂p_{ti}}{∂t}+\frac{1}{r}p_{ti}),
+$$
+
+where the incident wave $p_{ti}=sin(2\pif_{0}(t−\frac{x.e_{k}}{c||e_{k}||}))$ , at frequencies $f_{0}=23,40and60kHz$.
+
+Finally, the continuity of the acoustic and shell systems was ensured with the equations
+
+$$
+n.\frac{1}{ρ}\nablap_{t}=\frac{\partialU_{st}^{2}}{\partialt^{2}},
+$$
+
+
+
+$$
+F_{At}=p_{t}n,
+$$
+
+at the intersection of the ear with the sphere, where $U_{st}$ is the time dependent displacement of the ear and $F_{At}$ is the time dependent load experienced by the shell structure.
+
+The numerical solution to the problem was obtained using the finite element method for the spatial variables in both the time and frequency domain simulations. For forming the finite-element mesh, the maximum diameter used for the tetrahedral elements in the sphere was $h_{max}=\frac{c}{6\timesf_{0}}$ , where $c=343m/s$ and $f_{0}=150kHz$ (Figure 4—figure supplement 1B, B). Hence, even at the largest frequency considered, there were six tetrahedral elements per wavelength. Quadratic Lagrange elements were applied for the solution.
+
+For the time domain solution, the time variable was solved for using the Generalized alpha method, with a constant time step of  $\Deltat=\frac{1}{60\times150}s,$ so that the Courant-Friedrichs-Lewy (CFL) condition (Courant et al., 1967), defined as $CFL=\frac{c\timesh_{max}}{\Deltat}$ was 0.1, which gives a reliable approximation of the solution.
+
+### Tympanal response to broadband stimulation
 
 For the tympanal tuning measurements, we exposed seven specimens (4 males, 3 females) to free field broadband (periodic chirp 20–120 kHz) stimulation presented by an ipsilaterally positioned SS-TW100ED Super-Tweeter (Sony, Tokyo, Japan) with a 20 kHz built-in high-pass filter using an Avisoft Bioacoustics Ultrasonics Power Amplifier (Avisoft Bioacoustics, Glienicke/Nordbahn, Germany). A rosin-beeswax mix was used to fix the pronotum, and the mid and hind legs, to the mount (see Montealegre-Z et al., 2012) after the insects were chemically anesthetized using FlyNap. Insects were then elevated to the same level as the LDV and positioned 15 cm from the loudspeaker. A 1/8” B&K Type 4138 microphone was placed about 3 mm in front of the ear of interest and recorded the stimulus. Mechanical responses were acquired using a PSV-500 internal data acquisition board at a sampling frequency of 512 kHz. The amplitude was corrected to maintain 60 dB SPL at all frequencies. Data was collected as magnitude (velocity/sound pressure).
 
-## Behavioural audiograms
+### Behavioural audiograms
 
 Behavioural audiograms were measured from nine tethered female (n = 9) C. gorgonensis to test behavioural response thresholds to controlled auditory stimuli (20–120 kHz). Specimens were tethered from the pronotum to control for a constant position sound pressure, while the specimen walked on a foam rotating cylinder. The cylinder (15 cm diameter × 15 cm deep) was customised by the Foam Superstore. The cylinder freely rotated on a rod crossing along its longitudinal axis, with each end resting on the centre of a Hard Disk Drive Spindle Wheel (custom designed using parts of old computer hard drives). These wheels produce smooth rotation of the rod and cylinder that do not disturb the insect. Specimens were glued from the pronotum to a 25 cm wooden rod (4 mm diameter) using bees wax (Fisher Scientific UK, Limited, Leicestershire, UK) and colophony resin (Sigma-Aldrich Co. St. Louis, MO, USA; Product No. 60895–250 G) in a 1:1 mix. The wooden rod was held by a micromanipulator which allows positioning of the insect on the rotating foam cylinder. Each specimen was left to adapt to the new situation for 15 min, before the experiment started. This experimental setup was mounted on a Pneumatic Vibration Isolation Table (B120150B) supported by an anti-vibration frame (PFA52507). All experiments were conducted inside an acoustic booth (AC Acoustics, Series 120a, internal dimensions of 2.8 m × 2.7 m × 2.7 m). A disadvantage of the treadmill used here was that the insect is forced to walk in the forward direction, different to other more sophisticated air-cushioned spherical treadmill systems that allow movement in any direction (Hedwig and Poulet, 2004; Mason et al., 2001). However, since we were not interested in directional responses, but only on startle behaviour, this simple treadmill was useful.
 
@@ -223,7 +803,7 @@ At each frequency (20 : 5 : 120 kHz), pure tones of 10ms duration were played at
 
 For purposes of analysis, for each specimen the threshold at each frequency was annotated in a matrix for further calculation of mean vector and standard deviations. Not all specimens showed consistent response at all frequencies and treatments, and if no response was shown to a particular stimulus, but the specimen was shown response to other stimuli, the missing response was entered as NaN (missing value identifier for Matlab matrix computation; see Table 3).
 
-## Neural audiograms
+### Neural audiograms
 
 Suction electrode recordings were obtained from the auditory nerves of five adult C. gorgonensis following previously described methods (Isaacson and Hedwig, 2017). Briefly, animals were restrained dorsal side up in plasticine with their acoustic spiracles and tympana exposed to the air. One auditory nerve was sampled per animal, which was accessed by removing a small window of cuticle from a front femur and dissecting away any obstructing material. A pre-prepared polycarbonate electrode (1 mm outer diameter; 0.5 mm internal diameter; pulled by hand over a soldering iron and cut to a terminal internal aperture of ~40 µm) was filled with HEPES-buffered saline that had been made viscous with 4% Tylose H200 NP2 (ShinEtsu, Wiesbaden, Germany) to prevent leakage from the tip. The electrode was fitted into a custom-made holder, with a platinum wire inserted into the saline. The electrode tip was then placed onto the auditory nerve using a micromanipulator, and sealed using gentle suction. A platinum reference electrode was inserted into a small incision in the distal tibia.
 
@@ -231,13 +811,13 @@ Whole-nerve activity in response to sound was recorded using a differential ampl
 
 Recordings were digitized using a Micro1401 mk II (Cambridge Electronic Design (CED), Cambridge, UK) for observation and storage for later analysis on a PC using Spike2 (CED) software. Stimuli consisted of 10 repeats of 500 ms sound pulses followed by 500 ms silent periods. Frequency (11 pure tones ranging from 23 to 120 kHz) and SPL (9 levels ranging from 46 to 94 dB in 6 dB increments) were systematically altered for a total of 99 combinations. Individual action potentials from auditory afferents were too small to be individually identified and characterised amidst all the other neuronal activity in the nerve. Therefore, recordings for each train of 10 stimuli were root-mean-square transformed (time constant 0.66 ms) to convert the neuronal traces into positive displacements from zero and averaged. This allowed the neuronal response to sound to be characterised as an area, with units of µVs. An averaged response to each train of ten pulses and succeeding silent periods per sound intensity and frequency was produced in Spike2. The response area to 475 ms of sound stimulus (excluding the transient ‘on’ response immediately after the onset of a sound pulse) and an equivalent 475 ms in the succeeding silent period was measured in each averaged response. The mean areas of response (in microvolt s, µVs) during the presentation of each different sound stimulus was compared to the mean response during the subsequent silent period in each animal (n = 5) using paired t-tests.
 
-## Echolocation calling frequencies of co-occurring bats and insect call recordings
+### Echolocation calling frequencies of co-occurring bats and insect call recordings
 
 Echolocation calls of phyllostomid bats (Chiroptera: Phyllostomidae) native to Gorgona Island (Gardnerycteris crenulatum, Tonatia saurophila and Micronycteris microtis) were recorded in a small indoor flight cage (1.4 × 1.0 × 0.8 m) located in Gamboa, Panama, in which they were allowed to fly. The echolocation calls were recorded via an ultrasound condenser microphone (2–200 kHz frequency range, ± 3 dB frequency response between 25 and 140 kHz; CM16, CMPA preamplifier unit, Avisoft Bioacoustics, Glienicke, Germany) and real time ultrasound acquisition board (6 dB gain, 500 kHz sampling rate, 16 bit resolution; UltraSoundGate 116Hm, Avisoft Bioacoustics, Glienicke, Germany) connected to a laptop (Think Pad X220, Lenovo, Beijing, China), with a corresponding recording software (Avisoft RECORDER USGH, Avisoft Bioacoustics, Glienicke, Germany). The calls were analyzed with the sound analysis software Avisoft SASLabPro (5.2.15, Avisoft Bioacoustics, Glienicke, Germany), using automatic measurements. For details on the recordings and analysis, please refer to Geipel et al., 2021. Recording the bat echolocation calls followed the ABS/ASAB guidelines for ethical treatment of animals and were approved by the Government of Panamá (Ministerio de Ambiente permit SE/A-5–19) and the Smithsonian Tropical Research Institute (STRI ACUC protocol 2019-0302-2022).
 
 Sound recordings of the male C. gorgonensis calling song were performed in a sound-attenuated booth at the Sensory Biology Lab, University of Lincoln at a temperature of 25 °C and relative humidity of 40%. The specimens were placed on a metallic screen cage at 10 cm from a 1/8” microphone (B&K Type 4138 omnidirectional microphone), connected to a 1/4” preamplifier (B&K Type 2670) and set to a conditioning amplifier (Nexus 2690-OS1). The microphone was calibrated at 94 dB SPL (re 20 µPa), using a B&K sound level calibrator (B&K Type 4231, Brüel & Kjaer, Nærum, Denmark). Data was obtained via an acquisition board (PCI-6110, National Instruments, Austin, TX, USA) and stored on a computer hard disk at a sampling rate of 512 kHz using the Polytec acquisition software (PSV 9.0.2, Polytec GmbH, Waldbronn, Germany). Sound was analyzed using Matlab (R2015a, The MathWorks, Inc, Natick, MA, USA) (Figure 6—figure supplement 1C).
 
-## Statistical analyses
+### Statistical analyses
 
 Using empirical data we tested the effect of cuticular pinnae on tympanal responses [in displacement amplitude (natural log transformed) and arrival time] to incident sound, we fitted linear mixed models (LMM) with angle (–10° to 10°, quadratic polynomial continuous variable) as a covariate and presence of pinnae (y/n), frequency (23, 40, and 60 kHz, categorical variable), tympanum (anterior or posterior) as fixed factors. We included the interactions between angle and pinnal presence and between pinnal presence and frequency. To model the curvature in the response surface of the pinnal enclosed tympanum, angle was fitted as a quadratic polynomial with 0o at point zero. The interaction of angle and pinnae was fitted as such to show the restriction of pinnal structures in both time and displacement to the response surface. To account for repeated measures of the same specimen, we nested leg (left or right) within individual specimens as a random factor. We carried out post hoc tests between pinnae (y/n) at each frequency using estimated marginal means from the package emmeans (Lenth and Lenth, 2018).
 

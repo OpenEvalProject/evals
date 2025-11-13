@@ -39,19 +39,35 @@ To bring data science to this problem, we engineered a multi-step data extractio
 
 ## Results
 
-## High-Resolution live imaging and 3D Single-Cell segmentation of the zebrafish Posterior Lateral Line Primordium
+### High-Resolution live imaging and 3D Single-Cell segmentation of the zebrafish Posterior Lateral Line Primordium
 
 The application of data-driven approaches to relevant problems in developmental biology depends on high quality input datasets of the tissue of interest. A data-driven analysis of cellular architecture thus requires high-resolution imaging followed by automated segmentation of individual cells. As developing embryos are large 3D specimens, it is beneficial to use a microscopy method that allows optical sectioning of defined axial z-planes. Here, we employed AiryScan FAST mode confocal microscopy (Huff, 2016) to achieve high signal-to-noise ratios and high axial resolution – both of which greatly facilitate 3D segmentation – whilst maintaining a sufficiently high acquisition speed for live imaging of a migrating tissue (~20 s/channel). In this way, we acquired a large set of single and dual channel volumes of wild-type primordia during migration, staged such that the pLLP is located above the posterior half of the embryo's yolk extension (32-36hpf, N = 173 samples in total). All of our samples expressed the bright cell membrane label cldnb:lyn-EGFP (Haas and Gilmour, 2006; Figure 2A, Figure 2—video 1) and many additionally expressed a red or far-red label for an internal cellular structure (see table in Supplementary file 1 for a complete overview).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/55913/elife-55913-fig2-v1.jpg)
+
+**Figure 2.:** (A) Maximum z-projection of a deconvolved 3D volume of the pLLP acquired using the LSM880 AiryScan FAST mode. (B) The same primordium shown with a semi-transparent color overlay of the corresponding single-cell segmentation. (C) Expanded view of the same primordium; individual segmented cells have been shifted apart without being rescaled or deformed, revealing their individual shapes within the collective. Note that the segmentation faithfully recapitulates the diversity of cell shapes within the pLLP, with the exception of fine protrusions. Since the protrusions of follower cells are often impossible to detect against the membranes of the cells ahead of them, we decided not to include fine protrusions in our analysis. All scale bars: 10 μm.
 
 To segment cells, we combined commonplace image processing algorithms into a specialized automated pipeline that uses labeled membranes as its sole input (see materials and methods for details). We found that our pipeline reliably produces high-quality segmentations (Figure 2B, Figure 2—video 2) and that erroneously split or fused cells are rare. To further ensure consistent segmentation quality, each segmented stack was manually double-checked and rare cases of stacks where more than approx. 10% of cells had been either missed, split or fused were excluded (8 of 173; 4.62%). An expanded visualization of a representative segmentation (Figure 2C, Figure 2—video 3) allows the diversity of cell shapes in the lateral line and their relationship with overall tissue architecture to be appreciated in a qualitative fashion.
 
 Overall, we collected n = 15,347 segmented cells from N = 165 wild-type primordia as the basis for our quantitative analysis. Unless otherwise specified, the results presented in this study are based on this dataset.
 
-## Point Cloud-Based morphometry for unbiased quantification of cellular architecture
+### Point Cloud-Based morphometry for unbiased quantification of cellular architecture
 
 Most data science techniques require input data in a specific form, namely a feature space, which consists of a vector of numerical features for each sample and hence takes the shape of a 2D samples-by-features array (see Figure 1C). Even when segmented, confocal volumes of cells do not conform to this standard. Thus, numerical features must be extracted from volumetric image data. This can be achieved by simply measuring specific aspects of each cell such as volume or eccentricity (feature engineering) but for exploratory analysis it is preferable to derive an unbiased encoding of 3D image information into a 1D feature vector (feature embedding). This non-trivial task has previously been tackled in a number of ways (Pincus and Theriot, 2007; Peng and Murphy, 2011; Rajaram et al., 2012; Tweedy et al., 2013; Kalinin et al., 2018), however no readily applicable solution for feature embedding of both cell morphology and subcellular protein distributions from segmented 3D images has been described to our knowledge.
 
 We therefore developed a novel method that allows feature embedding of arbitrary fluorescence intensity distributions. As a starting point, we took a standard workflow from the field of geometric morphometrics, which consists of four steps (Adams et al., 2013; Figure 3A):
+
+![Figure 3.](https://cdn.elifesciences.org/articles/55913/elife-55913-fig3-v1.jpg)
+
+**Figure 3.:** (A) A classical workflow in landmark-based geometric morphometrics. (B) Adapted workflow for morphometrics of arbitrary fluorescence intensity distributions. See Figure 3—figure supplement 1 for a more detailed version. (C) Illustration of ISLA, our algorithm for conversion of voxel-based 3D images to representative point clouds. Shown are a slice of an input image (left), here a membrane-labeled cell in the pLLP (scale bar: 2 μm), the landmarks sampled from this image (middle), here oversampled compared to the standard pipeline for illustration purposes, and the resulting 3D point cloud (right). (D) Illustration of CBE, our algorithm for embedding point clouds into a feature space. In this 2D mock example, two cells are being embedded based on point clouds of their outlines (left). CBE proceeds by performing clustering on both clouds combined (middle) and then extracting the distances along each axis from each cluster center to the centroid of its ten nearest neighbors (right). Note that the most distinguishing morphological feature of the two example cells, namely the outcropping of cell a at the bottom, is reflected in a large difference in the corresponding cluster's distance values (cluster 4, blue).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55913/elife-55913-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Flowchart of ISLA. To sample from intensity distributions, images are masked by setting voxels outside of the segmentation to zero and a simple background subtraction is performed. To sample from cell shapes, the 1vxl-wide outer shell of the segmentation is set to 1, all other voxels to zero. The resulting image is normalized and used to stochastically sample points for the point cloud. (B) Flowchart of CBE. Input point clouds of cells are either rotated according to a registration across tissues (Tissue Frame Of Reference, TFOR) or are volume-normalized and re-represented as a subset of the pairwise distances between points, removing size and rotational information (Cell Frame Of Reference, CFOR). A representative subset of the resulting clouds is overlaid and k-means clustering is performed on the overlay, yielding a set of common reference points. Finally, features are computed to describe each cell's point cloud relative to these common reference points, resulting in an embedded feature space. This feature space can be transformed with PCA to emphasize relevant variation across the sample population.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55913/elife-55913-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Performance in predicting different generative parameters of point clouds in a synthetic dataset from either a raw or a size- and rotation-corrected (cell frame of reference, CFOR) embedding. As expected, CFOR normalization removes all information on cloud size ('scaling') and orientation ('rotation' 1–2). Interestingly, removing this information allows the regressor to perform far better when it comes to the shape parameters of the point cloud ('shape' 1–14). The 'random' parameter is a random Gaussian distribution and serves as a negative control. The regressor used is a Support Vector Regressor (SVR) with an RBF-kernel. (B) Evaluation of CBE compared to an alternative embedding strategy based on moments. Shown is how well the parameters used to synthetically generate point clouds can be predicted from embeddings of said clouds using different regression models (kNN: k-Nearest Neighbor regressor, l-SVR: linear Support Vector Regressor, r-SVR: RBF-kernel Support Vector Regressor). Black dots indicate results of 3-fold cross-validation, bars indicate the mean. Moments-based embedding is outperformed by CBE in all cases except with linear SVR, where the results are similar.
 
 (1)conversion of image data – which is dense and regularly spaced in voxels – into a sparse point cloud of landmarks to facilitate computational transformations, (2) alignment of point clouds by registration to remove translational and rotational variance and hence retrieve pure shape information, (3) re-representation of landmark coordinates based on their deviation from a consensus reference common to all samples in order to arrive at features that are comparable across samples, and (4) dimensionality reduction by Principal Component Analysis (PCA) to find the most relevant features within the data. To adapt this classical workflow to make it applicable to 3D images of cells (Figure 3B, Figure 3—figure supplement 1), it was necessary for us to solve three key problems.
 
@@ -65,7 +81,7 @@ Third and finally, given that point clouds extracted by ISLA are not matched acr
 
 In summary, Cluster-Based Embedding (CBE) of point clouds obtained from 3D images by Intensity-biased Stochastic Landmark Assignment (ISLA) is an expressive and versatile embedding strategy for transforming arbitrary 3D fluorescence distributions into 1D feature vectors. It thus provides a solution to one of the key challenges facing data-driven analysis of tissue development by unpacking the rich information encoded in image stacks into a format that is accessible for further quantitative analysis.
 
-## The cellular shape space of a model tissue: The lateral line primordium
+### The cellular shape space of a model tissue: The lateral line primordium
 
 Cell shape links cellular mechanics with tissue architecture and is thus key to understanding morphogenesis in model tissues like the developing lateral line primordium. To gain a data-driven view of cell shape in this system, we applied the ISLA-CBE workflow to the cell boundaries of our segmented dataset, deriving an embedded feature space representing cell morphology across the tissue, which we termed the pLLP's cellular shape space. We found that the resulting Principal Components (PCs) describe meaningful shape variation (Figure 4A–B) and that a small number of PCs is sufficient to capture most of the shape heterogeneity across the tissue (Figure 4C). Interestingly, the cells of the pLLP do not cluster into discrete morphological groups (Figure 4A–B,D), implying a continuous shape spectrum between biologically distinct cells such as those at the tissue's leading edge and those at the center of assembled rosettes.
 
@@ -83,11 +99,19 @@ As established above, we found that CFOR-PC1 (sphericity) is a key component of 
 
 Taken together, these results illustrate how data-driven exploratory analysis of the cellular shape space can reveal interesting patterns of shape heterogeneity that are indicative of specific mechanisms of organization.
 
-## Data integration via machine learning on embedded features
+### Data integration via machine learning on embedded features
 
 A key strength of the ISLA-CBE pipeline is that it is not limited to embedding objects with continuous surfaces such as then cell plasma membrane. Instead, it is capable of embedding arbitrary intensity distributions, including those of the cytoskeleton, of organelles, or of any other labeled protein. Thus, ISLA-CBE can be used to analyze, and integrate, many aspects of cellular organization beyond morphology. This is of particular benefit when studying behaviors that are driven by the interaction of many cellular mechanisms, as is the case for tissue and organ shaping.
 
 Our dataset encompasses many dual-color stacks containing both labeled membranes and one of several other cellular structures, including nuclei (NLS-tdTomato, Figure 5A), F-actin (tagRFPt-UtrophinCH, Figure 5C), and the Golgi apparatus (mKate2-GM130, Figure 5E) (see table in Supplementary file 1 for a complete overview). For each of these structures we computed specific ISLA-CBE feature spaces (Figure 5B,D,F).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/55913/elife-55913-fig5-v1.jpg)
+
+**Figure 5.:** (A, C, E) Maximum z-projections of two-color stacks showing the membrane in magenta and one of three subcellular structures in yellow. (B, D, F) Tissue frame of reference (TFOR) CBE embeddings corresponding to the three structures shown in A, C and E. The different colors of points indicate different primordia. The three structures are nuclei (N = 20, n = 2528) (A–B), F-actin (N = 19, n = 1876) (C–D) and the Golgi apparatus (N = 11, n = 866) (E–F). (G) Bigraph showing correlations between the Golgi's embedded features and our engineered cells shape features (see Supplementary file 2). The first two Golgi TFOR PCs match those found in the cell shape TFOR space (see Figure 4E) whereas PCs 3 and 4 are specific to the Golgi. For technical details see the legend of Figure 4E. (H–I) Point cloud renderings showing the distribution of Golgi signal (blue, membranes in red) in two example cells, one with a high value in the Golgi's TFOR PC 3 (H) and one with a low value (I), illustrating that PC three captures apical enrichment of the Golgi. (J) Consensus tissue map for Golgi PC 3 (apical enrichment), showing increased values behind the leader zone. For technical details see the legend of Figure 4G.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55913/elife-55913-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Performance of different algorithms at predicting the embedded feature spaces of different secondary marker channels from embeddings of cell shape. The left column contains predictions from the cell shape CFOR space to subcellular structure CFOR spaces, the right column from cell shape TFOR space to subcellular structure TFOR spaces. Performance is quantified as variance-weighted average of r-squared values across target dimensions. Gray dots are the results from 3-fold cross-validation, blue bars are averages. The algorithms evaluated are a random assignment control (random), k Nearest Neighbors (kNN), the scikit-learn implementation of gradient boosting (boost), xgboost (xgb), random forest regression (forest), support vector regression (SVR), multi-layer perceptrons (MLP), multi-task Lasso regression (Lasso), and multi-task elastic nets (eNet). Note that TFOR predictions work far better than CFOR predictions, which may indicate that pure shape information is insufficient to predict key features of intracellular protein distributions, possibly because information on tissue context is lost. (B) Both for training and prediction, PCA-transformed feature spaces were used. Here, prediction quality is shown for each PC of an example channel, illustrating that high-variance PCs lend themselves to more accurate prediction than low-variance components, as expected given that the latter encode less meaningful variation and more noise. (C) Examples showing the correlation of resulting predictions with ground truths, again illustrating that high-variance PCs (left) can be fitted better than low-variance PCs (right).
 
 We sought to combine this intracellular information into an integrated quantitative atlas of cellular architecture. Such atlas integration of image data is usually performed in image space by spatial registration of samples (Peng et al., 2011; Vergara et al., 2017; McDole et al., 2018; Cai et al., 2018). However, registration requires stereotypical shapes that can be meaningfully overlaid via spatial transformations, so it is not readily applicable to developing tissues with non-stereotypical cellular positions. Machine learning can be employed as an alternative strategy for atlas mapping that side-steps this problem. Using a training set of dual-color images that contain both reference features (i.e. cell shape derived from the membrane label) and target features (i.e. the intracellular distribution of a specific protein), a machine learning model is trained to predict the target from the reference. The trained model can then be run on samples where only the reference (i.e. membranes) was imaged to generate predictions for the target (i.e. an intracellular protein). This strategy can be applied directly to microscopy images by means of deep convolutional neural networks (Johnson et al., 2017; Christiansen et al., 2018). However, such deep learning typically requires very large datasets that are usually unobtainable in developmental biology studies. Here, we instead chose to work in the embedded feature space, predicting ISLA-CBE embeddings of protein distributions based on ISLA-CBE embeddings of cell shape. This simplifies the problem such that smaller-scale machine learning algorithms become applicable.
 
@@ -99,13 +123,29 @@ Besides subcellular protein distributions, changes in gene expression are key dr
 
 To this end, we performed single-molecule Fluorescence In-Situ Hybridization (smFISH) of pea3 RNA (Figure 6A), a marker of FGFR signaling activity associated with the progression of follower cell development (Aman and Piotrowski, 2008; Durdu et al., 2014). We acquired 2-color stacks of smFISH probes and cell membranes from fixed samples (N = 31, n = 3149), employed automated spot detection to identify and count RNA molecules (Figure 6—figure supplement 1A–E) and embedded cell shapes with ISLA-CBE. We then used SVR to predict smFISH spot counts based on cell shape and location, finding that by combining all available information (the tissue frame of reference shape space, the cell frame of reference shape space and cell centroid coordinates) the trained model is able to account for 38.2 ± 1.9% of pea3 expression variance (Figure 6B). The residual variance that could not be accounted for is due to high cell-to-cell heterogeneity in pea3 expression among follower cells that does not seem to follow a clear spatial or cell shape-related pattern (Figure 6C). Nevertheless, we were able to recover the graded overall leader-follower expression pattern of pea3 when running predictions across the entire atlas (Figure 6D). Our approach could therefore be used to superimpose at least the key patterns of gene expression in a tissue based on a set of in-situ labeling experiments, which in turn could potentially serve as a reference set to incorporate scRNA-seq data (Stuart et al., 2019).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/55913/elife-55913-fig6-v1.jpg)
+
+**Figure 6.:** (A) Maximum z-projection of a two-color stack of pea3 smFISH (yellow) and the lyn-EGFP membrane marker (magenta). Scale bar: 10 µm. (B) Results of SVR regression on pea3 spot counts using TFOR and CFOR shape features as well as cell centroid coordinates of registered primordia as input. Each blue dot is a cell, the diagonal gray line reflects perfect prediction and blue arrows at the border point to outliers with very high spot counts. On training data, the regressor's explained variance ratio is 0.462 ± 0.011, on previously unseen test data it achieves 0.382 ± 0.019. (C–D) Consensus tissue maps of pea3 expression generated directly from the pea3 smFISH dataset (C) or from the full atlas dataset based on SVR predictions of spot counts (D). Note that the prediction for the entire atlas preserves the most prominent pattern – the front-rear gradient across the tissue – but does not capture the noisy heterogeneity among follower cells observed in direct measurements.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55913/elife-55913-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) Maximum z-projections of a two-color sample showing the lyn-EGFP membrane marker (A), the pea3 smFISH probe (B), and the results of automated spot detection with red rings denoting detection events (C). Scale bars: 10 µm. (D) Zoomed view of the region in the yellow box in (C). Scale bar: 2 µm. (E) pea3 smFISH spot counts for each cell, both from measured data (blue) and from predictions across the entire atlas dataset (purple). The left shows averages across primordia, which closely match those reported previously based on a different spot counting method (Durdu et al., 2014). The individual cell counts on the right show that there is a long tail of cells with extremely high counts, which as one would expect is not captured in the SVR predictions. (F–H) Comparisons of three important cell shape variables between fixed smFISH samples and live samples (here the set of live samples containing only the membrane label; N = 24, n = 2310), showing no significant difference.
+
 Data integration based on common reference measurements such as cell shape counters one of the major shortcomings of current-day fluorescence microscopy, which is the limited number of channels and thus of molecular components that can be imaged simultaneously. The approach demonstrated here shows how embedded feature spaces and machine learning can be utilized to perform such data integration even in non-stereotypically shaped samples.
 
-## Mapping of morphological archetypes facilitates biological interpretation
+### Mapping of morphological archetypes facilitates biological interpretation
 
 Feature embedding and atlas mapping enable the conversion of images into rich multi-dimensional numerical datasets. To take full advantage of this, biologically relevant patterns such as the relationships between different cell types, cell shapes and tissue context need to be distilled from these data and presented in a human-interpretable form. Accomplishing this in an automated fashion rather than by laborious manual data exploration remains a challenging problem in data science.
 
 Classically, data interpretation involves relating data to established knowledge. This prompted us to look for ways to encode contextual knowledge quantitatively and use it to probe our atlas in a context-guided fashion. When asking biological questions about pLLP development, it is useful to distinguish different cell populations: the leader cells that are focused on migration, the cells at the center of nascent rosettes that go on to form sensory hair cells later in development, the cells in the periphery of rosettes that will differentiate into so-called support and mantle cells and the cells in between rosettes (inter-organ cells) that will be deposited as a chain of cells between the maturing lateral line organs (Grant et al., 2005; Hernández et al., 2007; Nogare et al., 2017; Figure 7A). These four populations constitute simple conceptual archetypes that facilitate reasoning about the primordium's organization.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/55913/elife-55913-fig7-v1.jpg)
+
+**Figure 7.:** (A) A maximum z-projected example stack with colors highlighting different conceptual archetypes in the pLLP that have been manually annotated. (B) A low-dimensional archetype space resulting from a PCA of the SVC prediction probabilities (with the SVC having been trained on CFOR shape features). Cells are placed according to how similar they are to each archetype, with those at the corners of the tetrahedron belonging strictly to the corresponding archetype and those in between exhibiting an intermediate morphology. (C) Since inter-organ cells are not morphologically distinct enough at this stage (see Figure 7—figure supplement 1), the archetype space can be reduced to 2D without much loss of information. (D) Scatter plots of the 2D archetype space with additional information from the cellular shape space and from the protein distribution atlas superimposed in color. (E–F) Boxplots showing data grouped by predicted archetype labels. This form of grouping allows statistical analysis, showing that leader cells are flatter than any other class of follower cells (E) and that central rosette cells are more spherical than peripheral rosette cells (F). Whiskers are 5th/95th percentiles, p-values are computed with a two-sided Mann-Whitney U-test, and Cohen's d is given as an estimate of effect size.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/55913/elife-55913-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Confusion matrices for SVC archetype classification. The ground truth is based on manual annotation of high-confidence cases. Note that using TFOR features results in slightly better performance than using CFOR features, implying that rotational information and cell size are useful for prediction to some extent. Overall prediction accuracy is high but inter-organ cells are frequently mislabeled, in particular as peripheral cells, indicating that they are morphologically similar at this stage and thus difficult to distinguish based on shape features alone.
 
 To map archetypes into the tissue's cellular shape space, we manually annotated cells that constitute unambiguous examples for each archetype in a subset of samples (N = 26, n = 624) (Figure 7A). We then again used machine learning – specifically a Support Vector Classifier (SVC) – with either tissue or cell frame of reference shape features as input to predict the class of all unlabeled cells. For both sets of input features, we found that the classifier was readily able to distinguish leader cells, central cells and peripheral cells, confirming that these manually chosen archetypes are indeed morphologically distinct (Figure 7—figure supplement 1). The inter-organ cells, however, were frequently misclassified as peripheral or central cells, indicating that at this developmental stage they are not substantially different in terms of shape from other follower cells (Figure 7—figure supplement 1). This illustrates that mapping of manually annotated information into the atlas intrinsically provides an unbiased quality control of biological pre-conceptions, as classification fails for archetypes that are not distinguishable from others.
 
@@ -135,11 +175,266 @@ Collectively, the computational strategies presented in this study illustrate th
 
 ## Materials and methods
 
-## Animal handling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>cldnb:lyn-EGFP</td>
+      <td>doi:10.1016/j.devcel.2006.02.019</td>
+      <td>ZFIN ID:ZDB-TGCONSTRCT-070117–15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>cxcr4b:NLS-tdTomato</td>
+      <td>doi:10.1038/nature12635</td>
+      <td>ZFIN ID:ZDB-TGCONSTRCT-141217–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Actb2:mKate2-Rab11a</td>
+      <td>This paper</td>
+      <td></td>
+      <td>made with tol2kit, see section ‘Transgenic Fish Lines’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>LexOP:CDMPR-tagRFPt</td>
+      <td>This paper</td>
+      <td></td>
+      <td>made with tol2kit, see section ‘Transgenic Fish Lines’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>LexOP:B4GalT1(1-55Q)-tagRFPt; cxcr4b:LexPR</td>
+      <td>This paper</td>
+      <td></td>
+      <td>made with tol2kit, see section ‘Transgenic Fish Lines’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>atoh1a:dtomato</td>
+      <td>doi:10.1016/j.ydbio.2010.02.017</td>
+      <td>ZFIN ID:ZDB-TGCONSTRCT-100928–4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>6xUAS:tagRFPt-UtrCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>made with tol2kit, see section ‘Transgenic Fish Lines’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>cxcr4b:LexPR</td>
+      <td>doi:10.1038/nature13852</td>
+      <td>ZFIN ID:ZDB-TGCONSTRCT-170105–4</td>
+      <td>LexOP chemically inducible driver line</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>ETL GA346</td>
+      <td>doi:10.1073/pnas.0903060106</td>
+      <td></td>
+      <td>Gal4-UAS driver line</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>sp6:mKate2-Rab5a (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>made with tol2kit, see section ‘Transgenic Fish Lines’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>sp6:mKate2-GM130(rat) (plasmid)</td>
+      <td>doi:10.1242/jcs.026849</td>
+      <td></td>
+      <td>made with tol2kit, see section ‘Transgenic Fish Lines’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CDMPR FOR (D. rerio, full-length)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGGACAAGTTTGTACAAAAAAGCAGGCTGGATGTTGCTGTCTGTGAGAATAATCACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CDMPR REV (D. rerio, full-length)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGGACCACTTTGTACAAGAAAGCTGGGTCCATGGGAAGTAAATGGTCATCTCTTTCCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B4GalT1 FOR (D. rerio, 1-55Q)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGGACAAGTTTGTACAAAAAAGCAGGCTGGATGTCGGAGTCGGTGGGATTCTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B4GalT1 REV (D. rerio, 1-55Q)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGGACCACTTTGTACAAGAAAGCTGGGTCTTGTGAATTAACCATATCAGAGATAAATGAAATGTGTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rab5a FOR (D. rerio, full-length)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGGACAGCTTTCTTGTACAAAGTGGCTATGGCCAATAGGGGAGGAGCAACAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rab5a REV (D. rerio, full-length)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGGACAACTTTGTATAATAAAGTTGCTTAGTTGCTGCAGCAGGGGGCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rab11 FOR (D. rerio, full-length)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGGACAGCTTTCTTGTACAAAGTGGCTATGGGGACACGAGACGACGAATACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rab11 REV (D. rerio, full-length)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGGACAACTTTGTATAATAAAGTTGCCTAGATGCTCTGGCAGCACTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Quasar 670-conjugated Stellaris smFISH probes</td>
+      <td>LGC, Biosearch Technologies</td>
+      <td>smFISH probes</td>
+      <td>Targeted at D. rerio pea3 gene, see section ‘smFISH: Fixation, Staining and Imaging’</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat#:74106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAshredder</td>
+      <td>Qiagen</td>
+      <td>Cat#:79654</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III Reverse Transcriptase</td>
+      <td>Thermo Fisher Scientifc</td>
+      <td>Cat#:18080044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGEmMACHINESP6 Transcription Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MultiSite Gateway Pro</td>
+      <td>Invitrogen</td>
+      <td>Cat#:12537</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LysoTrackerDeep Red</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:L12492</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RU486</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:M8046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-phenylthiourea (PTU)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:P7629</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tricaine (MESAB)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:A5040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fiji</td>
+      <td>doi:10.1038/nmeth.2019</td>
+      <td>RRID:SCR_002285</td>
+      <td>imagej.net/Fiji</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Anaconda</td>
+      <td>Anaconda, Inc</td>
+      <td>RRID:SCR_018317</td>
+      <td>www.anaconda.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>python 2.7</td>
+      <td>Python Software Foundation</td>
+      <td>RRID:SCR_008394</td>
+      <td>www.python.org/psf</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ISLA</td>
+      <td>This paper</td>
+      <td>github.com/WhoIsJack/data-driven-analysis-lateralline (Hartmann, 2020; copy archived at https://github.com/elifesciences-publications/data-driven-analysis-lateralline)</td>
+      <td>See section ‘Data and Code Availability’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CBE</td>
+      <td>This paper</td>
+      <td>github.com/WhoIsJack/data-driven-analysis-lateralline</td>
+      <td>See section ‘Data and Code Availability’</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal handling
 
 Zebrafish (Danio rerio, RRID:ZFIN_ZDB-GENO-060919-1) were grown, maintained and bred according to standard procedures described previously (Westerfield, 2000). All experiments were performed on embryos younger than 3dpf, as is stipulated by the EMBL internal policy 65 (IP65) and European Union Directive 2010/63/EU. Live embryos were kept in E3 buffer at 27–30°C. For experiments, pigmentation of embryos was prevented by treating them with 0.002% N-phenylthiourea (PTU) (Sigma-Aldrich, St. Louis, US-MO) starting at 25hpf. For mounting and during live imaging, embryos were anaesthetized using 0.01% Tricaine (Sigma-Aldrich, St. Louis, US-MO).
 
-## Transgenic fish lines
+### Transgenic fish lines
 
 All embryos imaged carried the membrane marker cldnb:lyn-EGFP (Haas and Gilmour, 2006), which was used for single cell segmentation. In addition, different subsets of the main dataset carried one of the following red secondary markers: cxcr4b:NLS-tdTomato (nuclei) (Donà et al., 2013), Actb2:mKate2-Rab11a (recycling endosomes), LexOP:CDMPR-tagRFPt (trans-Golgi network and late endosomes), LexOP:B4GalT1(1-55Q)-tagRFPt (trans-Golgi), 6xUAS:tagRFPt-UtrCH (F-actin) or atoh1a:dtomato (transcriptional marker for hair cell specification) (Wada et al., 2010). Furthermore, in two subsets of the data a red marker was injected as mRNA, namely mKate2-GM130(rat) (cis-Golgi) (Pouthas et al., 2008) and mKate2-Rab5a (early endosomes). Finally, one subset of samples was treated with 1 μM LysoTracker Deep Red (Thermo Fisher Scientific, Waltham, US-MA) in E3 medium with 1% DMSO for 90 min prior to imaging. The exact composition of the main dataset is tabulated in Supplementary file 1.
 
@@ -149,7 +444,7 @@ Capped mRNA was produced by IVT using the mMESSAGEmMACHINE SP6 Transcription Kit
 
 The following plasmids were generated by MultiSite Gateway Pro Cloning (Invitrogen, Waltham, US-MA) based on the Tol2kit (Kwan et al., 2007): LexOP:CDMPR-tagRFPt (with cry:mKate2 transgenic marker), LexOP:B4GalT1(1-55Q)-tagRFPt (with cry:mKate2 transgenic marker), Actb2:mKate2-Rab11a (with clmc2:GFP transgenic marker), 6xUAS:tagFRPt-UtrCH (with cry:mKate2 transgenic marker), sp6:mKate2-GM130(rat) and sp6:mKate2-Rab5a. tagRFPt (Shaner et al., 2008) and UtrCH (Burkel et al., 2007) were kindly provided by Jan Ellenberg and Péter Lénárt, respectively. Zebrafish CDMPR, B4GalT1, Rab5a and Rab11a were cloned by extraction of total RNA from dechorionated 48hpf zebrafish embryos using the RNeasy mini kit (Qiagen, Hilden, Germany) and QIAshredder (Quiagen, Hilden, Germany) according to manufacturer's instructions, followed by reverse transcription with SuperScript III Reverse Transcriptase (Thermo Fisher Scientific, Waltham, US-MA) using both random hexamers and oligo-dT simultaneously, according to the manufacturer's instructions, and finally amplification of genes of interest from cDNA with the following oligonucleotides (Sigma-Aldrich, St. Louis, US-MO) (template-specific region underlined):
 
-## High-Resolution live imaging
+### High-Resolution live imaging
 
 Embryos were manually dechorionated with forceps at 30-34hpf and anaesthetized with 0.01% Tricaine (Sigma-Aldrich, St. Louis, US-MO), then transferred into 1% peqGOLD Low Melt Agarose (Peqlab, Erlangen, Germany) in E3 containing 0.01% Tricaine and immediately deposited onto a MatTek Glass Bottom Microwell Dish (35 mm Petri dish, 10 mm microwell, 0.16–0.19 mm coverglass) (MatTek Corporation, Ashland, US-MA). No more than 10 embryos were mounted in a single dish. A weighted needle tool was used to gently arrange the embryos such that they rest flatly with their lateral side directly on the glass slide. After solidification of the agarose, E3 containing 0.01% Tricaine was added to the dish. Embryos were imaged at 32-36hpf, when the pLLP was located above the posterior half of the embryo's yolk extension.
 
@@ -157,7 +452,7 @@ The microscope used for imaging was the Zeiss LSM880 with AiryScan technology (C
 
 Note that optimal image quality could only be achieved by adjustment of the stage to ensure that the cover glass is exactly normal to the excitation beam. For each dish we imaged, we used 633 nm reflected light and line scanning to get a live view of the cover glass interface, which allowed us to manually adjust the pitch of the stage to be completely horizontal. This process was repeated for both zx and zy line scans.
 
-## smFISH: Fixation, Staining and Imaging
+### smFISH: Fixation, Staining and Imaging
 
 Single molecule Fluorescence In-Situ Hybridization (smFISH) was performed according to standard protocols (Durdu et al., 2014; Raj et al., 2008) using previously published Quasar 670-conjugated Stellaris smFISH probes (LGC, Biosearch Technologies, Hoddesdon, UK) designed to target pea3 mRNA, listed below.
 
@@ -167,7 +462,7 @@ Stained embryos were mounted on glass slides using VECTASHIELD HardSet Antifade 
 
 The following smFISH probes were used:
 
-## Software development stack
+### Software development stack
 
 The software for this study was developed using the Anaconda distribution (Anaconda, Inc, Austin, US-TX) of python 2.7.13 (64-bit) (Python Software Foundation, Beaverton, US-OR) (Van Rossum, 1995).
 
@@ -175,17 +470,31 @@ The following scientific libraries and modules were used: numpy 1.11.3 (Travis a
 
 Jupyter Notebooks (jupyter 1.0.0, notebook 5.3.1) (Kluyver et al., 2016) were utilized extensively for prototyping, workflow management and exploratory data analysis, whereas refactoring and other software engineering was performed in the Spyder IDE (spyder 3.2.4) (Raybaut et al., 2018). Version control was managed with Git 2.12.2.windows.2 (Torvalds and the Git contributors, 2018) and an internally hosted GitLab instance (GitLab, San Francisco, US-CA).
 
-## Image preprocessing
+### Image preprocessing
 
 Following AiryScan 3D deconvolution with 'auto' settings on the LSM880, images were converted to 8bit TIFF files using a custom macro for the Fiji distribution (Schindelin et al., 2012) of ImageJ 1.52 g (Schneider et al., 2012). The minimum and maximum values determining the intensity range prior to 8bit conversion were selected manually such that intensity clipping is avoided. Care was taken to apply the same values to all samples of a given marker to ensure consistency.
 
-Samples with the cxcr4b:NLS-tdTomato nuclear label exhibited a degree of bleed-through into the lyn-EGFP membrane label channel. To prevent this from interfering with single-cell segmentation, we employed a linear unmixing scheme in which the contribution of NLS-tdTomato (C, the contaminant image) is removed from the green channel (M, mixed image), resulting in the cleaned membrane channel (U, unmixed image). Our approach assumes that the signal in M is composed according to Equation 1, implying that U can be retrieved by subtraction of an appropriate contamination term (Equation 2).(1)M=U+a∙C(2)U=M-a∙C
+Samples with the cxcr4b:NLS-tdTomato nuclear label exhibited a degree of bleed-through into the lyn-EGFP membrane label channel. To prevent this from interfering with single-cell segmentation, we employed a linear unmixing scheme in which the contribution of NLS-tdTomato ($C$, the contaminant image) is removed from the green channel ($M$, mixed image), resulting in the cleaned membrane channel ($U$, unmixed image). Our approach assumes that the signal in $M$ is composed according to Equation 1, implying that $U$ can be retrieved by subtraction of an appropriate contamination term (Equation 2).
 
-To compute the optimal bleed-through factor a we minimized a custom loss function (Equation 3), which is essentially simply the Pearson Correlation Coefficient (PCC) of the contaminant image C and the cleaned image U given a particular candidate factor ai. To ensure that unreasonably high values of a are punished, we centered the values of the cleaned image onto their mean and converted the result to absolute values, causing overly unmixed regions to start correlating with C again.(3)loss=PCCC,  M-ai∙C-meanM-ai∙C
+$$
+M=U+a∙C
+$$
+
+
+
+$$
+U=M-a∙C
+$$
+
+To compute the optimal bleed-through factor $a$ we minimized a custom loss function (Equation 3), which is essentially simply the Pearson Correlation Coefficient ($PCC$) of the contaminant image $C$ and the cleaned image $U$ given a particular candidate factor $a_{i}$. To ensure that unreasonably high values of $a$ are punished, we centered the values of the cleaned image onto their mean and converted the result to absolute values, causing overly unmixed regions to start correlating with $C$ again.
+
+$$
+loss=PCCC,M-a_{i}∙C-meanM-a_{i}∙C
+$$
 
 We found that this approach robustly removes NLS-tdTomato bleed-through, producing unmixed images that could be segmented successfully.
 
-## Single-Cell segmentation
+### Single-Cell segmentation
 
 3D single-cell segmentation was performed on membrane-labeled stacks acquired, deconvolved and preprocessed as detailed in the sections above.
 
@@ -195,7 +504,7 @@ We manually optimized the parameters of this pipeline for our data by inspecting
 
 Finally, we also manually double-checked all segmentations and discarded rare cases where more than approx. 10% of cells in a stack had been missed or exhibited under- or oversegmentation.
 
-## Point cloud sampling with ISLA
+### Point cloud sampling with ISLA
 
 Intensity-biased Stochastic Landmark Assignment (ISLA) (Figure 3A–C, Figure 3—figure supplement 1A) was applied to cropped-out bounding boxes of single segmented cells. To capture cell shape, the 6-connected inner hull of the binary segmentation mask was used as input image for ISLA. To capture intensity distributions, voxels outside the segmentation mask were set to zero and a simple background subtraction was performed to prevent landmarks from being assigned spuriously due to background signal. The background level was determined as the mean intensity within the masked cell and was subtracted from each voxel's intensity value, with resulting negative values set to zero.
 
@@ -205,19 +514,23 @@ Following ISLA sampling, landmark coordinates were scaled from pixels to microns
 
 Note we recently published another study that utilizes a simplified version of ISLA for some of the data analysis, albeit in a very different way from how it is used here (Wong et al., 2020).
 
-## Point cloud transformation into TFOR and CFOR
+### Point cloud transformation into TFOR and CFOR
 
 To place cells in a matched Tissue Frame of Reference (TFOR) prior to feature embedding (Figure 3—figure supplement 1B, left route), primordia were aligned using a simple PCA-based approach that does not require full image registration. To this end, 3000 landmarks were sampled from a given primordium's binary overall segmentation mask using ISLA and a modified PCA was applied to the resulting point cloud. Given that the pLLP's longest axis is always its front-rear axis and the shortest axis is always the apicobasal axis, PCA transformation snaps primordia that had been acquired at a slight angle into a consistent frame of reference. Our modification ensured that 180° flipping could not occur in this procedure. To complete the alignment, the primordial point clouds were translated such that the frontal-most point becomes the coordinate system's origin. Finally, the ISLA point clouds extracted from individual cells as described in the previous paragraph were transformed using the same PCA, thus matching their orientation to the common tissue frame of reference.
 
 To create a Cell Frame of Reference (CFOR) that is invariant to size, rotation and handedness (Figure 3—figure supplement 1B, right route), point cloud volumes were first normalized such that the sum of the magnitudes of all centroid-to-landmark vectors is 1. Second, cellular point clouds were cast into a pairwise distance (PD) representation. In the PD space, each point of the cloud is no longer characterized by three spatial coordinates but instead by the distances to every other point of the cloud. This representation is rotationally invariant but also extremely high-dimensional (an LxL array, where L is the number of landmarks). To reduce dimensionality, only the 10th, 50th and 90th percentiles of all pairwise distances for each point were chosen to represent that point (resulting in an Lx3 array), which we reasoned would encode both local and global relative spatial location.
 
-## Feature embedding with CBE
+### Feature embedding with CBE
 
 To determine reference cluster centers for Cluster-Based Embedding (CBE) (Figure 3D, Figure 3—figure supplement 1B), point clouds from multiple samples were centered on their respective centroids and overlaid. K-means clustering was performed on this overlaid cloud (using scikit-learn's MiniBatchKMeans implementation) with k = 20. The resulting cluster centers were used as common reference points for the next step.
 
 Several measures were taken to improve the robustness and performance of this cluster detection. First, individual cellular point clouds were downsampled from 2000 points to 500 points prior to being overlaid, using k-means clustering with k = 500 clusters, the centers of which were used as the new landmarks. Second, not all available cells were used in the overlay. Instead, a representative random subset of primordia (at least 10, at most 25) was selected and only their cells were used in the overlay. The resulting cluster centers were used as reference points across all available samples. Third, the entire overlaid point cloud was downsampled using a density-dependent downsampling approach inspired by Qiu et al., 2011 (see below), yielding a final overlaid cloud of at most 200'000 points, which allowed reference cluster centers to be computed reasonably efficiently.
 
-Density-dependent downsampling was performed using a simplified version of the algorithm described by Qiu et al., 2011. First, the local density (LD) at each point is found, which is defined as the number of points in the local neighborhood, i.e. a sphere whose radius is the median pairwise distance between all points multiplied by an empirically determined factor (here 5). Next, a target density (TD) is determined, which in accordance with Qiu et al. was set to be the third percentile of all local densities. Now, points are downsampled such that the probability of keeping each point is given by Equation 1. If necessary, the resulting downsampled distribution is further reduced by random sampling in order to reach the maximum of 200'000 points.(4)p(keep_cell_i) ={1, if LDi<TD TDLDi, otherwise
+Density-dependent downsampling was performed using a simplified version of the algorithm described by Qiu et al., 2011. First, the local density ($LD$) at each point is found, which is defined as the number of points in the local neighborhood, i.e. a sphere whose radius is the median pairwise distance between all points multiplied by an empirically determined factor (here 5). Next, a target density ($TD$) is determined, which in accordance with Qiu et al. was set to be the third percentile of all local densities. Now, points are downsampled such that the probability of keeping each point is given by Equation 1. If necessary, the resulting downsampled distribution is further reduced by random sampling in order to reach the maximum of 200'000 points.
+
+$$
+p(keep_cell_i) ={1, if LD_{i}<TD \frac{TD}{LD_{i}}, otherwise
+$$
 
 Density-dependent downsampling was chosen to avoid cases where high-density agglomerations of landmarks in a particular region accumulate multiple clusters and thus deplete lower-density regions of local reference points; density-dependent downsampling preserves the overall shape of the overlaid point cloud whilst reducing local density peaks.
 
@@ -225,27 +538,43 @@ Following the determination of common reference points, CBE proceeds by extracti
 
 The feature extraction described above yields an n-by-3k latent feature space, where n is the number of cells and k the number of shared reference clusters (here k = 20). As a final step, this space was transformed by Principal Component Analysis (PCA) to bring relevant variation into focus and reduce dimensionality.
 
-In addition to CBE, an alternative embedding based on the moments of the TFOR or CFOR point clouds was also generated as a comparably simple baseline. We computed the 1 st raw moments (Equation 5), the 2nd centralized moments (Equation 6) and the 3rd to 5th normalized moments (Equation 7) (55 features in total) and once again used PCA to arrive at a compact and expressive feature space.(5)rM1[ijk]=meanCz∙i+Cy∙j+Cx∙k(6)cM2[ijk]=meanCz-rM1100i∙Cy-rM1010j∙Cx-rM1001k(7)nMm[ijk]=cMmijkstdCz-rM1100i∙stdCy-rM1010j∙stdCx-rM1001k
+In addition to CBE, an alternative embedding based on the moments of the TFOR or CFOR point clouds was also generated as a comparably simple baseline. We computed the 1 st raw moments (Equation 5), the 2nd centralized moments (Equation 6) and the 3rd to 5th normalized moments (Equation 7) (55 features in total) and once again used PCA to arrive at a compact and expressive feature space.
 
-In Equations 5, 6, 7, Cd is the array of all point cloud coordinates along the spatial dimension d, Mm is the set of raw (rMm), centralized (cMm) or normalized (nMm) moments of the m-th order, and [i,j,k] includes all combinations of length 3 drawn from the integer range 0,…,m that satisfy i+j+k=m. All operations are element-wise except mean(…) and std(…), which compute the mean and standard deviation across a given array.
+$$
+rM_{1[ijk]}=meanC_{z}∙i+C_{y}∙j+C_{x}∙k
+$$
 
-## Synthetic point cloud generator
+
+
+$$
+cM_{2[ijk]}=meanC_{z}-rM_{1100}^{i}∙C_{y}-rM_{1010}^{j}∙C_{x}-rM_{1001}^{k}
+$$
+
+
+
+$$
+nM_{m[ijk]}=\frac{cM_{mijk}}{stdC_{z}-rM_{1100}^{i}∙stdC_{y}-rM_{1010}^{j}∙stdC_{x}-rM_{1001}^{k}}
+$$
+
+In Equations 5, 6, 7, $C_{d}$ is the array of all point cloud coordinates along the spatial dimension $d$, $M_{m}$ is the set of raw ($rM_{m}$), centralized ($cM_{m}$) or normalized ($nM_{m}$) moments of the $m$-th order, and $[i,j,k]$ includes all combinations of length 3 drawn from the integer range $0,…,m$ that satisfy $i+j+k=m$. All operations are element-wise except $mean(…)$ and $std(…)$, which compute the mean and standard deviation across a given array.
+
+### Synthetic point cloud generator
 
 In order to benchmark the capability of CBE for latent feature extraction, we required a gold standard dataset to test whether CBE recovers known latent parameters underlying a population of shape objects. We thus wrote a generator to automatically create a large synthetic dataset of cell-like point clouds. This generator functions in four stages:
 
 All in all, this generator requires 17 parameters of which one modifies only size (not shape) and two modify only rotation. For each synthesized cell, the specific parameter values for the generator were sampled from normal or uniform distributions with hyperparameters set based on empirical experimentation such that a varied population of cell shapes is generated and unreasonably deformed shapes are avoided.
 
-## Evaluation of CBE on synthetic point clouds
+### Evaluation of CBE on synthetic point clouds
 
 Using the generator described above, we synthesized a set of n = 20'000 cellular point clouds and embedded them using both CBE and the moment-based alternative embedding strategy. We then tested how well the values of the 17 known generative parameters could be retrieved from the embedded feature spaces using different scikit-learn implementations of multivariate-multivariable regression, specifically k-Nearest Neighbor (kNN) regression, multi-output linear Support Vector Regression (l-SVR) and multi-output radial basis function kernel Support Vector Regression (r-SVR). Optimal hyperparameters for the two SVRs were determined using cross-validated grid search with GridSearchCV, scanning 5 orders of magnitude surrounding the defaults of C (penalty) and epsilon as well as gamma (RBF kernel coefficient) for r-SVR.
 
 This synthetic experiment showed that cell size and orientation largely obscure other shape features if CFOR-normalization is not performed (Figure 3—figure supplement 2A). Furthermore, features generated by CBE enable similar or better predictive performance than moments-based features regardless of the method used for prediction (Figure 3—figure supplement 2B). Interestingly, kNN performs markedly better on CBE-embedded spaces, indicating that CBE more meaningfully encodes point cloud similarity as local neighborhood in the embedded space.
 
-## Feature engineering: Extraction of simple shape measures
+### Feature engineering: Extraction of simple shape measures
 
 We extracted various explicitly engineered features from entire tissues, segmented cell volumes, and segmented cell point clouds. The features used in this study are listed and briefly described in Supplementary file 2.
 
-## Multi-Channel atlas prediction
+### Multi-Channel atlas prediction
 
 To construct the multi-channel atlas, we used the secondary markers present in many of our samples (see Supplementary file 1), embedded them with ISLA and CBE (see the corresponding sections above) and then trained multivariate-multivariable regressors to predict those embeddings based on the corresponding cell shape embeddings as input features. All embeddings were standardized and PCA-transformed prior to machine learning and only the first 20 PCs were considered. Predictions were performed from shape TFOR to secondary marker TFOR and from shape CFOR to secondary marker CFOR.
 
@@ -255,7 +584,7 @@ To select the best machine learning model, the following regressors were tested 
 
 For atlas prediction across the entire dataset, the SVR model was trained for each secondary channel (using the corresponding best hyperparameter set) on all available data for that channel and then applied to predict that channel's embedded space for all other cells.
 
-## smFISH: Spot detection and analysis
+### smFISH: Spot detection and analysis
 
 Single-cell segmentation and cell shape feature embedding was performed on the pea3 smFISH dataset in the same fashion as for the live imaging dataset, resulting in 3'149 cells from 31 samples.
 
@@ -265,7 +594,7 @@ Because smFISH must be performed on fixed samples, we checked for fixation effec
 
 We trained an RBF-kernel SVR to perform multivariate regression of pea3 smFISH counts based on as much other information available about each cell as possible (Figure 6B, Figure 6—figure supplement 1E), namely a combined feature space incorporating the first 10 shape TFOR PCs, the first 10 shape CFOR PCs, and the x, y and z coordinates of cell centroids in TFOR. Hyperparameters C (penalty), epsilon, and gamma (RBF kernel coefficient) were again optimized using GridSearchCV, whereas ShuffleSplit was used to randomly split data into training and test data for evaluation as shown in Figure 6B.
 
-## Prediction and visualization of morphological archetypes
+### Prediction and visualization of morphological archetypes
 
 The four archetypes were manually annotated in 26 primordia (Figure 7A) using Fiji's multi-point selection tool, yielding 93 leader cells, 241 outer rosette cells, 182 inner rosette cells and 108 between-rosette cells (624 cells in total). Only the clearest examples of the respective archetypes were labeled.
 
@@ -275,19 +604,25 @@ The confusion matrices in Figure 7—figure supplement 1 were produced by splitt
 
 The archetype space was constructed by inferring the classification probabilities for each class (using sklearn.svm.SVC.predict_proba) and performing a PCA on them. The 3D and 2D visualizations in Figure 7 were then generated by plotting the first three or two principal components, respectively.
 
-## Image rendering and expanded view of segmentation
+### Image rendering and expanded view of segmentation
 
 Fiji's Straighten tool was used to align angled samples with the main image axes for the purpose of illustration in Figures 1, 2, 5, 6 and 7 and in Figure 2—video 1, 2, 3 but never as part of an image analysis pipeline. Maximum projections were created with Fiji whereas 3D videos were rendered with Imaris 7.7.2 (Bitplane, Belfast, UK).
 
 The expanded view of the segmented pLLP (Figures 1B and 2C) was generated by first determining the centroids of each segmented cell and then shifting them apart by scaling of their x and y coordinates by a single user-specified factor. The cells were then pasted into an appropriately scaled empty image stack at the new centroid locations, leaving them shifted apart uniformly but not individually rescaled or otherwise transformed. A python implementation of this approach called tissueRipper is available under the MIT open source license on GitHub at github.com/WhoIsJack/tissueRipper.
 
-## Correlation heatmaps and bigraphs
+### Correlation heatmaps and bigraphs
 
-The corresponding bigraphs (Figures 4E,F and 5G) were generated using a custom plotting function based on the networkx module. The edges were colored according to the signed value of the Pearson correlation coefficient and sized according to its magnitude. Edges with an absolute correlation coefficient smaller than 0.3 were omitted. The nodes of the engineered features were sorted to reduce edge crossings and group similar nodes, which was achieved by minimizing the following custom loss function:(8)loss=∑i=0fE∑j=0fLCifE-jfE∙pccEi,Ljwhere fE and fL are the number of engineered and latent features, respectively. C is the current sort order of the engineered features, that is a permutation of the integer interval [0,fE]. Finally, pccEi,Lj is the absolute Pearson correlation coefficient of the values of the i-th engineered feature and the j-th latent feature. In essence, this loss function is the sum of all Euclidean rank distances between engineered and latent features, weighted by their corresponding absolute Pearson correlation coefficients. Minimization was performed by random shuffling of the sort order and retaining only shuffles that reduced the loss until no change was observed for 2000 consecutive shuffles.
+The corresponding bigraphs (Figures 4E,F and 5G) were generated using a custom plotting function based on the networkx module. The edges were colored according to the signed value of the Pearson correlation coefficient and sized according to its magnitude. Edges with an absolute correlation coefficient smaller than 0.3 were omitted. The nodes of the engineered features were sorted to reduce edge crossings and group similar nodes, which was achieved by minimizing the following custom loss function:
+
+$$
+loss=\sumi=0f_{E}\sumj=0f_{L}\frac{C_{i}}{f_{E}}-\frac{j}{f_{E}}∙pccE_{i},L_{j}
+$$
+
+where $f_{E}$ and $f_{L}$ are the number of engineered and latent features, respectively. $C$ is the current sort order of the engineered features, that is a permutation of the integer interval $[0,f_{E}]$. Finally, $pccE_{i},L_{j}$ is the absolute Pearson correlation coefficient of the values of the i-th engineered feature and the $j$-th latent feature. In essence, this loss function is the sum of all Euclidean rank distances between engineered and latent features, weighted by their corresponding absolute Pearson correlation coefficients. Minimization was performed by random shuffling of the sort order and retaining only shuffles that reduced the loss until no change was observed for 2000 consecutive shuffles.
 
 Note that since the sign of principal components is not inherently meaningful, we flipped it for shape TFOR-PCs 1, 3, 5, six and shape CFOR-PC one across all analyses presented in this study to ensure that PCs positively correlate with their most defining engineered feature(s), facilitating discussion of the results.
 
-## Tissue consensus maps
+### Tissue consensus maps
 
 Consensus maps of feature variation (Figures 4G, 5J and 6C,D) were based on an overlay of TFOR centroid positions of cells across all relevant samples.
 
@@ -295,7 +630,7 @@ The cut-off for the consensus tissue outline was determined by computing the loc
 
 The local consensus feature values were computed by applying a point cloud-based Gaussian smooth across the individual cells' feature values, using the 0.5th percentile of all pairwise distances between centroids as σ. This smoothed distribution was then plotted as a tricontourf plot with matplotlib using up to 21 automatically determined contour levels.
 
-## Statistical analysis
+### Statistical analysis
 
 Generally, we use N to refer to the number of embryos/primordia and n to the number of cells.
 
@@ -303,10 +638,10 @@ Statistical significance for comparisons between two conditions was estimated wi
 
 Significance tests with large sample sizes such as those encountered during single-cell analysis tend to indicate high significance regardless of whether the difference between populations is substantive or technical (Sullivan and Feinn, 2012), which is why we also report estimates of effect size for any comparison that is statistically significant. Effect sizes were estimated using Cohen, 1977. The resulting values can be described as no effect (d≈0.0), a small effect (d≈0.2), a medium effect (d≈0.5) or a large effect (d≈0.8) (Cohen, 1977).
 
-## Materials availability
+### Materials availability
 
 Requests for experimental resources and reagents should be directed to and will be fulfilled by Darren Gilmour (darren.gilmour@imls.uzh.ch).
 
-## Data and code availability
+### Data and code availability
 
 All raw and processed data are available freely and openly via the Image Data Resource repository (idr.openmicroscopy.org) under accession number idr0079. Code is available under the MIT open source license on GitHub at github.com/WhoIsJack/data-driven-analysis-lateralline. Note that we aim to update the core algorithms to python 3 and make them available as a readily reusable module in the near future. Inquiries regarding data and code should be directed to Jonas Hartmann (jonas.m.hartmann@protonmail.com).

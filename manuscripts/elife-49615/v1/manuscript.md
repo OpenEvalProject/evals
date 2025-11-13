@@ -13,4 +13,4 @@
 
 ## Abstract
 
-The fungal parasite Podosphaera plantaginis employs both sexual and asexual reproduction to increase its chances of infecting the plant Plantago lanceolata .
+The fungal parasite Podosphaera plantaginis employs both sexual and asexual reproduction to increase its chances of infecting the plant Plantago lanceolata.

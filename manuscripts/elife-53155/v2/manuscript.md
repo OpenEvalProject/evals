@@ -21,7 +21,7 @@
 
 ## Abstract
 
-H3K9 methylation (H3K9me) specifies the establishment and maintenance of transcriptionally silent epigenetic states or heterochromatin. The enzymatic erasure of histone modifications is widely assumed to be the primary mechanism that reverses epigenetic silencing. Here, we reveal an inversion of this paradigm where a putative histone demethylase Epe1 in fission yeast, has a non-enzymatic function that opposes heterochromatin assembly. Mutations within the putative catalytic JmjC domain of Epe1 disrupt its interaction with Swi6 HP1 suggesting that this domain might have other functions besides enzymatic activity. The C-terminus of Epe1 directly interacts with Swi6 HP1 , and H3K9 methylation stimulates this protein-protein interaction in vitro and in vivo. Expressing the Epe1 C-terminus is sufficient to disrupt heterochromatin by outcompeting the histone deacetylase, Clr3 from sites of heterochromatin formation. Our results underscore how histone modifying proteins that resemble enzymes have non-catalytic functions that regulate the assembly of epigenetic complexes in cells.
+H3K9 methylation (H3K9me) specifies the establishment and maintenance of transcriptionally silent epigenetic states or heterochromatin. The enzymatic erasure of histone modifications is widely assumed to be the primary mechanism that reverses epigenetic silencing. Here, we reveal an inversion of this paradigm where a putative histone demethylase Epe1 in fission yeast, has a non-enzymatic function that opposes heterochromatin assembly. Mutations within the putative catalytic JmjC domain of Epe1 disrupt its interaction with Swi6HP1 suggesting that this domain might have other functions besides enzymatic activity. The C-terminus of Epe1 directly interacts with Swi6HP1, and H3K9 methylation stimulates this protein-protein interaction in vitro and in vivo. Expressing the Epe1 C-terminus is sufficient to disrupt heterochromatin by outcompeting the histone deacetylase, Clr3 from sites of heterochromatin formation. Our results underscore how histone modifying proteins that resemble enzymes have non-catalytic functions that regulate the assembly of epigenetic complexes in cells.
 
 ## Introduction
 
@@ -37,17 +37,37 @@ In this study, we discovered that the putative catalytic JmjC domain of Epe1 is,
 
 ## Results
 
-## A point mutation within the catalytic JmjC domain of Epe1 affects its localization at sites of constitutive heterochromatin
+### A point mutation within the catalytic JmjC domain of Epe1 affects its localization at sites of constitutive heterochromatin
 
 JmjC domain-containing proteins require Fe (II) and α-ketoglutarate as co-factors to catalyze histone demethylation. Aligning the primary amino acid sequences of active histone demethylases with Epe1 reveals a naturally occurring histidine to tyrosine substitution (Y370) within a conserved triad of amino acid residues that coordinate iron (Figure 1—figure supplement 1A). We tested whether the activity of Epe1 in cells is dependent on this non-conserved tyrosine residue (Y370). To measure Epe1 activity, we used a reporter gene assay that provides a direct read-out of epigenetic inheritance. In this system, an H3K9 methyltransferase, Clr4Suv39h is fused to a DNA binding protein, TetR. This fusion protein is recruited to an ectopic site where ten Tet operator sites (10X TetO) are placed upstream of a reporter gene, ade6+ (Figure 1A). Establishment in the absence of tetracycline results in the appearance of red colonies. The sequence-specific initiator, TetR-Clr4-I, dissociates in the presence of tetracycline, enabling us to test whether cells can maintain silencing in the absence of continuous initiation. Wild-type cells are initially red in medium not containing tetracycline (−tetracycline medium), indicating that the reporter gene is initially silenced (establishment). Cells that have a functional copy of Epe1 turn white and exhibit no maintenance when plated on +tetracycline-containing medium. The ability of fission yeast cells to autonomously propagate epigenetic silencing is exquisitely sensitive to Epe1 activity. We observed epigenetic maintenance in cells where Epe1 is either deleted or inactivated, resulting in red or sectored colonies on +tetracycline-containing medium (Audergon et al., 2015; Ragunathan et al., 2015).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53155/elife-53155-fig1-v2.jpg)
+
+**Figure 1.:** (A) Reporter system to measure epigenetic inheritance. TetR-Clr4-I binding (−tetracycline) leads to ectopic establishment of H3K9 methylation. Addition of tetracycline promotes TetR-Clr4-I dissociation, enabling us to measure epigenetic inheritance of H3K9 methylation. (B) Color-based assay to detect establishment and maintenance of epigenetic states. The establishment of epigenetic silencing (−tetracycline) leads to the appearance of red colonies. Epigenetic inheritance, indicated by red or sectored colonies, (+tetracycline) is critically dependent on Epe1 activity. Point mutations within the JmjC domain of Epe1 disrupt its anti-silencing function in cells, leading to the appearance of red or sectored colonies. (C) ChIP-qPCR measurements of H3K9me2 levels at the ectopic site (10X tetO ade6+) during establishment (−tetracycline) in different Epe1 mutant backgrounds (N = 2). Error bars represent standard deviations. (D) ChIP-qPCR measurements of H3K9me2 levels at the ectopic site (10X tetO ade6+) during maintenance (+tetracycline) in different Epe1 mutant backgrounds (N = 2). Error bars represent standard deviations. (E) Live cell imaging of Epe1 and Swi6HP1. Four images in each case correspond to DIC, 488 excitation, 560 excitation, and overlay of the three emission channels. mNeonGreen-Epe1 and mCherry- Swi6HP1 form co-localized foci in green and red emission channels, respectively (see white arrows). (F) mNeonGreen-Epe1 Y307A fails to form any foci and instead exhibits a diffuse signal that permeates the nucleus. mCherry- Swi6HP1 forms foci corresponding to sites of constitutive heterochromatin.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53155/elife-53155-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sequence alignment of related JmjC domain-containing proteins reveals the identity of conserved residues in Epe1 that are involved in iron (Fe2+) and α-ketoglutarate binding. Iron-binding residues are colored in green and α-ketoglutarate-binding residues are colored in purple. (B) Western blots comparing expression levels of Epe1 proteins. Wild-type Epe1-3X FLAG and Epe1 mutants exhibit similar levels of expression from the endogenous promoter. Actin levels are shown as a loading control. (C) Images of control cells expressing no mCherry or mNeonGreen proteins reveal the extent of cytoplasmic background in each emission channel.
 
 Alanine substitutions of amino acid residues involved in Fe (II) or α-ketoglutarate binding (epe1 H297A and epe1 Y307A, respectively) disrupt co-factor binding, resulting in the concomitant loss of Epe1 activity. When expressed at endogenous levels, these mutants form red or sectored colonies on +tetracycline-containing medium and resemble epe1Δ cells (Figure 1B). Replacing the non-conserved tyrosine residue in Epe1 with alanine (epe1 Y370A) leads to a similar loss of function phenotype. Hence, despite the lack of conservation, a natural tyrosine substitution within the JmjC domain of Epe1 is essential for its anti-silencing function in cells. We used chromatin immunoprecipitation assays followed by qPCR to measure H3K9me2 levels associated with the reporter gene locus before and after tetracycline addition. Both wild-type and Epe1 mutant strains exhibit high levels of H3K9me2 during establishment (Figure 1C). However, wild-type cells lose H3K9me2 approximately 24 h after tetracycline addition. In contrast, Epe1 mutants that exhibit a red or sectored phenotype upon +tetracycline addition retain high levels of H3K9 methylation at the ectopic site (Figure 1D). We verified that the expression level of all Epe1 mutant proteins is equal relative to an actin loading control. Hence, neither overexpression artifacts nor changes in protein stability contribute to the maintenance-specific phenotype we observed in our genetic assays (Figure 1—figure supplement 1B).
 
 Epe1 is localized at sites of constitutive heterochromatin through its interactions with Swi6HP1 (Ayoub et al., 2003; Zofall and Grewal, 2006). We imaged Epe1 and Swi6HP1 in live fission yeast cells using fluorescent protein fusions. We labeled Epe1 with mNeonGreen and Swi6HP1 with mCherry. This labeling scheme allows Epe1 and Swi6HP1 to be visualized in separate green and red emission channels, respectively. Both fusion proteins were expressed from their endogenous promoters to discount any possible overexpression artifacts. mCherry-Swi6HP1 typically exhibits two or three bright foci in individual cells ,corresponding to sites of constitutive heterochromatin (centromeres and telomeres). mNeonGreen-Epe1 co-localizes with mCherry-Swi6HP1 as evidenced by the significant overlap between the bright foci that appear green and red emission channels (see white arrows). The overlay also reveals that clusters of Epe1 and Swi6 are co-localized (Figure 1E). Surprisingly, an Epe1 co-factor binding mutant, mNeonGreen-Epe1 Y307A, fails to co-localize with mCherry-Swi6HP1. Instead, the mutant protein exhibits a diffuse green signal within the nucleus and a complete lack of nuclear foci that co-localize with Swi6HP1 (Figure 1F). The elevated signal in the cytoplasm could not be attributed to a defect in nuclear localization as cells that do not express any mNeonGreen-Epe1 also exhibit high levels of autofluorescence in the green channel (Figure 1—figure supplement 1C). Hence, in addition to affecting any putative enzymatic functions, a co-factor binding mutation within the JmjC domain of Epe1 eliminates protein localization at sites of constitutive heterochromatin.
 
-## Mutations within the JmjC domain disrupt a direct interaction between Epe1 and Swi6HP1
+### Mutations within the JmjC domain disrupt a direct interaction between Epe1 and Swi6HP1
 
 We hypothesized that the absence of heterochromatin localization in the Epe1 JmjC mutant could reflect a loss of Swi6HP1 binding. We used a co-immunoprecipitation assay to compare the interaction between Epe1 and Swi6HP1 in wild-type and Epe1 mutant cells. We expressed an Epe1-3X FLAG fusion protein at endogenous levels. Using a FLAG antibody, we pulled-down Epe1 and detected its interaction with Swi6HP1 using a primary antibody. Swi6HP1 is enriched in pull-down experiments in wild-type cells relative to an untagged control (Figure 2A). However, mutations in residues that affect Fe(II) or α-ketoglutarate binding (H297A, Y307A, and Y370A) significantly attenuate this interaction (Figure 2A). Altering the position of the FLAG epitope tag did not alter the conclusions of our experiments. Epe1 fused to an N-terminal FLAG tag interacts with Swi6HP1, whereas a mutation within the JmjC domain (H297A) compromises its binding (Figure 2—figure supplement 1A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/53155/elife-53155-fig2-v2.jpg)
+
+**Figure 2.:** (A) Western blots of co-immunoprecipitation (co-IP) measurements to test the interaction between Epe1-3XFLAG and Swi6HP1. Epe1 is detected using a FLAG antibody and Swi6HP1 is detected using a primary antibody. The interaction between the two proteins is preserved in wild-type cells and is completely eliminated in all Epe1 JmjC mutants. (B) ChIP-qPCR measurements of Epe1 occupancy at sites of constitutive heterochromatin (dg pericentromeric repeats) (N = 2). Error bars represent standard deviations. Epe1 enrichment is reduced to near background levels (swi6Δ and clr4Δ) in loss of function mutants of Epe1. (C) Western blots of in vitro binding assays using recombinant Epe1 protein. Increasing amounts of wild-type MBP-Epe1 protein are added while maintaining a fixed amount of 3X-FLAG-Swi6HP1 or 3X-FLAG-Chp2 HP1 on beads. Epe1 exhibits a binding preference for Swi6HP1over Chp2 HP1. (D) Increasing amounts of wild-type MBP-Epe1 protein are added while maintaining a fixed amount of 3X-FLAG- Swi6HP1 or a CSD domain mutant, 3X-FLAG Swi6HP1 L315E on beads. Western blots revealed that a point mutation in the conserved Swi6 HP1CSD domain (L315E) leads to reduced levels of interaction between recombinant Epe1 and Swi6HP1 L315E. (E) Increasing amounts of wild-type MBP-Epe1 and MBP-Epe1 H297A are added while maintaining a fixed amount of 3XFLAG- Swi6HP1 on beads. Experiments were performed in the presence and absence of EDTA to measure co-factor independent interactions between the two proteins. The binding recombinant Epe1 H297A binding to Swi6HP1 is significantly reduced relative to the wild-type protein.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53155/elife-53155-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blot of a co-immunoprecipitation experiment in cells expressing Epe1 that is fused to a FLAG epitope tag at the N-terminus. N-terminal FLAG fusions of Epe1 and Epe1 H297A exhibit the same pattern of interaction with Swi6HP1 (the wild-type protein exhibits an interaction and the Epe1 mutant exhibits reduced binding) as their C-terminal counterparts. (B) ChIP-qPCR measurements of Epe1 occupancy at the pericentromeric dg repeats. The use of additional crosslinkers improves crosslinking efficiency and traps transient interactions. The wild-type Epe1 protein is enriched at sites of heterochromatin formation, whereas Epe1 JmjC mutants do not exhibit any significant enrichment. (C) Recombinant Epe1 protein purification from insect cells before and after cleavage of the MBP tag. Epe1 purified from Sf9 insect cells remains soluble even after MBP tag cleavage. (D) Differential scanning calorimetry (DSC) assays demonstrate that wild-type Epe1 and Epe1 H297A proteins exhibit similar denaturation temperatures, implying that the proteins are equally stable in vitro. The difference in peak intensities reflects slightly different protein amounts in the DSC. (E) In vitro binding assays between Epe1 and Swi6HP1 in the presence of Fe (II) and α-ketoglutarate as co-factors. The presence of Fe (II) and α-ketoglutarate did not alter the binding between Epe1 and Swi6HP1 compared to reactions performed in the absence of any co-factors. (F) In vitro binding experiments using recombinant wild-type and Epe1 H297A proteins with Swi6HP1 purified from fission yeast cells. 3X FLAG- Swi6HP1 was expressed at endogenous levels in fission yeast and purified under high salt conditions. The fission yeast Swi6HP1 protein exhibits the same binding preference for wild-type Epe1 as E. coli Swi6HP1. (G) Swi6HP1 purified from S. pombe exhibits a mass shift compared to Swi6HP1 purified from E. coli because of protein phosphorylation. Therefore, our purification approach preserves the endogenously phosphorylated state of Swi6HP1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53155/elife-53155-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Mass spectrometry analysis of modified H3 peptides following an in vitro demethylase assay. The H3K9me2 tail peptide spans 1-21 amino acids with an intact mass of 2283 Da. The H3K9me3 tail peptide spans 1-15 amino acids with an intact mass of 1603 Da. Demethylase assays were carried out in the presence and absence of Swi6HP1. (B) The positive control active demethylase, JMJD2A produces a 15kDa mass shift corresponding to the removal of a single methyl group. JMJD2A preferentially demethylates H3K9me3 peptides.
 
 Epe1 is enriched at sites of constitutive heterochromatin, which include the pericentromeric dg and dh repeats, the mating type locus, and the telomeres (Zofall and Grewal, 2006). We used formaldehyde to crosslink cells followed by chromatin immunoprecipitation to compare heterochromatin occupancy differences between Epe1 wild-type and Epe1 co-factor binding mutants. After crosslinking, we used a FLAG antibody to pull-down the chromatin-bound fraction of Epe1. We used qPCR to measure Epe1 occupancy at the pericentromeric dg repeats. Epe1 is enriched within dg repeats in wild-type cells and this heterochromatin-specific occupancy pattern is disrupted both in swi6Δ and clr4Δ cells (Figure 2B). Mutations within the JmjC domain that disrupt co-factor binding lead to a substantial reduction in Epe1 occupancy at sites of heterochromatin formation. Consistent with our co-immunoprecipitation studies, all co-factor binding mutants of Epe1 exhibit a significant reduction or completely fail to localize at the pericentromeric dg repeats (Figure 2B). We altered our fixation conditions using additional reactive crosslinkers and extended the time for formaldehyde crosslinking. Altering crosslinking conditions did not lead to a significant increase in chromatin occupancy amongst Epe1 mutants (Figure 2—figure supplement 1B). Based on these results, we concluded that Epe1 co-factor binding mutants exhibit significant defects in their ability to interact with Swi6HP1 and a complete inability to localize at sites of heterochromatin formation.
 
@@ -61,11 +81,23 @@ To test whether the enzymatic activity of Epe1 may enhance its interaction with 
 
 Next, we tested whether Swi6HP1 binding to Epe1 may activate its latent enzymatic properties. We performed histone demethylase assays using recombinant Epe1 in the presence and absence of Swi6HP1. We used histone H3 tail peptides with a di-methyl or a tri-methyl modification at the lysine nine position (H3K9me2 or H3K9me3 peptides) as substrates. We were unable to detect a mass shift corresponding to the removal of one or more methyl groups in reactions that we performed with Epe1 alone or Epe1 in complex with a five-fold molar excess of Swi6HP1 (Figure 2—figure supplement 2A). In contrast, JMJD2A, an active demethylase, is fully capable of demethylating an H3K9me3 peptide substrate (Figure 2—figure supplement 2B). Hence, Swi6HP1 binding to Epe1 is not sufficient to activate its putative enzymatic functions.
 
-## Swi6HP1 interacts with the C-terminus of Epe1 through a region that is proximal to the JmjC domain
+### Swi6HP1 interacts with the C-terminus of Epe1 through a region that is proximal to the JmjC domain
 
 To map the Swi6HP1 interaction site within Epe1, we used an in vitro translation (IVT) assay where we expressed fragments of Epe1 and tested their ability to interact with Swi6HP1. We used a computational disorder prediction program to define ordered and disordered regions within the protein (Figure 3—figure supplement 1A). The JmjC domain emerges as one of two ordered regions extending from amino acids 233–434. The second ordered domain that is located within the C-terminus of the protein has no known similarity to existing protein structures and does not have any ascribed function. We designed and expressed partial fragments of Epe1 using rabbit reticulocyte lysates including the full-length protein as a positive control. We added FLAG beads that were pre-incubated with 3XFLAG-Swi6HP1 to the IVT extract. A C-terminal fragment of Epe1 spanning 434–948 amino acids and an N-terminal fragment of Epe1 encompassing 1–600 amino acids (Epe1-ΔC) emerged as putative Swi6HP1 interaction candidates (Figure 3—figure supplement 1B). We hypothesized that the binding region would lie somewhere between amino acid positions 434 and 600. Importantly, this region is proximal to but non-overlapping with the predicted JmjC domain of Epe1.
 
 To validate the conclusions of our IVT binding assay, we expressed and purified two C-terminal fragments of Epe1 from E. coli. The first fragment encompasses the entire C-terminus of Epe1 from 434 to 948 amino acids (Epe1434-948). The second fragment corresponds to only the minimal Swi6HP1 interaction site extending from 434 to 600 amino acids (Epe1434-600). We performed binding assays comparing the interaction between the full-length Epe1 protein and the Epe1 C-terminal fragment (Epe1434-948) with Swi6HP1. The Epe1 C-terminal fragment exhibits an increase in its interaction with Swi6HP1 relative to full-length Epe1 (Figure 3A). Hence, the C-terminal domain of Epe1, when placed in the context of the full-length protein, is less accessible to Swi6HP1. We obtained similar results when we tested the interaction between Epe1434-600 and Swi6HP1 (Figure 3—figure supplement 1C). These observations raise the possibility that the JmjC domain has a steric function and its presence in the context of the full-length protein may impede Swi6HP1 binding. We also performed co-immunoprecipitation experiments in cells expressing 3XFLAG-Epe1434-948 and detected the same pattern of interaction with Swi6HP1 as measured in our in vitro assay (Figure 3—figure supplement 1D). We noted that the expression level of the 3X FLAG-Epe1434-948 protein expressed from the endogenous epe1 locus is at least four-fold lower compared to the full-length protein (Figure 3—figure supplement 1E).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53155/elife-53155-fig3-v2.jpg)
+
+**Figure 3.:** (A) Western blots of in vitro binding assays to validate the interaction between Swi6HP1 and the Epe1 C-terminus. Increasing amounts of MBP-Epe1434-948 protein are added while maintaining a fixed amount of 3X-FLAG-Swi6HP1 on beads. MBP-Epe1434-948 exhibits an increase in its interaction with Swi6 HP1 compared to full-length Epe1. (B) Western blots of an in vitro binding assay between FLAG-Epe1-N (1–434 amino acids) purified from S. pombe and recombinant MBP-Epe1434-948 in the presence and absence of recombinant Swi6HP1. The addition of Swi6HP1 disrupts a direct trans interaction between the N- and C-terminal halves of Epe1. The asterisk in the figure denotes the non-specific FLAG antibody band. (C) Phenotype assays of epigenetic inheritance as a measure of Epe1 activity. Cells expressing Epe1434-948 were plated on −tetracycline and +tetracycline medium. Cells are initially red during establishment. Despite the absence of the putative catalytic JmjC domain, cells expressing Epe1434-948 partly turn white on +tetracycline medium. (D) Quantification of red or sectored colonies comparing epe1Δ and Epe1434-948 expressing cells. Epe1434-948 expressing cells have 30% fewer sectored colonies compared to epe1Δ cells. (E) A dominant interaction between the Epe1 C-terminus and Swi6HP1 opposes heterochromatin establishment. TetR-Swi6-CSD was expressed in cells that harbor 10X TetO binding sites upstream of an ade6+ reporter gene. The expression of the Epe1 C-terminus alone in the absence of its putative catalytic JmjC domain disrupts heterochromatin establishment causing cells to remain white under –tetracycline and +tetracycline conditions. (F) ChIP-qPCR measurements of H3K9me2 levels at the ectopic site (10X tetO ade6+) during establishment (−tetracycline) in a wild-type, epe1Δ and two independent clones expressing Epe1434-948 (N = 2). Error bars represent standard deviations. (G) ChIP-qPCR measurements of H3K9me2 levels at the ectopic site (10X tetO ade6+) during maintenance (+tetracycline) in wild-type, epe1Δ and two independent clones expressing Epe1434-948 (N = 2). Error bars represent standard deviations.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53155/elife-53155-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Using a computational disorder prediction program (http://www.pondr.com, VSL2) and a user-specified cut-off, we defined ordered and disordered regions within Epe1. The JmjC domain spans 233-434 amino acids and emerges as one of two ordered domains in Epe1. The second ordered region within the C-terminus of Epe1 has no structural similarity to existing proteins. (B) An in vitro translation assay using rabbit reticulocyte lysates to generate S35 labeled fragments of Epe1. Swi6HP1 was immobilized on beads and incubated with IVT extracts. Two Epe1 regions ranging from 1-600 amino acids and 434-948 amino acids emerge as the primary interacting fragments. (C) Increasing amounts of MBP-Epe1434-600 protein is added while maintaining a fixed amount of 3X-FLAG- Swi6HP1on beads. MBP-Epe1434-600 exhibits an increase in binding to Swi6HP1 compared to full-length Epe1. (D) Western blots of co-immunoprecipitation experiments to detect an interaction between Epe1434-948 and Swi6HP1. (E) Western blots of whole-cell extracts of cells expressing full-length Epe1 or Epe1434-948 fused to a FLAG epitope tag. The Epe1434-948 protein is expressed at levels that are at least 4-5 fold lower than full-length Epe1 which in part might explain its limited efficacy in cells. The asterisk in the figure denotes the non-specific FLAG antibody band. (F) A recombinant C-terminal fragment of Epe1, MBP-Epe1434-948 was incubated with fission yeast cell extracts expressing the N-terminal half of the protein, FLAG-Epe1-N (1-434 amino acids) or FLAG-Epe1-N (1-434 amino acids) H297A. Extracts were derived from swi6+ (G) A recombinant C-terminal fragment of Epe1, MBP-Epe1434-948 was incubated with fission yeast cell extracts expressing the N-terminal half of the protein, FLAG-Epe1-N (1-434 amino acids) or FLAG-Epe1-N (1-434 amino acids) H297A. Extracts were derived from swi6Δ cells.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53155/elife-53155-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) TetR-Swi6-CSD was expressed in cells that have 10X TetO binding sites placed upstream of an ade6+ reporter gene. Cells establish heterochromatin only in an epe1Δ background. epe1+ cells completely suppress TetR-Swi6-CSD initiated epigenetic silencing. (B) TetR-Swi6-CSD mediated heterochromatin establishment is critically dependent on H3K9 methylation. epe1Δ clr4Δ cells expressing TetR-Swi6-CSD fail to establish epigenetic silencing.
 
 Although the Swi6HP1 binding site lies outside the confines of the JmjC domain of Epe1, point mutations within the putative catalytic JmjC domain perturb a direct interaction between the two proteins (Figure 2A). We hypothesized the existence of an interaction in cis where the N-terminus half of the protein (Epe1-N, 1–434 amino acids) interacts with its C-terminal portion (Epe1-C, 434–948 amino acids) to interrupt Swi6HP1 binding. To test this model, we expressed and purified the N-terminal half of Epe1 containing the JmjC domain (1–434 amino acids) fused to a 3X-FLAG epitope tag in fission yeast cells (3XFLAG-Epe1-N). The purified protein was retained on beads without elution and immediately used for subsequent binding assays. S. pombe cells express limiting amounts of the Epe1 N-terminal fragment, which are sufficient for the binding assays described here. We subsequently added a defined amount of the recombinant C-terminal Epe1 fragment (MBP-Epe1434-948). We detected a direct interaction between the Epe1-N and Epe1-C terminal fragments (Figure 3B, lane 1). Next, we supplemented our binding assays with a two-fold molar excess of recombinant Swi6HP1 relative to MBP-Epe1434-948. The addition of recombinant Swi6HP1 is sufficient to compete with and disrupt a trans interaction between the Epe1-N and Epe1-C fragments (Figure 3B, lane 2).
 
@@ -75,9 +107,17 @@ One prediction emerging from our biochemical analyses is that expressing the Epe
 
 The non-enzymatic function of Epe1 revolves around its dominant mode of interaction with Swi6HP1. Therefore, we devised a new ectopic silencing approach where the TetR DNA binding protein was fused to the CSD domain of Swi6HP1. We hypothesized that the ability of Epe1 to impede heterochromatin establishment might be more pronounced in this reporter strain. We expressed TetR-Swi6-CSD protein in cells where 10X TetO repeats were placed upstream of an ade6+ reporter. Tethering TetR-Swi6-CSD in wild-type cells fails to establish epigenetic silencing. Cells remain white in the presence or absence of +tetracycline (Figure 3—figure supplement 2A). We discovered that Epe1 is the rate-limiting factor that prevents heterochromatin establishment in this ectopic paradigm. Cells turn red and establish epigenetic silencing upon deleting epe1Δ. Furthermore, cells remain red even after the addition of +tetracycline consistent with robust sequence-independent epigenetic inheritance in this mutant background (Figure 3—figure supplement 2A). Next, we expressed only the C-terminal fragment of Epe1 (Epe1434-948). Remarkably, this C-terminal fragment, which is devoid of the JmjC domain, completely blocks heterochromatin establishment. Cells remain white in the presence or absence of +tetracycline (Figure 3E). We occasionally observed clonal populations that exhibit red colonies (25% of transformants) consistent with the notion that other domains within Epe1 exert additional enzymatic or non-enzymatic functions (Bao et al., 2019; Sorida et al., 2019). To test whether the phenotypes we observed depend on H3K9 methylation, we used chromatin immunoprecipitation assays followed by qPCR to measure H3K9me2 levels associated with the ade6+ reporter gene before and after tetracycline addition. H3K9me2 was observed in cells that turned red in an epe1Δ background in the presence or absence of tetracycline (Figure 3F, G). Wild-type cells and cells expressing the Epe1-C fragment fail to exhibit any significant enrichment in H3K9me2. In addition, epe1Δ clr4Δ cells exhibit a complete loss of epigenetic silencing, further supporting our observations that H3K9 methylation has a causal role in TetR-Swi6-CSD initiated silencing (Figure 3—figure supplement 2B).
 
-## H3K9 methylation stimulates complex formation between Epe1 and Swi6HP1
+### H3K9 methylation stimulates complex formation between Epe1 and Swi6HP1
 
 We speculated that a heterochromatin-specific trigger might regulate the interaction between the N- and C-terminus of Epe1 to stabilize its interaction with Swi6HP1. We expressed Epe1 fused to a 3XFLAG epitope tag in cells that lack the H3K9 methyltransferase, Clr4Suv39h or strains where the wild-type H3 allele is replaced with an H3K9R mutant. We performed a co-immunoprecipitation assay where we pull-down Epe1 with a FLAG antibody and measured its interaction with Swi6HP1. Although Epe1 interacts with Swi6HP1 in wild-type cells, this interaction is obliterated in both of the H3K9 methylation deficient mutant strains, clr4Δ and H3K9R mutants (Figure 4A). Furthermore, deleting histone deacetylases Sir2 or Clr3, both of which affect heterochromatin formation and Swi6HP1 localization, also resulted in a substantial decrease in the interaction between Epe1 and Swi6HP1 (Figure 4B). In contrast, deleting Mst2, a histone acetyltransferase that enhances heterochromatin formation leads to no change in the interaction pattern between Epe1 and Swi6HP1 (Figure 4—figure supplement 1A; Reddy et al., 2011). Hence, our results indicate that H3K9 methylation and functional heterochromatin are pre-requisites for complex formation between Epe1 and Swi6HP1 in cells.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53155/elife-53155-fig4-v2.jpg)
+
+**Figure 4.:** (A) Western blots of co-immunoprecipitation measurements reveal an interaction between Epe1-3XFLAG and Swi6HP1 in the case of wild-type cells, which is completely absent in H3K9 methylation deficient cells (clr4Δ and H3K9R). (B) Co-immunoprecipitation measurements reveal that deletion of histone deacetylases Clr3 or Sir2 which disrupt heterochromatin formation, also leads to a concomitant loss in the interaction between Epe1-3XFLAG and Swi6 HP1. (C) Western blots of in vitro binding assays between recombinant Epe1 and Swi6 HP1 in the presence of histone H3 tail peptides (1–15 amino acids). Increasing amounts of wild-type MBP-Epe1 are added while maintaining a fixed amount of 3XFLAG- Swi6HP1 on beads. Experiments were performed in the presence of an unmethylated H3 peptide (H3K9me0) (lanes 4–6) or an H3K9 tri-methylated peptide (H3K9me3) (lanes 7–9). Epe1 exhibits a significant increase in its ability to interact with Swi6HP1 in the presence of an H3K9me3 peptide. (D) Western blots of in vitro binding assays between recombinant Epe1 and Swi6HP1 in the presence of differentially methylated histone H3 tail peptides (1–15 or 1–21 amino acids). Increasing amounts of wild-type MBP-Epe1 are added while maintaining a fixed amount of 3XFLAG-Swi6HP1 on beads. Experiments were performed in the presence of an unmethylated H3 peptide (H3K9me0), an H3K9 tri-methylated peptide (H3K9me3), or an H3K4 tri-methylated peptide (H3K4me3). Epe1 exhibits a significant increase in its ability to interact with Swi6HP1 in the presence of an H3K9me3 but not an H3K4me3 peptide. (E) Western blots of in vitro binding assays between recombinant Epe1 and Swi6HP1 W104A in the presence of histone H3 tail peptides (1–15 or 1–21 amino acids). Increasing amounts of wild-type MBP-Epe1 are added while maintaining a fixed amount of 3XFLAG- Swi6HP1 W104A on beads. Experiments were performed in the presence of an unmethylated H3 peptide (H3K9me0) or an H3K9 tri-methylated peptide (H3K9me3). Epe1 exhibits an increase in its ability to interact with Swi6HP1 W104A in the presence of an H3K9me3 peptide.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53155/elife-53155-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Deleting Mst2 does not alter the interaction between Epe1-3X FLAG or Epe1 H297A−3X FLAG and Swi6HP1. Western blots of a co-immunoprecipitation assay between Epe1 and Swi6HP1 in an mst2Δ background. (B) Western blots of in vitro binding assays between recombinant Epe1 and Swi6HP1 in the presence of histone H3 tail peptides (1–15 or 1–21 amino acids). Increasing amounts of wild-type MBP-Epe1 are added while maintaining a fixed amount of 3XFLAG-Swi6HP1 on beads. Experiments were performed in the presence of an unmethylated H3 peptide (H3K9me0) or an H3K9 dimethylated peptide (H3K9me2). Epe1 exhibits an increase in its ability to interact with Swi6HP1 in the presence of an H3K9me2 peptide similar to the type of stimulation we observed upon the addition of an H3K9me3 peptide. (C) Western blots of in vitro binding assays between recombinant Epe1 WT and Epe1 H297A with Swi6HP1 in the presence of an H3K9me3 tail peptide. Increasing amounts of wild-type MBP-Epe1 and MBP-Epe1 H297A are added while maintaining a fixed amount of 3XFLAG- Swi6HP1 on beads in the presence of an H3K9me3 peptide or an unmodified H3K9me0 peptide. We observed a stimulation in the interaction between Epe1 WT and Swi6HP1 (lanes 7–9) but not in the case of Epe1 H297A and Swi6HP1 (lanes 10–12). (D) Peptide binding assays measuring Swi6HP1 and Swi6HP1 W104A binding to an H3K9me3 peptide. Biotinylated H3K9me3 or H3K9me0 peptides immobilized on streptavidin beads were used to pull-down Swi6HP1 or Swi6HP1 W104A. Swi6HP1 W104A exhibits a substantial defect in its interaction with an H3K9me3 peptide. (E) Western blots of in vitro binding assays between recombinant Epe1 and Swi6HP1 Loop-X mutant in the presence of histone H3 tail peptides (1–15 or 1–21 amino acids). Increasing amounts of wild-type MBP-Epe1 are added while maintaining a fixed amount of 3XFLAG-Swi6HP1 Loop-X mutant on beads. Experiments were performed in the presence of an unmethylated H3 peptide (H3K9me0) or an H3K9 tri-methylated peptide (H3K9me3). Epe1 exhibits an increase in its ability to interact with Swi6HP1 Loop-X mutant in the presence of an H3K9me3 peptide.
 
 We reconstituted a requirement for H3K9 methylation in stabilizing the interaction between Epe1 and Swi6HP1 using binding assays as previously described. We supplemented our in vitro binding assays with an unmethylated histone H3 peptide (H3K9me0, H3 1–15 amino acids) or an H3K9 tri-methylated peptide (H3K9me3, H3 1–15 amino acids). Compared to reactions where no-peptide (lanes 1–3) or an unmethylated H3 peptide was added (lanes 4–6), we observed a substantial increase in the interaction between Epe1 and Swi6HP1 specifically in the presence of an H3K9me3 peptide (lanes 7–9) (Figure 4C). An H3K9me2 peptide was also capable of stimulating the interaction between Epe1 and Swi6HP1 compared to reactions where no peptide was added or assays where an unmodified peptide was used (Figure 4—figure supplement 1B). To test whether the stimulation in the interaction between Epe1 and Swi6HP1 is specific to H3K9 methylation, we carried out binding assays in the presence of an H3K4 tri-methylated peptide (H3K4me3). The addition of an H3K4me3 peptide fails to enhance complex formation between Epe1 and Swi6HP1, unlike the significant enhancement in binding we observed upon addition of an H3K9me3 peptide (Figure 4D). Hence, the stimulatory effect we observed in our binding assays is specific to either H3K9me2 or H3K9me3 peptides.
 
@@ -87,9 +127,17 @@ One possibility is that Swi6HP1 undergoes a conformational change that reverses 
 
 In addition, we purified a Swi6HP1 Loop-X mutant that abolishes auto-inhibition and prevents chromodomain-dependent dimerization (Canzio et al., 2013). We tested whether the wild-type Epe1 protein and a Swi6HP1 Loop-X mutant that is constitutively released from auto-inhibition is sensitive to the presence of an H3K9me3 peptide. We purified 3X-FLAG Swi6HP1 Loop-X mutant from E. coli and immobilized the protein on FLAG beads. We added increasing amounts of Epe1 in the presence of an H3K9me0 or an H3K9me3 peptide. Although the H3K9me0 peptide has no effect on the interaction between Epe1 and Swi6HP1 Loop-X, the presence of an H3K9me3 peptide substantially enhances their interaction. Therefore, Epe1 remains responsive to the presence of an H3K9 methylated peptide even in a context where Swi6HP1 is constitutively released from auto-inhibition (Figure 4—figure supplement 1E).
 
-## An Epe1 C-terminal truncation mutant exhibits enhanced binding to Swi6HP1 and is insensitive to H3K9 methylation
+### An Epe1 C-terminal truncation mutant exhibits enhanced binding to Swi6HP1 and is insensitive to H3K9 methylation
 
 Our previous results suggest that Epe1 might have a latent capacity to bind to H3K9 methylated peptides or histones. We tested whether Epe1 directly binds to an H3K9me3 peptide and specifically interacts with H3K9 methylated histones. We performed peptide binding assays where a biotinylated H3K9me3 peptide was immobilized on streptavidin beads. Our binding assays detect a direct interaction between Epe1 and an H3K9me3 peptide as opposed to an unmodified H3K9me0 peptide. Furthermore, Epe1 selectively interacts with H3K9 methylated histones as opposed to H3K4 methylated histones. (Figure 5A,B). Next, we expressed and purified a C-terminal truncation mutant of Epe1, MBP-Epe1-ΔC from Sf9 insect cells, which includes amino acids 1–600 and includes the putative catalytic JmjC domain. We found that Epe1-ΔC can also directly bind to an H3K9me3 peptide and specifically interacts with H3K9 methylated histones (Figure 5—figure supplement 1A,B). Based on these observations, we hypothesize that the JmjC domain of Epe1 (amino acids 233–434) might be primarily responsible for H3K9 methylation recognition and binding.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/53155/elife-53155-fig5-v2.jpg)
+
+**Figure 5.:** (A) Biotinylated peptides (H3K9me3 or H3K9me0) are immobilized on streptavidin beads and incubated with MBP-Epe1. MBP-Epe1 preferentially associates with an H3K9me3 peptide compared to an H3K9me0 peptide. (B) Epe1 specifically interacts with H3K9me3 histones. Calf-thymus histones containing an unspecified mixture of differentially modified histones were incubated with MBP-Epe1 immobilized on an amylose resin. Epe1 preferentially interacts with H3K9 methylated histones as opposed to H3K4 methylated histones. (C) Western blots of an in vitro binding assay to determine whether an H3K9me3 peptide disrupts a trans interaction between the N- and C-terminal halves of Epe1. The N-terminus of Epe1, 3X FLAG-Epe1-N (1-434) was purified using a FLAG antibody from fission yeast cells. The purified protein was incubated with recombinant MBP-Epe1434-948 protein in the presence of an H3K9me0 peptide and an H3K9me3 peptide. The H3K9me3 peptide specifically disrupts a direct trans interaction between the N- and C-terminal halves of Epe1. (D) Western blots of in vitro binding assays comparing the interactions between recombinant Epe1-ΔC and Swi6HP1. Increasing amounts of wild-type MBP-Epe1 or MBP-Epe1-ΔC are added while maintaining a fixed amount of 3XFLAG- Swi6HP1 on beads. Epe1-ΔC (lanes 4–6) clearly surpasses the full-length protein (lanes 1–3) in terms of its ability to interact with Swi6HP1. (E) Western blots of in vitro binding assays between recombinant Epe1-ΔC and Swi6 HP1 in the presence of histone H3 tail peptides (1–15 amino acids). Increasing amounts of MBP-Epe1-ΔC are added while maintaining a fixed amount of 3XFLAG-Swi6HP1 on beads. Experiments were performed in the presence of an unmethylated H3 peptide (H3K9me0) (lanes 1–3) or an H3K9 tri-methylated peptide (H3K9me3) (lanes 4–6). Epe1-ΔC exhibits no change in its interaction with Swi6HP1 in the presence of an H3K9me3 peptide.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53155/elife-53155-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Biotinylated peptides (H3K9me3 or H3K9me0) were immobilized on streptavidin beads and incubated with MBP-Epe1-ΔC. MBP- Epe1-ΔC preferentially associates with an H3K9me3 peptide. (B) Calf-thymus histones containing an unspecified mixture of differentially modified histones were incubated with MBP- Epe1-ΔC immobilized on an amylose resin. Epe1-ΔC preferentially interacts with H3K9 methylated histones as opposed to H3K4 methylated histones. Therefore, the N-terminus of Epe1 harbors H3K9 methylation binding activity. (C) Western blots of co-immunoprecipitation measurements to test the interaction between Epe1 truncations and Swi6HP1. The full-length Epe1 protein and Epe1 truncations are detected using a FLAG antibody and Swi6HP1 is detected using a primary antibody. The deletion of the Epe1 C-terminus (Epe1-ΔC) leads to a substantial increase in its interaction with Swi6HP1 relative to the full-length protein. Epe1-N (1-434) fails to interact with Swi6HP1. (D) Western blots of co-immunoprecipitation measurements to test the interaction between Epe1-ΔC and Swi6HP1 in clr4Δ cells. Epe1-ΔC is detected using a FLAG antibody and Swi6HP1 is detected using a primary antibody. The interaction between Epe1-ΔC, and Swi6HP1 remains unaltered upon loss of H3K9 methylation, unlike its full-length counterpart, which is highly sensitive to heterochromatin disruption.
 
 We previously demonstrated that the addition of Swi6HP1 disrupts an interaction in trans between the Epe1-N and Epe1-C terminus (Figure 3B). The stimulation in Swi6HP1 binding that we observed prompted us to test whether Epe1 binding to an H3K9 methylated peptide might also have a similar function and interrupt a trans interaction between the Epe1 N- and C- terminal fragments. Disrupting their interaction would enable Swi6HP1 to gain access to the C-terminus of Epe1. To test this model, we measured a trans interaction between the Epe1 N- and C-terminal halves in the presence of an H3K9me0 peptide or an H3K9me3 peptide (Figure 5C). We purified an Epe1-N fragment fused to a 3X FLAG epitope tag. Next, we added a recombinant Epe1 C-terminal fragment (434–948 amino acids) in the presence of an H3K9me0 peptide or an H3K9me3 peptide. We observed an interaction in trans between the N- and C-terminal halves of Epe1 in binding assays with no peptide or an H3K9me0 peptide. However, the addition of an H3K9me3 peptide eliminates the interaction between the N- and C-terminal fragments of Epe1 (Figure 5C).
 
@@ -97,7 +145,7 @@ Based on our observations, we hypothesized that the C-terminus of Epe1 might hav
 
 We performed binding assays where we added increasing amounts of Epe1-ΔC while maintaining a fixed concentration of Swi6HP1 on beads in the presence of an H3K9me0 or an H3K9me3 peptide. Surprisingly, the addition of a modified peptide had no effect on the interaction between Swi6HP1 and Epe1-ΔC (Figure 5E). This is not because of saturation of the chemiluminescent signal as the addition of increasing amounts of Epe1-ΔC continues to produce a concomitant increase in its interaction with Swi6HP1. Previously, we demonstrated that the interaction between full-length Epe1 and Swi6HP1 requires functional heterochromatin. We performed a co-IP measurement in clr4+ and clr4Δ cells expressing FLAG-Epe1-ΔC. Consistent with our in vitro binding assays and unlike the full-length Epe1 protein, we observed an interaction between Epe1-ΔC and Swi6HP1 in both clr4+ and clr4Δ cells (Figure 5—figure supplement 1D). Therefore, Epe1-ΔC remains unresponsive to the presence of H3K9 methylation and does not undergo any further stimulation in its ability to interact with Swi6HP1.
 
-## Epe1 inhibits Swi6-dependent heterochromatin assembly through a non-enzymatic process
+### Epe1 inhibits Swi6-dependent heterochromatin assembly through a non-enzymatic process
 
 We hypothesized that Epe1 might outcompete other heterochromatin associated proteins that localize to sites of heterochromatin formation through a dominant interaction with Swi6HP1. Genetic studies reveal that Epe1 and a histone deacetylase Clr3 have opposing effects on nucleosome turnover (Aygün et al., 2013). One possibility is that the interaction between Epe1 and Swi6HP1 excludes heterochromatin agonists, such as Clr3 from sites of heterochromatin formation. We used a co-immunoprecipitation assay to measure the extent of interaction between Clr3 and Swi6HP1. Clr3 was fused to a 3X V5 epitope tag and expressed in a wild-type Epe1 and an Epe1 H297A background. We used a V5 antibody to pull-down Clr3 , after which we detected Swi6HP1 using a primary antibody. We measured a weak interaction between Swi6HP1 and Clr3 in a wild-type Epe1 background that substantially increases in an Epe1 H297A strain background (Figure 6A). This positive change in the interaction between Clr3 and Swi6HP1 occurs in the absence of any increase in Swi6HP1 occupancy at the pericentromeric repeats (Figure 6B). Although Clr3 is also recruited to sites of heterochromatin formation by interacting with Chp2HP1, the levels of Chp2HP1 in fission yeast cells are approximately 100-fold lower compared to Swi6HP1 (Sadaie et al., 2008). This difference in stoichiometry between Swi6HP1 and Chp2HP1 could explain how Epe1 may have an outsized role in interfering with heterochromatin assembly by selectively disrupting Swi6HP1 associated protein complexes.
 
@@ -112,6 +160,14 @@ We hypothesized that directly tethering Clr3 at an ectopic site would eliminate 
 Tethering Gal4-Clr3 in the absence of TetR-Clr4-I causes no change in reporter gene silencing or H3K9me2 levels at the ectopic site (Figure 7—figure supplement 1A,B,C). Hence, Gal4-Clr3 cannot initiate H3K9 methylation de novo in fission yeast (Figure 7—figure supplement 1B,C). This lack of de novo silencing is consistent with the notion that HDAC proteins in fission yeast collaborate with H3K9 methyltransferases to establish epigenetic silencing. Furthermore, expressing Clr3 minus the Gal4 DBD fusion (Clr3 ΔGal4) leads to a loss of epigenetic maintenance on +tetracycline-containing medium. Therefore, Clr3 must be recruited in cis to oppose the anti-silencing effects of Epe1 (Figure 7—figure supplement 1A). Consistent with the phenotypes that we observed, H3K9me2 levels are high during establishment but completely absent during maintenance in cells expressing diffusible Clr3 protein (Figure 7—figure supplement 1B,C). Hence, it is the sequence-specific recruitment of Clr3, rather than protein dosage, that facilitates H3K9 methylation maintenance. Therefore, Clr3 recruitment in cis is required to maintain silent epigenetic states and oppose Epe1 activity. This property of heterochromatin maintenance is RNAi independent as cells continue to exhibit a red or sectored appearance in a Dicer deficient background (dcr1Δ) (Figure 7—figure supplement 1D).
 
 The read-write activity of Clr4Suv39h is essential for the inheritance of silent epigenetic states in a sequence-independent manner (Audergon et al., 2015; Ragunathan et al., 2015). This H3K9 methylation-dependent positive feedback loop is disrupted in a Clr4Suv39h chromodomain mutant (Zhang et al., 2008). To test whether the chromodomain is essential for maintenance when Clr3 is tethered, we replaced the wild-type allele of Clr4Suv39 with a Clr4 mutant that lacks the chromodomain (clr4ΔCD). Cells that are initially red in –tetracycline medium turn white on +tetracycline medium in a clr4ΔCD expressing mutant (Figure 7E). H3K9me2 levels in clr4ΔCD mutants are similar to those of wild-type cells during establishment. However, H3K9 methylation is absent upon +tetracycline addition in clr4ΔCD expressing strains. Hence, the inheritance of H3K9 methylation depends on the read-write activity of Clr4Suv39h despite Clr3 being constitutively tethered (Figure 7F, G).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/53155/elife-53155-fig7-v2.jpg)
+
+**Figure 7.:** (A) A reporter system to detect epigenetic inheritance of H3K9 methylation in the presence of orthogonal chromatin effectors. Heterochromatin initiation depends on TetR-Clr4-I binding (-tetracycline). Orthogonal chromatin effectors can be recruited to the 10xgal4 DNA binding site via a Gal4 DNA binding domain (Gal4 DBD). The addition of tetracycline promotes TetR-Clr4-I dissociation to measure epigenetic inheritance in the presence of an orthogonal chromatin effector. (B) A color-based assay to detect the establishment and maintenance of epigenetic states. The establishment of epigenetic silencing (-tetracycline) results in red colonies. Tethering Gal4-Clr3 but not Gal4-Sir2 at an ectopic site promotes epigenetic inheritance of H3K9 methylation resulting red or sectored colonies in +tetracycline containing medium in epe1+ (C) ChIP-qPCR measurements of H3K9me2 levels at the ectopic site (10X tetO ade6+) during establishment (-tetracycline). (N=2). Error bars represent standard deviations. (D) ChIP-qPCR measurements of H3K9me2 levels at the ectopic site (10X tetO ade6+) during maintenance (+tetracycline) (N=2). Error bars represent standard deviations. (E) The deletion of the Clr4 chromodomain (clr4ΔCD) inactivates read-write functions which affects epigenetic inheritance. Cells that are initially red during heterochromatin establishment (-tetracycline) turn white during maintenance (+tetracycline) in a clr4ΔCD background. (F) ChIP-qPCR measurements of H3K9me2 levels at the ectopic site (10X tetO ade6+) during establishment (-tetracycline) in clr4ΔCD mutant cells (N=2). Error bars represent standard deviations. ChIP-qPCR values from Figure 7C are plotted as a reference. (G) ChIP-qPCR measurements of H3K9me2 levels at the ectopic site (10X tetO ade6+) during maintenance (+tetracycline) in clr4ΔCD mutant cells (N=2). Error bars represent standard deviations. Error bars represent standard deviations. ChIP-qPCR values from Figure 7D are plotted as a reference.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/53155/elife-53155-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Color-based assays to measure epigenetic inheritance in the presence of Gal4-Clr3 variants. Our results reveal that Gal4-Clr3 fusions cannot initiate heterochromatin de novo in the absence of TetR-Clr4-I (line 3). In the absence of sequence-dependent tethering of Clr3, cells establish but do not maintain epigenetic silencing (line 4). (B) ChIP-qPCR measurements of H3K9me2 levels at the ectopic site (10X tetO ade6+) during establishment (-tetracycline) in the presence of Gal4-Clr3 variants. ChIP-qPCR values from Figure 7C are plotted as a reference. (C) ChIP-qPCR measurements of H3K9me2 levels at the ectopic site (10X tetO ade6+) during maintenance (+tetracycline) in the presence of Gal4-Clr3 variants (N=2). Error bars represent standard deviations. ChIP-qPCR values from Figure 7D are plotted as a reference. (D) Epigenetic inheritance of H3K9 in the presence of Gal4-Clr3 is independent of the RNAi pathway.
 
 ## Discussion
 
@@ -139,43 +195,508 @@ We speculate that the enzymatic and non-enzymatic functions of Epe1 are likely t
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th colspan="2">Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizma base</td>
+      <td>Sigma aldrich</td>
+      <td>Cat# T1503-5KG</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Boric acid</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# B6768-5KG</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDTA</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# EDS-500G</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DTT</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BP17225</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# H4034-100G</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Proteinase K</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# FEREO0491</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Magnesium chloride hexahydrate</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# M2670-500G</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium chloride</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# P9541-500G</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium chloride</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# S271-3</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium acetate</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# S2889-250G</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tryptone</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BP1421-500</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SDS micropellets</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BP8200-500</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agarose</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BP1356-500</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PMSF</td>
+      <td>Calbiochem</td>
+      <td>Cat# 7110–5 GM</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# T8787-250ML</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lithium chloride</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# L4408-500G</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lithium acetate dihydrate</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# CAS6108-17-4</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tween 20</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# CAS9005-64-5</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Peptone</td>
+      <td>RPI Research Products</td>
+      <td>Cat# P20240-1000.0</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Leupeptin</td>
+      <td>RPI Research Products</td>
+      <td>Cat# L22035-0.025</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aprotinin</td>
+      <td>RPI Research Products</td>
+      <td>Cat# A20550-0.05</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pepstatin</td>
+      <td>RPI Research Products</td>
+      <td>Cat# P30100-0.025</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Oxalylglycine</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# O9390-10MG</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>α-Ketoglutaric acid disodium salt dihydrate</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 75892–25G</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SuperSignal West Pico PLUS Chemiluminescent Substrate</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# B2162617</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trichloroacetic acid</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# T0699-100ML</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenol:chloroform: isoamyl alcohol</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# P3803-100ML</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-ascorbic acid</td>
+      <td>Fisher Chemical</td>
+      <td>Cat# C6H8O6</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Coblat(II) chloride hexahydrate</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 255599–100G</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium iron (II) sulfate hexahydrate</td>
+      <td>ACROS ORGANICS</td>
+      <td>Cat# 423721000</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formaldehyde</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 252549–500 ML</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetonitrile</td>
+      <td>OmniSolv</td>
+      <td>Cat# AX0156-1</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trifluoroacetic acid</td>
+      <td>Fisher Chemical</td>
+      <td>Cat# A116−10 × 1 AMP</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl pimelimidate</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# 21667</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium hydroxide solution</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 221-228-100ML-A</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethanolamine</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 411000–100 ML</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethyleneglycol bis succinimidylsuccinate</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# 21565</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycogen</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 10901393001</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GelGreen Nucleic Acid Stain</td>
+      <td>BioTium</td>
+      <td>Cat# 41004</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>30% Acrylamide/ Bis solution, 37.5:1</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1610158</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium persulfate</td>
+      <td>Bio-Rad</td>
+      <td>Cat# A3678-100G</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TEMED</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# T9281-50ml</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydrochloric acid</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A14-500</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agar</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# A1296-1KG</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IPTG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BP1755-10</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K9me2 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab1220 RRID:AB_449854</td>
+      <td colspan="2">IF (1:1000), WB (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K9me3 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab8898 RRID:AB_306848</td>
+      <td colspan="2">IF (1:1000), WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab1791 RRID:AB_302613</td>
+      <td colspan="2">IF (1:1000), WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K4me3 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab8580 RRID:AB_2827504</td>
+      <td colspan="2">IF (1:1000), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal ANTI- FLAG M2 Antibody</td>
+      <td>Abcam</td>
+      <td>Cat# F1804-5MG RRID:AB_262044</td>
+      <td colspan="2">IF (1:5000), WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>THE V5 Tag Antibody</td>
+      <td>GenScript</td>
+      <td>Cat# A01724-100 RRID:AB_2827501</td>
+      <td colspan="2">IF (1:1000), WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MBP (Mouse monoclonal)</td>
+      <td>New England Biolabs</td>
+      <td>Cat# E8032S RRID:AB_2827502</td>
+      <td colspan="2">WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Swi6 (Rabbit polyclonal)</td>
+      <td>Custom</td>
+      <td></td>
+      <td colspan="2">WB (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>H3K9me3 (1603 Da)</td>
+      <td>New England Peptide</td>
+      <td>Custom</td>
+      <td colspan="2">H2N-ARTKQTAR(K9me3) STGGKA-amide</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>H3K9me0 (1560 Da)</td>
+      <td>New England Peptide</td>
+      <td>Custom</td>
+      <td colspan="2">ARTKQTKARKSTGGKA-amide</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>H3K9(me2) (2751 Da)</td>
+      <td>Anaspec peptide</td>
+      <td>Cat# AS-64359</td>
+      <td colspan="2">H-ARTKQTARK(ME2)STGGKAPPKQLAGGK(biotin)-OH</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>H3K9(me3) (2766 Da)</td>
+      <td>Anaspec peptide</td>
+      <td>Cat# AS-64360</td>
+      <td colspan="2">H-ARTKQTARK(ME3)STGGKAPPKQLAGGK(biotin)-OH</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>H3 (2722 Da)</td>
+      <td>Anaspec peptide</td>
+      <td>Cat# AS-61702</td>
+      <td colspan="2">H-ARTKQTARKSTGGKAP PKQLAGGK(biotin)-OH</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads Protein G</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>LOT# 00448217</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads M-280 Streptavidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>LOT# 00448388</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads Protein A</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>LOT# 00689576</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ANTI-FLAG M2 Affinity Gel</td>
+      <td>Sigma Aldrich</td>
+      <td>LOT# A2220-5ML</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amylose Resin</td>
+      <td>New England Biolabs</td>
+      <td>LOT# E8021L</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pierce Gutathione Agarose, 100 ml</td>
+      <td>Thermo Scientific</td>
+      <td>LOT# R1241698</td>
+      <td colspan="2"></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 Plasmids containing Epe1 wild-type and point mutants were constructed by modifying existing pFA6a C-terminal tagging plasmids. Point mutations were introduced by designing primers using guidelines described in Quick Change mutagenesis protocols. A ligation independent cloning approach was used to construct pFastBac vectors containing wild-type Epe1 and Epe1 H297A mutant for recombinant protein expression and also for other MBP fusion constructs for E. coli expression. 3X FLAG Swi6HP1 and 3X FLAG Chp2HP1 were cloned into existing pGEX vectors downstream of the Prescission protease cleavage site using Gibson assembly. The construction of the 10X gal4-10X tetO-ade6+ plasmid involved modifying plasmids containing a 10X tetO sequence and sub-cloning Gal4 UAS sequences derived from a Drosophila pVALIUM 10X UAS vector. Vectors containing Gal4-Clr3 or Gal4-Sir2 were made using a modified pDual vector with an nmt1 promoter that enables facile integration of DNA sequences at the leu1 locus in fission yeast (Matsuyama et al., 2004). Further details regarding plasmid construction are readily available upon request.
 
-## Strains
+### Strains
 
 All strains were constructed using a PCR-based gene targeting approach (Bähler et al., 1998). In cases where we generated point mutations of epe1, we reintroduced the full length wild-type or mutant gene in epe1Δ strains. All strains were genotyped using colony PCR assays. We subsequently verified protein expression using western blots for each of the mutant strains. Strains with 10X gal4-10X tetO-ade6+ were constructed using a 5-Fluoroorotic Acid (FOA) selection strategy based on disrupting the endogenous ura4 locus. Strains with Gal4-Clr3 or Gal4-Sir2 were made by digesting pDual vectors with a Not1 restriction enzyme followed by transformations and -LEU based selection. Other deletions of heterochromatin associated factors were achieved either by PCR-based gene targeting approaches or by a cross followed by random spore analysis and PCR based screening to select for colonies that harbored the reporter gene. All strains used in this study are listed in Supplementary file 1, Table S1. Further details regarding strain construction are available upon request.
 
-## Cell lysis, co-immunoprecipitation and western blotting
+### Cell lysis, co-immunoprecipitation and western blotting
 
 1.5 L of fission yeast cells cells were grown in YEA medium at 32°C to an OD600 = 3.5 and harvested by centrifugation. The cell pellets were washed with 10 ml TBS pH 7.5, re-suspended in 1.5 ml lysis buffer (30 mM HEPES pH 7.5, 100 mM NaCl, 0.25% Triton X-100, 5 mM MgCl2,1 mM DTT), and the cell suspension was snap-frozen into liquid nitrogen to form yeast ‘balls’ and cryogenically ground using a SPEX 6875D Freezer/Mill. The frozen cell powder was thawed at room temperature and re-suspended in an additional 10 ml of lysis buffer with protease inhibitor cocktail and 1 mM PMSF. The cell lysates were subjected to two rounds of centrifugation at 18000 rpm for 5 and 30 mins in a JA-25.50 rotor (Beckman). Bradford assay was used to normalize protein levels for co-immunoprecipitation and immunoblot analysis.
 
 Protein G Magnetic Beads were pre-incubated with antibody for 4 h and crosslinked with 10 volumes of crosslinking buffer containing 20 mM DMP (3 mg DMP/ml of 0.2 M Boric Acid pH 9) for 30 min at room temperature by rotating. Crosslinking was quenched by washing twice and incubated with 0.2 M ethanolamine pH 8 for 2 h at room temperature by rotating. The cell lysates were then incubated with antibody crosslinked beads for 3 h at 4°C. Beads were washed three times in 1 ml lysis buffer for 5 mins each, then eluted with 500 μl of 10 mM ammonium hydroxide. The ammonium hydroxide was evaporated using speed vac (SPC-100H) for 5 h and re-suspended in SDS sample buffer. Samples were resolved on SDS–polyacrylamide gel electrophoresis (SDS-PAGE) and transferred to PVDF membranes. Immunoblotting was performed by blocking PVDF membrane in Tris-buffered saline (TBS) pH 7.5 with 0.1% Tween-20 (TBST) containing 5% non-fat dry milk and subsequently probed with desired primary antibodies and secondary antibodies. Blots were developed by enhanced chemiluminescence (ECL) method and detected with Bio-Rad ChemiDoc Imaging System. All co-IP experiments were reproduced N = 2.
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 Cells were grown till late log phase (OD 600–1.3 to 1.8) in yeast extract supplemented with adenine (YEA) or YEA containing tetracycline (2.5 μg/ml) medium and fixed with 1% formaldehyde for 15 min at room temperature (RT). 130 mM glycine was then added to quench the reaction and incubated for 5 min at RT. The cells were harvested by centrifugation, and washed twice with TBS (50 mM Tris, pH 7.6, 500 mM NaCl). Cell pellets were resuspended in 300 μl lysis buffer (50 mM HEPES-KOH, pH 7.5, 100 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.1% SDS, and protease inhibitors) to which 500 μl 0.5 mm glass beads were added and cell lysis was carried out by bead beating using Omni Bead Ruptor at 3000 rpm × 30 s × 10 cycles. Tubes were punctured and the flow-through was collected in a new tube by centrifugation which was subjected to sonication to obtain fragment sizes of roughly 100–500 bp long. After sonication the extract was centrifuged for 15 min at 13000 rpm at 4°C. The soluble chromatin was then transferred to a fresh tube and normalized for protein concentration by the Bradford assay. For each normalized sample, 25 μl lysate was saved as input, to which 225 μl of 1xTE/1% SDS were added (TE: 50 mM Tris pH 8.0, 1 mM EDTA). Dynabeads Protein A were preincubated with Anti-H3K9me2 antibody (PRID:AB_449854). For each immunoprecipitation, 2 μg antibody coupled to 30 μl beads was added to 400 μl soluble chromatin, and the final volume of 500 μl was achieved by adding lysis buffer. Samples were incubated for 2 h at 4°C, the beads were collected on magnetic stands, and washed three times with 1 ml lysis buffer and once with 1 ml TE. For eluting bound chromatin, 100 μL elution buffer I (50 mM Tris pH 8.0, 10 mM EDTA, 1% SDS) was added and the samples were incubated at 65°C for 5 min. The eluate was collected and incubated with 150 μl 1xTE/0.67% SDS in the same way. Input and immunoprecipitated samples were finally incubated overnight at 65°C to reverse crosslink for more than 6 h. 60 μg glycogen, 100 μg proteinase K (Roche), 44 μl of 5M LiCl, and 250 μl of 1xTE was added to each sample and incubation was continued at 55°C for 1 h. Phenol/chloroform extraction was carried out for all the samples followed by ethanol precipitation. Immuno-precipitated DNA was resuspended in 100 μl of 10 mM Tris pH 7.5 and 50 mM NaCl and was used for qPCR (SYBR Green) using an Eppendorf Mastercycler Realplex. For extra crosslinking, prior to fixing with 1% formaldehyde, the cultures were incubated at 18°C for 2 h in a shaking incubator. The cells were pelleted and resuspended in 4.5 ml of 1x PBS. To this 1.5 mM EGS (ethylene glycol bis[succinimidylsuccinate]), Pierce (Fisher) was added and the samples were incubated at RT for 20 min with mild shaking before adding 1% formaldehyde. The samples were then processed as mentioned above. All ChIP experiments were reproduced N = 2.
 
-## Recombinant protein purification from insect cells and E. coli
+### Recombinant protein purification from insect cells and E. coli
 
 MBP-His-TEV-Epe1 and Epe1-ΔC were cloned into a pFastBac vector (Thermo Fisher Scientific) and used for Bacmid generation. Low-titer baculoviruses were produced by transfecting Bacmid into Sf21 cells using Cellfectin II reagent (Gibco). Full-length S. pombe Epe1 protein (wild-type and mutant) was expressed in Hi5 cells infected by high titer baculovirus which was amplified from Sf21 cells. After 44 h of infection, Hi5 cells were harvested and lysed in buffer A (30 mM Tris-HCl (pH 8.0), 500 mM NaCl, 5 mM EDTA, 5 mM β-mercaptoethanol with protease inhibitor cocktails) using Emulsiflex-C3 (Avestin). The cleared cell lysate was applied to Amylose resin (New England Biolabs) followed by washing with buffer A and elution with buffer A containing 10 mM maltose. The N-terminal His-MBP tag can be removed by TEV protease cleavage, which was used to evaluate protein solubility. Proteins were further purified using a Superdex 200 (GE Healthcare) size exclusion column. The protein was concentrated in a storage buffer containing 30 mM Tris-HCl (pH 8.0), 500 mM NaCl, 30% glycerol, and 1 mM TCEP.
 
 Proteins were expressed in BL21 (DE3) cells. Cells were grown to log phase at 37°C, cooled on ice, and induced with 0.3 mM IPTG before incubation for 18 h at 18°C. Pellets were suspended in tris buffered saline (TBS) and frozen at −80°C until further use. For purification, cell pellets were thawed in lysis buffer (500 mM NaCl, 50 mM Tris pH 7.5, 10% glycerol) supplemented with protease inhibitor and cells were ruptured using sonicator. Cell debris was removed by centrifugation and the supernatant was incubated with appropriate beads for each purification for 3 h at 4°C. We used a GST tag and glutathione beads (GST) beads for 3X FLAG Swi6HP1, Swi6HP1 W104A, Swi6HP1 loop-X mutant and 3X FLAG-Chp2HP1 purifications. Swi6HP1 and Chp2HP1 were subject to overnight cleavage with Prescission protease. We used an MBP tag and amylose resin for the purification of Epe1434-948 and Epe1434-600. After washing, Epe1434-948 and Epe1434-600 were eluted with elution buffer (lysis buffer + 20 mM maltose + 5 mM EDTA). To purify Swi6HP1 used for in vitro binding assays, we used a hexahistidine tag and Nickel resin. After elution, the N-terminal 6X His tag was removed using a SUMO protease followed by addition purification using an anion exchange column.
 
-## In vitro binding assay
+### In vitro binding assay
 
 In vitro binding assays were performed by immobilizing recombinant 3X FLAG- Swi6HP1 or 3X FLAG- Chp2HP1 on 25 μl of FLAG M2 beads, which were incubated with three different concentrations of recombinant MBP fusion proteins in 600 μl binding buffer containing 20 mM HEPES pH 7.5, 150 mM NaCl, 5 mM MgCl2, 10% glycerol, 0.25% Triton -X 100, 1 mM DTT. Reactions were incubated at 4°C for 2 h and washed three times in 1 ml washing buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 5 mM MgCl2, 10% glycerol, 0.25% Triton -X 100, 1 mM DTT) for 5 min each, then 30μl of SDS sample buffer was added followed by incubation at 95°C for 5 min. Proteins were separated through SDS-PAGE and transferred to PVDF membrane followed by incubation with anti-MBP monoclonal antibody (E8032S, NEB) and M2 Flag antibody (A8592, Sigma). Depending on the experiment, we added co-factors 100μM ammonium iron (II) sulfate hexahydrate and 1 mM α-ketoglutarate or 5μg of H3 peptides (1–21 amino acids) with or without modifications. Western blot data for in vitro binding assays were analyzed using ImageJ software. The exposure times for the interaction assays were chosen and differ in each experiment to capture differences in the interaction between Epe1 and Swi6 depending on the assay conditions. Assays performed on different blots cannot be compared but samples loaded on the same blot can be readily compared to each other. All in vitro binding experiments were reproduced N ≥ 3.
 
-## Demethylase assay
+### Demethylase assay
 
 Mass spectrometry-based demethylase assays were performed using 5μg MBP-Epe1, 10μg Swi6, and 20μM peptide (either H3K9me3 or H3K9me2). The peptide sequences used in these assays were as follows: 1) NH2-ARTKQTAR(K9me3)STGGKA-amide (H3K9me3, 1–15 amino acids). 2) H- ARTKQTARK(K9me2)STGGKAPRKQLA - OH) (H3K9me2, 1–21 amino acids). The demethylase assay reaction buffer consists of 50 mM HEPES (pH 7.5), 50 mM NaCl, 100 μM ammonium iron (II) sulfate hexahydrate, 1 mM L-ascorbic acid, and 1 mM α-ketoglutarate. Reaction mixtures were incubated at 37°C for 3 h, quenched with an equal volume of 1% trifluoroacetic acid, and stored at −20°C. In parallel, we also performed demethylase assays using equivalent amounts of purified JMJD2A (protein amounts equalized using SDS-PAGE gels). Samples were thawed and desalted using a ZipTip (Millipore). The ZipTip was first equilibrated twice with wetting solution (50% acetonitrile) and twice with equilibration solution (0.1% trifluoroacetic acid). Samples (10μl) following the demethylase assay were washed with washing solution (0.1% trifluoroacetic acid) before elution with 4μl of 0.1% trifluoroacetic acid/50% acetonitrile. Matrix-assisted laser desorption ionization (MALDI) mass spectrometry was performed using a Waters Tofspec-2E in reflectron mode with delayed extraction (Department of Chemistry, University of Michigan). All demethylase experiments were reproduced N = 2.
 
-## In vitro translation (IVT) assays
+### In vitro translation (IVT) assays
 
 To identify minimal Epe1 fragments that bind to Swi6HP1, Epe1 fragments were translated in vitro using TNT T7-coupled reticulocyte lysate (Promega) with 35S-labeled methionine (Roche). In vitro translated target proteins were incubated with Flag-tagged Swi6 at 4°C for 20 min. M2 FLAG beads pre-equilibrated with buffer B containing 30 mM Tris-HCl (pH 8.0), 50 mM NaCl, 1 mM DTT, and 0.1% NP-40 (w/v) were mixed and incubated at 4°C for 45 min with rotation. The beads were washed three times with buffer B, and bead-bound proteins were separated by SDS-PAGE. Dried gels were analyzed by overnight exposure of a phosphor imager plate.
 
-## In vitro binding assays using fission yeast cell extracts
+### In vitro binding assays using fission yeast cell extracts
 
 To generate fission yeast cell lysates, we grew 100 ml of fission yeast cells in YEA medium at 32°C to an OD600 = 3–3.5 and harvested cells by centrifugation. The cell pellets were washed with 1 ml TBS pH 7.5 and resuspended in lysis buffer (30 mM HEPES pH 7.5, 100 mM NaCl, 0.25% Triton X-100, 5 mM MgCl2, 1 mM DTT). 0.5 mm glass beads were added and cell lysis was carried out by bead beating using Omni Bead Ruptor at 3000 rpm (30 s x eight cycles). The cell extract was centrifuged for 20 min at 15000 rpm at 4°C and the lysates were incubated with beads pre-bound with recombinant MBP-Epe1434-948 protein for 3 h at 4°C. Beads were washed three times with 1 ml lysis buffer and proteins were eluted by boiling the beads in SDS sample buffer. Proteins were resolved by SDS-PAGE and analyzed by immunoblotting with appropriate primary and secondary antibodies.
 
@@ -183,7 +704,7 @@ To test whether the N- and C-terminal fragments of Epe1 binds in trans, we use
 
 In assays where we tested the effect of modified peptides on the trans interaction between the N- and C-terminal halves of Epe1, we added 1 μg of either H3K9me0 or K9-trimethyl H3 (H3K9me3) peptides. Immunoblotting was performed by blocking PVDF membrane in TBS pH 7.5 with 0.1% Tween-20 (TBST) containing 5% non-fat dry milk and subsequently probed with desired primary antibodies and secondary antibodies. Blots were developed with the ECL method and detected with Bio-Rad ChemiDoc Imaging System.
 
-## Streptavidin pull-down assay
+### Streptavidin pull-down assay
 
 H3K9me0 or H3K9me3 biotinylated peptides (50 nM) were pre-incubated with either recombinant MBP-Epe1 or 3XFLAG-Swi6 in binding buffer (30 mM Tris-HCI [pH 7.5], 600 mM NaCl, 1% Triton X-100, 5% glycerol, 2.5% BSA) for 1 h at 4°C. Then streptavidin M280 beads (Invitrogen) were added to the pre-mixed protein-peptide mixture and incubated for an additional 2 h at 4°C. The beads were then rinsed three times with wash buffer (30 mM Tris-HCI [pH 7.5], 600 mM NaCl, 1% Triton X-100, 5% glycerol, 2.5% BSA) and bound proteins were eluted by boiling the beads in SDS sample buffer. The input and bound proteins were resolved by SDS-PAGE and analyzed by immunoblotting with MBP antibody (E8032S, NEB).
 

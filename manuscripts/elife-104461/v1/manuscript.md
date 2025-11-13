@@ -14,9 +14,9 @@
 
 ### Affiliations
 
-1. https://ror.org/056d84691 Department of Medical Biochemistry and Biophysics, Karolinska Institutet Stockholm Sweden
-2. https://ror.org/021ft0n22 Department of Cellular Biochemistry, University Medical Center Göttingen Göttingen Germany
-3. https://ror.org/00m8d6786 Center for Inherited Metabolic Diseases, Karolinska University Hospital Stockholm Sweden
+1. Department of Medical Biochemistry and Biophysics, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+2. Department of Cellular Biochemistry, University Medical Center Göttingen Göttingen Germany ([ROR:021ft0n22](https://ror.org/021ft0n22))
+3. Center for Inherited Metabolic Diseases, Karolinska University Hospital Stockholm Sweden ([ROR:00m8d6786](https://ror.org/00m8d6786))
 
 † Corresponding author
 
@@ -32,25 +32,92 @@ Here, we investigated whether mtDNA copy number modulation via moderate TFAM alt
 
 ## Results
 
-## Moderate alterations of TFAM levels only mildly affect pathology in aged mtDNA mutator mice
+### Moderate alterations of TFAM levels only mildly affect pathology in aged mtDNA mutator mice
 
 To experimentally test the impact of mtDNA copy number modulation on the premature ageing phenotypes of mtDNA mutator mice, we generated hemizygous Polg-/mut mice with moderately increased (Tfam+/OE) or decreased (Tfam+/-) TFAM levels. We first created heterozygous Polg knockout (Polg+/-) females that also carry either a Tfam+/OE or Tfam+/- allele, and subsequently mated those females to heterozygous mtDNA mutator (Polg+/mut) males (Figure 2—figure supplement 1). Employing this mating scheme ensures that the resulting mice (Polg-/mut) carry a substantial load of de novo generated somatic mtDNA mutations and prevent them from inheriting maternally transmitted mtDNA mutations from their mothers, which otherwise would aggravate the phenotype (Ross et al., 2013). Therefore, in the studied Polg-/mut mice, all mtDNA mutations are generated de novo during embryonic and postnatal life. Both the ‘classical’ mtDNA mutator mice (Polgmut/mut) (Trifunovic et al., 2004; Kujoth et al., 2005) and the mtDNA mutator mice generated in this study (Polg-/mut) develop profound premature ageing phenotypes at the age of 35 weeks. The mtDNA mutator mice (Polg-/mut) had a markedly reduced body weight at the age of 35 weeks and increasing TFAM levels (Polg-/mut; Tfam+/OE) led to a statistically significant further, albeit slight, reduction of body weight (Figure 1A). In contrast, the reduction of TFAM expression (Polg-/mut; Tfam+/-) did not have any statistically significant effect on the reduced body weight of mtDNA mutator mice (Figure 1A). The organ-to-body weight ratios were largely unaffected by variations in TFAM expression, with the exception of testis. In testis, we observed a clear rescue effect in mtDNA mutator mice with increased TFAM levels (Polg-/mut; Tfam+/OE) resulting in a testis to body weight ratio similar to wild-type mice, whereas reduced TFAM levels (Polg-/mut; Tfam+/-) exacerbated the phenotype (Figure 1B-D), consistent with our previous study (Jiang et al., 2017). These results demonstrate that TFAM modulation does not grossly impact most ageing phenotypes of the mtDNA mutator mouse.
 
-## Tissue-specific effects on mtDNA copy number and TFAM-to-mtDNA ratios
+![Figure 1.](https://cdn.elifesciences.org/articles/104461/elife-104461-fig1-v1.jpg)
+
+**Figure 1.:** (A) Body weight in g. (B) Spleen to body weight ratio (g/g). (C) Heart to body weight ratio (g/g). (D) Testis to body weight ratio (g/g). n≥7. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/104461/elife-104461-fig1-figsupp1-v1.jpg)
+
+### Tissue-specific effects on mtDNA copy number and TFAM-to-mtDNA ratios
 
 The beneficial effect of moderate TFAM overexpression on the testis phenotype, and the absence of any rescue effect on the increased heart and spleen phenotype of Polg-/mut; Tfam+/OE mice prompted us to perform further characterization of mtDNA expression in different tissues. To this end, we analyzed the relative mtDNA copy number by qPCR using three different probes, i.e., NADH-ubiquinone oxidoreductase chain 1 (mt-Nd1), ATP synthase subunit a (mt-Atp6), and Cytochrome b (Mt-CytB) (Figure 2). It should be noted that the mtDNA mutator mice carry linear deleted mtDNA molecules spanning the major arc of mtDNA (Trifunovic et al., 2004; Figure 2A). These linear deletions are continuously formed replication intermediates and represent around 30% of the total mtDNA in all investigated tissues (Trifunovic et al., 2004; Bailey et al., 2009). Mt-Nd1 hybridizes to a genomic region corresponding to the minor arc of the mtDNA and is hence a good proxy for full-length mtDNA, whereas mt-Atp6 and mt-CytB hybridize to genomic regions in the major arc of mtDNA and, therefore, are good indicators of total mtDNA levels, including deleted mtDNA molecules (Figure 2A). The mtDNA mutator mice spontaneously upregulated the total mtDNA copy number in several tissues (Figure 2B-F, Figure 2—figure supplement 1A), similar to what has previously been shown for mice harboring a point mutation in the tRNAAla gene (Filograna et al., 2019). Surprisingly, increased TFAM levels did not cause any additional relative mtDNA copy number change in either liver or heart of Polg-/mut; Tfam+/OE mice and only a very subtle difference in the colon (Figure 2B–D). The qPCR results for the liver were independently confirmed by Southern blot analyses (Figure 2—figure supplement 1B and C). In contrast, increased TFAM levels caused an additional relative mtDNA copy number increase in brown adipose tissue and spleen of Polg-/mut; Tfam+/OE mice compared to mtDNA mutator mice (Figure 2E and F).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/104461/elife-104461-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of the mtDNA highlighting the position of the probes used for mtDNA copy number analysis by qPCR. The deleted mtDNA region is indicated with a gray arc. (B–F) Relative mtDNA copy number quantification (Nd1/18 S, Atp6/18 S, Cytb/18 S) in (B) liver, (C) heart, (D) colon, (E) brown adipose tissue, and (F) spleen. n≥5. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/104461/elife-104461-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Relative mtDNA copy number quantification (Cytb/18 S) by qPCR in testis. n≥5. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (B) Southern blot analysis of SacI-digested DNA derived from the liver. mtDNA was quantified by radiolabeling with a speciﬁc probe against Cytochrome b (Cytb), nuclear DNA was probed with a specific probe against 18 S rDNA. (C) Relative Southern blot quantification (mtDNA/18 S rDNA); ns: non-significant.
+
 Changes in TFAM levels without a concomitant change in mtDNA levels are potentially problematic, because the TFAM-to-mtDNA ratio will be impacted to affect nucleoid compaction, which, in turn, impacts mtDNA expression (Bonekamp et al., 2021; Farge et al., 2014; Brüser et al., 2021). We, therefore, proceeded to calculate the relative TFAM-to-mtDNA ratios in liver, heart, colon, spleen, and brown adipose tissue. Compared to wild-type mice, Polg-/mut; Tfam+/+ mice had a moderately elevated TFAM-to-mtDNA ratio in the heart and a drastically decreased ratio in the spleen. TFAM overexpression in the mtDNA mutator mice (Polg-/mut; Tfam+/OE mice) resulted in a marked additional increase of the TFAM-to-mtDNA ratio in the liver and an additional increase in the heart in comparison with Polg-/mut; Tfam+/+ mice, whereas no major effect was observed in the other tissues (Table 1). When the TFAM levels were instead decreased (Polg-/mut; Tfam+/- mice), the TFAM-to-mtDNA ratios were decreased in liver, colon, and BAT in comparison with Polg-/mut; Tfam+/+ mice, whereas no additional change was seen in heart (Table 1).
+
+**Table 1.**
+ Relative mitochondrial transcription factor A (TFAM)-to-mitochondrial DNA (mtDNA) ratios in different tissues.The TFAM-to-mtDNA ratio was calculated from normalized TFAM protein levels (n=2) and normalized mtDNA levels (n=5) as determined by the mt-Nd1 probe. The respective values for the normalized TFAM and mtDNA levels are indicated in parentheses. BAT: brown adipose tissue.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Polg+/+Tfam+/+</th>
+      <th>Polg-/mutTfam+/+</th>
+      <th>Polg-/mutTfam+/OE</th>
+      <th>Polg-/mut Tfam+/-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Liver</td>
+      <td>1.00</td>
+      <td>0.86 (0.99:1.15)</td>
+      <td>2.14 (2.32:1.08)</td>
+      <td>0.48 (0.37:0.77)</td>
+    </tr>
+    <tr>
+      <td>Heart</td>
+      <td>1.00</td>
+      <td>1.31 (2.21:1.69)</td>
+      <td>1.93 (3.59:1.86)</td>
+      <td>1.24 (0.83:0.67)</td>
+    </tr>
+    <tr>
+      <td>Colon</td>
+      <td>1.00</td>
+      <td>1.19 (1.62:1.35)</td>
+      <td>1.01 (1.96:1.95)</td>
+      <td>0.61 (0.44:0.73)</td>
+    </tr>
+    <tr>
+      <td>BAT</td>
+      <td>1.00</td>
+      <td>0.95 (1.33:1.40)</td>
+      <td>1.09 (3.23:2.97)</td>
+      <td>0.67 (0.52:0.78)</td>
+    </tr>
+    <tr>
+      <td>Spleen</td>
+      <td>1.00</td>
+      <td>0.32 (0.42:1.32)</td>
+      <td>0.28 (0.66:2.39)</td>
+      <td>0.19 (0.20:1.04)</td>
+    </tr>
+  </tbody>
+</table>
 
 Taken together, these findings show that modulation of TFAM expression in the severely affected mtDNA mutator mouse has tissue-specific effects on TFAM-to-mtDNA ratios, which is well known to influence nucleoid compaction (Bonekamp et al., 2021). We, therefore, proceeded to investigate the pathophysiological effects of TFAM modulation in different organs of the mtDNA mutator mouse. We hypothesized that in tissues where TFAM overexpression increases the TFAM-to-mtDNA ratio, the mtDNA expression will be reduced and negatively impact tissue function. In contrast, we speculated that in tissues where elevated TFAM levels increase mtDNA copy number, the mitochondrial function would improve, in line with previous results (Jiang et al., 2017; Filograna et al., 2019).
 
-## Moderate TFAM overexpression impairs mtDNA expression in the liver of mtDNA mutator mice
+### Moderate TFAM overexpression impairs mtDNA expression in the liver of mtDNA mutator mice
 
 In the liver, TFAM overexpression resulted in a decrease of mt-Atp6 and mt-Cytb transcript levels (Figure 3A) as predicted by the increased TFAM-to-mtDNA ratio. The decrease in gene expression was also evident on the protein level as the steady-state levels of several subunits of the OXPHOS complexes were further decreased when compared to Polg-/mut; Tfam+/+ mice (Figure 3B). Of note, we did not only observe a reduction in levels of proteins encoded by the mtDNA, e.g., Cytochrome c oxidase subunit 1 (COX1) and Cytochrome c oxidase subunit 2 (COX2) of complex IV, but also of OXPHOS subunits encoded by the nuclear DNA, e.g., NADH:Ubiquinone Oxidoreductase Subunit B8 (NDUFB8) of complex I. This is an expected secondary effect as mtDNA gene expression is necessary for the stability of nucleus-encoded OXPHOS complex subunits (Kühl et al., 2017). The levels of the ATP Synthase F1 Subunit Alpha (ATP5A) protein of complex V (ATP synthase) were largely unaffected, which goes well in line with previous reports showing that impaired mtDNA expression leads to the formation of a stable subcomplex containing the F1 subunit of complex V of the OXPHOS system (Kühl et al., 2017). We detected increased levels of the complex II subunit Succinate Dehydrogenase Complex Iron Sulfur Subunit B (SDHB). Complex II is exclusively nuclear encoded and a compensatory increase upon impaired mitochondrial gene expression has been observed before (Kühl et al., 2017).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/104461/elife-104461-fig3-v1.jpg)
 
-**Figure 3.:** (A) Relative expression levels of mtDNA-encoded transcripts (Nd1/β-actin, Atp6/β-actin, Cytb/β-actin) measured by RT-qPCR in liver. n≥7. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (B) Western blot analysis of steady-state levels of mitochondrial proteins in liver. (C) Relative enzyme activities of oxidative phosphorylation (OXPHOS) complexes measured by spectrophotometry in liver mitochondria. n≥6 Data are represented as means ± SEM; *p<0.05; **p<0.01; **p<0.01; ***p<0.001; ns: non-significant. (D) Relative expression levels of mitochondrial stress markers (Atf4/β-actin, Atf5/β-actin, Mthfd2/β-actin) measured by RT-qPCR in liver. n≥7. Data are represented as means ± SEM; *p<0.05; **p<0.01; ***p<0.001, ns: non-significant (E) Quantification of FGF21 levels in plasma measured by ELISA. n ≥ 9. Data are represented as means ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant.Figure 3—source data 1.Figure 3A, D and E.Figure 3—source data 2.Figure 3B.Figure 3—source data 3.Figure 3B, indicating relevant bands.
+**Figure 3.:** (A) Relative expression levels of mtDNA-encoded transcripts (Nd1/β-actin, Atp6/β-actin, Cytb/β-actin) measured by RT-qPCR in liver. n≥7. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (B) Western blot analysis of steady-state levels of mitochondrial proteins in liver. (C) Relative enzyme activities of oxidative phosphorylation (OXPHOS) complexes measured by spectrophotometry in liver mitochondria. n≥6 Data are represented as means ± SEM; *p<0.05; **p<0.01; **p<0.01; ***p<0.001; ns: non-significant. (D) Relative expression levels of mitochondrial stress markers (Atf4/β-actin, Atf5/β-actin, Mthfd2/β-actin) measured by RT-qPCR in liver. n≥7. Data are represented as means ± SEM; *p<0.05; **p<0.01; ***p<0.001, ns: non-significant (E) Quantification of FGF21 levels in plasma measured by ELISA. n ≥ 9. Data are represented as means ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant.
 
 We proceeded to measure the enzyme activities of individual OXPHOS complexes in liver mitochondria (Figure 3C). The complex I and complex IV activities were reduced to about 50% in Polg-/mut; Tfam+/+ mice in comparison with wild-type mice (Figure 3C). However, we did not see any further alteration of the reduced enzyme activities induced by TFAM overexpression or reduced TFAM expression (Figure 3C). Interestingly, we detected a significant increase in complex II and complex II + complex III activity upon TFAM overexpression, which can partially be explained by the increased complex II protein levels we observed in Polg-/mut; Tfam+/OE mice (Figure 3B and C). The Polg-/mut; Tfam+/+ mice had normal expression of Activating Transcription Factor 4 (Atf4) and Activating Transcription Factor 5 (Atf5) in liver, whereas the expression of Mthfd2 was markedly increased (Figure 3D). We have previously reported that increased Mthfd2 expression is a sensitive marker of mitochondrial dysfunction and that Mthfd2 expression increases as OXPHOS dysfunction progresses (Kühl et al., 2017). The finding of increased Mthfd2 expression in Polg-/mut; Tfam+/+ liver is thus consistent with the observed OXPHOS dysfunction (Figure 3C and D). This was unaltered by TFAM overexpression.
 
@@ -58,41 +125,53 @@ We also observed an increase in Fibroblast Growth Factor 21 (FGF21) levels in pl
 
 In summary, moderate TFAM overexpression does not improve the liver phenotype of mtDNA mutator mice. On the contrary, elevating TFAM had a negative effect on mtDNA gene expression (Figure 3A and B), which could be linked to the increased TFAM-to-mtDNA ratio (Table 1) causing tighter compaction of the mitochondrial nucleoid. The mtDNA mutator mouse has abundant point mutations in mtDNA that will affect tRNAs and rRNAs, thus impairing mitochondrial translation, as well as abundant point mutations causing amino acid substitutions in the protein-coding genes of mtDNA, thus causing dysfunction or impaired stability of respiratory chain complexes. The impaired mtDNA gene expression caused by increased nucleoid compaction poses an additional burden on the already compromised OXPHOS dysfunction in mtDNA mutator mice. The marked additional increase in FGF21 levels in Polg-/mut; Tfam+/OE mice indicates that TFAM overexpression has a negative impact on liver physiology in mtDNA mutator mice.
 
-## Modulation of TFAM does not impact the cardiomyopathy phenotype of mtDNA mutator mice
+### Modulation of TFAM does not impact the cardiomyopathy phenotype of mtDNA mutator mice
 
 In the heart of Polg-/mut; Tfam+/+ mice, we detected strongly reduced levels of mtDNA-encoded transcripts (Figure 4A). This can potentially be explained by the substantial increase in TFAM protein levels in these animals (Figure 4B), which, given the absence of a corresponding increase in full-length mtDNA, results in a higher TFAM-to-mtDNA ratio and thus probably causes reduced mtDNA expression (Table 1). Importantly, TFAM modulation did not have any effect on the reduced transcript levels or the diminished protein levels of OXPHOS complexes in mtDNA mutator mice (Figure 4A and B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/104461/elife-104461-fig4-v1.jpg)
 
-**Figure 4.:** (A) Relative expression levels of mtDNA-encoded transcripts (Nd1/β-actin, Atp6/β-actin, Cytb/β-actin) measured by RT-qPCR in heart. n ≥ 7. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (B) Western blot analysis of steady-state levels of mitochondrial proteins in heart. (C) Relative expression levels of mitochondrial stress markers (Atf4/β-actin, Atf5/β-actin, Mthfd2/β-actin, Nppa/β-actin) measured by RT-qPCR in heart. n ≥ 7. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant.Figure 4—source data 1.Figure 4A and C.Figure 4—source data 2.Figure 4B.Figure 4—source data 3.Figure 4B, indicating relevant bands.
+**Figure 4.:** (A) Relative expression levels of mtDNA-encoded transcripts (Nd1/β-actin, Atp6/β-actin, Cytb/β-actin) measured by RT-qPCR in heart. n ≥ 7. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (B) Western blot analysis of steady-state levels of mitochondrial proteins in heart. (C) Relative expression levels of mitochondrial stress markers (Atf4/β-actin, Atf5/β-actin, Mthfd2/β-actin, Nppa/β-actin) measured by RT-qPCR in heart. n ≥ 7. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant.
 
 Consistent with the increased heart-to-body-weight ratio of Polg-/mut; Tfam+/+ mice (Figure 1C), the expression of Natriuretic Peptide A (Nppa), a marker for heart failure, and Mthfd2, as described above a marker for OXPHOS dysfunction, were increased, whereas there was no change in mRNA levels for Atf4 and Atf5 (Figure 4C). The levels of Atf4, Atf5, Mthfd2, and Nppa mRNAs were not impacted by reduced or increased expression of TFAM (Figure 4C). These findings are in agreement with the observation that TFAM overexpression does not rescue the increased heart-to-body weight ratio observed in mtDNA mutator mice (Figure 1C).
 
 All in all, these results demonstrate that the mtDNA mutator hearts upregulate TFAM protein levels, likely as a compensatory mechanism. However, the increased TFAM levels do not lead to a concomitant increase in mtDNA levels, but instead result in an increased TFAM-to-mtDNA ratio and reduced steady-state levels of mitochondrial transcripts. TFAM overexpression does not further affect this endogenous compensatory response and causes no additional increase in mtDNA levels. Thus, neither moderate TFAM overexpression nor reduced TFAM expression affect the heart phenotype of mtDNA mutator mice.
 
-## Increased TFAM levels do not rescue OXPHOS dysfunction in the colon of mtDNA mutator mice
+### Increased TFAM levels do not rescue OXPHOS dysfunction in the colon of mtDNA mutator mice
 
 In the colon, we found an increase in levels of mtDNA-encoded mRNAs in Polg-/mut; Tfam+/+ mice (Figure 5A). This response was largely ablated upon moderate TFAM overexpression. In line with this, levels of key OXPHOS subunits were further reduced in Polg-/mut; Tfam+/OE mice in comparison to Polg-/mut; Tfam+/+ mice (Figure 5B). However, this did not lead to a further deterioration of levels of respiratory chain complexes on blue-native PAGE gels (Figure 5C) or respiratory chain enzyme activities (Figure 5D), possibly due to their already extremely low levels in Polg-/mut; Tfam+/+ mice. We found a strong induction of the Atf5 and Mthfd2 mRNAs in the colon of Polg-/mut; Tfam+/+ mice. Upon TFAM overexpression, Mthfd2 mRNA expression levels were further increased (Figure 5E).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/104461/elife-104461-fig5-v1.jpg)
 
-**Figure 5.:** (A) Relative expression levels of mtDNA-encoded transcripts (Nd1/β-actin, Atp6/β-actin, Cytb/β-actin) measured by RT-qPCR in colon. n≥7. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (B) Western blot analysis of steady-state levels of mitochondrial proteins in colon. (C) BN-PAGE and in-gel activities of complex I and complex IV activities in mitochondrial protein extracts from mouse colon. Coomassie staining of the gel is shown to indicate equal loading. SC, Supercomplexes. (D) Relative enzyme activities of OXPHOS complexes measured by spectrophotometry in colon mitochondria. n≥3. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (E) Relative expression levels of mitochondrial stress markers (Atf4/β-actin, Atf5/β-actin, Mthfd2/β-actin) measured by RT-qPCR in colon. n≥9. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant.Figure 5—source data 1.Figure 5A and E.Figure 5—source data 2.Figure 5B.Figure 5—source data 3.Figure 5C.Figure 5—source data 4.Figure 5B, indicating relevant bands.Figure 5—source data 5.Figure 5C, indicating relevant bands.
+**Figure 5.:** (A) Relative expression levels of mtDNA-encoded transcripts (Nd1/β-actin, Atp6/β-actin, Cytb/β-actin) measured by RT-qPCR in colon. n≥7. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (B) Western blot analysis of steady-state levels of mitochondrial proteins in colon. (C) BN-PAGE and in-gel activities of complex I and complex IV activities in mitochondrial protein extracts from mouse colon. Coomassie staining of the gel is shown to indicate equal loading. SC, Supercomplexes. (D) Relative enzyme activities of OXPHOS complexes measured by spectrophotometry in colon mitochondria. n≥3. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (E) Relative expression levels of mitochondrial stress markers (Atf4/β-actin, Atf5/β-actin, Mthfd2/β-actin) measured by RT-qPCR in colon. n≥9. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant.
 
 In summary, the responses in the colon have similarities to the responses in the liver as TFAM overexpression results in a reduction of mtDNA-encoded transcripts in mtDNA mutator mice. This reduction likely adds to the already drastic decrease in protein levels of several subunits of the OXPHOS complexes. The strongly induced expression of Mthfd2 suggests that instead of having a beneficial effect, TFAM overexpression results in a deterioration of colon physiology.
 
-## TFAM downregulation rescues Ucp1 expression in brown adipose tissue of mtDNA mutator mice
+### TFAM downregulation rescues Ucp1 expression in brown adipose tissue of mtDNA mutator mice
 
 TFAM overexpression in BAT resulted in a significant increase in mtDNA copy number and did not alter the TFAM-to-mtDNA ratio (Figure 2E and Table 1). In line with this finding, the levels of mtDNA-encoded transcripts (Figure 6A) and OXPHOS subunits (Figure 6B) did not change. In contrast, the reduced TFAM expression in Polg-/mut; Tfam+/- mice led to increased steady-state levels of mtDNA-encoded transcripts (Figure 6A), which correlate well with the decrease in TFAM-to-mtDNA ratios in BAT of these mice. The levels of OXPHOS subunits in Polg-/mut; Tfam+/- mice were only mildly increased or not changed (Figure 6B). UCP1 protein levels are reduced in mtDNA mutator mice and TFAM overexpression did not influence the UCP1 levels in BAT. Surprisingly, the reduced TFAM expression in Polg-/mut; Tfam+/- mice resulted in elevated UCP1 protein levels (Figure 6B). Consistent with this result, the expression of Ucp1 and Cell Death Inducing DFFA Like Effector A (Cidea) mRNAs, which are markers for the thermogenic competence of BAT, was strongly induced in Polg-/mut; Tfam+/- mice compared to mtDNA mutator mice (Figure 6C). These findings argue that the restoration of mtDNA expression may be important for maintaining the differentiated state of BAT in Polg-/mut mice or that homeostatic mechanisms induced by altered function of other tissues affect nuclear gene expression in BAT.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/104461/elife-104461-fig6-v1.jpg)
 
-**Figure 6.:** (A) Relative expression levels of mitochondrial DNA (mtDNA)-encoded transcripts (Nd1/β-actin, Atp6/β-actin, Cytb/β-actin) measured by RT-qPCR in brown adipose tissue (BAT). n≥5. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (B) Western blot analysis of steady-state levels of UCP1 and mitochondrial proteins in BAT. (C) Relative expression levels of brown adipose stress markers (Ucp1/β-actin, Cidea/β-actin, Dio2/β-actin) measured by RT-qPCR in BAT. n≥5. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant.Figure 6—source data 1.Figure 6A and C.Figure 6—source data 2.Figure 6B.Figure 6—source data 3.Figure 6B, indicating relevant bands.
+**Figure 6.:** (A) Relative expression levels of mitochondrial DNA (mtDNA)-encoded transcripts (Nd1/β-actin, Atp6/β-actin, Cytb/β-actin) measured by RT-qPCR in brown adipose tissue (BAT). n≥5. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (B) Western blot analysis of steady-state levels of UCP1 and mitochondrial proteins in BAT. (C) Relative expression levels of brown adipose stress markers (Ucp1/β-actin, Cidea/β-actin, Dio2/β-actin) measured by RT-qPCR in BAT. n≥5. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant.
 
 Taken together, our data show that moderate TFAM overexpression in BAT causes an increase in mtDNA copy number without affecting mtDNA expression. While this could potentially lead to a beneficial effect on BAT, we did not observe any rescue effect when assessing transcript and protein levels of key factors important for BAT function. In contrast, reduced TFAM levels led to a considerable burst in mtDNA gene expression, which surprisingly ameliorated the expression of markers for the thermogenic competence of BAT, hence likely positively affecting BAT function.
 
-## Upregulation of TFAM does not impact mitochondrial gene expression in mtDNA mutator spleen but impacts cytokine levels
+### Upregulation of TFAM does not impact mitochondrial gene expression in mtDNA mutator spleen but impacts cytokine levels
 
 In the spleen of Polg-/mut; Tfam+/+ mice, levels of mtDNA-encoded transcripts were substantially increased (Figure 7A). This is likely connected to the decrease in TFAM protein levels in these animals (Figure 7B), which is not accompanied by a corresponding decrease in mtDNA levels (Figure 2F) but instead results in a markedly decreased TFAM-to-mtDNA ratio (Table 1). Despite the elevated transcript levels in the spleen of mtDNA mutator mice, the levels of the complex IV subunit COX2 were drastically decreased (Figure 7B). TFAM overexpression, which further increased mtDNA copy number in spleen (Figure 2F), did not affect the TFAM-to-mtDNA ratio (Table 1) or mtDNA gene expression (Figure 7A and B). This resembles the previously reported situation in testis and heart, where moderate TFAM overexpression in young Polgmut/mut mice or aged tRNAAla-mutant mice, respectively, exerted a beneficial effect by increasing the absolute amount of mtDNA without affecting the mtDNA mutation load (Jiang et al., 2017; Filograna et al., 2019). To assess whether the increased mtDNA copy number in Polg-/mut; Tfam+/OE mice led to amelioration of the premature ageing phenotype in the spleen, we measured the levels of several cytokines in plasma. The mtDNA mutator mice demonstrated elevated Interleukin 5 (IL-5) and C-C Motif Chemokine Ligand 2 (CCL2) cytokine levels in plasma and increased IL-5 transcript levels in spleen (Figure 7C and D). TFAM overexpression normalized the levels of IL-5 and CCL2 in plasma (Figure 7C) and reduced the levels of IL-5 transcripts in spleen (Figure 7D). The levels of a range of other cytokines in plasma did not change (Figure 7—figure supplement 1). We determined the proportion of immune cell populations in the spleen by using gene expression markers and found a significant reduction of all T helper cell lineage markers (T-Box Transcription Factor 21 (Tbx21), GATA Binding Protein 3 (Gata3), RAR Related Orphan Receptor C (Rorc), and Forkhead Box P3 (Foxp3)) in mtDNA mutator spleen. In contrast, a granulocyte marker (CCAAT Enhancer Binding Protein Epsilon, Cebpe) was increased (Figure 7E). This finding implies a significant shift in immune cell populations in the spleen of Polg-/mut; Tfam+/+ mice. TFAM overexpression did not affect the expression of the immune cell markers in the spleen. The mtDNA mutator mice have been shown to have disrupted white pulp structure in the spleen due to persistent inflammation (Lei et al., 2021). However, the overall histology of the spleen did not reveal any apparent rescue effect by TFAM modulation (Figure 7F).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/104461/elife-104461-fig7-v1.jpg)
+
+**Figure 7.:** (A) Relative expression levels of mtDNA-encoded transcripts (Nd1/β-actin, Atp6/β-actin, Cytb/β-actin) measured by RT-qPCR in spleen. n≥5. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (B) Western blot analysis of steady-state levels of mitochondrial proteins in spleen. (C) Quantification of IL-5 and CCL2 cytokine levels in plasma measured by the Mouse Cytokine/Chemokine 44-Plex Discovery Assay. n≥6. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (D) Quantification of Il-5 and Ccl2 cytokine transcript levels in spleen measured by RT-qPCR. n≥10. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (E) Relative expression levels of immune cell markers (Tbx21/β-actin, Gata3/β-actin, Rorc/β-actin, Foxp3/β-actin, Cebpe/β-actin) for analyzing immune cell populations measured by RT-qPCR in spleen. n≥5. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant. (F) H&E staining of spleen sections. Scale bar: 500 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/104461/elife-104461-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Interferon Gamma (IFNγ). (B) Interleukin 3 (IL-3). (C) Tumor Necrosis Factor Alpha (TNFα). (D) Macrophage Inflammatory Protein-1 Alpha (MIP-1α). (E) Interleukin 2 (IL-2). (F) Interleukin 12p70 (IL-12p70). (G) C-X-C Motif Chemokine Ligand 1 (KC). (H) Interleukin 13 (IL-13). n≥6. Data are represented as mean ± SEM; *p<0.05; **p<0.01; ***p<0.001; ns: non-significant.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/104461/elife-104461-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Heatmap of proteins involved in the heme biosynthesis pathway. (B) Heatmap of proteins involved in reactive oxygen species (ROS) defense. Color indicates the z-score.
 
 Finally, we subjected spleen samples to tandem mass tag-based quantitative proteomic analysis to reveal any further beneficial or detrimental effects of TFAM modulation. In comparison with wild-type mice, the Polg-/mut; Tfam+/+ spleen showed upregulation of proteins involved in heme biosynthesis and reactive oxygen species (ROS) defense pathways. The former is consistent with the severe anemia present in the mtDNA mutator mice (Balducci, 2003), causing compensatory extramedullary haematopoiesis (Trifunovic et al., 2004). The latter is possibly due to altered ROS signaling, which is an important player in reshuffling hematopoietic cell populations (Ahlqvist et al., 2015). Increasing TFAM levels mitigated the induction of both of these pathways (Figure 7—figure supplement 2). The beneficial effect can potentially be attributed to an acute improvement of OXPHOS function due to the increased levels of wild-type mtDNA segments, to a long-term proliferative advantage and hence clonal expansion of cells harboring less mutated mtDNA molecules, or a combination of both.
 
@@ -110,45 +189,188 @@ In summary, the mtDNA mutator mouse shows tissue-specific endogenous compensator
 
 ## Materials and methods
 
-## Mouse work
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mouse: Polg+/mut</td>
+      <td>Trifunovic et al., 2004</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mouse: Polg+/-</td>
+      <td>Hance et al., 2005</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mouse: Tfam+/OE</td>
+      <td>Jiang et al., 2017</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mouse: Tfam+/-</td>
+      <td>Larsson et al., 1998</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSP60 antibody</td>
+      <td>Enzo Lifesciences</td>
+      <td>AB1-SPA-807-E</td>
+      <td>WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Total OXPHOS Rodent WB Antibody Cocktail</td>
+      <td>Abcam</td>
+      <td>ab110413</td>
+      <td>WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TFAM antibody</td>
+      <td>Abcam</td>
+      <td>ab131607</td>
+      <td>WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-UCP1 antibody</td>
+      <td>Abcam</td>
+      <td>ab209483</td>
+      <td>WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-COX2 antibody</td>
+      <td>home made</td>
+      <td>This study</td>
+      <td>WB</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fibroblast Growth Factor 21 Mouse/Rat ELISA</td>
+      <td>BioVendor</td>
+      <td>UNQ3115/PRO10196</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse Cytokine/Chemokine 44-Plex Discovery Assay Array</td>
+      <td>Eve Technologies</td>
+      <td>MD44</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>Graph Pad</td>
+      <td>https://www.graphpad.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH</td>
+      <td>https://imagej.net/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop 2020</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com/home</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator 2020</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com/home</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Proteome Discoverer v2.4</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>https://www.thermofisher.com/de/de/home/industrial/mass-spectrometry/liquid-chromatography-mass-spectrometry-lc-ms/lc-ms-software/multi-omics-data-analysis/proteome-discoverer-software.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R (4.1.0)</td>
+      <td>R project</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mass spectrometry proteomics data</td>
+      <td>This paper</td>
+      <td>ProteomeXchange Consortium (PRIDE partner repository): PXD054598</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse work
 
 The heterozygous Polg+/mut mutator mice, the heterozygous Polg+/-, the TFAM BAC (Tfam+/OE) and Tfam+/- (Jax MGI ID: 1860962) mice were generated previously as described (Trifunovic et al., 2004; Jiang et al., 2017; Larsson et al., 1998; Hance et al., 2005). Heterozygous Polg knockout (Polg+/-) males were mated to females that carry either the Tfam+/OE or Tfam+/- allele, the resulting Polg+/-; Tfam+/OE or Polg+/-; Tfam+/- females were further mated to heterozygous mtDNA mutator (Polg+/mut) males to generate the four genotypes used in this study (illustrated in Figure 1—figure supplement 1). Transgenic mice on a pure C57BL/6 N background were housed in a 12 hr light/dark cycle in standard individually ventilated cages and fed ad libitum with a normal chow diet. Experimental groups included only 35-weeks-old male animals. The study was approved by the Stockholm animal welfare ethics committee (Stockholms djurförsöksetiska nämnd) under the ethical permit 2001–2018 and carried out following the guidelines of the Federation of European Laboratory Animal Science Associations (FELASA).
 
-## Tissue isolation
+### Tissue isolation
 
 Animals were euthanized by CO2 followed by cervical dislocation. Blood was taken by heart puncture, collected in EDTA tubes, and centrifuged at 2000 g and 4 °C for 10 min to separate the plasma. Heart, spleen, liver, testis, colon, and BAT were collected immediately, washed with phosphate-buffered saline (PBS), and a piece of each tissue snap-frozen in liquid nitrogen, and stored at –80 °C. For hematoxylin and eosin (H&E) staining, tissues were embedded in O.C.T. compound (Tissue-Tek), frozen in isopentane precooled in liquid nitrogen, and stored at –80 °C. For the liver and colon, an additional tissue piece was kept in PBS for subsequent isolation of crude mitochondria.
 
-## Mitochondrial isolation
+### Mitochondrial isolation
 
 Liver and colon were homogenized in mitochondrial isolation buffer containing 320 mM sucrose, 1 mM EDTA, and 10 mM Tris-HCl, pH 7.4, supplemented with 0.2% bovine serum albumin (Sigma-Aldrich), EDTA-free complete protease inhibitor cocktail, and PhosSTOP tablets (Roche) by using a Teflon pestle (Schuett Biotec). After centrifugation at 1000 × g (swing-out rotor) for 10 min at 4 °C, the supernatants were subsequently spun at 10,000 × g for 10 min at 4 °C to isolate the mitochondria. Crude mitochondrial pellets were resuspended in a suitable amount of mitochondrial isolation buffer.
 
-## DNA isolation and mtDNA quantification by qPCR
+### DNA isolation and mtDNA quantification by qPCR
 
 Genomic DNA from snap-frozen heart, spleen, liver, testis, colon, and BAT was isolated using the DNeasy Blood and Tissue Kit (Qiagen), following the manufacturer’s instructions. Quantification of mtDNA copy number was performed in triplicates using 5 ng of DNA using TaqMan Universal Master Mix II and TaqMan probes (Life Technologies). The mtDNA levels were assessed using probes against the mitochondrial genes encoding Nd1, Atp6, and Cytb and normalized to the nuclear gene encoding 18 S rDNA.
 
-## DNA isolation and mtDNA quantification by Southern blot analysis
+### DNA isolation and mtDNA quantification by Southern blot analysis
 
 Genomic DNA from snap-frozen liver was isolated using the Puregene Cell and Tissue Kit (Qiagen), following the manufacturer’s instructions. Southern blot analysis was performed as described previously using CytB to detect mtDNA and 18 S rDNA as nuclear loading control (Jiang et al., 2019).
 
 For mouse samples, 2 μg total genomic DNA was digested with SacI-HF at 37 °C overnight and preheated at 93 °C for 3 min, followed by cooling on ice before loading onto the gel. After electrophoresis in 0.8% agarose, DNA was depurinated by incubation in 0.25 M HCl for 10 min and incubated in denaturation buffer (0.5 M NaOH and 1.5 M NaCl) twice for 30 min and neutralization buffer (0.5 M Tris-HCl (pH 7.4) and 1.5 M NaCl) twice for 30 min. DNA was blotted onto a Hybond N+nitrocellulose membrane for 72 hr and then cross-linked by exposure to 254 nm ultraviolet, 200 mJ/cm2. Next, membranes were hybridized with α-[32P]-dCTP-labelled DNA probes to detect mtDNA (CytB) or nuclear 18 S rDNA as a loading control. Radioactive signals were visualized using PhosphorImager screens and a Typhoon 7000 FLA (GE Healthcare). Band intensities were quantified using ImageJ software.
 
-## RNA isolation and quantitative reverse transcription PCR
+### RNA isolation and quantitative reverse transcription PCR
 
 Total RNA from snap-frozen heart, spleen, liver, colon, and BAT was isolated using the TRIzol/chloroform extraction method and quantified with a Qubit fluorometer (Life Technologies). After deoxyribonuclease treatment, reverse transcription was performed using the High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems, Life Technologies). RT-qPCR was performed using the TaqMan Universal Master Mix II with TaqMan probes for Nd1, Atp6, Cytb, Nppa, Atf4, Atf5, Mthfd2, Ucp1, Il-5, Ccl2, and β-actin (Life Technologies). β-actin was used as the loading control.
 
-## Western blot
+### Western blot
 
 Tissues were homogenized in RIPA buffer (50 mM Tris pH 7.4, 150 mM NaCl, 1% Nonidet P-40, 0.5% DOC, 0.1% SDS) on ice. The supernatant was collected after centrifugation at 10,000 g for 10 min at 4 °C. Protein concentration was determined by the BCA assay. After mixing with NuPAGE LDS Sample Buffer (Invitrogen), 20 µg of total tissue lysate was loaded into 12% precast gels (Invitrogen) and separated by SDS-PAGE. Protein was transferred onto polyvinylidene difluoride membranes using the iBlot 2 Gel Transfer system (Invitrogen). Immunodetection was performed according to standard procedure using enhanced chemiluminescence (Clarity ECL Western Blotting Substrates, Bio-Rad) and imaged using the Bio-Rad ChemDoc system. Images were exported using the Bio-Rad ImageLab software and quantified using Image J. The following antibodies were used: HSP60 (Enzo Lifesciences AB1-SPA-807-E), Total OXPHOS Rodent WB Antibody Cocktail (ab110413, abcam), TFAM (ab131607, abcam), UCP1 (ab209483, abcam), and COX2 (rabbit polyclonal antisera against COX2 generated using recombinant mouse protein).
 
-## TFAM-to-mtDNA ratios calculation
+### TFAM-to-mtDNA ratios calculation
 
 Average TFAM levels were quantified using Image J and normalized to HSP60 levels (n=2). To compare between the different groups, the averaged data was normalized to the wild-type (Polg+/+Tfam+/+). For the mtDNA level, qPCR data from the ND1 probe was used (n ≥ 5). For group comparisons, the averaged data was normalized to the wild-type (Polg+/+Tfam+/+). Eventually, TFAM-to-mtDNA ratios were calculated by dividing the wild-type normalized TFAM levels by the wild-type normalized mtDNA levels.
 
-## Histochemistry
+### Histochemistry
 
 For H&E staining, the spleen was cryosectioned at −20 °C (10 µm section; Cryostar NX70-Thermo Fisher) onto Polysine-coated slides (VWR 631–0107) and stored at −80 °C until use. H&E staining was performed according to standard procedure. In short, slides were brought to room temperature, washed once in water, and stained with hematoxylin solution (ab220365, abcam) for 10 min. The slides were washed in water twice and once in 0.1% sodium bicarbonate. After washing in 96% ethanol, the slides were stained in Eosin Y solution (0.25%) for 5 s. The slides were washed in ethanol, dehydrated, and mounted for bright-field microscopy.
 
-## OXPHOS activity measurements
+### OXPHOS activity measurements
 
 Spectrophotometric assessment of OXPHOS enzyme activities was performed as previously described (Wibom et al., 2002). In brief, 500 µg isolated mitochondria were resuspended in 100 µL resuspension buffer (250 mM sucrose, 15mM KH2PO4, 2 mM MgAc2, 0.5 mM EDTA, 0.5 g/l HSA, pH 7.2) and stored as 10 µL aliquots at −80 °C. All assays were performed using an Indiko automated photometer (Thermo Fisher Scientific) fitted with filters for 340, 405, 550, and 600 nm (bandwidth±5 nm) at 37 °C.
 
@@ -168,16 +390,16 @@ For BN-PAGE, 100 µg of isolated mitochondria were lysed in 50 µL NativePAGE Sa
 
 For CI in gel activity measurements, the BN-PAGE gel was incubated in 2 mM Tris/HCl pH 7.4, 0.1 mg/mL NADH (Roche), and 2.5 mg/mL nitrotetrazolium blue for blue staining (Sigma) for about 10 min. CIV in gel activity was determined by incubating the BN-PAGE gels in 10 mL of 0.05 mM phosphate buffer pH 7.4, 25 mg 3.3’-diamidobenzidine tetrahydrochloride (DAB), 50 mg Cyt C, 3.75 g Sucrose, and 1 mg Catalase for approximately 1 hr.
 
-## Immune profiling
+### Immune profiling
 
 For cytokine measurements, plasma was sent to Eve Technologies for assessment (Mouse Cytokine/Chemokine 44-Plex Discovery Assay Array (MD44)).
 
 For FGF21 measurement, the ELISA kit from Biovendor (UNQ3115/PRO10196) was used following the manufacturer’s protocol.
 
-## Quantitative mass spectrometry
+### Quantitative mass spectrometry
 
 Mouse spleen tissue was prepared as described previously (Clemente et al., 2022) with some modifications. In brief, samples were thawed on ice and 20–25 mg tissue was cut into small pieces and supplemented with 50 µL of 8 M urea, 50 µL of 0.2% ProteaseMAX (Promega) in 20% acetonitrile (ACN), 100 mM Tris-HCl, pH 8.5 and 100 mM NaCl and 1 µL of 100 x protease inhibitor (Pierce) before transferring to a prefilled tube containing 400 µm LoBind silica beads. The samples were frozen for a short time before homogenization using a Disruptor Genie at maximal speed on 2800 rpm for 2 min, incubated on ice for 2 min. These steps were repeated five times. The samples were then centrifuged at 13,000 g for 10 min at 4 °C. The supernatant was collected and 100 µL of Tris-HCl was used to wash the beads, which was combined with the supernatant. Proteins were precipitated with fourfold volumes of chilled acetone before protein concentration was determined by BCA assay (Pierce). An aliquot of 30 µg samples was reduced with 2.5 µL of 250 mM dithiothreitol, alkylated with 3 µL of 500 mM chloroacetic acid, and digested by addition of 0.6 µg of sequencing grade modified trypsin (Promega) and incubation at 37 °C for 16 hr. The digestion was stopped with 4.5 µL cc of formic acid and incubating the solution at room temperature (RT) for 5 min. The sample was cleaned on a C18 Hypersep plate with 40 µL bed volume (Thermo Fisher Scientific) and dried using a vacuum concentrator (Eppendorf). Biological samples were labeled with TMTpro reagents (Thermo Fisher Scientific) in random order, adding 100 µg TMT-reagent in 30 µL anhydrous ACN to each digested sample resolubilized in 85 µL of 50 mM triethylammonium bicarbonate and incubated at RT for 2 h. The labeling reaction was stopped by adding 11 µL of 5% hydroxylamine and incubating at RT for 15 min before combining all 15 biological samples in one vial. The sample was cleaned on a C18 Hypersep plate with 40 µL bed volume (Thermo Fisher Scientific) and dried using a vacuum concentrator (Eppendorf). For fractionation, the TMT-labeled peptides were dissolved in 50 µL of 20 mM ammonium hydroxide and were loaded onto an XBridge bridged ethyl hybrid C18 UPLC column (2.1 mm inner diameter ×250 mm, 2.5 μm particle size, Waters), and profiled with a linear gradient of 5–60% 20 mM ammonium hydroxide in ACN (pH 10.0) over 48 min, at a flow rate of 200 µL/min. The chromatographic performance was monitored by sampling eluate with a UV detector (UltiMate 3000 UPLC, Thermo Fisher Scientific) scanning at 214 nm. Fractions were collected at 30 s intervals into a 96-well plate and combined in 12 samples concatenating 8–8 fractions representing peak peptide elution before drying in a vacuum concentrator. Peptides were reconstituted in solvent A (2% ACN, 0.1% FA) and approx. 2 µg samples injected on a 50 cm long EASY-Spray C18 column (Thermo Fisher Scientific) connected to an UltiMate 3000 nanoUPLC system (Thermo Fisher Scientific) using a 90 min long gradient: 4–26% of solvent B (98% ACN, 0.1% FA) in 90 min, 26–95% in 5 min, and 95% of solvent B for 5 min at a flow rate of 300 nL/min. Mass spectra were acquired on a Q Exactive HF hybrid quadrupole Orbitrap mass spectrometer (Thermo Fisher Scientific) ranging from m/z 375–1500 at a resolution of R=120,000 (at m/z 200) targeting 5×106 ions for maximum injection time of 80ms, followed by data-dependent higher-energy collisional dissociation (HCD) fragmentations of precursor ions with a charge state of 2+ to 7+, using 45 s dynamic exclusion. The tandem mass spectra of the top 18 precursor ions were acquired with a resolution of R=60,000,, targeting 2×105 ions for a maximum injection time of 54 ms, setting quadrupole isolation width to 1.4 Th and normalized collision energy to 33%. Acquired raw data files were analyzed using Proteome Discoverer v2.4 (Thermo Fisher Scientific) with the Mascot Server v2.5.1 (Matrix Science Ltd., UK) search engine against mouse protein database (SwissProt). A maximum of two missed cleavage sites was allowed for full tryptic digestion, while setting the precursor and the fragment ion mass tolerance to 10 ppm and 0.02 Da, respectively. Carbamidomethylation of cysteine was specified as a fixed modification, while TMTpro on lysine and N-termini, oxidation on methionine as well as deamidation of asparagine and glutamine were set as dynamic modifications. Initial search results were filtered with 5% FDR using the Percolator node in Proteome Discoverer. Quantification was based on the TMT-reporter ion intensities. The data was analyzed using R (4.1.0) using the preprocessCore (Bolstad, 2024) and pheatmap packages.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 The sample size is indicated in the figure legends and included at least five mice where statistical evaluation was performed. ImageJ was used for quantification. Statistical analysis and generation of graphs were performed with GraphPad Prism v9 software, except for quantitative mass spectrometry data, which was analyzed and plotted using R as described above. Statistical comparisons were performed using one-way analysis of variance (ANOVA), and post hoc analysis was conducted with Dunnett’s multiple comparisons test. Values of p<0.05 were considered statistically significant. Images were processed with Adobe Photoshop 2020 and schematics were created with Adobe Illustrator 2020.

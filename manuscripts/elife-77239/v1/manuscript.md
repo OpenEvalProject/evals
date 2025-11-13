@@ -18,10 +18,10 @@
 
 ### Affiliations
 
-1. https://ror.org/002pd6e78 Department of Gynecology and Reproductive Biology, Massachusetts General Hospital Boston United States
-2. https://ror.org/002pd6e78 Pediatric Surgical Research Laboratories, Massachusetts General Hospital Boston United States
-3. https://ror.org/03vek6s52 Department of Surgery, Harvard Medical School Boston United States
-4. https://ror.org/03vek6s52 Howard Hughes Medical Institute, Department of Neurobiology, Harvard Medical School Boston United States
+1. Department of Gynecology and Reproductive Biology, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+2. Pediatric Surgical Research Laboratories, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+3. Department of Surgery, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+4. Howard Hughes Medical Institute, Department of Neurobiology, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 
@@ -39,17 +39,33 @@ To understand more fully the dynamic effects of cyclic endocrine, autocrine, and
 
 ## Results
 
-## scRNA-seq of adult mouse ovaries across reproductive states
+### scRNA-seq of adult mouse ovaries across reproductive states
 
 To survey the dynamic transcriptional landscape of ovaries at the single-cell level across a range of physiological reproductive states in sexually mature female mice, we isolated the ovaries (four mice per group) at each stage of estrous cycling (proestrus, estrus, metestrus, and diestrus), post-partum non-lactating (PPNL) (day 10 post-partum, with pups removed on the day they were born), post-partum lactating (day 10 post-partum, actively lactating with pups), and non-monitored adult mice to increase sample diversity and cell counts. Following enzymatic digestion of the ovaries, we generated single-cell suspensions and sorted them by microfluidics using the inDROP methodology (Klein et al., 2015), targeting 1500 cells per animal. Resulting libraries were indexed and combined for sequencing (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77239/elife-77239-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the single-cell sequencing pipeline. (B) Uniform manifold approximation and projection (UMAP) plot featuring the different clusters of the ovary and their composition by stage of the estrous cycle, lactating status, or unmonitored. (C) Heatmap of the top 10 markers of each cluster by fold change.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77239/elife-77239-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative micrograph illustrating the different cell types of the ovary. (B) Representative micrographs of sections of ovaries at each stage of the estrous cycle, post-partum lactating, and post-partum non-lactating reproductive states with typical features annotated.
+
 Following dimensionality reduction and clustering using the Seurat algorithm, we identified multiple clusters which could be combined to represent the major cell categories of the ovary (Figure 1B). To assign cell type identity, we used cluster-specific markers which were previously described in other studies or newly identified makers later validated by RNA in situ (Supplementary file 2). The largest groups of clusters consisted of granulosa cells (N=17627 cells) and mesenchymal cells of the ovarian stroma (N=10825 cells). Other minor cell types were identified including endothelial cells (N=3501 cells), ovarian surface epithelial cells (N=1088 cells), immune cells (N=1649 cells), and oocytes (N=22 cells), altogether recapitulating all the major cell types of the ovary (Figure 1—figure supplement 1A). Oocytes were poorly represented in the dataset due to cell size limitations of inDROP, likely restricting our sampling to small oocytes of primordial follicles (Figure 1B). To characterize more fully the transcriptional signatures of the identified cell types, we evaluated a heatmap of marker gene expression across the major categories of cell types and states (Figure 1C). Cells were also classified depending on the stage of the estrous cycle or lactating states in which the ovaries were collected (Figure 1B). Morphological differences between the stages of proestrus, estrus, metestrus, diestrus, and also post-partum lactating and non-lactating, were documented in Figure 1—figure supplement 1B. The granulosa, mesenchyme, and epithelium clusters were isolated and reanalyzed to identify subclusters.
 
-## Single-cell sequencing reveals heterogeneity within granulosa and mesenchymal cell clusters
+### Single-cell sequencing reveals heterogeneity within granulosa and mesenchymal cell clusters
 
-## Cellular diversity of mesenchymal cells
+#### Cellular diversity of mesenchymal cells
 
 The mesenchymal cluster was the second largest cluster identified in our analysis. Based on prior studies and conserved marker expression (Fan et al., 2019; Wang et al., 2020), we were able to identify subclusters within mesenchymal cells and their relative abundance (percentage) as follows: early theca (16.8%), which formed the theca interna of preantral follicles; steroidogenic theca (13.2%), which formed the theca interna of antral follicles; smooth muscle cells (10.2%), which were part of the theca externa of both antral and preantral follicles; pericytes (6.2%), which surrounded the vasculature; and two interstitial stromal cell clusters, one composed of steroidogenic cells (28.7%) and the other of fibroblast-like cells (24.9%), which together constituted the bulk of the ovarian volume (outside of follicles). These subclusters can be seen in Figure 2A, with the top five expressed markers of each subcluster described in the Figure 2B heatmap and the top 10 listed in Supplementary file 3.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77239/elife-77239-fig2-v1.jpg)
+
+**Figure 2.:** (A) UMAP plot featuring the different cell subclusters belonging to the mesenchyme cluster. (B) Heatmap of the top five markers of each subcluster by fold change. (C) Validation of the identity of mesenchyme subcluster by UMAP-plots (cluster of interest circled) and RNA in situ hybridization.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77239/elife-77239-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Co-expression of Acta2 and Mfap5 or Acta2 and Hhip in UMAP plots (enriched subcluster circled). Colocalization of (B) Acta2 and Mfap5 or (C) Acta2 and Hhip in ovarian tissue sections stained by Immunohistochemistry (IHC) and RNA in situ hybridization. (D) Expression of mesenchymal markers by cluster in DotPlot. (E) Expression of steroidogenesic and fibroblast markers in DotPlot that differ between the two interstitial stromal cell clusters. (F) RNA in situ hybridization of different markers representative of the steroidogenic stroma (Cyp11a1 and Ptch1) and the fibroblast-like stroma cell clusters (Kcnk2, Cxcl14, and Col1a1).
 
 Distinct transcriptional signatures were identified in each of these mesenchymal subclusters (Figure 2B); to confirm the presumed identity and histology of these cell types (detailed in Figure 1—figure supplement 1A), we validated markers prioritized by highest fold-change expression, highest differential percent expression, and lowest p value (Figure 2C).
 
@@ -59,13 +75,21 @@ Lastly, the bulk of the ovarian interstitial stromal space was made up of two cl
 
 The identities of above-described mesenchymal clusters matched those of known ovarian stromal cell types based on expression of previously reported markers such as Desmin (Des) for pericytes (Hughes and Chan-Ling, 2004), steroidogenic acute regulatory protein (Star) for the steroidogenic theca (Kiriakidou et al., 1996), cellular communication network factor 1 (Ccn1) for smooth muscle cells (Yang et al., 2018b), receptor activity-modifying protein 2 (Ramp2) for the early theca cells surrounding preantral follicles (Hatzirodos et al., 2015), and finally C-X-C motif chemokine ligand 12 (Cxcl12) which we found in both stromal clusters (Porcile et al., 2005) as illustrated in Figure 2—figure supplement 1D.
 
-## Cellular diversity of granulosa cells
+### Cellular diversity of granulosa cells
 
 To explore further the cellular heterogeneity within developing follicles (listed in Figure 1—figure supplement 1A), we investigated the subclustering of granulosa cells based on their transcriptional profile. Consistent with previous reports, we could distinguish discrete granulosa cell states in follicles based on their stage of development (Zhao et al., 2020; Fan et al., 2019; Gallardo et al., 2007). Granulosa cells could be subdivided into eight main categories: preantral-cumulus (27.3%), antral-mural (21.8%), luteinizing mural (4.8%), atretic (22.6%), mitotic (14.4%), regressing CL (3.7%), and active CL (5.4%) (Figure 3A). Supplementary file 4 lists the top 10 markers for each of these clusters. Distinctive gene expression programs were identified in the granulosa cell subclusters, as visualized in the heatmap (Figure 3B), from which we selected potential markers for validation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/77239/elife-77239-fig3-v1.jpg)
+
+**Figure 3.:** (A) UMAP plot featuring the different cell subclusters belonging to the granulosa cluster (specific subcluster circled in each UMAP). (B) Heatmap of the top five markers of each cluster by fold change. (C) Validation of the identity of granulosa subclusters by UMAP-plots and RNA in situ hybridization.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77239/elife-77239-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) UUMAP plots of different apoptotic markers that colocalize with Ghr in the apoptotic cluster (circled in black). (B) Colocalization of Top2a and Cdkn1a in UMAP plots of corpus luteum clusters (circled in black). (C) RNA in situ hybridization of Top2a and Cdkn1a in ovarian sections. Representative active (Top2a+) and regressing (Cdkn1a+) corpora lutea. (D) Examples of luteinizing mural markers in DotPlot that differ from antral mural. (E) UMAP plot of cellular distribution of post-partum lactating (PPL) cells across the active corpus luteum cluster and post-partum non-lactating (PPNL) cells across the regressing corpus luteum cluster (circled in black). (F) Heatmap of representative markers of active and regressing corpora lutea.
+
 Early preantral granulosa cells, and those constituting the cumulus oophorus of antral follicles, could be identified by their shared expression of markers such as potassium channel tetramerization domain (Kctd14) (Figure 3C), which we had previously shown to be expressed by preantral follicles (Meinsohn et al., 2021). In contrast, mural granulosa cells of antral follicles expressed distinct markers (Supplementary file 4) such as male-specific transcription in the developing reproductive organs (Mro) (Figure 3C). Luteinizing mural granulosa cells could be identified by the expression of previously established markers (Supplementary file 4) and oxytocin receptor gene (Oxtr) which we propose as a highly specific marker for this cell type, a likely target of the surge in oxytocin during estrus (Ho and Lee, 1992; Figure 3C). Furthermore, we identified two different clusters that we hypothesize represent cell states of the CL, either active or regressing, which both expressed nuclear paraspeckle assembly transcript 1 (Neat1), a known marker of CLs (Nakagawa et al., 2014). To confirm the active and regressing CL cell states, we investigated the expression of Top2a, a mitotic marker (Donadeu et al., 2014), which was enriched in the active CL cluster, and Cdkn1a, a cell cycle exit and senescence marker (Ock et al., 2020), which was enriched in the regressing cluster (Figure 3—figure supplement 1B, C). Moreover, when examining the composition of clusters depending on the reproductive stage, the regressing CL cluster was found to be composed mostly of cells derived from the Postpartum non lactating (PPNL) samples (Figure 3—figure supplement 1E), which overexpressed markers related to CL regression (Talbott et al., 2017; Figure 3—figure supplement 1F), consistent with a post-partum effect of prolactin. Finally, two relatively abundant granulosa cell states could be identified based on marker expression: mitotic granulosa cells could be found in both preantral and antral follicles and were defined by their expression of Top2a, and atretic granulosa cells, which expressed markers consistent with follicular atresia and apoptosis such as phosphoinositide-3-kinase-interacting protein 1 (Pik3ip1), nuclear protein 1, transcriptional regulator (Nupr1), growth arrest and DNA damage inducible alpha (Gadd45a), vesicle amine transport 1 (Vat1), transgelin (Tagln), and melanocyte-inducing transcription factor (Mitf) (Terenina et al., 2017; Figure 3C, Figure 3—figure supplement 1A, Supplementary file 4). Furthermore, we propose growth hormone receptor (Ghr), which was highly specific to this cluster, as a specific marker of atretic follicles, which warrants further investigation of the role of growth hormone in this process (Figure 3C).
 
-## Cellular states in the ovarian surface epithelium
+### Cellular states in the ovarian surface epithelium
 
 The epithelial cluster was composed of 1088 ovarian surface epithelium (OSE) cells, which could be further subdivided into two clusters (Figure 4A): the larger one composed of non-dividing epithelium cells (96%), and a smaller cluster (4%), composed of mitotic epithelium. The latter was characterized by proliferation markers such as thymidine kinase 1 (Tk1) (Liu et al., 2019), Rac GTPase-activating protein 1 (Racgap1) (Yang et al., 2018a), Top2a, casein kinase 1 (Ck1) (Gao et al., 2021), protein regulator of cytokinesis 1 (Prc1) (Liang et al., 2019), ubiquitin-conjugating enzyme E2 C (Ube2c) (Xiong et al., 2019), and baculoviral IAP repeat containing 5 (Birc5) (Xu et al., 2021; Figure 4A and B). Interestingly, the proliferating subcluster of OSE was almost exclusively composed of cells from the estrous stage (Figure 4C and D), consistent with their transient amplification during ovulatory wound closure (Mara et al., 2020).
 
@@ -73,11 +97,19 @@ The epithelial cluster was composed of 1088 ovarian surface epithelium (OSE) cel
 
 **Figure 4.:** (A) UMAP plot of the surface epithelium cluster showing two subclusters: epithelium and mitotic epithelium (circled in black). (B) Heatmap of proliferation markers expressed in the proliferating epithelium cluster. (C) UMAP plot of the cellular composition of the epithelium subclusters by reproductive state (mitotic subcluster circled in the estrous state). (D) Expression of proliferation markers depending on the phase of the estrous cycle.
 
-## Granulosa cell transcriptome is most dynamic during the proestrus/estrus transition
+### Granulosa cell transcriptome is most dynamic during the proestrus/estrus transition
 
 To identify changes in cell states associated with the stages of the estrous cycle, we focused on the granulosa cell subclusters, given the importance of follicular maturation in coordinating this process (illustrated in Figure 1—figure supplement 1B). When comparing the composition of granulosa cell subclusters by estrous stage, we found that some clusters were dominated by cells from either the proestrous or estrous samples, particularly the clusters corresponding to ‘antral/mural’ and ‘periovulatory’ clusters, respectively (Figure 5A and B). A volcano plot analysis confirmed that the transition between these two stages was characterized by 24 significantly upregulated and 10 significantly downregulated markers (Figure 5C), which together with the transition from estrus to metestrus represents the largest change in gene expression. In contrast, few genes were found to change significantly during the transition from metestrus to diestrus, or diestrus to proestrus (Figure 5—figure supplement 1A). Gene ontology analysis revealed that the most significantly differentially regulated pathways between the proestrous and estrous phases were related to ovarian matrix remodeling and steroidogenesis and hormones production (Figure 5—figure supplement 1B). To validate the genes with significant changes in expression identified within the single-cell sequencing dataset, we performed quantitative PCR (qPCR) on whole-ovary samples at the proestrus to estrus transition, including the steroid biosynthesis markers cytochrome P450 family 19 subfamily A member 1 (Cyp19a1, p=0.0029, proestrus to estrus), Star protein (p=0.0187, proestrus to estrus), serum- and glucocorticoid-inducible kinase-1 (Sgk1, p=0.0056, proestrus to metestrus), as well as matrix remodeling genes such as regulator of cell cycle (Rgcc, p=0.0441, proestrus to estrus), tribbles pseudokinase 2 (Trib2, p=0.0023, proestrus to estrus) (Figure 5D and E), and immediate early genes, fos proto-oncogene (Fos), jun proto-oncogene (Jun, p=0.0022, proestrus to estrus), jun proto-oncogene B (Junb, p=0.0069, proestrus to diestrus), and early growth response 1 (Egr1, p=0.0504 estrus to diestrus), which represent a family of genes thought to be involved in wound repair, a sequela of ovulation (Florin et al., 2006; Wu et al., 2009; Martin and Nobes, 1992; Yue et al., 2020; Figure 5—figure supplement 1C). Transcriptional gene expression changes were found to be concordant between the scRNAseq data and whole-ovary transcripts quantified by qPCR.
 
-## Identification and validation of secreted biomarkers varying throughout the estrous cycle
+![Figure 5.](https://cdn.elifesciences.org/articles/77239/elife-77239-fig5-v1.jpg)
+
+**Figure 5.:** (A) UMAP plot featuring estrous cycle stages in the granulosa cell cluster. (B) UMAP plots featuring each of the estrous cycle phases individually (proestrus and estrus enriched subclusters circled in black). (C) Volcano plot of genes differentially expressed between proestrus and estrous stages. (D) DotPlot of differentially expressed markers between proestrus and estrus. (E) Quantitative PCR (qPCR) validation of differentially expressed genes involved in extracellular matrix remodeling and steroidogenesis markers (n=5 per group, mean ± SEM, *p<0.05, **p<0.01, ***p<0.005, and ****p<0.001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77239/elife-77239-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Volcano plot of genes differentially expressed between the estrous/metestrous, metestrous/diestrous, and diestrous/proestrous stages. (B) Pathway analysis of differentially expressed genes (DEG) between the different stages of the estrous cycle. The x-axis shows the gene ratio (the percentage of total DEGs in the given gene ontology [GO] terms). ‘Count,’ reflected by the dot size, represents the number of genes enriched in a GO term, and dot color represents the adjusted p values. (C) Quantitative PCR validation of ovarian surface epithelium-expressed markers (n=5 per group, mean ± SEM, *p<0.05, **p<0.01, and ****p<0.001).
+
+### Identification and validation of secreted biomarkers varying throughout the estrous cycle
 
 To identify new biomarkers that vary as a function of the estrous cycle and that could be used for staging in reproductive medicine, we screened for differentially expressed secreted factors (DAVID Bioinformatics Resources) (Sherman et al., 2022; Huang et al., 2009), which would therefore be potentially measurable in the blood. Furthermore, to ensure specificity, we prioritized genes expressed specifically in the granulosa or ovarian mesenchymal clusters and not highly expressed in other tissues based on their GTEX profile (GTEx Consortium, 2013; Supplementary file 5). As a primary screen, we first validated our ability to detect gene expression changes by estrous stage using whole-ovary qPCR analysis in a separate set of staged mice (N=4 per group). Whole-ovary qPCR successfully detected expression changes of estrous cycle markers such as luteinizing hormone/choriogonadotropin receptor (Toms et al., 2017) (Lhcgr, p=0.0281 estrus to metestrus) and progesterone receptor (Pgr, p=0.0096, proestrus to estrus) (Kubota et al., 2016; Figure 6B). Using this method, we validated a set of significantly upregulated secreted markers in the proestrous to estrous transition, most prominent of which were natriuretic peptide C (Nppc, p=0.0022 proestrus to estrus) and inhibin subunit beta-A (Inhba, p=0.0067, proestrus to estrus) (Figure 6A and B). Similarly, tubulointerstitial nephritis antigen like 1 (Tinagl1) and serine protease 35 (Prss35) were secreted markers significantly upregulated in estrus compared to their level of transcription in proestrus in the scRNAseq dataset (Figure 6A) and by qPCR (Tinagl1, p=0.0081, proestrus to estrus; Prss35, p=0.0008, proestrus to estrus) (Figure 6B). In situ RNA hybridization showed that, as expected, these markers were mostly expressed in mural granulosa cells of antral follicles, while Nppc was expressed in both mural and cumulus cells (Figure 6C).
 
@@ -117,7 +149,255 @@ In summary, this study outlines the dynamic transcriptome of murine ovaries at t
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6-Tg(UBC-GFP)30Scha/J</td>
+      <td>Jackson Laboratory</td>
+      <td>stock #004353</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Smooth muscle alpha action (SMA) (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>#5694</td>
+      <td>Dilution: 1:300</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ACTIVIN A commercial ELISA</td>
+      <td>RnD systems</td>
+      <td>#DAC00B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NPPC commercial ELISA</td>
+      <td>Novus Bio</td>
+      <td>#NBP2-75790</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tinagl1 commercial ELISA</td>
+      <td>LS-Bio</td>
+      <td>#LS-F49684</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PRSS35 commercial ELISA</td>
+      <td>Mybiosource</td>
+      <td>#MBS9717242</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA scope 2.5 HD Duplex detection kit</td>
+      <td>ACD bio</td>
+      <td>#322500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA scope 2.5 HD red detection kit</td>
+      <td>ACD bio</td>
+      <td>#322360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>The target retrieval and protease plus reagents</td>
+      <td>ACD bio</td>
+      <td>#322330</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cdkn1a (M. musculus) NM_007669.4</td>
+      <td>ACD bio</td>
+      <td># 408551</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cxcl14 (M. musculus) NM_019568.2</td>
+      <td>ACD bio</td>
+      <td>#459741</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cyp11a1 (M. musculus) NM_019779.4</td>
+      <td>ACD bio</td>
+      <td>#809181</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cyp17a1 (M. musculus) NM_007809.3</td>
+      <td>ACD bio</td>
+      <td>#522611</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ghr (M. musculus) NM_010284.3</td>
+      <td>ACD bio</td>
+      <td>#464951</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hhip (M. musculus) NM_020259.4</td>
+      <td>ACD bio</td>
+      <td>#448441</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Inhba (M. musculus) NM_008380.1</td>
+      <td>ACD bio</td>
+      <td># 455871</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Kcnk2 (M. musculus) NM_001159850.1</td>
+      <td>ACD bio</td>
+      <td>#440421</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Kctd14 (M. musculus) NM_001136235.1</td>
+      <td>ACD bio</td>
+      <td>#517811</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mfap5 (M. musculus) NM_015776.2</td>
+      <td>ACD bio</td>
+      <td>#490211</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mro (M. musculus) NM_001305882.1</td>
+      <td>ACD bio</td>
+      <td>#491181</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Neat1 (M. musculus) NR_003513.2</td>
+      <td>ACD bio</td>
+      <td>#440351</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nppc (M. musculus) NM_010933.5</td>
+      <td>ACD bio</td>
+      <td># 493291</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Onecut2 (M. musculus) NM_194268.2</td>
+      <td>ACD bio</td>
+      <td>#520541</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Oxtr (M. musculus) NM_001081147.1</td>
+      <td>ACD bio</td>
+      <td>#412171</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Prss35 (M. musculus) NM_178738.3</td>
+      <td>ACD bio</td>
+      <td>#492611</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Runx1 (M. musculus) NM_001111021.1</td>
+      <td>ACD bio</td>
+      <td>#406671</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tinagl1 (M. musculus) NM_001168333</td>
+      <td>ACD bio</td>
+      <td>#312621</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Top2a (M. musculus) NM_011623.2</td>
+      <td>ACD bio</td>
+      <td># 491221</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Wt1 (M. musculus) NM_144783.2</td>
+      <td>ACD bio</td>
+      <td>#432711</td>
+      <td>RNAscope probe</td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>R version 4.1.3</td>
+      <td>R Project for Statistical Computing</td>
+      <td>https://scicrunch.org/resolver/SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>Seurat package 4.1.0</td>
+      <td>R toolkit for single-cell genomics</td>
+      <td>https://satijalab.org/seurat/articles/install.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>BZ-X800 analysis software</td>
+      <td>Keyence</td>
+      <td>https://www.keyence.com/landing/microscope/lp_fluorescence.jsp</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>GraphPad Prism, version 9.2.0</td>
+      <td>Graphpad</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Animal experiments were carried out in 6–8 weeks old C57BL/6 mice obtained from Charles River Laboratory, approved by the National Institute of Health and Harvard Medical School Institutional Animal Care and Use Committee, and performed in accordance with experimental protocols 2009N000033 and 2014N000275 approved by the Massachusetts General Hospital Institutional Animal Care and Use Committee.
 
@@ -125,50 +405,50 @@ For the analysis of transcriptional changes in ovaries of cycling mice, animals 
 
 Additional mice were monitored throughout the estrous cycle to collect ovaries at each stage (groups of N=5 for proestrus, estrus, metestrus, and diestrus) for gene validation. Paired ovaries were collected from each staged mouse: one was used to extract mRNA for qPCR, while the other was fixed in 4% paraformaldehyde for RNAish (RNAscope) or immunohistochemistry to validate gene expression.
 
-## Superovulation
+### Superovulation
 
 To stimulate superovulation, mature female mice (6–9 weeks C57BL/6) were injected intraperitoneally (IP) with 5 IU of pregnant mare serum gonadotropin (PMSG; Calbiochem, San Diego, CA, USA), followed 48 hr later by 5 IU of human chorionic gonadotropin (hCG; Millipore Sigma, St. Louis, MO, USA). The mice were euthanized 8 hr after hCG treatment and ovaries harvested.
 
-## Staging of estrous cycle by vaginal cytology
+### Staging of estrous cycle by vaginal cytology
 
 As previously described (Kano et al., 2017; Byers et al., 2012), staging of mice was performed using a wet cotton swab, introduced into the vaginal orifice then smeared onto a glass slide which was air-dried, stained with Giemsa, and scored for cytology by two independent observers. Briefly, proestrus was determined if the smear showed a preponderance of nucleated epithelial cells as well as leukocytes. Estrous was marked by an abundance of cornified epithelial cells, while metestrous smears contained a mixture of cornified epithelial cells and leukocytes. Finally, diestrus was characterized by abundant leukocytes with low numbers of cornified epithelium or nucleated epithelial cells.
 
-## Generation of single-cell suspension
+### Generation of single-cell suspension
 
 Single-cell suspension from mouse ovaries was obtained as previously described with uterine enzymatic dissociation (Saatcioglu et al., 2019). Briefly, ovaries were incubated for 30 min at 34°C in dissociation medium (82 mM Na2SO4, 30 mM K2SO4, 10 mM Glucose, 10 mM HEPES, and 5 mM MgCL2, pH 7.4) containing 15 mg of Protease XXIII (Worthington), 100 U Papain, with 5 mm L-Cysteine, 2.5 mM EDTA (Worthington), and 1333 U of DNase 1 (Worthington). The reaction was then stopped in cold medium, and samples were mechanically dissociated, filtrated, and spun down three times before being resuspended to a concentration of 150,000 cells/mL in 20% Optiprep (Sigma) for inDrop sorting.
 
-## Single-cell RNA sequencing (inDrop)
+### Single-cell RNA sequencing (inDrop)
 
 Fluidic sorting was performed using the inDrop platform at the Single-Cell Core facility at Harvard Medical School as previously described (Klein et al., 2015; Macosko et al., 2015). We generated libraries of approximately 1500 cells per animal which were sequenced using the NextSeq500 (Illumina) platform. Transcripts were processed according to a previously published pipeline Klein et al., 2015 used to build a custom transcriptome from the Ensemble GRCm38 genome and GRCm38.84 annotation using Bowtie 1.1.1. Unique molecular identifiers (UMIs) were used to reference sequence reads back to individual captured molecules, referred to as UMIFM counts. All steps of the pipeline were run using default parameters unless explicitly specified.
 
-## scRNAseq data analysis
+### scRNAseq data analysis
 
-## Data processing
+#### Data processing
 
 The initial Seurat object was created using thresholds to identify putative cells (unique cell barcodes) with the following parameters: 1000–20,000 UMIs, 500–5000 genes, and less than 15% mitochondrial genes. The final merged dataset contained ~70,000 cells which were clustered based on expression of marker genes. These were further processed in several ways to exclude low-quality data and potential doublets. Visualization of single-cell data was performed using a non-linear dimensionality-reduction technique, uniform manifold approximation and projection. Markers for each level of cluster were identified using MAST in Seurat (R version 4.1.3 - Seurat version 4.1.0). Following identification of the main clusters (granulosa, mesenchyme, endothelium, immune, epithelium, and oocyte), we reanalyzed each cluster population to perform subclustering. Briefly, the granulosa, mesenchyme, and epithelium clusters were extracted from the integrated dataset by the subset function. The isolated cluster was then divided into several subclusters following normalization, scale, principal component analysis (PCA), and dimensionality reductions as previously described (Niu and Spradling, 2020).
 
-## Volcano plots
+#### Volcano plots
 
 Highly differentially expressed genes between different estrous cycles were identified using the function FindMarkers in Seurat. Volcano plots were generated using ggplot2 package in R.
 
-## Pathway enrichment analysis
+#### Pathway enrichment analysis
 
 Differentially expressed genes with at least twofold changes between contiguous estrous stages were used as input for gene ontology enrichment analysis by clusterProfiler. Enrichplot package was used for visualization. Biological process subontology was chosen for this analysis.
 
-## Principal component analysis
+#### Principal component analysis
 
 PCA was used to identify common patterns of gene expression across stages of the cycle. For each Level 0 cluster object, cycling cells were extracted, and genes that were expressed in more than 5% of cells were identified. The expression of these genes in the cycling cells were scaled (set to mean zero, SD 1) and averaged across each of the four cycle stages. PCA was run (prcomp) on the average scaled expression data.
 
-## In situ hybridization and immunohistochemistry
+### In situ hybridization and immunohistochemistry
 
 In situ hybridizations were performed using ACDBio kits as per manufacturer’s protocol, as previously described (Saatcioglu et al., 2019). Briefly, RNAish was developed using the RNAscope 2.5 HD Reagent Kit (RED and Duplex, ACD Bio). Following deparaffinization in xylene, dehydration, peroxidase blocking, and heat-induced epitope retrieval by the target retrieval and protease plus reagents (ACD bio), tissue sections were hybridized with probes for the target genes (see Key resources table for accession number and catalog number of each gene) in the HybEZ hybridization oven (ACD Bio) for 2 hr at 40°C. The slides were then processed for standard signal amplification steps and chromogen development. Slides were counterstained in 50% hematoxylin (Dako), air dried, and cover-slipped with EcoMount. In addition to cycling and non-cycling mice, superovulated mice were used to validate markers from follicles associated with LH surge response in ovulatory follicles at the estrous stage for more precise timing of collection.
 
 For colocalization of RNAish staining with immunohistochemistry, we first processed the tissue section for RNAscope as described above, including deparaffinization, antigen retrieval, hybridization, and chromogen development. Sections were then blocked in 3% bovine serum albumin in Tris-buffered solution (TBS) for 1 hr. Following three washes with TBS, the sections were incubated with the primary antibody (smooth muscle actin primary antibody; 1:300, Abcam) overnight at 4°C and developed with Dako EnVision + System horseradish peroxidase (HRP). Labeled polymer anti-rabbit was used as the secondary antibody, and the HRP signal was detected using the Dako detection system. Slides were then counterstained in hematoxylin and mounted as described above.
 
-## Reverse transcription-quantitative polymerase chain reaction
+### Reverse transcription-quantitative polymerase chain reaction
 
 Mice were monitored through the estrous cycle and sacrificed at specific stage/timepoints as described above. Ovaries were dissected, and total RNA was extracted using the Qiagen RNA extraction kit (Qiagen). A cDNA library was synthesized from 500 ng total RNA using SuperScript III First-Strand Synthesis System for RT-PCR using manufacturer’s instructions with random hexamers (Invitrogen). The primers used for this study are described in Supplementary file 1. Expression levels were normalized to the Gapdh transcript using cycle threshold (Ct) values logarithmically transformed by the 2−ΔCt function.
 
-## ELISA
+### ELISA
 
 Blood was collected from mice by facial vein puncture, incubated at room temperature (RT) until spontaneously clotted, centrifuged at 8000 rpm for 5 min to collect the serum layer, and diluted 1/10 in each ELISA kit according to the manufacturing protocol; Mouse CNP/NPPC ELISA kit; Mouse serine protease inactive 35 (PRSS35) ELISA kit; Mouse TINAGL1 /Lipocalin 7 ELISA kit; and Human/Mouse/Rat Activin A Quantikine ELISA Kit (see Key resources table).

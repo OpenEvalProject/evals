@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03s7gtk40 Institute of Biology, University of Leipzig Leipzig Germany
-2. https://ror.org/01zwmgk08 Department Genetics of Learning and Memory, Leibniz Institute for Neurobiology Magdeburg Germany
+1. Institute of Biology, University of Leipzig Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
+2. Department Genetics of Learning and Memory, Leibniz Institute for Neurobiology Magdeburg Germany ([ROR:01zwmgk08](https://ror.org/01zwmgk08))
 
 † Corresponding author
 

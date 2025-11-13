@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00py81415 Department of Cell Biology, Duke University Medical Center Durham United States
-2. https://ror.org/03wmf1y16 Section of Developmental Biology, Department of Pediatrics, University of Colorado Anschutz Medical Campus Aurora United States
+1. Department of Cell Biology, Duke University Medical Center Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+2. Section of Developmental Biology, Department of Pediatrics, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
 
 † Corresponding author
 
@@ -29,13 +29,25 @@ The RO was rediscovered and highlighted in our recent study (McKey et al., 2022)
 
 ## Results
 
-## Characterization of the IOR, CR, and EOR
+### Characterization of the IOR, CR, and EOR
 
 We used immunofluorescence (IF) and confocal imaging to investigate the development and sub-regional structure of the RO from embryonic day (E) 16.5 to postnatal day (P) 7. Three distinct regions of the RO were originally defined histologically by cell morphology (Byskov and Lintern-Moore, 1973; Lee et al., 2011). Using IF and confocal imaging, we found that these three regions are maintained throughout development, but their relative sizes change. While the entirety of the RO is PAX8+, we took different approaches to identify region specific markers. First, as GFRa1 was known to be expressed in the rete testis, we hypothesized that it was expressed in the RO as well. Indeed, immunostaining using antibodies against GFRa1 revealed that part of the RO is GFRa1+. GFRa1 specifically labeled the CR from E16.5 to P7 (Figure 1, bottom row). To identify additional RO markers, we performed bulk and single-cell RNA sequencing (ScRNA-seq) of cells from the ovarian complex of mice at E16.5 and 2 months and found that Krt8 was enriched in the RO (McKey et al., 2022; Anbarci et al., 2024). We validated these findings using IF against KRT8, which revealed that KRT8+ cells were specifically localized to the EOR (Figure 1, third row; McKey et al., 2022).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/96662/elife-96662-fig1-v1.jpg)
+
+**Figure 1.:** (a–d, top row) Diagrams depicting the development of the three regions (extraovarian rete [ER], magenta; connecting rete [CR], cyan; intraovarian rete [IOR], yellow) of the RO from E16.5 to P7 in the whole ovarian complex (ovary, light pink; oviduct, gray). (a–d, bottom rows) Maximum intensity projection from confocal Z-stacks of whole ovary/mesonephros complexes at E16.5 (a), E18.5 (b), P0 (c), and P7 (d) immunostained for PAX8 (yellow), GFRa1 (cyan), and KRT8 (magenta). (a–d, second row) are composite images, while the third row shows separate panels for KRT8 and the bottom row shows panels for GFRa1. *Note that GFRa1 and KRT8 do not co-localize and are specific to the CR and EOR, respectively. All figures are dorsal views of the ovary. Yellow asterisk indicates opening of the infundibulum for reference. Scale bar – 100 um.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96662/elife-96662-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Maximum intensity projection from confocal Z-stacks of whole ovary/mesonephros complexes at E16.5 (a), E18.5 (b), P0 (c), and P7 (d) immunostained for PAX8 (yellow), GFRa1 (cyan), and KRT8 (magenta). Top row are composite images, while the third row shows separate panels for KRT8 and the bottom row shows panels for GFRa1. *Note that GFRa1 and KRT8 do not co-localize and are specific to the connecting rete (CR) and EOR, respectively. All figures are dorsal views of the ovary. Yellow asterisk indicates opening of the infundibulum for reference. Scale bar – 100 um.
+
 To characterize RO development, we next analyzed PAX8 and KRT8 expression from E16.5 to P0. At E16.5, the CR and IOR were the largest of the three regions. In the EOR, several tubules leading from the region of the CR converged into a single tube of columnar PAX8+ and KRT8+ epithelial cells that lead to a blind end. Between E16.5 and E18.5, the EOR underwent rapid expansion, and the blind end of the EOR became dilated. This structure, which we refer to as the DDT, was best visualized from the ventral side of the ovary (Figure 1—figure supplement 1, Video 1). By E18.5, the EOR was the largest of the three regions. At this stage, the CR was still large, but the IOR began to regress. At P0, the EOR remained the largest region, and the IOR had regressed to the medullary region of the ovary (McKey et al., 2022). Their distinct structure and protein expression patterns suggest that each region has a different function.
 
-## Integration of the EOR with the extraovarian environment
+![Video 1.](https://cdn.elifesciences.org/articles/96662/elife-96662-video1.mp4.jpg)
+
+**Video 1.:** This video depicts the 3D rendering of native lightsheet images of an E18.5 ovary/mesonephros complex. It demonstrates how the rete wraps around the ovary. DNA (gray) ovarian surface epithelium (LGR5; green) and PAX8 (red).
+
+### Integration of the EOR with the extraovarian environment
 
 During gonadogenesis, the mesonephros is highly vascularized in both XX and XY embryos (Cool et al., 2011). In contrast, the ovary and surrounding tissue are more highly innervated than the testis (McKey et al., 2019). A surprising finding in our bulk transcriptome analysis of the RO was the presence of a high proportion of immune cells and cells with vascular markers that co-isolated with E16.5 RO cells (Anbarci et al., 2024). To explore the integration of the RO with its environment, we used IF to investigate the expression of endothelial marker Endomucin (Figure 2a), smooth muscle marker alpha smooth muscle actin (aSMA) (Figure 2b), pan-neuronal marker TUJ1 (Figure 2c), and macrophage markers F4/80 and LYVE1 (Figure 2d). We found that at E18.5 the EOR was tightly surrounded by vasculature and ensheathed within a layer of aSMA+ mesenchyme. The EOR, and more specifically the DDT, was directly contacted by neurons that contact the PAX8+ epithelial cells. We also found that the EOR is specifically associated with F4/80+ macrophages (Figure 2d). This multifaceted integration with the environment suggests the RO may respond to or interpret homeostatic cues.
 
@@ -43,7 +55,7 @@ During gonadogenesis, the mesonephros is highly vascularized in both XX and XY e
 
 **Figure 2.:** (a) Top panel is a whole ovarian complex maximum intensity projection of the confocal Z-stack at E18.5 immunostained for ENDOMUCIN (magenta) and PAX8 (cyan). Bottom panel is an optical section showing vasculature tightly surrounding the distal dilated tip (DDT) of the EOR (magenta). (b) Top panel is a whole ovarian complex maximum intensity projection of the confocal Z-stack at E18.5 immunostained for aSMA (magenta) and KRT8 (cyan). Bottom panel is an optical section showing the EOR tightly ensheathed by smooth muscle (magenta). (c) Top panel is a whole ovarian complex maximum intensity projection of the confocal Z-stack at E18.5 immunostained for TUJ1 (magenta) and PAX8 (cyan). Bottom panel is an optical section showing direct contacts between the EOR and neuronal projections (magenta). (d) EOR at P0 immunostained for PAX8 (yellow), F4/80 (magenta), and LYVE-1 (cyan). Top and bottom panels are maximum intensity projection of the confocal Z-stack. Bottom panel shows the absence of LYVE1 macrophages (cyan) proximate to the EOR, in contrast to the closely associated F4/80 macrophages (magenta in top image). Arrowheads show regions devoid of LYVE1 macrophages where F4/80 macrophages are present. Scale bar – 100 um.
 
-## Flow of luminal material within the EOR
+### Flow of luminal material within the EOR
 
 Because the EOR lumen is fluid filled, and because the EOR and CR cells are rich in proteoglycans (Byskov, 1975), we hypothesized that the EOR produces luminal secretions. To investigate this idea, we first chose to determine the direction of flow at P7 when the DDT of the EOR was fully dilated (Figure 1d). We first injected fluorescently labeled pH-insensitive dextran into the DDT of the EOR and found that, within just 15 minutes, the fluorescent fluid had readily traveled from the DDT into the ovary, where it then diffused widely (Figure 3). By contrast, when we injected fluorescently labeled dextran into the P7 ovary near the IOR, the dextran remained in the ovary and did not travel to the EOR (Figure 3). These data indicate that, at least at P7, the fluid inside the lumen of the EOR travels toward the ovary.
 
@@ -51,7 +63,7 @@ Because the EOR lumen is fluid filled, and because the EOR and CR cells are rich
 
 **Figure 3.:** (a, b) Schematic of dextran injections (syringe) for each group (a), EOR injections; (b,), ovary injections. Oviduct, gray; ovary, light pink; intraovarian rete (IOR), yellow; connecting rete (CR), cyan; EOR, magenta. (Second row) Maximum intensity projection of a confocal Z-stack of whole ovarian complexes at P7, where dextran was injected into the EOR. Presence of dextran in the ovary shows that when dextran is injected into the EOR, it diffuses throughout the ovary (dextran, cyan; E-CADHERIN, magenta). (Bottom row) Maximum intensity projection from confocal Z-stacks of whole ovary/mesonephros complexes at P7 where dextran was injected into the ovary. Absence of dextran signal in the EOR shows that dextran did not travel into the EOR when injected into the ovary near the IOR. Scale bar – 100 um.
 
-## Potential of the EOR and CR for fluid transfer
+### Potential of the EOR and CR for fluid transfer
 
 Without the obvious indication of a lumen within the CR at P7 and taking into consideration the absence of the epithelial marker KRT8 in those cells, we wondered how fluid could travel through the CR to the ovary. Using an antibody against E-CADHERIN, a marker of cell junctions, we found that it was specifically present in the EOR at E16.5, but absent from the CR (Figure 4a, second row). However, E-CADHERIN expression was gradually gained in the CR and IOR such that, by P7, the entire RO was positive for this epithelial marker (Figure 4a–d, second row). These results suggest that tubular epithelial connections between the EOR and IOR mature gradually between E16.5 and P7.
 
@@ -61,9 +73,84 @@ Without the obvious indication of a lumen within the CR at P7 and taking into co
 
 Next, we investigated mechanisms that could facilitate fluid movement through the RO. Previous reports showed that ciliated and non-ciliated cells are present in the RO (Lee et al., 2011). Using an antibody against a marker for cilia, ARL13b, we found that primary ciliated cells were abundant in the DDT and throughout the tubules of the EOR at E18.5 (Figure 4g and h). Due to the curvature of the DDT, optical slices often include cilia from neighboring cells. However, an ultrathin (0.6 um) optical section suggested that each cell has a single cilium. Since the EOR was covered in a sheath of aSMA+ mesenchyme (Figures 2b and 4e and f), we investigated whether and when this layer of smooth muscle became contractile. We used an antibody against the contractile smooth muscle protein Calponin (CNN1) and found that CNN1 was absent around the EOR during fetal development and in neonates. However, by P7, the mesenchymal sheath around the EOR gained expression of CNN1, indicating that it acquired the ability to contract by this stage of development (Figure 4e and f). These data suggest that ciliary mechanosensing and/or muscle contraction may aid in the directional movement of the fluid from the DDT to the ovary.
 
-## Proteins produced by the EOR indicate a role for the SNARE-complex
+### Proteins produced by the EOR indicate a role for the SNARE-complex
 
 Our data showing fluid flow from the EOR to the ovary prompted us to investigate the nature and identity of the proteins produced and potentially secreted by the EOR. To address this question, we analyzed the protein contents of the luminal material using mass spectrometry. Using the Pax8rtTA; Tre-H2B-GFP reporter mouse line, we dissected EORs and isolated luminal fluid by gently pressing the tissue with a pestle. Using this method, we anticipated several problems. First, we expected that some cells within the EOR and surrounding tissue would be lysed during this procedure, which would release proteins not ordinarily secreted. Second, we expected that some cells closely associated with the EOR would be co-isolated, which could result in contamination with contents from cells that are not part of the EOR. To eliminate intracellular proteins arising from lysed cells, we cross-referenced our proteomic dataset with that of the mammalian secretome (Meinken et al., 2015), thereby retaining only known secreted proteins. Next, we compared the resulting list to the E16.5 ScRNA-seq data from cells mapping to the RO (Anbarci et al., 2024). This produced a conservative candidate list of 15 proteins (Table 1). Of the candidate proteins, two were selected for validation, CLU and STXBP2, due to their roles in protein and vesicle transport (Argraves and Morales, 2004; Saewu et al., 2017; Söllner, 2003).
+
+**Table 1.**
+ Cells of the extraovarian rete (EOR) secrete proteins essential for vesicle transport.Candidate list of 15 proteins identified by mass spectrometry. Asterisked proteins were selected for validation due to role in vesicle and protein transport.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Agt</td>
+      <td>Pro-peptide for angiotensinogen</td>
+    </tr>
+    <tr>
+      <td>Bcam</td>
+      <td>Glycoprotein</td>
+    </tr>
+    <tr>
+      <td>C3</td>
+      <td>Complement component</td>
+    </tr>
+    <tr>
+      <td>Cd200</td>
+      <td>Glycoprotein</td>
+    </tr>
+    <tr>
+      <td>Cfi</td>
+      <td>Serine proteinase</td>
+    </tr>
+    <tr>
+      <td>Clu*</td>
+      <td>Secreted chaperone</td>
+    </tr>
+    <tr>
+      <td>Cp</td>
+      <td>Metalloprotein</td>
+    </tr>
+    <tr>
+      <td>Cpm</td>
+      <td>Membrane-bound arginine/lysine carboxypeptidase</td>
+    </tr>
+    <tr>
+      <td>Epcam</td>
+      <td>Antigen</td>
+    </tr>
+    <tr>
+      <td>Igfbp2</td>
+      <td>Binds insulin-like growth factors I and II</td>
+    </tr>
+    <tr>
+      <td>Lama5</td>
+      <td>Laminin</td>
+    </tr>
+    <tr>
+      <td>Napsa</td>
+      <td>Pro-peptide</td>
+    </tr>
+    <tr>
+      <td>Sema3c</td>
+      <td>Secreted glycoprotein</td>
+    </tr>
+    <tr>
+      <td>Slit3</td>
+      <td>Secreted protein</td>
+    </tr>
+    <tr>
+      <td>Stxbp2*</td>
+      <td>Binds syntaxin</td>
+    </tr>
+  </tbody>
+</table>
 
 Because no validated antibodies were commercially available to visualize protein expression for CLU and STXBP2, validations were performed using hybridization chain reaction (HCR), a method for single-molecule RNA-fluorescence in situ hybridization (FISH) (https://files.molecularinstruments.com/MI-Protocol-RNAFISH-Mouse-Rev9.pdf). We found that both Clu and Stxbp2 were expressed in the EOR at E18.5 (Figure 5a and b) and at P7 (Figure 5c and d). The presence of Stxbp2 showed that components of the SNARE-complex were actively transcribed in the EOR, suggesting that this may serve as a mechanism for secretion. The presence of other components of the SNARE-complex were validated using IF. We found that the T-SNARE complex member STX3 was expressed throughout the EOR and was localized to the apical surface, a cellular position that is typically associated with active secretion (Figure 5e; Söllner, 2003). Ras-associated binding (RAB) proteins are required in the SNARE complex to tether vesicles to the T-SNARE and allow fusion and secretion (Takahashi et al., 2012). Using an antibody against the small GTPase found on the surface of vesicles, RAB11, we found that it was also localized to the sub-apical region of EOR cells (Figure 5f), which is the typical docking position for vesicles prior to exocytosis (Söllner, 2003). Taken together, these data suggest that the EOR actively secretes proteins into the lumen of the structure possibly encapsulated in extracellular vesicles.
 
@@ -71,7 +158,7 @@ Because no validated antibodies were commercially available to visualize protein
 
 **Figure 5.:** (a) Optical section from confocal Z-stacks of PAX8-rtTa; Tre-H2B-GFP (cyan) extraovarian rete (EOR) at E18.5 using hybridization chain reaction (HCR) for the detection of Clu expression (magenta). (b) Optical section from confocal Z-stacks of PAX8-rtTa; Tre-H2B-GFP (cyan) EOR at E18.5 using HCR for Stxbp2 (magenta). (c) Optical section from confocal Z-stacks of PAX8-rtTa; Tre-H2B-GFP (cyan) EOR at P7/8 using HCR for Clu (magenta). (d) Optical section from confocal Z-stacks of PAX8-rtTa; Tre-H2B-GFP (cyan) EOR at P7/8 using HCR for Stxbp2 (magenta). (e) Optical section from confocal Z-stacks of PAX8-rtTa; Tre-Cre; Rosa26mTmG (cyan) EOR at E18.5 immunostained for STX3 (magenta). Outlined higher resolution image acquired with Airyscan. (f) Optical section from confocal Z-stacks of PAX8-rtTa; Tre-Cre; Rosa26mTmG (cyan) EOR at E18.5 immunostained for RAB11 (magenta). Outlined higher resolution image acquired with Airyscan. Scale bar – 100 um.
 
-## Proteins produced by the EOR suggest a role in ovary homeostasis
+### Proteins produced by the EOR suggest a role in ovary homeostasis
 
 Among proteins captured in our mass spectrometry analysis of the EOR, insulin-like growth factor binding protein 2 (IGFBP2) stood out as a secreted protein with a potential functional role in ovary homeostasis. IGFBP2, found to be secreted by granulosa cells, binds and sequesters IGF1 (Rosenzweig, 2004). The binding of IGFBP2 to IGF1 titrates IGF1 from its receptor IGF1R (Amutha and Rajkumar, 2017). IGF1 has a reported role in ovarian function by amplifying the hormonal action of gonadotropins to promote steroidogenesis and granulosa cell proliferation (Talia et al., 2021).
 
@@ -79,7 +166,7 @@ Because no validated antibodies were commercially available to visualize protein
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/96662/elife-96662-fig6-v1.jpg)
 
-**Figure 6.:** rete ovarii (RO).(a) Maximum intensity projection of confocal Z-stacks of PAX8-rtTa; Tre-H2B-GFP (cyan) extraovarian rete (EOR) at E18.5 using hybridization chain reaction (HCR) for the detection of IGFBP2 expression (magenta). (b) Maximum intensity projection of confocal Z-stacks of PAX8-rtTa; Tre-H2B-GFP (cyan) EOR at P7/8 using HCR for the detection of IGFBP2 expression (magenta). Bottom panels are outlined. Higher resolution images acquired with Airyscan. Scale bar top panel – 100 um. Scale bar bottom panel – 25 um.
+**Figure 6.:** (a) Maximum intensity projection of confocal Z-stacks of PAX8-rtTa; Tre-H2B-GFP (cyan) extraovarian rete (EOR) at E18.5 using hybridization chain reaction (HCR) for the detection of IGFBP2 expression (magenta). (b) Maximum intensity projection of confocal Z-stacks of PAX8-rtTa; Tre-H2B-GFP (cyan) EOR at P7/8 using HCR for the detection of IGFBP2 expression (magenta). Bottom panels are outlined. Higher resolution images acquired with Airyscan. Scale bar top panel – 100 um. Scale bar bottom panel – 25 um.
 
 ## Discussion
 
@@ -101,31 +188,307 @@ The EOR is highly integrated with the extraovarian environment. We found that EO
 
 ## Materials and methods
 
-## Mice and tissue collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Crl:CD1(ICR)</td>
+      <td>Charles River</td>
+      <td>Strain code: 022;RRID:IMSR_CRL:022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #:000664;RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tre-H2B-Gfp (Tg(tetO-HIST1H2BJ/GFP)47Efu/J)</td>
+      <td>PMID:14671312</td>
+      <td>MGI:J:90563; RRID:IMSR_JAX:005104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tre-Cre (B6.Cg-Tg(tetO-cre)1Jaw/J)</td>
+      <td>PMID:12145322</td>
+      <td>MGI:J:78365; RRID:IMSR_JAX:006234</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>mTmG Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo/J</td>
+      <td>PMID:17868096</td>
+      <td>MGI:J:124702; RRID:IMSR_JAX:007576</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Pax8-rtTA (B6.Cg-Tg(Pax8-rtTA2S*M2)1Koes/J)</td>
+      <td>PMID:18724376</td>
+      <td>MGI:J:140925; RRID:IMSR_JAX:007176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Lgr5 (B6.129P2-Lgr5tm1(cre/ERT2)Cle/J)</td>
+      <td>PMID:17934449</td>
+      <td>MGI:J:127123; RRID:IMSR_JAX:008875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Smooth muscle alpha action (aSMA) (Cy3-conjugated mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>C6198; RRID:AB_476856</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>E-Cadherin (rat monoclonal)</td>
+      <td>Zymed (Thermo Fisher Scientific)</td>
+      <td>13-1900; RRID:AB_2533005</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Endomucin (rat monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-65495; RRID:AB_2100037</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab13970; RRID:AB_300798</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFRa1 (goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>AF560; RRID:AB_2110307</td>
+      <td>(1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>KRT8 (rat monoclonal)</td>
+      <td>DSHB</td>
+      <td>TROMA-I; RRID:AB_531826</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PAX8 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>A10336-1-AP; RRID:AB_2918972</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CNN1 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>13938-1-AP; RRID:AB_2082010</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ARL13b (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>17711-1-AP; RRID:AB_2060867</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RAB11 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>5589; RRID:AB_10693925</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LYVE-1 (goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>AF2125; RRID:AB_2297188</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>F4/80 (rat monoclonal)</td>
+      <td>Bio-Rad</td>
+      <td>MCA497RT; RRID:AB_1102558</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>STX3 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab133750</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TUJ1 (488-conjugated mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>A488-435L; RRID:AB_10143904</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF647 anti-Rabbit (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>711-605-152; RRID:AB_2492288</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF488 anti-Chicken (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>703-545-155; RRID:AB_2340375</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF488 anti-Rat (donkey polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>A-21208; RRID:AB_2535794</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 anti-Goat (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>705-165-147; RRID:AB_2307351</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Stxbp2 (B3 amplifier)</td>
+      <td>Molecular Instruments</td>
+      <td>Accession #: XR_001778418.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Clu (B1 amplifier)</td>
+      <td>Molecular Instruments</td>
+      <td>Accession #: NM_013492.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IGFBP2 (B3 amplifier)</td>
+      <td>Molecular Instruments</td>
+      <td>Accession #:NM_008342.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>F647 (B3 amplifier)</td>
+      <td>Molecular Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>F546 (B1 amplifier)</td>
+      <td>Molecular Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran, Alexa Fluor 568; 10,000 MW</td>
+      <td>Thermo Fisher</td>
+      <td>D22912</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dichloromethane</td>
+      <td>MilliporeSigma</td>
+      <td>270997-1L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Benzyl Ether</td>
+      <td>MilliporeSigma</td>
+      <td>108014-1KG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Quadrol=N,N,N′,N′-Tetrakis(2-Hydroxypropyl)ethylenediamine</td>
+      <td>MilliporeSigma</td>
+      <td>122262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen Black Edition</td>
+      <td>Carl Zeiss</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris v9.6</td>
+      <td>Bitplane</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Creative Cloud</td>
+      <td>Adobe</td>
+      <td></td>
+      <td>Photoshop, Illustrator, Premier Pro</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and tissue collection
 
 Unless otherwise stated, mice used for experiments were maintained on the CD-1 or mixed CD-1 and C57BL/6J genetic backgrounds. The Pax8-rtTA and Tre-H2B-GFP lines were previously described (Traykova-Brauch et al., 2008; Tumbar et al., 2004) and maintained on a mixed CD-1/C57BL/6J background, and maintained on a mixed CD-1/C57BL/6J background. The Pax8-rtTa;Tre-Cre;Rosa26mTmG line was obtained by crossing the Pax8-rtTa line with carriers of the Tre-Cre (Perl et al., 2002) and Rosa26mTmG (mTmG) (Muzumdar et al., 2007) alleles, which allowed for visualization of cell membranes of PAX8+ cells. Pregnant and nursing dams were given a doxycycline diet at 625 mg/kg (Teklad Envigo TD.01306) 3 days prior to tissue collection to induce GFP expression in Pax8+ cells. Toe samples were collected from mice for genotyping. The primers used for PCR genotyping are listed in Supplementary file 1. To obtain samples at specific stages of development, males were housed with females for timed matings. Successful mating was determined by the presence of a vaginal plug. Date of plug was considered embryonic day 0.5. Tissue samples were collected in phosphate-buffered saline (PBS) without calcium or magnesium, fixed in 4% paraformaldehyde (PFA)/PBS for 30 minutes at room temperature and dehydrated stepwise into 100% methanol, followed by storage at –20°C. All mice were housed in accordance with National Institutes of Health guidelines, and experiments were conducted with the approval of the Duke University Medical Center Institutional Animal Care and Use Committee (protocol #: A089-20-04 9N).
 
-## Immunostaining and confocal image acquisition
+### Immunostaining and confocal image acquisition
 
 Samples were stepwise rehydrated into 100% PBS, followed by a 30-minute permeabilization wash in PBS 0.1% Triton X-100. Samples were then blocked for 1 hour with PBS, 1% Triton X-100, 10% horse serum, and 3% BSA. Samples were incubated overnight in primary antibodies diluted in blocking solution at 4°C (Key Resource Table). Samples then underwent three 30-minute washes in permeabilization solution and incubated overnight in secondary antibodies (1:500 dilution) and Hoechst vital dye solution diluted in blocking solution. The next day, samples underwent three 20-minute washes in permeabilization solution before being transferred into 100% PBS and stored at 4°C until ready for confocal imaging. Samples were mounted in DABCO mounting solution and stored at –20°C until imaged. Samples were imaged from both the dorsal and ventral sides using 3D-printed reversible slides that utilize two coverslips that allow for flipping. The 3D model can be downloaded on the NIH 3D Print Exchange website at https://3dprint.nih.gov/discover/3DPX-009765. Samples were imaged in toto using laser scanning confocal microscopy captures in the longitudinal plane on Zeiss LSM780 or LSM880 and affiliated Zen software (Carl Zeiss, Inc, Germany) using ×10, ×20, and ×63 (also used for Airyscan) objectives.
 
-## Hybridization chain reaction
+### Hybridization chain reaction
 
 The mouse embryo protocol from Molecular Instruments whole-mount (available here) was adjusted for P0 and P7 ovary samples. Samples were stepwise rehydrated into 0.1% Tween 20/PBS (PBST). Samples were then subjected to 10 μg/ml proteinase K solution for 10 minutes at room temperature, then washed twice in PBST for 5 minutes. Samples were then post-fixed in 4% PFA for 10 minutes at room temperature, followed by three PBST washes for 5 minutes. Samples were then pre-hybridized for 30 minutes in 500 ul of hybridization buffer (Molecular Instruments) at 37°C. Samples were then incubated overnight at 37°C with HCR probes diluted in 500 ul hybridization buffer (2 pmol in 500 ul). Samples were then washed for 15 minutes four times in the Molecular Instruments probe wash buffer at 37°C, followed by two 5 × 0.1% Tween 20/SSC (SSCT) washes for 5 minutes at room temperature. Fluorescently labeled hairpins were snap cooled and left in a dark drawer at room temperature for 30 minutes. Following hairpin preparation, samples were incubated with hairpins diluted in Molecular Instruments amplification buffer overnight in the dark at room temperature. On the third day, samples were washed in SSCT four times for 15 minutes each before being transferred to PBS and then mounted in DABCO mounting medium for imaging.
 
-## Image processing
+### Image processing
 
 Confocal images were imported into FIJI software for minor image processing (cropping, rotations, maximum intensity projection/optical slice montage, and color application). The RO was oriented to the left of the ovary with the oviduct at the top of the ovary. Images were then imported into Adobe Photoshop CC (Adobe, Inc, CA) for final processing of channel overlay, brightness, contrast adjustment, and modification of red to ‘magenta’ (hue adjustment to –30). Channel color accessibility was determined via Photoshop colorblind proofing.
 
-## Dextran injections
+### Dextran injections
 
 Postnatal day 7 mice were euthanized, and the entire ovarian complex was dissected in PBS with magnesium and calcium. Samples were then placed on agar blocks (1.5%) soaked in PBS with magnesium and calcium. The distal tip of the EOR was identified and punctured using a tungsten needle (0.001 mm tip diameter, Fine Science Tools, 10130-05). A microinjection unit (Picospritzer III microinjector) and fine capillary glass needle (5–10 um) loaded with 2–3 nl dextran solution (1.25 mg/ml dextran, PBS, 0.05% phenol red) was used to inject dextran into the opening of the EOR. Samples were then left for 15 minutes before fixing with 4% PFA. During the 15 minutes, samples were monitored to visualize movement. Samples were then fixed, stained, and imaged.
 
-## Luminal fluid collection for proteomics and analysis
+### Luminal fluid collection for proteomics and analysis
 
 Postnatal day 7 EORs were collected from Pax8-rtTa; Tre-H2B-GFP mice (as a guide to only collect EOR) and carefully cleaned up to remove as much non-EOR tissue (40 EOR samples). Samples were then placed in a 1.5 ml Eppendorf tube and ‘pressed’ for fluid using a disposable pellet pestle. The sample was then spun down and the supernatant was collected and snap frozen in liquid nitrogen. The sample was then submitted to the Duke University Proteomics Core for mass spectrometry. Proteomic analysis uncovered 4252 proteins present in the pressed fluid. To exclude proteins that may have contributed due to cell lysis, results were cross-referenced against a database of secreted proteins (Meinken et al., 2015). Overlapping proteins were then cross-referenced to our E16.5 ScRNA-seq data (Anbarci et al., 2024), and candidate proteins were determined by gene expression specific to the EOR cluster.
 
-## LC-MS/MS proteomics analysis
+### LC-MS/MS proteomics analysis
 
 The sample was subjected to a Bradford (Pierce) protein measurement and 10 ug was removed for downstream processing. The sample was brought to 4% SDS, reduced with 10 mM dithiothreitol for 20 min at 55°C, alkylated with 25 mM iodoacetamide for 45 min at room temperature, and then subjected to S-trap (Protifi) trypsin digestion using manufacturer-recommended protocols. Digested peptides were lyophilized to dryness and resuspended in 50 ul of 0.2% formic acid/2% acetonitrile. The sample was subjected to chromatographic separation on a Waters MClass UPLC equipped with a 1.8 μm Acquity HSS T3 C18 75 μm × 250 mm column (Waters Corp.) with a 90 min linear gradient of 5–30% acetonitrile with 0.1% formic acid at a flow rate of 400 nl/minute with a column temperature of 55°C. Data collection on the Fusion Lumos mass spectrometer with a FAIMS Pro device was performed for three difference compensation voltages (–40v, –60v, –80v). Within each CV, a data-dependent acquisition mode of acquisition with a r = 120,000 (@ m/z 200) full MS scan from m/z 375–1500 with a target AGC value of 4e5 ions was performed. MS/MS scans with HCD settings of 30% were acquired in the linear ion trap in ‘rapid’ mode with a target AGC value of 1e4 and max fill time of 35 ms. The total cycle time for each CV was 0.66 s, with total cycle times of 2 s between like full MS scans. A 20 s dynamic exclusion was employed to increase depth of coverage. The total analysis cycle time for each sample injection was approximately 2 hours.
 

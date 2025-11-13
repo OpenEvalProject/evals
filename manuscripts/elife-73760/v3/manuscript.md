@@ -16,11 +16,11 @@
 
 ### Affiliations
 
-1. https://ror.org/035b05819 Biotech Research and Innovation Centre (BRIC) and Novo Nordisk Foundation Center for Stem Cell Biology (DanStem), University of Copenhagen Copenhagen Denmark
-2. https://ror.org/040af2s02 Institute for Molecular Medicine Finland (FIMM), Helsinki Institute of Life Science, University of Helsinki Helsinki Finland
-3. https://ror.org/03mchdq19 Rigshospitalet Copenhagen Denmark
-4. https://ror.org/03h2bxq36 Centre for Gene Regulation and Expression, School of Life Sciences, University of Dundee Dundee United Kingdom
-5. https://ror.org/02yrq0923 Cell Biology Program and Center for Epigenetics Research, Memorial Sloan Kettering Cancer Center (MSKCC) New York United States
+1. Biotech Research and Innovation Centre (BRIC) and Novo Nordisk Foundation Center for Stem Cell Biology (DanStem), University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
+2. Institute for Molecular Medicine Finland (FIMM), Helsinki Institute of Life Science, University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
+3. Rigshospitalet Copenhagen Denmark ([ROR:03mchdq19](https://ror.org/03mchdq19))
+4. Centre for Gene Regulation and Expression, School of Life Sciences, University of Dundee Dundee United Kingdom ([ROR:03h2bxq36](https://ror.org/03h2bxq36))
+5. Cell Biology Program and Center for Epigenetics Research, Memorial Sloan Kettering Cancer Center (MSKCC) New York United States ([ROR:02yrq0923](https://ror.org/02yrq0923))
 
 † Corresponding author
 
@@ -40,7 +40,7 @@ compaRe performed robustly in the presence of background noise and batch effects
 
 ## Results
 
-## compaRe is a comprehensive toolkit for multiparameter screening data
+### compaRe is a comprehensive toolkit for multiparameter screening data
 
 compaRe is designed to analyze the data from small to large-scale multiparameter screening assays such as high-throughput flow cytometry, high-content microscopy, mass cytometry, and standard flow cytometry. The toolkit comprises several modules for quality control, bias correction, clustering, and visualization. Figure 1 shows the modules for a high-throughput flow cytometry of AML samples taken from a mouse model treated with various drugs. During quality control, several sources of bias such as autofluorescence, bioluminescence, carryover effect, edge effect, signal drift, and cell viability drift (drift in the number of live cells across the plate) were identified. The bias correction module could effectively correct for signal and cell viability drifts (two main sources of bias in high-throughput screening with fluorescent markers) using regression analysis (Figure 1, Materials and methods).
 
@@ -52,7 +52,7 @@ At the core of the compaRe toolkit is a module for pairwise comparisons of sampl
 
 The clustering module uses a graphical algorithm (Figure 1, Materials and methods). Initially, all nodes (samples) are connected forming a complete weighted graph wherein weights represent similarity values. The graph is then pruned to remove potential false positive edges using a threshold inferred from negative controls (untreated samples). After constructing a linked graph, clustering is tantamount to finding maximal cliques (complete subgraphs that cannot be extended), each containing samples with similar responses. compaRe benefits from parallel computing and modular design. Its modular design allows the modules to run independently; thus, the similarity and clustering modules of compaRe can be potentially applied to any problem space.
 
-## compaRe is ultra-fast and robust to background noise and batch effect
+### compaRe is ultra-fast and robust to background noise and batch effect
 
 To evaluate the robustness of compaRe’s comparison module to noise and batch effect, we benchmarked it against JSD with UMAP (for simplicity just JSD) and meta-clustering with PhenoGraph (for simplicity just meta-clustering) (Levine et al., 2015). We analyzed the publicly available mass cytometry data of a total of 21 bone marrow aspirate samples collected from 16 pediatric AML patients and five healthy adult donors labeled for detection of 16 cell surface markers (Levine et al., 2015). We introduced random noise with Gaussian distribution to the 16 parameters of each sample to simulate a batch effect. In this setting, although the added noise undermines similarity, the overall cell population configuration remains intact, and consequently the simulated samples will still have the highest similarity with their original samples.
 
@@ -66,7 +66,7 @@ Notably, compaRe took only 25 min to analyze the 21 samples (210 pairwise compar
 
 To further show that compaRe can identify phenotypic changes from a high-dimensional dataset, we used a subset of the data with three healthy and two AML samples stained with 29 (15 membrane and 14 intracellular signaling) markers (Appendix 1—figure 2). Taking H1 as reference, we gradually removed 25%, 50%, 75%, and 100% of cells from a target cluster identified by PhenoGraph. The gradual removal can be regarded as a phenotypic change and the 75% reduction can potentially resemble a rare cell population (a small cluster of cells). As shown in the UMAP projections, the similarity decreased concurrently and more drastically after 100% reduction when phenotypic changes were detected, indicating compaRe is sensitive to phenotypic changes and the existence of rare cell populations.
 
-## compaRe reveals interpatient similarity
+### compaRe reveals interpatient similarity
 
 Non-AML myeloid neoplasias such as MDS can evolve to become AML. Over time, about one-third of all MDS cases develop into AML (DeVita and Lawrence, 2015; Niederhuber et al., 2020). The risk of developing AML largely depends on the MDS subtype at the time of diagnosis, with high-risk MDS developing into AML more often than the lower-risk MDS subtypes (Greenberg et al., 2012). As many immunophenotypic abnormalities are not unique to MDS, several diagnostic flow cytometric antibody panels have been proposed (van Dongen et al., 2012; Alhan et al., 2016). The EuroFlow AML/MDS antibody panel (van Dongen et al., 2012) aims at the parallel identification and categorization of AML and MDS. Both diseases are heterogeneous, affecting multiple cell lineages and multiple maturation stages. Therefore, this panel concerns major myeloid lineages (neutrophilic, monocytic and erythroid) and the detection of abnormal lymphoid maturation profiles in four tubes. The panel uses four backbone markers to identify myeloblasts and an additional set of 15 markers devoted to the characterization of myeloid lineages (Supplementary files 1 and 2).
 
@@ -86,7 +86,7 @@ We further investigated how different the three groups of the AML samples were (
 
 In conclusion, compaRe’s comparison module can be used to optimize true cytometric n-dimensional immunophenotypic characterization of patient samples. Interpretation can then be performed in a conventional manner assisted by lower-dimensional projection tools such as PCA and UMAP that promptly provide a phenotypic profile of the patient samples.
 
-## Identifying cell-subtype-specific drug responses in mouse AML cells
+### Identifying cell-subtype-specific drug responses in mouse AML cells
 
 We applied compaRe to high-throughput flow cytometry data to identify cell subtype-specific responses evoked by antineoplastic agents in leukemic spleen cells from an AML mouse model. Splenic cells were sorted for c-Kit cell surface expression, allowing for the enrichment of stem/progenitor-type leukemic cells. On ex vivo expansion, these cells continuously expand and differentiate in a similar way as in vivo with a clear stem cell/progenitor population and partial differentiation towards CD11b/Gr-1 or CD16/CD32-expressing myeloid cells. After ex vivo expansion, the leukemic cells were plated onto multi-well plates containing a library of 116 antineoplastic agents including surface and nuclear receptor inhibitors and activators, enzyme inhibitors and, cytotoxic chemotherapy in a five-point concentration range, as well as 20 negative control wells (Supplementary file 4). After 72 hr of drug exposure, we stained the cells with fluorescently labeled antibodies against three cell surface markers (CD16/32, Gr-1 and CD11b) and quantified cell surface marker expression using a high-throughput flow cytometer.
 
@@ -104,7 +104,7 @@ In this cell model, the leukemic stem-like cells are expected to be present with
 
 Taken together, compaRe analysis of the high-throughput flow cytometry screening data allowed rapid identification of several distinct phenotypic responses in this mouse AML model, as well as the cellular signals that drive them. Drugs of different mechanism of action can still cluster together if the cellular processes they affect converge in a specific model. Drug response in association with genetic alterations can be one of the applications of compaRe. The genetic alteration could be visualized in the clusters that compaRe identifies.
 
-## Identifying highly selective signal transduction inhibitors in human AML cells
+### Identifying highly selective signal transduction inhibitors in human AML cells
 
 We further applied compaRe to the drug screening data from an AML patient sample. Primary AML bone marrow mononuclear cells were dispensed into a 384-multiwell plate containing a library of 40 drugs and drug combinations in seven-point concentration ranges (Supplementary file 7). After 72 hr of drug exposure, the cells were stained with fluorescently labeled antibodies against a panel of AML-related cell surface markers (CD45, CD34, CD38, CD117, HLA-DR, CD45-RA, CD3 and a mix of myeloid differentiation-related markers). A high-throughput flow cytometer was used to quantify cell surface marker expression.
 
@@ -136,44 +136,44 @@ During the analyses, the compaRe toolkit made it easy to explore and compare hig
 
 ## Materials and methods
 
-## Mass cytometry of healthy and pediatric AML bone marrow aspirates
+### Mass cytometry of healthy and pediatric AML bone marrow aspirates
 
 Mass cytometry dataset for 21 samples labeled with 16 surface markers collected from 16 pediatric AML patients obtained at diagnosis and five healthy adult donors (Levine et al., 2015) were downloaded from Cytobank Community with the experiment ID 44185. There are 378 FCS files in this experiment with one FCS file for each of 21 patients for each of 17 conditions (two basal replicates and 16 perturbations). All FCS files from a single patient had been pooled then clustered with the PhenoGraph algorithm. Each file includes a column named PhenoGraph that specifies the PhenoGraph cluster to which each event was assigned as an integer. A value of 0 indicates no cluster was assigned because the cells were identified as outliers during some stage of analysis. Using the PhenoGraph column, we determined centroids of cell clusters, and used PhenoGraph to meta-cluster them as described in Levine et al., 2015 To generate the similarity matrix, we adapted an approach similar to that of compaRe such that each meta-cluster as a spatial unit was treated like a hypercube. We set compaRe’s n to four for this assay (Materials and methods and Appendix 1).
 
-## High-throughput flow cytometry of AML mouse model
+### High-throughput flow cytometry of AML mouse model
 
 AML primary splenic cells from Npm1+/cA (Vassiliou et al., 2011); Flt3+/ITD (Lee et al., 2007); Dnmt3a+/- (Kaneda et al., 2004) Mx1-Cre+ (Kühn et al., 1995) moribund mice were sorted for c-Kit positivity and expanded ex vivo. AML cells were treated with a library of 116 chemotherapy and immunotherapy antineoplastic agents in a five-point concentration range (Supplementary file 4). Treated samples were stained with three informative cell surface antibodies (Supplementary file 9) and fluorescence was detected using a high-throughput flow cytometer iQue Screener Plus (Intellicyt). We set compaRe’s n to five for this assay.
 
-## High-throughput flow cytometry of an AML human patient sample
+### High-throughput flow cytometry of an AML human patient sample
 
 Mononuclear cells were isolated from a donated human bone marrow aspirate from an AML patient (Danish National Ethical committee/National Videnskabsetisk Komité permit 1705391). The cells were treated with a library of 40 chemotherapy and targeted antineoplastic agents in a seven-point concentration range (Supplementary file 7) for 72 hr. Cells were subsequently incubated with fluorescently labeled antibodies targeting 11 informative cell surface proteins in eight fluorescence channels (Supplementary file 10). Samples were read using a high-throughput flow cytometer (iQue Screener Plus, Intellicyt). We set compaRe’s n to three for this assay.
 
-## Flow cytometry of AML and MDS patients
+### Flow cytometry of AML and MDS patients
 
 Clinical flow cytometry data using a slightly modified AML panel as described by the Euroflow Consortium (van Dongen et al., 2012) from 25 bone marrow aspirates from MDS and AML patients from Rigshospitalet (Copenhagen, DK) were used for analysis. Each sample was analyzed using a total of four tubes (Euroflow AML panel tubes 1–4) with eight antibodies in each tube (Supplementary files 1 and 2). Acquisition of data was performed on a FACS Canto (Becton Dickinson Immunocytometry Systems), and data analysis was done in the Infinicyt software (Cytognos, Salamanca, Spain). We set compaRe’s n to five for this assay.
 
-## Quality control (QC)
+### Quality control (QC)
 
 Multiwell plate heatmaps of medians come in handy in QC to reveal issues such as signal and cell viability drifts occurring during screening. However, as a typical heatmap has an equally spaced color palette, small but significant differences between wells may be obscured and not visible. Therefore, we normalized the color palette by the distribution of the medians. Also, before clustering, we removed outliers in the negative controls that were different from the others in terms of similarity values measured by compaRe.
 
-## Correcting signal and cell viability drifts
+### Correcting signal and cell viability drifts
 
 Depending on the protocol by which wells are processed, time may become a major concern so that some specific wells may have lower or higher values than expected. To correct for these sources of bias, we employed a two-step correction: intra-plate shift (signal drift) correction and inter-plate shift (batch effect) correction. For a given plate, we first fit a linear regression model and then vertically translate points (well values) with respect to the learned line as it rotates to the slope zero. After correcting for the intra-plate bias, the inter-plate bias is corrected by aligning medians of the plates, that is, translating to a common baseline.
 
-## Similarity calculation using dynamic gridding
+### Similarity calculation using dynamic gridding
 
 To measure the similarity between two datasets, compaRe divides each dimension into n subsets for each dataset individually so that a dataset with d dimensions (markers) will be gridded into at most nd spatial units called hypercubes. compaRe grids only the part of the space encompassing data points, avoiding empty regions. It then measures the proportion of data points for either dataset within each of the corresponding hypercubes. The difference between the two proportions is indicative of the similarity within that relative spatial position represented by each hypercube. The similarity in the exclusive hypercubes is considered 0. We employed local outlier factor (Breunig et al., 2000) for anomaly detection and removing noise cells. Averaging these differences across all the hypercubes indicates the amount of similarity between the two datasets.
 
 compaRe captures the configuration of data enabling it to measure similarity even without correcting for signal drift or batch effect (Appendix 1). This way, two technical replicates analyzed by two different instruments or configurations suffering from signal shift will still have the highest similarity. To generate a similarity matrix of multiple input samples, compaRe runs in parallel. The similarity matrix could then be used for identifying clusters of samples such as drugs with similar dose responses.
 
-## Graphical clustering of samples
+### Graphical clustering of samples
 
 To cluster samples, we developed a graphical clustering algorithm in which initially all nodes (samples) are connected forming a weighted complete graph wherein edges represent similarity between nodes. This graph is then pruned to remove potential false positive edges for a given cutoff inferred from negative controls. The optimal cutoff turns out to be the minimum weight in the maximum spanning tree of negative control nodes. After pruning, some samples may end up being connected to the negative controls (biologically inactive agents) and some disconnected (active agents). After constructing this graph, clustering is tantamount to finding maximal cliques among potent agents. In addition to maximal cliques, it also reports communities (a clique is a subset of a community). Communities can be seen as loose clusters. In a community, unlike a clique, similarity is not necessarily transitive meaning that if A is similar to B and B is similar to C, A is not necessarily similar to C. If these were three drugs within a community, concluding they had an equal response was not necessarily right unless they would form a clique.
 
-## Dispersion graph and Dispersion map
+### Dispersion graph and Dispersion map
 
 compaRe visualizes the similarity of samples in the form of a dispersion graph by constructing their maximum spanning tree (Appendix 1, Appendix 1—figure 30). compaRe also uses UMAP to represent a dispersion map of clusters. The map is constructed using the centroid (median) of each clique. An informative map shows different groups by coloring the centroids according to their value. These groups are mostly the identified communities the cliques come from.
 
-## Availability of data
+### Availability of data
 
 Mass cytometry datasets were downloaded from Cytobank Community with the experiment ID 44185. AML mouse and human high-throughput flow cytometry data have been deposited in FLOWRepository with the repository IDs FR-FCM-Z357 and FR-FCM-Z3DP respectively. Flow cytometry data of AML and MDS patients have been deposited in FLOWRepository with the repository ID FR-FCM-Z3ET. Acquisition, installation and more technical details are available in compaRe’s online tutorial on (https://github.com/morchalabi/COMPARE-suite, swh:1:rev:df2feaf6aa982e0f6f077eb85f26acce6bb61063, Chalabi, 2022b). Similarity measurement and clustering modules as stand-alone tools have been merged into a separate R package and are available for download at (https://github.com/morchalabi/compaRe, swh:1:rev:594106b1e34c17b405064f1a0f9fb39975a4ec79, Chalabi, 2022a).

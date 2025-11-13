@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.35224.001 For many proteins, aggregation is one part of a structural equilibrium that can occur. Balancing productive aggregation versus pathogenic aggregation that leads to toxicity is critical and known to involve adenosine triphosphate (ATP) dependent action of chaperones and disaggregases. Recently a second activity of ATP was identified, that of a hydrotrope which, independent of hydrolysis, was sufficient to solubilize aggregated proteins in vitro. This novel function of ATP was postulated to help regulate proteostasis in vivo. We tested this hypothesis on aggregates found in Xenopus oocyte nucleoli. Our results indicate that ATP has dual roles in the maintenance of protein solubility. We provide evidence of endogenous hydrotropic action of ATP but show that hydrotropic solubilization of nucleolar aggregates is preceded by a destabilizing event. Destabilization is accomplished through an energy dependent process, reliant upon ATP and one or more soluble nuclear factors, or by disruption of a co-aggregate like RNA.
+For many proteins, aggregation is one part of a structural equilibrium that can occur. Balancing productive aggregation versus pathogenic aggregation that leads to toxicity is critical and known to involve adenosine triphosphate (ATP) dependent action of chaperones and disaggregases. Recently a second activity of ATP was identified, that of a hydrotrope which, independent of hydrolysis, was sufficient to solubilize aggregated proteins in vitro. This novel function of ATP was postulated to help regulate proteostasis in vivo. We tested this hypothesis on aggregates found in Xenopus oocyte nucleoli. Our results indicate that ATP has dual roles in the maintenance of protein solubility. We provide evidence of endogenous hydrotropic action of ATP but show that hydrotropic solubilization of nucleolar aggregates is preceded by a destabilizing event. Destabilization is accomplished through an energy dependent process, reliant upon ATP and one or more soluble nuclear factors, or by disruption of a co-aggregate like RNA.
 
 ## Introduction
 
@@ -35,7 +35,7 @@ The contents of the vertebrate nucleus, including proteome and pool size of vari
 
 ## Results
 
-## Aggregated proteins are selectively retained in isolated nuclei
+### Aggregated proteins are selectively retained in isolated nuclei
 
 We previously demonstrated that freshly isolated Xenopus oocyte nuclei contain ordered protein aggregates within many sub-nuclear organelles (Hayes and Weeks, 2016). In contrast to soluble proteins, these aggregates were held in place by the gelled nuclear actin meshwork that forms following isolation in aqueous buffer (Wühr et al., 2015; Kiseleva et al., 2004; Paine et al., 1992). To compare the retention of soluble and insoluble nuclear components, we injected mRNA encoding dTomato with a nuclear localization signal into stage V-VI oocytes (Figure 1A).
 
@@ -49,13 +49,149 @@ The endogenous protein content of isolated nuclei was analyzed via SDS-PAGE. Nuc
 
 To identify components of the retained protein pool, we isolated stage V-VI Xenopus oocyte nuclei in bulk, depleted them of soluble proteins and analyzed them by tandem mass spectrometry (MS/MS) (Peuchen et al., 2016; Scalenghe et al., 1978). This analysis identified over 120 proteins that are retained in soluble protein depleted nuclei (FDR = 0.01). Gene ontology analysis (GO::TermFinder) revealed that many of the retained proteins are involved in ribonucleoprotein complex biogenesis, DNA replication, RNA processing and DNA-templated transcription (representative proteins are shown in Table 1, the full listing is in Table 1—source data 1 and a key to all data sets is in Table 1—source data 2) (Boyle et al., 2004). Among the nucleolar proteins enriched in the retained aggregate enriched proteome were Nucleophosmin and Fibrillarin.
 
+**Table 1.**
+ Representative listing of aggregate and aggregate associated proteins in oocyt nuclei.Table 1—source data 1.Retained proteins following depletion of soluble nuclear components. Table 1—source data 2.Key with brief descriptions of the data sets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Process</th>
+      <th>Gene name</th>
+      <th>Function (summarized from www.genecards.org)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">DNA Replication</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TOP2A</td>
+      <td>Topoisomerase II Alpha, DNA topoisomerase</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MCM2</td>
+      <td>Minichromosome Maintenance Complex Component 2, involved in replication initiation</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>POLE</td>
+      <td>DNA Polymerase Epsilon, Contributes to DNA repair and replication</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WRN</td>
+      <td>Werner Syndrome RecQ Like Helicase, DEAH 5' to 3' DNA with 3' to 5' exonuclease activity</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PRIM2</td>
+      <td>Primase Subunit 2, DNA directed RNA polymerase that generates lagging</td>
+    </tr>
+    <tr>
+      <td colspan="3">RNA Processing</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GTF2H2</td>
+      <td>General Transcription Factor IIH Subunit 2, member of RNA pol II transcription initiation factor IIH complex</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SRRM1</td>
+      <td>Serine and Arginine Repetitive Matrix 1, Part of pre- and post-splicing multiprotein mRNP complexes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>XAB2</td>
+      <td>XPA Binding Protein 2, participates in mRNA splicing and nucleotide excision repair</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NOLC1</td>
+      <td>Nucleolar and Coiled-Body Phosphoprotein, heavily modified regulator of RNA pol I</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SRSF5</td>
+      <td>Serine Arginine Rich Splicing Factor 5, spliceosome component with an RRM and RS domains</td>
+    </tr>
+    <tr>
+      <td colspan="3">Transcription, DNA-templated</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>POLR1C</td>
+      <td>RNA Pol I subunit C, component of RNA Pol I and III complexes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>HSPA8</td>
+      <td>Heat Shock Protein Family A Member 8, constitutively expressed member of HSP70 family</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NCL</td>
+      <td>Nucleolin, binds histone H1 to decondense DNA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>POLR1A</td>
+      <td>RNA pol I subunit A, catalytic and largest subunit or RNA Pol I complex</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>POLR2E</td>
+      <td>RNA Pol II subunit E, subunit shared between RNA Pol I, II, and III</td>
+    </tr>
+    <tr>
+      <td colspan="3">Ribonucleoprotein Complex Biogenesis</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PES1</td>
+      <td>pescadillo, member of PeBoW complex and contributes to ribosome biogenesis, binds BRCA1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BOP1</td>
+      <td>Block of Proliferation 1, participates in rRNA processing and is a member of PeBoW complex</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NPM1</td>
+      <td>Nucleophosmin, multi-functional nucleolar phosphoprotein</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DDX21</td>
+      <td>DEAD-Box Helicase 21, facilitates processing or RNA Pol I and II transcripts</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FBL</td>
+      <td>Fibrillarin, rRNA and protein methyltransferase</td>
+    </tr>
+  </tbody>
+</table>
+
 Nucleophosmin (Npm1), localizes to the nucleolar granular component and Fibrillarin (Fbl) is found within the nucleolar dense fibrillar component (Figure 2A). Both proteins can form aggregates, and have been highlighted as proteins that coalesce into phase separated liquid droplets (Feric et al., 2016). We verified their retention by injecting GFP-Npm1 and RFP-Fbl encoding mRNA into stage V-VI oocytes (Figure 2B). After allowing fluorescent proteins to accumulate overnight, we manually isolated nuclei and examined GFP-Npm1 and RFP-Fbl localization using fluorescent microscopy (Figure 2C). Retention of these proteins was confirmed and quantified via western blot analysis of oocytes injected with GFP labeled Npm1 or Fbl, along with nuclear localized GFP as an internal soluble protein control. 20.8% ± 8.7 of GFP-Fbl and 24.9% ± 11.2 of GFP-Npm1 (Figure 2D and Figure 2—figure supplement 1) were retained after 1 hr of soluble protein depletion.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/35224/elife-35224-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic diagram of tri-laminar nucleolar architecture, with granular component in green, dense fibrillar component in red, and fibrillar core in blue. Nucleolar vacuoles are unlabeled and will appear black. (B) Synthetic mRNA encoding GFP-NLS or fluorescently labeled Npm1 and/or Fbl were injected into stage V/VI oocytes. Following overnight incubation nuclei were isolated, depleted of soluble proteins for 1 hr in OR2, then analyzed by fluorescent microscopy (C) or anti-GFP immunoblotting (D–E). (C) Npm1 (green) or Fbl (red) are retained (top) and resistant to solubilization by 8 mM ATP (bottom). (D–E and Figure 2—figure supplement 1) Nuclei from GFP-Fbl/GFP-NLS or GFP-Npm1/GFP-NLS co-expressing oocytes were isolated and depleted of soluble proteins (retained) and compared to GFP-Fbl or GFP-Npm1 levels in immediately harvested (input) nuclei (D) or total protein (E). Labeled proteins were analyzed via anti-GFP Western Blot, and total protein was determined via REVERT protein staining (LI-Cor). Schematic of methodology and representative raw data for (D–E) can be found in Figure 2—figure supplement 1. Images in (C) are representative optical sections captured with an Apotome equipped Zeiss Axioplan2 microscope, and do not have identical exposure times. Data in (D–E) is derived from 4 (GFP-Npm1 and GFP-FBL), or 6 (GFP) biological replicates (groups of 2–20 nuclei).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35224/elife-35224-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) GFP-Fbl/GFP-NLS or GFP-Npm1/GFP-NLS synthetic mRNA was co-injected into stage V-VI oocytes and allowed to translate overnight. Nuclei from co-expressing oocytes were isolated and depleted of soluble proteins (retained), or immediately harvested (input), and resolved with SDS-PAGE. Following transfer to a nitrocellulose membrane, total protein was determined via REVERT protein staining (LI-Cor), and labeled proteins were analyzed via anti-GFP Western Blot. (B) Representative raw data from Figure 2E–D. Anti-GFP Western blotting (Top) demonstrates enrichment of GFP-Fbl and GFP-Npm1 as compared to soluble GFP-NLS internal control, as well as total protein (bottom). Total number of nuclei per lane is as indicated (bottom).
 
 Compared to total nuclear protein, Npm1 and Fbl were enriched (8.60 ± 5.72 fold enrichment of Fbl and 7.79 ± 2.45 of Npm1, Figure 2E and and Figure 2—figure supplement 1) in the retained pool. Like dTomato (Figure 1), nuclear localized GFP behaves like other soluble proteins and was present when nuclei were isolated and assayed within 15 minues. However, following soluble protein depletion roughly 1.0% of control GFP was retained, representing a 0.09 ± 0.03 fold enrichment compared to a total nuclear protein. This is consistent with previous reports investigating the dynamics of Npm1 and Fbl which showed they exist in both soluble and aggregated states (Boke et al., 2016).
 
 With these observations, we established the conditions used to examine isolated Xenopus oocyte nuclei as a simple model system for studying endogenous nuclear aggregates in vitro (after 1 hr of soluble protein depletion), in situ (freshly isolated and immediately assayed while soluble proteins are still present though small molecule concentrations equilibrated to match buffer conditions), or ex vivo (isolated under oil, allowing both nuclear proteins and small molecules to be retained [Handwerger et al., 2005; Lund and Paine, 1990]).
 
-## Aggregated nucleolar proteins are resistant to ATP mediated hydrotropic solubilization
+### Aggregated nucleolar proteins are resistant to ATP mediated hydrotropic solubilization
 
 Patel and colleagues demonstrated that ATP and its non-hydrolysable analogue adenosine 5′-(β,γ-imido)triphosphate (AMP-PNP) could act as hydrotropes to solubilize recombinant liquid-liquid phase separated protein droplets (Patel et al., 2017). Our initial assays were carried out using 8 mM ATP because it is similar to the amphibian nuclear concentration of 6.2 ± 0.7 mM (Miller and Horowitz, 1986), within the reported physiologic range of other eukaryote nuclei, and sufficient to solubilize recombinant LLPS droplets in vitro (Patel et al., 2017; Miller and Horowitz, 1986; Traut, 1994). Oocytes injected with mRNA encoding GFP-Npm1 and RFP-Fbl were used as a source of nuclei. Nuclei were isolated in OR2, depleted of small molecules and soluble proteins for 1 hr, then transferred into in situ buffer (ISB, which compared with OR2 provides better osmotic support, buffering to stabilize pH when adding nucleotides and potassium rather than sodium to better align with cellular ion concentrations) supplemented with 8 mM ATP or AMP-PNP for 15 min prior to imaging. Fluorescently labeled proteins were retained following this treatment (bottom row, Figure 2C).
 
@@ -73,7 +209,7 @@ We noticed in the experiments described in Figure 2 that if nucleoli were underg
 
 Mixing of soluble protein depleted and oil isolated nuclei revealed that soluble protein depletion does not irreversibly confer resistance to disaggregation, abolish the ability for resolution of stalled nucleolar fusion events, or prevent exchange between pre-existing aggregates.
 
-## Nuclear protein aggregate disassembly is enhanced by ATP and a diffusible factor
+### Nuclear protein aggregate disassembly is enhanced by ATP and a diffusible factor
 
 The experiments above suggests that soluble nuclear proteins are needed for normal maintenance of nucleolar aggregates. Work by Wuhr et al. (Wühr et al., 2015) and our own data (Figure 1) demonstrate that Xenopus oocyte nuclei contain a full complement of proteins and other components immediately after isolation. If a diffusible factor is required for ATP dependent solubilization, protein aggregates might respond to ATP if nuclei are isolated and tested immediately.
 
@@ -95,7 +231,7 @@ In vitro trials using purified protein aggregates indicated that ATP, GTP and AM
 
 These findings indicate that a diffusible factor or factors are critical for rapid solubilization of aggregated nucleolar components in combination with a hydrolysable ATP or GTP. Non-hydrolysable AMP-PNP was not sufficient in these assays. The response of the two protein reporters was not identical, with Npm1 easier to visualize as having left the coalesced state. At intermediate ATP concentration we observed retention of a thin layer of granular component surrounding an more ATP resistant dense fibrillar component core. This arrangement of the monitored LLPS protens is reminiscent of what Ferric and colleagues demonstrated highlighting the role of surface tension in driving the separation and arrangement of nucleolar compartments. (Feric et al., 2016) This observation is consistent with there being heterogeneity within nucleolar compartments that differ in response to the presence of hydrolyzable ATP.
 
-## In situ and ex vivo nucleolar aggregate responses to ATP, AMP-PNP
+### In situ and ex vivo nucleolar aggregate responses to ATP, AMP-PNP
 
 We tested if an artificially high level of ATP or AMP-PNP might reveal hydrotropic solubilization of nucleolar aggregates. Nuclei from GFP-Npm1and RFP-Fbl co-expressing oocytes were isolated under mineral oil to retain soluble protein and nuclear contents. Nuclei were then injected with 9.2 nL (an approximately equal volume) of 50 mM ATP or AMP-PNP, to yield a final nucleotide concentration of 25 mM. 25 mM is more than a 4-fold increase over the physiologic ATP concentration and nearly six times the minimum hydrotropic concentration of both ATP and AMP-PNP reported in vitro (Patel et al., 2017; Miller and Horowitz, 1986).
 
@@ -107,7 +243,7 @@ Nucleoli from AMP-PNP injected nuclei remained grossly unchanged (middle compare
 
 Even dilute concentrations of soluble GFP-Npm1 and RFP-Fbl are capable of being recruited into pre-existing aggregates (Figure 3B) under conditions of sub physiologic ATP levels. Others have documented this dynamic exchange in physiologic or near physiologic ATP concentration (Brangwynne et al., 2011; Feric et al., 2016) in nuclei isolated under oil to preserve a pro-aggregation environment. However, supplementation with 25 mM ATP inhibits re-aggregation of GFP-NPM1. This is consistent with the need to overcome the hydrotropic action of ATP to establish the normal equilibrium status of protein recruitment into ribonucleoprotein aggregates such as nucleoli.
 
-## AMP-PNP supplementation of a Sub-Minimum hydrotropic concentration of ATP promotes aggregate solubilization
+### AMP-PNP supplementation of a Sub-Minimum hydrotropic concentration of ATP promotes aggregate solubilization
 
 Treatment of freshly isolated nuclei with 2 mM ATP replicated many of the changes seen with higher concentrations of ATP (Figure 4B–D). When we added only 1 mM ATP our results were similar to that we observed using 4 mM AMP-PNP(Figure 7). The reported KM ATP of protein and lipid kinases is rarely over 1 mM and the reported KM ATP of members of the yeast Hsp70 family of chaperones is less than 300 μM (Knight and Shokat, 2005; Lopez-Buesa et al., 1998), so we wondered whether at least a portion of the observed solubilization in earlier studies might be attributed to the hydrotropic action of ATP. We tested this premise by supplementation with another hydrotrope, non-hydrolysable AMP-PNP. We treated freshly isolated nuclei with 1 mM ATP, 1 mM ATP supplemented with 3 mM AMP-PNP, 4 mM ATP, and 4 mM AMP-PNP (Figure 7A).
 
@@ -119,7 +255,7 @@ In this assay treatment with 4 mM AMP-PNP or 1 mM ATP had a very modest effect o
 
 The ability of AMP-PNP to partially solubilize aggregated GFP-NPM1 and act synergistically with 1 mM ATP to partially solubilize aggregated RFP-Fbl demonstrates that it can act a hydrotrope in situ when the system is appropriately primed. More importantly, these observations indicate ATP may have more than one role in the regulation of endogenous protein aggregates. They support a model of nucleolar solubilization, wherein an energy dependent process may sensitize aggregated proteins to energy independent solubilization via a biological hydrotrope such as ATP.
 
-## Sensitization of nucleolar compartments to the hydrotropic action of ATP using RNase A
+### Sensitization of nucleolar compartments to the hydrotropic action of ATP using RNase A
 
 RNA is an essential nucleolar component. It is required for LLPS of recombinant nucleolar proteins and for maintenance of nucleolar contents ex vivo (Feric et al., 2016; Hayes and Weeks, 2016). We have previously shown that maintenance of amyloid-like nucleolar organization and localization of proteins, like nucleolin, to nucleoli are sensitive to RNA depletion (Hayes and Weeks, 2016).
 
@@ -177,11 +313,11 @@ Our work also emphasizes the need to control for, or acknowledge, the influence 
 
 ## Materials and methods
 
-## Oocyte isolation
+### Oocyte isolation
 
 J-strain Xenopus laevis frogs were obtained from the National Xenopus Resource at the Marine Biological Laboratory (RRID:SCR_013731) Woods Hole, MA). Ovarian tissue was aseptically removed 15 min following induction of anesthesia (ice bath supplemented with 0.1% Tricaine), placed into Oocyte Ringers ((OR2, 82.5 mM NaCl, 2.5 mM KCl, 1 mM CaCl2, 1 mM MgCl2, 1 mM Na2HPO4, 5 mM HEPES and NaOH to pH 7.8), and stored at 13°C. All protocols were approved by the University of Iowa Office of Animal Resources and Institutional Animal Care and Use Committee.
 
-## In vitro transcription
+### In vitro transcription
 
 Synthetic mRNAs were generated using a mMESSAGE mMACHINE kit (Ambion), following the manufacturer’s instructions. Transcription templates were PCR amplified from RN3P (GFP-NLS) (Zernicka-Goetz et al., 1996); p3-dTomato (Love et al., 2011) (European Xenopus Resource Centre; Portsmouth, England); and pCPB055 (GFP:Npm1), pCPB057 (GFP-Fbl), and pCPB300 (RFP:Fbl) (Knowles et al., 2014; Banani et al., 2016). The primers used to generate templates for transcription reactions were: SP6 forward:
 
@@ -195,59 +331,59 @@ T3 Kozak.dTom: AAAAAAAATTAACCCTCAATAAAGGAGAGCCGCCACCATGGTGAGCAAGGCGAG; dTom.NLS;
 
 TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTAATCC. Transcription templates for fluorescently labeled Npm1 an Fbl were kindly provided by Cliff Brangwynne (Princeton, NJ).
 
-## Microinjection
+### Microinjection
 
 Stage V-VI oocytes were manually defolliculated with watchmaker’s forceps prior to injection of 1 ng of synthetic mRNAs in 10 nL using a glass needle paired with a Singer MK-1 (Somerset, England) micromanipulator and Inject+Matic injector (Geneva, Switzerland). Injection of 9.2 nL of solution into oil isolated nuclei ex vivo was performed using a MM33 micromanipulator mounted Nanoject II (Drummond). 10 nL of a 16 mM solution of Lucifer Yellow (Molecular Probes) was injected directly into oocyte nuclei for studies that examined movement of small molecules out of isolated nuclei.
 
-## Endogenous aggregate enrichment and analysis
+### Endogenous aggregate enrichment and analysis
 
 Nuclei from dTomato-NLS mRNA injected oocytes were harvested in OR2 and immediately transferred to a depression slide with 250 µL of OR2 supplemented with Thioflavin T (Sigma) to 50 µM. Lucifer Yellow experiments were performed in identical conditions without thioflavin T. For SDS-PAGE analysis, soluble proteins were depleted from isolated nuclei via incubation in ~5 mL of OR2 for the indicated times.
 
-## Bulk nuclear isolation
+### Bulk nuclear isolation
 
 Bulk nuclei were isolated using the method of Scalenghe et al., with slight modification. Briefly, ovarian tissue was enzymatically defolliculated (Collagenase A, Roche) and extensively washed in OR2. Stage V-VI oocytes were manually sorted and subsequently treated with 10 mg/mL Pronase (Sigma) for 30 min on ice with gentle agitation, then extensively washed in OR2 supplemented with 20 mg/mL BSA. Oocytes were lysed in a 60 mL syringe containing L-15 media supplemented with 0.2% NP-40 (three parts lysis medium to one part oocytes). With gentle agitation, intact nuclei float to the top of the syringe and are transferred into a 5 mL syringe using a three-way valve. Nuclei were purified form contaminating yolk and cytosolic content by sedimentation through L-15 containing 0.1M sucrose on ice. Nuclei were collected and transferred to 60 mM dishes containing 5 mL of OR2, where their envelopes were manually removed and soluble proteins were depleted. Samples were then processed for proteomic analysis.
 
-## Proteomic analysis
+### Proteomic analysis
 
 Details on proteomic experiments are provided below and were based on protocols used in the Dovichi lab (Peuchen et al., 2016; Wiśniewski et al., 2009). Each sample of treated GV’s was lysed and the proteome was extracted with an optimized buffer system of 6% SDS in Tris-HCL and protease inhibitor, followed by proteome cleanup and digestion with a filter aided sample preparation (FASP) method. The resulting digest was desalted and analyzed by nano-RPLC-ESI-MS/MS (90 min RPLC gradient, Q-Exactive mass spectrometer), followed by peptide and protein identification with MaxQuant software (RRID:SCR_014485) based on MS/MS spectra and label free quantification (LFQ) (Cox et al., 2014; Cox and Mann, 2008; Cox et al., 2011). All Proteomic data was deposited at MassIVE as noted below.
 
-## SDS-PAGE, Western Blotting, and Antibodies
+### SDS-PAGE, Western Blotting, and Antibodies
 
 Protein samples were mixed with 2x Laemmli Sample Buffer (Bio Rad) supplemented with 2% β-mercaptoethanol (Amresco) and heated to 95°C for 10 min. Proteins were resolved on 10% Tris-Glycine gels (Bio Rad), and transferred to a nitrocellulose membrane (Bio Rad) where appropriate. Total protein was stained with Coomassie brilliant blue in gel, or Revert Total Protein stain (LI-cor) on membrane. Membranes were blocked in TBST (20 mM Tris, 137 mM NaCl, and 0.1% Tween 20) supplemented with 5% non-fat powdered milk, incubated with primary antibody (anti-GFP, 1:2000 dilution of ab6556, Abcam RRID:AB_305564) in blocking buffer overnight at 4°C with agitation, briefly washed with TBST, then transferred into blocking buffer containing HRP conjugated secondary antibody (ab97051, Abcam RRID:AB_10679369) for 1–2 hr at room temperature, and washed with TBST. Washed membranes were briefly incubated in Supersignal West Pico or Dura substrate (ThermoFisher) prior to imaging. Images were acquired with an Odyssey FC and quantified using Image Studio software (LI-Cor).
 
-## Microscopy
+### Microscopy
 
 Nuclei were mounted within a petrolatum (Vaseline) well containing the indicated buffer or a depression slide as noted previously. Images were acquired with an AxioPlan or ApoTome fluorescent microscope running Axio Vision software (RRID:SCR_002677)and an AxioCam MRm or AxioCam MrC5 camera (Zeiss). Images were pseudocolored and processed with FIJI (National Institutes of Health RRID:SCR_002285) or Photoshop (Adobe Systems Inc. RRID:SCR_014199)
 
-## Nucleotides
+### Nucleotides
 
 ATP (Roche) was resuspended to a final concentration of 100 mM in 25 mM Tris and brought to pH seven with NaOH. AMP-PMP (Sigma) was diluted to 94 mM in OR2 and brought to a pH of 7. Both AMP-PNP and ATP were further diluted directly into in situ buffer (ISB) (20 mM HEPES, 100 mM KCl, 0.2 mM EDTA, 0.5 mM DTT, 20% Glycerol pH 7.4) or 25 mM Tris for ex vivo injection.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed with GraphPad Prism (GraphPad Software, USA RRID:SCR_002798). Where applicable, outlying data points were removed via ROUT analysis, and significance between treatment groups was determined by unpaired t-test.
 
-## Proteome methods
+### Proteome methods
 
-## Reagents and materials
+#### Reagents and materials
 
 Bovine pancreas TPCK-treated trypsin, urea, ammonium bicarbonate (NH4HCO3), dithiothreitol (DTT), iodoacetamide (IAA), sodium dodecyl sulfated (SDS), and Tris buffer were purchased from Sigma−Aldrich (St. Louis, MO). Acetonitrile (ACN) and formic acid (FA) were purchased from Fisher Scientific (Pittsburgh, PA). Water was purchased from Honeywell Burdick and Jackson (Wicklow, Ireland). Complete, mini protease inhibitor cocktail (provided in EASYpacks) was purchased from Roche (Indianapolis, IN). The Microcon 30 kDA MWCO centrifugal filter units with regenerated cellulose membrane were purchased from Merck (Darmstadt, Germany).
 
-## Proteome extraction and preparation
+#### Proteome extraction and preparation
 
 Each sample of nuclei was suspended in 750 µL of lysis buffer (6% SDS in Tris-HCl buffer) containing protease inhibitor, followed by cell lysis via sonication with a Branson Sonifier 250 (VWR Scientific, Batavia, IL) for 10 min on ice. Then, the lysate was centrifuged at 15,000 g for 10 min, and the supernatant was collected into a new Eppendorf tube. Next, 100 µg protein from each sample was denatured at 90°C for 30 min, reduced with DTT at 60°C for 1 hr, and then alkylated with IAA at room temperature for 30 min. A 30 kDa membrane was moistened using 100 μL of 100 mM NH4HCO3 and centrifuged for 15 min at 13,000 g. The alkylated sample was placed on the membrane and centrifuged for 40 min at 14,000 g. The membrane was washed three times with 200 μL of 8 M urea and centrifuged at 18,000 g for 25 min each time. A final wash with 100 μL of 20 mM NH4HCO3 was centrifuged for 10 min at 16,000 g. A tryptic digest of 1:25 trypsin:protein was completed by vortexing the samples for 10 min, followed by incubating at 37°C for 12 hr. FA was used to quench the digest.
 
 After protein digestion, the peptides were collected via centrifuge. In order to improve the peptide recovery, we used 40 µL twice of 20 mM NH4HCO3 to wash the membrane again in order to collect the residual peptides on the membrane. Peptides from those two step collections were combined and lyophilized. After that, the peptide sample was redissolved to 1 µg/µL of 1% (v/v) FA, lyophilized per manufacturer instructions using SPE columns. The desalted same was again reconstituted to 1 µg/µL of 1% (v/v) FA for reversed-phase liquid chromatography (RPLC)-electrospray ionization (ESI)-tandem mass spectrometry (MS/MS) analysis.
 
-## RPLC-ESI-MS/MS
+### RPLC-ESI-MS/MS
 
 A nanoACQUITY UltraPerformance LC (UPLC) system (Waters, Milford, MA, USA) was used for peptide separation. Buffer A (0.1% FA in water) and buffer B (0.1% FA in ACN) were used as mobile phases for gradient separation. The flow rate was 1 µL/min. Peptides were automatically loaded onto a commercial C18 reversed phase column (Waters, 100 µm × 100 mm, 1.7 µm particle, BEH130C18, column temperature 40°C) with 2% buffer B for 10 min, followed by 3-step gradient separation, 1 min from 2% to 8% B, 60 min to 30% B, 1 min to 80% B, and maintained at 80% B for 6 min. The column was equilibrated for 11 min with 2% B before analysis of the next sample. The eluted peptides from the C18 column were pumped through a capillary tip for electrospray, and analyzed by a Q-Exactive mass spectrometer (Thermo Fisher Scientific). The electrospray voltage was set at 1.8 kV. The ion transfer tube temperature was 300°C. Full MS scans were acquired from 350 to 1800 m/z in the Orbitrap mass analyzer at a resolution of 70,000 (at 200 m/z). The AGC target value was 3.00E + 06. The maximum injection time was 60 ms. Two microscan was used. The twelve most intense peaks with charge state ≥2 were isolated in the quadrupole with isolation window of 2.0 m/z units, NCE was set at 28%, and further analyzed in the Orbitrap mass analyzer with 35,000 resolution (at 200 m/z), 1.0E + 06 AGC target value, and 120 ms maximum injection time. The intensity threshold was 1.0E + 05 for triggering the peptide fragmentation. Dynamic exclusion was 40 s. Isotopes were excluded. For each RPLC-MS/MS run, 2 µL of the peptide sample from each blastomere was loaded onto the RPLC column for analysis.
 
-## Data analysis
+### Data analysis
 
 All the raw MS files were analyzed by MaxQuant version 1.5.3.30. MS/MS spectra were searched against the protein reference database from Xenopus laevis genome 9.1 (Cox et al., 2014, 2011). The analysis included an initial search with a precursor mass tolerance of 20 ppm, main search precursor mass tolerance of 4.5 ppm and fragment mass tolerance of 20 ppm. The search included enzyme was trypsin, variable modifications of oxidation (M), acetylation (protein N-terminal) and deamidation (NQ), and fixed modification of carbamidomethyl cysteine. Minimal peptide length was set to six amino acids and the maximum number of missed cleavages allowed was two. The false discovery rate (FDR) was set to 0.01 for both peptide and protein identifications. All proteins identified by the same sets of peptides were grouped, and reported as one protein group. Protein groups identified with at least one unique peptide were considered as positive hits. The protein group table was filtered to remove the identifications from the reverse database and common contaminants. ‘Second peptides’ and ‘Match between runs’ functions with default settings were employed for database searching. ‘Label free quantification’ function in the MaxQuant software was used with default settings.
 
-## Data sets deposition
+### Data sets deposition
 
 Proteomic data sets generated for this study are deposited at MassIVE data ftp://massive.ucsd.edu/MSV000081690/.
 

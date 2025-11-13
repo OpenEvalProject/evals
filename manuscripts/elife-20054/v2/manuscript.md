@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.20054.001 The mechanism for the earliest response of central neurons to hypoxia—an increase in voltage-gated sodium current ( I )—has been unknown. Here, we show that hypoxia activates the Small Ubiquitin-like Modifier (SUMO) pathway in rat cerebellar granule neurons (CGN) and that SUMOylation of Na Na V 1.2 channels increases I . The time-course for SUMOylation of single Na Na V 1.2 channels at the cell surface and changes in I coincide, and both are prevented by mutation of Na Na V 1.2-Lys38 or application of a deSUMOylating enzyme. Within 40 s, hypoxia-induced linkage of SUMO1 to the channels is complete, shifting the voltage-dependence of channel activation so that depolarizing steps evoke larger sodium currents. Given the recognized role of I in hypoxic brain damage, the SUMO pathway and Na Na V 1.2 are identified as potential targets for neuroprotective interventions. DOI: http://dx.doi.org/10.7554/eLife.20054.001
+The mechanism for the earliest response of central neurons to hypoxia—an increase in voltage-gated sodium current (INa)—has been unknown. Here, we show that hypoxia activates the Small Ubiquitin-like Modifier (SUMO) pathway in rat cerebellar granule neurons (CGN) and that SUMOylation of NaV1.2 channels increases INa. The time-course for SUMOylation of single NaV1.2 channels at the cell surface and changes in INa coincide, and both are prevented by mutation of NaV1.2-Lys38 or application of a deSUMOylating enzyme. Within 40 s, hypoxia-induced linkage of SUMO1 to the channels is complete, shifting the voltage-dependence of channel activation so that depolarizing steps evoke larger sodium currents. Given the recognized role of INa in hypoxic brain damage, the SUMO pathway and NaV1.2 are identified as potential targets for neuroprotective interventions.
 
 ## Introduction
 
@@ -29,19 +29,170 @@ To establish the mechanism, we studied rat CGN using whole-cell voltage-clamp, a
 
 ## Results
 
-## Hypoxia rapidly increases CGN INa
+### Hypoxia rapidly increases CGN INa
 
-In ambient (21%) O
+In ambient (21%) O2, CGN INa activated and inactivated rapidly, showing the expected biophysical properties (Diwakar et al., 2009), including a mean peak INa of −172 ± 20 pA/pF at −20 mV, a half-maximal activation voltage (V½) of −23 ± 0.5 mV, and a steady-state inactivation midpoint (SSI) of −67 ± 2 mV, the last parameter a measure of the number of channels available to pass current (Table 1). When O2 was lowered from ambient levels to 5% by perfusion of cells with hypoxic solutions (Plant et al., 2002), the mean peak INa increased over 40 s to a new, stable level that was ~70% higher, −294 ± 25 pA/pF (Figure 1a and Table 1), reminiscent of increases in INa in response to acute hypoxia reported by others studying rat neurons from the hypothalamus (Horn and Waldrop, 2000) and hippocampus (Raley-Susman et al., 2001). Augmentation of INa by hypoxia was associated with a leftward shift of −11 ± 2 mV in both V½ and SSI, allowing the same amount of depolarization to evoke larger INa currents (Figure 1b). The hypoxia-induced increase in INa was long-lasting, remaining unchanged 10 min after neurons were restored to ambient O2 (Supplementary file 1a). Hypoxia did not alter the kinetics of recovery of INa from the fast-inactivated state (Figure 1—figure supplement 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/20054/elife-20054-fig1-v2.jpg)
 
-**Figure 1.:** I in rat CGN.NaI in rat CGN was studied by whole-cell patch-clamp. Normalized activation (Act) and steady-state inactivation (SSI) relationships were obtained and fit as described in the Materials and methods. Measured values are noted in the text and listed in NaTable 1. The time-course of hypoxic modulation of I was studied by steps from –100 mV to -20 mV every 10 s. Cells were studied with control solution (black), 100 pm SUMO1 (red), or 250 pm SENP1 (blue) in the recording pipette. To assess the relative contributions of NaNaV1.2 and NaV1.6 channel currents to I, 250 nm µ-conotoxin TIIIA (CnTx) and 50 nm 4,9 anhydro-TTX (anTTX) were applied as indicated. Data are mean ± S.E.M. for 10 to 15 cells per group. Scale bars are 150 pA/pF and 5 ms for panels Naa to d, and 75 pA/pF and 5 ms in panel e. (a) Left, example traces showing I at -20 mV increased when control perfusate at 21% ONa2 (black) was exchanged with a hypoxic solution at 5% O2 (- - - -). Right, the time-course for changes in the peak current in response to decreased O2, and on return to normoxia (washout), is shown normalized to the maximal current for each cell studied. Inset, The level of O2 was measured in real-time in the recording chamber and fell from 21 to 5% within 18 ± 1 s (o). Error bars are within the symbols. (b) Hypoxic solution (green dashes) left shifted the V of ½I from control (black) for both Act (solid) and SSI (open). (Nac) Left, SUMO1 in the pipette (red) increased I and no further augmentation was observed by subsequent hypoxia (red dashes). Right, SENP1 in the pipette (blue) decreased NaI and suppressed the response to hypoxia (blue dashes). Dotted black lines indicate the mean peak values in control normoxic solutions from Naa. (d) SUMO1 left shifted the V of Act (red triangle) and SSI (open red triangle). The relationships were then insensitive to hypoxia (Act, red down triangle; SSI, open red down triangle). SENP1 right shifted the ½V of Act (blue triangle) and SSI (open blue triangle) and currents were then insensitive to hypoxia. Dashed black lines indicate mean peak values with control solutions from ½b. (e) Left; I traces under control conditions and with toxins in the bath. Right; mean normalized peak current histograms showing 90 ± 0.8% inhibition by CnTx, 10 ± 0.3% inhibition by AnTTX and 98 ± 0.02% inhibition by both toxins with 21% ONa2 (black bars). (f) Mean normalized peak I histograms. Left; 92 ± 1% inhibition by CnTx and 9 ± 1% inhibition by AnTTX with a drop to 5% ONa2 for 60 s (green). Right; 93 ± 2% inhibition by CnTx and 7 ± 1% inhibition by AnTTX with 100 pm SUMO1 in the pipette (red). (g) Mean normalized peak current histograms show that the I remaining after inhibition of NaNaV1.2 by CnTx did not respond to acute hypoxia at 5% O2 (green), SUMO1 (red) or SENP1 (blue). (h) Mean normalized peak I histograms with SENP1 in the pipette with 21% ONa2 (blue) showing 70 ± 4% inhibition by CnTx, 34 ± 8% inhibition by AnTTX and 96 ± 0.5% inhibition by both toxins consistent with the passage of much of the remaining current by NaV1.6.DOI: http://dx.doi.org/10.7554/eLife.20054.003
+**Figure 1.:** INa in rat CGN was studied by whole-cell patch-clamp. Normalized activation (Act) and steady-state inactivation (SSI) relationships were obtained and fit as described in the Materials and methods. Measured values are noted in the text and listed in Table 1. The time-course of hypoxic modulation of INa was studied by steps from –100 mV to -20 mV every 10 s. Cells were studied with control solution (black), 100 pm SUMO1 (red), or 250 pm SENP1 (blue) in the recording pipette. To assess the relative contributions of NaV1.2 and NaV1.6 channel currents to INa, 250 nm µ-conotoxin TIIIA (CnTx) and 50 nm 4,9 anhydro-TTX (anTTX) were applied as indicated. Data are mean ± S.E.M. for 10 to 15 cells per group. Scale bars are 150 pA/pF and 5 ms for panels a to d, and 75 pA/pF and 5 ms in panel e. (a) Left, example traces showing INa at -20 mV increased when control perfusate at 21% O2 (black) was exchanged with a hypoxic solution at 5% O2 (- - - -). Right, the time-course for changes in the peak current in response to decreased O2, and on return to normoxia (washout), is shown normalized to the maximal current for each cell studied. Inset, The level of O2 was measured in real-time in the recording chamber and fell from 21 to 5% within 18 ± 1 s (o). Error bars are within the symbols. (b) Hypoxic solution (green dashes) left shifted the V½ of INa from control (black) for both Act (solid) and SSI (open). (c) Left, SUMO1 in the pipette (red) increased INa and no further augmentation was observed by subsequent hypoxia (red dashes). Right, SENP1 in the pipette (blue) decreased INa and suppressed the response to hypoxia (blue dashes). Dotted black lines indicate the mean peak values in control normoxic solutions from a. (d) SUMO1 left shifted the V½ of Act (red triangle) and SSI (open red triangle). The relationships were then insensitive to hypoxia (Act, red down triangle; SSI, open red down triangle). SENP1 right shifted the V½ of Act (blue triangle) and SSI (open blue triangle) and currents were then insensitive to hypoxia. Dashed black lines indicate mean peak values with control solutions from b. (e) Left; INa traces under control conditions and with toxins in the bath. Right; mean normalized peak current histograms showing 90 ± 0.8% inhibition by CnTx, 10 ± 0.3% inhibition by AnTTX and 98 ± 0.02% inhibition by both toxins with 21% O2 (black bars). (f) Mean normalized peak INa histograms. Left; 92 ± 1% inhibition by CnTx and 9 ± 1% inhibition by AnTTX with a drop to 5% O2 for 60 s (green). Right; 93 ± 2% inhibition by CnTx and 7 ± 1% inhibition by AnTTX with 100 pm SUMO1 in the pipette (red). (g) Mean normalized peak current histograms show that the INa remaining after inhibition of NaV1.2 by CnTx did not respond to acute hypoxia at 5% O2 (green), SUMO1 (red) or SENP1 (blue). (h) Mean normalized peak INa histograms with SENP1 in the pipette with 21% O2 (blue) showing 70 ± 4% inhibition by CnTx, 34 ± 8% inhibition by AnTTX and 96 ± 0.5% inhibition by both toxins consistent with the passage of much of the remaining current by NaV1.6.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/20054/elife-20054-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** I and NaNaV1.2 from fast inactivation is not altered by hypoxia, SUMO1 or SENP1.Neuronal I or CHO cells expressing NaNaV1.2 or NaV1.2-Lys38Gln (NaV1.2-K38Q) were studied in whole-cell mode. To assess recovery from fast inactivation cells were held at −100 mV, depolarized to −20 mV for 30 ms and then held at −100 mV for increasing amounts of time before a second 30 ms, −20 mV test pulse to measure the fraction of current recovered. Data are mean ± S.E.M. for 6–10 cells per group. (a) The fraction of initial I recovered in subsequent test pulses is plotted against the interpulse interval and fitted with a mono-exponential function to determine the time-constant (τ) of recovery. The mean time constant for control cells was 8 ± 0.36 (green) and did not differ when cells exposed to hypoxia (black) with or without 100 pm SUMO (red) or 250 pm SENP1 (blue) in the recording pipette. Inset; An example current, showing the recovery time course of NaI recorded from a control neuron. (Nab) Histograms showing the mean τ of recovery, assessed as in (a), for neuronal I or NaNaV1.2 or NaV1.2-K38Q expressed in CHO cells under the experimental conditions described. Neither the point mutation K38Q, nor treating cells with hypoxia, SUMO1 or SENP1 modulated recovery kinetics.DOI: http://dx.doi.org/10.7554/eLife.20054.004
+**Figure 1—figure supplement 1.:** Neuronal INa or CHO cells expressing NaV1.2 or NaV1.2-Lys38Gln (NaV1.2-K38Q) were studied in whole-cell mode. To assess recovery from fast inactivation cells were held at −100 mV, depolarized to −20 mV for 30 ms and then held at −100 mV for increasing amounts of time before a second 30 ms, −20 mV test pulse to measure the fraction of current recovered. Data are mean ± S.E.M. for 6–10 cells per group. (a) The fraction of initial INa recovered in subsequent test pulses is plotted against the interpulse interval and fitted with a mono-exponential function to determine the time-constant (τ) of recovery. The mean time constant for control cells was 8 ± 0.36 (green) and did not differ when cells exposed to hypoxia (black) with or without 100 pm SUMO (red) or 250 pm SENP1 (blue) in the recording pipette. Inset; An example current, showing the recovery time course of INa recorded from a control neuron. (b) Histograms showing the mean τ of recovery, assessed as in (a), for neuronal INa or NaV1.2 or NaV1.2-K38Q expressed in CHO cells under the experimental conditions described. Neither the point mutation K38Q, nor treating cells with hypoxia, SUMO1 or SENP1 modulated recovery kinetics.
 
-## The SUMO pathway regulates CGN INa
+**Table 1.**
+ Effects of hypoxia, SUMO1 and SENP1 on native INa and cloned NaV1.2 channels. Neurons (Figures 1 and 3) or cloned channels in CHO cells (Figure 5) were studied in whole-cell mode. Stimulation protocols are described in the Materials and methods. V½, the voltage evoking half-maximal conductance; k, the slope of the curve were obtained by fitting the normalized current plotted against voltage to a Boltzmann function, I = Imax/(1+exp[−(V−V½)/k]), where Imax is maximum current; and SSI is the steady-state inactivation half voltage. For comparison between groups, current densities were measured both at −20 mV, to demonstrate the impact of the shifts in V½, and at 0 mV, a potential where the G-V relationships are saturated under all study conditions. The maximal current in CGN cultured at 21% O2 and studied in ambient O2 was at −5 ± 1 mV (and the current-density was 292 ± 15 pA/pF); when these neurons were studied with SUMO1 in the pipette or subjected to 5% O2, the maximal current was observed at −20 ± 2 mV and −20 ± 3 mV, respectively, shifts of ~15 mV analogous to those seen in V½. When the cells were studied with SENP1 in the pipette, the maximal current was measured at +5 ± 2 mV, a shift of ~10 mV, and the current-density was −288 ± 17 pA/pF. Data are means ± S.E.M. for 10 to 15 cells per group; * indicates p<0.05 compared with cells studied at ambient O2 under control conditions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="6">INa</th>
+      <th colspan="6">NaV1.2</th>
+      <th colspan="5">NaV1.2-Lys38Gln</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="2">Activation</td>
+      <td colspan="2">SSI</td>
+      <td>I-20 mV</td>
+      <td>I0 mV</td>
+      <td colspan="2">Activation</td>
+      <td colspan="2">SSI</td>
+      <td>I-20 mV</td>
+      <td>I0 mV</td>
+      <td colspan="2">Activation</td>
+      <td colspan="2">SSI</td>
+      <td>I-20 mV</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>V½mV</td>
+      <td>k</td>
+      <td>V½mV</td>
+      <td>k</td>
+      <td>pA/pF</td>
+      <td>pA/pF</td>
+      <td>V½mV</td>
+      <td>k</td>
+      <td>V½mV</td>
+      <td>k</td>
+      <td>pA/pF</td>
+      <td>pA/pF</td>
+      <td>V½mV</td>
+      <td>k</td>
+      <td>V½</td>
+      <td>k</td>
+      <td>pA/pF</td>
+    </tr>
+    <tr>
+      <td>Cultured at 21% O2</td>
+      <td>−23 ± 0.5</td>
+      <td>4.0 ±  0.2</td>
+      <td>−67 ± 2</td>
+      <td>6 ±  1</td>
+      <td>−172 ± 20</td>
+      <td>−293 ± 12</td>
+      <td>−18.7 ± 0.2</td>
+      <td>3.7 ±  0.1</td>
+      <td>−59 ± 0.4</td>
+      <td>7 ± 2</td>
+      <td>−112 ± 8</td>
+      <td>−194 ±  10</td>
+      <td>−4.0 ± 1.5</td>
+      <td>3.6 ±  0.3</td>
+      <td>−50 ± 1</td>
+      <td>6.5 ±  1</td>
+      <td>−33 ± 7</td>
+    </tr>
+    <tr>
+      <td>Lowering O2 21% to 5%</td>
+      <td>−34 ± 1.5*</td>
+      <td>4.2 ±  0.2</td>
+      <td>−78 ± 2*</td>
+      <td>10 ±  2</td>
+      <td>−294 ± 25*</td>
+      <td>−287 ± 18</td>
+      <td>−30 ± 0.5*</td>
+      <td>4 ± 1</td>
+      <td>−72 ± 1.5*</td>
+      <td>7.5 ±  1</td>
+      <td>−192 ± 11*</td>
+      <td>−187 ± 9</td>
+      <td>−4.0 ± 2</td>
+      <td>3 ±  1</td>
+      <td>−49 ± 1</td>
+      <td>6 ±  1</td>
+      <td>−35 ± 6*</td>
+    </tr>
+    <tr>
+      <td>SENP1</td>
+      <td>−7.5 ± 1*</td>
+      <td>4.1 ±  0.3</td>
+      <td>−53 ± 1*</td>
+      <td>8 ±  2</td>
+      <td>−42 ± 12*</td>
+      <td>−285 ± 17</td>
+      <td>−2.5 ± 0.3*</td>
+      <td>3.6 ±  0.1</td>
+      <td>−48 ± 0.5*</td>
+      <td>6 ± 1</td>
+      <td>−29 ± 9*</td>
+      <td>−191 ±  11</td>
+      <td>−3.5 ± 1</td>
+      <td>3.2 ±  0.4</td>
+      <td>−49 ± 0.5</td>
+      <td>6.5 ±  2</td>
+      <td>−35 ± 7*</td>
+    </tr>
+    <tr>
+      <td>SUMO1</td>
+      <td>−36 ± 1*</td>
+      <td>3.9 ±  0.2</td>
+      <td>−77 ± 3*</td>
+      <td>8.5 ±  1</td>
+      <td>−303 ± 17*</td>
+      <td>−289 ± 15</td>
+      <td>−30 ± 0.3*</td>
+      <td>3.5 ±  0.2</td>
+      <td>−69 ± 0.5*</td>
+      <td>7.5 ±  2</td>
+      <td>−196 ± 17*</td>
+      <td>−193 ±  12</td>
+      <td>−4.0 ± 2</td>
+      <td>3.4 ±  0.5</td>
+      <td>−50 ± 1.5</td>
+      <td>6 ±  2</td>
+      <td>−33 ± 5*</td>
+    </tr>
+    <tr>
+      <td>Cultured at 7% O2</td>
+      <td>−42.9 ± 1.5</td>
+      <td>3.5 ±  0.5</td>
+      <td>−57 ±  3</td>
+      <td>7 ±  2</td>
+      <td>−162 ±  12</td>
+      <td colspan="2"></td>
+      <td colspan="10">N.D.</td>
+    </tr>
+    <tr>
+      <td>Lowering O2 7% to 1.5%</td>
+      <td>−49.5 ± 1.0</td>
+      <td>3.2 ±  0.8</td>
+      <td>−69 ±  2</td>
+      <td>7 ±  2</td>
+      <td>−267 ±  18</td>
+      <td colspan="2"></td>
+      <td colspan="10">N.D.</td>
+    </tr>
+  </tbody>
+</table>
+
+### The SUMO pathway regulates CGN INa
 
 Previously, we demonstrated that SUMO introduced in the recording pipette, or washed past excised inside-out membrane patches, decreased IDR in hippocampal neurons (Plant et al., 2011) and suppressed IKso in CGN (Plant et al., 2012) due to SUMOylation of their pore-forming channel α-subunits, KV2.1 and K2P1, respectively. Moreover, we found that the enzymes that mature, activate, and conjugate SUMO to the channels reside on the cytosolic face of the plasma membrane in tissue culture cells and neurons (Plant et al., 2010, 2011, 2012). Here, seeking evidence for regulation of INa by the SUMO pathway, we delivered 100 pm SUMO1 into CGN via the patch-pipette, a concentration that produces maximal effects on the K+ channels. We observed SUMO-induced changes in INa like those produced by acute hypoxia: peak INa increased by ~76% and V½ and SSI were left-shifted by −13 ± 1 mV and −10 ± 3 mV, respectively (Figure 1c,d and Table 1). Also like hypoxia, SUMO1 did not change the kinetics of recovery from fast inactivation (Figure 1—figure supplement 1).
 
@@ -49,77 +200,210 @@ Because SUMO1 increased INa, we anticipated that conditions favoring lysis of SU
 
 The full excursion in V½ between SUMOylating and deSUMOylating conditions was 26.5 ± 3.0 mV (Figure 1d and Table 1). Supporting the notion that rapid changes in INa were due to shifts in the conductance-voltage (G-V) relationship, rather than changes in the number of channels on the surface passing current or unitary channel conductance, maximal currents at 0 mV, a voltage where G-V relationships were saturated under all test conditions (Figure 1b and d), were not significantly different for CGN at 21% O2 with the three pipette solutions (i.e. control, SUMO1, or SENP1) or on acute exposure to 5% O2 (Table 1). Indicating that the SUMO pathway exerted tonic control over INa under normoxic conditions, CGN studied with control pipette solution rested midway between the V½ extremes. Shifts in V½ were not associated with changes in the slope of the G-V relationship (k, Table 1).
 
-## NaV1.2 channels conduct the portion of CGN INa responsive to hypoxia and the SUMO pathway
+### NaV1.2 channels conduct the portion of CGN INa responsive to hypoxia and the SUMO pathway
 
 INa is passed mainly by NaV1.2 in rat CGN with smaller contributions by other channel isoforms, NaV1.2 >> NaV1.6 >> NaV1.3 and NaV1.1 (Schaller and Caldwell, 2003; Shah et al., 2001). In keeping with this expression pattern, 250 nm CnTX, a toxin that blocks NaV1.2 ~100-fold more effectively than NaV1.6 (Wilson et al., 2011), inhibited ~90% of INa at −20 mV in CGN (Figure 1e). When CGN were subjected to acute hypoxia, or SUMO1 was applied in the pipette, CnTX still blocked over 90% of INa, indicating that NaV1.2 remained the primary contributor to Na+ current under these conditions (Figure 1f). In contrast, the residual current after CnTX blockade was insensitive to acute hypoxia, SUMO1 and SENP1 (Figure 1g), suggesting that other NaV channels did not contribute significantly to the hypoxic response.
 
 Supporting the notion that most of the residual current is passed by NaV1.6, 50 nm 4,9 anhydro-tetrodotoxin (AnTTX), a toxin that blocks NaV1.6 ~150-fold more effectively than NaV1.2 (Rosker et al., 2007), inhibited ~10% of INa under control conditions and >90% of the current remaining after CnTX application (Figure 1e,f). Moreover, with SENP1 in the pipette, the fraction of INa blocked by CnTX was decreased and suppression by AnTTX was increased (Figure 1h), the expected response if deSUMOylation decreased the activity of NaV1.2 channels so that NaV1.6 channels passed a larger fraction of the current. When combined, CnTX and AnTTX blocked >95% of INa in all CGN studied. Taken together, the toxin data are consistent with the conclusion that hypoxia, SUMO1 and SENP1 act to alter the activity of native NaV1.2 channels in CGN.
 
-## Interaction of native NaV1.2 and SUMO1 at the CGN surface increases with hypoxia
+### Interaction of native NaV1.2 and SUMO1 at the CGN surface increases with hypoxia
 
-To confirm the association of native Na
+To confirm the association of native NaV1.2 and SUMO1 at the rat CGN surface we employed amFRET (Figure 2a–c), a method we used previously to demonstrate SUMOylation of native K+ channel α-subunits at the plasma membrane in rat hippocampal neurons and CGN (Plant et al., 2011, 2012). Whereas conventional confocal microscopy identifies two proteins as co-localized in the X-Y plane when they are separated by up to 200 nm, and is more accurately an indication of proximity, FRET reports on short distances between fluorophores (1–10 nm) that are indicative of molecular interaction. Here, NaV1.2 and SUMO1 were labeled with specific primary antibodies and visualized with secondary antibodies carrying donor and acceptor probes, respectively, after neurons were fixed under normoxic or hypoxic conditions.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/20054/elife-20054-fig2-v2.jpg)
 
-**Figure 2.:** V1.2 assembles with native SUMO1 at the surface in rat CGN.The association of native NaV1.2 and SUMO1 in CGN was studied by amFRET and STORM per the Materials and methods. Data are mean ± S.E.M. The scale bar represents 5 µm. (a) Representative photomontage of amFRET of NaV1.2 and SUMO in cells exposed to normoxia, using Alexa Fluor 488 and Alexa Fluor 594-labeled secondary antibodies to anti-NaV1.2 and anti-SUMO1. The four smaller images show NaV1.2 (donor, top left), SUMO1 (acceptor, top middle), the acceptor after photobleaching (BLEACH, bottom right), and FRET (bottom left, FRET efficiency indicated in pseudo-colored scale); the calculated FRET ratio in voxels after acceptor photobleaching was 0.15 ± 0.01 (n = 10 neurons on six coverslips). The large panel is an overlay of the donor and resultant FRET. (b) Representative photomontage of amFRET of NaV1.2 and SUMO in cells exposed to hypoxia (1% O2), using the identical approach and image layout as in panel a showing a calculated FRET ratio after acceptor photobleaching of 0.28 ± 0.05 (n = 8 neurons on five coverslips). (c) Histogram showing a four-fold increase in the voxels with NaV1.2 demonstrating FRET from ambient conditions (7.8 ± 2.3%) with hypoxia (29.6 ± 7.6%, n = 8 on five coverslips); * indicates p<0.001. (d) Composite scatterplot of fluorophore localizations obtained with STORM imaging. Maximum z-projections of scatterplots of fluorophore events from Alexa 568-labeled anti-SUMO1 antibodies (red), Alexa 647-labeled anti-NaV1.2 antibodies, and Alexa 488-tagged streptavidin bound to extracellular membrane proteins are superimposed. Pixels are 20 nm square. (e) Mask of 20 nm square voxels in which fluorophore events from anti-SUMO1, anti-NaV1.2 and streptavidin co-localize for exemplar neurons (n = 5).DOI: http://dx.doi.org/10.7554/eLife.20054.006
+**Figure 2.:** The association of native NaV1.2 and SUMO1 in CGN was studied by amFRET and STORM per the Materials and methods. Data are mean ± S.E.M. The scale bar represents 5 µm. (a) Representative photomontage of amFRET of NaV1.2 and SUMO in cells exposed to normoxia, using Alexa Fluor 488 and Alexa Fluor 594-labeled secondary antibodies to anti-NaV1.2 and anti-SUMO1. The four smaller images show NaV1.2 (donor, top left), SUMO1 (acceptor, top middle), the acceptor after photobleaching (BLEACH, bottom right), and FRET (bottom left, FRET efficiency indicated in pseudo-colored scale); the calculated FRET ratio in voxels after acceptor photobleaching was 0.15 ± 0.01 (n = 10 neurons on six coverslips). The large panel is an overlay of the donor and resultant FRET. (b) Representative photomontage of amFRET of NaV1.2 and SUMO in cells exposed to hypoxia (1% O2), using the identical approach and image layout as in panel a showing a calculated FRET ratio after acceptor photobleaching of 0.28 ± 0.05 (n = 8 neurons on five coverslips). (c) Histogram showing a four-fold increase in the voxels with NaV1.2 demonstrating FRET from ambient conditions (7.8 ± 2.3%) with hypoxia (29.6 ± 7.6%, n = 8 on five coverslips); * indicates p<0.001. (d) Composite scatterplot of fluorophore localizations obtained with STORM imaging. Maximum z-projections of scatterplots of fluorophore events from Alexa 568-labeled anti-SUMO1 antibodies (red), Alexa 647-labeled anti-NaV1.2 antibodies, and Alexa 488-tagged streptavidin bound to extracellular membrane proteins are superimposed. Pixels are 20 nm square. (e) Mask of 20 nm square voxels in which fluorophore events from anti-SUMO1, anti-NaV1.2 and streptavidin co-localize for exemplar neurons (n = 5).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/20054/elife-20054-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** V1.2 and GAD67 in CGN.Native protein amFRET was performed between NaV1.2 (green) and GAD67 (red) in ambient O2 as described in Figure 2 and the Materials and methods. Negligible FRET was observed. GAD67 was detected with a secondary antibody labeled with Alexa 594 (acceptor) and NaV1.2 with Alexa 488 (donor).DOI: http://dx.doi.org/10.7554/eLife.20054.007
+**Figure 2—figure supplement 1.:** Native protein amFRET was performed between NaV1.2 (green) and GAD67 (red) in ambient O2 as described in Figure 2 and the Materials and methods. Negligible FRET was observed. GAD67 was detected with a secondary antibody labeled with Alexa 594 (acceptor) and NaV1.2 with Alexa 488 (donor).
 
 Many voxels exhibiting NaV1.2 immunoreactivity (donor) showed an increase in fluorescence following bleaching of the acceptor (SUMO), demonstrating FRET between the fluorophores (Figure 2a–c). Thus, in ambient O2, 7.8 ± 2.3% of NaV1.2 voxels showed FRET (Figure 2a, n = 10 neurons), whereas in neurons exposed to 1% O2 for 5 min, the percentage of voxels showing FRET increased ~4-fold to 29.6 ± 7.6% (Figure 2b, n = 8 neurons). Supporting specificity of signals generated between NaV1.2 and SUMO1, no FRET was observed between NaV1.2 and GAD67, an abundant cytosolic protein (Figure 2—figure supplement 1).
 
 Because the CGN nucleus occupies much of the intracellular volume of the soma, its separation from the plasma membrane is often uncertain. To demonstrate directly that NaV1.2 was interacting with SUMO1 at the neuronal surface, we tagged the extracellular portions of plasma membrane proteins with biotin to allow visualization with Alexa488-streptavidin and imaged NaV1.2 and SUMO1 with Alexa Fluor 647 and Alexa Fluor 568 labeled secondary antibodies, respectively. Using STORM, a technique that offers a resolution in the X-Y plane of ≤20 nm, we localized single molecules of the three fluorophores (Figure 2c) and then identified voxels in which single fluorescent events from all three fluorophores were observed (Figure 2d). Triple co-localization delineated the circumference of the neuronal soma (n = 5), consistent with plasma membrane localization of SUMOylated NaV1.2, as predicted by the electrophysiological studies.
 
-## CGN cultured at 7% O2
+### CGN cultured at 7% O2
 
-The neuronal response to acute hypoxia is often studied in cells cultured at ambient levels of oxygen. However, the baseline O
+The neuronal response to acute hypoxia is often studied in cells cultured at ambient levels of oxygen. However, the baseline O2 level in mammalian brain tissue has been estimated to be as low as ~7% under normal, healthy conditions and to drop to under 2% with ischemia (Ponce et al., 2012; Lyons et al., 2016). Therefore, we sought to reevaluate INa responses at O2 concentrations more reflective of in vivo conditions. The responses of INa to acute hypoxia, SUMO and SENP were studied at lower O2 concentrations as follows (Figure 3, Table 1, and Supplementary file 1b). First, rat CGN were confirmed to tolerate long-term culture in 7% O2, as we previously observed for rat hippocampal neurons (Shelat et al., 2013). Next, CGN cultured for 7–10 days at 7% O2 were evaluated at 7% O2 and then on exposure to 1.5% O2; the decrease in O2 led to an acute increase in mean peak INa of ~65% and, starting from a baseline for V½ of −42 ± 1.5 mV and −57 ± 3 mV, V½ and SSI were left-shifted by −8 ± 2 mV and −11 ± 3 mV, respectively. Similarly, SUMO1 increased INa in CGN cultured at 7% O2 by ~68%, in association with left-shifts in V½ and SSI of − 8 ± 1.5 mV and −12 ± 3 mV, respectively, while SENP1 suppressed INa by ~70% and right-shifted V½ and SSI by 9 ± 1 mV and 8 ± 2 mV, respectively. As observed when CGN were cultured in ambient O2, the increase in INa induced by SUMO1 when cells were incubated at 7% O2 was not further augmented when O2 was decreased to 1.5% nor could subsequent exposure to 1.5% O2 overcome suppression of INa by SENP1. Finally, like neurons cultured in ambient O2, blockade studies with CnTX and AnTTX supported the identification of NaV1.2 as the channel passing hypoxia-responsive INa in CGN cultured at 7% O2, and the proposal that NaV1.6 is responsible for the residual current that was insensitive to hypoxia, SUMO1 or SENP1 (Figure 3e–g).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/20054/elife-20054-fig3-v2.jpg)
 
-**Figure 3.:** 2 after culturing at 7% augments I.NaI in rat CGN was studied following 5–7 days in culture at 7% ONa2 by whole-cell patch clamp, as per Figure 1. Normalized activation (Act) and steady-state inactivation (SSI) relationships were obtained and fit as described in the Materials and methods. Measured values are noted in the text and listed in Supplementary file 1b. Cells were studied with a control solution (black), 100 pm SUMO1 (red), or 250 pm SENP1 (blue) in the recording pipette. Sensitivity to CnTx and AnTTX was assessed as per Figure 1. Data are mean ± S.E.M. for six cells per group. Scale bars are 150 pA/pF and 5 ms. (a) Left, example traces showing I at −20 mV increased when perfusate at 7% ONa2 (black) was exchanged with a hypoxic solution at 1.5% O2 (green dashes). Right, the time-course for changes in peak current in response to decreased O2 from 7 to 1.5%, normalized to the maximal current for each cell studied. (b) Hypoxic solution (green dashes) left shifted the V of ½I from control (black) for both Act (solid) and SSI (open). (Nac) Left, SUMO1 in the pipette (red) increased I and no further augmentation was observed by subsequent hypoxia (red dashes). Right, SENP1 in the pipette (blue) decreased NaI and suppressed the response to hypoxia (blue dashes). Dotted black lines indicate the mean peak values obtained at 7% ONa2 in a. (d) SUMO1 left shifted the V of Act (red triangle) and SSI (open red triangle). The relationships were then insensitive to hypoxia (Act, red down triangle; SSI, open red down triangle). SENP1 right shifted the ½V of Act (blue triangle) and SSI (open blue triangle) and currents were then insensitive to hypoxia. Dashed black lines indicate mean peak values with control solutions from ½b. (e) Left; I studied at 7% ONa2 then with toxins in the bath. Right; mean normalized peak current histograms showing 89 ± 1.2% inhibition by CnTx, 12 ± 2% inhibition by AnTTX and 99 ± 0.8% inhibition by both toxins (black bars). These ratios indicate that the relative contribution of NaV1.2 and NaV1.6 to I is not altered when cells are cultured at 7% ONa2. (f) Mean normalized peak I histograms. Left; 91 ± 1% inhibition by CnTx and 10 ± 1% inhibition by AnTTX with a drop to 1.5% ONa2 for 60 s (green). Middle; 90 ± 2% inhibition by CnTx and 9 ± 2% inhibition by AnTTX with 100 pm SUMO1 in the pipette (red). When SENP1 was included in the recording pipette (blue), I was inhibited by 73 ± 3% by CnTx, 38 ± 8% by AnTTX and 95 ± 2% by both toxins consistent with the passage of much of the remaining current by NaNaV1.6. (g) Mean normalized peak current histograms show that the I remaining after inhibition of NaNaV1.2 by CnTx did not respond to acute hypoxia at 1.5% O2 (green), SUMO1 (red), or SENP1 (blue).DOI: http://dx.doi.org/10.7554/eLife.20054.008
+**Figure 3.:** INa in rat CGN was studied following 5–7 days in culture at 7% O2 by whole-cell patch clamp, as per Figure 1. Normalized activation (Act) and steady-state inactivation (SSI) relationships were obtained and fit as described in the Materials and methods. Measured values are noted in the text and listed in Supplementary file 1b. Cells were studied with a control solution (black), 100 pm SUMO1 (red), or 250 pm SENP1 (blue) in the recording pipette. Sensitivity to CnTx and AnTTX was assessed as per Figure 1. Data are mean ± S.E.M. for six cells per group. Scale bars are 150 pA/pF and 5 ms. (a) Left, example traces showing INa at −20 mV increased when perfusate at 7% O2 (black) was exchanged with a hypoxic solution at 1.5% O2 (green dashes). Right, the time-course for changes in peak current in response to decreased O2 from 7 to 1.5%, normalized to the maximal current for each cell studied. (b) Hypoxic solution (green dashes) left shifted the V½ of INa from control (black) for both Act (solid) and SSI (open). (c) Left, SUMO1 in the pipette (red) increased INa and no further augmentation was observed by subsequent hypoxia (red dashes). Right, SENP1 in the pipette (blue) decreased INa and suppressed the response to hypoxia (blue dashes). Dotted black lines indicate the mean peak values obtained at 7% O2 in a. (d) SUMO1 left shifted the V½ of Act (red triangle) and SSI (open red triangle). The relationships were then insensitive to hypoxia (Act, red down triangle; SSI, open red down triangle). SENP1 right shifted the V½ of Act (blue triangle) and SSI (open blue triangle) and currents were then insensitive to hypoxia. Dashed black lines indicate mean peak values with control solutions from b. (e) Left; INa studied at 7% O2 then with toxins in the bath. Right; mean normalized peak current histograms showing 89 ± 1.2% inhibition by CnTx, 12 ± 2% inhibition by AnTTX and 99 ± 0.8% inhibition by both toxins (black bars). These ratios indicate that the relative contribution of NaV1.2 and NaV1.6 to INa is not altered when cells are cultured at 7% O2. (f) Mean normalized peak INa histograms. Left; 91 ± 1% inhibition by CnTx and 10 ± 1% inhibition by AnTTX with a drop to 1.5% O2 for 60 s (green). Middle; 90 ± 2% inhibition by CnTx and 9 ± 2% inhibition by AnTTX with 100 pm SUMO1 in the pipette (red). When SENP1 was included in the recording pipette (blue), INa was inhibited by 73 ± 3% by CnTx, 38 ± 8% by AnTTX and 95 ± 2% by both toxins consistent with the passage of much of the remaining current by NaV1.6. (g) Mean normalized peak current histograms show that the INa remaining after inhibition of NaV1.2 by CnTx did not respond to acute hypoxia at 1.5% O2 (green), SUMO1 (red), or SENP1 (blue).
 
-## SUMOylation of NaV1.2 on Lys38 is necessary and sufficient for the hypoxic response
+### SUMOylation of NaV1.2 on Lys38 is necessary and sufficient for the hypoxic response
 
 One Lys in the 2005 amino acid, pore-forming NaV1.2 channel α-subunit was shown to be subject to SUMOylation, and to mediate the response to acute hypoxic challenge, using heterologous expression of wild type and mutant proteins in CHO cells. This reconstitution strategy, previously exploited to study SUMOylation of K+ channels, included here co-expression of the wild type human NaV β1 subunit in all cells unless otherwise noted.
 
-First, we sought to confirm the association of Na
+First, we sought to confirm the association of NaV1.2 and SUMO1 at the CHO cell surface by measuring FRET between subunits tagged with Yellow and Cyan FPs (YFP and CFP), a method we used before with K+ channels (Rajan et al., 2005; Plant et al., 2010, 2011, 2012). Tagging NaV1.2 with CFP (CFP-NaV1.2) did not alter the biophysical properties of the channel nor its responsiveness to hypoxia, SUMO1, or SENP1 (Supplementary file 1a). As we previously reported, tagging the N-terminus of SUMO1 with FPs does not alter their operation, and this was observed here with NaV1.2 (Rajan et al., 2005; Plant et al., 2010, 2011, 2012). Both YFP-SUMO1 and CFP-NaV1.2 were visualized at the plasma membrane when expressed together in CHO cells (Figure 4a); of note, unlike CGN, the volume of cytosol in CHO cells allows ready visualization of the cell surface in regions distinct from the nucleus. Consistent with SUMOylation of CFP-NaV1.2, the time course of CFP decay with continuous illumination, as assessed by the time constant (τ) for donor photobleaching, was prolonged from under 10 s to ~30 s when the channel was expressed with YFP-SUMO1 (Figure 4b,c). CFP-NaV1.2 also showed FRET with YFP-Ubc9, the E2 SUMO-conjugating enzyme that binds to its targets only when the Lys residues subject to modification are present (Plant et al., 2011). In contrast, FRET was not observed on expression of CFP-NaV1.2 with linkage-incompetent YFP-SUMO195 (a variant that lacks the terminal Gly-Gly motif present in mature SUMO197) or soluble YFP; in both cases, τ was less than 10 s.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/20054/elife-20054-fig4-v2.jpg)
 
-**Figure 4.:** V1.2 and SUMO1 at the cell surface requires Lys38.Rat NaV1.2 was expressed in CHO cells with the β1 subunit and studied in live cells per Materials and methods. FRET was assessed by measuring the time constant (τ) for CFP-photobleaching (donor) in the presence of YFP (acceptor) from 3 regions of 5–7 cells per group. Data are mean τ ± S.E.M. (a) CFP-NaV1.2 subunits (blue) and YFP-SUMO1 (yellow) reach the cell surface. Scale bar is 10 µm. (b) Exemplar photobleaching studies show the decay of ﬂuorescence intensity for single cells expressing CFP-NaV1.2 (open) or CFP-NaV1.2-Lys38Gln (solid) with YFP-SUMO1 ﬁt by an exponential to give τ. (c) FRET shows the assembly of CFP-NaV1.2 (grey bars) with YFP-SUMO1 and YFP-Ubc9 (τ = 29 ± 2* and 25 ± 3*, respectively) but not with linkage-incompetent YFP-SUMO195 or free YFP (τ = 6 ± 3 and 7 ± 3, respectively). In contrast, CFP-NaV1.2-Lys38Gln (white bars) did not show FRET with YFP-SUMO1, YFP-SUMO195, YFP-Ubc9 or free YFP (τ = 6 ± 3; 5.5 ± 3.5; 7.5 ± 3.5; and 6 ± 4, respectively). Significant changes in τ compared to free YFP are indicated (*, p<0.001).DOI: http://dx.doi.org/10.7554/eLife.20054.009
+**Figure 4.:** Rat NaV1.2 was expressed in CHO cells with the β1 subunit and studied in live cells per Materials and methods. FRET was assessed by measuring the time constant (τ) for CFP-photobleaching (donor) in the presence of YFP (acceptor) from 3 regions of 5–7 cells per group. Data are mean τ ± S.E.M. (a) CFP-NaV1.2 subunits (blue) and YFP-SUMO1 (yellow) reach the cell surface. Scale bar is 10 µm. (b) Exemplar photobleaching studies show the decay of ﬂuorescence intensity for single cells expressing CFP-NaV1.2 (open) or CFP-NaV1.2-Lys38Gln (solid) with YFP-SUMO1 ﬁt by an exponential to give τ. (c) FRET shows the assembly of CFP-NaV1.2 (grey bars) with YFP-SUMO1 and YFP-Ubc9 (τ = 29 ± 2* and 25 ± 3*, respectively) but not with linkage-incompetent YFP-SUMO195 or free YFP (τ = 6 ± 3 and 7 ± 3, respectively). In contrast, CFP-NaV1.2-Lys38Gln (white bars) did not show FRET with YFP-SUMO1, YFP-SUMO195, YFP-Ubc9 or free YFP (τ = 6 ± 3; 5.5 ± 3.5; 7.5 ± 3.5; and 6 ± 4, respectively). Significant changes in τ compared to free YFP are indicated (*, p<0.001).
 
 FRET was used to demonstrate that Lys38 in the cytoplasmic N-terminus of the NaV1.2 α-subunit was necessary and sufficient to mediate SUMOylation of the channel complex. Among 133 Lys residues in the NaV1.2 α-subunit, a sensitive predictive tool, GPS-SUMO (Zhao et al., 2014), identified Lys38 as one of just five potential SUMOylation sites. Mutating Lys38 to Gln, removing the side chain subject to SUMO modification, produced CFP-NaV1.2-Lys38Gln subunits that reached the CHO cell surface like wild type CFP-NaV1.2. However, in contrast with CFP-NaV1.2, the mutant failed to exhibit FRET with either YFP-SUMO1 or YFP-Ubc9. The absence of FRET supported the conclusion that Lys38 was required for SUMOylation of the NaV1.2 channel complex and suggested that no other Lys in the α subunit or the β1 subunit was subject to SUMOylation.
 
-Next, we observed that acute hypoxia altered the function of wild type Na
+Next, we observed that acute hypoxia altered the function of wild type NaV1.2 channels expressed in CHO cells in the same manner as seen for native INa in CGN (Figure 5a and Table 1). Thus, in ambient O2 the biophysical attributes of NaV1.2 channels in CHO cells were like those of CGN INa, showing similar values for V½ and SSI. Moreover, NaV1.2 channels responded to acute hypoxia with an increase in mean peak current-density of ~70% in less than 40 s in association with leftward shifts in V½ and SSI of −11 ± 1 mV and −13 ± 2 mV, respectively. NaV1.2 channels in CHO cells also responded to SUMO1 and SENP1 like native INa. Thus, SUMO1 in the pipette increased current-density and left-shifted V½ and SSI to the same extent as acute hypoxia and SENP1 decreased current-density and right-shifted the V½ and SSI from baseline by ~75%. The total excursion in V½ for NaV1.2 channels in CHO cells between these treatments favoring SUMOylation and deSUMOylation was 27.5 ± 1.0 mV, as it was for CGN INa. Moreover, the conclusion drawn from native INa that shifts in the G-V relationships were the primary determinants of acute changes in current density were supported as well for NaV1.2 channels in CHO cells by measurement of similar maximal currents at 0 mV for the various test conditions. Also as observed for CGN INa, acute hypoxia did not further augment NaV1.2 channel currents first increased by SUMO1 nor did it abrogate prior SENP1-mediated current suppression.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/20054/elife-20054-fig5-v2.jpg)
 
-**Figure 5.:** V1.2 on Lys38.Rat NaV1.2 was expressed in CHO cells with the β1 subunit and studied under normoxic and hypoxic conditions with control solution (black), 100 pm SUMO1 (red) or 250 pm SENP1 (blue) in the recording pipette, as indicated. Data are mean ± S.E.M. for 10 to 15 cells per group. Measured values are noted in the text and listed in Table 1. Scale bars are 5 ms and 50 pA/pF in a and 10 pA/pF in b. (a) Left, example traces show hypoxia (green dashes) increased NaV1.2 channel current from control conditions (black). SUMO1 in the pipette (red) increased the current to the same level and precluded further augmentation by hypoxia (red dashes). In contrast, SENP1 (blue) decreased the current by ~75% and suppressed sensitivity to hypoxia (blue dashes). Dotted black lines represent mean peak current under control conditions. Right, both Act (solid) and SSI (open) for NaV1.2 were left shifted when cells with hypoxia (green) or SUMO1 in the pipette (red) and were right-shifted with SENP in the pipette (blue). Hypoxia caused no further change to Act or SSI with SUMO1 or SENP1 in the pipette (dashed lines). (b) Left, NaV1.2-Lys38Gln channels passed smaller currents (black) that were not increased by hypoxia (green) or by SUMO1 in the pipette (red) or decreased by SENP1 (blue) in the pipette. Right, the normalized Act and SSI relationships for NaV1.2-Lys38Gln channels (black) are right-shifted compared to wild type NaV1.2 channels and do not change when cells are exposed to hypoxia (green) or are studied with SUMO1 (red) or SENP (blue) in the pipette.DOI: http://dx.doi.org/10.7554/eLife.20054.010
+**Figure 5.:** Rat NaV1.2 was expressed in CHO cells with the β1 subunit and studied under normoxic and hypoxic conditions with control solution (black), 100 pm SUMO1 (red) or 250 pm SENP1 (blue) in the recording pipette, as indicated. Data are mean ± S.E.M. for 10 to 15 cells per group. Measured values are noted in the text and listed in Table 1. Scale bars are 5 ms and 50 pA/pF in a and 10 pA/pF in b. (a) Left, example traces show hypoxia (green dashes) increased NaV1.2 channel current from control conditions (black). SUMO1 in the pipette (red) increased the current to the same level and precluded further augmentation by hypoxia (red dashes). In contrast, SENP1 (blue) decreased the current by ~75% and suppressed sensitivity to hypoxia (blue dashes). Dotted black lines represent mean peak current under control conditions. Right, both Act (solid) and SSI (open) for NaV1.2 were left shifted when cells with hypoxia (green) or SUMO1 in the pipette (red) and were right-shifted with SENP in the pipette (blue). Hypoxia caused no further change to Act or SSI with SUMO1 or SENP1 in the pipette (dashed lines). (b) Left, NaV1.2-Lys38Gln channels passed smaller currents (black) that were not increased by hypoxia (green) or by SUMO1 in the pipette (red) or decreased by SENP1 (blue) in the pipette. Right, the normalized Act and SSI relationships for NaV1.2-Lys38Gln channels (black) are right-shifted compared to wild type NaV1.2 channels and do not change when cells are exposed to hypoxia (green) or are studied with SUMO1 (red) or SENP (blue) in the pipette.
 
 Supporting the essential role of SUMOylation of Lys38 in the hypoxic response, expression of NaV1.2-Lys38Gln channels produced currents that were insensitive to acute hypoxia, SUMO1, and SENP1 (Figure 5b and Table 1). The current-density, V½ and SSI values for NaV1.2-Lys38Gln channels under all three conditions were like those measured for wild-type NaV1.2 channels subjected to deSUMOylation by SENP1. Like CGN INa and wild-type NaV1.2 in CHO cells, NaV1.2-Lys38Gln channels recovered from fast inactivation in a fashion that was insensitive to acute hypoxia, SUMO1, or SENP1 (Figure 1—figure supplement 1).
 
 Of note, the β1 subunit did not appear to play a role in the hypoxic response of Nav1.2 via Lys38 or to the regulation of channel activity by the SUMO pathway. Expression of the α subunits without β1 did not modify the responses of NaV1.2 channels to acute hypoxia, SUMO1, and SENP1 nor did it alter insensitivity of NaV1.2-Lys38Gln channels to the same three manipulations (Supplementary file 1c).
 
-Lys38 is in a sequence motif, Pro-Lys38-Gln-Glu (
+Lys38 is in a sequence motif, Pro-Lys38-Gln-Glu (Figure 6a), which is conserved near the N-terminus of NaV1.2 from zebrafish to humans. To verify SUMOylation of Lys38 in the motif, we used a mass spectrometry (MS) strategy that we previously developed for K+ channels (Plant et al., 2010, 2011). SUMO197T95K, a mutant that leaves the Gly-Gly remnant of SUMO1 on the ε-amino group of target Lys after trypsin treatment was expressed in bacteria with rat NaV1.2 residues 1–125 bearing a His6 affinity tag and the mammalian E1 and E2 SUMOylation enzymes. Affinity purification followed by SDS-PAGE revealed a band of the expected apparent mass for the NaV1.2-SUMO adduct (~40 kDa) that was excised, treated with trypsin and subjected to MS yielding sequence coverage for NaV1.21-125 of 85% (Figure 6b). The spectrum included a peak at the predicted size for a fragment carrying Lys38 linked via its side-chain to the Gly-Gly SUMO1 remnant, and MS-MS sequencing identified it uniquely to be the three-ended product (Figure 6c,d).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/20054/elife-20054-fig6-v2.jpg)
 
-**Figure 6.:** V1.2-Lys38.For MS analysis, rat NaV1.21-125 and SUMO197T95K were expressed with mouse SUMOylation enzymes in E. coli, purified, subjected to trypsin cleavage, and analyzed by MS as described in the Materials and methods. (a) Left, schematic showing the product NaV1.21–125-SUMO (box) and the trypsin fragment of NaV1.2 carrying the Gly-Gly remnant of SUMO197T95K. Right, The sequence of the three-ended fragment with Lys38 and the Gly-Gly remnant. (b) A Coomassie blue-stained SDS–PAGE gel of the purified products. Unmodified NaV1.21–125 (NaV) migrates at ~25 kDa (star). Expression of SUMO197T95K (SUMO) and the SUMO enzymes yields SUMO on the overexpressed target as well as native proteins (Plant et al., 2011; Uchimura et al., 2004). The NaV1.21–125-SUMO conjugate migrates at ~40 kDa (arrow). Molecular weight markers are shown (MW). (c) Fourier transform mass spectrum after trypsin digestion of NaV1.21–125-SUMO expressed as relative abundance against time of capture. The predicted fragment of 422.27 Da was captured as a single peak at 24.62 min. (d) Tandem MS sequence analysis of the fragment with Lys38 and the Gly-Gly remnant indicating b and y ion species as annotated in a.DOI: http://dx.doi.org/10.7554/eLife.20054.011
+**Figure 6.:** For MS analysis, rat NaV1.21-125 and SUMO197T95K were expressed with mouse SUMOylation enzymes in E. coli, purified, subjected to trypsin cleavage, and analyzed by MS as described in the Materials and methods. (a) Left, schematic showing the product NaV1.21–125-SUMO (box) and the trypsin fragment of NaV1.2 carrying the Gly-Gly remnant of SUMO197T95K. Right, The sequence of the three-ended fragment with Lys38 and the Gly-Gly remnant. (b) A Coomassie blue-stained SDS–PAGE gel of the purified products. Unmodified NaV1.21–125 (NaV) migrates at ~25 kDa (star). Expression of SUMO197T95K (SUMO) and the SUMO enzymes yields SUMO on the overexpressed target as well as native proteins (Plant et al., 2011; Uchimura et al., 2004). The NaV1.21–125-SUMO conjugate migrates at ~40 kDa (arrow). Molecular weight markers are shown (MW). (c) Fourier transform mass spectrum after trypsin digestion of NaV1.21–125-SUMO expressed as relative abundance against time of capture. The predicted fragment of 422.27 Da was captured as a single peak at 24.62 min. (d) Tandem MS sequence analysis of the fragment with Lys38 and the Gly-Gly remnant indicating b and y ion species as annotated in a.
 
-## Hypoxia induces rapid monoSUMOylation of NaV1.2 channels
+### Hypoxia induces rapid monoSUMOylation of NaV1.2 channels
 
-To determine the stoichiometry of SUMOylation, we counted the number of SUMO1 monomers on individual Na
+To determine the stoichiometry of SUMOylation, we counted the number of SUMO1 monomers on individual NaV1.2 channels at the surface of live CHO cells using simultaneous, two-color TIRF microscopy and photobleaching, as before with K+ channels (Plant et al., 2010, 2011, 2012). When CFP-NaV1.2 and SUMO1 tagged with mCherry (mCherry-SUMO1) were co-expressed, particles containing both CFP-NaV1.2 and mCherry-SUMO1 were observed at the plasma membrane. In response to photobleaching, these particles showed only a single bleaching step for each fluorophore under both normoxic and hypoxic conditions, indicating the presence of one fluorescent subunit of each type (Figure 7a,b and Table 2). Acute hypoxia increased the fraction of CFP-NaV1.2 particles with mCherry-SUMO1 ~4-fold (from 20% to 80%), as expected due to hypoxia-induced SUMOylation (Figure 7b). In contrast, SENP1 in the recording pipette suppressed both baseline and hypoxia-induced SUMOylation of CFP-NaV1.2 by mCherry-SUMO1 so that colocalized particles were decreased (Figure 7c). Similarly, expression of CFP-NaV1.2-Lys38Gln and mCherry-SUMO1 rarely yielded colocalization of the fluorophores in both ambient O2 and hypoxic conditions (Figure 7d). Because channels are formed with one NaV1.2 subunit, observing only a single mCherry-SUMO1 in particles as well confirmed three conclusions: only Lys38 on the α-subunit was SUMOylated; polySUMO1 chains were not formed; and, the β1 subunit was not SUMOylated.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/20054/elife-20054-fig7-v2.jpg)
 
-**Figure 7.:** V1.2 channel.Single CFP-NaV1.2 or CFP-NaV1.2-Lys38Gln (K38Q, blue) channels and SUMO1 tagged with mCherry (m-SUMO1, red) were studied in CHO cells by TIRFM as described in the Materials and methods. Data represent 5–8 cells in each case and biophysical parameters and single particles statistical analyses are summarized in Supplementary file 1a and Table 2, respectively. (a) Left, single co-localized particles with both mCherry and CFP fluorescence were observed at the surface of cells expressing NaV1.2 and SUMO1. Simultaneous continuous photobleaching time courses revealed complexes to have one subunit of each type. (b) Histogram of photobleaching steps showing that hypoxia increased single mCherry-SUMO1 (red) subunits at the cell surface co-localized with NaV1.2 channels (blue), without a change in subunit stoichiometry (Table 2). (c) Histogram of photobleaching steps showing that SENP suppresses hypoxia-induced increase in single mCherry-SUMO1 (red) subunits at the cell surface co-localized with NaV1.2 (blue). (d) Histogram of photobleaching steps showing that hypoxia does not increase in single mCherry-SUMO1 (red) subunits at the cell surface co-localized with NaV1.2-Lys38Gln channels (blue).DOI: http://dx.doi.org/10.7554/eLife.20054.012
+**Figure 7.:** Single CFP-NaV1.2 or CFP-NaV1.2-Lys38Gln (K38Q, blue) channels and SUMO1 tagged with mCherry (m-SUMO1, red) were studied in CHO cells by TIRFM as described in the Materials and methods. Data represent 5–8 cells in each case and biophysical parameters and single particles statistical analyses are summarized in Supplementary file 1a and Table 2, respectively. (a) Left, single co-localized particles with both mCherry and CFP fluorescence were observed at the surface of cells expressing NaV1.2 and SUMO1. Simultaneous continuous photobleaching time courses revealed complexes to have one subunit of each type. (b) Histogram of photobleaching steps showing that hypoxia increased single mCherry-SUMO1 (red) subunits at the cell surface co-localized with NaV1.2 channels (blue), without a change in subunit stoichiometry (Table 2). (c) Histogram of photobleaching steps showing that SENP suppresses hypoxia-induced increase in single mCherry-SUMO1 (red) subunits at the cell surface co-localized with NaV1.2 (blue). (d) Histogram of photobleaching steps showing that hypoxia does not increase in single mCherry-SUMO1 (red) subunits at the cell surface co-localized with NaV1.2-Lys38Gln channels (blue).
 
-Supporting the conclusion that changes in O
+**Table 2.**
+ Co-localization of SUMO1 with NaV1.2 in response to hypoxia. CFP-tagged NaV1.2 or NaV1.2-Lys38Gln subunits were expressed in CHO cells with mCherry-SUMO1 (m-SUMO1) and studied by TIRFM and whole-cell patch-clamp (Figures 7 and 8). The number of photobleaching steps observed for each fluorophore in each single fluorescent spot reports on the stoichiometry of the channel complex. NaV1.2 channels are monomers and show no more than one bleaching step when tagged with CFP (Figure 7). No more than one bleaching steps was observed for mCherry-tagged SUMO1 subunits (free or co-localized with the channel). A 1:1 stoichiometry is maintained when cells are exposed to hypoxia. SUMO1 was not observed to co-localize with NaV1.2-Lys38Gln channels. The surface density of subunits was quantified as the mean of four 100 by 100 pixel regions for 6–10 cells per group. Exposure to hypoxia increased the number of SUMO1 monomers observed at the cell surface within 40 s and almost all were co-localized with NaV1.2. Whole-cell, peak current-density, measured at −20 mV, increased by ~70% within 40 s of hypoxia and remained stable during 2 min of hypoxia and 20 min of recovery at ambient levels of O2. Pulse protocols to determine the activation (Act) and steady-state inactivation (SSI) V1/2 values (the voltage evoking half-maximal conductance) were obtained as described in the Materials and methods and the manuscript Table. Data are means ± S.E.M. for 5 to 8 cells per group; * indicates p<0.05 compared with cells studied in ambient O2 for each channel type studied.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subunits expressed</th>
+      <th colspan="7">CFP-NaV1.2 + m-SUMO1</th>
+      <th colspan="3">CFP-NaV1.2-Lys38Gln + m-SUMO1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Condition</td>
+      <td>Ambient O2</td>
+      <td>Hypoxia  40 s</td>
+      <td>Hypoxia  2 min</td>
+      <td>Recovery  5 min</td>
+      <td>Recovery  10 min</td>
+      <td>Recovery  20 min</td>
+      <td>SENP1</td>
+      <td>Ambient O2</td>
+      <td>Hypoxia  40 s</td>
+      <td>Recovery 5 min</td>
+    </tr>
+    <tr>
+      <td>Single particle stoichiometry SUMO1: NaV1.2</td>
+      <td>1: 1</td>
+      <td>ND</td>
+      <td>1: 1</td>
+      <td>1: 1</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>0: 1</td>
+      <td>0: 1</td>
+      <td>0: 1</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Free CFP-NaV1.2 pixels / µm2</td>
+      <td>340 ± 16</td>
+      <td>139 ± 8</td>
+      <td>137 ± 11</td>
+      <td>134 ± 7</td>
+      <td>131 ± 6</td>
+      <td>129 ± 8</td>
+      <td>290 ± 10</td>
+      <td>309 + 12</td>
+      <td>303 + 15</td>
+      <td>305 + 12</td>
+    </tr>
+    <tr>
+      <td>Free mSUMO1 pixels / µm2</td>
+      <td>4 ± 5</td>
+      <td>12 ± 2</td>
+      <td>11 ± 3</td>
+      <td>10 ± 7</td>
+      <td>8 ± 6</td>
+      <td>8 ± 5</td>
+      <td>3 + 2</td>
+      <td>5 + 2</td>
+      <td>4 + 2</td>
+      <td>4 + 1</td>
+    </tr>
+    <tr>
+      <td>Co-localized pixels / µm2</td>
+      <td>67 ± 6</td>
+      <td>268 ± 12</td>
+      <td>265 ± 12</td>
+      <td>260 ± 11</td>
+      <td>245 ± 14</td>
+      <td>239 ± 8</td>
+      <td>3 + 2</td>
+      <td>2 + 1</td>
+      <td>2 + 2</td>
+      <td>1 + 2</td>
+    </tr>
+    <tr>
+      <td>Total CFP-NaV1.2 pixels / µm2</td>
+      <td>407 ± 10</td>
+      <td>407 ± 12</td>
+      <td>402 ± 10</td>
+      <td>394 ± 15</td>
+      <td>376 ± 14</td>
+      <td>362 ± 10</td>
+      <td>293 ± 8</td>
+      <td>311 ± 12</td>
+      <td>305 ± 16</td>
+      <td>306 ± 14</td>
+    </tr>
+    <tr>
+      <td>Act V½ (mV)</td>
+      <td>−22 ± 1.2</td>
+      <td>−31 ± 1.7</td>
+      <td>−32 ± 2</td>
+      <td>−29 + 2</td>
+      <td>−35 ± 1.4</td>
+      <td>−33 + 2</td>
+      <td>−3.5 ± 1.8</td>
+      <td>−4 + 2</td>
+      <td>−3.7 + 2.5</td>
+      <td>−3.1 ± 1.2</td>
+    </tr>
+    <tr>
+      <td>SSI V½ (mV)</td>
+      <td>−61 ± 2</td>
+      <td>−70 ± 3</td>
+      <td>−69 ± 4</td>
+      <td>−71 + 3</td>
+      <td>−70 ± 2</td>
+      <td>−68 + 3</td>
+      <td>−44 ± 1.5</td>
+      <td>−51 + 1.5</td>
+      <td>−53 + 3</td>
+      <td>−48 ± 2</td>
+    </tr>
+    <tr>
+      <td>IPeak (pA/pF)</td>
+      <td>−120 ± 8</td>
+      <td>−198 ± 10</td>
+      <td>−199 ± 13</td>
+      <td>−200 ± 14</td>
+      <td>−201 ± 13</td>
+      <td>−189 ± 17</td>
+      <td>−33 ± 12</td>
+      <td>−39 ± 13</td>
+      <td>−37 ± 9</td>
+      <td>−39 ± 14</td>
+    </tr>
+  </tbody>
+</table>
+
+Supporting the conclusion that changes in O2 lead to rapid SUMOylation of NaV1.2, acute hypoxia recruited mCherry-SUMO1 to the cell surface only at sites where CFP-NaV1.2 channels were already present and without altering the number of channels at the surface (Figure 8a,b and Table 2). Here, surface density and localization of CFP-NaV1.2 and mCherry-SUMO1 subunits were assessed using TIRF and pixel-by-pixel analysis at room temperature (Manders et al., 1993), a method we have applied to quantify the surface density and co-assembly of cardiac K+ channel α and β subunits (Plant et al., 2014). In ambient O2, just 16% of channel pixels were localized with mCherry-SUMO1 (67 ± 6/µm2) and 84% were observed to be unmodified (340 ± 16/µm2). After 2 min of hypoxia, an additional 50% of channel pixels were localized with mCherry-SUMO1, increasing the total to 65% (265 ± 12/µm2) with 35% unmodified by the tagged SUMO (137 ± 8/µm2). Although hypoxia increased the surface density of mCherry-SUMO1 associated with CFP-NaV1.2 by ~4-fold, there was no change in the level of CFP-NaV1.2 (407/µm2 versus 402/µm2) and free mCherry-SUMO1 on the surface remained at low levels (4/µm2 versus 12/µm2). During 20 min of post-hypoxia recovery in ambient O2, the total number of CFP-NaV1.2 surface particles decreased by ~10% without a change in the fraction of channels localized with mCherry-SUMO1 (Table 2). Because current density decreased by just ~2% over the same period, we suspected that the decrease in fluorescent NaV1.2 particles on the surface was due to CFP photobleaching, in-keeping with the idea that neither acute hypoxia-induced SUMOylation nor re-oxygenation led to net addition or removal of CFP-NaV1.2 channels from the CHO cell plasma membrane; a conclusion supported as well by the similar size of CFP-NaV1.2 currents recorded at 0 mV in ambient O2 and 5% O2 (Supplementary file 1a).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/20054/elife-20054-fig8-v2.jpg)
 
-**Figure 8.:** V1.2 and current density proceed concurrently.CFP-NaV1.2 or CFP-NaV1.2-Lys38Gln (K38Q, blue) channels and SUMO1 tagged with mCherry (m-SUMO1, red) were studied in CHO cells by TIRFM and pixel-by-pixel analysis performed as described in the Materials and methods. Briefly, images were captured at 5 s intervals and data for each fluorophore saved as separate stacks; the background was subtracted and processed for misalignment in an identical manner. Manders’ coefficients were assessed post-hoc for 3–5 regions per cell. Co-localization was defined as the presence of both fluorophores at more than 30% of the maximum fluorescence level recorded in that stack (and their overlap is represented in the images as white pixels). The time-course of hypoxic modulation of NaV1.2 current in moving from O2 of 21% to 5% was studied with steps from –100 mV to −20 mV every 10 s and normalized to cell capacitance (pA/pF). Data represent 5–8 cells and biophysical parameters and single particles statistical analyses are summarized in Supplementary file 1a and Table 2, respectively. (a) Hypoxia rapidly recruits SUMO1 to the cell surface at sites with NaV1.2 channels. The images show that the surface density of m-SUMO1 (top, left) is low compared to CFP-NaV1.2 (top, middle) with little co-localization (top, right) in ambient O2. After 40 s of hypoxia, rapid recruitment of SUMO1 (bottom, left) to the surface is observed to be at sites with NaV1.2 channels (bottom, left). Surface levels of NaV1.2 were not observed to change when cells were exposed to hypoxia (bottom, middle). (b) Histogram of surface density summarizing seven cells studied as described in a and Table 2. The density of pixels per µm2 with SUMO1 alone (red) was 4 ± 5, with NaV1.2 alone (blue) was 340 ± 16, and with both subunits was 67 ± 6 (red/blue hatch). Hypoxia increased co-localization to 268 ± 12 pixels per µm2 and decreased the density of free NaV1.2 channels (139 ± 8) without altering the density of free SUMO1 (12 ± 2). (c) The hypoxia-induced increase in the surface density of single fluorescent particles with both SUMO1 and NaV1.2 was not observed in cells with 100 nm SENP1 in the pipette. (d) Hypoxia-induced increase in the surface density of SUMO1 was not observed in cells expressing CFP-tagged NaV1.2-Lys38Gln (K38Q). (e) The time-course for hypoxia-induced increase co-localization of NaV1.2 and SUMO1 (Manders’ coefficient, solid circle) and current-density (pA/pF, open circle) were coincident. The mean Manders’ coefficient of 0.22 ± 0.08 measured in ambient O2 increased to 0.72 ± 0.12 in less than 40 s of acute hypoxia. The current density increased from −120 ± 8 to 198 ± 10 pA/pF. Increases in the Manders’ coefficient and current density were unchanged 10 min after cells were restored to ambient O2. (f) Hypoxia-induced increase in the surface density of colocalized SUMO1 and NaV1.2 was also observed when cells were treated with 5 µm tetrodotoxin (TTX), a level that blocked over 95% of the Na+ current.DOI: http://dx.doi.org/10.7554/eLife.20054.014
+**Figure 8.:** CFP-NaV1.2 or CFP-NaV1.2-Lys38Gln (K38Q, blue) channels and SUMO1 tagged with mCherry (m-SUMO1, red) were studied in CHO cells by TIRFM and pixel-by-pixel analysis performed as described in the Materials and methods. Briefly, images were captured at 5 s intervals and data for each fluorophore saved as separate stacks; the background was subtracted and processed for misalignment in an identical manner. Manders’ coefficients were assessed post-hoc for 3–5 regions per cell. Co-localization was defined as the presence of both fluorophores at more than 30% of the maximum fluorescence level recorded in that stack (and their overlap is represented in the images as white pixels). The time-course of hypoxic modulation of NaV1.2 current in moving from O2 of 21% to 5% was studied with steps from –100 mV to −20 mV every 10 s and normalized to cell capacitance (pA/pF). Data represent 5–8 cells and biophysical parameters and single particles statistical analyses are summarized in Supplementary file 1a and Table 2, respectively. (a) Hypoxia rapidly recruits SUMO1 to the cell surface at sites with NaV1.2 channels. The images show that the surface density of m-SUMO1 (top, left) is low compared to CFP-NaV1.2 (top, middle) with little co-localization (top, right) in ambient O2. After 40 s of hypoxia, rapid recruitment of SUMO1 (bottom, left) to the surface is observed to be at sites with NaV1.2 channels (bottom, left). Surface levels of NaV1.2 were not observed to change when cells were exposed to hypoxia (bottom, middle). (b) Histogram of surface density summarizing seven cells studied as described in a and Table 2. The density of pixels per µm2 with SUMO1 alone (red) was 4 ± 5, with NaV1.2 alone (blue) was 340 ± 16, and with both subunits was 67 ± 6 (red/blue hatch). Hypoxia increased co-localization to 268 ± 12 pixels per µm2 and decreased the density of free NaV1.2 channels (139 ± 8) without altering the density of free SUMO1 (12 ± 2). (c) The hypoxia-induced increase in the surface density of single fluorescent particles with both SUMO1 and NaV1.2 was not observed in cells with 100 nm SENP1 in the pipette. (d) Hypoxia-induced increase in the surface density of SUMO1 was not observed in cells expressing CFP-tagged NaV1.2-Lys38Gln (K38Q). (e) The time-course for hypoxia-induced increase co-localization of NaV1.2 and SUMO1 (Manders’ coefficient, solid circle) and current-density (pA/pF, open circle) were coincident. The mean Manders’ coefficient of 0.22 ± 0.08 measured in ambient O2 increased to 0.72 ± 0.12 in less than 40 s of acute hypoxia. The current density increased from −120 ± 8 to 198 ± 10 pA/pF. Increases in the Manders’ coefficient and current density were unchanged 10 min after cells were restored to ambient O2. (f) Hypoxia-induced increase in the surface density of colocalized SUMO1 and NaV1.2 was also observed when cells were treated with 5 µm tetrodotoxin (TTX), a level that blocked over 95% of the Na+ current.
 
 Corroborating a role for SUMOylation of NaV1.2 in the response to hypoxia, 100 nm SENP1 suppressed recruitment of mCherry-SUMO1 to the cell surface (3 ± 2/ µm2), and abolished changes in peak current density, V½ and SSI in response to hypoxia (Figure 8c and Table 2). Similarly, expression of CFP-NaV1.2-Lys38Gln channels (309 ± 12/ µm2) eliminated recruitment of mCherry-SUMO1 to the cell surface (4 ± 2/ µm2) and showed no changes in biophysical parameters in response to hypoxia (Figure 8d and Table 2).
 
@@ -149,23 +433,23 @@ Despite extensive discovery efforts, medications offering broad neuroprotective 
 
 ## Materials and methods
 
-## Molecular biology and reagents
+### Molecular biology and reagents
 
 Rat NaV1.2 (NM_012647.1) was handled in pcDNA1, as previously described (Plant et al., 2006). Human SUMO1101 (BCOO5899) was amplified from a brain cDNA library (Clontech, Mountain View, CA) and inserted into pMAX as described before (Rajan et al., 2005). Sequences encoding mCherry or CFP were inserted as described (Plant et al., 2010) at the N-terminus of SUMO1 or NaV1.2 respectively. Mutations were introduced with Pfu Quikchange PCR (Agilent, Santa Clara, CA). Purified SUMO197 and SENP1 were purchased from Boston Biochem (Cambridge, MA). SUMO197-T95K (introducing a diagnostic trypsin cleavage site) was produced as a His-tagged protein fused to the TEV cleavage domain in pET28a using the bacterial strain BL21 (DE3) and isolated by routine procedures cleaving the His-tag with TEV Protease before dialysis against 140 mm KCl, 0.5 mm CaCl2, 5 mm HEPES, pH 7.4. Protein concentration was determined by BCA assay (Thermo Fisher, Waltham, MA). The sodium channel blockers, tetrodotoxin, 4–9-anhydrotetrodotoxin and µ-conotoxin-TIIIA were purchased from Tocris (Bristol, U.K.), Focus Biomolecules (Plymouth Meeting, PA) and CS Bio (Menlo Park, CA), respectively, and handled in buffers with 0.1% BSA.
 
-## Cell culture and heterologous expression
+### Cell culture and heterologous expression
 
 CHO-K1 cells (RRID: CVCL_0214) were purchased from ATCC, identity-authenticated by cytochrome oxidase one analysis, demonstrated to be mycoplasma free by Hoeschst DNA stain and agar by culture, and maintained in F12K medium supplemented with 10% FBS (ATCC, Manassas, VA). Plasmids were transfected into cells with Lipofectamine 2000 according to the manufacturer’s instructions (Thermo Fisher). Experiments were performed 36 to 48 hr post transfection at room temperature. The rat β1 accessory subunit was co-expressed with NaV1.2 subunits unless otherwise indicated. CGN were cultured from 6 to 8 day old Sprague-Dawley rat pups (Charles River, Wilmington, MA; RRID:RGD_734476) as previously described (Plant et al., 2002). Briefly, the cerebellum was isolated, cut into ~300 µm cubes, triturated with a fire-polished Pasteur pipette and incubated for 15 min at 37°C with 2.5 mg/ml trypsin in PBS. Digestion was halted by the addition of PBS containing 0.1 mg/ml soybean trypsin inhibitor, 2000 U/ml DNase I and 1 mm MgCl2. Cells were pelleted by centrifugation for 1 min at 100 g, resuspended in MEM supplemented with 10% FBS, 26 mm glucose, 19 mm KCl and 2 mm L-glutamine then seeded on poly-L-lysine–coated coverslips and incubated at 37°C in a humidified atmosphere containing 95% air (21% O2) and 5% CO2, or in a tri-gas incubator (Heracell, Thermo Fisher) set to 7% O2 and 5% CO2, as indicated. To minimize reoxygenation prior to the experiment, cells incubated at 7% O2 were transferred to the patch-clamp microscope in a sealed container equilibrated to 7% O2. After 48 hr, the medium was exchanged for MEM supplemented with 10% horse serum, 26 mm glucose, 19 mm KCl, 2 mm L-glutamine and 80 µm L-fluorodeoxyuridine to prevent the proliferation of non-neuronal cells. CGN were studied between days 7 and 10 in culture.
 
-## Electrophysiology
+### Electrophysiology
 
 INa and whole-cell NaV1.2 channel currents were recorded using an Axopatch 200B amplifier and pCLAMP software (Molecular Devices, Sunnyvale, CA) at filter and sampling frequencies of 10 and 50 kHz respectively. Cultured CGN or CHO cells were superfused with a solution comprising (in mm): NaCl 130, CsCl 4, CaCl2 2, MgCl2 1.2, glucose 5.5, HEPES 10 and, 100 µM CdCl2, a concentration previously shown to block >98% of voltage-gated calcium channel current in CGN (Pearson et al., 1993). The pH was adjusted to 7.4 with NaOH and HCl. Cells were studied at room temperature with borosilicate glass pipettes (Warner, Hamden, CT) with a resistance of 2–3 MΩ when filled with a solution comprising (in mm): CsCl 60, CsF 80, CaCl2 1, MgCl2 1, Na2ATP 5, EGTA 10, HEPES 10, pH 7.4 with CsOH. Pipettes were coated with Sylgard (Sigma-Aldrich, St. Louis, MI) prior to use. Capacitance artifacts were subtracted online, series resistance was compensated to 70% and cells with a series resistance of less than 10 MΩ were studied. Current-voltage relationships were evoked from a holding potential of −100 mV by 30 ms test pulses between −75 and 20 mV, in 5 mV increments. Steady-state inactivation was studied by holding cells at −100 mV and then comparing currents evoked by 30 ms test pulses between −110 mV and 0 mV to those evoked by a 50 ms prepulse to 0 ms. A 10-s interpulse interval was used in both cases. Normalized peak current values are plotted against prepulse potential (mV). A Boltzmann function, I = Imax/(1 + exp[V – V½/k]), where Imax is the maximum current and k is slope factor, was used to fit normalized activation-voltage relationships. Recovery from fast inactivation was studied by holding cells at −100 mV and comparing currents evoked by a pair of 30 ms test step to −20 mV separated by an interpulse interval that increased in duration by 30 ms increments per sweep. The time constant for recovery from inactivation (τRecovery) was obtained from mono-exponential fits of the normalized current amplitude to the recovery time using I = I0 + A(exp(t/τRecovery)), where A is the amplitude of components and t is time. Whole-cell currents were normalized to cell capacitance. Mean ± S.E.M. capacitance values were 6 ± 2 pF for CGN and 11.5 ± 2 pF for CHO cells.
 
-## Acute hypoxia for electrophysiology
+### Acute hypoxia for electrophysiology
 
 Acute hypoxia was achieved as described previously (Plant et al., 2002). Briefly, the cells were made hypoxic (5% or 1.5% O2 as indicated) by switching the perfusate with one that had been bubbled with nitrogen for at least 30 min prior to perfusion. Oxygen tension was measured at the cell by a polarized carbon fiber electrode; solution exchange occurred in less than 10 s.
 
-## Two-color TIRFM
+### Two-color TIRFM
 
 Single protein complexes at the surface of live CHO cells were identified using TIRFM as previously described (Plant et al., 2014). Cells were studied in a solution comprising (in mm): NaCl 130, KCl 4, MgCl2 1.2, CaCl2 2, HEPES 10, pH was adjusted to 7.4 with NaOH. The critical angle for TIRF was adjusted using a CellTIRF illuminator (Olympus, Waltham, MA) and a high numerical aperture apochromat objective (150x, 1.45 NA) mounted on an automated fluorescence microscope controlled by Metamorph software (Molecular Devices). For simultaneous illumination of two fluorophores, CellTIRF software (Olympus) was used to adjust the critical angle for each excitation wavelength to generate evanescent waves of equivalent depth (100 nm). mCherry was excited by a 561 nm laser line and CFP was excited a 445 nm laser line. When CFP was studied with mCherry the emitted light signals were split using a 520 nm dichroic mirror mounted in a DualView adapter (Photometrics, Tucson, AZ), and each wavelength was directed to one-half of an EM-CCD. The dichroic mirror was disengaged when single fluorophores were studied.
 
@@ -173,26 +457,26 @@ To assess stoichiometry, fluorophores were photobleached by continual excitation
 
 Manders’ coefficient of colocalization was assessed from live-cell simultaneous two-color TIRF images captured at 5 s intervals to minimize photobleaching. Data stacks were background subtracted and aligned for each fluorophore post-hoc, as above. Co-localization of partner pixels from the two stacks of images was defined as the presence of both fluorophores with at least 30% of maximum fluorescence levels recorded in that region of interest. Mean Manders’ coefficients were calculated for 3–5 separate 100 by 100 pixel regions of interest per cell.
 
-## amFRET immunocytochemistry and microscopy
+### amFRET immunocytochemistry and microscopy
 
 Double immunostaining for SUMO1 (RRID:AB_2198257) and NaV1.2 (RRID:AB_10673401), or the housekeeping gene, GAD67 (RRID:AB_2278725) was performed to allow measurement of FRET between secondary antibodies labeled with Alexa 488 and Alexa 594, employed as FRET donor and acceptor fluorophores, respectively (Plant et al., 2011). CGN were permeabilized with digitonin (20 mg/ml) in a HEPES-buffered solution matching the intracellular ionic composition containing EGTA (1 mm) and a cocktail of protease inhibitors (N-methylmaleimide, PMSF, aprotinin, leupeptin, antipain, and pepstatin A), and then fixed in 2% paraformaldehyde for 30 min. SUMO1 or GAD67 were detected with highly cross-adsorbed donkey anti-rabbit IgG (1 µg/ml, Thermo Fisher), labeled with Alexa 594 to act as the FRET acceptor. NaV1.2 antibody binding was detected with highly cross-adsorbed donkey anti-goat IgG (1 µg/ml, Thermo Fisher) labeled with Alexa 488 to act as a FRET donor. Neurons were exposed to hypoxia by overnight equilibration of dishes of HCO3-buffered saline matching the osmolality and ionic composition of the culture media in an environmental chamber (Coy Laboratory Products, Grass Lake, MI) with an atmosphere of 1% O2 and 5% CO2 at 37°C. Neurons on coverslips were immersed in the hypoxic buffer for 5 min and were then permeabilized and fixed in similarly equilibrated HCO3-buffered intracellular saline containing digitonin.
 
 For amFRET microscopy, neurons were imaged with a 60x, NA 1.40 oil objective on a Leica SP5 laser scanning confocal microscope with identical illumination acquisition settings across staining conditions. Sequential confocal images of Alexa 488 and Alexa 594 were obtained using laser lines at 488 nm and 546 nm, respectively. The Leica Acceptor Photobleaching Wizard was used to obtain pre-bleach images of donor (NaV1.2, Alexa 488) and acceptor (SUMO1 or GAD67, Alexa 594) intensities to create a region to bleach on the donor subunit image; to bleach the Alexa 594 fluorescence within the region (200 passes of full laser power); and to obtain post-bleaching images of Alexa 488 and Alexa 594 fluorescence. Image pairs demonstrating a focus shift between pre- and post-bleaching images were excluded. Twelve-bit raw confocal images were deconvolved using Huygens Deconvolution software (Scientific Volume Imaging, Hilversum, Netherlands) and Maximum Likelihood Estimation with a signal-to-noise ratio of 20. Using ImageJ, raw Alexa 488 images were de-noised, and FRET efficiency images within the bleaching regions created, on a voxel-by-voxel basis, by subtracting pre-bleach from post-bleach and then dividing the difference by the post-bleach intensity.
 
-## STORM immunostaining and imaging
+### STORM immunostaining and imaging
 
 Cells were first double-immunostained for SUMO1 and NaV1.2 using the same antibodies as above. Secondary antibodies against anti-SUMO1 and anti-NaV1.2 were labeled here with Alexa 568 and Alexa 647, respectively. For permeabilization, digitonin was replaced with saponin (0.01%), which was present in all buffers during staining. To label the plasma membrane, cells were incubated in saponin-free buffer for 2 hr to allow the lipid membrane to regain its integrity and then incubated with biotin (2 mM) for 30 min, followed by Alexa 488-labeled streptavidin (5 μg/ml; Thermo Fisher) for 1 hr all at room temperature.
 
 For microscopy, coverslips were mounted on slides in PBS containing cysteamine (MEA, 100 μM) and sealed with epoxy. Neurons were imaged on the stage of a Leica SR GSD 3D inverted microscope with a 160x, 1.43 NA objective. Fluorophores were sequentially excited, from red to blue, employing 642, 532, and 488 nm lasers, respectively, and individual fluorescent events imaged with an Andor iXon Ultra EMCCD over a 180 × 180 pixel region. For each fluorophore, images were collected at 56 Hz for at least 10 min. Image stacks were background subtracted and Gaussian blurred in FIJI (Schindelin et al., 2012), and reconstructed with the Thunderstorm Plug-in (Ovesný et al., 2014) to produce a list of fluorescent molecule localizations. Fluorescent events having X-Y uncertainty >40 nm or a Z uncertainty >400 nm were filtered out, and a 20-image stack of X-Y scatter plots to encompass a volume of 41 × 41 × 800 nm were produced for each fluorophore. Maximum Z-projections for each fluorophore were produced and overlaid and masks consisting of fluorescent events from all three fluorophores occurring in the same voxel were produced.
 
-## Live CHO cell FRET microscopy
+### Live CHO cell FRET microscopy
 
 Donor-decay time-course was studied as before (Plant et al., 2010), using an automated Olympus IX81 epi-fluorescence microscope. Cells were studied in a solution comprising (in mM): NaCl 130, KCl 4, MgCl2 1.2, CaCl2 2, HEPES 10, pH was adjusted to 7.4 with NaOH. CFP was excited at 458 nm and the emission collected through a 470–500 nm bandpass filter, YFP was excited at 514 nm and the emission collected through a 525–575 nm filter. Images were captured using a CCD camera controlled by Metamorph (Molecular Devices) and were analyzed with ImageJ.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Rat NaV1.2 N-terminal residues 1–125 were cloned into pET28a vector with six-His residues and a tobacco etch virus (TEV) cleavage site replacing the thrombin site and expressed in BL21(DE3) E. Coli with a vector carrying mouse E1 (as a linear fusion product of Aos1 and Uba2), E2 (Ubc-9) and SUMO11-97 with a T95K mutation so that trypsin digestion before MS leaves a Gly-Gly tag on the ε-amino group of target lysines as before (Plant et al., 2010). Protein was purified with Ni-NTA affinity columns to a yield of ~1 mg of NaV1.21-336–SUMO11-97T95K per 1 L media. In-gel protein trypsin digestion was performed after SDS-PAGE. Samples were analyzed with a Dionex Ultimate 3000 Nano-HPLC System (Sunnyvale, CA), Zorbax C18 trapping and analytical columns, and an LTQ-FT tandem MS instrument (Thermo Fisher) equipped with a nanospray source and a picotip nanospray needle (8 µm id tip; New Objectives, Woburn, MA) running Xcalibur software. Spectra were acquired using positive ion nano ESI mode with the FT-ICR acquiring precursor spectra from 250–1800 m/z at a resolution of 50000 at m/z 400. Tandem mass spectra were acquired in a data-dependent manner using the five most intense ions with charge states of +2 or higher from each FT-ICR MS scan to trigger the LTQ performance of collision-induced dissociation (CID) on each of the selected precursor ions using an activation Q of 0.25, a normalized collision energy of 35, and an activation time of 30 ms. The RAW data files from each run were processed with DTA supercharge to generate MGF peak list files and ReadW to produce binary mzXML files (http://tools.proteomecenter.org/software.php). MGF files were submitted to a Mascot sequence database (Matrix Science, Boston, MA) and mzXML files to the Sagen Research Sorcerer database. Searches were then run against a custom database created by adding the sequences of rat NaV1.2 and SUMO11-97T95K to the International Protein Index (IPI) - Human database version 3.33 (www.ebi.ac.uk). In each search, a peptide precursor mass tolerance of 5 ppm was used, allowing for modifications due to additions such as Gly-Gly (+114.04292, Th), up to three missed cleavages, and strict adherence to tryptic digestion rules. Search results were then loaded into Scaffold software (Proteome Software, Portland, OR) and peptides with scores of 95% confidence or better used to confirm peptide assignments. The LTQ was programmed to accumulate precursor masses of expected peptides and perform dedicated tandem MS of only those ions using the LC conditions above and a multi-event study consisting of single MS scans on the FT-ICR and up to three dedicated MS/MS experiments on the selected masses. Data obtained were extracted as above and subjected to searches and manual evaluation including assessment of molecular weight, spectral quality and consistency of peptides retention time in relation to unmodified versions of the peptide.
 
-## Data and statistical analysis
+### Data and statistical analysis
 
 Data were analyzed using pClamp, Origin and Excel software. Data were assessed for statistical differences between groups by one-way analysis of variance with Bonferroni post hoc analysis to test differences within pairs of group means for all data set with an F-value of p<0.05.

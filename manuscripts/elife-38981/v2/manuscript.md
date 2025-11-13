@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.38981.001 ComplexinII (CpxII) inhibits non-synchronized vesicle fusion, but the underlying mechanisms have remained unclear. Here, we provide evidence that the far C-terminal domain (CTD) of CpxII interferes with SNARE assembly, thereby arresting tonic exocytosis. Acute infusion of a CTD-derived peptide into mouse chromaffin cells enhances synchronous release by diminishing premature vesicle fusion like full-length CpxII, indicating a direct, inhibitory function of the CTD that sets the magnitude of the primed vesicle pool. We describe a high degree of structural similarity between the CpxII CTD and the SNAP25-SN1 domain (C-terminal half) and show that the CTD peptide lowers the rate of SDS-resistant SNARE complex formation in vitro. Moreover, corresponding CpxII:SNAP25 chimeras do restore complexin’s function and even ‘superclamp’ tonic secretion. Collectively, these results support a so far unrecognized clamping mechanism wherein the CpxII C-terminus hinders spontaneous SNARE complex assembly, enabling the build-up of a release-ready pool of vesicles for synchronized Ca 2+ -triggered exocytosis.
+ComplexinII (CpxII) inhibits non-synchronized vesicle fusion, but the underlying mechanisms have remained unclear. Here, we provide evidence that the far C-terminal domain (CTD) of CpxII interferes with SNARE assembly, thereby arresting tonic exocytosis. Acute infusion of a CTD-derived peptide into mouse chromaffin cells enhances synchronous release by diminishing premature vesicle fusion like full-length CpxII, indicating a direct, inhibitory function of the CTD that sets the magnitude of the primed vesicle pool. We describe a high degree of structural similarity between the CpxII CTD and the SNAP25-SN1 domain (C-terminal half) and show that the CTD peptide lowers the rate of SDS-resistant SNARE complex formation in vitro. Moreover, corresponding CpxII:SNAP25 chimeras do restore complexin’s function and even ‘superclamp’ tonic secretion. Collectively, these results support a so far unrecognized clamping mechanism wherein the CpxII C-terminus hinders spontaneous SNARE complex assembly, enabling the build-up of a release-ready pool of vesicles for synchronized Ca2+-triggered exocytosis.
 
 ## Introduction
 
@@ -35,27 +35,59 @@ Here, we set out to delineate the Cpx C-terminus action in vesicular release of 
 
 ## Results
 
-## The C-terminus of CpxII (amino acid 101–134) is rate-limiting for inhibition of vesicle fusion
+### The C-terminus of CpxII (amino acid 101–134) is rate-limiting for inhibition of vesicle fusion
 
 To probe the function of CpxII’s C-terminus in fast Ca2+-dependent exocytosis, we recorded membrane capacitance (CM) increase in response to photolytic Ca2+-uncaging (NP-EGTA) in cultured mouse chromaffin cells. Flash-induced changes in [Ca2+]i were monitored with a combination of calcium indicators (Fura-2 and Furaptra). Our previous results have implicated the CpxII C-terminus (amino acid 73–134) in suppression of tonic release (Dhara et al., 2014). To narrow down the region responsible for inhibitory function of CpxII, we generated a truncated variant (Cpx1-100) lacking the last 34 amino acids of the protein, which contains a glutamate cluster (putative SytI interaction site, [Tokumaru et al., 2008]) and an amphipathic helical region (Snead et al., 2014) (Figure 1A,B). Viral expression of full-length CpxII in CpxII knock out (CpxII ko) cells reconstituted synchronous release and induced a pronounced exocytotic burst (EB) comprising two kinetically distinct components - the readily releasable pool [RRP] and the slowly releasable pool [SRP] (Figure 1C,D). In contrast, the Cpx1-100 mutant largely failed to restore either component of the EB when compared to CpxII ko responses (Figure 1C,D). However, the slow kinetic rates of RRP and SRP (determined from the detailed fitting of the CM responses) and longer exocytotic delay seen with CpxII ko cells were fully reversed with expression of Cpx1-100 mutant (Figure 1E), confirming our previous observation that the N-terminal domains of CpxII are responsible for accelerating the kinetics of synchronous secretion (Dhara et al., 2014). Furthermore, Cpx1-100 failed to suppress tonic secretion at submicromolar [Ca2+]i as observed in CpxII ko cells (Figure 1F,G). Thus, the last 34 amino acids at the C-terminal end of CpxII are instrumental in arresting premature fusion at submicromolar [Ca2+]i, thereby establishing a pool of release ready vesicles that is rapidly secreted upon the Ca2+-trigger. Expression of CpxII in wt cells significantly diminished premature secretion and strongly boosted the EB component upon Ca2+-uncaging (Figure 1—figure supplement 1). In contrast, expression of Cpx1-100 in wt cells enhanced tonic release and consequently decreased the subsequent synchronous secretion response (Figure 1—figure supplement 1). This illustrates a dominant negative effect of the Cpx1-100 mutant, which binds to productive SNARE complexes and out-competes the endogenous protein for control of tonic secretion. To substantiate these findings, we used simultaneous CM and carbon fiber amperometry recordings that allow for independent measurements of secretion from the same cell. Again, expression of CpxII in wt cells suppressed tonic exocytosis, whereas Cpx1-100 mutant increased both CM responses and amperometric event frequency beyond the level of wt cells (Figure 1—figure supplement 2A,B). These results demonstrate that the CpxII C-terminus is able to ‘clamp’ high rates of tonic vesicle fusion. The close correlation between ΔCM and event frequency (slope: wt 0.17 events/fF, r2 0.82; wt + CpxII 0.16, r2 0.79; wt + Cpx1-100 0.16, r2 0.77) further showed that the observed CM changes were due to exocytosis of catecholamine-containing granules. Thus, expression of neither wt nor the mutant Cpx variant affected the mode of exocytosis (kiss and run vs full fusion).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic view on CpxII subdomains (numbers indicate amino acid positions within CpxII). (B) Primary sequence of the CpxII C-terminal region (residue 101–134) highlighting its structural characteristics (glutamate cluster, red; heptad repeat of hydrophobic residues, blue). (C) Mean [Ca2+]i levels (top) and corresponding CM signals (bottom) of CpxII ko cells (n = 25) and those expressing CpxII (n = 32) or the mutant Cpx1-100 (n = 29). Flash is at t = 0.5 s (arrow). (D) Amplitudes of RRP and SRP, the rate of sustained release (SR; femtofarad/second) determined for CpxII ko (red), CpxII ko + CpxII (blue), CpxII ko+Cpx1-100 (orange). (E) The time constants for the EB components (τRRP and τSRP), and the exocytotic delay. (F) Mean tonic CM traces of the cells shown in (C) before the triggering flash response (arrow). (G) The rate of tonic exocytosis (determined at similar [Ca2+]i: in nM, CpxII ko: 714 ± 32; CpxII ko + CpxII: 639 ± 23; CpxII ko+ CpxII1-100: 628 ± 30) is significantly reduced with CpxII but not with its mutant. ANOVA followed by Tukey-Kramer post-hoc test. *p<0.05; **p<0.01; ***p<0.001. Error bars indicate mean ± SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Mean [Ca2+]i levels (top) and corresponding CM signals (bottom) of wt cells (n = 17) and those over expressing CpxII (n = 14) or the mutant Cpx1-100 (n = 16). Flash is at t = 0.5 s (arrow). (B) Amplitudes of RRP and SRP, the rate of sustained release (SR; femtofarad/second) determined for wt (black), CpxII (blue), Cpx1-100 (orange). (C) The time constants for the EB components (τRRP and τSRP), and the exocytotic delay. (D) Mean tonic CM traces of the cells shown in (A) during infusion of similar submicromolar [Ca2+]i. (E) Rate of tonic exocytosis determined at similar [Ca2+]i (in nM, wt: 552 ± 25; wt + CpxII: 541 ± 17; wt+ Cpx1-100: 533 ± 38) before the flash. ANOVA followed by Tukey-Kramer post-hoc test. *p<0.05; **p<0.01; ***p<0.001. Error bars indicate mean ± SEM.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Mean CM response upon intracellular infusion of 19 µM free Ca2+ containing solution in wt cells (black) and wt cells expressing either full-length CpxII (blue) or Cpx1-100 (orange). (B) Corresponding changes in total ΔCM (top, after 120 s) and amperometric event frequency (bottom) averaged from the indicated number of cells. (C) Cumulative frequency distributions for the indicated parameters of the main amperometric spike. (D) Expression of CpxII (blue) but not Cpx1-100(orange) increases the prespike duration and charge when compared with controls (black). (E) Exemplary prespike signals (area highlighted in white indicate the prespike phase) for wt cells and those expressing CpxII. Fluctuations of transmitter release during the prespike phase are reduced with CpxII expression. Deflections of the current derivative (red trace) beyond the threshold (dashed lines = ±4 xSD of base line noise) were counted as fluctuations (blue trace). The displayed exemplary events have similar total charge and 50–90% rise time (wt: 328 fC, 240 µs; wt + CpxII: 349 fC, 280 µs), indicating that the different fluctuation behavior is not due to diffusional smearing. (F) Cell-weighted averages of prespike duration and charge indicate significant alterations in fusion pore dynamics with CpxII expression. (G, H) Fluctuation frequency (upward and downward deflections) and rms noise of the current derivative during the prespike are reduced with expression of CpxII but not Cpx1-100. Cell-weighted average values are given as mean of median determined from the parameter’s frequency distribution for each cell. Data are collected from cells/events measured for wt (18/2011), wt + CpxII (18/1085), wt+Cpx1-100 (18/3492). Only cells with >20 events were considered. Data are represented as mean ± SEM. ANOVA followed by Tukey-Kramer post-hoc test. **p<0.01, ***p<0.001.
 
 Detailed analyses of single amperometric events report distinct kinetic phases of cargo release from individual chromaffin granules, consisting of an initial slow release phase through a nascent pore (prespike) followed by a phase of rapid release reflecting bulk catecholamine discharge through a widened pore (main spike) (Bruns and Jahn, 1995; Chow et al., 1992). In good agreement with our previous findings (Dhara et al., 2014), expression of CpxII in wt cells prolonged the prespike duration, and increased prespike charge (Figure 1—figure supplement 2D–F), but left the main spike properties unaltered (Figure 1—figure supplement 2C). Prespike signals are characterized by fast fluctuations in the current trace that clearly exceed the baseline noise and report transient changes in neurotransmitter flux through the early fusion pore (Kesavan et al., 2007). These fluctuations likely reflect unsuccessful attempts of the SNARE machinery to widen the initial fusion pore as they are susceptible to diminished force transfer by the SNARE proteins onto the merging membranes (Dhara et al., 2016; Kesavan et al., 2007). Expression of CpxII similarly suppressed the current fluctuations and reduced the rms noise (a threshold independent parameter) during the prespike signal (Figure 1—figure supplement 2E), consistent with the view that CpxII directly acts on SNAREs and suggesting that its inhibitory action is continued even after the initiation of fusion.
 
 Unlike full-length CpxII, the CpxII1-100 mutant protein failed to alter fusion pore dynamics. Neither the rate of fusion pore expansion nor its current fluctuations were significantly affected when compared with control (Figure 1—figure supplement 2F–H), indicating that the CpxII CTD actively controls both the magnitude of tonic secretion, as well as the kinetics of fusion pore expansion.
 
-## Acute inhibitory effects of the CpxII C-terminus
+### Acute inhibitory effects of the CpxII C-terminus
 
 Given the strong phenotype of the truncation mutant (Cpx1-100), we next generated oligopeptides, representing the CpxII CTD (amino acids 101–134, CTD-peptide) and a control peptide with a scrambled sequence (scr-peptide, see Materials and methods). Compared with the scr-peptide, acute infusion of the CTD-peptide (10 µM) via the patch pipette into wt cells enhanced both, RRP and SRP components of the EB without changing kinetics of release in Ca2+-uncaging experiments (Figure 2A–C). Furthermore, the CTD-peptide arrested tonic exocytosis at submicromolar [Ca2+]i (Figure 2D,E) and also inhibited high rates of tonic release seen with 19 µM [Ca2+]i (Figure 2E,F). Moreover, like viral expression of full-length CpxII, infusion of the CTD-peptide in wt cells also lengthened the prespike duration as depicted for exemplary amperometric events (Figure 2G) compared to the scr-peptide. Cell-weighted averages and cumulative frequency distributions confirmed that CTD-peptide increases prespike charge and dampens fusion pore fluctuations, without altering the properties of main amperometric spikes (Figure 2H, Figure 2—figure supplement 1). Of note, in a subset of recordings the initial CM increase of CTD peptide infused cells was similar to that of controls, before it rapidly declined to a slower, sustained increase in CM (Figure 2E, inset). Based on an estimated time constant of around 60 s for peptide infusion into chromaffin cells (Raccess11.8 ± 0.2 MΩ; CM 4.0 ± 0.1 pF; [Pusch and Neher, 1988]), this behavior suggests that saturating concentrations for inhibitory peptide action are readily reached after establishment of whole-cell configuration. Since in vitro single vesicle-vesicle fusion assays have shown that Cpx suppresses spontaneous fusion at concentrations as low as 0.5 µM (Lai et al., 2014), it is likely that the pipette concentration of CTD-peptide (10 µM) used in our experiments exceeds the required effective concentration of CpxII-CTD for inhibiting vesicle fusion. Collectively, these results show that the isolated CpxII CTD mimics the phenotype observed with CpxII overexpression in wt cells (compare with Figure 1—figure supplement 1 and Figure 1—figure supplement 2). They suggest that the CpxII CTD (despite the presence of endogenous CpxII) is a rate limiting factor for suppression of premature release (thereby defining the magnitude of Ca2+-triggered synchronous exocytosis) and decelerates neurotransmitter discharge from fusing vesicles.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig2-v2.jpg)
+
+**Figure 2.:** (A) Mean [Ca2+]i levels (top) and corresponding capacitance responses (bottom) of wt cells infused with either CpxII C-terminal peptide (wt + CTD pep, n = 29) or scrambled peptide (wt + scr pep, n = 29). Flash is at t = 0.5 s (arrow). (B) RRP and SRP size are significantly enhanced with CTD-pep infusion. (C) Neither the CTD-pep nor its scramble variant alters the kinetics of stimulus-secretion coupling (τRRP, τSRP and delay). (D) Mean tonic CM increase of the cells shown in A (left panel) before the UV-flash (arrow). Mean rate of ΔCM over 120 s (right panel, Mann Whitney U-test versus control). (E–H) CpxII-CTD is essential but not sufficient for clamping tonic release and early fusion pore. (E) The CTD-pep reduces tonic secretion (upon infusion with 19 µM [Ca2+]i) in wt cells, but fails to do so in CpxII ko cells (t = 0 is the time point about 10–15 s after establishing the whole-cell configuration). The inset displays the initial CM response of wt cells infused with scr-pep (black) or CTD-pep (blue) at the expanded time scale. (F) Total ΔCM after 120 s (upper panel) and amperometric event frequency (lower panel, numbers indicate averaged cells). (G) Exemplary single vesicular release events (with similar charge and 50–90% rise time) illustrate the CTD-mediated increase in prespike duration only in wt cells (colour code as in E). (H) CTD-pep infusion significantly reduces fusion pore dynamics in wt cells but not in CpxII ko cells. Values are given as mean of median determined from the parameter’s frequency distribution for each cell. Data are averaged from cells/events measured for wt + scr pep (14/1531), wt + CTD pep (19/889), CpxII ko+ scr pep (15/2692) and CpxII ko+ CTD pep (18/3052) (>20 events/cell). Error bars indicate mean ± SEM. ANOVA followed by Tukey-Kramer post-hoc test. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cumulative frequency distribution plots of prespike parameters indicate a strongly hindered fusion pore dynamics with the CTD peptide in wt cells (blue) but not in CpxII ko cells (green). Wt + scrambled pep (black) and CpxIIko + scrambled pep (red) served as controls. Corresponding data of the cell weighted averages shown in Figure 2H. (B, C) Properties of amperometric events during spike phase displayed as cumulative frequency distribution and as cell weighted averages for wt + scr pep (black, n = 14), wt + CTD pep (blue, n = 19) CpxII ko +scr pep (red, n = 15) and CpxII ko + CTD pep (green, n = 18). Error bars indicate mean ± SEM. ANOVA followed by Tukey-Kramer post-hoc test.
+
 In contrast to wt cells, infusion of the CTD-peptide in CpxII ko cells was unable to inhibit chromaffin granule exocytosis and failed to slow down the expansion of the initial fusion pore (Figure 2E–H), showing that the observed phenotype in wt cells is not simply a consequence of off-target effects with peptide infusion. These results rather suggest that other domains of CpxII either directly cooperate with the CpxII CTD or are required to bring the exocytotic machinery into a state wherein CpxII CTD can exert its inhibitory action. In any case, a physical continuity through the length of CpxII does not seem to be obligatory for the CTD function.
 
-## N-terminal domains of CpxII cooperate with its far CTD in controlling exocytosis
+### N-terminal domains of CpxII cooperate with its far CTD in controlling exocytosis
 
 To test whether separated CpxII domains can act in tandem to establish a fully functional ensemble, we virally expressed the N-terminal region of the protein (Cpx1-100) in CpxII ko cells and infused the CTD-peptide via patch pipette (Figure 3A). Strikingly, infusion of CTD-peptide into Cpx1-100 expressing CpxII ko cells promoted Ca2+-evoked synchronous exocytosis almost like full-length CpxII expression. The scr-peptide, instead, did not restore synchronous release in Cpx1-100 expressing cells (Figure 3B,C). The kinetic properties of the EB components remained unaffected for all tested groups (Figure 3D). Moreover, the Cpx1-100 mutant together with the CTD-peptide inhibited tonic secretion as effectively as CpxII expression (Figure 3E–H), thus allowing for full restoration of the synchronous release component (Figure 3B). Analyses of single amperometric events revealed that the C-terminal peptide complements Cpx1-100 mutant to decelerate the rate of initial fusion pore expansion and suppressed the fusion pore jitter like full-length CpxII (Figure 3I) without changing the properties of the main amperometric spike (Figure 3—figure supplement 1). Thus, separated N- and C-terminal regions of CpxII cooperate in forming a fully functional entity. These composite protein domains may arrest chromaffin granules at a ‘primed’ pre-fusion state and slow down fusion pore expansion impeding post-fusional cargo release.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig3-v2.jpg)
+
+**Figure 3.:** (A) The CTD-pep (green) or scr-pep is infused into CpxII ko cells expressing either full-length CpxII (blue) or the truncated Cpx1-100 (orange). (B) Average [Ca2+]i levels (top) and corresponding capacitance responses (bottom) for infusion of either scr-pep or CTD-pep in the indicated groups. Data were collected from the following number of cells: wt + scr pep (black, n = 19), CpxII ko + CpxII + scr-pep (blue, n = 15), CpxII ko+Cpx1-100+scr pep (orange, n = 15) and CpxII ko+Cpx1-100+CT pep (green, n = 18). Flash is at t = 0.5 s. (C) The CTD peptide (green), but not its scrambled variant (orange) recues the RRP and SRP in Cpx1-100 expressing cells, matching nearly the phenotype of full length CpxII expression (blue). The rate of sustained release (SR, fF/s) is slightly reduced with CpxII expression. (D) Neither the time constants of the EB components (τRRP, τSRP) nor the exocytotic delay are altered for the tested groups. (E, F) Contrary to the scrambled peptide the CTD suppresses premature secretion at submicromolar [Ca]i before the flash response (arrow) in Cpx1-100 expressing cells almost like the CpxII protein (same cells as shown in B). (G) Like CpxII expression in CpxII ko cells, the CTD hinders tonic secretion (in response to 19 µM [Ca]i) in Cpx1-100 expressing cells, whereas the scr-pep failed to do so. (H) Total CM after 120 s (upper panel) and amperometric event frequency (lower panel) for the groups in G. Numbers of cells are depicted in the bars. (I) The CTD-pep together with Cpx1-100 increases the fusion pore expansion time (upper panels) and reduces its dynamics (lower panels) like CpxII. Values are determined from the individual parameter’s frequency distribution for each cell. Data are averaged from the cells/events measured for wt + scr pep (13/1558), CpxII ko + CpxII + scr-pep (15/731), CpxII ko+Cpx1-100 + scr pep (20/3292) and CpxII ko+Cpx1-100+CTD pep (18/857) (>20 events/cell). Error bars indicate mean ± SEM. ANOVA followed by Tukey-Kramer post-hoc test. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Properties of amperometric events during spike phase displayed as cumulative frequency distribution and cell weighted averages for wt + scr pep (black), CpxII ko + CpxII + scr-pep (blue), CpxII ko+Cpx1-100+scr pep (orange) and CpxII ko+Cpx1-100 + CTD pep (green). Error bars indicate mean ± SEM. ANOVA followed by Tukey-Kramer post-hoc test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Schematic representation of the Cpx1-100CSPα mutant. (B) Average [Ca2+]i levels (top) and corresponding CM signals (bottom) of Cpx ko cells (n = 22) and those expressing CpxII (n = 25) or the mutant Cpx1-100CSPα (n = 23). Flash, t = 0.5 s. (C, D) Expression of CpxII1-100CSPa (olive) rescues neither the EB (RRP and SRP) nor its kinetics (τRRP, delay) when compared with CpxII ko cells (red) or those expressing CpxII (blue). (E, F) Cpx1-100CSPα does not hinder premature secretion like CpxII (arrow indicates UV-flash). (G) Cpx1-100CSPα has a dominant negative effect on synchronous secretion of wt cells. Average flash-induced [Ca2+]i levels (top) and corresponding CM signals (bottom) of wt cells (n = 16) and those over-expressing CpxII (n = 17) or the mutant Cpx1-100CSPα (n = 15). Flash, t = 0.5 s. (H, I) Cpx1-100CSPα (olive) suppresses the RRP component of the exocytotic burst and leaves the kinetics of stimulus-secretion coupling (τRRP, τSRP, delay) unchanged when compared with CpxII expression in wt cells (blue). (J) Mean tonic CM responses of the cells shown in B during infusion of similar submicromolar [Ca2+]i. (K) Rate of tonic exocytosis determined before the flash-evoked synchronous release. ANOVA followed by Tukey-Kramer post-hoc test. *p<0.05; **p<0.01; ***p<0.001. Error Bars indicate means ± SEM.
+
 We also tested a chimeric protein consisting of the Cpx1-100 domain and the cysteine rich region of CSP-α protein (Figure 3—figure supplement 2A), which is expected to tether the fusion protein at the vesicle membrane (Gong et al., 2016). The Cpx1-100CSPα mutant concentrated on LDCVs like the wt protein (for detailed analysis see Figure 7—figure supplement 1), but failed to thwart tonic vesicle fusion and did not support subsequent synchronous Ca2+-triggered release in CpxII ko cells (Figure 3—figure supplement 2B–F). Moreover, expression of Cpx1-100CSPαmutant in wt cells strongly suppressed EB component of evoked exocytosis (Figure 3—figure supplement 2G–K) compared to controls. Therefore, Cpx1-100CSPα is functionally intact, competes with the endogenous protein, but is unable to clamp premature fusion and to build-up the release-ready vesicle pool. These results confirm that vesicular tethering of other Cpx domains by the CpxII CTD does not suffice to explain its inhibitory phenotype. Therefore, other interactions of the CTD are required to mediate the suppression of exocytosis by the protein.
 
-## The C-terminus of CpxII slows down ternary SNARE complex formation
+### The C-terminus of CpxII slows down ternary SNARE complex formation
 
 The phenotypical alterations in nascent fusion pore dynamics with CpxII expression (Figure 1—figure supplement 2) are remarkably similar to those observed with sybII linker mutants designed to diminish the force transfer on to the merging membranes (Kesavan et al., 2007). Furthermore, CpxII clamps tonic secretion even in the absence of the major Ca2+-sensors Synaptotagmin I (SytI) and Synaptotagmin VII in chromaffin cells (Dhara et al., 2014). These functional observations point to the possibility that CpxII may directly hinder progressive SNARE assembly, arresting the complex in a partially zippered state. To probe for putative protein-protein interactions, we incubated the CpxII-CTD peptide or its scrambled variant (immobilized on sulfo-link sepharose beads) detergent extract of mouse brain homogenate. Western blot analyses revealed that CTD-peptide co-isolates significant amounts of SytI, Syx-1A, SNAP25 and traces of SybII, but showed no binding to proteins like synapsin1 (Figure 4A). Furthermore, with the exception of low amounts of SytI binding, none of the other protein interactions was observed with the scrambled peptide. These results agree with a previous report implicating the glutamate cluster of the Cpx C-terminus (amino acid 108–114) in binding to SytI (Tokumaru et al., 2008). They further suggest that, in addition to the well-known interaction between the CpxII central α helix and the SNARE complex (Chen et al., 2002), the CpxII CTD provides an alternative SNARE binding motif. To further substantiate this hypothesis, we studied whether the C-terminus of CpxII affects the kinetics of SDS-resistant SNARE complex formation. By using purified recombinant SNARE proteins, we assayed assembly kinetics with SDS page and Coomassie staining after defined time intervals (Figure 4B). The kinetics of complex formation were reasonably well approximated by second order reaction kinetics (Nicholson et al., 1998; Pobbati et al., 2006). The experiments revealed that the CTD-peptide significantly decelerated the rate of SNARE complex assembly (51.4 ± 3.8% of control, p<0.05, ANOVA on ranks with Dunn’s post test), when compared with scr-peptide (106.6 ± 16.7% of control) or no peptide addition (control) (Figure 4C), whereas the overall amount of assembled SNARE complexes determined after 240 min was unchanged (% of control: CTD-peptide 92.3 ± 9.1, scr-peptide 88.8 ± 9.6, p>0.9). Thus, the CpxII C-terminus transiently hinders the assembly of SNARE proteins.
 
@@ -65,27 +97,55 @@ The phenotypical alterations in nascent fusion pore dynamics with CpxII expressi
 
 Previous studies have suggested, that SNARE complex formation is most likely arrested halfway leaving membrane-proximal layers of the SNARE bundle unzippered and free for other potentially competing protein-protein interactions (Gao et al., 2012; Giraudo et al., 2006; Hernandez et al., 2012; Li et al., 2014; Li et al., 2016; Pobbati et al., 2006; Zhou et al., 2017). While CpxII positions with its central helix on the assembling SNARE complex in an antiparallel orientation, downstream protein regions of CpxII may provide sufficient structural flexibility for the far C-terminus to fold back on membrane-proximal layers of the partially assembled SNARE complex. Indeed, single molecule FRET studies have provided evidence that Cys105 within the Cpx CTD interacts with Syx 1a near the ionic (0) layer of the SNARE complex (Bowen et al., 2005). Given the promiscuity of hydrophobic SNARE interactions (Tsui and Banfield, 2000; Yang et al., 1999), the CpxII CTD with its hydrophobic residues (presented in heptad repeats) may associate with the membrane-proximal layers of the SNARE proteins and interfere with their zippering. Sequence comparison between the CpxII C-terminus and membrane-proximal layers of the SNAREs revealed stronger similarities with the SNARE motif of SNAP25a SN1 (hydrophobic layers + 2 to+7, Figure 4D; 50% similarity, see Materials and methods) than with any other attempted alignment of this protein region with either SNAP25a SN2, Syx 1A or SybII (27.8%, 38.9% and 16.7% similarity, respectively). Helical wheel presentations of CpxII-CTD (residues 117 to 134) and SNAP25-SN1 (residues 60 to 77) illustrate the amphiphilicity of both helices with similarly angled, nearly identical hydrophobic moments (µH: CTD 0.506, SN1 0.509, Figure 4E) – a parameter that is disparate for the corresponding regions within SNAP25-SN2 (µH: 0.372), SybII (µH: 0.231) and Syx1a (µH: 0.533, boxed residues in Figure 4D). Furthermore, sequence comparisons of the Cpx C-terminal regions from different species (i.e. Drosophila melanogaster, Loligo pealeii, Hirudo medicinalis) with their corresponding SNARE proteins confirm the view that the Cpx C-terminus is on average most similar to the SNAP25-SN1 domain (in %: SNAP25-SN1, 41.6 ± 3.5; SNAP25-SN2, 27.7 ± 2.2; Syx, 34.7 ± 8.2; SybII, 19.4 ± 1.5). This suggests functional similarities of vertebrate and invertebrate complexins and a high degree of intraphylum conservation with respect to the primary sequence and the amphipathic sequence pattern. Collectively, our functional data, biochemical results, and sequence comparisons point to the possibility that the CpxII C-terminus with its SN1 mimetic region may compete with the SN1 motif (membrane-proximal layers) of SNAP25 for binding to its cognate SNARE partners, thereby hindering SNARE assembly and effectively arresting exocytosis.
 
-## A SNAP25-SN1 C-terminus restores function to the CpxII protein
+### A SNAP25-SN1 C-terminus restores function to the CpxII protein
 
 To test whether the CpxII C-terminus and the SNAP25-SN1 domain are functionally interchangeable, we generated a chimera protein where the last 34 amino acids of CpxII (corresponding to the CTD-peptide) are replaced with the equivalent region of SNAP25-SN1 (residues 44 to 77, see Figure 4F). Strikingly, the CpxII:SN1 chimera (Cpx1-100-Long Chimera, also referred to as Cpx1-100LC, Figure 5A) largely restored the magnitude and the kinetics of synchronous exocytosis (Figure 5B–E) and fully suppressed tonic vesicle fusion at similar sub-micromolar [Ca2+]i concentrations prior to the flash induced secretion response. (Figure 5F–H). To study whether any unrelated alpha helical domain can serve as a substitute for the CpxII CTD, we replaced the C-terminus of CpxII with an artificial alpha helical domain (Radoff et al., 2014) formed by multiple repeats of Glu-Ala-Ala-Lysine sequences (A-(EAAK)8-A (Cpx1-100helix, Figure 5A). The Cpx1-100helix mutant largely failed to increase the flash-evoked secretion response beyond the level of the corresponding Cpx1-100 truncation mutant (compare Figure 5B,D and Figure 1A). Yet, this mutant rescued the kinetics of stimulus secretion coupling (τRRP, τSRP) and the secretory delay, as they are mediated by an intact N-terminal region of CpxII (Dhara et al., 2014). Furthermore, the Cpx1-100helix was also unable to clamp ‘pre-flash’ release, remaining close to the level of the CpxII ko (Figure 5F–H).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig5-v2.jpg)
+
+**Figure 5.:** (A) Cartoon illustrates CpxII domains and the structure of the tested mutants. (B) Expression of the Cpx1-100LC largely restores synchronous secretion reaching the response level of wt cells. The Cpx1-100helix supports exocytosis like Cpx1-100 (compare with Figure 1B). Mean [Ca2+]i levels (top) and corresponding CM signals (bottom) of wt cells (n = 11), CpxII ko cells (n = 58), and ko cells expressing CpxII (n = 68) or its mutants (Cpx1-100LC, n = 41; Cpx1-100helix, n = 20). Flash, t = 0.5 s. (C) Normalized CM (as shown in B) scaled to the wt response (1 s after flash). (D) Cpx1-100LC (green) restores RRP and SRP almost like CpxII (blue). (E) The time constants of the EB components (τRRP and τSRP), and the exocytotic delay are similarly changed for CpxII and its chimera (color coding as in A). (F–H) The Cpx1-100LC clamps tonic secretion (F) of CpxII ko cells at similar [Ca]i (G) almost like CpxII (F, H). ANOVA followed by Tukey-Kramer post-hoc test. *p<0.05; **p<0.01; ***p<0.001. Error bars indicate mean ± SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cartoon of the tested truncated and chimera mutants of CpxII. (B) Cpx1-115SC but not Cpx1-115helix restores synchronous release like CpxII. Mean [Ca2+]i levels (top) and corresponding capacitance responses (bottom) of wt (black, n = 11), CpxII ko (red, n = 43), CpxII ko expressing CpxII (blue, n = 46), Cpx1-115 (autumn orange, n = 28), Cpx1-115SC (purple, n = 33), Cpx1-115helix (dark green, n = 19). Flash at t = 0.5 s. (C) Amplitudes of RRP and SRP, the rate of sustained release (SR, fF/s). (D–F) The time constants of the exocytotic burst components (τRRP, τSRP) and the exocytotic delay. C-terminal truncated or mutated CpxII variants restore exocytosis timing like CpxII (see also Dhara et al., 2014) (G) Cpx1-115SC clamps premature secretion as CpxII. Averaged tonic capacitance responses (same group of cells as in B) over 120 s at submicromolar [Ca2+]i infusion (arrow, UV-flash). (H) Mean rate of ΔCM before the flash. ANOVA followed by Tukey-Kramer post-hoc test. **p<0.01; ***p<0.001. Error bars indicate mean ± SEM.
 
 Replacing the amphipathic region within the CpxII C-terminus (last 19 amino acids) with residues 59 to 77 of SNAP25-SN1 (Cpx1-115-Short Chimera, also referred to as Cpx1-115SC, Figure 5—figure supplement 1A) even fully restored the functionality of CpxII protein. Indeed, the Cpx1-115SC with its SNAP25-matching C-terminus supports undiminished synchronized secretion (Figure 5—figure supplement 1B–F) and clamps premature tonic release like CpxII (Figure 5—figure supplement 1G,H). In contrast, the corresponding artificial helix chimera (last 19 residues replaced with (EAAK)4-EAA, Cpx1-115helix) again behaved like the truncation mutant (Cpx1-115). Thus, long and short chimera constructs of CpxII:SN1 arrest premature vesicle fusion and recover the ‘primed’ vesicle pool.
 
 Simultaneous recordings of membrane capacitance and amperometric spike frequency confirmed that expression of Cpx1-100LC or Cpx1-115SC in CpxII ko cells strongly hindered tonic secretion as did the wt protein (Figure 6A,B). Quantification of amperometric prespike properties revealed that Cpx1-100LC and Cpx1-115SC reduced the fusion pore expansion rate and inhibited current fluctuations during the prespike signal as efficiently as CpxII (Figure 6C–E). In contrast, the Cpx1-100helix mutant not only failed to clamp tonic vesicle fusion, but also did not affect the kinetics of initial fusion pore (Figure 6). Neither CpxII nor the mutant variants changed the main spike phase of the amperometric events with respect to their charge, amplitude, rise time and half width (Figure 6—figure supplement 1), agreeing well with our previous observations (Dhara et al., 2014). Furthermore, immunofluorescence analyses showed that the various mutants of CpxII were expressed with similar efficiency as the wt protein (Figure 6—figure supplement 2). Thus, any difference in protein expression cannot be held responsible for the contrasting clamping ability observed with the tested mutants. Taken together, by using a variety of functional analyses, we find that chimera proteins with a SNAP25 C-terminus fully support CpxII action in Ca2+-triggered exocytosis - not only in exocytosis synchronization and timing, but also during transmitter discharge from single vesicles.
 
-## The CpxII1-100LC chimera ‘superclamps’ the exocytotic machinery
+![Figure 6.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig6-v2.jpg)
+
+**Figure 6.:** (A) Mean CM responses upon intracellular perfusion with 19 µM [Ca2+]i for the indicated groups. (B) Corresponding ΔCM (determined after 120 s, top panel) and amperometric event frequency (bottom panel, number of cells denoted in the bars). (C) Exemplary single vesicular release events illustrate the slower fusion pore expansion time for CpxII and the CpxII:SNAP-25 chimeras. (D, E) Cumulative frequency distributions (D, color coding as in A) and cell-weighted averages (E) of the indicated prespike parameters show that Cpx1-100LC and Cpx1-115SC prolongs the fusion pore expansion time and reduces fusion pore jitter as seen with CpxII. Values are determined from the individual parameter’s frequency distribution for each cell. Data are collected from events/cells measured for CpxII ko (10735/60), ko + CpxII (3842/65), ko+Cpx1-100LC (1143/23), ko+Cpx1-115SC (1192/24) and ko+Cpx1-100helix (2873/17) (>20 events/cell). Error bars indicate mean ± SEM. ANOVA followed by Tukey-Kramer post-hoc test. ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Properties of amperometric events during spike phase displayed as cumulative frequency distribution (top row) and cell weighted averages (bottom row) for the indicated groups. None of the spike phase parameters is altered with CpxII variants compared to controls. Error bars indicate mean ± SEM. ANOVA followed by Tukey-Kramer post-hoc test.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Exemplary images of a wt, CpxII ko and CpxII ko cells overexpressing either CpxII or the mutated CpxII proteins. Immunosignals are detected with a polyclonal CpxII antibody (epitope Cpx1-100). Signals are visualized after adjustment of the camera’s exposure time (wt, 200 ms; CpxII ko +CpxII and mutants 30 ms). (B) Mean total fluorescence intensity of wt and CpxII ko cells expressing CpxII or the indicated mutants (determined 5 hr after transfection). Note that mutant variants do not differ from CpxII regarding the level of protein expression (wt, n = 56; CpxII ko, n = 34; CpxII, n = 49; Cpx1-100, n = 24; Cpx1-100LC, n = 21; Cpx1-115, n = 24; Cpx1-115SC, n = 28; Cpx1-100helix, n = 23; Cpx1-115helix, n = 27; Cpx1-100CSPα, n = 19). Error bars indicate mean ± SEM. ANOVA followed by Tukey-Kramer post-hoc test. ***p<0.001.
+
+### The CpxII1-100LC chimera ‘superclamps’ the exocytotic machinery
 
 Given the SNAP25 C-termini of Cpx1-100LC and Cpx1-115SC, one might speculate that such mutants should even enhance the clamp action of CpxII. Yet, high levels of virally driven protein expression (Figure 6—figure supplement 2) may have occluded a ‘gain-of-function’ phenotype for the mutant protein compared to wt CpxII. To address this issue, we have reduced viral protein expression to endogenous CpxII levels by lowering the concentration of infectious particles (25%) and shortening the expression time (3.5 hr instead of 5.5 hr, Figure 7A). Under these conditions, immunofluorescence analyses revealed nearly similar expression levels of CpxII and mutant proteins in CpxII ko cells when compared to those of the endogenous protein in wt cells. In good agreement, the electrophysiological analyses showed that expression of CpxII in CpxII ko cells reduced tonic exocytosis only to levels observed in wt cells (Figure 7B, compare with Figure 6A). Furthermore, the CpxII1-100LC mutant with its C-terminal SNAP25-SN1 domain hindered both, tonic secretion and fusion pore expansion more strongly than CpxII (Figure 7B–E, compare with Figure 6D,E). Thus, SNAP25 structures within the CpxII C-terminus significantly enhance the clamp action of the CpxII protein, fostering a ‘superclamp’ phenotype. By taking advantage of these adapted protein expression levels, we also investigated the question whether a potential vesicle association of the CpxII1-100LC can be held responsible for its unperturbed clamp function. For this, we probed the subcellular distribution of CpxII in chromaffin cells using SybII as a LDCV marker protein (Dhara et al., 2016). The subcellular distribution of the chromaffin granules was determined with confocal microscopy at the foot-print of the cell. The CpxII staining in wt cells showed a clear punctate appearance that often coincided with sybII positive granules (Figure 7—figure supplement 1A). This indicates a vesicular concentration of the protein, an observation that was further corroborated by line-scan analyses of sybII fluorescent puncta and a high Pearson’s coefficient (0.59 ± 0.02, n = 17), determined for the entire cell area, Figure 7—figure supplement 1A,F,G). While expression of CpxII in CpxII ko cells exhibited a similar subcellular distribution, truncation of the CpxII CTD (Cpx1-100) abolished the vesicular accumulation of the protein, agreeing well with previous studies in vitro and in vivo (Gong et al., 2016; Malsam et al., 2012; Wragg et al., 2013; Zdanowicz et al., 2017). The CpxII:SN1 chimeras exhibited a similar diffused distribution throughout the cell cytoplasm (Figure 7—figure supplement 1D–G), showing that vesicular binding of the C-terminus is not a prerequisite for the clamp action of the protein. Furthermore, the Cpx1-100CSPαmutant accumulated on LDCVs like the wt protein (Figure 7—figure supplement 1C,G), but entirely failed to hinder tonic vesicle fusion (Figure 3—figure supplement 2), indicating that vesicular localization of Cpx is not sufficient for its inhibitory function. Taken together, these results support the view that protein-protein interactions of CpxII’s C-terminus, most likely by hindering SNARE complex assembly, rather than its protein-lipid interactions are instrumental in arresting vesicle exocytosis.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig7-v2.jpg)
+
+**Figure 7.:** (A) Mean total fluorescence intensity for wt and CpxII ko cells expressing either CpxII or the indicated mutants (measured 3 hr after transfection, number of cells is indicated in the bars). CpxII and its mutant variants show similar protein expression levels compared to endogenous CpxII. (B) Mean CM responses upon intracellular perfusion with 19 µM free Ca2+ for the indicated groups. Note that Cpx1-100LC hinders tonic secretion more efficiently than CpxII (compare with Figure 6A). (C) Total ΔCM after 120 s (top panel) and amperometric event frequency (bottom panel) averaged from the indicated number of cells. (D, E) Properties of the prespike foot signal, displayed as cumulative frequency distribution (D) and as cell weighted averages (E) for the indicated parameters. The Cpx1-100LC selectively slows the expansion rate of initial fusion pore and reduces the prespike kinetics compared to controls. Values are determined from the individual parameter’s frequency distribution for each cell. Data are collected from events/cells measured for wt (1072/14), CpxII ko (1726/13), ko + CpxII (1125/14), ko+Cpx1-100LC (600/16) (>20 events/cell). Error bars indicate mean ± SEM. ANOVA followed by Tukey-Kramer post-hoc test. ***p<0.001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/38981/elife-38981-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A–E) Exemplary immunostainings (imaged with LSM-710) for CpxII (green) and SybII (red) in wt chromaffin cells and CpxII ko cells expressing CpxII or mutant variants (top to bottom: Cpx1-100CSPα,Cpx1-100, Cpx1-100LC). Cells were fixed after 3.5 hr of viral infection and imaged within the footprint area to minimize the contribution of ER/Golgi-derived fluorescence in virus-transfected cells. The merged images and their magnified view display colocalization between CpxII and sybII in wt, CpxII ko + CpxII and CpxII ko+Cpx1-100CSPαgroups, as also illustrated in the corresponding line scans (magnified view, dashed lines). Notably, Cpx1-100 (D) and Cpx1-100LC (E) do not concentrate at vesicular structures. (F) Exemplary cytofluorgrams for wt and Cpx1-100LC (same cells as in A and E) show a lower Pearson’s colocalization coefficient (PCC) for the mutant. (G) Pearson’s colocalization coefficient (threshold 6xSD of the background fluorescence) for CpxII or its mutants versus sybII shows that virally expressed CpxII and Cpx1-100CSPαconcentrate on vesicles like the endogenous protein (PCC ~ 0.6). Cpx1-100, Cpx1-100LC, Cpx1-115 and Cpx1-115SC show significantly lower PCC (~0.3). Error bars indicate mean ± SEM. ANOVA followed by Tukey-Kramer post-hoc test. ***p<0.001.
 
 ## Discussion
 
 Complexin is the predominant inhibitor at many synapses and neuroendocrine cells to suppress untimely fusion and to sustain a pool of release-ready vesicles. Yet, the precise mode of CpxII action has remained controversial. Here, we show that the CTD of CpxII maintains tight control over premature vesicles exocytosis to support a pool of release-ready vesicles. Our experiments demonstrate that crucial inhibitory actions of CpxII’s CTD are not due to membrane binding or vesicle association, but are mediated by its SNAP25-SN1 mimetic properties. In close correlation, we show that CpxII chimera with a SNAP25-SN1 C-terminal domain fully restores the protein’s clamp action and its ability to support synchronous neurotransmitter release. Collectively, our results deliver new insight into fundamental mechanisms that constitute the molecular clamp of Ca2+-triggered exocytosis. They support a model wherein the CpxII C-terminus hinders SNAP25 from binding to its cognate SNARE partners, arrests the complex in a partially-zippered state and thus allows for highly synchronized Ca2+-triggered release.
 
-## Mechanisms of CpxII clamp action in exocytosis
+### Mechanisms of CpxII clamp action in exocytosis
 
 Previous results by Rothman and colleagues identified a region comprising amino acids 26–83 of murine Cpx as the ‘minimal clamping domain’ of the protein (Giraudo et al., 2006; Giraudo et al., 2009). Based on a comprehensive mechanistic model, it has been suggested that the accessory helix of Cpx blocks the binding of membrane proximal parts of SybII, thereby, preventing full zippering of the SNARE complex. While attempts to test this model by generation of Cpx-mutants with enhanced or decreased sequence similarities to SybII revealed the expected results in vitro (Giraudo et al., 2009), in vivo studies could demonstrate only mild effects or produced even inconsistent results regarding the efficacy of the mutant proteins to either ‘superclamp’ or ‘unclamp’ spontaneous release (Cho et al., 2014; Trimbuch et al., 2014; Yang et al., 2010). Moreover alternative models have been proposed wherein the accessory alpha helix inhibits release by electrostatic repulsion with the vesicle membrane (Trimbuch et al., 2014) or by helix propagation into the central α-helical domain of Cpx (Radoff et al., 2014). These opposing views and also the disparate results from in vitro and in vivo studies point to the possibility that alternative modes for Cpx’s clamp action do exist and assist to stall unfettered vesicle fusion. Experimental results from our group and others have previously shown that the CTD of CpxII exerts a fusion clamping function, although the underlying mechanisms remained largely enigmatic (Buhl et al., 2013; Dhara et al., 2014; Kaeser-Woo et al., 2012; Martin et al., 2011). Furthermore, experiments at the NMJ of C. elegans and murine cortical neurons suggested that the CTD of Cpx guides the protein to vesicular membranes in a curvature sensitive fashion and thus concentrates other inhibitory domains of CpxII at the site of exocytosis for fusion clamping (Gong et al., 2016; Snead et al., 2017; Snead et al., 2014; Wragg et al., 2017; Wragg et al., 2013). Several lines of evidence presented in this paper counter the hypothesis that the CTD simply targets CpxII to membrane, but rather suggest a direct blockade of SNARE zippering. First, we show that the Cpx1-100 mutant (lacking the last 34 amino acids) impairs synchronized secretion in wt cells and disinhibits tonic secretion to the level of the CpxII ko phenotype. Thus, the truncated mutant protein, lacking the amphipathic helix for membrane targeting successfully competes with endogenous CpxII for binding to the exocytotic machinery, but has lost its ability to hinder premature vesicle fusion. Second, acute infusion of the isolated C-terminal peptide into wt cells significantly diminishes premature vesicle fusion and enhances the subsequent phase of synchronized release as does expression of full-length CpxII. In the same line, our complementation experiments illustrate that separate N-and C-terminal domains of CpxII can efficiently reconstitute the inhibitory phenotype of the protein in CpxII ko cells. These results contrast the idea that vesicular targeting of CpxII by its CTD is essential for fusion clamping in chromaffin cells and indicate that the far CTD acts as an independent inhibitory module within the fusion machinery. Third, a Cpx1-100CSPα chimera (with CSPα serving as vesicular membrane anchor) is efficiently sorted to chromaffin granules, but completely fails to reinstate the inhibition by the protein. Although this mutant acts in dominant-negative fashion in wt cells implying efficient binding to productive SNARE complexes, it has lost its ability to arrest vesicle fusion. Collectively, these results are difficult to reconcile with a vesicle targeting role of the CTD of CpxII and rather suggest that this protein region plays an active role in fusion inhibition. Clearly, our observations do not exclude the possibility that vesicular localization is still functionally relevant as it concentrates CpxII at the sites of vesicle fusion (Figure 7—figure supplement 1A,G), but they also show that other modes of Cpx action dominate its inhibitory mechanism.
 
-## A new model for the clamp function of CpxII C-terminus
+### A new model for the clamp function of CpxII C-terminus
 
 As an alternative model, we propose that the CTD of CpxII with its amphipathic helix hinders SNARE complex assembly. The intramolecular distance between the central domain of CpxII and the far CTD appears to be long enough for the latter to fold back on membrane proximal parts of the SNARE complex and thus may hinder its further zippering (Figure 8). This notion is further supported by the observation that Cpx Cys105 positioned near the central ionic layer of the SNARE complex, leaving the downstream CTD region free to interact with the C-terminal layers of SNARE complex (Bowen et al., 2005). Our experiments support such a model by independent lines of evidence. The biochemical experiments show that the CpxII CTD (immobilized on agarose beads) coprecipitates Syt1, Syx1a, SNAP25, and some SybII from detergent extract of mouse brain homogenate. Given the high degree of structural similarity between the CpxII CTD and the C-terminal half of the SNAP25-SN1, it is possible that the amphipathic helix of CpxII CTD generates an alternative hydrophobic interface that competes with one of the SNARE motifs for complex formation. Since CpxII binds to binary as well as ternary complexes with high affinity (Zdanowicz et al., 2017), it remains to be shown at which particular step the protein interferes with SNARE assembly. In any case, we find that the CTD of CpxII, but not its scrambled variant, significantly lowers the rate of SDS-resistant SNARE complex formation. These in vitro results agree with previous reports, showing that full-length Cpx inhibits SNARE-mediated liposome fusion, whereas a truncated variant (amino acid 26–83) failed to do so (Chicka and Chapman, 2009; Schaub et al., 2006). Furthermore, and most strikingly, our functional analyses reveal that a corresponding chimera between CpxII and SNAP25-SN1 fully restores functionality regarding the magnitude of synchronized secretion, exocytosis timing and the expansion rate of the nascent fusion pore. In contrast, a length-matched substitution of the CTD of CpxII with an artificial alpha helix is unable to rescue secretion. While there are many ways to cripple a protein, only few are able to restore or even enhance its function. Our results indicate functional interchangeability between the CpxII CTD and the SNAP25-SN1 domain, rendering the possibility likely that the CTD of CpxII transiently interferes with SNARE complex assembly, generating a prefusion intermediate that can be activated by SytI in response to intracellular calcium rise. Importantly, using different experimental strategies with CTD-peptide infusion or CpxII:SN1 chimera expression we find not only inhibition of tonic release as one might expect from SNAP25-mimetic structures (Apland et al., 1999; Ferrer-Montiel et al., 1998; Gutiérrez et al., 1995; Gutierrez et al., 1997), but also enhanced synchronized exocytosis indicating a true gain-of-function phenotype of the CTD of CpxII. In this context, it is important to emphasize that other chimera proteins of Cpx were often unsuccessful to reinstate functionality. For example, a chimeric construct between CpxI and the CpxIII CTD failed to suppress spontaneous synaptic vesicle release in murine cortical neurons (Kaeser-Woo et al., 2012), an observation that could be explained by the lack of periodicity of hydrophobic residues (heptad repeats) within the amphipathic helix of CpxIII. Furthermore, chimeric mutants between worm CpxI and the murine CpxI or CpxIII CTDs did not preserve a similar periodicity of hydrophobic residues and therefore may have been unable to rescue hypersecretion observed in CpxI null mutants (Wragg et al., 2017). Moreover, single amino acid substitutions within the amphipathic helices of mouse and worm Cpx CTDs (Kaeser-Woo et al., 2012; Wragg et al., 2013), designed to interfere with vesicular membrane binding, may also compromise hydrophobic interactions of the CTDs with the SNARE proteins and curb the clamping ability of the mutants. Consistent with our hypothesis, recent work by Dittman and colleagues suggested that mutations within the amphipathic region of worm Cpx exhibited lipid binding in vitro but failed to rescue protein function in vivo (Snead et al., 2017; Wragg et al., 2017), indicating that generic membrane binding does not suffice for Cpx’s inhibitory function. By adapting viral driven protein expression to levels seen in wildtype cells, we show that the CpxII:SN1 chimera indeed suppresses tonic secretion more efficiently than the full-length CpxII. In the same line, this mutant variant selectively prolongs the time-course of fusion pore expansion. Thus, structural similarity to SNAP25-SN1 seems to explain the enhanced clamp action of the mutant protein during pre- and postfusional stages. Notably, CpxII:SN1 chimera also reduces the spike-like current fluctuations of the early fusion pore – a finding that is remarkably similar to that of SybII linker mutants designed to interfere with force transfer on the merging membrane (Kesavan et al., 2007). These phenotypical similarities are in line with the view that the CpxII:SN1 chimera directly stalls the SNARE machinery. In contrast to the C-terminal half of the SNAP25-SN1 motif, the C-terminus of vertebrate CpxI and CpxII contains a Pro-Gly-Pro motif (PGP, see Figure 4D), which is predicted to interrupt the helicity of the amphipathic region and may very well serve as a structural wedge to limit the clamping activity of CpxII in comparison to the CpxII:SN1 chimera.
 
@@ -101,34 +161,240 @@ Taken together, our experiments have pinpointed a so far unrecognized mechanism 
 
 ## Materials and methods
 
-## Mutagenesis and viral constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>CPX II null allele</td>
+      <td>Reim et al., 2001. Complexins regulate a late step in Ca2+-dependent neurotransmitter release. Cell, 104, 71–81</td>
+      <td>PMID 11163241</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Syntaxin1</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 110 001</td>
+      <td>Western blot: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti- SNAP25</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 111 011</td>
+      <td>Western blot: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti- SynaptobrevinII</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 104 211</td>
+      <td>ICC, Western blot: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti- Synaptotagmin I</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 105 011</td>
+      <td>Western blot: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Synapsin 1</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 106 001</td>
+      <td>Western blot: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-CpxII</td>
+      <td>this paper</td>
+      <td>Material and methods</td>
+      <td>ICC, Western blot 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP conjugated goat-anti mouse</td>
+      <td>Bio-Rad laboratories</td>
+      <td>Cat# 170–5047</td>
+      <td>Western blot: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP conjugated goat-anti rabbit</td>
+      <td>Bio-Rad laboratories</td>
+      <td>Cat# 170–5046</td>
+      <td>Western blot: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 555 goat anti-mouse</td>
+      <td>Invitrogen</td>
+      <td>Cat# A21422</td>
+      <td>ICC: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-rabbit</td>
+      <td>Invitrogen</td>
+      <td>Cat# A11008</td>
+      <td>ICC: 1:1000</td>
+    </tr>
+    <tr>
+      <td>cDNA (Mus musculus)</td>
+      <td>CpxII-WT</td>
+      <td>GenBank: U35101.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pSFV-Cpx1-100- IRES-EGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>derived from U35101.1 with indicated mutations</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pSFV-Cpx1-115- IRES-EGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>derived from U35101.1 with indicated mutations</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pSFV-Cpx1-100LC- IRES-EGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>derived from U35101.1 with indicated mutations</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pSFV-Cpx1-115SC- IRES-EGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>derived from U35101.1 with indicated mutations</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pSFV-Cpx1-100helix- IRES-EGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>derived from U35101.1 with indicated mutations</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pSFV-Cpx1-115helix- IRES-EGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>derived from U35101.1 with indicated mutations</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pSFV-Cpx1-100CSPα- IRES-EGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>derived from U35101.1 with indicated mutations</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-KG-vector</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>C-terminal domain peptide</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Material and methods</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>scrambled peptide</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Material and methods</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>IgorPro</td>
+      <td>WaveMetrics Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>AutesP</td>
+      <td>Npi electronics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Zen2008</td>
+      <td>Zeiss</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mutagenesis and viral constructs
 
 Substitution or truncation mutations in CpxII were generated by overlap extension polymerase chain reaction (PCR) using appropriate primers containing the desired non-homologous sequences (Higuchi et al., 1988). All mutations were confirmed by DNA sequence analysis (MWG Biotech, Germany). For expression in chromaffin cells, cDNAs encoding for CpxII or its mutant variants were subcloned into bicistronic Semliki Forest vector (pSFV1, Invitrogen, San Diego, CA). The vector contains an internal ribosomal entry site (IRES) controlled second open reading frame that encodes for enhanced green fluorescent protein (EGFP). This strategy allowed us to identify infected cell with EGFP expression (excitation wavelength 477 nm). Virus cDNA was linearized with restriction enzyme SpeI and transcribed in vitro by using SP6 RNA polymerase (Ambion, USA). BHK21 cells were transfected by electroporation (400V, 975 µF) with a combination of 10 µg CpxII (wildtype/mutant) and pSFV-helper2 RNA. After 15 hr incubation (31°C, 5% CO2), virus particles released into the supernatant were collected by low speed centrifugation (200 g, 5 min), snap-frozen and stored at −80°C (Ashery et al., 1999).
 
-## Culture of chromaffin cells and electrophysiological recordings
+### Culture of chromaffin cells and electrophysiological recordings
 
 All experiments were performed on mouse chromaffin cells prepared at postnatal day 0–1 from Complexin II knock out (CpxII-/-) or littermate control (CpxII+/+ or CpxII+/-) animals (Dhara et al., 2014). Preparation of adrenal chromaffin cells was performed as described previously (Borisovska et al., 2005). Electrophysiological recordings were done on cultured chromaffin cells on the second or third day in culture and 5.5–6 hr after infection of cells with virus particles. Chromaffin granule secretion was stimulated by brief UV-flash that led to Ca2+-uncaging upon photolysis of nitrophenyl-EGTA. Recordings of membrane capacitance (reflecting vesicle fusion) and ratiometric [Ca2+]i changes (using Fura-2 and Furaptra) were performed as described previously (Borisovska et al., 2005). The intracellular solution for Ca2+-uncaging experiments contained (in mM): 110 Cs-glutamate, 8 NaCl, 3.5 CaCl2, 5 NP-EGTA, 0.2 fura-2, 0.3 furaptra, 2 MgATP, 0.3 Na2GTP, 40 HEPES-CsOH, pH 7.3, 300 mOsm. The flash-evoked capacitance response was approximated with the function: f(x)=A0+A1(1−exp[−t/τ1])+A2(1−exp[−t/τ2])+kt, where A0 represents the cell capacitance before the flash. The parameters A1, τ1, and A2, τ2, represent the amplitudes and time constants of the RRP and the SRP, respectively (Rettig and Neher, 2002). The secretory delay was defined as the time between the UV-flash and the intersection point of the back-extrapolated fast exponential of capacitance rise with the baseline.
 
 For simultaneous recordings of membrane capacitance and carbon fiber amperometry exocytosis was stimulated by infusion of an intracellular solution containing 19 µM free Ca2+. The intracellular solution contained (in mM): 110 Cs-glutamate, 8 NaCl, 20 diethylene triamine penta-acetic acid, 5 CaCl2, 2 MgATP, 0.3 Na2GTP, and 40 Hepes-CsOH, pH 7.3 (osmolarity adjusted to 300 mOsm). The extracellular Ringer's solution used for all electrophysiological recordings contained (in mM): 130 NaCl, 4 KCl, 2 CaCl2, 1 MgCl2, 30 glucose, 10 HEPES-NaOH, pH 7.3 (osmolarity adjusted to 310 mOsm). Single amperometric spikes were recorded using home-made carbon fiber electrodes (ø 5 µm, Amoco), as described in (Bruns, 2004). Current signals were filtered at 2 kHz and digitized gap-free at 25 kHz prior to analysis. Only amperometric spikes with a peak amplitude > 4 pA and within the charge range from 10 to 5000 fC were considered for frequency analysis. Events with a peak amplitude > 7 pA were selected for the analysis of kinetic properties using Autesp (npi electronics, Tamm, Germany). To obtain reliable data for the current fluctuations and rms noise during prespike signal, we restricted our analysis to prespike duration longer than 2 ms. For the analysis of prespike signal flickers, the current derivative was further filtered at 1.2 kHz. Only deflections exceeding a threshold level of ± 6 pA/ms (corresponding to 4*SD) were considered and the fluctuation frequency was calculated as the number of suprathreshold fluctuations divided by the prespike duration. For the peptide infusion experiments, the intracellular solution contained, either the CpxII CTD-peptide (IPAGCGDEEEEEEESILDTVLKYLPGPLQDMFKK) or its scrambled variant (KVPYELGGQLPELKTSDPIEGEDEDELFMKEIAC) at a final concentration of 10 µM.
 
-## Biochemistry
+### Biochemistry
 
-## Pull-down assay
+#### Pull-down assay
 
 SulfoLink Coupling Gel (Pierce) was used for immobilization of the CpxII CTD peptide and its scrambled variant with an additional C-terminal cysteine according to the manufacturer's instructions (1.0 mg peptides/ml gel). Triton X-100 extract of mouse brain homogenate (0.5 mg/ml, containing 130 mM NaCl, 50 mM HEPES-NaOH, 1 mM EDTA, 2% Triton X-100, 1 mM PMSF, pH 7.3) was applied to beads (250 µl) and bound proteins were analyzed by 12% SDS-PAGE and Western blotting. For the detection of Syntaxin 1a, SNAP25, SybII, SytI and Synapsin1 the following mouse antibodies from Synaptic systems (Göttingen, Germany) were used: Anti-Syntaxin1 (CL 78.2) No: 110 001; SNAP25 (CL 71.1), No:111 011; SynaptobrevinII (CL 69.1), No: 104 211; Synaptotagmin 1 (CL 41.1), No:105 011; Anti-Synapsin 1 (CL 46.1), No:106 001. Primary mouse antibodies were used at a dilution of 1:1000. Immunoreactive bands were visualized with secondary goat-anti mouse or goat anti-rabbit antibodies conjugated with horseradish peroxidase and with an enhanced chemiluminescence system (Thermo Fisher Scientific, Schwerte, Germany).
 
-## Ternary SNARE complex assembly assay
+#### Ternary SNARE complex assembly assay
 
 Recombinant SNAP25 (amino acids 1–206) and Syx 1a (amino acids 1–262) were expressed with an N-terminal His6 tag in E. coli (BL21DE3) and purified using nickel-nitrilotriacetic acid-agarose (Qiagen, Germany). Recombinant SybII (amino acids 1–116) was expressed as N-terminal tagged GST fusion protein (pGEX-KG-vector) in the E. coli strain BL21DE3 and purified using glutathione-agarose according to the manufacturer’s instructions. All column elutes were analyzed for integrity and purity of the expressed proteins by SDS-PAGE and staining with Coomassie blue. Binary t-SNARE complexes were preformed for 1 hr by mixing SNAP25 and Syx 1a at 5:1 molar ratio to facilitate 1:1 acceptor complex formation (Pobbati et al., 2006). The CpxII CTD peptide or its scrambled variant (50 µM) was incubated with the binary complex for 30 min before SybII (3 µM) was added to start complex assembly. The binding buffer contained (in mM): 100 NaCl, 1 DTT, 1 EDTA, 0.5% Triton X-100, 20 Tris (pH 7.4). Ternary SNARE complex formation was assayed at the indicated time points (Figure 4) and assembly reactions were stopped by adding 5xSDS sample buffer. The formation of SDS-resistant complexes was analyzed by SDS-PAGE (without boiling the samples) and Coomassie blue staining of protein bands. The rate of complex formation was calculated by fitting the data (using Sigmaplot 12) with the equation SC(t) = SC0 + (SC∞ - SC0) (A0*k*t)/A0*k*t + 1) (Nicholson et al., 1998; Pobbati et al., 2006). This equation is derived from the second order reaction A + B - > P, where A0=B0. SC(t) is the integrated density value of assembled SNARE complexes at time t, SC0 is the experimental value at t = 0, SC∞ is the experimental value at t=∞. A0 is the initial reactant concentration (M) and k is the rate constant (M−1 S−1). The kinetic rates of SNARE complex formation in different groups (no peptide addition vs addition of CTD-peptide or scr-peptide) were tested for statistically significant difference using ANOVA on ranks with Dunn’s post test.
 
-## Analysis of structural similarity
+#### Analysis of structural similarity
 
 Similarity scores between the CpxII CTD and the SNARE proteins were calculated using the BLOSUM62 matrix (EMBOSS needle). For the calculation of the hydrophobic moment the equation by (Eisenberg et al., 1982) and EMBOSS hmoment tool were used.
 
-## Immuncytochemistry
+### Immuncytochemistry
 
 For immunolabeling, chromaffin cells were processed either 5.5 hr (Figure 6—figure supplement 2) or 3.5 hr (Figure 7A) after virus infection as described previously (Borisovska et al., 2012). Epifluorescence images (eight bit encoded) were acquired with an AxioCam MRm-CCD camera (Carl Zeiss, Inc.) and analyzed with ImageJ software version 1.45. A homemade, affinity purified rabbit polyclonal antibody against CpxII (epitope: amino acids 1–100 of CpxII) was used for all immunofluorescence experiments described in the manuscript. The total intensity of the fluorescent immunolabel was quantified within the cytoplasm of the cell, which was determined by subtracting the nuclear fluorescence from total cellular fluorescence (area of interest comprising the outer cell perimeter – area of interest comprising the cell nucleus). In colocalization experiments, chromaffin cells were co-stained with rabbit polyclonal CpxII and mouse monoclonal SybII antibodies (clone 69.1, antigen epitope amino acid position 1–14, kindly provided by R. Jahn, MPI for Biophysical Chemistry, Göttingen, Germany). Images (16 bit encoded) were acquired at the ‘foot-print’ area of the cells with confocal microscope (LSM 710; Carl Zeiss) using excitation light of 488 and 555 nm wavelengths and the AxioVision 2010 software (Carl Zeiss) through a 100x, 1.3 NA oil objective. Immunopositive signals were determined after threshold adjustment (4x background signal) and cytofluorgram as well as Pearson’s co-localization coefficient were analyzed with ImageJ (JACoP plugin).
 
-## Statistics
+### Statistics
 
 Statistical tests were performed in Sigmaplot 12 (Systat Software). All data was tested for statistical significance with Student’s t-test between two groups or one way analysis of variance (ANOVA) followed by Tukey-Kramer post-test for multiple conditions, if not indicated otherwise. Significance levels: ‘*’ p<0.05, ‘**’ p<0.01, and ‘***’ p<0.001.

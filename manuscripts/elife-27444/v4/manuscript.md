@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.27444.001 Disruption of the sumoylation/desumoylation equilibrium is associated with several disease states such as cancer and infections, however the mechanisms regulating the global SUMO balance remain poorly defined. Here, we show that infection by Shigella flexneri , the causative agent of human bacillary dysentery, switches off host sumoylation during epithelial cell infection in vitro and in vivo and that this effect is mainly mediated by a calcium/calpain-induced cleavage of the SUMO E1 enzyme SAE2, thus leading to sumoylation inhibition. Furthermore, we describe a mechanism by which Shigella promotes its own invasion by altering the sumoylation state of RhoGDIα, a master negative regulator of RhoGTPase activity and actin polymerization. Together, our data suggest that SUMO modification is essential to restrain pathogenic bacterial entry by limiting cytoskeletal rearrangement induced by bacterial effectors. Moreover, these findings identify calcium-activated calpains as powerful modulators of cellular sumoylation levels with potentially broad implications in several physiological and pathological situations.
+Disruption of the sumoylation/desumoylation equilibrium is associated with several disease states such as cancer and infections, however the mechanisms regulating the global SUMO balance remain poorly defined. Here, we show that infection by Shigella flexneri, the causative agent of human bacillary dysentery, switches off host sumoylation during epithelial cell infection in vitro and in vivo and that this effect is mainly mediated by a calcium/calpain-induced cleavage of the SUMO E1 enzyme SAE2, thus leading to sumoylation inhibition. Furthermore, we describe a mechanism by which Shigella promotes its own invasion by altering the sumoylation state of RhoGDIα, a master negative regulator of RhoGTPase activity and actin polymerization. Together, our data suggest that SUMO modification is essential to restrain pathogenic bacterial entry by limiting cytoskeletal rearrangement induced by bacterial effectors. Moreover, these findings identify calcium-activated calpains as powerful modulators of cellular sumoylation levels with potentially broad implications in several physiological and pathological situations.
 
 ## Introduction
 
@@ -34,21 +34,33 @@ In most cases, pathogenic micro-organisms manipulate sumoylation through interfe
 
 ## Results
 
-## Shigella infection inhibits sumoylation in epithelial cells in vitro and in the gut
+### Shigella infection inhibits sumoylation in epithelial cells in vitro and in the gut
 
 To investigate the impact of Shigella infection on global sumoylation of host cell proteins, we followed the global pattern of proteins conjugated to SUMO1 and SUMO2/3 at timed intervals after infection (0 to 180 min). A gradual decrease in both SUMO1 and SUMO2/3 conjugates was observed in HeLa cells infected with the invasive Shigella strain M90T. An almost complete disappearance of the higher molecular weight SUMO species was visible after 180 min (Figure 1A and Figure 1—figure supplement 1A). These data are in agreement with a recent report showing impaired sumoylation in similar conditions (Sidik et al., 2015). A weak, yet consistent reduction in the level of SUMO1-modified proteins was readily visible 30 min post-infection as shown by a ~ 25% decrease in the total amount of SUMO1 conjugates and a concomitant ~20% accumulation of free SUMO1 (Figure 1A, Figure 1—figure supplement 1B and Figure 1—figure supplement 1—source data 1). The decrease in the total amount of SUMO2 conjugates after 30 min was, in contrast, more pronounced (Figure 1—figure supplement 1A), a finding in line with the higher dynamics of modification by SUMO2 compared to SUMO1 (Saitoh and Hinchey, 2000). Of note, no accumulation of free SUMO2/3 could be detected in our setting. SUMO1 and SUMO2/3 conjugates decreased in a multiplicity-of-infection-dependent manner (Figure 1B and Figure 1—figure supplement 1C). This loss in SUMO conjugates was not observed in cells infected with the non-invasive mxiD mutant that lacks expression of the type III secretion system (T3SS) (Figure 1C and Figure 1—figure supplement 1D). Moreover, the global reduction in protein sumoylation was impaired in cells treated with cytochalasin D, a drug that prevents actin polymerization and thereby completely blocks Shigella entry. This indicates that actin cytoskeleton rearrangements are required for Shigella to impair sumoylation (Figure 1—figure supplement 1E–G and and Figure 1—figure supplement 1—source data 1). We then validated the decrease in sumoylation on the two heavily sumoylated RanGAP1 and PML-IV substrates. In Shigella-infected HeLa cells, a reduction in sumoylated RanGAP1 was visible 90 min post-infection (Figure 1D–E and Figure 1—source data 1). Similar results were obtained in HT1080 cells stably expressing PML-IV where a significant decrease in SUMO-modified form of PML-IV occurred after 120 min infection (Figure 1F–G and Figure 1—source data 1). The hyposumoylation was more pronounced for PML-IV than for RanGAP1, in accordance with the high stability of the sumoylation state of RanGAP1.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/27444/elife-27444-fig1-v4.jpg)
+
+**Figure 1.:** (A) SUMO1-conjugated protein patterns from uninfected HeLa cells or cells infected with the wild-type Shigella strain M90T for the indicated times. Immunoblot analysis was performed on whole-cell lysates using antibodies specific for SUMO1 isoform and tubulin. p-i: post-infection. (B) SUMO1-conjugated protein patterns from uninfected HeLa cells or cells infected with Shigella for 120 min at the indicated multiplicity of infection (MOI). (C) Global SUMO1 patterns of uninfected HeLa cells or cells infected with M90T or the mxiD non-invasive Shigella for 120 min. (D) Immunoblot analysis of RanGAP1 and SUMO-RanGAP1 levels in HeLa cells infected with M90T for the indicated times. (E) Quantification of the immunoblot signals are presented as SUMO-RanGAP1 signal relative to unmodified RanGAP1 signal (mean of four independent experiments ± s.d., *p<0.05, **p<0.01). (F) Immunoblot analysis of PML-IV and SUMO-PML-IV levels in HT1080 cells stably expressing GFP-PML-IV and infected with M90T for the indicated times. (G) Quantification of the immunoblot signals are presented as SUMO-PML-IV signal relative to unmodified GFP-PML-IV signal (mean of three independent experiments ± s.d., *p<0.05, ***p<0.001). (H) Global SUMO1 patterns of the whole intestine of 4-day-old newborn mice (#1 and #2), 180 min after inoculation of the invasive M90T strain or the non-invasive mxiD mutant. Physiological water was used as a control. Tubulin was used as a loading control. (I) Fluorescence microscopy analysis of the intestinal epithelium on paraffin sections after Shigella infection of newborn mice for 180 min. Physiological water was used as a control. SUMO2/3 appears in red, auto-fluorescence of the intestinal tissue in green and nuclei counterstained with DAPI in blue. White square, inset.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/27444/elife-27444-fig1-figsupp1-v4.jpg)
+
+**Figure 1—figure supplement 1.:** (A) SUMO2/3-conjugated protein patterns from uninfected HeLa cells or cells infected with the wild-type Shigella strain M90T for the indicated times. Immunoblot analysis was performed on whole-cell lysates by using antibodies specific for SUMO2/3 isoforms and tubulin. p-i: post-infection. (B) Quantification of the immunoblot signals in uninfected cells (black bars) or cells infected with the M90T strain for 30 min (white bars) are presented as conjugated SUMO1 (left) or free SUMO1 (right) signals relative to Tubulin signal (mean of four independent experiments ± s.d.) (C) SUMO2/3-conjugated protein patterns from uninfected HeLa cells or cells infected with Shigella for 120 min at the indicated multiplicity of infection (MOI). (D) Global SUMO2/3 patterns of uninfected HeLa cells or cells infected with M90T or the mxiD non-invasive Shigella for 120 min. (E) HeLa cells were treated with vehicle (DMSO) or cytochalasin D, an actin polymerization inhibitor, at 10 μg/mL for 30 min before Shigella infection. Quantification of internalized bacteria at 1 hr p-i was obtained using the gentamicin protection assay and are expressed as the number of colony forming unit (CFU) per well. Data are means ±s.d. of at three independent experiments. (F) HeLa cells were pretreated by vehicle (DMSO) or cytochalasin D (10 μg/mL) for 30 min and then left uninfected or infected with the M90T strain for the indicated times. Immunoblot analysis were performed using anti-SUMO1 and -tubulin antibodies. (G) Immunoblot analysis of the same extracts as panel E performed using anti-SUMO2/3 and -tubulin antibodies.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/27444/elife-27444-fig1-figsupp2-v4.jpg)
+
+**Figure 1—figure supplement 2.:** (A) SUMO1 patterns of HeLa cells stably expressing TAP-SUMO1, uninfected or infected for 120 min with the wild-type Shigella strain M90T or with mxiD, mxiE or ospG mutants. Immunoblot analysis was performed on whole-cell lysates using antibody specific for the TAP tag and ponceau staining was used as a loading control. (B) Same as in A using HeLa cells stably expressing TAP-SUMO2. (C) SUMO1 and SUMO2 patterns of HeLa cells, uninfected or infected for 120 min with the M90T strain or with ipaC/pC351, ipaC, ipaB, ipaC/pC57 or ipgD mutants. Immunoblot analysis was performed on whole-cell lysates using antibodies specific for SUMO1 and SUMO2/3. Ponceau staining was used as a loading control.
 
 To identify putative Shigella factors involved in the decrease in sumoylation, we tested a panel of mutant strains that affect bacterial virulence to various degrees for their ability to induce a loss in SUMO conjugates (Figure 1—figure supplement 2A–C). Among these mutants, the mxiE strain, that is defective for the expression and secretion of several important Shigella effectors (OspB, OspC1, OspD2, OspD3, OspE1, OspE2, OspF, OspG, VirA, IpaH1.4, IpaH4.5, IpaH7.8 and IpaH9.8) (Bongrand et al., 2012; Kane et al., 2002; Mavris et al., 2002), was still able to induce a decrease in sumoylated proteins, indicating that these different factors are not involved in sumoylation inhibition (Figure 1—figure supplement 2A–B). In a similar manner, mutation in the genes encoding the VirA, IpgD or OspG effectors did not affect the ability of Shigella to induce hyposumoylation (Figure 1—figure supplement 2A–C). In contrast, mutants for the expression of the translocator components IpaB and IpaC failed to induce a loss in SUMO conjugates, suggesting that the insertion of these bacterial proteins into the host plasma membrane is necessary to impair sumoylation (Figure 1—figure supplement 2C). We next analysed the effect of two insertion mutants of IpaC: ipaC/pC351 and ipaC/pC57 (Mounier et al., 2009). The ipaC/pC351 mutant strain is unable to induce actin foci formation and to invade host cells, whereas ipaC/pC57 is still able to form actin foci but is not able to efficiently invade host cells (Mounier et al., 2009). Only the ipaC/pC57 mutant was able to induce hyposumoylation (Figure 1—figure supplement 2C), suggesting that, beyond pore formation, the stress induced by the bacteria at the plasma membrane actively contributes to the loss of sumoylation, while not requiring efficient invasion of host cells. Altogether, these results suggest that Shigella induces a loss in SUMO conjugates by triggering pore formation and subsequent plasma membrane stress.
 
 To then see whether the findings obtained in vitro may transpose in vivo, we analyzed the SUMO patterns in the gut of newborn mice after 180 min infection with Shigella. A decrease in the amount of SUMO1-modified proteins together with an increase in free SUMO1 was clearly visible in mice infected with the invasive strain M90T compared to control or mxiD-infected animals (Figure 1H). Moreover, immunofluorescence staining of SUMO2/3 on paraffin-embedded sections of intestines from M90T-infected newborn mice showed a marked decrease in SUMO2/3 staining in enterocyte nuclei compared to that observed in control newborn mice (Figure 1I). Altogether these results show that Shigella severely impairs sumoylation in vitro and that this effect occurs in vivo in the target organs of the pathogenic bacteria.
 
-## Loss in SUMO conjugates is due to intracellular Shigella-induced activation of host calpain proteases
+### Loss in SUMO conjugates is due to intracellular Shigella-induced activation of host calpain proteases
 
 To gain insights into the mechanisms by which Shigella alters the sumoylation status of host cells, we probed a possible involvement of calpains. Indeed, Shigella infection of epithelial cells is known to rapidly activate calpains, a family of cysteine proteases known to cleave a wide range of substrates (Bergounioux et al., 2012). As expected, calpain activation was observed in response to Shigella infection as measured by the autolytic maturation process that converts the 30 kDa calpain regulatory subunit Capns1 into a truncated 18 kDa fragment (Figure 2A). In addition, we observed the degradation of the calpain endogenous inhibitor calpastatin (Figure 2A). Remarkably, pre-treatment of cells by the calpain inhibitor MDL28170 (Mehdi et al., 1988) entirely abrogated the loss of SUMO1- and SUMO2/3-conjugates upon Shigella infection (Figure 2A). In contrast, and in agreement with a previous report (Bergounioux et al., 2012), Shigella-induced calpastatin degradation was not suppressed by MDL28170 treatment, suggesting the involvement of another type of protease for its degradation. We then used two other systems for inhibiting calpain activity. Infection by Shigella of cells treated with siRNAs against Capns1 or infection of mouse embryonic fibroblasts (MEFs) knock-out for Capns1 (Capns1 KO) similarly failed to trigger a loss in SUMO conjugates when compared to control cells (Figure 2B and C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/27444/elife-27444-fig2-v4.jpg)
 
-**Figure 2.:** Shigella inhibits sumoylation by a calpain-dependent mechanism.(A) HeLa cells were pretreated by vehicle (DMSO) or 100 μM MDL28170 for 1 hr and then left uninfected or infected with the M90T strain or the mxiD mutant for 2 hr. Immunoblot analysis were performed using anti-Capns1 (Calpain small subunit 1), -calpastatin, -SUMO1, -SUMO2/3 and -tubulin antibodies. The 18 kDa truncated Capns1 fragment is indicated by an arrow. (B) HeLa cells were treated with control siRNA (siScr) or Capns1 siRNA and then left uninfected or infected with the M90T strain or the mxiD mutant for 2 hr. Immunoblot analysis were performed using anti-Capns1, -SUMO1, -SUMO2/3 and -tubulin antibodies. (C) Capns1 (WT) or +/+Capns1 (KO) MEFs were uninfected or infected with the M90T strain or the −/−mxiD mutant for 2 hr. Immunoblot analysis was performed using anti-SUMO1, -SUMO2/3, and -tubulin antibodies.
+**Figure 2.:** (A) HeLa cells were pretreated by vehicle (DMSO) or 100 μM MDL28170 for 1 hr and then left uninfected or infected with the M90T strain or the mxiD mutant for 2 hr. Immunoblot analysis were performed using anti-Capns1 (Calpain small subunit 1), -calpastatin, -SUMO1, -SUMO2/3 and -tubulin antibodies. The 18 kDa truncated Capns1 fragment is indicated by an arrow. (B) HeLa cells were treated with control siRNA (siScr) or Capns1 siRNA and then left uninfected or infected with the M90T strain or the mxiD mutant for 2 hr. Immunoblot analysis were performed using anti-Capns1, -SUMO1, -SUMO2/3 and -tubulin antibodies. (C) Capns1+/+ (WT) or Capns1−/− (KO) MEFs were uninfected or infected with the M90T strain or the mxiD mutant for 2 hr. Immunoblot analysis was performed using anti-SUMO1, -SUMO2/3, and -tubulin antibodies.
 
 Calpain proteases are activated in response to an increase in intracellular calcium levels. It was reported that Shigella entry potently induces a local calcium response allowing cytoskeletal remodeling at early invasion stages. Shortly thereafter, it induces a global rise in calcium levels that enhances bacterial invasion and dissemination (Bonnet and Tran Van Nhieu, 2016). We thus assessed the direct effect of altering calcium levels on Shigella-mediated hyposumoylation. Treatment with the calcium-chelating agent BAPTA-AM, that blocks the release of calcium from intracellular stores, was sufficient to avoid calpain protease activation and subsequent loss in SUMO conjugates (Figure 3A). Conversely, treatment alone with calcium together with the calcium ionophore ionomycin, that increases the intracellular calcium levels, recapitulates the hyposumoylation seen upon Shigella infection. Such an effect was visible both at the global or the single substrate level, as exemplified by PML-IV (Figure 3B–C). Moreover, pre-treatment of the cells with the calpain inhibitor MDL28170 prevented the loss in SUMO conjugates induced by calcium and ionomycin (Figure 3B–C). Overall, these results demonstrate that increased calcium responses and subsequent calpain activation drives Shigella-induced loss of SUMO conjugates, indicating that calcium- and SUMO-dependent signaling are linked.
 
@@ -56,33 +68,65 @@ Calpain proteases are activated in response to an increase in intracellular calc
 
 **Figure 3.:** (A) HeLa cells were untreated or pretreated with the calcium-chelating agent BAPTA-AM (10 μM) for 1 hr and then left uninfected or infected with the M90T strain for 2 hr. Immunoblot analysis were performed using anti-Capns1, -SUMO1, -SUMO2/3 and -tubulin antibodies. (B) HeLa cells were untreated or treated with the calcium ionophore ionomycin (2.5 μM) and increasing doses of CaCl2(0.1 to 5 nM) for 30 min, with or without addition of the calpain inhibitor MDL28170 (100 μM). Immunoblot analysis were performed using anti-Capns1, -SUMO1 and -tubulin antibodies. The 18 kDa truncated Capns1 fragment is indicated by an arrow. (C) HT1080 cells, stably expressing GFP-tagged PML-IV, were untreated or treated with ionomycin (2.5 μM) and increasing doses of CaCl2(0.1 to 5 nM) for 30 min, with or without addition of the calpain inhibitor MDL28170 (100 μM). Immunoblot analysis were performed using anti-GFP, -Capns1 and -tubulin antibodies. The 18 kDa truncated Capns1 fragment is indicated by an arrow.
 
-## SAE2 is a direct calpain substrate
+### SAE2 is a direct calpain substrate
 
 As Shigella infection leads to a massive decrease in a large number of SUMO conjugates at late time post-infection, we hypothesized that calpain protease activity could target key proteins of the sumoylation machinery. We examined the levels of E1 and E2 SUMO enzymes in HeLa cells upon Shigella infection. Whereas the levels of SAE1 and UBC9 were not affected, a strong decrease in the level of SAE2 was observed (Figure 4A). The degradation of SAE2 triggered by Shigella infection was totally abrogated in cells treated with the calpain inhibitor MDL28170 (Figure 4A). In a similar manner, the loss of SAE2 was prevented in cells transfected with siRNAs against Capns1 or in Capns1 KO MEFs (Figure 4B–C). Thus the E1 enzyme SAE2 is proteolytically degraded by calpains upon Shigella infection, leading to the observed massive decrease in SUMO conjugates. Intriguingly, whereas the loss in SAE2 was barely visible before 2 hr post-infection (Figure 4C), the decrease in global sumoylation started as early as 30 min (Figure 1A and Figure 1—figure supplement 1A,B). The mechanisms responsible for the early reduction in SUMO conjugates triggered by Shigella infection remain to be elucidated (see Discussion). A direct involvement of increased SENP activities seems unlikely as the loss in SUMO-modified proteins is, like SAE2 loss, strictly dependent on calpains (Figure 2A–C), and no link has been so far established between calpain and SENP activities. In line with this, we failed to detect any significant desumoylase activities in total non-denatured Shigella lysates using fluorogenic 7-amino-4-methylcoumarin SUMO substrates (SUMO1-AMC and SUMO2-AMC) (Figure 4—figure supplement 1 and and Figure 4—figure supplement 1—source data 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/27444/elife-27444-fig4-v4.jpg)
+
+**Figure 4.:** (A) HeLa cells were pretreated by vehicle (DMSO) or 100 μM MDL28170 for 1 hr and then left uninfected or infected with the M90T strain or the mxiD mutant for 2 hr. Immunoblot analysis were performed using anti-SAE1, -SAE2 (Ab22104), -UBC9 and -tubulin antibodies. (B) HeLa cells were treated with control siRNA (siScr) or Capns1 siRNA and then left uninfected or infected with the M90T strain or the mxiD mutant for 2 hr. Immunoblot analysis were performed as in C. (C) Capns1+/+ (WT) or Capns1−/− (KO) MEFs were uninfected (UI) or infected with Shigella for the indicated time. Immunoblot analysis were performed as in C. (D) Lanes 1–8: HeLa cells were left uninfected or infected with the M90T strain for the indicated times. Lane 9: HeLa cells were pretreated with 100 μM MDL28170 for 1 hr and then infected with the M90T strain in the presence of 100 μM MDL28170 for 3 hr. Immunoblot analysis was performed using a second anti-SAE2 antibody (D15C11). Arrow indicates full length SAE2 and arrowheads indicate SAE2 cleavage products. (E) In vitro proteolysis of SAE2 by calpain-1 or calpain-2 visualized by immunoblotting using SAE2 antibody (D15C11). Recombinant SAE2 was incubated with two different concentrations (0.2U or 2U) of calpain-1 or −2 at 30°C for 20 min. Arrow indicates full length SAE2 and arrowheads indicate SAE2 cleavage products.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/27444/elife-27444-fig4-figsupp1-v4.jpg)
+
+**Figure 4—figure supplement 1.:** Reaction buffer alone (control), Shigella M90T non-denatured lysates, or recombinant SENP2 (40 nM) used here as a positive control were incubated with SUMO1-AMC (left) or SUMO2-AMC (right) and their activities were determined by release of fluorescent AMC at 30 min (emission length 460 nm).
+
 Unlike most proteases that result in extensive degradation of proteins, calpains, which recognize the overall conformation of targeted substrate proteins, usually produces large limited-proteolytic fragments cleaved at the boundary of two domains (Sorimachi et al., 2012). The absence of detectable SAE2 proteolytic fragments in immunoblot performed on protein extracts from Shigella-infected cells (Figure 4A–C) suggests that the epitope of SAE2 recognized by our antibody was further cleaved by calpains. By using another SAE2 antibody, that recognizes a peptide localized around a glutamine in position 421, we were able to detect two different SAE2 proteolytic fragments migrating around 85 kDa and 70 kDa in Shigella-infected cells (Figure 4D). This result suggests the existence of at least two major calpain cleavage sites on SAE2. We confirmed this finding in vitro by incubating purified recombinant human SAE2 protein with two different doses of purified calpain-1 (which requires micromolar calcium levels for activation) or calpain-2 (which requires millimolar calcium levels for activation) (Figure 4E). Incubation of SAE2 with calpain-1 or calpain-2 produced two cleavage products, which are similar in size to those observed in Shigella-infected cells. These results identify SAE2 as a novel physiological calpain substrate in vitro and in cells.
 
-## Sumoylation limits Shigella invasion and the formation of actin-rich foci
+### Sumoylation limits Shigella invasion and the formation of actin-rich foci
 
 We then evaluated the functional consequences of loss of sumoylation on the pathogenicity of Shigella in human epithelial cells depleted for UBC9 using siRNAs and tamoxifen-inducible Ubc9 KO MEFs (Demarque et al., 2011). In a previous study, we reported that a decrease in SUMO conjugation triggered by SAE2 knockdown favored Shigella entry into host cells (Fritah et al., 2014). In a similar manner, suppression of UBC9 in HeLa cells led to a significant increase in the number of intracellular Shigella (Figure 5A–B and Figure 5—source data 1). These results correlate with an increase in Shigella-induced actin-rich foci, corresponding to the bacteria entry sites (Figure 5C–D and Figure 5—source data 1). A similar increase in Shigella entry and actin polymerization was observed in Ubc9 KO MEFs when compared to their wild-type counterparts (Figure 5E–H and Figure 5—source data 1). Of note, no noticable alteration of the actin cytoskeleton could be detected in sumoylation-deficient cells in the absence of Shigella infection (Figure 5—figure supplement 1A–B). Thus, lowering host cell sumoylation facilitates Shigella-induced cytoskeletal rearrangements and bacterial uptake into host cells.
 
-## Sumoylation of RhoGDIα regulates Shigella entry
+![Figure 5.](https://cdn.elifesciences.org/articles/27444/elife-27444-fig5-v4.jpg)
+
+**Figure 5.:** (A) HeLa cells were treated with siRNAs for UBC9 and SAE2 or a control siRNA (siScr). Immunoblot analysis were performed using anti-SUMO1, -UBC9, -SAE2 and -tubulin antibodies. (B) Percentage of Shigella internalization upon siRNA-mediated knockdown of UBC9 and SAE2 in HeLa cells relative to control siRNA. Quantification was performed using the gentamicin protection assay (taken siScr value as 100%) 30 min post-infection. Each value is the mean of six independent experiments ± SEM. (C) Actin foci formation upon siRNA-mediated knockdown of UBC9 and SAE2 in HeLa cells. Samples were fixed and processed for actin staining 10 min post-infection. The average number of actin foci per cell ±s.d. is indicated (n = 4, at least 50 cells counted per condition). (D) Representative images of Shigella-induced actin foci in siRNA-treated HeLa cells after 10 min infection. Samples were processed for bacterial LPS (green), actin (red) and nuclei (blue) staining. (E) Primary MEFs from Ubc9+/+/T2 (WT) and Ubc9fl/-/T2 (KO) mice (Demarque et al., 2011) were treated for 5 days with 4-hydroxy-tamoxifen. Levels of global sumoylation and UBC9 were assessed by immunoblot analysis. Tubulin was used as control. (F) Percentage of Shigella internalization in Ubc9 WT and Ubc9 KO MEFs 30 min post-infection. Quantification is as in B (taken Ubc9 WT value as 100%). Each value is the mean of nine independent experiments ± SEM. (G) Actin foci formation in Ubc9 WT and Ubc9 KO MEFS. Samples were fixed and processed for actin staining 10 min post-infection. The average number of actin foci per cell ±s.d. is indicated (n = 3, at least 50 cells counted per condition). (H) Representative images of Shigella-induced actin foci in Ubc9 WT or Ubc9 KO MEFs 10 min post-infection. Samples were processed for bacterial LPS (green), actin (red) and nuclei (blue) staining.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/27444/elife-27444-fig5-figsupp1-v4.jpg)
+
+**Figure 5—figure supplement 1.:** (A) HT1080 cells, stably expressing an auxin-inducible degron to destroy UBC9 (manuscript in preparation), were left untreated or treated for 24 hr with 200 µM auxin to inhibit sumoylation. Immunoblot analysis was performed using antibodies specific for SUMO1, UBC9, SUMO2/3 and SP100. Ponceau staining was used as a loading control. Arrowhead indicates unmodified SP100 and arrows indicate SUMO1-modified forms of SP100. (B) Actin cytoskeleton in uninfected HT1080 cells treated or not with auxin for 24 hr. Samples were fixed and processed for SP100 (green), actin (red) and nuclei (blue) staining. The absence of SP100 in nuclear bodies was used as a proxy for loss of cellular sumoylation.
+
+### Sumoylation of RhoGDIα regulates Shigella entry
 
 To gain molecular insight into how hyposumoylation favors Shigella infection, we looked for putative relevant SUMO susbtrates among cytosolic sumoylated proteins identified in previous proteome-wide studies (Fritah et al., 2014; Impens et al., 2014). Cellular invasion by Shigella is known to require massive rearrangements of the host actin cytoskeleton. We thus focused on Rho GDP-dissociation inhibitor alpha (RhoGDIα) given its important role in actin cytoskeleton dynamics (Garcia-Mata et al., 2011). Small Rho GTPases are known to be key regulators of actin polymerization and RhoGDIs to down-regulate their biological activity. Notably, RhoGDIα can extract Rho GTPases from membranes and keep them in an inactive state in the cytosol away from their sites of action at membranes. Activation of Rho GTPases family members Rac1, Cdc42 and RhoA is required for Shigella flexneri entry process into epithelial cells (Adam et al., 1996; Mounier et al., 1999). Interestingly, sumoylation of RhoGDIα on lysine138 (K138) has been shown to increase its binding activity to Rho GTPases thereby restraining their biological activity (Yu et al., 2012). We thus speculated that a decrease in RhoGDIα sumoylation could increase the recruitment of Rho GTPases at plasma membrane, thus facilitating their activation by Shigella for its internalization.
 
 As a first step, we analyzed the effect of depleting RhoGDIα on Shigella entry and actin polymerization in human epithelial cells. A significant increase in intracellular bacteria was visible 30 min post-infection in RhoGDIα knockdown cells when compared to control cells (Figure 6A–B and Figure 6—source data 1). This increase (~60%) was comparable to the increase seen in cells impaired for sumoylation (Figure 5B–F). In addition, fluorescence microscopy demonstrated an increased number of actin foci in RhoGDIα-depleted cells in comparison to control cells (Figure 6C). Hence, suppressing RhoGDIα activity was sufficient to increase the number of Shigella entry sites. Next, to study the impact of sumoylation on RhoGDIα activity in Shigella pathogenesis, we compared the effect of wild-type RhoGDIα to that of the corresponding SUMO-deficient mutant (RhoGDIα K138R) (Yu et al., 2012) on actin foci formation. Of note, this sumoylation site, that obbeys the canonical consensus motif ψ–K–X–E (where ψ is a large hydrophobic residue), is evolutionarily conserved, suggesting that it may be an important feature of RhoGDIα regulatory function (Figure 6—figure supplement 1). We took advantage of the fact that both RhoGDIα plasmids lack the 3'-UTR sequence to design a 3'-UTR-targeting siRNA that silenced only endogenous RhoGDIα. Restoration experiments using either GFP-tagged wild-type RhoGDIα or K138R mutant were performed in HeLa cells knockdown for endogenous RhoGDIα (Figure 6D). Although the knockdown efficiency of the 3'-UTR-targeting siRNA was not total (~60% knockdown), significantly higher number of Shigella-induced actin foci was observed by fluorescence microscopy in cells expressing RhoGDIα K138R, compared to that observed in cells expressing the wild type form (Figure 6E–F and Figure 6—source data 1). This result demonstrates that impaired sumoylation of RhoGDIα favors Shigella entry and could thus contribute to the increased infectivity observed in sumoylation-deficient cells.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/27444/elife-27444-fig6-v4.jpg)
+
+**Figure 6.:** (A) HeLa cells were treated with siRNA for RhoGDIα or a control siRNA (siScr). Immunoblot analysis was performed using anti-RhoGDIα and -tubulin antibodies. (B) Percentage of Shigella internalization upon siRNA-mediated knockdown of RhoGDIα relative to control siRNA. The percentage of internalized bacteria was quantified using the gentamicin protection assay (taken siScr value as 100%) 30 min post-infection. Each value is the mean of eleven independent experiments ± SEM. (C) Representative images of Shigella-induced actin foci in siRNA-treated HeLa cells after 10 min infection. Samples were processed for bacterial LPS (green), actin (red) and nuclei (blue) staining. (D) Hela cells co-transfected with siRhoGDIα (targeting the 3’UTR) together with either GFP-tagged sRhoGDIα WT or GFP-tagged RhoGDIα K138R. Immunoblotting was performed using a RhoGDIα antibody. Arrows indicate GFP-tagged and endogenous RhoGDIα proteins. (E) Hela cells co-transfected as in D and infected with M90T for 10 min. Samples were fixed and processed for actin staining 10 min post-infection. The average number of actin foci per cell ±s.d. is indicated (n = 4, at least 50 cells counted per condition). (F) Representative images of Shigella-induced actin foci in HeLa cells co-transfected as in D with GFP-tagged RhoGDIα constructs (green) after 10 min infection. Samples were processed for actin (red) and nuclei (blue) staining. (G) Immunoblot analysis was performed on whole-cell lysates or plasma membrane fractions (recovered by ultracentrifugation) from Ubc9 WT or Ubc9 KO MEFs using anti-Cdc42, -RhoA, -Rac1, - RhoGDIα, -UBC9 and -tubulin antibodies. (H) Quantification of the immunoblot signals obtained from Ubc9 WT or Ubc9 KO MEF protein extracts are presented as RhoGTPase signal (Cdc42, RhoA or Rac1, as indicated on the x-axis) relative to tubulin signal (mean of five independent experiments ± s.d.).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/27444/elife-27444-fig6-figsupp1-v4.jpg)
+
+**Figure 6—figure supplement 1.:** Alignment has been done using the CLUSTALW2 online software (http://www.ebi.ac.uk/Tools/msa/clustalw2/). Sequences used are from the following organisms: Bos taurus (GDIR1_BOVIN, P19803), Equus caballus (F6W039_HORSE, F6W039), Canis familiaris (F1PL93_CANFA, F1PL93), Mus musculus (GDIR1_MOUSE, Q99PT1), Rattus norvegicus (GDIR1_RAT, QXI73), Felis catus (M3WQS4_FELCA, M3WQS4), Sarcophilus harrisii (G3WB53_SARHA, G3WB53) and Homo sapiens (GDIR1_HUMAN, P52565).
+
 To next assess whether sumoylation inhibition impacts the RhoGDIα inhibitory function on Rho GTPase activity, we analyzed the membrane localization of three Rho GTPases (RhoA, Cdc42 and Rac1) in non-infected Ubc9 WT and Ubc9 KO MEFs. It has been shown that depletion of RhoGDIα, although it decreases the protein levels of the Rho GTPAses through a destabilization process, it significantly increases the proportion of membrane-bound active Rho GTPases (Boulter et al., 2010). Enrichment in the cell membrane fraction using ultracentrifugation revealed that, despite similar amounts of GTPases in total protein extracts, a modest yet significant increase in the amount of membrane-bound Rho GTPases was visible in sumoylation-deficient MEFs, relative to wild-type MEFs (Figure 6G–H and Figure 6—source data 1). These results indicate that loss of sumoylation favors accumulation of Rho GTPases at the plasma membrane, thus providing a supportive environment for Shigella entry into host cell.
 
-## Endogenous RhoGDIα and SUMO proteins are recruited at bacteria entry sites and Shigella rapidly impairs RhoGDIα sumoylation
+### Endogenous RhoGDIα and SUMO proteins are recruited at bacteria entry sites and Shigella rapidly impairs RhoGDIα sumoylation
 
 The RhoGDI–Rho GTPase complex has been shown to shuttle between the cytosol and the membrane (Garcia-Mata et al., 2011). To thus visualize the potential recruitment of engodenous SUMO to the sites of bacterial entry, we performed immunofluorescence experiments in Shigella-infected Ubc9 WT MEFs using SUMO1 and SUMO2/3 antibodies. A consistant enrichment of both SUMO1 and SUMO2/3 was observed at the actin-rich foci soon after infection (Figure 7A–D, upper panels and black bars, and Figure 7—source data 1). Similar findings were obtained in infected HeLa cells (Figure 7—figure supplement 1). Immunostaining for SUMO1 and SUMO2/3 performed in Ubc9 KO MEFs revealed a significant decrease in SUMO signal at the Shigella entry sites. This finding indicates that the presence of SUMO at actin foci in Ubc9 WT MEFs corresponds to SUMO-conjugated proteins and not to free SUMO1 or SUMO2/3 (Figure 7A–D, lower panels and white bars). We then looked at the distribution of RhoGDIα upon Shigella infection. This revealed a noticable enrichment at actin-rich foci in Ubc9 WT MEFs. Such an accumulation is still observable in the sumoylation-deficient Ubc9 KO MEFs, suggesting that sumoylation does not impact RhoGDIα recruitment to plasma membrane (Figure 7E–F and Figure 7—source data 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/27444/elife-27444-fig7-v4.jpg)
+
+**Figure 7.:** (A) SUMO1 accumulates at Shigella (M90T) entry sites. Representative ApoTome-generated micrographs of Shigella-infected Ubc9 WT or Ubc9 KO MEFs after 10 min infection. Samples were fixed and processed for immunostaining using anti-SUMO1 antibody (green) and staining of actin (red) and nuclei (blue) (white square, inset). (B) The Pearson’s coefficient (Rr) was used to measure the signal intensity correlation between SUMO1 and Shigella-induced actin foci stainings. Data are means ±SEM (at least 40 foci analyzed per condition). p value calculated as described in Materials and Methods. (C) SUMO2/3 accumulates at Shigella (M90T) entry sites. Same as in A using a SUMO2/3 antibody. (D) Same as in B with SUMO2/3 signal. (E) Recruitment of RhoGDIα is at Shigella (M90T) entry sites. Same as in A using a RhoGDIα antibody. (F) Same as in B with RhoGDIα signal. NS: non significant.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/27444/elife-27444-fig7-figsupp1-v4.jpg)
+
+**Figure 7—figure supplement 1.:** Cells were infected with Shigella strain M90T for 10 min at 37°C. Samples were fixed and processed for immunostaining using anti-SUMO1 (green, upper panel) or anti-SUMO2/3 antibody (green, lower panel) and staining of actin (red) and nuclei (blue) (white square, inset). Representative ApoTome-generated micrographs are presented (white square, inset).
 
 Finally, we assessed whether the global loss of SUMO conjugates induced by Shigella infection translates into a similar decrease in the sumoylation state of endogenous RhoGDIα. Immunoprecipitation followed by western blotting in uninfected cells revealed, in addition to the unmodified ~25 kDa RhoGDIα, a ~40 kDa RhoGDIα species, which was detected by two different anti-SUMO1 antibodies (Y299 and 21C7 clones), indicating SUMO-modified RhoGDIα (Figure 8). We then investigated the impact of Shigella infection on RhoGDIα sumoylation with time. Whereas the levels of unmodified RhoGDIα remained unaffected, we observed the complete disappearance of SUMO-RhoGDIα as quickly as 30 min post-infection (Figure 8). The reduction in the global amount of SUMO1 conjugates was only moderate in these conditions (Figure 1 and Figure 1—figure supplement 1B), indicating that RhoGDIα is highly sensitive to sumoylation inhibition.Thus, RhoGDIαis a bona fide SUMO substrate in vivo and SUMO-modified RhoGDIαis rapidly lost upon Shigella infection.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/27444/elife-27444-fig8-v4.jpg)
 
-**Figure 8.:** Shigella infection leads to loss in SUMO- RhoGDIα.Endogenous RhoGDIα is modified by SUMO1 and rapidly desumoylated upon Shigella infection. Whole-cell extracts harvested from uninfected or Shigella (M90T)-infected Hela cells (from 0 to 120 min post-infection) were subjected to immunoprecipitation (IP) using anti-RhoGDIα or control IgG. Immunoprecipitates (left panel) and input lysates (right panel) were analysed by immunoblot analysis using anti-RhoGDIα, and -SUMO1 (clones Y299 and 21C7) antibodies. Arrowhead indicates unmodified RhoGDIα and arrow indicates SUMO1- RhoGDIα.
+**Figure 8.:** Endogenous RhoGDIα is modified by SUMO1 and rapidly desumoylated upon Shigella infection. Whole-cell extracts harvested from uninfected or Shigella (M90T)-infected Hela cells (from 0 to 120 min post-infection) were subjected to immunoprecipitation (IP) using anti-RhoGDIα or control IgG. Immunoprecipitates (left panel) and input lysates (right panel) were analysed by immunoblot analysis using anti-RhoGDIα, and -SUMO1 (clones Y299 and 21C7) antibodies. Arrowhead indicates unmodified RhoGDIα and arrow indicates SUMO1- RhoGDIα.
 
 ## Discussion
 
@@ -100,50 +144,396 @@ In addition, our work reveals a previously unknown strategy for modulating the g
 
 ## Materials and methods
 
-## Bacterial strains and cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (Shigella flexneri serotype 5a)</td>
+      <td>M90T strain</td>
+      <td>PMID: 6279518</td>
+      <td>Taxonomy ID: 1086030</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Shigella flexneri serotype 5a</td>
+      <td>mxiD</td>
+      <td>PMID: 8437520</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Shigella flexneri serotype 5a)</td>
+      <td>mxiE</td>
+      <td>PMID: 12142411</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Shigella flexneri serotype 5a)</td>
+      <td>ospG</td>
+      <td>PMID: 16162672</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Shigella flexneri serotype 5a)</td>
+      <td>ipaB</td>
+      <td>PMID: 1582426</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Shigella flexneri serotype 5a)</td>
+      <td>ipaC</td>
+      <td>PMID: 19165331</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Shigella flexneri serotype 5a)</td>
+      <td>ipaC/pC57</td>
+      <td>PMID: 19165331</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Shigella flexneri serotype 5a)</td>
+      <td>ipaC/pC351</td>
+      <td>PMID: 19165331</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Shigella flexneri serotype 5a)</td>
+      <td>virA</td>
+      <td>PMID: 22423964</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Shigella flexneri serotype 5a)</td>
+      <td>ipgD</td>
+      <td>PMID: 8478058</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>cell line (Hela)</td>
+      <td>CCL-2</td>
+      <td>ATCC</td>
+      <td>ATCC CCL2/CVCL_0030</td>
+    </tr>
+    <tr>
+      <td>cell line (HT1080)</td>
+      <td>CCL-121</td>
+      <td>ATCC</td>
+      <td>ATCC CCL-121/CVCL_0317</td>
+    </tr>
+    <tr>
+      <td>cell line (HT1080)</td>
+      <td>GFP-PML-IV</td>
+      <td>PMID: 23530056</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>cell line (Hela)</td>
+      <td>TAP-SUMO1</td>
+      <td>PMID: 25097252</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>cell line (Hela)</td>
+      <td>TAP-SUMO2</td>
+      <td>PMID: 25097252</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>cell line (HT1080)</td>
+      <td>UBC9-auxin degron</td>
+      <td>this paper</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (siRNA)</td>
+      <td>control</td>
+      <td>Dharmacon</td>
+      <td>#D-001810–10</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (siRNA)</td>
+      <td>Capns1</td>
+      <td>Dharmacon</td>
+      <td>#L-009979–00</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (siRNA)</td>
+      <td>Ubc9</td>
+      <td>Dharmacon</td>
+      <td>#L-004910–00</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (siRNA)</td>
+      <td>SAE2</td>
+      <td>Dharmacon</td>
+      <td>#L-005248–01</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (siRNA)</td>
+      <td>RhoGDIα</td>
+      <td>Dharmacon</td>
+      <td>#L-016253–00</td>
+    </tr>
+    <tr>
+      <td>transfected construct (Plasmid)</td>
+      <td>pEGFP-RhoGDIα WT</td>
+      <td>PMID: 22393046</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>transfected construct (Plasmid)</td>
+      <td>pEGFP-RhoGDIα K138R</td>
+      <td>PMID: 22393046</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-SAE1</td>
+      <td>Abcam</td>
+      <td>#ab97523/AB_10681015</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-SAE2</td>
+      <td>Abcam</td>
+      <td>#ab22104/AB_446785</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-SUMO1</td>
+      <td>Abcam</td>
+      <td>Y299/AB_778173</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-SUMO2/3</td>
+      <td>Abcam</td>
+      <td>8A2/AB_1658424</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-UBC9</td>
+      <td>Abcam</td>
+      <td>EP2938Y/AB_1267373</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-SUMO1</td>
+      <td>DSHB Iowa</td>
+      <td>21C7/AB_2198257</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Calpastatin</td>
+      <td>Cell Signaling Technology</td>
+      <td>#4146/AB_2244162</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-SAE2</td>
+      <td>Cell Signaling Technology</td>
+      <td>D15C11/AB_10889561</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Cdc42</td>
+      <td>Cell Signaling Technology</td>
+      <td>11A11/AB_10695738</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-RhoA</td>
+      <td>Cell Signaling Technology</td>
+      <td>67B9/AB_10693922</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Tubulin</td>
+      <td>Cell Signaling Technology</td>
+      <td>DM1A/AB_1904178</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-RanGAP1</td>
+      <td>Santa Cruz</td>
+      <td>C-5/AB_2176987</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GFP</td>
+      <td>Santa Cruz</td>
+      <td>C-2</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-RhoGDIα</td>
+      <td>Merck Millipore</td>
+      <td>#06–730/AB_310229</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Capns1</td>
+      <td>Merck Millipore</td>
+      <td>MAB3083/AB_2070014</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Rac1</td>
+      <td>Merck Millipore</td>
+      <td>23A8/AB_309712</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-LPS</td>
+      <td>PMID: 25097252</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-SP100</td>
+      <td>PMID: 7559785</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Phalloidin–Tetramethylrhodamine B isothiocyanate</td>
+      <td>Sigma</td>
+      <td>P1951 / AB_2315148</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Dapi</td>
+      <td>Sigma</td>
+      <td>D9542</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Cytochalasin D</td>
+      <td>Sigma</td>
+      <td>C8273</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>MDL 28170</td>
+      <td>Sigma</td>
+      <td>M6690</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Ionomycin</td>
+      <td>Sigma</td>
+      <td>I3909</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>BAPTA-AM</td>
+      <td>Enzo life sciences</td>
+      <td>BML-CA411-0025</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Indole-3-acetic acid</td>
+      <td>Sigma</td>
+      <td>I5148</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>N-Ethylmaleimide</td>
+      <td>Sigma</td>
+      <td>E3876</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Recombinant SAE2</td>
+      <td>Novus biologicals</td>
+      <td>NBP2-50574-20ug</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Recombinant Calpain-1</td>
+      <td>Merck Millipore</td>
+      <td>208712</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>GST-SENP2cat</td>
+      <td>this paper</td>
+      <td>NP_06760.2</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>SUMO1-AMC</td>
+      <td>Boston Biochem</td>
+      <td>UL-551</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>SUMO2-AMC</td>
+      <td>Boston Biochem</td>
+      <td>UL-758</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Icy software</td>
+      <td>Institut Pasteur</td>
+      <td>PMID: 22743774</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and cell culture
 
 Shigella flexneri serotype 5a strains were isolated on congo red agar plates. The invasive wild-type strain M90T, its isogenic non-invasive derivative mxiD (impaired for T3SS) and isogenic mutants for various effectors (mxiE, ospG, ipaB, ipaC, virA and ipgD) were used. Two strains expressing IpaC variants (ipaC/pC57 and ipaC/pC351) were also used (Mounier et al., 2009). For infection experiments, strains were cultured in BTCS medium (Difco) overnight at 37°C with agitation. Subcultures were performed for 3 hr to reach the exponential phase and resuspended in DMEM medium (Invitrogen). Human cell lines HeLa CCL-2 and HT1080 were obtained from ATCC and grown according to the supplier’s recommendations. The HT1080 cell line stably expressing GFP-PML IV, generated in our lab, was maintained as previously reported (Erker et al., 2013). HeLa cells overexpressing TAP-SUMO-1 and TAP-SUMO-2, kindly provided by Ronald T. Hay (University of Dundee, Scotland, UK), were maintained as previously reported (Fritah et al., 2014). None of these cell lines belongs to the list of commonly misidentified cell lines (ICLAC). All cell lines cell has been routinely tested for mycoplasma contamination using the PCR Mycoplasma Test Kit II (PromoKine).
 
-## siRNA and plasmid transfection
+### siRNA and plasmid transfection
 
 Hela cells were transfected for 72 hr using Lullaby reagent (OZ biosciences) with siRNA from Dharmacon against Capns1 (#L-009979–00), UBC9 (#L-004910–00), SAE2 (#L-005248–01), RhoGDIα (#L-016253–00) or control siRNA (#D-001810–10, Dharmacon) according to the manufacturers’instructions. The pEGFP-RhoGDIα WT or pEGFP-RhoGDIα K138R expression vectors were, respectively, a kind gift from Dr. Mark R. Philips (New York University School of Medicine, New York) and Dr. Chuanshu Huang (New York University School of Medicine, New York). HeLa cells were transfected with plasmids by using Lipofectamine 2000 (Invitrogen) according to the manufacturer’s protocol.
 
-## Antibodies and reagents
+### Antibodies and reagents
 
 For immunoblotting and immunofluorescence experiments we used the following antibodies. Rabbit polyclonal anti-SAE1 (#ab97523) and anti-SAE2 (#ab22104), rabbit monoclonal anti-SUMO1 (Y299) and anti-UBC9 (EP2938Y) and mouse monoclonal anti-SUMO2/3 (8A2) were purchased from Abcam. Mouse monoclonal anti-SUMO1 (21C7) was from DSHB Iowa. Rabbit polyclonal anti-Calpastatin (#4146), rabbit monoclonal anti-SAE2 (D15C11), anti-Cdc42 (11A11) and anti-RhoA (67B9) and mouse monoclonal anti-Tubulin (DM1A) were purchased from Cell Signaling Technology. Mouse monoclonal anti-RanGAP1 (C-5) and anti-GFP (C-2) were purchased from Santa Cruz. Rabbit polyclonal anti-RhoGDIα (#06–730) and mouse monoclonal anti-Capns1 (MAB3083) and anti-Rac1 (23A8) were purchased from Merck Millipore. Rabbit polyclonal antibodies to Shigella flexneri 5a LPS and SP100 (Carvalho et al., 1995) are home made. TRITC-labelled phalloidin for vizualization of actin cytoskeleton in mammalian cells, Dapi for labelling nuclei and Cytochalasin D for blocking actin cytoskeleton were purchased from Sigma. The calpain inhibitor MDL28170 (Z-Val-Phe-aldehyde) (Sigma) was added at a 100 mM final concentration to the culture medium. Cytochalasin D (Sigma) was added at 15 min prior to infection (5 μM). The calcium ionophore ionomycin (Sigma) and CaCl2 (Sigma) were used at indicated doses as calpains inducers. BAPTA-AM (10 μM, Enzo Life Sciences) was used as a cell permeant Ca2+ chelator to inhibit intracellular calpains activity.
 
-## Invasion assays
+### Invasion assays
 
 Bacterial invasion of human cells and MEFs was performed using gentamycin protection assay (Lapaquette et al., 2010). Epithelial cell monolayers were infected with the indicated moi (multiplicity of infection). After 10 min of centrifugation at 1000 g and a 10 min incubation period at 37°C (5% CO2), the infected cells were washed twice with PBS, and fresh cell culture medium containing 50 mg/mL of gentamicin was added for 1 hr. To determine the number of intracellular bacteria, the cell monolayer was washed twice with PBS and lysed with 1% Triton X-100 (Sigma) in PBS, then mixed, diluted and plated onto TCS agar plates to determine the number of colony forming unit (CFU) recovered from the lysed monolayer.
 
-## Auxin-inducible impaired sumoylation
+### Auxin-inducible impaired sumoylation
 
 HT1080 cells, stably expressing UBC9 fused to an auxin-inducible degron were used (manuscript in preparation). Degradation of the expressed UBC9-auxin degron fusion, leading to impaired sumoylation, was induced by adding auxin, indole-3-acetic acid (Sigma; 200 µM final), for 24 hr to the cell culture medium (DMEM + Glutamax, Gibco).
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 After bacterial infection, cells were fixed with 4% paraformaldehyde (PFA) and immunostained overnight at 4°C, with the indicated specific primary antibodies. A 1 hr incubation with secondary antibodies and/or TRITC-labelled phalloidin was performed at room temperature. To determine the number of actin foci per cell, at least 100 Shigella-infected cells were counted. Each microscopy image is representative of at least three independent experiments. Intestinal samples from newborn mice were fixed for 2 hr in 4% PFA and kept in 70% ethanol before paraffin embedding. Microtome sections of 7 μm were prepared. Sections were rehydrated, permeabilized with 0.1% Triton X-100 for 15 min, saturated with Ultra-V-Block (Thermo Scientific) and then incubated overnight at 4°C with SUMO2/3 antibody. After washing, the sections were incubated with a goat anti-rabbit Cy3-conjugated secondary antibody (Jackson Immunotech) for 1 hr at room temperature. Nuclei were counternstained with DAPI, and slides were mounted (Prolong, Life technologies). All images were acquired using Apotome microscope (Zeiss). Pearson’s correlation coefficient (Rr) was used as a measure of the co-localization and calculated using the colocalization studio plugin of Icy software (Lagache et al., 2015).
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Whole-cell protein extracts were prepared from cell monolayer by adding directly 2x Laemmli sample buffer (Bio-rad). Newborn mice gut was dissected and homogenized in 1 mL of lysis buffer (50 mM Tris-HCl pH8.0, 0,1 mM EDTA, 200 mM NaCl, 0,5% NP40, 10% glycerol, 20 mM N-ethylmaleimide (NEM), 1x Protease inhibitor cocktail tablets (Roche)). Plasma membrane proteins were enriched by harvesting cells in a non-denaturing lysis buffer (50 mM Tris-HCl, pH 7.4, 150 mM NaCl, 5 mM MgCl2, 1 mM EDTA, Protease inhibitor cocktail tablets). Cells were disrupted by sonication (three times on ice), followed by centrifugation for 10 min at 1000 g (4°C) to remove the nuclear fraction (pellet). An ultracentrifugation (90 min at 100 000 g) was then performed on the supernatant, the pellet containing the membrane fraction was resuspended in lysis buffer. Equal amounts of protein were subjected to SDS-PAGE (4–15% Criterion TGX gradient protein gel, Bio-rad), transferred on nitrocellulose membrane (Trans-blot turbo, Bio-rad), and then immunobloted using the indicated primary antibodies. Anti-rabbit and anti-mouse antibodies conjugated with IR800 or IR680 dyes were used as secondary antibodies, and the infrared signal was integrated using an infrared imaging system (LI-COR Odyssey). The bands intensities were calculated using the software associated with the Odyssey system (Image studio).
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 For immunoprecipitation of RhoGDIα, cells were lysed in buffer (50 mM Tris-HCl pH 8.0, 0,1 mM EDTA, 200 mM NaCl, 0,5% NP40, 10% glycerol, 20 mM NEM, 1x Protease inhibitor cocktail tablets (Roche)) and incubated for 2 hr at 4°C with anti-RhoGDIα antibody. Immune complexes were collected by incubation for 1 hr at 4°C with ProteinG/A sepharose beads (GE Healthcare) and washed three times in lysis buffer. Whole cell lysate (input) or cell lysates immunoprecipitated with anti-RhoGDIα were subjected to SDS-PAGE followed by immunoblotting with anti-RhoGDIα, anti-SUMO1 and anti-SUMO2/3.
 
-## In vitro cleavage of SAE2 by calpain
+### In vitro cleavage of SAE2 by calpain
 
 Recombinant SAE2 (Novus biologicals) (10 μg) was digested with two different concentrations of calpain-1 (Merck Millipore; 0.2 and 2 U/mg) in reaction buffer (50 mM Tris-HCl, pH 7.5, 100 mM NaCl, 2 mM DTT, 1 mM EDTA, 3 mM CaCl2) at 30°C for 20 min. The reaction was stopped by boiling samples for 5 min after the addition of an equal volume of 2X loading sample buffer (Bio-rad). Samples were then subjected to immunoblot analysis.
 
-## SUMO-AMC assays
+### SUMO-AMC assays
 
 For non-denatured Shigella lysates, 4 × 109 bacteria were centrifuged and resuspended in 400 µL of lysis buffer (50 mM Tris, 150 mM NaCl, protease inhibitor cocktail (Roche), 0,5% Triton) and then sonicated. DTT was added to the lysate at a final concentration of 5 mM. Bacterial lysate was diluted to 1/10 within reaction buffer (50 mM Tris, 150 mM NaCl, 0,75 mg/mL BSA, 2 mM cysteine and 1 mg/mL Chaps). Recombinant GST fusion of the SENP2 catalytic domain was added in the reaction buffer at a final concentration of 40 nM. SUMO1-AMC or SUMO-2-AMC (Boston Biochem) were added in the diluted sample at a final concentration of 100 nM, in a total volume of 200 µL. Liberation of AMC at room temperature during 60 min was monitored in a fluorimetric microplate reader (Infinite 200 pro, Tecan) with excitation at 380 nm and emission at 460 nm.
 
-## Statistical methods
+### Statistical methods
 
 All experiments were performed at least three times. Statistical analyses were performed using two-tailed Student’s t-test to calculate p-values. Statistical analyses on Pearson’s correlation coefficients (Rr) were performed using a Fisher r-to-z transformation and then a two-tailed z-test on z values obtained.
 
-## Ethic issues
+### Ethic issues
 
 Work on animals was conducted under animal study protocols #HA0042 approved by the Committeee of the Institut Pasteur for ethics in animal experimentation (CETEA) for its compliance with ethics rules (3Rs, cost-benefit balance), in application of the European Directive 2010/63/EU and of the derived French regulation.

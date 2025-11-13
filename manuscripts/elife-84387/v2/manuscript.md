@@ -9,14 +9,14 @@
 
 ### Affiliations
 
-1. https://ror.org/01qv8fp92 Neuroscience Center of Excellence, Louisiana State University Health Sciences Center New Orleans United States
-2. https://ror.org/01qv8fp92 Department of Cell Biology and Anatomy, School of Medicine, Louisiana State University Health Sciences Center New Orleans United States
+1. Neuroscience Center of Excellence, Louisiana State University Health Sciences Center New Orleans United States ([ROR:01qv8fp92](https://ror.org/01qv8fp92))
+2. Department of Cell Biology and Anatomy, School of Medicine, Louisiana State University Health Sciences Center New Orleans United States ([ROR:01qv8fp92](https://ror.org/01qv8fp92))
 
 † Corresponding author
 
 ## Abstract
 
-A synergistic combination of in vitro electrophysiology and multicompartmental modeling of rat CA1 pyramidal neurons identified TRPM4 channels as major drivers of cholinergic modulation of the firing rate during a triangular current ramp, which emulates the bump in synaptic input received while traversing the place field. In control, fewer spikes at lower frequencies are elicited on the down-ramp compared to the up-ramp due to long-term inactivation of the Na V channel. The cholinergic agonist carbachol (CCh) removes or even reverses this spike rate adaptation, causing more spikes to be elicited on the down-ramp than the up-ramp. CCh application during Schaffer collateral stimulation designed to simulate a ramp produces similar shifts in the center of mass of firing to later in the ramp. The non-specific TRP antagonist flufenamic acid and the TRPM4-specific blockers CBA and 9-phenanthrol, but not the TRPC-specific antagonist SKF96365, reverse the effect of CCh; this implicates the Ca 2+ -activated nonspecific cation current, I CAN , carried by TRPM4 channels. The cholinergic shift of the center of mass of firing is prevented by strong intracellular Ca 2+ buffering but not by antagonists for IP 3 and ryanodine receptors, ruling out a role for known mechanisms of release from intracellular Ca 2+ stores. Pharmacology combined with modeling suggest that [Ca 2+ ] in a nanodomain near the TRPM4 channel is elevated through an unknown source that requires both muscarinic receptor activation and depolarization-induced Ca 2+ influx during the ramp. Activation of the regenerative inward TRPM4 current in the model qualitatively replicates and provides putative underlying mechanisms for the experimental observations.
+A synergistic combination of in vitro electrophysiology and multicompartmental modeling of rat CA1 pyramidal neurons identified TRPM4 channels as major drivers of cholinergic modulation of the firing rate during a triangular current ramp, which emulates the bump in synaptic input received while traversing the place field. In control, fewer spikes at lower frequencies are elicited on the down-ramp compared to the up-ramp due to long-term inactivation of the NaV channel. The cholinergic agonist carbachol (CCh) removes or even reverses this spike rate adaptation, causing more spikes to be elicited on the down-ramp than the up-ramp. CCh application during Schaffer collateral stimulation designed to simulate a ramp produces similar shifts in the center of mass of firing to later in the ramp. The non-specific TRP antagonist flufenamic acid and the TRPM4-specific blockers CBA and 9-phenanthrol, but not the TRPC-specific antagonist SKF96365, reverse the effect of CCh; this implicates the Ca2+-activated nonspecific cation current, ICAN, carried by TRPM4 channels. The cholinergic shift of the center of mass of firing is prevented by strong intracellular Ca2+ buffering but not by antagonists for IP3 and ryanodine receptors, ruling out a role for known mechanisms of release from intracellular Ca2+ stores. Pharmacology combined with modeling suggest that [Ca2+] in a nanodomain near the TRPM4 channel is elevated through an unknown source that requires both muscarinic receptor activation and depolarization-induced Ca2+ influx during the ramp. Activation of the regenerative inward TRPM4 current in the model qualitatively replicates and provides putative underlying mechanisms for the experimental observations.
 
 ## Introduction
 
@@ -32,9 +32,21 @@ Previously, we found that when triangular shaped current ramps intended to emula
 
 ## Results
 
-## Asymmetric firing on symmetric ramps is modulated by cholinergic activation
+### Asymmetric firing on symmetric ramps is modulated by cholinergic activation
 
 We have previously used 2 and 10 s long triangular-shaped current ramps (Upchurch et al., 2022) to emulate the depolarizing input received by a place cell during a place field traversal (Epsztein et al., 2011); the amplitude of the ramps was adjusted for each cell to produce peak frequencies between 10 and 25 Hz, as observed in place cells in vivo (Hargreaves et al., 2007; Resnik et al., 2012; Bittner et al., 2015). Regardless of whether these ramps are injected at the soma or in the dendrites of CA1 pyramidal neurons, they elicit fewer spikes on the down-ramp than on the up-ramp, due to adaptation mediated by long-term sodium channel inactivation (Fernandez and White, 2010; Venkatesan et al., 2014; Upchurch et al., 2022). Place cell firing is modulated by experience such that the center of mass of the place field shifts in a direction opposite the direction of motion as the environment becomes more familiar (Mehta et al., 2000). This modulation is strongest when animals are first introduced to a novel environment (Roth et al., 2012), suggesting involvement of a novelty signal. Since elevated acetylcholine is thought to be such a signal (Acquas et al., 1996; Giovannini et al., 2001), we investigated the effect of cholinergic neuromodulation on this firing rate adaptation (Figure 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/84387/elife-84387-fig1-v2.jpg)
+
+**Figure 1.:** (A) Somatic recording, control. (A1) Voltage trace for a two second triangular current ramp (represented below) injected in the soma. (A2) Instantaneous frequency for example in A1 as it changes along the ramp. (A3) Raster plot of different trials recorded from the same example neuron in A1. The trials are ordered by the amplitude of the peak injected current, from lowest (bottom) to highest (top); trials with the same amount of current injection are clustered together. (B) Somatic recording, carbachol. (B1, B2, and B3) Same as A1, A2, and A3, but during superfusion with 2 µM CCh. (C1) Instantaneous frequency for example in A1, as it changes with injected current. Filled circles represent firing on the up-ramp; open circles, firing on the down-ramp. (C2) Instantaneous frequency for example in B1. A, B, and C are recordings from the same cell. (D) Summary data of the adaptation index for somatic recordings, before and during CCh, for two second ramps (n=21) and ten second ramps (n=19). Open circles connected by gray lines represent indices for individual cells, before and during CCh. Black squares with error bars represent group averages ± SEM. In control, all adaptation indices are positive, indicating more action potentials on the up-ramp. In CCh, most adaptation indices are negative, indicating more action potentials on the down-ramp. (E) Dendritic recording, control. (E1) Voltage trace for a two second triangular current ramp (represented below) injected in the dendrite, approximately 200 µm from the soma. (E2) Instantaneous frequency for E1 as it changes along the ramp. (E3) Raster plot of different trials recorded from same example neuron in E1. (F) Dendritic recording, carbachol. (F1, F2, and F3) Same as E1, E2, and E3, but during superfusion with 2 µM CCh. (G1) Instantaneous frequency for example in E1, as it changes with injected current. (G2) Instantaneous frequency for example in F1. E, F, and G are from the same cell. (H) Summary data of the adaptation index for dendritic ramps, before and during CCh, for two second ramps (n=19) and ten second ramps (n=10). *** p<0.0005, paired t-test. Red dotted lines in the left panels mark the middle of the current injection ramp. Source data in "Figure 1—source data 1". See also Figure 1—figure supplement 1 and Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84387/elife-84387-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A and B) Two examples of somatic recordings where the firing rate adaptation in control is reversed in the presence of CCh, such that the clockwise hysteresis becomes counter-clockwise. (C and D) Two examples of somatic recordings where the firing rate adaptation in control is removed in the presence of CCh, such that the hysteresis disappears, and the motion becomes linear. Filled circles represent the firing frequencies on the up-ramp and open circles represent firing frequencies on the down-ramp.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84387/elife-84387-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Adaptation index as a function of membrane potential. Index values for each trial for all neurons are plotted against the membrane potential measured just before the current injection ramp for that trial, both for somatic recordings (n=132 in control conditions, filled circles; n=144 in the presence of CCh 2 µM, open circles) and for dendritic recordings (n=135 in control conditions, filled circles; n=87 during CCh, open circles). (B) Adaptation index as a function of the peak injected current. Index values for each trial for all recorded neurons are shown plotted against the peak amplitude of the triangular-shaped current injection for that trial, for both somatic and dendritic recordings (values for n and symbols are the same as in A). (C) Adaptation index as a function of input resistance. Average adaptation index values per cell for both somatic recordings (n=17) and dendritic recordings (n=12) are plotted against the average steady state input resistance measured during control conditions (filled circles) and during perfusion with CCh (open circles). Source data in "Figure 1—figure supplement 2—source data 1".
 
 Figure 1A1 and E1 show typical voltage responses to two-second-long symmetric ramps injected in the soma or dendrites (approximately 200 µm from soma) under control conditions. This type of response results in a positive value for the normalized difference between spikes fired on the up-ramp versus the down-ramp (we call this an adaptation index, see Materials and methods for definition). A positive index means that neurons fire more on the up-ramp than the down-ramp, whereas a negative value indicates the converse, and is therefore a good metric to determine shifts in the center of mass of the firing of CA1 pyramidal neurons in different conditions. In some trials, under control conditions we applied a baseline depolarization prior to the ramp, in order to capture the variability of the membrane potential observed in vivo (Harvey et al., 2009; Epsztein et al., 2011). Application of the cholinergic agonist carbachol (CCh, 2 µM) caused a depolarization of 2–6 mV. We compensated for this depolarization by injecting tonic hyperpolarizing current to reestablish the original membrane potential (see also Losonczy et al., 2008), as indicated by an offset from the 0 pA current level in the traces of the injected current ramps. The amplitude of background fluctuations in the resting membrane potential increased from a few tenths of a mV in control to 2–4 mV in CCh. Moreover, the threshold for action potential generation became more hyperpolarized. For all these reasons, we were not able to consistently vary the membrane potential using baseline depolarizations in the presence of CCh, because baseline depolarization alone frequently evoked spiking. As a result of the increased excitability in CCh, smaller current ramps were sufficient to produce the same peak frequencies as in control (note the difference in the injected ramp currents below the voltage trace in Figure 1A1 vs. B1 and E1 vs. F1). Under these conditions, CCh caused a shift of the center of mass of firing to later in the ramp (Figure 1B1 and 1F1), which resulted in a decreased value of the adaptation index which became negative for most cells, as shown in the scatter plot of group data (Figure 1D and H). The shift is evident in the plots of the frequency as a function of time (compare Figure 1A2 vs. 1B2 and E2 vs. F2). As in Mainen and Sejnowski, 1995, the raster plots of the spike times were characterized by variability in the timing of action potentials among different trials in the same neuron (Figure 1A3, B3, E3 and F3). However, the variability appears to be independent of the amount of current injected, as demonstrated by trials that are grouped as a function of the injected peak current amplitude. Moreover, the raster plots show how the center of mass of firing overall shifted from early in the ramp in control conditions to later in the ramp in the presence of carbachol. This shift was significant for short (2 s) ramps in the soma (control 0.33±0.02, CCh –0.25±0.03; t(20) = 16.741; p<0.0005; n=21), long (10 s) ramps in the soma (control 0.24±0.02, CCh –0.33±0.06; t(18) = 9.854; p<0.0005; n=19), as well as for short and long ramps in the dendrites (2 s ramps: control 0.49±0.04, CCh –0.45±0.07; t(18) = 12.529; p<0.0005; n=19; 10 s ramps: control 0.37±0.02, CCh –0.16±0.06; t(9) = 10.582; p<0.0005; n=10).
 
@@ -46,21 +58,21 @@ The later onset of spiking in CCh in the experiments described above may be attr
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/84387/elife-84387-fig2-v2.jpg)
 
-**Figure 2.:** (A) Top, synaptic response in control conditions to an input frequency that increases and decreases symmetrically, from 6.7 to 25 Hz, as denoted by the pulses, labeled stim. Bottom, Raster plot of multiple trials repeated at the same stimulation intensity. (B) Same as A during superfusion of 2 µM CCh. A and B are from the same neuron, and at the same stimulation intensity. Diamonds in A and B point to a longer EPSP decay time in the presence of CCh. (C) Summary data of the adaptation index for synaptic ramps, before and during CCh. (D) Summary data of the average EPSP amplitude measured during trials where the cells did not fire in response to the first stimulus pulse, before and during CCh. In both cases, open circles connected by gray lines represent indices for individual cells; black squares with error bars represent group averages ± SEM *** p<0.0005, ** p=0.002, paired t-test. Red dotted lines in the panels on the left mark the middle of the synaptic stimulation. Source data in "Figure 2—source data 1".Figure 2—source data 1.
+**Figure 2.:** (A) Top, synaptic response in control conditions to an input frequency that increases and decreases symmetrically, from 6.7 to 25 Hz, as denoted by the pulses, labeled stim. Bottom, Raster plot of multiple trials repeated at the same stimulation intensity. (B) Same as A during superfusion of 2 µM CCh. A and B are from the same neuron, and at the same stimulation intensity. Diamonds in A and B point to a longer EPSP decay time in the presence of CCh. (C) Summary data of the adaptation index for synaptic ramps, before and during CCh. (D) Summary data of the average EPSP amplitude measured during trials where the cells did not fire in response to the first stimulus pulse, before and during CCh. In both cases, open circles connected by gray lines represent indices for individual cells; black squares with error bars represent group averages ± SEM *** p<0.0005, ** p=0.002, paired t-test. Red dotted lines in the panels on the left mark the middle of the synaptic stimulation. Source data in "Figure 2—source data 1".
 
 Carbachol is often used to more easily study cholinergic signaling in biological tissues, because it is not susceptible to hydrolysis by acetylcholinesterase, which is preserved and active in hippocampal slices (Avignone and Cherubini, 1999). To verify that the effects of the endogenous neuromodulator were comparable to those of its synthetic analog, we repeated the experiments in Figure 1 with different concentrations of acetylcholine. In this and all following sets of experiments, the amplitude of current injection was adjusted for each cell and condition to produce peak frequencies between 10 and 25 Hz as described above. Acetylcholine caused a depolarization of the Vm in a dose-dependent manner. As before, we compensated for this depolarization by injecting hyperpolarizing current to restore the initial Vm (Figure 3). Like carbachol, acetylcholine shifted the center of mass of firing to later in the ramp, albeit to a more moderate degree (Figure 3A–D). A one-way repeated measures ANOVA was carried out to determine if there was an effect on the adaptation index of three concentrations of ACh within the same neurons. The assumption of sphericity was violated, so a Greenhouse-Geisser correction was applied (ε=0.574). There was a significant effect of ACh on the adaptation index, plotted in Figure 3E (control 0.35±0.04; 2 μM ACh 0.14±0.04; 10 μM ACh 0.00±0.06; 15 μM ACh –0.02±0.06; F(1.722, 20.665)=44.360; p<0.0005, n=13). Bonferroni-adjusted post hoc tests demonstrated significant differences between the control condition and all concentrations of ACh (all comparisons p<0.0005), and between the lowest concentration and the subsequent higher concentrations (for 2 µM compared to 10 µM, p=0.001; for 2 µM compared to 15 µM, p=0.01). There was not a significant difference between 10 µM and 15 µM ACh. Due to likely degradation via acetylcholinesterase, we speculate that the actual concentration in the slices is lower than the applied one. CCh is not susceptible to degradation by acetylcholinesterase, and its concentration, which in our experiments is markedly lower than that used in many studies on cholinergic modulation of neuronal activity (Bland et al., 1988; Fisahn et al., 1998; Knauer et al., 2013), is therefore more consistent, which may explain the more pronounced shift in spiking in Figure 1 as compared to Figure 3. Nonetheless, our results with ACh suggest that there are concentration-dependent effects of the endogenous neuromodulator on firing rate adaptation. Fluctuations in ACh levels could therefore have implications for the firing of a place cell within its place field.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/84387/elife-84387-fig3-v2.jpg)
 
-**Figure 3.:** (A) Voltage trace recorded in the soma for a two second triangular current ramp injected in the soma in control. Current traces and instantaneous frequency plots are just below the voltage traces. (B–D) Same as A, during superfusion with 2 µM ACh (B), 10 µM ACh (C), and 15 µM ACh (D). A through D are from the same cell. (E) Summary data of the adaptation index for control and the three concentrations of ACh, applied in order of increasing concentration (n=13). Open circles connected by gray lines represent indices for individual cells over all four conditions. Black squares with error bars represent group averages ± SEM. *** p<0.0005, ** p=0.001, * p=0.01, one-way repeated measures ANOVA with a Greenhouse-Geisser correction and post hoc pairwise comparisons with a Bonferroni adjustment. Red dotted lines in the panels on the left mark the middle of the current injection ramp. Source data in "Figure 3—source data 1".Figure 3—source data 1.
+**Figure 3.:** (A) Voltage trace recorded in the soma for a two second triangular current ramp injected in the soma in control. Current traces and instantaneous frequency plots are just below the voltage traces. (B–D) Same as A, during superfusion with 2 µM ACh (B), 10 µM ACh (C), and 15 µM ACh (D). A through D are from the same cell. (E) Summary data of the adaptation index for control and the three concentrations of ACh, applied in order of increasing concentration (n=13). Open circles connected by gray lines represent indices for individual cells over all four conditions. Black squares with error bars represent group averages ± SEM. *** p<0.0005, ** p=0.001, * p=0.01, one-way repeated measures ANOVA with a Greenhouse-Geisser correction and post hoc pairwise comparisons with a Bonferroni adjustment. Red dotted lines in the panels on the left mark the middle of the current injection ramp. Source data in "Figure 3—source data 1".
 
-## Cholinergic-associated shift in the timing of firing during the ramp is mediated by TRPM4 channels
+### Cholinergic-associated shift in the timing of firing during the ramp is mediated by TRPM4 channels
 
 An increase in firing on the down-ramp compared to the up-ramp induced by cholinergic activation could result from (1) a decrease in an outward current and/or (2) an increase in an inward current. The cascade of events that follow cholinergic activation in these neurons includes the suppression of a number of outward currents (Halliwell and Adams, 1982; Hoffman and Johnston, 1998; Buchanan et al., 2010; Giessel and Sabatini, 2010), some of which are also involved in firing rate adaptation (Stocker et al., 1999; Gu et al., 2005; Pedarzani et al., 2005; Otto et al., 2006; Chen et al., 2014). Although the SK channel clearly contributes to adaptation when the dendrites are stimulated at high frequency (>50 Hz; Combe et al., 2018), we have previously examined the contribution of small-conductance calcium-activated potassium (SK) current, M-type potassium current, and A-type potassium current with respect to the asymmetric firing in response to symmetric current ramps (Upchurch et al., 2022). We found that, in the relatively low range of firing frequencies evoked by this type of stimulation, the adaptation induced by these K+ currents (including SK) does not play a role in shifting action potentials to earlier times during the ramp. However, cholinergic activation has also been shown to activate a non-specific inward cationic current, ICAN, that is thought to be carried by certain TRP channels (Guinamard et al., 2010; Reboreda et al., 2011). Flufenamic acid (FFA) has been shown to block a variety of TRP channels in hippocampal neurons (Partridge and Valenzuela, 2000) and elsewhere (Guinamard et al., 2013). After observing the typical response to CCh, responses to symmetric ramps were recorded while FFA (100 µM) was applied along with CCh (Figure 4A and B). FFA shifted most action potentials back to the up-ramp as shown in the examples in Figure 4A1–A3 and B1–B3, effectively reversing the shift triggered by CCh. The differences in adaptation index across the three conditions were found to be significantly different by repeated measures ANOVA in both somatic recordings (control 0.35±0.05, CCh –0.36±0.09, CCh + FFA 0.25±0.06; F(2,16) = 65.835; p<0.0005; n=9; Figure 4A4) and dendritic recordings (control 0.52±0.02, CCh –0.54±0.11, CCh + FFA 0.20±0.08; F(2,16) = 60.680; p<0.0005; n=9; Figure 4B4). Bonferroni-adjusted pairwise comparisons indicated that for somatic recordings, the differences were significantly different between control and CCh (p<0.0005), and between CCh and CCh + FFA (p<0.0005), but not between control and CCh + FFA (p=0.43). For dendritic recordings, the differences were significantly different between control and CCh (p<0.0005), CCh and CCh + FFA (p<0.0005), and control and CCh + FFA (p=0.02). In most cases, the adaptation index reverted to a positive value with the application of FFA from a negative value in CCh alone, and in all cases was closer to the control value with FFA than with CCh alone. The failure of the adaptation index to return to control values in FFA may reflect an incomplete block of TRP channels or an additional effect of CCh. Overall, these data suggest that the shift in the center of mass of firing to later along the ramp that is associated with cholinergic activity is due, in large part, to activation of TRP channels.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/84387/elife-84387-fig4-v2.jpg)
 
-**Figure 4.:** (A) Somatic recordings for a two second triangular current ramp injected in the soma in control (A1), CCh (2 µM) (A2), and CCh + FFA (100 µM) (A3) applied subsequently to the same cell. Current traces and instantaneous frequency plots are just below the voltage traces. Summary data (A4) of the adaptation index for control, CCh, and CCh + FFA (n=9). (B) Same as in A, but for dendritic injection and recordings. Summary data (B4) of the adaptation index for control, CCh, and CCh + FFA (n=9). Open circles connected by gray lines represent indices for individual cells, over all three treatments. Black squares with error bars represent group averages ± SEM. (C) Somatic recordings for a two second triangular current ramp injected in the soma in control (C1), CCh (2 µM) (C2), and CCh + SKF96365 (50 µM) (C3) applied subsequently to the same cell. Current traces and instantaneous frequency plots are just below voltage traces. Red dotted line marks the middle of the ramp. Summary data (C4) of the adaptation index for control, CCh, and CCh + SKF96365 (n=8). (D) Same as in C, but for dendritic injection and recordings. Summary data (D4) of the adaptation index for control, CCh, and CCh + SKF96365 (n=8). *** p<0.0005, ** p=0.001, * p=0.02, n.s. not significant, one-way repeated measures ANOVA and post hoc pairwise comparisons with a Bonferroni adjustment. Source data in "Figure 4—source data 1".Figure 4—source data 1.
+**Figure 4.:** (A) Somatic recordings for a two second triangular current ramp injected in the soma in control (A1), CCh (2 µM) (A2), and CCh + FFA (100 µM) (A3) applied subsequently to the same cell. Current traces and instantaneous frequency plots are just below the voltage traces. Summary data (A4) of the adaptation index for control, CCh, and CCh + FFA (n=9). (B) Same as in A, but for dendritic injection and recordings. Summary data (B4) of the adaptation index for control, CCh, and CCh + FFA (n=9). Open circles connected by gray lines represent indices for individual cells, over all three treatments. Black squares with error bars represent group averages ± SEM. (C) Somatic recordings for a two second triangular current ramp injected in the soma in control (C1), CCh (2 µM) (C2), and CCh + SKF96365 (50 µM) (C3) applied subsequently to the same cell. Current traces and instantaneous frequency plots are just below voltage traces. Red dotted line marks the middle of the ramp. Summary data (C4) of the adaptation index for control, CCh, and CCh + SKF96365 (n=8). (D) Same as in C, but for dendritic injection and recordings. Summary data (D4) of the adaptation index for control, CCh, and CCh + SKF96365 (n=8). *** p<0.0005, ** p=0.001, * p=0.02, n.s. not significant, one-way repeated measures ANOVA and post hoc pairwise comparisons with a Bonferroni adjustment. Source data in "Figure 4—source data 1".
 
 The TRPC subfamily has been implicated as being responsible for ICAN in some neurons and is thought to be activated by elements downstream of muscarinic acetylcholine receptor activation (Putney, 2005), which makes it an attractive candidate, mechanistically, for this cholinergic-mediated shift in action potential firing along the depolarizing ramp. Cholinergic stimulation of Gq/11-coupled mAChRs results in phospholipase C hydrolysis of membrane constituent phosphatidylinositol 4,5-bisphosphate (PIP2) into inositol 1,4,5-trisphosphate (IP3) and diacylglycerol (DAG). IP3 stimulates IP3 receptor (IP3R) associated Ca2+ release from the endoplasmic reticulum, regulating TRPC channel activity via calmodulin (Zhu, 2005), while DAG activates TRPC channels directly (Hofmann et al., 1999; Mederos Y Schnitzler et al., 2018).
 
@@ -70,21 +82,21 @@ TRPM4 channels have likewise been implicated in downstream effects associated wi
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/84387/elife-84387-fig5-v2.jpg)
 
-**Figure 5.:** (A) Somatic recordings for a two second triangular current ramp injected in the soma in control (A1), CCh (2 µM) (A2), and CCh + CBA (50 µM) (A3) applied subsequently to the same cell. Current traces and instantaneous frequency plots are just below voltage traces. Red dotted line marks the middle of the ramp. Summary data (A4) of the adaptation index for control, CCh, and CCh + CBA (n=9). Open circles connected by gray lines represent indices for individual cells, over all three treatments. Black squares with error bars represent group averages ± SEM. (B) Same as in A, but for dendritic injection and recordings. Summary data (B4) of the adaptation index for control, CCh, and CCh + CBA (n=9). (C) Same as A, but for control (C1), CCh (2 µM) (C2), and CCh + 9-phenanthrol (100 µM) (C3) applied subsequently to the same cell. Summary data (C4) of the adaptation index for control, CCh, and CCh + 9-phenanthrol (n=8). *** p<0.0005, **p=0.002, * p=0.02, ## p=0.001, # p=0.03, n.s. not significant, one-way repeated measures ANOVA and post hoc pairwise comparisons with a Bonferroni adjustment. Source data in "Figure 5—source data 1".Figure 5—source data 1.
+**Figure 5.:** (A) Somatic recordings for a two second triangular current ramp injected in the soma in control (A1), CCh (2 µM) (A2), and CCh + CBA (50 µM) (A3) applied subsequently to the same cell. Current traces and instantaneous frequency plots are just below voltage traces. Red dotted line marks the middle of the ramp. Summary data (A4) of the adaptation index for control, CCh, and CCh + CBA (n=9). Open circles connected by gray lines represent indices for individual cells, over all three treatments. Black squares with error bars represent group averages ± SEM. (B) Same as in A, but for dendritic injection and recordings. Summary data (B4) of the adaptation index for control, CCh, and CCh + CBA (n=9). (C) Same as A, but for control (C1), CCh (2 µM) (C2), and CCh + 9-phenanthrol (100 µM) (C3) applied subsequently to the same cell. Summary data (C4) of the adaptation index for control, CCh, and CCh + 9-phenanthrol (n=8). *** p<0.0005, **p=0.002, * p=0.02, ## p=0.001, # p=0.03, n.s. not significant, one-way repeated measures ANOVA and post hoc pairwise comparisons with a Bonferroni adjustment. Source data in "Figure 5—source data 1".
 
 In order to corroborate that the effect of CBA is due to block of TRPM4 channels, we investigated the effect of a second TRPM4 channel antagonist, 9-phenanthrol (9Ph), added to CCh in somatic recordings. Figure 5C illustrates the shift of most of the spiking activity towards the up-ramp, moving the adaptation index in the positive direction, when 9-phenanthrol (100 µM) was applied on top of CCh. The differences in adaptation index between groups are significant, as demonstrated by repeated measures ANOVA (control 0.40±0.03, CCh –0.14±0.06, CCh + 9Ph 0.19±0.06; F(2,14) = 57.640; p<0.0005; n=8; Figure 5C4). Bonferroni-corrected pairwise comparisons indicated that the differences were significant between control and CCh (p<0.0005), between CCh and CCh + 9Ph (p=0.001), and between control and CCh + 9Ph (p=0.03).
 
 Taken together, these data with the non-selective TRP channel blocker FFA, the TRPC channel blocker SKF96365, and two different TRPM4 channel antagonists suggest that the shift in adaptation index that we see with CCh is largely mediated through activation of TRPM4, rather than TRPC, channels.
 
-## Does Ca2+ release from internal sources activate TRPM4 channels?
+### Does Ca2+ release from internal sources activate TRPM4 channels?
 
 We next tried to determine the source of Ca2+ required to activate TRPM4 channels. We first focused on IP3 receptors (IP3Rs), which are activated through mAChRs and Gq as described above, using the antagonist Xestospongin C (Gafni et al., 1997) in the intracellular solution (Figure 6A). Since the antagonists rapidly dialyzed into the cytosol, in this figure control data reflect the effect of the antagonists before the addition of CCh. We initially used Xestospongin C at 1 µM, which was previously found to be effective in inhibiting TRPM4 channel activation via mGluRs in neurons of the preBötzinger nucleus (Pace et al., 2007). Since this concentration was not effective in preventing the cholinergic shift in the center of mass of firing in our experiments, in six out of nine experiments we increased the concentration to 2 µM. Neither concentration of intracellular Xestospongin C appeared to change the firing features in control conditions. The shift induced by carbachol did not appear to depend on the concentration of Xestospongin C (Figure 6A3), therefore we averaged the data in these two conditions. The adaptation index still decreased significantly (t(8) = 10.574, p<0.0005; n=9, as per a paired t-test) from 0.31±0.02 in control conditions to –0.38±0.07 in the presence of CCh (2 µM). This result argues strongly against the hypothesis that the effects of the activation of muscarinic receptors on the shift of the center of mass of firing are mediated by activation of IP3Rs. Ryanodine receptors (RyRs) are also expressed on the endoplasmic reticulum in CA1 pyramidal neurons, and appear to contribute selectively to spine Ca2+ elevations during LTP at the CA3-CA1 synapses (Raymond and Redman, 2006). We therefore tested the hypothesis that the increase of [Ca2+]i in a nanodomain leading to TRPM4 channel activation could be due to Ca2+-induced Ca2+ release (CICR) through RyRs following Ca2+ influx through voltage-dependent Ca2+ channels. In these experiments, we included ryanodine at 40 µM, a concentration known to inhibit RyRs (Ehrlich et al., 1994; Isokawa and Alger, 2006), in the intracellular solution. Notably, one out of nine of the neurons recorded from in these conditions had a slightly negative adaptation index already under control conditions (Figure 6B3) when RyR were inhibited. Moreover, three more neurons appeared to fire irregularly, with some doublets, under control conditions (an example is shown in Figure 6C), a feature that was not observed in other experimental conditions. This change could be due to the close juxtaposition of RyRs in the endoplasmic reticulum and various K+ channels on the membrane of CA1 neurons (Vierra et al., 2019; Tedoldi et al., 2020; Sahu and Turner, 2021). Upon addition of CCh in the bath, the adaptation index became significantly more negative in all nine neurons recorded with intracellular ryanodine, as per a paired t-test (control 0.28±0.05, CCh –0.46±0.07; t(8) = 11.99; p<0.0005; n=9), suggesting that RyRs also do not play a role in the cholinergic shift of the center of mass of firing.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/84387/elife-84387-fig6-v2.jpg)
 
-**Figure 6.:** 3Rs or RyRs has no effect on CCh-mediated shift in firing along ramp.(A) Somatic recordings during intracellular dialysis with Xestospongin C (2 µM), for a two second triangular current ramp injected in the soma before (A1), and during superfusion with CCh (2 µM) (A2). Current traces and instantaneous frequency plots are just below voltage traces. Summary data (A3) of the adaptation index for Xestospongin C (1–2 µM) and CCh (n=9). Circles connected by gray lines represent ratios for individual cells, before and during CCh. Filled circles represent cells dialyzed with 1 µM Xestospongin C and open circles represent cells dialyzed with 2 µM Xestospongin C. Black squares with error bars represent group averages ± SEM. (B) Same as A, but intracellular dialysis is with ryanodine (40 µM). Summary data (B3) of the adaptation index for ryanodine and CCh (n=9). Individual cells represented by open circles. *** p<0.0005, paired t-test. In both sets of experiments, control data reflect the effect of either IP3R or RyR antagonist before the addition of CCh, because the dialysis started to be apparent quickly after break-in. Red dotted lines in the left panels mark the middle of the ramp. C1 and C2. Same as B1 and B2; C3 is an expanded version of the inset in C1. Source data in "Figure 6—source data 1".Figure 6—source data 1.
+**Figure 6.:** (A) Somatic recordings during intracellular dialysis with Xestospongin C (2 µM), for a two second triangular current ramp injected in the soma before (A1), and during superfusion with CCh (2 µM) (A2). Current traces and instantaneous frequency plots are just below voltage traces. Summary data (A3) of the adaptation index for Xestospongin C (1–2 µM) and CCh (n=9). Circles connected by gray lines represent ratios for individual cells, before and during CCh. Filled circles represent cells dialyzed with 1 µM Xestospongin C and open circles represent cells dialyzed with 2 µM Xestospongin C. Black squares with error bars represent group averages ± SEM. (B) Same as A, but intracellular dialysis is with ryanodine (40 µM). Summary data (B3) of the adaptation index for ryanodine and CCh (n=9). Individual cells represented by open circles. *** p<0.0005, paired t-test. In both sets of experiments, control data reflect the effect of either IP3R or RyR antagonist before the addition of CCh, because the dialysis started to be apparent quickly after break-in. Red dotted lines in the left panels mark the middle of the ramp. C1 and C2. Same as B1 and B2; C3 is an expanded version of the inset in C1. Source data in "Figure 6—source data 1".
 
-## Multicompartmental modeling of cholinergic modulation of asymmetric firing responses
+### Multicompartmental modeling of cholinergic modulation of asymmetric firing responses
 
 We next turned to our detailed multicompartmental model, in order to help identify the underlying mechanisms that contribute to the cholinergic modulation that we observe experimentally in vitro. The model was implemented in a reconstructed morphology (Megías et al., 2001) with 144 compartments, each of which can be represented with an equivalent circuit with heterogeneous channel conductance densities and kinetics as described in the Methods. Previously (Upchurch et al., 2022), this model was used to capture the firing rate adaptation observed under control conditions as shown in Figure 7A1 for short triangular ramps of injected current. The model performs a material balance on Ca2+ ions to provide estimated free Ca2+ concentrations in concentric shells beneath the membrane, as shown in the top panels of Figure 7. The control simulation for a 2 s somatic ramp in Figure 7A1 captures the experimentally observed decrease in spike number and frequency on the down-ramp as compared to the up-ramp (adaptation index = 0.28), as well as a slight decrease in spike amplitude, previously shown to be due to a decrease in available NaV channels (Upchurch et al., 2022). The plot of instantaneous frequency versus level of injected current at the right captures the clockwise pattern observed in Figure 1C1 and G1 corresponding to firing rate adaptation. Figure 7A2 shows the [Ca2+] in the outer shell of the soma in nM, Figure 7A3 replots this same concentration in μM (the nanodomain in this case is contiguous with the outer shell so it is not actually a nanodomain), and Figure 7A4 shows that this concentration is insufficient to activate TRPM4 channels. In order to model the effect of CCh, we added a nanodomain for the spatially restricted Ca2+ concentration which we hypothesize is sensed by the Ca2+ binding site on TRPM4 channels; also note that, as in the experiments, the amount of injected current is lower for the simulated CCh. We showed in Figure 6 that TRPM4 channel activation is not affected by antagonists of IP3Rs and RyRs, excluding a contribution of Ca2+ release from the ER. Although the source of the Ca2+ increase that activates TRPM4 channels is currently unknown, it likely depends in some way upon the activation of voltage-gated Ca2+ channels during the ramp. We therefore made the Ca2+ influx in the nanodomain proportional to the total instantaneous Ca2+ current across the membrane in the model, but only during simulated activation of the muscarinic receptor. Adding the Ca2+ influx from an unknown source to a nanodomain in order to simulate bath application of CCh (Figure 7B1) replicates the experimentally observed shift in adaptation index, with more spikes occurring on the down-ramp as compared to the up-ramp (adaptation index = –0.29). The plot of instantaneous frequency versus injected current captures the more extreme observed effect of CCh as illustrated in Figure 1G2; the motion is counter-clockwise corresponding to the acceleration of the firing rate. Figure 7B2 shows the Ca2+ concentration in the outer shell of the soma in nM, Figure 7B3 shows the Ca2+ concentration in μM in the hypothesized nanodomain, and Figure 7B4 shows that this concentration is sufficient to activate TRPM4 channels.
 
@@ -96,7 +108,7 @@ Figure 8 shows why spike rate adaptation is not observed in the simulated presen
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/84387/elife-84387-fig8-v2.jpg)
 
-**Figure 8.:** V1.6 channels.(A) Voltage traces from 7A1 and B1 overlaid; control (in black), CCh (in magenta). The triangular current injection ramps are shown below. (B) Occupancy of NaV1.6 channel in the open state (O) in the somatic compartment, with values during spikes removed. (C) Occupancy of NaV1.6 channel in the long-term inactivated state (I2). (D) Persistent NaV current (spiking values removed). (E) TRPM4 current. (F) Net ionic current. All values are shown for the somatic compartment.
+**Figure 8.:** (A) Voltage traces from 7A1 and B1 overlaid; control (in black), CCh (in magenta). The triangular current injection ramps are shown below. (B) Occupancy of NaV1.6 channel in the open state (O) in the somatic compartment, with values during spikes removed. (C) Occupancy of NaV1.6 channel in the long-term inactivated state (I2). (D) Persistent NaV current (spiking values removed). (E) TRPM4 current. (F) Net ionic current. All values are shown for the somatic compartment.
 
 When activated by Ca2+, TRPM4 channels cause a depolarization and additional spiking that further increases Ca2+ influx resulting in a positive feedback loop, with the regenerative inward TRPM4 current contributing to action potential initiation. Figure 9 elaborates on the mechanisms by which Ca2+ and voltage differentially contribute to TRPM4 channel activation in removing or reversing spike frequency adaptation. It repeats the traces in control (black) and simulated CCh (magenta) from Figure 7 on an expanded scale and adds two conditions as described below. The insets to the right in Figure 9A show f/I curves that capture the qualitative features of the f/I curves shown in Figure 1C1, C2, and G1 and G2. Qualitatively, in control (black traces), there are more spikes on the up-ramp than on the down-ramp, and the instantaneous frequency is lower on the down-ramp for similar values of injected current during the up-ramp. The contribution of the increase in Ca2+ concentration in the nanodomain was examined by turning off the voltage-dependence of the TRPM4 channel (light blue traces). In this case, the voltage component of TRPM4 channel activation was set to its steady state value at the resting Vm (see Materials and methods).
 
@@ -106,17 +118,17 @@ When activated by Ca2+, TRPM4 channels cause a depolarization and additional spi
 
 Simply adding the nanodomain accomplishes the shift in center of mass (compare blue trace in Figure 9A to control trace in black) and removes the adaptation, with a very slight tendency to accelerate the firing. However, without the contribution of the voltage-dependence of TRPM4 channels, the resulting Ca2+ influx is lower than in the original simulation of the effects of CCh (compare the blue traces to the magenta traces in Figure 9B and C), resulting in less TRPM4 channel activation (compare the blue trace to the magenta trace in Figure 9D) and therefore fewer total spikes. To determine the contribution of the positive feedback loop by which Ca2+ entry recruits more Ca2+ entry via additional spiking and depolarization, we recorded the Ca2+ traces in each nanodomain (one for each segment of every section in NEURON, see Methods) of the original CCh simulation (magenta trace in Figure 9C). We then used this Ca2+ trace as the [Ca2+] in the nanodomain during simulations with the voltage dependence removed as described above. The purple trace in Figure 9A shows that the positive feedback loop added two spikes (16 in the purple trace versus 14 in the blue trace) by slightly increasing the frequency during the spike train and allowing spiking to continue longer. The f/I plot shows a little more acceleration of the firing rate. The purple trace in Figure 9B shows that [Ca2+] in the outermost shell is slightly different than both the blue and magenta traces, reflecting the different numbers of spikes. Note that the purple and magenta traces in Figure 9C are identical because the magenta trace for [Ca2+] in the nanodomain (original CCh simulation) was input to the nanodomain in the simulations shown in purple in the other panels. The additional TRPM4 channel activation (compare purple to blue trace in Figure 9D) results from the increased [Ca2+] in the nanodomain. Adding the full voltage-dependence to the TRPM4 channel slightly raises the overall level of TRPM4 channel activation. The voltage-dependence also allows for fast excursions in channel activation that could contribute to action potential initiation (compare magenta trace in Figure 9D to the blue and purple ones). The voltage-dependence contributes one additional spike (17 in the magenta trace versus 16 in the purple trace in Figure 9A) and accentuates spike rate acceleration due to the positive feedback loop, as shown in the f/I curves.
 
-## Evidence for tight coupling between TRPM4 channels and the calcium source that activates them
+### Evidence for tight coupling between TRPM4 channels and the calcium source that activates them
 
 In order to test experimentally the model prediction that the highly localized Ca2+ elevation in a nanodomain next to the TRPM4 channels gives rise to the CCh-mediated shift in the center of mass of firing, the calcium chelator BAPTA was included in the recording pipette, and somatic recordings obtained before and during addition of CCh. In Figure 10, control data reflect the effect of BAPTA before the addition of CCh, rather than control data such as in previous figures, because the dialysis occurred quickly. As in previous sets of experiments, the amount of current injected was chosen in order to achieve a target firing frequency of 10–25 Hz. With intracellular dialysis of BAPTA, the current needed to reach these frequencies was consistently higher in these experiments (compare scale bars of injected current to those in previous figures). In addition, intracellular dialysis with BAPTA tended to shift the firing earlier in the ramp, with fewer spikes on the down-ramp, therefore making the adaptation index closer to 1. In Figure 10A , 10 mM BAPTA was included in the internal solution. As previously noted, the addition of CCh in the bath caused a depolarization that was compensated for by the injecting hyperpolarizing current. Moreover, despite the presence of BAPTA, the adaptation index became significantly smaller in the presence of CCh, as per a paired t-test (control 0.82±0.05, CCh –0.12±0.11; t(9) = 8.594; p<0.0005; n=10; Figure 10A3); therefore, 10 mM BAPTA did not prevent the cholinergic-mediated shift. It has been shown that a higher concentration of BAPTA may be required to prevent TRPM4 channel activation in neurons of the preBötzinger nucleus (Pace et al., 2007; Picardo et al., 2019), therefore, in Figure 10B, BAPTA in the internal solution was increased to 30 mM. With a free [Ca2+]i of 100 nM (see Materials and methods), CCh never produced negative adaptation indices that were seen in previous figures, although the Vm did depolarize and was restored by the injection of tonic hyperpolarizing current. CCh still had a significant effect on the adaptation index, as per a paired t-test (control 0.62±0.05, CCh 0.37±0.06; t(7) = 5.069; p=0.001; n=8; Figure 10B3). However, when the free [Ca2+]i was adjusted to 10 nM in the presence of intracellular 30 mM BAPTA (Figure 10C), the adaptation index did not change significantly when CCh was applied in the bath (control 0.73±0.03, CCh 0.76±0.03; t(11) = 0.776; p=0.45; n=12; Figure 10C3). In addition, the depolarization normally observed in the presence of CCh did not occur in these conditions, and the amount of injected current was comparable to that injected in control. These data demonstrate that a concentration of BAPTA higher than the typical value (10 mM) used to disrupt Ca2+-dependent mechanisms (Harney et al., 2006) is required to prevent TRPM4 channel activation, and that free [Ca2+]i of <100 nM is necessary to disrupt TRPM4 channel activation. Together, these data suggest a close physical relationship between the source of Ca2+ and TRPM4 channels.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/84387/elife-84387-fig10-v2.jpg)
 
-**Figure 10.:** (A) Somatic recordings during intracellular dialysis with 10 mM BAPTA, for a two second triangular current ramp injected in the soma before (A1), and during superfusion with CCh (2 µM) (A2). Current traces and instantaneous frequency plots are just below voltage traces. Red dotted line marks the middle of the ramp. Summary data (A3) of the adaptation index for control and CCh (n=10). Open circles connected by gray lines represent ratios for individual cells, before and during CCh. Black squares with error bars represent group averages ± SEM. (B) Same as A, but intracellular dialysis is with 30 mM BAPTA and 100 nM free [Ca2+]. Summary data (B3) of the adaptation index for control and CCh (n=8). (C) Same as A, but intracellular dialysis is with 30 mM BAPTA and 10 nM free [Ca2+]. Summary data (C3) of the adaptation index for control and CCh (n=12). *** p<0.0005, ** p=0.001, n.s. not significant, paired t-test. Source data in "Figure 10—source data 1".Figure 10—source data 1.
+**Figure 10.:** (A) Somatic recordings during intracellular dialysis with 10 mM BAPTA, for a two second triangular current ramp injected in the soma before (A1), and during superfusion with CCh (2 µM) (A2). Current traces and instantaneous frequency plots are just below voltage traces. Red dotted line marks the middle of the ramp. Summary data (A3) of the adaptation index for control and CCh (n=10). Open circles connected by gray lines represent ratios for individual cells, before and during CCh. Black squares with error bars represent group averages ± SEM. (B) Same as A, but intracellular dialysis is with 30 mM BAPTA and 100 nM free [Ca2+]. Summary data (B3) of the adaptation index for control and CCh (n=8). (C) Same as A, but intracellular dialysis is with 30 mM BAPTA and 10 nM free [Ca2+]. Summary data (C3) of the adaptation index for control and CCh (n=12). *** p<0.0005, ** p=0.001, n.s. not significant, paired t-test. Source data in "Figure 10—source data 1".
 
 ## Discussion
 
-## Summary of major results
+### Summary of major results
 
 Whereas place cell firing can only be observed in vivo, our bidirectional approach of modeling place cell firing in vitro and in silico can be precisely targeted to uncover molecular mechanisms responsible for modulation of firing patterns that lead to place cell firing in vivo. Manipulations that are difficult or impossible even in the in vitro preparation can be carried out in silico using our detailed multicompartmental model, with the added benefit that the model is transparent. All underlying state variables (ion concentrations, channel open fractions) are accessible so that mechanisms can be positively identified, facilitating design of experiments to test the putative mechanisms.
 
@@ -124,29 +136,29 @@ In this study we show that: (1) muscarinic receptor activation shifts the center
 
 More broadly, our results suggest that some rapid changes to place cell firing could be triggered via neuromodulation of intrinsic excitability, in addition to and distinct from longer lasting experience-dependent changes that are brought about by synaptic and structural plasticity. Specifically, we speculate that increasing levels of ACh could lead to forward shifts in place cell firing, whereas decreasing levels of ACh could contribute to backwards shifts.
 
-## Mystery current identified
+### Mystery current identified
 
 Muscarinic activation of a Ca2+-dependent nonselective cation current in rat CA1 pyramidal neurons has been known for nearly three decades (Colino and Halliwell, 1993; Fraser and MacVicar, 1996; Dasari et al., 2017). A previous study Yamada-Hanff and Bean, 2013 found that in mouse CA1 neurons as well, muscarinic stimulation not only inhibits background potassium currents but also activates a nonselective cation current. They found that the latter effect was dominant and in fact converted CA1 pyramidal neurons into pacemakers with the application of 5–25 μM acetylcholine, 5–25 μM carbachol, or 5–10 μM oxotremorine-M. They suggested TRPC channels might mediate this current but were unable to positively identify the source of the nonselective cation current. Based on our results, this unidentified channel could be the TRPM4 channel. We show that TRPM4 channels primarily mediate a nonspecific Ca2+-activated cation current evoked by cholinergic modulation in CA1 pyramidal neurons. Our model shows that the activation of TRPM4 channels contribute an additional inward current that activates and deactivates slowly upon depolarization. In the case of synaptically driven depolarizations (Figure 2), this inward current, with its slow kinetics (see Figures 8 and 9) is likely to cause an increased decay time of the EPSPs (see Figure 2). This aspect has likely implications for synaptic integration by these neurons, as shown by the observation of an impairment of LTP in TRPM4 knockout mice (Menigoz et al., 2016).
 
 One of our most surprising findings was that TRPC channels did not seem to play a role in cholinergic modulation of the firing pattern along a triangular ramp. TRPC channels have been implicated in cholinergic signaling via direct activation by DAG, one of the two bioactive molecules generated by PLC hydrolysis of PIP2 (the other being IP3). Cholinergic-associated persistent firing, whereby neurons continue to fire after a depolarizing stimulus has ceased, has been attributed to activation of TRPC channels (Zhang et al., 2011; Arboit et al., 2020). However, the presence of cholinergic-induced persistent firing in TRPC knockout mice has called this into question (Egorov et al., 2019). In a recent study, TRPM4 channels were found to be involved in persistent firing generated upon Ca2+ influx via T-type channels in thalamic neurons (O’Malley et al., 2020). Delayed bursting in a subtype of cerebellar granular cells was also shown to be mediated by TRPM4 channels (Masoli et al., 2020). Our study therefore provides further evidence regarding the role of these channels in the control of neuronal firing, possibly including persistent firing.
 
-## Nanodomain resulting from colocalization of cholinergic-induced increases in [Ca2+]i and TRPM4 channels
+### Nanodomain resulting from colocalization of cholinergic-induced increases in [Ca2+]i and TRPM4 channels
 
 In HEK cells transfected with cDNA encoding TRPM4 channels, and in cardiac myocytes, activation of TRPM4 channels is secondary to IP3 receptor activation (Launay et al., 2002; Gonzales et al., 2010; Gonzales and Earley, 2012), suggesting that TRPM4 channels in myocytes are activated by Ca2+ release from intracellular stores. Furthermore, in situ proximity ligation assay was used to demonstrate co-localization of TRPM4 channels and IP3Rs in human detrusor smooth muscle cells (Provence et al., 2017). In addition, in neurons of the preBötzinger nucleus TRPM4 channels are recruited by metabotropic glutamate receptors to generate robust inspiratory drive potentials through IP3R activation (Pace et al., 2007). Surprisingly, we found that Ca2+ release from the ER was not involved in the cholinergic shift of the center of mass of firing, since neither the IP3R antagonist Xestospongin C (1–2 µM) nor the RyR antagonist ryanodine (40 µM) prevented the effects of carbachol. Therefore, although the mechanisms that produce the micromolar [Ca2+] increases needed for TRPM4 channel activation are unknown, our results point to these channels acting as coincidence detectors, requiring both muscarinic receptor activation and depolarization-induced Ca2+ influx during the ramp to be activated.
 
 Our modeling results imply that, upon activation of muscarinic receptors, TRPM4 channels have privileged access to a nanodomain in order to achieve the micromolar concentrations of Ca2+ necessary for their activation (Nilius et al., 2004), since microdomains (like the multicompartmental model’s outer shell) only achieve submicromolar concentrations (Fakler and Adelman, 2008). The affinity of TRPM4 channels for Ca2+ is heavily dependent on the availability of PIP2 (Nilius et al., 2006) and binding of ATP and calmodulin or PKC-dependent phosphorylation (Nilius et al., 2005), which all function to increase the sensitivity of TRPM4 channels for Ca2+. If under our conditions, the dependence of TRPM4 channels on [Ca2+] has a much lower EC50 and/or is much steeper than in the model we implemented (Nilius et al., 2004), perhaps the nanomolar [Ca2+] in the outer shell could be sufficient to activate TRPM4 channels. However, the experimental result that 30 mM BAPTA was required to block the TRPM4 channels’ access to Ca2+ argues for a spatially restricted nanodomain. In a previous study, we found that intracellular BAPTA at a concentration 5 mM can mimic SK channel block (Combe et al., 2018), presumably by interfering with the calcium activation of those channels. The requirement of using 30 mM BAPTA while buffering free [Ca2+]i to 10 nM in order to prevent TRPM4 channel activation suggests that TRPM4 channels are activated by a more spatially restricted Ca2+ domain than SK channels.
 
-## Convergence of pharmacological blockers
+### Convergence of pharmacological blockers
 
 One caveat for our experimental results is that TRP channel blockers, like most drugs, have been reported to have some non-specific effects. In cardiac cells, both CBA and 9-phenanthrol have been shown to decrease the Ito1 potassium current, attributed to Kv4.3 (Veress et al., 2018; Dienes et al., 2021) and a late sodium current (Hou et al., 2018; Dienes et al., 2021). Kv4.3 is likely more important in interneurons than in pyramidal cells in the CA1 area (Martina et al., 1998), and neither of the two currents are affected by FFA at the concentration we used here (Guinamard et al., 2013). The other reported non-specific effects do not overlap between the three blockers, flufenamic acid, CBA and 9-phenanthrol (Simard et al., 2012; Guinamard et al., 2013; Veress et al., 2018; Dienes et al., 2021). The convergent effects of these three distinct drugs implicate TRPM4 channels as the most probable effector of the CCh-mediated modulation of the center of mass of firing. A similar pharmacological approach was used to implicate TRPM4 channel activation in subthreshold oscillations underlying pacemaker firing of chemosensory neurons in the retrotrapezoid nucleus (Li et al., 2021).
 
-## Diverse cholinergic effects on CA1 pyramidal neurons
+### Diverse cholinergic effects on CA1 pyramidal neurons
 
 In CA1 pyramidal neurons, ACh binding to muscarinic receptors results in neuromodulation of neuronal excitability and presynaptic release probability. In our study, focused mainly on intrinsic properties, the predominant effect of ACh and CCh was to activate TRPM4 channels; however, the effect of ACh on CA1 pyramidal cells in vivo is multipronged. Muscarinic receptors are known to suppress several K+ currents in CA1 pyramidal neurons (Halliwell and Adams, 1982; Hoffman and Johnston, 1998; Buchanan et al., 2010; Giessel and Sabatini, 2010). The effects of ACh on SK, M-type currents and ICAN are mediated by M1 (Gq-coupled) receptors (Dasari and Gulledge, 2011). Synaptic depression of Schaffer collateral inputs to CA1 is mediated by M4 (Gi-coupled) receptors (Dasari and Gulledge, 2011) located on presynaptic glutamatergic terminals, and synaptic depression of temporoammonic pathway glutamatergic inputs to CA1 is mediated by M3 (Gq-coupled) receptors (Palacios-Filardo et al., 2021). When we used a synaptically driven depolarization (Figure 2), decreased release from Schaffer collateral was indicated by the smaller amplitude EPSPs in the presence of CCh. In these experiments, as in the current injection protocols, the center of mass of firing occurred earlier in the ramp in control and shifted to later in the ramp in the presence of CCh, suggesting that a combination of pre- and postsynaptic effects of cholinergic agonists can contribute to the shift. Moreover, the cholinergic down-regulation of these afferents justifies the use of smaller depolarizing current injection ramps in our recordings in the presence of carbachol, because less current injection is required to produce the same output frequencies due to enhanced intrinsic excitability in carbachol.
 
 In a model of place field formation (Savelli and Knierim, 2010), if a neuron randomly fires within a place field (Bittner et al., 2015), its inputs from the currently active grid cells are strengthened and the input from those grid cells onto silent cells are weakened. Previously, ACh was thought to act in a manner consistent with volume transmission (Dannenberg et al., 2017). Recently, this view has been challenged by the finding that all hippocampal cholinergic terminals form synapses (Takács et al., 2018), and vesicles dock only at synapses. Since cholinergic neuromodulation of TRPM4 channels greatly increases excitability in CA1 pyramidal cells, selective synaptic ACh inputs may underlie the formation of place fields in a novel environment. Moreover, Takács et al., 2018 found that the ACh terminals co-released GABA in separate vesicles, and that ACh acting on M2 (Gi-coupled) autoreceptors on cholinergic terminals inhibited the release of both ACh and GABA. Future work is required to disentangle the distinct effects of ACh acting at the various muscarinic receptors (M1-M5).
 
-## Acetylcholine, novelty and place field shifts
+### Acetylcholine, novelty and place field shifts
 
 Acetylcholine acting at muscarinic receptors has been hypothesized to be a global novelty signal in the dentate gyrus (Gómez-Ocádiz et al., 2022), dorsal hippocampus (Huff et al., 2022), and the parahippocampal gyrus (Frank and Kafkas, 2021). A novel unconditioned stimulus caused a large increase in ACh extracellular levels in the hippocampus, but little locomotion (Acquas et al., 1996). On the other hand, hippocampal ACh release in an animal placed in a novel environment has two components, one related to novelty, that disappears in a familiar environment (Thiel et al., 1998), and one related to motor activity, associated with increased exploration (Giovannini et al., 2001). Indeed, a recent fiber photometric study showed that part of the population activity in medial septal cholinergic neurons is correlated with the logarithm of running speed (Kopsick et al., 2022). We are primarily interested in the component of the ACh signal related to novelty because of previous studies demonstrating modulation of place cell firing that was more pronounced during the first day in a novel environment (Roth et al., 2012).
 
@@ -154,7 +166,7 @@ In vivo recordings in rats demonstrated that place fields expand and the center 
 
 Despite the ability of elegant theories of synaptic plasticity to account for backward shifts in the center of mass of the place field, forward shifts have also been observed. Forward shifting of the center of mass of place field firing occurred, shifting toward prospective goal locations in the continuous T-maze alternation task as a reward was approached (Lee et al., 2006). Thus, task-specific demands may allow for the modulation of firing fields by neuromodulators such as ACh and dopamine. In a study that did not involve reward, but only exploration of a novel virtual linear maze (Dong et al., 2021), the center of mass of CA1 place fields in laps 2–4 were forward shifted compared to the first lap, for cells that already had a place field on the first lap (a lap required approximately 25 s). Laps 5 and beyond were backward shifted compared to the immediately preceding lap, so averaging over all runs, the place field was shifted backwards. Perhaps the neuromodulatory environment, including cholinergic tone, was different during the first four laps. The data in that study indicated that backward shifting in CA1 in a novel environment is due to a combination of place field expansion, skewness and translation of the point at which peak firing occurs. They suggested that since skewness and width dynamics are inconsistent across studies, multiple mechanisms may be involved in place field shifting.
 
-## Ideas and speculations: Implications of our results for place fields in intact rodents
+### Ideas and speculations: Implications of our results for place fields in intact rodents
 
 Our results suggest that increasing levels of ACh could lead to forward shifts in place field center of mass whereas decreasing levels of ACh could contribute to backwards shifts. Since cholinergic activity in CA1 is elevated when animals encounter novel environments, our results with CCh could correspond to an initial encounter with a novel environment, where firing of an existing place cell is shifted ‘forward’ or later during the depolarizing ramp that simulates spatially tuned input. Our control conditions, then, would be analogous to lower cholinergic tone, occurring as an animal becomes familiar with an environment, and the associated “backward” shift earlier in the depolarizing ramp. The rapid modulation of ion channels by removal of cholinergic tone could therefore provide a possible mechanism for the rapid shifting of place cell firing in a novel versus familiar environment, perhaps complementary to Hebbian plasticity that develops over time.
 
@@ -164,15 +176,207 @@ There is a growing realization that there may be multiple mechanisms for place f
 
 ## Materials and methods
 
-## Experimental methods
+**Key resources table**
 
-## Slice preparation
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>Male Sprague Dawley rats</td>
+      <td>Envigo (Inovit)</td>
+      <td>Hsd:Sprague Dawley SD</td>
+      <td>7–12 weeks old when sacrificed for experiments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBQX</td>
+      <td>Alomone Labs</td>
+      <td>cat# N-186</td>
+      <td>AMPA receptor antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DL-APV</td>
+      <td>HelloBio</td>
+      <td>cat# HB0252</td>
+      <td>NMDA receptor antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gabazine</td>
+      <td>Alomone Labs</td>
+      <td>cat# G-216</td>
+      <td>GABAA receptor antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CGP55845</td>
+      <td>Abcam</td>
+      <td>cat# ab120337</td>
+      <td>GABAB receptor antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbachol</td>
+      <td>Tocris</td>
+      <td>cat# 2810</td>
+      <td>Acetylcholine receptor agonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetylcholine</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat# A6625</td>
+      <td>Ligand for acetylcholine receptors</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>flufenamic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat# F9005</td>
+      <td>TRP channel antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SKF96365</td>
+      <td>Alomone Labs</td>
+      <td>cat# S-175</td>
+      <td>TRPC channel antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CBA</td>
+      <td>Tocris</td>
+      <td>cat# 6724</td>
+      <td>TRPM4 channel antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>9-phenanthrol</td>
+      <td>Tocris</td>
+      <td>cat# 4999</td>
+      <td>TRPM4 channel antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Xestospongin C</td>
+      <td>Abcam</td>
+      <td>cat# ab120914</td>
+      <td>IP3R antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>low molecular weight heparin</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat# H3149</td>
+      <td>IP3R antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-myo-IP3</td>
+      <td>Cayman Chemical</td>
+      <td>cat# 60960</td>
+      <td>IP3R agonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenophostin A</td>
+      <td>MilliporeSigma</td>
+      <td>cat# 115500</td>
+      <td>IP3R agonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ryanodine</td>
+      <td>HelloBio</td>
+      <td>cat# HB1320</td>
+      <td>RyR antagonist at [µM]</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ruthenium red</td>
+      <td>Tocris</td>
+      <td>cat# 1439</td>
+      <td>RyR antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dantrolene</td>
+      <td>Tocris</td>
+      <td>cat# 0507</td>
+      <td>RyR antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>caffeine</td>
+      <td>Tocris</td>
+      <td>cat# 2793</td>
+      <td>RyR agonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thapsigargin</td>
+      <td>Alomone Labs</td>
+      <td>cat# T-650</td>
+      <td>SERCA inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BAPTA tetra-potassium salt (K4-BAPTA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat# A9801</td>
+      <td>fast Ca2+ chelator</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAXCHELATOR, WEBMAXC EXTENDED</td>
+      <td>https://somapp.ucdmc.ucdavis.edu/pharmacology/bers/maxchelator/webmaxc/webmaxcE.htm</td>
+      <td></td>
+      <td>Online free metal calculator</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>IBM</td>
+      <td>RRID:SCR_002865</td>
+      <td>Statistics software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NEURON</td>
+      <td>Hines and Carnevale, 1997; Carnevale and Hines, 2006</td>
+      <td>doi:doi.org/10.1162/neco.1997.9.6.1179; doi.org/10.1017/CBO9780511541612</td>
+      <td>Computational modelling and simulation software</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Laerd Statistics</td>
+      <td>https://statistics.laerd.com/</td>
+      <td></td>
+      <td>Online tutorial and software guide</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental methods
+
+#### Slice preparation
 
 All the procedures described below were conducted according to protocols developed by following guidelines on the responsible use of laboratory animals in research from the National Institutes of Health and approved by the Louisiana State University Health Sciences Center-New Orleans Institutional Animal Care and Use Committee (IACUC, internal protocol numbers 3583 and 3851). Animals were housed in pairs, whenever possible; in the event of single housing, Bed-r’nest pucks (Andersons Lab Bedding) were provided for enrichment purposes.
 
 For these experiments, 400-µm-thick slices were prepared from 7- to 11-week-old male Sprague Dawley rats as previously described (Combe et al., 2018). Briefly, rats were deeply anesthetized via intraperitoneal injection of ketamine and xylazine (90 and 10 mg/kg, respectively), until the disappearance of the toe-pinch and palpebral reflexes. After trans-cardiac perfusion with ice-cold solution, decapitation, and rapid removal of the brains, transverse hippocampal slices were cut using a vibratome. Slices were then transferred to a chamber filled with an oxygenated artificial cerebrospinal fluid (ACSF) containing, in mM: NaCl 125, NaHCO3 25, KCl 2.5, NaH2PO4 1.25, MgCl2 1, CaCl2 2, dextrose 25, ascorbate 1, sodium pyruvate 3.
 
-## Patch clamp electrophysiology
+#### Patch clamp electrophysiology
 
 After recovery, individual slices were transferred to a submerged recording chamber, and superfused with ACSF at about 2 ml/min; the solution was warmed through an inline heater and measured to keep it at a temperature of 34–36°C in the chamber.
 
@@ -186,9 +390,13 @@ In order to approximate the depolarizing input that place cells receive as an an
 
 Electrical stimulation was achieved by delivering constant current pulses through a tungsten bipolar electrode placed in the stratum radiatum of area CA1 to stimulate the Schaffer collateral fibers from CA3 pyramidal neurons. The instantaneous input frequency of stimulation was adjusted according to a linear, symmetric ramp (see also Hsu et al., 2018). The total duration of the ramp was ~2 s and the peak frequency at the center of the ramp was 25 Hz, our target for the maximum peak frequency in the ramp current injections (see above). The intensity of stimulation was adjusted such that neurons would fire in response to 40–65% of the total inputs and kept constant in control conditions and in the presence of carbachol. For each neuron and condition, we averaged the trials where the neurons did not fire in response to the first pulse in the synaptic ramp and the amplitude of the EPSPs was measured to estimate the degree of cholinergic modulation of presynaptic release. Antagonists of synaptic transmitter receptors were omitted in these experiments.
 
-## Experimental design and statistical analyses
+### Experimental design and statistical analyses
 
-Experimental data were recorded and analyzed with Igor Pro software (WaveMetrics). Left or rightward shifts in firing along the current ramp were quantified as an adaptation index, as previously described (Upchurch et al., 2022):#APs on upramp−#APs on downramp#APs on upramp+#APs on downramp
+Experimental data were recorded and analyzed with Igor Pro software (WaveMetrics). Left or rightward shifts in firing along the current ramp were quantified as an adaptation index, as previously described (Upchurch et al., 2022):
+
+$$
+\frac{#APs on upramp−#APs on downramp}{#APs on upramp+#APs on downramp}
+$$
 
 Positive values indicate firing predominantly on the up-ramp, while negative values indicate firing mostly on the down-ramp. For synaptically driven membrane potential ramps, the adaptation index was calculated in a similar manner, where the up-ramp consisted of the first 15 (out of 30) stimuli. An adaptation index of zero indicates symmetry in the number of action potentials on the up-ramp and the down-ramp. Plots of instantaneous frequency versus time (f/t) or current (f/I) use the time or current value at the midpoint of the interspike interval (ISI), respectively. Current amplitude is relative to tonic baseline current. Raster plots in Figures 1 and 2 show the timing of action potential firing for several trials in control conditions and in the presence of carbachol, where time = 0 indicates the beginning of the ramp. The tick marks represent the timing of each action potential (when the Vm crossed –40 mV).
 
@@ -196,24 +404,48 @@ An n=6–12 is required for a typical patch clamp electrophysiology experiment t
 
 Statistical analyses were performed in SPSS (IBM, RRID:SCR_002865), following the tutorials and software guide from Laerd Statistics (2015, https://statistics.laerd.com/). Comparisons were made in the same cell before and during pharmacological treatment; the summary plots for these data include individual points and means ± standard error of the mean. Parametric analyses (paired samples t-test and repeated-measures ANOVA) were used to compare treatments in the same neurons, since data were normally distributed as determined by the Shapiro-Wilk test for normality. Significant differences demonstrated by repeated measures ANOVA were followed up by post-hoc analysis using Bonferroni-corrected pair-wise comparisons. Differences were considered to be statistically significant when p<0.05. Outliers, as assessed by boxplots, were not removed from analysis. To check the effect of the outliers, analyses were also performed after removing outliers, and with non-parametric tests keeping the outliers. The significance did not change, and for consistency, the results of parametric tests are reported with all data included.
 
-## Computational modeling
+### Computational modeling
 
 A multicompartmental CA1 pyramidal neuron model from our laboratory was used as a starting point (Upchurch et al., 2022). This model was based on the model in the study by Poirazi et al., 2003a, with subsequent changes made in studies by Shah et al., 2008, Bianchi et al., 2012, and Combe et al., 2018. The model (Figure 11A) was created from a reconstructed morphology (Megías et al., 2001) with 144 compartments and implemented in the NEURON simulation software package (Hines and Carnevale, 1997; Carnevale and Hines, 2006). The following currents (Figure 11B) were modeled using Ohmic drive and conductances in parallel with a membrane capacitance (CM): a Na+ current (INa), L-type (ICaL), R-type (ICaR), and T-type (ICaT) Ca2+ currents, two delayed rectifiers (IKv1 and IKv2), an A-type K+ current (IA), an inward rectifying potassium current (IKIR), a nonspecific Ca2+-activated current (ICAN), a hyperpolarization-activated mixed cationic h-current (Ih), and a leak current (IL). All currents were as in the previous model except (ICAN), which was added to the model. In the soma and apical dendrites, we kept the Markov model (Figure 11C) of the NaV channel that we modified from Balbi et al., 2017. This Markov model was tuned to replicate the distance-dependent long-term inactivation of NaV1.6 found in the literature (Mickus et al., 1999) that causes spike frequency adaptation and the difference in half activation between the soma and dendrites supported by Gasparini and Magee, 2002. The sevenfold gradient in the h-conductance supported by Magee, 1998, sixfold gradient in A-type potassium channels supported by Hoffman et al., 1997 and lower sodium conductance in the dendrites versus the soma (75% of somatic value) supported by Gasparini and Migliore, 2015 were also retained. A spine factor, to account for the additional membrane area due a higher density of spines (Megías et al., 2001) was varied as described in Upchurch et al., 2022, and a sigmoidal decrease in membrane and axial resistance was implemented to account for the decrease in input resistance along the apical dendrites (Magee, 1998; Poirazi et al., 2003b).
 
-The calcium handling for the model (see top panels in Figure 7A1 and B1) was modified from Ashhad and Narayanan, 2013. The model performs a Ca2+ material balance on four shells in each compartment, and incorporates radial and longitudinal diffusion (DCa∇2[Ca2+]), stationary and mobile Ca2+ buffers (RBuf), calcium leak through endoplasmic reticulum leak channels (Jleak), Ca2+ uptake from a sarcoplasmic/endoplasmic reticulum Ca2+ ATPase pump (JSERCA), IP3-mediated Ca2+ release (JIP3R), a plasma membrane extrusion pump (JPump) and Ca2+ from voltage gated channels on the membrane (JVGCC). The latter two terms appear only in the outer shell. Details on the implementation of diffusion, the buffers, calcium leak and the pumps are described in Ashhad and Narayanan, 2013. The differential equation for cytosolic calcium is described below.∂[Ca2+]∂t=DCa∇2[Ca2+]+AJIP3R+B(Jleak−JSERCA)+RBuf+JVGCC−JPump
+![Figure 11.](https://cdn.elifesciences.org/articles/84387/elife-84387-fig11-v2.jpg)
 
-We used an equation for Ca2+ dynamics in the nanodomain that is agnostic as to the source of the Ca2+ contributing to the nanodomain:d[Ca2+]NDdt=X∗ICa+[Ca2+]outer shell −[Ca2+]ND400ms
+**Figure 11.:** (A) Reconstructed morphology ported to NEURON simulation program, with somatic current injection site labeled. (B) Equivalent circuit diagram, with the reversal potentials for each channel indicated by EX. The following currents were modeled using Ohmic drive and conductances in parallel with a membrane capacitance (CM): a Na+ current (INa), L-type (ICaL), R-type (ICaR), and T-type (ICaT) Ca2+ currents, two delayed rectifiers (IKv1 and IKv2), an A-type K+ current (IA), an inward rectifying K+ current (IKIR), a nonspecific Ca2+-activated current (ICAN), a hyperpolarization-activated mixed cationic h-current (Ih), and a leak current (IL). (C) Markov Model of the NaV channel with an open state (O), a closed state (C), a short-term inactivated state (I1) and a long-term inactivated state (I2). See also Figure 11—figure supplement 1.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/84387/elife-84387-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** This model captures the responses seen with cholinergic activation in the experiments. (A) Simulated somatic recordings in control (low IP3). (A1) Voltage traces and current ramp. (A2) Nanomolar Ca2+ concentration in outer shell beneath the cell membrane. (A3) The nanodomain Ca2+ concentration is not elevated with low levels of IP3 that simulate control. (A4) There is negligible TRPM4 activation. B. Simulated somatic recordings in CCh (high IP3). (B1) Voltage traces and current ramp. (B2) Nanomolar Ca2+ concentration in outer shell beneath the cell membrane is elevated due to increased spiking on the down-ramp. (B3) The nanodomain Ca2+ concentration reached micromolar concentrations with high levels of IP3 that simulate application of CCh. (B4) TRPM4 is robustly activated. Black dashed line marks the end of the injected current ramp, highlighting that the return to baseline of Ca2+ and TRPM4 current lags behind injected current ramp. (C) Simulated somatic recordings in CCh (high IP3) with no nanodomain. (C1) Voltage traces and current ramp. Note that more ramp current is required to achieve the same firing rates as were achieved in B1. (C2) Nanomolar Ca2+ concentration in outer shell beneath the cell membrane.( C3) No nanodomain. (C4) There is negligible TRPM4 activation. In A2 and C2, the red arrows point to when the [Ca2+] in the outer shell starts decreasing while the neuron keeps firing, as opposed to B2.
+
+The calcium handling for the model (see top panels in Figure 7A1 and B1) was modified from Ashhad and Narayanan, 2013. The model performs a Ca2+ material balance on four shells in each compartment, and incorporates radial and longitudinal diffusion $(D_{Ca}∇^{2}[Ca^{2+}])$, stationary and mobile Ca2+ buffers (RBuf), calcium leak through endoplasmic reticulum leak channels (Jleak), Ca2+ uptake from a sarcoplasmic/endoplasmic reticulum Ca2+ ATPase pump (JSERCA), IP3-mediated Ca2+ release (JIP3R), a plasma membrane extrusion pump (JPump) and Ca2+ from voltage gated channels on the membrane (JVGCC). The latter two terms appear only in the outer shell. Details on the implementation of diffusion, the buffers, calcium leak and the pumps are described in Ashhad and Narayanan, 2013. The differential equation for cytosolic calcium is described below.
+
+$$
+\frac{∂[Ca^{2+}]}{∂t}=D_{Ca}∇^{2}[Ca^{2+}]+AJ_{IP3R}+B(J_{leak}−J_{SERCA})+R_{Buf}+J_{VGCC}−J_{Pump}
+$$
+
+We used an equation for Ca2+ dynamics in the nanodomain that is agnostic as to the source of the Ca2+ contributing to the nanodomain:
+
+$$
+\frac{d[Ca^{2+}]_{ND}}{dt}=X∗I_{Ca}+\frac{[Ca^{2+}]_{outer shell }−[Ca^{2+}]_{ND}}{400ms}
+$$
 
 where X is a scale factor representing the effect of a small volume for Ca2+ accumulation in the restricted nanodomain. The model is agnostic regarding the source of the Ca2+ entry into the nanodomain, which was arbitrarily set to be proportional to the total Ca2+ current ICa. In the absence of simulated application of CCh, X=0 so that the TRPM4 channel senses the bulk Ca2+ concentration in the outer shell. To simulate application of CCh, in contrast with our previous modeling efforts, based on a central role for IP3R (see Figure 11—figure supplement 1), [IP3] and therefore JIP3R was not increased from baseline levels; instead, influx to the nanodomain from an unknown source was simulated by setting X=500. The relatively long time constant reflected the spatially restricted nature of the nanodomain, with some postulated impediment to diffusion between the nanodomain and the bulk cytosol. In one simulation (purple traces in Figure 9), the [Ca2+]ND for every segment in every section was recorded in the original CCh simulation (magenta traces) and played back using NEURON’s vector play method in the model lacking the voltage-dependence of the TRPM4 channels in order to eliminate differences in [Ca2+]ND between models and focus solely on the contribution of the voltage-dependence unrelated to additional Ca2+ influx.
 
-The TRPM4 model was modified from Nilius et al., 2004 and assumes that the required binding of Ca2+ to the channel precedes voltage-dependent channel activation. The model has three different states, an unbound state, a Ca2+ bound closed state, and an open state.TRPM4⇔TRPM4 bound to Ca2+⇔αV,β(V)Open TRPM4 channel
+The TRPM4 model was modified from Nilius et al., 2004 and assumes that the required binding of Ca2+ to the channel precedes voltage-dependent channel activation. The model has three different states, an unbound state, a Ca2+ bound closed state, and an open state.
 
-Ca2+ binding is assumed to be much faster than the voltage dependent gating and is assumed to instantaneously reach the steady state binding determined by the dissociation constant Kd (87 μM). The fraction of open channels m relaxes to the steady state activation m∞ with a time constant, τ, with first-order kinetics:α′=α1+Kd[Ca2+]ND,m∞=α′α′+βτ=1α′+β
+$$
+TRPM4⇔TRPM4 bound to Ca^{2+}⇔\alphaV,\beta(V)Open TRPM4 channel
+$$
 
-where α is the forward rate of Ca2+ bound TRPM4 channel opening, α(V)=0.0057 exp(0.0060 V), α` is the forward rate scaled by the fraction of Ca2+ bound channels, β is the backward rate of TRPM4 channel closing, β(V)=0.033 exp(−0.019 V) and [Ca2+]ND is the Ca2+ concentration in the nanodomain. When removing the voltage-dependence of TRPM4 channels, we set V in the equations above to the steady-state value at –60 mV. We injected enough current into the model to hold the membrane potential at –60 mV long enough for all transients to equilibrate before injecting a two second temporally symmetric current ramp in the soma. The amplitude of the ramp was adjusted to reach similar peak frequencies as in the experiments, 10–25 Hz.
+Ca2+ binding is assumed to be much faster than the voltage dependent gating and is assumed to instantaneously reach the steady state binding determined by the dissociation constant Kd (87 μM). The fraction of open channels m relaxes to the steady state activation m∞ with a time constant, τ, with first-order kinetics:
+
+$$
+\alpha^{′}=\frac{\alpha}{1+\frac{Kd}{[Ca^{2+}]_{ND}}},m_{∞}=\frac{\alpha^{′}}{\alpha^{′}+\beta}\tau=\frac{1}{\alpha^{′}+\beta}
+$$
+
+where α is the forward rate of Ca2+ bound TRPM4 channel opening, α(V)=0.0057 exp(0.0060 V), $\alpha^{`}$ is the forward rate scaled by the fraction of Ca2+ bound channels, β is the backward rate of TRPM4 channel closing, β(V)=0.033 exp(−0.019 V) and [Ca2+]ND is the Ca2+ concentration in the nanodomain. When removing the voltage-dependence of TRPM4 channels, we set V in the equations above to the steady-state value at –60 mV. We injected enough current into the model to hold the membrane potential at –60 mV long enough for all transients to equilibrate before injecting a two second temporally symmetric current ramp in the soma. The amplitude of the ramp was adjusted to reach similar peak frequencies as in the experiments, 10–25 Hz.
 
 The persistent current during the interspike intervals determines the spike frequency. In order to focus on the rate determining currents in Figures 8 and 9, we removed points from the traces during spiking by eliminating points at which the absolute value of the first temporal derivative of the current trace exceeded 0.005 μA/ms•cm2 for the net current, 0.15 μA/ms•cm2 for the TRPM4 current, and 0.2 μA/ms•cm2 for the NaV current. Points outside the range of –0.3–0.09 μA/cm2 in the net current trace, greater than 0 μA/cm2 in the TRPM4 trace and less than –10 µA in the NaV current were also removed. Points were removed from the occupancy in O trace if the absolute value of the first temporal derivative of the O state exceeded 0.00002/ms or when occupancy exceeded 0.0002.
 
-## Software accessibility
+### Software accessibility
 
 Model code is freely available and can be downloaded from ModelDB at: https://modeldb.science/267599.

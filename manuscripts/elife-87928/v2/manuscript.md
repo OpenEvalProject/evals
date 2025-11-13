@@ -22,23 +22,23 @@
 
 ### Affiliations
 
-1. https://ror.org/044mj7r89 Institute of Evolutionary Biology Barcelona Spain
-2. https://ror.org/03z77qz90 Institute of Genomics, University of Tartu Tartu Estonia
-3. https://ror.org/035b05819 Section for Evolutionary Genomics, The Globe Institute, Faculty of Health and Medical Sciences, University of Copenhagen Copenhagen Denmark
-4. https://ror.org/035b05819 Centre for Biodiversity Genomics, University of Copenhagen Copenhagen Denmark
-5. https://ror.org/05cy4wa09 Wellcome Sanger Institute Saffron Walden United Kingdom
-6. https://ror.org/021018s57 Departament of Genetics, Microbiology and Statistics-Institut de Recerca de la Biodiversitat (IRBio), Universitat de Barcelona Barcelona Spain
-7. https://ror.org/04qeh2h86 Institut Català de Paleontologia Miquel Crusafont, Universitat Autònoma de Barcelona Barcelona Spain
-8. https://ror.org/015hz7p22 Museu de Ciències Naturals de Barcelona Barcelona Spain
-9. https://ror.org/0371hy230 Catalan Institution of Research and Advanced Studies (ICREA) Barcelona Spain
-10. https://ror.org/00cz47042 Department of Entomology, National Museum of Natural History, Smithsonian Institution Washington United States
-11. https://ror.org/03kpps236 CNAG-CRG, Centre for Genomic Regulation, Barcelona Institute of Science and Technology (BIST) Barcelona Spain
+1. Institute of Evolutionary Biology Barcelona Spain ([ROR:044mj7r89](https://ror.org/044mj7r89))
+2. Institute of Genomics, University of Tartu Tartu Estonia ([ROR:03z77qz90](https://ror.org/03z77qz90))
+3. Section for Evolutionary Genomics, The Globe Institute, Faculty of Health and Medical Sciences, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
+4. Centre for Biodiversity Genomics, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
+5. Wellcome Sanger Institute Saffron Walden United Kingdom ([ROR:05cy4wa09](https://ror.org/05cy4wa09))
+6. Departament of Genetics, Microbiology and Statistics-Institut de Recerca de la Biodiversitat (IRBio), Universitat de Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))
+7. Institut Català de Paleontologia Miquel Crusafont, Universitat Autònoma de Barcelona Barcelona Spain ([ROR:04qeh2h86](https://ror.org/04qeh2h86))
+8. Museu de Ciències Naturals de Barcelona Barcelona Spain ([ROR:015hz7p22](https://ror.org/015hz7p22))
+9. Catalan Institution of Research and Advanced Studies (ICREA) Barcelona Spain ([ROR:0371hy230](https://ror.org/0371hy230))
+10. Department of Entomology, National Museum of Natural History, Smithsonian Institution Washington United States ([ROR:00cz47042](https://ror.org/00cz47042))
+11. CNAG-CRG, Centre for Genomic Regulation, Barcelona Institute of Science and Technology (BIST) Barcelona Spain ([ROR:03kpps236](https://ror.org/03kpps236))
 
 † Corresponding author
 
 ## Abstract
 
-The Xerces Blue ( Glaucopsyche xerces ) is considered to be the first butterfly to become extinct in historical times. It was notable for its chalky lavender wings with conspicuous white spots on the ventral wings. The last individuals were collected in their restricted habitat, in the dunes near the Presidio military base in San Francisco, in 1941. We sequenced the genomes of four 80- to 100-year-old Xerces Blue, and seven historical and one modern specimens of its closest relative, the Silvery Blue ( Glaucopsyche lygdamus ). We compared these to a novel annotated genome of the Green-Underside Blue ( Glaucopsyche alexis ). Phylogenetic relationships inferred from complete mitochondrial genomes indicate that Xerces Blue was a distinct species that diverged from the Silvery Blue lineage at least 850,000 years ago. Using nuclear genomes, both species experienced population growth during the Eemian interglacial period, but the Xerces Blue decreased to a very low effective population size subsequently, a trend opposite to that observed in the Silvery Blue. Runs of homozygosity and deleterious load in the former were significantly greater than in the later, suggesting a higher incidence of inbreeding. These signals of population decline observed in Xerces Blue could be used to identify and monitor other insects threatened by human activities, whose extinction patterns are still not well known.
+The Xerces Blue (Glaucopsyche xerces) is considered to be the first butterfly to become extinct in historical times. It was notable for its chalky lavender wings with conspicuous white spots on the ventral wings. The last individuals were collected in their restricted habitat, in the dunes near the Presidio military base in San Francisco, in 1941. We sequenced the genomes of four 80- to 100-year-old Xerces Blue, and seven historical and one modern specimens of its closest relative, the Silvery Blue (Glaucopsyche lygdamus). We compared these to a novel annotated genome of the Green-Underside Blue (Glaucopsyche alexis). Phylogenetic relationships inferred from complete mitochondrial genomes indicate that Xerces Blue was a distinct species that diverged from the Silvery Blue lineage at least 850,000 years ago. Using nuclear genomes, both species experienced population growth during the Eemian interglacial period, but the Xerces Blue decreased to a very low effective population size subsequently, a trend opposite to that observed in the Silvery Blue. Runs of homozygosity and deleterious load in the former were significantly greater than in the later, suggesting a higher incidence of inbreeding. These signals of population decline observed in Xerces Blue could be used to identify and monitor other insects threatened by human activities, whose extinction patterns are still not well known.
 
 ## Introduction
 
@@ -48,13 +48,319 @@ The Xerces Blue and the closely related Silvery Blue (Glaucopsyche lygdamus) wer
 
 ## Results
 
-## Historic and modern butterfly genomes
+### Historic and modern butterfly genomes
 
 We extracted DNA from 12 historical specimens (5 G. xerces, 7 G. lygdamus) (Table 1). One Xerces Blue sample did not yield detectable DNA in two independent extractions. For each of the successful extracts, we prepared a single library which was shotgun sequenced on the HiseqX Illumina platform. We mapped 124,101,622 and 184,084,237 unique DNA reads of Xerces Blue and Silvery Blue, respectively, against the G. alexis reference genome (Table 2). The DNA reads exhibited typical ancient DNA features, such as short mean read length (ranging from 47.55 to 67.41 bases on average), depending on the specimen and post-mortem deamination patterns at the 5′ and 3′ ends (Supplementary file 1A). As listed in the original museum records, we found one Silvery Blue and two Xerces Blue females. Inter-individual comparisons suggested no close kinship link among the studied individuals.
 
+**Table 1.**
+ List of historical specimens analysed in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genome #</th>
+      <th>Species</th>
+      <th>Subspp.</th>
+      <th>State</th>
+      <th>Locality</th>
+      <th>Date</th>
+      <th>Collection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USNMENT101413</td>
+      <td>G. xerces</td>
+      <td></td>
+      <td>California</td>
+      <td>San Francisco</td>
+      <td>NA</td>
+      <td>Barnes</td>
+    </tr>
+    <tr>
+      <td>USNMENT101402</td>
+      <td>G. xerces</td>
+      <td></td>
+      <td>California</td>
+      <td>San Francisco</td>
+      <td>16/4/1923</td>
+      <td>Barnes</td>
+    </tr>
+    <tr>
+      <td>USNMENT101441</td>
+      <td>G. xerces</td>
+      <td></td>
+      <td>California</td>
+      <td>San Francisco</td>
+      <td>NA</td>
+      <td>Barnes</td>
+    </tr>
+    <tr>
+      <td>USNMENT101406</td>
+      <td>G. xerces</td>
+      <td></td>
+      <td>California</td>
+      <td>San Francisco</td>
+      <td>NA</td>
+      <td>Barnes</td>
+    </tr>
+    <tr>
+      <td>USNMENT101434</td>
+      <td>G. xerces</td>
+      <td></td>
+      <td>California</td>
+      <td>San Francisco</td>
+      <td>16/4/1923</td>
+      <td>Barnes</td>
+    </tr>
+    <tr>
+      <td>USNMENT00181297</td>
+      <td>G. lygdamus</td>
+      <td>incognitus</td>
+      <td>California</td>
+      <td>Marin Country</td>
+      <td>NA</td>
+      <td>Barnes</td>
+    </tr>
+    <tr>
+      <td>USNMENT00181298</td>
+      <td>G. lygdamus</td>
+      <td>incognitus</td>
+      <td>California</td>
+      <td>Fairfax</td>
+      <td>27/5/1932</td>
+      <td>WMD Field</td>
+    </tr>
+    <tr>
+      <td>USNMENT00181299</td>
+      <td>G. lygdamus</td>
+      <td>incognitus</td>
+      <td>California</td>
+      <td>Oakland</td>
+      <td>14/4/1948</td>
+      <td>Graham Heid</td>
+    </tr>
+    <tr>
+      <td>USNMENT00181300</td>
+      <td>G. lygdamus</td>
+      <td>incognitus</td>
+      <td>California</td>
+      <td>San Jose</td>
+      <td>27/3/1964</td>
+      <td>Opler</td>
+    </tr>
+    <tr>
+      <td>USNMENT00181301</td>
+      <td>G. lygdamus</td>
+      <td>incognitus</td>
+      <td>California</td>
+      <td>Haywood City</td>
+      <td>1/5/1931</td>
+      <td>WMD Field</td>
+    </tr>
+    <tr>
+      <td>USNMENT00181302</td>
+      <td>G. lygdamus</td>
+      <td>incognitus</td>
+      <td>California</td>
+      <td>Santa Cruz</td>
+      <td>1/4/1932</td>
+      <td>JW Tilden/Field</td>
+    </tr>
+    <tr>
+      <td>USNMENT00181303</td>
+      <td>G. lygdamus</td>
+      <td>incognitus</td>
+      <td>California</td>
+      <td>Santa Cruz</td>
+      <td>8/4/1927</td>
+      <td>GW Rawson</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Mapping statistics of the analysed historical specimens.Mapping statistics of the four historical G. xerces (L003, L005, L007, and L009) and the seven historical G. lydagmus (L002, L004, L006, L008, L011, L012, and L013) specimens mapped against the G. alexis reference genome. Average depth is displayed for the covered regions of each individual.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample identifier</th>
+      <th>Generated reads</th>
+      <th>Q25 unique mapped reads</th>
+      <th>Breadth of coverage (%)</th>
+      <th>Average depth covered regions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L002</td>
+      <td>300,294,248</td>
+      <td>23,337,751</td>
+      <td>37.27</td>
+      <td>5.105</td>
+    </tr>
+    <tr>
+      <td>L003</td>
+      <td>405,198,060</td>
+      <td>32,547,820</td>
+      <td>36.86</td>
+      <td>6.78</td>
+    </tr>
+    <tr>
+      <td>L004</td>
+      <td>357,165,438</td>
+      <td>28,722,185</td>
+      <td>38.77</td>
+      <td>6.55</td>
+    </tr>
+    <tr>
+      <td>L005</td>
+      <td>776,312,378</td>
+      <td>56,459,037</td>
+      <td>45.7</td>
+      <td>12.42</td>
+    </tr>
+    <tr>
+      <td>L006</td>
+      <td>359,520,168</td>
+      <td>28,498,720</td>
+      <td>40.07</td>
+      <td>6.18</td>
+    </tr>
+    <tr>
+      <td>L007</td>
+      <td>348,916,870</td>
+      <td>26,758,356</td>
+      <td>34.79</td>
+      <td>6.21</td>
+    </tr>
+    <tr>
+      <td>L008</td>
+      <td>508,120,156</td>
+      <td>32,107,192</td>
+      <td>42.08</td>
+      <td>7.422</td>
+    </tr>
+    <tr>
+      <td>L009</td>
+      <td>322,955,384</td>
+      <td>39,312,617</td>
+      <td>40.6</td>
+      <td>8.02</td>
+    </tr>
+    <tr>
+      <td>L011</td>
+      <td>236,886,534</td>
+      <td>24,165,282</td>
+      <td>38.6</td>
+      <td>5.40</td>
+    </tr>
+    <tr>
+      <td>L012</td>
+      <td>328,359,669</td>
+      <td>18,683,738</td>
+      <td>33.37</td>
+      <td>4.29</td>
+    </tr>
+    <tr>
+      <td>L013</td>
+      <td>385,635,644</td>
+      <td>52,612,937</td>
+      <td>47.2</td>
+      <td>12.3</td>
+    </tr>
+  </tbody>
+</table>
+
 The historical genomes covered 49.3% (Xerces Blue) and 55.2% (Silvery Blue) of the G. alexis reference genome, largely because repetitive chromosomal regions cannot be confidently assessed with short, ancient DNA sequence reads (Supplementary file 1B). To estimate the mappable fraction of the reference G. alexis genome, we randomly fragmented it to 50–70 nucleotides and mapped the generated fragments back to the complete genome. An average of 57.8% of the G. alexis genome was covered with these read lengths. We suggest that reduced coverage from the historical specimens may be due to genomic divergence of G. xerces and G. lygdamus from the G. alexis reference. The annotation of genes located in those unrecoverable regions provided a putative list of 14 nuclear genes with diverse functions obtained from BLAST, that should be further explored to understand the uniqueness of the extinct species (Table 3).
 
-## Phylogenetic relationships
+**Table 3.**
+ Coordinates of the analysed colouration genes.Genomic coordinates in G. alexis reference genomes of different wing colouration genes described in other butterfly species.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Chromosome</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Gene</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FR990043.1</td>
+      <td>5,387,706</td>
+      <td>5,403,599</td>
+      <td>Wnt1</td>
+    </tr>
+    <tr>
+      <td>FR990043.1</td>
+      <td>5,417,902</td>
+      <td>5,423,677</td>
+      <td>Wnt6</td>
+    </tr>
+    <tr>
+      <td>FR990043.1</td>
+      <td>5,519,353</td>
+      <td>5,539,737</td>
+      <td>Wnt10b</td>
+    </tr>
+    <tr>
+      <td>FR990043.1</td>
+      <td>5,553,666</td>
+      <td>5,554,753</td>
+      <td>Wnt10a</td>
+    </tr>
+    <tr>
+      <td>FR990043.1</td>
+      <td>26,972,856</td>
+      <td>26,974,487</td>
+      <td>WntA</td>
+    </tr>
+    <tr>
+      <td>FR990046.1</td>
+      <td>2,343,467</td>
+      <td>2,357,667</td>
+      <td>Wnt7b</td>
+    </tr>
+    <tr>
+      <td>FR990046.1</td>
+      <td>6,255,275</td>
+      <td>6,271,623</td>
+      <td>Wnt5b</td>
+    </tr>
+    <tr>
+      <td>FR990046.1</td>
+      <td>19,475,636</td>
+      <td>19,486,554</td>
+      <td>Wnt9</td>
+    </tr>
+    <tr>
+      <td>FR990050.1</td>
+      <td>16,200,978</td>
+      <td>16,212,495</td>
+      <td>Wnt11</td>
+    </tr>
+    <tr>
+      <td>FR990054.1</td>
+      <td>20,633,400</td>
+      <td>20,655,261</td>
+      <td>Cortex</td>
+    </tr>
+    <tr>
+      <td>FR990059.1</td>
+      <td>20,254,460</td>
+      <td>20,255,275</td>
+      <td>Optix</td>
+    </tr>
+  </tbody>
+</table>
+
+### Phylogenetic relationships
 
 Maximum likelihood phylogenetic inference using whole mitochondrial genomes showed that the Xerces Blue specimens form a monophyletic clade, as do the Silvery Blue specimens (Figure 1a). We inferred a time-calibrated Bayesian phylogenetic tree from protein-coding genes analysis and 12 related butterflies in Polyommatinae subfamily (Supplementary file 1C), revealing high support for the sister group relationship (posterior probability = 1). We found the specie Shijimiaeoides (Sinia) divina inside the Glaucopsyche clade, in agreement with previous phylogenetic studies (Lukhtanov and Gagarina, 2022). Because there are no known fossils to calibrate the time since divergence, we first used a molecular clock that spanned the range of rates frequently used for arthropod mitochondrial genes (1.5–2.3% divergence/Ma). Our dated analysis yielded an origin of this subgroup of Polyommatinae at 12.4 Ma (8.82–16.27 Ma 95% HPD [highest posterior density] interval) and divergence of the Xerces Blue from the Silvery Blue at 900,000 years ago (0.61–1.19 Ma 95% HPD interval, Figure 1b). A second estimate based on larger-scale fossil-based calibrations (Espeland et al., 2018) fixed the origin of the subgroup to ca. 33 Ma (Chazot et al., 2019), inferred the subsequent divergence of the Xerces Blue and Silvery Blue to 2.40 Ma (1.95–2.73 Ma 95% HPD interval, Figure 1b). The recent speciation of Xerces and Silvery Blue is not obviously due to infection with the Wolbachia, as no evidence of infection of the sampled specimens with this alpha-proteobacterium is detected in the raw read data.
 
@@ -68,13 +374,29 @@ Principal component analysis (PCA) using PCAngsd (Meisner and Albrechtsen, 2018)
 
 **Figure 2.:** The PCA was generated with nuclear DNA data (N = 6,682,591 SNPs (single nucleotide polymorphisms)) from 11 historical butterfly specimens (4 G. xerces and 7 G. lygdamus), a modern G. lygdamus from Canada (RVcoll10-B005) and a modern G. alexis reference genome. The PCA shows a clear separation of both historical species and the reference in the first PC (explaining 52.81% of the variance), and separation of G. xerces and G. lygdamus by the second PC (explaining 6.09% of the variance), supporting they are separated lineages.
 
-## Demographic history and diversity
+### Demographic history and diversity
 
 We used the pairwise sequentially Markovian coalescent (PSMC) algorithm (Li and Durbin, 2011) to evaluate the demographic histories of both butterfly species, first exploring the two specimens with highest coverage (L05 and L13) (Figure 3). We found an increase in effective population size in both species that is roughly coincident with the interglacial Marine Isotopic Stage 7 (approximately from 240,000 to 190,000 years ago; Batchelor et al., 2019). After this timepoint the trends differ. We estimated a continuous decrease in Xerces Blue population size in parallel to the Wisconsin Glacial Episode, which started about 75,000 years ago. However, both the modern and the historical Silvery Blue do not appear to have been negatively affected by this event (Figure 3—figure supplement 1), suggesting different adaptive strategies to cope with cooling temperatures and/or food plant availability.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/87928/elife-87928-fig3-v2.jpg)
+
+**Figure 3.:** The two historical samples are those with higher average coverage. Individual PSMC plots were bootstrapped 100 times each (lighter lines). One year of generation time and a mutation rate of µ = 1.9 × 10−9 were used. The peak of the Marine Isotopic Stage 7 interglacial is marked in yellow.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87928/elife-87928-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) PSMC of Xerces Blue L05 down-sampled to half (red) and 75% of coverage (green). (b) PSMC of down-sampled Xerces Blue L05 corrected. Lower-coverage results in underestimation of heterozygote site and thus lower historical effective population sizes. This situation can be corrected assuming a false negative rate (FNR) by visually adjusting the curves using the psmc_plot.py program from the PSMC package. (c) PSMC of Xerces Blue L03, L05, L07, and L09 corrected assuming FNR. (d) PSMC of historical Silvery Blue L02, L04, L006, L08, L11, L12, and L13 and modern Silvery Blue from Canada (RVcoll10-B005) corrected assuming FNR. Despite current differences in coverage, individuals from each species follow the same trajectory.
 
 Second, we generated PSMC curves from the remaining lower-coverage individuals and down-sampled data from specimen L05 to 50% and 75% of the total coverage to explore the effects of coverage on estimation of heterozygous sites. Although there was a reduction in the effective population size estimates, as expected, the temporal trajectories in lower-coverage individuals were similar to their respective, higher-coverage Xerces Blue and Silvery Blue references (Figure 3—figure supplement 1).
 
 We subsequently explored the heterozygosity of each individual and found that Xerces Blue had 22% less heterozygosity on average than the Silvery Blue historical samples, a difference that is statistically significant (T-test; p = 0.0072) (Figure 4, Supplementary file 1D). We searched for runs of homozygosity (RoH) that can indicate the existence of inbreeding in a dwindling population. The total fraction of the genome presenting RoH, although limited, is much higher in Xerces Blue (up to 6% of the genome) than in Silvery Blue, especially in short RoH of size between 100 and 500 kb (Figure 4—figure supplement 1), consistent with background inbreeding. The limited presence of long RoH discards consanguinity as a common scenario in Xerces Blue.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87928/elife-87928-fig4-v2.jpg)
+
+**Figure 4.:** (a) Percentage of the autosomal genome in RoH by size bins: very short RoH (<100 kb), short RoH (100–500 kb), intermediate RoH (500 kb to 1 Mb), and long (1–5 Mb). Short RoH reflect LD patterns, intermediate size RoH describe background inbreeding due to genetic drift, and long RoH appear in the case of very recent inbreeding due to consanguinity. Error bars show the standard deviation. (b) Distribution of RoH in the autosomal genome of a Xerces specimen, L05. (c) Distribution of RoH in the autosomal genome of a Silvery specimen L13.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87928/elife-87928-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Heterozygosity estimates for low-coverage data from both Silvery Blue (historical and modern), Xerces Blue butterflies, and Green-Underside Blue (modern). (b) RoH for each individual classified by length.
 
 We identified amino acid-changing alleles that may be suggestive of a deleterious genetic load associated with long-term low population numbers in the Xerces Blue. The average Ka/Ks ratio is higher in Xerces Blue than in Silvery Blue; the former also carries a higher fraction of nonsense and functionally high-to-moderate effect variants in homozygosity and RoH with an increased concentration of high-to-moderate effect variants (Figure 5), as predicted with a functional prediction toolbox, SnpEff (Cingolani et al., 2012).
 
@@ -94,11 +416,469 @@ Our study further demonstrates the value of museum insect specimens for estimati
 
 ## Methods
 
-## Historical butterfly specimens
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Glaucopsyche xerces; female)</td>
+      <td>L003</td>
+      <td>This paper</td>
+      <td>SAMEA114094142</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Biological sample (G. xerces; male)</td>
+      <td>L005</td>
+      <td>This paper</td>
+      <td>SAMEA114094143</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Biological sample (G. xerces; male)</td>
+      <td>L007</td>
+      <td>This paper</td>
+      <td>SAMEA114094144</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Biological sample (G. xerces; female)</td>
+      <td>L009</td>
+      <td>This paper</td>
+      <td>SAMEA114094145</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Glaucopsyche lygdamus; male)</td>
+      <td>L002</td>
+      <td>This paper</td>
+      <td>SAMEA114094134</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Biological sample (G. lygdamus; male)</td>
+      <td>L004</td>
+      <td>This paper</td>
+      <td>SAMEA114094135</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Biological sample (G. lygdamus; male)</td>
+      <td>L006</td>
+      <td>This paper</td>
+      <td>SAMEA114094136</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Biological sample (G. lygdamus; male)</td>
+      <td>L008</td>
+      <td>This paper</td>
+      <td>SAMEA114094137</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Biological sample (G. lygdamus; male)</td>
+      <td>L011</td>
+      <td>This paper</td>
+      <td>SAMEA114094138</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Biological sample (G. lygdamus; female)</td>
+      <td>L012</td>
+      <td>This paper</td>
+      <td>SAMEA114094139</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Biological sample (G. lygdamus; male)</td>
+      <td>L013</td>
+      <td>This paper</td>
+      <td>SAMEA114094140</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Biological sample (G. lygdamus; male)</td>
+      <td>RVcoll10-B005</td>
+      <td>This paper</td>
+      <td>SAMEA114094141</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Glaucopsyche alexis; male)</td>
+      <td>G. alexis</td>
+      <td>Hinojosa Galisteo et al., 2021</td>
+      <td>ilGlaAlex1.1; GCA_905404095.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Aricia agestis)</td>
+      <td>A. agestis</td>
+      <td>Hayward et al., 2023</td>
+      <td>LR990279.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Aricia artaxerxes)</td>
+      <td>A. artaxerxes</td>
+      <td>Ebdon et al., 2022</td>
+      <td>OW569311.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Celastrina argiolus)</td>
+      <td>C. argiolus</td>
+      <td>Hayward et al., 2021</td>
+      <td>LR994603.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Cyaniris semiargus; male)</td>
+      <td>C. semiargus</td>
+      <td>Lohse et al., 2023</td>
+      <td>LR994570.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (G. alexis; male)</td>
+      <td>G. alexis</td>
+      <td>Hinojosa Galisteo et al., 2021</td>
+      <td>FR990065.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (G. xerces)</td>
+      <td>G. xerces</td>
+      <td>Grewe et al., 2021</td>
+      <td>MW677564.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Lysandra bellargus; female)</td>
+      <td>L. bellargus</td>
+      <td>Lohse et al., 2022</td>
+      <td>HG995365.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Lysandra coridon; male)</td>
+      <td>L. coridon</td>
+      <td>Vila et al., 2023</td>
+      <td>HG992145.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Plebejus argus)</td>
+      <td>P. argus</td>
+      <td>Zhou et al., 2020</td>
+      <td>MN974526.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Plebejus melissa)</td>
+      <td>P. melissa</td>
+      <td>Ellis et al., 2021</td>
+      <td>DWQ001000057.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Plebejus anna)</td>
+      <td>P. anna</td>
+      <td>Ellis et al., 2021</td>
+      <td>DWTA01000073.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Polyommatus icarus; male)</td>
+      <td>P. icarus</td>
+      <td>https://www.darwintreeoflife.org/</td>
+      <td>OW569343.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Shijimiaeoides divina)</td>
+      <td>S. divina</td>
+      <td>Jeong et al., 2017</td>
+      <td>NC_029763.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Zizina emelina)</td>
+      <td>Z. emelina</td>
+      <td>Liu et al., 2020</td>
+      <td>MN013031.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BUSCO</td>
+      <td>Manni et al., 2021</td>
+      <td></td>
+      <td>v.5.1.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AdapterRemoval</td>
+      <td>Schubert et al., 2016</td>
+      <td></td>
+      <td>v.2.2.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BWA – backtrack</td>
+      <td>Li and Durbin, 2009</td>
+      <td></td>
+      <td>v.0.7.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BWA – mem</td>
+      <td>Li, 2013</td>
+      <td></td>
+      <td>v.0.7.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Qualimap2</td>
+      <td>Okonechnikov et al., 2016</td>
+      <td></td>
+      <td>v.2.2.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pmdtools</td>
+      <td>Skoglund et al., 2014</td>
+      <td></td>
+      <td>v.0.50</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MapDamage2</td>
+      <td>Jónsson et al., 2013</td>
+      <td></td>
+      <td>v.2.7.12</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bedtools</td>
+      <td>Quinlan and Hall, 2010</td>
+      <td></td>
+      <td>v.2.27.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>snpAD</td>
+      <td>Prüfer, 2018</td>
+      <td></td>
+      <td>v.0.3.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GATK</td>
+      <td>McKenna et al., 2010</td>
+      <td></td>
+      <td>v.3.5–3.7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>vcftools</td>
+      <td>Danecek et al., 2011</td>
+      <td></td>
+      <td>v.0.1.12b–0.1.14b</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>angsd</td>
+      <td>Korneliussen et al., 2014</td>
+      <td></td>
+      <td>v.0.916</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bcftools</td>
+      <td>Danecek et al., 2021</td>
+      <td></td>
+      <td>v.1.9</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mitofinder</td>
+      <td>Allio et al., 2020</td>
+      <td></td>
+      <td>v.1.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACSE</td>
+      <td>Ranwez et al., 2018</td>
+      <td></td>
+      <td>v.2.05</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAFFT</td>
+      <td>Katoh and Standley, 2013</td>
+      <td></td>
+      <td>v.7.490</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IQ-TREE2</td>
+      <td>Minh et al., 2020</td>
+      <td></td>
+      <td>v.2.1.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ModelFinder</td>
+      <td>Kalyaanamoorthy et al., 2017</td>
+      <td></td>
+      <td>Available in IQ-TREE2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UFBoot2</td>
+      <td>Hoang et al., 2018</td>
+      <td></td>
+      <td>Available in IQ-TREE2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BEAST2</td>
+      <td>Bouckaert et al., 2019</td>
+      <td></td>
+      <td>v.2.6.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bModelTest</td>
+      <td>Bouckaert and Drummond, 2017</td>
+      <td></td>
+      <td>v.1.2.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tracer</td>
+      <td>Rambaut et al., 2018</td>
+      <td></td>
+      <td>v.1.7.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PSMC</td>
+      <td>Li and Durbin, 2011</td>
+      <td></td>
+      <td>v.0.6.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PCAngsd</td>
+      <td>Meisner and Albrechtsen, 2018</td>
+      <td></td>
+      <td>v.20180209</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bcftools-roh</td>
+      <td>Narasimhan et al., 2016</td>
+      <td></td>
+      <td>v.1.9</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SNPeff</td>
+      <td>Cingolani et al., 2012</td>
+      <td></td>
+      <td>v.4.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Picard</td>
+      <td>Broad Institute, 2015</td>
+      <td></td>
+      <td>v.2.0.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools</td>
+      <td>Li et al., 2009</td>
+      <td></td>
+      <td>v.1.6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BamUtil</td>
+      <td>Jun et al., 2015</td>
+      <td></td>
+      <td>v.1.0.13</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bedtools</td>
+      <td>Quinlan and Hall, 2010</td>
+      <td></td>
+      <td>v.2.27.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BLAST</td>
+      <td>Altschul et al., 1990</td>
+      <td></td>
+      <td>v.2.2.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BBMap</td>
+      <td>Bushnell, 2014</td>
+      <td></td>
+      <td>v.38.18</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prinseq</td>
+      <td>Schmieder and Edwards, 2011</td>
+      <td></td>
+      <td>v.0.20.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kraken2</td>
+      <td>Wood et al., 2019</td>
+      <td></td>
+      <td>v.2.1.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Core Team, 2019</td>
+      <td></td>
+      <td>v.3.6.3–4.1.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ggplot2</td>
+      <td>Wickham, 2016</td>
+      <td></td>
+      <td>v.3.0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Historical butterfly specimens
 
 The Xerces Blue specimens analysed belong to the Barnes collection deposited at the Smithsonian National Museum of Natural History. Two of them were collected on 26 April 1923. The Silvery Blue specimens were mostly collected between 1927 and 1948, in Haywood City, Santa Cruz, Oakland, San José, Fairfax, and Marin County (these locations surround San Francisco Bay) (Table 1).
 
-## DNA extraction and sequencing of Xerces Blue and Silvery Blue specimens
+### DNA extraction and sequencing of Xerces Blue and Silvery Blue specimens
 
 All DNA extraction and initial library preparation steps (prior to amplification) were performed in a dedicated clean lab, physically isolated from the laboratory used for post-polymerase chain reaction (PCR) analyses. Strict protocols were followed to minimise the amount of human DNA in the ancient DNA laboratory, including the wearing a full body suit, sleeves, shoe covers, clean shoes, facemask, hair net, and double gloving, as well as frequent bleach cleaning of benches and instruments. DNA extraction was performed from 12 abdominal samples of historical Xerces Blue and Silvery Blue, as well as a modern Silvery Blue specimen from Canada.
 
@@ -106,11 +886,11 @@ For the extraction procedure, 1 ml of digestion buffer (final concentrations: 3 
 
 Following extraction, the DNA extract was converted into Illumina sequencing libraries following the BEST protocol (Carøe, 2018). Each library was amplified by PCR using two uniquely barcoded primers, prior to being purified with a 1.5x AMPure clean (Beckman Coulter) and eluted in 25 μl of low EDTA TE buffer (pH 8.0). One Xerces Blue sample did not yield detectable DNA in two independent extractions. For each of the successful extracts, we prepared a single library which was shotgun sequenced on the HiseqX Illumina platform.
 
-## G. alexis genome sequencing and annotation
+### G. alexis genome sequencing and annotation
 
 G. alexis was chosen as a congeneric reference to compare the demographic histories of both the Xerces Blue and the Silvery Blue. We generated a G. alexis reference genome from a male specimen collected in Alcalá de la Selva in Teruel (Spain). Its genome has a sequence length of 619,543,730 bp on 24 chromosomes – including the Z sex chromosome – and the mitochondrial genome. The genome sequence is biologically complete (BUSCO Lepidoptera completeness 97.1%) (Manni et al., 2021). The G. alexis genome was sequenced at the Sanger Institute as part of the Darwin Tree of Life Project following the extraction, sequencing, and assembly protocols developed for Lepidoptera (Hinojosa Galisteo et al., 2021).
 
-## Xerces Blue and Silvery Blue mapping and variant calling
+### Xerces Blue and Silvery Blue mapping and variant calling
 
 The ancient DNA reads were clipped using AdapterRemoval2 (Schubert et al., 2016), and only reads longer than 25 bp were kept. Filtered reads were mapped against the G. alexis assembly with Burrows-Wheeler Aligner (BWA) (Li and Durbin, 2009) backtrack algorithm, with parameters optimised for the analysis of aDNA (-l 2, -n 0.01, -o 2). After mapping, duplicated reads were removed using picard MarkDuplicates. Mapped reads with mapping quality below 30 were removed using samtools. Finally, to avoid problems in the next steps derived from spurious callings due to aDNA at reads’ ends, we trimmed 2 nt from each read end using BamUtil trimbam. Basic mapping statistics were generated using Qualimap2 (Okonechnikov et al., 2016; Supplementary file 1). We used bedtools (Quinlan and Hall, 2010) to assess genome coverage across the reference using windows of 1 mbp for the nuclear fraction of the genome, as well as depth of coverage, read length, and edit distance distribution. Authenticity of the sequences was assessed by characterising aDNA damage patterns with pmdtools (Skoglund et al., 2014) and MapDamage2 (Jónsson et al., 2013).
 
@@ -118,11 +898,11 @@ We used snpAD (Prüfer, 2018), a program for genotype calling in ancient specime
 
 Genotype likelihoods were obtained with ANGSD (Korneliussen et al., 2014) using the GATK model with the following parameters for all the samples: -uniqueOnly 1 -remove_bads 1 -only_proper_pairs 1 -trim 10 -C 50 -baq 1 -minInd 5 -skipTriallelic 1 -GL 2 -minMapQ 30.
 
-## Sex determination
+### Sex determination
 
 The sex of the specimens was determined by differential coverage of the Lepidopteran Z chromosome (females are the heterogametic sex in the Lepidoptera and show reduced coverage on the Z chromosome) (Supplementary file 1).
 
-## Mitochondrial phylogenetic tree and divergence dating
+### Mitochondrial phylogenetic tree and divergence dating
 
 Haploid variants were called using bcftools (Danecek et al., 2021) with a ploidy of 1, filtering low-quality indels and variants, after which a consensus sequence was exported. We downloaded 14 complete mitochondrial genomes for Polyommatinae from NCBI (Supplementary file 1).
 
@@ -130,30 +910,101 @@ All mitochondrial genomes were annotated with MitoFinder (Allio et al., 2020) us
 
 To infer a time-calibrated phylogenetic hypothesis, we selected one individual of Xerces Blue (L003) and Silvery Blue (RVcoll10-B005) and analysed with 13 other Polyommatinae species. We used BEAST2 (Ranwez et al., 2018) with the bModelTest (Bouckaert and Drummond, 2017) package to perform phylogenetic site model averaging for each of the merged partitions. Because there is no accepted molecular clock rate for butterflies and no fossils to apply in this part of the phylogeny, we used two strategies to apply time constraints to the analysis. First, we used two published molecular clock rates for the mitochondrial COX1 gene (1.5% divergence/Ma) estimated for various invertebrates (Quek et al., 2004), and the ‘standard’ insect mitochondrial clock (2.3% divergence/Ma) (Van Zandt Brower, 1994). We applied a strict clock with a normal prior set up to span 1.5–2.3% with the 95% HPD interval (mean = 1.9%, sigma = 0.00119). Second, we borrowed the age of the most recent common ancestor of our sampled taxa from fossil-calibrated analyses across butterflies (Chazot et al., 2019; Wiemers et al., 2020). We fixed the root age to 33 Ma and allowed the remaining node ages to be estimated using a strict clock. Analyses were run twice from different starting seeds for 10 million MCMC generations and trees were sampled every 1000 generations. Runs were checked for convergence with Tracer and all effective sample size values were >200. Runs were combined with the BEAST2 package LogCombiner (Drummond and Rambaut, 2007), after removing the first 10% of topologies as burn-in, and a maximum credibility tree was generated with TreeAnnotator (Drummond and Rambaut, 2007). Phylogenetic analyses were performed on the National Life Science Supercomputing Center – Computerome 2.0 (https://www.computerome.dk/).
 
-## Xerces Blue and Silvery Blue population histories
+### Xerces Blue and Silvery Blue population histories
 
 We used the PSMC model (Li and Durbin, 2011) to explore the demographic history of both butterfly species. We obtained a consensus fastq sequence of the mappable fraction of the genome for each autosomal chromosome (total of 22 chromosomes of G. alexis assembly). Only positions with a depth of coverage above 4× and below 15× were kept. Posteriorly, a PSMC was built using the following parameters: -N25 -t15 -r5 -p ‘28*2+3+5". We used 1 year for the generation time and a mutation rate of 1.9 × 10−9, estimated in Heliconius melpomene (Martin et al., 2016). Considering that calling consensus sequences from low-coverage samples (<10×) can underestimate heterozygous sites (Keightley et al., 2015), and given the different coverage between samples, we corrected by false negative rate the samples with coverage lower than the coverage of L005 (for Xerces Blue) and L013 (for Silvery Blue), as recommended by the developers of the software, so that all samples are comparable with each other. However, since in our dataset we do not reach a coverage >20×, we acknowledge that we are not capturing the whole diversity and thus our PSMC might infer lower historical effective population sizes.
 
-## Population stratification and average genome heterozygosity
+### Population stratification and average genome heterozygosity
 
 PCA was performed using PCAngsd (Meisner and Albrechtsen, 2018) after obtaining genotype likelihoods with ANGSD including all individuals. To assess global levels of heterozygosity, the unfolded site frequency spectrum (SFS) was calculated for each sample separately using ANGSD (Korneliussen et al., 2014) and realSFS with the following quality filter parameters: -uniqueOnly 1 - remove_bads 1 -only_proper_pairs 1 -trim 10 -C 50 -baq 1 -minMapQ 30 -minQ 30 -setMaxDepth 200 - doCounts 1 -GL 2 -doSaf 1.
 
-## Runs of homozygosity
+### Runs of homozygosity
 
 RoH were called based on the density of heterozygous sites in the genome using the implemented hidden Markov model in bcftools (Danecek et al., 2021) roh with the following parameters: -G30 --skip-indels --AF-dflt 0.4 --rec-rate 1e−9 from the mappable fraction of the genome with the filtered VCF file. We kept the RoH with a phred score >85. We divided the RoH into different size bins: very short RoH (<100 kb), short RoH (100–500 kb), intermediate RoH (500 kb to 1 Mb), and long (1–5 or >5 Mb). Short RoH reflect LD patterns, intermediate size RoH describe background inbreeding due to genetic drift, and long RoH appear in the case of recent inbreeding (Ceballos et al., 2018).
 
-## Deleterious load
+### Deleterious load
 
 We used the G. alexis annotations to create a SNPeff database that we used to annotate our callings. Using SNPeff (Cingolani et al., 2012) again and the set of variants discovered by angsd, we predicted the putative effect of those variant in the analysed individuals (Supplementary file 1). In addition to wide genome mutations, we specifically focussed on mutations present in homozygosis, heterozygosis, and the previously annotated RoH.
 
-## Unrecoverable regions
+### Unrecoverable regions
 
 To further explore how the genomic divergence can influence our genome reconstruction success, we undertook a similar approach as the genome of the Christmas Island rat (Lin et al., 2022), and explored the chromosomal regions in the G. alexis reference that were significantly depleted of Xerces DNA reads. We used bedtools (Quinlan and Hall, 2010) and some in-home bash scripting to calculate the mean coverage per gene of the G. alexis genome for Xerces Blue sequencing DNA reads. We first used bedtools’ algorithms bamtobed and genomecov to estimate the genome-wide per-site coverage of the reference genome in these two species. Then, we extracted the coordinates of all protein-coding genes from the annotation file (gff file) and used the intersect to estimate the average coverage of each protein-coding gene. We performed a functional analysis of all genes uncovered in G. alexis, excluding those that are present in G. lygdamus with more than 5× coverage (as we were looking for evolutionary novelties in the Xerces Blue lineage alone) using profile- IntersProScan (Jones et al., 2014) and sequence similarity-based (blasp) searches (Gish and States, 1993; Supplementary file 1).
 
-## Colouration genes variability
+### Colouration genes variability
 
 To find possible amino acid-changing variants that could explain phenotypical differences between G. lygdamus and G. xerces, we have identified and explored three well-known genes associated to colour patterns in butterflies: optix, cortex, and Wnt genes (Zhang and Reed, 2016; Zhang et al., 2017; Mazo-Vargas et al., 2017; Fenner et al., 2020; Banerjee et al., 2021). First, we located those genes in our annotation with BLAST and their homologs in other butterfly species, setting an E-value lower than 0.001 and an Identity value above 60% (Table 3). Then, the coordinates were called using GATK UnifiedGenotyper. Variants were filtered for indels and minimum Genotype Quality of 30 using. Variants were kept regardless of their coverage. A variant is considered as fixed in one species if it is covered in at least two individuals of each species, it is in homozygous state, and when one of the species present all their genotypes calls as homozygous for the alternative allele while in the other are homozygous of the reference allele. No fixated mutations were identified in the regions covered at the same time by G. lygdamus and G. xerces sequences.
 
-## Wolbachia screening
+### Wolbachia screening
 
 Wolbachia are endosymbiotic alpha-proteobacteria that are present in about 70% of butterfly species and induce diverse reproductive alterations, including genetic barriers when two different strains infect the same population or when two populations – one infected and one uninfected – meet (Telschow et al., 2005). As potential evidence for a reproductive barrier promoting the separation of Xerces Blue and Silvery Blue, we searched for Wolbachia DNA reads in our specimens, taking advantage of the high coverage and the shotgun approach. First, we collapsed unique reads from the butterfly-free sequences with BBmap (Bushnell, 2014) and removed from the dataset low complexity sequences using Prinseq (Schmieder and Edwards, 2011). Afterwards, we used Kraken2 (Wood et al., 2019) to assign reads against the standard plus human Kraken2 database (bacteria, archaea, fungi, protozoa, and viral). The historical specimens did not display enough reads assigned to Wolbachia for us to suspect of the presence of the bacteria in those samples (Table 4).
+
+**Table 4.**
+ Wolbachia DNA reads assigned using Kraken2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Specimen</th>
+      <th>Wolbachia genus reads</th>
+      <th>Wolbachia spp. reads</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L002</td>
+      <td>190</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>L003</td>
+      <td>131</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>L004</td>
+      <td>213</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>L005</td>
+      <td>311</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>L006</td>
+      <td>242</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>L007</td>
+      <td>152</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>L008</td>
+      <td>414</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>L009</td>
+      <td>236</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>L011</td>
+      <td>184</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>L012</td>
+      <td>168</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>L013</td>
+      <td>523</td>
+      <td>24</td>
+    </tr>
+  </tbody>
+</table>

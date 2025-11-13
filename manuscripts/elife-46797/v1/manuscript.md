@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.46797.001 Chronic psychosocial adversity induces vulnerability to mental illnesses. Animal studies demonstrate that this may be mediated by dopaminergic dysfunction. We therefore investigated whether long-term exposure to psychosocial adversity was associated with dopamine dysfunction and its relationship to psychological and physiological responses to acute stress. Using 3,4-dihydroxy-6-[ 18 F]-fluoro- l -phenylalanine ([ 18 F]-DOPA) positron emission tomography (PET), we compared dopamine synthesis capacity in n = 17 human participants with high cumulative exposure to psychosocial adversity with n = 17 age- and sex-matched participants with low cumulative exposure. The PET scan took place 2 hr after the induction of acute psychosocial stress using the Montréal Imaging Stress Task to induce acute psychosocial stress. We found that dopamine synthesis correlated with subjective threat and physiological response to acute psychosocial stress in the low exposure group. Long-term exposure to psychosocial adversity was associated with dampened striatal dopaminergic function (p=0.03, d = 0.80) and that psychosocial adversity blunted physiological yet potentiated subjective responses to acute psychosocial stress. Future studies should investigate the roles of these changes in vulnerability to mental illnesses.
+Chronic psychosocial adversity induces vulnerability to mental illnesses. Animal studies demonstrate that this may be mediated by dopaminergic dysfunction. We therefore investigated whether long-term exposure to psychosocial adversity was associated with dopamine dysfunction and its relationship to psychological and physiological responses to acute stress. Using 3,4-dihydroxy-6-[18F]-fluoro-l-phenylalanine ([18F]-DOPA) positron emission tomography (PET), we compared dopamine synthesis capacity in n = 17 human participants with high cumulative exposure to psychosocial adversity with n = 17 age- and sex-matched participants with low cumulative exposure. The PET scan took place 2 hr after the induction of acute psychosocial stress using the Montréal Imaging Stress Task to induce acute psychosocial stress. We found that dopamine synthesis correlated with subjective threat and physiological response to acute psychosocial stress in the low exposure group. Long-term exposure to psychosocial adversity was associated with dampened striatal dopaminergic function (p=0.03, d = 0.80) and that psychosocial adversity blunted physiological yet potentiated subjective responses to acute psychosocial stress. Future studies should investigate the roles of these changes in vulnerability to mental illnesses.
 
 ## Introduction
 
@@ -37,31 +37,450 @@ The relationships between neurobiological pathways and stress-induced physiologi
 
 ## Results
 
-## Participant characteristics and scan parameters
+### Participant characteristics and scan parameters
 
 Seventeen HA participants were recruited to the study. All reported high levels of psychological stress exposure in childhood and adulthood (Table 1). Seventeen LA participants were recruited and, as expected, had significantly lower levels of childhood and adult stressors than the HA group (Table 1). Clinical rating scales are reported in Table 1. HA scored significantly higher than LA on subclinical measures of depressive symptoms (BDI), the degree to which previous stressors were having an impact on their lives in the week prior to scanning (BIE) and aberrant salience (ASI).
 
 There was no significant group difference in the amount of radioactivity injected or specific activity (Table 1). There was no significant difference in whole striatal or subdivision volumes between the groups (Table 1).
 
-## Striatal dopaminergic function
+**Table 1.**
+ Sample characteristics and scan parameters
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample characteristic</th>
+      <th colspan="2">LA ( = 17)</th>
+      <th colspan="2">HA ( = 17)</th>
+      <th>pa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age, years [mean(SD)]</td>
+      <td>27.6</td>
+      <td>(7.8)</td>
+      <td>29.2</td>
+      <td>(7.2)</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>Sex, n</td>
+      <td colspan="2">nine female, eight male</td>
+      <td colspan="2">eight female, nine male</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Ethnicity, n</td>
+      <td colspan="2">17 WB</td>
+      <td colspan="2">4 BA, 1BB, 4 BC, 6 ME, 1 OE, 1 WB</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Childhood Adversity</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CTQ [mean(SD)]</td>
+      <td>3.8</td>
+      <td>(5.2)</td>
+      <td>15.3</td>
+      <td>(16.1)</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Parental loss (parental separation with loss of parental contact and/or death and/or going into foster care and/or being adopted) during childhood, n</td>
+      <td colspan="2">0</td>
+      <td colspan="2">13</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Childhood sexual abuse</td>
+      <td colspan="2">0</td>
+      <td colspan="2">6</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Adult Adversity</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of adverse life events over last 6 months [mean(SD)]</td>
+      <td colspan="2">0.5 (0.9)</td>
+      <td colspan="2">2.6 (1.9)</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Life events score over last 6 months [mean(SD)]</td>
+      <td colspan="2">15.1 (37.0)</td>
+      <td colspan="2">72.3 (55.7)</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Clinical Scores</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BDI [mean(SD)]</td>
+      <td colspan="2">2.7 (3.8)</td>
+      <td colspan="2">6.5 (5.6)</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>BAI [mean(SD)]</td>
+      <td colspan="2">4.8 (6.7)</td>
+      <td colspan="2">9.7 (10.2)</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>IES-6 [mean(SD)]</td>
+      <td colspan="2">1.7 (2.3)</td>
+      <td colspan="2">7.7 (7.6)</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>O-LIFE [mean(SD)]</td>
+      <td colspan="2">7.2 (6.5)</td>
+      <td colspan="2">13.1 (9.5)</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>ASI [mean(SD)]</td>
+      <td colspan="2">5.7 (5.8)</td>
+      <td colspan="2">11.6 (7.5)</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Current Drug Usec,d</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tobacco cigarette smokers in last 3 months (n)</td>
+      <td colspan="2">three user, 14 non-users</td>
+      <td colspan="2">four users, 13 non-users</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Tobacco use in whole sample (cigarettes/day) [mean(SD)]</td>
+      <td>.4</td>
+      <td>(1.5)</td>
+      <td>1.7</td>
+      <td>(3.6)</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>Alcohol use in last 3 months (n)</td>
+      <td colspan="2">15 users, two non-users</td>
+      <td colspan="2">14 users, three non-users</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Alcohol use (UK alcohol units/week) [mean(SD)]</td>
+      <td>10.2</td>
+      <td>(9.0)</td>
+      <td>7.0</td>
+      <td>(8.9)</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>Scan parameter</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Injected dose (MBq) [mean(SD)]</td>
+      <td>143.4</td>
+      <td>(7.7)</td>
+      <td>142.9</td>
+      <td>(7.7)</td>
+      <td>0.85</td>
+    </tr>
+    <tr>
+      <td>Specific activity (MBq/µmol) [mean(SD)]</td>
+      <td>35.3</td>
+      <td>(6.7)</td>
+      <td>41.4</td>
+      <td>(15.4)</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>Whole striatal volume (mm3) [mean(SD)]</td>
+      <td>16,842</td>
+      <td>(5094)</td>
+      <td>15,741</td>
+      <td>(4,601)</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>Associative striatal volume (mm3) [mean(SD)]</td>
+      <td>10,460</td>
+      <td>(3202)</td>
+      <td>9771</td>
+      <td>(2885)</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>Limbic striatal volume (mm3) [mean(SD)]</td>
+      <td>2005</td>
+      <td>(610)</td>
+      <td>1897</td>
+      <td>(547)</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>Sensorimotor striatal volume (mm3) [mean(SD)]</td>
+      <td>4375</td>
+      <td>(1314)</td>
+      <td>4072</td>
+      <td>(1189)</td>
+      <td>0.51</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: ASI, Aberrant Salience Inventory; BA, black African; BAI; Beck Anxiety Inventory; BB, black British; BC, black Caribbean; BDI, Beck Depression Inventory; CTQ, Childhood Trauma Questionnaire; IES-6, Brief Impact of Events Scale;, mixed ethnicity; OE, other ethnicity; O-LIFE, Oxford-Liverpool Inventory of Feelings and Experiences; SEAT, Social Environment Assessment Tool; WB, White British.a Independent-samples t-tests for variables with normal data distributions; Mann-Whitney U tests for variables with non-normal data distributions; χ2-tests for dichotomous variables.bGroups were compared on a dichotomised ethnicity variable (white British vs ethnic minority).c 1 UK alcohol unit = 10 mL (~7.88 g) alcohol._
+
+### Striatal dopaminergic function
 
 Kicer was significantly reduced in HA relative to LA in the whole striatum (t32 = 2.27, p=0.03; Figure 1). Secondary analysis in each striatal subdivision showed that this reduction reached significance in the limbic and associative subdivisions (Table 2).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/46797/elife-46797-fig1-v1.jpg)
 
-**Figure 1.:** n = 17) and High Adversity participants (HA, n = 17).Dopamine synthesis capacity was significantly reduced in HA compared with LA (t = 2.27, p=0.03). Error bars indicate standard errors.32
+**Figure 1.:** Dopamine synthesis capacity was significantly reduced in HA compared with LA (t32 = 2.27, p=0.03). Error bars indicate standard errors.
+
+**Table 2.**
+ [18F]-DOPA Kicer (min−1) by group
+
+
+<table>
+  <thead>
+    <tr>
+      <th>VOI</th>
+      <th colspan="2">LA ( = 17)</th>
+      <th colspan="2">HA ( = 17)</th>
+      <th colspan="2">Group comparisonsa</th>
+      <th>Effect size</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Mean</th>
+      <th>(SD)</th>
+      <th>Mean</th>
+      <th>(SD)</th>
+      <th>tdf</th>
+      <th>p</th>
+      <th>(Cohen’s D)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STR</td>
+      <td>0.0133</td>
+      <td>(0.0014)</td>
+      <td>0.0124</td>
+      <td>(0.0013)</td>
+      <td>2.2732</td>
+      <td>0.03</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>AST</td>
+      <td>0.0133</td>
+      <td>(0.0011)</td>
+      <td>0.0124</td>
+      <td>(0.0010)</td>
+      <td>2.2832</td>
+      <td>0.03</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <td>LST</td>
+      <td>0.0140</td>
+      <td>(0.0015)</td>
+      <td>0.0128</td>
+      <td>(0.0010)</td>
+      <td>2.6932</td>
+      <td>0.01</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>SMST</td>
+      <td>0.0132</td>
+      <td>(0.0013)</td>
+      <td>0.0125</td>
+      <td>(0.0011)</td>
+      <td>1.1732</td>
+      <td>0.10</td>
+      <td>0.41</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: AST, associative striatum; LST, limbic striatum; Kicer, influx rate constant; SMST, sensorimotor striatum; STR, whole striatum; VOI, volume of interest.a Independent-samples t-tests._
 
 As the amount of smoking differed in the groups and heavy smoking can influence dopamine function (Bloomfield et al., 2014; Salokangas et al., 2000), we performed an ANCOVA to examine whether smoking was influencing our findings. When co-varying for amount of current cigarette use, the group difference remained significant in the limbic striatum only (﻿F1,30 = 5.2, p=0.029, η2p=0.15).
 
-## Psychosocial stress-induced effects
+### Psychosocial stress-induced effects
 
 There were no differences between the groups on subjective or biological measures of stress response at baseline (Table 3) apart from a statistical trend (p=0.07, d = 0.67) towards greater amylase concentrations in the HA group compared to the LA group. Response to psychosocial stress is shown in Table 4 and Figure 2. The HA group showed a heightened subjective response to psychosocial stress evidenced by Threatened (p=0.04, d = 0.86) compared to the LA group. By contrast, the HA showed a blunted physiological response to psychosocial stress, as evidenced by an attenuated increase in mean arterial blood pressure (MAP), p=0.03, d = 0.81 and trend for a lower increase in cortisol (p=0.06, d = 0.69). Some participants had a negative area under the curve due a reduction in salivary cortisol levels associated with the task.
+
+**Table 3.**
+ Baseline stress reactivity in Low Adversity (LA) and High Adversity (HA) groups at prior to acute psychosocial stress challenge
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th colspan="2">LA ( = 17)</th>
+      <th colspan="2">HA ( = 17)</th>
+      <th colspan="2">Group comparisons</th>
+      <th>Effect size</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Mean</th>
+      <th>(SD)</th>
+      <th>Mean</th>
+      <th>(SD)</th>
+      <th>tdf</th>
+      <th>P</th>
+      <th>(Cohen’s D)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Threatened (mm)</td>
+      <td>6.75</td>
+      <td>(15.52)</td>
+      <td>4.58</td>
+      <td>(6.00)</td>
+      <td>0.4626</td>
+      <td>0.65</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Cortisol (U/mL)</td>
+      <td>3.93</td>
+      <td>(2.74)</td>
+      <td>5.12</td>
+      <td>(3.54)</td>
+      <td>1.0830</td>
+      <td>0.29</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>Amylase (U/mL)</td>
+      <td>178.42</td>
+      <td>(173.83)</td>
+      <td>92.79</td>
+      <td>(53.13)</td>
+      <td>1.8330</td>
+      <td>0.07</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>MAP (mmHg)</td>
+      <td>89.67</td>
+      <td>(9.45)</td>
+      <td>90.38</td>
+      <td>(9.63)</td>
+      <td>0.2129</td>
+      <td>0.84</td>
+      <td>0.07</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: HA, high adversity; LA, low adversity; MAP, mean arterial pressure._
+
+**Table 4.**
+ Acute response to psychosocial stress challenge in Low Adversity (LA) and High Adversity (HA) groups
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th colspan="2">LA ( = 17)</th>
+      <th colspan="2">HA ( = 17)</th>
+      <th colspan="2">Group comparisons</th>
+      <th>Effect size</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Mean</th>
+      <th>(SD)</th>
+      <th>Mean</th>
+      <th>(SD)</th>
+      <th>tdf</th>
+      <th>p</th>
+      <th>(Cohen’s D)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Threatened (AUC)</td>
+      <td>191.25</td>
+      <td>(587.99)</td>
+      <td>780.83</td>
+      <td>(764.33)</td>
+      <td>2.3126</td>
+      <td>0.04</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td>Cortisol (AUC)</td>
+      <td>122.34</td>
+      <td>(156.49)</td>
+      <td>11.75</td>
+      <td>(166.14)</td>
+      <td>1.9430</td>
+      <td>0.06</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>Amylase (AUC)</td>
+      <td>1616.67</td>
+      <td>(5750.66)</td>
+      <td>1015.84</td>
+      <td>(2740.24)</td>
+      <td>0.3730</td>
+      <td>0.72</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>MAP (AUC)</td>
+      <td>153.30</td>
+      <td>(90.04)</td>
+      <td>79.31</td>
+      <td>(92.09)</td>
+      <td>2.2629</td>
+      <td>0.03</td>
+      <td>0.81</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: HA, high adversity; LA, low adversity; MAP, mean arterial pressure._
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/46797/elife-46797-fig2-v1.jpg)
 
 **Figure 2.:** Panel A shows subjective Threatened responses; Panels B (Cortisol) and C (Mean Arterial Blood Pressure) show physiological response. Data show mean (+ /- SEM).
 
-## The relationships between physiological and subjective measures
+### The relationships between physiological and subjective measures
 
 We conducted correlations between the primary outcome of interest (dopamine synthesis capacity in the whole striatum) and variables showing differences in response to acute psychosocial stress (AUC for threatened, cortisol and mean arterial blood pressure). Extreme bivariate outliers (Cook’s distance >1) were removed (n = 7 from threat, n = 2 from cortisol, n = 5 for MAP). In the low adversity group, striatal dopamine synthesis capacity correlated with psychosocial stress-induced threat (r = 0.73, p=0.001, Figure 3A) and mean arterial blood pressure (r = −0.62, p=0.013, Figure 3B). There were no correlations between striatal dopamine synthesis capacity and measures of acute psychosocial response in the high adversity group.
 
@@ -75,7 +494,7 @@ As we found that dopamine synthesis capacity is correlated with both subjective 
 
 Our main finding is that chronic exposure to psychosocial stressors is associated with significantly reduced striatal dopamine synthesis capacity, particularly in the limbic (ventral) striatum. In addition, we found evidence that striatal dopamine synthesis capacity correlated with both the physiological and subjective responses to an acute psychosocial stressor. Chronic stress exposure is associated with a dissociation between physiological and psychological acute stress responses in the form of an attenuated stress-induced increase in blood pressure alongside a potentiated stress-induced subjective response. These findings support our hypothesis that high cumulative exposure to psychosocial adversity would be associated with altered dopamine synthesis capacity.
 
-## Interpretation of findings
+### Interpretation of findings
 
 Acute stress is associated with increased dopaminergic and autonomic output in animals and humans (Imperato et al., 1989; Wand et al., 2007) and recent human evidence indicates that corticotrophin-releasing hormone administration results in dopamine release (Payer et al., 2017). Animal research indicates that dopaminergic neurons are strongly excited by acute stress and aversive stimuli during adulthood (Brischoux et al., 2009; Cohen et al., 2012; Wenzel et al., 2015; Zweifel et al., 2011). Long-lasting neuroadaptive changes on VTA dopamine neurons have been observed after a single stress exposure, demonstrating that acute stress can alter VTA dopamine neuron responsivity to future stimulation (Saal et al., 2003). Exposure to a single acute stressor can also promote long-lasting neuroplastic changes in VTA dopamine neurons in a manner similar to exposure to recreational drugs (Dong et al., 2004; Graziane et al., 2013; Niehaus et al., 2010; Saal et al., 2003). Our results extend these findings and are consistent with evidence from animal models whereby subcortical dopamine transmission is blunted in response to multiple stressors in adulthood (Chrapusta et al., 1997; Gresch et al., 1994).
 
@@ -93,7 +512,7 @@ Our findings of heightened stress-induced threat are consistent with the threat-
 
 Although the case–control design of this study is not able to confirm a causative relationship between psychosocial stress and dopamine dysfunction, these findings warrant further research into potential causative mechanisms. Our findings, particularly of relationships between cumulative stress exposure and the dopamine system, may be important for understanding how exposures to multiple stressors induce changes in the dopamine system, and how these relate to both vulnerability to and resilience against mental illnesses. It would be important to consider these findings in light of a putative role of the dopaminergic system in the pathophysiology anhedonia in depression (Nutt, 2006), the role of dopamine in social motivation (Love, 2014), and findings that striatal neurons can incorporate social reward into their computations (Báez-Mendoza et al., 2013; Schultz, 2016). Our findings may be highly relevant in terms of our understanding of addiction, as a history of exposure to aversive stimuli is strongly associated with later addictive behaviour, with both clinical and preclinical work demonstrating that stress plays a powerful role in the initiation, escalation, and relapse to drug abuse (Shaham et al., 2000; Sinha, 2007; Sinha, 2009).
 
-## Strengths and limitations
+### Strengths and limitations
 
 A strength of our study is that it specifically examined the effect of multiple psychosocial risk factors to examine their combined effect since these factors often cluster together in the general population (Hjern et al., 2004; Teicher et al., 2016; Wicks et al., 2005) and so it is not possible to disentangle the different types of psychosocial adversity due to lack of power as we are unable to directly contrast the effect of single risk factors with multiple exposures, or determine if risk factors have synergistic effects. Likewise, we did not co-vary for the different psychosocial risks as analysis of covariance is suboptimal at adjusting for factors when groups differ significantly in their covariates (Miller and Chapman, 2001). We chose to recruit participants with high levels of stress exposure in early development and adulthood, because early developmental stressors increase the risk of psychopathology following adult stressors (McLaughlin et al., 2010). However, a potential limitation of our combination of early developmental and adult stressors is that it may confound the early life (i.e. likely programming) effects with the later in life acute stressors which occur after developmental sensitive periods.
 
@@ -109,7 +528,7 @@ These findings show that long-term exposure to psychosocial stressors is associa
 
 This study was approved by the National Research Ethics Service (12/LO/1955) and the Administration of Radioactive Substances Advisory Committee (ARSAC). The study was conducted in accordance with the Helsinki Declaration. All participants provided informed written consent to participate after an oral and written explanation of the study.
 
-## Participant recruitment
+### Participant recruitment
 
 We recruited two groups of healthy volunteers, one exposed to multiple risk factors (exposed high adversity group, ‘HA’)) and one not exposed (unexposed low adversity group, ‘LA’), from throughout the UK via public advertisement, newspaper advertisement and national media engagement. Responding individuals were then screened via telephone. LA ‘controls’ were individually matched to the HA group on the basis of age (+ /- 5 years) and sex. Inclusion criteria for all participants were: age 18–45 years, good physical health and capacity to give written informed consent. Exclusion criteria for all participants included: a personal history of psychiatric illness including substance abuse but not Nicotine Use Disorders; a history of psychotic illness in first degree relatives; evidence of an at risk mental state (Yung et al., 2005) and contraindications to PET including pregnancy, nursing mothers, severe obesity and previous clinical procedures involving exposure to significant ionizing radiation within the last year.
 
@@ -117,19 +536,19 @@ Additional inclusion criteria for the HA (exposed) group included at least one c
 
 Additional inclusion criteria for the LA group included no exposure to the childhood factors listed above, ethnic majority status and no significant adverse life events in the last 6 months.
 
-## Psychosocial assessments
+### Psychosocial assessments
 
 Assessments included the Beck Depression Inventory (BDI; Beck et al., 1996) Beck Anxiety Inventory (BAI) (Beck et al., 1988), Aberrant Salience Inventory (Cicero et al., 2010), the CTQ and an adapted bullying questionnaire (Olweus, 1996). Detailed histories of life events over the preceding 6 months were obtained via the List of Threatening Events (Brugha and Cragg, 1990), and a life events score then calculated from these events based on the Holmes and Rahe life events stress scale (Holmes and Rahe, 1967); Brief Impact of Events Scale (IES-6) (Thoresen et al., 2010).
 
-## PET scans
+### PET scans
 
 Participants were asked to fast for 5 hr and to refrain from smoking tobacco for 2 hr before imaging. On the day of the PET scan, urine drug screen (Monitect HC12, Branan Medical Corporation, Irvine, California) confirmed no recent drug use, and a negative urinary pregnancy test was required in all female participants. Head position was marked and monitored via laser crosshairs and video camera, and minimized using a head-strap. We used a Siemens Biograph 6 TruePoint PET-CT scanner (Siemens Healthcare, Erlangen, Germany). A computed tomography (CT) scan (effective dose = 0.36 mSv) was acquired for attenuation and model-based scatter correction prior to each PET scan. A target dose of approximately 150 MBq of [18F]-DOPA was administered by bolus intravenous injection at the start of PET imaging. Emission data were acquired in list mode for 95 min, reconstructed in a 128 × 128 matrix with 2.6x zoom via filter back projection with a three dimensional 5 mm full-width half-maximum Gaussian image filter and re-binned into 32 timeframes (comprising eight 15 s frames, three 60 s frames, five 120 s frames, and sixteen 300 s frames).
 
-## Image analysis
+### Image analysis
 
 To correct for head movement in the scanner, non-attenuation-corrected dynamic images were denoised using a level 2, order 64 Battle-Lemarie wavelet filter. Nonattenuation-corrected images were used for the realignment algorithm as they include greater scalp signal, improving re-alignment compared with attenuated-corrected images (Turkheimer et al., 1999). Frames were realigned to a single ‘reference’ frame, acquired 10 min post-injection, employing a mutual information algorithm (Studholme et al., 1996). The transformation parameters were then applied to the corresponding attenuated-corrected dynamic images. The realigned frames were then summated, creating a movement-corrected dynamic image, which was used in the analysis. The cerebellar reference region (Kumakura and Cumming, 2009) was defined using a probabilistic atlas (Martinez et al., 2003), and as previously described, regions of interest (ROI) in the whole striatum and its functional sub-divisions (Haber, 2014) were delineated to create an ROI map (Egerton et al., 2010). SPM8 (http://www.fil.ion.ucl.ac.uk/spm) was then used to normalize the ROI map together with the tracer-specific ([18F]-DOPA) template (Egerton et al., 2016; Howes et al., 2009) to each individual PET summation image. This nonlinear transformation procedure allowed ROIs to be automatically placed on individual [18F]-DOPA PET dynamic images. The influx rate constants (Kicer, written as Ki in some previous publications (Howes et al., 2013) for the entire striatal ROI and the functional subdivisions bilaterally were calculated compared with uptake in the reference region using a graphical approach adapted for a reference tissue input function (Egerton et al., 2016).
 
-## Psychosocial stress paradigm
+### Psychosocial stress paradigm
 
 We induced psychosocial stress using the Montreal Imaging Stress Task (MIST) (Pruessner et al., 2004) 2 hr before PET scanning. The rationale for conducting the PET scan on the same day as the stress task was to reduce the variance in the time between the measures. Participants were aware that one of the measures would be inducing psychosocial stress; however, they were only told after the MIST was completed that this was the task to induce psychosocial stress, and they were then debriefed. They were told beforehand that they could stop the experimental procedures at any time. During the MIST, participants were asked to solve mental arithmetic problems first under a control condition during which no time constraint or feedback were present, and subsequently under the experimental condition where time and difficulty were automatically adjusted to result in a 30–40% error rate. During the experimental condition, we continuously made participants aware of their suboptimal performance via a visual performance bar and scripted verbal negative feedback delivered approximately every 1 min, where a confederate researcher reminded participants that they were performing much worse than average. The MIST was administered using pairs of researchers who were balanced for sex and ethnicity (i.e. male and female researchers, white British and minority ethnicities). There were 2 × 4 min blocks of control MIST control followed by a brief rest, and then 2 pairs of 2 × 4 min blocks of the experimental version including feedback and brief rest. We assessed subjective threat assessed before the task, at the end of control condition, after each 10 min paired block of MIST, and twice upon completion of the task at 30 min and 60 min after starting the experimental task (see Figure 4). We used visual analogue scales to measure subjective threat. Salivary cortisol and α-amylase (Engert et al., 2011) samples were taken at the same time points as the visual analogue scales. Heart rate and blood pressure recordings were taken at 3 min intervals during the control MIST and two experimental MIST conditions, with four readings in each of these three conditions.
 
@@ -137,10 +556,10 @@ We induced psychosocial stress using the Montreal Imaging Stress Task (MIST) (Pr
 
 **Figure 4.:** MIST, Montreal Imaging Stress Test; MAP, Mean Arterial Blood Pressure; VAS, visual analogue scale.
 
-## Power calculation
+### Power calculation
 
 In a study of test-retest reliability of [18F]-DOPA PET (Egerton et al., 2010) striatal Kicer had an intraclass correlation coefficient of approximately 0.9 [mean (SD) Kicer = 0.01417 (0.00127)min−1 (test) and 0.01381 (0.00127)min−1 (re-test)]. Previous [18F]-DOPA uptake work has found an effect size of 1.25 in patients with schizophrenia (Howes et al.) which compares well with previous studies: 1.89 (Meyer-Lindenberg et al., 2002), 1.57 (McGowan et al., 2004). On the basis that large effect sizes are observed in disorders of dopamine function, this study was powered to anticipate an effect size of d = 1.00 when comparing differences between HA and LA groups. Therefore, to achieve a power of 0.8, with an effect size of 1.0, a = 0.05, using independent t-tests, n = 17 participants would be required per group.
 
-## Statistical analysis
+### Statistical analysis
 
 Normality of distribution and homogeneity of variance were assessed using Kolmogorov–Smirnov and Levene’s tests respectively, and diagnostic plots. The primary analysis was for Group (HA/LA) differences in striatal dopamine synthesis capacity. The primary region of interest was the whole striatum. Exploratory analyses were performed in the functional subdivisions of the striatum. Independent samples t-tests were used for normally distributed data, Mann–Whitney U-tests for non-normally distributed data, and the χ2 test for dichotomous variables. Where the assumption of homogeneity of variance was violated for independent samples t-tests, p values were adjusted to assume unequal variance. Group differences in acute response to psychosocial stress were investigated by calculating the Area Under the Curve (AUC) using the trapezoid method. The AUC was calculated from the last measurement taken during the control MIST condition up until the last available post-task measurement. For subjective ratings (VAS), salivary cortisol and amylase, AUC was calculated from readings taken from control MIST (10 min), Active MIST 1 (20 min), Active MIST 2 (30 min), Post Active MIST 2 (40 min) and Post Task (70 min). For blood pressure (MAP), AUC was calculated from Control MIST (19 min), Active MIST 1 (22 minutes, 25 min, 28 min), Active MIST 2 (31 minutes, 34 min, 37 min), and Post Active MIST 2 (40 min). Prior to calculating the AUC, data were corrected for baseline performance by subtracting baseline scores from all subsequent time points. Independent sample t-tests were used to compare groups at baseline, to compare response to acute psychosocial stress using AUC. Pearson correlational analyses were conducted separately in each of the groups among variables showing group differences. Bivariate outliers (Cook’s distance >1) were excluded prior to correlational analyses.

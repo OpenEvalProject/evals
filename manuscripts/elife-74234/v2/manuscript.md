@@ -25,21 +25,59 @@ The zebrafish (Danio rerio) is a well-established animal model in biology, with 
 
 ## Results
 
-## Automating aquatic husbandry
+### Automating aquatic husbandry
 
 Establishing and maintaining an aquatic colony in research labs is not trivial. The colony requires a dedicated room with specific characteristics (e.g. temperature, water source, drain access, etc.) and regular monitoring by committed staff. To facilitate access to zebrafish research, and to reduce the amount of work needed to rear these animals, we developed a small semi-automated aquatic facility system that can be built within a regular wet lab. The only requirement being access to a sink and deionized water. To construct our facility, we used a stand-alone zebrafish rack, commercially available from different suppliers, that requires only minimum maintenance because these systems typically monitor water quality and automatically adjust water pH and conductivity. We then enclosed this system inside of a large indoor tent (Figure 1—figure supplement 1), and equipped this tent with a smart heating system to control the temperature, a carbon purifier to regulate humidity and odors, cameras for remote monitoring, and water sensor ropes to detect leaks. Once this basic life-support is provided the only missing feature to attain full automation is automatic feeding which is important to reduce staff workload (mainly during weekends and holidays) and standardize feeding. We introduce two affordable and easy to build automatic feeding systems: ZAF and ZAF+ (Video 1). Parts list, building instructions, and detailed blueprints to build your own ZAFs are provided in the Supplementary file 1 and the latest version of this material can be found in the in the accompanying wiki (github.com/royerlab/ZAF/wiki). ZAFs are affordable and leveraging only commercially available parts (Supplementary files 2 and 3) We also provide the open-source python-based software to run the device, with command line interface (CLI) for ZAF and a stand-alone graphic user interface (GUI) for ZAF+.
 
-## ZAF basic workflow
+![Video 1.](https://cdn.elifesciences.org/articles/74234/elife-74234-video1.mp4.jpg)
+
+### ZAF basic workflow
 
 ZAF’s design relies on mixing water with dry zebrafish food and then distributing this mix to all fish tanks. The basic operating principle of ZAF is simple: a servo motor rotates a food canister to dispense food into a container directly filled with water. This food-water mixture is then distributed to the tanks using pumps and a manifold tubing system. ZAF consists of three main modules: (i) electronics, (ii) tubing and pumps, and (iii) food preparation (Figure 1a and b). The electronics module is comprised of a credit card-sized computer (Raspberry Pi 3 B+) augmented with an extension board (‘servo hat’) that sends signals to various motor controllers to trigger pumping and valve opening (detailed description of the electronic circuit in Figure 1—figure supplement 2 and more construction details in the Supplementary file 1). The Raspberry Pi 3 B + is connected to a touch screen and keyboard for easy user interfacing with the command-line interface. Several feeding programs can be added, modified and deleted. The amount of food delivered is constant across all tanks and can be modified by adjusting the food container opening as well as the degree of servo rotation. The tubing and pumps module is the central element in the food distribution system. The pumps mix food and water and distribute the mixture to the tanks. In ZAF, an air pump is used to stir and mix the food and water (Figure 1a). A splitter panel directs the liquid flow through the tubes leading to the individual tanks (Figure 1—figure supplement 3). A valve was added downstream of the water-in pump to prevent overflow or water leak in the device. Finally, for the food preparation module, we repurposed a commercially available aquatic food container and attached it to a servomotor for precise rotation control. For the mixing flask, we used a simple 200 ml plastic lab flask equipped with a funnel. To prevent water leaks, the food preparation container is placed in a water containment box. Additionally, we added a water sensor connected to a safety pump that, when activated, will remove any spilled water from this containment box. Once all parts have been delivered (see detailed list on Supplementary file 2), building ZAF in a few hours is feasible by following the instructions on our publicly available wiki. Both ZAF systems are highly modular and scalable: the number of tanks can be easily increased to meet the needs of larger aquatic facilities. For example, the system described in Figure 1a is designed for eight tanks but can be scaled up by adding extra pumps and by extending the splitter panels.
 
-## ZAF structure and performance
+![Figure 1.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic representation of ZAF’s three main modules with their key components. Basic electronic wiring is also shown. ZAF is designed to distribute the same food quantity to all (fish) tanks. (b) 3D visualization of the different ZAF modules: electronics, tubing, pumps, and food preparation. (c) Variation of the fish mean weight over 8 weeks during ZAF feeding (n = 7) versus manually-fed fish (n = 6). (d) Spawning success for ZAF fed fish versus a manually-fed fish (spawning evaluated at weeks 2 and 6). All bars indicate s.e.m.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Schematic representation of the standalone single rack zebrafish facility where we tested ZAFs. The facility is semi automatic and does not require constant human supervision. (b) Outside picture of the semi-automatic zebrafish facility. (c) ZAF+ inside the zebrafish facility.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The design is based on a Raspberry computer, a Servo Hat Board to drive Pulse Width Modulation outputs and motor controller to control the pumps and valve. All the pumps and valves connected to the motor drivers are plugged on a 12V and 10A power supply converter. The Raspberry Pi, the servo hat and all the electronic connected to the servo hat are running with 5V through the Raspberry Pi power.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** In this schematic graph, we indicate how to connect the different pumps and valves together and where to the different types of tubing.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig1-figsupp4-v2.jpg)
+
+### ZAF structure and performance
 
 The three modules that constitute ZAF are housed in a metal frame built with the versatile Makerbeam prototyping system. We provide all the detailed instructions for the hardware construction in the Supp. Information and in our wiki. The size of the automatic feeder can be adjusted from the baseline, which has a width of 15 inches, depth of 9 inches, and height of 9 inches (Figure 1b). Our prototype for the automatic feeding was sized for 16 zebrafish tanks. Distribution of complete nutrition dry food (Gemma-300 - Skretting Zebrafish) was calibrated according to the amounts recommended by the manufacturer. It was important to evaluate the impact of ZAF feeding versus manual feeding on fish health and fecundity. For this, we measured the weight of adult fish fed with the two techniques over 8 weeks and found no statistical difference (Figure 1c). Additionally, we found no excess mortality over the 8-week period for fish fed with the automatic device (zero fish died out of 92) versus manual feeding (one fish died out of 33). During the same period, we evaluated the fecundity of the fish and observed no difference between the two populations (Figure 1d). Additionally, the automatic feeding does not affect the water quality of our facility over a period of three months (Figure 1—figure supplement 4). Taken together, ZAF is appropriate for the feeding of a homogeneous fish population (i.e. tanks with a relatively equivalent number of animals) and it does not affect fish health nor fecundity.
 
-## ZAF+ enables flexible, tank-specific feeding
+### ZAF+ enables flexible, tank-specific feeding
 
 While ZAF is an effective system for feeding multiple tanks with similar numbers of animals, it lacks precise control of food distribution to individual tanks. This can be problematic for aquatic facilities that have either disparate tank sizes or varying fish densities. To overcome this problem, ZAF+ was created to control food flow both spatially and temporally by adding valves upstream of each tank (Figure 2a and b). The ZAF+ software allows users to configure feeding parameters such as feeding frequency, timing, and quantity, as well as which tanks need feeding. With this system users can individually control and distribute a precise amount of food for each tank. For a more detailed explanation of ZAF+ feeding sequence compared to the simpler ZAF version see Box 1 (Box 1—figure 1). ZAF+ was built by reusing several ZAF modules. However, most modules (i.e. electronics, tubing and valves, food preparation) were improved. We list all necessary components to build ZAF in the Supplementary file 3. Our design can be easily adapted to other needs by scaling up or down the various components. ZAF+ is larger (21” w x 12” d x 9” h) than the base ZAF version but still fits in a fish facility. To control the additional valves we added a micro-controller (Arduino Mega) for all pumps and valves, which permits limitless scalability by daisy-chaining multiple such controllers (Figure 2—figure supplement 1). The tubing and pumps module is extended to use a manifold to split the flow (Figure 1—figure supplement 2). Because of the more complex electronics and numerous wires in ZAF+, we enclosed all electrical components in a water-proof safety box. We used a touch screen for interfacing with the software, allowing the user to adjust settings such as the amount and timing of food delivery (Box 2—figure 1). ZAF+ can operate 7 days a week all year long, only requiring regular dry-food reloading as well as tube replacement. Tube replacement frequency varies on users usage and on facility environmental parameters (i.e. light and temperature). In our hands, we found that replacing tubing every 12 weeks takes one hour and is sufficient to keep tubes reasonably clean (Figure 1—figure supplement 3). We evaluated ZAF+ performance on both high- and low-density tanks, which is easily done through the user-friendly user interface. The fish were assessed for mean weight over 8 weeks. Overall, we observed no difference in the mean weights compared to the manually fed control group (Figure 2c). We then evaluated the reproduction of fish fed with ZAF+ and found no significant differences with fish fed manually. Finally, ZAF+ does not affect the water quality during a three months period (Figure 1—figure supplement 4) nor fish mortality. Thus, ZAF+ is a viable solution for full feeding automation in aquatic facilities.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig2-v2.jpg)
+
+**Figure 2.:** (a) Diagram of ZAF+. Electronics consist of: a Raspberry Pi 3, Arduino Mega, 16 relay module, an motor controllers. The water and food mix is pumped and sent via tubes to a manifold and valves that distribute it to specific tanks. (b) 3D representation of ZAF+ with extra space for the valves and a electronics box compared to the base ZAF version. (c) Evolution of the mean fish weight over 8 weeks of ZAF feeding (n = 6) versus the control group (n = 6). (d) Spawning success for fish fed by ZAF+ versus the control group. All bars indicate standard error mean.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** ZAF+ main electronics components are a Raspberry Pi 3B+ to run the software and control the electronics, Arduino Megas Arduino 2560 microcontrollers for the digital devices, motor controllers to control the various pumps and 16 Relay Module interface board to drive current and control the valves. The Raspberry Pi is connected directly to one Arduino Mega using a USB cable. The two Arduinos are daisy-chained via a serial connection (the whole design can be extended by daisy-chaining more arduinos). The Arduinos are connected to the motor controllers through digital pins. The Arduinos control the opening of each individual valve through the 16 relay module. A 12V power supply provides power to the electronics, except for the Raspberry Pi and the two Arduino Megas powered by the Raspberry Pi 5V.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The following schematic diagram represents the tubing connections between the different ZAF+ components. In order to connect the pump to multiple valves (30, in our case), we used manifolds that split the water flow into several tubes.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** In our fish facility conditions we observed that the tubes should be replaced every 12 weeks .
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/74234/elife-74234-fig2-figsupp4-v2.jpg)
 
 ## Discussion
 
@@ -49,38 +87,38 @@ Another important aspect of aquatic husbandry is breeding of fish fry. While we 
 
 ## Materials and methods
 
-## Animals and husbandry
+### Animals and husbandry
 
 This research was done under a protocol reviewed and approved by the institutional animal care and use committee (IACUC) of University of California San Francisco (UCSF). The fish were kept in a standalone aquatic system (Techniplast, Italy) with water maintained at 28° and a diurnal cycle of 10 hr of dark and 14 hr of light (Aleström et al., 2020). The study was conducted on the wild-type EKW strain, casper mutant (White et al., 2008) and h2afva:h2afva-mCherry transgenic line (Knopf et al., 2011) (gift from Jan Huisken, Morgridge Institute for Research, Madison, USA). We only housed and used fish between 4 months and 18 months old. Manual feeding is done once a day, at the same time of the day, according to the manufacturer recommendations and fish density.
 
-## ZAFs equipment
+### ZAFs equipment
 
 ZAFs are designed to be built with only commercially-available parts. The Supplementary files 2 and 3 list the necessary parts used to build ZAF, and ZAF+, respectively. Most of the parts used are generic and can be replaced by similar parts with similar specifications. The only component that cannot be easily exchanged is the Raspberry PI computer, but this is not an issue as these are very easily sourced.
 
-## ZAFs construction manual
+### ZAFs construction manual
 
 In the Supplementary file 1 we provide detailed instructions on how to easily build the system with tools present in most labs and easy to source components (github.com/royerlab/ZAF/wiki). There are also instructions on how to run the software and operate the graphical user interface. To build the ZAFs frame we use the versatile and easy to use Makerbeam consruction system. For both ZAFs we use two different tubing sizes, for the pump tubing we use 3/8” outside diameter tubes, for the valves tubing we use 1/4” outside diameter tubes. We use either silicone or PVC based tubing because they have good specifications and are safe for food delivery (PVC based are more cost effective).
 
-## ZAF electronics
+### ZAF electronics
 
 The electronic core of ZAF is based on (i) A Raspberry a credit card size computer, (ii) A Servo Hat Board to drive Pulse Width Modulation outputs, like the pumps and valve, (iii) Motor Controller to control the DC motors (pumps and valve). All the pumps and valves connected to the motor drivers are plugged on a 12V and 10A power supply converter. The Raspberry Pi, the servo hat and all the electronic connected to the servo hat are running with 5V through the Raspberry Pi power.
 
-## ZAF+ electronics
+### ZAF+ electronics
 
 ZAF+ electronics are comprised of four different components i. A Raspberry Pi 3 B + to run the software and control the electronics, ii. two Arduino Megas Arduino 2,560 microcontrollers for the digital devices, iii. several motor controllers to control the various pumps, iv. 16 Relay Module interface board to drive current and control the valves. The two Arduinos are daisy-chained via a serial connection (the whole design can be extended by daisy-chaining more arduinos). A 12V power supply provides power to the electronics, except for the Raspberry Pi and the two Arduino Megas powered by the Raspberry Pi 5V.
 
-## Code availability
+### Code availability
 
 The control software for both ZAFs as well as the corresponding graphical user interfaces are available as open-source code. We also provide instructions and a step-by-step guide on how to run the software (github.com/royerlab/ZAF/wiki/Software).
 
-## Automatic feeding calibration - ZAF
+### Automatic feeding calibration - ZAF
 
 We use the Gemma micro 300 (Skretting Zebrafish) food diet. Feeding is calibrated so that ZAF distributes 5% of the fish body weight per feeding. This follows the producers’ recommendations. We feed the fish in our facility twice a day. Based on the number of fish, we calibrate the automatic device to distribute 5 g of food homogeneously to all tanks per run. This calibration is done by manually by adjusting the food container opening, and the amount of servo rotation.
 
-## Automatic feeding calibration - ZAF+
+### Automatic feeding calibration - ZAF+
 
 Similarly to ZAF, we use the Gemma micro 300 (Skretting Zebrafish) diet and run the program twice a day. Food distribution is done per tank according to a ‘food quantity selection’ parameter that can be set on the user interface: ‘1’ for low fish density, to ‘4’ for high fish densities. Calibration is done in same way as for ZAF. The amount of food distributed per fish density is detailed in Box 2. The approximate amount of food required for different fish densities is as follows: Very low - 100 mg for to 2–4 fish, low - 200 mg for 5–8 fish, medium - 350 mg for 9–14 fish, large - 500 mg for 15 up to 20 fish.
 
-## Fish weight and spawning measurements
+### Fish weight and spawning measurements
 
 To weigh the fish, we first took a clean petri dish and tared it on a weighing scale. Each fish was then dabbed on a tissue paper to remove excess water and then placed in the petri dish to weigh it. This was repeated for all fish individually. To demonstrate the feeding efficiency of ZAF+, we documented the weight of the fish over a period of 7 weeks. The fish were weighed every Monday from week 1 to week 8. Since ZAF+ has the potential to customize the amount of food given per tank based on the number of fish present, we chose two tanks - one with over 12 fish and the second with only four fish to ensure each tank receives the designated amount of food. These two tanks were kept with the same fish population during the whole evaluation. We used tanks from different rows (top and bottom) to verify that tube layout and length do not affect the feeding quality nor quantity. Similarly we tracked the breeding of the fish over 2 weeks. Three random fish were selected and two to three crosses were bred for each of them. Next day, we documented the number of crosses which bred for each of the lines and calculated the average of all the positive crosses.

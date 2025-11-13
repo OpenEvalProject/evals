@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/012p63287 European Research Institute for the Biology of Ageing, University Medical Center Groningen, University of Groningen Groningen Netherlands
-2. https://ror.org/039a53269 Leibniz Institute on Aging - Fritz Lipmann Institute Jena Germany
-3. https://ror.org/012p63287 Division Molecular Genetics, Department of Pediatrics, University Medical Center Groningen, University of Groningen Groningen Netherlands
+1. European Research Institute for the Biology of Ageing, University Medical Center Groningen, University of Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))
+2. Leibniz Institute on Aging - Fritz Lipmann Institute Jena Germany ([ROR:039a53269](https://ror.org/039a53269))
+3. Division Molecular Genetics, Department of Pediatrics, University Medical Center Groningen, University of Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))
 
 † Corresponding author
 
@@ -35,41 +35,65 @@ Here, we show that C/EBPβ is critically involved in dictating the adipocyte phe
 
 Separate cohorts of male and female CebpbΔuORF mice and wild-type (wt) control littermates on a C57BL/6 J background were fed a high-fat diet (HFD; 60% fat) or standard chow (10% fat) for a period of 19 weeks. In males, both genotypes gained weight over the whole experimental period yet with significantly lower body weights for CebpbΔuORF mice, suggesting that they are partially protected from HFD induced weight gain (Figure 1A). Both the food intake and the energy efficiency (energy that was extracted from the food during digestion) were similar in CebpbΔuORF and wt males (Figure 1—figure supplement 1A, B). Lean mass and fat mass body composition was determined by computer tomography (CT) after 19 weeks of HFD feeding. On standard chow, fat mass of CebpbΔuORF males was reduced compared to wt males (Figure 1B) as we showed before (Zidek et al., 2015). Unexpectedly, we observed a slight but significantly increased overall fat mass volume in the CebpbΔuORF males compared to wt controls (Figure 1B), which correlates with a relative reduction in lean mass (Figure 1—figure supplement 1C). There was no significant difference in the amount of visceral fat mass between wt and CebpbΔuORF males under HFD (Figure 1C). However, the HFD fed CebpbΔuORF males had a significantly increased subcutaneous fat mass compared to the wt controls (Figure 1D). Taken together, the data show that CebpbΔuORF male mice store more fat upon HFD feeding compared to wt littermates, and that this extra fat is mainly stored in the subcutaneous fat depot. Similar to male mice, the body weight gain of CebpbΔuORF females after 19 weeks on HFD was smaller compared to the weight gain of wt females (Figure 1E). However, different from the male mice, in females this was associated with a reduced accumulation of fat particularly in the subcutaneous depot in CebpbΔuORF compared to wt females as was determined by fat tissue weight (Figure 1F, G).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62625/elife-62625-fig1-v3.jpg)
+
+**Figure 1.:** (A) Growth curves of wt and CebpbΔuORF (ΔuORF) male mice on HFD (wt, n = 10; CebpbΔuORF, n = 8). (B) Volume of total fat mass as measured by abdominal CT analyses (males,19 weeks; ND, n = 5; HFD, n = 4). (C) Volume of visceral fat mass as measured by abdominal CT analyses (males,19 weeks; ND, n = 5; HFD, n = 4) (D) Volume of subcutaneous fat mass as measured by abdominal CT analyses (males, 19 weeks; ND, n = 5; HFD, n = 4). (E) Female body weight (week 19; ND wt, n = 7; HFD wt, n = 4; ND and HFD ΔuORF, n = 6). (F) Visceral fat weight (females, week 19; ND wt, n = 7; HFD wt, n = 4; ND and HFD ΔuORF, n = 6). (G) Subcutaneous fat weight (females, week 19; ND wt, n = 7; HFD wt, n = 4; ND and HFD ΔuORF, n = 6). All values are mean ± SEM. p-Values were determined with Student’s t-test, *p < 0.05; **p < 0.01; ***p < 0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62625/elife-62625-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Daily food intake per mouse on HFD, normalized to body weight as determined over 18 weeks (males, wt, n = 9 mice / 4 cages; ΔuORF n = 7 mice / 2 cages). (B) Efficiency of caloric utilization in males on HFD measured by bomb calorimetry of food and feces (wt, n = 4; ΔuORF n = 4). (C) Volume of lean body mass of CebpbΔuORF male mice measured by abdominal CT analyses (19 weeks; ND, n = 5; HFD n = 4). All values are mean ± SEM. P-values were determined with Student’s t-test, *p < 0.05.
+
 Next, we compared histological sections from visceral fat of HFD fed CebpbΔuORF mice and wt littermates and observed that the adipocyte size in the CebpbΔuORF mice for both sexes is significantly smaller compared to the wt mice (Figure 2A, B). Calculated from visceral fat volume (CT analysis) of males or visceral fat weight of females and the average adipocytes area (histology) per mouse, the number of adipocytes is approximately 3 times higher in CebpbΔuORF males and 1.5 times higher in CebpbΔuORF females compared to their wt littermates.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/62625/elife-62625-fig2-v3.jpg)
 
-**Figure 2.:** Cebpb mice on high-fat diet (HFD) store fat in hyperplastic adipocytes.ΔuORFHistological hematoxylin and eosin (H&E) staining of epididymal WAT from (A) males (19 weeks HFD) and (B) females (19 weeks HFD). Quantification of the fat cell area is shown at the right (males: wt, n = 7; ΔuORF, n = 4; females: wt, n = 4; ΔuORF, n = 7; 12 adjacent cells are measured per mouse).Figure 2—source data 1.Figure 2A, B.
+**Figure 2.:** Histological hematoxylin and eosin (H&E) staining of epididymal WAT from (A) males (19 weeks HFD) and (B) females (19 weeks HFD). Quantification of the fat cell area is shown at the right (males: wt, n = 7; ΔuORF, n = 4; females: wt, n = 4; ΔuORF, n = 7; 12 adjacent cells are measured per mouse).
 
 Adipose tissue composed of small adipocytes is metabolically more active and better supplied with oxygen, and its inflammatory state is usually lower than that of enlarged adipocytes (Ghaben and Scherer, 2019). We therefore analyzed the inflammatory state of visceral white adipose tissue (WAT) by determining the expression of the macrophage marker CD68 and the inflammatory cytokines TNFα, MCP1, IL-1 and IL-6 using quantitative PCR (qPCR) and immunohistochemistry (anti-CD68). Male wt mice on HFD show a strong increase in CD68 mRNA expression compared to wt males on ND indicating increased macrophage infiltration. In contrast, CD68 mRNA expression is much lower in the visceral fat from HFD fed CebpbΔuORF males and not significantly different from ND fed mice (Figure 3A). Accordingly, histological staining of visceral WAT derived from three different mice shows more pronounced macrophage infiltration in wt mice on HFD (19 weeks) compared to CebpbΔuORF males (Figure 3B). In addition, expression of the inflammatory markers TNFα, MCP1, IL-1β, and IL-6 was significantly induced in the visceral fat of wt males on HFD (Figure 3C). In contrast, in CebpbΔuORF males, HFD feeding did not significantly induce TNFα and IL-1β expression, and the induction of MCP1 was significantly lower compared to HFD fed wt males. Solely IL-6 levels were comparable between the two genotypes on HFD feeding. For female wt mice the mean value of induction of CD68 expression in response to HFD is high but strongly varies between the mice. Therefore, the lower value of CD68 expression in HFD fed CebpbΔuORF mice is not statistically significant yet shows much less variation (Figure 4A). Notwithstanding, the anti-CD68 staining of visceral WAT did show infiltration by macrophages in wt females on HFD although to a lower extend compared to wt males, while in CebpbΔuORF females hardly any staining was observed (Figure 4B). The inflammatory markers TNFα, MCP1 and IL-1 are all induced in wt and CebpbΔuORF mice on HFD feeding to similar extends and thus no differences are measured between the genotypes. No induction was observed for IL6 expression in both genotypes upon HFD feeding (Figure 4C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/62625/elife-62625-fig3-v3.jpg)
 
-**Figure 3.:** Cebpb male mice on high-fat diet (HFD).ΔuORF(A) Relative mRNA expression levels of the macrophage marker CD68 measured in the visceral fat of Cebpb (ΔuORF) and wt male mice on either normal diet (ND) or HFD (19 weeks; ND, n = 5; HFD, n = 4). (ΔuORFB) Immunohistological staining of the visceral fat of Cebpb male mice (ΔuORF) and wt mice on HFD (19 weeks) using a CD68-specific antibody (arrow points to specific staining). Histological sections from three individual mice per genotype are shown. (ΔuORFC) Relative mRNA expression levels of the inflammatory cytokines TNFα, MCP1, IL-1β, and IL6 measured in the visceral fat of Cebpb (ΔuORF) and wt male mice on either normal diet (ND) or HFD (19 weeks; wt: ND, n = 5; HFD, n = 6; ΔuORF: ND, n = 6 (for IL-6, n = 4, the results of two mice were excluded due to undetectable signal); HFD, n = 4). All values are mean ± SEM. p-Values were determined with Student’s t-test, *p < 0.05; ***p < 0.001.ΔuORFFigure 3—source data 1.Figure 3A, C.
+**Figure 3.:** (A) Relative mRNA expression levels of the macrophage marker CD68 measured in the visceral fat of CebpbΔuORF (ΔuORF) and wt male mice on either normal diet (ND) or HFD (19 weeks; ND, n = 5; HFD, n = 4). (B) Immunohistological staining of the visceral fat of CebpbΔuORF male mice (ΔuORF) and wt mice on HFD (19 weeks) using a CD68-specific antibody (arrow points to specific staining). Histological sections from three individual mice per genotype are shown. (C) Relative mRNA expression levels of the inflammatory cytokines TNFα, MCP1, IL-1β, and IL6 measured in the visceral fat of CebpbΔuORF (ΔuORF) and wt male mice on either normal diet (ND) or HFD (19 weeks; wt: ND, n = 5; HFD, n = 6; ΔuORF: ND, n = 6 (for IL-6, n = 4, the results of two mice were excluded due to undetectable signal); HFD, n = 4). All values are mean ± SEM. p-Values were determined with Student’s t-test, *p < 0.05; ***p < 0.001.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62625/elife-62625-fig4-v3.jpg)
 
-**Figure 4.:** Cebpb female mice on high-fat diet (HFD).ΔuORF(A) Relative mRNA expression levels of the macrophage marker CD68 measured in the visceral fat of Cebpb (ΔuORF) and wt female mice on either normal diet (ND) or HFD (19 weeks; wt: ND, n = 7; HFD, n = 4; ΔuORF: ND, n = 4 (the result from one mouse was excluded due to undetectable signal); HFD, n = 5). (ΔuORFB) Immunohistological staining of the visceral fat of Cebpb female mice (ΔuORF) and wt mice on HFD (19 weeks) using a CD68-specific antibody (arrow points to specific staining). Histological sections from three individual mice per genotype are shown. (ΔuORFC) Relative mRNA expression levels of the inflammatory cytokines TNFα, MCP1, IL-1β, and IL6 measured in the visceral fat of Cebpb female mice (ΔuORF) and wt mice on either normal diet (ND) or HFD (19 weeks; wt: ND, n = 6; HFD, n = 4; ΔuORF: ND, n = 5; HFD, n = 5). All values are mean ± SEM. p-Values were determined with Student’s t-test, *p < 0.05; **p < 0.01.ΔuORFFigure 4—source data 1.Figure 4A, C.
+**Figure 4.:** (A) Relative mRNA expression levels of the macrophage marker CD68 measured in the visceral fat of CebpbΔuORF (ΔuORF) and wt female mice on either normal diet (ND) or HFD (19 weeks; wt: ND, n = 7; HFD, n = 4; ΔuORF: ND, n = 4 (the result from one mouse was excluded due to undetectable signal); HFD, n = 5). (B) Immunohistological staining of the visceral fat of CebpbΔuORF female mice (ΔuORF) and wt mice on HFD (19 weeks) using a CD68-specific antibody (arrow points to specific staining). Histological sections from three individual mice per genotype are shown. (C) Relative mRNA expression levels of the inflammatory cytokines TNFα, MCP1, IL-1β, and IL6 measured in the visceral fat of CebpbΔuORF female mice (ΔuORF) and wt mice on either normal diet (ND) or HFD (19 weeks; wt: ND, n = 6; HFD, n = 4; ΔuORF: ND, n = 5; HFD, n = 5). All values are mean ± SEM. p-Values were determined with Student’s t-test, *p < 0.05; **p < 0.01.
 
 Together, these data demonstrate that CebpbΔuORF mice on HFD feeding store extra fat through an increase in adipocyte numbers (hyperplasia), which results in smaller sized adipocytes and reduced fat tissue inflammation in males. In CebpbΔuORF females, adipocytes are also smaller but consistent differences in the inflammation state of the visceral fat were not measured.
 
 Adipocyte hypertrophy under obese conditions is associated with a limit in fat storage capacity of the adipocytes and enhanced lipolysis (Khan et al., 2009; Laurencikiene et al., 2011) The resulting increase in the concentration of fatty acids in the circulation causes lipid accumulation in non-fat tissues like liver, muscle and heart (Longo et al., 2019). In a previous study, we showed that CebpbΔuORF males on a C57Bl/6 genetic background are protected against age-related steatosis on a ND, compared to wt mice that do accumulate fat in the liver at an age of 8 months (Zidek et al., 2015). To investigate possible differences in HFD-induced steatosis, we stained histological sections of liver for fat accumulation. Livers of both male and female wt mice showed massive fat accumulation (steatosis) on HFD. Compared to the wt mice, fat accumulation was much lower in CebpbΔuORF mice of both sexes (Figure 5A, B). In agreement with the differences in steatosis, the livers of wt females on HFD are significantly heavier than livers of CebpbΔuORF females while in males a trend towards heavier wt livers is visible (Figure 5C, D). Fat accumulation on HFD was also lower in the heart and skeletal muscle of male mice (Figure 5—figure supplement 1A) and for both males and females the weight of the heart on HFD is higher in wt compared to CebpbΔuORF mice (Figure 1—figure supplement 1B). Altogether, these data show that CebpbΔuORF mice are protected against steatosis in the liver and other organs in response to HFD.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/62625/elife-62625-fig5-v3.jpg)
+
+**Figure 5.:** Histological sections of liver from (A) males and (B) females of wt or CebpbΔuORF mice (ΔuORF) (19 weeks). Sections were stained with hematoxylin (blue) and Sudan III (males) or Oil-Red-O (females) for red color lipid staining. Liver weight of (C) males and (D) females of wt or CebpbΔuORF mice (ΔuORF) (19 weeks; males: ND, n = 6; HFD, n = 4; females: wt ND, n = 7, wt HFD, n = 4; ΔuORF wt and HFD, n = 6). All values are mean ± SEM. p-Values were determined with Student’s t-test, *p < 0.05; **p < 0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62625/elife-62625-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Histological sections of cardiac muscle and (B) skeletal muscle of wt or CebpbΔuORF male mice (ΔuORF) (19 weeks). Sections were stained with hematoxylin (blue) and Sudan III for red color lipid staining. (C) Heart weights of CebpbΔuORF and wt males and (D) females as indicated on normal diet (ND) or HFD (19 weeks, males: wt ND, n = 4; wt HFD, n = 3, ΔuORF ND and HFD, n = 4; females: wt ND, n = 7, wt HFD, n = 4, ΔuORF ND and HFD, n = 6). All values are mean ± SEM. p-Values were determined with Student’s t-test, *p < 0.05; **p < 0.01.
+
 Chronic obesity often results in the loss of glucose homeostasis (Abranches et al., 2015). We therefore analyzed glucose tolerance and insulin sensitivity in the HFD fed CebpbΔuORF mice and wt littermates. Glucose clearance from the circulation measured by intraperitoneal glucose tolerance test (IPGTT) was impaired in response to 7 weeks HFD feeding for the wt mice of both sexes, as is shown by a significantly increased area under the curve (AUC) (Figure 6A, B). For the CebpbΔuORF male mice, the already significantly better glucose clearance on normal diet does not change on HFD (Figure 6A). The female CebpbΔuORF mice on HFD show reduced glucose clearance in the IPGTT compared to ND but they perform significantly better than the HFD fed wt females (Figure 6B). At the time of 7 weeks on HFD, both the wt and CebpbΔuORF mice of both sexes did not develop insulin insensitivity as measured by intraperitoneal insulin sensitivity test (IPIST) (Figure 6C, D). Both the CebpbΔuORF males and females, however, generally performed better on IPIST than the wt mice.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/62625/elife-62625-fig6-v3.jpg)
 
-**Figure 6.:** Cebpb mice show improved glucose tolerance and insulin sensitivity on a high-fat diet (HFD).ΔuORFIntraperitoneal glucose tolerance test (IPGTT) with the calculated area under the curve (AUC) of Cebpb (ΔuORFA) male and (B) female (ΔuORF) and wt mice injected i.p. with glucose (2 g/kg) after a 16 hr fast (7 weeks; males: wt ND, n = 6; wt HFD, n = 9; ΔuORF ND, n = 6; ΔuORF HFD, n = 7; females: wt ND, n = 7; wt HFD, n = 6; ΔuORF ND and HFD, n = 6). Intraperitoneal insulin sensitivity test (IPIST) with the calculated area under the curve (AUC) of Cebpb (ΔuORFC) male and (D) female (ΔuORF) mice and wt mice injected i.p. with insulin (0.5 IU/kg) (7 weeks; males: wt ND, n = 6; wt HFD, n = 8; ΔuORF ND, n = 5; ΔuORF HFD, n = 7; females: wt ND, n = 7; wt HFD, n = 7; ΔuORF ND, n = 6; ΔuORF HFD, n = 7). All values are mean ± SEM. p-Values were determined with Student’s t-test, *p < 0.05; ***p < 0.001.Figure 6—source data 1.Figure 6A–D.
+**Figure 6.:** Intraperitoneal glucose tolerance test (IPGTT) with the calculated area under the curve (AUC) of CebpbΔuORF (A) male and (B) female (ΔuORF) and wt mice injected i.p. with glucose (2 g/kg) after a 16 hr fast (7 weeks; males: wt ND, n = 6; wt HFD, n = 9; ΔuORF ND, n = 6; ΔuORF HFD, n = 7; females: wt ND, n = 7; wt HFD, n = 6; ΔuORF ND and HFD, n = 6). Intraperitoneal insulin sensitivity test (IPIST) with the calculated area under the curve (AUC) of CebpbΔuORF (C) male and (D) female (ΔuORF) mice and wt mice injected i.p. with insulin (0.5 IU/kg) (7 weeks; males: wt ND, n = 6; wt HFD, n = 8; ΔuORF ND, n = 5; ΔuORF HFD, n = 7; females: wt ND, n = 7; wt HFD, n = 7; ΔuORF ND, n = 6; ΔuORF HFD, n = 7). All values are mean ± SEM. p-Values were determined with Student’s t-test, *p < 0.05; ***p < 0.001.
 
 In conclusion, our data show that CebpbΔuORF mice on HFD feeding perform better in a glucose tolerance test, are protected against steatosis and show a lower inflammatory status of WAT, although the latter is less evident in females. These metabolically favorable phenotypes of the CebpbΔuORF mice correlate with hyperplastic fat storage and in male mice with more efficient fat accumulation in the subcutaneous depot.
 
 C/EBPβ is a known transcriptional regulator of fat cell differentiation and function (Siersbæk and Mandrup, 2011). We have shown earlier that the truncated C/EBPβ isoform LIP inhibits adipocyte differentiation and that fibroblasts derived from CebpbΔuORF mice have an increased adipogenic differentiation potential (Zidek et al., 2015). We therefore analyzed the expression in the visceral WAT of the adipogenic transcription factors C/EBPα and PPARγ, the sterol regulatory element-binding protein 1 c (SREBP1c) as a key transcription factor for lipogenesis, and fatty acid synthase (FAS) as a key lipogenic enzyme, by quantitative PCR. In wt male mice all four transcripts are significantly lower expressed on HFD compared to ND (Figure 7A). This generally corresponds to their protein levels as determined by immunoblotting, although the expression of PPARγ and SREBP1c varies considerably between the mice (Figure 7—figure supplement 1A). In the WAT of CebpbΔuORF males on ND, expression of the four transcripts is similar (C/EBPα and PPARγ) or higher compared to WAT from wt males on ND (SREBP1 and FAS, also shown in Zidek et al., 2015), and its reduction under HFD occurs to a lesser extend compared to wt mice (Figure 7A). With the exception of C/EBPα, the transcript levels generally correspond to the protein levels, although here variations of in particular PPARγ and SREBP1 levels complicate interpretation (Figure 7—figure supplement 1A). For the wt female mice, only the transcript levels of FAS were downregulated upon HFD and for CebpbΔuORF mice only expression of PPARγ and FAS was significantly higher on HFD compared to wt females on HFD (Figure 7B). The better maintained expression of FAS in HFD fed CebpbΔuORF females in the qPCR analysis however could not be recapitulated with immunoblotting (Figure 7—figure supplement 1B).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/62625/elife-62625-fig7-v3.jpg)
+
+**Figure 7.:** Relative mRNA expression levels of the adipogenic transcription factors C/EBPα, PPARγ and SREBBP1c and key enzyme FAS measured visceral WAT of CebpbΔuORF (A) male and (B) female (ΔuORF) mice and wt mice on either normal diet (ND) or HFD (19 weeks; males: wt ND, n = 5; wt HFD, n = 7; ΔuORF ND, n = 6; ΔuORF HFD, n = 4; females: wt ND, n = 6; wt HFD, n = 4; ΔuORF ND and HFD, n = 5). All values are mean ± SEM. p-Values were determined with Student’s t-test, *p < 0.05; **p < 0.01; ***p < 0.001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/62625/elife-62625-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Immunoblot of the adipogenic transcription factors C/EBPα, PPARγ and SREBP1 and the key enzyme FAS performed with visceral WAT extracts from CebpbΔuORF male mice (ΔuORF) and wt mice on either normal diet (ND) or HFD (19 weeks). An immunoblot of GAPDH served as loading control. (B) Immunoblot of the key enzyme FAS performed with liver extracts from CebpbΔuORF female mice (ΔuORF) and wt mice on either normal diet (ND) or HFD (19 weeks). An immunoblot of GAPDH served as loading control.
+
 To examine whether HFD feeding is associated with changes in LAP/LIP expression, we analyzed extracts from WAT isolated from wt and CebpbΔuORF mice of both sexes under ND and HFD conditions. In wt males, both LAP and LIP isoforms were upregulated upon HFD feeding as shown in the immunoblot (Figure 8A) and determined by quantification of blot signals from a cohort (Figure 8B, C). The quantification reveals a small but significant decrease in the LAP/LIP ratio (Figure 8B), indicating that the inhibitory function of LIP increases upon HFD in wt males. Due to the LIP-deficiency caused by the CebpbΔuORF mutation, the LAP/LIP ratio is very high for the CebpbΔuORF males and does not change upon HFD feeding (some residual LIP expression is usually visible in CebpbΔuORF mice due to leaky scanning over the not-optimal AUG-start codons for the LAP proteins). For the females, a significant increase in both LAP and LIP expression in response to HFD feeding was only observed in the CebpbΔuORF mice (Figure 8D, F). However, no significant changes were measured in LAP/LIP expression ratios, despite an overall trend towards a lower LAP/LIP ratio on HFD in wt females (Figure 8D, E). Taken together, LAP/LIP isoform ratios decline in response to HFD feeding due to higher increase of LIP expression which is significant for males but not for females.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/62625/elife-62625-fig8-v3.jpg)
 
-**Figure 8.:** (A) Immunoblots of C/EBPβ and GAPDH loading control performed with visceral WAT extracts from wt or Cebpb males on either normal diet (ND) or HFD (19 weeks). (ΔuORFB) Quantification of the LAP/LIP ratio in split bar diagrams for better visualization, and (C) quantification of LAP and LIP isoform expression separately (normalized to the GAPDH signal) using the whole cohort (wt ND, n = 5; wt HFD, n = 6; ΔuORF ND, n = 6; ΔuORF HFD, n = 5). (D) Immunoblots of C/EBPβ and GAPDH loading control performed with visceral WAT extracts from wt or Cebpb females on either normal diet (ND) or HFD (19 weeks). (ΔuORFE) Quantification of the LAP/LIP ratios in split bar diagrams for better visualization, and (F) quantification of LAP and LIP isoform expression separately (normalized to the GAPDH signal) using the whole cohort (wt ND, n = 8; wt HFD, n = 4; ΔuORF ND and HFD, n = 6). All values are mean ± SEM. p-Values were determined with Student’s t-test, *p < 0.05; **p < 0.01; ***p < 0.001.Figure 8—source data 1.Figure 8B, C, E and F.
+**Figure 8.:** (A) Immunoblots of C/EBPβ and GAPDH loading control performed with visceral WAT extracts from wt or CebpbΔuORF males on either normal diet (ND) or HFD (19 weeks). (B) Quantification of the LAP/LIP ratio in split bar diagrams for better visualization, and (C) quantification of LAP and LIP isoform expression separately (normalized to the GAPDH signal) using the whole cohort (wt ND, n = 5; wt HFD, n = 6; ΔuORF ND, n = 6; ΔuORF HFD, n = 5). (D) Immunoblots of C/EBPβ and GAPDH loading control performed with visceral WAT extracts from wt or CebpbΔuORF females on either normal diet (ND) or HFD (19 weeks). (E) Quantification of the LAP/LIP ratios in split bar diagrams for better visualization, and (F) quantification of LAP and LIP isoform expression separately (normalized to the GAPDH signal) using the whole cohort (wt ND, n = 8; wt HFD, n = 4; ΔuORF ND and HFD, n = 6). All values are mean ± SEM. p-Values were determined with Student’s t-test, *p < 0.05; **p < 0.01; ***p < 0.001.
 
 ## Discussion
 
@@ -85,44 +109,397 @@ Taken together, our data propose pharmacological reduction of LIP expression as 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C/EBPβΔuORF</td>
+      <td>https://doi.org.10.1101/gad.557910https://doi.org.10.15252/embr.201439837</td>
+      <td></td>
+      <td>males, back-crossed for 6 generations and females, back-crossed for 12 generations into C57BL/6 J background</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-C/EBPβ (E299) (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab32358, RRID:AB_726796</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-C/EBPα (D56F10) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 8178, RRID:AB_11178517</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PPARγ (C26H12) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 2435, RRID:AB_2166051</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FAS (C20G5) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 3180, RRID:AB_2100796</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (14 C10) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 2118, RRID:AB_561053</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SREBP1 (2 A4) (mouse monoclonal)</td>
+      <td>NeoMarkers</td>
+      <td>Cat# MS-1207-PO</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD68 (E307V) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 97,778</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, HRP-conjugated (donkey polyclonal)</td>
+      <td>GE Healthcare</td>
+      <td>Cat#: NA934, RRID:AB_772206</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG, HRP-conjugated (sheep polyclonal)</td>
+      <td>GE Healthcare</td>
+      <td>Cat#: NXA931, RRID:AB_772209</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, biotin-conjugated (goat polyclonal)</td>
+      <td>Vector Labs</td>
+      <td>Cat#: BA-1000</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CD68 (F)</td>
+      <td>https://doi.org.10.7554/eLife.34985.001</td>
+      <td>PCR primer</td>
+      <td>5’-GCCCACCAC CACCAGTCACG –3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CD68 (R)</td>
+      <td>https://doi.org.10.7554/eLife.34985.001</td>
+      <td>PCR primer</td>
+      <td>5’GTGGTCCAG GGTGAGGGCC A-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PPARγ (F)</td>
+      <td>https://doi.org.10.15252/embr.201439837</td>
+      <td>PCR primer</td>
+      <td>5’-GCCCTTTGG TGACTTTATGG –3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PPARγ (R)</td>
+      <td>https://doi.org.10.15252/embr.201439837</td>
+      <td>PCR primer</td>
+      <td>5’-CAGCAGGTT GTCTTGGATGT 3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>C/EBPα (F)</td>
+      <td>https://doi.org.10.15252/embr.201439837</td>
+      <td>PCR primer</td>
+      <td>5’-CAAGAACAG CAACGAGTACC G-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>C/EBPα (R)</td>
+      <td>https://doi.org.10.15252/embr.201439837</td>
+      <td>PCR primer</td>
+      <td>5’-GTCACTGGT CAACTCCAGCA C-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SREBP1c (F)</td>
+      <td>https://doi.org.10.15252/embr.201439837</td>
+      <td>PCR primer</td>
+      <td>5’-AACGTCACT TCCAGCTAGAC –3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SREBP1c (R)</td>
+      <td>https://doi.org.10.15252/embr.201439837</td>
+      <td>PCR primer</td>
+      <td>5’-CCACTAAGG TGCCTACAGAG C-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FAS (F)</td>
+      <td>https://doi.org.10.15252/embr.201439837</td>
+      <td>PCR primer</td>
+      <td>5’-ACACAGCAA GGTGCTGGAG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FAS (R)</td>
+      <td>https://doi.org.10.15252/embr.201439837</td>
+      <td>PCR primer</td>
+      <td>5’-GTCCAGGCT GTGGTGACTCT –3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TNFα (F)</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>5’-CCAGACCCT CACACTCA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TNFα (R)</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>5’-CACTTGGTG GTTTGCTACGA C-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MCP1 (F)</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>5‘-GCTGGAGAG CTACAAGAGGA TCA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MCP1 (R)</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>5‘-ACAGACCTC TCTCTTGAGCT TGGT-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IL-1β (F)</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>5‘-GAAATGCCA CCTTTTGACAG TG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IL-1β (R)</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>5‘-TGGATGCTC TCATCAGGACA G-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IL-6 (F)</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>5’-CCGGAGAGG AGACTTCACAG –3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IL-6 (R)</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>5’-TTCTGCAAG TGCATCATCGT –3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH (F)</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>5’-ATTGTCAGC AATGCATCCTG –3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH (R)</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>5’-ATGGACTGT GGTCATGAGC C-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-actin (F)</td>
+      <td>https://doi.org.10.15252/embr.201439837</td>
+      <td>PCR primer</td>
+      <td>5’-AGAGGGAAA TCGTGCGTGA C-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-actin (R)</td>
+      <td>https://doi.org.10.15252/embr.201439837</td>
+      <td>PCR primer</td>
+      <td>5'-CAATAGTGA TGACCTGGCC GT-3’</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vectastain ABC HRP Kit</td>
+      <td>Vector Labs</td>
+      <td>Cat#: PK-4000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Western Lightning Plus ECL Reagent</td>
+      <td>Perkin Emer</td>
+      <td>Cat#: NEL103001EA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ECL Prime Western Blotting Reagent</td>
+      <td>GE Healthcare</td>
+      <td>Cat#: RPN2236</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Restore Western Blot Stripping buffer</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 21,063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAzol Lysis re-agent</td>
+      <td>QIAGEN</td>
+      <td>Cat#: ID:79,306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Lipid Tissue Mini kit</td>
+      <td>QIAGEN</td>
+      <td>Cat#: ID:74,804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Rneasy Plus Mini kit</td>
+      <td>QIAGEN</td>
+      <td>Cat#: ID:74,134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Transcriptor First Strand cDNA Synthesis kit</td>
+      <td>Roche</td>
+      <td>Cat#: 4379012001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Light Cycler 480 SYBR Green I Master Mix</td>
+      <td>Roche</td>
+      <td>Cat#: 0470751600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin (human)</td>
+      <td>Lilly</td>
+      <td>Cat#: HI-210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sudan III</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: S4136</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oil-Red-O</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: O0625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9.0</td>
+      <td>Graphpad Software, La Jolla, CA</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Quant LAS 4000 Mini Imager Software</td>
+      <td>GE Healthcare</td>
+      <td>RRID:SCR_014246</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://doi.org.10.1186/s12859-017-1934-z</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 CebpbΔuORFmice (Wethmar et al., 2010) were back-crossed for 6 generations (males) or for 12 generations (females) into the C57BL/6 J background. Mice were kept at a standard 12 hr light/dark cycle at 22 °C in a pathogen-free animal facility and for all experiments age-matched mice were used. Mice were fed a high-fat diet (HFD; 60% fat, D12492, Research Diets New Brunswick, USA) for 19 weeks starting at an age of 12–15 weeks or a standard chow diet (normal diet, ND; 10% fat, D12450B, Research Diets New Brunswick, USA) as control. For each genotype, weight-matched mice were distributed over the different diet groups. Mice were analyzed at different time points as indicated in the figure legends. The determination of male body weight and food intake (per cage divided through the number of mice in the cage) was performed weekly for 16 or 18 weeks, respectively. The body weight of females was determined in week 19 after mice were terminated. During the performance of all experiments the genotype of the mice was masked. All animal experiments were performed in compliance with protocols approved by the Institutional Animal Care and Use committee (IACUC) of the Thüringer Landesamt für Verbraucherschutz (#03-005/13).
 
-## Determination of body composition
+### Determination of body composition
 
 Mice were anesthetized and the abdominal region from lumbar vertebrae 5–6 was analyzed using an Aloka LaTheta Laboratory Computed Tomograph LCT-100A (Zinsser Analytic) as described in Zidek et al., 2015.
 
-## Determination of caloric utilization
+### Determination of caloric utilization
 
 Both the feces and samples of the HFD food were collected, dried in a speed vacuum dryer at 60 °C for 5 hr, grinded and pressed into tablets. The energy content of both the feces and food samples was determined through bomb calorimetry using an IKA-Calorimeter C5000. The energy efficiency was calculated through subtraction of the energy loss in the feces from the energy consumed.
 
-## IP glucose tolerance and insulin sensitivity tests
+### IP glucose tolerance and insulin sensitivity tests
 
 For the determination of glucose tolerance, mice were starved overnight (16 hr) and a 20% (w/v) glucose solution was injected i.p., using 10 μl per gram body weight. After different time points, the blood glucose concentration was measured using a glucometer (AccuCheck Aviva, Roche). For the determination of insulin sensitivity, an insulin solution (0,05 IU/ml insulin in 1xPBS supplemented with 0.08% fatty acid-free BSA) was i.p. injected into non-starved mice using 10 μl per gram body weight and the blood glucose concentration was measured as described above.
 
-## Histological staining
+### Histological staining
 
 Tissue pieces were fixed for 24 hr with paraformaldehyde (4%) and embedded in paraffin. Sections (5 μm) were stained with hematoxylin and eosin (H&E) in the Autostainer XL (Leica). Adipocyte area was determined using the ImageJ software from 12 adjacent cells per mouse. For CD68 staining, sections (5 μm) from paraffin embedded tissue were dried for 2 hr at 55 °C, deparaffinized and rehydrated. For antigen retrieval, sections were incubated for 25 min in 10 mM citrate buffer, pH 6.0. Endogenous peroxidase was blocked in 1% H2O2 in methanol for 30 min. After blocking with normal goat serum (1:10 in PBS), sections were incubated with a CD68 specific antibody (E307V, #97,778 from Cell Signaling, 1:200) over night at 4 °C followed by incubation with a biotin-conjugated secondary goat anti rabbit antibody (Vector Labs, BA-1000, 1:250) for 30 min and incubation with reagents of the Vectastain ABC HRP kit (Vector Labs, PK-4000) according to the manufacturer’s instruction. Slides were stained with DAB and counterstained with hematoxylin, dehydrated and covered using Eukitt. A Hamamatsu scanner was used to take images. For lipid staining with Sudan III, cryosections (10 μm) were fixed with paraformaldehyde (4%) and stained with Sudan-III solution (3% (w/v) Sudan-III in 10% ethanol and 90% acetic acid) for 30 min. For lipid staining with Oil-Red-O, cryosections (10 μm) were fixed with paraformaldehyde (10%), washed shortly in 60% isopropanol and stained with Oil-Red-O solution (3 mg/ml isopropanol stock solution diluted to 1.8 mg/ml with H20) for 15 min. After shortly washing first with isopropanol and then with water, cells were counterstained with hematoxylin and covered with 10 mM Tris HCl pH 9.0 in glycerol.
 
-## Calculation of adipocyte number
+### Calculation of adipocyte number
 
 The mean adipocyte area from the visceral fat per mouse was used to calculate the adipocyte volume per mouse with r (radius) = and V (volume) = π r3. For males, the mean volume of the visceral fat as determined by CT analysis was then divided by the mean adipocyte volume to get the cell number. For females, adipocyte weight was calculated by multiplying the calculated cell volume with 0.915 (the density of triolein). Then, the mean weight of the visceral WAT tissue was divided by the calculated adipocyte weight.
 
-## Determination of organ weight
+### Determination of organ weight
 
 After termination of the mice organs were collected and cleaned from surrounding fat or connective tissue and their weight was determined using an analytical balance.
 
-## qRT-PCR analysis
+### qRT-PCR analysis
 
 Tissue pieces were homogenized using the Precellys 24 system (Peqlab) in the presence of 1 ml QIAzol reagent (QUIAGEN). The RNA was isolated using the RNeasy Lipid Tissue Mini kit (QUIAGEN) according to the protocol of the manufacturer, incubated with RQ1 RNase-free DNase (Promega) for 30 min at 37 °C and purified further using the RNeasy Plus Mini kit (QUIAGEN) starting from step 4.
 
 One μg RNA was reverse transcribed into cDNA with Oligo(d)T primers using the Transcriptor First Strand cDNA Synthesis kit (Roche). The qRT-PCR was performed with the LightCycler 480 SYBR Green I Master mix (Roche) using the following primer pairs: CD68: 5’-GCC CAC CAC CAC CAG TCA CG-3’ and 5’-GTG GTC CAG GGT GAG GGC CA-3’, PPARγ 5’-GCC CTT TGG TGA CTT TAT GG-3’ and 5’-CAG CAG GTT GTC TTG GAT GT-3’, C/EBPα 5’-CAA GAA CAG CAA CGA GTA CCG-3’ and 5’-GTC ACT GGT CAA CTC CAG CAC-3’, SREBP1c: 5’-AAC GTC ACT TCC AGC TAG AC-3’ and 5’-CCA CTA AGG TGC CTA CAG AGC-3’, FAS: 5’-ACA CAG CAA GGT GCT GGA G-3’ and 5’-GTC CAG GCT GTG GTG ACT CT-3’, TNFα: 5’-CCA GAC CCT CAC ACT CA-3’ and 5’-CAC TTG GTG GTT TGC TAC GAC-3’, MCP1: 5‘-GCT GGA GAG CTA CAA GAG GAT CA-3’ and 5‘-ACA GAC CTC TCT CTT GAG CTT GGT, IL-1β: 5‘-GAA ATG CCA CCT TTT GAC AGT G-3’ and 5‘-TGG ATG CTC TCA TCA GGA CAG-3’, IL-6: 5’-CCG GAG AGG AGA CTT CAC AG-3’ and 5’-TTC TGC AAG TGC ATC ATC GT-3’, GAPDH: .5’- ATTGTCAGCAATGCATCCTG-3’ and 5’- ATGGACTGTGGTCATGAGCC-3’ and β-actin: 5’-AGA GGG AAA TCG TGC GTG AC-3' and 5'-CAA TAG TGA TGA CCT GGC CGT-3’.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Tissues were lysed in RIPA buffer as described in Müller et al., 2018. Equal amounts of protein were separated by SDS-PAGE and transferred to a PDVF membrane. For protein detection, the following antibodies were used: C/EBPβ (E299, ab32358, 1:1000) from Abcam, C/EBPα (D56F10, #8178, 1:1000), PPARγ (C26H12, #2435, 1:1000), FAS (C20G5, #3180, 1:1000) and GAPDH (14C10, #2118, 1:1000) from Cell Signaling, SREBP1 2A4, MS-1207-PO, 1:1000 from NeoMarkers, and HRP-linked anti rabbit or mouse IgG from GE Healthcare. For detection, Lightning Plus ECL reagent (Perkin Elmer) or ECL prime reagent (GE Healthcare) was used. For re-probing, the membranes were incubated for 15 min with Restore Western Blot Stripping buffer (Thermo Fisher). The Image Quant LAS Mini 400 Imager or the Image Quant 800 Imager (both GE Healthcare) were used for detection and quantification of C/EBPβ LAP and LIP isoforms was performed using the supplied software.
 
-## Statistical methods
+### Statistical methods
 
 The number of biological replicates is indicated as n = x. All graphs show average ± standard error of the mean (SEM). To calculate statistical significance of the obtained results the Student’s t-Test was used with *p < 0.05; **p < 0.01 and ***p < 0.001. Single mice were excluded when results indicated technical failure of the experimental performance. Furthermore, extreme outliers were excluded from the analysis.

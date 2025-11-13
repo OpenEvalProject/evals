@@ -19,20 +19,20 @@
 
 ### Affiliations
 
-1. https://ror.org/052g8jq94 Genome Integrity and Instability Group, Institut de Biotecnologia i Biomedicina, Universitat Autònoma de Barcelona Cerdanyola del Vallès Spain
-2. https://ror.org/052g8jq94 Department of Cell Biology, Physiology, and Immunology, Cytology and Histology Unit, Universitat Autònoma de Barcelona Cerdanyola del Vallès Spain
+1. Genome Integrity and Instability Group, Institut de Biotecnologia i Biomedicina, Universitat Autònoma de Barcelona Cerdanyola del Vallès Spain ([ROR:052g8jq94](https://ror.org/052g8jq94))
+2. Department of Cell Biology, Physiology, and Immunology, Cytology and Histology Unit, Universitat Autònoma de Barcelona Cerdanyola del Vallès Spain ([ROR:052g8jq94](https://ror.org/052g8jq94))
 3. Molecular Mechanisms Program, Centro de Investigación del Cáncer and Instituto de Biología Molecular y Celular del Cáncer (CSIC-Universidad de Salamanca) Salamanca Spain
-4. https://ror.org/052g8jq94 Institut de Biotecnologia i de Biomedicina, Universitat Autònoma de Barcelona Cerdanyola del Vallés Spain
-5. https://ror.org/00ca2c886 Centro de Investigación Biomédica en Red de Bioingeniería, Biomateriales y Nanomedicina, Instituto de Salud Carlos III Cerdanyola del Vallès Spain
-6. https://ror.org/052g8jq94 Departament de Genètica i de Microbiologia, Universitat Autònoma de Barcelona Cerdanyola del Vallés Spain
-7. https://ror.org/052g8jq94 Servei de Cultius Cel·lulars, Producció d'Anticossos i Citometria, Universitat Autònoma de Barcelona Cerdanyola del Vallés Spain
-8. https://ror.org/052g8jq94 Transgenic Animal Unit, Center of Animal Biotechnology and Gene Therapy, Universitat Autònoma de Barcelona Cerdanyola del Vallès Spain
+4. Institut de Biotecnologia i de Biomedicina, Universitat Autònoma de Barcelona Cerdanyola del Vallés Spain ([ROR:052g8jq94](https://ror.org/052g8jq94))
+5. Centro de Investigación Biomédica en Red de Bioingeniería, Biomateriales y Nanomedicina, Instituto de Salud Carlos III Cerdanyola del Vallès Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
+6. Departament de Genètica i de Microbiologia, Universitat Autònoma de Barcelona Cerdanyola del Vallés Spain ([ROR:052g8jq94](https://ror.org/052g8jq94))
+7. Servei de Cultius Cel·lulars, Producció d'Anticossos i Citometria, Universitat Autònoma de Barcelona Cerdanyola del Vallés Spain ([ROR:052g8jq94](https://ror.org/052g8jq94))
+8. Transgenic Animal Unit, Center of Animal Biotechnology and Gene Therapy, Universitat Autònoma de Barcelona Cerdanyola del Vallès Spain ([ROR:052g8jq94](https://ror.org/052g8jq94))
 
 † Corresponding author
 
 ## Abstract
 
-Infertility affects up to 12% of couples globally, with genetic factors contributing to nearly half of the cases. Advances in genomic technologies have led to the discovery of genes like Bend2 , which play a crucial role in gametogenesis. In the testis, Bend2 expresses two protein isoforms: full-length and a smaller one. Ablation of both proteins results in an arrested spermatogenesis. Because the Bend2 locus is on the X chromosome, and the Bend2 mutants are sterile, BEND2’s role in oogenesis remained elusive. In this study, we employed a novel -/y Bend2 mutation that blocks the expression of the full-length BEND2 protein but allows the expression of the smaller BEND2 isoform. Interestingly, this mutation does not confer male sterility and mildly affects spermatogenesis. Thus, it allowed us to study the role of BEND2 in oogenesis. Our findings demonstrate that full-length BEND2 is dispensable for male fertility, and its ablation leads to a reduced establishment of the ovarian reserve. These results reveal a critical role for full-length BEND2 in oogenesis and provide insights into the mechanisms underlying the establishment of the ovarian reserve. Furthermore, these findings hold relevance for the diagnostic landscape of human infertility.
+Infertility affects up to 12% of couples globally, with genetic factors contributing to nearly half of the cases. Advances in genomic technologies have led to the discovery of genes like Bend2, which play a crucial role in gametogenesis. In the testis, Bend2 expresses two protein isoforms: full-length and a smaller one. Ablation of both proteins results in an arrested spermatogenesis. Because the Bend2 locus is on the X chromosome, and the Bend2-/y mutants are sterile, BEND2’s role in oogenesis remained elusive. In this study, we employed a novel Bend2 mutation that blocks the expression of the full-length BEND2 protein but allows the expression of the smaller BEND2 isoform. Interestingly, this mutation does not confer male sterility and mildly affects spermatogenesis. Thus, it allowed us to study the role of BEND2 in oogenesis. Our findings demonstrate that full-length BEND2 is dispensable for male fertility, and its ablation leads to a reduced establishment of the ovarian reserve. These results reveal a critical role for full-length BEND2 in oogenesis and provide insights into the mechanisms underlying the establishment of the ovarian reserve. Furthermore, these findings hold relevance for the diagnostic landscape of human infertility.
 
 ## Introduction
 
@@ -46,21 +46,29 @@ In this study, we aimed to elucidate the role of Bend2 in oogenesis using a nove
 
 ## Results
 
-## BEND2 is highly expressed in spermatogenic nuclei before meiosis initiation and during early meiotic prophase I, independent of meiotic recombination
+### BEND2 is highly expressed in spermatogenic nuclei before meiosis initiation and during early meiotic prophase I, independent of meiotic recombination
 
 Taking advantage of several unannotated transcripts detected in 14 dpp wild-type mouse testis from our previous RNA sequencing analysis (Marcet-Ortega and Roig, 2016), we found a novel splice variant of the then annotated Gm15262 gene, which is an X-linked gene containing two BEN domains (Figure 1A). This variant is specifically expressed in mouse testes and fetal ovaries containing germ cells undergoing meiotic prophase I and shows a nuclear localization at the heterochromatin of spermatocytes when the GFP-tagged splice variant is electroporated to the testes of young mice (Figure 1—figure supplement 1A–B). Thus, we hypothesize that this gene could be essential for spermatocyte and oocyte development. Based on sequence homology, we named this Gm15262 gene as the mouse homolog of the human Bend2, and thus, we renamed it Bend2, as also proposed by others recently (Ma et al., 2022).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/96052/elife-96052-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of mouse Gm15262/Bend2 and its novel splice variant 255 p1. The exons are shown as purple boxes. The predicted domains are labeled below the exons. SAP130_C: C-terminal domain of histone deacetylase complex subunit SAP130; BEN: BEN domain. A pair of gRNAs (orange arrows) target exon 11 of Bend2 within the first BEN domain to generate the Bend2D11 mutation by CRISPR/Cas9. The in-house BEND2 antibody is generated using full-length 255P1 sequence as immunogen. (B) BEND2 localization in wild-type mouse testis. Staging of the seminiferous epithelium is based on the localization of spermatocytes (indicated by the expression and localization of YH2AX (green)) and spermatids (indicated by DAPI). The tubule stage is shown in uppercase Roman numerals. Scale bar, 20 µm. (C) Magnification of BEND2-positive cells from testis sections. Expression of BEND2 was characterized in cells along spermatogenesis from spermatogonia to late diplotene spermatocyte. Scale bar, 10 µm. (D) BEND2 localization in SPO11- and DMC1-deficient testis. In these cases, SYCP3 (green) was used to identify spermatocytes. Scale bar, 50 µm. Spg: spermatogonia; B: B-type spermatogonia; PL: pre-leptotene spermatocyte; L: leptotene spermatocyte; Z: zygotene spermatocyte; Z-like: zygotene-like spermatocyte; EP: early pachytene spermatocyte; LP: late pachytene spermatocyte; P-like: pachytene-like spermatocyte; D: diplotene spermatocyte.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96052/elife-96052-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Actin-400bp; 255P1-576bp.(B) Expression pattern of EGFP-255P1 in mouse testis. Representative images of spermatocyte squash and spread stained against SYCP3 and GFP. DNA is counterstained with DAPI (blue). Squash: patch-like signals at the heterochromatic region. Spread 1: cell exhibiting clear foci signals at telomeres along with patch-like signals. Spread 2: cell exhibiting foci signals at the chromosomal telomeres and axes. Signal accumulation at XY chromosomes (white square). Scale bar, 10 µm. (C) BEND2 localization in 16 dpc wild-type mouse ovary. 16 dpc ovary sections were treated with antigen retrieval using Tris-EDTA buffer and stained with BEND2 (red) antibody and YH2AX (green) antibody. Strong BEND2 signals were occasionally found in early meiotic prophase oocytes (upper) and oogonia (lower) before DSBs appeared. Scale bar, 20 µm.
 
 We generated a polyclonal antibody against BEND2 using the novel splice variant of Bend2 as an immunogen (see validation in Figure 2). To examine BEND2 expression during spermatogenesis, we immunostained PFA-fixed testis sections against BEND2 and the DNA damage marker γH2AX to allow the identification of spermatocytes. BEND2 was abundantly detected in the nuclei of the peripheral cells of tubules from stage V until XII-I (Figure 1B). This nuclear staining first appeared in spermatogonia before DSBs were generated. BEND2 staining was highly present in spermatocytes from pre-leptotene when meiosis initiates and persisted until early pachytene. In late pachytene and diplotene cells, little BEND2 remained in the nuclei of spermatocytes (Figure 1C). Notably, this expression pattern of BEND2 is reminiscent of the one reported before (Ma et al., 2022).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96052/elife-96052-fig2-v1.jpg)
 
-**Figure 2.:** Bend2 mice.D11/y(A) Mouse appearance and testis size. Scale bar, 5 mm. (B) Bend2 expression in testis by RT-PCR. The expected size of the wild-type (WT) allele was 576 bp. Sanger sequencing results showed that the amplified DNA in the mutated allele (372 bp, green arrowhead) was from an mRNA that resulted from skipping exon 11 of Bend2. (C) Detection of BEND2 by WB from testis protein extracts. The orange arrowhead indicates the full-length BEND2 protein band. An extra protein band ~75 kDa (black arrowhead) was also detected in both wild-type and mutant testes. (D) Detection of BEND2 by IF. Testis sections were treated with antigen retrieval using Tris-EDTA buffer before staining against BEND2 (red) and SYCP3 (green). The BEND2 staining observed in the Bend2 mutants closely resembles background staining (not shown), suggesting that the cytoplasmic signal might be nonspecific. Scale bar, 10 µm.Figure 2—source data 1.Figure 2B.Figure 2—source data 2.Figure 2B.
+**Figure 2.:** (A) Mouse appearance and testis size. Scale bar, 5 mm. (B) Bend2 expression in testis by RT-PCR. The expected size of the wild-type (WT) allele was 576 bp. Sanger sequencing results showed that the amplified DNA in the mutated allele (372 bp, green arrowhead) was from an mRNA that resulted from skipping exon 11 of Bend2. (C) Detection of BEND2 by WB from testis protein extracts. The orange arrowhead indicates the full-length BEND2 protein band. An extra protein band ~75 kDa (black arrowhead) was also detected in both wild-type and mutant testes. (D) Detection of BEND2 by IF. Testis sections were treated with antigen retrieval using Tris-EDTA buffer before staining against BEND2 (red) and SYCP3 (green). The BEND2 staining observed in the Bend2 mutants closely resembles background staining (not shown), suggesting that the cytoplasmic signal might be nonspecific. Scale bar, 10 µm.
 
 Furthermore, to reveal if the localization of BEND2 in germ cells could have originated as a response to critical events of the meiotic prophase, we examined BEND2 expression in testis sections from recombination-defective mice lacking SPO11. In SPO11-deficient testis, where no DSBs are formed at the onset of meiosis, spermatocytes cannot initiate meiotic recombination, thereby failing to synapse and entering apoptosis (Barchi et al., 2005; Baudat et al., 2000; Pacheco et al., 2015). Interestingly, we found BEND2 was extensively present in nuclei of spermatogonia, leptotene, zygotene, and zygotene-like spermatocytes, as in wild-type mice (Figure 1D). Very occasionally, a few BEND2 signals could be observed in some SPO11-deficient spermatocytes, presumably at a more advanced pachytene-like stage. This is consistent with its reduced expression after early pachytene in wild-type mice. Similarly, BEND2 expression was not altered in Dmc1 mutant spermatocytes (Figure 1D), which cannot complete meiotic recombination (Barchi et al., 2005; Pittman et al., 1998). Altogether, these results indicate that although BEND2 is highly expressed during early meiotic prophase I when meiotic recombination initiates and progresses, its expression starts as early as in spermatogonia before meiosis begins and is independent of either DSB formation or completion of recombination.
 
 We also examined BEND2 expression in 16 dpc fetal ovary sections by IF and found it localizing at nuclei of some zygotene stage oocytes (Figure 1—figure supplement 1C). However, due to scarce samples and technical obstacles, we could not characterize BEND2 expression in oocytes at earlier stages from 12 to 14 dpc ovary sections.
 
-## Full-length BEND2 deficiency causes increased apoptosis and persistent unrepaired DSBs in spermatocytes
+### Full-length BEND2 deficiency causes increased apoptosis and persistent unrepaired DSBs in spermatocytes
 
 To address the germ cell functions of BEND2 in mice, we generated BEND2-deficient mice by CRISPR/Cas9. Part of exon 11 of Bend2 was targeted to be removed to disrupt the first BEN domain (Figure 1A). Bend2Δ11/y mice developed into adults without apparent differences in general physical appearance compared to their littermates. Male Bend2D11/y mice were fertile. The size and weight of Bend2D11/y testes were comparable to that of wild-type testes (Figure 2A and Supplementary file 1). Similarly to Ma et al., 2022, using our BEND2 antibody, we detected two BEND2-related proteins in wild-type testes by WB: one was ~130 kDa, and another was ~75 kDa (Figure 2C). Although the predicted size of full-length BEND2 is 80.9 kDa, based on previous reports (Ma et al., 2022), the 130 kDa protein corresponds to the full-length BEND2, which displays a slower electrophoretic mobility due to its unusual sequence/structure. The 75 kDa protein corresponds to a smaller version of BEND2 lacking the N-terminus, p80 (Ma et al., 2022). Interestingly, we did not detect any BEND2 protein in wild-type testes of 48.3 kDa, which would be expected from the novel transcript 255p1 we identified.
 
@@ -72,11 +80,23 @@ Histological analysis of Bend2D11/y testes revealed the presence of cells at all
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/96052/elife-96052-fig3-v1.jpg)
 
-**Figure 3.:** (A) Representative PAS-H stained mouse testis sections. The square in the left image shows the zoomed images on the right. Scale bar on the right images, 20 µm. (B) Apoptosis detection on testis sections by TUNEL assay. Scale bar, 20 µm. (C) Quantification of TUNEL-positive cells. The horizontal lines represent the mean ± SD. N=1,125 for Bend2; N=1195 for +/yBend2, ****p<0.0001 t-test. (D11/yD) Classification of TUNEL-positive cells. The columns and error lines indicate the mean ± SD. N=4, p>0.05 One-Way ANOVA.
+**Figure 3.:** (A) Representative PAS-H stained mouse testis sections. The square in the left image shows the zoomed images on the right. Scale bar on the right images, 20 µm. (B) Apoptosis detection on testis sections by TUNEL assay. Scale bar, 20 µm. (C) Quantification of TUNEL-positive cells. The horizontal lines represent the mean ± SD. N=1,125 for Bend2+/y; N=1195 for Bend2D11/y, ****p<0.0001 t-test. (D) Classification of TUNEL-positive cells. The columns and error lines indicate the mean ± SD. N=4, p>0.05 One-Way ANOVA.
 
 To further explore the causes of the increased apoptosis in BEND2–deficient testes, we assessed chromosome synapsis and meiotic recombination progress in spermatocytes by IF. In wild-type spermatocytes, SYCP3 began to form each developing chromosome axis at leptotene. At zygotene, synapsis is initiated as SYCP1 appears at the synapsed region of the homologs. At pachytene, synapsis was completed as SYCP3 and SYCP1 completely colocalized. At diplotene, SCs disassembled, and SYCP1 was lost from separated SYCP3-labelled axes, but homologous chromosomes remained held together by chiasmata.
 
 Synapsis progressed similarly to wild-type spermatocytes in Bend2D11/y spermatocytes (Figure 4A). However, the fraction of diplotene spermatocytes was significantly increased (p=0.019, One-Way ANOVA). Additionally, the fraction of pachytene spermatocytes (48.6 ± 6.8%, mean ± SD, N=4) seemed to decrease in Bend2D11/y mice, compared to wild-type mice (57.3 ± 4.5%, mean ± SD, N=4, p=0.078 One-Way ANOVA). This accumulation of Bend2D11/y spermatocytes at the diplotene stage could be explained if there was a later block of the meiotic progression or if Bend2D11/y spermatocytes might exit pachytene faster than wild-type spermatocytes. Taken together, these results demonstrated that in the absence of the full-length BEND2, spermatocytes could complete synapsis and progress through meiotic prophase but following a slightly altered timeline.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/96052/elife-96052-fig4-v1.jpg)
+
+**Figure 4.:** (A) Chromosomal synapsis in spermatocytes. Representative images of SYCP3 and SYCP1 staining in spermatocyte nuclei from the stages shown (left). Meiotic prophase staging of spermatocytes (right). L: leptotene, Z: zygotene, P: pachytene, D: diplotene. The columns and lines indicate the mean and SD. N=4, *p=0.019 One-Way ANOVA. (B) Examination of DSBs in Bend2D11/y spermatocytes. Representative images of YH2AX staining in spermatocyte nuclei along meiotic prophase (left). Increased YH2AX signals are detected during late prophase in Bend2D11/y spermatocyte (white arrowhead). Quantification of YH2AX patches in spermatocyte nuclei per sub-stages (right). The patches were counted manually using the same method for every pair of control and mutant mice. From left to right, N=76/74, 86/83, 73/75, and 78/81, ***p=0.0001 (late pachytene) and 0.0007 (early diplotene), *p=0.0222 t-test. Analysis of replication protein A (RPA) (C) and RAD51 (D) foci counts in control and Bend2D11/y spermatocytes. RPA and RAD51 foci were counted using ImageJ with the same method for every Bend2+/y and Bend2D11/y mice pair. From left to right, N=44/43, 51/43, 59/46, 45/39, 81/77, and 48/43, **p=0.0015 for RPA quantification; N=52/43, 42/46, 44/46, 51/45, 77/73, and 45/49, *p=0.0428 and ***p=0.0002 for RAD51 quantification; t-test. (C) Examination of CO formation in Bend2D11/y spermatocytes. Representative images of MLH1 in control and mutant spermatocyte nuclei (left). Quantification of MLH1 foci in spermatocyte nuclei (right). Only spermatocytes containing ≥19 MLH1 foci/nucleus were counted. N=74 for Bend2+/y and 68 for Bend2D11/y, p>0.05 Mann-Whitney test. The horizontal lines represent mean ± SD (B–E). Scale bar, 10 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96052/elife-96052-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative images of Ku70 expression pattern in wild-type and Bend2D11/y testis. Scale bar, 40 μm. Yellow arrows indicate the Ku70-positive sex body, and red arrows are two examples of Ku70 foci. (B) Quantification of Ku70 foci in pachytene and diplotene spermatocytes. Foci colocalizing on SYCP3 were counted manually from at least 40 cells per animal. The columns and lines indicate the mean and SD (N=2). (C) Western blot analysis of Ku70 and LINE-1 proteins. (D) Quantification of relative Ku70 protein levels by WB. The columns and lines indicate the mean and SD (N=3).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/96052/elife-96052-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Representative images of LINE-1 expression pattern in wild-type and Bend2D11/y testis. Scale bar, 40 μm. Quantification of LINE-1 positive tubules (B) and relative protein levels in Bend2D11/y animals from Figure S2 (C). The columns and lines indicate the mean and SD (N=3). *p=0.046 (B) and *p=0.02 (C) t-test.
 
 During early meiosis, recombination initiates with SPO11-mediated DSB formation, leading to the phosphorylation of the histone H2AX by ATM and thus triggering a series of DSB repair responses in the meiotic prophase (Huang and Roig, 2023). In wild-type mice, ϒH2AX progressively disappeared from the autosomes while DSBs were repaired as prophase progressed. By pachytene, most ϒH2AX was associated with the sex body. Few ϒH2AX patches could be observed on the autosomes from late pachytene, presumably corresponding to unrepaired DSBs (Figure 4B).
 
@@ -92,21 +112,33 @@ Homologous recombination is the principal DSB repair pathway in meiosis respondi
 
 To gain insight into these hypotheses, we studied if the NHEJ pathway activity is reduced during meiosis in Bend2D11/y mice by examining the localization and expression of its constitutive protein, Ku70, on testes sections. As anticipated, Ku70 was observed as a patch-like signal on sex bodies in pachytene and diplotene spermatocytes. A punctuated signal, marking presumably DSB sites in the nucleus, was seen in cells of all spermatogenesis stages besides round and elongated spermatids (Figure 4—figure supplement 1A). The number of Ku70 foci colocalizing with SYCP3 in spermatocytes in pachytene and diplotene stages was similar between control and mutant samples (Figure 4—figure supplement 1B). No differences were observed in the proportion of tubules expressing Ku70 either. These results were further confirmed with Western blot analysis (Figure 4—figure supplement 1C–D), thus suggesting that Bend2 depletion does not affect NHEJ activation.
 
-## BEND2 deficiency leads to LINE-1 retrotransposon suppression
+### BEND2 deficiency leads to LINE-1 retrotransposon suppression
 
 The formation of SPO11-independent DSBs during meiotic prophase has been linked to the LINE-1 retrotransposon activation (Carofiglio et al., 2013; Malki et al., 2014; Soper et al., 2008). To evaluate if the LINE-1 activity was increased in Bend2 mutant mice, we examined LINE1 expression in mouse testes by IF and WB.
 
 As expected, the most prominent LINE-1 staining localized to the cytoplasm of leptotene, zygotene, and pachytene spermatocytes (Figure 4—figure supplement 2A). The signal intensity varied greatly between seminiferous tubules of the same sample in both wild-type and mutant animals. In Bend2D11/y mice, spermatocytes showed similar signal intensity compared to control mice. Contrary to the expected, a statistically significant lower number of LINE-1 positive tubules was observed in mutant mice. An average of 2.8% and 0.5% positive tubules was observed in control and Bend2D11/y mice, respectively (p=0.02, t-test) (Figure 4—figure supplement 2B). Western blot analysis validated the lower LINE-1 protein expression in Bend2D11/y testes sections (Figure 4—figure supplement 1B). Indeed, a significant decrease in LINE-1 protein levels was found in Bend2D11/y mice (p=0.0469, t-test, Figure 4—figure supplement 2C), thus confirming the IF results. Defects in the demethylation efficiency of LINE-1 in Bend2 mutant mice during the prophase may explain these results. On the other hand, the signal intensity was equal in wild-type and mutant mice, suggesting that some tubules successfully complete LINE-1 demethylation, thus resulting in normal LINE-1 expression.
 
-## BEND2 deficiency results in a reduced ovarian reserve
+### BEND2 deficiency results in a reduced ovarian reserve
 
 A more robust phenotype was observed in females when BEND2 was disrupted compared to males. Female Bend2D11/D11 mice were fertile. However, the litter size was significantly smaller than that in wild-type females (Figure 5A), and noticeably smaller ovaries were present in mutant females (Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/96052/elife-96052-fig5-v1.jpg)
+
+**Figure 5.:** (A) Fertility evaluation of Bend2D11/D11 females. Two-month-old Bend2D11/D11 females were crossed with wild-type males for 5 months; litter size data of four animals per genotype were collected for analysis. *p=0.0069, t-test. (B) DDX4-stained and Periodic Acid Schiff-Hematoxylin (PAS-H) stained histological ovary sections from females at different ages. Scale bars, 50 µm for Immunofluorescent images and 0.5 mm for the PAS-H stained ones. (C) Quantification of the number of oocytes found in the analyzed ovaries of newborn, one, three, 15–20, and 40 weeks old mice. The columns and lines indicate the mean and SD. **p=0.0075, 0.0012, and 0.0040; t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96052/elife-96052-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Classification of analyzed follicles from ovaries at the age of 1 week (A), 3 weeks (B), 15–20 weeks (C), and 40 weeks (D). The number of ovaries analyzed per genotype and age is four, except for 15–20 weeks, where eight ovaries were analyzed per genotype. The columns and lines indicate the mean and SD. ***p=0.0007 (A); **p=0.0024, ****p<0.0001 (C); t-test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/96052/elife-96052-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Representative images of LINE-1 expression pattern in wild-type and Bend2D11/D11 ovaries. Scale bar, 40 μm. (B) Quantification of LINE-1 positive oocytes per section. The columns and lines indicate the mean and SD (N=5), p=0.1851 t-test.
 
 To investigate if the loss of BEND2 affected oogenesis, a more detailed histological analysis of whole ovaries was performed in young (1-week-old), adolescent (3-weeks-old), adult (15–20-weeks-old), and aged (40-weeks-old) Bend2D11/D11 and Bend2+/+ mice. At 1 week, Bend2D11/D11 females exhibited a significantly reduced number of oocytes (p=0.0012, t-test; Figure 5C), mainly due to a reduced number of primordial follicles (p=0.0007, t-test; Figure 5—figure supplement 1A). Growing follicles were found at all stages, with no statistically significant differences between Bend2D11/D11 and control mice (Figure 5—figure supplement 1A). This tendency continued in prepubertal 3-week-old animals. At this stage, Bend2 mutant ovaries seemed to contain fewer oocytes (p=0.0834, t-test; Figure 5C) and primordial follicles (p=0.0704, t-test; Figure 5—figure supplement 1B). At an adult stage of 15–20 weeks, the mutant ovaries presented significantly fewer oocytes (p=0.0040, t-test; Figure 5C), again due to a reduction in the number of primordial follicles (p=0.0024, t-test; Figure 5—figure supplement 1C). Interestingly, at this stage, we also noticed a significant reduction in the number of antral follicles in mutant mice (p<0.0001, t-test; Figure 5—figure supplement 1C), which could partly explain the reduced fertility of these females. Finally, at 40 weeks, there tended to be fewer oocytes and primordial follicles in Bend2D11/D11 ovaries than in Bend2+/+ ovaries (p=0.1171 and p=0.1383, t-test; Figure 5—figure supplement 1D). These results suggest a reduction in the oocyte pool established at birth and the possible occurrence of premature ovarian insufficiency in Bend2 mutant females.
 
 To certify that BEND2 was required to establish the ovarian reserve, we counted the oocyte population present in newborn Bend2+/+ and Bend2D11/D11 mutant mice by staining ovarian sections with the germ-cell marker DDX4 (Figure 5B). Bend2 mutant ovaries contained almost 40% fewer oocytes than control ovaries (p=0.0037, t-test; Figure 5C), evidencing that the absence of the full-length BEND2 resulted in a reduced ovarian reserve.
 
-## Mutant Bend2 oocytes show persistent unrepaired DSBs and impaired crossover formation
+### Mutant Bend2 oocytes show persistent unrepaired DSBs and impaired crossover formation
 
 To address the cause of this reduced ovarian reserve, we first analyze the expression of LINE-1, which has been associated with increased perinatal oocyte death in mice (Malki et al., 2019). However, we found a similar percentage of oocytes expressing LINE-1 in Bend2+/+ and Bend2D11/D11 ovarian sections (20.2±0.6; 16.8±2.3, mean ± SEM; p=0.1851, t-test; Figure 5—figure supplement 2). These data suggest that the reduction in the number of oocytes present in Bend2 mutant mice might not be related to an increased expression of LINE-1.
 
@@ -114,7 +146,7 @@ Next, we examined if errors during the meiotic prophase could be responsible for
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/96052/elife-96052-fig6-v1.jpg)
 
-**Figure 6.:** Bend2 females.D11/D11(A) Chromosomal synapsis in oocytes. Representative images of SYCP3 and SYCP1 staining in 18 dpc and 1 dpp oocyte nuclei are shown (left). Meiotic prophase staging of 18 dpc and 1 dpp oocytes (right). L: leptotene, Z: zygotene, P: pachytene, D: diplotene. The columns and lines indicate the mean and SD. The number of animals analyzed per genotype, 2 for 18 dpc and 3 for 1 dpp. p>0.5 for all the comparisons One-Way ANOVA. (B) Examination of DSBs in Bend2 oocytes. Representative images of ϒH2AX staining in 18 dpc and 1 dpp oocyte nuclei at the pachytene and diplotene stage (left). Quantification of ϒH2AX patches in oocyte nuclei at sub-stages (right). The mean intensity of ϒH2AX staining in 18 dpc oocyte nuclei was measured by Image J. The patches of ϒH2AX in 1 dpp oocyte nuclei were counted manually. The horizontal lines represent the mean ± SD. From left to right, the number of analyzed nuclei per genotype: 40/30, 64/48, 81/27, and 57/28. *p=0.0288, ****p<0.0001 t-test. (D11/D11C) Analysis of replication protein A (RPA) (C) and RAD5 (D) foci in control and Bend2 oocytes. Representative images of RPA staining in 18 dpc and 1 dpp oocyte nuclei from zygotene to diplotene stage (left). Quantification of RPA foci present in oocyte nuclei at sub-stages (right). Zygotene and early pachytene nuclei analyzed were from 18 dpc ovaries, and late pachytene and diplotene nuclei analyzed were from 1 dpp ovaries. Foci were counted manually. The horizontal lines represent the mean ± SD. From left to right, number of analyzed nuclei: 12/13, 27/17, 41/42, and 65/49 for RPA, and 8/11, 27/23, 38/46, and 62/55 for RAD51. p>0.5 for all the comparisons t-test. (D11/D11E) Examination of CO formation in control and Bend2 oocytes. Representative images of MLH1 in 1 dpp oocyte nuclei (left). Quantification of MLH1 foci in 1 dpp oocyte nuclei (right). Only oocytes containing ≥20 MLH1 foci/nucleus were counted. The horizontal lines represent the mean ± SD. N=120 for D11/D11Bend2, 95 for +/+Bend2; **p=0.0057 Mann-Whitney test. Scale bar, 10 µm.D11/D11
+**Figure 6.:** (A) Chromosomal synapsis in oocytes. Representative images of SYCP3 and SYCP1 staining in 18 dpc and 1 dpp oocyte nuclei are shown (left). Meiotic prophase staging of 18 dpc and 1 dpp oocytes (right). L: leptotene, Z: zygotene, P: pachytene, D: diplotene. The columns and lines indicate the mean and SD. The number of animals analyzed per genotype, 2 for 18 dpc and 3 for 1 dpp. p>0.5 for all the comparisons One-Way ANOVA. (B) Examination of DSBs in Bend2D11/D11 oocytes. Representative images of ϒH2AX staining in 18 dpc and 1 dpp oocyte nuclei at the pachytene and diplotene stage (left). Quantification of ϒH2AX patches in oocyte nuclei at sub-stages (right). The mean intensity of ϒH2AX staining in 18 dpc oocyte nuclei was measured by Image J. The patches of ϒH2AX in 1 dpp oocyte nuclei were counted manually. The horizontal lines represent the mean ± SD. From left to right, the number of analyzed nuclei per genotype: 40/30, 64/48, 81/27, and 57/28. *p=0.0288, ****p<0.0001 t-test. (C) Analysis of replication protein A (RPA) (C) and RAD5 (D) foci in control and Bend2D11/D11 oocytes. Representative images of RPA staining in 18 dpc and 1 dpp oocyte nuclei from zygotene to diplotene stage (left). Quantification of RPA foci present in oocyte nuclei at sub-stages (right). Zygotene and early pachytene nuclei analyzed were from 18 dpc ovaries, and late pachytene and diplotene nuclei analyzed were from 1 dpp ovaries. Foci were counted manually. The horizontal lines represent the mean ± SD. From left to right, number of analyzed nuclei: 12/13, 27/17, 41/42, and 65/49 for RPA, and 8/11, 27/23, 38/46, and 62/55 for RAD51. p>0.5 for all the comparisons t-test. (E) Examination of CO formation in control and Bend2D11/D11 oocytes. Representative images of MLH1 in 1 dpp oocyte nuclei (left). Quantification of MLH1 foci in 1 dpp oocyte nuclei (right). Only oocytes containing ≥20 MLH1 foci/nucleus were counted. The horizontal lines represent the mean ± SD. N=120 for Bend2+/+, 95 for Bend2D11/D11; **p=0.0057 Mann-Whitney test. Scale bar, 10 µm.
 
 Consistent with the observation in Bend2 mutant males, we also found increased levels of ϒH2AX in late prophase Bend2D11/D11 oocytes (Figure 6B). In wild-type females, ϒH2AX patches could be detected along axes in most pachytene oocytes and many diplotene oocytes (Figure 6B). This is different from wild-type males, in which ϒH2AX can only be detected as very few patches in late pachytene cells and is almost undetectable in most diplotene cells (Figure 4B), presumably because synapsis progresses faster than recombination in females than in males (Roig et al., 2004).
 
@@ -125,6 +157,47 @@ In females, no differences in the number of RPA and RAD51 foci were found betwee
 Interestingly, the number of MLH1 foci in late prophase oocytes was significantly lower in Bend2D11/D11 females than in control females (p=0.006 for Bend2D11/D11, t-test, Figure 6E). Thus, we concluded that the depletion of BEND2 caused a reduced crossover formation in oocytes, probably partly causing the reduced litter size in Bend2 mutant females.
 
 Finally, to check if these alterations affected Bend2D11/D11 oocyte quality, we performed ovarian stimulation on 7-month-old Bend2+/D11 and Bend2D11/D11 mice. On average, we obtained a similar number of oocytes from the ovarian stimulation in control and mutant mice (10.7±4.1 vs 10.0±1.2; mean ± SEM; p=0.8852, t-test; Table 1). Remarkably, the ability of Bend2D11/D11 mutant oocytes to be fertilized and develop into the blastocyst stage did not seem to be compromised (Table 1), suggesting that the absence of the full-length BEND2 did not compromise oocyte quality, at least to be fertilized and develop up to the blastocyst stage.
+
+**Table 1.**
+ Bend2D11/D11 oocytes fertilize and develop into blastocyst stage similar to control oocytes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Genotype</th>
+      <th># mouse</th>
+      <th>Age (months)</th>
+      <th># oocyte</th>
+      <th># 2 cell embryo</th>
+      <th>Fertilization (%)</th>
+      <th>Blastocyst (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control</td>
+      <td>Bend2+/D11</td>
+      <td>3</td>
+      <td>7</td>
+      <td>10.7±7.2</td>
+      <td>7.7±3.8</td>
+      <td>78.0±19.5</td>
+      <td>23.3±25.2</td>
+    </tr>
+    <tr>
+      <td>Mutant</td>
+      <td>Bend2D11/D11</td>
+      <td>3</td>
+      <td>7</td>
+      <td>10.0±2.0</td>
+      <td>8.3±3.2</td>
+      <td>82.7±20.5</td>
+      <td>46.8±12.2</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -154,7 +227,325 @@ Thus, BEND2, apart from its roles in male meiosis (Ma et al., 2022), is also req
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Bend2</td>
+      <td>Ensembl</td>
+      <td>ENSMUSG00000108981</td>
+      <td>Gm15262</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Bend2D11/D11 or Bend2D11/y</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Available from the authors upon requestDr. Ignasi RoigIgnasi.Roig@uab.cat</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA 1-antisense</td>
+      <td>This paper(Sigma)</td>
+      <td>gRNA</td>
+      <td>AGTAGCAGGCTGCATAAGT GGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA 2-sense</td>
+      <td>This paper(Sigma)</td>
+      <td>gRNA</td>
+      <td>AGACCAGCCTTATTGACCA TGG</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>5-alpha competent E. coli cells</td>
+      <td>New England Biolabs.</td>
+      <td>C2987H</td>
+      <td>competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli BL21(DE3)</td>
+      <td>NCBI</td>
+      <td>469008</td>
+      <td>competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK 293T</td>
+      <td>Cellosaurus</td>
+      <td>CVCL_0063</td>
+      <td>Cell line maintained in SCAC, Institut de Biotecnologia i de Biomedicina</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BEND2 Rb</td>
+      <td>This paper</td>
+      <td></td>
+      <td>IF(1:100), WB (3.2 μg/ml)Available from the authors upon requestDr. Ignasi RoigIgnasi.Roig@uab.cat</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ku70 Rb</td>
+      <td>Abcam</td>
+      <td>ab92450</td>
+      <td>IF (1:100)WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH Rb</td>
+      <td>Abcam</td>
+      <td>ab37168</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- SYCP3 Ms or Rb</td>
+      <td>Abcam</td>
+      <td>ab97672 or ab15093</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- SYCP1 Rb</td>
+      <td>Abcam</td>
+      <td>ab15090</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-Histone H2A.X Ms</td>
+      <td>Millipore</td>
+      <td>05–636</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MLH1 Ms</td>
+      <td>BD Biosciences</td>
+      <td>51-1327GR</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RPA32 (4E4) Rat</td>
+      <td>Cell Signalling</td>
+      <td>2208 S</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RAD51 (ab-1) Rb</td>
+      <td>Millipore</td>
+      <td>PC130</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP Rb</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-11122</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-LINE1 ORF1p Rb</td>
+      <td>Abcam</td>
+      <td>ab216324</td>
+      <td>IF (1:100)WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit HPR</td>
+      <td>Bio-Rad</td>
+      <td>170–6515</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-C1</td>
+      <td>Clontech</td>
+      <td>Catalog:6084–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-N1</td>
+      <td>Clontech</td>
+      <td>Catalog:6085–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td></td>
+      <td>This paper</td>
+      <td></td>
+      <td>Available from the authors upon requestDr. Ignasi RoigIgnasi.Roig@uab.cat</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-N1-BEND2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Available from the authors upon requestDr. Ignasi RoigIgnasi.Roig@uab.cat</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a (+)-TEV</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Dr. Neus Ferrer MirallesInstitut de Biotecnologia i de Biomedicina,</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>BEND2 genotyping;TTGCCAGTGGGGTATTACGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>BEND2 genotyping;CAGGGCATTTGCACCCCATGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>BEND2 female genotyping;TTTGCTCCACTGTTTCACGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>BEND2 female genotyping;TCCCTTTAAACTGCCAACAACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>255P1 forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>255P1 Gene specific primers for RT-PCR;TAGGGACCAAGAACCTGCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>255P1 Gene specific primers for RT-PCR; TCCTGAAGCCACTGAGAAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>β-actin for RT-PCR;AGGTCTTTACGGATGTCAACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>β-actin primers for RT-PCR; ATCTACGAGGGCTATGCTCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>BEND2 cloning primer; agaaATGCCAGGAAAAACTGAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>BEND2 cloning primer; TTAAGCTATTGCATTCCTTGGG for pEGFP-C1 vector;gAGCTATTGCATTCCTTGGGC for pEGFP-N1 vectors</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His-tagged BEND2 protein</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Available from the authors upon requestDr. Ignasi RoigIgnasi.Roig@uab.cat</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>jetPEI DNA transfection reagent</td>
+      <td>Polyplus Transfection</td>
+      <td>101–40 N</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HisTrap HP column</td>
+      <td>Cytiva</td>
+      <td>29051021 or 17524801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TUNEL reaction mixture</td>
+      <td>Roche Diagnostics</td>
+      <td>11684795910</td>
+      <td>Figure 3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>Image J</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>D1306</td>
+      <td>0.1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vectashield antifade mounting medium</td>
+      <td>Vector Laboratories</td>
+      <td>H1000</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Bend2 mutant mice were generated by using the CRISPR/Cas9 system. A pair of gRNAs with minimum off-target and maximum on-target activity were designed and selected to specifically target sequences that encode essential protein domains of the Bend2 gene using CRISPR DESIGN TOOLS (Millipore Sigma) (gRNA1-antisense: AGTAGCAGGCTGCATAAGT GGG; gRNA2-sense: AGACCAGCCTTATTGACCA TGG). SgRNAs were synthesized by Sigma and microinjected with Cas9 protein into the pronucleus of C57BL/6JOlaHsd zygotes. Edited founders were identified by PCR with primers flanking the targeted region and HincII digest. PCR products were further purified and determined by Sanger sequencing. Five out of 17 F0 mice were identified to carry desired mutations, including two homozygous males and three heterozygous females. Each of them was crossed with wild-type C57BL/6JOlaHsd to eliminate possible off-target mutations to generate pure heterozygotes. Female heterozygotes (Bend2+/D11) were crossed with wild-type males (Bend2+/y) to obtain wild-type females (Bend2+/+), heterozygous females (Bend2+/D11), wild-type male (Bend2+/y), and mutant males (Bend2D11/y) offsprings. Female heterozygotes (Bend2+/D11) were crossed with mutant males (Bend2D11/y) to obtain mutant females (Bend2D11/D11), heterozygous females (Bend2+/D11), wild-type males (Bend2+/y) and mutant males (Bend2+/y). Mice from at least F2 generation were analyzed for their phenotyping. All experiments used at least three animals from each genotype (unless mentioned in the text). Mutant males were compared with their wild-type littermates. Testes from 2 to 6-months-old mice were collected and processed for adult mice. Female mutants were compared to wild-type mice from other litters of the same age and from animals of closely related parents.
 
@@ -162,37 +553,37 @@ For genotyping, genomic DNA was extracted from mouse tails by overnight incubati
 
 The experiments performed in this study complied with EU regulations and were approved by the Ethics Committee of the UAB and the Catalan Government (5322-CEEA-UAB).
 
-## Ovarian stimulation and in vitro fertilization
+### Ovarian stimulation and in vitro fertilization
 
 Intra-peritoneal injection of 15 IU pregnant mare’s serum gonadotrophin per female was administered to three Bend2+/D11 and three Bend2D11/D11 7-month-old mice. After 49.5 hr, 10 IU human chorionic gonadotrophin (hCG) per female was injected and 13.5 hr later mice were sacrificed. Oviducts of treated females were dissected under stereo-microscope and cumulus masses were released into a drop of fertilization medium (0.25 mM GSH in HTF medium). Oocytes released from each female mice were counted. Time of ovulation was counted as 0.5 dpc.
 
 For in vitro fertilization, fresh sperm from a proven fertile, C57BL/6 N wild-type male of 4 months of age were used and poured into a dish containing oocytes in fertilization medium. After 3 hr of fertilization, oocytes were washed and O/N cultured in HTF medium. Assessment of fertilized, unfertilized oocytes was done under stereo-microscope. From 2 cell-stage until blastocysts, embryos were cultured in KSOM medium.
 
-## Total RNA purification and RT-PCR
+### Total RNA purification and RT-PCR
 
 Total RNA was purified from mouse tissues using the RNeasy Plus Mini Kit (Qiagen) and then transcribed into cDNA using the iScript cDNA Synthesis Kit (Bio-Rad), following the manufacturer’s instructions. cDNA was amplified using NZYTaq II 2 x Green Master Mix with gene-specific primers (255P1 forward: TAGGGACCAAGAACCTGCTG, and reverse: TCCTGAAGCCACTGAGAAGG) and β-actin primers (forward: AGGTCTTTACGGATGTCAACG, and reverse: ATCTACGAGGGCTATGCTCTC) as control. A minus Reverse Transcription control (RT-) containing all the reaction components except the reverse transcriptase was included for testing for contaminating DNA.
 
-## Gene cloning and transfection
+### Gene cloning and transfection
 
 cDNA from wild-type mouse testis was subject to PCR using Phusion High-Fidelity DNA Polymerase (Thermo Fisher Scientific) with a pair of specific primers (forward: agaaATGCCAGGAAAAACTGAAG, and reverse: TTAAGCTATTGCATTCCTTGGG for pEGFP-C1 vector and gAGCTATTGCATTCCTTGGGC for pEGFP-N1 vectors) targeting at both ends of the coding sequence to amplify the full-length of 255p1 (Bend2 novel splice variant). DNA purified from PCR reaction mix was phosphorylated and inserted into dephosphorylated pEGFP-C1 and pEGFP-N1 vectors. Plasmids were transformed to 5-alpha competent E. coli cells (NEB) and identified by colony PCR followed by Sanger sequencing.
 
 pEGFP-C1-BEND2 or pEGFP-N1-BEND2 were transfected into the human embryonic kidney cell line (HEK 293T, obtained from the Cell Culture, Antibody Production and Cytometry Service (SCAC) from UAB, its identity was confirmed by STR profiling and were mycoplasma negative) by using jetPEI DNA transfection reagent (Polyplus Transfection) and into 16–18 dpp wild-type live mouse testis by electroporation (Shibuya et al., 2014). Mice were sacrificed 24–72 hr post-electroporation and used for experiments.
 
-## Antibody generation
+### Antibody generation
 
 To generate in-house BEND2 polyclonal antibody, the full-length of 255p1 (Bend2 novel splice variant) was amplified from pEGFP-C1-BEND2 and cloned into modified bacterial expression vector pET-28a (+)-TEV. The recombinant His-tagged BEND2 protein was expressed in E. coli BL21(DE3) competent cells by IPTG induction and then purified by affinity chromatography using HisTrap HP column (Cytiva). Purified His-tagged BEND2 protein was treated with TEV protease, followed by another affinity purification, to remove the His-tag. His-tag removed BEND2 protein was used to immunize rabbits. After immunization, the immune response was checked by ELISA. Antibodies were purified from rabbit serum by affinity chromatography using Affi-Prep protein A resin cartridge (Bio-Rad).
 
-## Western blot
+### Western blot
 
 Total protein was extracted from mouse testis using RIPA lysis buffer (50 mM Tris pH 8, 1% Triton X-100, 0.1% SD, 150 mM NaCl, 1 mM EDTA, 0.5% Sodium Deoxycholate, 10 mM NaF, 1x Protease Inhibitor). Testis tissue was disrupted and homogenized thoroughly with a pestle in RIPA lysis buffer, followed by 10 min incubation at 95℃. Each lysate sample’s protein concentration was determined using Pierce BCA Protein Assay Kit (Thermo Scientific). 50 μg of total protein was loaded per well, and samples were separated by TGX-PAGE gel electrophoresis in Tris-Glycine-SDS buffer. Proteins were transferred to PVDF membranes (Bio-Rad) by wet electroblotting in Tris/glycine buffer. Membranes were blocked in 5% non-fat milk in PBS for 2 h at room temperature, followed by incubation of primary antibody diluted in blocking buffer overnight at 4 °C. The next day, after three washes of PBST (PBS containing 0.05% Tween-20), membranes were incubated in anti-rabbit HPR conjugate antibody (1:5000, 170–6515, Bio-Rad) in PBS for 1 hr at room temperature. ECL substrate (Bio-Rad) was used for chemiluminescent detection. Imaging was performed on ChemiDoc Touch Imaging system (Bio-Rad), and images were analyzed by Imagelab software (Bio-Rad). Primary antibodies used in WB: anti-BEND2 Rb (in-house, 3.2 μg/ml), anti-Ku70 Rb (abcam, 1:2000), anti-LINE1 ORF1p Rb (abcam, 1:2000), and anti-GAPDH Rb (abcam, 1:2000).
 
-## Nuclei spreading and immunofluorescence
+### Nuclei spreading and immunofluorescence
 
 Spermatocyte nuclei spreading was prepared using frozen testes. Protocol was adapted from Liebe et al., 2004: briefly, a small portion of testis was cut and minced thoroughly by a sterile blade in cold PBS (pH 7.4) containing 1x protease inhibitor, PI (Roche Diagnostics) on a petri dish; cell mixture was transferred to a sterile Eppendorf and sat for 15 min to sediment; 25 µl of supernatant cell suspension was spread onto a glass slide and incubated with 80 µl of 1% Lipsol containing 1x PI, for 15–20 min, followed by fixation in 150 µl of the PFA fixative solution (1% Paraformaldehyde pH 9.2–9.4, 15% Triton X-100, 1 x PI) for 2 hr at room temperature in a closed humid chamber. Oocyte nuclei spreading was prepared from fresh fetal and perinatal ovaries. Briefly, one pair of ovaries were dissected from each female under a stereomicroscope (Nikon SMZ-1); ovaries were first incubated in 500 µl of M2 medium (Sigma-Aldrich) containing 2.5 mg/ml collagenase (Sigma-Aldrich) for 30 min at 37℃, and then incubated in 500 µl of hypotonic buffer (30 mM Tris-HCl pH 8.2, 50 mM Sucrose, 17 mM Sodium Citrate, 5 mM EDTA, 0.5 mM DTT, 1 x PI) for 30 min at room temperature; finally, single-cell suspension was prepared by disaggregating ovaries in 100 mM sucrose by pipetting under the stereo microscope. Each 10 µl of the cell suspension was spread onto a glass slide, followed by fixation in 40 µl of the PFA fixative solution (1% PFA, 5 mM Sodium Borate, 0.15% Triton X-100, 3 mM DTT, 1 x PI, pH 9.2) for 2 hr at room temperature in a closed humid chamber. Slides were dried under a fume hood and then washed in 0.4% Photoflo (Kodak) solution four times.
 
 For immunofluorescence staining, slides of spermatocyte or oocyte nuclei spreading were blocked in freshly made blocking solution (0.2% BSA, 0.2% gelatin, 0.05% Tween-20 in PBS) at room temperature, followed by incubation of primary antibody diluted in blocking solution in a humid chamber overnight at 4℃; the next day, slides were washed four times in blocking solution, and incubated in secondary antibody diluted in blocking solution in a humid chamber for 1 hr at 37℃, followed by another four washes in blocking solutions. Drained slides were mounted with 0.1 µg/ml DAPI in Vectashield antifade mounting medium and analyzed with an epifluorescence microscope (Zeiss Axioskop). Primary antibodies used for IF: anti-SYCP3 Ms or Rb (abcam, 1:200), anti-SYCP1 Rb (abcam, 1:200), anti-phospho-Histone H2A.X Ms (Millipore, 1:400), anti-MLH1 Ms (BD Biosciences, 1:50), RPA32 (4E4) Rat (cell signaling, 1:100), anti-RAD51 (ab-1) Rb (Millipore, 1:100), and anti-GFP Rb (Thermo Fisher Scientific, 1:200).
 
-## PAS-Hematoxylin, immunohistochemical, and TUNEL staining
+### PAS-Hematoxylin, immunohistochemical, and TUNEL staining
 
 Fresh mouse tissues were fixed overnight at 4℃ with freshly made 4% PFA (0.4 g paraformaldehyde dissolved in 10 ml PBS, pH 7.4) for immunohistochemical (IHC)/TUNEL assay or with Bouin’s fixative for the use of PAS (Periodic Acid Schiff) staining. After fixation, tissues were washed in PBS, dehydrated in a series of ethanol with increasing concentration, cleared by histoclear and infiltrated by paraffin in sequence; embedded tissues were cut into thin slices (6–7 µm for testes; 4 µm for ovaries) using a microtome, which were mounted on poly-L-lysine coated slides and dry overnight at 37℃. Before any staining procedures, slides were deparaffinized in xylene and a series of ethanol with decreasing concentration in sequence and rehydrated in distilled water.
 
@@ -202,10 +593,10 @@ For TUNEL assay, tissue section samples were permeabilized in 0.5% Triton X-100 
 
 For PAS-Hematoxylin (PAS-H) staining, tissue sections were oxidized by 1% Periodic Acid solution for 10 min, followed by two washes in distilled water, stained by Schiff’s reagent for 30 min in darkness, followed by two washes in sulfurous water (10% Potassium metabisulfite, 0.1 M HCl in Milli-Q water) and two washes in distilled water; counterstained in Mayer’s Hematoxylin for 1 min and rinsed in running tap water; dehydrated in a series of ethanal with increasing concentrations and xylene in sequence; mounted with DPX mounting medium and analyzed with an optical microscope. Images were captured using a Zeiss Axioskop microscope.
 
-## Follicle count and classification
+### Follicle count and classification
 
 The whole ovaries were sectioned for follicle quantification in newborn, young, adolescent, and adult mice. Eight consecutive sections were mounted on each slide. Every third section was counted per slide to avoid counting follicles more than once. Five alternate slides per animal were counted (both ovaries). Follicles were only counted if the nucleus of the oocyte was visible. They were classified as primordial if they contained one single layer of plane squamous granulosa cells or as primary if they displayed one layer of cuboidal granulosa cells. Furthermore, follicles containing both plane and cuboidal cells were classified based on the predominant granulosa cell morphology. Follicles were classified as secondary if they showed more than one layer of cuboidal granulosa cells with no visible antrum. All follicles displaying an antral cavity of any size were classified as antral. Counting and classification were performed under a bright-field Zeiss Axioskop microscope.
 
-## Image processing, analysis, and statistical analysis
+### Image processing, analysis, and statistical analysis
 
 All the images were processed by Adobe Photoshop. Fluorescence intensity was quantified by ImageJ; fluorescence signals were counted manually or by ImageJ. Data analysis and statistical inference were performed using GraphPad Prism 8 software. The sample size was determined based on our previous experience analyzing other mutant phenotypes and the variability observed within each type of analysis (Marcet-Ortega et al., 2017Martínez-Marchal et al., 2020; Pacheco et al., 2018; Roig et al., 2010; Ruth et al., 2021). Statistical methods and p-values are presented in each graph or in the main text or figure legends. Statistical significances were determined using t-tests for normally distributed or Mann-Whitney U-tests for non-normally distributed continuous data. One-way ANOVA test was used for analysis of homogeneity of variances. For all tests, statistical significance was considered for p<0.05.

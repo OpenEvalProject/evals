@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.36221.001 The Endosomal Sorting Complexes Required for Transport III (ESCRT-III) proteins are critical for cellular membrane scission processes with topologies inverted relative to clathrin-mediated endocytosis. Some viruses appropriate ESCRT-IIIs for their release. By imaging single assembling viral-like particles of HIV-1, we observed that ESCRT-IIIs and the ATPase VPS4 arrive after most of the virion membrane is bent, linger for tens of seconds, and depart ~20 s before scission. These observations suggest that ESCRT-IIIs are recruited by a combination of membrane curvature and the late domains of the HIV-1 Gag protein. ESCRT-IIIs may pull the neck into a narrower form but must leave to allow scission. If scission does not occur within minutes of ESCRT departure, ESCRT-IIIs and VPS4 are recruited again. This mechanistic insight is likely relevant for other ESCRT-dependent scission processes including cell division, endosome tubulation, multivesicular body and nuclear envelope formation, and secretion of exosomes and ectosomes.
+The Endosomal Sorting Complexes Required for Transport III (ESCRT-III) proteins are critical for cellular membrane scission processes with topologies inverted relative to clathrin-mediated endocytosis. Some viruses appropriate ESCRT-IIIs for their release. By imaging single assembling viral-like particles of HIV-1, we observed that ESCRT-IIIs and the ATPase VPS4 arrive after most of the virion membrane is bent, linger for tens of seconds, and depart ~20 s before scission. These observations suggest that ESCRT-IIIs are recruited by a combination of membrane curvature and the late domains of the HIV-1 Gag protein. ESCRT-IIIs may pull the neck into a narrower form but must leave to allow scission. If scission does not occur within minutes of ESCRT departure, ESCRT-IIIs and VPS4 are recruited again. This mechanistic insight is likely relevant for other ESCRT-dependent scission processes including cell division, endosome tubulation, multivesicular body and nuclear envelope formation, and secretion of exosomes and ectosomes.
 
 ## Introduction
 
@@ -31,21 +31,45 @@ Here, we investigated, during the assembly of HIV Gag, the temporal recruitment 
 
 ## Results
 
-## ESCRT-IIIs appear and disappear from site of virus-like particle assembly prior to scission
+### ESCRT-IIIs appear and disappear from site of virus-like particle assembly prior to scission
 
 To determine the timing of ESCRT recruitment relative to membrane bending and scission, we quantified ESCRT recruitment during the assembly of HIV-1 virus like particles (VLPs) while assaying membrane bending and scission. Scission was assayed by monitoring the ability of protons to flow between the cytosol and the lumen of the virion. The pH in the lumen of the virion was monitored with a pH-sensitive GFP (pHlourin) (Miesenböck et al., 1998) fused to Gag (Jouvenet et al., 2008) while modulating the cytoplasmic pH by cycling the pCO2 every 10 s between 0 and 10%, thus an average of 5% pCO2 (Figure 1—figure supplement 1). CO2 rapidly diffuses across plasma membranes (Hulikova and Swietach, 2014; Simon et al., 1994) and is converted to carbonic acid by cytoplasmic carbonic anhydrase, altering the cytoplasmic pH. We have previously observed that Gag-pHlourin in a budded VLP is less sensitive to changes of pCO2 than in the cytosol, suggesting carbonic anhydrase is excluded from VLPs (Jouvenet et al., 2008).
 
 At sites of VLP assembly, the average Gag-pHluorin fluorescence increase was similar to the increase of Gag-mEGFP (Jouvenet et al., 2008), but the intensity oscillated in sync with switching the pCO2 (Figure 1A, Figure 1—figure supplement 2, Figure 1—video 1 and Figure 1—video 2). At various times after Gag accumulation reached a steady-state maximum the magnitude of oscillations decreased, indicating a loss of the ability of protons to move between the VLP and cytoplasm due to scission. CO2 may still cross the VLP membrane after scission and enter via gaps in the lattice of the immature Gag lattice (Briggs et al., 2009; Carlson et al., 2008; Woodward et al., 2015; Wright et al., 2007). However, the greatly reduced sensitivity to pH indicates carbonic anhydrase is not present, consistent with analysis of cellular proteins in HIV particles by mass spectrometry (Ott, 2008). Not surprisingly, scission was never observed before Gag had finished accumulating at individual VLPs. Unexpectedly, the ESCRT-III CHMP4B both appeared (Avg = 59 s, N = 30 out of 30) and disappeared (Avg = 22 s, N = 27 out of 30) prior to scission (Figure 1B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/36221/elife-36221-fig1-v2.jpg)
+
+**Figure 1.:** (A) Example trace of Gag-pHluorin assembling into single VLP while the pCO2 in the imaging media was repeatedly switched between 0% and 10% every 10 s. Moment of scission is indicated by red dashed line. CHMP4B-mCherry was temporarily recruited (indicated by grey zone) to the site of VLP assembly following the loss of pH modulation sensitivity. (B) Histograms of appearance and disappearance of CHMP4B prior to scission. (C-H) Example traces and histograms of appearance and disappearance, relative to scission of the VLP, for mCherry-CHMP2A (C and D), mCherry-CHMP2B (E and F) and mCherry-VPS4A (G and H).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36221/elife-36221-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Imaging media in reservoirs was preequilibrated with gas containing 0 and 10% CO2 (balanced with air). During assembly of single HIV particles in cells, the imaging media was modulated between reservoirs, enabling detection of scission of the VLP from the cell.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36221/elife-36221-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Gag-pHluorin was observed as pCO2 was cycled between 0 and 10% every 10 s. VLP scission time (red dashed line) was characterized by half drop in lock-in signal. mCherry-CHMP4B, mCherry-CHMP2A, mCherry-CHMP2B and mCherry-VPS4A recruitment (left to right panels, recruitment highlighted in grey) were simultaneously monitored during Gag assembly. (B) Additional traces of VLP scission during recruitment of mCherry-CHMP4B, mCherry-CHMP2A, mCherry-CHMP2B, and mCherry-VPS4A (left to right columns).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36221/elife-36221-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** HeLa cell lines stably expressing either mEGFP-CHMP2A or mEGFP-CHMP2B were transfected with siRNA to either CHMP2A or CHMP2B or a control siRNA. 48 hr after transfection, presence of tagged ESCRT was significantly reduced and resulted in fewer cells, presumably because of decreased cell division.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/36221/elife-36221-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** The times associated with the rising fluorescence edge of VPS4A and CHMP4B were compared relative to each other. CHMP4B appeared on average 5.1 s prior to VPS4A.
+
 CHMP4B has been proposed to form a circular/spiral structure which supports assembly of a smaller CHMP2(A/B) dome which generates fission by pulling the neck together (Fabrikant et al., 2009). Thus, it is possible that CHMP4B may be removed prior to scission leaving CHMP2A or CHMP2B present to facilitate fission. To probe the timing of CHMP2, endogenous CHMP2A and CHMP2B were lowered with siRNA (Figure 1—figure supplement 3) to facilitate observation of mCherry-CHMP2A or mCherry-CHMP2B (Figure 1C and E, Figure 1—figure supplement 2). CHMP2A and CHMP2B both appeared (Avg. = 77 s, N = 29 out of 29; and 63 s, N = 23 out of 23, respectively) and disappeared prior to scission (Avg. = 23 s, N = 26 out of 29; and 27 s, N = 23 out of 23, respectively Figure 1D,F). This observation indicates their assembly and disassembly is also not physically forcing scission.
 
 Next the dynamics of recruitment of VPS4, the energy providing ATPase, was monitored (Figure 1G and Figure 1—figure supplement 2, Figure 1—video 3 and Figure 1—video 4). Similar to the ESCRT-IIIs, VPS4A also appeared prior to scission (Avg = 42 s, N = 28 out of 28) and disappeared prior to scission (Avg = 17 s, N = 27 out of 28, Figure 1H). On average VPS4A disappeared from the assembly site closer to the time of scission than CHMP4B (5 s), CHMP2A (6 s) or CHMP2B (10 s). A simultaneous measurement of CHMP4B and VPS4A confirmed CHMP4B was recruited ~5 s prior to VPS4A (N = 41) (Figure 1—figure supplement 4), which agrees with previous results in HeLa cells (Bleck et al., 2014).
 
-## Acidification of cytosol accelerates scission
+### Acidification of cytosol accelerates scission
 
 Our results indicate that the ESCRT-IIIs and the ATPase VPS4 leave the membrane prior to scission. It is possible that the ESCRT-IIIs play an essential role in tightening the membrane neck, but then need to be cleared away to allow for the opposing membranes to come closer for the scission reaction. The specific lipid composition in the neck is not known. However, both HIV-1 Gag and the ESCRT complexes are recruited to regions rich in phosphatidylinositol-4,5-bisphosphate (PIP2), which has four negative charges at pH 7 (Kooijman et al., 2009), with the net negative charge being the critical parameter for engaging ESCRTs (Lee et al., 2015). Thus, ESCRTs at the neck may bias the composition toward more negatively charged lipids (Chiaruttini et al., 2015). The pKa values for the two phosphate groups on the inositol of PIP2 are 6.5 and 7.7 (van Paridon et al., 1986). The change in pHluorin intensity from 0 and 10% pCO2, indicates the cytosolic pH ranges from ~7.5 to ~6.5. Therefore, lowering the pH by raising the pCO2 to 10% should protonate and reduce the charge of these negatively charged lipids thus reducing the repulsive force between the membranes. To test if scission was affected by changes in cytosolic pH, we switched the pCO2 at a slower rate, every 120 s (Figure 2, Figure 2—video 1 and Figure 2—video 2). Scission was ~3X more likely when the cytoplasm was in the low pH state (10% pCO2) than the high pH state (0% pCO2) (Figure 2F) consistent with the idea that scission is more likely when the net negative charge on phospholipids in the viral neck is reduced by protonation. Other common phospholipids like phosphatidic acid (PA), phosphatidylethanolamine (PE), phosphatidylcholine (PC), phosphatidylserine (PS), and phosphatidylglycerol (PG), have pKa values outside the pH range used in these experiments so are not expected to be as sensitive to charge modulation during pH switching as PIP2. However, other lipids or components with pH-dependent charge sensitivity might also or alternatively result in these observations.
 
-## Additional rounds of ESCRT-III/VPS4 recruitment occur following failed scission
+![Figure 2.](https://cdn.elifesciences.org/articles/36221/elife-36221-fig2-v2.jpg)
+
+**Figure 2.:** (A) Example traces of Gag-pHluorin assembly while pCO2 was switched every 120 s between 0% (red dashed line, greater fluorescence emission) and 10% (black dashed line, lower fluorescence emission). In these traces the fluorescence intensity became fixed in the low pH state (10% pCO2) after reaching an assembly plateau. VPS4A appeared and disappeared during the first low pH state. (B) Examples in which fluorescence intensity became fixed in the high pH state (0% pCO2). VPS4A appeared and disappeared during the first trapped high pH state. (C) Example in which fluorescence became fixed in low pH state. VPS4A disappeared during the first trapped low pH state, but appeared during the previous high pH state. (D) Example in which fluorescence became fixed in high pH state. VPS4A disappeared during the first trapped high pH state, but appeared during the previous low pH state. (E) Example trace in which fluorescence intensity because fixed in an intermediate state. (F) Bar graph of cytoplasmic pH condition in which scission occurs (N = 45). Scission is ~3-fold more likely at low pH (10% pCO2) compared to high pH (0% pCO2) condition. A small percentage of VLPs were trapped in an intermediate state.
+
+### Additional rounds of ESCRT-III/VPS4 recruitment occur following failed scission
 
 Multiple rounds of ESCRT-III/VPS4 recruitment were previously observed following completion of Gag accumulation (Baumgärtel et al., 2011; Jouvenet et al., 2011). It is possible that the first wave of ESCRT-III/VPS4 led to productive scission and the subsequent rounds are inconsequential. Alternatively, the initial waves could be non-productive, perhaps a consequence of a failure to recruit both ESCRT-IIIs and VPS4A concurrently, necessitating additional rounds. While simultaneously imaging Gag-pHluorin, CHMP4B and VPS4A, when there were multiple waves, both CHMP4B and VPS4A were recruited (Figure 3). Multiple waves of recruitment were observed in ~20% of traces, consistent with our previous observations of repeat rounds of recruitment of CHMP1B, CHMP4B, CHMP4C and VPS4A during assembly of HIV-1 and EIAV (Jouvenet et al., 2011). Scission was only observed after the final wave of recruitment of ESCRT-III/VPS4 (Figure 3B,C). Thus, not every cycle of arrival and then dispersal of ESCRT-III/VPS4 leads to subsequent scission. If scission does not occur then a subsequent cycle of recruitment and dispersal of the ESCRT-III/VPS4 is required to complete the process. If the function of VPS4A is to recycle ESCRT-IIIs after scission then only a single wave would be expected since ESCRT-IIIs would not be removed until after the single scission event has occurred.
 
@@ -53,25 +77,63 @@ Multiple rounds of ESCRT-III/VPS4 recruitment were previously observed following
 
 **Figure 3.:** (A) Example traces of multiple waves of VPS4A and CHMP4B recruited following cessation of Gag accumulation. (B) Example trace of multiple recruitments of VPS4A prior to scission (red dashed line). (C) Example traces of multiple recruitments of CHMP4B prior to scission (red dashed line).
 
-## Membrane bending occurs throughout assembly of virus-like particle
+### Membrane bending occurs throughout assembly of virus-like particle
 
 Next, we set out to determine when membrane bending occurs relative to the assembly of Gag and recruitment of ESCRT-IIIs. We expressed a fluorescent protein (either EGFP or one of two circularly permutated superfolder variants, sf3 or sf11 (Pédelacq et al., 2006) as a fusion to Gag (at the carboxyl terminus, p6-GFP, or in the matrix protein of Gag, MA-sf3 or MA-sf11) to be able to follow membrane bending in live-cell imaging via changes in anisotropy of the GFP tag.
 
-The orientation of the chromophore was characterized with a custom built polarized total internal reflection fluorescence (TIRF) illuminator (Johnson et al., 2014). During accumulation of Gag at VLPs, the emission of the GFP was quantified while excitation alternated with polarization perpendicular (p^ polarized) followed by parallel (s^ polarized) to the glass surface. Orientation was characterized by the ratio of emission intensities (P/S) and total Gag was monitored by P+2S (Figure 4A and Figure 4—figure supplement 1, Figure 4—video 1 and Figure 4—video 2) (Anantharam et al., 2010). As Gag accumulated, the ratio of P/S dropped from ~2 to ~1.4, with little variation (±0.1) between the Gag-GFP versions (Figure 4B). The drop in P/S correlated with the increase in Gag as would be expected if the plasma membrane was bending during Gag assembly. The halfway decrease of P/S occurred prior to the halfway increase of the total Gag fluorescence (Figure 4C). Following Gag recruitment, as indicated by a plateau in Gag signal, there was no transition in P/S. This observation is inconsistent with the subsequent recruitment of the ESCRT-IIIs facilitating the transition from a flat lattice to a spherical particle.
+The orientation of the chromophore was characterized with a custom built polarized total internal reflection fluorescence (TIRF) illuminator (Johnson et al., 2014). During accumulation of Gag at VLPs, the emission of the GFP was quantified while excitation alternated with polarization perpendicular ($p^$ polarized) followed by parallel ($s^$ polarized) to the glass surface. Orientation was characterized by the ratio of emission intensities (P/S) and total Gag was monitored by P+2S (Figure 4A and Figure 4—figure supplement 1, Figure 4—video 1 and Figure 4—video 2) (Anantharam et al., 2010). As Gag accumulated, the ratio of P/S dropped from ~2 to ~1.4, with little variation (±0.1) between the Gag-GFP versions (Figure 4B). The drop in P/S correlated with the increase in Gag as would be expected if the plasma membrane was bending during Gag assembly. The halfway decrease of P/S occurred prior to the halfway increase of the total Gag fluorescence (Figure 4C). Following Gag recruitment, as indicated by a plateau in Gag signal, there was no transition in P/S. This observation is inconsistent with the subsequent recruitment of the ESCRT-IIIs facilitating the transition from a flat lattice to a spherical particle.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36221/elife-36221-fig4-v2.jpg)
+
+**Figure 4.:** (A) Example traces of wild-type Gag-GFP (black line, sf3 in Matrix of Gag) and Gag-∆p6 (grey line, missing ESCRT-I recruiting p6 domain) assembling into single VLPs. Images were collected every 30 s with excitation illumination polarized either perpendicular ($p^$) or parallel ($s^$) to the glass surface. Total Gag characterized by P+2S (top) and relative average dipole orientation by P/S (bottom). P+2S from wild-type Gag was fit to an exponential and used to predict an expected P/S (blue dashed line) assuming membrane bending throughout assembly. (B) Comparison of average P/S from all traces before VLP assembly (membrane background) and after VLP assembly (plateau region) for three different tagged versions of wild-type Gag. p6-GFP (N = 8), MA-sf3 (N = 9), and MA-sf11 (N = 7). Error bars represent s.d. (C) To compare the evolution of VLP structure to the assembly of Gag the time for each assembly trace was normalized from 0 (beginning of Gag assembly) to 1 (end of Gag assembly). A normalized time difference for each trace between Gag half assembly [½ (P+2S)max] and the dipole half drop [½ (P/S)max] was found and all normalized differences were compiled into a histogram. (D) Illustration of sphere budding from flat membrane. (E) Illustration of coordinate system with θ and ϕ representing position on the sphere and β and ψ representing orientation of excitation dipole. (F) Predicted P/S when β = 45°, background intensity is 45% of full assembly intensity, and evanescent field penetration depth is the same as the radius of the VLP.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36221/elife-36221-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Three different tagging schemes were used: labeled with mEGFP after p6 domain at carboxy terminal of Gag (A), labeled with circularly permutated GFP variant three in matrix of Gag (B), labeled with circularly permutated GFP variant 11 in matrix of Gag (Pédelacq et al., 2006) (C).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/36221/elife-36221-fig4-figsupp2-v2.jpg)
 
 Bending was also investigated during the assembly of a Gag that is missing its carboxyl terminal p6 domain which functions to recruit early acting proteins like ESCRT-I/TSG101 or ALIX. A similar drop in P/S during assembly of Gag was observed with Gag-∆p6 (Figure 4A, Figure 4—figure supplement 2) indicating that the ESCRTs recruited via p6 are also not necessary for the transition from a flat lattice to a spherical particle.
 
-## A simulation of spherical budding reproduced the time course of the P/S ratio relative to P+2S
+### A simulation of spherical budding reproduced the time course of the P/S ratio relative to P+2S
 
-In order to better understand the observed P/S ratio, we formulated an expected P/S ratio for a spherical cap growing out of a flat membrane (Figure 4D). Briefly, we assumed the growing bud consisted of excitation dipoles uniformly distributed across the surface, with the dipoles oriented an angle β relative to the surface normal. A predicted P/S with respect to β and the normalized budded surface area (area from 0 to 1) was then found by integrating over all defined dipole orientations and the extent budded surface area.
+In order to better understand the observed P/S ratio, we formulated an expected P/S ratio for a spherical cap growing out of a flat membrane (Figure 4D). Briefly, we assumed the growing bud consisted of excitation dipoles uniformly distributed across the surface, with the dipoles oriented an angle $\beta$ relative to the surface normal. A predicted P/S with respect to $\beta$ and the normalized budded surface area (area from 0 to 1) was then found by integrating over all defined dipole orientations and the extent budded surface area.
 
-More specifically, using coordinates described previously (Anantharam et al., 2010), position on the surface of the sphere was given in terms of a polar angle θ and an azimuthal angle ϕ, and the current extent budded was defined by θ (Figure 4E). Thus, when θ=0∘ there was no budding, when θ=90∘ the sphere was half budded with dipoles from θ=0∘→90∘, and when θ=180∘ the sphere was fully budded with dipoles from θ=0∘→180∘. A uniform distribution of excitation dipoles was assumed on the bud (no dependence on ϕ or θ); however, at any given position these dipoles had an angular distribution that depended on the polar angle β relative to the surface normal: ρ(β). For instance, if all dipoles were oriented at β=45∘ then ρ(β)=δ(β−45∘) where δ(x) is a delta function. The angular distribution was assumed to be uniform relative to the surface azimuthal angle ψ and the sphere was assumed to be smaller than the optical resolution of the microscope.
+More specifically, using coordinates described previously (Anantharam et al., 2010), position on the surface of the sphere was given in terms of a polar angle $\theta$ and an azimuthal angle $ϕ$, and the current extent budded was defined by $\theta$ (Figure 4E). Thus, when $\theta=0^{∘}$ there was no budding, when $\theta=90^{∘}$ the sphere was half budded with dipoles from $\theta=0^{∘}→90^{∘}$, and when $\theta=180^{∘}$ the sphere was fully budded with dipoles from $\theta=0^{∘}→180^{∘}$. A uniform distribution of excitation dipoles was assumed on the bud (no dependence on $ϕ$ or $\theta$); however, at any given position these dipoles had an angular distribution that depended on the polar angle $\beta$ relative to the surface normal: $ρ(\beta)$. For instance, if all dipoles were oriented at $\beta=45^{∘}$ then $ρ(\beta)=\delta(\beta−45^{∘})$ where $\delta(x)$ is a delta function. The angular distribution was assumed to be uniform relative to the surface azimuthal angle ψ and the sphere was assumed to be smaller than the optical resolution of the microscope.
 
-A predicted P/S (ρ(β)) relative to extent budded θ was found by determining the average component of the dipole excitation in y^ (parallel to glass surface) and in z^ (normal to glass surface). Note: Experimentally due to azimuthal scanning we excited in both x^ and y^, each 50% the time, but for simplicity in this analysis 100% excitation in y^ was assumed since x^ and y^ are symmetric. The total collected fluorescence, S and P, in y^ and z^ were predicated by:(1)S=∫0θ∫02π∫0π∫02πQ∣∣∣Ey^μy^∣2 sin(θ) sin(β) dψdβdϕdθ(2)P=∫0θ∫02π∫0π∫02πQ⊥∣Ez^μz^∣2 sin(θ) sin(β) dψdβdϕdθwhere μy^ and μz^ are the components of the excitation dipole in y^ and z^ with respect to positon on the bud surface, Ey^ and Ez^ are the excitation electric field components in y^ and z^, and Q∣∣ and Q⊥ are the light collection efficiencies of the microscope objective for dipoles parallel and perpendicular to the glass surface. The excitation field intensity in y^ and z^ were assumed to be the same, though this was an approximation since in reality p^ had a small component of s^ (Sund et al., 1999). In addition, in TIR the excitation field decayed exponentially with distance from the glass surface, Ey^ or y^=Ee−z/2d=Ee−(1−cos(θ))/2d where the characteristic decay constant was defined in terms of a fraction of the radius of the VLP. The collection efficiency for emission parallel Q∣∣ versus perpendicular Q⊥were also assumed to be the same (Q∣∣=Q⊥), which was an approximation based on the use of a high numerical aperture objective (Anantharam et al., 2010). From coordinate transforms described previously (Anantharam et al., 2010; Sund et al., 1999), the components of the dipoles in y^ and z^ are given by:(3)μy^=ρ(β)[cos(θ)sin(ϕ)sin(β)cos(ψ)+cos(ϕ)sin(ψ)sin(β)+sin(θ)sin(ϕ)cos(β)](4)μz^=ρ(β)[−sin(θ)sin(β)cos(ψ)+cos(θ)cos(β)]
+A predicted $P/S (ρ(\beta))$ relative to extent budded $\theta$ was found by determining the average component of the dipole excitation in $y^$ (parallel to glass surface) and in $z^$ (normal to glass surface). Note: Experimentally due to azimuthal scanning we excited in both $x^$ and $y^$, each 50% the time, but for simplicity in this analysis 100% excitation in $y^$ was assumed since $x^$ and $y^$ are symmetric. The total collected fluorescence, S and P, in $y^$ and $z^$ were predicated by:
 
-P/SVLP(θ,ρ(β)) was solved computationally (Mathematica, Wolfram) with θ parameterized in terms of normalized surface area (A:0→1) as θ=cos−1(1−2A). In addition, contribution from fluorescence outside of the puncta was accounted for as follows:(5)P/S(A,ρ(A),Cback)=A⋅P/SVLP(A,ρ(A))+Cback⋅P/SBackgroundA+Cbackwhere Cback was the background intensity relative to final VLP intensity and P/SBackground was the ratio of fluorescence when puncta A=0, that is P/SBackground=P/SVLP(0,ρ(0)).
+$$
+S=\int_{0}^{\theta}\int_{0}^{2\pi}\int_{0}^{\pi}\int_{0}^{2\pi}Q_{∣∣}∣E_{y^}\mu_{y^}∣^{2} sin(\theta) sin(\beta) dψd\betadϕd\theta
+$$
 
-We found an angle β=45∘,Cback=0.45, and d=1 approximately replicated the observed results (Figure 4A and F), reproducing the t1/2 of P+2S−t1/2 of P/S of 0.16 (normalized time) (Figure 4B). In Figure 4A an exponential fit to P+2S was assumed in order to directly equate the VLP area to the predicted P/S. Similar results were obtained by using a uniform distribution of dipoles over an angular range, such as β between 0° to 68.5° or 20° to 63.5°. Thus, our observation is consistent with formation of a spherical bud throughout the recruitment and multimerization of Gag (Woodward et al., 2015; Carlson et al., 2008), and is independent of the presence of early acting factors like ESCRT-I/TSG101 or ALIX (Figure 4—figure supplement 2). The bending also occurs many minutes before the recruitment of ESCRT-IIIs.
+
+
+$$
+P=\int_{0}^{\theta}\int_{0}^{2\pi}\int_{0}^{\pi}\int_{0}^{2\pi}Q_{⊥}∣E_{z^}\mu_{z^}∣^{2} sin(\theta) sin(\beta) dψd\betadϕd\theta
+$$
+
+where $\mu_{y^}$ and $\mu_{z^}$ are the components of the excitation dipole in $y^$ and $z^$ with respect to positon on the bud surface, $E_{y^}$ and $E_{z^}$ are the excitation electric field components in $y^$ and $z^$, and $Q_{∣∣}$ and $Q_{⊥}$ are the light collection efficiencies of the microscope objective for dipoles parallel and perpendicular to the glass surface. The excitation field intensity in $y^$ and $z^$ were assumed to be the same, though this was an approximation since in reality $p^$ had a small component of $s^$ (Sund et al., 1999). In addition, in TIR the excitation field decayed exponentially with distance from the glass surface, $E_{y^ or y^}=Ee^{−z/2d}=Ee^{−(1−cos(\theta))/2d}$ where the characteristic decay constant was defined in terms of a fraction of the radius of the VLP. The collection efficiency for emission parallel $Q_{∣∣}$ versus perpendicular $Q_{⊥}$were also assumed to be the same ($Q_{∣∣}=Q_{⊥}$), which was an approximation based on the use of a high numerical aperture objective (Anantharam et al., 2010). From coordinate transforms described previously (Anantharam et al., 2010; Sund et al., 1999), the components of the dipoles in $y^$ and $z^$ are given by:
+
+$$
+\mu_{y^}=ρ(\beta)[cos(\theta)sin(ϕ)sin(\beta)cos(ψ)+cos(ϕ)sin(ψ)sin(\beta)+sin(\theta)sin(ϕ)cos(\beta)]
+$$
+
+
+
+$$
+\mu_{z^}=ρ(\beta)[−sin(\theta)sin(\beta)cos(ψ)+cos(\theta)cos(\beta)]
+$$
+
+$P/S_{VLP}(\theta,ρ(\beta))$ was solved computationally (Mathematica, Wolfram) with θ parameterized in terms of normalized surface area ($A:0→1$) as $\theta=cos^{−1}(1−2A)$. In addition, contribution from fluorescence outside of the puncta was accounted for as follows:
+
+$$
+P/S(A,ρ(A),C_{back})=\frac{A⋅P/S_{VLP}(A,ρ(A))+C_{back}⋅P/S_{Background}}{A+C_{back}}
+$$
+
+where Cback was the background intensity relative to final VLP intensity and P/SBackground was the ratio of fluorescence when puncta $A=0$, that is $P/S_{Background}=P/S_{VLP}(0,ρ(0))$.
+
+We found an angle $\beta=45^{∘},C_{back}=0.45$, and $d=1$ approximately replicated the observed results (Figure 4A and F), reproducing the $t_{1/2 of P+2S}−t_{1/2 of P/S}$ of 0.16 (normalized time) (Figure 4B). In Figure 4A an exponential fit to P+2S was assumed in order to directly equate the VLP area to the predicted P/S. Similar results were obtained by using a uniform distribution of dipoles over an angular range, such as $\beta$ between $0°$ to $68.5°$ or $20°$ to $63.5°$. Thus, our observation is consistent with formation of a spherical bud throughout the recruitment and multimerization of Gag (Woodward et al., 2015; Carlson et al., 2008), and is independent of the presence of early acting factors like ESCRT-I/TSG101 or ALIX (Figure 4—figure supplement 2). The bending also occurs many minutes before the recruitment of ESCRT-IIIs.
 
 ## Discussion
 
@@ -87,7 +149,255 @@ We suggest that fission can only occur when the neck is narrow and after the ESC
 
 ## Materials and methods
 
-## Plasmid construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK-293T</td>
+      <td>Bieniasz Lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (HIV-1, A. victoria)</td>
+      <td>Gag-mEGFP</td>
+      <td>Bleck et al. (2014)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (HIV, A. macrodactyla)</td>
+      <td>Gag-mTagBFP</td>
+      <td>Bleck et al. (2014)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (A. victoria, H. sapiens)</td>
+      <td>pLNCX2-mEGFP-VPS4A</td>
+      <td>Bleck et al. (2014)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (A. marginale, H. sapiens)</td>
+      <td>pLNCX2-mCherry-CHMP4B</td>
+      <td>Bleck et al. (2014)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (HIV)</td>
+      <td>Gag∆p6</td>
+      <td>Bleck et al. (2014)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (HIV)</td>
+      <td>pCR3.1/Syn-Gag</td>
+      <td>Jouvenet et al. (2008)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (HIV, A. victoria)</td>
+      <td>pCR3.1/Syn-Gag-pHluorin</td>
+      <td>Jouvenet et al. (2008)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (A. marginale, H. sapiens)</td>
+      <td>pLNCX2-mCherry-CHMP2A</td>
+      <td>This study</td>
+      <td></td>
+      <td>CHMP4B in pLNCX2-mCherry- CHMP4B was replaced by CHMP2A from HEK293T cDNA library</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (A. marginale, H. sapiens)</td>
+      <td>pLNCX2-mCherry-CHMP2B</td>
+      <td>This study</td>
+      <td></td>
+      <td>CHMP4B in pLNCX2-mCherry- CHMP4B was replaced by CHMP2B from HEK293T cDNA library</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (A. marginale, H. sapiens)</td>
+      <td>pLNCX2-mCherry-CHMP2A- siRNAres</td>
+      <td>This study</td>
+      <td></td>
+      <td>added six silent point mutations to pLNCX2-mCherry-CHMP2A using site directed mutagenesis</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (A. marginale, H. sapiens)</td>
+      <td>pLNCX2-mCherry-CHMP2B- siRNAres</td>
+      <td>This study</td>
+      <td></td>
+      <td>added six silent point mutations to pLNCX2-mCherry-CHMP2B using site directed mutagenesis</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (A. marginale, H. sapiens)</td>
+      <td>pLNCX2-mEGFP-CHMP2A</td>
+      <td>This study</td>
+      <td></td>
+      <td>replaced mCherry in pLNCX2- mCherry-CHMP2A with EGFP (pEGFP-N1, Clontech)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (A. marginale, H. sapiens)</td>
+      <td>pLNCX2-mEGFP-CHMP2B</td>
+      <td>This study</td>
+      <td></td>
+      <td>replaced mCherry in pLNCX2- mCherry-CHMP2B with EGFP (pEGFP-N1, Clontech)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (A. marginale, H. sapiens)</td>
+      <td>pLNCX2-mCherry-VPS4A</td>
+      <td>This study</td>
+      <td></td>
+      <td>replaced mEGFP in pLNCX2- mCherry-VPS4A (Bleck et al., 2014) with mCherry (pmCherry- N1, Clontech)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (HIV, A. victoria)</td>
+      <td>Gag-∆p6-mEGFP</td>
+      <td>This study</td>
+      <td></td>
+      <td>p6 domain removed from Gag-mEGFP using site directed mutagensis</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (HIV, A. victoria)</td>
+      <td>Gag-MA-sf3</td>
+      <td>This study</td>
+      <td></td>
+      <td>sf3 GFP (Pédelacq et al., 2006) inserted in pCR3.1/Syn-Gag</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (HIV, A. victoria)</td>
+      <td>Gag-MA-sf11</td>
+      <td>This study</td>
+      <td></td>
+      <td>sf11 GFP (Pédelacq et al., 2006) inserted in pCR3.1/Syn-Gag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CHMP2A DsiRNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>5'-AAGAUGAAGAGGAG AGUGAUGCUdGdT-3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CHMP2A DsiRNA (reverse)</td>
+      <td>Integrated DNA Technologies</td>
+      <td>5'-ACAGCAUCACUCUC CUCUUCAUCUUCC-3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CHMP2B DsiRNA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>5'-GGAACAGAAUCGAG AGUUACGAGdGdT-3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CHMP2B DsiRNA (reverse)</td>
+      <td>Integrated DNA Technologies</td>
+      <td>5'-ACCUCGUAACUCUC GAUUCUGUUCCUU-3'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#11965</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FBS</td>
+      <td>MilliporeSigma</td>
+      <td>#F4135</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>MilliporeSigma</td>
+      <td>#H3375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metamorph</td>
+      <td>Molecular Devices</td>
+      <td>version 7.8.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Schneider et al. (2012)</td>
+      <td>version Fiji</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabView</td>
+      <td>National Instruments</td>
+      <td>version 2013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Microscope-Control</td>
+      <td>Johnson, 2018c)</td>
+      <td></td>
+      <td>LabView Code</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Average-puncta-center</td>
+      <td>Johnson, 2018a)</td>
+      <td></td>
+      <td>LabView Code</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Puncta-Fit</td>
+      <td>Johnson, 2018d)</td>
+      <td></td>
+      <td>LabView Code</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CO2-switch-analysis</td>
+      <td>Johnson, 2018b)</td>
+      <td></td>
+      <td>LabView Code</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid construction
 
 Plasmids Gag-mEGFP, Gag-mTagBFP, pLNCX2-mEGFP-VPS4A and pLNCX2-mCherry-CHMP4B, Gag-∆p6 were described in Bleck et al. (2014), and the plasmids pCR3.1/Syn-Gag and pCR3.1/Syn-Gag-pHluorin were described in Jouvenet et al. (2008). The Gag in this study was based on the sequence from HIV-1 clone HXB2 (Kotsopoulou et al., 2000).
 
@@ -97,21 +407,21 @@ pLNCX2-mEGFP-CHMP2A and pLNCX2-mEGFP-CHMP2B were generated by replacing mCherry 
 
 Gag-∆p6-mEGFP was generated by deleting p6 and SP2 from Gag-mEGFP via site-directed mutagenesis (QuickChange Lightning Site-Directed Mutagenesis Kit). The following primers were used for the deletion 5'- TACTGAGAGACAGGCTAATTCGGATCCACCGGT-3'; 5'- ACCGGTGGATCCGAATTAGCCTGTCTCTCAGTA −3'. Gag-MA-sf3 and Gag-MA-sf11 were generated by inserting the circularly permuted superfolder GFPs (provided by Jeffrey Waldo lab) (Pédelacq et al., 2006) into a variant of pCR3.1/Syn-Gag that has an EcoRV restriction enzyme site near the carboxy terminal of MA (Asn-Gln-Val-Ser modified to Asn-Gln-Asp-Ile-Val-Ser). Circularly permuted version 3 was PCR amplified with recombination In-Fusion primers 5’-CACAGCAACCAGGATGGCAGCAGCCATCATCATC-3’ and 5’-GTTCTGGCTGACGATGGTACCTCCAGTAGTGCAAATAA-3’. The primers for circularly permuted version 11 were 5’-CACAGCAACCAGGATGGCAGCAGCCATCATCATC-3’ and 5’-GTTCTGGCTGACGATGGTACCATCTTCAATGTTGTGG-3’. After digesting pCR3.1/Syn-Gag-EcoRV with EcoRV (New England BioLabs) the In-Fusion HD kit was used to insert PCR fragments into the Syn-Gag backbone.
 
-## Sample preparation
+### Sample preparation
 
 With the exception of 120 s pCO2 switching data, all imagings were conducted in HEK293T cells grown in DMEM (#11965, Thermo Fisher Scientific, Waltham, MA) with 10% FBS (#F4135, MilliporeSigma, St. Louis, MO). HEK293T cells were gift from P. Bieniasz Laboratory and were not further authenticated but tested negative for mycoplasma contamination. 120 s pCO2 switching experiments imaged in HeLa cells which were grown in the same growth medium. HeLa cells were from ATCC and were not authenticated or tested for mycoplasma contamination. For polarization excitation experiments, cells were grown on 35-mm glass bottom dishes (#P35G-1.0–20 C, MatTek, Ashland, MA) coated with fibronectin (#33010, Thermo Fisher) by incubating the dish with 10 µg/ml fibronectin in PBS for 1 hr. For pCO2 switching experiments, perfusion slides (#80186 µ-Slide, Ibidi, Martinsried, Germany) were incubated with 60 µg/ml fibronectin in PBS for 1 hr before plating cells. For all experiments, cells at ~ 75% confluency were transfected with expression plasmids ~3.5 hr prior to beginning to image. For transfection 8 µl of Lipofectamine2000 (#11668, Thermo Fisher) was incubated for 5 min in 250 µl of Opti-MEM I (#31985, Thermo Fisher) and 2000 µg of DNA was incubated for 5 min in 250 µl of Opti-MEM I. Both solutions were then mixed and incubated for 20 min before adding to adhered cells on MatTek dish in 2000 µl of DMEM. The same procedure was used for cells in the flow slide, but the transfection mixture was added to 2000 µl of DMEM and then 1000 µl was perfused through the chamber. At least four cells were used for each experimental condition in order to account for potential variability between cells. Both CHMP2A and CHMP2B were knocked down with siRNA for mCherry-CHMP2A and mCherry-CHMP2B experiments. siRNA transfections were conducted 48 hr prior to DNA plasmid transfection using Lipofectamine RNAiMAX (following manufacturer’s instructions; #13778, Thermo Fisher). A second round of siRNA transfection was performed at the time of DNA transfection.
 
 The open-reading frame was verified via sequencing for all plasmids and the following DNA ratios were used for transfections: Gag:Gag-mEGFP (4:1), Gag:Gag-MA-sf3 (4:1), Gag:Gag-MA-sf3 (4:1), Gag-∆p6:Gag-∆p6-mEGFP (4:1), Gag:Gag-pHluorin:mCherry-VPS4A (12:3:5), Gag:Gag-pHluorin:mCherry-CHMP4B (12:3:5), Gag:Gag-pHluorin:mCherry-CHMP2A-siRNAres (4:1:5), Gag:Gag-pHluorin:mCherry-CHMP2B-siRNAres (4:1:5), Gag:Gag-TagBFP:mEGFP-VPS4A:mCherry-CHMP4B (24:6:5:5). Note: The Gag to tagged Gag ratio was 4:1 in all experiments.
 
-## CO2 modulation system
+### CO2 modulation system
 
 Gas from compressed cylinders was bubbled into two imaging media reservoirs (140 ml open piston Monoject syringe, Medtronic, Minneapolis, MN) partially filled with cell imaging media (10 mM HEPES, 9.7 g/L of Hanks BBS (MilliporeSigma), and NaOH to adjust the pH to 7.4) with 1% FBS. One reservoir was equilibrated with compressed air (labeled 0% in these experiments but actually contained 0.04% CO2), and the other reservoir was equilibrated with 10% CO2 (balanced with air) (Figure 1—figure supplement 1). The reservoirs were mounted to a flow perfusion system (ValveBank II, AutoMate Scientific, Berkeley, CA), which enabled automated selection of desired media via solenoid valves under the reservoirs. Tygon tubes (R-3603) from each valve carried the media to a fluid combiner just prior to the perfusion slide chamber containing adhered cells. After the flow chamber, a single tube carried the discharge media to a collection container. This container was placed below the height of equilibration reservoirs so that fluid flow was driven by gravity. The flow rate (~3 ml/min) was controlled with a clamp regulator attached to the discharge tube. At this flow rate, the response time of the fluorophores to a pCO2 change, characterized in terms of an exponential decay constant, was ~7 s. A peristaltic pump (MS-Reglo, Ismatec/Cole-Parmer, Wertheim, Germany) then passed the media from the collection reservoir back to the equilibration reservoirs so that the media could be recycled. The microscope and entire imaging media flow system were enclosed in a temperature control box held at 37°C. Valve regulation, camera trigger and laser excitation were all controlled via custom software (https://github.com/SimonLab-RU/Microscope-Control; copy archived at https://github.com/elifesciences-publications/Microscope-Control) written in LabView (National Instruments, Austin, TX).
 
-## Imaging with pCO2 switching
+### Imaging with pCO2 switching
 
 For experiments with pCO2 switching every 10 s the media was continuously flowed through the imaging chamber, with the reservoir supplying the media being switched every 10 s. Two images were collected every 2.5 s (4.0 s for CHMP4B experiments) with 488 nm excitation for pHluorin (100 ms exposure with power between 1 and 5 mW), followed by 594 nm excitation for mCherry (100 ms exposure with laser power between 5 and 20 mW; 100 mW DPSS laser, Cobolt, Solna, Sweden). A multipass emission filter (zet405/488/594 m, Chroma Technology, Bellows Falls, VT) enabled rapid sequential wavelength imaging. For experiments with pCO2 switching every 120 s the desired media was only applied to the chamber for 10 s, followed by no flow for 110 s. During this time sequential 488 nm (100 ms, 1 mW) and 594 nm (100 ms, 1 mW) excitation images were captured every 10 s. All experiments were conducted with 100 Hz azimuthal scanning TIRF microscopy illumination.
 
-## Temporal determination of scission
+### Temporal determination of scission
 
 The cytosolic pH was oscillated by switching the pCO2 from 0% to 10% (for an average of 5%) every 10 s or every 120 s. The cytosolic carbonic anhydrase ensures that the pH in the cytosol closely tracks the pCO2 (Simon et al., 1994). At scission, the luminal pH of the VLP or virion is no longer continuous with the cytosol and no longer tracks the cytosolic pH. Individual VLPs were identified from the Gag-pHluorin images using Metamorph (version 7.8.10, Molecular Devices, Sunnyvale, CA) and the peak pixel amplitude in a 15 pixel (975 nm) diameter regions of interests centered on individual VLPs was found for all frames (Figure 1, Figure 1—figure supplement 2).
 
@@ -121,20 +431,20 @@ The average signal-to-noise was approximately 7:1 (peak signal:S.D.) across all 
 
 For pCO2 switching every 120 s for each tracing we determined the first transition of pCO2 for which the fluorescence had decreased sensitivity, indicating protons were no long freely flowing between cytosol and lumen of the VLP. We assumed that scission must have occurred during the previous plateau of pCO2 (Figure 2A–E). For example, if scission occurred during the 10% pCO2 cycle (low fluorescence) then after the next transition to 0% pCO2, and all subsequent transitions, the fluorescence would be closer to that of the 10% (low fluorescence state) than the 0% pCO2 (high fluorescence) state. Conversely, if scission occurred during the 0% (high fluorescence), future 10% pCO2 plateaus would be closer to the high fluorescence state. Occasionally traces appeared to be trapped in an intermediate pH state, which we attribute to scission occurring during the transition between pCO2 states. Individual VLP traces were categorized into being trapped in a high, middle, or low pH state by comparing the Gag-pHLuorin signal before and after the VLP became insensitive to pCO2 switching (Figure 2F).
 
-## Simultaneous VPS4A and CHMP4B imaging
+### Simultaneous VPS4A and CHMP4B imaging
 
 Gag-mTagBFP, mEGFP-VPS4A and mCherry-CHMP4B were imaged with TIRF with sequential illumination of 594 nm (100 ms, 10–20 mW), 488 nm (100 ms, 4–10 mW) and 405 nm (100 ms, 2–4 mW; 120 mW LuxX diode laser, Omicron). mEGFP-VPS4A and mCherry-CHMP4B images were acquired every 5 s and Gag-TagBFP images were acquired every 60 s. VPS4A and CHMP4B relative appearance time were conducted using the same method as described previously (Figure 1—figure supplement 4) (Bleck et al., 2014).
 
-## mEGFP-CHMP2A/B knockdown imaging
+### mEGFP-CHMP2A/B knockdown imaging
 
 HeLa cell lines stably expressing either mEGFP-CHMP2A or mEGFP-CHMP2B and transfected with the respective siRNA (48 hr in advance) were imaged on an inverted microscope (IX-70, Olympus, Shinjuku, Japan) with epi-illumination via a Xenon lamp and transmitted bright-field illumination (Figure 1—figure supplement 3).
 
-## Polarized excitation imaging
+### Polarized excitation imaging
 
-Images were collected on an inverted microscope (IX-81, Olympus) with a custom built through-the-objective (100X UAPON 1.49 NA, Olympus) polarized TIRF microscopy illuminator (Johnson et al., 2014). Throughout imaging the excitation TIR light was azimuthally scanned at 200 Hz with mirror galvanometers (Nutfield Technology, Hudson, NH) in order to reduce spatial illumination nonuniformities. A multiband polychroic (zt405/488/594/647rpc 2 mm substrate, Chroma) was positioned between the galvanometers and objective in order to isolate the excitation light from the emitted light. Light from a 488 nm laser (100 mW LuxX diode laser, Omicron, Rodgau-Dudenhofen, Germany) was modulated between being polarized perpendicular (p^) or parallel (s^) to the glass surface by passing the light through an electro-optic modulator (EOM) (Conoptics, Danbury, CT) and quarter-wave plate prior to the galvanometer scan-head. The polarization generated by the EOM was modulated in sync with the galvanometers such that during scanning a p^ or s^ state was maintained at all azimuthal positions. The scanning polar angle was selected such that the excitation light was just beyond the TIR critical angle, minimizing s^ polarized light contaminating p^ excitation (Johnson et al., 2014).
+Images were collected on an inverted microscope (IX-81, Olympus) with a custom built through-the-objective (100X UAPON 1.49 NA, Olympus) polarized TIRF microscopy illuminator (Johnson et al., 2014). Throughout imaging the excitation TIR light was azimuthally scanned at 200 Hz with mirror galvanometers (Nutfield Technology, Hudson, NH) in order to reduce spatial illumination nonuniformities. A multiband polychroic (zt405/488/594/647rpc 2 mm substrate, Chroma) was positioned between the galvanometers and objective in order to isolate the excitation light from the emitted light. Light from a 488 nm laser (100 mW LuxX diode laser, Omicron, Rodgau-Dudenhofen, Germany) was modulated between being polarized perpendicular ($p^$) or parallel ($s^$) to the glass surface by passing the light through an electro-optic modulator (EOM) (Conoptics, Danbury, CT) and quarter-wave plate prior to the galvanometer scan-head. The polarization generated by the EOM was modulated in sync with the galvanometers such that during scanning a $p^$ or $s^$ state was maintained at all azimuthal positions. The scanning polar angle was selected such that the excitation light was just beyond the TIR critical angle, minimizing $s^$ polarized light contaminating $p^$ excitation (Johnson et al., 2014).
 
-A combined p^/s^ ratio image was collected every 30 s. To generate this ratio image a sequential series of 10 p^ and s^ images were collected, divided (after subtracting camera offset), and then averaged. Each p^ or s^ image had an exposure of 5 ms (laser power between 25 and 50 mW), with a new image collected every 15 ms. Thus, in 30 ms, a single p^/s^ image was generated, and then 10 of these images (over a 300 ms duration) were averaged (ImageJ) (Schneider et al., 2012) to create the combined ratio image. The short period was utilized in order to minimize artifacts in the p^/s^ ratio image from VLP or cell movement. The galvonometers, EOM, camera shutter, and laser shutters were all driven/triggered by a multifunction data acquisition board (PCIe-6323, National Instruments) and controlled from custom written software in LabView (https://github.com/SimonLab-RU/Microscope-Control; copy archived at https://github.com/elifesciences-publications/Microscope-Control). Images were streamed from a CMOS camera (Flash-4.0, Hamamatsu, Hamamatsu City, Japan) to a workstation (T7500, Dell, Round Rock, TX) running image acquisition software (Metamorph). A single band emission filter (ET525/50 m, Chroma) was used to isolate fluorophore emission. In order to characterize the amount of Gag in an assembling VLP, an average p^+2⋅s^ image was also generated at each time point.
+A combined $p^/s^$ ratio image was collected every 30 s. To generate this ratio image a sequential series of 10 $p^$ and $s^$ images were collected, divided (after subtracting camera offset), and then averaged. Each $p^$ or $s^$ image had an exposure of 5 ms (laser power between 25 and 50 mW), with a new image collected every 15 ms. Thus, in 30 ms, a single $p^/s^$ image was generated, and then 10 of these images (over a 300 ms duration) were averaged (ImageJ) (Schneider et al., 2012) to create the combined ratio image. The short period was utilized in order to minimize artifacts in the $p^/s^$ ratio image from VLP or cell movement. The galvonometers, EOM, camera shutter, and laser shutters were all driven/triggered by a multifunction data acquisition board (PCIe-6323, National Instruments) and controlled from custom written software in LabView (https://github.com/SimonLab-RU/Microscope-Control; copy archived at https://github.com/elifesciences-publications/Microscope-Control). Images were streamed from a CMOS camera (Flash-4.0, Hamamatsu, Hamamatsu City, Japan) to a workstation (T7500, Dell, Round Rock, TX) running image acquisition software (Metamorph). A single band emission filter (ET525/50 m, Chroma) was used to isolate fluorophore emission. In order to characterize the amount of Gag in an assembling VLP, an average $p^+2⋅s^$ image was also generated at each time point.
 
-## Polarization analysis
+### Polarization analysis
 
-Puncta were found in the p^+2⋅s^ images which increased and then plateaued in amplitude. These puncta were then selected for orientation analysis with p^/s^. A 2D Gaussian was fit to these assembling puncta to find a frame by frame subpixel peak location (https://github.com/SimonLab-RU/Puncta-Fit; copy archived at https://github.com/elifesciences-publications/Puncta-Fit). Using bilinear interpolation, the p^/s^ and p^+2⋅s^ images were resampled 10X in the horizontal and vertical directions (65 to 6.5 nm wide pixels). On these resampled images P/S and P+2S values were found by averaging the resampled pixel intensities that are within 100 nm of the peak fit locations (https://github.com/SimonLab-RU/Average-puncta-center; copy archived at https://github.com/elifesciences-publications/Average-puncta-center) (Figure 4A, Figure 4—figure supplement 1). For frames prior to the appearance of a puncta P/S and P+2S values were determined using the fit location of the first frame in which there was a puncta fit. For each tagged version of Gag, the average P/S value for background and assembled VLPs was calculated by finding an average P/S for each trace before assembly and after a plateau was reached, and then averaging across all traces (Figure 4B). A relative time to half growth for each VLP was determined by finding the halfway to assembly point (i.e. the point where the intensity is halfway between the intensity at assembly beginning and plateau) and then finding the normalized time at this point relative to the time assembly began and appeared to reach a plateau. This normalized time was between 0 and 1. A normalized time to halfway drop in P/S was also found (normalized to the same time scale) and these values were subtracted to find: t1/2 of P+2S−t1/2 of P/S (normalized). All fluorophore combinations were included in the P/S histogram (Figure 4C) since all combinations had similar P/S characteristics.
+Puncta were found in the $p^+2⋅s^$ images which increased and then plateaued in amplitude. These puncta were then selected for orientation analysis with $p^/s^$. A 2D Gaussian was fit to these assembling puncta to find a frame by frame subpixel peak location (https://github.com/SimonLab-RU/Puncta-Fit; copy archived at https://github.com/elifesciences-publications/Puncta-Fit). Using bilinear interpolation, the $p^/s^$ and $p^+2⋅s^$ images were resampled 10X in the horizontal and vertical directions (65 to 6.5 nm wide pixels). On these resampled images P/S and P+2S values were found by averaging the resampled pixel intensities that are within 100 nm of the peak fit locations (https://github.com/SimonLab-RU/Average-puncta-center; copy archived at https://github.com/elifesciences-publications/Average-puncta-center) (Figure 4A, Figure 4—figure supplement 1). For frames prior to the appearance of a puncta P/S and P+2S values were determined using the fit location of the first frame in which there was a puncta fit. For each tagged version of Gag, the average P/S value for background and assembled VLPs was calculated by finding an average P/S for each trace before assembly and after a plateau was reached, and then averaging across all traces (Figure 4B). A relative time to half growth for each VLP was determined by finding the halfway to assembly point (i.e. the point where the intensity is halfway between the intensity at assembly beginning and plateau) and then finding the normalized time at this point relative to the time assembly began and appeared to reach a plateau. This normalized time was between 0 and 1. A normalized time to halfway drop in P/S was also found (normalized to the same time scale) and these values were subtracted to find: $t_{1/2 of P+2S}−t_{1/2 of P/S}$ (normalized). All fluorophore combinations were included in the P/S histogram (Figure 4C) since all combinations had similar P/S characteristics.

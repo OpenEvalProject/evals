@@ -15,13 +15,13 @@
 
 ### Affiliations
 
-1. https://ror.org/001w7jn25 Charité-Universitätsmedizin Berlin, corporate member of Freie Universität Berlin and Humboldt-Universität zu Berlin, Neuroscience Research Center Berlin Germany
-2. https://ror.org/01hcx6992 Institute for Theoretical Biology, Department of Biology, Humboldt-Universität zu Berlin Berlin Germany
-3. https://ror.org/05ewdps05 Bernstein Center for Computational Neuroscience Berlin Germany
-4. https://ror.org/001w7jn25 Charité-Universitätsmedizin Berlin, corporate member of Freie Universität Berlin and Humboldt-Universität zu Berlin, Einstein Center for Neurosciences Berlin Germany
-5. https://ror.org/043j0f473 German Center for Neurodegenerative Diseases (DZNE) Berlin Germany
-6. https://ror.org/04p5ggc03 Max-Delbrück Center for Molecular Medicine in the Helmholtz Association Berlin Germany
-7. https://ror.org/001w7jn25 Charité – Universitätsmedizin Berlin, corporate member of Freie Universität Berlin and Humboldt-Universität zu Berlin, NeuroCure Cluster of Excellence Berlin Germany
+1. Charité-Universitätsmedizin Berlin, corporate member of Freie Universität Berlin and Humboldt-Universität zu Berlin, Neuroscience Research Center Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
+2. Institute for Theoretical Biology, Department of Biology, Humboldt-Universität zu Berlin Berlin Germany ([ROR:01hcx6992](https://ror.org/01hcx6992))
+3. Bernstein Center for Computational Neuroscience Berlin Germany ([ROR:05ewdps05](https://ror.org/05ewdps05))
+4. Charité-Universitätsmedizin Berlin, corporate member of Freie Universität Berlin and Humboldt-Universität zu Berlin, Einstein Center for Neurosciences Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
+5. German Center for Neurodegenerative Diseases (DZNE) Berlin Germany ([ROR:043j0f473](https://ror.org/043j0f473))
+6. Max-Delbrück Center for Molecular Medicine in the Helmholtz Association Berlin Germany ([ROR:04p5ggc03](https://ror.org/04p5ggc03))
+7. Charité – Universitätsmedizin Berlin, corporate member of Freie Universität Berlin and Humboldt-Universität zu Berlin, NeuroCure Cluster of Excellence Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
 
 † Corresponding author
 
@@ -37,13 +37,21 @@ The CA3 region in the hippocampus is considered the main generator of SPWs (Buzs
 
 ## Results
 
-To examine the connectivity between thorny and athorny pyramidal cells in CA3, we performed whole-cell patch clamp recordings from up to eight cells simultaneously. Cells were post hoc classified as thorny or athorny using biocytin labelling and confocal microscopy to determine the presence or absence of thorny excrescences (Figure 1A). In total, we recorded from 348 CA3 pyramids across the length of the CA3 (CA3a: 20 cells, CA3b: 274 cells, CA3c: 54 cells). Of these 348 pyramids, 229 were thorny and 119 were athorny (Figure 1B). We measured the distance from the soma to the first branch on the apical dendrite and found that thorny cells branched significantly closer to the soma than athorny cells (Figure 1C; median [IQR] for thorny: 12.5 [20.9] µm, athorny: 51.4 [38.0] µm; p<0.001\begin{document}$  p \lt 0.001$\end{document}, Mann-Whitney-U test). Furthermore, we found that athorny cells tended to be located deeper in the pyramidal layer, towards the stratum oriens. Meanwhile, thorny cells were found throughout the deep-superficial axis of the pyramidal cell layer (Figure 1D, median [IQR] for thorny: 28 [32] µm, athorny: 12 [14] µm, p<0.001\begin{document}$  p \lt 0.001$\end{document}, Mann-Whitney-U test). These results resemble findings from Marissal et al., 2012 who observed similar differences in soma location and primary apical dendritic length between early and late born CA3 neurons, suggesting that thorny and athorny neurons may be developmentally distinct. We further found differences in maximum firing rate, rheobase and input resistance between thorny and athorny cells, but not in resting membrane potential (Figure 1—figure supplement 1).
+To examine the connectivity between thorny and athorny pyramidal cells in CA3, we performed whole-cell patch clamp recordings from up to eight cells simultaneously. Cells were post hoc classified as thorny or athorny using biocytin labelling and confocal microscopy to determine the presence or absence of thorny excrescences (Figure 1A). In total, we recorded from 348 CA3 pyramids across the length of the CA3 (CA3a: 20 cells, CA3b: 274 cells, CA3c: 54 cells). Of these 348 pyramids, 229 were thorny and 119 were athorny (Figure 1B). We measured the distance from the soma to the first branch on the apical dendrite and found that thorny cells branched significantly closer to the soma than athorny cells (Figure 1C; median [IQR] for thorny: 12.5 [20.9] µm, athorny: 51.4 [38.0] µm; $p<0.001$, Mann-Whitney-U test). Furthermore, we found that athorny cells tended to be located deeper in the pyramidal layer, towards the stratum oriens. Meanwhile, thorny cells were found throughout the deep-superficial axis of the pyramidal cell layer (Figure 1D, median [IQR] for thorny: 28 [32] µm, athorny: 12 [14] µm, $p<0.001$, Mann-Whitney-U test). These results resemble findings from Marissal et al., 2012 who observed similar differences in soma location and primary apical dendritic length between early and late born CA3 neurons, suggesting that thorny and athorny neurons may be developmentally distinct. We further found differences in maximum firing rate, rheobase and input resistance between thorny and athorny cells, but not in resting membrane potential (Figure 1—figure supplement 1).
 
-Next, we looked at connection rates between these two pyramidal neuron populations. In our whole-cell patch clamp recordings, each cell was stimulated to elicit 4 action potentials, and post-synaptic traces were examined for potential synaptic coupling. We found a high rate of connectivity (15%) between athorny cells (Figure 2Ai), and from thorny onto athorny cells (11%; Figure 2Aii). Thorny cells connected to each other at a rate of 8% (Figure 2Aiii). Meanwhile, connections from athorny onto thorny cells were the least common, occurring at a rate of 4% (Figure 2Aiv). The overall rate of connectivity (65/734 = 8.9%) corresponds well to our previously reported high level of connectivity within the general CA3 pyramidal population (8.8%) (Sammons et al., 2024). We saw reciprocal connections between athorny-athorny pairs (2 reciprocally connected pairs; 4/92 connections = 4%) and thorny-thorny (2 reciprocally connected pairs; 4/362 connections = 1%) pairs of neurons. Synaptic connections were strongest amongst athorny-athorny cells, although no statistically significant differences were present across connection types (Figure 2B, median [IQR] amplitudes for athorny-athorny: 1.08 [0.56] mV; ii, thorny-athorny: 0.88 [1.03] mV; iii, thorny-thorny: 0.57 [0.55] mV; iv, athorny-thorny: 0.66 [0.25] mV; p = 0.370, Kruskal-Wallis test). EPSPs across all connection types had latencies below 3 ms (with the exception of a single connection between two athorny cells which had a latency of 3.58 ms) indicating that identified connections were monosynaptic (Figure 2C). We further looked at the failure rate of each synapse type. Athorny-athorny synapses had the lowest failure rate, although no statistical difference was observed between groups (Figure 2D, median [IQR] failure rate for athorny-athorny: 11.5 [20.5]%, thorny-athorny: 33.0 [36.2]%, thorny-thorny: 21.0 [36.3]%, athorny-thorny: 12.0 [47.5]%, p = 0.729, Kruskal-Wallis test). Additionally, we looked at synaptic dynamics to determine if synapse types had different plasticity qualities. Connections from thorny onto athorny neurons showed significantly more synaptic depression than athorny-athorny connections (Figure 2E; p = 0.008,  Kruskal-Wallis followed by Dunn’s post hoc with Bonferroni correction; all other comparisons p>0.05\begin{document}$  p \gt 0.05$\end{document}).
+![Figure 1.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig1-v1.jpg)
+
+**Figure 1.:** (A) Left, image of seven pyramidal neurons recorded simultaneously and filled with biocytin to reveal thorny and athorny morphologies. Right, the magenta box contains a typical example of a thorny CA3 pyramid, gray boxes show close-ups of regions with thorns; yellow box shows a typical athorny pyramidal neuron. Scale bar in left image 100 µm, in magenta/yellow boxed insets 20 µm, in gray boxed insets 5 µm. (B) Proportion of thorny and athorny cells in total recorded pyramidal neurons. (C) Distance from soma to the first branch point for thorny (T) and athorny (A) CA3 pyramidal neurons. (Di) Location of thorny and athorny cell somata across the deep-superficial axis of the pyramidal layer. N numbers for each group shown above boxplots in parentheses. (Dii) Schematic depicting the distribution of thorny and athorny pyramids in the deep-superficial axis of the CA3 pyramidal layer.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Significance calculated using Mann-Whitney U and corrected for multiple comparisons. ***$p<0.001$ *$p<0.05$; For thorny n=185; for athorny n = 103.
+
+Next, we looked at connection rates between these two pyramidal neuron populations. In our whole-cell patch clamp recordings, each cell was stimulated to elicit 4 action potentials, and post-synaptic traces were examined for potential synaptic coupling. We found a high rate of connectivity (15%) between athorny cells (Figure 2Ai), and from thorny onto athorny cells (11%; Figure 2Aii). Thorny cells connected to each other at a rate of 8% (Figure 2Aiii). Meanwhile, connections from athorny onto thorny cells were the least common, occurring at a rate of 4% (Figure 2Aiv). The overall rate of connectivity (65/734 = 8.9%) corresponds well to our previously reported high level of connectivity within the general CA3 pyramidal population (8.8%) (Sammons et al., 2024). We saw reciprocal connections between athorny-athorny pairs (2 reciprocally connected pairs; 4/92 connections = 4%) and thorny-thorny (2 reciprocally connected pairs; 4/362 connections = 1%) pairs of neurons. Synaptic connections were strongest amongst athorny-athorny cells, although no statistically significant differences were present across connection types (Figure 2B, median [IQR] amplitudes for athorny-athorny: 1.08 [0.56] mV; ii, thorny-athorny: 0.88 [1.03] mV; iii, thorny-thorny: 0.57 [0.55] mV; iv, athorny-thorny: 0.66 [0.25] mV; p = 0.370, Kruskal-Wallis test). EPSPs across all connection types had latencies below 3 ms (with the exception of a single connection between two athorny cells which had a latency of 3.58 ms) indicating that identified connections were monosynaptic (Figure 2C). We further looked at the failure rate of each synapse type. Athorny-athorny synapses had the lowest failure rate, although no statistical difference was observed between groups (Figure 2D, median [IQR] failure rate for athorny-athorny: 11.5 [20.5]%, thorny-athorny: 33.0 [36.2]%, thorny-thorny: 21.0 [36.3]%, athorny-thorny: 12.0 [47.5]%, p = 0.729, Kruskal-Wallis test). Additionally, we looked at synaptic dynamics to determine if synapse types had different plasticity qualities. Connections from thorny onto athorny neurons showed significantly more synaptic depression than athorny-athorny connections (Figure 2E; p = 0.008,  Kruskal-Wallis followed by Dunn’s post hoc with Bonferroni correction; all other comparisons $p>0.05$).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig2-v1.jpg)
 
-**Figure 2.:** A) and thorny (T) CA3 pyramids.(A) Connection probabilities (conn. prob.) and example connections: i, from A to A cells (A→A); ii, T→A; iii, T→T; iv, A→T. Scalebars for presynaptic action potentials, 40 mV; for postsynaptic responses, 0.5 mV. (B) Histograms of synaptic amplitudes of the different connection types. Dashed lines represent median values and shaded areas interquartile ranges. (C) Latency of different synaptic connection types, individual points show single connection values. (D) Failure rates of the different synaptic connection types. (E) Short-term plasticity dynamics of different synaptic connection types. Synaptic amplitudes are normalised to the first EPSP in the train of 4 and plotted as mean ± s.e.m. N numbers for groups shown above plots in parentheses.
+**Figure 2.:** (A) Connection probabilities (conn. prob.) and example connections: i, from A to A cells (A→A); ii, T→A; iii, T→T; iv, A→T. Scalebars for presynaptic action potentials, 40 mV; for postsynaptic responses, 0.5 mV. (B) Histograms of synaptic amplitudes of the different connection types. Dashed lines represent median values and shaded areas interquartile ranges. (C) Latency of different synaptic connection types, individual points show single connection values. (D) Failure rates of the different synaptic connection types. (E) Short-term plasticity dynamics of different synaptic connection types. Synaptic amplitudes are normalised to the first EPSP in the train of 4 and plotted as mean ± s.e.m. N numbers for groups shown above plots in parentheses.
 
 To determine the overall impact of each connection type within the local network, we calculated the synaptic product. This metric takes into account connection probability (Figure 3Ai), connection strength (Figure 3Aii), and size of the presynaptic population (Figure 3Aiii), thereby giving an estimate of how large the input onto the particular cell type is for any given presynaptic population. Thorny-athorny connections show the highest synaptic product, followed by athorny-athorny connections (Figure 3Aiv). Together, our results demonstrate a strong pattern of input onto athorny neurons and much weaker input onto thorny cells, particularly from the athorny sub-population (Figure 3B).
 
@@ -53,11 +61,149 @@ To determine the overall impact of each connection type within the local network
 
 During SPW events, athorny (A) cells have been reported to fire before thorny (T) cells, suggesting that activity propagates in this direction (Hunt et al., 2018). Therefore, it might appear surprising that both connectivity and synaptic product present the opposite asymmetry, with low values for athorny-thorny (A→T) and high values for thorny-athorny (T→A) connections. To understand what dynamics can be expected based on this microcircuit architecture, we constructed a model network in which T and A neurons are connected according to the experimentally observed connections (Figure 4A). In addition to the two pyramidal cell populations, we included two classes of interneurons that have been suggested to play fundamental roles in SPW generation: PV+ basket cells (B), which are active during SPWs, and a putative class of anti-SPW interneurons (C), which fire outside SPWs, keeping the other populations inhibited (Evangelista et al., 2020). Strong reciprocal coupling between the two inhibitory populations gives rise to a bistability between a SPW state and a non-SPW state, and the network alternates between these two states due to adaptation in pyramidal cells (Figure 4Bi), as proposed by Levenstein et al., 2019 as the driving mechanism of SPWs. We tuned model parameters (see Materials and methods) such that the SPW event incidence is ≈1/s (with stochastic onsets driven by finite-size fluctuations) and the average event duration is ≈80 ms (Figure 4Bi).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig4-v1.jpg)
+
+**Figure 4.:** (A) Network scheme. (Bi) Firing rates before, during, and after a sharp wave-ripple complex (SPW). Inset: low-pass filtered estimate of the LFP over a longer window of 10 s. ii, Spike raster plot of a representative sample of each neuron type. iii, Relative increment of the average adaptive currents received by each population with respect to a 200 ms baseline before the event. (C) Effects of varying each connectivity from its default value, marked by a black dashed line and dot. Continuous gold/magenta lines indicate the peak time of each population rate (with the peak of A always plotted at 0), while dashed ones represent the time at which the rate equals 25% of the respective peak. The peak size for each connectivity value is color-coded. In these simulations, the synaptic strengths of all the excitatory-to-excitatory synapses were up- or down-scaled by a common factor, in order to obtain SPW events with a comparable size (measured based on the activity of B interneurons, see Materials and Methods). Insets: firing trace of each population averaged over many events, for particular connectivity values highlighted by the gray arrows.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** These curves (colored solid lines) are compared to experimental data (black dots) from Hunt et al., 2018 for A and T neurons, and from Fidzinski et al., 2015 for B neurons. Dashed lines represent transient firing. Insets: example of firing patterns displayed by the different neurons in response to the specific current values marked by vertical gray lines in the main figure.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Same as Figure 4, but excitatory–to–excitatory synapses are subject to short-term synaptic depression; for details, see Materials and methods. The model dynamics and the effects of excitatory-to-excitatory connections are qualitatively analogous.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Same as Figure 4, but several parameters of thorny and athorny cells are sampled from Gaussian distributions centered around their mean, with a standard deviation based on the data in Figures 2B–C–1 (see Materials and methods). Compared to the results with the basic model, here peaks tend to be more spread out in time; however, increasing the A→A or decreasing the A→T connectivity still increases the delay between the peaks.
+
 In our simulations, a SPW event starts when B cells suppress enough C cells to disinhibit pyramidal neurons. Among the two pyramidal cell populations, A cells subsequently emit a larger number of early spikes, due to a lower rheobase (documented by Hunt et al., 2018, Linaro et al., 2022, and our own data (Figure 1—figure supplement 1)) and a steeper f-I curve (Hunt et al., 2018; Linaro et al., 2022). These initial spikes recruit many further A cells, due to the high A→A connectivity, but only a few T cells, due to the low A→T connectivity. On the other hand, A cells drive the growth of B cells, which in turn inhibit T cells (Figure 4Bi–ii): as a result, A cells have a net inhibitory effect on T cells, which get initially suppressed and can only start firing when the activity of A cells decreases, due to a surge in adaptation (Figure 4Biii). Because T cells are also adaptive, their firing rate also reaches a peak and decreases, ending the SPW event. Together, these dynamics result in clearly distinct peaks of A and T population activities, with an average delay of 29 ms between the peaks (Figure 4Bi–ii). This long delay matches the data by Hunt et al., 2018, which would be hard to explain if T cells were directly recruited by A cells, with monosynaptic latencies shorter than three milliseconds (Figure 2C).
 
 A key ingredient for these dynamics is that the proportion between the A→T and A→A connectivity is such that A has a net inhibitory effect on T, resulting in a long delay between the peaks. We confirm this intuition by varying each of the four connectivities in the model and find that a decreased A→A (Figure 4Ci) or increased A→T (Figure 4Cii) connectivity would indeed prevent the initial suppression of T cells, as activity would build up together in both populations, resulting in almost simultaneous peaks. On the contrary, further increasing A→A or decreasing A→T would more strongly suppress T cells, which could only fire after most A cells have adapted and fallen silent, with delays even over 100 ms. For particularly low A→T connectivities, we even observe two separate A peaks, since the delay becomes so long that A cells partially recover from adaptation by the end of the SPW (Figure 4Cii, left inset). Analogously, connections from T neurons determine whether these provide net excitation or inhibition to A neurons. However, albeit affecting the relative size of the A and T peaks, such connections on their own cannot prevent the early activation of the A population, which depends on single-neuron parameters. Therefore, connections from T cells play a role only in the second part of an event (Figure 4Ciii and Civ). The model dynamics and the effects of excitatory-to-excitatory connectivities qualitatively remain unaltered if we include in the model the experimentally observed short-term depression and variability of synapses (Figure 4—figure supplements 2 and 3).
 
 To test whether the described relationship between connectivity and delay holds across the parameter space, we explore the six possible combinations of the connectivities examined so far. We find that long delays are consistently found when A→A is large (Figure 5A1,2,3) and when A→T is small (Figure 5A3,4,5), provided that delays do not become so long that population T does not activate at all. Specifically, varying A→T and T→A together offers a good overview of the possible combinations of cooperative and competitive interactions between the two populations (Figure 5A5). If these connectivities were both high, then there would be no competition and the populations would reach their peaks at approximately the same time (top right corner). Conversely, if both connectivities were low, either population could potentially suppress the other. This winner-takes-all competition would be won by the athorny cells because of their earlier activation due to their intrinsic properties (bottom left corner). When A→T is low and T→A is high (bottom right corner), matching experimental conditions, only A can suppress T, resulting in the long delay, while when A→T is high and T→A is low, A is suppressed by T, after nevertheless displaying some early activity. Afterwards, there may or may not be a later peak for the A neurons, after T neurons have adapted. This is why, in the top left corner of Figure 5A5, there can either be a positive or long negative delay, depending on whether the first (small) or second (absent, for some parameters) A peak is taken into account.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig5-v1.jpg)
+
+**Figure 5.:** Average delay between the athorny and the thorny peak, as a function of two connectivity parameters (pairs of excitatory-to-excitatory connections in (A), pairs involving inhibitory connections in (B)). In each simulation, the connectivity rates were varied from their default value (marked by a white dot), while all the excitatory-to-excitatory synaptic strengths were scaled, as in Figure 4, in order to obtain sharp waves with a comparable size. Data points are plotted only if both populations exceed a lower threshold on the firing rate; otherwise, they are grayed out. The same simulations as in (A), but with a different scaling, are reported in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98653/elife-98653-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Same as Figure 5A, but the size of sharp wave-ripple complex (SPW) events is maintained by up- or down-scaling of a common factor the synaptic strengths of A→B and T→B synapses, which in Figure 5B were found to be little relevant for the delay between the peaks. The main results are consistent between the two scalings, except that here it is easier to appreciate that T→T is little relevant for the peak delay, which in Figure 5A appears less clean due to the simultaneous scaling of all the excitatory-to-excitatory conductances.
+
+**Table 1.**
+ Single neuron parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Athorny (A)</th>
+      <th>Thorny (T)</th>
+      <th>PV+- Basket (B)</th>
+      <th>Anti-SPW (C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Population size</td>
+      <td>2700</td>
+      <td>5300</td>
+      <td>150</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>C\begin{document}$  C$\end{document}</td>
+      <td>[pF]</td>
+      <td>200</td>
+      <td>200</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>gL\begin{document}$  g_{L}$\end{document}</td>
+      <td>[nS]</td>
+      <td>8</td>
+      <td>11</td>
+      <td>8</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>EL\begin{document}$  E_{L}$\end{document}</td>
+      <td>[mV]</td>
+      <td>–60</td>
+      <td>–70</td>
+      <td>–55</td>
+      <td>–57</td>
+    </tr>
+    <tr>
+      <td>Vthr\begin{document}$  V_{thr}$\end{document}</td>
+      <td>[mV]</td>
+      <td>–48</td>
+      <td>–44</td>
+      <td>–40</td>
+      <td>–40</td>
+    </tr>
+    <tr>
+      <td>Vreset\begin{document}$  V_{reset}$\end{document}</td>
+      <td>[mV]</td>
+      <td>–42</td>
+      <td>–46</td>
+      <td>–57</td>
+      <td>–52</td>
+    </tr>
+    <tr>
+      <td>a\begin{document}$  a$\end{document}</td>
+      <td>[nS]</td>
+      <td>4</td>
+      <td>0</td>
+      <td>6</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>b\begin{document}$  b$\end{document}</td>
+      <td>[pA]</td>
+      <td>85</td>
+      <td>150</td>
+      <td>25</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>τu\begin{document}$\tau_{u}$\end{document}</td>
+      <td>[ms]</td>
+      <td>200</td>
+      <td>200</td>
+      <td>50</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>τref\begin{document}$\tau_{ref}$\end{document}</td>
+      <td>[ms]</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>ΔT\begin{document}$  \Delta_{T}$\end{document}</td>
+      <td>[mV]</td>
+      <td>2.5</td>
+      <td>2.5</td>
+      <td>2.5</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>Iext\begin{document}$  I_{ext}$\end{document}</td>
+      <td>[pA]</td>
+      <td>140</td>
+      <td>285</td>
+      <td>180</td>
+      <td>160</td>
+    </tr>
+  </tbody>
+</table>
 
 The arguments presented so far assume the existence of indirect inhibitory pathways through the B interneurons, which become dominant in case the direct excitatory pathways are weak. How strong do these pathways need to be for T neurons to be initially suppressed, causing two distinct peaks to emerge? To address this question, we varied pairs of connectivity rates to and from B interneurons (B→A, B→T, A→B, and T→B — Figure 5B, 9-14) and combinations thereof with the relevant connections among excitatory neurons (A→A in Figure 5B, 1-4 and A→T in Figure 5B, 5-8). In this analysis, it clearly emerges that connections to the B interneurons have only a minor effect on the delay, while connections from the B interneurons are as important as the excitatory connections outlined above. Although the actual values of the inhibitory connectivities are unknown, these simulations demonstrate that there is a broad, clearly distinct, region of the parameter space that supports a long delay between the peaks of A and T. In addition, we see that B interneurons optimally contribute to the suppression of T when they primarily target T (Figure 5B, fourth row and third column) rather than A (Figure 5B, third row and fourth column). Interestingly, in the examples in Figure 4 the B→T connections are weaker than B→A ones (total connection strengths are displayed graphically in Figure 4A). The fact that the long delay nevertheless emerges is due to the measured asymmetric connectivity between the two excitatory populations, in particular the low connectivity from A to T neurons. In conclusion, modeling shows that not only can T cells activate after A cells even if the A→T connectivity is low, but such a low connectivity is also crucial to explain the delay seen in the data by Hunt et al., 2018 and in our model.
 
@@ -75,56 +221,179 @@ The present work extends our existing knowledge of how the local excitatory netw
 
 ## Materials and methods
 
-## Electrophysiology
+### Electrophysiology
 
-## Slice preparation
+#### Slice preparation
 
 Mice (C57/Bl6n, bred in-house and originating from Charles River, P25+, average age: P40, both sexes) were decapitated following isoflurane anesthesia. Brains were removed and transferred to ice-cold, sucrose-based artificial cerebrospinal fluid (sACSF) containing (in mM) 50 NaCl, 150 sucrose, 25 NaHCO3, 2.5 KCl, 1 NaH2PO4, 0.5 CaCl2, 7.0 MgCl2, 10 glucose, saturated with 95% O2, 5% CO2, pH 7.4. Slices (400 µm) were cut in a horizontal plane on a vibratome (VT1200S; Leica) and stored in an interface chamber at 32–34 °C. Slices were perfused at a rate of ∼1 ml/min with artificial cerebrospinal fluid (ACSF) containing (in mM) 119 NaCl, 26 NaHCO3, 10 glucose, 2.5 KCl, 2.5 CaCl2, 1.3 MgCl2, 1 NaH2PO4, and continuously oxygenated with carbogen. Slices were allowed to recover for at least 1.5 hr after preparation before they were transferred into the recording chamber.
 
-## Connectivity
+#### Connectivity
 
 Recordings were performed in ACSF at 32–34°C in a submerged-type recording chamber. Cells in the CA3 were identified using infrared differential contrast microscopy (BX51WI, Olympus). We performed somatic whole-cell patch-clamp recordings (pipette resistance 3–5 MΩ) of up to eight cells simultaneously. One cell was stimulated with a train of four action potentials at 20 Hz, elicited by 2–3 ms long current injections of 1.5–4 nA. For characterization to confirm the targeting of pyramidal cells, increasing steps of current were injected (1 s, increment: 50 pA). In some cells, a hyperpolarizing or depolarizing holding current was applied to keep the membrane potential at -60 mV. The intracellular solution contained (in mM) 135 potassium-gluconate, 6.0 KCl, 2.0 MgCl2, 0.2 EGTA, 5.0 Na2-phosphocreatine, 2.0 Na2-ATP, 0.5 Na2-GTP, 10 HEPES buffer, and 0.2% biocytin. The pH was adjusted to 7.2 with KOH. Recordings were performed using Multiclamp 700B amplifiers (Molecular Devices). Signals were filtered at 6 kHz, sampled at 20 kHz and digitized at 16 bit resolution using the Digidata 1550 and pClamp 10.7 (Molecular Devices). A subset of the data (n = 238 out of 348 cells) was published in a separate study (Sammons et al., 2024).
 
-## Data analysis — connectivity
+#### Data analysis — connectivity
 
-Cells with a membrane potential less negative than −50 mV and a series resistance higher than 30 MΩ were discarded. The connectivity screen underwent a quality control step such that only sweeps were kept if presynaptic action potentials reversed above 0 mV and the membrane potential did not deviate by more than 10% within a sweep or with reference to the first sweep. Synaptic connections were identified when there was a postsynaptic potential corresponding to presynaptic stimulation in the averaged trace of 40–50 sweeps. A baseline period (2 ms) just prior to stimulation and the averaged postsynaptic peak during the first action potential was used for the analysis of EPSP amplitudes and synaptic delays. Only pairs in which the first postsynaptic peak was clearly discernible were used for analysis. To analyze short-term plasticity dynamics, postsynaptic traces were deconvolved as described by Richardson and Silberberg, 2008. The time constant, τ\begin{document}$  \tau$\end{document}, was set to 55 ms and the deconvolved trace was low-pass filtered. Subsequent evoked EPSP peaks were normalized to the first evoked EPSP in the trace. Synaptic dynamics were compared across connection types by comparing the ratio of the first and fourth EPSPs across groups. Failure rate was calculated by dividing the number of sweeps in which an EPSP was observed by the total number of sweeps. This value was calculated for each of the possible four EPSPs corresponding to the four presynaptic action potentials, and then a total sum for each cell was taken. For all boxplots, boxes cover quartiles and whiskers show entire distribution of data excluding outliers, which are shown additionally as filled black circles and considered to be 1.5 x interquartile range. In Figure 2C and D all data points are shown as coloured, filled circles. Statistics were carried out in Python using the scipy stats module, with a significance level set to 0.05. Data were first checked for normality using the Shapiro-Wilk test. Subsequently, non-parametric tests were performed as appropriate and the Bonferroni correction method was applied to account for multiple comparisons. Raw data used to create Figures 1—3 is available on FigShare at https://doi.org/10.6084/m9.figshare.29390549.v1.
+Cells with a membrane potential less negative than −50 mV and a series resistance higher than 30 MΩ were discarded. The connectivity screen underwent a quality control step such that only sweeps were kept if presynaptic action potentials reversed above 0 mV and the membrane potential did not deviate by more than 10% within a sweep or with reference to the first sweep. Synaptic connections were identified when there was a postsynaptic potential corresponding to presynaptic stimulation in the averaged trace of 40–50 sweeps. A baseline period (2 ms) just prior to stimulation and the averaged postsynaptic peak during the first action potential was used for the analysis of EPSP amplitudes and synaptic delays. Only pairs in which the first postsynaptic peak was clearly discernible were used for analysis. To analyze short-term plasticity dynamics, postsynaptic traces were deconvolved as described by Richardson and Silberberg, 2008. The time constant, $\tau$, was set to 55 ms and the deconvolved trace was low-pass filtered. Subsequent evoked EPSP peaks were normalized to the first evoked EPSP in the trace. Synaptic dynamics were compared across connection types by comparing the ratio of the first and fourth EPSPs across groups. Failure rate was calculated by dividing the number of sweeps in which an EPSP was observed by the total number of sweeps. This value was calculated for each of the possible four EPSPs corresponding to the four presynaptic action potentials, and then a total sum for each cell was taken. For all boxplots, boxes cover quartiles and whiskers show entire distribution of data excluding outliers, which are shown additionally as filled black circles and considered to be 1.5 x interquartile range. In Figure 2C and D all data points are shown as coloured, filled circles. Statistics were carried out in Python using the scipy stats module, with a significance level set to 0.05. Data were first checked for normality using the Shapiro-Wilk test. Subsequently, non-parametric tests were performed as appropriate and the Bonferroni correction method was applied to account for multiple comparisons. Raw data used to create Figures 1—3 is available on FigShare at https://doi.org/10.6084/m9.figshare.29390549.v1.
 
-## Data analysis — immunohistochemistry and neuroanatomy of principal cells
+#### Data analysis — immunohistochemistry and neuroanatomy of principal cells
 
 After recording, slices were transferred into a fixative solution containing 4% paraformaldehyde in 0.1 M phosphate buffer. Biocytin labelling was revealed by incubating slices in streptavidin conjugated to Alexa 488 (diluted 1:500) overnight in a solution of PBS containing 2.5% normal goat serum and 1% Triton. The slices were then mounted in Mowiol (Sigma-Aldrich). Image stacks of specimens were imaged on an Olympus BX61 FV1000 confocal microscope. Images were taken using a ×20 objective with a pixel size of 0.62 µm and a z-step size of 1 µm. The morphology of the pyramidal neurons was scored as ‘thorny’ or ‘athorny’ based on the presence or absence of thorny excrescences, respectively. Each cell was scored by at least three independent investigators to ensure that in ambiguous cases a consensus was reached. Location of cells relative to the stratum oriens was measured in Fiji (Schindelin et al., 2012) using the line tool and drawing a perpendicular line from the base of the cell soma to the estimated edge of the pyramidal layer at the side of the stratum oriens.
 
-## Computational model
+### Computational model
 
-## Model equations
+#### Model equations
 
-Neurons are modeled as adaptive exponential (AdEx) integrate-and-fire neurons (Brette and Gerstner, 2005). This level of complexity (two dynamic variables: voltage and adaptation) is necessary to capture the diverse firing patterns of different neural populations. In addition, neuronal adaptation has been proposed as the main mechanism governing the alternation between SPW and non-SPW states (Levenstein et al., 2019). In the AdEx model, the membrane potential Vi\begin{document}$  V_{i}$\end{document} of each neuron i\begin{document}$  i$\end{document} evolves according to the equation(1)CV˙i(t)=−gL(Vi(t)−EL)+gLΔTexp⁡(Vi(t)−VTΔT)−ui(t)+Iext+Isyn(t)\begin{document}$$\displaystyle  C \dot V_i(t) =-g_L(V_i(t)-E_L)+g_L\Delta_T\exp\left(\frac{V_i(t)-V_T}{\Delta_T}\right)-u_i(t)+I_{ext}+I_{syn}(t)$$\end{document}
+Neurons are modeled as adaptive exponential (AdEx) integrate-and-fire neurons (Brette and Gerstner, 2005). This level of complexity (two dynamic variables: voltage and adaptation) is necessary to capture the diverse firing patterns of different neural populations. In addition, neuronal adaptation has been proposed as the main mechanism governing the alternation between SPW and non-SPW states (Levenstein et al., 2019). In the AdEx model, the membrane potential $V_{i}$ of each neuron $i$ evolves according to the equation
 
-where C\begin{document}$  C$\end{document} is the membrane capacitance, EL\begin{document}$  E_{L}$\end{document} is the resting potential, gL\begin{document}$  g_{L}$\end{document} is the leak conductance, and VT\begin{document}$  V_{T}$\end{document} is the threshold potential. Slightly above this threshold, the membrane potential escapes from the basin of attraction of EL\begin{document}$  E_{L}$\end{document} and begins an exponential upswing with a slope ΔT\begin{document}$  \Delta_{T}$\end{document}. As soon as the upswing reaches a conventional value Vstop\begin{document}$  V_{stop}$\end{document}, a spike is emitted and Vi\begin{document}$  V_{i}$\end{document} is reset to a value Vreset\begin{document}$  V_{reset}$\end{document} and fixed there for a refractory time τref\begin{document}$  \tau_{ref}$\end{document}. Neurons receive an internal feedback inhibition ui(t)\begin{document}$  u_{i}(t)$\end{document}, representing an adaptive current, which evolves according to(2)τuu˙i(t)=−ui(t)+a(Vi(t)−EL)\begin{document}$$\displaystyle  \tau_{u}\dot u_i(t)=-u_i(t)+a(V_i(t)-E_L)$$\end{document}
+$$
+CV˙_{i}(t)=−g_{L}(V_{i}(t)−E_{L})+g_{L}Δ_{T}exp⁡(\frac{V_{i}(t)−V_{T}}{Δ_{T}})−u_{i}(t)+I_{ext}+I_{syn}(t)
+$$
 
-in which a\begin{document}$  a$\end{document} is the voltage-coupling of adaptation and τu\begin{document}$  \tau_{u}$\end{document} is its timescale. Upon spiking, u\begin{document}$  u$\end{document} is increased by an amount b\begin{document}$  b$\end{document} (spike-triggered adaptation). Neurons receive a constant external input Iext\begin{document}$  I_{ext}$\end{document} and a synaptic current Isyn(t)=∑JgiJ(t)(Vi(t)−ErevJ)\begin{document}$I_{syn}(t)=\sum_{J}g_{i}^{J}(t)(V_{i}(t)-E_{rev}^{J})$\end{document}, where ErevJ\begin{document}$  E_{rev}^{J}$\end{document} is the reversal potential for the neurotransmitter used by the pre-synaptic population J\begin{document}$  J$\end{document}, and giJ(t)\begin{document}$  g_{i}^{J}(t)$\end{document} is the total synaptic conductance received from the neurons in population J\begin{document}$  J$\end{document}, which obeys(3)g˙iJ(t)=−giJτdJ+∑f,jδ(t−tjf−τl)pIJwIJ,\begin{document}$$\displaystyle  \dot g_i^{J}(t) = -\frac{g_i^J}{\tau_d^J}+\sum_{f,j}\delta(t-t_j^f-\tau_l)p_{IJ}w_{IJ},$$\end{document}
+where $C$ is the membrane capacitance, $E_{L}$ is the resting potential, $g_{L}$ is the leak conductance, and $V_{T}$ is the threshold potential. Slightly above this threshold, the membrane potential escapes from the basin of attraction of $E_{L}$ and begins an exponential upswing with a slope $Δ_{T}$. As soon as the upswing reaches a conventional value $V_{stop}$, a spike is emitted and $V_{i}$ is reset to a value $V_{reset}$ and fixed there for a refractory time $\tau_{ref}$. Neurons receive an internal feedback inhibition $u_{i}(t)$, representing an adaptive current, which evolves according to
 
-where τdJ\begin{document}$  \tau_{d}^{J}$\end{document} is the synaptic decay constant for population J\begin{document}$  J$\end{document}, and τl\begin{document}$  \tau_{l}$\end{document} is the synaptic latency. The contribution of each pre-synaptic spike at time tjf\begin{document}$t_{j}^{f}$\end{document} is determined by a connection probability pIJ∈[0,1]\begin{document}$p_{IJ}\in[0,1]$\end{document} and a weight wIJ\begin{document}$  w_{IJ}$\end{document}. In the model variant with short-term synaptic depression, for each pair of connected excitatory neurons i\begin{document}$  i$\end{document} and j\begin{document}$  j$\end{document} in populations I\begin{document}$  I$\end{document} and J\begin{document}$J$\end{document}, the weight wIJ\begin{document}$  w_{IJ}$\end{document} is scaled by an efficacy factor eij\begin{document}$  e_{ij}$\end{document}, which follows its own dynamics:(4)e˙ij=1−eijτdep−∑fδ(t−tjf)eijηdep,\begin{document}$$\displaystyle  \dot e_{ij}=\frac{1-e_{ij}}{\tau_{dep}}-\sum_f \delta(t-t_j^f)e_{ij}\eta_{dep},$$\end{document}
+$$
+\tau_{u}u˙_{i}(t)=−u_{i}(t)+a(V_{i}(t)−E_{L})
+$$
 
-where τdep\begin{document}$  \tau_{dep}$\end{document} is the time constant of synaptic depression and ηdep\begin{document}$  \eta_{dep}$\end{document} is the depression rate. In the model variant with heterogeneous parameters, the synaptic weights wij\begin{document}$  w_{ij}$\end{document} between excitatory neurons j\begin{document}$  j$\end{document} and i\begin{document}$  i$\end{document} are sampled from a distribution with mean wIJ\begin{document}$  w_{IJ}$\end{document} and standard deviation 14wIJ\begin{document}$\frac{1}{4}w_{IJ}$\end{document}. The synaptic latencies between excitatory neurons are sampled from a distribution with mean τl\begin{document}$  \tau_{l}$\end{document} and standard deviation 14τl\begin{document}$\frac{1}{4}\tau_{l}$\end{document}, while the resting potential of excitatory neurons has standard deviation 120EL\begin{document}$\frac{1}{20}E_{L}$\end{document} and their leak conductance has standard deviation 14EL\begin{document}$\frac{1}{4}E_{L}$\end{document}.
+in which $a$ is the voltage-coupling of adaptation and $\tau_{u}$ is its timescale. Upon spiking, $u$ is increased by an amount $b$ (spike-triggered adaptation). Neurons receive a constant external input $I_{ext}$ and a synaptic current $I_{syn}(t)=\sumJg_{i}^{J}(t)(V_{i}(t)−E_{rev}^{J})$, where $E_{rev}^{J}$ is the reversal potential for the neurotransmitter used by the pre-synaptic population $J$, and $g_{i}^{J}(t)$ is the total synaptic conductance received from the neurons in population $J$, which obeys
 
-## Single neuron parameters
+$$
+g˙_{i}^{J}(t)=−\frac{g_{i}^{J}}{\tau_{d}^{J}}+\sumf,j\delta(t−t_{j}^{f}−\tau_{l})p_{IJ}w_{IJ},
+$$
+
+where $\tau_{d}^{J}$ is the synaptic decay constant for population $J$, and $\tau_{l}$ is the synaptic latency. The contribution of each pre-synaptic spike at time $t_{j}^{f}$ is determined by a connection probability $p_{IJ}\in[0,1]$ and a weight $w_{IJ}$. In the model variant with short-term synaptic depression, for each pair of connected excitatory neurons $i$ and $j$ in populations $I$ and $J$, the weight $w_{IJ}$ is scaled by an efficacy factor $e_{ij}$, which follows its own dynamics:
+
+$$
+e˙_{ij}=\frac{1−e_{ij}}{\tau_{dep}}−\sumf\delta(t−t_{j}^{f})e_{ij}η_{dep},
+$$
+
+where $\tau_{dep}$ is the time constant of synaptic depression and $η_{dep}$ is the depression rate. In the model variant with heterogeneous parameters, the synaptic weights $w_{ij}$ between excitatory neurons $j$ and $i$ are sampled from a distribution with mean $w_{IJ}$ and standard deviation $\frac{1}{4}w_{IJ}$. The synaptic latencies between excitatory neurons are sampled from a distribution with mean $\tau_{l}$ and standard deviation $\frac{1}{4}\tau_{l}$, while the resting potential of excitatory neurons has standard deviation $\frac{1}{20}E_{L}$ and their leak conductance has standard deviation $\frac{1}{4}E_{L}$.
+
+### Single neuron parameters
 
 We consider four different neural populations: thorny pyramids (T), athorny pyramids (A), PV+-basket cells (B), and anti-SPW interneurons (C). The latter are modeled as CCK+-basket cells. For each population, parameters were chosen in order to be close to the single-neuron physiology. For A and T neurons, we follow the main figures and supplementary data by Hunt et al., 2018 and Linaro et al., 2022, since they performed detailed single-neuron physiological characterization of the two neuron types. Namely, athorny neurons were shown to have a higher input resistance, a higher resting potential, and a lower firing threshold than their thorny counterparts, and both kinds have a high reset potential. In particular, we reset athorny neurons above the threshold, because this is how the AdEx model produces bursting (Naud et al., 2008), a feature that has been reported in this cell type (Hunt et al., 2018). Our parameters result in a lower rheobase for athorny than for thorny neurons (Hunt et al., 2018, Linaro et al., 2022, Figure 1—figure supplement 1). Interneuron parameters were based on data from CA3, if available (Fidzinski et al., 2015; Pelkey et al., 2017), or otherwise from other hippocampal subfields (Ledri et al., 2012; Pawelzik et al., 2002; Tricoire et al., 2011).
 
-The parameters of adaptation cannot be directly compared to physiological values, because this variable summarizes a multitude of different currents, each with its own size and timescale (Benda, 2021). Therefore, we firstly aimed at reproducing the f-I curves of different neurons, when available (Figure 4—figure supplement 1). Thorny and athorny f-I curves were compared to those measured by Linaro et al., 2022, while for PV+- basket cells we used CA3 data from Fidzinski et al., 2015. In addition, the large spike-coupling b\begin{document}$  b$\end{document} and long timescale τu\begin{document}$  \tau_{u}$\end{document} of pyramidal adaptation allow to reproduce the strong firing rate accommodation typical of these cells (Storm, 1990; Hunt et al., 2018), while these parameters are smaller in A and especially B cells, which can sustain a high firing rate without significant accommodation (Pelkey et al., 2017). In the AdEx model, if the voltage-coupling a\begin{document}$  a$\end{document} is strong enough, spiking happens through a Hopf bifurcation, which is responsible for phenomena like transient spiking and class 2 behaviour (Touboul and Brette, 2008). Therefore, we set this parameter to 0 for thorny cells, in which these behaviours are absent, and to a higher value for athorny cells, which seem to exhibit transient spiking for intermediate values of a constant input (Hunt et al., 2018), and for interneurons. In particular, for B cells, we could reproduce the discontinuity around 15 Hz typical of fast-spiking interneurons (Gerstner et al., 2014). Neuronal parameters and their values are summarized in Table 1.
+The parameters of adaptation cannot be directly compared to physiological values, because this variable summarizes a multitude of different currents, each with its own size and timescale (Benda, 2021). Therefore, we firstly aimed at reproducing the f-I curves of different neurons, when available (Figure 4—figure supplement 1). Thorny and athorny f-I curves were compared to those measured by Linaro et al., 2022, while for PV+- basket cells we used CA3 data from Fidzinski et al., 2015. In addition, the large spike-coupling $b$ and long timescale $\tau_{u}$ of pyramidal adaptation allow to reproduce the strong firing rate accommodation typical of these cells (Storm, 1990; Hunt et al., 2018), while these parameters are smaller in A and especially B cells, which can sustain a high firing rate without significant accommodation (Pelkey et al., 2017). In the AdEx model, if the voltage-coupling $a$ is strong enough, spiking happens through a Hopf bifurcation, which is responsible for phenomena like transient spiking and class 2 behaviour (Touboul and Brette, 2008). Therefore, we set this parameter to 0 for thorny cells, in which these behaviours are absent, and to a higher value for athorny cells, which seem to exhibit transient spiking for intermediate values of a constant input (Hunt et al., 2018), and for interneurons. In particular, for B cells, we could reproduce the discontinuity around 15 Hz typical of fast-spiking interneurons (Gerstner et al., 2014). Neuronal parameters and their values are summarized in Table 1.
 
-## Network parameters
+### Network parameters
 
-Each population size is based on an estimation of its representation in a 400-µm-thick CA3 slice, according to the quantitative assessment by Bezaire and Soltesz, 2013. Pyramidal neurons are divided into thorny and athorny according to the 66–34% ratio that we determined experimentally. The background currents Iext\begin{document}$  I_{ext}$\end{document} are constant and correspond to the non-transient rheobase ρ\begin{document}$  \rho$\end{document}, plus 10%, with the exception of population A, which receives +40% because it is responsible for keeping the other neurons inhibited for most of the time. This assumption is reasonable, since CCK+- basket cells ‘receive a far less efficient local excitatory drive, but are exposed to modulatory effects of extrinsic inputs (Freund, 2003).’
+Each population size is based on an estimation of its representation in a 400-µm-thick CA3 slice, according to the quantitative assessment by Bezaire and Soltesz, 2013. Pyramidal neurons are divided into thorny and athorny according to the 66–34% ratio that we determined experimentally. The background currents $I_{ext}$ are constant and correspond to the non-transient rheobase $ρ$, plus 10%, with the exception of population A, which receives +40% because it is responsible for keeping the other neurons inhibited for most of the time. This assumption is reasonable, since CCK+- basket cells ‘receive a far less efficient local excitatory drive, but are exposed to modulatory effects of extrinsic inputs (Freund, 2003).’
 
-Neurons are connected to each other with a probability pIJ\begin{document}$  p_{IJ}$\end{document}, depending on the pre- and post-synaptic population J\begin{document}$  J$\end{document} and I\begin{document}$I$\end{document}. For excitatory-to-excitatory connections, these probabilities have the values that we assessed experimentally. For the other connections, the existent literature is too inconsistent to derive coherent conclusions (Gulyás et al., 1993; Maccaferri et al., 2000; Mátyás et al., 2004; Bezaire and Soltesz, 2013; Campanac et al., 2013; Kohus et al., 2016; Pelkey et al., 2017; Dudok et al., 2021): therefore, in order to minimize the number of assumptions not based on solid evidence, they were all given the same probability 0.2.
+Neurons are connected to each other with a probability $p_{IJ}$, depending on the pre- and post-synaptic population $J$ and $I$. For excitatory-to-excitatory connections, these probabilities have the values that we assessed experimentally. For the other connections, the existent literature is too inconsistent to derive coherent conclusions (Gulyás et al., 1993; Maccaferri et al., 2000; Mátyás et al., 2004; Bezaire and Soltesz, 2013; Campanac et al., 2013; Kohus et al., 2016; Pelkey et al., 2017; Dudok et al., 2021): therefore, in order to minimize the number of assumptions not based on solid evidence, they were all given the same probability 0.2.
 
 Excitatory-to-excitatory synaptic weights were all set to 0.2 nS, since differences in EPSP sizes were not found to be significant (Figure 2C). These values correspond to an EPSP size of 0.1 mV, which is lower than the ones measured experimentally, but compensates for the fact that they directly affect the (somatic) membrane potential of the post-synaptic neurons neurons and that connections are homogeneous. The weights involving population C were chosen in order to satisfy the basic requirements for bistability and disinhibition dynamics: the search for the bistable region of the parameter space was guided by the insights previously obtained in the bifurcation analysis of a three-population model of CA3 (Evangelista et al., 2020). Although our model has one more population, we found that the basic requirements are the same: pyramidal cells need to more strongly excite interneurons B and to be more strongly inhibited by interneurons C. In addition, populations C and B need to have strong inhibitory couplings between each other. For firing rate requirements, we assumed, following Evangelista et al., 2020, that C neurons fire ∼10 spikes/s in non-SPW states and are almost silent during SPWs. These choices are assumptions on population C, which still need to be tested experimentally. For the connections between B neurons and pyramidal cells, the main criterion was to balance the effect of the strong recurrent excitation, in order to achieve a realistic firing rate for pyramidal neurons and B cells themselves during SPWs. For B neurons, we based on estimates on 5–10 spikes/s in the non-SPW periods and fast spiking at 50–70 during SPWs (Klausberger and Somogyi, 2008; Lapray et al., 2012; Varga et al., 2012; Hájos et al., 2013). Pyramidal neurons are almost silent (0–1 spikes/s) in non-SPW periods and fire on average 10–20 spikes/s in SPW events (Klausberger and Somogyi, 2008; Lapray et al., 2012; Hájos et al., 2013; English et al., 2014). In order to satisfy these requirements, inhibitory weights needed to be about one order of magnitude larger than excitatory ones, which is partially in accordance with the hippocampal interneuron literature mentioned above, and partially necessary because not all kinds of interneurons are included in the network. The resulting non-SPW activity of our pyramidal populations is 0.4 spikes/s for T cells and 0.4 spikes/s for A cells.
 
 Regarding the other synaptic parameters, all the latencies were set to 1 ms, glutamatergic and GABAergic reversal potentials have the typical values of 0 mV and –70 mV, respectively, and the former are assumed to be twice as fast as the latter (Geiger et al., 1995; Bartos et al., 2002). Network parameters are summarized in Table 2.
 
-## Network activity
+**Table 2.**
+ Network parameters.Parameter adjustments for the model variants with short-term synaptic depression and heterogeneity are reported in Supplementary file 1.
 
-SPW events are identified based on the current flowing from B cells to the excitatory ones, which is thought to represent most of the LFP signal observed in the stratum pyramidale. This signal is low-pass filtered up to 5 Hz, in order to cover the whole duration of an event. In this signal, peaks higher than 50 pA are regarded as SPWs. The beginning and end of the events are defined as the times at which the low-pass-filtered LFP crosses the value 12(Lp−L0)\begin{document}$\frac{1}{2}(L_{p}-L_{0})$\end{document}, where Lp\begin{document}$  L_{p}$\end{document} is the LFP peak of each event and L0\begin{document}$  L_{0}$\end{document} is a baseline value. Within each sharp wave, we record the peak timing of the firing rate of both the athorny and the thorny populations. In case a single population presents two peaks that are more than 50 ms apart, they are recorded as separate peaks and only the first one is used for the statistics in Figure 5 and Figure 5—figure supplement 1.
 
-When varying connectivities as in Figures 4 and 5, we up- or down-scale the synaptic strength wIJ\begin{document}$  w_{IJ}$\end{document} of all the four excitatory-to-excitatory connections by a common factor, in order to still obtain sharp waves with a similar average size of the LFP peak (±10 pA). Since the LFP peak is estimated based on the current flowing from the B interneurons, this criterion is not biased toward either pyramidal population. In Figure 5—figure supplement 1, we repeat the simulations in Figure 5A, but this time the scaling is done with the synaptic strength of the A→B and T→B connections, which are highly relevant for the sharp wave size, but in Figure 5B were found to be little relevant for the timing of the peaks.
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>From A</th>
+      <th>From T</th>
+      <th>From B</th>
+      <th>From C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pAI\begin{document}$  p_{AI}$\end{document}</td>
+      <td></td>
+      <td>15%</td>
+      <td>11%</td>
+      <td>20%</td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td>pTI\begin{document}$  p_{TI}$\end{document}</td>
+      <td></td>
+      <td>4%</td>
+      <td>8%</td>
+      <td>20%</td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td>pBI\begin{document}$  p_{BI}$\end{document}</td>
+      <td></td>
+      <td>20%</td>
+      <td>20%</td>
+      <td>20%</td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td>pCI\begin{document}$  p_{CI}$\end{document}</td>
+      <td></td>
+      <td>20%</td>
+      <td>20%</td>
+      <td>20%</td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td>wAI\begin{document}$  w_{AI}$\end{document}</td>
+      <td>[nS]</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>2.15</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>wTI\begin{document}$  w_{TI}$\end{document}</td>
+      <td>[nS]</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.8</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>wBI\begin{document}$  w_{BI}$\end{document}</td>
+      <td>[nS]</td>
+      <td>0.7</td>
+      <td>0.5</td>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>wCI\begin{document}$  w_{CI}$\end{document}</td>
+      <td>[nS]</td>
+      <td>0.1</td>
+      <td>0.05</td>
+      <td>5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>τd\begin{document}$  \tau_{d}$\end{document}</td>
+      <td>[ms]</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Erev\begin{document}$  E_{rev}$\end{document}</td>
+      <td>[mV]</td>
+      <td>0</td>
+      <td>0</td>
+      <td>–70</td>
+      <td>–70</td>
+    </tr>
+    <tr>
+      <td>τl\begin{document}$  \tau_{l}$\end{document}</td>
+      <td>[ms]</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Network activity
+
+SPW events are identified based on the current flowing from B cells to the excitatory ones, which is thought to represent most of the LFP signal observed in the stratum pyramidale. This signal is low-pass filtered up to 5 Hz, in order to cover the whole duration of an event. In this signal, peaks higher than 50 pA are regarded as SPWs. The beginning and end of the events are defined as the times at which the low-pass-filtered LFP crosses the value $\frac{1}{2}(L_{p}−L_{0})$, where $L_{p}$ is the LFP peak of each event and $L_{0}$ is a baseline value. Within each sharp wave, we record the peak timing of the firing rate of both the athorny and the thorny populations. In case a single population presents two peaks that are more than 50 ms apart, they are recorded as separate peaks and only the first one is used for the statistics in Figure 5 and Figure 5—figure supplement 1.
+
+When varying connectivities as in Figures 4 and 5, we up- or down-scale the synaptic strength $w_{IJ}$ of all the four excitatory-to-excitatory connections by a common factor, in order to still obtain sharp waves with a similar average size of the LFP peak (±10 pA). Since the LFP peak is estimated based on the current flowing from the B interneurons, this criterion is not biased toward either pyramidal population. In Figure 5—figure supplement 1, we repeat the simulations in Figure 5A, but this time the scaling is done with the synaptic strength of the A→B and T→B connections, which are highly relevant for the sharp wave size, but in Figure 5B were found to be little relevant for the timing of the peaks.

@@ -21,9 +21,48 @@ Medaka (Oryzias latipes species complex) is a small, egg-laying freshwater fish 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/46994/elife-46994-fig1-v1.jpg)
 
-**Figure 1.:** Oryzias latipes.(A) Male (right) and female (left) Oryzias latipes from Kiyosu (Photo by Felix Loosli). Males can be easily distinguished from females by their elongated anal and dorsal fins. (B) A school of medaka in their natural habitat. (C) Approximate distributional limits of the ricefishes family, the Adrianichthyidae (black), following Parenti (2008) with the locations from which some of the most famous medaka strains are derived (blue). The Indonesian island Sulawesi represents a ricefish biodiversity hotspot (red).
+**Figure 1.:** (A) Male (right) and female (left) Oryzias latipes from Kiyosu (Photo by Felix Loosli). Males can be easily distinguished from females by their elongated anal and dorsal fins. (B) A school of medaka in their natural habitat. (C) Approximate distributional limits of the ricefishes family, the Adrianichthyidae (black), following Parenti (2008) with the locations from which some of the most famous medaka strains are derived (blue). The Indonesian island Sulawesi represents a ricefish biodiversity hotspot (red).
 
 The first medaka species was described as Poecilia latipes by Temminck and Schlegel (1846) in the Fauna Japonica based on collections by the German physician and naturalist Philipp Franz von Siebhold. It was reclassified in the genus Oryzias by Jordan and Snyder (1906) to become Oryzias latipes, and, more recently, it has become clear that the medaka comprises a species complex rather that a single species (Table 1).
+
+**Table 1.**
+ Medaka nomenclature.The model organism medaka comprises several species and deeply divergent lineages from the Oryzias latipes species complex. Hence, in this article we only use the term “medaka” when we collectively refer to lineages within the Oryzias latipes species complex in the context of the model system. Common or scientific species names are used to specifically refer to individual lineages as shown in this table.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Common names</th>
+      <th>Scientific name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Japanese medaka, Southern (Japanese) population</td>
+      <td>O. latipes</td>
+    </tr>
+    <tr>
+      <td>Northern medaka, Northern (Japanese) population</td>
+      <td>O. sakaizumii</td>
+    </tr>
+    <tr>
+      <td>East Korean population</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>China–West Korean population</td>
+      <td>O. sinensis</td>
+    </tr>
+    <tr>
+      <td>Chinese medaka</td>
+      <td>O. sinensis</td>
+    </tr>
+    <tr>
+      <td>Taiwanese population, Taiwanese medaka</td>
+      <td>O. cf. sinensis</td>
+    </tr>
+  </tbody>
+</table>
 
 The traditional breeding of naturally occurring color mutants led to experiments in the early 20th century that sparked the medaka’s role as a model organism. It later proved to be an ideal laboratory organism that was easy to maintain due to its small body size, and its simple dietary and habitat requirements. The combination of a sexual dimorphism, short generation times, large and transparent eggs with easily observable development, high tolerance to inbreeding and a comparably small genome size (~700 Mb) also made medaka suitable for a wide range of studies (Braasch et al., 2015; Kasahara et al., 2007; Kirchmaier et al., 2015; Parenti, 2008; Wittbrodt et al., 2002). Today, the medaka is a fully fledged model vertebrate that is deeply rooted within the life sciences (Hori, 2011; Kirchmaier et al., 2015; Shima and Mitani, 2004; Takeda and Shimada, 2010; Wittbrodt et al., 2002).
 
@@ -43,7 +82,7 @@ Overall, relatively little of our current knowledge on the biology of medaka has
 
 ## Natural diversity of medaka
 
-## The Oryzias latipes complex
+### The Oryzias latipes complex
 
 Differences between Japanese medaka populations were recognized early on (Sakaizumi, 1984), but it is only now that the scientific community has begun to fully appreciate the diversity summarized within the “medaka”. For a long time, the so-called northern and southern Japanese populations, from which the two most famous medaka inbred lines (Hd-rR and HNI) are derived, were regarded as a single species: Oryzias latipes (Figure 1C). Yet accumulating evidence suggested that these lines represent different species. Hence, the northern Japanese population was described as a new species: Oryzias sakaizumii by Asai et al., 2011, and medaka is now frequently referred to as “Oryzias latipes species complex” (Iguchi et al., 2018; Kawajiri et al., 2015; Takehana et al., 2016). Depending on the method, Oryzias latipes and Oryzias sakaizumii were estimated to have diverged between 3 and 8 million years ago (Figure 2A, Katsumura et al., 2019; Takehana et al., 2003; but see Setiamarga et al., 2009). They differ in a number of traits including craniofacial anatomy (Kimura et al., 2007), body coloration (Asai et al., 2011), aggressiveness (Kagawa, 2014) and the degree of sexual dimorphism of the dorsal fin (Asai et al., 2011), the last of which is likely mediated by different sex steroid levels during development (Katsumura et al., 2014; Kawajiri et al., 2015). Nonetheless, both species produce viable hybrid offspring in the laboratory (e.g. Murata et al., 2012) and current evidence also suggests limited gene flow in the wild (Iguchi et al., 2018; Katsumura et al., 2019). Oryzias latipes and O. sakaizumii thus offer the opportunity to gain insight into the evolution of physiological and behavioral trait disparity and their genetic bases. Recent insight into the biogeography of the medaka also suggests that O. latipes colonized the main island of Japan from the south (i.e., from Kyushu) and subsequently dispersed along the Pacific coast (Katsumura et al., 2019). In contrast, Oryzias sakaizumii likely originated on the western side of the Japanese Alps, which still largely separate both species in their current distribution (Figure 2A, Katsumura et al., 2019).
 
@@ -53,25 +92,25 @@ Differences between Japanese medaka populations were recognized early on (Sakaiz
 
 The Korean medaka lineages are genetically divergent from the Japanese species and also highly structured (Figures 1C and 2A). They comprise at least two subgroups that have been referred to as the East Korean (HSOK strain) and China–West Korean populations (Ds et al., 2013; Kang et al., 2005; Katsumura et al., 2019; Parenti, 2008). Although still frequently referred to as O. latipes (see Katsumura et al., 2019; Spivakov et al., 2014; Takeda and Shimada, 2010), the China–West Korean population together with populations from Taiwan, likely represents a different species: Oryzias sinensis (see Ds et al., 2013; Parenti, 2008; Tzeng et al., 2006). While further data are required, mitochondrial phylogenies indicate the existence of a locally restricted ancient Taiwanese medaka lineage and two lineages derived from more recent invasion events (Tzeng et al., 2006). Continental O. sinensis are also genetically diverse and geographically distant populations exhibit signatures of divergence, for example, between Shanghai and Korea (Katsumura et al., 2019). However, comprehensive studies covering the morphological and genetic diversity in continental Asia are still lacking. Such studies will be quintessential to recognize species limits and distribution patterns in the future. Generally, whether or not divergent lineages within the O. latipes species complex represent different species is still treated controversially and inconsistently in the current literature (see Katsumura et al., 2019; Parenti, 2008; Sasaki and Yamahira, 2016; Spivakov et al., 2014; Tzeng et al., 2006). Aside from the underlying taxonomic debate, information about the degree of divergence and abundance of gene flow between lineages is fundamental for the design of experiments, as well as the interpretation and integration of their results.
 
-## Latitudinal adaptation in Japanese medaka species
+### Latitudinal adaptation in Japanese medaka species
 
 The wide range of Japanese medaka species has inspired research on latitudinal adaptation. For example, a recent study identified differences in courtship between populations of O. sakaizumii, which were inferred to result from stronger sexual selection at lower latitudes (Sasaki and Yamahira, 2016). Additionally, juveniles of O. sakaizumii from higher latitudes compensate for a shorter growing season further north with faster growth rates (Yamahira and Takeshi, 2008). However, faster growth, which is achieved by higher feeding rates, comes with a cost and is accompanied by higher vulnerability for predation by dragonfly larvae (Suzuki et al., 2010). Hence, different growth capacities in O. sakaizumii likely evolve in response to both predation pressure and length of the growing season (Suzuki et al., 2010). One study also found delayed fin development in northern populations of O. sakaizumii compared to the southernmost populations of O. latipes, which was speculated to have evolved in a trade-off for faster body growth (Kawajiri et al., 2009). However, this study illustrates the caveats related to taxonomic uncertainties, because the authors unintentionally compared populations of different species and thus did not take other interspecific differences into consideration. Nonetheless, their interpretation might be accurate and interspecific diversity clearly represents a chance to gain insight into its evolution, if species boundaries are recognized.
 
 ## The diversity of medaka’s wild relatives
 
-## Ricefish phylogeny
+### Ricefish phylogeny
 
 Although mainly recognized for medaka, ricefishes comprise a considerable diversity with 36 described species in two genera (Oryzias: 32 species, Adrianichthys: four species, Asai et al., 2011; Herder et al., 2012a; Herder and Chapuis, 2010; Magtoon, 2010; Mandagi et al., 2018; Mokodongan et al., 2014; Parenti, 2008; Parenti et al., 2013; Parenti and Hadiaty, 2010). They form three major clades referred to as the latipes-, javanicus- and celebensis species group, the last of which diversified on Sulawesi, Indonesia (Figure 2A, Mokodongan and Yamahira, 2015; Takehana et al., 2005). With a total of 21 species and 19 local endemics, this island represents a hotspot of ricefish diversity (Figures 1C and 2A–B). Additionally, nine newly described species within the last decade, eight of them endemic to Sulawesi, suggest that both the global ricefish biodiversity as well as the ricefish fauna of Sulawesi are still underdescribed (Figure 2A). Nonetheless, the ricefishes known to science exhibit striking functional diversity, with relatively little of it understood or even investigated so far. In the following paragraphs we highlight research making use of ricefish diversity together with aspects that appear especially promising for future research endeavors.
 
-## Sex determination
+### Sex determination
 
 Sex determination mechanisms are highly variable in bony fishes (Heule et al., 2014) and genetic sex determination (SD) appears to be particularly diverse in ricefishes (Kondo et al., 2009; Matsuda and Sakaizumi, 2016; Myosho et al., 2015; Takehana et al., 2007a; Takehana et al., 2007b). So far, seven sex chromosomes and three different master SD genes have been identified in ricefish species (Figure 2A). For example, O. latipes has a young XY system in which dmrt1bY (dmy) on linkage group 1 (LG1) acts as the male SD gene (Matsuda, 2005; Matsuda et al., 2002). In contrast, gsdf on LG12 is the SD gene in O. luzonensis (Myosho et al., 2012), and sox3 on LG10 serves as SD gene in O. dancena, O. marmoratus and O. profundicola (Figure 2A, Myosho et al., 2015; Takehana et al., 2014). Oryzias hubbsi and O. javanicus even exhibit a ZW, i.e. female heterogametic, system, albeit with different sex chromosomes (Takehana et al., 2007b). This astonishing diversity of young sex determination systems inspired ongoing research on the molecular mechanisms underlying rapid sex chromosome turnover and the rewiring of gene regulatory networks that is required to establish new master SD genes (Herpin et al., 2010; Matsuda and Sakaizumi, 2016).
 
-## Salinity tolerance
+### Salinity tolerance
 
 Ricefishes live in hyper- and hypoosmotic environments and exhibit different levels of salinity tolerance (Hayakawa et al., 2015; Inoue and Takei, 2003; Inoue and Takei, 2002). While most Oryzias are primarily found in freshwater, O. javanicus and O. dancena (also referred to as O. melastigma, likely a synonym; Parenti, 2008; Roberts, 1998) occur in saltwater and brackish water, respectively. These species are being established as models for marine ecotoxicology to complement the medaka’s role in freshwater (Chen et al., 2011; Dong et al., 2014; Kang et al., 2013; Kim et al., 2018; Koyama et al., 2008). Mobility between freshwater and saltwater depends on an organism’s ability to adjust to the osmotic differences. Interestingly, Oryzias latipes can better adjust to saltwater when exposed to elevated levels of salinity earlier in life (Miyanishi et al., 2016). In contrast, species from some remote freshwater systems in Indonesia do not tolerate even small changes in osmolarity (Inoue and Takei, 2002; Myosho et al., 2018). The ability of O. latipes to acclimate to seawater was used to study the physiological and genetic basis of salt-water tolerance. Salinity tolerance in Oryzias is based on both genetic (Myosho et al., 2018, Ogoshi et al., 2015) and epigenetic factors, including an increase in the density of osmoregulating cells called ionocytes (Liu et al., 2016; Miyanishi et al., 2016) and an increase in activity of the same cells (Kang et al., 2008).
 
-## Sulawesi: A natural laboratory of ricefish diversity
+### Sulawesi: A natural laboratory of ricefish diversity
 
 In addition to their species richness, Sulawesi ricefishes stand out due to their diversity in several traits (Kottelat, 1990; Myosho et al., 2018; Myosho et al., 2015; Parenti, 2008). While most ricefishes are largely pale in color, Sulawesi ricefishes exhibit several different fin and nuptial colorations and males in the O. woworae complex evolved an outstanding iridescent blue ornamentation (Figure 2C, Parenti et al., 2013). This diversity allows us to expand on the tremendous knowledge of medaka color mutants and to investigate, for example, its genetic basis and the evolutionary role of coloration disparity in ricefishes. Ricefishes further have a wide range of body shapes and sizes (Parenti, 2008). Within the O. woworae species complex there is variation in body depth (Parenti et al., 2013), which likely evolved in response to different flow regimes (Mokodongan et al., 2018) and raises the question of interspecific diversity and plasticity of this trait. The largest ricefish A. poptae from the ancient Lake Poso reaches more than ten times the size of miniature species such as O. mekongensis (see Parenti, 2008). Investigating the evolutionary mechanisms that gave rise to the sympatric ricefish species flocks from Lake Poso (namely Oryzias orthognathus, O. nigrimas, O. nebulosus and Adrianichthys oophorus, A. kruyti, A. roseni, A. poptae) appears particularly intriguing (Mokodongan and Yamahira, 2015). Virtually nothing is known about the ecology and evolution of these species, but striking differences in their craniofacial anatomy point at specialization in their feeding habits as a potential driver of lineage diversification (Parenti, 2008; Parenti and Soeroto, 2004). Finally, a new reproductive strategy referred to as “pelvic brooding” has evolved in at least two lineages from Sulawesi (Herder et al., 2012a; Kottelat, 1990). Pelvic brooders do not deposit fertilized eggs, but instead carry their clutch until the fry hatches (Box 2, Iwamatsu, 2004; Iwamatsu et al., 2008; Parenti, 2008). While this innovation likely relies on a complex set of behavioral, physiological and anatomical adaptations, the adaptive benefit of this female investment remains unexplored. The potentially repeated and likely relatively recent evolution of pelvic brooding in combination with the available resources for medaka make it a promising system to gain insight into the molecular basis of evolutionary innovations, which is a central goal of evolutionary biology (Erwin, 2015; Shubin et al., 2009; Wagner and Lynch, 2010).
 

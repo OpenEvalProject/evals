@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.27744.001 Previous studies tracking AMPA receptor (AMPAR) diffusion at synapses observed a large mobile extrasynaptic AMPAR pool. Using super-resolution microscopy, we examined how fluorophore size and photostability affected AMPAR trafficking outside of, and within, post-synaptic densities (PSDs) from rats. Organic fluorescent dyes (≈4 nm), quantum dots, either small (≈10 nm diameter; sQDs) or big (>20 nm; bQDs), were coupled to AMPARs via different-sized linkers. We find that >90% of AMPARs labeled with fluorescent dyes or sQDs were diffusing in confined nanodomains in PSDs, which were stable for 15 min or longer. Less than 10% of sQD-AMPARs were extrasynaptic and highly mobile. In contrast, 5–10% of bQD-AMPARs were in PSDs and 90–95% were extrasynaptic as previously observed. Contrary to the hypothesis that AMPAR entry is limited by the occupancy of open PSD ‘slots’, our findings suggest that AMPARs rapidly enter stable ‘nanodomains’ in PSDs with lifetime > 15 min, and do not accumulate in extrasynaptic membranes.
+Previous studies tracking AMPA receptor (AMPAR) diffusion at synapses observed a large mobile extrasynaptic AMPAR pool. Using super-resolution microscopy, we examined how fluorophore size and photostability affected AMPAR trafficking outside of, and within, post-synaptic densities (PSDs) from rats. Organic fluorescent dyes (≈4 nm), quantum dots, either small (≈10 nm diameter; sQDs) or big (>20 nm; bQDs), were coupled to AMPARs via different-sized linkers. We find that >90% of AMPARs labeled with fluorescent dyes or sQDs were diffusing in confined nanodomains in PSDs, which were stable for 15 min or longer. Less than 10% of sQD-AMPARs were extrasynaptic and highly mobile. In contrast, 5–10% of bQD-AMPARs were in PSDs and 90–95% were extrasynaptic as previously observed. Contrary to the hypothesis that AMPAR entry is limited by the occupancy of open PSD ‘slots’, our findings suggest that AMPARs rapidly enter stable ‘nanodomains’ in PSDs with lifetime >15 min, and do not accumulate in extrasynaptic membranes.
 
 ## Introduction
 
@@ -51,25 +51,168 @@ We find that > 90% of AMPARs labeled with organic fluorescent dyes or sQDs are
 
 ## Results
 
-## AMPAR labeling strategy and localization
+### AMPAR labeling strategy and localization
 
 We labeled surface-expressed tagged (AP-tag or EGFP) versions of the GluA2 subunits of the AMPAR receptor. They were transiently transfected into cultured rat hippocampal neurons and imaged at 13–16 days in vitro (DIV) (see Materials and methods, and [Howarth et al., 2005]). Three different fluorophores and ligands for coupling to AMPAR were used (Figure 1c): (1) a small organic fluorophore coupled to streptavidin (SA); (2) a sQD with three different ligands: a limiting amount of SA such that each sQD has approximately one SA; a 13kD single-chain antibody against GFP (from alpaca, commercially known as the Green Fluorescent Binding Protein, or GBP), which has only one target on a GFPN-term-AMPAR (Ries et al., 2012; Rothbauer et al., 2008; Wang et al., 2014). (In one case, it has also been directed to a pHluorin-AMPAR, a GFP-derivative (Ashby et al., 2004). The result for this construct is the same as GFPN-term-AMPAR); (3) a monomeric streptavidin (mSA), which has only one binding site for biotin and was further molecular engineered from a recent one (Lim et al., 2013; Lim et al., 2011; Chamma et al., 2016), in order to minimize non-specific labeling with neurons (Materials and methods and Figure 4—figure supplement 1). The SA and mSA were used with the same AMPAR constructs as used with the bQDs. The (tetrameric) SA was used at a ratio of one per sQD. A commercial bQD containing many streptavidins was also used (Figure 1c). Homer1c (tag with mGeos or mEos3.2) was co transfected to generate a super-resolution marker for PSDs. For all experiments, imaging was performed using a cylindrical lens for 3D reconstruction (Huang et al., 2008).
 
 We noticed that most surface AMPA receptors labeled with SA-bQD one day following transfection (DIV14), reside in a widely spread extra-synaptic region (Figure 2a and e). This is consistent with our previous results (Cai et al., 2014) with the difference that the microscope stage drift and chromatic aberrations are corrected in this study. Chromatic aberration was corrected to with 4 nm (Wang et al., 2014). The drift was corrected to within approximately 2 nm in x and y, and 16 nm in z (Lee et al., 2012). (See also Materials and methods and Figure 2—figure supplement 1–7).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig2-v2.jpg)
+
+**Figure 2.:** Big and Small quantum dots and organic fluorophores attached to AMPAR (red) on live cultured neurons with the PSD protein, Homer1c, labeled (green). Big (or commercial) quantum dots (a, e) bound to AMPA fail to get in the synapse and are spread extra-synaptically. Small quantum dots (b, f) and with small organic fluorophores (Atto647N) (c, g), bound to AMPAR, are stuck in nanodomains within the synapse. Fixing the neurons and using a Cy3 organic dye (d) can get the number of nanodomains per synapse; mostly there is just one (h), but occasionally there are multiple nanodomains (j). The dotted lines in a-d represent the morphology of dendrites. The green arrow (f–j) indicates the direction of synaptic cleft and the dotted line represents the shape of the synapse. Each image is the rotated structure of the synapse as represented by curved arrow. The gray dotted lines in j indicate the nanodomain of the AMPA receptors. For super-resolution images, the microscope stage drift and chromatic aberrations are corrected.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Fiduciary markers are every 8 µm or 16 µm and total pattern size is 18 mm and 18 mm. Each marker size of the round column is 1 µm height and 1 µm diameter. We then made the mold using PDMS and stamped the pattern on the coverslip.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The first column is bright field images. Red fluorescence is free ds-Red and green is homer1-mGEOS. The last column is overlay of ds-Red and Homer1-mGEOS. The lower panel is cultured neurons on the fiduciary marked coverslip with PDL and laminin coating. Before coating PDL/Laminin, fiduciary marked coverslips were treated with oxygen plasma to make hydrophilic surface. The neuron cultured on the fiduciary marked coverslip looks very similar to the neuron that cultured on the glass coverslip in terms of their shape and number spines. All images are taken with x60 water immersion Nikon objective lens (Plan Apo VC 60x WI).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Fiduciary marked coverslips need to be coated with poly-(L/D)-lysine and laminin, sequentially. These coating helps neurons adhere on the surface. (b) a bright field image which shows neurons on the fiduciary marked coverslips. Periodic black dots are fiduciary markers as indicated by a red arrow. (c) fluorescence images for neurons. There is no auto-fluorescence at the illumination of visible wavelength. (d) overlay image of (c) and (d). (e) a representative reconstructed image for a synapse (homer1, blue) and the trace of a receptor (AMPA receptor, green) without correcting stage drift and chromatic aberration. (f) corrected chromatic aberration. Using the mapping function to correct chromatic aberration, the red color channel transposed to the green channel. Cyan color balls represented the trace of AMPA receptors after correcting chromatic aberration. (g) Purple balls represented the trace of a receptor after correcting stage drift. This trace (purple balls) has minimal error caused by stage drift and chromatic aberration. (h) correcting stage drift for the image of a synapse. Blue color shows before correction and red color shows after correcting stage drift. (i) zoom-in image showing difference between before and after correcting chromatic aberration.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Even though the tracking AMPA receptors takes for 50 s, the stage drift affects measuring diffusion coefficient. At maximum, there is more than 10% difference between before and after correcting the stage drift. With astigmatism for three dimensional imaging, the localization precision is about 4 nm for x and 6 nm for y.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** In the case of Nikon (Ti-eclipse), the wavelength of the LED is 870 nm with 800 nm short pass dichroic mirror. We then selected 760 nm to avoid interference to the PFS. The band-width of the 760 nm LED (ELJ-750–629, Roithner-LaserTechnik GmbH) is from 725 nm to 775 nm and we added the band pass filter (769/41, OD6 blocking) at LED as well as at the IR camera in order to reduce the interference between the LED for the PFS and the IR LED for fiduciary markers.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (a) All three axis show significant stage drift over time. Black lines represent the stage drift and the stage drift was corrected by using fiduciary markers. Red lines represent the corrected traces of the stage. (b) The precisions are less than 1 nm for x and y axis and 14.6 nm for z-axis.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** We made 100 nm size hole every 1.5 µm on the silver coated glass coverslip. When illuminating white light through the nanohole pattern, each color image can be taken using a band pass filter.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** The histograms were obtained from the localization particles over 200 frames with 50 ms exposure time. All these measurements were done with astigmatism for 3D using a cylindrical lens.
+
 We also labeled AMPARs with a SA-sQD (which is approximately half the diameter of the bQDs or 1/8th the volume) and measured the distance of the AMPAR to the center of PSDs marked by Homer1c-mGeos. Qualitatively, the receptors are often in nanodomains, sub-synaptic regions where the receptor is confined (Figure 2b, f; also, Figure 4d and e). The distance between the center of Homer1c cluster to the center of the AMPAR-sQD is close: a maximum of 150±42 nm, with 75% and 91% of receptors being localized within 0.5 µm and 1.0 µm, respectively, of Homer1c.
 
 Lastly, we also employed organic dyes to observe the diffusion of AMPA receptors in live neurons (Figure 2c and g; summarized in Table 1). This allows a direct comparison of AMPA receptors labeled with bQD and sQD and those labeled with organic fluorophores in live neurons. One advantage of the uPAINT technique using organic dyes compared to sptPALM is that the uPAINT technique only labels cell-surface receptors if cell-impermeable organic dyes are used. By choosing fairly photostable dyes, uPAINT also allows a relatively long time (limited by the photobleaching) for the motion to be measured. Here, we find that AMPARs labeled with organic-fluorophores on live cells are colocalized with Homer1c (Figure 2c). To measure the overall population of AMPARs within one synapse, as opposed to the behavior of an individual AMPAR, we obtained super-resolution (direct-STORM) images for neuronal receptors using a heavily labeled organic fluorophore (SA-Cy3B) after fixing the neurons (Figure 2d and e) (Heilemann et al., 2008). Cy3B is particularly good with STORM because it can be made photoactivatable with NaBH4 (Vaughan et al., 2012). Furthermore, we can label extensively with many organic fluorophores because the hydrodynamic diameter of organic fluorophores is ~1 nanometer and even when conjugated with streptavidin, they are only about 4 nm in diameter (Dikić et al., 2012). Consequently, SA-organic dyes are significantly smaller than either bQDs or sQDs or even labeled-antibodies (which are commonly used to label AMPARs). In addition, non-specific labeling was insignificant. These findings were similar to those obtained using sparsely labeled sQDs and organic dyes labeling on live neurons. Thus, by all three techniques (with sQDs, with live- and fixed-neurons labeled with organic fluorophores) we find that the localization of AMPA receptors is predominantly at the synaptic regions. In addition, we observe in these fixed samples, that there is typically one nanodomain per synapse (Figure 2h), although multiple nanodomains do exist (Figure 2j).
 
-## AMPAR-labeling: Diffusion constants and trajectory range
+**Table 1.**
+ Summary of AMPA receptor diffusion that are synaptically-bound, measured with various fluorophores and tags.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fluorophore</th>
+      <th>Size (nm)</th>
+      <th>Tag</th>
+      <th>Diffusion coefficient (μm2/s)</th>
+      <th>Trajectory range (nm) (±width)</th>
+      <th>Synaptic receptors (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Big Qdot</td>
+      <td>~20</td>
+      <td>SA</td>
+      <td>10-2.5±0.02</td>
+      <td>390 ± 140</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Small Qdot</td>
+      <td rowspan="3">~10</td>
+      <td>SA</td>
+      <td>10-2.41±0.02</td>
+      <td>418 ± 172</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>GBP</td>
+      <td>10-2.53±0.02</td>
+      <td>420 ± 170</td>
+      <td>82 (92)</td>
+    </tr>
+    <tr>
+      <td>mSA</td>
+      <td>10-2.59 ± 0.02</td>
+      <td>363 ± 144</td>
+      <td>88 (84)</td>
+    </tr>
+    <tr>
+      <td>Atto647</td>
+      <td rowspan="2">~5</td>
+      <td rowspan="2">SA</td>
+      <td>10-2.55 ± 0.02</td>
+      <td>380 ± 156</td>
+      <td>77 (73)</td>
+    </tr>
+    <tr>
+      <td>CF633</td>
+      <td>10-2.70 ± 0.01</td>
+      <td>380 ± 140</td>
+      <td>90 (93)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: The first and second number for the synaptic receptors corresponds to the percentage of AMPAR in the lower left hand box and the area under the Gaussian curve for the trajectories, respectively, as outlined in each peaks of Figures 3–5. (The bQD data is for the 5% of all the AMPARs that are bound near a Homer1c, that is in the synapse. See discussion.)_
+
+### AMPAR-labeling: Diffusion constants and trajectory range
 
 For all fluorescent tags, ‘heat maps’ were created to plot the diffusion constants (in μm2/s) versus the AMPAR trajectory range (in μm) (Figures 3–5). In general, the lower left-hand corner of the map shows the diffusion of AMPARs where the trajectory range is limited, constrained by PSD (or slot) proteins (Shi et al., 2001; Opazo et al., 2012), and the diffusion coefficient of these receptors was slow; those in the upper right-hand corner are not constrained and move faster. Semi-quantitatively, we define ‘slow’ as D ≤ 10-1.75 (0.018) μm2/s and ‘constrained’ as a trajectory range of ≤ 10-0.1 (0.79) μm. These criteria were used as rough guidelines to be consistent with previous work (Constals et al., 2015) (Cai et al., 2014). The 2D heat maps can also be plotted as a function of DIV to see the effect of transfection time (see Figures 3–5). Alternatively, the 2D heat maps can also be turned into regular 1D histograms by compressing one axis and fitting the data to a series of Gaussian fits (see Figures 3–5). Importantly, because many cells were measured, (6–13 different culture plates from at least four independent culture preparations, corresponding to 483–1599 synapses), 2D histograms should be independent of absolute number of synapses (synaptogenesis).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig3-v2.jpg)
 
-**Figure 3.:** not synaptic as measured by bQDs.Two-dimensional plot of the diffusion coefficient and the trajectory range of AMPA receptors using big qdots (a) measured day 1 (n=483 traces, 8 cells, 4 independent dissociation, 1 dissociation per week) and (b) day 3 (n=715 traces, 4 cells, 4 independent dissociation, 1 dissociation per week) after transfection. White dot lines are for 10−1 μm2/s (0.79 μm) and 10-1.75 μm2/s (0.018 μm2/s)) for the trajectory range and the diffusion coefficient, respectively. Right upper side represents the population of fast diffusive receptors with longer trajectory and the left lower side represents the population of slow diffusive receptors with shorter trajectory. For all histograms, the distribution could be deconvoluted by Gaussian functions. Cyan colored Gaussian functions represent the fast diffusive receptors in diffusion coefficient and longer diffusive population in trajectory range. Green shaded Gaussian functions indicate slower and shorter diffusive receptors. On Day 1, the fast and long-distance peak (α) corresponds to ~73% of all molecules with ~10-1.25 µm2/s (α) and ~1.3 µm, while the slow and short diffusion population (β) corresponds to ~27% of all molecules with ~10-2.5 µm2/s and ~0.4 µm. On day 1, the α peak is not in the synapse but diffusive relatively freely along the synapse as represented in (c). Dotted lines in (c) represent the morphology of dendrite and the red arrow in c) indicates the synaptic cleft. The remaining 27% on day 1 in Figure 3a has a short trajectory and >10 x slower diffusion than the α peak. The majority of the slow diffusive receptors on both Day one and Day three are located away from synapse as in (d) and (e). At day three after transfection, the diffusion coefficient and trajectory range measured by using big qdots are significantly changed, probably due to crosslinking. (f) shows the color coding for population of heat maps and for time traces for a single receptor.10.7554/eLife.27744.015Figure 3—source data 1.10.7554/eLife.27744.016Figure 3—source data 2.
+**Figure 3.:** Two-dimensional plot of the diffusion coefficient and the trajectory range of AMPA receptors using big qdots (a) measured day 1 (n=483 traces, 8 cells, 4 independent dissociation, 1 dissociation per week) and (b) day 3 (n=715 traces, 4 cells, 4 independent dissociation, 1 dissociation per week) after transfection. White dot lines are for 10−1 μm2/s (0.79 μm) and 10-1.75 μm2/s (0.018 μm2/s)) for the trajectory range and the diffusion coefficient, respectively. Right upper side represents the population of fast diffusive receptors with longer trajectory and the left lower side represents the population of slow diffusive receptors with shorter trajectory. For all histograms, the distribution could be deconvoluted by Gaussian functions. Cyan colored Gaussian functions represent the fast diffusive receptors in diffusion coefficient and longer diffusive population in trajectory range. Green shaded Gaussian functions indicate slower and shorter diffusive receptors. On Day 1, the fast and long-distance peak (α) corresponds to ~73% of all molecules with ~10-1.25 µm2/s (α) and ~1.3 µm, while the slow and short diffusion population (β) corresponds to ~27% of all molecules with ~10-2.5 µm2/s and ~0.4 µm. On day 1, the α peak is not in the synapse but diffusive relatively freely along the synapse as represented in (c). Dotted lines in (c) represent the morphology of dendrite and the red arrow in c) indicates the synaptic cleft. The remaining 27% on day 1 in Figure 3a has a short trajectory and >10 x slower diffusion than the α peak. The majority of the slow diffusive receptors on both Day one and Day three are located away from synapse as in (d) and (e). At day three after transfection, the diffusion coefficient and trajectory range measured by using big qdots are significantly changed, probably due to crosslinking. (f) shows the color coding for population of heat maps and for time traces for a single receptor.
 
-## AMPARs labeled with bQD coupled with SA are largely highly mobile and extrasynaptic
+![Figure 4.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig4-v2.jpg)
+
+**Figure 4.:** Two-dimensional plot of the diffusion coefficient and the trajectory range of AMPA receptors using small qdots with various tags, (a) SA (n=1453 (11 cells, 6 independent dissociation, one dissociation per week) and 1523 (13 cells, 6 independent dissociation, 1 dissociation per week) traces for day 1 and 3, respectively), (b) GBP (attached to a GFP-AMPAR) (n=524 (5 cells, 4 independent dissociation, 1 dissociation per week) and 537 (7 cells, 4 independent dissociation, 1 dissociation per week) traces for day 1 and 3, respectively), and (c) mSA (n=750 (8 cells, 4 independent dissociation, 1 dissociation per week) and 701 (11 cells, 6 independent dissociation, 1 dissociation per week) traces for day 1 and 3, respectively), measured day 1 and day 3 after transfection. White dot lines are for 10−1 μm2/s (0.79 μm) and 10-1.75 μm2/s (0.018 μm2/s)) for the trajectory range and the diffusion coefficient, respectively. Upper right side represents the population of fast diffusive receptors with longer trajectory and lower left size represents the population of slow diffusive receptors with shorter trajectory. Fitting the graphs via two Gaussian functions, the cyan represent the fast diffusive receptors (~10-1.25 µm2/s) in diffusion coefficient and longer diffusive population (1 µm) in trajectory range; green indicates slower (~10-2.5 µm2/s) and shorter diffusive receptors (~400 nm). For all three tags, 75–86% are slowly diffusive and have a short trajectory. Insets in a), (b), and (c) are two-dimensional plot for diffusion coefficient and trajectory range, measured day three after transfection. All insets are similar to the result, measured day 1. Slow diffusive receptors are mainly localized in synapses as in (d) (peak α in b) and (e) (peak β in c). Color-coding for heat maps and for time traces for a receptor is the same as Figure 3f. (f) histogram for the distance between receptors and the center of Homer1c. The histogram shows that 75% of receptors are localized within 0.5 µm of Homer1c (91% within 1.0 µm).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) The biotin binding pocket of mSA is exposed to the solvent, which results in rapid dissociation of bound biotin. In contrast, (b) the binding pocket of bradavidin ii is surrounded by R17 and F42, which surround the biotin and limit access of water molecules. Double mutations, S25R and T48F, in mSA may similarly shield bound biotin from solvent molecules and slow the rate of dissociation. (c) The dissociation rate, koff, of mSA variants was measured by fluorescence polarization spectroscopy using biotin-fluorescein as the ligand. Fluorescence polarization from the ligand is reduced upon dissociation from mSA. Normalized binding is computed by subtracting the polarization of free dye, $P_{free}$, and dividing by the polarization difference between bound and unbound states, $(P_{bound}−P_{free})$. Fitting normalized polarization to an exponentially decaying curve $e^{−k_{off}*t}$ results in the off rate, koff. (d) To test for cell labeling of mSA, mSA-RF-GFP was used to label biotinylated AP-CFP that transfected on HEK293. Images of i/ii/iii show CFP, GFP, and bright field images. The fluorescence intensity of GFP and CFP does not show much difference. (d) and (e) Test specificity of mSA-RF-eGFP to AP-CFP on HEK293. After the cells were fixed, mSA-RF-EGFP was added for 30 min to label biotinylated proteins. Unbound mSA-RF—EGFP was washed away and the labeled cells were imaged for (i) CFP or (ii) GFP fluorescence every 10 min for 1 hr. (iii) DIC, differential interference contrast. The total fluorescence intensity of each image was computed at different time points by importing RGB jpg images into MatLab and by summing over green and blue channels (CFP) or over green channel only (GFP).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (c) Motor proteins (kinesin) labeled by mSA-small qdot (red dots) are on microtubules (green, HiLyte 488). (d) Kinesin walking trace and their step size which shows 8.5 nm. (e) mSA-small qdots label AMPA receptors on neurons (green fluorescence is Homer1). mSA-small qdots are specifically bound to AMPA receptors (red).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a) represents the schematics of cross-linking of streptavidin(SA) conjugated qdots. SA conjugated qdots have more chance to cross-link multiple target molecules on a single qdots because a SA has four binding sites, but a monomeric SA has only one binding site. Thus, monomeric streptavidin intrinsically excludes binding multiple molecules on a single qdot. (b) histograms of diffusion coefficients measured at different conditions which are at 0.2% and 1.0% biotin concentration of lipid bilayer using three different qdots, such as SA-Bqdot(commercial qdots), SA-small qdots, and monomeric SA-small qdots.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (a) schematics to show the possibility of crosslinking multiple kinesin on qdots. Since a mSA is monovalent, there is no possibility to bind multiple kinesin. By contrary, a streptavidin has four binding sites for biotin, so that, even though each small qdot has only one streptavidin, SA-small qdots can bind more than one kinesin. (b) the measurement of the run length of kinesin at two different concentration ratio between qdots and kinesin. (c) kymograph for kinesin walking traces with 1:6 (small qdot: kinesin) ratio.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** In the 2D plot (a), higher diffusion coefficient and longer trajectory range (right upper side in the 2D plot) means AMPA receptors freely diffuse on the dendrite as in (b).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig5-v2.jpg)
+
+**Figure 5.:** Two-dimensional plot of the diffusion coefficient and the trajectory range of AMPA receptors using 1 nM organic dyes for labeling, (a) Atto647N measured at day one as well as day 3 (n=1152 (9 cells, four independent dissociation, one dissociation per week) and 3063 (7 cells, three independent dissociation, one dissociation per week) traces for day 1 and 3, respectively) and (b) CF633 measured at day 1 (n=1599 traces, 11 cells, four independent dissociation, one dissociation per week). White dot lines are for 10−1 μm2/s (0.79 μm) and 10-1.75 μm2/s (0.018 μm2/s)) for the trajectory range and the diffusion coefficient, respectively. Upper right side represents the population of fast diffusive receptors with longer trajectory and lower left size represents the population of slow diffusive receptors with shorter trajectory. Cyan colored Gaussian functions represent the fast diffusive receptors (~10-1.25 µm2/s) in diffusion coefficient and longer diffusive population (1 µm) in trajectory range. Green shaded Gaussian functions indicate slower (~10-2.5 µm2/s) and shorter diffusive receptors (~400 nm). For both organic dyes, more than 90% have a small diffusion constant and have a 73–93% have a short trajectory (based on the diffusion coefficient graph). (c) We find that they are moving slowly next to the Homer1c. (d) histogram for the distance between receptors and the center of Homer1c on a live neuron labeled with AMPAR-SA-CF633 or Atto647N inset. The histograms shows that 81% and 78% of receptors, respectively, are localized within 0.5 µm. The color-coding for heat maps and for time traces for a receptor is the same as Figure 3f. (e) Histogram of distance between native AMPAR (labeled with antibody-Alexa647 against GluA2) and Homer1c-mGeos, and fixed. Here 71% of the receptors are within 0.5 µm of the Homer1c (96% within 1.0 µm), very similar to (d).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** At 1 nM of SA-atto647N, the average photobleaching time is about 61 s. Thus, we were able to measure the diffusion coefficient of AMPA receptors using SA-atto647N.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The distribution of diffusion coefficient and trajectory range does not change at different concentrations.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (a) For Cy3B on fixed neurons, 85% of receptors are localized within 0.5 µm.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (a) fluorescence image for endogenous AMPA receptors and homer1c. (b) Zoom-in image of one of the spines. (c) histogram of the density of AMPARs in nanodomains. Approximately 900 molecules per µm2 were observed in each domain. 856 of the cluster of AMPARs were analyzed (n=1826 clusters, 11 cells).
+
+### AMPARs labeled with bQD coupled with SA are largely highly mobile and extrasynaptic
 
 We used bQDs and were able to reproduce results from previous work showing large pools of receptors outside of the synapses. At post-transfection day one there are primarily two peaks in the heat map in Figure 3a with the majority (73% of all AMPAR, peakα) having a fairly fast diffusion constant (10-1.25=0.056 μm2/s) with about a ~ 1.3 μm travel length, and a minor peak (27%, peak β) having slower diffusion constants (10-2.5=0.0032 μm2/s) and smaller trajectory ranges (≈ 0.5 μm). As illustrated in Figure 3c, AMPARs in the α peak are localized outside the synaptic spine on the dendritic shaft distant from Homer1c labeling. Furthermore, the AMPARs are undergoing free diffusion confined over large (>1 um) regions in the dendritic shaft. The β peak has two components, both of which are diffusing slow. 5% of all AMPARs are colocalized with PSDs labeled by Homer1c; 22% are not localized to a labeled Homer1c (see Figure 3d). This 22% component could be confined extrasynaptic AMPARs, (possibly due to crosslinking), or they could be diffusing at PSDs not labeled by Homer1c.
 
@@ -81,7 +224,7 @@ For the bQDs, we measured AMPAR diffusion as a function of DIV (Figure 3a vs. b)
 
 **Figure 6.:** Measurement the diffusion coefficient and trajectory range of the AMPA receptors using bQD-SA and sQD-SA after enzymatically removing extra-cellular matrix (ECM) using Hyaluronidase (100 unit/ml). (a) and (b) are 2D plots for diffusion coefficient and trajectory range measured with big qdots (n=2566 traces, 6 cells, 4 independent dissociation, 1 dissociation per week) and small qdots (n=1103 traces, 6 cells, 4 independent dissociation, 1 dissociation per week), respectively, after removal ECM. Dot lines circles represent the diffusion coefficient and trajectory range of Hyaluronidase (-) (taken from Figure 3a and Figure 4a, respectively). When using big qdots, the population of slow diffusion and short trajectory range disappears with treating with Hyaluronidase. However, with sQDs, there is no significant difference. The color-coding for heat maps is the same as Figure 3f. (c) The average diffusion coefficient, measured by using big qdots, after the removal of the ECM increases 1.4 fold from that at the condition of Hyaluronidase(-). On the contrary, the average diffusion coefficient at Hyaluronidase (+) is almost the same as without treating Hyaluronidase.
 
-## AMPARs labeled with sQD by different linkers (SA, GBP, or mSA)
+### AMPARs labeled with sQD by different linkers (SA, GBP, or mSA)
 
 When using sQDs, we found no accumulation of large pools of extra-synaptic receptors. Instead, we found that motion is largely constrained-diffusion in PSD nanodomains. The heat maps for the AMPARs labeled with sQDs (Figure 4) are strikingly different from the heat maps for AMPARs labeled with bQDs (Figure 3). First, the diffusion with any of the three different linkers resulted in much slower diffusion, with a diffusion coefficients ~ 10-2.5 μm2/s. Results were different depending on which linker was used with the mean diffusion constant varying from 10-2.41±0.02μm2/s for the SA linker (Figure 4a), which is largest and multivalent (Figure 1b), 10-2.53±0.02μm2/s for the GBP linker (Figure 4b), which intermediate in size and monovalent and 10-2.59 ± 0.02μm2/s for the mSA linker (Figure 4c), the smallest and monovalent. These results suggest that both the size as well as the valency of the probe can influence the measurements.
 
@@ -93,7 +236,7 @@ We note that heat maps tell about the range of diffusion of AMPAR, but do not gi
 
 We also need to take into account those sQDs that are bound to AMPARs but not in a synapse. (For the bQDs, this was 22–5%=17%.) We find that there is 12% of labeled mSA-sQD-AMPAR undergoing constrained diffusion not around a labeled Homer1c. Whether this is due to AMPAR constrained within a PSD containing an unlabeled Homer1c, or constrained within some other domain, is not known.
 
-## AMPARs labeled with organic dyes coupled with SA
+### AMPARs labeled with organic dyes coupled with SA
 
 These results are similar to AMPARs labeled with sQDs. We labeled AMPARs using SA-Atto647N or SA-CF633 (Figure 5). Both of these dyes are bright, especially when several dyes are conjugated per streptavidin, and fairly photostable,>50 s observation time (Figure 5—figure supplement 1). (Why we get this enhanced photostability is unclear.) In addition, Atto647N has a positive charge and is relatively hydrophobic, whereas CF633 is negatively charged and hydrophilic (Zanetti-Domingues et al., 2013). Somewhat better, more specific labeling was shown with CF633. Overall, these factors have been found to be significant in terms of the measurement of the diffusion of membrane proteins (Zanetti-Domingues et al., 2013).
 
@@ -101,21 +244,37 @@ A heat map shows that the diffusion constants and range of AMPARs are both quite
 
 For fixed neurons, labeled with Cy3B, the results are similar Figure 5—figure supplement 3): 85% of the receptors are localized within 0.5 µm of Homer1c. For any of the dyes chosen, whether fixed or live, they indicate a close association between the Homer1c and AMPARs.
 
-## Endogenous AMPARs labeled with organic dyes coupled to anti-GluA2 in non-transformed fixed neurons
+### Endogenous AMPARs labeled with organic dyes coupled to anti-GluA2 in non-transformed fixed neurons
 
 We imaged native AMPARs labeled with antibody(GluA2)-Alexa647 and measured the distance between native AMPARs and Homer1c clusters using fixed neurons which we transfected with Homer1-mGeos. As shown in Figure 5e and Figure 5—figure supplement 4, the results show that 71% of AMPARs are localized within 0.5 μm, and 96% within 1 μm. This is very similar to the Atto647N and CF633 shown in Figure 5d (78-98%). The results using endogenous AMPARs labeled with antibodies indicate that the overexpression of GluA2 does not significantly affect the measurements.
 
-## Removing extra-cellular matrix
+### Removing extra-cellular matrix
 
 The extra-cellular matrix (ECM) is a dense meshwork structure in surrounding brain cells (Syková and Nicholson, 2008). In neurons, surface receptors such as AMPARs and NMDARs, possibly interact directly or indirectly with the ECM, so that the ECM may affect the lateral diffusion of surface receptors in the synapses and surrounding locations (Dityatev and Schachner, 2003). Recent studies have shown that the ECM is also involved in the mechanism of recruiting glutamate receptors through lateral diffusion (Dityatev and Schachner, 2003; Dityatev et al., 2010; Frischknecht et al., 2009) (Frischknecht and Gundelfinger, 2012). In particular, one recent study claimed that when the ECM was enzymatically removed, the extra-synaptic AMPA receptors moved at a higher diffusion rate and the exchange of synaptic receptors was increased (Frischknecht et al., 2009). They therefore concluded that the ECM might regulate short-term synaptic plasticity.
 
 However, the observations were on AMPARs labeled by bQDs, so their conclusions should be re-examined in light of our results above. We therefore compared AMPARs labeled with bQDs and sQDs on untreated cultured neurons and on neurons in which ECM was removed using Hyaluronidase. Recall that with bQD, in the presence of ECM (Figure 3a and dotted lines in Figure 6a), we have two populations of AMPAR-bQD: 73% are fast moving (D ~ 10-1.20 ± 0.01 = 0.063 µm2/s) over a large distance and 27% are slow moving (D ~ 10-2.0 - 10-3.0 µm2/s), and constrained to be approximately 0.5 μm from the Homer1C. After ECM removal, we find that the slow-moving ones (the β peak in Figure 3a or the white dotted line in Figure 6b) are gone. All of the remaining AMPAR-bQDs freely diffuse outside of synapses on the membrane of dendrites. In contrast, with small qdots, we observe that the average and distribution of the diffusion coefficient of AMPA receptors was almost the same before (Dave=0.015 ± 0.0006 µm2/s) (Figure 6b, dotted line) and after (Dave=0.013±0.0004 µm2/s) ECM removal (Figure 6c). Thus, sQD-tagged AMPAR diffusion is not significantly affected by the presence of ECM, presumably because virtually all of these AMPARs are confined to PSDs where diffusion is limited by interactions with PSD scaffold proteins. Only the bQD-tagged AMPARs, which are virtually all extrasynaptic, are significantly affected by ECM. These results provide an explanation for the changes that occur in the diffusion and trajectories of the bQD-tagged AMPARs going from DIV 14 to 16 in Figure 3a and b. As the neurons develop in culture, progressively more ECM is deposited on the neuronal membrane going from DIV 14 to 16 thereby reducing AMPAR diffusion and trajectories.
 
-## Using sQDs for longer measurements of AMPARs in PSDs
+### Using sQDs for longer measurements of AMPARs in PSDs
 
 We find that AMPARs labeled with sQDs differ from AMPARs labeled with bQDs in being able to consistently enter synaptic clefts and nanodomains within PSDs. We observe the same behavior with AMPARs labeled with organic fluorophores. The feature that distinguishes sQDs from organic fluorophores is the significantly longer photostability of the sQDs compared to the ≈ 1 min lifetime with the organic fluorophores. Using AMPARs labeled with sQDs we examined the stability of AMPAR nanodomains in PSDs over 15 min, exciting the sQDs for 30 s at a time, every 5 min. A previous study observed that most nanodomains were stable for up to one hour, but some nanodomains were dynamic, appearing and disappearing within minutes (Nair et al., 2013). This other study, however, used AMPARs labeled with either organic fluorophores or recombinant fluorescent proteins, which limited the imaging to the ensemble average of AMPAR in PSDs. They were therefore unable to observe the dynamics of single receptors except for much shorter times (<<minute), corresponding to the photobleaching time of organic fluorophores. Here we used sQDs to study the dynamics of the nanodomains of the same AMPAR in synapses for long periods (from 15 min repeatedly, and up to 60 min occasionally) of time. A total of 126 synapses were observed.
 
 As shown in Figure 7, we first located AMPARs for 30 s, immediately followed by PSD imaging using Homer 1 c super-resolution. AMPARs were then imaged three times more, every 5 min for 15 min, and PSD imaged one final time (Figure 7a). The finite photostability of the fluorescent protein prevented the Homer1c from being monitored more than this. The dendrite morphology was also imaged using a transfected near-IR FP, which fills the cytoplasm of the dendrite (Figure 7b).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig7-v2.jpg)
+
+**Figure 7.:** Example of AMPAR and Homer1c moving very little over 15 min. (a) Schematics of long-term measurement dynamics for the AMPA receptor domain. AMPA traces were recorded for 30 s (50 ms exposure time) every 5 min (0 min ~15 min) and super-resolution images for synapses were taken at the beginning and the end of the 15 min period. (b) fluorescence image for synapses (homer1c-mGeos, green), AMPARs (sQD, red), and cell morphology (free-NIRFP, magenta). (c) and (d) show the difference of the position of an AMPAR and a synapse (Homer1c) from 0 min (AMPAR-red, Homer1c-green) to 15 min (AMPAR-blue, Homer1c-brown) at two different direction. At 0 through 15 min, when AMPAR and Homer1c are rotated 19° in a clockwise direction as shown in c) and 10° in a counterclockwise direction as shown in d), they overlap. (e) shows a stable nano-domain throughout the 15 min period. Red (0 min), orange (5 min), cyan (10 min), and blue (15 min) balls represent the AMPA receptor at various points in the trace of that AMPA receptor.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) the time trace of an AMPAR which is shown in Figure 7 and (b) the color coding for time traces (c) Fluorescent images of AMAPRs (sQD, red) and cell morphology (free-NIRFP, magenta) and the image of synpases (homer1c-mGeos, green) with cell morphology image. White arrows represent the receptor and the synapse that is shown in Figure 7.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (a) fluorescence images for synapses (homer1c-mGeos, green), AMAPRs (sQD, red), and cell morphology (free-NIRFP, magenta). (b) and (c) the representative synapse which shows slightly moving nano-domain for 15 min. Initially, an AMPA receptor (Red - 0 min) was localized very edge of spine (green balls-beginning) and then it (orange −5 min, cyan-10 min, and blue-15 min) moved to the center of homer1c cluster (brown-ending). (d) the projection image of the AMPA receptor trace. The nano-domain does not change much over time.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/27744/elife-27744-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (a) fluorescence images for synapses (homer1c-mGeos, green), AMAPRs (sQD, red), and cell morphology (free-NIRFP, magenta). (b) the representative AMPA receptor which initially freely diffused near a spine, ending up interacting with a domain in the synapse. The emission of the qdot at 5 and 10 min was too defocused (using the cylindrical lens for 3D imaging) to be detected, so the traces are not shown.
 
 The nanodomain of the AMPAR, which was ~ 200 nm, remained in approximately the same position in the synapse for the entire fifteen minutes. As shown in Figure 7c and d, when imaged at the beginning (AMPAR-red, Homer1c-green) and the end of the fifteen-minute period (AMPAR-blue, Homer1c-brown), the synapse itself had changed position only slightly. To see how much the synapse had drifted over the 15 min, we aligned the images. We first made a linear adjustment, moving both the AMPA receptor trace and the Homer1c cluster about 100 nm and we then rotated the trace and cluster 19° to align them (Figure 7c) from one perspective and from then rotated the synapse 10°, perpendicular to the first axis, as shown in Figure 7d. With these relatively minor adjustments, the two images of the synapse nearly perfectly overlapped (right hand side of Figure 7c, d). In addition, Figure 7e shows that the shape of the trace of the AMPAR (~200 nm in size) observed at 0, 5, 10 and 15 min, remained quite constant. This indicates that the nanodomain, defined by the constrained area of a single AMPAR, was extremely stable for the fifteen-minute measurement period.
 
@@ -139,11 +298,11 @@ The picture that emerges from our data is that after entry into PSDs, AMPARs are
 
 ## Materials and methods
 
-## Microscope
+### Microscope
 
 Experiments were performed with a Nikon Ti Eclipse microscope with a Nikon APO 100 X objective (N.A. 1.49). The microscope stabilizes the sample in z-axis with the Perfect Focus System. An Agilent laser system MLC400B with four fiber-coupled lasers (405 nm, 488 nm, 561 nm and 640 nm) was used for illumination. Elements software from Nikon was used for data acquisition. A back illuminated EMCCD (Andor DU897) was used for recording. For 3-D imaging, a cylindrical lens (CVI Melles Griot, SCX-25.4-5000.0- C-425-675) of 10 m focal length was inserted below the back aperture of the objective. A motorized stage from ASI with a Piezo top plate (ASI PZ-2000FT) was used for x-y-z position control. A quad-band dichroic (Chroma, ZT405-488-561-640RPC) was used and band-pass emission filter 525/50, 600/50, 710/40, 641/75 was used for fluorescence imaging.
 
-## Stage drift correction
+### Stage drift correction
 
 Stage drift is a significant problem in taking super-resolution images. As we reported earlier (Lee et al., 2012), making fiduciary-marked patterns on coverslips is a very efficient method to correct stage drift instead of using the previously favored fluorescent beads and gold nano-particles as fiduciary markers to correct stage drift. The perfectly stable fiduciary-marked patterns proved far superior to correct stage drift since it is impossible to perfectly immobilize beads or nano-particles on a coverslip surface, making it especially difficult to image live cells. More importantly, randomly spreading beads or nano-particles is a critical drawback for using them as fiduciary markers because it needs optimal number of fiduciary markers in the region of interest, whereas our fiduciary markers are a uniform pattern. Thus, the fluorescent beads and gold nanoparticles that have typically been used to correct stage drift are not effective, especially when imaging live cells.
 
@@ -157,7 +316,7 @@ Here, to demonstrate the method for taking super-resolution fluorescence images,
 
 The fiduciary marker trace corresponds to the stage drift. Thus, through this post-processing, we can correct for stage drift. Since fiduciary markers are stationary, stage drift can be much more accurately calculated using them than when using more conventional existing methods of calculating stage drift with fluorescent beads or gold nano-particles. As shown in Figure 6, using fiduciary markers, stage drift can be controlled within an error of around 1 nm for x and y and 15 nm for z.
 
-## Chromatic aberration
+### Chromatic aberration
 
 Another technical difficulty is chromatic aberration. The three-dimensional multi-color super-resolution imaging technique allows us to observe the interaction between two different species/types of proteins or organelles in cells; however, the color shifts that occur in different color channels is a concern to take images can be even more pronounced and problematic in super resolution images different color channels. These color shifts will cause the images to be slightly different. Even though we observe exactly the same object at different color channels, the images will be a little mismatched in different color channels. Since the refractive index of light depends on its wavelength, this chromatic aberration causes focus on an object to be detected in a little different place in each color channel. This means that we have to correct this difference chromatic aberration for studying the interaction between different proteins or organelles when using multi-color super-resolution imaging.
 
@@ -171,15 +330,15 @@ We measured the chromatic aberration between the green (GFP) 530 nm channel and
 
 Furthermore, we also evaluated the validity of the mapping functions for 3D imaging. We obtained the mapping function at a focal point of z = 0, focal point, with an error of 2 nm, and, as shown in Figure 2—figure supplement 7(e), this mapping function can be applied is valid up to within z= ±400 nm with an error of only 4 nm. when the error is 2 nm at z = 0. Actually, we obtained the mapping function at z=200 nm, 400 nm, 600 nm, and 800 nm and, as represented in Figure 2—figure supplement 7(e), the error is a little smaller than when using the mapping function obtained at z = 0; however, since a 3 D super-resolution image using astigmatism is not discrete along the z axis, it is not easy to have mapping functions along the z axis. At focal points above 400 nm, the error dramatically increased. We obtained the mapping function at z = 200 nm, 400 nm, 600 nm, and 800 nm, as represented in Figure 2—figure supplement 7(e). At focal points above 400 nm, the error dramatically increased. Although the error is a little smaller at focal points higher on the z axis than when using the mapping function obtained at z=0, we conclude that when getting 3D images using astigmatism, the mapping function at z=0 is accurate enough to correct chromatic aberration. This is because a 3 D super-resolution image using astigmatism is not discrete along the z axis. Hence, it would be too time consuming to try to obtain more accurate mapping functions all along the z axis.
 
-## Cell culture and labeling
+### Cell culture and labeling
 
 Primary hippocampal cultures were prepared from E18 rats according to UIUC guidelines as previous described (Cai et al., 2014) with the following modifications. In brief, hippocampal tissues were dissociated in 3 mg/mL protease and plated on 25 mm coverslips coated with 1 mg/mL poly-l-lysine and laminin. Neurons were cultured at 37°C with 5% CO2 in neurobasal media (ThermoFisher, 21103049) with B-27 supplement (GIBCO), 2 μM glutmax and 50 unit/mL penicillin and 50 unit/ml streptomycin. On 12–13 days in vitro (DIV), neurons were co-transfected with Homer1c-mGeos (1 μg/coverslip) with GluA2-AP (1 μg/coverslip) and BirA-ER (1 μg/coverslip), and Homer1c-mGeos (1 μg/coverslip) for AMPA receptors by using Lipofectamine 2000 transfection reagent. At 24 ~ 72 hr after transfection, the coverslips were transferred to warm imaging buffer (HBSS supplemented with 10 mM Hepes, 1 mM MgCl2, 1.2 mM CaCl2 and 2 mM D-glucose) for 5 min incubation and mounted onto an imaging dish (Warner RC-40LP). In the imaging dish, neurons were incubated in imaging buffer containing QDs and casein (~400 times dilution for bQDs, and ~80 times dilution for sQDs; stock solution purchased from Vector labs, SP-5020) for 5 min at 30°C and washed with 10 ml of imaging buffer. Finally, 3 mL of imaging buffer was added to the imaging dish that was subsequently mounted on the microscope. For ECM removal, we enzymatically removed the ECM using hyaluronidase (HX0514 – Calbiochem, 100 units/ml left overnight at 37° with 5% CO2). For labeling endogenous AMPARs using antibody, we conjugated Alexa647 NHS ester (Thermo-Fisher: A37573, Waltham, MA) with anti-GluR2(Anti-Glutamate Receptor 2 Antibody, extracellular, clone 6C4: Sigma-Aldrich: MAB397, St. Louis, MO)
 
-## Expression and purification of mutant mSA
+### Expression and purification of mutant mSA
 
 To express mSA, E. coli strain BL21(DE3) pLysS was transformed with an appropriate expression vector and plated on Luria Bertani (LB) agar containing ampicillin. Several colonies were selected from the plate for overnight growth at 37°C in an LB starter culture containing 200 μg/ml ampicillin. The following morning, the starter culture was diluted 100 fold into Terrific Broth (TB) containing 0.05% glucose, 0.5% glycerol, 0.2% α-lactose, 1 mM MgSO4, 900 μM biotin, and 200 μg/ml ampicillin. The cells were grown at 37°C and 300 rpm until OD600 reached 0.3, at which point the shaker temperature was reduced to 20°C. Once the culture has reached OD600=0.6, IPTG was added to the final concentration of 75 μM and the shaker speed was increased to 375 rpm. After 24 hr induction at 20°C, cells were removed by centrifugation and the culture medium containing secreted mSA was collected for purification. The medium was sonicated with a 200 W sonicator (30 s on, 30 s off for 4 cycles at 50% amplitude capacity). The pH of the culture medium was adjusted to 7.5 using NaOH and imidazole was added to 10 mM. The medium was then centrifuged at 12,000 rpm for 20 min to remove any precipitates. The clarified medium was passed through a column packed with Ni-NTA Superflow Agarose pre-equilibrated in PBS and 10 mM imidazole. The column was then washed with PBS and 20 mM imidazole. Finally, the bound protein was eluted with 300 mM imidazole in PBS. The eluted protein was concentrated and buffer exchanged to 100 mM glycine buffer pH 2.3 using a centrifugal filter to remove bound biotin. Finally, the sample was buffer exchanged to PBS. Yields were estimated based on A280 measurements and purity was assessed by SDS-PAGE with Coomassie staining.
 
-## Characterization of mutant mSA
+### Characterization of mutant mSA
 
 All streptavidin homologs have a conserved three dimensional structure, but differences in the binding pocket residues lead to differences in biotin binding. For example, the main chain root mean squared deviation between mSA and streptavidin is 0.82 Å but there is ~105 fold difference in their binding affinities. Although extremely high affinity is not needed for labeling live cells, rapid dissociation of bound biotin interferes with detection and measurement because it results in loss of fluorescence intensity over time. As such, improving the dissociation kinetics (i.e. slowing the off rate koff) of mSA is important to develop a useful imaging reagent. We have previously demonstrated that replacing S25 with histidine reduces koff by 7.5 fold by blocking solvent entry into the binding pocket through steric hindrance (Demonte et al., 2013). Keeping water molecules out of the binding pocket is important because they compete with mSA-biotin hydrogen bonds and lead to biotin dissociation. S25 is located in the loop between β−strands 1 and 2 (L1,2), which is found at the subunit interface of streptavidin but is solvent exposed in mSA. Therefore, blocking solvent entry in mSA in part involves recreating the lost physical barrier near L1,2.
 
@@ -197,21 +356,21 @@ In order to further examine cross-linking of normal and monomeric streptavidin, 
 
 In the case of mSA-qdots, we found the run length was the same as that of a single kinesin at a ratio of 2:1 (two kinesin molecules to one qdot). As expected (Figure 4—figure supplement 4), the run length was not changed even when the ratio of kinesin to qdots was increased to 6:1. This means that mSA-qdots do not bind to multiple motor proteins. By contrast, in the case of SA-qdots, the run length of kinesin was more than the typical run length of kinesin, as shown in Figure 4—figure supplement 4. Even at a ratio of 2:1, the histogram of run lengths shows that some kinesin walked longer than the typical kinesin run length. At 6:1, we found that the run length significantly increased, indicating cross-linking. These results mirror the results we obtained in our first experiment about diffusion rates of labeled molecules in the lipid bilayer.
 
-## Track AMPA receptors
+### Track AMPA receptors
 
 After focusing the sample in bright field, the Perfect Focus System was activated to minimize the sample drift in z direction. The samples were then scanned in the GFP channel (488 excitation, 525/50 emission) to locate transfected cells. A fluorescent image of the cells was taken for reference. To track the QD labeled receptors, 488 nm or 561 nm lasers was used for excitation in the hi-low-fluorescence mode with an appropriate band-pass filter for collecting the fluorescence. In terms of localization precision of fluorophores, as shown in Figure 2—figure supplement 8,organic dyes were about 11 ~ 21 nm for x and y (Atto647N – 12 nm for both x and y) and CF633- 21 nm for x and 12 nm for y) and about 32 nm (Atto 647N)/42 nm (CF633) for z. Qdots were 9.6 nm for x, 8.2 nm for y, and 18 nm for z.
 
-## Super-resolution imaging of post-synaptic density
+### Super-resolution imaging of post-synaptic density
 
 After the tracking experiment, the PALM (Betzig et al., 2006) experiment was carried out on the same neurons. PALM was used for super-resolution of post-synaptic density. Post-synaptic protein Homer1c was used as the PSD marker and its C- terminus was fused to photoactivatable protein mGeos. A 100 ms 405 nm laser pulse was used to activate mGeos proteins from dark to green fluorescent state. The sample was then excited with a 488 nm read out laser and emission was collected with a 535/50 band-pass filter. The cycle was repeated for 200–300 times, collecting 4000–6000 frames. The z calibration was created following method described by Huang et al. (Huang et al., 2008) using fluorescent beads on a glass surface and applied to both tracking and PALM data.
 
-## STORM imaging for AMPA receptors
+### STORM imaging for AMPA receptors
 
 Cy3B-STORM was done following the procedure described on Joshua et al (Vaughan et al., 2012). We labeled neurons with Cy3B-SA (2 μM) following the procedure of sQD labeling. We then fixed the cells with a solution of 4% PFA and 0.1% Glutaraldehyde in HBSS for 10 min. Wash with three tines PBS. Treat the sample with 10 mM of NaBH4 in PBS freshly prepared for 10 min. Wash with PBS. Before imaging, we add imaging buffer consisting of 5 μL of PCD, 20 μL of PCA, 4 μL of Trolox in 471 μL of T-100 (100 mM Tris at pH 8.0). Images were acquired at 10 Hz using 405 nm laser at low power to do activation and 561 nm laser to excite fluorescence.
 
 In order to image native AMPARs, we labeled AMPARs using Anti-GluA2-Alexa647 after fixation. For STORM imaging, we added imaging buffer consisting of 5 mM MEA (Sigma: 30070, St. Louis, MO) solution (~pH 8.0) and additionally added 40 mM Sodium D/L-lactate (Sigma: 71720, St. Louis, MO) and EC-Oxyrase (Sigma: SAE0010, St. Louis, MO) in PBS in order to improve the photo-stability.
 
-## Data analysis
+### Data analysis
 
 For the tracking data, centroids of the all the QDs were localized in all the frames and a map of all the places QDs visited were obtained. A Matlab code was used to recover the trajectories of the QDs. In brief, the code finds locations of QDs in time t, and searches for nearby QDs in time t+1 as the next point on the trajectory. In the 3-D single particle tracking experiment, the maximum displacement of a QD in one time step is set to be 1 μm. The trajectory range was obtained by calculating the range of the trajectory in the x-, y-, and z- direction, and using the maximum of the three parameters. The diffusion coefficients from the trajectories were calculated in Matlab by fitting the first 4 points of mean-square-displacement curve. For the PALM data, positions of proteins detected in each frame are localized, cluster analysis was used for identify synapses. To determine if a trajectory was synaptic, the centers of synapses were determined, and trajectories within 2 μm radius of each synapse were identified. For each of these trajectories, the average distance was calculated between the center of the nearest synapse and all points on the trajectory. Any trajectories with an average distance smaller than 0.55 μm were considered synaptic.
 

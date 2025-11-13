@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03c4atk17 Institute for Research in Biomedicine, Università della Svizzera Italiana (USI) Bellinzona Switzerland
-2. https://ror.org/02k7v4d05 Graduate School of Cellular and Molecular Sciences, University of Bern Bern Switzerland
+1. Institute for Research in Biomedicine, Università della Svizzera Italiana (USI) Bellinzona Switzerland ([ROR:03c4atk17](https://ror.org/03c4atk17))
+2. Graduate School of Cellular and Molecular Sciences, University of Bern Bern Switzerland ([ROR:02k7v4d05](https://ror.org/02k7v4d05))
 3. Istituto Nazionale Genetica Molecolare "Romeo ed Enrica Invernizzi" Milan Italy
 4. Department of Medical Biotechnology and Translational Medicine, Universita` degli Studi di Milano Milan Italy
 5. Department of Clinical Sciences and Community Health, Università degli Studi di Milano Milan Italy
@@ -22,7 +22,7 @@
 
 ## Abstract
 
-We performed a systematic analysis of the translation rate of tumor-infiltrating lymphocytes (TILs) and the microenvironment inputs affecting it, both in humans and in mice. Measurement of puromycin incorporation, a proxy of protein synthesis, revealed an increase of translating CD4 + and CD8 + cells in tumors, compared to normal tissues. High translation levels are associated with phospho-S6 labeling downstream of mTORC1 activation, whereas low levels correlate with hypoxic areas, in agreement with data showing that T cell receptor stimulation and hypoxia act as translation stimulators and inhibitors, respectively. Additional analyses revealed the specific phenotype of translating TILs. CD8 + translating cells have enriched expression of IFN-γ and CD-39, and reduced SLAMF6, pointing to a cytotoxic phenotype. CD4 + translating cells are mostly regulatory T cells (Tregs) with enriched levels of CTLA-4 and Ki67, suggesting an expanding immunosuppressive phenotype. In conclusion, the majority of translationally active TILs is represented by cytotoxic CD8 + and suppressive CD4 + Tregs, implying that other subsets may be largely composed by inactive bystanders.
+We performed a systematic analysis of the translation rate of tumor-infiltrating lymphocytes (TILs) and the microenvironment inputs affecting it, both in humans and in mice. Measurement of puromycin incorporation, a proxy of protein synthesis, revealed an increase of translating CD4+ and CD8+ cells in tumors, compared to normal tissues. High translation levels are associated with phospho-S6 labeling downstream of mTORC1 activation, whereas low levels correlate with hypoxic areas, in agreement with data showing that T cell receptor stimulation and hypoxia act as translation stimulators and inhibitors, respectively. Additional analyses revealed the specific phenotype of translating TILs. CD8+ translating cells have enriched expression of IFN-γ and CD-39, and reduced SLAMF6, pointing to a cytotoxic phenotype. CD4+ translating cells are mostly regulatory T cells (Tregs) with enriched levels of CTLA-4 and Ki67, suggesting an expanding immunosuppressive phenotype. In conclusion, the majority of translationally active TILs is represented by cytotoxic CD8+ and suppressive CD4+ Tregs, implying that other subsets may be largely composed by inactive bystanders.
 
 ## Introduction
 
@@ -36,21 +36,33 @@ The presence of a large layer of translational control in T cells raises the que
 
 ## Results
 
-## Translational efficiency is increased by TCR signaling and inhibited by hypoxia
+### Translational efficiency is increased by TCR signaling and inhibited by hypoxia
 
 Puromycin, by entering the acceptor site of ribosomes and incorporating into nascent polypeptide chains, represents a valid tool to quantify protein synthesis within cells in vivo. We used puromycin measurement in combination with quantitative immunoblotting to capture global protein synthesis rate in human primary lymphocytes (Figure 1A). We have previously shown that naïve T cells have a poised translational machinery, with pre-accumulated mRNAs that are efficiently translated only after T cell receptor stimulation (Ricciardi et al., 2018). This prompted us to further evaluate the relationship between T cell receptor stimulation and translation. T cell receptor stimulation leads to a progressive, temporal, steady increase of protein synthesis (Figure 1B). Next, we checked whether the strength of T cell receptor stimulation affected the global output of proteins. To this end, primary lymphocytes were briefly cultivated in the presence of two different amounts of anti-CD3/CD28, and protein synthesis was measured by puromycin incorporation (Figure 1C). We saw higher puromycin incorporation in cells stimulated with the higher concentration of anti-CD3/CD28 (Figure 1C). Phosphorylation of ribosomal protein rpS6 occurs in serine 235/236 by S6K1-2 downstream of mTORC1 and by RSKs kinases downstream of ERK, as well as in serine 240/244 by S6K1-2 kinases (Meyuhas, 2015). All these pathways are activated by TCR stimulation (Piccirillo et al., 2014). Consistently, rpS6 phosphorylation increased from undetectable to strong levels after anti-CD3/CD28 stimulation (Figure 1C). rpS6 itself was detectable before TCR stimulation and increased upon stimulation, in line with previous data (Wolf et al., 2020; Araki et al., 2017).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig1-v2.jpg)
 
-**Figure 1.:** (A) Schematic diagram for the experiment. (B) Immunoblot of puromycin incorporation in CD4+ T cells following stimulation by anti-CD3/CD28 at the indicated time points shows that T cell receptor stimulation leads to a progressive increase of puromycin in cultured lymphocytes. The immunoblot shows two replicates with cells isolated from one healthy donor per experiment. Densitometry normalized to vinculin. (C) The strength of T cell receptor stimulation correlates with puromycin incorporation. The immunoblot shows two replicates with cells isolated from one healthy donor per experiment. (D) mTOR inhibition reduces rpS6 phosphorylation and translation. Stimulated CD4+ T cells were treated for 30 min with either 2 μM PP242 or 3 μM MNK inhibitor before collecting extracts. Puromycin incorporation and phosphorylation of rpS6 were measured by Western blotting. The immunoblot is representative of the pool of two replicates with cells isolated from one healthy donor per experiment. (E and F) Hypoxic environment sharply reduces translation. Stimulated CD4+ T cells were transferred from 20% O2 to 1% O2 for the indicated times (E), and translation was measured by flow cytometry (F). Data are mean ± s.d. p Values are determined by ANOVA with Dunnett’s post hoc test. ****p < 0.0001. (G) Hypoxia induces phosphorylation of eIF2α. Stimulated CD4+ T cells were incubated for 4 hr under normoxia or hypoxia and the phosphorylation of eIF2α was determined by ELISA assay as described in Materials and methods using an anti-phospho-eIF2α-specific antibody. The data represents the pool of three independent experiments. Data are mean ± s.d. p Values are determined by two-tailed Student’s t-tests. ****p < 0.001.Figure 1—source data 1.Figure 1B, C, D, F, and G.Figure 1—source data 2.Figure 1B, C, D, F, and G.Figure 1—source data 3.Figure 1B, C, D, F, and G.Figure 1—source data 4.Figure 1B, C, D, F and G.
+**Figure 1.:** (A) Schematic diagram for the experiment. (B) Immunoblot of puromycin incorporation in CD4+ T cells following stimulation by anti-CD3/CD28 at the indicated time points shows that T cell receptor stimulation leads to a progressive increase of puromycin in cultured lymphocytes. The immunoblot shows two replicates with cells isolated from one healthy donor per experiment. Densitometry normalized to vinculin. (C) The strength of T cell receptor stimulation correlates with puromycin incorporation. The immunoblot shows two replicates with cells isolated from one healthy donor per experiment. (D) mTOR inhibition reduces rpS6 phosphorylation and translation. Stimulated CD4+ T cells were treated for 30 min with either 2 μM PP242 or 3 μM MNK inhibitor before collecting extracts. Puromycin incorporation and phosphorylation of rpS6 were measured by Western blotting. The immunoblot is representative of the pool of two replicates with cells isolated from one healthy donor per experiment. (E and F) Hypoxic environment sharply reduces translation. Stimulated CD4+ T cells were transferred from 20% O2 to 1% O2 for the indicated times (E), and translation was measured by flow cytometry (F). Data are mean ± s.d. p Values are determined by ANOVA with Dunnett’s post hoc test. ****p < 0.0001. (G) Hypoxia induces phosphorylation of eIF2α. Stimulated CD4+ T cells were incubated for 4 hr under normoxia or hypoxia and the phosphorylation of eIF2α was determined by ELISA assay as described in Materials and methods using an anti-phospho-eIF2α-specific antibody. The data represents the pool of three independent experiments. Data are mean ± s.d. p Values are determined by two-tailed Student’s t-tests. ****p < 0.001.
 
 Activation of protein synthesis correlates with rpS6 phosphorylation (Figure 1C). Inhibition of mTOR pathway by the mTOR inhibitor PP242 leads to both the reduction of rpS6 phosphorylation and a conspicuous inhibition of puromycin incorporation, that is, protein synthesis (Figure 1D). The ERK pathway converges on Mnk1/2 that phosphorylate Ser209 of eIF4E (Roux and Topisirovic, 2018). In vitro, Mnk inhibition did not consistently reduce puromycin incorporation, indicating that this pathway is not massively involved in global translation of T cells (Figure 1D).
 
 Since infiltrating lymphocytes may encounter an environment rich in hypoxic areas, we wondered if hypoxia was able to rapidly modify the capability of lymphocytes to translate in response to T cell receptor stimulation. We therefore quantitated the rate of puromycin incorporation in the presence of hypoxic environment (Figure 1E). Hypoxia resulted in a rapid reduction of the translation rate of primary lymphocytes (Figure 1F, Figure 1—source data 3). Several translation pathways are modulated by hypoxia, including the one driven by PERK. PERK phosphorylates Ser51 of eIF2α (Koumenis et al., 2002). We did not detect eIF2α phosphorylation by Western blotting, likely due to the limited number of human cells. We used a modified ELISA procedure and found that hypoxia induced eIF2α phosphorylation (Figure 1G, Figure 1—source data 4). On the basis of these data, we hypothesize that, in vivo, the combination of T cell receptor stimulation and hypoxic conditions is a major determinant of the translational capability of lymphocytes.
 
-## Only a minority of TILs actively translates and is characterized by an mTORC1 activated phenotype
+### Only a minority of TILs actively translates and is characterized by an mTORC1 activated phenotype
 
 Next, we addressed the question of whether, in vivo, we could observe heterogeneity in the translational efficiency of TILs. To answer this question, we engrafted subcutaneously C57BL/6 mice with B16F10 melanoma cells (Figure 2A). We administered a single injection of puromycin (50 mg/kg body mass) and after 1 hr, mice were sacrificed and T cells isolated for analysis in flow cytometry (Figure 2A). Then, the amount of protein synthesized was quantified on the basis of puromycin incorporation by FACS. The same gating strategy was applied for spleen lymphocytes and TILs (Figure 2—figure supplement 1). Intriguingly, we found that at the single-cell level, in vivo, the translational efficiency of both CD4+ and CD8+ TILs was highly variable (Figure 2B and C, Figure 2—source data 1), namely some TILs had no puromycin incorporation, others were highly positive for puromycin. On the basis of the gating shown in Figure 2B and C, we defined two categories of infiltrating T cells, high puromycin (Puro+) and low puromycin (Puro-) T cells, reflecting translating T cells and translationally silent T cells, respectively. This simple analysis unveiled that CD4+ TILs translated more than spleen-resident CD4+ T cells (Figure 2B). The number of highly translating CD4+ TILs in different animals ranged between 20% and 60% (Figure 2B). Similar to CD4+ TILs, the number of highly translating CD8+ TILs was more than twofold higher than in the spleen (Figure 2C). Within individual tumors, Puro+ CD8+ TILs ranged between 20% and 90% (Figure 2C). Taken together these data demonstrate the presence of a strong layer of translational control, driven by the microenvironment, that affects the biological activity of individual lymphocytes.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental outline. Tumor cells were injected in recipient mice. Puromycin was injected intraperitoneally, and T cells were collected 1 hr later for the analysis. (B and C) The amount of incorporated puromycin was determined by FACS analysis in CD4+ (B) or CD8+ lymphocytes (C). Representative plots and statistical analysis (mean ± SEM) show that the number of Puro+ TILs is always higher in tumors versus spleen and that only parts of TILs are translationally active. Percentages of positive cells in each gate are shown. Data from three experiments pooled together (n = 5–8 mice per experiment) *p < 0.05; ***p < 0.001; ****p < 0.0001. (D) Immunohistochemical analysis of puromycin in CD4+ TILs. Puro+ cells (pink) are concentrated in some tumor areas, where clusters of highly translating CD4+ cells (brown) are found. Scale bars, 10 μm. (E) Representative plots (left) and statistical analysis (mean ± SEM) for pS6(S235/236) within Puro+ and Puro- CD4+ and CD8+ TILs shows that, in vivo, most translating TILs have the mTORC1-S6K pathway active. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 5 mice per experiment) ****p < 0.0001. (G) Experimental outline. Tumor cells were injected in recipient mice that were given intraperitoneal injections of 5 mg/kg everolimus for 2 consecutive days. Puromycin was injected 1 hr before sacrificing mice and collecting TILs cells for subsequent flow cytometry analysis. (H) Representative flow cytometry plots and statistical analysis (mean ± SEM) for puromycin within CD4+ and CD8+ TILs showing that the mTOR inhibitor everolimus reduces translation. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 10 mice per experiment) **p < 0.01; ***p < 0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Gating scheme used for assessing puromycin incorporation in CD4+ and CD8+ cells in the spleen in Figure 2. (B) Gating scheme used for assessing puromycin incorporation in CD4+ and CD8+ tumor-infiltrating lymphocytes (TILs) in Figure 2.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Immunohistochemical analysis of puromycin in CD4+ tumor-infiltrating lymphocytes (TILs) in MC38 tumor microenvironment (TME) shows that only a fraction of lymphocytes is translationally active.Scale bars, 20 μm. (B and C) Representative plots (left) and statistical analysis (mean ± SEM) for pS6(S240/244) within Puro- and Puro+ CD4+ (B) and CD8+ (C) TILs proving that, in vivo, the mTORC1-S6K pathway is active in most of translating TILs. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 10) ****p < 0.0001. (D) Representative plots (left) and statistical analysis (mean ± SEM) for p-eIF4E(S09) within Puro- and Puro+ CD4+ TILs showing that a small pool of translating TILs is positive for p-eIF4E. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 7) **p < 0.01. (E) Representative plots (left) and statistical analysis (mean ± SEM) for pS6(S235/236) within TCRβ+ TILs in untreated and everolimus-treated B16 mice proving that mTOR inhibition reduces rpS6 phosphorylation. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 7) *p < 0.05.
 
 IHC on paraffin-embedded B16 tumor sections also confirmed that (i) the levels of incorporated puromycin were heterogenous inside the tumor, with areas having high expression mixed with areas devoid of expression (Figure 2D), and that (ii) scattered lymphocytes show a robust puromycin immunoreactivity (Figure 2D). To substantiate these results within a different tumor microenvironment, we engrafted C57BL/6 mice with MC38 colon adenocarcinoma cells. Similar to what was obtained for B16 TILs, we found that TILs have significant higher levels of puromycin signal over spleen-resident T cells, and that, in vivo, within the tumor, only a fraction of lymphocytes is translationally active (Figure 2—figure supplement 2A).
 
@@ -58,17 +70,39 @@ We then addressed whether puromycin incorporation, in vivo, was associated with 
 
 Mnk inhibition in vitro did not result in significant changes in puromycin incorporation (Figure 1). However, in vivo, a very small pool of TILs was positive for p-eIF4E, and clearly segregated with high puromycin incorporation (Figure 2—figure supplement 2E, (Figure 2—figure supplement 2—source data 1)). In conclusion, the activation of specific signaling pathways, at the single-cell level, explains high puromycin incorporation. Among them, the mTORC1 pathway affects the global translation rate of a substantial percentage of TILs.
 
-## Hypoxic niches reduce puromycin incorporation
+### Hypoxic niches reduce puromycin incorporation
 
 Next, the relationship between puromycin incorporation and hypoxia, in vivo, was analyzed. We injected mice with pimonidazole (PMO), a chemical probe that forms protein adducts in viable hypoxic cells (Rademakers et al., 2011) and puromycin (Figure 3A) and performed stainings on tissue sections for the endothelial marker CD31. It was found that the amount of tumor areas that were not vascularized was limited, the maximal distances between vessels being in the range of 150–200 µm (Figure 3B). Subsequently, we purified both CD4+ (Figure 3C) and CD8+ (Figure 3D) TILs and analyzed by FACS analysis the relationship between PMO and puromycin incorporation. In spite of the relative absence of highly hypoxic tumor areas, the data show that, in vivo, an inverse relationship between PMO staining and puromycin exists (Figure 3C and D, Figure 3—source data 1). Next, we performed immunofluorescence analysis. We clearly detected cells triple-stained for PMO, CD4+ and p-eIF2α−like immunoreactivity in hypoxic areas (Figure 3E), but not in non-hypoxic areas (Figure 3—figure supplement 1). We suggest that hypoxia acts as a repressor of translation also in vivo, in TILs. These data raise the question whether the phenotype of TIL is specific.
 
-## High translation rate in CD8+ cells correlates with IFN-γ production and CD-44 expression
+![Figure 3.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig3-v2.jpg)
+
+**Figure 3.:** (A) Experimental outline. Tumor cells were injected in recipient mice. Puromycin was injected intraperitoneally together with the hypoxia marker pimonidazole (PMO). T cells were collected 1 hr later for the analysis. (B) CD31 staining in tumor specimens shows ample vascularization with limited areas far from blood vessels suggesting the absence of truly hypoxic areas and limited hypoxic gradients. Scale bars, 15 μm. (C and D) Representative plots (left) and statistical analysis (mean ± SEM) for PMO+ within Puro+ and Puro- CD4+ and CD8+ TILs show, in vivo, the inverse correlation between hypoxia and translational efficiency. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 7–8 mice per experiment) **p < 0.01. (E) Representative immunofluorescence images showing that in tumor specimens the majority of PMO+ CD4+ TILs are p-eIF2α(S51)+. Scale bars, 10 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative immunofluorescence images proving the absence of hypoxic areas (PMO, in red) and PMO+ p-eIF2α(S51)+ CD4+ cells in the spleen specimens, taken as control. Scale bars, 10 μm.
+
+### High translation rate in CD8+ cells correlates with IFN-γ production and CD-44 expression
 
 We verified the existence of a relationship between high translation and the CD8+ phenotype by measuring through flow cytometry the expression of markers of memory and effector T cell differentiation, activation, as well as of relevant costimulatory and coinhibitory molecules. The experimental design is shown in Figure 4A. First of all, we observed a maximum of puromycin incorporation in CD44+ CD8+ T cells, indicating that Puro+ CD8+ TILs largely retain an activated-like phenotype (Figure 4B, Figure 4—source data 1). We co-stained freshly isolated CD8+ TILs for puromycin and the following sets of markers: (i) PD-1, TIM3, CTLA-4, and TIGIT that characterize CD8 T cell exhaustion within the tumor microenvironment (Anderson et al., 2016); (ii) the T cell receptor costimulatory proteins CD28, ICOS, SLAMF6, and CD27, pro-inflammatory IFN-γ and TNF-α cytokines, Granzyme B; (iii) tissue-resident T cells markers CD103, CD69, and CCR5 (Golubovskaya and Wu, 2016); (iv) ectonucleoside triphosphate diphosphohydrolase-1 CD39 (Takenaka et al., 2019). We decided to apply a statistical design in which we pooled the number of events observed in all animals, rather than a direct comparison of Puro+ versus Puro-, in a single animal. By this approach, we may underestimate statistical significance, but we obtain relationships that may have a general significance. First, we found a strong positive relationship between puromycin incorporation and Ki67 staining, suggesting clonal amplification (proliferation) of actively translating cells (Figure 4C, Figure 4—source data 1). Notably, we did not detect statistical differences in the expression of PD-1, TIGIT, CTLA-4, CD28, CD69, CCR5, CD103, and TNF-α between high and low puromycin incorporating cells (Figure 4D, Figure 4—source data 1). Conversely, we found a positive relationship between puromycin incorporation and the expression of TIM3, SLAMF6, CD39, Granzyme B, CD27, and IFN-γ. In turn, ICOS expression was selectively decreased in highly translating CD8+ cells (Figure 4D). Next, we analyzed co-marker expression. We found that highly translating cells were characterized by having high TIM3-low SLAMF6, high TIM3-high PD-1 (Figure 4E–F, Figure 4—source data 1). Consistently, high PD1 and high TIM3 expression associated with Ki67+ cells (Figure 4—figure supplement 1A-B, Figure 4—figure supplement 1—source data 1). Altogether, these data show that translationally active CD8+ T cells are confined in non-hypoxic areas, characterized by the activation of the mTORC1 pathway and can be defined by a specific immunophenotype. Taken together the data suggest the existence of clonally expanding CD8+ cells, highly translating, and moving versus the exhaustion status.
 
-## Efficiently translating CD4+ TILs are enriched for CTLA-4 expression and suppressor Tregs
+![Figure 4.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic diagram for the experiment. (B) Representative plots (left) and statistical analysis (mean ± SEM) of gated CD44+ CD8+ TILs analyzed for puromycin incorporation. Quantitation shows an enrichment for the expression of CD44. Percentages of positive cells in each gate are shown. Data from three experiments pooled together (n = 6 mice per experiment) **p < 0.01. (C) Representative plots (left) and statistical analysis (mean ± SEM) of Ki67+ within Puro+ and Puro- CD8+ TILs. Quantitation shows a positive correlation between translation rate and proliferation. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 5 mice per experiment) **p < 0.01. (D) Statistical analysis (mean ± SEM) for the indicated markers within Puro+ and Puro- CD8+ TILs shows that Puro+ translating CD8+ TILs are enriched for TIM3, SLAMF6, CD39, CD27, ICOS, and IFN-γ expression. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 5 mice per experiment) **p < 0.01; ****p < 0.0001. (E) Representative plots and statistical analysis (mean ± SEM) for SLAMF6 and TIM3 within Puro+ and Puro- CD8+ TILs shows that Puro+ translating CD8+ TILs are enriched for TIM3 expression. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 5 mice per experiment) *p < 0.05. (F) Representative plots and statistical analysis (mean ± SEM) for PD1 and TIM3 within Puro+ and Puro- CD8+ TILs show that Puro+ translating CD8+ TILs are enriched for TIM3 and PD1 expression. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 5 mice per experiment) *p < 0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B) Quantitation shows that Ki67+ CD8+ TILs express significantly more PD1 and TIM3 than Ki67- CD8+ TILs. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 5 mice per experiment) ****p < 0.0001.
+
+### Efficiently translating CD4+ TILs are enriched for CTLA-4 expression and suppressor Tregs
 
 We asked whether translating Puro+ CD4+ T cells had specific phenotypes. Next, we measured by flow cytometry the expression of markers of memory and effector T cell differentiation, activation, as well as of relevant costimulatory and coinhibitory molecules (Figure 5A). Herein, we summarize the main findings. We observed an increase in puromycin incorporation in CD44+ cells (Figure 5B, Figure 5—source data 1). Next, we analyzed the expression of costimulatory and coinhibitory proteins, that is, PD-1, TIGIT, TIM3, CTLA-4, SLAMF6, CD39, CD27, ICOS, CD28, CD69, CCR5, and CD103 (Figure 5C, Figure 5—source data 1). Some of these markers clustered with puromycin incorporation as shown in Figure 5C. Ki-67 labeling was robustly enriched in cells incorporating higher levels of puromycin (Figure 5—figure supplement 1A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic diagram for the experiment. (B) Representative plots (left) and statistical analysis (mean ± SEM) of gated CD44+ CD4+ tumor-infiltrating lymphocytes (TILs) analyzed for puromycin incorporation. Quantitation shows an enrichment for the expression of CD44. Percentages of positive cells in each gate are shown. Data from three experiments pooled together (n = 6 mice per experiment) **p < 0.01. (C) Statistical analysis (mean ± SEM) for the indicated markers within Puro+ and Puro- CD4+ TILs shows that Puro+ translating CD4+ TILs are enriched for CTLA4, CD39, CD27, ICOS, CCR5, and CD103 expression. Data from two experiments pooled together (n = 5 mice per experiment) *p < 0.05; **p < 0.01; ****p < 0.0001. (D) Representative plots (left) and statistical analysis (mean ± SEM) of gated CD25+ Foxp3+ CD4+ lymphocytes show that the number of Puro+ Tregs is higher in tumors versus spleen. Percentages of positive cells in each gate are shown. Data from two experiments pooled together (n = 4–5 mice per experiment) ***p < 0.001. (E) Immunohistochemical analysis of puromycin in Foxp3+ TILs shows that clusters of highly translating Foxp3+ cells are found. Scale bar, 20 μm. (F) Representative plots (left) and statistical analysis (mean ± SEM) for pS6(S235/236) within Puro+ and Puro- Tregs showing that, in vivo, most of translating Tregs have the mTORC1-S6K pathway active. Percentages of positive cells in each gate are shown. Data from one experiment representative of two (n = 7) ***p < 0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig5-figsupp1-v2.jpg)
 
 Tregs can be identified by CD25-FoxP3. We analyzed the difference in translation between tumor infiltrating Tregs and spleen-resident Tregs. Notably, only 4–6% Tregs of the spleen incorporated puromycin (Figure 5D, Figure 5—source data 1), whereas approximately 40% of tumor-infiltrating Tregs incorporated high levels of puromycin (Figure 5D, Figure 5—source data 1). In keeping with these findings, IHC on paraffin-embedded tumor sections showed that puromycin signals overlap with FoxP3 staining (Figure 5E). Measurement of intracellular levels of phosphorylated S6 ribosomal protein (pS6) in gated Puro+ and Puro- Tregs showed, in line with previous observations, that pS6 labeling partitioned with high levels of puromycin, both for rpS6 S235/S236 (Figure 5F, Figure 5—source data 1) and for rpS6 Ser240/244 (Figure 5—figure supplement 1, Figure 5—figure supplement 1—source data 1).
 
@@ -76,7 +110,7 @@ CTLA-4 and TGF-β are Treg markers that correlate with the suppression activity 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69015/elife-69015-fig6-v2.jpg)
 
-**Figure 6.:** (A) Representative plots (left) and statistical analysis (mean ± SEM) for CTLA-4+ (B), TGF-β+ (C), Ki67+ (C), within Puro+ and Puro- Tregs shows that, in vivo, Puro+ translating Tregs are more proliferative but also exhibit a more activated phenotype than Puro- Tregs. Percentages of positive cells in each gate are shown. Data from one experiment representative of two (n = 6–9) *p < 0.05; **p < 0.01. (D) Representative plots (left) and statistical analysis (mean ± SEM) for Ki67+ within Puro+ Tregs and Puro+ Tconv shows that, in vivo, Puro+ Tregs expressed significantly more Ki67 than Puro+ Tconv (C), indicating that the former are more proliferative than the latter. Percentages of positive cells in each gate are shown. Data from one experiment representative of two (n = 6) **p < 0.01.Figure 6—source data 1.Figure 6A–D.
+**Figure 6.:** (A) Representative plots (left) and statistical analysis (mean ± SEM) for CTLA-4+ (B), TGF-β+ (C), Ki67+ (C), within Puro+ and Puro- Tregs shows that, in vivo, Puro+ translating Tregs are more proliferative but also exhibit a more activated phenotype than Puro- Tregs. Percentages of positive cells in each gate are shown. Data from one experiment representative of two (n = 6–9) *p < 0.05; **p < 0.01. (D) Representative plots (left) and statistical analysis (mean ± SEM) for Ki67+ within Puro+ Tregs and Puro+ Tconv shows that, in vivo, Puro+ Tregs expressed significantly more Ki67 than Puro+ Tconv (C), indicating that the former are more proliferative than the latter. Percentages of positive cells in each gate are shown. Data from one experiment representative of two (n = 6) **p < 0.01.
 
 ## Discussion
 
@@ -98,11 +132,378 @@ Limitations of our study: Quantitative puromycin incorporation was used to arbit
 
 ## Materials and methods
 
-## Human samples and mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>B16F10</td>
+      <td>PMID:32699136</td>
+      <td></td>
+      <td>Cells were obtained from Dr Matteo Bellone, HSR Scientific Institute, Milan, Italy</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>MC38</td>
+      <td>PMID:32699136</td>
+      <td></td>
+      <td>Cells were obtained from Dr Maria Rescigno, Humanitas University, Rozzano (MI), Italy</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Puromycin, clone 12D10</td>
+      <td>Millipore</td>
+      <td>Cat#: MABE343, RRID:AB_2566826</td>
+      <td>WB (1:10000), IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Vinculin, clone V284</td>
+      <td>Millipore</td>
+      <td>Cat#: 05–386, RRID:AB_11212640</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Actin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: A4700, RRID:AB_476730</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti phospho-rpS6 Ser235/236</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 2211, RRID:AB_331679</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti phospho-rpS6 Ser240/244</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling Technology Cat#: 2215, RRID:AB_331682</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-phospho-eIF2α Ser51</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 3597, RRID:AB_390740</td>
+      <td>IF (1:400), ELISA (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-FoxP3</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 98377, RRID:AB_2747370</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-CD4</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 25229, RRID:AB_2798898</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-CD4</td>
+      <td>BioLegend</td>
+      <td>BioLegend Cat#: 100401, RRID:AB_312686</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-CD31</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 77699, RRID:AB_2722705</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal APC conjugated anti-CD62L</td>
+      <td>eBioscience</td>
+      <td>Clone: MEL-14, Cat#: 17-0621-83</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE conjugated anti-CCR5</td>
+      <td>eBioscience</td>
+      <td>Clone: 7A4, Cat#: 12-1951-82</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal FITC conjugated anti-ICOS</td>
+      <td>eBioscience</td>
+      <td>Clone: C398.4A, Cat#: 11-9949-82</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE/Cy7 conjugated anti-CD39</td>
+      <td>eBioscience</td>
+      <td>Clone: 24DMS1, Cat#: 25-0391-30</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PerCP/EF710 conjugated anti-CD3</td>
+      <td>eBioscience</td>
+      <td>Clone: 17A2, Cat#: 46-0032-80</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE conjugated anti-phospho-S6</td>
+      <td>eBioscience</td>
+      <td>Clone: cupk43k, Cat#: 12-9007-41</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal FITC conjugated anti-CD44</td>
+      <td>BioLegend</td>
+      <td>Clone: IM7, Cat#: 103008</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE/Cy7 conjugated anti-CD25</td>
+      <td>BioLegend</td>
+      <td>Clone: PC61, Cat# 102016</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal APC/Cy7 conjugated anti-CD4</td>
+      <td>BioLegend</td>
+      <td>Clone: RM4-5, Cat#: 100526</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE/Cy7 conjugated anti-CD4</td>
+      <td>BioLegend</td>
+      <td>Clone GK1.5, Cat#: 100422</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE/Cy7 conjugated anti-CD3</td>
+      <td>BioLegend</td>
+      <td>Clone: 145–2C11, Cat#: 100320</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Pacific Blue conjugated anti-CD8α</td>
+      <td>BioLegend</td>
+      <td>Clone: 53–6.7, Cat#: 100725</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE conjugated anti-CTLA-4</td>
+      <td>BioLegend</td>
+      <td>Clone: UC10-4B9, Cat#: 106305</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal APC conjugated anti-Tim3</td>
+      <td>BioLegend</td>
+      <td>Clone: B8.2C12, Cat#: 134007</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PerCP/Cy5.5 conjugated anti-PD1</td>
+      <td>BioLegend</td>
+      <td>Clone: RMPI-30, Cat#: 109120</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PerCP/Cy5.5 anti-CD27</td>
+      <td>BioLegend</td>
+      <td>Clone: LG.3A10, Cat#: 124214</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal FITC conjugated anti-CD28</td>
+      <td>BioLegend</td>
+      <td>Clone: E18, Cat#: 122007</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE conjugated anti-CD103</td>
+      <td>BioLegend</td>
+      <td>Clone: 2E7, Cat#: 121406</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE/Cy7 conjugated anti-CD69</td>
+      <td>BioLegend</td>
+      <td>Clone: H1.2F3, Cat#:104526</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE/Cy7 conjugated anti-TIGIT</td>
+      <td>BioLegend</td>
+      <td>Clone: 1G9, Cat#:142107</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE conjugated anti-SLAMF6</td>
+      <td>BioLegend</td>
+      <td>Clone: 330-AJ, Cat#:134605</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal APC conjugated anti- FoxP3</td>
+      <td>eBioscience</td>
+      <td>Clone: FJK-16s, Cat#: 17-5773-82</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE conjugated anti-Ki67</td>
+      <td>eBioscience</td>
+      <td>Clone: SolA15, Cat#: 12-5698-80</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal RedMab 549 conjugated anti-PMO</td>
+      <td>Hypoxiprobe</td>
+      <td>Cat#: 5914</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal APC of FITC conjugated anti-Puromycin</td>
+      <td>Millipore</td>
+      <td>Clone: 12D10</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PE conjugated anti-IFN-γ</td>
+      <td>BioLegend</td>
+      <td>Clone: XMG1.2 Cat#: 505808</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal APC conjugated anti- TNF-α</td>
+      <td>eBioscience</td>
+      <td>Clone: MP6-XT22, Cat#: 506308</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal APC conjugated anti-Granzyme B</td>
+      <td>BioLegend</td>
+      <td>Clone: GB11, Cat#: 515303</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal BV421 conjugated anti-TGF-β</td>
+      <td>Biolegend</td>
+      <td>Clone: TW7-16B4, Cat#: 141407</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BD Fixation Permeabilization Kit</td>
+      <td>eBioscience</td>
+      <td>Cat#: 554714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>eBioscience FoxP3 staining buffer set</td>
+      <td>eBioscience</td>
+      <td>Cat#:: 00-5523-00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CD4+ T Cell Isolation Kit</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-091-155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Human T-Activator CD3/CD28</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11131D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>P8833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PMO</td>
+      <td>Hydroxyprobe</td>
+      <td>Cat#: HP1-XXX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Everolimus</td>
+      <td>Sigma-Aldrich</td>
+      <td>SML2282</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PPP242</td>
+      <td>Sigma-Aldrich</td>
+      <td>P0037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MNK inhibitor</td>
+      <td>Sigma-Aldrich</td>
+      <td>454861</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Human samples and mice
 
 Human blood samples from healthy male or female donors were collected with written informed consent, and collection was performed according to protocols approved by Ethics Committee of Fondazione Istituto di Ricovero e Cura a Carattere Scientifico Ca’Granda Ospedale Maggiore Policlinico. All animal experiments were performed in accordance with the Swiss Federal Veterinary Office guidelines and approved by the Ethical Committee of the Cantonal Veterinary with authorization number TI 37/2016. C57BL/6J mice were bred in specific pathogen-free facility at the Institute for Research in Biomedicine (Bellinzona, Switzerland). Mice were housed, five per cage, in ventilated cages under standardized conditions (20°C ± 2° C, 55% ± 8% relative humidity, and 12 hr light/dark cycle). Food and water were available ad libitum, and mice were examined daily.
 
-## Cell isolation and culture from human blood
+### Cell isolation and culture from human blood
 
 PBMCs were isolated from blood samples by Ficoll-Hypaque density-gradient centrifugation. CD4+ T cells were enriched from PBMCs by magnetic separation (AutoMACS, Miltenyi Biotec) using human CD4+ T Cell Isolation Kit (Miltenyi Biotec) according to the manufacturer’s instructions before flow sorting on a FACSAria II (BD Biosciences).
 
@@ -110,37 +511,37 @@ CD4+ T cells were activated with anti-CD3/CD28-coated beads (Life Technologies D
 
 Typical cell culture conditions (37°C, 5% CO2, and environmental [21%] oxygen) were used and the conditions referred to as normoxia. Hypoxia was generated with an oxygen/CO2 controller incubator (Galaxy 48R; Eppendorf). It was set at 1% oxygen and 5% CO2.
 
-## Cell isolation from mice specimens
+### Cell isolation from mice specimens
 
 T cells were obtained from cell suspensions of spleen. For TILs isolation, tumors were cut in small pieces and resuspended in RPMI1640 with 1.5 mg/mL Type I Collagenase (Sigma), 100 mg/mL DNase I (Roche), and 5% FBS, digested for 45 min at 37°C under gentle agitation. The digestion product was then passed through a 70 μm cell strainer to obtain a single-cell suspension. Lymphocytes were then enriched by Percoll density gradient following the manufacturer’s protocol.
 
-## Murine tumor cell lines
+### Murine tumor cell lines
 
 B16F10 and MC38 cells were cultured in RPMI1640 supplemented with 10% heat-inactivate FBS, 100 U/mL penicillin/streptomycin, and 100 U/mL kanamycin. Cells were tested for the absence of Mycoplasma and maintained in 5% CO2 at 37°C. Frozen aliquots were thawed for each in vivo experiment and passaged in vitro for the minimum time required. Tumor cells at 70–80% confluency were harvested by diluting them 1:5 in 0.25% trypsin.
 
-## In vitro measurement of protein synthesis
+### In vitro measurement of protein synthesis
 
 For in vitro measurements of protein synthesis, CD4+ T cells stimulated in vitro for the indicated time intervals were treated with 5 μg/mL puromycin for 10 min. Puromycin incorporation was then determined by flow cytometry or Western blotting as described later.
 
-## In vivo measurement of protein synthesis
+### In vivo measurement of protein synthesis
 
 To measure protein synthesis in vivo, mice were intraperitoneal injected with puromycin at a concentration of 50 mg/kg dissolved in PBS at pH 6.4–6.6; 1 hr later, mice were sacrificed, and mice specimens rapidly collected. Spleen or cutaneous tumors were further processed for flow cytometry or histology analysis as described later. The sample size was estimated according to the following parameters: power 80%, alpha 0.05, average means of Puro+ cells 60% ± 20% for the tumor group and 30% for the non-tumor sample. Consequently, the minimal number was fixed to N = 5/group.
 
 For the analysis of the effect of everolimus on translation rate and mTORC1 signaling, B16 mice were given intraperitoneal injections of 5  mg/kg everolimus (Sigma-Aldrich) dissolved in PBS for 2 consecutive days. Puromycin was injected 1 hr before sacrificing mice and collecting TILs for subsequent flow cytometry analysis.
 
-## In vitro stimulation of lymphocytes and hypoxia
+### In vitro stimulation of lymphocytes and hypoxia
 
 CD4+ T cells stimulated in vitro for 36 hr were transferred from 20% O2 to 1% O2 for the indicated times. Translation and eIF2α phosphorylation were measured by flow cytometry and ELISA, respectively, as described later.
 
-## In vivo detection of tissue hypoxia
+### In vivo detection of tissue hypoxia
 
 PMO (Hydroxyprobe) was injected intraperitoneally at a concentration of 60 mg/kg dissolved in PBS at pH 6.4–6.6. After 1 hr, mice were killed and processed further for flow cytometry or fluorescence microscopy analysis, as described later.
 
-## In vitro eIF2α phosphorylation detection with ELISA assay
+### In vitro eIF2α phosphorylation detection with ELISA assay
 
 Phosphorylation of eIF2α was measured by ELISA assay. For the assay, each well of a 96-well microtiter plate was coated overnight at 4°C in a humidified chamber with 20 μg of protein extracts of stimulated CD4+ T cellsì either incubated for 4 hr under normoxia or hypoxia. Plate was then probed with either rabbit anti-total-eIF2α antibody (1:500, Cell Signaling) or anti-phospho-specific eIF2α(S51) antibody (1:500, Cell Signaling), for 1 hr at room temperature, followed by incubation with HRP-conjugate secondary antibody for 30 min at room temperature and addition of ELISA colorimetric TMB reagent as a soluble substrate for the detection of peroxidase activity. The absorption intensity was obtained using the Model 680 Microplate Reader (Bio-Rad).
 
-## Histology, tissue stainings, antibodies, and imaging
+### Histology, tissue stainings, antibodies, and imaging
 
 Spleen or tumor samples were either embedded in OCT and frozen or fixed overnight with 4% paraformaldehyde, transferred to 70% EtOH and embedded in paraffin as previously described (Rosso et al., 2004). Samples were then cut at 4 μm (paraffin) or 10 μm (frozen) and stained with hematoxylin and eosin (Sigma-Aldrich) for morphological analysis. Immunohistochemical and immunofluorescence analyses were performed as described previously (Manfrini et al., 2020a).
 
@@ -148,13 +549,13 @@ Primary antibodies were used at the following dilutions: mouse monoclonal to Pur
 
 Slides were mounted in glycerol supplemented with Mowiol 4–88 mounting medium (Sigma-Aldrich). White field images were acquired using a Leica DM1600 microscope. Fluorescence images were acquired using a confocal microscope (Leica TCS SP5) at 1024 Å, ~1,024 dpi resolution. All the images were further processed with Photoshop CS6 (Adobe, Berkeley, CA) software.
 
-## Western blotting
+### Western blotting
 
 SDS-PAGE was performed on protein extracts obtained from human CD4+ T cell activated in vitro as previously described. Western blotting was performed as previously described (Ricciardi et al., 2018). The following antibodies were used for Western blotting: rabbit polyclonal to phospho-rpS6 Ser235/236 (1:1000, Cell Signaling), rabbit polyclonal to phospho-rpS6 Ser240/244 (1:1000, Cell Signaling), mouse monoclonal anti-Vinculin (1:1000, Millipore), mouse monoclonal anti-Actin (1:1000, Sigma), mouse monoclonal anti-Puromycin (1:10000, Millipore). Chemiluminescent signals were detected using Amersham ECL Prime (GE Healthcare Life Sciences) and images were acquired using the iBright CL750 Imaging System (Thermo Fisher Scientific).
 
 Where indicated, cells were treated with either 2 μM PP242 (Sigma-Aldrich) or 3 μM MNK inhibitor (Sigma-Aldrich) for 30  min after 48 hr of Dynabeads stimulation.
 
-## Flow cytometry
+### Flow cytometry
 
 For assessment of puromycin incorporation on human blood-derived samples, CD4+ T cells stimulated in vitro for the indicated times were fixed and permeabilized with Cytofix and Perm Buffer III buffers (both BD Biosciences) according to the manufacturer’s protocol, and stained with FITC conjugated anti-Puromycin antibody (Millipore). Finally, cells were analyzed by flow cytometry, and the relative amount of protein synthesized quantified with FlowJo software.
 
@@ -164,10 +565,10 @@ The following mAbs were purchased from BioLegend: FITC conjugated anti-CD44 (clo
 
 Intracellular staining was performed using the BD Cytofix/Cytoperm and Perm/Wash buffers or, for intracellular FoxP3 (APC, clone: FJK-16s, eBioscience, Cat#: 17-5773-82), Ki-67 (PE, clone: SolA15, eBioscience, Cat#: 12-5698-80), PMO (Hypoxiprobe Red Mab 549, Cat#5914), and Puromycin (APC or FITC, clone#12D10, Millipore) staining, the eBioscience FoxP3 staining buffer set. For intracellular staining of IFN-γ (PE, clone: XMG1.2, Biolegend, Cat#: 505808), TNF-α (APC, clone: MP6-XT22, eBioscience, Cat#: 506308), Granzyme B (APC, clone: GB11, Biolegend, Cat#: 515303), and TGF-β (BV421-labeled, clone:TW7-16B4, Biolegend, Cat#:141407) T cells were incubated for 4 hr at 37°C in ionomycin (Sigma-Aldrich,750 ng/mL) and PMA (Sigma-Aldrich, 20 ng/mL). For the last 3 hr, Brefeldin (eBioscience, 1000× Solution) was added to the cultures.
 
-## Statistical analysis
+### Statistical analysis
 
 The data are expressed as mean ± SEM. Student’t t test was used to compare pairs of data. In mice experiments, the statistical analysis was performed with the Prism Software (GraphPad). Comparisons of two groups were calculated using nonparametric Mann-Whitney test or ANOVA with Dunnett’s post hoc test. Error bars, p values, and statistical tests are reported in the corresponding figure legends. All experiments were based on biological replicates, that is, different groups of mice or T cells from different donors. No samples were excluded from the analysis.
 
-## Source data
+### Source data
 
 Excel files are provided for FACS and ELISA analysis. Raw gels as Figure 1—source data 1. Gels with cropped images as Figure 1—source data 2.

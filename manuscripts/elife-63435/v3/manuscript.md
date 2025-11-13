@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Skeletal muscle excitation-contraction (EC) coupling roots in Ca 2+ -influx-independent inter-channel signaling between the sarcolemmal dihydropyridine receptor (DHPR) and the ryanodine receptor (RyR1) in the sarcoplasmic reticulum. Although DHPR Ca 2+ influx is irrelevant for EC coupling, its putative role in other muscle-physiological and developmental pathways was recently examined using two distinct genetically engineered mouse models carrying Ca 2+ non-conducting DHPRs: DHPR(N617D) (Dayal et al., 2017) and DHPR(E1014K) (Lee et al., 2015). Surprisingly, despite complete block of DHPR Ca 2+ -conductance, histological, biochemical, and physiological results obtained from these two models were contradictory. Here, we characterize the permeability and selectivity properties and henceforth the mechanism of Ca 2+ non-conductance of DHPR(N617). Our results reveal that only mutant DHPR(N617D) with atypical high-affinity Ca 2+ pore-binding is tight for physiologically relevant monovalent cations like Na + and K + . Consequently, we propose a molecular model of cooperativity between two ion selectivity rings formed by negatively charged residues in the DHPR pore region.
+Skeletal muscle excitation-contraction (EC) coupling roots in Ca2+-influx-independent inter-channel signaling between the sarcolemmal dihydropyridine receptor (DHPR) and the ryanodine receptor (RyR1) in the sarcoplasmic reticulum. Although DHPR Ca2+ influx is irrelevant for EC coupling, its putative role in other muscle-physiological and developmental pathways was recently examined using two distinct genetically engineered mouse models carrying Ca2+ non-conducting DHPRs: DHPR(N617D) (Dayal et al., 2017) and DHPR(E1014K) (Lee et al., 2015). Surprisingly, despite complete block of DHPR Ca2+-conductance, histological, biochemical, and physiological results obtained from these two models were contradictory. Here, we characterize the permeability and selectivity properties and henceforth the mechanism of Ca2+ non-conductance of DHPR(N617). Our results reveal that only mutant DHPR(N617D) with atypical high-affinity Ca2+ pore-binding is tight for physiologically relevant monovalent cations like Na+ and K+. Consequently, we propose a molecular model of cooperativity between two ion selectivity rings formed by negatively charged residues in the DHPR pore region.
 
 ## Introduction
 
@@ -28,13 +28,13 @@ In this study, we demonstrate that the mutant DHPR(N617D) remains Ca2+ impermean
 
 ## Results
 
-## DHPR(N617D) is Ca2+ impermeant even under current amplifying conditions
+### DHPR(N617D) is Ca2+ impermeant even under current amplifying conditions
 
 To investigate whether DHPR pore mutation N617D obstructs Ca2+ permeation also under current enhancing conditions, we implemented corresponding experimental protocols and measured whole-cell Ca2+ currents from wt and ncDHPR myotubes isolated from new born up to 4-day-old mouse pups. As a first step, inward Ca2+ currents were recorded in the presence of 10 µM 1,4-dihydropyridine (DHP) agonist (±)Bay K 8644 applied via the standard bath solution (see Material and methods). For voltage-gated L-type Ca2+ channels (CaV), Bay K 8644 acts as a channel opener by occupying a fenestration site at the interface of repeats III and IV in the pore region (Grabner et al., 1996; Zhao et al., 2019). Although the standard depolarization protocol (−50 to +80 mV) elicited the expected robust (±)Bay K-induced amplification (p<0.001) of Ca2+ currents (No Bay K: Imax = −5.04 ± 0.27 pA/pF; n = 9 and with Bay K: Imax = −8.82 ± 0.56 pA/pF; n = 6) through the wt DHPR (Figure 1a, center and bottom), no inward Ca2+ currents (p<0.001) (Imax = −0.02 ± 0.01 pA/pF; n = 5) or tail currents were evoked in ncDHPR myotubes under (±)Bay K 8644 administration (Figure 1a, top and bottom).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/63435/elife-63435-fig1-v3.jpg)
 
-**Figure 1.:** 2+ impermeant despite strong or long depolarizations in the presence of DHP agonist Bay K.(a) Representative whole-cell Ca2+ current recordings elicited by 200 ms depolarizations from −50 to +80 mV from ncDHPR (top) and wt (center) myotubes before (left) and after (right) perfusion with 10 µM of the DHP agonist (±)Bay K 8644. Scale bars, 50 ms (horizontal), 4 pA/pF (vertical). Plots of current-voltage relationship (bottom) indicates lack of DHPR inward Ca2+ currents in the absence (Imax = −0.02 ± 0.01 pA/pF; n = 8) and presence (Imax = −0.02 ± 0.01 pA/pF; n = 5) of (±)Bay K through ncDHPR myotubes, in contrast to significant (p<0.001) augmentation of Ca2+ currents in wt myotubes upon administration of (±)Bay K (No Bay K: Imax = −5.04 ± 0.27 pA/pF; n = 9; with Bay K: Imax = −8.82 ± 0.56 pA/pF; n = 6). (b) 200 ms strong depolarization to +90 mV followed by 100 ms to +60 mV and finally repolarization to −20 mV for 70 ms (bottom, green lines) in the presence of 10 µM (±)Bay K, were unable to evoke inward Ca2+ currents through DHPR(N617D) (top, with +90 mV prepulse: Imax = −0.02 ± 0.02 pA/pF; without +90 mV prepulse: Imax = 0.01 ± 0.02 pA/pF; n = 10). Contrary, wt DHPR displayed significant (p<0.01) depolarization-induced potentiation of inward current at +60 mV (with +90 mV prepulse: Imax = −2.97 ± 0.54 pA/pF; without +90 mV prepulse: Imax = −1.62 ± 0.37 pA/pF; n = 5) (center). Upon subsequent repolarization from +60 mV to −20 mV, the tail current was also considerably larger (p<0.01) after the +90 mV pre-conditioning pulse (Itail = −19.36 ± 3.59 pA/pF; n = 5) (center, green trace) than after the +60 mV pulse (Itail = −10.78 ± 1.99 pA/pF; n = 5) (center, black trace). Statistical significance was calculated using paired t-test. Scale bars, 100 ms (horizontal), 3 pA/pF (vertical). (c) Likewise, 2 s long depolarizations from +10 mV to +80 mV in 10 mV increments (bottom) in the presence of 10 µM (±)Bay K, were unable to induce Ca2+ influx through DHPR(N617D) (top, Imax = −0.05 ± 0.02 pA/pF; n = 5). The same voltage protocol evoked robust inward Ca2+ currents through wt DHPR (center, Imax = −7.69 ± 0.56 pA/pF; n = 5). Scale bars, 500 ms (horizontal), 4 pA/pF (vertical). Data are presented as mean ± SEM; p determined by unpaired Student’s t-test.Figure 1—source data 1.
+**Figure 1.:** (a) Representative whole-cell Ca2+ current recordings elicited by 200 ms depolarizations from −50 to +80 mV from ncDHPR (top) and wt (center) myotubes before (left) and after (right) perfusion with 10 µM of the DHP agonist (±)Bay K 8644. Scale bars, 50 ms (horizontal), 4 pA/pF (vertical). Plots of current-voltage relationship (bottom) indicates lack of DHPR inward Ca2+ currents in the absence (Imax = −0.02 ± 0.01 pA/pF; n = 8) and presence (Imax = −0.02 ± 0.01 pA/pF; n = 5) of (±)Bay K through ncDHPR myotubes, in contrast to significant (p<0.001) augmentation of Ca2+ currents in wt myotubes upon administration of (±)Bay K (No Bay K: Imax = −5.04 ± 0.27 pA/pF; n = 9; with Bay K: Imax = −8.82 ± 0.56 pA/pF; n = 6). (b) 200 ms strong depolarization to +90 mV followed by 100 ms to +60 mV and finally repolarization to −20 mV for 70 ms (bottom, green lines) in the presence of 10 µM (±)Bay K, were unable to evoke inward Ca2+ currents through DHPR(N617D) (top, with +90 mV prepulse: Imax = −0.02 ± 0.02 pA/pF; without +90 mV prepulse: Imax = 0.01 ± 0.02 pA/pF; n = 10). Contrary, wt DHPR displayed significant (p<0.01) depolarization-induced potentiation of inward current at +60 mV (with +90 mV prepulse: Imax = −2.97 ± 0.54 pA/pF; without +90 mV prepulse: Imax = −1.62 ± 0.37 pA/pF; n = 5) (center). Upon subsequent repolarization from +60 mV to −20 mV, the tail current was also considerably larger (p<0.01) after the +90 mV pre-conditioning pulse (Itail = −19.36 ± 3.59 pA/pF; n = 5) (center, green trace) than after the +60 mV pulse (Itail = −10.78 ± 1.99 pA/pF; n = 5) (center, black trace). Statistical significance was calculated using paired t-test. Scale bars, 100 ms (horizontal), 3 pA/pF (vertical). (c) Likewise, 2 s long depolarizations from +10 mV to +80 mV in 10 mV increments (bottom) in the presence of 10 µM (±)Bay K, were unable to induce Ca2+ influx through DHPR(N617D) (top, Imax = −0.05 ± 0.02 pA/pF; n = 5). The same voltage protocol evoked robust inward Ca2+ currents through wt DHPR (center, Imax = −7.69 ± 0.56 pA/pF; n = 5). Scale bars, 500 ms (horizontal), 4 pA/pF (vertical). Data are presented as mean ± SEM; p determined by unpaired Student’s t-test.
 
 L-type Ca2+ channels show a shift in the mode of gating not only by DHP agonist action (Hess et al., 1984) but also in response to strong or prolonged membrane depolarizations. As previously demonstrated (Wilkens et al., 2001), potentiation of L-type Ca2+ channels by DHP agonist Bay K 8644 and strong depolarizations occurs via distinct mechanisms. The shift in mode of gating, also referred to as ‘mode 2’ gating is characterized at the single-channel level by high open probability (PO) and long mean open times (Pietrobon and Hess, 1990). Depolarization-induced entry into mode 2 is reflected by increased Ca2+ currents as well as tail currents with slower rate of current decay. To investigate whether strong depolarizations with simultaneous administration of (±)Bay K 8644 enable the entry of mutant DHPR(N617D) into mode 2 and elicit L-type Ca2+ currents, we used the pulse protocol depicted in Figure 1b (bottom) (Bannister and Beam, 2011; Bannister and Beam, 2013). Briefly, 200 ms strong, conditioning depolarization pulses from −50 mV to +90 mV, followed by a pulse of +60 mV to putatively elicit enhanced inward Ca2+ currents and subsequently a repolarization pulse to −20 mV to trigger tail currents were applied. As expected from wt myotubes, we recorded significantly larger inward Ca2+ current at +60 mV (Imax = −2.97 ± 0.54 pA/pF; n = 5; p<0.01) as well as tail current at −20 mV (Itail = −19.36 ± 3.59 pA/pF; n = 5; p<0.01) when preceded by a pulse of +90 mV compared to the corresponding currents recorded without the pre-conditioning depolarization of +90 mV (Imax = −1.62 ± 0.37 pA/pF; Itail = −10.78 ± 1.99 pA/pF; n = 5) (Figure 1b, center). Conversely, no inward currents or tail currents could be evoked in ncDHPR myotubes with (Imax = −0.02 ± 0.02 pA/pF; n = 10) or without the +90 mV pre-conditioning pulse (Imax = 0.01 ± 0.02 pA/pF; n = 10) (Figure 1b, top). The slight outward component at +90 mV is typically observed at strong depolarizing potentials as described previously (Schredelseker et al., 2010; Dayal et al., 2017).
 
@@ -42,13 +42,13 @@ Finally, beside strong depolarizations, long depolarizations are known to drive 
 
 Altogether, our results demonstrate that recording conditions known to potentiate L-type inward Ca2+ currents through the wt DHPR were unable to evoke Ca2+ currents through the mutant DHPR(N617D) in the ncDHPR mouse model. Out of the three, so far described mutant mammalian DHPR Ca2+ channels with ablated Ca2+ conducting ability under standard recording conditions, namely R174W (Eltit et al., 2012), E1014K (Lee et al., 2015), and N617D (Dayal et al., 2017), only the voltage-sensor mutant R174W opened partially and produced tail currents under (±)Bay K 8644 administration. This malignant hyperthermia-linked DHPR voltage-sensor mutant R174W also displayed small, but clearly detectable inward Ca2+ currents together with enhanced tail currents in response to strong or prolonged depolarizations in the presence of (±)Bay K 8644 (Bannister and Beam, 2013). Integrating previous and present results (Bannister and Beam, 2011), we can conclude that it is impossible to force either of the two DHPR pore mutants, DHPR(N617D) and DHPR(E1014K) into a Ca2+ conducting mode by executing the above-described L-type Ca2+ current amplifying conditions.
 
-## DHPR(N617D) does not conduct Na+ currents
+### DHPR(N617D) does not conduct Na+ currents
 
 Since both pore mutants, DHPR(N617D) as well as DHPR(E1014K) strictly prevent Ca2+ influx even under current enhancing conditions, the striking differences in muscle performance, metabolism, and fiber-type composition between ncDHPR and EK mice (Lee et al., 2015; Georgiou et al., 2015; Dayal et al., 2017) can evidently not be due to DHPR Ca2+ conductance. However, the reason for these puzzling phenotypic differences could be attributed to distinct selectivity and permeation properties of physiologically relevant monovalent cations through these mutated DHPRs. Basic biophysical characterization of both the DHPR pore mutants, performed either in the respective mouse model (Lee et al., 2015; Dayal et al., 2017) or in heterologous expression systems (Dirksen and Beam, 1999; Schredelseker et al., 2010; Bannister and Beam, 2011; Beqollari et al., 2018) already pointed out substantial differences in monovalent cation conductance. Specifically, under standard Ca2+ current recording conditions with 145 mM Cs+ present in the patch pipette to block K+ channels (Clay and Shlesinger, 1984), massive outward Cs+ currents through DHPR(E1014K) (Bannister and Beam, 2011; Lee et al., 2015; Beqollari et al., 2018) but not through DHPR(N617D) (Schredelseker et al., 2010; Dayal et al., 2017; Beqollari et al., 2018) were observed (see also Figure 1a, top and bottom and Figure 2b, bottom).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/63435/elife-63435-fig2-v3.jpg)
 
-**Figure 2.:** + currents in the presence of near physiological [Na+].(a) Plots of current-voltage relationship for DHPR-mediated Na+ currents recorded from ncDHPR myotubes indicate the absence of slow-activating, non-inactivating inward Na+ currents in the presence of near physiological 150 mM external Na+ with either 10 mM (n = 8) or 1 mM external Ca2+ (n = 9). Control recordings were performed in standard bath solution (150 mM TEA+, 10 mM Ca2+) (n = 8). (b) Representative current recordings from ncDHPR myotubes in response to 200 ms depolarizing test pulses between −50 to +80 mV in the presence of 10 mM Ca2+ with either 150 mM Na+ (top) or 150 mM TEA+ (bottom), or 1 mM Ca2+ with 150 mM Na+ (center) in the bath solution. Scale bars, 50 ms (horizontal), 3 pA/pF (vertical). (c) Plots of current-voltage relationship for ncDHPR myotubes at 150 mM external Na+ and 1 mM external Ca2+ indicate no difference (p>0.05) in outward and inward currents in the presence (n = 10) and absence (n = 6) of 10 µM of the 1,4-DHP antagonist nifedipine.Figure 2—source data 1.
+**Figure 2.:** (a) Plots of current-voltage relationship for DHPR-mediated Na+ currents recorded from ncDHPR myotubes indicate the absence of slow-activating, non-inactivating inward Na+ currents in the presence of near physiological 150 mM external Na+ with either 10 mM (n = 8) or 1 mM external Ca2+ (n = 9). Control recordings were performed in standard bath solution (150 mM TEA+, 10 mM Ca2+) (n = 8). (b) Representative current recordings from ncDHPR myotubes in response to 200 ms depolarizing test pulses between −50 to +80 mV in the presence of 10 mM Ca2+ with either 150 mM Na+ (top) or 150 mM TEA+ (bottom), or 1 mM Ca2+ with 150 mM Na+ (center) in the bath solution. Scale bars, 50 ms (horizontal), 3 pA/pF (vertical). (c) Plots of current-voltage relationship for ncDHPR myotubes at 150 mM external Na+ and 1 mM external Ca2+ indicate no difference (p>0.05) in outward and inward currents in the presence (n = 10) and absence (n = 6) of 10 µM of the 1,4-DHP antagonist nifedipine.
 
 Apparently, the question arose if this Cs+ leakiness of DHPR(E1014K) and tightness of DHPR(N617D) is also factual for other monovalent cations like the physiologically relevant Na+ ions. To clarify this conundrum, we performed patch-clamp recordings on ncDHPR myotubes under comparable experimental conditions like previously used on DHPR(E1014K) expressed in dysgenic myotubes (Bannister and Beam, 2011).
 
@@ -56,7 +56,7 @@ As demonstrated in Figure 2a and b (top), at near physiological (150 mM) externa
 
 To directly test for a putative contribution of DHPR(N617D) in mediating the outward and inward currents described above (Figure 2a and b), we measured whole-cell currents in the presence of the 1,4-DHP Ca2+ antagonist nifedipine. As depicted in Figure 2c, patch-clamp recordings performed upon addition of 10 µM nifedipine to the bath solution containing 1 mM Ca2+ and 150 mM Na+, exhibited nifedipine-insensitive slow outward currents (Figure 2c, left) and rapidly activating and inactivating inward currents (Figure 2c, right). Current-voltage relationship of outward currents (no nifedipine: R2 = 0.98; with nifedipine: R2 = 0.98) as well as of inward currents (no nifedipine: Imax = −13.22 ± 1.41 pA/pF; n = 6; with nifedipine: Imax = −14.96 ± 1.40 pA/pF; n = 10) were unaffected (p>0.05) by the presence of nifedipine. These results unambiguously confirm that DHPR(N617D) is not accountable for the outward and inward currents observed in the presence of near physiological external Na+.
 
-## Aberrant high-affinity Ca2+ binding to the DHPR(N617D) channel pore
+### Aberrant high-affinity Ca2+ binding to the DHPR(N617D) channel pore
 
 As pointed out above, our results together with previous work (Dirksen and Beam, 1999; Schredelseker et al., 2010; Bannister and Beam, 2011; Lee et al., 2015; Dayal et al., 2017; Beqollari et al., 2018) clearly demonstrate substantial distinct pore properties between DHPR(E1014K) and DHPR(N617D). Although both DHPR pore mutants do not conduct Ca2+, DHPR(E1014K) additionally lost its ion-selectivity and robustly conducts monovalent anions like Cs+ as well as physiologically relevant Na+ and K+ even in the presence of physiological concentrations of external Ca2+. Although the channel properties of DHPR(E1014K), with its charge conversion of selectivity filter glutamate E1014, are accurately explained by a widely accepted model of cardiac Ca2+ channel selectivity and permeation (Yang et al., 1993; Ellinor et al., 1995; Sather and McCleskey, 2003) (see Discussion), the non-conductance mechanism of DHPR(N617D) is still unknown (Schredelseker et al., 2010; Dayal et al., 2017).
 
@@ -64,13 +64,98 @@ Consequently, we wanted to test if the additional negative charge introduced via
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/63435/elife-63435-fig3-v3.jpg)
 
-**Figure 3.:** 2+ ions with nanomolar affinity within the pore of mutant DHPR(N617D) precludes Ca2+ permeation.Representative whole-cell Li+ current recordings from wt and ncDHPR myotubes in response to 200 ms depolarizations from −50 to +40 mV in the presence of 100 mM external Li+ and either 0 (a), 1 µM (b) or 3 µM (c) free external Ca2+. Scale bars, 50 ms (horizontal), 1 pA/pF (vertical). Plots of current-voltage relationship are depicted at the bottom of the corresponding representative Li+ current traces. Inward Li+ currents with no blocking ion (free [Ca2+]=0) were indistinguishable (p>0.05) between ncDHPR (Imax = −2.32 ± 0.35 pA/pF; n = 16) and wt (Imax = −2.07 ± 0.47 pA/pF; n = 9) myotubes (a, bottom). However, at higher external [Ca2+] of 1 µM (b) and 3 µM (c), inward Li+ currents were significantly (p<0.001) smaller in ncDHPR (Imax = −0.47 ± 0.10 pA/pF, n = 8; Imax = −0.06 ± 0.02 pA/pF; n = 7, respectively) compared to wt myotubes (Imax = −1.68 ± 0.25 pA/pF, n = 6; Imax = −0.24 ± 0.04 pA/pF; n = 6, respectively). (d) Four-parameter fitted concentration-response curves of Ca2+ block of inward Li+ currents for wt and mutant ncDHPR. Averaged I/I0 peak currents are plotted as a function of free external Ca2+ concentrations (up to 30 µM) and each data point is an average of 5–16 myotubes (Table 1). There is a significant (p<0.01) shift in IC50 (grey dotted lines) between wt (IC50 = 1.57 µM) and ncDHPR (IC50 = 0.37 µM) indicating a 4.2-fold higher Ca2+ pore-binding affinity in the mutant DHPR(N617D) channel. Data are presented as mean ± SEM; p determined by unpaired Student’s t-test.Figure 3—source data 1.
+**Figure 3.:** Representative whole-cell Li+ current recordings from wt and ncDHPR myotubes in response to 200 ms depolarizations from −50 to +40 mV in the presence of 100 mM external Li+ and either 0 (a), 1 µM (b) or 3 µM (c) free external Ca2+. Scale bars, 50 ms (horizontal), 1 pA/pF (vertical). Plots of current-voltage relationship are depicted at the bottom of the corresponding representative Li+ current traces. Inward Li+ currents with no blocking ion (free [Ca2+]=0) were indistinguishable (p>0.05) between ncDHPR (Imax = −2.32 ± 0.35 pA/pF; n = 16) and wt (Imax = −2.07 ± 0.47 pA/pF; n = 9) myotubes (a, bottom). However, at higher external [Ca2+] of 1 µM (b) and 3 µM (c), inward Li+ currents were significantly (p<0.001) smaller in ncDHPR (Imax = −0.47 ± 0.10 pA/pF, n = 8; Imax = −0.06 ± 0.02 pA/pF; n = 7, respectively) compared to wt myotubes (Imax = −1.68 ± 0.25 pA/pF, n = 6; Imax = −0.24 ± 0.04 pA/pF; n = 6, respectively). (d) Four-parameter fitted concentration-response curves of Ca2+ block of inward Li+ currents for wt and mutant ncDHPR. Averaged I/I0 peak currents are plotted as a function of free external Ca2+ concentrations (up to 30 µM) and each data point is an average of 5–16 myotubes (Table 1). There is a significant (p<0.01) shift in IC50 (grey dotted lines) between wt (IC50 = 1.57 µM) and ncDHPR (IC50 = 0.37 µM) indicating a 4.2-fold higher Ca2+ pore-binding affinity in the mutant DHPR(N617D) channel. Data are presented as mean ± SEM; p determined by unpaired Student’s t-test.
+
+**Table 1.**
+ Effect of varying free external Ca2+ concentrations on peak inward Li+ currents (Imax) in wt and ncDHPR myotubes.Imax values of inward ILi+ are represented as mean ± SEM with corresponding number of recordings (n) from wt and ncDHPR myotubes. *p<0.05; ***p<0.001, unpaired Student’s t-test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Free [Ca2+]</th>
+      <th colspan="2">wt</th>
+      <th colspan="2">ncDHPR</th>
+    </tr>
+    <tr>
+      <th>Imax (pA/pF)</th>
+      <th>n</th>
+      <th>Imax (pA/pF)</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>−2.07 ± 0.47</td>
+      <td>9</td>
+      <td>−2.32 ± 0.35</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>10 nM</td>
+      <td>−2.08 ± 0.19</td>
+      <td>6</td>
+      <td>−2.30 ± 0.19</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>30 nM</td>
+      <td>‒</td>
+      <td>‒</td>
+      <td>−2.17 ± 0.27</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>100 nM</td>
+      <td>−1.94 ± 0.23</td>
+      <td>5</td>
+      <td>−1.98 ± 0.30</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>300 nM</td>
+      <td>−2.08 ± 0.16</td>
+      <td>8</td>
+      <td>−1.33 ± 0.29 *</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>1 µM</td>
+      <td>−1.68 ± 0.25</td>
+      <td>6</td>
+      <td>−0.47 ± 0.10 ***</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3 µM</td>
+      <td>−0.24 ± 0.04</td>
+      <td>6</td>
+      <td>−0.06 ± 0.02 ***</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>10 µM</td>
+      <td>−0.09 ± 0.05</td>
+      <td>6</td>
+      <td>‒</td>
+      <td>‒</td>
+    </tr>
+    <tr>
+      <td>30 µM</td>
+      <td>−0.01 ± 0.02</td>
+      <td>5</td>
+      <td>−0.02 ± 0.02</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
 
 To directly validate if the slow inward Li+ currents are conducted by DHPR(N617D), we recorded Li+ currents in ncDHPR myotubes in the presence of the 1,4-DHP antagonist nifedipine. As depicted in Figure 4, recordings performed upon addition of 10 µM nifedipine to the bath solution containing 0 Ca2+ exhibited a drastic reduction (p<0.001) of slow inward Li+ currents (no nifedipine: Imax = −2.41 ± 0.27 pA/pF; n = 11; with nifedipine: Imax = −0.35 ± 0.13 pA/pF; n = 16). These results confirm that the slow inward Li+ currents observed in the absence of external Ca2+ are mediated by DHPR(N617D).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63435/elife-63435-fig4-v3.jpg)
 
-**Figure 4.:** + currents conducted by DHPR(N617D) are sensitive to nifedipine block.(a) Plots of current-voltage relationship for DHPR-mediated Li+ currents recorded from ncDHPR myotubes in the presence (Imax = −0.35 ± 0.13 pA/pF; n = 16) and absence (Imax = −2.41 ± 0.27 pA/pF; n = 11) of 10 µM of the 1,4-DHP antagonist nifedipine, 100 mM external Li+, and free external Ca2+ = [0]. Maximum inward Li+ currents were significantly (p<0.001) reduced in the presence of nifedipine. (b) Representative whole-cell Li+ current recordings from ncDHPR myotubes in response to 200 ms depolarizations from −50 to +40 mV in the presence (upper) and absence (lower) of 10 µM nifedipine with 100 mM external Li+ and 0 external Ca2+ concentration. Scale bars, 50 ms (horizontal), 2 pA/pF (vertical). Data are presented as mean ± SEM; p determined by unpaired Student’s t-test.Figure 4—source data 1.
+**Figure 4.:** (a) Plots of current-voltage relationship for DHPR-mediated Li+ currents recorded from ncDHPR myotubes in the presence (Imax = −0.35 ± 0.13 pA/pF; n = 16) and absence (Imax = −2.41 ± 0.27 pA/pF; n = 11) of 10 µM of the 1,4-DHP antagonist nifedipine, 100 mM external Li+, and free external Ca2+ = [0]. Maximum inward Li+ currents were significantly (p<0.001) reduced in the presence of nifedipine. (b) Representative whole-cell Li+ current recordings from ncDHPR myotubes in response to 200 ms depolarizations from −50 to +40 mV in the presence (upper) and absence (lower) of 10 µM nifedipine with 100 mM external Li+ and 0 external Ca2+ concentration. Scale bars, 50 ms (horizontal), 2 pA/pF (vertical). Data are presented as mean ± SEM; p determined by unpaired Student’s t-test.
 
 Large, rapidly activating and inactivating inward currents detected in both wt and ncDHPR myotubes within the first ~20 ms of the onset of test potentials are Li+ currents through endogenous skeletal muscle Na+ channels, NaV (Numann et al., 1994; DiFranco and Vergara, 2011). Interestingly, their amplitudes appear to correlate negatively to the slow Li+ current amplitudes through wt or mutant N617D DHPRs at different external Ca2+ concentrations (Figure 3a-c) and were similarly amplified upon nifedipine block of DHPR(N617D) channels at external free [Ca2+]=0 (Figure 4b). A possible competition between CaV and NaV channels for Li+ ions, with CaV taking the priority was not investigated further in the present study.
 
@@ -86,23 +171,35 @@ Besides the putative influence of the Na+ and K+ leakiness of DHPR(E1014K) on th
 
 Integration of our recent and previous findings (Bannister and Beam, 2011; Beqollari et al., 2018) helped us in addressing the following questions: How to understand the obvious distinct origin of the non-conductance mechanisms of mutants DHPR(E1014K) and DHPR(N617D)? Why is DHPR(E1014K) leaky for monovalent cations, but DHPR(N617D) preserves its high selectivity for Ca2+ ions?
 
-## DHPR pore residues responsible for Ca2+ selectivity and Ca2+ permeation
+### DHPR pore residues responsible for Ca2+ selectivity and Ca2+ permeation
 
 In an attempt to answer the above questions, we intend to expand a widely accepted molecular model of Ca2+ channel selectivity and permeation based on two elegant studies from the Tsien lab (Yang et al., 1993; Ellinor et al., 1995), and comprehensively discoursed in the review of Sather and McCleskey, 2003. According to this model, one Ca2+ ion binds to a single high-affinity site formed by all four glutamates (EEEE locus) of the DHPR selectivity filter. This tight embracement of Ca2+ in the DHPR pore is a prerequisite for the high selectivity for Ca2+ over Na+, K+, or other monovalent cations. However, to enable rapid passage of Ca2+ through the pore, a two-site mechanism that overcomes this tight Ca2+ binding is essential. Accordingly, the EEEE locus has been suggested to be physically flexible. Hence, irrespective that all four selectivity filter glutamates are needed to hold a single Ca2+ ion with high affinity (KD ~1 µM), their conformation can rapidly rearrange to accommodate a pair of Ca2+ ions within the pore, but then both bound with much lower affinity (apparent KD ~14 mM). This intermediate short-lived low-affinity state, together with a Ca2+- Ca2+ repulsion mechanism occurring in this doubly occupied pore, whereby one of the occupying Ca2+ ions is pushed out to the cytosolic side, is the basis for fast Ca2+ ion passage through the pore.
 
 Although the Ca2+ selectivity filter in form of the conserved EEEE locus within the pore of high threshold voltage-gated Ca2+ channels (HVA VGCC) satisfactorily explains divalent/monovalent ion selection, it neither explains the differences in the selectivity for Ca2+ among other divalent ions nor the observed distinct conductances through the different HVA VGCC isoforms (Cens et al., 2007). In their interesting study, Cens et al., 2007 via point mutational analyses and molecular modeling identified a ring of non-conserved negatively charged residues located at homologous positions in each of the four repeats of the DHPR pore, which were responsible for the distinct channel profiles. This ring coined as ‘divalent cation selectivity’ (DCS) locus, is present in different constellations in every VGCC and is located towards the outer channel pore region in close vicinity of the selectivity filter EEEE locus. The DCS locus might constitute an additional, low-affinity Ca2+-binding site which, together with distinct negative charges closely adjacent to the EEEE locus (Williamson and Sather, 1999), plays a crucial role in defining and directly participating in the generation of different Ca2+ conductances in different HVA Ca2+ channels (Cens et al., 2007).
 
-## Ca2+ non-selectivity and Ca2+ non-permeability of the mutant DHPR(E1014K)
+### Ca2+ non-selectivity and Ca2+ non-permeability of the mutant DHPR(E1014K)
 
 As discussed above, proper Ca2+ channel permeation and high selectivity are essentially dependent on a single high-affinity Ca2+-binding site formed by all four glutamates of the DHPR selectivity filter to assure tight embracement of Ca2+. Any substitution in the EEEE locus abolishes/decreases this high (µM) Ca2+ pore binding affinity as demonstrated by Ca2+ block of Li+ current experiments (Yang et al., 1993; Ellinor et al., 1995; Sather and McCleskey, 2003). Specifically, the strongest impact on the binding affinity was produced by exchange of E in repeat III. The EIIIK mutation drastically reduced the pore’s affinity for Ca2+ to 1000-fold, as is depicted by an increase in IC50 from ~1 µM to ~1 mM for Ca2+ block of ILi+ (Yang et al., 1993). Although these classical affinity experiments where performed in the cardiac DHPR, the comprehended selectivity/conductance model appears to be congruent with the skeletal muscle DHPR. Accordingly, the large outward Cs+ current found in the skeletal muscle EIIIK mutant DHPR(E1014K) (Bannister and Beam, 2011; Lee et al., 2015; Beqollari et al., 2018), which was not blocked even in the presence of 10 mM external Ca2+, was consequently interpreted as an indication of very little residual Ca2+ binding within the DHPR(E1014K) pore (Dirksen and Beam, 1999; Beqollari et al., 2018). Similarly, a considerable inward Na+ current through EK myotubes despite external Ca2+ concentration as high as 10 mM (Bannister and Beam, 2011) again indicates a very marginal, low-affinity binding of Ca2+ within the DHPR(E1014K) pore. Consequently, low-affinity pore-bound Ca2+ is unable to block the flux of any cation in both directions and hence Ca2+ selectivity is abolished in the mutant DHPR(E1014K). In addition, since the EEEE locus is mutated to EEKE, attraction of a second Ca2+ and subsequent competition for binding valences with the Ca2+ ion that is already bound with low affinity to this EEKE locus is impossible. Absence of this intermediate doubly occupied pore and thus, of the Ca2+- Ca2+ repulsion mechanism as the basis for fast, unidirectional Ca2+ ion passage through the pore is sufficient to explain the lack of Ca2+ conductance through the mutant DHPR(E1014K).
 
-## High Ca2+ selectivity and Ca2+ non-permeability of the mutant DHPR(N617D)
+### High Ca2+ selectivity and Ca2+ non-permeability of the mutant DHPR(N617D)
 
 Now the question arose, how to understand the pore blocking mechanism observed in DHPR(N617D) by coalescing the models discussed above? Figure 5a depicts the putative mechanism of Ca2+ conductance through wt DHPR. The carboxyl oxygens of the DCS locus point toward the pore lumen, allowing coordination of incoming divalent cations with a preference for Ca2+ (Cens et al., 2007). According to our postulated pore model (Figure 5a), Ca2+ ions from the t-tubular (extracellular) side are attracted to the negative charges of the DCS locus, which in mouse DHPRα1S is formed by D296 of repeat I, E1327 of repeat IV, and supported by D615 of repeat II. This loosely bound Ca2+ ion is easily mobilized (probably by charge repulsion from excess Ca2+ ions in the t-tubule) and migrates deeper into the pore to compete with the tightly bound Ca2+ ion for binding valences of the EEEE locus (in mouse skeletal-muscle DHPR: E292, E614, E1014, E1323). Henceforth, due to the reduced binding (µM to mM affinity), Ca2+- Ca2+ repulsion (Sather and McCleskey, 2003) takes place, eventually pushing the loosely bound Ca2+ into the cytosol. This conceptual model is supported by simulation experiments as depicted in Figure 6. Molecular dynamics simulations show that the EEEE locus attracts and stabilizes a single Ca2+ ion (Figure 6b–c). However, in the wt DHPR we also observe conformational changes in the EEEE locus that allow binding of a second Ca2+ ion. This additional Ca2+ ion results in a weaker binding of the glutamate residues to both Ca2+ ions, thereby causing a repulsion between the two ions, which is reflected in their decreasing distance to as low as 6 Å (Figure 6c, left). Furthermore, metadynamics simulations show that as a consequence of this Ca2+ - Ca2+ repulsion occurring in the doubly occupied EEEE locus, one of the two Ca2+ ions moves toward the cytosolic side (Figure 6c, left; Figure 6—video 1). The weaker binding of the Ca2+ ions to the EEEE locus of the wt DHPR compared to the mutant DHPR(N617D), is reflected in the significantly (p<0.001) lower free energy barrier (Figure 6d).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/63435/elife-63435-fig5-v3.jpg)
+
+**Figure 5.:** (a, b) De novo conformation prediction of peptide F600 - I624 constituting the selectivity filter and adjacent pore helices P1 and P2 of DHPRα1S repeat II (P1II, P2II) (left) and of peptide F1309 - S1333 forming the opposite repeat IV (P1IV, P2IV) (right), using the program PEP-FOLD 3.5 (Thévenet et al., 2012) on the RPBS web portal. Resulting clusters from 200 independent simulations were sorted by sOPEP energy (Wang et al., 2011) to yield the ‘best model’ prediction. Biasing the model prediction of these peptides by imposing the reference structure of DHPRα1S according to the Protein Data Bank (PDB accession number 5GJV) (Wu et al., 2016) did not lead to major differences compared to unbiased modeling approaches and hence we used unbiased models for the wt (a) and DHPR(N617D) (b) inner channel pore. Depicted best models are graphical overlays of cartoon and balls and sticks input style options. Models depict the hypothetical mechanism of Ca2+ conductance through the wt DHPR (a) and the block of Ca2+ conductance due to atypical high Ca2+ binding affinity (because of introduction of the negative charge D617; boxed in red) in the DHPR(N617D) pore region. Dotted lines indicate binding interactions between Ca2+ ions (blue spheres) and carboxyl oxygens (red balls) of glutamate E292 and aspartate D296 of repeat I, E614, D615, and D617 of repeat II, E1014 of repeat III, as well as E1323 and E1327 of repeat IV. Low affinity Ca2+ binding is indicated with a light blue sphere and high-affinity binding with dark blue spheres. DCS locus is the divalent cation selectivity filter (Cens et al., 2007) and EEEE locus is the Ca2+ selectivity filter. Vertical blue arrows indicate active Ca2+ conductance pathway in wt DHPR (a) and red T-bar indicates block of Ca2+ flux by aberrant high-affinity binding to the DCS locus in the mutant DHPR(N617D) channel pore (b). See Figure 5—figure supplement 1 for additional blocking strategies of DHPR Ca2+ conductance in the evolution of skeletal muscle EC coupling.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63435/elife-63435-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Symbols and nomenclature are identical to Figure 5. (a) Zebrafish slow-muscle specific DHPRα1S carries a distorted EEEE locus, due to substitution of E292 of repeat I by Q. Exchange of E292 with Q292 (boxed in blue) in rabbit DHPRα1S yielded mutant DHPR(E292Q) which lacks Ca2+ conductance (red T-bar) due to alteration of the high-affinity EEEE locus to a low affinity QEEE motif. (b) In phylogenetically advanced teleost species, the DCS locus is distorted due to charge conversion, that is exchange of D with K in repeat I. Substitution of D296 with K296 (boxed in blue) in rabbit DHPRα1S yielded mutant DHPR(D296K), which lacks Ca2+ conductance (red T-bar) due to non-binding of Ca2+ to the DCS locus and thus, lack of the attraction mechanism for t-tubular Ca2+.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/63435/elife-63435-fig6-v3.jpg)
+
+**Figure 6.:** (a) Top view of the pore illustrating the EEEE and DCS loci. The residues of the EEEE locus are displayed in red and the DCS locus is indicated by the position of the residues N617 or D617. (b) Side view of wt DHPR and mutant DHPR(N617D) pores with Ca2+ ions present in the pore before starting the equilibration. The dark blue spheres represent van der Waals radii of the Ca2+ ions. (c) Snap-shots immediately following the equilibration run show that Ca2+ ions already moved towards the DCS and EEEE loci. While the front Ca2+ ion already leaves the selectivity filter of the wt DHPR toward the cytosolic side, Ca2+ ions in the DHPR(N617D) pore are still bound to the DCS and EEEE loci. (d) Free energy estimations from metadynamics simulations capturing the movements of Ca2+ ions through the selectivity filter region. The free energy profile for the passage of Ca2+ ions through wt DHPR selectivity filter is depicted in blue and for mutant DHPR(N617D) in red. The energy barrier of the Ca2+ ion leaving the wt DHPR selectivity filter (15 ± 4 kcal/mol; n = 5) is significantly smaller (p<0.001) compared to DHPR(N617D) (122 ± 20 kcal/mol; n = 5). The process was described by a one-dimensional collective variable that is, the displacement of a Ca2+ ion along the axis of the channel pore. A second Ca2+ was directly present in the simulation domain. Thus, the energy profile corresponds to the energy experienced by the first Ca2+ ion in the presence of the second one. See Figure 6—video 1 and Figure 6—video 2 for illustration of the movement of Ca2+ ions through the selectivity filter region of wt DHPR and DHPR(N617D) channel pores, respectively.
+
 Contrary to this smooth Ca2+- conducting mechanism of wt DHPR, the additional negative charge D617 in mutant DHPR(N617D), introduced in the close vicinity to the residue D615 in repeat II (Figure 5b), creates an additional binding valence and as a result induces an aberrant high Ca2+ binding-affinity to the DCS locus. According to our model, this considerably tighter bound Ca2+ is consequently not sufficiently mobile anymore to travel deeper into the pore to compete for the binding valences of the selectivity-filter EEEE locus with the already strongly bound Ca2+ ion. Overall, lack of formation of the intermediate short-lived lower-affinity Ca2+ binding state, together with the consequential lack of Ca2+- Ca2+ repulsion at the EEEE locus explicitly explains the absence of Ca2+ influx through the DHPR(N617D) pore. Congruently, molecular dynamics simulations show that immediately after the equilibration step, one Ca2+ ion is stabilized at the EEEE locus while the other Ca2+ is bound to the DCS locus (Figure 6c, right; Figure 6—video 2). This translocation of the Ca2+ ions to the DCS and EEEE locus occurs already within 1 ns of simulation time succeeding the last step of the equilibration protocol. Here, the distance between the two Ca2+ ions is ~9 Å. The strong binding of the two Ca2+ ions to the EEEE and DCS locus makes it impossible for any other ion, like Li+, to pass through the DHPR(N617D) pore. Thus, simulations of pulling of Ca2+ ions through the selectivity filter of mutant DHPR(N617D) result in a significantly (p<0.001), ~8 times higher energy barrier compared to wt DHPR (Figure 6d), which is in accordance with the experimentally observed complete occlusion of the DHPR(N617D) pore in the presence of physiological concentrations of extracellular Ca2+ ions (Figure 3). This rather static condition in the DHPR(N617D) pore is well expressed in its lower Hill slope compared to wt DHPR (see Figure 3d). The Hill slope/Hill coefficient (nH) derived from four parameter logistic fit of dose-response curve is best portrayed as an ‘interaction’ coefficient, reflecting the extent of cooperativity among multiple binding sites (Prinz, 2010). The considerably more dynamic Ca2+ interactions in the wt DHPR pore with its successive short-lived intermediate high and low binding affinities and repulsion mechanisms are consequently apparent in the higher nH compared to DHPR(N617D).
 
-## Emergence of Ca2+ non-permeant DHPRs during evolution
+### Emergence of Ca2+ non-permeant DHPRs during evolution
 
 Point mutation N617D implemented for the creation of mouse model ncDHPR (Dayal et al., 2017) was originally identified to be responsible for DHPR Ca2+ non-conductivity in zebrafish fast (glycolytic/white) skeletal muscle (Schredelseker et al., 2010). Additionally, with studies on the low-Ca2+ conducting DHPR of sterlet (Acipenser ruthenus), which is phylogenetically somewhere in between mouse and zebrafish, we showed (Schrötter et al., 2017) that during vertebrate evolution (i.e. from the mammalian species, e.g. mouse, to the teleost fishes, e.g. zebrafish) a steady loss of DHPR Ca2+ conductance occurred. Subsuming results of several studies, we proposed the hypothesis that during evolution from mammals to teleost fishes an accumulation of DHPR amino acid exchanges occurred that contributed to the reduction of Ca2+ conductance (Schredelseker et al., 2010; Dayal et al., 2017; Schrötter et al., 2017). Mutation N→D (N617D; mouse numbering) that finally ‘turned off’ the already reduced Ca2+ conductance evolved only in quite a late phylogenetic stage (Dayal et al., 2017; Schrötter et al., 2017), following the teleost-specific third round (Ts3R) of gene duplication (Meyer and Van de Peer, 2005; Glasauer and Neuhauss, 2014). Beside DHPR non-conductivity, the evolutionary pressure that caused additional substantial modifications in skeletal muscle organization and physiology in teleost fishes (Schredelseker et al., 2010; Dayal et al., 2017; Schrötter et al., 2017) arose from the critical demand for tighter controlled, faster and stronger muscle contractions, crucial for high-speed movements in the aquatic prey-predator environment (Dayal et al., 2019).
 
@@ -112,15 +209,130 @@ Lastly, a third evolutionary concept also yielding a Ca2+ non-conducting DHPR wa
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>ncDHPR</td>
+      <td>doi:10.1038/s41467-017-00629-x Dayal et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(±)Bay K 8644</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: B112</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nifedipine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: N7634</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetraethylammonium chloride (TEA-Cl)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: T2265</td>
+      <td>145 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-benzyl-p-toluene sulphonamide (BTS)</td>
+      <td>Santa Cruz Biotechnology, Inc</td>
+      <td>Cat#: sc-202087</td>
+      <td>100 µM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxChelator simulation program</td>
+      <td>https://somapp.ucdmc.ucdavis.edu/pharmacology/bers/maxchelator/</td>
+      <td>RRID:SCR_018807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ClampFit</td>
+      <td>Axon Instruments</td>
+      <td></td>
+      <td>version 10.7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SigmaPlot</td>
+      <td>Systat Software, Inc.</td>
+      <td>RRID:SCR_010285</td>
+      <td>version 11.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software, LLC</td>
+      <td>RRID:SCR_002798</td>
+      <td>version 8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PEP-FOLD 3.5</td>
+      <td>RPBS web portal</td>
+      <td></td>
+      <td>Version 3.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GROMACS</td>
+      <td>University of Stockholm, University of Upsala</td>
+      <td>RRID:SCR_014565</td>
+      <td>version 2019.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MOE</td>
+      <td>Chemical Computing Group ULC</td>
+      <td>RRID:SCR_014882</td>
+      <td>version 2020.01</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AMBER</td>
+      <td>University of California, San Francisco.</td>
+      <td>RRID:SCR_014230</td>
+      <td>Version 2020</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger, LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td>Version 2.4.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Generation of the Ca2+ non-conducting (nc)DHPR knock-in mouse strain, carrying a point mutation in the Cacna1s gene coding for N617D in pore loop II was described previously (Dayal et al., 2017). Animal breeding, care and maintenance was conducted in compliance with the guidelines of the EU Directive 2010/63/EU and approved by the Austrian Ministry of Science (BMWF-5.031/0001-II/3b/2012). Mice were housed in a controlled environment with a 12/12 hr light/dark cycle and had access to food and water ad libitum.
 
-## Isolation and culture of skeletal myotubes
+### Isolation and culture of skeletal myotubes
 
 Primary myoblasts from new born up to 4-day-old pups homozygous for the non-conducting L-type Ca2+ channel mutant DHPR(N617D) or wild-type channel were enzymatically isolated and cultured in a humidified 37°C incubator with 5% CO2 as described previously (Dayal et al., 2017). Myotubes were maintained in growth medium consisting of Dulbecco’s modified Eagle’s medium supplemented with 10% fetal calf serum, 10% horse serum, 25 mM HEPES, 4 mM L-glutamine, and 1x penicillin/streptomycin and later replaced with differentiation medium (no fetal calf serum and only 2% horse serum).
 
-## Whole cell patch clamp
+### Whole cell patch clamp
 
 Ionic currents were evoked by a standard 200 ms voltage-step protocol from −50 to +80 mV in 10 mV increments from a holding potential of −80 mV (Dayal et al., 2017), unless otherwise stated. To reduce inward currents via endogenous NaV and T-type Ca2+ channels, every test pulse was preceded by a 1 s prepulse to −30 mV followed by a 50 ms repolarization to −50 mV (Adams et al., 1990). Borosilicate glass patch pipettes had resistance of 2–3 MΩ when filled with (in mM) 145 Cs-aspartate, 2 MgCl2, 10 HEPES, 0.1 Cs2-EGTA, and 2 Mg-ATP (pH 7.4 with CsOH). The standard bath solution for recording Ca2+ currents contained (in mM): 10 CaCl2, 145 TEA-Cl and 10 HEPES (pH 7.4 with TEA-OH). Myosin-II blocker BTS (100 µM, Sigma) was constantly present in the bath solution.
 
@@ -134,17 +346,17 @@ To test if the inward Li+ currents under external free [Ca2+]=0 as well as the s
 
 All recordings were performed at room temperature using the Axopatch 200B amplifier (Axon Instruments Inc, CA), filtered at 1 kHz and sampled at 5 kHz.
 
-## Data and statistical analysis
+### Data and statistical analysis
 
 Data were analyzed and plotted using ClampFit (v10.7; Axon Instruments), SigmaPlot (v11.0; Systat Software, Inc) and Prism 8 (GraphPad Software, LLC). Data are represented as mean ± SEM and n = number of myotubes. Statistical significance was calculated using unpaired Student’s t-test, unless otherwise stated and was set as follows: *p<0.05, **p<0.01, and ***p<0.001.
 
-## Structure preparation and molecular dynamics simulations
+### Structure preparation and molecular dynamics simulations
 
 Atomic models were based on the cryo-EM structure of the rabbit DHPRα1S - verapamil complex with a dilated intracellular gate associated to the binding of the phenylalkylamine Ca2+ antagonist drug verapamil (PDB accession number 6JPA) (Zhao et al., 2019). The structure of mutant DHPR(N617D) was derived from wt DHPR structure by replacing N617 with the negatively charged residue D617 and carrying out a local energy minimization using MOE (Molecular Operating Environment, Chemical Computing Group, version 2020.01). For simulations, we removed the voltage-sensing domains and truncated the S5 and S6 helices of each repeat, keeping the last nine residues of the S5 and S6 helices. The C- and N-termini of each repeat were capped with acetylamide (ACE) and N-methylamide to avoid perturbations by free charged functional groups. The starting structures for simulations were prepared in MOE using the Protonate3D tool (Labute, 2009). To neutralize the charges, we used the uniform background charge (Case et al., 2020; Hub et al., 2014). Using the tleap tool of the AmberTools20 package (Case et al., 2020; Roe and Cheatham, 2013), crystal structures were soaked in cubic water boxes of TIP3P water molecules with a minimum wall distance of 10 Å to the protein (Jorgensen et al., 1983; El Hage et al., 2018; Gapsys and de Groot, 2019). We added a total of 10 Ca2+ ions, corresponding to a concentration of approximately 10 nM. For all simulations, parameters of the AMBER force field 14 SB were used (Maier et al., 2015). The structures were carefully equilibrated using a multistep equilibration protocol (Wallnoefer et al., 2011).
 
 For both wt DHPR and mutant DHPR(N617D), 10 ns of molecular dynamics (MD) simulations were performed in an isothermal - isobaric (NpT) ensemble using the GPU MD simulation engine pmemd.cuda (Salomon-Ferrer et al., 2013) to further equilibrate the structures in the presence of the Ca2+ ions. Bonds involving hydrogen atoms were restrained by applying the SHAKE algorithm (Miyamoto and Kollman, 1992), allowing a time step of 2 fs. Atmospheric pressure of the system was preserved by weak coupling to an external bath using the Berendsen algorithm (Berendsen et al., 1984). The Langevin thermostat (Doll et al., 1975; Adelman, 1976) was used to maintain the temperature at 300 K during simulations.
 
-## Metadynamics simulations
+### Metadynamics simulations
 
 Metadynamics is a powerful method to explore the properties of multidimensional free energy landscapes and to enhance the sampling of configurational space in reasonable computing time (Barducci et al., 2011). Metadynamics reconstructs the free energy surface as a function of few selected degrees of freedom, referred to as collective variables (CV), which accelerate rare events in the systems. The CVs should be able to characterize the key features of physical behavior of interest, distinguish between all different metastable states, and include the slow degrees of freedom. In metadynamics, an external history-dependent repulsive bias potential function constructed as a sum of Gaussians is deposited along the trajectory in the CV space and thereby, discourages revisiting and oversampling of same configurations. For metadynamics simulations, we used the GROMACS version 2019.2. The aim of the metadynamics simulation was to capture the movement of Ca2+ ions along the selectivity-filter conducting pathway and their passing through the EEEE motif. As CV, we chose the distance between the center of masses (COM) of the EEEE motif residues and the upper Ca2+ ion.
 

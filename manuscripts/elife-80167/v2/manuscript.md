@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01070mq45 Center for Molecular Medicine and Genetics, Wayne State University Detroit United States
-2. https://ror.org/01070mq45 Center for Integrative Metabolic and Endocrine Research, Wayne State University Detroit United States
+1. Center for Molecular Medicine and Genetics, Wayne State University Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))
+2. Center for Integrative Metabolic and Endocrine Research, Wayne State University Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))
 
 † Corresponding author
 
@@ -33,7 +33,7 @@ To address these unresolved questions, we profiled global gene transcription in 
 
 ## Results
 
-## RNA-seq analysis of mouse iBAT during a cold exposure time course reveals activation of immune cells that correlates with proliferation
+### RNA-seq analysis of mouse iBAT during a cold exposure time course reveals activation of immune cells that correlates with proliferation
 
 To gain insight into the timing of cold-induced iBAT neogenesis, we first sequenced total tissue RNA to establish the time course and profile individual variation of cold-induced gene expression (Figure 1). K-means clustering of the top differentially expressed genes (DEGs) identified three distinct patterns of upregulated gene expression (Figure 1A). Acutely upregulated genes were induced within 6 hours of cold exposure, but then returned to control levels after chronic cold acclimation. Genes in this cluster are well-known targets of protein kinase A (PKA), including peroxisome proliferative activated receptor gamma coactivator 1 alpha (Ppargc1a), uncoupling protein 1 (Ucp1), nuclear receptor subfamily 4 group A member 1 (Nr4a1), and iodothyronine deiodinase 2 (Dio2) (Figure 1A). Chronically upregulated genes were induced following 1–2 days of cold exposure and remained elevated for the duration of the time in cold. This cluster included genes involved in lipid synthesis and oxidation, such as elongation of very long chain fatty acids-like 3 (Elovl3), fatty acid synthase (Fasn), and pyruvate dehydrogenase kinase isoenzyme 4 (Pdk4). The third cluster was interesting, as the gene upregulation was delayed and variable among individual mice. Genes in this cluster included proliferation markers (Birc5, Top2a), as well as various genes indicating innate immune activation and macrophage recruitment (Lgals3, Gpnmb, Trem2) (Figure 1A). Importantly, these variables were highly correlated and this relationship was largely independent of time spent in the cold (Figure 1B; p<0.001). These data confirm that cell proliferation and immune cell recruitment are connected and peak around the fourth day of cold exposure.
 
@@ -41,73 +41,192 @@ To gain insight into the timing of cold-induced iBAT neogenesis, we first sequen
 
 **Figure 1.:** (A) Heatmap of K-means clustering of whole tissue RNA-sequencing data. Rows of the heatmap are genes, and columns are individual RNA-seq libraries. Red and green colors represent upregulation and downregulation, respectively. Analysis includes five replicates (individual mice) each from seven different cold exposure durations: room temperature controls, and 6 hr, 1 day, 2 days, 3 days, 4 days, or 5 days of cold exposure for a total of 35 RNA-seq libraries. (B) Correlation of specific variables in the RNA-seq data with Top2a expression by individual library. r2 values are displayed on the plot.
 
-## iBAT scRNA-seq of total stromal cells identifies multiple stromal cell subtypes
+### iBAT scRNA-seq of total stromal cells identifies multiple stromal cell subtypes
 
 To investigate heterogeneity of iBAT stromal and immune cells, as well as gain insight into adipogenic differentiation in vivo, we performed scRNA-seq analysis of stromal cells isolated from iBAT (Figure 2—figure supplement 1A). Mice were adapted to room temperature (RT; 22–23 °C) or exposed to 6 °C for 4 days to induce iBAT neogenesis and capture the peak in cold-induced proliferation. iBAT stromal cells were isolated and cells were split into immune and non-immune cell populations by magnetic bead cell separation (MACS) with a lineage marker cocktail (Figure 2—figure supplement 1A). Individual single-cell libraries were prepared from two independent experiments of RT control and cold-exposed mice, yielding a total of eight single-cell libraries (Figure 2—figure supplement 1C). Sequencing data from these independent cohorts were merged and integrated, as detailed in Materials and methods (Figure 2—figure supplement 1B).
 
 Lineage marker negative (Lin-) cell libraries contained adipose stromal cells (Pdgfra+ ASCs), vascular cells, and proliferating/newly differentiating adipocytes (Figure 2A). Clustering of scRNA-seq data from control and cold-exposed mice identified eight major clusters, ranging from ~500 to 6,500 cells per cluster (Figure 2A, Supplementary file 1). Three of these clusters were defined as ASCs based on their expression of common mesenchymal stem cell markers Pdgfra, Cd34, and lymphocyte antigen 6 complex locus A (Ly6a, a.k.a. Sca1) (Figure 2—figure supplement 2A) that are often used for identification of adipocyte progenitors (Burl et al., 2018; Hepler et al., 2018; Merrick et al., 2019; Schwalie et al., 2018). ASCs clustered together at low resolution (resolution < or = 0.04), indicating they are more similar to each other than the other cell types present in the libraries (Figure 2—figure supplement 2B). scRNA-seq also identified a cluster of proliferating and differentiating ASCs (Prolif/Diff) (Figure 2A). The remaining clusters appeared to be a mixture of vascular endothelial cells (VEC), vascular smooth muscle cells (VSMC), Schwann cells, and a small (~5%) mixture of immune cells that were not excluded by MACs separation (Figure 2A). Separating data by treatment revealed that two cell clusters were unique to cold-exposed mice (circled; Figure 2B). One cluster retained numerous ASC markers like Pdgfra, whereas the other was largely Pdgfra negative and expressed high levels of markers of proliferation (e.g. Birc5) and adipocyte differentiation (e.g. Car3) (Figure 2—figure supplement 2A, Supplementary file 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/80167/elife-80167-fig2-v2.jpg)
+
+**Figure 2.:** (A) t-SNE plot of 28,691 lineage marker negative (Lin-) cells from iBAT of control mice and mice exposed to cold for four days. Clustering identified eight major clusters, highlighted in different colors. ASC, adipose tissue stromal cell; VEC, vascular endothelial cell; VSMC, vascular smooth muscle cells; Prolif/Diff, proliferating/differentiating cells. DEGs that define these clusters are in Supplementary file 1. (B) t-SNE plot from (A) split into cells from the separate treatments (CONTROL and COLD). Circles highlight cold-induced clusters. (C) t-SNE plot of 19,659 re-clustered ASC and Prolif/Diff cells from (A). The t-SNE plot and clustering identified six clusters. Prolif/Non-diff, proliferating/non-differentiating; Prolif/Diff, proliferating/differentiating. DEGs that define these clusters are in Supplementary file 2. (D) Violin plots of log2 expression levels of select marker genes for individual clusters from the CONTROL and COLD data presented in (C). (E) t-SNE plots displaying the log2 expression levels for genes involved in adipogenic differentiation from the CONTROL and COLD data presented in (C).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80167/elife-80167-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of one single-cell experiment from cohorts of control and cold-exposed mice. Mouse iBAT was harvested and digested into the stomal vascular fraction (SVF). These cells were separated into lineage marker positive (Lin+) and negative (Lin-) cell fractions with magnetic bead cell separation (MACS). Single-cell libraries were prepared from these four cell fractions. (B) Method of demultiplexing and data analysis for the scRNA-seq libraries. Analysis for C57 and Adrb1 KO libraries differed slightly due to method of library generation. (C) Summary of the single-cell libraries presented in this paper. Note that each row of the table corresponds to two scRNA-seq libraries: Lin+ and Lin-.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/80167/elife-80167-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Related to Figure 2. (A) t-SNE plot of Lin- data displaying the log2 expression levels for genes commonly used to isolate adipocyte precursors and markers for proliferating/differentiating cells. (B) t-SNE plot of Lin- data with clustering at different resolutions, resulting in different numbers of clusters. (C) Volcano plots of DEGs between cells from control and cold-exposed mice for the three ASC subtypes. Numbers displayed on the plot are the number of genes with an adjusted p-value less than 0.05 and the absolute value of the fold change greater than 0.5.
+
 To gain greater insight into the relationships among the various ASCs, we reclustered the ASC and Prolif/Diff populations at a higher resolution (Figure 2C, Supplementary file 2). This clustering resolved three distinct ASC cell types prominent in iBAT controls: ASC1-3 (Figure 2C, left). Genes that define these clusters were similar to the expression profiles of mouse PDGFRA+ ASC subtypes recently identified in various mouse fat depots (Burl et al., 2018; Dong et al., 2022; Hepler et al., 2018; Merrick et al., 2019; Rondini and Granneman, 2020; Schwalie et al., 2018). In control mice, ASC subtypes were distinguished by genes that encode extracellular matrix (ECM) and matrix remodeling proteins, and paracrine signaling proteins of the transforming growth factor beta superfamily. Thus, ASC1 selectively expressed collagen type V alpha 3 chain (Col5a3), C-X-C motif chemokine ligand 14 (Cxcl14), and the bone morphogenic protein (BMP)-binding endothelial regulator (Bmper) (Figure 2D). Cells in ASC2 expressed secreted protease inhibitor peptidase inhibitor 16 (Pi16), surface glycoprotein dipeptidyl peptidase 4 (Dpp4), and the ECM component fibronectin (Fbn1). ASC3 cells selectively expressed secreted ligand growth differentiation factor 10 (Gdf10), C-type lectin domain containing 11a (Clec11a), and fibulin1 (Fbln1) (Figure 2D).
 
 High-resolution clustering identified three additional cell clusters in cold-exposed mice (Figure 2C, right). All of these clusters expressed ASC1-specific markers; however, two of the clusters were primarily defined by genes for proliferation (Top2a, Birc5, Stmn1), and/or adipogenic differentiation (Pparg, Lpl, Nnat) (Figure 2D). This dramatic change in the expression profile of cells expressing ASC1 markers (e.g. Col5a3, Cxcl14, and Bmper) (Figure 2—figure supplement 2C) allowed for the characterization of these clusters as distinct expression states of the ASC1 subtype. For the purpose of exposition, we referred to these clusters as ‘quiescent’ and ‘cold-activated’ ASC1 from control and cold-exposed libraries, respectively (Figure 2C). Cold exposure had comparatively little impact on the profiles of ASC2 or ASC3 (Figure 2—figure supplement 2C). Examination of the two ASC1 expression states indicated that cold activation greatly reduced expression of genes involved in cholesterol biosynthesis (sterol biosynthetic process; GO:0016126, p=2.8E-10), cell adhesion (GO:0007155, p=4.9E-2) and extracellular matrix organization (GO:0030198, p=7.7E-7), and strongly induced expression of genes involved in immune system process (GO:0002376, p=2.2E-6), chemokine activity (GO:0008009, p=5.0E-3) and cell migration (GO:0016477, p=3.6E-4). In addition, ASC1 cells appeared highly poised for adipogenesis, expressing higher levels of the master adipocyte transcriptional regulator peroxisome proliferator activated receptor gamma (Pparg) and its target genes, such as lipoprotein lipase (Lpl) (Figure 2D). Notably, cells in the differentiating cluster selectively expressed the imprinted gene neuronatin (Nnat) that was transiently upregulated during differentiation and silenced in mature BAs (Figure 2D).
 
-## iBAT scRNA-seq identifies cells undergoing cold-induced adipogenic differentiation
+### iBAT scRNA-seq identifies cells undergoing cold-induced adipogenic differentiation
 
 Numerous ASC1-specific marker genes were co-expressed in the proliferating and differentiating clusters (Figure 2D), indicating that expression of these genes persists as cell differentiated into BAs. In contrast, none of the aforementioned ASC2 and ASC3 markers were expressed in these proliferating/differentiating clusters (Figure 2D). From these data, we concluded that cold-activated ASC1 are the immediate progenitors of new BAs induced by cold exposure. In addition, differentiating cells exhibited a clear trajectory along t-SNE2 that included loss of ASC marker expression (Pdgfra), transient proliferation (Birc5), and sequential upregulation of early (Cebpa) and late (Adipoq, Ucp1) markers of brown adipogenesis (Figure 2E). In contrast, the proliferating, non-differentiating cells that retained ASC1 marker expression did not appear to contribute to adipogenesis and might function to replenish the ASC1 population, as suggested by previous fate mapping studies (Lee et al., 2015).
 
 In summary, analysis of BAT ASCs and total stromal cell populations indicates that interstitial ASC1 cells are highly responsive to cold exposure and comprise most, if not all, BA progenitors during acute cold-induced neogenesis.
 
-## Localizing ASC subtypes and adipogenic niches within the tissue microenvironment
+### Localizing ASC subtypes and adipogenic niches within the tissue microenvironment
 
 scRNA-seq does not retain the tissue architecture and spatial relationships among cell subtypes, yet previous work suggested that cold-induced neogenesis occurs in specific tissue regions (Lee et al., 2015). To address this issue, we used scRNA-seq data to identify subtype-specific mRNAs for spatial analysis by smFISH. scRNA-seq data indicate that ASC1-3 are distinguished by the differential expression of ECM proteins and paracrine signaling factors, suggesting that these cells have distinct functions in the tissue microenvironment. Therefore, we examined the spatial distribution of ASCs by smFISH using the subtype-specific markers Bmper (ASC1), Pi16 (ASC2), and Gdf10 (ASC3) (Figure 3A). Using smFISH in combination with Pdgfra-CreERT2 x LSL-tdTomato genetic tracing, we note that PDGFRA+ cells are found throughout the tissue, including the parenchyma and fascia. Using smFISH, we found that while ASC1 comprised the majority of the PDGFRA+ parenchymal interstitial cells, ASC2 were localized to the tissue fascia and surrounding large vessels, whereas ASC3 were predominately localized to areas surrounding vessels, but not capillaries (Figure 3B–C). Importantly, the interstitial location of ASC1 is consistent with the work of Bukowiecki et al., 1986 who, using electron microscopy, concluded that cold-induced brown adipocytes are derived from interstitial stromal cells.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/80167/elife-80167-fig3-v2.jpg)
 
-**Figure 3.:** Pdgfra+ ASC subtypes occupy distinct areas of the tissue.(A) t-SNE plot of log2 gene expression from Pdgfra genetic tracing and smFISH probes in scRNA-seq data. t-SNE plot is ASCs from iBAT of control and cold-exposed mice, as in Figure 2C. (B) Representative image of fixed frozen iBAT from Pdgfra-CreERT2 x LSL-tdTomato reporter mice. (Left) Brightfield image shows gross tissue structures, including the tissue fascia, parenchyma, and large vessels. (Center) TdTomato (red) native fluorescence. (Right) Tissue was bleached and stained with smFISH probes Bmper (green), Pi16 (red), and Gdf10 (pink). Bmper distinguishes ASC1, Pi16 ASC2, and Gdf10 ASC3. Scale bar, 100 μm. (C) Representative images of control fixed frozen iBAT stained with smFISH probes Bmper (green), Pi16 (red), and Gdf10 (pink) taken at higher resolution. Associated brightfield image shows gross tissue structures. Nuclei were counterstained with DAPI. Scale bar, 100 μm.
+**Figure 3.:** (A) t-SNE plot of log2 gene expression from Pdgfra genetic tracing and smFISH probes in scRNA-seq data. t-SNE plot is ASCs from iBAT of control and cold-exposed mice, as in Figure 2C. (B) Representative image of fixed frozen iBAT from Pdgfra-CreERT2 x LSL-tdTomato reporter mice. (Left) Brightfield image shows gross tissue structures, including the tissue fascia, parenchyma, and large vessels. (Center) TdTomato (red) native fluorescence. (Right) Tissue was bleached and stained with smFISH probes Bmper (green), Pi16 (red), and Gdf10 (pink). Bmper distinguishes ASC1, Pi16 ASC2, and Gdf10 ASC3. Scale bar, 100 μm. (C) Representative images of control fixed frozen iBAT stained with smFISH probes Bmper (green), Pi16 (red), and Gdf10 (pink) taken at higher resolution. Associated brightfield image shows gross tissue structures. Nuclei were counterstained with DAPI. Scale bar, 100 μm.
 
-## Mapping an adipogenic trajectory in situ
+### Mapping an adipogenic trajectory in situ
 
 scRNA-seq data indicated an adipogenic trajectory in which ASC1 cells reduce expression of stromal markers (Pdgfra and Dcn), while upregulating proliferation (Top2a, Birc5) and early differentiation markers (Car3 and Plin1), and finally the terminal differentiation marker Ucp1. Among genes expressed within the adipogenic trajectory, we found that Nnat was induced during early differentiation, then silenced upon terminal differentiation (Figure 4A). Thus, Nnat expression marks the transient state of early differentiation. To determine whether we could observe an adipogenic trajectory in situ, we used multiplexed smFISH to probe for quiescent ASC1 (interstitial cells, Dcn+ Top2a-), proliferating ASC1 (interstitial cells, Dcn+ Top2a+), and early differentiating cells (Nnat+ Top2a+/- Dcn low) (Figure 4B). Low magnification imaging showed a fairly uniform distribution of Dcn+ ASCs throughout control iBAT, with little evidence of proliferation (Top2a) or active differentiation (Nnat). In contrast, cold exposure triggered the appearance of numerous Top2a+ Dcn+ cells, as well as clusters of Nnat positive cells with and without co-expression of Top2a (Figure 4B). Immunofluorescence analysis of NNAT protein confirmed NNAT+ cells containing nascent PLIN1+ lipid droplets (Figure 4—figure supplement 1A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/80167/elife-80167-fig4-v2.jpg)
+
+**Figure 4.:** (A) t-SNE plot of log2 gene expression of smFISH probes in scRNA-seq data. t-SNE plot displays ASCs from iBAT of control and cold-exposed mice. (B) Representative low magnification images of fixed frozen iBAT stained with smFISH probes for Dcn (green), Top2a (red), and Nnat (pink). Tissue is from control and cold-exposed mice, as indicated. Associated brightfield image shows gross tissue structure. Scale bar, 100 μm. (C) High-magnification image of fixed frozen cold-exposed mouse iBAT stained with smFISH probes Dcn (green), Top2a (red), and Nnat (pink). Nuclei were counterstained with DAPI. Scale bar, 10 μm. (D) High-magnification image of fixed frozen cold-exposed mouse iBAT stained with smFISH probes Bmper (green), Pi16 (red), and Nnat (pink). Nuclei were counterstained with DAPI. Scale bar, 20 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80167/elife-80167-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Related to Figure 4. (A) Representative image of fixed frozen iBAT from cold-exposed mice stained with the antibodies PLIN1 (green), NNAT (red), and LCA (pink). Arrows identify PLIN1+ NNAT+ cells. Scale bar, 10 μm. (B) Quantification of the co-expression of smFISH probe Nnat with probes for Bmper and Pi16 (n=3 animals; mean ± SD). See also Figure 4—figure supplement 1—source data 1.
+
 High-resolution three-dimensional confocal imaging provided strong evidence for an adipogenic trajectory within a tissue niche. Thus, we observed proliferating ASC1 immediately adjacent to proliferating/differentiating ASC1, and more distally to differentiating ASC1 lacking expression of proliferation markers. Note the concomitant loss of the ASC marker (Dcn) as cells undergo early differentiation (Nnat) (Figure 4C). As anticipated from scRNA-seq data, the majority of Nnat+ cells co-expressed the ASC1 marker Bmper, but not the ASC2 marker Pi16 (Figure 4D and Figure 4—figure supplement 1B).
 
-## ASC proliferation/differentiation is triggered indirectly via adrenergic activation of BAs
+### ASC proliferation/differentiation is triggered indirectly via adrenergic activation of BAs
 
 Cold-induced neogenesis in BAT requires intact sympathetic innervation and can be mimicked by infusion of NE (Géloën et al., 1992; Lee et al., 2015). Furthermore, global knockout of ADRB1 blocked neogenesis induced by systemic NE infusion (Lee et al., 2015). In our iBAT single-cell data, Adrb1 is expressed in ASC1, proliferating/differentiating ASCs, VSMCs, and sparsely in some immune cells (Figure 5—figure supplement 1A). Based on these observations and previous findings, we and others hypothesized that ADRB1 on preadipocytes mediates cold-induced proliferation. To test this hypothesis, we used Pdgfra-CreERT2 to inducibly knockout Adrb1 in PDGFRA+ cells from floxed Adrb1 (Adrb1fl/fl) mice and performed scRNA-seq analysis (Figure 5A and Supplementary file 3). Control mice were Adrb1fl/fl mice treated with tamoxifen. Although sparsely expressed, scRNA-seq data indicates that Adrb1 is expressed in ASC1, but not in ASC2 or ASC3 (Figure 5B). Tamoxifen treatment reduced Adrb1 expression in ASC1 by more than 90% (chi-square p<0.00001, Figure 5B). Surprisingly, we found that knockdown of Adrb1 in ASC1 had no discernable effect on the ability of cold exposure to increase ASC1 proliferation/differentiation (both being ~10 fold over basal in WT and Adrb1 KO mice) (Table 1, Supplementary file 4, and Figure 5C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80167/elife-80167-fig5-v2.jpg)
+
+**Figure 5.:** Related to Table 1A. (A) t-SNE plot of 18,332 Lin- cells from iBAT of WT (Adrb1fl/fl) or Adrb1 KO mice, either housed at room temperature or exposed to cold for 4 days. Clustering identified 9 cell types. ASC, adipose tissue stromal cell; VEC, vascular endothelial cell; VSMC, vascular smooth muscle cells; Prolif/Diff, proliferating/differentiating cells. DEGs that define these clusters are in Supplementary file 3. (B) t-SNE plot from (A), split into cells from WT or Adrb1 KO animals. Colored cells have Adrb1 expression > 0. (C) ASCs and Prolif/Diff cells from (A) reclustered, and split into cells from control or cold-exposed libraries. The bar graph shows the proportion of each cell type in the in the individual libraries. DEGs that define these clusters are in Supplementary file 4. (D) Quantitative PCR analysis of proliferation and immune cell activation genes in iBAT of WT or Adrb1 KO mice maintained at room temperature or exposed to cold for four days (n=10–11 per condition; mean ± SE). p-values are from two-way ANOVA analysis of log transformed data. (C) Correlation of specific genes in the quantitative PCR data with Top2a expression by individual animal. r2 values are displayed on the plot. See also Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80167/elife-80167-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Adrb1 (left) and Adrb3 (right) expression in Lin+ and Lin- scRNA-seq libraries from WT control and cold-exposed animals. Colors indicate cells with log2 expression > 0. tSNE plots with cell identities are presented in Figure 2A (Lin-) and Figure 6A (Lin+). (B) Related to Figure 5. Representative images of iBAT fixed-frozen sections from WT or Adrb1 KO mice stained with smFISH probes for Adrb1 (red) and Nnat (white). Nuclei were counterstained with DAPI. Scale bar, 20 μm and 5 μm. (C) Quantification of the number of Adrb1 molecules in Nnat+ cells between Adrb1 WT and Adrb1 KO samples (n=2 animals per condition; red line is the median of the data). (D–F) Related to Table 1B. (D) t-SNE plot of Lin- data from control, cold-exposed, and CL-treated mice. DEGs that define these clusters are in Supplementary file 5. (E) ASCs and Prolif/Diff cells from (D) reclustered. DEGs that define these clusters are in Supplementary file 6. (F) t-SNE plots displaying the log2 expression levels for proliferation marker Birc5 and adipogenic differentiation marker Nnat. See also Figure 5—figure supplement 1—source data 1.
+
+**Table 1.**
+ Analysis of β-adrenergic receptor manipulation by scRNA-seq.(A) Cell counts and calculated percentages for proliferating/differentiating cells (Prolif/Diff) and ASCs in the Adrb1 KO single-cell libraries. p-values were calculated by chi-squared analysis between CONTROL and COLD libraries for the two genotypes. ***p<1E-5. (B) Cell counts and calculated percentages for Prolif/Diff cells and ASCs in the CONTROL and CL-treated single-cell libraries. p-values were calculated by chi-squared analysis between CONTROL and CL libraries. ***p<1E-5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>Library</th>
+      <th>Number ofProlif/Diff Cells</th>
+      <th>Number ofASCs</th>
+      <th>Percent of Prolif/Diff Cells out of Total ASCs (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>CONTROL, WT</td>
+      <td>31</td>
+      <td>3,695</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>COLD, WT</td>
+      <td>437</td>
+      <td>5,118</td>
+      <td>8.54***</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CONTROL, Adrb1 KO</td>
+      <td>9</td>
+      <td>1,543</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>COLD, Adrb1 KO</td>
+      <td>171</td>
+      <td>3,063</td>
+      <td>5.58***</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>Library</td>
+      <td>Number ofProlif/Diff Cells</td>
+      <td>Number of ASCs</td>
+      <td>Percent of Prolif/Diff Cells out of Total ASCs (%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CONTROL</td>
+      <td>38</td>
+      <td>7,234</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CL</td>
+      <td>1,526</td>
+      <td>11,275</td>
+      <td>13.5***</td>
+    </tr>
+  </tbody>
+</table>
 
 In a larger independent cohort of mice, we found that Adrb1 knockout in ASCs had no significant effect on cold-induced expression of proliferation makers at the whole tissue level (Figure 5D). In addition, smFISH demonstrated that cold induced the appearance of differentiating Nnat+ preadipocytes in the absence of detectible Adrb1 mRNA following Pdgfra-CreERT2-mediated recombination (p<0.00001; Figure 5—figure supplement 1B, C). Taken together, these data demonstrate that ASC Adrb1 expression is not required for cold-induced BA neogenesis. However, while Adrb1 expression did not impact neogenesis, 68–72% of the total individual variation in proliferation marker expression (Birc5, Top2a) across treatment groups was accounted for by variation in markers of immune cell recruitment (Trem2, Gpnmb; Figure 5E).
 
 BAs also express ADRB1 and, owing to its higher affinity for NE, is a major receptor for mediating cold-induced metabolic activation (Bukowiecki et al., 1978; Chaudhry and Granneman, 1999). Additionally, we note that proliferation marker expression did not correspond to the rapid activation of classic adrenergic PKA targets, but instead required chronic cold exposure that was correlated with immune cell recruitment (Figure 1A–B). Thus, we reasoned that the effects of cold on ASC1 proliferation might be mediated indirectly by metabolic activation of BAs, similar to brown adipogenesis in WAT (Lee et al., 2013a; Lee et al., 2012). To determine whether adrenergic activation of BAs is sufficient to induce neogenesis, we infused 2 independent cohorts of mice with the highly-selective ADRB3 agonist CL316,243 (CL, 0.75 nmol/hr) for 4 days, noting that BAs express ADRB3, but ASCs do not (Figure 5—figure supplement 1A). We found that CL treatment triggered significant activation, proliferation and differentiation of ASC1 cells (Table 1, Supplementary file 5, Supplementary file 6, and Figure 5—figure supplement 1D-F). Taken together, these data strongly suggest that cold exposure triggers progenitor proliferation/differentiation indirectly via adrenergic activation of BAs and not through direct ADRB1 activation of progenitors.
 
-## Cold exposure recruits macrophages and dendritic cells in iBAT
+### Cold exposure recruits macrophages and dendritic cells in iBAT
 
 Previous analysis indicated that cold-induced neogenesis involves immune cell recruitment and proliferation of uncharacterized myeloid cells (Lee et al., 2015). To gain insight into the immune cell complexity of mouse iBAT, we used scRNA-seq to profile lineage positive (Lin+) cells from mice at RT or exposed to cold and identified 16 immune clusters (Figure 6A and Supplementary file 7). Seven of these clusters were different subpopulations of macrophages and dendritic cells (MAC and DEND, respectively), comprising 52.0% of the cells in this dataset. This dataset also contained populations of monocytes (MONO), natural killer T cells (NKT), T lymphocytes (Tlym), B lymphocytes (Blym), reticulocytes (RET), neutrophils (NEUT), and small populations of non-immune cells (<3% of total cells). The DEGs that define the Lin+ clusters are presented in Supplementary file 7.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/80167/elife-80167-fig6-v2.jpg)
+
+**Figure 6.:** (A) t-SNE plot of 25,344 lineage marker positive (Lin+) cells from iBAT of control mice and mice exposed to cold for four days. Clustering applied to the t-SNE plot identified 16 clusters, highlighted in different colors. MAC, macrophage; MONO, monocyte; DEND, dendritic cell; NKT, natural killer T-cell; Tlym, T lymphocyte; Blym, B lymphocyte; RET, reticulocyte; NEUT, neutrophil; VEC, vascular endothelial cell; Lin-, lineage-negative cells; RBC, red blood cell. Cell types were determined by DEGs within each cluster. DEGs that define these clusters are in Supplementary file 7. (B) t-SNE plot from (A) split into the cells from control (CONTROL) and cold-exposed (COLD) mice. Circle highlights cold-induced cell clusters. (C) Lin+ or Lin- libraries from the 10 single-cell experiments presented in this paper were visualized and clustered in one t-SNE plot and the proportion of each immune cell cluster in the Lin+ libraries were correlated with the proportion of the proliferating/differentiating cluster in the Lin- libraries. Point shapes correspond to individual libraries. Point color corresponds to the combination of treatment (CONTROL, COLD, CL) and the genotype (WT, KO). r2 values and p-values are displayed on the plot. p-values were calculated using the Pearson’s product-moment correlation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80167/elife-80167-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Related to Figure 6. (A) t-SNE plot of dendritic cell clusters from Figure 6A (top left), along with a t-SNE plot displaying the log2 expression levels of proliferation marker Birc5 (bottom left). Additionally, t-SNE plots displaying the log2 expression levels for genes that define each dendritic cell cluster. (B) t-SNE plot displaying the log2 expression level of Adgre1 (F4/80). (C) t-SNE plots displaying the log2 expression levels for genes that define cluster MAC1. (D) Correlation of remaining immune cell clusters with proliferating/differentiating cells across all single-cell libraries. r2 values and p-values are displayed on the plot. p-values were calculated using the Pearson’s product-moment correlation.
 
 Cold exposure dramatically altered the immune cell landscape in mouse iBAT and led to the expansion of dendritic cells and altered phenotype/subtypes of macrophages (Figure 6B, circled). All four dendritic cell clusters increased with cold exposure (DEND1-4; Figure 6B). DEGs for these clusters generally correspond to known dendritic cell subtypes. DEND1 cells expressed conventional dendritic cell type 1 (cDC1) markers, including high levels of the master transcriptional regulator Irf8, as well as genes Ppt1, Jaml, and Naaa (Figure 6—figure supplement 1A; Guilliams and van de Laar, 2015; Hilligan and Ronchese, 2020). These cDC1 cells were 33.6% of the dendritic cells. We identified the cluster DEND2 as monocyte-derived dendritic cells (moDCs) based on expression of the moDC markers Cd209a and Itgam (CD11b) (Figure 6—figure supplement 1A; Cheong et al., 2010). The most abundant dendritic cell type in this dataset (51.6% of dendritic cells), moDCs also expressed Tnip3 and Clec4b1 (Figure 6—figure supplement 1A). The minor dendritic cells clusters, DEND3 (12.1%) and DEND4 (2.7%) exhibited profiles consistent with mature/migratory dendritic cells (Tmem123, Ccr7) (Förster et al., 2008; Takekoshi et al., 2010), and plasmacytoid dendritic cells (Irf8 high, Cd7, Tcf4) (Rodrigues et al., 2018; Figure 6—figure supplement 1A), respectively.
 
 Previous fluorescence-activated cell sorting (FACS) analysis demonstrated that cold exposure induces proliferation in F4/80+ immune cells (Lee et al., 2015). While Adgre1 (gene encoding the F4/80 antigen) was expressed in both macrophage and dendritic cell populations (Figure 6—figure supplement 1B), multidimensional scRNA-seq analysis indicates cold-induced proliferation occurs mostly in cDC1 (DEND1) and moDC (DEND2) subpopulations and not in cold-recruited macrophages (Figure 6—figure supplement 1A). scRNA-seq distinguished one resident population of macrophages in control mice, and cold exposure led to the dramatic appearance of two new types of macrophages (Figure 6B). Cold exposure increased the number of MAC1 and MAC3 macrophage populations and reduced the number of MAC2 cells (Figure 6B). The MAC2 cluster had a resident macrophage profile, and expressed genes including Folr2, F13a1, Cbr2, Pf4, Gas6, and Mrc1. Some of these genes (Folr2, Cbr2, Mrc1) are also associated with an M2 anti-inflammatory macrophage phenotype. The largest cold-induced macrophage cluster, MAC1, had an anti-inflammatory and lipid-handling phenotype. MAC1 cells express the dead cell receptor Trem2, which functions to promote efferocytosis (Figure 6—figure supplement 1C). These cells also express the anti-inflammatory gene Gpnmb, and Spp1, which is known in other adipose depots as chemotactic for ASCs (Figure 6—figure supplement 1C). Apart from these markers, the top DEGs for MAC1 include genes involved in ECM remodeling (Ctsb, Ctsd, Ctsl, Mmp12), and lipid handling (Fabp5, Lpl, Plin2). These macrophages have a similar expression profile to that recently described during WAT remodeling (Burl et al., 2018; Jaitin et al., 2019). The second cold-induced macrophage cluster, MAC3, had lower expression of these MAC1 markers and higher expression of interferon-activated genes (Ifi204, Ifi207, Ifi209), several c-type lectin domain family 4 members (Clec4d, Clec4e, Clec4n), and many other interferon-regulated genes (Irf7, Slfn2, Ifit3, Rsad2, Isg15).
 
-## Recruitment of cold-induced immune cells predicts the magnitude of progenitor proliferation and differentiation across experimental conditions
+### Recruitment of cold-induced immune cells predicts the magnitude of progenitor proliferation and differentiation across experimental conditions
 
 In this study, we performed 10 independent scRNA-seq experiments of >100,000 stromal and immune cells in which the magnitude of neogenesis was manipulated by temperature and ß-adrenergic receptor knockout and activation. Using these data, we assessed whether the induction of ASC1 proliferation and differentiation was associated with the recruitment of specific immune cell populations. We found that ASC1 proliferation and differentiation were strongly predicted by the magnitude of cold-induced recruitment of cDC1 (DEND1; r2=0.74), moDC (DEND2; r2=0.91), and lipid-handling macrophages (MAC1, r2=0.87) across these diverse experimental conditions (Figure 6C and Figure 6—figure supplement 1D). Importantly, this highly significant relationship held even when basal values were excluded from the analysis.
 
-## Macrophages and dendritic cells interact with proliferating ASCs in known sites of neogenesis
+### Macrophages and dendritic cells interact with proliferating ASCs in known sites of neogenesis
 
 The data above suggest a scenario in which metabolic stress in brown adipocytes leads to immune cell recruitment, niche formation, and brown adipocyte neogenesis, similar to that observed for brown adipocyte neogenesis induced by ADRB3 activation in WAT (Lee and Granneman, 2012; Lee et al., 2016; Lee et al., 2012). We previously reported that cold-induced neogenesis in mice is concentrated near tissue borders, although with intense drug induction, neogenesis can expand into the parenchyma (Lee et al., 2015). Furthermore, analysis of adipogenesis induced by ADRB3 activation in white adipose tissue demonstrated a close interaction of immune cells (mainly macrophages) and progenitor cells at sites of dead adipocyte removal. Therefore, we next examined the distribution of immune cells relative to tissue architecture and proximity to activated progenitors, utilizing informative cell markers extracted from scRNA-seq analysis.
 
 MAC2 are the predominant macrophage subtype of control (RT) mice and their levels sharply declined during cold exposure (Figure 6B). MAC2 express F4/80 (Adgre1) and MHCII (H2-Ab1), have a compact morphology, and are evenly distributed throughout the parenchyma (Figure 7A). As expected, few stromal or immune cells of control mice were positive for the proliferation marker MKI67 (Figure 7A). Histological analysis of iBAT at the peak for cold-induced proliferation demonstrated the dramatic appearance of GPNMB+ MAC1 cells and dendritic cells labeled with MHCII antibodies (noting that MHCII+ MAC2 are nearly absent in iBAT of cold-exposed mice; Figure 7A). Interestingly, nearly all MAC1 and dendritic cells were present in clusters in two distinct locations: within 50 micrometers of the tissue border or near acellular vacancies in the parenchyma. As expected, low resolution imaging identified numerous MKI67+ cells in sections of cold-exposed iBAT, indicative on ongoing proliferation (Figure 7A).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/80167/elife-80167-fig7-v2.jpg)
+
+**Figure 7.:** (A) Low-magnification images of iBAT fixed-frozen sections from control and cold-exposed mice stained for GPNMB (green), MHCII (pink), and MKI67 (red), along with their corresponding log2 gene expression in Lin+ scRNA-seq data. Lin+ t-SNE plots were split between cells from control and cold-exposed mice. Tissue images for antibody staining show the same tissue area for each treatment. Background for each image is autofluorescence (AF) in grey scale. Scale bar, 100 μm. (B) iBAT fixed-frozen sections from cold-exposed mice stained with antibodies for MKI67 (red), PDGFRA (green), and F4/80 (pink). Nuclei were counterstained with DAPI. Arrows indicate PDGFRA+ MKI67+ cells. Scale bar, 20 μm. 3D rendering presented in Appendix 1—Video 1. (C) iBAT fixed-frozen sections from cold-exposed mice. Left image displays antibody staining for GPNMB (green) and MHCII (purple). Right image is a magnified view of the boxed region from left, displaying staining for GPNMB (green), PLIN1 (red), and MHCII (purple). Nuclei were counterstained with DAPI. Scale bars, 30 μm and 20 μm. 3D rendering presented in Appendix 1—Video 2. (D) iBAT fixed-frozen sections from cold-exposed mice stained for PDGFRA (green), F4/80 (pink), and MKI67 (red). Nuclei were counterstained with DAPI. Scale bar, 5 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/80167/elife-80167-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) iBAT fixed-frozen sections from cold-exposed mice. Both images show the same tissue area. Left image displays antibody staining for F4/80 (red) and PLIN1(green). Nuclei were counterstained with DAPI. Right image displays lipid staining (LipidTOX, pink) and cellular autofluorescence (AF, cyan). Scale bar, 20 μm.
+
 High-resolution confocal imaging of the tissue border region demonstrated that nearly all actively proliferating ASC1 (MKI67+ PDGFRA+) cells were in close proximity to F4/80+ immune cells (Figure 7B and Appendix 1—Video 1). According to our single-cell data, F4/80 (Adgre1) is expressed in macrophage clusters and DEND2 (moDCs). ASC1 extend cellular processes that have the potential to probe the tissue microenvironment (Lee et al., 2015). 3-D confocal microscopy of cold-exposed iBAT indicates that ASC1 cellular processes extend toward and contact F4/80+ cells (Figure 7B and Appendix 1—Video 1).
 
 We also observed GPNMB+ MAC1 and MHCII+ dendritic cells surrounding vacancies lacking cellular autofluorescence and PLIN1, a lipid droplet marker of live adipocytes (Figure 7C and Appendix 1—Video 2). Such structures are the hallmark of adipocytes undergoing death and replacement (Lee et al., 2013a; Murano et al., 2013). Indeed, all PLIN1 negative vacancies had a uniform diameter of approximately 20 μm which closely matches the size of adjacent BAs, and many retained remnants of intracellular lipid droplets in cryosections (Figure 7C, Appendix 1—Video 2, and Figure 7—figure supplement 1). Thus, the vacancies appear to be sites of efferocytosis by GPNMB+ MAC1 and MHCII+ dendritic cells. Importantly, these sites contained actively proliferating (MKI67+) ASC1 (PDGFRA+) near immune cells (F4/80+) (Figure 7D).
 
-## Adipogenic niches are dynamic
+### Adipogenic niches are dynamic
 
 We estimate that at the peak of neogenesis there are hundreds of adipogenic niches in various stages of initiation, proliferation and differentiation. We hypothesized that smFISH analysis of state-dependent markers (e.g. Top2a and Nnat) might provide clues regarding the cellular basis of adipogenic niche formation and resolution. For this purpose, we used smFISH to systematically assess the proximity of immune cells (H2-Ab1) with proliferating (Dcn+ Top2a+) and differentiating progenitors (Nnat+), and considered neighbors within 20 µm (the thickness of cryosections) of the reference cell type. Analysis by machine learning classification and automated measurement yielded similar results. As expected from immunofluorescence analysis (Figure 8A–B), proliferating progenitors and differentiating adipocytes were nearest neighbors (NN) of themselves, reflecting clustering within adipogenic niches. Furthermore, proliferating progenitors were closely associated with H2-Ab1+ dendritic cells (Figure 8A) and this close association declined by four- to five-fold as progenitors differentiated into BAs (Figure 8B). These data indicate that progenitor proliferation occurs in close proximity to recruited immune cells, which depart as progenitors differentiate into BAs.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/80167/elife-80167-fig8-v2.jpg)
+
+**Figure 8.:** (A, top) Representative images of fixed frozen mouse cold-exposed iBAT. Tissue was stained with smFISH probes Dcn (green), H2-Ab1 (red), and Top2a (pink). Nuclei were counterstained with DAPI. Images on the right are a magnified view of the boxed regions on the left. Scale bars, 40 μm and 5 μm. (A, bottom) Quantification of cell types within 20 μm around either an H2-Ab1+ cell or a Dcn+ Top2a+ cell (n=3 animals; >100 cells/mouse; mean ± SD). (B) Representative images of fixed frozen mouse cold-exposed iBAT. Tissue was stained with smFISH probes Dcn (green), H2-Ab1 (red), and Nnat (pink). Nuclei were counterstained with DAPI. Images on the right are a magnified view of the boxed regions on the left. Scale bars, 40 μm and 5 μm. (B, bottom) Quantification of cell types within 20 μm around either an H2-Ab1+ cell or a Nnat+ cell (n=3 mice; >100 cells/mouse; mean ± SD). See also Figure 8—source data 1, Figure 8—source data 2.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/80167/elife-80167-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A, top) Procedure for EdU labeling to trace dividing ASCs and differentiated adipocytes. Pdgfra-CreERT2 x LSL-tdTomato were used for genetic tracing of PDGFRA+ cells. Seven days after induction with tamoxifen, animals were housed in the cold for up to 5 days. For dividing ASCs, on the third day, animals were injected with EdU and sacrificed 2 hr later. For differentiated adipocytes, animals were injected with EdU on days 3 and 4 of cold exposure and sacrificed on day 5. (A, bottom) Representative images from iBAT for the experiments outlined, where tissue was stained with EdU (green) or MHCII (pink). tdTomato (red) was detected by native fluorescence. Nuclei were counterstained with DAPI. Scale bar, 10 μm. (B) Alternatively, C57 mice were exposed to cold for up to 5 days. EdU was injected on day three and animals were sacrificed two hours or 2 days after EdU injection. Representative images of iBAT harvested from mice at the indicated times. Tissue was stained with either PDGFRA (red), MHCII (pink), and EdU (green) or PLIN1 (red), MHCII (pink), and EdU (green). Nuclei were counterstained with DAPI.
+
 smFISH provides a tissue ‘snapshot’ suggesting dynamic trafficking and interactions among progenitors and phagocytes in tissue renewal and expansion. To further establish this concept, we mapped the relative positions of actively proliferating ASC1 and newly-differentiated BAs relative to dendritic cells in the tissue microenvironment. For this purpose, PDGFRA+ progenitors were genetically labeled using Pdgfra-CreERT2 x LSL-tdTomato mice prior to cold exposure (Figure 8—figure supplement 1A), then we flash-tagged proliferating cells with 5-ethynyl-2’-deoxyuridine (EdU) and monitored their positions relative to immune cells immediately after tagging (on the third day), or 2 days later when most cells had differentiated into BAs. This analysis indicated that MHCII+ DC were three times more likely to be with 10 micrometers of a dividing preadipocyte versus a divided/differentiated brown adipocyte (27.3% vs 9.35%, p=0.00013, n=267 cells, 2–3 mice) (Figure 8—figure supplement 1A). We confirmed spatial relationships among actively dividing and newly differentiated progenitors by immunofluorescence (Figure 8—figure supplement 1B). In this experiment, we also located a limited number of progenitors that divided on day 3, yet failed to differentiate by day 5, and found that nearly all of these cells maintained close contact with MHCII+ cells in the tissue microenvironment (Figure 8—figure supplement 1B). Taken together, these observations indicate that ASC1 and recruited immune cells comprise a cellular niche for progenitor proliferation and that immune cells depart the niche as progenitors differentiate into BAs.
 
-## Investigating potential cell-cell communication in the adipogenic niche
+### Investigating potential cell-cell communication in the adipogenic niche
 
 The close proximity of the cold-activated ASC1 and immune cell subtypes suggests cell-to-cell communication orchestrates the neogenic process. To gain insights into potential ligand-receptor interactions between immune and progenitor cells, we interrogated our scRNA-seq data for ligand-receptor pairs using published databases and publicly available computational programs (Browaeys et al., 2020; Efremova et al., 2020; Skelly et al., 2018). All pairs identified by these methods were manually examined for ligand-receptor specificity in our dataset. We focused on ligand-receptor pairs between immune cells (MAC1 and DEND1-4) and cold-responsive ASC1. This analysis identified several ligand-receptors pairs that could contribute to adipocyte progenitor recruitment and differentiation (Figure 9A). Osteopontin (Spp1), a DEG in the cold-induced MAC1 cluster (Figure 6—figure supplement 1C), is known to be chemotactic for ASCs in other adipose depots (Lee et al., 2016; Lee et al., 2012). Cd44 molecule (Cd44) and Syndecan 1 (Sdc1) were identified as receptors for Spp1 in our queried databases (Figure 9A). Cd44 has already been identified as a marker of activated adipocyte progenitors in other depots (Lee et al., 2016; Lee et al., 2013a; Lee et al., 2014). Sdc1 has been categorized as a regulator of adipogenesis (Gougoula et al., 2019; Yu et al., 2020; Zaragosi et al., 2015), and its expression was highly specific to the cold-activated ASC1 cells.
 
@@ -123,13 +242,13 @@ Neogenesis is an important adaptive mechanism for expanding the thermogenic capa
 
 To address these phenomena, we performed scRNA-seq and fate mapping in situ to identify the source of cold-induced BAs among the ASC subtypes present in the tissue. We determined ASC Adrb1 is not necessary, whereas activation of adipocyte ADRB3 is sufficient to induce BA neogenesis in vivo. We confirmed that iBAT neogenesis begins only after 2–3 days of cold exposure, and further determined that the onset and magnitude of neogenesis in individual mice was tightly correlated with specific immune cell recruitment, but not the acute or chronic induction of genes known to be regulated by the β-adrenergic/PKA signaling pathway. Together, these results indicate that cold-induced neogenesis is largely an indirect response to chronic activation of BAs that ultimately serves to increase thermogenic capacity to match thermogenic demand. From a physiological perspective, this scenario implies the existence of mechanisms that report metabolic stress, which is detected and transduced into targeted adaptive hyperplasia.
 
-## BAT cell type heterogeneity
+### BAT cell type heterogeneity
 
 Our scRNA-seq data highlights the diversity of Pdgfra+ stromal cells in BAT and indicate that Pdgfra expression most clearly defines ASCs, whereas Cd34, Ly6a, and Pdgfrb are present in additional stromal vascular subtypes. We identified three populations of ASCs (ASC1, ASC2, ASC3). Importantly, the ASC subtypes can be distinguished by differential expression of genes that are involved in ECM production and signaling by members of the TGF-β superfamily. Histological evidence from other adipose depots determined a spatial distinction among the main ASC subtypes (Rondini and Granneman, 2020; Merrick et al., 2019). ASC2 cells (PDGFRA+ DPP4+ Pi16+) were restricted mainly to the fascia layer surrounding tissue, while ASC1/ASC3 cells (PDGFRA+ DPP4- Pi16-) were found throughout the parenchyma body and in areas surrounding vessels. We observed a similar spatial distinction using smFISH, with ASC3 cells surrounding vessels, ASC2 cells present in the fascia that encases the tissue lobes, and ASC1 cells residing in the tissue parenchyma. These distinctions, however, were not absolute, as we observed cells expressing Pi16 and Gdf10 on some large vessels, and interstitial ASC1 cells closely associated with capillaries. Together, these data indicate that the ASC subtypes serve distinct functions in the tissue microenvironment. We note in this regard that both ASC1 and ASC2 can be differentiated into adipocytes in vitro by strong chemical inducers (unpublished); thus, in vitro differentiation potential should not be used to infer in vivo contributions to new fat cell formation.
 
 Eight of our single-cell libraries were prepared from iBAT cells from female mice, while 12 were prepared from iBAT cells from male mice. This gave us the opportunity to compare and query whether there are sex-specific iBAT stromal cell subtypes. Interestingly, we found a small cell cluster (1.4–6.4% of cells per library) in the female Lin- libraries (Adrb1 KO and WT) that we labeled Luminal Cells. This Luminal Cell cluster was distinct from other Lin- cell types, was reproduced in every female Lin- library, and the top DEGs that defined this cluster were not found in the male libraries. DEGs for this cluster include kertain genes (Krt18, Krt19, Krt8, Krt7), WAP four-disulfide core domain genes (Wfdc18, Wfdc2), and epithelial cell adhesion molecule (Epcam). This profile is very similar to a mouse mammary luminal cell phenotype, as profiled in the Tabula Muris atlas (Schaum et al., 2018). Although the function of this cell phenotype in BAT is unclear, we note that this cluster selectively expresses the progesterone receptor (Pgr), and that the effect of female hormones could be driving this cell phenotype (Kaikaew et al., 2021).
 
-## Origin of cold-induced BA cells
+### Origin of cold-induced BA cells
 
 The identity of the direct precursors of new brown adipocytes remains a highly debated topic (Lee et al., 2015; Lee et al., 2012; Shamsi et al., 2021). Early fate mapping by Bukoweicki et al. strongly indicated that brown adipocytes arise from interstitial cells that are transiently recruited in the first few days of cold stress (Bukowiecki et al., 1982; Bukowiecki et al., 1986; Géloën et al., 1988). Subsequently, genetic tracing and fate mapping studies established that brown adipocytes arise from an interstitial stromal cell population that express PDGFRA in brown adipose tissue (Cattaneo et al., 2020; Lee et al., 2015; Sun et al., 2020). In further support of this conclusion, we repeated the lineage tracing experiments described in Lee et al., 2015 using an independent Pdgfra-CreERT2 x LSL-tdTomato mouse model and found that 100% (258/258, n=5 mice) of new brown adipocytes were derived from the proliferation of cells with a recent history of Pdgfra expression.
 
@@ -139,7 +258,7 @@ While this work was in progress, Shamsi, et al. published scRNA-seq data of iBAT
 
 In view of potential differences in the efficiency and recovery of isolated stromal cells, it was important to establish the cold-induced adipogenic trajectory in situ using highly sensitive smFISH. High resolution confocal microscopy of informative mRNA markers established the presence of cold-induced adipogenic niches containing a range of adipogenic states of ASC1 from quiescence to active proliferation, and from early to late differentiation. Spatial mapping of this trajectory indicates that adipogenic niches involve close (micron scale) cellular communication in tissue volumes less than 0.0001 cubic millimeter, consistent with the estimated distance of cytokine signaling in situ (Oyler-Yaniv et al., 2017).
 
-## Cold-induced neogenesis occurs in distinct locations and involves cell turnover and immune cell recruitment
+### Cold-induced neogenesis occurs in distinct locations and involves cell turnover and immune cell recruitment
 
 Previous FACS analysis of iBAT neogenesis identified a population of F4/80+ proliferating cells that are recruited after cold stress (Lee et al., 2015). Current scRNA-seq data provide new insights into the composition and location of cold-induced immune cell recruitment. Specifically, cold exposure led to the reorganization of immune cell composition of iBAT that included reduction of resident MAC2 cells and striking recruitment of phagocytic macrophage and dendritic cell subtypes.
 
@@ -161,13 +280,548 @@ The present findings highlight the complex cellular changes that occur in iBAT i
 
 In conclusion, our results indicate that cold exposure triggers the formation of dynamic adipogenic niches involving close, dynamic interactions between recruited myeloid cells and interstitial ASC1. These results demonstrate that neogenesis is not a reflexive response to ADRB1 activation in progenitors, as widely supposed, but rather is a coordinated adaptive response among BAs, immune cells, and progenitors that serves to match metabolic capacity to metabolic demand.
 
-## Contact for reagents and resource sharing
+### Contact for reagents and resource sharing
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, James Granneman (https://facultysenate.med.wayne.edu/profile/aa4929).
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PDGFRalpha antibody (goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>Mouse PDGFRalpha antibody; cat no. AF1062</td>
+      <td>Diluted 1:70 in blocking buffer.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GPNMB antibody (goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>Mouse osteoactivin/GPNMB antibody; cat no. AF2330</td>
+      <td>Dilute 1:400 in blocking buffer.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MHCII antibody (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Alexa Fluor 647 rat anti-mouse I-A/I-E antibody; cat no. 107617</td>
+      <td>Diluted 1:100 in blocking buffer.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MKI67 antibody (rabbit monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Ki-67 recombinant rabbit monoclonal antibody; cat no. MAS-14520</td>
+      <td>Diluted 1:125 in blocking buffer.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PLIN1 antibody (goat polyclonal)</td>
+      <td>Everest Biotech</td>
+      <td>Goat anti-perilipin 1 (C terminus) antibody; cat no. EB07728</td>
+      <td>Diluted 1:200 in blocking buffer.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80 antibody (rat monoclonal)</td>
+      <td>Bio-Rad</td>
+      <td>rat anti mouse F4/80 antibody; cat no. MCA497GA</td>
+      <td>Diluted 1:125 in blocking buffer.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NNAT antibody (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Anti-Neuronatin antibody; ab27266</td>
+      <td>Diluted 1:400 in blocking buffer.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgG Alexa Fluor 647 (donkey polyclonal)</td>
+      <td>Abcam</td>
+      <td>Donkey anti-rat secondary antibody; cat no. ab150155</td>
+      <td>Diluted 1:250 in blocking buffer.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgG Alexa Fluor 568 (donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Donkey anti-goat secondary antibody; cat no. A11057</td>
+      <td>Diluted 1:250 in blocking buffer.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgG Alexa Fluor 488 (donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Donkey anti-goat secondary antibody; cat no. A11055</td>
+      <td>Diluted 1:250 in blocking buffer.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgG Alexa Fluor 647 (donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Donkey anti-goat secondary antibody; cat no. A21447</td>
+      <td>Diluted 1:250 in blocking buffer.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgG Alexa Fluor 594 (donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Donkey anti-rabbit secondary antibody; cat no. A21207</td>
+      <td>Diluted 1:250 in blocking buffer.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgG Alexa Fluor 594 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Goat anti-rat secondary antibody; cat no. A11007</td>
+      <td>Diluted 1:250 in blocking buffer.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EdU</td>
+      <td>Invitrogen</td>
+      <td>5-Ethynyl-2‘-deoxyuridine; cat no. A10044</td>
+      <td>Diluted in sterile PBS.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Cayman Chemical</td>
+      <td>Tamoxifen; cat no. 13258</td>
+      <td>Diluted in corn oil.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CL316,243</td>
+      <td>Sigma-Aldrich</td>
+      <td>C5976</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde (PFA)</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Paraformaldehyde 16% Solution, EM Grade; cat no. 15710</td>
+      <td>Dilute to 4% PFA in PBS.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Fisher Scientific</td>
+      <td>D-Sucrose; cat no. BP220-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>O.C.T Compound</td>
+      <td>Fisher Heathcare</td>
+      <td>Tissue Plus O.C.T. Compound Clear; cat no. 23-730-572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma</td>
+      <td>Triton X-100 laboratory grade; cat no. X100-500ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ProLong Gold antifade reagent</td>
+      <td>Invitrogen</td>
+      <td>ProLong Gold antifade reagent; cat no. P36930</td>
+      <td>Coverslip mounting media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase Type 2</td>
+      <td>Worthington Biochemical Corporation</td>
+      <td>Collagenase Type 2; cat no. LS004177</td>
+      <td>Tissue digestion reagent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HBSS</td>
+      <td>Sigma-Aldrich</td>
+      <td>Hanks' Balanced Salt Solution; cat no. H1387−10 × 1 L</td>
+      <td>Tissue digestion reagent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat no. H4034</td>
+      <td>Tissue digestion reagent; FACs Buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Bicarbonate</td>
+      <td>Fisher Scientific</td>
+      <td>Sodium Bicarbonate (Powder/Certified ACS); cat no. S233-500</td>
+      <td>Tissue digestion reagent; RBC lysis buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FF-BSA</td>
+      <td>Gemini Bio-products</td>
+      <td>Bovine Serum Albumin, Fatty Acid Free; cat no. 700–107 P</td>
+      <td>Tissue digestion reagent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDTA</td>
+      <td>Millipore Sigma</td>
+      <td>Ethylenediaminetetraacetic acid (EDTA), Tetrasodium Tetrahydrate Salt; cat no. 13235-36-4</td>
+      <td>Tissue digestion reagent; FACs Buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FBS</td>
+      <td>Atlanta Biologicals</td>
+      <td>Fetal Bovine Serum, Heat-inactivated; S11550H</td>
+      <td>FACs Buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium Chloride</td>
+      <td>Fisher Scientific</td>
+      <td>Ammonium Chloride (Crystalline/Certified ACS); cat no. A661-500</td>
+      <td>RBC lysis buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol</td>
+      <td>Ambion by Life Technologies</td>
+      <td>TRIzol Reagent; cat no. 15596018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran sulfate</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat no. D8906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Cell Proliferation Kit for Imaging, Alexa Fluor 488 dye</td>
+      <td>Invitrogen</td>
+      <td>cat no. C10337</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Debris Removal Solution</td>
+      <td>Miltenyi Biotec</td>
+      <td>cat no. 130-109-398</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lineage Cell Depletion Kit</td>
+      <td>Miltenyi Biotec</td>
+      <td>Lineage Cell Depletion Kit, mouse; cat no. 130-090-858</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell 3’ Library &amp; Gel Bead Kit v2</td>
+      <td>10X Genomics</td>
+      <td>cat no. 120237</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell 3’ Library &amp; Gel Bead Kit v3</td>
+      <td>10X Genomics</td>
+      <td>cat no. 1000092</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell A Chip Kit</td>
+      <td>10X Genomics</td>
+      <td>cat no. 120236</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium i7 Multiplex Kit</td>
+      <td>10X Genomics</td>
+      <td>cat no. 120262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bioanalyzer High Sensitivity DNA kit</td>
+      <td>Agilent Biotechnologies</td>
+      <td>2,100 Bioanalyzer High Sensitivity DNA kit; cat no. 5067–4626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zol RNA Miniprep Kit</td>
+      <td>Zymo Research</td>
+      <td>cat no. R2050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High Sensitivity D1000 ScreenTape for DNA Analysis</td>
+      <td>Agilent Biotechnologies</td>
+      <td>cat no. NC1786959</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantSeq 3' mRNA-Seq Library Prep Kit FWD for Illumina</td>
+      <td>Lexogen</td>
+      <td>cat no. 113.96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA SYBR Fast Universal qPCR Kit – Illumina Kapa</td>
+      <td>Kapa Biosystems</td>
+      <td>cat no. 07960441001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High Capacity cDNA Reverse Transcription Kit</td>
+      <td>Applied biosystems</td>
+      <td>cat no. 4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DyNAmo HS SYBR Green qPCR Kit</td>
+      <td>Thermoscientific</td>
+      <td>cat no. F-410XL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TrueVIEW</td>
+      <td>Vector Laboratories</td>
+      <td>cat no. SP-8400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Micro-osmotic Pump</td>
+      <td>ALZET</td>
+      <td>Micro-osmotic Pump, 0.5 uL/hr; cat no. 1007D</td>
+      <td>Experimental model and subject details; continuous CL infusion</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Normal Donkey Serum</td>
+      <td>Fisher</td>
+      <td>Jackson Immunoresearch SERUM NORMAL DONKEY; cat no. 017-000-121</td>
+      <td>Tissue processing and immunohistochemistry; blocking buffer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Normal Goat Serum</td>
+      <td>Sigma</td>
+      <td>cat no. G-9023</td>
+      <td>Tissue processing and immunohistochemistry; blocking buffer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lens Culinaris Agglutinin (LCA) DyLight 649</td>
+      <td>Vector Laboratories</td>
+      <td>DL-1048</td>
+      <td>Diluted 1:150 in blocking buffer.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HCS LipidTOX Deep Red neutral lipid stain</td>
+      <td>Invitrogen</td>
+      <td>cat no. H34477</td>
+      <td>Diluted 1:500.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Sigma</td>
+      <td>D9542</td>
+      <td>20 mg/mL; dilute 1:2,000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>100 µm Sterile Cell Strainer</td>
+      <td>fisherbrand</td>
+      <td>Sterile Cell Strainer 100 µm; cat no. 22-363-549</td>
+      <td>Isolation of stromal vascular cells for mouse iBAT single cell</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>40 µm Sterile Cell Strainer</td>
+      <td>fisherbrand</td>
+      <td>Sterile Cell Strainer 40 µm; cat no. 22-363-547</td>
+      <td>Isolation of stromal vascular cells for mouse iBAT single cell</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MS Columns</td>
+      <td>Miltenyi Biotec</td>
+      <td>cat no. 130-042-201</td>
+      <td>Magnetic bead enrichment of cellular subtypes</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>OctoMACS Separator</td>
+      <td>Miltenyi Biotec</td>
+      <td>cat no. 130-042-109</td>
+      <td>Magnetic bead enrichment of cellular subtypes</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Chromium Controller Instrument</td>
+      <td>10X Genomics</td>
+      <td>cat no. 1000204</td>
+      <td>Single-cell RNA library preparation and sequencing</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bst LF polymerase</td>
+      <td>New England Biolabs</td>
+      <td>cat no. M0275L</td>
+      <td>Single-molecule fluorescence in situ hybridization (smFISH)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Digest-All 3</td>
+      <td>ThermoFisher</td>
+      <td>cat no. 003009</td>
+      <td>Single-molecule fluorescence in situ hybridization (smFISH)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger v3.0.1</td>
+      <td>10X Genomics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SoupX v1.0.1</td>
+      <td>PMID:33367645</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat v3.1.5</td>
+      <td>PMID:31178118</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellPhoneDB v2.1.3</td>
+      <td>PMID:32103204</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NicheNet v0.1.0</td>
+      <td>PMID:31819264</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CASAVA v1.8.2</td>
+      <td>Illumina</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR-2.6.1d</td>
+      <td>PMID:23104886</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Htseq v0.11.2</td>
+      <td>PMID:25260700</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iDEP v0.95</td>
+      <td>PMID:30567491</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism v9.3.1</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris Viewer x64 v9.9.0</td>
+      <td>Oxford Instruments Group</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57</td>
+      <td>Jackson Labs</td>
+      <td>C57BL/6J; stock no. 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>LSL-tdTomato</td>
+      <td>Jackson Labs</td>
+      <td>B6.Cg-Gt(ROSA)26Sor_tm9(CAG-tdTomato)Hze/J; stock no. 007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Pdgfra-CreERT2</td>
+      <td>Jackson Labs</td>
+      <td>B6.129S-Pdgfratm1.1(cre/ERT2)Blh/J; stock no. 032770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Adrb1fl/fl</td>
+      <td>PMID:27548523</td>
+      <td></td>
+      <td>Dr. Jeffery Zigman, The University of Texas Southwestern Medical Center</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 C57BL/6J (C57; stock no. 000664), B6.129S-Pdgfratm1.1(cre/ERT2)Blh/J (Pdgfra-CreERT2 mice; stock no. 032770), and B6.Cg-Gt(ROSA)26Sor_tm9(CAG-tdTomato)Hze/J (LSL-tdTomato; stock no. 007909) mice were purchased from the Jackson Laboratory. Floxed Adrb1 mice (Adrb1fl/fl) (Mani et al., 2016) were kindly provided by Dr. Jeffrey Zigman (The University of Texas Southwestern Medical Center). All mice were housed at 24 °C +/- 2 °C with a 12:12 light-dark cycle in an AAALAC approved animal facility at Wayne State University (Detroit, MI). Mice were fed a standard chow diet ad libitum (LabDiet 5L0D, PMI Nutrition International, Brentwood, MO). Animal protocols were approved by the Institutional Animal Care and Use Committee at Wayne State University (#16-03-055 and #19-03-1024). All mice were euthanized at 8–14 weeks of age. Animals were randomly assigned to treatment groups. For cold exposure experiments, mice were housed in a rodent incubator (Powers Scientific, Inc) set to 6 °C for up to 5 days or maintained at colony room temperature as controls. In the incubators, mice were housed individually with no nesting materials in static cages. Mice were euthanized by CO2 asphyxiation and cervical dislocation.
 
@@ -177,52 +831,52 @@ For 5-ethynyl-2‘-deoxyuridine (EdU) labeling of proliferating cells, mice were
 
 Cre recombination in Pdgfra-CreERT2 x LSL-tdTomato mice was induced by administering tamoxifen dissolved in corn oil (Cayman Chemical, 100 mg/kg, oral gavage) once per day for 3–4 consecutive days. Cold exposure studies were started 1 week after the last dose of tamoxifen. To knockout ADRB1 in PDGFRA+ ASCs in vivo, Adrb1fl/fl mice were crossed with Pdgfra-CreERT2 mice to create mice homozygous for floxed Adrb1 and heterozygous for Pdgfra-CreERT2 (Adrb1fl/fl x Pdgfra-CreERT2 +/- mice (Adrb1 KO)). Adrb1 was knocked out in PDGFRA+ cells by induction of Pdgfra-CreERT2 by tamoxifen dissolved in sunflower oil (Cayman Chemical, 100 mg/kg, oral gavage) once per day for 5 consecutive days. Littermates without a Pdgfra-CreERT2 allele (Adrb1fl/fl x Pdgfra-CreERT2 -/- mice) were used as controls and also administered tamoxifen. Cold exposure studies were started 2–3 weeks after the last dose of tamoxifen.
 
-## Tissue processing and immunohistochemistry
+### Tissue processing and immunohistochemistry
 
 Tissues were fixed with 4% paraformaldehyde overnight at 4 °C, transferred through a sucrose gradient, embedded in O.C.T. compound, and cut into 20 μm-thick sections. Immunostaining was performed on fixed frozen tissue. Samples were pre-incubated with permeabilization buffer (0.3% TritonX 100 in PBS) for 30 minutes at RT and blocking buffer (5% serum corresponding to the species of the secondary antibody with 0.1% TritonX 100 in PBS) for 1 hour at RT, and then incubated with primary antibody diluted in blocking buffer overnight. Primary antibodies and dilutions used for immunohistochemistry in this study were the following: PDGFRA (goat, 1:70; R&D Systems); GPNMB (goat, 1:400; R&D Systems); I-A/I-E Alexa Fluor 647 (MHCII) (rat, 1:100; Biolegend); MKI67 (rabbit, 1:125; Invitrogen); perilipin1 (PLIN1) (goat, 1:200; Everest Biotech); F4/80 (rat, 1:125; Bio-Rad); lens culinaris agglutinin, DyLight 649 (LCA) (1:150, Vector Laboratories); NNAT (rabbit, 1:400, abcam). After three washes, slides were incubated with the following secondary antibodies, diluted in blocking buffer for one hour at RT: donkey anti-rat Alexa Fluor 647 (1:250; abcam); donkey anti-goat Alexa Fluor 568 (1: 250; Invitrogen); donkey anti-goat Alexa Fluor 488 (1: 250, Invitrogen); donkey anti-goat Alexa Fluor 647 (1: 250, Invitrogen); donkey anti-rabbit Alexa Fluor 594 (1: 250, Invitrogen); goat anti-rat Alexa Fluor 594 (1: 250, Invitrogen). HCS LipidTOX Deep Red Neutral Lipid Stain (1:500; Invitrogen) was used for lipid staining and added with secondary antibodies. For EdU detection, after antibody staining, slides were stained using the Click-iT EdU Imaging Kit (Invitrogen) following the manufacturer’s instructions. Samples were incubated with Click-iT reaction cocktail for 30 min, covered. After washing, samples were counterstained with DAPI (1:5,000; Sigma). Slides were coverslipped in ProLong Gold antifade reagent (Invitrogen) and examined by fluorescence microscopy. Staining where primary antibodies were omitted was used as nonspecific controls for immunohistochemistry.
 
-## Single-molecule fluorescence in situ hybridization (smFISH)
+### Single-molecule fluorescence in situ hybridization (smFISH)
 
 smFISH was conducted on fixed-frozen iBAT samples following the recently published SABER-FISH protocol (Kishi et al., 2019), with some modifications. Briefly, gene-specific probe sets, branch probes, the Clean.G oligo, and the Primer Exchange Reaction (PER) hairpin oligos were purchased from Invitrogen, and fluorescent-conjugated oligos were purchased from Integrated DNA Technologies or Sigma-Aldrich (St. Louis, MO). Primary probes for Dcn, Top2a, Nnat, Bmper, Pi16, Gdf10, H2-Ab1 (MHCII), Adrb1, and Gpnmb were designed using the mm10 reference genome as described by Kishi et al., 2019. Primer sequences are presented in Supplementary file 8. Primary probes were concatenated to a length of ~500–750 nt and branch probes to ~500 nt in a PCR reaction containing Bst LF polymerase (640 U/mL; New England Biosciences), 300 μM each of dNTPs (dATP, dCTP, dTTP), and 10 mM MgSO4, as described previously by Kishi et al., 2019 in the Supplementary Protocols (Kishi et al., 2019). After synthesis, all probes were purified using MinElute PCR purification columns (Qiagen) prior to use.
 
 iBAT tissue was excised and fixed in 10% neutral buffered formalin (NBF) for 5–7 hr at room temperature, then transferred to 30% sucrose in PBS (pH 7.4) overnight at 4 °C (12–16 hr). Cryosections (20 μm) were affixed onto Superfrost plus charged slides (Fisher Scientific) and sections preprocessed following the RNAscope technical note (TN 320534) up through the heat (antigen retrieval) step. The antigen retrieval buffer used was 10 mM citrate (pH 6.0). Sections were then lightly digested with pepsin (Digest-All 3, ThemoFisher) for 7 minutes at 40 °C, rinsed in PBS (pH 7.4), and preincubated in hybridization wash buffer (40% formamide, 2X SSC (pH 7), and 1% Tween-20) for 3–5 hr at 42 °C. Primary probes were added at 1 μg final concentration and hybridized at 42 °C for at least 16 hr. The following day, sections were washed in hybridization wash buffer and then incubated in branch hybridization solution (25% formamide, 2X SSC, 1% Tween-20, and 10% dextran sulfate) containing branch probes (100 nM) for 5 hr at 37 °C. After washing in hybridization wash buffer (25% formamide), sections were incubated with fluorescent oligos (~500 nM each) for 2 hr at 37 °C. Sections were then washed, stained with DAPI, and treated with TrueView (Vector labs) prior to mounting.
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 Immunofluorescence microscopy was performed either using (1) an Olympus IX-81 microscope equipped with a spinning disc confocal unit and 10X, 20X, 40X (0.9NA) water immersion, and 60X (1.2NA) water immersion objectives, using standard excitation and emission filters (Semrock) for visualizing DAPI, FITC (Alexa Fluor 488), Cy3 (Alexa Fluor 568, 594), and Cy5 (Alexa Fluor 647, Dy-Light 649, LipidTOX), (2) a Keyence microscope (BZ-X810; Keyence; Itasca, IL) with a 40X (0.6NA) air objective, or (3) an Andor Dragonfly spinning disk confocal microscope (Andor; Belfast, UK) using 40X (1.1NA) water and 63X (1.4NA) oil objectives. Where stated, tissue autofluorescence was captured using a cyan fluorescent protein filter set (Chroma 31044V2). Raw data of single optical sections or confocal Z-stacks were processed using cellSens imaging software (Olympus). Quantification of the distance between immune cell types (GPNMB+ MAC1 and MHCII+ dendritic cells) and tdTomato+ EdU+ ASCs/adipocytes was performed on 20X single optical sections using the Measurement and ROI toolbar Arbitrary Line function in cellSens. smFISH images acquired with the Dragonfly microscope were processed using Fusion software (v 2.3.0.44; Andor), and then analysis and quantification performed with the Imaris Viewer x64 (v9.9.0) software using 3D view. For the Bmper/Pi16/Nnat analysis (Figure 4—figure supplement 1B), images of 20 µm-thick sections from three individual cold-exposed mice were analyzed, totaling at least 90 Nnat+ cells per animal. For each Nnat+ cell, co-expression of Bmper or Pi16 were recorded. For the Adrb1 molecule analysis (Figure 5—figure supplement 1C), images from two individual cold-exposed mice were analyzed per genotype (WT or Adrb1 KO). Nnat+ cells were identified, and the number of Adrb1 molecules (puncta) in the same focal plane as Nnat expression was documented. For the neighbor analysis (Figure 8), images from three individual cold-exposed mice were analyzed, totaling at least 100 cells for analysis. Cells within a 20 μm diameter circle centered around the cell type of interest (H2-Ab1+, Nnat+, Dcn+, or Dcn+ Top2a+) were documented. Analysis was performed by excluding classified cells with no neighbors within 20 μm.
 
-## Single-cell RNA sequencing experiments
+### Single-cell RNA sequencing experiments
 
-## Isolation of stromal vascular cells for mouse iBAT single-cell analysis
+#### Isolation of stromal vascular cells for mouse iBAT single-cell analysis
 
 For cold exposure and CL treatment experiments, male C57 mice were exposed to cold (6 °C) or infused with CL for four days, or maintained as room temperature controls. For Adrb1 KO experiments, female Adrb1fl/fl x Pdgfra-CreERT2+/- mice (Adrb1 KO) and Adrb1fl/fl x Pdgfra-CreERT2-/- genotype controls, all treated with tamoxifen, were exposed to cold for four days or maintained at room temperature. Interscapular brown adipose tissues were surgically removed and processed for stromal vascular cell (SVC) isolation. Tissues of 3–4 mice were pooled after digestion for SVC isolation, similar to methods previously described (Burl et al., 2018; Lee et al., 2012; Figure 2—figure supplement 1A). Briefly, following dissection, iBAT pads were washed with PBS, minced, and digested with 2 mg/mL type 2 collagenase (Worthington Biochemical Co.) in Hanks’ balanced salt solution (HBSS; Sigma-Aldrich) containing 4 mM sodium bicarbonate, 10 mM HEPES (pH 7.4, Gibco; Sigma-Aldrich) and 0.5% fatty acid free bovine serum albumin (FF-BSA; Gemini Bioproducts, West Sacramento, CA) for 30 min at 37 °C (Figure 2—figure supplement 1A). Ethylenediaminetetraacetic acid (EDTA) was added to a final concentration of 10 mM and samples were incubated for an additional 5 min to promote complete dissociation of SVCs.
 
 Digested cell samples from the same treatment group were combined and filtered through 100 μm and 40 μm sterile cell strainers. The samples were washed with PBS buffer containing 1 mM EDTA, 2.5 mM HEPES, and 10% heat-inactivated fetal bovine serum (FBS, Atlanta Biologicals Inc) (FACS buffer) and centrifuged at 500 x g for 10 min at 4 °C. After removing the supernatant, pelleted stromal vascular cells were incubated in red blood cell lysis buffer containing 14 mM sodium bicarbonate, 0.154 M ammonium chloride, and 0.1 mM EDTA for 5 min at room temperature, then passed through a 100 μm sterile cell strainer. Cells were collected by centrifugation at 500 x g for 10 min at 4 °C. Cellular debris was removed by density gradient centrifugation using Debris Removal Solution (Miltenyi Biotec). Cells recovered were resuspended in PBS containing 0.5% FF-BSA.
 
-## Magnetic bead enrichment of cellular subtypes
+### Magnetic bead enrichment of cellular subtypes
 
 iBAT SVCs were separated into lineage marker positive (Lin+) and lineage-marker negative (Lin-) cell fractions using magnetic bead cell separation (MACS) (Figure 2—figure supplement 1A). SVCs were labeled using the mouse Lineage Cell Depletion kit (Miltenyi Biotec) according to the manufacturer’s instructions. This kit contains anti-CD5, anti-CD11b, anti-CD45R (B220), anti-Gr-1 (Ly-6G/C), anti-7–4, and anti-Ter-119 antibodies. Labeled samples were passed onto MS columns (Miltneyi Biotec) on the OctoMACS separator (Miltenyi Biotec); the flow through was collected as the Lin- cell fraction and bound Lin+ cells were eluted from the column. Samples were centrifuged at 500 x g for 10 min at 4 °C and pelleted cells were resuspended in PBS with 0.04% FF-BSA. Cells were counted and diluted to a concentration of 1,000 cells/uL.
 
-## Single-cell RNA library preparation and sequencing
+### Single-cell RNA library preparation and sequencing
 
 Single-cell libraries for all samples were prepared using the 10X Genomics Chromium Single Cell 3’ Reagent Kit v2, apart from Adrb1 KO and WT RT libraries which were prepared with Reagent Kit v3 (Figure 2—figure supplement 1C). Following MACS, single-cell suspensions were loaded onto the Single Cell Chip A. An estimated 10,000 cells were loaded per lane for an expected recovery of ~6,000 cells per library. The assembled chip was placed on a 10X Genomics Chromium Controller Instrument (10X Genomics) to generate single-cell gel beads in emulsion (GEMs). Single-cell RNA-seq libraries were prepared according to the manufacturer’s instructions. Libraries were quantified using the Kappa PCR kit (Kappa Biosystems) and sequenced with the Illumina NextSeq500 using high output 75-cycle kits with the following read length configuration: v2 libraries 26 bp read1, 8 bp I7 index, and 58 bp read2; v3 libraries 28 bp read1, 8 bp I7 index, and 56 bp read2.
 
 10X Genomics Cell Ranger (v3.0.1) was used to perform sample demultiplexing, alignment, filtering, and UMI counting (Figure 2—figure supplement 1B). Count files were processed using SoupX (v1.0.1) (Young and Behjati, 2020), an R package for the estimation and removal of cell-free mRNA contamination in single-cell data (Figure 2—figure supplement 1B). For SoupX library cleanup, Fabp4 and Car3 were used as the non-expressed genes, as we expect the largest contribution of contamination to come from damaged mature BAs that have been excluded from these libraries, and clusters = FALSE. Corrected count libraries were input into the R program Seurat (v3.1.5) (Stuart et al., 2019) and libraries were quality filtered (Lin+: percent.mt <10 & nCount_RNA < 15000 & nFeature_RNA < 4000; Lin-: percent.mt <10 & nCount_RNA < 15000 & nFeature_RNA > 100) (Figure 2—figure supplement 1B). For the C57 RT, COLD, and CL libraries, after normalization, libraries from the same replicate experiment were merged (i.e. Replicate1_Lin-_RT + Replicate1_Lin-_COLD = Replicate1_merge). The top 2,000 variable genes were identified for each merged object, and objects from similar cell fractions (Lin+ or Lin-) were integrated to align common features of the dataset. For the Adrb1 WT and KO libraries, because the libraries for different treatments were collected on different days and with different version of the 10X kit, we integrated all of the libraries in Seurat to correct for these effects and perform comparative scRNA-seq across the libraries. Therefore, after normalization we identified the top 2,000 variable genes for each library and all libraries were integrated. For all integrated objects, we performed linear dimensional reduction, cell clustering, and data visualization using t-distributed stochastic neighbor embedding (t-SNE). Differentially expressed genes that define each cluster were identified using a Wilcoxon Rank Sum test in Seurat with the following parameters: min.pct=0.20, logfc.threshold=0.2, only.pos=TRUE (Figure 2—figure supplement 1B). These markers were used to assign cell type identity. Gene Ontology (GO) analysis of DEGs and p-values were produced by the Gene Ontology Consortium, 2021; Ashburner et al., 2000. Volcano plots were prepared from DEGs calculated by distinguishing ASCs from control libraries with ASCs from cold libraries (i.e. ASC2_controls vs. ASC2_cold). Colored points and quantification displayed on the plot are the number of genes with an adjusted p-value less than 0.05 and the absolute value of the fold change greater than 0.5.
 
-## Ligand-Receptor Analysis
+### Ligand-Receptor Analysis
 
 To identify potential ligand-receptor pairs in our single-cell dataset, we used the computational programs CellPhoneDB (v2.1.3) (Efremova et al., 2020) and NicheNet (v0.1.0) (Browaeys et al., 2020). CellPhoneDB is a curated repository of ligands and receptors that interrogates single-cell data for expression of these pairs. The NicheNet repository utilizes a model that incorporates intracellular signaling to prioritize pairs. In addition to these computational programs, we generated lists of genes expressed in each cell type and cross-referenced them with two databases: the NicheNet ligand-receptor database and the mouse ligand and receptor database compiled in Skelly et al., 2018. The results from each method were compiled into a master list of potential ligand-receptor pairs. Finally, every ligand and receptor were manually plotted in our single-cell dataset to remove those with expression not specific to the MAC/DEND cells (ligands) and the ASC1_cold-activated cells (receptors).
 
-## Cold exposure time course for whole tissue RNA isolation and sequencing
+### Cold exposure time course for whole tissue RNA isolation and sequencing
 
 RNA was isolated from mouse iBAT following the standard protocol for the Direct-zol RNA Miniprep kit (Zymo Research) and assessed for quality on the Agilent 2200 TapeStation (Agilent Technologies). Transcriptome profiles were generated using the QuantSeq 3’ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen) with 250 ng of total RNA. Libraries were sequenced on an Illumina NovaSeq 6000 using a SP 100 cycle NovaSeq flow cell with read length configuration 76 bp with dual indexing: 12 bp for i7 and i5 indexing. Sequencing data was demultiplexed using Illumina’s CASAVA 1.8.2 software.
 
 Sequencing reads were aligned to the mouse genome with STAR-2.6.1d (Dobin et al., 2013). HTseq (v0.11.2) (Anders et al., 2015) was used to determine the read counts per gene based on Ensembl gene annotations from mouse Gencode release 38 (GRCm38.98). We sequenced a total of ~171.3 million reads, with an average of ~4.9 million reads per library. Raw count data was uploaded into iDEP (Ge et al., 2018), a web application for analysis of RNA-seq data. Data was transformed in iDEP (v0.95) using the rlog function. K-means clustering was performed on the top 2,000 DEGs with k=4 clusters. Analysis focused on the clusters of genes upregulated with cold exposure.
 
-## Gene expression analysis in iBAT of Adrb1 KO mice
+### Gene expression analysis in iBAT of Adrb1 KO mice
 
 Whole-tissue RNA was extracted from the iBAT of control (Adrb1fl/fl (WT)) or Adrb1 KO mice after being maintained at room temperature or exposed to cold for four days using TRIzol (Invitrogen). mRNA was reverse-transcribed using the High-Capacity cDNA Reverse Transcription Kit (ThermoFisher Scientific). Fifty nanograms of cDNA was analyzed in a 20 uL quantitative PCR reaction (DyNAmo HS SYBR Green qPCR Kit, ThermoFisher Scientific) with 500 nM of primers. Quantitative PCR was performed using the AriaMx Real-Time PCR System (Agilent Technologies). Expression data was normalized to the housekeeping gene ribosomal protein lateral stalk subunit P0 (Rplp0). Rplp0 was amplified using the primers 5’- AGATTCGGGATATGCTGTTGGC-3’ (forward) and 5’- TCGGGTCCTAGACCAGTGTTC-3’ (reverse). Top2a was amplified using primers 5’-GATGGTTTTACGGAGCCAGTTTT-3’ (forward) and 5’-CACGTCAGAGGTTGAGCACT-3’ (reverse). Gpnmb was amplified using primers 5’-CTATCCCTGGCAAAGACCCA-3’ (forward) and 5’-GGCTTGTACGCCTTGTGTTT-3’ (reverse). Trem2 was amplified using primers 5’-AGCACCTCCAGGCAGGTTT-3’ (forward) and 5’-TTGATTCCTTGGAAAGAGGAGGA-3’ (reverse). Birc5 was amplified using primers 5’-ACCGAGAACGAGCCTGATTT-3’ (forward) and 5’-ATGCTCCTCTATCGGGTTGTC-3’ (reverse).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using GraphPad Prism v9.3.1 software (GraphPad Software, San Diego, CA, USA), R (v 4.0.3) ("R Development Core Team, 2020") and RStudio (R Studio Team, 2022), or an online Chi-square Calculator (Stangroom, 2002). Data are presented as mean ± SD or mean ± SEM as indicated in the figure legends. Comparison among groups was performed using a 2-way ANOVA on log transformed data. Pearson correlation coefficient was calculated in R using cor() function and reported p-values were calculated using the cor.test() function.

@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.37868.001 In cancer cells, loss of G1/S control is often accompanied by p53 pathway inactivation, the latter usually rationalized as a necessity for suppressing cell cycle arrest and apoptosis. However, we found an unanticipated effect of p53 loss in mouse and human G1-checkpoint-deficient cells: reduction of DNA damage. We show that abrogation of the G1/S-checkpoint allowed cells to enter S-phase under growth-restricting conditions at the expense of severe replication stress manifesting as decelerated DNA replication, reduced origin firing and accumulation of DNA double-strand breaks. In this system, loss of p53 allowed mitogen-independent proliferation, not by suppressing apoptosis, but rather by restoring origin firing and reducing DNA breakage. Loss of G1/S control also caused DNA damage and activation of p53 in an in vivo retinoblastoma model. Moreover, in a teratoma model, loss of p53 reduced DNA breakage. Thus, loss of p53 may promote growth of incipient cancer cells by reducing replication-stress-induced DNA damage.
+In cancer cells, loss of G1/S control is often accompanied by p53 pathway inactivation, the latter usually rationalized as a necessity for suppressing cell cycle arrest and apoptosis. However, we found an unanticipated effect of p53 loss in mouse and human G1-checkpoint-deficient cells: reduction of DNA damage. We show that abrogation of the G1/S-checkpoint allowed cells to enter S-phase under growth-restricting conditions at the expense of severe replication stress manifesting as decelerated DNA replication, reduced origin firing and accumulation of DNA double-strand breaks. In this system, loss of p53 allowed mitogen-independent proliferation, not by suppressing apoptosis, but rather by restoring origin firing and reducing DNA breakage. Loss of G1/S control also caused DNA damage and activation of p53 in an in vivo retinoblastoma model. Moreover, in a teratoma model, loss of p53 reduced DNA breakage. Thus, loss of p53 may promote growth of incipient cancer cells by reducing replication-stress-induced DNA damage.
 
 ## Introduction
 
@@ -37,13 +37,21 @@ To study the consequences of G1/S checkpoint loss in a well-defined system, we u
 
 ## Results
 
-## Loss of p53/p21Cip1 allows mitogen-independent proliferation of cells lacking the G1/S checkpoint
+### Loss of p53/p21Cip1 allows mitogen-independent proliferation of cells lacking the G1/S checkpoint
 
 Consistent with our previous observations (Foijer et al., 2005), mouse embryonic fibroblast (MEFs) lacking the three retinoblastoma proteins and overexpressing the anti-apoptotic gene Bcl2 (TKO-Bcl2 MEFs) ceased proliferation upon mitogen deprivation (Figure 1A, black line) and arrested in a G2-like state (Figure 1C, upper panel). We also reported that proliferation was rescued by RNAi-mediated knockdown of Trp53, the gene that encodes the p53 protein (TKO-p53RNAi MEFs) (Foijer et al., 2005). However, in recent experiments, proliferation of mitogen-starved TKO-p53RNAi MEFs appeared transient and was followed by severe cell loss (Figure 1A, green line), possibly as a result of residual p53 activity (Figure 1—figure supplement 1A). We therefore exploited CRISPR/Cas9 technology to create full Trp53 knockout (KO) TKO MEFs (Figure 1—figure supplement 1A). Disruption of p53 clearly rescued proliferation of mitogen-starved TKO MEFs (TKO-p53KO) and this effect was even greater in TKO MEFs expressing Bcl2 (TKO-Bcl2-p53KO), which reached 100% confluency (Figure 1A, blue and red lines). The improved proliferative capacity was accompanied by reduced apoptosis (Figure 1B) and the absence of G2 arrest (Figure 1C, lower panel, Figure 1—figure supplement 1B). Mitogen-deprived TKO-Bcl2-p53KO cells maintained a cell cycle profile similar to cells cultured in the presence of mitogens (Figure 1C, lower panel) and, unlike TKO-Bcl2 cells, continued to incorporate high levels of nucleotides (Figure 1D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/37868/elife-37868-fig1-v2.jpg)
+
+**Figure 1.:** (A) IncuCyte growth curves of TKO-Bcl2 (black), TKO-p53RNAi (green), TKO-p53KO (blue) and TKO-Bcl2-p53KO (red) MEFs in the absence of 10% FCS. (B) Apoptosis levels of TKO-Bcl2 (black), TKO-p53RNAi (green), TKO-p53KO (blue) and TKO-Bcl2-p53KO (red) MEFs in the absence of 10% FCS. Apoptosis was measured by fluorescent signal upon caspase three cleavage and normalized to cell confluency. (C) Cell cycle distribution based on propidium iodide content of TKO-Bcl2 MEFs (upper panel) and TKO-Bcl2-p53KO MEFs (lower panel) in the absence of 10% FCS for the indicated days. (D) BrdU flow cytometry analysis of the cell cycle distribution of TKO-Bcl2 and TKO-Bcl2-p53KO MEFs in the absence of 10% FCS for the indicated days. Percentage of BrdU-labeled cells is indicated. (E) IncuCyte growth curves of TKO-Bcl2 (black), TKO-Bcl2-p53KO (red) and TKO-Bcl2-p21KO (blue) MEFs in the absence of 10% FCS. Experiments in A, B and E were performed in triplicate. Error bars show standard deviation (sd).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37868/elife-37868-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) p21Cip1 and p53 protein levels in TKO-Bcl2, TKO-p53RNAi, p53KO, TKO-p53KO andTKO-Bcl2-p53KO MEFs. Anti-CDK4 was used as a loading control. (B) Cell cycle distribution based on propidium iodide content of TKO-p53RNAi MEFs (left panel) and TKO-p53KO MEFs (right panel) in the absence of 10% FCS for the indicated days. (C) Using a CRISPR vector, Cdkn1a was disrupted in TKO-Bcl2 cells. p21Cip1 protein levels were measured after irradiation with 10 Gy. One of the clones expressed elongated p21Cip1 protein. The clone with absent p21Cip1 staining (TKO-Bcl2-p21KO) was used in further experiments. Anti-actin was used as a loading control.
+
 Not only loss of p53, but also disruption of its downstream target Cdkn1a, the gene that encodes the p21Cip1 protein (Figure 1—figure supplement 1C), rescued proliferation of mitogen-deprived TKO-Bcl2 cells (Figure 1E). Apparently, the induction of p21Cip1, which we previously found to inhibit Cyclin A- and B1-dependent kinases (Foijer et al., 2005), was critical for G2-like arrest of mitogen-deprived TKO cells. The p53/p21Cip1 axis is part of the DNA damage response (DDR) and its activation is consistent with the high levels of DNA double-strand breaks (DSBs) that accumulated in arrested TKO-Bcl2 cells (van Harn et al., 2010). To understand how disruption of p53/p21Cip1 rescued proliferation, we investigated the mechanism of DSB formation.
 
-## Mitogen deprivation causes S-phase delay
+### Mitogen deprivation causes S-phase delay
 
 We studied cell cycle progression of individual cells using the Fucci system, in which fluorescent proteins fused to the degradation motifs of Cdt1 and Geminin mark G1 and S/G2 cells, respectively (Sakaue-Sawano et al., 2008). In the presence of mitogens, TKO-Bcl2 and TKO-Bcl2-p53KO MEFs proliferated with a cell-cycle duration of 10 to 15 hr (Figure 2A,B, left). In the absence of mitogens, TKO-Bcl2 MEFs arrested in S/G2 phase, either immediately or after one cell cycle (Figure 2A, right). In contrast, mitogen-deprived TKO-Bcl2-p53KO MEFs could be followed for two or three cell divisions (Figure 2B, right), although G1 and S/G2 phase durations were increased, together encompassing 15 to 30 hr. These tracking experiments confirm that TKO-Bcl2-p53KO MEFs can proliferate in the absence of mitogens albeit at slower pace.
 
@@ -51,15 +59,23 @@ We studied cell cycle progression of individual cells using the Fucci system, in
 
 **Figure 2.:** Timing of cell cycle phases in (A) TKO-Bcl2 MEFs and (B) TKO-Bcl2-p53KO MEFs expressing mKO-hCdt1 and mAG-hGem and cultured in the presence (left panels) or absence (right panels) of 10% FCS. The period a cell only expressed mKO-hCdt1 (G1 phase) is marked red, only expressed mAG-hGem (S/G2/M phase) is marked green, expressed both mKO-hCdt1 and mAG-hGem (early S phase) is marked yellow. During mitosis both markers are absent (white).The y-axes represent individual cells.
 
-## p53/p21Cip1 knockout suppresses DSBs formation
+### p53/p21Cip1 knockout suppresses DSBs formation
 
 Cell cycle delay may be caused by DSBs that accumulate in mitogen-deprived TKO-Bcl2 MEFs (van Harn et al., 2010). This level was comparable to irradiation with 20 Gy, which is expected to severely impair mitosis resulting in cell death (Zachos et al., 2003). Nonetheless, TKO-Bcl2-p53KO and TKO-Bcl2-p21KO MEFs were able to proliferate mitogen-independently. We therefore investigated whether Trp53 or Cdkn1a inactivation affected DSB formation as a consequence of mitogen deprivation by performing neutral comet assays (Olive and Banáth, 2006). Mitogen restriction of TKO-Bcl2 MEFs caused a clear increase in tail moment, an indicator of the level of DSBs (Figure 3A,B). In contrast, the tail moments in TKO-Bcl2-p53KO and TKO-Bcl2-p21KO MEFs were not significantly increased by mitogen depletion (Figure 3B) although the basal levels of DSBs (i.e., in the presence of mitogens) were somewhat higher compared to TKO-Bcl2 cells. Possibly, MEFs accumulated some DNA damage under optimal culture conditions that was tolerated or not adequately repaired in the absence of p53/p21Cip1 activity (Levine and Oren, 2009; Williams and Schumacher, 2016). Nevertheless, the critical observation here is that the induction of DNA breakage due to mitogen deprivation was suppressed in the absence of p53/p21Cip1.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/37868/elife-37868-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative comets of nuclei of TKO-Bcl2, TKO-Bcl2-p53KO MEFs and TKO-Bcl2-p21KO MEFs stained with propidium iodide in the presence or absence of 10% FCS (7 days). (B) Tail moments obtained from TKO-Bcl2, TKO-Bcl2-p53KO and TKO-Bcl2-p21KO MEFs cultured in the presence or absence of 10% FCS (7 days). (C) Tail moments obtained from TKO-Bcl2 and TKO-Bcl2-p53KO MEFs cultured in the presence or absence of 10% FCS (2 days) and in the presence of nocodazole. (D) Tail moments obtained from TKO-Bcl2 and TKO-Bcl2-p53KO MEFs immediately and 30 min after 1 hr treatment with 2 mM HU. In B, C and D, box plots represent interquartile ranges, horizontal bars denote the median and points indicate outliers. For each condition, more than 50 cells were analyzed using the CASP software. Significance is indicated (1-way Anova nonparametric Kruskal-Wallis test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37868/elife-37868-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Propidium iodide staining cell cycle analysis of TKO-Bcl2 and TKO-Bcl2-p53KO MEFs cultured in the presence of 10% FCS (left panels) and in the absence of 10% FCS and in the presence of 250 ng/ml nocodazole (right panels).
 
 It is known that p53 modulates different DNA repair pathways (Bieging et al., 2014; Williams and Schumacher, 2016). Could the level of DSBs in mitogen-deprived p53KO MEFs be reduced by passage through M phase and subsequent repair in G1? To examine this possibility, we blocked cell cycle progression towards G1 by culturing cells in medium without mitogens, but containing nocodazole (Figure 3—figure supplement 1). This allowed us to measure the level of DSBs in TKO-Bcl2 and TKO-Bcl2-p53KO cells in comparable cell cycle phases, between S and M phase. In the presence of nocodazole, the same results were obtained: mitogen-deprived TKO-Bcl2 MEFs showed the expected increase in tail moment, while the tail moments of TKO-Bcl2-p53KO MEFs were still not increased (Figure 3C).
 
 To directly investigate whether p53 status affected repair of replication-stress-induced DSBs, we treated mitogen-stimulated TKO-Bcl2 MEFs with 2 mM hydroxyurea (HU) for 1 hr in order to induce and alleviate replication stress instantaneously. HU depletes the cells of nucleotides, which results in stalling and collapsing of replication forks and hence DNA breakage (Bianchi et al., 1986; Koç et al., 2004). When comparing cells harvested immediately after HU treatment and cells harvested 30 min after HU treatment, we observed an equally strong decrease in tail moment in TKO-Bcl2 and in TKO-Bcl2-p53KO MEFs (Figure 3D). This indicates that the repair of DSBs induced by HU treatment was independent of p53 status. Assuming that repair of replication-stress-induced DSBs under mitogen-deprived conditions follows similar rules, these results suggest that reduced levels of DSBs in mitogen-deprived TKO-Bcl2-p53KO cells resulted from suppressed formation rather than increased repair of DSBs.
 
-## Mitogen-deprived TKO-Bcl2 MEFs suffer from replication stress
+### Mitogen-deprived TKO-Bcl2 MEFs suffer from replication stress
 
 To study the mechanism of DNA breakage, we assessed the quality of DNA replication in mitogen-deprived TKO-Bcl2 MEFs by looking at co-localization of the thymidine analogue chloro-deoxyuridine (CldU, marking DNA replication) and γ-H2AX (marking DNA damage). While the number of cells containing CldU foci gradually decreased in mitogen-starved TKO-Bcl2 MEFs, virtually all CldU foci that were still present after 4 and 7 days co-localized with γ-H2AX foci (Figure 4A,B). Furthermore, the gradual increase of phosphorylated Chk1 (pChk1), a target of ataxia telangiectasia related (ATR), is indicative for accumulation of single-stranded DNA (Figure 4C). Taken together, these results are indicative for perturbed replication in mitogen-deprived TKO-Bcl2 MEFs.
 
@@ -69,13 +85,25 @@ To study the mechanism of DNA breakage, we assessed the quality of DNA replicati
 
 We next visualized the progression of individual replication forks using a DNA fiber assay (Tuduri et al., 2010). Sequential pulse-labeling of newly synthesized DNA strands with the thymidine analogs CldU (red tracks) and iodo-deoxyuridine (IdU, green tracks) identifies ongoing replication forks and new origin firing (Figure 5A). The length of double-labelled tracks in TKO-Bcl2 MEFs cultured with FCS indicated an average fork speed of 1.66 kb/min (Figure 5B). In the absence of p53 the average fork speed was somewhat lower, 1.37 kb/min, consistent with a previous study (Klusmann et al., 2016). Mitogen deprivation caused a progressive decline in replication speed, somewhat unexpectedly not only in arresting TKO-Bcl2 MEFs but also in proliferating TKO-Bcl2-p53KO MEFs (Figure 5B). Prolonged S-phase and decelerated DNA synthesis indicate that mitogen-deprived TKO-Bcl2-p53KO MEFs were able to proliferate despite sustained replication stress.
 
-## Nucleotide deficiency contributes to perturbed DNA replication
+![Figure 5.](https://cdn.elifesciences.org/articles/37868/elife-37868-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic representation of replication tracks generated after pulse labeling with CldU (red) and IdU (green). Ongoing forks were used to determine fork speeds (kb/min); 1st label and 2nd label origins are origins of replication initiated during the labelling period with CldU and IdU, respectively (upper panel). Representative images of DNA fibers of TKO-Bcl2 MEFs with and without 10% FCS (lower panel). (B) Replication fork speeds in TKO-Bcl2 and TKO-Bcl2-p53KO MEFs cultured in the presence or absence of 10% FCS for 1–7 days. Box plots represent interquartile ranges, horizontal bars denote the median, whiskers indicate 5–95 percentile and points are outliers. At least 350 track lengths of ongoing forks were measured (from three independent experiments) with ImageJ. Significant differences between median values are indicated with an asterisk (nonparametric Kruskal-Wallis test, p<0.05). (C) Quantification of origin firing in TKO-Bcl2, TKO-Bcl2-p53KO and TKO-Bcl2-p21KO MEFs cultured in the presence or absence of 10% FCS for 1–5 days. 1st label and 2nd label origins are shown as percentage of all labeled tracks (from three independent experiments). Significant differences between average values are indicated with an asterisk (p<0.05, Student’s t-test).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37868/elife-37868-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Transcript levels of Ppat, Impdh1, Impdh2 and Paics (corrected for Hprt transcript levels) in TKO-Bcl2 MEFs cultured in the presence or absence of 10% FCS for the indicated days. The expression in the presence of 10% FCS is set as 100%. Standard deviation (bars) from two independent experiments is shown. (B) Transcript level of Ppat (corrected for Hprt transcript level) in TKO-Bcl2 MEFs 2 days after transduction with shRNAs against Ppat (#1 and #2) or non-targeting shRNA (EV, set as 100%). Standard deviation (bars) of three independent experiments is shown. (C) Replication fork speeds in TKO-Bcl2 MEFs 2 days after transduction with shRNAs against Ppat (#1 and #2) or non-targeting shRNA (EV). (D) Replication fork speeds in TKO-Bcl2 MEFs cultured in the presence or absence of 10% FCS for 1 day with or without the exogenous supply of nucleosides. For C and D, box plots represent interquartile ranges, horizontal bars denote the median, whiskers indicate 5–95 percentile and points are outliers. At least 100 track lengths of ongoing forks were measured. Average values marked with asterisk are significantly different (nonparametric Kruskal-Wallis test, p<0.05). (E) Cell cycle distribution of TKO-Bcl2 MEFs cultured in the presence or absence of 10% FCS for the indicated days with or without daily exogenous supply of nucleosides. (F) pChk1 (Ser317), Chk1, p21Cip1 and p27Kip1 protein levels in TKO-Bcl2 MEFs cultured in the presence or absence of 10% FCS for the indicated days in the presence or absence of nucleosides. Anti-CDK4 was used as loading control.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/37868/elife-37868-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Tail moments obtained from TKO-Bcl2 and TKO-Bcl2-p53KO cultured in the absence or presence of 0.3 or 2 mM HU for 1 hr. Box plots represent interquartile ranges, horizontal bars denote the median and points are outliers. For each condition, more than 50 cells were analyzed using the CASP software. Significance is indicated (nonparametric Mann Whitney test). (B) Quantification of origin firing of TKO-Bcl2 and TKO-Bcl2-p53KO MEFs after 1 hr treatment with 0.3 or 2 mM HU. Origins (green only) are shown as percentage of stalled (red only) and restarted tracks (red-green or green-red-green). The experiment was performed in duplicate. Error bars show standard deviation.
+
+### Nucleotide deficiency contributes to perturbed DNA replication
 
 Disruption of the nucleotide pool can contribute to replication stress (Bester et al., 2011; Poli et al., 2012) and may therefore be the underlying cause of reduced replication speed, DSB formation and G2-like arrest in mitogen-deprived TKO-Bcl2 MEFs. Mitogen deprivation is a strong anti-proliferative signal that may inhibit MYC transcription factors and therefore repress genes involved in nucleotide synthesis (Gassmann et al., 1999; Perna et al., 2012). Indeed, we found that mitogen-deprivation of TKO-Bcl2 cells reduced transcript levels of phosphoribosyl pyrophosphate amidotransferase (Ppat) and inosine monophosphate dehydrogenase 1 and 2 (Impdh1 and Impdh2), genes involved in purine metabolism, 2-fold (Figure 5—figure supplement 1A). Reduced levels of nucleotide synthesis enzymes could impair DNA replication by disturbing the balance in the dNTP pool. Indeed, RNAi-mediated suppression of Ppat expression (Figure 5—figure supplement 1B) reduced the replication speed in mitogen-stimulated TKO-Bcl2 MEFs from 1.25 kb/min to 0.84 (shRNA #1) and 0.86 (shRNA #2) kb/min (Figure 5—figure supplement 1C).
 
 Conversely, replication speed in mitogen-deprived TKO-Bcl2 MEFs could be partially rescued by the exogenous supply of nucleosides. Similar to previous experiments, one day of mitogen deprivation decreased the average fork speed by ±30%, in this experiment from 0.94 kb/min to 0.65 kb/min. In contrast, when cells were supplemented with nucleosides, reduction of replication speed was less pronounced (from 1.03 kb/min to 0.83 kb/min) (Figure 5—figure supplement 1D). However, daily nucleosides supplementation did not alleviate the proliferation defect of mitogen-deprived TKO-Bcl2 MEFs: G2 accumulation was hardly affected (Figure 5—figure supplement 1E) and also Chk1 phosphorylation and p21Cip1 induction were not reduced (Figure 5—figure supplement 1F). As we observed that mitogen-independent proliferation upon p53 loss did not require restoration of replication speed (Figure 5B), this indicates that rather than decelerated DNA replication another factor was causal to G2 arrest upon mitogen deprivation.
 
-## Reduced DNA breakage by p53 knockout is associated with increased origin firing
+### Reduced DNA breakage by p53 knockout is associated with increased origin firing
 
 Previously, we showed that inhibition of CDK activity by p27Kip1 and p21Cip1 was critical for arrest of mitogen-deprived TKO-Bcl2 MEFs (Foijer et al., 2005). Since CDK activity is required to activate origins of replication (Fragkos et al., 2015; Méndez and Stillman, 2003), origin firing may be perturbed in mitogen-deprived TKO-Bcl2 MEFs. Indeed, among CldU/IdU-labelled DNA fibers from mitogen-deprived TKO-Bcl2 MEFs, staining patterns indicative for new origin firing were significantly reduced (Figure 5C). In contrast, in TKO-Bcl2-p53KO MEFs, origin firing was not disturbed during the first days of mitogen deprivation and maintained levels similar as in mitogen-stimulated cells (Figure 5C). Only after 5 days of mitogen deprivation, origin firing was reduced, which may be related to the state of confluency that was reached by that time (Figure 1A). Similar to TKO-Bcl2-p53KO MEFs, also TKO-Bcl2-p21KO MEFs maintained normal origin firing during the first days of mitogen deprivation (Figure 5C).
 
@@ -83,19 +111,27 @@ The increased level of origin firing upon loss of p53/p21Cip1 contrasts to a rec
 
 Collectively, our results suggest that under conditions of severe replication stress, restoration of the level of origin firing upon p53 loss prevents DNA breakage, allowing mitogen-independent proliferation of TKO-Bcl2-p53KO MEFs.
 
-## Also in human cells inactivation of p53 is associated with reduced DNA DSBs
+### Also in human cells inactivation of p53 is associated with reduced DNA DSBs
 
 To investigate whether p53 affects DNA breakage under replication stress conditions in human cells, we used the human retinal pigment epithelial cell line RPE-1. The G1/S phase checkpoint was perturbed either by inactivating all three retinoblastoma genes, RB, RBL1 and RBL2 (TKO; Figure 6A) or by overexpressing a non-degradable form of human Cyclin D1 (CyclinD1; Figure 6B). Overexpression of Cyclin D1 is biologically relevant since the gene encoding Cyclin D1 represents the second most frequently amplified locus in the human cancer genome (Beroukhim et al., 2010). In addition, in many human tumors overexpression of D type cyclins takes place in the absence of detectable genomic alterations (Hosokawa and Arnold, 1998). In the presence of mitogens, TKO and CyclinD1 RPE-1 cells proliferated faster than wild type RPE-1s (Figure 6—figure supplement 1A). 24 hr after mitogen-deprivation, wild type RPE-1s arrested in the G1 phase of the cell cycle (Figure 6C), whereas both, TKO and CyclinD1 cultures maintained a normal cell cycle profile up to 72 hr (Figure 6D and E, respectively). Upon prolonged mitogen starvation for more than 4 days, TKO and CyclinD1 cells started to die (Figure 6—figure supplement 1B). Cell death could not be avoided by overexpression of Bcl2 (Figure 6—figure supplement 1C, D and E) nor by additional inactivation of TP53 (Figure 6F,G and Figure 6—figure supplement 1F). Apparently, RPE-1 cells lacking the G1/S phase checkpoint were very sensitive to apoptosis in the absence of mitogenic stimulation, which could not easily be suppressed. Nonetheless, we could follow the behavior of these cells during the first days of mitogen deprivation. Similar to TKO-Bcl2 MEFs, p53-proficient TKO-Bcl2 RPE-1s showed induction of DNA DSBs after one day of mitogen starvation. In contrast, no DSB induction was seen in TKO-Bcl2-p53KO RPE-1s (Figure 6H). Similarly, mitogen starvation hardly induced DSBs in CyclinD1-Bcl2-p53KO RPE-1s compared to CyclinD1-Bcl2 RPE-1s (Figure 6I). Mitogen-deprived TKO-Bcl2 and CyclinD1-Bcl2 RPE-1s showed a decrease in the level origin firing (Figure 6J,K). In contrast, TKO-Bcl2-p53KO and CyclinD1-Bcl2-p53KO RPE1-s maintained normal levels of origin firing after mitogen deprivation (Figure 6J,K), although there is no difference in replication fork speed upon mitogen-deprivation (Figure 6—figure supplement 1G and F).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/37868/elife-37868-fig6-v2.jpg)
+
+**Figure 6.:** (A) Rb, Rbl1 and Rbl2 protein levels in wt and TKO RPE-1s. Anti-actin was used as a loading control. (B) Cyclin D1 protein levels in wt and CyclinD1 RPE-1s. Anti-actin was used as a loading control. (C, D, E) Cell cycle distribution based on propidium iodide content of wt (C), TKO (D) and CyclinD1 (E) RPE-1s in the absence of 10% FCS for the indicated hours. (F) p53 and p21Cip1 protein levels in wt, Bcl2-p53KO and TKO-Bcl2-p53KO RPE-1s. Anti-actin was used as a loading control. (G) p53 and p21Cip1 protein levels in wt, CyclinD1-Bcl2 and CyclinD1-Bcl2-p53KO RPE-1s. Anti-actin was used as a loading control. (H, I) Tail moments obtained from TKO-Bcl2, TKO-Bcl2-p53KO (H) and CyclinD1-Bcl2 and CyclinD1-Bcl2-p53KO (I) RPE1-s cultured in the presence or absence of 10% FCS (1 day). Box plots represent interquartile ranges, horizontal bars denote the median and points are outliers. For each condition, more than 50 cells were analyzed using the CASP software. Significance is indicated (1-way Anova nonparametric Kruskal-Wallis test). (J, K) Quantification of origin firing in TKO-Bcl2, TKO-Bcl2-p53KO (J) and CyclinD1-Bcl2 and CyclinD1-Bcl2-p53KO (K) RPE1-s cultured in the presence or absence of 10% FCS for 1 day. 1st label and 2nd label origins are shown as percentage of all labelled tracks (from two independent experiments). Significant differences between average values are indicated (Student’s t-test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/37868/elife-37868-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Incucyte growth curves of wt (black), TKO (blue) en CyclinD1 RPE1-s (red) in mitogen proficient conditions. (B) Representative images of wt, TKO and CyclinD1 RPE-s in the presence of FCS and after 4 days of FCS deprivation. (C) Bcl2 protein levels of wt, TKO, wt-Bcl2 and TKO-Bcl2 RPE1-s. Anti-actin was used as loading control. (D) Bcl2 protein levels of CyclinD1, CyclinD1-Bcl2 and CyclinD1-Bcl2-p53KO RPE1-s. Anti-actin was used as loading control. (E) Representative images TKO-Bcl2 and CyclinD1-Bcl2 RPE-s in the presence of 10% FCS and after 4 days of 10% FCS deprivation. (F) Representative images of TKO-Bcl2-p53KO and CyclinD1-Bcl2-p53KO RPE1-s in the presence of FCS and after 4 days of 10% FCS deprivation.
+
 These results show that also in human cells inactivation of p53 in G1/S phase checkpoint defective cells reduced the accumulation of DNA DSBs following mitogen deprivation, possible by rescuing the level of origin firing.
 
-## The role of p53 loss in tumor development
+### The role of p53 loss in tumor development
 
 To investigate whether the accumulation of DNA DSBs also operates in vivo to impede tumor growth, we studied retinoblastoma development in chimeric mice generated by blastocyst injection of Rb-/-Rbl2-/-embryonic stem cells (ESCs) (Dannenberg et al., 2000). Remarkably, murine retinoblastomas showed pronounced p53 and γ-H2AX staining (Figure 7A). However, by sequencing, p53 appeared wild-type in a separate series of seven tumors, indicating that in this model retinoblastomas did activate the DDR but could still colonize the entire eyeball. To study if p53 inactivation accelerates tumorigenesis, we inactivated p53 in Rb-/- Rbl2-/- ESCs using CRISPR/Cas9-mediated gene disruption. However, no chimeric animals were obtained from Rb-/-Rbl2-/-p53-/- ESCs, likely indicating that combined ablation of the Rb and p53 pathways is incompatible with embryonic development.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/37868/elife-37868-fig7-v2.jpg)
 
-**Figure 7.:** in vivo.(A) Examples of HE and immunohistochemical stainings for γ-H2AX and p53 of two retinoblastomas from Rb chimeric mice. (-/-Rbl2-/-B) Tumor weight of Rb (black) and -/-Rbl2-/-Rb (red) teratomas 20 days after injection of ESCs in nude mice. Black dot marked with an asterisk (*) indicates the only tumor with high levels of infiltrating neutrophils. (-/-Rbl2-/-p53-/-C) Tail moments of Rb (black) and -/-Rbl2-/-Rb (red) teratomas plotted against the tumor weight. Spearman’s correlation coefficient between tail moment and tumor weight is −0.78. Black dot marked with an asterisk (*) indicates the only tumor with high levels of infiltrating neutrophils. One -/-Rbl2-/-p53-/-Rb (red) teratoma could not be analyzed for DNA DSBs due to the small tissue size. For each teratoma, more than 50 cells were analyzed using the CASP software. (-/-Rbl2-/-p53-/-D) Examples of HE and immunohistochemical staining for γ-H2AX of Rb and -/-Rbl2-/-Rb teratomas. Scale bar is 50 µm. (-/-Rbl2-/-p53-/-E) Schematic model for how p53 inactivation reduces DNA DSBs in mitogen-deprived cells lacking the G1/S checkpoint. Cells that lost the G1/S phase checkpoint suffer from replication stress leading to DNA DSBs. Activation of p53 and p21Cip1 inhibits CDK activity and thereby inhibits the firing of new origins leading to more DNA damage and establishment of the G2-like arrest (left panel). Inactivation of p53 and therefore its downstream protein p21Cip1 increases CDK activity and allows origins to fire. Restored levels of origin firing rescues stalled forks, causing less DNA DSB formation and enabling proliferation (right panel).
+**Figure 7.:** (A) Examples of HE and immunohistochemical stainings for γ-H2AX and p53 of two retinoblastomas from Rb-/-Rbl2-/- chimeric mice. (B) Tumor weight of Rb-/-Rbl2-/- (black) and Rb-/-Rbl2-/-p53-/- (red) teratomas 20 days after injection of ESCs in nude mice. Black dot marked with an asterisk (*) indicates the only tumor with high levels of infiltrating neutrophils. (C) Tail moments of Rb-/-Rbl2-/- (black) and Rb-/-Rbl2-/-p53-/- (red) teratomas plotted against the tumor weight. Spearman’s correlation coefficient between tail moment and tumor weight is −0.78. Black dot marked with an asterisk (*) indicates the only tumor with high levels of infiltrating neutrophils. One Rb-/-Rbl2-/-p53-/- (red) teratoma could not be analyzed for DNA DSBs due to the small tissue size. For each teratoma, more than 50 cells were analyzed using the CASP software. (D) Examples of HE and immunohistochemical staining for γ-H2AX of Rb-/-Rbl2-/- and Rb-/-Rbl2-/-p53-/- teratomas. Scale bar is 50 µm. (E) Schematic model for how p53 inactivation reduces DNA DSBs in mitogen-deprived cells lacking the G1/S checkpoint. Cells that lost the G1/S phase checkpoint suffer from replication stress leading to DNA DSBs. Activation of p53 and p21Cip1 inhibits CDK activity and thereby inhibits the firing of new origins leading to more DNA damage and establishment of the G2-like arrest (left panel). Inactivation of p53 and therefore its downstream protein p21Cip1 increases CDK activity and allows origins to fire. Restored levels of origin firing rescues stalled forks, causing less DNA DSB formation and enabling proliferation (right panel).
 
 As an alternative in vivo readout, we injected Rb-/-Rbl2-/- and Rb-/-Rbl2-/-p53-/- mouse ESCs under the skin of nude mice. Rb-/-Rbl2-/- ESCs developed a teratoma in 4 out of 6 mice; in contrast, Rb-/-Rbl2-/-p53-/- ESCs developed a tumor in 6 out of 6 injected mice. On average the Rb-/-Rbl2-/-p53-/- tumors were larger than Rb-/-Rbl2-/- tumors (Figure 7B), although there is a 11% chance that the difference is accidental (p=0.1116, unpaired t-test). Teratomas of both genotypes mainly showed early neuronal differentiation and stained positive for the replication stress marker γ-H2AX (Figure 7C), suggesting that all tumors were suffering from replication stress. To assess the presence of DSBs, we performed a neutral comet assay on teratoma tissues. Three of the four Rb-/-Rbl2-/- teratomas showed an increase in tail moment compared to the tail moments of Rb-/-Rbl2-/-p53-/- teratomas (Figure 7D). Of note, unlike the other tumors, the largest Rb-/-Rbl2-/- tumor (marked with asterisk in Figure 7B,D) had high levels of infiltrating neutrophils, which possibly explains its bigger size as well as the low level of DNA DSBs.
 
@@ -121,7 +157,374 @@ Finally, our results are likely related to intriguing observations that at least
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (mus musculus) male</td>
+      <td>TKO-Bcl2 mouse embryonic fibroblasts (MEFs)</td>
+      <td>PMID:16338659</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mus musculus) male</td>
+      <td>TKO-Bcl2-p53KO MEFs</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Knockout of p53 in TKO-Bcl2 MEFs, described in the materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (mus musculus) male</td>
+      <td>TKO-p53RNAi MEFs</td>
+      <td>PMID:16338659</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mus musculus) male</td>
+      <td>TKO-p53KO MEFs</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Knockout of p53 in TKO MEFs, described in the materials and methods</td>
+    </tr>
+    <tr>
+      <td>cell line (mus musculus) male</td>
+      <td>Rb-/-Rbl2-/- mESCs</td>
+      <td>PMID: 15574596</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mus musculus) male</td>
+      <td>Rb-/-Rbl2-/-p53-/- mESCs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Knockout of p53 in Rb-/-Rbl2-/-, described in the materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (homo sapiens) female</td>
+      <td>RPE-1 hTERT</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-4000</td>
+      <td>RRID:CVCL_4388</td>
+    </tr>
+    <tr>
+      <td>Cell line (homo sapiens) female</td>
+      <td>TKO RPE-1s</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Knockout of Rb, Rbl1 and Rbl2 in RPE-1-hTERT cells, described in material and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (homo sapiens) female</td>
+      <td>TKO-Bcl2 RPE-1s</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Knockout of Rb, Rbl1, Rbl2 and overexpression of Bcl2 in RPE-1-hTERT cells, described in material and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (homo sapiens) female</td>
+      <td>TKO-Bcl2-p53KO RPE-1s</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Knockout of Rb, Rbl1, Rbl2 and TP53 and overexpression of Bcl2 in RPE-1-hTERT cells, described in material and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (homo sapiens) female</td>
+      <td>CyclinD1 RPE-1s</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Overexpression of non-degradable CyclinD1 (T286A) in RPE-1-hTERT cells, described in material and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (homo sapiens) female</td>
+      <td>CyclinD1-Bcl2 RPE-1s</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Overexpression of non-degradable CyclinD1 (T286A) and Bcl2 in RPE-1-hTERT cells, described in material and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (homo sapiens) female</td>
+      <td>CyclinD1-Bcl2-p53KO RPE-1s</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Knockout of TP53 and overexpression of non-degradable CyclinD1 (T286A) and Bcl2 in RPE-1-hTERT cells, described in material and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Brdu (recognizing CldU)</td>
+      <td>Bioconnect</td>
+      <td>Cat# OBT0030G Clone BU1/75</td>
+      <td>RRID: AB_609567 (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BrdU (recognizing IdU)</td>
+      <td>Becton Dickinson</td>
+      <td>Cat# 347580 Clone B44</td>
+      <td>RRID: AB_10015219 (1/750)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse p53</td>
+      <td>Abnova Corporation</td>
+      <td>Cat# MAB9657 Clone IMX25</td>
+      <td>RRID: AB_10756365 (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse/ human p21</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-397 C19</td>
+      <td>RRID: AB_632126 (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p27</td>
+      <td>BD Transduction Laboratory</td>
+      <td>Cat# 554069</td>
+      <td>RRID: AB_395225 (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CDK4</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-260 C22</td>
+      <td>RRID: AB_631219 (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Actin</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-1616</td>
+      <td>RRID:AB_630836 (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pChk1 Ser 317</td>
+      <td>Bethyl</td>
+      <td>Cat# A304-673A</td>
+      <td>RRID: AB_2620868 (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chk1</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-8408 G4</td>
+      <td>RRID: AB_627257 (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rb1</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-50 C15</td>
+      <td>RRID: AB_632339 (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rbl1</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-318 C18</td>
+      <td>RRID: AB_2175428 (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rbl2</td>
+      <td>Lab Vision</td>
+      <td>Cat# OP117 Clone AB1</td>
+      <td>RRID: AB_145257 (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cyclin D1</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-753 H296</td>
+      <td>RRID: AB_2070433 (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>human p53</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 554293 Clone DO-1</td>
+      <td>RRID: AB_395348 (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Bcl2</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-509</td>
+      <td>RRID: AB_626733 (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2'-deoxyadenosine monohydrate (dA)</td>
+      <td>Jena Bioscience</td>
+      <td>N-DN-1001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2'-deoxycytidine monohydrochloride (dC)</td>
+      <td>Jena Bioscience</td>
+      <td>N-DN-6352</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2'-deoxyguanosine monohydrate (dG)</td>
+      <td>Jena Bioscience</td>
+      <td>N-DN-1003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2'-deoxythymidine (dT)</td>
+      <td>Jena Bioscience</td>
+      <td>N-DN-6354</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cell Player 96-well kinetic caspase-3/7 reagent</td>
+      <td>Essen Bioscience</td>
+      <td>Cat# 4440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CldU</td>
+      <td>Sigma</td>
+      <td>Cat# C6891-100mg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IdU</td>
+      <td>Sigma</td>
+      <td>Cat# I7125-5g</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BrdU</td>
+      <td>Sigma</td>
+      <td>Cat# B5002-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxyurea (HU)</td>
+      <td>Sigma</td>
+      <td>Cat# H8627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propidium Iodide (PI)</td>
+      <td>Thermo fisher scientific</td>
+      <td>Cat# P3566</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Sigma</td>
+      <td>Cat# P7255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penincillin/ Streptomycin</td>
+      <td>Gibco/Life technologies</td>
+      <td>Cat# 15140122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>Cat# 11668030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polybrene</td>
+      <td>Sigma</td>
+      <td>Cat# H9268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluor-gel with TES buffer</td>
+      <td>Electron Microscopy Science</td>
+      <td>Cat# 17985–30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7</td>
+      <td>GraphPad Software</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop CS6</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com/products/photoshop.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator CS6</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com/products/illustrator.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio Lite Ver. 4.0</td>
+      <td>LI-COR Biosciences</td>
+      <td>https://www.licor.com/bio/products/software/image_studio_lite/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td></td>
+      <td>https://imagej.nih.gov/ij/download.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo software version 7.6.1</td>
+      <td>FlowJo, LCC</td>
+      <td>https://www.flowjo.com/solutions/flowjo/downloads</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Casplab</td>
+      <td>Casplab</td>
+      <td>http://casplab.com/download</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 MEFs were isolated from chimeric embryos as previously described (Dannenberg et al., 2000) and cultured in GMEM (Invitrogen), supplemented with 10% fetal calf serum (FCS), 0.1 mM nonessential amino acids (Invitrogen), 1 mM sodium pyruvate (Invitrogen), 100 µg/ml penicillin, 100 µg/ml streptomycin (Invitrogen) and 0.1 mM β-mercaptoeethanol (Merck) in the absence or presence of nucleoside (200 nM of Cytidine, Guanosine, Adenosine and Thymidine). TKO-Bcl2 overexpressing MEFs and TKO-p53RNAi were generated as described previously (Foijer et al., 2005). CRISPR/Cas9 technology was used to inactive Trp53 and Cdkn1a.
 
@@ -129,48 +532,48 @@ RPE-1 cells were kindly provided by J. Raaijmakers, who purchased the cells from
 
 For serum starvation experiments, cells were trypsinized and allowed to attach in the presence of serum for 4 hr. Subsequently, cells were washed with PBS and supplemented with serum free medium. To block progression into mitosis, cells were cultured in the presence of 250 ng/ml nocodazole. All cell lines have been tested for mycoplasma (PCR).
 
-## Constructs, transfections, lentiviral and retroviral infections
+### Constructs, transfections, lentiviral and retroviral infections
 
 The FUCCI constructs CSII-EF-MCS-mKO-hCdt1 (30/120) and CSII-EF-MCS-mAG-hGem (1/110) were kindly provided by A. Miyawaki (Sakaue-Sawano et al., 2008). The 19-mer Trp53 targeting sequence in pRetroSuper-RNAi-p53 is GTACATGTGTAATAGCTCC (Foijer et al., 2005). Gene specific guideRNAs (mouse Trp53: TACCTCTCTTTGCGCTCCCT (Platt et al., 2014); human RB TGAACGACATCTCATCT, human RBL1 TTTCGTGAACGTATAGAA, human RBL2 CGAGGTTGCTCCTCTTGA and human TP53 GACGCTAGGATCTGACTG) were annealed to generate short double-strand DNA fragments with four base pairs overhang (CACC and AAAC) compatible with ligation into the BbsI digested Cas9/CRISPR px330-puro plasmid. The px330-p53 guideRNA vector was transfected into MEFs using Polyethylenimine (PEI) transfections. The px330-Rb-, px330-Rbl1-, px330-Rbl2 and px330-p53 guideRNA vectors were transfected into RPE-1 cells using Lipofectamine 2000 (Invitrogen). Afterwards, RPE-1 cells were selected with 10 ug/ml puromycin for two days. Two specific guideRNAs targeting the mouse Cdkn1a gene were AGCGCAGATTGGTCTTCT and CCCGCAGCCGTGACGACC with four base pairs overhang (CACC and AAAC) compatible with ligation into the in BmsbI digested pLentiCRISPR v2 vector. The 21-mer oligos in pLKO.1 targeting Ppat were: #1: CCACATGCTTATGTATGTATA and #2: CCGGAGAAATTGTAGAAATAT. Corresponding empty vector (EV) was used as control. Lentiviral plasmids were co-transfected with the helper plasmids pMDLgpRRE, VSV-G and pRSV-Rec into HEK293T cells by PEI transfection. A pBABE-puro retroviral vector encoding a non-degradable form of Cyclin D1 (T286A) was kindly provided by R. Agami (Agami and Bernards, 2000). This retroviral vector was co-transfected with the helper plasmids puMCV-Gag pol MMLV and pCMV VSVG into HEK293T cells by PEI transfection. Both for lentiviral and retroviral transfections, forty-eight and sixty-two hours post transfection viral supernatants were filtered through 0.45 µm filter and used to infect MEFs in the presence of 4 µg/ml polybrene three times for 8–12 hr.
 
-## Growth curves and caspase assay
+### Growth curves and caspase assay
 
 The IncuCyte ZOOM instrument (Essen Bioscience) live cell imaging system was used to monitor cell growth. Cells were plated in a 96 Greiner micro clear plate and imaged every 4 hr. The default software parameters for a 96 well plate with a 10x objective were used for imaging. The IncuCyte software was used to calculate mean confluence from two non-overlapping bright phase images of each well.
 
 The IncuCyte ZOOM instrument in combination with the Cell Player 96-well kinetic caspase-3/7 reagent (Essen Bioscience) were used to identify apoptosis by caspase 3/7 activity. The software was used to calculate mean green fluorescence from two non-overlapping fluorescent images of each well. Green fluorescent confluency was normalized to phase contrast confluency to determine apoptosis.
 
-## Western blot analysis
+### Western blot analysis
 
 Cells were harvested and subsequently lysed for 30 min in RIPA (25 mM Tris-HCl pH 7.6; 150 mM NaCl; 1% NP-40; 1% Sodiumdeoxycholate and 0.1% SDS) or ELB (150 mM NaCl; 50 mM Hepes pH7.5; 5 mM EDTA; 0.1% NP-40) containing protease inhibitors (Complete, Roche). Protein concentrations were measured using the BCA protein assay kit (Pierce).
 
 The primary antibodies used were rabbit polyclonal phospho-Chk1 Ser317 (Bethyl), mouse monoclonal Chk1 (G4; Santa Cruz), goat polyclonal CDK4 (C22; Santa Cruz), rabbit polyclonal p21 (C19; Santa Cruz), mouse monoclonal p27 (BD Transduction Laboratory), goat polyclonal Rb (C15; Santa Cruz); rabbit polyclonal Rbl1 (C18; Santa Cruz), mouse monoclonal Rbl2 (CAS14; Lab Vision), mouse monoclonal p53 (IMX25; monosan; for detection of mouse p53), mouse monoclonal p53 (DO-1; BD Biosciences; for detection of human p53), γ-tubulin (GTU-88; Sigma), rabbit polyclonal Cyclin D1 (Santa Cruz; H296) and goat polyclonal CDK4 (C22; Santa Cruz). Secondary antibodies used were IR Dye 800CW Goat anti-Mouse IgG, Goat anti-Rabbit IgG and Donkey anti-Goat IgG (Licor) and HRP-conjugated Goat anti-Mouse and Goat anti-Rabbit (Dako).
 
-## Immunofluorescence
+### Immunofluorescence
 
 For Rad51 and γ-H2AX immunofluorescence staining, cells were cultured on cover slides, washed with PBS and fixed for 5 min using 4% paraformaldehyde (Merck). Cells were permeabilized by 0.1% Triton-X100 (sigma) in PBS for 5 min. Subsequently, cells were washed three times using staining buffer (0.15% glycine (Merck), 0.5% Bovine Serum Albumine (BSA, Sigma) in PBS) and incubated for 1 hr at room temperature in staining buffer. Cells were incubated for 4 hr and 1 hr with primary and secondary antibodies, respectively.
 
 For CldU and γ-H2AX immunofluorescence, cells were cultured on cover slides, incubated with CldU (100 mM) for 30 min, washed with PBS and fixed for 10 min using 70% EtOH. Cells were treated with MeOH for 5 min and incubated with 1.5 M HCl for 20 min. Subsequently, cells were blocked using PBS, 0.5% Tween, 0.25% BSA, 5% FCS for 30 min. Cells were incubated with primary and secondary antibodies for 2 hr and 1 hr, respectively in PBS, 0.5% Tween,0.25 BSA. Bleaching was prevented by Vectashield (Vetcor laboratories). The primary antibodies used were rat-anti-BrdU (Clone BU1/75, Novus Biologicals), rabbit polyclonal Rad51 (a gift from Prof. Roland Kanaar) and mouse monoclonal phosphorylated H2AX (Upstate) in 1:20, 1:2500 and 1:100 dilutions, respectively. Secondary antibodies used were Alexa 488-labeled Chicken-anti-Mouse, Alexa 568-labeled Goat-anti-Rabbit and Alexa 568-labeled Goat-anti-Rat antibodies (Molecular probes) and these were used in a 1:100 dilution. DNA was stained using To-Pro3 dye (Molecular probes).
 
-## DNA fiber analysis
+### DNA fiber analysis
 
 Cells were pulse-labelled with 25 μM CldU followed by 250 μM IdU for 20–40 min each. After labelling, cells were trypsinized and lysed in spreading buffer (200 mM Tris-Hcl pH 7.4, 50 mM EDTA and 0.5% SDS) before spreading on a microscope slide (Menzel-Gläser,Superfrost). Slides were fixed in methanol: acidic acid 3:1. Before immunodetection, slides were treated with 2.5 M HCl for 1 hr and 15 min. To detect CldU and IdU labelled tracts slide were incubated for 1 hr with rat-anti-Brdu (Clone BU1/75, Novus Biologicals; 1:500) and mouse-anti-BrdU (clone B44, Becton Diskinson; 1:750), respectively. Subsequently, slides were fixed with 4% paraformaldehyde for 10 min and incubated with Alexa 488-labeled goat-anti-mouse and Alexa 555-labeled goat-ant-rat (Molecular probes; 1:500) for 1 hr and 30 min. Pictures were taken with a Zeiss AxioObserver Z1 inverted microscope using a 63x lens equipped with a cooled Hamamatsu ORCA AG Black and White CCD camera and track lengths were analyzed with ImageJ software. Replication track lengths were calculated using the conversion factor 1 μm = 2.59 kb (Jackson and Pombo, 1998). The 1-way ANOVA (nonparametric Kruskal-Wallis test) was used for statistical analyses.
 
-## Time-lapse microscopy
+### Time-lapse microscopy
 
 Culture dishes were transferred to a heated stage (37°C) on a Zeiss Axiovert 200M inverted microscope. PhC (phase contrast) images (59 ms exposure) and fluorescent images (red: 500 ms and green 300 ms exposure) were captured with a 20x/0.25 Ph1 Achroplan objective in combination with 1.6 optovar every 30 min using a cooled Hamamatsu ORCA R2 Black and White CCD-camera and appropriate filter blocks to select specific fluorescence. Images were taken in 2 × 2 binning mode (672 × 512 pixels) and processed using AxioVision Rel. 4.7.2. software.
 
-## Flow cytometry
+### Flow cytometry
 
 MEFs cultured in the presence or absence of 10% FCS were labeled with BrdU (10 μM) for 1 hr, fixed in 70% EtOH and stained with Propidium Iodide (PI). Data acquisition was performed on a Beckman Coulter Cyan ADP and data analysis (cell cycle) was performed using FlowJo software version 7.6.1 (Tree Star, Ashland, OR, USA).
 
-## Comet assay
+### Comet assay
 
 Neutral comet assays were performed as described by Olive et al. (Olive and Banáth, 2006). Pictures of individual cells were taken with a Zeiss AxioObserver Z1 inverted microscope equipped with a cooled Hamamatsu ORCA AG Black and White CCD camera and analyzed with CASP software (http://www.casp.of.pl). The p-value was determined using 1-way ANOVA (nonparametric Kruskal-Wallis test).
 
-## Generation of chimeric mice and teratomas
+### Generation of chimeric mice and teratomas
 
 All experiments involving animals comply with local and international regulations and ethical guidelines (protocol 12026) and have been authorized by our local experimental animal committee at the Netherlands Cancer Institute (DEC-NKI). Rb-/-Rbl2-/- ESCs were generated previously (Dannenberg et al., 2004). These cells were injected into C57Bl/6 blastocysts (6 cells per blastocyst) to generate chimeric mice, which were monitored weekly for retinoblastoma development. Rb-/-Rbl2-/-p53-/- ESCs were generated using CRISPR/Cas9 technology. One million cells of both cell lines were injected into the flank of Balb/c nude mice and tumors were harvested 20 days later.
 
-## Histological and immunological analysis
+### Histological and immunological analysis
 
 Eyes and teratomas were removed immediately after euthanasia and fixed in 4% formaldehyde for at least 24 hr. For histological analysis, formaldehyde fixed tissues were embedded in paraffin, cut into 5 μm sections and stained with Hematoxilin and Eosin. The antibodies used were α-p53 (VectorLabs), α-p-ATM (Cell signaling), α−γ−H2AX (Cell signaling), α-p-CHK2 (Cell signaling) and α-p-ATM (Genetex).

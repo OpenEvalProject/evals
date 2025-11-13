@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/016xsfp80 Radboud University Nijmegen, Donders Institute for Brain, Cognition and Behaviour Nijmegen Netherlands
+1. Radboud University Nijmegen, Donders Institute for Brain, Cognition and Behaviour Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
 
 † Corresponding author
 
@@ -40,7 +40,7 @@ Human observers (N = 35) were exposed to four dots presented in rapid succession
 
 We hypothesized that presenting only one item of the sequence would elicit anticipatory activity at the omitted sequence locations that followed the presented stimulus (i.e., successor states), but not at the sequence location that preceded the sequence item (i.e., predecessor states). For instance, during partial ‘- B - -’ trials, we expected activity at omitted sequence locations C (+1) and D (+2), but not at omitted location A (–1).
 
-## Stimulus sequences elicit spatially specific responses in V1
+### Stimulus sequences elicit spatially specific responses in V1
 
 To test our prediction, we first selected V1 sub regions of interest (ROIs) that responded selectively to the eight stimulus locations based on an independent localizer session (Figure 1C). Stimulus-response profiles of these eight (retinotopic) ROIs show little coactivation of neighboring locations in the visual field which allows for a precise investigation of location-specific activity (Figure 2A). Unsurprisingly, during full sequence trials, BOLD activity at the sequence locations receiving bottom-up visual input was markedly enhanced compared to non-stimulated control locations (Figure 2B). Population-based receptive field (pRF) data that was acquired for a subset of participants confirmed that the selected voxels correspond to the retinotopic stimulus locations as expected. For all analyses, we subtracted the average BOLD activity of all control locations from the sequence location activity (Figure 3A), which provides an accurate measure of stimulus-specific responses independent of global signal fluctuations for instance due to attention.
 
@@ -52,7 +52,7 @@ To test our prediction, we first selected V1 sub regions of interest (ROIs) that
 
 **Figure 3.:** (a) BOLD activity during full sequence trials. (b) Schematic of all partial sequence trials (left) illustrating the omission of different predecessor (purple), or successor (orange) sequence locations. Group averaged (n=35) V1 activity during partial sequence trials (right) shows enhanced activation of successor locations compared to predecessor locations. (c) Group averaged V1 activity for individual partial sequence trials. Error bars denote ± s.e.m.; two-tailed t test, ***p < 0.001; **p < 0.01; *p < 0.05, uncorrected for multiple comparisons.
 
-## Anticipated stimulus sequences in V1
+### Anticipated stimulus sequences in V1
 
 Briefly flashing individual dots during partial sequence trials, while omitting the other dots of the sequence, allowed us to probe anticipatory activity at the successor and predecessor locations (Figure 3B). In line with our predictions, V1 BOLD activity was indeed enhanced at the non-stimulated successor locations compared to the non-stimulated predecessor locations (averaged across all partial trials and sequence locations; t(34) = 6.45, p = 2.23 × 10–7). The same pattern of future-directed prediction was also evident from the visual inspection of BOLD activity for all partial sequence trials separately (Figure 3C). Further, these results of greater activity for successor compared to predecessor activity also holds when comparing individual sequence locations without averaging (i.e., comparing non-stimulated location B when successor vs. predecessor, t(34) = 5.72, p = 2.02 × 10–6; and location C when successor vs. predecessor, t(34) = 3.13, p = 0.0035).
 
@@ -60,7 +60,7 @@ The activity decay toward distant future locations was formally tested by fittin
 
 One might argue that participants with stronger predictions toward future locations would perform better at the behavioral detection task. However, no such correlation between individual V1 BOLD activity and task accuracy was found in an across-subject correlation analysis (see Materials and methods, spearman r = 0.05; p = 0.769).
 
-## Successor-like representation in V1
+### Successor-like representation in V1
 
 Next, we sought to formally test how well the observed data fits the prediction of the SR, namely an exponential decay of states farther into the future.
 
@@ -72,13 +72,21 @@ For each subject, we fitted partial sequence trials with an SR model (Figure 4A)
 
 Our results show that anticipatory activity in V1 is best described by the predictions of the SR (Figure 4C; SR vs. CO t(34) = –2.29, p = 0.028). Additionally, both SR and CO describe the data better than the null model (SR vs. H0 t(34) = –8.25, p = 1.24 × 10–9; CO vs. H0: t test t(34) = –7.59, p = 8.22 × 10–9).
 
-## SR in hippocampus
+### SR in hippocampus
 
 The predictive neural representation in the form of a SR was originally postulated for the hippocampus (Stachenfeld et al., 2017). We therefore wanted to investigate whether the predictive representations that we observed in V1 were also present in the hippocampus. Note that while the hippocampal formation and nearby entorhinal cortex might feature a coarse representation of visual space (Killian et al., 2012; Knapen, 2021; Nau et al., 2018b; Silson et al., 2020), it does not feature the same fine-scale retinotopic organization present in V1 (Dumoulin and Wandell, 2008). Therefore, instead of focusing on univariate BOLD activity within certain hippocampal subregions, we focused on population activity patterns across the entire hippocampus using a decoding approach similar to previous studies (Ekman et al., 2022; Kok and Turk-Browne, 2018; Kurth-Nelson et al., 2016; Russek et al., 2021; Schapiro et al., 2012).
 
 In keeping with the V1 analysis, we used the independent stimulus localizer to extract location-specific activity patterns in the hippocampus and then tested during partial sequence trials to what extent location-specific representations were reactivated. Specifically, we trained a pattern classifier to distinguish between the eight dot locations within the localizer. Before applying the trained classifier to omission trials of the main task (see Materials and methods), we confirmed that cross-validated decoding accuracies within the localizer were above chance-level to ensure that the hippocampal pattern shows a reliable representation of space.
 
 Within localizer decoding accuracy results confirmed that hippocampus has a coarse representation of the eight stimulus locations (Figure 5B) within the localizer (two-sided one-sample t test; t(34) = 3.28, p = 0.002; cross-validated accuracy = 15 ± 3.6%, mean ± s.d.; see Materials and methods). Notably, compared to V1 (Figure 2A), within localizer accuracy was relatively low and as a consequence tuning curves in hippocampus appeared less sharp (Figure 5C). In order to maximize sensitivity for the hippocampus, we averaged classification evidence across successor and predecessor locations. Non-averaged results can be found in Figure 5—figure supplement 1.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78904/elife-78904-fig5-v1.jpg)
+
+**Figure 5.:** (a) Hippocampus region of interest (green). (b) A pattern classifier was trained to distinguish between the eight stimulus locations during a perceptual localizer. Resulting stimulus-response profiles reveal that hippocampus distinguishes between individual stimulus locations. (c) Averaged (n=35) tuning profiles shifted to one location. (d) A classifier that was trained on the perceptual localizer was applied to partial sequence trials during the main task to probe whether hippocampal representations skew toward predecessor locations (purple), or successor locations (orange). (e) Classifier evidence, averaged across possible successor and predecessor locations, shows that hippocampus predominantly represents future (successor) stimulus locations over predecessor locations. (f) Since the hemodynamic properties of hippocampal functions are not well understood, the decoding analysis was additionally performed in a time-resolved manner and fitted with a canonical hemodynamic function to estimate the time to peak. The difference time-course (successor minus predecessor) showed a temporally distinct peak around 4.7 s indicating that the future-directed prediction occurs as transient response to the partial stimulus input and not as a sustained signal throughout the trial. Error bars denote ± s.e.m.; **p < 0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78904/elife-78904-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Group averaged (n=35) hippocampus classification evidence during partial sequence trials shows enhanced activation of successor locations compared to predecessor locations. (b) Model comparison favors successor-like representation in hippocampus. Competing model predictions were fitted to partial sequence trial data of each individual participant. Comparison of model fits showed that the data is most in line with the successor representation (lower BIC values correspond to a better fit). A null model (H0), resembling no prediction of past and future locations was included in the model comparison as baseline. Error bars denote ± s.e.m.; BIC, Bayesian Information Criterion (taking into account that the H0 model has fewer parameters); two-tailed t test, ***p < 0.001; **p < 0.01; *p < 0.05, uncorrected for multiple comparisons.
 
 Applying the trained classifier to partial sequence trials of the main task, we asked whether hippocampus would preferentially reactivate successor or predecessor locations (Figure 5D). To answer this question, we first subtracted the probabilistic classifier evidence for the control locations from the classifier evidence of the sequence locations. Consequently, values greater than 0 reflect evidence for the reactivation of sequence representations, while values smaller than 0 reflect a relative suppression of sequence locations. After that we averaged the evidence across all successor and predecessor locations, respectively, and tested for differences across participants. Our results reveal that hippocampus representations were preferentially biased toward successor locations (Figure 5E; paired-sample t test, t(34) = 2.74, p = 0.009), mirroring the results found in V1.
 
@@ -90,7 +98,7 @@ In order to probe the relationship between hippocampus and V1 successor reactiva
 
 One could ask whether our findings are specific to V1 and hippocampus, or widespread throughout the brain. In order to answer this question, we repeated the analysis for low-level visual area V2. In contrast to V1, no predictive effects were found in area V2. V2 BOLD activity was not enhanced at the non-stimulated successor locations compared to the non-stimulated predecessor locations (averaged across all partial trials and sequence locations; t(34) = 1.41, p = 0.168).
 
-## Hippocampal codes preserve spatiotemporal tuning
+### Hippocampal codes preserve spatiotemporal tuning
 
 In contrast to V1, hippocampal representations are not inherently retinotopic and feature only a coarse representation of visual space (Knapen, 2021; Nau et al., 2018b; Silson et al., 2021). Instead, hippocampal place cells provide a detailed representation of the allocentric position in an environment. However, more recently, the intriguing picture emerged that hippocampus also contributes to a more general organization of information by representing non-spatial aspects of experience in a map-like way (Constantinescu et al., 2016; Garvert et al., 2017; Stachenfeld et al., 2017), similar to the representation of space (Aronov et al., 2017).
 
@@ -138,15 +146,15 @@ In conclusion, our data show that anticipatory activity in early visual cortex a
 
 ## Materials and methods
 
-## Preregistration
+### Preregistration
 
 The experimental design, data analyses, and hypotheses were all preregistered at Open Science Framework (https://osf.io/f8dv9/) prior to data collection.
 
-## Participants
+### Participants
 
 Thirty-seven right-handed subjects participated in the fMRI study. Two participants were excluded based on predetermined performance and motion criteria during scanning (error rate/relative motion three standard deviations above the group mean). The final sample included 35 subjects (20 females, mean age = 27 years). Target sample size was decided prior to data collection based on a power analysis (two-sided paired t test, power = 80%, Cohen’s d ≥ 0.5 and α = 0.05). Participants gave written informed consent in accordance with the institutional guidelines of the local ethical committee (CMO region Arnhem-Nijmegen, The Netherlands) and received monetary compensation for their participation. All participants had normal or corrected-to-normal visual acuity.
 
-## Stimuli
+### Stimuli
 
 Participants viewed a sequence of four white dots on a black background. Dot locations were sampled from eight possible locations (Figure 1B). The center of each dot location was 7 degrees visual angle (dva) away from the central white fixation cross (0.5 dva) and the locations were equally spaced around the center (distance in polar angle from the vertical line: 22.5°, 67.5°, 112.5°, 157.5°, 202.5°, 247.5°, 292.5°, and 337.5°, see Figure 1B). The dots had a diameter of 1.2 dva. Stimulus sequences were shown on an MRI safe LCD screen (BOLDscreen 32, 1920 × 1080 pixel resolution, 60 Hz refresh rate). Participants were positioned 134 cm away from the screen and viewed the stimuli via a mirror on top of the head coil.
 
@@ -156,7 +164,7 @@ Sequences were constructed such that each of the eight locations served as a sta
 
 Note that because within each dot sequence, temporal order and spatial distance were not perfectly decorrelated (e.g., the second sequence dot was always farthest apart from the starting dot), it is not possible to estimate the combined influence of the SR model and the spatial coactivation model on the observed BOLD activity.
 
-## Experimental design
+### Experimental design
 
 The experiment lasted a total of 2 hr and consisted of three blocks (i) learning, (ii) main task, and (iii) a stimulus localizer. During the learning part, participants were familiarized with one of the eight sequences. The full sequence, consisting of four successively presented dots A-B-C-D, was shown 352 times outside and 160 times inside the scanner. In order to maintain participants’ attention during the learning part, there was a delay detection task on 50% of the trials. Participants were instructed to detect a timing delay of the last dot for which they had 1 s to respond. After every 30 trials, participants were shown their aggregated detection accuracy. During the initial learning phase outside the scanner, participants received additional feedback after each trial on whether their response was correct or incorrect through changes in the color of the fixation cross (green for correct and red for incorrect answers). No trial-wise feedback was given inside the fMRI. Participants were instructed to maintain fixation throughout the experiment and eye movements were measured with an Eyelink 1000 eye-tracker system (SR Research, Ontario, Canada; 1000 Hz sampling rate).
 
@@ -168,15 +176,15 @@ After the main task, we ran a functional localizer (~16 min) where each dot was 
 
 For a small subset of N = 7 participants, after the localizer, we additionally presented moving bar stimuli, in order to map the pRFs of voxels in early visual cortex. During these runs, bars containing full-contrast flickering checkerboards (2 Hz) moved across the screen in a circular aperture with a diameter of 20°. The bars moved in eight different directions (four cardinal and four diagonal directions) in 20 steps of 1°. Four blank fixation screens (10.8 s) were inserted after each of the cardinally moving bars. Throughout each run (5.76 min), a colored fixation dot was presented in the center of the screen, changing color (red to green and green to red) at random time points. Participants’ task was to press a button whenever this color change occurred. Participants performed four identical runs of this task.
 
-## MRI acquisition
+### MRI acquisition
 
 Functional and anatomical MRI data were acquired on a 3 T PrismaFit scanner (Siemens AG, Healthcare Sector, Erlangen, Germany) using a 32-channel head coil. The protocol included a T1-weighted anatomical scan and five functional runs. The anatomical scan was acquired with a Magnetization Prepared Rapid Acquisition Gradient Echo sequence (MP-RAGE; TR = 2300 ms, TI = 1100 ms, TE = 3 ms, flip angle = 8°, 1 × 1 × 1 mm3 isotropic). To acquire the functional images, we used a T2*-weighted multiband 4 (Moeller et al., 2010) sequence (TR = 1500 ms, TE = 39 ms, flip angle = 75°, 2 × 2 × 2 mm3, 68 slices). The five functional runs comprised of one learning run, three main task runs, and one localizer run. For two subjects only two main task runs were acquired because of time constraints. Seven participants participated in a previous study in which they completed four runs of pRF mapping.
 
-## fMRI preprocessing
+### fMRI preprocessing
 
 MRI data were preprocessed using FSL (version 6.00; FMRIB Software Library) (Smith et al., 2004). We applied brain extraction using BET, motion correction using MCFLIRT, temporal high-pass filtering (100 s) and spatial smoothing (Gaussian kernel, FWHM = 5 mm). All analyses were carried out in native subject space. The first three volumes of each run were discarded to allow for signal stabilization. Registration of the functional images to the anatomical image was performed with FLIRT boundary-based registration. The anatomical image was registered to the MNI152 T1 2 mm standard space template (linear registration, 12 degrees of freedom).
 
-## ROI selection
+### ROI selection
 
 V1 and hippocampus ROIs were determined using the automatic cortical parcellation provided by Freesurfer (Fischl, 2012) based on individual T1 images. Anatomical V1 and hippocampus masks were then transformed into native space using linear transformation. For V1, we used a preregistered voxel selection method to determine V1 subpopulations that are most responsive to individual stimulus locations.
 
@@ -184,23 +192,27 @@ First, the localizer data were fitted with a voxel-wise general linear model (GL
 
 Second, for each location, we calculated the GLM contrast by comparing one location to all other locations and selected the 25 most selective voxels (highest z-values). Third, we removed voxels from the selection that were selective for multiple dot locations. Finally, we determined the lowest number of selective voxels per region and removed the least active voxels from all other locations until all V1 subpopulations had the exact same number of selected voxels per location. This procedure was chosen to rule out the possibility that potential activity differences across locations could be attributed to different number of voxels per region. Across subjects, we selected on average 22.05 voxels (SD = 2.88) per location.
 
-## V1 BOLD amplitude modulation
+### V1 BOLD amplitude modulation
 
 A GLM for the main task was created with the following regressors: 8 regressors for each single dot trial (4 sequence dots and 4 control dots), 1 regressor for the full sequence trial, 1 regressor of no interest to model the instructions and the feedback at the end of a run and 24 motion regressors (6 standard and 18 extended FSL motion parameters, i.e., the derivatives of the standard motion parameters, the squares of standard motion parameters, and the squares of the derivatives). Note that the control dot trials in the main task were modeled in the GLM, but treated as regressors of no interest. The model was convolved with a single gamma hemodynamic response function. Nine contrasts were set up that tested which voxels were more responsive to presentation of a single dot (eight contrasts, one for each dot) or the full sequence (one contrast) compared to baseline. The GLM was fit to each run separately and resulting beta estimates were averaged across runs for each participant. In order to obtain an estimate of stimulus-specific activity (Figure 2B), we averaged the activity at the four control ROIs and subtracted it from the activity at the sequence ROIs.
 
-## Correlation with behavior
+### Correlation with behavior
 
 In order to relate SR representations to behavior, we first calculated individual V1 BOLD differences for all successor versus all predecessor locations to get an estimate for how much participant’s predictions were skewed toward future locations. We then correlated these values with behavioral accuracy across subjects using Spearman correlation.
 
-## V1 model comparison
+### V1 model comparison
 
 For each participant, V1 BOLD activity from the partial trials was fitted with three models, SR, coactivation (CO), and a null-model (H0). The resulting root mean square error (RSME, lower values = better fit) between model fit and observed data was then tested across participants for significance using paired-sample t tests to address the question whether one model prediction describes the underlying data better than competing models.
 
-The model prediction of the SR is based on the task structure, formalized in a transition matrix T of the sequence A-B-C-D (Figure 4). The SR matrix M is then calculated as:M=I- γT-1
+The model prediction of the SR is based on the task structure, formalized in a transition matrix $T$ of the sequence A-B-C-D (Figure 4). The SR matrix $M$ is then calculated as:
 
-where I is the identity matrix and γ∈ [0,1] is the discount factor or predictive horizon. During model fitting, γ was a free parameter, meaning that instead of using a fixed value, individual γ values were determined for each participant. Here, larger values of γ result in a smaller exponential decay of future states. The model prediction of the CO model is based on the CO of events. In contrast to SR, the task structure is non-directed and off-diagonal values in the CO model are constant and modulated in amplitude by a free multiplicative parameter ω. The H0 (null) model serves as a baseline that assumes no off-diagonal (predictive) activity. In order to be interpretable any winning model should outperform the H0 model. The diagonal values in all three models reflect the bottom-up stimulation induced by the single dot of the partial trials.
+$$
+M=I- \gammaT^{-1}
+$$
 
-## Hippocampal decoding
+where I is the identity matrix and $\gamma\in [0,1]$ is the discount factor or predictive horizon. During model fitting, γ was a free parameter, meaning that instead of using a fixed value, individual γ values were determined for each participant. Here, larger values of γ result in a smaller exponential decay of future states. The model prediction of the CO model is based on the CO of events. In contrast to SR, the task structure is non-directed and off-diagonal values in the CO model are constant and modulated in amplitude by a free multiplicative parameter ω. The H0 (null) model serves as a baseline that assumes no off-diagonal (predictive) activity. In order to be interpretable any winning model should outperform the H0 model. The diagonal values in all three models reflect the bottom-up stimulation induced by the single dot of the partial trials.
+
+### Hippocampal decoding
 
 The decoding analysis was performed with scikit-learn (Pedregosa et al., 2011). Individual voxel time courses were low-pass filtered using a Savitzky-Golay filter with a window length of 5 TRs and polynomial order of 3 (Savitzky and Golay, 1964) and normalized to z-scores. Volumes for individual localizer trials were averaged between 3 and 13.5 s to capture only stimulus-related BOLD activity. A logistic regression classifier (default values, L2 regularization; C = 1) was trained to distinguish between eight stimulus locations during the independent localizer run. Before applying the trained classifier to the main task, we confirmed that the classifier was indeed able to distinguish between stimulus locations within the localizer. To this end, we performed a leave-one-out cross-validation and tested the decoding accuracy against chance level (1/8 = 12.5 %) across subjects using a one-sample t test. In addition to a binary classifier output for each class, we also looked at the probabilistic output. For each sample in the localizer test set, we obtained eight probability values, one for each class. We refer to the classifier probability as classifier evidence, as the probability reflects the evidence that a particular class is represented. For each participant, probability values were averaged across trials to obtain location-specific response profiles.
 
@@ -208,11 +220,11 @@ Next, we trained the classifier on all localizer trials and applied it to indivi
 
 Finally, in order to rule out that the chosen time window had any influence on the results, we repeated the decoding analysis in a time-resolved manner, repeating the steps above for each volume from 0 to 13.5 s separately. Fitting a standard hemodynamic response function (hrf) revealed a transient decoding evidence peak at around 4.7 s.
 
-## Hippocampus and V1 tuning
+### Hippocampus and V1 tuning
 
 The tuning analysis investigates coactivation pattern during the localizer and focuses on the four locations that were part of the stimulus sequence in the preceding main task. Classifier evidence values within the localizer were averaged and sorted to reveal potential coactivation (tuning) pattern of sequence locations. Three tuning patterns were considered and tested: (i) temporal tuning, assuming a linear decay from the currently presented stimulus toward location that where farther in the past and future (two free parameters, slope, and intercept), (ii) spatial tuning, assuming a linear decay from the current stimulus toward other stimulus locations modulated by spatial distance (two free parameters, slope, and intercept), and (iii) a baseline no-coactivation pattern. Note that the latter model was considered because V1 tuning curves were rather sharp with little activity spread to immediate neighboring locations (5.4° apart; Figure 2A) and locations in the current analysis were 9.9° apart. For each participant, aggregated classifier evidence was fitted using three tuning patterns and resulting errors were compared across subjects to determine the best-fitting pattern. Fitting was performed using the curve_fit function in SciPy 1.6.2 (Virtanen et al., 2020).
 
-## pRF estimation and reconstruction
+### pRF estimation and reconstruction
 
 pRF data were available for seven participants from a previous study (Ekman et al., 2022) and were used to validate visually that the voxel selection based on the functional localizer selected voxel that corresponds to the stimulated location is visual space (Figure 2). Data from the moving bar runs were used to estimate the pRF of each voxel in the functional volumes using MrVista (http://white.stanford.edu/software). In this analysis, a predicted BOLD signal is calculated from the known stimulus parameters and a model of the underlying neuronal population. The model of the neuronal population consisted of a two-dimensional Gaussian pRF, with parameters x0, y0, and σ0, where x0 and y0 are the coordinates of the center of the receptive field, and σ0 indicates its spread (standard deviation), or size. All parameters were stimulus-referred, and their units were degrees of visual angle. These parameters were adjusted to obtain the best possible fit of the predicted to the actual BOLD signal. This method has been shown to produce pRF size estimates that agree well with electrophysiological receptive field measurements in monkey and human visual cortex (Klink et al., 2021). For details of this procedure, see Dumoulin and Wandell, 2008; Kay et al., 2015. Once estimated, x0 and y0 were converted to eccentricity and polar-angle measures and co-registered with the functional images using linear transformation.
 

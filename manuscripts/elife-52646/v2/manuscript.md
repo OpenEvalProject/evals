@@ -34,13 +34,288 @@ For each journal and each of the two metrics, we fit multiple regression models.
 
 We used the regression fits to calculate predicted Attention Scores and citations for hypothetical articles with and without a preprint in each journal, holding all other variables fixed (Figure 1). We also examined the exponentiated model coefficients for having a preprint (equivalent to fold-changes), which allowed comparison of relative effect sizes between journals (Figure 2). Both approaches indicated higher Attention Scores and more citations for articles with preprints, although as expected Attention Score and citations showed large article-to-article variation (Figure 1—figure supplement 9). Similar to Attention Scores and citations themselves, fold-changes of the two metrics were weakly correlated with each other (Spearman correlation 0.19).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-v2.jpg)
+
+**Figure 1.:** Each point indicates the predicted mean of the Attention Score (middle column) and number of citations (right column) for a hypothetical article with (green) or without (orange) a preprint, assuming the hypothetical article was published three years ago and had the mean value (i.e., zero) of each of the top 15 MeSH term PCs and the median value (for articles in that journal) of number of authors, number of references, U.S. affiliation status, Nature Index affiliation status, and last author publication age. Error bars indicate 95% confidence intervals. Journal names correspond to PubMed abbreviations: number of articles with (green) and without (orange) a preprint are shown in the left column. Journals are ordered by the mean of predicted mean Attention Score and predicted mean number of citations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Each point represents one of the 100 randomly selected articles. The gray line represents y = x. For details, see Supplementary file 14.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** For ease of visualization, 23 articles with more than 1024 citations were set to have exactly 1024 citations.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** For ease of visualization, 23 articles with more than 1,024 citations were set to have exactly 1,024 citations.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp6-v2.jpg)
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** Each point represents an article.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** Each point represents a journal. The gray line indicates y = x.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig1-figsupp9-v2.jpg)
+
+**Figure 1—figure supplement 9.:** The plots were generated identically to Figure 1, except they show 95% prediction intervals instead of 95% confidence intervals. Confidence intervals represent uncertainty in the population mean, whereas prediction intervals represent uncertainty in an individual observation. Thus, prediction intervals show the article-to-article variation in Attention Score and citations, even when all variables in the model are fixed.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig2-v2.jpg)
+
+**Figure 2.:** Fold-change corresponds to the exponentiated coefficient from log-linear regression, where fold-change >1 indicates higher Attention Score or number of citations for articles that had a preprint. A fold-change of 1 corresponds to no association. Error bars indicate 95% confidence intervals. Journals are ordered by mean log fold-change. Bottom row shows estimates from random-effects meta-analysis (also shown in Table 1). The source data for this figure is in Supplementary file 7.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** P-values are not adjusted for testing multiple journals.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52646/elife-52646-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Comparison in terms of (A) fold-change (i.e., exponentiated coefficient) for preprint status and (B) t-statistic for each of five variables. Each point represents a journal-metric pair.
+
 To quantify the overall evidence for each variable’s association with Attention Score and citations, we performed a random-effects meta-analysis of the respective model coefficients (Table 1 and Supplementary file 8). Based on the meta-analysis, an article’s Attention Score and citations were positively associated with its preprint status, number of authors, number of references, U.S. affiliation status, and Nature Index affiliation status, and slightly negatively associated with its last author publication age.
+
+**Table 1.**
+ Random-effects meta-analysis across journals of model coefficients from log-linear regression.A positive coefficient (column 3) means that Attention Score or number of citations increases as that variable increases (or if the article had a preprint or had an author with a U.S. affiliation or a Nature Index affiliation). However, coefficients for some variables have different units and are not directly comparable. P-values were adjusted using the Bonferroni-Holm procedure, based on having fit two models for each journal. Effectively, for each variable, the procedure multiplied the lesser p-value by two and left the other unchanged. Meta-analysis statistics for the intercept and publication date are shown in Supplementary file 8.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Article-level variable</th>
+      <th>Coef.</th>
+      <th>Std. error</th>
+      <th>95% CI (lower)</th>
+      <th>95% CI (upper)</th>
+      <th>p-value</th>
+      <th>Adj. p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Attention Score</td>
+      <td>Had a preprint</td>
+      <td>0.575</td>
+      <td>0.036</td>
+      <td>0.502</td>
+      <td>0.647</td>
+      <td>1.91e-18</td>
+      <td>3.82e-18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>log2(number of authors)</td>
+      <td>0.129</td>
+      <td>0.015</td>
+      <td>0.099</td>
+      <td>0.158</td>
+      <td>1.04e-10</td>
+      <td>1.04e-10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>log2(number of references + 1)</td>
+      <td>0.070</td>
+      <td>0.021</td>
+      <td>0.027</td>
+      <td>0.113</td>
+      <td>2.10e-03</td>
+      <td>2.10e-03</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Had an author with U.S. affiliation</td>
+      <td>0.143</td>
+      <td>0.021</td>
+      <td>0.100</td>
+      <td>0.187</td>
+      <td>6.08e-08</td>
+      <td>6.08e-08</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Had an author with Nature Index affiliation</td>
+      <td>0.147</td>
+      <td>0.020</td>
+      <td>0.106</td>
+      <td>0.188</td>
+      <td>1.20e-08</td>
+      <td>2.41e-08</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Last author publication age (yrs)</td>
+      <td>−0.009</td>
+      <td>0.001</td>
+      <td>−0.011</td>
+      <td>−0.007</td>
+      <td>5.86e-10</td>
+      <td>1.17e-09</td>
+    </tr>
+    <tr>
+      <td>Citations</td>
+      <td>Had a preprint</td>
+      <td>0.442</td>
+      <td>0.031</td>
+      <td>0.380</td>
+      <td>0.505</td>
+      <td>7.38e-17</td>
+      <td>7.38e-17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>log2(number of authors)</td>
+      <td>0.181</td>
+      <td>0.009</td>
+      <td>0.163</td>
+      <td>0.200</td>
+      <td>9.76e-22</td>
+      <td>1.95e-21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>log2(number of references + 1)</td>
+      <td>0.217</td>
+      <td>0.020</td>
+      <td>0.176</td>
+      <td>0.258</td>
+      <td>4.87e-13</td>
+      <td>9.73e-13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Had an author with U.S. affiliation</td>
+      <td>0.079</td>
+      <td>0.011</td>
+      <td>0.057</td>
+      <td>0.102</td>
+      <td>1.49e-08</td>
+      <td>2.98e-08</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Had an author with Nature Index affiliation</td>
+      <td>0.100</td>
+      <td>0.015</td>
+      <td>0.071</td>
+      <td>0.130</td>
+      <td>3.46e-08</td>
+      <td>3.46e-08</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Last author publication age (yrs)</td>
+      <td>−0.003</td>
+      <td>0.001</td>
+      <td>−0.004</td>
+      <td>−0.001</td>
+      <td>8.61e-05</td>
+      <td>8.61e-05</td>
+    </tr>
+  </tbody>
+</table>
 
 In particular, having a preprint was associated with a 1.49 times higher Attention Score (95% CI 1.42 to 1.57) and 1.36 times more citations (95% CI 1.30 to 1.42) of the peer-reviewed article. These effect sizes were ~4 times larger than those for having an author with an affiliation in the U.S. or at a Nature Index institution. In a separate meta-analysis, the amount of time between release of the preprint and publication of the article was positively associated with the article’s Attention Score, but not its citations (Supplementary files 9 and 10). Taken together, these results indicate that having a preprint is associated with a higher Attention Score and more citations independently of other article-level variables.
 
 Because we calculated the MeSH term PCs separately for each journal, we did not perform a random-effects meta-analysis of the corresponding coefficients. However, within each journal, typically several PCs had p-value≤0.05 for association with Attention Score or citations (Figure 2—figure supplement 1). In addition, if we excluded the MeSH term PCs from the regression, the fold-changes for having a preprint increased modestly (Figure 2—figure supplement 2 and Supplementary file 11). These results suggest that the MeSH term PCs capture meaningful variation in scientific subfield between articles in a given journal.
 
 Finally, using meta-regression, we found that the log fold-changes of the two metrics were not associated with the journal’s access model, Impact Factor, or percentage of articles with preprints (Table 2 and Supplementary file 12). Thus, these journal-level characteristics do not explain journal-to-journal variation in the differences in Attention Score and citations between articles with and without a preprint.
+
+**Table 2.**
+ Meta-regression across journals of log fold-changes for having a preprint.A positive coefficient means the log fold-change for having a preprint increases as that variable increases (or if articles in that journal are immediately open access). However, coefficients for different variables have different units and are not directly comparable. P-values were adjusted using the Bonferroni-Holm procedure, based on having fit two models. Depending on the two p-values for a given variable, the procedure may have left one p-value unchanged. Regression statistics for the intercept are shown in Supplementary file 12.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Journal-level variable</th>
+      <th>Coef.</th>
+      <th>Std. error</th>
+      <th>95% CI (lower)</th>
+      <th>95% CI (upper)</th>
+      <th>t-statistic</th>
+      <th>p-value</th>
+      <th>Adj. p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Attention Score</td>
+      <td>Immediately open access</td>
+      <td>0.118</td>
+      <td>0.076</td>
+      <td>−0.037</td>
+      <td>0.273</td>
+      <td>1.551</td>
+      <td>0.130</td>
+      <td>0.260</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>log2(Impact Factor)</td>
+      <td>−0.025</td>
+      <td>0.040</td>
+      <td>−0.107</td>
+      <td>0.057</td>
+      <td>−0.616</td>
+      <td>0.542</td>
+      <td>0.542</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>log2(% of articles with preprints)</td>
+      <td>−0.064</td>
+      <td>0.032</td>
+      <td>−0.129</td>
+      <td>0.001</td>
+      <td>−1.991</td>
+      <td>0.054</td>
+      <td>0.109</td>
+    </tr>
+    <tr>
+      <td>Citations</td>
+      <td>Immediately open access</td>
+      <td>−0.013</td>
+      <td>0.069</td>
+      <td>−0.152</td>
+      <td>0.126</td>
+      <td>−0.187</td>
+      <td>0.853</td>
+      <td>0.853</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>log2(Impact Factor)</td>
+      <td>0.044</td>
+      <td>0.036</td>
+      <td>−0.030</td>
+      <td>0.117</td>
+      <td>1.211</td>
+      <td>0.234</td>
+      <td>0.468</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>log2(% of articles with preprints)</td>
+      <td>0.037</td>
+      <td>0.029</td>
+      <td>−0.022</td>
+      <td>0.095</td>
+      <td>1.283</td>
+      <td>0.208</td>
+      <td>0.208</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -62,7 +337,7 @@ Altogether, our findings contribute to the growing observational evidence of the
 
 ## Methods
 
-## Collecting the data
+### Collecting the data
 
 Data came from four primary sources: PubMed, Altmetric, CrossRef, and Rxivist. We obtained data for peer-reviewed articles from PubMed using NCBI's E-utilities API via the rentrez R package (Winter, 2017). We obtained Altmetric Attention Scores using the Altmetric Details Page API via the rAltmetric R package. The Altmetric Attention Score is an aggregate measure of mentions from various sources, including social media, mainstream media, and policy documents (https://www.altmetric.com/about-our-data/our-sources/). We obtained numbers of citations using the CrossRef API (specifically, we used “is-referenced-by-count”). We obtained links between bioRxiv preprints and peer-reviewed articles using the CrossRef API via the rcrossref R package. We verified and supplemented the links from CrossRef using Rxivist (Abdill and Blekhman, 2019) via the Postgres database in the public Docker image (https://hub.docker.com/r/blekhmanlab/rxivist_data). We merged data from the various sources using the Digital Object Identifier (DOI) and PubMed ID of the peer-reviewed article.
 
@@ -76,7 +351,7 @@ Inclusion criteria for journals:
 
 We obtained all data on September 28, 2019, thus all predictions of Attention Score and citations are for this date. Preprints and peer-reviewed articles have distinct DOIs, and accumulate Attention Scores and citations independently of each other. We manually inspected 100 randomly selected articles from the final set, and found that all 100 were original research articles. For those 100 articles, the Spearman correlation between number of citations from CrossRef and number of citations from Web of Science Core Collection was 0.98, with a mean difference of 2.5 (CrossRef typically being higher), which indicates that the citation data from CrossRef are reliable and different sources would likely not produce different results.
 
-## Inferring author-level variables
+### Inferring author-level variables
 
 Institutional affiliation in PubMed is a free-text field, but is typically a series of comma-separated values with the country near the end. To identify the corresponding country of each affiliation, we used a series of heuristic regular expressions (Supplementary file 13 shows the number of affiliations for each identified country). Each author of a given article can have zero or more affiliations. For many articles, especially less recent ones, only the first author has any affiliations listed in PubMed, even though those affiliations actually apply to all the article’s authors (as verified by the version on the journal’s website). Therefore, the regression modeling used a binary variable for each article corresponding to whether any author had any affiliation in the United States.
 
@@ -88,11 +363,11 @@ The primary components of an author’s name in PubMed are last name, fore name 
 
 For a randomly selected subset of 50 articles (none of which had been used to manually tune the similarity cutoff), we searched PubMed and authors’ websites to manually identify each last author’s first last-author publication. The Spearman correlation between manually identified and automatically identified dates was 0.88, the mean error was 1.74 years (meaning our automated approach sometimes missed the earliest publication), and the mean absolute error was 1.81 years (Figure 1—figure supplement 1). The most common reason for error was that the author had changed institutions (Supplementary file 14).
 
-## Calculating principal components of MeSH term assignments
+### Calculating principal components of MeSH term assignments
 
 Medical Subject Headings (MeSH) are a controlled vocabulary used to index PubMed and other biomedical databases. For each journal, we generated a binary matrix of MeSH term assignments for the peer-reviewed articles (1 if a given term was assigned to a given article, and 0 otherwise). We only included MeSH terms assigned to at least 5% of articles in a given journal, and excluded the terms "Female" and "Male" (which referred to the biological sex of the study animals and were not related to the article's field of research). We calculated the principal components (PCs) using the prcomp function in the stats R package and scaling the assignments for each term to have unit variance. We calculated the percentage of variance in MeSH term assignment explained by each PC as that PC's eigenvalue divided by the sum of all eigenvalues. By calculating the PCs separately for each journal, we sought to capture the finer variation between articles in a given journal rather than the higher-level variation between articles in different journals.
 
-## Quantifying the associations
+### Quantifying the associations
 
 Attention Scores are real numbers ≥ 0, whereas citations are integers ≥ 0. Therefore, for each journal, we fit two types of regression models for Attention Score and three for citations:
 
@@ -106,6 +381,6 @@ We extracted coefficients and their 95% confidence intervals from each log-linea
 
 We performed each random-effects meta-analysis based on the Hartung-Knapp-Sidik-Jonkman method (IntHout et al., 2014) using the metagen function of the meta R package (Schwarzer et al., 2015). We performed meta-regression by fitting a linear regression model in which the dependent variable was the journal’s coefficient for preprint status (from either Attention Score or citations) and the independent variables were the journal’s access model (encoded as 0 for “closed or hybrid” and 1 for “immediately open”), log2(Impact Factor), and log2(percentage of articles released as preprints). We adjusted p-values for multiple testing using the Bonferroni-Holm procedure, which is uniformly more powerful than the standard Bonferroni procedure (Holm, 1979).
 
-## Data availability
+### Data availability
 
 Code and data to reproduce this study are available on Figshare (https://doi.org/10.6084/m9.figshare.8855795).

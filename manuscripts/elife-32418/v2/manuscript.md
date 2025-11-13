@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.32418.001 Two-color fluorescence co-localization in 3D (three-dimension) has the potential to achieve accurate measurements at the nanometer length scale. Here, we optimized a 3D fluorescence co-localization method that uses mean values for chromatic aberration correction to yield the mean separation with ~10 nm accuracy between green and red fluorescently labeled protein epitopes within single human kinetochores. Accuracy depended critically on achieving small standard deviations in fluorescence centroid determination, chromatic aberration across the measurement field, and coverslip thickness. Computer simulations showed that large standard deviations in these parameters significantly increase 3D measurements from their true values. Our 3D results show that at metaphase, the protein linkage between CENP-A within the inner kinetochore and the microtubule-binding domain of the Ndc80 complex within the outer kinetochore is on average ~90 nm. The Ndc80 complex appears fully extended at metaphase and exhibits the same subunit structure in vivo as found in vitro by crystallography.
+Two-color fluorescence co-localization in 3D (three-dimension) has the potential to achieve accurate measurements at the nanometer length scale. Here, we optimized a 3D fluorescence co-localization method that uses mean values for chromatic aberration correction to yield the mean separation with ~10 nm accuracy between green and red fluorescently labeled protein epitopes within single human kinetochores. Accuracy depended critically on achieving small standard deviations in fluorescence centroid determination, chromatic aberration across the measurement field, and coverslip thickness. Computer simulations showed that large standard deviations in these parameters significantly increase 3D measurements from their true values. Our 3D results show that at metaphase, the protein linkage between CENP-A within the inner kinetochore and the microtubule-binding domain of the Ndc80 complex within the outer kinetochore is on average ~90 nm. The Ndc80 complex appears fully extended at metaphase and exhibits the same subunit structure in vivo as found in vitro by crystallography.
 
 ## Introduction
 
@@ -28,35 +28,128 @@ In this paper, we have tested the above conclusion by optimizing a 2D and 3D flu
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/32418/elife-32418-fig1-v2.jpg)
 
-**Figure 1.:** (A) Fixation: 3% PFA in PHEM buffer without any detergent was used as standard fixation in this study (Details in Text and Methods). (B) Staining: Fixed samples were immunofluorescently labeled with antibodies to enhance S/N. Samples were usually mounted with Prolong Gold. (C) Imaging was performed by spinning disk confocal microscopy (See Materials and methods for details). (D) For CA correction, Hec1-9G3 monoclonal antibody was labeled by green and red tagged secondary antibodies (Hec1-9G3-GR). (E) Measurements: X, Y, Z coordinates of the centroids of green and red kinetochore fluorescence were determined by 3D Gaussian fitting. Details of equations for separation measurements are in Text, Figures, and Methods. (F) Error analysis: computer simulations were used for error analysis of the method. The sources of potential errors in separation measurements were highlighted in pink underline with *.10.7554/eLife.32418.003Figure 1—source data 1.Critical factors were: (1) prepare bright high signal to noise samples to reduce standard deviation (SD) of centroid determination; (2) use mounting media like ProLong Gold to suppress z-axis spherical aberration; (3) use 0.17 mm thick coverslips for all measurements including CA measurement; (4) align imaging system and image using only a small region within the center of camera to suppress SD of CA; and (5) use warmed PFA fixation without pre-extraction or detergent in fixation solution.
+**Figure 1.:** (A) Fixation: 3% PFA in PHEM buffer without any detergent was used as standard fixation in this study (Details in Text and Methods). (B) Staining: Fixed samples were immunofluorescently labeled with antibodies to enhance S/N. Samples were usually mounted with Prolong Gold. (C) Imaging was performed by spinning disk confocal microscopy (See Materials and methods for details). (D) For CA correction, Hec1-9G3 monoclonal antibody was labeled by green and red tagged secondary antibodies (Hec1-9G3-GR). (E) Measurements: X, Y, Z coordinates of the centroids of green and red kinetochore fluorescence were determined by 3D Gaussian fitting. Details of equations for separation measurements are in Text, Figures, and Methods. (F) Error analysis: computer simulations were used for error analysis of the method. The sources of potential errors in separation measurements were highlighted in pink underline with *.
 
 ## Results
 
-## Principles of the method
+### Principles of the method
 
-## Sample preparation
+#### Sample preparation
 
 HeLa cells were grown on #1.5 coverslips, the design value for the microscope objective, to prevent Z-axis CA (chromatic aberration) (Figure 1A). Cells were fixed with paraformaldehyde (PFA) without pre-extraction or supplement of detergent in the PFA solution, and stained with primary antibodies using a protocol from previous studies (Figure 1A) (Suzuki et al., 2015; Suzuki et al., 2014; Suzuki et al., 2011). The concentration of green and red secondary antibodies was adjusted to give nearly equal fluorescence intensity (Figure 1B). Integrated kinetochore fluorescence above background (>100,000 photon counts per kinetochore) was important to minimize the SD of centroid determination (CDsd) close to 5 nm (Thompson et al., 2002). Labeled samples were typically mounted with ProLong Gold mounting media. For the cellular CA correction standard, a monoclonal antibody (9G3) was used to label Hec1 (hsNdc80) protein at a site just inside of its MT binding CH domain, and this antibody was double labeled with green and red fluorescence by secondary antibodies (called Hec1-9G3-GR).
 
-## Imaging
+#### Imaging
 
 Imaging was performed using a confocal light microscope with a high NA objective lens (100x/1.4 NA) and a camera with small pixel size (64 nm, less than 1/3 resolution limit) (Figure 1C). Metaphase cells were positioned in the central field of view of the camera. Images were recorded at 200 nm intervals along the z-axis beginning just before the coverslip surface and extending to the top of the spindle to measure equal numbers of kinetochores below and above the middle of the spindle.
 
-## Image analysis
+#### Image analysis
 
 We selected sister kinetochores for measurement not only for Delta values (Figure 1D–E), but also to obtain the direction of the sister-sister kinetochore axis (K-K). For each kinetochore, we obtained the x, y, z coordinates for the centroids of green (Xg, Yg, Zg) and red (Xr, Yr, Zr) using 3D Gaussian fitting methods (Wan et al., 2009). The Sx, Sy, and Sz coordinates of the separation vector S between green and red foci were calculated from Sx = Xg-Xr-meanCAx (CAmx), Sy = Yg-Yr-meanCAy (CAmy), and Sz = Zg-Zr-meanCAz (CAmz) (Figure 1E), where the mean values of CAx, CAy, and CAz were obtained from kinetochores labeled with Hec1-9G3-GR within our measurement volume (Figure 1D). ‘Raw’ values for the mean separation vector lengths in 2D and 3D were calculated for each pair of green-red kinetochore labels as S(2D) = mean ((Sx2 + Sy2)0.5) and S(3D) = mean ((Sx2 + Sy2 + Sz2)0.5) from measurements of 200 to 400 kinetochores obtained from 5 to 20 different cells (Figure 1E). The mean of these ‘raw’ separation values (S(2D), and S(3D)) were over-estimates (Churchman et al., 2006; Churchman et al., 2005). In order to obtain more accurate mean separation values, a maximum likelihood method was applied to the raw separation data (called ML2D and ML3D) (Churchman et al., 2006; Churchman et al., 2005).
 
-## Error analysis
+#### Error analysis
 
 Potential errors from different embedding media, the wrong coverslip thickness, kinetochore tilt, and different fixation methods were examined experimentally (Listed in Figure 1—source data 1). A computer simulation of the measurement method was used to evaluate the significance of these errors, as well as errors produced by the SDs in centroid determination (CDsd) and CA (CAsd) over the field of measurement (Figure 1F).
 
-## Chromatic aberration (CA) measurements from a cellular standard
+### Chromatic aberration (CA) measurements from a cellular standard
 
 CA within our measurement was determined from CAx = Xg-Xr, CAy = Yg-Yr, and CAz = Zg-Zr measured for Hec1-9G3-GR labeled kinetochores of metaphase cells (Figures 1D and 2). The mean values of CAx, CAy, and CAz plus their standard deviations (SDs) are listed in Table 1 for several different preparations. Note the mean values for CAx, CAy, and CAz were each very similar between different preparations. We included one preparation where the embedding solution was PBS. PBS has a refractive index near water, 1.33, and far from the refractive index of the coverslip (~1.52). The mean CAx, CAy, and CAz values were similar to those using the ProLong Gold embedding medium (Table 1). The major difference was a much larger SD for CAz compared to ProLong Gold (48 nm vs ~18 nm, Table 1). This occurs because the lower refractive index induces spherical aberration that increases with z-axis depth from the coverslip surface (Figure 2—figure supplement 1). We also tested one sample with glutaraldehyde (GA) fixation and embedding with ProLong Gold. The mean CA values were nearly identical to the results obtained from PFA fixation (Table 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/32418/elife-32418-fig2-v2.jpg)
+
+**Figure 2.:** Schematic model of Hec1-9G3-GR. Hec1-9G3 antibody was labeled by secondary antibodies with Rhodamine Red-X and Alexa 488 (left). Representative Hec1-9G3-GR images in samples fixed by PFA or GA mounted with Prolong Gold or PBS.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32418/elife-32418-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Representative plots of CAz versus depth for experimental conditions in Figure 2A.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/32418/elife-32418-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic description of the sizes of the camera detector, captured image, and region used for image analysis. (B) The frequency of kinetochores measured for Hec1(9G3)-GR and CENP-T(M)-Hec1(9G3). They were within the x (300 pixels), y (200 pixels), z (20 µm) imaging region.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/32418/elife-32418-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Plots of CAx, CAy, and CAz versus x, y, and z for separation between Hec1-9G3-GR in samples fixed with PFA and mounted with Prolong Gold.
+
+**Table 1.**
+ Mean and SD values of CAx, CAy, CAz for different sample preparations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Fixation</th>
+      <th>MM</th>
+      <th>Green</th>
+      <th>Red</th>
+      <th>CAx (nm)</th>
+      <th>CAy (nm)</th>
+      <th>CAz (nm)</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Use for correction</td>
+      <td>PFA</td>
+      <td>PL</td>
+      <td>9G3</td>
+      <td>9G3</td>
+      <td>13.1 ± 9.1</td>
+      <td>15.8 ± 7.5</td>
+      <td>3.5 ± 17.6</td>
+      <td>166</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PFA</td>
+      <td>PL</td>
+      <td>9G3</td>
+      <td>9G3</td>
+      <td>14.7 ± 11.4</td>
+      <td>13.2 ± 12.1</td>
+      <td>1.5 ± 17.0</td>
+      <td>256</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PFA</td>
+      <td>PL</td>
+      <td>9G3</td>
+      <td>9G3</td>
+      <td>15.7 ± 12.5</td>
+      <td>15.6 ± 8.2</td>
+      <td>−4.8 ± 20.2</td>
+      <td>206</td>
+    </tr>
+    <tr>
+      <td>Use for correction</td>
+      <td>PFA</td>
+      <td>PBS</td>
+      <td>9G3</td>
+      <td>9G3</td>
+      <td>13.2 ± 10.7</td>
+      <td>18.7 ± 10.4</td>
+      <td>−2.7 ± 47.5</td>
+      <td>168</td>
+    </tr>
+    <tr>
+      <td>Use for correction</td>
+      <td>GA</td>
+      <td>PL</td>
+      <td>9G3</td>
+      <td>9G3</td>
+      <td>19.2 ± 10.3</td>
+      <td>16.0 ± 9.0</td>
+      <td>−6.8 ± 18.8</td>
+      <td>170</td>
+    </tr>
+  </tbody>
+</table>
+
 A small measurement region in the center of the camera detector (~300×200 pixels) was used for the entire analysis in this study (Figure 2—figure supplement 2A–B). In the measurement region, there was a gradient for CAx in the x direction (~30 nm/ 280 pixels (19 µm)), but not in the y or z directions. There was a gradient for CAy in the y direction (~21 nm/180 pixels (11.5 µm)), but not in the x or z directions. There was no noticeable gradient for CAz in either the x, y, or z directions compared to the SD (Figure 2—figure supplement 3). These gradients in CA had no more effect on measurement accuracy than randomly distributed CA values with the same mean and SD (see computer simulations below).
 
-## Validation of our 2D and 3D co-localization method for known separations within the kinetochore
+### Validation of our 2D and 3D co-localization method for known separations within the kinetochore
 
 We initially measured the 2D and 3D separations between an antibody to CENP-T (CENP-T (M), Gascoigne et al., 2011) and Hec1-9G3 because previous studies reported values of Delta and 3D mean separations (by the CICADA method) using these same antibodies (Fuller and Straight, 2012; Suzuki et al., 2014; Wan et al., 2009). The reported 1D and 3D values for CENP-T (M) and Hec1-9G3 were ~60 and~62 nm respectively. Our mean separation ±SD between CENP-T (M) and Hec1-9G3 for Delta = 60 ± 7.5 nm, S(2D)=63 ± 11.2 nm, ML2D = 62 ± 11.3 nm, S(3D)=69 ± 12.3 nm, and ML3D = 66 ± 12.5 nm (Figure 3A–B), almost identical to the previous studies (Fuller and Straight, 2012; Suzuki et al., 2014; Wan et al., 2009).
 
@@ -68,27 +161,343 @@ The orientation of the separation vector at each kinetochore was also calculated
 
 To further test the accuracy of our 2D/3D co-localization method, we examined the mean separation of different domains within the Ndc80 complex. We chose the Ndc80 complex as a molecular ruler, since its protein structure is well known. The Ndc80 complex contains a dimer of Ndc80/Nuf2 and a dimer of Spc24/Spc25 (Cheeseman et al., 2006; Ciferri et al., 2008; Musacchio and Desai, 2017). Most of the length of the Ndc80 complex is alpha helical coiled-coil, and its contour length is 55 ~ 60 nm, as measured in vitro by electron microscopy and crystallography (Ciferri et al., 2008; Huis In 't Veld et al., 2016; Valverde et al., 2016; Wei et al., 2005). To reveal the cellular Ndc80 complex structure, we developed HeLa cells stably expressing EGFP-Ndc80, Ndc80-EGFP, EGFP-Nuf2, Nuf2-EGFP, EGFP-Spc24, Spc24-EGFP, EGFP-Spc25, or Spc25-EGFP (Figure 4A). Figure 4B and Figure 4—source data 1 show the separation values relative to Hec1-9G3 to different ends of the Ndc80, Nuf2, Spc24, and Spc25 proteins, tagged in each case with EGFP. For example, the mean separation measurements between Spc25-EGFP and Hec1-9G3 were Delta = 49 ± 5 nm, S(2D)=52 ± 10 nm, S(3D)=55 ± 10 nm, ML2D = 51 ± 10 nm, and ML3D = 53 ± 10 nm. The Ndc80 complex is likely extended along kMTs since the Delta and ML3D values for the length of the Ndc80 complex are nearly identical. Also, overall, our Delta, 2D, and 3D mean separation measurements yielded a close fit to a Ndc80 complex structure that was determined in vitro (Ciferri et al., 2008; Valverde et al., 2016). As expected, the C-terminus of Spc24 is located a few nm inside of the C-terminus of Spc25, and Spc24 is longer than Spc25 (Figure 4—figure supplement 1) (Valverde et al., 2016). The CH-domain of Nuf2 is located a few nm inside of the N-terminal CH domain of Ndc80, and Ndc80 is longer than Nuf2 (Figure 4—figure supplement 1) (Ciferri et al., 2008; Valverde et al., 2016). Unexpectedly, in vivo, the C-terminus of Ndc80 locates much closer to the globular domains of Spc24/Spc25 (Figure 4B). This difference might be caused by structural restrictions on the position of the EGFP tag, which was tethered to the protein end by a nine amino acid linker.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/32418/elife-32418-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative immunofluorescent images of Hec1-9G3 and EGFP fused to different protein domains along the Ndc80 complex (See Text and Materials and methods). (B) Schematic summary of the ML3D Ndc80 complex measurements at metaphase. All values were mean ±SD. n > 200 kinetochores for each measurement. Detail values are listed in Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32418/elife-32418-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Schematic picture of the Ndc80 complex with detailed comparison between this study and previous in vitro studies by electron microscopy and crystallography (Wei et al., 2005; Huis In 't Veld et al., 2016; Valverde et al., 2016). Endogenous proteins were depleted by siRNA (See detail in Materials and methods: Suzuki et al., 2015).
+
 Sister kinetochore pairs were used for the majority of measurements in this study to directly compare separations obtained by Delta and 2D/3D fluorescent co-localization methods using the same data sets. To test if selection of sister pairs influenced our measurements, we measured 120 kinetochores selected randomly in a single metaphase cell. This produced a mean separation value nearly identical to the mean value for single kinetochore measurements of sister pairs obtained from six metaphase cells (Table 2).
 
-## The mean human kinetochore protein architecture at metaphase measured by the Delta method and our 3D method are similar
+**Table 2.**
+ Comparison of measurements for kinetochores that were part of sister pairs and kinetochores selected at random from a single metaphase cell.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Methods</th>
+      <th>Green</th>
+      <th>Red</th>
+      <th>Delta (nm)</th>
+      <th>S(2D) (nm)</th>
+      <th>S(3D) (nm)</th>
+      <th>ML2D (nm)</th>
+      <th>ML3D (nm)</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sister pair</td>
+      <td>Spc25-EGFP</td>
+      <td>9G3</td>
+      <td>49.4 ± 4.6</td>
+      <td>51.5 ± 9.6</td>
+      <td>55.2 ± 10.0</td>
+      <td>50.6 ± 9.7</td>
+      <td>53.3 ± 10.2</td>
+      <td>280 (140 pairs) from 6 cells</td>
+    </tr>
+    <tr>
+      <td>Random</td>
+      <td>Spc25-EGFP</td>
+      <td>9G3</td>
+      <td>N.A.</td>
+      <td>50.8 ± 6.7</td>
+      <td>55.3 ± 7.7</td>
+      <td>50.3 ± 6.7</td>
+      <td>54.2 ± 7.8</td>
+      <td>120 from single cell</td>
+    </tr>
+  </tbody>
+</table>
+
+### The mean human kinetochore protein architecture at metaphase measured by the Delta method and our 3D method are similar
 
 Figure 5 shows how the centroids of protein labels are separated on average along the inner-outer kinetochore axis based on our 2D/Delta measurements (Top) and 3D measurements (bottom). All of our 2D and Delta values are nearly identical (usually less than 3 nm difference). In general, our 3D measurements were only ~5 nm larger than the Delta or 2D values (Figure 5 and the Figure 5—source data 1). Unlike the 3D kinetochore protein architecture proposed by (Smith et al., 2016), our data showed no ~70 nm gap between CCAN protein domains and the Ndc80 complex. The inner kinetochore proteins are much closer to the outer kinetochore, corresponding to the previous studies using Delta measurements (Suzuki et al., 2014). For example, our 3D mean separation between CENP-A and Hec1-9G3 is ~90 nm, which is nearly identical to values obtained by Delta (~84 nm) and ML2D (~85 nm). In Figure 5, the Ndc80 complex and protein linkage to the inner kinetochore are shown aligned with the axis of kMTs because the ML3D mean separation values are only slightly greater than their corresponding Delta values, and the Delta value is a projection of the ML3D value along the K-K axis.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/32418/elife-32418-fig5-v2.jpg)
 
-**Figure 5.:** Schematic picture of the mean positions of protein labels within the core kinetochore protein architecture measured using ML2D/Delta (top) and ML3D (bottom) methods. N or C are the mean positions of N-terminal or C-terminal EGFP fusions or specific antibodies. M indicates the mean position measured using polyclonal antibodies whose epitope(s) are not precisely known.10.7554/eLife.32418.015Figure 5—source data 1.List of mean values of Delta, S(2D), S(3D), ML2D, ML3D, Z-offset, and zML3D (Z-offset subtracted) for core kinetochore proteins. The differences between ML3D and ML2D (ML3D-ML2D), ML3D and zML3D (ML3D-zML3D) are also listed. All values listed are mean ±S.D.10.7554/eLife.32418.016Figure 5—source data 2.List of antibodies used in this study with source and references.
+**Figure 5.:** Schematic picture of the mean positions of protein labels within the core kinetochore protein architecture measured using ML2D/Delta (top) and ML3D (bottom) methods. N or C are the mean positions of N-terminal or C-terminal EGFP fusions or specific antibodies. M indicates the mean position measured using polyclonal antibodies whose epitope(s) are not precisely known.
 
-## Coverslip thickness both greater and less than 0.17 mm produces z-axis chromatic aberration (Z-offset) independent of focal depth
+### Coverslip thickness both greater and less than 0.17 mm produces z-axis chromatic aberration (Z-offset) independent of focal depth
 
 Normally the value of Z-offset (mean Sz) for each coverslip-slide preparation was within ±25 nm of zero (Figure 5—source data 1). However, occasionally, significantly large positive or negative values occurred, which made the 3D measurement much larger than for small Z-offsets. The largest Z-offset occurred for one sample stained for CENP-T(M) and 9G3,~80 nm (Table 3A), which increased the S(3D) from 65 to 103 nm (Table 3A,). If this large Z-offset was subtracted from the Sz data, the mean zS3D (S(3D) with subtracted Z-offset) value became close to the value with near zero Z-offset,~65 nm (Table 3A). This comparison indicated that the higher Z-offset was independent of the actual mean separation between green and red labels. This comparison also indicated that there was something about specimen preparation causing variation in z-axis CA.
 
+**Table 3.**
+ (A) List of Delta, S(2D), S(3D), Z-offset, and zS(3D) (Z-offset subtracted) for the mean separation between CENP-T(M) and Hec1(9G3) in samples with or without large Z-offset.(B) List of Delta, S(2D), S(3D), Z-offset, and zS(3D) in samples with #1, #1.5, and #2 coverslips. The value zS(3D) was calculated from the S(3D) data after subtraction of the mean Z-offset in the middle of the spindle from the Sz values. All values were mean ±SD.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th></th>
+      <th>Green</th>
+      <th>Red</th>
+      <th>Delta nm)</th>
+      <th>S(2D)(nm)</th>
+      <th>S(3D) (nm)</th>
+      <th>Z-offset (nm)</th>
+      <th>zS(3D) (nm)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Example 1</td>
+      <td>CENP-T (M)</td>
+      <td>9 G3</td>
+      <td>59.5 ± 6.3</td>
+      <td>60.8 ± 8.8</td>
+      <td>102.4 ± 26.7</td>
+      <td>79.7 ± 32.9</td>
+      <td>68.9 ± 10.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Example 2</td>
+      <td>CENP-T (M)</td>
+      <td>9 G3</td>
+      <td>57.3 ± 7.3</td>
+      <td>60.1 ± 11.7</td>
+      <td>64.8 ± 11.3</td>
+      <td>6.9 ± 23.2</td>
+      <td>64.5 ± 10.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td></td>
+      <td>Thickness</td>
+      <td>Green</td>
+      <td>Red</td>
+      <td>Delta nm)</td>
+      <td>S(2D)(nm)</td>
+      <td>S(3D) (nm)</td>
+      <td>Z-offset (nm)</td>
+      <td>zS(3D) (nm)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Experiment 1</td>
+      <td>#1</td>
+      <td>CENP-T (M)</td>
+      <td>9 G3</td>
+      <td>60.4 ± 6.9</td>
+      <td>63.5 ± 12.4</td>
+      <td>75.2 ± 17.6</td>
+      <td>−28.6 ± 31.1</td>
+      <td>70.4 ± 14.2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Experiment 2</td>
+      <td>#1</td>
+      <td>CENP-T (M)</td>
+      <td>9 G3</td>
+      <td>59.2 ± 10.0</td>
+      <td>62.6 ± 11.7</td>
+      <td>72.6 ± 16.3</td>
+      <td>−18.3 ± 33.9</td>
+      <td>70.6 ± 14.6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Experiment 1</td>
+      <td>#1.5</td>
+      <td>CENP-T (M)</td>
+      <td>9 G3</td>
+      <td>57.3 ± 7.3</td>
+      <td>60.1 ± 11.6</td>
+      <td>64.8. ± 11.3</td>
+      <td>6.9 ± 23.2</td>
+      <td>64.5 ± 10.8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Experiment 2</td>
+      <td>#1.5</td>
+      <td>CENP-T (M)</td>
+      <td>9 G3</td>
+      <td>57.0 ± 7.1</td>
+      <td>60.6 ± 11.1</td>
+      <td>64.0 ± 11.6</td>
+      <td>6.0 ± 20.0</td>
+      <td>63.8 ± 11.2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Experiment 1</td>
+      <td>#2</td>
+      <td>CENP-T (M)</td>
+      <td>9 G3</td>
+      <td>59.6 ± 7.7</td>
+      <td>62.1 ± 11.9</td>
+      <td>82.1 ± 27.2</td>
+      <td>46.4 ± 36.4</td>
+      <td>69.6 ± 21.9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Experiment 2</td>
+      <td>#2</td>
+      <td>CENP-T (M)</td>
+      <td>9 G3</td>
+      <td>59.8 ± 7.4</td>
+      <td>62.5 ± 10.9</td>
+      <td>74.2 ± 16.2</td>
+      <td>28.7 ± 30.2</td>
+      <td>69.4 ± 10.8</td>
+    </tr>
+  </tbody>
+</table>
+
 To explore possible optical factors, we used a mathematical analysis reported previously (Gibson and Lanni, 1992). This analysis calculates, relative to the design values for the objective, changes in optical path for light coming from a fluorescent point as a function of the refractive index and thickness of the specimen media, the coverslip thickness, and immersion oil, as well as wavelength. It showed that the amount of z-axis CA is highly sensitive to changes in the thickness of the coverslip. We tested this possibility by using different thickness of coverslips. We did most of our experiments reported in this paper using # 1.5 coverslips. We measured their thickness with a micrometer, and the mean value was 0.17 mm with a range of 0.16 to 0.19 (Figure 6, n > 100). For #1 coverslips, the mean was 0.15 mm and for #2 coverslips it was 0.22 mm (Figure 6). The mean Sz (Z-offset) for CENP-T(M) to Hec1-9G3 showed ~±10 nm for #1.5 coverslips, −29 to −19 nm for #1 coverslips, and 29 to 46 nm for # 2 (Table 3B). The plot in Figure 6—figure supplement 1 illustrates the sensitivity of Z-offset to coverslip thickness. A steep slope is seen when measured Z-offset values in Table 3B are plotted as a function of the mean thickness we measured for #1, #1.5 and #2 coverslips. Based on these experimental results, we suspect that unusually large Z-offset values (>25 nm) measured in our experiments (Figure 5—source data 1) were largely produced by coverslip thicknesses much thinner or thicker than 0.17 mm.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/32418/elife-32418-fig6-v2.jpg)
+
+**Figure 6.:** Measured variability of coverslip thickness within #1, #1.5, and #2 coverslips.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/32418/elife-32418-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The plot of measured Z-offset vs mean coverslip thickness. The mean coverslip thickness was 0.15 mm (#1 coverslip), 0.17 mm (#1.5 coverslip), and 0.22 mm (#2 coverslip).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/32418/elife-32418-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Enlarged view of average kinetochore orientation relative to the K-K axis in metaphase where kinetochores at the bottom half of the spindle are rotated upward in a plus z direction, while kinetochores near the top half of the spindle are rotated downward in a minus z direction to a degree dependent on the kinetochore off-axis position. For a green inner kinetochore label and red outer kinetochore label, rotation makes Sz negative in the bottom half of the spindle and positive in the top half in proportion to the magnitude of label separation. (B) Two examples of Sz versus depth for endogenous CENP-A and Hec1-9G3 separation. (C) Plots of angle β versus depth for the samples in (B). Note, in order to understand kinetochore tilt, angle β for this plot was obtained after subtracting the mean value of Sz at the middle of the spindle from the Sz data for each sample. n > 350 individual kinetochores for each experiment. The arrows in each plot in (B) and (C) indicate the average position of the middle of spindle. (D) Plots of angle α versus depth for the samples in (B).
 
 In our study, we were careful to include similar numbers of kinetochores above and below the spindle equator. This is because kinetochores and their kMTs become tilted progressively with their radial distance away from the spindle axis (Figure 6—figure supplement 2A) (Smith et al., 2016;Wan et al., 2009). Both the inner and outer domains of metaphase kinetochores typically have their faces perpendicular to their kMTs (Wan et al., 2009). If kinetochores are only measured on the bottom half of the spindle, the mean value of Sz will not be zero because the upward kinetochore tilt in the lower half spindle is not canceled by the downward tilt from kinetochores in the upper half-spindle (Figure 6—figure supplement 2A–B). This kinetochore tilt had no effect on measured 3D mean separation since values from only kinetochores in the upper half of the spindle yielded similar results as from kinetochores in the lower half of the spindle (data not shown). Unlike 3D separation, the mean tilt angle β (but not angle α) was sensitive to unequal numbers of kinetochores above and below the spindle equator. The mean angle β is near zero in the middle of the spindle and reaches mean values of about 20–25 degrees at the bottom and top of the spindle (Figure 6—figure supplement 2C–D).
 
-## PFA fixation does not cause shrinkage, but pre-extraction or detergent in PFA solution causes shrinkage of cellular structure
+### PFA fixation does not cause shrinkage, but pre-extraction or detergent in PFA solution causes shrinkage of cellular structure
 
 A recent study raised the issue that PFA fixation induced shrinkages compared to GA fixation (Magidson et al., 2016). GA has two aldehyde radicals and provides more robust fixation compared to PFA fixation. Because of this reason, GA fixation is usually used for electron microscopy. On the other hand, GA fixation exhibits strong auto fluorescence, and induces significantly less reactivity between cellular antigen and antibodies compared to PFA fixation. For immunofluorescence, a non-ionic detergent, such as Triton-X 100 or NP40, is often used to improve antibody penetration into the cell before, with, or after fixation. It is uncertain how these pre-permeabilization processes affect cellular architecture. For example, Magidson et al. (2016) concluded PFA fixation causes shrinkage. However, they actually supplemented 1% Triton-X 100 in their PFA fixation solution. Our standard method was primary fixation by PFA without detergent (Method one in Table 4), a method significantly different than the PFA fixation method used by (Magidson et al., 2016).
+
+**Table 4.**
+ Summary of fixation methods used in Figure 7.Detailed protocols for the different fixation methods used in Figure 7. Method 1 is the protocol used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Pre-fixation</th>
+      <th>Pre-perme- abilization</th>
+      <th>Fixation</th>
+      <th>Quenching</th>
+      <th>Post-perme- abilization</th>
+      <th>Primary antibody</th>
+      <th>Secondery anitbody</th>
+      <th>References (use for nm-resolution analysis)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method 1</td>
+      <td></td>
+      <td></td>
+      <td>3% PFA in PHEM (37°C)</td>
+      <td></td>
+      <td>0.5% NP40</td>
+      <td>37°C for 90 min</td>
+      <td>37°C for 90 min</td>
+      <td>Suzuki et al., 2011 ;Suzuki et al., 2014  ;Tauchman et al., 2015; this study</td>
+    </tr>
+    <tr>
+      <td>Method 2</td>
+      <td>3% PFA in PHEM (37°C)</td>
+      <td>0.5% triton in PHEM (37°C)</td>
+      <td>3% PFA in PHEM (37°C)</td>
+      <td></td>
+      <td>0.5% NP40</td>
+      <td>37°C for 90 min</td>
+      <td>37°C for 90 min</td>
+      <td>Wan et al. (2009); Varma et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Method 3</td>
+      <td></td>
+      <td>1% triton in PHEM (37°C)</td>
+      <td>3% PFA in PHEM (37°C)</td>
+      <td></td>
+      <td>0.5% NP40</td>
+      <td>37°C for 90 min</td>
+      <td>37°C for 90 min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Method 4</td>
+      <td></td>
+      <td></td>
+      <td>1% GA in PHEM (37°C)</td>
+      <td>NaBH4</td>
+      <td>0.5% NP40</td>
+      <td>37°C for 90 min</td>
+      <td>37°C for 90 min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Method 5</td>
+      <td></td>
+      <td></td>
+      <td>1%GA w 1% triton in PHEM (37°C)</td>
+      <td>NaBH4</td>
+      <td>0.5% NP40</td>
+      <td>37°C for 90 min</td>
+      <td>37°C for 90 min</td>
+      <td>Magidson et al. (2016)</td>
+    </tr>
+    <tr>
+      <td>Method 6</td>
+      <td></td>
+      <td>1% triton in PHEM (37°C)</td>
+      <td>1% GA in PHEM (37°C)</td>
+      <td>NaBH4</td>
+      <td>0.5% NP40</td>
+      <td>37°C for 90 min</td>
+      <td>37°C for 90 min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Method 7</td>
+      <td></td>
+      <td>1% triton in PHEM (37°C)</td>
+      <td>1% GA w 3% PFA in PHEM (37°C)</td>
+      <td>NaBH4</td>
+      <td>0.5% NP40</td>
+      <td>37°C for 90 min</td>
+      <td>37°C for 90 min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Method 8</td>
+      <td></td>
+      <td></td>
+      <td>MeOH (−20°C)</td>
+      <td></td>
+      <td>0.5% NP40</td>
+      <td>37°C for 90 min</td>
+      <td>37°C for 90 min</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Method 9</td>
+      <td></td>
+      <td></td>
+      <td>3%PFA w 1% triton in PHEM (37°C)</td>
+      <td></td>
+      <td>0.5% NP40</td>
+      <td>37°C for 90 min</td>
+      <td>37°C for 90 min</td>
+      <td>Magidson et al. (2016)</td>
+    </tr>
+  </tbody>
+</table>
 
 To test the effect of fixation and detergent for antibody reaction and separation measurements, we tested nine different fixation methods (Table 4, and Materials and methods). We used CENP-T (M) and Hec1-9G3 antibodies for this comparison (Figure 7A). These antibodies were the exact same antibodies used in Figure 3 in this study, and in previous reports (Fuller and Straight, 2012; Magidson et al., 2016; Suzuki et al., 2014; Wan et al., 2009). We first compared CENP-T(M) and Hec1-9G3 signal levels at kinetochores in the different methods (Figure 7B). Interestingly, both CENP-T(M) and Hec1-9G3 signal levels in GA fixation samples (Methods 4–7) were significantly reduced by ~35% to 60% compared to PFA fixation (Method 1), PFA with detergent fixation (by 20–30%), or MeOH fixation (~20%) (Figure 7B). However, local background levels (surrounding area of kinetochore) were not significantly different between all fixation methods, indicating that GA fixation significantly reduced the signal to noise ratio (S/N) compared to PFA or MeOH fixation (Figure 7B).
 
@@ -98,7 +507,117 @@ To test the effect of fixation and detergent for antibody reaction and separatio
 
 Next, we measured mean separation between CENP-T(M) and Hec1-9G3. Surprisingly, we could not find any significant differences between PFA fixation (Methods 1–2) and GA fixation (Methods 4–7). However, we observed significant shrinkage when samples were fixed by Methods 3, 8, and 9 (Table 5). Interestingly, we could not see any shrinkage when we fixed by GA with Triton X-100, Triton X-100 treatment before GA or GA/PFA (Methods 5–7). Although there are no differences between PFA and GA fixation for the separation between CENP-T(M) and Hec1-9G3, we found that pre-extraction by Triton X-100 or PFA fixation with Triton X-100 induced significant shrinkage compared to GA with Triton X-100. This result is consistent with the report of Magidson et al. (2016). However, our standard PFA fixation method (Method 1) did not produce any shrinkage.
 
-## Computer simulations for understanding the method and its limitations
+**Table 5.**
+ The list of measured values for Delta, ML2D, ML3D, dDelta, dML2D, and dML3D using protocols in Table 4.The dDelta, dML2D, dML3D were differences from Method 1 (PFA fixation). All values were mean ±SD. n > 200 individual kinetochores for each experiment.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Red-Green = mean ± S.D. nm</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Delta (nm)</th>
+      <th>ML2D (nm)</th>
+      <th>ML3D (nm)</th>
+      <th>dDelta (nm)</th>
+      <th>dML2D (nm)</th>
+      <th>dML3D (nm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method 1</td>
+      <td>57.2 ± 7.3</td>
+      <td>59.1 ± 11.6</td>
+      <td>62.6 ± 11.5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Method 2</td>
+      <td>56.8 ± 6.0</td>
+      <td>58.6 ± 8.8</td>
+      <td>61.3 ± 8.6</td>
+      <td>−0.4</td>
+      <td>−0.5</td>
+      <td>−1.3</td>
+    </tr>
+    <tr>
+      <td>Method 3</td>
+      <td>50.1 ± 7.1</td>
+      <td>52.8 ± 8.5</td>
+      <td>56.4 ± 8.2</td>
+      <td>−7.1</td>
+      <td>−6.3</td>
+      <td>−6.2</td>
+    </tr>
+    <tr>
+      <td>Method 4</td>
+      <td>58.7 ± 9.1</td>
+      <td>61.5 ± 12.4</td>
+      <td>63.1 ± 22.9</td>
+      <td>1.5</td>
+      <td>2.4</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Method 5</td>
+      <td>55.2 ± 8.9</td>
+      <td>56.9 ± 11.7</td>
+      <td>61.3 ± 15.5</td>
+      <td>-2</td>
+      <td>−2.2</td>
+      <td>−1.3</td>
+    </tr>
+    <tr>
+      <td>Method 6</td>
+      <td>57.2 ± 9.0</td>
+      <td>60.0 ± 12.9</td>
+      <td>63.5 ± 21.6</td>
+      <td>0</td>
+      <td>0.9</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>Method 7</td>
+      <td>54.0 ± 10.0</td>
+      <td>57.2 ± 12.1</td>
+      <td>57.7 ± 12.2</td>
+      <td>−3.2</td>
+      <td>−1.9</td>
+      <td>−4.9</td>
+    </tr>
+    <tr>
+      <td>Method 8</td>
+      <td>46.4 ± 5.3</td>
+      <td>48.3 ± 7.7</td>
+      <td>52.0 ± 7.7</td>
+      <td>−10.8</td>
+      <td>−10.8</td>
+      <td>−10.6</td>
+    </tr>
+    <tr>
+      <td>Method 9</td>
+      <td>51.8 ± 7.4</td>
+      <td>53.8 ± 9.7</td>
+      <td>56.7 ± 10.0</td>
+      <td>−5.4</td>
+      <td>−5.3</td>
+      <td>−5.9</td>
+    </tr>
+  </tbody>
+</table>
+
+### Computer simulations for understanding the method and its limitations
 
 The method using mean values of CA to correct chromatic aberration is widely used, but the limitations of this method are not well established. We evaluated the method by computer simulations. Critical factors are SDs of centroid determination (CDsd) and CA (CAsd). In our simulations, kinetochores were located at 10 pixel intervals in both the X and Y axis directions for the typical image region of 0–280 pixels in the X- direction and 0 to 190 pixels in the Y-direction (Figure 8). At each kinetochore position (p), the separation vector extended from the origin to a length S in the x direction. The green (Xgp, Ygp, Zgp) values at the origin had a mean of zero plus a CDsd determined by sampling CDsd times a normalized random number for the x, y, and z directions (Figure 8). The red (Xrp, Yrp, Zrp) values included S in the x-direction and Z-offset in the Z direction. They also included a value for the CA at each kinetochore position, CAp, plus CDsd for each direction (Figure 8). Two methods were used to generate the CAp values. In the first, for each x, y, and z direction, CAp was calculated from the measured mean CA plus the CAsd times a normalized random number. In the second, CAp for the x and y directions were calculated from least square fits to the CA cellular data because of the 30 nm and 20 nm decrease respectively across the measurement field (Figure 2—figure supplement 3). However, this second procedure gave identical results as the first method outlined in Figure 8, which is the CA correction method we used experimentally. Mean and SD values for S(2D), S(3D), ML2D, ML3D, angle α, and angle β were calculated using the same equations as we did in analysis of cellular data (Figures 1E and 3C).
 
@@ -108,6 +627,180 @@ The method using mean values of CA to correct chromatic aberration is widely use
 
 To obtain an estimate of the error contributed from the CDsd, we used results from Delta analysis which in principle have local CA correction. For example, the Delta value measured for CENP-T(M) to Hec1-9G3 is 60 ± 7.5 nm. In the simulation, we made the CAsd = zero, and asked how much CDsd is needed to make the measured Delta SD =±7.5 for S = 60 nm. The result was CDsd (x, y, z) = (±4,±4,±8) (Table 6A). Because resolution in the z direction is half that in the x and y directions, we set CDsd of z = 2 * CDsd of x or y. Simulations that include the CDsd, but exclude CAsd, yielded mean values for ML3D and ML3D nearly identical to the input 60 nm value (Table 6A). This result indicates that the SD in our centroid measurement is very small and only slightly enhances the 3D measurements from the true value.
 
+**Table 6.**
+ Computer simulations to determine measurement SD and to test the accuracy of using mean CA for CA correction.(A) Comparison of ~60 nm experimental results to simulated results for a fixed S value of 60 nm, the estimated CDsd for our measurements, and with or without CAsd. (B) Simulated S(3D), and ML3D values for different input S values with fixed angles (0˚), CDsd (x, y, z) = (±4, ±4, ±8) and CAsd (x, y, z) = (±9.1, ±7.5, ±17.6). All simulated values were mean ±SD.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th></th>
+      <th></th>
+      <th>Delta (nm)</th>
+      <th>S(2D) (nm)</th>
+      <th>S(3D) (nm)</th>
+      <th>ML2D (nm)</th>
+      <th>ML3D (nm)</th>
+      <th>α (°)</th>
+      <th>β (°)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Experiment</td>
+      <td>CENP-T(M)-Hec1-9G3</td>
+      <td>60 ± 7.5</td>
+      <td>63.1 ± 11</td>
+      <td>68.6 ± 12.3</td>
+      <td>62.1 ± 11.3</td>
+      <td>66.3 ± 12.3</td>
+      <td>−0.3 ± 21</td>
+      <td>−1.8 ± 23</td>
+    </tr>
+    <tr>
+      <td rowspan="3"></td>
+      <td rowspan="3">Simulation (S = 60 nm)</td>
+      <td colspan="8">SDc (x, y,z) = (±4, ±4, ±8)</td>
+    </tr>
+    <tr>
+      <td>No CAsd</td>
+      <td colspan="2">60.4 ± 5.7</td>
+      <td>61.5 ± 5.8</td>
+      <td>60.4 ± 5.7</td>
+      <td>61.5 ± 5.8</td>
+      <td>0.1 ± 5.4</td>
+      <td>0 ± 10.7</td>
+    </tr>
+    <tr>
+      <td>CAsd (x, y, z) = (±9.1, ±7.5, ±17.6)</td>
+      <td>N/A</td>
+      <td>60.7 ± 10.9</td>
+      <td>64.5 ± 11.3</td>
+      <td>59.7 ± 11</td>
+      <td>62.3 ± 11.5</td>
+      <td>−0.2 ± 9.4</td>
+      <td>−0.1 ± 19.4</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td colspan="3">input values</td>
+      <td colspan="4">simulation results</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>S ± 0 nm</td>
+      <td>α (±0˚)</td>
+      <td>β (±0˚)</td>
+      <td>α˚</td>
+      <td>β˚</td>
+      <td>S(3D) (nm)</td>
+      <td>ML3D (nm)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.3 ± 51.2</td>
+      <td>1.8 ± 51.8</td>
+      <td>22 ± 10.5</td>
+      <td>0 ± 14.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>10</td>
+      <td>0</td>
+      <td>0</td>
+      <td>−2.4 ± 44.8</td>
+      <td>−3.2 ± 48.8</td>
+      <td>24.6 ± 10.9</td>
+      <td>0 ± 15.5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>15</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1.1 ± 36</td>
+      <td>−0.6 ± 43.5</td>
+      <td>26.5 ± 11.1</td>
+      <td>0 ± 16.6</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>20</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.9 ± 30.9</td>
+      <td>−2.4 ± 40.3</td>
+      <td>29.5 ± 11.4</td>
+      <td>20.7 ± 13.8</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>40</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.8 ± 14.8</td>
+      <td>−0.3 ± 27.2</td>
+      <td>47 ± 12.3</td>
+      <td>43.1 ± 12.9</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>60</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.1 ± 9.1</td>
+      <td>−0.5 ± 19.3</td>
+      <td>63.9 ± 11.4</td>
+      <td>61.8 ± 11.5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>80</td>
+      <td>0</td>
+      <td>0</td>
+      <td>−0.1 ± 6.6</td>
+      <td>1 ± 14.3</td>
+      <td>83.1 ± 11.2</td>
+      <td>81.6 ± 11.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>100</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.2 ± 5.5</td>
+      <td>0.3 ± 11.4</td>
+      <td>102.9 ± 11.1</td>
+      <td>101.7 ± 11.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 The measured CAsd (x, y, z) = (±9.1, ±7.5, ±17.6 nm) are only about twice those for centroid determination, and make only a slightly larger contribution to errors in measured S(2D), S(3D), ML2D, ML3D, angle α, and angle β (Table 6A). For S = 60 nm, the mean of S(2D) and S(3D) are increased by a CDsd and CAsd to 61 and 65 nm, but this 1–5 nm error is mostly corrected by application of maximum likelihood fit to yield ML2D = 60 ± 11 nm and ML3D = 62.3 ± 12 nm (Table 6A). This result shows that our method of subtracting the mean values of CA combined with maximum likelihood data analysis can yield accurate mean 3D values for separation vector length.
 
 To see how the CDsd and CAsd of our measurement method affect the SDs in the angles α and β, we entered into the simulation constant values for S between zero and 100 nm (Table 6B). The SD in the angles α and β are largest for small separations (Table 6B). For example, they were 9 and 19 degrees (S = 60 nm) or 6 and 11 degrees (S = 100 nm). These results indicate that our CDsd and CAsd caused about half to two-thirds of the SD measured in cells for separations of 60 nm (SDs of angles α and β were 21 and 23 degrees, respectively; CENP-T-Hec1-9G3 in Figure 3C) or 90 nm (SDs of angles α and β were 16 and 22 degrees, respectively; CENP-A-Hec1-9G3 in Figure 6—figure supplement 2C–D). These simulations also showed that our SDs inhibit maximum likelihood fit below S = ~18 nm (Table 6B). These simulation results indicate that much of our measured SD in the cell is not caused by variability between different kinetochores, but by the SDs in centroid measurement and CA correction.
@@ -116,9 +809,105 @@ To see how the CDsd and CAsd of our measurement method affect the SDs in the ang
 
 There are several key factors that influence the accuracy of the 3D fluorescence co-localization method we used for determining mean separation distances (all factors we identified are listed in Figure 1—source data 1). High S/N and bright specimens are needed for small CDsd. The measurement field should be restricted in area to keep the CAsd small. The correct coverslip thickness should be used to prevent Z-offset. These procedures are important because computer simulations show that mean 2D/3D separations and SDs in angles (α and β) all increase from their true values as a power function of the magnitudes of CDsd, CAsd, and Z-offset (Figure 9A–C). In addition, the use of the maximum likelihood method corrects the overestimate of mean separations obtained from S(2D) and S(3D) (Churchman et al., 2005).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/32418/elife-32418-fig9-v2.jpg)
+
+**Figure 9.:** (A) Plots of simulated S(3D) for 40 nm separation with increasing values of CAsd (SD of CA) where the mean CA values were held constant at our measured values of 13.1, 15.8, and 3.5 nm respectively. Grey dashed line is nearly identical to the CAsd for our measurements and the red dashed line is nearly identical to the CAsd for the Smith et al., 2016 measurements. (B) Plots of SD of simulated angle α and β for 60 nm separation using the same condition in (A). (C) Plots of simulated S(3D) for S = 40 nm separation for increasing values of Z-offset and the CAsd reported by Smith et al. (2016). (D) The simulated 3D separation using our SDs (black bars) or in Smith et al. (2016) (white bars). The true separations (S values) are 40, 60, 70, and 23 nm from left to right, which correspond to the mean values from Delta analysis in Table 7. (E) The simulated mean angle α and β with ±SD for the conditions in (E). Note, the input mean angle α and β were zero, and S = 60 nm.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/32418/elife-32418-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Plots of mean Delta, S(2D), and S(3D) versus sample number (n, log) for separations between CENP-T and Hec1-9G3, and between endogenous CENP-A and Hec1-9G3.
+
 Z-offset is a major source of error only if it is not produced by the specimen. As a general rule, we do not recommend subtracting Z-offset from Sz data since there could be a specimen contribution. When using our method, we recommend repeating the specimen measurement with a 0.17 mm coverslip if Z-offset is larger than ±25 nm to make sure there is not an unknown specimen contribution. Computer simulations of the measurement method showed that only absolute values of Z-offset >30 nm make 3D mean separation measurements significantly larger (Figure 9C). Also, our method produces nearly identical results from multiple samples. Figure 5—source data 1 has measurements between CENP-A and Hec1-9G3 from four different coverslip preparations. Their Z-offsets varied between −17 and 4.4 nm, while their ML3D mean values varied between 86 and 93 nm.
 
 Smith et al., 2016 reported that the mean 3D separation between endogenous CENP-A and the C-terminus of Ndc80 was 81.7 ± 0.7 nm SEM (n = 3302, SD =±40 nm), about 42 nm larger than our measured value of 40 nm ± ~ 10 nm (SD) (Table 7). Table 7 also provides three more examples showing differences of 24 nm to 60 nm between their and our mean 3D separation measurements. Since Smith et al., 2016 used mean CA values for CA correction as we did in this study, we investigated the possibility that significantly higher CDsd and CAsd compared to our values might be responsible for their larger 3D separation values. We estimated the CDsd from the SD of their Delta measurements for CENP-A to Spc24, which was ~35 nm, compared to our value of 6 nm (Figure 9—source data 1) (Smith et al., 2016; Suzuki et al., 2014). This analysis yielded values for CDsd about five times larger than ours (22 nm, 22 nm, and 44 nm compared to 4 nm, 4 nm and 8 nm in the x, y and z directions) (Figure 9—source data 1). Such high CDsd values could explain why their Delta measurements are significantly larger than ours (Figure 9—source data 1). Their reported CAsd was also significantly larger than ours (26 nm, 23 nm and 43 nm compared to 9 nm, 7.5 nm and 18 nm in the x, y and z directions) (Smith et al., 2016). Results of simulations in Figure 9D using the values we estimated for their CDsd and their reported CAsd produce results nearly identical to their mean separation measurements, and show how the differences in the SDs between their and our measurements could be responsible for their much larger values. In addition, the higher levels for CDsd and CAsd are likely responsible for the very large SDs they measured for the angles α and β compared to ours (Figure 9E). In our measurements, large values of Z-offset were rare (Figure 5—source data 1); we have no information to judge how much other sources of error like Z-offset, contributed to the Smith et al. (2016) measurements.
+
+**Table 7.**
+ List of four examples of Delta and 3D mean separation measurements with ±SD from this study and Smith et al., 2016.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Delta (Mean ± SD nm)</th>
+      <th>3D separation (Mean ± SD nm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">1</td>
+      <td>Smith et al., 2016</td>
+      <td>EGFP-CENP-A</td>
+      <td>Ndc80(C-term)</td>
+      <td>58 ± 35 (n = 1002,±1.1 (SE))</td>
+      <td>98 ± 58 (n = 4291,±0.9 (SE))</td>
+    </tr>
+    <tr>
+      <td>Smith et al., 2016</td>
+      <td>endogeous CENP-A</td>
+      <td>Ndc80(C-term)</td>
+      <td>N/A</td>
+      <td>84 ± 40 (n = 3302,±0.7 (SE))</td>
+    </tr>
+    <tr>
+      <td>This study</td>
+      <td>endogeous CENP-A</td>
+      <td>CENP-T (N-term)</td>
+      <td>40 ± 6 (n = 110)</td>
+      <td>46 ± 12 (n = 220)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">2</td>
+      <td>Smith et al., 2016</td>
+      <td>endogenous CENP-C</td>
+      <td>Ndc80 (N-term)</td>
+      <td>N/A</td>
+      <td>103 ± 74 (n = 7476,±0.8 (SE))</td>
+    </tr>
+    <tr>
+      <td>This study</td>
+      <td>endogenous CENP-C</td>
+      <td>Hec1-9G3</td>
+      <td>58 ± 5 (n = 62)</td>
+      <td>67 ± 8 (n = 124)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">3</td>
+      <td>Smith et al., 2016</td>
+      <td>EGFP-CENP-C</td>
+      <td>Ndc80 (N-term)</td>
+      <td>N/A</td>
+      <td>101 ± 76 (n = 1769,±1.8 (SE))</td>
+    </tr>
+    <tr>
+      <td>This study</td>
+      <td>EGFP-CENP-C</td>
+      <td>Hec1-9G3</td>
+      <td>69 ± 9 (n = 102)</td>
+      <td>77 ± 15 (n = 124)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">4</td>
+      <td>Smith et al., 2016</td>
+      <td>EGFP-CENP-O</td>
+      <td>Ndc80(C-term)</td>
+      <td>N/A</td>
+      <td>81 ± 52 (n = 1881,±1.2 (SE))</td>
+    </tr>
+    <tr>
+      <td>This study</td>
+      <td>EGFP-CENP-O</td>
+      <td>Ndc80(C-term)</td>
+      <td>23 ± 11 (n = 97)*</td>
+      <td>21 ± 16 (n = 194)*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*These values were caliculated by (EGFP-CENP-O - Hec1-9G3) minus (Ndc80-EGFP - Hec1-9G3)._
 
 Human kinetochores are built from multiple copies of core-kinetochore proteins (Suzuki et al., 2015). A previous study has shown that the accuracy of separation measurements is sensitive to the spatial staggering of the labeled molecules along the kinetochore inner to outer axis only for stagger greater than 200 nm, which has the possibility of producing two fluorescent peaks instead of a single peak if staggering is not random (Joglekar et al., 2009). All kinetochores labeled by specific antibodies or EGFP in our study exhibited a Gaussian distribution with a single peak. This indicates that our centroid measurements correspond to the mean position of the fluorescently labeled protein epitopes within human kinetochores.
 
@@ -130,38 +919,38 @@ This study provides an optimized 3D fluorescence co-localization method with err
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 HeLa cells were cultured in Dulbecco’s modified Eagle’s medium (Gibco) supplemented with 10% fetal bovine serum (Sigma), 100 U/ml penicillin and 100 mg/ml streptomycin at 37 ˚C in a humidified atmosphere with 5% CO2 (Suzuki et al., 2015). siRNA resistance EGFP-Ndc80, Ndc80-EGFP, EGFP-Nuf2, Nuf2-EGFP, EGFP-Spc24, Spc24-EGFP, EGFP-Spc25, and Spc25-EGFP constructs were linearized by restriction enzymes, and then purified plasmids were transfected using Effectene regents (Qiagen) according to the manufacturer’s instruction. The transfected cells were selected by Geneticin (Invitrogen) 48 hr after transfection. We collected more than 20 individual positive colonies from each transfection, then we tested expression levels of EGFP-tagged proteins by immunofluorescence. We selected cell lines expressing EGFP-fusion protein at a similar level to the endogenous protein, as measured by immunofluorescence stained kinetochores using Spc24 and Hec1-9G3 antibodies. Other EGFP strains were described in a previous study (Suzuki et al., 2015; Suzuki et al., 2014). All cells were monoclonal cell lines. RNAi experiments were conducted using LipofectamineRNAi MAX (Invitrogen) according to the manufacturer’s instructions. siRNA was performed with 100 nM of siRNA duplex and siRNA sequences of CENP-T, CENP-C, Ndc80, and Nuf2 were described previously (DeLuca et al., 2002; Suzuki et al., 2015). Sequences for Spc24 (GGUCGACGAGGACACGACA), Spc25 (CUGCAAAUAUCCAGGAUCU), and Nuf2 (GAAGUCAUGUAUCCACAUU) were used. The efficiency for depletion of CENP-T, CENP-C, and Hec1 was greater than 95% by kinetochore immunofluorescence and western blot (Suzuki et al., 2015). The efficiency for Nuf2, Spc24, and Spc25 was 90, 80, and 70%, respectively, by kinetochore immunofluorescence using Hec1-9G3 antibodies. (We could not obtain antibodies that specifically recognized Nuf2, Spc24, or Spc25.) Although we used siRNA for endogenous proteins when we used cell lines expressing an EGFP tagged protein, there was no significant difference for Delta, 2D, and 3D separation measurements in Ndc80-EGFP stable cells with or without siRNA for Ndc80.
 
-## Sample preparation
+### Sample preparation
 
 Cells were grown on acid washed #1.5 coverslips (~0.17 mm thick, Corning). For Figure 5 experiments, cells were also grown on acid washed #1 or #2 coverslips (Corning). For samples embedded by PBS, cells were grown on 35 mm glass bottom dish with #1.5 coverslip (MatTek). Cells were fixed by pre-warmed 3% PFA (freshly made from paraformaldehyde powder (Sigma)) at 37°C in PHEM buffer (120 mM Pipes, 50 mM HEPES, 20 mM EGTA, 4 mM magnesium acetate, pH7.0) for 10–15 min for all experiments except for those in Figure 7. For Figure 7 experiments, we fixed cells following nine different kinds of fixation (details in Table 4). Method 1: cells were fixed by 3% PFA in PHEM buffer for 10–15 min. Method 2: cells were fixed by 3% PFA in PHEM for 1 min, then cells were incubated in 0.5% triton in PHEM buffer, and cells were re-fixed by 3% PFA in PHEM buffer for an additional 10–15 min. Method 3: cells were incubated in 1% triton in PHEM for 1 min before fixation, then cells were fixed by 3% PFA in PHEM for 10–15 min. Method 4: cells were fixed by 1% GA (Glutaraldehyde, Sigma) in PHEM buffer for 10–15 min. Method 5: cells were fixed by 1% GA with 1% triton in PHEM buffer for 10–15 min. Method 6–7: cells were incubated in 1% triton before fixation, then cells were fixed by 1% GA (Method 6) or 1% GA with 3% PFA (Method 7) in PHEM buffer for 10–15 min. Method 8: cells were fixed by cold MeOH for 15 min at −20 ˚C. Method 9: cells were fixed by 3% PFA with 0.5% triton in PHEM buffer. Method 1 was used in the following studies (Suzuki et al., 2014; Suzuki et al., 2011; Tauchman et al., 2015; Wan et al., 2009), and this study). Methods 5 and 9 were used in Magidson et al. (2016). All fixation, except for Method 8, was performed at 37 ˚C. For samples fixed by GA (Method 4–7), after fixation, samples were incubated in NaBH4 (Sigma) for quenching to reduce autofluorecence. Fixed samples were permeabilized by 0.5% NP40 (Roche) in PHEM buffer, and incubated in 0.5% BSA (Sigma) or BGS (Boiled Goat Serum) or BDS (Boiled Donkey Serum) for 30 min at room temperature. Then, samples were incubated for 1.5 hr at 37°C with primary antibodies. Primary antibodies used in this study are listed in Figure 5—source data 2. CENP-A, CENP-T, and CENP-I antibodies were a gift from Drs. Aaron Straight, Iain Cheeseman, and Song-Tao Liu (Carroll et al., 2009; Gascoigne et al., 2011; Liu et al., 2003). After primary antibody incubation, samples were incubated for an additional 1.5 hr at 37°C with secondary antibodies. Secondary antibodies were conjugated with Alexa488 or Rhodamine Red-X (Jackson ImmunoResearch). After DNA staining by DAPI, samples were mounted using Prolong Gold Aintifade (Molecular Probe) or PBS. For samples mounted with Prolong Gold, we usually waited >1 week for the refractive index to increase to near 1.46.
 
-## Imaging
+### Imaging
 
 For image acquisition, 3D stacks of 70–90 frame pairs of red and green fluorescent images were obtained sequentially at 200 nm steps along the z axis through the cell using MetaMorph 7.8 software (Molecular Devices) and a high-resolution Nikon Ti inverted microscope equipped with an Orca AG cooled CCD camera with gain set to zero (Hamamatsu) and an 100X/1.4NA (PlanApo) DIC oil immersion objective (Nikon). Stage movement was controlled by MS2000-500 (ASI) with piezo-stage for z-axis stepping (Suzuki et al., 2015; Suzuki et al., 2014). The image magnification yielded a 64 nm pixel size. Solid state laser (Andor) illuminations at 488 and 568 nm were projected through Borealis (Andor) for uniform illumination of a spinning disk confocal head (Yokogawa CSU-10; Perkin Elmer). Raw 12 bit images without any image processing were used for all Delta, 2D, 3D separation analysis and signal intensity analysis.
 
-## Intensity analysis
+### Intensity analysis
 
 Integrated fluorescence intensity (minus local back ground (BG)) measurements were obtained for kinetochores as described previously (Suzuki et al., 2015). A 10 × 10 pixel region was centered on a fluorescent kinetochore to obtain integrated fluorescence, whereas a 14 × 14 pixel region centered on the 10 × 10 pixel region was used to obtain surrounding BG intensity. Measured values were calculated by: Fi (integrated fluorescence intensity minus BG)=integrated intensity for 10 × 10 region – (integrated intensity for the 14 × 14 – integrated intensity for 10 × 10) x pixel area of the 10 × 10/(pixel area of the 14 × 14 region – pixel area of a 10 × 10 region). Measurements were made with Metamorph 7.7 software (Molecular Devices) using Region Measurements (Suzuki et al., 2015). For Figure 7, the local kinetochore background signals were measured by (integrated intensity for the 14 × 14 – integrated intensity for 10 × 10) x pixel area of the 10 × 10/(pixel area of the 14 × 14 region – pixel area of a 10 × 10 region). At least two independent replicates of measurements were performed.
 
-## Chromatic aberration (CA) calibration
+### Chromatic aberration (CA) calibration
 
 To calibrate CA of our confocal microscope, we prepared samples with kinetochores stained by Hec1-9G3 primary antibodies and green (Alexa 488) and red (Rhodamine Red-X) labeled secondary antibodies. In addition, we also prepared coverslips with 100 nm or 500 nm TetraSpeck beads (Invitrogen) using a method described previously (Churchman and Spudich, 2012), except for using Prolong Gold as embedding media. X, Y, and Z coordinates of Green and Red fluorophores were determined by a 3D Gaussian fitting function in MatLab (MathWorks) (Wan et al., 2009). Details of CA correction methods are described in Text. Red and green fluorescent beads bound to the inner surface of a coverslip and embedded in Prolong Gold gave similar mean and SD values for CAx, CAy, CAz measured using Hec1-9G3-GR (Data not shown). At least two independent replicates of measurements were performed.
 
-## Delta method
+### Delta method
 
 For each kinetochore, 3D centroid positions were first measured for each fluorescent color by a 3D Gaussian fitting function. For each sister kinetochore pair, the centroids of one color were projected to the axis defined by the centroids of the other color, and the average separation of the projected distance between the signals of different colors for that pair (Wan et al., 2009). At least two independent replicates of Delta measurements were performed.
 
-## 2D and 3D separation measurements
+### 2D and 3D separation measurements
 
 For each single kinetochore, X, Y, Z coordinates for 2D or 3D centroid positions were measured for each fluorescent color by using a 3D Gaussian fitting function and saved in an Excel file. The values of X, Y, Z coordinates were copied into another Excel file named ‘2D 3D separation’. The 2D 3D separation file had all equations and calculated S(2D) and S(3D) using the equations described in Text and Figure 1. We applied Maximum likelihood fit (Churchman et al., 2006) for raw 2D or raw 3D values termed ML2D and ML3D when the separation was larger than 18 nm (See Text). The Matlab program called ML2D and ML3D read the raw 2D and raw 3D values in the Excel file and applied maximum likelihood fit to produce ML2D and ML3D. Then, the final ML2D and ML3D values with SD were copied from Matlab to the 2D 3D separation Excel file. The 2D 3D separation Excel file also provided the values of angle α and β (detail in Text). Note, because angles α and β were the angles relative to K-K axis, it required placing the x, y, z coordinates of sister kinetochore pairs in order. Then, the values were reorganized based on their x coordinate values within sister kinetochore pair in the Excel file. To obtain angle α and β values and also to directly compare the separation values by using Delta, 2D and 3D methods with same data sets, we usually measured sister kinetochore pairs in this study. However, the values for S(2D), S(3D), ML2D, and ML3D do not require sister kinetochore pairs. The programs used in this study can be obtained in the supplementary materials (Source code 2–3). At least two independent replicates of 2D and 3D separation measurements were performed.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical significance was determined using two tailed unpaired student’s t-test for comparison between two independent groups. For significance, **p<0.05 was considered statistically significant. The Delta, 2D, 3D separation and signal intensity experiments were replicated at least two independent experiments.
 
-## Computational simulations
+### Computational simulations
 
 The computational simulation used for Figures 8 and 9 was described in the text, Figure 8, and in the MatLab computer simulation files (Source code 1–3). The simulation code is available as a supplementary material.

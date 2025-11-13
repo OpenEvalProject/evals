@@ -6,13 +6,13 @@
 
 ### Affiliations
 
-1. https://ror.org/02fyxhe35 LinkedIn Mountain View United States
+1. LinkedIn Mountain View United States ([ROR:02fyxhe35](https://ror.org/02fyxhe35))
 
 † Corresponding author
 
 ## Abstract
 
-Understanding how different neuronal types connect and communicate is critical to interpreting brain function and behavior. However, it has remained a formidable challenge to decipher the genetic underpinnings that dictate the specific connections formed between neuronal types. To address this, we propose a novel bilinear modeling approach that leverages the architecture similar to that of recommendation systems. Our model transforms the gene expressions of presynaptic and postsynaptic neuronal types, obtained from single-cell transcriptomics, into a covariance matrix. The objective is to construct this covariance matrix that closely mirrors a connectivity matrix, derived from connectomic data, reflecting the known anatomical connections between these neuronal types. When tested on a dataset of Caenorhabditis elegans , our model achieved a performance comparable to, if slightly better than, the previously proposed spatial connectome model (SCM) in reconstructing electrical synaptic connectivity based on gene expressions. Through a comparative analysis, our model not only captured all genetic interactions identified by the SCM but also inferred additional ones. Applied to a mouse retinal neuronal dataset, the bilinear model successfully recapitulated recognized connectivity motifs between bipolar cells and retinal ganglion cells, and provided interpretable insights into genetic interactions shaping the connectivity. Specifically, it identified unique genetic signatures associated with different connectivity motifs, including genes important to cell-cell adhesion and synapse formation, highlighting their role in orchestrating specific synaptic connections between these neurons. Our work establishes an innovative computational strategy for decoding the genetic programming of neuronal type connectivity. It not only sets a new benchmark for single-cell transcriptomic analysis of synaptic connections but also paves the way for mechanistic studies of neural circuit assembly and genetic manipulation of circuit wiring.
+Understanding how different neuronal types connect and communicate is critical to interpreting brain function and behavior. However, it has remained a formidable challenge to decipher the genetic underpinnings that dictate the specific connections formed between neuronal types. To address this, we propose a novel bilinear modeling approach that leverages the architecture similar to that of recommendation systems. Our model transforms the gene expressions of presynaptic and postsynaptic neuronal types, obtained from single-cell transcriptomics, into a covariance matrix. The objective is to construct this covariance matrix that closely mirrors a connectivity matrix, derived from connectomic data, reflecting the known anatomical connections between these neuronal types. When tested on a dataset of Caenorhabditis elegans, our model achieved a performance comparable to, if slightly better than, the previously proposed spatial connectome model (SCM) in reconstructing electrical synaptic connectivity based on gene expressions. Through a comparative analysis, our model not only captured all genetic interactions identified by the SCM but also inferred additional ones. Applied to a mouse retinal neuronal dataset, the bilinear model successfully recapitulated recognized connectivity motifs between bipolar cells and retinal ganglion cells, and provided interpretable insights into genetic interactions shaping the connectivity. Specifically, it identified unique genetic signatures associated with different connectivity motifs, including genes important to cell-cell adhesion and synapse formation, highlighting their role in orchestrating specific synaptic connections between these neurons. Our work establishes an innovative computational strategy for decoding the genetic programming of neuronal type connectivity. It not only sets a new benchmark for single-cell transcriptomic analysis of synaptic connections but also paves the way for mechanistic studies of neural circuit assembly and genetic manipulation of circuit wiring.
 
 ## Introduction
 
@@ -24,9 +24,9 @@ Drawing inspiration from the field of machine learning, particularly recommendat
 
 This bilinear modeling approach was first applied to a Caenorhabditis elegans (C. elegans) neuronal dataset, where it not only matched but slightly outperformed the spatial connectome model (SCM) in reconstructing the connectivity of electrical synapses or gap junctions from innexin gene expressions. Notably, it revealed additional genetic interactions beyond those uncovered by the SCM. When extended to mouse retinal neurons, we demonstrate that it could effectively reconstruct synaptic connectivity between bipolar cells (BCs) and retinal ganglion cells (RGCs) from their gene expressions. The model not only unveils connectivity motifs between BCs and RGCs but also provides biologically meaningful insights into candidate genes and the genetic interactions that orchestrate this connectivity. Furthermore, our model predicts potential BC partners for RGC transcriptomic types, with these predictions aligned substantially with functional descriptions of these cell types from previous studies. Collectively, this work significantly contributes to the ongoing exploration of the genetic code underlying neuronal connectivity and suggests a potential paradigm shift in the analysis of single-cell transcriptomic data in neuroscience.
 
-## Background
+### Background
 
-## Synaptic specificity
+#### Synaptic specificity
 
 The intricate neural networks that form the basis of our nervous system are a product of specific synaptic connections between different types of neurons. This specificity is not a mere coincidence but a meticulously orchestrated process that underpins the functionality of the entire network (Sanes and Zipursky, 2020; Martin et al., 2020). Each neuron can form thousands of connections, or synapses, with other neurons, and the specificity of these connections determines the neuron’s function and, by extension, the network’s function as a whole.
 
@@ -36,7 +36,7 @@ The genetic principles guiding the formation of these specific connections, part
 
 Emerging tools and technologies offer unprecedented opportunities to unravel these mysteries. Among these, transcriptome and connectome are particularly promising (Sanes and Zipursky, 2020; Fornito et al., 2019). Transcriptome, the complete set of RNA transcripts produced by the genome, can provide valuable insights into the genes that are active in different types of neurons and at different stages of neuronal development. This can help identify candidate genes that may play a role in guiding neuronal connectivity. Connectome, on the other hand, provides a detailed map of the connections between neurons. By combining information from transcriptome and connectome, it is possible to link specific genes to specific connections, thereby shedding light on the genetic basis of synaptic connectivity.
 
-## Previous approaches
+#### Previous approaches
 
 Prior research has reported several methodologies to unravel the genetic underpinnings of neuronal connectivity. For instance, Kaufman et al. showed a correlation between gene expression of C. elegans neurons and their connectivity (Kaufman et al., 2006), and Varadan et al. developed an entropy minimization approach for understanding the molecular logic of synaptic connectivity in C. elegans (Varadan et al., 2006). These models, however, did not fully account for spatial constraints for synaptic formation.
 
@@ -46,115 +46,229 @@ Additionally, Taylor et al. introduced the network differential gene expression 
 
 While the SCM and nDGE models have focused on the connectivity of individual neurons and were tested using C. elegans datasets, their generalization to neuronal cell types has not been explored. As we move from the invertebrate nervous systems to the neural architectures of vertebrates, such as those in mice or macaques, we need methodologies capable of unraveling the genetic basis of neuronal type connectivity (Zeng and Sanes, 2017; Zeng, 2022).
 
-## Collaborative filtering
+#### Collaborative filtering
 
 Our strategy draws inspiration from the concept of collaborative filtering using bilinear models, a technique fundamental to recommendation systems (Ricci et al., 2011; Su and Khoshgoftaar, 2009). These systems predict a user’s preference for an item (e.g. a movie or product) based on user-item interaction data.
 
-Bilinear models capture the interaction between users and items via low-dimensional latent features (Koren et al., 2009; Rendle et al., 2012). Mathematically, for user i and item j, we denote their original features as 𝒙i∈𝐑1×p and 𝒚j∈𝐑1×q, respectively. These features are then projected into a shared latent space with dimension d via transformations 𝒙i⁢𝑨 (where 𝑨∈𝐑p×d) and 𝒚j⁢𝑩 (where 𝑩∈𝐑q×d). The predicted rating of the user for the item is then formulated as:(1)rij=(xiA)(yjB)T
+Bilinear models capture the interaction between users and items via low-dimensional latent features (Koren et al., 2009; Rendle et al., 2012). Mathematically, for user $i$ and item $j$, we denote their original features as $𝒙_{i}\in𝐑^{1\timesp}$ and $𝒚_{j}\in𝐑^{1\timesq}$, respectively. These features are then projected into a shared latent space with dimension $d$ via transformations $𝒙_{i}⁢𝑨$ (where $𝑨\in𝐑^{p\timesd}$) and $𝒚_{j}⁢𝑩$ (where $𝑩\in𝐑^{q\timesd}$). The predicted rating of the user for the item is then formulated as:
 
-In the context of collaborative filtering, the goal is to optimize the transformation matrices 𝑨 and 𝑩 to align the predicted rating rij with the ground-truth zij. This is expressed as the following optimization problem:(2)minA,B∑ij(zij−(xiA)(yjB)T)2
+$$
+r_{ij}=(x_{i}A)(y_{j}B)^{T}
+$$
 
-Or in the matrix form:(3)minA,B||Z−(XA)(YB)T||F2
+In the context of collaborative filtering, the goal is to optimize the transformation matrices $𝑨$ and $𝑩$ to align the predicted rating $r_{ij}$ with the ground-truth $z_{ij}$. This is expressed as the following optimization problem:
 
-Here, the objective is to minimize the Frobenius norm of the residual matrix 𝒁-(𝑿⁢𝑨)⁢(𝒀⁢𝑩)T.
+$$
+minA,B\sumij(z_{ij}−(x_{i}A)(y_{j}B)^{T})^{2}
+$$
+
+Or in the matrix form:
+
+$$
+minA,B||Z−(XA)(YB)^{T}||_{F}^{2}
+$$
+
+Here, the objective is to minimize the Frobenius norm of the residual matrix $𝒁-(𝑿⁢𝑨)⁢(𝒀⁢𝑩)^{T}$.
 
 In our study, we interpret neuronal connectivity through the lens of recommendation systems, viewing presynaptic neurons as ‘users’, postsynaptic neurons as ‘items’, and the synapses formed between them as ‘ratings’. Our chosen bilinear model extracts latent features of pre- and post-synaptic neurons from their respective gene expressions. One key advantage of the bilinear model is its capacity to assign different weights to the gene expressions of pre- and post-synaptic neurons, enabling the model to capture not just homogeneous but also complex, heterogeneous interactions fundamental to understanding neuronal connectivity. Prior studies have highlighted such heterogeneous interactions, noting the formation of connections between pre- and post-synaptic neurons expressing different cadherins, indicative of a heterogeneous adhesion process (Duan et al., 2014; Duan et al., 2018).
 
 ## Results
 
-## Bilinear model for neuronal type connectivity
+### Bilinear model for neuronal type connectivity
 
 We discuss the bilinear model for neuronal type connectivity in the following two scenarios: the first in which gene expression and connectivity of each cell are known simultaneously and the second where connectivity and gene expressions of neuronal types are from different sources. The bilinear models for these two situations are illustrated in Figure 1.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/91532/elife-91532-fig1-v1.jpg)
 
-**Figure 1.:** (a) In an ideal scenario where gene expression profiles and connectivity data of individual cells are available simultaneously, we establish the relationship between connectivity and gene expression profiles via two transformation matrices  and 𝑨 (𝑩b) In practical situations where the gene expression profiles are derived from distinct sources, such as single-cell transcriptomic and connectomic data, we propose that the connectivity of individual cells and their latent gene expression features can be approximated by the averages of their corresponding cell types, and establish their relationship through transformation matrices  and 𝑨^.𝑩^
+**Figure 1.:** (a) In an ideal scenario where gene expression profiles and connectivity data of individual cells are available simultaneously, we establish the relationship between connectivity and gene expression profiles via two transformation matrices $𝑨$ and $𝑩$ (b) In practical situations where the gene expression profiles are derived from distinct sources, such as single-cell transcriptomic and connectomic data, we propose that the connectivity of individual cells and their latent gene expression features can be approximated by the averages of their corresponding cell types, and establish their relationship through transformation matrices $𝑨^$ and $𝑩^$.
 
-## Gene expression and connectivity of each cell are known simultaneously
+#### Gene expression and connectivity of each cell are known simultaneously
 
-We begin with an ideal scenario where both the gene expression profiles and connectivity of individual cells are known concurrently. In this setting, we have a presynaptic neuronal types and b postsynaptic neuronal types, indexed by i and j, respectively. Each type contains a number of neurons, signified as ni for presynaptic and nj for postsynaptic types. The gene expression vector for the kth cell in the presynaptic type i is designated as 𝒙(i⁢k), where k∈1,2,...,ni, while for the lth cell in postsynaptic type j, it is 𝒚(j⁢l) with l∈1,2,...,nj. We depict the connectivity metric between a presynaptic neuron and a postsynaptic neuron as z(ik)(jl).
+We begin with an ideal scenario where both the gene expression profiles and connectivity of individual cells are known concurrently. In this setting, we have $a$ presynaptic neuronal types and $b$ postsynaptic neuronal types, indexed by $i$ and $j$, respectively. Each type contains a number of neurons, signified as $n_{i}$ for presynaptic and $n_{j}$ for postsynaptic types. The gene expression vector for the $k^{th}$ cell in the presynaptic type $i$ is designated as $𝒙_{(i⁢k)}$, where $k\in1,2,...,n_{i}$, while for the $l^{th}$ cell in postsynaptic type $j$, it is $𝒚_{(j⁢l)}$ with $l\in1,2,...,n_{j}$. We depict the connectivity metric between a presynaptic neuron and a postsynaptic neuron as $z_{(ik)(jl)}$.
 
-Drawing from the principles of collaborative filtering, we develop the following optimization objective:(4)minA,B∑i=1a∑j=1b(1ninj∑k=1ni∑l=1nj(z(ik)(jl)−(x(ik)A)(y(jl)B)T)2)
+Drawing from the principles of collaborative filtering, we develop the following optimization objective:
 
-Here, 𝑨 and 𝑩 denote the transformation matrices we aim to learn. This formula can also be expressed in its matrix form as:(5)minA,B||W⊙(Z−(XA)(YB)T)||F2
+$$
+minA,B\sumi=1a\sumj=1b(\frac{1}{n_{i}n_{j}}\sumk=1n_{i}\suml=1n_{j}(z_{(ik)(jl)}−(x_{(ik)}A)(y_{(jl)}B)^{T})^{2})
+$$
 
-In this equation, 𝑾 symbolizes a weight matrix where each element w(ik)(jl)=1ninj. As our study focuses on the genetic code of pre- and post-synaptic neuronal types rather than individual neurons, this weight matrix ensures that the model does not disproportionately favor neuronal types with a greater number of neurons over rarer types. Note that this formulation can be generalized to individual cell level analysis by treating each cell as a type and setting ni=nj=1, thus allowing exploration of genetic underpinnings of connectivity at the single-cell resolution.
+Here, $𝑨$ and $𝑩$ denote the transformation matrices we aim to learn. This formula can also be expressed in its matrix form as:
+
+$$
+minA,B||W⊙(Z−(XA)(YB)^{T})||_{F}^{2}
+$$
+
+In this equation, $𝑾$ symbolizes a weight matrix where each element $w_{(ik)(jl)}=\frac{1}{\sqrt{n_{i}n_{j}}}$. As our study focuses on the genetic code of pre- and post-synaptic neuronal types rather than individual neurons, this weight matrix ensures that the model does not disproportionately favor neuronal types with a greater number of neurons over rarer types. Note that this formulation can be generalized to individual cell level analysis by treating each cell as a type and setting $n_{i}=n_{j}=1$, thus allowing exploration of genetic underpinnings of connectivity at the single-cell resolution.
 
 In the context of high dimensionality of gene expressions, the bilinear model may face a common issue in machine learning called multicollinearity, a condition where one or more predictor variables are highly correlated. To mitigate this, we can perform principal component analysis (PCA) on the gene expression vectors, transforming them into a new coordinate system and removing components with negligible eigenvalues to reduce redundant information. Alternatively, we can apply regularization techniques, such as L2 regularization (Ridge) or L1 regularization (Lasso) to effectively manage the multicollinearity. These regularization methods work by imposing a penalty on the size of the linear coefficients in the model, thereby shrinking the coefficients and stabilizing their estimates.
 
-Incorporating L2 regularization, we minimize the following loss function with regularization hyperparameters λA and λB:(6)L(A,B)=||W⊙(Z−(XA)(YB)T)||F2+λA2||A||F2+λB2||B|F2
+Incorporating L2 regularization, we minimize the following loss function with regularization hyperparameters $\lambda_{A}$ and $\lambda_{B}$:
 
-To optimize this function, we propose an alternative gradient descent algorithm. This algorithm alternates between updating the transformation matrices 𝑨 and 𝑩, using the gradient descent optimization method.
+$$
+L(A,B)=||W⊙(Z−(XA)(YB)^{T})||_{F}^{2}+\frac{\lambda_{A}}{2}||A||_{F}^{2}+\frac{\lambda_{B}}{2}||B|_{F}^{2}
+$$
 
-The algorithm begins by initializing transformation matrices 𝑨 and 𝑩 using random values drawn from a standard normal distribution. The central aspect of the algorithm is an iterative loop that alternates the updates of 𝑨 and 𝑩. During each iteration, the algorithm first computes the predicted connectivity metric 𝒁 using the current estimates of 𝑨 and 𝑩. Subsequently, the gradient of the loss function with respect to the transformation matrices is calculated, and the matrices are updated by moving in the negative gradient’s direction. This iterative process is repeated until the transformation matrices 𝑨 and 𝑩 converge to a steady solution. Upon completion, the algorithm yields the optimized transformation matrices.
+To optimize this function, we propose an alternative gradient descent algorithm. This algorithm alternates between updating the transformation matrices $𝑨$ and $𝑩$, using the gradient descent optimization method.
+
+The algorithm begins by initializing transformation matrices $𝑨$ and $𝑩$ using random values drawn from a standard normal distribution. The central aspect of the algorithm is an iterative loop that alternates the updates of $𝑨$ and $𝑩$. During each iteration, the algorithm first computes the predicted connectivity metric $𝒁$ using the current estimates of $𝑨$ and $𝑩$. Subsequently, the gradient of the loss function with respect to the transformation matrices is calculated, and the matrices are updated by moving in the negative gradient’s direction. This iterative process is repeated until the transformation matrices $𝑨$ and $𝑩$ converge to a steady solution. Upon completion, the algorithm yields the optimized transformation matrices.
 
 This gradient descent-based algorithm provides a computationally efficient solution to the bilinear mapping problem between gene expression profiles and connectivity metrics. As a result, it produces associations between gene expression profiles of cell types and their connectivity.
 
-## Connectivity and gene expressions of neuronal types are from different sources
+<table>
+  <thead>
+    <tr>
+      <th>Algorithm 1. Alternative Gradient Descent (AGD) for ‘Gene expression and connectivity of each cell are known simultaneously’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1: Procedure AGD (𝒁,𝑿,𝒀,d,r,λA,λB)       ▹d: latent space dimension; r: learning rate2:   q←second dimension of ⁢𝑿 3:   p←second dimension of ⁢𝒀 4:   Initialize 𝑨 with random values of size (q,d) 5:   Initialize 𝑩 with random values of size (p,d) 6:   while not converged do7:     𝒁^←𝑿⁢𝑨⁢(𝒀⁢𝑩)T▹𝒁^                         ▹Z^: prediction of 𝒁¯ 8:     Compute 𝑨grad←2⁢𝑿T⁢(𝑾⊙(𝒁^-𝒁))⁢𝒀⁢𝑩+λA⁢𝑨 9:     Update 𝑨←𝑨-r*𝑨grad 10:     Compute 𝑩grad←2⁢𝒀T⁢(𝑾⊙(𝒁^-𝒁))T⁢𝑿⁢𝑨+λB⁢𝑩 11:     Update 𝑩←𝑩-r*𝑩grad 12:   end while13:   return 𝑨, 𝑩 14:  end procedure</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Connectivity and gene expressions of neuronal types are from different sources
 
 In real scenarios, gene expression profiles and connectivity information are often derived from separate sources, such as single-cell sequencing (Shekhar et al., 2016; Tran et al., 2019) and connectome data (Helmstaedter et al., 2013; Bae et al., 2018; Greene et al., 2016). Bridging these datasets requires classifying neurons into cell types based on their gene expression profiles and morphological characteristics. These cell types from different sources are subsequently aligned according to established biological knowledge (e.g. specific gene markers are known to be expressed in certain morphologically defined cell types Goetz et al., 2022).
 
-The primary challenge in this scenario is that, while we can align cell types (denoted by indices i and j in Equation 4), we are unable to associate individual cells (represented by indices k and l in Equation 4). To tackle this issue, we adopt a simplifying assumption that the connectivity and latent gene expression features of individual cells can be approximated by the averages of their corresponding cell types. This premise hinges on the notion that the connectivity metrics and latent gene expression features of individual cells are close enough to the mean value of their corresponding cell types.
+The primary challenge in this scenario is that, while we can align cell types (denoted by indices i and $j$ in Equation 4), we are unable to associate individual cells (represented by indices $k$ and $l$ in Equation 4). To tackle this issue, we adopt a simplifying assumption that the connectivity and latent gene expression features of individual cells can be approximated by the averages of their corresponding cell types. This premise hinges on the notion that the connectivity metrics and latent gene expression features of individual cells are close enough to the mean value of their corresponding cell types.
 
-As a result, our optimization objective in Equation 4 becomes:(7)minA,B∑i=1a∑j=1b(z(i.)(j.)−(x(i.)A)(y(j.)B)T)2
+As a result, our optimization objective in Equation 4 becomes:
 
-In this equation, z(i.)(j.) denotes the mean connectivity metric between presynaptic cell type i and postsynaptic cell type j. Meanwhile, 𝒙(i.) and 𝒚(j.) represent the average gene expressions of cell types i and j respectively.
+$$
+minA,B\sumi=1a\sumj=1b(z_{(i.)(j.)}−(x_{(i.)}A)(y_{(j.)}B)^{T})^{2}
+$$
 
-While optimizing the transformation matrices 𝑨 and 𝑩, we impose constraints on these matrices to ensure that the variance of latent gene expression features within each neuronal type is minimized. Specifically, we define ϵ as a small enough value and impose the following constraints on 𝑨:(8)||ATΣxA||F2≤ϵ
+In this equation, $z_{(i.)(j.)}$ denotes the mean connectivity metric between presynaptic cell type i and postsynaptic cell type $j$. Meanwhile, $𝒙_{(i.)}$ and $𝒚_{(j.)}$ represent the average gene expressions of cell types i and $j$ respectively.
 
-where(9)Σx=∑i=1a(1ni∑k=1ni(x(ik)−x(i.))T(x(ik)−x(i.)))
+While optimizing the transformation matrices $𝑨$ and $𝑩$, we impose constraints on these matrices to ensure that the variance of latent gene expression features within each neuronal type is minimized. Specifically, we define $ϵ$ as a small enough value and impose the following constraints on $𝑨$:
 
-and 𝑩:(10)||BTΣyB||F2≤ϵ
+$$
+||A^{T}Σ_{x}A||_{F}^{2}\leqϵ
+$$
 
-where(11)Σy=∑j=1b(1nj∑l=1nj(y(jl)−y(j.))T(y(jl)−y(j.)))
+where
 
-These conditions assure that the latent gene expression features of individual cells are proximate enough to the average value within their respective cell types. With these constraints in mind, we formulate the optimization problem as follows:(12)minA,B||Z¯−X¯A(Y¯B)T||F2,s.t.||ATΣxA||F2≤ϵ,||BTΣyB||F2≤ϵ
+$$
+Σ_{x}=\sumi=1a(\frac{1}{n_{i}}\sumk=1n_{i}(x_{(ik)}−x_{(i.)})^{T}(x_{(ik)}−x_{(i.)}))
+$$
 
-In this equation, 𝑿¯∈𝐑a×p denotes the average gene expressions of the a presynaptic cell types, wherein each element x¯im is indicative of the average gene expression feature m within cell type i. Likewise, 𝒀¯∈𝐑b×q represents the average gene expressions of the b postsynaptic cell types, with each element y¯jm signifying the average gene expression feature m in cell type j.
+and $𝑩$:
 
-In practical application, we approximate 𝚺x and 𝚺y with their diagonal estimates diag(σ^x12,σ^x22,...,σ^xp2) and diag(σ^y12,σ^y22,...,σ^yq2)(Butler et al., 2018; Stuart et al., 2019). We then transform the initial optimization problem into the following:(13)minA^,B^||Z¯−X^A^(Y^B^)T||F2,s.t.||A^TA^||F2≤ϵ,||B^TB^||F2≤ϵ
+$$
+||B^{T}Σ_{y}B||_{F}^{2}\leqϵ
+$$
 
-where elements in 𝑿^∈𝐑a×p are defined as x^im=x¯imσ^xm and elements in 𝒀^∈𝐑b×q are given by y^im=y¯imσ^ym. The optimization of this formulation tends to be computationally more tractable.
+where
 
-Here, instead of aligning at the level of individual cells, we focus on the alignment of neuronal types. We achieve this by mapping gene expressions into a latent space via transformation matrices 𝑨^ and 𝑩^, with the optimization process aiming to minimize the discrepancies between these two sources of information while maintaining consistency of the gene expression features within individual neuronal types.
+$$
+Σ_{y}=\sumj=1b(\frac{1}{n_{j}}\suml=1n_{j}(y_{(jl)}−y_{(j.)})^{T}(y_{(jl)}−y_{(j.)}))
+$$
 
-To solve the optimization problem as outlined in Equation 13, we construct the following loss function:(14)L(A^,B^)=||Z¯−X^A^(Y^B^)T||F2+λA2||A^TA^||F2+λB2||B^TB^||F2
+These conditions assure that the latent gene expression features of individual cells are proximate enough to the average value within their respective cell types. With these constraints in mind, we formulate the optimization problem as follows:
 
-where λA and λB are hyperparameters whose optimal values are determined through a grid search.
+$$
+minA,B||Z¯−X¯A(Y¯B)^{T}||_{F}^{2},s.t.||A^{T}Σ_{x}A||_{F}^{2}\leqϵ,||B^{T}Σ_{y}B||_{F}^{2}\leqϵ
+$$
 
-To optimize this loss function, we employ an alternative gradient descent algorithm analogous to that described above, by iteratively updating the transformation matrices 𝑨^ and 𝑩^.
+In this equation, $𝑿¯\in𝐑^{a\timesp}$ denotes the average gene expressions of the $a$ presynaptic cell types, wherein each element $x¯_{im}$ is indicative of the average gene expression feature $m$ within cell type i. Likewise, $𝒀¯\in𝐑^{b\timesq}$ represents the average gene expressions of the $b$ postsynaptic cell types, with each element $y¯_{jm}$ signifying the average gene expression feature $m$ in cell type $j$.
 
-## Comparative analysis of bilinear model and SCM of using C. elegans neuronal data
+In practical application, we approximate $𝚺_{x}$ and $𝚺_{y}$ with their diagonal estimates $diag(\sigma^_{x_{1}}^{2},\sigma^_{x_{2}}^{2},...,\sigma^_{x_{p}}^{2})$ and $diag(\sigma^_{y_{1}}^{2},\sigma^_{y_{2}}^{2},...,\sigma^_{y_{q}}^{2})$(Butler et al., 2018; Stuart et al., 2019). We then transform the initial optimization problem into the following:
 
-## Reconstruction of C. elegans gap junction connectivity from innexin expressions
+$$
+minA^,B^||Z¯−X^A^(Y^B^)^{T}||_{F}^{2},s.t.||A^^{T}A^||_{F}^{2}\leqϵ,||B^^{T}B^||_{F}^{2}\leqϵ
+$$
 
-Utilizing the C. elegans neuronal dataset, we first tried to reconstruct the gap junction connectivity network based solely on the expression profiles of innexin genes. Using 𝑨 and 𝑩 generated by the bilinear model, we processed the innexin expression data to predict gap junction connectivity between neuron pairs as 𝑿⁢𝑨⁢(𝒀⁢𝑩)T (Figure 2a). This approach was then compared to the SCM proposed by Kovács et al., 2020, which used a rule matrix 𝑶 to correlate gene expression with observed connectivity in the form of 𝑿⁢𝑶⁢𝑿T (Figure 2b).
+where elements in $𝑿^\in𝐑^{a\timesp}$ are defined as $x^_{im}=\frac{x¯_{im}}{\sigma^_{x_{m}}}$ and elements in $𝒀^\in𝐑^{b\timesq}$ are given by $y^_{im}=\frac{y¯_{im}}{\sigma^_{y_{m}}}$. The optimization of this formulation tends to be computationally more tractable.
+
+Here, instead of aligning at the level of individual cells, we focus on the alignment of neuronal types. We achieve this by mapping gene expressions into a latent space via transformation matrices $𝑨^$ and $𝑩^$, with the optimization process aiming to minimize the discrepancies between these two sources of information while maintaining consistency of the gene expression features within individual neuronal types.
+
+To solve the optimization problem as outlined in Equation 13, we construct the following loss function:
+
+$$
+L(A^,B^)=||Z¯−X^A^(Y^B^)^{T}||_{F}^{2}+\frac{\lambda_{A}}{2}||A^^{T}A^||_{F}^{2}+\frac{\lambda_{B}}{2}||B^^{T}B^||_{F}^{2}
+$$
+
+where $\lambda_{A}$ and $\lambda_{B}$ are hyperparameters whose optimal values are determined through a grid search.
+
+To optimize this loss function, we employ an alternative gradient descent algorithm analogous to that described above, by iteratively updating the transformation matrices $𝑨^$ and $𝑩^$.
+
+<table>
+  <thead>
+    <tr>
+      <th>Algorithm 2. Alternative Gradient Descent (AGD) for ‘Connectivity and gene expressions of neuronal types are from different sources’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1:  Procedure AGD(𝒁¯,𝑿^,𝒀^,d,r,λA,λB)      ▹d: latent space dimension; r: learning rate2:   q←second dimension of ⁢𝑿^ 3:   p←second dimension of ⁢𝒀^ 4:   Initialize 𝑨^ with random values of size (q,d) 5:   Initialize 𝑩^ with random values of size (p,d) 6:   while not converge do7:     𝒁^←𝑿^⁢𝑨^⁢(𝒀^⁢𝑩^)T▹𝒁^                       ▹Z^: prediction of 𝒁¯ 8:     Compute 𝑨^g⁢r⁢a⁢d←𝑿^T⁢(𝒁^-𝒁¯)⁢𝒀^⁢𝑩^+λA⁢𝑨^⁢(𝑨^T⁢𝑨^) 9:     Update 𝑨^←𝑨^-r*𝑨^g⁢r⁢a⁢d 10:     Compute 𝑩^g⁢r⁢a⁢d←𝒀^T⁢(𝒁^-𝒁¯)⁢𝑿^⁢𝑨^+λB⁢𝑩^⁢(𝑩^T⁢𝑩^) 11:     Update 𝑩^←𝑩^-r*𝑩^g⁢r⁢a⁢d 12:   end while13:   return 𝑨^, 𝑩^ 14: end procedure</td>
+    </tr>
+  </tbody>
+</table>
+
+### Comparative analysis of bilinear model and SCM of using C. elegans neuronal data
+
+#### Reconstruction of C. elegans gap junction connectivity from innexin expressions
+
+Utilizing the C. elegans neuronal dataset, we first tried to reconstruct the gap junction connectivity network based solely on the expression profiles of innexin genes. Using $𝑨$ and $𝑩$ generated by the bilinear model, we processed the innexin expression data to predict gap junction connectivity between neuron pairs as $𝑿⁢𝑨⁢(𝒀⁢𝑩)^{T}$ (Figure 2a). This approach was then compared to the SCM proposed by Kovács et al., 2020, which used a rule matrix $𝑶$ to correlate gene expression with observed connectivity in the form of $𝑿⁢𝑶⁢𝑿^{T}$ (Figure 2b).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/91532/elife-91532-fig2-v1.jpg)
+
+**Figure 2.:** (a) Connectivity matrix predicted by the bilinear model. (b) Connectivity matrix modeled from Kovács et al.’s SCM. (c) Observed gap junction connectivity matrix, serving as ground truth. The color spectrum from red to gray denotes the spectrum from strong connections to weak or no connections. (d) ROC curves from both the bilinear model and the SCM. Dashed line indicates the chance level.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91532/elife-91532-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Heatmap plot of the logarithm (base 10) of the validation loss, showing variations with respect to $\lambda$ across [10−8, 10−6, 0.0001, 0.01, 1] and dimensionality across [2, 4, 6, 8, 10, 12, 14, 16]. (b) Plot showing the logarithm (base 10) of the validation loss against $\lambda$ over the range [10−8, 10−6, 0.0001, 0.01, 1]. (c) Plot displaying the logarithm (base 10) of the validation loss against dimensionality over the range [2, 4, 6, 8, 10, 12, 14, 16].
 
 The effectiveness of both models was evaluated against the observed gap junction connectivity matrix of C. elegans neurons (Figure 2c). Given the binary nature of the ground truth matrix (where 1 denotes a connection and 0 indicates its absence) and the continuous nature of reconstructed connectivity matrices from both models, we conducted Receiver Operating Characteristic (ROC) analysis. This involves varying a threshold to binarize the continuous predictions, under which the true positive rate is plotted against the false positive rate for each possible cutoff. This process yields the ROC curve, which is a graphical representation of the trade-off between sensitivity and specificity at various thresholds (Figure 2d).
 
 Subsequently, we calculated the Area Under the ROC Curve (AUC), providing a singular value summarizing the overall predictive performance of the model across all thresholds. The ROC-AUC metric is particularly informative as it aggregates the model’s effectiveness over all possible thresholds, with a score of 1 indicating perfect prediction and 0.5 denoting a performance no better than random chance. From the calculation, the bilinear model achieved a ROC-AUC score of 0.6435, slightly surpassing the SCM’s score of 0.6428. While both scores are reasonably close, the slight edge of the bilinear model indicates its nuanced efficiency in mapping gene expressions to connectivity. However, it is noteworthy that both scores, while above 0.5, are substantially distant from the ideal score of 1. This observation suggests that relying exclusively on innexin expression data might be insufficient for fully capturing the detailed gap junction connectivity in C. elegans.
 
-## Comparison of rule matrix from SCM and bilinear transformation matrices
+#### Comparison of rule matrix from SCM and bilinear transformation matrices
 
-In light of the challenge in fully capturing the C. elegans gap junction connectivity based on innexin expression data alone, instead of analyzing connectivity motifs between C. elegans neurons, our focus pivoted towards exploring and comparing the genetic rules inferred by both the bilinear model and the SCM, which was also the key discussion presented in Kovács et al., 2020. As mentioned in ‘C. elegans neuronal dataset’ and discussed in the Disscussion, the product of the bilinear transformation matrices, 𝑶^=𝑨⁢𝑩T, can be interpreted as a lower-dimensional reconstruction of the rule matrix 𝑶 used in the SCM. This perspective steered us to a meticulous comparative analysis between the two matrices.
+In light of the challenge in fully capturing the C. elegans gap junction connectivity based on innexin expression data alone, instead of analyzing connectivity motifs between C. elegans neurons, our focus pivoted towards exploring and comparing the genetic rules inferred by both the bilinear model and the SCM, which was also the key discussion presented in Kovács et al., 2020. As mentioned in ‘C. elegans neuronal dataset’ and discussed in the Disscussion, the product of the bilinear transformation matrices, $𝑶^=𝑨⁢𝑩^{T}$, can be interpreted as a lower-dimensional reconstruction of the rule matrix $𝑶$ used in the SCM. This perspective steered us to a meticulous comparative analysis between the two matrices.
 
 The rule matrix solved from the SCM establishes a baseline for the comparison (Figure 3b). Against that, we compared the product of the bilinear transformation matrices (Figure 3a). Visualization of the two matrices suggests a high degree of similarity between them, which is quantitatively supported by a Pearson correlation coefficient of 0.90 (p < 0.001), underscoring a strong alignment.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91532/elife-91532-fig3-v1.jpg)
+
+**Figure 3.:** (a) The rule matrix $𝑨⁢𝑩^{T}$ derived from the bilinear model. (b) The rule matrix $𝑶$ from the SCM. Black boxes highlight entries with substantial differences.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91532/elife-91532-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Discrepancy scores (DS) identifying divergences between the models’ rule matrices. (b, c) Significant entries from the bilinear model’s rule matrix (b) and the SCM’s rule matrix (c), respectively, with DS exceeding 0.5 and matrix entries no less than 0.1.
 
 To discern specific genetic interactions uniquely characterized by each model, we applied the DS metric to corresponding matrix entries (Figure 3—figure supplement 1a; see ‘Methods and supplementary materials’ for details). This metric, ranging from 0 (no discrepancy) to 1 (maximum discrepancy), was thresholded at 0.5 to highlight entries with substantial differences. Further, to account for the regularization effect that pushes less important coefficients toward zero, we filtered out entry pairs where both values were less than 0.1 (Figure 3—figure supplement 1b and c). The remaining pairs are highlighted in black boxes in both matrices (Figure 3).
 
 Comparing the values of highlighted entry pairs, we found that the bilinear model not only captured all genetic interactions identified by the SCM but also inferred additional ones: certain innexins (inx-11, inx-8, inx-5, and inx-2) were implicated in co-expression patterns within connected neurons, while another set (inx-11, inx-9, inx-3, inx-5, inx-7) was associated with an avoidance pattern, suggesting a lack of co-expression in neuron pairs forming gap junctions. These findings provide extra candidates to be tested in future experiments.
 
-## Application of bilinear model to mouse retinal neuronal data
+### Application of bilinear model to mouse retinal neuronal data
 
-## Bilinear model reconstructs neuronal type-specific connectivity map from gene expression profiles
+#### Bilinear model reconstructs neuronal type-specific connectivity map from gene expression profiles
 
-In our application of the bilinear model to the mouse retinal neuronal data, upon completion of the final training process, our optimized bilinear model produced transformation matrices, 𝑨^ and 𝑩^. We used these matrices to project the normalized single-cell transcriptomic data, 𝑿^ and 𝒀^, into a shared latent feature space. Consequently, we obtained projected representations for BC and RGC types, 𝑿^⁢𝑨^ and 𝒀^⁢𝑩^, respectively. With these latent representations, we were able to reconstruct the cell-type-specific connectivity matrix: 𝑿^⁢𝑨^⁢(𝒀^⁢𝑩^)T (Figure 4a).
+In our application of the bilinear model to the mouse retinal neuronal data, upon completion of the final training process, our optimized bilinear model produced transformation matrices, $𝑨^$ and $𝑩^$. We used these matrices to project the normalized single-cell transcriptomic data, $𝑿^$ and $𝒀^$, into a shared latent feature space. Consequently, we obtained projected representations for BC and RGC types, $𝑿^⁢𝑨^$ and $𝒀^⁢𝑩^$, respectively. With these latent representations, we were able to reconstruct the cell-type-specific connectivity matrix: $𝑿^⁢𝑨^⁢(𝒀^⁢𝑩^)^{T}$ (Figure 4a).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/91532/elife-91532-fig4-v1.jpg)
+
+**Figure 4.:** (a) The reconstructed connectivity matrix, derived from the shared latent feature space projections. (b) The connectivity matrix obtained from connectomic data. Differences in color intensity represent the strength of connections, with dark red indicating strong connections and dark blue indicating weak or no connections.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91532/elife-91532-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Heatmap plot of the logarithm (base 10) of the validation loss, showing variations with respect to $\lambda$ across [0.1, 1, 10, 100] and dimensionality across [1, 2, 3, 4, 8]. (b) Plot showing the logarithm (base 10) of the validation loss against $\lambda$ over the range [0.1, 1, 10, 100]. (c) Plot displaying the logarithm (base 10) of the validation loss against dimensionality over the range [1, 2, 3, 4, 8].
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/91532/elife-91532-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Heatmaps showcasing the average absolute cosine similarities across five optimization repetitions for (a) $𝑨^$ and (b) $𝑩^$.The color scale reflects value of the metric.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/91532/elife-91532-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Discrepancy scores (DS) identifying divergences between the two matrices. (b, c) Specific connections present in the target matrix (c) that were not captured in the reconstructed matrix (b), with DS exceeding 0.5, indicating notable deviations.
 
 To evaluate our model, we compared the reconstructed connectivity matrix with the one derived from connectomic data (Figure 4b). We calculated the Pearson correlation coefficient between entries of the two matrices to assess their agreement. The resulting correlation of 0.83 (p < 0.001) demonstrated a robust association between the transformed gene expression features and the connectomic data. This result attests to our model’s capability in capturing the relationship between these two distinct types of biological information.
 
 To gain insights into our model’s reconstruction accuracy, we employed the DS metric to identify entries with substantial deviations between the reconstructed and the actual connectivity matrices (Figure 4—figure supplement 3a; see ‘Methods and supplementary materials’ for details). This examination specifically quantified the extent of connections in the target matrix (positive entries) that were not captured in the model’s reconstruction (negative entries; Figure 4—figure supplement 3b and c). Notably, the analysis revealed that only a small fraction, specifically 9 out of 115 connections, were not represented in the reconstructed matrix.
 
-## Bilinear model recapitulates recognized connectivity motifs
+#### Bilinear model recapitulates recognized connectivity motifs
 
 Our cross-validation procedure indicated that the optimal number of latent dimensions was two (Figure 4—figure supplement 1; see ‘Methods and supplementary materials’ for details). This finding suggested that these two dimensions capture the essential connectivity motifs between BC and RGC types. This led us to further investigate what are these motifs and how they are different from each other.
 
@@ -168,7 +282,7 @@ To confirm these observations, we further visualized BC and RGC types within the
 
 Interestingly, these distinct connectivity motifs align with two widely recognized properties of retinal neurons: kinetic attributes that reflect the temporal dynamics (transient versus sustained responses) of a neuron responding to visual stimuli, and polarity (ON versus OFF responses) reflecting whether a neuron responds to the initiation or cessation of a stimulus (Euler et al., 2014; Sanes and Masland, 2015; Masland, 2012; Baden et al., 2016). This correlation implies that our bilinear model has successfully captured key aspects of retinal circuitry from gene expression data.
 
-## Bilinear model reveals interpretable insights into gene signatures associated with different connectivity motifs
+#### Bilinear model reveals interpretable insights into gene signatures associated with different connectivity motifs
 
 The inherent linearity of our bilinear model affords a significant advantage: it enables the direct interpretation of gene expressions by examining their associated weights in the model. These weights signify the importance of each gene in determining the connectivity motifs between the BC and RGC types. We identified the top 50 genes with the largest positive or negative weights for BCs and RGCs across both latent dimensions. We plotted their weights alongside their expression profiles in the respective cell types (Figure 6).
 
@@ -182,7 +296,7 @@ The second latent dimension revealed a comparable pattern, albeit with different
 
 To elucidate the biological implications of these identified gene sets, we further conducted Gene Ontology (GO) enrichment analysis on the top genes through g:Profiler, a public web server for GO enrichment analysis (Reimand et al., 2007; Raudvere et al., 2019). This tool allowed us to delve into the molecular functions, cellular pathways, and biological processes associated with these genes. Intriguingly, when we listed the top 10 significant GO terms for each latent dimension based on their adjusted p-values, we found two common themes: neuronal development and synaptic organization (Supplementary file 4). Supplementary file 4 also highlights the number of the top genes associated with each GO term, revealing that overall about 47% of these genes are involved in neural development and synaptic organization. Such findings underscore the potential roles of these genes in forming and shaping the specific connections between BC and RGC types.
 
-## Bilinear model predicts connectivity partners of transcriptionally defined RGC types
+#### Bilinear model predicts connectivity partners of transcriptionally defined RGC types
 
 The success of recommendation systems in accurately predicting the preferences of new users inspired us to leverage the bilinear model for predicting the connectivity partners of RGC types whose interconnections with BC types remain uncharted. There are some RGC types defined from single-cell transcriptomic data (Tran et al., 2019), which lack clear correspondence with those identified through connectomics studies (Bae et al., 2018). This discrepancy leaves the connectivity patterns of these transcriptionally defined RGC types unknown, providing an opportunity for our model to predict their BC partners.
 
@@ -196,13 +310,13 @@ Although the ground truth connectivity of these RGC types remains unknown due to
 
 ## Discussion
 
-## Summary of study
+### Summary of study
 
 This study showcased a novel application of the bilinear modeling approach within the realm of gene expression analysis of neuronal type connectivity, drawing inspiration from recommendation systems - a machine learning domain focused on capturing intricate interactions between users and items and predicting user preferences. This analogy served as a useful framework in our study, where the roles of users and items in the recommendation systems are mirrored by presynaptic and postsynaptic neurons, respectively. Likewise, the user-item preference matrix corresponds to the synaptic connection matrix in neural circuits. The recommendation systems are based on the assumption that user preferences and item attributes can be represented by latent factors; similarly, our model assumes that synaptic connectivity between various neuron types is determined by a shared latent feature space derived from gene expression profiles.
 
 The applicability and effectiveness of our bilinear model were validated using two different datasets. Applying it to the C. elegans neuronal dataset, which include data of gap junction connectivity and innexin expression at the individual neuron level, we showed that the model could be generalized to single-cell level connectivity by treating each neuronal type as an individual cell (‘Gene expression and connectivity of each cell are known simultaneously’), and incorporate spatial constraints such as physical contact between neurons into the weight matrix (‘Gap junction connectivity and innexin expression data of C. elegans neurons’). In a more complex scenario where the transcriptomic and connectomic data are from different sources and aligned at the neuronal-type level, we demonstrated the model’s capability in decoding the genetic underlying of the connectivity between neuronal types (‘Connectivity and gene expressions of neuronal types are from different sources’), using the mouse retinal neuronal dataset (‘Single-cell transcriptomic and connectomic data of mouse retinal neurons’). This emphasizes the model’s potential in offering insights into the genetic mechanisms that orchestrate synaptic connections across various nervous systems.
 
-## Insights from analysis of C. elegans dataset and comparison with SCM
+### Insights from analysis of C. elegans dataset and comparison with SCM
 
 Using the C. elegans neuronal dataset, we conducted a comparative analysis between our bilinear model and the SCM, which correlates neuronal innexin expression with gap junction connectivity via a rule matrix (Kovács et al., 2020; Barabási and Barabási, 2020). The SCM incorporates spatial constraints, such as physical contact between neurons, and represents the connectome as an edge list for regression against the Kronecker product of the gene expression matrix. Our model is closely related to the SCM, as it can be seen as factorization of the rule matrix into the product of two lower-dimensional transformation matrices. This factorization not only yielded a performance comparable to, if slightly better than, the SCM in reconstructing the gap junction connectivity matrix, but also revealing potential new innexin interactions for experimental exploration (Figure 2; Figure 3).
 
@@ -210,7 +324,7 @@ Beyond these, a crucial advantage of our bilinear model lies in in its computati
 
 In assessing the bilinear model’s and the SCM’s performance to reconstruct C. elegans gap junction connectivity, the resulting modest ROC-AUC scores (approximately 0.64, much lower than the ideal 1.0) underscore the challenges in predicting electrical synapse specificity using innexin expressions alone. This suggests that additional molecular mechanisms, beyond innexin interactions, play crucial roles in forming specific electrical synaptic connections. Indeed, in the realm of chemical synapses, it’s increasingly recognized that synaptic specificity is significantly influenced by factors such as cell-cell adhesion and recognition molecules, rather than just the pre- or post-synaptic machinery (Sanes and Zipursky, 2020). Recent studies support this viewpoint. For instance, research on the C. elegans motor circuit has revealed how a developmental program fine-tunes cAMP signaling to guide neuron-specific assembly of electrical synapses (Palumbos, 2021). Furthermore, the observed coexistence of electrical and chemical synapses in close proximity intimates potential shared mechanisms underlying their specificity (Lasseigne et al., 2021).
 
-## Insights from application to mouse retinal neuronal dataset
+### Insights from application to mouse retinal neuronal dataset
 
 Applying to the mouse retinal neuronal dataset, our bilinear model successfully reconstructed a neuronal type-specific connectivity map from gene expression profiles and recapitulated two core connectivity motifs of the retinal circuit, representing synapses formed in central or marginal parts of the IPL, and synapses formed in outer or inner regions (Figure 4; Figure 5). These motifs align well with recognized properties of retinal neurons: kinetic attributes (transient versus sustained responses) and polarity (ON versus OFF responses; Euler et al., 2014; Sanes and Masland, 2015; Masland, 2012; Baden et al., 2016). Significantly, these motifs aren’t predefined or explicitly encoded into the model; instead, they emerge naturally from the model, further attesting to the model’s power to capture key aspects of retinal circuitry.
 
@@ -220,9 +334,9 @@ The bilinear model’s utility extends beyond the identification of gene signatu
 
 While our bilinear model offers valuable insights into the connectivity motifs of retinal circuits and the associated gene signatures, with many findings aligning with existing literature, it is important to acknowledge certain limitations of this study. Firstly, the model’s connectivity matrix was deduced from stratification profiles derived from EM reconstruction. Although prior research has indicated stratification as a meaningful indicator of connectivity within the mouse retina, as certain BC types preferentially connect with specific RGC types stratified in the same lamina (Duan et al., 2014; Krishnaswamy et al., 2015; Duan et al., 2018), this metric may not capture the entire complexity of synaptic connections (Dunn and Wong, 2014). The incorporation of additional experimental data, such as electrophysiological measurements, could enhance both the accuracy and the reliability of the connectivity metrics. Secondly, the model, despite its overall success in reconstructing the connectivity matrix, missed several connections, notably among specific BC-RGC pairs such as those between RGC types 51, 5ti and BC types 3a, 3b, and 4 (Figure 4—figure supplement 3). This highlights the potential for a more complex approach, such as deep learning models, to capture the subtleties of synaptic connections. Finally, the list of top genes identified by our model is enriched with genes directly mediating synapse formation and maintenance, such as adhesion molecules (Figure 6; Supplementary file 4), yet overlooks transcription factors like Tbr1 known to affect synaptic specificity (Liu et al., 2018). These factors, impacting various neuronal functionalities, might not be captured by a linear model that inherently favors predictor variables that strongly correlate with the target variable.
 
-## Future directions
+### Future directions
 
-## Experiment validation of candidate genes
+#### Experiment validation of candidate genes
 
 The bilinear model enables the predictions of possible changes in synaptic connections resulting from changes in expressions of the candidate genes. Emerging genome editing technologies, particularly CRISPR/Cas9 (Cong et al., 2013; Mali et al., 2013), offers a precise and efficient way to validate these predictions through experiments. By leveraging CRISPR/Cas9, targeted genetic manipulations, such as gene silencing or modification, can be conducted to assess their impact on synaptic connectivity. In the context of the mouse retina, the delivery of CRISPR/Cas9 components into BCs or RGCs can be achieved through electroporation or adeno-associated virus (AAV) vectors, respectively, allowing for targeted gene intervention (Sarin et al., 2018; Tian et al., 2022).
 
@@ -230,7 +344,7 @@ The finding of delta-protocadherins (PCDH7,9,11x) as potential mediators of syna
 
 This experimental paradigm is not confined to the mouse retina but extends to a broad range of neuronal circuits, thanks to the flexibility and wide applicability of genome editing tools like CRISPR/Cas9 (Dickinson and Goldstein, 2016; Gratz et al., 2015; Li et al., 2016). The capacity to induce targeted gene knockouts or modifications will empower researchers to validate our bilinear model’s predictions and explore the underlying genetic mechanisms for synaptic formation and maintenance. This endeavor opens new avenues for deciphering the complex interplay between genetics and neural circuit wiring, furthering our comprehension of the molecular mechanisms driving synaptic specificity.
 
-## Application to other neural systems
+#### Application to other neural systems
 
 Our bilinear model, while illustrated using the C. elegans and mouse retina datasets, holds significant potential for elucidating the genetic underpinnings of neuronal connectivity across various species and brain regions, contingent upon the availability of comprehensive gene expression profiles and synaptic connection data. For instance, the advent of a comprehensive single-cell transcriptome atlas for the adult fruit fly brain, alongside the recent establishment of its complete connectome, offers a fertile ground for extending our model to decipher the complex neural circuits of Drosophila (Davie et al., 2018; Ding et al., 2023).
 
@@ -238,7 +352,7 @@ In the context of the mouse brain, the depth and breadth of single-cell sequenci
 
 Nevertheless, we recognize the challenge that such well-aligned connectomic and transcriptomic data may not always be readily available. To address this, future research endeavors will also explore adaptations of our model to other available datasets, such as those that combine single-cell transcriptomic profiling with long-range neuronal projection mapping (Chen et al., 2019; Sun et al., 2021). Furthermore, our model is amenable to integration with trans-synaptic tracer-based sequencing methods (Tsai et al., 2022; Zhang et al., 2023), expanding its utility in studies where detailed connectomic information is limited. Pursuing these avenues is pivotal in broadening the model’s utility and ensuring its relevance across a wider spectrum of brain connectivity research, making it an invaluable tool in the quest to unravel the complexities of neural circuitry.
 
-## Model advancements
+#### Model advancements
 
 To enhance the model’s fidelity and applicability, we propose several advancements. First, we recommend the integration of auxiliary data types, including electrophysiological data, neuron tracing data, and an array of omics data such as proteomics and epigenetics data, to augment and enrich the model’s training base (Baden et al., 2016; Tsai et al., 2022; Zhang et al., 2023; Mazan-Mamczarz et al., 2022; Bennett et al., 2023). These data modalities offer complementary insights into neuronal function and connectivity, providing valuable context that can inform and refine the model’s predictions.
 
@@ -250,64 +364,82 @@ Second, we envision extending the bilinear model to incorporate non-linear inter
 
 ## Materials and methods
 
-## Datasets and pre-processing
+### Datasets and pre-processing
 
 To validate and assess the efficacy of our bilinear model, we utilized two distinct datasets available from previous studies:
 
-## Gap junction connectivity and innexin expression data of C. elegans neurons
+#### Gap junction connectivity and innexin expression data of C. elegans neurons
 
-We first used a dataset of gap junction connectivity and innexin expressions of individual C. elegans neurons. Derived from the work of Cook et al., 2019 and subsequently analyzed by Kovács et al., 2020, this dataset included expression profiles of 18 innexin genes across 184 neurons, alongside detailed gap junction connectivity between these neurons. We followed the same procedure outlined by Kovács et al. to obtain the innexin expression matrix 𝑿 and 𝒀 (in this case 𝑿=𝒀 with the dimensions of 184 × 18), and the connectivity matrix between individual C. elegans neurons 𝒁.
+We first used a dataset of gap junction connectivity and innexin expressions of individual C. elegans neurons. Derived from the work of Cook et al., 2019 and subsequently analyzed by Kovács et al., 2020, this dataset included expression profiles of 18 innexin genes across 184 neurons, alongside detailed gap junction connectivity between these neurons. We followed the same procedure outlined by Kovács et al. to obtain the innexin expression matrix $𝑿$ and $𝒀$ (in this case $𝑿=𝒀$ with the dimensions of 184 × 18), and the connectivity matrix between individual C. elegans neurons $𝒁$.
 
-To incorporate spatial constraints by considering only neuron pairs in physical contact, we extracted a contact matrix from the dataset. This was transcribed into the weight matrix 𝑾 in our model, with values set to 0 for neuron pairs without physical contact and 1 for those with contact. This enabled our bilinear model to focus on the 5,592 neuron pairs that exhibit physical contacts, restricting the analysis to biologically plausible connections.
+To incorporate spatial constraints by considering only neuron pairs in physical contact, we extracted a contact matrix from the dataset. This was transcribed into the weight matrix $𝑾$ in our model, with values set to 0 for neuron pairs without physical contact and 1 for those with contact. This enabled our bilinear model to focus on the 5,592 neuron pairs that exhibit physical contacts, restricting the analysis to biologically plausible connections.
 
 The utilization of this dataset serves a dual purpose. It not only provides a validation for our bilinear model but also enables a direct comparison with the model employed by Kovács et al., offering a comprehensive evaluation of the bilinear model in the context of established connectomic research.
 
-## Single-cell transcriptomic and connectomic data of mouse retinal neurons
+#### Single-cell transcriptomic and connectomic data of mouse retinal neurons
 
 The second dataset encompassed data of mouse retinal neurons, integrating single-cell transcriptomic data from various studies with connectomic data obtained from the EyeWire project. The data provide us with connectivity information and gene expression profiles of mouse BCs and RGCs, and are important for applying our proposed bilinear model and testing its effectiveness in a more complex neuronal environment compared to the C. elegans dataset.
 
 The single-cell transcriptomic data include the gene expression profiles for two classes of mouse retinal neurons – presynaptic BCs as reported by Shekhar et al., 2016, and postsynaptic RGCs as reported by Tran et al., 2019.
 
-Preprocessing of this data adhered to previously documented procedures (Shekhar et al., 2016; Tran et al., 2019; Qiao, 2023). The transcript counts within each cell were first normalized to align with the median number of the transcripts per cell, followed by a log-transformation of the normalized counts. High variable genes (HVGs) were then selected using an approach based on establishing a relationship between mean expression level and the coefficient of variance (Chen et al., 2016; Pandey et al., 2018; Kurmangaliyev et al., 2019). We focused on those cells whose types correspond with the neuronal types outlined in the connectomic data, as delineated later in Supplementary file 1, Supplementary file 2, and Supplementary file 3. This yielded two matrices, 𝑿 and 𝒀, representing presynaptic BCs and postsynaptic RGCs, where each row pertains to a cell and each column represents an HVG. The dimensions of 𝑿 and 𝒀 are 22453 × 17144 and 3779 × 12926, respectively.
+Preprocessing of this data adhered to previously documented procedures (Shekhar et al., 2016; Tran et al., 2019; Qiao, 2023). The transcript counts within each cell were first normalized to align with the median number of the transcripts per cell, followed by a log-transformation of the normalized counts. High variable genes (HVGs) were then selected using an approach based on establishing a relationship between mean expression level and the coefficient of variance (Chen et al., 2016; Pandey et al., 2018; Kurmangaliyev et al., 2019). We focused on those cells whose types correspond with the neuronal types outlined in the connectomic data, as delineated later in Supplementary file 1, Supplementary file 2, and Supplementary file 3. This yielded two matrices, $𝑿$ and $𝒀$, representing presynaptic BCs and postsynaptic RGCs, where each row pertains to a cell and each column represents an HVG. The dimensions of $𝑿$ and $𝒀$ are 22453 × 17144 and 3779 × 12926, respectively.
 
-Next, we performed a principal component analysis (PCA) on these matrices to transform the gene expression data into the principal component (PC) space. We retained only the PCs that account for a cumulative 95% of explained variance. Consequently, the gene expression of the BCs in 𝑿 and the RGCs in 𝒀 were featurized by their respective PCs, resulting in matrices of dimensions 22453 × 11323 and 3779 × 3142, respectively.
+Next, we performed a principal component analysis (PCA) on these matrices to transform the gene expression data into the principal component (PC) space. We retained only the PCs that account for a cumulative 95% of explained variance. Consequently, the gene expression of the BCs in $𝑿$ and the RGCs in $𝒀$ were featurized by their respective PCs, resulting in matrices of dimensions 22453 × 11323 and 3779 × 3142, respectively.
 
-Based on each cell’s neuronal type, we computed the variance of gene expression features within these types. Mathematically, the variance of gene expression feature m within the BC types and the RGC types are expressed as:(15)σ^xim=∑i=1a(1ni∑k=1ni(x(ik)m−x(i.)m)2)(16)σ^yjm=∑j=1b(1nj∑l=1nj(y(jl)m−y(j.)m)2)
+Based on each cell’s neuronal type, we computed the variance of gene expression features within these types. Mathematically, the variance of gene expression feature $m$ within the BC types and the RGC types are expressed as:
 
-Taking x¯im and y¯jm to represent the average gene expression feature m of the BC type i and the RGC type j, we were able construct matrices, 𝑿^ and 𝒀^, in which x^im=x¯imσ^xm and y^im=y¯imσ^ym. In these matrics, each row represents a cell type, with the dimensions of 𝑿^ being 25 × 11323 and 𝒀^ being 12 × 3142. These matrices serve to bridge the gene expression of BC types and RGC types with the connectivity matrix of these neuronal types derived from the connectomic data.
+$$
+\sigma^_{x_{im}}=\sumi=1a(\frac{1}{n_{i}}\sumk=1n_{i}(x_{(ik)m}−x_{(i.)m})^{2})
+$$
+
+
+
+$$
+\sigma^_{y_{jm}}=\sumj=1b(\frac{1}{n_{j}}\suml=1n_{j}(y_{(jl)m}−y_{(j.)m})^{2})
+$$
+
+Taking $x¯_{im}$ and $y¯_{jm}$ to represent the average gene expression feature $m$ of the BC type $i$ and the RGC type $j$, we were able construct matrices, $𝑿^$ and $𝒀^$, in which $x^_{im}=\frac{x¯_{im}}{\sigma^_{x_{m}}}$ and $y^_{im}=\frac{y¯_{im}}{\sigma^_{y_{m}}}$. In these matrics, each row represents a cell type, with the dimensions of $𝑿^$ being 25 × 11323 and $𝒀^$ being 12 × 3142. These matrices serve to bridge the gene expression of BC types and RGC types with the connectivity matrix of these neuronal types derived from the connectomic data.
 
 The connectivity matrix of neuronal types is derived from connectomic data acquired through the process of serial electron microscopy (EM)-based reconstruction of brain tissues (Denk and Horstmann, 2004; Helmstaedter et al., 2013; Tapia et al., 2012). From these reconstructed tissues, connectivity measurements are usually expressed as either the contact area or the number of synapses between neurons (Helmstaedter et al., 2013; Turner et al., 2022). When normalized to the total contact area or total number of synapses of each neuron, the resulting metric, ranging from 0 to 1, signifies the percentage of contact area or synapses formed between neurons. This normalized metric provides a quantitative connectivity measure, where 0 indicates no connectivity and 1 implies complete connectivity between two neurons.
 
 Our analysis utilized the neural reconstruction data of mouse retinal neurons, courtesy of the EyeWire project, a crowd-sourced initiative that generates 3D reconstructions of neurons from serial section EM images (Kim et al., 2014). This extensive dataset facilitated the derivation of a comprehensive connectivity matrix between two classes of mouse retinal neurons - BCs (Greene et al., 2016) and RGCs (Bae et al., 2018). The data were sourced from the EyeWire Museum (https://museum.eyewire.org/), which offers detailed information for each cell in a JSON file, including attributes like ‘cell id’, ‘cell type’, ‘cell class’, and ‘stratification’. The stratification profile describes the linear density of voxel volume as a function of the inner plexiform layer (IPL) depth (Kim et al., 2014; Greene et al., 2016; Bae et al., 2018).
 
-We approximated the connectivity metric between a BC and a RGC using the cosine similarity of their stratification profiles. Let 𝒗i⁢k and 𝒗j⁢l denote the stratification profiles of the kth cell in BC type i and the lth cell in RGC type j, respectively. The connectivity metric z(ik)(jl) between these two neurons can be expressed as:(17)z(ik)(jl)=uikvjl|vik||vjl|
+We approximated the connectivity metric between a BC and a RGC using the cosine similarity of their stratification profiles. Let $𝒗_{i⁢k}$ and $𝒗_{j⁢l}$ denote the stratification profiles of the $k^{th}$ cell in BC type $i$ and the $l^{th}$ cell in RGC type $j$, respectively. The connectivity metric $z_{(ik)(jl)}$ between these two neurons can be expressed as:
 
-This equation represents the degree of overlap in their voxel volume profile within the IPL, resulting in the connectivity matrix 𝒁 between mouse BCs and RGCs. To allow for both positive and negative values within the matrix, we standardized 𝒁¯ by subtracting the mean of 𝒁¯ and then dividing by its standard deviation. Subsequently, the connectivity matrix 𝒁¯ between mouse BC and RGC neuronal types was calculated, with each element z¯ij=z(i.)(j.) representing the average of the connectivity metrics between cells of BC type i and cells of RGC type j.
+$$
+z_{(ik)(jl)}=\frac{u_{ik}v_{jl}}{|v_{ik}||v_{jl}|}
+$$
+
+This equation represents the degree of overlap in their voxel volume profile within the IPL, resulting in the connectivity matrix $𝒁$ between mouse BCs and RGCs. To allow for both positive and negative values within the matrix, we standardized $𝒁¯$ by subtracting the mean of $𝒁¯$ and then dividing by its standard deviation. Subsequently, the connectivity matrix $𝒁¯$ between mouse BC and RGC neuronal types was calculated, with each element $z¯_{ij}=z(i.)(j.)$ representing the average of the connectivity metrics between cells of BC type $i$ and cells of RGC type $j$.
 
 Aligning neuronal types as annotated in the single-cell transcriptomic data and those identified in the connectomic data was informed by findings from previous studies. Notably, a one-to-one correspondence exists between BC cell types classified by Shekhar et al., 2016 and Greene et al., 2016. This correspondence is presented in Supplementary file 1.
 
 Regarding RGC types, alignment between cell types annotated in Tran et al., 2019 and Bae et al., 2018 was established primarily based on the findings from Goetz et al., 2022. This study presents a unified classification of mouse RGC types, based on their functional, morphological, and gene expression features. The corresponding RGC types were mainly obtained from Supplementary Table S3 of Goetz et al., 2022 (Supplementary file 2), with additions derived from Supplementary Table S1 of Tran et al., 2019 based on the expressions of genetic markers of these RGC types (Supplementary file 3).
 
-## Model training, validation, and comparison
+### Model training, validation, and comparison
 
 Our approach of training and validating the bilinear model involved an iterative optimization of transformation matrices using the AGD algorithm, as outlined in ‘Bilinear model for neuronal type connectivity’. The primary goal was to minimize the defined loss function. With the matrices initially generated from a standard normal distribution, the optimization process continued until the loss change was less than a threshold of 10−6, or a maximum of 106 iterations were completed.
 
-During optimization, we focused on two key hyperparameters: the regularization parameters, λA and λB, and the latent feature space dimensionality. Preliminary tests indicated that a lower loss was achieved when both regularization parameters were set equally, leading us to consolidate them into a single parameter, λ.
+During optimization, we focused on two key hyperparameters: the regularization parameters, $\lambda_{A}$ and $\lambda_{B}$, and the latent feature space dimensionality. Preliminary tests indicated that a lower loss was achieved when both regularization parameters were set equally, leading us to consolidate them into a single parameter, $\lambda$.
 
-## C. elegans neuronal dataset
+#### C. elegans neuronal dataset
 
-For the C. elegans dataset, which provides simultaneous gene expression and connectivity data for individual cells, we employed the model configuration described in ‘Gene expression and connectivity of each cell are known simultaneously’. The model’s hyperparameters, λ and the latent feature space dimensionality, were fine-tuned through five-fold cross-validation, exploring a range of values for λ and different dimensions for the latent feature space. The optimal hyperparameters were identified based on the lowest validation loss observed during cross-validation (Figure 2—figure supplement 1).
+For the C. elegans dataset, which provides simultaneous gene expression and connectivity data for individual cells, we employed the model configuration described in ‘Gene expression and connectivity of each cell are known simultaneously’. The model’s hyperparameters, $\lambda$ and the latent feature space dimensionality, were fine-tuned through five-fold cross-validation, exploring a range of values for $\lambda$ and different dimensions for the latent feature space. The optimal hyperparameters were identified based on the lowest validation loss observed during cross-validation (Figure 2—figure supplement 1).
 
-Given the prior utilization of this dataset in validating the SCM proposed by Kovács et al., 2020, our bilinear model was positioned for a direct comparison with the SCM. The SCM introduced a rule matrix 𝑶 with the aim to minimize the discrepancy between the observed connectivity and the gene expression-based predicted connectivity 𝑿⁢𝑶⁢𝑿T, employing L2 regularization on 𝑶. Our bilinear model echoes this approach, where we seek to minimize the divergence between the connectivity matrix and the bilinearly predicted connectivity 𝑿⁢𝑨⁢(𝑿⁢𝑩)T, with L2 regularization imposed on matrices 𝑨 and 𝑩. In essence, the bilinear form decomposes the rule matrix into two lower-dimensional matrices, which represent projections onto latent dimensions.
+Given the prior utilization of this dataset in validating the SCM proposed by Kovács et al., 2020, our bilinear model was positioned for a direct comparison with the SCM. The SCM introduced a rule matrix $𝑶$ with the aim to minimize the discrepancy between the observed connectivity and the gene expression-based predicted connectivity $𝑿⁢𝑶⁢𝑿^{T}$, employing L2 regularization on $𝑶$. Our bilinear model echoes this approach, where we seek to minimize the divergence between the connectivity matrix and the bilinearly predicted connectivity $𝑿⁢𝑨⁢(𝑿⁢𝑩)^{T}$, with L2 regularization imposed on matrices $𝑨$ and $𝑩$. In essence, the bilinear form decomposes the rule matrix into two lower-dimensional matrices, which represent projections onto latent dimensions.
 
-To quantitatively compare the bilinear model’s transformation matrix product 𝑶^=𝑨⁢𝑩T with the SCM’s rule matrix 𝑶, and to systematically identify the genetic interaction each model uniquely captured, we introduced the discrepancy score (DS). For each pair of corresponding entries in the matrices at indices i and j, the DS is calculated as follows:(18)DSij=|o^ij−oij||o^ij|+|oij|
+To quantitatively compare the bilinear model’s transformation matrix product $𝑶^=𝑨⁢𝑩^{T}$ with the SCM’s rule matrix $𝑶$, and to systematically identify the genetic interaction each model uniquely captured, we introduced the discrepancy score (DS). For each pair of corresponding entries in the matrices at indices $i$ and $j$, the DS is calculated as follows:
+
+$$
+DS_{ij}=\frac{|o^_{ij}−o_{ij}|}{|o^_{ij}|+|o_{ij}|}
+$$
 
 This metric, ranging from 0 to 1, quantifies the relative discrepancy between the two matrices, normalizing it in relation to their magnitudes. A score close to 1 indicates a large discrepancy, while a score near 0 suggests a negligible difference between the entries. Through this lens, we can further scrutinize the corresponding entries with the score above a certain threshold to reveal specific genetic interactions captured by one model but potentially missed by the other.
 
-## Mouse retinal neuronal dataset
+#### Mouse retinal neuronal dataset
 
-The model’s application to the mouse retina dataset, which involves gene expression and connectivity data from disparate sources, was facilitated by the approach outlined in ‘Connectivity and gene expressions of neuronal types are from different sources’. Optimal hyperparameters were determined through five-fold cross-validation, adjusting λ and exploring various dimensionalities for the latent feature space (Figure 4—figure supplement 1). Notably, the lowest validation loss was achieved with the dimensionality of two. Given the chosen hyperparameters, we performed the final round of training on the entire dataset to yield the definitive transformation matrices 𝑨^ and 𝑩^.
+The model’s application to the mouse retina dataset, which involves gene expression and connectivity data from disparate sources, was facilitated by the approach outlined in ‘Connectivity and gene expressions of neuronal types are from different sources’. Optimal hyperparameters were determined through five-fold cross-validation, adjusting $\lambda$ and exploring various dimensionalities for the latent feature space (Figure 4—figure supplement 1). Notably, the lowest validation loss was achieved with the dimensionality of two. Given the chosen hyperparameters, we performed the final round of training on the entire dataset to yield the definitive transformation matrices $𝑨^$ and $𝑩^$.
 
-To assess the consistency of our model under PCA pre-processing across different replicates, we repeated the optimization procedure five times, each time adhering to the previously identified optimal hyperparameters. In the context of our solution, where A^=[u1u2] and B^=[v1v2], with vectors 𝒖1,𝒗1 representing coefficients for the first latent dimension and 𝒖2,𝒗2 for the second, we noted that negating the coefficients of any latent dimension in both matrices (for instance, A^=[−u1u2] and B^=[−v1v2]) results in an equivalent solution. Therefore, to compare solutions across different repetitions, we calculated the absolute value of cosine similarity for each latent dimension’s coefficient vectors, and reported the similarity between solutions as the average of the values across the two latent dimensions. Moreover, we recognized that swapping the positions of the coefficient vectors (yielding A^=[u2u1] and B^=[v2v1]) also leads to an equivalent solution. To accommodate this, we evaluated both the original and swapped vector pairings for each repetition. The final measure of consistency was determined by taking the maximum of the two average absolute cosine similarities, ensuring a comprehensive and robust assessment of solution consistency across multiple runs.
+To assess the consistency of our model under PCA pre-processing across different replicates, we repeated the optimization procedure five times, each time adhering to the previously identified optimal hyperparameters. In the context of our solution, where $A^=[u_{1}u_{2}]$ and $B^=[v_{1}v_{2}]$, with vectors $𝒖_{1},𝒗_{1}$ representing coefficients for the first latent dimension and $𝒖_{2},𝒗_{2}$ for the second, we noted that negating the coefficients of any latent dimension in both matrices (for instance, $A^=[−u_{1}u_{2}]$ and $B^=[−v_{1}v_{2}]$) results in an equivalent solution. Therefore, to compare solutions across different repetitions, we calculated the absolute value of cosine similarity for each latent dimension’s coefficient vectors, and reported the similarity between solutions as the average of the values across the two latent dimensions. Moreover, we recognized that swapping the positions of the coefficient vectors (yielding $A^=[u_{2}u_{1}]$ and $B^=[v_{2}v_{1}]$) also leads to an equivalent solution. To accommodate this, we evaluated both the original and swapped vector pairings for each repetition. The final measure of consistency was determined by taking the maximum of the two average absolute cosine similarities, ensuring a comprehensive and robust assessment of solution consistency across multiple runs.
 
 We observed a high degree of consistency across multiple repetitions of the solutions under PCA pre-processing (Figure 4—figure supplement 2). The majority of the average absolute cosine similarity scores are close to 1, and even the minimum observed similarities are well above 0.75, suggesting that the optimization yields stable solutions.

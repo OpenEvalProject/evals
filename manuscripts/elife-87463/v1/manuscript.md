@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03xjwb503 Université Paris-Saclay, CIAMS Orsay France
-2. https://ror.org/014zrew76 Université d'Orléans, CIAMS Orléans France
-3. https://ror.org/05f82e368 Université de Paris, CNRS, Integrative Neuroscience and Cognition Center Paris France
-4. https://ror.org/055khg266 Institut Universitaire de France Paris France
+1. Université Paris-Saclay, CIAMS Orsay France ([ROR:03xjwb503](https://ror.org/03xjwb503))
+2. Université d'Orléans, CIAMS Orléans France ([ROR:014zrew76](https://ror.org/014zrew76))
+3. Université de Paris, CNRS, Integrative Neuroscience and Cognition Center Paris France ([ROR:05f82e368](https://ror.org/05f82e368))
+4. Institut Universitaire de France Paris France ([ROR:055khg266](https://ror.org/055khg266))
 
 † Corresponding author
 
@@ -39,13 +39,58 @@ In human infants, investigations of the motor system are more limited and EMG re
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/87463/elife-87463-fig2-v1.jpg)
 
-**Figure 2.:** (A–E) Example of EMG data for each age and behavior in one infant. A set of five cycles of flexion and extension is presented for each age and behavior. High-pass-filtered data are shown for two muscles (extension phases appear on a gray background). The 10 muscles are then pictured as completely preprocessed (i.e. filtered and normalized in amplitude and time, blue envelope). The black line is the averaged signal across the five pictured cycles. The scale of 1 s is displayed at the bottom of each figure. RF, rectus femoris; TA, tibialis anterior; BF, biceps femoris; So, soleus; GM, gluteus medius. (F–I) Evolution of several features starting from birth to walking onset for stepping or kicking. Individual data are shown in dotted line with the same color code as in Figure 3. Each point was computed as a mean score for each individual (see section ‘Number of cycles included in the analysis’). The black bold line represents the averaged values across individuals. The black point (or trait in F) represents the adult landmark. (F) Cycle duration. (G). Kinematic variability (standard deviation of cycle duration divided by averaged cycle duration). (H) Proportion of flexion and extension phases.Figure 2—source data 1.Figure 2F–H).
+**Figure 2.:** (A–E) Example of EMG data for each age and behavior in one infant. A set of five cycles of flexion and extension is presented for each age and behavior. High-pass-filtered data are shown for two muscles (extension phases appear on a gray background). The 10 muscles are then pictured as completely preprocessed (i.e. filtered and normalized in amplitude and time, blue envelope). The black line is the averaged signal across the five pictured cycles. The scale of 1 s is displayed at the bottom of each figure. RF, rectus femoris; TA, tibialis anterior; BF, biceps femoris; So, soleus; GM, gluteus medius. (F–I) Evolution of several features starting from birth to walking onset for stepping or kicking. Individual data are shown in dotted line with the same color code as in Figure 3. Each point was computed as a mean score for each individual (see section ‘Number of cycles included in the analysis’). The black bold line represents the averaged values across individuals. The black point (or trait in F) represents the adult landmark. (F) Cycle duration. (G). Kinematic variability (standard deviation of cycle duration divided by averaged cycle duration). (H) Proportion of flexion and extension phases.
 
 ## Results
 
 Eighteen infants were tested longitudinally on 2–3 time points between birth (~4 d) and walking onset (~14 mo). The time points were either around birth, around 3 mo, or around walking onset (individual characteristics and precise time points are reported in Table 2). Around birth and 3 months old, we observed the stepping behavior and/or the kicking behavior, while at walking onset we only recorded independent walking. In each behavior and at each age, infant movements were recorded using surface EMG on 10 bilateral lower-limb muscles and two 2D video cameras. Based on the resulting films, trained coders selected alternated cycles of flexion and extension of the lower limbs, which allowed us to study the same movement regardless of the behavior that could be produced by the infant at each age and focus only on the generation of trial-to-trial variability for this given movement. Data from a given baby were considered analyzable when we had recorded clean surface EMG signals of the 10 lower-limb muscles during at least five alternated cycles of flexion and extension, both at birth and 3 months old and through the same behavior (stepping or kicking). Those cycles were not necessarily consecutive, but to be selected a given cycle had to be at least preceded by an extension and succeeded by a flexion. In total, 586 cycles of flexion and extension were included into the analysis. When more than five cycles were available, we proceeded by analyzing random combinations of five cycles among the available ones and averaging the results afterward, so that the variability would always be calculated on a same number of cycles. For each behavior, we computed the variability of the motor output (index of EMG variability [IEV]) and used non-negative matrix factorization (NNMF) to identify the underlying motor primitives and their activation parameters. We computed a goodness-of-fit criterion to establish whether the cycle-to-cycle variability of five cycles of flexion and extension of the lower limbs could be produced through various combinations of those motor primitives. We compared this goodness-of-fit criterion across ages and computed other indexes in order to characterize (1) how variably were those motor primitives activated and (2) how selective were those primitives (i.e. if they controlled numerous muscles at a time or a few muscles). Table 1 summarizes the role of each of the main variables. Details are available in the ‘Materials and methods’ section.
 
-## Kinematic parameters and EMG signals reveal maximal motor variability during the neonatal period
+**Table 1.**
+ Summary of the role of the main variables of the study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Short name</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Index of EMG variability (IEV)</td>
+      <td>Represents the cycle-to-cycle variability of EMG data across five alternated cycles of flexion and extension of the lower limb.</td>
+    </tr>
+    <tr>
+      <td>Variance accounted for (VAF)</td>
+      <td>Represents the goodness of fit of the model of modularity for a given number of modules. When the VAF for a fixed number of four spatial and temporal modules is computed, it quantifies how well experimental data can be modeled as originating from four modules.</td>
+    </tr>
+    <tr>
+      <td>Number of modules</td>
+      <td>Represents the smallest number of invariant spatial and temporal elements in which the EMG signals can be factorized (chosen as the smallest number allowing to reach a VAF &gt; 0.75).</td>
+    </tr>
+    <tr>
+      <td>Index of recruitment variability (IRV)</td>
+      <td>Represents the extent to which spatial and temporal modules are steadily (lower value) or variably activated across cycles to produce the EMG outputs (higher value).</td>
+    </tr>
+    <tr>
+      <td>Index of recruitment selectivity (IRS)</td>
+      <td>Represents the extent to which spatial modules can be activated with different temporal modules (lower values) or exclusively activated with a given temporal module (higher value).</td>
+    </tr>
+    <tr>
+      <td>Selectivity of muscular activations index (SMAI)</td>
+      <td>Represents the extent to which spatial modules each control numerous muscles at a time (lower value) or a few muscles at a time (higher value).</td>
+    </tr>
+    <tr>
+      <td>Selectivity of temporal activations index (STAI)</td>
+      <td>Represents the extent to which temporal modules each control muscles during a long time (lower value) or during a shorter peak of time (higher value).</td>
+    </tr>
+  </tbody>
+</table>
+
+_EMG, electromyography._
+
+### Kinematic parameters and EMG signals reveal maximal motor variability during the neonatal period
 
 We started by characterizing basic kinematic and EMG parameters at each age and in each behavior. Wilcoxon tests were performed among kinematic parameters (cycle duration and its variability, proportion of extension/flexion phases) to assess basic differences. The cycle duration was different across behaviors with a decrease from stepping at birth to stepping at 3 mo (p=0.01) and to walking in toddlers (p<0.001) as well as a decrease from kicking at birth to kicking at 3 mo (p=0.003) and to walking in toddlers (p=0.009, Figure 2F). The proportion of phases within a cycle was slightly different across ages (Figure 2H, Supplementary file 1a).
 
@@ -53,27 +98,39 @@ The kinematic variability was assessed by the variability of cycle duration (Fig
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/87463/elife-87463-fig3-v1.jpg)
 
-**Figure 3.:** (A) Computational elements contributing to the electromyography (EMG) and their trial-to-trial variability (from top do down: activation coefficients, spatial and temporal modules, and muscle outputs). (B–D). Graphs (B–D) show how changes within the upper levels can explain the resulting motor variability during infant locomotor development. Individual data are represented as dotted lines. Each point was computed as a mean score for each individual (see section ‘Number of cycles included in the analysis’). The black bold line represents the averaged values across individuals. The black point indicates the adult landmark, and the gray diamonds indicate individual values from 20 adults (Supplementary file 1c). (B) Variability of module activations, assessed by the index of recruitment variability (IRV). IRV represents the variability of the input that specifies which amplitude of activation has to be allocated to each possible pair of spatial and temporal modules. This index decreases from birth to walking onset considering stepping or kicking as neonatal behavior. (C) Number of spatial and temporal modules, which increases from birth to walking onset considering stepping or kicking as neonatal behavior (D) Index of EMG variability (IEV, same as in Figure 2I). This index decreases from birth to walking onset, considering stepping or kicking as neonatal behavior. (E) Figure legend. Each individual is represented by a color throughout the article. To take into account the variability of walking onset in our representations, colors of each individual are sorted according to their age of walking onset.Figure 3—source data 1.Figure 3B–D).
+**Figure 3.:** (A) Computational elements contributing to the electromyography (EMG) and their trial-to-trial variability (from top do down: activation coefficients, spatial and temporal modules, and muscle outputs). (B–D). Graphs (B–D) show how changes within the upper levels can explain the resulting motor variability during infant locomotor development. Individual data are represented as dotted lines. Each point was computed as a mean score for each individual (see section ‘Number of cycles included in the analysis’). The black bold line represents the averaged values across individuals. The black point indicates the adult landmark, and the gray diamonds indicate individual values from 20 adults (Supplementary file 1c). (B) Variability of module activations, assessed by the index of recruitment variability (IRV). IRV represents the variability of the input that specifies which amplitude of activation has to be allocated to each possible pair of spatial and temporal modules. This index decreases from birth to walking onset considering stepping or kicking as neonatal behavior. (C) Number of spatial and temporal modules, which increases from birth to walking onset considering stepping or kicking as neonatal behavior (D) Index of EMG variability (IEV, same as in Figure 2I). This index decreases from birth to walking onset, considering stepping or kicking as neonatal behavior. (E) Figure legend. Each individual is represented by a color throughout the article. To take into account the variability of walking onset in our representations, colors of each individual are sorted according to their age of walking onset.
 
-## The number of motor primitives increases from birth to walking onset while variability decreases
+![Figure 4.](https://cdn.elifesciences.org/articles/87463/elife-87463-fig4-v1.jpg)
+
+**Figure 4.:** At each age, electromyographic (EMG) patterns can be decomposed into spatial modules and temporal modules (orange). Within each spatial module, weightings are plotted for muscles m1 to m10 in the following order: rectus femoris, tibialis anterior, biceps femoris, soleus, and gluteus medius (right muscles in dark colors followed by left muscles in light colors). Activation coefficients (at the crossing between each spatial and temporal modules) represent the level of activation of each possible pair of spatial and temporal modules during five steps. (A-B) At birth (red, top left) and 3 mo (purple, top right), EMG activity of stepping can be decomposed into four spatial and four temporal modules. (C) At walking onset (blue, bottom), EMG activity needs to be decomposed into seven spatial and seven temporal modules to get the same quality of modeling than at birth and 3 mo with less modules. Activation coefficients are highly variable at birth and 3 mo and less variable in toddlerhood, with some pairs that are nearly never activated across the five cycles. Note that toddler activations are still more variable than in adults (Figure 1).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87463/elife-87463-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** This is the common assumption in muscle synergy analyses (e.g. d’Avella et al., 2003). Nevertheless, to test whether our findings hold if we allow modules to vary across cycles, we reproduced our analysis with the method presented in Cheung et al., 2020a. Here the method was adapted to our space-by-time model by extracting trial-specific w_is(t) and w_js using the global/fixed w_i(t) and w_j as initial estimates of the iterative algorithm. Under this hypothesis, we estimated the short-term plasticity of spatial and temporal modules by computing the sum of point-by-point standard errors across modules from different cycles. This figure illustrates the modules obtained with the plastic-modules approach: the algorithm was initialized with modules that were identified through the original approach and identified different modules for each of the five cycles (results are depicted for a newborn and for an adult individual, with temporal modules on top of spatial modules).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/87463/elife-87463-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Individual data are shown in dotted line with the same color code as in Figure 3. Each point is computed as a mean score for each individual (see section ‘Number of cycles included in the analysis’). The bold line represents the averaged values across individuals. The black point indicates the adult landmark, and the gray diamonds indicate individual values from 20 adults. In any case, the main effect of the article (decrease of the IRV with age) was persistent, indicating that the algorithm explains better the variability of newborn data by the variability of activation coefficients than for toddlers’ data even under the hypothesis that modules could be plastic in the short-term (i.e. cycle-to-cycle). We repeated this analysis with or without initiating the activation coefficients, and with or without gathering modules by best matching pairs afterward, and found similar results.
+
+### The number of motor primitives increases from birth to walking onset while variability decreases
 
 A modular decomposition was applied to each dataset (for a given behavior, at a given age and for a given subject) thanks to NNMF. We found that several aspects of this decomposition were different depending on the age regarding both dimensionality (i.e. number of primitives) and variability of activations (Figures 3 and 4).
 
 To study dimensionality, we considered two approaches based on the variance accounted for (VAF) that is the index that indicates the quality of the modelling. The first approach identified the number of motor primitives (i.e. spatial and temporal modules) that are needed to reach a predetermined VAF threshold. This threshold was established to 0.75 according to Hinnekens et al., 2020. This approach allowed us to determine the number of modules of each individual, which showed that the number of modules was higher at walking onset than at birth and 3 mo (the number of modules was on averaged 4.3 ± 0.7 for stepping and 4.6 ± 0.6 for kicking at birth, 5.2 ± 0.6 for stepping, and 4.5 ± 0.6 for kicking at 3 months old, and 7 ± 0.6 for walking at walking onset, Figure 3C). The second approach set the number of modules to four as in standard adult walking and relied on the analysis of the resulting VAF. This approach assessed dimensionality of the underlying modular system just like the first one but directly tested the hypothesis that four spatial and temporal modules are sufficient to adequately represent the given EMG signals across cycles. By relying on real numbers instead of integers, this second approach is useful because it is more suited to perform statistical analyses. It confirmed that a low-dimensional model fitted better at birth than at walking onset (Supplementary file 1b). We observed a significant VAF decrease between stepping at birth and walking (p=0.002) and between stepping at 3 mo and walking (p<0.001), with the same effects for kicking (p<0.001). Between birth and 3 months old, the VAF value significantly decreased in stepping (p=0.019) but not in kicking (p=0.850) for which the evolution was different across individuals (Figure 3C). To sum up, the modular organization was more complex in toddlers than in infants, with a decrease in the VAF with age, indicating that more and more modules were needed to equivalently reconstruct the EMG patterns, as illustrated by Figures 3B and 4.
 
-## Motor primitives are recruited with maximal variability and low selectivity during the neonatal period
+### Motor primitives are recruited with maximal variability and low selectivity during the neonatal period
 
 After having analyzed the dimensionality of the signals, we wanted to explain how the IEV (EMG variability) could be higher in infants while their dimensionality was lower. Thus, we focused on the variability of activations of motor primitives. The index of recruitment variability (IRV), which represents the extent to which spatial and temporal modules are variably activated across steps, significantly decreased in toddlers in comparison to infants (Figure 3A), indicating that module recruitment was less and less variable starting from either stepping or kicking from birth to walking (respectively p=0.002 and p<0.001) and from 3 mo to walking (p<0.001). Here again, the value significantly decreased between birth and 3 months old for stepping (p=0.001) but not for kicking (p=0.424). To check that the effects were not due to differences in the number of modules, we performed the same computations on values obtained by systematically extracting four spatial and temporal modules and found the same effects (Supplementary file 1a). This shows that, even with the same number of modules, toddlers, almost like adults recruit modules in a more systematic way across cycles than infants (see Figure 3—source data 1 for individual data). Finally, we repeated the analysis while allowing the modules to vary for each cycle, similarly to what was done in Cheung et al., 2020a, and still found the same effect on the IRV (see Figure 4—figure supplements 1 and 2).
 
 The index of recruitment selectivity (IRS, which represents the extent to which a spatial module is activated with a single temporal module and vice versa), tended to increase with age, ranging from 0.395 on average in newborn stepping or kicking to 0.44 in toddlers walking (Supplementary file 1b). This index was always far below the adult value at every age, which is on average 0.62 (Supplementary file 1c), suggesting a low selectivity in the recruitment of spatial and temporal modules during development. Indeed, a spatial module could be activated along with several temporal modules and vice versa depending on the cycle (Figure 4). We also repeated this computation after having extracted four spatial and temporal modules from each dataset and found the same results.
 
-## Motor primitives evolve between birth and walking onset toward gathering less muscles at a time
+### Motor primitives evolve between birth and walking onset toward gathering less muscles at a time
 
 In order to identify whether motor primitives would have been preserved across ages, we applied the best matching pairs method (Cheung et al., 2005) to our data and checked for similitudes between modules. As we could not find high similitudes, we noticed that modules seemed to be less and less complex with time, suggesting a more individual muscle control (i.e. spatial modules gathered the activation of less and less muscles, and temporal modules represented tighter and tighter peaks of activation, Figure 5A). To quantify this phenomenon, we created two indexes: the selectivity of muscular activations indexes (SMAI) and the selectivity of temporal activation indexes (STAI) (see Figure 5—source data 1 for individual data). The SMAI increased after 3 mo, indicating that muscle weightings were sparser among spatial modules in toddlers than in infants. In other words, spatial modules were mostly composed of fewer muscles in toddlers compared to infants (see Figure 5A and B). This increase occurred from stepping and kicking at birth to walking (p=0.002 and p<0.001, respectively) and from stepping or kicking at 3 mo to walking (p<0.001). No significant effect was found between birth and 3 mo for stepping or kicking even if a trend appeared for stepping (p=0.054). Analyses were repeated on modular decompositions coming from the systematic extraction of four spatial and temporal modules and gave the same results (Supplementary file 1a).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/87463/elife-87463-fig5-v1.jpg)
 
-**Figure 5.:** (A) Similarity of modules between ages in a given individual according to the best matching pair method. (B) Selectivity of muscular activations index (SMAI). (C) Selectivity of temporal activations index (STAI). Both indexes increase between birth and walking onset considering stepping or kicking as neonatal behavior. Individual data are shown in dotted line with the same color code as in Figure 3. Each point is computed as a mean score for each individual (see section ‘Number of cycles included in the analysis’). The bold line represents the averaged values across individuals. The black point indicates the adult landmark, and the gray diamonds indicate individual values from 20 adults (Supplementary file 1c).Figure 5—source data 1.Figure 5B and C).
+**Figure 5.:** (A) Similarity of modules between ages in a given individual according to the best matching pair method. (B) Selectivity of muscular activations index (SMAI). (C) Selectivity of temporal activations index (STAI). Both indexes increase between birth and walking onset considering stepping or kicking as neonatal behavior. Individual data are shown in dotted line with the same color code as in Figure 3. Each point is computed as a mean score for each individual (see section ‘Number of cycles included in the analysis’). The bold line represents the averaged values across individuals. The black point indicates the adult landmark, and the gray diamonds indicate individual values from 20 adults (Supplementary file 1c).
 
 The STAI also increased from birth and 3 mo to walking. This indicates that temporal modules had more tightened peaks of activation in toddlers than in infants (Figure 5A and C). The value for toddlers was also above the adult landmark (Figure 5C). For both stepping and kicking, the increase occurred between birth and walking (p=0.004 and p<0.001, respectively) and between 3 mo and walking (p<0.001). Analyses were repeated following the extraction of four spatial and temporal modules and gave the same results (Supplementary file 1a).
 
@@ -93,41 +150,268 @@ When working with EMG to identify hypothetical motor primitives, several factors
 
 Overall, when compared with adult values (Figure 3, Supplementary file 1c), our results suggest an immaturity of the modular system before and around walking onset, which confirms that infancy should be an ideal period of plasticity to benefit from in therapy (Ulrich, 2010; Morgan et al., 2021). These are also coherent with the idea that skill onset during development in not an on-off switch and that maturity is not reached as soon as a skill becomes possible (Adolph et al., 2018). Interestingly, the longitudinal design of this study highlighted some inter-individual differences among the evolution of kicking during the first months of life, whereas the overall variability of the motor output decreased in stepping. For example, the IEV decreased between kicking at birth and kicking at 3 months old for a part of the cohort while it increased for the other part (Figure 3D). These inter-individual differences were observed for the main variables of the study, including the number of primitives and the variability of activation (Supplementary file 1a). As kicking is a spontaneous behavior, these differences might relate with the fact that it is differently practiced across individuals. Some infants might indeed store more modules than others due to different amount of practice, while stepping would evolve toward more stable activations of more modules in every infant, coherently with the fact that the two behaviors are distinct locomotor precursors (Sylos-Labini et al., 2020). However, the longitudinal follow-up also showed that the structure of variability evolved in the same direction for every individual between 3 months old and walking onset, with the development of more modules that were more steadily activated, regardless of the locomotor precursor that was recorded at 3 months old. Interestingly, this indicates that the modular system seems to be in a common state for every individual around walking onset, despite the important variability of age in our cohort (Table 2). This state of high dimensionality might last for a non-negligible period of time. Recently, studying the development of walking and running in children, the authors identified more primitives at 2 and 5 years old than in adults (Bach et al., 2021). As Cheung et al., 2020b showed that running motor primitives merge with training, we can hypothesize that walking primitives of toddlers will also merge with practice over time. Since learning to walk continues long after walking onset (Chang et al., 2006; Müller et al., 2013), it is not surprising to notice that the modular organization of toddlers could still need adjustments, even though it suggests that the system might first need to develop the capacity to control muscles more separately before gathering them again into more complex modules. As learning in a modular system relies on both learning the shape of modules and learning their activation parameters (d’d’Avella and Pai, 2010), the two processes might not be concomitant to ensure, as suggested above, to always remain in an ideal space of possibilities. Interestingly, recent data from rats report similar modular organization between organisms with different developmental history, suggesting that spinal primitives are determined early in development and conserved into adulthood (Yang et al., 2019). However, the fact that the neural repertoire is not mature before the important neural pruning of late adolescence in humans (de Graaf-Peters and Hadders-Algra, 2006) suggests that module shaping could continue over a long period of time. The present study falls into this converging framework of long-lasting plasticity of motor modules, associating fractionation and merging of motor primitives throughout development and training (Bach et al., 2021; Cheung et al., 2020b; Dominici et al., 2011; Hinnekens et al., 2020; Sylos-Labini et al., 2020). While more studies are needed to characterize the maturation of the modular system after walking onset in humans, a long-lasting plasticity of motor primitives could allow to adapt to the development of the musculoskeletal system (Bizzi et al., 1991; Bizzi and Cheung, 2013) in order to integrate biomechanical specificities of each individual (Torres-Oviedo and Ting, 2010) as well as optimality considerations allowing the low-energy costs of mature walking (Berret et al., 2019; Catavitello et al., 2018; de Rugy et al., 2012; Selinger et al., 2015).
 
+**Table 2.**
+ Summary of individual characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Subject ID</th>
+      <th rowspan="2">Gender</th>
+      <th rowspan="2">Birth weight (kg)</th>
+      <th rowspan="2">Birth heigh t (cm)</th>
+      <th colspan="4">Age (days)</th>
+      <th rowspan="2">Precursor that could be observed (T for treadmill, O for overground)</th>
+    </tr>
+    <tr>
+      <th>First visit</th>
+      <th>Second visit</th>
+      <th>Walking onset</th>
+      <th>Third visit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>F</td>
+      <td>3.05</td>
+      <td>48.5</td>
+      <td>21</td>
+      <td>91</td>
+      <td>523</td>
+      <td>535</td>
+      <td>Stepping (T) and kicking</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>M</td>
+      <td>4.02</td>
+      <td>52</td>
+      <td>2</td>
+      <td>98</td>
+      <td>474</td>
+      <td>499</td>
+      <td>Stepping (T) and kicking</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>F</td>
+      <td>3.71</td>
+      <td>52</td>
+      <td>3</td>
+      <td>87</td>
+      <td>401</td>
+      <td>412</td>
+      <td>Stepping (O) and kicking</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>M</td>
+      <td>3.46</td>
+      <td>48</td>
+      <td>2</td>
+      <td>98</td>
+      <td>366</td>
+      <td>371</td>
+      <td>Stepping (O) and kicking</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>F</td>
+      <td>3.07</td>
+      <td>50</td>
+      <td>2</td>
+      <td>86</td>
+      <td>539</td>
+      <td></td>
+      <td>Kicking</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>M</td>
+      <td>3.74</td>
+      <td>51</td>
+      <td>2</td>
+      <td>74</td>
+      <td>427</td>
+      <td>434</td>
+      <td>Stepping (O) and kicking</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>F</td>
+      <td>3.68</td>
+      <td>50</td>
+      <td></td>
+      <td>86</td>
+      <td>408</td>
+      <td>431</td>
+      <td>Stepping (T) and kicking</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>M</td>
+      <td>2.99</td>
+      <td>50</td>
+      <td>2</td>
+      <td>79</td>
+      <td>342</td>
+      <td>365</td>
+      <td>Stepping (O) and kicking</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>M</td>
+      <td>2.95</td>
+      <td>48</td>
+      <td>2</td>
+      <td>79</td>
+      <td>537</td>
+      <td>555</td>
+      <td>Stepping (T) and kicking</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>F</td>
+      <td>3.46</td>
+      <td>50</td>
+      <td>2</td>
+      <td></td>
+      <td>582</td>
+      <td>597</td>
+      <td>Stepping (T) and kicking</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>M</td>
+      <td>3.47</td>
+      <td>51</td>
+      <td>1</td>
+      <td>90</td>
+      <td>340</td>
+      <td>409</td>
+      <td>Kicking</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>M</td>
+      <td>3.39</td>
+      <td>51</td>
+      <td>2</td>
+      <td>122</td>
+      <td>456</td>
+      <td>478</td>
+      <td>Stepping (T) and kicking</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>M</td>
+      <td>3.66</td>
+      <td>49</td>
+      <td>2</td>
+      <td>117</td>
+      <td>514</td>
+      <td>536</td>
+      <td>Stepping (O) and kicking</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>M</td>
+      <td>3.28</td>
+      <td>48.5</td>
+      <td>21</td>
+      <td>82</td>
+      <td>430</td>
+      <td>446</td>
+      <td>Stepping (O) and kicking</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>F</td>
+      <td>3.89</td>
+      <td>51</td>
+      <td>2</td>
+      <td>116</td>
+      <td>413</td>
+      <td>428</td>
+      <td>Stepping (O) and kicking</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>M</td>
+      <td>3.55</td>
+      <td>52</td>
+      <td>2</td>
+      <td>120</td>
+      <td>367</td>
+      <td>380</td>
+      <td>Stepping (T) and kicking</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>M</td>
+      <td>3.76</td>
+      <td>51</td>
+      <td>8</td>
+      <td>105</td>
+      <td>418</td>
+      <td></td>
+      <td>Stepping (T) and kicking</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>F</td>
+      <td>3.50</td>
+      <td>49</td>
+      <td>17</td>
+      <td>101</td>
+      <td>515</td>
+      <td></td>
+      <td>Stepping (O) and kicking</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Materials and methods
 
 The protocol was in accordance with the Declaration of Helsinki and approved by the French Committee of People Protection. Families were recruited at the Port-Royal maternity in Paris. For each child, a parent provided informed written consent to participate to the study.
 
-## Participants
+### Participants
 
 Eighteen infants (11 males, 7 females) were tested longitudinally from birth to 3 months old, and 15 of them were tested shortly after they could walk independently. Human neonates with a few days of life being a rare clinical population, we chose the number of subjects with the aim of replicating the one of Teulier et al., 2012, who analyzed the variability of EMG signal in a longitudinal follow-up of 12 infants between 1 months old and 12 months old in human infants. Inclusion criteria were no known physical or neurological disabilities, gestational age ≥ 38 wk, weight ≥ 2800 g, and APGAR ≥ 8. The walking experiment was set up 1–5 wk after the infant would begin to use walking as the main mode of locomotion, based on parent’s reporting by phone call. They were also asked to write down the precise day when the child was able to ‘cross an entire room of about 16 feet by walking.’ One family forgot to write the precise date but still participated in the walking experiment, and the age of walking onset is given with a precision of ±1 wk (subject ID 11). Three families participated until 3 months only and did not finish the study (one moved away and data collection was stopped for the other two because of the COVID pandemic). Among the remaining toddlers, walking experience was 19.7 ± 14.9 d (mean ± SD) at the time of the experiment. Table 2 summarizes the ages of the infants at each experiment as well as the behavior that we were able to observe in each infant. The age is not given for S7 and S10 (first and second visits, respectively) because no data could be analyzed from these experiments (either because the child was asleep or because the quality of EMG data was too low; see the procedure for data selection in the section ‘Data processing and computed parameters’).
 
-## Experimental design
+### Experimental design
 
 For each experiment, the first stage was to equip the infant or toddler with EMG sensors. Infants were then observed in several positions. At birth and 3 mo, they were observed in a supine position to observe kicking as well as held upright to induce stepping. We also observed two other behaviors that are not reported in this study (crawling and stepping on a treadmill). Each behavior was observed on a pediatric table during about 2 min in a randomized order for each infant and at each age. Shortly after walking onset, toddlers were asked to go back and forth along a 2 m exercise mat. They were walking barefoot at a natural speed during approximately 1 min without any help from adults. Examples of each behavior are shown in Video 1 (kicking at birth and around 3 months old in participant 5) and Video 2 (stepping at birth and around 3 months old in participant 6 followed by walking at walking onset).
 
-## Data recording
+![Video 1.](https://cdn.elifesciences.org/articles/87463/elife-87463-video1.mp4.jpg)
 
-## EMG recording
+![Video 2.](https://cdn.elifesciences.org/articles/87463/elife-87463-video2.mp4.jpg)
+
+### Data recording
+
+#### EMG recording
 
 Surface EMG data were recorded with the Cometa system at 2000 Hz. At all ages, 10 muscles from shanks, thighs, and buttocks were recorded bilaterally: the tibialis anterior, soleus, rectus femoris, biceps femoris, and gluteus medius. Sensors were also placed on six other muscles of the trunk and the shoulders, but the resulting data were not used in this study. The electrodes placement followed the Surface EMG for Non-Invasive Assessment of Muscles (SENIAM) recommendations (seniam.org).
 
-## Video recording
+#### Video recording
 
 We used 2D cameras (50 Hz) at each age in order to detect cycles of flexion and extension, synchronized with the EMG recordings. Cameras were placed on each side of the mat or the table so that we would have a clear vision of both sides of the body to detect infants’ movements.
 
-## Data processing and computed parameters
+### Data processing and computed parameters
 
-## Identification of cycle events
+#### Identification of cycle events
 
 Muscle modules are usually defined as invariant portions of the signal within step cycles. Here usual phases of stance and swing could have been defined for stepping and walking but not for kicking. As we wanted to be able to compare modules from different behaviors, we chose to identify flexion and extension cycles instead of step cycles. Thus, we identified two types of events in each behavior with two trained coders: beginning of hip flexion (BHF; defined as the first frame when hip flexion was elicited) and beginning of hip extension (BHE; defined as the first frame when hip extension was elicited). Reliability of the events identification by the coding procedure was excellent with an intraclass correlation coefficient (ICC) of 0.99 (as done in Teulier et al., 2012).
 
 A cycle was defined from a BHF to the following BHF, and made of two phases: the flexion phase, from BHF to BHE, and the extension phase, from BHE to BHF. We always analyzed cycles from the same side of the body, and kept this side for a given baby (for each behavior and each age). We only considered alternated cycles, defined as beginning between 10 and 90% of the cycle of the contralateral lower limb. First and last cycles of an ensemble of alternating cycles were never considered. In order to compare the basic kinematic parameters among behaviors, we computed a few kinematic indexes from this coding of cycles: cycle duration, variability of step duration (standard deviation of step duration divided by the averaged step duration), and proportion of flexion and extension phases. These parameters were chosen because they could be computed in every behavior analyzed in the study (kicking, stepping, and walking).
 
-## Number of cycles included in the analysis
+### Number of cycles included in the analysis
 
 We retained data for our analysis only if a minimum of five alternated cycles of flexion and extension were made and were associated with a clean signal of the 10 muscles simultaneously. When more than five cycles were available, we repeated the analysis on five random combinations of five cycles and averaged the resulting indexes afterward (this allowed to include every step available in the analysis while keeping the indexes of variability comparable across ages and behaviors). Among the 18 infants, 11 performed newborn stepping, 15 performed stepping at 3 months old, 15 performed newborn kicking, 15 performed kicking at 3 months old, and 15 performed walking as toddlers (Table 2). A total of 586 cycles were included in the analysis (on average 8.2 per individual).
 
-## EMG processing
+### EMG processing
 
 EMG data are presented in Figure 2, and the procedure for EMG processing is presented in Figure 6. For each signal, we applied a high-pass filter (40 Hz, fourth-order Butterworth filter) followed by a rectification, as in Ivanenko et al., 2013. To smooth envelopes, we used a moving median since some artifacts were often visible in kicking due to the leg touching the other leg or the mat. The window of this moving median was normalized relatively to the cycle duration that changed with the age of the infant, as described in Ivanenko et al., 2013. As cycle duration was about twice lower on average in 3-month-old infants, and again twice lower in toddlers, the moving median window was 400 points in newborns, 200 points in 3 month olds, and 100 points in toddlers. This filtering procedure was applied to every available cycle of each infant and for each age. Signals were normalized for each ensemble of five cycles that were included in the analyses. Finally, cycles were isolated and normalized in time so that each cycle would correspond to 200 time points by interpolating the flexion phase to 80 points and the extension phase to 120 points based on the proportion of phases of independent walking. The rationale here is that all cycles will temporally match the same kinematic events regardless of the age or the behavior. To test how choices on amplitude and time normalization could affect our results, we repeated the analyses of this article with a different amplitude normalization (normalizing under the whole available signals instead of ensembles of five cycles) and with a different time normalization (interpolating to the cycle without fixing the phases), which confirmed that our results were not dependent of those methodological choices.
 
@@ -137,21 +421,29 @@ EMG data are presented in Figure 2, and the procedure for EMG processing is pres
 
 As cross-talk might be an issue when recording surface EMG data, we used the same criterion of Dominici et al., 2011 to assess potential cross-talk (Pearson correlation coefficient >0.2 among pairs of agonist and antagonist muscles). At birth, 3% of our sample had a correlation coefficient >0.2; 1.4% at 3 months, and 6% at walking onset. For these samples, we checked whole recordings and verified that different strides from one subject were not all >0.2.
 
-## Variability of EMG signals
+### Variability of EMG signals
 
 In order to compare the variability of EMG signals across ages, we computed an IEG (Hinnekens et al., 2020) from these processed EMG signals as the standard deviation computed point by point across the five cycles. As specified above, when more than five cycles were available, we repeated the analysis on five random combinations of five cycles and averaged the results afterward. This allowed to characterize the motor variability associated with each behavior and at each age before trying to explain how this variability could be generated within a modular system.
 
-## EMG factorization
+### EMG factorization
 
-We extracted spatial and temporal muscle modules into the EMG signals thanks to the space-by-time decomposition method. This method uses NNMF in order to factor EMG signal in a given number of invariant components. As described in Delis et al., 2014, this method unifies previous ones as it allows to identify both spatial and temporal EMG modules. In addition, it allows to preserve intra-individual variability into the analysis through activation coefficients that represent the degree of activation of a given module in each cycle. An EMG signal is considered a double linear combination of invariant spatial and temporal modules so that any muscle pattern ms(t)  of the cycle s can be written asms(t)=∑i=1P∑j=1Nwt(t)ai,j,swj+rs(t)
+We extracted spatial and temporal muscle modules into the EMG signals thanks to the space-by-time decomposition method. This method uses NNMF in order to factor EMG signal in a given number of invariant components. As described in Delis et al., 2014, this method unifies previous ones as it allows to identify both spatial and temporal EMG modules. In addition, it allows to preserve intra-individual variability into the analysis through activation coefficients that represent the degree of activation of a given module in each cycle. An EMG signal is considered a double linear combination of invariant spatial and temporal modules so that any muscle pattern $m_{s}(t)$  of the cycle $s$ can be written as
 
-where P and N are the numbers of temporal and spatial modules, respectively, wi(t)  and wj  are the temporal and spatial modules, respectively, ai,j,s is a scalar activation coefficient (function of the pair of modules it activates and step s), and rs(t)  is the residual reconstruction error describing the difference between the original signal and the reconstructed one. A spatial module is a 10-dimensional vector (as we recorded 10 muscles) and describes ensemble group of muscles that are invariantly activated together across cycles with the same relative proportions. A temporal module is a time-varying function (here described by a 200-dimensional vector) and represents the invariant activation timing of a spatial module within a cycle. The relative shapes of spatial and temporal module are both considered invariant across cycles, but the way pairs of spatial and temporal modules are activated together can differ from one cycle to another. To represent those potentially variable activations, the method computes scalar activation coefficients for each cycle and for each possible pair of spatial and temporal modules, thereby implementing a dimensionality reduction in EMG space. A high activation coefficient corresponds to the concurrent activation of z a specific pair of spatial and temporal modules. The algorithm finds the best fit of spatial and temporal modules and activation coefficients by progressively modifying their values until reaching a convergence criterion. The extraction procedure is repeated 50 times to prevent the risk of finding nonoptimal values because of local minima. This algorithm is detailed in Delis et al., 2014. It was run with a custom MATLAB code. Here again, when more than five cycles were available, we repeated this analysis on five random combinations of five cycles and averaged the results afterward (for each index described below). While the goal of NNMF is to model the underlying motor command, we cannot presume about the neural origin of the identified modules, thus we sometimes refer to the identified modular organization as modularity or dimensionality ‘within the motor output’ in the ‘Materials and methods’ and ‘Results’ sections.
+$$
+m_{s}(t)=\sumi=1P\sumj=1Nw_{t}(t)a_{i,j,s}w_{j}+r_{s}(t)
+$$
 
-## Goodness-of-fit criteria
+where P and N are the numbers of temporal and spatial modules, respectively, $w_{i}(t)$  and $w_{j}$  are the temporal and spatial modules, respectively, $a_{i,j,s}$ is a scalar activation coefficient (function of the pair of modules it activates and step s), and $r_{s}(t)$  is the residual reconstruction error describing the difference between the original signal and the reconstructed one. A spatial module is a 10-dimensional vector (as we recorded 10 muscles) and describes ensemble group of muscles that are invariantly activated together across cycles with the same relative proportions. A temporal module is a time-varying function (here described by a 200-dimensional vector) and represents the invariant activation timing of a spatial module within a cycle. The relative shapes of spatial and temporal module are both considered invariant across cycles, but the way pairs of spatial and temporal modules are activated together can differ from one cycle to another. To represent those potentially variable activations, the method computes scalar activation coefficients for each cycle and for each possible pair of spatial and temporal modules, thereby implementing a dimensionality reduction in EMG space. A high activation coefficient corresponds to the concurrent activation of z a specific pair of spatial and temporal modules. The algorithm finds the best fit of spatial and temporal modules and activation coefficients by progressively modifying their values until reaching a convergence criterion. The extraction procedure is repeated 50 times to prevent the risk of finding nonoptimal values because of local minima. This algorithm is detailed in Delis et al., 2014. It was run with a custom MATLAB code. Here again, when more than five cycles were available, we repeated this analysis on five random combinations of five cycles and averaged the results afterward (for each index described below). While the goal of NNMF is to model the underlying motor command, we cannot presume about the neural origin of the identified modules, thus we sometimes refer to the identified modular organization as modularity or dimensionality ‘within the motor output’ in the ‘Materials and methods’ and ‘Results’ sections.
 
-We computed the VAF as a quality of reconstruction criteria. The VAF is the coefficient of determination between the initial matrix and the reconstructed:VAF=1−∑S‖rs(t)‖2∑s‖ms(t)−m¯‖2
+### Goodness-of-fit criteria
 
-where m¯  is the mean level of muscle activity across all samples and ‖.‖  represents the Frobenius norm.
+We computed the VAF as a quality of reconstruction criteria. The VAF is the coefficient of determination between the initial matrix and the reconstructed:
+
+$$
+VAF=1−\frac{\sumS‖r_{s}(t)‖^{2}}{\sums‖m_{s}(t)−m¯‖^{2}}
+$$
+
+where $m¯$  is the mean level of muscle activity across all samples and $‖.‖$  represents the Frobenius norm.
 
 The VAF quantifies the goodness of fit between the original EMG patterns and those that are reconstructed from the decomposition. The usual approach is to extract different numbers of modules from each initial matrix and choose the number that allows to get a preset threshold VAF. Nonetheless, it is also interesting to compare the VAF for a given number of module as it allows to directly test the extent to which a low-dimensional command model can give a faithful description of the initial EMG patterns. Moreover, the first approach can only give integers while the second assesses the dimensionality of the motor output by returning reals that might be more precise. Thus we used here both approaches due to their complementarity.
 
@@ -161,15 +453,15 @@ For the second approach, which is to establish the VAF for a given number of mod
 
 Following those computations, we used the number of modules identified with the first approach to compute the metrics presented below. Nevertheless, those metrics could be influenced by differences in module numbers, thus they were also all computed for four spatial and four temporal modules as a control setting to ensure that significant differences among those metrics would not just be due to differences in the dimensionality of each decomposition (Supplementary file 1a, ‘Methodological verification’).
 
-## Indexes describing the recruitment of modules
+### Indexes describing the recruitment of modules
 
 We computed two indexes to describe how the recruitment of modules would evolve across ages: IRV and IRS.
 
 The IRV is computed as the average standard deviation of activation coefficients across cycles. As such it quantifies the variability of modules recruitment: a high value means that modules are differently recruited across cycles, while a low value indicates a stable recruitment of modules across cycles.
 
-The IRS corresponds to the sparseness of activation coefficients using a metric described in Hoyer, 2004. The sparseness is computed separately for each cycle (and therefore for each vectorized version of a matrix ai,j,s, with i denoting its rows and j denoting its columns for the cycle s) and averaged afterward. For a given cycle, the resulting value is equal to 1 if the latter vector contains only a single nonzero component, while it is equal to 0 if all components are equal. As such, the IRS indicates the selectivity of activations between spatial and temporal modules regardless of their cycle-to-cycle variability: the larger the IRS is, the more spatial and temporal modules are exclusively paired, while the lower the IRS is, the more spatial and temporal modules are multiplexed.
+The IRS corresponds to the sparseness of activation coefficients using a metric described in Hoyer, 2004. The sparseness is computed separately for each cycle (and therefore for each vectorized version of a matrix $a_{i,j,s}$, with i denoting its rows and j denoting its columns for the cycle s) and averaged afterward. For a given cycle, the resulting value is equal to 1 if the latter vector contains only a single nonzero component, while it is equal to 0 if all components are equal. As such, the IRS indicates the selectivity of activations between spatial and temporal modules regardless of their cycle-to-cycle variability: the larger the IRS is, the more spatial and temporal modules are exclusively paired, while the lower the IRS is, the more spatial and temporal modules are multiplexed.
 
-## Indexes describing the nature of modules themselves
+### Indexes describing the nature of modules themselves
 
 We computed two additional indexes to describe how the nature of modules would evolve across ages: SMAI and STAI.
 
@@ -177,10 +469,10 @@ The SMAI is computed as the average sparseness of spatial modules. Spatial modul
 
 The STAI is computed as the average sparseness of the temporal activations across temporal modules. The peaks of activations within temporal modules could indeed be narrow (high STAI values), describing refined and precise temporal activation across a cycle, or spread (low STAI values), describing a more continuous activation across the large part of the cycle.
 
-## Computing adult values for comparisons
+### Computing adult values for comparisons
 
 When analyzing the results, it is often useful to know the value that would be obtained for adults regarding our parameters of interest. Thus we used data from 20 adults from another study (Hinnekens et al., 2020) to compute similar indexes on adults. Ten steps were available in each adult, and we used the same approach as in infants, repeating the analysis on five random combinations of five cycles and averaging the resulting indexes afterward. No statistics were made from these data but values are depicted in figures to show the adult landmark (Figure 1, black points and gray diamonds in Figures 3 and 4,Supplementary file 1c).
 
-## Statistical analyses
+### Statistical analyses
 
 In addition to reporting the goodness of fit associated with our modeling (i.e. VAF value), we compared features of variability and modularity across ages. Because the number of participants was small, we used nonparametric Wilcoxon tests to compare paired samples across ages from each of the two precursor behaviors to walking on basic kinematic parameters (cycle duration, variability of cycle duration, and proportion of flexion and extension phases across a cycle) and on the variability of EMG signals (IEV). With the same test we analyzed the dimensionality of the motor output by comparing the VAF for a fixed number of modules as well as the number of necessary modules to reach a given VAF. Finally, we compared indexes describing the recruitment of modules (IRV and IRS) as well as indexes describing the nature of modules themselves (SMAI and STAI). Statistical p-values are summarized in Supplementary file 1a.

@@ -22,18 +22,18 @@
 
 ### Affiliations
 
-1. https://ror.org/00rqy9422 Institute for Molecular Bioscience (IMB), The University of Queensland Brisbane Australia
-2. https://ror.org/00rqy9422 School of Chemistry and Molecular Biosciences, The University of Queensland Brisbane Australia
-3. https://ror.org/00rqy9422 Australian Infectious Diseases Research Centre, The University of Queensland Brisbane Australia
-4. https://ror.org/00rqy9422 University of Queensland Centre for Clinical Research, The University of Queensland Brisbane Australia
-5. https://ror.org/00rqy9422 Genome Innovation Hub, The University of Queensland Brisbane Australia
-6. https://ror.org/02dtmmn34 Cambodia Oxford Medical Research Unit, Angkor Hospital for Children Siem Reap Cambodia
-7. https://ror.org/00c1dt378 Pathology Queensland, Queensland Health Brisbane Australia
+1. Institute for Molecular Bioscience (IMB), The University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+2. School of Chemistry and Molecular Biosciences, The University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+3. Australian Infectious Diseases Research Centre, The University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+4. University of Queensland Centre for Clinical Research, The University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+5. Genome Innovation Hub, The University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+6. Cambodia Oxford Medical Research Unit, Angkor Hospital for Children Siem Reap Cambodia ([ROR:02dtmmn34](https://ror.org/02dtmmn34))
+7. Pathology Queensland, Queensland Health Brisbane Australia ([ROR:00c1dt378](https://ror.org/00c1dt378))
 8. Q-PHIRE Genomics and Public Health Microbiology, Forensic and Scientific Services, Coopers Plains Brisbane Australia
-9. https://ror.org/052gg0110 Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom
-10. https://ror.org/00m8d6786 Department of Microbiology, Tumor and Cell Biology, Division of Clinical Microbiology, Karolinska Institutet and Karolinska University Hospital Stockholm Sweden
-11. https://ror.org/040af2s02 Molecular and Integrative Biosciences Research Programme, University of Helsinki Helsinki Finland
-12. https://ror.org/02t3p7e85 Infection Management Prevention Service, Queensland Children's Hospital Brisbane Australia
+9. Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+10. Department of Microbiology, Tumor and Cell Biology, Division of Clinical Microbiology, Karolinska Institutet and Karolinska University Hospital Stockholm Sweden ([ROR:00m8d6786](https://ror.org/00m8d6786))
+11. Molecular and Integrative Biosciences Research Programme, University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
+12. Infection Management Prevention Service, Queensland Children's Hospital Brisbane Australia ([ROR:02t3p7e85](https://ror.org/02t3p7e85))
 
 † Corresponding author
 
@@ -51,31 +51,51 @@ Despite being the second major NM aetiology, genomic studies on NMEC are lacking
 
 ## Results
 
-## Establishment of an NMEC collection from geographically diverse locations
+### Establishment of an NMEC collection from geographically diverse locations
 
 A collection of 52 NMEC isolates cultured from the blood or cerebrospinal fluid (CSF) of neonates with meningitis was established with the addition of six completely sequenced NMEC genomes available on the NCBI database. This yielded a final set of 58 NMEC isolates spanning 1974–2020. The isolates were obtained from seven different geographic locations; Finland (n = 17, 29.3%), Sweden (n = 14, 24.1%), Australia (n = 15, 25.9%), Cambodia (n = 7, 12.1%), USA (n = 3, 5.2%), France (n = 1, 1.7%), and the Netherlands (n = 1, 1.7%).
 
-## ST95 and ST1193 are the two major STs of NMEC
+### ST95 and ST1193 are the two major STs of NMEC
 
 Phylogenetic analysis was performed on the 58 NMEC isolates, with an additional eight well-characterised E. coli strains included for referencing (EC958, UTI89, MS7163, CFT073, UMN026, 536, APEC01, and MG1655). The NMEC isolates were diverse, and spanned phylogroups A, B2, C, D, and F; the majority of isolates were from phylogroup B2 (n = 48, 82.8%). Overall, the isolates belonged to 22 STs, of which 15 STs only contained one isolate. ST95 (n = 20, 34.5%) and ST1193 (n = 9, 15.5%) were the two most common NMEC STs (Figure 1, Supplementary file 1). ST95 isolates were obtained over the entire study period, while ST1193 isolates were more recent and only obtained from 2013. Four isolates belonged to ST390 (6.9%), which is part of the STc95. One isolate belonged to a novel ST designated ST11637, which is part of the ST14 clonal complex (STc14) that also contains ST1193 (Figure 1, Supplementary file 1). Isolates from other common phylogroup B2 extra-intestinal pathogenic E. coli (ExPEC) lineages, ST131, ST73, and ST69, as well as several STs associated with environmental sources such as ST48 and ST23, were detected in the collection. However, it is notable that the high incidence of NM associated with ST95 and ST1193 does not reflect the broader high prevalence of major ExPEC clones associated with human infections in the publicly available Enterobase database (Zhou et al., 2020; Figure 1—figure supplement 1), suggesting ST95 and ST1193 exhibit specific virulence features associated with their capacity to cause NM.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/91853/elife-91853-fig1-v1.jpg)
+
+**Figure 1.:** Non-NMEC isolates used in the analysis for referencing are italicised. The phylogram was built and recombination regions removed employing Parsnp, using 185,911 core single-nucleotide polymorphisms (SNPs) and NMEC strain IHE3034 as the reference. The scale bar indicates branch lengths in numbers of SNPs. NMEC isolates with available complete genomes are bold-italicised, while NMEC isolates that were completely sequenced in this study are indicated in bold and marked with an asterisk. The NMEC isolates that caused recrudescent invasive infection in this study are indicated in red. Branches are coloured according to phylogroups: orange, phylogroup F; red, phylogroup C; green, phylogroup A; violet, phylogroup D; and blue, phylogroup B2. The presence of specific virulence factors is indicated in dark blue. The phylogeny can be viewed interactively at https://microreact.org/project/oNfA4v16h3tQbqREoYtCXj-high-risk-escherichia-coli-clones-that-cause-neonatal-meningitis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91853/elife-91853-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Strains were stratified based on their year of isolation, spanning the periods before 2000, 2001–2005, 2006–2010, 2011–2015, and 2016–2022.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91853/elife-91853-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The presence of each resistance gene is denoted by black shading.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/91853/elife-91853-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) The number of virulence genes (grouped as in Figure 1) for each strain within each sequence type (ST). (B) The number of virulence genes grouped by their functions in ST95 versus ST1193 strains. p-value was calculated using Mann–Whitney two-tailed unpaired test.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/91853/elife-91853-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** K1 capsule production was detected by ELISA using a monoclonal antibody specific for polysialic acid. Strains with an OD420 >0.133 (mean + 3 standard deviations of a negative control kpsD mutant; dashed line) were considered positive for K1 capsule production. Data points represent independent biological replicates with horizontal lines as the mean.
+
 Eighteen NMEC isolates were completely sequenced using complementary long-read Oxford Nanopore Technology, enabling accurate comparison of NMEC genome size, genomic island composition and location, and plasmid and prophage diversity. These isolates spanned the diversity in the collection, representing 11 different STs, including two ST1193 isolates (one with the dominant O75:H5 serotype and one with an unusual O6:H5 serotype), five ST95 isolates with different serotypes, and one isolate from the novel ST11637.
 
-## Antibiotic resistance in NMEC
+### Antibiotic resistance in NMEC
 
 Antibiotic resistance profiling revealed an overall low level of resistance in the collection. The ST1193 isolates contained fluoroquinolone resistance defining mutations in gyrA (S83L D87N) and parC (S80I), as previously described for this lineage (Johnson et al., 2019). In addition, 77.8% of ST1193 isolates (7/9 isolates) also harboured at least one gene conferring resistance to aminoglycosides (aac(3)-IId, aadA5, aph(3″)-Ib, and aph(6)-Id), trimethoprim (dftA17), and sulphonamides (sul1 and sul2) (Figure 1—figure supplement 2). Six out of the seven isolates from Cambodia had more than one antibiotic resistance gene, likely reflecting increased antibiotic resistance rates in this region (Reed et al., 2019). Indeed, in addition to gyrA and parC mutations for fluoroquinolone resistance, CAM-NMEC-6 contains 14 antibiotic resistance genes (including resistance to third-generation cephalosporins and carbapenems) and CAM-NMEC-4 contains 11 antibiotic resistance genes (Figure 1—figure supplement 2).
 
-## Virulence factors in NMEC
+### Virulence factors in NMEC
 
 The isolates exhibited variable distribution of virulence genes previously linked to NMEC pathogenesis. The most prevalent genes were those involved in iron uptake, including the enterobactin (98%), yersiniabactin (98%), aerobactin (62%), and salmochelin (55%) siderophore systems, and the heme receptors chuA (93%) and hma (62%) (Figure 1). Also common were the sitABCD genes encoding an iron/manganese transporter (98%). The presence of fimbrial and afimbrial adhesins was also diverse. The most prevalent adhesins were type 1 fimbriae (100%), mat (ecp) fimbriae (98%), and the fdeC adhesin (98%). Genes encoding P and S fimbriae were detected in 36% and 22% of NMEC isolates, respectively. The most prevalent toxin was the uropathogenic-specific genotoxin usp (83%), which was only found in phylogroup B2 isolates. Other toxin genes encoding the serine protease autotransporters Vat (65% prevalence) and Sat (29%), hemolysin (12%), and cytotoxic necrotising factor-1 (7%) were less prevalent. Additional virulence genes included the aslA arylsulfatase (95%), the iss lipoprotein (76%), and the ibeA invasin (33%). The ColV-plasmid was present in 33% of the isolates (Figure 1, Supplementary file 1). Direct comparison of virulence factors between ST95 and ST1193, the two most dominant NMEC STs, revealed that the ST95 isolates (n = 20) contained significantly more virulence factors than the ST1193 isolates (n = 9); p-value <0.001, Mann–Whitney two-tailed unpaired test (Figure 1—figure supplement 3).
 
-## NMEC comprise a dominant K1 capsule type and a limited pool of O and H serotypes
+### NMEC comprise a dominant K1 capsule type and a limited pool of O and H serotypes
 
 The capsule type of the NMEC isolates was determined by in silico typing. K1 was the dominant capsule type in the collection (43/58 isolates, 74.1%) (Figure 1). Thirty-four of these isolates were available for capsule testing, and we confirmed K1 expression by ELISA in all but two isolates (Figure 1—figure supplement 4). Other capsule types included K2, K5, and K14 (Supplementary file 1). A capsule type could not be resolved for 12 isolates, of which eight did not possess a Group II or III capsule type based on the absence of the conserved kpsD gene (Figure 1; Supplementary file 1).
 
 In silico O antigen (O) and flagella (H) serotypes were also determined. O18 was the most common O type (n = 16, 27.6%), followed by O75 (n = 8, 13.9%) and O2 (n = 7, 12.1%). The most dominant H types were H7 (n = 19, 32.8%), H5 (n = 13, 22.4%), and H4 (n = 9, 15.5%). The most common serotype was O18:H7:K1 (n = 14, 24.1%); these isolates belonged to STc95 (nine ST95, four ST390, and one ST416). The second most common serotype was O75:H5:K1 (n = 8, 13.8%); six isolates from ST1193 possessed this serotype.
 
-## NMEC can cause recrudescent invasive infection despite appropriate antibiotic treatment
+### NMEC can cause recrudescent invasive infection despite appropriate antibiotic treatment
 
 During 2019 - 2020, three patients from which NMEC isolates were originally cultured suffered recrudescent invasive infection (Figure 1; MS21522, MS21524, and MS22733), providing an opportunity to compare the infecting isolates over time using whole-genome sequencing. In all cases, the infecting E. coli isolates were susceptible to the therapy, which comprised cefotaxime (50 mg/kg/dose 8 hourly), switched to ceftriaxone (100 mg/kg/day) to facilitate home parenteral antibiotic administration. Bacterial culture was performed from blood, CSF, urine, and/or stool during the infection period (Figure 2). These patients were from different regions in Australia.
 
@@ -83,25 +103,23 @@ During 2019 - 2020, three patients from which NMEC isolates were originally cult
 
 **Figure 2.:** Indicated is the hospital admission history of patients, together with the timeline of sample collection, identified E. coli isolates and their infection source, and isolate identification based on whole-genome sequencing, metagenomic sequencing (MetaWGS), or fimH amplicon sequencing. Genomic relatedness is indicated based on the number of single-nucleotide polymorphisms (SNPs). The time of admission for the initial episode is indicated as day 0, with subsequent timepoints indicated as days post initial admission. Admission and discharge days are indicated in red and green, respectively.
 
-## Patient 1
+### Patient 1
 
 Patient 1 (0–8 weeks of age) was admitted to the emergency department with fever, respiratory distress, and sepsis. The child was diagnosed with meningitis based on a CSF pleocytosis (>2000 white blood cells [WBCs], low glucose, elevated protein), positive CSF E. coli PCR and a positive blood culture for E. coli (MS21522). Two weeks after completion of a 3-week course of appropriately dosed therapy with third-generation cephalosporins as described above, the child developed similar symptoms of fever and irritability. Lumbar puncture was performed and the CSF culture was positive for E. coli (MS21576). Both the initial blood culture isolate and the relapse CSF isolate were non-susceptible to ciprofloxacin and gentamycin, and whole-genome sequencing revealed they were identical (ST1193 O18:K1:H5; fimH64), with no single-nucleotide polymorphisms (SNPs) nor indels (Figure 2A). Unlike the typical ST1193 O75 serotype (Johnson et al., 2019), this isolate contained a unique O18 serotype. The isolate possessed mutations in gyrA (S83L D87N) and parC (S80I), which explain its resistance to ciprofloxacin, as well as a multidrug resistance IncF plasmid containing genes conferring resistance to aminoglycosides (aac(3)-IId, aadA5, aph(3″)-Ib, and aph(6)-Id), trimethoprim (dfrA17), sulphonamides (sul1 and sul2), and macrolides (mphA) (Figure 1—figure supplement 2). Treatment of the relapse was extended to 6 weeks of intravenous therapy. At follow-up, no anatomical or immunological abnormality was identified and development is normal.
 
-## Patient 2
+### Patient 2
 
 Patient 2 (0–8 weeks of age) presented to the emergency department with a febrile illness. Blood and urine cultures on admission were positive for E. coli. CSF taken 24 hr after treatment revealed pleocytosis (>300 WBCs, >95% polymorphs) but no bacteria were cultured. The patient completed a 3-week course of appropriately dosed antibiotic therapy with third-generation cephalosporins. In the 6-week period after discharge, the child had several short admissions to hospital, but no infection was identified. At 11 weeks post initial infection, the child was readmitted to hospital with high fever. CSF cultures were negative and microscopy was normal, but cultures from blood, urine, and faeces were all positive for E. coli. Whole-genome sequencing revealed that all isolates belonged to ST537 O75:H5 (fimH5; STc14). Pairwise comparison of the recrudescent isolates showed that the urine and fecal isolates were identical to the original isolate, while the blood isolate contained one nonsynonymous SNP in the mdoH gene encoding a glucan biosynthesis glucosyltransferase (T1358G; V453G). This mutation is located in the large cytoplasmic domain of MdoH likely involved in polymerisation of glucose from UDP glucose; the isolate exhibited a mucoid colony morphology suggestive of increased colanic acid production. The isolates did not possess plasmids nor antibiotic resistance genes. The infant experienced recurrent urinary tract infections with E. coli and other urinary pathogens through infancy despite normal urinary tract anatomy. At follow-up, no other history of invasive infection nor identified immunodeficiency were noted, and the child was reported to be developing normally.
 
-## Patient 3
+### Patient 3
 
 Patient 3 (0–8 weeks of age) was admitted to the paediatric intensive care unit with fever and seizures. CSF and blood cultured a fully susceptible E. coli. Two weeks after completing a 4-week course of appropriate therapy with third-generation cephalosporins, the infant was readmitted to hospital with fever and irritability, with further investigation identifying E. coli in CSF, urine, and blood. Three weeks after the completion of the 6-week treatment course, the infant experienced a second relapse, with E. coli isolated from both CSF and blood. Whole-genome sequencing revealed that all isolates were identical and belonged to ST131 O25b:K1:H4 (fimH22). These isolates contained a ColV-virulence plasmid, but did not harbour acquired antibiotic resistance genes. The infant received a further 6-week course of therapy. Extensive imaging studies including repeated magnetic resonance imaging of the head and spine, computed tomography imaging of the head and chest, ultrasound imaging of abdomen and pelvis, and nuclear medicine imaging did not show a congenital malformation or abscess. Immunological work-up did not show a known primary immunodeficiency. At 2 years of age, speech delay is reported but no other developmental abnormality.
 
-## The gut as a reservoir to seed recrudescent infection
+### The gut as a reservoir to seed recrudescent infection
 
 In all three patients that suffered NM and recrudescent invasive infection, the causative isolates were susceptible to third-generation cephalosporins, suggesting the existence of a persistent reservoir that could evade the cidal effect of antibiotic treatment and seed repeat infection. Indeed, the fact that the causative E. coli isolate was detected from a fecal sample at the time of the recrudescent infection in patient 2 (day 77 after initial admission), suggests that NMEC could persist in the gut and cause repeat infection, an observation that has also been reported for uropathogenic E. coli that cause recurrent urinary tract infection (Forde et al., 2019) and acute pyelonephritis in infants (Tullus et al., 1984). Therefore, we retrospectively examined available stored fecal samples from patient 2 at 8- and 12-week follow-up visits post recrudescent infection (days 149 and 174 after initial admission) and patient 3 during treatment and at discharge after the third episode (days 126 and 147 after initial admission) using short-read metagenomic sequencing (Figure 3). Although no fecal samples were available for comparative analysis from either patient prior to antibiotic treatment, we observed a low level of diversity in the composition of the microbiome of both patients, consistent with severe dysbiosis. The microbiome of patient 2 was dominated by Enterobacter (37.4% relative abundance), Achromobacter (23.4% relative abundance), and Bacteroides (22.7% relative abundance) genera at 8-week post recrudescent infection (day 149 after initial admission), and by Bacteroides genera (75.8% relative abundance) at 12-week post recrudescent infection (day 174 after initial admission). The relative abundance of E. coli was 2.05% and 4.1% in each of these samples, respectively, and further analysis using StrainGE (van Dijk et al., 2022) showed that the isolates were most closely matched to the original causative MS21524 isolate. We further employed complementary long-read metagenomic sequencing to analyse the 8-week post relapse infection sample, which enabled construction of a complete E. coli genome that was identical to the causative ST537 (fimH5) isolate (Figures 2 and 3; Supplementary file 3). In the 12-week post recrudescent infection fecal sample from patient 2, amplicon sequencing targeting fimH identified the presence of E. coli with the same fimH type as the causative isolate (fimH5). Thus, two independent analyses of samples taken 4 weeks apart demonstrated the existence of the E. coli ST537 isolate in the intestinal microflora of patient 2. In patient 3, the microbiome was dominated by Enterococcus genera at both timepoints examined (93% and 97.4% relative abundance). We were unable to detect E. coli by fimH amplicon sequencing and the relative abundance of E. coli in these fecal samples was extremely low (<0.01%) based on metagenomic sequencing (Supplementary file 3). The extensive dysbiosis revealed in this patient is likely an outcome of the three rounds of antibiotic treatment.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/91853/elife-91853-fig3-v1.jpg)
-
-**Figure 3.:** A) and patient 3 during treatment and at discharge after the third episode (days 126 and 147 after initial admission) (B).
 
 ## Discussion
 
@@ -119,27 +137,27 @@ This study had several limitations. First, our NMEC collection was restricted to
 
 ## Methods
 
-## Bacterial isolates
+### Bacterial isolates
 
 A collection of 52 NMEC isolates obtained from 1974 to 2020 was achieved from Sweden, Finland, Cambodia, and Australia. Isolates were stored in glycerol at −80°C until use. All isolates were cultured in Lysogeny broth. The collection comprised 42 isolates from confirmed meningitis cases (29 cultured from CSF and 13 cultured from blood) and 10 isolates from clinically diagnosed meningitis cases (all cultured from blood) (Supplementary file 1). This collection was complemented by the addition of six completely sequenced NMEC genomes available on the NCBI database, namely strains IHE3034, RS218, S88, NMEC58, MCJCHV-1, and CE10.
 
-## DNA extraction, genome sequencing, and analyses
+### DNA extraction, genome sequencing, and analyses
 
 Genome sequencing was performed using paired-end Illumina methodology. Illumina sequencing data were processed by removing adapters and low-quality reads using Trimmomatic v0.36 (Bolger et al., 2014), with a minimum quality score of 10 and minimum read length of 50. Trimmed reads were de novo assembled using SPAdes v3.12.0 (Bankevich et al., 2012) with default parameters. Draft assemblies of the 52 NMEC isolates from this study, together with six complete NMEC genomes and eight complete genomes from other characterised E. coli representing different phylogroups, were subjected to phylogenetic analysis using parsnp v1.5.3 (Treangen et al., 2014). A subset of 18 isolates were additionally sequenced using Oxford Nanopore Technology long-read sequencing (Nanopore). Complete NMEC genomes were achieved using a combination of Illumina short-read and Nanopore long-read data and analysis employing the MicroPIPE tool (Murigneux et al., 2021).
 
-## In silico and molecular analyses
+### In silico and molecular analyses
 
 Virulence-associated genes, antibiotic resistance genes, plasmids and serotyping were evaluated using ABRicate (RRID:SCR_021093, version 0.8; https://github.com/tseemann/abricate) with built-in databases (Chen et al., 2016; Feldgarden et al., 2019; Carattoli et al., 2014; Ingle et al., 2016), with the percentage nucleotide identity and coverage cut-off set at 90% and 80%, respectively. Capsule typing was performed employing Kaptive (Wyres et al., 2016) using an in-house E. coli capsule database (Goh et al., 2017) and manually checked. Chromosomal point mutations associated with antibiotic resistance were detected using PointFinder (Zankari et al., 2017). FimH amplicon sequencing was performed as previously described (Willner et al., 2014; Chen et al., 2018); allelic variants were identified using FimTyper (Roer et al., 2017).
 
-## K1 ELISA
+### K1 ELISA
 
 K1 capsule expression was detected by ELISA using an anti-polysialic acid antibody single chain Fv fragment (Nagae et al., 2013) as the primary antibody, anti-His antibody, and alkaline phosphatase anti-mouse IgG as the secondary and tertiary antibodies, respectively; p-nitrophenylphosphate (Sigma) was used as the substrate. Optical density was measured at 420 nm.
 
-## Metagenomic sequencing and analyses
+### Metagenomic sequencing and analyses
 
 Metagenomic sequencing was performed on DNA extracted from fecal samples using the Illumnina NovaSeq6000 platform. Adapters and low-quality reads were trimmed using Trimmomatic v0.36 (Bolger et al., 2014), employing a minimum quality score of 10 and minimum read length of 50. Sequencing reads corresponding to human DNA were discarded by mapping the trimmed reads to the human genome hg38 (accession number GCA_000001405.29) using bowtie2 (Langmead and Salzberg, 2012). Taxonomical profiling was performed with Kraken2 (Wood et al., 2019) followed by Bracken (Lu et al., 2017).
 
-## Long-read metagenomic sequencing
+### Long-read metagenomic sequencing
 
 Long-read metagenomic sequencing was performed on DNA extracted from a fecal sample. A HiFi gDNA library was prepared using the SMRTbell Express Template Prep Kit 2.0 (PacBio, 100-938-900) according to the low input protocol (PacBio, PN 101-730-400 Version 06 [June 2020]). As the sample DNA was already fragmented with a tight peak (mode size 9.4 kb), no shearing was performed; the sample was concentrated using Ampure PB beads (PacBio, PCB-100-265-900) and used directly as input into library preparation. The entire quantity of purified DNA (360 ng) was used to make the library as follows. The DNA was treated to remove single-stranded overhangs, followed by a DNA damage repair reaction and an end-repair/A-tailing reaction. Overhang barcoded adapters were ligated to the A-tailed library fragments, followed by a nuclease treatment to remove damaged library fragments, and then purification with AMPure PB beads. The library was size-selected to remove fragments <3 kb using AMPure PB beads. The final purified, size-selected library was quantified on the Qubit fluorometer using the Qubit dsDNA HS assay kit (Invitrogen, Q32854) to assess concentration, and run on the Agilent Femto Pulse using the 55 kb BAC Analysis Kit (Agilent, FP-1003-0275) to assess fragment size distribution.
 

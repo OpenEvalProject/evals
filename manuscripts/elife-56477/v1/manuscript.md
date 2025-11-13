@@ -34,33 +34,208 @@ Preliminary evidence suggests that a private-public distinction for confidence i
 
 ## Results
 
-## Experimental manipulation of private-public mappings
+### Experimental manipulation of private-public mappings
 
 Subjects (n = 28) performed a social perceptual decision task, first in a behavioural session and subsequently during fMRI (Figure 1). On each trial, subjects made a group decision about a visual stimulus with one of four partners. Subjects were told that the partners were created by replaying the responses of four people performing the perceptual task on a separate day but, in reality, the partners were simulated. First, subjects judged whether a field of dots was moving left or right. Next, after being informed about the identity of their partner on the current trial, subjects were asked to report their confidence in the perceptual judgement – an estimate which would enter into the group decision. Subjects were then shown the current partner’s response for that trial. Finally, implementing a common group decision rule (Bang et al., 2017), the individual decision made with higher confidence was automatically selected as the group decision, after which feedback about its accuracy was delivered. Subjects were incentivised to help each group achieve as many correct group decisions as possible but, by design, could only affect group decisions through their confidence reports.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/56477/elife-56477-fig1-v1.jpg)
+
+**Figure 1.:** On each trial, subjects made a perceptual group decision with one of four partners. They first decided whether a random dot motion stimulus was moving left or right. We varied the fraction of coherently moving dots in order to manipulate subjects’ internal sense of confidence in their decision. Subjects were then informed about their partner on the current trial and were asked to submit a report of confidence in their initial decision (discrete scale from 1 to 6). Subjects were then shown the partner’s response, after which the individual decision made with higher confidence was selected as the group decision. Finally, subjects received feedback about choice accuracy, before continuing to the next trial. We engineered the partners to have the same choice accuracy as subjects but to differ in mean confidence. Subjects were incentivised to help each group achieve as many correct decisions as possible: they were told that we would randomly select two trials for each group in each session (4 × 2 × 2 = 16 trials) and pay £1 in bonus for every correct group decision (in reality, all subjects received £10 in bonus). In this design, the strategy for maximising group accuracy (reward) is to match your partner’s mean confidence. The structure of the task differed between the behavioural and fMRI sessions as explained in the main text.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56477/elife-56477-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The heat map shows expected group accuracy as a function of the mean confidence of two players with the same level of task performance (i.e. sensory noise). The heat map was derived analytically using the sensory noise fitted to an example subject and by assuming maximum entropy confidence distributions (see Bang et al., 2017, for details on calculation). The heat map shows that expected group accuracy is highest along the identity line: that is, when a subject’s mean confidence (y-axis) is matched to that of the current partner (x-axis; the four avatars indicate the four partners’ mean confidence as specified in the task). Under our incentive structure, expected reward is proportional to expected group accuracy: the higher the expected group accuracy, the higher the probability that a randomly selected group decision will be correct.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56477/elife-56477-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Subjects took part in separate behavioural and fMRI sessions on the same day. The prescan session involved four phases. In phase 1, we calibrated four levels of coherence so as to achieve target levels of choice accuracy (60%, 70%, 80% and 90%). In phases 2–4, we trained subjects on the social task. In phase 2, subjects were paired with the partners in a block-wise manner (each partner is indicated by a unique colour and name). There were four cycles of blocks of 10 trials per partner (e.g., A–B–C–D–A–B–C–D–A–B–C–D–A–B–C–D). The context screen was shown before each block of trials but not after a perceptual decision. In phase 3, subjects were paired with the four partners in an interleaved manner, with the current partner’s identity revealed after each perceptual decision. In phase 4, the ‘showdown’ stage was played out in the background. In addition, we introduced a condition where the social context was hidden. The scan session involved four runs, using the same design as in phase 4 of the prescan session. We matched the distribution of conditions (coherence × context) across scan runs in order to facilitate multivariate analysis of the fMRI data.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/56477/elife-56477-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The distributions were constructed so as to have maximum entropy for a given level of mean confidence (see Bang et al., 2017, for details on calculation).
 
 We varied two features of the task in a factorial (4 × 4) manner. First, we varied the fraction of coherently moving dots (coherence) to manipulate subjects’ internal sense of confidence in a perceptual judgement. In general, the higher the coherence, the higher subjects’ confidence. Second, we engineered the partners (context) to have the same choice accuracy as subjects but to differ in mean confidence. In this case, the strategy for maximising group accuracy (and thereby reward) is to match a partner’s mean confidence (Figure 1—figure supplement 1). If a subject always reports higher confidence than a partner, then they would not benefit from the trials where they were wrong but the partner was correct. In contrast, if a subject always reports lower confidence than a partner, then they would not benefit from the trials where the partner was wrong but they were correct. The design thus allowed us to separate public from private confidence and thereby probe private-public mappings in behaviour and brain activity.
 
 The aim of the behavioural session was to calibrate levels of coherence so as to achieve target levels of choice accuracy and to train subjects on the social task (Figure 1—figure supplement 2). The training had three phases. First, subjects were paired with the four partners in a block-wise manner. Second, the partners were interleaved, with the identity of the current partner revealed after the perceptual choice. Finally, using the same design as in the fMRI session, the ‘showdown’ stage was played out in the background, with subjects not seeing the partner’s response or the group outcome. This change, which was introduced to minimise inter-trial dependencies in behavioural and neural responses, meant that subjects had to rely on their knowledge (expectations) about the partners learned in the preceding behavioural session. In addition, to establish a baseline for behavioural and neural responses, we added a condition where the partner’s identity was hidden. The fMRI session consisted of four scan runs, with the distribution of conditions matched across runs in order to facilitate multivariate analysis of the fMRI data (i.e. four trials for each coherence x context condition in each scan run). To help subjects keep track of the behaviour of each group, they were informed every 20 trials how often their individual decision had been selected as the group decision for a particular partner. These selection statistics were reset after each scan run.
 
-## Confidence reports reflect motion coherence and social context
+### Confidence reports reflect motion coherence and social context
 
 We first tested whether subjects’ confidence reports in the fMRI session varied as a function of our factorial design (see Figure 2—figure supplement 1 for analysis of prescan session). As intended, subjects’ confidence reports were influenced by both motion coherence and social context (Figure 2, ordinal regression; coherence: t(27) = 6.95, p<0.001, context: t(27) = 4.82, p<0.001, interaction: t(27) = −0.03, p=0.975). More specifically, subjects’ reported confidence increased with the level of coherence (Figure 2A) and the mean confidence of the current partner (Figure 2B). In other words, the confidence reported for a specific level of coherence depended on the current partner’s mean confidence (Figure 2C) – demonstrating that subjects flexibly adjusted the mapping from an internal sense of confidence to an explicit report of confidence according to the social context.
 
-## Encoding of motion coherence and social context in prefrontal cortex
+![Figure 2.](https://cdn.elifesciences.org/articles/56477/elife-56477-fig2-v1.jpg)
+
+**Figure 2.:** (A) Mean confidence reported for each level of coherence. (B) Mean confidence reported when playing with each partner. The question mark indicates a condition where the partner’s identity was hidden. (C) Heat map visualising mean confidence in each condition of our factorial design (confidence was z-scored for each subject before averaging across subjects). Warmer colours indicate higher confidence. All data are from the fMRI session. In (A) and (B), data are represented as group mean ± SEM. Each dot is a subject.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56477/elife-56477-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Rows 1–3 indicate phases 2–4 in the behavioural session (see Figure 1—figure supplement 2). Row 4 indicates the fMRI session and is included for comparison. (A) Mean confidence reported for each level of coherence. (B) Mean confidence reported when playing with each partner. The question mark indicates a condition in which the partner’s identity was hidden. (C) Heat map over mean confidence in each condition of our factorial design (confidence was z-scored for each subject before averaging across subjects). Warmer colours indicate higher confidence. In (A) and (B), data are represented as group mean ± SEM. Each dot is a subject.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56477/elife-56477-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Each partner was identified by a unique colour (pink, blue, green or red) and name (Hamed, Max, Sara or Jennifer) – with the name indicating the partner’s gender. The attributes were randomly assigned to the four partner types (low, medium-low, medium-high and high). Visualisation of mean confidence reported for each partner name indicates that there was no modulation by partner identity. As the task was not optimised for studying identity effects (e.g., a subject does not experience the same name in association with different partner types or the same partner type in association with different names), we did not seek to further unpack behaviour in terms of partner identity. Data are represented as group mean ± SEM. Each dot is a subject.
+
+### Encoding of motion coherence and social context in prefrontal cortex
 
 We focused our fMRI analysis on three regions of interest (ROIs) that have been identified as putative neural substrates of decision confidence across a variety of studies but whose role in the generation of a context-dependent confidence report is unclear (Figure 3A). First, dACC and pgACC, located in the medial wall of PFC, have been consistently linked to the formation of an internal (private) sense of confidence (Bang and Fleming, 2018; De Martino et al., 2013; Fleming et al., 2012; Fleming et al., 2018; Gherman and Philiastides, 2018; Lebreton et al., 2015; Wittmann et al., 2016). For example, a recent fMRI study found that pgACC tracked all variables necessary for the formation of an internal sense of confidence in a novel psychophysical task that isolates decision confidence from its component parts (Bang and Fleming, 2018). Second, FPl, a region in human prefrontal cortex with no homologue in the monkey brain (Neubert et al., 2014), has consistently been found to track explicit (public) reports of confidence (Bang and Fleming, 2018; Fleming et al., 2012; Fleming et al., 2018; Gherman and Philiastides, 2018; Hilgenstock et al., 2014; Shekhar and Rahnev, 2018; Yokoyama et al., 2010). Of the three ROIs, FPl is of particular interest. We have previously hypothesised that FPl supports the mapping from private to public confidence (Bang and Fleming, 2018). First, FPl is not activated by tasks that vary private confidence in the absence of explicit reports (Bang and Fleming, 2018). Second, the microstructure (Allen et al., 2017; Fleming et al., 2010) and integrity (Fleming et al., 2014) of FPl predicts the degree to which an individual’s confidence reports reflect their task performance – a relationship which may be explained by a role of FPl in maintaining a stable mapping from private to public confidence. However, to date, this hypothesis about the function of FPl has never been directly tested.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/56477/elife-56477-fig3-v1.jpg)
+
+**Figure 3.:** (A) Regions of interest (ROIs). (B) We modelled neural responses to the context screen, including both linear and quadratic terms for coherence and context as parametric modulators – with the quadratic context term indexing the need for a context-dependent private-public mapping. (C) ROI contrast estimates for coherence (K), quadratic coherence (K2), context (C) and quadratic context (C2). We tested significance (asterisk) by comparing contrast estimates across subjects to zero (p<0.05, one-sample t-test). Statistical results are summarised in Table 1. Data are represented as group mean ± SEM. (D) Visualisation of whole-brain activation for quadratic context in lateral prefrontal cortex (clusters significant at p<0.05, FWE-corrected for multiple comparisons, with a cluster-defining threshold of p<0.001, uncorrected). See Appendix 1 for whole-brain activations in response to context screen and Appendix 2 for whole-brain activations in response to presentation of the motion stimulus. dACC: dorsal anterior cingulate cortex. pgACC: perigenual anterior cingulate cortex. FPl: lateral frontal pole.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56477/elife-56477-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The analysis of ROI responses to the context screen shown in Figure 3C was based on a model (GLM1) that included linear and quadratic terms for coherence (K) and context (C) as parametric modulators. Both the linear and the quadratic terms were derived from our factorial design and theoretically motivated. Nevertheless, we ran an independent set of analyses to validate the inclusion of the quadratic terms in our model. To this end, we extracted ROI activity estimates under GLM3 – originally estimated for RSA – which modelled neural responses to the context screen separately for each condition of our factorial design (4 × 4 = 16). We applied a full model (linear and quadratic) and a reduced model (only linear) to these activity estimates within a regression framework and compared their goodness-of-fit (here defined as adjusted R2 which controls for the number of model predictors). This approach revealed that the goodness-of-fit was higher for the full than the reduced model in FPl and that this difference was higher for FPl than the other ROIs. (A) Heat map visualising mean ROI activity estimates for each condition of our factorial design under GLM3 (activity estimates were z-scored for each subject before averaging across subjects). (B) Mixed-effects analysis of ROI activity estimates. Plots show (left) fixed effects under full model and (right) difference in adjusted R2 between full and reduced model under a linear mixed-effects regression model (both fixed and random effects for each subject). (C) Group-average analysis of ROI activity estimates. Plots show (left) fixed effects under full model and (right) difference in adjusted R2 between full and reduced model under a linear regression analysis of the mean ROI activity estimates shown in panel A.
 
 As an initial assessment of the contribution of the three ROIs to a context-dependent mapping from private to public confidence, we first estimated a general linear model (GLM1) of neural activity locked to the screen that revealed the current partner (context screen; Figure 3B). We selected the context screen as our time window of interest for two reasons. First, the context screen is the first point in a trial that information about the current partner is revealed – any context-related regressors would have little meaning if assigned to timepoints earlier on in a trial. Second, during the presentation of the context screen, subjects have all the information needed to internally decide on a context-dependent confidence report, but the neural response will not be confounded by the engagement of motor processes needed to select a confidence report – a motor plan can only be prepared after the randomised initial location of the confidence marker is revealed. Building on our factorial design, we included linear and quadratic terms for coherence and context as parametric modulators of the neural response to the context screen. In this model, the quadratic context term captures the intuition that larger shifts in the mapping from private to public confidence are required when playing with both low-confidence and high-confidence partners (Figure 3B), whereas the quadratic coherence term controls for potential non-linear influences of an internal sense of confidence on the neural response (Mazor et al., 2020).
 
 Under this model, we would expect activity in neural areas which track private confidence to vary as a function of motion coherence, whereas neural areas which support a mapping from private to public confidence should also track information about the social context. Consistent with a role in private-public mappings, FPl tracked both motion coherence and social context (Figure 3C; see statistical results in Table 1). In particular, FPl activity was higher for higher levels of coherence and for both low-confidence and high-confidence partners – contexts that involved a greater need for the employment of a context-dependent private-public mapping – as indexed by the quadratic context term. As for the ROIs hypothesised to support the formation of an internal sense of confidence, only pgACC tracked motion coherence (Figure 3C). While an encoding of motion coherence on its own is insufficient to establish an area as a neural substrate for private confidence, this result is consistent with the previous finding that pgACC tracked a combination of variables that underpinned changes in private confidence (Bang and Fleming, 2018).
 
+**Table 1.**
+ Encoding of motion coherence and social context in lateral frontal pole.Table shows statistical results for the analysis of ROI responses to the context screen shown in Figure 3C. The model (GLM1) included separate condition regressors for trials where the context was signalled and trials where the context was hidden. The condition regressor for signalled-context trials was parametrically modulated by linear and quadratic terms for coherence (K and K2) and context (C and C2). In addition to the contrast estimates for these parametric modulators, the table also shows the contrast between signalled-context and hidden-context trials. Statistical testing was performing by comparing contrast estimates across subjects to zero using a one-sample t-test. dACC: dorsal anterior cingulate cortex. pgACC: perigenual anterior cingulate cortex. FPl: lateral frontal pole.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ROI</th>
+      <th>Contrast</th>
+      <th>Mean</th>
+      <th>SEM</th>
+      <th>t</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">dACC</td>
+      <td>K</td>
+      <td>0.0646</td>
+      <td>0.1748</td>
+      <td>0.3694</td>
+      <td>0.7147</td>
+    </tr>
+    <tr>
+      <td>K2</td>
+      <td>0.0293</td>
+      <td>0.1492</td>
+      <td>0.1966</td>
+      <td>0.8456</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>-0.1930</td>
+      <td>0.1503</td>
+      <td>-1.2840</td>
+      <td>0.2101</td>
+    </tr>
+    <tr>
+      <td>C2</td>
+      <td>0.3448</td>
+      <td>0.1736</td>
+      <td>1.9857</td>
+      <td>0.0573</td>
+    </tr>
+    <tr>
+      <td>Signalled vs. hidden</td>
+      <td>0.6045</td>
+      <td>0.3685</td>
+      <td>1.6402</td>
+      <td>0.1126</td>
+    </tr>
+    <tr>
+      <td rowspan="5">pgACC</td>
+      <td>K</td>
+      <td>0.4427</td>
+      <td>0.1616</td>
+      <td>2.7389</td>
+      <td>0.0108</td>
+    </tr>
+    <tr>
+      <td>K2</td>
+      <td>0.0008</td>
+      <td>0.1839</td>
+      <td>0.0043</td>
+      <td>0.9966</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>0.2469</td>
+      <td>0.1994</td>
+      <td>1.2384</td>
+      <td>0.2262</td>
+    </tr>
+    <tr>
+      <td>C2</td>
+      <td>-0.0878</td>
+      <td>0.2127</td>
+      <td>-0.4126</td>
+      <td>0.6831</td>
+    </tr>
+    <tr>
+      <td>Signalled vs. hidden</td>
+      <td>0.8477</td>
+      <td>0.4412</td>
+      <td>1.9213</td>
+      <td>0.0653</td>
+    </tr>
+    <tr>
+      <td rowspan="5">FPl</td>
+      <td>K</td>
+      <td>0.6132</td>
+      <td>0.1496</td>
+      <td>4.0981</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>K2</td>
+      <td>-0.1349</td>
+      <td>0.2314</td>
+      <td>-0.5830</td>
+      <td>0.5647</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>-0.1172</td>
+      <td>0.2118</td>
+      <td>-0.5535</td>
+      <td>0.5845</td>
+    </tr>
+    <tr>
+      <td>C2</td>
+      <td>0.9070</td>
+      <td>0.1941</td>
+      <td>4.6741</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>Signalled vs. hidden</td>
+      <td>1.2872</td>
+      <td>0.5155</td>
+      <td>2.4967</td>
+      <td>0.0189</td>
+    </tr>
+  </tbody>
+</table>
+
 Finally, we ran an exploratory whole-brain analysis using the same GLM as in the ROI analysis (see Appendix 1). Here we focus on context-related effects: while neural encoding of an internal sense of confidence has been investigated by previous research, our study is the first to manipulate the contextual requirements on the mapping of this internal sense onto explicit confidence reports. We observed activations in relation to the quadratic context term in neural areas that are typically implicated in studies of social cognition – including bilateral temporoparietal junction (Frith and Frith, 2012; Saxe, 2006) – and cognitive control – including a region anterior to our dACC ROI and in right dorsolateral PFC (Duncan, 2010). Notably, and consistent with our ROI analysis, the quadratic context term also revealed significant clusters in bilateral anterior-lateral PFC that overlapped with our FPl ROI (Figure 3D).
 
-## Encoding of trial-by-trial confidence in prefrontal cortex
+### Encoding of trial-by-trial confidence in prefrontal cortex
 
 The preceding analysis of neural activity utilised our experimental dissociation of private and public confidence and did not directly incorporate subjects’ behaviour. In order to further probe the contribution of our ROIs to a context-dependent mapping from private to public confidence, we next used subjects’ confidence reports to unpack ROI response profiles at a trial-by-trial level. As shown in Figure 2, subjects’ confidence reports reflect factors relating both to the perceptual decision and the social context. A simple correlation between reported confidence and ROI activity would therefore not reveal whether the relationship was driven by private or public aspects of confidence, or both. To separate the contribution of the perceptual decision and the social context, we leveraged a previously established model-based approach (Bang and Fleming, 2018) to estimate the confidence that subjects would have reported on a given trial had there been no contextual modulation – an estimate that could then be compared to the confidence that subjects actually reported.
 
 Our model-based estimate of private confidence is obtained by (1) fitting an ordinal regression model to the behavioural session in order to characterise the influence of motion coherence, choice reaction time and each social context on a subject’s confidence reports and (2) applying the fitted model to data from the fMRI session while setting the influence of each social context to zero (Figure 4A). Importantly, this model-based estimate provides a more direct proxy of private confidence than motion coherence alone by also taking into account the time taken to make a decision – a factor which has been shown to affect private confidence over and above the strength of the perceptual evidence (Kiani et al., 2014). Indeed, our model-based approach indicated that private confidence was comparable for fast decisions made in response to low-coherence stimuli and slow decisions in response to high-coherence stimuli (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/56477/elife-56477-fig4-v1.jpg)
+
+**Figure 4.:** (A) Model-based estimate of private confidence. We fitted an ordinal regression model to a subject’s confidence reports from the behavioural session (we used the data from the final phase as this phase had the same task design as the fMRI session). The model has a set of weights, which parameterise the influence of the perceptual decision (coherence and choice reaction time) and social context (one term for each partner), and a set of thresholds, which parameterise report biases. We used the fitted model to predict the confidence that a subject would have reported in the fMRI session had there been no contextual modulation – by applying the model to a subject’s data while setting the context weights to zero. This prediction is a probability distribution over reports (e.g., a report of ‘1’ has a 10% probability, ‘2’ has 20% probability and so on). We used the expectation under this distribution as our estimate of private confidence. (B) GLM analysis of the effects of private confidence and empirically observed confidence reports on ROI activity time courses. Vertical dashed line indicates the onset of the context screen - the context screen, which is presented for 1 s, is shown .5 s after the submission of the perceptual decision and is immediately followed by the confidence scale. Analyses were performed on trials in which the context was explicitly signalled. We tested significance (coloured square) for each time point by comparing coefficients across subjects to zero (p<0.05, one-sample t-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56477/elife-56477-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** For each subject, we used the model fitted to their data (see Figure 4A) to estimate private confidence (y-axis) for each level of motion coherence (lines) and for 10 choice reaction times specified using quantiles (x-axis). We then averaged the model-based estimate of private confidence across subjects for visualisation.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56477/elife-56477-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** We used a leave-one-trial-out procedure to assess cross-validation accuracy within the data used to fit the confidence model (final phase of the behavioural session). For each subject, we iteratively fitted the model to all trials but one and computed the negative log likelihood of the report observed on the left-out trial under the confidence model (where the probability distribution over reports depends on the fitted model) and a null model (where the probability distribution over reports is uniform). We then summed the cross-validated negative log-likelihoods across all trials and computed the difference between the confidence model and the null model (y-axis) – with a positive value indicating higher cross-validation accuracy under the confidence model than the null model. In support of our approach, the difference between the confidence model and the null model was positive in all subjects.
 
 We related both the model-based estimate of private confidence and the empirically observed confidence reports to ROI activity time courses within a regression framework (Figure 4B). Our analysis showed that all three ROIs encoded the model-based estimate of private confidence (pink line). The encoding profiles peaked around 2 s after the onset of the context screen, which, given the slow dynamics of the fMRI signal, is in line with the model-based estimate of private confidence being associated with the earlier perceptual decision rather than the social context. Of the three ROIs, only dACC encoded the empirically observed confidence reports (cyan line). Consistent with a sequential computation of the private and public aspects of confidence, the dACC encoding profile of reported confidence peaked 5–6 s after the onset of the context screen. Given the inclusion of the model-based estimate of private confidence in this analysis, an effect of reported confidence is likely to be driven by the social context. Taken together, these results indicate that dACC tracks the input and the output of a private-public mapping.
 
@@ -70,7 +245,7 @@ We next reasoned that, if FPl provides the context-dependent private-public mapp
 
 **Figure 5.:** (A) Psychophysiological interaction analysis of ROI activity time courses. Traces are coefficients from a GLM in which we predicted dACC/pgACC activity from the interaction between FPl activity and (1) the model-based estimate of private confidence (pink), (2) the empirically observed confidence reports (cyan) and (3) the interaction between private and reported confidence (green) – while controlling for the main effect of each term. Vertical dashed line indicates the onset of the context screen - the context screen, which is presented for 1 s, is shown .5 s after the submission of the perceptual decision and is immediately followed by the confidence scale. Analyses were performed on trials in which the context was explicitly signalled. We tested significance (coloured square) for each time point by comparing coefficients across subjects to zero (p<0.05, one-sample t-test). (B) Visualisation of FPl-dACC connectivity. Hotter colours indicate greater FPl-dACC connectivity as a function of variation (in z-score units) in private confidence (x-axis) and reported confidence (y-axis). FPl-dACC connectivity was estimated using group-level coefficients averaged across a time window from 6 s to 8 s (box in panel A).
 
-## Representation of task space in lateral frontal pole
+### Representation of task space in lateral frontal pole
 
 Finally, we reasoned that, if FPl indeed orchestrates the context-dependent mapping from private to public confidence, then this area should also carry detailed information about the different social situations engendered by our task. In computational terms, our task comprises 16 states (social situations), with each state corresponding to a combination of coherence and context (e.g., the state on the current trial may be ‘low coherence + high-confidence partner’, whereas on the next trial a new combination of coherence and context will be encountered). By design, each of these 16 states requires subtly different behavioural responses in order to maximise reward – a relationship reflected by subjects’ confidence reports (Figure 2C). If FPl supports this contextual modulation of behavioural responses, then it should represent the different states of the task as distinct.
 
@@ -79,6 +254,81 @@ We tested this prediction using representational similarity analysis (RSA) and a
 ![Figure 6.](https://cdn.elifesciences.org/articles/56477/elife-56477-fig6-v1.jpg)
 
 **Figure 6.:** (A) A split-data representational dissimilarity matrix (sdRDM) is constructed by (1) computing the Mahalanobis distance between the voxel activity pattern in scan run i and the voxel activity pattern averaged across scan runs j ≠ i for every pair of conditions and (2) averaging the sdRDMs across scan runs. The exemplar discriminability index (EDI) is computed as the average dissimilarity across off-diagonal elements (blue) minus the average dissimilarity across diagonal elements (green). A positive EDI indicates that the voxel activity pattern within an ROI is more stable within conditions than between conditions and therefore that the ROI discriminates between the conditions. Simulated data are presented to aid visualisation. (B) ROI EDIs for the full task space (KxC) as well as the sub-spaces of coherence (K) and context (C). We tested significance (asterisk) by comparing EDIs across subjects to zero (p<0.05, one-tailed sign-rank test). Statistical results are summarised in Table 2. Data are represented as group mean ± SEM. See Appendix 3 for whole-brain EDI searchlight analysis. dACC: dorsal anterior cingulate cortex. pgACC: perigenual anterior cingulate cortex. FPl: lateral frontal pole.
+
+**Table 2.**
+ Task space representation in lateral frontal pole.Table shows statistical results for the analysis of ROI task space representations shown in Figure 6B. Condition-specific multivariate patterns were obtained by modelling the neural response to the context screen separately for each condition of our factorial design (GLM3; only signalled-context trials). ROI EDIs were then computed separately for the full task space (KxC) as well as the sub-spaces of coherence (K) and context (C). Statistical testing was performed by comparing EDIs across subjects to zero using a one-tailed sign-rank test. dACC: dorsal anterior cingulate cortex. pgACC: perigenual anterior cingulate cortex. FPl: lateral frontal pole.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ROI</th>
+      <th>Space</th>
+      <th>Mean</th>
+      <th>SEM</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">dACC</td>
+      <td>K</td>
+      <td>-0.0249</td>
+      <td>0.0436</td>
+      <td>0.7772</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>0.0577</td>
+      <td>0.0379</td>
+      <td>0.1073</td>
+    </tr>
+    <tr>
+      <td>KxC</td>
+      <td>0.0353</td>
+      <td>0.0499</td>
+      <td>0.1397</td>
+    </tr>
+    <tr>
+      <td rowspan="3">pgACC</td>
+      <td>K</td>
+      <td>0.1033</td>
+      <td>0.0749</td>
+      <td>0.1073</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>0.0646</td>
+      <td>0.0678</td>
+      <td>0.2029</td>
+    </tr>
+    <tr>
+      <td>KxC</td>
+      <td>0.0567</td>
+      <td>0.0939</td>
+      <td>0.2437</td>
+    </tr>
+    <tr>
+      <td rowspan="3">FPl</td>
+      <td>K</td>
+      <td>0.1378</td>
+      <td>0.0854</td>
+      <td>0.0334</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>0.1746</td>
+      <td>0.0768</td>
+      <td>0.0258</td>
+    </tr>
+    <tr>
+      <td>KxC</td>
+      <td>0.2624</td>
+      <td>0.1062</td>
+      <td>0.0063</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -100,13 +350,13 @@ The current conceptualisation of private-public mappings may offer insight into 
 
 ## Materials and methods
 
-## Subject details
+### Subject details
 
 Twenty-eight adults (14 females; mean age ± SD, 26.36 ± 7.00) took part in the study. Sample size was determined based on common sample sizes in the field and in order to balance power and resource constraints (Poldrack, 2019; Poldrack et al., 2017). Each subject received a flat rate for participation (£45, £10/hour) and a performance-based bonus (see below). All subjects provided informed consent including consent to publish and sharing of anonymised data. The study was approved by the Ethics Committee of University College London (8231/001).
 
-## Experimental details
+### Experimental details
 
-## Task and procedure
+#### Task and procedure
 
 Subjects performed a social perceptual decision task in separate prescan and scan sessions (Figure 1—figure supplement 2). We made modifications to the task within and between these sessions. Here we first describe the full task, before detailing the changes made.
 
@@ -120,57 +370,57 @@ The behavioural session involved four phases. In phase 1, we calibrated the cohe
 
 The scan session involved four scan runs, using the same task design as in phase 4 of the prescan session. We matched the distribution of conditions (coherence × context) across scan runs in order to facilitate multivariate analysis of the fMRI data, with four repetitions per condition (4 × 4 × 5 = 80 trials per scan run). The screen informing subjects about how often their individual decision had been selected as the group decision for each partner was shown every 20 trials. The selection statistics were reset after each scan run.
 
-## Random dot kinematograms
+#### Random dot kinematograms
 
-Subjects viewed random dot kinematograms (RDKs) contained in a circular white aperture (7 degrees in diameter). Each RDK was made up of three independent sets of dots (each dot was 0.12 degrees in diameter) shown in consecutive frames. Each set of dots were shown for one frame (about 16ms) and then replotted again three frames later (about 50ms). Each time a set of dots was replotted, a subset of the dots, determined by the motion coherence, k, was displaced in the direction of motion at a speed of 5 degrees s−1, whereas the rest of the dots were displaced at random locations within the aperture. The motion direction was to the left or the right along the horizontal meridian. The dot density was fixed at 30 dots degrees−2 s−1. To help subjects maintain fixation, a circular region (0.7 degrees in diameter) at the centre of the aperture was kept free of dots. A set of coherence levels, K, was identified for each subject in a separate stimulus calibration session.
+Subjects viewed random dot kinematograms (RDKs) contained in a circular white aperture (7 degrees in diameter). Each RDK was made up of three independent sets of dots (each dot was 0.12 degrees in diameter) shown in consecutive frames. Each set of dots were shown for one frame (about 16ms) and then replotted again three frames later (about 50ms). Each time a set of dots was replotted, a subset of the dots, determined by the motion coherence, $k$, was displaced in the direction of motion at a speed of 5 degrees s−1, whereas the rest of the dots were displaced at random locations within the aperture. The motion direction was to the left or the right along the horizontal meridian. The dot density was fixed at 30 dots degrees−2 s−1. To help subjects maintain fixation, a circular region (0.7 degrees in diameter) at the centre of the aperture was kept free of dots. A set of coherence levels, $K$, was identified for each subject in a separate stimulus calibration session.
 
-## Stimulus calibration
+#### Stimulus calibration
 
-Subjects performed the perceptual part of the task in two blocks. In block 1, we deployed a set of prespecified coherence levels, K: {.03,.06,.12,.24,.48}. Each coherence level was used 20 times for each direction (5 x 20 x 2 = 200 trials). We then fitted a simple signal detection theory model with a single noise parameter, σ, governing the statistical relationship between coherence and choice (see simulation of partners for details on model). We selected the noise parameter which minimised the sum of squared errors between predicted and observed choice accuracy across coherence levels. In block 2, we used the fitted noise parameter to select a set of coherence levels associated with the target choice accuracies 60%, 70%, 80% and 90%, K: {k.6,k.7,k.8,k.9}. Each coherence level was then used 25 times for each direction (4 x 25 x 2 = 200 trials). We repeated the fitting procedure and selected a final set of coherence levels for the main task (the final fitted noise parameter was in turn used to simulate the partners).
+Subjects performed the perceptual part of the task in two blocks. In block 1, we deployed a set of prespecified coherence levels, $K:{.03,.06,.12,.24,.48}$. Each coherence level was used 20 times for each direction (5 x 20 x 2 = 200 trials). We then fitted a simple signal detection theory model with a single noise parameter, $\sigma$, governing the statistical relationship between coherence and choice (see simulation of partners for details on model). We selected the noise parameter which minimised the sum of squared errors between predicted and observed choice accuracy across coherence levels. In block 2, we used the fitted noise parameter to select a set of coherence levels associated with the target choice accuracies 60%, 70%, 80% and 90%, $K:{k_{.6},k_{.7},k_{.8},k_{.9}}$. Each coherence level was then used 25 times for each direction (4 x 25 x 2 = 200 trials). We repeated the fitting procedure and selected a final set of coherence levels for the main task (the final fitted noise parameter was in turn used to simulate the partners).
 
-## Simulation of partners
+#### Simulation of partners
 
-We used a signal detection theory model to simulate the partners’ choices and confidence reports in phases 2 and 3 of the prescan session (Bang et al., 2017). In this model, an agent receives noisy sensory evidence, x, sampled from a Gaussian distribution, x∈N(dk,σ), and makes a choice by comparing the sensory evidence to zero, choosing left if x<0 and right if x>0. The mean of the Gaussian distribution is given by coherence, k, and direction, d, with d=-1 indicating left and d=-1 indicating right. The standard deviation, σ, is the level of sensory noise – specified by fitting the model to a subject’s choices in the stimulus calibration session (see stimulus calibration). The agent computes an internal estimate of decision confidence, z, using the absolute value of the evidence strength, z=|x| – a quantity which is monotonically related to the probability that the perceptual choice is correct given the sensory evidence and the level of sensory noise. Finally, the agent maps this internal estimate onto a confidence report, r, by applying a set of thresholds, r = f(z). Precise control over the number of times that the agent selects a particular confidence report is achieved by first simulating a vector of x’s – using the known sequence of stimuli in the task – and then setting the thresholds in z-space so as to achieve a desired confidence distribution. In this way, we created partners with low, medium-low, medium-high and high mean confidence (see Figure 1—figure supplement 3 for confidence distributions). We simulated phases 2 and 3 separately, so that a particular partner had the same confidence distribution in each phase. In addition, we simulated x’s for each partner in each session under the constraint that their choice accuracy was within 1% of the target choice accuracy for each coherence level (see stimulus calibration). In phase 4, and in the scan session, we did not simulate responses. Instead, to calculate how often a subject’s individual decision had been selected as the group decision, we first computed for each trial the probability of a subject’s decision being selected given their confidence report and the partner’s confidence distribution and then averaged these probabilities across trials.
+We used a signal detection theory model to simulate the partners’ choices and confidence reports in phases 2 and 3 of the prescan session (Bang et al., 2017). In this model, an agent receives noisy sensory evidence, $x$, sampled from a Gaussian distribution, $x\inN(dk,\sigma$), and makes a choice by comparing the sensory evidence to zero, choosing left if $x<0$ and right if $x>0$. The mean of the Gaussian distribution is given by coherence, $k$, and direction, $d$, with $d=-1$ indicating left and $d=-1$ indicating right. The standard deviation, $\sigma$, is the level of sensory noise – specified by fitting the model to a subject’s choices in the stimulus calibration session (see stimulus calibration). The agent computes an internal estimate of decision confidence, $z$, using the absolute value of the evidence strength, $z=|x|$ – a quantity which is monotonically related to the probability that the perceptual choice is correct given the sensory evidence and the level of sensory noise. Finally, the agent maps this internal estimate onto a confidence report, $r$, by applying a set of thresholds, $r=f(z)$. Precise control over the number of times that the agent selects a particular confidence report is achieved by first simulating a vector of $x$’s – using the known sequence of stimuli in the task – and then setting the thresholds in $z$-space so as to achieve a desired confidence distribution. In this way, we created partners with low, medium-low, medium-high and high mean confidence (see Figure 1—figure supplement 3 for confidence distributions). We simulated phases 2 and 3 separately, so that a particular partner had the same confidence distribution in each phase. In addition, we simulated $x$’s for each partner in each session under the constraint that their choice accuracy was within 1% of the target choice accuracy for each coherence level (see stimulus calibration). In phase 4, and in the scan session, we did not simulate responses. Instead, to calculate how often a subject’s individual decision had been selected as the group decision, we first computed for each trial the probability of a subject’s decision being selected given their confidence report and the partner’s confidence distribution and then averaged these probabilities across trials.
 
-## Behavioural analysis
+### Behavioural analysis
 
-## Regression analysis
+#### Regression analysis
 
 We used ordinal regression (probit) to analyse subjects’ trial-by-trial confidence reports. The model included (contrast-coded) coherence and context as predictors of interest and (log-transformed) choice reaction time, choice, motion direction and marker starting position as predictors of no interest. We z-scored all variables before analysis. We excluded trials in which the partner’s identity was hidden. We performed a separate regression for each subject. We tested the group-level significance of a predictor by comparing the coefficients across subjects to 0 (p<0.05, one-sample t-test).
 
-## Confidence model
+#### Confidence model
 
 We used a previously established approach (Bang and Fleming, 2018) to construct a model of private confidence for fMRI analysis. We fitted an ordinal regression model to a subject’s confidence reports in the final phase of the behavioural session using six predictors: (1) z-scored, contrast-coded coherence, (2) z-scored, log-transformed choice reaction time and (3-6) a dummy variable for each explicitly signalled context. We then applied the fitted model to a subject’s data in the fMRI session, while setting the fitted context coefficients to zero. This approach yields an out-of-sample prediction about the level of confidence that a subject would have reported on a given trial in the absence of contextual (i.e. partner-specific) modulation. The prediction takes the form of a probability distribution over possible responses (e.g., a report of ‘1’ has a 10% probability, ‘2’ has a 20% probability and so on). We used the expectation under this distribution as our estimate of private confidence.
 
-## fMRI analysis
+### fMRI analysis
 
-## Acquisition
+#### Acquisition
 
 MRI data were acquired on a 3T Siemens Prisma scanner with a 64-channel head coil. T1-weighted structural images were acquired using a 3D MPRAGE sequence: 1 × 1 × 1 mm resolution voxels; 176 sagittal slices, 256 × 224 matrix; TR = 2530 ms; TE = 3.34 ms; TI = 1100 ms. BOLD T2*-weighted functional images were acquired using a gradient-echo EPI pulse sequence: 3 × 3 × 3 mm resolution voxels; 48 transverse slices, 64 × 74 matrix; TR = 3.36; TE = 30 ms; slice tilt = 0 degrees, slice thickness = 2 mm; inter-slice gap = 1 mm; ascending slice order. Field maps were acquired using a double-echo FLASH (gradient echo) sequence: TE1 = 10 ms; TE2 = 12.46 ms; 64 slices were acquired with 2 mm slice thickness and a 1 mm gap; in-plane field of view is 192 × 192 mm2 with 3 × 3 mm2 resolution.
 
-## Preprocessing
+#### Preprocessing
 
 MRI data were pre-processed using SPM12. The first 4 volumes of each functional run were discarded to allow for T1 equilibration. Functional images were slice-time corrected, realigned and unwarped using the field maps (Andersson et al., 2001). Structural T1-weighted images were co-registered to the mean functional image of each subject using the iterative mutual-information algorithm. Each subject’s structural image was segmented into grey matter, white matter and cerebral spinal fluid using a nonlinear deformation field to map it onto a template tissue probability map (Ashburner and Friston, 2005). These deformations were applied to structural and functional images to create new images spatially normalised to the Montreal Neurological Institute (MNI) space and interpolated to 2 × 2 × 2 mm voxels. Normalized images were spatially smoothed using a Gaussian kernel with full-width half-maximum of 8 mm. The motion correction parameters estimated from the realignment procedure and their first temporal derivatives – 12 ‘motion’ regressors in total – were included as confounds in the first-level analysis for each subject.
 
-## Physiological monitoring
+#### Physiological monitoring
 
 Peripheral measurements of a subject’s pulse and breathing were made together with scanner slice synchronisation pulses using a Spike2 data acquisition system (Cambridge Electronic Design Limited, Cambridge UK). The cardiac pulse signal was measured using an MRI compatible pulse oximeter (Model 8600 F0, Nonin Medical, Inc Plymouth, MN) attached to a subject’s finger. The respiratory signal, thoracic movement, was monitored using a pneumatic belt positioned around the abdomen close to the diaphragm. A physiological noise model was constructed to account for artifacts related to cardiac and respiratory phase and changes in respiratory volume using an in-house MATLAB toolbox (Hutton et al., 2011). Models for cardiac and respiratory phase and their aliased harmonics were based on RETROICOR (Glover et al., 2000) and a similar, earlier method (Josephs et al., 1997). Basis sets of sine and cosine Fourier series components extending to the 3rd harmonic were used to model physiological fluctuations. Additional terms were included to model changes in respiratory volume (Birn et al., 2006; Birn et al., 2008) and heart rate (Chang and Glover, 2009). This procedure yielded a total of 14 ‘biophysical’ regressors that were sampled at a reference slice in each image volume. The regressors were included as confounds in the first-level analysis for each subject.
 
-## Regions of interest
+#### Regions of interest
 
 We focused on three a priori ROIs highlighted by previous research on decision confidence. The dACC mask was an 8 mm sphere around the peak coordinates (MNI coordinates [x y z] = [0 17 46]) identified by Fleming et al., 2012. The pgACC mask was defined using the coherence x distance second-level t-map from Bang and Fleming, 2018. The FPl mask was defined using the right-hemisphere atlas developed by Neubert et al., 2014 and mirrored to the left hemisphere to create a bilateral mask.
 
-## Univariate analysis
+#### Univariate analysis
 
 Univariate analysis of fMRI data was performed using SPM12. Our main analysis was based on an event-related GLM (GLM1) of the neural response to the context screen. This model included three condition regressors. First, the context screen when the partner was signalled (signalled, 1 s boxcar). Second, the context screen when the partner was hidden (hidden, 1 s boxcar). Third, the update screen informing subjects how often their individual decision had been selected as the group decision for each partner (update, 15 s boxcar). We parametrically modulated the signalled condition regressor using our task factors: (1) K, contrast-coded coherence, {−1.5,−0.5,.5,1.5}; (2) K2, contrast-coded coherence squared; (3) C, contrast-coded context, {−1.5,−0.5,.5,1.5}; and (4) C2, contrast-coded context squared. For comparability with earlier studies on decision confidence, we also estimated an event-related GLM (GLM2) of the neural response to the presentation of the motion stimulus. This modelled included one condition regressor – a boxcar lasting the duration of the stimulus (.4 s) – parametrically modulated by linear and quadratic coherence terms as defined above.
 
 Parametric modulators were not orthogonalized. We excluded trials in which subjects’ choice reaction times were 2.5 SD below or above their grand mean reaction time within a scan run (0–2 trials per subject per run). In addition to the condition regressors, we added motion and biophysical parameters as additional ‘nuisance’ regressors. Regressors were convolved with a canonical hemodynamic response function. Regressors were modelled separately for each scan run, and constants were included to account for differences in mean activation between runs and scanner drifts. A high-pass filter (128 s cutoff) was applied to remove low-frequency drifts. Whole-brain statistical testing was performed by applying one-sample t-tests against 0 to the first-level contrast images. We report clusters significant at p<0.05, FWE-corrected for multiple comparisons, with a cluster-defining threshold of p<0.001, uncorrected. For the ROI analysis, we extracted mean contrast estimates within the ROI masks from first-level contrast images and assessed group-level significance by applying one-sample t-tests against zero (p<0.05) to the extracted contrast estimates.
 
-## Activity time course analysis
+#### Activity time course analysis
 
 We used activity time courses to study the neural encoding of trial-by-trial confidence and assess functional coupling between ROIs. We transformed each ROI mask from MNI to native space and extracted preprocessed BOLD time courses as the average of voxels within each mask. For each scan run, we regressed out variation due to head motion, applied a high-pass filter (128 s cut-off) to remove low-frequency drifts, and oversampled the BOLD time course by a factor of ~23 (time resolution of. 144 s). For each trial, we extracted activity estimates in a 12 s window time-locked to our event of interest (i.e. from 2 s prior to the onset of the context screen to 10 s after its onset). We excluded trials in which subjects’ choice reaction times were 2.5 SD below or above their grand mean reaction time across trials (1–13 trials per subject). We applied a linear regression to each time point and then, by concatenating beta-weights across time points, generated a time course for each predictor of the regression model. We performed a separate analysis for each subject. We tested the group-level significance of a time point by comparing the beta-weights across subjects to 0 (p<0.05, one-sample t-test).
 
-## Multivariate analysis
+#### Multivariate analysis
 
 Representational similarity analysis (RSA) of fMRI data was performed using SPM12 and the RSA toolbox (Nili et al., 2014). To estimate voxel activity patterns, we constructed an event-related GLM with a condition regressor locked to the context screen (1 s boxcar) for each coherence × (signalled) context condition (4 × 4 = 16 regressors per scan run). The GLM for ROI analysis (GLM3) was based on unsmoothed data, whereas the GLM for searchlight analysis (GLM4) was based on smoothed data. As in GLM1, we included regressors for hidden context and update screen and motion and biophysiological regressors as additional ‘nuisance’ variables. Regressors were convolved with a canonical hemodynamic response function. Regressors were modelled separately for each scan run, and constants were included to account for differences in mean activation between runs and scanner drifts. A high-pass filter (128 s cutoff) was applied to remove low-frequency drifts.
 
@@ -180,6 +430,6 @@ ROI analysis was performed by computing the EDI metric from voxel activity estim
 
 We note that the number of trials per condition per scan run (i.e. 4) is compatible with previous studies employing RSA (Kriegeskorte et al., 2008). Constraints on per-subject scanning time means that there is an inherent trade-off between the ability to estimate a neural pattern within a condition (the estimate improves with repetitions of a condition) and the ability to estimate neural pattern dissimilarities between conditions (the estimate improves with the number of conditions). We adopted a condition-rich design as our goal was to test whether an ROI treats the different conditions (i.e. task states) as distinct and not to characterise the ROI pattern for any particular condition. We note that our analysis of the sub-spaces of coherence and context were based on 16 trials per condition per run and not four trials per condition per run as in the analysis of the full task space.
 
-## Data and code availablity
+### Data and code availablity
 
 Data and code for reproducing figures as well as associated analyses are available on GitHub: Bang, 2020; https://github.com/danbang/article-private-public (copy archived at https://github.com/elifesciences-publications/article-private-public). Whole-brain group-level statistical maps are available on NeuroVault: https://neurovault.org/collections/6782/.

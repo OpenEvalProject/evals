@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.45320.001 8-oxodeoxyguanosine (8-oxodG), a major oxidised base modification, has been investigated to study its impact on DNA replication in hyperthermophilic Archaea . Here we show that 8-oxodG is formed in the genome of growing cells, with elevated levels following exposure to oxidative stress. Functional characterisation of cell-free extracts and the DNA polymerisation enzymes, PolB, PolD, and the p41/p46 complex, alone or in the presence of accessory factors (PCNA and RPA) indicates that translesion synthesis occurs under replicative conditions. One of the major polymerisation effects was stalling, but each of the individual proteins could insert and extend past 8-oxodG with differing efficiencies. The introduction of RPA and PCNA influenced PolB and PolD in similar ways, yet provided a cumulative enhancement to the polymerisation performance of p41/p46. Overall, 8-oxodG translesion synthesis was seen to be potentially mutagenic leading to errors that are reminiscent of dA:8-oxodG base pairing.
+8-oxodeoxyguanosine (8-oxodG), a major oxidised base modification, has been investigated to study its impact on DNA replication in hyperthermophilic Archaea. Here we show that 8-oxodG is formed in the genome of growing cells, with elevated levels following exposure to oxidative stress. Functional characterisation of cell-free extracts and the DNA polymerisation enzymes, PolB, PolD, and the p41/p46 complex, alone or in the presence of accessory factors (PCNA and RPA) indicates that translesion synthesis occurs under replicative conditions. One of the major polymerisation effects was stalling, but each of the individual proteins could insert and extend past 8-oxodG with differing efficiencies. The introduction of RPA and PCNA influenced PolB and PolD in similar ways, yet provided a cumulative enhancement to the polymerisation performance of p41/p46. Overall, 8-oxodG translesion synthesis was seen to be potentially mutagenic leading to errors that are reminiscent of dA:8-oxodG base pairing.
 
 ## Introduction
 
@@ -39,27 +39,77 @@ Previous studies showing the strong resistance of P. abyssi to gamma irradiation
 
 ## Results
 
-## Rate of 8-oxodG in the genome of P. abyssi
+### Rate of 8-oxodG in the genome of P. abyssi
 
 Before analysing the in vitro properties of the DNA pols in the presence of 8-oxodG, we investigated whether this DNA lesion is present in the genome of P. abyssi, and how the levels compare to a mesophilic bacterial control, E. coli. The steady-state level of 8-oxodG for both organisms was calculated during the exponential and stationary phases of growth (Table 1). In the exponential phase, 63.2 8-oxodG/106 dG was calculated for the P. abyssi genome, with the value moderately increasing to 115.1 8-oxodG/106 dG at the stationary phase. Comparatively, 8-oxodG was not detectable in the genome of E. coli in both phases of growth.
+
+**Table 1.**
+ Rate of endogenous genomic 8-oxodG/106 dG in P. abyssi and E. coli genomes at different growth phases.Steady-state level of 8-oxodG per 106 dG was calculated during the exponential and stationary growth phases. The number of 8-oxodG per 106 dG represents the average of triplicate experiments from two biological samples with the standard deviation (±) shown. ND means No Detectable (ND is assigned to values below the HPLC-EC-UV detection limit of 0.01 pmol of 8-oxodG). Raw data are presented in Table 1—Source data 1.Table 1—source data 1.Quantification of the steady-state level of 8-oxoguanosine in the genome of E.coli and P.abyssi.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Growth phase</th>
+      <th>8-oxodG/106 dG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">E. coli</td>
+      <td>Exponential</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Stationary</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td rowspan="2">P. abyssi</td>
+      <td>Exponential</td>
+      <td>63.2 ± 4.6</td>
+    </tr>
+    <tr>
+      <td>Stationary</td>
+      <td>115.1 ± 5.8</td>
+    </tr>
+  </tbody>
+</table>
 
 Colonising hydrothermal vents P. abyssi encounters environmental fluctuations and has to deal with numerous genotoxic events (Huber et al., 1990; Summit and Baross, 1998). Here, proliferating P. abyssi were aerated to induce oxidative stress. Oxygen sparging of exponentially growing culture for 5 min gave rise to increased levels of genomic 8-oxodG (Figure 1). The level (174.9 8-oxodG/106 dG at time T1) was approximately 3-fold higher than observed before air exposure (60.1 8-oxodG/106 dG at time T0). After 5 min (time T1), approximately 12% of the cells were viable as observed by a lower cell density (7.5 × 106 cells/mL compared with 9.3 × 107 cells/mL at time T0). After 40 min (time T2) few oxygen-resistant cells were detectable (4.3 × 104 cells/mL), which unfortunately did not allow the quantification of 8-oxodG because of insignificant amount of genomic DNA. After 140 min (time T3), the number of cells increased to 9.3 × 104 cells/mL. Concomitantly with active cell proliferation, a complete recovery of the basal level of 8-oxodG was obtained (65.1 8-oxodG/106 dG at time T3). After 320 min the basal level of 8-oxodG remained constant according to the mean ± standard deviation of 8-oxodG/106 dG measured at T0 and in Table 1. Taken together, these data provide the evidence for the first time that the hyperthermophile anaerobe P. abyssi possesses the necessary molecular mechanisms to overcome the presence of genomic 8-oxodG. Moreover, P. abyssi can withstand oxidative stress by counteracting and rapidly returning to the basal level of 8-oxodG in DNA.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig1-v1.jpg)
 
-**Figure 1.:** 6 dG into the genome of P. abyssi.Oxidative stress is applied to P. abyssi growing cells in a batch mode culture during 5 min. Steady-state level of 8-oxodG per 106 dG and viability are estimated at different times. T0, control before oxidative stress. T1, after the 5 min oxidative stress. T2, 40 min after the 5 min oxidative stress. T3, 140 min after the 5 min oxidative stress. T4, 320 min after the 5 min oxidative stress. Steady-state level of 8-oxodG is calculated from 10 µg of genomic DNA by HPLC-UV-EC as described in the methods. Errors bars indicated analytical duplicates. To enumerate viable cells, most-probable-number (MPN) assays were performed as previously published (Blodgett, 2006) (Oblinger and Koburger, 1975) Survival (cells/ml) is based on a three-tube MNP dilution assay. Upper and lower error bars are shown. Gray and blue shaded indicates the presence of dissolved oxygen in the medium culture. White background corresponds to strict anaerobia. Sparging with oxygen or nitrogen is shown with an arrow. Raw data for each graph are provided in Figure 1—source data 1.10.7554/eLife.45320.006Figure 1—source data 1.
+**Figure 1.:** Oxidative stress is applied to P. abyssi growing cells in a batch mode culture during 5 min. Steady-state level of 8-oxodG per 106 dG and viability are estimated at different times. T0, control before oxidative stress. T1, after the 5 min oxidative stress. T2, 40 min after the 5 min oxidative stress. T3, 140 min after the 5 min oxidative stress. T4, 320 min after the 5 min oxidative stress. Steady-state level of 8-oxodG is calculated from 10 µg of genomic DNA by HPLC-UV-EC as described in the methods. Errors bars indicated analytical duplicates. To enumerate viable cells, most-probable-number (MPN) assays were performed as previously published (Blodgett, 2006) (Oblinger and Koburger, 1975) Survival (cells/ml) is based on a three-tube MNP dilution assay. Upper and lower error bars are shown. Gray and blue shaded indicates the presence of dissolved oxygen in the medium culture. White background corresponds to strict anaerobia. Sparging with oxygen or nitrogen is shown with an arrow. Raw data for each graph are provided in Figure 1—source data 1.
 
-## Replication bypass of template strand 8-oxodG by P. abyssi cell extracts
+### Replication bypass of template strand 8-oxodG by P. abyssi cell extracts
 
 Previous studies undertaken in E. coli have determined that DNA damage bypass in the form of trans-lesion synthesis (TLS) can be observed using cellular extracts (Wang et al., 1997). In this work, DNA synthesis capable of bypassing DNA lesions was measured in vitro using P. abyssi cell-extracts (PabCE) from exponentially growing cells (Figure 2A). Using a DNA substrate with a primer-template conformation (p/t-1), it was observed that PabCE is capable of extending primers when presented with dG control in the template strand, with products ranging from 18 to 87nt in length (3% of primers being extended to full length (87nt)). However, when encountering both an abasic site (AP) and 8-oxodG in template strand DNA, a total arresting of DNA polymerisation one base upstream of the damage base (32nt) is observed. Rather than being an indication of TLS failure by the replication machinery, lack of primer extension was due to highly specific nuclease activity, resulting in cleavage of the phosphodiester bond of the damaged nucleotide before it was encountered by the polymerisation enzyme (Figure 2—figure supplement 1). Altering the DNA substrate to incorporate the 8-oxodG within a region of double stranded DNA (p/t-2) enabled low, yet visible levels of TLS by PabCE, with 1% of primer DNA being fully extended in oxidative damage containing substrates, as opposed to 2% for the dG containing substrate (Figure 2B).
 
-## Replication bypass of template strand 8-oxodG by replicative DNA proteins of P. abyssi
+![Figure 2.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig2-v1.jpg)
+
+**Figure 2.:** Primer-template extension carried out for 60 min on p/t-1 containing either dG/AP/8-oxodG (A) or p/t-2 containing either dG/AP/8-oxodG (B). In both instances –ve one indicates sample lacking P. abyssi cell extract and –ve two indicates sample containing cell extracts but lacking MgCl2 and dNTPs. An arrow is used to indicate the position of full length extension products (87nt in length), with * used to highlight the approximate location of the damaged base. Shown above each gel is a representative cartoon indicating the structure of primer-templates and the relative position (+33) of the dG/AP/8-oxodG within both DNA primer-template (highlighted in red).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Diagrammatic representation of the Cy5 and FAM dual labelled primer-template substrate. (B) Primer extension carried out for 60 min on p/t-6 containing either dG, dU, AP, 8-oxodG with the gel imaged at 633 nm to observe the Cy5 labelled primer. (C) Gel imaged at 532 nm to observe the effects of PabCE on the FAM labelled template strand. Unlabelled ssDNA, complementary to the FAM labelled template, was added to ensure the Cy5 primer DNA product was prevented from re-annealing and visualised as ssDNA as described in the methods. Unfortunately this had the consequence of stabilising any full length FAM labelled template as dsDNA even under denaturing conditions as shown by the presence of the 34 bp dsDNA control. Only FAM labelled DNA that was cut and <10 nt in length migrated as single stranded DNA. For B and C the length of the ladder oligonucleotides in lane M is indicated to the left and right respectively.
+
+### Replication bypass of template strand 8-oxodG by replicative DNA proteins of P. abyssi
 
 Next, we evaluated the ability of the three replicative enzymes from P. abyssi to bypass template strand 8-oxodG under running start conditions, as previously published (Palud et al., 2008). For each of the enzymes it was observed that encountering template strand 8-oxodG noticeably stalls primer extension compared to the dG control (Figure 3A), with each enzyme possessing a unique stall profile that is particularly apparent at the 10 min time point (Figure 3B). PolB arrests replication one nucleotide upstream of the 8-oxodG (32nt – 9%) or after having based paired a nucleotide opposite 8-oxodG (33nt – 9%). PolD stalls following base pairing opposite the lesion (33nt – 14%, Figure 3B–C) while also exhibiting downstream stalling after encountering 8-oxodG (7% at both 35 or 36nt position); of the two enzymes, the cumulative effect of 8-oxodG across all stall products appears to impact on PolD the most (Figure 3C). Despite the total impact of 8-oxodG induced blockage for p41/p46 at 10 min being of a similar level to that observed for PolD (Figure 3C), 8-oxodG itself has no observable impact on upstream primer extension or during incorporation opposite it. The enzyme partially arrests one nucleotide upstream of the 8-oxodG (32nt), but this is comparable to that observed for the dG control template, with more pronounced stalling seen at one (34nt) or two (35nt) nucleotides downstream of the damaged nucleotide (Figure 3B–C). Overall, these results demonstrate that in vitro both PolB and PolD exhibit prominent replication stalling upstream of template strand 8-oxodG, and while incorporating a nucleotide opposite the lesion, before eventually extending a primer beyond the lesion. In contrast to this, p41/p46 only stalls primer extension after bypassing the lesion.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig3-v1.jpg)
+
+**Figure 3.:** (A) Primer-template extension reactions performed on p/t-1 containing either dG or 8-oxodG by PolB, PolD and the p41/p46 complex. The triangle above each gel image indicates time course of primer extension (time points taken at 0, 0.5, 1, 5, 10, 30 and 60 min), the arrows to the right of each gel indicates the location of 8-oxodG induced stalling. –ve samples were incubated for 60 min lacking enzymes. (B) Diagrammatic representation of a section of p/t-1 template strand DNA indicating the positions at which the three replicative proteins stall replication at the 10 min time point, 8-oxodG is indicated by O. (C) Graphical representation of replication stalling profiles induced by 8-oxodG for each of the replicative proteins, shown for each individual stall event and as total 8-oxodG induced arrest at the 10 min time point (raw data for each graph are provided in Figure 3—source data 1).*-Data for p41/p46 8-oxodG 32nt stall are not visible due to mirroring that of the dG control. (D) Effects of RPA and PCNA on both primer extension and TLS activity of PolB, PolD and the p41/p46 complex during a 15 min reaction with p/t-1 containing either dG or 8-oxodG.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Replicative enzyme activity when polymerisation is initiated from a pre-stalled start using p/t-3 containing either dG of 8-oxodG. The triangle above each gel image indicates time course of primer extension (time points taken at 0, 0.5, 1, 5, 10, 30 and 60 min). Primer+n compared to dG was calculated as formation of primer+n in 8-oxodG containing templates as a relative percentage of primer+n formation in dG containing templates. (B) Influence of RPA and PCNA on replicative enzyme activity when polymerisation is initiated from a pre-stalled start. Primer extension and translesion synthesis activity of PolB, PolD and the p41/p46 complex performed during a 15 min reaction.
+
 We also examined the three DNA polymerisation enzymes under standing start conditions, with dG or 8-oxodG located in the +1 position from the primer-template junction (Figure 3—figure supplement 1A). The observed data correlate with that produced during running start bypass experiments in Figure 3; the p41/p46 complex, being least affected by 8-oxodG, with the percentage of primer+n decreasing by only 20% after 0.5 min when 8-oxodG is present, compared to dG. Primer extension by the two conventional replicative DNA pols is again affected by the presence of template strand 8-oxodG, with the levels of primer+n at 0.5 min decreasing by 41% and 70% for PolB and PolD respectively, in the presence of 8-oxodG compared to the dG control. Again, PolD and p41/p46 display stalling products one or two nucleotides downstream of the 8-oxodG lesion.
 
-## Role of replication fork accessory proteins in replication bypass of template strand 8-oxodG
+### Role of replication fork accessory proteins in replication bypass of template strand 8-oxodG
 
 DNA polymerases are key components of the multi-protein replisome complex, working in conjunction with an array of partner proteins to engage in highly accurate DNA synthesis. As such, the functional interaction that occurs between the three replicative DNA enzymes (PolB, PolD and p41/p46) and two major replication fork proteins, RPA and PCNA was investigated (Figure 3D). Previous studies in Euryarchaea have observed a physical interaction between RPA and PolB (Komori and Ishino, 2001), PolD (Komori and Ishino, 2001; Pluchon et al., 2013), and the p41/p46 complex (Komori and Ishino, 2001; Pluchon et al., 2013). For PCNA both physical and functional interactions have previously been reported for PolB and PolD (Rouillon et al., 2007; Castrec et al., 2009). However, no interaction has been observed with the p41/p46 complex.
 
@@ -69,13 +119,21 @@ PCNA also impacts on the primer extension activity all three polymerisation enzy
 
 The effect that both accessory proteins have on primer extension is noticeable (Figure 3—figure supplement 1B). For PolB the combined presence of both PCNA and RPA, while reducing the processivity enhancements that PCNA alone brings to PolB function, actually exacerbate PolB stalling in the presence of 8-oxodG (Figure 3D). For PolD the overall impact of both RPA and PCNA together is negative. This is most apparent in PolD when polymerisation is reduced to unobservable levels at 15 min. For both replicative DNA pols it is possible that additional replisome components are required to successfully mediate interactions with the RPA. Again, in contrast to the results observed with the two replicative DNA Pols, PCNA and RPA enhance the primer extension activity of the p41/p46 complex and remove any 8-oxodG induced downstream stalling (Figure 3—figure supplement 1B).
 
-## Nucleotide insertion and extension at 8-oxodG template site by DNA polymerisation enzymes of P. abyssi
+### Nucleotide insertion and extension at 8-oxodG template site by DNA polymerisation enzymes of P. abyssi
 
 As 8-oxodG can be bypassed by each of the three enzymes, its mutagenic base-pairing potential was evaluated by single nucleotide incorporation experiments (Figure 4). In this context, it is observed that all three DNA polymerisation enzymes provide correct incorporation opposite the dG control. Conversely, when incorporating opposite 8-oxodG all three enzymes are potentially mutagenic with dAMP and dCMP preferentially inserted. PolB suffers from a marked decrease in incorporation levels opposite 8-oxodG, with 35% and 31% primer+n for dAMP and dCMP respectively, compared to 91% dCMP incorporation opposite dG. PolD also shows a decreased incorporation when encountering 8-oxodG, 41% and 45% primer+n for dAMP and dCMP respectively, compared to 60% dCMP incorporation opposite dG. However, for the p41/p46 complex the levels of incorporation are similar regardless of the presence of oxidative damage, with 64% and 72% primer+n for dAMP and dCMP respectively, compared to 79% dCMP incorporation opposite dG.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig4-v1.jpg)
+
+**Figure 4.:** Single nucleotide incorporation reactions were performed for each of the three replicative enzymes to determine the accuracy of incorporation when incorporating a single nucleotide opposite either dG or 8-oxodG when located at the +1 position from the primer-template junctions (p/t-3). All reactions were left for 5 min, with the –ve control lacking replicative enzyme.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45320/elife-45320-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Primer-template extension reactions performed on p/t-4 containing either dG or 8-oxodG by PolB, PolD and the p41/p46 complex. The triangle above each gel image indicates time course of primer extension (time points taken at 0, 0.5, 1, 5 and 10 min). In all instances, the –ve samples were incubated for 60 min lacking enzymes.
+
 To determine if the three polymerisation enzymes are efficient extenders of dA:8-oxodG or dC:8-oxodG paired termini, primer extension compared to correctly base paired dC:dG and the mismatched dT:dG. When engaging in primer-template extension with base paired dA:8-oxodG or dC:8-oxodG there is a noticeable difference between the enzymes containing the intrinsic 3’−5’ exonuclease activity and the p41/p46 complex (Figure 4—figure supplement 1). For PolB primer+n formation occurs regardless of the presence of 8-oxodG, with the lowest activity observed in the presence of dC:8-oxodG (52% primer+n) compared to dA:8-oxodG (73% primer+n) and the dC:dG control (87% primer+n) at the 0.5 min time point. PolD appears less tolerant of 8-oxodG base pairs, with primer+n formation after 0.5 min of 27% and 12% with dA and dC paired opposite 8-oxodG, compared to the dC:dG control (49% primer+n). The p41/p46 complex proves more tolerant of the presence of 8-oxodG paired termini, with high levels of primer+n formation at 0.5 min of 69% (dA:8-oxodG) and 65% (dC:8-oxodG), compared to 83% primer+n for the dC:dG control. Unlike PolB and polD, the p41/p46 complex was unable to extend a dT:dG mismatch.
 
-## Effects of 8-oxodG-containing primer-template and oxidative base pairs on 3’−5’ exonuclease activity
+### Effects of 8-oxodG-containing primer-template and oxidative base pairs on 3’−5’ exonuclease activity
 
 To further elucidate the differing mechanisms by which PolB and PolD stall primer extension when encountering template strand 8-oxodG, the ability of the damaged nucleotide to stimulate exonuclease (exo) activity was evaluated (Figure 5). Regardless of the base contained in the +1 nt position from the primer-template junction there is a marked difference in the exonuclease activity of the two DNA pols (Figure 5A). PolB exo activity is highly stimulated, with a partial decrease observed when 8-oxodG is present in the +1 position from the primer-template junction (84% primer-n compared to 96% for dG after 5 min). However, for PolD there is only minor exonuclease activity, with no significant difference observed in the presence of a damaged nucleotide in the +1 position (7% primer-n for 8-oxodG compared to 5% for dG after 5 min).
 
@@ -113,7 +171,7 @@ In conclusion we have identified that as well as being a capable TLS polymerase 
 
 ## Materials and methods
 
-## Strains and cell culture techniques for 8-oxodG detection
+### Strains and cell culture techniques for 8-oxodG detection
 
 The E. coli CIP 54.8 strain (Biological Resource Center of Institut Pasteur, https://research.pasteur.fr/fr/team/biological-resources-center/) was cultivated in 1 L of LB at 37°C with shaking. Cells have been collected in exponential and stationary growth phases by monitoring cell growth using cell counts. Cell suspensions were centrifuged for 30 min at 6000 g at 4°C and cell pellets were stored at –20°C.
 
@@ -121,21 +179,21 @@ P. abyssi GE5 (Brittany Culture Collection, http://www.ifremer.fr/souchotheque) 
 
 Cell densities were determined by direct cell counting using a Thoma cell (0.02 mm depth) under a phase contrast Olympus model BH-2 microscope (Postec et al., 2005).
 
-## Genomic DNA extraction and digestion
+### Genomic DNA extraction and digestion
 
 Genomic DNA from P. abyssi and E. coli were isolated using the chaotropic NaI method (Helbock et al., 1998; Akcha et al., 2000; Wessel et al., 2007). Cell pellets were suspended in 2 mL lysis buffer (100 mM Tris-HCl pH 8.0, 1.4 M NaCl, 1% (w/v) SDS, 1% (v/v) β-mercaptoethanol (pure liquid; 14.3 M), 0.125 mM deferoxamine mesylate and disrupted with a Potter-Elvehjem homogenizer. Following centrifugation (5000 g for 5 min at 4°C), cell pellets were recovered and suspended in 800 µL of lysis buffer containing 2.5% (w/v) CTAB (Hexadecyltrimethylammonium bromide). The samples were then incubated at 65°C for 60 min. Following addition of 800 µL of chloroform:isoamyl alcohol (24:1), the tubes were gently mixed and centrifuged at 12000 g for 20 min at 4°C. The upper aqueous phases (~800 µL) were recovered and RNA digestion was performed by incubation with 20 µg of RNase A for 30 min at 37°C. Following addition of 1.2 mL of sodium iodide solution (20 mM EDTA-Na2, 7.6 M NaI, 40 mM Tris–HCl, 0.3 mM deferoxamine mesylate, pH 8.0), the tubes were centrifuged at 10000 g for 20 min at 4°C. The pellets were then recovered and suspended in 1 mL of 40% (v/v) isopropanol. Following centrifugation (10000 g for 20 min at 4°C), pellets were washed with 2 mL of 70% (v/v) ethanol, and centrifuged at 10000 g for 20 min at 4°C. DNA pellets were left to dry for 1 hr at room temperature, and finally suspended in 50 µL of buffered (pH 8.0) deferoxamine mesylate (10 mM Tris-HCl pH 8.0, 1 mM EDTA-Na2, 0.1 mM deferoxamine mesylate).
 
 Genomic DNA (15 µg) from P. abyssi and E. coli was digested by incubation with five units of nuclease P1 (Sigma; one unit is defined as the amount of enzyme required to liberate 1.0 µmol of acid soluble nucleotides from RNA per min at 37°C, pH 5.3) for 2 hr at 37°C. Four units of alkaline phosphatase (Sigma; one unit is defined as the amount of enzyme required to hydrolyzes 1 mol of 4-nitrophenyl phosphate per min at 37°C, pH 9.8) were then added for an additional 1 hr incubation at 37°C. Released 2’-deoxyribonucleosides were centrifuged (7000 g for 5 min at 4°C) and the supernatant was recovered for injection.
 
-## Quantification of 8-oxodG (HPLC/UV/EC)
+### Quantification of 8-oxodG (HPLC/UV/EC)
 
 The 8-oxodG level was determined by HPLC (Agilent 1200 series) coupled to electrochemical (Coulochem III, ESA) and UV (Agilent 1200 series) detection. The limit of detection is about 0.01 pmol of 8-oxodG (one 8-oxodG lesion per 106 dG). Separation of 8-oxodG and 2’-deoxyribosides was carried out by using an Ultrasphere pre-column (5C18, Interchim) and an Uptisphere column (5ODB, Interchim). Elution was performed in isocratic mode using a mobile phase composed of 10% (v/v) methanol and 100 mM sodium acetate pH 5.2. The guard and the measure cells were respectively set to an oxidation potential of 460, 150 and 380 mV. The quantification of 8-oxodG was performed in accordance with a calibration curve previously obtained with known picomole amounts of authentic 8-oxodG. The standard expression of the number of 8-oxodG residues per 106 dG, deoxyguanosine were quantified by UV detection (254 nm) of the output of the HPLC column. For the conditions described, the retention times of 8-oxodG and dG were 11.5 and 8.5 min respectively at 35°C. For each condition (stationary and exponential growth phases), the average of three measurements (n = 3) from two biological replicates was used for statistical analyses. To enumerate viable cells, most-probable-number (MPN) assays were performed as previously published (Blodgett, 2006).
 
-## P. abyssi protein extracts
+### P. abyssi protein extracts
 
 P. abyssi was grown in continuous culture as described in the Strains and cell culture techniques for 8-oxodG detection section of the methods. Pelleted cells were resuspended at a 1:1 (w:v) ratio in a buffer containing 350 mM MOPS pH 7.5, 6.4 mM EDTA, 5 mM DTT, 25% glycerol, 480 mM NaCl, 1 µg/ml Pepstatin A and complete EDTA-free protease inhibitor cocktail tablet (Roche). Cells were lysed by sonication using a Vibracell ultrasonic processor (BioBlock Scientific, 3 × 0.5 min followed by 2 × 1 min, at 375 W, 40% amplitude on ice). Lysed cells were centrifuged at 10000 g for 60 min at 4°C to remove excess cell debris. The concentration of remaining protein in the cell extract was estimated using a Bradford Assay.
 
-## Protein over-expression and purification
+### Protein over-expression and purification
 
 The proteins utilised in this study, with the exception of the p41/p46 complex, were overexpressed and purified as previously described in the following publications, PolB (Gouge et al., 2012), PolD (Henneke et al., 2005), PCNA (Henneke et al., 2002) and RPA (Pluchon et al., 2013).
 
@@ -143,7 +201,7 @@ For the expression of the p41/p46 complex, Rosetta 2(DE3) pLysS competent cells 
 
 Clarified lysate was loaded onto a 1 ml HisTrap HP column (GE Healthcare). Following washing, protein was eluted directly onto a 1 ml HiTrap Heparin column (GE Healthcare) using a 5 ml gradient of 0.02–1 M imidazole in 50 mM NaP pH 6, 200 mM NaCl, 1 mM DTT. Elution from the Heparin column was developed using a 5 ml gradient of 0.2–1 M NaCl in 50 mM NaP pH 6, 1 mM DTT. Primase containing fractions were pooled and loaded onto a Superdex S200 10/300 GL column (GE Healthcare) before being eluted from the column with a buffer of 50 mM MES pH 6.0, 600 mM NaCl, 1 mM DTT. Glycerol was added to a final concentration of 40% before the sample was stored at −20°C.
 
-## Primer-template extension assays
+### Primer-template extension assays
 
 All oligonucleotides used in this study (Supplementary file 1) were purchased from Eurogentec S.A. Primer-template substrates were prepared by mixing the relevant oligonucleotides at a 1:1 ratio in a buffer containing 10 mM Tris pH 8.0, 50 mM NaCl, 1 mM EDTA. Primer-template annealing was carried out by heating at 95°C for 10 min before being left to slowly cool to room temperature.
 
@@ -153,6 +211,6 @@ For reactions using P. abyssi cell extract, 20 µg of whole cell extract was add
 
 In all instances, quenched reactions were denatured at 95°C for 10 min before being loaded onto an 18% denaturing acrylamide gel which was subsequently imaged using a Typhoon Scanner and analysed using ImageQuant TL 8.1 (GE healthcare) with the quantification methods as follows: Primer±n (%), densitometry measurement of primer±n as a percentage of total lane densitometry; Stall (%), densitometry measurement of identified stall band as a percentage of primer+n densitometry; 87nt (%), densitometry measurement of 87nt band as a percentage of primer+n densitometry. In all cases the background value was subtracted.
 
-## Exonuclease degradation assays
+### Exonuclease degradation assays
 
 Assays were carried out and analysed in an identical manner to that described for primer-template extension assays, but dNTPs were omitted from the reactions. Quantification of exonuclease activity (Primer-n(%)) was the densitometry measurement of all primer-n bands as a percentage of total lane densitometry following subtraction of the background value.

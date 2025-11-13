@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.39882.001 Recent studies have demonstrated that task success signals can modulate learning during sensorimotor adaptation tasks, primarily through engaging explicit processes. Here, we examine the influence of task outcome on implicit adaptation, using a reaching task in which adaptation is induced by feedback that is not contingent on actual performance. We imposed an invariant perturbation (rotation) on the feedback cursor while varying the target size. In this way, the cursor either hit or missed the target, with the former producing a marked attenuation of implicit motor learning. We explored different computational architectures that might account for how task outcome information interacts with implicit adaptation. The results fail to support an architecture in which adaptation operates in parallel with a model-free operant reinforcement process. Rather, task outcome may serve as a gain on implicit adaptation or provide a distinct error signal for a second, independent implicit learning process. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+Recent studies have demonstrated that task success signals can modulate learning during sensorimotor adaptation tasks, primarily through engaging explicit processes. Here, we examine the influence of task outcome on implicit adaptation, using a reaching task in which adaptation is induced by feedback that is not contingent on actual performance. We imposed an invariant perturbation (rotation) on the feedback cursor while varying the target size. In this way, the cursor either hit or missed the target, with the former producing a marked attenuation of implicit motor learning. We explored different computational architectures that might account for how task outcome information interacts with implicit adaptation. The results fail to support an architecture in which adaptation operates in parallel with a model-free operant reinforcement process. Rather, task outcome may serve as a gain on implicit adaptation or provide a distinct error signal for a second, independent implicit learning process.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -37,13 +37,13 @@ Our experiments show that hitting the target has a strong effect on performance,
 
 In all experiments, we used clamped visual feedback, in which the angular trajectory of a feedback cursor is invariant with respect to the target location and thus spatially independent of hand position (Morehead et al., 2017). The instructions (see Supplementary file 1-Target Size Experiment Instructions) emphasized that the participant’s behavior would not influence the cursor trajectory: They were to ignore this stimulus and always aim directly for the target. This method allows us to isolate implicit learning from an invariant error, eliminating potential contributions from explicit aiming that might be used to reduce task performance error.
 
-## Experiment 1
+### Experiment 1
 
 In Experiment 1, we asked if the task outcome, defined in terms of whether or not the cursor hit the target, would modulate learning under conditions in which the feedback is not contingent on behavior. We tested three groups of participants (n = 16/group) with a 3.5° clamp for 80 cycles (eight targets per cycle). The purpose of this experiment was to examine the effects of three different relationships between the clamp and target while holding the visual error (defined as the center-to-center distance between the cursor and target) constant (Figure 1b): Hit Target (when the terminal position of the clamped cursor is fully embedded within a 16 mm diameter target), Straddle Target (when roughly half of the cursor falls within a 9.8 mm target, with the remaining part outside the target), Miss Target (when the cursor is fully outside a 6 mm target).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/39882/elife-39882-fig1-v1.jpg)
 
-**Figure 1.:** (a) During clamped visual feedback, the angular deviation of the cursor feedback is held constant throughout the perturbation block, and participants are fully informed of the manipulation. (b) The clamp angle was equal across all three conditions tested in Experiment 1, with only the target size varying between conditions. (c) Block design for experiment. (d) As in previous studies with clamped feedback, the manipulation elicits robust changes in hand angle. However, the effect was attenuated in the Hit Target condition, observed in the (e) rate of early adaptation, and, more dramatically, in (f) late learning. (g) The proportion of learning retained over the no feedback block following the clamp did not differ between groups. Dots represent individuals; shading and error bars denote SEM.10.7554/eLife.39882.003Figure 1—source data 1.Figure 1d–g.Reaction times (RTs) and movement times (MTs) are also included. Note that hand angles were flipped for participants who experienced a counter-clockwise clamp.
+**Figure 1.:** (a) During clamped visual feedback, the angular deviation of the cursor feedback is held constant throughout the perturbation block, and participants are fully informed of the manipulation. (b) The clamp angle was equal across all three conditions tested in Experiment 1, with only the target size varying between conditions. (c) Block design for experiment. (d) As in previous studies with clamped feedback, the manipulation elicits robust changes in hand angle. However, the effect was attenuated in the Hit Target condition, observed in the (e) rate of early adaptation, and, more dramatically, in (f) late learning. (g) The proportion of learning retained over the no feedback block following the clamp did not differ between groups. Dots represent individuals; shading and error bars denote SEM.
 
 Hitting the target reduced the overall change in behavior (Figure 1d). Statistically, there was a marginal difference on the rate of initial adaptation (one-way ANOVA: F(2,45)=2.67, p=0.08, η2 = 0.11; permutation test: p=0.08; Figure 1e) and a significant effect on late learning (F(2,45)=4.44, p=0.016, η2 = 0.17; Figure 1f). For the latter measure, the value for the Hit Target group was approximately 35% lower than for the Straddle and Miss Target groups, with post-hoc comparisons confirming the substantial differences in late learning between the Hit Target and both the Straddle Target (95% CI [−16.13°, −2.34°], t(30)=-2.73, p=0.010, d = 0.97) and Miss Target (95% CI [−16.76°, −2.79°], t(30)=-2.86, p=0.008, d = 1.01) groups. These differences were also evident in the aftereffect measure, taken from the first cycle of the no feedback block (see Materials and methods). The learning functions for the Straddle and Miss Target groups were remarkably similar throughout the entire clamp block and reached similar magnitudes of late learning (95% CI [−7.90°, 8.97°], t(30)=.13, p=0.898, d = 0.05).
 
@@ -51,13 +51,13 @@ As seen in Figure 1d, the change in hand angle from the final cycle of the clamp
 
 Interestingly, the results from this experiment are qualitatively different to those observed when manipulating the angular deviation of the clamp. Our previous study using clamped visual feedback demonstrated that adaptation in response to errors of varying size, which was assessed by manipulating the clamp angle, results in different early learning rates, but produces the same magnitude of late learning (Kim et al., 2018). In contrast, the results in Experiment 1 show that hitting the target attenuates learning, with the effect becoming pronounced after prolonged exposure to the perturbation. Furthermore, the effect of task outcome appears to be categorical, as it was only observed for the condition in which the cursor was fully embedded within the target (Hit Target), and not when the terminal position of the cursor fell partially outside the target (Straddle Target).
 
-## Experiment 2
+### Experiment 2
 
 Experiment 2 was designed to extend the results of Experiment 1 in two ways: First, to verify that the effect of hitting a target generalized to other contexts, we changed the size of the clamp angle. We tested two groups of participants (n = 16/group) with a small 1.75° clamp. For the Hit Target group (Figure 2a), we used the large 16 mm target, and thus, the cursor was fully embedded. For the Straddle Target group, we used the small 6 mm diameter target, resulting in an endpoint configuration in which the cursor was approximately half within the target and half outside the target. We did not test a Miss Target condition because having the clamped cursor land fully outside the target would have necessitated an impractically small target (~1.4 mm). Moreover, the results of Experiment 1 indicate that this condition is functionally equivalent to the Straddle Target group. The second methodological change was made to better assess asymptotic learning. We increased the number of clamped reaches to each location to 220 (reducing the number of target locations to four to keep the experiment within a 1.5 hr session). This resulted in a nearly three-fold increase in the number of clamped reaches per location.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/39882/elife-39882-fig2-v1.jpg)
 
-**Figure 2.:** The attenuation of adaptation caused by hitting the target (a) generalizes to a different clamp angle and is stable over an extended clamp block (b). As in Experiment 1, there was (c) a marginal difference in early adaptation rate that became (d) a more dramatic difference in late learning. (e) Again, there was no difference in the proportion of retention, this time during a 0° clamp block. Dots represent individuals; shading and error bars denote SEM.10.7554/eLife.39882.005Figure 2—source data 1.Figure 2b–e.Reaction times (RTs) and movement times (MTs) are also included. Note that hand angles were flipped for participants who experienced a counter-clockwise clamp.
+**Figure 2.:** The attenuation of adaptation caused by hitting the target (a) generalizes to a different clamp angle and is stable over an extended clamp block (b). As in Experiment 1, there was (c) a marginal difference in early adaptation rate that became (d) a more dramatic difference in late learning. (e) Again, there was no difference in the proportion of retention, this time during a 0° clamp block. Dots represent individuals; shading and error bars denote SEM.
 
 Consistent with the results of Experiment 1, the Hit Target group showed an attenuated learning function compared to the Straddle Target group (Figure 2b). Statistically, there was again only a marginal difference in the rate of early adaptation (95% CI [−0.52°/cycle, .01°/cycle], t(30)=-1.96, p=0.06, d = 0.69; Figure 2c), whereas the difference in late learning was more pronounced (95% CI [−11.38°, −1.25°], t(30)=-2.54, p=0.016, d = 0.90; permutation test: p=0.007; Figure 2d). Indeed, the 35% attenuation in asymptote for the Hit Target group compared to the Straddle Target group is approximately equal to that observed in Experiment 1.
 
@@ -65,7 +65,7 @@ We used a different approach to examine retention in Experiment 2, having partic
 
 The results of these first two experiments converge in showing that learning from an invariant error is attenuated when the cursor hits the target, relative to conditions in which at least part of the cursor falls outside the target. This effect replicated across two experiments that used different clamp sizes.
 
-## Attenuated behavioral changes are not due to differences in motor planning
+### Attenuated behavioral changes are not due to differences in motor planning
 
 Although we hypothesized that manipulating target size in Experiments 1 and 2 would influence learning mechanisms that respond to the differential task outcomes (i.e., hit or miss), it is also important to consider alternative explanations for the effect of target size on learning. Figure 3 provides a schematic of the core components of sensorimotor adaptation. The figure highlights that changes in adaptation might arise because target size alters the inputs on which learning operates, rather than from a change in the operation of the learning process itself. For example, increasing the target size may increase perceptual uncertainty, creating a weaker error signal. We test this hypothesis in a control condition in Experiment 3.
 
@@ -81,9 +81,15 @@ During baseline trials with veridical feedback in Experiment 2, mean spatial var
 
 One reason for not observing consistent effects of target size on accuracy or temporal measures could be due to the constraints of the task. Studies showing an effect of target size on motor planning typically utilize point-to-point movements (Soechting, 1984; Knill et al., 2011) in which accuracy requires planning of both movement direction and extent. In our experiments, we utilized shooting movements, thus minimizing demands on the control of movement extent. Endpoint variability is generally larger for movement extent compared to movement direction (Gordon et al., 1994). It is also possible that participants are near ceiling-level performance in terms of hand angle variability.
 
-## Theoretical analysis of the effect of task outcome on implicit learning
+### Theoretical analysis of the effect of task outcome on implicit learning
 
-Having ruled out a motor planning account of the differences in performance in Experiments 1 and 2, we next considered different ways in which target error could affect the rate and asymptotic level of learning. Adaptation from SPE can be thought of as recalibrating an internal model that learns to predict the sensory outcome of a motor command (Figure 3). Here, we model adaptation with a single rate state-space equation of the of the following form:(1)x(n+1)=A∗x(n)+U(e)where x represents the motor output on trial n, A is a retention factor, and U represents the update/correction size (or, learning rate) as a function of the error (clamp) size, e. This model is mathematically equivalent to a standard single rate state-space model (Thoroughman and Shadmehr, 2000), with the only modification being the replacement of the error sensitivity term, B, with a correction size function, U (Kim et al., 2018). Unlike standard adaptation studies where error size changes over the course of learning, e is a constant with clamped visual feedback and thus, U(e) can be estimated as a single parameter. We refer to this model as the motor correction variant of the standard state space model. The first two experiments make clear that a successful model must account for the differences between hitting and missing the target, even while holding the error term in Equation. (1) (clamp angle) constant.
+Having ruled out a motor planning account of the differences in performance in Experiments 1 and 2, we next considered different ways in which target error could affect the rate and asymptotic level of learning. Adaptation from SPE can be thought of as recalibrating an internal model that learns to predict the sensory outcome of a motor command (Figure 3). Here, we model adaptation with a single rate state-space equation of the of the following form:
+
+$$
+x(n+1)=A^{∗}x(n)+U(e)
+$$
+
+where x represents the motor output on trial n, A is a retention factor, and U represents the update/correction size (or, learning rate) as a function of the error (clamp) size, e. This model is mathematically equivalent to a standard single rate state-space model (Thoroughman and Shadmehr, 2000), with the only modification being the replacement of the error sensitivity term, B, with a correction size function, U (Kim et al., 2018). Unlike standard adaptation studies where error size changes over the course of learning, e is a constant with clamped visual feedback and thus, U(e) can be estimated as a single parameter. We refer to this model as the motor correction variant of the standard state space model. The first two experiments make clear that a successful model must account for the differences between hitting and missing the target, even while holding the error term in Equation. (1) (clamp angle) constant.
 
 We consider three variants to the basic model that might account for how task outcome influences learning. The first model is motivated by previous studies that have considered how reinforcement processes might operate in sensorimotor adaptation tasks, and in particular, the idea that task outcome information impacts a model-free operant reinforcement process (Huang et al., 2011; Shmuelof et al., 2012). We can extend this idea to the clamp paradigm, considering how the manipulation of target size affects reward signals: When the clamp hits the target, the feedback generates a positive reinforcement signal; when the clamp misses (or straddles) the target, this reinforcement signal is absent. We refer to the positive outcome as an intrinsic reward given that it is not contingent on the participant’s behavior. This signal could strengthen the representation of its associated movement (Gonzalez Castro et al., 2011; Shmuelof et al., 2012), and thus increase the likelihood that future movements will be biased in a similar direction.
 
@@ -93,17 +99,45 @@ We combine this idea with the state space model to create a Movement Reinforceme
 
 **Figure 4.:** (a) In the Movement Reinforcement model, reward signals cause reinforcement learning processes to bias future movements toward previously rewarded movements. The adaptation process is sensitive only to SPE and not reward. The overall movement reflects a composite of the two processes. (b) In the Adaptation Modulation model, reward directly attenuates adaptation to SPE. (c) In the Dual Error model, a second, independent implicit learning process, one driven by TE, combines with SPE-based adaptation to modify performance.
 
-Here, we formalize a Movement Reinforcement model, taking this as illustrative of a broad class of operant reinforcement models in which the reinforcement process acts in parallel to a traditional state space model of sensorimotor adaptation. The motor output, y, is a weighted sum of a model-free reinforcement process and an adaptation process, x:(2)y(n)=(1−V1(n))∗x(n)+V1(n)∗Vd(n)where a population vector (Georgopoulos et al., 1986), V, indicates the current bias of motor representations within the reinforcement system (see Materials and methods). The direction of this vector (Vd) corresponds to the mean preferred direction resulting from the reinforcement history, with the length (Vl) corresponding to the strength of this biasing signal. This vector can be viewed as a weight on the movement reinforcement process (0 = no wt, 1 = full wt), relative to the adaptation process.
+Here, we formalize a Movement Reinforcement model, taking this as illustrative of a broad class of operant reinforcement models in which the reinforcement process acts in parallel to a traditional state space model of sensorimotor adaptation. The motor output, y, is a weighted sum of a model-free reinforcement process and an adaptation process, x:
+
+$$
+y(n)=(1−V_{1}(n))^{∗}x(n)+V_{1}(n)^{∗}V_{d}(n)
+$$
+
+where a population vector (Georgopoulos et al., 1986), V, indicates the current bias of motor representations within the reinforcement system (see Materials and methods). The direction of this vector (Vd) corresponds to the mean preferred direction resulting from the reinforcement history, with the length (Vl) corresponding to the strength of this biasing signal. This vector can be viewed as a weight on the movement reinforcement process (0 = no wt, 1 = full wt), relative to the adaptation process.
 
 In sum, the Movement Reinforcement model entails four parameters, composed of separate update and retention parameters for the reinforcement learning process and the adaptation process (see Materials and methods). The former is model-free, dependent on an operant conditioning process by which a task outcome signal modifies movement biases, whereas the latter is model-based, using SPE to recalibrate an internal model of the sensorimotor map. Importantly, the predictions of this model are not dependent on whether we model the effect of reinforcement as operating on discrete units, as we have done here, or as basis functions (Donchin et al., 2003; Tanaka et al., 2012; Taylor et al., 2013).
 
 The second model entails a single process whereby the task outcome directly modulates the adaptation process. For example, an intrinsic reward signal associated with hitting the target could modulate adaptation, attenuating the trial-to-trial change induced by the SPE (Figure 4b). In this Adaptation Modulation model, the reward signal can be interpreted as a gain controller, similar to previous efforts to model the effect of explicit rewards and punishments on adaptation (Galea et al., 2015). In Experiments 1 and 2, hitting the target presumably reduces the gain on adaptation, thus leading to attenuated learning.
 
-We formalize the Adaptation Modulation model as follows:(3)x(n+1)=γA∗A∗x(n)+γu∗U(e)where γA and γu are gains on the retention and update parameters, respectively. In the current implementation, we set γA and γu to one on miss trials and estimate the values of γA and γu for the hit trials. Although this could be reversed (e.g. set gains to one on hit trials and estimate values on miss trials), our convention seems more consistent with previous modeling studies of adaption where the movements generally miss the target. We impose no additional constraint on the gain parameters; the effect of retention or updating can be larger or smaller on hit trials compared to miss trials. As with the Movement Reinforcement model, the Adaptation Modulation model has four free parameters.
+We formalize the Adaptation Modulation model as follows:
+
+$$
+x(n+1)=\gamma_{A}^{∗}A^{∗}x(n)+\gamma_{u}^{∗}U(e)
+$$
+
+where γA and γu are gains on the retention and update parameters, respectively. In the current implementation, we set γA and γu to one on miss trials and estimate the values of γA and γu for the hit trials. Although this could be reversed (e.g. set gains to one on hit trials and estimate values on miss trials), our convention seems more consistent with previous modeling studies of adaption where the movements generally miss the target. We impose no additional constraint on the gain parameters; the effect of retention or updating can be larger or smaller on hit trials compared to miss trials. As with the Movement Reinforcement model, the Adaptation Modulation model has four free parameters.
 
 The third model we consider here, the Dual Error model, postulates that learning is the composite of two implicit learning processes that operate on different error signals. The first is an adaptation process driven by SPE (as in Equation (1)). The second process operates in the same manner as adaptation, but here the error signal is sensitive to the task outcome. This idea of a TE-sensitive process stems from previous studies in which an error is produced, not by perturbing the visual feedback of hand position, but rather by displacing the visual feedback of the target position (Magescas and Prablanc, 2006; Cameron et al., 2010a; Cameron et al., 2010a; Schmitz et al., 2010). The resulting mismatch between the hand position and displaced target position can be viewed as a TE rather than SPE, under the assumption that the veridical feedback of hand position roughly matches the predicted hand position (see Discussion). When this error signal is consistent (e.g. target is displaced in the same direction on every trial), a gradual change in heading angle is observed, similar to that seen in studies of visuomotor adaptation. Moreover, this form of learning is implicit: By shifting the target position during a saccade, just prior to the reach, the participants are unaware of the target displacement.
 
-In the Dual Error model, the motor output is the sum of two processes:(4)xtotal(n)=xspe(n)+xte(n)where(5)xspe(n+1)=Aspe∗xspe(n)+Uspe∗(SPE)(6)xte(n+1)=Ate∗xte(n)+Ute∗(TE)
+In the Dual Error model, the motor output is the sum of two processes:
+
+$$
+x_{total}(n)=x_{spe}(n)+x_{te}(n)
+$$
+
+where
+
+$$
+x_{spe}(n+1)=A_{spe}^{∗}x_{spe}(n)+U_{spe}^{∗}(SPE)
+$$
+
+
+
+$$
+x_{te}(n+1)=A_{te}^{∗}x_{te}(n)+U_{te}^{∗}(TE)
+$$
 
 Equation (5) is the same as in the other two models, describing adaptation from a sensory prediction error, but with the notation modified here to explicitly contrast with the second process. Equation (6) describes a second implicit learning process, but one that is driven by the target error.
 
@@ -111,7 +145,7 @@ The SPE-sensitive process updates from the error term on every trial given that 
 
 We note that the Dual Error model is similar to the influential two-process state space model of adaption introduced by Smith and colleagues (Smith et al., 2006). In their model, dual-adaptation processes have different learning rates and retention factors, resulting in changes that occur over different time scales. Here, the different learning rates and retention factors are related to the different error signals, TE and SPE. Whereas the dual-rate model imposes a constraint on the parameters (i.e. process with faster learning must also have faster forgetting), the four parameters in the Dual Error model are unconstrained relative to each other.
 
-## Experiment 3
+### Experiment 3
 
 The experimental design employed in Experiments 1 and 2 cannot distinguish between these three models because all make qualitatively similar predictions. In the Movement Reinforcement model, the attenuated asymptote in response to Hit conditions arises because movements are rewarded throughout, including during early learning, biasing future movements toward baseline. The Adaptation Modulation model predicts a lower asymptote during the Hit condition because the adaptation system is directly attenuated by reward. The Dual Error model similarly predicts a lower asymptote because only one of two learning processes is active when there is no target error.
 
@@ -119,13 +153,13 @@ In contrast to the single perturbation blocks used in Experiments 1 and 2, a tra
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/39882/elife-39882-fig5-v1.jpg)
 
-**Figure 5.:** (a) Using a transfer design, (b) the models diverge in their behavioral predictions for the Straddle-to-Hit group following transfer. The Movement Reinforcement model predicts a persistent asymptote following transfer, whereas the Adaptation Modulation and Dual Error models predict a decay in hand angle. During the acquisition phase, we again observed differences between the Hit and Straddle groups in the (c) early adaptation rate as well as (d) late learning. All participants in both groups demonstrated changes in reach angle consistent with the Adaptation Modulation and Dual Error models. (e) The learning functions were inconsistent with the Movement Reinforcement model. Note that the rise in hand angle for the Hit-to-Straddle group is consistent with all three models. Dots represent individuals; shading and error bars denote SEM.10.7554/eLife.39882.009Figure 5—source data 1.Figure 5c–e and Figure 7.Reaction times (RTs) and movement times (MTs) are also included. Note that hand angles were flipped for participants who experienced a counter-clockwise clamp.
+**Figure 5.:** (a) Using a transfer design, (b) the models diverge in their behavioral predictions for the Straddle-to-Hit group following transfer. The Movement Reinforcement model predicts a persistent asymptote following transfer, whereas the Adaptation Modulation and Dual Error models predict a decay in hand angle. During the acquisition phase, we again observed differences between the Hit and Straddle groups in the (c) early adaptation rate as well as (d) late learning. All participants in both groups demonstrated changes in reach angle consistent with the Adaptation Modulation and Dual Error models. (e) The learning functions were inconsistent with the Movement Reinforcement model. Note that the rise in hand angle for the Hit-to-Straddle group is consistent with all three models. Dots represent individuals; shading and error bars denote SEM.
 
 For the Straddle-to-Hit group, a small target was used in an initial acquisition phase (first 120 clamp cycles). Based on the results of Experiments 1 and 2, we expect to observe a relatively large change in hand angle at the end of this phase since the outcome is always an effective ‘miss’. The key test comes during the transfer phase (final 80 clamp cycles), in which the target size is increased such that the invariant clamp now results in a target hit. For the Movement Reinforcement model, hitting the target will produce an intrinsic reward signal, reinforcing the associated movement. Therefore, there should be no change in performance (hand angle) following transfer since the SPE remains the same and the current movements are now reinforced (Figure 5b). In contrast, both the Adaptation Modulation and Dual Error models predict that, following transfer to the large target, there will be a drop in hand angle, relative to the initial asymptote. For the former, hitting the target will attenuate the adaptation system; for the latter, hitting the target will shut down learning from the process that is sensitive to target error.
 
 We also tested a second group in which the large target (hit) was used in the acquisition phase and the small target (effective ‘miss’) in the transfer phase (Hit-to-Straddle group). All three models make the same qualitative predictions for this group. At the end of the acquisition phase, there should be a smaller change in hand angle compared to the Straddle-to-Hit group, due to the persistent target hits. Following transfer, all three models predict an increase in hand angle, relative to the initial asymptote. For the Movement Reinforcement model, the reduction in target size removes the intrinsic reward signal, which over time, lessens the contribution of the reinforcement process as the learned movement biases decay in strength. The Adaptation Modulation model predicts that hand angle will increase due to the removal of the attenuating effect on adaptation following transfer. The Dual Error model also predicts an increase in hand angle, but here the effect occurs because the introduction of a target error activates the second implicit learning process. Although the Hit-to-Straddle group does not provide a discriminative test between the three models, the inclusion of this group does provide a second test of each model, as well as an opportunity to rule out alternative hypotheses for the behavioral effects at transfer. For example, the absence of a change at transfer might be due to reduced sensitivity to the clamp following a long initial acquisition phase.
 
-## Experiment 3 – behavioral analyses
+### Experiment 3 – behavioral analyses
 
 For our analyses, we first examined performance during the acquisition phase. Consistent with the results from Experiments 1 and 2, the Hit-to-Straddle Target group adapted slower than the Straddle-to-Hit group (95% CI [−0.17°/cycle, −0.83°/cycle], t(22)=-3.15, p=0.005, d = 1.29; Figure 5c) and reached a lower asymptote (95% CI [−5.25°, −15.29°], t(22)=-4.24, p=0.0003, d = 1.73; permutation test: p=0.0003; Figure 5d). The reduction at asymptote was approximately 45%.
 
@@ -133,17 +167,78 @@ We next examined performance during the transfer phase where the target size rev
 
 The Straddle-to-Hit group’s transfer performance provides an opportunity to compare differential predictions, and in particular, to pit the Movement Reinforcement model against the other two models. Following the switch to the large target, there was a decrease in hand angle. Applying the same statistical test, the mean decrement in hand angle was 5.7° from the final cycles of the training phase to the final cycles of the transfer phase (95% CI [−3.1°, −8.2°], t(11)=-4.84, p=0.0005, dz = 1.40; Figure 5e). This result is consistent with the prediction of the Adaptation Modulation and Dual Error models. In contrast, the reduction in hand angle cannot be accounted for by the Movement Reinforcement model.
 
-## Experiment 3 – modeling results
+### Experiment 3 – modeling results
 
 We evaluated the three models by simultaneously fitting group-averaged data for both groups. As depicted in Figure 6, all three models capture the initial plateau followed by increased learning of the Hit-to-Straddle group. However, the quality of the fits diverges for the Straddle-to-Hit group, where the Movement Reinforcement model cannot produce a decrease in hand angle once the large target is introduced. Instead, the best-fit parameters for this model result in an asymptote that falls between the hand angle values observed during the latter part of each phase. In contrast, the Adaptation Modulation and Dual Error models both predict the drop in hand angle during the second phase of the experiment for the Straddle-to-Hit group.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/39882/elife-39882-fig6-v1.jpg)
+
+**Figure 6.:** The failure of the (a) Movement Reinforcement model to qualitatively capture the decay in hand angle following transfer in the Straddle-to-Hit condition argues against the idea that the effect of task outcome arises solely from a model-free learning process that operates independent of model-based adaptation. In contrast, both the (b) Adaptation Modulation and (c) Dual Error models accurately predict the changes in hand angle following transfer in both the Hit-to-Straddle and Straddle-to-Hit conditions.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39882/elife-39882-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Heat map of Pearson correlation coefficients between different parameters of the (a) Adaptation Modulation model and (b) Dual Error model. The strong negative correlations between retention and learning rate parameters (e.g. Amiss and Umiss) indicate a trade-off between these parameters. As such, caution is required concerning inferences about the impact of task outcome on the mechanisms of learning. Note that Amiss and Ahit refer to γA*A during miss or hit trials, respectively. Similarly, Umiss and Uhit refer to γu*U(e) during miss or hit trials.
+
 Consistent with the preceding qualitative observations, the Movement Reinforcement model yielded a lower R2 value and higher Akaike Information Criterion (AIC) score (higher AIC indicates relatively worse fit) than the Adaptation Modulation and Dual Error models (Table 1). A comparison of the latter two shows that the Dual Error model provides the best account of the results. This model yielded a lower AIC score and accounted for 90% of the variance in the group-averaged data compared to 86% for the Adaptation Modulation model.
+
+**Table 1.**
+ Model evaluations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Basic models</th>
+      <th># of free parameters</th>
+      <th>R-squared</th>
+      <th>AIC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Movement Reinforcement</td>
+      <td>4</td>
+      <td>0.824</td>
+      <td>363</td>
+    </tr>
+    <tr>
+      <td>Adaptation Modulation</td>
+      <td>4</td>
+      <td>0.861</td>
+      <td>269</td>
+    </tr>
+    <tr>
+      <td>Dual Error</td>
+      <td>4</td>
+      <td>0.895</td>
+      <td>156</td>
+    </tr>
+    <tr>
+      <td>Hybrid Models</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Movement Reinforcement + Adaptation Modulation</td>
+      <td>6</td>
+      <td>0.945</td>
+      <td>−100</td>
+    </tr>
+    <tr>
+      <td>Movement Reinforcement + Dual Error</td>
+      <td>6</td>
+      <td>0.945</td>
+      <td>−97</td>
+    </tr>
+  </tbody>
+</table>
 
 To better understand the effects of target size on learning and retention, we examined the parameter estimates for the Adaptation Modulation and Dual Error models. We first generated 1000 bootstrapped samples of group-averaged behavior by resampling with replacement from each group. We then fit each of the bootstrapped samples simultaneously and report the results here in terms of 95% confidence intervals. For the Adaptation Modulation model, the estimates of γu*U were larger during miss than hit conditions, with no overlap of the confidence intervals ([.693, 1.302] vs [.182,. 573], respectively); thus, the error-driven adjustment in the state of the internal model was much larger after a miss than a hit. For the Dual Error model, the estimates of Uspe were larger than for Ute, again with no overlap of the confidence intervals ([.414, 1.08], vs [.157,. 398]), indicating that the state change was more strongly driven by SPE than TE. For each model, the process that produced a larger error-based update also had the lower retention factor, although here there was overlap in the 95% confidence intervals for the latter (γr*A for Miss: [.939,.969] vs Hit: [. 961,.989]; Aspe: [.900,.972] vs Ate: [.938,.993]). In sum, our model fits suggest the impact of task outcome (hit or miss) was primarily manifest in the estimates of the learning rate parameters. However, this interpretation is tempered by the correlations observed between certain parameters (Cheng and Sabes, 2006) (see Figure 6—figure supplement 1).
 
 The behavioral pattern observed in Experiment 3, complemented by the modeling results, are problematic for the Movement Reinforcement model, challenging the idea that the effect of task outcome arises solely from a model-free learning process that operates independent of model-based adaptation. However, this does not exclude the possibility that task outcome information influences both model-free and model-based processes. For example, hitting the target might not only reinforce an executed movement, but might also modulate adaptation. Formally, this hypothesis would correspond to a hybrid model that combines the Adaptation Modulation and Movement Reinforcement models. Indeed, hybrids that combine the Movement Reinforcement model with either the Adaptation Modulation or Dual Error models (see Materials and methods) yield improved model fits and lower AIC values, with the two hybrids producing comparable values (see Table 1).
 
-## Control group for testing perceptual uncertainty hypothesis
+### Control group for testing perceptual uncertainty hypothesis
 
 Across the three experiments, the amount of learning induced by clamped visual feedback was attenuated when participants reached to the large target. We considered if this effect could be due, in part, to the differences between the Hit and Straddle/Miss conditions in terms of perceptual uncertainty. For example, the reliability of the visual error signal might be weaker if the cursor is fully embedded within the target; in the extreme, failure to detect the angular offset might lead to the absence of an error signal on some percentage of the trials.
 
@@ -163,7 +258,7 @@ Models of sensorimotor adaptation have emphasized that this form of learning is 
 
 The interpretation of the results from these studies is complicated by the fact that the experimental tasks may conflate different learning processes. In the present study, we sought to avoid this complication by employing a new method to study implicit learning, one in which participants are specifically instructed to ignore an invariant visual error signal, thus eliminating explicit processes (Morehead et al., 2017). Using this clamp method, we observed a striking difference between conditions in which the final position of the cursor was fully embedded in the target compared to conditions in which the cursor either terminated outside or straddled the target: When the cursor was fully embedded, the rate of learning was reduced and the asymptotic level of learning was markedly attenuated.
 
-## Characterizing the information associated with task outcome
+### Characterizing the information associated with task outcome
 
 We manipulated task outcome by varying the size of the target, and, across experiments, manipulated SPE by varying the clamp size. Although the experimental instructions remained unchanged, these stimulus changes might be expected to also influence the perception of the error or motor planning processes. However, the behavioral differences arising from the manipulation of task outcome did not appear to arise from these factors. Movement kinematics were essentially the same when reaching to the different sized targets, and the perceptual control condition showed that reducing perceptual uncertainty did not influence performance. Moreover, the finding in Experiment 1 that the Straddle group performed similar to the Miss group, suggests that the effect of target size is, to some degree, categorical rather than continuous.
 
@@ -173,7 +268,7 @@ One interpretation of the effect of task outcome is that an automatic signal is 
 
 With the current procedure, we do not have evidence, independent of the behavior, that the task outcome with non-contingent feedback results in a reinforcement signal (either positive or negative). Methods such as fMRI (Daw et al., 2011) or pupillometry (Manohar et al., 2017) could provide an independent means to assess the presence of well-established signatures of reward. Nonetheless, our results indicate, more generally, that task outcome is an important factor mediating the rate and magnitude of implicit motor learning.
 
-## Modeling the influence of task outcome on implicit changes in performance
+### Modeling the influence of task outcome on implicit changes in performance
 
 Our modeling analysis makes clear that parallel, independent activity of sensorimotor adaptation and task outcome-driven operant reinforcement processes cannot account for the behavioral changes observed in the present set of experiments. In particular, the Movement Reinforcement Model fails to predict the change in reach direction observed when the target size was decreased in the Straddle-to-Hit condition of Experiment 3. In this model, the Straddle-to-Hit group’s asymptotic learning during the acquisition phase is due to the isolated operation of the adaptation system, given that none of the reaches are rewarded. The SPE signal would be expected to persist following transfer, maintaining this asymptote. Moreover, movements in this direction would be further strengthened given that, with the introduction of the large target, they would be reinforced by an intrinsic reward signal. Importantly, the predicted absence of behavioral change following transfer should hold for all models in which a model-free reinforcement-based process is combined with a task outcome-insensitive model-based adaptation process. For example, the prediction is independent of whether the reinforcement process follows a different time course than adaptation (e.g. faster or slower), or if we model the effect of reinforcement as basis functions (Donchin et al., 2003; Tanaka et al., 2012; Taylor et al., 2013) rather than discrete units. Thus, we propose that any model in which adaptation and reinforcement processes act independently will fail to show the observed decrease in hand angle following transfer from a miss condition to a hit condition.
 
@@ -195,21 +290,21 @@ Although the Dual Error model provided a better fit of the behavioral results co
 
 In terms of neural mechanisms, converging evidence points to a critical role for the cerebellum in SPE-driven sensorimotor adaptation (Tseng et al., 2007; Taylor et al., 2010; Izawa et al., 2012; Schlerf et al., 2012; Butcher et al., 2017), including the observation that patients with cerebellar degeneration show a reduced response to visual error clamps (Morehead et al., 2017). An important question for future research is whether the cerebellum is also essential for learning driven by information concerning task outcome. A recent behavioral study showed that individuals with cerebellar degeneration were unimpaired in learning from binary, reward-based feedback, once the motor variability associated with their ataxia was taken into consideration (Therrien et al., 2016). This finding provides one instance in which the cerebellum is not essential for learning from task outcome. However, the complete retention observed in that study would indicate that learning was of a different form than adaptation, perhaps related to the use of an explicit strategy (Holland et al., 2018). Evidence that the cerebellum may be integral to processing task outcome signals that could support implicit processes comes from research with animal models indicating that both simple (Wagner et al., 2017) and complex (Ohmae and Medina, 2015) spike activity in the cerebellum may signal information about task outcome and reward prediction errors. By testing individuals with cerebellar impairment on a clamp design in which SPE is held constant and TE is manipulated, one can simultaneously assess the role of the cerebellum in learning from these two error signals.
 
-## Conclusions
+### Conclusions
 
 By using non-contingent feedback, we were able to re-examine the effect of task outcome on sensorimotor learning. The results clearly show that 1) implicit learning processes are influenced by information concerning task outcome, either through the generation of an intrinsic reward or task error signal and 2) that the effect cannot be accounted for by the engagement of a model-based adaptation process operating in tandem with an independent model-free operant reinforcement process. The behavioral results and our modeling work indicate the need for a more nuanced view of sensorimotor adaptation. We outline two directions to consider. In the Adaptation Modulation model, task outcome signals are proposed to serve as a gain on adaptation, contrary to previous views of a modular system that is immune to information about task success. The Dual Error model suggests the need for a more expansive definition of adaptation in which multiple implicit learning processes operate to keep the sensorimotor system well-calibrated. These models can serve as a springboard for future research designed to further delineate how information about motor execution and task outcome influence implicit sensorimotor learning.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Healthy, young adults (N = 116, 69 females; average age = 20.9 years old, range: 18.2–27.8) were recruited from the University of California, Berkeley, community. Each participant was tested in only one experiment and was right-handed, as verified with the Edinburgh Handedness Inventory (Oldfield, 1971) All participants provided written informed consent to participate in the study and to allow publication of their data, and received financial compensation for their participation. The Institutional Review Board at UC Berkeley approved all experimental procedures under ID number 2016-02-8439.
 
-## Experimental apparatus
+### Experimental apparatus
 
 The participant was seated at a custom-made tabletop housing an LCD screen (53.2 cm by 30 cm, ASUS), mounted 27 cm above a digitizing tablet (49.3 cm by 32.7 cm, Intuos 4XL; Wacom, Vancouver, WA). The participant made reaching movements by sliding a modified air hockey ‘paddle’ containing an embedded stylus. The position of the stylus was recorded by the tablet at 200 Hz. The experimental software was custom written in Matlab, using the Psychtoolbox extensions (Pelli, 1997).
 
-## Reaching task
+### Reaching task
 
 Center-out planar reaching movements were performed from the center of the workspace to targets positioned at a radial distance of 8 cm. Direct vision of the hand was occluded by the monitor, and the lights were extinguished in the room to minimize peripheral vision of the arm. The starting and target locations were indicated by white and blue circles, respectively (start circle: 6 mm in diameter; target: either 6, 9.8 or 16 mm depending on condition).
 
@@ -217,7 +312,7 @@ To initiate each trial, the participant moved the digitizing stylus into the sta
 
 After the hand crossed the target ring, endpoint cursor feedback was provided for 50 ms either at the position in which the hand crossed the virtual target ring (veridical feedback) or at a fixed distance determined by the size of the clamp. During the return movement, the feedback cursor reappeared when the participant’s hand was within 1 cm of the start position.
 
-## Experimental feedback conditions
+### Experimental feedback conditions
 
 Across the experimental session, there were three types of visual feedback. On no-feedback trials, the cursor disappeared when the participant‘s hand left the start circle and only reappeared at the end of the return movement. On veridical feedback trials, the cursor matched the position of the stylus during the 8 cm outbound segment of the reach. On clamped feedback trials, the feedback followed a path that was fixed along a specific hand angle. The radial distance of the cursor from the start location was still based on the radial extent of the participant's hand during the 8 cm outbound segment, but the angular position was fixed relative to the target (i.e. independent of the angular position of the hand).
 
@@ -227,27 +322,27 @@ The same instructions in abbreviated form (‘Ignore the cursor and move your ha
 
 We counterbalanced clockwise and counterclockwise clamps within each group for all three experiments.
 
-## Experiment 1
+### Experiment 1
 
 Participants (n = 48, 16/group) were randomly assigned to one of three groups, each training with a 3.5° clamp but differing only in terms of the size of the target: 6 mm, 9.8, or 16 mm diameter. These sizes were chosen so that at an 8 cm radial distance the clamped cursor would be adjacent to the target without making any contact (Target Miss group), straddling the target by being roughly half inside and half outside the target (Straddle Target group), or fully embedded within the target (Hit Target group). The Euclidean distance for this clamp size, measured from the centers of cursor and target, was 4.9 mm.
 
 The session began with two baseline blocks, the first comprised of five movement cycles (40 total reaches to eight targets) without visual feedback and the second comprised of 10 cycles with a veridical cursor displaying hand position. The experimenter then informed the participant that the visual feedback would no longer be veridical and would now be clamped at a fixed angle from the target location. Immediately following these general instructions, the experimenter continued providing instructions for the three practice trials which immediately followed (see Experimental Feedback Conditions). After the practice trials and confirming the participant’s understanding of the task, the clamp block ensued for a total of 80 cycles. A short break (<1 min), as well as a reminder of the task instructions, was provided after 40 cycles (i.e. at the halfway point of this block). Immediately following the perturbation block, there were two washout blocks, first a five cycle block in which there was no visual feedback, followed by 10 cycles with veridical visual feedback. These blocks were preceded by instructions regarding the change in experimental condition and participants were reminded to always aim for the target and to attempt to slice through it with their hand.
 
-## Experiment 2
+### Experiment 2
 
 In Experiment 2, we assessed adaptation over an extended number of clamped visual feedback trials. The purpose of extending the perturbation block was to ensure that participants reached asymptotic levels of learning. In order to achieve a greater number of training cycles, we reduced the number of target locations within the set from 8 to 4.
 
 Participants (n = 32, 16/group) trained with a 1.75° clamp (2.4 mm distance between target and cursor centers) and were assigned to either a small (Straddle) or large (Hit) target condition. The session started with two baseline blocks, 10 cycles (40 reaches) without visual feedback and then 10 cycles with veridical feedback. Following three practice trials with the clamp, the number of cycles in the clamped visual feedback block was nearly tripled from that of Experiment 1 to 220 cycles, with breaks provided after every 70 cycles. Following 220 cycles of training with a 1.75° clamp, there were two washout blocks, first a 10 cycle block in which there was a 0° clamp, followed by 10 cycles with veridical visual feedback. Prior to washout, participants were again instructed to always aim directly to the target.
 
-## Experiment 3
+### Experiment 3
 
 Experiment 3 used a transfer design to evaluate different hypotheses concerning the role of task outcome on implicit sensorimotor learning. Our main predictions focused on the transfer phase, comparing the participants’ behavior to the predictions of three models (see section, Theoretical analysis of the effect of task outcome on implicit learning). We tested two main groups (n = 12/group) in Experiment 3, using a 1.75° clamp in both the acquisition and transfer phases. The session started with two baseline blocks, five cycles (40 reaches) without visual feedback and then five cycles with veridical feedback. After the baseline blocks, clamp instructions and three practice trials were provided to all participants. The first clamp block (acquisition phase) lasted 120 cycles, with participants training with either a small or large target. Following the first 120 cycles, the target sizes were reversed for the next 80 cycles (transfer phase: Straddle-to-Hit or Hit-to-Straddle conditions). Breaks of <1 min were provided after every 35 cycles of training. On the break preceding the transfer (15 cycles before target switch), participants were told that everything would continue on as before, except that the target size would change at some point during the block. The purpose of staggering the break with the transfer was to mitigate any change in adaptation due to temporal decay that could result from a break in training (Hadjiosif and Smith, 2013).
 
-## Control group
+### Control group
 
 A third group (n = 12) was added to test whether the attenuation of adaptation in the large target condition was due to perceptual uncertainty. Here, the block structure was identical to the first two groups. We used a modified large target (16 mm), one which had a bright green bisecting line through the middle, aligned with the target direction. The clamped cursor always fell within one half of the target (either clockwise or counter-clockwise depending on the condition), thus providing a clear indication that the cursor was off center. At the transfer, the bisecting line was removed and participants trained for 80 cycles with the standard large target.
 
-## Data analysis
+### Data analysis
 
 All statistical analyses and modeling were performed using MATLAB 2015b and the Statistics Toolbox. Data and code are available on GitHub at: https://github.com/hyosubkim/Influence-of-task-outcome-on-implicit-motor-learning (Kim, 2019; copy archived at https://github.com/elifesciences-publications/Influence-of-task-outcome-on-implicit-motor-learning). The primary dependent variable in all experiments was hand angle at peak radial velocity, defined by the angle of the hand relative to the target at the time of peak radial velocity (i.e., angle between lines connecting start position to target and start position to hand). Throughout the text, we refer to this variable as hand angle. Additional analyses were performed using hand angle at ‘endpoint’ (angle of the hand as it crossed the invisible target ring) rather than peak radial velocity. The results were essentially identical for the two dependent variables; as such, we only report the results of the analyses using peak radial velocity.
 
@@ -265,11 +360,39 @@ All t-tests were two-tailed. Posthoc pairwise comparisons following significant 
 
 No statistical methods were used to predetermine sample sizes. The chosen sample sizes were based on our previous studies using the clamp method (Morehead et al., 2017; Kim et al., 2018), as well as prior psychophysical studies of human sensorimotor learning (Huang et al., 2011; Galea et al., 2015; Vaswani et al., 2015; Gallivan et al., 2016).
 
-## Modeling
+### Modeling
 
-For the Movement Reinforcement model, a population vector (Georgopoulos et al., 1986), V, indicates the current bias of motor representations within the reinforcement system. In this model, the vector is composed of directionally-tuned units, with the strength of each unit reflective of its reward history. The direction of this vector (Vd) was calculated for each trial in the following manner:Vx(n)=r(n)∙uxVy(n)=r(n)∙uyVd(n)=tan−1(Vy(n)/Vx(n))
+For the Movement Reinforcement model, a population vector (Georgopoulos et al., 1986), V, indicates the current bias of motor representations within the reinforcement system. In this model, the vector is composed of directionally-tuned units, with the strength of each unit reflective of its reward history. The direction of this vector (Vd) was calculated for each trial in the following manner:
 
-Here, r represents the weights on every unit in u, a vector containing 36,000 total unit vectors pointing in every direction around the circle, representing a resolution of .01° (x and y subscripts represent the x- and y-components for both V and u). The update rule for r takes into account the task outcome on each trial:rθ(n+1)=A'∗rθ(n)+sr∼θ(n+1)=A'∗r∼θ(n)where θ indexes the unit corresponding to the direction of the movement, y(n), on hit trials, and ~θ indexes all the other units on hit trials and all units on miss trials. In this simplified reward scheme, the weight to the unit corresponding to the rewarded movement direction is increased by magnitude s on a trial-by-trial basis, and all weights are decremented due to a retention factor, A’, on every trial. The latter ensures that these reward-dependent weights revert back to zero in the absence of reward. The mean preferred direction, Vd, was converted from radians into degrees. The strength of the biasing signal, Vl, is equal to the population vector length: Vx2+Vy2, with the constraint that 0 ≤ Vl ≤ 1.
+$$
+V_{x}(n)=r(n)∙u_{x}
+$$
+
+
+
+$$
+V_{y}(n)=r(n)∙u_{y}
+$$
+
+
+
+$$
+V_{d}(n)=tan^{−1}(V_{y}(n)/V_{x}(n))
+$$
+
+Here, r represents the weights on every unit in u, a vector containing 36,000 total unit vectors pointing in every direction around the circle, representing a resolution of .01° (x and y subscripts represent the x- and y-components for both V and u). The update rule for r takes into account the task outcome on each trial:
+
+$$
+r_{\theta}(n+1)=A'^{∗}r_{\theta}(n)+s
+$$
+
+
+
+$$
+r_{∼\theta}(n+1)=A'^{∗}r_{∼\theta}(n)
+$$
+
+where θ indexes the unit corresponding to the direction of the movement, y(n), on hit trials, and ~θ indexes all the other units on hit trials and all units on miss trials. In this simplified reward scheme, the weight to the unit corresponding to the rewarded movement direction is increased by magnitude s on a trial-by-trial basis, and all weights are decremented due to a retention factor, A’, on every trial. The latter ensures that these reward-dependent weights revert back to zero in the absence of reward. The mean preferred direction, Vd, was converted from radians into degrees. The strength of the biasing signal, Vl, is equal to the population vector length: $\sqrt{V_{x}^{2}+V_{y}^{2}}$, with the constraint that 0 ≤ Vl ≤ 1.
 
 In order to calculate confidence intervals for the parameter estimates, we applied standard bootstrapping techniques, constructing group-averaged hand angle data 1000 times by randomly resampling with replacement from the pool of participants within each group. Using Matlab’s fmincon function, we started with 10 different initial sets of parameter values and estimated the retention and learning parameters that minimized the least squared error between the bootstrapped data and model output (xn). Parameter estimates were bounded such that 0 < A < 1 and 0 < U(e)<e, where e is equal to the clamp size in degrees.
 

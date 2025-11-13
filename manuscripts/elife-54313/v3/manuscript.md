@@ -31,7 +31,7 @@ Given these multiple perspectives, we investigated the nature of value represent
 
 ## Results
 
-## Behavior
+### Behavior
 
 Two monkeys (subjects M and N) performed a value-based decision-making task in which visual stimuli were associated with juice rewards (Figure 1A). Images predicted an amount and type of reward, which was either primary in the form of juice at the end of the trial, or secondary as a bar that increased proportionally to the value associated with the stimulus (Figure 1B). The bar, always present on the screen, represented an amount of juice that was received when it was cashed in every four trials. A total of eight pictures comprised the set of stimuli associated with reward, with four different values matched between primary (juice) and secondary (bar) rewards in terms of the monkeys’ preferences (Rich and Wallis, 2016). After the presentation of the pictures, monkeys were required to move a joystick either left or right depending on another visual cue in order to obtain the predicted reward. Joystick direction was unrelated to the reward-predicting picture, but if the incorrect response was made no reward was delivered.
 
@@ -47,11 +47,64 @@ Single and multi units were recorded in the orbitofrontal (OFC) and anterior cin
 
 Units from all recording sessions and both monkeys were pooled together to create 2 populations of 798 and 315 neurons recorded from the OFC and ACC, respectively (Table 1). Basic unit and decoding results did not differ across monkeys (except for encoding and decoding of reward type in ACC, Figure 2—figure supplement 1D and E) so data were pooled.
 
-## Encoding and decoding of value in unit activity
+**Table 1.**
+ Number of recorded units with an average activity per session above 1 Hz.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Single</th>
+      <th colspan="2">Multi</th>
+      <th>Total</th>
+    </tr>
+    <tr>
+      <th>Monkey</th>
+      <th>M</th>
+      <th>N</th>
+      <th>M</th>
+      <th>N</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OFC</td>
+      <td>259</td>
+      <td>192</td>
+      <td>170</td>
+      <td>177</td>
+      <td>798</td>
+    </tr>
+    <tr>
+      <td>ACC</td>
+      <td>114</td>
+      <td>72</td>
+      <td>81</td>
+      <td>48</td>
+      <td>315</td>
+    </tr>
+  </tbody>
+</table>
+
+### Encoding and decoding of value in unit activity
 
 To assess the encoding of task variables by the neurons in these two regions, we regressed the firing rate of single and multi units on variables value, type and their interaction value x type and tested the contribution of these variables with an ANOVA. We considered value as a categorical variable, as some units activated in a non-linear fashion with respect to value, for example by responding only to a specific value, and could not be modeled with a simple linear regression (Figure 2—figure supplement 2). Note that these activity profiles are not consistent with traditional and bprime;value coding′, in which firing rates monotonically change with value, but they nonetheless encode value information. To demonstrate that a non-negligible proportion of units encoded value non-linearly, and that these units do not respond simply to the identity of one reward cue, we found the number of neurons significant for value in an ANOVA (activity ~ C(value) + type + C(value):type), that were not significant for an interaction between value and type with the same ANOVA, and not significant for value with a linear regression model (activity ~ value + type + value:type). Approximately 13% of units in both OFC and ACC fit these criteria.
 
 Similar to previous reports (Rich and Wallis, 2017), the vast majority of OFC and ACC units encoded value at some point after the reward predicting cue and before the reward (73.2% for OFC and 77.8% for ACC, Figure 2B). The proportion of neurons encoding value peaked after the presentation of the reward predicting cue and steadily decreased until the reward (C, Figure 2A). The type of reward was only weakly encoded compared to value, with less than half the proportion of units encoding it at any time (29.8% for OFC and 37.1% for ACC, Figure 2B). No difference between ACC and OFC was found in the proportion of units encoding value at any point during the epoch of interest, but encoding of type was higher in ACC mostly driven by the data of one monkey (Figure 2B, χ2 test of independence, value: p=0.13 and type: p=0.022). The proportion of units encoding value was higher in ACC during the delay (Figure 2A); however, this difference was also mostly driven by the data from one monkey and is not significant in the other subject (Figure 2—figure supplement 1A). In accordance with previous findings (Kennerley and Wallis, 2009), the relative onset of value encoding was earlier in the OFC compared to ACC (Figure 2E). Latencies in the OFC were significantly shorter for both value and type (Kruskal-Wallis on latencies value:[stat = 19.4, p=1.05*10−5] and type:[stat = 7.93, p=4.85*10−3]). This result was replicated in each monkey’s data independently (Figure 2—figure supplement 1C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/54313/elife-54313-fig2-v3.jpg)
+
+**Figure 2.:** (A) Percentage of units encoding the different variables at each point in time in both OFC and ACC. Significant difference in value encoding neurons with χ2 test is indicated by thick black lines at the bottom (p≤0.01). (B) Percentage of units encoding the task variables at any point in time from the onset of cue presentation to the delivery of the reward. (C and D) Average decoding accuracy of value and type, respectively, across five randomly generated population data sets, with a ridge regression classifier. Significant decoding is shown by the thick portions of line and corresponds to the time bins where the aggregated p-value of 1000-permutation tests for each of the five data sets was lower than 0.01. The dashed red line is the average of 200 sub-samples of OFC data with the same number of units as in ACC for comparison. (E and F) Kernel density estimate of encoding latencies in units for value and type, respectively. OFC latencies are significantly shorter (see main text).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54313/elife-54313-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** In each plot, OFC and ACC are represented with red and blue respectively, and monkey M and N with plain and dashed lines. (A) Percentage of units encoding value at each point in time. Significant difference in value encoding neurons with χ2 test is indicated by thick black/grey lines at the bottom (p≤0.01) for monkey M/N. (B) Average value decoding accuracy across five randomly generated population data sets, with a ridge regression classifier. Significant decoding is shown by the thick portions of line and corresponds to the time bins where the aggregated p-value of 1000-permutation tests for each of the five data sets was lower than 0.01. (C) Kernel density estimate of unit value encoding latencies. D, E and F correspond to A, B and C for variable type.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/54313/elife-54313-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Average firing rate of six example neurons showing a non-linear relationship with value. Green and black curves represent averaged z-scored firing rate for juice and bar trials, respectively. Error bars represent the standard error of the mean. These example neurons are significant for value with an ANOVA, not significant for the interaction of value and type with the same ANOVA and not significant for value in a linear regression.
 
 Population decoding of value with a linear ridge classifier elicited a peak in accuracy similar to the peak in the proportion of encoding units after the presentation of the delay, followed by a stable significant decoding until reward (Figure 2C, significance threshold set to p<0.01 with 1000 permutations, replicated in each monkey, Figure 2—figure supplement 1B). A similar result was observed for decoding type (Figure 2C), although decoding accuracy rapidly dropped and reached non significance around the joystick task. The first significant bin decoding value and type was 100 ms and 150 ms earlier respectively in OFC compared to ACC, and peak decoding was earlier and higher in OFC compared to ACC (for value/type: 93.5%/91.5% in OFC at 250 ms/350 ms, 77.6%/75.6% in ACC at 450 ms/450 ms).
 
@@ -59,17 +112,53 @@ Both regions had similar proportions of value encoding after the cue presentatio
 
 Together, these results show that value is strongly encoded in these prefrontal regions and can be significantly decoded throughout the delay. Because of the lower incidence of reward type encoding and lack of continuous type decoding throughout the delay, the rest of the study focused more on the representation of value than type.
 
-## Persistent versus sequential encoding
+### Persistent versus sequential encoding
 
 The total number of neurons encoding value during the delay was much higher than the number encoding at any particular point in time, indicating that value was represented by different neurons throughout the delay. Given this, we next sought to understand the contribution of individual units to the population dynamics. A common method for doing this is sorting neuron responses. For example, to demonstrate that a neural population uses a sequential activation scheme, sorting the neurons by their peak activation typically displays a tiling of the delay (Pastalkova et al., 2008). To ensure that sequential encoding of value is a robust feature of OFC and ACC activity, we split the data into an equal number of training and testing trials. We sorted the units based on the time of peak value encoding during the delay with the training half, and found that both OFC and ACC value coding tiled the delay, such that different subsets of neurons were most selective at different times (Figure 3A). We then sorted the testing data according to the peak-encoding bin of the training data to assess its consistency (Figure 3B), and found that the tiling of the delay is also present in the testing data, although somewhat less clear. In the period restricted to the delay itself, peak encoding times did not follow a straight line, such that the proportion of encoding neurons decreased during the delay (Figure 2A). This suggests that encoding epochs are not uniformily distributed in time, consistent with a recent model of sequential encoding (Rajan et al., 2016). The peak encoding bins of training and testing data sets were also significantly correlated, which is expected with sequential encoding. Thus, our results partially support the hypothesis of a sequential representation of value in both areas, consistent with conclusions drawn from previous studies (Pastalkova et al., 2008), although the mere firing rate of units is often used (see Figure 3—figure supplement 1A D for firing rates). The same analyses of variable type yielded similar results (Figure 3—figure supplement 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/54313/elife-54313-fig3-v3.jpg)
+
+**Figure 3.:** (A) Tiling of individual units according to their peak encoding of value across the delay in both OFC and ACC with the training half of the trials. Colors represent the negative log of the encoding p-value (ANOVA, F test on value). The measure is bounded between 2 and 5 for visualization and corresponds to p-values ranging from 0.01 to 10−5. (B) Tiling with the testing half of the trials, with units sorted according to the training half of the trials, to show consistency in sequential encoding. Note that only units that had significant encoding in both the training and testing dataset were included, hence the lower number of units. (C) Scatter plot of the peak encoding bin for training versus testing half of the data. Graphs show the Spearman correlation coefficient, R, with associated p-value, p, and trendline.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54313/elife-54313-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Activity of neurons was averaged across trials and normalized so that activity is scaled between 0 and 1. (A) Tiling of the delay by OFC activity and surrounding epochs. (B) Clustering of OFC activity in two clusters with K-means clustering. Left graph shows the activity of each unit sorted by cluster. In the right graph, each curve is the averaged activity across all the units within a cluster. (C) Same as B with six clusters (determined with elbow method) instead of 2. D, E and F are identical to A, B and C with ACC data instead of OFC. Events occurring at times indicated by 0 on the x-axis are: reward cue on, joystick instruction cue on, and reward delivery.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/54313/elife-54313-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Same as main figure for reward type. Panels A, B and C correspond to the panels A, B and C in the main figure but for reward type instead of reward value.
+
 However, sorting the neurons by the proportion of the delay during which they encode value offers a different picture. Figure 4 shows the same splitting procedure applied to encoding duration (Figure 4—figure supplement 1 for variable type). While some units had time-limited encoding of value, others continuously encoded value throughout the delay, supporting the notion that there is a stable representation of value in the population. Similar results were obtained by clustering the average firing rates of neurons into two clusters (Figure 3—figure supplement 1B E). One cluster had increased firing rates for the duration of the delay, consistent with the persistent activity hypothesis. However, separating neurons into six clusters uncovered more diverse profiles of activity that nonetheless followed basic principles: phasic activity followed task events with stable or monotonically evolving activity between events (Figure 3—figure supplement 1C F). Thus, depending on the sorting method employed, the dynamic and sequential or stable and persistent hypothesis could be defended. Overall, encoding by most units covered a relatively small portion of the delay. A reverse cumulative distribution of the number of units encoding value showed a sharp decrease in the fraction of the delay covered (Figure 4D). Only 6.9% and 10.2% of units encoded value for more than half the delay in OFC and ACC, respectively, while less than 1% of neurons encoded type for that same duration (Figure 4—figure supplement 1D). Further, 80% coverage of the delay was found in roughly 1% of the units (OFC: 0.75%, ACC: 1.59%). The distribution of delay coverage by encoding units did not differ between OFC and ACC for the encoding of value, but there was a tendency for higher type encoding duration in ACC (Kolmogorov-Smirnov test, value: [stat = 0.079, p=0.90] and type:[stat = 0.21, p=0.025]).
 
-## Population dynamics
+![Figure 4.](https://cdn.elifesciences.org/articles/54313/elife-54313-fig4-v3.jpg)
+
+**Figure 4.:** (A) Units sorted by the duration of encoding of value with the training half of the trials. Colors represent the negative log of the encoding p-value (ANOVA, F test on value). The measure is bounded between 2 and 5 for visualization and corresponds to p-values ranging from 0.01 to 10−5. (B) Encoding durations of the testing half of the trials sorted by the duration the training trials. (C) Scatter plot of encoding duration for training versus testing half of the data. Graphs show the Spearman correlation coefficient, R, with associated p-value, p, and trendline. (D) Reverse cumulative distribution of units encoding value as a function of the fraction of the delay covered. This graph shows the proportion of units encoding value for at least the fraction of the delay indicated on the x-axis (no significant difference between regions, see main text).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54313/elife-54313-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Same as main figure for reward type. Panels A, B, C and D correspond to the panels A, B, C and D in the main figure but for reward type instead of reward value.
+
+### Population dynamics
 
 Decoding analyses allow us to assess how well value information can be extracted from a population as a whole, but standard approaches that find unique solutions to optimally decode value at each point in time say little about the dynamics of a representation. In addition, our results show that value encoding among units can paint contrasting pictures at the level of population representation, that is, as both dynamic and sequential or stable and persistent. Therefore, to explore representational dynamics across time, we used cross-temporal decoding (CTD), in which a decoder is trained and tested at every possible pair of time bins in the delay (Stokes et al., 2013; Astrand et al., 2014; Stoll et al., 2016; Meyers et al., 2008). In this context, the classification accuracy is a proxy for the similarity in value representation between any two time points. We can then produce an accuracy matrix consisting of each pair of training/testing time bins. When the training and testing times are identical, we obtain a classical decoding procedure as shown in Figure 2C, which corresponds to the diagonal in the CTD accuracy matrix.
 
 Using this method on the OFC and ACC populations, value representation dynamics were not clearly dynamic or stable (Figure 5A, Figure 5—figure supplement 1A for variable type). OFC evidenced a somewhat stable representation from 500 ms after the reward predicting cue (around cue offset) until the response cue, but the representation remained dynamic before and after this period, as the accuracy was mostly confined to the diagonal. ACC accuracy was lower overall but showed similar patterns. While significant decoding appeared to spread from reward cue to after the response cue, accuracy was not homogeneous and remained strongest along the diagonal, indicating a rather dynamic representation of value.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/54313/elife-54313-fig5-v3.jpg)
+
+**Figure 5.:** Training and testing of a ridge classifier at different time bins across the delay. CTD was applied to (A) original data, (B) a stable subspace obtained from the combination of a value subspace and an ensemble method where units are iteratively removed to obtain maximum accuracy, and (C) on a dynamic ensemble where units were iteratively removed from the ensemble to maximize a dynamic score. Thick white lines indicate junctions between the three successive epochs (cue presentation, joystick task and reward delivery). The thin dashed white lines indicate the reference event of each epoch (reward predicting cue onset, response instruction, reward). The decoding accuracy corresponds to the average of five randomly generated pseudo populations and non-significant accuracy has been greyed out for clarity. The p-value threshold is 0.01 and p-values were obtained by aggregating the p-values of each dataset for a given training/testing time bin pair (see Methods section for more details; rwd = reward, resp. cue = response cue). The stable and locality scores are displayed on each panel (s = stability score, l = locality score). Note that significant decoding before the presentation of the cue is due to smoothing.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54313/elife-54313-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Accuracy of cross-temporal decoding (CTD) of type with different methods. Same as main figure for reward type.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/54313/elife-54313-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** Cross-temporal decoding without (A, C) or with (B, D) a value subspace, and with the full population (A, B) or with the best ensemble (C, D). Thick white lines indicate junctions between the three successive epochs (cue presentation, joystick task and reward delivery). The thin dashed white lines indicate the reference event of each epoch (reward predicting cue onset, response instruction, reward). The contour curve indicates areas with a p-value lower than 0.01 with a 2000 fold permutation test. (rwd = reward, resp. cue = response cue, s = stability score).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/54313/elife-54313-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** Cross-temporal decoding accuracy of value with different methods for each monkey. Each row correspond to a different combination of monkey and region, as indicated at the left of each row. Since results are similar across rows, they are largely independent of monkey and region.
 
 This dynamic pattern was also reflected in the population trajectory speed obtained by calculating the distance between two successive time bins in the neural space spanned by the estimated firing rate of each unit with a shorter smoothing window for more temporally accurate firing rate (50 ms SD Gaussian kernel, Figure 6). The reward predicting cue triggered an increase in speed that was followed by a period of low speed, indicative of relatively stable population activity, until the joystick instruction cue triggered another period of rapidly changing activity. Thus, strongly dynamic bouts of activity occur with changes in task stimuli, and in the absence of such changes, delay activity becomes quite stable.
 
@@ -77,7 +166,7 @@ This dynamic pattern was also reflected in the population trajectory speed obtai
 
 **Figure 6.:** (A) Speed (rate of change) of the average activity trajectory in the neural space defined by the full population of neurons, in OFC (left) and ACC (right). Note that the difference in scale between OFC and ACC (y-axis) is due to the difference in the number of units in each population. (B) Regression of the time bin from population activity with a simple linear regression. The black line and shaded area represent the average and standard deviation of leave-one-out cross-validation results. The dashed line corresponds to ground truth. For more temporally accurate results, the firing rate of each unit was estimated with a 50 ms standard deviation Gaussian kernel instead of the 100 ms used in the other analyses.
 
-## Stable representation of value
+### Stable representation of value
 
 The basic CTD method relies on a decoder that weighs on the most discriminating features (i.e. neurons) at a particular point in time. If a sub-population strongly encodes value at one time, the decoder will attribute stronger weights to these units. However, if this sub-population changes representations or ceases to encode value, the decoder accuracy will drop. Our results suggest such temporally local representations change across time, but this could simply be due to inhomogeneous representations of value at the population level. That is, the strongest representation at one time point may not generalize well to other time points. This would not exclude the possibility that a stable representation of value exists within the population, because the classifier is not optimized to find a decoding plane that is consistent throughout the delay.
 
@@ -89,7 +178,7 @@ Although a higher unit count is expected to produce higher decoding performances
 
 While the subspace and best ensemble approaches both found somewhat stable value representations, the most stability with highest accuracies was obtained with a combination of these methods. The subspace procedure was applied to each ensemble selected by the iterative ensemble method. The result is a strikingly stable CTD in both regions for the entire duration of the delay, and beyond reward delivery in ACC (Figure 5B, Figure 5—figure supplement 1B for variable type). This demonstrates that when CTD is applied to a neural population, the representation may appear to be partially dynamic, yet it is possible to find a subspace of the population activity that defines a completely stable representation across time. In addition, combining subspace and ensemble procedures is a promising method to extract extremely stable representations of task variables. These results were replicated with data from each monkey independently (Figure 5—figure supplement 3).
 
-## Dynamic representation of value
+### Dynamic representation of value
 
 Since we found that stable value representations could be extracted with appropriate methods, it is logical that dynamic representations can also be identified. To do this, we first defined a 'locality’ score to quantify how temporally local a representation is, based on the decoding accuracy over time. We fit a Gaussian curve to the decoding accuracy obtained from training at a given time bin and testing on all time bins. The height of the Gaussian divided by its standard deviation defined a score of temporal locality. The measure was defined as the average of the scores computed from the accuracy curves obtained across all training time bins. A dynamic representation of value was obtained by selecting the neurons with the ensemble method described above that maximized this measure. The resulting CTD accuracy displays the main feature of a strongly local and dynamic representation of value, where higher accuracy is confined to the diagonal (Figure 5C, Figure 5—figure supplement 1C for variable type). With the original full population, value representation in the OFC was rather stable in the middle of the delay, but the dynamic ensemble shrunk the higher accuracy block to constrain it to the diagonal. This result demonstrates that a dynamic subspace encoding local value representations can be extracted from the same neural population that encodes value in a very stable way. Together, these results support the idea that a basic CTD applied to a neural population yields a limited view of mixed neural dynamics.
 
@@ -97,13 +186,13 @@ Since the dynamic and stable ensembles yielded opposite dynamics, we expected li
 
 To further demonstrate that the activity in both of these areas is dynamic and supports the encoding of time, we regressed the index of time bins from 500 ms before the reward predicting cue onset until 500 ms after reward delivery with a simple linear regression from the neural population activity (Figure 6B). Indeed, time could be predicted accurately, supporting the notion of a robust representation of time in the neural population activity.
 
-## Relationship between value encoding and decoding dynamics
+### Relationship between value encoding and decoding dynamics
 
 To explore the relationship between single unit encoding and population dynamics, we correlated different encoding measures with their contribution to the value subspace and stable ensemble (Spearman correlation, see Materials and methods). We defined the encoding strength as the average of the negative log p-value of each unit across the delay, and encoding duration as the fraction of the delay when the unit significantly encoded value (p-value < 0.01). First we correlated each of these measures with the unsigned value subspace weights, since a stronger weight reflected a higher influence on the subspace irrespective of its sign (unsigned weights were averaged across five randomly generated population data sets). Both measures were highly correlated with subspace weights (Figure 7A, left and middle) indicating a clear link between encoding strength/duration and contributions to the value subspace. However, units might also change their pattern of value encoding during the delay. To quantify this, we defined an additional stability measure that includes the duration, strength and stability of value representation by penalizing cases where the difference in average firing between a pair of values changes sign (see Materials and methods for details). This measure was more strongly correlated with the value subspace weights (Figure 7A, right graph). Overall, these measures describe the qualities of activity that promote selection to the value subspace.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/54313/elife-54313-fig7-v3.jpg)
 
-**Figure 7.:** (A) Correlations between encoding measures and subspace weights. (B) Correlations between encoding measures and CTD accuracy contribution. (C) Z-scored firing rate of two example neurons negatively contributing to the stable ensemble (1 and 3) and one neuron contributing positively (2). Individual data points corresponding to these neurons are circled in B. (D) Correlations between stability measure and locality measure contribution. All figures show Spearman correlations. sqrt = square root; negative contributions were transformed with a symmetrical function around the origin based on square root: . Transformations applied to the data had no effect on the correlations which are rank based (see Materials and methods).s⁢i⁢g⁢n⁢(x)*|x|
+**Figure 7.:** (A) Correlations between encoding measures and subspace weights. (B) Correlations between encoding measures and CTD accuracy contribution. (C) Z-scored firing rate of two example neurons negatively contributing to the stable ensemble (1 and 3) and one neuron contributing positively (2). Individual data points corresponding to these neurons are circled in B. (D) Correlations between stability measure and locality measure contribution. All figures show Spearman correlations. sqrt = square root; negative contributions were transformed with a symmetrical function around the origin based on square root: $s⁢i⁢g⁢n⁢(x)*\sqrt{|x|}$. Transformations applied to the data had no effect on the correlations which are rank based (see Materials and methods).
 
 To explore the contribution of each unit to the stable ensemble, we defined an accuracy contribution score based on the change in mean accuracy across all time bin pairs in the CTD elicited by removing a unit from the ensemble (this measure is an average across cross-validation and population data sets). This score was correlated with encoding strength, duration and stability score in both regions (Figure 7B, top row). A strongly encoding unit might encode value for a limited time and/or reverse its encoding (e.g. Figure 7C neuron 1), and a unit covering a large part of the delay might also change over time and not provide a stable representation. Conversely, units with stable encoding contribute more to the ensemble (Figure 7C neuron 2). However, since decoding relies on the interaction between many neurons, these simple encoding measures of individual units cannot fully explain all of the ensemble contributions. For example, neuron three in Figure 7C strongly encodes value for the whole delay, but contributes negatively to the stable ensemble.
 
@@ -131,7 +220,7 @@ Overall, using analysis methods designed to extract different signal dynamics, w
 
 ## Materials and methods
 
-## Behavior and neurophysiology
+### Behavior and neurophysiology
 
 The behavioral task has been previously described in Rich and Wallis, 2016; Rich and Wallis, 2017. Two head-fixed male Rhesus macaque monkeys (Macaca mulatta), aged 7 and 9 years, weighing 14 and 9 kg at the time of recording, were trained to perform a value-based decision making task in which they chose between visual stimuli associated with rewards. In the present study we focused on single cue trials only. All procedures were in accord with the National Institute of Health guidelines and recommendations of the University of California at Berkeley Animal Care and Use Committee. Subjects sat in a primate chair, viewed a computer screen and manipulated a bidirectional joystick. Task presentation and reward contingencies were controlled using MonkeyLogic software (Asaad and Eskandar, 2008), and eye movements were tracked with an infra-red camera (ISCAN, Woburn, MA).
 
@@ -145,13 +234,13 @@ Electrodes were lowered at the beginning of each session in the OFC (areas 11 an
 
 Firing rates of each unit were estimated with a 100ms-SD Gaussian kernel convolution over the spike train of entire recording sessions. The resulting firing rate was divided into epochs around the reward cue, the response (joystick) instruction cue and reward delivery, then binned into 100 ms bins every 25 ms for encoding and every 50 ms for decoding methods (to reduce the number of computations, this includes cross-temporal decoding), so that there were 40 and 20 bins for 1 s of activity, respectively. Single and multi units from both monkeys were pooled together into a pseudo population for each region as the analyses presented in this paper did not produce different results between the two subjects (Figure 2—figure supplement 1 and Figure 5—figure supplement 3). Note that significant decoding and encoding of value and type started before or on the presentation of reward predicting cue because of the smoothing method described above.
 
-## Unit encoding
+### Unit encoding
 
 The firing rate of units was modeled with a linear regression with value, type of reward and their interaction as variables in the epochs described above. Value was defined as a categorical variable and analyzed with ANOVAs as the firing rate profile of single neurons did not always follow a linear trend with value (Figure 2—figure supplement 2). Individual F tests for each variable were applied on each time bin, and a bin of activity was considered to encode a variable if the p-value associated with the test was part of at least seven consecutive time bins (~175 ms with 25 ms steps between bins) where the p-value was lower than 0.01. Encoding strength was represented as the negative log of the F test p-value.
 
 For both the sequential encoding and encoding duration analyses, trials were randomly split in half and the above encoding analysis was applied independently to each half during the delay activity, that is, from reward predicting cue offset to reward delivery. We only kept the neurons that had at least seven bins in a row with an encoding p-value less than 0.01 in both training and testing sets, hence the lower number of neurons in Figure 3 and Figure 4. Peak encoding and encoding duration were obtained for each half of the data independently and compared across with Spearman correlations to test for their robustness.
 
-## Decoding
+### Decoding
 
 Neurons across sessions and monkeys were pooled into a single population for each of OFC and ACC. Trials were randomly drawn from each session to match the number of trials in the population data. Because the choice of trials had an influence on the decoding accuracy, we repeated that draw five times to build five different data sets (Appendix 1, step [a]). The results of every population analysis presented in this paper is the average of the five randomly generated data sets. All reported accuracies of all decoding methods, including cross-temporal decoding, correspond to the average of a five-fold cross-validation on each of the five data sets, to ensure generalizability of the results (Appendix 1, step [b]).
 
@@ -161,7 +250,7 @@ The significance of decoding accuracy was determined with permutation testing. T
 
 For cross-temporal decoding, we trained and tested the decoder on all possible combinations of time bin pairs. Accuracy along the diagonal represents training and testing at the same time point, while points away from the diagonal correspond to more temporally distant activities. Importantly, the testing data always correspond to out-of-sample trials so that the decoder was not trained and tested on the same trials, regardless of whether training and testing data points were from the same or different time bins.
 
-## Subspace
+### Subspace
 
 To extract a stable value representation, we implemented the following method inspired by Murray et al., 2017. The firing rate activity of each neuron in a population was averaged over time from cue onset to reward delivery, and then averaged across the trials where the cue predicted the same value. The resulting matrix had four rows corresponding to the four values and n columns corresponding to the number of neurons in the population. A principal component analysis (PCA) was performed on this matrix and allowed us to project the neural population activity of each trial at every time bin onto a three dimensional subspace (four values minus one dimension). This method finds the dimensions that capture the highest variance related to value while discarding temporal information by averaging across time.
 
@@ -169,7 +258,7 @@ When decoding with the subspace, we used a nested cross-validation approach to e
 
 Permutation testing with the subspace shuffled only the labels of the training trials to more closely reproduce the propensity of the subspace trained with original data to elicit higher than chance accuracy.
 
-## Ensembles
+### Ensembles
 
 Testing all the possible combinations of units to find the ensemble that best decodes value is computationally infeasible. To remedy this Backen et al., 2018 proposed a method that finds an ensemble that substantially optimizes decoding accuracy with a subset of the full population in a computationally feasible way, although it does not guarantee the selected ensemble is the single best. This method begins by screening each unit individually and selecting the most discriminating, then successively screens the remainder and adds the unit that most increases accuracy. Effectively, this method sorts the units in the order of highest contribution to decoding accuracy. However, decoding relies on the interaction of unit activities and by successively adding units, that method does not take into account all possible interactions. For example in a three neuron population, neuron 2 and 3 together might yield a higher decoding accuracy than any other pair of neurons, but neuron 1 alone yields the best accuracy and might be selected first, dismissing the possibility that neuron 2 and 3 are selected as the best 2-neuron ensemble. To partially circumvent this, we used the opposite method: successively removing units. As with the adding of units, we iteratively removed the units that maximized the decoding. This method yielded better results than adding the units.
 
@@ -179,22 +268,54 @@ For both stable and dynamic ensembles, the iterative ensemble optimization proce
 
 To speed the computations associated with the stable ensemble search, a smaller number of bins was used by estimating the firing rate with non-overlapping 200 ms bins instead of the 100 ms bins with 25 ms steps used in the results. To achieve a similar result with the dynamic ensemble while keeping temporal precision of the data, one in five bins was included in the training while testing was performed on every bin.
 
-## Unit and population measures
+### Unit and population measures
 
-Three measures were defined to quantify the encoding of value in units. The encoding strength is the average of the negative log of the p-value across time during the delay:(1)es=1T∑t=1T−log(p(t))where T is the total number of bins in the delay, and p⁢(t) is the p-value of a unit at time bin t obtained from the ANOVA F-test described in the unit encoding section above.
+Three measures were defined to quantify the encoding of value in units. The encoding strength is the average of the negative log of the p-value across time during the delay:
+
+$$
+es=\frac{1}{T}\sumt=1T−log(p(t))
+$$
+
+where T is the total number of bins in the delay, and $p⁢(t)$ is the p-value of a unit at time bin t obtained from the ANOVA F-test described in the unit encoding section above.
 
 The encoding duration is the number of bins where the above p-value was lower than 0.01 divided by the total number of bins.
 
-The stability measure was defined as follow:(2)S=avgv,w(1T|∑t=1Ttanh(10×xv(t)¯−xw(t)¯spvw)|)where xv⁢(t)¯ is the average firing rate of a unit for value v, a⁢v⁢gv,w⁢() is the average over all the possible combinations of values v and w except v=w, t⁢a⁢n⁢h is the ]-1,1[ bounded hyperbolic tangent function, |⋅| is the absolute value function and s⁢pv⁢w is the pooled standard deviation of the firing rate of a unit across trials with value v and w:(3)spvw=sv2+sw22where sv2 is the variance of the firing rate for trials with value v. Note that the difference of firing rate averaged by value, xv⁢(t)¯-xw⁢(t)¯, is signed and the measure takes the average of this signed difference. If a unit reverses its relative encoding of two values, the sign of the average difference changes over time and averaging across time will be close to zero, reflecting the lack of stability of encoding of that unit.
+The stability measure was defined as follow:
 
-Two measures were used to quantify the contribution of units to the value subspace and the ensemble. For the value subspace, we used the absolute value of the subspace weights, which corresponds to the eigenvector components obtained through a PCA of the time and trial averaged data. The contribution of a unit to the stable subspace through the ensemble method was estimated by calculating the difference in average CTD accuracy (across all time bin pairs) by removing that unit from the ensemble. The last unit removed from the ensemble was discarded. For visualization of this specific measure, a symmetric square root transformation was applied where the absolute value of negative values was used before reassigning them their sign:(4)ac=sign(x)|x|
+$$
+S=avg_{v,w}(\frac{1}{T}|\sumt=1Ttanh(10\times\frac{x_{v}(t)¯−x_{w}(t)¯}{sp_{vw}})|)
+$$
+
+where $x_{v}⁢(t)¯$ is the average firing rate of a unit for value v, $a⁢v⁢g_{v,w}⁢()$ is the average over all the possible combinations of values v and w except $v=w$, $t⁢a⁢n⁢h$ is the $]-1,1[$ bounded hyperbolic tangent function, $|⋅|$ is the absolute value function and $s⁢p_{v⁢w}$ is the pooled standard deviation of the firing rate of a unit across trials with value v and w:
+
+$$
+sp_{vw}=\sqrt{\frac{s_{v}^{2}+s_{w}^{2}}{2}}
+$$
+
+where $s_{v}^{2}$ is the variance of the firing rate for trials with value v. Note that the difference of firing rate averaged by value, $x_{v}⁢(t)¯-x_{w}⁢(t)¯$, is signed and the measure takes the average of this signed difference. If a unit reverses its relative encoding of two values, the sign of the average difference changes over time and averaging across time will be close to zero, reflecting the lack of stability of encoding of that unit.
+
+Two measures were used to quantify the contribution of units to the value subspace and the ensemble. For the value subspace, we used the absolute value of the subspace weights, which corresponds to the eigenvector components obtained through a PCA of the time and trial averaged data. The contribution of a unit to the stable subspace through the ensemble method was estimated by calculating the difference in average CTD accuracy (across all time bin pairs) by removing that unit from the ensemble. The last unit removed from the ensemble was discarded. For visualization of this specific measure, a symmetric square root transformation was applied where the absolute value of negative values was used before reassigning them their sign:
+
+$$
+ac=sign(x)\sqrt{|x|}
+$$
 
 The distribution of this measure across units was asymmetrical around the zero, so correlation analyses were applied individually on positive and negative contributions (see Main text).
 
-A 'locality’ measure was defined to optimize the ensemble of neurons eliciting a local CTD accuracy of value during the delay. We fit a Gaussian curve to the accuracies obtained from training at one time bin and testing on all delay bins:(5)f(x|σ,μ,a,b)=aexp⁡(−(x−μ)22σ2)+b
+A 'locality’ measure was defined to optimize the ensemble of neurons eliciting a local CTD accuracy of value during the delay. We fit a Gaussian curve to the accuracies obtained from training at one time bin and testing on all delay bins:
 
-The offset value b was fixed to 0.25, the chance level, and the mean of the Gaussian µ was set to the time of the training. Only the scaling factor a and the standard deviation σ were optimized. The locality measure l⁢m for a given ensemble is as follow:(6)lm=1T∑t1=1Tmaxt2(f^t1)−.25σ^t1where t1 and t2 are the training time and testing time, respectively, maxt2⁡(f^t1) is the maximum of the Gaussian fitted on training at time t1 and testing on all t2 time bins, and σ^t1 is the standard deviation of the Gaussian fitted at time t1. The contribution of a unit to the dynamic ensemble was calculated as the difference in locality measure when that unit is added to the ensemble.
+$$
+f(x|\sigma,\mu,a,b)=aexp⁡(−\frac{(x−\mu)^{2}}{2\sigma^{2}})+b
+$$
 
-## Correlations
+The offset value b was fixed to 0.25, the chance level, and the mean of the Gaussian µ was set to the time of the training. Only the scaling factor a and the standard deviation σ were optimized. The locality measure $l⁢m$ for a given ensemble is as follow:
+
+$$
+lm=\frac{1}{T}\sumt_{1}=1T\frac{maxt_{2}(f^_{t_{1}})−.25}{\sigma^_{t_{1}}}
+$$
+
+where t1 and t2 are the training time and testing time, respectively, $max_{t_{2}}⁡(f^_{t_{1}})$ is the maximum of the Gaussian fitted on training at time t1 and testing on all t2 time bins, and $\sigma^_{t_{1}}$ is the standard deviation of the Gaussian fitted at time t1. The contribution of a unit to the dynamic ensemble was calculated as the difference in locality measure when that unit is added to the ensemble.
+
+### Correlations
 
 To avoid inflated results from non-normally distributed data, we used Spearman correlations. In each of the figures showing these correlations, transformations (log or square) were applied for visualization purpose only. Note that these transformations do not affect the Spearman correlation, as it is based on rank and these transformations are monotonic and so preserve the rank of observations.

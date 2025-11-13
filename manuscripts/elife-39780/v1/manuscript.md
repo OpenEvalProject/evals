@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.39780.001 Impaired angiogenesis is a hallmark of metabolically dysfunctional adipose tissue in obesity. However, the underlying mechanisms restricting angiogenesis within this context remain ill-defined. Here, we demonstrate that induced endothelial-specific depletion of the transcription factor Forkhead Box O1 (FoxO1) in male mice led to increased vascular density in adipose tissue. Upon high-fat diet feeding, endothelial cell FoxO1-deficient mice exhibited even greater vascular remodeling in the visceral adipose depot, which was paralleled with a healthier adipose tissue expansion, higher glucose tolerance and lower fasting glycemia concomitant with enhanced lactate levels. Mechanistically, FoxO1 depletion increased endothelial proliferative and glycolytic capacities by upregulating the expression of glycolytic markers, which may account for the improvements at the tissue level ultimately impacting whole-body glucose metabolism. Altogether, these findings reveal the pivotal role of FoxO1 in controlling endothelial metabolic and angiogenic adaptations in response to high-fat diet and a contribution of the endothelium to whole-body energy homeostasis.
+Impaired angiogenesis is a hallmark of metabolically dysfunctional adipose tissue in obesity. However, the underlying mechanisms restricting angiogenesis within this context remain ill-defined. Here, we demonstrate that induced endothelial-specific depletion of the transcription factor Forkhead Box O1 (FoxO1) in male mice led to increased vascular density in adipose tissue. Upon high-fat diet feeding, endothelial cell FoxO1-deficient mice exhibited even greater vascular remodeling in the visceral adipose depot, which was paralleled with a healthier adipose tissue expansion, higher glucose tolerance and lower fasting glycemia concomitant with enhanced lactate levels. Mechanistically, FoxO1 depletion increased endothelial proliferative and glycolytic capacities by upregulating the expression of glycolytic markers, which may account for the improvements at the tissue level ultimately impacting whole-body glucose metabolism. Altogether, these findings reveal the pivotal role of FoxO1 in controlling endothelial metabolic and angiogenic adaptations in response to high-fat diet and a contribution of the endothelium to whole-body energy homeostasis.
 
 ## Introduction
 
@@ -37,13 +37,13 @@ The converging roles of FoxO1 in the angiogenic phenotype and the metabolism of 
 
 ## Results
 
-## Mice with EC-FoxO1 depletion exhibit greater vascular density in visceral adipose tissue
+### Mice with EC-FoxO1 depletion exhibit greater vascular density in visceral adipose tissue
 
 To assess the involvement of EC-FoxO1 in the control of vascular growth in the adipose tissue of adult mice, we utilized a mouse model of EC-selective depletion of FoxO1 expression (referred to ‘EC-FoxO1 KD’ mice hereafter) through inactivation of the Foxo1 gene specifically in EC. Foxo1 floxed (Foxo1f/f) mice were crossbred with Pdgfb-iCreERT2 mice that express tamoxifen-activated Cre recombinase in EC and Cre-mediated recombination of Foxo1 was induced in adult mice. Littermate mice homozygous for the floxed Foxo1 allele but not expressing Cre recombinase were used as controls. After tamoxifen injection, Foxo1 recombination was observed within adipose and skeletal muscle but not within the liver, as endothelial Pdgfb expression is undetectable in this organ (Hellström et al., 1999). The endothelial cell specificity of the recombinase activity was confirmed in microvascular EC isolated from adipose tissue (Figure 1A). Consequently, Foxo1 transcript level, as measured by qPCR, was decreased by 50% in microvascular EC of EC-FoxO1 KD mice relative to control littermates 8 weeks after the administration of tamoxifen, confirming effective and stable Foxo1 depletion in these cells (Figure 1B). Of note, Foxo3 mRNA expression was unaltered in microvascular EC (Figure 1B), demonstrating a lack of compensation by this FoxO family member in response to the depletion of Foxo1. Moreover, consistent with the previously described absence of Pdgfb-Cre activity within macrophages (Claxton et al., 2008), no significant changes in Foxo1 mRNA levels were detected in CD16/CD32+ immune cells from white adipose tissue (Figure 1C), indicating that Cre-mediated recombination did not occur in these stromal cells. The depletion of EC-Foxo1 in microvascular beds of EC-FoxO1 KD mice also was validated via assessment of FoxO1 protein levels by Western blotting. In agreement with the lower mRNA levels observed in microvascular ECs from adipose tissue, protein levels of FoxO1 were diminished by 70% in capillary fragments from skeletal muscle of EC-FoxO1 KD mice compared to control littermates 6 weeks after the administration of tamoxifen (Figure 1D). Together, these results not only imply that successful Foxo1 depletion was constrained to the endothelial cell compartment, particularly microvascular beds, but also support the use of EC-FoxO1 KD mice as an appropriate model to assess the relevance of endothelial FoxO1 for vascular remodeling during adipose tissue expansion.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/39780/elife-39780-fig1-v1.jpg)
 
-**Figure 1.:** Foxo1 induced in adult male mice effectively reduces FoxO1 levels in skeletal muscle and adipose microvascular beds.(A) PCR of genomic DNA from multiple organs of control (Cre-; Foxo1) and EC-FoxO1 KD mice using primers for the floxed and deleted (E1∆E3) alleles. (f/fB–C) Gene expression analysis of microvascular EC and CD16/CD32+ cells isolated from white adipose tissue of Control (n = 6) and EC-FoxO1 KD (n = 3–5) mice. (D) Representative Western blot images and quantitative analysis of FoxO1 and β-actin levels in capillary fragments isolated from skeletal muscle (n = 3–4). Results are expressed relative to β-actin levels. Data in all panels are expressed as mean ± SEM; *p < 0.05, **p < 0.01, calculated with two-tailed unpaired t-test.
+**Figure 1.:** (A) PCR of genomic DNA from multiple organs of control (Cre-; Foxo1f/f) and EC-FoxO1 KD mice using primers for the floxed and deleted (E1∆E3) alleles. (B–C) Gene expression analysis of microvascular EC and CD16/CD32+ cells isolated from white adipose tissue of Control (n = 6) and EC-FoxO1 KD (n = 3–5) mice. (D) Representative Western blot images and quantitative analysis of FoxO1 and β-actin levels in capillary fragments isolated from skeletal muscle (n = 3–4). Results are expressed relative to β-actin levels. Data in all panels are expressed as mean ± SEM; *p < 0.05, **p < 0.01, calculated with two-tailed unpaired t-test.
 
 EC-FoxO1 KD mice maintained on a normal chow (NC) diet for 16 weeks exhibited no gross abnormalities and similar body weight gain compared to control counterparts (8.32 ± 1.3 vs. 7.75 ± 1.17 g, n = 6/group), but significantly increased mRNA levels of the EC marker Pecam1 in eWAT (Figure 2A). When blood vessels were visualized by whole-mount staining with G. simplicifolia lectin, it was evident that the vascular density of visceral adipose tissue from EC-FoxO1 KD mice (Figure 2B–C) was significantly higher. EC-FoxO1 depletion did not alter the number of vessel branch points (Figure 2D). On the other hand, vessels in the adipose of EC-FoxO1 KD mice were significantly enlarged, showing increased vessel diameter, compared to control littermates (Figure 2E), which was consistent with the reported influence of EC-Foxo1 depletion in vascular development in retinas (Wilhelm et al., 2016). No difference in the expression of Pecam1 was detected in other assessed tissues, such as skeletal muscle and liver (Figure 2A).
 
@@ -51,29 +51,143 @@ EC-FoxO1 KD mice maintained on a normal chow (NC) diet for 16 weeks exhibited no
 
 **Figure 2.:** (A) Pecam1 mRNA levels in various tissues of Control and EC-FoxO1 KD mice after 16 weeks of normal chow (NC) diet (Control n = 6, EC-FoxO1 KD n = 5). (B) Representative confocal images of adipose tissue whole-mount staining with BODIPY 493/503 (green) and G. simplicifolia lectin (red) (×20 magnification; scale bar = 100 μm). (C–E) Lectin area (C), capillary branch density (D) and microvessel diameters (E) were quantified from confocal images (Control n = 5, EC-FoxO1 KD n = 6). Data in all panels are expressed as mean ± SEM; *p < 0.05, **p < 0.01, calculated with two-tailed unpaired t-test.
 
-## EC-FoxO1 depletion provokes greater microvascular remodeling under the stimulus of a high-fat diet
+### EC-FoxO1 depletion provokes greater microvascular remodeling under the stimulus of a high-fat diet
 
 To determine whether EC-FoxO1 depletion evokes vascular growth during adipose expansion in response to excess caloric consumption, we challenged mice with a prolonged high-fat diet (HF) and assessed tissue angiogenesis. Gene expression analysis indicated that EC-FoxO1 depletion resulted in higher Pecam1 mRNA levels in multiple adipose tissue depots: eWAT, subcutaneous and brown adipose tissue (BAT, Figure 3A). In line therewith, transcript levels of other EC markers, von Willebrand factor (Vwf) and endothelial nitric oxide synthase (Nos3) were elevated in the eWAT of HF-fed EC-FoxO1 KD mice (Figure 3B). Whole-mount staining of adipose tissue revealed remarkable increases in vascular area and number of vessel branch points in the eWAT of HF-fed EC-FoxO1 KD (Figure 3C–E). Consistently, quantitative histological analysis showed that capillary number per adipocyte (capillary to adipocyte ratio) was significantly higher in eWAT of HF-fed EC-FoxO1 KD mice, further validating the greater microvascular content in eWAT of these mice compared to HF-fed control counterparts (Figure 3F–G). Furthermore, EC-FoxO1 depletion led to significant capillary enlargement in eWAT (Figure 3H–I). Of note, the increase of vessel diameter in HF-fed EC-FoxO1 KD mice was greater than observed in NC-fed EC-FoxO1 KD mice (1.8 vs. 1.3-fold increase), suggesting that the enlargement of capillaries promoted by EC-FoxO1 depletion is exacerbated by HF feeding.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/39780/elife-39780-fig3-v1.jpg)
 
-**Figure 3.:** Foxo1 depletion strongly induces vascular growth within adipose tissue in response to HF diet.(A) Pecam1 mRNA levels in different adipose tissue depots of Control and EC-FoxO1 KD mice after 16 weeks of high-fat (HF) diet (Control n = 5–7, EC-FoxO1 KD n = 7). (B) Gene expression analysis of eWAT of HF-fed Control and EC-FoxO1 KD mice (Control n = 7, EC-FoxO1 KD n = 6–7). (C) Representative confocal images of adipose tissue whole-mount staining with BODIPY 493/503 (green) and G. simplicifolia lectin (red) (C - scale bar = 100 μm). (D,E and I). Lectin area (D) and capillary branch density were quantified from these images (Control, n = 6; EC-FoxO1 KD, n = 5 or 6). (F–G) G. simplicifolia lectin (green) and Wheat germ aggluttinin (red) staining of paraffin-sectioned adipose tissue (F - scale bar = 100 μm) was used to assess capillary to adipocyte ratio (G). (H) Representative confocal images of adipose tissue whole-mount staining with Isolectin alone (greyscale; scale bar = 20 μm). (I) Microvessel diameters were quantified from confocal images (Control, n = 6; EC-FoxO1 KD, n = 6). Data in all panels are expressed as mean ± SEM; *p < 0.05, ***p < 0.001, calculated with two-tailed unpaired t-test.
+**Figure 3.:** (A) Pecam1 mRNA levels in different adipose tissue depots of Control and EC-FoxO1 KD mice after 16 weeks of high-fat (HF) diet (Control n = 5–7, EC-FoxO1 KD n = 7). (B) Gene expression analysis of eWAT of HF-fed Control and EC-FoxO1 KD mice (Control n = 7, EC-FoxO1 KD n = 6–7). (C) Representative confocal images of adipose tissue whole-mount staining with BODIPY 493/503 (green) and G. simplicifolia lectin (red) (C - scale bar = 100 μm). (D,E and I). Lectin area (D) and capillary branch density were quantified from these images (Control, n = 6; EC-FoxO1 KD, n = 5 or 6). (F–G) G. simplicifolia lectin (green) and Wheat germ aggluttinin (red) staining of paraffin-sectioned adipose tissue (F - scale bar = 100 μm) was used to assess capillary to adipocyte ratio (G). (H) Representative confocal images of adipose tissue whole-mount staining with Isolectin alone (greyscale; scale bar = 20 μm). (I) Microvessel diameters were quantified from confocal images (Control, n = 6; EC-FoxO1 KD, n = 6). Data in all panels are expressed as mean ± SEM; *p < 0.05, ***p < 0.001, calculated with two-tailed unpaired t-test.
 
 Subsequent gene expression analysis showed that EC-FoxO1 depletion did not change transcript levels of Pecam1 in the liver (corresponding with the lack of Cre recombination in this organ) but did upregulate its expression in skeletal muscle, suggesting that under the stimulus of HF diet, EC-FoxO1 depletion also induces microvascular remodeling in this tissue (Figure 4A). Skeletal muscle of HF-fed EC-FoxO1 KD mice displayed a trend towards higher capillary:fiber ratio (p = 0.06) compared to control mice (Figure 4B–C). Transmission electron microscopy revealed increased capillary endothelial cross-sectional area and capillary lumen diameters in skeletal muscle of EC-FoxO1 KD mice, demonstrating a modest expansion of the size of individual capillaries (Figure 4D–F). Taken together, these data indicate that EC-FoxO1 depletion results in remarkable vascular growth in response to HF diet, which is particularly pronounced within visceral adipose tissue.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/39780/elife-39780-fig4-v1.jpg)
 
-**Figure 4.:** Foxo1 depletion also favors microvascular expansion in skeletal muscle under HF diet feeding.(A) Pecam1 mRNA levels in liver and skeletal of HF-fed Control (n = 5–6) and EC-FoxO1 KD (n = 6–7) mice. (B) Images of EDL muscle stained with Isolectin-FITC to identify capillaries (scale bar = 50 μm). (C) Capillary to fiber (C:F) ratios were calculated from 3 to 4 independent fields of view per mouse (Control n = 6, EC-FoxO1 KD n = 6). (D) Representative EM images of capillaries within skeletal muscle from HF-fed Control and EC-FoxO1 KD mice (×6.5k magnification; scale bar = 2 μm). (E–F) EC cross-sectional area (E) and capillary luminal diameter were quantified from EM images from n = 4 mice per group, with individual capillary measurements shown (F). Data in all panels are expressed as mean ± SEM; *p < 0.05, calculated with two-tailed unpaired t-test.
+**Figure 4.:** (A) Pecam1 mRNA levels in liver and skeletal of HF-fed Control (n = 5–6) and EC-FoxO1 KD (n = 6–7) mice. (B) Images of EDL muscle stained with Isolectin-FITC to identify capillaries (scale bar = 50 μm). (C) Capillary to fiber (C:F) ratios were calculated from 3 to 4 independent fields of view per mouse (Control n = 6, EC-FoxO1 KD n = 6). (D) Representative EM images of capillaries within skeletal muscle from HF-fed Control and EC-FoxO1 KD mice (×6.5k magnification; scale bar = 2 μm). (E–F) EC cross-sectional area (E) and capillary luminal diameter were quantified from EM images from n = 4 mice per group, with individual capillary measurements shown (F). Data in all panels are expressed as mean ± SEM; *p < 0.05, calculated with two-tailed unpaired t-test.
 
-## EC-FoxO1 KD mice exhibit a healthier adipose tissue expansion in response to HF diet
+### EC-FoxO1 KD mice exhibit a healthier adipose tissue expansion in response to HF diet
 
 The vasculature is critical for maintenance of adipose tissue homeostasis during obesity-driven adipocyte enlargement. Thus, we inferred that the increased vascular density observed with EC-FoxO1 depletion may hinder adipose tissue expansion and dysfunction induced by high-fat diet. Although HF-fed EC-FoxO1 KD mice showed only a trend towards reduced body weight gain (p = 0.06), these mice displayed less fat accumulation, showing lower trunk fat content, smaller retroperitoneal (rWAT) and subcutaneous fat pads compared to control mice (Figure 5A–C and Table 1). The phenotype was not explained by changes in food consumption (Figure 5—figure supplement 1A). HF-fed EC-FoxO1 KD mice also displayed lower fed levels of serum triglycerides and glycerol, and less hepatic lipid accumulation (Figure 5—figure supplement 1B–D), suggesting an improvement in the capacity to handle dietary nutrient excess in these mice. Moreover, histological analysis revealed that increased vascular growth in adipose tissue of HF-fed EC-FoxO1 KD mice was associated with smaller-sized and generally spherical adipocytes, whereas adipocytes from HF-fed control mice were large with irregular polygonal shapes (Figure 5D–E), which was previously related to cellular stress (Giordano et al., 2013). Of note, adipocytes from EC-FoxO1 KD mice retained a unilocular structure (Figure 5D) rather than the hallmark multilocular morphology of brown fat. Furthermore, no change in the mRNA levels of browning markers Ucp1 and Prdm16 (Figure 5F) was detected with EC-FoxO1 depletion. Correspondingly, we did not observe any difference in mitochondrial protein content of eWAT nor in ADP-stimulated respiration through either Complex I (pyruvate/malate, glutamate) or Complex II (succinate) (Figure 5—figure supplement 2A–C). Isoproterenol-stimulated phosphorylation of the hormone-sensitive lipase (HSL) was unaffected (Figure 5—figure supplement 2D–E), indicating that EC-FoxO1 depletion did not impact the adipose tissue sensitivity to lipolytic stimuli. In contrast, and consistent with an improved function, eWAT from HF-fed EC-FoxO1 KD mice displayed enhanced Akt phosphorylation in response to insulin (Figure 5G–H), which was accompanied by higher Adiponectin mRNA levels and concomitant lower Leptin expression (Figure 5I). Collectively, these findings demonstrate that depletion of EC-FoxO1 signaling exerts a protective effect against obesity-induced metabolic remodeling of adipose tissue without promoting a browning phenotype. Notably, the transcripts levels of Vegfa and Apelin were also higher in eWAT from HF-fed EC-FoxO1 KD mice (Figure 5J), providing evidence that the improvements in adipose phenotype include a more pro-angiogenic adipose tissue microenvironment.
 
-## EC-FoxO1 depletion provokes a metabolic shift favoring glucose utilization in HF-fed mice
+![Figure 5.](https://cdn.elifesciences.org/articles/39780/elife-39780-fig5-v1.jpg)
+
+**Figure 5.:** (A) Body weights during 16 weeks of HF feeding. (B) Summarized weight gain over the course of 0–14 weeks (Control n = 7, EC-FoxO1 KD n = 7). (C) Abdominal transverse micro-CT images of HF-fed Control (n = 5) and EC-FoxO1 KD (n = 6) mice (upper panel). Fat content (shown in white) was calculated as % of total trunk volume. (D) Representative hematoxylin and eosin-stained images of adipose tissue from the epididymal fat pad (scale bar = 100 μm). (E) Mean adipocyte cross-sectional area (Control n = 5 EC-FoxO1 KD n = 5). (F) mRNA for browning markers Ucp1 and Prdm16 relative to Hprt1 (Control n = 7, EC-FoxO1 KD n = 7). (G–H) Representative Western blot images (G) and quantitative analysis (H) of pSer473-Akt and total Akt levels in eWAT after ex vivo incubation in the absence or presence of insulin. Results are expressed relative to total Akt levels (Control n = 4, EC-FoxO1 KD n = 7). (I–J) mRNA for adipokines (I, Adipoq and Leptin) and angiogenic markers (J, Vegfa and Apln) in eWAT relative to Hprt1 (Control n = 6–7, EC-FoxO1 KD n = 5–7). Data in all panels are expressed as mean ± SEM; *p < 0.05, **p < 0.01, calculated with two-tailed unpaired t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/39780/elife-39780-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Average weekly caloric intake of mice determined between diet weeks 4 to 11 from only single housed mice (Control n = 4, EC-FoxO1 KD n = 5). (B–C) Non-fasting serum levels of triglycerides (B) and glycerol (C) of Control (n = 7) and EC-FoxO1 KD (n = 7–8) mice. (D) Triglyceride concentration in the skeletal muscle (gastrocnemius) and liver (Control n = 6, EC-FoxO1 KD n = 7).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/39780/elife-39780-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–B) Representative Western blot images (A) and quantitative analysis (B) of mitochondrial OXPHOS proteins in total homogenates from eWAT of HF-fed Control (n = 7) and EC-FoxO1 KD mice (n = 9). Results are expressed relative to β-actin. (C) Analysis of uncoupled (State 2) and ADP-stimulated (State 3) respiration rates in eWAT from HF-fed Control (n = 7) and EC-FoxO1 KD mice (n = 9) supported by Complex I (NADH from pyruvate/malate, PM, and glutamate, (G) and Complex II (FADH2 from succinate, (S). (D–E) Representative Western blot images (D) and quantitative analysis (E) of pSer563-HSL and total HSL levels in eWAT after ex vivo incubation in the absence or presence of 10 µmol/L isoproterenol for 30 min. Results are expressed relative to total HSL levels (Control n = 3, EC-FoxO1 KD n = 7). Data in all panels are expressed as mean ± SEM; *p < 0.05, ***p < 0.001, calculated with two-tailed paired t-test.
+
+**Table 1.**
+ Tissue weights of Control and EC-FoxO1 KD mice after 16 weeks of HF diet
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Control</th>
+      <th>EC-FoxO1 KD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Body weight (g)</td>
+      <td></td>
+      <td></td>
+      <td>44 ± 1.1</td>
+      <td>38 ± 2.2</td>
+    </tr>
+    <tr>
+      <td>eWAT (g)</td>
+      <td></td>
+      <td></td>
+      <td>1.8 ± 0.2</td>
+      <td>1.6 ± 0.6</td>
+    </tr>
+    <tr>
+      <td>rWAT (mg)</td>
+      <td></td>
+      <td></td>
+      <td>881.7 ± 86.1</td>
+      <td>579.8 ± 98.7*</td>
+    </tr>
+    <tr>
+      <td>Subcutaneous adipose (g)</td>
+      <td></td>
+      <td></td>
+      <td>2.1 ± 0.3</td>
+      <td>1.3 ± 0.2*</td>
+    </tr>
+    <tr>
+      <td>BAT (mg)</td>
+      <td></td>
+      <td></td>
+      <td>189.2 ± 21.2</td>
+      <td>144.3 ± 14.8</td>
+    </tr>
+    <tr>
+      <td>Liver (g)</td>
+      <td></td>
+      <td></td>
+      <td>1.5 ± 0.1</td>
+      <td>1.2 ± 0.1*</td>
+    </tr>
+    <tr>
+      <td>Heart (mg)</td>
+      <td></td>
+      <td></td>
+      <td>135 ± 4.2</td>
+      <td>126.6 ± 3.4</td>
+    </tr>
+    <tr>
+      <td>Gastrocnemius (mg)</td>
+      <td></td>
+      <td></td>
+      <td>130.9 ± 4.3</td>
+      <td>115.5 ± 4.4*</td>
+    </tr>
+    <tr>
+      <td>Soleus (mg)</td>
+      <td></td>
+      <td></td>
+      <td>8.3 ± 0.5</td>
+      <td>8.0 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>Tibialis anterior (mg)</td>
+      <td></td>
+      <td></td>
+      <td>44.5 ± 1.5</td>
+      <td>42.6 ± 1.4</td>
+    </tr>
+  </tbody>
+</table>
+
+_eWAT: epididymal adipose tissue; rWAT: retroperitoneal adipose tissue; BAT: brown adipose tissueData are expressed as mean ± SEM, n = 7 per groupSignificance was established using unpaired t-test*P < 0.05 vs Control group_
+
+### EC-FoxO1 depletion provokes a metabolic shift favoring glucose utilization in HF-fed mice
 
 To better understand the metabolic consequences of EC-FoxO1 depletion, whole-body metabolic functions were monitored for 48 hr in a 2nd cohort of HF-fed mice. Surprisingly, EC-FoxO1 KD mice exhibited reduced VO2 and increased RER during the dark cycle (Figure 6A,C) with equivalent CO2 production and activity levels compared to control mice (Figure 6B,D). These data unexpectedly indicated that EC-FoxO1 KD mice increased oxidation of carbohydrate relative to fatty acid as an energy substrate, suggesting that EC-FoxO1 depletion shifted whole-body energy homeostasis towards glucose oxidation. Consistent with these findings, HF-fed EC-FoxO1 KD mice displayed more rapid glucose clearance from the blood during glucose tolerance tests (Figure 6E–F). However, higher glucose tolerance was not associated with altered whole-body insulin sensitivity, based on insulin tolerance tests (ITT) (Figure 6G–H) or insulin-mediated Akt phosphorylation in the skeletal muscle (Figure 6—figure supplement 1). Despite the effects on glucose metabolism observed in HF-fed EC-FoxO1 KD mice, no change in whole-body glucose metabolism was detected in NC-fed EC-FoxO1 KD mice compared to control counterparts (Figure 6—figure supplements 1 and 2). Interestingly, fasting glycemia was significantly lower (Figure 6I) whereas serum lactate levels were elevated in HF-fed EC-FoxO1 KD mice compared to their littermates (10.9 ± 0.39 vs. 9.4 ± 0.55 mmol/L, respectively, p = 0.04, n = 7/group). These findings imply that altered whole-body glucose metabolism of EC-FoxO1 KD mice on a HF may be due to higher glucose turnover, leading us to postulate that increased glycolytic rates at the tissue level contribute to the metabolic phenotype of HF- EC-FoxO1 KD mice. To address this question, we first assessed the expression of main glycolytic genes, including the constitutive glucose transporter GLUT1 (Slc2a1), the rate-limiting enzymes hexokinase 2 (Hk2) and phosphofructokinase (Pfkm) and phosphofructokinase-2/fructose-2,6-bisphosphatase-3 (Pfkfb3). As anticipated, the mRNA levels of most glycolytic genes, with the exception of Pfkfb3, were upregulated in the eWAT from HF-fed EC-FoxO1 KD mice compared to control mice, (Figure 6J). Furthermore, mRNA levels of the lactate transporter, monocarboxylate transporter 5, Slc16a4, were also increased in eWAT of HF-fed EC-FoxO1 KD mice (Figure 6K), consistent with an increased glycolytic flux of glucose to lactate in the adipose tissue of these mice.
 
-## EC drive the changes in glucose metabolism
+![Figure 6.](https://cdn.elifesciences.org/articles/39780/elife-39780-fig6-v1.jpg)
+
+**Figure 6.:** (A–D) O2 consumption (A), CO2 production (B), Respiratory exchange ratio - RER (C) and daily activity (D) were measured during indirect calorimetry tests using a comprehensive laboratory animal monitoring system (CLAMS, Control n = 5, EC-FoxO1 KD n = 6). (E) Glucose tolerance of HF-fed Control and EC-FoxO1 KD mice was examined by intraperitoneal glucose tolerance test after 15 weeks of HF diet and 16 hr fasting. (F) Area under the curve (AUC, Control n = 7, EC-FoxO1 KD n = 7). (G) Insulin sensitivity of HF-fed Control and EC-FoxO1 KD mice was assessed by intraperitoneal insulin tolerance test after 14 weeks of HF diet and 4 hr fasting. (H) Area over the curve (AOC, Control n = 14, EC-FoxO1 KD n = 16). (I) Plasma glucose levels of HF-fed Control (n = 14) and EC-FoxO1 KD (n = 16) mice after 4 hr fasting. (J–K) eWAT gene expression analysis by qPCR (Control n = 6–7, EC-FoxO1 KD n = 6). Data in all panels are expressed as mean ± SEM; *p < 0.05, **p < 0.01, ***p < 0.001, calculated with two-tailed unpaired t-test (F, I, J, K) or post hoc Bonferroni-corrected t-tests when a statistical significance was detected by two-way ANOVA model (A,C,D).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39780/elife-39780-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Control and EC-FoxO1 KD mice fed NC or HF diet for 16 weeks were analyzed for muscle insulin sensitivity. Representative Western blot images (top) and quantitative analysis (bottom) of pSer473-Akt and total Akt levels in EDL muscle before and after in vivo insulin injection. Results are expressed relative to total Akt levels (NC-fed mice: Control n = 7, EC-FoxO1 KD n = 6; HF-fed mice: Control n = 6 and EC-FoxO1 KD n = 6). Data are expressed as mean ± SEM; *p < 0.05, calculated with two-tailed paired t-test.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/39780/elife-39780-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Glucose metabolism was assessed in Control and EC-FoxO1 KD mice after 16 weeks of NC diet. (A) Glucose tolerance of Control and EC-FoxO1 KD mice was examined by intraperitoneal glucose tolerance test after 15 weeks of NC diet and 16 hr fasting (Control n = 7 and EC-FoxO1 KD n = 6). (B) Area under the curve (AUC). (C) Insulin sensitivity of Control and EC-FoxO1 KD mice was assessed by intraperitoneal insulin tolerance test after 14 weeks of NC diet and 4 hr fasting. (D) Area over the curve (AOC, Control n = 7 and EC-FoxO1 KD n = 6). (E) Plasma glucose levels after 4 hr fasting (Control n = 7 and EC-FoxO1 KD n = 6). Data in all panels are expressed as mean ± SEM.
+
+### EC drive the changes in glucose metabolism
 
 EC rely dominantly on glycolysis to support angiogenesis (De Bock et al., 2013) and a previous study reported that FoxO1 overexpression represses EC metabolism (Wilhelm et al., 2016). Therefore, we hypothesized that the changes in glucose utilization were due, at least in part, to increased metabolic activity of EC resulting from EC-FoxO1 depletion. To explore this possibility, we isolated the EC fraction from white adipose tissue depots of mice fed a HF diet for 7 weeks and first assessed gene expression of main glycolytic pathway genes. Consistent with the findings observed with whole adipose tissue, increased mRNA levels of glycolytic genes Slc2a1, Pfkm and Pfkfb3 were detected in the EC fraction from adipose tissue of HF-fed EC-FoxO1 KD mice (Figure 7A–B). We also tested whether the elevated gene expression of glycolytic markers in EC from EC-FoxO1 KD mice would correspond with greater glycolytic capacity, as assessed by cellular glucose uptake and changes in glucose consumption and the accumulation of lactate. In agreement with higher transcript levels of Slc2a1, EC freshly isolated from adipose tissue of HF-fed EC-FoxO1 KD mice displayed increased glucose uptake than EC from floxed controls (Figure 7C). Moreover, rates of glucose consumption and lactate production were higher in EC with FoxO1 depletion compared to control cells (Figure 7D–E). Additionally, we observed elevated Mki67 mRNA in the EC fraction from EC-FoxO1 KD mice, indicating that an enhanced proliferative state coincides with the glycolytic activity of these EC (Figure 7F).
 
@@ -83,13 +197,21 @@ EC rely dominantly on glycolysis to support angiogenesis (De Bock et al., 2013) 
 
 To corroborate that dysregulation of FoxO1 signaling is directly involved in disruption of glycolytic processes, we cultured skeletal muscle EC in low (5 mmol/L) and high glucose (25 mmol/L) conditions, as previous in vitro studies have shown that hyperglycemia can both increase FoxO1 activity (Tanaka et al., 2009) and stall EC metabolism (Du et al., 2000; Zhang et al., 2000; Du et al., 2003). As expected, high-glucose significantly increased FoxO1 protein levels in cultured EC (Figure 8A–B) and provoked changes in established FoxO1 target genes Cdkn1b (p27) and Ccnd1 (cyclin D1) (Figure 8—figure supplement 1A–B) that are involved in cell proliferation. Consistent with increased FoxO1 levels and activity, high-glucose conditions also lowered the mRNA levels of glycolytic pathway components Slc2a1, Hk2, and Pfkfb3 (Figure 8C–E). Importantly, pharmacological inhibition of FoxO1 significantly reversed the high-glucose-induced reduction of each of these genes (Figure 8C–E), which correlated with elevated protein levels of HK2 and PFKFB3 (Figure 8F–I). Accordingly, treatment with FoxO1 inhibitor AS1842856 increased cellular glucose uptake and consumption in microvascular ECs, which corresponded with higher extracellular lactate levels (Figure 8J–L). Collectively, these findings indicate that lower FoxO1 levels and activity increase glycolytic and proliferative activities of EC. This induces a profound increase in glucose consumption by these cells, which consequently leads to higher glucose utilization at the tissue level, ultimately impacting whole-body glucose homeostasis.
 
-## EC-FoxO1 depletion is sufficient to alter EC response to HF diet
+![Figure 8.](https://cdn.elifesciences.org/articles/39780/elife-39780-fig8-v1.jpg)
+
+**Figure 8.:** (A–B) Representative Western blot images (A) and quantitative analysis (B) of FoxO1 and β-actin levels in primary EC from skeletal muscle cultivated under low (5 mmol/L) or high (25 mmol/L) glucose conditions for 48 hr (n = 5). Results are expressed relative to β-actin levels. (C–E) Transcript analysis by qPCR of microvascular EC from skeletal muscle cultivated under low (5 mmol/L, n = 8) or high (25 mmol/L, n = 8) glucose conditions for 48 hr in the presence or absence of the FoxO1 inhibitor (1 μmol/L AS1842856, n = 7) in the last 18 hr. (F–I) Representative Western blot images and quantitative analysis of hexokinase II (HK2, (F,G), PFKFB3 (H, I) and β-actin levels in primary EC from skeletal muscle cultivated under high glucose (25 mmol/L) conditions and treated with 1 μmol/L AS1842856 for 24 hr (n = 6). Results are expressed relative to β-actin levels. (J) Glucose uptake after 18 hr treatment with 1 μmol/L AS1842856 of microvascular EC from skeletal muscle cultivated under high glucose conditions (n = 3). (K–L) Glucose consumption (K) and Lactate production (L) were assessed in SMEC in the absence or presence of 1 μmol/L AS1842856. Cells were pretreated with 1 μmol/L AS1842856 for 24 hr (n = 4). Data in all panels are expressed as mean ± SEM; *p < 0.05, **p < 0.01, ***p < 0.001, calculated with two-tailed unpaired t-test (B,J), post hoc Bonferroni-corrected t-tests when a statistical significance was detected by two-way ANOVA model (C–E, K–L) or two-tailed paired t-test (G,I).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/39780/elife-39780-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A–B) Gene expression analysis of cultured skeletal muscle ECs in low (5 mmol/L, n = 8) and high glucose (25 mmol/L, n = 8) conditions. Data in all panels are expressed as mean ± SEM; **p < 0.01, ***p < 0.001 calculated with two-tailed unpaired t-test.
+
+### EC-FoxO1 depletion is sufficient to alter EC response to HF diet
 
 FoxO1 and FoxO3 can demonstrate overlapping functions in EC (Potente et al., 2005) and previous studies reported that double depletion of Foxo1 and Foxo3 can either demonstrate similar effects as FoxO1 deficiency or have significant additive effects (Zhang et al., 2012; Haeusler et al., 2014). This led us to investigate whether double depletion of endothelial Foxo1 and Foxo3 would result in a greater angiogenic response in HF-fed mice. HF-fed EC-FoxO1,3 KD mice (generated using the tamoxifen-inducible, endothelial-specific Cre driver: Pdgfb-CreERT2) presented lower levels of fasting glucose (Figure 9A–C) and reduced adiposity, as evidenced by lighter subcutaneous and rWAT depots, compared to their littermate controls (Supplementary file 1). Similar to what was observed in EC-FoxO1 KD mice on a HF diet, increased expression of Pecam1 was detected in eWAT and skeletal muscle of HF-fed EC-FoxO1,3 KD mice (Figure 9D), indicating greater EC content in these tissues. Additionally, increased expression of glycolytic markers was observed in eWAT and EC fraction from adipose tissue of HF-fed EC-FoxO1,3 KD mice (Figure 9E–F). Consistent with these findings, increased glucose uptake (Figure 9G) and lactate production (Figure 9H) were also detected in the EC fraction from HF-fed EC-FoxO1,3 KD mice. Notably, these measurements demonstrated that combined depletion of EC-Foxo1 and Foxo3 elicits a similar, but not additive effect, when compared to EC-Foxo1 alone, indicating that FoxO1 is the dominant regulator of the EC response to HF diet.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/39780/elife-39780-fig9-v1.jpg)
 
-**Figure 9.:** Foxo1,3 depletion increases vascular growth and upregulates endothelial glycolytic processes comparable to EC-Foxo1 depletion.(A) PCR of genomic DNA from eWAT of Control (Foxo1,3) and EC-FoxO1,3 KD mice using primers for the floxed and deleted alleles for each gene. (f/fB) Foxo1 and Foxo3 mRNA levels in microvascular EC from white adipose tissue (Control n = 4, EC-FoxO1,3 KD n = 3). (C) Glucose levels after 14 weeks of HF feeding and 4 hr fasting (Control n = 6, EC-FoxO1,3 KD n = 6). (D) Endothelial cell marker Pecam1 mRNA level in skeletal muscle and eWAT of HF-fed Control and EC-FoxO1,3 KD mice (Control n = 5, EC-FoxO1,3 KD n = 5). (E–F) Gene expression analysis by qPCR of eWAT (E) and EC fraction from adipose tissue (F) of HF-fed Control (n = 3–5) and EC-FoxO1,3 KD (n = 3–5) mice. (G–H) Increased glucose uptake (G) and lactate production (H) in EC fraction from adipose tissue of EC-FoxO1,3 KD mice (n = 4) compared to Control counterparts (n = 4–5). Data in all panels are expressed as mean ± SEM; *p < 0.05, **p < 0.01, ***p < 0.001, calculated with two-tailed unpaired t-test.
+**Figure 9.:** (A) PCR of genomic DNA from eWAT of Control (Foxo1,3f/f) and EC-FoxO1,3 KD mice using primers for the floxed and deleted alleles for each gene. (B) Foxo1 and Foxo3 mRNA levels in microvascular EC from white adipose tissue (Control n = 4, EC-FoxO1,3 KD n = 3). (C) Glucose levels after 14 weeks of HF feeding and 4 hr fasting (Control n = 6, EC-FoxO1,3 KD n = 6). (D) Endothelial cell marker Pecam1 mRNA level in skeletal muscle and eWAT of HF-fed Control and EC-FoxO1,3 KD mice (Control n = 5, EC-FoxO1,3 KD n = 5). (E–F) Gene expression analysis by qPCR of eWAT (E) and EC fraction from adipose tissue (F) of HF-fed Control (n = 3–5) and EC-FoxO1,3 KD (n = 3–5) mice. (G–H) Increased glucose uptake (G) and lactate production (H) in EC fraction from adipose tissue of EC-FoxO1,3 KD mice (n = 4) compared to Control counterparts (n = 4–5). Data in all panels are expressed as mean ± SEM; *p < 0.05, **p < 0.01, ***p < 0.001, calculated with two-tailed unpaired t-test.
 
 ## Discussion
 
@@ -115,66 +237,447 @@ Altogether, our study reveals that EC-FoxO1 depletion evokes increased glycolyti
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus, FVB/n)</td>
+      <td>Foxo1f/f (FVB-Foxo1tm1Rdp)</td>
+      <td>From the laboratory of Dr Tara L. Haas</td>
+      <td></td>
+      <td>Generated by crossing Foxo1,3,4f/f mice (FVB background; from the laboratory of Dr. Ronald A. DePinho) with FVB/n mice.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, FVB/n)</td>
+      <td>Foxo1,3f/f (FVB-Foxo1tm1Rdp; Foxo3tm1Rdp)</td>
+      <td>From the laboratory of Dr Tara L. Haas</td>
+      <td></td>
+      <td>Generated by crossing Foxo1,3,4f/f mice (FVB background; from the laboratory of Dr. Ronald A. DePinho) with FVB/n mice.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, (C57BL/6 x CBA)F2)</td>
+      <td>Pdgfb-iCre [B6-Tg(Pdgfb-icre /ERT2)1Frut]</td>
+      <td>From the laboratory of Dr. Marcus Fruttiger</td>
+      <td></td>
+      <td>The founder mouse was a kind gift from Dr. Marcus Fruttiger..</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, FVB.B6)</td>
+      <td>Foxo1iEC-D [FVB.B6-Tg (Pdgfb-icre/ERT2) 1Frut; Foxo1tm1Rdp]</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mice were generated by cross-breeding Pdgfb-iCre with Foxo1f/f mice, followed by backcrossing offspring with Foxo1f/f mice for 3 + generations</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, FVB.B6)</td>
+      <td>Foxo1,3iEC-D [FVB.B6-Tg (Pdgfb-icre/ERT2) 1Frut; Foxo1tm1Rdp; Foxo3tm1Rdp]</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mice were generated by cross-breeding Pdgfb-iCre with Foxo1,3f/f mice, followed by backcrossing offspring with Foxo1,3f/f mice for 3 + generations</td>
+    </tr>
+    <tr>
+      <td>Cell line (primary mouse adipose derived endothelial cells, male)</td>
+      <td>Endothelial cell fraction from adipose tissue</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Isolated freshly for each experiment</td>
+    </tr>
+    <tr>
+      <td>Cell line (primary mouse skeletal muscle endothelial cells, male)</td>
+      <td>Cultured microvascular EC, SMEC</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotin Rat Anti-Mouse CD31</td>
+      <td>BD Pharmingen</td>
+      <td>553371</td>
+      <td>Cell purification</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MitoProfile Total OXPHOS Rodent WB Antibody Cocktail</td>
+      <td>Abcam</td>
+      <td>ab110413</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-β-actin</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-47778</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase AffiniPure Goat Anti-Mouse</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>115-035-003</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase AffiniPure Goat Anti-Rabbit</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>111-035-003</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Purified Rat Anti-Mouse CD16/CD32 (Mouse BD Fc Block)</td>
+      <td>BD Pharmingen</td>
+      <td>553141</td>
+      <td>Cell purification</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Purified Rat Anti-Mouse CD144</td>
+      <td>BD Pharmingen</td>
+      <td>555289</td>
+      <td>Cell purification</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-α/β-tubulin</td>
+      <td>Cell Signaling</td>
+      <td>2148</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-Akt</td>
+      <td>Cell Signaling</td>
+      <td>9272</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-HSL</td>
+      <td>Cell Signaling</td>
+      <td>4107</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-Hexokinase</td>
+      <td>Cell Signaling</td>
+      <td>2867T</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-PFKFB3</td>
+      <td>Cell Signaling</td>
+      <td>13123S</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-phospho-Akt (Ser473)</td>
+      <td>Cell Signaling</td>
+      <td>4058</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti- phospho-HSL (Ser563)</td>
+      <td>Cell Signaling</td>
+      <td>4139</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent (oligonucleotide)</td>
+      <td>oFK1ckA: GCT TAG AGC AGA GAT GTT CTC ACA TT</td>
+      <td>ThermoFisher Scientific</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent (oligonucleotide)</td>
+      <td>oFK1ckB: CCA GAG TCT TTG TAT CAG GA AAT AA</td>
+      <td>ThermoFisher Scientific</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent (oligonucleotide)</td>
+      <td>oFK1ckC: CAA GTC CAT TAA TTC AGC ACA TTG A</td>
+      <td>ThermoFisher Scientific</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent (oligonucleotide)</td>
+      <td>oFK2ckA: ATT CCT TTG GAA ATC AAC AAA ACT</td>
+      <td>ThermoFisher Scientific</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotide)</td>
+      <td>oFK2ckB: TGC TTT GAT ACT ATT CCA CAA ACCC</td>
+      <td>ThermoFisher Scientific</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent (oligonucleotide)</td>
+      <td>oFK1ckC: AGA TTT ATG TTC CCA CTT GCT TCCT</td>
+      <td>ThermoFisher Scientific</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Humalog Insulin</td>
+      <td>Lilly</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PureLink Genomic DNA Mini Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>K182001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EnzyFluoTML- lactate Assay Kit</td>
+      <td>BioAssay Systems</td>
+      <td>EFLLC-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glycerol Assay Kit</td>
+      <td>Sigma- Aldrich</td>
+      <td>MAK117</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glucose (HK) Assay</td>
+      <td>Sigma- Aldrich</td>
+      <td>GAHK20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lactate-Glo Assay</td>
+      <td>Promega</td>
+      <td>J5021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>74106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Triglyceride Colorimetric Assay kit</td>
+      <td>Cayman Chemical Company</td>
+      <td>10010303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AS1842856 FoxO1 inhibitor</td>
+      <td>EMD Millipore</td>
+      <td>344355</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoproterenol</td>
+      <td>Tocris</td>
+      <td>1747</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma</td>
+      <td>T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J Analysis Software</td>
+      <td>National Institutes of Health</td>
+      <td>https://imagej.nih.gov/ij/download.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism Version 6.07</td>
+      <td>GraphPad Software Inc.</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>11 kcal% fat w/ sucrose Surwit Diet</td>
+      <td>Research Diets</td>
+      <td>D12329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>58 kcal% fat w/sucrose Surwit Diet</td>
+      <td>Research Diets</td>
+      <td>D12331</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BODIPY 493/503</td>
+      <td>ThermoFisher Scientific</td>
+      <td>D3922</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads</td>
+      <td>ThermoFisher Scientific</td>
+      <td>14311D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fast TaqMan Master Mix</td>
+      <td>ThermoFisher Scientific</td>
+      <td>4444963</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>M-MLV reverse transcriptase</td>
+      <td>New England Biolabs</td>
+      <td>M0253</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin Particles Plus - DM</td>
+      <td>BD IMag</td>
+      <td>557812</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Rhodamine labeled Griffonia (Bandeiraea) Simplicifolia lectin</td>
+      <td>VectorLabs</td>
+      <td>RL1102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>QIAzol Lysis Reagent</td>
+      <td>Qiagen</td>
+      <td>79306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SuperSignal West Pico</td>
+      <td>ThermoFisher Scientific</td>
+      <td>34080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Type I collagenase</td>
+      <td>ThermoFisher Scientific</td>
+      <td>17100–017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Type II collagenase</td>
+      <td>ThermoFisher Scientific</td>
+      <td>17101–005</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Foxo1f/f mice and Foxo1,3f/f mice were derived from outbreeding of Foxo1,3,4f/f mice (Paik et al., 2007) with wild-type FVB/n mice, and genotyped to ensure homozygosity of the floxed allele(s). To permit the inducible endothelial-specific manipulation of Foxo1 and Foxo3a, these mice were bred with Pdgfb-iCreERT2 mice (C57Bl/6 background) (Claxton et al., 2008). Offspring were back-crossed with Foxo1f/f or Foxo1,3f/f founders for a minimum of 3 generations prior to experimentation to establish genotypes Cre-;Foxo1f/f and Cre+;Foxo1f/f or Cre-;Foxo1,3f/f and Cre+;Foxo1,3f/f, respectively.
 
-## Animal studies
+### Animal studies
 
 We performed five separate animal studies using only male mice. To generate mice with postnatal endothelial cell-specific deletion of FoxO1 (EC-FoxO1 KD), or double deletion of Foxo1 and Foxo3 (EC-FoxO1,3 KD), Cre-mediated recombination was induced in 4–6 weeks old Cre+;Foxo1f/f; mice and Cre+;Foxo1,3f/f; mice by five consecutive i.p. injections of 200 µL tamoxifen (15 mg/mL in corn oil). Recombination of Foxo1 (and Foxo3) alleles was confirmed via PCR analysis of genomic DNA (Paik et al., 2007). In all experiments, EC-FoxO1 KD and EC-FoxO1,3 KD mice were compared with age-matched tamoxifen-injected Cre-;Foxo1f/f or Cre-;Foxo1,3f/f littermates (referred to as Control). No statistical method was used to predetermine the sample size. At 6–8 weeks of age, male mice within each litter were assigned randomly, according to their genotypes, to either normal chow (NC, 11% kcal from fat) or high-fat (HF, 58% kcal from fat, Surwit Diet) groups. Water and diet were provided ad libitum. Body weights and food intake of mice included in studies 1 and 2 were recorded weekly. Specific animal groups and the tests conducted were as followed: Group 1: Control and EC-FoxO1 KD mice received 16 week NC or HF diets (n = 6–7/group) and underwent body composition imaging at week 13, GTT and ITT (weeks 14, 15 respectively) and tissue collection at week 16 for whole tissue analyses (histology and RNA). Based on the apparent lack of influence of Foxo1 deletion under NC diet in this group (see Results), subsequent testing focused on comparing the genotype differences observed in the HF condition: Group 2: Control and EC-FoxO1 KD mice (n = 7 and 8, respectively) underwent 14 week HF diet, metabolic testing (CLAMS) at week 13; ITT and tissue collection at week 14 for mitochondrial respiration, electron microscopy and serum analyses of TGs and glycerol. Group 3 and 4: Control and EC-FoxO1 KD mice (n = 5/group) and Group 5: Control and EC-FoxO1,3 KD (n = 6/group) underwent HF diet for 7, 5 and 14 weeks, respectively. Groups 3 and 5 were used to analyze 4 hr fasting glucose, and groups 3, 4 and 5 were used to isolate endothelial cell fractions from adipose depots for RNA and for glucose uptake, glucose consumption and lactate release assays. Animal studies were conducted in accordance with the American Physiological Society’s guiding principles in the Care and Use of Animals, following protocols approved by the York University Committee on Animal Care.
 
-## Body composition analysis
+### Body composition analysis
 
 Body composition was examined by micro-computed tomography (Skyscan 1278; Bruker) using the step and shoot function, averaging four images/frame with a rotation step of 0.75 degrees. Mice were scanned at a voltage of 50kV, a current of 200 A with a 0.5 aluminum filter while anesthetized with isoflurane. Images were reconstructed using NRecon (local) and the entire trunk area fat mass was analyzed using CTAn.
 
-## Whole-body metabolism analysis
+### Whole-body metabolism analysis
 
 Mice were monitored individually for oxygen consumption, carbon dioxide production, respiratory exchange ratio and locomotor activity using Indirect Calorimetry with the Columbus Comprehensive Lab Animal Monitoring System (CLAMS, Columbus Instruments, USA). Mice acclimated to CLAMS cages for 24 hr then data were recorded every 5 min for a 48 hr period. Mice had ad libitum access to food and water. VO2 and CO2 were normalized to body weight. Respiratory exchange ratio (RER) was calculated as the volume of CO2 relative to the volume of oxygen (VCO2/VO2).
 
-## Intra-peritoneal insulin and glucose tolerance tests (ITT and GTT)
+### Intra-peritoneal insulin and glucose tolerance tests (ITT and GTT)
 
 For ITT, Control and EC-FoxO1 KD mice were fasted for 4 hr and received an i.p. injection of insulin (0.75 U/kg BW). GTTs were conducted in overnight-fasted control and EC-FoxO1 KD mice using an i.p. injection of glucose (1.75 g/kg BW). Blood glucose was measured by glucometer (Freestyle Lite, Abbott Diabetes Care, ON, Canada) at post-injection time-points 0, 20, 40 and 60 min (ITT) or 0, 30, 60, 90 and 120 min (GTT).
 
-## In vivo insulin stimulation
+### In vivo insulin stimulation
 
 Insulin stimulation of skeletal muscle was conducted as described previously (Nwadozi et al., 2016) and the phosphorylation state of Akt was assessed by Western blotting.
 
-## Ex vivo adipose explant incubation
+### Ex vivo adipose explant incubation
 
 Epididymal fat pads were cut into ~ 80 mg pieces and pre-incubated with low glucose DMEM containing 1% fatty acid-free BSA for 30 min (37°C) before 30 min incubation with insulin (25 mU/mL) or isoproterenol (10 µmol/L). Tissue explants were snap frozen in liquid nitrogen and the phosphorylation states of Akt or HSL were assessed by Western blotting.
 
-## Mitochondrial respiration
+### Mitochondrial respiration
 
 Respirometry studies in freshly extracted epididymal white adipose tissue (eWAT) were performed using high-resolution respirometry (Oroboros Oxygraph-2k, Oroboros Instruments, Crop, Innsbruck, Austria). EWAT fat pads were prepared as done previously (MacPherson et al., 2016), minced in MIR05 buffer, weighed and immediately placed in separate Oroboros Oxygraph-2k in respiration media (MIR05) containing 20 mmol/L creatine (Saks et al., 1995). State three respiration was stimulated with the addition of ADP [5 mmol/L] in the presence of pyruvate [5 mmol/L] and malate [4 mmol/L] followed by glutamate [10 mmol/L] and succinate [20 mmol/L]. Respiration experiments were completed at 37°C before the oxygraph chamber reached 150 mmol/L [O2]. Mitochondrial membrane integrity was tested with the addition of 10 mmol/L cytochrome c oxidase at the end of each protocol.
 
-## Western Blot
+### Western Blot
 
 Total protein extraction from isolated cells or tissues was performed as previously described (Milkiewicz et al., 2011). Primary antibodies were as follows: FoxO1, Ser473-pAkt, Akt, Ser563-pHSL, HSL, HK2, PFKFB3, α/β-tubulin, β-actin and Mitoprofile Total OXPHOS Cocktail. Secondary antibodies were goat anti-rabbit or anti-mouse IgG-horseradish peroxidase. Membranes were developed using enhanced chemiluminescence and densitometry analysis was performed with ImageJ Analysis Software (NIH).
 
-## Imaging of adipose tissue
+### Imaging of adipose tissue
 
 For microvascular quantification, pieces of eWAT were fixed in 4% formaldehyde and stained with BODIPY 493/503 (0.25 µg/mL) and rhodamine-Griffonia Simplicifolia lectin (1:100) to visualize adipocytes and microvessels, respectively. Images were taken with a Zeiss LSM700 confocal microscope (10x or 20x objectives) using identical gain settings for all samples. Microvascular content and branchpoint numbers were quantified from 3 to 4 10x fields of view per animal, and vessel diameters from 20x images, using Image J Analysis Software (NIH). For morphometric analysis of adipocytes, eWAT was fixed in 4% formaldehyde. Paraffin embedding, sectioning and hematoxylin and eosin staining were carried out by The Centre for Phenogenomics (Toronto, Canada). Adipocyte area was analyzed in three randomly selected fields of view (4x objective) using ImageJ Analysis Software (NIH). For quantification of capillaries, de-paraffinized sections were stained with fluorescein isothiocyanate-conjugated Griffonia Simplicifolia Lectin-1 (1:100) and Rhodamine Wheat Germ Agglutinin (1:200). Images were acquired using a 10X objective on a Zeiss inverted microscope equipped with a digital cooled CCD camera, capturing 3–4 independent fields of view per mouse. Image J software was used to quantify the numbers of capillaries and adipocytes in corresponding Griffonia and Wheat Germ Agluttinin-stained images, respectively.
 
-## Muscle histology and Electron Microscopy (EM)
+### Muscle histology and Electron Microscopy (EM)
 
 Cross-sections of EDL were stained with Griffonia simplificolia-FITC for assessment of capillary to fiber ratio (Nwadozi et al., 2016). Pieces of EDL muscles from HF-fed Control and EC-FoxO1 KD mice (n = 4/group) were fixed in 2% glutaraldehyde and 4% paraformaldehyde in 0.1M phosphate buffer (pH = 7.4) and sent for EM processing at the Hospital for Sick Children (Toronto, Canada). Cross-sectional images of capillaries (identified by lack of smooth muscle cell coverage) were captured by a blinded EM technician. Luminal diameters and endothelial cross-sectional areas of all detected capillaries within each sample were assessed using Image J software.
 
-## Measurement of lipids and lactate
+### Measurement of lipids and lactate
 
 Serum triglycerides and glycerol levels were measured using commercial kits. Triglycerides were also measured in homogenates of liver and gastrocnemius muscle. Lactate levels were assessed in serum from HF-fed Control and EC-FoxO1 KD mice and in phenol-free cell culture medium of adipose-derived endothelial cells and SMEC also using a commercial kit.
 
-## Endothelial cell isolation and culture
+### Endothelial cell isolation and culture
 
 SMEC were isolated from collagenase digested skeletal muscle using rat anti-mouse VE-cadherin antibody-coated Dynabeads and biotinylated rat anti-mouse CD31 antibody-coated streptavidin-coupled beads, cultivated as described previously (Roudier et al., 2013), and used in experiments between passages 4 and 7. For glucose and FoxO1 inhibitor treatments, cells were plated and after overnight attachment, culture medium was replaced by low (5 mmol/L) or high-glucose (25 mmol/L) DMEM 10% FBS and incubated for 48 hr and 1 µmol/L AS1842856 was added to the medium 18 hr prior to testing. To examine the influence of FoxO1 inhibition on protein levels of glycolytic enzymes, SMEC were plated sparsely. After overnight attachment, culture medium (high-glucose DMEM with 10% FBS) was replaced by high-glucose DMEM with 0.1% FBS and the cells were stimulated with 1 µmol/L AS1842856 for 24 hr before lysis in RIPA buffer for protein extraction. For the isolation of adipose-derived endothelial cells, white adipose depots were pooled and digested with 0.5% Type I collagenase for 20 min at (37°C) with shaking. Centrifugation (300xg for 5 min) was used to separate adipocytes from the stromal vascular fraction (SVF). The re-suspended SVF was passed through a 100 μm-cell strainer, then pre-incubated with rat anti-mouse CD16/CD32 coupled to Dynabeads to deplete immune cells. Endothelial cells were selected using rat anti-mouse VE-cadherin antibody-coated Dynabeads and biotinylated rat anti-mouse CD31 antibody-coated streptavidin-coupled beads. Cells were plated on gelatin-coated plates and maintained in high-glucose DMEM (10% FBS) until utilization the following day.
 
-## Metabolic assays
+### Metabolic assays
 
 Glucose uptake was assessed in freshly adipose-derived endothelial cells and in SMEC using Glucose Uptake-Glo Assay following manufacturer’s instructions. To examine the effects of Foxo1 depletion on the glycolytic capacity of endothelial cells, freshly isolated adipose-derived endothelial cells were incubated with high-glucose DMEM plus 10% dialyzed FBS for 32 hr. The effects of FoxO1 inhibition were examined in SMEC pre-treated with 1 µmol/L AS1842856 for 24 hr in high-glucose DMEM plus 0.1% FBS following incubation with high-glucose DMEM plus 10% dialyzed FBS for 32 hr. Glucose consumption and lactate production were determined in cell culture medium at different time points (0, 8 and 24 hr) using commercial kits.
 
-## Gene expression analysis
+### Gene expression analysis
 
 Total RNA was isolated from liver, skeletal muscle (plantaris), adipose tissue (BAT, eWAT and subcutaneous), adipose-derived endothelial cell and CD16/CD32 fractions and SMEC using RNeasy Mini Kit (Qiagen Inc.), reverse-transcribed and analyzed by real-time PCR on the Rotor-Gene Q platform (Qiagen Inc.) using Fast TaqMan Master Mix and TaqMan primer sets (listed in Supplementary file 2). Each target gene was calculated relative to Hprt1 or Actb levels and expressed as 2-ΔCt.
 
-## Data reporting and statistical analyses
+### Data reporting and statistical analyses
 
 All data reported are for independent biological replicates; each mouse being considered as one biological replicate. Averaged values were used when technical replicates (analysis of the same sample in duplicates) were performed. For in vitro assays, experiments were repeated at least three times and a sample size of ≥ 3 biological replicates was used. Samples or data points were excluded only in the case of a technical equipment or human error that caused a sample to be poorly controlled. Statistical analyses were performed using Prism 5 (GraphPad Software Inc.). Significance was established at p < 0.05, by unpaired Student’s t-test or 2-way ANOVA with Bonferroni post hoc tests, as appropriate. Data are shown as means ± SEM and P values are indicated in each Figure as *p < 0.05, **p < 0.01, ***p < 0.001.

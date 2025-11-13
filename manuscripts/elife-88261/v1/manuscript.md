@@ -22,20 +22,20 @@
 
 ### Affiliations
 
-1. https://ror.org/01pxwe438 Department of Psychiatry, McGill University Montréal Canada
-2. https://ror.org/05dk2r620 Douglas Mental Health University Institute Montréal Canada
-3. https://ror.org/01q1z8k08 Neuroscience Program, University at Buffalo SUNY United States
-4. https://ror.org/01pxwe438 Integrated Program in Neuroscience, McGill University Montreal Canada
-5. https://ror.org/01q1z8k08 Department of Psychology, University at Buffalo SUNY United States
-6. https://ror.org/01pbdzh19 Department of Biological Sciences, University of Toledo Toledo United States
-7. https://ror.org/01pxwe438 Department of Neurology and Neurosurgery, McGill University Montréal Canada
-8. https://ror.org/01pxwe438 Ludmer Centre for Neuroinformatics & Mental Health, McGill University Montréal Canada
+1. Department of Psychiatry, McGill University Montréal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+2. Douglas Mental Health University Institute Montréal Canada ([ROR:05dk2r620](https://ror.org/05dk2r620))
+3. Neuroscience Program, University at Buffalo SUNY United States ([ROR:01q1z8k08](https://ror.org/01q1z8k08))
+4. Integrated Program in Neuroscience, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+5. Department of Psychology, University at Buffalo SUNY United States ([ROR:01q1z8k08](https://ror.org/01q1z8k08))
+6. Department of Biological Sciences, University of Toledo Toledo United States ([ROR:01pbdzh19](https://ror.org/01pbdzh19))
+7. Department of Neurology and Neurosurgery, McGill University Montréal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+8. Ludmer Centre for Neuroinformatics & Mental Health, McGill University Montréal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
 
 † Corresponding author
 
 ## Abstract
 
-Dopamine axons are the only axons known to grow during adolescence. Here, using rodent models, we examined how two proteins, Netrin-1 and its receptor, UNC5C, guide dopamine axons toward the prefrontal cortex and shape behaviour. We demonstrate in mice ( Mus musculus ) that dopamine axons reach the cortex through a transient gradient of Netrin-1-expressing cells – disrupting this gradient reroutes axons away from their target. Using a seasonal model (Siberian hamsters; Phodopus sungorus ) we find that mesocortical dopamine development can be regulated by a natural environmental cue (daylength) in a sexually dimorphic manner – delayed in males, but advanced in females. The timings of dopamine axon growth and UNC5C expression are always phase-locked. Adolescence is an ill-defined, transitional period; we pinpoint neurodevelopmental markers underlying this period.
+Dopamine axons are the only axons known to grow during adolescence. Here, using rodent models, we examined how two proteins, Netrin-1 and its receptor, UNC5C, guide dopamine axons toward the prefrontal cortex and shape behaviour. We demonstrate in mice (Mus musculus) that dopamine axons reach the cortex through a transient gradient of Netrin-1-expressing cells – disrupting this gradient reroutes axons away from their target. Using a seasonal model (Siberian hamsters; Phodopus sungorus) we find that mesocortical dopamine development can be regulated by a natural environmental cue (daylength) in a sexually dimorphic manner – delayed in males, but advanced in females. The timings of dopamine axon growth and UNC5C expression are always phase-locked. Adolescence is an ill-defined, transitional period; we pinpoint neurodevelopmental markers underlying this period.
 
 ## Introduction
 
@@ -47,7 +47,7 @@ The prolonged growth trajectory renders mesocortical dopamine axons particularly
 
 Here, we examine the guidance of growing dopamine axons to the prefrontal cortex, and its timing. The guidance cue molecule Netrin-1, upon interacting with its receptor DCC, determines which dopamine axons establish connections in the nucleus accumbens and which ones leave this region to grow to the prefrontal cortex (Hoops and Flores, 2017; Reynolds and Flores, 2021; Reynolds et al., 2023). We hypothesised that the answers to how and when this extraordinary developmental feat is achieved may also lie in the Netrin-1 signalling system.
 
-## Part 1: Netrin-1 ‘paves the way’ for dopamine axons in adolescence
+### Part 1: Netrin-1 ‘paves the way’ for dopamine axons in adolescence
 
 To identify the route by which dopamine axons grow from the nucleus accumbens to the medial prefrontal cortex, we visualised dopamine axons in the adult mouse forebrain. We observed that dopamine axons medial to the nucleus accumbens occupy a distinct area and are oriented dorsally toward the cortex (Figure 1A and B). Individual fibres can be seen crossing the boundary of the nucleus accumbens shell and joining these dorsally oriented axons (Figure 1C). We hypothesised that these are the fibres that grow to the prefrontal cortex during adolescence. If this is correct, the number of dopamine axons oriented dorsally toward the medial prefrontal cortex should continue to increase until adulthood. To test this, we used a modified unbiased stereological approach (Kim et al., 2011) where axons are counted only if they crossed the upper and lower bounds of a counting probe. We also measured the average width of the area these axons occupy. We found, in both male and female mice, that the density of dopamine axons does not change between adolescence (21 days of age) and adulthood (75 days of age; Figure 1D). However, the width of the area that dopamine axons occupy does change, increasing between adolescence and adulthood (Figure 1E). These results indicate that the total number of dopamine axons passing through this area increases over adolescence and that dopamine axons grow to the medial prefrontal cortex via this route.
 
@@ -67,7 +67,7 @@ At the onset of adolescence, we injected the Netrin-1 silencing, or a scrambled 
 
 Mice injected with the Netrin-1 silencing virus differed from controls in their performance during ‘No-Go’ trials. As the mice learn to withhold their responses over the course of the test, the number of commission errors they made in No-Go trials decreased in a sigmoidal fashion (Figure 1N). The upper and lower asymptotes of the sigmoidal curve quantify the number of commission errors committed during early and late test days, respectively, while the inflection point (ED50) indicates when mice start improving their ability to inhibit their behaviour. At the start of the Go/No part of the task, the Netrin-1 silencing group make slightly fewer commission errors (Figure 1O) than control groups, although both groups begin to improve in the No-Go task at around the same time (Figure 1P). However, the Netrin-1 silencing group achieved a substantially higher level of behavioural inhibition, quantified as a lower percentage of commission errors in the last test days (Figure 1Q), indicating an improved ability to withhold their behaviour on cue. These behavioural results demonstrate that the maturation of action impulsivity is sensitive to the organisation of the ventro-dorsal Netrin-1 path that guides mesocortical dopamine axon growth. Deviations in this route associate with striking changes in the cognitive development that is characteristic of adolescence. In this case, the deviation leads to improved action impulsivity, suggesting that these dopamine axons may end up ectopically innervating a forebrain region other than the medial prefrontal cortex, enhancing cognitive control.
 
-## Part 2: UNC5C expression coincides with the onset of adolescence
+### Part 2: UNC5C expression coincides with the onset of adolescence
 
 When axons leave the nucleus accumbens during adolescence, they follow a Netrin-1 ‘path’ through intermediate brain regions to reach their intended innervation target. However, only a small subset of the dopamine axons that have reached the nucleus accumbens by early adolescence leave; the vast majority stay and form connections in the accumbens throughout life (Reynolds et al., 2018). The ‘decision-making’ process of whether to ‘stay’ (in the accumbens) or ‘go’ (to the cortex via the Netrin-1 path) happens during a narrow developmental window at the onset of adolescence (Reynolds et al., 2019). It remains unknown how the timing of this process is determined.
 
@@ -79,7 +79,7 @@ Using immunohistochemistry, we assessed the expression of UNC5C on nucleus accum
 
 **Figure 2.:** Images are representative of observed immunofluorescence patterns in the nucleus accumbens (approx. location highlighted as a white square in the coronal mouse brain section plate 19, modified from Paxinos and Franklin, 2013). No qualitative differences were noted between the shell and core of the nucleus accumbens. For each row, six individuals were sampled. In males (A–B), UNC5C expression on dopamine fibres (here identified by immunofluorescent staining for tyrosine hydroxylase [TH]) in the nucleus accumbens appears during adolescence. (A) At the onset of adolescence (21 days of age) dopamine fibres do not express UNC5C. Scale bar = 10 μm. (B) By adulthood (90 days of age), dopamine fibres express UNC5C. In females (C–E), UNC5C expression on dopamine fibres in the nucleus accumbens appears prior to adolescence. (C) In juvenile (15 days of age) mice, there is no UNC5C expression on dopamine fibres. (D) By adolescence, dopamine fibres express UNC5C. (E) In adulthood, dopamine fibres continue to express UNC5C.
 
-## Part 3: Environmental control of the timing of adolescence
+### Part 3: Environmental control of the timing of adolescence
 
 We hypothesise that at the emergence of adolescence, UNC5C expression by dopamine axons in the nucleus accumbens signals the initiation of the growth of dopamine axons to the prefrontal cortex. We therefore examined whether the developmental timings of UNC5C expression and dopamine innervation of the prefrontal cortex are similarly affected by an environmental cue known to delay pubertal development in seasonal species.
 
@@ -87,7 +87,7 @@ Siberian hamsters (Phodopus sungorus) regulate many aspects of their behaviour a
 
 Here, we tested whether daylength regulates when dopamine axons grow to the cortex, and whether the timing of UNC5C expression in the nucleus accumbens and adolescent changes in behaviour are similarly affected.
 
-## The seasonality of adolescence
+#### The seasonality of adolescence
 
 Male hamsters were examined at three ages: 15 days of age (±1), 80 days of age (±10), and 215 days of age (±20). We compared the density of the dopamine innervation to the medial prefrontal cortex in male hamsters housed under lighting conditions that replicate summer daylengths (long days, short nights) or winter daylengths (short days, long nights) (Figure 3A and B). We will refer to these two groups as ‘summer hamsters’ and ‘winter hamsters’ to emphasise the natural stimulus we are replicating in the laboratory environment. We confirmed that puberty is delayed in male winter hamsters compared to summer hamsters in the present experiment by measuring their gonadal weights across ages (Appendix 1 - Supplementary Analysis 5).
 
@@ -107,7 +107,7 @@ We next assessed a cohort of 215-day-old hamsters, for which both summer and win
 
 We also examined a second behaviour, novel object investigation. We note similar, but not identical, developmental patterns in behaviour. Both male summer and winter hamsters show peaks in novel object exploration around 50 days old, however the developmental shifts in behaviour around that peak are significantly more substantial in the summer males compared to the winter males (Appendix 1 - Supplementary Analysis 8). In 215-day-old hamsters, there is no difference in novel object exploration between summer and winter males (Appendix 1 - Supplementary Analysis 9).
 
-## An extraordinary case of decoupling puberty and adolescence
+#### An extraordinary case of decoupling puberty and adolescence
 
 In parallel with males, we conducted equivalent experiments in female hamsters (Figure 4A and B). Under a summer-mimicking daylength, dopamine innervation to the medial prefrontal cortex increases between 15 and 80 days of age, similar to male summer hamsters (Figure 4C). There is no further increase in innervation density after 80 days of age, consistent with earlier adolescent development in females observed in other rodent species (Juraska and Willing, 2017; Kopec et al., 2018; Reynolds and Flores, 2021; Spear, 2000; Westbrook et al., 2018). We confirmed that puberty is delayed in female winter hamsters compared to summer hamsters by measuring their uterine weights (Appendix 1 - Supplementary Analysis 6) and vaginal opening (Appendix 1 - Supplementary Analysis 7) across ages.
 
@@ -127,7 +127,7 @@ We used the light/dark box test to examine potential risk-taking implications of
 
 In both sexes, hamsters housed under a summer-mimicking daylength showed an adolescent peak in risk taking at an age that we would predict based on results from other rodents (Arrant et al., 2013; Pietropaolo et al., 2004; Tanaka, 2015). When raised under a winter-mimicking daylength, hamsters of either sex show a protracted peak in risk taking. In males, it is delayed beyond 80 days of age, but the delay is substantially less in females. This is a counterintuitive finding considering that dopamine development in winter females appears to be accelerated. Our interpretation of this finding is that the timing of the risk-taking peak in females may reflect a balance between different adolescent developmental processes. The fact that dopamine axon growth is accelerated does not imply that all adolescent maturational processes are accelerated. Some may be delayed, e.g., those that induce axon pruning in the cortex. The timing of the risk-taking peak in winter female hamsters may therefore reflect the amalgamation of developmental processes that are advanced with those that are delayed – producing a behavioural effect that is timed somewhere in the middle. Disentangling the effects of different developmental processes on behaviour will require further experiments in hamsters, including the direct manipulation of dopamine activity in the nucleus accumbens and prefrontal cortex.
 
-## Conclusion
+### Conclusion
 
 Here, we describe how the gradual growth of mesocortical dopamine axons marks adolescent development, and how this process uses guidance cues and is sensitive to sex and environment. Netrin-1 signalling provides the ‘stay-or-go’ ‘decision making’ conducted by dopamine axons that innervate the nucleus accumbens at the onset of adolescence (Cuesta et al., 2020; Reynolds et al., 2023). UNC5C expression by these dopamine axons marks the timing at which this decision is made. In mice, UNC5C expression coincides with sex differences in both adolescent and pubertal development. Females, which develop earlier, show earlier UNC5C expression in dopamine axons compared to males.
 
@@ -137,17 +137,17 @@ In both mice and hamsters, the emergence of UNC5C expression coincides with the 
 
 ## Methods
 
-## Animals
+### Animals
 
 All mouse (Mus musculus) experiments and procedures were performed in accordance with the guidelines of the Canadian Council of Animal Care and the McGill University/Douglas Hospital Research Centre Animal Care Committee. All mice were received from Charles River Canada and housed with same-sex littermates on a 12 hr light/dark cycle with ad libitum access to food and water. We used male mice for these experiments.
 
 All Siberian hamster (P. sungorus) experiments and procedures were approved by the University at Buffalo, SUNY Institutional Animal Care and Use Committee. Hamsters were obtained from our colony (MJP), which was originally derived from animals generously provided by Dr. Brian Prendergast, University of Chicago, in 2015. Hamsters were housed with same-sex littermates in well-ventilated, light-proof environmental housing units that provided either a summer-mimicking long-day photoperiod (14:10 hr light:dark cycle) or a winter-mimicking short-day photoperiod (10:14 hr light:dark cycle); dim red light was present during the dark phase. Food and water were available ad libitum. Both male and female mice were used for these experiments.
 
-## Tissue processing
+### Tissue processing
 
 Rodents were euthanised with an intraperitoneal injection of 50 mg/kg ketamine, 5 mg/kg xylazine, and 1 mg/kg acepromazine. They were then perfused intracardially with 10 IU/mL heparinised saline (mice) or physiological saline (hamsters) followed by 4% paraformaldehyde. Both perfused solutions were pH-adjusted to between 7.2 and 7.4 with dilute hydrochloric acid and sodium hydroxide. After perfusion, brains were dissected from the skull, placed in fixative solution overnight at 4°C and then stored in phosphate-buffered saline at 4°C. Brains were cut coronally into 30 µm (hamster) or 35 µm (mouse) thick sections on a vibratome.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Every second section (mouse) or third section (hamster) was processed for immunofluorescence as we have described previously (Salameh et al., 2018).
 
@@ -165,7 +165,7 @@ In all immunochemistry experiments we stain for TH as a marker for dopamine in o
 
 After immunofluorescence staining, sections were mounted on gel-coated slides and cover-slipped with a fluorescence-preserving mounting medium (‘Vectashield’ branded media, Vector Laboratories). Sections were either stained with DAPI prior to mounting or mounted with a DAPI-containing medium.
 
-## Stereological analyses
+### Stereological analyses
 
 For all experiments, contours were delineated on sections corresponding to plates 13–22 of the mouse brain atlas (Paxinos and Franklin, 2013) or plates 10–14 of the hamster brain atlas (Morin and Wood, 2001). The brain regions along the dopamine axon route from the nucleus accumbens to the prefrontal cortex consist of the lateral septum, dorsal peduncular cortex, and infralimbic cortex; the latter being the first medial prefrontal cortex subregion encountered along this route. The subregions of the medial prefrontal cortex in which dopamine varicosities were quantified in this study are the infralimbic cortex, prelimbic cortex, and anterior cingulate cortex. All regions were examined only anterior to the genu of the corpus callosum. Counting was conducted bilaterally in mice and in the left hemisphere in hamsters.
 
@@ -175,7 +175,7 @@ Netrin-1-positive cell bodies were used as the counting unit to examine Netrin-1
 
 TH-positive varicosities were used as the counting unit to obtain a measure of dopamine presynaptic density because nearly every dopamine varicosity in the prefrontal cortex forms a synapse (Séguéla et al., 1988). Varicosities also represent sites where neurotransmitter synthesis, packaging, release, and reuptake most often occur (Benes et al., 1996). Stereology was conducted as previously described (Manitt et al., 2011; Reynolds et al., 2022). Contours of the dense TH-positive innervation in the medial prefrontal cortex were traced at ×5 magnification using a Leica DM400B microscope and StereoInvestigator software. To determine the number of TH-positive varicosities, we used the optical fractionator probe function of StereoInvestigator with a grid of 175 µm2, a counting frame of 25 µm2, a counting depth of 10 µm, and a guard zone of 5 µm. Counting was conducted at ×100 magnification using the standard counting protocol for quantifying discrete objects (‘particle stereology’; Howard and Reed, 2005). Counts were performed blind by one individual per experiment (DH, AH, TO, or AD depending on the experiment). To determine the volume of each subregion we used the Cavalieri method in StereoInvestigator (Howard and Reed, 2005). The coefficient of error was below 0.1 for all measures. Varicosity density was determined by dividing the total count of varicosities by the volume of the subregion.
 
-## Stereotaxic surgery
+### Stereotaxic surgery
 
 To experimentally knock down Netrin-1 along the dopamine axon route from the nucleus accumbens to the medial prefrontal cortex, we injected a Netrin-1 shRNA-expressing lentivirus or a scrambled control virus into the dorsal peduncular cortex.
 
@@ -183,7 +183,7 @@ Pre-designed and validated siRNA sequences (Ambion) were used to create shRNA (s
 
 21-day-old mice were anaesthetised with isoflurane (5% for induction and 2% for maintenance) and placed in a stereotaxic apparatus. Using Hamilton syringes, the shRNA-expressing lentivirus, or the lentivirus expressing the scrambled control sequence, were microinfused bilaterally into the dorsal peduncular cortices stereotaxically using the coordinates: +2.00 mm anterior/posterior, –0.05 mm medial/lateral, and −3.45 mm dorsal/ventral relative to Bregma. A total of 0.5 µL of purified virus was delivered on each side at an injection rate of 0.08 µL/min, which was then followed by a 3 min pause to allow of the virus to diffuse away from the syringe before the syringe was retracted. For anatomical experiments, the Netrin-1 knockdown and scrambled control viruses were injected into the left and right hemispheres, with the type of virus injected into each hemisphere determined randomly. For behavioural experiments, the same virus was injected into both hemispheres.
 
-## Behaviour – Go/No-Go
+### Behaviour – Go/No-Go
 
 We used the Go/No-Go task to measure inhibitory control, as we have described previously (; Reynolds et al., 2018; Reynolds et al., 2023). The mice used for this experiment were adults (75±15 days of age at the beginning of the experiment) which had been stereotaxically injected with a Netrin-1 inhibiting or control virus at the onset of adolescence (see previous section).
 
@@ -197,7 +197,7 @@ After training, mice underwent 10 daily sessions of the Go/No-Go task. This task
 
 We quantified three measures from the Go/No-Go test data. Commission errors were our measure of inhibitory control. A commission error occurs when a mouse nose-pokes during a ‘No-Go’ trial, when the cue light is illuminated concurrently with the 80 dB tone. We also quantified omission errors, which are when a mouse fails to nose-poke during a ‘Go’ trial, when the cue light is illuminated in the absence of the tone. Finally, we calculated the correct response rate, which is the number of ‘Go’ trials where the mouse nose-pokes while the cue light is illuminated plus the number of ‘No-Go’ trials where the mouse does not nose-poke while the cue light is illuminated. All three measures are analysed as proportions of the total number of trials presented each test day.
 
-## Behaviour – light/dark box
+### Behaviour – light/dark box
 
 In hamsters, we used the light/dark box test, as we’ve described previously (Kyne et al., 2019). We used operant behavioural boxes consisting of two compartments: one with illumination from a house light (the light compartment; 40.0 cm × 39.9 cm × 31.2  cm) and one without illumination (the dark compartment; 38.9 cm × 12.7 cm × 15.2  cm). The compartments were separated by barrier with an opening that could be blocked by a metal door.
 
@@ -205,6 +205,6 @@ For each session, a hamster placed inside the dark compartment of the apparatus 
 
 The hamsters were recorded by a camera mounted above the boxes using Media Recorder 4 software (Noldus Information Technology Inc, Wageningen, The Netherlands). Scoring was done automatically using EthoVision XT10 software (Noldus Information Technology Inc, Wageningen, The Netherlands).
 
-## Statistical analyses
+### Statistical analyses
 
 Detailed statistical explanations for each analysis are presented in our Statistics Supplement. All analyses were conducted in the statistical programming language R (R Development Core Team, 2014). For all analyses our significance threshold was set at p=0.05.

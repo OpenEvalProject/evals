@@ -42,7 +42,7 @@
 
 ## Abstract
 
-10.7554/eLife.04395.001 Ebola virus disease (EVD) is a complex zoonosis that is highly virulent in humans. The largest recorded outbreak of EVD is ongoing in West Africa, outside of its previously reported and predicted niche. We assembled location data on all recorded zoonotic transmission to humans and Ebola virus infection in bats and primates (1976–2014). Using species distribution models, these occurrence data were paired with environmental covariates to predict a zoonotic transmission niche covering 22 countries across Central and West Africa. Vegetation, elevation, temperature, evapotranspiration, and suspected reservoir bat distributions define this relationship. At-risk areas are inhabited by 22 million people; however, the rarity of human outbreaks emphasises the very low probability of transmission to humans. Increasing population sizes and international connectivity by air since the first detection of EVD in 1976 suggest that the dynamics of human-to-human secondary transmission in contemporary outbreaks will be very different to those of the past. DOI: http://dx.doi.org/10.7554/eLife.04395.001
+Ebola virus disease (EVD) is a complex zoonosis that is highly virulent in humans. The largest recorded outbreak of EVD is ongoing in West Africa, outside of its previously reported and predicted niche. We assembled location data on all recorded zoonotic transmission to humans and Ebola virus infection in bats and primates (1976–2014). Using species distribution models, these occurrence data were paired with environmental covariates to predict a zoonotic transmission niche covering 22 countries across Central and West Africa. Vegetation, elevation, temperature, evapotranspiration, and suspected reservoir bat distributions define this relationship. At-risk areas are inhabited by 22 million people; however, the rarity of human outbreaks emphasises the very low probability of transmission to humans. Increasing population sizes and international connectivity by air since the first detection of EVD in 1976 suggest that the dynamics of human-to-human secondary transmission in contemporary outbreaks will be very different to those of the past.
 
 ## Introduction
 
@@ -52,13 +52,236 @@ The Filoviridae, of which Ebolavirus is a constituent genus, belong to the order
 
 Initial analysis suggested that the viruses isolated from the current outbreak, originating in Guinea, formed a separate clade within the five Ebolavirus species (Baize et al., 2014). Subsequent re-analysis of the same sequences however, indicated that these isolates instead nest within the Zaire ebolavirus lineage (Dudas and Rambaut, 2014), and diverged from Central Africa strains approximately ten years ago (Gire et al., 2014).
 
-Which reservoir species are responsible for maintaining Ebola transmission between outbreaks is not well understood (
+Which reservoir species are responsible for maintaining Ebola transmission between outbreaks is not well understood (Peterson et al., 2004b), but over the last decade significant progress has been made in narrowing down the list of likely hosts (Peterson et al., 2007) (Figure 1). Primates have long been known to harbour filoviral infections, with the first Marburg strains identified in African green monkeys in 1967 (Siegert et al., 1967; Beer et al., 1999). Significant mortality has also been reported in wild primate populations across Africa, most notably in gorilla (Gorilla gorilla) and chimpanzee (Pan troglodytes) populations (Formenty et al., 1999; Rouquet et al., 2005; Bermejo et al., 2006). The high case fatality rates recorded in the great apes combined with their declining populations and limited geographical range, indicate they are likely dead-end hosts for the virus and not reservoir species (Groseth et al., 2007). A large survey of small mammals in and around Gabon identified three species of bats which were infected with Ebola viruses—Hypsignathus monstrosus, Epomops franqueti and Myonycetris torquata (Leroy et al., 2005). Subsequent serological surveys (Pourrut et al., 2009; Hayman et al., 2010) and evidence linking the potential source of human outbreaks to bats (Leroy et al., 2009) lend support to the hypothesis of a bat reservoir. This, coupled with repeated detection of Marburgvirus in the fruit bat Rousettus aegypticus (Towner et al., 2009) and the only isolations of Cuevavirus also from bats (specifically Llovia virus [Negredo et al., 2011]), all support the suspicion that Chiroptera play an important role in the natural life-cycle of the filoviruses.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/04395/elife-04395-fig1-v2.jpg)
 
-**Figure 1.:** Of the suspected reservoir species, 1, 2 and 3 represent the three bat species from which Ebola virus has been isolated (Hypsignathus monstrosus, Myonycteris torquata and Epomops franqueti) and n represents unknown reservoirs of the disease yet to be discovered. Of the susceptible species, A represents Pan troglodytes, B Gorilla gorilla and m represents other organisms susceptible to the disease, such as duikers. H represents humans. Blue arrows indicate unknown transmission cycles or infection routes and red arrow routes have been confirmed or are suspected. Adapted from Groseth et al. (2007).DOI: http://dx.doi.org/10.7554/eLife.04395.003
+**Figure 1.:** Of the suspected reservoir species, 1, 2 and 3 represent the three bat species from which Ebola virus has been isolated (Hypsignathus monstrosus, Myonycteris torquata and Epomops franqueti) and n represents unknown reservoirs of the disease yet to be discovered. Of the susceptible species, A represents Pan troglodytes, B Gorilla gorilla and m represents other organisms susceptible to the disease, such as duikers. H represents humans. Blue arrows indicate unknown transmission cycles or infection routes and red arrow routes have been confirmed or are suspected. Adapted from Groseth et al. (2007).
 
-Humans represent a dead-end host for the virus, with only stuttering chains of transmission reported between humans in the majority of previous outbreaks (Chowell et al., 2004; Legrand et al., 2007) and no indication that humans can reintroduce the virus back into reservoir species (Karesh et al., 2012). The incubation period in humans ranges from two days to three weeks, after which a variety of clinical symptoms arise, affecting multiple organs of the body. At the peak of illness, haemorrhaging shock and widespread tissue damage can occur and can eventually lead to death within 6–16 days (Feldmann and Geisbert, 2011). Human-to-human transmission is mainly through direct unprotected contact with infected individuals and cadavers, with infectious particles detected in a number of different body fluids (Feldmann and Geisbert, 2011). The typical outbreak profile is defined by an index individual that has recently come into contact with the blood of another mammal through either hunting or the butchering of animal carcasses (Pourrut et al., 2005). Whilst it has been difficult to identify the zoonotic source for the index cases of some outbreaks, a recurring theme of hunting and handling bushmeat is suspected (Table 1; Boumandouki et al., 2005; Nkoghe et al., 2005, 2011; Leroy et al., 2009). For some outbreaks, including the most recent, the initial source of zoonotic transmission has not been identified. In subsequent human-to-human transmission, the highest risk activities are those that bring humans into close contact with infected individuals. These include medical settings where insufficient infection control precautions have been taken, as well as home care and funeral preparations carried out by families or close friends (Baron et al., 1983; Georges et al., 1999; Boumandouki et al., 2005). As the conditions required for transmission are culturally and contextually dependent, opportunities for sustained transmission are highly heterogeneously distributed. Typically, chains of infection do not exceed three or four sequential transmission events, although occasionally (and particularly in the early stages of infection) a single individual may be responsible for directly infecting a large number of others (Brady et al., 2014). In the outbreak in Gabon in 1996, a single person was responsible for infecting ten other individuals (Milleliri et al., 2004) whilst in the 1995 outbreak in the DRC, thirty five cases resulted from one individual (Khan et al., 1999). Secondary transmission can be restricted by effective case detection and isolation measures (Shoemaker et al., 2012; WHO, 2014c). Where this cannot be achieved, either due to a lack of infrastructure, poor understanding of the disease, or distrust of medical practices, secondary cases can continue to occur (Khan et al., 1999; Larkin, 2003; Hewlett et al., 2005). As the number of infections grows, the ability of healthcare systems to control the further spread diminishes and the risk of a large outbreak increases.10.7554/eLife.04395.004Table 1.Locations of outbreaks of Ebola virus disease in humansDOI: http://dx.doi.org/10.7554/eLife.04395.004OutbreakCountriesDate rangeLocationSpeciesReference1South SudanJun–Nov 1976NzaraSUDV(WHO International Study Team, 1978)2DRCSep–Oct 1976YambukuEBOV(International Commission, 1978)3DRCJun 1977BonduniEBOV(Heymann et al., 1980)4South SudanJul–Oct 1979NzaraSUDV(Baron et al., 1983)5Côte d’IvoireNov 1994Tai ForestTAFV(Le Guenno et al., 1995; Formenty et al., 1999)6GabonNov 1994–Feb 1995Mekouka and Andock mining campsEBOV(Amblard et al., 1997; Georges et al., 1999; Milleliri et al., 2004)7DRCJan–Jul 1995Mwembe ForestEBOV(Muyembe and Kipasa, 1995; Khan et al., 1999)8GabonJan–Mar 1996Mayibout 2EBOV(Georges et al., 1999; Milleliri et al., 2004)9GabonJul 1996–Jan 1997BooueEBOV(Georges et al., 1999; Milleliri et al., 2004)10UgandaOct 2000–Feb 2001Rwot-ObilloSUDV(WHO, 2001; Okware et al., 2002; Lamunu et al., 2004)11Gabon & ROCOct 2001–Mar 2002Memdemba Entsiami, Abolo and AmbomiEBOV(WHO, 2003; Milleliri et al., 2004; Nkoghe et al., 2005; Pourrut et al., 2005)EkataOlobaEtakangayeGrand Etoumbi12ROCDec 2002–Apr 2003YembelangoyeEBOV(WHO, 2003; Pourrut et al., 2005)Nearby hunting campMvoula13ROCOct–Dec 2003MbandzaEBOV(Boumandouki et al., 2005)14South SudanApr–Jun 2004Forests bordering YambioSUDV(WHO, 2005; Onyango et al., 2007)15ROCApr–May 2005Odzala National ParkEBOV(Nkoghe et al., 2011)16DRCMay–Nov 2007Mombo Mounene 2 marketEBOV(Leroy et al., 2009)17UgandaAug–Dec 2007KabangoBDBV(Towner et al., 2008; MacNeil et al., 2010; Wamala et al., 2010)18DRCNov 2008–Feb 2009LueboEBOV(Grard et al., 2011)19UgandaMay 2011NakisamataSUDV(Shoemaker et al., 2012)20DRCJuly–Nov 2012IsiroBDBV(CDC, 2014; WHO, 2012b)21UgandaJuly–Oct 2012NyanswigaSUDV(CDC, 2014; WHO, 2012a)22UgandaNov 2012–Jan 2013Luwero DistrictSUDV(WHO, 2012c; CDC, 2014)23GuineaDec 2013 -MeliandouEBOV(Baize et al., 2014; Bausch and Schwarz, 2014)DRC = Democratic Republic of the Congo, ROC = Republic of Congo.
+Humans represent a dead-end host for the virus, with only stuttering chains of transmission reported between humans in the majority of previous outbreaks (Chowell et al., 2004; Legrand et al., 2007) and no indication that humans can reintroduce the virus back into reservoir species (Karesh et al., 2012). The incubation period in humans ranges from two days to three weeks, after which a variety of clinical symptoms arise, affecting multiple organs of the body. At the peak of illness, haemorrhaging shock and widespread tissue damage can occur and can eventually lead to death within 6–16 days (Feldmann and Geisbert, 2011). Human-to-human transmission is mainly through direct unprotected contact with infected individuals and cadavers, with infectious particles detected in a number of different body fluids (Feldmann and Geisbert, 2011). The typical outbreak profile is defined by an index individual that has recently come into contact with the blood of another mammal through either hunting or the butchering of animal carcasses (Pourrut et al., 2005). Whilst it has been difficult to identify the zoonotic source for the index cases of some outbreaks, a recurring theme of hunting and handling bushmeat is suspected (Table 1; Boumandouki et al., 2005; Nkoghe et al., 2005, 2011; Leroy et al., 2009). For some outbreaks, including the most recent, the initial source of zoonotic transmission has not been identified. In subsequent human-to-human transmission, the highest risk activities are those that bring humans into close contact with infected individuals. These include medical settings where insufficient infection control precautions have been taken, as well as home care and funeral preparations carried out by families or close friends (Baron et al., 1983; Georges et al., 1999; Boumandouki et al., 2005). As the conditions required for transmission are culturally and contextually dependent, opportunities for sustained transmission are highly heterogeneously distributed. Typically, chains of infection do not exceed three or four sequential transmission events, although occasionally (and particularly in the early stages of infection) a single individual may be responsible for directly infecting a large number of others (Brady et al., 2014). In the outbreak in Gabon in 1996, a single person was responsible for infecting ten other individuals (Milleliri et al., 2004) whilst in the 1995 outbreak in the DRC, thirty five cases resulted from one individual (Khan et al., 1999). Secondary transmission can be restricted by effective case detection and isolation measures (Shoemaker et al., 2012; WHO, 2014c). Where this cannot be achieved, either due to a lack of infrastructure, poor understanding of the disease, or distrust of medical practices, secondary cases can continue to occur (Khan et al., 1999; Larkin, 2003; Hewlett et al., 2005). As the number of infections grows, the ability of healthcare systems to control the further spread diminishes and the risk of a large outbreak increases.
+
+**Table 1.**
+ Locations of outbreaks of Ebola virus disease in humans
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Outbreak</th>
+      <th>Countries</th>
+      <th>Date range</th>
+      <th>Location</th>
+      <th>Species</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>South Sudan</td>
+      <td>Jun–Nov 1976</td>
+      <td>Nzara</td>
+      <td>SUDV</td>
+      <td>(WHO International Study Team, 1978)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>DRC</td>
+      <td>Sep–Oct 1976</td>
+      <td>Yambuku</td>
+      <td>EBOV</td>
+      <td>(International Commission, 1978)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>DRC</td>
+      <td>Jun 1977</td>
+      <td>Bonduni</td>
+      <td>EBOV</td>
+      <td>(Heymann et al., 1980)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>South Sudan</td>
+      <td>Jul–Oct 1979</td>
+      <td>Nzara</td>
+      <td>SUDV</td>
+      <td>(Baron et al., 1983)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Côte d’Ivoire</td>
+      <td>Nov 1994</td>
+      <td>Tai Forest</td>
+      <td>TAFV</td>
+      <td>(Le Guenno et al., 1995; Formenty et al., 1999)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Gabon</td>
+      <td>Nov 1994–Feb 1995</td>
+      <td>Mekouka and Andock mining camps</td>
+      <td>EBOV</td>
+      <td>(Amblard et al., 1997; Georges et al., 1999; Milleliri et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>DRC</td>
+      <td>Jan–Jul 1995</td>
+      <td>Mwembe Forest</td>
+      <td>EBOV</td>
+      <td>(Muyembe and Kipasa, 1995; Khan et al., 1999)</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Gabon</td>
+      <td>Jan–Mar 1996</td>
+      <td>Mayibout 2</td>
+      <td>EBOV</td>
+      <td>(Georges et al., 1999; Milleliri et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Gabon</td>
+      <td>Jul 1996–Jan 1997</td>
+      <td>Booue</td>
+      <td>EBOV</td>
+      <td>(Georges et al., 1999; Milleliri et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Uganda</td>
+      <td>Oct 2000–Feb 2001</td>
+      <td>Rwot-Obillo</td>
+      <td>SUDV</td>
+      <td>(WHO, 2001; Okware et al., 2002; Lamunu et al., 2004)</td>
+    </tr>
+    <tr>
+      <td rowspan="5">11</td>
+      <td rowspan="5">Gabon &amp; ROC</td>
+      <td rowspan="5">Oct 2001–Mar 2002</td>
+      <td>Memdemba Entsiami, Abolo and Ambomi</td>
+      <td rowspan="5">EBOV</td>
+      <td rowspan="5">(WHO, 2003; Milleliri et al., 2004; Nkoghe et al., 2005; Pourrut et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>Ekata</td>
+    </tr>
+    <tr>
+      <td>Oloba</td>
+    </tr>
+    <tr>
+      <td>Etakangaye</td>
+    </tr>
+    <tr>
+      <td>Grand Etoumbi</td>
+    </tr>
+    <tr>
+      <td rowspan="3">12</td>
+      <td rowspan="3">ROC</td>
+      <td rowspan="3">Dec 2002–Apr 2003</td>
+      <td>Yembelangoye</td>
+      <td rowspan="3">EBOV</td>
+      <td rowspan="3">(WHO, 2003; Pourrut et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>Nearby hunting camp</td>
+    </tr>
+    <tr>
+      <td>Mvoula</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>ROC</td>
+      <td>Oct–Dec 2003</td>
+      <td>Mbandza</td>
+      <td>EBOV</td>
+      <td>(Boumandouki et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>South Sudan</td>
+      <td>Apr–Jun 2004</td>
+      <td>Forests bordering Yambio</td>
+      <td>SUDV</td>
+      <td>(WHO, 2005; Onyango et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>ROC</td>
+      <td>Apr–May 2005</td>
+      <td>Odzala National Park</td>
+      <td>EBOV</td>
+      <td>(Nkoghe et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>DRC</td>
+      <td>May–Nov 2007</td>
+      <td>Mombo Mounene 2 market</td>
+      <td>EBOV</td>
+      <td>(Leroy et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Uganda</td>
+      <td>Aug–Dec 2007</td>
+      <td>Kabango</td>
+      <td>BDBV</td>
+      <td>(Towner et al., 2008; MacNeil et al., 2010; Wamala et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>DRC</td>
+      <td>Nov 2008–Feb 2009</td>
+      <td>Luebo</td>
+      <td>EBOV</td>
+      <td>(Grard et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Uganda</td>
+      <td>May 2011</td>
+      <td>Nakisamata</td>
+      <td>SUDV</td>
+      <td>(Shoemaker et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>DRC</td>
+      <td>July–Nov 2012</td>
+      <td>Isiro</td>
+      <td>BDBV</td>
+      <td>(CDC, 2014; WHO, 2012b)</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Uganda</td>
+      <td>July–Oct 2012</td>
+      <td>Nyanswiga</td>
+      <td>SUDV</td>
+      <td>(CDC, 2014; WHO, 2012a)</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Uganda</td>
+      <td>Nov 2012–Jan 2013</td>
+      <td>Luwero District</td>
+      <td>SUDV</td>
+      <td>(WHO, 2012c; CDC, 2014)</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Guinea</td>
+      <td>Dec 2013 -</td>
+      <td>Meliandou</td>
+      <td>EBOV</td>
+      <td>(Baize et al., 2014; Bausch and Schwarz, 2014)</td>
+    </tr>
+  </tbody>
+</table>
+
+_DRC = Democratic Republic of the Congo, ROC = Republic of Congo._
 
 The recent outbreak in Guinea and surrounding countries indicate that the previous paradigm for Ebola outbreaks is shifting (Briand et al., 2014; Chan, 2014). The last 40 years of EVD outbreaks were accompanied by considerable changes in demographic patterns throughout Africa. There has been a large increase in population size coupled with increasing urbanisation (Cohen, 2004; Seto et al., 2012; Linard et al., 2013). African populations have also become better connected internally and internationally (Linard et al., 2012; Huang and Tatem, 2013). Only recently have we begun to understand the dynamic nature of these travel patterns (Garcia et al., 2014; Gonzalez et al., 2008; Simini et al., 2012; Wesolowski et al., 2013, 2012) which have been clearly demonstrated to influence disease transmission over different temporal and spatial scales (Hufnagel et al., 2004; Yang et al., 2008; Stoddard et al., 2009; Talbi et al., 2010; Brockmann and Helbing, 2013; Pindolia et al., 2014). Changes in land use and penetration into previously remote areas of rainforest bring humans into contact with potential new reservoirs (Daszak, 2000), while changes in human mobility and connectivity will likely have profound impacts on the dispersion of Ebola cases during outbreaks. These conditions are thought to have a major role in setting the stage for the current outbreak.
 
@@ -68,85 +291,566 @@ Previous studies applied the GARP (Genetic Algorithm for Rule-set Production) sp
 
 ## Results
 
-## Reported EVD outbreaks
+### Reported EVD outbreaks
 
-In total, 23 outbreaks of Ebola virus were identified in humans across Africa, consisting of a hypothesised 30 independent primary infection events (
+In total, 23 outbreaks of Ebola virus were identified in humans across Africa, consisting of a hypothesised 30 independent primary infection events (Table 1; Figure 2). These outbreaks span the last 40 years from the first outbreaks in 1976 to the five outbreaks that have occurred since 2010 (Table 1). The locations of the index cases span from West Africa, with the most westerly outbreak ongoing in Guinea, to Gabon, the Republic of Congo (ROC), the DRC, South Sudan and Uganda. Before December 2013, a total of 2322 cases had occurred from Ebolavirus infections, a number already overtaken by the likely underreported current case count of the ongoing outbreak >2250 (WHO, 2014a) (Figure 2A). Of the four viruses circulating in Africa, Zaire ebolavirus has been responsible for the most outbreaks (13), followed by Sudan ebolavirus (7) and Bundigbuyo ebolavirus with just two outbreaks in 2007/8 and 2012. Tai Forest has caused one confirmed infection in humans, from which the patient recovered (Le Guenno et al., 1995; Formenty et al., 1999). Although outbreaks have been reported since 1976, there was an absence of reported outbreaks in humans for 15 years between 1979 and 1994 (although antibodies in humans were identified over the period [Kuhn, 2008]) and the frequency of outbreaks has increased substantially post 2000 (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/04395/elife-04395-fig2-v2.jpg)
 
-**Figure 2.:** (A) Illustrates the 23 reported outbreaks of Ebola virus disease through time, with the area of each circle and its position along the y-axis representing the number of cases. The onset year is represented by the colour as per (B). (B) Shows a map of the index cases for each of these outbreaks. (C–H) Show these outbreaks over a series of time periods. Numbers refer to outbreaks as listed in Table 1. In (B–H) the species of Ebola virus responsible for the outbreak is illustrated by the symbol shape, the number of resulting cases and onset date by symbol colour. The most recent outbreak (#23) is indicated in orange. Countries in which zoonotic transmission to humans has been reported or is assumed to have occurred are coloured in blue. In each map the Democratic Republic of Congo is outlined for reference.DOI: http://dx.doi.org/10.7554/eLife.04395.005
+**Figure 2.:** (A) Illustrates the 23 reported outbreaks of Ebola virus disease through time, with the area of each circle and its position along the y-axis representing the number of cases. The onset year is represented by the colour as per (B). (B) Shows a map of the index cases for each of these outbreaks. (C–H) Show these outbreaks over a series of time periods. Numbers refer to outbreaks as listed in Table 1. In (B–H) the species of Ebola virus responsible for the outbreak is illustrated by the symbol shape, the number of resulting cases and onset date by symbol colour. The most recent outbreak (#23) is indicated in orange. Countries in which zoonotic transmission to humans has been reported or is assumed to have occurred are coloured in blue. In each map the Democratic Republic of Congo is outlined for reference.
 
-## Reported Ebola virus infections in animals
+### Reported Ebola virus infections in animals
 
-A total of 51 surveyed locations reporting infections in animals were identified in the literature since the discovery of the disease (
+A total of 51 surveyed locations reporting infections in animals were identified in the literature since the discovery of the disease (Table 2; Figure 3). These comprised 17 infections in gorillas (Gorilla gorilla), nine infections in chimpanzees (Pan troglodytes), 18 in OWFB and 2 in duikers (Cephalophus spp.). A large proportion of the great ape cases originated from the ROC/Gabon border, coinciding with the main known distributions of both chimpanzees and gorillas (Petter and Desbordes, 2013) and representing a period of well-documented great ape Ebola outbreaks in and around the Lossi Animal Sanctuary (Rouquet et al., 2005; Bermejo et al., 2006; Walsh et al., 2009). All animal isolations of Ebola viruses have come from countries that have also reported index cases of human outbreaks, with the exception of several seropositive bats from a survey in southern Ghana.
+
+**Table 2.**
+ Locations of reported infections with Ebola virus in animals
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Site</th>
+      <th>Country</th>
+      <th>Date range</th>
+      <th>Location</th>
+      <th>Species</th>
+      <th>Diagnosis</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Côte d’Ivoire</td>
+      <td>Oct–Nov 1994</td>
+      <td>Tai Forest</td>
+      <td>Chimpanzee</td>
+      <td>Serology</td>
+      <td>(Formenty et al., 1999)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Gabon</td>
+      <td>Jan 1996</td>
+      <td>Mayiboth 2</td>
+      <td>Chimpanzee</td>
+      <td>PCR</td>
+      <td>(Lahm et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Gabon</td>
+      <td>Jul 1996</td>
+      <td>Near Booue</td>
+      <td>Chimpanzee</td>
+      <td>Serology</td>
+      <td>(Georges-Courbot et al., 1997)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Gabon</td>
+      <td>Sept 1996</td>
+      <td>Lope National Park</td>
+      <td>Chimpanzee</td>
+      <td>PCR</td>
+      <td>(Lahm et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Gabon &amp; ROC</td>
+      <td>Aug 2001</td>
+      <td>Mendemba/Lossi Animal Sanctuary</td>
+      <td>Chimpanzee</td>
+      <td>PCR</td>
+      <td>(Lahm et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Gabon &amp; ROC</td>
+      <td>Aug 2001</td>
+      <td>Mendemba/Lossi Animal Sanctuary</td>
+      <td>Gorilla</td>
+      <td>PCR</td>
+      <td>(Lahm et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Gabon &amp; ROC</td>
+      <td>Aug 2001</td>
+      <td>Mendemba/Lossi Animal Sanctuary</td>
+      <td>Cephalophus dorsalis</td>
+      <td>PCR</td>
+      <td>(Lahm et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Gabon</td>
+      <td>Nov 2001</td>
+      <td>Zadie</td>
+      <td>Gorilla</td>
+      <td>PCR</td>
+      <td>(Rouquet et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Gabon</td>
+      <td>Nov 2001</td>
+      <td>Ekata</td>
+      <td>Gorilla</td>
+      <td>PCR</td>
+      <td>(Wittmann et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Gabon</td>
+      <td>Dec 2001</td>
+      <td>Medemba and neighbouring villages</td>
+      <td>Chimpanzee and Gorilla</td>
+      <td>PCR</td>
+      <td>(Leroy et al., 2002)</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Gabon</td>
+      <td>Feb 2002</td>
+      <td>Zadie</td>
+      <td>Gorilla</td>
+      <td>PCR</td>
+      <td>(Rouquet et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Gabon</td>
+      <td>Feb 2002</td>
+      <td>Ekata</td>
+      <td>Various bat species</td>
+      <td>Serology</td>
+      <td>(Leroy et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Gabon</td>
+      <td>Mar 2002</td>
+      <td>Zadie</td>
+      <td>Gorilla</td>
+      <td>PCR</td>
+      <td>(Rouquet et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Gabon</td>
+      <td>Mar 2002</td>
+      <td>Grand Etoumbi</td>
+      <td>Gorilla</td>
+      <td>PCR</td>
+      <td>(Wittmann et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Gabon</td>
+      <td>Apr 2002</td>
+      <td>Ekata</td>
+      <td>Gorilla</td>
+      <td>PCR</td>
+      <td>(Wittmann et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>ROC</td>
+      <td>May 2002</td>
+      <td>Oloba</td>
+      <td>Chimpanzee</td>
+      <td>PCR</td>
+      <td>(Lahm et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>ROC</td>
+      <td>Dec 2002</td>
+      <td>Lossi Animal Sanctuary</td>
+      <td>Gorilla</td>
+      <td>PCR</td>
+      <td>(Rouquet et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>ROC</td>
+      <td>Dec 2002</td>
+      <td>Lossi Animal Sanctuary</td>
+      <td>Gorilla</td>
+      <td>PCR</td>
+      <td>(Rouquet et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>ROC</td>
+      <td>Dec 2002</td>
+      <td>Lossi Animal Sanctuary</td>
+      <td>Chimpanzee</td>
+      <td>Serology</td>
+      <td>(Rouquet et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>ROC</td>
+      <td>Dec 2002</td>
+      <td>Lossi Animal Sanctuary</td>
+      <td>Gorilla</td>
+      <td>PCR</td>
+      <td>(Rouquet et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>ROC</td>
+      <td>Dec 2002</td>
+      <td>Lossi Animal Sanctuary</td>
+      <td>Gorilla</td>
+      <td>PCR</td>
+      <td>(Rouquet et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>ROC</td>
+      <td>Dec 2002</td>
+      <td>Lossi Animal Sanctuary</td>
+      <td>Cephalophus spp.</td>
+      <td>PCR</td>
+      <td>(Rouquet et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Gabon</td>
+      <td>Feb 2003</td>
+      <td>Mbomo</td>
+      <td>Various bat species</td>
+      <td>PCR</td>
+      <td>(Leroy et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>ROC</td>
+      <td>Feb 2003</td>
+      <td>Lossi Animal Sanctuary</td>
+      <td>Gorilla</td>
+      <td>Serology</td>
+      <td>(Rouquet et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Gabon</td>
+      <td>Feb 2003</td>
+      <td>Lossi Animal Sanctuary</td>
+      <td>Chimpanzee</td>
+      <td>PCR</td>
+      <td>(Wittmann et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Gabon</td>
+      <td>Jun 2003</td>
+      <td>Mbomo</td>
+      <td>Various bat species</td>
+      <td>PCR and serology</td>
+      <td>(Leroy et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>ROC</td>
+      <td>Jun 2003</td>
+      <td>Near Mbomo and Ozala National Park</td>
+      <td>Epomops franqueti</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>ROC</td>
+      <td>Jun 2003</td>
+      <td>Near Mbomo and Ozala National Park</td>
+      <td>Hypsignathus monstrosus</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>ROC</td>
+      <td>Jun 2003</td>
+      <td>Near Mbomo and Ozala National Park</td>
+      <td>Myonycteris torquata</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>ROC</td>
+      <td>Jun 2003</td>
+      <td>Mbanza</td>
+      <td>Gorilla</td>
+      <td>PCR</td>
+      <td>(Rouquet et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>ROC</td>
+      <td>Jan–Jun 2004</td>
+      <td>Lokoué</td>
+      <td>Gorilla</td>
+      <td>Reported</td>
+      <td>(Caillaud et al., 2006)</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>ROC</td>
+      <td>May 2004</td>
+      <td>Lokoué</td>
+      <td>Gorilla</td>
+      <td>PCR</td>
+      <td>(Wittmann et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Gabon</td>
+      <td>Feb 2005</td>
+      <td>Near Franceville</td>
+      <td>Epomops franqueti</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Gabon</td>
+      <td>Feb 2005</td>
+      <td>Near Franceville</td>
+      <td>Myonycteris torquata</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Gabon</td>
+      <td>Apr 2005</td>
+      <td>Near Lambarene</td>
+      <td>Epomops franqueti and Hypsignathus monstrosus</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>ROC</td>
+      <td>May 2005</td>
+      <td>Near Mbomo and Ozala National Park</td>
+      <td>Epomops franqueti</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>ROC</td>
+      <td>May 2005</td>
+      <td>Near Mbomo and Ozala National Park</td>
+      <td>Hypsignathus monstrosus</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>ROC</td>
+      <td>May 2005</td>
+      <td>Near Mbomo and Ozala National Park</td>
+      <td>Myonycteris torquata</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>ROC</td>
+      <td>Jun 2005</td>
+      <td>Odzala National Park</td>
+      <td>Gorilla</td>
+      <td>PCR</td>
+      <td>(Wittmann et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Gabon</td>
+      <td>Feb 2006</td>
+      <td>Near Tchibanga</td>
+      <td>Various bat species</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>ROC</td>
+      <td>May 2006</td>
+      <td>Near Mbomo and Ozala National Park</td>
+      <td>Epomops franqueti</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>ROC</td>
+      <td>May 2006</td>
+      <td>Near Mbomo and Ozala National Park</td>
+      <td>Hypsignathus monstrosus</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>ROC</td>
+      <td>May 2006</td>
+      <td>Near Mbomo and Ozala National Park</td>
+      <td>Myonycteris torquata</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>Gabon</td>
+      <td>Oct 2006</td>
+      <td>Near Franceville</td>
+      <td>Epomops franqueti</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>Ghana</td>
+      <td>May 2007</td>
+      <td>Sagyimase</td>
+      <td>Epomops franqueti</td>
+      <td>Serology</td>
+      <td>(Hayman et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>Ghana</td>
+      <td>May 2007</td>
+      <td>Sagyimase</td>
+      <td>Hypsignathus monstrosus</td>
+      <td>Serology</td>
+      <td>(Hayman et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>Ghana</td>
+      <td>May 2007</td>
+      <td>Adoagyir</td>
+      <td>Epomophorus gambianus</td>
+      <td>Serology</td>
+      <td>(Hayman et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>Ghana</td>
+      <td>May 2007</td>
+      <td>Adoagyir</td>
+      <td>Epomops franqueti</td>
+      <td>Serology</td>
+      <td>(Hayman et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>Ghana</td>
+      <td>Jun 2007</td>
+      <td>Oyibi</td>
+      <td>Epomophorus gambianus</td>
+      <td>Serology</td>
+      <td>(Hayman et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Ghana</td>
+      <td>Jan 2008</td>
+      <td>Accra</td>
+      <td>Eidolon helvum</td>
+      <td>Serology</td>
+      <td>(Hayman et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>Gabon</td>
+      <td>Mar 2008</td>
+      <td>Near Franceville</td>
+      <td>Epomops franqueti</td>
+      <td>Serology</td>
+      <td>(Pourrut et al., 2009)</td>
+    </tr>
+  </tbody>
+</table>
+
+_ROC = Republic of Congo._
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/04395/elife-04395-fig3-v2.jpg)
 
-**Figure 3.:** (A) Shows the locations of reported Ebola virus infection in animals. (B–D) Show these records in animals over three different time periods. Numbers refer to records as listed in Table 2. In all panels, the species in which infection was detected is given by symbol shape and the year recorded by symbol colour. Blue countries represent locations where zoonotic transmission to humans has been reported or is assumed to have occurred. In each map the Democratic Republic of Congo is outlined for reference.DOI: http://dx.doi.org/10.7554/eLife.04395.007
+**Figure 3.:** (A) Shows the locations of reported Ebola virus infection in animals. (B–D) Show these records in animals over three different time periods. Numbers refer to records as listed in Table 2. In all panels, the species in which infection was detected is given by symbol shape and the year recorded by symbol colour. Blue countries represent locations where zoonotic transmission to humans has been reported or is assumed to have occurred. In each map the Democratic Republic of Congo is outlined for reference.
 
-## Predicted distribution of suspected reservoir species of bats
+### Predicted distribution of suspected reservoir species of bats
 
-Three species of bats,
+Three species of bats, Hypsignathus monstrosus, Myonycteris torquata and Epomops franqueti, were identified as the most likely candidates to be reservoir species for Ebola viruses due to high seroprevalence and the isolation of RNA closely related to Zaire ebolavirus (Leroy et al., 2005; Olival and Hayman, 2014). In total, 239 locations were identified from the Global Biodiversity Information Facility (GBIF) (GBIF, 2014): 67 for H. monstrosus (Figure 4A), 52 for M. torquata (Figure 4B) and 120 for E. franqueti (Figure 4C). Distribution models for all three species demonstrated predictive skill (indicated by an area under the curve (AUC) greater than 0.5) as follows: H. monstrosus AUC 0.63 ± 0.04; M. torquata AUC = 0.59 ± 0.04; E. franqueti AUC = 0.58 ± 0.03, n = 50 submodels for all three species. In addition, each species was broadly predicted within its considered expert opinion range (Figure 4A–C) (Schipper et al., 2008). The marginal effect plots (not shown) were strongly influenced by land surface temperature (LST) and vegetation (as measured by the enhanced vegetation index [EVI]). The predicted combined distribution of these species (Figure 4D), covers West and Central Africa, specifically the moist forests of the northeastern, western and central Congo basin, and Guinea, as well as the Congolian coastal forest ecoregions (WWF, 2014).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/04395/elife-04395-fig4-v2.jpg)
 
-**Figure 4.:** (A) Shows the distribution of the hammer-headed bat (Hypsignathus monstrosus), (B) The little collared fruit bat (Myonycteris torquata) and (C) Franquet's epauletted fruit bat (Epomops franqueti). In each map, the locations of reported observations of each species, extracted and curated from the Global Biodiversity Information Facility (GBIF, 2014) and used to train each model are given as grey points (H. monstrosus, n = 67; E. franqueti, n = 120 and M. torquata, n = 52). Expert opinion maps of the known range of each species, generated by the IUCN (Schipper et al., 2008), are outlined in grey. The colour legend represents a scale of the relative probability that the species occurs in that location from 0 (white, low) to 1 (green, high). Area under the curve statistics, calculated under a stringent ten-fold cross validation procedure, are 0.63 ± 0.04, 0.59 ± 0.04 and 0.58 ± 0.03 for H. monstrosus, M. torquata and E. franqueti respectively. (D) Is a composite distribution map giving the mean, relative probability of occurrence from (A–C).DOI: http://dx.doi.org/10.7554/eLife.04395.008
+**Figure 4.:** (A) Shows the distribution of the hammer-headed bat (Hypsignathus monstrosus), (B) The little collared fruit bat (Myonycteris torquata) and (C) Franquet's epauletted fruit bat (Epomops franqueti). In each map, the locations of reported observations of each species, extracted and curated from the Global Biodiversity Information Facility (GBIF, 2014) and used to train each model are given as grey points (H. monstrosus, n = 67; E. franqueti, n = 120 and M. torquata, n = 52). Expert opinion maps of the known range of each species, generated by the IUCN (Schipper et al., 2008), are outlined in grey. The colour legend represents a scale of the relative probability that the species occurs in that location from 0 (white, low) to 1 (green, high). Area under the curve statistics, calculated under a stringent ten-fold cross validation procedure, are 0.63 ± 0.04, 0.59 ± 0.04 and 0.58 ± 0.03 for H. monstrosus, M. torquata and E. franqueti respectively. (D) Is a composite distribution map giving the mean, relative probability of occurrence from (A–C).
 
-## Predicted environmental suitability for zoonotic transmission of Ebola
+### Predicted environmental suitability for zoonotic transmission of Ebola
 
-The predicted environmental niche for zoonotic transmission of EVD is shown in
+The predicted environmental niche for zoonotic transmission of EVD is shown in Figure 5. All countries with observed index cases of EVD (n = 7, hereafter Set 1) have areas of the highest environmental suitability (see list in Table 1). In addition, areas of high environmental suitability for zoonotic transmission are predicted in a further 15 countries where, to date, index cases of the four African species of Ebolavirus have not been recorded. These are Nigeria, Cameroon, Central African Republic (CAR), Ghana, Liberia, Sierra Leone, Angola, Tanzania, Togo, Ethiopia, Mozambique, Burundi, Equatorial Guinea, Madagascar and Malawi (hereafter Set 2).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/04395/elife-04395-fig5-v2.jpg)
 
-**Figure 5.:** (A) Shows the total populations living in areas of risk of zoonotic transmission for each at-risk country. The grey rectangle highlights countries in which index cases of Ebola virus disease have been reported (Set 1); the remainder are countries in which risk of zoonotic transmission is predicted, but in which index cases of Ebola have not been reported (Set 2). These countries are ranked by population at risk within each set. The population at risk Figure in 100,000 s is given above each bar. (B) Shows the predicted distribution of zoonotic Ebola virus. The scale reflects the relative probability that zoonotic transmission of Ebola virus could occur at these locations; areas closer to 1 (red) are more likely to harbour zoonotic transmission than those closer to 0 (blue). Countries with borders outlined are those which are predicted to contain at-risk areas for zoonotic transmission based on a thresholding approach (see ‘Materials and methods’). The area under the curve statistic, calculated under a stringent 10-fold cross-validation procedure is 0.85 ± 0.04. Solid lines represent Set 1 whilst dashed lines delimit Set 2. Areas covered by major lakes have been masked white.DOI: http://dx.doi.org/10.7554/eLife.04395.009
+**Figure 5.:** (A) Shows the total populations living in areas of risk of zoonotic transmission for each at-risk country. The grey rectangle highlights countries in which index cases of Ebola virus disease have been reported (Set 1); the remainder are countries in which risk of zoonotic transmission is predicted, but in which index cases of Ebola have not been reported (Set 2). These countries are ranked by population at risk within each set. The population at risk Figure in 100,000 s is given above each bar. (B) Shows the predicted distribution of zoonotic Ebola virus. The scale reflects the relative probability that zoonotic transmission of Ebola virus could occur at these locations; areas closer to 1 (red) are more likely to harbour zoonotic transmission than those closer to 0 (blue). Countries with borders outlined are those which are predicted to contain at-risk areas for zoonotic transmission based on a thresholding approach (see ‘Materials and methods’). The area under the curve statistic, calculated under a stringent 10-fold cross-validation procedure is 0.85 ± 0.04. Solid lines represent Set 1 whilst dashed lines delimit Set 2. Areas covered by major lakes have been masked white.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/04395/elife-04395-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Displays elevation across Africa measured in metres, relative to sea level. (B and C) Show enhanced vegetation index (EVI) values (mean and spatial range respectively) on a scale from 0 to 1. (D–G) Display land surface temperature (LST) (mean and spatial range for day and night respectively) measured in degrees Celsius. (H) Shows potential evapotranspiration (PET) for Africa, in millimetres per month and (I) gives the composite, relative probability of occurrence of the three suspected reservoir bat species. For details of how each of these covariate layers was derived see ‘Materials and methods’.DOI: http://dx.doi.org/10.7554/eLife.04395.010
+**Figure 5—figure supplement 1.:** (A) Displays elevation across Africa measured in metres, relative to sea level. (B and C) Show enhanced vegetation index (EVI) values (mean and spatial range respectively) on a scale from 0 to 1. (D–G) Display land surface temperature (LST) (mean and spatial range for day and night respectively) measured in degrees Celsius. (H) Shows potential evapotranspiration (PET) for Africa, in millimetres per month and (I) gives the composite, relative probability of occurrence of the three suspected reservoir bat species. For details of how each of these covariate layers was derived see ‘Materials and methods’.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/04395/elife-04395-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** Each panel illustrates the marginal effect (averaging over the effects of other covariates) that changes in each of the covariates has on the predicted relative probability of occurrence of zoonotic Ebola virus transmission. Grey regions and solid lines give the 95% confidence region (a metric of uncertainty) and mean value calculated across all 500 submodels. The mean relative contribution of the covariate to the model (the proportion of iterations in which the covariate was selected by the model-fitting algorithm, indicating sensitivity to the covariates) is given as an inset number. The dependency plots are ordered by mean relative contribution of the covariate. EVI = enhanced vegetation index, LST = land surface temperature and PET = potential evapotranspiration.DOI: http://dx.doi.org/10.7554/eLife.04395.011
+**Figure 5—figure supplement 2.:** Each panel illustrates the marginal effect (averaging over the effects of other covariates) that changes in each of the covariates has on the predicted relative probability of occurrence of zoonotic Ebola virus transmission. Grey regions and solid lines give the 95% confidence region (a metric of uncertainty) and mean value calculated across all 500 submodels. The mean relative contribution of the covariate to the model (the proportion of iterations in which the covariate was selected by the model-fitting algorithm, indicating sensitivity to the covariates) is given as an inset number. The dependency plots are ordered by mean relative contribution of the covariate. EVI = enhanced vegetation index, LST = land surface temperature and PET = potential evapotranspiration.
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/04395/elife-04395-fig5-figsupp3-v2.jpg)
 
-**Figure 5—figure supplement 3.:** (A) Shows the predicted zoonotic niche excluding the index case for the Guinea outbreak from the dataset used to train the model. (B) Shows the prediction when including the Guinea data in the model (the model presented in Figure 5). The circle depicts the location of the Guinean index case (#23 in Table 1). As per Figure 5, the scale reflects the relative probability that zoonotic transmission of Ebola virus could occur at these locations; areas closer to 1 (red) are more likely to harbour zoonotic transmission than those closer to 0 (blue).DOI: http://dx.doi.org/10.7554/eLife.04395.012
+**Figure 5—figure supplement 3.:** (A) Shows the predicted zoonotic niche excluding the index case for the Guinea outbreak from the dataset used to train the model. (B) Shows the prediction when including the Guinea data in the model (the model presented in Figure 5). The circle depicts the location of the Guinean index case (#23 in Table 1). As per Figure 5, the scale reflects the relative probability that zoonotic transmission of Ebola virus could occur at these locations; areas closer to 1 (red) are more likely to harbour zoonotic transmission than those closer to 0 (blue).
 
 The AUC for the Ebola model was relatively high (AUC = 0.85 ± 0.04, n = 500 submodels) indicating that the model could strongly distinguish regions of environmental suitability for EVD. Enhanced vegetation index had the greatest impact on the distribution (relative contribution [RC] of 65.3%) followed by elevation (RC = 11.7%), night-time land surface temperature (LST) (RC = 7.7%), potential evapotranspiration (PET) (RC = 5.7%) and combined bat distribution (RC = 3.8%). Marginal effect plots are presented in Figure 5—figure supplement 2.
 
 In total, 22.2 million people are predicted to live in areas suitable for zoonotic transmission of Ebola. The vast majority, 21.7 million (approximately 97%), live in rural areas, as opposed to urban or peri-urban areas (CIESIN/IFPRI/WB/CIAT, 2007; WorldPop, 2014). Of these, 15.2 million are in Set 1 and 7 million are in Set 2. In terms of ranked populations at risk, DRC, Guinea and Uganda are highest in Set 1 and Nigeria, Cameroon and CAR are top in Set 2. For a full listing of these populations living in areas of risk, see the stacked bar plot in Figure 5A.
 
-## National level demographic and mobility changes
+### National level demographic and mobility changes
 
-Over the 40 year period since discovery of EVD, the total population living in those countries predicted to be within the zoonotic niche has nearly tripled (from 230 million to 639 million) and the proportion of the population in these countries living in an urban (rather than rural) setting has changed from 25.5% to 59.2% (
+Over the 40 year period since discovery of EVD, the total population living in those countries predicted to be within the zoonotic niche has nearly tripled (from 230 million to 639 million) and the proportion of the population in these countries living in an urban (rather than rural) setting has changed from 25.5% to 59.2% (Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/04395/elife-04395-fig6-v2.jpg)
 
-**Figure 6.:** For each country the population (in millions) is presented for three time periods (1976, 2000 and 2014) as three bars. Each stacked bar gives the rural (green) and urban (blue) populations of the country. The grey rectangle highlights countries in which index cases of Ebola virus diseases have been reported (Set 1); the remainder are countries in which risk of zoonotic transmission is predicted, but where index cases have not been reported (Set 2). The fractional change in population between 1976 and 2014 is given above each set of bars.DOI: http://dx.doi.org/10.7554/eLife.04395.013
+**Figure 6.:** For each country the population (in millions) is presented for three time periods (1976, 2000 and 2014) as three bars. Each stacked bar gives the rural (green) and urban (blue) populations of the country. The grey rectangle highlights countries in which index cases of Ebola virus diseases have been reported (Set 1); the remainder are countries in which risk of zoonotic transmission is predicted, but where index cases have not been reported (Set 2). The fractional change in population between 1976 and 2014 is given above each set of bars.
 
 Data on the connectivity of human populations over this period were not available. We can infer however, intuitively, empirically and theoretically (Zipf, 1946; Simini et al., 2012) that rates of population movement within a country will scale directly in proportion to population growth.
 
-## International connectivity by airline traffic
+### International connectivity by airline traffic
 
-Records of passenger seat capacity are available since 2000 and show substantive increases over the period in Set 1 (from 2.96 to 4.77 million, a fractional change of 1.61) and Set 2 (from 5.6 to 15.6 million, a change of 2.8) (
+Records of passenger seat capacity are available since 2000 and show substantive increases over the period in Set 1 (from 2.96 to 4.77 million, a fractional change of 1.61) and Set 2 (from 5.6 to 15.6 million, a change of 2.8) (Figure 7A). More specific data on passenger volumes show almost universally similar increases since 2005 with Set 1 nations changing from 2 million to 2.5 million, a fractional change of 1.22 and Set 2 changing from 5 million to 7.9 million, a change of 1.57 (Figure 7B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/04395/elife-04395-fig7-v2.jpg)
 
-**Figure 7.:** The grey rectangle highlights countries in which index cases of EVD have been reported (Set 1). The remainder are countries in which risk of zoonotic transmission is predicted, but where index cases have not been reported (Set 2). (A) Shows changes in annual outbound international seat capacity (between 2000 in red and 2013 in blue). (B) Depicts changes in annual outbound international passenger volume by country (between 2005 in red and 2012 in blue). For each country, the fractional change in volume is given above each set of bars. Note that only one bar is presented for South Sudan as data for this region prior to formation of the country in 2011 were unavailable.DOI: http://dx.doi.org/10.7554/eLife.04395.014
+**Figure 7.:** The grey rectangle highlights countries in which index cases of EVD have been reported (Set 1). The remainder are countries in which risk of zoonotic transmission is predicted, but where index cases have not been reported (Set 2). (A) Shows changes in annual outbound international seat capacity (between 2000 in red and 2013 in blue). (B) Depicts changes in annual outbound international passenger volume by country (between 2005 in red and 2012 in blue). For each country, the fractional change in volume is given above each set of bars. Note that only one bar is presented for South Sudan as data for this region prior to formation of the country in 2011 were unavailable.
 
-Global analysis of airline passenger volumes demonstrates that international connectivity has increased amongst all global regions and national income strata (
+Global analysis of airline passenger volumes demonstrates that international connectivity has increased amongst all global regions and national income strata (Figure 8). Total passenger volumes have increased by a third from 9.5 to over 14 million during the eight year window (2005–2012) where records are available. The largest increases have occurred in WHO regions (WHO, 2014b) outside of the sub-Saharan African region (AFRO) (Figure 8A,B). In 2012, almost half of the final destinations of those travelling from these at-risk countries were to other AFRO nations (47%). Other frequent destinations were in Europe (EURO; 27%) and the Eastern Mediterranean (EMRO; 13%). Similarly, analysis of passenger volumes by World Bank national income groupings (WHO, 2014b) (Figure 8C,D) show that in 2012 40% of all passenger final destinations were to low or low-middle income countries.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/04395/elife-04395-fig8-v2.jpg)
 
-**Figure 8.:** (A) Shows the locations of WHO regions (AFRO–African Region; AMRO–Region of the Americas; EMRO–Eastern Mediterranean Region; EURO–European Region; SEARO–South-East Asian Region; WPRO–Western Pacific Region). (B) Displays the numbers of passengers arriving in each of these regions from countries predicted to contain areas at risk of zoonotic Ebola virus transmission (Sets 1 and 2) in 2005 and 2012. (C) Shows the income tiers of all countries as defined by the World Bank. (D) Displays the total numbers of passengers arriving in countries in each of these income strata from at-risk countries in 2005 and 2012. The number above each pair of bars indicates the fractional change in these numbers of incoming passengers between 2005 and 2012.DOI: http://dx.doi.org/10.7554/eLife.04395.015
+**Figure 8.:** (A) Shows the locations of WHO regions (AFRO–African Region; AMRO–Region of the Americas; EMRO–Eastern Mediterranean Region; EURO–European Region; SEARO–South-East Asian Region; WPRO–Western Pacific Region). (B) Displays the numbers of passengers arriving in each of these regions from countries predicted to contain areas at risk of zoonotic Ebola virus transmission (Sets 1 and 2) in 2005 and 2012. (C) Shows the income tiers of all countries as defined by the World Bank. (D) Displays the total numbers of passengers arriving in countries in each of these income strata from at-risk countries in 2005 and 2012. The number above each pair of bars indicates the fractional change in these numbers of incoming passengers between 2005 and 2012.
 
 ## Discussion
 
-## Summary of the main findings
+### Summary of the main findings
 
 We have re-evaluated the zoonotic niche for EVD in Africa. In doing so we have (i) used all existing outbreaks to assemble an inventory of index cases (n = 30); (ii) added to this all confirmed records of Ebola virus in animals (n = 51); (iii) assembled more accurate and contemporary environmental covariates including new maps of the distribution of confirmed OWFB reservoirs of the disease; and (iv) used the latest niche modelling techniques to predict the geographic distribution of potential zoonotic transmission of the disease. Using these predictions we have estimated the populations at risk of EVD both in countries which have confirmed index cases (Set 1, n = 7) and those for which we predict strong environmental suitability for outbreaks (Set 2, n = 15). In all countries at risk we show that since the discovery of EVD in 1976, urban and rural populations have increased and have become more interconnected both within and across national borders. During the last 40 years the increasing size and connectivity of these populations may have facilitated the subsequent spread of EVD outbreaks. These factors underline a change in the way in which EVD interacts with human populations.
 
-## Interpreting the zoonotic niche
+### Interpreting the zoonotic niche
 
 The remote and isolated nature of Ebola zoonotic transmission events, paired with the relatively poor diagnostics and understanding of the disease transmission routes in early outbreaks, mean that under-reporting of previous outbreaks is probable. An increasing understanding and description of a broader range of symptoms used in case definitions of EVD (Leroy et al., 2000; Feldmann and Geisbert, 2011) also increase the possibility that past outbreaks may have been misattributed to different diseases (Tignor et al., 1993). This poor detectability of EVD also clearly limits capacity to accurately identify the locations and transmission routes of index cases (Heymann et al., 1980; Baize et al., 2014). We must assume, as has been done previously (Peterson et al., 2004a; Jones et al., 2008), that the first reported cases are representative of the true location of the index cases. Where possible we have represented this geographic uncertainty by attributing the index case to a wide-area polygon which then incorporated this uncertainty into the mapping process (see ‘Materials and methods’).
 
@@ -154,7 +858,7 @@ The relationship between the EVD niche and the environmental covariates (Figure 
 
 This analysis used information from all human outbreaks and animal infections to delineate the likely zoonotic niche of the disease. Further analysis, excluding the existing outbreak focussed in Guinea from the dataset used to train the model (Figure 5—figure supplement 3), still resulted in prediction of high suitability in this region, with the presumed index village located within 5 km of an at-risk pixel. This implies that the eco-epidemiological situation in Guinea is very similar to that in past outbreaks, mirroring phylogenetic similarity in the causative viruses (Dudas and Rambaut, 2014; Gire et al., 2014). The ecological similarity between the past and current outbreaks also lends support to the notion that the scale of this outbreak is more heavily influenced by patterns of human-to-human transmission than any expansion of the zoonotic niche.
 
-## Interpreting population at risk
+### Interpreting population at risk
 
 It is important to appreciate that this zoonotic niche map delineates areas in which populations are at-risk of zoonotic transmission of EVD (Figure 5B). It does not predict the likelihood of EVD spillover, the likelihood of an outbreak establishing, or its subsequent rate of spread within a population. Increasing human encroachment and certain cultural practices sometimes linked with poverty, such as bushmeat hunting, result in increasing exposure of humans to animals which may harbour diseases including Ebola (Daszak, 2000; Wolfe et al., 2005, 2007). Increasing human population may accelerate the degree of risk through these processes but spatially refined information on these factors is not available comprehensively. It is hoped that as the understanding of the risk factors for zoonotic transmission of Ebolavirus to humans increases, it will be possible to incorporate this information into future risk mapping assessments.
 
@@ -168,11 +872,11 @@ Whilst rare in comparison to other high burden diseases prevalent in this region
 
 Together, these considerations necessitate prioritisation of efforts to reinforce and improve existing surveillance and control, and encourage the development of therapeutics and vaccines. The national population at risk estimates presented here would be a strong rationale for improving, prioritising and stratifying surveillance for EVD outbreaks and diagnostic capacity in these countries. We believe it would be prudent to test OWFB species in Set 2 countries for Ebola virus (Hayman et al., 2012), particularly during the bat breeding season to maximise chances of isolation in order to clarify the outbreak risk in these countries. In all Set 1 and Set 2 countries, raising awareness about the risk presented by reservoir bats and incidental primate hosts and the modes of transmission of this disease could be of value. Finally, increasing our capacity to rapidly map ever changing biological threats is also a core need (Hay et al., 2013b).
 
-## Interpreting International connectivity
+### Interpreting International connectivity
 
 The increasing connectedness of the Africa region means that EVD is now a problem of international concern. While most EVD secondary transmission occurs locally and is likely transported via ground transit (Francesconi et al., 2003), the potential for international spread of infection is possible, as demonstrated by the importation of the disease from Liberia to Nigeria, culminating in further secondary transmission in Lagos (WHO, 2014a). The aetiology of EVD infection and disease progression means that an international outbreak propagated by air travel remains unlikely, particularly in high-income countries better able to handle EVD cases (Fauci, 2014). Nevertheless, a non-negligible threat remains, particularly in the low and middle income destinations and the rapid increase in global connectivity of these at-risk regions indicates that international airports could see more imported cases (Chan, 2014).
 
-## Future work
+### Future work
 
 We have focussed on reanalysing the zoonotic niche for EVD transmission and the characterisation of the populations at risk to improve the landscape in which future risk and impact of EVD outbreaks can be discussed. During the current emergency much of the work will concentrate on routes of secondary transmission in the human population—conceptually the red arrow of the H box in Figure 1. An important task is to stratify the risk of EVD spread both within and between countries and identify the most likely pathways of spread for characterisation and surveillance. Our next priority therefore is to investigate aspects of secondary human-to-human transmission by documenting the rate of geographic spread of EVD during the past and ongoing epidemics to help understand changes in these patterns in the historical record. Simulating these movements in a real landscape of population movement patterns, inferred from population movements assessed by mobile phones and other data (Garcia et al., 2014), as well as parametric movement models (Simini et al., 2013) is a logical next step, and can be used in future targeting of interventions and potential new treatments for both the current and future outbreaks (Brady et al., 2014; Goodman, 2014).
 
@@ -184,29 +888,29 @@ We are in the midst of a public health emergency that will likely last for many 
 
 ## Materials and methods
 
-## Methodological overview
+### Methodological overview
 
 A boosted regression tree (BRT) modelling framework was used to generate predictive risk maps of the zoonotic Ebola virus niche in Africa. This methodology combines regression trees, where trees are built according to optimal decision rules based on how binary decisions best accommodate a given dataset (De'ath, 2007; Elith et al., 2008), and boosting, which selects the tree that minimises the loss function. In doing so, a parameter space is defined which captures the greatest amount of variation present in the dataset. In order to train the model, four component datasets were compiled: (i) a comprehensive dataset of the reported locations of Ebola virus transmission from a zoonotic reservoir to a human; (ii) a dataset of the locations of Ebola virus infections in suspected reservoir and (non-human) susceptible host species (iii) a suite of ecologically relevant environmental covariates for Africa, including predicted distribution maps of suspected reservoir bat species and (iv) background (or pseudo-absence) records representing locations where zoonotic Ebola virus has not been reported. This study was limited to the African continent since no natural outbreaks of EVD have occurred outside the continent (CDC, 2014). Only Reston ebolavirus has a distribution reported outside of Africa, focussed in the Philippines, but has never been reported as pathogenic in humans; as a result this species was not included in the analysis.
 
-## Identifying index cases and reconstructing zoonotic transmission events in space and time
+### Identifying index cases and reconstructing zoonotic transmission events in space and time
 
 Tables detailing proven outbreaks of Ebola virus, initially sourced from the scientific literature (Kuhn, 2008) and from health reporting organisations (CDC, 2014), were used to coordinate searches of the formal scientific literature using Web of Science and PubMed for each specific outbreak. Relevant papers were abstracted and where possible outbreak-specific epidemiological surveys were sourced. The citations in these references were obtained in order to reconstruct the outbreak in detail and to identify the most probable index case. Index cases were defined as any human infection resulting from interaction with non-human sources of the disease. Some of these cases arose from presumed interactions with zoonotic reservoirs or hosts, such as primates and other mammals during hunting trips (Boumandouki et al., 2005; Nkoghe et al., 2005, 2011; WHO, 2003) or butchering of bats (Leroy et al., 2009). Any cases arising from existing human infections are considered as secondary infections rather than index cases. Similar to methodology employed elsewhere (Messina et al., 2014), the site, or supposed site, of this zoonotic transmission event was geopositioned using Google Earth. For locations where precise geographic information (e.g., geographic coordinates of a hunting camp) was provided by the authors, these were used. Where precise geographic information could not be accurately geopositioned, a geographic area (termed a polygon) was defined covering the reported region. In several cases only the first reported patient could be identified, with the source of infection unknown. With these outbreaks the location of the first patient was geopositioned under the assumption that an initial zoonotic spillover event occurred in the vicinity of this location. In two outbreaks multiple independent zoonotic transmission events were identified (WHO, 2003; Nkoghe et al., 2005; Pourrut et al., 2005), and each unique event was geopositioned and included in the model as separate entities. Table 1 catalogues the outbreaks used in this study.
 
-## Assembling a database of reported infections in animals
+### Assembling a database of reported infections in animals
 
 A literature search was conducted in Web of Science using the search term “Ebola” that returned 8635 citations. The abstracts were examined and for those that contained possible data on animal Ebola infection, the full text was obtained. The sampling site or location of the animal in the study was identified and geopositioned using Google Maps. These locations were recorded either as precise locations or as polygons, as with human index cases. Records for which local transmission of Ebola virus was deemed unlikely (e.g., seropositive primates tested in containment facilities several years after their capture) were excluded from the study. The non-human Ebola virus occurrence data collected are detailed in Table 2, including the diagnostic methods used.
 
-## GenBank isolates
+### GenBank isolates
 
 The open access sequence database GenBank (NCBI, 2014) was searched using MESH Umbrella search terms for Ebola virus, returning 181 results. These were then manually cross-referenced with the existing human and animal Ebola information, collected above, and 30 duplicates were removed. For the remaining isolates, original references and GenBank information fields were examined, but as there was insufficient information to establish precise location of isolation and/or whether the isolate represented an index case for any of these data sources, they were excluded from subsequent analyses.
 
-## Covariates assembled and used in the analyses
+### Covariates assembled and used in the analyses
 
 A suite of ecologically relevant gridded environmental covariates for Africa was compiled, each having a nominal resolution of 5 km × 5 km. The environmental covariates used in this analysis were: elevation (from the shuttle radar topography mission [ORNL DAAC, 2000]); the mean value, and a measure of spatial variation (range, described below) between 2000 and 2012 of Enhanced Vegetation Index (EVI), daytime Land Surface Temperature (LST) and night-time LST; and mean potential evapotranspiration from 1950–2000 (Trabucco and Zomer, 2009) (Figure 5—figure supplement 1).
 
 The EVI and LST datasets were derived from satellite imagery collected by NASA's Moderate Resolution Imaging Spectroradiometer (MODIS) remote sensing platform (Tatem et al., 2004). EVI is a metric designed to characterise vegetation density and vigour based on the ratio of absorbed photosynthetically active radiation to near infrared radiation (Huete et al., 2002). LST is a modelled product derived from emissivity as measured by the MODIS thermal sensor (Wan and Li, 1997), which is correlated, though not synonymous with air temperature, and effective for differentiating landscapes based on a combination of thermal energy and properties of surface types. The MODIS datasets utilized in this research (EVI was derived from the MCD43B4 product and the MOD11A2 LST product was used directly) were acquired as composite datasets created using imagery collected over multiple days, a procedure that results in products with 8-day temporal resolutions. Despite compositing, the EVI and LST datasets contained gaps due to persistent cloud cover found in forested equatorial regions, and these gaps were filled using a previously described approach (Weiss et al., 2014a). The EVI and LST datasets were then aggregated from their native 1 km × 1 km spatial resolution to a final 5 km × 5 km resolution, calculating both the mean and the range of the values of the subpixels making up each larger pixel. These spatial summaries therefore characterise both the mean temperature in each location as well as the degree of spatial heterogeneity within that pixel. This is of interest as humans and susceptible species are more likely to come into contact in transitional areas (e.g., boundary areas between areas of highly suitable susceptible species habitat and areas heavily utilised by humans). The final covariate production step consisted of summarising temporally across the 13-year data archive to produce synoptic datasets devoid of annual or seasonal anomalies (Weiss et al., 2014a).
 
-## Implicated bat reservoir distributions
+### Implicated bat reservoir distributions
 
 Over recent years, significant research has been undertaken in investigating the role bats have to play in the transmission cycle of Ebola viruses (Olival and Hayman, 2014) and evidence of asymptomatic infection in fruit bats has been documented to varying extents (Leroy et al., 2005; Pourrut et al., 2007, 2009; Hayman et al., 2010; Hayman et al., 2012). In order to incorporate this potential driver of Ebola virus transmission into the model we developed predicted distribution maps for three species of fruit bat implicated as primary reservoirs of the disease: Hypsignathus monstrosus, Epomops franqueti and Myonycteris torquata. The evidence was strongest for these three species having a reservoir role as Ebola virus RNA (all nested within the Zaire ebolavirus phylogeny [Leroy et al., 2005]) has been detected in all three. Whilst a handful of other bat species have been found to be seropositive, no further viral isolations have been recorded (Olival and Hayman, 2014).
 
@@ -220,18 +924,18 @@ Model accuracy was assessed by calculating the mean area under the curve (AUC) s
 
 To generate a single surface describing the distribution of the bat reservoir species to be used as a covariate in the subsequent Ebola modelling, the three mean prediction distribution maps were merged by taking the average habitat suitability for each of the three bat species at each pixel.
 
-## Ebola distribution modelling
+### Ebola distribution modelling
 
 The Ebola virus occurrence dataset was supplemented with a background record dataset generated by randomly sampling 10,000 locations across Africa, biased towards more populous areas as a proxy for reporting bias (Phillips et al., 2009). We fitted 500 submodels to bootstraps of this dataset. To account for uncertainty in the geographic location of those occurrences reported as polygons, for each submodel one point was randomly selected from each of these occurrence polygons. This Monte Carlo procedure enabled the model to efficiently integrate over the environmental uncertainty associated with imprecise geographic data. A bootstrap sample was then taken from each of these datasets and used to train the BRT model using the same procedure and weighting of background records as for the bat distribution models. Similarly, we generated a prediction map from each of these models and calculated both the mean prediction and corresponding 95% confidence intervals for each pixel and analysed prediction accuracy using the same stringent cross validation and sensitivity analysis procedure as for the bat distribution models (detailed above).
 
 The predicted distribution map produced by this approach represents the environmental suitability of each pixel for zoonotic Ebola virus transmission. This may be interpreted as a relative probability of presence in the sense that more suitable pixels are more likely to contain zoonotic transmission than less suitable pixels, though not an absolute probability that transmission occurs in a given pixel. Similarly, the presence of zoonotic transmission increases the risk of transmission to a human, though this is also contingent on how humans interact with these zoonotic pools, through hunting or other activities.
 
-## Population living in areas of environmental suitability for zoonotic transmission
+### Population living in areas of environmental suitability for zoonotic transmission
 
 In order to identify areas which are likely to be at risk of transmission of Ebolavirus from zoonotic reservoir hosts to humans, the continuous map of the predicted environmental suitability for zoonotic transmission (shown in Figure 5) was converted into a binary map classifying pixels as either at risk or not at risk. A pixel was assumed to be at risk if its predicted environmental suitability for zoonotic Ebola virus transmission was greater than 0.673, the lowest suitability value predicted at the locations of known transmission to humans (point records of human index cases). Countries containing at least one at-risk pixel are shown in Figure 5B—those countries that previously report an index case were defined as Set 1; countries with at least one at-risk pixel with no previous index cases of EVD were categorised as Set 2. The number of people living in at-risk areas in each of these countries was calculated by summing the estimated population of at-risk pixels using population density maps from the AfriPop project (Linard et al., 2012; WorldPop, 2014) and the proportion of those living in urban, periurban and rural areas was evaluated using the Global Rural Urban Mapping Project (CIESIN/IFPRI/WB/CIAT, 2007).
 
 The R code used for all of the analysis has been made available on an open source basis (https://github.com/SEEG-Oxford/ebola_zoonotic).
 
-## National level demographic and mobility data
+### National level demographic and mobility data
 
 For three separate years (1976, 2000 and 2014), total national populations were retrieved and the proportion of rural to urban populations noted from World Bank statistics (World Bank, 2014). To describe global air travel patterns from Set 1 and Set 2 countries, flight schedules data from the Official Airline Guide, reflecting an estimated 95% of all commercial flights worldwide, were analysed between 2000 and 2013 to calculate the annual volume of seats on direct flights that depart from each predicted country and which have an international destination. Complementing these seat capacity data, worldwide data on anonymised, individual passenger flight itineraries from the International Air Transport Association (2012) (IATA, 2014) were analysed between 2005 and 2012 to calculate the annual volume of international passenger departures out of each Set 1 and Set 2 country. The IATA dataset represents an estimated 93% of the world's commercial air traffic at the passenger level and includes points of departure and arrival and final destination information for travellers as well as their connecting flights.

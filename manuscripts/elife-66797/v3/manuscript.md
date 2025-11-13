@@ -27,7 +27,7 @@
 
 ## Abstract
 
-The speciose mammalian order Eulipotyphla (moles, shrews, hedgehogs, solenodons) combines an unusual diversity of semi-aquatic, semi-fossorial, and fossorial forms that arose from terrestrial forbearers. However, our understanding of the ecomorphological pathways leading to these lifestyles has been confounded by a fragmentary fossil record, unresolved phylogenetic relationships, and potential morphological convergence, calling for novel approaches. The net surface charge of the oxygen-storing muscle protein myoglobin (Z Mb ), which can be readily determined from its primary structure, provides an objective target to address this question due to mechanistic linkages with myoglobin concentration. Here, we generate a comprehensive 71 species molecular phylogeny that resolves previously intractable intra-family relationships and then ancestrally reconstruct Z Mb evolution to identify ancient lifestyle transitions based on protein sequence alone. Our phylogenetically informed analyses confidently resolve fossorial habits having evolved twice in talpid moles and reveal five independent secondary aquatic transitions in the order housing the world’s smallest endothermic divers.
+The speciose mammalian order Eulipotyphla (moles, shrews, hedgehogs, solenodons) combines an unusual diversity of semi-aquatic, semi-fossorial, and fossorial forms that arose from terrestrial forbearers. However, our understanding of the ecomorphological pathways leading to these lifestyles has been confounded by a fragmentary fossil record, unresolved phylogenetic relationships, and potential morphological convergence, calling for novel approaches. The net surface charge of the oxygen-storing muscle protein myoglobin (ZMb), which can be readily determined from its primary structure, provides an objective target to address this question due to mechanistic linkages with myoglobin concentration. Here, we generate a comprehensive 71 species molecular phylogeny that resolves previously intractable intra-family relationships and then ancestrally reconstruct ZMb evolution to identify ancient lifestyle transitions based on protein sequence alone. Our phylogenetically informed analyses confidently resolve fossorial habits having evolved twice in talpid moles and reveal five independent secondary aquatic transitions in the order housing the world’s smallest endothermic divers.
 
 ## Introduction
 
@@ -51,33 +51,97 @@ Support for the above contention is provided by the molecular modelling and phyl
 
 ## Results
 
-## Phylogenetic relationships within eulipotyphla
+### Phylogenetic relationships within eulipotyphla
 
 To obtain mammalian tree-of-life genes (Meredith et al., 2011) for phylogenetic estimation, we conducted in-solution probe-hybridisation for segments of 25 single-copy genes from 61 eulipotyphlan DNA libraries (Supplementary file 1a). Twenty-three of these loci were efficiently captured, with usable sequence obtained from 51 to 61 libraries per locus, equivalent to a ~95% (1330/1403) success rate (Supplementary file 1b). By contrast, probes for two gene segments only successfully hybridised to 21 and 15 of the 61 libraries, respectively, and were subsequently not included in the phylogenetic analyses. Specifically, we failed to capture the prepronociceptin (PNOC) gene for any shrew and many of the talpid species (Supplementary file 1b). Probes for the interphotoreceptor retinoid binding protein (IRBP) gene also failed to retrieve any sequence from the solenodon and 37 of the 38 non-uropsiline talpid specimens. Notably, the putative 234 bp IRBP fragment recovered from True’s shrew mole (Dymecodon pilirostris) contained gaps and premature stop codons, suggesting this gene was inactivated in the common ancestor of the subfamily Talpinae. Similarly, the Chinese mole shrew (Anourosorex squamipes) IRBP sequence contained premature stop codons and was presumed to be non-functional. After incorporating orthologous tree-of-life sequence data from ten additional eulipotyphlan specimens and five outgroup species downloaded from GenBank (see Materials and methods for details), our 76 specimen dataset (71 eulipotyphlans) resulted in a final alignment of 39,414 bp (Supplementary file 1b; Figure 2—figure supplement 1).
 
 To estimate evolutionary relationships, we used maximum likelihood (RAxML) and Bayesian (BEAST) approaches on the concatenated alignment, and coalescent-based species tree methods (ASTRAL-III, *BEAST) on the 23 individual gene trees. These analyses resulted in highly congruent topologies (Figure 2 and Figure 2—figure supplements 2–4), with family level relationships corresponding to those obtained in recent eulipotyphlan (Brace et al., 2016; Springer et al., 2018) and mammal wide studies (Meredith et al., 2011; Esselstyn et al., 2017). Higher level relationships within Soricidae and Erinaceidae also corresponded closely with previous studies on these families (He et al., 2010; He et al., 2012). Principal among these is the non-sister relationship of the Nectogalini water shrew clades Neomys and Chimarrogale + Nectogale, as the latter were strongly supported as sister to terrestrial Episoriculus by RAxML (bootstrap support [ML-BS]=97; Figure 2—figure supplement 2), BEAST (posterior probability [PP]=1.0; Figure 2), ASTRAL-III (coalescent bootstrap support based on gene-wise resampling [C-BS]=76; Figure 2—figure supplement 3), and *BEAST (posterior probability [C-PP]=0.99; Figure 2—figure supplement 4). By contrast, previously intractable relationships within Talpidae are now resolved, with the interrelationships among fossorial and semi-aquatic clades consistently recovered (Figure 2 and Figure 2—figure supplements 2–4). Specifically, desmans are placed sister to a clade containing shrew moles, star-nosed moles, and Eurasian fossorial moles (BS = 100, PP = 1.0, C-BS = 87, C-PP = 0.97), with Condylurini and Talpini recovered as sister lineages (BS = 72, PP = 1.0, C-BS = 52, C-PP = 0.93). North American fossorial Scalopini moles are also supported as sister to all other Talpinae moles with high support scores (BS = 97, PP = 1.0, C-BS = 87, C-PP = 0.97). Accordingly, a sister group relationship of fully fossorial Scalopini and Talpini moles was statistically rejected by the Shimodaira–Hasegawa (SH) test (p<0.01, Supplementary file 1c). The only minor incongruences among phylogenies was the position of the tribe Soricini and of the Taiwanese brown-toothed shrew (Episoriculus fumidus) within Nectogalini in the ASTRAL tree (Figure 2 and Figure 2—figure supplements 2–4).
 
-## Myoglobin primary structure
+![Figure 2.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig2-v3.jpg)
+
+**Figure 2.:** The units of time are in millions of years (Ma). Branch lengths represent median ages. Node bars indicate the 95% confidence interval [CI] for each clade age. Unless specified, all relationships are highly supported. Relationships weakly supported in concatenation Bayesian and maximum likelihood (PP <0.97 and/or BS <80: #) as well as *BEAST and ASTRAL coalescent analyses (C-PP <0.97 and/or C-BS <80: *) are indicated. Note that an alternative position was recovered for Soricini in the ASTRAL tree (Node A; Figure 2—figure supplement 4), while both coalescent analyses (Node B; ASTRAL, *BEAST) favored Episoriculus monophyly (Figure 2—figure supplements 2–4). Colored bars at the tips of the tree denote terrestrial (green), semi-aquatic (blue), semi-fossorial (beige), and fossorial (brown) lifestyles in extant species.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** The ultrametric tree is the BEAST concatenation gene tree and a blank block indicates the gene is missing in the final dataset.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Bootstrap supports are given next to internal nodes.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Bootstrap supports are given next to internal nodes.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** Posterior probabilities are given next to internal nodes.
+
+### Myoglobin primary structure
 
 Complete myoglobin coding sequences (465 base pairs including initiation and stop codons) were obtained for 55 eulipotyphlan species (38 moles, 14 shrews, 2 erinacids, and 1 solenodon) using capture-hybridisation, transcriptome sequencing, genome mining, and PCR approaches. Consistent with previous surveys that indicate that myoglobin occurs as a single-copy, orthologous gene in the genomes of mammals and other jawed vertebrates (Schwarze et al., 2014), with rare, lineage-specific gene duplications being restricted to certain aquatic lineages such as some Cyprininae (carp and goldfish; Helbo et al., 2012) and Dipnoi (lungfishes; Lüdemann et al., 2020), we found no evidence for gene paralogues in any of the species examined, with conceptual translations additionally revealing the expected 153 amino-acid peptides in most cases. However, the translated myoglobin proteins of the Chinese mole shrew, both members of the genus Scaptonyx, and the two desman genera are only 152 amino acids in length. In every case, the shorter myoglobin sequences are the result of 3 bp deletions in exon three that corresponded to residue position 121 (Supplementary file 1d) and shorten the loop between helices G and H from 6 to 5 residues. These deletions were confirmed for each lineage using at least two of the three sequencing approaches noted above. To our knowledge, a similar deletion was previously only known for three bird of prey species (Enoki et al., 2008), but we have detected it also in the predicted myoglobin sequences of the draft genomes of several burrowing species of the order Rodentia (data not shown), notably including the fully fossorial Transcaucasian and Northern mole voles (Ellobius lutescens and E. talpinus, respectively; Mulugeta et al., 2016).
 
-## Myoglobin homology modelling
+### Myoglobin homology modelling
 
 Homology modelling of myoglobin structure was conducted for one extant species from each of the five diving lineages together with that predicted for the last common eulipotyphlan ancestor based on ancestral sequence reconstruction (see next section). This analysis confirmed that all charge-changing substitutions were located at the solvent-exposed surface of the protein (Supplementary file 1d). These comparisons further suggested that deletion of position 121 in the loop between helices G and H in the myoglobin of the Russian desman has minimal effect on the tertiary structure of the protein (Figure 3—figure supplement 1). In addition to their effect on ZMb, some of the charge-increasing substitutions were associated with a complex re-arrangement of the network of salt bridges in the tertiary structure of the protein. Thus, for example, during the evolution of the Russian desman, arguably the most aquatic of extant Eulipotyphla, the two neighbouring substitutions Gln26→Arg26 (charge-increasing) and Glu27→Asp27 (charge-neutral) in the B-helix allow for the formation of a new intra-helical salt bridge between Arg26 and Asp27, while at the same time breaking the inter-helical salt bridge between Glu27 and Lys118 in the B- and G-helices, respectively (Figure 3). However, charge-decreasing Asn35→Asp35 followed by charge-increasing Gln113→Lys113 subsequently again tethered the B- and G-helices to each other by the salt bridge Asp35- Lys113. Further, the removal of a negative charge by the substitution Asp44→Ala44 destroyed a salt bridge between Asp44 and Lys47 in the CD-corner of the protein, thereby potentially affecting the flexibility of the loop between the C- and D-helices (Figure 3). However, a detailed assessment of any changes in the folding stability of the proteins that are associated with the identified charge-changing substitutions, let alone with any charge neutral replacements (see, e.g. Isogai et al., 2018), is difficult and beyond the scope of this study, not least because of the potentially opposing effects of salt bridge formation and the associated desolvation of charges for the folding stability of proteins (for discussion see Bosshard et al., 2004).
 
-## Electrophoretic mobility and ancestral reconstruction of ZMb
+![Figure 3.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig3-v3.jpg)
+
+**Figure 3.:** The structure of the last common ancestor of the group was modelled based on results of an amino acid sequence reconstruction (see text for details). Ancestral (left) and derived (right) states of charge-changing amino acid replacements are circled and indicated with positional number and one-letter amino acid code. Blue and red color indicate amino acids with positively (H, His; K, Lys; R, Arg) and negatively charged amino acid side chains (D, Asp; E, Glu), respectively. White double arrows indicate surface amino acid side chains involved in salt bridges that are affected by charge-changing substitutions. Text boxes indicate the reconstructed temporal order (top to bottom) of charge decreasing and charge increasing amino acid substitutions (red and blue font, respectively) in the Desmana lineage in one letter code from ancestral (left) to derived (right) separated by positional number. Note that charge neutral substitutions (e.g. G35N), are not given in the text boxes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Structures were obtained by homology modelling using the SWISS-MODEL server (Waterhouse et al., 2018) and the primary structures of myoglobin obtained by conceptual translation of the here determined nucleotide sequence (Russian desman) or by ancestral amino acid sequence reconstruction (see text for details). Structures were visualised in PyMOL version 2.1.1. Note that the gap at position 121 in the GH-loop of the tertiary structure (circled in red) of the Russian desman in (B) appears to exert negligible effect on the tertiary structure of the protein.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Three-dimensional structures were obtained by homology modelling using the SWISS-MODEL server (Waterhouse et al., 2018) and the amino acid sequences of (A) Sorex palustris, (B) Neomys fodiens, (C) Nectogale elegans, and (D) Condylura cristata. The three-dimensional myoglobin structure of the last common ancestor of the group was also modelled based on results of an amino acid sequence reconstruction (see text for details). Ancestral (left) and derived (right) states of charge-changing amino acid replacements are circled and indicated with positional number and one-letter amino acid code. Blue and red color indicate amino acids with positively (H, His; K, Lys; R, Arg) and negatively charged amino acid side chains (D, Asp; E, Glu). White double arrows indicate salt bridges that are affected by charge-changing substitutions. Image views between panels A-D have been rotated to maximally visualise lineage-specific replacements.
+
+### Electrophoretic mobility and ancestral reconstruction of ZMb
 
 Without exception, the modelled ZMb values of extant semi-aquatic taxa (2.07 to 3.07) were substantially higher than those of terrestrial Eulipotyphla (−0.46 to 0.63), with fossorial species generally exhibiting intermediate ZMb values (typically 1.07; Figure 4A and Figure 4—figure supplement 1). To assess the reliability of our ZMb determinations, we measured the electrophoretic mobility of the myoglobin band of muscle extracts from two semi-aquatic, two strictly fossorial, and one terrestrial eulipotyphlan species (Figure 4B). The close correspondence between the two variables validates ZMb as a molecular marker for inferring present and past semi-aquatic habits in Eulipotyphla.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig4-v3.jpg)
+
+**Figure 4.:** (A) Violin plot showing the distribution (y-axis) and probability density (x-axis) of modelled myoglobin net surface charge, ZMb, among living species (black dots) of the four prevalent eulipotyphlan ecomorphotypes. (B) Correlation between ZMb and electrophoretic mobility of native myoglobin from five eulipotyphlan insectivores; data from the grey seal (Halichoerus grypus) is added for comparison. ZMb was calculated as the sum of the charge of all ionisable groups at pH 6.5 by modelling myoglobin primary structures onto the tertiary structure and using published, conserved, site-specific ionisation constants (McLellan, 1984; Mirceta et al., 2013). Electrophoretic mobility was assessed relative to the mobility of grey seal myoglobin using native polyacrylamide gel electrophoresis of heart or skeletal muscle protein extracts of the indicated species. Green, orange, brown, and blue areas (A) or symbols and fonts (B) indicate terrestrial, semi-fossorial, fossorial, and semi-aquatic/aquatic species, respectively. Phylogenetic Generalised Least Squares analysis in panel (B) revealed a highly significant positive correlation (R2 = 0.897, p<0.005) between the two parameters (solid line, y = 0.1488 x+0.3075).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Horizontal bars on the right indicate the calculated ZMb for each species, which are color coded according to species lifestyle.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** Bootstrap supports are given next to internal nodes on the myoglobin gene trees. Only Bootstrap supports higher than 70 are shown.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** Bootstrap supports are given next to internal nodes on the myoglobin gene trees. Only Bootstrap supports higher than 70 are shown.
 
 Our myoglobin nucleotide and amino acid gene trees retrieved few well-supported phylogenetic relationships (especially at deeper nodes), and no compelling evidence of an evolutionary history that deviated from the species trees (Figure 4—figure supplement 2A,B), which would potentially result in erroneous ancestral reconstructions (Hahn and Nakhleh, 2016). We thus conducted a maximum likelihood ancestral amino acid sequence reconstruction using the species tree in Figure 1 as the phylogenetic backbone and the best fitting model of the Dayhoff amino acid substitution matrix with a gamma distribution of rate variation among sites. This analysis yielded highly supported ancestral amino acid identities across all 153 residues and 58 internal nodes of the species tree (Figure 5—figure supplement 1A), which was presumably due to our dense taxon sampling and the relatively highly conserved primary structure of mammalian myoglobins. Of the 8874 (=58 × 153) reconstructed ancestral sites on the species tree, 8799 (99.15%) had maximal probabilities of reconstructed amino acid identities of p>0.95 under the given phylogeny and amino acid substitution model. In 50 cases (0.55%), alternatively reconstructed amino acids with p>0.05 were of the same charge and thus did not affect the calculated ZMb values. Only in 25 cases (0.28%), one or more alternatively reconstructed amino acids with p>0.05 carried a different charge from the most probable amino acid at that site. However, even in those cases this usually had only a minimal effect on ZMb (±0.11; three sites), or the summed probabilities of alternative charge states were comparatively small (p≤0.21; 23 sites) such that we regard both the results of the ancestral sequence reconstruction and of the resulting values of ZMb as robust. This is supported by generally congruent results obtained by codon-based ancestral sequence reconstructions (Figure 5—figure supplement 1B), which primarily deviated from the above empirical amino acid matrix-based method at some deeper nodes, where a higher number of negatively charged amino acid residues (and thus anomalously low values for ZMb; e.g. −1.93) were reconstructed relative to those obtained for extant mammalian species (Mirceta et al., 2013; this study). Consequently, the following discussion largely focuses on the ZMb reconstruction using the empirical Dayhoff substitution matrix (Figure 5—figure supplement 1A), which moreover—in contrast to the codon-based analysis (Figure 5—figure supplement 1B)—includes the effects of purifying selection acting on replacements with dissimilar amino acid properties.
 
 Ancestral ZMb estimates arising from the best fitting amino-acid based reconstruction model indicated that the most recent common ancestor of Eulipotyphla displayed a ZMb of 0.18. Within Soricidae, distinct increases in ZMb were found on the branches leading to the three semi-aquatic clades (Figure 5). Specifically, the ZMb of the American water shrew (Sorex palustris) branch increased from −0.46 to 2.48 and was characterised by three integral (+1) charge increasing residue replacements (Asp122→Asn122, Ser132→Lys132, and Glu136→Gln136; Figure 3—figure supplement 2). The other three genera of water shrews reside in the tribe Nectogalini, the stem branch of which evolved a single charge increasing substitution (Glu27→Ala27) and thus had a ZMb of 1.07 (Figure 5). The European water shrew branch (Neomys fodiens) subsequently acquired two charge increasing substitutions (Asn12→Lys12, Asp53→Ala53; ZMb = 3.07; Figure 3—figure supplement 2B), while the common ancestor of Nectogale + Chimarrogale evolved a separate charge increasing replacement (Asp44→Ser44; ZMb = 2.07; Figure 3—figure supplement 2C). By contrast, members of the terrestrial genus Episoriculus, which are nested between the semi-aquatic nectogaline lineages, exhibited secondary reductions in ZMb towards neutrality via different residue substitutions in each case (Figure 5—figure supplement 1A). Importantly, similar results were obtained when the above amino-acid-based reconstructions were re-run on an alternative topology that supported the monophyly of Episoriculus (Figure 5—figure supplement 1C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig5-v3.jpg)
+
+**Figure 5.:** Ancestral ZMb was modelled from primary structures as in Figure 3 and after maximum likelihood ancestral sequence reconstruction. Major charge increasing (blue font) and charge decreasing (red font) amino acid substitutions, from ancestral to derived and separated by positional number, inferred for the immediate ancestry of semi-aquatic species (blue font) are indicated in textboxes alongside the respective branches. Grey and white background shading indicates geologic epochs. See Figure 5—figure supplement 1A for a complete account of charge-changing substitutions, reconstructed ZMb values, and outgroup information. Paintings of representative species by Umi Matsushita.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Maximum likelihood ancestral (A) amino-acid-based and (B) codon-based sequence reconstruction and net surface charge (ZMb) calculation of eulipotyphlan myoglobin mapped onto the time calibrated phylogeny of Figure 2. Results of a separate amino-acid based reconstruction based on the *BEAST species tree reconstruction (Figure 2—figure supplement 3) is provided in (C) with Episoriculus fumidus as the species with an alternative position compared to A and B in red font. Only charge-changing substitutions are shown, with blue and red font in text boxes indicating charge increasing and charge decreasing substitutions, respectively. Absolute charge-changing substitutions > 1.0 are underlined, whereas those <0.10 are shown in brackets. Yellow highlighting indicates amino acids reconstructed with p<0.95 for which less likely but differentially charged amino acids have been reconstructed with p>0.05 (see text for details). Reconstructed net charges are shown at nodes, though have been omitted in some cases if they were identical to values on the preceding node, for clarity. Terminal species considered semi-aquatic are indicated by blue font, with ZMbvalues >+ 2.0 also given in blue font.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** For each tree, reconstructions were constructed using either a maximum parsimony (left) or a threshold (right) model. Note that Episoriculus fumidus (red font in B) was supported at different positions on the two trees.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/66797/elife-66797-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** Posterior density distribution of the correlation coefficient (r) between (A) semi-aquatic, (B) fully fossorial, and (C) digging (to include fossorial and semi-fossorial lifestyles) and ZMb as estimated using the threshBayes function (D-G) show the results based on the analyses of subsets of samples that included only: (D) terrestrial and semi-aquatic species, (E) terrestrial and fully fossorial species, (F) terrestrial and digging species, or (G) semi-aquatic and fully fossorial species. The solid red line indicates the grand mean, the green dashed lines indicate the mean of the 80% confidence intervals, and the grey dashed lines indicate the mean of the 95% confidence intervals.
+
 Within the Talpidae, ZMb exhibited an increase from an ancestral value of 0.07 to 1.07 (Ser132→Lys132) in the stem Talpinae branch (Figure 5), with the probabilities of the identities of reconstructed amino acids at this node under the given tree and substitution model being 1.00 for all 153 sites (Figure 5—figure supplement 1A). With few exceptions, these values remained highly conserved in the clades containing either semi-fossorial or fossorial taxa (Figure 5 and Figure 5—figure supplement 1A,B). By contrast, ZMb increased to >2 in members of both semi-aquatic lineages—star-nosed moles and the desmans (Figure 3). For the star-nosed mole branch this entailed two charge increasing substitutions (Asp53→Gly53, Gln128→Lys128) and one charge decreasing substitution (Gly129→Glu129; Figure 3—figure supplement 2D and Figure 5—figure supplement 1A). The ancestral branch of the desmans also acquired two charge increasing replacements (Gln26→Arg26, Asp44→Ala44) together with one charge decreasing (Asn35→Asp35) replacement, with ZMb further being elevated in the Russian desman branch via the acquisition of an additional charge increasing substitution (Gln113→Lys113; ZMb = 3.07; Figures 3 and 5). Notably, while the same residue positions are occasionally recruited in the charge altering replacements of semi-aquatic taxa, the derived residues are different in all cases (Supplementary file 1e).
 
 To evaluate the above reconstructions of semi-aquatic lifestyles based on ZMb, we coded each species as semi-aquatic or non-aquatic and estimated ancestral lifestyles using both maximum parsimony and threshold models. Although both of these latter analyses suggested that semi-aquatic lifestyles evolved five times independently, this result was not strongly supported by the threshold model (Figure 5—figure supplement 2A). For example, the posterior probabilities of the most recent common ancestor of Desmana + Galemys and Chimarrogale + Nectogale being semi-aquatic was only 0.85 and 0.75, respectively, while the posterior probability for the most recent common ancestor of Nectogalini being semi-aquatic was 0.40. To account for the alternative placement of E. fumidus, we repeated this analysis using the results of the *BEAST species tree (Figure 2—figure supplement 4). The maximum parsimony reconstruction yielded two equi-parsimonious ancestral reconstructions of semi-aquatic lifestyle in nectogaline shrews, encompassing a single origin at the base of nectogaline shrews with a secondary loss at the base of the Episoriculus clade (Figure 5—figure supplement 2B). By contrast, the threshold model only weakly supported two independent origins of a semi-aquatic lifestyle in Neomys and Nectogale + Chimarrogale.
 
-## Lifestyle correlation analyses
+### Lifestyle correlation analyses
 
 As a final test regarding the reliability of using ZMb to predict ancient semi-aquatic lifestyles, we first assigned species as semi-aquatic or non-aquatic (see Figure 2 and Supplementary file 1a for lifestyle assignments), and used a threshBayes analysis to estimate covariances between ZMb and a semi-aquatic lifestyle. This analysis revealed a strong correlation between ZMb and aquatic adaptation (correlation coefficient r = 0.78, 95% highest posterior density [HPD]=0.48–0.93; Figure 5—figure supplement 3A). Conversely, threshBayes analyses did not support a correlation between ZMb and adaptations for digging, or between ZMb and a fully fossorial habit, when terrestrial and semi-aquatic eulipotyphlan species were included (Figure 5—figure supplement 3B,C). When applying threshBayes to subsets of habits that included only terrestrial and fully fossorial species, or terrestrial and burrowing species, weak correlations between ZMb and fossoriality (r = 0.55) and digging habits (r = 0.32) were revealed, but not significantly supported (i.e. 95%HPD overlaps with 0; Figure 5—figure supplement 3D,E). Importantly, ZMb comparisons between semi-aquatic and terrestrial, and between semi-aquatic and fossorial habits (Figure 5—figure supplement 3F,G) were both significant.
 
@@ -97,7 +161,304 @@ Adaptive evolution of similar phenotypic and physiological features occurring in
 
 ## Materials and methods
 
-## Eulipotyphlan taxon sampling and tree-of-life sequence data collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qiagen DNeasy Blood and Tissue Kit</td>
+      <td>Qiagen</td>
+      <td>69504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NEBNext dsDNA Fragmentase</td>
+      <td>New England BioLabs</td>
+      <td>M0348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Fast DNA Library Prep Set for Ion Torrent kit</td>
+      <td>New England BioLabs</td>
+      <td>E6270L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NEXTflex DNA Barcodes for Ion Torrent</td>
+      <td>BIOO Scientific</td>
+      <td>NOVA-401004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>E-Gel EX Gel, 2%</td>
+      <td>Invitrogen</td>
+      <td>G402002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NEBNext High-Fidelity 2X PCR Master Mix</td>
+      <td>New England BioLabs</td>
+      <td>M0541L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Sera-mag speedbeads</td>
+      <td>ThermoFisher</td>
+      <td>09-981-123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>myBaits custom target capture kit</td>
+      <td>Arbor Biosciences</td>
+      <td></td>
+      <td>personalized</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ion 318 Chip Kit v2 BC</td>
+      <td>ThermoFisher</td>
+      <td>4488146</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Torrent Suite</td>
+      <td>ThermoFisher https://github.com/iontorrent/TS copy archived at swh:1:rev:7591590843c967435ee093a3ffe9a2c6dea45ed8 Bridenbecker et al., 2020</td>
+      <td></td>
+      <td>v4.0.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlienTrimmer</td>
+      <td>https://research.pasteur.fr/en/software/alientrimmer/</td>
+      <td>RRID:SCR_011835</td>
+      <td>v0.3.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SolexaQA++</td>
+      <td>http://solexaqa.sourceforge.net/</td>
+      <td>RRID:SCR_005421</td>
+      <td>v3.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ParDRe</td>
+      <td>https://sourceforge.net/projects/pardre/</td>
+      <td></td>
+      <td>v2.25</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Karect</td>
+      <td>https://github.com/aminallam/karect, copy archived at swh:1:rev:ba3ad54e5f8ccec5fa972333fcf441ac0c6c2be0 Allam, 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Abyss</td>
+      <td>http://www.bcgsc.ca/platform/bioinfo/software/abyss</td>
+      <td>RRID:SCR_010709</td>
+      <td>v2.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MIRA</td>
+      <td>http://sourceforge.net/p/mira-assembler/wiki/Home/</td>
+      <td>RRID:SCR_010731</td>
+      <td>v4.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPAdes</td>
+      <td>http://bioinf.spbau.ru/spades/</td>
+      <td>RRID:SCR_000131</td>
+      <td>v3.10</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geneious</td>
+      <td>http://www.geneious.com/</td>
+      <td>RRID:SCR_010519</td>
+      <td>R11</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td>http://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>
+      <td>RRID:SCR_014583</td>
+      <td>v0.11.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trimmomatic</td>
+      <td>http://www.usadellab.org/cms/index.php?page=trimmomatic</td>
+      <td>RRID:SCR_011848</td>
+      <td>v0.39</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHYLUCE</td>
+      <td>https://github.com/faircloth-lab/phyluce, copy archived at swh:1:rev:66ff432f95cb8430d23f6c66a7981d57e8e06902Faircloth et al., 2021</td>
+      <td></td>
+      <td>v1.6.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAFFT</td>
+      <td>http://mafft.cbrc.jp/alignment/server/</td>
+      <td>RRID:SCR_011811</td>
+      <td>v6.864</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastTree</td>
+      <td>http://www.microbesonline.org/fasttree/</td>
+      <td>RRID:SCR_015501</td>
+      <td>v2.1.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ASTRAL III</td>
+      <td>https://github.com/smirarab/ASTRAL copy archived at swh:1:rev:05a85064da2ace5236dba94907bb3c45f45f9597 Mirarab et al., 2021</td>
+      <td></td>
+      <td>v5.15.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RDP</td>
+      <td>http://web.cbio.uct.ac.za/~darren/rdp.html</td>
+      <td>RRID:SCR_018537</td>
+      <td>v5.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RAXML</td>
+      <td>https://github.com/stamatak/standard-RAxML, copy archived at swh:1:rev:a33ff40640b4a76abd5ea3a9e2f57b7dd8d854f6 Stamatakis et al., 2018</td>
+      <td>RRID:SCR_006086</td>
+      <td>v8.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Newick utilities</td>
+      <td>http://cegg.unige.ch/newick_utils</td>
+      <td></td>
+      <td>v1.6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tree Graph 2</td>
+      <td>http://treegraph.bioinfweb.info/</td>
+      <td></td>
+      <td>v2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BEAST</td>
+      <td>BEAST 2 https://www.beast2.org</td>
+      <td>RRID:SCR_010228</td>
+      <td>v2.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEGA-X</td>
+      <td>http://megasoftware.net/</td>
+      <td>RRID:SCR_000667</td>
+      <td>Version X</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PAML</td>
+      <td>http://abacus.gene.ucl.ac.uk/software/paml.html</td>
+      <td>RRID:SCR_014932</td>
+      <td>v4.8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EasyCodeML</td>
+      <td>https://github.com/BioEasy/EasyCodeML, copy archived at swh:1:rev:744a2480e2071c85e044155d8699e87b46356eb9Chen, 2021</td>
+      <td></td>
+      <td>v1.31</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastML</td>
+      <td>https://swissmodel.expasy.org/</td>
+      <td>RRID:SCR_000305</td>
+      <td>v3.11</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMol</td>
+      <td>Schrödinger, LLC (http://www.pymol.org)</td>
+      <td>RRID:SCR_000305</td>
+      <td>v2.1.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SWISS-MODEL server</td>
+      <td>https://swissmodel.expasy.org/</td>
+      <td>RRID:SCR_018123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+      <td>v3.6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CAPER</td>
+      <td>https://cran.r-project.org/web/packages/caper/index.html</td>
+      <td></td>
+      <td>v1.0.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>phytools</td>
+      <td>https://cran.r-project.org/web/packages/phytools/index.html</td>
+      <td>RRID:SCR_015502</td>
+      <td>v0.7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>castor</td>
+      <td>https://cran.r-project.org/web/packages/castor/index.html</td>
+      <td></td>
+      <td>v1.6.7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggtree</td>
+      <td>https://bioconductor.org/packages/ggtree/</td>
+      <td>RRID:SCR_018560</td>
+      <td>v3.12</td>
+    </tr>
+  </tbody>
+</table>
+
+### Eulipotyphlan taxon sampling and tree-of-life sequence data collection
 
 Our taxon sampling of eulipotyphlan mammals included 44 talpids, 11 shrews, 5 erinaceids, and 1 solenodon (61 specimens encompassing 60 species). Note that this sampling incorporates talpid specimens from five putative ‘cryptic lineages’ (denoted by ‘sp.’, ‘sp. 1’, or ‘sp. 2’ in the Figures and Supplementary file 1); for the purpose of this study, each of these genetically distinct lineages are considered independent species. The tissue samples were from various resources (Supplementary file 1a), with most tissue samples provided by co-authors from China, Japan, Canada, and the USA. Voucher specimens collected by co-authors were deposited in the Kunming Institute of Zoology (KIZ, China), the National Museum of Nature and Science (NMNS, Japan) or kept in personal collections (A.S. and S.I.K.). Additional tissue samples were obtained with permission from the National Museum of Natural History (USNM, USA), the Burke Museum of Natural History and Culture (NWBM, USA), the Field Museum of Natural History (FMNH, USA), and the New Mexico Museum of Natural History (NMMNH, USA).
 
@@ -105,19 +466,19 @@ For each specimen, we used a capture hybridisation approach (Mason et al., 2011;
 
 We pooled up to four DNA libraries of similar quality and concentrations before hybridisation to avoid biased target captures (e.g. baits being used up by one sample). Approximately 500 ng (100–1000 ng) pooled DNA library was used for each hybridisation. We conducted in-solution hybridisation using a myBaits custom target capture kit (Arbor Biosciences, Ann Arbor, MI, USA) following the myBaits user manual v3.0. The enriched libraries were re-amplified and purified as above. We thereafter measured the DNA concentration using a Qubit flourometer and pooled the enriched libraries for sequencing. The libraries were sequenced using either v318 chips on an Ion Torrent Personal Genome Machine (PGM) or an Ion PI Chip v3 via an Ion Proton Machine.
 
-## Sequence assembly
+### Sequence assembly
 
 Ion Torrent sequencing technology is characterised by higher error rates than Illumina (Jünemann et al., 2013), and Ion Torrent platforms produce single-end (rather than pair-end) reads. We therefore conducted comprehensive data cleaning and reconciliation procedures, and selected software which could handle single-end sequencing data. The raw data were automatically demultiplexed, trimmed, and converted to FASTQ format on the Torrent Suite v4.0.2 (Thermo Fisher Scientific, Canada) after sequencing. Briefly, we trimmed contaminant (adapters and barcodes) sequences with AlienTrimmer (Criscuolo and Brisse, 2013) using conservative parameters (-k 15 m 5 l 15 -q 0 p 0). To remove poor quality data, we used the DynamicTrim function of the software SolexaQA ++v3.1 (Cox et al., 2010) to trim sequences dynamically and crop the longest contiguous segment for each read. We set the probability value to 0.01 (i.e. one base call error every 100 nucleotides) in this analysis. We removed duplicated and near-duplicated reads for each sample as implemented in ParDRe using all default parameters (González-Domínguez and Schmidt, 2016). Finally, we conducted data correction using Karect, a multiple sequence alignment-based approach (Allam et al., 2015), because this software handles substitution, insertion, and deletion errors. The output files of Karect were used for sequence assembly.
 
 We de novo assembled the raw sequences for each sample using Abyss v2.0 (Simpson et al., 2009), MIRA v4.0 (Chevreux et al., 2004), and SPAdes v3.10 (Bankevich et al., 2012), all of which were designed for short read sequencing data. Abyss is able to use a paired de Bruijn graph instead of a standard de Bruijn graph by specifying a k-mer size (K) and a k-mer pair span (k). We set the K and k to 17 and 33, respectively, and set the maximum number of branches of a bubble to five in our analyses. MIRA is based on a Smith-Waterman algorithm. We ran MIRA using specific parameters including bases_per_hash = 31 and minimum_read_length = 35. The SPAdes assembler is also based on a de Bruijn graph, and we set only one k-mer value of 33 for analyses. It is known that merging different draft assemblies (i.e. reconciliation) could improve the assembly quality (Zimin et al., 2008). We therefore conducted reconciliation using Geneious R11 (https://www.geneious.com). We concatenated the assembled draft contigs generated in three assemblers into a list. We removed contigs shorter than 120 bps, and used the BBMap dedupe function to remove duplicate contigs. We conducted assemblies using the Geneious assembler to group draft contigs with a minimum overlap identity of 96% to a new contig. Finally, all the new contigs and the leftover draft contigs were grouped into a contig list for subsequent analyses.
 
-## Myoglobin sequence collection and analysis
+### Myoglobin sequence collection and analysis
 
 We used four strategies to obtain myoglobin coding sequences (Supplementary file 1a). We first extracted available eulipotyphlan myoglobin mRNA and gene sequences from GenBank. The three coding exons were individually used both as templates for capture hybridisation probe design (see above) and to map the hybridisation contigs/generate consensus sequences for each exon. The 5’- and 3’- ends of introns were confirmed based on the GT-AG splice site rule. Of the 61 samples that we used for hybridisation capture, complete coding sequence was obtained for 27 samples, partial myoglobin sequences were obtained for 30 samples, and no sequence obtained for four samples (Supplementary file 1a).
 
 To cross-validate the results of our hybridisation experiments, fill sequencing gaps, and extend our taxon sampling, we also PCR amplified and Sanger sequenced whole myoglobin exons from existing DNA samples and/or employed transcriptome sequencing on additional eulipotyphlan specimens. For the latter, we collected heart and lung samples from five shrews, one shrew-like mole, and one gymnure (Supplementary file 1a). Tissues were preserved in RNAlater (Qiagen, China), and stored at −80C. Total RNA was extracted using a RNeasy Mini kit (Qiagen, China), and mRNA subsequently enriched using immobilised oligo(dT). mRNA was sheared and reverse transcribed to DNA. The cDNA libraries were purified and re-amplified using PCR for de novo sequencing using a HiSeq X Ten Sequencing System. Approximately 6 Gb data were obtained for each sample. Experiments and sequencing were conducted by BioMarker Co. (Beijing, China). We used FastQC v0.11.5 (Andrews, 2010) to access sequence quality, and trimmed adapter sequences using Trimmomatic v0.39 (Bolger et al., 2014). We conducted de novo assembly using Trinity v2.4 with default parameters (Grabherr et al., 2011). Finally, primers for PCR were designed for conserved exon flanking regions from available eulipotyphlan genomes, hybridisation capture, and mRNA sequences, and were used for both PCR and Sanger sequencing (Supplementary file 1j). These procedures resulted in complete coding sequences being obtained for 55 eulipotyphlan species (Supplementary file 1d).
 
-## Tree-of-life data analysis
+### Tree-of-life data analysis
 
 We additionally extracted 25 mammalian tree-of-life gene segments from seven publicly available eulipotyphlan genomes on GenBank using PHYLUCE (Faircloth, 2016) and Geneious R11: Indochinese shrew (Crocidura indochinensis), gracile shrew-like mole (Uropsilus nivatus), Eastern mole (Scalopus aquaticus), Hispaniolan solenodon (Solenodon paradoxus), European hedgehog (Erinaceus europaeus), common shrew (Sorex araneus), and the star-nosed mole (Condylura cristata). Corresponding sequences from five outgroup taxa were also mined: guinea pig (Cavia porcellus), horse (Equus caballus), cat (Felis catus), pig (Sus scrofa), and bat (Pteropus alecto). PHYLUCE was originally developed for ultra-conserved elements (UCE). We followed the ‘harvesting UCE loci from genomes’ protocol, but used the tree-of-life reference genes as probes instead of the original UCE probe sets. We extracted genomic regions which were at least 75% similar to the tree-of-life reference sequences. We also mapped the genomes to the tree-of-life references using Geneious with a minimum overlap identity of 75%. These two packages were generally equally efficient at capturing target genes, although in a few cases only one successfully captured the target genes from the genome.
 
@@ -133,17 +494,17 @@ Finally, we employed a multispecies coalescent model (*BEAST; Heled and Drummond
 
 To examine whether alternative evolutionary hypotheses of life histories (e.g. a single origination of fully fossorial lifestyle within Talpidae) could be statistically rejected, we performed Shimodaira–Hasegawa (SH) tests. For these analyses, we constrained the monophyletic relationships of: (i) fully fossorial Talpini and Scalopini moles, (ii) semi-aquatic desmans and the star-nosed mole, and (iii) semi-aquatic nectogaline shrew genera (Chimarrogale, Nectogale, and Neomys), one at a time and estimated the maximum likelihood concatenation trees using RAxML as described above (Supplementary file 1c). Then we computed the log likelihood between the best scoring maximum likelihood tree and the constrained alternative phylogenies as implemented in RAxML (-f H).
 
-## Ancestral sequence reconstruction and homology modelling
+### Ancestral sequence reconstruction and homology modelling
 
 We estimated ancestral myoglobin sequences for each node of a 60 species phylogeny that utilised both DNA sequences and amino acids. For comparison, we also estimated myoglobin gene trees utilizing both nucleotide and amino acid sequences as implemented in RAxML. We used Dayhoff+ γ model (Dayhoff et al., 1978) for the amino acid gene tree estimation using the same settings described above. Prior to analysis, the start (methionine) and stop codons were removed from the alignment. As in our previous study (Mirceta et al., 2013), we performed maximum likelihood ancestral amino acid sequence reconstruction as implemented in MEGA (Kumar et al., 2018) using the Dayhoff+ γ model that was obtained as the best-fitting substitution model using the model test function in MEGA-X. Prior to conducting the codon-based analysis, we removed codons corresponding to residue position 121 (which was absent for 5 of the 60 species; Supplementary file 1d). We then used the PAML package CodeML (Yang, 2007) as implemented in EasyCodeML (Gao et al., 2019), and compared codon substitution models (site models) including M0, M1a, M2a, M3, M7, M8, and M8a using likelihood-ratio tests. We relied on the model with the highest likelihood (M8a). Because PAML does not take account of insertion/deletion events (indels), and instead treats gaps as missing data, the ancestral states of the gapped codon position 121 was reconstructed separately using a likelihood-based mixture model as implemented in FastML (Ashkenazy et al., 2012).
 
 To assess the three-dimensional location and any secondary or tertiary structural implications of amino acid replacements or insertions/deletions, we used the fully automated homology modelling facilities of the SWISS-MODEL server (Waterhouse et al., 2018) to build protein structural models from the reconstructed ancestral primary structure of myoglobin in the last common eulipotyphlan ancestor and from the primary structure of the sequenced myoglobins of one species of each of the five semiaquatic lineages. Implications of the gapped position 121 on the tertiary structure of myoglobin in the Russian desman compared to the last eulipotyphlan ancestor were visualised in PyMol (The PyMOL Molecular Graphics System, Version 2.1.1, Schrödinger, LLC).
 
-## Calculation of myoglobin net surface charge and electrophoretic mobility
+### Calculation of myoglobin net surface charge and electrophoretic mobility
 
 We calculated ZMb as the sum of the charge of all ionizable groups in myoglobin at pH = 6.5 by modelling Mb primary structures onto the tertiary structure and using published, conserved, site-specific ionisation constants (McLellan, 1984; Mirceta et al., 2013). The reliability of modelled ZMb values was assessed by determining the electrophoretic mobility of native myoglobin bands at the same pH in muscle extracts of representative eulipotyphlan species and the grey seal, Halichoerus grypus, as an example of a marine mammal. Approximately 0.2 g of skeletal or cardiac muscle tissue from selected species, freed from any obvious fat or connective tissue remnants and rinsed with homogenisation buffer to move any remaining blood, was homogenised in 5 volumes of ice-cold 0.2 M MES buffer [2-(N-morpholino)ethanesulfonic acid] adjusted to pH 6.5, using an Ultra-turrax T25 homogeniser for 10 s at first 9500 rpm and then three times at 13,500 rpm, leaving samples to cool down between steps for 1 min on ice to avoid heat denaturation of proteins. The homogenised muscle extracts were then centrifuged at 10,500 g (20 min at 4°C) and the supernatants stored at −80°C until further use. Electrophoretic mobility of thawed muscle extracts was assessed in 9% polyacrylamide gels containing 0.3 M MES buffer pH 6.5, using a Bio-Rad Mini-PROTEAN II gel system with 0.2 M MES pH 6.5 as the running buffer at 100 V and room temperature for a minimum of 3 hr. Native myoglobin bands were identified by their distinct red-brown color before general protein staining with EZBlue (G104, Sigma-Aldrich). Electrophoretic mobility was assessed on digital gel images and expressed as distance travelled relative to the grey seal myoglobin, which was used as a standard of a marine mammal myoglobin with high net surface charge (Mirceta et al., 2013). The correlation between measured relative electrophoretic mobility and modelled ZMb values was assessed using Phylogenetic Generalised Least Squares (PGLS) analysis using the CAPER package (Orme et al., 2013) as implemented in R v3.6 and the tree from the BEAST analysis in Figure 2. Because of low sample size, the parameter lambda was not estimated from the data but fixed at a value of 1.0.
 
-## Lifestyle correlation analysis and ancestral lifestyle reconstruction
+### Lifestyle correlation analysis and ancestral lifestyle reconstruction
 
 We analyzed the relationship between lifestyles and ZMb based on a threshold model (Felsenstein, 2012) using the phytools function threshBayes (Revell, 2012) as implemented in R v3.6. The threshold model hypothesises that each lifestyle is determined by an underlying, unobserved continuous trait (i.e. liability). We first categorised the 55 eulipotyphlan species for which ZMb was calculated as either semi-aquatic (including the semi-aquatic/fossorial star-nosed mole in this category) or non-aquatic based on the habits described in Burgin and He, 2018. We ran Markov chain Monte Carlo (MCMC) for 107 generations, sampling every 500 generations, and discarded the first 20% generations as burn-in. We plotted the posterior sample for the correlation to examine whether analyses reached a stationary state. We also estimated the correlation between ZMb and full fossoriality (i.e. fossorial species versus non-fossorial species), as well as that between ZMb and ‘digging’ (a category that included both fossorial and semi-fossorial species) habits using the same approach. Finally, we also created subsets of our dataset to enable comparisons between only two ecomorphotypes, with the following four threshBayes analyses conducted: terrestrial ZMb versus semi-aquatic ZMb, terrestrial ZMb versus fully fossorial ZMb, terrestrial ZMb versus semi-fossorial/fossorial ZMb, fully fossorial ZMb versus semi-aquatic ZMb.
 

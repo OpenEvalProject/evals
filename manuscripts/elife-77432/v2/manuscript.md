@@ -15,10 +15,10 @@
 
 ### Affiliations
 
-1. https://ror.org/05kb8h459 Department of Integrative Medical Biology, Umeå University Umeå Sweden
-2. https://ror.org/00pdd0432 IMPACT, Centre de Recherche en Neurosciences de Lyon Lyon France
-3. https://ror.org/056d84691 Aging Research Center, Department of Neurobiology, Care Sciences and Society, Karolinska Institute Solna Sweden
-4. https://ror.org/01tm6cn81 Department of Psychology, University of Gothenburg Gothenburg Sweden
+1. Department of Integrative Medical Biology, Umeå University Umeå Sweden ([ROR:05kb8h459](https://ror.org/05kb8h459))
+2. IMPACT, Centre de Recherche en Neurosciences de Lyon Lyon France ([ROR:00pdd0432](https://ror.org/00pdd0432))
+3. Aging Research Center, Department of Neurobiology, Care Sciences and Society, Karolinska Institute Solna Sweden ([ROR:056d84691](https://ror.org/056d84691))
+4. Department of Psychology, University of Gothenburg Gothenburg Sweden ([ROR:01tm6cn81](https://ror.org/01tm6cn81))
 
 † Corresponding author
 
@@ -40,25 +40,248 @@ Through longitudinal in vivo sMRI of rodent brain, using a specific MR sequence 
 
 ## Results
 
-## Behavioral improvement after forelimb reach-and-grasp training
+### Behavioral improvement after forelimb reach-and-grasp training
 
 A group of mice (n = 39) were trained each day on a forelimb-specific motor learning paradigm, the single-pellet reaching task (SRT) over the course of 15 consecutive days (including 3 pre-training days) and whole-brain structural images were acquired at six time points during the learning paradigm (Figure 1A–C, SI Appendix, Figure 1—video 1). Successful reaches and accuracy during motor skill training significantly increased with time (F11,364 = 25.50, p<0.001 and F11,364 = 7.976, p<0.001, respectively) in trained mice (Figure 1D and E). The improvement in accuracy was confirmed by an improvement in successful reaches on first attempt throughout the learning paradigm (F11, 364 = 10.56, p<0.001; Figure 1F). A higher level of skill was attained by the group of trained mice compared to a group of nontrained controls (n = 16). The ability of control mice to reach, grasp, and retrieve pellets was measured on the final day of the motor learning paradigm. At experimental day 14, trained animals successfully retrieved 47 ± 3% pellets with accuracy of 18 ± 3% while nontrained control mice performed significantly lower (t = 8.641, df = 45, p<0.001) than trained mice with only 7 ± 2% successful reaches and an average accuracy of 10 ± 2%.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) Illustration (A) and MRI timeline (B) during a motor skill behavioral paradigm (SRT: skill reaching trained; NTC: nontrained controls). (C) Example of an individual in vivo T1-weighted MRI at 9.4 T at native resolution (0.1 mm isotropic, radiological display). (D) Mean performance scores during training of a skilled, single-pellet forelimb reach task, calculated as percentage (47 ± 1) of successful reaches (D) and percent (18 ± 1) accuracy (E) or percentage of successful reaches on the first attempted reach (19 ± 1) (F), during the 12-day training paradigm. Plots (D–F) represent the mean and error (SEM) for each performance score of trained subjects; n=37 for experimental days 1-6, n=35 for days 7-8, n=33 for days 9-12, n=31 for days 13-14. Non-trained controls (n=16) were evaluated only at experimental day 14 and the mean and error (SEM) for each performance score is indicated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Performance calculated as percentage (54 ± 5) of successful reaches (A) and percent (22 ± 3) accuracy (B) or percentage of successful reaches on the first attempted reach (C), during the 12-day training paradigm. Plots represent the mean and error (SEM) for each performance score of trained subjects; n=37 for experimental days 1-6, n=35 for days 7-8, n=33 for days 9-12, n=31 for days 13-14. Non-trained controls (n=16) were evaluated only at experimental day 14 and the mean and error (SEM) for each performance score is indicated.
+
 An additional group of mice were trained (n = 64 + 8 from the previous group), yet individuals were sacrificed at specific time points during the learning paradigm for cross-sectional analysis of brain tissue. This group of trained mice showed similar improvements in successful reaches and accuracy over the 12 days of training (F11, 336 = 36.36, p<0.001 and F11, 336 = 5.806, p<0.001, respectively; SI Appendix, Figure 1—figure supplement 1A and B). The improvement in accuracy was confirmed by an improvement in successful reaches on first attempt throughout the learning paradigm (F11, 336 = 11.67, p<0.001; Figure 1—figure supplement 1C). On the final training day, trained animals that completed the 15-day learning paradigm (n = 12) successfully reached-to-grasp an average of 54 ± 5% of pellets with an average accuracy of 22 ± 3%, whereas nontrained controls (n = 3 + 9 from the previous group) exhibited only an average of 7 ± 2% successful reaches with an average accuracy of 11 ± 3%. Skilled reaching performance of trained mice was significantly better than performance of nontrained control animals at the end of the behavioral paradigm (t = 7.425, df = 20, p<0.001), confirming motor skill learning in trained mice.
 
-## Whole-brain structural analysis identified nonlinear decreases in gray matter volume juxtaposed to nonlinear increases in white matter volume during motor learning
+### Whole-brain structural analysis identified nonlinear decreases in gray matter volume juxtaposed to nonlinear increases in white matter volume during motor learning
 
 We performed in vivo T1-weighted MR imaging at baseline, immediately prior to motor skill training (last day of ‘pre-training’) and at four time points during motor skill learning (‘training’). VBM analyses revealed changes in GMV and WMV in trained and in nontrained control mice (SI Appendix, Figure 2—figure supplement 1A and B, Figure 2—figure supplement 1—source data 1). To discriminate the effects of motor learning from those of time, the learning effects were evaluated using whole-brain VBM analysis of longitudinal sMRI data on trained mice relative to nontrained controls (i.e., group by time interactions). Three different regression models – linear, asymptotic, and quadratic (SI Appendix, Figure 2—figure supplement 2), representing three different time courses – were used and revealed statistically significant changes in both GMV and WMV (pFDR corr<0.01). Significant nonlinear decreases in GMV relative to the control group were observed juxtaposed with significant nonlinear increases in WMV during learning (Figure 2A and B). Interestingly, the asymptotic model provided a much higher number of significant voxels than either the linear or quadratic models and there were no significant linear changes in WM associated with learning (Table 1). Areas well-known to be involved in motor learning were identified by VBM analysis, following an asymptotic time-course model in trained animals relative to nontrained controls (SI Appendix, Figure 2—figure supplement 3). Significant decreases in GMV and significant increases in WMV were observed in both cortical and subcortical brain areas. In addition, significant MRI signal changes in WMV were observed in many subcortical WM areas (SI Appendix, Figure 2—figure supplement 4) using a lower threshold (pFDR corr<0.05).
 
+**Table 1.**
+ Training by group interaction effects for gray matter volume (GMV) and white matter volume (WMV).Whole-brain between-group analysis presenting the significant number of voxels (pFDR corr<0.01 and <0.001) together with the change in volume (mm3).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Changes in GMV</th>
+      <th colspan="2">Changes in WMV</th>
+    </tr>
+    <tr>
+      <th>Increase</th>
+      <th>Decrease</th>
+      <th>Increase</th>
+      <th>Decrease</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">pFDR corr&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Linear</td>
+      <td>-</td>
+      <td>45,158 (23.12)</td>
+      <td>12,407 (6.35)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Asymptotic</td>
+      <td>-</td>
+      <td>241,549 (123.68)</td>
+      <td>78,442 (40.16)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Quadratic</td>
+      <td>-</td>
+      <td>28,615 (14.65)</td>
+      <td>2250 (1.15)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">pFDR corr &lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Linear</td>
+      <td>-</td>
+      <td>1834 (0.94)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Asymptotic</td>
+      <td>-</td>
+      <td>109,811 (56.22)</td>
+      <td>22,095 (11.31)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Quadratic</td>
+      <td>-</td>
+      <td>2780 (1.42)</td>
+      <td>288 (0.15)</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig2-v2.jpg)
+
+**Figure 2.:** Significant changes were observed in GMV (A) and WMV (B) for which volumetric changes were modeled by three different time courses (linear model in red, asymptotic model in green, and quadratic model in blue) overlayed on the in vivo MRI template created from all subjects in this study. Decreases in volume (cold blue scale) and the increases in volume (warm red scale), in coronal sections ranging from A/P Bregma –0.1 to –0.7 mm, defined using the asymptotic model (pFDR corr<0.01) and thresholded at DAIC > 10 for asymptotic versus linear and/or quadratic models (C). Cortical and subcortical areas following an asymptotic model show decreases in GMV and increases in WMV and include primary motor cortex (MOp), primary somatosensory cortex for the forelimb (SSp-ul), and globus pallidus (GPe) contralateral to the trained limb, among others. Discrete clusters for which Akaike information criterion (AIC) values indicated a preferred quadratic model (D). Preferred quadratic clusters are observed in paramedian lobule of cerebellum (PRM), superior colliculus (SC), and main olfactory bulb (MOB) ipsilateral to the trained limb, medial septum and vermian lobule VI (DEC), and nucleus accumbens (ACb) contralateral to the trained limb.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Training mice in the single-pellet forelimb reach task produces nonlinear decreases in gray matter volume (GMV) (pFDR corr<0.001) and nonlinear increases in white matter volume (WMV) (pFDR corr<0.01) (A), whereas a linear increase in GMV was observed in nontrained control animals with time (B), whole-brain statistical maps (pFDR corr<0.01) are represented on a study-specific in vivo template (AP –0.1 mm, DV –3.0 mm from Bregma; 0.08 mm isotropic, radiological display).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Linear, (B) increase followed by a stabilization (inverse-quadratic-asymptotic), and (C) increase followed by a renormalization (inverse-quadratic).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Changes in GMV and WMV modeled using the asymptotic model and overlayed on the in vivo MRI template created from this study. Whole-brain decreases in GMV (cold blue scale) and the increases in WMV (warm red scale), in coronal sections ranging from A/P Bregma –4.3 to –7.5 mm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig2-figsupp4-v2.jpg)
+
 Furthermore, whole-brain analysis indicated that, in some brain areas, one model fit the time courses better than the others. Akaike information criterion (AIC) values were used to distinguish these specific areas. Clusters for which AIC values indicated asymptotic modeling revealed GMV decreases in discrete brain areas including primary motor cortex (MOp), primary somatosensory cortex for the forelimb (SSp-ul), and globus pallidus (GPe) (Figure 2C). whereas clusters for which AIC values indicated preferred quadratic modeling revealed GMV decreases in the paramedian lobule (PRM) and vermian lobule VI of cerebellum (DEC), superior colliculus (SC), and nucleus accumbens (ACb; Figure 2D).
 
-## VBM restricted to cortical sensorimotor areas identified nonlinear decreases in gray matter volume together with nonlinear increases in white matter volume during motor learning
+### VBM restricted to cortical sensorimotor areas identified nonlinear decreases in gray matter volume together with nonlinear increases in white matter volume during motor learning
 
 To explicitly investigate changes within cortical regions known to be involved in motor skill learning, based on previous observations, we generated a bilateral atlas-based mask of primary motor cortex (MOp), secondary motor cortex (MOs), and primary somatosensory cortex (SSp) (Figure 3A and B). Using this cortical mask, the three different regression models were tested and compared (Table 2). This analysis demonstrated that asymptotic modeling was clearly preferred and that statistically significant decreases in GMV (pFDR corr<0.001) overlapped with significant increases in WMV (pFDR corr<0.01) in cortical sensorimotor areas in trained animals relative to nontrained controls (Figure 3A and B). These were observed in primary motor areas (MOp) and somatosensory cortex for forelimb and hindlimb (SSp-ul and SSp-ll) contralateral to the trained limb, somatosensory barrel field (SSp-bf) ipsilateral to the trained limb, and bilateral secondary motor areas (MOs) and bilateral somatosensory area for the mouth (SSp-m). Additionally, we found GMV decreases in contralateral somatosensory area for the nose (SSp-n) and bilateral GMV decreases in primary motor areas (MOp) and somatosensory cortex for the forelimb and hindlimb (SSp-ul and SSp-ll), as well as in barrel field (SSp-bf). Furthermore, we observed bilateral increases in WMV in primary motor area (MOp), somatosensory cortex for the forelimb and hindlimb (SSp-ul and SSp-ll), somatosensory area for the barrel field (SSp-bf), and somatosensory area for the nose (SSp-n).
 
+**Table 2.**
+ Gray matter volume (GMV) and white matter volume (WMV) training by group interaction effects.Masked cortical areas (MOp + MOs + SSp) between-group analysis presenting the significant number of voxels (pFDR corr.<0.01) together with the change in volume (mm3).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Changes in GMV</th>
+      <th colspan="2">Changes in WMV</th>
+    </tr>
+    <tr>
+      <th>Increase</th>
+      <th>Decrease</th>
+      <th>Increase</th>
+      <th>Decrease</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">pFDR corr&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Linear</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Asymptotic</td>
+      <td>-</td>
+      <td>33,817 (17.31)</td>
+      <td>13,356 (6.83)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Quadratic</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_MOp, primary motor cortex; MOs, secondary motor cortex; SSp, primary somatosensory cortex._
+
+![Figure 3.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig3-v2.jpg)
+
+**Figure 3.:** (A) VBM analysis using an atlas-based bilateral mask for primary motor cortex (MOp), secondary motor cortex (MOs), and primary sensory areas (SSp) revealed significant decreases in GMV (cold blue scale) and increases in WMV (warm red scale) following an asymptotic model (pFDR corr<0.001 and <0.01, respectively). Non-linear decreases in GMV are observed together, and overlap (green), with non-linear increases in WMV. (B) 3D representations of the atlas-based mask for MOp + MOs + SSp together with the overlap of significant GMV and WMV changes (green). (C) GMV changes, relative to nontrained controls, in sensorimotor cortex contralateral to the trained forelimb extracted using a volume of interest (VOI) based on fMRI mapping of forepaw stimulation (VOI represented in green). (D) WMV changes, relative to nontrained controls, from the same VOI in (C). Plots in (C) and (D) represent the average extracted value, normalized to non-trained controls (n=16), of each VOI for every trained subject ± SEM; n=31 at 0, n=31 at 2, n=33 at 6, n=35 at 8, n=37 at 10 and n=39, at experimental day 14.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) GMV, relative to nontrained controls, in CFA contralateral to the trained forelimb (volume of interest [VOI] represented in green). (B) WMV extracted and plotted from CFA VOI in (A). (C) GMV, relative to nontrained controls, in RFA contralateral to the trained forelimb (VOI represented in red). (D) WMV extracted and plotted from the same RFA VOI in (C) Plots represent the average extracted value, normalized to non-trained controls (n=16), of each VOI for every trained subject ± SEM; n=31 at 0, n=31 at 2, n=33 at 6, n=35 at 8, n=37 at 10 and n=39, at experimental day 14.
+
 To further constrain our analysis, structural data were extracted and analyzed using a nonbiased volume of interest (VOI) for sensorimotor cortex, based on fMRI maps of forepaw stimulation reported by Jung and colleagues in 2019 (Jung et al., 2019; Figure 3C and D). Nonlinear decreases in GMV and increases in WMV relative to nontrained controls were observed contralateral to the trained limb. These changes followed a nonlinear model rather than a linear one (Δ AICc > 2; Table 3). In addition, we created two additional VOIs based on known areas of reorganization of forelimb representation using multielectrode recordings and skill reaching (Tennant et al., 2011). Structural data were extracted and plotted for the caudal forelimb area (CFA) and the rostral forelimb area (RFA) contralateral to the trained limb (Table 3; SI Appendix, Figure 3—figure supplement 1) and similar nonlinear changes were observed. Changes in both GMV and WMV followed a quadratic/nonlinear pattern rather than linear (Δ AICc > 2) except for intracortical myelin in RFA where it was not possible to discriminate which model fit best (Δ AICc < 2).
 
-## Motor learning evokes nonlinear plasticity within cortical layers IV–VIa
+**Table 3.**
+ Comparison of Akaike information criterion (AIC) values for changes in gray and white matter taken from structural data extracted using three unbiased cortical volumes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">fMRI VOI</th>
+      <th colspan="2">RFA VOI</th>
+      <th colspan="2">CFA VOI</th>
+    </tr>
+    <tr>
+      <th>Linear</th>
+      <th>Quadratic</th>
+      <th>Linear</th>
+      <th>Quadratic</th>
+      <th>Linear</th>
+      <th>Quadratic</th>
+    </tr>
+    <tr>
+      <th colspan="5">Changes in GMV</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AICc</td>
+      <td>–1271</td>
+      <td>–1278</td>
+      <td>–1833</td>
+      <td>–1835</td>
+      <td>–1337</td>
+      <td>–1358</td>
+    </tr>
+    <tr>
+      <td>Probability of correctness</td>
+      <td>3.50%</td>
+      <td>96.50%</td>
+      <td>24.09%</td>
+      <td>75.91%</td>
+      <td>&lt;0.01%</td>
+      <td>&gt;99.99%</td>
+    </tr>
+    <tr>
+      <td colspan="7">Changes in WMV</td>
+    </tr>
+    <tr>
+      <td>AICc</td>
+      <td>–664.3</td>
+      <td>–686.6</td>
+      <td>–94.80</td>
+      <td>–95.33</td>
+      <td>–682.2</td>
+      <td>–699.8</td>
+    </tr>
+    <tr>
+      <td>Probability of correctness</td>
+      <td>&lt;0.01%</td>
+      <td>&gt;99.99%</td>
+      <td>43.45%</td>
+      <td>56.55%</td>
+      <td>0.02%</td>
+      <td>99.98%</td>
+    </tr>
+  </tbody>
+</table>
+
+_GMV, gray matter volume; WMV, white matter volume; VOI, volume of interest; RFA, rostral forelimb area; CFA, caudal forelimb area._
+
+### Motor learning evokes nonlinear plasticity within cortical layers IV–VIa
 
 In order to place the results obtained from cortical sensorimotor-restricted VBM within the different layers of the cortex, we normalized the Allen Mouse Brain Atlas (AMBA) to the in vivo MRI template from this study. The nonlinear decreases in GMV together with nonlinear increases in WMV observed during motor learning in somatosensory cortex span from layer IV through layer VIa (Figure 4A). A combined staining of cells and fibers in coronal sections of mouse brain tissue was also used to differentiate and identify cortical layers. VBM results were coregistered to ex vivo histological sections and confirmed observations using the cortical layers from the AMBA (Figure 4B). An enlargement of these results is presented in Figure 4C. The somatosensory cortex is organized into six layers, much like the rest of the neocortex. Layer 4 is associated with more input, and layer 5 is associated with more output. Thus, the changes observed by VBM involve both cortical input and output of information.
 
@@ -66,17 +289,43 @@ In order to place the results obtained from cortical sensorimotor-restricted VBM
 
 **Figure 4.:** (A) Normalization of the Allen Mouse Brain Atlas to the in vivo MRI template from this study allowed for an accurate location of the nonlinear changes in primary somatosensory cortex (SSp) within the different cortical layers. (B) The cortical layers disposition from the Allen Mouse Brain Atlas was confirmed using a combined staining of cells and fibers in coronal sections of mouse brain tissue. (C) Nonlinear changes in SSp were coregistered to ex vivo histological sections and confirmed observations obtained using the cortical layers from the Allen Mouse Brain Atlas. Nonlinear decreases in GMV (cold blue scale) together with nonlinear increases in WMV (warm red scale) and the overlap of significant GMV and WMV changes (green).
 
-## Motor learning evokes nonlinear plasticity of cortical white matter components that are associated with adaptive myelination
+### Motor learning evokes nonlinear plasticity of cortical white matter components that are associated with adaptive myelination
 
 Although we employed a T1-weighted sequence specifically chosen for increased myelin detection within GM, MRI metrics do not provide direct myelin measures. We therefore immunolabeled myelin basic protein (MBP) in coronal brain sections at six different intervals during the learning paradigm (SI Appendix, Figure 5—figure supplement 1). These intervals were matched to those used for MRI: baseline, immediately prior to motor skill training, and at four time points during motor skill training. Myelin immunoreactivity was quantified in an area of SSp-ul that presented with a highly significant VBM cluster contralateral to the trained limb, as well as significant changes in ipsilateral SSp-ul when an atlas-based cortical mask was applied to our data (Figure 5). We observed a significant correlation between WMV, extracted using an unbiased fMRI-based VOI from an independent study (Jung et al., 2019), with myelin immunoreactivity in trained animals (Figure 5B; Pearson’s r = 0.75, p=0.03). In line with this result, we found a nonsignificant negative trend between GMV and myelin immunoreactivity (Figure 5B; Pearson’s r = –0.38, p=0.35). The quantification of myelin immunoreactivity within the bilateral cluster located in SSp-ul revealed significant changes with training (one-way ANOVA, F5,66 = 2.538, p<0.05; Figure 5C). Specifically, myelin immunoreactivity increased up until experimental day 6 after which it began to decrease toward baseline levels. From baseline measurements, at experimental day 0, average MBP immunoreactivity increased by 15% at experimental day 6 followed by an 8% decrease from experimental day 6 to experimental day 14. In line with our observations using VBM, the differences detected in myelin immunoreactivity preferentially followed a nonlinear model rather than linear (Δ AICc > 2) with an 87.8% probability of a preferred nonlinear model compared to a linear model. No significant differences were observed in myelin immunoreactivity between trained animals and nontrained controls at experimental day 14 (t = 0.4096, df = 22, p>0.05) (SI Appendix, Figure 5—figure supplement 2A) nor in nontrained controls between baseline experimental day 0 and experimental day 14 (SI Appendix, Figure 5—figure supplement 2B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative image of myelin immunohistochemistry. (B) Positive correlation between cortical white matter volume (WMV) values and myelin immunoreactivity at the individual level in trained animals (Pearson’s r = 0.75, p=.03) and nonsignificant negative correlation between gray matter volume (GMV) and myelin immunoreactivity (Pearson’s r = –0.38, p=–0.35). (C) Myelin immunoreactivity increases until experimental day 6, after which it decreases toward baseline levels. The changes detected in myelin immunoreactivity follow a quadratic model rather than a linear one (AICc > 2). Data are represented as mean ± SEM (n=12 for each experimental day) (D) Illustrative representative of the three measurements acquired at the sensorimotor cortex in the same area where myelin was quantified. (E) No significant changes were observed in sensorimotor cortical thickness between trained animals and nontrained controls, (unpaired t-test; t(98)=0.5561) and no differences in the cumulative distribution of cortical thickness were observed between groups in the primary somatosensory cortex for the forelimb (SSp-ul) (F). (G) Correlation between learning rate and the asymptotic fit (measured as AICc) for WMV on an individual level (Pearson’s r = –0.378, p=0.0360) in which animals with WMV that best fit an asymptotic model (lower AICc values) exhibited higher learning rates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** No differences in myelin immunoreactivity were observed between trained animals (n=12) and non-trained control animals (n=12) (A) at the last experimental day (day 14); unpaired t-test, t(22)=0.4096, alpha level of 0.05. In addition, no differences in myelin immunoreactivity were observed between non-trained control animals at experimental day 0 and at training day 12 (experimental day 14) (B); n=12, paired t-test, t(11)=0.5865, alpha level of 0.05.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) MBP-immunolabeled coronal section at Bregma A/P –0.34. (B) Magnification of the cortical areas of the MBP-immunolabeled section in (A). (C) Enlargement of the area for which MBP immunoreactivity was quantified by densitometry. Individual myelinated axons can be appreciated.
 
 In addition to myelin immunoreactivity, cortical thickness was also quantified in histological sections in sensorimotor cortex where myelin was evaluated (Figure 5D–F). No significant difference was observed in cortical thickness between trained mice and nontrained controls (t = 0.5561, df = 98, p>0.05, n animals = 72 for trained mice, n animals = 28 for nontrained controls). Similarly, no difference was found in the cumulative distribution of cortical thickness between groups (Kolmogorov–Smirnov test, p>0.05, D = 0.08949, n = 424 for trained mice, n = 191 for nontrained controls).
 
 Morphometric changes in WMV and myelin immunoreactivity in SSp-ul were observed to follow a nonlinear trajectory in which we observed significant increases followed by a total, or partial, return to baseline levels during skill learning. To explore the relationship between learning and adaptive myelination, we evaluated whether learning rate correlates with the asymptotic changes for WMV. We evaluated WMV data extracted from the fMRI VOI contralateral to the trained limb at experimental day 14 and found a correlation between learning rate and WMV (Figure 5G) (Pearson’s r = –0.378, p=0.0360). Animals in which changes in WMV presented a larger similarity to an asymptotic time course (lower AICc values) exhibited a higher learning rate.
 
-## Confocal microscopy of myelinated axons revealed nonlinear changes in length density with learning
+### Confocal microscopy of myelinated axons revealed nonlinear changes in length density with learning
 
 To further investigate the changes detected in myelin immunoreactivity, we used confocal microscopy combined with a quantitative analysis of fibers as previously described (Hamodeh et al., 2014) to reconstruct fiber skeletons (Figure 6A) and quantitate length density (calculated as length of myelinated fibers per unit tissue volume), diameter and volumetric fraction of myelinated axons (Figure 6B). Confocal images were acquired in MBP-immunolabeled coronal sections of trained animals in SSp-ul contralateral to the trained forelimb at baseline, experimental day 6 and experimental day 14 (Figure 6A, Figure 6—figure supplement 1). There is a significant increase in the length density of myelinated axons from baseline to experimental day 6 followed by a significant decrease toward baseline levels at experimental day 14 (one-way ANOVA, F2,7 = 8.249, p<0.05; Figure 6B). Specifically, the length density of myelinated axons increased 175% from baseline to experimental day 6 and decreased 60% from experimental 6 to experimental day 14. Furthermore, the length density of myelinated axons follows a nonlinear quadratic model (F2,7 = 8.249, p<0.05; Figure 6B) with an R2 of 0.7021. The changes detected in length density of myelinated axons follow a quadratic model rather than a linear one (AIC > 2) with a 99.35% probability of a preferred quadratic model compared to a linear model. Length density is influenced by the remodeling of existing myelin sheaths and the addition of new myelin onto previously unmyelinated regions of axons, either by newly recruited or preexisting oligodendrocytes.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative confocal images and skeleton reconstructions of myelinated axons at experimental days 0, 6, and 14; pseudo-colorized to reflect thickness. (B) Length density of myelinated axons follows a quadratic model rather than a linear one (Akaike information criterion [AIC] > 2) in which there is a 175% increase from baseline to experimental day 6, followed by a 60% decrease from experimental day 6 to experimental day 14 (one-way ANOVA, F2,7 = 8.249, P < .05). (C) There are no significant changes in diameter of myelinated axons with learning (one-way ANOVA, F2,7 = 1.196, alpha level of 0.05) nor in the volumetric fraction of myelinated axons in (D) (one-way ANOVA, F2,7 = 1.748, alpha level of 0.05). Plotted values represent the mean and error (SEM), n=3–4.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Confocal images (nine probes/animal) were acquired in myelin basic protein (MBP)-immunolabeled coronal sections of trained animals in the primary somatosensory cortex for the forelimb (SSp-ul) contralateral to the trained forelimb. (B) Skeleton reconstruction of myelinated axons from (A); pseudo-colorized to reflect thickness. (C) Magnification of a representative probe and its skeleton reconstruction in (D).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/77432/elife-77432-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Confocal images were acquired in myelin basic protein (MBP)-immunolabeled coronal sections and fiber skeletons were generated using Amira software and the Auto Skeleton package. (B) Optical zoom magnification of MBP immunofluorescence and the generated fiber skeletons pseudo-colorized to reflect thickness. The skeleton structure consisted of myelinated axon segments with cylinders (called nodes) spaced at 0.5 µm along the fibers. The myelinated axonal radius is calculated within the ‘Auto Skeleton’ function in Amira at each cylinder (or node) between the center of the node and the myelin boundary, taking into account the magnification factor and dimensions of the input data. See ‘Materials and methods’ for additional details.
 
 There is a nonsignificant decrease (59%) in myelin sheath diameter from baseline to experimental day 6, followed by a nonsignificant increase (118%) from experimental day 6 to experimental day 14 (one-way ANOVA, F2,7 = 1.196, p=0.36; Figure 6C). Although the changes observed in myelin sheath diameter are substantial, the spread of myelin sheath diameter between subjects at experimental day 0, together with a modest number of observations (n = 4 per experimental day), does not allow for null hypothesis rejection. There was a nonsignificant increase (105%) in myelin sheath volume from baseline to experimental day 6, followed by a nonsignificant increase (25%) in myelin sheath volume from experimental day 6 to experimental day 14 (one-way ANOVA, F2,7 = 1.748, p=0.24; Figure 6D).
 
@@ -106,27 +355,275 @@ In this study, we observed the temporal dynamics of experience-dependent macrost
 
 ## Materials and methods
 
-## Experimental design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>#000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Recombinant anti-myelin basic protein antibody (rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab7349</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 goat anti-rat IgG (H+L) (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>112-585-167</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoflurane</td>
+      <td>Piramal Critical Care B.V.</td>
+      <td>MTnr: 44821 (SE)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium chloride solution (9 mg/mL)</td>
+      <td>B.Braun</td>
+      <td>MTnr: 11054 (SE)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Viscotears</td>
+      <td>Bausch &amp; Lomb</td>
+      <td>MTnr: 12508 (SE)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-655,708</td>
+      <td>Sigma-Aldrich</td>
+      <td>L9787</td>
+      <td>0.7 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pentobarbital sodium</td>
+      <td>Apotek Produktion &amp; Laboratorier</td>
+      <td>338327</td>
+      <td>100 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>VWR Chemicals</td>
+      <td>28794.295</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Luxol fast blue</td>
+      <td>Sigma-Aldrich</td>
+      <td>S3382</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cresyl violet</td>
+      <td>Merck</td>
+      <td>1.05235.0025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Xylene</td>
+      <td>VWR Chemicals</td>
+      <td>28975.291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glacial acetic acid</td>
+      <td>Merck</td>
+      <td>1.00063.1011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Absolute ethanol</td>
+      <td>VWR Chemicals</td>
+      <td>20820.296P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lithium carbonate</td>
+      <td>Merck</td>
+      <td>Art. 5680</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>O.C.T. compound</td>
+      <td>VWR Chemicals</td>
+      <td>361603E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Entellan Neu</td>
+      <td>Merck</td>
+      <td>1.07961.0500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mowiol 4-88</td>
+      <td>Sigma-Aldrich</td>
+      <td>81381</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DABCO</td>
+      <td>Sigma-Aldrich</td>
+      <td>D27802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>http://www.graphpad.com/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>http://www.graphpad.com/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>http://www.mathworks.com/products/matlab/</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPM</td>
+      <td>http://www.fil.ion.ucl.ac.uk/spm/</td>
+      <td>RRID:SCR_007037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPMmouse toolbox</td>
+      <td>doi:10.1016/j.mri.2013.06.001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ANTs software package</td>
+      <td>http://www.picsl.upenn.edu/ANTS/</td>
+      <td>RRID:SCR_004757</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio (version 4.0.3)</td>
+      <td>http://www.rstudio.com/ (R Development Core Team, 2017)</td>
+      <td>RRID:SCR_000432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FSL</td>
+      <td>http://www.fmrib.ox.ac.uk/fsl/</td>
+      <td>RRID:SCR_002823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>http://fiji.sc</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AMIRA (Advanced 3D Visualization and Volume Modeling)</td>
+      <td>http://www.fei.com/software/amira-3d-for-life-sciences/</td>
+      <td>RRID:SCR_007353</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN Digital Imaging for Light Microscopy</td>
+      <td>http://www.zeiss.com/microscopy/en_us/products/microscope-software/zen.html#introduction</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Purified Rodent Tablet</td>
+      <td>TestDiet</td>
+      <td>5TUL</td>
+      <td>Food pellets used in the motor skill learning paradigm</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superfrost plus objective slides</td>
+      <td>Thermo Scientific (Menzel-Gläser)</td>
+      <td>J1800AMNZ</td>
+      <td>Slides used for placement of histological sections</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Normal goat serum</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>005-000-121</td>
+      <td>Serum used to prevent nonspecific binding of antibody in immunohistochemistry</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental design
 
 To study the structural changes that occur in the brain during the acquisition of a novel motor skill, two independent sets of experiments (1 and 2) were performed:
 
-## Animal care
+### Animal care
 
 All procedures were in accordance with protocols approved by the Umeå Regional Ethics Committee for Animal Research (ethical permit: Dnr A 35/2016). A total of 123 young-adult (8- to 11-week-old) male C57BL/6J mice (Jackson Laboratory, Bar Harbor, ME) were used in the study. Animals were housed in a 12 hr/12 hr light–dark cycle under controlled humidity and temperature (23°C). During initial acclimation after delivery, animals were provided food and water ad libitum. All animal handling and behavioral training was carried out during the light phase of the light–dark cycle. Mice were food-restricted 1 week prior to behavioral training. Food restriction was performed gradually to reach 85–90% of their free-feeding weight (calculated by a nonfood-restricted control group). To familiarize mice with the precision pellets (20 mg Purified Rodent Tablet, TestDiet, Richmond, IN) used during motor skill training, 1 g pellets/day were placed into the homecage on the 2 days prior to pre-training. Animal weight was monitored during the entire experiment to ensure that individuals did not fall under 85% of their calculated free-feeding weight on an individual basis.
 
-## Behavioral training: Single-pellet reaching task
+### Behavioral training: Single-pellet reaching task
 
 A skilled, single-pellet forelimb reach paradigm was performed as previously described in rat (Molina-Luna et al., 2009) with some modifications to the training cage (26.5 cm × 9 cm × 20 cm; with grooves to position pellets located 1 cm from inside the cage, see Figure 1A). Mice were trained to reach through a narrow slit to grasp and retrieve food pellets positioned within a small indentation located contralateral to the preferred forelimb for each individual animal. Prior to motor skill training, mice were handled and habituated to the behavioral cage during 3 days (‘pre-training’; 3 days of 15 min sessions). During the first pre-training day, pellets were placed onto the floor close to the narrow opening at the front of the training cage. During the second and the third pre-training days, pellets were placed onto the shelf located at the front of the cage, outside of the narrow opening and animals occasionally reached to grasp pellets, which was used to determine handedness. During the subsequent 12 days (‘training’; 12 consecutive days of 15 min sessions), each animal in the trained group was given a 15 min training session each day that consisted of 30 discrete trials (one pellet/trial). During the entire 15-day experimental paradigm, age-matched nontrained control mice (n = 16) were placed into identical training cages for 15 min and were provided 30 pellets on the cage floor for each experimental day.
 
-## Behavioral analysis
+### Behavioral analysis
 
 Each of the 12 training sessions were recorded using a digital camera positioned at the front of the training cage. To evaluate motor performance, the number of successful reaches was tallied in addition to the total number of grasping attempts per trial. Video recordings were reviewed if clarification of the score was required. Grasp-to-reach success was calculated as the percent of trials for which food pellets were successfully retrieved from the groove without exhibiting any abnormal behavior (i.e., reaching with the nontrained forelimb or the use of tongue to retrieve to pellet) divided and normalized by the number of trials completed by each individual animal during the 15 min daily training session. Accuracy was calculated as the percentage of successful reaches normalized by the number of attempts performed for each successful trial. The learning rate for each individual was calculated by the slope of a logarithmic model fitted to the learning curve for each individual animal. To evaluate a possible improvement in successful reaches and accuracy over time, restricted maximum likelihood (REML) analysis (allowing for missing values from the animals sacrificed at different time points during the learning paradigm) was calculated for the SRT group. To compare the performance of the SRT group and NTC group, we carried out a t-test analysis on successful reaches on experimental day 14.
 
-## MRI
+#### MRI
 
 Animals were scanned and at least 2 hr transpired after waking from anesthesia to behavioral training on any of the MR scan days along the experimental timeline. To prevent any possible isoflurane-induced memory impairment, mice were administered a very low dose (0.7 mg/kg, s.c.) of the highly selective ⍺5GABAA receptor inverse agonist, L-655,708 (Sigma-Aldrich, Stockholm, Sweden AB) 15 min prior to the induction of anesthesia (Saab et al., 2010). Anesthesia was induced using 4.0% isoflurane mixed with oxygen that was subsequently lowered to 1.5–2% for maintenance during experimental scans. T1-weighted images were acquired using an MT pulse for increased contrast between tissue types with different transfer susceptibilities. We used a T1 3D FLASH sequence (TR/TE = 50/8 ms, flip angle = 20°, using four repetitions) with MT-weighting by Gaussian-shaped off-resonance irradiation (30 μT MT pulse, frequency offset 1.5 kHz, pulse duration 1.8 ms, flip angle 351.2°) performed at 9.4 T (Bruker BioSpec 94/20, running Paravision 6.0 software) with 100 μm isotropic spatial resolution using a 1H Quadrature transmit/receive MRI cryogenic mouse brain RF coil (MRI CryoProbe, Bruker, Germany) for signal reception. The total scan time was 38 min. At the end of each scan, mice were administered saline (10 mL/kg, i.p.) for rehydration and individually placed into a cage to recover from anesthesia before it was returned to its homecage.
 
-## MRI data preprocessing analysis
+### MRI data preprocessing analysis
 
 T1-weighted images were reoriented to match FSL standard orientation convention and were skull stripped using a template-based approach (Delora et al., 2016). Skull-stripped images were then bias-corrected for intensity inhomogeneities using the N4 Bias Correction algorithm included in ANTs software package (Tustison et al., 2010).
 
@@ -136,7 +633,7 @@ A two-stage process was used create our own study- and sequence-specific tissue 
 
 The individual smoothed and modulated GM and WM TPMs were thresholded at 0.2 (20%) to create GM and WM masks for removal of low-probability voxels. All time point data for each subject were then concatenated into a single 4D image for further statistical analysis.
 
-## VBM statistical analysis
+### VBM statistical analysis
 
 Linear mixed effects (LME) statistical approach was used to test our hypothesis on whether there are significant changes in GM and WM probabilities because of skilled training over time between trained and control groups. LME was chosen as it is capable of handling missing data and enables modeling of random effects in a longitudinal dataset. For this purpose, total intracranial volume (TIV) and amount of training sessions (or time) were defined as fixed effects and subjects defined as random effects for intercept and time to analyze the data. We used R version 4.0.3 (R Development Core Team, 2017) with lme4 version 1.1-23 (Bates et al., 2015) to perform LME analysis using an in-house coded R script on Ubuntu 18.04.05 LTS workstation. FDR correction was used to correct for multiple comparisons at p<0.05 significance level.
 
@@ -144,26 +641,26 @@ To test for different patterns of change in GM and WM, we used three different r
 
 To study changes in GM and WM with learning specific to cortical areas, we restricted our analysis to M1, M2, and S1 regions using a mask based on the Turone Mouse Brain Template Atlas (TMBTA) (Barrière et al., 2021) registered to our in vivo brain template.
 
-## Tissue processing and histology
+### Tissue processing and histology
 
 Animals were anesthetized using 100 mg/kg pentobarbital sodium (i.p., 60 mg/mL, Apotek Produktion & Laboratorier [APL], Kungens Kurva, SE) and transcardially perfused using Tyrode’s solution followed by 4% (w/v) paraformaldehyde (PFA) freshly prepared on the same day. After perfusion, brains were post-fixated in 4% PFA at 4°C for 48 hr. Then, PFA was removed and the brains were stored in phosphate buffer (PB) pH 7.40 containing 0.01% (w/v) sodium azide at 4°C. Previous to histology, the brains were cryoprotected in 10% (w/v) sucrose in PB (Na2HPO4 × 2H2O, Na2HPO4 × H2O) with 0.01% (w/v) sodium azide at 4°C. Brains were mounted in O.C.T compound (VWR Chemicals, VWR International, Inc, USA), snap-frozen using high-pressure CO2 and sectioned coronally from Bregma AP 1.70 mm to AP –1.34 mm at 20 µm using a rotatory microtome cryostat (Microm Microtome Cryostat HM 500M). For each brain, at least 10 series of three slides (Superfrost Plus, Thermo Fisher Scientific, Waltham, MA) each containing six sections per slide were obtained. The Kluver–Barrera method (Kluver and Barrera, 1953) for the combined staining of cells and fibers in the nervous system was used to differentiate and identify cortical layers in coronal section of mouse brain tissue. Histological sections were imaged using a ZEISS Axioscan 7 slide scanner (Oberkochen, Germany).
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 Immunodetection of myelin was performed using anti-MBP on coronal sections ranging from Bregma AP –0.1 mm to AP –0.7 mm. Tissue sections were rehydrated in PBS 0.1 M (Na2HPO4 × 2H2O, Na2HPO4 × H2O + NaCl + KCl) and subsequently blocked using 5% (v/v) goat serum in PBS containing 0.3% Triton X-100 (PBST) for 1 hr at room temperature. Sections were then incubated with rat monoclonal anti-MBP primary antibody (1:400; Abcam, ab7349) in PBST containing 2% (v/v) goat serum for 48 hr at 4°C in a humidified chamber. Sections were washed to remove primary antibody (PBS 0.1 M) and then incubated with fluorescently labeled secondary antibody (Alexa Fluor 594 goat anti-rat IgG (H+L); Jackson ImmunoResearch Laboratories) in PBST containing 2% (v/v) goat serum for 1 hr at room temperature in a humidified chamber. Secondary antibody was removed by washing with PBS 0.1 M and coverslips were mounted using Mowiol 4-88 (Sigma-Aldrich, St. Louis, MO) with 2.5 g/100 mL DABCO (Sigma-Aldrich). Immunolabeled sections were stored at 4° C.
 
-## Image acquisition and quantification
+### Image acquisition and quantification
 
 Sections ranging from Bregma AP –0.1 mm to AP –0.7 mm for each animal (n = 84 animals; n = 211 sections) were selected for fluorescence-based microscopy imaging. Images were acquired using a TxRed filter (excitation = 540–580 nm; emission = 600–660 nm) on a Nikon Eclipse Ti-E inverted microscope with a DU897 ANDOR EMCCD camera controlled by Nikon NIS Elements interface, equipped with Nikon CFI Plan Apochromat ×20 (N.A 0.75) objective. Prior to analysis, all the images were aligned using Amira-Avizo Software (version 6.3.0, Thermo Fisher Scientific). A region of interest (ROI) was selected based upon a significant VBM cluster in SSp-ul described in this study. The ROIs were manually positioned and saved for each section using FIJI (Schindelin et al., 2012). Signal-to-noise (specific myelin immunoreactivity versus background fluorescence) was determined by the segmentation of each image using FIJI’s Multi Otsu Threshold plugin using three different levels of classification. This plugin is based on Otsu’s original method but also implements an algorithm described by Liao and Chung (Liao et al., 2001). The specific signal was quantified for each section per individual to calculate a mean immunoreactive value for each subject (n = 12 per time point).
 
-## Image acquisition, image preprocessing, and 3D reconstruction of MBP-labeled axons
+### Image acquisition, image preprocessing, and 3D reconstruction of MBP-labeled axons
 
 Sections with Bregma A/P –0.10 mm were selected for confocal imaging (n = 12 animals; n = 12 sections; n = 108 probes). Animals were arbitrarily selected. Experimental days were selected based on VBM and densitometry results. To avoid loss of information, gain parameter (‘smart gain’) and laser settings were adjusted for an optimal dynamic range [1–255]. Probes were manually located in the area of SSp-ul presenting changes in intracortical myelin. Nine probes per animal were imaged with a laser confocal microscope Leica Sp8 Lia with an HC PL APO ×63/1.40 OIL CS2 objective, using OPSL 552 nm laser to acquire image stacks. Stack of images were acquired using the following parameters: z-stack interval = 0.48 μm; average number of optical sections = 33 (with a minimum of 30 optical sections); matrix size = 1024 × 1024 pixels; voxel xy-size = 0.18 μm × 0.18 μm. The MBP-immunolabeled axons were 3D reconstructed using a method that was first developed to reconstruct brain blood vessels (Fouard et al., 2006) and later adapted to reconstruct neuronal fibers (Hamodeh et al., 2014; Hamodeh et al., 2010; Hamodeh et al., 2017). The fibers are represented by their centerlines with local estimates of their diameters. Fiber skeletons were obtained with the Amira software package (Amira 6.3.1, Konrad-Zuse-Zentrum fur Informationstechnik Berlin [ZIB] and FEI SAS, a part of Thermo Fisher Scientific) and the ‘Auto Skeleton’ package. This package calculates a distance map of the segmented image and then performs a thinning of the label image by preserving object topology, that is, preventing the splitting of a segment. Prior to applying our segmentation and reconstruction algorithm, preprocessing included 3D Edge-preserving-smoothing using a time stop of 25 and step size of 5 followed by Gaussian filtering using a 5 × 5 × 5 kernel and s = 1. These and following segmentation and reconstruction steps were done with an Amira software package. Segmentation of converted 8-bit gray-level images into a binary image was performed using the Amira ‘Auto Thresholding’ module with the factorization method and the Otsu criterion (Otsu, 1979). The final skeleton structure consisted of myelinated axon segments with cylinders (called nodes) spaced at 0.5 µm along the fibers. The myelinated axonal radius is calculated within the ‘Auto Skeleton’ function in Amira at each cylinder (or node) between the center of the node and the myelin boundary, taking into account the magnification factor and dimensions of the input data. Amira skeleton was exported to MATLAB as x,y,z point coordinates with respective fiber diameter as csv file. Only those fiber-reconstructed points were used that were within a ‘well’-labeled region of the section. Due to antibody penetration issue, only a part of the section is stained depending on tissue depth. Therefore, it is important to take the amount of labeling as a function of section depth into account before using the data for quantification. We systematically limited our fiber of analysis to section depths that had a 0.99 quantile of more than 75 (out of 255). This section depth (Thref) was used to calculate the densities within the probes. Only probes that allowed a sufficient depth (>2 µm) of such staining were used in the quantification. Finally, we added a 0.5 µm section depth correction to account for the structures that bordered on the probe limits (Abercrombie, 1946). The average depth that we obtained was 3.6 µm (std = 2, n = 93).
 
-## Cortical thickness analysis
+### Cortical thickness analysis
 
 Cortical thickness (layers I–VI) was measured in SSp-ul at the location of the ROI used to quantify myelin immunoreactivity. Three measurements were made in both hemispheres for each animal corresponding to the area of the significant cluster observed from whole-brain VBM analysis. The measurements were acquired from the length of three lines that were drawn based on the ROIs for myelin immunoreactivity. Data were from 60 trained animals and 24 nontrained controls. In total, 424 measurements from trained animals and 191 measurements from nontrained animals were used. Data from any images in which cortex was partially damaged, confounding a proper measurement, were not included.
 
-## Statistical analysis
+### Statistical analysis
 
 Student’s t-test was used to compare two groups and one-way ANOVA with Tukey’s test for multiple comparisons. Akaike’s information criterion was used to calculate the goodness of fit. The probability of correctness for a model was computed using the next equation: probability = e0.5D/1+e0.5D, where D is the difference between the AICc values. Figure legends specify the statistical test used in each case and the number of independent measurements (n) evaluated. Behavioral improvement, myelin immunoreactivity mean intensities, and cortical thickness were analyzed using Prism 9.0.0 for macOS (GraphPad Software, San Diego, CA).

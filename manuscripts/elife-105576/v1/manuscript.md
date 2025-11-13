@@ -24,27 +24,27 @@
 
 ### Affiliations
 
-1. https://ror.org/04a9tmd77 Department of Ophthalmology, Icahn School of Medicine at Mount Sinai New York United States
-2. https://ror.org/00hj8s172 Department of Ophthalmology, Vagelos College of Physicians and Surgeons, Columbia University Irving Medical Center New York United States
-3. https://ror.org/04g3dn724 Department of Ophthalmology, Massachusetts Eye and Ear, Harvard Medical School Boston United States
-4. https://ror.org/05a0ya142 Broad Institute of MIT and Harvard Cambridge United States
-5. https://ror.org/02jx3x895 NIHR Biomedical Research Centre, Moorfields Eye Hospital NHS Foundation Trust, and University College London Institute of Ophthalmology London United Kingdom
-6. https://ror.org/04b6nzv94 Channing Division of Network Medicine, Department of Medicine, Harvard Medical School and Brigham and Women's Hospital Boston United States
-7. https://ror.org/04xs57h96 Department of Eye and Vision Science, Institute of Life Course and Medical Sciences, University of Liverpool Liverpool United Kingdom
-8. https://ror.org/04xs57h96 St. Paul’s Eye Unit, Liverpool University Hospital NHS Foundation Trust Liverpool United Kingdom
-9. https://ror.org/02kn6nx58 Department of Ophthalmology, Keio University School of Medicine Tokyo Japan
+1. Department of Ophthalmology, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+2. Department of Ophthalmology, Vagelos College of Physicians and Surgeons, Columbia University Irving Medical Center New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+3. Department of Ophthalmology, Massachusetts Eye and Ear, Harvard Medical School Boston United States ([ROR:04g3dn724](https://ror.org/04g3dn724))
+4. Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
+5. NIHR Biomedical Research Centre, Moorfields Eye Hospital NHS Foundation Trust, and University College London Institute of Ophthalmology London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+6. Channing Division of Network Medicine, Department of Medicine, Harvard Medical School and Brigham and Women's Hospital Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
+7. Department of Eye and Vision Science, Institute of Life Course and Medical Sciences, University of Liverpool Liverpool United Kingdom ([ROR:04xs57h96](https://ror.org/04xs57h96))
+8. St. Paul’s Eye Unit, Liverpool University Hospital NHS Foundation Trust Liverpool United Kingdom ([ROR:04xs57h96](https://ror.org/04xs57h96))
+9. Department of Ophthalmology, Keio University School of Medicine Tokyo Japan ([ROR:02kn6nx58](https://ror.org/02kn6nx58))
 10. Epidemiology and Prevention Group, Center for Public Health Sciences, National Cancer Center Tokyo Japan
 11. Okinawa Kenritsu, Chubu Byoin, Uruma Okinawa Japan
-12. https://ror.org/0220mzb33 Department of Ophthalmology, St Thomas' Hospital, King's College London London United Kingdom
-13. https://ror.org/0220mzb33 Department of Twin Research & Genetic Epidemiology, St Thomas' Hospital, King's College London London United Kingdom
-14. https://ror.org/04a9tmd77 Department of Genetics and Genomics Science, Icahn School of Medicine at Mount Sinai New York United States
-15. https://ror.org/00hj8s172 Zuckerman Mind Brain Behavior Institute, Columbia University New York United States
+12. Department of Ophthalmology, St Thomas' Hospital, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+13. Department of Twin Research & Genetic Epidemiology, St Thomas' Hospital, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+14. Department of Genetics and Genomics Science, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+15. Zuckerman Mind Brain Behavior Institute, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
 
 † Corresponding author
 
 ## Abstract
 
-A glaucoma polygenic risk score (PRS) can effectively identify disease risk, but some individuals with high PRS do not develop glaucoma. Factors contributing to this resilience remain unclear. Using 4,658 glaucoma cases and 113,040 controls in a cross-sectional study of the UK Biobank, we investigated whether plasma metabolites enhanced glaucoma prediction and if a metabolomic signature of resilience in high-genetic-risk individuals existed. Logistic regression models incorporating 168 NMR-based metabolites into PRS-based glaucoma assessments were developed, with multiple comparison corrections applied. While metabolites weakly predicted glaucoma (Area Under the Curve = 0.579), they offered marginal prediction improvement in PRS-only-based models (p=0.004). We identified a metabolomic signature associated with resilience in the top glaucoma PRS decile, with elevated glycolysis-related metabolites—lactate (p=8.8E-12), pyruvate (p=1.9E-10), and citrate (p=0.02)—linked to reduced glaucoma prevalence. These metabolites combined significantly modified the PRS-glaucoma relationship (P interaction = 0.011). Higher total resilience metabolite levels within the highest PRS quartile corresponded to lower glaucoma prevalence (Odds Ratio highest vs. lowest total resilience metabolite quartile =0.71, 95% Confidence Interval = 0.64–0.80). As pyruvate is a foundational metabolite linking glycolysis to tricarboxylic acid cycle metabolism and ATP generation, we pursued experimental validation for this putative resilience biomarker in a human-relevant Mus musculus glaucoma model. Dietary pyruvate mitigated elevated intraocular pressure (p=0.002) and optic nerve damage (p<0.0003) in Lmx1b mice. These findings highlight the protective role of pyruvate-related metabolism against glaucoma and suggest potential avenues for therapeutic intervention. V265D
+A glaucoma polygenic risk score (PRS) can effectively identify disease risk, but some individuals with high PRS do not develop glaucoma. Factors contributing to this resilience remain unclear. Using 4,658 glaucoma cases and 113,040 controls in a cross-sectional study of the UK Biobank, we investigated whether plasma metabolites enhanced glaucoma prediction and if a metabolomic signature of resilience in high-genetic-risk individuals existed. Logistic regression models incorporating 168 NMR-based metabolites into PRS-based glaucoma assessments were developed, with multiple comparison corrections applied. While metabolites weakly predicted glaucoma (Area Under the Curve = 0.579), they offered marginal prediction improvement in PRS-only-based models (p=0.004). We identified a metabolomic signature associated with resilience in the top glaucoma PRS decile, with elevated glycolysis-related metabolites—lactate (p=8.8E-12), pyruvate (p=1.9E-10), and citrate (p=0.02)—linked to reduced glaucoma prevalence. These metabolites combined significantly modified the PRS-glaucoma relationship (Pinteraction = 0.011). Higher total resilience metabolite levels within the highest PRS quartile corresponded to lower glaucoma prevalence (Odds Ratiohighest vs. lowest total resilience metabolite quartile=0.71, 95% Confidence Interval = 0.64–0.80). As pyruvate is a foundational metabolite linking glycolysis to tricarboxylic acid cycle metabolism and ATP generation, we pursued experimental validation for this putative resilience biomarker in a human-relevant Mus musculus glaucoma model. Dietary pyruvate mitigated elevated intraocular pressure (p=0.002) and optic nerve damage (p<0.0003) in Lmx1bV265D mice. These findings highlight the protective role of pyruvate-related metabolism against glaucoma and suggest potential avenues for therapeutic intervention.
 
 ## Introduction
 
@@ -60,19 +60,222 @@ This study aims to evaluate plasma metabolites as risk factors for glaucoma. Fir
 
 ## Results
 
-## UK Biobank study characteristics
+### UK Biobank study characteristics
 
 A total of 117,698 participants (4,658 glaucoma cases and 113,040 non-cases) were included in this study. UKBB participants were predominately of European ancestry (85.8%) but were also of mixed American (0.22%), Asian (2.77%), and African (1.73%) ancestry. The design of the human studies is depicted graphically in Figure 1 and Figure 2. There were significant differences seen in baseline demographic and clinical characteristics between the glaucoma cases and the non-cases presented in Table 1. Notably, characteristics associated with glaucoma included male gender, older age, genetic African ancestry (see Privé et al., 2022 for the method to determine genetically inferred ancestry in the UKBB), prior history of smoking, slightly lower cholesterol levels, higher body mass index (BMI), higher hemoglobin A1c (HbA1c), higher IOP, thinner macular retinal nerve fiber layer (mRNFL) thickness, higher caffeine intake, higher alcohol intake, higher oral steroid use, diabetes, and coronary artery disease.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/105576/elife-105576-fig1-v1.jpg)
 
-**Figure 1.:** .
-
 ![Figure 2.](https://cdn.elifesciences.org/articles/105576/elife-105576-fig2-v1.jpg)
 
 **Figure 2.:** (a) 117,698 individuals had metabolomics data available from the UK Biobank, which was divided into a training and test set to formulate a metabolic risk score (MRS) model. (b) The inclusion of metabolites (either 168 metabolites on the nuclear magnetic resonance (NMR) platform or a subset of 27 metabolites with European Union (EU) certification) in relation to prevalent glaucoma risk prediction was studied. (c) A histogram of the polygenic risk score (PRS) distribution is shown. Overall, 4,658 cases and 113,040 individuals without glaucoma are available for analysis. The metabolomic signature of resilience to the top 10% of glaucoma PRS was assessed among 1,693 cases (14.4%) and 10,077 individuals without glaucoma (85.6%). (d) Interactions of prevalent glaucoma with MRS and PRS quartiles were examined.
 
-## Plasma metabolites marginally improve glaucoma risk prediction
+**Table 1.**
+ Demographic and clinical characteristics of the UK Biobank study population assessed in 2006–2010.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>No Glaucoma</th>
+      <th>Glaucoma</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sample Size (%)</td>
+      <td>113,040 (96)</td>
+      <td>4,658 (4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sex - Male (%)</td>
+      <td>52,497 (46.4)</td>
+      <td>2,493 (53.5)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age at recruitment, years, (mean (SD))</td>
+      <td>56.7 (8.0)</td>
+      <td>60.9 (6.6)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Ethnicity (%)</td>
+      <td></td>
+      <td></td>
+      <td>0.0010</td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>105,912 (94)</td>
+      <td>4,331 (93)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asian</td>
+      <td>2,977 (2.6)</td>
+      <td>127 (2.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>2,228 (2.0)</td>
+      <td>130 (2.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1,923 (1.7)</td>
+      <td>70 (1.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic Ancestry (%)</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>African</td>
+      <td>1,911 (1.7)</td>
+      <td>123 (2.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AMR</td>
+      <td>261 (0.2)</td>
+      <td>2 (0.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asian</td>
+      <td>3,125 (2.8)</td>
+      <td>134 (2.9)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>European</td>
+      <td>96,991 (86.6)</td>
+      <td>4,001 (86.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Smoking Status (%)</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Never</td>
+      <td>63,240 (56)</td>
+      <td>2,339 (52)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Prefer not to answer</td>
+      <td>430 (0.4)</td>
+      <td>16 (0.4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>38,926 (34)</td>
+      <td>1,732 (39)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Current</td>
+      <td>10,605 (9.4)</td>
+      <td>410 (9.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total Cholesterol, mmol/l (median [IQR])</td>
+      <td>4.6 [3.98, 5.22]</td>
+      <td>4.5 [3.88, 5.18]</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Physical Activity, MET-minutes per week (mean (SD))</td>
+      <td>2,465 (2,430)</td>
+      <td>2,458 (2,438)</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td>Body Mass Index, kg/m2 (mean (SD))</td>
+      <td>27.4 (4.8)</td>
+      <td>27.7 (4.7)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>HbA1c, mmol/mol (mean (SD))</td>
+      <td>36.0 (5.8)</td>
+      <td>37.4 (6.8)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Spherical Equivalent, diopter (mean (SD))</td>
+      <td>–0.1 (2.1)</td>
+      <td>–0.1 (1.9)</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>Intraocular pressure, mmHg (mean (SD))</td>
+      <td>15.9 (2.6)</td>
+      <td>17.8 (4.5)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>mRNFL thickness, μm (mean (SD))</td>
+      <td>28.7 (1.8)</td>
+      <td>28.5 (1.3)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Beta blocker use (%)</td>
+      <td>8398 (7.4)</td>
+      <td>447 (9.6)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Caffeine intake, mg/day (mean (SD))</td>
+      <td>165 (67)</td>
+      <td>168 (59)</td>
+      <td>0.0020</td>
+    </tr>
+    <tr>
+      <td>Alcohol intake, g/week (median [IQR])</td>
+      <td>84 [40.3, 146.9]</td>
+      <td>84 [48.0, 154.6]</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Diabetes (%)</td>
+      <td>6,512 (5.8)</td>
+      <td>463 (9.9)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Oral steroid use (%)</td>
+      <td>3,043 (2.7)</td>
+      <td>184 (4.0)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Coronary Artery Disease (%)</td>
+      <td>5,153 (4.6)</td>
+      <td>377 (8.1)</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_SD, standard deviation; IQR, interquartile range; AMR, mixed American; MET metabolic equivalent of task; mRNFL, macular retinal nerve fiber layer._
+
+### Plasma metabolites marginally improve glaucoma risk prediction
 
 We first sought to determine whether the addition of metabolites could improve the prediction of glaucoma from basic demographics, clinical variables, and genetic data. We created four logistic regression models, each with increasing predictive variables considered, to evaluate their added utility for predicting glaucoma (see Methods and Figure 3—source data 1 for model construction details). We analyzed two sets of metabolite variables: a comprehensive set of 168 metabolites measured by nuclear magnetic resonance (NMR) spectroscopy included in the UKBB dataset and a limited set of 27 metabolites approved by the European Union (EU) for in vitro diagnostic use.
 
@@ -80,11 +283,97 @@ To evaluate the performance of each model, we plotted receiver operating charact
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/105576/elife-105576-fig3-v1.jpg)
 
-**Figure 3.:** Model 1 includes metabolites only; Model 2 incorporates additional covariates including age (years), sex, genetic ancestry, season, time of day of specimen collection, and fasting time; Model 3 incorporates covariates in Model 2 and smoking status (never, past, and current smoker), alcohol intake (g/week), caffeine intake (mg/day), physical activity (metabolic equivalent of task [MET], hours/week), body mass index (kg/m2), average systolic blood pressure (mm Hg), history of diabetes, HbA1c (mmol/mol), history of coronary artery disease, systemic beta-blocker use, oral steroid use, and spherical equivalent refractive error (diopters); Model 4 incorporates covariates in model 3 and a glaucoma polygenic risk score (PRS). Each color represents a different panel of metabolites (gray = no metabolites; light blue = 27 metabolites; and dark blue = 168 metabolites). The white text represents the AUC ± 95% confidence interval. Abbreviations: ROC, receiver operator curve; AUC, area under the curve; EU, European Union.Figure 3—source data 1.See the excel supplemental file. Model 1 includes metabolites only; Model 2 incorporates additional covariates including age (years), sex, genetic ancestry, season, time of day of specimen collection, and fasting time; Model 3 incorporates covariates in model 2 and smoking status (never, past, and current smoker), alcohol intake (g/week), caffeine intake (mg/day), physical activity (metabolic equivalent of task [MET], hours/week), body mass index (kg/m2), average systolic blood pressure (mm Hg), history of diabetes, HbA1c (mmol/mol), history of coronary artery disease, systemic beta-blocker use, oral steroid use, and spherical equivalent refractive error (diopters); Model 4 incorporates covariates in model 3 and a glaucoma polygenic risk score. Each color represents a different panel of metabolites (gray = no metabolites; light blue = 27 metabolites; and dark blue = 168 metabolites). The white text represents the AUC ± 95% confidence interval. Abbreviations: EU, European Union.
+**Figure 3.:** Model 1 includes metabolites only; Model 2 incorporates additional covariates including age (years), sex, genetic ancestry, season, time of day of specimen collection, and fasting time; Model 3 incorporates covariates in Model 2 and smoking status (never, past, and current smoker), alcohol intake (g/week), caffeine intake (mg/day), physical activity (metabolic equivalent of task [MET], hours/week), body mass index (kg/m2), average systolic blood pressure (mm Hg), history of diabetes, HbA1c (mmol/mol), history of coronary artery disease, systemic beta-blocker use, oral steroid use, and spherical equivalent refractive error (diopters); Model 4 incorporates covariates in model 3 and a glaucoma polygenic risk score (PRS). Each color represents a different panel of metabolites (gray = no metabolites; light blue = 27 metabolites; and dark blue = 168 metabolites). The white text represents the AUC ± 95% confidence interval. Abbreviations: ROC, receiver operator curve; AUC, area under the curve; EU, European Union.
 
 We then investigated whether the inclusion of the 168 metabolites could improve the predictive value for glaucoma by stratifying patients into specific subgroups and calculating AUC curves for each stratum. Accordingly, we found that metabolites showed a modestly improved predictive value for glaucoma among people of White ethnicity (p<0.001), those aged 55 and older (p=0.002), and males (p=0.002) (Table 2).
 
-## Metabolites associated with resilience to a high glaucoma polygenic risk score
+**Table 2.**
+ Stratification of glaucoma by ethnicity, age, and gender for predictive assessment with and without using metabolite data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Stratification</th>
+      <th>Sample size</th>
+      <th>Glaucoma cases</th>
+      <th>No Metabolites (AUC)</th>
+      <th>Metabolites (AUC)</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Ethnicity</td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>110,243</td>
+      <td>4,331</td>
+      <td>0.675</td>
+      <td>0.686</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Asian</td>
+      <td>3,104</td>
+      <td>127</td>
+      <td>0.780</td>
+      <td>0.768</td>
+      <td>0.062</td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>2,358</td>
+      <td>130</td>
+      <td>0.704</td>
+      <td>0.706</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td colspan="6">Age</td>
+    </tr>
+    <tr>
+      <td>&lt;55 years</td>
+      <td>43,648</td>
+      <td>788</td>
+      <td>0.576</td>
+      <td>0.566</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td>≥55 years</td>
+      <td>74,050</td>
+      <td>3,870</td>
+      <td>0.569</td>
+      <td>0.596</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td colspan="6">Gender</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>62,708</td>
+      <td>2,165</td>
+      <td>0.689</td>
+      <td>0.696</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>54,990</td>
+      <td>2,493</td>
+      <td>0.659</td>
+      <td>0.673</td>
+      <td>0.002</td>
+    </tr>
+  </tbody>
+</table>
+
+_The area under the curve (AUC) of the receiver operating characteristic (ROC) curve was calculated for each demographic stratification to evaluate the predictive performance of models both with and without metabolite data. Differences in model AUC were tested using the DeLong test, and p-values were reported. For models excluding metabolite data, the predictors include as appropriate, age (years), sex, genetic ancestry, season, time of day of specimen collection, fasting time (hours), smoking status (never, past, and current smoker), alcohol intake (g/week), caffeine intake (mg/day), physical activity (metabolic equivalent of task [MET], hours/week), body mass index (kg/m2), average systolic blood pressure (mm Hg), history of diabetes, HbA1c (mmol/mol), history of coronary artery disease, systemic beta-blocker use, oral steroid use, and spherical equivalent refractive error (diopters). Models including metabolite data incorporated the same predictors with the addition of the 168 metabolite measurements._
+
+### Metabolites associated with resilience to a high glaucoma polygenic risk score
 
 As metabolite data only marginally augmented clinical or PRS predictions of glaucoma, we hypothesized that metabolites might provide utility for differentiating patients within risk groups. Specifically, we studied participants who possessed a high glaucoma PRS but did not have glaucoma. For this study, we labeled them resilient while recognizing there are many reasons they may not have glaucoma. Participants were stratified into PRS deciles, and metabolite signatures were identified to differentiate patients with and without glaucoma in the top decile (N=11,770) and the bottom half (N=58,358) of the glaucoma PRS distribution (Figure 4). Within the top decile of glaucoma PRS, compared to participants without glaucoma, participants with glaucoma were more likely to be older, male, of White ethnicity, and were prior smokers. Glaucoma participants with the highest PRS also had higher BMI, higher HbA1c, higher spherical equivalent, consumed more caffeine and alcohol, and were more likely to have diabetes and coronary artery disease (Table 3). Among participants in the bottom half of glaucoma PRS, participants with glaucoma were also more likely to be older, male, of Black and Asian ethnicity, prior smokers, had higher BMI and higher HbA1c, and were more likely to have diabetes and coronary artery disease (Table 4). As expected, participants with glaucoma in both bins of glaucoma genetic risk had higher IOP and thinner mRNFL thickness.
 
@@ -92,9 +381,566 @@ As metabolite data only marginally augmented clinical or PRS predictions of glau
 
 **Figure 4.:** Participants were divided into the bottom 50% and top 10% based on their glaucoma PRS, where the prevalence of glaucoma cases from (A) the bottom 50% (n=58,358) was 1.3% and from the top 10% (n=11,770) was 14.4%. (B) Box plot illustrating the distribution of participants with glaucoma (top) and no glaucoma (bottom) as a function of PRS decile. The blue line denotes participants at the bottom 50% of glaucoma PRS, the red line highlights the participants at the top decile of glaucoma PRS, and the red box represents the participants resilient to glaucoma despite high PRS.
 
+**Table 3.**
+ Demographic and clinical characteristics in 2006–2010 of UK Biboank participants among the top 10% of glaucoma polygenic risk score.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>No Glaucoma</th>
+      <th>Glaucoma</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sample size (%)</td>
+      <td>10,077 (85.6)</td>
+      <td colspan="2">1,693 (14.4)</td>
+    </tr>
+    <tr>
+      <td>Sex - Male (%)</td>
+      <td>4,667 (46.3)</td>
+      <td>893 (52.7)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age at recruitment, years, (mean (SD))</td>
+      <td>56.3 (8.0)</td>
+      <td>61.0 (6.3)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ethnicity (%)</td>
+      <td></td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>9,256 (91.9)</td>
+      <td>1,636 (96.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asian</td>
+      <td>279 (2.8)</td>
+      <td>24 (1.4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>345 (3.4)</td>
+      <td>20 (1.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>197 (2.0)</td>
+      <td>13 (0.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Smoking Status (%)</td>
+      <td></td>
+      <td>0.0030</td>
+    </tr>
+    <tr>
+      <td>Never</td>
+      <td>5,806 (57.6)</td>
+      <td>899 (53.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Prefer not to answer</td>
+      <td>48 (0.5)</td>
+      <td>5 (0.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>3402 (33.8)</td>
+      <td>640 (37.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Current</td>
+      <td>821 (8.1)</td>
+      <td>149 (8.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Physical Activity, MET-minutes per week (mean (SD))</td>
+      <td>2,439 (2,352)</td>
+      <td>2,514 (2,480)</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Body mass index, kg/m2 (mean (SD))</td>
+      <td>27.4 (4.7)</td>
+      <td>27.7 (4.8)</td>
+      <td>0.0080</td>
+    </tr>
+    <tr>
+      <td>HbA1c, mmol/mol (mean (SD))</td>
+      <td>36.00 (5.9)</td>
+      <td>37.0 (6.1)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Spherical Equivalent, diopter (mean (SD))</td>
+      <td>–0.3 (2.2)</td>
+      <td>–0.2 (1.9)</td>
+      <td>0.0090</td>
+    </tr>
+    <tr>
+      <td>Intraocular pressure, mmHg (mean (SD))</td>
+      <td>17.2 (3.0)</td>
+      <td>18.3 (5.0)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>mRNFL thickness, μm (mean (SD))</td>
+      <td>28.7 (1.8)</td>
+      <td>28.5 (1.2)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Beta blocker use (%)</td>
+      <td>719 (7.1)</td>
+      <td>179 (10.6)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Caffeine intake, mg/day (mean (SD))</td>
+      <td>164 (65)</td>
+      <td>170 (60)</td>
+      <td>0.0010</td>
+    </tr>
+    <tr>
+      <td>Alcohol intake, g/week (median [IQR])</td>
+      <td>84 [38.6, 145.3]</td>
+      <td>84 [51.5, 155.3]</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Diabetes mellitus (%)</td>
+      <td>607 (6.0)</td>
+      <td>151 (8.9)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Oral steroid use (%)</td>
+      <td>292 (2.9)</td>
+      <td>59 (3.5)</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>Coronary Artery Disease (%)</td>
+      <td>443 (4.4)</td>
+      <td>148 (8.7)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol, mmol/l (median [IQR])</td>
+      <td>4.61 [4.00, 5.25]</td>
+      <td>4.54 [3.90, 5.21]</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Lactate, mmol/l (median [IQR])</td>
+      <td>3.96 [3.27, 4.78]</td>
+      <td>3.79 [3.16, 4.58]</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Pyruvate, mmol/l (median [IQR])</td>
+      <td>0.080 [0.06, 0.10]</td>
+      <td>0.077 [0.06, 0.09]</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Citrate, mmol/l (median [IQR])</td>
+      <td>0.065 [0.06, 0.07]</td>
+      <td>0.065 [0.06, 0.07]</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>Cholesteryl Esters in Small HDL, mmol/l (median [IQR])</td>
+      <td>0.33 [0.30, 0.36]</td>
+      <td>0.33 [0.30, 0.36]</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Triglycerides in Very Large VLDL, mmol/l (median [IQR])</td>
+      <td>0.091 [0.05, 0.15]</td>
+      <td>0.10 [0.05, 0.17]</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Alanine, mmol/l (median [IQR])</td>
+      <td>0.29 [0.24, 0.35]</td>
+      <td>0.29 [0.24, 0.35]</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <td>Triglycerides in Chylomicrons and extremely Large VLDL, mmol/l (median [IQR])</td>
+      <td>0.088 [0.03, 0.18]</td>
+      <td>0.10 [0.04, 0.21]</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Acetoacetate, mmol/l (median [IQR])</td>
+      <td>0.010 [0.01, 0.02]</td>
+      <td>0.011 [0.01, 0.02]</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Cholesteryl Esters in Medium HDL, mmol/l (median [IQR])</td>
+      <td>0.41 [0.34, 0.48]</td>
+      <td>0.40 [0.34, 0.47]</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Triglycerides in Large VLDL, mmol/l (median [IQR])</td>
+      <td>0.15 [0.09, 0.22]</td>
+      <td>0.16 [0.10, 0.23]</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Cholesterol in Medium HDL, mmol/l (median [IQR])</td>
+      <td>0.49 [0.42, 0.58]</td>
+      <td>0.48 [0.41, 0.57]</td>
+      <td>0.005</td>
+    </tr>
+  </tbody>
+</table>
+
+_SD, standard deviation; IQR, interquartile range; MET, metabolic equivalent of task; HbA1c, hemoglobin A1C; mRNFL, macular retinal nerve fiber layer; HDL, high-density lipoprotein; VLDL, very low-density lipoprotein._
+
+**Table 4.**
+ Demographic and clinical characteristics in 2006–2010 of UK Biobank participants among the bottom 50% of glaucoma polygenic risk score.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>No Glaucoma</th>
+      <th colspan="2">Glaucoma</th>
+      <th colspan="2">p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sample size (%)</td>
+      <td>57,578 (98.7)</td>
+      <td colspan="2">780 (1.3)</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Sex - Male (%)</td>
+      <td>26,887 (46.7)</td>
+      <td colspan="2">409 (52.4)</td>
+      <td colspan="2">0.002</td>
+    </tr>
+    <tr>
+      <td>Age at recruitment, years, (mean (SD))</td>
+      <td>57 (8.0)</td>
+      <td colspan="2">60 (7.0)</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ethnicity (%)</td>
+      <td></td>
+      <td colspan="2">&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>55,034 (96)</td>
+      <td colspan="2">690 (89)</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Asian</td>
+      <td>1,129 (2.0)</td>
+      <td colspan="2">41 (5.3)</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>574 (1.0)</td>
+      <td colspan="2">27 (3.5)</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>841 (1.5)</td>
+      <td colspan="2">22 (2.8)</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Smoking Status (%)</td>
+      <td></td>
+      <td colspan="2">0.67</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Never</td>
+      <td>200 (0.3)</td>
+      <td colspan="2">4 (0.5)</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Prefer not to answer</td>
+      <td>31,593 (54.9)</td>
+      <td colspan="2">418 (53.6)</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>20,276 (35.2)</td>
+      <td colspan="2">287 (36.8)</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Current</td>
+      <td>5,509 (9.6)</td>
+      <td colspan="2">71 (9.1)</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>MET, minutes per week (mean (SD))</td>
+      <td>2,483 (2,450)</td>
+      <td colspan="2">2,612 (2,562)</td>
+      <td colspan="2">0.14</td>
+    </tr>
+    <tr>
+      <td>Body mass index kg/m2 (mean (SD))</td>
+      <td>27.4 (4.8)</td>
+      <td colspan="2">27.8 (4.7)</td>
+      <td colspan="2">0.021</td>
+    </tr>
+    <tr>
+      <td>HbA1c, mmol/mol (mean (SD))</td>
+      <td>35.9 (5.7)</td>
+      <td colspan="2">38.1 (7.8)</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Spherical Equivalent, diopter (mean (SD))</td>
+      <td>–0.03 (2.1)</td>
+      <td colspan="2">0.01 (1.9)</td>
+      <td colspan="2">0.63</td>
+    </tr>
+    <tr>
+      <td>Intraocular pressure, mmHg (mean (SD))</td>
+      <td>15.4 (2.4)</td>
+      <td colspan="2">17.1 (3.9)</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>mRNFL thickness, μm (mean (SD))</td>
+      <td>28.7 (1.7)</td>
+      <td colspan="2">28.6 (1.3)</td>
+      <td colspan="2">0.02</td>
+    </tr>
+    <tr>
+      <td>Beta blocker use (%)</td>
+      <td>4,322 (7.5)</td>
+      <td colspan="2">71 (9.1)</td>
+      <td colspan="2">0.11</td>
+    </tr>
+    <tr>
+      <td>Caffeine intake, mg/day (mean (SD))</td>
+      <td>1,66.3 (67.4)</td>
+      <td colspan="2">166.6 (61.5)</td>
+      <td colspan="2">0.90</td>
+    </tr>
+    <tr>
+      <td>Alcohol intake, g/week (median [IQR])</td>
+      <td>84 [41.7, 149.3]</td>
+      <td colspan="2">84 [42.5, 145.9]</td>
+      <td colspan="2">0.91</td>
+    </tr>
+    <tr>
+      <td>Diabetes (%)</td>
+      <td>3,209 (5.6)</td>
+      <td colspan="2">104 (13.3)</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Oral steroid use (%)</td>
+      <td>1,538 (2.7)</td>
+      <td colspan="2">39 (5.0)</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Coronary Artery Disease (%)</td>
+      <td>2,656 (4.6)</td>
+      <td colspan="2">64 (8.2)</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol, mmol/l (median [IQR])</td>
+      <td>4.59 [3.98, 5.22]</td>
+      <td colspan="2">4.49 [3.76, 5.13]</td>
+      <td colspan="2">0.001</td>
+    </tr>
+    <tr>
+      <td>Lactate, mmol/l (median [IQR])</td>
+      <td>3.95 [3.24, 4.75]</td>
+      <td colspan="2">3.84 [3.21, 4.69]</td>
+      <td colspan="2">0.16</td>
+    </tr>
+    <tr>
+      <td>Concentration of Small HDL Particles, mmol/l (median [IQR])</td>
+      <td>0.0097 [0.0089, 0.011]</td>
+      <td colspan="2">0.0095 [0.0088, 0.010]</td>
+      <td colspan="2">0.002</td>
+    </tr>
+    <tr>
+      <td>Cholesteryl esters in small HDL, mmol/l (median [IQR])</td>
+      <td>0.33 [0.30, 0.36]</td>
+      <td colspan="2">0.32 [0.30, 0.36]</td>
+      <td colspan="2">0.001</td>
+    </tr>
+    <tr>
+      <td>Albumin, mmol/l (median [IQR])</td>
+      <td>39.4 [37.3, 41.45]</td>
+      <td colspan="2">38.9 [36.7, 40.8]</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Total lipids in small HDL, mmol/l (median [IQR])</td>
+      <td>1.16 [1.06, 1.26]</td>
+      <td colspan="2">1.15 [1.05, 1.25]</td>
+      <td colspan="2">0.018</td>
+    </tr>
+    <tr>
+      <td>Citrate, mmol/l (median [IQR])</td>
+      <td>0.065 [0.057, 0.074]</td>
+      <td colspan="2">0.065 [0.057, 0.073]</td>
+      <td colspan="2">0.52</td>
+    </tr>
+    <tr>
+      <td>Pyruvate, mmol/l (median [IQR])</td>
+      <td>0.080 [0.06, 0.10]</td>
+      <td colspan="2">0.079 [0.061, 0.098]</td>
+      <td colspan="2">0.14</td>
+    </tr>
+    <tr>
+      <td>Alanine, mmol/l (median [IQR])</td>
+      <td>0.29 [0.24, 0.35]</td>
+      <td colspan="2">0.29 [0.24, 0.35]</td>
+      <td colspan="2">0.95</td>
+    </tr>
+    <tr>
+      <td>Phospholipids in Small HDL, mmol/l (median [IQR])</td>
+      <td>0.66 [0.60, 0.72]</td>
+      <td colspan="2">0.66 [0.60, 0.71]</td>
+      <td colspan="2">0.033</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_SD, standard deviation; MET, metabolic equivalents; HbA1c, hemoglobin A1C; mRNFL, macula region retinal nerve fiber layer; HDL, high density lipoprotein; VLDL, very low density lipoprotein._
+
 Our multivariable-adjusted analysis revealed that higher probit-transformed levels of lactate (adjusted PNEF = 8.8E-12), pyruvate (adjusted PNEF = 2.9E-10), and citrate (adjusted PNEF = 0.018) were independently associated with no glaucoma in the top decile of glaucoma PRS (Table 5). In addition, lower levels of triglycerides and higher levels of selected HDL analytes had an adjusted PNEF  < 0.2 and were associated with no glaucoma among participants with high genetic risk. Among the bottom half of the PRS distribution, higher levels of albumin were associated with no glaucoma (adjusted PNEF = 0.047), while higher levels of small HDL, omega-3 fatty acids, docosahexaenoic acid, lactate, and citrate were associated with no glaucoma, albeit with an adjusted PNEF < 0.2.
 
-## Interaction of metabolic and genetic biomarkers
+**Table 5.**
+ Metabolites associated with glaucoma among UK Biobank participants in the top decile and the bottom half of glaucoma polygenic risk score.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Top 10% of glaucoma polygenic risk scorpe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Metabolites (Probit score)</td>
+      <td>Glaucoma</td>
+      <td>No Glaucoma</td>
+      <td>Adjusted p-value (NEF)</td>
+    </tr>
+    <tr>
+      <td>Lactate</td>
+      <td>–0.146</td>
+      <td>0.0239</td>
+      <td>8.8E-12</td>
+    </tr>
+    <tr>
+      <td>Pyruvate</td>
+      <td>–0.137</td>
+      <td>0.0117</td>
+      <td>2.9E-10</td>
+    </tr>
+    <tr>
+      <td>Citrate</td>
+      <td>–0.0693</td>
+      <td>0.0079</td>
+      <td>0.018</td>
+    </tr>
+    <tr>
+      <td>Triglycerides in Very Large VLDL</td>
+      <td>0.0606</td>
+      <td>–0.0043</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Triglycerides in Chylomicrons and Extremely Large VLDL</td>
+      <td>0.0572</td>
+      <td>–0.0076</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Acetoacetate</td>
+      <td>0.0744</td>
+      <td>0.0011</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Cholesteryl Esters in Small HDL</td>
+      <td>–0.0239</td>
+      <td>0.0376</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Cholesteryl Esters in Medium HDL</td>
+      <td>–0.0261</td>
+      <td>0.0276</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Alanine</td>
+      <td>–0.0612</td>
+      <td>–0.0006</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>Triglycerides in Large VLDL</td>
+      <td>0.0629</td>
+      <td>0.0005</td>
+      <td>0.15</td>
+    </tr>
+  </tbody>
+</table>
+
+_Potential confounders adjusted by regression include time since the last meal/drink (hours), age (years), age-squared (years-squared), sex, ethnicity (Asian, Black, White, and other), season, time of day of specimen collection (morning, afternoon, night), smoking status (never, past, and current smoker), alcohol intake, caffeine intake, physical activity (metabolic equivalent of task [MET] hours/week), body mass index (kg/m2), average systolic blood pressure (mm Hg), history of diabetes (yes or no), HbA1c (mmol/mol), history of coronary artery disease, systemic beta- blocker use, oral steroid use, and spherical equivalent refractive error (diopters)._
+
+### Interaction of metabolic and genetic biomarkers
 
 The three metabolites (lactate, pyruvate, and citrate) for which higher levels were associated with reduced glaucoma prevalence in individuals with high genetic susceptibility had no statistically significant relationship with glaucoma for participants in the lower half of the PRS distribution at the adjusted PNEF <0.05 level. Thus, we hypothesized that there may be an interaction between these metabolites and genetic risk. Such an interaction would suggest that these glycolysis/tricarboxylic acid (TCA) cycle metabolites are relevant primarily in the setting of high PRS, establishing them as resilience factors against elevated genetic risk of glaucoma. Indeed, we observed a significant interaction between elevated levels of total lactate, pyruvate, and citrate with glaucoma PRS quartile for predicting the risk of glaucoma (Pinteraction = 0.011; Figure 5).
 
@@ -114,7 +960,7 @@ Most importantly, using individuals in the lowest quartiles of PRS and MRS (PRS 
 
 **Figure 6.:** (A) The bar chart plots the odds ratio of glaucoma as a function of holistic probit-transformed MRS quartile with further stratification by glaucoma PRS in each MRS bin. The lowest quartile of glaucoma PRS and MRS is the reference group (see dotted red line) for the entire population. Each color represents the MRS quartiles (red = first quartile; blue = second quartile; green = third quartile; and purple = fourth quartile). Error bars show the 95% confidence interval (CI). The table under the bar chart shows the ranges for the PRS and MRS quartiles. (B) Table showing odds ratios for glaucoma by polygenic risk score (PRS) and MRS within various quartiles. The number of glaucoma cases within each MRS and the number of glaucoma cases in PRS Q1 and MRS Q1 are used to calculate the odds ratios. This analysis is adjusted for time since the last meal/drink (hours), age (years), age-squared (years-squared), sex, ethnicity (Asian, Black, White, and other), season, time of day of specimen collection (morning, afternoon, night), smoking status (never, past, and current smoker), alcohol intake, caffeine intake, physical activity (metabolic equivalent of task [MET] hours/week), body mass index (kg/m2), average systolic blood pressure (mm Hg), history of diabetes (yes or no), HbA1c (mmol/mol), history of coronary artery disease, systemic beta-blocker use, oral steroid use, and spherical equivalent refractive error (diopters).
 
-## Pyruvate supplementation lessens intraocular pressure and glaucoma
+### Pyruvate supplementation lessens intraocular pressure and glaucoma
 
 To functionally test the association between higher levels of pyruvate and resilience to glaucoma, we experimentally tested whether treatment with pyruvate induces resilience to IOP elevation and glaucoma in a human-relevant mouse model. Common variants in LMX1B are associated with IOP variation and the most common form of human glaucoma, primary open-angle glaucoma (POAG) (Choquet et al., 2018; Gao et al., 2018; Gharahkhani et al., 2021; Khawaja et al., 2018; MacGregor et al., 2018; Shiga et al., 2018). Rare Mendelian variants in LMX1B can produce early-onset ocular hypertension and open-angle glaucoma (OAG) (Cross et al., 2014). We have previously demonstrated that mice with a dominant mutation in Lmx1b (Lmx1bV265D/+) develop IOP elevation and glaucoma (Cross et al., 2014; Tolman et al., 2021). Depending on the genetic background, this Lmx1bV265D mutation induces either early-onset or later glaucoma (Tolman et al., 2021). Mutant mice with a C57BL/6 J strain background develop severe, early-onset IOP elevation and glaucoma. As pyruvate and its metabolites were associated with no glaucoma despite strong genetic predisposition in the UKBB cohort (highest decile of PRS), we tested the ability of dietary pyruvate to induce resilience against the Lmx1bV265D-induced glaucoma on this C57BL/6 J genetic background. Pyruvate supplementation through drinking water substantially protected mice from IOP elevation and glaucoma. Pyruvate significantly protected against both anterior chamber deepening (ACD), a consequence of IOP elevation in mouse eyes (Figure 7), and IOP elevation itself (Figure 7). Importantly, pyruvate treatment protected against glaucomatous optic nerve degeneration (Figure 7). Together, our findings strongly support the role of endogenous pyruvate in conferring resilience against glaucoma even countering strong genetic predisposition. Furthermore, they show that pyruvate can act as a potent resilience factor against IOP elevation and glaucoma when delivered orally.
 
@@ -146,64 +992,64 @@ Overall, we have shown that plasma metabolites marginally enhance the predictive
 
 ## Methods
 
-## Study design
+### Study design
 
 Our initial human analysis was conducted in three steps. First, we assessed whether plasma metabolite data alone can predict glaucoma risk with receiver operating characteristic (ROC) curves in the UK Biobank. We then integrated the metabolite data into a polygenic risk score (PRS)-based glaucoma risk assessment model to see if metabolites could enhance glaucoma prediction. Second, we focused on identifying a metabolomic signature of resilience to high glaucoma PRS by comparing plasma metabolites in glaucoma cases versus participants without glaucoma (henceforth referred to as resilient participants) from the top 10% of the glaucoma PRS. Third, we explored the interactions between metabolic scores and PRS in modifying glaucoma risk.
 
-## Study population and data collection
+### Study population and data collection
 
 The UKBB is a prospective cohort study of over half a million participants aged 37–73 years old at recruitment across the United Kingdom from 2006 to 2010. Participants were recruited through the National Health Service registers from 22 assessment centers, where they signed electronic informed consent to participate. Participants then completed in-depth touchscreen questionnaires and trained staff-led interviews, performed body measurements, and provided biological samples (Sudlow et al., 2015). Additional outcomes are available from data linkage to hospital episode statistics, the death register, and primary data (Sudlow et al., 2015; Bycroft et al., 2018; Zeleznik et al., 2022). Biological samples collected from these participants, including blood, urine, and saliva specimens, were used to generate genetic, metabolomic, and proteomic data (Elliott et al., 2008). Details of the UKBB study design and population are described online (https://www.ukbiobank.ac.uk). The UKBB study received approval from the National Health Service North West Multicentre Research Ethics Committee (reference number 06/MRE08/65) and the National Information Governance Board for Health and Social Care. This research, conducted under UK Biobank application number 36741, adhered to the tenets of the Declaration of Helsinki.
 
 The UKBB included 502,613 participants, of which 173,679 participants had self-reported glaucoma data, ICD-coded, or previous glaucoma laser/surgical therapy (34.6%) at baseline. A subset consisting of 117,698 participants with metabolomic data and genetic profiling comprise the study population (Figure 1). The glaucoma cases were defined based on those with self-reported glaucoma, in which participants selected ‘glaucoma’ when they completed a touchscreen questionnaire with the question, ‘Has a doctor told you that you have any of the following problems with your eyes?’. Glaucoma cases also included participants who reported a history of glaucoma surgery or laser therapy on the questionnaire or if an International Classification of Diseases (ICD) code for glaucoma (ICD nineth revision: 365.* [excluding 365.0]; ICD 10th revision: H40.* [excluding H40.0] and H42.*) was carried in linked Hospital Episode Statistics before the baseline assessment. The described approach to identifying glaucoma has been strongly supported by prior research publications (Khawaja et al., 2018; MacGregor et al., 2018).
 
-## Metabolite profiling
+### Metabolite profiling
 
 In the UKBB, a high-throughput nuclear magnetic resonance (NMR)-based biomarker platform (Nightingale Health Ltd; Helsinki, Finland) was used to measure the metabolomic profile in the randomly selected non-fasting EDTA plasma samples from a subset of participant. (Julkunen et al., 2021). In contrast to liquid chromatography/mass spectroscopy, NMR spectroscopy produces distinctive spectral shapes for molecules containing hydrogen atoms (Takis et al., 2019) The AUCs are proportional to the concentration of each molecule based on chemical shifts and J coupling split patterns derived from quantum mechanics (Soininen et al., 2015; Mihaleva et al., 2014). The NMR platform contains data on 249 metabolic biomarkers (168 absolute levels and 81 ratio measures), including a subset of 36 biomarkers (27 absolute levels and 9 ratio measures) certified for broad diagnostic use by the European Union (EU) (Julkunen et al., 2021). In this study, we focused on the 168-metabolite and the 27-metabolite sets for analysis (for a complete list of quantified metabolites, refer to Appendix 1, Supplementary Methods). Individual metabolite values were transformed to probit scores to standardize their range and reduce the impact of skewed distributions.
 
-## Construction of PRS for glaucoma
+### Construction of PRS for glaucoma
 
 The glaucoma PRS used in this study was from a multi-trait analysis of GWAS (MTAG) on glaucoma (Craig et al., 2020) This PRS was derived based on GWAS data from glaucoma (7,947 cases and 119,318 controls) and its endophenotypes: optic nerve head structure using vertical cup-disc ratio (VCDR) (including additional data from 67,040 UKBB and 23,899 International Glaucoma Genetics Consortium (IGGC) participants), and intraocular pressure (IOP, including additional data on 103,914 UKBB and 29,578 IGGC participants). The glaucoma PRS was constructed using single nucleotide polymorphisms (SNPs) with MTAG p-values ≤0.001, resulting in 2,673 uncorrelated SNPs after LD-clumping at r2=0.1, and was found to have a predictive ability with an AUC of 0.68 (95% confidence interval, CI, [0.67–0.70]) and 0.80 accounting for age, sex, family history, and PRS tested in the Australian and New Zealand Registry of Advanced Glaucoma cohort.
 
-## Model building/covariates
+### Model building/covariates
 
 We first assessed whether the inclusion of probit-transformed metabolite data enhances glaucoma prediction algorithms. We adjusted for factors involving major determinants of variability in metabolites, POAG-established and suspected risk factors, and other comorbidities. In model 1, we considered metabolites only. Model 2 incorporated additional demographic covariates, including age (years), sex, genetic ancestry, season, time of day of specimen collection (morning, afternoon, night), and fasting time (hours). Model 3 incorporated covariates in model 2 and additional variables accounting for comorbidities potentially related to glaucoma including smoking status (never, past, and current smoker), alcohol intake (g/week) (Stuart et al., 2023a), caffeine intake (mg/day) (Kim et al., 2021), physical activity (metabolic equivalent of task [MET], hours/week), body mass index (kg/m2), average systolic blood pressure (mm Hg), history of diabetes, hemoglobin A1C (HbA1c, mmol/mol), self-reported history of coronary artery disease, systemic beta-blocker use, oral steroid use, and mean spherical equivalent refractive error (diopters) across both eyes. Model 4 incorporated covariates in model 3 and a glaucoma PRS. We compared these models with and without the metabolites to determine the predictive ability of the metabolites above and beyond a glaucoma PRS and known risk factors. Missing values were imputed with medians for numeric variables and modes for factor variables.
 
-## Statistical analysis
+### Statistical analysis
 
-## Metabolite-based predictive modeling
+#### Metabolite-based predictive modeling
 
 Multivariable logistic regression models with regularization (implemented with glmnet) were built to investigate the associations of metabolic biomarkers and the risk of glaucoma. We used four sequential models, adjusting for covariates as described above. For each model, we examined three groupings: no metabolites, the 27 metabolites corresponding to EU-stamped validated markers, and 168 metabolites corresponding to all the measured plasma metabolites captured in the UKBB. We used regularization to address collinearity, which reduced the set of metabolites and other covariates considered in each model (reported in Figure 3—source data 1). To examine model accuracy for predicting glaucoma prevalence, we utilized ROC curves and associated AUC measurements as a metric for model performance. We performed fivefold cross-validation and split data into 80% used for training and 20% used for evaluation. All metabolites’ values were probit transformed and used as continuous variables (per 1 standard deviation (SD) increase). Additionally, we stratified glaucoma by age, ethnicity, and sex. The DeLong test was utilized to examine the statistical significance of AUC differences between models, with a threshold of p<0.05 as statistically significant.
 
-## Identifying resilience metabolites to high glaucoma polygenic risk scores
+#### Identifying resilience metabolites to high glaucoma polygenic risk scores
 
 To identify individual metabolites associated with resilience to a high glaucoma PRS, we first performed a logistic regression model to obtain metabolite residuals from probit-transformed concentration data adjusting for the following variables: age, age-squared, time since the last meal/drink (≤4, 5–8, and 9+ hr), sex, ethnicity (Asian, Black, White, and mixed/other), season, time of day of specimen collection, smoking status (never, past, and current smoker), alcohol intake, caffeine intake, physical activity (metabolic equivalent of task [MET] hours/week), body mass index (kg/m2), average systolic blood pressure (mm Hg), history of diabetes, HbA1c (mmol/mol), history of coronary artery disease, systemic beta-blocker use, oral steroid use, and spherical equivalent refractive error (diopters). Metabolites associated with glaucoma were nominated by performing a t-test comparing residuals in participants with and without glaucoma to identify metabolites significantly associated with glaucoma in both the top 10% and the bottom 50% of glaucoma PRS score. This stratification balanced case counts to enable comparison of groups with adequate sample size (780 glaucoma cases in the bottom 50% of PRS score and 1,693 glaucoma cases in the top 10% of PRS score). To account for covariance in metabolite abundance, we corrected for multiple comparisons using the number of effective tests (NEF) method (Gao et al., 2008). First, a correlation matrix was generated using pairwise complete observations to address any missing values. Eigenvalue decomposition was performed on the correlation matrix to capture the principal components. Principal components contributing more than 1% of the total variance were calculated, yielding 9 significant components, capturing 91.6% of the variance. Thus, we applied a Bonferroni adjustment based on the number of significant components (n=9) to calculate the adjusted p-values accounting for multiple hypotheses. p-values are considered statistically significant if the NEF-adjusted p-value was <0.05 (Gao et al., 2008). Given this was an exploratory analysis, NEF-adjust p-values <0.2 were considered worthy of additional analysis.
 
-## Construction of metabolite risk scores
+#### Construction of metabolite risk scores
 
 We constructed MRS, which were calculated as a weighted sum of each metabolic biomarker from coefficients in the 168-metabolite base model. Specifically, we utilized a logistic regression model (implemented with a binomial glm) using probit transformed metabolite values to predict the prevalence of glaucoma using fivefold cross-validation. The resulting beta values were extracted and are reported in Appendix 2—table 1. To determine if there is an interaction between glaucoma MRS and PRS, we utilized extracted model coefficients and corresponding significance from a binomial generalized linear model. We fit this model using the formula Glaucoma ~PRS * MRS + PRS + MRS + Covariates. We classified participants into 16 groups by quartiles of MRS and PRS. Within each PRS quartile, we used MRS quartile 1 as the reference for comparison. Additionally, we used the group in both PRS quartile 1 and MRS quartile 1 as the overall reference group for all comparisons among the groups. A chi-squared test was used to assess statistical significance between odds ratios (ORs) with 95% confidence intervals (CIs).
 
 To investigate whether age modifies the associations of resilience metabolites with glaucoma, we conducted a stratified analysis and assessed a three-way interaction term of age (≥ or <58 years old, based on median age), the sum of resilience metabolite levels, and PRS using a Wald test for individuals in the top 10% PRS. All statistical analyses and plots were produced using R version 4.2.1 (R Foundation for Statistical Computing, Vienna, Austria). All statistical tests were two-sided.
 
-## Animal husbandry and ethics statement
+#### Animal husbandry and ethics statement
 
 Experimental mice had a C57BL/6 J (Jackson Laboratory Stock #000664) genetic background. The Lmx1bV265D (alias Lmx1bIcst; European Mouse Mutant Archive, EM:00114) mutation is previously reported to cause high IOP and glaucoma in mice, with IOP becoming elevated in some eyes during the first months after birth (Cross et al., 2014; Tolman et al., 2021; Thaung et al., 2002). The mutation was backcrossed to the C57BL/6 J strain for at least 30 generations. All mice were treated per the Association for Research in Vision and Ophthalmology’s statement on the use of animals in ophthalmic research. The Institutional Animal Care and Use Committee of Columbia University approved all experimental protocols performed (protocol IDs: AC-AABE9554 and AC-AABD0557). Mice were maintained on PicoLab Rodent Diet 20 (5053, 4.5% fat) and provided with reverse osmosis-filtered water. Mutant and control littermates were housed together in cages containing ¼-inch corn cob bedding, covered with polyester filters. The animal facility was maintained at a constant temperature of 22 °C with a 14 hours light and 10 hours dark cycle.
 
-## Genotyping mice
+#### Genotyping mice
 
 Lmx1bV265D and Lmx1b+genotypes were determined by direct Sanger sequencing of a specific PCR product. Genomic DNA was PCR amplified with forward primer 5′-CTTTGAGCCATCGGAGCTG-3′ and reverse primer 5′-ATCTCCGACCGCTTCCTGAT-3′ using the following program: (1) 94 °C for 3 minutes; (2) 94 °C for 30 seconds; (3) 57 °C for 30 seconds; (4) 72 °C for 1 minute; (5) repeat steps 2–4 for 35 times; and (6) 72 °C for 5  minutes. PCR products were purified and sequenced by the Genewiz (Azenta Life Sciences).
 
-## Slit-lamp examination
+#### Slit-lamp examination
 
 Anterior segments were examined approximately every 2 weeks between 1 month and 3 months of age and examined at monthly intervals between 3 months of age and harvest age (6 months). Balanced groups of males and females were examined as previously published (Cross et al., 2014; Tolman et al., 2021). Photographs were taken with a 40x objective lens. Anterior chamber deepening, a sign of exposure to high IOP, was graded based on a semiquantitative scale of no deepening (not present), mild, moderate, or severe, as previously published (Tolman et al., 2021). Under examination by either a slit-lamp or dissection scope (during IOP procedure), anterior chamber deepening was only detected in Lmx1b mutant groups. Groups were compared statistically by Fisher’s exact test. There were n>40 eyes (biological replicates) were examined in each group.
 
-## Intraocular pressure measurement
+#### Intraocular pressure measurement
 
 IOP was measured with the microneedle method as previously described in detail (John, 1997; Savinova et al., 2001). Before cannulation, mice were acclimatized to the procedure room and anesthetized via an intraperitoneal injection of a mixture of ketamine (99 mg/kg; Ketlar, Parke-Davis, Paramus, NJ, USA) and xylazine (9 mg/kg; Rompun, Phoenix Pharmaceutical, St Joseph, MO, USA) immediately prior to IOP assessment, a procedure that does not alter IOP in the experimental window (Savinova et al., 2001). IOP was measured at both 5–6 weeks and 8–10 weeks of age in WT and Lmx1bV265D/+ eyes. Balanced groups of males and females were examined. During each IOP measurement period, the eyes of independent WT B6 mice were assessed in parallel with experimental mice as a methodological control to ensure proper calibration and equipment function. Experimenters were masked to mouse genotype and drug treatment. Lmx1b mutant groups were compared by ANOVA followed by Tukey’s honestly significant difference. There were n>30 eyes examined in each Lmx1bV265D mutant group and n>20 eyes were examined in WT groups.
 
-## Pyruvate administration
+#### Pyruvate administration
 
 Ethyl pyruvate (Sigma-Aldrich, St. Louis, Missouri) was dissolved in the standard institutional drinking water to a dose of 2,000 mg/kg/day for adult mice based on the average volume mice consume. The mothers consumed this dose and delivered it to their suckling pups at an unknown dose throughout the first 3–4 weeks of life. At 4 weeks of age, the mice were weaned into separate cages. From 4 weeks on, the young mice consumed a dose of approximately 2,000 mg/kg/day based on their water consumption and body weight over weekly intervals. Untreated groups received the same drinking water without pyruvate. The water was changed once per week. Treatment was started on postnatal day 2. Births were checked daily between 9 am and 12 pm to determine the pups’ age.
 
-## Optic nerve assessment
+#### Optic nerve assessment
 
 We analyzed Lmx1bV265D/+ and WT control optic nerves for glaucomatous damage at 6 months of age (5.3–5.9 months range; majority are 5.8–5.9 months; sex balanced). Intracranial portions of optic nerves were dissected, processed, and analyzed as previously described (Williams et al., 2017b; Howell et al., 2007; Nair et al., 2016). Briefly, optic nerve cross-sections were stained with para-phenylenediamine (PPD) and examined for glaucomatous damage. PPD stains all myelin sheaths, but differentially darkly stains the myelin sheaths and the axoplasm of damaged axons. This allows for the sensitive detection and quantification of axon damage and loss. Optic nerves were prepared for analysis with a 48 hour fixation in 0.8% paraformaldehyde and 1.2% glutaraldehyde in 0.08 M phosphate buffer (pH 7.4) at 4 °C followed by overnight post-fix in osmium tetroxide at 4 °C. Nerves were washed twice for 10 minutes in 0.1 M phosphate buffer, once in 0.1 M sodium-acetate buffer, and dehydrated in graded ethanol concentrations. Tissues were then embedded in Embed 812 resin (Electron Microscopy Sciences, Fort Washington, PA, USA), and 1 μm-thick sections were stained in 1% PPD for ∼40 minutes. Stained sections were compared using a damage scale that is validated against axon counting (Howell et al., 2007; Howell et al., 2012). Multiple sections of each nerve were considered when determining damage level. Nerves were determined to have one of 4 damage levels: (1) No glaucoma (NOE) – less than 5% axons damaged. This level of damage is seen in age- and sex-matched non-glaucomatous mice and is not due to glaucoma. We named this level no or early stage as some have early molecular changes when assessed with transcriptomics, but they cannot be distinguished from control by morphology; (Williams et al., 2017a; Howell et al., 2011). (2) Moderate damage (MOD) – average of 30% axon loss; (3) Severe (SEV) – greater than 50% axonal loss and extensive axon damage; and (4) Very severe (V. SEV) – glial scar over the vast majority of nerve with few remaining axons. Groups were compared statistically by Fisher’s exact test. There were n=38 (untreated) and n=41 (pyruvate treated) Lmx1bV265D/+ mutant nerves examined. Cohort sizes for all Lmx1bV265D/+ mutant groups were determined using power calculations based on previous nerve damage data, (α=0.05, power = 0.8). Sample sizes required to reach those power and α levels for optic nerve analysis determined the cohort sizes as optic nerve analysis required the largest sample sizes.

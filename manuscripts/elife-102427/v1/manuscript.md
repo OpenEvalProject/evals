@@ -7,10 +7,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02x5c5y60 Center for Cooperative Research in Biosciences, Basque Research and Technology Alliance Derio Spain
-2. https://ror.org/01cc3fy72 Ikerbasque, Basque Foundation for Science Bilbao Spain
-3. https://ror.org/000xsnr85 Department of Organic & Inorganic Chemistry, Faculty of Science and Technology, University of the Basque Country Leioa Spain
-4. https://ror.org/0119pby33 Centro de Investigacion Biomedica En Red de Enfermedades Respiratorias Madrid Spain
+1. Center for Cooperative Research in Biosciences, Basque Research and Technology Alliance Derio Spain ([ROR:02x5c5y60](https://ror.org/02x5c5y60))
+2. Ikerbasque, Basque Foundation for Science Bilbao Spain ([ROR:01cc3fy72](https://ror.org/01cc3fy72))
+3. Department of Organic & Inorganic Chemistry, Faculty of Science and Technology, University of the Basque Country Leioa Spain ([ROR:000xsnr85](https://ror.org/000xsnr85))
+4. Centro de Investigacion Biomedica En Red de Enfermedades Respiratorias Madrid Spain ([ROR:0119pby33](https://ror.org/0119pby33))
 
 † Corresponding author
 

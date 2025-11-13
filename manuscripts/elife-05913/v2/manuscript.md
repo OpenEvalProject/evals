@@ -13,11 +13,11 @@
 
 ## Abstract
 
-10.7554/eLife.05913.001 Do we expect periodic grid cells to emerge in bats, or perhaps dolphins, exploring a three-dimensional environment? How long will it take? Our self-organizing model, based on ring-rate adaptation, points at a complex answer. The mathematical analysis leads to asymptotic states resembling face centered cubic (FCC) and hexagonal close packed (HCP) crystal structures, which are calculated to be very close to each other in terms of cost function. The simulation of the full model, however, shows that the approach to such asymptotic states involves several sub-processes over distinct time scales. The smoothing of the initially irregular multiple fields of individual units and their arrangement into hexagonal grids over certain best planes are observed to occur relatively quickly, even in large 3D volumes. The correct mutual orientation of the planes, though, and the coordinated arrangement of different units, take a longer time, with the network showing no sign of convergence towards either a pure FCC or HCP ordering. DOI: http://dx.doi.org/10.7554/eLife.05913.001
+Do we expect periodic grid cells to emerge in bats, or perhaps dolphins, exploring a three-dimensional environment? How long will it take? Our self-organizing model, based on ring-rate adaptation, points at a complex answer. The mathematical analysis leads to asymptotic states resembling face centered cubic (FCC) and hexagonal close packed (HCP) crystal structures, which are calculated to be very close to each other in terms of cost function. The simulation of the full model, however, shows that the approach to such asymptotic states involves several sub-processes over distinct time scales. The smoothing of the initially irregular multiple fields of individual units and their arrangement into hexagonal grids over certain best planes are observed to occur relatively quickly, even in large 3D volumes. The correct mutual orientation of the planes, though, and the coordinated arrangement of different units, take a longer time, with the network showing no sign of convergence towards either a pure FCC or HCP ordering.
 
 ## Introduction
 
-Where does our internal representation of space come from? And how does it code for space extending in three dimensions? New findings about space-related activity in the bat have recently raised this question again (
+Where does our internal representation of space come from? And how does it code for space extending in three dimensions? New findings about space-related activity in the bat have recently raised this question again (Ulanovsky and Moss, 2011; Yartsev et al., 2011; Yartsev and Ulanovsky, 2013; Finkelstein et al., 2014). The similarity in the place cell and, most remarkably, in the grid cell representation between rodents and bats suggests a common neural substrate for spatial navigation, shared across these mammals (Andersen and Buneo, 2002; Jacobs et al., 2010; Sereno and Lehky, 2011; Killian et al., 2012; Indovina et al., 2013; Jacobs et al., 2013; Thurley et al., 2014), and it provides an indication possibly valid also for other animals living and moving extensively in three dimensions, like for example dolphins, monkeys and even non-mammalian species (Healy et al., 2005; Dacke and Srinivasan, 2007; Wu and Dickman, 2012; Burt de Perera and Holbrook, 2012). At the same time, the obvious difference in the behavior of these species requires a system that flexibly adapts to perform computations as different as mapping two- or three-dimensional space (Knierim et al., 2000; Hayman et al., 2011; Taube and Shinder, 2013). Here we describe a model of grid cell formation that accounts for both these aspects of spatial cognition, in a unitary perspective on the mEC network (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig1-v2.jpg)
 
@@ -27,151 +27,297 @@ Grid cells seemingly require some clever engineering design that generates the c
 
 ## Model
 
-## Numerical simulations
+### Numerical simulations
 
 In our simulations a virtual bat explores a volume of side L with a constant speed v. The position of the animal is sampled at time steps of constant Δt. We temporarily leave these quantities unspecified. We will discuss their actual values at the end of the paper as they are critical for the interpretation of the results. For the moment they should be understood as expressed in arbitrary units. The path the animal performs is generated as a correlated random walk in which the direction of movement at any time step depends on the previous one. For simplicity, the change in running direction between two consecutive steps of the virtual bat is sampled from a Gaussian distribution with zero mean and standard deviation σh = 0.15 radians.
 
-## The network
+#### The network
 
-Our model is comprised of two layers. The input network represents, for example, the CA1 region of the hippocampus and contains Ninp = 123 units. The output network represents a population of NmEC = 125 would-be grid units in mEC, all with the same adaptation parameters when not differently stated. Each mEC unit receives afferent spatial inputs which, as already discussed in Kropff and Treves (2008), we take for simplicity to arise from regularly arranged place cells, although they could also arise from spatially modulated units in the adjacent cortices. The input to unit i at time t is then given by hit:(1)hti=∑j Wijt−1rjt.
+Our model is comprised of two layers. The input network represents, for example, the CA1 region of the hippocampus and contains Ninp = 123 units. The output network represents a population of NmEC = 125 would-be grid units in mEC, all with the same adaptation parameters when not differently stated. Each mEC unit receives afferent spatial inputs which, as already discussed in Kropff and Treves (2008), we take for simplicity to arise from regularly arranged place cells, although they could also arise from spatially modulated units in the adjacent cortices. The input to unit i at time t is then given by $h_{i}^{t}$:
 
-The weight Wijt connects input unit j to mEC unit i. We will assume that at the time the mEC units develop their firing maps, spatially modulated or place cell-like activity is already present, either in the parahippocampal cortex or in the hippocampus. The network model works in the same way with any kind of spatially modulated input, but the place cell assumption reduces the averaging necessary for learning. Moreover, as recent studies have shown (Langston et al., 2010; Wills et al., 2010), it is entirely plausible that place cells develop an adult-like spatial code earlier than grid cells do. We thus model the place field as a Gaussian bump centered in the place cell preferred position x→j0: (2)rjt=exp(−||x→t−x→j0||22σp2),where x→t is the position at time t of the simulated bat, σp = 0.05 L is the width of the firing field and ||a−b|| is the Euclidean distance between two points a and b in three dimensions. Place field centers are homogeneously distributed in the volume (consistently with the experimental data presented in [Yartsev and Ulanovsky, 2013]). Note that the choice of the value for the parameter σp is not itself crucial for our model (Kropff and Treves, 2008). The range of values that it can take in simulations, however, is constrained in practice by the number of place cells used in the model. Basically the dimension of each place field should guarantee a homogeneous amount of global input activity across the environment. Given a sufficient place field density in the input layer, the parameter does not play a critical role anymore. As we show in the following, the properties of the developing grid fields depend on the time scale of adaptation and not on the size of the place fields.
+$$
+h_{t}^{i}=\sumj W_{ij}^{t−1}r_{j}^{t}.
+$$
 
-## Single unit dynamics
+The weight $W_{ij}^{t}$ connects input unit j to mEC unit i. We will assume that at the time the mEC units develop their firing maps, spatially modulated or place cell-like activity is already present, either in the parahippocampal cortex or in the hippocampus. The network model works in the same way with any kind of spatially modulated input, but the place cell assumption reduces the averaging necessary for learning. Moreover, as recent studies have shown (Langston et al., 2010; Wills et al., 2010), it is entirely plausible that place cells develop an adult-like spatial code earlier than grid cells do. We thus model the place field as a Gaussian bump centered in the place cell preferred position $x→_{j0}$: 
 
-The firing rate Ψit of mEC unit i is determined by a non-linear transfer function(3)Ψit=2πarctan [gt(αit−μt)]Θ(αit−μt),which is normalized to have maximal firing rate equal to 1 (in arbitrary units), and Θ(⋅) is the Heaviside function. The variable μt is a threshold while αit represents the adaptation-mediated input to the unit i. It is related to hit as follows:(4)αit=αit−1+b1(hit−1−βit−1−αit−1),βit=βit−1+b2(hit−1−βit−1),where βi has slower dynamics than αi, with b2 = b1/3, b1 = 0.1 (in a continuous formulation, the b coefficients become rates, in units of (Δt−1)). This adaptive dynamics makes it more difficult for a neuron to fire for prolonged periods of time, and corresponds to the kernel K considered in the analytical treatment (Kropff and Treves, 2008). The gain gt and threshold μt are iteratively adjusted by Equation 5 at every time step to fix the mean activity a=∑i Ψit/NmEC and the sparsity s=(∑i Ψit)2/(NmEC∑i Ψit2) within a 10% relative error bound from pre-specified values, a0 = 0.1 and s0 = 0.3, respectively. If k is indexing the iteration process:(5)μt,k+1=μt,k+b3(ak−a0),gt,k+1=gt,k+b4gt,k(sk−s0).
+$$
+r_{j}^{t}=exp(−\frac{||x→^{t}−x→_{j0}||^{2}}{2\sigma_{p}^{2}}),
+$$
+
+where $x→^{t}$ is the position at time t of the simulated bat, σp = 0.05 L is the width of the firing field and $||a−b||$ is the Euclidean distance between two points a and b in three dimensions. Place field centers are homogeneously distributed in the volume (consistently with the experimental data presented in [Yartsev and Ulanovsky, 2013]). Note that the choice of the value for the parameter σp is not itself crucial for our model (Kropff and Treves, 2008). The range of values that it can take in simulations, however, is constrained in practice by the number of place cells used in the model. Basically the dimension of each place field should guarantee a homogeneous amount of global input activity across the environment. Given a sufficient place field density in the input layer, the parameter does not play a critical role anymore. As we show in the following, the properties of the developing grid fields depend on the time scale of adaptation and not on the size of the place fields.
+
+#### Single unit dynamics
+
+The firing rate $Ψ_{i}^{t}$ of mEC unit i is determined by a non-linear transfer function
+
+$$
+Ψ_{i}^{t}=\frac{2}{\pi}arctan [g^{t}(\alpha_{i}^{t}−\mu^{t})]Θ(\alpha_{i}^{t}−\mu^{t}),
+$$
+
+which is normalized to have maximal firing rate equal to 1 (in arbitrary units), and Θ(⋅) is the Heaviside function. The variable μt is a threshold while $\alpha_{i}^{t}$ represents the adaptation-mediated input to the unit i. It is related to $h_{i}^{t}$ as follows:
+
+$$
+\alpha_{i}^{t}=\alpha_{i}^{t−1}+b_{1}(h_{i}^{t−1}−\beta_{i}^{t−1}−\alpha_{i}^{t−1}),\beta_{i}^{t}=\beta_{i}^{t−1}+b_{2}(h_{i}^{t−1}−\beta_{i}^{t−1}),
+$$
+
+where βi has slower dynamics than αi, with b2 = b1/3, b1 = 0.1 (in a continuous formulation, the b coefficients become rates, in units of (Δt−1)). This adaptive dynamics makes it more difficult for a neuron to fire for prolonged periods of time, and corresponds to the kernel K considered in the analytical treatment (Kropff and Treves, 2008). The gain gt and threshold μt are iteratively adjusted by Equation 5 at every time step to fix the mean activity $a=\sumi Ψ_{i}^{t}/N_{mEC}$ and the sparsity $s=(\sumi Ψ_{i}^{t})^{2}/(N_{mEC}\sumi Ψ_{i}^{t^{2}})$ within a 10% relative error bound from pre-specified values, a0 = 0.1 and s0 = 0.3, respectively. If k is indexing the iteration process:
+
+$$
+\mu^{t,k+1}=\mu^{t,k}+b_{3}(a^{k}−a_{0}),g^{t,k+1}=g^{t,k}+b_{4}g^{t,k}(s^{k}−s_{0}).
+$$
 
 b3 = 0.01 and b4 = 0.1 are also rates, but in terms of intermediate iteration steps. ak and sk are the values of mean activity and sparsity determined by μt,k and gt,k in the intermediate iteration steps. The iteration stops once the gain and threshold have been brought within the 10% error range, and the activity of mEC units is determined by the final values of the gain and threshold in Equation 3.
 
-## Synaptic plasticity model
+#### Synaptic plasticity model
 
-The learning process modifies the strength of the feed-forward connections according to a Hebbian rule:(6)W~ijt=Wijt−1+ϵ(Ψitrjt−Ψ¯it−1r¯jt−1),with a rate ϵ = 0.002. Ψit¯ and r¯jt are estimated mean firing rates of mEC unit i and place unit j that are adjusted at each time step of the simulation:(7)Ψ¯it=Ψ¯it−1+η(Ψit−Ψ¯it−1),r¯jt=r¯jt−1+η(rjt−r¯jt−1),with η = 0.05 a time averaging factor. After each learning step, the provisional W~ijt weights are normalized into unitary norm:(8)∑j Wijt2=1.
+The learning process modifies the strength of the feed-forward connections according to a Hebbian rule:
+
+$$
+W~_{ij}^{t}=W_{ij}^{t−1}+ϵ(Ψ_{i}^{t}r_{j}^{t}−Ψ¯_{i}^{t−1}r¯_{j}^{t−1}),
+$$
+
+with a rate ϵ = 0.002. $Ψ_{i}^{t}¯$ and $r¯_{j}^{t}$ are estimated mean firing rates of mEC unit i and place unit j that are adjusted at each time step of the simulation:
+
+$$
+Ψ¯_{i}^{t}=Ψ¯_{i}^{t−1}+η(Ψ_{i}^{t}−Ψ¯_{i}^{t−1}),r¯_{j}^{t}=r¯_{j}^{t−1}+η(r_{j}^{t}−r¯_{j}^{t−1}),
+$$
+
+with η = 0.05 a time averaging factor. After each learning step, the provisional $W~_{ij}^{t}$ weights are normalized into unitary norm:
+
+$$
+\sumj W_{ij}^{t2}=1.
+$$
 
 Units that win during competitive learning (enforced by Equation 5) manage to establish strong connections with units that provide strong inputs. As learning proceeds, the units establish fields where they both receive strong inputs and, at the same time, are recovering from adaptation. The emergence of the grid map is the product of averaging over millions of time steps. It remains to be assessed whether this mechanism we propose might also account for the formation of new grid representations in a novel environment the animal adapts to, for a sufficient time, or if, instead, it can only be applied to the developmental period.
 
-## Grid alignment: head direction input
+#### Grid alignment: head direction input
 
-Two substantial extensions are represented by the introduction in the model of head direction information, through the assignment of preferred directions to mEC units, and by the presence of recurrent connections in the mEC layer beside the feed-forward set between the two layers (Si et al., 2012). Both these additions to the earlier version of the model are important for the grid alignment issue that we are going to study in the 3D case. With these two additional elements, the overall input to unit j is now:(9)hti=fθi(ωt)(∑j Wijt−1rjt+ρ∑k WikΨkt−τ),with ρ = 0.1 a factor setting the relative strength of feed-forward (Wijt) and collateral weights (Wik), and τ = 25 steps a delay in signal transmission, as discussed by Si et al. (2012). The multiplicative factor fθi(ωt) in Equation 9 is a tuning function which is maximal when the current direction of the animal movement ωt is along the preferred direction θi assigned to unit i (Zhang, 1996).(10)fθ(ω)=c+(1−c)exp[ν(cos(θ−ω)−1)],where c = 0.2 and ν = 0.8 are parameters determining the minimum value and the width of the cell tuning curve. Preferred head directions are randomly assigned to mEC units and they uniformly span the 4π solid angle.
+Two substantial extensions are represented by the introduction in the model of head direction information, through the assignment of preferred directions to mEC units, and by the presence of recurrent connections in the mEC layer beside the feed-forward set between the two layers (Si et al., 2012). Both these additions to the earlier version of the model are important for the grid alignment issue that we are going to study in the 3D case. With these two additional elements, the overall input to unit j is now:
 
-## Collateral weights
+$$
+h_{t}^{i}=f_{\theta_{i}}(\omega_{t})(\sumj W_{ij}^{t−1}r_{j}^{t}+ρ\sumk W_{ik}Ψ_{k}^{t−\tau}),
+$$
+
+with ρ = 0.1 a factor setting the relative strength of feed-forward $(W_{ij}^{t})$ and collateral weights $(W_{ik})$, and τ = 25 steps a delay in signal transmission, as discussed by Si et al. (2012). The multiplicative factor $f_{\theta_{i}}(\omega_{t})$ in Equation 9 is a tuning function which is maximal when the current direction of the animal movement ωt is along the preferred direction θi assigned to unit i (Zhang, 1996).
+
+$$
+f_{\theta}(\omega)=c+(1−c)exp[ν(cos(\theta−\omega)−1)],
+$$
+
+where c = 0.2 and ν = 0.8 are parameters determining the minimum value and the width of the cell tuning curve. Preferred head directions are randomly assigned to mEC units and they uniformly span the 4π solid angle.
+
+#### Collateral weights
 
 The appearance of fields in the output layer of the model is fully independent of the presence of collateral connections. Instead, their basic function is to favor the appearance of a certain phase shift of the fields in the post-synaptic unit relative to the pre-synaptic one, and consequently to induce the alignment of grids, producing a common orientation in the population (Si and Treves, 2013). In this study we will not deal with collateral weight self-organization, only with feed-forward weight learning. For simplicity, the collateral weights are set at convenient values at the beginning of the simulations and left unchanged afterwards. We will deal with the issue of recurrent connection plasticity in future work (but see [Si and Treves, 2013]).
 
-Collateral weights are set in the following way (Kropff and Treves, 2008): each mEC unit is temporarily assigned a preferred position, an auxiliary field at coordinates (xi, yi, zi). The coordinates are randomly chosen among the place field centers of the input layer. These auxiliary fields are introduced only for the sake of weight definition and do not play any role in other parts of the simulations. The collateral weight between unit i and unit k is then calculated as(11)Wik=[fθi(ωik)fθk(ωik)exp(−dki22σf2)−κ]+,where [*]+ denotes the Heaviside step function, κ = 0.05 is an inhibition factor to favor sparse weights, fθi(ωik) is the tuning function defined above (in Equation 10), ωik is the direction of the line connecting the auxiliary fields of unit i and k, σf = 0.2 L defines how broad the connectivity is, and dki is defined as(12)dki2=[xi−(xk+lcos(ωik))]2+[yi−(yk+lcos(ωik))]2+[zi−(zk+lcos(ωik))]2,that is, it is the distance between the auxiliary fields with an offset l = v × τ.
+Collateral weights are set in the following way (Kropff and Treves, 2008): each mEC unit is temporarily assigned a preferred position, an auxiliary field at coordinates (xi, yi, zi). The coordinates are randomly chosen among the place field centers of the input layer. These auxiliary fields are introduced only for the sake of weight definition and do not play any role in other parts of the simulations. The collateral weight between unit i and unit k is then calculated as
+
+$$
+W_{ik}=[f_{\theta_{i}}(\omega_{ik})f_{\theta_{k}}(\omega_{ik})exp(−\frac{d_{ki}^{2}}{2\sigma_{f}^{2}})−κ]^{+},
+$$
+
+where [*]+ denotes the Heaviside step function, κ = 0.05 is an inhibition factor to favor sparse weights, $f_{\theta_{i}}(\omega_{ik})$ is the tuning function defined above (in Equation 10), ωik is the direction of the line connecting the auxiliary fields of unit i and k, σf = 0.2 L defines how broad the connectivity is, and dki is defined as
+
+$$
+d_{ki}^{2}=[x_{i}−(x_{k}+lcos(\omega_{ik}))]^{2}+[y_{i}−(y_{k}+lcos(\omega_{ik}))]^{2}+[z_{i}−(z_{k}+lcos(\omega_{ik}))]^{2},
+$$
+
+that is, it is the distance between the auxiliary fields with an offset l = v × τ.
 
 The normalization on this set of connections is performed as in Equation 8. The definition of the weights is such that it generates strong positive interactions between cells with similar preferred head direction and activation fields appropriately shifted along the same head direction.
 
-## Analytical model
+### Analytical model
 
 The self-organization process we consider at the single-unit level can be described in analytical terms as an unsupervised optimization process, if one neglects the collateral interactions that are presumed to align the grids (Si et al., 2012). The simplified version of the model which can be analyzed mathematically is very abstract, and does not specify most of the parameters necessary to the simulations. Nevertheless, it indicates which are the asymptotic states that should be approached by the system after having evolved for a long time.
 
-The asymptotic states are defined in terms of a variational principle, amounting to the minimization of a cost function of the form:(13)H=HK+HA==∫​dχ[▽Ψ(χ)]2+γ∫​dχ∫​dtΨ(χ(t))K(t−t′)Ψ(χ(t′)),where χ is the spatial coordinate and Ψ represents the firing rate of the neuron across the environment. The functional is defined based on the hypothesis that the activity of the units reflects only two simple constraints:The minimization of the variability of the maps across space, that is, a preference for smooth maps. Such smoothness is expected to stem from the smoothness of the spatial inputs and of the neuronal transfer function. This constraint is expressed in the first term of the functional, the kinetic one.The penalization of maps that require a neuron to fire for prolonged periods of time, which is opposed by neuronal fatigue. The second term of the functional, the adaptation term, represents this constraint.
+The asymptotic states are defined in terms of a variational principle, amounting to the minimization of a cost function of the form:
+
+$$
+H=H_{K}+H_{A}==\int^{​}dχ[▽Ψ(χ)]^{2}+\gamma\int^{​}dχ\int^{​}dtΨ(χ(t))K(t−t′)Ψ(χ(t′)),
+$$
+
+where χ is the spatial coordinate and Ψ represents the firing rate of the neuron across the environment. The functional is defined based on the hypothesis that the activity of the units reflects only two simple constraints:The minimization of the variability of the maps across space, that is, a preference for smooth maps. Such smoothness is expected to stem from the smoothness of the spatial inputs and of the neuronal transfer function. This constraint is expressed in the first term of the functional, the kinetic one.The penalization of maps that require a neuron to fire for prolonged periods of time, which is opposed by neuronal fatigue. The second term of the functional, the adaptation term, represents this constraint.
 
 The parameter γ parameterizes the relative importance of the two constraints.
 
-The dependence of the functional on time can be eliminated by taking into account the averaging effect of a long run over many trajectories and different speeds experienced during training. We therefore substitute the time-dependent kernel K(t − t′) in the second term of Equation 13 with an effective space-dependent one, K(χ′ − χ), using the average speed of the animal to fix the relationship between the two:(14)H=HK+HA==1V∫Γdχd[▽Ψ(χ)]2+γ1V∫ΓdχΨ(χ)∫Γdχ′Ψ(χ′)K(|χ′−χ|),where we have also made explicit the normalization by the area V of the d-dimensional environment Γ.
+The dependence of the functional on time can be eliminated by taking into account the averaging effect of a long run over many trajectories and different speeds experienced during training. We therefore substitute the time-dependent kernel K(t − t′) in the second term of Equation 13 with an effective space-dependent one, K(χ′ − χ), using the average speed of the animal to fix the relationship between the two:
+
+$$
+H=H_{K}+H_{A}==\frac{1}{V}\intΓdχ^{d}[▽Ψ(χ)]^{2}+\gamma\frac{1}{V}\intΓdχΨ(χ)\intΓdχ′Ψ(χ′)K(|χ′−χ|),
+$$
+
+where we have also made explicit the normalization by the area V of the d-dimensional environment Γ.
 
 We directly apply this expression to ask which is the favorite arrangement of the fields in a 3D volume V.
 
-## Optimal packing
+#### Optimal packing
 
-Unlike on the plane, where the hexagonal tiling is always the optimal one, three-dimensional space admits a multitude of equally optimal orderings of spheres. The problem of sphere packing, in a volume of 3D space, is a well-known mathematical problem, and it is known since the time of Gauss that any of these infinite optimal solutions can be described in terms of two fundamental arrangements, called face centered cubic (FCC) and hexagonal close packed (HCP), that represent the only two regular solutions to the problem. Both solutions are based on a series of layers of spheres arranged in a hexagonal pattern. These layers are stacked one upon the other with given phase differences between them (
+Unlike on the plane, where the hexagonal tiling is always the optimal one, three-dimensional space admits a multitude of equally optimal orderings of spheres. The problem of sphere packing, in a volume of 3D space, is a well-known mathematical problem, and it is known since the time of Gauss that any of these infinite optimal solutions can be described in terms of two fundamental arrangements, called face centered cubic (FCC) and hexagonal close packed (HCP), that represent the only two regular solutions to the problem. Both solutions are based on a series of layers of spheres arranged in a hexagonal pattern. These layers are stacked one upon the other with given phase differences between them (Figure 2). The difference between FCC and HCP lies in the sequence with which these phases appear. Given one of these layers, and taking it as a reference with positioning A, there are two possible arrangements (B and C) of the next layer, obtained with a translation of A, that puts all the spheres at the same distance from their neighbors. Any sequence of A, B and C without immediate repetitions has the same, maximum, packing score, but among all sequences there are the two regular prototypes:FCC = ABCABCABCA.HCP = ABABABABAB.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig2-v2.jpg)
 
-**Figure 2.:** Top: Functions used in cost function calculation for face centered cubic (FCC) and hexagonal close packed (HCP) structures. Color markers are used to indicate the layering in the field arrangement: FCC results from an A(red)B(blue)C(green) sequence, HCP from an A(red)B(blue)A(red) sequence. Middle: Same as above but from a different viewpoint to highlight the different organization of the relative phases. Bottom: Autocorrelograms of the above functions. Color markers indicate the magnitude of the corresponding peak in the autocorrelogram. Purple: full peaks. Orange: half peaks.DOI: http://dx.doi.org/10.7554/eLife.05913.003
+**Figure 2.:** Top: Functions used in cost function calculation for face centered cubic (FCC) and hexagonal close packed (HCP) structures. Color markers are used to indicate the layering in the field arrangement: FCC results from an A(red)B(blue)C(green) sequence, HCP from an A(red)B(blue)A(red) sequence. Middle: Same as above but from a different viewpoint to highlight the different organization of the relative phases. Bottom: Autocorrelograms of the above functions. Color markers indicate the magnitude of the corresponding peak in the autocorrelogram. Purple: full peaks. Orange: half peaks.
 
-In both combinations each sphere has 12 first neighbors, and if d is the diameter of a sphere (or the distance between the centers of two neighboring spheres), then the inter-layer separation is 63d. If we consider the unit cell of 13 spheres (a central sphere + 12 neighbors) in Figure 2, then FCC and HCP differ only regarding the position of three spheres (compare the position of the fields marked in green and red in the top-left and top-right panels in Figure 2). In fact, while in FCC neighbor spheres are arranged in six pairs with symmetrical positions with respect to the center, in HCP there are only three of these pairs, those on the central plane (fields marked in blue in Figure 2, top right).
+In both combinations each sphere has 12 first neighbors, and if d is the diameter of a sphere (or the distance between the centers of two neighboring spheres), then the inter-layer separation is $\frac{\sqrt{6}}{3}d$. If we consider the unit cell of 13 spheres (a central sphere + 12 neighbors) in Figure 2, then FCC and HCP differ only regarding the position of three spheres (compare the position of the fields marked in green and red in the top-left and top-right panels in Figure 2). In fact, while in FCC neighbor spheres are arranged in six pairs with symmetrical positions with respect to the center, in HCP there are only three of these pairs, those on the central plane (fields marked in blue in Figure 2, top right).
 
 Considering the three-dimensional distribution of activity ψ(x) that minimizes the cost function in Equation 14, we then compare the relative optimality of FCC and HCP configurations. To do so we define two analytical expressions for the two arrangements of fields in terms of a combination of plane waves, as they are well suited to be treated in this formulation of the problem.
 
-## FCC symmetry
+#### FCC symmetry
 
-To represent the FCC arrangement of fields we use the following expression:(15)ψFCC(r)=1+14∑i=14cos(ki·r),a combination of four plane waves (Figure 2, top left), with the four wave vectors ki given by the matrix:(16)ki=2πa(003/22/30−1/6−1/31−1/6−1/3−1−1/6).
+To represent the FCC arrangement of fields we use the following expression:
 
-The directions of the wave vectors are equivalent to those of the center-to-vertex axes in a tetrahedron. This choice gives(17)Spacing=a.(18)Normalization<ψFCC>=1.(19)|ki|2=32(2πa)2.
+$$
+ψ^{FCC}(r)=1+\frac{1}{4}\sumi=14cos(k_{i}·r),
+$$
 
-As any power of the previous expression maintains the same symmetry properties, we will actually compute the cost function for the first few powers:(20)ψnFCC(r)=pnFCC(1+14∑i=14 cos(ki·r))n.
+a combination of four plane waves (Figure 2, top left), with the four wave vectors ki given by the matrix:
 
-Here pnFCC is used to maintain the normalization.
+$$
+k_{i}=\frac{2\pi}{a}(00\sqrt{3/2}2/\sqrt{3}0−1/\sqrt{6}−1/\sqrt{3}1−1/\sqrt{6}−1/\sqrt{3}−1−1/\sqrt{6}).
+$$
+
+The directions of the wave vectors are equivalent to those of the center-to-vertex axes in a tetrahedron. This choice gives
+
+$$
+Spacing=a.
+$$
+
+
+
+$$
+Normalization<ψ^{FCC}>=1.
+$$
+
+
+
+$$
+|k_{i}|^{2}=\frac{3}{2}(\frac{2\pi}{a})^{2}.
+$$
+
+As any power of the previous expression maintains the same symmetry properties, we will actually compute the cost function for the first few powers:
+
+$$
+ψ_{n}^{FCC}(r)=p_{n}^{FCC}(1+\frac{1}{4}\sumi=14 cos(k_{i}·r))^{n}.
+$$
+
+Here $p_{n}^{FCC}$ is used to maintain the normalization.
 
 The first term of the cost function, the spatial average <ψn∇ψn>, can then be evaluated analytically by expanding ψn over the Fourier modes and taking into account the orthonormality relations of planar waves. This calculation is quite simple for low powers, but the number of terms increases rapidly with n. The resulting formulas for n = 2 are reported in the ‘Materials and methods’ section.
 
-The second term can be similarly calculated by using the change of variable q = x′ − x together with the trigonometric property:(21)cos(k·q+k·x+ϕ)=cos(k·q)cos(k·x+ϕ)−sin(k·q)sin(k·q+ϕ).
+The second term can be similarly calculated by using the change of variable q = x′ − x together with the trigonometric property:
+
+$$
+cos(k·q+k·x+ϕ)=cos(k·q)cos(k·x+ϕ)−sin(k·q)sin(k·q+ϕ).
+$$
 
 Since sin(k⋅q)K(q) is an odd function and the integration domain is symmetrical around q = 0, the second term in Equation 21 does not survive the first integral in HA (Equation 14).
 
-The calculations can then be performed as in the previous case after introducing the 3D Fourier transform of the adaptation kernel K:(22)K˜(ki)=∫V dqK(q)cos(ki·q).
+The calculations can then be performed as in the previous case after introducing the 3D Fourier transform of the adaptation kernel K:
 
-The adaptation kernel may take various forms, but for reasons that will become clear in the next section, here we consider a kernel in a form that makes it factorable over the spatial variables. We use a difference of radially symmetric Gaussians:(23)K(q)=KL(q)−ρKS(q)==1(2πvτL)3/2exp[−q2(2vτL)2]−ρ(2πvτS)3/2exp[−q2(2vτS)2].
+$$
+K˜(k_{i})=\intV dqK(q)cos(k_{i}·q).
+$$
 
-The Fourier transform of this kernel is:(24)K˜(ki)=K˜L(ki)−ρK˜S(ki)==exp[−12(kivτL)2]−ρ exp[−12(kivτS)2].
+The adaptation kernel may take various forms, but for reasons that will become clear in the next section, here we consider a kernel in a form that makes it factorable over the spatial variables. We use a difference of radially symmetric Gaussians:
+
+$$
+K(q)=K_{L}(q)−ρK_{S}(q)==\frac{1}{(2\piv\tau_{L})^{3/2}}exp[−\frac{q^{2}}{(2v\tau_{L})^{2}}]−\frac{ρ}{(2\piv\tau_{S})^{3/2}}exp[−\frac{q^{2}}{(2v\tau_{S})^{2}}].
+$$
+
+The Fourier transform of this kernel is:
+
+$$
+K˜(k_{i})=K˜_{L}(k_{i})−ρK˜_{S}(k_{i})==exp[−\frac{1}{2}(k_{i}v\tau_{L})^{2}]−ρ exp[−\frac{1}{2}(k_{i}v\tau_{S})^{2}].
+$$
 
 Again the computation of the integral, although conceptually straightforward, becomes increasingly demanding with higher values of n due to the explosion in the number of terms.
 
-## HCP symmetry
+#### HCP symmetry
 
-Since the hexagonal close packing does not have central symmetry, the choice of a function reproducing the arrangement of fields is less evident. We opt for:(25)ψnHCP(r)=pnHCP((1/2+1/2cos(kz·r))[1+23∑i3 cos(kxyi)·r]+(1/2+1/2cos(kz·(r+Δz)))[1+23∑i3 cos(kxyi)·(r+Δx)])n,where two separate wave vectors are present: kxy fixing the spacing on planar hexagonal layers, and kz used instead to regulate the distance between layers (Figure 2, top right). As in the previous case, we consider different powers of the same formula, as they all present peaks in the same configuration.
+Since the hexagonal close packing does not have central symmetry, the choice of a function reproducing the arrangement of fields is less evident. We opt for:
 
-The components of kxy are, again(26)ki=2πa(2/30−1/31−1/3−1),with |kxy|2=43(2π/a)2, while the z component is set to |kz|=322(2π/a) and |kz|2=38(2π/a)2. To obtain the correct HCP arrangement of fields, Δx and Δz should be set to:(27)Δx=(13,0).(28)Δz=23.
+$$
+ψ_{n}^{HCP}(r)=p_{n}^{HCP}((1/2+1/2cos(k_{z}·r))[1+\frac{2}{3}\sumi3 cos(k_{xy}^{i})·r]+(1/2+1/2cos(k_{z}·(r+Δz)))[1+\frac{2}{3}\sumi3 cos(k_{xy}^{i})·(r+Δx)])^{n},
+$$
+
+where two separate wave vectors are present: kxy fixing the spacing on planar hexagonal layers, and kz used instead to regulate the distance between layers (Figure 2, top right). As in the previous case, we consider different powers of the same formula, as they all present peaks in the same configuration.
+
+The components of kxy are, again
+
+$$
+k_{i}=\frac{2\pi}{a}(2/\sqrt{3}0−1/\sqrt{3}1−1/\sqrt{3}−1),
+$$
+
+with $|k_{xy}|^{2}=\frac{4}{3}(2\pi/a)^{2},$ while the z component is set to $|k_{z}|=\frac{\sqrt{3}}{2\sqrt{2}}(2\pi/a)$ and $|k_{z}|^{2}=\frac{3}{8}(2\pi/a)^{2}$. To obtain the correct HCP arrangement of fields, Δx and Δz should be set to:
+
+$$
+Δx=(\frac{1}{\sqrt{3}},0).
+$$
+
+
+
+$$
+Δz=\sqrt{\frac{2}{3}}.
+$$
 
 Spacing and normalization are the same as for FCC.
 
-The convenience of choosing a factorizing Gaussian kernel (
+The convenience of choosing a factorizing Gaussian kernel (Equation 23) is now evident: it allows splitting of the integrals in Equation 14 into the xy and z component. Apart from this expedient, the calculations for the HCP function follow the same line of those previously described for the FCC case. A significant difference is the dependence of the HCP solution on two parameters kx and kz. Therefore, while the choice of the adaptation parameters τL and τS fixes one of the two (as shown in Figure 3, left), one can still optimize over the ratio between the two. The value of kz/kxy that should be observed in the presence of a perfect HCP pattern can be calculated as 3/321/2 ≈ 0.53. In Figure 3 (right), we plot the values obtained for different powers of our expression for the HCP arrangement. While for higher values of n the value of kz/kxy extracted from the optimization progressively approaches the theoretical one, interestingly the n = 1 case exhibits a very different behavior with an optimal kz/kxy = 0, independently of the value of γ. As kz represents the reciprocal of the inter-layer spacing (and also the wavelength of the activity modulation along the z-axis), this value indicates that the minimum value of the cost function is obtained with infinite distance (and infinitely slow modulation of the activity), or equivalently with a column-like distribution of activity, with a single layer of fields extending indefinitely in the vertical direction (Jeffery et al., 2013). This solution is distinct from the case of a single layer of fields, with no activity above and below them, a situation that does not entail the regular, three-dimensional configurations we are interested in. In Figure 3 we plot the values of the wave vectors obtained with the set of parameters: vτL = 1, ντS=13ντL, ρ = 0.03. Changing these parameters alters the absolute values of the curves but does not affect the qualitative behavior of the solutions to the minimization of the cost function.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig3-v2.jpg)
 
-**Figure 3.:** Results for the grid parameters resulting from the cost function minimization. Left: Optimal grid spacing for face centered cubic (FCC) and hexagonal close packed (HCP) structures and various powers of the respective expressions. Right: Optimal ratio between horizontal spacing and vertical spacing for different powers of the HCP expression. The orange continuous line indicates the theoretical value to obtain a perfect HCP arrangement. All the plots are obtained with parameters: vτ = 1, L, ντS=13ντLρ = 0.03.DOI: http://dx.doi.org/10.7554/eLife.05913.005
+**Figure 3.:** Results for the grid parameters resulting from the cost function minimization. Left: Optimal grid spacing for face centered cubic (FCC) and hexagonal close packed (HCP) structures and various powers of the respective expressions. Right: Optimal ratio between horizontal spacing and vertical spacing for different powers of the HCP expression. The orange continuous line indicates the theoretical value to obtain a perfect HCP arrangement. All the plots are obtained with parameters: vτL = 1, $ν\tau_{S}=\frac{1}{3}ν\tau_{L}$, ρ = 0.03.
 
 ## Results
 
-## Asymptotic states for individual grids
+### Asymptotic states for individual grids
 
-## Self-organized grids appear to express a mixture of symmetries
+#### Self-organized grids appear to express a mixture of symmetries
 
-In our simulations the activity of mEC units is progressively shaped over an extended period of time. Starting from an initial random arrangement of connections and a correspondingly heterogeneous distribution of activity, the combined effect of adaptation and synaptic learning leads the units to approach, after a transient reorganization of their firing fields in space, a stable configuration that is the outcome of the self-organization process. Looking at the firing configurations developed by the units in our simulations, one can notice a similarity with the theoretical solutions maximizing the packing density of spheres described above. In
+In our simulations the activity of mEC units is progressively shaped over an extended period of time. Starting from an initial random arrangement of connections and a correspondingly heterogeneous distribution of activity, the combined effect of adaptation and synaptic learning leads the units to approach, after a transient reorganization of their firing fields in space, a stable configuration that is the outcome of the self-organization process. Looking at the firing configurations developed by the units in our simulations, one can notice a similarity with the theoretical solutions maximizing the packing density of spheres described above. In Figure 4 we show two typical examples from the units emerging in the model mEC layer in two distinct simulations, each taken after about 15 million time steps of learning time. On the top row the firing rates of the units presents a blobby appearance, with equally sized, spherical fields homogeneously distributed in the volume. Although rate maps resemble those we expect from a regular tiling of the three-dimensional environment, they are not very informative about the overall organization of the fields nor about any symmetry in their spatial distribution. Computing the corresponding autocorrelograms we indeed find that the two units are rather different in this respect, as they express two distinct field configurations. One is in fact presenting an approximately FCC arrangement (Figure 4, left), while the other is close to an HCP one (Figure 4, right). Overlaying the axes of symmetry of the two ideal arrangements (green and orange lines) illustrates the differences between the two.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig4-v2.jpg)
 
-**Figure 4.:** Left: Face centered cubic (FCC)-like unit. Right: Hexagonal close packed (HCP)-like unit. Top: Rate maps. Bottom: Autocorrelograms. We plot the central portion of the autocorrelogram comprising the peaks surrounding the origin. Red and blue contours correspond to a correlation value of 0.2 and 0.25, respectively.DOI: http://dx.doi.org/10.7554/eLife.05913.004
+**Figure 4.:** Left: Face centered cubic (FCC)-like unit. Right: Hexagonal close packed (HCP)-like unit. Top: Rate maps. Bottom: Autocorrelograms. We plot the central portion of the autocorrelogram comprising the peaks surrounding the origin. Red and blue contours correspond to a correlation value of 0.2 and 0.25, respectively.
 
 Thus, self-organization based on synaptic adaptation can have multiple outcomes, leading to equivalently stable solutions. Identical systems, with the same network properties and subject to the same evolution dynamics might approach different asymptotic states, just as an effect of the random initial conditions.
 
-This fact does not necessarily imply that different solutions can coexist in the same population. The presence of interactions between units might indeed induce a global response to the initial conditions driving all the cells to develop the same symmetric properties. By making use of the measures of order described in the ‘Measure of long-range order’ section in ‘Materials and methods’ and calculating the similarity of each activity pattern either to an FCC or to an HCP, we can assess the presence within a population of mEC units of the different asymptotic arrangements. In
+This fact does not necessarily imply that different solutions can coexist in the same population. The presence of interactions between units might indeed induce a global response to the initial conditions driving all the cells to develop the same symmetric properties. By making use of the measures of order described in the ‘Measure of long-range order’ section in ‘Materials and methods’ and calculating the similarity of each activity pattern either to an FCC or to an HCP, we can assess the presence within a population of mEC units of the different asymptotic arrangements. In Figure 5 we show the distribution of the two scores, again taken after a long learning time (15 million time steps), for units all belonging to the same mEC population. The values of the two scores indicate the presence of both arrangements in the system. If we look at the scores for each unit at a given time (Figure 5, left), we indeed find that these are not clustered in two groups, each one expressing a homogeneous HCP or FCC arrangement, but instead they cover an entire continuum of scores between the two extremes, expressing all intermediate arrangements.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig5-v2.jpg)
 
-**Figure 5.:** Left: Distribution of face centered cubic (FCC) and hexagonal close packed (HCP) scores in a population of simulated mEC units. The scores span a continuum between a pure FCC arrangement (bottom right corner) and a pure HCP one (top left corner of the figure) and are widely distributed between the two extremes. Right: Analytical cost function for various powers of FCC and HCP as a function of γ parameter. Continuous lines indicate the minimum value within each set of solutions and are found to alternate as a global minimum in different ranges of values of γ. For small values of the parameter γ, instead, the trivial solution ψ = 0 is favored. The plot is obtained with: vτ = 1, L, ντS=13ντLρ = 0.03.DOI: http://dx.doi.org/10.7554/eLife.05913.006
+**Figure 5.:** Left: Distribution of face centered cubic (FCC) and hexagonal close packed (HCP) scores in a population of simulated mEC units. The scores span a continuum between a pure FCC arrangement (bottom right corner) and a pure HCP one (top left corner of the figure) and are widely distributed between the two extremes. Right: Analytical cost function for various powers of FCC and HCP as a function of γ parameter. Continuous lines indicate the minimum value within each set of solutions and are found to alternate as a global minimum in different ranges of values of γ. For small values of the parameter γ, instead, the trivial solution ψ = 0 is favored. The plot is obtained with: vτL = 1, $ν\tau_{S}=\frac{1}{3}ν\tau_{L}$, ρ = 0.03.
 
-## Which is the most favorable analytical solution?
+#### Which is the most favorable analytical solution?
 
 This result points to a high degree of independence of each unit and at the same time to a rather weak preference of the system for either of the regular configurations of fields. We can contrast our observations on the asymptotic states approached by the mEC units simulated numerically with the analytic evaluation of the cost function associated with the regular asymptotic states (see the ‘Measure of long-range order’ section in ‘Materials and methods’). The calculations are based on the functional in Equation 14, comprising two terms, one representing the degree of smoothness of the map, the other the effects of adaptation. Its minimization (adjusting regular solutions to fit with the firing rate adaptation time scale) shows a rather complex interplay between different possible states (Figure 5, right). First of all, considering FCC and HCP separately, we see how, for both of them, solutions of higher power become successively favored as the value of the γ parameter increases, that is, as the weight of the adaptation component becomes increasingly dominant in the evaluation of the cost function. Therefore, the same arrangement of field positions, but with the fields becoming more and more concentrated and peaked, is selected moving rightward on the graph. In parallel, the two configurations, FCC and HCP, compete with each other, and the two are alternating as the optimal solution in different portions of the parameter space. The picture that emerges from this analysis is one of close equivalence of FCC and HCP in terms of optimality. There is no evidence of a regime in which one of the two strongly dominates the other. Instead, the features that are common to the two, like the hexagonal arrangement and the 12 first neighbors, appear to be the relevant ones for the evaluation of the cost function, with the differences appearing when considering higher order features only marginally contributing to its value and therefore generating minuscule quantitative differences between the two.
 
 Analytical calculations deal with an abstract and simplified formulation of the properties of our network. The conclusion they suggest, however, is supported by our observations from the numerical simulation of the full model. The system does not appear to converge asymptotically to either of the two regular configurations of fields. Although neither FCC- nor HCP-symmetric solutions provide a unique description of the final arrangement of the units, the simulations produce examples of units similar to either of the two optimal packing solutions. The discrepancy between the configurations observed and the symmetric solutions, however, is not due to the emergence of mixtures of the two (like for example in a ABABCAB ordering of the layers), but rather to small deviations of the relative phases between fields of different layers from the optimal ones. Although we tested our model in environments of different size (as discussed in a following section), the model is computationally extremely demanding to run in very large environments, large enough to investigate this sort of mixed ordering. Analytical results show a substantial equivalence of FCC and HCP ordering, thus implying, in large structures, the possibility of multiple switching between the two, without altering the overall optimality of the configuration. Nevertheless, simulations show that this equivalence, even in the case of the small environments we tested (where we could usually observe three or only slightly more layers at the same time), is expressed in intermediate arrangements which are only partially symmetric. It is thus likely that introducing additional layers would just propagate this situation further without leading to the appearance of FCC and HCP mixtures.
 
-## Time scales for the emergence of local order
+### Time scales for the emergence of local order
 
 Constructing either an FCC or an HCP arrangement of fields is a rather articulated endeavor that requires assembling a hierarchy of elements of increasing complexity. The three-dimensional structure described by the two arrangements implies the establishment of long-range relationships between the level of activity at distant points of the environment and involves determining the position of a large number of fields at the same time. Both FCC and HCP are described by unitary cells of 13 fields and the difference between the two lies in the different positioning of just three of them with respect to the others. It is evident by looking at Figure 2, however, that this long-range order is constructed from a set of building blocks that express symmetries and regularities at a local level, involving fewer fields and a smaller set of constraints. Understanding the outcome of the self-organization of grid cells in three dimensions can be thus approached bottom-up, starting from basic features of the representation and then following the learning process up towards their combination into overarching structures.
 
 As in the two-dimensional case, a description of the grid can start from computing the mean distance between first-neighbor fields and the mean angle formed by triplets of adjacent fields. These two measures involve, respectively, two and three fields at a time and are not informative about correlations extending beyond these boundaries.
 
-At this level order emerges almost immediately (
+At this level order emerges almost immediately (Figure 6). The mean angle among neighboring fields (calculated over all the triplets of all the cells of a simulated population) is close to π/3 from the very beginning of learning and the real effect of continuing exploration is the reduction of the variability over the course of about 4 million time steps.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig6-v2.jpg)
 
-**Figure 6.:** Left: Mean angle formed by triplets of fields as a function of learning time (see the ‘Local gridness measure’ section in ‘Materials and methods’ for details on the measure). Right: Mean spacing between fields extracted from the autocorrelograms, for various conditions as a function of learning time.DOI: http://dx.doi.org/10.7554/eLife.05913.007
+**Figure 6.:** Left: Mean angle formed by triplets of fields as a function of learning time (see the ‘Local gridness measure’ section in ‘Materials and methods’ for details on the measure). Right: Mean spacing between fields extracted from the autocorrelograms, for various conditions as a function of learning time.
 
 A similar behavior is observed when plotting the value of the mean spacing of the grids in time (calculated from the unit autocorrelograms) (Figure 6, right: blue line). Also in this case, after a short transient the value stabilizes after around 3–4 million time steps. Our choice of model parameters (and specifically of the adaptation parameter) leads to a spacing of 0.55 × L. We run simulations in different conditions to test the sensitivity of this quantity to specific components of the model. We consider the case of having no internal connectivity in mEC, removing any interaction between different mEC units (Figure 6, right: red line) that are therefore developing grids independently, and the case in which rather than having a single value of the adaptation time course, common to all the units, the population expresses a range of possible values, drawn from a uniform distribution ranging from 0.85 × b1 to 1.2 × b1, where b1 = 0.1 is the value otherwise used (Figure 6, right: green line). In both cases we see that the time course of the development of a common grid spacing is not affected by the modifications of the standard model. Stabilization is obtained in the same time interval and while removing collateral connections appears to have absolutely no effect, the variability in the adaptation parameter results in a slightly different final value of the spacing (0.5 × L).
 
 These results indicate that the three-dimensional grid develops from the same ingredients of its lower dimensional equivalent. Mean spacing and mean angle are quickly fixed over the entire network almost simultaneously and are the first recognizable signs of the emergence of an ordered structure from the initial random distribution of activity. The equivalence between this process and that observed in a model of two-dimensional grid development is due to the same principles driving self-organization. The presence of an additional dimension does not affect the way in which fields are initially brought by adaptation to homogeneously and regularly cover the entire space.
 
-## Time scales for the emergence of long-range order
+### Time scales for the emergence of long-range order
 
-Using the measure described in the ‘Local gridness measure’ section in ‘Materials and methods’, we can evaluate the difference between the distribution of activity of a unit and a random arrangement of fields. Plotting the average across units of this index, which reflects the decrease of the variance in the angles between triplets, already observed in
+Using the measure described in the ‘Local gridness measure’ section in ‘Materials and methods’, we can evaluate the difference between the distribution of activity of a unit and a random arrangement of fields. Plotting the average across units of this index, which reflects the decrease of the variance in the angles between triplets, already observed in Figure 6, we see again (Figure 7, top left), that after roughly 4 million time steps the system is already arranged in a stable ordered manner, with equilateral triangles among neighboring fields that dominate the activity pattern. This ordering can be generated by the system independently of higher order symmetries, and it provides a first step for further arranging fields in more articulated structures.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig7-v2.jpg)
 
-**Figure 7.:** The panels present the time evolution of the measure of different symmetries in the arrangement of fields. Top row: Fast convergence of neighboring triplets of fields towards equilateral triangles (left) and of group of fields into planes with a hexagonal arrangement (right). Middle row: Slow convergence of the different units in the population towards a common orientation of the layers of fields. Left: Angle between the principal plane expressed by the various units. Right: Angle between fields arranged over mutually aligned planes. Bottom row: No convergence of global, inter-planar order. The measures of similarity with face centered cubic (FCC) and hexagonal close packed (HCP) ordering do not evolve with the extension of the learning time and remain close to intermediate values indicating an even distribution of the values over the population of grid cells. See ‘Materials and methods’ for details on the measures.DOI: http://dx.doi.org/10.7554/eLife.05913.008
+**Figure 7.:** The panels present the time evolution of the measure of different symmetries in the arrangement of fields. Top row: Fast convergence of neighboring triplets of fields towards equilateral triangles (left) and of group of fields into planes with a hexagonal arrangement (right). Middle row: Slow convergence of the different units in the population towards a common orientation of the layers of fields. Left: Angle between the principal plane expressed by the various units. Right: Angle between fields arranged over mutually aligned planes. Bottom row: No convergence of global, inter-planar order. The measures of similarity with face centered cubic (FCC) and hexagonal close packed (HCP) ordering do not evolve with the extension of the learning time and remain close to intermediate values indicating an even distribution of the values over the population of grid cells. See ‘Materials and methods’ for details on the measures.
 
 A second step taken by the system is the coordination of multiple field triplets to arrange them in a hexagonal pattern. This process corresponds to the formation of a grid on the plane, but in three dimensions it involves the creation of not just one hexagon but of multiple superimposed planes each of which contains hexagonally arranged fields. To investigate the structure of the activity on the single layers, we take multiple slices of the autocorrelogram matrix. We take sections passing through the center, with different angles of azimuth and elevation. We then compute the autocorrelogram values on each of these planes, and we compare it with a hexagonal template of equidistant peaks with π/3 periodicity. The plane most resembling a hexagonal pattern according to a correlation measure (the ‘best plane’) is selected together with its similarity score. This method provides us with an equivalent of the traditional grid score used to judge the quality of planar grid cells. In Figure 7 (top right) we plot the time evolution of the average over the population of this score. Starting from very low values, indicative of a still unorganized ensemble of fields, the score steadily rises to reach a value of about 0.85 (out of a maximum of 1) after 6 million time steps and then remains stable over the rest of the simulation.
 
@@ -181,17 +327,17 @@ Having hexagonal layers tiled upon each other along the same direction still lea
 
 Our simulations are able to distinguish a hierarchy in the time course leading to the formation of three-dimensional grids. Different levels of complexity appear in the arrangement of fields with different speed. Fast converging quantities like the formation of equilateral triangles of fields and successively of layers of fields with hexagonal symmetry appear first, framing the activity of single units in the network. These initial structures are then modified on a slower time scale to obtain a global coordination among cells. Planes of fields are rotated to align them across the population, generating a common tiling of the fields of different cells that conserve their unique spatial phase. This global ordering is only partial though, as the phases of the units are only partially overlapping with those necessary to reproduce a perfectly regular tiling of the volume (either with an FCC or an HCP). If we exclude the very initial phase of network dynamics, self-organization does not appear to affect these aspects of network activity that therefore remain loosely determined even after a very extended period of time.
 
-## Volume dependence of the time scales
+### Volume dependence of the time scales
 
-The critical question is how would these timescales scale up with the size of the environment. At least for the most rapid self-organizing processes, their very nature, dependent on plasticity in the feed-forward connections, would appear at first sight to require the pairing of each activity field of each unit to the specific configuration of sensory inputs which impinge at the same time on the feed-forward connections, therefore implying times for the formation of the grid that scale up with the number of fields in the volume. A volume of linear size L includes roughly N3=2(L/a)3 fields of spacing a in either an FCC or HCP arrangement (and 62(L/a)3 trajectories connecting neighboring fields). A square of side L on a plane would include roughly N2=(2/3)(L/a)2 fields. The emergence of equilateral triangles in 3D appears to require roughly a factor 2 more time than in 2D (Si et al., 2012), in approximate agreement with the factor N3/N2=(3/2)(L/a)≃1.2×1.8≃2 coming from the above argument. Note that if that were correct, equilateral triangles in an environment roughly four times as large, as can be argued to be the one used in the bat experiments in the Ulanovsky laboratory (Ginosar et al., 2014), would emerge in roughly 40–50 hr of continuous flight. Although the developmental maturation of the bat encompasses longer cumulative flying hours, what is likely relevant for structuring the feed-forward connections is time spent flying in the environment of the actual experiment. Not only can the mechanisms leading to grid-like activity only unfold while navigating and not during rest periods, they also appear to require, in our model, the exact configuration of input activity at each location in the environment. Therefore this constraint is likely to put the time scale of grid cell formation well above the feasible time duration of the experiment.
+The critical question is how would these timescales scale up with the size of the environment. At least for the most rapid self-organizing processes, their very nature, dependent on plasticity in the feed-forward connections, would appear at first sight to require the pairing of each activity field of each unit to the specific configuration of sensory inputs which impinge at the same time on the feed-forward connections, therefore implying times for the formation of the grid that scale up with the number of fields in the volume. A volume of linear size L includes roughly $N_{3}=\sqrt{2}(L/a)^{3}$ fields of spacing a in either an FCC or HCP arrangement (and $6\sqrt{2}(L/a)^{3}$ trajectories connecting neighboring fields). A square of side L on a plane would include roughly $N_{2}=(2/\sqrt{3})(L/a)^{2}$ fields. The emergence of equilateral triangles in 3D appears to require roughly a factor 2 more time than in 2D (Si et al., 2012), in approximate agreement with the factor $N_{3}/N_{2}=\sqrt{(3/2)}(L/a)≃1.2\times1.8≃2$ coming from the above argument. Note that if that were correct, equilateral triangles in an environment roughly four times as large, as can be argued to be the one used in the bat experiments in the Ulanovsky laboratory (Ginosar et al., 2014), would emerge in roughly 40–50 hr of continuous flight. Although the developmental maturation of the bat encompasses longer cumulative flying hours, what is likely relevant for structuring the feed-forward connections is time spent flying in the environment of the actual experiment. Not only can the mechanisms leading to grid-like activity only unfold while navigating and not during rest periods, they also appear to require, in our model, the exact configuration of input activity at each location in the environment. Therefore this constraint is likely to put the time scale of grid cell formation well above the feasible time duration of the experiment.
 
 In fact, however, we find that the time for self-organization lengthens only a little, and clearly sublinearly, with the volume flown by the virtual bat. Given the multiple sub-processes involved in the self-organization of the grid units, we focus on a summary measure, derived from the analytical model: the cost function (Equation 14). Each of the two terms of the cost function, the kinetic and the adaptation kernel, can be calculated for each model grid unit at each time step of the simulation, and average values can be extracted and fit, for example, with sums of exponential functions. What cannot be calculated from the simulations themselves is the value of the γ factor that, in the cost function, would determine the weight of the adaptation kernel with respect to the kinetic term.
 
-We find that the population-averaged data points for both terms can be well fit by a sum of two exponentials, plus a constant (
+We find that the population-averaged data points for both terms can be well fit by a sum of two exponentials, plus a constant (Figure 8, inset) and with the same time parameter for the first exponential in each term:(29)HK(t)≃Av exp(−t/τvS)+Bv exp(−t/τvL)+K.(30)HA(t)≃Cv exp(−t/τvS)−Dv exp(−t/τM)+Ev.with A, B, C, D, E volume-dependent positive fit parameters, and τS,M,L short, medium and long relaxation time scales (K turns out not to depend on the volume; nor, it seems, does τM).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/05913/elife-05913-fig8-v2.jpg)
 
-**Figure 8.:** Temporal evolution of the cost function calculated for environments of different size. Lines from green to red correspond to environments of increasing size: 1 (green), 1.2, 1.4, 1.44, 1.68 and 1.96 (red) times the basic volume, respectively. With the choice of parameters reported in the discussion, these volumes would range from a 15.625 m3 room to a 30.625 m3 room. The inset shows the breakdown of the contribution to the total cost of the kinetic part and of the adaptation part for the cubic environment of size 2.5 × 2.5 × 2.5 m. Dots correspond to data points, lines to a fit. The constant of the kernel term, which varies with the volume, is not included for clarity.DOI: http://dx.doi.org/10.7554/eLife.05913.009
+**Figure 8.:** Temporal evolution of the cost function calculated for environments of different size. Lines from green to red correspond to environments of increasing size: 1 (green), 1.2, 1.4, 1.44, 1.68 and 1.96 (red) times the basic volume, respectively. With the choice of parameters reported in the discussion, these volumes would range from a 15.625 m3 room to a 30.625 m3 room. The inset shows the breakdown of the contribution to the total cost of the kinetic part and of the adaptation part for the cubic environment of size 2.5 × 2.5 × 2.5 m. Dots correspond to data points, lines to a fit. The constant of the kernel term, which varies with the volume, is not included for clarity.
 
 The short term relaxation is therefore a joint decrease of both terms, while later the adaptation term rises, whereas the kinetic term continues to decrease. An empirical ansatz can be defined for γ as the largest value that still keeps the sum HK(t) + γHA(t) monotonically decreasing. With this ansatz, we plot the estimate of the cost function (without the Ev term, for clarity) for varying volume sizes, where we have multiplied either one or two of the three linear dimensions by either 1.2 or 1.4, obtaining volumes larger than the standard one by factors 1.2, 1.4, 1.44, 1.68 and 1.96. We can see from Figure 8 that the relaxation of this estimated cost function is mainly determined by the most rapid exponential terms, and is virtually complete by 3–4 million time steps, with a limited volume dependence. Consequently, apart from the slight prolongation of the initial transient, the time evolution of our measure for volumes of different size appears to be quite similar.
 
@@ -201,7 +347,7 @@ These results suggest that the time required for the complex dynamics of grid de
 
 How are these results relevant to predict the grid configuration expressed in 3D, and that can be tested in a flying bat? Our model points towards a hierarchy of timescales, associated with the emergence of periodical spatial activity of increasing complexity. To establish a relation between our results and a real bat, it is necessary to specify the actual values of the temporal and spatial parameters of our model, to obtain a time scale for the development of the grids that we can then compare with experimental findings.
 
-If we take time steps of size Δt = 10 ms and an average bat velocity of v = 1 m/s, the small environment used in most of our simulations will correspond to a cubic room of size L = 2.5 m. Then, with this choice of parameters, grids are formed with a field spacing of 2.5 m × 0.55 ≈ 1.4 m and an interlayer distance of 2.5m×0.55×63≈1.1m. The time scale of grid formation can be calculated considering that 1 million simulation time steps correspond to 10,000 s or nearly 3 hr. Our model then predicts, in an environment the size of ours, the presence of (i) triplets of fields forming roughly equilateral triangles in ≈10–12 hr of continuous flight, (ii) hexagons in ≈15–18 hr, and finally (iii) different units that achieve a common orientation after ≈30–35 hr. These time scales do not seem very different from those predicted by the same model for the development of grids in a two-dimensional environment of similar linear size (relative to the grid spacing). Figure 6 in Si et al. (2012) indicates a time scale of about 20,000 s, or 5–6 hr, for the development of gridness in 2D. At the same time, this moderate increase in grid formation time might make it comparable to the flight time available for spatial learning during bat experiments. In these conditions, even the weak, sub-linear dependence of time scales with volume, that we do observe, may be sufficient to determine a switch between the possibility of forming regular structures and leaving them beyond reach.
+If we take time steps of size Δt = 10 ms and an average bat velocity of v = 1 m/s, the small environment used in most of our simulations will correspond to a cubic room of size L = 2.5 m. Then, with this choice of parameters, grids are formed with a field spacing of 2.5 m × 0.55 ≈ 1.4 m and an interlayer distance of $2.5m\times0.55\times\frac{\sqrt{6}}{3}≈1.1m$. The time scale of grid formation can be calculated considering that 1 million simulation time steps correspond to 10,000 s or nearly 3 hr. Our model then predicts, in an environment the size of ours, the presence of (i) triplets of fields forming roughly equilateral triangles in ≈10–12 hr of continuous flight, (ii) hexagons in ≈15–18 hr, and finally (iii) different units that achieve a common orientation after ≈30–35 hr. These time scales do not seem very different from those predicted by the same model for the development of grids in a two-dimensional environment of similar linear size (relative to the grid spacing). Figure 6 in Si et al. (2012) indicates a time scale of about 20,000 s, or 5–6 hr, for the development of gridness in 2D. At the same time, this moderate increase in grid formation time might make it comparable to the flight time available for spatial learning during bat experiments. In these conditions, even the weak, sub-linear dependence of time scales with volume, that we do observe, may be sufficient to determine a switch between the possibility of forming regular structures and leaving them beyond reach.
 
 A regular tiling of the environment (either in the form of an FCC or of an HCP lattice) is a different story, even though it would be the optimal arrangement from an information-theoretic perspective (Mathis et al., 2014). The total simulation time would correspond to a maximum of ≈80–90 hr of continuous bat flight in the (2.5 m)3 volume. This time is just a lower bound for the time necessary to form a regular tiling of the environment, and likely a loose one, as our simulations do not seem to be converging towards one of them.
 
@@ -211,18 +357,40 @@ In conclusion, the presence of an additional dimension does not seem to preclude
 
 ## Materials and methods
 
-## Local gridness measure
+### Local gridness measure
 
 The triangular tile is the minimal structure associated with regular volume tessellations. The two properties defining any regular triangle are the length of the side and the internal angle. Therefore, to characterize the local structure of the grid pattern in an individual unit we extract these two properties from the spikes it produces. Firstly, from our three-dimensional rate maps we generate a representative number of spike pairs through a Poisson process to construct the distribution of distances. Typically, this distribution is highly multi-peaked, where the first peak corresponds to distances between intra-field spikes, the second peak between spikes belonging to neighboring fields, and subsequent peaks between spikes in non-adjacent fields. Since the length of the side of the tiling triangle in a regular pattern would correspond to the location of the second peak, we define a range of distances around this peak as a filter condition to declare spikes belonging to neighboring fields. The limits of this range were defined by the surrounding troughs, if they exist, or fixed to 0.5 d and 1.4 d, if they do not, where d is the distance corresponding to the second peak, declared as the grid distance of the unit. As a control condition, we generate a distribution of pseudo-spikes from reshuffling spike–cell combinations and randomly reassigning spikes to different units, thus removing the field structure of the activity of each cell. Therefore, distances between pseudo-spikes are unimodally distributed. Secondly, triplets of spikes were putatively classified as belonging to neighboring fields based on distance filtering in the previous range, and the three internal angles determined. These three angles were pooled together and accumulated in an overall angular distribution. The distribution of angles so obtained for the spiking activity and the control condition were different and their ratio was used to characterize the angle subtended in the triangular pattern. Typically (in the asymptotical state), this ratio was unimodal and distributed asymmetrically around a peak. We defined the characteristic angle as the median of the above-chance distribution (ratio values above unity indicate an above-chance condition or, in other words, angles more frequently obtained than randomly) and the significance of the angle as the maximum of the ratio distribution.
 
-## Measure of long-range order
+### Measure of long-range order
 
-FCC and HCP differences in the configuration of fields generate distinct symmetry properties for the two arrangements. These symmetries are reflected in the autocorrelograms that can be extracted from them. In the same way as the autocorrelogram of a hexagonal grid is a hexagonal grid, calculating the autocorrelogram of FCC (using function 20) just reproduces the same configuration (Figure 2, bottom left) of fields, with six symmetric pairs of equivalent peaks surrounding the central one. Indeed the symmetries of the structure are such that one can find four planes passing through the origin which contain peaks arranged in a hexagonal way; these planes form angles of 72° and are all equivalent. The case is different for HCP, where the central symmetry is missing. In this case the autocorrelogram extracted from Equation 25 does not reproduce the original form of the function. In Figure 2, bottom right, one can see that the autocorrelogram presents nine pairs of peaks around the central one. But in this case these peaks are not all the same. The HCP structure is again periodical for translations along a plane, generating six peaks of height 1, like those of FCC (Figure 2, purple peaks). As the structure is translated out of this preferred plane, the ABAB arrangement of the HCP layers is such that there are no translations that reproduce the exact same configuration of fields, in the autocorrelogram. The six peaks above the central one (Figure 2, orange peaks) are indeed half-peaks, corresponding to an overlap of only half (six out of 12) of the peaks of the basic unit. Therefore, although one can identify seven planes with hexagonally arranged peaks on this autocorrelogram, they are not all equivalent to those in FCC. Only one of them contains all the peaks of height 1 and forms an angle of 72° with the other six, which include half-peaks and form an angle of 56° between them. We can then use different measures to quantify the degree of similarity of a unit activity to the FCC and HCP prototypical field arrangements. One measure is based on the autocorrelogram. From this, we first identify the best plane, the one which yields the highest grid score, measured here as the value of the planar autocorrelogram at the origin, that is, the planar autocorrelation over all the slices passing through the origin. Once the best plane has been identified, we use the fact that the FCC has three more planes with hexagonal symmetry, at ∼72° from the best plane and between one another. HCP instead has six of them, again at ∼72° from the best plane, but at ∼56° between them. We then take the slice scores, that is, the planar autocorrelation values on any one slice. We take all the slices at an angle of ∼72° from the best plane and sum the scores of the best triplet of slices with ∼72° of separation (ζ2 − 4). We then exclude them and take a second triplet of slices again with a ∼72° distance from one another and a distance of ∼56° from the first triplet (ζ5 − 7). These two numbers tell us about the number of different planes with hexagonal symmetry that can be built from our autocorrelograms. Both scores run from −3 to 3, as they are the sum of three correlations. We expect ζ2 − 4 to be high for both FCC and HCP arrangements, and its value should be considered as an indicator of the general quality of the grid. ζ5 − 7 instead should be high only for those grids presenting an HCP type of arrangement, but again its value might be affected by the quality of the grid. We thus define a score for the degree of FCC similarity as:(31)χFCC=(ζ2−4−ζ5−7)/ζ2−4,that should be close to 1 in the presence of FCC, and to 0 in the HCP case.
+FCC and HCP differences in the configuration of fields generate distinct symmetry properties for the two arrangements. These symmetries are reflected in the autocorrelograms that can be extracted from them. In the same way as the autocorrelogram of a hexagonal grid is a hexagonal grid, calculating the autocorrelogram of FCC (using function 20) just reproduces the same configuration (Figure 2, bottom left) of fields, with six symmetric pairs of equivalent peaks surrounding the central one. Indeed the symmetries of the structure are such that one can find four planes passing through the origin which contain peaks arranged in a hexagonal way; these planes form angles of 72° and are all equivalent. The case is different for HCP, where the central symmetry is missing. In this case the autocorrelogram extracted from Equation 25 does not reproduce the original form of the function. In Figure 2, bottom right, one can see that the autocorrelogram presents nine pairs of peaks around the central one. But in this case these peaks are not all the same. The HCP structure is again periodical for translations along a plane, generating six peaks of height 1, like those of FCC (Figure 2, purple peaks). As the structure is translated out of this preferred plane, the ABAB arrangement of the HCP layers is such that there are no translations that reproduce the exact same configuration of fields, in the autocorrelogram. The six peaks above the central one (Figure 2, orange peaks) are indeed half-peaks, corresponding to an overlap of only half (six out of 12) of the peaks of the basic unit. Therefore, although one can identify seven planes with hexagonally arranged peaks on this autocorrelogram, they are not all equivalent to those in FCC. Only one of them contains all the peaks of height 1 and forms an angle of 72° with the other six, which include half-peaks and form an angle of 56° between them. We can then use different measures to quantify the degree of similarity of a unit activity to the FCC and HCP prototypical field arrangements. One measure is based on the autocorrelogram. From this, we first identify the best plane, the one which yields the highest grid score, measured here as the value of the planar autocorrelogram at the origin, that is, the planar autocorrelation over all the slices passing through the origin. Once the best plane has been identified, we use the fact that the FCC has three more planes with hexagonal symmetry, at ∼72° from the best plane and between one another. HCP instead has six of them, again at ∼72° from the best plane, but at ∼56° between them. We then take the slice scores, that is, the planar autocorrelation values on any one slice. We take all the slices at an angle of ∼72° from the best plane and sum the scores of the best triplet of slices with ∼72° of separation (ζ2 − 4). We then exclude them and take a second triplet of slices again with a ∼72° distance from one another and a distance of ∼56° from the first triplet (ζ5 − 7). These two numbers tell us about the number of different planes with hexagonal symmetry that can be built from our autocorrelograms. Both scores run from −3 to 3, as they are the sum of three correlations. We expect ζ2 − 4 to be high for both FCC and HCP arrangements, and its value should be considered as an indicator of the general quality of the grid. ζ5 − 7 instead should be high only for those grids presenting an HCP type of arrangement, but again its value might be affected by the quality of the grid. We thus define a score for the degree of FCC similarity as:
 
-On the other hand, HCP is characterized by the repetition of the same field positions every two layers, while FCC has a periodicity of three layers. Then another way to characterize the grids is to look for similarities between layers. Since the best plane we calculated indicates the direction of stacking of layers in the HCP (along its normal vector), we can go back to the firing rate map, take slices along this direction (that is, slices with the same best plane orientation) and calculate the correlation between planes separated by a two-layer distance (2 × λz):(32)χHCP=ρauto(2×λz).
+$$
+χ_{FCC}=(ζ_{2−4}−ζ_{5−7})/ζ_{2−4},
+$$
+
+that should be close to 1 in the presence of FCC, and to 0 in the HCP case.
+
+On the other hand, HCP is characterized by the repetition of the same field positions every two layers, while FCC has a periodicity of three layers. Then another way to characterize the grids is to look for similarities between layers. Since the best plane we calculated indicates the direction of stacking of layers in the HCP (along its normal vector), we can go back to the firing rate map, take slices along this direction (that is, slices with the same best plane orientation) and calculate the correlation between planes separated by a two-layer distance (2 × λz):
+
+$$
+χ_{HCP}=ρ_{auto}(2\times\lambda_{z}).
+$$
 
 Contrary to the previous score, this one should be close to 1 when HCP is expressed, and to 0 when FCC is.
 
-## Cost function expression for n = 2
+### Cost function expression for n = 2
 
-Here we give an example of the expression for the cost function obtained for n = 2.(33)H(ψ2FCC)=71×k2162+γ×(1/648×(256K˜(k)+K˜(2k)+6×(K˜(22/3k)+K˜((2k)/3)))),(34)H(ψ2HCP)=3045×kxy2+1881×kz22601+γ×(13468×(54K˜(2kz)+1160K˜(kxy)+1920K˜[kxy+kz]+36×K˜(kxy+2kz]+2×K˜(2kxy)+48×K˜(2kxy+kz)+9×K˜(2kxy+2kz)+200×K˜(3kxy)+36×K˜(3kxy+2kz))),where k is the only parameter for spacing in FCC and kxy, kz are the two spacings of HCP, along the horizontal and vertical plane, respectively.
+Here we give an example of the expression for the cost function obtained for n = 2.
+
+$$
+H(ψ_{2}^{FCC})=\frac{71\timesk^{2}}{162}+\gamma\times(1/648\times(256K˜(k)+K˜(2k)+6\times(K˜(2\sqrt{2/3}k)+K˜((2k)/\sqrt{3})))),
+$$
+
+
+
+$$
+H(ψ_{2}^{HCP})=\frac{3045\timesk_{xy}^{2}+1881\timesk_{z}^{2}}{2601}+\gamma\times(\frac{1}{3468}\times(54K˜(2k_{z})+1160K˜(k_{xy})+1920K˜[k_{xy}+k_{z}]+36\timesK˜(k_{xy}+2k_{z}]+2\timesK˜(2k_{xy})+48\timesK˜(2k_{xy}+k_{z})+9\timesK˜(2k_{xy}+2k_{z})+200\timesK˜(\sqrt{3}k_{xy})+36\timesK˜(\sqrt{3}k_{xy}+2k_{z}))),
+$$
+
+where k is the only parameter for spacing in FCC and kxy, kz are the two spacings of HCP, along the horizontal and vertical plane, respectively.

@@ -40,9 +40,103 @@ Long-timescale molecular dynamics simulations supported by H/D exchange experime
 
 The active to inactive transitions of the above described structural elements are fundamental in the regulation of EGFR, and different mutations have been associated with dysregulation of these conformational changes in cancer. To better understand the effect of the most frequently observed and clinically relevant ΔELREA and L858R mutations (Figure 1), we performed here long-timescale atomistic molecular dynamics (MD) simulations and enhanced sampling free energy calculations with a recently developed force field. The chosen force field has been shown to be able to reproduce reliably the dynamics of both well-folded and partially unfolded domains (Robustelli et al., 2018). As most Ex20Ins mutations have been shown to render EGFR resistant to most tyrosine kinase inhibitors (TKIs) (Yasuda et al., 2012; Ward et al., 2021), with the exception of the relatively rare A763-Y764insFQEA insertion, we tried to rationalize the behavior of a prototypical Ex20Ins, D770-N771insNPG, and of A763-Y764insFQEA, for which structural and biochemical data is available. The unbiased MD simulations of the isolated monomers and the asymmetric homodimers collectively lasted 36 µs for the WT and the mutant forms (see Materials and methods, Table 1). As these simulations hinted at slow motions that could not be sampled even by long MD simulations, we also applied enhanced sampling techniques, and in particular, parallel tempering metadynamics (PTmetaD) simulations. PTmetaD simulations allow the exploration of biologically meaningful conformational changes of kinases that take place on time scales longer than those accessible through standard MD simulations and reconstruct the associated free energy landscapes (Sutto and Gervasio, 2013; Marino et al., 2015; Kuzmanic et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig1-v1.jpg)
+
+**Figure 1.:** The αC-helix is depicted in cyan, while the A-loop in orange. The point of deleted residues in the ΔELREA mutant is indicated with a red dot. In the case of the point mutation L858R, and the two Ex20Ins, the residues associated with the mutation are depicted in red spheres.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) active conformation in which the A-loop assumes an extended conformation, forming usually a β-strand (β9) with residues of the C-lobe, the αC-helix is found in the αC-in conformation, and the DFG motif in the ‘DFG-in’ orientation, where the aspartate of the motif is arranged properly for the catalysis and coordination of ATP (EGFR, PDB ID: 2ITP), (B) Src-like inactive conformation in which the A-loop forms a two-turn helix in its N-terminal region, the DFG motif is in the ‘DFG-in’ orientation, and the αC-helix is found in the αC-out, where the helix rotates away from the core disrupting an important salt bridge between an aspartate and a lysine residue that is essential for catalysis (EGFR, PDB ID: 2GS7), (C) DFG-out inactive conformation in which the A-loop assumes a conformation similar to the one seen in the active conformation, the catalytic aspartate is flipped out from the active site leading to a ‘DFG-out’ orientation, while the αC-helix is in its active, αC-in position (EGFR, PDB: 2RF9), (D) substrate-competitive conformation, in which the A-loop points away from the αC-helix and shields the binding site, the DFG motif assumes the 'DFG-out' orientation, and the αC-helix is found in the αC-out position (Abl, PDB ID: 1OPJ). This conformation has been captured via MD simulations as an intermediate state during the DFG flip of EGFR (Shan et al., 2013).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Simple moving averaged time series of the distance between two salt-bridge-forming residue pairs K745-E762 and D855-E762 over the course of the unbiased simulations starting from the monomeric active or Src-like inactive conformation. An averaging window of 200 was used to smooth the calculated distances. The distance between the representative atoms of each residue in the crystal structures of the active (PDB ID: 2GS2, black), Src-like, DFG-in inactive (PDB ID: 2GS7, green), and inactive, DFG-out (PDB ID: 2RF9, pink) conformation are highlighted with dashed lines.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Cluster of hydrophobic residues (blue spheres) whose side chains pack together to stabilize the two-turn helix (yellow) of the A-loop and the Src-like inactive conformation (PDB ID: 2GS7) overall.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Position of the αC-helix in each monomer of the simulated dimers. The distances over the course of the dimeric simulations between K745, E762, and D855, which together probe the position of the helix are given as distributions.
+
+**Table 1.**
+ Summary of the unbiased simulations of the monomeric EGFR.The reported times correspond to the simulation time of each independent unbiased simulation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>System</th>
+      <th>Starting conformation</th>
+      <th>Total simulation time (ns)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">WT</td>
+      <td>active</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>Src-like inactive</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>Src-like inactive</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">L858R</td>
+      <td>active</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>Src-like inactive</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">A763-Y764insFQEA</td>
+      <td>active</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>Src-like inactive</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">D770-N771insNPG</td>
+      <td>active</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>Src-like inactive</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ΔELREA</td>
+      <td>active</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>Src-like inactive</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>[1ex]</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
-## WT apo populates inactive states with a semi-closed A-loop and a partially disordered αC-helix
+### WT apo populates inactive states with a semi-closed A-loop and a partially disordered αC-helix
 
 In the simulations that we initiated from the active conformation of the apo, unphosphorylated EGFR monomer, the wild-type (WT) EGFR repeatedly departed from its initial αC-in conformation and transitioned to an αC-out-like conformation within ∼100 ns (Figure 1—figure supplement 2) that resembles the conformation seen in the DFG-out inactive state (PDB ID: 2RF9). However, although the K745-E762 salt bridge was broken, the repositioning of the αC-helix was not sufficient for the A-loop to adopt the characteristic two-turn helix that is found in the Src-like inactive conformation. In fact, the A-loop remained extended throughout the simulations, which suggests the presence of an energy barrier that needs to be crossed for the A-loop to break the β9-strand and form the characteristic two-turn helix (Sutto and Gervasio, 2013). This behavior is in line with the known activation mechanism of EGFR according to which dimerization is important for keeping the αC-helix in the αC-in conformation (Shan et al., 2012) and suggests that the presence of ATP and phosphorylation may also be critical for full stabilization of the active conformation.
 
@@ -56,13 +150,21 @@ The free energy landscape reconstructed from multiple replica metadynamics simul
 
 In one of the two secondary free energy minima - (CV1, CV2) = (1.4, 0.1) — the characteristic two-turn helix on the A-loop of the Src-like inactive conformation is formed and the αC-helix has rotated away from the C-lobe and adopted the αC-out conformation (Figure 2, basin α2). Notably, in the most populated state of this basin, the N-terminal region of the αC-helix is unfolded, in accordance with the predicted partially disordered nature of this region (Shan et al., 2012). In the other secondary free energy minimum – (CV1, CV2) = (0.6, 0.2) – the N-terminal end of the αC-helix is folded, and the helix has rotated out of the core of the protein, while the A-loop is still relatively unstructured (Figure 2, basin α3). Although the conformations in this basin resemble a lot the ones seen in the deepest energy minimum, they differ in the fact that the αC-helix points further away from the C-lobe, which results in a slight increase in the interlobal distance seen in the conformations of this basin. Interestingly, reprojection of the free energy with respect to the interlobal distance shows that the WT samples multiple conformations of different N/C separation (Figure 7—figure supplement 4C). Together, these two secondary minima may represent metastable states that are important during the transition from the active to the Src-like inactive conformation and reflect the necessary rearrangements for the deactivation to take place, that is unfolding of the N-terminal end of the αC-helix, increase in the interlobal distance and formation of the two turn helix on the A-loop. Despite the fact that the minimum energy path connecting the Src-like inactive to active conformation does not pass through the basin where the N-terminal end of the αC-helix is highly disordered (Figure 7—figure supplement 3), the 2 kcal/mol energy difference between the deepest minimum and this metastable state suggest that, under physiological conditions, this state should still be accessible.
 
-## L858R stabilizes active-like conformations
+### L858R stabilizes active-like conformations
 
 It has been suggested that the mutation of L858 to arginine enhances the kinase activity by shifting the equilibrium toward the active conformation through disruption of the hydrophobic packing of L858 with L747, I759, and L861 (Figure 1—figure supplement 3) that is supposed to stabilize the Src-like inactive conformation (Yasuda et al., 2013). However, our unbiased simulation of the monomeric L858R starting from the Src-like inactive conformation showed that transient, favorable interactions of R858 with D855 and D837 of the DFG and HRD motifs, respectively, and F723 of the P-loop (Figure 3—figure supplement 1) stabilize the Src-like inactive conformation. On the contrary, in our unbiased simulations where L858R started from the active conformation, the side chain of R858 interacted mainly with E762 only (Figure 3—figure supplement 1).
 
 The metadynamics simulations of the L858R mutant confirm the results that we obtained with an earlier force field (Sutto and Gervasio, 2013). The new free energy surface and the underlying structural ensemble is equivalent to the one obtained with the older force field, which bodes well for the robustness and accuracy of the results. The free energy landscape (Figure 3) shows that the deepest basin corresponds to an ensemble of conformations that are very close to the active conformation (Figure 3, basin δ1). The positively charged R858 was surrounded by a cluster of negatively charged residues (E758, E762, D837, and D855) and in this ensemble, the side chain of R858 fluctuated between two states in which it interacts with either D837 and D855, or E758 and E762. The interactions of R858 with D837 kept the A-loop in an extended, active-like conformation, in which the β9-strand on the A-loop is present. At the same time, as a result of the favorable interactions of R858 with E758 and E762, the αC-helix exhibited high secondary structure stability as opposed to the disorder seen in the αC-helix of the wild-type. Although the salt bridge of E762 with K745 is never present in this ensemble as is in the fully active conformation, the αC-helix is maintained close to the αC-in conformation, probably due to the interaction of R858 with E762. Overall, the presence of R858 favors the active conformation at the expense of the disordered state that is highly populated in the WT. Stabilization of the αC-helix through a mutation like L858R has been shown to promote EGFR dimerization and downstream signaling, which explains the activating nature of this mutation (Shan et al., 2012; Zhang et al., 2006). In a secondary minumum higher in energy (Figure 3, basin δ2), the side chain of R858 is found completely exposed to the solvent, but although the αC-helix is found in the αC-out conformation, the short helix on the A-loop is not formed. Instead, the A-loop assumes a semi-closed conformation.
 
-## D770-N771insNPG populates active-like and disordered αC-helix conformations
+![Figure 3.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig3-v1.jpg)
+
+**Figure 3.:** Representative structures for two main conformations found in the deepest minimum are depicted in cartoon representation. The interaction of R858 with E758 and E762 is responsible for the secondary structure stability of the αC-helix, while the interaction of R858 with D837 and D855 prevents the formation of the two-turn helix on the A-loop. A yellow cross indicates the position of the active conformation (PDB ID: 2ITV) in the explored CV space, while a black cross indicates the position of the Src-like inactive conformation (homology model) as reference.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Important interactions of L858R with neighboring residues that are maintained over the course of the unbiased simulations of the monomeric L858R EGFR. The estimation of the time fraction that the residues are considered to interact is based on distance criteria (d < 0.75 nm for hydrophobic interactions, d < 0.35 nm for hydrogen bonds, and d < 0.45 nm for salt bridges). The representative side-chain and backbone atoms of the interacting residues that have been considered for every interaction are denoted in subscript. (B) Graphical representation of the important interactions that L858R participates in and described in (A). The depicted structures were selected from the unbiased simulations of the monomeric state.
+
+### D770-N771insNPG populates active-like and disordered αC-helix conformations
 
 Based on the crystal structure of the D770-N771insNPG mutant in the active conformation, it has been postulated that the NPG insertion at the C-terminal end of the αC-helix, locks the helix in the αC-in conformation (Yasuda et al., ). Proline is a residue found commonly in turns and in the case of the D770-N771insNPG, the inserted P772 induces a turn that leads to the formation of a hydrogen bond between the backbone of D770 and the amide of the inserted G773 in the crystal structure. This backbone hydrogen bond orients, in turn, the side chain of D770 such that it forms a salt bridge with R779 (Figure 4—figure supplement 1A) that is maintained throughout the unbiased simulation initiated from the active conformation (Figure 4—figure supplement 2A), while the inserted N771 interacts with R837 of the E-helix. Interestingly, the same salt-bridge interaction is lost after about 300 ns in both replicas of the WT simulations (Figure 4—figure supplement 2A) and R776 forms a hydrogen bond with the backbone of A767 after (Figure 4—figure supplement 2B). Given the different behavior of the mutant and WT, one would expect these interactions to stabilize the αC-in conformation in the mutant, however, the K745-E762 salt bridge breaks almost immediately (Figure 1—figure supplement 2), suggesting that the αC-in conformation in which the mutant is found in the crystal structure is probably ligand-induced rather than mutation-induced.
 
@@ -70,19 +172,43 @@ The unbiased simulation of the D770-N771insNPG insertion that was initiated from
 
 In the PTmetaD simulations and in the absence of a phosphate group on Y869 or a ligand, the αC-helix adopts the αC-out conformation where the K745-E762 salt bridge is broken, but the A-loop assumes an extended, active-like conformation. Mapping of the conformational space sampled during the unbiased monomeric simulations of the D770-N771insNPG on the FES shows that the deepest minimum corresponds to the CV space that the mutant samples in the simulations that we initiated from the active conformation (Figure 7—figure supplement 2). Projection of the FE on the (CV1, CV2) space results in a broad minimum around where the active conformation lies. Reprojection of the FE on the (CV1, CV3) space, however, separates the two dominant conformations that fall together in the same basin in the (CV1, CV2) projection of the FE (Figure 4).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig4-v1.jpg)
+
+**Figure 4.:** Representative structures of the two main conformations found in the deepest minima are depicted in cartoon representation. A yellow cross indicates the position of the active conformation (PDB ID: 4LRM) in the explored CV space, while a black cross indicates the position of the Src-like inactive conformation (homology model) as reference.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Key interactions around the inserted residues in the D770-N771insNPG mutant as seen in (A) the ligand-bound active conformation of the mutant (PDB ID: 4LRM), and in (B) the homology model of the Src-like inactive conformation that we built. The inserted residues are depicted in orange.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Simple moving averaged time series of the interactions of R776/9 with D770 (A) and A767 (B) over the course of the unbiased simulations starting from the monomeric active (top row) and Src-like inactive (bottom row) conformations. R776 corresponds to the WT numbering, while R779 corresponds to the D770-N771insNPG numbering. The atoms that we used to assess the distance between the residues are given in the parenthesis, while the distance of these atoms in the starting conformation is depicted with a dashed line. An averaging window of 200 was used to smooth the calculated distances.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Distribution of the radius of gyration (Rg) of the receiver and the activator kinases over the course of the unbiased simulations of the asymmetric dimer of D770-N771insNPG EGFR. The increased Rg of the activator kinase is attributed to amplification of the N/C lobe separation on the activator monomer due to the D770-N771insNPG insertion.
+
 In one of the two isoenergetic basins in the free energy surface (Figure 4, basin ε1), the side chain of the inserted N771 has flipped 180° with respect to the crystal structure and interacts with the side chain of R779. The mutation does not seem to be able to quench the intrinsic disorder of αC-helix fully, as can be seen from the unfolded N-terminal part of the helix in the representative conformation of the minimum (Figure 4). In the second basin (Figure 4, basin ε2), the D770-R779 salt bridge is formed, similar to the crystal structure, and so is the backbone hydrogen bond between D770 and G773, and the αC-helix is fully helical. However, unlike the crystal structure, the αC-helix is in the αC-out conformation.
 
 In all the conformations that correspond to the global minimum of the reported free energy surface, the A-loop is predominately found in the extended, active-like conformation regardless of the order or position of the αC-helix. Inspection of the structures in this basin suggests that the A-loop is kept in the active conformation through the interaction of E762 with K863 of the nine sheet.
 
 Interestingly, in the unbiased simulations of the mutant, as well as in a relatively populated cluster within the broad basin seen in the PTmetaD simulations, the insertion seems to amplify the N/C-lobe separation. The same N/C-lobe separation was seen also in the activator kinase in the asymmetric dimer (Figure 1—figure supplement 4). The role of this amplification, which is also seen in the A763-Y764insFQEA as it will be discussed later, is not yet clear, but it may be related to the Hsp90 recruitment and/or the binding kinetics of the substrate/inhibitors.
 
-## A763-Y764insFQEA populates active-like states and semi-closed elongated states
+### A763-Y764insFQEA populates active-like states and semi-closed elongated states
 
 When studied in vitro, the EGFR Ex20Ins variant A763-Y764insFQEA was the only EGFR Ex20Ins-harboring cell line inhibited by erlotinib at concentrations less than 0.1 µM, while other EGFR Ex20Ins, such as the D770-N771insNPG, had a reduced affinity and sensitivity to EGFR TKIs (Yasuda et al., 2013; Hirano et al., 2018). From the homology model of the A763-Y764insFQEA mutant that we built, which was based on the active conformation of the wild-type, it is not immediately clear how the mutation exerts its effect. Mutagenesis studies indicate that this insertion extends the αC-helix toward the N-terminal direction while the glutamic acid that is inserted through the mutation assumes the role of E762 in the WT-EGFR (Yasuda et al., 2013). The insertion leads to the replacement of I759 with alanine that has a shorter side chain. Again, the amino acid at position 759 is involved in hydrophobic interactions around L858 (Figure 1—figure supplement 2), which have been speculated to be essential for stabilizing the Src-like inactive state. Therefore, based on the homology model, it is tempting to think that the mutation has an activating effect by disrupting this hydrophobic network, which is found in the Src-like inactive conformation, and making the inactive conformation less energetically favorable.
 
 In the case of the unbiased simulations that we initiated from the monomeric Src-like inactive conformation, the αC-helix remained in the αC-out conformation throughout the simulation (Figure 1—figure supplement 2), and the overall fold of the kinase was maintained with a noticeable increase in the interlobal distance. On the other hand, in the simulations that we initiated from the active conformation, the A763-Y764insFQEA was the only mutant in which the αC-helix transitioned back to the αC-in conformation several times after it visited the αC-out conformation (Figure 1—figure supplement 2). This unique behavior implies that the intrinsic tendency of the A750-N756 segment of the N-terminal of the αC-helix to fold that we see in the simulation may restrict the conformational flexibility of the αC-helix and favor αC-in conformations.
 
 The deepest minimum in the free energy landscape of A763-Y764insFQEA – (CV1, CV2) = (−0.7, 0.3) – corresponds to an ensemble where the A-loop of the mutant samples semi-closed conformations, but unlike the WT, the αC-helix is stabilized in an αC-in conformation, where the K745-E762 salt bridge is formed (Figure 5, basin γ1). Interestingly, this ensemble contains several conformations in which the N-lobe has separated from the C-lobe, similar to the behavior seen in the D770-N771insNPG. In the case of the A763-Y764insFQEA, the activity of the mutant has been found to be sensitive to Hsp90 inhibitors, suggesting that this mutant is dependent on Hsp90 for stability and downstream-signaling (Jorge et al., 2018). As the function of this mutant has been shown to be chaperone-dependent (Jorge et al., 2018), the biological relevance of the observed elongated states with additional space between the two lobes might be to facilitate the recruitment of the Hsp90 chaperone.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig5-v1.jpg)
+
+**Figure 5.:** Representative structures of the main conformations found in the free energy minima are depicted in cartoon representation. A yellow cross indicates the position of the active conformation (homology model) in the explored CV space, while a black cross indicates the position of the Src-like inactive conformation (homology model) as reference.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Side and top view of the WT and A763-Y764insFQEA asymmetric dimer interface around the αC-helix (receiver monomer) and H-helix (activator monomer). F760 of A763-Y764insFQEA is accommodated in the hydrophobic cleft formed by V952, M949, and K953, while K757 of the WT has been replaced by D761 in the A763-Y764insFQEA, which can interact with K953. (B) Distribution of the distance between residues of the αC-helix of the receiver kinase and αI-helix of the activator kinase over the course of the unbiased simulations of the A763-Y764insFQEA asymmetric dimer.
 
 In the second main minimum – (CV1, CV2) = (1.4, 0.1) – A763-Y764insFQEA samples inactive conformations where the two-turn helix on the A-loop is formed and stabilized by interactions of K860 with the inserted glutamic acid, and the shifted E762 and E758, as well as of interaction of L858 with the inserted F764 (Figure 5, basin γ2).
 
@@ -92,13 +218,25 @@ Higher in energy we found an ensemble of conformations which has structural feat
 
 In the apo, monomeric form, the insertion results in an extension of the 3 C loop, which was expected to increase the mobility of the αC-helix. Instead, in both the unbiased and PTmetaD simulations that we performed, this extension seems to provide structural stability to the αC-helix. Even though the αC-helix samples disordered states in all the basins, in the dominant conformations of these basins it is highly helical, suggesting that the mutation may also activate the receptor by suppressing the disorder of the αC-helix that is important for the formation of the asymmetric homodimer and downstream signaling. Moreover, looking at the position of the αC-helix in the two monomers of the asymmetric dimer, we see that, unlike the WT, the αC-helix is kept predominately in the αC-in conformation in both monomers (Figure 1—figure supplement 4). Interestingly, although the αC-helix of both monomers samples occasionally αC-out conformations, it transitions back to the αC-in conformation, even in the case of the donor kinase, where there is nothing to push the αC-helix back. We were not able to associate this behavior of the donor kinase with the mutation on the acceptor kinase or find an allosteric communication between the dimerization interface and the αC-helix. Nevertheless, since simulations of the monomeric state of A763-Y764insFQEA-EGFR shows that the αC-helix transitions naturally from the αC-out to the αC-in (Figure 1—figure supplement 1), we reason that the more frequent sampling of the αC-in conformation in the case of the donor kinase is most likely mutation-driven rather than dimerization-driven.
 
-## ΔELREA populates αC-out conformations
+### ΔELREA populates αC-out conformations
 
 EGFR mutants harboring ΔELREA show increased activity, comparable to the activity seen in L858R mutants and much higher than the one seen in the WT (Foster et al., 2016). Foster et al. showed that the deletion of five amino acids at the 3 C loop is optimal for kinase activation as this deletion is expected to prevent αC-helix from adopting an αC-out conformation (Foster et al., 2016). Moreover, it has been recently shown that ΔELREA EGFR is still oncogenic even in the absence of asymmetric homodimerization (Cho et al., 2013), unlike the wild-type and L858R EGFR, which acquire their oncogenic properties following asymmetric dimerization. However, we note that heterodimerization of the ΔELREA with other members of the ERBB family might play a role.
 
 Modeling of the ΔELREA deletion in the active conformation suggests that the deletion does not significantly perturb the overall kinase domain. Inspection of the region around the mutation indicates that the deletion can be accommodated in the active, αC-in conformation by repositioning of residues 753PKAN756, which form the initial N-terminal turn of the αC-helix in the WT-EGFR after the three-strand. On the other hand, modeling of the Src-like inactive conformation suggests that unfolding of this turn at the N-terminal end of the αC-helix is necessary for it to adopt the characteristic αC-out conformation. Long unbiased molecular dynamics simulations by Shan et al. suggest that the ΔELREA mutation stabilizes the αC-in active conformation relative to the Src-like inactive conformation, but the mutation does not prevent αC-helix from sampling the αC-out conformation (Shan et al., 2012). In our unbiased simulations, we confirm that the αC-out is a stable conformation in terms of the structural integrity of the two-turn helix on the A-loop, the αC-helix and the overall folding of the receptor.
 
 The reconstructed free energy landscape confirms this observation, as the αC-helix is found in the αC-out conformation in one of deepest free energy minima – (CV1, CV2) = (1.4, 0.1) – the characteristic two-turn helix on the A-loop of the Src-like inactive conformation is formed, and the αC-helix has shifted to adopt the αC-out conformation (Figure 6, basin β2). The deleted L747, which on the WT contributes to the stabilization of the two-turn helix through a hydrophobic network between I759, L861, and L858 (Figure 1—figure supplement 3), is replaced by P753 (Figure 6, basin β2) and, therefore, the stability of the Src-like inactive conformation is not compromised despite the deletion.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig6-v1.jpg)
+
+**Figure 6.:** Representative structures of the main conformations found in the free energy minima are depicted in cartoon representation. A yellow cross indicates the position of the active conformation (homology model) in the explored CV space, while a black cross indicates the position of the Src-like inactive conformation (homology model) as reference.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The activation loop of each structure has been highlighted to show the similarity in the adopted conformation.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Distribution of the distance between residues of the αC-helix of the receiver kinase and I-helix of the activator kinase over the course of the unbiased simulations of the ΔELREA asymmetric dimer. The residue numbering corresponds to the numbering of each system; ΔELREA numbering (black), WT numbering (orange).
 
 In the second free energy minimum – (CV1, CV2) = (1.6, 0.45) – ΔELREA sampled mainly active-like conformations in which the C was again in the αC-out conformation, but the A-loop assumed extended conformations (Figure 6, basin β1) similar to those seen in the unbiased simulations of the active WT-EGFR. Interestingly, the A-loop in this ensemble also visited conformations in which the middle section of the A-loop formed a three-turn helix, reminiscent of an extended helix in the A-loop of MPSK1 kinase (Figure 6—figure supplement 1, PDB ID: 2BUJ). This conformation is intriguing because the helix puts Y869, a well-known phosphorylation site of EGFR kinase, in an exposed position along with a group of glutamate residues (E865, E866, E868, and E872), which interact with K754 of the unfolded N-terminal end of the αC-helix (Figure 6, basin β1). Interestingly, in a basin between 1 and 2, this conformation that is less populated in basin two becomes dominant and we see Y869 interacting with K754 and E762 with K860 (Figure 6, basin β4). Moreover, the minimum energy path connecting the Src-like inactive to active conformation passes through this basin (Figure 7—figure supplement 3), which suggests that interactions of the unfolded N-terminal end of the αC-helix, which is now the 3 C loop, with the A-loop in the ΔELREA mutant should be important. This helical conformation of the activation loop might be involved in the phosphorylation of Y869. A similar conformation has been described in Shan et al., 2013 as an intermediate state of the active to Src-like inactive transition of the WT.
 
@@ -132,7 +270,7 @@ Our study reveals intricate differences between EGFR mutations, even between mut
 
 ## Materials and methods
 
-## Protein structure preparation - monomeric EGFR
+### Protein structure preparation - monomeric EGFR
 
 The crystal structures for the active, unphosphorylated kinase domain of the wild-type (PDB ID: 2GS2) and mutant (PDB ID: 2ITV for the L858R mutant, and PDB ID: 4LRM for the D770-N771insNPG mutant) EGFR were retrieved from the Protein Data Bank and the used sequence comprises the interval L703–Q976 in our notation, L67–Q952 in the PDB notation. The amino acid numbering convention adopted here includes the 24-residue long membrane-targeting signaling peptide that is deleted in the mature protein.
 
@@ -142,29 +280,103 @@ Since none of the studied mutants has been crystallized in an inactive conformat
 
 MD simulations combined with experimental data have shown that the flip of the DFG motif in many protein kinases, including the kinase domain of EGFR, is dependent to the protonation state of the Asp residue of the DFG motif where protonation promotes the flip and favors the DFG-out conformation (Shan et al., 2013; Shan et al., 2009; Sultan et al., 2017). In all the structures that were used in the simulations that are described below, the Asp was unprotonated and, therefore, the DFG-flip was not sampled in any of the simulations described here.
 
-## Protein structure preparation - homodimeric EGFR
+### Protein structure preparation - homodimeric EGFR
 
 The apo, unphosphorylated WT-EGFR monomers were assembled into asymmetric and head-to-head symmetric homodimers based on the crystal packing of the monomers observed in PDB entries 2GS6 and 5CNO respectively (Zhang et al., 2006; Kovacs et al., 2015). In the asymmetric dimeric configuration, the kinase domain of each monomer is found in the active conformation, while in the head-to-head symmetric homodimer the kinase domains are found in the Src-like inactive conformation.
 
 Out the four mutants that we simulated here, available crystal structures of mutant dimers exist only for the L858R EGFR (PDB ID: 2ITV) and D770-N771insNPG-EGFR (PDB ID: 4LRM), the monomers of which form active, asymmetric assemblies in their crystal structures. Given the activating nature of all the studied mutants, and in the absence of crystallographic data for symmetric dimers for any of them, we simulated the mutants only in the asymmetric dimers. The A763-Y764insFQEA and ΔELREA were modeled to the asymmetric dimer using the WT-EGFR as a template using the software MODELLER (Sali and Blundell, 1993).
 
-## Unbiased MD simulations details - monomeric EGFR
+### Unbiased MD simulations details - monomeric EGFR
 
 Prior to any simulation, the protonation state of each residue was calculated using PROPKA3.0 server (Li et al., 2005) and correspond to pH 7. Then, each system was enclosed in a dodecahedron box with periodic boundary conditions and solvated with TIP4PD water molecules, while Na+ and Cl- ions were added to reach neutrality, and the final NaCl concentration of 150 mM. The MD simulations were performed using the GROMACS 2018.3 simulation package (Abraham et al., 2015) patched with the PLUMED 2.4.1 plug-in (Tribello et al., 2014). For all simulations, we used a99SB-disp protein force field with its modified TIP4PD water model (Robustelli et al., 2018). The energy of all systems was minimized using the steepest descent integrator and the solvated systems were equilibrated afterwards in the canonical (NVT) ensemble for 5 ns, using a Berendsen barostat (Berendsen et al., 1984) at 1 bar with initial velocities sampled from the Boltzmann distribution at 300 K. The temperature was kept constant at 300 K by a velocity-rescale thermostat (Bussi et al., 2007) and a time step of 2 fs. The long-range electrostatics were calculated by the particle mesh Ewald algorithm, with Fourier spacing of 0.16 nm, combined with a switching function for the direct space between 0.8 and 1.0 nm for better energy conservation. The systems were equilibrated for additional 10 ns in the isothermal-isobaric (NPT) ensemble prior to the production run applying position constraints to the protein (with a restraint spring constant of 1 kJ mol−1nm −2). An unconstrained 1000 ns production run in the NPT ensemble, coupled with a velocity-rescale thermostat (Bussi et al., 2007) at 300 K and a Parinello-Rhaman barostat (Parrinello and Rahman, 1981) at 1 bar, was carried out for each of the systems starting independently from the active and Src-like inactive conformation (Table 1).
 
-## Unbiased MD simulations details - homodimeric EGFR
+### Unbiased MD simulations details - homodimeric EGFR
 
 For the unbiased simulations of the asymmetric dimers, a similar protocol to the monomeric EGFR was followed for consistency. In particular, the protonation states of the residues at pH 7 were determined by PROPKA3.0 (Li et al., 2005), which left all the residues in their usual charge states. Then, each system was enclosed in a truncated dodecahedron box with periodic boundary conditions and solvated with TIP4PD water molecules, while Na+ and Cl- ions were added to reach neutrality, and the final NaCl concentration of 0.15 M (the total number of atoms was ~230,000 per system). All molecular dynamics simulations were performed using a99SB-disp (Robustelli et al., 2018) protein force field in the NPT ensemble, keeping the temperature at 300 K with a velocity-rescale thermostat (Bussi et al., 2007), and the pressure at 1 bar with a Parinello-Rahman barostat (Parrinello and Rahman, 1981). The long-range electrostatics were calculated by the particle mesh Ewald algorithm, with Fourier spacing of 0.16 nm, combined with a switching function for the direct space between 0.8 and 1.0 nm for better energy conservation. The systems were equilibrated for additional 10 ns in the NPT ensemble prior to the production run applying position constraints to the protein (with a restraint spring constant of 1 kJ mol−1 nm−2). An unconstrained 4000 ns production run in the NPT ensemble was carried out for each of the systems (Table 2).
 
-## Metadynamics simulations details - monomeric EGFR
+**Table 2.**
+ Summary of the unbiased simulations of the homodimeric EGFR.The reported times correspond to the simulation time of each independent unbiased simulation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>System</th>
+      <th>Starting conformation</th>
+      <th>Total simulation time (ns)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">WT</td>
+      <td>asymmetric dimer</td>
+      <td>4000</td>
+    </tr>
+    <tr>
+      <td>symmetric dimer</td>
+      <td>4000</td>
+    </tr>
+    <tr>
+      <td>L858R</td>
+      <td>asymmetric dimer</td>
+      <td>4000</td>
+    </tr>
+    <tr>
+      <td>A763-Y764insFQEA</td>
+      <td>asymmetric dimer</td>
+      <td>4000</td>
+    </tr>
+    <tr>
+      <td>D770-N771insNPG</td>
+      <td>asymmetric dimer</td>
+      <td>4000</td>
+    </tr>
+    <tr>
+      <td>ΔELREA</td>
+      <td>asymmetric dimer</td>
+      <td>4000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Metadynamics simulations details - monomeric EGFR
 
 A preliminary PTmetaD simulation in the well-tempered ensemble was performed for each of system using eleven replicas at increasing temperatures (300, 305, 310, 318, 326, 335, 344, 354, 363, 375, and 382 K), in which only the potential energy was biased so that to increase its fluctuation and reach a target exchange rate between neighboring replicas of 15%. To ensure that all meaningful conformations would be sampled over the course of the PTmetaD simulations, three out of the 11n replicas were started with the WT or mutant EGFR in the Src-like inactive conformation, whereas in the rest the kinase was in the active conformation. Once the desired exchange rate between the replicas was reached, the simulations were interrupted and the deposited energy was saved and used as an initial bias during the production PTmetaD simulations.
 
-After this preliminary run, for the production stage, we run PTmetaD in the well-tempered ensemble for each system using the eleven replicas (300 to 382 K), where we kept biasing the potential energy by depositing gaussians of height, W0=1 kJ mol−1, and width, σP⁢o⁢t⁢E⁢n⁢e⁢r⁢g⁢y=100 kJ mol−1 to maintain a good exchange rate despite the big temperature separation. An exchange between adjacent replicas was attempted every 2 ps. The deposited Gaussians from the preliminary well-tempered run were loaded in the PTmetaD simulation to maintain the exchange rate between the replicas to 15%. A Gaussian was deposited in the collective variable space every 1 ps with W=W0⁢e-V⁢(s,t)(f-1)⁢T, where W0=4 kJ mol−1 is the initial height, T is the temperature of each replica, f=15 is the bias factor, and V(s, t) is the bias potential at time t and CV value s.
+After this preliminary run, for the production stage, we run PTmetaD in the well-tempered ensemble for each system using the eleven replicas (300 to 382 K), where we kept biasing the potential energy by depositing gaussians of height, $W_{0}=1$ kJ mol−1, and width, $\sigma_{P⁢o⁢t⁢E⁢n⁢e⁢r⁢g⁢y}=100$ kJ mol−1 to maintain a good exchange rate despite the big temperature separation. An exchange between adjacent replicas was attempted every 2 ps. The deposited Gaussians from the preliminary well-tempered run were loaded in the PTmetaD simulation to maintain the exchange rate between the replicas to 15%. A Gaussian was deposited in the collective variable space every 1 ps with $W=W_{0}⁢e^{-\frac{V⁢(s,t)}{(f-1)⁢T}}$, where $W_{0}=4$ kJ mol−1 is the initial height, T is the temperature of each replica, $f=15$ is the bias factor, and V(s, t) is the bias potential at time t and CV value s.
 
-The following three collective variables were biased simultaneously during the production stage: the difference between atomic distances C⁢V⁢1=d⁢(NZK⁢745,CδE⁢762)-d⁢(NZK⁢745,CγD⁢855); the distance in contact map space with respect to the inactive conformation C⁢V⁢2⁢(R)=1N⁢∑γ∈Γ(Dγ⁢(R)-Dγ⁢(Ri⁢n⁢a⁢c⁢t⁢i⁢v⁢e))2; the distance in contact map space with respect to the active conformation CV3(R)=1N∑γ∈Γ(Dγ(R)−Dγ(Ractive))2. Dγ(R) is a sigmoidal function that measures the degree of formation of the contact γ in the structure R and is defined as Dγ⁢(R)=wγ⁢(rγ/rγ0)n(rγ/rγ0)m, where rγ is the contact distance in the structure R, rγ0 is the contact distance in either the reference inactive or active conformation depending if γ is a contact specific to the former or latter conformation, wγ is the weight of the contact and is set to one for regular contacts and three for salt bridges, N is a normalization constant, n=6, and m=10. Given the previous success of these three CVs to probe the effect of oncogenic mutations on the free energy landscape of EGFR’s kinase domain, here, we used the same set of contacts for the contact map distance of CV2 and CV3 as the ones used by Sutto et al. for the WT (Sutto and Gervasio, 2013). The set of contacts includes only those pairs that are able to discriminate between the two structures, that is, pairs of atoms that describe contacts, which are formed in the active conformation but are broken in the Src-like inactive and vice-versa.
+The following three collective variables were biased simultaneously during the production stage: the difference between atomic distances $C⁢V⁢1=d⁢(N_{Z}^{K⁢745},C_{\delta}^{E⁢762})-d⁢(N_{Z}^{K⁢745},C_{\gamma}^{D⁢855})$; the distance in contact map space with respect to the inactive conformation $C⁢V⁢2⁢(R)=\frac{1}{N}⁢\sum_{\gamma\inΓ}(D_{\gamma}⁢(R)-D_{\gamma}⁢(R_{i⁢n⁢a⁢c⁢t⁢i⁢v⁢e}))^{2}$; the distance in contact map space with respect to the active conformation $CV3(R)=\frac{1}{N}\sum\gamma\inΓ(D_{\gamma}(R)−D_{\gamma}(R_{active}))^{2}$. $D_{\gamma}(R)$ is a sigmoidal function that measures the degree of formation of the contact $\gamma$ in the structure R and is defined as $D_{\gamma}⁢(R)=w_{\gamma}⁢\frac{(r_{\gamma}/r_{\gamma}^{0})^{n}}{(r_{\gamma}/r_{\gamma}^{0})^{m}}$, where $r_{\gamma}$ is the contact distance in the structure $R$, $r_{\gamma}^{0}$ is the contact distance in either the reference inactive or active conformation depending if $\gamma$ is a contact specific to the former or latter conformation, $w_{\gamma}$ is the weight of the contact and is set to one for regular contacts and three for salt bridges, N is a normalization constant, $n=6$, and $m=10$. Given the previous success of these three CVs to probe the effect of oncogenic mutations on the free energy landscape of EGFR’s kinase domain, here, we used the same set of contacts for the contact map distance of CV2 and CV3 as the ones used by Sutto et al. for the WT (Sutto and Gervasio, 2013). The set of contacts includes only those pairs that are able to discriminate between the two structures, that is, pairs of atoms that describe contacts, which are formed in the active conformation but are broken in the Src-like inactive and vice-versa.
 
 To further assess whether these contact maps and their adaptation from Sutto et al. were indeed able to describe the transition of interest, prior to the PTmetaD simulations, we ran a set of steered-MD (SMD) simulations, where we steered the active to Src-like inactive transition along the contact map space. In these exploratory SMD simulations, the decrease of the root-mean-square deviation (RMSD) with respect to the Src-like inactive conformation when we start from the active conformation and steer toward the Src-like conformation (Figure 7) as well as the satisfactory superposition of the final SMD conformation to the Src-like inactive conformation confirmed the adequacy of these contact maps, which were then used in the PTmetaD.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig7-v1.jpg)
+
+**Figure 7.:** (A) RMSD change with respect to the active and Src-like inactive conformation during the SMD simulation of the A763-Y764insFQEA EGFR. The SMD simulation was initiated from the active conformation (yellow) and streered toward the Src-like inactive conformation (orange). (B) Superposition of the final frame of the SMD simulation with the initial and target conformation. Same SMD simulations were run for each system prior to the PTmetaD to confirm that the designed contact maps can drive the active to Src-like inactive transition and vice-versa with similar results (data not shown).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** PTmetaD simulations convergence check for the ΔELREA-EGFR. (A) Time series per replica of the three CVs that were biased during the PTmetaD simulation. Following the progression of the predefined CVs over time, one can assess whether the system gets stuck to any specific region of the CV phase space. (B) Estimate of the free energy as a function of the simulation time. At convergence, the reconstructed profiles should be similar. Similar behavior was observed for the rest of the examined mutants.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Mapping of the conformational space sampled during the unbiased simulations of the monomeric EGFR to the space sampled during the PTmetaD simulations as projected to two out of the three CVs that were biased during the PTmetaD. The portion of the space that was sampled by unbiased simulations starting from the active conformation are shown in magenta, while the space sampled during simulations starting from the Src-like inactive conformation are shown in green.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** Minimum energy path connecting the active to Src-like inactive conformation.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** N/C-lobe separation (A) during the unbiased simulations of the monomeric form starting from the active conformation, (B) the receiver monomer during the unbiased simulations of the homodimeric form, and (C) the reprojection of the free energy from the PTmetaD on this distance. The calculated lobe distance corresponds to the distance between V786 (N-lobe, WT residue numbering) and T903 (C-lobe, WT residue numbering).
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/65824/elife-65824-fig7-figsupp5-v1.jpg)
+
+**Figure 7—figure supplement 5.:** Ensemble of conformations from the PTmetaD simulations of the activating mutant (A) L858R and (B) A763-Y764insFQEA in the αC-in and αC-out conformations depicted in gray tubes and superimposed with the crystal structures of the WT-EGFR (PDB ID: 2ITY) bound with gefitinib and lapatinib (PDB ID: 1XKK).
 
 The PTmetaD simulations were run until the free energy in the bidimensional projections and in the monodimensional projections did not change more than 2.5 kcal mol−1 in the last 100 ns and diffusive behavior was reached for all CVs (Figure 7—figure supplement 1). This convergence criterion led to 1000 ns/replica long simulations for WT, A763-Y764insFQEA, and ΔLREA, and to 900 ns/replica long simulations for L858R and D770-N771insNPG.
 

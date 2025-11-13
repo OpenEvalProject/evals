@@ -41,15 +41,23 @@ In this study, we demonstrate that RA signaling is the link between mesodermal T
 
 ## Results
 
-## Tbx5 regulates cardiopulmonary development and Aldh1a2 expression in mouse
+### Tbx5 regulates cardiopulmonary development and Aldh1a2 expression in mouse
 
 To investigate the Tbx5-regulated GRN that coordinates heart and lung development, we re-examined our published RNA-seq data of CP tissue (containing both foregut mesoderm and endoderm) micro-dissected from wild-type (WT) and Tbx5−/− mouse embryos at E9.5 (Steimle et al., 2018). Differential expression analysis revealed 1588 upregulated genes and 1480 downregulated genes and in the absence of Tbx5 (≥1.5 fold change and 5% FDR) (Figure 1A; Figure 1—source data 1; Steimle et al., 2018). Reduced expression of Hh signaling components (Shh, Ihh, and Patch2), Hh-targets (Hhip and Gli1), the lung-inducing Wnt2/2b ligands, and pulmonary progenitor marker Nkx2-1, indicated a loss of pulmonary fate in Tbx5−/− mutant CPP tissue (Figure 1B). We examined the relationship between pSHF/lung and aSHF/pharyngeal transcripts in Tbx5−/− embryos by intersecting the Tbx5-regulated transcriptome with gene sets from recent single-cell RNA-seq studies of the developing E7.75–E9.5 mouse heart and foregut that define aSHF, pSHF, pharynx, and lung progenitor cells (de Soysa et al., 2019; Han et al., 2020, Supplementary files 2 and 3). We found that 25% of genes (91/366) specifically enriched in aSHF or pharyngeal cells, but only 5% of genes (10/213) specifically enriched in pSHF or lung progenitors, overlapped with transcripts upregulated in the Tbx5−/− mutants (*p<0.0001, hypergeometric probability test, HGT) (Figure 1A). On the other hand, 34% of the pSHF or lung marker genes (72/213) but only 6% of the pSHF+ pharynx enriched genes (21/366) were downregulated in Tbx5−/− mutants (*p<0.001, HGT) (Figure 1A). The aSHF-enriched genes upregulated in Tbx5−/− CP tissue included well-known patterning genes Hand1, Irx3, Irx5, Mef2c, Meg3, and Tlx1 as well as FGF signaling components and targets including Fgf8, Fgf10, Spry1, Spry2, and Dusp6 (Figure 1B). Gene set enrichment analysis (GSEA) confirmed a statistically significant overrepresentation of aSHF/pharynx genes among upregulated genes (normalized enrichment score [NES]=1.58; p<0.0001) and overrepresentation of pSHF/lung transcripts among the downregulated genes (NES=–1.99; p<0.0001) in the Tbx5−/− CP tissue (Figure 1—figure supplement 1A,B). Thus, Tbx5 mutant mouse embryos exhibit a reduction of the pSHF transcriptional program and gain of aSHF gene expression in the pSHF domain, consistent with recent reports (De Bono et al., 2018).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69288/elife-69288-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of an E9.5 mouse embryo highlighting the dissected CP tissue (containing foregut mesoderm and endoderm) profiled by bulk RNA-seq. Venn diagrams show genes differentially expressed in wild-type (WT) versus Tbx5−/− CP tissue (>1.5 fold change, 5% FDR; Steimle et al., 2018, GSE75077) intersected with gene sets from single-cell RNA-seq studies defining aSHF+ pharynx cells versus pSHF/CPP+ lung progenitor cells (de Soysa et al., 2019, GSE126128; Han et al., 2020, GSE136689) (Supplementary files 2 and 3). Statistically significant intersection based on hypergeometric tests. *p<0.0001. (B) Transcriptome analysis of Tbx5−/− CP tissue suggests disrupted SHF pattering and failed pulmonary development with reduced RA and increased FGF signaling. Heat map of selected differentially expressed genes in WT Tbx5+/+ (n=5) and Tbx5−/− mutant (n=2) CP tissue grouped by domain of expression or pathway. (C) RT-qPCR validation of decreased Aldh1a2 and increased Fgf8, Fgf10 expression in E9.5 WT and Tbx5−/− CP tissue. Relative mean expression+S.D. *p<0.05 Student’s t-test relative to WT littermates. (D–F) Whole-mount immunostaining of E9.5 Shh:GFP mouse embryos show that Tbx5 (green) and Ald1a2 (red) expression overlaps in a subset of the pSHF (yellow in (F’) and (F”’)) adjacent to the Nkx2-1+/Shh:GFP+ pulmonary domain (F”, F”’). Scale bar in (D) = 200 μM, (E–E”) = 100 μM, and (F–F”’) = 50 μM. (G) Model of the proposed Tbx5-RA signaling networks in the cardiopulmonary tissue. Also see Figure 1—figure supplement 1, Figure 1—figure supplement 1– tables 1-3. aSHF, anterior second heart field; fg endo, foregut endoderm; ns, not significant; oft, outflow tract; pSHF, posterior SHF; RA, retinoic acid; ventr, ventricle.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69288/elife-69288-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Gene set enrichment analysis (GSEA) comparing Tbx5-regulated transcriptome in CP tissue (|>1.5| fold change, 5% FDR; Steimle et al., 2018, GSE75077) with gene sets from single-cell RNA-seq studies defining aSHF versus pSHF (de Soysa et al., 2019, GSE126128) and pharynx versus CPP+ lung progenitor cells (Han et al., 2020, GSE136689) (Supplementary files 2 and 3). Genes upregulated in Tbx5−/− CP tissue are enriched in aSHF and pharynx and depleted in pSHF/CPP/lung enriched markers (A). In contrast transcripts downregulated in Tbx5−/− CP tissue were significantly enrichened pSHF/CPP/lung marks and depleted for aSHF/pharynx markers (B). (C) Heat map of RNA-seq gene expression showing TGFβ pathway genes is upregulated in Tbx5−/− CP tissue. (D, E) Immunostaining of E8.5 (D) or E9 (E) mouse embryo foregut region shows co-expression of Tbx5 (green) and Aldh1a2 (red) protein in the foregut lateral plate mesoderm (fg lpm)/posterior second heart field (pSHF). (F) Digital in-situ hybridization using as online Spatial Mouse Atlas of single cell gene expression (Lohoff et al., 2021). E9.5 digital in-situ hybridizations show the domains of Aldh1a2, Tbx5, Tbx1, and Shh expression; yellow boxed region indicates Tbx5/Aldh1a2 co-expression in the pSHF lpm. (G, H) 3-D reconstructions from actual serial section in-situ hybridizations of E9.5 mouse CP foregut region showing expression domains of Fgf10, Fgf8, Aldh1a2, and Shh transcripts. Top row is a z-stack 3-D projection; bottom row is a rotated ventral view; (H) shows a ventral view, merged projection of the expression domains of Fg10, Fgf8, and Shh. aSHF, anterior second heart field; CPP, cardiopulmonary progenitor; NES, normalized enrichment score.
 
 These changes in pSHF gene expression suggested a possible loss of RA signaling. Indeed, genes that promote RA signaling were downregulated in Tbx5−/− CP tissue, including Aldh1a2, Crabp2, which promotes nuclear shuttling of RA, and Rbp1, a cytosolic chaperone of the RA precursor retinol (Figure 1B). On the other hand, enzymes that attenuate RA signaling, including Cyp26a1, Cyp26b1, Cyp26c1, and Dhrs3, were increased in Tbx5−/− pSHF/CPP tissue. Reduced RA-signaling in Tbx5−/− CP tissue was also consistent with increased expression of multiple TGFβ pathway components and targets (Figure 1—figure supplement 1C), which are known to be suppressed by RA during foregut and heart development (Chen et al., 2007; Li et al., 2010; Ma et al., 2016).
 
 The observation that Aldh1a2 expression was reduced in the Tbx5−/− pSHF whereas FGF signaling components and targets were increased is consistent with the known role of RA in negatively regulating Fgf8/Fgf10+ aSHF fate (Ryckebusch et al., 2008; Sirbu et al., 2008; Rydeen and Waxman, 2016). RT-qPCR of dissected E9.5 CP tissue validated the RNA-seq analysis with Aldh1a2 being dramatically downregulated in Tbx5−/− mutants while Fgf8 and Fgf10 were upregulated (Figure 1C). Immunostaining of transgenic Shh:GFP embryos confirmed previous reports that Aldh1a2 is co-expressed with Tbx5 in a subset of pSHF cells adjacent to the foregut Shh/Nkx2-1-expressing pulmonary endoderm (Figure 1D–F” and Figure 1—figure supplement 1D-E'' Hochgreb et al., 2003; Ryckebusch et al., 2008; De Bono et al., 2018; de Soysa et al., 2019). Co-expression of Tbx5 and Aldh1a2 transcripts in the pSHF adjacent to Tbx1+ aSHF and Shh + endoderm were also evident in an online spatial atlas of single-cell gene expression (Figure 1—figure supplement 1F; Lohoff et al., 2021). To further define the spatial distinct aSHF-FGF and pSHF-RA signaling domains, we generated 3D reconstructions using serial sections of Aldh1a2, Fgf8, Fgf10, and Shh in-situ hybridizations from the WT mouse E9.5 (Figure 1—figure supplement 1G-H). Together these observations were consistent with the hypothesis that Tbx5 regulates CP development by controlling expression of Aldh1a2, which in turn establishes a local domain of RA activity in the pSHF that suppresses aSHF fate and promotes pulmonary development.
 
-## Tbx5 regulates cardiopulmonary development and maintains Aldh1a2 expression in Xenopus
+### Tbx5 regulates cardiopulmonary development and maintains Aldh1a2 expression in Xenopus
 
 Since Tbx5−/− mutant mouse embryos die shortly after E9.5 from cardiac insufficiency (Bruneau et al., 2001; Xie et al., 2012), we turned to Xenopus to elucidate the molecular mechanisms by which Tbx5 coordinates CP development. Xenopus larva can live for many days without a functional heart, by absorbing oxygen from the water, and their experimental advantages facilitate epistatic analysis of signaling pathways.
 
@@ -57,7 +65,21 @@ Previous studies have shown that Tbx5-regulated CP development is conserved betw
 
 Analysis of control and Tbx5 depleted Xenopus embryos showed that, like in mice, Tbx5 and Aldh1a2 were co-expressed in the foregut lpm/pSHF (Figure 2A and B) and that Xenopus Tbx5 is required for aldh1a2 expression (Figure 2C–F). Both X. laevis Tbx5-MO morphant and X. trop tbx5 CRISPR/CAS9 mutant embryos exhibited a loss or strong reduction of aldh1a2 transcripts and Aldh1a2 protein in the foregut lpm at NF34 (a timepoint similar to mouse E9.5) (Figure 2C–F; Figure 2—figure supplement 1B). Quantification of the Aldh1a2 immunostaining in 3D volume renderings of the fg lpm/pSHF domain of Tbx5 morphants and mutants revealed that Aldh1a2 protein was only expressed on average to approximately 28% (p=0.0009) and 33% (p≤0.0001) of WT levels, respectively (Figure 2—figure supplement 1B and Figure 3K). Analysis of transgenic Wnt/β-catenin reporter embryos Tg(WntRE:dGFP) (Tran et al., 2010), confirmed the failure of Wnt-dependent pulmonary induction in the ventral foregut of Tbx5-deficient embryos (Figure 2C and D). Importantly, co-injection of human TBX5 RNA rescued aldh1a2 expression and pulmonary development (Figure 2D–F, Figure 2—figure supplement 1B, and Figure 3). A time course analysis revealed that loss of Tbx5 resulted in a downregulation of aldh1a2 expression in the foregut lpm starting at NF25, but not at early somitogenesis stages (NF15) (Figure 2E and F). These results demonstrate that Tbx5 is required to maintain aldh1a2 expression in the foregut lpm, and that it regulates a conserved transcriptional program in Xenopus and mouse to coordinate SHF patterning and lung induction.
 
-## Tbx5 regulates cardiopulmonary development via RA signaling
+![Figure 2.](https://cdn.elifesciences.org/articles/69288/elife-69288-fig2-v2.jpg)
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69288/elife-69288-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Immunostaining of stage NF43 transgenic Xenopus laevis Tg(nkx2-5:GFP) reporter embryos injected with either mismatch-MO (control) or Tbx5-MO. Confocal optical sections through the cardiopulmonary-foregut region showing Fibronectin+ tissue boundaries (purple), GFP in the ventral pharynx, trachea, and ventricle; and Sox2 (red) in the pharyngeal/esophageal endoderm. Tbx5-depleted embryos exhibit severe cardiac hypoplasia, a lack of ventricular trabeculae, and a single, undivided foregut tube lacking Nkx2-1 respiratory progenitors. (B) Immunostaining of NF44 X. tropicalis embryos for Fibronectin (purple), Sox2 (red), and FoxF1 (green) shows that tbx5 mutants, have a single Sox2+ foregut tube and severe cardiac hypoplasia phenocopying X. laevis Tbx5 morphants. Injection of human TBX5 RNA rescues trachea-esophageal morphogenesis and cardiac chamber development. (C) Representative images for quantitation of Aldh1a2 immunofluorescence signal in Tbx5 LOF embryos at NF34. Nikon Elements Analysis AR software was used to determine the average volume pixel intensity of the fg lpm region (dotted yellow lines). Each dot in the graphs represents a distinct fg lpm/pSHF region from N=3 total embryos, all imaged with identical confocal laser settings. *p<0.05, parametric two-tailed paired t-test. at, atrium; eso, esophagus; lb, lung bud; LOF, loss-of- function; lpm, lateral plate mesoderm; MO, morpholino; pha, pharynx; tra, trachea; vent, ventricle.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69288/elife-69288-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of the experimental design. (B–J) Exogenous RA rescues Tbx5 LOF, while inhibition of RA phenocopies Tbx5 LOF. Whole-mount in-situ hybridization of NF34 X. laevis embryos after the indicated experimental treatments: injection of negative control 3 bp mismatch-MO (10 ng), Tbx5-MO (10 ng), Human TBX5 RNA (hTBX5; 100 pg), and/or 25 nM RA, 10 µM DEAB, DMSO vehicle control from NF20-34. The numbers of embryos with the observed expression pattern are indicated. Arrows indicate the relevant expression domain in the cardiopulmonar (CP) tissue. Brackets indicate the aSHF/pharyngeal domain. (K) Heat map showing relative expression from RT-PCR analysis of NF34 CP-foregut (fg) tissue dissected from control or Tbx5-MO injected embryos and treated with or without RA from NF20 to NF34. Each row is the average from the three biological replicates (n=4 explants per replicate). (L) Diagram of the proposed GRN model at NF25–35 showing the key role of Aldh1a2-dependent RA signaling downstream of Tbx5. White arrows indicate relationships tested in the above experiments and black arrows are demonstrated from the previous publications. Also see Figure 3—figure supplement 1, and related source data files. GRN, gene regulatory network; LOF, loss-of-function; MO, morpholino; RA, retinoic acid.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69288/elife-69288-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–E) Aldh1a2 MO knockdown phenocopies the pharmacological inhibition by DEAB treatment. Embryos were injected at the 8-cell stage into dorsal mesendoderm targeting the CP domain or treated from NF20 to NF34 with 10 µM DEAB or 25 nM RA. (A–C) Immunostaining of NF34 embryos for Aldh1a2 (red), Nkx2-1 (green), and Sox2 (blue) confirms that Aldh1a2-MO injection or DEAB treatment disrupts the RA>Tbx5>Aldh1a2>RA positive feedback loop (diagrammed in (D)) and results in failed induction of Nkx2-1+ pulmonary progenitors. (E) Whole-mount in-situ hybridization of NF34 control, Aldh1a2-MO injection, or DEAB treatment (NF20–34) showing similar effects. Treatment with 25 nM RA (NF20–34) rescued the changes in gene expression. The numbers of embryos with the observed expression pattern are indicated. Arrows indicate the relevant expression domain in the foregut – cardiopulmonary region. (F) Experimental schematic. (G) WNT2B protein 100 ng/ml rescues nkx2-1 but not Hh ligand expression in Tbx5-depleted fg explants. Graphs show mean relative expression ± standard deviation from N=3 biological replicates (four explants/replicate). Each black dot in the graphs represents a biological replicate (pool of n=4 explants). *p<0.05, **p<0.01, parametric two-tailed paired t-test relative to uninjected, untreated explants. CP, cardiopulmonary; ns, not significant; RA, retinoic acid.
+
+### Tbx5 regulates cardiopulmonary development via RA signaling
 
 A detailed analysis of Tbx5-MO embryos by in-situ hybridization and RT-PCR showed that many of the CP genes that were misregulated in mouse Tbx5−/− CP tissue were also misregulated in Xenopus (Figure 3A–K). In addition to a loss of aldh1a2, pSHF markers osr1, foxf1, gli1, and wnt2b and pulmonary endoderm markers shh, dhh, and nkx2-1 were reduced, while pharyngeal/aSHF markers fgf8, fgf10, tbx1, cyp26a1, cyp26c1, spry2, hand1, hand2, dhrs3, tgfbR2, and tgfbi were all upregulated. In total, all 19 transcripts tested exhibited changes in gene expression similar to Tbx5−/− mice. Interestingly in the Tbx5-MO embryos, we observed changes in gene expression beyond just the CP region, including the kidney, pharynx, and head all of which are known to be regulated by RA, FGF, and/or Hh signaling. This suggests that non-cell-autonomous effects in Tbx5 depleted embryos are likely due to changes in secreted factors.
 
@@ -67,13 +89,25 @@ Importantly, we could partially rescue the Tbx5-MO, Aldh1a2-MO, and DEAB phenoty
 
 These results combined with our previous data suggest that Tbx5 promotes CP development by multiple mechanisms, which are experimentally separable (Figure 3L). First, by maintaining aldh1a2 expression, Tbx5 ensures robust RA signaling required for SHF pattern and induction of endodermal shh/dhh expression, and second, by cooperating with Hh to activate mesodermal expression of Wnt2/2b which promotes pulmonary induction.
 
-## Tbx5 directly activates Aldh1a2 transcription and indirectly represses Fgf8 via RA
+### Tbx5 directly activates Aldh1a2 transcription and indirectly represses Fgf8 via RA
 
 In preliminary experiments, we found that expression of a doxycycline (Dox) inducible Tbx5 transgene during the directed differentiation of mouse embryonic stem cells (mESCs) into cardiac fate (Kattman et al., 2011; Steimle et al., 2018) was sufficient to increase Aldh1a2 expression and suppress Fgf8 and Fgf10 levels (Figure 4A). However, in these experiments, it was unclear whether Tbx5 regulated Aldh1a2 or Fgf expression directly or indirectly.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/69288/elife-69288-fig4-v2.jpg)
+
+**Figure 4.:** (A) Dox-inducible Tbx5 activated Aldh1a2 expression and repressed Fgf8 and Fgf10 during the directed differentiation of mouse embryonic stem cells (mESCs) into cardiac progenitors in a dose-dependent manner. (B) Tbx5 directly activated aldh1a2 expression in Xenopus anterior or posterior mesendoderm (AME, PME) explants. RT-qPCR shows that aldh1a2 transcription was induced by DEX activated GR-Tbx5 in the presence of translation inhibitor CHX. Graphs show mean relative expression ± standard deviation from N=3 biological replicates, four explants/replicate. *p<0.05, pair-wise Student’s t-test relative to uninjected, untreated explants. (C) Whole-mount in-situ hybridization of aldh1a2 expression of X. laevis NF34 embryos injected with GR-Tbx5 (100 pg) into the PME with or without DEX. (D) Genome browser of the mouse Aldh1a2 locus showing Tbx5 ChIP-seq tracks from E14.5 mouse lung (GSE167207) and E14.5 mouse heart (Burnicka-Turek et al., 2020, GSE139803) as well as ATAC-seq track from the ENCODE project (Castillo et al., 2010; Davis et al., 2018; ENCSR335VJW). Tbx5 ChIP-seq peaks in the E14.5 lung are indicated in blue. Phascon multiple species conservation track shows that the prominent Tbx5-bound first intron enhancer (enh1) is evolutionarily conserved from mammals to Xenopus. (E) Multiple species sequence alignment of enh1 reveals one Tbx5 DNA-binding site conserved from mammals to Xenopus and two additional mammalian-specific Tbx5 sites, which were mutated in reporter constructs. (F) Schematic of the Wild-type (WT) and mutant (ΔTbx) enh1:gfp and enh1:luciferase reporter constructs. (G) Both the Xenopus and mouse intronic enh1 enhancer are sufficient to drive GFP expression in the foregut lpm in Xenopus transgenic assays. (H) Time course of Xenopus and mouse enh1:luc reporter activity injected into X. laevis CP-foregut tissue, reflects endogenous Tbx5-dependent aldh1a2 expression between NF25 and NF34. Graphs show mean relative luciferase activity ± standard deviation. N=5 biological replicates/time point with five embryos/replicate. *p<0.05, parametric two-tailed paired t-test. (I) The Xenopus and mouse aldh1a2 enh1 reporter constructs are regulated by Tbx5. Graphs show relative mean luciferase activity ± standard deviation of reporters injected into CP-foregut tissue with control mm-MO, Tbx5-MO, and/or human TBX5 RNA. N=3 biological replicates/time point with five embryos/replicate. *p<0.05, parametric two-tailed paired t-test. (J) The three putative Tbx5 motifs in the mouse aldh1a2-enh1 enhancer are required for reporter activity in the CP-foregut tissue and Tbx5-dependent activation in the hindgut. Graphs show mean relative luciferase activity ± standard deviation. N=5 biological replicates/time point with five embryos/replicate. *p<0.05, parametric two-tailed paired t-test. Also see Figure 4—figure supplement 1, Figure 4—figure supplement 2 and related source data files. CP, cardiopulmonary.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69288/elife-69288-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) Experimental schematic of GR-Tbx5 direct/indirect target gene assay in Xenopus gastrula explants. (B) GR-Tbx5 suppresses fgf8 in both anterior and posterior tissue in a CHX sensitive manner demonstrating indirect suppression. The ability of GR-Tbx5 to suppress fgf8 is DEAB sensitive and thus is dependent on RA production. Graphs show mean relative expression ± standard deviation from N=3 biological replicates (four explants/replicate). Each black dot in the graphs represents a biological replicate (pool of n=4 explants). *p<0.05, **p<0.01, ***p<0.001, parametric two-tailed paired t-test relative to uninjected, untreated explants. (C) Model of the indirect regulation of fgf8 by Tbx5, which these experiments show is CHX and DEAB sensitive. (D, E) Immunostaining of stage NF34 transgenic X. laevis embryos shows that the enh1 enhancer drives GFP expression in the endogenous Aldh1a2 lpm domain but not in the somites. Scale bar=100 µM. (F, G) Both the mouse and X. tropicalis (X. trop) Aldh1a2 enh1 enhancers drive reporter activity in NF25 and NF34 foregut but not hindgut tissue, demonstrating spatial specificity. Graphs show mean relative luciferase activity ± standard deviation. N=6 biological replicates/time point, each containing n=5 embryos/replicate. *p<0.05, parametric two-tailed paired t-test. (H, I) Analysis of wild-type enh1 or enh1 with the single, perfectly conserved T-box/Tbx5 motif mutated. Mutation of the single T-box/Tbx5 motif in the mouse (H) or X. trop (I) Aldh1a2 enh1 enhancers significantly reduces enhancer ability to drive expression in the foregut as well as to be activated by exogenous Tbx5 in hindgut gain-of-function injections. Graphs show mean relative luciferase activity ± standard deviation. N=6 biological replicates/time point, each containing n=5 embryos/replicate. *p<0.05, parametric two-tailed paired t-test. ns, not significant; RA, retinoic acid.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/69288/elife-69288-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Clustal DNA sequence alignment; putative T-box/Tbx5 motifs predicted by the CisBP tool (Weirauch et al., 2014) are shaded in aqua blue (CisBP score>10) and in yellow (CisBP score>8). Asterisks below the nucleotide alignment indicated conserved bases amongst all four species. Tbx motifs mutated and tested in this study are indicated in gray. Genomic co-ordinates of the Aldh1a2 enh1 enhancers used were: Xenopus tropicalis,> xenTrov9.1_dna range = chr3:89631924–89632943; Chicken,> galGal6_dna range = chr10:7578306–7579190;Mouse,> mm10_dna range = chr9:71241739–71242765 Human,> hg38_dna range = chr15:58038775–58039647.
+
 We therefore examined whether Tbx5 was sufficient to directly activate aldh1a2 transcription in Xenopus. We injected RNA encoding a dexamethasone (DEX) inducible Glucocorticoid receptor (GR)-Tbx5 fusion protein (Horb and Thomsen, 1999) into either the anterior or posterior mesoderm. We then induced GR-Tbx5 nuclear translocation at gastrula stage before endogenous tbx5 is normally expressed by addition of DEX, with or without the translation inhibitor cycloheximide (CHX) to block secondary protein synthesis (Figure 4—figure supplement 1A). GR-Tbx5 activated precocious aldh1a2 transcription in both the anterior and posterior tissue even in the presence of CHX, demonstrating direct activation (Figure 4B). In-situ hybridization of NF34 embryos confirmed robust, ectopic activation of aldh1a2 by GR-Tbx5 (Figure 4C). In contrast, suppression of fgf8 transcription by GR-Tbx5 was sensitive to CHX, demonstrating indirect repression (Figure 4—figure supplement 1A,B). We hypothesized that Tbx5 indirectly represses fgf8 via Aldh1a2-dependent RA production since RA is known to directly repress Fgf8 transcription in the mouse SHF (Kumar et al., 2016). We tested this by inhibiting Aldh activity with DEAB which prevented the suppression of fgf8 by GR-Tbx5 (Figure 4—figure supplement 1A-C). These data demonstrate that Tbx5 directly activates aldh1a2 transcription and indirectly suppresses fgf8 expression via RA.
 
-## Tbx5 maintains Aldh1a2 transcription via an evolutionarily conserved intronic enhancer
+### Tbx5 maintains Aldh1a2 transcription via an evolutionarily conserved intronic enhancer
 
 We next sought to identify Aldh1a2 enhancers that are directly regulated by Tbx5, predicting that these would be evolutionarily conserved across terrestrial vertebrates. Since a number of putative enhancers have been documented for the mouse Aldh1a2 locus (Castillo et al., 2010; Vitobello et al., 2011; Huang et al., 2012), we focused on the murine genome. To identify Tbx5-bound enhancers in the CP lineage, we performed Tbx5 chromatin immunoprecipitation followed by high-throughput sequencing (ChIP-seq) of E14.5 fetal mouse lungs as lung mesenchyme is derived from the E9.5 CPPs (Peng et al., 2013). ChIP-seq uncovered five Tbx5-bound regions at the Aldh1a2 locus. Comparing the lung ChIP-seq data to our previously published Tbx5 ChIP-seq from E14.5 heart (Steimle et al., 2018), we found that four of the five Tbx5-bound sites were lung-specific and not bound by Tbx5 in the fetal heart (Figure 4D). Among the four Tbx5-bound sites, only one peak in the Aldh1a2 first intron, which we refer to as enh1 (for ‘enhancer 1;’ Figure 4D, Figure 4—figure supplement 2), showed strong evolutionarily conservation from mammals to Xenopus. The enh1 region also had a strong ATAC-seq peak in E14.5 lungs consistent with open enhancer chromatin (Figure 4D). Sequence analysis of enh1 revealed multiple predicted Tbx5 DNA-binding motifs, one of which was perfectly conserved amongst human, mouse, chicken, and Xenopus (Figure 4E; Figure 4—figure supplement 2).
 
@@ -81,15 +115,35 @@ We tested the ability of both the mouse and X. trop enh1 intronic enhancers to d
 
 We next tested Tbx5 regulation of the enh1 enhancer by combining reporter assays with LOF or gain-of-function (GOF) experiments. Tbx5-MO knockdown resulted in a dramatic reduction of the mouse and X. trop enh1 reporter activity in CP-foregut tissue at NF34, which was rescued by injection of human TBX5 RNA (Figure 4I). Moreover, injection of Xenopus or human TBX5 RNAs were sufficient to ectopically induce robust enh1 reporter activity in hindgut tissue, which does not express endogenous tbx5 (Figure 4J). Mutation of the single Tbx5-binding site that was perfectly conserved amongst human, mouse, chicken, and Xenopus enh1 resulted in a 48% (p=0.0046) and 60% reduction (p=0.0031) of the mouse and frog reporter activity in the foregut respectively, and also significantly blunted their response to ectopic Tbx5 in the hindgut (Figure 4—figure supplement 1H,I). Mutation of all three putative Tbx5 motifs conserved amongst mammals (Figure 4J) largely abolished reporter activity in both the foregut and hindgut (Figure 4J). We conclude Tbx5 directly maintains Aldh1a2 expression via multiple T-box motifs found in an evolutionarily conserved first intron enhancer.
 
-## FGF gain-of-function phenocopies Tbx5-loss-of-function in Xenopus
+### FGF gain-of-function phenocopies Tbx5-loss-of-function in Xenopus
 
 In light of the finding that Tbx5-dependent RA signaling suppresses fgf8 and fgf10, we tested if a temporal FGF GOF would phenocopy Tbx5 LOF (Figure 5A). We treated WT CP-foregut explants with recombinant FGF8 protein from NF20 to NF34, the period when exogenous RA was sufficient to rescue Tbx5 LOF. As predicted FGF8 treatment largely phenocopied Tbx5 depletion with increased expression of aSHF/pharyngeal markers tbx1, fgf10, spry2, and cyp26a1, as well as reduced expression of pSHF and pulmonary endoderm genes wnt2b, shh, gli1, and nkx2-1 (Figure 5B). We also observed reduced expression of tbx5 and aldh1a2 consistent with a feedback loop where FGF restricts Tbx5/Aldh1a2-mediate RA signaling (Figure 5C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/69288/elife-69288-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of FGF8 GOF assay in Xenopus cardiopulmonary foregut (CP-FG) explants dissected at NF20, and treated with vehicle controls (DMSO+0.2% BSA) or the indicated combinations of 100 ng/ml FGF8b and/or 0.5 µM ketoconazole (Cyp-inhibitor), harvested at NF34, and analyzed via RT-qPCR. (B) RT-qPCR showing mean relative expression of genes for pSHF (red), aSHF (blue), and pulmonary endoderm (yellow), ± standard deviation from N=3 biological replicates (four explants/replicate). *p<0.05, parametric two-tailed paired t-test. (C) Model depicting the observed FGF8 GOF results. White arrows indicate relationships tested in these experiments. (D) FGF8 direct target gene assay in Xenopus CP foregut explants, demonstrating that FGF8 directly activates cyp26a1, cyp26c1 and indirectly suppresses shh. Explants dissected at NF20 were pre-treated with 1 µM cycloheximide (CHX) for 2 hr prior to culture in 100 ng/ml FGF8b+CHX for 6 hr followed by RT-qPCR analysis. Graphs display mean relative expression ± standard deviation from N=3 biological replicates that contained four explants/replicate. *p<0.05, parametric two-tailed paired t-test. (E) RA signaling is required for the tbx5 expression in the fg lpm/pSHF domain, but not the heart. Embryos were cultured in 10 µM DEAB from NF20 to NF34 and assayed by in-situ hybridization. Number of embryos assayed and with the observed expression pattern is indicated. Also see Figure 5—figure supplement 1 and related source data files. aSHF, anterior second heart field; pSHF, posterior second heart field.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69288/elife-69288-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic of experiment testing FGF8-Cyp26 epistasis in Xenopus cardiopulmonary foregut (CP-FG) explants. Embryos were injected at the -cell stage with Cyp26a1+ Cyp26 c1 MOs, explants were then dissected at NF20, treated with vehicle controls (DMSO+0.2% BSA) or the indicated combinations of 100 ng/ml FGF8b, harvested at NF34, and analyzed via RT-qPCR. (B) FGF8 treatment suppresses the shh, tbx5, wnt2b, and nkx2-1 expression, and this inhibitory effect is blocked by Cyp26a1/c1 MO knockdown. RT-qPCR showing mean relative expression of the indicated genes, ± standard deviation. Each black dot in the graph represents a biological replicate (pool of n=4 foregut explants). *p<0.05, parametric two-tailed paired t-test.
+
 FGF signaling is known to promote the expression of RA-degrading Cyp26 enzymes (Shiotsugu et al., 2004; Deimling and Drysdale, 2011; Rydeen and Waxman, 2016), but it is unclear whether this is by direct transcriptional regulation. Therefore, we repeated the FGF8 experiments in the presence of CHX and found that indeed cyp26a1 and cyp26c1 were still upregulated by FGF8, demonstrating direct activation (Figure 5D). In contrast, the ability of FGF8 to suppress shh was CHX sensitive, demonstrating indirect repression (Figure 5D). We hypothesized that FGF8 indirectly suppresses expression of shh and other RA-dependent pSHF genes by promoting Cyp26-mediated RA degradation (Figure 5C). To test this, we treated CP-foregut explants with both FGF8 and the CYP enzyme inhibitor ketoconazole (keto). Keto blocked the ability of FGF8 to suppress shh, dhh, tbx5, aldh1a2, wnt2b, and nkx2-1 (Figure 5B), indicating that FGF indeed acts via Cyp-dependent RA degradation. Consistent with Cyp-mediated RA degradation being a major factor in endogenous CP patterning, keto treatment alone elevated expression of pSHF (tbx5, aldh1a2, and wnt2b) and pulmonary endoderm genes (shh and nkx2-1), whilst decreasing aSHF markers (fgf8, fgf10, and tbx1) (Figure 5B), similar to exogenous RA treatment (Figure 3). Moreover, knockdown of Cyp26a1 and Cyp26c1 by targeted MO injection phenocopied the ketoconazole treatment (Figure 6—figure supplement 1A,B). Interestingly, inhibition or knockdown of Cyp26 resulted in increased tbx5 levels suggesting that RA promotes its expression. Indeed, in-situ hybridization showed tbx5 expression in the pSHF/foregut lpm, but not in the FHF/heart tube, reduced by DEAB indicating that it requires RA (Figure 5E). Combined with our finding that Tbx5 directly maintains aldh1a2 expression, these data identify a RA-Tbx5 positive feedback loop in the pSHF.
 
-## RA directly promotes shh transcription through the evolutionarily conserved MACS1 endoderm enhancer
+### RA directly promotes shh transcription through the evolutionarily conserved MACS1 endoderm enhancer
 
 Our data suggest that RA from the Aldh1a2-expressing lpm is a likely candidate to activate Hh ligand expression in the endoderm. We tested whether exogenous RA could directly activate shh and dhh transcription in Xenopus foregut endoderm explants where the tbx5/aldh1a2+ lpm, the source of endogenous RA, had been removed (Figure 6A and B). Without the RA-producing lpm, the foregut endoderm did not express shh nor dhh; however, addition of exogenous RA rescued their expression, even in the presence of CHX, demonstrating direct activation (Figure 6B). As controls, RA also rescued expression of the known direct RA-target hnf1b, whereas the known indirect target ptf1a was not rescued in the presence of CHX (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/69288/elife-69288-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of direct RA target gene assay. Foregut endoderm (fg endo; yellow) was dissected from foregut mesoderm (fg meso; red) at NF25, pre-treated with 1 µM cycloheximide (CHX) for 2 hr prior to culture in 25 nM RA + CHX (or DMSO vehicle control) for 6 hr followed by RT-qPCR analysis. (B) RA directly activates shh and dhh expression in the presence of CHX. Graphs show mean relative expression ± standard deviation from N=3 biological replicates (four explants/replicate). Endoderm genes are shown in yellow, mesoderm makers in red confirm dissections. *p<0.05, parametric two-tailed paired t-test. (C) Genome browser of the human SHH locus showing the evolutionarily conserved MACS1 distal enhancer (green shading) embedded in an intron of the RNF32. Published ChIP-seq tracks of RXR, H3K4me1, and H3K27ac1 from hPSC-derived foregut endoderm (Vinckier et al., 2020, GSE104840; Wang et al., 2015, GSE54471). (D) MACS1 enhancer contains multiple RAR/RXR DNA-binding half sites, two of which are highly conserved. Schematics of the wild-type and mutant MACS1:luciferase reporter constructs. (E) Luciferase reporter assay in Xenopus show that the Human and X. tropicalis MACS1 enhancers are activated by RA via the RAR/RXR DNA-binding sites. 50 pg of MACS1:luciferase reporter +5 pg pRL-TK reporter were microinjected±250 pg of dominant-negative RARa RNA into either the C1 foregut (fg; red bars) or C4 hindgut (hg; gray bars) blastomeres and luciferase activity was assayed at NF34. 10 μM DEAB treatment was from NF20 to NF34. Mean relative luciferase activity ± standard deviation, from N=6 biological replicates/time point with five embryos/replicate. *p<0.05, parametric two-tailed paired t-test relative to WT MACS1:luc in the foregut (fg). Also see Figure 6—figure supplement 1, Figure 6—figure supplement 2 and related source data files. ns, not significant.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69288/elife-69288-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Clustal DNA sequence alignment; putative RAR/RXR nuclear receptor motifs predicted by the CisBP tool (Weirauch et al., 2014) are shaded in aqua blue (CisBP score>10) and in yellow (CisBP score>8). Asterisks below the nucleotide alignment indicated conserved bases amongst all four species. RAR/RXR motifs mutated and tested in this study are indicated and boxed in red. Genomic co-ordinates of the Shh MACS1 (mammalian-amphibian-conserved sequence 1; Sagai et al., 2009) enhancers used in the multiple alignment were. Xenopus tropicalis: v9.1/xenTro9 genome build, chr6:9535614–9536245; Chick: galGal3 genome build, chr2:8370257–8370909; Human: hg19 genome build, chr7:156459384–156460049; Mouse: mm9 genome build, chr5:29538631–29539277.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/69288/elife-69288-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Experimental schematic testing the ability of the wild-type (WT) or RAR/RXR mutant site reporters to respond to exogenous RA in Xenopus foregut endoderm explants. 50 pg of WT or mutant MACS1:luciferase reporter+5 pg pRL-TK reporter were microinjected into C1 foregut (fg) blastomeres; then at NF20 foregut explants were cut and the Aldh1a2+ fg lpm was manually removed, explants were treated with DMSO vehicle or 25 nM RA, and luciferase activity was assayed at NF34. Graphs show mean relative luciferase activity ± standard deviation; black dots in the graphs represent N=6 biological replicates, containing five embryos/replicate. Biological replicates contained pooled embryos from two separate fertilization/injection/dissections. *p<0.05, parametric two-tailed paired t-test. RA, retinoic acid.
 
 Previous work has identified an evolutionarily conserved distal Shh enhancer called MACS1 (for mammalian-amphibian-conserved sequence 1), which is located more than 800 kb from Shh, within an intron of the Rnf32 gene (Sagai et al., 2009; Tsukiji et al., 2014; Sagai et al., 2017). The MACS1 enhancer is able to dive transcription in mouse foregut endoderm but the signals and TFs that control Shh expression via the MACS1 enhancer are unknown. An analysis of publicly available ChIP-seq data from human foregut endoderm, differentiated from pluripotent stem cells (hPSCs) in part by RA treatment (Vinckier et al., 2020; Wang et al., 2015), revealed binding of the RA nuclear receptor RXR at the human SHH MACS1 enhancer as well as H3K4me1 and H3K27ac1, epigenetic marks indicative of enhancer activation (Figure 6C). Sequence analysis of the MACS1 enhancer predicted multiple RXR/RAR nuclear RA receptor half sites (Penvose et al., 2019), two of which were evolutionarily conserved between human, mouse, chicken, and Xenopus (Figure 6D; Figure 6—figure supplement 1), suggesting that RA directly activates SHH transcription.
 
@@ -97,7 +151,7 @@ We functionally interrogated human and X. tropicalis SHH MACS1 enhancer activity
 
 ## Discussion
 
-## Tbx5 regulates a RA-HH-Wnt GRN that coordinates SHF patterning and pulmonary specification
+### Tbx5 regulates a RA-HH-Wnt GRN that coordinates SHF patterning and pulmonary specification
 
 Our findings reveal complex and evolutionarily conserved interconnected signaling networks downstream of Tbx5 that coordinate early development of the cardiac and pulmonary systems (modeled in Figure 7). We identify the following aspects of this SHF mesoderm—pulmonary endoderm signaling network: (1) Direct Tbx5 activation of an aldh1a2 enhancer, which maintains aldh1a2 transcription in pSHF mesoderm; RA is in turn required to maintain tbx5 expression in the pSHF, establishing a positive feedback loop between Tbx5 and RA; (2) Tbx5-RA and FGF-Cyp form mutually antagonistic modules, with the Tbx5-RA loop promoting pSHF/CPP identity and suppressing aSHF fate, and Cyp-mediated RA degradation refining the spatial domain of RA activity; and (3) Direct RXR/RAR activation of the MACS1 enhancer at the shh locus, which provides a mechanism underlying the cell-non-autonomous activation of endodermal Hh ligand expression by Tbx5/Aldh1a2-dependent RA signaling in the pSHF. Reception of Hh signaling in the pSHF mesoderm activates Gli TFs, which cooperate with Tbx5 to directly activate wnt2/2b transcription; Wnt2/2b then induce pulmonary fate in the foregut endoderm (Hoffmann et al., 2014; Rankin et al., 2016; Steimle et al., 2018; Goddeeris et al., 2008). Thus, during CP development, Tbx5 regulates the production of three key paracrine signals, RA and Wnt directly via Tbx5-dependent enhancers and Hh indirectly via a RA-dependent enhancer. These interdependent signaling loops ensure that the lung primordia and pSHF-derived atria and pulmonary vessels from adjacent to one another, in preparation for the coordinated morphogenesis and functional integration of these two organ systems during development.
 
@@ -105,11 +159,11 @@ Our findings reveal complex and evolutionarily conserved interconnected signalin
 
 **Figure 7.:** Our data indicate that between NF25and NF35 in Xenopus and around E9.5 in mice, Tbx5 directly maintains Aldh1a2 expression and a RA-Tbx5 positive feedback loop in the pSHF, which is necessary for Hh ligand expression, Wnt2/2b-dependent pulmonary fate induction, and SHF patterning. Blue arrows in the model indicate relationships demonstrated in this study. Tbx5/Aldh1a2-dependent RA signaling restricts FGF/Cyp activity in the aSHF, promotes pSHF identity, and drives expression of shh in pulmonary foregut endoderm. The aldh1a2 enh1 enhancer is directly regulated by Tbx5 and the shh MACS1 enhancer is regulated by RA/RXR/RAR. aSHF, anterior second heart field; GRN, gene regulatory network; pSHF, posterior second heart field.
 
-## T-box TFs and RA: a conserved regulatory node disrupted in cardiopulmonary and limb birth defects
+### T-box TFs and RA: a conserved regulatory node disrupted in cardiopulmonary and limb birth defects
 
 Integrated regulatory loops between Tbx5, RA, and FGF regulate limb development and lung branching morphogenesis in addition to SHF cardiac development (Nishimoto et al., 2015; Arora et al., 2012; Feneck and Logan, 2020). We show that Tbx5 and RA form a positive feedforward loop in the pSHF; in this domain, Tbx5 directly maintains Aldh1a2-dependent RA production while RA maintains tbx5 expression. This is consistent with reports that RA is required for the expression of Tbx5 in SHF but not the FHF during early in mouse heart development (De Bono et al., 2018; Stefanovic et al., 2020 ). We predict that this is equivalent to the RA-dependent maintenance of tbx5 that we observed in Xenopus. In the developing limb bud, RA response elements in a regulatory element at Tbx5 are required for enhancer activity and other enhancers at the Tbx5 locus have been identified that can activate transcription in the heart and limb (Minguillon et al., 2012; Smemo et al., 2012; Cunningham et al., 2018), it remains to be determined whether these enhancers are also directly regulated by RA/RAR/RXR or control expression in the pSHF. Regardless, Tbx5 and RA are from a shared module in both SHF and limb development (Nishimoto et al., 2015). Limb defects and atrioventricular septal defects, caused by altered pSHF development, are both a facet of the phenotypic spectrum observed in Holt–Oram syndrome in human patients with TBX5 mutations (Steimle and Moskowitz, 2017). This raises the intriguing possibility that Tbx5-RA interactions were an evolutionary innovation in both limb and CP mesoderm in the adaptation to terrestrial life and that disrupting the Tbx5-RA feedforward loop is a component of TBX5-associated birth defects. Overall, this work provides a framework for understanding the developmental basis of the human birth defects observed in Holt–Oram Syndrome.
 
-## Enhancers controlling the reciprocal RA-HH mesoderm and endoderm signaling
+### Enhancers controlling the reciprocal RA-HH mesoderm and endoderm signaling
 
 We found that Tbx5-dependent RA signaling directly promotes Shh expression in foregut endoderm via RAR/RXR half-site motifs in the evolutionarily conserved Shh MACS1 enhancer (Sagai et al., 2009; Tsukiji et al., 2014; Sagai et al., 2017; Penvose et al., 2019). Other endodermal TFs that contribute to Shh expression in the foregut have been described, including FoxA2, Meis3, Islet1, Tbx2, and Tbx3 (Lin et al., 2006; diIorio et al., 2007; Tamplin et al., 2008; Mesbah et al., 2012; Lee et al., 2019; Genga et al., 2019), but whether they directly function on the Shh MACS1 enhancer, potentially in cooperation with RA/RAR/RXRs, remains unknown.
 
@@ -121,9 +175,411 @@ Identification of the specific transcriptional enhancers that mediate the reinfo
 
 ## Materials and methods
 
-## Xenopus methods
+**Key resources table**
 
-## Xenopus embryo injections
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background(Xenopus tropicalis, females)</td>
+      <td>Wild-typeadult females</td>
+      <td>Nasco</td>
+      <td>LM00823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(X. tropicalis, males)</td>
+      <td>Wild-typeadult males</td>
+      <td>Nasco</td>
+      <td>LM00822</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(X. laevis, females)</td>
+      <td>Wild-typeadult females</td>
+      <td>Nasco</td>
+      <td>LM00531</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(X. laevis, males)</td>
+      <td>Wilt-typeadult males</td>
+      <td>Nasco</td>
+      <td>LM00715</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(X. tropicalis)</td>
+      <td>Xtr.Tg(WntREs: dEGFP)Vlemx</td>
+      <td>National Xenopus Resource (NXR) Center,Woods Hole, MA</td>
+      <td>RRID:NXR_1094</td>
+      <td>X. tropicalis Wnt/Bcat reporter line</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(X. laevis)</td>
+      <td>Xla.Tg(WntREs: dEGFP)Vlemx,</td>
+      <td>NXR</td>
+      <td>RRID:NXR_0064</td>
+      <td>X. laevis Wnt/Bcat reporter line</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(X. laevis)</td>
+      <td>Xla.Tg.(nkx2-5:GFP)Mohun</td>
+      <td>NXR</td>
+      <td>RRID:NXR_0030</td>
+      <td>X. laevis Nkx2-5:GFP reporter line</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus)</td>
+      <td>CD-1</td>
+      <td>Charles River Labs</td>
+      <td>Strain Code022RRID:IMSR_CRL:022</td>
+      <td>WT mice</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(M. musculus)</td>
+      <td>Shhtm1(EGFP/cre)Cjt</td>
+      <td>Jax Labs</td>
+      <td>JAX: 005622RRID:IMSR_JAX:005622</td>
+      <td>Shh:GFP mice</td>
+    </tr>
+    <tr>
+      <td>Cell line(M. musculus)</td>
+      <td>Tbx5OE-mESC line</td>
+      <td>Steimle et al., 2018</td>
+      <td>Steimle et al., 2018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigma-Aldrich</td>
+      <td>D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-Aldh1a2</td>
+      <td>Abcam</td>
+      <td>ab96060, RRID:AB_10679336</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(MouseMonoclonal)Anti-Aldh1/2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-166362, RRID:AB_2009458</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) anti-Sox2</td>
+      <td>Abcam</td>
+      <td>ab79351; RRID:AB_10710406</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-Nkx2-1 (H-190)</td>
+      <td>Santa CruzBiotechnology</td>
+      <td>sc-13040X; RRID:AB_793532</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) anti-Fibronectin (4H2)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DSHB #4H2; RRID:AB_2721949</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Chicken polyclonal) anti-GFP</td>
+      <td>Aves Labs</td>
+      <td>GFP-1020; RRID:AB_10000240</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat polyclonal)anti-Tbx5</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-17866, RRID:AB_2200827</td>
+      <td>IF (1:300)ChIP: 5 µg</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pI-SceI-d2EGFP plasmid</td>
+      <td>Addgene</td>
+      <td>Addgene_32674</td>
+      <td>For meganuclease transgenics</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRL-TK(plasmid)</td>
+      <td>Promega</td>
+      <td>E2241</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGL4.23 luc2/miniP(plasmid)</td>
+      <td>Promega</td>
+      <td>E8411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2+ GR-xTbx5</td>
+      <td>Addgene</td>
+      <td>Addgene 117248</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2+ xTbx5</td>
+      <td>Addgene</td>
+      <td>Addgene 117247</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCSf107mT-Gateway-3′myc</td>
+      <td>Addgene</td>
+      <td>Addgene 67617</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pENTR223Human TBX5</td>
+      <td>Horizon Discovery</td>
+      <td>OHS5894-202500411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway LR Clonase II enzyme mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11791020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMessage mMachine SP6 RNA synthesis kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FGF8b</td>
+      <td>R&amp;D Systems</td>
+      <td>423-F8-025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>WNT2B</td>
+      <td>R&amp;D Systems</td>
+      <td>3900-WN-025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRIzol</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>15596018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zolMiniprep plus kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>R2070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperscriptVILO mastermix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11755050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PowerUP2× SYBR Green MasterMix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A25742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Firefly Luciferase 2.0 kit</td>
+      <td>Biotium</td>
+      <td>30085-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Renilla Luciferase2.0 kit</td>
+      <td>Biotium</td>
+      <td>30082-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DEAB</td>
+      <td>Sigma-Aldrich</td>
+      <td>D86256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>All-trans retinoic acid(RA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>R2625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ketoconazole</td>
+      <td>Tocris</td>
+      <td>Tocris#1103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Sigma-Aldrich</td>
+      <td>C4859</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma D4902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CAS9</td>
+      <td>PNA Bio</td>
+      <td>CP01-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>X. tropicalis tbx5 exon5 sgRNA</td>
+      <td>IDT DNA</td>
+      <td>GGGGTTCTGATATGAAGTGA</td>
+      <td>Steimle et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>X. laevis Tbx5 MO1</td>
+      <td>GeneTools</td>
+      <td>5′-TTA GGA AAG TGT CTC TGG TGT TGC C -3′;</td>
+      <td>Brown et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>X. laevis Tbx5 3 bp mismistach MO1</td>
+      <td>GeneTools</td>
+      <td>5′-TCA GTA AAG TAT CTC TGG TGT TGC C-3′</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>X. laevis Tbx5 MO2</td>
+      <td>GeneTools</td>
+      <td>5′-CAT AAG CCT CCT CTG TGT CCG CCA T-3</td>
+      <td>Brown et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>X. laevis Tbx5 3 bp mismatch MO2</td>
+      <td>GeneTools</td>
+      <td>5′-TAT CAG ACT CCT CTG TGT CCG CCA T-3′</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>X. laevis Aldh1a2-MO</td>
+      <td>GeneTools</td>
+      <td>5′-GCA TCT CTA TTT TAC TGG AAG TCAT-3′</td>
+      <td>Strate et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>X. laevis Cyp26a1-MO</td>
+      <td>GeneTools</td>
+      <td>5′-TAG TGA GCA GAG TAT ACA GAT CCA T-3′</td>
+      <td>Janesick et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>X. laevis Cyp26c1-MO</td>
+      <td>GeneTools</td>
+      <td>5′-TAC AAG ATG TTC CTC CTT GAG ATC A-3′</td>
+      <td>Yu et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Protein G-conjugated magnetic beads</td>
+      <td>Life Technologies</td>
+      <td>1,003D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NEBNext Ultra DNA Library Prep Kit</td>
+      <td>New England Biolabs</td>
+      <td>E7370S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Sera-Mag magnetic beads</td>
+      <td>GE</td>
+      <td>6515-2105-050-250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Morpheus</td>
+      <td>Broad Institute</td>
+      <td>https://software.broadinstitute.org/morpheusRRID:SCR_017386</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SceI mega-nuclease enzyme</td>
+      <td>New England Biolabs</td>
+      <td>R0694S</td>
+      <td>Use within 1 month of purchase, store at –80°C</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Dispase</td>
+      <td>Corning Life Sciences</td>
+      <td>354235</td>
+      <td>Use at 10 U/ml on Xenopus explants</td>
+    </tr>
+  </tbody>
+</table>
+
+### Xenopus methods
+
+#### Xenopus embryo injections
 
 WT adult X. laevis and X. tropicalis frogs were purchased from Nasco (Fort Atkinson, WI). Adult transgenic X. laevis and X. tropicalis Wnt/B-catenin reporter (Xla.Tg(WntREs:dEGFP)Vlemx, NXR_0064; and Xtr.Tg(WntREs:dEGFP)Vlemx, NXR_1094), and adult transgenic X. laevis nkx2-5:GFP (Xla.Tg.(nkx2-5:GFP)Mohu, NXR_0030) frogs were purchased from the National Xenopus Resource (RRID:SCR_013713). Ovulation, in-vitro fertilization and natural mating, embryo de-jellying, and microinjection were performed as described (Sive et al., 2000). Plasmids for Xenopus GR-Tbx5 (Addgene 117248), Xenopus Tbx5 (Addgene 117247) (Horb and Thomsen, 1999), and Xenopus dominant-negative RARa (Sharpe and Goldstone, 1997) were previously described. Human TBX5 (Horizon Discovery OHS5894-202500411) was gateway sub-cloned from its entry vector pENTR223 into the expression vector pCSf107mT-Gateway-3′myc (Addgene 67617) using clonase (ThermoFisher 11791020) according to manufacturer’s instructions. Linearized plasmid templates were used to make mRNA for injection using the Ambion mMessage mMachine SP6 RNA Synthesis Kit (ThermoFisher AM1340). Total amounts of injected mRNA were as follows: GR-Tbx5 RNA, 125 pg; dN-RARa, 200 pg; and human TBX5-myc, 100 pg. Previously validated translation-blocking MOs against Tbx5 (Brown et al., 2005; Steimle et al., 2018), Aldh1a2 (Strate et al., 2009), Cyp26a1 (Janesick et al., 2013), and Cyp26c1 (Yu et al., 2016) were injected at the 8-cell stage (for Tbx5-MO: a mixture of 2.5 ng each MO1 +2 per dorsal marginal zone (dmz) in X. laevis; mixture of 0.5 ng each MO1 +2 per dmz in X. tropicalis). MOs were purchased from GeneTools (Philmath, OR) and were as follows: Tbx5-MO1: 5′-TTA GGA AAG TGT CTC TGG TGT TGC C-3′; a negative control Tbx5 mismatch MO1 with three nucleotides mutated: 5′-TCA GTA AAG TAT CTC TGG TGT TGC C-3′; Tbx5-MO2: 5′-CAT AAG CCT CCT CTG TGT CCG CCA T-3′; Tbx5 3 bp mismatch MO2: 5′-TAT CAG ACT CCT CTG TGT CCG CCA T-3′ (mismatch bases are indicated in bold, underlined); Aldh1a2-MO: 5′-GCA TCT CTA TTT TAC TGG AAG TCAT-3′; Cyp26a1 MO: 5′-TAG TGA GCA GAG TAT ACA GAT CCA T-3′; and Cyp26c1 MO: 5′-TAC AAG ATG TTC CTC CTT GAG ATC A-3′.
 
@@ -133,59 +589,59 @@ For Xenopus whole embryo small-molecule treatments, embryos were cultured in 0.1
 
 Gastrula or CP-foregut explants (containing both endoderm and lpm) were micro-dissected in 1× MBS +50 μg/ml gentamycin sulfate (gent; MP Biochemicals 1676045)±10 U/ml dispase (Corning Life Sciences 354235; to help remove the lpm) and were cultured in 0.5× MBS +0.2% fatty acid free BSA (Fisher BP9704)+50 μg/ml gent with the following concentrations of factors: 1 μM dexamethasone (DEX; Sigma D4902); 1 μM cycloheximide (CHX; Sigma C4859); 25 nM all-trans RA (Sigma R2625); 100 ng/ml WNT2B (R&D Systems 3900-WN-025); 1 μM DEAB (Sigma D86256); 100 ng/ml FGF8b (R&D Systems 423-F8-025); and 0.5 μM ketoconazole (Tocris 1103). In CHX experiments, explants were treated for 2 hr in CHX prior to DEX+CHX treatment for 6 hr.
 
-## Xenopus RT-qPCR
+#### Xenopus RT-qPCR
 
 Xenopus explants were dissected from embryos of 2–3 separate fertilization/injection experiments, frozen on dry ice in 200 μl of TRIzol (ThermoFisher 15596018), and stored at –80°C. RNA was extracted using TRIzol and purified using the Direct-zol RNA miniprep plus kit (ZymoResearch R2070); 500 ng RNA was used in cDNA synthesis reactions using Superscript Vilo Mastermix (ThermoFisher 11755050), all according to the manufacturer’s instructions. qPCR reactions were carried out using PowerUp Mastermix (ThermoFisher A25742) on ABI StepOnePlus or QuantStudio3 machines. Xenopus RT-qPCR primer sequences are listed in Supplementary file 1. Relative expression, normalized to ubiquitously expressed odc, was determined using the 2−ΔΔCt method. Graphs display the average 2−ΔΔCt value ± standard deviation. Statistical significance (p<0.05) was determined using parametric two-tailed paired t-test, relative to uninjected, untreated explants. Each black dot in the RT-qPCR graphs represents an independent biological replicate containing four explants. Heat map of Xenopus RT-qPCR gene expression was generated using Morpheus software (https://software.broadinstitute.org/morpheus/) and shows the average 2−ΔΔCt value from three biological replicates for each condition.
 
-## Xenopus in-situ hybridization
+### Xenopus in-situ hybridization
 
 In-situ hybridization of Xenopus embryos was performed as described (Sive et al., 2000) with minor modifications. Briefly, embryos were fixed overnight at 4°C in MEMFA (0.1 M MOPS, 2 mM EGTA, 1 mM MgSO4, and 3.7% formaldehyde), washed 3× 5 min in MEMFA without formaldehyde, dehydrated directly into 100% ethanol, washed 5–6 times in 100% ethanol, and stored at −20°C for at least 24 hr. Proteinase K (ThermoFisher AM2548) on day 1 was used at 2 µg/ml for 10 min on stage NF15, NF25 embryos and 5 µg/ml on NF34 embryos; hybridization buffer included 0.1% SDS; RNAse A (ThermoFisher 12091021) used at 0.5 µg/ml; and anti-DIG-alkaline phosphatase antibody (Sigma 11093274910) used at 1:5000 in MAB buffer (100 mM Maleic acid, 150 mM NaCl, and pH 7.5) + 10% heat-inactivated lamb serum (Gibco 16070096) + 2% blocking reagent (Sigma 11096176001). Anti-sense DIG-labeled in-situ probes were generated using linearized plasmid cDNA templates with 10× DIG RNA labeling mix (Sigma 11277073910) according to the manufacturer’s instructions.
 
-## Xenopus immunofluorescence
+### Xenopus immunofluorescence
 
 Embryos were fixed in 100 mM HEPES (pH 7.5), 100 mM NaCl, 2.7% methanol-free formaldehyde for 2 hr at room temperature, dehydrated directly into Dent’s post-fixative (80% Methanol/20% DMSO), washed five times in Dent’s, and stored in Dent’s at −20°C for at least 48 hr. Embryos were serially rehydrated (75%, 40%, 25% methanol) into PBS +0.1% TritonX-100 (PBSTr). Embryos were then cut in a transverse plane through the pharynx and posterior to the liver to create a foregut sample using a fine razor blade on a 2% agarose-coated dish in PBSTr. Foreguts were subjected to antigen retrieval in 1× R-universal epitope recovery buffer (Electron Microscopy Sciences 62719-10) for 1 hr at 60–65°C, washed 2× 10 min in PBSTr, blocked for 1–2 hr in PBSTr +10% normal donkey serum (Jackson ImmunoResearch 017-000-001) + 11% DMSO at room temperature, and incubated overnight at 4°C in this blocking solution+primary antibodies: chicken anti-GFP (Aves GPF-1020; diluted 1:1000), mouse anti-Sox2 (Abcam ab79351; 1:1000), rabbit anti-Aldh1a2 (Abcam ab96060; 1:500), and goat anti-Tbx5 (Santa Cruz Biotechnology sc-17866, 1:350). Secondary antibodies were donkey anti-chicken 488, donkey anti-rabbit Cy3, and donkey anti-mouse Cy5, donkey anti-goat 405 (Jackson ImmunoResearch 703-546-155, 711-166-152, 715-175-151, and 705-476-147, respectively; all used at 1:1000 dilution). After extensive washing in PBSTr, samples were incubated overnight at 4°C in PBSTr +0.2% DMSO+secondary antibodies. Samples were again extensively washed in PBSTr, dehydrated into 100% methanol, washed five times in 100% methanol, cleared, and imaged in Murray’s Clear (two parts benzyl benzoate, one part benzyl alcohol) on a metal slide with glass coverslip bottom using a Nikon A1R confocal microscope to obtain optical sections.
 
-## Xenopus luciferase assays
+#### Xenopus luciferase assays
 
 The Xenopus tropicalis v9.1 genome on Xenbase.org; RRID:SCR_003280 (Karimi et al., 2018) was used to define Xenopus enhancers. For Xenopus luciferase assays, the sequences of the mouse Aldh1a2 Enh1 (chr9:71241739–71242765; mm10 genome), X. trop aldh1a2 enh1 (chr3:89631924–89632943; v9.1/xenTro9 genome), X.trop shh MACS1(chr6:9535614–9536245; v9.1/xenTro9 genome), and human SHH MACS1 (chr7:156459384–156460049; hg19 genome) enhancers, as well as their respective mutant forms, were commercially synthesized (GenScript USA, Piscataway NJ; or IDT DNA, Coralville, IA) and cloned into the pGL4.23 firefly luc2/miniP vector (Promega E8411). For enh1 enhancer assays, embryos were co-injected with 5 pg of pRL-TK:renilla luciferase plasmid (Promega E2241) + 50 pg of the pGL4.23 luc2/miniP enhancer:luciferase plasmid and the following amounts of MOs or mRNAs into each dorsal marginal zone (dmz) region of 4–8 cell embryos: 3.5 ng of tbx5-MO or 3 bp mismatch-MO; 62.5 pg GR-Tbx5 RNA; 50 pg Xenopus Tbx5 RNA; 50 pg human TBX5-myc RNA. For hindgut mesendoderm injections, the luciferase reporters were injected into the ventral-posterior marginal zone at the 4–8 cell stage±Tbx5 RNA. For analysis of Shh MACS1 enhancer activity in endoderm, C1 (foregut) or C4 (hindgut) blastomeres were injected at the 16- or 32-cell stage with 5 pg pRL-TK+50 pg MACS1:luc±100 pg dnRARa RNA.
 
 Each biological replicate contained a pool of five embryos, obtained from 2 to 3 separate fertilization/injection experiments which were frozen on dry ice in a minimal volume of 0.1× MBS and stored at –80°C. To assay luciferase activity samples were lysed in 100 µl of 100 mM TRIS-Cl pH 7.5, centrifuged for 10 min at ~13,000×g and then 25 µl of the clear supernatant lysate was used separately in firefly (Biotium #30085-1) and renilla (Biotium 300821) luciferase assays according to the manufacturer’s instructions. Relative luciferase activity was determined by normalizing firefly to renilla levels for each sample. Graph show the average relative luciferase activity ± standard deviation with dots showing values of biological replicates. Statistical significance was determined by parametric two-tailed paired t-test, *p<0.05.
 
-## Xenopus transgenesis
+#### Xenopus transgenesis
 
 Transgenesis was carried out using the I-SceI meganuclease procedure (Ogino et al., 2006; Pan et al., 2006; Rankin et al., 2009 ). Xenopus transgenic plasmids were constructed using the pI-SceI-d2EGFP plasmid backbone (Addgene 32674). First, a fragment containing the mouse or X. trop enh1 enhancers upstream of a minimal TATA box promoter (Tran et al., 2010) flanked by duplicated copies of the 250 bp chick B-globin HS4 insulator (Allen and Weeks, 2009; Rankin et al., 2011) was commercially synthesized (GenScript USA) and cloned into the ApaI/XhoI sites of pBluescript II KS+ (Agilent 212207). ApaI/XhoI digestion released this fragment, and it was ligated into ApaI/XhoI digested pI-SceI-d2EGFP plasmid. The meganuclease reaction contained 200 ng DNA, 2.5 μl I-SceI enzyme (New England Biolabs R0694S; kept at –80°C and used within 1 month of purchase) in 20 μl total volume and was incubated at 37°C for 30 min. 5 nl was then injected two times into 1 cell embryo on either side of the sperm entry point (10 nl total of meganuclease reaction injected per embryo). We observed 14/102 (~13%) and 21/183 (11%) GFP+full transgenic embryos using the mouse and X. trop enh1 constructs, respectively, from two independent injection experiments. As a negative control, 0/87 embryos were GFP positive when injected using reactions that omitted the I-SceI enzyme.
 
-## Mouse methods
+### Mouse methods
 
-## RNA-seq
+#### RNA-seq
 
 RNA-seq of the micro-dissected E9.5 WT and Tbx5−/− pSHF/CPP was previously published and is available on GEO (Steimle et al., 2018, GSE75077). Heat maps were generated using Morpheus software (https://software.broadinstitute.org/morpheus/). Columns in the Figure 1 heat map represent biological replicates (Tbx5+/+ WT N=5, Tbx5−/− N=2), and each column replicate contained n=4 pooled CP dissected regions.
 
-## RT-qPCR, in-situ hybridization, and immunofluorescence
+#### RT-qPCR, in-situ hybridization, and immunofluorescence
 
 RT-qPCR of dissected, pooled (n=4) mouse E9.5 pSHF/CPP regions was performed as described (Steimle et al., 2018), cDNA generated using SuperScript III First-Strand Synthesis SuperMix (ThermoFisher 18080051), and qPCR was performed using PowerUp Mastermix (ThermoFisher A25742). Gene-expression levels were normalized by Gapdh and RT-qPCR primers are listed in Supplementary file 1. In-situ hybridization on mouse embryos was performed as described (Hoffmann et al., 2009). Shh probe was provided by Elizabeth Grove (University of Chicago). Immunofluorescence of WT CD-1 (Charles River) or Shh:GFP (B6.129 × 1(Cg)-Shhtm6Amc/J; Jax Labs Stock Number #008466) mouse embryos was performed as described (Rankin et al., 2016; Rankin et al., 2018) using mouse anti-Aldh1a2 (Santa Cruz Biotechnology sc-166362; 1:1000), goat anti-Tbx5 (Santa Cruz Biotechnology sc-17866, 1:300), rabbit anti-Nkx2-1 (Santa Cruz Biotechnology sc-13040 H-190, 1:500), and chicken anti-GFP (Aves Labs GFP-1020, 1:1000).
 
 Reconstructions of whole-mount in-situ hybridizations were generated using previously published methods (Steimle et al., 2018). In brief, images were obtained and pre-processed using Adobe Photoshop CS3 Extended (version 10.0.1, http://www.adobe.com) and reconstructed with AMIRA (version 5.3.2, http://www.amira.com). Manual review of each image in the stack was performed and corrections were made when necessary. LabelFields for gene expression and tissue were generated from the same series of sections using separate CastField and LabelVoxel modules. The SurfaceGen module was used to generate surfaces from these LabelFields. Gene expression models for two different genes were initially aligned using the Landmark (two sets) module, and a minimum of three landmarks were used to align the separate models. These landmarks were located using the pharyngeal endoderm and ventral edge of the SHF. Final alignments were fine-tuned manually using the Transform editor.
 
-## Digital in-situ hybridization
+#### Digital in-situ hybridization
 
 Digital in-situ hybridization for Aldh1a2, Tbx1, Tbx5, and Shh was generated using the single cells Spatial Mouse Atlas (Lohoff et al., 2021; https://crukci.shinyapps.io/SpatialMouseAtlas/). Images are centered around the cardiothoracic region with cardiomyocytes highlighted.
 
-## Mouse ESCs
+#### Mouse ESCs
 
 The inducible Tbx5OE-mESC line was previously generated (Steimle et al., 2018) and differentiated to the cardiac lineage as described (Kattman et al., 2011). Doxycycline (Sigma D9891; concentrations of 0, 5, 10, 25, 50, 100, 250, and 500 ng/ml) was applied at the cardiac progenitor-like stage (day 6) and cells were harvested for RNA 24 hr later.
 
-## ChIP-seq
+#### ChIP-seq
 
 ChIP-seq was performed using dissected whole lungs from E14.5 CD-1 mouse embryos obtained from Charles River. Chromatin was prepared as previously described (Steimle et al., 2018). For immunoprecipitation, the chromatin extract was incubated with 5 µg of the anti-TBX5 antibody (Santa Cruz Biotechnology sc-17866; Lot #G1516) at 4°C for >12 hr in a total volume of 200 μl. The immune complexes were captured by Protein G-conjugated magnetic beads (Life Technologies, 1003D) and washed as previously described (Steimle et al., 2018). The captured chromatin was eluted in ChIP Elution Buffer (10 mM Tris-HCl, pH 8.0, 1 mM EDTA, 1% SDS, and 250 mM NaCl) at 65°C. After RNase and proteinase K treatment and reverse cross-linking, DNA was purified. High-throughput sequencing libraries from ChIP and input DNA were prepared using NEBNext Ultra DNA Library Prep Kit (New England Biolabs, E7370S). During library preparation, adaptor-ligated DNA fragments of 200–650 bp in size were selected before PCR amplification using Sera-Mag magnetic beads (GE, 6515-2105-050-250). DNA libraries were sequenced using Illumina Hi-seq instruments (single-end 50 base) by the Genomics Core Facility at the University of Chicago.
 
-## Bioinformatics
+### Bioinformatics
 
-## ChIP-seq analysis
+#### ChIP-seq analysis
 
 Raw sequencing reads were aligned to the mm10 genome using Bowtie2 (Langmead and Salzberg, 2012) and SAMtools (Li et al., 2009) requiring a minimum mapping quality of 10 (−q 10). Pooled peak calling was performed using default settings of MACS2 callpeak (Zhang et al., 2008) with a q-value set to 0.05 and tag size set to 6 (−q 0.05 s 6). A fold-enrichment track was generated using MACS2 with the bdgcmp function (−m FE) for visualization on the IVG genome browser (Thorvaldsdottir et al., 2012). Public data reanalyzed in this study was downloaded from GEO either as Bigwig files or raw reads which were processed as described above.
 
-## RNA-seq analysis
+#### RNA-seq analysis
 
 RNA-seq of the micro-dissected E9.5 WT and Tbx5−/− pSHF/CPP was previously published and is available on GEO (Steimle et al., 2018, GSE75077). This RNA-seq data was re-analyzed using Computational Suite for Bioinformaticians and Biologists (CSBB – v3.0.0) using ProcessPublicData module (https://github.com/praneet1988/Computational-Suite-For-Bioinformaticians-and-Biologists), (Chaturvedi, 2019). Differentially expressed genes (DEGs) between Tbx5−/− and WT were identified using RUVSeq, with a threshold of 1.5 fold change and 5% FDR. Expression heat maps were generated using Morpheus (https://software.broadinstitute.org/morpheus/).
 

@@ -12,12 +12,12 @@
 ### Affiliations
 
 1. Magnetic Tides, Inc El Cerrito United States
-2. https://ror.org/01an7q238 Department of Psychology, University of California, Berkeley Berkeley United States
-3. https://ror.org/01an7q238 Helen Wills Neuroscience Institute, University of California, Berkeley Berkeley United States
-4. https://ror.org/00py81415 Department of Psychiatry and Behavioral Sciences, Duke University Durham United States
-5. https://ror.org/00py81415 Department of Biomedical Engineering, Duke University Durham United States
-6. https://ror.org/00py81415 Department of Electrical and Computer Engineering, Duke University Durham United States
-7. https://ror.org/00py81415 Department of Neurosurgery, Duke University Durham United States
+2. Department of Psychology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+3. Helen Wills Neuroscience Institute, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+4. Department of Psychiatry and Behavioral Sciences, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+5. Department of Biomedical Engineering, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+6. Department of Electrical and Computer Engineering, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+7. Department of Neurosurgery, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
 
 † Corresponding author
 
@@ -53,9 +53,9 @@ Across the three experiments, participants found kTMP stimulation to be tolerabl
 
 In each experiment, five TMS probe blocks were sandwiched around active or sham kTMP stimulation (Figure 7A). We pooled the data across the two pre-kTMP probe blocks to establish a baseline measure. The post-stimulation blocks assessed changes in neural excitability at three time points after kTMP stimulation, operationalized as average percent change post kTMP relative to baseline.
 
-## Single-pulse assay
+### Single-pulse assay
 
-## Repeated kTMP conditions (3.5 kHz and sham) across experiments
+#### Repeated kTMP conditions (3.5 kHz and sham) across experiments
 
 In Experiment 1, three carrier frequencies of kTMP stimulation were tested (2, 3.5, and 5 kHz) along with a sham kTMP condition (0.01 V/m, 3.5 kHz). Experiments 2 and 3 included the same non-modulated 3.5 kHz condition (and sham), providing an opportunity for evaluating reproducibility and a reference point for assessing the effect of AM kTMP (see below).
 
@@ -65,7 +65,7 @@ We first tested if the change in corticospinal excitability for the 3.5 kHz cond
 
 **Figure 2.:** (A) Change in motor-evoked potential (MEP) amplitude measured with single-pulse transcranial magnetic stimulation (TMS) following sham stimulation (left) and kTMP stimulation at 3.5 kHz (right). Dots denote values for individual subjects, bars—mean values, and whiskers—standard error. MEP change post-intervention did not significantly differ across experiments for sham and 3.5 kHz. (B) Change in MEP amplitude for the three post-kTMP blocks for the 3.5 kHz condition (mean ± standard error).
 
-## Non-modulated kTMP increases cortical excitability
+#### Non-modulated kTMP increases cortical excitability
 
 We next compared sham vs. active non-modulated kTMP (2, 3.5, and 5 kHz) and found that active kTMP produced a significant increase in corticospinal excitability [χ2(1) = 23.83, p < 0.001; d = 0.51]. Pairwise comparisons of each active condition to sham showed that an increase was observed following both 2 kHz [χ2(1) = 6.90, p = 0.009; d = 0.49] and 3.5 kHz kTMP [χ2(1) = 37.57, p < 0.001; d = 0.70; Figure 3: Non-Modulated conditions]. The 5 kHz condition failed to reach significance [χ2(1) = 1.43, p = 0.232; d = 0.21].
 
@@ -77,13 +77,13 @@ A comparison of the three active conditions showed that the effect on MEP amplit
 
 The effect of active non-modulated kTMP stimulation persisted across 36 min of the post-stimulation probe blocks. There was no significant effect of Time (i.e., Post Block) on MEP amplitude [χ2(2) = 5.778, p = 0.056] nor was there a significant interaction between Time and Stimulation Condition for non-modulated kTMP [χ2(6) = 109.0696, p = 0.1226; Figure 3: Non-Modulated conditions].
 
-## AM kTMP produces similar increase in cortical excitability
+#### AM kTMP produces similar increase in cortical excitability
 
-We tested the effect of AM kTMP in Experiments 2 and 3, with the two experiments using different forms of amplitude modulation (EAM1\begin{document}$E_{AM1}$\end{document} and EAM2\begin{document}$E_{AM2}$\end{document}; see Figure 8). For these experiments, we used a carrier frequency of 3.5 kHz given that this condition had produced the largest effect in Experiment 1.
+We tested the effect of AM kTMP in Experiments 2 and 3, with the two experiments using different forms of amplitude modulation ($E_{AM1}$ and $E_{AM2}$; see Figure 8). For these experiments, we used a carrier frequency of 3.5 kHz given that this condition had produced the largest effect in Experiment 1.
 
-Similar to what we observed from the single-pulse (SP) probe for non-modulated 3.5 kHz stimulation, AM kTMP resulted in an increase in MEP amplitude compared to sham [χ2(1) = 23.59, p < 0.001; d = 0.54; Figure 3, AM conditions]. Pairwise comparisons showed that this effect was observed in three of the four AM conditions: EAM1\begin{document}$E_{AM1}$\end{document} [fm=20,fb=40;\begin{document}$f_{m}=20,\, f_{b}=40;$\end{document} χ2(1) = 13.72, p < 0.001; d = 0.74], EAM2\begin{document}$E_{AM2}$\end{document} [fm=140,fb=140;\begin{document}$f_{m}=140,\, f_{b}=140;$\end{document} χ2(1) = 5.61, p = 0.018; d = 0.62], and EAM1\begin{document}$E_{AM1}$\end{document} [fm=140,fb=280;\begin{document}$f_{m}=140,\, f_{b}=280;$\end{document} χ2(1) = 22.69, p < 0.001; d = 1.00]. The EAM2\begin{document}$E_{AM2}$\end{document} condition [fm=20,fb=20\begin{document}$f_{m}=20,\, f_{b}=20$\end{document}] showed a numeric increase, but this comparison was not significant [χ2(1) = 2.75, p = 0.097; d = 0.427].
+Similar to what we observed from the single-pulse (SP) probe for non-modulated 3.5 kHz stimulation, AM kTMP resulted in an increase in MEP amplitude compared to sham [χ2(1) = 23.59, p < 0.001; d = 0.54; Figure 3, AM conditions]. Pairwise comparisons showed that this effect was observed in three of the four AM conditions: $E_{AM1}$ [$f_{m}=20,f_{b}=40;$ χ2(1) = 13.72, p < 0.001; d = 0.74], $E_{AM2}$ [$f_{m}=140,f_{b}=140;$ χ2(1) = 5.61, p = 0.018; d = 0.62], and $E_{AM1}$ [$f_{m}=140,f_{b}=280;$ χ2(1) = 22.69, p < 0.001; d = 1.00]. The $E_{AM2}$ condition [$f_{m}=20,f_{b}=20$] showed a numeric increase, but this comparison was not significant [χ2(1) = 2.75, p = 0.097; d = 0.427].
 
-Limiting our analysis to the four active AM conditions, we found that MEP amplitude was not dependent on modulating frequency [fm\begin{document}$f_{m}$\end{document}: χ2(1) = 2.33, p = 0.127] or burst repetition frequency [fb\begin{document}$f_{b}$\end{document}: χ2(3) = 3.92, p = 0.27]. We found an effect of Time (i.e., Post Block) on MEP amplitude across all AM conditions [χ2(2) = 7.45, p = 0.024], but no significant interaction between Post Block and Stimulation condition [χ2(6) = 3.14, p = 0.791]. Pairwise comparisons showed that MEP amplitude was greater in Post Block 3 compared to Post Block 1 [χ2(1) = 7.75, p = 0.005; Figure 4: AM conditions]. No other comparisons were significant [all χ2’s < 2.30, all p’s > 0.129].
+Limiting our analysis to the four active AM conditions, we found that MEP amplitude was not dependent on modulating frequency [$f_{m}$: χ2(1) = 2.33, p = 0.127] or burst repetition frequency [$f_{b}$: χ2(3) = 3.92, p = 0.27]. We found an effect of Time (i.e., Post Block) on MEP amplitude across all AM conditions [χ2(2) = 7.45, p = 0.024], but no significant interaction between Post Block and Stimulation condition [χ2(6) = 3.14, p = 0.791]. Pairwise comparisons showed that MEP amplitude was greater in Post Block 3 compared to Post Block 1 [χ2(1) = 7.75, p = 0.005; Figure 4: AM conditions]. No other comparisons were significant [all χ2’s < 2.30, all p’s > 0.129].
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/92088/elife-92088-fig4-v1.jpg)
 
@@ -91,7 +91,7 @@ Limiting our analysis to the four active AM conditions, we found that MEP amplit
 
 Our main interest in the AM conditions is to determine if amplitude modulation at physiologically relevant frequencies produces a change in cortical excitability beyond that produced by the kHz carrier frequency. To this end, we compared the effect of AM kTMP to non-modulated kTMP, with the latter limited to the 3.5 kHz condition (pooled data). Using a mixed-effects model, this contrast was not significant [χ2(1) = 0.05, p = 0.833; d = 0.03]. Thus, the AM conditions provide another demonstration that kHz stimulation can increase cortical excitability. However, at least with a 2 V/m E-field, we did not observe an effect from the AM component that was above and beyond non-modulated kTMP.
 
-## Paired-pulse assays
+### Paired-pulse assays
 
 We included two paired-pulse assays that provide probes of short intracortical inhibition (SICI) or facilitation (ICF). To confirm that we observed an effect from the paired-pulse protocols, we focused on the pre-kTMP data, thus avoiding any influence from kTMP stimulation. We pooled the data across the two pre-kTMP blocks for each individual and performed an analysis on the data from the participants from Experiments 1 and 2. This analysis showed a strong SICI effect, with a mean decrease of 36% on the paired-pulse trials relative to the SP trials [t(125) = –24.47, p < 0.001; Figure 5, top]. In addition, we saw a facilitatory effect for the ICF protocol with a mean increase of 22% on the paired-pulse trials relative to the SP trials [t(125) = 6.86, p < 0.001; Figure 5, bottom].
 
@@ -99,7 +99,7 @@ We included two paired-pulse assays that provide probes of short intracortical i
 
 **Figure 5.:** Data are plotted as the ratio of the paired-pulse motor-evoked potential (MEP) amplitude over the single-pulse MEP amplitude, with an inter-pulse interval of 3 ms for SICI and 10 ms for ICF. Each pair of bars shows this ratio for pre-kTMP (averaged over two probe blocks) and post-kTMP (averaged over three probe blocks).
 
-## No effect of kTMP on measures of intracortical inhibition or facilitation
+#### No effect of kTMP on measures of intracortical inhibition or facilitation
 
 We then asked if the magnitude of the SICI effect was modulated by kTMP (Figure 5, top). Compared to sham, we observed no effect of active non-modulated kTMP [χ2(1) = 0.81, p = 0.367], no effect of Time (i.e., Post Block) [χ2(2) = 0.53, p = 0.768] and no interaction between these two factors [χ2(6) = 5.47, p = 0.486]. Similarly, there was no effect of active AM kTMP on SICI (relative to sham) [χ2(1) = 0.56, p = 0.455], no effect of Time [χ2(2) = 0.39, p = 0.822] and no interaction between the two factors [χ2(4) = 4.17, p = 0.384]. In sum, kTMP does not appear to influence the magnitude of intracortical inhibition measured by SICI.
 
@@ -107,7 +107,7 @@ As with SICI, there was no evidence that kTMP influenced ICF (Figure 5, bottom):
 
 In summary, kTMP, either non-modulated or amplitude modulated at 2 V/m, did not produce any measurable effect on the paired-pulse assays of intracortical inhibition or facilitation, SICI and ICF.
 
-## Subjective experience during kTMP stimulation
+### Subjective experience during kTMP stimulation
 
 Informal observations from the participants in Experiment 1 indicated that the coil did not produce any detectable tactile sensation. The amplifier produces a sound, but one that was effectively masked by playing a louder, pre-recorded sound (3.5 kHz tone) in all conditions.
 
@@ -123,7 +123,7 @@ Of primary interest for the present report, the modal rating was 0 for all three
 
 In this paper, we present a new method, kTMP, for exploring the subthreshold NIBS experimental space. The kTMP E-field has the waveform flexibility of kilohertz tES along with the potential amplitude range and focality of TMS. Moreover, amplitude modulation of the kTMP E-field yields a waveform that could potentially introduce stimulation dynamics at frequencies matching endogenous neural rhythms (e.g., alpha and beta).
 
-## Summary of experimental findings and limitations
+### Summary of experimental findings and limitations
 
 Across three experiments, we assessed the ability of non-modulated and AM kTMP to alter cortical excitability, using suprathreshold TMS over motor cortex to elicit MEPs in a finger muscle. In Experiment 1, non-modulated kTMP with a targeted cortical E-field of 2 V/m produced an increase in corticospinal excitability at 2 and 3.5 kHz. The latter condition also resulted in a larger increase in MEP amplitude compared to stimulation at 5 kHz, suggesting a possible effect of carrier frequency. Experiments 2 and 3 provided replications of the efficacy of non-modulated kTMP at 3.5 kHz to increase corticospinal excitability. Importantly, participants experienced no tactile sensation or discomfort from the procedure. Indeed, the only percept of kTMP at 2.0 V/m is a tone at the carrier frequency emanating from the amplifier. This sound was masked in our experiments by a background tone played during active and sham kTMP stimulation.
 
@@ -133,7 +133,7 @@ We also tested two forms of AM, using modulation frequencies of 20 and 140 Hz. A
 
 Despite the absence of an effect from amplitude modulation, the present results are encouraging in that, across a range of conditions, we consistently observed an increase in cortical excitability in response to SP TMS following the application of a 2 V/m E-field for 10 min. On average, the increase in MEP amplitude following 3.5 kHz non-modulated kTMP with a cortical E-field of 2 V/m, the condition in which we have the largest sample size, was 37%. This value is in the range observed from studies using a variety of NIBS methods and protocols (Chaieb et al., 2011; Wischnewski et al., 2019; Bastani and Jaberzadeh, 2013).
 
-## Potential mechanisms of kTMP
+### Potential mechanisms of kTMP
 
 At present, we can only tentatively speculate about how kTMP modulates cortical excitability. As with other NIBS modalities, a mechanistic understanding would address (1) what cellular element is directly perturbed, (2) which cortical neurons are modulated, and (3) how modulation confers lasting cortical excitability. We discuss these questions below.
 
@@ -145,7 +145,7 @@ We did not observe any effect of kTMP on the two paired-pulse protocols, SICI an
 
 Finally, we can consider different hypotheses concerning how kHz stimulation produces changes in neuronal activity lasting beyond the stimulus train. One possibility is that the continuous acute perturbation of the presynaptic terminals interacts with the endogenous axonal signaling, for example via stochastic resonance, ultimately causing synaptic potentiation (Antal and Paulus, 2013). Another option is that the nonlinear properties of the neuronal membrane lead to temporal summation of successive kilohertz subthreshold cycles and, consequently, a facilitation of synaptic transmission (Neudorfer et al., 2021). The repeated perturbation of the neuronal membrane could also result in accumulation of calcium in presynaptic terminals, yielding synaptic plasticity effects (Chaieb et al., 2011). Presently, these possibilities are speculative and need to be assessed by further research into the cellular mechanisms of subthreshold kilohertz neuromodulation.
 
-## Methodological advantages of kTMP
+### Methodological advantages of kTMP
 
 A limiting factor for tES studies is that these methods are restricted to the very low end of subthreshold space in terms of E-field amplitude. Thus, there is a limited range over which one could obtain dose-dependent effects; indeed, efforts to establish dose-dependent response functions with NIBS protocols have provided mixed results (Kamen, 2004; Malcolm et al., 2006). In contrast, kTMP has the potential to open a large subthreshold experimental space, one that has considerable range in terms of E-field amplitude, carrier frequency, AM waveform, and stimulation duration. We should be able to achieve at least a fourfold increase in the kTMP cortical E-field amplitude (e.g., up to 8 V/m in the kHz range) (Sheltraw et al., 2021; Wang et al., 2023) without uncomfortable scalp stimulation. This expanded parameter space, especially in terms of E-field amplitude, should prove beneficial in deriving dose-dependent response functions. Theoretically, kTMP could reach suprathreshold E-field amplitudes, although moving into that space will require careful assessment of issues related to power requirements, coil heating, acoustic noise, and participant safety.
 
@@ -159,13 +159,13 @@ Fourth, E-fields produced through magnetic induction, unlike tES E-fields, depen
 
 Fifth, as with other NIBS methods (Ghafoor et al., 2022; Herrmann et al., 2016; Fehér and Morishima, 2016; Di Gregorio et al., 2022), we anticipate that simultaneous EEG and kTMP will enable the investigation of the evolution of neural effects in real-time. For example, with amplitude modulated kTMP, the artifact from the kHz carrier frequency can be removed, albeit with possible technical hurdles connected to nonlinearities associated with presently available recording and stimulation hardware (Kasten et al., 2018). This approach could be used to tailor the stimulation waveform on an individual basis or for closed-loop control, promising avenues for translational applications of NIBS.
 
-## Conclusion
+### Conclusion
 
 In conclusion, kTMP offers an opportunity to explore a new experimental space, one with a relatively large range of subthreshold E-field induction, the focality of TMS, and the potential to impose E-fields at physiologically relevant frequencies, with significantly less tolerability issues than tES or suprathreshold TMS.
 
 ## Methods
 
-## Apparatus
+### Apparatus
 
 The kTMP system consists of a high-amplitude current source, a TMS coil, and a control system. The same TMS coil may be connected to either the kTMP current source or to a commercial TMS pulse generator (MagVenture MagPro R30 with MagOption), permitting interleaved kTMP–TMS experiments and ensuring identical kTMP and TMS E-field distributions up to an amplitude scaling factor. The kTMP amplifier (AE Techron Model 7794) is a voltage-controlled current source capable of delivering up to 200 A to the coil. We used an actively liquid-cooled figure-of-eight coil (MagVenture Cool-B65; inner and outer loop diameter of 35 and 75 mm, respectively).
 
@@ -173,11 +173,11 @@ The kTMP control system consists of a personal computer (PC), input/output PCI c
 
 Bench testing indicated that the system when running in kTMP mode did not produce marked changes in coil temperature. As an added safeguard, the PCI card was set up to receive an analog input from the coil’s temperature sensor and create an automatic shutdown if the coil temperature exceeded 41°C, which is within the guidelines established by the International Electrotechnical Commission (IEC). In practice, for E-fields up to 2 V/m used in the present experiments, the coil temperature never rose above 32°C during system operation.
 
-## Participants
+### Participants
 
 Forty-nine young adults were recruited through various advertisements posted to the Berkeley community. The number of participants in Experiments 1, 2, and 3 was 16 (12 female), 16 (10 female), and 15 (11 female), respectively. Seven of the participants in Experiment 2 had also been tested in Experiment 1 (minimum 3 weeks between the last session of Experiment 1 and first session of Experiment 2). All participants provided informed consent, were compensated for their time, and were naïve to the purpose of the study. Eligibility was determined in accordance with current TMS safety guidelines (Rossi et al., 2021), and individuals with contraindications to TMS were excluded. Given the novelty of kTMP as a NIBS method, the UC Berkeley Institutional Review Board (IRB) consulted with an outside expert and members of the campus Environmental and Health Safety Committee to evaluate the system. Following their review, the protocol was approved by the UC Berkeley IRB (Protocol Number 2018-05-11093), with the kTMP system classified as a non-significant risk device for E-fields up to 8 V/m applied for up to 20 min per session.
 
-## Procedure
+### Procedure
 
 To evaluate the kTMP system as a new tool to modulate neuronal excitability, we measured the impact of kTMP on corticospinal excitability using suprathreshold TMS stimulation over motor cortex. Figure 7 depicts an overview of the experimental hardware and protocol. In brief, kTMP stimulation was preceded by two 4–7 min probe blocks and followed by three such blocks. In Experiments 1 and 2, each block consisted of SP TMS and two paired-pulse protocols, SICI and ICF. In Experiment 3, only the SP TMS protocol was employed (see below for details).
 
@@ -189,47 +189,75 @@ Each experiment consisted of five 2 hr test sessions, with each session separate
 
 Two steps were taken to create a double-blinding protocol. First, we created a coding system such that the experimenter typed in a number that was paired to the desired stimulation condition in an arbitrary and random manner, one that varied across participants in a manner unknown to the experimenter. Second, we played a tone at 3.5 kHz using the Tone Generator Application Sonic (VonBruno 2015) to create a constant background sound during kTMP stimulation in all conditions, including sham, effectively masking the amplifier sound.
 
-## kTMP
+#### kTMP
 
-For each carrier frequency, the current amplitude was selected to achieve a peak E-field amplitude of 2.0 V/m at a distance of 14 mm perpendicular to the coil surface, a distance we took to represent the approximate depth of the motor cortex from the overlying scalp (Lu et al., 2019). The current amplitude needed to obtain the required E-field amplitude is estimated as follows. The E-field amplitude, E0\begin{document}$E_{0}$\end{document} (units of V/m), is proportional to the frequency, fb\begin{document}$f_{b}$\end{document} (units of Hz), and amplitude I\begin{document}$I$\end{document} (units of A) of the current source according to:E0=kfcI\begin{document}$$\displaystyle E_{0}=kf_{c}I$$\end{document}
+For each carrier frequency, the current amplitude was selected to achieve a peak E-field amplitude of 2.0 V/m at a distance of 14 mm perpendicular to the coil surface, a distance we took to represent the approximate depth of the motor cortex from the overlying scalp (Lu et al., 2019). The current amplitude needed to obtain the required E-field amplitude is estimated as follows. The E-field amplitude, $E_{0}$ (units of V/m), is proportional to the frequency, $f_{b}$ (units of Hz), and amplitude $I$ (units of A) of the current source according to:
 
-For the MagVenture Cool-B65 coil used in the kTMP system  E0\begin{document}$E_{0}$\end{document} = 185 V/m when  fc\begin{document}$f_{c}$\end{document} = 3570 Hz (280 μs biphasic TMS pulse) and  I\begin{document}$I$\end{document} = 6,950 A (Deng et al., 2013; Drakaki et al., 2022). From these reference values, we estimate k\begin{document}$k$\end{document}:k=7.875×10-6VsAm\begin{document}$$\displaystyle k=7.875\times 10^{-6}\frac{\text{Vs}}{\text{Am}}$$\end{document}
+$$
+E_{0}=kf_{c}I
+$$
+
+For the MagVenture Cool-B65 coil used in the kTMP system  $E_{0}$ = 185 V/m when  $f_{c}$ = 3570 Hz (280 μs biphasic TMS pulse) and  $I$ = 6,950 A (Deng et al., 2013; Drakaki et al., 2022). From these reference values, we estimate $k$:
+
+$$
+k=7.875\times10^{-6}\frac{Vs}{Am}
+$$
 
 where V, s, A, and m correspond to volts, seconds, amperes, and meters, respectively.
 
 We verified the accuracy of our estimates within a 5% error using E-field measurements obtained from a triangular probe following the method of Nieminen (Nieminen et al., 2015).
 
-## Experiment 1
+#### Experiment 1
 
-## Non-modulated kTMP
+##### Non-modulated kTMP
 
-We used a within-subject design, testing each participant on each of four kTMP stimulation conditions, with the order counter-balanced across participants. For three of the conditions, the carrier frequency (2, 3.5, and 5 kHz) was paired with an intensity to create an E-field at the superficial aspect of the hand area of the motor cortex of E0=\begin{document}$E_{0}=$\end{document} 2 V/m. We set the non-modulated E-field to be a sine wave with frequency fc\begin{document}$f_{c}$\end{document} (see Figure 8):ENMt=Eocos⁡2πfct\begin{document}$$\displaystyle E_{NM}\left (t\right)=E_{o}\cos \left (2\pi f_{c}t\right)$$\end{document}
+We used a within-subject design, testing each participant on each of four kTMP stimulation conditions, with the order counter-balanced across participants. For three of the conditions, the carrier frequency (2, 3.5, and 5 kHz) was paired with an intensity to create an E-field at the superficial aspect of the hand area of the motor cortex of $E_{0}=$ 2 V/m. We set the non-modulated E-field to be a sine wave with frequency $f_{c}$ (see Figure 8):
+
+$$
+E_{NM}t=E_{o}cos⁡2\pif_{c}t
+$$
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/92088/elife-92088-fig8-v1.jpg)
 
-**Figure 8.:** A commonly used form of amplitude modulation is . The constants E(t)=E0[a+msin⁡(2πfmt)]sin⁡(2πfct)\begin{document}$E(t) = E_0 \left[ a + m \sin(2\pi f_m t) \right] \sin(2\pi f_c t)$\end{document}, and fc,fm\begin{document}$f_{c}, f_{m}$\end{document} refer to the carrier frequency, modulation frequency, and the E-field amplitude (cortical E-field), respectively. Left column, waveforms: E0\begin{document}$E_{0}$\end{document}, and ENM,EAM1\begin{document}$E_{NM},E_{AM1}$\end{document} refer to the non-modulated waveform and the two forms of amplitude modulation tested. Black lines indicate the modulation frequency. Center column, spectrum: Carrier frequency and sidebands for the corresponding waveforms. Note the absence of power at the modulated frequency (EAM2\begin{document}$E_{AM2}$\end{document}). Right column, waveform parameters and characteristics for each experiment. fm\begin{document}$f_{m}$\end{document} refers to the burst repetition frequency.fc\begin{document}$f_{c}$\end{document}
+**Figure 8.:** A commonly used form of amplitude modulation is $E(t)=E_{0}[a+msin⁡(2\pif_{m}t)]sin⁡(2\pif_{c}t)$. The constants $f_{c},f_{m}$, and $E_{0}$ refer to the carrier frequency, modulation frequency, and the E-field amplitude (cortical E-field), respectively. Left column, waveforms: $E_{NM},E_{AM1}$, and $E_{AM2}$ refer to the non-modulated waveform and the two forms of amplitude modulation tested. Black lines indicate the modulation frequency. Center column, spectrum: Carrier frequency and sidebands for the corresponding waveforms. Note the absence of power at the modulated frequency ($f_{m}$). Right column, waveform parameters and characteristics for each experiment. $f_{c}$ refers to the burst repetition frequency.
 
 Note that we did not adjust for individual differences in scalp-to-cortex distance. For the sham condition, we used a 3.5-kHz carrier frequency producing a 0.01 V/m E-field at the approximate distance of the cortical surface.
 
-## Experiments 2 and 3
+### Experiments 2 and 3
 
-## Amplitude-modulated kTMP
+#### Amplitude-modulated kTMP
 
 For Experiments 2 and 3, we again used a within-subject design, testing each participant in four sessions. Two of the conditions were repeated from Experiment 1: the 3.5 kHz non-modulated kTMP condition at 2 V/m and the sham condition. For the other two conditions, the carrier frequency was set at 3.5 kHz and the waveform was amplitude modulated (AM) at modulation frequencies of either 20 or 140 Hz. The 3.5 kHz carrier frequency was chosen since we had obtained the largest effect size compared to sham at this frequency in Experiment 1. We selected the 20 Hz modulation frequency given the relevance of beta to motor function (Feurra et al., 2013; Feurra et al., 2011; Heise et al., 2016) and the 140 Hz modulation frequency based on literature concerning ripple effects at this frequency (Dissanayaka et al., 2017; Inukai et al., 2016; Moliadze et al., 2010). The peak cortical E-field amplitude for the AM conditions was 2 V/m, identical to the non-modulated condition. Note that the inclusion of the 3.5 kHz non-modulated condition and sham for both experiments provides two replications of these conditions from Experiment 1 as well as points of comparison for the AM kTMP conditions.
 
-Experiments 2 and 3 differed in the form used for amplitude modulation. In general, an amplitude-modulated current can be written asEt=Atsin⁡2πfct\begin{document}$$\displaystyle E\left (t\right)=A\left (t\right)\sin \left (2\pi f_{c}t\right)$$\end{document}
+Experiments 2 and 3 differed in the form used for amplitude modulation. In general, an amplitude-modulated current can be written as
 
-where At\begin{document}$A\left (t\right)$\end{document} is a time-dependent amplitude modulation factor. A popular form used in communications systems isAt=Eoa+mft\begin{document}$$\displaystyle A\left (t\right)=E_{o}\left [a+mf\left (t\right)\right ]$$\end{document}
+$$
+Et=Atsin⁡2\pif_{c}t
+$$
 
-where ft\begin{document}$f\left (t\right)$\end{document} is the signal one wishes to convey between two components of a system and the ratio ma\begin{document}$\frac{m}{a}$\end{document} is the modulation index. The modulation index is typically chosen to suit the proposed means of demodulation.
+where $At$ is a time-dependent amplitude modulation factor. A popular form used in communications systems is
 
-In Experiment 2, we used ft=sin⁡2πfmt\begin{document}$f\left (t\right)=\sin \left (2\pi f_{m}t\right)$\end{document} and an infinite modulation index. Correspondingly, the E-field has time dependence of the form:EAM1t=Eosin⁡2πfmtsin⁡2πfct\begin{document}$$\displaystyle E_{AM1}\left (t\right)=E_{o}\sin \left (2\pi f_{m}t\right)\sin \left (2\pi f_{c}t\right)$$\end{document}
+$$
+At=E_{o}a+mft
+$$
 
-where fm\begin{document}$f_{m}$\end{document} is the modulation frequency. In Experiment 3, we used f(t)=sin⁡(2πfmt)\begin{document}$f\left (t\right)=\sin \left (2\pi f_{m}t\right) $\end{document} and a modulation index of one (see Figure 8),EAM2t=Eo12+12sin⁡2πfmtsin⁡2πfct\begin{document}$$\displaystyle E_{AM2}\left (t\right)=E_{o}\left [\frac{1}{2}+\frac{1}{2}\sin \left (2\pi f_{m}t\right)\right ]\sin \left (2\pi f_{c}t\right)$$\end{document}
+where $ft$ is the signal one wishes to convey between two components of a system and the ratio $\frac{m}{a}$ is the modulation index. The modulation index is typically chosen to suit the proposed means of demodulation.
 
-Although the same modulation frequencies are used to calculate EAM1\begin{document}$E_{AM1}$\end{document} and EAM2\begin{document}$E_{AM2}$\end{document} they differ with respect to the spectrum of their upper envelope, the frequency of which we refer to as the burst repetition frequency fb\begin{document}$f_{b}$\end{document}. For E0\begin{document}$E_{0}$\end{document} the burst repetition frequency is double that of the modulation frequency, whereas for EAM2\begin{document}$E_{AM2}$\end{document} the burst repetition frequency and the modulation frequency are matched. The burst repetition frequency may be an important parameter in determining the neural effects of kTMP.
+In Experiment 2, we used $ft=sin⁡2\pif_{m}t$ and an infinite modulation index. Correspondingly, the E-field has time dependence of the form:
 
-## TMS: hotspot and threshold procedure (Session 1)
+$$
+E_{AM1}t=E_{o}sin⁡2\pif_{m}tsin⁡2\pif_{c}t
+$$
+
+where $f_{m}$ is the modulation frequency. In Experiment 3, we used $f(t)=sin⁡(2\pif_{m}t)$ and a modulation index of one (see Figure 8),
+
+$$
+E_{AM2}t=E_{o}\frac{1}{2}+\frac{1}{2}sin⁡2\pif_{m}tsin⁡2\pif_{c}t
+$$
+
+Although the same modulation frequencies are used to calculate $E_{AM1}$ and $E_{AM2}$ they differ with respect to the spectrum of their upper envelope, the frequency of which we refer to as the burst repetition frequency $f_{b}$. For $E_{0}$ the burst repetition frequency is double that of the modulation frequency, whereas for $E_{AM2}$ the burst repetition frequency and the modulation frequency are matched. The burst repetition frequency may be an important parameter in determining the neural effects of kTMP.
+
+### TMS: hotspot and threshold procedure (Session 1)
 
 SP TMS was applied over left hemisphere primary motor cortex to determine the rMT for the first dorsal interosseous (FDI) muscle in the right hand. We focused on FDI since it is relatively easy to isolate in all individuals and threshold values are stable across test sessions (Kamen, 2004; Malcolm et al., 2006; e.g., Carroll et al., 2001).
 
@@ -237,34 +265,34 @@ The TMS coil was placed tangentially on the scalp with the handle pointing backw
 
 The mean threshold was 58% (SD = 11.3%), 63% (SD = 11.1%), and 56% (SD = 9.2%) of maximum stimulator output in Experiments 1, 2, and 3, respectively. We repeated the threshold procedure in each of the kTMP sessions to capture possible intra-individual baseline changes in the cortico-excitability of the participants. In practice, the individual’s threshold values remained very stable across days (SD = 2.4%).
 
-## TMS assays of corticospinal excitability (Sessions 2–5)
+### TMS assays of corticospinal excitability (Sessions 2–5)
 
 For Experiments 1 and 2, each of the five probe blocks (two pre-kTMP and three post-kTMP) included SP TMS, and two paired-pulse protocols: SICI and ICF (Cash and Ziemann, 2021; Rossini et al., 2015). Similar to SP, paired-pulse protocols were administered with biphasic pulse waveforms with a posterior–anterior direction of the second, dominant phase of the induced current. These three protocols have been widely used in prior studies designed to evaluate the efficacy of tES and rTMS methods in altering neural excitability (Chung et al., 2016; Horvath et al., 2015; Biabani et al., 2018a). For SP, the stimulation level was set at 120% of rMT. For the paired-pulse assays, the suprathreshold pulse was preceded by a subthreshold conditioning stimulus set at 80% of rMT, with an interstimulus interval (ISI) of 3 or 10 ms for SICI and ICF, respectively. The probe block consisted of 90 trials, 30 for each of the three assays, with the order randomized within the block. For Experiment 3, the five probe blocks consisted only of the SP TMS assay. We made this decision after finding that kTMP had no effect on SICI or ICF in Experiments 1 and 2. We lengthened the breaks between blocks in Experiment 3 to match the timing of the three post blocks relative to kTMP stimulation in the first two experiments.
 
 We developed a system to read and record the spatial and angular position of the coil with respect to the hotspot in real time from Brainsight. This information was recorded at the time of each TMS pulse and used to exclude trials in which the coil was distant from the hotspot or the angle had changed from the optimal hotspot orientation.
 
-## EMG
+### EMG
 
 EMG activity was recorded (Bagnoli-8 EMG System, Delsys Inc) from surface electrodes placed over the right FDI muscles, with a reference electrode over the right elbow. The experimenter visually inspected the EMG traces on a monitor to ensure that the participant remained relaxed (i.e., negligible EMG background activity in FDI), to detect the presence or absence of MEPs in response to the TMS pulses, and, since kTMP is a novel brain stimulation modality, to monitor for safety by checking for after discharges or other features suggesting excessive increase in excitability that could evolve into a seizure.
 
 The EMG signal was amplified and bandpass filtered online between 20 and 450 Hz. The signals were digitized at 2000 Hz for offline analysis. All EMG measures were analyzed using custom MATLAB R2018a scripts, which are publicly available on GitHub (Merrick et al., 2025). EMG was recorded continuously during the experiment. Offline, data were segmented based on a TTL pulse from the TMS system recorded by the EMG amplifier on an auxiliary channel.
 
-## Subjective reports
+### Subjective reports
 
 We informally assessed the participants’ subjective experience in Experiment 1, focusing on reports concerning the perception of sound emitted from the system, tactile sensation, and discomfort. This process was formalized in Experiments 2 and 3. In these studies, we administered a short survey in which participants answered three questions concerning (1) annoyance, (2) pain, and (3) subjective experience of muscle activation/movement. Participants responded to each question using a keyboard to type in a number using an 11-point scale (0 = not at all; 10 = extremely). This survey was based on a systematic rating system that has been employed to characterize the degree of disturbance caused by TMS (Meteyard and Holmes, 2018). We administered the survey twice. The first time was after the second TMS probe block, providing ratings on the subjective experience of suprathreshold TMS. The second time was after kTMP, providing ratings on the subjective experience of kTMP stimulation.
 
-## Data analysis
+### Data analysis
 
-## MEP data
+#### MEP data
 
 For each trial, the peak-to-peak amplitude of the MEP was calculated over a window 15–45 ms after the suprathreshold TMS pulse. Trials were excluded from the analysis based on the following criteria: (1) If the MEP amplitude was 2.5 standard deviations above or below the mean, with the mean and standard deviation calculated separately for each TMS assay (SP, ICF, and SICI) for each probe block. (2) If the Brainsight recording indicated that the coil was more than 3 mm (Euclidian distance) from the optimal hotspot location or had an angular or twist error more than 5° from the optimal trajectory angle. (3) If noise in the EMG signal 100 ms before the TMS pulse exceeded 2.5 standard deviations of the mean EMG signal. On average, 10% (SD = 3%) of the trials were excluded per participant with a range of 4.8–20%. After cleaning the MEP data, there were a minimum of 20 MEP measures per protocol in each assessment block for each individual, a sufficient number for performing the MEP analyses (Chung et al., 2016; Goldsworthy et al., 2016; Cavaleri et al., 2017; Biabani et al., 2018b).
 
 Raw MEP amplitudes were log-transformed to normalize the distribution of MEP amplitudes (Peterchev et al., 2013; Nielsen, 1996a; Nielsen, 1996b; Goetz et al., 2014). The average log-transformed MEP amplitude was then calculated for each of the three TMS protocols in each probe block on an individual basis. After averages were calculated, the data were exponentiated to get the MEPs back to an easily interpreted scale (i.e., mV). SICI and ICF measures were calculated by computing a ratio of the paired-pulse MEP average over the SP MEP average for each block. For all three TMS assays, the effect of kTMP stimulation was operationalized as the average percent change post-kTMP relative to the two baseline blocks (averaged). For example, a value of 0% would indicate no change in SP MEP amplitude from pre- to post-stimulation, whereas a value of 100% would indicate the SP MEP amplitude doubled from pre- to post-stimulation. Thus, the main analysis focuses on the three post-kTMP stimulation probe blocks for each of the three TMS assays (SP, SICI, and ICF). All data are available on Dryad (Merrick et al., 2025) and the custom analysis scripts, including code to reproduce, are publicly available on GitHub (Merrick et al., 2025) under the MIT License, permitting free use, modification, and distribution.
 
-## Missing data
+#### Missing data
 
 Although we aimed for a fully within-subject design, a subset of the participants only had data for three of the four sessions. Missing data were due to (1) technical issues with the Brainsight neuronavigation system (n = 2/47), (2) university suspension of testing with human participants in March 2020 due to the onset of the COVID-19 pandemic (n = 5/47), or (3) determination that the results from a session were a statistical outlier (n = 3/47). The latter three had an increase in corticospinal excitability three standard deviations above the mean in one condition. All of these were active kTMP conditions and, if included, would have inflated the effect of kTMP on corticospinal excitability. To account for missing data and subject variability, all analyses used a linear mixed-effects model with a random factor of participant.
 
-## Linear mixed-effects models
+#### Linear mixed-effects models
 
 Linear mixed-effects models were implemented in RStudio using the software package lme4 (Bates et al., 2015). Each mixed-effects model used Participant as a random effect, experiment as a fixed effect, and experimental variables (e.g., active vs. sham, post-stimulation block) as fixed effects. Likelihood ratio tests were used to obtain p-values in evaluating experimental fixed effects and interaction effects. Cohen’s d was calculated based on the methods outlined in Brysbaert and Stevens, 2018 for mixed-effects models. Cohen’s d can be interpreted as a standardized mean difference between conditions; according to convention, d ≅ 0.2 is considered a small effect, d ≅ 0.5 is considered a medium effect, and d > 0.8 considered a large effect (Cohen, 1988).

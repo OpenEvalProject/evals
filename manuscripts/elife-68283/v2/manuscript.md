@@ -14,10 +14,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0046gcs23 Department of Cellular Microbiology, Max Planck Institute for Infection Biology Berlin Germany
-2. https://ror.org/0046gcs23 Microscopy Core Facility, Max Planck Institute for Infection Biology Berlin Germany
-3. https://ror.org/0046gcs23 Protein Analysis Core Facility, Max Planck Institute for Infection Biology Berlin Germany
-4. https://ror.org/001w7jn25 Institut für Pathologie, Charité - Universitätsmedizin Berlin Berlin Germany
+1. Department of Cellular Microbiology, Max Planck Institute for Infection Biology Berlin Germany ([ROR:0046gcs23](https://ror.org/0046gcs23))
+2. Microscopy Core Facility, Max Planck Institute for Infection Biology Berlin Germany ([ROR:0046gcs23](https://ror.org/0046gcs23))
+3. Protein Analysis Core Facility, Max Planck Institute for Infection Biology Berlin Germany ([ROR:0046gcs23](https://ror.org/0046gcs23))
+4. Institut für Pathologie, Charité - Universitätsmedizin Berlin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
 
 † Corresponding author
 
@@ -35,35 +35,529 @@ NETs can also be detected through post-translational modifications (PTMs) that o
 
 ## Results
 
-## Serine protease dependent cleavage of Histone H3 N-terminal tails during NET formation
+### Serine protease dependent cleavage of Histone H3 N-terminal tails during NET formation
 
 Histones are processed in response to phorbol 12 myristate 13 acetate - PMA (Papayannopoulos et al., 2010; Urban et al., 2009) and other NET stimuli (Kenny et al., 2017). Indeed, the cleavage products of H3 were consistent between stimuli (Kenny et al., 2017). This suggests that H3 proteolysis occurs at specific sites during NETosis. In a time course experiment of human neutrophils incubated with PMA, we detected a H3 cleavage product of ~14 kDa as early as 30 min post-stimulation (Figure 1A). Further cleavages occurred between 60 and 90 min, yielding products of approximately 13 kDa and 10 kDa, respectively. The histone N-terminal tails protrude from the nucleosome core and are a major PTM target (Bannister and Kouzarides, 2011). A C-terminal, but not an N-terminal, directed histone antibody detected the cleavage products of H3 (Figure 1A). These results indicate that the N-terminus is cleaved in truncated H3.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig1-v2.jpg)
+
+**Figure 1.:** (A) Neutrophils were preincubated with the serine protease inhibitor AEBSF for 30 min in microcentrifuge tubes and then stimulated with PMA as indicated in the figure. Lysates were resolved by SDS-PAGE and immunoblotted with N- and C-terminal antibodies to H3. GAPDH was used as a loading control. Blots representative of three independent experiments. (B) Immunofluorescent confocal microscopy of NET formation. Neutrophils were seeded on coverslips and preincubated with AEBSF before stimulation with PMA (50 nM) as indicated in the figure. At 150 min the cells were fixed and stained for neutrophil elastase (NE), chromatin (using a H2A-H2B-DNA antibody PL2.3) and DNA (DAPI [4′,6-diamidino-2-phenylindole]). NS: non-stimulated. Images were taken using at 63 x (Plan Apochromat, glycerol, numerical aperture 1.30) and the scale bar is 20 µm. Images are representative of three independent experiments. Source data is found in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Neutrophils were preincubated with the cysteine protease inhibitor E64 (10 µM) or serine protease inhibitor AEBSF (150 µm) for 30 min and then stimulated with or without PMA 50 nM for 120 min. Lysates were resolved by SDS-PAGE and immunoblotted with anti-H3 C-terminal. GAPDH was used as a loading control. VC - vehicle control. Blot is representative of three independent experiments. Source data is found in Figure 1—figure supplement 1—source data 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Neutrophils were preincubated with AEBSF at the specified concentrations for 30 min before stimulation as indicated. ROS production was assessed using a luminol-HRP assay. Representative trace of three independent experiments. VC – vehicle control; NS – non stimulated (PBS only). Source data can be found in Figure 1—figure supplement 2—source data 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Neutrophils were incubated with AEBSF at the indicated concentration and cytotoxicity was measured by LDH (lactate dehydrogenase) release where 100% lysis was achieved by adding 0.1% (w/v) Triton X-100. Samples were measured at 490 nm and normalised to 100% lysis. Graph represents the mean ± standard deviation of three independent experiments. Source data can be found in Figure 1—figure supplement 3—source data 1.
+
 Neutrophil azurophilic granules are rich in serine proteases that can degrade histones in vitro (Papayannopoulos et al., 2010). We tested the contribution of these proteases to H3 cleavage during NET formation. Preincubation with the serine protease inhibitor, AEBSF (4- [2-aminoethyl] benzensulfonylfluoride) (Figure 1A), but not with the cysteine protease inhibitor E64 (Figure 1—figure supplement 1), inhibited H3 cleavage upon PMA stimulation. AEBSF also inhibited NET formation and nuclear decondensation as shown by immunofluorescent microscopy (Figure 1B). PMA induced NETosis requires NADPH oxidase activity and, at high concentrations, AEBSF can inhibit activation of NAPDH oxidase (Diatchuk et al., 1997). To rule out this upstream effect, we showed that AEBSF did not inhibit ROS production at the concentrations used in our assay (Figure 1—figure supplement 2). Similarly, we verified that at these concentrations AEBSF was not cytotoxic, as shown by limited LDH release (Figure 1—figure supplement 3). This data shows that the N-terminus of H3 is cleaved early during NET formation and that this event is dependent on serine protease activity.
 
-## Histone H3 is cleaved at a novel site in the globular domain
+### Histone H3 is cleaved at a novel site in the globular domain
 
 To identify the precise H3 cleavage sites we prepared histone enriched extracts from primary neutrophils stimulated with PMA for 90 min and then purified H3 by RP-HPLC as previously described (Shechter et al., 2007). A schematic summary of this is presented in Figure 2—figure supplement 1. We identified the fractions containing H3 and its cleaved products by Western blot with anti-H3 C-terminal antibodies (Figure 2A). As expected, H3 was the last core histone to elute (at 45–46 min).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative RP-HPLC chromatogram of acid extracted histones from NETs and corresponding 1D-SDS-PAGE and immunoblots to identify H3 and H4 containing fractions. Histone enriched supernatants were prepared from neutrophils stimulated with PMA for 90 min. Purification and subsequent 2D-electrophoresis (2D-E) was repeated three times with independent donors. Source data is found in Figure 2—source data 1 and Figure 2—source data 2. (B) Representative Coomassie stained blot of pooled H3 fractions separated by 2D-E. Inset is a zoom of all spots (1-5) identified as histone H3 by mass spectrometry. Other proteins identified are listed in Figure 2—figure supplement 2 and Table 1. Source data is found in Figure 2—source data 3. (C) Schematic representation of the cleavage site of the truncated H3 product in both the linear sequence of H3 and in the nucleosomal context. H3 is represented in blue and the pink tail region and partial alpha helix represent the part of H3 that is removed. The nucleosome structure is adapted from PDB 2F8N (Chakravarthy and Luger, 2005).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Neutrophils were stimulated with PMA (50 nM) to induce histone cleavage and the samples were collected in the presence of proteases inhibitors. The nuclear material was isolated by hypotonic lysis and mild shearing. Nuclear material, including intact nuclei, was resuspended in dH2O plus protease inhibitors and NP40, and followed by gentle sonication to disrupt NETs. Histones were liberated from DNA by the addition of H2SO4 (0.4 M) and then precipitated with trichloroacetic acid (TCA) and solubilised in dH2O before separation by RP-HPLC on an acetonitrile gradient. Histone H3 containing fractions were identified by 1D-SDS-PAGE and immunoblotting for H3. H3 containing fractions were pooled, then divided in two, and both separated by 2D-electrophoresis (2D-E). Subsequent gels were either stained with Coomassie Blue and the spots prepared for identification by mass spectrometry, or transferred to PVDF membranes, stained with Coomassie Blue and subjected to N-terminal Edman degradation sequencing.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Coomassie stained gel of pooled histone H3 containing fractions resolved by two dimensional electrophoresis (2-DE). All labelled spots were subsequently analysed by mass spectrometry to identify the proteins in Table 1. Source data is found in Figure 2—figure supplement 2—source data 1.
+
 We further separated H3 and its truncated forms by two-dimensional electrophoresis (2-DE) and confirmed their identity by mass spectrometry (Figure 2B and Figure 2—figure supplement 2 and Table 1). The sequence coverage did not include residues that allowed the differentiation of H3 variants. The N-terminals of the separated H3 fragments were not covered by MS and therefore sequenced by Edman degradation from two independent experiments (Table 2). The N-terminal sequence of the largest molecular weight H3 spot matched that of intact H3 (Figure 2B, spot 1). We did not obtain reliable sequencing of spots 2 and 3 but the cleavage sites of spots 4 and 5 were identified. The most truncated H3 fragment (spot 5) was cleaved between L48 and R49, in the globular domain of the protein, within the nucleosome core structure (Figure 2C). This is a previously unidentified cleavage site in H3 and, thus, we selected cleavage at H3R49 as a candidate marker of NETs.
 
-## Generation of a histone H3 cleavage site monoclonal antibody
+**Table 1.**
+ Mass spectrometry identification of proteins co-separating with histone H3 following RP-HPLC and 2-DE.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Spot</th>
+      <th>score</th>
+      <th>accession no.</th>
+      <th>protein name</th>
+      <th>MW</th>
+      <th>pI</th>
+      <th>sequence coverage</th>
+      <th>Number of peptides</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>99</td>
+      <td>P84243</td>
+      <td>Histone H3.3*</td>
+      <td>15318</td>
+      <td>11.27</td>
+      <td>25.7</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>133</td>
+      <td>P84243</td>
+      <td>Histone H3.3</td>
+      <td>15318</td>
+      <td>11.27</td>
+      <td>25</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>78</td>
+      <td>P0C0S5</td>
+      <td>Histone H2A.Z</td>
+      <td>13545</td>
+      <td>10.58</td>
+      <td>14.1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>140</td>
+      <td>P84243</td>
+      <td>Histone H3.3</td>
+      <td>15318</td>
+      <td>11.27</td>
+      <td>22.1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>193</td>
+      <td>P84243</td>
+      <td>Histone H3.3</td>
+      <td>15318</td>
+      <td>11.27</td>
+      <td>27.2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>198</td>
+      <td>P84243</td>
+      <td>Histone H3.3</td>
+      <td>15318</td>
+      <td>11.27</td>
+      <td>27.2</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>317</td>
+      <td>P06702</td>
+      <td>Protein S100-A9</td>
+      <td>13234</td>
+      <td>5.71</td>
+      <td>70.2</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>486</td>
+      <td>P06702</td>
+      <td>Protein S100-A9</td>
+      <td>13234</td>
+      <td>5.71</td>
+      <td>81.6</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>483</td>
+      <td>P06702</td>
+      <td>Protein S100-A9</td>
+      <td>13234</td>
+      <td>5.71</td>
+      <td>82.5</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>57</td>
+      <td>P31949</td>
+      <td>Protein S100-A11</td>
+      <td>11733</td>
+      <td>6.56</td>
+      <td>9.5</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>344</td>
+      <td>P31949</td>
+      <td>Protein S100-A11</td>
+      <td>11733</td>
+      <td>6.56</td>
+      <td>45.7</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>343</td>
+      <td>P05109</td>
+      <td>Protein S100-A8</td>
+      <td>10828</td>
+      <td>6.51</td>
+      <td>37.6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>140</td>
+      <td>P05109</td>
+      <td>Protein S100-A8</td>
+      <td>10828</td>
+      <td>6.51</td>
+      <td>25.8</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>136</td>
+      <td>P25815</td>
+      <td>Protein S100-P</td>
+      <td>10393</td>
+      <td>4.75</td>
+      <td>35.8</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>48</td>
+      <td>P06703</td>
+      <td>Protein S100-A6</td>
+      <td>10173</td>
+      <td>5.33</td>
+      <td>16.7</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ N-terminal histone H3 cleavage sites identified by Edman degradation sequencing.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Spot #</th>
+      <th>Name</th>
+      <th>Round 1</th>
+      <th>Round 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Intact H3</td>
+      <td>ARTKQ</td>
+      <td>ARTKQ</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>CS1</td>
+      <td>NA</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>CS2</td>
+      <td>AARKS</td>
+      <td>AAAASTKRRR</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>CS3</td>
+      <td>TGGV</td>
+      <td>TGGVK*AAA</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>CS4</td>
+      <td>REIRR</td>
+      <td>REIRR*AL-EI</td>
+    </tr>
+  </tbody>
+</table>
+
+_NA: not analysable.*Confirmation of first round of identification._
+
+### Generation of a histone H3 cleavage site monoclonal antibody
 
 We adopted a similar strategy to Duncan et al., 2008 to raise antibodies against the cleaved site. We designed a lysine branched immunogen containing the five amino acids at the carboxylic side of the H3R49 cleavage site (outlined in Figure 3—figure supplement 1 and Table 3) and used it to immunize mice. After preliminary screening by ELISA against the immunogen and control peptides, we selected sera, and later hybridoma clones, that detected cleaved H3 in immunoblots of PMA stimulated cell lysates. We excluded sera and clones that detected full length histone H3 in addition to cleaved H3 (Figure 3A). We selected sera and clones that detected NETs but not resting chromatin of naive neutrophils by immunofluorescence microscopy. Of the six mice immunised, we obtained one stable clone, 3D9, that functioned in both Western blot and microscopy – other clones performed only in Western blot (data not shown). 3D9 recognised a protein of ~10 kDa in neutrophils stimulated with PMA for 120 min and longer but did not detect any protein in resting or early stimulated cells (Figure 3A). This band corresponded in size with the smallest H3 fragment detected by the H3 C-terminal antibody. Interestingly, by microscopy, 3D9 exclusively recognised neutrophils undergoing NETosis – with decondensing chromatin (Figure 3B). To test the binding of the antibody to the de novo N-terminal H3 epitope of NETs, we performed competition experiments with the immunising peptide. In contrast to a control peptide, saturation of 3D9 with the immunising peptide blocked binding to NETs as shown by immunofluorescent microscopy (Figure 3—figure supplement 2).
 
+**Table 3.**
+ List of immunisation, screening, and competition peptides.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Immunisation</td>
+      <td>H - REIRRK(RRIER)C - NH2 KLH conjugated</td>
+    </tr>
+    <tr>
+      <td>Screening</td>
+      <td>(+) H - REIRRK(RRIER)C - NH2(-) H - AARKSK(SKRAA)C - NH2*</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td>H - REIRRK(RRIER) - NH2 competition peptideH - TGGVKK(KVGGT) - NH2 negative control</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Alternative branched peptide used for screening.The N-terminal is represented by H (H2N) and the C-terminal is represented by NH2 (CONH2)._
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig3-v2.jpg)
+
+**Figure 3.:** (A) Immunoblots of lysates prepared from neutrophils stimulated with PMA (50 nM) for the times indicated in the figure. H3 C-terminal antibody was used as a control to detect all H3 forms while a single band (cleaved H3) was detected by the newly generated monoclonal antibody, 3D9. Source data can be found in Figure 3—source data 1. (B) Immunofluorescent microscopy of neutrophils stimulated with PMA and fixed at the indicated times. Samples were stained with Hoechst (DNA - blue) and 3D9 (with Alexafluor-568 conjugated secondary antibody - red). NS: non-stimulated. Images were taken on an upright fluorescent microscope at 20 x (Fluotar, numerical aperture 0.5). Scale bars – 50 µm (full field) and 10 µm (inset) (C) Direct ELISA for cleaved H3 in NETs, chromatin (A549 lung epithelial cells), recombinant histone H3 and DNA. Samples were serially diluted and immobilized on a high-affinity ELISA plate according to DNA content (for NETs, chromatin and DNA) or protein content (for recombinant histone H3) as determined by PicoGreen and bicinchoninic acid assays respectively. Starting concentration was 1 µg/ml DNA or protein. Cleaved H3 was detected using 3D9 (2 µg/ml) and HRP conjugated anti-mouse secondary antibody and reactions were developed using TMB (3,3',5,5'-tetramethylbenzidine) as a substrate. Data is presented for dilution 200 ng/ml. REIRR peptide control was coated at 20 ng/ml. Data represents mean ± SD of 3 experiments using independent NET donors. Source data can be found in Figure 3—source data 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** After selection of animals for hybridoma production, clone supernatants were screened similarly. Positive selection (+), negative selection (-). *Performed in the hybridoma screen only. ** Alternative branched peptide used for screening.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Immunofluorescent microscopy of neutrophils stimulated with PMA for 3 hr and stained with 3D9 (1 µg/ml) in the presence of competition and control peptides. Prior to staining, 3D9 was preincubated overnight at 4 °C with competition peptide (branched REIRR peptide) and negative control peptide (branched TGGVK peptide) at the indicated ratio of molar concentration. This experiment was performed twice with independent donors.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Neutrophils were seeded in 10 ml petri dishes and stimulated for 3 hr as indicated. Before total cell lysis and immunoprecipitation, NETs were digested with benzonase to liberate histones and octamers for antibody binding. (i) Coomassie stained gel of proteins immunoprecipitated by 3D9 or isotype control and the corresponding silver stained gel. The predicted cleaved H3 and intact H3 bands are indicated. HC-Ab: heavy chain of antibody, LC-Ab: light chain of antibody. (ii) Immunoblot for total H3 (C-terminal antibody) and cleaved H3 of the proteins immunoprecipitated by 3D9 or isotype control antibodies and Coomassie stained gel of samples run in parallel. Gels and blots are representative of three independent experiments. Source data can be found in Figure 3—figure supplement 3—source data 1.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Diluted serum (1 donor) and plasma (2 donors) were separated by SDS-PAGE in reducing and non reducing conditions (sample plus/minus 2 mM DTT). NETs and Non-stimulated neutrophils (NS) were used as positive and negative controls for immunoblotting with 3D9 and H3-C terminal antibodies (Ab). Source data can be found in Figure 3—figure supplement 4—source data 1 (B) 3D9 direct ELISA of plasma and serum. Plasma and serum were diluted 1 in 1000 and coated on an ELISA plate. Purified REIRR peptide (ng/ml) and purified NETs were used as positive controls. Samples were probed with 3D9 and or an isotype (iso) control antibody where indicated (n=1). Source data can be found in Figure 3—figure supplement 4—source data 2.
+
 3D9 binds specifically to cleaved H3. This antibody binds to the immunizing peptide and to isolated NETs, but not to equal concentrations of chromatin, recombinant H3 or purified calf thymus DNA, by direct ELISA (Figure 3C). Furthermore, in immunoprecipitation experiments, 3D9, but not an isotype control, pulled down intact H3 in lysates of naïve and activated neutrophils, but only the cleaved fragment from activated cells (Figure 3—figure supplement 3). We detected these pull downs both by Coomassie and silver stained gels. In a similar experiment, we immunoblotted the immunoprecipitate with the C-terminal antibody as well as 3D9 (Figure 3—figure supplement 3 [ii]) and showed that only our monoclonal antibody recognises cleaved H3. However, when we performed preliminary experiments to see if the antibody had the potential to work in blood samples, we observed a strong reaction of the antibody with a plasma protein(s), but not with serum-protein(s) as determined by direct ELISA and western blot (Figure 3—figure supplement 4). Therefore, 3D9 may not be suitable for direct detection of NETs in biological fluids that may contain plasma proteins. Together this data shows that 3D9 is selective for cleaved H3 under the denaturing conditions of SDS-PAGE but may also recognize full length H3 under the more native conditions of IP.
 
-## Epitope mapping
+### Epitope mapping
 
 To determine the binding site of 3D9 in histone H3, we tested the antibody by ELISA with overlapping linear peptide arrays and helical peptide mimic arrays based on a sequence (residues 30–70; PATGGVKKPHRYRPGTVALREIRRYQKSTELLIRKLPFQRL) around the H3R49 cleavage site (Figure 4—figure supplements 1 and 2). In epitope mapping, acetylation is commonly used during peptide synthesis to neutralize the positive charge of the terminal amine groups, making the peptide more closely resemble its native conformation, as part of a larger protein. However, as we were interested in a binding site formed as a consequence of proteolysis, we included both acetylated and non-acetylated arrays of peptides to allow for potential changes in the charge of the terminal amino acid that may contribute to antibody binding. Based on overlapping peptides, the putative core epitope in the linear array was (R)EIRR. The peptides ending in REIRR were in all cases in the top 2 of each peptide mimic (Table 4). Interestingly, peptides extended at the N-terminus were still recognized. Moreover, acetylation at the N-terminus of the peptide ending in the REIRR sequence did not affect the binding, suggesting that a free N-terminus may not be recognized by the antibody. We further refined the epitope mapping by amino acid replacement analysis of linear peptides and helical peptide mimetics ending in REIRR (Figure 4—figure supplement 3). Mutations in Glu51, Ile52, and Arg54 negatively impacted the signal, indicating these residues are critical for epitope recognition. A schematic of the antibody epitope mapped onto H3 is presented in Figure 4.
 
-## Automatic quantification of in vitro generated NETs by microscopy
+**Table 4.**
+ Summary of identified 3D9 binding regions in the peptide array.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>Type</th>
+      <th>Peak</th>
+      <th>Epitope candidate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3D9-1</td>
+      <td>LIN8</td>
+      <td>47–58</td>
+      <td>REIRRYQK</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>VALREIRR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>EIRRYQKS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>60–68</td>
+      <td>LLIRKLP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ELLIRKLP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LIN8 - Ac</td>
+      <td>47–60</td>
+      <td>VALREIRR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>REIRRYQK</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RRYQKSTE</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>EIRRYQKS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>LREIRRYQ</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>61–68</td>
+      <td>LLIRKLPF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LIN15</td>
+      <td>40–64</td>
+      <td>HRYRPGTVALREIRR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>REIRRYQKSTELLIR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>TVALREIRRYQKSTE</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1–33</td>
+      <td>RYQKSTELLIRKLPF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LIN15 - Ac</td>
+      <td>12–44</td>
+      <td>HRYRPGTVALREIRR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>REIRRYQKSTELLIR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>PGTVALREIRRYQKS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>VALREIRRYQKSTEL</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RPGTVALREIRRYQK</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>YRPGTVALREIRRYQ</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RYRPGTVALREIRRY</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>TVALREIRRYQKSTE</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ALREIRRYQKSTELL</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig4-v2.jpg)
+
+**Figure 4.:** Visualization of the putative core epitope for 3D9 mapped on to histone H3 ribbon structure. The observed core binding site of 3D9 to the peptide arrays was depicted on histone H3 (light brown) in the nucleosome complex structure (file 3AZG.pdb). Part of the peptide sequences used in the peptide arrays is coloured in yellow. The core epitope (R)EIRR is displayed in red, with the atoms of the critical residues (Glu51, Ile52, and Arg54) shown. Binding profiles of antibody to linear and helical arrays, in addition to amino acid replacement analysis are presented in Figure 4—figure supplements 1–3 and Table 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Antibodies 3D9 (red) and isotype control IgG,k (blue) were incubated on arrays with overlapping linear 8-mer (LIN8 – [i, ii]) and 15-mer (LIN15 – [iii, iv]) peptides and binding measured by ELISA. Separate arrays were used with peptides that were acetylated (ii, iv) or non-acetylated (i, iii) at the N-terminus. Signal intensities are plotted on the y axis and positions of the last residues of a peptide with respect to the target sequence is on the x axis. The antibodies were tested with the arrays 3 or more times. Peptides are listed in the source data file. Source data can be found in Figure 4—figure supplement 1—source data 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Antibodies 3D9 (red) and isotype control IgG,k (blue) were incubated on arrays with overlapping helical 9-mer (HEL9; [i, ii]) and 15-mer (HEL; [iii, iv]) peptides. Separate arrays were used with peptides that were acetylated (ii, iv) or non-acetylated (i, iii) at the N-terminus. Signal intensities are plotted on the y axis and positions of the last residues of a peptide with respect to the target sequence is on the x axis. The antibodies were tested with the arrays 3 times or more times. Peptides are listed in the source data file. Source data can be found in Figure 4—figure supplement 2—source data 1.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Linear (i) peptides were generated bearing single amino acid substitutions at each position of the native peptide sequence REIRRYQKSTELLIRK of histone H3. In addition, helical peptide mimics were made for the replacement analysis (ii). The peptides were left unacetylated to mimic the cleaved free N-terminus of the peptide. Antibody binding was analyzed at 0.5 μg/ml in PBST + 10% SQ (proprietary buffer). Values obtained for replacements are indicated by the letter code for each replacement residue plotted at the height of the recorded value at a given position. At the bottom of the plot the native sequence is indicated. The antibodies were tested with the arrays 3 times or more times. Red line indicates median value of the native peptide sequence data. Source data can be found in Figure 4—figure supplement 3—source data 1.
+
+### Automatic quantification of in vitro generated NETs by microscopy
 
 We tested how 3D9 stained NETs in immunofluorescence in samples that were robustly permeabilized (Triton X-100, 0.5% for 10 min) to facilitate the distribution of the antibody throughout the sample. We compared its staining to a control antibody commonly used in combination with neutrophil markers to detect NETs - PL2.3, an anti-chromatin antibody directed against a H2A-H2B-DNA epitope (Losman et al., 1992). PL2.3, in conjunction with staining for neutrophil granule proteins, is used to facilitate detection of NETs by immunofluorescent microscopy (Brinkmann et al., 2012). Figure 5A shows that 3D9 detects decondensed chromatin almost exclusively. In contrast, PL2.3 stains NETs in addition to condensed nuclei. We compared the staining characteristics of 3D9 and PL2.3 during NET formation. We determined the nuclear area and signal intensity at the indicated time points, from multiple fields of view (Figure 5B). Both antibodies detect the increase in nuclear area characteristic of NETosis between 15 and 180 min after simulation. At later time points, the intensity of PL2.3 staining decreased and failed to discriminate between resting cell nuclei and NETs. In contrast, 3D9 stained nuclei undergoing NETosis with greater intensity than nuclei of non-activated cells.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig5-v2.jpg)
+
+**Figure 5.:** (A) Confocal immunofluorescent microscopy of neutrophils stimulated with PMA (180 min) and stained with Hoechst and anti-chromatin antibody (PL2.3) or 3D9. Insets represent selected cells examined at higher magnification (63 x, Plan Apochromat, glycerol, numerical aperture 1.30) and presented as split channels in grayscale or merged as per the total field of view (20 x, Plan Apochromat, glycerol, numerical aperture 0.75). White scale bar - 50 µm, cyan scale bar - 10 µm. Images are representative of 3 experiments (B) Comparison of the fluorescent distribution of PL2.3 versus 3D9 staining of PMA stimulated cells over time (6 h). Staining intensities were normalized over all images of the respective time course. NS:360: non-stimulated at 360 min. Analysis is performed on one data set that is representative of 3–4 independent time course experiments. Source data can be found in Figure 5—source data 1 and Figure 5—source data 2. (C) Comparison of NET quantification using manual or automatic thresholding and segmentation procedures for chromatin antibody (PL2.3) and cleaved H3 antibody (or 3D9). Manual thresholding excludes cells/NETs with a weak signal whereas automatic thresholding includes all objects irrespective of signal. Images for analysis were taken using a upright fluorescent microscope. Graph represents the mean ± standard deviation, where n=3–5. Source data can be found in Figure 5—source data 3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Schematic of imaging, segmentation, thresholding and particle analysis for both automatic and semi-automatic NET quantification.
+
 Publicly available software (ImageJ) can be used to quantify in vitro NETosis. We compared 3D9 versus the anti-chromatin antibody with our previously published semi-automatic image analysis (Brinkmann et al., 2012) and with a modified automatic method (Figure 5—figure supplement 1). Both methods use automatic thresholding of the DNA channel (Hoechst) to count total cells/objects. The historical semi-automatic method exploits the differential staining by chromatin antibodies of decondensed chromatin (high signal) over compact chromatin (weak signal) to count cells in NETosis. This method uses a manual thresholding and segmentation procedure (denoted manual in the figure). This manual thresholding step is subject to observer bias. In contrast, the modified method uses automatic thresholding at both stages; total cell and NET counts. Both methods use a size exclusion particle analysis step so that only structures larger than a resting nucleus are counted. Both 3D9 and PL2.3 antibodies effectively quantified NETs using previously published method (Figure 5C - manual). However, PL2.3 failed to accurately quantify the number of NETs with the fully automatic method, specifically at early time points after stimulation (15 min). In this case, the weakly staining lobulated nucleus can extend over a larger surface area during cell activation and adhesion resulting in these cells being wrongly categorised as NETs by the algorithm. Together, this data suggests that the automatic method using 3D9 staining may reduce experimental bias.
 
-## 3D9 detects NETs induced by multiple stimuli
+### 3D9 detects NETs induced by multiple stimuli
 
 Histone H3 cleavage is a feature of the neutrophil response to multiple NET stimuli (Kenny et al., 2017). 3D9 detects NETs induced by the bacterial toxin nigericin, which induces NETs independently of NADPH oxidase activation (Kenny et al., 2017), by heme in TNF primed neutrophils (Knackstedt et al., 2019) and by the fungal pathogen Candida albicans (Figure 6). Interestingly, in C. albicans infections, we observed both 3D9 positive and negative NETs. To test 3D9 with immune complex induced NETs, we attempted to induce NETs with RNP/anti-RNP (ribonucleoprotein) complexes, however there was no induction of NETs in healthy neutrophils.
 
@@ -71,7 +565,7 @@ Histone H3 cleavage is a feature of the neutrophil response to multiple NET stim
 
 **Figure 6.:** Immunofluorescence microscopy of neutrophils left unstimulated (NS), stimulated with PMA (50 nM, 2.5 hr), nigericin (15 µM, 2.5 hr), TNF primed and then stimulated with heme (20 µM, 6 hr), and neutrophils co-cultured with Candida albicans hyphae (MOI 5) for 4 hr. Samples were stained with Hoechst, anti-neutrophil elastase (NE) and 3D9. Scale bar – 50 µm. Images were taken on a confocal microscope at 20 x (Plan Apochromat, glycerol, numerical aperture 0.75) and are representative of three experiments with independent donors. Scale bar - 20 µm.
 
-## 3D9 distinguishes NETs in mixed cell samples
+### 3D9 distinguishes NETs in mixed cell samples
 
 Histone H3 clipping, albeit at other sites in the N-terminal tail, was observed in mast cells (Melo et al., 2014) and unstimulated PBMC fractions (Howe and Gamble, 2015). Of note, PBMC fractions often contain contaminating neutrophils (Hacbarth and Kajdacsy-Balla, 1986). To test if 3D9 specifically stained neutrophils treated with NET stimuli, we incubated PBMCs with PMA or nigericin (Figure 7). Importantly, 3D9 detected only nuclei that appeared decondensed in cells that were positive for NE, a specific neutrophil marker. In contrast, the control chromatin antibody stained both neutrophils in NETosis (co-staining with anti-NE) and the nuclei of other cells (lacking NE). This shows that 3D9 detects NETs specifically even in the presence of other blood cells.
 
@@ -79,13 +573,53 @@ Histone H3 clipping, albeit at other sites in the N-terminal tail, was observed 
 
 **Figure 7.:** Immunofluorescence microscopy of non-purified peripheral blood mononuclear cell (PBMC) fractions treated with the NET stimuli, PMA (50 nM, 2.5 hr) or nigericin (15 µM, 2.5 hr), and then stained with Hoechst, anti-neutrophil elastase (NE) and 3D9 or PL2.3. Images were taken on an upright fluorescent microscope at ×20 magnification (Fluotar, numerical aperture 0.50). The selected images are representative of three independent experiments. Scale bar – 50 µm.
 
-## 3D9 distinguishes NETosis from apoptotic, necroptotic, and necrotic cell death in neutrophils
+### 3D9 distinguishes NETosis from apoptotic, necroptotic, and necrotic cell death in neutrophils
 
 Neutrophils can commit to other cell death pathways (recently reviewed by Dąbrowska et al., 2019) besides NETosis. Naïve neutrophils undergo apoptosis after overnight incubation (Kobayashi et al., 2005) and necroptosis upon TNFα stimulation in the presence of a SMAC (second mitochondria-derived activator of caspase) mimetic and if caspases are inhibited (Galluzzi et al., 2012). Interestingly, the control anti-chromatin antibody (Figure 8—figure supplement 1), but not 3D9, stained the condensed nuclei of cells undergoing apoptosis (Figure 8). Further staining of the apoptotic marker, cleaved caspase 3, and 3D9 (Figure 8—figure supplement 2), showed that apoptotic cells did not display cleaved H3R49. Neither antibody stained cells during necrosis induced by the staphylococcal toxin α-haemolysin nor after stimulation with necroptosis inducers.
 
-## 3D9 labels NETs in human tissue sections
+![Figure 8.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig8-v2.jpg)
+
+**Figure 8.:** Confocal immunofluorescent microscopy of neutrophils stimulated with different cell death stimuli and subsequently stained with Hoechst, anti-neutrophil elastase (NE) and 3D9. NETs were induced with PMA (100 nM, 3 hr). Apoptosis was induced in resting neutrophils by incubation for 24 hr without stimulation overnight. Neutrophils were stimulated with Z-VAD-FMK (50 µM) plus SMAC mimetic (100 nM) plus TNF (50 ng/ml) for 6 hr to induce necroptosis. Necrosis was induced with the pore forming toxin α-haemolysin (25 µg/ml). Images were taken at 20 x (Plan Apochromat 20 x, numerical aperture 0.75) and are representative of three experiments. Scalebar 20 µm. A comparison was made with parallel samples stained with the chromatin antibody PL2.3 and are presented in Figure 8—figure supplement 1. Apoptotic samples were also stained for apoptotic markers and cleaved H3 (Figure 8—figure supplement 2).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Confocal immunofluorescent microscopy of neutrophils stimulated with different cell death stimuli and subsequently stained with Hoechst, anti-neutrophil elastase (NE) and PL2.3. NETs were induced with PMA (100 nM, 3 hr). Apoptosis was induced in resting neutrophils by incubation for 24 hr without stimulation. Neutrophils were stimulated with Z-VAD-FMK (50 µM) plus SMAC mimetic (100 nM) plus TNF (50 ng/ml) for 6 hr to induce necroptosis. Necrosis was induced with the pore forming toxin α-haemolysin (25 µg/ml). Images were taken at 20 x (Plan Apochromat, numerical aperture 0.75) and are representative of 3 independent experiments. Scalebar 20 µm. A comparison was made with parallel samples stained with the cleaved histone antibody 3D9 and are presented in Figure 8.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Primary neutrophils were purified from whole blood and left unstimulated to allow spontaneous apoptosis. Samples were fixed and stained for DNA (Hoechst), cleaved caspase 3 (green) and cleaved histone 3 (3D9 – red). Samples were imaged by confocal microscopy at 63 x (Plan Apochromat, numerical aperture 1.30). Scale bar 9 µm.
+
+### 3D9 labels NETs in human tissue sections
 
 Neutrophils are recruited to sites of inflammation and, depending on the context or the surrounding stimuli, they may undergo varied forms of cell death. NETs are detected in inflamed tissues based on the juxtaposition of chromatin and granular markers. Citrullination of H3 is also used in NET detection, albeit more convincingly when co-stained with a neutrophil granule or cytoplasmic marker. 3D9 stains areas of decondensed DNA (Hoechst) that colocalise with NE in both inflamed human tonsil (Figure 9A) and kidney (Figure 9B). This indicates that 3D9 can label NETs in histological samples - hematoxylin and eosin (HE) tissue overviews are provided in Figure 9—figure supplement 1, Figure 10—figure supplement 1 and Figure 11—figure supplement 1. Indeed, in kidney (Figure 9C), inflamed appendix (Figure 10) and gallbladder (Figure 11), 3D9 labelled DNA in the same cluster as anti-H3cit or anti-H2B. Interestingly, 3D9 stained decondensed, more NET-like structures, while anti-H3cit or anti-H2B antibodies stained relatively compact chromatin. Furthermore, colocalization analysis of 3D9 with H2B or with H3cit revealed that 3D9 was more commonly colocalised with H2B as compared to H3cit; overlap coefficients 0.463 (3D9-H2B) v 0.125 (3D9-H3cit), and 0.533 (3D9-H2B) v 0.122 (3D9-H3cit) for Figure 10—figure supplement 1 and Figure 11—figure supplement 1 respectively. A time course experiment in primary neutrophils stimulated with PMA also showed very rare occurrence of double, H3cit and 3D9, positive cells (Figure 11—figure supplement 2).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig9-v2.jpg)
+
+**Figure 9.:** Paraffin embedded sections were stained with Hoechst, anti-NE and 3D9 or H3cit antibodies and examined by confocal microscopy at ×63 magnification (Plan Apochromat, glycerol, numerical aperture 1.30). Scale bar - 10 µm (A) human tonsil, denoted ‘normal’ by commercial provider but showing infiltration of neutrophils demonstrating an inflammatory event. (B) & (C) human kidney, denoted ‘inflammed’ by commercial provider.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** HE stained tissue overview of NETs represented in Figure 9B, C. Black box indicates area for further magnification in images (ii) and (iii). The red arrow indicates the location of the NET in the collecting duct. ‘a’ - glomerulus, ‘b’- tubule, ‘c’ - area of necrotic tubules and ‘*’ – area of infiltrating lymphocytes (inflammation). Dashed line in (iii) and (iv) indicates area of 3D9 (red) and H3cit (green) staining from Figure 9C.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig10-v2.jpg)
+
+**Figure 10.:** Paraffin embedded sections were stained with Hoechst, anti-NE and histone antibodies 3D9, H3cit and H2B and examined by confocal microscopy at ×63 magnification (Plan Apochromat, glycerol, numerical aperture 1.30). Scale bar – 20 µm.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** (A) HE stained overview of gallbladder stained for NETs in Figure 10. Magnification increases from (i)-(iii) and boxes represent the field of view of the next image. Red box indicates the area imaged by fluorescent confocal microscopy in Figure 9 (iv). ’a’ – lumen; ‘b’ – serosa (exterior); ‘*’ - area of infiltrating lymphocytes (inflammation). (B) Colocalisation analysis of 3D9 staining versus H2B staining and 3D9 versus H3cit. Analysis was performed using Volocity software and both the image analysed and associated scatter plot of pixel intensities are presented. PC = Pearsons Coefficient and OC (R)=overlap coefficient (R).
+
+![Figure 11.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig11-v2.jpg)
+
+**Figure 11.:** Paraffin embedded sections were stained with Hoechst, anti-NE and 3D9 or H3cit antibodies and examined by confocal microscopy at ×63 magnification (Plan Apochromat, glycerol, numerical aperture 1.30). Scale bar - 20 µm.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** (A) HE stained overview of appendix with appendicitis and peri-appendicitis stained for NETs in Figure 11. Magnification increases from (i)-(iii) and boxes represent the field of view of the next image. Red box indicates the area imaged by fluorescent confocal microscopy in Figure 11. NETs are indicated by arrows. a- appendix tip; b – lumen; c - associated inflamed tissue with peri-appendicitis. (B) Colocalisation analysis of 3D9 staining versus H2B staining and 3D9 versus H3cit. Analysis was performed using Volocity software and both the image analysed and associated scatter plot of pixel intensities are presented. PC = Pearsons Coefficient and OC (R)=overlap coefficient (R).
+
+![Figure 11—figure supplement 2.](https://cdn.elifesciences.org/articles/68283/elife-68283-fig11-figsupp2-v2.jpg)
+
+**Figure 11—figure supplement 2.:** Neutrophils were stimulated for 4 hr with PMA, fixed with paraformaldehyde and stained for cleaved H3R49 (3D9) and histone citrullination at R2, R8, and R17 (H3cit). Images were taken on an upright fluorescent microscope and quantified using Image J.
 
 ## Discussion
 
@@ -101,106 +635,333 @@ More broadly, and applying to the general principles of NET detection, it is not
 
 N-terminal histone cleavage at H3R49 is a novel and so far undescribed cleavage site in any eukaryotic organism. Unusually, it is located in the globular rather than the unstructured tail region of H3. H3R49 is one of 6 key residues important for the regulation of H3K36me3 and forms part of the structured nucleosome surface (Endo et al., 2012). Thus, we speculate that removal of the N-terminal tail, in its entirety, could lead to removal of higher order structure interactions and facilitate chromatin decondensation for example removal of H3K9me and its associated heterochromatin protein 1 interactions (Jacobs and Khorasanizadeh, 2002). To determine the contribution of histone cleavage at H3R49 to the process of chromatin decondensation, future work will focus on establishing the protease(s) responsible and the sequence of proteolytic events leading to this final truncation of H3 and NET formation. Given the specificity of this event and its restriction to NETotic forms of cell death, we propose that N-terminal cleavage at H3R49 is an example of histone ‘clipping’ in neutrophils – a term proposed by the histone/histone proteolysis field for specific histone cleavage sites for which a biological function has been demonstrated (Dhaenens et al., 2015).
 
-## Limitations of the study
+### Limitations of the study
 
 While this study has attempted to characterise 3D9 as tool to detect human NETs, it is limited by the range of NET inducing stimuli tested. In particular, we were unable to produce NETs in response to immune complexes and it will be important to examine the usefulness of 3D9 in future studies into aberrant NET production in the pathophysiology of autoimmune disease among others. Critically, its usefulness with patient serum samples will need to be demonstrated, bearing in mind the cross reaction with a plasma protein. While here we compared 3D9 staining to another NET detection method - NE and chromatin antibodies - in vitro, and included another NET surrogate marker - H3cit - in tissues, a more in depth cross-comparison between 3D9, H3cit and other NET staining methods will be needed to fully understand the NET landscape and usefulness of 3D9 for tissue samples going forward. Giving consideration to the caveats that have arisen for the use of H3cit, and that H3cit may not be detecting NETosis in all instances, it will be important to identify the protease responsible for cleavage at H3R49 and, in turn, examine chromatin and cell death responses in cells expressing this protease to help fully establish the specificity of H3R49 clipping in NETosis.
 
-## Conclusion
+### Conclusion
 
 This study represents the first identification of a distinctive and, so far, exclusive marker of NETs and describes the development and characterisation of a complementary antibody to facilitate easier detection of human NETs. Analogous to finding a smoking gun at a crime scene, the monoclonal antibody 3D9 detects evidence of the proteolytic events that occur in NETosis – the proteolytic signature, histone cleavage at H3R49. In doing so, 3D9 discriminates NETs from chromatin of other cells and chromatin of neutrophils that die via alternative mechanisms. This added layer of specificity will simplify the detection of NETs in tissue samples and facilitate comparison of quantitative studies between labs. This will be an important step in assessing the contribution of extracellular chromatin and NETs to disease pathology.
 
 ## Materials and methods
 
-## Reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>A549 human lung epithelial cells; A549</td>
+      <td>American Type Cell Collection</td>
+      <td>ATCC:CCL-185</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (bovine)</td>
+      <td>Calf thymus DNA; purified DNA</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-histone H3 C-terminal; anti-H3-C; αH3-C</td>
+      <td>Active Motif</td>
+      <td>Active Motif:61277</td>
+      <td>Western blot (1:15000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Histone H4 C-terminal; αH4-C</td>
+      <td>Abcam</td>
+      <td>Abcam:ab10158</td>
+      <td>Western blot (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-histone H4 N terminal</td>
+      <td>Upstate Millipore, Sigma Aldrich</td>
+      <td>SigmaAldrich:05–858</td>
+      <td>Western blot (1:30000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-GAPDH; GAPDH</td>
+      <td>Cell Signalling Technology</td>
+      <td>CST:2118</td>
+      <td>Western blot (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal 3D9; 3D9: mouse anti-cleaved histone 3 3D9</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Custom synthesis by Genscript.Western blot (1 µg/ml), immunofluorescence (1–2 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-histone H3 N-terminal; anti H3-N; αH3N</td>
+      <td>Active Motif</td>
+      <td>Active motif:61647</td>
+      <td>Western blot (1:15000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-H2A-H2B-DNA; PL2.3; anti-chromatin</td>
+      <td>PMID:1371530</td>
+      <td></td>
+      <td>Immunofluorescence (1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti neutrophil elastase; anti-NE; αNE</td>
+      <td>Calbiochem</td>
+      <td>Calbiochem 481001</td>
+      <td>Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-histone H3 (citrullinine R2+R8+R17); anti- H3cit</td>
+      <td>Abcam</td>
+      <td>Abcam:ab5103</td>
+      <td>Immunofluorescence (1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-histone H2B</td>
+      <td>abcam</td>
+      <td>Abcam:ab134211</td>
+      <td>Immunofluorescence (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal Sheep anti-ELANE: anti-NE</td>
+      <td>LSBio</td>
+      <td>LSBio:LS-B4244-50</td>
+      <td>Immunofluorescence (5 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-mouse Bridging antibody</td>
+      <td>Active Motif</td>
+      <td>Active motif:53017</td>
+      <td>(50 µg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal (1H7A8) IgG1, k, isotype control</td>
+      <td>Genscript</td>
+      <td></td>
+      <td>Provided by Genscript as an isotype control (1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human histone H3.1</td>
+      <td>New England Biolabs</td>
+      <td>NEB:M2503S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide H-REIRRK(RREIR)C-NH2; immunising peptide REIRR</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Custom synthesis by Eurogentec</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide H-AARKSK(SKRAA)C-NH2; negative screening peptide</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Custom synthesis by Eurogentec</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide H-REIRRK (RRIER_NH2; competition peptide)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Custom synthesis by Eurogentec</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide H-TGGVKK(KVGGT)-NH2; negative control peptide</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Custom synthesis by Eurogentec</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BD OptEIA TMB substrate reagent set</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_2869044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Picogreen Assay kit; Quant-iT PicoGreen dsDNA Assay Kits and dsDNA Reagents</td>
+      <td>Thermofisher Scientific</td>
+      <td>Thermofisher:P7589</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cytoxicity assay; CytoTox 96 Non-Radioactive Cytotoxicity assay</td>
+      <td>Promega</td>
+      <td>Promega:G1780</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst DNA stain (33342)</td>
+      <td>Invitrogen Molecular Probes</td>
+      <td>Invitrogen:H1399</td>
+      <td>Immunofluorescence 1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neutrophil elastase inhibitor GW311616A; NEi</td>
+      <td>Biomol</td>
+      <td>Biomol:Cay27957-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AEBSF hydrochloride; peflabloc</td>
+      <td>Millipore, Sigma Aldrich</td>
+      <td>Sigma Aldrich:124839</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cathepsin G inhibitor I; CGi</td>
+      <td>Calbiochem, Sigma Aldrich</td>
+      <td>Sigma Aldrich:219372</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji; Image J</td>
+      <td>https://doi.org/10.1038/nmeth.2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NETalyser</td>
+      <td>This paper</td>
+      <td></td>
+      <td>(Scripts deposited at https://github.com/tulduro/NETalyser)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Volocity</td>
+      <td>Perkin Elmer</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents
 
 All reagents were purchased from common vendors of laboratory reagents for example Sigma Aldrich or VWR Deutschland unless otherwise stated.
 
-## Blood collection and ethical approval
+### Blood collection and ethical approval
 
 Venous blood was collected from healthy donors who had provided informed consent according to the Declaration of Helsinki. Ethical approval was provided by the ethics committee of Charité-Universitätsmedizin Berlin and blood was donated anonymously at Charité Hospital Berlin.
 
-## Purification and culture of human peripheral blood neutrophils
+### Purification and culture of human peripheral blood neutrophils
 
 Neutrophils were isolated as described by Amulic et al., 2017. Briefly, venous whole blood was collected in EDTA and separated by layering over equal volume Histopaque 1119 and centrifugation at 800 g (20 min). The pinkish neutrophil rich fraction was collected and washed once by the addition of 3 volumes of wash buffer (PBS, without Mg2+ or Ca2+ [Gibco] supplemented with 0.5% [w/v] human serum albumin [HSA, Grifols]) and centrifugation at 300 g (10 min). The neutrophil fraction was further purified by density gradient centrifugation - Percoll (Pharmacia) gradient from 85% to 65% (v/v). Purified cells were collected from the 80% to 70% fractions and washed once before being resuspended in wash buffer. Cells were counted using a CASY cell counter.
 
 For all experiments, unless indicated, neutrophils were cultured RPMI (GIBCO 32404014) supplemented with 10 mM HEPES and 0.1% (w/v) HSA, which had been preequilibrated in CO2 conditions for 1 hr. For some stimuli, the HSA content was reduced to 0.05% or 0% HSA as indicated in the figure legends. Cells were routinely cultured at 37 °C, 5% CO2 unless indicated. For all experiments, stimuli were added to cell reactions as 10 X working stock solutions freshly diluted in RPMI. For inhibition experiments, a 10 X inhibitor stock and appropriate vehicle controls, were added to the cells and preincubated for the times stated in the figure legends.
 
-## Cytotoxicity assay
+### Cytotoxicity assay
 
 To assess any toxicity of inhibitors LDH release was assessed using the CytoTox 96 Non-Radioactive Cytotoxicity Assay (Promega), according to the manufacturer’s instructions. Neutrophils were seeded in RPMI in a 6 well plate with 1x105 cells/100 µl. Inhibitors were preincubated with cells for 30 min at 37 °C at concentrations indicated in the figures. Assay was performed in triplicate.
 
-## Reactive oxygen species assay
+### Reactive oxygen species assay
 
 Reactive oxygen species (ROS) production was measured using a luminol-HRP assay as described by Amulic et al., 2017. Additionally, as all stages of the assay were performed in atmospheric conditions, normal tissue culture media was replaced with a carbonate and phenol red-free RPMI supplemented as before (Seahorse XF RPMI Medium #103336–100, Agilent). Inhibitors were preincubated with cells for 30 min at 37 °C at concentrations indicated in the figures. Immediately before stimulation, luminol (50 μM) and HRP (1.2 U/ml) were added followed by 50 nM PMA. Luminesce measurements were taken every 30 s using a luminescence plate reader (VICTOR Light luminescence counter, Perkin Elmer) and expressed as Relative Light Units (RLU). Assay was performed in triplicate.
 
-## Neutrophil and NET lysate preparation
+### Neutrophil and NET lysate preparation
 
 To analyse proteins, lysates were prepared from stimulated or resting neutrophils. Cells were seeded in culture medium in 1.5 ml microcentrifuge tubes at 1x107 cells/ml with 5x106 cells per time point. After addition of the inhibitor or agonist, cells were gently mixed and incubated at 37 °C with gentle rotation. At the specified time points, protease inhibitors - 1 mM AEBSF, 20 µM Cathepsin G inhibitor I (Calbiochem), 20 µM neutrophil elastase inhibitor GW311616A (Biomol), 2 X Halt protease inhibitor cocktail (PIC, Thermofisher Scientific), 10 mM EDTA, 2 mM EGTA - were added directly to the cell suspension. Cells were gently mixed and centrifuged at 1000 g (30 s) to collect all residual liquid. Freshly boiled 5 X sample loading buffer (50 mM Tris-HCl pH 6.8, 2% [w/v] SDS, 10% glycerol, 0.1% [w/v] bromophenol blue, 100 mM DTT) was added to samples which were then briefly vortexed and boiled (98 °C) for 10 min with agitation and flash frozen in liquid nitrogen for storage at –80 °C.
 
-## 1D SDS-PAGE and immunoblot blot
+### 1D SDS-PAGE and immunoblot blot
 
 For routine protein analysis, samples were analysed by 1D SDS-PAGE and immunoblotted. Samples were thawed on ice, boiled at 98 °C (10 min) and sonicated to reduce viscosity (Braun sonicator, 10 s, cycle 7, power 70%). Proteins were applied to NuPAGE 12% gels (Invitrogen, Thermofisher) and run at 150 V in MES buffer (Thermofisher Scientific). Proteins were transferred by western blot onto PVDF (0.2 µm pore size, Amersham GE Healthcare) using the BioRad wet transfer system (buffer: 25 mM Tris, 192 mM glycine, 20% methanol, protocol: 30 min at 100 mA, 120 min at 400 mA). Blotting efficacy was assessed by Ponceau S staining. Blots were blocked with TBST (TBS pH 7.5, 0.1% [v/v] Tween-20) with 5% [w/v] skimmed milk, for 1 hr at RT. Blots were then incubated with the following primary antibodies overnight at 4 °C or for 2 hr at RT: rabbit anti-histone H3 C-terminal pAb, 1:15000 (Active motif #61277); rat anti-histone H3 N-terminal mAb, 1:1000 (Active Motif #61647, aa 1–19); Histone H4 C-terminal, 1:5000 (Abcam 10158 – aa 50 to C terminal); rabbit anti-histone H4 N-terminal mAb, 1:30,000 (Upstate, Millipore #05–858, aa17-28); rabbit GAPDH mAb, 1:5000 (Cell Signalling Technology, #2118); mouse 3D9 1 µg/ml (produced in this study) – all diluted in TBST with 3% (w/v) skimmed milk. After washing with TBST (3x5 min), blots were blocked for 15 min as before and then probed with secondary HRP conjugated antibodies (Jackson ImmunoResearch -diluted 1:20,000 in 5% skimmed milk TBST) for 1 hr at RT. Blots were washed in TBST (3x5 min) and developed using SuperSignal West Dura Extended Duration Substrate (ThermoFisher Scientific) and an ImageQuant Gel imager (GE Healthcare).
 
-## Immunofluorescent staining of in vitro samples
+### Immunofluorescent staining of in vitro samples
 
 For immunofluorescent imaging of purified cells, neutrophils/PBMCs were seeded in 24 well dishes containing glass coverslips, with 1x105 cells per well and incubated at 37 °C for 1 hr to allow to adhere to the coverslip. At this stage, inhibitors and priming factors were included as indicated. Reactions were stopped by the addition of paraformaldehyde (2% [w/v]) for 20 min at RT or 4 °C overnight. After fixation, cells were washed and stained as previously described (Brinkmann et al., 2012). Briefly, all steps were performed by floating inverted coverslips on drops of buffer on laboratory parafilm. Cells were permeabilised with PBS, pH 7.5, 0.5% (v/v) Triton X-100 for 3 min. For screening and quantification experiments, this permeabilization step was extended to 10 min. Samples were washed (3x5 min) with PBS, 0.05% (v/v) Tween 20 and incubated with blocking buffer - PBS pH 7.5, 0.05% (v/v) Tween 20, 3% (v/v) normal goat serum, 3% (w/v) freshwater fish gelatin, 1% (w/v) BSA - for 20 min at RT and then probed with primary antibodies diluted in blocking buffer and incubated overnight at 4 °C. Primary antibodies: anti-chromatin (H2A-H2B-DNA complex) mouse mAb PL2.3, 1 µg/ml Losman et al., 1992; neutrophil elastase, rabbit pAb 1:500 (Calbiochem); mouse serum for screening, 1:100; hybridoma supernatants, neat; 3D9 mouse mAb, 1 µg/ml. PL2.3 colocalisation with anti-NE was used as a control for NET detection in all in vitro experiments. Samples were then washed as before. Alexa labelled secondary antibodies (Invitrogen) were diluted 1/500 in blocking buffer and incubated for 2 hr at RT. DNA was stained with Hoescht 33342 (Invitrogen, Molecular Probes) 1 ug/ml, incubated with the secondary antibody step. Samples were washed in PBS followed by water and mounted in Mowiol mounting medium.
 
-## Histone extraction from neutrophils
+### Histone extraction from neutrophils
 
 Histone enriched fractions were prepared from resting neutrophils and NETs according to a method modified from Shechter et al., 2007. Neutrophils (4–8x107) were resuspended in 13 ml of RPMI (without HSA) in a 15 ml polypropylene tube and incubated on a roller at 37 °C with PMA 50 nM for 90 min. After stimulation, 1 mM AEBSF was added to inhibit further degradation by NSPs and cells were cooled on ice for 10 min. All subsequent steps were performed on ice or 4 °C where possible. Cells and NETs were pelleted by centrifugation at 1000 g, 10 min. Samples were resuspended in ice-cold hypotonic lysis buffer (10 mM Tris-HCl pH 8.0, 1 mM KCL, 1.5 mM MgCl2, 1 mM DTT supplemented with protease inhibitors just before use – 1 mM AEBSF, 20 µM NEi, 20 µM CGi, 2 X PIC, 10 mM EDTA) using 1 ml of buffer/5x106 cells. Cells were then incubated at 4 °C on a rotator for 30 min before being passed through a syringe to aid lysis and shearing of intact cells. Nuclei and NETs were collected by centrifugation at 10,000 g, 10 min, discarding the supernatant. To disrupt nuclei, samples were resuspended in dH2O (1 ml/1x107 cells) supplemented with protease inhibitors, as before, and incubated on ice for 5 min with intermittent vortexing. NP40 (0.2% [v/v]) was added to help lysis and disruption of NETs and samples were sonicated briefly (10 s, mode 7, power 70%). To extract histones, H2SO4 (0.4 N) was added to samples, and vortexed briefly. Samples were then incubated, rotating, for 2–3 h. Histone enriched fractions were collected by aliquoting samples into multiple 1.5 ml microcentrifuge tubes and centrifuging at 16,000 g for 10 min, followed by collection of the supernatants. To minimise further processing of histones, proteins were immediately precipitated overnight by dropwise addition of trichloroacetic acid to a final concentration of 33% followed by mixing. The next day precipitated proteins were pelleted by centrifugation at 16,000 g, 10 min. The supernatants were discarded and waxy pellets were washed once with equal volume ice-cold acetone with 0.2% (v/v) HCl and 5 times with ice-cold acetone alone. Pellets were allowed to air dry for 5 min before being resuspended with 1 ml (per 5x106 cells) of dH2O plus 1 mM AEBSF. For difficult to resuspend pellets the mixture was vigorously shaken at 4 °C overnight before samples were centrifuged, as before, to remove undissolved protein. Pooled supernatants for each sample were lyophilised and stored at –80 °C until histone fractionation.
 
-## Purification of histone H3
+### Purification of histone H3
 
 Histones were fractionated by RP-HPLC according to the method described by Shechter et al., 2007. After lyophilisation samples were resuspended in 300 µl Buffer A (5% acetonitrile, 0.1% trifluoroacetic acid) and centrifuged at 14,000 g to remove particulate matter. 150 µl of clarified sample was mixed with 40 µl Buffer A before being applied to a C18 column (#218TP53, Grave Vydac) and subjected to RP-HPLC (Waters 626 LC System, MA, US) as described by Shechter et al., 2007. The flow rate was set to 1 ml min–1 and fractions were collected at 30 s intervals from minute 30–55. All fractions were lyophilised and stored at –80 °C until analysis. To determine which fractions contained H3 and cleaved species, each fraction was dissolved in 50 µl dH2O and 5 µl was subjected to SDS-PAGE and either stained with Coomassie blue stain or transferred to PVDF and immunoblotted for H3 and H4 as described already.
 
-## Two-dimensional electrophoresis (2-DE) of purified histones
+### Two-dimensional electrophoresis (2-DE) of purified histones
 
 To determine the cleavage sites, H3 containing fractions were pooled and subjected to a small gel 2-DE procedure (Jungblut and Seifert, 1990). Briefly, pooled fractions were denatured in 9 M urea, 70 mM DTT, 2% Servalyte 2–4 and 2% Chaps. Samples (30 µl) were applied to 1.5-mm-thick isoelectric focusing (IEF) gels using ampholytes 7–9 and a shortened IEF protocol was used: 20 min 100 V, 20 min 200 V, 20 min 400 V, 15 min 600 V, 5 min 800 V, and 3 min 1000 V, (a total of 83 min and 500 Vh) in 8 cm long IEF tube gels. Separation in the second dimension was performed in 6.5 cm x 8.5 cm x 1.5 mm SDS-PAGE gels. Duplicate gels were prepared; one stained with Coomassie Brilliant Blue R250 for excision of spots for mass spectrometry identification; and the second transferred to PVDF as follows. Proteins were blotted onto PVDF blotting membranes (0.2 µm) with a semidry blotting procedure (Jungblut et al., 1990) in a blotting buffer of 100 mM borate. Spots were stained by Coomassie Brilliant Blue R250 and analysed by N-terminal Edman degradation sequencing (Proteome Factory, Berlin, Germany).
 
-## Mass spectrometry
+### Mass spectrometry
 
 Protein spots were excised from 2D gels and transferred to 0.5 ml Eppendorf tubes. Samples were destained in 500 μl of 200 mM ammoniumbicarbonate (ABC) in 50% acetonitrile (ACN) for 30 min at 37°C and equilibration in 200 μl of 50 mM ABC, 5% ACN for 30 min at 37°C. The samples were then dried at room temperature for 60 min. Protein digestion was performed overnight at 37 °C with 100 ng trypsin (spots 1, 3 ,7 with 200 ng) in 25 μl of 50 mM ABC, 5% ACN. The supernatants were transferred into new Eppendorf tubes and additional peptides were extracted by applying 25 μl of 60% ACN, 0.5% trifluoroacetic acid (TFA) for 10 min, followed by 25 μl of 100% ACN for 10 min. All supernatants were combined and dried in an Eppendorf Concentrator at 45 °C. After solubilization in 15 µl of 0.1% TFA, the peptides were desalted and concentrated with ZipTips and eluted with 1 µl alpha-cyano-4-hydroxycinnamic acid (5 mg/ml in 60% ACN, 0.3% TFA) onto the MALDI plate. Peptide mass fingerprints (PMF) and fragment spectra (MSMS) of the five most intense peaks were measured using a 4700 Proteomics Analyzer (AB Sciex). The database search was performed applying the Mascot MS/MS Ion Search function for searching the Swiss-Prot subset of human proteins. A peptide mass tolerance of 30 ppm and ± 0.3 Da for the fragment mass tolerance was allowed. One missed cleavage, oxidation of methionine, N-terminal acetylation of the protein, propionamide at cysteine residues and N-terminal pyroglutamic acid formation were defined as variable modifications. The following identification criteria were used: minimum 30% sequence coverage; or minimum 15% sequence coverage and one MS/MS confirmation; or sequence coverage below 15% and at least two MS/MS confirmations.
 
-## Antibody generation
+### Antibody generation
 
 Immunising and screening peptides are outlined in Table 3 and were synthesized by Eurogentec (Belgium). A portion was further conjugated to Key Lymphocyte Haemoglutinin (KLH) for immunization. Immunisation of mice, preliminary ELISA screening and production of hybridomas were performed by Genscript as follows. Six mice (3 x Balb/c and 3x C57/BL6) were immunized with branched peptides. Mice were bled and effective immunization was assessed using a direct ELISA. The ELISA and subsequent inhouse immunoblot and immunofluorescent microscopy screening strategy are outline in Figure 3—figure supplement 1. Following selection of effectively immunized animals, a further boost injection of the immunogen was given before isolation of spleen cells for hybridoma production. The resulting hybridoma supernatants were screened similarly. Large-scale culture of supernatants and purification of antibodies was performed by Genscript.
 
-## ELISA
+### ELISA
 
 To assess 3D9 specificity for NETs, 3D9 was used in an indirect ELISA to detect cleaved H3 in purified NETs, chromatin, recombinant H3 and DNA. NETs were prepared by seeding 3x106 neutrophils in a six-well dish and incubating for 3–6 hr with 100 nM PMA. NETs were gently washed 3 times with equal volume PBS, before being collected in 300 µl PBS. Clumped NETs were disrupted by sonicating briefly (3 s, mode 7, power 70% - Braun Sonicator) and then snap frozen and stored at –80 °C. Chromatin was prepared from lung epithelial cells (A549) as previously described by Shechter et al., 2007. The final nuclear pellet was resuspended in dH2O and sonicated as before and stored at –80 °C. The DNA content of NETs and chromatin was assessed by PicoGreen assay according to the manufacturer’s instructions (Thermofisher Scientific). Beginning at 1 µg/ml (of DNA content), serial dilutions of NETs, chromatin and calf thymus DNA (Invitrogen) were prepared in lo-DNA bind Eppendorf microcentrifuge tubes. A similar dilution series of recombinant histone H3 (New England Biolabs) was prepared starting at 1 µg/ml protein. All dilutions were performed in PBS. One hundred microliters of each sample, in duplicate, at dilutions 1 µg/ml to 1 ng/ml, was aliquoted in a Nunc Maxisorb 96 well dish and immobilised overnight at 4 °C, 250 rpm. The immunising peptide, REIRR (10 ng/ml) was used as a positive control. The following day all wells were washed 6 times with wash buffer (PBS, 0.05% Tween 20) and then blocked with 200 µl of blocking solution (1% BSA in wash buffer) for 2 hr (RT). Wells were washed once with wash buffer and incubated with 100 µl of 3D9 (2 µg/ml, in blocking solution) at RT (2 hr) with gentle shaking (250 rpm). Wells were washed 6 times as before and then incubated with 100 µl of secondary HRP conjugated anti-mouse (Jackson laboratories) at 1:100,000 dilution in blocking solution and incubated as before. Finally, wells were washed 6 times as before and HRP activity was detected using TMB (3,3', 5,5' tetramethylbenzidine) reagent (BD OptEIA) according to the manufacturer’s instructions (incubating for 15–30 min). The assay was stopped by the addition of 100 µl H2SO4 (0.16 M) and absorbance (450 nm) was measured on a 96-well plate reader (VERSAmax, Molecular Devices, CA, US).
 
 The same approach was used to examine 3D9 interactions with immobilised serum and plasma proteins. Plasma was isolated from whole blood collected with S. Monovette sodium citrate tubes (Sarstedt). Whole blood was centrifuged at low speed to minimise cell lysis (150 xg, 20 min with no brake). Prostaglandin E1 (1 µm) was added to inhibit platelet activation and samples were further centrifuged at 650 xg (8 min) to collect cell free plasma and further centrifuged at 2000 xg (10 min) before being aliquoted and stored at –80 °C. Serum was isolated by collection of whole blood in S. Monovette serum tubes (silicate clotting activator) and incubation with gentle rotation for 30 min at RT before centrifugation at 2000 xg at 4 °C (10 min) and collection of serum.
 
-## Immunoprecipitation (IP) of clipped histones
+### Immunoprecipitation (IP) of clipped histones
 
 Magnetic Protein G coupled beads (Invitrogen) were washed (x3) with equal volume PBS. For each IP sample 20 µl of beads were prepared. As 3D9 was a mouse IgG1, a bridging antibody (anti-mouse, Active motif #53017) was used to improve binding to protein G couple beads. Bridging antibody (50 µg) was incubated with 20 µl of magnetic beads for 1 hr at 4 °C with gentle inversion. Beads were washed twice with PBS. Beads were then incubated with 50 µg 3D9 or isotype control (IgG1, k - Genscript clone 1H7A8) for 3 hr at RT (with gentle rotation). Beads were washed x3 and resuspended in 2 ml of PBS in a 15 ml falcon tube. To permanently crosslink the antibodies, PFA fixation was used. 2 ml of 1% PFA (in PBS) was added to the beads and vortexed immediately for 1 min. The reaction was then quenched with 125 mM glycine (pH 8.0) and incubated on ice for 5 min. Beads were then washed x5 with IP lysis buffer (20 mM Tris, 150 mM NaCl, 1% Triton X-100, pH 7.5) and the blocked for 1 hr at RT with 1% BSA in IP lysis buffer. Beads were used immediately or stored overnight at 4 °C. The next day, neutrophils (1x107) were seeded in Petri dishes with 10 ml of medium, left unstimulated or stimulated with 100 nM PMA for 3 hr at 37 °C. After stimulation, cells/NETs were washed (x3) very gently with equal volume of PBS (plus 1 mM AEBSF). After the last wash NETs were digested in 1 ml of Benzonase buffer (20 mM Tris-HCl, pH 7.6, 2 mM MgCl2, 1 mM CaCl2) with 250 U benzonase (Sigma E1014) and 1 mM AEBSF, 20 µM NEi and CGi for 30 min at 37 °C, with intermittent rocking to distribute the buffer. The reaction was stopped with the addition of 4 mM EDTA and 4 mM EGTA. Cells were further lysed with the addition of 300 µl of 5 X IP lysis buffer (plus 5 X protease inhibitors). Dishes were incubated on ice for 10 min. Cells and NETs were then collected by scraping into an Eppendorf tube. For multiple dishes at the same time point and stimulation, the samples were pooled and divided for the IP step which was performed immediately. For each IP, lysate from 1x107 cells was used with 15 µl of coupled beads and incubated overnight at 4 °C with gentle rotation. The next day beads were washed 5 times with IP lysis buffer plus inhibitors. After the final wash beads were resuspended in 30 µl 1 X SDS-PAGE sample loading buffer. Samples were analysed by SDS-PAGE and stained or immunoblotted as indicated. Coomassie Instant blue stain or Thermofisher silver staining kit were used according to the manufacturer’s instructions.
 
-## Peptide competition assay
+### Peptide competition assay
 
 Neutrophils were seeded on coverslips in a 24 well dish (1x105 cells/well) and stimulated with PMA for 3 hr and fixed with 2% PFA. Prior to staining, 3D9 (2 µg/ml = ~12.9 nM) was preincubated overnight with rotation at 4 °C in PBS with 0.01–200 X fold molar excess of branched REIRR peptide. TGGVK branched peptide was used as negative control. The next day competed antibody-peptide solutions were diluted 1:1 with blocking buffer and the immunostaining procedure was followed as before. Peptide competition was assessed visually by fluorescent microscopy.
 
-## Epitope mapping
+### Epitope mapping
 
 Antibody binding to human H3 was assessed by a combination of linear, conformational and amino acid replacement analysis epitope mapping with peptide synthesis and ELISA assays performed by Pepscan Presto B.V. (Leiden, The Netherlands). To reconstruct epitopes of the target molecule (H3 residues 30–70 - PATGGVKKPHRYRPGTVALREIRRYQKSTELLIRKLPFQRL) a library of peptide-based peptide mimics (Figure 4—figure supplement 1—source data 1) was synthesized using Fmoc-based solid-phase peptide synthesis. An amino functionalized polypropylene support was obtained by grafting with a proprietary hydrophilic polymer formulation, followed by reaction with t-butyloxycarbonyl-hexamethylenediamine (BocHMDA) using dicyclohexylcarbodiimide (DCC) with N-hydroxybenzotriazole (HOBt) and subsequent cleavage of the Boc-groups using trifluoroacetic acid (TFA). Standard Fmoc-peptide synthesis was used to synthesize peptides on the amino-functionalized solid support by custom modified JANUS liquid handling stations (Perkin Elmer). Synthesis of structural mimics (conformational analysis) was done using Pepscan’s proprietary Chemically Linked Peptides on Scaffolds (CLIPS) technology. The binding of antibody to each of the synthesized peptides was tested in a Pepscan-based ELISA. The peptide arrays were incubated with primary antibody (3D9 or isotype control) at 0.02 µg/ml for linear and conformational analysis and 0.5 µg/ml for amino acid replacement analysis (overnight at 4 °C). After washing, the peptide arrays were incubated with a 1/1000 dilution of rabbit anti-mouse IgG(H+L) HRP conjugate (Southern Biotech, Birmingham, AL, USA) for one hour at 25 °C. After washing, the peroxidase substrate 2,2’-azino-di-3- ethylbenzthiazoline sulfonate (ABTS) and 20 μl/ml of 3% H2O2 were added. After one hour, the colour development was quantified using a charge coupled device (CCD) - camera and an image processing system. The values obtained from the CCD camera ranged from 0 to 3000 mAU, similar to a standard 96-well plate ELISA-reader. The results were quantified and stored in the Peplab database. To verify the quality of the synthesized peptides, a separate set of positive and negative control peptides was synthesized in parallel. These were screened with commercial antibodies 3C9 and 57 (Posthumus et al., 1990).
 
 To evaluate the binding and determine the core epitope, screenings were optimized for concentration and blocking conditions for each sample until clear signals over background values were observed. Peaks were defined as at least in the third quartile for the specific peptide mimic values. In addition, a binding event was only noted if multiple overlapping peaks were present within the binding region. To determine a core epitope, peptides within 40% of the main peak intensity were evaluated.
 
-## Quantification of staining characteristics by Image J and R
+### Quantification of staining characteristics by Image J and R
 
 In order to assess staining characteristics of antibodies during NET formation we developed a bundle of Image J and R scripts. These scripts allow for an automated workflow starting from 2-channel microscopic images of an experimental series (DNA stain, antibody stain), to a graphical representation and classification of individual cells and eventually to mapping these classifications back to the original images as a graphical overlay. In the first step, nuclei are segmented based on intensity thresholding (either programmatic or manual), including options for lower and upper size selection limits. The same threshold is applied to the entire experimental series and the upper size limit is used to exclude fused structures that cannot be assigned individual cells. A quality score is assigned to every image based on the fraction of the total DNA stained area that can be assigned to individual cells (or NETs). This score along with all other parameters of the analysis is exported as report file and can be used to automatically exclude images from the analysis. In addition, this part of the script generates a result file that includes the area, circumference (as x,y coordinates) and cumulative intensities for each channel for every detected nucleus along with information such as time point or stimulus that can be assigned programmatically. In order to analyse these data sets, we implemented a series of functions in R. These functions include import of Image J result files, classification of cells based on nuclear area and staining intensity, various plot and data export functions, as well mapping functions that allow to display the classification of nuclei as color coded circumferences overlaid on the original images. The scripts are available for download at https://github.com/tulduro/NETalyser; copy archived at swh:1:rev:3de3df622e7c4b8622273355b4a6176aa0157db3, Tilley, 2021.
 
-## Quantification of NETs by Image J
+### Quantification of NETs by Image J
 
 NETs were quantified by the semi-automatic method described by Brinkmann et al., 2012 and via a second modified method that allowed automatic quantification. All microscopy image datasets were processed by both methods to allow comparison. Hoechst was used to stain total DNA and NETs were additionally stained with anti-chromatin (PL2.3) or 3D9 antibodies (1 µg/ml) and Alexa-568 coupled secondary antibody according to the previous section. Images were acquired with a Leica DMR upright fluorescence microscope equipped with a Jenoptic B/W digital microscope camera and 10 x (numerical aperture 0.30) or 20 x (numerical aperture 0.50) objective lens. For each experiment, the same exposure settings were used for all samples and a minimum of 3 random fields of view (FOV) were collected. Images were analysed using ImageJ/FIJI software. As described by Brinkmann et al., 2012, each channel was imported as an image sequence and converted into a stack. To count total cells/NETs per FOV, the Hoechst channel stack was imported and segmented using the automatic thresholding function (Bernsen method) with radius 15 and parameter 1 set to 35 to produce a black and white thresholded image. Particle analysis was then performed to count all objects the size of a cell nucleus or bigger (10 x objective: particle size 25-infinity; 20 x objective: particle size 100-infinity) and to exclude background staining artefacts. Total NETs were then counted using the anti-chromatin (PL2.3) or 3D9 channels accordingly. For the method published in 2012, anti-chromatin stains were segmented using manually adjusted thresholding so that the less intense staining of resting cell nuclei was excluded. Particle analysis was then performed to count all objects larger than a resting cell nucleus (10 x objective: particle size 75-infinity; 20 x objective: particle size 250-infinity). This was also performed for 3D9. In contrast, in the second analysis, the workflow was modified so that the automatic Bernsen thresholding and segmentation were used for both Hoechst and NET channels, total cells and NETs respectively. For each method percentage NETs were calculated as (NETs/Total cells) x100. Results per FOV were then averaged according to sample. A schematic of the different workflows is presented in Figure 5—figure supplement 1.
 
-## Immunofluorescent staining of histological samples from tissue sections
+### Immunofluorescent staining of histological samples from tissue sections
 
 Paraffin sections (2 µm thick) were deparaffinized in two changes of 100% xylene for 5 min each and then rehydrated in two changes of 100% ethanol for 5 min each and followed by 90% and 70% ethanol for 5 min each. Sections were washed with 3 changes of deionized water and incubation in TBS (Tris buffered saline). For antigen retrieval, Target Retrieval Solution (TRS pH9) (Dako S2367) was used to incubate the slides in a steam cooker (Braun) for 20 min. After cooling down to room temperature in antigen retrieval buffer, slides were rinsed 3 x in deionized water and incubated in TBS until further processing. Slides were blocked with blocking buffer (1% BSA, 5% normal donkey serum, 5% cold water fish gelatin and 0.05% Tween20 in TBS, pH7.4) for 30 min. Blocking buffer was removed, and sections were incubated with primary antibodies at appropriate dilution in blocking buffer (containing 0.05% Triton-X100) overnight at RT. Sections were rinsed in TBS and then incubated with secondary antibody at an appropriate concentration (1:100) for 45 min in the dark at RT and then rinsed three times in TBS for 5 min followed by rinsing with deionized water. Slides were incubated with DNA stain Hoechst 33342 (1:5000) for 5 min, rinsed with water before mounting with Mowiol. Primary antibodies for detection of NETs were as follows: mouse anti-cleaved histone 3 clone 3D9 (2 µg/ml); rabbit anti-histone H3 antibody (citrulline R2+R8+R17; ab5103, Abcam); chicken anti-Histone H2B ab134211 Abcam (1:400); sheep anti-ELANE (NE) LS-Bio LSB 4244 Lot 75251. Secondary antibodies were the following: donkey anti-rabbit immunoglobulin G (IgG) heavy and light chain (H&L) Alexa Fluor 488 (Jackson 711-225-152); and donkey anti-mouse IgG H&L Cy3 (Jackson 715-165-151); donkey anti-sheep (IgG) H&L Alexa Fluor 647 (Jackson 713-605-147). An upright widefield microscope (Leica DMR) equipped with a JENOPTIK B/W digital microscope camera or a Leica confocal microscope SP8 were used for fluorescent imaging. Z-stack images were collected at 63×magnification (Plan Apochromat 63 x/0.75). Where stated colocalisation analysis was performed on confocal images using Volocity 6.5.1 software. Human tonsil (denoted normal but showing neutrophil infiltration) and inflamed kidney paraffin tissue blocks were purchased from AMSbio. Inflamed tissue from a gallbladder and appendix was obtained from archived leftover paraffin embedded diagnostic appendicitis samples and used in an anonymised way after approval through the Charité Ethics Committee (Project EA4/124/19, July 24, 2019). Informed consent from patients for use of biomaterials for research was obtained as part of the institutional treatment contract at Charité.
 
-## Statistics
+### Statistics
 
 All experiments were repeated three times unless stated differently in the figure legend. Experimental repeats are biological replicates, where each replicate represents cells isolated from a different donor. All graphs were prepared in GraphPad Prism and are either representative traces or mean ± standard deviation as stated in the figure legend. Graphs for epitope mapping were produced by Pepscan using proprietary software.
 
-## Contributions
+### Contributions
 
 DOT- Conceptualization, methodology, investigation, data curation, figure preparation, writing original draft, review and editing; UZA - 2-DE, blotting and sample preparation for protein sequencing; UA -preparation of human pathology tissue samples and microscopy of tissue samples, image curation; MS - MALDI mass spectrometry; SF - provision and description of human pathology tissues and advice on histology figure presentation; PRJ - proteomic and 2-DE analysis; VB - colocalisation analysis, image curation, reviewing and critical feedback on manuscript; AH - conceptualization, data curation for R analysis, R scripting; AZ- conceptualization, reviewing and editing of manuscript; AZ and AH provided critical feedback to DOT and helped shape the research, analysis and manuscript.

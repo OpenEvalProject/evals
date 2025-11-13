@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.41044.001 Regular exercise has widespread health benefits. Fundamental to these beneficial effects is the ability of the heart to intermittently and substantially increase its performance without incurring damage, but the underlying homeostatic mechanisms are unclear. We identify the ROS-generating NADPH oxidase-4 (Nox4) as an essential regulator of exercise performance in mice. Myocardial Nox4 levels increase during acute exercise and trigger activation of the transcription factor Nrf2, with the induction of multiple endogenous antioxidants. Cardiomyocyte-specific Nox4-deficient (csNox4KO) mice display a loss of exercise-induced Nrf2 activation, cardiac oxidative stress and reduced exercise performance. Cardiomyocyte-specific Nrf2-deficient (csNrf2KO) mice exhibit similar compromised exercise capacity, with mitochondrial and cardiac dysfunction. Supplementation with an Nrf2 activator or a mitochondria-targeted antioxidant effectively restores cardiac performance and exercise capacity in csNox4KO and csNrf2KO mice respectively. The Nox4/Nrf2 axis therefore drives a hormetic response that is required for optimal cardiac mitochondrial and contractile function during physiological exercise.
+Regular exercise has widespread health benefits. Fundamental to these beneficial effects is the ability of the heart to intermittently and substantially increase its performance without incurring damage, but the underlying homeostatic mechanisms are unclear. We identify the ROS-generating NADPH oxidase-4 (Nox4) as an essential regulator of exercise performance in mice. Myocardial Nox4 levels increase during acute exercise and trigger activation of the transcription factor Nrf2, with the induction of multiple endogenous antioxidants. Cardiomyocyte-specific Nox4-deficient (csNox4KO) mice display a loss of exercise-induced Nrf2 activation, cardiac oxidative stress and reduced exercise performance. Cardiomyocyte-specific Nrf2-deficient (csNrf2KO) mice exhibit similar compromised exercise capacity, with mitochondrial and cardiac dysfunction. Supplementation with an Nrf2 activator or a mitochondria-targeted antioxidant effectively restores cardiac performance and exercise capacity in csNox4KO and csNrf2KO mice respectively. The Nox4/Nrf2 axis therefore drives a hormetic response that is required for optimal cardiac mitochondrial and contractile function during physiological exercise.
 
 ## Introduction
 
@@ -43,37 +43,89 @@ Here, we report that cardiomyocyte Nox4 is an essential mediator of the physiolo
 
 ## Results
 
-## Nox4 is required for a physiological exercise response
+### Nox4 is required for a physiological exercise response
 
 It was previously shown that Nox4 mRNA and protein levels are low in the adult mouse heart but are upregulated by chronic hemodynamic overload (Zhang et al., 2010). We first analysed whether myocardial Nox4 levels change in response to physiological exercise. In mice subjected to 2 bouts of 1500 m moderate intensity treadmill exercise on consecutive days, there was a significant increase in myocardial Nox4 mRNA and protein levels as compared to sedentary mice (Figure 1A and Figure 1—figure supplement 1A). No change was observed in the expression levels of Nox2, the other main Nox isoform that is expressed in the heart (Figure 1—figure supplement 2A) or in Nox2 activation as assessed by the membrane translocation of its essential regulatory subunit, p47phox, after physiological exercise (Figure 1—figure supplement 2B). We next conducted a maximal exercise capacity test in which Nox4-null mice and matched wild-type littermates were run to exhaustion on day 3. This test revealed that Nox4-null mice had a maximal running distance that was ~60% of that in wild-type controls and a maximal running time that was ~65% of that in controls (Figure 1B). These results indicate that Nox4 has an essential role in facilitating acute exercise in healthy mice.
 
-## Nox4 mediates exercise-induced activation of Nrf2 in the heart
+![Figure 1.](https://cdn.elifesciences.org/articles/41044/elife-41044-fig1-v2.jpg)
+
+**Figure 1.:** (A) Changes in myocardial Nox4 mRNA and protein levels after acute moderate exercise (Ex) compared to sedentary controls (Sed). *p<0.05, **p<0.01, 2-tailed t-test (n = 4–6/group). (B) Exercise capacity of Nox4-null mice (Nox4KO) and littermate wild-types (WT) measured by maximal running distance and running time. **p<0.01, 2-tailed t-test (n = 5–8/group). (C) Ratio of glutathione/glutathione disulfide (GSH/GSSG) in Nox4KO and WT mouse hearts before (Sed) and after exercise (Ex). n = 6–9/group. (D) Protein levels of 4-hydroxynonenal (4-HNE) adducts in the heart. n = 3–4/group. (E and F) Protein and mRNA levels of major Nrf2 targets. n = 3–6/group *p<0.05, **p<0.01 vs respective sedentary controls (Sed); #p<0.05, ##p<0.01 vs WT/Ex, 1-way ANOVA followed by Tukey post hoc analysis. CAT: catalase, GSTA2: glutathione S-transferase A2, GCLC: glutamate cysteine ligase catalytic subunit, TXNRD1: thioredoxin reductase 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41044/elife-41044-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/41044/elife-41044-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Protein levels of total Nox2 (A) and p47phox in membrane fraction (B) in normal mouse hearts after acute exercise (Ex). GAPDH and cadherin were used as cytosolic and membrane protein marker respectively. Sed: sedentary control, T: total heart tissue lysate, Mem: membrane fraction, Cyt: cytosolic protein. n.s: no significance. n = 3/group.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/41044/elife-41044-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Protein levels of Nrf2 and its main targets in the hearts of Nox4KO and WT mice before (Sed) and after exercise (Ex). *p<0.05, **p<0.01 vs respective sedentary control. #p<0.05, ##p<0.01 vs WT/Ex, 1-way ANOVA followed by Tukey post hoc analysis (n = 4–6/group). GSTA2: glutathione S-transferase A2, GCLC: glutamate cysteine ligase catalytic subunit.
+
+### Nox4 mediates exercise-induced activation of Nrf2 in the heart
 
 To investigate potential mechanisms underlying the lower exercise capacity in Nox4-null mice, we first assessed exercise-induced changes in myocardial redox state. The ratio of glutathione/glutathione disulfide (GSH/GSSG), a sensitive marker of cellular redox state, was significantly lower after treadmill running in Nox4-null compared to sedentary mouse hearts (Figure 1C). Consistent with a more oxidized cellular environment, the levels of 4-hydroxynonenal (4-HNE) adducts as a marker of lipid peroxidation due to oxidative stress were significantly increased in the myocardium of Nox4-null mice after exercise (Figure 1D and Figure 1—figure supplement 1B). These results suggest that the loss of exercise-induced increase in Nox4 levels results in elevated oxidative stress in the heart after acute exercise.
 
 Since Nrf2 is an important regulator of exercise-induced redox adaptations (Done and Traustadóttir, 2016), we assessed whether the absence of Nox4 affects Nrf2 levels during acute exercise. Myocardial Nrf2 protein levels were significantly elevated after acute exercise in wild-type mice but this response was absent in Nox4-null mice (Figure 1E and Figure 1—figure supplement 1C and Figure 1—figure supplement 3). In parallel with the rise in Nrf2, wild-type mouse hearts showed increases in transcript levels of the major Nrf2 target genes Cat, Gsta2, Gclc and Txnrd1 (Figure 1F), as well as increases at protein level (Figure 1E and Figure 1—figure supplement 1C and Figure 1—figure supplement 3). However, there was no increase in levels of these antioxidant defence proteins after exercise in Nox4-null mice (Figure 1E and Figure 1—figure supplement 1C and Figure 1—figure supplement 3). No differences were observed between wild-type and Nox4-null mouse hearts at baseline. Therefore, physiological exercise-induced activation of the Nrf2 pathway in the heart appears to be dependent on endogenous Nox4.
 
-## Cardiac Nox4 deficiency impairs heart function and exercise capacity due to lack of Nrf2 activation
+### Cardiac Nox4 deficiency impairs heart function and exercise capacity due to lack of Nrf2 activation
 
 To exclude potential systemic effects of global Nox4 deficiency and to specifically establish the functional role of cardiomyocyte Nox4 during exercise, we next studied inducible cardiomyocyte-specific Nox4 knockout (csNox4KO) mice (Zhang et al., 2018). csNox4KO mice were compared to Cre-negative Flox control mice. Similar to Nox4-null mice, the csNox4KO animals failed to display an increase in Nrf2 target genes upon exercise (Figure 2A), consistent with a lack of Nrf2 activation. There was no difference between csNox4KO mice and matched control mice in the absence of exercise. The csNox4KO mice achieved a significantly shorter running distance and exercise time than matched controls during an exercise capacity test (Figure 2B), with the magnitude of defect being very similar to that observed in global Nox4-null mice. We assessed cardiac contractile function by echocardiography in conscious mice, immediately upon cessation of the exercise capacity test. While the left ventricular fractional shortening (FS) increased by 24% in the control group at peak exercise, there was a 6% decrease in FS in the csNox4KO group (Figure 2C). The increase in FS in control animals was driven by a decrease in end-systolic dimension, indicative of increased contractility, which was absent in csNox4KO mice whereas there was no difference in the heart rate response between groups (Figure 2—figure supplement 1A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/41044/elife-41044-fig2-v2.jpg)
+
+**Figure 2.:** (A) Expression of Nrf2-related genes in hearts of cardiomyocyte-specific Nox4KO (csNox4KO) and littermate controls after exercise (Ex). n = 3–4/group. **p<0.01 vs respective sedentary controls (Sed); #p<0.05, ##p<0.01 vs Control/Ex. (B) Maximal exercise distance and time. n = 3–5/group. *p<0.05 vs Control/Ex; #p<0.05, ##p<0.01 vs csNox4KO/Ex, 1-way ANOVA followed by Tukey post hoc analysis. (C) Fractional shortening (FS) evaluated by conscious echocardiography in control and csNox4KO mice immediately after the exercise capacity test. Some animals were treated with sulforaphane (SFN) prior to exercise. n = 4–12/group. **p<0.01 vs Sed; ##p<0.01 vs Control/Ex, 2-way ANOVA followed by Tukey post hoc analysis. Cat: catalase, Gsta2: glutathione S-transferase A2, Gclc: glutamate cysteine ligase catalytic subunit, Txnrd1: thioredoxin reductase 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41044/elife-41044-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Cardiac function was evaluated by awake echocardiography prior to (sedentary, Sed) and after the exercise capacity test (Ex). Some animals were treated with sulforafane (SFN). Mean data of heart rate (HR), left ventricular end-systolic dimension (LVESD) and left ventricular end-diastolic dimension (LVEDD) (A to C). *p<0.05, **p<0.01 vs respective sedentary controls, ##p<0.01 vs Control/Ex, 2-way ANOVA followed by Tukey post hoc analysis (n = 4–12/group).
+
 To assess whether the defect in cardiac performance and exercise capacity in csNox4KO mice is related to the absence of Nrf2 activation, we treated both csNox4KO and control animals with an Nrf2 activator, sulforaphane, administered for 2 days prior to the exercise capacity test. The treatment with sulforaphane fully restored the exercise-induced increase in cardiac performance and maximal exercise capacity in csNox4KO mice (Figure 2, B and C, and Figure 2—figure supplement 1, B and C). Taken together, these results suggest that cardiomyocyte Nox4-dependent activation of Nrf2 is essential for the normal physiological increase in cardiac performance during acute exercise, which is required to achieve maximal exercise capacity.
 
-## Cardiomyocyte Nrf2 is required for optimal increments in heart performance during exercise
+### Cardiomyocyte Nrf2 is required for optimal increments in heart performance during exercise
 
 To more directly define the role of cardiac Nrf2 in the physiological response to exercise, we generated a new mouse line with a cardiomyocyte-specific deletion of Nrf2 (csNrf2KO mice, Figure 3, A and B). The csNrf2KO mice showed a significant cardiac-specific decrease in Nrf2 mRNA levels in the heart with no change in other organs (Figure 3, C and Figure 3—figure supplement 1B). There was an approximately 60% reduction in Nrf2 protein in the heart (Figure 3D and Figure 3—figure supplement 1A), with the residual levels in csNrf2KO mice probably attributable to expression in non-myocytes. There were no differences in baseline cardiac size or function between csNrf2KO mice and control Nrf2fl/fl littermates (Figure 3—figure supplement 2). Myocardial levels of Nox4 were similar in csNrf2KO mice and control littermates at baseline and increased to a similar extent in both genotypes after acute exercise (Figure 3E), confirming that Nox4 lies upstream of Nrf2. However, when the two groups were subjected to a maximal exercise capacity test, the csNrf2KO mice exhibited a significant impairment of cardiac function (Figure 3F) and a reduced running distance and time as compared to control littermates (Figure 4, D and E). These results indicate a critical role of cardiomyocyte Nrf2 in facilitating an optimal cardiac functional response to acute exercise.
 
-## Mitochondrial function is impaired in csNrf2KO mice after exercise
+![Figure 3.](https://cdn.elifesciences.org/articles/41044/elife-41044-fig3-v2.jpg)
+
+**Figure 3.:** (A) Targeting strategy for generation of Nrf2fl/fl mice (Flox). The endogenous Nrf2 locus is shown at the top and the targeting vector at the bottom. Exons 2–5 were flanked by LoxP sites which are represented by blue triangles; FRT (Neo) and F3 (Puro) sites are shown by double red triangles. Cre-mediated recombination deletes a 5.5 kb fragment including most of the open-reading frame and the 3’UTR. (B) Southern blot analysis of genomic DNA from selected ES cell clones, performed after excision at HincII sites, showing correct 3’ homologous recombination in all clones. WT indicates wild-type. (C) Nrf2 mRNA levels (n = 6/group) and (D) protein levels (n = 3/group) in the hearts of csNrf2KO and Flox control mice. **p<0.01, 2-tailed t-test. (E) Increase in Nox4 mRNA levels in csNrf2KO and control mouse hearts after acute moderate exercise. **p<0.01 vs respective sedentary controls, 2-tailed t-test (n = 6/group). (F) Fractional shortening (FS) by echocardiography immediately after the exercise capacity test. *p<0.05 vs sedentary (Sed) Flox control mice, 1-way ANOVA followed by Tukey post hoc analysis (n = 6–7/group). (G) Respiration rates in isolated cardiac mitochondria of csNrf2KO and control mice after exercise. Both ADP-limited oxidative phosphorylation (OXPHOSLim) and maximal oxidative capacity (OXPHOSMax) were measured (see Materials and methods for details). *p<0.05 vs csNrf2KO/Sed, # p<0.05 Flox/Ex, 1-way ANOVA followed by Tukey post hoc analysis (n = 4–6/group). (H) Citrate synthase (CS) activity in the heart. n = 4–6/group.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41044/elife-41044-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Full images of Western blot of Nrf2 using whole heart lysates from csNrf2KO mice and their littermate Flox controls. (B) Nrf2 mRNA levels by real-time PCR in different tissues including lung, liver and skeletal muscle (Skel Mus). n.s: no significance. n = 5/group.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/41044/elife-41044-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Heart weight/body weight ratio (HW/BW), and (B) Ejection fraction (EF). n.s: no significance. n = 5–6/group.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/41044/elife-41044-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) The relationship between molecules of ADP phosphorylated and oxygen consumed (P/O ratio). (B) Respiratory coupling ratio (RCR). (C) Cytochrome C was added after oxidative capacity measurement to investigate mitochondrial membrane integrity (OXPHOSCyt). (D) Cardiac mitochondrial function evaluated by a substrate-uncoupler-inhibitor-titration (SUIT) protocol. Mitochondrial proton leak using malate and palmityol carnitine as substrates (LeakFA), maximal oxidative phosphorylation with a saturated amount of ADP (OXPHOXFA), following the addition of complex I substrates, pyruvate and glutamate (OXPHOXFA+CI), and following the addition of complex II substrate, succinate (OXPHOXFA+CI+CII). Maximal electron transport chain (ETC) capacity was measured following the addition of carbonyl cyanide m-chlorophenyl hydrazone (ETCFA+CI+CII), and rotenone was added to measure ETC capacity using complex II substrates (ETCCII). *p<0.05 vs respective sedentary controls, # p<0.05 vs Flox/Ex, 1-way ANOVA followed by Tukey post hoc analysis (n = 4–6/group).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/41044/elife-41044-fig4-v2.jpg)
+
+**Figure 4.:** (A) Western blots for peroxiredoxin III (PRXIII), thioredoxin reductase-2 (TRXR2) and superoxide dismutase-2 (SOD2) in heart of csNrf2KO and Flox controls after acute exercise (Ex). Mean data from n = 4–6/group are shown on the right. *p<0.05 vs respective sedentary controls (Sed); #p<0.05, ##p<0.01 vs Flox/Ex, 1-way ANOVA followed by Tukey post hoc analysis. (B) In vivo mitochondrial H2O2 levels assessed by the MitoP/MitoB ratio in hearts of csNrf2KO mice and controls after acute exercise. **p<0.01 vs Flox/Sed, 1-way ANOVA followed by Tukey post hoc analysis (n = 5–6/group). (C) MitoQ treatment improved cardiac contractile performance at peak exercise in csNrf2KO mice. n = 6–7/group. (D) and (E) The effect of MitoQ treatment on maximal running distance and time. n = 7–11/group. *p<0.05, **p<0.01 vs Flox/Ex, #p<0.05, ##p<0.01 vs csNrf2KO/Ex, 2-way ANOVA followed by Tukey post hoc analysis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41044/elife-41044-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/41044/elife-41044-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Peroxiredoxin III (PRXIII), thioredoxin reductase-2 (TRXR2) and superoxide dismutase-2 (SOD2) in the hearts of Nox4-null and littermate wild-type control mice (WT) after acute exercise (Ex). Mean data from n = 4–6/group are shown on the right. *p<0.05, **p<0.01 vs respective sedentary controls (Sed); #p<0.05, ##p<0.01 vs WT/Ex, 1-way ANOVA followed by Tukey post hoc analysis.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/41044/elife-41044-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Cardiac function was evaluated by conscious echocardiography prior to (sedentary, Sed) and after exercise (Ex) with or without MitoQ treatment. Mean data for heart rate (HR), left ventricular end-systolic dimension (LVESD) and left ventricular end-diastolic dimension (LVEDD) (A to C). *p<0.05, **p<0.01 vs respective sedentary controls, ##p<0.01 vs Flox/Ex, 2-way ANOVA followed by Tukey post hoc analysis (N = 6–7/group).
+
+### Mitochondrial function is impaired in csNrf2KO mice after exercise
 
 We sought to identify mechanisms that account for the beneficial effects of Nrf2 activation on the acute response to exercise. Since optimal mitochondrial function is essential to support an increase in cardiac output during exercise and depends upon a preserved redox state, we investigated mitochondrial respiratory function in csNrf2KO mice and control littermates. Cardiac mitochondria were isolated from csNrf2KO mice and control littermates immediately upon completion of the exercise capacity test and studied by high-resolution respirometry. There were no significant differences between sedentary csNrf2KO mice and littermate controls in respiratory capacity measured as ADP-limited and maximal oxidative phosphorylation (OXPHOSLim and OXPHOSMax, respectively) (Figure 3G). However, after exercise, both sub-maximal and maximal respiratory capacity were significantly lower in csNrf2KO mice compared to littermate sedentary controls (Figure 3G). Neither mitochondrial efficiency (P:O ratio) nor respiratory coupling ratio (an index of the tightness of coupling between respiration and phosphorylation) were altered by genotype or exercise (Figure 3—figure supplement 3A and B). Mitochondrial membrane integrity as assessed by the response to cytochrome C in the oxygraph protocol was similar among groups (Figure 3—figure supplement 3C). Mitochondrial mass, as estimated by the total citrate synthase activity, was also similar between genotypes (Figure 3H). Results from the substrate-uncoupler-inhibitor-titration (SUIT) protocol confirmed impaired mitochondrial oxidative phosphorylation capacity in exercised csNrf2KO hearts when using fatty acids, complex I and complex II substrates (Figure 3—figure supplement 3D)
 
-## Nox4 and Nrf2 are required for exercise-induced increases in mitochondrial antioxidants
+### Nox4 and Nrf2 are required for exercise-induced increases in mitochondrial antioxidants
 
 In view of the impaired mitochondrial function at peak exercise in csNrf2KO mice, we hypothesised that there may be a defect in the redox homeostasis required for normal respiratory function (Holmström et al., 2016). We found that acute exercise resulted in significant increases in the levels of the major mitochondrial antioxidants peroxiredoxin III (PRXIII), thioredoxin reductase-2 (TRXR2) and superoxide dismutase 2 (SOD2) in littermate control mouse hearts (Figure 4A and Figure 4—figure supplement 1). These increases were, however, abolished in the hearts of exercised csNrf2KO mice although there were no differences between sedentary csNrf2KO and control mice. A similar abolition of exercise-induced increase in these mitochondrial antioxidants was also found in Nox4KO hearts (Figure 4—figure supplement 2). These findings indicate that the Nox4/Nrf2 axis is required for exercise-induced increases in mitochondrial antioxidants.
 
 To investigate the impact of the altered mitochondrial antioxidants in csNrf2KO mouse hearts with exercise, we assessed mitochondrial hydrogen peroxide (H2O2) levels in vivo using injection of the mitochondrial-targeted probe MitoB (Cochemé et al., 2012). This probe is rapidly concentrated in mitochondria where it reacts with H2O2 to form MitoP; quantification of the MitoP/MitoB ratio by LC-MS provides a sensitive measure of mitochondrial H2O2 levels (Logan et al., 2014). We found in normal mouse hearts that mitochondrial H2O2 levels were significantly lower immediately upon cessation of peak exercise than in the non-exercising state (Figure 4B) – consistent with a reduction in ROS at peak exercise due to an enhanced antioxidant state. In marked contrast, there was no decrease in mitochondrial H2O2 levels with exercise in csNrf2KO mice, in line with the failure to enhance mitochondrial antioxidants. There were no significant differences between genotypes in sedentary mice.
 
-## Supplementation with a mitochondria-targeted antioxidant rescues the physiological cardiac response and exercise capacity in csNrf2KO mice
+### Supplementation with a mitochondria-targeted antioxidant rescues the physiological cardiac response and exercise capacity in csNrf2KO mice
 
 Finally, to confirm that the defect in mitochondrial redox balance is responsible for the impaired cardiac performance and exercise capacity in csNrf2KO mice, we performed rescue experiments in which mice were treated with a small molecule mitochondria-targeted antioxidant, MitoQ, for 2 days prior to the exercise capacity test (Smith and Murphy, 2010). We found that MitoQ supplementation markedly improved cardiac performance at peak exercise in csNrf2KO mice and fully restored the maximal exercise capacity in these animals (Figure 4, C to E, and Figure 4—figure supplement 3). MitoQ did not have a significant additional effect on exercise performance in control mice.
 
@@ -97,23 +149,166 @@ Taken together, these data identify cardiomyocyte Nox4 as a crucial physiologica
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Nox4-null</td>
+      <td>PMID: 20921387</td>
+      <td></td>
+      <td>Dr. Schröder (Institut für Kardiovaskuläre Physiologien, Goethe-Universität)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>cardiomyocyte-specific Nox4 knockout</td>
+      <td>PMID: 29040462</td>
+      <td></td>
+      <td>Dr. Shah (King's College London British Heart Foundation Centre of Excellence)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Nrf2fl/fl</td>
+      <td>in this paper</td>
+      <td></td>
+      <td>Dr. Shah (King's College London British Heart Foundation Centre of Excellence)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Myl2tm1(cre)Krc</td>
+      <td>The Jackson Laboratory (Stock No: 029465)</td>
+      <td>RRID:IMSR_JAX:029465</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GSTA2 (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich Cat# SAB1401163</td>
+      <td>RRID:AB_10609834</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-GAPDH Monoclonal Antibody</td>
+      <td>Sigma-Aldrich Cat# G8795</td>
+      <td>RRID:AB_1078991</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-4 Hydroxynonenal Rabbit Polyclonal Antibody</td>
+      <td>Abcam Cat# ab46545</td>
+      <td>RRID:AB_722490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MnSOD Rabbit Polyclonal Antibody</td>
+      <td>Abcam Cat# ab13533</td>
+      <td>RRID:AB_300434</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GCLC Rabbit Polyclonal Antibody</td>
+      <td>Novus Cat# NBP1-49762</td>
+      <td>RRID:AB_10011848</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Catalase Rabbit Polyclonal Antibody</td>
+      <td>Millipore Cat#219010</td>
+      <td>RRID:AB_211660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TrxR2 Goat Polyclonal Antibody</td>
+      <td>Santa Cruz Biotechnology Cat# sc-46278</td>
+      <td>RRID:AB_2210408</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PRX III (C-14) Goat Polyclonal Antibody</td>
+      <td>Santa Cruz Biotechnology Cat# sc-23973</td>
+      <td>RRID:AB_2237431</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NFE2L2-Rabbit Polyclonal Antibody</td>
+      <td>Santa Cruz Biotechnology Cat# sc-13032</td>
+      <td>RRID:AB_2263168</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NFE2L2-Rabbit Polyclonal Antibody</td>
+      <td>Santa Cruz Biotechnology Cat# sc-722,</td>
+      <td>RRID:AB_2108502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>VE-cadherin (F-8) monoclonal antibody</td>
+      <td>Santa Cruz Biotechnology Cat# sc-9989</td>
+      <td>RRID:AB_2077957</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p47-phox (mouse) antibody</td>
+      <td>Millipore Cat# 07–500</td>
+      <td>RRID:AB_310668</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>gp91phox mouse monoclonal antibody</td>
+      <td>BD Biosciences Cat# 611414</td>
+      <td>RRID:AB_398936</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Nox4 rabbit polyclonal antibody</td>
+      <td>PMID: 18467643</td>
+      <td></td>
+      <td>Anilkumar et al. (2008)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 The studies complied with the UK Home Office Guidance on the Operation of the Animals (Scientific Procedures) Act, 1986 and King’s College London institutional guidelines. All the mouse lines studied were on a C57BL/6 background. Global Nox4KO mice were described previously (Zhang et al., 2010) and were compared to littermate wild-type controls. Inducible cardiomyocyte-specific Nox4KO mice (csNox4KO) were generated by crossing Nox4fl/fl female mice with male α-MHC-MerCreMer mice (Zhang et al., 2018). Tamoxifen was administered by i.p. injection (20 mg/kg/day) for 5 days to induce Cre expression. csNox4KO mice were compared with tamoxifen-treated Cre-negative Flox littermates, with the groups subjected to the exercise regime 1 week after completion of tamoxifen treatment. Tamoxifen treatment itself had no effect on cardiac function (data not shown).
 
 The generation of Nrf2fl/fl mice was commissioned from Taconic-Artemis (Germany). In brief, the targeting vector was generated using BAC clones from the C57BL/6 RPCI-23 BAC library. The LoxP sites flanked exons 2 and 5 and the vector included an FRT (neomycin resistance) and F3 (puromycin resistance) site. The targeting vector was transfected into C57BL/6 Tac embryonic stem (ES) cell lines and recombinant clones were identified by PCR and Southern blotting, then injected into blastocysts. Heterozygous Floxed mice obtained from germline chimeras were bred with C57BL/6 Flp-deletor mice to excise the resistance cassettes. Mice were backcrossed onto a C57BL/6 background. Cardiomyocyte-specific Nrf2 knock-out mice (designated as csNrf2KO) were obtained by crossing Nrf2fl/fl mice with Cre-recombinase expressing mice under the control of a cardiomyocyte-specific Mlc2v promoter (Mlc2vCre). csNrf2KO and littermate Nrf2fl/fl controls were obtained by intercrossing Mlc2vCre+/-/Nrf2fl/fl mice with Nrf2fl/fl mice.
 
-## Acute exercise regimes
+### Acute exercise regimes
 
 We studied female Nox4-null mice, csNox4KO mice or csNrf2KO mice and their respective littermate controls. Mice of age approximately 8 weeks were acclimatized to and trained on a 12.5° uphill Exer 3/6 open treadmill (Columbus Instruments) for 2 days. On both training days, mice ran for a total of 10 min, with a continual increase in speed up to a final speed of 15 m/min. Mice were then randomly assigned into a sedentary or exercise group. The exercise regime used in the study is a moderate intensity protocol as reported previously (Hafstad et al., 2011; Muthusamy et al., 2012). Briefly, on day 3 and 4 (experimental days 1 and 2), mice in the exercise group were subjected to a single bout of running at 15 m/min at a gradient of 12.5° for a total of 1500 m. Tissues for analyses of gene expression or immunoblotting were obtained after the second prolonged period of exercise.
 
 Exercise capacity tests were performed on day 5 (experimental day 3). Mice started running at an initial treadmill speed of 15 m/min for 30 min. The speed was then increased at 1 m/min every 10 min for another 30 min, followed by a 1 m/min increase every 5 min until the mice were exhausted. Exhaustion was defined as the point at which mice spent more than 5 s on the electric shocker without attempting to resume running. The total running distance and running time were calculated for each mouse (He et al., 2012). In some experiments, sulforaphane (0.5 mg/kg i.p.) or MitoQ (4 mg/kg i.p.) were administered 24 hr and 2 hr prior to each exercise regime, respectively.
 
-## Echocardiography
+### Echocardiography
 
 Immediately upon discontinuation of the exercise capacity test, cardiac function was evaluated in conscious mice by transthoracic echocardiography using a Vevo2100 system (Visualsonics, Canada) (Zhang et al., 2015). Echocardiography was undertaken on the same mouse prior to exercise as a baseline. Echocardiography was performed by an experienced operator blinded to the assignments. Images were acquired using M-mode at a depth setting of 11 mm and analyzed using Vevo software v1.7. Mice were acclimatized to conscious echocardiography over 2–3 days. Basal cardiac structure and function in sedentary csNrf2KO mice was assessed by echocardiography under 2% isoflurane anesthesia at heart rates > 400 bpm (Zhang et al., 2015).
 
-## Real-time PCR
+### Real-time PCR
 
 mRNA expression levels were quantified by real-time RT-PCR using SYBR Green on an Applied Biosystem PRISM 7700 machine. Delta delta Ct values were calculated with hypoxanthine-guanine phosphoribosyltransferase (HPRT) as an internal control. Primer sequences were (forward, reverse):
 
@@ -131,26 +326,26 @@ Txnrd1, thioredoxin reductase 1: GATGCACCAGGCAGCTTTG; TCTTCGACTTTCCAGCCATAGT;
 
 Hprt, Hypoxanthine guanine phosphoribosyl transferase: CACAGGACTAGAACACCTGC, GCTGGTGAAAAGGACCTCT;
 
-## Western blotting
+### Western blotting
 
 Snap-frozen heart tissues were homogenized for immunoblotting. Antibodies used were: Nrf2, thioredoxin reductase-2, peroxiredoxin III and cadherin (Santa Cruz); Nox4 (Anilkumar et al., 2008); Nox2 (BD Biosciences); p47phox, catalase (Millipore); glutathione S-transferase A2, 4-hydroxynonenal, superoxide dismutase-2 (Abcam); glutamate-cysteine ligase catalytic subunit (Novus biologicals). GAPDH (Sigma) was used as a loading control. Protein bands were visualized using enhanced chemiluminescence or fluorescence (Odyssey, LI-COR), and were quantified by densitometry.
 
 Membrane proteins were obtained from heart homogenates using a standard centrifugation protocol (Lu et al., 2009). Cadherin and GAPDH were used as protein markers for the membrane and cytosolic fractions, respectively.
 
-## Glutathione assay
+### Glutathione assay
 
 The ratio of glutathione/glutathione disulfide (GSH/GSSG) in left ventricular homogenates was evaluated using a GSH-Glo assay kit (Promega) (Brewer et al., 2011), as a global measure of antioxidant status in the heart.
 
-## Estimation of mitochondrial H2O2in vivo
+### Estimation of mitochondrial H2O2in vivo
 
 The mitochondrial-targeted probe, MitoB, was used to assess mitochondrial H2O2 levels in vivo, as previously described (Cochemé et al., 2012; Logan et al., 2014). MitoB can also react with peroxynitrite, but this reactive nitrogen species was not thought to contribute to the changes seen here. Briefly, 25 nmol MitoB in 50 µL saline was administered by tail vein injection 2 hr before the exercise capacity test on experimental day 3. Hearts were excised immediately upon completion of exercise, snap frozen in liquid nitrogen and stored at −80°C. For analysis, around 50 mg tissue was homogenized and spiked with deuterated internal standards. MitoB and MitoP (produced by the reaction with H2O2) were extracted and quantified by liquid chromatography-tandem mass spectrometry relative to a standard curve (Cochemé et al., 2012; Logan et al., 2014).
 
-## Mitochondrial respiratory function
+### Mitochondrial respiratory function
 
 Cardiac mitochondria were isolated immediately upon completion of the exercise capacity test and respiratory function was measured in an oxygraph (Oxygraph 2 k; Oroboros Instruments, Austria) as described previously (Hafstad et al., 2013; Nabeebaccus et al., 2017). Briefly, proton leak (Leak) respiration was measured with pyruvate (5 mM) and malate (1 mM) as substrates. ADP-limited respiration (oxidative phosphorylation, OXPHOSLim) was measured in the presence of ADP, 50 µM. Maximal mitochondrial respiratory capacity (OXPHOSMax) was measured following the addition of ADP, 500 mM. Cytochrome C (10 µM) was added to assess mitochondrial membrane integrity (OXPHOSCyt). All respiration rates were normalized by the protein content. The phosphate/oxygen ratio (P/O ratio) was calculated from the ratio of molecules phosphorylated to each oxygen molecule consumed. Respiratory coupling ratio (RCR) was calculated as OXPHOSMax/Leak.
 
 In order to further study the mitochondrial function, a substrate-uncoupler-inhibitor-titration (SUIT) protocol was performed. Proton leak (LeakFA) was measured in the presence of malate (0.5 mM), carnitine (5 mM) and palmityol-CoA (24 µM). Maximal respiratory capacity (oxidative phosphorylation, OXPHOS) was measured following the addition of a saturating amount of ADP (500 mM, OXPHOSFA), saturating amounts of the complex I substrates pyruvate (10 mM) and glutamate (10 mM, OXPHOSFA+CI) and the complex II substrate succinate (10 mM, OXPHOSFA+CI+CII). Maximal electron transport capacity (ETC) was measured following the addition of 0.75 µM carbonyl cyanide m-chlorophenyl hydrazone (CCCP) (ETCFA+CI+CII). Rotenone (0.5 µM) was used to inhibit complex I (ETCCII) and complex II and III were inhibited by malonic acid (5 mM) and antimycin (2.5 µM), respectively (Residual oxygen consumption, ROX). The absolute ROX value was subtracted from the values of measured respiration.
 
-## Statistics
+### Statistics
 
 Data are presented as mean ± SEM. Comparisons were made by unpaired t-test, 1-way or 2-way ANOVA as appropriate, followed by Tukey post hoc analysis. p<0.05 was considered significant.

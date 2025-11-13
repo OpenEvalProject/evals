@@ -53,36 +53,116 @@ Importantly, the cost to setup the imaging system with a double-μPeriscope is a
 
 ## Materials and methods
 
-## Animal models
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Short: Sim1-KJ18-CreTg(Sim1-cre)KJ18Gsat</td>
+      <td>Gerfen et al., 2013</td>
+      <td>RRID:MMRRC_031742-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Short: Ai32Ai32(RCL-ChR2(H134R)/EYFP)</td>
+      <td>Madisen et al., 2012</td>
+      <td>RRID:Addgene_34880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Short: Rasgrf2-2A-dCreB6;129S-Rasgrf2tm1(cre/folA)Hze/J</td>
+      <td>Harris et al., 2014</td>
+      <td>RRID:JAX 022864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Short: Gpr26-CreTg(Gpr26-cre) KO250Gsat/Mmucd</td>
+      <td>Gong et al., 2007</td>
+      <td>RRID:MMRRC_033032-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9.CaMKII.Flex.hChR2(H134R)-YFP.WPRE3</td>
+      <td>Charité vector core</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV1.Syn.Flex.GCaMP6s.WPRE.SV40</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_100845</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cal-590 AM</td>
+      <td>AAT Bioquest</td>
+      <td>20,510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trimethoprim</td>
+      <td>Sigma-Aldrich</td>
+      <td>T7883</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal models
 
 Three transgenic mouse lines, Sim1-KJ18-Cre (Tg(Sim1-cre)KJ18Gsat) (Gerfen et al., 2013) × Ai32 (Ai32(RCL-ChR2(H134R)/EYFP)) (Madisen et al., 2012), Rasgrf2-2A-dCre (B6;129S-Rasgrf2tm1(cre/folA)Hze/J) and Gpr26-Cre (Tg(Gpr26- cre)KO250Gsat/Mmucd) were used in this study. The age of studied mice was P40–70. Both male and female mice were used. No food or water restriction was imposed. All studied mice were in good health. Mice were housed in single-sex groups in plastic cages with disposable bedding on a 12 hr light/dark cycle with food and water available ad libitum. Experiments were done during both dark and light phase. All procedures were approved and conducted in accordance with the guidelines given by the veterinary office of Landesamt für Gesundheit und Soziales Berlin (registration number G0278/16).
 
-## Virus injection
+### Virus injection
 
 Rasgraf2-2A-dCre and Gpr26-Cre mice were initially anesthetized with Isoflurane (1–2.5% in O2 vol/vol, Abbott) before ketamine/xylazine anesthesia (75/10 mg/kg of body weight, respectively) was administered intraperitoneally. Lidocaine (1% wt/vol, Braun) was injected around the surgical site. Body temperature was maintained at ~36°C by a heating pad and the depth of anesthesia was monitored throughout the virus injection. Once anesthetized, the head was stabilized in a stereotaxic instrument (SR-5R, Narishige, Tokyo). The skull was exposed by a skin incision and a small hole (~0.5 × 0.5 mm2) was made above the primary motor cortex (1.0 mm anterior to bregma and 1.2 mm from midline) of Rasgraf2-2A-dCre mice or the POm (1.8 mm posterior to bregma and 1.25 mm from midline) of Gpr26-Cre mice. AAV9.CaMKII.Flex.hChR2(H134R)-YFP.WPRE3 (Charité Vector Core) or AAV1.Syn.Flex.GCaMP6s.WPRE.SV40 (Addgene #100845) was injected to Rasgrf2-2A-dCre or Gpr26-Cre mice, respectively. Each construct was backloaded into a glass micropipette (Drummond) and was slowly injected (at 20 ml/min, total amount 40–50 nl). The pipette remained there for another 2–5 min after injection. The skin was sutured after retracting the pipette. Rasgrf2-2A-dCre mice were subsequently injected with trimethoprim (TMP, 150 mg/g of body weight) intraperitoneally.
 
-## Fabrication of double-μPeriscope
+### Fabrication of double-μPeriscope
 
 As described earlier (Suzuki and Larkum, 2017), single μPeriscopes were assembled in-house with a 0.10 × 0.10 mm2 or 0.18 × 0.18 mm2 micro right-angled prism (Edmund Optics), a 100 μm core multimode optical fiber (NA 0.22, Edmund Optics) and a custom-designed Grin lens (NA 0.2, Grin Tech) using a UV curable adhesive (Noland). Optical properties of single μPeriscope were characterized previously (Suzuki and Larkum, 2017).
 
 The two μPeriscopes were precisely aligned with a specific distance between the two prisms and glued with a UV curable adhesive (Noland). Alternatively, two μPeriscopes were not glued but individually manipulated by two stereotaxic micromanipulators (SM-15R, Narishige).
 
-## Extracellular recordings
+### Extracellular recordings
 
 Animals were initially anesthetized by isoflurane (1–2% in O2, vol/vol, Abbott) before urethane anesthesia (0.05 mg/kg of body weight) was administered intraperitoneally. Lidocaine (1%, wt/vol, Braun) was injected around the surgical site. Body temperature was maintained at ~36°C by a heating pad and the depth of anesthesia was monitored throughout experiment. Once anesthetized, the head was stabilized in the stereotaxic instrument and the skull was exposed by a skin incision. A ~1.0 × 1.0 mm2 craniotomy was made above the primary somatosensory (barrel) cortex and the dura matter was removed. The area was kept moist with rat ringer for the entire experiment (135 mM NaCl, 5.4 mM KCl, 1.8 mM CaCl2, 1 mM MgCl2, 5 mM HEPES(4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid)). A linear array of 16 electrodes (NeuroNexus, A1 × 16-3 mm-50-177-A16) or a glass pipette was perpendicularly inserted into the area such that the uppermost electrode was positioned at 50 μm below the pia. Electrical activity was bandpass-filtered at 1–9 kHz, digitized at 10 kHz, amplified by ERP-27 system and Cheetah software (Neuralynx).
 
-## Optogenetic stimulation with a double-μPeriscope
+### Optogenetic stimulation with a double-μPeriscope
 
 The end of each optical fiber was coupled with a blue LED (peak wavelength 470 nm, Cree or Thorlabs). The timing and intensity of optical stimulation through each μPeriscope were controlled by Power1401 and Spike two software (CED) and synchronized with the neural recording system or fluorescence imaging via TTL signals. The light intensity was 12 mW/mm2 and the duration was 20 ms. Surgical preparation is same as described in the section ‘Extracellular recordings’. A double-μPeriscope was slowly inserted into the somatosensory cortex such that the upper μPeriscope stimulated the distal apical dendrites (50–150 μm deep from pia) and the lower one stimulated the perisomatic region of L5 pyramidal neurons (500–700 μm deep from pia).
 
-## Calcium imaging with a double-μPeriscope
+### Calcium imaging with a double-μPeriscope
 
 The imaging setup consisted of a double-μPeriscope, an LED (peak wavelength 470 nm, Thorlabs), an excitation filter (480/30 bandpass, Chroma), an emission filter (535/40 bandpass, Chroma), a dichroic mirror (cutoff wavelength: 505 nm, Chroma), an 80 × 80 pixel high-speed CCD camera with frame rate of 125 Hz and 14-bit digitization (Redshirt Imaging), a 10× infinity corrected objective (58-372, Edmund Optics), and a tube lens (Optem, RL091301-1). Surgical preparation is same as described in the section ‘Extracellular recordings’. An aluminum head implant was fixed to the skull of the mouse with dental cement and the mice were habituated to head-fixation and whisker deflection by a piezo element before imaging. A double- μPeriscope was slowly inserted into the barrel cortex such that the upper μPeriscope covered L1 (0–100 μm deep from pia) and the lower μPeriscope covered L5a (450–550 μm deep from pia). ΔF/F was calculated as (F − F0)/F0, where F is the fluorescence intensity at any time point and F0 is the average intensity over the prestimulus period of 320 ms. If ΔF/F is calculated as (F − F0)/(F0 − Fb) where Fb is the background fluorescence measured from a region away from the optical fiber, the scale bar in Figure 2g is equal to ~0.2% ΔF/F.
 
-## Calcium imaging combined with optogenetic stimulation
+### Calcium imaging combined with optogenetic stimulation
 
 The imaging setup is same as described in the section ‘Calcium imaging with a double-μPeriscope’ except an LED (peak wavelength 565 nm, Thorlabs), an excitation filter (555/20 bandpass, AHF), an emission filter (605/55 bandpass, AHF) and a dichroic mirror (cutoff wavelength: 565 nm, AHF). Surgical preparation is same as described in the section ‘Extracellular recordings’. An aluminum head implant was fixed to the skull of the mouse with dental cement and the mice were habituated to head-fixation before imaging. A double-μPeriscope was slowly inserted into the motor cortex so that the upper μPeriscope covered L2/3 (150–300 μm deep from pia) and the lower μPeriscope covered L5 (500–700 μm deep from pia). The calcium indicator Cal-590 AM (AAT Bioquest) was backloaded into a micropipette (Drummond) and slowly injected (at 20 nl/min, total 40–50 nl) to L5 (~600 μm below pia) of the primary motor cortex 1.5–2 hr before imaging experiments. The pipette remained there for at least 5 min after injection. ΔF/F was calculated in the same way as described in the section ‘Calcium imaging with a double-μPeriscope’.
 
-## Data analysis and statistical methods
+### Data analysis and statistical methods
 
 Analyses were conducted using Matlab (Mathworks). Significance was determined by two-tailed, paired Student’s t-test at a significance level of 0.05. The statistical test was chosen based on the data distribution using histogram. No statistical method was used to predetermine sample sizes, but our sample sizes are those generally employed in the field. We did not exclude any animal for data analysis. The variance was generally similar between groups under comparison. No blinding/randomization was performed.

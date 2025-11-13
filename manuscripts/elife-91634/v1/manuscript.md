@@ -13,8 +13,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04zmssz18 Institut de Génomique Fonctionnelle de Lyon, ENS de Lyon, CNRS, Univ Lyon 1 Lyon France
-2. https://ror.org/04zmssz18 Laboratoire Reproduction et Développement des Plantes, ENS de Lyon Lyon France
+1. Institut de Génomique Fonctionnelle de Lyon, ENS de Lyon, CNRS, Univ Lyon 1 Lyon France ([ROR:04zmssz18](https://ror.org/04zmssz18))
+2. Laboratoire Reproduction et Développement des Plantes, ENS de Lyon Lyon France ([ROR:04zmssz18](https://ror.org/04zmssz18))
 
 † Corresponding author
 
@@ -50,7 +50,7 @@ Previous studies and our work cements the role of Imp and Syp as two multitaskin
 
 ## Results
 
-## Lin A/15 switches to a classical type I division during larval stages where the GMC produces one MN and a dying cell
+### Lin A/15 switches to a classical type I division during larval stages where the GMC produces one MN and a dying cell
 
 Lin A/15 produces MNs and glia during the first phase of NB division and only MNs during a second phase. It has been suggested that during the second phase Lin A/15 GMCs could produce an MN and an apoptotic sibling cell (Truman et al., 2010).
 
@@ -62,15 +62,31 @@ We precisely characterized Lin A/15 development by labeling it with GFP during t
 
 Together, our results show that Lin A/15 GMCs produce an MN and a sibling cell eliminated by PCD during the second phase of Lin A division (Figure 2H). Moreover, PCD of the sibling cell occurs soon after birth before they express neuronal marker such as Elav or VGlut.
 
-## Lin A/15 NB decommissions 24 hr after pupa formation through PCD
+### Lin A/15 NB decommissions 24 hr after pupa formation through PCD
 
 We subsequently explored the development of Lin A/15 during the pupal stages to determine when the NB stops producing MNs and terminates neurogenesis. We genetically labeled Lin A/15 with GFP and performed immunostaining against Dpn to label Lin A/15 NB and against phospho-Histone H3 (PH3), a marker of cell proliferation. We revealed that Lin A/15 NB (PH3+/Dpn+) continues proliferating from 0 hr after pupa formation (APF) until 20 hr APF (Figure 3A1–C3). During early pupal stages, cDcp1+Elav− cells were also detected, suggesting that Lin A/15 NB keeps producing a GMC that divides once into an MN and an apoptotic cell (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91634/elife-91634-fig3-v1.jpg)
+
+**Figure 3.:** (A1–C3) Confocal images showing the development of Lin A/15 during pupal stages, the developmental time points are indicated on top. APF: after pupa formation. (A1, B1, C1) Maximum projection of confocal sections of the first left thoracic hemisegment (T1L) where Lin A/15 is genetically labeled with mCD8::GFP (green). (A2, B2, C2) Confocal sections showing Lin A/15 immunostained with anti-Elav (blue), anti-Dpn (cyan), and anti-pH3 (red, phospho-Histone3), mitosis-specific marker (A3, B3, C3) magnifications of the boxed region in (A2, B2, C2). Arrowheads indicate the proliferative Lin A/15 NBs (Dpn+ pH3+). (D1) Maximum projection of confocal sections of three thoracic ganglions (T1, T2, T3) at 24 hr APF where all six Lin A/15s are genetically labeled with mCD8::GFP (green). (D2) Confocal section of thoracic ganglions in (D1) immunostained with anti-Elav (blue), anti-Dpn (cyan), and anti-cDcp1 (red). (D2) Magnifications of the boxed region in (D2) (left Mesothoracic neuromere, T2L). Arrowheads indicates the apoptotic Lin A/15 NB (Dpn+ cDcp1+). (E1–F1) Confocal images showing the absence vs presence of Lin A/15 NB at 28 hr APF in Control vs P35 overexpression (OE) conditions. Six Lin A/15s are genetically labeled with mCD8::GFP (green), Lin A/15 NB and MNs are visualized with anti-Dpn (red) and anti-Elav (blue), respectively. (E2–F2) Magnifications of the boxed region in (E1–F1) (first right thoracic hemisegment, T1R) indicate the presence of NB (Dpn+, arrowhead) in P35 OE condition. (G) Graph of the frequency of NB presence (number of Lin A/15 samples analyzed is indicated within each bar) at different developmental time points under different genetic conditions: absence of NB (white), NB presence in Control (green), NB presence in P35 OE (purple). Student’s t test was performed to compare the difference between indicated groups. ns, P > 0.05, considered not significant; ****, P ≤ 0.0001. (H) Schematic of the Lin A/15 type Ib division during larval and pupal stages. NGB: neuroglioblast, NB: neuroblast, IMC: intermediate mother cell, GMC: ganglion mother cell, GB: glioblast, MN: motoneuron. The markers used to label each type of Lin A/15 cells are indicated.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91634/elife-91634-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A1–C2) Lin A/15 during pupal stages: 0 hr APF (A1, A2), 8 hr APF (B1, B2), and 24 hr APF (C1, C2). (A2, B2, C2) Maximum projection of confocal sections of the third left (T3L) (A1), first right (T1R) (B1), and second right (T2R) (C1) thoracic hemisegments where Lin A/15 is genetically labeled with mCD8::GFP (green). (A2, B2, C2) Confocal sections of the corresponding Lin A/15 in (A1, B1, C1) immunostained with anti-cDcp1 (red), anti-Elav (neuronal marker, blue), and anti-Dpn (NB marker, cyan), boxed region showing the dying sibling cells (Elav−, cDcp1+), indicated with arrowheads.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91634/elife-91634-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Graph of the volume of the Lin A/15 NB at different time point. x axis: different time points during. larval and pupal stages, y axis: volume of the NB in nm3. Error bars represent standard deviations. Each data point represents an individual neuroblast.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/91634/elife-91634-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A1–B3) Lin A/15 during pupal stages: 17 hr APF (A1–A3) and 20 hr APF (B1–B3). (A1, B1) Maximum projection of confocal sections of the first two thoracic hemisegments where Lin A/15 is genetically labeled with mCherry (red). (A2, A3, B2, B3): Confocal sections of the boxed regions in (A1, B1) corresponding to the second right thoracic hemisegment (T2R). Lin A/15 is inmunostained with anti-Elav (neuronal marker, blue) and anti-Dpn (NB marker, cyan) and genetically labeled with Atg8::GFP. Arrowheads indicate the NBs. (C1–C3) Lin A/15 at 23 hr APF. (C1) Maximum projection of confocal sections of the first two thoracic hemisegments where Lin A/15 is genetically labeled with GFP (green). (C1–C3): Confocal sections of the boxed regions in (C1) corresponding to the second right thoracic hemisegment (T2R). Lin A/15 is immunostained with anti-Elav (neuronal marker, blue) and anti-Dpn (NB marker, cyan) and labeled with Lysotracker. Arrowheads indicate the NBs.
 
 At 24 hr APF, Lin A/15 NB is no longer detected in most of our samples (N = 4/17, number of Lin A/15 with an NB), revealing the end of Lin A/15 neurogenesis at this stage. Similar to what has been shown for other NBs, the volume of Lin A/15 NB decreases throughout development until the termination of Lin A/15 neurogenesis (Figure 3—figure supplement 2). At 24 hr APF, the remaining Lin A/15 NBs are extremely small and express cDcp1, suggesting a decommissioning of Lin A/15 NB through PCD (Figure 3D). To confirm this result, we then inhibited PCD in Lin A/15 by using the baculovirus P35 protein, an inhibitor of apoptosis in insects (Hay et al., 1994). Under these experimental conditions, Lin A/15 NB survived at least until 28 hr APF (Figure 3E–G). Furthermore, we did not detect autophagic markers in the NB, such as Atg8 and LysoTracker (Mauvezin et al., 2014) suggesting that the PCD of the NB is not linked to autophagy such as the mushroom body NBs (Figure 3—figure supplement 3).
 
 Our results reveal that Lin A/15 NB continues producing MNs during early pupal stages and, unlike most NBs described in the thoracic segments of the VNC (Maurange et al., 2008), Lin A/15 NB terminates its proliferative phase through PCD at 24 hr APF in all thoracic ganglia (Figure 3H).
 
-## Opposite temporal gradients of Imp and Syp control the timing of Lin A/15 NB decommissioning
+### Opposite temporal gradients of Imp and Syp control the timing of Lin A/15 NB decommissioning
 
 We conducted further investigations to determine whether Imp and Syp could regulate the timing of Lin A/15 NB decommissioning.
 
@@ -80,7 +96,7 @@ At early L3 stages (46–49 hr ALH), Imp protein and Imp RNA are highly expresse
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/91634/elife-91634-fig4-v1.jpg)
 
-**Figure 4.:** (A1–F) smFISH of Imp (red) and Syp (yellow) mRNA in Lin A/15 NB labeled with GFP (white) at different time points during development. (A1, B1, C1, D1, E1) 3D renderings of Lin A/15 NB segmentations used to quantify total numbers of Imp (red) and Syp (yellow) mRNA. (A2–A4, B2–B4, C2–C4, D2–D4, E2–E4) confocal sections. (F) Graph of Imp and Syp mRNA concentrations in Lin A/15 NB at different time points (n ≥ 4 for each time point). Error bars represent standard deviations. Note: The Lin A/15 GFP+ NB is recognized based on its large size. Because the NB size decreases drastically in the pupal stage, smFISH against dpn (cyan) was performed at 20 hr APF to recognize Lin A/15 NB (E2–E4). (G1–L) Co-immunostaining of Imp (red), Syp (yellow), and Dpn (NB marker, cyan) protein in Lin A/15 NB labeled with GFP (white) at different time points during development. (G1–K4) Confocal sections. (L) Graph of relative expression levels of Imp and Syp protein in Lin A/15 NB at different time points, represented by relative ratios of staining intensity values measured in ImageJ (n ≥ 10 for each time point). Error bars represent standard deviations. The developmental time points are indicated on the top of each panel. All scale bars are 5 µm.Figure 4—source data 1.Imp and Syp RNA counts and neuroblast volumes.Figure 4—source data 2.
+**Figure 4.:** (A1–F) smFISH of Imp (red) and Syp (yellow) mRNA in Lin A/15 NB labeled with GFP (white) at different time points during development. (A1, B1, C1, D1, E1) 3D renderings of Lin A/15 NB segmentations used to quantify total numbers of Imp (red) and Syp (yellow) mRNA. (A2–A4, B2–B4, C2–C4, D2–D4, E2–E4) confocal sections. (F) Graph of Imp and Syp mRNA concentrations in Lin A/15 NB at different time points (n ≥ 4 for each time point). Error bars represent standard deviations. Note: The Lin A/15 GFP+ NB is recognized based on its large size. Because the NB size decreases drastically in the pupal stage, smFISH against dpn (cyan) was performed at 20 hr APF to recognize Lin A/15 NB (E2–E4). (G1–L) Co-immunostaining of Imp (red), Syp (yellow), and Dpn (NB marker, cyan) protein in Lin A/15 NB labeled with GFP (white) at different time points during development. (G1–K4) Confocal sections. (L) Graph of relative expression levels of Imp and Syp protein in Lin A/15 NB at different time points, represented by relative ratios of staining intensity values measured in ImageJ (n ≥ 10 for each time point). Error bars represent standard deviations. The developmental time points are indicated on the top of each panel. All scale bars are 5 µm.
 
 To investigate the impact of Imp and Syp on the lifespan of Lin A/15 NB, we conducted specific manipulations. Knocking down Imp in Lin A/15 NB resulted in premature decommissioning at 20 hr APF (Figure 5A–G). Conversely, prolonging the expression of Imp or knocking down Syp led to an extension of Lin A/15 NB’s lifespan until the young adult stages and at least 28 hr after pupa formation (APF), respectively (Figure 5H–Q). Furthermore, we observed that the temporal expression of Imp/Syp controls the timing of Lin A/15 NB decommissioning similarly in all thoracic segments.
 
@@ -90,7 +106,7 @@ To investigate the impact of Imp and Syp on the lifespan of Lin A/15 NB, we cond
 
 Our findings provide evidence that the sequential expression of Imp and Syp plays a crucial role in regulating the timing of Lin A/15 NB decommissioning, ultimately terminating neurogenesis (Figure 5).
 
-## The last-born neurons produced by Lin A/15 are eliminated by PCD
+### The last-born neurons produced by Lin A/15 are eliminated by PCD
 
 The number of Lin A/15 MNs in adult flies is highly consistent and gradually established during development (Figure 1F and Figure 6K). At 0 hr APF, Lin A/15 reaches its maximum number of Elav+ neurons (N = 39, SD = 2, number of Lin A/15 Elav+ neurons) (Figure 7K). However, even though Lin A/15 NB continues to divide in early pupal stages (Figure 3A–C), the number of Elav+ neurons progressively decreases until reaching almost the final number of MNs at 24 hr APF (N = 32, SD = 1 at 24 hr APF compared to adult: N = 29, SD = 1) (Figure 7K).
 
@@ -100,7 +116,7 @@ The number of Lin A/15 MNs in adult flies is highly consistent and gradually est
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/91634/elife-91634-fig7-v1.jpg)
 
-**Figure 7.:** (A1–J2) Confocal images showing the development of Lin A/15 during larval and pupal stages, the developmental time points are indicated on top. ALH: after larva hatching; APF: after pupa formation. (A1, B1, C1, D1, E1, F1, G1, H1, I1, J1) Maximum projection of confocal sections of the second left thoracic hemisegment (T2L) where Lin A/15 is genetically labeled with mCD8::GFP (white). (A2, B2, C2, D2, E2, F2, G2, H2, I2, J2) Magnified views of boxed regions in (A1, B1, C1, D1, E1, F1, G1, H1, I1, J1) showing Lin A/15 neuroblast (NB) and newborn motoneurons (MNs) immunostained with anti-Elav (neuronal marker, blue), anti-Dpn (NB marker, cyan), and anti-Imp (red) (A2, B2, C2, D2, E2) or anti-Syp (yellow) (F2 G2, H2, I2, J2). (A2) Inset: magnified view of the smaller boxed region in (A1) showing Lin A/15 NB. The dashed lines indicate GFP-labeled cells including NB and newborn MNs. White arrowheads indicate Lin A/15 NB. (K1–K4) Confocal section from the lateral view of a GFP Lin A/15 (white) at 93–96 hr ALH, immunostained with anti-Dpn (NB marker, cyan), anti-Imp (red), and anti-Syp (yellow). (L) Graph of relative expression levels of Imp and Syp protein in Lin A/15 post-mitotic MNs. The x axis represents MN ordering based on the distance to the NB. Note: Young MNs are closer to the NB while older MNs are further to the NB. Syp/Imp and Imp/Syp refer to the ratios of staining intensity values measured in ImageJ (N = 9). Error bars represent standard deviations.Figure 7—source data 1.
+**Figure 7.:** (A1–J2) Confocal images showing the development of Lin A/15 during larval and pupal stages, the developmental time points are indicated on top. ALH: after larva hatching; APF: after pupa formation. (A1, B1, C1, D1, E1, F1, G1, H1, I1, J1) Maximum projection of confocal sections of the second left thoracic hemisegment (T2L) where Lin A/15 is genetically labeled with mCD8::GFP (white). (A2, B2, C2, D2, E2, F2, G2, H2, I2, J2) Magnified views of boxed regions in (A1, B1, C1, D1, E1, F1, G1, H1, I1, J1) showing Lin A/15 neuroblast (NB) and newborn motoneurons (MNs) immunostained with anti-Elav (neuronal marker, blue), anti-Dpn (NB marker, cyan), and anti-Imp (red) (A2, B2, C2, D2, E2) or anti-Syp (yellow) (F2 G2, H2, I2, J2). (A2) Inset: magnified view of the smaller boxed region in (A1) showing Lin A/15 NB. The dashed lines indicate GFP-labeled cells including NB and newborn MNs. White arrowheads indicate Lin A/15 NB. (K1–K4) Confocal section from the lateral view of a GFP Lin A/15 (white) at 93–96 hr ALH, immunostained with anti-Dpn (NB marker, cyan), anti-Imp (red), and anti-Syp (yellow). (L) Graph of relative expression levels of Imp and Syp protein in Lin A/15 post-mitotic MNs. The x axis represents MN ordering based on the distance to the NB. Note: Young MNs are closer to the NB while older MNs are further to the NB. Syp/Imp and Imp/Syp refer to the ratios of staining intensity values measured in ImageJ (N = 9). Error bars represent standard deviations.
 
 To investigate if the supernumerary postmitotic MNs are eliminated by PCD, we genetically labeled Lin A/15 with GFP and performed immunostaining against Dpn, Elav, and cDcp1 during pupal stages (Figure 6A1–C3). Unlike in larval stages, we detected Elav+ cDcp1+ neurons close to the NB, indicating that the last-born Elav+ neurons are progressively eliminated by apoptosis from 0 to 24 hr APF (Figure 6A1–C3). To further confirm that the last-born MNs are eliminated by PCD, we fed L3 larvae with 5-ethynyl-2′deoxyuridine (Edu) to label only the late-born MNs and dissected the CNS at early pupal stage (5 hr APF) (Figure 6D1–D7). The first-born MNs were Edu− (N = 30, SD = 2, average number of Edu− MNs at 5 hr APF) and located away from the NB, while the last-born MNs (N = 7, SD = 2, number of Edu+ MNs at 5 hr APF) were Edu+ and positioned close to the NB (Figure 6D5–D7). Additionally, we found that cDcp1+ Elav+ neurons were always Edu+, and no cDcp1+ Edu− neurons were observed (N = 16, number of Lin A/15 analyzed). Further dissection of CNSs at late pupal stage (17 hr APF) showed a significant decrease in the number of Elav+ Edu+ MNs (N = 2, SD = 2, number of Edu+ MNs at 17 hr APF), confirming the progressive elimination of all these late-born MNs (Figure 6D1–F). Both results indicate that the last-born MNs undergo PCD during pupal stages.
 
@@ -108,7 +124,7 @@ To confirm that the supernumerary MNs are eliminated by PCD, we conducted an exp
 
 Overall, our results provide strong evidence that the elimination of supernumerary MNs by PCD is not random. Instead, only the last-born neurons are precisely and progressively eliminated through PCD during pupal stages from 0 to 24 hr APF (Figure 6L).
 
-## Opposite spatial gradients of Imp and Syp in postmitotic neurons determine the pattern of PCD
+### Opposite spatial gradients of Imp and Syp in postmitotic neurons determine the pattern of PCD
 
 The serially derived neuronal progenies of the NB express Imp or Syp according to the expression levels in the NB: Imp is highly abundant in first-born MNs, while Syp is highly present in late-born MNs (Figure 4A–J). This expression in postmitotic neurons has been proposed to be the consequence of the passive inheritance of these RBPs during NB and GMC division (Mauvezin et al., 2014). While this could be the case here, our previous studies revealed that during larval stages, Imp and Syp are also actively transcribed in postmitotic MNs (Guan et al., 2022c).
 
@@ -116,11 +132,23 @@ Although the mechanism of Imp/Syp expression in postmitotic neurons is not fully
 
 Notably, during pupal stages, the last-born Lin A/15 MNs that are eliminated by PCD are Imp− and Syp+ (Figure 8A1–A5). These observations suggest that the distinct expression patterns of these two RBPs in postmitotic neurons may play a crucial role in determining the final number of adult MNs surviving.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/91634/elife-91634-fig8-v1.jpg)
+
+**Figure 8.:** (A1) Maximum projection of confocal sections of the T1R hemisegment where Lin A/15 is genetically labeled with mCD8::GFP (green) at 5 hr APF. (A2, A3, A4, A5) are confocal sections of the Lin A/15 in (A1) showing the apoptotic MN immunostained with anti-Imp (red), anti-Elav (blue), and anti-cDcp1 (cyan) of (A1). Arrowheads indicate the apoptotic MN (Elav+, cDcp1+) is absent of Imp (Imp−). (B1, B2) Graph of the number of apoptotic MNs (Elav+, cDcp1+) observed in Lin A/15 at different developmental time points under different genetic conditions: Control (green), Imp RNAi (orange), Imp OE (blue), and Syp RNAi (purple). (C1, D1, E1, F1, G1, H1, I1, J1) Maximum projection of confocal sections of the second right thoracic hemi-segments (T2R) where Lin A/15 is genetically labeled with mCD8::GFP (green) under different genetic conditions control (C1, E1, H1), Imp RNAi (D1), Imp OE (F1, I1), and Syp RNAi (G1, J1). (C2, D2, E2, F2, G2, H2, I2, J2) Confocal sections of the second right thoracic hemisegment (T2R) in (C1, D1, E1, F1, G1, H1, I1, J1) immunostained with anti-cDcp1(red), anti-Elav neuronal marker (blue), and anti-Dpn (neuroblast [NB] marker, cyan). The boxed region in (D2, E2, H2, J2) indicated the presence of Elav+ cDcp1+ cells. (C3, D3, E3, F3, G3, H3, I3, J3) Graphs of the relative position of each Lin A/15 cell in (C1, D1, E1, F1, G1, H1, I1, J1) from a lateral perspective. Axes: Anterior (A), Ventral (V). Lin A/15 immature MNs are in blue, Lin A/15 ganglion mother cells (GMCs) are in white, Lin A/15 NB is in cyan, and cDcp1+ Elav+ neurons are in red and blue. (K) Graph of the number of Elav+ Lin A/15 neurons observed in adult flies under different genetic conditions: control (green), Imp RNAi (orange), Imp OE (blue), and Syp RNAi (purple). n ≥ 7. (L1, M1) Maximum projection of confocal sections of the left prothoracic neuromere (T1L) containing a control (L1) or a VGlut >Imp (M1) Lin A/15 MARCM clone. The boxed regions in (L1–M1) are confocal sections showing the Lin A/15 Elav+ (anti-Elav, Blue) GFP+ cells. (L2, M2) Graphs of the relative position of each Lin A/15 cell in (L1, M1) from a lateral perspective. Axes: Anterior (A), Ventral (V). Lin A/15 immature MNs are in blue. (N) Graph of the number of Elav+ VGlut+ Lin A/15 cells of control and VGlut>Imp Lin A/15 MARCM clones in third instar larvae (LL3) and adult flies. n ≥ 7. (B, K, N) Error bars represent standard deviations. Student’s t test was performed to compare the difference between indicated groups. ns, P > 0.05, considered not significant; *, P ≤ 0.05; **, P ≤ 0.01; ***, P ≤ 0.001; ****, P ≤ 0.0001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/91634/elife-91634-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Maximum projection of confocal sections of the prothoracic segments with one (A) wt or two Syp OE (B) Lin A/15 MARCM clones (mCherry, red) labeled with Elav (green). (C) Graph of the number of Elav+ VGlut+ Lin A MNs in control and Syp OE MARCM clones. Error bars represent standard deviations. Student’s t test was performed to compare the difference between indicated groups. ns, P > 0.05, considered not significant.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/91634/elife-91634-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A1–D3) Graphs and confocal images showing Syp level at 94–97 AEL in Imp RNAi (A1–B3) and Imp level at 120 AEL in Syp RNAi (C1–D3), AEL: after egg laying. (A1, B1, C1, D1) Graphs of the relative position of each Lin A/15 cell of samples in (A2–D2) from a lateral perspective. Axes: Anterior (A), Ventral (V). The black lines indicate the positions of the confocal section in (A3–D3). (A2, B2, C2, D2) Confocal sections comparing Syp expression in Lin A/15 neuroblast (NB) between control (A2) and Imp RNAi (B2); Imp expression in Lin A/15 NB between control (C2) and Syp RNAi (D2). Stainings: anti-Dpn (NB marker, cyan), anti-Imp (red), and anti-Syp (yellow). Boxed regions highlight Imp expression in NB, arrowheads indicated Lin A/15 NB, dashed lines indicate GFP-labeled NB. (A3, B3, C3, D3) Confocal sections comparing Syp expression in Lin A/15 progenies between control (A3) and Imp RNAi (B3); Imp expression in Lin A/15 progenies between control (C3) and Syp RNAi (D3). Boxed regions highlight Syp expression in motoneuron (MN), arrowheads indicated Lin A/15 progenies, dashed lines indicate GFP-labeled cells. (E) Graph showing the number of Lin A/15 cells (left panels in each graph) and number of Syp/Imp-expressing Lin A/15 progenies (right panel in each graph) in indicated genetic backgrounds. Error bars represent standard deviations. Student’s t test was performed to compare the difference between indicated groups. ns, P > 0.05, considered not significant.
+
 Our genetic tools not only enable us to study the decommissioning of Lin A/15 NB under various genetic conditions but also to precisely investigate the fate of its progeny. Knocking down Imp in Lin A/15 resulted in premature PCD of Elav+ MNs during larval stages (Figure 8C1–D3) and an increase in the number of Elav+ neurons eliminated by PCD during pupal stages (Figure 8B1). Conversely, by prolonging the expression of Imp or knocking down Syp in Lin A/15 NB and its progeny, we were able to inhibit PCD of the supernumerary neurons (Figure 8B2, E1–J3). These genetic experiments, which manipulated the levels of Imp and Syp in the NB and its postmitotic progeny, led to changes in the final number of neurons produced by Lin A/15 (Figure 8K) by altering the timing of NB decommissioning and the pattern of PCD in postmitotic neurons. The modulation of PCD pattern in postmitotic neurons by Imp and Syp could result from an autonomous function in postmitotic MNs or a change in the temporal identity of Lin A/15 NB. To separate their functions in the NB and MNs, we ectopically expressed Imp in postmitotic neurons, including the supernumerary MNs, without affecting its expression in Lin A/15 NB, using the MARCM technique with the VGlut-Gal4 enhancer trap driver. Under this experimental condition, more Lin A MNs were maintained in adult flies (Figure 8L1–N), implying a cell-autonomous function of Imp in promoting cell survival of MNs. Additionally, we generated Syp overexpression MARCM clones, and interestingly, we did not observe any significant effect on the number of MNs produced in adult flies (Figure 8—figure supplement 1). As a result, we decided not to delve further into Syp function in this particular genetic background.
 
 In conclusion, our findings demonstrate that the opposite expression pattern of Imp and probably Syp in postmitotic neurons precisely shapes the size of Lin A/15 lineage by controlling the pattern of PCD in iMNs (Figure 8).
 
-## The last-born MNs that are eliminated by PCD are primed with a specific combination of TFs under the control of Imp and Syp
+### The last-born MNs that are eliminated by PCD are primed with a specific combination of TFs under the control of Imp and Syp
 
 In our previous study, we demonstrated that the first 29 MNs express a specific set of mTFs that determine the target muscle of each MN. Furthermore, we revealed that at least 5 out of the 16 TFs expressed in these first 29 MNs are post-transcriptionally regulated by the opposite gradients of Imp and Syp. Based on these findings, we hypothesized that the precise elimination of MNs could also result from a post-transcriptional regulation of TFs by Imp and Syp.
 
@@ -138,7 +166,7 @@ Nvy shows a similar expression pattern compared to RunxA (Figure 9I1–I4, M). T
 
 Overall, these results demonstrate that overexpressing Imp or knocking down Syp changes the combination of TFs in last-born MNs from Nvyhigh, RunxAhigh, and Jim− to Nvylow, RunxA−, and Jim+.
 
-## Changing the combination of TF in post-mitotic MNs leads to survival of last-born MNs
+### Changing the combination of TF in post-mitotic MNs leads to survival of last-born MNs
 
 Overexpressing Imp or knocking down Syp leads to the expression of a TF code in last-born MNs resembling the code found in earlier MNs (MNs 16–23), characterized by Nvy−, RunxA−, and Jim+. These findings suggest that the two RBPs, Imp and Syp, may control the number of surviving MNs through TF regulation.
 
@@ -154,7 +182,7 @@ These results demonstrate that imposing a TF code in last-born MNs resembling th
 
 ## Discussion
 
-## Imp and Syp, lineage size ruler
+### Imp and Syp, lineage size ruler
 
 The timing of neurogenesis termination plays a crucial role in determining the number of neurons produced by stem cells during development. Using our genetic tool to trace a single lineage, we demonstrated that altering the timing of neural stem cell decommissioning changes the number of neurons generated from that stem cell. We found that two intrinsic temporal factors, Imp and Syp, actively participate in defining the final clonal size of a lineage by signaling the timely apoptosis of NBs. Previous research has indicated that both intrinsic mechanisms and external cues control the expression pattern of Imp and Syp in brain NBs. In some brain lineages, Imp and Syp cross-repress each other (Liu et al., 2015; Syed et al., 2017), and this cross-repression is influenced by external cues such as the ecdysone hormone (Homem et al., 2014) or activins (Rossi and Desplan, 2020). However, in Lin A/15 NB, we observed that there is no mutual inhibition between Imp and Syp, suggesting that Imp/Syp-independent mechanisms regulate their sequential expression in Lin A/15 NB (Figure 8—figure supplement 2).
 
@@ -162,7 +190,7 @@ Furthermore, our investigation of a single neuronal lineage revealed that the op
 
 We question whether iMNs maintain their Imp/Syp expression by inheriting determinants from the NB. If so, are these determinants directly influencing Imp/Syp expression, or do they give MNs the capacity to respond to external cues, such as the ecdysone hormone? Based on our hypothesis, we propose that postmitotic MNs, similar to their state in the NB, retain the ability to respond to external cues, which could explain why MNs are eliminated during early pupal stages when ecdysone is highly expressed (Warren et al., 2006).
 
-## Imp and Syp, highly versatile RBPs in specifying neuronal identity and lineage sizes
+### Imp and Syp, highly versatile RBPs in specifying neuronal identity and lineage sizes
 
 Imp and Syp are versatile proteins that play roles in various aspects of NB development. Their opposite temporal expression in brain NBs controls the temporal identity of the NB (Liu et al., 2015; Syed et al., 2017), the timing of NB decommissioning (Yang et al., 2017), and the speed of cell division (Samuels et al., 2020). In the brain, their opposing temporal expression in mushroom body NBs shapes the expression pattern of the Chinmo TF, which, in turn, determines the identity of the neuronal progeny based on its concentration.
 
@@ -172,7 +200,7 @@ We have recently revealed that Imp and Syp not only control the morphology of Li
 
 The question of why an excess of MNs is produced and why neurons undergo PCD during development is a fundamental one in neurodevelopment. PCD is observed in various animal models studied in laboratories, from C. elegans to vertebrates, and several explanations have been proposed to understand why such mechanisms have been selected during evolution (Dekkers et al., 2013; Oppenheim, 1991). The widespread occurrence of PCD during neurodevelopment leads to an intriguing hypothesis that neurons normally fated to die represent an important reservoir that can be used during evolution to explore different morphological possibilities. In this scenario, different mTF codes can be tested without affecting the axon–muscle connectome, allowing for the exploration of various combinations of mTFs until a functional combination is selected. This process may contribute to the diversification of neuronal morphologies and functions, ultimately shaping the complexity of the nervous system during evolution.
 
-## Imp/Syp proteins in development and disease
+### Imp/Syp proteins in development and disease
 
 Imp and Syp are evolutionarily conserved, both homologs are highly expressed in the developing mouse brain and play vital roles in neural development, suggesting a fundamental conservation of their function in the development of central nervous (Chen et al., 2012; Mori et al., 2001; Williams et al., 2016). For example, Imp1, one of the three mouse orthologs of Imp family, is highly expressed in young neuronal progenitors. Its temporal expression with other RBP partners changes the temporal identity of the neuronal stem cells. In particular Imp promotes the self-renewal state of neuronal stem cells while inhibiting differentiation genes (Nishino et al., 2013).
 
@@ -180,11 +208,343 @@ As mentioned in the introduction, any dysregulation of the machinery controlling
 
 ## Materials and methods
 
-## Fly husbandry and crosses
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAD-KD (attP2[68A4])</td>
+      <td>Awasaki et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dpn&gt;KDRT-stop-KDRT&gt;CRE (su(Hw)attP8[8E10])</td>
+      <td>Awasaki et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>act&gt;loxP-stop-loxP&gt;LexA::P65 (attP40[25C7])</td>
+      <td>Lacin and Truman, 2016</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>lexAop-myr::GFP (su(Hw)attP5[50F1])</td>
+      <td>Awasaki et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R10c12-GAL4 (3rd chromosome, attp2)</td>
+      <td>Lacin and Truman, 2016</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>lexAop-Imp-RNAi (attP40[25C7])</td>
+      <td>Rueden et al., 2017</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>lexAop-Imp-RM (attP40[25C7])</td>
+      <td>Rueden et al., 2017</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>lexAop-Syp-RNAi (attP40[25C7])</td>
+      <td>Rueden et al., 2017</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tub-gal4 (3rd chromosome,79A2)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 5138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DVGlut-Gal4 (2nd chromosome, 22E1)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 26160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DVGlut-LexA::GAD (VGlutMI04979)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-P35 (2nd and 3rd chromosome)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 5072; 5073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>20XUAS-Imp-RM-Flag (3rd chromosome)</td>
+      <td>Liu et al., 2015</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>actin^FRT-stop-FRT^Gal4</td>
+      <td>Gift from Alain Garces</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Dcp1 (rabbit polyclonal)</td>
+      <td>Cell signaling</td>
+      <td>Cat#9578S; RRID:AB_2721060</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Elav (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat#9F8A9; RRID:AB_2314364</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Elav (rat monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat#7E8A10; RRID:AB_528218</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-repo (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>RRID:AB_528448</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PH3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2164915</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Dpn (guinea-pig, unknown clonality)</td>
+      <td>Gift from Jim Skeath</td>
+      <td>RRID:AB_2314299</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Imp (rat, unknown clonality)</td>
+      <td>Gift from Claude Desplan</td>
+      <td>N/A</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Syp (rabbit, unknown clonality)</td>
+      <td>Gift from Claude Desplan</td>
+      <td>N/A</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Alexa 647 (goat, polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#A32728; RRID:AB_2633277</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rat Alexa 647 (donkey, polyclonal)</td>
+      <td>Jackson</td>
+      <td>Cat#712-605-153; RRID:AB_2340694</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Alexa 555 (goat, polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#A32727; RRID:AB_2633276</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit Alexa 555 (goat, polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#A32732; RRID:AB_2633281</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rat Alexa 555 (goat, polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab150166</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-guinea-pig DyLight405 (donkey, polyclonal)</td>
+      <td>Jackson</td>
+      <td>Cat#706-475-148; RRID:AB_2340470</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBS-KS-attB2-SA(2)-T2A-LexA::GADfluw-Hsp70 vector</td>
+      <td>Addgene</td>
+      <td>Cat#78307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formaldehyde</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#28908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PBS</td>
+      <td>Dutscher</td>
+      <td>Cat#X0515-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma</td>
+      <td>Cat#T8787-100mL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tween 20</td>
+      <td>Sigma</td>
+      <td>Cat#P7949-100ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BSA</td>
+      <td>Sigma</td>
+      <td>Cat#A7906-500 g</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vectashield mounting medium</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#H1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Abberior MOUNT SOLID ANTIFADE</td>
+      <td>abberior GmbH</td>
+      <td>MM-2013-2X15ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Salmon sperm DNA</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#15632011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Yeast tRNA</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#AM7119</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Murine RNase inhibitor</td>
+      <td>New England Biolabs</td>
+      <td>M0314L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Amira 3D software (version 6.2)</td>
+      <td>SCR_007353</td>
+      <td>https://www.fei.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (version 1.48)</td>
+      <td>Schneider et al., 2012</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad (Prism 8)</td>
+      <td>GraphPad Software Inc</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab (2021b)</td>
+      <td>MathWorks</td>
+      <td>https://www.mathworks.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>smFISH analysis source code in Matlab</td>
+      <td>Guan et al., 2022c</td>
+      <td>https://github.com/Wenyue2022/smFish-analysis-source-code; Guan, 2022a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PCCD note book</td>
+      <td>Guan et al., 2022c</td>
+      <td>https://github.com/Wenyue2022/PCCD-note-book; Guan, 2022b</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly husbandry and crosses
 
 Unless otherwise described, flies were maintained on a standard cornmeal medium and kept at 25°C in a 12:12-hr light:dark cycle. Males and females were chosen at random. A full list of strains used in the paper is included in the Key resources table.
 
-## Lin A/15 NB tracing system (all figures)
+#### Lin A/15 NB tracing system (all figures)
 
 Lin A/15 restrictive labeling is achieved by immortalizing Gal4 expression in Lin A/15 NBs and its descendants (Awasaki et al., 2014; Lacin and Truman, 2016). The following fly strains were crossed to specifically label Lin A:10c12-GAL4 crossed with Dpn>KDRT-stop-KDRT>CRE; act>loxP-stop-loxP>LexA::P65; lexAop-myr::GFP; UAS-KD.
 
@@ -192,7 +552,7 @@ The following fly strains were used to overexpress and knockdown genes (Figures 
 
 Dpn >KDRT-stop-KDRT>CRE; act>loxP-stop-loxP>LexA::P65; lexAop-myr::GFP; UAS-KD crossedwith LexAop-Imp-Flag/CyO; R10c12-GAL4/TM6B to overexpress Imp;with LexAop-Syp-RNAi/CyO; R10c12-GAL4/TM6B to knockdown Syp;with LexAop-Imp-RNAi/CyO; R10c12-GAL4/TM6B to knockdown Imp.
 
-## Lin A/15 MARCM
+#### Lin A/15 MARCM
 
 Genetic crosses to label with GFP all Lin A cells and with mCherry VGlut+ Elav+ neurons (Figure 2):
 
@@ -220,39 +580,39 @@ y,w, hs-Flp1.22; VGlut-Gal4, UAS-mCD8::GFP, Mhc-RFP, FRT42D/CyO; TM6B/MKRS Cross
 
 First-instar larvae (0–12 hr ALH) were heat shocked at 37°C for 20 min to induce mosaic clones in L3 larvae and at 35°C for 15 min to induce mosaic clones in adults.
 
-## VGlut-LexA::GAD transgenic line
+### VGlut-LexA::GAD transgenic line
 
 The VGlut-LexA::GAD transgenic line is generated by the Trojan-mediated conversion of MIMIC (Trojan-MiMIC) technique (Diao et al., 2015). A pBS-KS-attB2-SA(2)-T2A-LexA::GADfluw-Hsp70 Plasmid (addgene plasmid #78307) was injected into embryos of flies bearing intronic MiMIC inserts at VGlut gene (VGlutMI04979) together with phiC31 integrase on the genetic background. G0 flies were crossed with flies from the y, w; Sp/CyO; Dr/TM3, Sb double balancer line, and y- recombinant progeny, which had lost the y+ selection marker associated with the MiMIC insertion, were isolated. The integrase-dependent exchange of T2A-LexA::GAD-containing cassette produce a LexA::GAD driver line that having an expression pattern corresponding to that of VGlut.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
-## Immunostaining of larval and pupal CNS
+#### Immunostaining of larval and pupal CNS
 
 Inverted L3 larvae or open pupae were fixed in 4% paraformaldehyde in Phosphate-buffered saline (PBS) for 20 min at room temperature and blocked in the blocking buffer for 1 hr. L3 larval or pupal CNS were carefully dissected in PBS and then incubated with primary antibodies overnight (≥12 hr) and secondary antibodies in dark for 1 day (≥12 hr) at 4°C. Fresh PBST–BSA (PBS with 0.1% Triton X-100, 1% bovine serum albumin) was used for the blocking, incubation, and washing steps: five times for 20 min at room temperature after fixation and after primary/secondary antibodies. Larval/pupal CNS were mounted onto glass slides using Vectashield anti-fade mounting medium (Vector Labs). Slides were either imaged immediately or stored at 4°C.
 
-## Immunostaining of adult VNC
+#### Immunostaining of adult VNC
 
 After removing the abdominal and head segments, thoraces of the flies were opened and fixed in 4% paraformaldehyde in PBS for 25 min at room temperature and blocked in the blocking buffer for 1 hr. After dissection, adult VNC were incubated with primary antibodies for 1 day and secondary antibodies in dark for 1 day at 4°C. Fresh PBST–BSA (PBS with 0.1% Triton X-100, 1% BSA) was used for the blocking, incubation, and washing steps: five times for 20 min at room temperature after fixation and after primary/secondary antibodies. VNC were mounted onto glass slides using Vectashield anti-fade mounting medium (Vector Labs). Slides were either imaged immediately or stored at 4°C.
 
-## Primary and secondary antibodies
+#### Primary and secondary antibodies
 
 The primary antibodies used in this study include: mouse anti-Elav (DSHB-9F8A9), rat anti-Elav (DSHB-7E8A10), mouse anti-Repo (DSHB- 8D12), rabbit anti-cDcp1 (CellSignaling-9578), rabbit anti-PH3 (Abcam-ab80612), guinea-pig anti-Dpn (gift from Jim skeath, Skeath et al., 2017), rat anti-Imp, and rabbit anti-Syp (gifts from Chris Doe).
 
 The secondary antibodies used in this study include: goat anti-Mouse Alexa 647 (Invitrogen-A32728), donkey anti-rat Alexa 647 (Jackson- 712-605-153), goat anti-Mouse Alexa 555 (Invitrogen-A32727), goat anti-Rabbit Alexa 555 (Invitrogen-A32732), goat anti-Rat Alexa 555 (Abcam-ab150166), and donkey anti-guinea-pig DyLight405 (Jackson- 706-475-148).
 
-## Image acquisition
+### Image acquisition
 
 Multiple 0.5-µm-thick (with exceptions of 1-µm-thick for Figure 6H–M) sections in the z axis (ventro-dorsal for larval/pupal CNS or adult VNC) were imaged with a Leica TCS SP8 or a Zeiss LSM 780 confocal microscope. Binary images for z stack images were generated using NIH ImageJ.
 
-## 5-ethynyl-2’deoxyuridine (EdU) labeling (Figure 6)
+### 5-ethynyl-2’deoxyuridine (EdU) labeling (Figure 6)
 
 To mark late-born MNs, mid-third-instar larvae (98–104 hr ALH) were transferred from standard fly food to fly food containing 250 mM EdU. Pupae were then dissected at indicated time points. Open pupae were fixed in 4% paraformaldehyde in PBS for 20 min at room temperature, followed by a quick wash with PBST (PBS with 0.1% Triton X-100). Edu labeling was then detected using Clicl-iT EdU imaging kit (Invitrogen) according to the manufacturer’s instructions. The immunostaining was then performed as described in the Immunostaining section.
 
-## NB volume quantification
+### NB volume quantification
 
 Each Lin A/15 NB was segmented in 3D in ImageJ/Fiji (Rueden et al., 2017; Schindelin et al., 2012; Schneider et al., 2012), using the LimeSeg plugin (Machado et al., 2019), on the GFP channel, with the following parameters: D_0~4–6, F pressure = 0.01, Z_scale = 6.8, Range in d0 units ~4–6, number of integration step = −1, real XY pixel size = 50. The volume of each segmented cell was used to make the graph in (Figure 3—figure supplement 1).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Graphs of the relative position of each Lin A/15 cell were generated with Microsoft Excel. The spatial coordinates were assigned to each cell using the cell counter plug-in of NIH ImageJ software. The coordinates of each cell were normalized with Microsoft Excel in order to have the position of the Lin A NB at the origin of the plot graph. For samples without NB labeled (as in Figures 6C1 and 7H3), the coordinates of each cell were then normalized to a cell located ventrally (as the cDcp1 positive cell in Figures 6C1 and 7H3).
 
@@ -262,57 +622,57 @@ The quantification process of relative expression of Imp and Syp in Figure 7L wa
 
 All schematics were made in Microsoft PowerPoint (Figures 1G—3G, 6L).
 
-## smFISH
+### smFISH
 
-## Probe design and preparation for smFISH
+#### Probe design and preparation for smFISH
 
 smFISH probe design principle in this study was described in our previous work (Guan et al., 2022c). Briefly, primary probes against exonal sequences of Imp, Syp and Dpn (common sequences of all isoforms of genes of interest; up to 48 probes per gene) were designed using the Biosearch Technologies stellaris RNA FISH probe designer tool (free with registration, https://biosearchtech.com). The primary probe sequences for each gene used in this study are shown in Supplementary file 1. Three Flap sequences were used in this study: the X flap sequence (CACTGAGTCCAGCTCGAAACTTAGGAGG) used in Tsanov et al., 2016, and two sequences we designed and named: RS3505 (AACTACATACTCCCTACCTC) and RS0406 (ACCCTTACTACTACATCATC). The reverse complements of these Flap sequences were added to the 5′ end of the primary probe sequences, using one Flap sequence for all primary probes targeting one gene to avoid signal crosstalk. The primary probe sets were purchased from Integrated DNA Technologies (IDT), using 25 nmol synthesis scale, standard desalting, and at 100 µM in nuclease-free H2O. RS3505 conjugated with Atto565 and RS0406 conjugated with Atto700 are synthesized by LGC Biosearch Technologies and Bio-Synthesis Inc, respectively. X-Flap conjugated with Alexa 647 was a gift from Tom Pettini, University of Cambridge.
 
-## smFISH, sample preparation, and hybridization
+#### smFISH, sample preparation, and hybridization
 
 Dissected larval and pupal CNS from were fixed in 4% paraformaldehyde (in PBS with 0.3% Triton X-100) for 20 min at room temperature. Samples were washed for three times of at least 15 min with PBSTW (PBS with 0.3% Tween-20) before a pre-hybridization wash in smiFISH wash buffer (4 M urea in 2× Saline-sodium citrate buffer (SSC)) at 37°C for 30 min. Samples were then incubated with primary probe sets diluted in smiFISH hybridization buffer 4 M urea, 2× SSC, 5% (vol/vol) dextran sulfate, 0.2 mg/ml 1:1 mixture of sheared salmon sperm DNA and yeast tRNA, 1% (vol/vol) murine RNase inhibitor at 37°C for 12–14 hr. Samples were washed for 40 min at 37°C followed by three times of 15 min in smiFISH wash buffer at room temperature, then incubated in secondary (Flap) probe sets diluted in smiFISH hybridization buffer for 1 hr. Samples were then washed for 2 min in smiFISH wash buffer and three times of 10 min in 2× SSC, then mounted in Vectashield or Abberior Solid mounting media.
 
-## Image acquisition of larval and pupal VNCs after smFISH
+#### Image acquisition of larval and pupal VNCs after smFISH
 
 Images were acquired on an Aberrior Infinity Line confocal microscope with Olympus UPLSAPO60XS, 60x/NA1.3 silicone oil objective. Image stacks were taken with the following settings: voxel size 50 µm × 50 µm (XY) and 150 µm (Z), pixel dwell time 5 µs, sequential line scanning, pinhole 0.93 airy unit. Parameters for the four channels used in this study are: excitation 485 nm, laser 30%, detection 495–550 nm, line accumulation 5; excitation 561 nm, laser power 30%, detection 571–630 nm, line accumulation 5; excitation 640 nm, laser power 15%, detection 650–695 nm, line accumulation 2; excitation 700 nm, laser power 60%, detection 710–780 nm, line accumulation 5.
 
-## smFISH analysis
+#### smFISH analysis
 
 Each Lin A/15 cell was segmented in 3D in ImageJ/Fiji (Rueden et al., 2017; Schindelin et al., 2012; Schneider et al., 2012), using the LimeSeg plugin (Machado et al., 2019), on the GFP channel, with the following parameters: D_0~4–6, F pressure = 0.01, Z_scale = 3, range in d0 units ~4–6, number of integration step = −1, real XY pixel size = 50. For subsequent analysis, each segmented cell was exported into a separate ply file which was then imported in Matlab as a point cloud (The Math Works, Inc). The original stacks were imported in Matlab using the Bio-Formats toolbox (https://www.openmicroscopy.org/bio-formats/downloads/). These stacks were then cropped around each cell using the point clouds generated by individual cell segmentation with LimeSeg.
 
 The mRNA spots were detected in 3D, in the mRNA channel of these cropped stacks, using the method and scripts described in Raj et al., 2008. In short, the spots were identified computationally by running a Matlab image processing script that runs the raw data through a filter (Laplacian of a Gaussian) designed to enhance spots of the correct size and shape while removing the slowly varying background. The filtered stacks are then thresholded to disregard remaining background noise. In order to choose an optimal threshold, all possible thresholds are computed. The thresholds were always chosen manually and close to the plateau. A ‘check File stack’ for each cell was generated in order to visualize the accuracy of the spot detection for a given threshold. In most of our samples, common thresholds were chosen for all the samples of a time point. However, specific threshold were occasionally chosen to give the best visual detection of mRNA spots in our datasets check files.
 
-## PCCD method
+### PCCD method
 
 The PCCD method, as described in our previous work (Guan et al., 2022c), aims to link the expression of a given TF to the birth order of an iMN by using the correlation between the birth order of iMNs and their spatial organization. In our Lin A/15 model, the EdU experiments reveal a good correlation between the birth order of iMNs and their spatial distance from the NB in third instar larvae: young born iMNs are farther away from the NB compared to older iMNs. The final goal of this method is to predict the TF code expression pattern in each iMN in a third instar larva.
 
 The method followed a series of steps:
 
-## Step 1
+#### Step 1
 
 From the imaging, assign spatial x, y, z coordinates and the expression (on/off) of a given TF to each Lin A/15 cell (N > 15, number of Lin A/15 immunostained for a given TF).
 
-## Step 2
+#### Step 2
 
 Calculate the Euclidean distance between the NB and the x, y, z coordinates of each iMN (relative distance).
 
-## Step 3
+#### Step 3
 
 Order iMNs in each Lin A/15 according to their distance to NB. This presents each Lin A/15 as an ordered sequence of iMNs (this defines the x axis position where cell #1 is defined as the furthest from the NB, i.e. the oldest iMNs on average). Then calculate the frequency of expression of all TFs as a function of their rank in each ordered Lin A sequence.
 
-## Step 4
+#### Step 4
 
 Apply a filter (Savitzky–Golay) to smooth each distribution.
 
-## Step 5
+#### Step 5
 
 Define the position in the sequence of the positive cell cluster(s) by using a peak detection method. Determine its length (average number of cells expressing a given TF in all Lin A/15 samples analyzed). Then find the position of the positive cell cluster with this average length compatible with the smoothed TF distribution. The position and its length are represented by a horizontal line.
 
-## Step 6
+#### Step 6
 
 Assemble all positive cell clusters for each TF on the same graph to reveal combinatorial TF code for each iMN. Convert the x’ axis to a birth order axis (1–29) since the distance between iMN and the NB is tightly linked to their birth order. Define the coverage index at the border of all cell clusters.
 
-## More details about the method include
+### More details about the method include
 
 Frequency histograms (Step 3): The frequency histograms of positive cells can in principle be computed in an either global or relative manner. Global means that at each position i, the observed number of positive cells Pi will be normalized by the total number N of observed sequences for this TF. Thus, the frequency at rank i is defined as Pi/N. In contrast in the relative definition of frequencies, at each position i, the frequency is determined by the number of positive cells Pi divided by the number of sequences Ni for which this position has been measured, leading to a frequency at rank i defined as Pi/Ni. The relative measure avoids bias that possibly arises in the global method by considering as negative (by default) cells that are not observed in sequences that are too short to reach this index. In the sequel, we use this relative frequency histogram to limit such bias as much as possible.
 
@@ -326,6 +686,6 @@ Case of a single detected peak (e.g. Jim): The span [ip′,jp′] of the active 
 
 Case of multiple detected peaks (e.g. Nvy (2 peaks) or RunxA (2 peaks)): The sequence was split into the regions [ip,jp] defined by each peak. Then the average number of positive cells ‘n1’, ‘n2’, …, are computed for each of the peak regions. Then the method proceeds within each region and its average number of positive cells as in the case of a single detected peak. This determines both the estimated length and the position of multiple positive cell clusters.
 
-## Materials availability
+### Materials availability
 
 All fly stocks used in this study are available from the corresponding author without restriction.

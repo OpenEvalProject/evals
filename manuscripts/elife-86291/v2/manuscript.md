@@ -12,16 +12,16 @@
 
 ### Affiliations
 
-1. https://ror.org/043k6re07 Department of Physical Education and Health in Biala Podlaska, Faculty in Biala Podlaska, Jozef Pilsudski University of Physical Education Warsaw Poland
-2. https://ror.org/04p2y4s44 Students' Scientific Group of Lifestyle Medicine, 3rd Department of Internal Medicine and Cardiology, Medical University of Warsaw Warsaw Poland
-3. https://ror.org/04p2y4s44 Department of Experimental and Clinical Pharmacology, Center for Preclinical Research and Technology CEPT, Medical University of Warsaw Warsaw Poland
+1. Department of Physical Education and Health in Biala Podlaska, Faculty in Biala Podlaska, Jozef Pilsudski University of Physical Education Warsaw Poland ([ROR:043k6re07](https://ror.org/043k6re07))
+2. Students' Scientific Group of Lifestyle Medicine, 3rd Department of Internal Medicine and Cardiology, Medical University of Warsaw Warsaw Poland ([ROR:04p2y4s44](https://ror.org/04p2y4s44))
+3. Department of Experimental and Clinical Pharmacology, Center for Preclinical Research and Technology CEPT, Medical University of Warsaw Warsaw Poland ([ROR:04p2y4s44](https://ror.org/04p2y4s44))
 4. Institute of Sport-National Research Institute Warsaw Poland
 
 † Corresponding author
 
 ## Abstract
 
-Oxygen uptake (VO 2 ) is one of the most important measures of fitness and critical vital sign. Cardiopulmonary exercise testing (CPET) is a valuable method of assessing fitness in sport and clinical settings. There is a lack of large studies on athletic populations to predict VO 2max using somatic or submaximal CPET variables. Thus, this study aimed to: (1) derive prediction models for maximal VO 2 (VO 2max ) based on submaximal exercise variables at anaerobic threshold (AT) or respiratory compensation point (RCP) or only somatic and (2) internally validate provided equations. Four thousand four hundred twenty-four male endurance athletes (EA) underwent maximal symptom-limited CPET on a treadmill (n=3330) or cycle ergometer (n=1094). The cohort was randomly divided between: variables selection (n runners = 1998; n cyclist = 656), model building (n runners = 666; n cyclist = 219), and validation (n runners = 666; n cyclist = 219). Random forest was used to select the most significant variables. Models were derived and internally validated with multiple linear regression. Runners were 36.24±8.45 years; BMI = 23.94 ± 2.43 kg·m −2 ; VO 2max =53.81±6.67 mL·min −1 ·kg −1 . Cyclists were 37.33±9.13 years; BMI = 24.34 ± 2.63 kg·m −2 ; VO 2max =51.74±7.99 mL·min −1 ·kg −1 . VO 2 at AT and RCP were the most contributing variables to exercise equations. Body mass and body fat had the highest impact on the somatic equation. Model performance for VO 2max based on variables at AT was R 2 =0.81, at RCP was R 2 =0.91, at AT and RCP was R 2 =0.91 and for somatic-only was R 2 =0.43. Derived prediction models were highly accurate and fairly replicable. Formulae allow for precise estimation of VO 2max based on submaximal exercise performance or somatic variables. Presented models are applicable for sport and clinical settling. They are a valuable supplementary method for fitness practitioners to adjust individualised training recommendations. No external funding was received for this work.
+Background:Oxygen uptake (VO2) is one of the most important measures of fitness and critical vital sign. Cardiopulmonary exercise testing (CPET) is a valuable method of assessing fitness in sport and clinical settings. There is a lack of large studies on athletic populations to predict VO2max using somatic or submaximal CPET variables. Thus, this study aimed to: (1) derive prediction models for maximal VO2 (VO2max) based on submaximal exercise variables at anaerobic threshold (AT) or respiratory compensation point (RCP) or only somatic and (2) internally validate provided equations.Methods:Four thousand four hundred twenty-four male endurance athletes (EA) underwent maximal symptom-limited CPET on a treadmill (n=3330) or cycle ergometer (n=1094). The cohort was randomly divided between: variables selection (nrunners = 1998; ncyclist = 656), model building (nrunners = 666; ncyclist = 219), and validation (nrunners = 666; ncyclist = 219). Random forest was used to select the most significant variables. Models were derived and internally validated with multiple linear regression.Results:Runners were 36.24±8.45 years; BMI = 23.94 ± 2.43 kg·m−2; VO2max=53.81±6.67 mL·min−1·kg−1. Cyclists were 37.33±9.13 years; BMI = 24.34 ± 2.63 kg·m−2; VO2max=51.74±7.99 mL·min−1·kg−1. VO2 at AT and RCP were the most contributing variables to exercise equations. Body mass and body fat had the highest impact on the somatic equation. Model performance for VO2max based on variables at AT was R2=0.81, at RCP was R2=0.91, at AT and RCP was R2=0.91 and for somatic-only was R2=0.43.Conclusions:Derived prediction models were highly accurate and fairly replicable. Formulae allow for precise estimation of VO2max based on submaximal exercise performance or somatic variables. Presented models are applicable for sport and clinical settling. They are a valuable supplementary method for fitness practitioners to adjust individualised training recommendations.Funding:No external funding was received for this work.
 
 ## Introduction
 
@@ -43,11 +43,11 @@ Therefore, in this research, with the support of ML, we look for algorithms and 
 
 We have applied the development and validation of the prediction TRIPOD guidelines to conduct the study (see Supplementary Material 1TRIPOD Checklist for Prediction Model Development and Validation) (Collins et al., 2015). The study is based on retrospective data analysis from the CPET registry collected from 2013 to 2021 at the medical clinic (Sportslab, Warsaw, Poland). All CPET have been performed at the individual request of participants, as a part of regular training monitoring or performance assessment.
 
-## Ethical approval
+### Ethical approval
 
 The Institutional Review Board of the Bioethical Committee at the Medical University of Warsaw (AKBE/32/2021) has approved the study protocol. The regulations of the Declaration of Helsinki were met during all parts of the study. Each study participant delivered written consent to undergo CPET and participate in the study.
 
-## Derivation cohort
+### Derivation cohort
 
 We selected the cohort with the use of rigorous exclusion/inclusion criteria. Due to the insufficient number of women in our database and the number of potential variables in the regression models for adequate power, we had to limit ourselves to conduct analysis in the male population only (Martens and Logan, 2021). Out of 6439 healthy, adult male cyclists and long-distance runners that undergone CPET, 4423 met the criteria as further: (1) age ≥18 years, (2) declared regular cycling or running training for ≥3 months, (3) had no extreme outliers ≤ or ≥±3 standard deviations (SD) from mean for all of the testing variables (beyond ≥±3 SD in VO2max), (4) lack of any injury, medical condition, or addiction in medical history that may affect exercise capacity, (5) not taking any medications with a modifying effect on exercise capacity, (6) maximum exertion achieved during CPET. We defined the maximum exertion in CPET as the fulfilment of the minimum six of the following criteria: (1) respiratory exchange ratio (RER) ≥1.10, (2) present VO2 plateau (growth <100 mL·min–1 in VO2 despite increased running speed or cycling power), (3) respiratory frequency (fR) ≥45 breaths·min–1, (4) declared subjective exertion intensity during CPET ≥18 in the Borg scale (Borg, 1970), (5) blood lactate concentration [La-]b ≥8 mmol·L–1, (6) growth in speed/power ≥10% of respiratory compensation point (RCP) values after exceeding the RCP, (7) peak heart rate (HRpeak) ≥15 beats·min–1 below predicted maximal heart rate (HRmax) (Lach et al., 2021).
 
@@ -57,7 +57,7 @@ Participants’ selection procedure has been shown in Figure 1.
 
 **Figure 1.:** Abbreviations: EA, endurance athlete; CPET, cardiopulmonary exercise testing; SD, standard deviation; TE, treadmill; RER, respiratory exchange ratio; VO2, oxygen uptake (mL·min−1·kg−1); [La−]b, lactate concentration (mmol·L−1); fR, breathing frequency (breaths·min−1); RCP, respiratory compensation point; HRpeak, peak heart rate (beats·min−1); HRmax, maximal heart rate (bpm). At both stages of the selection, some participants met several (>1) exclusion criteria.
 
-## Somatic measurements and CPET protocols
+### Somatic measurements and CPET protocols
 
 Body mass was measured with a body composition (BC) analyser (Tanita, MC 718, Japan) with the multifrequency of 5 kHz/50 kHz/250 kHz via the bioimpedance analysis and normal testing mode. The participants’ skin was cleaned with alcohol before placing the electrodes on the skin. Prior to the test, the participants received instructions to refrain from exercising for 2 hr, consume a light meal rich in carbohydrates 2–3 hr beforehand, and maintain hydration by drinking isotonic beverages. Additionally, they were advised to abstain from medications, caffeine, and cigarettes on the day of the test.
 
@@ -67,7 +67,7 @@ Each CPET began with a 5 min personalised warm-up (walk or easy jog with ‘conv
 
 The anaerobic threshold (AT) was established with the following criteria: (1) common start of VE/VO2 and VE/VCO2 curves, (2) end-tidal partial pressure of oxygen raised constantly with the end-tidal partial pressure of carbon dioxide (Beaver et al., 1986). The was established with the following criteria: (1) PetCO2 must decrease after reaching maximal amount, (2) the presence of fast nonlinear growth in VE (second deflection), (3) the VE/VCO2 ratio achieved minimum and started to rise, and (4) a nonlinear increase in VCO2 versus VO2 (lack of linearity) (Beaver et al., 1986). The [La-]b was estimated for AT and RCP in relation to power or speed (Wiecha et al., 2022).
 
-## Data analysis
+### Data analysis
 
 Our comprehensive ML approach enables the evaluation of each formula by preliminary variables precision (at the stage of selection), then accuracy (during the model’s building) and recall (in internal validation).
 
@@ -75,33 +75,757 @@ Individual CPET results were saved into the Excel file (Microsoft Corporation, R
 
 Three-step variable selection procedures based on random forests were applied using the R package VSURF in RStudio software (R Core Team, Vienna, Austria; version 3.6.4) (Genuer et al., 2016). For each level of measurement (AT, RCP) and their combination (AT+RCP), significant variables were identified separately. The first step was dedicated to eliminate irrelevant variables from the dataset. Second step aimed to select all variables related to the response for interpretation purposes. The third step refined the selection by eliminating redundancy in the set of variables selected by the second step, for prediction purposes (Genuer et al., 2017). Each time for variables selection, the anthropometric variables as in Tables 1–2 and the CPET parameters given in Tables 3–4 from a specific level of measurement (AT; RCP) and their combinations were visible.
 
+**Table 1.**
+ Basic anthropometric characteristics for runners.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variable (unit)</th>
+      <th colspan="3">Derivation group n=1998</th>
+      <th colspan="3">Testing group n=666</th>
+      <th colspan="3">Validation group n=666</th>
+    </tr>
+    <tr>
+      <th>Mean</th>
+      <th>CI</th>
+      <th>SD</th>
+      <th>Mean</th>
+      <th>CI</th>
+      <th>SD</th>
+      <th>Mean</th>
+      <th>CI</th>
+      <th>SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>36.2</td>
+      <td>35.6–36.9</td>
+      <td>8.45</td>
+      <td>35.9</td>
+      <td>35.5–36.3</td>
+      <td>8.05</td>
+      <td>35.5</td>
+      <td>34.9–36.2</td>
+      <td>8.14</td>
+    </tr>
+    <tr>
+      <td>Height (cm)</td>
+      <td>180.0</td>
+      <td>179.6–180.5</td>
+      <td>6.04</td>
+      <td>179.4</td>
+      <td>179.1–179.7</td>
+      <td>6.13</td>
+      <td>179.7</td>
+      <td>179.2–180.2</td>
+      <td>6.61</td>
+    </tr>
+    <tr>
+      <td>BM (kg)</td>
+      <td>77.7</td>
+      <td>77.0–78.4</td>
+      <td>9.35</td>
+      <td>77.7</td>
+      <td>77.3–78.1</td>
+      <td>9.29</td>
+      <td>77.9</td>
+      <td>77.1–78.6</td>
+      <td>10.1</td>
+    </tr>
+    <tr>
+      <td>BMI (kg·m–2)</td>
+      <td>23.9</td>
+      <td>23.8–24.1</td>
+      <td>2.43</td>
+      <td>24.1</td>
+      <td>24.0–24.2</td>
+      <td>2.41</td>
+      <td>24.1</td>
+      <td>23.9–24.3</td>
+      <td>2.56</td>
+    </tr>
+    <tr>
+      <td>BF (%)</td>
+      <td>15.4</td>
+      <td>15.1–15.7</td>
+      <td>4.55</td>
+      <td>15.5</td>
+      <td>15.3–15.7</td>
+      <td>4.52</td>
+      <td>15.4</td>
+      <td>15.1–15.8</td>
+      <td>4.55</td>
+    </tr>
+    <tr>
+      <td>FM (kg)</td>
+      <td>12.2</td>
+      <td>11.9–12.6</td>
+      <td>4.68</td>
+      <td>12.3</td>
+      <td>12.1–12.5</td>
+      <td>4.65</td>
+      <td>12.3</td>
+      <td>11.9–12.7</td>
+      <td>4.92</td>
+    </tr>
+    <tr>
+      <td>FFM (kg)</td>
+      <td>65.5</td>
+      <td>65.0–66.0</td>
+      <td>6.43</td>
+      <td>65.4</td>
+      <td>65.1–65.7</td>
+      <td>6.31</td>
+      <td>65.6</td>
+      <td>65.1–66.1</td>
+      <td>6.86</td>
+    </tr>
+  </tbody>
+</table>
+
+_BM, body mass; BMI, body mass index; BF, body fat; FM, fat mass; FFM, fat-free mass; CI, 95% confidence interval; SD, standard deviation._
+
+**Table 2.**
+ Basic anthropometric characteristics for cyclists.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variable (unit)</th>
+      <th colspan="3">Derivation group n=656</th>
+      <th colspan="3">Testing group n=219</th>
+      <th colspan="3">Validation group n=219</th>
+    </tr>
+    <tr>
+      <th>Mean</th>
+      <th>CI</th>
+      <th>SD</th>
+      <th>Mean</th>
+      <th>CI</th>
+      <th>SD</th>
+      <th>Mean</th>
+      <th>CI</th>
+      <th>SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>37.3</td>
+      <td>36.6–38.0</td>
+      <td>9.13</td>
+      <td>37.1</td>
+      <td>35.9–38.4</td>
+      <td>9.50</td>
+      <td>37.6</td>
+      <td>36.5–38.8</td>
+      <td>8.46</td>
+    </tr>
+    <tr>
+      <td>Height (cm)</td>
+      <td>179.9</td>
+      <td>179.4–180.4</td>
+      <td>6.27</td>
+      <td>180.1</td>
+      <td>179.2–181.0</td>
+      <td>6.96</td>
+      <td>180.2</td>
+      <td>179.4–181.0</td>
+      <td>6.13</td>
+    </tr>
+    <tr>
+      <td>BM (kg)</td>
+      <td>78.8</td>
+      <td>78.1–79.6</td>
+      <td>9.80</td>
+      <td>79.1</td>
+      <td>77.7–80.5</td>
+      <td>10.4</td>
+      <td>79.8</td>
+      <td>78.4–81.3</td>
+      <td>10.9</td>
+    </tr>
+    <tr>
+      <td>BMI (kg·m–2)</td>
+      <td>24.3</td>
+      <td>24.1–24.6</td>
+      <td>2.63</td>
+      <td>24.4</td>
+      <td>24.0–24.7</td>
+      <td>2.80</td>
+      <td>24.6</td>
+      <td>24.2–25.0</td>
+      <td>2.96</td>
+    </tr>
+    <tr>
+      <td>BF (%)</td>
+      <td>16.4</td>
+      <td>15.7–17.1</td>
+      <td>4.99</td>
+      <td>16.1</td>
+      <td>15.7–16.5</td>
+      <td>4.81</td>
+      <td>16.2</td>
+      <td>15.5–16.8</td>
+      <td>4.87</td>
+    </tr>
+    <tr>
+      <td>FM (kg)</td>
+      <td>13.3</td>
+      <td>12.6–14.1</td>
+      <td>5.66</td>
+      <td>13.0</td>
+      <td>12.6–13.4</td>
+      <td>5.27</td>
+      <td>13.3</td>
+      <td>12.5–14.0</td>
+      <td>5.85</td>
+    </tr>
+    <tr>
+      <td>FFM (kg)</td>
+      <td>65.8</td>
+      <td>64.9–66.6</td>
+      <td>6.25</td>
+      <td>65.8</td>
+      <td>65.4–66.3</td>
+      <td>6.06</td>
+      <td>66.6</td>
+      <td>65.7–67.4</td>
+      <td>6.58</td>
+    </tr>
+  </tbody>
+</table>
+
+_BM, body mass; BMI, body mass index; BF, body fat; FM, fat mass; FFM, fat-free mass; CI, 95% confidence interval; SD, standard deviation._
+
+**Table 3.**
+ Cardiopulmonary exercise testing (CPET) characteristics for runners.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variable (unit)</th>
+      <th colspan="3">Derivation group n=1998</th>
+      <th colspan="3">Testing group n=666</th>
+      <th colspan="3">Validation group n=666</th>
+    </tr>
+    <tr>
+      <th>Mean</th>
+      <th>CI</th>
+      <th>SD</th>
+      <th>Mean</th>
+      <th>CI</th>
+      <th>SD</th>
+      <th>Mean</th>
+      <th>CI</th>
+      <th>SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rVO2AT (mL·min–1·kg–1)</td>
+      <td>38.4</td>
+      <td>38.1–38.8</td>
+      <td>5.01</td>
+      <td>38.5</td>
+      <td>38.3–38.7</td>
+      <td>4.88</td>
+      <td>38.1</td>
+      <td>37.7–38.5</td>
+      <td>5.16</td>
+    </tr>
+    <tr>
+      <td>RERAT</td>
+      <td>0.87</td>
+      <td>0.86–0.87</td>
+      <td>0.04</td>
+      <td>0.87</td>
+      <td>0.86–0.87</td>
+      <td>0.04</td>
+      <td>0.87</td>
+      <td>0.86–0.87</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>HRAT (beats·min–1)</td>
+      <td>151.5</td>
+      <td>150.8–152.3</td>
+      <td>10.3</td>
+      <td>151.0</td>
+      <td>150.6–151.5</td>
+      <td>10.8</td>
+      <td>152.0</td>
+      <td>151.2–152.8</td>
+      <td>10.8</td>
+    </tr>
+    <tr>
+      <td>VEAT (L·min–1)</td>
+      <td>79.1</td>
+      <td>78.1–80.0</td>
+      <td>12.2</td>
+      <td>78.3</td>
+      <td>77.8–78.9</td>
+      <td>12.0</td>
+      <td>77.2</td>
+      <td>76.3–78.2</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <td>SPEEDAT (km·h–1)</td>
+      <td>11.0</td>
+      <td>10.9–11.1</td>
+      <td>1.45</td>
+      <td>11.0</td>
+      <td>11.0–11.1</td>
+      <td>1.36</td>
+      <td>10.9</td>
+      <td>10.8–11.0</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <td>LAAT (mmol·L–1)</td>
+      <td>2.08</td>
+      <td>2.02–2.14</td>
+      <td>0.63</td>
+      <td>1.80</td>
+      <td>1.76–1.83</td>
+      <td>0.62</td>
+      <td>2.35</td>
+      <td>2.27–2.42</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>rVO2RCP (mL·min–1·kg–1)</td>
+      <td>47.5</td>
+      <td>47.0–48.0</td>
+      <td>5.88</td>
+      <td>47.7</td>
+      <td>47.4–48.0</td>
+      <td>6.15</td>
+      <td>47.3</td>
+      <td>46.8–47.8</td>
+      <td>6.16</td>
+    </tr>
+    <tr>
+      <td>RERRCP</td>
+      <td>1.00</td>
+      <td>1.00–1.00</td>
+      <td>0.04</td>
+      <td>1.00</td>
+      <td>1.00–1.00</td>
+      <td>0.04</td>
+      <td>1.00</td>
+      <td>1.00–1.00</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>HRRCP (beats·min–1)</td>
+      <td>173.4</td>
+      <td>172.7–174.1</td>
+      <td>9.21</td>
+      <td>173.2</td>
+      <td>172.8–173.6</td>
+      <td>9.30</td>
+      <td>174.3</td>
+      <td>173.5–175.0</td>
+      <td>9.50</td>
+    </tr>
+    <tr>
+      <td>VERCP (L·min–1)</td>
+      <td>114.7</td>
+      <td>113.5–116.0</td>
+      <td>15.9</td>
+      <td>113.9</td>
+      <td>113.1–114.6</td>
+      <td>16.7</td>
+      <td>112.7</td>
+      <td>111.4–114.0</td>
+      <td>16.2</td>
+    </tr>
+    <tr>
+      <td>SPEEDRCP (km·h–1)</td>
+      <td>14.0</td>
+      <td>13.9–14.1</td>
+      <td>1.77</td>
+      <td>14.1</td>
+      <td>14.0–14.1</td>
+      <td>1.70</td>
+      <td>13.9</td>
+      <td>13.8–14.1</td>
+      <td>1.75</td>
+    </tr>
+    <tr>
+      <td>LARCP (mmol·L–1)</td>
+      <td>4.72</td>
+      <td>4.63–4.82</td>
+      <td>1.04</td>
+      <td>4.40</td>
+      <td>4.34–4.45</td>
+      <td>1.04</td>
+      <td>4.81</td>
+      <td>4.69–4.93</td>
+      <td>1.14</td>
+    </tr>
+    <tr>
+      <td>rVO2max (mL·min–1·kg–1)</td>
+      <td>53.8</td>
+      <td>53.3–54.3</td>
+      <td>6.67</td>
+      <td>54.3</td>
+      <td>54.0–54.6</td>
+      <td>6.95</td>
+      <td>53.8</td>
+      <td>53.3–54.3</td>
+      <td>7.09</td>
+    </tr>
+  </tbody>
+</table>
+
+_CI, 95% confidence interval; SD, standard deviation; rVO2AT, oxygen uptake at anaerobic threshold relative to body mass; RERAT, respiratory exchange ratio at anaerobic threshold; HRAT, heart rate at anaerobic threshold; VEAT, pulmonary ventilation at anaerobic threshold; SPEEDAT, velocity at anaerobic threshold; LAAT, blood lactate concentration at anaerobic threshold; rVO2RCP, oxygen uptake at respiratory compensation point relative to body mass; RERRCP, respiratory exchange ratio at respiratory compensation point; HRRCP, heart rate at respiratory compensation point; VERCP, pulmonary ventilation at respiratory compensation point; SPEEDRCP, velocity at respiratory compensation point; LARCP, blood lactate concentration at respiratory compensation point; rVO2max, maximal oxygen uptake relative to body mass._
+
+**Table 4.**
+ Cardiopulmonary exercise testing (CPET) characteristics for cyclists.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variable (unit)</th>
+      <th colspan="3">Derivation group n=656</th>
+      <th colspan="3">Testing group n=219</th>
+      <th colspan="3">Validation group n=219</th>
+    </tr>
+    <tr>
+      <th>Mean</th>
+      <th>CI</th>
+      <th>SD</th>
+      <th>Mean</th>
+      <th>CI</th>
+      <th>SD</th>
+      <th>Mean</th>
+      <th>CI</th>
+      <th>SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rVO2AT (mL·min–1·kg–1)</td>
+      <td>33.0</td>
+      <td>32.5–33.4</td>
+      <td>5.84</td>
+      <td>33.2</td>
+      <td>32.4–33.9</td>
+      <td>5.68</td>
+      <td>33.7</td>
+      <td>32.9–34.5</td>
+      <td>5.89</td>
+    </tr>
+    <tr>
+      <td>RERAT</td>
+      <td>0.87</td>
+      <td>0.87–0.87</td>
+      <td>0.04</td>
+      <td>0.87</td>
+      <td>0.87–0.88</td>
+      <td>0.04</td>
+      <td>0.87</td>
+      <td>0.87–0.88</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>HRAT (beats·min–1)</td>
+      <td>142.2</td>
+      <td>141.3–143.1</td>
+      <td>11.7</td>
+      <td>140.7</td>
+      <td>139.1–142.3</td>
+      <td>11.8</td>
+      <td>141.2</td>
+      <td>139.7–142.6</td>
+      <td>10.8</td>
+    </tr>
+    <tr>
+      <td>VEAT (L·min–1)</td>
+      <td>64.9</td>
+      <td>64.0–65.7</td>
+      <td>11.0</td>
+      <td>65.1</td>
+      <td>63.7–66.5</td>
+      <td>10.6</td>
+      <td>67.4</td>
+      <td>66.0–68.9</td>
+      <td>11.2</td>
+    </tr>
+    <tr>
+      <td>rPOWAT (W·kg–1)</td>
+      <td>2.28</td>
+      <td>2.24–2.32</td>
+      <td>0.48</td>
+      <td>2.27</td>
+      <td>2.21–2.34</td>
+      <td>0.48</td>
+      <td>2.33</td>
+      <td>2.27–2.39</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <td>LAAT (mmol·L–1)</td>
+      <td>1.86</td>
+      <td>1.82–1.90</td>
+      <td>0.51</td>
+      <td>1.84</td>
+      <td>1.77–1.90</td>
+      <td>0.50</td>
+      <td>1.80</td>
+      <td>1.74–1.87</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>rVO2RCP (mL·min–1·kg–1)</td>
+      <td>44.0</td>
+      <td>43.5–44.6</td>
+      <td>7.38</td>
+      <td>44.4</td>
+      <td>43.4–45.4</td>
+      <td>7.32</td>
+      <td>44.9</td>
+      <td>43.8–45.9</td>
+      <td>7.63</td>
+    </tr>
+    <tr>
+      <td>RERRCP</td>
+      <td>1.01</td>
+      <td>1.01–1.01</td>
+      <td>0.04</td>
+      <td>1.01</td>
+      <td>1.01–1.02</td>
+      <td>0.04</td>
+      <td>1.01</td>
+      <td>1.01–1.02</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>HRRCP (beats·min–1)</td>
+      <td>168.8</td>
+      <td>168.0–169.7</td>
+      <td>10.5</td>
+      <td>167.7</td>
+      <td>166.2–169.2</td>
+      <td>11.3</td>
+      <td>168.4</td>
+      <td>167.1–169.6</td>
+      <td>9.11</td>
+    </tr>
+    <tr>
+      <td>VERCP (L·min–1)</td>
+      <td>106.2</td>
+      <td>104.8–107.6</td>
+      <td>17.7</td>
+      <td>107.6</td>
+      <td>105.3–109.8</td>
+      <td>16.8</td>
+      <td>110.4</td>
+      <td>107.9–112.9</td>
+      <td>18.7</td>
+    </tr>
+    <tr>
+      <td>rPOWRCP (W·kg–1)</td>
+      <td>3.34</td>
+      <td>3.29–3.38</td>
+      <td>0.63</td>
+      <td>3.33</td>
+      <td>3.25–3.42</td>
+      <td>0.63</td>
+      <td>3.40</td>
+      <td>3.32–3.48</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>LARCP (mmol·L–1)</td>
+      <td>4.54</td>
+      <td>4.47–4.61</td>
+      <td>0.97</td>
+      <td>4.61</td>
+      <td>4.48–4.75</td>
+      <td>1.04</td>
+      <td>4.47</td>
+      <td>4.34–4.61</td>
+      <td>1.03</td>
+    </tr>
+    <tr>
+      <td>rVO2MAX (mL·min–1·kg–1)</td>
+      <td>51.7</td>
+      <td>51.1–52.4</td>
+      <td>7.99</td>
+      <td>52.0</td>
+      <td>50.9–53.1</td>
+      <td>8.01</td>
+      <td>52.3</td>
+      <td>51.2–53.4</td>
+      <td>8.08</td>
+    </tr>
+  </tbody>
+</table>
+
+_CI, 95% confidence interval; SD, standard deviation; rVO2AT, oxygen uptake at anaerobic threshold relative to body mass; RERAT, respiratory exchange ratio at anaerobic threshold; HRAT, heart rate at anaerobic threshold; VEAT, pulmonary ventilation at anaerobic threshold; rPOWAT, power at anaerobic threshold relative to body mass; LAAT, blood lactate concentration at anaerobic threshold; rVO2RCP, oxygen uptake at respiratory compensation point relative to body mass; RERRCP, respiratory exchange ratio at respiratory compensation point; HRRCP, heart rate at respiratory compensation point; VERCP, pulmonary ventilation at respiratory compensation point; LARCP, blood lactate concentration at respiratory compensation point; rPOWRCP, power at respiratory compensation point relative to body mass; rVO2max, maximal oxygen uptake relative to body mass._
+
 After selection variables were included in the further analysis, only selected parameters were put into multiple linear regression (MLR) modelling. The data for MLR model building were randomly distributed into sets, that is derivation, testing, validation representing 60%, 20%, and 20% of the cases, respectively. As a result, only significant predictors (with p<0.05) were included in the final models. Derived equations are characterised by the coefficient of determination (R2), root mean square error (RMSE), and mean absolute error (MAE). Bland-Altman plots analysis was used to establish the model’s precision and accuracy during validation (Altman and Bland, 1983). Other implemented tests to reach the complete fulfilment of MLR modelling requirements included Ramsey’s RESET test (for the correctness of specificity in MLR equations), Chow test (for stability assessment between different coefficients), and Durbin-Watson test (for autocorrelation of residuals). Each model was examined under the above-mentioned requirements and any irregularities have not been noted.
 
 Ggplot 2 package in RStudio (R Core Team, Vienna, Austria; version 3.6.4), GraphPad Prism (GraphPad Software; San Diego, CA, USA; version 9.0.0 for Mac OS), and STATA software (StataCorp, College Station, TX, USA; version 15.1) were used in statistical analysis. A two-sided p-value <0.05 was considered as the significance borderline.
 
 ## Results
 
-## Somatic measurements and CPET results
+### Somatic measurements and CPET results
 
 Anthropometric data of the runners models for derivation, testing, and validation groups are presented in Table 1, while cyclists are in Table 2. The runners groups consisted of 1998, 666, and 666 men for derivation, testing, and validation groups, respectively. In turn, the cyclists groups included 656, 219, and 219 men, respectively. Significant differences (p<0.05) between derivation cohorts of runners and cyclists were in BMI and age, between testing cohorts in all baseline parameters, whereas between validation cohorts only in BMI.
 
 CPET results for runners models are presented in Table 3 and for cyclists in Table 4. Runners in the derivation cohort achieved relative to body mass VO2max (rVO2max) of 53.8±6.67 mL·min–1·kg–1 (95% CI: 53.3–54.3), in testing group 54.3±6.95 mL·min–1·kg–1 (95% CI: 54.0–54.6), and in validation group 53.8±7.09 mL·min–1·kg–1 (95% CI: 53.3–54.3). In cyclists groups mean rVO2max was 51.7±7.99 mL·min–1·kg–1 (95% CI: 51.1–52.4), 52.0±8.01 mL·min–1·kg–1 (95% CI: 50.9–53.1), and 52.3±8.08 mL·min–1·kg–1 (95% CI: 51.2–53.4) for derivation, testing, and validation cohorts, respectively. Relative to body mass oxygen uptake at anaerobic threshold (rVO2AT) in runners groups accounted for 71.6 ± 5.10% (95% CI: 71.2–71.9), 71.1 ± 4.91% (95% CI: 70.9–71.3), and 71.0 ± 5.42% (95% CI: 70.6–71.5) of rVO2max in derivation, testing, and validation cohorts, respectively. In cyclists, it was 63.7 ± 5.20% (95% CI: 63.3–64.1%), 63.8 ± 5.00% (95% CI: 63.1–64.4), and 64.4 ± 4.73% (95% CI: 63.8–65.0) of rVO2max, respectively. In turn, relative to body mass oxygen uptake at respiratory compensation point (rVO2RCP) in runners accounted for 87.8 ± 3.23% (95% CI: 87.5–88.0), 87.6 ± 3.60% (95% CI: 87.4–87.8), and 87.7 ± 3.35% (87.4–88.0) of rVO2max for derivation, testing, and validation cohorts, respectively, while in cyclists for 85.0 ± 4.18% (95% CI: 84.7–85.4), 85.4 ± 4.09% (95% CI: 84.8–85.9), and 85.7 ± 4.14% (95% CI: 85.1–86.2) of rVO2max, respectively. There were no significant differences in threshold-to-maximum percentages values between derivation, testing, and validation cohorts among the runners and cyclists groups, whereas variations between runners and cyclists threshold-to-maximum results were all significant (p<0.05).
 
-## Prediction models based on AT and RCP
+### Prediction models based on AT and RCP
 
 Full forms of MLR prediction models for cyclists are demonstrated in Table 5, whereas for runners in Table 6. The models prediction performance is presented as R2 along with RMSE and MAE. Briefly, R2 ranged for cyclists equations from 0.43 for somatic parameters (SOM) equation to 0.913 for RCP equations. For runners formulae, R2 ranged from 0.35 for SOM equation to 0.899 for AT and AT+RCP equations. Obtained RMSE for cyclists models was the lowest for RCP equations (=2.03) and the highest for SOM equation (=6.11). For runners, RMSE ranged from 2.0 for AT and AT+RCP equations to 5.54 for SOM equation. Similarly, observed MAE for cyclists was the lowest for RCP equation (=1.64 mL·min–1·kg–1) in the validation group and the highest for SOM equation (=4.74 mL·min–1·kg–1), while in runners the lowest for AT and AT+RCP equations (=1.58 mL·min–1·kg–1) and the highest for SOM equation (=4.37 mL·min–1·kg–1). The performance of prediction equations is demonstrated in Figure 2.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/86291/elife-86291-fig2-v2.jpg)
 
-**Figure 2.:** 2max.Abbreviations: VO2max; maximal oxygen uptake; AT, anaerobic threshold; RCP, respiratory compensation point; Max, maximal; Som, somatic. All values are presented in mL·min–1·kg–1. Upper panel shows performance for running equations, while the lower panel shows performance for cycling equations. Panel A shows performance of the prediction model for AT; panel B for RCP; panel C for AT and RCP; panel D for somatic-only equation.
+**Figure 2.:** Abbreviations: VO2max; maximal oxygen uptake; AT, anaerobic threshold; RCP, respiratory compensation point; Max, maximal; Som, somatic. All values are presented in mL·min–1·kg–1. Upper panel shows performance for running equations, while the lower panel shows performance for cycling equations. Panel A shows performance of the prediction model for AT; panel B for RCP; panel C for AT and RCP; panel D for somatic-only equation.
 
-## Models validation
+**Table 5.**
+ VO2max prediction equations for cyclists.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model’s category</th>
+      <th rowspan="2">Multiple linear regression equation</th>
+      <th rowspan="2">R2</th>
+      <th colspan="2">Derivation group performance</th>
+      <th colspan="2">Validation group performance</th>
+    </tr>
+    <tr>
+      <th>RMSE</th>
+      <th>MAE</th>
+      <th>RMSE</th>
+      <th>MAE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AT</td>
+      <td>VO2max = 21.29 + 0.95 * rVO2AT + 1.74 * rPOWAT - 0.30 * BF</td>
+      <td>0.811</td>
+      <td>3.62</td>
+      <td>2.89</td>
+      <td>3.42</td>
+      <td>2.72</td>
+    </tr>
+    <tr>
+      <td>RCP</td>
+      <td>VO2max = 8.57 + 1.08 * rVO2RCP - 0.04 * VERCP</td>
+      <td>0.913</td>
+      <td>2.12</td>
+      <td>1.66</td>
+      <td>2.03</td>
+      <td>1.64</td>
+    </tr>
+    <tr>
+      <td>AT+RCP</td>
+      <td>VO2max = 10.57 + 0.98 * rVO2RCP - 0.12 * BF</td>
+      <td>0.909</td>
+      <td>2.26</td>
+      <td>1.78</td>
+      <td>2.11</td>
+      <td>1.72</td>
+    </tr>
+    <tr>
+      <td>SOM</td>
+      <td>VO2max = 82.36–0.14 * BM - 0.66 * BF - 0.22 * Age</td>
+      <td>0.43</td>
+      <td>6.06</td>
+      <td>4.70</td>
+      <td>6.11</td>
+      <td>4.74</td>
+    </tr>
+  </tbody>
+</table>
+
+_AT, equation based on anaerobic threshold; RCP, equation based on respiratory compensation point; SOM, equation based on somatic variables only; R2, adjusted R2; RMSE, root mean square error; MAE, mean absolute error (mL·min–1·kg–1); VO2max, maximal oxygen uptake relative to body mass (mL·min–1·kg–1); rVO2AT, oxygen uptake at anaerobic threshold relative to body mass (mL·min–1·kg–1); rPOWAT, power at anaerobic threshold relative to body mass (W·kg–1); rVO2RCP, oxygen uptake at respiratory compensation point relative to body mass (mL·min–1·kg–1); VERCP, pulmonary ventilation at respiratory compensation point (L·min–1); BF, body fat (%); BM, body mass (kg)._
+
+**Table 6.**
+ VO2max prediction equations for runners.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model’s category</th>
+      <th rowspan="2">Multiple linear regression equation</th>
+      <th rowspan="2">R2</th>
+      <th colspan="2">Derivation group performance</th>
+      <th colspan="2">Validation group performance</th>
+    </tr>
+    <tr>
+      <th>RMSE</th>
+      <th>MAE</th>
+      <th>RMSE</th>
+      <th>MAE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AT</td>
+      <td>VO2max = 19.78 + 1.05 * rVO2AT + 0.94 * SPEEDAT - 0.12 * FFM - 0.06 * VEAT - 0.07 * HRAT</td>
+      <td>0.775</td>
+      <td>3.43</td>
+      <td>2.61</td>
+      <td>3.60</td>
+      <td>2.74</td>
+    </tr>
+    <tr>
+      <td>RCP</td>
+      <td>VO2max = 1.98 + 1.03 * rVO2RCP + 0.23 * SPEEDRCP</td>
+      <td>0.899</td>
+      <td>2.0</td>
+      <td>1.58</td>
+      <td>2.08</td>
+      <td>1.60</td>
+    </tr>
+    <tr>
+      <td>AT+RCP</td>
+      <td>VO2max = 1.98 + 1.03 * rVO2RCP + 0.23 * SPEEDRCP</td>
+      <td>0.899</td>
+      <td>2.0</td>
+      <td>1.58</td>
+      <td>2.08</td>
+      <td>1.60</td>
+    </tr>
+    <tr>
+      <td>SOM</td>
+      <td>VO2max = 72.37–0.77 * BF - 0.19 * Age</td>
+      <td>0.35</td>
+      <td>5.53</td>
+      <td>4.36</td>
+      <td>5.54</td>
+      <td>4.37</td>
+    </tr>
+  </tbody>
+</table>
+
+_AT, equation based on anaerobic threshold; RCP, equation based on respiratory compensation point; SOM, equation based on somatic variables only; R2, adjusted R2; RMSE, root mean square error; MAE, mean absolute error (mL·min–1·kg–1); VO2max, maximal oxygen uptake relative to body mass (mL·min–1·kg–1); rVO2AT, oxygen uptake at anaerobic threshold relative to body mass (mL·min–1·kg–1); SPEEDAT, velocity at anaerobic threshold (km·h–1); FFM, fat free mass (kg); VEAT, pulmonary ventilation at anaerobic threshold (L·min–1); HRAT, heart rate at anaerobic threshold (beats·min–1); BF, body fat (%); rVO2RCP, oxygen uptake at respiratory compensation point relative to body mass (mL·min–1·kg–1); SPEEDRCP, velocity at respiratory compensation point (km·h–1)._
+
+### Models validation
 
 Evaluation of each model for cyclists is presented in Table 5, while for runners in Table 6. In summary, the performance of our prediction equations was similar to that observed in the derivation cohort. A minorly higher RMSE and MAE were noted. Overall, RMSE values in cyclists are located between 2.03 and 6.11, whereas in runners between 2.0 and 5.54. MAE ranged from 1.64 to 4.74 mL·min–1·kg–1 in cyclists models and 1.58 to 4.37 mL·min–1·kg–1 in runners. The most accurate prediction was obtained in cyclists (defined as the highest replicability and the lowest risk of inaccuracies in the test set) by RCP equations (R2=0.913, RMSE=2.03, MAE=1.64). Interestingly, the models which worked the most accurately and the less precisely were the same in the derivation and validation. Figure 3 illustrates the Bland-Altman plots with a comparison of observed vs predicted VO2max using newly derived prediction models at the stage of validation.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/86291/elife-86291-fig3-v2.jpg)
 
-**Figure 3.:** 2max in runners derivation and validation cohorts.Abbreviations: VO2max; maximal oxygen uptake; AT, anaerobic threshold; RCP, respiratory compensation point; Max, maximal; Som, somatic. All values are presented in mL·min–1·kg–1. Upper panel shows performance for running equations, while the lower panel shows performance for cycling equations. Panel A shows performance of the prediction model for AT; panel B for RCP; panel C for AT and RCP; panel D for the somatic-only equation.
+**Figure 3.:** Abbreviations: VO2max; maximal oxygen uptake; AT, anaerobic threshold; RCP, respiratory compensation point; Max, maximal; Som, somatic. All values are presented in mL·min–1·kg–1. Upper panel shows performance for running equations, while the lower panel shows performance for cycling equations. Panel A shows performance of the prediction model for AT; panel B for RCP; panel C for AT and RCP; panel D for the somatic-only equation.
 
 ## Discussion
 
@@ -125,6 +849,6 @@ Our study has some limitations. The applied exercise protocol may affect CPET re
 
 To summarise, our study has vast practical applications in the comprehensive assessment of an athlete’s training and is a valuable tool for coaches in the preparation of individualised training prescriptions (Mann et al., 2013). Targeting training regimens and diet to optimise the most important parameters contributing to the VO2max (i.e. VO2AT, VO2RCP, RER, body fat, etc.) will allow for achieving better results during the competition and they provide a useful indirect method for assessing changes in endurance during the training cycle (Mann et al., 2013). Various areas of application of prediction models have also been postulated in the literature so far, for example in submaximal and maximal efforts, or simulating the overcoming of the starting distance, or even at rest (Zhou et al., 1997). It is also worth mentioning their clinical implications in cardiology for the diagnosis of heart disease in athletes (where a reduction in VO2max may occur despite maintaining other parameters, e.g. RER) (Guazzi et al., 2016; Löllgen and Leyk, 2018).
 
-## Conclusion
+### Conclusion
 
 Briefly, we provided new prediction models for VO2max. The proposed method allows for precise prediction of VO2max based on submaximal results. Our equations were derived from a wide cohort of 6439 athletes with varied fitness levels which inflated the quality and transferability of the presented data. Higher accuracy was noted when applying submaximal predictors. Adding circulatory and respiratory variables enriches prediction performance. Body fat and fat-free mass had significant impacts on most of the VO2max prediction equations. The novel model based only on somatic parameters is presented. Derived equations showed high performance during internal validation and were fairly replicable. The inclusion of such a tool has practical usage for fitness professionals and personal coaches to prepare more precise training recommendations and establish competition pacing strategies.

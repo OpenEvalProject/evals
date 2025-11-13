@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03xjwb503 MIND team, Inria, CEA, Université Paris-Saclay Palaiseau France
-2. https://ror.org/03xjwb503 NeuroSpin, CEA, Université Paris-Saclay Gif-sur-Yvette France
+1. MIND team, Inria, CEA, Université Paris-Saclay Palaiseau France ([ROR:03xjwb503](https://ror.org/03xjwb503))
+2. NeuroSpin, CEA, Université Paris-Saclay Gif-sur-Yvette France ([ROR:03xjwb503](https://ror.org/03xjwb503))
 
 † Corresponding author
 
@@ -36,31 +36,238 @@ In this study, we overcome these challenges by using NeuroLang, a domain-specifi
 
 ## Results
 
-## A principal rostrocaudal and a secondary dorsoventral gradient explain most of the variance in meta-analytic connectivity in the LPFC
+### A principal rostrocaudal and a secondary dorsoventral gradient explain most of the variance in meta-analytic connectivity in the LPFC
 
 In the first analysis, we assess the extent to which LPFC regions are similar in their coactivation patterns across the literature. In other words, we want to identify the main gradients of meta-analytic connectivity in the LPFC (Margulies et al., 2016; Huntenburg et al., 2018). We start by reducing high-dimensional voxel-level data to lower-dimensional region-level data to increase interpretability and alleviate computational burdens. To do this, we project voxel activation data onto 1024 continuously-valued regions from the Dictionaries of Functional Modes (DiFuMo) atlases (Dadi et al., 2020). The DiFuMo is a set of probabilistic brain atlases created using data from thousands of subjects across 27 studies, comprising 2192 task-based and resting-state fMRI sessions publicly available on OpenNeuro (Markiewicz et al., 2021). Second, we write a program in NeuroLang that infers the probability for each DiFuMo brain region to be reported active given activation in each LPFC region and the probability that a brain region is active given no activation in each LPFC region. We then compute the logarithm of the odds ratio (LOR) or the difference of the logits of the odds of these two events for each pair of regions. This yields a N × M matrix that encodes meta-analytic connectivity between N LPFC regions and M brain regions. To derive the gradients of meta-analytic connectivity in the LPFC, we apply a non-linear dimensionality reduction technique known as diffusion embedding (Coifman et al., 2005; Margulies et al., 2016) for the left and right LPFC separately. The resultant low-dimensional embeddings situate each LPFC region along multiple axes, also known as gradients, each representing a direction of gradual variation in connectivity and explaining a proportion of the variance. The axis that accounts for the greatest amount of variance in meta-analytic connectivity is called the principal gradient, which will be the focus of the rest of the study.
 
 Results are depicted in Figure 1 and Figure 2. Figure 1A shows the principal gradient of meta-analytic connectivity in the LPFC. This gradient is anchored at one end by caudal LPFC regions and the other end by rostral LPFC regions, supporting a dominant rostrocaudal organization in the LPFC. The rostrocaudal spatial layout of the principal gradient is clearly expressed in terms of the posterior-to-anterior and inferior-to-superior positions of brain regions grouped in successive twenty-percentile gradient segments in Figure 2. One interesting question is whether the principal LPFC gradient is a local processing stream within the macroscale gradients described by Margulies et al., 2016, like the first gradient (separates sensiromotor from default mode regions) and the third gradient (separates task-positive regions from the default mode network), or it represents a region-specific gradient. Therefore, within an LPFC mask, we compare the spatial layout of principal LPFC gradient (Figure 2—figure supplement 1) with that of the macroscale resting-state gradients from Margulies et al., 2016, namely gradient 1 and gradient 3. We observe a moderate positive correlation with gradient 1, and a weak negative correlation with gradient 3, in both the left and right LPFC. These data show that the distribution of activity in the LPFC is dominated by a rostrocaudal gradient that fits within a more global gradient separating sensorimotor systems from higher-order association regions often implicated in abstract mental functions (Margulies et al., 2016; Huntenburg et al., 2018). Moreover, the principal gradient seems to be robust to different methodological choices, such as the choice of studies to be included in the meta-analysis (Figure 1—figure supplement 1 and Figure 1—figure supplement 2) and the choice of coactivation distances between regions (Figure 1—figure supplement 3). Interestingly, the spatial layout of the principal LPFC gradient can be reproduced at the single-subject level, albeit individual-specific variations are observable (Figure 1—figure supplement 4 and Figure 1—figure supplement 5). For a detailed description of the supplementary results and methods, please refer to Appendix 1. On the other hand, Figure 1B shows the secondary gradient of meta-analytic connectivity in the LPFC. This gradient extends along the dorsoventral axis of the LPFC, anchored at one end by ventral LPFC regions and the other end by dorsal LPFC regions. The topographies of the estimated gradients are consistent with those described in previous literature (Petrides, 2005; Nee and D’Esposito, 2016; Bahlmann et al., 2015). However, the extent to which each gradient explains the variation of activity in the LPFC across different brain states has remained unclear.
 
-## Coactivation patterns along the rostrocaudal axis of the LPFC follow a unimodal-to-transmodal organization
+![Figure 1.](https://cdn.elifesciences.org/articles/76926/elife-76926-fig1-v2.jpg)
 
-In the second main analysis, we characterize the principal LPFC gradient in terms of varying coactivation patterns of successive quintile bins and their overlap with canonical brain networks (Figure 3). For this purpose, we write a NeuroLang program that first applies a smoothing spherical kernel with a 10mm radius around each peak in each study (Wager et al., 2007). The resulting binary activation maps (one map per study) are then projected onto 1024 functional regions defined by the DiFuMo atlas. However, this is not the case for quintile bins, where activation is considered reported in a quintile bin when at least one voxel is reported active within or near its vicinity (<3mm). Finally, we estimate the LOR of the event that a brain region is reported active given activation in a quintile bin to the event that a brain region is active when no activation is reported in the bin.
+**Figure 1.:** The rostrocaudal and dorsoventral gradients explain the greatest amount of variance in meta-analytic connectivity in the LPFC. (A) The principal gradient in both hemispheres echoes a widely proposed rostrocaudal organization in the LPFC. This gradient represents the dominant direction of variations in connectivity patterns. (B) The gradient that explains the second-most variance in meta-analytic connectivity in the LPFC echoes a dorsoventral organization extending from ventrolateral to dorsolateral PFC regions. (C) and (D) The percentage of variance explained by the first 20 diffusion embedding components in the left and right LPFC, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76926/elife-76926-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The spatial layout of the principal LPFC gradient across 5000 re-runs of the meta-analysis on random sub-samples of the Neurosynth dataset. We quantify the variation in the spatial layout of the principal LPFC gradient by counting the number of times each region is assigned to every quintile bin in the 5000 re-runs of the meta-analysis (each sub-sample includes 8623 studies, around 60% of the total number of studies). (A) and (B) show the number of times each region has been assigned to each of the five quintile bins in the left and right LPFC, respectively. The majority of LPFC regions in both hemispheres retain the same quintile bin assignment across the 5000 re-runs of the analysis. This result indicates that the spatial layout of the principal gradient is robust to the choice of studies provided that a large of number of studies is included.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76926/elife-76926-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The percentage of variance explained by diffusion embedding components in 5000 re-runs of the meta-analysis on random sub-samples of the Neurosynth dataset in the left and right LPFC. Each dot represents a run on one sub-sample. We observe that the dots cluster together for each component, indicating small variations in the percentage of variance explained across different runs of the meta-analysis.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/76926/elife-76926-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The principal LPFC gradient of long range coactivations. (A), (B), (C) show the principal LPFC gradient when only taking into account regions that are at least 20 mm, 40 mm, or 60 mm apart, respectively. The coactivation distance is the Euclidean distance between the centers of mass of regions. (D) shows the principal LPFC gradient when not taking into account any intra-LPFC coactivations. The results of this analysis show that, despite changes in the shape of the gradient when varying the coactivation distance, the gross rostrocaudal spatial layout is preserved. These results suggest that the spatial layout of the principal LPFC gradient is not driven by the spatial auto-correlation among nearby LPFC regions.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/76926/elife-76926-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** The principal LPFC gradient at the single-subject level. The subject-level gradients describe changes in coactivation patterns in the LPFC of 11 healthy subjects from the Individual Brain Charting (IBC) dataset. The IBC subjects underwent an extensive set of tasks, which yielded around 750 contrasts per subject. After activation peak extraction, a meta-analysis and a gradient mapping analysis are performed to estimate the gradients. Originally, the dataset included activation maps from 12 participants, but we excluded one participant (‘Subject 8’) for insufficient data available at the time of the study. Note that the labels assigned to the subjects in the original dataset do not include ‘Subject 2’, ‘Subject 3’, and ‘Subject 10’.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/76926/elife-76926-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Spatial correlation between the subject- and literature-level principal LPFC gradients. (left) and (right): Correlation among the principal gradients of single subjects and the literature in the left and right LPFC, respectively. The last row of each matrix, separated from other rows by a dotted line, encodes the spatial correlation of the gradients with a gradient estimated from a randomized version of the activation data. Randomization is achieved through 1000 random shuffles of the peak coordinates across the 14,371 studies. The results show strong correlation between most subjects’ principal gradients and the literature principal gradient along with a relatively weaker between-subjects correlation. The mean, standard deviation, minimum, and maximum correlation are estimated from correlation values above the dotted line. Finally, the spatial correlations with the gradient of randomized activation data are relatively weak.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/76926/elife-76926-fig2-v2.jpg)
+
+**Figure 2.:** (A) Positions of quintile bins in the left LPFC. (B) Positions of quintile bins in the right LPFC. Each colored sphere represents a brain region, with the color reflecting its network membership within the 17-Networks atlas (Yeo et al., 2011). SomMot: SomatoMotor, VisCent/Peri: Visual Central/Peripheral, SalVentAttn: Salience/Ventral Attention, DorsAttn: Dorsal Attention, TemPar: Temporo-Parietal, Cont: Executive Control, Default: Default Mode.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76926/elife-76926-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Spatial correlation between the meta-analytic and resting-state connectivity gradients in the LPFC. The spatial layout of the resting-state connectivity gradients 1 and 3 from Margulies et al., 2016 is compared to that of the principal meta-analytic LPFC gradient using Pearson’s correlation. We observe (A) a moderately strong positive correlation between the principal meta-analytic and first resting-state connectivity gradient in the LPFC and (B) a weak negative correlation with the third gradient. These results suggest that the principal LPFC gradient can be understood as a local processing stream situated within a global spatial principle that explains unimodal-to-heteromodal brain activity. In the case of the LPFC, this activity organizing profile roughly extends from the caudal to rostral LPFC regions. *** p<0.0001.
+
+### Coactivation patterns along the rostrocaudal axis of the LPFC follow a unimodal-to-transmodal organization
+
+In the second main analysis, we characterize the principal LPFC gradient in terms of varying coactivation patterns of successive quintile bins and their overlap with canonical brain networks (Figure 3). For this purpose, we write a NeuroLang program that first applies a smoothing spherical kernel with a 10mm radius around each peak in each study (Wager et al., 2007). The resulting binary activation maps (one map per study) are then projected onto 1024 functional regions defined by the DiFuMo atlas. However, this is not the case for quintile bins, where activation is considered reported in a quintile bin when at least one voxel is reported active within or near its vicinity ($<3mm$). Finally, we estimate the LOR of the event that a brain region is reported active given activation in a quintile bin to the event that a brain region is active when no activation is reported in the bin.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/76926/elife-76926-fig3-v2.jpg)
 
 **Figure 3.:** The coactivation patterns of quintile bins along the principal gradient in the LPFC capture a unimodal-to-transmodal spatial layout in brain network connectivity. (A) Coactivation patterns along the principal gradient in the left and right LPFC. Each brain map shows the regions that have a least three times the odds of being reported active given activation in a quintile bin relative to being active when activation is not reported in the quintile bin. Note that cerebellar and sub-cortical regions, although included in the analysis, are not shown in the figures. (B) Bar plots showing the number of regions from each network that overlaps with the coactivation pattern of each quintile bin. The data shown here suggests that the dorsal attention (green) and sensorimotor networks (blue) coactivate with the caudal bins (i.e. bins 1 and 2) more than with more rostral bins. On the other hand, the default mode network coactivates more with the rostral bins (i.e. bins 4 and 5) than with caudal bins.
 
-Results are shown in Figure 3. Figure 3A depicts cortical coactivation maps of regions that exhibit at least threefold the odds (or LOR>0.5) of coactivating with a bin than not. Figure 3B depicts bar plots showing the number of regions from each network that falls within each quintile bin’s coactivation pattern. We observe a change in network connectivity profiles from a pattern dominated by unimodal dorsal attention/sensorimotor regions to one where overlap with the transmodal default mode regions becomes increasingly visible. In the middle zones, coactivation patterns overlap mostly with the salience and cognitive control networks that collectively are known to be part of the ‘multiple demand network’ (Duncan, 2010). These data support recent proposals of domain-general processing in the mid-LPFC regions as opposed to more domain-specificity at the extremities of the rostrocaudal LPFC gradient (Nee, 2021). Here, ‘domain-specific’ denotes a region's involvement in either internal/present-oriented or external/future-oriented processing, whereas ‘domain-general’ is used to indicate possible a region's involvement in both types of processes.
+Results are shown in Figure 3. Figure 3A depicts cortical coactivation maps of regions that exhibit at least threefold the odds (or $LOR>0.5$) of coactivating with a bin than not. Figure 3B depicts bar plots showing the number of regions from each network that falls within each quintile bin’s coactivation pattern. We observe a change in network connectivity profiles from a pattern dominated by unimodal dorsal attention/sensorimotor regions to one where overlap with the transmodal default mode regions becomes increasingly visible. In the middle zones, coactivation patterns overlap mostly with the salience and cognitive control networks that collectively are known to be part of the ‘multiple demand network’ (Duncan, 2010). These data support recent proposals of domain-general processing in the mid-LPFC regions as opposed to more domain-specificity at the extremities of the rostrocaudal LPFC gradient (Nee, 2021). Here, ‘domain-specific’ denotes a region's involvement in either internal/present-oriented or external/future-oriented processing, whereas ‘domain-general’ is used to indicate possible a region's involvement in both types of processes.
 
-## Mapping specific topic associations in the LPFC supports the hypothesis of increasing abstract representations extending along the rostrocaudal gradient
+### Mapping specific topic associations in the LPFC supports the hypothesis of increasing abstract representations extending along the rostrocaudal gradient
 
 In the third analysis, we characterize the principal LPFC gradient in terms of associations with 38 topics chosen from an original set of 100 topics (version-5 of topic modelling from Neurosynth) (Poldrack et al., 2012). These topics are data-driven aggregations of single terms that co-occur in article abstracts and cover broad cognitive and behavioral domains often studied in cognitive neuroscience. Refer to Table 1 to see the five strongest loading terms on each topic listed in descending order of association strength. We perform the topic-based decoding using what we call ‘segregation queries’. A segregation query infers the probability “that a topic is associated with activation in a set of regions given the absence of activation in another set of regions”. Expressing segregation queries using NeuroLang is straightforward and enables inferring more specific structure-functions relationships. In conventional non-segregation inferences, these associations may be blurred due to regions coactivating across many studies and tasks (Figure 4—figure supplement 1). The most probable reason for this blurring is that typical fMRI task contrasts rarely isolate regions underlying distinct but related processes, which likely need to be probed across multiple tasks to ensure the independence of regions (Poldrack et al., 2011).
 
-The NeuroLang program of this analysis infers the probability that a topic is present given activation between bin a (a∈[1,5]) and a bin b (b∈[1,5]), while there exists no activation in any bin outside the range [a,b] . The term 'there exists no’ is the segregation expression that guarantees more specificity of associations. For instance, in the event where a=1 and b=4, the program queries the database on the probability that a topic is present in a study given activation of bins 1 and 4 (or any region in between) and given no activation outside the quintile range [1,4]. In the event where a=b, we infer topic association given activation constrained in only one quintile bin. Concurrently, the program infers the probability of the opposite event by selecting the studies that do not match the criteria imposed by the segregation query. By computing the LOR of these two events, we obtain a measure of the evidence in favor of association between each topic and spatially constrained activation patterns along the principal gradient of the LPFC.
+**Table 1.**
+ Thirty-eight topics from the Neurosynth LDA-driven 100 topics set and the top five terms loading on each topic listed in descending order of association strength.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>topics</th>
+      <th>terms</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Action Imitation</td>
+      <td>mirror; observation; imitation; action; gestures</td>
+    </tr>
+    <tr>
+      <td>Attention</td>
+      <td>attention; attentional; task; visual; control</td>
+    </tr>
+    <tr>
+      <td>Auditory Processing</td>
+      <td>auditory; sounds; sound; cortex; temporal</td>
+    </tr>
+    <tr>
+      <td>Cognitive Control</td>
+      <td>task; cognitive; performance; control; executive</td>
+    </tr>
+    <tr>
+      <td>Conflict Interference</td>
+      <td>conflict; interference; control; incongruent; congruent</td>
+    </tr>
+    <tr>
+      <td>Cued Attention</td>
+      <td>spatial; cues; cue; location; attention; orienting</td>
+    </tr>
+    <tr>
+      <td>Decision Making</td>
+      <td>decision; making; risk; choice; decisions; choices</td>
+    </tr>
+    <tr>
+      <td>Declarative Memory</td>
+      <td>memory; retrieval; episodic; mtl; memories</td>
+    </tr>
+    <tr>
+      <td>Emotion Regulation</td>
+      <td>regulation; emotion; reappraisal; cognitive; amygdala</td>
+    </tr>
+    <tr>
+      <td>Emotional Valence</td>
+      <td>emotional; negative; positive; amygdala; emotion</td>
+    </tr>
+    <tr>
+      <td>Empathy</td>
+      <td>social; empathy; moral; game; people</td>
+    </tr>
+    <tr>
+      <td>Eye Movements</td>
+      <td>eye; gaze; saccade; movements; target</td>
+    </tr>
+    <tr>
+      <td>Face/Affective Processing</td>
+      <td>amygdala; emotional; faces; facial; emotion; expression</td>
+    </tr>
+    <tr>
+      <td>Feedback/Error Processing</td>
+      <td>feedback; error; learning; errors; prediction</td>
+    </tr>
+    <tr>
+      <td>Judgement</td>
+      <td>judgments; judgment; ppc; reference; drawing</td>
+    </tr>
+    <tr>
+      <td>Lexical Semantics</td>
+      <td>semantic; words; word; lexical; verbs</td>
+    </tr>
+    <tr>
+      <td>Memory Encoding</td>
+      <td>memory; encoding; hippocampus; hippocampal; retrieval</td>
+    </tr>
+    <tr>
+      <td>Memory Retrieval</td>
+      <td>memory; recognition; items; retrieval; recollection</td>
+    </tr>
+    <tr>
+      <td>Mental Imagery</td>
+      <td>imagery; mental; events; future; imagined</td>
+    </tr>
+    <tr>
+      <td>Mentalizing</td>
+      <td>reasoning; mind; mental; social; tom</td>
+    </tr>
+    <tr>
+      <td>Motor Movement</td>
+      <td>motor; movement; cortex; movements; hand</td>
+    </tr>
+    <tr>
+      <td>Multisensory Processing</td>
+      <td>visual; motion; auditory; modality; sensory integration</td>
+    </tr>
+    <tr>
+      <td>Navigation</td>
+      <td>ms; spatial; virtual; navigation; illusion</td>
+    </tr>
+    <tr>
+      <td>Numerical Cognition</td>
+      <td>number; numerical; numbers; magnitude; size</td>
+    </tr>
+    <tr>
+      <td>Perception</td>
+      <td>perceptual; perception; interaction; sensory; visual</td>
+    </tr>
+    <tr>
+      <td>Reading</td>
+      <td>reading; words; word; phonological; chinese</td>
+    </tr>
+    <tr>
+      <td>Response Inhibition</td>
+      <td>inhibition; response; control; inhibitory; task</td>
+    </tr>
+    <tr>
+      <td>Response Selection</td>
+      <td>response; stimulus; trials; trial; presented</td>
+    </tr>
+    <tr>
+      <td>Reward Processing</td>
+      <td>reward; striatum; ventral; anticipation; monetary</td>
+    </tr>
+    <tr>
+      <td>Sentence Comprehension</td>
+      <td>language; comprehension; sentences; sentence; syntax</td>
+    </tr>
+    <tr>
+      <td>Skill Learning</td>
+      <td>learning; training; sequence; performance; practice</td>
+    </tr>
+    <tr>
+      <td>Somatosensory Processing</td>
+      <td>somatosensory; stimulation; tactile; hand; cortex</td>
+    </tr>
+    <tr>
+      <td>Speech Production</td>
+      <td>speech; auditory; production; perception; temporal</td>
+    </tr>
+    <tr>
+      <td>Subjective Experience</td>
+      <td>pictures; images; aversive; neutral; unpleasant</td>
+    </tr>
+    <tr>
+      <td>Target Detection</td>
+      <td>target; detection; targets; awareness; presented</td>
+    </tr>
+    <tr>
+      <td>Task Switching</td>
+      <td>task; switching; rule; set; switch</td>
+    </tr>
+    <tr>
+      <td>Visual Perception</td>
+      <td>object; objects; visual; category; cortex</td>
+    </tr>
+    <tr>
+      <td>Working Memory</td>
+      <td>memory; working; wm; task; load; verbal</td>
+    </tr>
+  </tbody>
+</table>
+
+The NeuroLang program of this analysis infers the probability that a topic is present given activation between bin $a$ ($a\in[1,5]$) and a bin $b$ ($b\in[1,5]$), while there exists no activation in any bin outside the range $[a,b]$ . The term 'there exists no’ is the segregation expression that guarantees more specificity of associations. For instance, in the event where $a=1$ and $b=4$, the program queries the database on the probability that a topic is present in a study given activation of bins 1 and 4 (or any region in between) and given no activation outside the quintile range $[1,4]$. In the event where $a=b$, we infer topic association given activation constrained in only one quintile bin. Concurrently, the program infers the probability of the opposite event by selecting the studies that do not match the criteria imposed by the segregation query. By computing the LOR of these two events, we obtain a measure of the evidence in favor of association between each topic and spatially constrained activation patterns along the principal gradient of the LPFC.
 
 Results are depicted in Figure 4A and Figure 4B for the left and right LPFC, respectively. Topics are vertically ordered from top-to-bottom by the weighted mean of their location along the gradient. We observe a broad shift in topic associations from topics of sensorimotor/attention processing at more caudal regions to topics of emotion and memory-related topics at more rostral regions of the principal LPFC gradient. Between these extremities, we mainly observe topics related to executive functions and language. This pattern of topic-bin associations suggests that as activation extends away from the posterior towards the anterior LPFC, task representations become more abstracted from immediate demands of perception/action cycles. Finally, for the purpose of comparison with conventional decoding, we perform this analysis without using segregation queries. Here, we infer the probability that “a topic is present in a study given activation reported in a set of regions”. Results of the non-segregation-based analysis are shown in Figure 4—figure supplement 1 and show an ordering of topics along a roughly concrete-to-abstract axis. However, the individual associations are rather distributed across bins, suggesting no specificity of structure-function associations in the LPFC.
 
-## Gradient-based meta-analysis of inter-hemispheric asymmetries reveals lateralized associations with topics of language, memory, inhibitory control, sensory and error processing
+![Figure 4.](https://cdn.elifesciences.org/articles/76926/elife-76926-fig4-v2.jpg)
+
+**Figure 4.:** Mapping functional associations using segregation queries reveals a structured ordering of topics along the principal gradient in the (A) left and (B) right LPFC. Topics are ordered by the weighted mean of their location along the principal gradient. Topics of sensorimotor processing are mostly located at the top followed by executive functions and language, and finally emotion/memory/social cognition-related topics mostly occupy the bottom. Note that although the order of topics varies between hemispheres, the general profile of topic associations is comparable. A two-headed arrow along the horizontal axis signifies a coactivation constricted in a given range of quintile bins. Log-odds ratio values are thresholded at 0 to show only positive associations. White asterisks denote the log-odds ratio values whose 95% confidence interval estimated from 5000 re-runs of the meta-analysis on random sub-samples of the Neurosynth dataset does not include the value 0.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76926/elife-76926-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Mapping functional associations without using segregation queries reveals a structured ordering of topics along the principal gradient in the (A) left and (B) right LPFC. Topics are ordered by the weighted mean of their location along the principal gradient. We observe an ordering of topics comparable to that obtained in the segregation-based inference. That is, topics of sensorimotor/attention processes are mostly located at the top followed by executive functions and language and then, emotion/memory/social cognition-related topics mostly occupy the bottom part. However, the individual associations are relatively more distributed across the gradient, indicating less specificity than the segregation based analysis. Log-odds ratio values are thresholded at 0 to show positive associations only.
+
+### Gradient-based meta-analysis of inter-hemispheric asymmetries reveals lateralized associations with topics of language, memory, inhibitory control, sensory and error processing
 
 The last analysis of this study aims at contrasting the two LPFC hemispheres in terms of specific topic associations in a gradient-like fashion. More precisely, we compare homologous quintile bins in both hemispheres in terms of functional associations. For this purpose, we write a NeuroLang program that solves segregation queries between hemispheres. Here, we infer the probabilities “that a topic is present in a study given activation in a quintile bin in the right (respectively left) LPFC and there exists no reported activation in the entire left (respectively right) LPFC”. The LOR, in this case, represents the amount of evidence for topic association given unilateral activation in the right hemisphere relative to a unilateral activation in the left hemisphere of the LPFC across quintile bins of the principal gradient.
 
@@ -74,25 +281,25 @@ Results are depicted in Figure 5. In general, we do not observe any systematic v
 
 In this study, we infer the LPFC gradients via a comprehensive meta-analysis. We find a principal rostrocaudal and secondary dorsoventral gradient that explain most of the variance in meta-analytic connectivity patterns in the LPFC across 14,371 studies. We also find a systematic distribution of network coactivation patterns along the principal gradient from regions putatively associated with external/present-oriented functions to regions of higher order networks associated with internal/temporally distant cognition. Finally, by assessing inter-hemispheric functional asymmetries along the principal gradient, we find patterns of lateralized topic associations consistent with previous findings on language, memory, sensory processing/monitoring, and response inhibition. Overall, the specificity of findings in this study grounds future hypothesis generation on a quantitative overview of previously published results.
 
-## The principal meta-analytic gradient in the LPFC reflects a rostrocaudal organization characterized by domain-generality in the intermediate zone and domain-specificity at the extremities
+### The principal meta-analytic gradient in the LPFC reflects a rostrocaudal organization characterized by domain-generality in the intermediate zone and domain-specificity at the extremities
 
 The principal gradient of meta-analytic coactivation in the LPFC echoes a rostrocaudal organization in the sense that successive quintile bins along the gradient show a linear increase in their posterior—to-anterior position from the vicinity of the motor cortex toward the anterior of the brain. Thus, this gradient places caudal LPFC regions at the farthest point from rostral LPFC regions on a spectrum of similarity in meta-analytic connectivity patterns. This result agrees with a popular class of hypotheses emerging from abstraction and hierarchical control studies on a rostrocaudal gradient in the LPFC (Badre, 2008; Badre and D’Esposito, 2009; de la Vega et al., 2018; Koechlin et al., 2003; Wendelken et al., 2012). Yet, a question remains open concerning the properties and functional roles of different zones in the rostrocaudal LPFC gradient.
 
 Early studies on the matter have ascribed the rostral LPFC with the roles of integrating concrete information from caudal regions and relaying back top-down control signals (Koechlin et al., 2003; Badre, 2008; Petrides, 2005; Wendelken et al., 2012). In contrast, recent studies relying on causal evidence argue against a unidimensional linear gradient and rather place the mid-LPFC as the nexus of both concrete and abstract representations (Nee and D’Esposito, 2016; Badre and Nee, 2018; Nee, 2021). Although we cannot infer such integrative processing by means of causality in the current study, we find that the mid-LPFC regions are situated in the intermediate zones of the principal gradient. Technically speaking, this means that the whole-brain coactivation profile of the mid-LPFC is not totally similar nor dissimilar to those of the caudal and rostral LPFC, but somewhat overlaps with them. Indeed, we observe that intermediate gradient zones coactivate more with the salience (SalVentAttnB) and control networks (ContA and ContB) and to a lesser extent with both the attention (DorsAttnA and DorsAttnB) and default mode networks (DefaultA and DefaultB). This pattern is not observed for the two extremities of the gradient (bins 1 and 5), where networks involved either in external processing (SomMotA, DorsAttnA, and SalVentAttnA) or internal cognition (DefaultA and DefaultB) are respectively more dominant along with the salience and cognitive control networks (Figure 3). The salience and control networks are believed to be integrative and to mediate the interaction of the default and attention networks to control the transition between external/present-focused and internal/temporally-distant processing (Menon and Uddin, 2010; Nee, 2021). Finally, as further support, when activation is restricted within the caudal-to-middle zones of the gradient (bins 1–4), we mainly observe associations with topics of action execution, sensory perception, language, and executive control (Figure 4). In contrast, when coactivation is restricted within the middle-to-rostral zones (bins 2–5), we observe associations with topics of memory, emotion, and social cognition—functions that rely on abstract representations untethered from immediate environmental demands (Buckner and Krienen, 2013). These patterns of network and function associations support a domain-general role of mid-LPFC regions and a more domain-specific role (i.e. either internally or externally oriented processing) for caudal and rostral LPFC regions.
 
-## The principal gradient of meta-analytic connectivity in the LPFC echoes the principle gradient of brain-wide intrinsic connectivity
+### The principal gradient of meta-analytic connectivity in the LPFC echoes the principle gradient of brain-wide intrinsic connectivity
 
 As seen in Figure 2—figure supplement 1, the topography of the principal LPFC gradient correlates with the overall layout of the principal brain-wide gradient described in Margulies et al., 2016, which represents the dominant spatial principle governing resting-state connectivity throughout the entire cerebral cortex. This spatial principle conceptualizes higher order cognition as emerging from dynamic interactions of large-scale networks, systematically organized along an axis of abstraction that extends from unimodal sensorimotor regions to transmodal default mode regions (Mesulam, 1998; Margulies et al., 2016; Huntenburg et al., 2018). Importantly, it incorporates the seemingly isolated local processing streams across the cortex within a continuous global framework. In this sense, the spatial location of a brain region is not arbitrary; a region’s position along the principal gradient is a major determinant of its connectivity profile, its network membership and consequently its functional role. Specifically, it has been found that the longer the spatial distance between a region and the primary cortices, the more distant are its functional connections and the more it is dispositioned to subserve abstract mental functions (Oligschläger et al., 2017). The default mode network occupies the top end of the global intrinsic connectivity gradient and exhibits the greatest geodesic distance from the sensorimotor cortices, allowing it to process highly internalized information abstracted from immediate sensory input (Margulies et al., 2016; Smallwood et al., 2021). In a similar sense, we find that the rostrocaudal gradient in the LPFC captures systematic transitions in large-scale functional networks (Figure 2 and Figure 3), such that caudal zones pre-dominantly coactivate with sensorimotor/attention networks, middle zones coactivate with salience/executive control networks, and increasingly rostral gradient zones coactivate more with the default mode network. This result confers a spectrum of increasing abstraction on the LPFC that follows the transition from unimodal to transmodal regions.
 
 Further supporting this view are the specific topic associations along the principal LPFC gradient inferred using segregation queries (Figure 4). These patterns of functional associations are not evident from the non-segregation-based topic association analysis, although the topics seem to follow a roughly concrete-to-abstract ordering. As shown in Figure 4—figure supplement 1, topic associations are either equal to zero for all bins or cover the entire LPFC gradient, suggesting no specificity in structure-function associations. Thus, our results stress the importance of using segregation queries to infer relatively specific associations often masked in conventional functional decoding analyses. Overall, the rostrocaudal LPFC gradient described herein represents a literature-inferred map of a concrete-to-abstract organizing principle, wherein globally interacting networks interface locally in the LPFC to support adaptive behavior within dynamic contexts (Badre and Nee, 2018; Nee and D’Esposito, 2016).
 
-## Meta-analysis of LPFC inter-hemispheric asymmetries reasserts the left-hemispheric preference of language and memory processes and the right-hemispheric preference of inhibitory and sensory processes
+### Meta-analysis of LPFC inter-hemispheric asymmetries reasserts the left-hemispheric preference of language and memory processes and the right-hemispheric preference of inhibitory and sensory processes
 
 Segregation-based meta-analysis of inter-hemispheric asymmetries reveals associations with language, memory, response inhibition, error-processing, and somatosensory processing in the LPFC. The importance of segregation queries, in this case, is in inferring the structure-function associations whose presence is only predicted by unilateral activation in the LPFC. Previously, the lateralization of function in the brain has been well documented for certain functions, notably language (Abbott et al., 2010; Fedorenko et al., 2011) and response inhibition (Aron, 2007). More recently, an effort to map hemisphere-specific functions across the whole brain (Karolis et al., 2019) has uncovered four global dimensions of laterlization: symbolic communication, perception and action, emotion, and decision making. However, a comprehensive comparison of hemisphere-specific functional associations within the LPFC remains lacking, especially when taking into account the principal organizing gradient in each hemisphere. The analysis carried out in this study is one step forward toward filling this gap.
 
 In general, we do not observe any systematic variations in the degree nor nature of lateralized topic associations along the principal LPFC gradient (Figure 5). That is, unilateral structure-function association patterns seem to be comparable throughout the rostrocaudal gradient. For instance, the greatest observed evidence for left-hemispheric preference in the LPFC is attributed to language and memory-related topics, which is consistent with a long line of research on the linguistic and semantic selectivity of the left hemisphere (Gonzalez Alam et al., 2021). In contrast, the greatest amount of evidence for right-hemispheric preference in the LPFC is attributed to ‘response inhibition’ and ‘somatosensory processing’, and to a lesser extent ‘feedback/error processing’ and ‘eye movements’. These results are consistent with the role of the right hemisphere, in general, in sensory monitoring and the inhibitory processes. Notwithstanding, we observe relatively weak evidence (Figure 5) for right-hemispheric preference of attention-related topics, such as ‘attention’, ‘cued attention’, and ‘navigation’, although such topics are often attributed to the right brain hemisphere (Bartolomeo and Seidel Malkinson, 2019; Thiebaut de Schotten et al., 2011). While there may be more than one explanation for these observations, a plausible one is related to the data-driven nature of topics. More specifically, given that topics are ‘bags’ of words that frequently co-occur in the abstracts of articles, they are at best proxies to the actual mental functions. This means that topics can not be specific enough to capture finely grained cognitive constructs. Nonetheless, topics are relatively better representatives of psychological domains than individual terms that pose the risk of being interpreted out of context (Poldrack et al., 2012). Overall, the current findings support the preferential roles of the left LPFC in language, semantics, and memory processes and the right LPFC in sensory monitoring and cued inhibition of behavior.
 
-## Limitations
+### Limitations
 
 While the present results provide a relatively unbiased mapping of the organizing gradients in the LPFC through meta-analysis, several caveats and limitations are worth noting. First, although meta-analysis is arguably one of the best techniques to synthesize findings across the literature, it amplifies spatial uncertainty by combining a large number of different datasets and hence might overly smooth the gradients. In addition, the methods adopted here, such as the spatial smoothing prior (10mm radius) and the use of a brain atlas, may further exacerbate the problem and make the organization of the LPFC appear more spatially continuous than it actually might be. Indeed, the actual steps along the rostrocaudal axis might be discrete/areal, separating disparate networks as in clustering-based representations (e.g. Yeo 17 atlas), may approach total continuity, or something in between. Although the supplementary subject-level analysis shows that individual gradients are more granular than the literature-based gradient (Figure 1—figure supplement 4), we do not make any claims about the ground truth spatial resolution of the principal LPFC gradient, as no evidence has been observed to support any of the hypotheses.
 
@@ -100,35 +307,35 @@ Second, we make simplifying assumptions to alleviate computational burdens, nota
 
 Third, small sample sizes per study and potential publication bias, or the tendency of authors and journals to only publish positive and statistically significant results (Jennings and Van Horn, 2012), might impact the reliability of the current findings. Even though spatial smoothing priors and probabilistic brain atlases may alleviate some bias, future meta-analyses should rely on complete data like unthresholded statistical images stored in large repositories, such as NeuroVault (Gorgolewski et al., 2015), to validate the results. Finally, an important limitation, not specific to this meta-analysis, is that the current knowledge of task-dependent activations in the brain is as good as the task paradigms that induce these activations (Poldrack and Yarkoni, 2016). More broadly, an ongoing endeavor in cognitive neuroscience is developing the appropriate paradigms that isolate cognitive processes of closely related brain regions (Poldrack and Yarkoni, 2016). Studies in the domain of abstraction and hierarchical control use nested tasks classed by different levels of abstraction, which can uncover functional gradients in the LPFC (e.g. Koechlin et al., 2003; Nee and D’Esposito, 2016). However, these studies are not common in the literature and are limited to a small range of functions. In contrast, the bulk of tasks included in the Neurosynth dataset, while not hierarchical, captures a much wider variety of brain states, but at the expense of losing some level of specificity.
 
-## Conclusion
+### Conclusion
 
 In conclusion, the present study provides a meta-analytic mapping of the principal organizing gradients in the LPFC of humans. The LPFC appears to be organised along two spatial gradients, rostrocaudal and dorsoventral, that respectively explain the most and second-most variance in meta-analytic connectivity. We also find that the principal gradient captures a unimodal-to-transmodal spectrum of increasing abstraction in network connectivity and functional associations. Importantly, we overcome the limitations of previous large-scale attempts using a novel domain-specific query language, NeuroLang, to formulate expressive queries on the largest coordinate-based meta-analysis database to date. As more studies are aggregated into future databases, the analyses carried out in this study can be reproduced using the same queries as well as extended to explore other brain regions.
 
 ## Methods
 
-## Data and software
+### Data and software
 
 We use the latest version of the Neurosynth dataset (Yarkoni et al., 2011) last updated in July 2018 to include 14,371 articles that include more than 500,000 activation coordinates covering the whole brain. Each study in the database is represented by a PubMed ID, peak activation coordinates and weighted topic associations. Neurosynth’s peak activation coordinates are either reported in MNI space or Talairach space. However, we re-sampled all activation data to the symmetric 3 mm MNI template before any analysis took place. Moreover, all analysis are carried out in volumes, while surfaces are used for visualization only. To assess topic-associations in the LPFC, we use the set of 100 Neurosynth topic terms (version 5) previously generated by applying latent Dirichlet allocation to the abstracts of articles in the database (Poldrack et al., 2012). Out of the 100 topics, we include 38 topics (shown in Table 1) that represent coherent cognitive functions, excluding those that correspond to subject populations (e.g. brain disorders, age, sex), brain anatomy, imaging modalities and analysis techniques. All analyses and visualizations are implemented in python. In particular, we use the NeuroLang (https://github.com/NeuroLang/NeuroLang; Wassermann et al., 2022) library to perform all meta-analysis steps and the BrainSpace library (https://github.com/MICA-MNI/BrainSpace; Vos de Wael et al., 2022) to estimate low-dimensional embeddings of meta-analytic connectivity patterns in the LPFC (Vos de Wael et al., 2020). All source code and data files used in this study will be publicly available to be openly accessed on github at https://github.com/majdabd/lpfc_gradients-meta-analysis (copy archived at swh:1:rev:7ab4efcbc9875b92745b7b1c43864d7352fd3b90; Abdallah, 2022).
 
-## The lateral prefrontal cortex mask
+### The lateral prefrontal cortex mask
 
-To facilitate the selection of regions in the LPFC for meta-analysis, a spatial mask of the LPFC is needed. We rely on a previously created mask of the lateral frontal lobe created from de la Vega et al., 2018. However, we exclude voxels with less than 25% probability of falling in the grey matter as well as voxels located at x<18 or x>−18 from the midline of the brain to ensure that regions in the anterior and superior parts of the medial prefrontal cortex are not included. We also exclude voxels in the orbitofrontal cortex and anterior insula, while making sure to include voxels of the lateral orbitofrontal cortex. Finally, to focus our analysis on the association regions of the lateral frontal lobe (i.e, the LPFC), we exclude voxels in the motor cortex as defined by the somatomotor networks of the 17-Networks atlas (Yeo et al., 2011). The LPFC mask is shown in Figure 6A.
+To facilitate the selection of regions in the LPFC for meta-analysis, a spatial mask of the LPFC is needed. We rely on a previously created mask of the lateral frontal lobe created from de la Vega et al., 2018. However, we exclude voxels with less than 25% probability of falling in the grey matter as well as voxels located at $x<18$ or $x>−18$ from the midline of the brain to ensure that regions in the anterior and superior parts of the medial prefrontal cortex are not included. We also exclude voxels in the orbitofrontal cortex and anterior insula, while making sure to include voxels of the lateral orbitofrontal cortex. Finally, to focus our analysis on the association regions of the lateral frontal lobe (i.e, the LPFC), we exclude voxels in the motor cortex as defined by the somatomotor networks of the 17-Networks atlas (Yeo et al., 2011). The LPFC mask is shown in Figure 6A.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/76926/elife-76926-fig6-v2.jpg)
 
 **Figure 6.:** (A) Inputs and outputs of NeuroLang. Inputs are represented using blue arrows and include: Peak activations and topics from the Neurosynth dataset, the lateral PFC mask, and the 1024 regions from the DiFuMo atlases are represented in a unifying framework within NeuroLang. Two examples of outputs are shown here and represented using red arrows. (B) The main steps of the meta-analysis carried out in this study. (1) Spatial smoothing with 10 mm kernel around each peak. (2) The binary activation map of each study is projected onto 1024 functional regions. Varying shades of red signify that regions have different probabilities of being reported by a study depending on the location of voxels within each region. (3) The meta-analytic connectivity matrix encodes the log-odds ratios of coactivation between each region in the LPFC and every region in the brain. (4) A similarity matrix encodes the degree of correspondence between LPFC regions in their meta-analytic connectivity profiles, estimated by the eta-squared similarity metric. (5) The principal gradient of meta-analytic connectivity in each hemisphere is then derived from the similarity matrix using diffusion embedding. (6) Coactivation patterns of successive quintile gradient bins are inferred (7) Specific topic associations along the principal gradient are inferred using segregation queries. (8) Finally, a gradient-based meta-analysis of hemispheric asymmetries is performed.
 
-## The 1024 functional regions dictionary from DiFuMo
+### The 1024 functional regions dictionary from DiFuMo
 
 To increase the interpretability of our findings and alleviate computational burdens, we reduce voxel-level data to region-level data. In particular, we adopt the 1024 functional regions dictionary from the Dictionaries of Functional Modes (DiFuMo) atlases (Dadi et al., 2020). The DiFuMo is a set of multi-scale functional atlases estimated via massive online dictionary learning (Mensch et al., 2016) applied to functional brain volumes of thousands of subjects across 27 large-scale studies, forming a total of 2192 task-based and resting-state MRI sessions. Reducing voxel data to 1024 functional regions has been argued to capture the functional neuroanatomy of the brain equally well as voxel-level analysis while reducing computational burdens (Dadi et al., 2020). Unlike other dimensionality-reduction techniques, massive online dictionary learning assigns non-negative continuous loadings to each voxel designating its relative weight on each region. Voxels with a loading value equal to 0 on any given region do not belong in a given region. Finally, to identify the DiFuMo regions in the LPFC, we recover those that have at least 50% of their volume fall within the LPFC mask described earlier. See the next section on Representing heterogeneous data in a single framework with NeuroLang for more details. Note that we do not mask out region voxels outside the LPFC mask—we either include or exclude entire DiFuMo regions without breaking continuity. This means that some functional regions can include voxels outside the LPFC mask. The reason for this crossover is that functionally defined regions seldom conform to anatomical landmarks in the brain. Comprehensive details on the DiFuMo atlas can be found in the original study by Dadi et al., 2020.
 
-## Representing heterogeneous data in a single framework with NeuroLang
+### Representing heterogeneous data in a single framework with NeuroLang
 
 The goal behind developing NeuroLang is to create a universal language that reduces the likelihood of miscommunication within the cognitive neuroscience community by enabling databases, hypotheses, and questions to be defined in a formal, shareable, and reproducible manner. This is believed to be a critical step toward advancing the field of cognitive neuroscience (Poldrack and Yarkoni, 2016).
 
-In this study, we represent data types from heterogeneous sources, such as peak coordinates, topic models, anatomical masks, and brain atlases in a single framework. More precisely, these data and the relationships among them can be represented as facts and rules using declarative logic-based statements. The user only has to specify what is to be found rather than how to find it. Facts and rules in NeuroLang are tuple sets or tables structured in rows. Each row is a sequence of k elements representing a piece of data, such as the MNI coordinates of a reported peak in a study, and can be implicitly assigned a probability that quantifies the level of uncertainty in this data. Fact tables represent explicit information present in the data, while rule tables represent inferred relationships among different data elements. The goal is to declare these tables as predicates in a probabilistic logic program that solves complex queries on them. For a survey on probabilistic databases and probabilistic programming, the reader is referred to Van den Broeck and Suciu, 2015.
+In this study, we represent data types from heterogeneous sources, such as peak coordinates, topic models, anatomical masks, and brain atlases in a single framework. More precisely, these data and the relationships among them can be represented as facts and rules using declarative logic-based statements. The user only has to specify what is to be found rather than how to find it. Facts and rules in NeuroLang are tuple sets or tables structured in rows. Each row is a sequence of $k$ elements representing a piece of data, such as the MNI coordinates of a reported peak in a study, and can be implicitly assigned a probability that quantifies the level of uncertainty in this data. Fact tables represent explicit information present in the data, while rule tables represent inferred relationships among different data elements. The goal is to declare these tables as predicates in a probabilistic logic program that solves complex queries on them. For a survey on probabilistic databases and probabilistic programming, the reader is referred to Van den Broeck and Suciu, 2015.
 
-To concretely showcase how we represent data in NeuroLang, we start with the Neurosynth dataset. The database includes studies that report peak activations coordinates in standard space (Figure 6A). In NeuroLang, we represent these peaks in a fact table called PeakReported. This table contains a row (x, y, z, study) for each peak with coordinates (x, y, z) that has been reported active by a study. Also, the studies themselves are represented in a fact table called Study that contains a row for each study containing a single element, (study), representing its PubMed identifier. Similarly to Neurosynth, we assume each study within the database to be an independent equiprobable sample of neuroscientific knowledge (Yarkoni et al., 2011). This assumption is represented by another fact table we call SelectedStudy, which simply assigns a uniform probability (1/N, N=14,370) for each study to be selected in any possible world of events. In other words, this assumption allows the studies to have equal weights in the meta-analysis (Yarkoni et al., 2011; Iovene and Wassermann, 2020).
+To concretely showcase how we represent data in NeuroLang, we start with the Neurosynth dataset. The database includes studies that report peak activations coordinates in standard space (Figure 6A). In NeuroLang, we represent these peaks in a fact table called PeakReported. This table contains a row (x, y, z, study) for each peak with coordinates (x, y, z) that has been reported active by a study. Also, the studies themselves are represented in a fact table called Study that contains a row for each study containing a single element, (study), representing its PubMed identifier. Similarly to Neurosynth, we assume each study within the database to be an independent equiprobable sample of neuroscientific knowledge (Yarkoni et al., 2011). This assumption is represented by another fact table we call SelectedStudy, which simply assigns a uniform probability ($1/N$, $N=14,370$) for each study to be selected in any possible world of events. In other words, this assumption allows the studies to have equal weights in the meta-analysis (Yarkoni et al., 2011; Iovene and Wassermann, 2020).
 
 Further, the spatial uncertainty surrounding the reported location of each peak in a given study can be represented in a rule table named VoxelReported. In this rule table, a multilevel kernel density analysis (MKDA) (Wager et al., 2007) assumes each peak’s 10mm neighboring voxels to be equivalently reported (Wager et al., 2007). Thus, the VoxelReported table contains a row (x, y, z, study) for each voxel at location (x, y, z) and falls within 10mm Euclidean distance from a peak reported by a study. As Neurolang is based on Datalog (Abiteboul et al., 1995), a declarative logic programming language designed to solve queries on large databases, the program that computes VoxelReported is written as follows:
 
@@ -156,7 +363,7 @@ ans(r):- LPFCRegion(r)
 
 We start by declaring the predicates to be used in solving the query. These predicates are the RegionVolume and VolumeOfOverlapWithMask. These encode the total volume and the volume of overlap with the LPFC mask of each brain region r, respectively. The LPFCRegion is the final answer of this program and states that: “A brain region r belongs to the LPFC if its volume of overlap, v, with an LPFC mask makes up more than 50% of its total volume, v0”. Volume variables v and v0 are estimated by the built-in function count(x, y, z), which simply counts the number of voxels in a brain region.
 
-## Estimating the meta-analytic connectivity matrix with NeuroLang
+### Estimating the meta-analytic connectivity matrix with NeuroLang
 
 To infer a whole-brain meta-analytic connectivity profile for each LPFC region, we query the database on the probability that a brain region is reported active given the presence or absence of activation in a LPFC region. For this purpose, we write a NeuroLang program that first projects the voxels reported active in each study onto the 1024 functional regions to determine which ones are reported by the study (step 2 in Figure 6B). In this context, the program regards the reporting of a brain region by a study as a probabilistic event rather than a deterministic one. That is, if a voxel reported active has a weight w on a functional region r, then the region is assigned a probability w of being reported by the study. If multiple voxels with distinct weights are reported active within a region, then the maximum weight is considered as the probability for the region to be reported by the study. Second, we infer the probabilities of observing activation in every brain region given the presence, and subsequently given the absence, of activation in each LPFC region. We then compute the logarithm of the odds ratio, the difference of the logits of the probabilities. This yields a vector for each LPFC region whose elements represent the amount of evidence for pairwise meta-analytic connectivity with every brain region. A positive LOR indicates more evidence for coactivation, a negative LOR implies more evidence independent activation, and a LOR equal to 0 implies that evidence is inconclusive for either hypotheses. The program that infers the meta-analytic connectivity matrix is as follows:
 
@@ -196,13 +403,13 @@ MetaAnalyticConnectivityMatrix(r2, r, LOR):-
 
 ans(r2, r, LOR):- MetaAnalyticConnectivityMatrix(r2, r, LOR)
 
-In order to solve the query, we first need to declare the predicates. First, we get the maximum weight of each DiFuMo brain region in RegionMaxWeight using the built-in function max(w). This will be used to declare a probabilistic table RegionVoxelNormalizedWeight, which implicitly incorporates the normalized weight w/W of each voxel (x, y, z) in each DiFuMo-1024 region r. The normalized weight is represented by the (:: w/W). Second, we define the probabilistic tables LPFCRegionActive and BrainRegionActive, wherein each row carries a probability that a brain or LPFC region is reported active by a study. Similarly, we define LPFCRegionNotActive, a probabilistic table wherein each row carries the probability that a study does not report activation in a LPFC region. We then infer ProbabilityOfCoactivation, which encodes the probability (PROB) of activation being reported in brain region r given (//) that activation is also reported in LPFC region r2. Likewise, we infer ProbabilityOfNoCoactivation, which encodes the probability of activation being reported in a brain region given that activation is not reported in a LPFC region. The SelectedStudy table sets the program to assign an equal weight (1/N, N=14,371) to all the studies in the meta-analysis. Finally, the MetaAnalyticConnectivityMatrix rule table is inferred by computing the LOR of the two events (i.e. coactivation and no coactivation) as a measure of meta-analytic connectivity between each LPFC region and every brain region.
+In order to solve the query, we first need to declare the predicates. First, we get the maximum weight of each DiFuMo brain region in RegionMaxWeight using the built-in function max(w). This will be used to declare a probabilistic table RegionVoxelNormalizedWeight, which implicitly incorporates the normalized weight w/W of each voxel (x, y, z) in each DiFuMo-1024 region r. The normalized weight is represented by the (:: w/W). Second, we define the probabilistic tables LPFCRegionActive and BrainRegionActive, wherein each row carries a probability that a brain or LPFC region is reported active by a study. Similarly, we define LPFCRegionNotActive, a probabilistic table wherein each row carries the probability that a study does not report activation in a LPFC region. We then infer ProbabilityOfCoactivation, which encodes the probability (PROB) of activation being reported in brain region r given (//) that activation is also reported in LPFC region r2. Likewise, we infer ProbabilityOfNoCoactivation, which encodes the probability of activation being reported in a brain region given that activation is not reported in a LPFC region. The SelectedStudy table sets the program to assign an equal weight ($1/N$, $N=14,371$) to all the studies in the meta-analysis. Finally, the MetaAnalyticConnectivityMatrix rule table is inferred by computing the LOR of the two events (i.e. coactivation and no coactivation) as a measure of meta-analytic connectivity between each LPFC region and every brain region.
 
-## Diffusion map embedding using the BrainSpace toolbox
+### Diffusion map embedding using the BrainSpace toolbox
 
 To recover a low-dimensional embedding of the meta-analytic connectivity matrix, we choose to apply diffusion embedding (Coifman et al., 2005), an unsupervised nonlinear dimensionality reduction method. The low-dimensional embeddings represent the axes of variation of coactivation-based connectivity patterns in the LPFC, and can be recovered with two steps. First, we estimate the similarity between LPFC regions in terms of their coactivation patterns. Here, we quantify the similarity between each pair of LPFC regions using the eta-squared coefficient following Haak et al., 2018, yielding a square affinity matrix (step 4 in Figure 6B). The eta-squared coefficient represents the fraction of the variance in one meta-analytic connectivity profile that is accounted for by the variance in another and ranges from 0 (totally dissimilar) to 1 (perfectly similar). Diffusion embedding then represents this similarity structure as an arrangement of regions in an embedding space spanned by 20 components known as ‘gradients’. Gradients are conceptually similar to the components of principal components analysis and represent unidimensional axes, each explaining a fraction of the variance in a given feature (Margulies et al., 2016), in our case, meta-analytic connectivity. In each gradient, regions that have very similar meta-analytic connectivity patterns occupy nearby zones, while regions with dissimilar patterns are situated further apart. The first or principal gradient is the most informative component as it captures the dominant axis of variation of meta-analytic connectivity patterns within the LPFC.
 
-## Inferring whole-brain coactivation patterns of quintile bins along the principal gradient using NeuroLang
+### Inferring whole-brain coactivation patterns of quintile bins along the principal gradient using NeuroLang
 
 To be able to infer varying coactivation patterns along the principal gradient in the LPFC, we first create regions-of-interest from successive twenty-percentile gradient bins (i.e. five quintile bins) in the right and left LPFC. Then, we infer each quintile bin’s coactivation pattern and characterize the variation of network connectivity along the principal gradient (step 6 in Figure 6B). We represent the voxels of the quintile bins in each hemisphere as fact tables LeftBinVoxel and RightBinVoxel for the left and right LPFC, respectively. Each of these tables includes a row (bin, x, y, z) for each voxel at location (x, y, z) in MNI space and belonging to a quintile bin. Moreover, we declare another fact table Bin whose rows contain only the labels of the quintile bins (i.e. bin1 to bin5).
 
@@ -275,7 +482,7 @@ CoactivationPattern(r, bin, PROB):-  
 
 ans(bin, r):- CoactivationPattern(bin, r)
 
-## Inferring specific structure-function associations using NeuroLang segregation queries
+### Inferring specific structure-function associations using NeuroLang segregation queries
 
 We infer specific structure-function associations by estimating the extent to which a spatially-localized activation along the principal gradient in the LPFC predicts a Neurosynth topic’s presence in a study. For this purpose, we write NeuroLang programs that include what we call ‘segregation queries’. Segregation queries infer the probability that a topic is present in a study given spatially constrained activation within a range of quintile bins and the simultaneous absence of activation outside this range within the same hemisphere. Concurrently, a segregation query infers the probability of the opposite event: a topic is present given no activation within the range of quintile bins or there exists activation outside the range. The LOR of these two hypotheses gives us a measure of evidence in favor of association between a topic and patterns of activity along the principal gradient. The NeuroLang program that infers specific structure-function associations in the left LPFC using segregation queries is as follows:
 
@@ -428,6 +635,6 @@ ans(topic, bin, LOR):- InterHemisphereTopicBinAssociation(topic, bin, LOR)
 
 In this program, we define the predicates LeftBinActive and RightBinActive that represent the studies reporting activation in each quintile bin of the principal gradient in the left and right LPFC, respectively. Then we declare the inter-hemispheric segregation queries using the negation operator and the existential quantifier, ~exists, and stores the results in OnlyLeftBinActive and OnlyRightBinActive. Subsequently, the program infers the conditional probabilities that a topic is present in a study when given activation either in a left or a right quintile bin. The final answer, InterHemisphereTopicBinAssociation, is derived by computing the LOR of the two hypotheses.
 
-## Data availability statement
+### Data availability statement
 
 All data used in this study is available in open-source databases. Meta-analytic data comes from Neurosynth (Yarkoni et al., 2011), and the human data comes from the Individual Brain Charting database (Pinho et al., 2020). Code for NeuroLang version 0.1a11 is freely available at https://github.com/NeuroLang/NeuroLang; Wassermann et al., 2022. In-depth details on NeuroLang are forund in Abdallah et al., 2022 and Iovene, 2021. All code was developed based on open-source, publicly available software packages.

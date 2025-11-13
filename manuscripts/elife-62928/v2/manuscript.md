@@ -46,7 +46,7 @@
 
 ## Abstract
 
-Obesity is widespread and linked to various co-morbidities. Bariatric surgery has been identified as the only effective treatment, promoting sustained weight loss and the remission of co-morbidities. Metabolic profiling was performed on diet-induced obese (DIO) mice, lean mice, and DIO mice that underwent sleeve gastrectomies (SGx). In addition, mice were subjected to intraperitoneal (i.p.) injections with taurodeoxycholic acid (TDCA) and valine. Indirect calorimetry was performed to assess food intake and energy expenditure. Expression of appetite-regulating hormones was assessed through quantification of isolated RNA from dissected hypothalamus tissue. Subsequently, i.p. injections with a melanin-concentrating hormone (MCH) antagonist and intrathecal administration of MCH were performed and weight loss was monitored. Mass spectrometric metabolomic profiling revealed significantly reduced systemic levels of TDCA and L-valine in DIO mice. TDCA and L-valine levels were restored after SGx in both human and mice to levels comparable with lean controls. Systemic treatment with TDCA and valine induced a profound weight loss analogous to effects observed after SGx. Utilizing indirect calorimetry, we confirmed reduced food intake as causal for TDCA/valine-mediated weight loss via a central inhibition of the MCH. In summary, we identified restored TDCA/valine levels as an underlying mechanism of SGx-derived effects on weight loss. Of translational relevance, TDCA and L-valine are presented as novel agents promoting weight loss while reversing obesity-associated metabolic disorders. This work has been supported in part by a grant from NIH (UO-1 A1 132898 to S.G.T., DP and MA). M.Q. was supported by the IFB Integrated Research and Treatment Centre Adiposity Diseases (Leipzig, Germany) and the German Research Foundation (QU 420/1-1). J.I. was supported by the Biomedical Education Program (BMEP) of the German Academic Exchange Service (DAAD). T.H. (HE 7457/1-1) and F.K. (KR 4362/1-1) were supported by the German Research Foundation (DFG). H.R.C.B. was supported the Swiss Society of Cardiac Surgery. Y.N. was supported by the Chinese Scholarship Council (201606370196) and Central South University. H.U., T.M. and R.M. were supported by the Osaka Medical Foundation. C.S.F. was supported by the German Research Foundation (DFG, SFB738, B3).
+Background:Obesity is widespread and linked to various co-morbidities. Bariatric surgery has been identified as the only effective treatment, promoting sustained weight loss and the remission of co-morbidities.Methods:Metabolic profiling was performed on diet-induced obese (DIO) mice, lean mice, and DIO mice that underwent sleeve gastrectomies (SGx). In addition, mice were subjected to intraperitoneal (i.p.) injections with taurodeoxycholic acid (TDCA) and valine. Indirect calorimetry was performed to assess food intake and energy expenditure. Expression of appetite-regulating hormones was assessed through quantification of isolated RNA from dissected hypothalamus tissue. Subsequently, i.p. injections with a melanin-concentrating hormone (MCH) antagonist and intrathecal administration of MCH were performed and weight loss was monitored.Results:Mass spectrometric metabolomic profiling revealed significantly reduced systemic levels of TDCA and L-valine in DIO mice. TDCA and L-valine levels were restored after SGx in both human and mice to levels comparable with lean controls. Systemic treatment with TDCA and valine induced a profound weight loss analogous to effects observed after SGx. Utilizing indirect calorimetry, we confirmed reduced food intake as causal for TDCA/valine-mediated weight loss via a central inhibition of the MCH.Conclusions:In summary, we identified restored TDCA/valine levels as an underlying mechanism of SGx-derived effects on weight loss. Of translational relevance, TDCA and L-valine are presented as novel agents promoting weight loss while reversing obesity-associated metabolic disorders.Funding:This work has been supported in part by a grant from NIH (UO-1 A1 132898 to S.G.T., DP and MA). M.Q. was supported by the IFB Integrated Research and Treatment Centre Adiposity Diseases (Leipzig, Germany) and the German Research Foundation (QU 420/1-1). J.I. was supported by the Biomedical Education Program (BMEP) of the German Academic Exchange Service (DAAD). T.H. (HE 7457/1-1) and F.K. (KR 4362/1-1) were supported by the German Research Foundation (DFG). H.R.C.B. was supported the Swiss Society of Cardiac Surgery. Y.N. was supported by the Chinese Scholarship Council (201606370196) and Central South University. H.U., T.M. and R.M. were supported by the Osaka Medical Foundation. C.S.F. was supported by the German Research Foundation (DFG, SFB738, B3).
 
 ## Introduction
 
@@ -68,15 +68,130 @@ Administration of both, TDCA and valine in DIO mice, caused a robust and sustain
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Diet-induced obese (DIO) C57BL/6 mice</td>
+      <td>Taconic</td>
+      <td>B6-M</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Lean C57BL/6 mice</td>
+      <td>Taconic</td>
+      <td>DIO-B6-M</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Wistar rats</td>
+      <td>Charles River</td>
+      <td>003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant MCH</td>
+      <td>Cayman Chemical</td>
+      <td>ID: 24462</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zol RNA MiniPrep kit</td>
+      <td>Zymo Research</td>
+      <td>ID: 205311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Reverse transcriptase QuantiTech RT Kit</td>
+      <td>Qiagen</td>
+      <td>ID: R2061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR Green master mix</td>
+      <td>Applied Biosystems</td>
+      <td>ID: 4309155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MCHR1-I</td>
+      <td>Takeda</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TDCA</td>
+      <td>Sigma-Aldrich</td>
+      <td>ID: T0875-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Valine</td>
+      <td>Sigma-Aldrich</td>
+      <td>ID: V0513-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>San Diego, CA</td>
+      <td>SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaboAnalyst 3.0</td>
+      <td>Genome Canada</td>
+      <td>SCR 015539</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glucose</td>
+      <td>Sigma-Aldrich</td>
+      <td>ID: 50-99-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HFD D12492</td>
+      <td>Research Diets Inc</td>
+      <td>ID: 50-99-712492</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Animal use and care were in accordance with institutional and National Institutes of Health guidelines. DIO C57BL/6 mice and lean littermates were purchased from Taconic (Taconic Farms Inc, Germantown, NY) for all studies. The study protocol was approved by the Brigham and Women’s Hospital (BWH) Institutional Animal Care and Use Committee (IACUC) animal protocol (animal protocol 2016N000371). Obesity was induced by feeding animals ad libitum with a high-fat diet (HFD) that provides 60% of total energy as fat (D12492 diet, Research Diets Inc, New Brunswick, NJ) starting at 6 weeks of age for a duration of 12 weeks. Wistar rats used for intracerebral administration of recombinant MCH were group-housed and fed D12492 for 12 weeks (60% k/cal diet). Rats subsequently underwent cranial surgery placing a resealable canula in the lateral cerebral ventricle. All animals were maintained in specific pathogen-free conditions at the BWH animal facility in accordance with federal, state, and institutional guidelines. Animals were maintained on 12 hr light, 12 hr dark cycle in facilities with an ambient temperature of 19–22°C and 40–60% humidity and were allowed free access to water and standard chow. Euthanasia was performed by cervical dislocation following anesthesia with isoflurane (Patterson Veterinary, Devens, MA).
 
-## Bariatric surgery
+### Bariatric surgery
 
 A gastric sleeve was created along the lesser curvature by transecting the stomach. The sleeve was then hand-sewn, using an 8–0 continuous Prolene suture. Sham animals underwent a laparotomy, the stomach was isolated, and blunt pressure was applied with forceps for corresponding durations.
 
-## Metabolic experiments
+### Metabolic experiments
 
 DIO-C57BL/6 mice obese animals that were on an HFD (12492, Research Diets Inc) at 6 weeks of age for a duration of 12 weeks were then switched to a normal chow diet and consecutive body weight was assessed.
 
@@ -90,35 +205,35 @@ MCHR1-I was obtained from Takeda, Chuo-ku, Tokyo, Japan. MCHR1-I was administere
 
 rMCH (Cayman Chemical) was dissolved in sterile ddH2O (1 μg/μl) and 5 μl was administered by intracranial injection over 30 s into the lateral ventricle.
 
-## Indirect calorimetry
+### Indirect calorimetry
 
 Twelve DIO mice (control = 6, treatment = 6) were placed into the Columbus Instruments Comprehensive Lab Animal Monitoring System and maintained for 6 days. They were kept on HFD at 22°C ± 1°C ambient temperature for the duration of the experiment. After 1 day of acclimation, injections of TDCA/valine were performed at 2 p.m. each day for 5 days. Time graphs represent hourly averages throughout the experiment. Bar graphs correspond to the total, light, and dark cycles (12 hr cycles beginning and ending at 6 a.m. and 6 p.m.). Error bars represent SEM. Student’s t-tests were performed on all bar graphs.
 
-## Human samples
+### Human samples
 
 Serum samples from patients prior to and 3 months post sleeve gastrectomy were obtained with approval of the BWH Institutional Review Board and through cooperation with Dr Eric G. Sheu and the Center for Metabolic and Bariatric Surgery at BWH. Informed consent was obtained from all patients and samples were collected following BWH ethical regulations. Whole blood samples were obtained at routinely scheduled pre-operative and post-operative appointments, centrifuged to obtain serum, and then stored at −80°C up until metabolite measurements and data analysis exactly as described above for murine samples.
 
-## Metabolite measurements by LC–MS/MS and data analysis
+### Metabolite measurements by LC–MS/MS and data analysis
 
 Whole blood samples were centrifuged at 13,000 × g for 10 min at 4°C, and 200 µl of the supernatant were saved; 800 µl of cooled methanol (−80°C) were added to the supernatant for a final 80% (vol/vol) methanol solution. Samples were incubated for 6 hr at −80°C and then centrifuged at 13,000 × g for 10 min at 4°C. Supernatants were collected, dried in a SpeedVac (Savant AS160, Farmingdale, NY), and stored at −80°C until analysis. Each sample was resuspended in 20 μl of LC/MS grade water and then analyzed with a 5500 QTRAP, a hybrid triple quadrupole/linear ion trap mass spectrometer, using a quantitative polar metabolomics profiling platform with selected reaction monitoring that covers all major metabolic pathways. An unbiased quantitative analysis of 260 detected metabolites was performed utilizing the web-based MetaboAnalyst 3.0 software examining high-throughput metabolomics data aiming to identify patterns that were significantly different between our experimental groups in three consecutive steps. First, heat map provided an initial assessment on the distribution of peak intensities in our three experimental groups. Next, significance analysis of microarray (SAM) revealed candidates with statistically significant differences among our three experimental groups (obese-lean-SGx). Finally, we utilized the statistic tool of the pattern hunter to search for the ‘ideal compound candidate’ with lowest intensities in obese animals and highest in animals after SGx. Absolute quantifications of TDCA and valine concentrations were generated using standard curves with known concentrations of TDCA and valine, respectively.
 
-## Dissection of hypothalamus tissue, RNA extraction, real-time PCR
+### Dissection of hypothalamus tissue, RNA extraction, real-time PCR
 
 Mice were assigned to the following experimental groups, with n = 6 in each group: lean PBS-treated mice, lean TDCA/valine-treated mice, DIO-obese PBS-treated mice, DIO-obese PBS-treated mice fasted for 12 hr before tissue procurement, DIO-obese TDCA/valine-treated mice, DIO-obese TDCA/valine-treated mice fasted for 12 hr before tissue procurement, DIO-obese mice undergoing sleeve gastrectomy. Cage beddings were pooled and redistributed at days −6, –4, and −2 to normalize microbial flora among experimental groups. At day 0, treatment began and SGx were performed. Mice were treated for 13 days, with procurement of tissues performed on day 14. Animals were anesthetized with ketamine and sacrificed by decapitation. Brains were removed, and hypothalamus tissue was dissected and flash-frozen in liquid nitrogen. RNA was isolated using Direct-zol RNA MiniPrep kit (Zymo Research, Irvine, CA). cDNA was made from isolated RNA using oligo (dt), random hexamer primers, and reverse transcriptase QuantiTech RT Kit (Qiagen, Germantown, MD). Quantitative PCR was performed using the 7800HT (Applied Biosystems, Foster City, CA) thermal cycler and SYBR Green master mix (Applied Biosystems). Relative mRNA abundance was calculated and normalized to levels of the housekeeping gene cyclophilin A.
 
-## Statistics
+### Statistics
 
 Unless otherwise specified in figure legends, comparisons between experimental groups were performed using Student’s t-test. Survival curves were compared by using the log rank test. When applicable, mice were randomly assigned to treatment or control groups. All results were generated using GraphPad Prism software (San Diego, CA). A p-value of 0.05 was considered statistically significant.
 
 ## Results
 
-## Bariatric surgery induces sustained weight loss by restoring the metabolite profile in both, mice and humans
+### Bariatric surgery induces sustained weight loss by restoring the metabolite profile in both, mice and humans
 
 Bariatric surgery is effective in 80–90% of obese individuals and leads to sustained weight loss and significant improvement of co-morbidities (Gloy et al., 2013; Chang et al., 2014; Sjöström, 2013). To assess mechanisms of surgically induced weight loss through SGx, we made use of C57BL/6 wild-type DIO mice, a well-established murine model of obesity (Winzell and Ahrén, 2004; Wang and Liao, 2012; Figure 1A).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/62928/elife-62928-fig1-v2.jpg)
 
-**Figure 1.:** C57BL/6 DIO mice (n = 5) underwent SGx or sham surgery, were fasted on the day of surgery, switched to a liquid diet for 2 days and returned to a high-fat diet by day 3. An additional set of C57BL/6 DIO and C57BL/6 lean mice receiving a similar diet served as controls. (A) Body weight was monitored for a course of 2 weeks every 24 hr. (B) Proportional weight loss of C57BL/6 DIO mice undergoing SGx and sham surgery was calculated comparing mean weight loss after 7 and 14 days, respectively. Results are representative of at least three independent experiments. Column plots display mean with standard deviation. Statistical significance was determined using two-way analysis of variance (ANOVA) followed by Turkey’s multiple comparison test with single pooled variance. Asterisks indicate p-values: *p < 0.05, **p < 0.01, and ***p < 0.001. Only significant values are shown (n = 7 animals/group).Figure 1—source data 1.Figure 1.
+**Figure 1.:** C57BL/6 DIO mice (n = 5) underwent SGx or sham surgery, were fasted on the day of surgery, switched to a liquid diet for 2 days and returned to a high-fat diet by day 3. An additional set of C57BL/6 DIO and C57BL/6 lean mice receiving a similar diet served as controls. (A) Body weight was monitored for a course of 2 weeks every 24 hr. (B) Proportional weight loss of C57BL/6 DIO mice undergoing SGx and sham surgery was calculated comparing mean weight loss after 7 and 14 days, respectively. Results are representative of at least three independent experiments. Column plots display mean with standard deviation. Statistical significance was determined using two-way analysis of variance (ANOVA) followed by Turkey’s multiple comparison test with single pooled variance. Asterisks indicate p-values: *p < 0.05, **p < 0.01, and ***p < 0.001. Only significant values are shown (n = 7 animals/group).
 
 Subsequent to SGx, we observed a significant weight loss (−34% by 2 weeks). In marked contrast, sham-operated DIO mice re-gained their pre-operative weight by post-operative day 14 (−5%), indicating that the observed weight loss was independent of the surgical trauma (Figure 1B). Thus, SGx promoted durable weight loss independent of the surgical procedure or dietary effects.
 
@@ -126,15 +241,23 @@ Previous studies implicated that SGx induce modifications in levels of metabolic
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/62928/elife-62928-fig2-v2.jpg)
 
-**Figure 2.:** Whole blood samples from C57BL/6 DIO mice after SGx and DIO and lean controls were analyzed with a 5500 QTRAP mass spectrometer. Quantitative analysis was performed utilizing MetaboAnalyst 3.0. (A) Heat map of 32 metabolites displayed after hierarchical clustering, p<0.05. (B) Significance analysis of microarrays (SAM) revealed 17 metabolites with significance. (C) Pattern hunter stratified the 25 metabolites with top peaks (mz/rt) according to the order obese-control-SGx. (D) Serum was isolated from patients undergoing SGx pre-operative (Pre-OP) and 3 months after surgery (POM3). TDCA and valine levels were quantified using mass spectrometry and peak are integrated TIC values compared (n = 6). Results are representative of at least three independent experiments. Statistical significance was determined using one-way analysis of variance (ANOVA) and SAM. TDCA/valine TIC values from human samples were compared using paired Student’s t-test. Asterisks indicate p-values: *p < 0.05, **p < 0.01, and ***p < 0.001. Only significant values are shown (n = 6 animals/group, n = 6 patients). All data supporting figures are provided as source data files.Figure 2—source data 1.Figure 2.
+**Figure 2.:** Whole blood samples from C57BL/6 DIO mice after SGx and DIO and lean controls were analyzed with a 5500 QTRAP mass spectrometer. Quantitative analysis was performed utilizing MetaboAnalyst 3.0. (A) Heat map of 32 metabolites displayed after hierarchical clustering, p<0.05. (B) Significance analysis of microarrays (SAM) revealed 17 metabolites with significance. (C) Pattern hunter stratified the 25 metabolites with top peaks (mz/rt) according to the order obese-control-SGx. (D) Serum was isolated from patients undergoing SGx pre-operative (Pre-OP) and 3 months after surgery (POM3). TDCA and valine levels were quantified using mass spectrometry and peak are integrated TIC values compared (n = 6). Results are representative of at least three independent experiments. Statistical significance was determined using one-way analysis of variance (ANOVA) and SAM. TDCA/valine TIC values from human samples were compared using paired Student’s t-test. Asterisks indicate p-values: *p < 0.05, **p < 0.01, and ***p < 0.001. Only significant values are shown (n = 6 animals/group, n = 6 patients). All data supporting figures are provided as source data files.
 
 We found significantly decreased systemic levels of TDCA and L-valine in DIO mice. Obese animals, that underwent SGx, however, displayed overall restored levels of both metabolites, suggesting a critical involvement of TDCA/valine in the metabolic underpinning of SGx-induced weight loss (Figure 2C).
 
 Moreover, to investigate the translational relevance of our findings, we analyzed serum levels of TDCA and valine in human samples and collected from patients immediately prior to and 3 months after SGx (Figure 2D). Subsequent to clinical SGx, we observed a significant increase in both TDCA and valine levels, indicating a similar impact of SGx in mice and humans (Figure 2D).
 
-## TDCA/valine treatment induces robust weight loss and ameliorates obesity-related insulin resistance
+### TDCA/valine treatment induces robust weight loss and ameliorates obesity-related insulin resistance
 
 Based on our metabolomic profiling data, indicating restored systemic TDCA/valine levels after SGx, we next set out to assess the physiological impact of TDCA/valine on obesity and weight loss and administered both metabolites intraperitoneally to naive DIO mice for a course of 2 weeks. Notably, the combined injection of TDCA and valine increased absolute, systemic TDCA and valine concentrations in DIO mice comparable to levels measured in lean control mice (Figure 3A), resulting in robust weight loss (Figure 3B) that went beyond the observed effects in mice undergoing SGx (Figure 3C). Importantly, administration of TDCA/valine to lean control mice did not impact weight loss (Figure 3B). Of note, isolated administration of either TDCA or valine was found to be less effective as assessed by body weight measurements over a course of 30 days with daily, i.p. TDCA or valine injections (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62928/elife-62928-fig3-v2.jpg)
+
+**Figure 3.:** C57BL/6 diet-induced obese (DIO) mice received intraperitoneal injections of TDCA (50 mg/kg) and L-valine (200 mg/kg) daily over the course of 2 weeks. (A) Plasma TDCA and valine levels were quantified before and after 14 days of treatment by mass spectrometry (n = 5). (B) Body weight was evaluated for 2 weeks every 24 hr. (B) Column plot of mean body weight comparing sleeve gastrectomies (SGx) and TDCA/valine (T/V)-treated animals at days 0, 7, and 14. (C) Subcutaneous and epididymal fat tissue was removed after 14 days of treatment or SGx and weight was determined. (D) Systemic leptin levels were quantified by ELISA after fasting in control and T/V-treated DIO and lean mice. (E) 2 g/kg glucose was injected following 8 hr of daytime fasting. Blood glucose levels were assessed in blood samples utilizing a blood glucose meter. Results are representative of at least three independent experiments. Column plots display mean with standard deviation. Statistical significance was determined by using one-way analysis of variance (ANOVA). Asterisks indicate p-values: *p < 0.05, **p < 0.01, and ***p < 0.001. Only significant values are shown (n = 5–7 animals/group).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62928/elife-62928-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** C57BL/6 diet-induced obese (DIO) mice received daily, intraperitoneal injections of TDCA (50 mg/kg), L-valine (200 mg/kg), or both over the course of 30 days and weight loss was monitored. Results are representative of at least three independent experiments (mean ± standard deviation [n = 5 animals/group]).
 
 To further characterize the impact of TDCA/valine, we assessed subcutaneous and epididymal adipose tissue stores and found a significant decrease of both fat stores in TDCA/valine-treated DIO mice comparable to effects observed in DIO mice that underwent SGx (Figure 3D).
 
@@ -142,23 +265,23 @@ In addition, we assessed whether treatment with TDCA/valine affected systemic le
 
 It is well established that obesity promotes insulin resistance and T2D (Saltiel and Kahn, 2001; Xu et al., 2003). Thus, to further explore the effects of TDCA/valine treatment on obesity-associated insulin resistance and T2D, we assessed the capacity for glucose tolerance. DIO mice treated with TDCA/valine displayed a complete reversal of obesity-related insulin resistance comparable to lean controls. Notably, beneficial metabolic effects subsequent to TDCA/valine were analogous to those observed in DIO mice following SGx (Figure 3F).
 
-## Treatment with TDCA/valine induces weight loss through altered feeding behavior in the absence of physical dysfunction
+### Treatment with TDCA/valine induces weight loss through altered feeding behavior in the absence of physical dysfunction
 
 Growing evidence suggests a decreased food intake as critical for the long-term weight reduction subsequent to SGx (Stefater et al., 2012). Hypothesizing that TDCA/valine treatment may mimic SGx-induced weight loss, we next assessed calorimetric and metabolic parameters of DIO mice receiving daily injections of either TDCA/valine or PBS using a Comprehensive Lab Animal Monitoring System (CLAMS). While cumulative energy intake and the hourly food intake significantly declined in TDCA/valine-treated animals compared to PBS-treated controls (Figure 4A,B), hourly measured energy expenditure and the measured total activity did not change during treatment (Figure 4B,C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62928/elife-62928-fig4-v2.jpg)
 
-**Figure 4.:** Twelve DIO mice (control = 6, treatment = 6) were placed into the Columbus Instruments’ Comprehensive Lab Animal Monitoring System (CLAMS) for 6 days. Time graphs represent hourly averages throughout the experiment. Shaded regions represent the 12 hr dark photoperiod. After 1 day of acclimation (not shown), injections of TDCA/valine were performed at 2 p.m. for 5 days. This experiment monitored (A) cumulative energy intake (B) hourly food intake, (C) energy expenditure, (D) locomotor activity, (E) respiratory exchange ratio, and (F) energy balance (energy intake minus energy expenditure). Results are representative of at least three independent experiments. Statistical significance was determined by analysis of variance (ANOVA) using total mass as the covariate. Error bars represent SEM. Asterisks indicate p-values: *p < 0.05, **p < 0.01. Only significant values are shown (n = 6 animals/group).Figure 4—source data 1.Figure 4.
+**Figure 4.:** Twelve DIO mice (control = 6, treatment = 6) were placed into the Columbus Instruments’ Comprehensive Lab Animal Monitoring System (CLAMS) for 6 days. Time graphs represent hourly averages throughout the experiment. Shaded regions represent the 12 hr dark photoperiod. After 1 day of acclimation (not shown), injections of TDCA/valine were performed at 2 p.m. for 5 days. This experiment monitored (A) cumulative energy intake (B) hourly food intake, (C) energy expenditure, (D) locomotor activity, (E) respiratory exchange ratio, and (F) energy balance (energy intake minus energy expenditure). Results are representative of at least three independent experiments. Statistical significance was determined by analysis of variance (ANOVA) using total mass as the covariate. Error bars represent SEM. Asterisks indicate p-values: *p < 0.05, **p < 0.01. Only significant values are shown (n = 6 animals/group).
 
 Moreover, the respiratory exchange ratio and energy balance of TDCA/valine-treated obese animals significantly declined, supporting the significance of fatty acids for energy metabolism (Figure 4E,F). Of note, read-outs had not been impacted by the circadian cycle as comparable results were obtained during light and dark periods. Intriguingly, our data on weight loss induced by TDCA/valine were neither linked to a typical food-seeking behavior in response to fasting nor to unspecific toxic side effects of the applied metabolites. Instead, treatment with TDCA/valine specifically targeted feeding behavior while leaving locomotor activity and energy expenditure unaffected thus generating a negative energy balance.
 
-## TDCA/valine-induced weight loss is mediated through suppression of hypothalamic levels of orexigenic MCH
+### TDCA/valine-induced weight loss is mediated through suppression of hypothalamic levels of orexigenic MCH
 
 After detecting reduced feeding behavior and preserved energy expenditure linked to TDCA/valine-associated weight loss, we next analyzed hypothalamic peptides that are involved in regulation of appetite and energy homeostasis while treating animals with TDCA/valine. To this end, we isolated hypothalamus tissue from acute brain slices and analyzed mRNA levels of neuroendocrine regulators (AgRP, CART, MCH, NPY, POMC) by real-time PCR (RT-PCR), comparing expression in fed versus fasted animals. Our analysis revealed a substantial attenuation in the increase of MCH with fasting following TDCA/valine treatment (Figure 5A). Obese animals treated with PBS and fasted for 12 hr prior to procurement of hypothalamus tissue showed a pronounced increase in MCH levels, findings that were in line with the orexigenic effects of this neuropeptide. In TDCA/valine-treated obese animals, however, MCH-increase was not observed, suggesting an effect of TDCA/valine on the regulation of hypothalamic MCH expression (Figure 5A). Notably, MCH has been shown to centrally promote food intake, augment anabolic energy regulation (Hervieu, 2003; Pissios and Maratos-Flier, 2003; Shimada et al., 1998), and increase body weight in experimental models (Della-Zuana et al., 2002).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/62928/elife-62928-fig5-v2.jpg)
 
-**Figure 5.:** (A) Lean and diet-induced obese (DIO) mice were treated daily with either PBS or T and V. Two groups of T and V-treated DIO mice were subjected to 12 hr fasting before tissue procurement. After 2 weeks, all mice were sacrificed, hypothalamus tissue dissected, and RNA levels of POMC, CART, NPY, AgRP, and MCH measured by real-time PCR (RT-PCR). (B) DIO mice were subjected to daily intraperitoneal (i.p.) injection of T and V, oral administration of MCH receptor one inhibitor (MCHR1-I), or a combined treatment of both, T and V + MCHR1-I for a course of 2 weeks. Body weight and food consumption was measured and expressed as a contingency plot displaying total weight, percentage of starting weight, and food consumption per mouse. (C) DIO rats were subjected to combined i.p. TDCA/valine injection and intracerebral administration of recombinant MCH and weight loss was monitored for 2 weeks. Results are representative of at least three independent experiments. Column plots display mean with standard deviation. Statistical significance was determined using one-way analysis of variance (ANOVA). Asterisks indicate p-values: *p < 0.05, **p < 0.01, and ***p < 0.001. Only significant values are shown (n = 5–7 animals/group).Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Lean and diet-induced obese (DIO) mice were treated daily with either PBS or T and V. Two groups of T and V-treated DIO mice were subjected to 12 hr fasting before tissue procurement. After 2 weeks, all mice were sacrificed, hypothalamus tissue dissected, and RNA levels of POMC, CART, NPY, AgRP, and MCH measured by real-time PCR (RT-PCR). (B) DIO mice were subjected to daily intraperitoneal (i.p.) injection of T and V, oral administration of MCH receptor one inhibitor (MCHR1-I), or a combined treatment of both, T and V + MCHR1-I for a course of 2 weeks. Body weight and food consumption was measured and expressed as a contingency plot displaying total weight, percentage of starting weight, and food consumption per mouse. (C) DIO rats were subjected to combined i.p. TDCA/valine injection and intracerebral administration of recombinant MCH and weight loss was monitored for 2 weeks. Results are representative of at least three independent experiments. Column plots display mean with standard deviation. Statistical significance was determined using one-way analysis of variance (ANOVA). Asterisks indicate p-values: *p < 0.05, **p < 0.01, and ***p < 0.001. Only significant values are shown (n = 5–7 animals/group).
 
 To analyze the effect of TDCA/valine on MCH-regulated appetite and energy homeostasis in vivo, we made use of an MCHR1-I (Igawa et al., 2016). Treatment with MCHR1-I in DIO-obese mice led to decreased food intake and subsequent weight loss (Figure 5B). More importantly, simultaneous treatment with both MCHR1-I and TDCA/valine did not further reduce food intake or promote additional weight loss in DIO mice, suggesting that effects of TDCA/valine are, at least in part, mediated through suppression of hypothalamic levels of MCH.
 

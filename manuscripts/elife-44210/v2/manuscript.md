@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.44210.001 Immune activated T lymphocytes modulate the activity of key metabolic pathways to support the transcriptional reprograming and reshaping of cell proteomes that permits effector T cell differentiation. The present study uses high resolution mass spectrometry and metabolic labelling to explore how murine T cells control the methionine cycle to produce methyl donors for protein and nucleotide methylations. We show that antigen receptor engagement controls flux through the methionine cycle and RNA and histone methylations. We establish that the main rate limiting step for protein synthesis and the methionine cycle is control of methionine transporter expression. Only T cells that respond to antigen to upregulate and sustain methionine transport are supplied with methyl donors that permit the dynamic nucleotide methylations and epigenetic reprogramming that drives T cell differentiation. These data highlight how the regulation of methionine transport licenses use of methionine for multiple fundamental processes that drive T lymphocyte proliferation and differentiation.
+Immune activated T lymphocytes modulate the activity of key metabolic pathways to support the transcriptional reprograming and reshaping of cell proteomes that permits effector T cell differentiation. The present study uses high resolution mass spectrometry and metabolic labelling to explore how murine T cells control the methionine cycle to produce methyl donors for protein and nucleotide methylations. We show that antigen receptor engagement controls flux through the methionine cycle and RNA and histone methylations. We establish that the main rate limiting step for protein synthesis and the methionine cycle is control of methionine transporter expression. Only T cells that respond to antigen to upregulate and sustain methionine transport are supplied with methyl donors that permit the dynamic nucleotide methylations and epigenetic reprogramming that drives T cell differentiation. These data highlight how the regulation of methionine transport licenses use of methionine for multiple fundamental processes that drive T lymphocyte proliferation and differentiation.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ The present study uses high resolution mass spectrometry and metabolic labelling
 
 ## Results
 
-## The sustained supply of extracellular methionine is important for activation of T cells
+### The sustained supply of extracellular methionine is important for activation of T cells
 
 To investigate whether methionine availability in the external environment is important for T cells, we initially assessed the impact of methionine deprivation on the immune activation of CD4+ T cells. Flow cytometric forward and side scatter analysis of CD4+ T cells activated in the absence of methionine revealed that these cells do not undergo normal cell growth/blastogenesis (Figure 1a). TCR-activated CD4+ T cells deprived of methionine are smaller than CD4+ T cells activated in the presence of methionine (Figure 1a), and fail to proliferate (Figure 1b). However activation markers such as CD69 are expressed normally (Figure 1c). Methionine levels in RPMI tissue culture media are 100 μM. Serum methionine availability has been shown to range from 3 to 30 μM (Mentch et al., 2015), consequently we used levels of methionine spanning this range to further explore the importance of extracellular methionine availability for CD4+ T cell differentiation. In these experiments CD4+ T cells were activated by triggering TCR complexes and CD28 and cultured in Interleukin 2 (IL2) and IL12 to differentiate into Th1 cells that produce high levels of interferon gamma (IFNγ). We assessed the impact of restricting methionine availability on CD4+ T cell differentiation by activating the cells in media with different levels of methionine. The data in Figure 1d show that the frequency of IFNγ producing CD4+ T cells is dependent upon extracellular methionine availability (Figure 1d). A 2-fold reduction in methionine from 10 μM to 5 μM thus had a striking impact on the frequency of IFNγ producing CD4+ T cells that could develop under Th1 polarising conditions (Figure 1e) and also controlled the amount of IFNγ produced per cell (Figure 1f).
 
@@ -49,13 +49,13 @@ To investigate whether methionine availability in the external environment is im
 
 These initial experiments show that methionine availability is rate limiting for T cell activation and differentiation. However, another question is how important is sustained methionine supply for T cell function? To address this question T cells were activated through TCR/CD28 in a saturating concentration of external methionine (100 μM) for 20 hr prior to culturing in reduced concentrations of methionine for a further 2 hr. We then used quantitative single cell assays to assess the impact of acute restriction of methionine availability for protein synthesis, RNA and DNA synthesis in immune activated T cells. Protein synthesis was assayed using a single cell assay that quantifies the incorporation of an analogue of puromycin into nascent protein chains in the ribosome; total RNA and DNA synthesis were measured by monitoring incorporation of the nucleoside analogue, 5-ethynyl uridine (EU) or a modified thymidine analogue (EdU) respectively. The data show that T cells activated in the presence of 100 μM methionine have high rates of protein, RNA and DNA synthesis (Figure 1g–i). However, limiting extracellular methionine availability for 2 hr strikingly impacted on the ability of the cells to maintain these key processes. The EC50, that is the concentration of methionine required for half maximal effect was in these TCR/CD28 activated CD4+ cells was 1.39 μM for protein synthesis; 2.94 μM for RNA synthesis and 12.62 μM for the frequency of cells undergoing DNA synthesis (Figure 1j–l). Similar experiments were done with Th1 effector cells. These were differentiated for 5 days in 100 μM methionine and then maintained for five hours in methionine limited media. The data show that the ability of Th1 cells to sustain RNA, protein and DNA synthesis is also dependent on sustained methionine supply (Figure 1m–o).
 
-## Methionine metabolic pathways in T cells.
+### Methionine metabolic pathways in T cells.
 
 Methionine is the predominant ‘start’ amino acid used to initiate polypeptide synthesis during mRNA translation. Figure 2a shows naïve CD4+ T cells have almost undetectable incorporation of extracellular 3H-methionine into protein, however incorporation of 3H-methionine into protein is greatly increased upon activation through the TCR (Figure 2a).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/44210/elife-44210-fig2-v2.jpg)
 
-**Figure 2.:** (a) 3H radioactivity measured in TCA precipitated protein from isolated CD4+ T cells stimulated through the TCR (CD3/CD28) in the presence of 3H-methionine for the indicated times. (b) Metabolomic analysis of metabolites in the de novo pathway and the salvage pathway of the methionine cycle. The graphs show metabolite intensity derived from integrated peak areas of MS intensity from naïve CD4+ T cells and TCR-stimulated CD4+ T cells (CD3/CD28, for 16 hr). Enzymes are indicated adjacent to arrows (in blue). P values are indicated on each graph. Source data is available in Figure 2—source data 1. (c) The histograms show representative intracellular staining of total H3, trimethylated H3K27 (H3K27me3) or trimethylated H3K4 (H3K4me3) from IL7 maintained (unstimulated) or TCR-stimulated (CD3/CD28) CD4+ T cells for 18 hr. Geometric mean fluorescence intensities (MFI) are shown in the histograms. (d) The graph shows ratios of H3, H3K27me3 and H3K4me3 MFIs from TCR-stimulated (CD3/CD28) CD4+ T cells compared to unstimulated CD4+ T cells. (e, f) OT2 (CD45.1) cells were adoptively transferred into WT CD45.2 hosts. The hosts were immunised with NP-OVA/alum and the transferred OT2 cells were analysed after 3 days. The histograms (left) show representative intracellular staining of H3K27me3 (e) and H3K4me3 (f). Graphs (right) show ratios of H3K27me3 and H3K4me3 MFIs in activated OT2 CD4+ T cells compared to non-activated host CD4+ T cells 3 days post-immunisation. (g) 3H radioactivity measured in RNA extracted from isolated CD4+ T cells stimulated through the TCR (CD3/CD28) in the presence of 3H-methionine for the indicated times. (h) 3H radioactivity measured in protein or RNA extracted from CD4+ T cells stimulated in parallel to (g) in the presence 3H-phenylalanine for 18 hr. (i) Levels of SAH from unstimulated (naïve cells), TCR-stimulated (CD3/CD28, 18 hr) CD4+ T cells or IL2 maintained Th1 cells ± methionine for 18 hr. (j) The histograms show representative intracellular staining of total H3, trimethylated H3K27 (H3K27me3) or trimethylated H3K4 (H3K4me3) from IL7 maintained (unstimulated) or TCR-stimulated (CD3/CD28) CD4+ T cells±methionine as indicated (18 hr). (k) Percentage of RNA with m6A modification, as determined by ELISA, in Th1 cells cultured with decreasing methionine concentrations for 5 hr (as indicated). (l) Percentage of RNA with m5C modification, as determined by ELISA, in Th1 cells cultured ±methionine for 5 hr. (Error bars are mean ± s.d of: (a–d, i–l) three biological replicates (e–f) six biological replicates. (g,h) 4 (RNA) biological replicates and five biological replicates (protein). MFIs are indicated in the histograms, points on the graphs indicate biological replicates. (b, e, l) t -test; (d,i,k) One-way ANOVA; P= *<0.05, **<0.01, ***<0.001, ****<0.0001; Flow cytometry gating strategies are provided in Supplementary file 1).10.7554/eLife.44210.005Figure 2—source data 1.+ T cells (N1-3) and TCR-stimulated CD4+ T cells (S1-3).
+**Figure 2.:** (a) 3H radioactivity measured in TCA precipitated protein from isolated CD4+ T cells stimulated through the TCR (CD3/CD28) in the presence of 3H-methionine for the indicated times. (b) Metabolomic analysis of metabolites in the de novo pathway and the salvage pathway of the methionine cycle. The graphs show metabolite intensity derived from integrated peak areas of MS intensity from naïve CD4+ T cells and TCR-stimulated CD4+ T cells (CD3/CD28, for 16 hr). Enzymes are indicated adjacent to arrows (in blue). P values are indicated on each graph. Source data is available in Figure 2—source data 1. (c) The histograms show representative intracellular staining of total H3, trimethylated H3K27 (H3K27me3) or trimethylated H3K4 (H3K4me3) from IL7 maintained (unstimulated) or TCR-stimulated (CD3/CD28) CD4+ T cells for 18 hr. Geometric mean fluorescence intensities (MFI) are shown in the histograms. (d) The graph shows ratios of H3, H3K27me3 and H3K4me3 MFIs from TCR-stimulated (CD3/CD28) CD4+ T cells compared to unstimulated CD4+ T cells. (e, f) OT2 (CD45.1) cells were adoptively transferred into WT CD45.2 hosts. The hosts were immunised with NP-OVA/alum and the transferred OT2 cells were analysed after 3 days. The histograms (left) show representative intracellular staining of H3K27me3 (e) and H3K4me3 (f). Graphs (right) show ratios of H3K27me3 and H3K4me3 MFIs in activated OT2 CD4+ T cells compared to non-activated host CD4+ T cells 3 days post-immunisation. (g) 3H radioactivity measured in RNA extracted from isolated CD4+ T cells stimulated through the TCR (CD3/CD28) in the presence of 3H-methionine for the indicated times. (h) 3H radioactivity measured in protein or RNA extracted from CD4+ T cells stimulated in parallel to (g) in the presence 3H-phenylalanine for 18 hr. (i) Levels of SAH from unstimulated (naïve cells), TCR-stimulated (CD3/CD28, 18 hr) CD4+ T cells or IL2 maintained Th1 cells ± methionine for 18 hr. (j) The histograms show representative intracellular staining of total H3, trimethylated H3K27 (H3K27me3) or trimethylated H3K4 (H3K4me3) from IL7 maintained (unstimulated) or TCR-stimulated (CD3/CD28) CD4+ T cells±methionine as indicated (18 hr). (k) Percentage of RNA with m6A modification, as determined by ELISA, in Th1 cells cultured with decreasing methionine concentrations for 5 hr (as indicated). (l) Percentage of RNA with m5C modification, as determined by ELISA, in Th1 cells cultured ±methionine for 5 hr. (Error bars are mean ± s.d of: (a–d, i–l) three biological replicates (e–f) six biological replicates. (g,h) 4 (RNA) biological replicates and five biological replicates (protein). MFIs are indicated in the histograms, points on the graphs indicate biological replicates. (b, e, l) t -test; (d,i,k) One-way ANOVA; P= *<0.05, **<0.01, ***<0.001, ****<0.0001; Flow cytometry gating strategies are provided in Supplementary file 1).
 
 One explanation for the environmental methionine requirement for T cells is that it fuels protein synthesis. However methionine fuels other essential metabolic pathways, consequently we used mass spectrometry to explore methionine metabolism in CD4+ T cells stimulated via the T cell antigen receptor/CD28 complex. In particular, the methionine cycle which is initiated when methionine is converted into S-adenosylmethionine (SAM) in an ATP-consuming reaction and catalysed by methionine adenosyltransferase (MAT2A). Methyltransferases then transfer the methyl group from SAM to yield S-adenosylhomocysteine (SAH) and a methylated substrate. SAH is swiftly converted into homocysteine (HCy) by S-adenosylhomocysteine hydrolase (AHCY, also known as SAHH). The T cell metabolomics data show that SAM levels remain relatively constant between TCR stimulated and naïve CD4+ T cells (Figure 2b). However, TCR activated cells show an increase in the generation of S-adenosylhomocysteine (SAH) and HCy (Figure 2b). This increased production of SAH and HCy demonstrates that triggering the TCR drives increased flow through the methionine cycle. HCy has two potential metabolic fates, that is, it can be converted to cystathionine, or recycled back into methionine via subsequent enzymatic reactions through the de novo pathway. In the de novo pathway, methionine synthase (MTR) and the cofactor vitamin B12 perform the rate-limiting step of incorporating methyl groups derived from folate metabolism and HCy to produce methionine. SAM can also be utilised for polyamine synthesis, providing spermine and spermidine and yielding 5-methylthioadenosine (MTA). The sulphur of MTA can be recycled back into methionine using the salvage pathway, the first step of which is catalysed by MTA phosphorylase (MTAP) to generate 5-methylthioribose-1-phosphate (reviewed in Mentch and Locasale, 2016; Albers, 2009). In this context, further evidence that TCR triggering drives the methionine cycle is provided by the data showing that activated CD4+ T cells accumulate 5-methylthioadenosine (MTA) and Methyl-5-thio-5-D-ribose 1-phosphate; metabolites produced downstream of polyamine synthesis. Activated CD4+ T cells also had increased levels of cystathionine and 2-oxobutanoate (C4H6O3); the latter is produced when cystathionine gamma-lyase converts cystathionine to cysteine (Figure 2b).
 
@@ -65,7 +65,7 @@ SAM is also used as a substrate for RNA methyltransferases, producing methylated
 
 How dependent are these protein and nucleotide methylation reactions on extracellular methionine? Figure 2i shows that SAH levels in TCR activated CD4+ T cells and Th1 cells are dependent upon extracellular methionine supply which argues that sustained methionine availability is required to produce methyl donors for protein and nucleotide methylation (Figure 2i). In this context, the data in Figure 2j show that the increase in H3K4 and H3K27 trimethylation in CD4+ T cells in response to TCR activation is regulated by extracellular methionine availability (Figure 2j). We also examined the importance of extracellular methionine for RNA methylation in T cells. One of the most abundant mammalian RNA modifications is methylation of the N6 adenosine (m6A) regulated by the METTL3 methyltransferase (Liu et al., 2014a). This RNA methylation is important for mRNA stability and in T cells has been shown to be essential for normal T cell function (Li et al., 2017). The data in Figure 2k show that the percentage of total m6A methylation in effector Th1 cells decreases as extracellular methionine is decreased (Figure 2k). Another RNA post-translational methyl modification found in RNA is 5-methylcytosine (m5C), the data in Figure 2l show that the amount of m5C in mRNA from effector Th1 cells is dependent upon extracellular methionine (Figure 2l). Collectively, these data demonstrate that extracellular methionine is not only directed into protein synthesis in T cells but also into the methionine cycle to generate methyl donors for histone and RNA methylation reactions. Furthermore, the sustained supply of extracellular methionine is necessary for these processes.
 
-## Methionine cycle regulation in T cells
+### Methionine cycle regulation in T cells
 
 The elevated levels of SAH and HCy and the increased levels of RNA and histone methylation demonstrate that immune activated T cells increase metabolic flow through the methionine cycle. To explore the molecular basis for the increases in methionine metabolism in activated T cells we used quantitative, mass spectrometry-based proteomics to interrogate the expression and abundance levels of methionine cycle enzymes in naïve, TCR activated and effector CD4+ T cells. Critical enzymes that regulate the metabolic flow through the two arms of the methionine cycle, the de novo and salvage pathways, are shown in Figure 3a,b. We initially looked at the expression levels of these key proteins in naïve T cells by comparing their relative abundance against the backdrop of the total protein landscape. The data show that naïve CD4+ T cells express the key methionine cycle enzymes MAT2A, AHCY and MTR (Figure 3c,d and e). Interestingly, both MAT2A and AHCY are highly abundant proteins in the naïve cell proteomic landscape (Figure 3c and d). Similarly, SRM/SMS and MTAP, enzymes which use SAM for polyamine synthesis and subsequent methionine salvage, are abundantly expressed in naïve T cells (Figure 3f and g). mtnA-D, enzymes involved in the final steps of methionine salvage, are also expressed at levels higher than the ‘average’ protein is expressed in a T cell (Figure 3h). The relative abundance, as indicated by their concentration, of these proteins within the total proteomic landscape is consistently maintained at high levels upon activation and differentiation of CD4+ T cells (Figure 3i).
 
@@ -89,7 +89,7 @@ One striking observation in the current study was that even short periods of met
 
 With regard to the methionine cycle specifically, these experiments found that acute short term methionine deprivation of Th1 cells had no impact on expression of key enzymes including; MAT2A, AHCY, SRM/SMS,MTAP and mtnA (Figure 5c–g). The expression of RNA, DNA and histone methyl transferases was also not changed by short-term methionine restriction (Figure 5h–j). The need for T cells to sustain supply of methionine to maintain the methionine cycle is thus explained by the need for methionine to produce methyl donors.
 
-## The impact of methionine restriction on c-myc expression and mTORC1 activity
+### The impact of methionine restriction on c-myc expression and mTORC1 activity
 
 How much does methionine deprivation impact on other metabolic programs in T cells? In this context, the serine/threonine kinase mTORC1 and the transcription factor c-myc can be described as hubs of metabolic regulation in T cells. Appropriate mTORC1 activity and c-myc expression are critical for correct effector T cell responses (Xu et al., 2012; Zeng and Chi, 2017; Wang et al., 2011). In both T cells and NK cells, expression of c-myc protein is highly sensitive to amino acid availability and expression of amino acid transporters (Sinclair et al., 2013; Loftus et al., 2018). To explore whether c-myc expression was dependent upon extracellular methionine availability, we used a mouse model where a fusion protein of GFP-Myc is expressed under the control of the endogenous Myc promoter (GFP-MycKI) (Huang et al., 2008; Preston et al., 2015). GFP-MycKI CD4+ T cells increase expression of the activation marker CD69 in response to TCR/CD28 stimulation in both the presence (100μM) and absence of methionine. The data show that the induction of GFP-Myc expression in response to TCR/CD28 activation is blunted in the absence of methionine (Figure 6a,b).
 
@@ -99,13 +99,13 @@ How much does methionine deprivation impact on other metabolic programs in T cel
 
 It has also recently been demonstrated that methionine availability regulates mTORC1 activity through metabolite SAM binding to SAMTOR; SAM- SAMTOR then associates with and inhibits GATOR1, resulting in lysosomal recruitment and activation of mTORC1 (Gu et al., 2017; Valvezan and Manning, 2019). To investigate whether mTORC1 activity in T cells is sensitive to extracellular methionine availability, effector CD4+ Th1 cells were switched to methionine free conditions and the impact of this on mTORC1 activity in Th1 cells was assessed. The data show mTORC1 activity in T cells was partially sensitive to methionine deprivation, though the impact of methionine loss was not equivalent to total amino acid deprivation or rapamycin treatment (Figure 6c,d). Treatment with SAM (50μM) modestly restores mTORC1 activity in the absence of methionine (Figure 6e,f). These data show that methionine availability and the production of SAM can feed into control of mTORC1 activity. The impact of methione deprivation on c-myc expression and mTORC1 activity highlights the diversity of cellular responses in T cells that are able to sense the external methionine environment.
 
-## Control of the methionine cycle in T cells via controlled expression of methionine transport
+### Control of the methionine cycle in T cells via controlled expression of methionine transport
 
 The proteomic data reveal that increased flux through the methionine cycle and increases in RNA methylation are not explained by changes in the abundance of the key enzymes of the methionine cycle or the RNA methyl transferases. However, the sustained availability of extracellular methionine is critical which raises the possibility that the rate limiting step for methionine metabolism in activated T cells is the rate of methionine transport. To investigate the methionine transport capacity of naïve versus effector T cell populations, we compared radiolabeled methionine uptake in naïve and activated T lymphocytes. Naïve CD4+ T cells show very little/near undetectable uptake of 3H-labeled methionine (Figure 7a) whereas methionine transport was readily detected in CD4+ T cells activated with CD3/CD28 crosslinking antibodies and in effector Th1 cells (Figure 7a). Figure 7b show that the high levels of methionine transport in Th1 cells is dependent on sustained signalling via the IL2 receptor. Hence, either the removal of IL2, or the exposure of cells to limiting IL2 concentrations, results in a decrease of 3H-methionine uptake. Together, these data demonstrate that naïve CD4+ T lymphocytes greatly increase methionine uptake in response to antigenic stimulation. These changes in methionine transport could reflect changes in either the expression or activity of T cell methionine transporters.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/44210/elife-44210-fig7-v2.jpg)
 
-**Figure 7.:** (a) Uptake of 3H-methionine in purified CD4+ T cells±TCR activation using CD3/CD28 antibodies for 3 or 18 hr. (b) 3H-methionine uptake in 5 day in vitro expanded Th1 cells switched for final 18 hr into indicated concentrations of IL2. (c) The graphs show copy numbers of potential methionine transporters from proteomics data sets of naïve CD4+ T cells, 24 hr TCR- stimulated CD4+ T cells and effector Th1 cells. (nd = not detected) (d) Uptake of 3H-methionine in IL2 maintained Th1 cells in the presence or absence of BCH, ALA, LYS, MeAIB or MET (all 5 mM). (e) Uptake of 3H-methionine (left panel) or 14C glutamine (right panel) in IL2 maintained Th1 cells in presence or absence of sodium in the uptake buffer. (f) 14C-glutamine uptake in IL2 maintained Th1 cells in the presence or absence of GLN, ALA and BCH (all 5 mM). (g) 3H-phenylalanine uptake in IL2 maintained Th1 cells in the presence or absence of BCH, ALA, LYS, LEU or MET (all 5 mM). (h–i) 3H radioactivity of TCA precipitated protein (h) or RNA (i) from CD4+ T cells stimulated through the TCR (CD3/CD28) for 6 hr in the presence of 3H-methionine ± the System L inhibitor BCH. (j) SAH levels as determined by ELISA in CD4+ T cells stimulated through the TCR (CD3/CD28)±the System L inhibitor BCH for 18 hr. (k) Percentage of RNA with m6A modification, as determined by ELISA, in Th1 cells cultured in 20 μM MET ±BCH for 5 hr. (l) Uptake of 3H-methionine in TCR stimulated (CD3/CD28, 18 hr) CD4+ T cells from Slc7a5 or fl/flCd4-Cre mice, compared to unstimulated CD4+::Slc7a5fl/fl+ T cells maintained in IL7,±System L transporter inhibitor BCH (5 mM). (m) SAH levels in CD4+ T cells from Slc7a5 or fl/flCd4-Cre mice stimulated through the TCR (CD3/CD28) for 18 hr, compared to naive cells. ((+::Slc7a5fl/fla,b- d, f, g, l, m) ANOVA, (e,h–k) t-test; P= *<0.05, **<0.01, ***<0.001, ****<0.0001. Uptakes performed in triplicate. Error bars are s.d. from minimum three biological replicates. Points indicate individual biological replicates.).
+**Figure 7.:** (a) Uptake of 3H-methionine in purified CD4+ T cells±TCR activation using CD3/CD28 antibodies for 3 or 18 hr. (b) 3H-methionine uptake in 5 day in vitro expanded Th1 cells switched for final 18 hr into indicated concentrations of IL2. (c) The graphs show copy numbers of potential methionine transporters from proteomics data sets of naïve CD4+ T cells, 24 hr TCR- stimulated CD4+ T cells and effector Th1 cells. (nd = not detected) (d) Uptake of 3H-methionine in IL2 maintained Th1 cells in the presence or absence of BCH, ALA, LYS, MeAIB or MET (all 5 mM). (e) Uptake of 3H-methionine (left panel) or 14C glutamine (right panel) in IL2 maintained Th1 cells in presence or absence of sodium in the uptake buffer. (f) 14C-glutamine uptake in IL2 maintained Th1 cells in the presence or absence of GLN, ALA and BCH (all 5 mM). (g) 3H-phenylalanine uptake in IL2 maintained Th1 cells in the presence or absence of BCH, ALA, LYS, LEU or MET (all 5 mM). (h–i) 3H radioactivity of TCA precipitated protein (h) or RNA (i) from CD4+ T cells stimulated through the TCR (CD3/CD28) for 6 hr in the presence of 3H-methionine ± the System L inhibitor BCH. (j) SAH levels as determined by ELISA in CD4+ T cells stimulated through the TCR (CD3/CD28)±the System L inhibitor BCH for 18 hr. (k) Percentage of RNA with m6A modification, as determined by ELISA, in Th1 cells cultured in 20 μM MET ±BCH for 5 hr. (l) Uptake of 3H-methionine in TCR stimulated (CD3/CD28, 18 hr) CD4+ T cells from Slc7a5fl/fl or Cd4-Cre+::Slc7a5fl/fl mice, compared to unstimulated CD4+ T cells maintained in IL7,±System L transporter inhibitor BCH (5 mM). (m) SAH levels in CD4+ T cells from Slc7a5fl/fl or Cd4-Cre+::Slc7a5fl/fl mice stimulated through the TCR (CD3/CD28) for 18 hr, compared to naive cells. ((a,b- d, f, g, l, m) ANOVA, (e,h–k) t-test; P= *<0.05, **<0.01, ***<0.001, ****<0.0001. Uptakes performed in triplicate. Error bars are s.d. from minimum three biological replicates. Points indicate individual biological replicates.).
 
 Mammalian methionine transporters include the System ASC (alanine-serine-cysteine preferring) transporter SLC1A5; the System L transporters SLC7A5 and SLC7A8; the System y + L transporters SLC7A6 and SLC7A7; and the System A transporters SLC38A1 and SLC38A2 (Utsunomiya-Tate et al., 1996; Baird et al., 2009; Bröer and Palacín, 2011; Kanai et al., 1998; Nii et al., 2001; Napolitano et al., 2015). Interrogation of the naïve, TCR and effector T cell proteomic data identified several candidate methionine transporters in TCR stimulated CD4+ T cells and effector Th1s; notably SLC1A5, SLC7A5, SLC7A6 and SLC38A2 (SNAT2) (Figure 7c). The candidate methionine transporters that were detected in activated T cells have different expression levels: the most abundant candidates were SLC7A5 and SLC1A5 (ASCT2). SLC7A6, and SLC38A2 (SNAT2) are both expressed at far lower levels than SLC7A5. The proteomic data moreover reveal the basis for the failure of naïve T cells to transport methionine: they have a very low copy number of any candidate methionine transporter (Figure 7c). Hence in contrast to methionine cycle enzymes which are abundantly expressed in naïve and effector CD4+ T cells, expression of methionine transporters is restricted to TCR activated and effector T cells.
 
@@ -125,7 +125,332 @@ Finally, the importance of regulated changes in methionine transport for T cell 
 
 ## Materials and methods
 
-## Mice and cells
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>JAX C57BL/6J, WT</td>
+      <td>JAX C57BL/6J Mice, Charles River UK</td>
+      <td>strain code 632</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cd4Cre Slc7a5fl/fl</td>
+      <td>Sinclair et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>GFP-MycKI</td>
+      <td>Huang et al., 2008; Preston et al., 2015</td>
+      <td></td>
+      <td>In these mice, a fusion protein of Myc and enhanced green fluorescent protein (GFP‐Myc) is expressed from the endogenous Myc locus (GFP‐MycKI)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>OT2</td>
+      <td>Barnden et al., 1998</td>
+      <td></td>
+      <td>maintained in house on a CD45.1 (LY5.1) background</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD3 (armenian hamster, monoclonal)</td>
+      <td>ThermoFisher</td>
+      <td>Cat # 14-0031-82, RRID:AB_467049</td>
+      <td>T cell activation: 1 μg/ml; Th1 differentiation: 2 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD28 (syrian hamster, monoclonal)</td>
+      <td>ThermoFisher</td>
+      <td>Cat # 16-0281-82, RRID:AB_468921</td>
+      <td>T cell activation: 2 μg/ml; Th1 differentiation: 3 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD4 (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat # 100530, RRID:AB_389325</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TCRb (armenian hamster, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat # 109220, RRID:AB_893624</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD62L (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat # 104412, RRID:AB_313099</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TCR V alpha 2 (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat # 127808, RRID:AB_1134183</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD44 (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat # 103030, RRID:AB_830787</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45.1 (mouse, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat # 110714, RRID:AB_313503</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45.2 (mouse, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat # 109816, RRID:AB_492868</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD69 (armenian hamster, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat # 104522, RRID:AB_2260065</td>
+      <td>cell surface staining 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-INFg (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat # 505810, RRID:AB_315404</td>
+      <td>intracellular cytokine staining 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-S6 (rabbit, monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat # 2211, RRID:AB_331679</td>
+      <td>intracellular staining 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H3 (rabbit, monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat # 82241S</td>
+      <td>intracellular staining 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H3K4me3 (rabbit, monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat # 12064</td>
+      <td>intracellular staining 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K27me3 (rabbit, monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat # 12158</td>
+      <td>intracellular staining 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit A647</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat # 4414, RRID: AB_10693544</td>
+      <td>intracellular staining 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD16/CD32 Fc Block, (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat # 553141, RRID: AB_394656</td>
+      <td>Fc block 1:70</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL2</td>
+      <td>Novartis, UK</td>
+      <td>Proleukin</td>
+      <td>Th1 differentiation: 20 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL12</td>
+      <td>RnD Systems, UK</td>
+      <td>Cat # 419 ML</td>
+      <td>Th1 differentiation: 10 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NP-OVA</td>
+      <td>BioSearch technolgies, UK</td>
+      <td>Cat # N-5051</td>
+      <td>Immunisation 100 μg per mouse</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EasySep CD8 positive isolation kit</td>
+      <td>STEMCELL Technologies, UK</td>
+      <td>Cat # 19853</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SAH Elisa</td>
+      <td>Axis-Shield</td>
+      <td>Cat # FHCY100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>m6A methylation</td>
+      <td>Epigentek</td>
+      <td>Cat # P-9005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>m5C methylation</td>
+      <td>Epigentek</td>
+      <td>Cat # P-9009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Rneasy minikit</td>
+      <td>Qiagen</td>
+      <td>Cat # 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Imject Alum</td>
+      <td>Pierce, UK</td>
+      <td>Cat # 77161</td>
+      <td>Immunisation adjuvant</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>OPP</td>
+      <td>Jena Bioscience</td>
+      <td>Cat # NU-931</td>
+      <td>20 μM, 10 min incubation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Click EdU</td>
+      <td>Carbosynth</td>
+      <td>Cat # NE08701</td>
+      <td>10 μM, 45 min incubation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Click EU</td>
+      <td>ThermoFisher</td>
+      <td>Cat # E10345</td>
+      <td>500 μM, 30 min incubation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa 647 azide</td>
+      <td>ThermoFisher</td>
+      <td>Cat # A10277</td>
+      <td>5 μM, in Click reaction buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Actinomycin D</td>
+      <td>Sigma</td>
+      <td>Cat # A1410</td>
+      <td>5 μg/ml, 45 min</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyclohexamide</td>
+      <td>Sigma</td>
+      <td>Cat # C7698</td>
+      <td>100 μg/ml, 30 min</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>ThermoFisher</td>
+      <td>Cat # PHZ1235</td>
+      <td>20 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[3H] L-methionine</td>
+      <td>PerkinElmer</td>
+      <td>Cat # NET061 × 001MC</td>
+      <td>1 μci/ml uptake buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[3H] L-phenylalanine</td>
+      <td>PerkinElmer</td>
+      <td>Cat # NET1122001MC</td>
+      <td>0.5 μci/ml uptake buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[14C] L-glutamine</td>
+      <td>PerkinElmer</td>
+      <td>Cat # NEC451050UC</td>
+      <td>0.1 μci/ml uptake buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>silicone oil</td>
+      <td>Sigma</td>
+      <td>Cat # 175633</td>
+      <td>layering buffer for uptake assay</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dibutyl pthalate</td>
+      <td>Sigma</td>
+      <td>Cat # 524980</td>
+      <td>layering buffer for uptake assay</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Optiphase HiSafe 3</td>
+      <td>PerkinElmer</td>
+      <td>Cat # 1200.437</td>
+      <td>scintillant</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo software</td>
+      <td>Treestar</td>
+      <td></td>
+      <td>versions 9 and 10</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and cells
 
 C57BL/6 (wild-type, WT), Cd4-Cre::Slc7a5fl/fl, GFP-MycKI and OT2 TCR transgenic mice were bred and maintained in the WTB/RUTG, University of Dundee in compliance with UK Home Office Animals (Scientific Procedures) Act 1986 guidelines.
 
@@ -135,11 +460,11 @@ Where indicated, methionine free RPMI (ThermoFisher) was supplemented with 10% d
 
 Cells were incubated at 37 ˚C with 5% CO2 throughout.
 
-## Adoptive transfers and ova immunisation
+### Adoptive transfers and ova immunisation
 
 For in vivo activation and proliferation, OT2 (CD45.1) lymph node cells were injected into C57/Bl6 (CD45.2) hosts. After 24 hr, mice were immunised i.p. with 4-Hydroxy-3-nitrophenylacetyl hapten conjugated to ovalbumin (NP-OVA; 100 μg; BioSearch technologies, UK) adsorbed to alum (Pierce, UK). Spleens were harvested and transferred cells were identified and analysed at D3 after activation.
 
-## Flow cytometry
+### Flow cytometry
 
 For cell surface staining, antibodies conjugated to FITC, PE, APC, AlexaFluor 647, APC-efluor780, AlexaFluor 700, PerCPCy5.5, Brilliant Violet 421 and 605 were obtained from either BD Biosciences, eBioscience or Biolegend. Fc receptors were blocked using Fc Block (BD Biosciences). Antibody clones used were: CD4 (RM4-5), TCRβ (H57-597), Vα2 (B20.1), CD62L (MEL-14), CD44 (IM7), CD45.1 (A20), CD45.2 (104), CD69 (H1.2F3). Cells were fixed using 1% paraformaldehyde. Standard intracellular cytokine staining protocols were followed for INFγ (clone XMG1.2; Biolegend) staining.
 
@@ -149,66 +474,66 @@ For flow cytometry assays for protein, RNA and DNA synthesis; cells were treated
 
 Data were acquired on a LSR Fortessa II with DIVA software or a FACSVerse flow cytometer with FACSuite software (BD Biosciences) and analyzed using FlowJo software (TreeStar, version 9 and 10). Gating strategies are shown in Supplemental data.
 
-## SAH measurements
+### SAH measurements
 
 S-adenosyl-homocysteine (SAH) levels were measured using a competitive ELISA (Axis Homocysteine EIA, FHCY 100, Axis-Shield) as recommended, omitting the primary enzymatic conversion of homocysteine to SAH step.
 
-## Radiolabelled nutrient uptake
+### Radiolabelled nutrient uptake
 
 Briefly, nutrient uptake was carried out using 1 × 106 cells resuspended in 0.4 ml uptake medium. Each uptake for a biological replicate is performed in triplicate. Methionine uptake was carried out in HBSS (ThermoFisher Scientific) containing [3H] L-methionine (1 μci/ml) and a final extracellular L-methionine concentration of 0.5 μm. Similarly, phenylalanine uptake was performed using [3H] L-phenylalanine (0.5 μci/ml) and a final extracellular L-leucine concentration of 0.5 μm. 2 min uptake assays were carried out layered over 0.5 ml of 1:1 silicone oil (Dow Corning 550 (BDH silicone products; specific density, 1.07 g/ml):dibutyl phthalate (Fluka). Where indicated, [14C] L-glutamine (0.1 μci/ml) was added to assay glutamine uptake simultaneously. Cells were pelleted below the oil, the aqueous supernatant solution, followed by the silicon oil/dibutyl phthalate mixture was aspirated, and the cell pellet underneath resuspended in 200 μl NaOH (1M) and β-radioactivity measured by liquid scintillation counting in a Beckman LS 6500 Multi-Purpose Scintillation Counter (Beckman Coulter). Where indicated, 5 mM BCH, L-Alanine, L-Lysine, L-Leucine, L-Methionine or MeAIB were used respectively to quench radiolabeled ligand uptake. The sodium free buffer was TMACl as described in Baird et al. (2009). Data is expressed as molecules radiotracer per cell per minute. [3H] L-methionine, [3H] L-phenylalanine and [14C] L-glutamine were obtained from Perkin Elmer. All other chemicals were obtained from Sigma.
 
-## 3H- methionine incorporation
+### 3H- methionine incorporation
 
 IL2/12 maintained effector Th1 cells were cultured with 3H-methionine for 6 hr. Protein from 5 × 106 cells was precipitated with 0.5 ml 10% trichloroacetic acid (TCA), for 15mins at room temperature. The protein pellet was washed (x3) with cold acetone, and acetone was allowed to evaporate. RNA was isolated from 5 × 106 cells with RNeasy minikit (Qiagen), and quantified by NanoDrop (ThermoFisher). Samples were resuspended in scintillation fluid (Optiphase HiSafe 3, PerkinElmer) and 3H radioactivity in TCA precipitated protein, or RNA was measured by liquid scintillation counting in a Beckman LS 6500 Multi-Purpose Scintillation Counter (Beckman Coulter).
 
 m6A and m5C RNA methylation m6A and m5C RNA methylation was quantified using the fluorometric EpiQuik m6A or 5-mC RNA Methylation quantification Kit (Epigentek) respectively, following RNA isolation from 5 × 106 cells using RNAEasy minikit (Qiagen).
 
-## Metabolomics:
+### Metabolomics:
 
-## Metabolite extraction-
+#### Metabolite extraction-
 
 Metabolite extraction was performed as described in previous study (Liu et al., 2015). The supernatant was transferred to a new Eppendorf tube and dried in vacuum concentrator at room temperature. The dry pellets were reconstituted into 30 μl sample solvent (water:methanol:acetonitrile, 2:1:1, v/v) and 3 μl was further analyzed by liquid chromatography-mass spectrometry (LC-MS).
 
-## LC-MS method-
+#### LC-MS method-
 
 Ultimate 3000 UHPLC (Dionex) is coupled to Q Exactive-Mass spectrometer (QE-MS, Thermo Scientific) for metabolite profiling. A hydrophilic interaction chromatography method (HILIC) employing an Xbridge amide column (100 × 2.1 mm i.d., 3.5 μm; Waters) is used for polar metabolite separation. Detailed LC method was described previously (Liu et al., 2014b) except that mobile phase A was replaced with water containing 5 mM ammonium acetate (pH 6.8). The QE-MS is equipped with a HESI probe with related parameters set as below: heater temperature, 120°C; sheath gas, 30; auxiliary gas, 10; sweep gas, 3; spray voltage, 3.0 kV for the positive mode and 2.5 kV for the negative mode; capillary temperature, 320°C; S-lens, 55; scan range (m/z): 70 to 900; resolution: 70000; automated gain control (AGC), 3 × 106 ions. Customized mass calibration was performed before data acquisition.
 
-## Metabolomics data analysis
+#### Metabolomics data analysis
 
 LC-MS peak extraction and integration were performed using commercial available software Sieve 2.2 (Thermo Scientific). The peak area was used to represent the relative abundance of each metabolite in different samples. The missing values were handled as described in previous study (Liu et al., 2014b).
 
-## Proteomics
+### Proteomics
 
-## Naïve CD4+ and effector Th1 (TMT labelled)
+#### Naïve CD4+ and effector Th1 (TMT labelled)
 
-## Sample preparation and TMT labelling
+##### Sample preparation and TMT labelling
 
 Cell pellets were lysed in 400 μL lysis buffer (4% SDS, 50 mM TEAB pH 8.5, 10 mM TCEP). Lysates were boiled and sonicated with a BioRuptor (30 cycles: 30 s on, 30 s off) before alkylation with iodoacetamide for 1 hr at room temperature in the dark. The lysates were subjected to the SP3 procedure for protein clean-up (Hughes et al., 2014) before elution into digest buffer (0.1% SDS, 50 mM TEAB pH 8.5, 1 mM CaCl2) and digested with LysC and Trypsin, each at a 1:50 (enzyme:protein) ratio. TMT labelling and peptide clean-up were performed according to the SP3 protocol. Samples were eluted into 2% DMSO in water, combined and dried in vacuo.
 
-## Basic reverse-phase fractionation
+##### Basic reverse-phase fractionation
 
 The TMT samples were fractionated using off-line high pH reverse phase chromatography: samples were loaded onto a 4.6 × 250 mm Xbridge BEH130 C18 column with 3.5 µm particles (Waters). Using a Dionex BioRS system, the samples were separated using a 25 min multistep gradient of solvents A (10 mM formate at pH 9 in 2% acetonitrile) and B (10 mM ammonium formate pH 9 in 80% acetonitrile), at a flow rate of 1 mL/min. Peptides were separated into 48 fractions which were consolidated into 24 fractions. The fractions were subsequently dried and the peptides redissolved in 5% formic acid and analysed by LC-MS.
 
-## Liquid chromatography electrospray tandem mass spectrometry analysis (LC-ES-MS/MS)
+##### Liquid chromatography electrospray tandem mass spectrometry analysis (LC-ES-MS/MS)
 
 1 μg per fraction was analysed using an Orbitrap Fusion Tribrid mass spectrometer (Thermo Scientific) equipped with a Dionex ultra high-pressure liquid chromatography system (nano RSLC). RP-LC was performed using a Dionex RSLC nano HPLC (Thermo Scientific). Peptides were injected onto a 75 μm × 2 cm PepMap-C18 pre-column and resolved on a 75 μm × 50 cm RP- C18 EASY-Spray temperature controlled integrated column-emitter (ThermoFisher) using a four hour multistep gradient from 5% B to 35% B with a constant flow of 200 nL min−1. The mobile phases were: 2% ACN incorporating 0.1% FA (Solvent A) and 80% ACN incorporating 0.1% FA (Solvent B). The spray was initiated by applying 2.5 kV to the EASY-Spray emitter and the data were acquired under the control of Xcalibur software in a data dependent mode using top speed and 4 s duration per cycle, the survey scan is acquired in the Orbitrap covering the m/z range from 400 to 1400 Th with a mass resolution of 120,000 and an automatic gain control (AGC) target of 2.0 e5 ions. The most intense ions were selected for fragmentation using CID in the ion trap with 30% CID collision energy and an isolation window of 1.6 Th. The AGC target was set to 1.0 e4 with a maximum injection time of 70 ms and a dynamic exclusion of 80 s. During the MS3 analysis for more accurate TMT quantifications, 10 fragment ions were co-isolated using synchronous precursor selection using a window of 2 Th and further fragmented using HCD collision energy of 55%. The fragments were then analysed in the Orbitrap with a resolution of 60,000. The AGC target was set to 1.0 e5 and the maximum injection time was set to 300 ms.
 
-## Database searching and reporter ion quantification
+##### Database searching and reporter ion quantification
 
 The data were processed, searched and quantified with the MaxQuant software package, version 1.5.8.3, Proteins and peptides were identified using the UniProt mouse reference proteome database (SwissProt and Trembl) and the contaminants database integrated in MaxQuant using the Andromeda search engine (Cox and Mann, 2008; Cox et al., 2011) with the following search parameters: carbamidomethylation of cysteine and TMT modification on peptide N-termini and lysine side chains were fixed modifications, while methionine oxidation, acetylation of N-termini of proteins. The false discovery rate was set to 1% for positive identification of proteins and peptides with the help of the reversed mouse Uniprot database in a decoy approach. Copy numbers were calculated as described (Wiśniewski et al., 2014) after allocating the summed MS1 intensities to the different experimental conditions according to their fractional MS3 reporter intensities.
 
-## TCR activated CD4+ (label free)
+#### TCR activated CD4+ (label free)
 
 Cell pellets were lysed and peptides generated using the SP3 method as described above, but without TMT labelling. After elution with DMSO samples were fractionated by high pH reverse phase chromatography as described above but with the following modifications; samples were loaded onto a 2.1 × 150 mm Xbridge BEH130 C18 column with 3.5 µm particles (Waters) on a UltiMate 3000 HPLC (Thermo Fisher Scientific) and separated at a flow rate of 0.3 mL/min. Peptides were separated into 16 fractions which were consolidated into eight fractions. The fractions were subsequently dried and the peptides redissolved in 5% formic acid. LC-MS analysis was performed as described previously (Rollings et al., 2018) with slight modifications. Samples were injected onto a nanoscale C18 reverse-phase chromatography system (UltiMate 3000 RSLC nano, Thermo Fisher Scientific) before being electrosprayed into a Orbitrap mass spectrometer (LTQ Orbitrap Velos Pro; Thermo Fisher Scientific). The chromatography buffers used were as follows: HPLC buffer A (0.1% formic acid), HPLC buffer B (80% acetonitrile and 0.08% formic acid), and HPLC buffer C (0.1% formic acid). Peptides were loaded onto an Acclaim PepMap100 nanoViper C18 trap column (100 μm inner diameter, 2 cm; Thermo Fisher Scientific) in HPLC buffer C with a constant flow of 5 μl/min. After trap enrichment, peptides were eluted onto an EASY-Spray PepMap RSLC nanoViper, C18, 2 μm, 100 Å column (75 μm, 50 cm; Thermo Fisher Scientific) using the following buffer gradient: 2% B (0 to 6 min), 2% to 35% B (6 to 130 min), 35% to 98% B (130 to 132 min), 98% B (132 to 152 min), 98% to 2% B (152 to 153 min), and equilibrated in 2% B (153 to 170 min) at a flow rate of 0.3 μl/min. The eluting peptide solution was automatically electrosprayed into the Orbitrap mass spectrometer (LTQ Orbitrap Velos Pro; Thermo Fisher Scientific) using an EASY-Spray nanoelectrospray ion source at 50°C and a source voltage of 1.9 kV (Thermo Fisher Scientific). The mass spectrometer was operated in positive ion mode. Full-scan MS survey spectra (mass/charge ratio, 335 to 1800) in profile mode were acquired in the Orbitrap with a resolution of 60,000. Data were collected using data-dependent acquisition: the 15 most intense peptide ions from the preview scan in the Orbitrap were fragmented by collision-induced dissociation (normalized collision energy, 35%; activation Q, 0.250; activation time, 10 ms) in the LTQ after the accumulation of 5000 ions. Precursor ion charge state screening was enabled, and all unassigned charge states as well as singly charged species were rejected. The lock mass option was enabled for survey scans to improve mass accuracy. MS data was analysed as described above with the following modifications; MaxQuant software package, version 1.6.0.1. Proteins and peptides were identified using a uniport mouse canonical plus isoforms database (2nd August 2018).
 
-## Single-shot proteomics on methionine deprived Th1 cells
+#### Single-shot proteomics on methionine deprived Th1 cells
 
 Cell pellets were processed as described above, label free. After elution of peptides with DMSO, samples were processed by single shot LC-MS. Analysis of peptides was performed on a Q-exactive-HFX (Thermo Scientific) mass spectrometer coupled with a Dionex Ultimate 3000 RS (Thermo Scientific). LC buffers were the following: buffer A (0.1% formic acid in Milli-Q water (v/v)) and buffer B (80% acetonitrile and 0.08% formic acid in Milli-Q water (v/v). Aliquots of 15 μL of each sample were loaded at 10 μL/min onto a trap column (100 μm × 2 cm, PepMap nanoViper C18 column, 5 μm, 100 Å, Thermo Scientific) equilibrated in 2% buffer B. The trap column was washed for 5 min at the same flow rate and then the trap column was switched in-line with a Thermo Scientific, resolving C18 column (75 μm × 50 cm, PepMap RSLC C18 column, 2 μm, 100 Å). The peptides were eluted from the column at a constant flow rate of 300 nl/min with a linear gradient from 5% buffer B to 35% buffer B in 120 min, and then to 98% buffer B by 122 min. The column was then washed with 98% buffer B for 15 min and re-equilibrated in 2% buffer B for 17 min. Q-exactive HFX was used in data dependent mode. A scan cycle comprised MS1 scan (m/z range from 335 to 1800, with a maximum ion injection time of 50 ms, a resolution of 60,000 and automatic gain control (AGC) value of 3 × 106) followed by 40 sequential dependant MS2 scans (with an isolation window set to 1.4 Da, resolution at 7500, maximum ion injection time at 50 ms and AGC 1 × 105. MS data was analysed as described for the label-free CD4+ TCR activated sample above. Estimates of protein copy number were used to calculate the fold change of protein abundance between 100 µM and 1 µM methionine and a two-sample T test with unequal variance was performed to identify proteins significantly changing.
 
-## Public Availability of Data
+##### Public Availability of Data
 
 The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium data repository (https://www.ebi.ac.uk/pride/archive/login) and can be accessed with identifier PXD012052 (for TCR activated CD4 proteome), PXD012053 (for methionine restricted Th1 proteome) and PXD012058 (for naïve and effector CD4 (Th1) proteomes).
 
-## Statistics
+### Statistics
 
 Statistical analyses were performed using Prism 4.00, GraphPad Software, or Sigma Plot (Systat). A Shapiro-Wilk test for normality was performed to determine suitable tests for parametric or non-parametric populations. F-tests were performed to determine equal variance of populations, otherwise tests assuming unequal variance were performed. Multiple comparisons in one-way ANOVA analyses were corrected for using the Holm-Sidak method. Where indicated, EC50 and R2values were calculated with least squares fit, no constraints applied. All used tests are stated in the respective figure legends, statistical tests used for proteomics analysis are stated in the Proteomics Materials and methods section.

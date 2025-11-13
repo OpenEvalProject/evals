@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02v51f717 School of Psychological and Cognitive Sciences, Peking University Beijing China
-2. https://ror.org/02v51f717 PKU-Tsinghua Center for Life Sciences, Peking University Beijing China
-3. https://ror.org/02v51f717 School of Life Sciences, Peking University Beijing China
-4. https://ror.org/02v51f717 IDG-McGovern Institute for Brain Research, Peking University Beijing China
+1. School of Psychological and Cognitive Sciences, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
+2. PKU-Tsinghua Center for Life Sciences, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
+3. School of Life Sciences, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
+4. IDG-McGovern Institute for Brain Research, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
 
 † Corresponding author
 
@@ -35,7 +35,7 @@ We recorded responses of V1 superficial-layer neurons to monocular (contralatera
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/92839/elife-92839-fig1-v1.jpg)
 
-**Figure 1.:** (A) Two-photon imaging. Average two-photon images over a recording session for each response FOV. MA_200: Monkey A at a 200 μm cortical depth. (B) Ocular dominance functional maps of each FOV/depth at single-neuron resolution. (C) Frequency distributions of neurons of each FOV/depth as a function of ocular dominance index. Relevant data are provided in the source data file: Figure 1—source data 1.Figure 1—source data 1.Figure 1B-C.
+**Figure 1.:** (A) Two-photon imaging. Average two-photon images over a recording session for each response FOV. MA_200: Monkey A at a 200 μm cortical depth. (B) Ocular dominance functional maps of each FOV/depth at single-neuron resolution. (C) Frequency distributions of neurons of each FOV/depth as a function of ocular dominance index. Relevant data are provided in the source data file: Figure 1—source data 1.
 
 V1 superficial-layer neurons exhibited various degrees of eye preferences, consistent with the classical findings of Hubel and Wiesel, 1968. An ocular dominance index (ODI) was calculated to characterize each neuron’s eye preference: ODI = (Ri – Rc)/(Ri +Rc), in which Ri and Rc represented the neuron’s respective peak responses to ipsilateral and contralateral stimulations on the basis of data fitting (see Materials and methods). An ODI of –1 or 1 would indicate complete contralateral or ipsilateral eye preference, respectively, while an ODI of 0 would indicate equal preferences to both eyes. The ocular dominance functional maps at single-neuron resolution, especially those of Monkeys A and C, revealed regions of neurons preferring either the contralateral (blue) or the ipsilateral eye (red), along with transitional zones where neurons showed preferences for both eyes (white) (Figure 1B). The ocular dominance maps were similar at two cortical depths in Monkeys A and B, suggesting the presence of ocular dominance columns (Figure 1B). The frequency distributions of ODIs suggest more binocular neurons than monocular neurons in V1 superficial layers (Figure 1C), similar to the normal distribution of ocularity index in Dougherty et al., 2019.
 
@@ -43,11 +43,11 @@ The responses of individual neurons were plotted against the ocular dominance in
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/92839/elife-92839-fig2-v1.jpg)
 
-**Figure 2.:** (A) Responses of individual neurons against their ocular dominance indices with contralateral stimulation. (B) Responses of the same neurons against their ocular dominance indices with ipsilateral stimulation. (C) Binocular responses of the same neurons. (D) The difference between binocular and monocular responses (Rb – max(Ri, Rc)). Each vertical line represents one neuron. To summarize the results, neurons of each FOV/depth are evenly divided into 60 bins in the order of the ocular dominance index. White dots represent the median responses of respective bins and are connected with a black line. (E) The differences between binocular and monocular responses of individual neurons pooled over five FOVs/depths. (F) Binocular modulation index as a function of absolute ODI and the linear fit. The binocular modulation index of each neuron was defined as (Rb – max (Ri, Rc))/(Rb +max (Ri, Rc)). Relevant data are provided in the source data file: Figure 2—source data 1.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Responses of individual neurons against their ocular dominance indices with contralateral stimulation. (B) Responses of the same neurons against their ocular dominance indices with ipsilateral stimulation. (C) Binocular responses of the same neurons. (D) The difference between binocular and monocular responses (Rb – max(Ri, Rc)). Each vertical line represents one neuron. To summarize the results, neurons of each FOV/depth are evenly divided into 60 bins in the order of the ocular dominance index. White dots represent the median responses of respective bins and are connected with a black line. (E) The differences between binocular and monocular responses of individual neurons pooled over five FOVs/depths. (F) Binocular modulation index as a function of absolute ODI and the linear fit. The binocular modulation index of each neuron was defined as (Rb – max (Ri, Rc))/(Rb +max (Ri, Rc)). Relevant data are provided in the source data file: Figure 2—source data 1.
 
 These trends are more easily appreciated when comparing the differences between binocular and monocular responses of the same neurons for each FOV/depth in Figure 2D. The response changes varied among individual neurons - some showing response enhancement and some showing inhibition - likely reflecting the behaviors of tuned excitatory and inhibitory neurons, respectively (Poggio and Fischer, 1977). However, the overall response changes (represented by white dots connected by a black line, Figure 2D and E) are consistent among all five datasets. Specifically, under monocular stimulation, when only considering the neuronal responses to the preferred eye (i.e. a neuron’s higher response to ipsilateral vs. contralateral stimulations), more monocular neurons (ODIs farther from 0) tended to exhibit stronger responses compared to more binocular neurons (ODIs closer to 0). However, under binocular stimulation, the overall responses of more monocular neurons were suppressed, and those of more binocular neurons were enhanced, by binocular stimulation. These trends are best appreciated in pooled data over five FOVs/depths (Figure 2E). Furthermore, linear regression verified a significant dependence of binocular modulation on absolute ODI (y=–0.36 x+0.14, p<0.001) (Figure 2E). This means that the responses of neurons with lower absolute ODI (i.e., binocular neurons) tended to be more enhanced, and responses of neurons with higher absolute ODI (i.e. monocular neurons) tended to be more suppressed.
 
-## Modeling monocular and binocular responses
+### Modeling monocular and binocular responses
 
 We used the following steps to develop a model that can account for the current monocular responses and their binocular combination. Monocular and binocular data of each FOV/depth, as well as the pooled data, were first normalized by the respective median of the binocular responses of all neurons in the same FOV/depth. The normalized data were then divided into 60 bins in the order of the ocular dominance index, and the median values of 60 bins were used for model fitting (Figure 3A–C).
 
@@ -55,17 +55,29 @@ We used the following steps to develop a model that can account for the current 
 
 **Figure 3.:** (A, B) Median neuronal responses to contralateral and ipsilateral stimulations as a function of ocular dominance index and respective data fitting with Equation 2. Neurons are evenly divided into 60 bins in the order of the ocular dominance index, with each bin containing 29–33 neurons that varied among different FOVs/depths (156 neurons for the pooled data). Each datum represents the median response of a bin. Free parameter k was kept equal during contralateral and ipsilateral data fitting. (C) Binocular responses as a function of ocular dominance index and data fitting with Equation 3 for the same bins of neurons. During binocular data fitting, parameters k, mi, and mc were inherited from monocular data fitting, and only b was a free-changing parameter. (D) The values of free parameters from monocular and binocular data fitting.
 
-## Monocular responses
+### Monocular responses
 
-First, a neuron’s monocular responses to contralateral and ipsilateral stimulations were respectively described by a divisive gain control model:(1)Rc=wcmc .  Sc k and Ri=wimi .  Si k
+First, a neuron’s monocular responses to contralateral and ipsilateral stimulations were respectively described by a divisive gain control model:
 
-Here, Sc and Si were stimulus contrasts, wc and wi were linear transformations of a neuron’s ocular dominance index from [–1 1] to [0 1]: wc = (ODI +1)/2 and wi = 1 – wc, mc and mi represented monocular nonlinearity, and k represented divisive gain control. Because Sc and Si in our experiments were 0.9, which were about equal to 1 (full contrast) due to neuronal response saturation, the above equations were simplified as(2)Rc=wcmc k and Ri=wimi k
+$$
+R_{c}=\frac{w_{c}^{m_{c}} .  S_{c} }{k} and R_{i}=\frac{w_{i}^{m_{i}} .  S_{i} }{k}
+$$
 
-Equation 2 was used to fit the binned median contralateral and ipsilateral data (Figure 3A & B), with the parameter k being equal for contralateral and ipsilateral responses. The fitting revealed that mc and mi were negative and close to –1, which resulted in a quick decline of wcmc and a quick increase of wimi as a function of the ocular dominance index since wc and wi ϵ [0, 1]. The fit quality indices (Busse et al., 2009) ranged 0.92–0.94 for the contralateral condition (Figure 3A) and 0.87–0.93 for the ipsilateral condition (Figure 3B), suggesting adequate goodness of fit. The fitting parameters are listed in Figure 3D.
+Here, Sc and Si were stimulus contrasts, wc and wi were linear transformations of a neuron’s ocular dominance index from [–1 1] to [0 1]: wc = (ODI +1)/2 and wi = 1 – wc, mc and mi represented monocular nonlinearity, and k represented divisive gain control. Because Sc and Si in our experiments were 0.9, which were about equal to 1 (full contrast) due to neuronal response saturation, the above equations were simplified as
 
-## Binocular responses
+$$
+R_{c}=\frac{w_{c}^{m_{c}} }{k} and R_{i}=\frac{w_{i}^{m_{i}} }{k}
+$$
 
-Figure 2D–F earlier has indicated that the overall neuronal responses to binocular stimulation change from suppression to enhancement as neurons’ ocular dominance changes from monocular to binocular, which may reflect the ocular dominance-dependent net effect of interocular suppression and binocular summation. Therefore, we added interocular response suppression to Equation 2 by letting monocular responses from each eye be further normalized by an interocular suppression factor wib or wcb (Equation 3). In other words, the strength of interocular response suppression was decided by the linearly transformed ODI with a nonlinear exponent b. Finally, the normalized responses from two eyes were summed to simulate the binocular responses of neurons Rb, completing the model of binocular combination (Equation 3).(3)Rb=wimikwib+wcmckwcb
+Equation 2 was used to fit the binned median contralateral and ipsilateral data (Figure 3A & B), with the parameter k being equal for contralateral and ipsilateral responses. The fitting revealed that mc and mi were negative and close to –1, which resulted in a quick decline of $w_{c}^{m_{c}}$ and a quick increase of $w_{i}^{m_{i}}$ as a function of the ocular dominance index since wc and wi ϵ [0, 1]. The fit quality indices (Busse et al., 2009) ranged 0.92–0.94 for the contralateral condition (Figure 3A) and 0.87–0.93 for the ipsilateral condition (Figure 3B), suggesting adequate goodness of fit. The fitting parameters are listed in Figure 3D.
+
+### Binocular responses
+
+Figure 2D–F earlier has indicated that the overall neuronal responses to binocular stimulation change from suppression to enhancement as neurons’ ocular dominance changes from monocular to binocular, which may reflect the ocular dominance-dependent net effect of interocular suppression and binocular summation. Therefore, we added interocular response suppression to Equation 2 by letting monocular responses from each eye be further normalized by an interocular suppression factor wib or wcb (Equation 3). In other words, the strength of interocular response suppression was decided by the linearly transformed ODI with a nonlinear exponent b. Finally, the normalized responses from two eyes were summed to simulate the binocular responses of neurons Rb, completing the model of binocular combination (Equation 3).
+
+$$
+R_{b}=\frac{w_{i}^{m_{i}}}{kw_{i}^{b}}+\frac{w_{c}^{m_{c}}}{kw_{c}^{b}}
+$$
 
 Although not shown in Equation 3, we also assumed that the nonlinear exponent b also depends on the contrast of the stimulus presented to the other eye (i.e., Sc or Si). Consequently, when Sc or Si = 0 under monocular stimulation, Rc or Ri = 0 (Equation 1), and interocular suppression wib or wcb = 1, so Equation 3 changes back to Equation 2. It is only when Sc and Si are equal and close to 1, as in the current study, that interocular suppression and binocular combination would be in the current Equation 3 format.
 
@@ -93,7 +105,7 @@ Binocular combination of monocular signals has been understood to involve both i
 
 On the basis of current findings, future two-photon imaging work shall aim to compare neural responses to monocular and binocular stimulations with uneven effective stimulus contrasts due to physical contrast differences (Anderson and Movshon, 1989; Mitchell et al., 2023), monocular adaptation (Anderson and Movshon, 1989), short-term monocular deprivation (Lunghi et al., 2011), and the relevant roles of ocular dominance of individual neurons. These investigations would enhance the understanding of abnormal binocular vision in patients with strabismus and amblyopia. In addition, in our experiments, binocular stimuli were presented with zero disparity, which best affected the responses of neurons with zero-disparity tuning (including tuned excitatory and inhibitory neurons, Figure 2). A more realistic model of binocular combination also requires the consideration of neurons with other disparity-tuning profiles.
 
-## Limitations of two-photon calcium imaging
+### Limitations of two-photon calcium imaging
 
 While two-photon calcium imaging has the advantage of sampling a large number of neurons at cellular resolution with low sampling bias, it also has its known limitations that would position it as a complementary research tool to electrophysiological recording. For example, two-photon imaging can only sample neurons from superficial-layers, while binocular neurons also exist in deeper layers, and even neurons in the input layer are affected by feedback from downstream binocular neurons to exhibit binocular response properties (Dougherty et al., 2019). Furthermore, calcium signals are relatively slow and cannot capture the fast dynamics of neuronal responses. Consequently, to gain a more comprehensive understanding of the neuronal mechanisms involved in the binocular integration of monocular responses, combining both two-photon calcium imaging and electrophysiological recordings may offer a more holistic perspective.
 
@@ -101,15 +113,15 @@ In addition, it is important to consider that calcium signals may exaggerate the
 
 ## Materials and methods
 
-## Monkey preparation
+### Monkey preparation
 
 Monkey preparations were conducted following the methodology outlined in a previous study (Guan et al., 2021; Ju et al., 2021). Three rhesus monkeys (Macaca mulatta), aged 4–6 years, underwent two sequential surgeries under general anesthesia and strict sterile conditions. During the initial surgery, a 20 mm diameter craniotomy was performed on the skull over V1. The dura was opened, and multiple tracks of 100–150 nL AAV1.hSynap.GCaMP5G.WPRE.SV40 (AV-1-PV2478, titer 2.37e13 (GC/ml), Penn Vector Core) were pressure-injected at a depth of approximately 350 μm. Then the dura was sutured, the skull cap was re-attached using three titanium lugs and six screws, and the scalp was sutured. Following the surgery, the animal was returned to the cage and treated with injectable antibiotics (Ceftriaxone sodium, Youcare Pharmaceutical Group, China) for 1 week, along with postoperative analgesia. The second surgery took place 45 days later. A T-shaped steel frame was installed for head stabilization, and an optical window was inserted onto the cortical surface. Data collection could commence as early as one week following this procedure. More details about the preparation and surgical procedures can be found in Li et al., 2017. The procedures were approved by the Institutional Animal Care and Use Committee, Peking University.
 
-## Behavioral task
+### Behavioral task
 
 After a ten-day recovery period following the second surgery, the monkeys were placed in primate chairs with head restraints. They were trained to maintain fixation on a small white spot (0.1°), with eye positions monitored by an ISCAN ETL-200 infrared eye-tracking system (ISCAN Inc) at a sampling rate of 120 Hz for Monkeys A and B, and an Eyelink-1000 (SR Research) at a sampling rate of 1000 Hz for Monkey C. During the experiment, trials in which the eye position deviated 1.5o or more from the fixation point before stimulus offset were excluded as ones with saccades and repeated. For the remaining trials, the eye positions were predominantly concentrated around the fixation point, with eye positions within 0.5o from the fixation point in over 95% of trials.
 
-## Visual stimuli
+### Visual stimuli
 
 For Monkeys A and B, visual stimuli were generated using a ViSaGe system (Cambridge Research Systems) and presented on a 21’’ Sony G520 CRT monitor with a refresh rate of 80 Hz, a resolution of 1280 pixel ×960 pixel, and a pixel size of 0.31 mm × 0.31 mm. Due to space constraints, the viewing distance and the monitor position varied depending on the stimulus spatial frequency (30 cm for 0.25, 0.5, and 1 cpd, 60 cm for 2 cpd, and 120 cm for 4 and 8 cpd). For Monkey C, visual stimuli were created using Psychotoolbox 3 (Pelli and Zhang, 1991) and presented on a 27’’ Acer XB271HU LCD monitor with a refresh rate of 80 Hz native, a resolution of 2560 pixel ×1,440 pixel native, and a pixel size of 0.23 mm × 0.23 mm. The viewing distance was 50 cm for lower frequencies (0.25–1 cpd) and 100 cm for higher frequencies (2–8 cpd). Both monitors had their screen luminance linearized by an 8-bit look-up table, and the mean luminance was approximately 47 cd/m2.
 
@@ -125,32 +137,48 @@ Each stimulus was presented for 1000 ms, followed by an inter-stimulus interval 
 
 Each block of trials typically lasted 20–25 min, but for Monkeys A and B, certain blocks involving three SFs could extend up to 45 min. The strength of fluorescent signals (mean luminance of a small area) was continuously monitored and adjusted as needed to account for any drift in fluorescent signals. We compared the response ratios of the last two trials over the first two trials for each stimulus condition in these extended blocks with ipsilateral and contralateral stimulations. The respective mean ratios were 0.94 and 0.86, suggesting that the recorded neuronal responses remained largely stable over the extended blocks of trials.
 
-## Two-photon calcium imaging
+### Two-photon calcium imaging
 
 Two-photon calcium imaging was performed with a Prairie Ultima IV (In Vivo) two-photon microscope (Prairie Technologies) on Monkeys A and B, or a FENTOSmart two-photon microscope (Femtonics) on Monkey C, and a Ti:sapphire laser (Mai Tai eHP, Spectra Physics). GCaMP5 was chosen as the indicator of calcium signals because the fluorescence activities it expresses are linearly proportional to neuronal spike activities within a wide range of firing rates from 10 to 150 Hz (Li et al., 2017). One FOV of 850 x 850 μm2 was selected from each animal and imaged using a 1000 nm femtosecond laser under a 16× objective lens (0.8 N.A., Nikon) at a resolution of 1.6 μm/pixel. A fast resonant scanning mode (32 frames per second) was chosen to obtain continuous images of neuronal activity (8 frames per second after averaging every 4 frames). Recordings were first performed at a shallower depth, and some neurons with high brightness or unique dendrite patterns were selected as landmarks. In the next daily session, the same FOV at the same depth was first located with the help of the landmarks, and the depth plane was then lowered if recordings were performed at a deeper depth (Monkeys A & B). Because of the time limit, recordings at a specific FOV/depth with monocular and binocular stimulations were completed in 2–3 consecutive daily sessions, but the same neurons could be precisely tracked over multiple recording sessions with the use of landmark cues.
 
-## Imaging data analysis: initial screening of ROIs
+### Imaging data analysis: initial screening of ROIs
 
 Data were analyzed with customized MATLAB codes. A normalized cross-correlation based translation algorithm (source code provided in Source code 1) was used to reduce motion artifacts (Li et al., 2017). Then the fluorescence changes were associated with corresponding visual stimuli through the time sequence information recorded by Neural Signal Processor (Cerebus system, Blackrock Microsystem). By subtracting the mean of the 4 frames before stimuli onset (F0) from the average of the 6th-9th frames after stimuli onset (F) across 5 or 6 repeated trials for the same stimulus condition (same orientation, spatial frequency, size, and drifting direction), the differential image (∆F=F F0) was obtained.
 
-For a specific FOV at a specific recording depth, the regions of interest (ROIs) or possible cell bodies were decided through sequential analysis of 216 differential images in the order of spatial frequency (6), size (3), and orientation (12) (6x3 x 12=216). The first differential image was filtered with a band-pass Gaussian filter (size = 2–10 pixels), and connected subsets of pixels (>25 pixels, which would exclude smaller vertical neuropils) with average pixel value >3 standard deviations of the mean brightness were selected as ROIs. Then the areas of these ROIs were set to mean brightness in the next differential image before the bandpass filtering and thresholding were performed. This measure gradually reduced the standard deviations of differential images and facilitated detection of neurons with relatively low fluorescence responses. If a new ROI and an existing ROI from the previous differential image overlapped, the new ROI would be on its own if the overlapping area OA <1/4 ROInew, discarded if 1/4 ROInew <OA < 3/4 ROInew, and merged with the existing ROI if OA >3/4 ROInew. The merges would help smoothen the contours of the final ROIs. This process went on through all differential images twice to select ROIs. Finally, the roundness for each ROI was calculated as:Roundness=4π×AP
+For a specific FOV at a specific recording depth, the regions of interest (ROIs) or possible cell bodies were decided through sequential analysis of 216 differential images in the order of spatial frequency (6), size (3), and orientation (12) (6x3 x 12=216). The first differential image was filtered with a band-pass Gaussian filter (size = 2–10 pixels), and connected subsets of pixels (>25 pixels, which would exclude smaller vertical neuropils) with average pixel value >3 standard deviations of the mean brightness were selected as ROIs. Then the areas of these ROIs were set to mean brightness in the next differential image before the bandpass filtering and thresholding were performed. This measure gradually reduced the standard deviations of differential images and facilitated detection of neurons with relatively low fluorescence responses. If a new ROI and an existing ROI from the previous differential image overlapped, the new ROI would be on its own if the overlapping area OA <1/4 ROInew, discarded if 1/4 ROInew <OA < 3/4 ROInew, and merged with the existing ROI if OA >3/4 ROInew. The merges would help smoothen the contours of the final ROIs. This process went on through all differential images twice to select ROIs. Finally, the roundness for each ROI was calculated as:
 
-where A was the ROI’s area, and P was the perimeter. Only ROIs with roundness larger than 0.9, which would exclude horizontal neuropils, were selected for further analysis.
+$$
+Roundness=\frac{\sqrt{4\pi\timesA}}{P}
+$$
 
-## Imaging data analysis: orientation tuning, SF tuning, and ocular dominance
+where $A$ was the ROI’s area, and $P$ was the perimeter. Only ROIs with roundness larger than 0.9, which would exclude horizontal neuropils, were selected for further analysis.
+
+### Imaging data analysis: orientation tuning, SF tuning, and ocular dominance
 
 The ratio of fluorescence change (∆F/F0) was calculated as a neuron’s response to a specific stimulus condition. For a specific cell’s response to a specific stimulus condition, the F0n of the n-th trial was the average of 4 frames before stimulus onset, and Fn was the average of 5th-8th frames after stimulus onset. F0n was then averaged across 12 trials to obtain the baseline F0 for all 12 trials (for the purpose of reducing noises in the calculation of responses), and ∆Fn/F0 = (Fn-F0)/F0 was taken as the neuron’s response to this stimulus at this trial. The final response was averaged over 11 trials, excluding the 12th trial that showed the weakest and often negative response. For a small portion of neurons (e.g.,~3% in Monkeys A,~8% in monkey B, and ~2% in Monkey C) showing direction selectivity as their responses to two opposite drifting directions differed significantly (P<0.05, Friedman test), the 6 trials at the preferred direction was considered for calculations of ∆Fn/F0 as the cell’s responses to a particular stimulus. F0 was still averaged over 12 trials at two opposite directions.
 
-Several steps were then taken to determine whether a neuron was tuned to orientation and/or spatial frequency, and if so, its ocular dominance index. For each monocular condition, first the orientation, SF, and size (σ) producing the maximal response among all conditions were selected. Then responses to other 11 orientations and 5 SFs were decided at the selected SF and size. Second, to select orientation and/or SF tuned neurons, a non-parametric Friedman test was performed to test whether a neuron’s responses at 12 orientations or 6 SFs were significantly different from each other at least under one monocular stimulation condition. To reduce Type-I errors, the significance level was set at α=0.01. Third, for those showing significant orientation differences, the trial-based orientation responses of each neuron were fitted with a Gaussian model with a MATLAB nonlinear least-squares function: lsqnonlin:R(θ)=a12−(θ−θ0σ)2+b
+Several steps were then taken to determine whether a neuron was tuned to orientation and/or spatial frequency, and if so, its ocular dominance index. For each monocular condition, first the orientation, SF, and size (σ) producing the maximal response among all conditions were selected. Then responses to other 11 orientations and 5 SFs were decided at the selected SF and size. Second, to select orientation and/or SF tuned neurons, a non-parametric Friedman test was performed to test whether a neuron’s responses at 12 orientations or 6 SFs were significantly different from each other at least under one monocular stimulation condition. To reduce Type-I errors, the significance level was set at α=0.01. Third, for those showing significant orientation differences, the trial-based orientation responses of each neuron were fitted with a Gaussian model with a MATLAB nonlinear least-squares function: lsqnonlin:
 
-where R(θ) was the response at orientation θ, free parameters a1, θ0, σ, and b were the amplitude, peak orientation, standard deviation of the Gaussian function (and half width at half height), and minimal response of the neuron, respectively. Only neurons with goodness of fit R2 >0.5 at least under one stimulation condition were finally selected as orientation-tuned neurons. Fourth, for those showing significant SF difference, the trial-based SF responses of each neuron were further fitted with a Difference-of-Gaussian model.R(sf)=a1e−(sfσ1)2−a2e−(sfσ2)2+b
+$$
+R(\theta)=a_{1}2^{−(\frac{\theta−\theta_{0}}{\sigma})^{2}}+b
+$$
+
+where R(θ) was the response at orientation θ, free parameters a1, θ0, σ, and b were the amplitude, peak orientation, standard deviation of the Gaussian function (and half width at half height), and minimal response of the neuron, respectively. Only neurons with goodness of fit R2 >0.5 at least under one stimulation condition were finally selected as orientation-tuned neurons. Fourth, for those showing significant SF difference, the trial-based SF responses of each neuron were further fitted with a Difference-of-Gaussian model.
+
+$$
+R(sf)=a_{1}e^{−(\frac{sf}{\sigma_{1}})^{2}}−a_{2}e^{−(\frac{sf}{\sigma_{2}})^{2}}+b
+$$
 
 where R(sf) was a neuron’s response at spatial frequency sf, free parameters a1, σ1, a2, and σ2 were amplitudes and standard deviations of two Gaussians, respectively, and b was the minimal response among 6 spatial frequencies. Only those with goodness of fit R2 >0.5 at least under one monocular stimulation condition were selected as SF tuned neurons.
 
 The ocular dominance index (ODI) was calculated to characterize each orientation and/or SF tuned neuron’s eye preference: ODI = (Ri – Rc)/(Ri +Rc), in which Ri and Rc were the neuron’s respective peak responses at the best orientation and SF to ipsilateral and contralateral stimulations on the basis of data fitting. Here ODI = –1 and 1 would indicate complete contralateral and ipsilateral eye preferences, respectively, and ODI = 0 would indicate equal preference to both eyes.
 
-## Model fitting
+### Model fitting
 
-Monocular and binocular data in Figure 4 were fitted by Equations 2 and 3, respectively. The goodness-of-fit was indicated by a fit quality index q with a range of 0–1, which was the root mean square deviation between the observed responses and the model normalized by the observed response mean (Busse et al., 2009):q=1-∑i=1nri-mi2nr-
+Monocular and binocular data in Figure 4 were fitted by Equations 2 and 3, respectively. The goodness-of-fit was indicated by a fit quality index q with a range of 0–1, which was the root mean square deviation between the observed responses and the model normalized by the observed response mean (Busse et al., 2009):
+
+$$
+q=1-\frac{\sqrt{\frac{\sum_{i=1}^{n}r_{i}-m_{i}^{2}}{n}}}{r-}
+$$
 
 where i was the ith bin, r was the median response of a specific bin, and m was the corresponding model prediction.

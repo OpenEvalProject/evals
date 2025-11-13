@@ -12,4 +12,4 @@
 
 ## Abstract
 
-Elements of C 4 photosynthesis—a complex adaptation that increases photosynthetic efficiency—may have evolved first to correct an intercellular nitrogen imbalance, and only later evolved a central role in carbon fixation.
+Elements of C4 photosynthesis—a complex adaptation that increases photosynthetic efficiency—may have evolved first to correct an intercellular nitrogen imbalance, and only later evolved a central role in carbon fixation.

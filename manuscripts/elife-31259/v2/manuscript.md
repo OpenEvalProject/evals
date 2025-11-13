@@ -15,11 +15,17 @@
 
 ## Abstract
 
-10.7554/eLife.31259.001 Fluoride ion channels of the Fluc family combat toxicity arising from accumulation of environmental F - . Although crystal structures are known, the densely packed pore region has precluded delineation of the ion pathway. Here we chart out the Fluc pore and characterize its chemical requirements for transport. A ladder of H-bond donating residues creates a ‘polar track’ demarking the ion-conduction pathway. Surprisingly, while track polarity is well conserved, polarity is nonetheless functionally dispensable at several positions. A threonine at one end of the pore engages in vital interactions through its β-branched methyl group. Two critical central phenylalanines that directly coordinate F - through a quadrupolar-ion interaction cannot be functionally substituted by aromatic, non-polar, or polar sidechains. The only functional replacement is methionine, which coordinates F - through its partially positive γ-methylene in mimicry of phenylalanine’s quadrupolar interaction. These results demonstrate the unusual chemical requirements for selectively transporting the strongly H-bonding F - anion.
+Fluoride ion channels of the Fluc family combat toxicity arising from accumulation of environmental F-. Although crystal structures are known, the densely packed pore region has precluded delineation of the ion pathway. Here we chart out the Fluc pore and characterize its chemical requirements for transport. A ladder of H-bond donating residues creates a ‘polar track’ demarking the ion-conduction pathway. Surprisingly, while track polarity is well conserved, polarity is nonetheless functionally dispensable at several positions. A threonine at one end of the pore engages in vital interactions through its β-branched methyl group. Two critical central phenylalanines that directly coordinate F- through a quadrupolar-ion interaction cannot be functionally substituted by aromatic, non-polar, or polar sidechains. The only functional replacement is methionine, which coordinates F- through its partially positive γ-methylene in mimicry of phenylalanine’s quadrupolar interaction. These results demonstrate the unusual chemical requirements for selectively transporting the strongly H-bonding F- anion.
 
 ## Introduction
 
 Aqueous fluoride ion is an omnipresent environmental xenobiotic that inhibits certain phosphoryl-transfer enzymes critical for energy production and nucleic acid synthesis (Marquis et al., 2003; Samygina et al., 2007). Two phylogenetically unrelated F- efflux systems are now known that resist the toxicity of cellular F-: the CLCF family of F-/H+ antiporters, and the Fluc family of F- ion channels (Baker et al., 2012; Stockbridge et al., 2012). Fluc channels, present in all classes of life except higher animals, allow passive transit of F- ions across the membrane down their electrochemical gradient. Bacterial Fluc channels are constructed as small, dual-topology dimers; the two subunits, each of ~120 residues, span the membrane in opposite orientations to form the functional complex (Stockbridge et al., 2013). These channels are notable for this unusual architecture as well as for exceptionally high F-/Cl-selectivity. Recent crystal structures of two Fluc channels (Stockbridge et al., 2015; Last et al., 2016) reveal four bound F- ions whose transmembrane disposition imply two antiparallel ion-permeation pathways, each occupied simultaneously by two F- ions (Figure 1a, Figure 1—figure supplement 1). Each pathway was postulated to be extremely narrow, largely anhydrous, and filled up by side chains that hand off F- ions passing along it (Figure 1b). This unusual structural inference was confirmed functionally by substitutions of three conserved, ion-coordinating residues in this region – two phenylalanines and an asparagine – that fully inhibit F- transport.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig1-v2.jpg)
+
+**Figure 1.:** (a) Crystal structure of Ec2-S9 complex (PDB #5A43, re-refined) showing double-pore assembly, with F- ions in purple and subunits in cyan and yellow. Grey mesh marks surfaces of the bound S9 monobodies delineating the channel's aqueous vestibules. (b) Blow-up of an individual pore region, with coordinating Phe and polar track side chains indicated and colored according to the subunit from which they project. Crystallographic waters are shown as dotted spheres. (c) Space-fill representation of same region. (d) Bacterial Fluc sequence alignment spanning polar track residues (TM2-TM4), with color code indicated. Top two sequences (Ec2, Bpe) refer to structurally known homodimeric homologues. Known or surmised heterodimers are shown in six lower sequences (La1/2, Sa1/2, Mt1/2). Other sequences are taken arbitrarily from Swissprot for illustration.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig1-figsupp1-v2.jpg)
 
 Zooming in on a single pore of the Fluc homologue under study here (Figure 1b), we see two bound F- ions separated by 12 Å and surrounded mainly by protein side chains. The lower ion approaches one of the wide aqueous vestibules on the two ends of the channel, while the other is deeply buried within the protein. The proposed critical pore-associated moieties are of two chemical types: aromatic rings of two conserved Phe residues contributed from different subunits, each of which coordinates a F- ion in an electropositive edge-on orientation, and dipolar H-bond donors arranged to satisfy the F- ion's H-bond accepting preference. These H-bonding residues were proposed (Stockbridge et al., 2015) to form a ‘polar track’ extending in both directions beyond the centrally located Phe rings, as indicated in the sequence alignment and structure of Figure 1. Most polar track residues emanate from TM4, where they appear at every 4th position, and although not all are individually conserved, H-bond donors frequently appear here. Several of these coordinate F- ions in the crystal structures, while others lie close to the aqueous vestibules where crystallographically ordered waters are also observed. We emphasize that the structures do not show water-filled aqueous tunnels lined by polar groups, as in many other ion channels; instead, the pores are filled with a web of side chains (Figure 1c) that must be negotiated by ions translocating at rates on the order of 106–107 ions/sec.
 
@@ -29,9 +35,176 @@ Our aim here is to further test this picture by mutating each of the residues th
 
 A Fluc homologue from an E. coli virulence plasmid, nicknamed ‘Ec2’ (Stockbridge et al., 2013), was used for all experiments. Three strongly conserved, deeply buried residues spanning ~7 Å along the pore were previously found to be required for transport (Stockbridge et al., 2015; Last et al., 2016) in this and a different homologue: two Phe (F80, F83) and an Asn positioned between them (N41). To initially gauge the functional importance of the entire polar track, we mutated each of the four track residues on TM4 (S102, H106, S110, T114) to Ala as well as an additional residue, S84, which in the structure projects into the pore-region from TM3 of the partner subunit. Channel activity was assessed with an anion-efflux assay, wherein F- or Cl- transport by liposome-reconstituted Fluc was followed continuously with ion-specific electrodes (Stockbridge et al., 2013). Because F- flux through WT channels is far faster than the electrode's time-response, this is effectively a binary assay of whether a construct is broadly functional or severely impaired (Figure 2a); even a channel with a 95% inhibited transport rate will display a WT phenotype, completely emptying its liposomes of F- within the electrode's response time. For this reason, all mutants appearing active in the flux assay were also electrophysiologically examined in planar phospholipid bilayers for direct determination of single-channel conductance. Surprisingly, we find (Figure 2b) that F- robustly permeates three track mutants denuded of their hydroxyl groups - S84A, S102A, and S110A - with single-channel conductances within 25% of WT (Figure 2c, Table 1). In contrast, H106A and T114A, as well as alternative H-bonding substitutes H106S, H106Y, H106W, H106N, H106F, N41S, N41Q, and N41Y are completely nonfunctional (Figure 2b, Figure 2—figure supplement 1), representing >10,000 fold rate-inhibition relative to WT. In crystal structures (Figure 1b) H106 coordinates a partially hydrated F- ion located close to bulk solvent at one end of the narrow pore, T114 lies beyond the other F- ion at the opposite end, and the other residues tested reside between them. These functionally sensitive positions thus chart out a ~ 20 Å span connecting the deepest parts of the aqueous vestibules, as suggested from the structures alone. We now turn to the chemical requirements for three of the positions vital for transport.
 
-## F--coordinating aromatics
+![Figure 2.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig2-v2.jpg)
+
+**Figure 2.:** (a) WT fluoride flux, limited by the response time of the measurement. (b) Polar track Ala mutations. (c) Single channel records of active polar track mutants in the presence of reversible blockers (monobodies) that completely inhibit flux and allow measurement of the zero-current level (gray line).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Illustrative Cl- efflux traces of indicated F- permeable mutants, with WT F- efflux shown for comparison.
+
+**Table 1.**
+ F- transport activity of Ec2 channel mutants.Activity (single-channel conductance), relative to WT, was calculated for mutants showing efflux behavior similar to WT by recording single-channel currents at 200 mV and symmetrical F-, and normalizing to WT current under identical conditions. Mutants scored 'X' gave no discernable flux, equivalent to a relative turnover <10−4 of the WT rate. F80I and F83I results are from Last et al. (2016).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Construct</th>
+      <th>Activity</th>
+      <th>Construct</th>
+      <th>Activity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>1</td>
+      <td>N41S</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>N41Q</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>F80A</td>
+      <td>X</td>
+      <td>S84A</td>
+      <td>1.0 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>F80L</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F80I</td>
+      <td>X</td>
+      <td>F88A</td>
+      <td>0.63 ± 0.06</td>
+    </tr>
+    <tr>
+      <td>F80Y</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F80W</td>
+      <td>X</td>
+      <td>S102A</td>
+      <td>1.0 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>F80S</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F80T</td>
+      <td>X</td>
+      <td>H106A</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>F80Q</td>
+      <td>X</td>
+      <td>H106S</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>F80H</td>
+      <td>X</td>
+      <td>H106N</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>F80M</td>
+      <td>0.78 ± 0.05</td>
+      <td>H106Y</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>H106W</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>F83A</td>
+      <td>X</td>
+      <td>H106F</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>F83L</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F83I</td>
+      <td>X</td>
+      <td>S110A</td>
+      <td>0.80 ± 0.06</td>
+    </tr>
+    <tr>
+      <td>F83Y</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F83W</td>
+      <td>X</td>
+      <td>T114A</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>F83S</td>
+      <td>X</td>
+      <td>T114S</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>F83H</td>
+      <td>X</td>
+      <td>T114V</td>
+      <td>0.99 ± 0.06</td>
+    </tr>
+    <tr>
+      <td>F83M</td>
+      <td>X</td>
+      <td>T114I</td>
+      <td>1.1 ± 0.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### F--coordinating aromatics
 
 The two F--coordinating Phe residues stand out due to their unusual anion-quadrupolar coordination and their strong conservation. Despite the residue's hydrophobicity, its π-electrons leave a partial positive charge on the ring hydrogens (Mecozzi et al., 1996), such that each ring approaches a F- ion in an edge-on orientation. Removal of aromaticity by substitution of either Phe with Ile was previously shown to abolish both transport and F- occupancy at the site near the substitution (Last et al., 2016). We examined a variety of mutations to survey the chemical requirements for F- binding and transport at these central Phe positions. Aromatics (Y, W, H) were introduced as conservative substitutions, aliphatic H-bond donors (S, T, Q) as potential F--coordination partners of alternative chemistry, and hydrophobic aliphatics (L, A) as additional controls. All eight mutations, most of them tested at both Phe residues, completely abolish channel activity (Figure 3a, Figure 3—figure supplement 1). The most conservative variant, Tyr, is particularly striking since it differs from Phe only by the presence of the ring hydroxyl. A crystal structure of the F80Y mutant, solved to assess F- binding and structure of the pore region, is essentially identical to WT (Cα rmsd ~0.3 Å) with the Tyr ring congruent to that of WT Phe (Figure 3b, Figure 3—figure supplements 2 and 3). In contrast to previous structures of inactive Ile mutants (Last et al., 2016), F- remains bound to the Tyr construct in precisely the same positions as in WT (Figure 3—figure supplement 4). Other than the added hydroxyl group, no significant structural changes between WT and the inactive F80Y mutant are apparent, nor does the structure suggest a clear reason why F- fails to permeate the mutant.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig3-v2.jpg)
+
+**Figure 3.:** (a) F- efflux traces of indicated mutants. (b) Structures of Phe mutants in F--coordination region. (c) F- efflux traces of Met substitutions at central Phe residues. (d) Single-channel recording of F80M.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig3-figsupp3-v2.jpg)
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** F--omit (at mutated positions) difference density contoured at 4σ is shown in magenta mesh of indicated mutants. F- ions coordinated by Phe residues are shown as magenta spheres. For F83M, difference density is seen only on one end of channel, and consists of a F- ion and two waters. No NCS averaging was used in refinement, nor was F- included in refinement at the mutated positions at any point prior to making the difference maps.
 
 While the coordinating Phe residues are strongly conserved among Fluc homologues, they are not perfectly so, as illustrated in the alignment of Figure 1d. Bacterial Fluc sequences present a complication that must be appreciated in interpreting alignments. While many Fluc proteins are homodimeric like Ec2, others are known or inferred heterodimers as in Lactobacillus acidophilus (La1, La2), Staphylococcus aureus (Sa1, Sa2), and Mycobacterium tuberculosis (Mt1, Mt2). This circumstance offers the possibility of genetic drift, such that one of the two pores becomes inactivated. As long as the second pore remains active, the inactivated pore can lose residues vital for transport with no physiological effect. In such cases, non-canonical residues appearing in the alignment might either reflect a novel transport chemistry, or simply represent a functionally disrupted pore that no longer has strict residue requirements. Such an arrangement has been suggested from sequence analysis (Stockbridge et al., 2015) and indicated experimentally in a yeast Fluc channel (Smith et al., 2015; Berbasova et al., 2017). Thus, both La and Sa heterodimers retain three of the central phenylalanines, but have either Leu or Met appear at the fourth position. Given that one pore in these dimers would still possess both phenylalanines, the altered residues may line an inactivated pore. The Mt heterodimer surprisingly loses both phenylalanines at the second position, replaced with either methionine or tryptophan. This leads to the unexpected hypothesis that that either Met or Trp are capable of coordinating and transporting fluoride in that construct.
 
@@ -39,9 +212,21 @@ Since alignments show Met occasionally appearing at the central Phe positions, w
 
 We determined crystal structures of both Met mutants to test the prediction above regarding F- coordination. As with the Tyr substitute, the Met structures are virtually identical to WT (Figure 3b, Figure 3—figure supplement 2), and all residues surrounding the substitutions are unmoved (Cα rmsd ~0.3 Å from WT, Figure 3—figure supplement 3). The Met side chains in both take on a twisted conformation, filling approximately the same space as the Phe ring in WT. As predicted, in both Met mutants F- ions are coordinated by the γ-methylenes located in nearly the same positions as the coordinating Phe ring carbons in WT (Figure 3—figure supplements 3 and 4), as though the substituted linear side chains attempt to mimic Phe’s aromatic ring in occupied volume and F--binding electrostatics. As with the Tyr mutant, the similar structures offer no explanation why F80M is functionally active and F83M is not.
 
-## A paradoxically polar position
+### A paradoxically polar position
 
 As described above, the moderately conserved Thr114 lies at one end of the polar track, distant from bound F- ions, and its substitution by Ala abolishes channel activity, as if its hydroxyl group is necessary for ushering the anion into the narrow pore from the aqueous vestibule. However, a stark refutation of this idea emerges from the complete inactivity of T114S (Figure 4a), despite a T114S crystal structure showing the Ser hydroxyl exactly overlaying its WT counterpart and no significant structural changes elsewhere (Cα rmsd ~0.2 Å, Figure 4b, Figure 4—figure supplements 1 and 2). This perplexing result motivated an examination of Thr's β-branched methyl group as a functional determinant, and indeed Val and Ile were found to be fully active substitutes here in both liposome F- efflux and single-channel recording experiments (Figure 4a,c, Table 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig4-v2.jpg)
+
+**Figure 4.:** (a) Active and inactive T114 substitutions in F- efflux assay. (b) F--coordinating region of T114S crystal structure. Mutated residue is in pink. (c) Illustrative single-channel recordings of apolar substitutes scoring active in flux assay.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig4-figsupp3-v2.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig4-figsupp4-v2.jpg)
 
 What could be the function of the β-branched methyl group? In the WT structure, this contacts the Gly49 Cα, V85 Cα, and F88 side chain, all from the partner subunit (Figure 4—figure supplement 3). Thus, it is possible that the T114 methyl participates in a nonpolar interaction critical for stabilizing the conducting structure of WT (a structure that nevertheless is still observed in T114S crystals). We attempted mutating Phe88 to Ala (mutation of the backbone Cα’s being unfeasible) to weaken the interaction with the opposite subunit. The height of the F88A flux kinetic is clearly smaller than that of WT (Figure 4—figure supplement 4), demonstrating that a significant fraction of the channels, although apparently well-folded and dimeric off the gel-filtration column, are inactive. However, those channels that remain active have near WT levels of single channel flux (Figure 4—figure supplement 4, Table 1). These results are difficult to interpret, as the changes in the fraction of active F88A may be independent of any possible interaction with T114. Additionally, given that T114 also makes close contact with the F88 beta carbon (which would remain in the F88A construct, Figure 4—figure supplement 3), interactions vital for flux may still remain even after mutation. We therefore conjecture, without compelling evidence beyond the crystal structure itself, that Thr114 contributes to the pore’s structural integrity but does not coordinate F- during its transit.
 
@@ -50,6 +235,10 @@ A striking feature of Fluc channels is their extreme (>10,000 fold) selectivity 
 ## Discussion
 
 Despite functional experiments accompanied by crystal structures at resolution high enough to locate F- ions, revealing two parallel and independent pores, the F- permeation pathway of Fluc channels remains mysterious. The plug of sidechains clogging the pore leaves no clearly visible ion-diffusion pathway, thus provoking our proposal for an unconventional ‘channsporter’ permeation mechanism (Stockbridge et al., 2015) whereby F- passage is accomplished by concomitant movements of side-chain rotamers on a submicrosecond timescale. Experiments here have now delineated the critical residues along the length of the pore (Figure 5, Figure 5—figure supplement 1); its overall trajectory, from the solvent-accessible binding site at F83/H106 to the terminus near T114, is as suggested from the structures, but several of the new findings are unexpected.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig5-v2.jpg)
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31259/elife-31259-fig5-figsupp1-v2.jpg)
 
 The requirements for the central Phe positions, which stand out prominently in sequence alignments and crystal structures, mirror what is seen in nature: only rare replacements of Phe. The failure of even Tyr to functionally substitute for Phe at either Ec2 position is particularly surprising in light of the F80Y crystal structure. The Tyr and Phe rings and the F- ions adopt identical positions, and the Tyr hydroxyl points away from the bound F-, its presence leaving other parts of the protein undisturbed. Modification of ring electrostatics by the polarizable hydroxyl may lead to a more tightly bound ion, inhibiting flux. If any sidechain movement is required during transport, the additional hydroxyl may introduce either steric clash or competing polar interactions in those alternate conformers. In the case of F80Y, favorable hydroxide-phenyl interactions with the neighboring F83 could also inhibit sidechain movement.
 
@@ -61,20 +250,174 @@ Along the conserved polar track, only two H-bond donors are required: N41 and H1
 
 ## Materials and methods
 
-## Reagents
+### Reagents
 
 Chemicals obtained from Sigma-Aldrich (St. Louis, MO) or Fisher Scientific (Waltham, MA) were of highest grade. E. coli mixed polar phospholipids (EPL) were from Avanti Polar Lipids (Alabaster, AL), and n-decylmaltoside (DM), n-dodecylmaltoside (DDM), and 3-[(3-Cholamidopropyl)-Dimethylammonio]-1-Propane Sulfonate] (CHAPS) from Anatrace (Maumee, OH). K-isethionate solutions were prepared from isethionic acid (Wako Pure Chemical Industries [Osaka, Japan]) titrated with KOH.
 
-## Protein purification and Liposome reconstitution
+### Protein purification and Liposome reconstitution
 
 The 'wildtype' (WT) Ec2 construct used here carries a C-terminal hexahistidine tag as well as a single mutation (R25K) that enhances protein expression but does not affect function (Stockbridge et al., 2015). Mutant Ec2 channels were constructed by standard PCR techniques and were expressed, purified, and reconstituted as previously described (Last et al., 2016), as was the S9 monobody. In brief, BL21(DE3) cells were transformed with pET21 vectors containing Fluc constructs. Cells were grown to an OD of 1.5 in terrific broth at 37 C, induced with 2 mM isopropyl β-D-1-thiogalactopyranoside (IPTG) for 1 h at the same temperature, and then harvested by centrifugation. Cell pellets were resuspended in 50 mM Tris, 100 mM NaCl, pH 7.5 with small amounts of DNAse and lysozyme. Cells were broken by sonication, and channels were extracted with 1% DDM for 2 h at RT. Solubilized lysate was clarified by centrifugation, and then loaded on Talon cobalt resin equilibrated with 20 mM Tris, 100 mM NaCl, 5 mM DM, pH 7.5. Cobalt columns were washed and then eluted with 40 mM and 400 mM imidazole, respectively, in equilibration buffer. Cobalt elution was concentrated, and run over a Superdex 200 Increase equilibrated with 25 mM HEPES, 100 mM NaCl, 5 mM DM, pH 7.0 (functional assays) or 10 mM HEPES, 100 mM NaF, 5 mM DM, pH 7.0 (crystallography). Most mutants express to levels comparable to WT, and all run as monodisperse homodimers on gel filtration. Liposomes reconstituted with Ec2 were formed by mixing purified channels with 10 mg/mL stocks of EPL that had been dried down, washed and dried once with pentane, and solubilized with 30 mM CHAPS in 50 mM Tris, 100 mM NaCl, pH 7.5. Final protein concentration was 0.2 μg protein/mg lipid, so that roughly half of the liposomes contained only a single channel and the rest were protein-free (Walden et al., 2007). Detergent was removed via dialysis using 10 kDa MWCO Slide-A-Lyzer (ThermoFisher [Waltham, MA]) cassettes against 3x400 mL per 10 mg lipid of 25 mM HEPES-NaOH pH 7.0 with 300 mM of either KF or KCl. Each round of dialysis was at least 6 h at RT. Final liposomes were freeze-thawed 3x prior to use in functional studies.
 
 Monobody S9 was expressed from the pHFT2 in BL21(DE3) cells by growing cells to OD 0.8 at 37 C, transferring to 30 C, and inducing with 0.2 mM IPTG for 3 hr. Cell pellets were resuspended in 50 mM Tris, 100 mM NaCl, pH 7.5, cells were broken by sonication, lysate was clarified by centrifugation, and monobody was bound to Talon cobalt resin by batch binding for 3 hr at RT. After binding and washing with 20 mM Tris, 100 mM NaCl, pH 7.5, TEV protease (0.2 mg / L of cell culture) was added to the resin to cleave the TEV site located after the N-terminal His-tag. Cleavage ran overnight at RT, at which point cleaved monobody was rinsed off the column, concentrated, and purified over a Superdex 75 increase gel filtration column equilibrated with 10 mM HEPES, 100 mM NaF, pH 7.0.
 
-## Channel activity assays
+### Channel activity assays
 
 Channel activity was assessed by either a liposome-based anion efflux method (Stockbridge et al., 2013) or by single-channel recording of F- currents in planar phospholipid bilayers. For anion efflux measurements, liposomes were first extruded by 21 passes through a 0.4 μm membrane filter. 100 μL of extruded liposomes were centrifuged through a 1.5 mL G-50 Sephadex column loaded with 300 mM K-isethionate, 25 mM HEPES-NaOH pH 7.0 and diluted 20-fold into a stirred chamber with 3.8 mL flux buffer (300 mM K-isethionate, 1 mM NaF, 25 mM HEPES-NaOH pH 7.0). Liposomes for chloride efflux were diluted 10-fold into similar efflux buffer with 1 mM NaCl. Halide concentration in the chamber was monitored continuously with a F- or Cl--specific electrode. Efflux was initiated by adding 1 μM valinomycin (Vln), and total trapped F-/Cl- was determined by adding 30 mM β-octylglucoside at the end of the run. The flux assay's dynamic range is limited by the electrode time response (~1 s), equivalent to single-channel turnover rates below ~30,000 ions/sec, roughly 4% of the WT single-channel current under similar conditions (Turman et al., 2015). All efflux experiments were repeated 4–8 times with mutant proteins from at least 2 independent purifications. Single-channel recording was done at 200 mV holding potential with a Nanion (Munich, Germany) mini-Orbit system as described (Last et al., 2016), with 300 mM NaF, 10 mM NaCl, 15 mM MOPS-NaOH pH 7.0 on both sides of the bilayer, in the presence of 150 nM monobody S9. The monobody binds reversibly to the Fluc channel, completely blocking the current and allowing measurement of the zero-current level. Average channel currents derived from at least 4 independent single-channel measurements.
 
-## Crystallography
+### Crystallography
 
 Crystal structures of various Fluc mutants in complex with a crystallization chaperone, monobody S9 (Stockbridge et al., 2013) were solved. Purified Fluc and monobody were mixed at a molar ratio of 1:1.2, with a final protein concentration of ~14 mg/mL total protein. Crystals were formed in sitting drops at 22°C by mixing protein 1 μL: 1 μL with well solution: 50 mM LiNO3, 100 mM ADA pH 6.0–6.5, and PEG 550mme or 600 (30–31%). Fluoride in the crystal wells came from the protein gel filtration buffer, described above. Datasets were collected at the Advanced Light Source beamline 8.2.1 and 8.2.2 and were integrated and scaled using Mosflm (Battye et al., 2011) and Aimless (Evans, 2011) or Xia2/XDS/Aimless (Kabsch, 2010; Winter, 2010; Winn et al., 2011). Phases were determined by molecular replacement in PHASER (McCoy et al., 2007) using F80I Ec2-S9 (PDB #5KBN) as search model unless otherwise stated. Phenix (Adams et al., 2010) and Refmac5 (Winn et al., 2003) were used for refinement, with final refinement done in Refmac. COOT (Emsley et al., 2010) was used for real-space refinement, and geometry validation was checked using Molprobity (Chen et al., 2010). Dataset and refinement statistics are in Table 2.
+
+**Table 2.**
+ Crystallographic data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>F80Y</th>
+      <th>F80M</th>
+      <th>F83M</th>
+      <th>T114S</th>
+    </tr>
+    <tr>
+      <th>Data collection</th>
+      <th>PDB 6B24</th>
+      <th>PDB 6B2A</th>
+      <th>PDB 6B2B</th>
+      <th>PDB 6B2D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spacegroup</td>
+      <td>P41</td>
+      <td>P41</td>
+      <td>P41</td>
+      <td>P41</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>88.4, 88.4, 146.1</td>
+      <td>87.3, 87.3, 143.2</td>
+      <td>87.0, 87.0, 141.4</td>
+      <td>87.1, 87.1, 143.9</td>
+    </tr>
+    <tr>
+      <td>a, b, g (°)</td>
+      <td>90, 90, 90</td>
+      <td>90, 90, 90</td>
+      <td>90, 90, 90</td>
+      <td>90, 90, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>42.7–2.75 (2.90–2.75)</td>
+      <td>43.7–2.65 (2.78–2.65)</td>
+      <td>47.1–2.60 (2.72–2.60)</td>
+      <td>37.8–3.01 (3.19–3.01)</td>
+    </tr>
+    <tr>
+      <td>Rmeas</td>
+      <td>0.111 (1.40)</td>
+      <td>0.099 (1.52)</td>
+      <td>0.107 (1.98)</td>
+      <td>0.106 (1.57)</td>
+    </tr>
+    <tr>
+      <td>I/σ</td>
+      <td>11.2 (1.5)</td>
+      <td>14.4 (1.5)</td>
+      <td>15.0 (1.5)</td>
+      <td>14.1 (1.5)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.998 (0.714)</td>
+      <td>0.997 (0.667)</td>
+      <td>1.00 (0.662)</td>
+      <td>0.999 (0.707)</td>
+    </tr>
+    <tr>
+      <td>Completeness</td>
+      <td>95.9 (97.2)</td>
+      <td>100 (100)</td>
+      <td>99.9 (99.9)</td>
+      <td>99.8 (99.6)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>10.1 (9.5)</td>
+      <td>9.9 (8.7)</td>
+      <td>12.9 (13.2)</td>
+      <td>8.7 (8.9)</td>
+    </tr>
+    <tr>
+      <td colspan="5">Refinement Statistics</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>42.7–2.75</td>
+      <td>43.7–2.65</td>
+      <td>47.1–2.60</td>
+      <td>37.8–3.01</td>
+    </tr>
+    <tr>
+      <td>No. Reflections</td>
+      <td>26553</td>
+      <td>29629</td>
+      <td>30718</td>
+      <td>20151</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.225/0.251</td>
+      <td>0.225/0.243</td>
+      <td>0.221/0.250</td>
+      <td>0.238/0.254</td>
+    </tr>
+    <tr>
+      <td>Ramachandran Favored</td>
+      <td>0.97</td>
+      <td>0.97</td>
+      <td>0.97</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>Ramachandran Outliers, %</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>RMS deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond Lengths (Å)</td>
+      <td>0.0076</td>
+      <td>0.0072</td>
+      <td>0.0070</td>
+      <td>0.0065</td>
+    </tr>
+    <tr>
+      <td>Bond Angles (°)</td>
+      <td>1.10</td>
+      <td>1.12</td>
+      <td>1.13</td>
+      <td>1.03</td>
+    </tr>
+  </tbody>
+</table>

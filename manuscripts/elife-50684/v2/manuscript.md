@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Mechanical force is a determinant of Notch signalling but the mechanism of force detection and its coupling to Notch are unclear. We propose a role for Piezo1 channels, which are mechanically-activated non-selective cation channels. In cultured microvascular endothelial cells, Piezo1 channel activation by either shear stress or a chemical agonist Yoda1 activated a disintegrin and metalloproteinase domain-containing protein 10 (ADAM10), a Ca 2+ -regulated transmembrane sheddase that mediates S2 Notch1 cleavage. Consistent with this observation, we found Piezo1-dependent increase in the abundance of Notch1 intracellular domain (NICD) that depended on ADAM10 and the downstream S3 cleavage enzyme, γ-secretase. Conditional endothelial-specific disruption of Piezo1 in adult mice suppressed the expression of multiple Notch1 target genes in hepatic vasculature, suggesting constitutive functional importance in vivo. The data suggest that Piezo1 is a mechanism conferring force sensitivity on ADAM10 and Notch1 with downstream consequences for sustained activation of Notch1 target genes and potentially other processes.
+Mechanical force is a determinant of Notch signalling but the mechanism of force detection and its coupling to Notch are unclear. We propose a role for Piezo1 channels, which are mechanically-activated non-selective cation channels. In cultured microvascular endothelial cells, Piezo1 channel activation by either shear stress or a chemical agonist Yoda1 activated a disintegrin and metalloproteinase domain-containing protein 10 (ADAM10), a Ca2+-regulated transmembrane sheddase that mediates S2 Notch1 cleavage. Consistent with this observation, we found Piezo1-dependent increase in the abundance of Notch1 intracellular domain (NICD) that depended on ADAM10 and the downstream S3 cleavage enzyme, γ-secretase. Conditional endothelial-specific disruption of Piezo1 in adult mice suppressed the expression of multiple Notch1 target genes in hepatic vasculature, suggesting constitutive functional importance in vivo. The data suggest that Piezo1 is a mechanism conferring force sensitivity on ADAM10 and Notch1 with downstream consequences for sustained activation of Notch1 target genes and potentially other processes.
 
 ## Introduction
 
@@ -35,39 +35,93 @@ Piezo1 channels are Ca2+-permeable non-selective cationic channels, so when forc
 
 ## Results
 
-## Shear stress-induced S3 cleavage of Notch1 is Piezo1 dependent
+### Shear stress-induced S3 cleavage of Notch1 is Piezo1 dependent
 
 The canonical pathway for Notch1 activation involves cleavage at the S3 site, which generates NICD, a protein of about 110 kDa that can be detected by western blotting. The pathway was previously suggested to be activated by shear stress (Mack et al., 2017). We first tested if we could reproduce the shear stress activation, using cultured human microvascular endothelial cells (HMVEC-Cs) as a model of endothelium. Laminar shear stress of 10 dyn.cm−2 was applied to the cells for 1 hr and then abundance of NICD was measured. As expected, NICD was significantly increased (Figure 1a,b, Figure 1—figure supplement 1). We next validated a Piezo1-targeted siRNA for specific Piezo1 depletion (Figure 1—figure supplements 2 and 3). Strikingly, depletion of Piezo1 strongly reduced the amount of NICD in the shear stress condition, so much so that it became similar to that of the static control siRNA condition (Figure 1a,b). In some experiments there was unexpected reduction in NICD in the static (no shear stress) condition (Figure 1a) but accurate determination above non-specific background was technically challenging and the effect was not always evident. Although statistical analysis indicated no significant change in this basal NICD signal (Figure 1b), its existence in some individual experiments complicated our determination of whether shear stress induced an increase in NICD (Figure 1a,b). Nevertheless, in some individual experiments there was clearly no effect of shear stress on NICD after Piezo1 depletion (Figure 1a) and statistical analysis of all experiments confirmed no significant effect of shear stress (Figure 1b). The data suggest that Piezo1 is needed for normal elevation of NICD in shear stress and that it may be a factor regulating basal NICD.
 
-## Chemical activation of Piezo1 also increases NICD abundance
+![Figure 1.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig1-v2.jpg)
+
+**Figure 1.:** (a) Representative Western blot labelled with anti-NICD and anti-GAPDH (loading control) antibodies for HMVEC-Cs exposed to 10 dyn.cm−2 laminar shear stress (SS) for 1 hr. Static was without SS. Cells were transfected with control siRNA (siCtrl) or Piezo1 siRNA (siPiezo1). The expected mass of NICD is 110 kDa. Lower molecular bands were also apparent in some experiments and may have been degraded NICD. (b) Quantification of data of the type exemplified in (a), showing mean ± SD data for abundance of NICD normalized to siCtrl Static (n = 4). (c) Representative Western blot labelled with anti-NICD and anti-GAPDH antibodies for HMVEC-Cs treated for 30 min with 0.2 µM Yoda1 or vehicle (DMSO) after transfection with control siRNA (siCtrl) or Piezo1 siRNA (siPiezo1). (d) Quantification of data of the type exemplified in (c), showing mean ± SD for abundance of NICD normalized to siCtrl DMSO (n = 3). Statistical analysis: Two-way ANOVA test was used, indicating *p<0.05, **p<0.01 or not significantly different (NS).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Summarized mean ± SD (n = 3) quantitative PCR data for fold-change in Piezo1 mRNA in HMVEC-Cs treated for 2 hr min with 0.2 mM Yoda1 or vehicle (DMSO) after transfection with control siRNA (siCtrl) or Piezo1 siRNA (siPiezo1). (b) Representative Western blot labelled with anti-VEGRF2, anti-PECAM-1 (anti-CD31) and anti-GAPDH antibodies for HMVEC-Cs after transfection with control siRNA (siCtrl) or Piezo1 siRNA (siPiezo1). (c, d) Quantification of data of the type exemplified in (b), showing mean ± SD data for abundance of VEGFR2 (c) and PECAM-1 (d) normalized to siCtrl (n = 3). (e–f) Representative intracellular Ca2+ measurement traces (e) in HMVEC-Cs during application of 2 μM Yoda1 or its control DMSO, 48 hr after transfection with control siRNA (siCtrl) or Piezo1 siRNA (siPiezo1), shown as mean ± SD of the amplitude for n = 3 (f). Two-way ANOVA test was used for (a) and t-test for (c, d, f), indicating **p<0.01, ***p<0.001 or not significantly different (NS).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Representative Western blot labelled with anti-NICD and anti-GAPDH antibodies for HMVEC-Cs treated for 30 min with 0.2 µM Yoda1 or vehicle (DMSO) in the absence or presence of 10 µM DAPT. (b) Quantification of data of the type exemplified in (a), showing mean ± SD data for abundance of NICD normalized to vehicle (DMSO) control (n = 3). (c–d) Representative intracellular Ca2+ measurement traces (c) in HMVEC-Cs during prolonged application of 0.5 μM Yoda1 or its vehicle control (DMSO) simultaneously with 10 mM DAPT or its vehicle control (DMSO), shown as mean ± SD of the area under the curve for n = 3 (d). Two-way ANOVA test was used for (b) and t-test for (d), indicating *p<0.05, **p<0.01, ***p<0.001 or not significantly different (NS).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig1-figsupp5-v2.jpg)
+
+### Chemical activation of Piezo1 also increases NICD abundance
 
 The above data could be explained by an indirect role of Piezo1 or by Piezo1 as the starting point: that is the sensor of shear stress that triggers downstream changes. To test if Piezo1 can be the starting point, we circumvented shear stress and specifically activated Piezo1 chemically by using a synthetic small-molecule agonist (Yoda1). Yoda1 is described to enhance the force sensitivity of Piezo1 channels (Syeda et al., 2015; Lacroix et al., 2018; Wang et al., 2018; Evans et al., 2018). There is inherent force in cell membranes and we previously showed that Yoda1 activates Piezo1 in endothelial cells without the need for applied exogenous force (Evans et al., 2018). Therefore we applied Yoda1 at 0.2 μM, the concentration previously reported for half-maximal activation of native endothelial Piezo1 channels (Evans et al., 2018). Strikingly, in static conditions, Yoda1 alone could stimulate increased NICD (Figure 1c,d). Piezo1 siRNA suppressed the Yoda1 effect (Figure 1c,d). In these experiments, the effect of Piezo1 to reduce basal NICD was statistically significant (Figure 1d). The data support the hypothesis that Piezo1 is the sensor for shear stress that then triggers downstream Notch1 processing. The data also suggest a constitutive role of Piezo1 in maintaining a basal level of Notch1 cleavage.
 
-## γ-secretase is required
+### γ-secretase is required
 
 S3 cleavage is mediated by γ-secretase (Siebel and Lendahl, 2017). Therefore we tested the role of γ-secretase by treating cells with 10 μM DAPT (N-[N-(3,5-difluorophenacetyl)-l-alanyl]-S-phenylglycine t-butylester), a commonly used γ-secretase inhibitor (Mack et al., 2017; Imbimbo, 2008). DAPT had an effect on NICD that was similar to that of Piezo1 siRNA, reducing basal NICD and ablating the ability of Yoda1 to increase NICD (Figure 1—figure supplements 4 and 5). Although DAPT inhibited Yoda1-evoked Ca2+ entry by about 30%, such a potentially non-specific effect was unlikely to have been sufficient to explain its effect on NICD (Figure 1—figure supplements 4 and 5). The data suggest that Piezo1-mediated and constitutively-generated NICD require γ-secretase.
 
-## There is Piezo1-dependent and Piezo1-mediated activation of the S2 cleavage enzyme, ADAM10
+### There is Piezo1-dependent and Piezo1-mediated activation of the S2 cleavage enzyme, ADAM10
 
 In the canonical Notch1 pathway, S2 cleavage is required prior to S3 cleavage. A mediator of S2 cleavage is ADAM10 (Siebel and Lendahl, 2017; Alabi et al., 2018). Therefore we measured ADAM10 enzymatic activity (Figure 2a). Importantly, even after only 30 min shear stress, there was significant increase in ADAM10 activity and this effect was abolished by Piezo1 depletion (Figure 2a). Similarly, in static conditions, Yoda1 activated ADAM10, again consistent with Piezo1 being the starting point (Figure 2b). The effect was prevented by the widely used ADAM10 inhibitor GI254023X ((2R,3S)−3-(Formyl-hydroxyamino)−2-(3-phenyl-1-propyl) butanoic acid[(1S)−2,2-dimethyl-1-methylcarbamoyl-1-propyl] amide) which is thought to act via the catalytic site (Ludwig et al., 2005; Figure 2b). We also quantified the abundance of ADAM10’s cleaved form, a 62–64 kDa protein that is generated by proprotein convertase to enable enzymatic activity (Anders et al., 2001). The majority of ADAM10 was in the uncleaved form, a protein of 95 kDa that is inactive (Figure 2c, Figure 2—figure supplements 1 and 2). Yoda1 significantly increased the abundance of the cleaved form (Figure 2c,d, Figure 2—figure supplement 1). The data suggest that shear stress causes Piezo1-dependent activation of ADAM10 and that Piezo1 activation alone is sufficient to activate ADAM10.
 
-## ADAM10 activation is required for the NICD effect
+![Figure 2.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig2-v2.jpg)
+
+**Figure 2.:** (a) ADAM10 enzyme activity assessed by specific peptide degradation and subsequent fluorescence emission after 30 min exposure of HMVEC-Cs to 10 dyn.cm−2 laminar shear stress (SS). Static was without SS. Cells were transfected with control siRNA (siCtrl) or Piezo1 siRNA (siPiezo1). Data are shown as mean ± SD data (n = 3) relative to static condition. (b) ADAM10 enzyme activity assessed after 30 min treatment of HMVEC-Cs with 0.2 µM Yoda1 in the absence or presence of 5 µM GI254023X (GI). Data are shown as mean ± SD data (n = 4) relative to DMSO condition. (c, d) Quantification of uncleaved (95 kDa) and cleaved (62–64 kDa) ADAM10 in HMVEC-Cs after treatment for 30 min with Yoda1 (0.2 µM). The 85 kDa band between the uncleaved and cleaved ADAM10 was non-specific labelling not related to ADAM10 (Figure 2—figure supplement 2). Data represent mean ± SD (n = 3) and normalization was to the reference protein, GAPDH. (e) Example Western blot labelled with anti-NICD and anti-GAPDH antibodies for HMVEC-Cs treated for 30 min with 0.2 µM Yoda1 or vehicle (DMSO) in the absence or presence of 5 µM GI254023X (GI). (f) Quantification of data of the type exemplified in (e), showing mean ± SD data for abundance of NICD normalized to DMSO (n = 3). (g) Representative Western blot labelled with anti-NICD and anti-GAPDH antibodies for HMVEC-Cs treated for 30 min with 0.2 µM Yoda1 or vehicle (DMSO) after transfection with control siRNA (siCtrl) or ADAM10 siRNA (siADAM10). (h) Quantification of data of the type exemplified in (g), showing mean ± SD data for abundance of NICD normalized to siCtrl DMSO (n = 3). Statistical analysis: Two-way ANOVA test was used for (a, b, f, h), indicating *p<0.05, **p<0.01, ***p<0.001; t-Test was used for (d), indicating **p<0.01; NS, not significantly different.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Summarized mean ± SD (n = 3) quantitative PCR data for fold-change in ADAM10 mRNA in HMVEC-Cs treated for 2 hr with 0.2 µM Yoda1 or vehicle (DMSO) after transfection with control siRNA (siCtrl) or ADAM10 siRNA (siADAM10). (b) Representative Western blot labelled with anti-ADAM10 antibody for HMVEC-Cs treated for 30 min with 0.2 µM Yoda1 after transfection with control siRNA (siCtrl) or ADAM10 siRNA (siADAM10). (c, d) Quantification of data of the type exemplified in (b), showing mean ± SD data for abundance of uncleaved ADAM10 (95 kDa) (c) and non-specific labelling of an unknown protein (85 kDa) (d) normalized to siCtrl (n = 3). (e–f) Representative intracellular Ca2+ measurement traces (e) in HMVEC-Cs during application of 2 μM Yoda1 or its vehicle control (DMSO), 48 hr after transfection with control siRNA (siCtrl) or ADAM10 siRNA (siADAM10), shown as mean ± SD of the amplitude for n = 3 (f). (g–h) Representative intracellular Ca2+ measurement traces (g) in HMVEC-Cs during prolonged application of 0.5 μM Yoda1 or its vehicle control (DMSO) simultaneously with 5 µM GI254023X (GI) or its vehicle control (DMSO), shown as mean ± SD of the area under the curve for n = 3 (h). (i) Representative Western blot labelled with anti-NICD and anti-GAPDH antibodies for HMVEC-Cs treated for 30 min with 0.2 µM Yoda1 or vehicle (DMSO) in the absence or presence of 0.5 µM GI254023X (GI) (j) Quantification of data of the type exemplified in (i), showing mean ± SD data for abundance of NICD normalized to siCtrl DMSO (n = 3). (k) ADAM10 enzyme activity assessed by specific peptide degradation and subsequent fluorescence emission after 30 min treatment of HMVEC-Cs with 0.2 µM Yoda1 in the absence or presence of 30 µM Gd3+. Data are shown as mean ± SD data (n = 3) relative to vehicle condition. Statistical analysis: Two-way ANOVA test was used for (a, c, d, j, k), indicating *p<0.05, **p<0.01 and ***p<0.001. T-test was used for (f, h), indicating ***p<0.001. NS indicates no significant difference.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig2-figsupp3-v2.jpg)
+
+### ADAM10 activation is required for the NICD effect
 
 To investigate if ADAM10 activity is required for Piezo1 coupling to Notch1, we first tested the effect of the ADAM10 inhibitor, GI254023X. This agent strongly inhibited the ability of Yoda1 to increase NICD and suppressed basal NICD (Figure 2e,f). In these experiments we used 5 μM GI254023X. A 10-fold lower concentration of GI254023X (500 nM) also inhibited the Yoda1 effect on NICD (Figure 2—figure supplement 2), consistent with its nanomolar potency against ADAM10 (Ludwig et al., 2005). GI254023X (5 μM) had no effect on Yoda1-evoked Ca2+ entry, suggesting that it did not act non-specifically (Figure 2—figure supplements 2 and 3). To independently test the role of ADAM10 we developed specific ADAM10 depletion by ADAM10-targeted siRNA (Figure 2—figure supplement 2). The effect of this ADAM10 depletion was similar to that of GI254023X (Figure 2g,h cf Figure 2e,f; Figure 2—figure supplement 1), supporting the hypothesis that ADAM10 is between Piezo1 and Notch1. The data suggest that Piezo1-mediated stimulation of ADAM10 enzyme activity is necessary for basal and stimulated effects on Notch1 cleavage.
 
-## An ion pore blocker of Piezo1 inhibits ADAM10 activation
+### An ion pore blocker of Piezo1 inhibits ADAM10 activation
 
 Activation of ADAM10 has been suggested to be mediated by Ca2+ (Nagano et al., 2004; Maretzky et al., 2015). Therefore, the ability of Piezo1 to activate ADAM10 could be due to the ion channel property of Piezo1, which allows influx of cations such as Ca2+ and Na+ in response to mechanical activation (Coste et al., 2010; Wu et al., 2017). To test this mechanism experimentally, we used Gd3+ (30 μM), which is a blocker of the Piezo1 channel pore (Coste et al., 2010). Importantly, Gd3+ inhibited the ability of Yoda1 to activate ADAM10, consistent with the hypothesis that ion permeation through Piezo1 channels is critical for ADAM10 activation (Figure 2—figure supplement 2). Gd3+ is not specific to Piezo1 channels but better agents are not currently known. The data suggest that the ion channel property of Piezo1 is critical in ADAM10 activation.
 
-## Piezo1 activation regulates Notch1 target genes
+### Piezo1 activation regulates Notch1 target genes
 
 An implication of Piezo1 causing S2 and S3 cleavage of Notch1 is that the expression of Notch1 target genes should also be activated. Therefore we quantified Notch1-regulated gene expression, focussing initially on the HES1 gene which is Notch1- and flow- regulated (Mack et al., 2017), DLL4 which is itself Notch1 regulated (Caolo et al., 2010) and HEY1, another Notch1 target gene (Caolo et al., 2011). Yoda1 caused striking increases in the expression of HES1, DLL4 and HEY1 genes (Figure 3). These effects of Yoda1 were suppressed by Piezo1 siRNA (Figure 3a,b,c), DAPT (Figure 3d,e,f), ADAM10 siRNA (Figure 3g,h,i) and GI254023X (Figure 3j,k,l). Expression of another Notch1 target gene, HEY2 (Lobe, 1997), also appeared to be stimulated by Yoda1 but statistical significance was not achieved due to high variability in the response (Figure 3—figure supplement 1). Two other previously suggested Notch1 target genes (HEY2 Fischer et al., 2004 and JAG1 Foldi et al., 2010) were not significantly affected, suggesting selective effects on certain Notch1 target genes (Figure 3—figure supplement 1). Expression of two other potential targets, HES3 and HEYL, was not reliably detected and so effects of Yoda1 could not be determined. The data suggest that Piezo1 signalling via ADAM10 and γ-secretase to Notch1 and NICD is functionally important for downstream gene regulation.
 
-## Piezo1-dependent regulation of Notch1 target genes by shear stress
+![Figure 3.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig3-v2.jpg)
+
+**Figure 3.:** (a, b, c) Summarized mean ± SD (n = 3) quantitative PCR data for fold-change in HES1 (a), DLL4 (b) and HEY1 (c) mRNA in HMVEC-Cs treated for 2 hr with 0.2 µM Yoda1 or vehicle (DMSO) after transfection with control siRNA (siCtrl) or Piezo1 siRNA (siPiezo1). (d, e, f) Summarized mean ± SD (n = 3) quantitative PCR data for fold-change in HES1 (d), DLL4 (e) and HEY1 (f) mRNA in HMVEC-Cs treated for 2 hr with 0.2 µM Yoda1 in the absence or presence of 10 µM DAPT. (g, h, i) Summarized mean ± SD (n = 3) quantitative PCR data for fold-change in HES1 (g), DLL4 (h) and HEY1 (i) mRNA in HMVEC-Cs treated for 2 hr with 0.2 µM Yoda1 or vehicle (DMSO) after transfection with control siRNA (siCtrl) or ADAM10 siRNA (siADAM10). (j, k, l) Summarized mean ± SD (n = 3) quantitative PCR data for fold-change in HES1 (j), DLL4 (k) and HEY1 (l) mRNA in HMVEC-Cs treated for 2 hr with 0.2 µM Yoda1 in the absence or presence of 5 µM GI254023X (GI). Normalization and statistical analysis: mRNA expression was normalized to GAPDH mRNA abundance. Two-way ANOVA test was used, indicating *p<0.05, **p<0.01, ***p<0.001 or not significantly different (NS).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Additional gene quantification for HMVEC-Cs treated for 2 hr with 0.2 μM Yoda1 or vehicle (DMSO) (a) HEY2. (b) HES2. (c) JAG1. Statistical analysis: t-test was used.
+
+### Piezo1-dependent regulation of Notch1 target genes by shear stress
 
 The above data show that Piezo1 can activate Notch1 target genes but do not show that it is relevant to shear stress regulation of these genes. Therefore, we also investigated the effect of shear stress on HES1, DLL4 and HEY1 expression. As expected, shear stress upregulated the expression of all three genes (Figure 4a–c). Importantly, all of these effects were Piezo1-dependent (Figure 4a–c). There was a trend towards similar regulation of HES2 but expression of HEY2 and JAG1 was unaffected (Figure 4—figure supplement 1). The data suggest that shear stress coupling to Notch1 target genes is mediated by Piezo1.
 
-## Endothelial Piezo1 is required for Notch1 target gene expression in mice
+![Figure 4.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig4-v2.jpg)
+
+**Figure 4.:** (a, b, c) Summarized mean ± SD (n = 3) quantitative PCR data for fold-change in HES1 (a), DLL4 (b) and HEY1 (c) mRNA in HMVEC-Cs exposed to 10 dyn.cm−2 laminar shear stress (SS) for 2 hr after transfection with control siRNA (siCtrl) or Piezo1 siRNA (siPiezo1). Hes1 (d), Dll4 (e), Hey1 (f) and Efnb2 (g) mRNA expression in liver endothelial cells freshly-isolated from control mice (Control, n = 6) and endothelial Piezo1 knockout mice (Piezo1ΔEC) (n = 9). HeyL (h) (Control mice, n = 7; Piezo1ΔEC mice, n = 7) and Jag1 (i) (Control mice, n = 8; Piezo1ΔEC mice, n = 9) mRNA expression in liver endothelial cells. Normalization and Statistical analysis: mRNA expression was normalized to abundance of Actb mRNA, which was not different between Control and Piezo1ΔEC (Figure 4—figure supplement 2). Hes2 (j) and Hes3 (k) mRNA expression in liver endothelial cells freshly-isolated from control mice (Control, n = 8) and Piezo1ΔEC mice (n = 10), represented as the number of mice with detectable expression or no detectable expression of the gene. Statistical analysis: Two-way ANOVA test was used for (a, b, c), indicating *p<0.05, **p<0.01, ***p<0.001. t-Test was used for (d, e, f, g, h, i) indicating significant difference of Piezo1ΔEC cf Control *p<0.05, **p<0.01, ***p<0.01. Fisher’s exact test was used for (j, k) indicating significant difference of Piezo1ΔEC cf Control *p<0.05. NS indicates not significantly different.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Additional gene quantification for HMVEC-Cs exposed to 10 dyn.cm-2 laminar shear stress (SS) for 2 hr after transfection with control siRNA (siCtrl) or Piezo1 siRNA (siPiezo1). Static was without SS. (a) HES2. (b) HEY2. (c) JAG1. (d) PIEZO1. Data are expressed as mean ± SD (n = 3), and are normalized to GAPDH gene expression and expressed as fold change of control condition, Statistical analysis: Two-way ANOVA test was used indicating **p<0.01 and ***p<0.001 or not significantly different (NS).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Additional gene quantification for liver endothelial cells from Piezo1ΔEC and Control mice. (a) Piezo1. (b) Tek. (c) Actb (raw CT values). (a, b) Normalized to abundance of Actb (reference) expression. Statistical analysis: t-test was used for comparisons, indicating ***p<0.001 or not significantly different (NS).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/50684/elife-50684-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Gene quantification for whole liver from Piezo1ΔEC (n = 10) and Control mice (n = 12). (a) Hes1. (b) Dll4. (c) Hey1 (in 7 Control and 7 Piezo1ΔEC experiments Hey1 expression was not convincingly detected, so these data were excluded). (d) Efnb2. (e) HeyL. (f) Jag1. Normalized to abundance of the reference Actb expression. Statistical analysis: t-test was used for comparisons. There were no significant differences between any pairs (NS).
+
+### Endothelial Piezo1 is required for Notch1 target gene expression in mice
 
 The above findings suggest that endothelial Piezo1 might be important for Notch1 target gene expression in vivo. Therefore, we conditionally disrupted Piezo1 specifically in endothelium of adult mice (Piezo1ΔEC mice), as previously described (Rode et al., 2017). Two weeks after disruption in vivo, endothelial cells were isolated and gene expression was measured acutely to reflect the normal Notch1 target gene expression in the endothelial cells of the mice. We elected to study hepatic microvascular endothelial cells because these cells were previously demonstrated to contain functional Piezo1 channels (Rode et al., 2017) and Notch1 has known relevance in liver endothelial sinusoids (Alabi et al., 2018; Cuervo et al., 2016). Importantly, expression of Hes1, Dll4 and Hey1 genes were all found to be downregulated in the Piezo1ΔEC condition (Figure 4d–f). Moreover, in contrast to some of our findings in HMVEC-Cs, there was similar downregulation of 5 other Notch1 target genes, including Efnb2, which is another Notch1- and flow-regulated gene (Mack et al., 2017; Jahnsen et al., 2015; Figure 4g–k). Piezo1 gene expression was confirmed as depleted in these endothelial cells from Piezo1ΔEC mice, as expected, whereas expressions of the reference gene, Actb, and endothelial marker gene, Tek, were unaffected, suggesting specificity (Figure 4—figure supplement 2). We were unable to detect Hey2 expression in these endothelial cells. In contrast to the findings in isolated endothelial cells, whole liver showed no significant changes in expression of Hes1, Dll4, Hey1, Efnb2, HeyL or Jag1 in Piezo1ΔEC mice, consistent with the effects being restricted to the endothelial cell population (Figure 4—figure supplement 3). Expression of Hes2 and Hes3 could not be detected in whole liver samples. The data suggest that endothelial Piezo1 is normally required for physiological Notch1 target gene expression in vivo.
 
@@ -99,46 +153,140 @@ In conclusion, we connect the Piezo1 mechanosensing ion channel with the extensi
 
 ## Materials and methods
 
-## Piezo1 mutant mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL6/J, male)</td>
+      <td>Piezo1flox/flox/Cdh5-Cre</td>
+      <td>University of Leeds (Rode et al., 2017)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cultured cells (Homo sapiens)</td>
+      <td>HMVEC-Cs</td>
+      <td>Lonza</td>
+      <td>Cat# CC-7030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-cleaved Notch1 val1744 (D3B8) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4147, RRID:AB_2153348</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ADAM10 (Rabbit polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Cat# AB19026, RRID:AB_2242320</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ON-TARGET plus Control siRNA</td>
+      <td>Dharmacon</td>
+      <td>Cat# L-001810</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ON-TARGET plus SMARTpool Human siRNA ADAM10</td>
+      <td>Dharmacon</td>
+      <td>Cat# L-004503</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Piezo1 siRNA</td>
+      <td>Sigma-Aldrich</td>
+      <td>N/A</td>
+      <td>GCAAGUUCGUGCGCGGAUU[DT][DT]</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SensoLyte 520 ADAM10 Activity Assay Kit</td>
+      <td>AnaSpec Inc</td>
+      <td>Cat# AS-72226</td>
+      <td>Use kit directions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GI 254023X</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 3995</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPT</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D5942</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Yoda1</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 5586–10</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Piezo1 mutant mice
 
 All animal use was authorized by the University of Leeds Animal Ethics Committee and Home Office UK (Project Licence P606320FB to David J Beech). Genotypes were determined using real-time PCR with specific probes designed for each gene (Transnetyx, Cordova, TN). C57BL/6 J mice with Piezo1 gene flanked with LoxP sites (Piezo1flox) were described previously (Li et al., 2014). To generate tamoxifen (TAM) inducible disruption of Piezo1 gene in the endothelium (Piezo1ΔEC), Piezo1flox mice were crossed with mice expressing cre recombinase under the Cadherin5 promoter (Tg(Cdh5-cre/ERT2)1Rha) and inbred to obtain Piezo1flox/flox/Cdh5-cre mice. TAM (T5648, Sigma-Aldrich, Saint-Louis, MO) was dissolved in corn oil (C8267 Sigma-Aldrich) at 20 mg.ml−1. 10–12 week-old male mice were injected intra-peritoneal with 75 mg.kg−1 TAM for five consecutive days and studied 10–14 days later. Control mice were the same except they lacked cre, so they could not disrupt Piezo1 even though they were also injected with TAM.
 
-## Acute isolation of liver endothelial cells
+### Acute isolation of liver endothelial cells
 
 Liver of 12–14 week-old male mice was used. Tissue was mechanically separated using forceps, further cut in smaller pieces and incubated at 37°C for 50 min, in a MACSMix Tube Rotator to provide continuous agitation, along with 0.1% Collagenase II (17101–015, Gibco, Waltham, MA) and Dispase Solution (17105–041, Gibco). Following enzymatic digestion samples were passed through 100 μm and 40 μm cell strainers to remove any undigested tissue. The suspension was incubated for 15 min with dead cell removal paramagnetic beads (130-090-101, Miltenyi Biotec GmbH, Bergisch Gladbach, Germany) and then passed through LS column (130-042-401, Miltenyi Biotec). The cell suspension was incubated with CD146 magnetic beads (130-092-007, Miltenyi Biotec 130-092-007) at 4°C for 15 min under continuous agitation and passed through MS column (130-042-201, Miltenyi Biotec). The CD146 positive cells, retained in the MS column, were plunge out with PEB and centrifuged at 1000 RPM for 5 min. Cell pellet was resuspended in RLT buffer (74004, Qiagen, Hilden, Germany) to proceed with RNA isolation.
 
-## Cell culture
+### Cell culture
 
 HMVEC-Cs were cultured in endothelial medium 2 MV (EGM-2MV, CC-3202, Lonza, Basel, Switzerland) according to the manufacturer’s protocol. Sixteen hours before performing experiments, cells were cultured with starvation medium consisting of EGM-2MV but only 0.5% fetal bovine serum and without vascular endothelial growth factor A165 (VEGF A165) and basic fibroblast growth factor.
 
-## siRNA transfection
+### siRNA transfection
 
 HMVEC-Cs were transfected with siRNA using Opti-MEM I Reduced Serum Medium (31985070, ThermoFisher Scientific, Waltham, MA) and Lipofectamine 2000 (11668019, ThermoFisher Scientific). For transfection of cells in 6-well plates, a total of 50 nmol siRNA in 0.1 mL was added to 0.8 mL cell culture medium per well. Medium was changed after 4 hr. After 48 hours cells were exposed to Yoda1 or SS and subjected to RNA or protein isolation. For Ca2+ measurement, cells were plated into a 96-well plate at a density of 25000 cells per well 24 hr after transfection, and Ca2+ entry was recorded 24 hr later.
 
-## RNA isolation and RT-qPCR
+### RNA isolation and RT-qPCR
 
 For isolated liver endothelial cells, RNA was isolated by using RNeasy micro-kit (74004, Qiagen). A total of 100 ng RNA per sample was subjected to Reverse Transcriptase (RT) by using iScript cDNA Synthesis kit (1708890, BioRad, Hercules, CA). For whole liver, RNA was isolated using phenol/chloroform extraction from snap frozen samples. A microgramme of RNA was used for RT (Superscript III Reverse Transcriptase, 18080044, Invitrogen, Carlsbad, CA). qPCR was performed using SyBR Green (1725122, Biorad). The sequences of PCR primers are shown in Supplementary file 1. Primers were synthetized by Sigma. qPCR reactions were performed on a LightCycler 480 Real Time PCR System (Roche, Basel, Switzerland). Samples were analysed using the comparative CT method, where fold-change was calculated from the ΔΔCt values with the formula 2-ΔΔCt.
 
-## ADAM10 enzyme activity
+### ADAM10 enzyme activity
 
 Activity was determined using the SensoLyte520 ADAM10 Activity Assay Kit (AS-72226, AnaSpec Inc, Fremont, CA), which is based on the FRET substrate 5‐FAM/QXL520 with excitation/emission of 490/520 nm. HMVEC-Cs were treated with or without Yoda1 for 30 min in the presence or absence of ADAM10 inhibitor. Cells were then washed with PBS and collected with Trypsin-EDTA. The pellet was resuspended in assay buffer, incubated on ice for 10 min and centrifuged at 10 000 g for 10 min at 4°C. The supernatants were plated on a 96‐well plate. The substrate solution was diluted in Assay Buffer, brought to 37°C was then mixed 1:1 with the sample. The fluorescence was measured every 2.5 min for 60 min at 37°C at excitation/emission of 490/520 nm Flexstation three microplate reader with SoftMax Pro 5.4.5 software (Molecular Devices, San Josa, CA).
 
-## Shear stress
+### Shear stress
 
 Endothelial cells were seeded on glass slides (MENSJ5800AMNZ, VWR, Radnor, PA) coated with Fibronectin (F0895, Sigma-Aldrich). Sixteen hours before performing experiments, cells were cultured with starvation medium consisting of EGM-2MV but only 0.5% fetal bovine serum and without vascular endothelial growth factor A165 (VEGF A165) and basic fibroblast growth factor. The slides were placed in a parallel flow chamber and flow of starvation medium was driven using a peristaltic pump.
 
-## Measurement of intracellular Ca2+ concentration ([Ca2+]i)
+### Measurement of intracellular Ca2+ concentration ([Ca2+]i)
 
 Cells plated in 96-well plates were incubated for 1 hr in Standard Bath Solution (SBS, containing in mM: 130 NaCl, 5 KCl, 8 D-glucose, 10 HEPES, 1.2 MgCl2, 1.5 CaCl2, pH 7.4) supplemented with 2 μM fura-2-AM (F1201, Molecular Probes, Eugene, OR) and 0.01% pluronic acid. Cells were then washed in SBS at room temperature for 30 min, allowing deesterification to release free fura-2. Fluorescence (F) acquisition (excitation 340 and 380 nm; emission 510 nm) was performed on a Flexstation three microplate reader with SoftMax Pro 5.4.5 software (Molecular Devices). After 60 s of recording, Yoda1 was injected. Ca2+ entry was quantified after normalization (ΔF340/380 = F340/380(t)-F340/380(t = 0)).
 
-## Immunoblotting
+### Immunoblotting
 
 Proteins were isolated in RIPA buffer supplemented with PMSF, protease inhibitor mixture, and sodium orthovanadate (RIPA Lysis Buffer System, sc24948, Santa Cruz, Dallas, TX). Samples were heated at 95°C for 5 min in SDS-PAGE sample buffer, loaded on a precast 4–20% polyacrylamide gradient gel (4561094, Biorad) and subjected to electrophoresis. Proteins were transferred onto a nitrocellulose membrane (Trans-Blot Turbo RTA Mini Nitrocellulose Transfer Kit, 1704270, BioRad) for 30 min using Trans-Blot Turbo Transfer System (BioRad). Membranes were blocked with 5% milk in Tris-buffered saline with Tween 0.05% for 1 hr at room temperature. The membranes were exposed to primary antibody overnight at 4°C, rinsed and incubated with appropriate horseradish peroxidase-labelled secondary antibody for 1 hr at room temperature. The detection was performed by using SuperSignal West Femto (34096, ThermoFisher Scientific) and visualized with a G-Box Chemi-XT4 (SynGene, Cambridge, UK). GAPDH was used as reference protein.
 
-## Reagents
+### Reagents
 
 Human cardiac microvascular endothelial cells (HMVEC-C, CC-7030, Lonza), DAPT (D5942, Sigma-Aldrich), GI254023X (3995, Tocris Bioscience, Bristol, UK), Yoda1 (5586/10, Tocris Bioscience), ON-TARGET plus Control siRNA (Dharmacon, Lafayette, CO), siRNA Piezo1 (Sigma-Aldrich: 5’- GCAAGUUCGUGCGCGGAUU[dT][dT]- 3’), ON-TARGET plus SMARTpool human siRNA ADAM10 (Dharmacon), cleaved Notch1 Val1744 D3B8 rabbit monoclonal (4147, Cell Signaling Technology, Danvers, MA), rabbit anti-ADAM10 (AB19026, Merck KGaA, Darmstadt, Germany), goat anti human VEGFR2 (AF357, R and D system, Minneapolis, MN), mouse anti-human PECAM-1 (CD31) (M0823, Agilent Dako, Santa Clara, CA), GAPDH mouse anti-human (10R-G109b, Fitzgerald Industries International, Acton, MA) and anti-mouse, anti-rabbit and anti-goat HRP conjugated secondary antibodies (Jackson ImmunoResearch, Ely, UK).
 
-## Statistical analysis
+### Statistical analysis
 
 All averaged data are presented as mean ± standard deviation (SD). Statistical significance was determined using two-tailed t-test when only two groups were compared or by 2-way ANOVA followed by Tukey posthoc test when multiple groups were treated with vehicle control (DMSO) or Yoda1 were studied. When distribution of data were compared, two-tailed Fisher’s exact test was used. The genotypes of mice were blinded to the experimental investigator and studied at random according to Mendelian ratio. In all cases, statistical significance was assumed for probability (P) < 0.05. NS indicates when no significant difference was detected. Statistical tests were performed using OriginPro 8.6 software or GraphPad Prism 6.0. The letter n indicates the number of independent biological experiments and its value in each case is stated in figure legends. The number of replicates per independent experiment was one for western blotting, two for qPCR, four for Ca2+ assays and one for the ADAM10 activity assay.

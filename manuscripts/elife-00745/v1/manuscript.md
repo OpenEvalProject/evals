@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.00745.001 Nucleocytoplasmic transport is mediated by nuclear pore complexes (NPCs) embedded in the nuclear envelope. About 30 different proteins (nucleoporins, nups) arrange around a central eightfold rotational axis to build the modular NPC. Nup188 and Nup192 are related and evolutionary conserved, large nucleoporins that are part of the NPC scaffold. Here we determine the structure of Nup188. The protein folds into an extended stack of helices where an N-terminal 130 kDa segment forms an intricate closed ring, while the C-terminal region is a more regular, superhelical structure. Overall, the structure has distant similarity with flexible S-shaped nuclear transport receptors (NTRs). Intriguingly, like NTRs, both Nup188 and Nup192 specifically bind FG-repeats and are able to translocate through NPCs by facilitated diffusion. This blurs the existing dogma of a clear distinction between stationary nups and soluble NTRs and suggests an evolutionary relationship between the NPC and the soluble nuclear transport machinery. DOI: http://dx.doi.org/10.7554/eLife.00745.001
+Nucleocytoplasmic transport is mediated by nuclear pore complexes (NPCs) embedded in the nuclear envelope. About 30 different proteins (nucleoporins, nups) arrange around a central eightfold rotational axis to build the modular NPC. Nup188 and Nup192 are related and evolutionary conserved, large nucleoporins that are part of the NPC scaffold. Here we determine the structure of Nup188. The protein folds into an extended stack of helices where an N-terminal 130 kDa segment forms an intricate closed ring, while the C-terminal region is a more regular, superhelical structure. Overall, the structure has distant similarity with flexible S-shaped nuclear transport receptors (NTRs). Intriguingly, like NTRs, both Nup188 and Nup192 specifically bind FG-repeats and are able to translocate through NPCs by facilitated diffusion. This blurs the existing dogma of a clear distinction between stationary nups and soluble NTRs and suggests an evolutionary relationship between the NPC and the soluble nuclear transport machinery.
 
 ## Introduction
 
@@ -36,17 +36,231 @@ Nup188 and Nup192 are the last two large nucleoporins whose atomic structures ar
 
 ## Results
 
-## The structure of Nup188
+### The structure of Nup188
 
-To determine the structure of Nup188 we first expressed full-length protein from
+To determine the structure of Nup188 we first expressed full-length protein from Saccharomyces cerevisiae (Sc) and the thermophilic fungus Myceliophthora thermophila (Mt) (Berka et al., 2011). Although the Mt homolog behaved better in vitro, it did not yield crystals of the full-length protein. Using a series of truncation constructs, generated through a combination of limited proteolysis, phylogenetic analysis and structure prediction, we were able to obtain crystals of two major parts of MtNup188. The N-terminal fragment (Nup188N) includes residues 1–1160 and its structure was solved to 2.65 Å resolution (Figure 1 and Table 1). The C-terminal fragment (Nup188C) includes residues 1445–1827, and we solved its structure to 3.0 Å resolution (Figure 2 and Table 1). Each structure was solved using single-anomalous dispersion (SAD) experimental phases derived from crystals grown from selenomethionine-labeled protein. Nup188N crystallized in space group C21 with one copy per asymmetric unit. With a Wilson B-factor of 45 Å2 the structure is generally well defined. Nup188C crystallized in space group P212121 with two copies per asymmetric unit. Compared to Nup188N, it is not quite as well defined (Wilson B-factor is 75 Å2), likely because those crystals have a higher solvent content and are more loosely packed.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/00745/elife-00745-fig1-v1.jpg)
 
-**Figure 1.:** (A) Schematic diagram of full-length Myceliophthora thermophila Nup188N with details about the subdomain arrangement. The crystallized fragment is boxed and gradient-colored in red with helical HEAT- and ARM-repeats indicated. (B) The crystal structure of Nup188N is shown in cartoon representation. The helices are gradient-colored as in (A). The inner helical ring is in pale-yellow to highlight the superhelical organization of the protein. The SH3-like domain insert is shown in green. (C) Close-up of the ring-closing latch. The clamping helices α11 and α12 (red) contact a substantial surface area formed by helices 44, 46, and 47. (D) The SH3-like domain of Nup188 compared to the canonical, peptide-bound SH3 domain of Sem-5 from C. elegans (PDB 1SEM). Conserved residues important for peptide interaction are labeled. Note that these residues are not conserved in the SH3-like domain of Nup188. In addition, the SH3-like domain is a circular permutation of the canonical SH3-domain.DOI: http://dx.doi.org/10.7554/eLife.00745.003
+**Figure 1.:** (A) Schematic diagram of full-length Myceliophthora thermophila Nup188N with details about the subdomain arrangement. The crystallized fragment is boxed and gradient-colored in red with helical HEAT- and ARM-repeats indicated. (B) The crystal structure of Nup188N is shown in cartoon representation. The helices are gradient-colored as in (A). The inner helical ring is in pale-yellow to highlight the superhelical organization of the protein. The SH3-like domain insert is shown in green. (C) Close-up of the ring-closing latch. The clamping helices α11 and α12 (red) contact a substantial surface area formed by helices 44, 46, and 47. (D) The SH3-like domain of Nup188 compared to the canonical, peptide-bound SH3 domain of Sem-5 from C. elegans (PDB 1SEM). Conserved residues important for peptide interaction are labeled. Note that these residues are not conserved in the SH3-like domain of Nup188. In addition, the SH3-like domain is a circular permutation of the canonical SH3-domain.
+
+**Table 1.**
+ X-Ray data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>MtNup188N (1–1160)</th>
+      <th>MtNup188N (1–1160)</th>
+      <th>MtNup188C (1445–1827)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDB code</td>
+      <td>4KF7</td>
+      <td></td>
+      <td>4KF8</td>
+    </tr>
+    <tr>
+      <td colspan="4">Data collection</td>
+    </tr>
+    <tr>
+      <td>Data set</td>
+      <td>Native</td>
+      <td>Selenomethionine</td>
+      <td>Selenomethionine</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C2</td>
+      <td>C2</td>
+      <td>P212121</td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>169.0, 94.8, 91.6</td>
+      <td>168.3, 94.6, 91.4</td>
+      <td>64.4, 66.7, 162.5</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 98.9, 90</td>
+      <td>90, 98.4, 90</td>
+      <td>90, 90, 90</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9792</td>
+      <td>0.9792</td>
+      <td>0.9792</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>66.8–2.65 (2.72–2.65)</td>
+      <td>90.4–2.90 (3.02–2.90)</td>
+      <td>81.1–3.00 (3.11–3.00)</td>
+    </tr>
+    <tr>
+      <td>Total reflections</td>
+      <td>170,859</td>
+      <td>209,695</td>
+      <td>50,886</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>41,673</td>
+      <td>58,249</td>
+      <td>14,539</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>100 (99.9)</td>
+      <td>99.9 (98.8)</td>
+      <td>99.9 (99.7)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>4.1 (3.8)</td>
+      <td>3.6 (3.1)</td>
+      <td>3.5 (3.1)</td>
+    </tr>
+    <tr>
+      <td>Rmerge(%)</td>
+      <td>3.1 (77.2)</td>
+      <td>3.0 (32.8)</td>
+      <td>2.7 (56.1)</td>
+    </tr>
+    <tr>
+      <td>Rp.i.m.(%)</td>
+      <td>2.0 (51.0)</td>
+      <td>4.1 (26.3)</td>
+      <td>1.6 (27.0)</td>
+    </tr>
+    <tr>
+      <td>I /σ(I)</td>
+      <td>31.3 (1.8)</td>
+      <td>9.6 (1.2)</td>
+      <td>21.4 (4.8)</td>
+    </tr>
+    <tr>
+      <td>Wilson B factor (Å2)</td>
+      <td>51.6</td>
+      <td>50.0</td>
+      <td>75.0</td>
+    </tr>
+    <tr>
+      <td colspan="4">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>66.8–2.65</td>
+      <td></td>
+      <td>81.1–3.00</td>
+    </tr>
+    <tr>
+      <td>Rwork (%)</td>
+      <td>18.1</td>
+      <td></td>
+      <td>27.5</td>
+    </tr>
+    <tr>
+      <td>Rfree (%)</td>
+      <td>22.5</td>
+      <td></td>
+      <td>29.4</td>
+    </tr>
+    <tr>
+      <td colspan="4">Number of reflections</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>41,661</td>
+      <td></td>
+      <td>14,536</td>
+    </tr>
+    <tr>
+      <td>Rfree reflections</td>
+      <td>1919</td>
+      <td></td>
+      <td>1139</td>
+    </tr>
+    <tr>
+      <td colspan="4">Number of atoms</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>8516</td>
+      <td></td>
+      <td>4366</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>128</td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="4">B factors (Å2)</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>64.4</td>
+      <td></td>
+      <td>92.3</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>44.9</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">RMSD</td>
+    </tr>
+    <tr>
+      <td>Bond length (Å)</td>
+      <td>0.004</td>
+      <td></td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.904</td>
+      <td></td>
+      <td>0.769</td>
+    </tr>
+    <tr>
+      <td colspan="4">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>95.0</td>
+      <td></td>
+      <td>92.2</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>4.1</td>
+      <td></td>
+      <td>6.8</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.9</td>
+      <td></td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+
+_The highest resolution shell is in parenthesis. Rmerge is the merging R factor. Rp.i.m. is the precision-indicating merging R factor. For definitions, see Weiss (2001)._
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/00745/elife-00745-fig2-v1.jpg)
 
-**Figure 2.:** (A) Schematic diagram of full-length Myceliophthora thermophila Nup188C with details about the subdomain arrangement. The crystallized fragments is boxed and gradient-colored in blue with helical HEAT- and ARM-repeats indicated. (B) Crystal structure of the C-terminal part of Nup188, gradient-colored as in (A), with the inner helices in pale-yellow. (C) Superposition of chains A (blue) and B (gray) of Nup188C shows the flexibility seen in the crystal, in which the outer helices of chain B move by 3–4 Å relative to the helices in chain A.DOI: http://dx.doi.org/10.7554/eLife.00745.005
+**Figure 2.:** (A) Schematic diagram of full-length Myceliophthora thermophila Nup188C with details about the subdomain arrangement. The crystallized fragments is boxed and gradient-colored in blue with helical HEAT- and ARM-repeats indicated. (B) Crystal structure of the C-terminal part of Nup188, gradient-colored as in (A), with the inner helices in pale-yellow. (C) Superposition of chains A (blue) and B (gray) of Nup188C shows the flexibility seen in the crystal, in which the outer helices of chain B move by 3–4 Å relative to the helices in chain A.
 
 Nup188N is built from 52 stacked helices. They fold into a large right-handed superhelical ring that resembles a lock washer (Figure 1B). Although the overall structure has a general repeat pattern and is built around 2-helix (HEAT repeat), and 3-helix (ARM-repeat) elements, several distinct details specific to Nup188 make it a rather unique protein. We can discern an inner ring of helices forming the concave surface and an outer ring of helices forming the convex surface creating three distinct subdomains (Figure 1A,B). The first subdomain consists of 15 helices that are arranged in irregular orientations without an obvious repeat pattern. Next, helices α16–25 make up subdomain II and are organized around three HEAT repeats (α16/17, α18/19, α22-23). Helix α23 protrudes from the molecule and is sandwiched between helices α24 and α25, such that they are splayed apart at a 90° angle. In consequence, the helical stack pattern is interrupted. Subdomain III includes helices α26 to α52 and is structured around the second helical stack element, pivoted against subdomain II. It has 10 helical repeats of both the HEAT and the ARM type and forms two curved layers of helices. Between helix α32 and α33, we find a β-stranded insertion with structural homology to Src-homology (SH3) domains (see Figure 1D). The Nup188N ring structure is closed by four helices (α10–α13) from subdomain I that latch onto a complementary surface created by helices α44, α46 and α47. The interface is mixed in character, with van der Waals contacts as well as polar and ionic interactions. In total, the latch covers an 1511 Å2 interface (Figure 1C).
 
@@ -54,15 +268,15 @@ As noted, Nup188 contains an inserted β-stranded-domain, which has structural s
 
 The C-terminal fragment of Nup188, Nup188C, is a right-handed arc-shaped superhelical structure built from 19 helices that form 6 helical repeats, which are stacked in regular order (Figure 2). The first helical pair (α1 and α2) forms a HEAT repeat followed by 5 ARM repeats. The inner face of the structure is built from helices α2, α5, α8, α12, α15, and α19. The C-terminal helix α19 caps the structure. At the N terminus, helices α1 and α2 expose a hydrophobic surface, which strongly suggests that the full-length protein continues in a stacked pattern. This hydrophobic surface engages in a twofold symmetric crystal packing contact with a neighboring Nup188C molecule resulting in a horseshoe-shaped dimer. Because this contact is generated by a protein truncation, we suggest that it is a crystal artifact and not physiologically relevant. Similar packing contacts are frequently observed with truncated, stacked helical proteins. Interestingly, the two Nup188C copies in the asymmetrical unit have a different curvature, likely reflecting the intrinsic flexibility of the molecule (Figure 2C).
 
-Since we were unable to obtain crystals for full-length Nup188, we attempted to model the missing 283-residue segment (
+Since we were unable to obtain crystals for full-length Nup188, we attempted to model the missing 283-residue segment (Figure 3A), taking various information into consideration. To start, secondary structure prediction suggests that the segment folds into 10 helices. Furthermore, the adjacent ends of both crystallized fragments, Nup188N and Nup188C, are regular repeats, therefore we reasoned that the missing segment very likely forms five helical pairs connecting the two parts into one continuous superhelical element (Figure 3B). This assumption is supported by 3D comparisons of the crystallized fragments with published structures of other stacked helical proteins. For both fragments we find superposable helical proteins in the PDB that extend in a repeat pattern further into the space where we expect the missing residues of Nup188 to be positioned. The assumption of a continuous helical structure is also supported by limited proteolysis experiments. Although MtNup188 is cut in numerous positions, the resulting fragments still behave like the full-length protein in a gel filtration experiment (data not shown).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/00745/elife-00745-fig3-v1.jpg)
 
-**Figure 3.:** (A) Schematic diagram of full-length Myceliophthora thermophila Nup188 with details about the subdomain arrangement for the entire protein. (B) Full-length Nup188 gradient-colored in red-gray-blue. The modeled region and the overall dimensions are indicated. (C). Single-particle negative stain EM class averages of full-length MtNup188, ScNup188 and MtNup192. Classes are roughly grouped and are ordered from more ‘closed’ (left) to ‘open’ conformations (right). The three proteins are evidently structurally related. (D) Structural similarity between Nup188 and importin-α and -β. The aligned areas of Nup188N, Nup188C, importin-α (3L3Q) and importin-β (1QGR) are gradient-colored in orange from N to C terminus. Non-aligned helices are in gray and the repeat numbering is indicated.DOI: http://dx.doi.org/10.7554/eLife.00745.006
+**Figure 3.:** (A) Schematic diagram of full-length Myceliophthora thermophila Nup188 with details about the subdomain arrangement for the entire protein. (B) Full-length Nup188 gradient-colored in red-gray-blue. The modeled region and the overall dimensions are indicated. (C). Single-particle negative stain EM class averages of full-length MtNup188, ScNup188 and MtNup192. Classes are roughly grouped and are ordered from more ‘closed’ (left) to ‘open’ conformations (right). The three proteins are evidently structurally related. (D) Structural similarity between Nup188 and importin-α and -β. The aligned areas of Nup188N, Nup188C, importin-α (3L3Q) and importin-β (1QGR) are gradient-colored in orange from N to C terminus. Non-aligned helices are in gray and the repeat numbering is indicated.
 
 To experimentally support our model of full-length MtNup188 we performed single particle EM analysis. We obtained 2D class averages from negatively stained particles (Figure 3C) demonstrating that MtNup188 can adopt multiple conformations. Several 2D classes are consistent with the crystal structures and show a ring-like structure with a bent, elongated extension. The overall dimensions are consistent with our full-length model measuring ∼170 Å in length and ∼85 Å across the N-terminal ring. Other 2D classes show a twisted S-shaped molecule, where the ring is apparently opened. Thus, the protein can adopt various conformations in solution, consistent with the flexibility observed for many stacked helical domains.
 
-## Nup188 and Nup192 are structurally related
+### Nup188 and Nup192 are structurally related
 
 Like many other architectural nucleoporins, Nup188 is rather poorly conserved in sequence across diverse eukaryotes (Neumann et al., 2010). To test whether Nup188 is conserved in structure, we analyzed Nup188 from S. cerevisiae by single-particle negative stain EM and compared it to the thermophilic ortholog. The two fungi are separated by ∼800 million years in evolution (Hedges et al., 2006) and the Nup188 proteins share 15% sequence identity. As expected, MtNup188 and ScNup188 are very similar in structure, at least at the resolution obtained by EM analysis (Figure 3C). Both proteins show similar overall dimensions and share flexibility, evident in distinct 2D classes.
 
@@ -70,51 +284,51 @@ Nup188 and Nup192 are most likely paralogs that originate from an early gene dup
 
 Sequence analysis and comparison between Nup188 and Nup192 do not reveal a SH3-like domain insert in Nup192. No sequence conservation in this area can be observed between Nup188 and Nup192 and secondary structure predictions do not predict the presence of β-sheets in Nup192. We therefore conclude that the SH3-like domain is a specific feature of Nup188 that cannot be detected in Nup192.
 
-## Structural similarity between Nup188 and nuclear transport receptors
+### Structural similarity between Nup188 and nuclear transport receptors
 
 Stacked helical proteins are abundantly found in the eukaryotic proteome, serving multiple biological functions (Aravind et al., 2006). To identify structures more closely related to Nup188 we used 3D similarity searches using our experimental structures as templates. The most regular part of Nup188N is subdomain III, which was found to be structurally similar to nuclear transport receptors (NTRs) (Figure 3D). A shared core of helical repeats superimposes with an RMSD of 3.6 Å to importin-α (276 C-α positions) and 4.5 Å to importin-β (263 C-α positions), respectively. Similarly we found that Nup188C is structurally similar to NTRs and superimposes with an RMSD of 3.2 Å to importin-α (208 C-α positions) and 3.7 Å to importin-β (212 C-α positions), respectively. Both Nup188 and NTRs form right-handed superhelices with different degrees of curvature. The RMSD values show that NTRs and Nup188 are generally related, as has been speculated previously based on EM- and 3D prediction methods (Flemming et al., 2012).
 
-## Nup188 and Nup192 specifically bind FG-repeats of nucleoporins but do not interact with RanGTP
+### Nup188 and Nup192 specifically bind FG-repeats of nucleoporins but do not interact with RanGTP
 
-The intriguing structural similarity between Nup188, Nup192 and NTRs prompted us to test whether they also share other properties. We first set out to examine whether Nup188 and Nup192 share the unifying feature of all NTRs and interact with nucleoporin FG-repeats.
+The intriguing structural similarity between Nup188, Nup192 and NTRs prompted us to test whether they also share other properties. We first set out to examine whether Nup188 and Nup192 share the unifying feature of all NTRs and interact with nucleoporin FG-repeats. MtNup188, MtNup192, importin β from S. cerevisiae (ScKap95) or 3xGFP were incubated with a selection of immobilized budding yeast FG-repeat domains and the interactions were monitored in pulldown experiments. To control for binding specificity all proteins were pre-mixed with excess bacterial extract proteins (Figure 4—figure supplement 1A). The panel of FG-repeat regions included Nup116(348–458), Nup100(1–310) and Nup100(1–610) representing GLFG-type repeats, and Nsp1(1–603) representing FXFG-type repeats (Yamada et al., 2010). In addition, we included the Nup116(348–458) 10xFA mutant, which lacks the key phenylalanine residues necessary for binding to NTRs (Bayliss et al., 2000, 2002; Patel et al., 2007). As expected, ScKap95 was firmly enriched (10-fold to 40-fold over bulk bacterial extract proteins) on both types of wild-type FG-repeat regions. This interaction was highly specific since ScKap95 did not bind to the Nup116(348–458)10xFA mutant and no interaction between FG-coated beads and 3xGFP could be detected (Figure 4A,B). Of note, ScKap95 was efficiently eluted with 1M NaCl from all the FG-coated beads consistent with the relatively weak interaction between ScKap95 and FG-repeat regions (Pyhtila and Rexach, 2003) (Figure 4A, Figure 4—figure supplement 1B). Intriguingly, both MtNup188 and MtNup192 were strongly enriched on all wild-type FG-repeat regions and did not show significant binding to the Nup116(348–458)10xFA variant. We therefore conclude that both these nucleoporins can specifically bind to the FG-repeats in vitro and behave like the NTR ScKap95 in this assay (Figure 4A,B). The only notable deviation from the FG-binding pattern was observed with MtNup188, which was relatively inefficiently eluted with 1M NaCl from Nup100(1–310) and Nup100(1–610), suggesting that MtNup188 either interacts with these FG-repeat regions more tightly than ScKap95 or that these interactions are more hydrophobic in nature (Figure 4—figure supplement 1B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/00745/elife-00745-fig4-v1.jpg)
 
-**Figure 4.:** (A and B) Binding of MtNup188 and MtNup192 to various FG-coated beads monitored by in vitro pulldown assays. (A) Standard volumes of the soluble protein mixtures (pulldown input), separate components of the mixtures (protein alone, bacterial extract alone) and the 1M NaCl pulldown eluates form various FG-coated beads (1M NaCl pulldown elates) were precipitated by methanol-chloroform and re-solubilized in a standard volume of SDS-sample buffer. The samples were separated by SDS-PAGE and the gels were stained with SYPRO-Ruby. (B) The diagram representing relative enrichments of ScKap95, MtNup188, MtNup192 and 3xGFP in various FG-pulldown eluates, as compared to bulk bacterial extract proteins. The enrichment values (ratios between the eluted and input protein amounts) were computed using protein band intensities from the SYPRO Ruby stained gels shown in (A). (C) HsRanQ69L alone or an equimolar mixture of HsRanQ69L with ScKap95 were subjected to gel filtration using a Superdex 200 column, and the eluted fractions were separated by SDS-PAGE. Ran was visualized by Western blotting against the ZZ-tag, and ScKap95 was visualized by SYPRO Ruby staining. (D) Superdex 200 elution profiles of ZZ-HsRanQ69L (ZZ-tag Western blot) with or without the addition of MtNup188 or MtNup192 (SYPRO Ruby) analyzed as described in (C).DOI: http://dx.doi.org/10.7554/eLife.00745.007
+**Figure 4.:** (A and B) Binding of MtNup188 and MtNup192 to various FG-coated beads monitored by in vitro pulldown assays. (A) Standard volumes of the soluble protein mixtures (pulldown input), separate components of the mixtures (protein alone, bacterial extract alone) and the 1M NaCl pulldown eluates form various FG-coated beads (1M NaCl pulldown elates) were precipitated by methanol-chloroform and re-solubilized in a standard volume of SDS-sample buffer. The samples were separated by SDS-PAGE and the gels were stained with SYPRO-Ruby. (B) The diagram representing relative enrichments of ScKap95, MtNup188, MtNup192 and 3xGFP in various FG-pulldown eluates, as compared to bulk bacterial extract proteins. The enrichment values (ratios between the eluted and input protein amounts) were computed using protein band intensities from the SYPRO Ruby stained gels shown in (A). (C) HsRanQ69L alone or an equimolar mixture of HsRanQ69L with ScKap95 were subjected to gel filtration using a Superdex 200 column, and the eluted fractions were separated by SDS-PAGE. Ran was visualized by Western blotting against the ZZ-tag, and ScKap95 was visualized by SYPRO Ruby staining. (D) Superdex 200 elution profiles of ZZ-HsRanQ69L (ZZ-tag Western blot) with or without the addition of MtNup188 or MtNup192 (SYPRO Ruby) analyzed as described in (C).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/00745/elife-00745-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** (A) The specificity of the FG-pulldown assay conditions were examined by subjecting bacterial extract proteins alone to pulldown assays with various FG- coated beads. Bound proteins were eluted with 1M NaCl sufficient to disrupt the expected transient interactions (left panel), followed by SDS sample buffer (right panel). The input bacterial extract sample and 1M NaCl eluates were precipitated by methanol-chloroform and re-solubilized in SDS-sample buffer prior to separation by SDS-PAGE. The gels were stained with SYPRO Ruby. (B) Proteins resistant to 1M NaCl elution in the experiment described in Figure 4A were stripped-off by SDS-sample buffer and separated by SDS-PAGE followed by SYPRO Ruby gel staining. The ‘protein sample’ lanes are the same as ‘protein alone’ in Figure 4A, and are included as references for the protein amounts remaining after 1 M NaCl elution.DOI: http://dx.doi.org/10.7554/eLife.00745.008
+**Figure 4—figure supplement 1.:** (A) The specificity of the FG-pulldown assay conditions were examined by subjecting bacterial extract proteins alone to pulldown assays with various FG- coated beads. Bound proteins were eluted with 1M NaCl sufficient to disrupt the expected transient interactions (left panel), followed by SDS sample buffer (right panel). The input bacterial extract sample and 1M NaCl eluates were precipitated by methanol-chloroform and re-solubilized in SDS-sample buffer prior to separation by SDS-PAGE. The gels were stained with SYPRO Ruby. (B) Proteins resistant to 1M NaCl elution in the experiment described in Figure 4A were stripped-off by SDS-sample buffer and separated by SDS-PAGE followed by SYPRO Ruby gel staining. The ‘protein sample’ lanes are the same as ‘protein alone’ in Figure 4A, and are included as references for the protein amounts remaining after 1 M NaCl elution.
 
 NTRs of the importin-β/karyopherin family can also form direct complexes with the small GTPase Ran in its GTP-bound form (Floer and Blobel, 1996; Chook and Blobel, 1999; Cook et al., 2007). Sequence analysis did not detect any obvious RanGTP binding surface in either Nup188 or Nup192. Consistent with this, we were unable to detect binding between RanGTP and either MtNup188 or MtNup192 by gel filtration analysis (Figure 4D) whereas the NTR ScKap95 bound robustly to RanGTP (Figure 4C). We conclude that in contrast to NTRs neither MtNup188 nor MtNup192 can form a stable complex with RanGTP in our binding assay conditions.
 
-## Nup188 and Nup192 translocate through intact NPCs by facilitated diffusion
+### Nup188 and Nup192 translocate through intact NPCs by facilitated diffusion
 
 A defining functional property of NTRs is their ability to mediate transport across the NPC. The structural similarity between MtNup188, MtNup192 and NTRs and their common ability to bind FG-repeats led us to ask whether MtNup188 and MtNup192 could also efficiently translocate through intact NPCs. To this end MtNup188 and MtNup192 were tagged with YFP, and their nuclear translocation was monitored by quantitative fluorescence microscopy using the standard in vitro nuclear transport assay in digitonin-permeabilized HeLa cells (Adam et al., 1990). YFP-HsImportin-β and 3xGFP were used as positive and negative controls, respectively. To select only intact nuclei for our analyses, each reaction was supplemented with 155 kDa TRITC-labeled dextran, and only nuclei that excluded TRITC-dextran were analyzed (see Figure 5—figure supplement 1 and materials and methods section for details).
 
-As expected, YFP-importin-β efficiently translocated into nuclei independent of the presence of a nuclear transport mixture (
+As expected, YFP-importin-β efficiently translocated into nuclei independent of the presence of a nuclear transport mixture (Xenopus cytosol plus energy regeneration system). At the same time no significant nuclear translocation of 85 kDa 3xGFP was observed in any of the tested conditions, consistent with the approximately 40–60 kDa diffusion permeability cutoff of intact NPCs (Figure 5A,B) (Mohr et al., 2009). Strikingly, both YFP-MtNup188 and YFP-MtNup192 mimicked the behavior of YFP-HsImportin-β and accumulated in intact nuclei even in the absence of a nuclear transport mixture. Nuclear uptake was completely blocked in the presence of WGA, a broad inhibitor of NPC-mediated transport (Finlay et al., 1987; Mohr et al., 2009) (Figure 5A,B). Furthermore, translocation of both nucleoporins, and of YFP-HsImportin-β, was strongly inhibited upon addition of an unlabeled importin-β (Figure 5C,D). Together these results demonstrate that the translocation of YFP-MtNup188 and YFP-MtNup192 occurs through NPCs. Since the sizes of YFP-MtNup188 and YFP-MtNup192 (∼220 kDa) are far above the diffusion permeability cutoff of the NPCs this efficient nuclear translocation cannot be explained by simple passive diffusion.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/00745/elife-00745-fig5-v1.jpg)
 
-**Figure 5.:** (A and B) The nuclear translocation of YFP-MtNup188 and YFP-MtNup192 (green) was monitored in digitonin-permeabilized HeLa cells in transport buffer alone (−cytosol), in transport buffer containing Xenopus cytosol and an energy regenerating mix (+cytosol), or in transport buffer after pre-treatment of nuclei with WGA (+WGA) (A). Similar assays were performed in transport buffer with or without the addition of unlabeled HsImportin-β (B). 155kD TRITC-dextran (red) was used to check nuclear integrity. YFP-HsImportin-β and 3xGFP were used as positive and negative controls for facilitated NPC translocation, respectively. (C and D) Quantitative analysis of the protein translocation experiments described in (A and B), respectively. The intranuclear fluorescence intensities of the proteins were quantified and normalized against the background (extranuclear) fluorescence. Bar graphs represent mean values ± standard deviations. Asterisks (*) indicate a significant difference in median value using the Mann-Whitney U test (p<0.01; >50 nuclei for each condition).DOI: http://dx.doi.org/10.7554/eLife.00745.009
+**Figure 5.:** (A and B) The nuclear translocation of YFP-MtNup188 and YFP-MtNup192 (green) was monitored in digitonin-permeabilized HeLa cells in transport buffer alone (−cytosol), in transport buffer containing Xenopus cytosol and an energy regenerating mix (+cytosol), or in transport buffer after pre-treatment of nuclei with WGA (+WGA) (A). Similar assays were performed in transport buffer with or without the addition of unlabeled HsImportin-β (B). 155kD TRITC-dextran (red) was used to check nuclear integrity. YFP-HsImportin-β and 3xGFP were used as positive and negative controls for facilitated NPC translocation, respectively. (C and D) Quantitative analysis of the protein translocation experiments described in (A and B), respectively. The intranuclear fluorescence intensities of the proteins were quantified and normalized against the background (extranuclear) fluorescence. Bar graphs represent mean values ± standard deviations. Asterisks (*) indicate a significant difference in median value using the Mann-Whitney U test (p<0.01; >50 nuclei for each condition).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/00745/elife-00745-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Illustration of the protocol used for the nuclear translocation assays. (B) An example of two-channel confocal images used to simultaneously monitor the nuclear translocation of fluorescent protein fusions (YFP channel) and 155 kDa TRITC-dextran (TRITC channel). (C) Schematic representation of the procedure used to quantify the nuclear translocation of fluorescent protein fusions into intact nuclei. Fluorescence intensities inside and outside the nuclei were quantified using custom written code in MATLAB. The normalized intranuclear fluorescence intensity for each nucleus was calculated by taking the ratio of the fluorescence inside to outside the nucleus. All nuclei whose normalized TRITC fluorescence exceeded 0.3 were considered ‘non-intact’ and omitted from the analysis.DOI: http://dx.doi.org/10.7554/eLife.00745.010
+**Figure 5—figure supplement 1.:** (A) Illustration of the protocol used for the nuclear translocation assays. (B) An example of two-channel confocal images used to simultaneously monitor the nuclear translocation of fluorescent protein fusions (YFP channel) and 155 kDa TRITC-dextran (TRITC channel). (C) Schematic representation of the procedure used to quantify the nuclear translocation of fluorescent protein fusions into intact nuclei. Fluorescence intensities inside and outside the nuclei were quantified using custom written code in MATLAB. The normalized intranuclear fluorescence intensity for each nucleus was calculated by taking the ratio of the fluorescence inside to outside the nucleus. All nuclei whose normalized TRITC fluorescence exceeded 0.3 were considered ‘non-intact’ and omitted from the analysis.
 
-To examine more directly if YFP-
+To examine more directly if YFP-MtNup188 and YFP-MtNup192 cross the NPC by facilitated diffusion we measured the rates of their NPC translocation and compared them to the inert 3xGFP, which is almost threefold smaller compared to the model transport receptor YFP-HsImportin-β. We followed the nuclear accumulation kinetics of each protein and calculated initial nuclear translocation rates by fitting each set of kinetic data to a single exponential decay function (Figure 6, see also ‘Materials and methods’ for details). While both nucleoporins translocated slower than YFP-HsImportin-β, their translocation rates exceeded the values of 3xGFP by at least 30-fold indicating that both proteins indeed cross the NPCs in a facilitated manner (Figure 6). The digitonin permeabilization protocol does not remove all endogenous NTRs (Nachury and Weis, 1999). To test whether the nuclear translocation rates of MtNup188 or MtNup192 can be enhanced by the removal of endogenous NTRs that remain tightly associated with NPCs we performed similar analyses with nuclei that were pre-treated with RanGTP (Nachury and Weis, 1999). While we saw an increase in the YFP-MtNup188 translocation rate, no effect on YFP-MtNup192 was observed. Under these conditions the translocation kinetics of MtNup188 and MtNup192 were approximately equal, but still about fourfold below the values for YFP-HsImportin-β (Figure 6 and Figure 6—figure supplement 1). This suggests that the slower nuclear translocation rates of MtNup188 and MtNup192 are intrinsic properties of these two proteins. Interestingly, both MtNup188 and MtNup192, unlike HsImportin-β accumulated within nuclei in the absence of exogenous energy without reaching notable saturation during the time frame of our experiments (Figure 6). Furthermore, both proteins continued to accumulate in nuclei even after subsequent 10-fold dilution, suggesting that they have strong intranuclear binding sites (Figure 6—figure supplement 2). In summary, these results demonstrate that MtNup188 and MtNup192 share functional characteristics with NTRs and translocate across NPCs by facilitated diffusion without a requirement for other cytosolic factors.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/00745/elife-00745-fig6-v1.jpg)
 
-**Figure 6.:** (A) The nuclear accumulation kinetics of the scaffold nucleoporins in transport buffer as compared to YFP-HsImportin-β and 3xGFP. Nuclear translocation reactions were imaged immediately after the addition of the fluorescent proteins and TRITC-dextran. Non-intact nuclei permeable to TRITC-dextran were excluded from the analysis. The graph represents mean values ± standard deviations. (B) Quantitative analysis of the initial nuclear translocation rates (equal to the total protein translocation rate through NPCs) for the experiments described in (A). The nuclear accumulation dataset for each nucleus (>30 for each condition) was separately fitted to a single-exponential curve, and the derivative at time t = 0 representing the initial nuclear translocation rate were computed. Asterisks (*) denote a significant difference in median value from the 3xGFP rate using the Mann-Whitney U test (p<0.01). Box plots show the median, first and third quartiles, and non-outlier extrema. Values greater than six standard deviations from the mean are marked as outliers.DOI: http://dx.doi.org/10.7554/eLife.00745.011
+**Figure 6.:** (A) The nuclear accumulation kinetics of the scaffold nucleoporins in transport buffer as compared to YFP-HsImportin-β and 3xGFP. Nuclear translocation reactions were imaged immediately after the addition of the fluorescent proteins and TRITC-dextran. Non-intact nuclei permeable to TRITC-dextran were excluded from the analysis. The graph represents mean values ± standard deviations. (B) Quantitative analysis of the initial nuclear translocation rates (equal to the total protein translocation rate through NPCs) for the experiments described in (A). The nuclear accumulation dataset for each nucleus (>30 for each condition) was separately fitted to a single-exponential curve, and the derivative at time t = 0 representing the initial nuclear translocation rate were computed. Asterisks (*) denote a significant difference in median value from the 3xGFP rate using the Mann-Whitney U test (p<0.01). Box plots show the median, first and third quartiles, and non-outlier extrema. Values greater than six standard deviations from the mean are marked as outliers.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/00745/elife-00745-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** (A) Nuclear translocation kinetics of the scaffold nucleoporins in permeabilized HeLa cells pre-incubated with Ran and an energy-regenerating system were obtained as described in Figure 6A. The kinetic plots for MtNup188 and MtNup192 from Figure 6A obtained without a Ran pre-wash are shown as a reference. (B) Quantitative analysis of the initial nuclear translocation rates for the experiments described in (A). The analysis was performed as described in Figure 6B. The asterisk (*) denotes a significant difference in median values in YFP-MtNup188 translocation rates between the no Ran pre-wash and Ran pre-wash conditions using the Mann-Whitney U test (p<0.01). Box plots show the median, first and third quartiles, and non-outlier extrema.DOI: http://dx.doi.org/10.7554/eLife.00745.012
+**Figure 6—figure supplement 1.:** (A) Nuclear translocation kinetics of the scaffold nucleoporins in permeabilized HeLa cells pre-incubated with Ran and an energy-regenerating system were obtained as described in Figure 6A. The kinetic plots for MtNup188 and MtNup192 from Figure 6A obtained without a Ran pre-wash are shown as a reference. (B) Quantitative analysis of the initial nuclear translocation rates for the experiments described in (A). The analysis was performed as described in Figure 6B. The asterisk (*) denotes a significant difference in median values in YFP-MtNup188 translocation rates between the no Ran pre-wash and Ran pre-wash conditions using the Mann-Whitney U test (p<0.01). Box plots show the median, first and third quartiles, and non-outlier extrema.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/00745/elife-00745-fig6-figsupp2-v1.jpg)
 
-**Figure 6—figure supplement 2.:** YFP-MtNup188, YFP-MtNup192, YFP-HsImportin-β and 3xGFP were allowed to translocate into the nuclei of permeabilized HeLa cells for 15 min, and then their nuclear fluorescence was followed after a 10-fold dilution with transport buffer as described in Figure 6A. Note that unlike YFP-HsImportin-β and 3xGFP, YFP-MtNup188 and YFP-MtNup192 continue to accumulate even after the 10-fold dilution.DOI: http://dx.doi.org/10.7554/eLife.00745.013
+**Figure 6—figure supplement 2.:** YFP-MtNup188, YFP-MtNup192, YFP-HsImportin-β and 3xGFP were allowed to translocate into the nuclei of permeabilized HeLa cells for 15 min, and then their nuclear fluorescence was followed after a 10-fold dilution with transport buffer as described in Figure 6A. Note that unlike YFP-HsImportin-β and 3xGFP, YFP-MtNup188 and YFP-MtNup192 continue to accumulate even after the 10-fold dilution.
 
 ## Discussion
 
@@ -130,42 +344,42 @@ Finally, the FG-binding properties that we have discovered here might also play 
 
 ## Materials and methods
 
-## Construct generation
+### Construct generation
 
 Expression constructs were PCR amplified from genomic DNA of the thermophillic fungus Myceliophthora thermophila (Mt). Two introns were removed using inverse PCR. Nup188 (residue 1–1827), Nup188N (residue 1–1160) and Nup188C (residue 1445–1827) were cloned into a pETDuet-1 vector from EMD Millipore (Billerica, MA) and N-terminally fused with a 3C protease cleavable 10xHis-7xArg-SUMO tag. The full ORF of S. cerevisiae (Sc) Nup188 was PCR amplified and inserted into pETDuet-1. It was fused to an N-terminal 3C cleavable 10xHis-7xArg-SUMO tag and a C-terminal 6xHis tag. Full-length MtNup192 was amplified from genomic DNA and its three introns removed by inverse PCR. Nup192 (residue 1–1734), Nup192 (residue 1–570) and Nup192 (residue 1–1034) were cloned into pETDuet-1, with an N-terminal 3C cleavable 10xHis-7xArg-SUMO tag and a C-terminal 3C cleavable 9xArg-7xHis tag. YFP-MtNup188 (residue 1–1827) and YFP-MtNup192 (residue 1–1734) expression constructs were derived from the respective non-labeled expression constructs (see above), by in-frame insertion of the YFP coding sequence after the respective N-terminal affinity tags. The ScKap95 expression plasmid was constructed by insertion of PCR-amplified ScKap95 ORF into pET30-a(+) His-tag expression vector. The bacterial expression plasmids for GST-ScNSP1(1–603), GST-ScNup100(1–307) and were made by insertion of PCR-amplified coding sequences of the respective FG-repeat segments into the pGEX-2T vector.
 
-## Protein production
+### Protein production
 
 All Mt proteins were expressed at 18°C in Escherichia coli BL21(DE3) RIL cells and first purified on Ni-affinity resin. When used for structure determination the eluted proteins were loaded on a HiTrapS FF column from GE Healthcare (Piscataway, NJ) and eluted with a linear NaCl gradient. Affinity tags were removed with 3C protease, followed by a second HiTrapS FF column purification step. Finally, the proteins were purified on a Superdex S200 10/300 column from GE Healthcare (Piscataway, NJ) in gel filtration buffer (10 mM HEPES pH 7.4, 150 mM NaCl and 1 mM DTT). Selenomethionine-derivatized protein was produced as described (Brohawn et al., 2008) and purified identical to the native protein, except that reducing agent was kept at 5 mM in all buffers. For FG-pulldowns, Ran-binding assays and protein translocation assays, the Mt proteins were purified using the same protocol that was used for structure determination, except for omitting the first HiTrapS FF column step. HsImportin-β versions and ScKap95 were expressed and purified on Ni-affinity resin, followed by dialysis against the gel filtration buffer. ZZ-HsRanQ69L was produced essentially as described in (Nachury et al., 2001). Purification of human Ran and nucleotide loading was performed as described in (Lowe et al., 2010). All GST-fusions of budding yeast FG-repeat regions were expressed in BL21(DE3) cells and purified on GSH-beads from GE Healthcare (Piscataway, NJ) in PBS pH 7.4 supplemented with 10 mM DTT, 0.1 mM PMSF and 0.5% Triton X-100. The beads were washed with PBS and proteins were eluted with glutathione and dialyzed against gel filtration buffer.
 
-## Crystallization
+### Crystallization
 
 Small needles of Nup188N grew in hanging drops containing 1.5 μl of protein at 4–6 mg/ml and 1.5 μl of precipitant (0.1 M MES pH 6.5, 4.5–7% (w/v) PEG 4000, 150 mM ammonium sulfate and 1 mM DTT) at 16°C. Large (300 × 50 × 50 μm) diffraction quality crystals were obtained after micro-seeding and the addition of 1–2.5% (v/v) tert-butanol. Crystals were cryoprotected by briefly soaking in precipitant supplemented with 20% (v/v) PEG 200 and were flash-frozen in liquid nitrogen. Crystal of Nup188C grew in hanging drops containing 1.5 μl of protein at 3–5 mg/ml and 1.5 μl of precipitant (18–23% (w/v) PEG 3350, 150 mM tri-ammonium citrate and 1 mM DTT) at 16°C. Crystals were cryoprotected by dialysis into precipitant with 35% (w/v) PEG 3350 and flash-frozen in liquid nitrogen.
 
-## Data collection and structure determination
+### Data collection and structure determination
 
 Data were collected at the NE-CAT beamlines 24ID-C at Argonne National Laboratory. HKL2000 (Otwinowski and Minor, 1997) was used to reduce data. The structure of Nup188N was solved using SAD phases (usable to 3 Å) from a selenomethionine-substituted crystal. Out of 23 possible sites SHELXC/D/E (Sheldrick, 2010) found 22 selenium sites, which were refined in Phaser-EP (McCoy et al., 2007). An interpretable map was obtained after density modification using Parrot in the CCP4 suite (Winn et al., 2011). After most of the model was built, native data was used for the final rounds of model building and refinement using Coot (Emsley et al., 2010) and Phenix (Adams et al., 2010). Five loops (residue 85–91, 447–459, 673–682, 886–902, 963–970) and the very C-terminal 11 residues could not be built, due to poorly defined electron density. The structure of Nup188C was also solved using SAD phases from a selenomethionine-substituted crystal. All three possible sites of both molecules in the asymmetric unit were found using phenix.autosol. In the initial solvent-flattened electron density map several helices of both Nup188C molecules were well defined and could be built. In general, one copy of Nup188C is better defined then the other, presumably because of tighter crystal packing. Phases were improved by combining SAD phases with model phases using Phaser-EP. Even though the overall structure is similar, both Nup188C molecules were built independently, without using non-crystallographic symmetry restraints. The conformation between both molecules is different enough, that NCS was not beneficial even in the early rounds of refinement. The structure is complete except for three loops (residues 1495–1509, 1534–1538, 1705–1720) and the very C-terminal four residues, all of which are poorly defined in the electron density map. Structure figures were made using PyMol (Schrödinger LLC) and structural superposition carried out using the Dali server (Holm and Rosenström, 2010) and Coot.
 
-## Single-particle EM data collection and analysis
+### Single-particle EM data collection and analysis
 
 Recombinantly expressed and purified full-length MtNup188, ScNup188 and MtNup192 at ∼1.0 mg/ml were diluted with the gel filtration buffer (10 mM HEPES pH 7.4, 150 mM NaCl, 1 mM DTT) to 5 µg/ml and negatively stained with 2% uranyl acetate on continuous carbon-film grids. Single-particle CCD images of these three specimens were recorded on an FEI Tecnai Spirit electron microscope at 80 keV, 1–2 μm defocus and 60,000x magnification with a pixel size of 3.6 Å. A total of 1252 particles of MtNup188, 3000 particles of ScNup188, and 1408 particles of MtNup192 were boxed into separate stacks and were then each subjected to 2D classification using the single-particle data analysis package PARTICLE (www.sbgrid.org/software/title/PARTICLE). The ‘direct particle classification’ method implemented in PARTICLE does not require image pre-alignment, therefore the result is objective and free of any alignment error or reference bias.
 
-## Pulldown assays
+### Pulldown assays
 
 All FG-pulldown assays were performed in pulldown buffer (10 mM HEPES pH 7.5, 160 mM KOAc, 1 mM MgOAc2, 1 mM DTT, 0.01% Triton X-100). Bound proteins were eluted with 1 M NaCl elution buffer (10 mM Tris-HCl pH 8.0, 1 M NaCl, 0.1% Tween-20, 5 mM BME), followed by SDS-sample buffer. All the procedures except otherwise mentioned were performed at room temperature. The GST-FG fusions were pre-bound to GSH beads in the following amounts per pulldown reaction: 25 μl GSH resin; 10 nmol GST-Nup116(358–458); 10 nmol GST-Nup116(358–458) 10xFA; 5.0 nmol GST-Nup100(1–307); 2.5 nmol GST-Nup100(1–610); 3.0 nmol GST-NSP1(1–603). The beads were washed twice with the elution buffer re-equilibrated with pulldown buffer and aliquoted into separate siliconized tubes. The pulldown input proteins were pre-mixed with bacterial extract proteins in pulldown buffer to yield the following amounts per reaction: 0.5 ml pulldown buffer containing either MtNup188 (100 pmol), MtNup192 (100 pmol), ScKap95 (200 pmol) or 3xGFP (500 pmol) plus 200 μg bacterial extract proteins. The pulldown reactions were gently agitated for 20 min, quickly washed twice with 1 ml ice-cold pulldown buffer and bound proteins were eluted by 100 μl of the elution buffer followed by 100 μl of SDS-sample buffer. Salt eluates (1M NaCl) were precipitated with methanol-chloroform and re-solubilized in 50 μl SDS-sample buffer. The pulldown input samples and their components were prepared for SDS-PAGE essentially as described for the salt eluates. The gels were stained with SYPRO Ruby (Invitrogen) and imaged with a UV-transilluminator equipped with a CCD-camera. The digital images were analyzed and prepared using ImageJ software.
 
-## Ran binding assays
+### Ran binding assays
 
 ZZ-HsRanQ69L was pre-mixed with either Ran binding buffer alone (10 mM HEPES pH 7.4, 150 mM NaCl, 2 mM MgOAc2, 1 mM DTT), ScKap95, MtNup188FL or MtNup192FL to yield 2 μM concentration of each protein. The binding reactions were incubated on ice for 20 min, passed through 0.45 μm filter unit and subjected to gel filtration using Superdex 200 10/300 (GE Healthcare) in the Ran binding buffer. 0.5 ml elution fractions were collected, separated by SDS-PAGE and stained with SYPRO Ruby to visualize ScKap95, MtNup188FL or MtNup192FL. ZZ-HsRanQ69L was visualized by Western Blotting using rabbit IgG followed by fluorophore conjugated secondary antibodies.
 
-## Nuclear translocation assays
+### Nuclear translocation assays
 
 HeLa cells were cultured in DMEM media (+10% FBS) and plated on glass-bottomed poly-lysine coated chambers (MatTek, Ashland, MA) at a seeding concentration of 2.5 × 105 cells/ml the day prior to use. The cell permeabilization protocol is based on that of (Adam et al., 1990) Briefly, cells were washed with PBS (137 mM NaCl, 2.7 mM KCl, 8 mM Na2HPO4, 2 mM KH2PO4, pH 7.4) followed by a wash with permeabilization buffer (50 mM HEPES pH7.3, 50 mM KOAc, 8 mM MgCl2). The cells were then treated with 50 μg/ml digitonin in permeabilization buffer for 5 min followed by three washes with transport buffer (20 mM HEPES pH 7.3, 110 mM KOAc, 5 mM NaOAc, 2 mM MgOAc). After the final wash, the buffer was removed and 100 μl of transport buffer containing the experimental protein mixtures was added to the cells (see Figure 5—figure supplement 1). Concentrations used were: 1 μM YFP-MtNup188 /192, 1 μM YFP- HsImportin -β, 1 μM HsImportin-β, 1 μM 3xGFP, 200 μg/mL 155 kDa TRITC-dextran (Sigma-Aldrich, St. Louis, MO), 2 mM DTT, 100 μg/mL WGA (Sigma-Aldrich), and 5% v/v cytosolic extract. Cytosolic extract from Xenopus laevis oocytes was prepared as described in (Levy and Heald, 2010). Experiments using the cytosolic extract were supplemented with an energy regenerating system consisting of 2 mM GTP (Roche, Indianapolis, IN), 100 µM ATP (Roche), 4 mM creatine phosphate (Roche), and 20 U/ml creatine kinase (units of specific activity given by Roche). For WGA pre-treatment, 100 μg/mL WGA was first incubated with the nuclei for 10 min, removed, and then the experimental mix was added to the nuclei. For experiments involving a Ran wash, 5 µM RanGDP and the energy regenerating system were added to the nuclei for 10 min followed by three washes with transport buffer, and then the experimental mix was added to the nuclei.
 
-## Confocal imaging
+### Confocal imaging
 
 After the transport reaction was allowed to run for 15 min at room temperature, images were acquired on a Zeiss LSM 700 laser scanning confocal microscope (63× oil objective; EYFP, EGFP, & TRITC channels; 1 airy unit pinhole; 4 line averaging) using the Zen 2011 imaging software package (Carl Zeiss, Inc.). For the time-lapse experiments the confocal imaging was started at the same time as the transport mix was added to the cells (63× oil objective; EYFP, EGFP, & TRITC channels; 1 airy unit pinhole; no line averaging; 15 min run time; 20 s intervals).
 
-## Image and data analysis
+### Image and data analysis
 
 Fluorescence quantification and data analysis were performed using custom written code in MATLAB (The MathWorks, Inc.). The fluorescence intensity inside each nucleus and the average background fluorescence intensity were determined for both the YFP/GFP and TRITC channels. The intranuclear to extranuclear ratios were then calculated giving normalized fluorescence intensities for both the protein of interest and the dextran. All nuclei with normalized dextran fluorescence ratio greater than 0.3 were considered to be ‘non-intact’ (permeable to the dextran) and rejected. Only ‘intact’ nuclei were subject to further analysis (see Figure 5—figure supplement 1). For time-lapse experiments, the time-dependent normalized fluorescence intensity of the protein of interest was determined for each nucleus and then fit to a single exponential curve, y(t) = A*(1−exp[k*t])+C, where A, k, and C are fit parameters, and t is time. The initial rate of nuclear accumulation is given by the time derivative at t = 0 (i.e., −Ak).

@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.46793.001 G-quadruplexes (G4) are alternative nucleic acid structures involved in transcription, translation and replication. Aberrant G4 formation and stabilisation is linked to genome instability and cancer. G4 ligand treatment disrupts key biological processes leading to cell death. To discover genes and pathways involved with G4s and gain mechanistic insights into G4 biology, we present the first unbiased genome-wide study to systematically identify human genes that promote cell death when silenced by shRNA in the presence of G4-stabilising small molecules. Many novel genetic vulnerabilities were revealed opening up new therapeutic possibilities in cancer, which we exemplified by an orthogonal pharmacological inhibition approach that phenocopies gene silencing. We find that targeting the WEE1 cell cycle kinase or USP1 deubiquitinase in combination with G4 ligand treatment enhances cell killing. We also identify new genes and pathways regulating or interacting with G4s and demonstrate that the DDX42 DEAD-box helicase is a newly discovered G4-binding protein.
+G-quadruplexes (G4) are alternative nucleic acid structures involved in transcription, translation and replication. Aberrant G4 formation and stabilisation is linked to genome instability and cancer. G4 ligand treatment disrupts key biological processes leading to cell death. To discover genes and pathways involved with G4s and gain mechanistic insights into G4 biology, we present the first unbiased genome-wide study to systematically identify human genes that promote cell death when silenced by shRNA in the presence of G4-stabilising small molecules. Many novel genetic vulnerabilities were revealed opening up new therapeutic possibilities in cancer, which we exemplified by an orthogonal pharmacological inhibition approach that phenocopies gene silencing. We find that targeting the WEE1 cell cycle kinase or USP1 deubiquitinase in combination with G4 ligand treatment enhances cell killing. We also identify new genes and pathways regulating or interacting with G4s and demonstrate that the DDX42 DEAD-box helicase is a newly discovered G4-binding protein.
 
 ## Introduction
 
@@ -42,9 +42,17 @@ We set out to address two main questions (Figure 1): 1) which human genes and ce
 
 ## Results
 
-## Identification of genetic vulnerabilities to G4-ligands via genome-wide screening
+### Identification of genetic vulnerabilities to G4-ligands via genome-wide screening
 
 An unbiased genome-wide shRNA screen was performed in A375 human melanoma cells to globally evaluate genetic vulnerabilities to G4-ligands and to identify genes and pathways involved with G4-structures (Figure 2A). For this, the pyridine-2,6-bis-quinolino-dicarboxamide derivative, PDS (Rodriguez et al., 2012), and bisquinolinium compound, PhenDC3 (De Cian et al., 2007b) were chosen (Figure 2B). We used the latest generation shERWOOD-Ultramir shRNA pLMN retroviral library, comprising 132,000 shRNAs across 12 randomised pools targeting the protein coding genome, with an average of five optimised hairpins per gene (Figure 2C) (Knott et al., 2014). A375 melanoma cells were used due to their rapid doubling, stable ploidy and success in other shRNA-dropout screens (Sims et al., 2011); they are TP53 wild-type and driven by oncogenic BRAF (V600E) and CDKN2A loss (Forbes et al., 2015). Figure 2D outlines our shRNA screening strategy. To identify shRNAs that are lost between the initial (t0) and final (fF) timepoints, unique 3’-antisense sequences were recovered by PCR and quantified by sequencing. If a gene knockdown compromises cell viability then the associated shRNA will be depleted compared to those targeting non-essential genes: the tF sequence count will be less than t0 thus log2 fold change (FC, tF/t0) is negative. A pilot using one shRNA pool established that a tF of 15 population doublings can be used to reveal significant G4-ligand-mediated changes [false discovery rate (FDR) ≤ 0.05] in shRNA levels using a ligand concentration resulting in 20% cell death (GI20, see Materials and methods and Figure 2—figure supplement 1 for details).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig2-v1.jpg)
+
+**Figure 2.:** (A) A G-tetrad with four interacting guanines (left), which stack to form G4 structures (right). (B) Structures of the G4-stabilising small molecule ligands PDS and PhenDC3. (C) Distribution of the numbers of shRNAs targeting each gene, with the average indicated by a red dotted line. (D) Overall screening approach illustrated for one library pool. Plasmids are retrovirally packaged and A375 cells are infected at multiplicity of infection (MOI) of 0.3 (30%). Following antibiotic selection, an initial time point (t0) is harvested and then cells are cultured for ‘n’ population doublings in DMSO, PDS or PhenDC3 before the final time point was harvested (tF).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative growth curves from shRNA pool eight showing cumulative population doublings for DMSO, PhenDC3 and PDS (mean and standard deviation from three cell counts per condition). (B) Comparison of significant hairpin hits (colours indicate significance at FDR ≤ 0.05) for two end points: population doubling 7 (left) and 15 (right) for PDS (top) and PhenDC3 (bottom). (C) Comparison of FDR and log2FC values for a hairpin targeting XRN1 following DMSO, PDS or PhenDC3 treatment after 7 and 15 population doublings.
 
 To understand the complete spectrum of G4 vulnerabilities, we first considered the combined set of sensitivities to PDS and PhenDC3 together. For the whole library, when individual shRNAs are considered 9509 (~7%) G4-ligand-specific hairpins (i.e. those not in DMSO) were found to be depleted (FDR ≤ 0.05; log2 FC <0, Figure 3A, Supplementary file 1). We then reasoned, for a gene knockdown to have compromised cell growth, that a minimum of either 50% or three shRNA hairpins should be significantly depleted for that gene (median log2 FC <0). This resulted in the identification of 843 G4 ligand-specific gene knockdowns not present in DMSO (Figure 3B). We then denoted a more stringent preliminary list of 758 G4 sensitisers as those having a median log2 FC ≤ −1 (Figure 3C). It is reassuring that in this list we independently validated the known G4 sensitisers BRCA1/2, ATRX and HERC2 (McLuckie et al., 2013; Wang et al., 2019; Watson et al., 2013; Wu et al., 2018; Xu et al., 2017; Zimmer et al., 2016; Figure 3D).
 
@@ -60,7 +68,7 @@ Within the total 758 G4-sensitiser gene list, we uncovered five significant enri
 
 **Figure 4.:** (A) Enriched KEGG pathways and (B) Gene Ontology terms, GO Biological Processes (BP) and Molecular Functions (MF), for the 758 genome-wide G4-sensitiser genes. Blue- genes common to both ligands; black- genes unique to either PDS or PhenDC3. A right-sided enrichment test with Bonferroni correction used (see Materials and methods). (C) Enriched protein domains (p≤0.05) within GENE3D (black) and PFAM databases (grey) ordered by -Log10 (EASE p-value). See also Supplementary file 1.
 
-## Cancer-associated gene depletion enhances sensitivity to G4-ligands
+### Cancer-associated gene depletion enhances sensitivity to G4-ligands
 
 We next used the complete list of 758 genes, identified as stringent G4 ligand sensitisers above, to discover new cancer-associated gene vulnerabilities to G4-stabilising ligands. For this, we searched this list for any significant enrichment in the COSMIC database (v83) of genes causally implicated in cancer (Forbes et al., 2015). Of the 758 sensitisers, there was a two-fold enrichment (p=9.1×10−6) for 50 cancer-associated genes, which increases to three-fold (p=2.5×10−3) when considering only sensitisers common to both G4 ligands (Figure 5A,B, Supplementary file 1). Notably, when STRING network analysis (Szklarczyk et al., 2017) was used to investigate functional interactions, this revealed a DDR cluster that included BRCA1 and BRCA2, as well as their interacting tumour suppressor partners PALB2 and BAP1, two cancer-associated DDR genes not previously indicated as G4 ligand sensitisers. (Figure 5C). This analysis also identified as sensitisers a cluster consisting of several chromatin modifiers including SMARCA4, SMARCB1 and SMARCE1.
 
@@ -68,29 +76,81 @@ We next used the complete list of 758 genes, identified as stringent G4 ligand s
 
 **Figure 5.:** (A, B) Median log2FC and number of significantly depleted hairpins for G4 sensitisers overlapping the COSMIC database for PDS (A) and PhenDC3 (B). Genes common to both are indicated in blue. See also Supplementary file 1. (C) Functional interaction network analysis using STRING for the 50 COSMIC proteins indicated in A and B. Clusters are shown using confidence interactions > 0.4 from co-expression and experimental data. Box indicates the DDR cluster.
 
-## Focused G4-sensitiser shRNA screening reveals robust G4-ligand genetic vulnerabilities and potential therapeutic targets
+### Focused G4-sensitiser shRNA screening reveals robust G4-ligand genetic vulnerabilities and potential therapeutic targets
 
 To enable more rigorous and further comparative analyses that focus solely on G4 sensitisers, we developed a custom shRNA screening panel encompassing the gene sensitisers identified above plus additional G4-associated genes noted from the literature (Figure 6A, Figure 6—figure supplement 1, see Materials and methods). This panel consisted of a single retroviral shRNA pool to allow all shRNAs to be screened simultaneously under standardised conditions and to minimise technical fluctuations. We first used this panel to recapitulate the findings of the genome-wide screen above and compare responses with different G4 ligands. Using A375 melanoma cells with PDS and PhenDC3, the custom panel recovered a total of 342 G4 sensitisers corresponding to 40.6% overlap (308 genes) with the complete genome-wide screen (Figure 6B,C). From this, we identified 290 G4 sensitisers with 89 and 161 unique for PDS and PhenDC3, respectively, and 40 genes common for both ligands (Figure 6—figure supplement 1E). Comparing PDS and PhenDC3 sensitisers by KEGG analysis shows that each ligand mostly interacts with different but related pathways (Figure 6D,E). Consistent with direct G4-targeting, nucleic-acid-related GO terms were enriched (Figure 6—figure supplement 1F & G, Supplementary file 2). We next considered that the 40 sensitiser genes common between PDS and PhenDC3 reflected the most robust sensitisers for G4 ligands in general and it is notable that 27 out of 40 associated with DNA or RNA binding processes, such as chromatin modification, replication transcription, and translation (Figure 6F). Again, the ubiquitin processes, which previously were not linked with G4 biology, were also uncovered as a significant sensitiser pathway. Overall, these results clearly show the spectrum of biological vulnerabilities that underpin the observed enhanced sensitivities for each G4-targeting ligand.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig6-v1.jpg)
+
+**Figure 6.:** (A) A shRNAs custom retroviral pool (~8000 hairpins) was used to infect A375 cells. Following antibiotic selection, the reference time point (t0) was taken and then cells were cultured for 15 population doublings in DMSO, PDS or PhenDC3 before (tF). Three biological replicates were performed. (B) Significant sensitiser genes for the A375 focused screen (50% or three significantly depleted with median log2 FC≤ −1). (C) Overlap of the genome-wide (GW) with A375 focused screen for PDS and PhenDC3 G4-sensitisers combined (see also Figure 6—figure supplement 1). (D–E) Enriched KEGG pathways for (D) PhenDC3 and (E) PDS sensitiser genes common to the genome-wide and A375 focused screens. A right-sided enrichment test with Bonferroni correction used (see Materials and methods). (F) DAVID, STRING (experimental data, co-expression, medium confidence ≥0.4) interaction and UniprotKB data were used to categorise biochemical roles for the 40 high-confidence G4 sensitisers common to both ligands. Genes in red indicate those found in the (DGIdb 2.0). *=genes in multiple categories. (G, H) Overlap of the all 290 robust G4 sensitisers (G) and the 40 G4 sensitisers common to both ligands (H) with the Drug Genome Interaction database. The druggable genome denotes genes with known or predicted drug interactions. Clinically actionable denotes genes used in targeted cancer clinical sequencing panels. See also Figure 6—figure supplement 1, Supplementary file 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Cumulative population doublings for A375 cells for DMSO, PDS and PhenDC3 (mean and standard deviation from three cell counts per condition). (B) Number of shRNAs targeting each gene, with the maximum capped at seven per gene (C–E) Venn diagrams showing (C) significantly depleted shRNAs at t15 v t0 (FDR ≤ 0.05) for DMSO, PDS and PhenDC3 treatment, (D) significantly depleted genes (minimum 50% or three significant shRNAs) and (E) overlap of focused and genome-wide screens. For PDS and PhenDC3, there are 89 and 201 unique genes, respectively, that overlap between the two screens and 40 genes shared for PDS and PhenDC3. (F–G) Enriched Gene Ontology terms (GO Biological Processes and Molecular Functions) as determined by Bonferroni multiple hypothesis correction (p≤0.05) for (E) all 201 PhenDC3 and (F) all 129 PDS G4-hits validated by the A375 focused screen. Black bars reflect terms enriched in both PDS and PhenDC3. See also Supplementary file 2.
+
 We next reasoned that the robust set of 290 G4 ligand sensitiser genes above provides a suitable test bed for exploring the arising therapeutic potential for combinatorial pharmacological inhibition and G4-ligands. We therefore looked for the presence of these sensitisers genes within the druggable genome interaction database (DGIdb) (Griffith et al., 2013). A total of 74 G4-sensitisers were found in the classifications ‘Druggable Genome’ (genes with known or predicted drug interactions) and ‘Clinically Actionable’ (genes used in targeted clinical cancer sequencing for precision medicine) with 13 being common to both classifications (Figure 6G, Supplementary file 1). Notably, this included KEAP1, an E3 ubiquitin ligase adapter protein and highlights a new therapeutic domain for the application of G4-based drugs. Performing a similar analysis on the 40 most robust sensitisers common to both G4 ligands gave 12 genes within DGIdb (Figure 6H, Supplementary file 1), including 5 (BRCA1, CHEK1, CDK12, TOP1, PDKP1) common to both druggable and clinically actionable classifications. These results therefore open up new possibilities for cancer therapies based on vulnerabilities to G4 ligands.
 
-## G4 sensitisers common to two independent cell lines
+### G4 sensitisers common to two independent cell lines
 
 We next sought to extend the use of the custom shRNA lentiviral library to gain initial insights into possible commonalities and differences in the response to G4 ligands in cells from different lineages. We therefore applied the custom library to mesenchymal-derived HT1080 fibrosarcoma cells (wild-type TP53, driven by activated NRAS (Q61K) and IDH1 mutation (R132C)) and compared the results to those from ectodermal A375 melanoma cells above (Figure 7, Figure 7—figure supplement 1F & G, Supplementary files 1 & 2). The custom HT1080 screen recovered a total of 121 G4 ligand sensitisers, with the majority (73 genes, 58%) shared with those seen for each ligand in the A375 genome-wide screen. Cytoscape network analysis (Figure 7A) revealed a core set of G4-associated genes/pathways for these genes in spliceosome, HR and ubiquitin-mediated proteolysis processes (p<0.0005). Overall, 29 PDS and 22 PhenDC3 gene sensitivities were found to be shared across all three screens (Figure 7B,C), and it is noteworthy that both G4 ligands targeted similar processes including transcription, splicing and ubiquitin-mediated proteolysis (Figure 7D,E).
 
-## BRCA1, TOP1, DDX42 and GAR1 are key G4 ligand sensitiser genes
+![Figure 7.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig7-v1.jpg)
+
+**Figure 7.:** (A) Enriched KEGG and GO pathways for all G4 ligand-specific sensitisers (73 genes) shared between the genome-wide A375 and HT1080 screens. A right-sided enrichment test with Bonferroni correction used (see Materials and methods). (B–C) Comparison of G4 sensitisers across A375 focused, A375 genome-wide and HT1080 focused screens for (B) PhenDC3 and (C) PDS. (D–E) DAVID, STRING (experimental data, co-expression, medium confidence (≥0.4) interaction) and UniProtKB data analysis showing biochemical functions for common PhenDC3 (D) and PDS (E) sensitisers across all three screens. *=genes in multiple categories. Blue, four sensitisers common to both ligands. (F) Left, common sensitiser genes across all three screens. Right, number of depleted hairpins and median log2FC values for four key genes found as both PDS and PhenDC3 sensitisers across all the three screens. See also Figure 7—figure supplement 1, Supplementary file 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Cumulative population doublings for HT1080 cells for DMSO, PDS and PhenDC3 (mean and standard deviation from three cell counts per condition). (B) Comparison between the numbers of shRNAs targeting each gene, with the maximum capped at seven per gene. (C–E) Venn diagrams from the HT1080 focused screen showing (C) significantly depleted shRNAs at t15 v t0 (FDR ≤ 0.05) for DMSO, PDS and PhenDC3 treatment, (D) significantly depleted genes (minimum 50% or three significant shRNAs; FDR ≤ 0.05) and (E) sensitiser genes (significantly depleted in PDS or PhenDC3 but not DMSO and median log2FC ≤ −1). (F–G) Venn diagrams showing G4-ligand-specific sensitisers overlapping between (F) the genome-wide (GW) A375 and HT1080 focused screens and (G) the HT1080 and A375 focused screens (50% or three significantly depleted with a median log2FC ≤ −1). See also Supplementary file 2.
+
+### BRCA1, TOP1, DDX42 and GAR1 are key G4 ligand sensitiser genes
 
 When we evaluated the data collectively from all screens, it was apparent that four genes were repeatedly found as G4 ligand sensitisers- BRCA1, TOP1, DDX42 and GAR1, as they consistently appeared in both cell types and with both G4-ligands in all screens (Figure 7F, Figure 7—figure supplement 1F). To corroborate these genes as genuine G4 sensitisers, we developed an independent siRNA knockdown approach using a shorter timeframe (~6 days) to recapitulate ligand-induced growth inhibition (Figure 8). Both A375 and HT1080 cells were transfected with siRNAs targeting BRCA1, TOP1, DDX42 or GAR1 alongside non-targeting siRNA and non-transfected controls. Following 24 hr, cells were treated with two concentrations of PDS and PhenDC3 or vehicle control DMSO for 144 hr. Growth curves for non-transfected and non-targeting siRNA controls were similar across ligand treatments in both cell lines (Figure 8—figure supplements 1 and 2). For both HT1080 (Figure 8A & B) and A375 cells (Figure 8—figure supplement 3A & B), protein depletion following siRNA transfection was confirmed after 48 hr by immunoblotting cell lysates with the appropriate antibodies (average 76–92% knockdown for HT1080; 41–69% knockdown for A375 after 48 hr). The percentage difference in confluency compared to non-targeting siRNA control cells was plotted (Figure 8—figure supplement 1B–E and Figure 8—figure supplement 3C–F) and compared to DMSO treatment at 72, 96 and 120 hr (Figure 8C–F, Figure 8—figure supplement 3G–J).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig8-v1.jpg)
+
+**Figure 8.:** (A) HT1080 cells were treated with non-targeting (NT) or targeting (T) siRNAs for BRCA1, TOP1, DDX42 and GAR1. 48 hr and 144 hr after transfection, cell lysates and a non-transfected cell lysate (U) were probed with appropriate antibodies and actin control by western blotting. (B) Protein levels for targeting (T) and non-targeting (NT) 48 hr lysates were normalised to the internal actin control and then normalised to NT levels for three biological replicates (mean ± standard deviation). (C–F) HT1080 cells were transfected with targeting siRNAs for 24 hr before PDS, PhenDC3 or DMSO treatment. Comparative box plots of confluency differences and significance (unpaired parametric t-test) at selected timepoints for ﻿(C) BRCA1, (D) TOP1, (E) DDX42, (F) GAR (ns = not significant) for three separate siRNA transfections. See also Figure 8—figure supplements 1, 2 and 3.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) HT1080 cells were transfected with targeting siRNAs (orange) against BRCA1, TOP1, DDX42 or GAR1 for 24 hr before treatment with PDS (0.25 μM and 0.5 μM), PhenDC3 (20 μM and 40 μM) or vehicle control (DMSO). For each knockdown, confluency over 144 hr was monitored and plotted against confluency of non-transfected cells (blue) and cells transfected with a non-targeting control siRNA (green). Experiments were performed in triplicate and average confluency accumulation shown (mean ± standard deviation). (B–D) Confluency differences (mean ± standard deviation) compared to NT siRNA were plotted across three replicates for (B) BRCA1, (C) TOP1, (D) DDX42, (E) GAR1.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** A375 cells were transfected with targeting siRNAs (orange) against BRCA1, TOP1, DDX42 or GAR1 for 24 hr before treatment with PDS (5 μM and 10 μM), PhenDC3 (20 μM and 40 μM) or vehicle control (DMSO). For each knockdown, confluency over 144 hr was monitored and plotted against confluency of non-transfected cells (blue) and cells transfected with a non-targeting control siRNA (green). Experiments were performed in triplicate and average confluency accumulation shown (mean ± standard deviation).
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** (A) For BRCA1, TOP1, DDX42 and GAR1, A375 cells were transfected with non-targeting (NT) or targeting (T) siRNAs. 48 hr and 144 hr after transfection, lysates were probed appropriate antibodies alongside a non-transfected lysate (U). (B) BRCA1, TOP1, DDX42 and GAR1 protein levels for targeting (T) and non-targeting (NT) lysates were normalised to the internal actin control and then normalised to NT levels for three independent blots 48 hr (top) and two independent blots 144 hr (bottom) after transfection (mean ± standard deviation). (C–F) A375 cells were transfected with the targeting siRNAs for 24 hr before PDS, PhenDC3 or DMSO treatment. Average confluency difference (mean ± standard deviation) compared to NT siRNA plotted across three replicates for (C) BRCA1, (D) TOP1, (E) DDX42, (F) GAR1. Confluency differences at 72, 96 and 120 hr plotted for comparison for (G) BRCA1, (H) TOP1, (I) DDX42, (J) GAR1.
+
 Mirroring the shRNA screen findings, siRNA knockdown of all four genes in HT1080 cells imparted significant increases in sensitivity with PDS or PhenDC3 compared to DMSO. Some differences between the ligands and individual gene knockdowns were noted. For BRCA1 and TOP1 the lowest concentration of PDS resulted in the most sensitisation and this was evident early at 72 hr, whereas both PhenDC3 concentrations resulted in similar growth inhibition and was apparent later (Figure 8C & D, Figure 8—figure supplement 1). For DDX42 and GAR1, growth inhibition was mostly manifest from 96 hr, with both ligands and concentrations being broadly similar (Figure 8E & F, Figure 8—figure supplement 1). Results with the A375 cells also lend support to our observations, although there were some differences compared to HT1080 cells (Figure 8—figure supplements 2 and 3). While GAR1 knockdown showed a similar sensitivity profile, BRCA1 and TOP1 deficiencies were sensitive to PDS but not PhenDC3. DDX42 knockdown in A375 cells did not reflect the screens ligand sensitivities and this may in part be due to lower knockdown efficiency compared (~40%). Nonetheless, these independent siRNA short-term assays substantiate that BRCA1, TOP1, DDX42 and GAR1 are genetic vulnerabilities to G4 ligands and these may open up future possibilities for therapeutic development.
 
-## G4-targeting ligands plus pharmacological inhibitors of G4 sensitiser genes demonstrate synergistic cell killing
+### G4-targeting ligands plus pharmacological inhibitors of G4 sensitiser genes demonstrate synergistic cell killing
 
 One of our aims was to identify potential cancer genotypes where G4-ligands could be therapeutically exploited. Cancers deficient in our newly discovered G4 sensitisers may be preferentially sensitive to G4-ligands as single agents. Alternatively, rather than exploiting a genetic deficiency per se, it may be possible to use pharmacological inhibition of a critical cancer gene product that phenocopies the deficiency in combination with G4 ligands as an orthogonal approach (Figure 9A). As proof-of-principle, we systematically evaluated cell death potentiation with the G4 ligand PDS in combination with pharmacological inhibitors for two new G4 sensitisers gene products, the WEE1 kinase or the deubiquitinase USP1 (Figure 9B). WEE1 is a crucial G2/M regulator overexpressed in several cancers (Matheson et al., 2016), and USP1 is involved in DDR regulation and is overexpressed in non-small cell lung and other cancers (reviewed in García-Santisteban et al., 2013). For our studies, we used MK1775 (AZD1775), a WEE1 kinase inhibitor that is being clinically evaluated in several cancers (Richer et al., 2017), and pimozide a potent USP1-targeting drug (Chen et al., 2011a). HT1080 and A375 cells were cultured in matrix combinations of PDS with MK1775 or pimozide at concentrations surrounding the GI50 values and cell viability measured after 96 hr using an end-point ATP luminescence-based assay (CellTiter-Glo, Promega). Combenefit software (Di Veroli et al., 2016) was then used to calculate synergy for different treatment combinations in which the percentage growth inhibition compared to single agent controls is used to plot a 3D-dose-response surface of synergy distribution in concentration space (Figure 9C–F). In HT1080 cells, synergy was found for both PDS and MK1775 or pimozide combinations (Figure 9C,D, Figure 9—figure supplement 1) with peak synergies of 21% and 24% at 156 nM PDS with 21 nM MK1775 or 6.25 μM pimozide, respectively (GI50 for PDS, MK1775 and pimozide alone = 322 nM, 59 nM and 8.4 μM, respectively). A375 cells showed lower synergy with PDS and MK1775 combination (Figure 9E, Figure 9—figure supplement 1), with peak synergy of 15% at 8 μM PDS, 444 nM MK1775 (GI50 for PDS, MK1775 and pimozide alone = 8.5 μM, 625 nM and 12.2 μM, respectively). The greatest synergy was seen in combinations of PDS and pimozide in A375 cells (Figure 9F, Figure 9—figure supplement 1) with a peak synergy of 61% at 5.33 μM PDS, 6.25 μM pimozide. Furthermore, long-term clonogenic survival assays revealed a similar potentiation of growth inhibition, albeit at lower compound concentrations, for PDS/MK1775 and PDS/pimozide drug combinations for both cell lines tested (Figure 9—figure supplement 2). Altogether, these results validate that appropriate drug combinations can synergistical act as a surrogate for gene deficiencies in the presence of G4 ligands and thus complements the findings uncovered by our genetic screening approach.
 
-## Identification of DDX42 as a new G4-binding protein
+![Figure 9.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig9-v1.jpg)
+
+**Figure 9.:** (A) Cell death potentiation with G4-stabilising ligands in combination with either gene deficiencies, such as shRNA-mediated knockdown (top), or pharmacological inhibition of a protein (bottom). (B) Numbers of depleted shRNA hairpins and median log2FC values for WEE1 and USP1 in the genome-wide and focused screens. (C–F) Synergy plots for HT1080 (C, D) and A375 (E, F) cells treated with PDS in combination with MK1775 (C, E) or pimozide (D, F). To determine any synergy in cell killing, 3D response surface plots were calculated using Combenefit software with the BLISS model for an average of three biological replicas. Heat bar- blue shading indicates synergy combinations, red indicates antagonism (see also Figure 9—figure supplements 1 and 2).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A–D) Cell viability Cell-Titer Glo 96 hr luminescent values for HT1080 and A375 treated with PDS and MK1775 or PDS and pimozide, were normalised to the untreated controls (denoted 100% viability) and the viability of each condition expressed as a percentage of the untreated cells. These input values are then analysed using the BLISS model within the Combenefit software package to create a matrix of how the treatment ‘controls’ cell viability. Brown denotes high control, thus low viability. (E–H) 2D BLISS synergy matrix derived from ‘control’ input. Each dose combination is given a synergy score. Blue and a high percentage indicates synergy.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** Clonogenic survival of HT1080 and A375 cells after 8-day exposure to the indicated drug combinations. (A–D) Colony intensity values, determined by ColonyArea Image J plugin, were expressed as a percentage of untreated (DMSO only) controls. (E–H) BLISS synergy matrix derived using Combenefit software package from normalised colony intensity values. Mean ± standard deviation shown (I–L) Representative SRB-stained colonies for A375 (K and L) and HT1080 (I and J) cells. Three biological replicates were performed.
+
+### Identification of DDX42 as a new G4-binding protein
 
 Another of our aims was to use the findings of our shRNA screen to identify proteins that may bind and/or regulate G4 structures in cells, such as G4 helicases. Indeed, DHX36 and DHX9, known G4 helicases (Giri et al., 2011; Chen et al., 2018; Chakraborty and Grosse, 2011; Creacy et al., 2008 ; Vaughn et al., 2005) and the DEAD box protein DDX3X, that was recently shown to bind RNA G4s (Herdy et al., 2018), were identified as G4 sensitisers in our screen. Further members of the DDX/DHX helicase family also appeared as G4 sensitisers (Figure 10A), raising the question of whether these represent previously uncharacterized G4-binding proteins. To address this directly, we chose to investigate DDX42 as this was one of the four key G4 sensitisers identified above. DDX42 is a non-processive RNA helicase (Uhlmann-Schiffler et al., 2006) and has been associated with splicing (Will et al., 2002); however, this protein remains largely uncharacterised. By immunoblotting of nuclear and cytoplasmic sub-cellular fractions (Figure 10B–E), we first established that DDX42 predominantly localises to the nucleus (~4 to 9-fold greater than cytoplasmic levels) in three independent cell lines, (HT1080, HEK293 and HeLa). As controls for fractionation, LaminB1 and GAPDH were found to partition as expected into nuclear and cytoplasmic fractions, respectively (Figure 10C,D).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig10-v1.jpg)
+
+**Figure 10.:** (A) Number of depleted hairpins and median log2FC values for DEAH/DEAD-box helicase genes within the 758 genes identified in the genome-wide screen. Those highlighted in blue caused sensitivity to both PDS and PhenDC3. (B) Representative immunoblots showing cytoplasmic (C) and nuclear (N) lysates for HT1080, human embryonic kidney (HEK) and HeLa cells probed for DDX42, laminB1 and GAPDH2. (C, D) GAPDH and laminB1 protein levels for (C) cytoplasmic and (D) nuclear lysates (mean for two biological replicates ± standard deviation). (E) DDX42 nuclear protein levels (normalised to cytoplasmic levels, mean for two biological replicates ± standard deviation). (F, G) DDX42 binding curves G4s by ELISA. (F) NRAS 5’ UTR RNA G4 (rG4), mutated G4 sequence (rG4 mut) and RNA hairpin. (G) MYC DNA G4 (dG4) and mutated control (dG4 mut). Apparent Kd is calculated from five replicates (values are indicative as the model assumes saturation kinetics).
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/46793/elife-46793-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** Circular dichroism spectra for G4-forming oligonucleotides (red) and mutated controls (blue) annealed in 100 mM KCl. G4 structures show a characteristic signature with a positive peak at 264 nm and negative peak at 241 nm. (A) NRAS 5’UTR RNA G4 and (B) MYC promoter DNA G4.
 
 As DDX42 is known to bind RNA, we next set out to demonstrate DDX42 affinity for a RNA-G4 structure as this has not previously been documented. For this, a G4 RNA oligonucleotide from the NRAS 5’UTR sequence, which forms a stable parallel G4 (Kumari et al., 2007), was used together with a mutated oligonucleotide unable to form a G4 structure and also a RNA hairpin as negative controls (Herdy et al., 2018). Oligonucleotides were folded in 100 mM KCl to promote G4 structure formation and the resultant structures confirmed by circular dichroism (CD) spectroscopy (Figure 10—figure supplement 1). The affinity of recombinant DDX42 was then investigated by Enzyme Linked Immunosorbent Assay (ELISA, Figure 10F) and binding parameters calculated using a non-linear regression model, assuming one-site-specific binding and saturation kinetics using Prism software. DDX42 bound the NRAS G4 folded in KCl with an apparent Kd of 71.1 ± 3.5 nM and did not bind detectably to the mutant oligonucleotide or RNA hairpin controls.
 
@@ -105,6 +165,208 @@ The clinical PARP inhibitor, olaparib has exemplified the concept of synthetic l
 In dropout screens, dissociating minor from robust growth effects is important and is highly dependent on parameters such as compound dose, genotype and cell line selected. Our screen was designed with stringent parameters to detect genes deficiencies worthy of further exploration. Indeed, we demonstrate potent growth inhibition of up to 80% of the four top G4 sensitisers genes in a parallel siRNA approach.
 
 The gene sensitivities uncovered here have potential to be exploited chemotherapeutically in cancer by deploying a G4-stabilising drug as a single-agent therapy. Alternatively, in the absence of a particular gene deficiency, pharmacological inhibition of a critical oncogene could phenocopy the genetic sensitivities described here and be used in combinatorial treatments with G4-stabilising drugs. This may be attractive as cells are less likely to simultaneously develop resistance against two drugs (reviewed in Chan and Giaccia, 2011). Furthermore, as lower drug doses are used, this increases the therapeutic window and has less adverse side effects. As proof-as-principle for this, we selected the WEE1 cell cycle kinase and the deubiquitinase USP1, and demonstrated that their pharmacological inhibition, with MK1775 and pimozide, respectively, leads to the potentiation of cell death in conjunction with the G4 ligand PDS. For example, 5.3 μM PDS or 6.25 μM pimozide alone impart little growth inhibition (14% and 6% respectively), but together they lead to strong growth inhibition (79%). Table 1 highlights further potential combinatorial opportunities for cancer-associated genes with clinical and/or experimental drugs. Additional therapeutic possibilities for other gene sensitivities that are largely still to be explored from a pharmacological perspective are illustrated in Table 2.
+
+**Table 1.**
+ Possible chemotherapeutic combinations for G4-stabilising ligands with clinically relevant pharmacological drugs
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Oncogene/tumour suppressor</th>
+      <th>Combinatorial/single agent</th>
+      <th>Available drug treatments</th>
+      <th>Cancer association summary</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BRCA1/2</td>
+      <td>Tumour suppressor</td>
+      <td>Single agent</td>
+      <td>Olaparib CX-5461</td>
+      <td>Deficient in ovarian,breast and colorectal cancer.</td>
+      <td>Lee et al., 2014; Xu et al., 2017; McLuckie et al., 2013; Zimmer et al., 2016</td>
+    </tr>
+    <tr>
+      <td>CCDC6</td>
+      <td>Tumour suppressor</td>
+      <td>Single agent</td>
+      <td>Olaparib</td>
+      <td>Inactivated in thyroid and lung cancers. CCDC6-deficient tumours are cisplatin-resistant but olaparib sensitive.</td>
+      <td>Puxeddu et al., 2005; Morra et al., 2015</td>
+    </tr>
+    <tr>
+      <td>CDK12</td>
+      <td>Oncogene</td>
+      <td>Combinatorial</td>
+      <td>Dinaclib (SCH77965)</td>
+      <td>High-grade serous ovariancancer, often exhibits gain-of-function CDK12.</td>
+      <td>Parry et al., 2010; Bajrami et al., 2014</td>
+    </tr>
+    <tr>
+      <td>KEAP1</td>
+      <td>Oncogene/Tumour suppressor</td>
+      <td>Combinatorial/single agent</td>
+      <td>CDDO-Me CPUY192018</td>
+      <td>KEAP1 inactivated in multiple cancers including thoracic and endometrial; also hasoncogenic role, CDDO-Me used forleukaemia and sold tumours.</td>
+      <td>Sanchez-Vega et al., 2018; Abed et al., 2015; Lu et al., 2016; Wang et al., 2014</td>
+    </tr>
+    <tr>
+      <td>PSMC2</td>
+      <td>Oncogene</td>
+      <td>Combinatorial</td>
+      <td>Proteosome inhibitors: Bortezomib CEP187710 Carfizomib</td>
+      <td>Ubiquitin is emerging aschemotherapeutic target, and general proteasome inhibitors clinically are used against multiple myeloma.</td>
+      <td>Chen et al., 2011a; Mattern et al., 2012; Edelmann et al., 2011</td>
+    </tr>
+    <tr>
+      <td>SMAD4</td>
+      <td>Tumour suppressor</td>
+      <td>Single agent</td>
+      <td>GSKi: NCT01632306 NCT01214603 NCT01287520</td>
+      <td>Inactivated in 50% of pancreatic adenocarcinomas. Negativelyregulated by GSK, GSKis in clinical trials for metastatic pancreatic cancer and acute leukaemia.</td>
+      <td>Schutte et al., 1996; Hahn et al., 1996; Demagny and De Robertis, 2016; McCubrey et al., 2014</td>
+    </tr>
+    <tr>
+      <td>SRSF10</td>
+      <td>Oncogene</td>
+      <td>Combinatorial</td>
+      <td>E7107 1C8</td>
+      <td>Over-expressed in colon cancer. 1C8 inhibits SRSF10 and impairs HIV replication. FUS interactingprotein. E7107 is a splicinginhibitor preventing spliceosome assembly.</td>
+      <td>Zhou et al., 2014; Shkreta et al., 2017; Cheung et al., 2016; Kotake et al., 2007</td>
+    </tr>
+    <tr>
+      <td>UBA3</td>
+      <td>Oncogene</td>
+      <td>Combinatorial</td>
+      <td>MLN4924</td>
+      <td>Upregulated in AML and multiple solid cancers. MLN4924 is in Phase Iclinical trials.</td>
+      <td>Soucy et al., 2009</td>
+    </tr>
+    <tr>
+      <td>USP1</td>
+      <td>Oncogene/Tumour suppressor</td>
+      <td>Combinatorial/single agent</td>
+      <td>Pimozide</td>
+      <td>Over-expressed inmelanoma, gastric, cervical and NSCLC; under-expressed in leukaemia and lymphoma. Pimozide is a potent USP1-targeting drug.</td>
+      <td>García-Santisteban et al., 2013; Chen et al., 2011b</td>
+    </tr>
+    <tr>
+      <td>WEE1</td>
+      <td>Oncogene/Tumour suppressor</td>
+      <td>Combinatorial/single agent</td>
+      <td>AZDMK1775</td>
+      <td>Over-expressed in several cancers, some NSCLC are deficient.</td>
+      <td>Matheson et al., 2016; Richer et al., 2017; Backert et al., 1999; Yoshida et al., 2004</td>
+    </tr>
+    <tr>
+      <td>WHSC1</td>
+      <td>Oncogene</td>
+      <td>Combinatorial</td>
+      <td>DA3003-1 PF-03882845 Chaetocin TC-LPA5-4 ABT-199</td>
+      <td>Over-expressed in prostate cancer, multiple myeloma and mantle cell lymphoma. five potent candidate inhibitors.</td>
+      <td>Coussens et al., 2017; Bennett et al., 2017</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Examples of cancer-associated genetic vulnerabilities to G4 ligands.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene category</th>
+      <th>Gene name</th>
+      <th>Function/pathway Summary</th>
+      <th>Cancer association summary</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">DNA damage repair</td>
+      <td>PALB2</td>
+      <td>Homologous recombination; binds BRCA2</td>
+      <td>Inactivating mutations predispose patients to myeloid leukaemia, Wilm’s tumour and Fanconi anaemia.</td>
+      <td>Harrigan et al., 2018; Nepomuceno et al., 2017</td>
+    </tr>
+    <tr>
+      <td>BAP1</td>
+      <td>Homologous recombination; binds BRCA1, deubiquitinase for Histone 2A and tumour suppressor HCFC-1</td>
+      <td>Inactivating mutations foundin uveal melanoma and mesotheliomas.</td>
+      <td>Harrigan et al., 2018; Carbone et al., 2013</td>
+    </tr>
+    <tr>
+      <td>USP1</td>
+      <td>Fanconi anaemia and translesion synthesis DDR; deubiquitinase required for FANCD2, FANCI and PCNA localisation to sites of DNA damage</td>
+      <td>USP1 mRNA over-expressed in melanoma, gastric, cervical and NSCLC; under-expressed in leukaemia and lymphoma.</td>
+      <td>Harrigan et al., 2018; Nijman et al., 2005; Huang et al., 2006; García-Santisteban et al., 2013</td>
+    </tr>
+    <tr>
+      <td>TOP1</td>
+      <td>Relieves torsional stress during DNA replication; suppresses genomic instability at actively transcribed exogenous G4-forming sequences</td>
+      <td>Common cancer target, to induces DNA damage following pharmacological inhibition, lethal to cells.</td>
+      <td>Yadav et al., 2014; Wang, 2002</td>
+    </tr>
+    <tr>
+      <td>Helicase activity</td>
+      <td>RECQL4 RTEL1</td>
+      <td>Previously identified G4-helicases</td>
+      <td>RECQL4 (Rothmund-Thomsun syndrome) and RTEL1 (Hoyeraal-Hreidarsson Syndrome), deficiencies impart increased risks of cancer cancer, autoimmunity and premature ageing.</td>
+      <td>Brosh, 2013</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Chromatin remodellers</td>
+      <td>ANKRD11</td>
+      <td>Transcription factor; Recruits histone deacetylases</td>
+      <td>Tumour suppressor epigenetically silenced in breast cancers.</td>
+      <td>Lim et al., 2012 Neilsen et al., 2008 Noll et al., 2012</td>
+    </tr>
+    <tr>
+      <td>MLL4</td>
+      <td>H3K4 lysine methyl transferase</td>
+      <td>Frequently inactivated in several cancers.</td>
+      <td>Froimchuk et al., 2017Kadoch et al., 2013; Rao and Dou, 2015</td>
+    </tr>
+    <tr>
+      <td>SMARCA4 SMARCB1 SMARCE1</td>
+      <td>SWI/SNF ATP-dependent chromatin remodellers</td>
+      <td>Mutated in 20% of human cancers; doxorubicin resistant triple-negative breast cancer is associated with loss of SMARCB1, SMARCA4, or KEAP1 (a BRCA1 interactor).</td>
+      <td>Kadoch et al., 2013; Shain and Pollack, 2013</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Ubiquitin</td>
+      <td>USP37</td>
+      <td>Deubiquitinating enzyme which stabilises MYC</td>
+      <td>Upregulated in lung cancer.</td>
+      <td>Pan et al., 2015</td>
+    </tr>
+    <tr>
+      <td>NEDD4L</td>
+      <td>E3 ubiquitin ligase</td>
+      <td>Expression correlates with poor patient outcome in hepatocellular and gastric carcinomas.</td>
+      <td>Zhao et al., 2018; Gao et al., 2012</td>
+    </tr>
+    <tr>
+      <td>RNF20</td>
+      <td>E3 ubiquitin ligase; chromatin remodelling and DDR</td>
+      <td>Tumour supressor down-regulated in several cancers. Deletion is main contributor to chromosomal instability in colorectal cancer.</td>
+      <td>Moyal et al., 2011; Shema et al., 2008; Barber et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Splicing</td>
+      <td>FUS</td>
+      <td>Splicing component and known G4-interactor</td>
+      <td>Over-expressed in colon, breast and liposarcoma cancers, respectively.</td>
+      <td>Crozat et al., 1993; Dvinge et al., 2016; Takahama et al., 2013</td>
+    </tr>
+  </tbody>
+</table>
 
 While the custom HT1080 screen recovered 58% of sensitisers seen for each ligand in the A375 genome-wide screen, it is striking that this increases to 93% (i.e. 112 out of 121) when considering all screens irrespective of G4 ligand, suggesting remarkable consistency when comparing G4 ligand effects globally. Differences in individual ligand sensitives may arise from variances in cellular uptake and dose, for example, the GI20 dose of PhenDC3 is ten-fold higher for A375 compared to HT1080; G4 ligand-dependent molecular preference for G-tetrad end binding (Le et al., 2015) and/or the accessibility of G4s in the chromatin of individual cell lines (Hänsel-Hertsch et al., 2016). These points plus differences in protein knockdown efficiency, especially in A375 cells, may contribute to the differences in G4 ligand growth inhibition in our siRNA experiments. In the siRNA experiments, the G4 ligand-induced growth inhibition of both A375 and HT1080 appear not to follow a ‘typical’ dose response where higher concentrations lead to greater effects. This may in part be due to there being an optimum G4 ligand dose for a particular gene loss leading to enhanced cell death. Indeed, it is thought that lower drug concentrations better fall within a ‘synthetic lethality window’ (Nijman, 2011). Higher doses may mask these effects, by targeting more G4s that are not dependent on the particular gene lost and/or be due to other off-target effects. This is also supported by the experiments in Figure 9 that show synergy is only apparent at defined concentrations.
 
@@ -122,88 +384,698 @@ In conclusion, we have revealed genes and pathways that interact with stabilised
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. Sapiens)</td>
+      <td>A375</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-1619, RRID:CVCL_0132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. Sapiens)</td>
+      <td>HT1080</td>
+      <td>ATCC</td>
+      <td>Cat# CCL-121, RRID:CVCL_0317</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. Sapiens)</td>
+      <td>Plat-A</td>
+      <td>Cell Biolabs Inc</td>
+      <td>Cat# RV-102, RRID:CVCL_B489</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Beta Actin</td>
+      <td>Merck</td>
+      <td>Cat# A5441, RRID:AB_476744</td>
+      <td>WB (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse polyclonal anti-DDX42</td>
+      <td>Abcam</td>
+      <td>Cat# ab80975, RRID:AB_2041042</td>
+      <td>WB (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Beta Actin</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat# 4970, RRID:AB_2223172</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-BRCA1</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat# 9010, RRID:AB_2228244</td>
+      <td>WB (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-GAPDH</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat# 5174, RRID:AB_10622025</td>
+      <td>WB (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GAR1</td>
+      <td>NovusBio</td>
+      <td>Cat# NBP2-31742, RRID:AB_2801566</td>
+      <td>WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GST, HRP-conjugated</td>
+      <td>Abcam</td>
+      <td>Cat# ab3416, RRID:AB_30378</td>
+      <td>ELISA (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-LaminB1</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat# 12586, RRID:AB_2650517</td>
+      <td>WB (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-TOP1</td>
+      <td>Abcam</td>
+      <td>Cat# ab109374, RRID:AB_10861978</td>
+      <td>WB (1:250)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-VSV-G plasmid</td>
+      <td>Addgene</td>
+      <td>Cat # 8454, RRID:Addgene_8454</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>G-quadruplex focused shRNA plasmid library</td>
+      <td>transOMIC technologies, this paper</td>
+      <td></td>
+      <td>supplied as a glycerol stock, Materials and methods subsection: ‘Composition and recombinant DNA reproduction of shRNA libraries’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>transOMIC LMN genome-wide shRNA plasmid library</td>
+      <td>transOMIC technologies</td>
+      <td></td>
+      <td>supplied as multiple glycerol stocks</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Biotinylated oligonucleotides</td>
+      <td>Biffi et al. (2013), Herdy et al. (2018), this paper</td>
+      <td></td>
+      <td>Materials andmethods subsection ‘Oligonucleotide annealing’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genomic qPCR primers</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Materials and methods subsection ‘Barcode recovery, adapter ligation and sequencing’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pasha/DGCR8 siRNA</td>
+      <td>Qiagen</td>
+      <td>Cat# 1027423</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNAs</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Materials and methods subsection ‘siRNA validation experiments – transfection, experimental outline, immunoblotting’</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human DDX42</td>
+      <td>NovusBio</td>
+      <td>Cat# H0001325-P01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BluePippin 2% Internal Standard Marker Kit</td>
+      <td>Sage Science</td>
+      <td>Cat# BDF2010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTitre-Glo One Solution Assay Reagent</td>
+      <td>Promega</td>
+      <td>Cat# G8461</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA library quantification kit for Illumina platforms</td>
+      <td>Kapa Biosystems</td>
+      <td>Cat# 07960140001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KOD Hot Start DNA polymerase</td>
+      <td>Merck</td>
+      <td>Cat# 710864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine RNAiMAX</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 13778150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Muse Count and Viability kit</td>
+      <td>Merck</td>
+      <td>Cat# MCH600103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAmp DNA Blood Maxi Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 51194</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAquick PCR purification kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 28104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit dsDNA HS assay kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# Q32851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RIPA lysis buffer</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 8990</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ZR GigaPrep Kit</td>
+      <td>Zymo Research</td>
+      <td>Cat# D4057</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampicillin</td>
+      <td>Merck</td>
+      <td>Cat# A5354</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroquine diphosphate</td>
+      <td>Acros organics</td>
+      <td>Cat# 455240250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete mini protease inhibitor</td>
+      <td>Roche</td>
+      <td>Cat# 11836153001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 20688</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Geneticin</td>
+      <td>Gibco</td>
+      <td>Cat# 10131035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MK1775</td>
+      <td>Cambridge Bioscience</td>
+      <td>Cat# CAY21266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PenStrep</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 1507063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PhenDC3</td>
+      <td>In-house synthesis</td>
+      <td>De Cian et al., 2007a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pimozide</td>
+      <td>Merck</td>
+      <td>Cat# P1793-500MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pyridostatin (PDS)</td>
+      <td>In-house synthesis</td>
+      <td>Rodriguez et al. (2008)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Butyrate</td>
+      <td>Merck</td>
+      <td>Cat# 303410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TMB substrate</td>
+      <td>Merck</td>
+      <td>Cat# T4444</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie 2 v2.2.6</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>http://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ClueGO v3.5.1</td>
+      <td>Bindea et al., 2009; Bindea et al., 2013</td>
+      <td>http://www.ici.upmc.fr/cluego/cluegoDownload.shtml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ColonyArea</td>
+      <td>Guzmán et al., 2014</td>
+      <td>Image J plugin</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Code used for shRNA screen data analysis</td>
+      <td>This paper</td>
+      <td>All scripts are available at: https://github.com/sblab-bioinformatics/GWscreen_G4sensitivity</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Combenefit</td>
+      <td>Di Veroli et al., 2016</td>
+      <td>https://sourceforge.net/projects/combenefit/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape v3.6.0</td>
+      <td>Shannon et al., 2003</td>
+      <td>http://www.cytoscape.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR v3.6</td>
+      <td>Robinson et al., 2010</td>
+      <td>http://bioconductor.org/packages/release/bioc/html/edgeR.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID</td>
+      <td>Huang et al., 2009a, Huang et al., 2009b</td>
+      <td>https://david.ncifcrf.gov</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC v0.11.3</td>
+      <td>Andrews, 2010</td>
+      <td>http://www.bioinformatics.babraham.ac.uk/projects/fastqc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FASTX-Toolkit v0.0.14</td>
+      <td>Gordon and Hannon, 2010</td>
+      <td>http://hannonlab.cshl.edu/fastx_toolkit.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PolySearch2</td>
+      <td>Liu et al., 2015a</td>
+      <td>http://polysearch.cs.ualberta.ca/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python programming language v2.7.10</td>
+      <td>https://www.python.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R programming language v3.2.1</td>
+      <td>https://cran.r-project.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Unix tools (cat, cut, awk, sort and uniq)</td>
+      <td>https://opengroup.org/unix</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 HT1080 (RRID: CRL-1619) and A375 (RRID: CRL-121) were obtained from the American Type Culture Collection repository (ATCC) (LGC Standards, United Kingdom) and Plat-A (RRID: RV-102) was obtained from Cell Biolabs Incorporation. All cell lines were cultured in DMEM medium (ThermoFisher Scientific, cat #41966029) supplemented with 10% (v/v) heat inactivated FBS (ThermoFisher Scientific, cat #10500064) and grown at 37°C in a 5% CO2 humidified atmosphere. Cell lines were authenticated using small tandem repeat (STR) profiling and regularly checked to be mycoplasma-free by RNA-capture ELISA. All cell lines tested negative for Mycoplasma contamination. None of the cell lines used in our studies was mentioned in the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee.
 
-## Quantification of live cell numbers
+### Quantification of live cell numbers
 
 Live cell numbers (e.g. for plating cells for CellTitre-Glo assays, the screens and Incucyte experiments) were determined using the Muse Cell Analyzer (Merck), ‘Count and Viability’ assay according to manufacturer’s instructions. Cells were diluted either 1:10 or 1:20 in ‘Muse Count and Viability kit’ solution (Merck, cat # MCH60013), to give a viable cell concentration of 1–2 × 106 cells/mL, with ‘Events to Acquire’ parameter set at 1000 events. Three cell counts were recorded.
 
-## Determination of G4 ligand concentration for shRNA screens
+### Determination of G4 ligand concentration for shRNA screens
 
 PDS and PhenDC3 (both synthesised in-house) (De Cian et al., 2007b; Rodriguez et al., 2008) were used as 100 mM stocks, dissolved in DMSO (Thermofisher Scientific, cat # 20688). GI20 values were calculated by treating A375 and HT1080 cells with serial dilutions of PDS and PhenDC3 for 96 hr and determining cell death via a CellTitre-Glo One Solution assay (Promega, cat # G8461) according to manufacturer’s protocol. Each serial dilution was replicated four times for two-cell-seeding densities (1000/1500 cells per well). For both densities, curves were plotted averaging the four replicates in Prism (GraphPad v6) using a Non-Linear regression model, ‘dose-response – inhibition’ equation [log(inhibitor) vs. normalised response – variable slope] and GI20 values calculated. The GI20 concentrations used represent an average of three separate assays per cell line and yielded the following concentrations used for the screens - A375: 10 μM PhenDC3 and 1.5 μM PDS; HT1080: 1 μM PhenDC3 and 0.5 μM PDS.
 
-## Composition and recombinant DNA production of shRNA libraries
+### Composition and recombinant DNA production of shRNA libraries
 
 The genome-wide screen uses the transOMIC LMN shRNA library against the human protein coding genome, consisting of 113,002 total shRNAs, split between 12 pools for ease-of-handling (approximately 10,000 shRNAs per pool) with an average number of five optimised hairpins per gene. The G4 focused screen consists of a custom shRNA pool (transOMIC technologies) with the same LMN vector (8018 shRNAs); this includes 1247 genes (7436 shRNAs) uncovered in the genome-wide screen (751 sensitisers and 496 upregulated genes), 116 additional genes identified from the literature as potentially G4-associated (439 shRNAs) and shRNAs targeting 37 olfactory receptors as non-targeting controls (143 shRNAs). 496 upregulated genes (FDR ≤ 0.05, 50% or three hairpins; log2FC ≥ 1) were included to mimic the genome-wide screen on a smaller scale by maintaining the population ratio of sensitisation and resistance. In this custom pool, unlike the commercially available genome-wide library, we capped the number of shRNAs at seven per gene. The backbone of both libraries contains NeoR and ZsGreen markers to allow monitoring of infected cell lines by Geneticin (Gibco, cat # 10131035) selection and fluorescence (MacsQUANT), respectively. Both libraries were provided as glycerol stocks. Bacterial density was determined by calculating the colony-forming units (CFU) from dilutions of the original glycerol stock after plating on agar plates (overnight, 37°C, 100 μg/mL ampicillin). Glycerol stocks were thawed completely with sufficient volume taken (based on CFU) to ensure a minimum of 1000-fold hairpin representation and inoculated into liquid culture (LB media + 100 μg/mL ampicillin). Plasmid DNA was isolated using ZR Gigaprep kit D4057 (Zymo research) according to manufacturer’s protocol and DNA quantified by Nanodrop Onec (Thermo Fisher Scientific).
 
-## shRNA stable cell line creation
+### shRNA stable cell line creation
 
 For the genome-wide screen, each pool was treated independently, necessitating the creation of 12 different polymorphic cell lines each containing an average of 10,000 shRNAs, for both HT1080 and A375, per replica (three replicas, 36 polymorphic cell lines). Virus was produced using the Platinum-A packaging cell line (4–6 × 15 cm plates per pool) and calcium phosphate transfection. 24 hr after plating Platimum-A cells (70–80% confluency), media was replaced with DMEM medium supplemented with 1% (v/v) PenStrep (Thermo Fisher Scientific, cat # 150763) and 10% (v/v) heat inactivated FBS, shRNA library plasmid (75 μg) was then mixed with pCMV-VSV-G plasmid (7.5 μg, Addgene cat # 8454), Pasha/DGCR8 siRNA (2.7 μM, Qiagen cat # 1027423) to increase viral titre and 0.25 M CaCl2 in a total volume of 1.5 mL per 15 cm dish and bubbled with 1.5 mL 2 x HBS (50 mM HEPES, 10 mM KCl, 12 mM Dextrose, 280 mM NaCl, 1.5 mM Na2PO4 at pH 7.00) and added to the Platinum-A cells (containing 17mL media) in a dropwise fashion. Immediately before adding the DNA-Pasha-transfection mixture to the Platinum-A cells, chloroquine diphosphate (lysosomal inhibitor, Acros Organics cat # 455200250) was added to the plates at a final concentration 2.5 μM. 14–16 hr after transfection, fresh media was added with 1:1000 1 M sodium butyrate (Merck, cat # 303410) for enhanced mammalian expression of the shRNA LMN plasmid. Virus was then harvested 48 hr after transfection and filter sterilised (0.45 μM) and stored at 4°C for a maximum of 7 days. Viral titre was determined by performing mock infections and quantifying fluorescent cells, via flow cytometry (MacsQUANT, Miltenyi Biotec Ltd.) 48 hr after infection. For both the genome-wide and focused-screen, 3.6 × 106 target cells were infected with a viral volume predicted to cause 30% infection (MOI 0.3) to minimise multiple shRNA integrations per cell. This provides approximately 10 × 106 shRNA expressing cells (1000-fold shRNA representation). Virus was diluted in serum free media plus polybrene (8 μg/mL) with infections carried out in triplicate and treated as independent replicates hereafter. 48 hr after infection cells antibiotic selection was performed with 800 μg/mL (HT1080) and 1000 μg/mL (A375) geneticin for 7–9 days (antibiotic concentrations were determined from 7-day toxicity curves prior to transfection setup).
 
-## Cell culture for pilot, genome-wide and focused shRNAs pools
+### Cell culture for pilot, genome-wide and focused shRNAs pools
 
 Following complete antibiotic selection, a reference time point was harvested (t0) and cells were split into 3 × 15 cm plates per replica: PDS, PhenDC3 and DMSO vehicle control, each containing 8–10 × 106 cells to maintain 1000-fold hairpin representation. Every 72 hr, cells were trypsinised, counted via Muse Cell Analyzer to determine the number of population doublings, and 10 × 106 (A375 genome-wide and focused) or 8 × 106 (HT1080) cells per replica re-plated in fresh drug/DMSO and media (17 mL media per plate). At all times, sufficient cell numbers were used so that a minimum of 1000 or 800 cells per shRNA was maintained (A375 and HT1080, respectively), to ensure maximal potential for uncovering phenotypic effects from each shRNA hairpin tested (Knott et al., 2014). The volume of DMSO used in the ‘vehicle’ condition is equal to the volume for 10 μM PhenDC3. The remaining drug treatments were supplemented with DMSO to match this volume to keep the same DMSO concentration between treatment cell lines and screens. For the pilot screen, two final timepoints were harvested after 7 and 15 population doublings (t7 and t15), pellets extracted and analysed as described below. Based on the pilot screen, discussed below, a final time point (tF) was harvested after 15 population doublings for subsequent genome-wide and focused screen. For each pool of the genome-wide screen, 12 samples were generated (t0, DMSO tF, PDS tF, PhenDC3 tF; three replicas each). Therefore, 144 samples of 10 × 106 cells were generated to cover the entire screen. For each cell line of the focused screen, 12 samples were generated (t0, DMSO tF, PDS tF, PhenDC3 tF, three replicas each).
 
-## Pilot screen technique to determine genome-wide parameters
+### Pilot screen technique to determine genome-wide parameters
 
 To determine the most appropriate tF for the genome-wide screen, cells (from shRNA pool 8) were harvested after 7 and 15 population doublings (t7 and t15 respectively) and the average log2FC (tF/t0) counts for each hairpin were determined as described below. For t7, 13 and 115 shRNAs were significantly altered following PDS and PhenDC3 treatment respectively (FDR ≤ 0.05). At t15, more hairpins were significantly depleted following PDS and PhenDC3 treatment (746 and 93 shRNAs respectively, excluding those significantly changed in DMSO).
 
-## Barcode recovery, adapter ligation and sequencing
+### Barcode recovery, adapter ligation and sequencing
 
 All PCR and sequencing oligonucleotides (Merck) are summarised in the table below. Cell pellets (10 × 106 cells) were resuspended in PBS and genomic DNA extracted using QIAmp DNA Blood Maxi Kit (Qiagen, cat # 51194) according to the manufacturer’s spin protocol, eluted in a final volume of 1200 μL and quantified by Qubit DNA HS Assay Kit (Thermo Fisher Scientific, cat # Q32851). The shRNA inserts were PCR-amplified from all DNA in each sample, in multiple 50 μL reactions each using 1.5 μg gDNA, with KOD Hot Start DNA Polymerase (Merck, cat # 710864) and the following reagents (included within the kit): 5 μL 10 x buffer, 5 μL 2 mM each dNTPs, 4 μL MgSO4 (25 mM), 1.5 μL polymerase, 4 μL DMSO. Forward (Mir-F) and reverse (PGKpro-R) primers flanking the loop and antisense sequence of the hairpin region were used at a final concentration of 300 nM. PCR was performed under the following conditions: 98°C for 5 min, then for 25 cycles of 98°C for 35 s, 58°C 35 s and 72°C for 35 s, followed by a final extension at 72°C for 5 min. 1.2 mL of pooled PCR reaction were cleaned-up using QIAquick PCR purification kit (Qiagen, cat # 28104) according to manufacturer’s protocol. 2 μg purified PCR product were PCR amplified in a second step, using forward (P5-Seq-P-Mir-Loop) and reverse (P7-Index-n-TruSeq-PGKpro-R) primers containing the P5 and P7 flowcell adapters, respectively. PCR was performed in 8 × 50 μL reactions each with 500 ng template DNA. The reverse primer contains TruSeq adapter small RNA Indexes for multiplexing and a 6-nucleotide barcode, denoted ‘nnnnnn’ below. PCR reagents were as for the first PCR, with the exception of the primers, which were used at a final concentration 1.5 μM. The second PCR was performed under the following conditions: 98°C for 5 min, then for 25 cycles of 94°C for 35 s, 52°C 35 s and 72°C for 35 s, followed by a final extension at 72°C for 5 min. 200 μL of pooled secondary PCR product was cleaned up as previously and the desired product (~340 bp) was extracted using BluePippin (Sage Science) 2% Internal Standard Marker Kit (DF marker 100–600 bp; Sage Science, BDF2010), according to manufacturer’s protocol using a broad range elution (300–400 bp). Individual samples were quantified with a KAPA library quantification kit (KAPA Biosystems, cat # 0796-6014-0001) using a BioRad CFX96 Real Time PCR instrument with no Rox according to manufacturer’s protocols. Libraries were diluted to 4 nM in RNAse free water. For the genome-wide screen samples, 24 libraries (12 pools) and for the focused screen samples, 24 libraries (both cell lines) were combined to create a pooled 4 nM stock, with each sample having a unique TruSeq adapter. The genome-wide screen samples were sequenced in six batches; all focused screen samples were sequenced simultaneously. DNA-Seq libraries were prepared from these samples using the NextSeq Illumina Platform v2 High Output Kit 75 cycles, followed by 36 base pair single-read sequencing performed on an Illumina NextSeq instrument, using a custom sequencing primer.
 
-Oligo nameDescriptionSequence 5’−3’Mir5-FPrimary PCR Forward Primer5’-CAGAATCGTTGCCTGCACATCTTGGAAAC- 3’PGKpro-RPrimary PCR Reverse Primer5’ -CTGCTAAA GCGCATGCTCCAGACTGC- 3’P5-Seq-P-Mir-LoopSecondary PCR forward Primer5’-AATGATACGGCGACCACCGAGATCTACACT AGCCTGCGCACGTAGTGAAGCCACAGATGTA-3’P7-Index-n-Truseq-PGKpro-RSecondary PCR barcoded reverse primer5’-CAAGCAGAAGACGGCATACGAGAT nnnnnnGTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTCTGCTAAAGCGCATGCTCCAGACTGC – 3’SeqPrimer MirLoopCustom sequencing primer5’-TAGCCTGCGCACGTAGTGAAGCCACAGATGTA-3
+<table>
+  <thead>
+    <tr>
+      <th>Oligo name</th>
+      <th>Description</th>
+      <th>Sequence 5’−3’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mir5-F</td>
+      <td>Primary PCR Forward Primer</td>
+      <td>5’-CAGAATCGTTGCCTGCACATCTTGGAAAC- 3’</td>
+    </tr>
+    <tr>
+      <td>PGKpro-R</td>
+      <td>Primary PCR Reverse Primer</td>
+      <td>5’ -CTGCTAAA GCGCATGCTCCAGACTGC- 3’</td>
+    </tr>
+    <tr>
+      <td>P5-Seq-P-Mir-Loop</td>
+      <td>Secondary PCR forward Primer</td>
+      <td>5’-AATGATACGGCGACCACCGAGATCTACACT AGCCTGCGCACGTAGTGAAGCCACAGATGTA-3’</td>
+    </tr>
+    <tr>
+      <td>P7-Index-n-Truseq-PGKpro-R</td>
+      <td>Secondary PCR barcoded reverse primer</td>
+      <td>5’-CAAGCAGAAGACGGCATACGAGAT nnnnnnGTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTCTGCTAAAGCGCATGCTCCAGACTGC – 3’</td>
+    </tr>
+    <tr>
+      <td>SeqPrimer MirLoop</td>
+      <td>Custom sequencing primer</td>
+      <td>5’-TAGCCTGCGCACGTAGTGAAGCCACAGATGTA-3</td>
+    </tr>
+  </tbody>
+</table>
 
-## Sequencing, read processing, alignment and counting of shRNAs
+### Sequencing, read processing, alignment and counting of shRNAs
 
 Sequencing data have been deposited in ArrayExpress (https://www.ebi.ac.uk/arrayexpress/) under accession number E-MTAB-6367. Reads were trimmed to 22 nucleotides, base qualities were evaluated with FastQC v0.11.3 (Andrews, 2010) and bases were filtered from the 3' end with a Phred quality threshold of 33 using the FASTX-Toolkit v0.0.14 (Gordon and Hannon, 2010). Trimmed reads were aligned to the 113,002 reference shRNA sequences provided by transOMIC technologies (Knott et al., 2014) using Bowtie 2 v2.2.6 with default parameters (Langmead and Salzberg, 2012), which resulted in overall alignment rates of 90–95% with an average of 98% of reference sequences detected. The generated SAM files were processed to obtain shRNA counts using Unix tools (https://opengroup.org/unix) and Python scripts (v2.7.10, https://www.python.org), and library purity and potential contaminations were investigated with stacked bar plots and multidimensional scaling (MDS) using the R programming language v3.2.1 (https://cran.r-project.org). The code and scripts developed during the development of the project are available in our group’s GitHub website (Martínez Cuesta, 2019; copy archived at https://github.com/elifesciences-publications/GWscreen_G4sensitivity).
 
-## Filtering, normalisation, differential representation analysis and defining sensitisation
+### Filtering, normalisation, differential representation analysis and defining sensitisation
 
 To discard shRNAs bearing low counts, each library was filtered based on a counts-per-million threshold of 0.5 for all initial time points (t0), for example in a library of 10M reads, shRNAs with at least five counts for all initial time points will pass this filter. Normalisation factors were calculated to scale the raw library sizes using the weighted trimmed mean of M-values (TMM) approach (Robinson et al., 2010). To compare groups of replicates (time points and chemical treatments) for each pool, differential representation analysis of shRNA counts was performed using edgeR (Robinson et al., 2010). Common and shRNA-specific dispersions were estimated to allow the fitting of a negative binomial generalised linear model to the treatment counts. Contrasts between the initial time point and the treatments were defined (PDS-t0, PhenDC3-t0, and DMSO-t0) and likelihood ratio tests were carried out accordingly (Dai et al., 2014). Fold changes (FC) were then computed for every shRNA, and false discovery rates (FDR) were estimated using the Benjamini-Hochberg method. A gene was defined as significantly differentially represented for a given treatment if at least 50% or a minimum of 3 shRNAs were significant (FDR ≤ 0.05); sensitisation was additionally determined by applying a log2FC ≤ −1.
 
-## Exploring genes associated to G4s in databases and biomedical literature
+### Exploring genes associated to G4s in databases and biomedical literature
 
 Three different approaches were developed to uncover genes linked to G4s in the literature and molecular biology databases. 18 high confidence G4-related genes were obtained by scanning for genes in which the corresponding UniprotKB (The UniProt Consortium, 2017) entry is annotated with the term 'quadruplex' or genes annotated with at least one of the following 11 GO terms with any evidence assertion method (Ashburner et al., 2000):
 
-GO idNameTypeLinkGO:0051880G-quadruplex DNA bindingMolecular functionhttps://www.ebi.ac.uk/QuickGO/term/GO:0051880GO:0002151G-quadruplex RNA bindingMolecular functionhttps://www.ebi.ac.uk/QuickGO/term/GO:0002151GO:0061849telomeric G-quadruplex DNA bindingMolecular functionhttps://www.ebi.ac.uk/QuickGO/term/GO:0061849GO:0071919G-quadruplex DNA formationBiological processhttps://www.ebi.ac.uk/QuickGO/term/GO:0071919GO:0044806G-quadruplex DNA unwindingBiological processhttps://www.ebi.ac.uk/QuickGO/term/GO:0044806GO:1905493regulation of G-quadruplex DNA bindingBiological processhttps://www.ebi.ac.uk/QuickGO/term/GO:1905493GO:1905494negative regulation of G-quadruplex DNA bindingBiological processhttps://www.ebi.ac.uk/QuickGO/term/GO:1905494GO:1905495positive regulation of G-quadruplex DNA bindingBiological processhttps://www.ebi.ac.uk/QuickGO/term/GO:1905495GO:1905465regulation of G-quadruplex DNA unwindingBiological processhttps://www.ebi.ac.uk/QuickGO/term/GO:1905465GO:1905466negative regulation of G-quadruplex DNA unwindingBiological processhttps://www.ebi.ac.uk/QuickGO/term/GO:1905466GO:1905467positive regulation of G-quadruplex DNA unwindingBiological processhttps://www.ebi.ac.uk/QuickGO/term/GO:1905467
+<table>
+  <thead>
+    <tr>
+      <th>GO id</th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GO:0051880</td>
+      <td>G-quadruplex DNA binding</td>
+      <td>Molecular function</td>
+      <td>https://www.ebi.ac.uk/QuickGO/term/GO:0051880</td>
+    </tr>
+    <tr>
+      <td>GO:0002151</td>
+      <td>G-quadruplex RNA binding</td>
+      <td>Molecular function</td>
+      <td>https://www.ebi.ac.uk/QuickGO/term/GO:0002151</td>
+    </tr>
+    <tr>
+      <td>GO:0061849</td>
+      <td>telomeric G-quadruplex DNA binding</td>
+      <td>Molecular function</td>
+      <td>https://www.ebi.ac.uk/QuickGO/term/GO:0061849</td>
+    </tr>
+    <tr>
+      <td>GO:0071919</td>
+      <td>G-quadruplex DNA formation</td>
+      <td>Biological process</td>
+      <td>https://www.ebi.ac.uk/QuickGO/term/GO:0071919</td>
+    </tr>
+    <tr>
+      <td>GO:0044806</td>
+      <td>G-quadruplex DNA unwinding</td>
+      <td>Biological process</td>
+      <td>https://www.ebi.ac.uk/QuickGO/term/GO:0044806</td>
+    </tr>
+    <tr>
+      <td>GO:1905493</td>
+      <td>regulation of G-quadruplex DNA binding</td>
+      <td>Biological process</td>
+      <td>https://www.ebi.ac.uk/QuickGO/term/GO:1905493</td>
+    </tr>
+    <tr>
+      <td>GO:1905494</td>
+      <td>negative regulation of G-quadruplex DNA binding</td>
+      <td>Biological process</td>
+      <td>https://www.ebi.ac.uk/QuickGO/term/GO:1905494</td>
+    </tr>
+    <tr>
+      <td>GO:1905495</td>
+      <td>positive regulation of G-quadruplex DNA binding</td>
+      <td>Biological process</td>
+      <td>https://www.ebi.ac.uk/QuickGO/term/GO:1905495</td>
+    </tr>
+    <tr>
+      <td>GO:1905465</td>
+      <td>regulation of G-quadruplex DNA unwinding</td>
+      <td>Biological process</td>
+      <td>https://www.ebi.ac.uk/QuickGO/term/GO:1905465</td>
+    </tr>
+    <tr>
+      <td>GO:1905466</td>
+      <td>negative regulation of G-quadruplex DNA unwinding</td>
+      <td>Biological process</td>
+      <td>https://www.ebi.ac.uk/QuickGO/term/GO:1905466</td>
+    </tr>
+    <tr>
+      <td>GO:1905467</td>
+      <td>positive regulation of G-quadruplex DNA unwinding</td>
+      <td>Biological process</td>
+      <td>https://www.ebi.ac.uk/QuickGO/term/GO:1905467</td>
+    </tr>
+  </tbody>
+</table>
 
 Furthermore, 55 confirmed human G4-interacting proteins as defined by the G4IPB database (Mishra et al., 2016) (http://bsbe.iiti.ac.in/bsbe/ipdb/index.php) were also used to determine predefined G4-interacting proteins from the genome-wide shRNA screen. For this, gene entries were removed where the only G4-relationship was a predicted G4-forming sequence in the mRNA or DNA (i.e. not a direct protein interaction) or where the protein was not human. To extend the list of G4-interacting proteins, text-mining using PolySearch2 (Liu et al., 2015b) was used. Human protein-coding gene names and G4-terms and synonyms are defined using the corresponding MeSH term id D054856 (https://www.ncbi.nlm.nih.gov/mesh/68054856) and the thesaurus of gene names obtained from the PolySearch2 website (http://polysearch.cs.ualberta.ca/). A relevancy score measures the strength of association between two text groups, and higher the score, the more likely terms from the two groups co-occur within the same abstract; the score also accounts for the distance between terms from the two groups. A total of 5477 pieces of text were identified in PubMed and PubMed Central where any of the G4 terms co-occur with more than 500 human gene names. Overall, this generated 526 G4-associated genes, with 54 (10%) uncovered as G4-sensitisers (https://github.com/sblab-bioinformatics/GWscreen_G4sensitivity), which were manually edited to 16 genes as discussed in the main text and figures.
 
-## KEGG pathway, gene ontology and protein domain enrichment analysis
+### KEGG pathway, gene ontology and protein domain enrichment analysis
 
 The ClueGO v2.3.3 (Bindea et al., 2009; Bindea et al., 2013) plugin for Cytoscape (Shannon et al., 2003) (v3.5.1) was used to determine networks of enriched KEGG pathways and Gene Ontology terms (Biological Process and Molecular Function) for significantly depleted genes upon G4 ligand treatment. Specifically, a right-sided (Enrichment) test based on the hyper-geometric distribution was performed on the corresponding Entrez gene IDs for each gene list and the Bonferroni adjustment (p<0.05) was applied to correct for multiple hypothesis testing. Only experimental evidence codes (EXP, IDA, IPI, IMP, IGI, IEP) were used. The Kappa-statistics score threshold was set to 0.4 and GO term fusion was used to diminish redundancy of terms shared by similar proteins. Other parameters include: GO level intervals (3–8 genes) and Group Merge (50%). Protein domains were investigated using DAVID (v6.8) to integrate GENE3D crystallographic data and PFAM sequence information and enrichment was considered significant if the EASE score p<0.05 (Finn et al., 2016; Yeats et al., 2006).
 
-## COSMIC analysis
+### COSMIC analysis
 
 Cancer mutation data (CosmicMutantExport.tsv) from the COSMIC database v82 (Forbes et al., 2015) was used to investigate the association between G4 sensitisers and cancer genes. ~150,000 were mutations available in COSMIC for 702 (93%) sensitiser genes, with some predicted to be pathogenic by the FATHMM algorithm embedded within the COSMIC database. The Cancer Gene Census (http://cancer.sanger.ac.uk/census) was used to investigate whether G4 sensitisers are enriched in genes containing mutations causally implicated in cancer. Fisher’s exact tests as implemented in R were used to calculate fold enrichment significance of sensitisers that are cancer genes in COSMIC (compared to the percentage of protein-coding genes in COSMIC – 3.3%).
 
-## siRNA validation experiments – transfection, experimental outline, immunoblotting
+### siRNA validation experiments – transfection, experimental outline, immunoblotting
 
 ON-TARGETplus siRNAs (Dharmacon/GE healthcare) were used as summarised in the table below. Cells were transfected with either targeting or non-targeting control siRNAs using lipofectamine RNAiMAX (Thermo Fisher Scientific, cat # 13778150) and OptiMEM reduced serum medium (Thermo Fisher Scientific) according to the manufacturer’s protocol (reagent protocol 2013) alongside a non-transfected control. 24 hr after transfection, cells were trypsinised, counted and re-plated in media supplemented with PDS, PhenDC3 or DMSO vehicle control (minimum two biological replicates per condition) in a 48-well plate format (seeding density - 8,000 cells per well A375; 4,000 cells per well HT1080). Cell growth was monitored for 144 hr using IncuCyteZOOM live cell analysis (Sartorius) and cell confluency calculated as a percentage of the well area covered. Scans were performed every 3 hr; nine scans per well. To monitor protein levels, cells transfected simultaneously with the same siRNA-reagent mixture were harvested 48 hr and 144 hr after transfection, by cell scraping and lysed on ice (30 min) with RIPA lysis buffer with protease inhibitor +EDTA (Thermo Fisher Scientific, cat # 8990). Lysates were analysed by capillary electrophoresis via the Protein Simple Wes platform according to manufacturer’s protocol with antibodies summarised in the key resource table above. Lysates from non-transfected and siRNA-treated (targeting and non-targeting) samples were probed with antibodies against BRCA1 (Cell Signalling Technology, cat # 4970-CST), TOP1 (Abcam, cat # AB109374), GAR1 (NovusBio cat #NBP2-31742) or DDX42 (Abcam cat #AB80975), plus anti-beta actin antibody (mouse Merck cat # A5441; rabbit cat # 4970-CST) by multiplexing. For non-targeting and targeting lysates, the area of the desired band was normalised to beta-actin and then normalised to the protein level in the non-targeting sample, for three (48 hr after transfection lysates) or two independent Wes runs (144 hr after transfection). Protein depletion is expressed as an average of these normalised values. All lysates were used at a concentration of 0.8 mg/mL and antibody dilutions as follows: BRCA1 1:50; TOP1 1:250; GAR1 1:100; DDX42 1:250; rabbit-actin 1:500; mouse-actin 1:250.
 
-siRNACatalogue numberSequence 5’−3’Non-targeting 2D-001810-02-05UGGUUUACAUGUUGUGUGABRCA1 (A375)J-003461–09CAACAUGCCCACAGAUCAABRCA1 (HT1080)J-003461–12GAAGGAGCUUUCAUCAUUUCTOP1 (both cell lines)J-005278–08CGAAGAAGGUAGUAGAGUCDDX42 (both cell lines)J-012393–11GGAGAUCGACUAACGGCAAGAR1 (both cell lines)J-013386–06UCCAGAACGUGUAGUCUUA
+<table>
+  <thead>
+    <tr>
+      <th>siRNA</th>
+      <th>Catalogue number</th>
+      <th>Sequence 5’−3’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Non-targeting 2</td>
+      <td>D-001810-02-05</td>
+      <td>UGGUUUACAUGUUGUGUGA</td>
+    </tr>
+    <tr>
+      <td>BRCA1 (A375)</td>
+      <td>J-003461–09</td>
+      <td>CAACAUGCCCACAGAUCAA</td>
+    </tr>
+    <tr>
+      <td>BRCA1 (HT1080)</td>
+      <td>J-003461–12</td>
+      <td>GAAGGAGCUUUCAUCAUUUC</td>
+    </tr>
+    <tr>
+      <td>TOP1 (both cell lines)</td>
+      <td>J-005278–08</td>
+      <td>CGAAGAAGGUAGUAGAGUC</td>
+    </tr>
+    <tr>
+      <td>DDX42 (both cell lines)</td>
+      <td>J-012393–11</td>
+      <td>GGAGAUCGACUAACGGCAA</td>
+    </tr>
+    <tr>
+      <td>GAR1 (both cell lines)</td>
+      <td>J-013386–06</td>
+      <td>UCCAGAACGUGUAGUCUUA</td>
+    </tr>
+  </tbody>
+</table>
 
-## G4 ligand and drug treatments
+### G4 ligand and drug treatments
 
 10 mM stocks in DMSO of PDS (in house synthesis), MK1775 (Cambridge Bioscience, cat# CAY21266) and pimozide (Merck, cat# P1793-500MG) were used as for synergy experiment. Cells were seeded in Corning, Tissue Culture-treated 96-well clear bottom plates (Thermofisher, cat#07-200-587) for HT1080 (1000 cells per well) and A375 (1500 cells per well) cell lines. 24 hr after plating, media was removed and cells were treated with different concentrations of PDS and MK1775 or pimozide in media in a final volume of 150 μL, alongside non-treated and solvent-treated controls. After 96 hr, cell death was determined via a CellTitre-Glo One Solution assay (Promega, cat # G8461) according to manufacturer’s protocol using the PHERAstar FS (BMG labtech) to detect luminescence, using the recommended settings. Values were normalised to and expressed as a percentage of the untreated controls. This was performed for three biological replicas. Data were analysed via Combenefit software using the BLISS independence model since the molecule have independent targets (Di Veroli et al., 2016) to determine synergy. For the clonogenic cell survival assay, A375 (300 cells per well) and HT1080 (400 cells per well) were plated as single cells in 12-well plates. The next day, cells were treated with DMSO or the indicated doses of PDS, pimozide and/or MK1775 in media. After 8 days, colonies were fixed with 3% trichloroacetic acid (TCA) for 90 min at 4°C, washed with MiliQ, air dried and then stained with 0.057% (v/v) Sulforhodamine B solution (Merck, cat # 230162–5G) for 30 min at room temperature. Plates were then washed four times with 1% acetic acid, air dried and colonies visualised using GelCount (Oxford Optronix). Colony growth was determined using the ‘colony intensity percentage’ parameter in the ColonyArea Image J plugin (Guzmán et al., 2014), which considers both the intensity and percentage of area covered by the colonies. Values were normalised to and expressed as a percentage of the untreated controls and then further processed by Combenefit software, as described above, to determine synergy. A total of three independent biological replicates were performed.
 
-## Sub-cellular localisation of DDX42
+### Sub-cellular localisation of DDX42
 
 HT1080, HEK and HeLa cells were harvested from a 70% confluent 15 cm plate by cell scraping in PBS on ice and pelleted by centrifugation (500 g, 5 min, 4°C). Pellets were resuspended in three volumes of low-salt buffer (20 mM HEPES pH7.4, 10 mM NaCl, 3 mM MgCl2, 0.2 mM EDTA, 1 mM DTT) plus protease inhibitor (cOmplete mini, Roche cat#11836153001), lysed on ice (15 min) and 0.5% Igepal added. Samples were vortexed (1 min) and centrifuged (900 g, 15 min, 4°C) and the supernatant collected for cytoplasmic extracts. Nuclear pellets were washed in low-salt buffer, supernatant discarded and then resuspended in high-salt buffer (20 mM HEPES pH7.4, 500 mM NaCl, 3 mM MgCl2, 0.5% Igepal, 0.2 mM EDTA, 1 mM DTT) plus protease inhibitors, followed by lysis on ice with intermittent vortexing (30 min). Lysates were passed through a syringe needle to promote lysis and shear genomic DNA and followed by centrifugation (13,000 g, 10 min, 4°C). Lysis confirmed by trypan blue staining according to manufacturer’s protocols (Thermofisher Scientific cat#15250061). The supernatant was then collected as nuclear extract. Cytoplasmic and nuclear lysates were quantified on a Direct Detect platform (Merck) and DDX42 expression analysed by immunoblotting using the Protein Simple Wes instrument as described above with a lysate concentration of 0.5 mg/mL. Samples were also immunoblotted with antibodies against nuclear laminB1 (CST 12586; 1:250) and cytoplasmic GAPDH to confirm subcellular fractionation efficiency (CST 5174, 1:50).
 
-## Oligonucleotide annealing
+### Oligonucleotide annealing
 
 Biotinylated oligonucleotides for G4 and non-G4 forming sequences (IDT technologies; see Table below) were annealed in 10 mM TrisHCl pH 7.4, 100 mM KCl by heating at 95°C, 10 min followed by slow cooling to room temperature overnight at a controlled rate of 0.2°C/min. Annealed oligonucleotides were stored at 4°C for maximum 1 month.
 
-OligoRna/DNASequenceNRAS G4RNA5’ [Btn] UGU GGG AGG GGC GGG UCU GGG UGC 3’NRAS mutRNA5’ [Btn] UGU AGA AAG AGC AGA UCU AGA UG 3’Stem loopRNA5’ [Btn] ACA GGG CUC CGC GAU GGC GGA GCC CAA 3’Myc G4DNA5’ [Btn] TGA GGG T GGG TA GGG T GGG TAA 3’Myc mutDNA5’ [Btn] TGA GAG T GAG TA GAG T GAG TAA 3’
+<table>
+  <thead>
+    <tr>
+      <th>Oligo</th>
+      <th>Rna/DNA</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NRAS G4</td>
+      <td>RNA</td>
+      <td>5’ [Btn] UGU GGG AGG GGC GGG UCU GGG UGC 3’</td>
+    </tr>
+    <tr>
+      <td>NRAS mut</td>
+      <td>RNA</td>
+      <td>5’ [Btn] UGU AGA AAG AGC AGA UCU AGA UG 3’</td>
+    </tr>
+    <tr>
+      <td>Stem loop</td>
+      <td>RNA</td>
+      <td>5’ [Btn] ACA GGG CUC CGC GAU GGC GGA GCC CAA 3’</td>
+    </tr>
+    <tr>
+      <td>Myc G4</td>
+      <td>DNA</td>
+      <td>5’ [Btn] TGA GGG T GGG TA GGG T GGG TAA 3’</td>
+    </tr>
+    <tr>
+      <td>Myc mut</td>
+      <td>DNA</td>
+      <td>5’ [Btn] TGA GAG T GAG TA GAG T GAG TAA 3’</td>
+    </tr>
+  </tbody>
+</table>
 
-## Enzyme-Linked immunosorbent assay
+### Enzyme-Linked immunosorbent assay
 
 Recombinant human DDX42 with an N-terminal GST tag was purchased from NovusBio (cat# H0001325-P01). Streptavidin-Coated High-Binding Capacity 96-well plates (ThermoScientific prod #15501) were hydrated with PBS (30 min) and coated with 50 nM biotinylated oligonucleotides (1 hr, shaking 450 rpm). Wells were washed three times with ELISA buffer (50 mM K2HPO4 pH 7.4 and 100 mM KCl/100 mM LiCl); 1 min shaking, 450 rpm. Wells were then blocked with 3% (w/v) BSA (Merck, cat# A7030) in ELISA buffer for 1 hr, at room temperature and then incubated with serial dilutions of DDX42 up to 200 nM for 1 hr. Wells were washed three times with 0.1% TWEEN-20 in ELISA buffer and then incubated for 1 hr with anti-GST HRP-conjugated antibody (Abcam AB3416) diluted 1:10,000 in blocking buffer. Wells were again washed three times with ELISA-Tween, and the bound anti-GST HRP detected with TMB substrate (Merck,cat#T4444) for 2 min. Reactions were stopped with 2 M HCl. Absorbance at 450 nm was measured with PheraSTAR plate reader (BMG labtech). Binding curves with standard error of the mean (SEM) were fitted using GraphPad Prism software, using a non-linear regression fit, one site, specific binding model with saturation kinetics. The following equation was used: y=(Bmax*x)/(Kd +x), where x = concentration of DDX42 (nM) and Bmax is the maximum specific binding (i.e. saturation).
 
-## Circular dichroism spectroscopy
+### Circular dichroism spectroscopy
 
 200 μL of 10 μM oligonucleotide were prepared in assay buffer and annealed as described above. CD spectra were recorded on an Applied Photo-physics Chirascan CD spectropolarimeter using a 1 mm path length quartz cuvette. CD measurements were performed at 298 K over a range of 200–320 nm using a response time of 0.5 s, 1 nm pitch and 0.5 nm bandwidth. The recorded spectra represent a smoothed average of three scans, zero-corrected at 320 nm (Molar ellipticity θ is quoted in 105 deg cm2 dmol−1). The absorbance of the buffer was subtracted from the recorded spectra.

@@ -20,7 +20,7 @@
 
 ## Abstract
 
-Neuronal cell fate determinants establish the identities of neurons by controlling gene expression to regulate neuronal morphology and synaptic connectivity. However, it is not understood if neuronal cell fate determinants have postmitotic functions in synapse pattern formation. Here we identify a novel role for UNC-4 homeobox protein and its corepressor UNC-37/Groucho, in tiled synaptic patterning of the cholinergic motor neurons in Caenorhabditis elegans . We show that unc-4 is not required during neurogenesis but is required in the postmitotic neurons for proper synapse patterning. In contrast, unc-37 is required in both developing and postmitotic neurons. The synaptic tiling defects of unc-4 mutants are suppressed by bar-1/β-catenin mutation, which positively regulates the expression of ceh-12/HB9 . Ectopic ceh-12 expression partly underlies the synaptic tiling defects of unc-4 and unc-37 mutants. Our results reveal a novel postmitotic role of neuronal cell fate determinants in synapse pattern formation through inhibiting the canonical Wnt signaling pathway.
+Neuronal cell fate determinants establish the identities of neurons by controlling gene expression to regulate neuronal morphology and synaptic connectivity. However, it is not understood if neuronal cell fate determinants have postmitotic functions in synapse pattern formation. Here we identify a novel role for UNC-4 homeobox protein and its corepressor UNC-37/Groucho, in tiled synaptic patterning of the cholinergic motor neurons in Caenorhabditis elegans. We show that unc-4 is not required during neurogenesis but is required in the postmitotic neurons for proper synapse patterning. In contrast, unc-37 is required in both developing and postmitotic neurons. The synaptic tiling defects of unc-4 mutants are suppressed by bar-1/β-catenin mutation, which positively regulates the expression of ceh-12/HB9. Ectopic ceh-12 expression partly underlies the synaptic tiling defects of unc-4 and unc-37 mutants. Our results reveal a novel postmitotic role of neuronal cell fate determinants in synapse pattern formation through inhibiting the canonical Wnt signaling pathway.
 
 ## Introduction
 
@@ -34,9 +34,29 @@ The paired-type homeobox transcription factor, UNC-4, specifies the ventral and 
 
 In this study, we report a novel postmitotic role for unc-4 and unc-37 in precise synapse pattern formation in the DA class cholinergic motor neurons. DA neurons exhibit a unique ‘tiled’ synaptic innervation pattern, in which the synaptic domain of a DA neuron does not overlap with those from the neighboring DA neurons (White et al., 1976; Figure 1A). Previously, we have shown that the interaxonal interaction between two DA neurons (DA8 and DA9) mediated by Semaphorin–Plexin signaling establishes the synaptic tiling of DA8 and DA9 (Chen et al., 2018; Mizumoto and Shen, 2013a). In the loss of function mutants of unc-4 and unc-37, we show that the tiled synaptic innervation between DA8 and DA9 is severely disrupted, similar to the mutants of Semaphorin-Plexin signaling components. Surprisingly, temporal knockdown of unc-4 using unc-4 temperature-sensitive mutants and the auxin-inducible degron (AID) system showed that unc-4 is required for synaptic tiling in the postmitotic DA neurons, but not required during the development of DA neurons. On the other hand, unc-37 is required in both the developing DA neurons and the postmitotic DA neurons. Interestingly, the expression patterns of A-type and B-type cholinergic neuronal cell fate markers are largely unaffected in the DA8 and DA9 neurons of unc-4 and unc-37 mutants, suggesting that the synaptic tiling defects in unc-4 and unc-37 are less likely due to the secondary defects of the cell fate determination. We also found that the Wnt-induced ectopic expression of ceh-12 homeobox gene underlies, at least in part, the synaptic tiling defects of unc-4 mutants. Taken together, we provide the postmitotic roles of cell fate determinants in precise synapse pattern formation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66011/elife-66011-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the tiled innervation between DA8 and DA9 neurons of wild-type (top) and synaptic tiling mutants (bottom). (B–D) Representative images of synaptic tiling in wildtype (B), unc-4(e120) (C), and unc-37(e262) (D) mutants. Magnified images (represented by the dotted box) of GFP, mCherry, and merged channels shown above. Synaptic overlap between the DA8 and DA9 synaptic domains are highlighted with yellow lines. Asterisks: DA9 cell body. Scale bar: 10 μm. (E) Quantification of overlap between DA8 and DA9 synaptic domains. See Figure 1—source data 1. Each dot represents a single animal. Black bars indicate mean ± SEM. n.s.: not significant; *: p<0.05; ****: p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66011/elife-66011-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative image of the previously used DA8 and DA9 synaptic marker (wyIs446) in wild-type animals (left). (B) Representative image of the unc-4(e120); wyIs446 animals (left). (C) Representative image of unc-4(e120); mizIs3 animals (left). Dotted box in each image denotes the region magnified above and used to measure the fluorescence intensity of GFP and mCherry channels (right). See Figure 1—figure supplement 1—source data 1. Asterisks: DA9 cell body. Scale bar: 10 μm. Black arrows denote DA8 synapses which are devoid of mCherry::RAB-3.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66011/elife-66011-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative image of mizIs3 animals co-expressing his-24::GFPnovo2 in the DA neurons. (B) Representative image of unc-4(e120); mizIs3 co-expressing his-24::GFPnovo2 in the DA neurons. GFP, RFP, and merged channels of the magnified images around the DA8 and DA9 cell bodies (indicated by dotted boxes) are shown below. Magnified images have increased brightness to show the presence of mCherry signal in DA9 cell body and the absence of mCherry signal in the DA8 cell body. Scale bar: 10 μm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66011/elife-66011-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A–C) Representative images of synaptic tiling in plx-1(nc36) (A), unc-4(e120);plx-1(nc36) (B), unc-37(e262);plx-1(nc36) (C) mutants. The overlap between the DA8 and DA9 synaptic domains are highlighted with yellow lines. Asterisks: DA9 cell body. Scale bar: 10 μm. (D) Quantification of overlap between DA8 and DA9 synaptic domains in plx-1 mutant animals. See Figure 1—figure supplement 3—source data 1. Each dot represents a single animal. Black bars indicate mean ± SEM. n.s.: not significant. (E–H) Representative images of PLX-1::GFP in wild-type (E), unc-4(e2322ts) (F), unc-37(e262) (G), and unc-4(e120) (H) mutants. White arrows indicate the PLX-1::GFP localization at the anterior edge of the DA9 synaptic domain. Yellow arrowheads represent ectopic synapse formation anterior to the PLX-1::GFP localization. Asterisks: DA9 cell body. Scale bar: 10 μm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/66011/elife-66011-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A–C) Representative image of Pplx-1::GFP in wild-type (A), unc-4(e120) (B), and unc-37(e262) (C) mutants with HIS-24::mCherry in DA8 and DA9. (D) Quantification of animals (n = 100) that expressed Pplx-1::GFP in the anterior and posterior DA8/DA9 of wild-type, unc-4(e120), and unc-37(e262) animals. Figure 1—figure supplement 4—source data 1. (E–G) Representative image of Prap-2::GFP in wild-type (E), unc-4(e120) mutant (F), unc-37(e262) (G) mutants with HIS-24::mCherry in DA8 and DA9. (H) Quantification of animals (n = 100) that expressed Prap-2::GFP in the anterior and posterior DA8/9 of wild-type, unc-4, and unc-37 animals. Figure 1—figure supplement 4—source data 2.
+
 ## Results
 
-## unc-4 homeobox gene and unc-37/Groucho are required for the synaptic patterning of DA8 and DA9 neurons
+### unc-4 homeobox gene and unc-37/Groucho are required for the synaptic patterning of DA8 and DA9 neurons
 
 The DA neurons extend axons within the dorsal nerve cord, where they form en passant synapses at specific subaxonal regions onto the dorsal body wall muscles (White et al., 1976). Previous electron microscopy reconstruction and fluorescent microscopy has revealed the tiled synaptic innervation pattern between neighboring DA neurons: the axonal region with synapses (synaptic domain) of a DA neuron does not overlap with those of its neighboring DA neurons (Chen et al., 2018; Mizumoto and Shen, 2013a; White et al., 1976). In this study we generated a new transgene (mizIs3) with improved color contrast between the two most posterior DA neurons, DA8 and DA9, under the fluorescent microscope. mizIs3 expresses the synaptic vesicle-associated protein, RAB-3, fused with a brighter GFP variant (GFPnovo2) (Hendi and Mizumoto, 2018) and ZF1 degron sequences (Armenti et al., 2014) in all DA neurons. It also expresses mCherry::RAB-3 and ZIF-1 in DA9. The expression of ZIF-1 in the DA9 neuron results in the ubiquitin-mediated protein degradation of ZF1::GFPnovo2::RAB-3, thereby allowing DA8 and DA9 synapses to be labeled in green and red, respectively (see experimental procedures) (Figure 1A). As previously described, DA8 and DA9 exhibited tiled synaptic innervation with minimal overlap in wild-type animals (Figure 1B; Chen et al., 2018; Mizumoto and Shen, 2013a).
 
@@ -46,7 +66,7 @@ Similar to unc-4, hypomorphic mutants of unc-37(e262), which carry a single amin
 
 UNC-4 physically interacts with UNC-37 via its carboxy-terminal Engrailed-like repressor (eh1) domain (Winnier et al., 1999). To further test whether unc-4 and unc-37 function together in tiled synaptic innervation, we examined the synaptic tiling in unc-4(e26) mutants which carry a missense mutation in the eh1 domain that has been shown to disrupt the physical interaction between UNC-4 and UNC-37 (Winnier et al., 1999). Similar to unc-4(e120) null mutants, we observed severe synaptic tiling defects between the DA8 and DA9 neurons in unc-4(e26) mutant animals (Figure 1E). This result supports the idea that UNC-4 and UNC-37 act together as a repressor complex for proper tiled synaptic innervation.
 
-## unc-4 and unc-37 may function in the same genetic pathway as plx-1/Plexin
+### unc-4 and unc-37 may function in the same genetic pathway as plx-1/Plexin
 
 We have previously shown that Semaphorin (Sema)–Plexin signaling controls the synaptic tiling of DA8 and DA9 (Chen et al., 2018; Mizumoto and Shen, 2013a). In the loss of function mutants of smp-1/Sema, plx-1/Plexin, and rap-2/Rap2A, DA8 and DA9 show severe synaptic tiling defects (Chen et al., 2018; Mizumoto and Shen, 2013a). Since UNC-4 and UNC-37 are transcriptional regulators, it is possible that they regulate synaptic tiling by controlling the expression of Sema–Plexin signaling components. Consistent with this idea, plx-1 mutants did not enhance the synaptic tiling defects of unc-4 or unc-37 mutants (Figure 1—figure supplement 3A–D). This result suggests that both unc-4 and unc-37 may function in the same genetic pathway as plx-1. However, we do not exclude the possibility that synaptic tiling defects of unc-4 and unc-37 mutants are at the maximum severities so that plx-1 cannot enhance the phenotype.
 
@@ -54,57 +74,160 @@ We have previously shown that PLX-1::GFP is localized at the anterior edge of th
 
 While PLX-1::GFP localization was not affected in unc-4 and unc-37 mutants, we observed the ectopic synapse formation anterior to the PLX-1::GFP domain (Figure 1—figure supplement 3F and G). This phenotype is reminiscent to the mutant phenotype of PLX-1 downstream effectors such as rap-2 and mig-15, in which PLX-1 cannot locally inhibit synapse formation (Chen et al., 2018). However, we did not observe a reduction in rap-2 expression in unc-4 and unc-37 mutants (Figure 1—figure supplement 4E–H), and the expression of known Sema/Plexin signaling components (rap-2 and mig-15) under the DA neuron-specific promoter (Punc-4c) did not rescue the synaptic tiling defects of unc-4 and unc-37 mutants (data not shown). It is therefore possible that unc-4 and unc-37 regulate synaptic tiling by controlling the expression of previously uncharacterized Sema–Plexin signaling components.
 
-## DA8 and DA9 cell fates are largely unaffected in unc-4 and unc-37 mutants
+### DA8 and DA9 cell fates are largely unaffected in unc-4 and unc-37 mutants
 
 As unc-4 and unc-37 determine the A-type motor neuron fates by repressing the expression of B-type motor neuron-specific genes (Kerk et al., 2017; Winnier et al., 1999), the synaptic tiling defects of unc-4 and unc-37 mutants may be a secondary defect of the abnormal neuronal cell fates in DA8 and DA9 neurons. We therefore examined the neuronal identity of DA8 and DA9 using a DA cell fate marker, Punc-53 (Kerk et al., 2017), and three DB cell fate markers, Punc-129DB, Pacr-16, and Pacr-5 (Kerk et al., 2017; Winnier et al., 1999) under the fluorescent microscope. We co-expressed his-24 fused to mCherry under the unc-4c promoter to label DA8 and DA9 nuclei. As relative position of the DA8 and DA9 cell bodies was variable, we distinguished them as anterior DA8/9 or posterior DA8/9 for examining these DA and DB cell fate markers. In wild-type animals, both anterior and posterior DA8/DA9 expressed the DA marker, Punc-53 but not the DB markers, Pacr-16, Punc-129DB, and Pacr-5 (Table 1). In the unc-4(e120) and unc-37(e262) mutant animals, the expression of Punc-53 was not affected in both anterior and posterior DA8/9 neurons, suggesting that DA8 and DA9 retain A-type identity (Table 1). The expression of a DB marker Punc-129DB in DA8/9 of unc-4 and unc-37 mutants was not different from wild type, while there was a slight increase in the number of animals expressing the other DB markers, Pacr-16 and Pacr-5, with a slightly higher penetrance in the posterior DA8/9 (Table 1). These results suggest that DA8 and DA9 might have minor cell fate defects that result in the leaky expression of some DB markers. However, the low penetrance of the partial cell fate defects is less likely to account for the fully penetrant synaptic tiling defects of unc-4 and unc-37 mutants.
+
+**Table 1.**
+ Expression of cell fate markers in the anterior or posterior DA8/DA9 neurons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">DA marker</th>
+      <th colspan="6">DB markers</th>
+      <th colspan="3">DA9 markers</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="2">Punc-53</th>
+      <th colspan="2">Punc-129DB</th>
+      <th colspan="2">Pacr-16</th>
+      <th colspan="2">Pacr-5</th>
+      <th>Pmig-13</th>
+      <th>Pglr-4</th>
+      <th>Pitr-1</th>
+    </tr>
+    <tr>
+      <th>Genotype</th>
+      <th>Anterior</th>
+      <th>Posterior</th>
+      <th>Anterior</th>
+      <th>Posterior</th>
+      <th>Anterior</th>
+      <th>Posterior</th>
+      <th>Anterior</th>
+      <th>Posterior</th>
+      <th>DA9</th>
+      <th>DA9</th>
+      <th>DA9</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wild type</td>
+      <td>94/100</td>
+      <td>94/100</td>
+      <td>2/100</td>
+      <td>4/100</td>
+      <td>0/100</td>
+      <td>0/100</td>
+      <td>0/100</td>
+      <td>0/100</td>
+      <td>100/100</td>
+      <td>100/100</td>
+      <td>100/100</td>
+    </tr>
+    <tr>
+      <td>unc-4(e120)</td>
+      <td>94/100</td>
+      <td>91/100</td>
+      <td>3/100</td>
+      <td>4/100</td>
+      <td>3/100</td>
+      <td>8/100</td>
+      <td>4/100</td>
+      <td>8/100</td>
+      <td>100/100</td>
+      <td>99/100</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>unc-37(e262)</td>
+      <td>92/100</td>
+      <td>92/100</td>
+      <td>1/100</td>
+      <td>8/100</td>
+      <td>2/100</td>
+      <td>24/100</td>
+      <td>1/100</td>
+      <td>30/100</td>
+      <td>100/100</td>
+      <td>93/100</td>
+      <td>98/100</td>
+    </tr>
+  </tbody>
+</table>
 
 We further tested the identity of DA9 neurons using DA9-specific markers, Pmig-13 (mizIs3), Pglr-4 (otIs476), and Pitr-1 (wyIs320) (Klassen and Shen, 2007; Kratsios et al., 2017). These DA9 markers label axon trajectory and/or synaptic varicosity allowing us to distinguish the DA9 neuron from the DA8 neuron. These DA9 markers were expressed in DA9 of wild-type animals at full penetrance (Table 1). In all unc-4 mutants, we observed expression of Pglr-4 and Pmig-13, while Pmig-13 expression was noticeably weaker than wild type as described above (Table 1 and Figure 1C). The Pitr-1 expression was also weaker in unc-4 mutants, and we were unable to reliably examine the dim expression of the Pitr-1 marker in unc-4 mutants under the fluorescent microscope due to the high expression of the Pitr-1 in the hindgut adjacent to the DA9 cell body (Table 1, Figure 1—figure supplement 3H). However, Pitr-1 expression was detected in DA9 at full penetrance under the confocal microscope (n = 40). In unc-37 mutant animals, the expression of these DA9 specific markers was mostly unaffected, with a small fraction of animals (7/100) lacking Pglr-4 expression in DA9 (Table 1).
 
 Together we conclude that despite the subtle changes in the expression of some of the cell fate markers, the cell fates of DA8 and DA9 in unc-4 and unc-37 mutants are largely unaffected, and therefore, it is unlikely that the synaptic tiling defects of unc-4 and unc-37 mutants are due to the secondary defects of cell fate transformation of the DA neurons.
 
-## unc-4 and unc-37 are necessary and sufficient in the DA neurons to regulate synaptic tiling
+### unc-4 and unc-37 are necessary and sufficient in the DA neurons to regulate synaptic tiling
 
 We next determined in which cells unc-4 and unc-37 function by using the AID system to conditionally control the degradation of UNC-4 and UNC-37 in a spatiotemporally controlled manner. A plant F-box protein, TIR1, mediates the degradation of AID-tagged proteins in an auxin-dependent manner (Nishimura et al., 2009; Zhang et al., 2015). Using CRISPR/Cas9-mediated genome editing, we tagged endogenous unc-4 and unc-37 with AID and blue fluorescent protein (BFP) at the 3’ end of the unc-4 locus (miz40[unc-4::AID::BFP]) and unc-37(miz36[unc-37::AID::BFP]) (Figure 2—figure supplement 1B). Consistent with previous studies, we observed sustained expression of the UNC-4::AID::BFP and UNC-37::AID::BFP fusion proteins in the nuclei of DA and VA neurons (Fox et al., 2005; Miller and Niemeyer, 1995; Pflugrad et al., 1997) at the L4 stage (Figure 2—figure supplement 2A,C). We then crossed unc-4(miz40) and unc-37(miz36) with a strain carrying mizSi3 (Punc-4c::TIR1), a transgene that expresses TIR1 specifically in the DA neurons under the DA neuron-specific promoter (Punc-4c) (Figure 2—figure supplement 1A). unc-4(miz40); mizSi3 and unc-37(miz36); mizSi3 animals did not exhibit uncoordinated locomotion phenotype (data not shown) or synaptic tiling defects in the absence of auxin (Figures 2A, C, and E), suggesting that the UNC-4::AID::BFP and UNC-37::AID::BFP fusion proteins are fully functional. When unc-4(miz40); mizSi3 and unc-37(miz36); mizSi3 animals were grown in the presence of the water-soluble synthetic auxin analog (K-NAA) (Martinez et al., 2020), we observed loss of UNC-4::AID::BFP and UNC-37::AID::BFP signal in DA neurons, but not in VA neurons, suggesting the successful DA neuron-specific degradation of UNC-4 and UNC-37 (Figure 2—figure supplement 2B,D). Furthermore, unc-4(miz40); mizSi3 and unc-37(miz36); mizSi3 animals grown on K-NAA-containing plates did not exhibit backwards locomotion defects, which is attributed to the AVA>VA wiring defects in unc-4 and unc-37 mutants, suggesting UNC-4 and UNC-37 are fully functional in the VA neurons during DA-specific degradation of UNC-4 and UNC-37. Using this system, we first conducted the DA-specific continuous degradation of UNC-4 and UNC-37 by placing the L4 parental animals on K-NAA-containing plates and observing the progeny at the L4 stage. We observed severe synaptic tiling defects between the DA8 and DA9 synaptic domains (Figure 2B, D, and E), suggesting that unc-4 and unc-37 are required in the DA neurons for proper synaptic tiling.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66011/elife-66011-fig2-v1.jpg)
+
+**Figure 2.:** (A–D) Representative images of synaptic tiling in unc-4(miz40); mizSi3 (− auxin) (A), unc-4(miz40); mizSi3 (+ auxin) (B), unc-37(miz36); mizSi3 (− auxin) (C), and unc-37(miz36); mizSi3 (+auxin) (D). mizSi3 expresses TIR1 in the DA neurons for tissue-specific degradation of UNC-4 and UNC-37. The overlap between the DA8 and DA9 synaptic domains are highlighted with yellow lines. Asterisks: DA9 cell body. Scale bar: 10 μm. (E) Quantification of overlap of DA8 and DA9 synaptic domains of unc-4(miz40); mizSi3 and unc-37(miz36); mizSi3 animals treated with (+) and without (-) auxin. See Figure 2—source data 1. (F, G) Cell specific rescue of unc-4(e120) mutants with unc-4 cDNA using DA-specific promoter (Punc-4c). See Figure 2—source data 2. (F) Cell specific rescue of unc-37(e262) mutants with unc-37 cDNA using DA-specific promoter (Punc-4c). See Figure 2—source data 3. (G). Two independent transgenic lines were quantified. Mosaic experiment using Punc-4c::unc-4 and Punc-4c::unc-37 are also shown. Each dot represents a single animal. Black bars indicate mean ± SEM. n.s.: not significant; *: p<0.05; **: p<0.01; ****:p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66011/elife-66011-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Genomic structure of oxTi365 locus in mizSi3[Punc-4c::TIR1] strains. (B) Genomic structure of unc-4 (top) and unc-37 (bottom) in unc-4(miz40[unc-4::AID::BFP]) and unc-37(miz36[unc-37::AID::BFP]) strains. See Materials and methods for details.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66011/elife-66011-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–B) Representative images of unc-4(miz40) in M9 control (A) and auxin (B) treated animals. (C–D) Representative images of unc-37(miz36) in M9 control (C) and auxin (D) treated animals. Magnified images (represented by dotted box) of BFP, GFP, RFP, and merged channels shown below. White arrow heads denote VA12, DA8, DA9 cell bodies. Scale bar: 10 μm.
+
 We also performed tissue-specific rescue experiments by expressing the unc-4 and unc-37 cDNAs under the DA-specific unc-4c promoter in unc-4(e120) and unc-37(e262) mutant animals, respectively. We co-expressed his-24 fused to GFPnovo2, under the unc-4c promoter to determine which DA neurons carry the extrachromosomal array. We observed significant rescue of the synaptic tiling defect when unc-4 is expressed in both DA8 and DA9 neurons of unc-4 mutant animals (Figure 2F). Similarly, we observed significant rescue of the synaptic tiling defects in unc-37 mutant animals when unc-37 is expressed in both DA8 and DA9 neurons (Figure 2G). However, in the genetic mosaic animals in which unc-4 or unc-37 is expressed only in DA9, we did not observe rescue of the synaptic tiling defects (Figure 2F,G). This suggests that unc-4 and unc-37 are not sufficient in DA9 and instead function in both DA8 and DA9 neurons to control synaptic tiling.
 
-## unc-37 but not unc-4 is required during embryonic development for proper synaptic tiling
+### unc-37 but not unc-4 is required during embryonic development for proper synaptic tiling
 
 The lack of apparent cell fate defects in DA8 and DA9 of unc-4 and unc-37 mutants suggests that unc-4 and unc-37 control tiled synaptic innervation independent of the cell fate determination function of the A-type motor neurons. We therefore sought to determine the temporal requirement of unc-4 and unc-37 in synaptic tiling. The DA neurons are born in the late gastrulation stage and completes the development during late embryogenesis (Sulston et al., 1983). The tiled synaptic innervation of DA8 and DA9 is observed at the early first larval (L1) stage in wild-type animals (Mizumoto and Shen, 2013a). To test the temporal requirement of unc-4 in tiled synaptic patterning, we used a reversible temperature-sensitive allele of unc-4 (Miller et al., 1992; Winnier et al., 1999). unc-4(e2322ts) mutants carry a point mutation (L121F) that resides in the homeodomain (Winnier et al., 1999). The unc-4(e2322ts) mutation is permissive at 16°C and restrictive at 25°C (Miller et al., 1992). When grown at the permissive temperature (16°C), unc-4(e2322ts) mutants did not exhibit synaptic tiling defects compared with wild type (Figure 3B,F). When grown at the restrictive temperature (25°C), unc-4(e2322ts) mutants showed severe synaptic tiling defects (Figure 3C,F). We then determined if unc-4 functions during DA neurogenesis or in postmitotic DA neurons to regulate synaptic tiling by down-shifting or up-shifting the growth temperature at the early L1 stage (Figure 3A). Interestingly, we did not observe significant synaptic tiling defects when unc-4 was knocked down embryonically by down-shifting the growth temperature of unc-4(e2322ts) mutant animals from 25°C to 16°C at the L1 stage (Figure 3D,F). This result indicates that unc-4 is not required for synaptic tiling during the embryonic stage when the DA8 and DA9 cell fates are determined by unc-4. Conversely, the postembryonic unc-4 knockdown by up-shifting the growth temperature from 16°C to 25°C at the L1 stage resulted in severe synaptic tiling defects (Figure 3E,F). Together, this suggests that unc-4 is required in the postmitotic DA8 and DA9 neurons in which the cell fates are already set.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/66011/elife-66011-fig3-v1.jpg)
 
-**Figure 3.:** unc-4 functions in postmitotic DA neurons for the synaptic tiling of DA8 and DA9 neurons.(A) Experimental design of the temperature shift assay. (B–E) Representative images of synaptic tiling in unc-4(e2322ts) at 16°C (B), unc-4(e2322ts) at 25°C (C), unc-4(e2322ts) embryonic knockdown (D), and unc-4(e2322ts) postembryonic knockdown (E). The overlap between the DA8 and DA9 synaptic domains are highlighted with yellow lines. Asterisks: DA9 cell body. Scale bar: 10 μm. (F) Quantification of overlap of DA8 and DA9 synaptic domains. See Figure 3—source data 1. Each dot represents a single animal. Black bars indicate mean ± SEM. n.s.: not significant; ****:p<0.0001.Figure 3—source data 1.
+**Figure 3.:** (A) Experimental design of the temperature shift assay. (B–E) Representative images of synaptic tiling in unc-4(e2322ts) at 16°C (B), unc-4(e2322ts) at 25°C (C), unc-4(e2322ts) embryonic knockdown (D), and unc-4(e2322ts) postembryonic knockdown (E). The overlap between the DA8 and DA9 synaptic domains are highlighted with yellow lines. Asterisks: DA9 cell body. Scale bar: 10 μm. (F) Quantification of overlap of DA8 and DA9 synaptic domains. See Figure 3—source data 1. Each dot represents a single animal. Black bars indicate mean ± SEM. n.s.: not significant; ****:p<0.0001.
 
 To verify the role of unc-4 and unc-37 in the postmitotic DA neurons, we conducted DA neuron-specific temporal degradation experiments using the AID system described above. We first conducted UNC-4 and UNC-37 degradation in DA neurons specifically during embryonic development. The L4 parental animals of unc-4(miz40); mizSi3 and unc-37(miz36); mizSi3 were cultured on K-NAA containing plates, and their progeny were transferred at the early L1 stage to the control plates (Figure 4A). Consistent with the temperature shift experiments using unc-4(e2322ts) mutants, we did not observe any synaptic tiling defects when UNC-4 was degraded during embryonic development (Figure 4B,F). On the other hand, embryonic degradation of UNC-37 resulted in severe synaptic tiling defects (Figure 4C,F), suggesting that UNC-37 but not UNC-4 is required during embryonic development to regulate synaptic tiling.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/66011/elife-66011-fig4-v1.jpg)
 
-**Figure 4.:** unc-37 but not unc-4 is required during DA neurogenesis for proper synaptic tiling of DA8 and DA9 neurons.(A) Experimental design of the embryonic degradation of UNC-4 and UNC-37 using the AID system. (B, C) Representative images of synaptic tiling at L4 stage after embryonic degradation in unc-4(miz40); mizSi3 (B) and unc-37(miz36); mizSi3 (C). (D, E) Representative images of synaptic tiling at L2 stage after embryonic degradation in unc-4(miz40); mizSi3 (D) and unc-37(miz36); mizSi3 (E). The overlap between the DA8 and DA9 synaptic domains are highlighted with yellow lines. Asterisks: DA9 cell body. Scale bar: 10 μm. (F) Quantification of overlap of DA8 and DA9 synaptic domains at the L4 stage after embryonic auxin treatment. See Figure 4—source data 1. (G) Quantification of overlap of DA8 and DA9 synaptic domains at the L2 stage after embryonic auxin treatment. See Figure 4—source data 2. Each dot represents a single animal. Black bars indicate mean ± SEM. n.s.: not significant; ****:p<0.0001.Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** (A) Experimental design of the embryonic degradation of UNC-4 and UNC-37 using the AID system. (B, C) Representative images of synaptic tiling at L4 stage after embryonic degradation in unc-4(miz40); mizSi3 (B) and unc-37(miz36); mizSi3 (C). (D, E) Representative images of synaptic tiling at L2 stage after embryonic degradation in unc-4(miz40); mizSi3 (D) and unc-37(miz36); mizSi3 (E). The overlap between the DA8 and DA9 synaptic domains are highlighted with yellow lines. Asterisks: DA9 cell body. Scale bar: 10 μm. (F) Quantification of overlap of DA8 and DA9 synaptic domains at the L4 stage after embryonic auxin treatment. See Figure 4—source data 1. (G) Quantification of overlap of DA8 and DA9 synaptic domains at the L2 stage after embryonic auxin treatment. See Figure 4—source data 2. Each dot represents a single animal. Black bars indicate mean ± SEM. n.s.: not significant; ****:p<0.0001.
 
 We have previously shown that synaptic tiling between DA8 and DA9 is observed as early as L1 stage (Mizumoto and Shen, 2013a). To determine if unc-4 and unc-37 are required for establishing the synaptic tiling, we examined the effect of embryonic degradation of UNC-4 and UNC-37 on synaptic tiling at early L2 stage. We found that embryonic degradation of UNC-37 but not UNC-4 caused synaptic tiling defects (Figures 4D, E, and G). Our results suggest that unc-4 is not required to establish the synaptic tiling, whereas unc-37 may be required to establish the synaptic tiling during embryonic development.
 
-## unc-4 and unc-37 are required throughout larval development in postmitotic DA neurons to regulate synaptic tiling
+### unc-4 and unc-37 are required throughout larval development in postmitotic DA neurons to regulate synaptic tiling
 
 Next, we examined if unc-4 and unc-37 are required in the postmitotic DA neurons to regulate synaptic tiling using the AID system. We first transferred early L1 animals from the control plates to the K-NAA-containing plates and let them grow until the L4 stage (Figure 5A). Consistent with our findings using the temperature-sensitive mutant of unc-4, we found that postembryonic degradation of UNC-4 resulted in synaptic tiling defects, which were comparable to the continuous UNC-4 degradation (Figure 5B,F). Together with the lack of synaptic tiling defects after embryonic degradation of UNC-4, these data suggest that unc-4 is exclusively required in the postmitotic DA neurons to regulate synaptic tiling. We then examined the effect of postembryonic degradation of UNC-37 on synaptic tiling. Similar to unc-4, postembryonic degradation of UNC-37 resulted in severe synaptic tiling defects (Figure 5C,F). This suggests that, unlike unc-4, unc-37 is required for the synaptic tiling during DA neurogenesis as well as in the postmitotic DA neurons. Given that unc-4 is specifically required in the postmitotic DA neurons, this result suggests that unc-37 may function with other transcription factors during DA neurogenesis for synaptic tiling (Figure 7).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/66011/elife-66011-fig5-v1.jpg)
 
-**Figure 5.:** unc-4 and unc-37 are required in the postmitotic DA neurons to maintain synaptic tiling.(A) Experimental design of the postembryonic degradation of UNC-4 and UNC-37 using the AID system. (B, C) Representative images of synaptic tiling after early postembryonic degradation in unc-4(miz40); mizSi3 (B) and unc-37(miz36); mizSi3 (C). (D, E) Representative images of synaptic tiling after late postembryonic degradation in unc-4(miz40); mizSi3 (D) and unc-37(miz36); mizSi3 (E). The overlap between the DA8 and DA9 synaptic domains are highlighted with yellow lines. Asterisks: DA9 cell body. Scale bar: 10 μm. (F) Quantification of overlap of DA8 and DA9 synaptic domains after postembryonic auxin treatment. See Figure 5—source data 1. Each dot represents a single animal. Black bars indicate mean ± SEM. n.s.: not significant; *:p<0.05; ****:p<0.0001.Figure 5—source data 1.
+**Figure 5.:** (A) Experimental design of the postembryonic degradation of UNC-4 and UNC-37 using the AID system. (B, C) Representative images of synaptic tiling after early postembryonic degradation in unc-4(miz40); mizSi3 (B) and unc-37(miz36); mizSi3 (C). (D, E) Representative images of synaptic tiling after late postembryonic degradation in unc-4(miz40); mizSi3 (D) and unc-37(miz36); mizSi3 (E). The overlap between the DA8 and DA9 synaptic domains are highlighted with yellow lines. Asterisks: DA9 cell body. Scale bar: 10 μm. (F) Quantification of overlap of DA8 and DA9 synaptic domains after postembryonic auxin treatment. See Figure 5—source data 1. Each dot represents a single animal. Black bars indicate mean ± SEM. n.s.: not significant; *:p<0.05; ****:p<0.0001.
 
 To determine whether unc-4 and unc-37 are required for the maintenance of the synaptic tiling in the postmitotic DA neurons, we conducted postembryonic degradation of UNC-4 and UNC-37 at a later larval stage (mid-L2) and examined the synaptic phenotype at the L4 stage (Figure 5A). We found that degradation of UNC-4 and UNC-37 after mid-L2 stage caused mild yet significant synaptic tiling defects (Figure 5D–F). Weaker synaptic tiling defects in the late postembryonic degradation of UNC-4 and UNC-37 suggest that unc-4 and unc-37 are required throughout postembryonic development for the maintenance of the synaptic tiling. Our results are consistent with the potential roles of unc-4 during L2 and L3 stages in VA neurons to maintain the synaptic wiring of the VA neurons (Miller et al., 1992).
 
-## ceh-12 functions downstream of unc-4 and unc-37 in synaptic tiling
+### ceh-12 functions downstream of unc-4 and unc-37 in synaptic tiling
 
 It has been shown that unc-4 and unc-37 repress the expression of ceh-12, a member of the HB9 family of Homeobox genes, in the VA motor neurons to specify the AVA>VA synaptic connections (Von Stetina et al., 2007). Loss of ceh-12 partially restores the synaptic input and locomotion defects of unc-4 and unc-37 mutants (Von Stetina et al., 2007). Furthermore, the ectopic expression of ceh-12 in VA neurons is sufficient to induce unc-4 mutant-like uncoordinated locomotion phenotype (Von Stetina et al., 2007). To determine if ceh-12 also functions downstream of unc-4 and unc-37 in regulating tiled synaptic innervation, we first examined the ceh-12 expression in DA8 and DA9 neurons using a transcriptional reporter transgene wdIs62 (Pceh-12::GFP). Pceh-12::GFP expression was not detected in DA8 and DA9 of wild type at L1, L2, or L4 stage (Figure 6—figure supplement 1A–A”). We observed weak ectopic expression of Pceh-12::GFP in DA8 and DA9 neurons at L2 and L4 stage in unc-4 and unc-37 mutants (Figure 6—figure supplement 1B’–B” and C'-C'). However, at the L1 stage, the ectopic Pceh-12::GFP expression in DA8 and DA9 was only detected in unc-37 but not in unc-4 mutants (Figure 6—figure supplement 1B and C). This observation is consistent with our temporal knockdown experiments of unc-4 and unc-37 which demonstrated that the function of unc-4 is exclusive in the postembryonic DA neurons while unc-37 functions in both embryonic and postembryonic DA neurons.
 
 To test whether the ectopic expression of ceh-12 in the DA neurons underlies the synaptic tiling defects of unc-4 and unc-37, we expressed ceh-12 cDNA using the DA neuron-specific promoter (Punc-4c) in wild-type animals. We observed significant synaptic tiling defects in these animals (Figure 6A,C), suggesting that unc-4 and unc-37 likely repress the expression of ceh-12 in DA neurons for proper synaptic tiling. To exclude the possibility that the synaptic tiling defects of the ceh-12-expressing animals are due to the ectopic expression of cell fate determinants in general, we expressed unc-55 in the DA neurons. unc-55 is expressed in VD GABAergic motor neurons and is required for repressing DD neuron-specific gene expression (Shan et al., 2005; Zhou and Walthall, 1998). Ectopic expression of unc-55 in DA neurons did not cause synaptic tiling defects (Figure 6B,C). While these results strongly suggest that ceh-12 functions downstream of unc-4 and unc-37 in synaptic tiling, ceh-12 mutation did not suppress the synaptic tiling defects of unc-4 and unc-37 mutants (Figure 6D). This suggests that the weak ectopic expression of ceh-12 in unc-4 and unc-37 mutants is not sufficient to cause the synaptic tiling defects, and there are additional factor(s) that function redundantly with ceh-12 under the control of unc-4 and unc-37 in synaptic tiling (Figure 7).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/66011/elife-66011-fig6-v1.jpg)
+
+**Figure 6.:** (A, B) Representative image of synaptic tiling in ectopic expression of ceh-12 under the unc-4c promoter (A) and unc-55A under the unc-4c promoter (B). The overlap between the DA8 and DA9 synaptic domains are highlighted with yellow lines. Scale bar: 10 μm. (C) Quantification of overlap between DA8 and DA9 synaptic domains. Two independent transgenic lines were quantified for each array. See Figure 6—source data 1. (D) Quantification of overlap between DA8 and DA9 synaptic domains in ceh-12 mutant animals. See Figure 6—source data 2. (E) Quantification of overlap between DA8 and DA9 synaptic domains in bar-1 mutant animals. See Figure 6—source data 3. Each dot represents a single animal. Black bars indicate mean ± SEM. n.s.: not significant; ****:p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66011/elife-66011-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) Representative images of Pceh-12::GFP with Punc-4c::his-24::mCherry in wild-type (A), unc-4(e120) (B) and unc-37(e262) (C) at the L1 (A–C), L2 (A’–C’), and L4 (A”–C”) stages. Dotted boxes represent the region of DA8 and DA9 cell bodies, and magnified images of merged, GFP, and mCherry channels are shown below. Scale bar: 10 μm.
+
 ![Figure 7.](https://cdn.elifesciences.org/articles/66011/elife-66011-fig7-v1.jpg)
 
 **Figure 7.:** UNC-4 functions with UNC-37 in postmitotic DA neurons to regulate synaptic tiling by inhibiting canonical Wnt signaling. Ectopic expression of CEH-12 and other unknown molecules in DA neurons results in synaptic tiling defects. UNC-37 likely forms a repressor complex with an unknown transcription factor in developing DA neurons by inhibiting canonical Wnt signaling to regulate tiled synaptic innervation. Wnt and Fz also function in synapse positioning (Klassen and Shen, 2007; Mizumoto and Shen, 2013b).
 
-## bar-1/β-catenin partially suppresses the synaptic tiling defect of unc-4 and unc-37 mutants
+### bar-1/β-catenin partially suppresses the synaptic tiling defect of unc-4 and unc-37 mutants
 
 Previous work has shown that EGL-20, a Wnt morphogen that is expressed in the cells around the preanal ganglion (Whangbo and Kenyon, 1999), acts through the canonical Wnt signaling pathway components including bar-1/β-catenin, to positively regulate the expression of ceh-12 in VA motor neurons (Schneider et al., 2012). unc-4 and unc-37 inhibits the expression of ceh-12 by repressing the expression of the Frizzled receptors, mom-5 and mig-1 (Schneider et al., 2012). Given that the canonical EGL-20/Wnt signaling acts as a positive regulator of ceh-12 expression, it is possible that Wnt signaling induces the expression of other transcription factors that may function redundantly with ceh-12 in synaptic tiling (Figure 7). To test this possibility, we examined the synaptic tiling defects in unc-4(e120); bar-1(ga80) and unc-37(e262); bar-1(ga80) double mutants. Consistent with our idea, bar-1(ga80) partially suppressed the synaptic tiling defect of unc-4 and unc-37 mutants (Figure 6E). This result suggests that UNC-4 and UNC-37 control synaptic tiling by inhibiting the canonical Wnt signaling for the expression of multiple genes including ceh-12.
 
@@ -130,17 +253,111 @@ In addition to the function of canonical Wnt signaling in synaptic tiling, we an
 
 ## Materials and methods
 
-## Strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Caenorhabditis elegans)</td>
+      <td>unc-4</td>
+      <td>WormBase</td>
+      <td>F26C11.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Caenorhabditis elegans)</td>
+      <td>unc-37</td>
+      <td>WormBase</td>
+      <td>W02D3.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-4(e120)</td>
+      <td>C. elegans stock center (CGC)</td>
+      <td>CB120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-4(e2322)</td>
+      <td>C. elegans stock center (CGC)</td>
+      <td>NC37</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-37(e262)</td>
+      <td>C. elegans stock center (CGC)</td>
+      <td>CB262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>ceh-12(gk391)</td>
+      <td>C. elegans stock center (CGC)</td>
+      <td>VC995</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>bar-1(ga80)</td>
+      <td>C. elegans stock center (CGC)</td>
+      <td>EW15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-4(miz40)</td>
+      <td>This study</td>
+      <td>UJ1017</td>
+      <td>unc-4::AID::BFP</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-37(miz36)</td>
+      <td>This study</td>
+      <td>UJ1013</td>
+      <td>unc-37::AID::BFP</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mizIs3</td>
+      <td>This study</td>
+      <td>UJ124</td>
+      <td>DA8/DA9 synaptic marker</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mizSi3</td>
+      <td>This study</td>
+      <td>UJ1133</td>
+      <td>Punc-4c::TIR1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains
 
 Bristol N2 strain was used as a wild-type reference. All strains were cultured in the nematode growth medium (NGM) with OP50 as described previously (Brenner, 1974). Unless noted, all strains were maintained at room temperature (22°C). The following alleles were used in this study: unc-4(e120), unc-4(e26), unc-4(e2322ts), unc-4(miz40), unc-37(e262), unc-37(miz36), plx-1(nc36), ceh-12(gk391), bar-1(ga80). Genotyping primers are listed in the supplemental material.
 
-## Transgenes
+### Transgenes
 
 The following transgenes were used in this study: mizIs3 (Punc-4::zf1-GFPnovo2::rab-3, Pmig-13::zif-1, Pmig-13::mCherry::rab-3, Podr-1::RFP); wyIs320 (Pitr-1::plx-1::GFP, Pmig-13::mCherry::rab-3, Podr-1::GFP); mizEx362 (Pplx-1::GFP, Punc-4c::his-24::mCherry, Podr-1::GFP); mizEx365 (Prap-2::GFP, Punc-4c::his-24::mCherry, Podr-1::GFP); mizEx410 (Punc-4c::his-24::mCherry, Podr-1::GFP); hdIs1 (Punc-53::GFP, rol-6) (Kerk et al., 2017); mizEx396 (Punc-129DB::his-24::mCherry, Punc-4c::his-24::GFPnovo2, Podr-1::GFP); wdEx419(Pacr-16::GFP, rol-6(su1006)) (Winnier et al., 1999); otIs476 (Pglr-4::TagRFP) (Kratsios et al., 2017); wdIs62 (Pceh-12::GFP, unc-119(+)) (Von Stetina et al., 2007); mizEx394, mizEx395 (Punc-4c::ceh-12, Punc-4c::his-24::GFPnovo2, Podr-1::GFP); mizEx408, mizEx409 (Punc-4c::unc-55A, Punc-4c::his-24::GFPnovo2, Podr-1::GFP); mizEx434, mizEx435 (Pplx-1::plx-1::GFP, Punc-4c::his-24::mCherry, Podr-1::GFP); mizEx436 (Punc-4c::his-24::GFPnovo2, Podr-1::GFP); mizEx437, mizEx439 (Punc-4c::unc-4, Punc-4c::his-24::GFPnovo2, Podr-1::GFP); mizEx440, mizEx441 (Punc-4c::unc-37, Punc-4c::his-24::GFPnovo2, Podr-1::GFP).
 
 The transgenic lines with extrachromosomal arrays were generated using the standard microinjection method (Fire, 1986; Mello et al., 1991). The integration of the extrachromosomal arrays into the chromosomes was conducted by standard UV irradiation method (Evans, 2006) For a DA8/DA9 synaptic tiling marker (mizIs3), we used the ZIF-1/ZF1 degradation system (Armenti et al., 2014). The synaptic vesicle-associated protein, RAB-3, was fused with GFPnovo2, a codon-optimized brighter variant of GFP (Hendi and Mizumoto, 2018), and ZF1 degron from PIE-1, and expressed under the unc-4 promoter. mCherry::RAB-3 and ZIF-1 are expressed under the DA9-specific mig-13 promoter. ZIF-1 expressed in DA9 leads the ZF1::GFPnovo2::RAB-3 fusion protein to the ubiquitin-mediated protein degradation thereby creating a better color separation of the DA8 synapses labeled with GFPnovo2 and DA9 synapses labeled with mCherry.
 
-## Plasmid construction
+### Plasmid construction
 
 C. elegans expression clones were made in a derivative of pPD49.26 (A. Fire), the pSM vector (a kind gift from S. McCarroll and C. I. Bargmann). unc-4, unc-37, ceh-12, and unc-55 cDNAs were amplified with Phusion DNA polymerase (NEB) from N2 cDNA library synthesized with Superscript III first-strand synthesis system (Thermo Fisher Scientific). The amplified cDNAs were cloned into the AscI and KpnI sites of pSM vector using Gibson assembly method (Gibson, 2011).
 
@@ -154,22 +371,22 @@ CRISPR/Cas9 genome editing unc-4(miz40[unc-4::AID::BFP]), unc-37(miz36[unc-37::A
 
 For the generation of mizSi3 (Punc-4c::TIR1-loxP-Pmyo-2::GFP-NeoR-loxP), we injected Punc-4c::TIR1 repair plasmid, oxTi365 gRNA, and Cas9 plasmid into wild-type animals and screened animals with uniform and penetrant Pmyo-2::GFP expression. For simplicity, we label mizSi3(Punc-4c::TIR1-loxP-Pmyo-2::GFP-NeoR-loxP) as mizSi3(Punc-4c::TIR1).
 
-## Neuronal cell fate marker expression
+### Neuronal cell fate marker expression
 
 The following transgenes were used as cell fate markers: hdIs1[Punc-53::GFP] (DA-specific), mizEx396[Punc-129DB::his-24::mCherry, Punc-4c::his-24::GFPnovo2] (DB-specific), wdEx419[Pacr-16::GFP] (DB-specific), wdEx60[Pacr-5::GFP] (DB-specific), wyIs320[Pitr-1::plx-1::GFP, Pmig-13::mCherry::rab-3] (DA9-specific), otIs476[Pglr-4::TagRFP] (DA9-specific), mizIs3[Punc-4c::zf1-GFPnovo2::rab-3, Pmig-13::zif-1, Pmig-13::mCherry::rab-3] (DA9 specific). mCherry::RAB-3 expression in mizIs3 was used as an indicator of the mig-13 promoter activity. PLX-1::GFP signal was used to examine the itr-1 promoter activity. Scoring of the DA-, DB-, DA9 cell fate marker expressions in DA8 and DA9 neurons was conducted using ZEISS Axioplan two fluorescent microscope, except Pitr-1 in unc-4(e120) mutants, which was examined under the ZEISS LSM800 confocal microscope.
 
-## Temperature shift assay
+### Temperature shift assay
 
 For embryonic knockdown, the L4 parental animals of unc-4(e2322ts) mutants were transferred to 25°C (restrictive temperature). Newly hatched L1 animals from the parental animals were transferred to 16°C (permissive temperature) until L4 to examine the synaptic tiling of DA8 and DA9 neurons. For postembryonic knockdown, the L4 parental animals of unc-4(e2322ts) mutants were transferred to 16°C (permissive temperature) at L4 stage. Newly hatched L1 animals were transferred to 25°C (restrictive temperature) until L4 to examine the synaptic tiling of DA8 and DA9 neurons. Animals that were not transferred were used as controls. Wild-type controls were cultured at 16°C and 25°C.
 
-## Spatiotemporal degradation of UNC-4 and UNC-37 using the AID system
+### Spatiotemporal degradation of UNC-4 and UNC-37 using the AID system
 
 The synthetic auxin analog, α-napthaleneacetic acid (K-NAA) (Martinez et al., 2020), was dissolved in dH2O to prepare a 400 mM stock solution. The 4 mM working solution of K-NAA was prepared by diluting a stock solution with M9 buffer. 1000 μL of 4 mM K-NAA was added to the NGM plates with OP50 bacteria and were allowed to dry overnight at room temperature. To induce protein degradation, experimental animals were transferred onto the K-NAA plates and were kept at room temperature. As a control, animals were transferred onto the control (M9) plates. For embryonic degradation of UNC-4 and UNC-37, the L4 parental unc-4(miz40);mizSi3 and unc-37(miz36);mizSi3 animals were transferred to K-NAA plates at L4 stage. Newly hatched L1 animals from the parental animals were transferred to the control (M9) plates until L2 or L4 to examine the synaptic tiling of DA8 and DA9 neurons. For postembryonic degradation of UNC-4 and UNC-37, the L4 parental unc-4(miz40);mizSi3 and unc-37(miz36);mizSi3 animals were transferred to the control (M9) plates at L4 stage. Newly hatched L1 (early postembryonic degradation) or mid-late L2 (late postembryonic degradation) animals from the parental animals were transferred to K-NAA plates until L4 to examine the synaptic tiling of DA8 and DA9 neurons.
 
-## Confocal microscopy
+### Confocal microscopy
 
 Images of fluorescently tagged fusion proteins were captured in live C. elegans using a Zeiss LSM800 Airyscan confocal microscope (Carl Zeiss, Germany) with oil immersion lens 63× magnification (Carl Zeiss, Germany). Worms were immobilized on 2.5% agarose pad using a mixture of 7.5 mM levamisole (Sigma-Aldrich) and 0.225 M BDM (2,3-butanedione monoxime) (Sigma-Aldrich). Images were analyzed with Zen software (Carl Zeiss) and ImageJ (NIH, USA). Twenty to 26 Z-stack images were taken for each animal to encompass the cell bodies, axons, and synapses of the DA8 and DA9 neurons. The definition of DA8/DA9 synaptic overlap was defined by the distance between the most anterior DA9 synapse and the most posterior DA8 synapses (Mizumoto and Shen, 2013a; Chen et al., 2018). L4.4–L4.5 larval stage animals, judged by the stereotyped shape of the developing vulva (Mok et al., 2015), were used for quantification.
 
-## Statistics
+### Statistics
 
 Prism9 (GraphPad Software, USA) was used for statistical analyses. We applied the one-way ANOVA method with post hoc Tukey’s multiple comparison test for comparison among three or more parallel groups with multiple plotting points, and chi-square test (with Yates’ continuity corrected) for comparison between two binary data groups. Data were plotted with error bars representing standard errors of mean (SEM). *, **, and *** represent p-value < 0.05, < 0.01, and < 0.001, respectively.

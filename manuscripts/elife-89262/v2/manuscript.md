@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03v76x132 Department of Biomedical Engineering, Yale University New Haven United States
-2. https://ror.org/03v76x132 Systems Biology Institute, Yale University West Haven United States
-3. https://ror.org/04gyf1771 NSF-Simons Center for Multiscale Cell Fate Research, University of California Irvine Irvine United States
-4. https://ror.org/04gyf1771 Department of Mathematics, University of California Irvine Irvine United States
-5. https://ror.org/04hfg7v94 Center for Theoretical Biological Physics, Rice University Houston United States
+1. Department of Biomedical Engineering, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+2. Systems Biology Institute, Yale University West Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+3. NSF-Simons Center for Multiscale Cell Fate Research, University of California Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))
+4. Department of Mathematics, University of California Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))
+5. Center for Theoretical Biological Physics, Rice University Houston United States ([ROR:04hfg7v94](https://ror.org/04hfg7v94))
 
 † Corresponding author
 
@@ -36,41 +36,63 @@ We address these challenges here by extending our analysis to a higher temporal 
 
 ## Results
 
-## Dynamic angiogenesis can be explored in a 3D biomimetic experimental setup
+### Dynamic angiogenesis can be explored in a 3D biomimetic experimental setup
 
 To investigate the properties of angiogenic patterning and cell fate specification, we used an experimental model previously employed to assess the crosStalk between pro-angiogenic and pro-inflammatory stimuli (Kang et al., 2019). In this experimental setup, angiogenesis occurs from a 3D parental engineered endothelial vessel embedded in the collagen matrix and exposed to exogenously supplied VEGF and other pro-angiogenic factors (Figure 1A, B). In agreement with prior observations, we found that this setup resulted in formation of both one-cell extensions into the matrix (mini-sprouts) and full-fledged multicellular sprouts containing detectable lumens and pronounced leading Tip cells (Figure 1C). Sprouts displayed a variety of growth stages, including the very early ones, composed of one lumenized cell or pairs of connected cells, also forming a lumen (Figure 1—figure supplement 1). Although mini-sprouts formed throughout the observation area of the vessel, sprouts developed within specific zones, while other zones remained devoid of detectable sprout formation over the course of the study (Figure 1D–F). These observations suggested that cell fate specification and sprout formation are dynamic processes that may display diverse local outcomes. We therefore set out to characterize these processes in the context of an accessible and well-defined analysis tool that can allow to contrast experimental findings with mathematical models of angiogenic patterning, particularly those based on the commonly assumed NOTCH receptor-mediated cell–cell interactions (Figure 1G).
 
-## Mathematical model of VEGF/NOTCH signaling predicts spatially resolved Tip–Stalk patterns
+![Figure 1.](https://cdn.elifesciences.org/articles/89262/elife-89262-fig1-v2.jpg)
+
+**Figure 1.:** (A) 3D vessel model for inducing angiogenesis in response to a gradient of vascular endothelial growth factor (VEGF). (B) Cross-section of a vessel embedded in collagen type I within the device; VEGF is added to the medium reservoir above the vessel to generate a VEGF gradient. (C) Angiogenesis leads to the formation of new sprout-related structures from the parental vessel that have two distinct morphologies: (i) full-fledged multicellular sprouts containing detectable lumens and (ii) mini-sprouts in the form of single cell extension into the matrix. Scale bars: 20 μm. (D) Temporally resolved observation of dynamic formation of sprouts and mini-sprouts populations during angiogenesis. As depicted in (C), sprouts are pseudo-labeled with red color and mini-sprouts in blue color. Scale bars: 50 μm. Dependence of the spatial distribution of sprouts and mini-sprouts on the VEGF concentration: (E) 10 ng/ml and (F) 100 ng/ml. Scale bars: 50 μm. Images are 3D reconstructions of confocal z-stacks, showing nuclear (Hoechst 33342) and cytoskeleton (Phalloidin). (G) Schematic overview of Tip–Stalk patterning: (i) Spatial Tip–Stalk patterning due to juxtacrine NOTCH signaling that might lead to fixed persistent and transient cell fate specification. (ii) Fates of mini-sprouts in experiments: both retraction (thus conversion from the phenotypically Tip to as Stalk phenotype) and stabilization and growth to a fully defined sprout are observed.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89262/elife-89262-fig1-figsupp1-v2.jpg)
+
+### Mathematical model of VEGF/NOTCH signaling predicts spatially resolved Tip–Stalk patterns
 
 To set the framework for the analysis of cell fate determination, we extended our previously developed and experimentally validated mathematical model of Tip–Stalk fate differentiation between two cells (Boareto et al., 2015b) to a multicellular hexagonal lattice in two dimensions. In the new model, we replicated within each cell the signaling network incorporating the NOTCH and VEGF pathways (Figure 2A). Prior analysis of this model on the level of two adjacent cells predicted the emergence of bistability between a (high NOTCH, low Delta) Stalk phenotype and a (low NOTCH, high Delta) Tip phenotype (Boareto et al., 2015b). This result is consistent with the overall expectation of the differentiation effect of Delta–NOTCH signaling, which in 2D is further expected to generate ‘salt-and-pepper’ patterns, with a single Tip cell surrounded by six Stalk cells (Bocci et al., 2020), yielding the overall fraction of Tip cells in this arrangement of 25%. However, this simple bistability and spatial patterning picture can be altered by signaling inputs that potentially conflict with those involved in Delta–NOTCH signaling (Figure 1G). For example, the VEGF pro-angiogenic factor promoting the Tip cell fate, can conflict with the NOTCH signaling activated by the neighboring cells that instead promotes the Stalk cell fate while suppressing the Tip cell identity. This might result in disordered patterns with adjacent Tip cells that deviate from the archetypical salt-and-pepper configuration. To explore the properties of this disordering effect, we ran simulations, in which the VEGF–NOTCH signaling occurred in all individual cells within a hexagonal array of the model multicellular endothelium, starting from randomized initial conditions (Figure 2A). The fully equilibrated patterns were then analyzed for distributions of the simulated Delta and NOTCH expression across the cells. We found for a wide range of VEGF inputs that the distributions of Delta and NOTCH displayed largely bimodal distributions, and the levels of the average Delta expression increased with the increasing input (Figure 2B, C, Figure 2—figure supplement 1A, B) due to positive effect of the activated VEGF receptor on Delta (see again the circuit in Figure 2A). Nevertheless, the clear overall bimodality allowed us to consistently classify cells into the Delta-high (Tip) and Delta-low (Stalk) cell states and examine the spatial distribution of these cellular subtypes (see Method: Definition of Tip cells in the model).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/89262/elife-89262-fig2-v2.jpg)
+
+**Figure 2.:** (A) Right: An example of a pattern after full equilibration on a 30 × 30 hexagonal lattice. Color scale highlights the intracellular levels of Delta. Left: The circuit schematic highlights the components of the intracellular NOTCH–vascular endothelial growth factor (VEGF) signaling network. (B) Distribution of intracellular Delta levels in the two-dimensional lattice for increasing levels of external VEGF stimuli. (C) Pseudopotential landscape showing the distribution of intracellular levels of NOTCH and Delta for VEGFEXT = 100 ng/ml. (D) Fraction of Tip cells as a function of external VEGF stimulus (black curve). Blue and yellow lines and shading depict experimental fractions of Tip cells for VEGFEXT = 10 ng/ml and VEGFEXT = 100 ng/ml, respectively. (E) Detail of Tip cell fraction transition zone (corresponding to box in panel D). Legend depicts the coefficients of the linear fits. (F) Shift of the VEGFEXT transition threshold upon variation of the NOTCH–Delta-binding rate constant. For panels B–F, results are averaged over 50 independent simulations starting from randomized initial conditions for each VEGFEXT level (see Methods: Simulation details).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89262/elife-89262-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Steady-state patterns for increasing levels of VEGF signal. Red heatmaps show the levels of Delta in each lattice cell. (B) Pseudopotential landscape of the joint (NOTCH, Delta) intracellular levels for increasing levels of VEGF signal. (C) The disorder index of the pattern as a function of external VEGF signal. The disorder index is defined as the fraction of ‘incorrect’ Tip–Tip contacts in the lattice. (D) Statistics of Tip–Tip contacts as a function of external VEGF signal. For each VEGF input level on the x-axis, the bar height represents the overall fraction of Tip cells in the pattern, while the color-coding classifies Tip cells based on the number of ‘incorrect’ Tip nearest neighbors. For panels (B–D), results are averaged over n = 50 independent simulations starting from randomized initial conditions on a 30 × 30 hexagonal lattice with periodic boundary conditions (see methods for details).
+
 The spatial Tip–Stalk cell distribution patterns revealed a complex dependency on the VEGF input. At relatively low VEGF levels, the patterns were mostly ordered, with small deviations from the expected ‘salt-and-paper’ geometry with a 25–75% ratio of Tip–Stalk (Figure 2D). However, as the VEGF input increased, the fraction of Tips grew and the patterns became sharply more disordered over a relatively narrow range of magnitude of the VEGF input, which could be identified as a highly sensitive area separating more ‘ordered-like’ and ‘disordered-like’ patterns. Finally, increasing VEGF stimuli beyond the highly sensitive area further increased the disorder of the patterns, but with a lower VEGF sensitivity, over several more orders of magnitude of VEGF inputs (Figure 2D, E and Figure 2—figure supplement 1A, B). Spatial patterns in the disordered phase at high VEGF input levels were characterized by much higher fractions of Tip cells that were frequently in contact with each other as quantified by a ‘disorder index’ (Figure 2—figure supplement 1C, D). This transition was reminiscent of the order–disorder transition commonly observed and studied in the change of the order of atoms in various substances as a function of temperature, and in other chemical systems (Yang et al., 2017; Bu et al., 2022). As expected for these types of transitions, increasing or decreasing the order-stabilizing Delta–NOTCH cell–cell signaling, resulted in the corresponding shifts of the ranges of VEGF inputs, over which the sharp order–disorder transition occurred. For example, a small increment or decrease in the cellular production of the Delta ligand shifted the order–disorder transition to either lower or higher VEGF inputs (Figure 2F). As the broad sweep of the VEGF inputs simulated in the mathematical model is likely beyond the range of receptor sensitivity for the experimental VEGF signaling, we contrasted the predicted fractions of Tip cells with the previously made observations in the 3D experimental angiogenesis model shown in Figure 1. We found that, for the VEGF = 10 ng/ml, the experimentally determined fraction of the Tip cells was 0.02 ± 0.08 (mean ± standard deviation [SD]), that is, encompassing the fraction of 0.25 expected for the completely ordered, ‘salt-and-pepper’ Tip cell distribution pattern. However, for VEGF = 100 ng/ml the experimentally observed Tip cell fraction was 0.32 ± 0.01 (mean ± SD), which corresponded to the disordered state predicted by the model under higher VEGF inputs. We therefore concluded that the transition between order and disorder can occur in the 10–100 ng/ml range of VEGF concentration, allowing us to investigate the properties of the disordered state and its relationship to the spatial frequency of sprout formation. Based on the Tip/Stalk cell ratio, we calibrated the model’s parameters so that a VEGF input of 100 ng/ml matched the experimentally observed Tip/Stalk fractions at the same experimental VEGF input (see Methods: Mathematical model of VEGF/NOTCH signaling).
 
-## Precise quantification of Tip cell spatial arrangement suggests disordered patterning in the engineered angiogenesis model
+### Precise quantification of Tip cell spatial arrangement suggests disordered patterning in the engineered angiogenesis model
 
 To enable the comparison between the modeling predictions and experimental observations, we first quantified the spatial patterning characteristics of the inferred positions of the Tip cells in the experimental angiogenesis model. As in our prior analysis using this experimental approach (Kang et al., 2019), we identified Tip cells based on their key phenotypic characteristic — invasive migration into the surrounding collagen matrix. As suggested above, Tip cells can either be present in the form of ‘mini-sprouts’ or be at the Tips of sprouts containing recognizable lumens (see Figure 3A and Figure 1—figure supplement 1 for examples of this classification). Since formation of both mini-sprouts and lumenized sprouts involved emergence of Tip cells specified in endothelial cell monolayer lining the parental vessel, we constructed a two-dimensional map of the experimentally inferred spatial positions of Tip cells at the location of all mini-sprouts and sprouts (Figure 3A , B). This mapping (see Methods: Quantification of Tip–Tip cell distance in experiments) assumed that the Stalk cells found in the extending sprouts emerge through cell proliferation, rather by Stalk cell migration from the parental vessel. Experimentally, we used nuclear staining to identify non-Tip cells. Since the results above suggested that the cell fates and their patterns in our experimental setup were consistent with the ordered or somewhat disordered ‘salt-and-paper’ patterns, we further assumed that all the non-Tip cells adopted the Stalk fates (in the sense of Delta-low, NOTCH-high status, alternative to the Tip cell fate). The resulting map of experimentally specified Tip and Stalk cell locations was then used to calculate the shortest distances between Tip cells, measured in ‘cell hops’, that is, the minimal number of intermediate cells between randomly chosen pairs of Tip cells (Figure 3B). These distances included Stalk cells exclusively, and no intermediate Tip cells. If two or more Tip cells were at equal distance from a given other Tip cell, their distance ranking was assigned randomly (e.g., two Tip cells at the equal minimal distance to a given Tip cell, would be randomly assigned the ranking of the closest and second closest Tip cell). We then analyzed these data for the VEGFEXT = 100 ng/ml experimental input which resulted in the most robust sprouting, comparing the results with the predictions of our mathematical model for the same input level that, when averaging over multiple simulations, matched the experimentally measured fraction of Tip cells. Finally, we quantified the shortest paths separating Tip cells in the equilibrated patterns (Figure 3C and Methods: Quantification of Tip–Tip cell distance in modeling).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/89262/elife-89262-fig3-v2.jpg)
 
-**Figure 3.:** (A) Analysis pipeline to infer the 2D Tip–Stalk arrangements from 3D experimental images: experimental labeling of the nuclei of sprout/mini-sprout cells (above the plane of the parental vessel) and of the Stalk cells (below the plane of the parental vessel) is used to ‘compress’ the cells in each sprout or mini-sprout into a single Tip cell. Tip–Tip distance is defined as the number of cells measured in ‘cell hops’, that is, the minimal number of intermediate cells between randomly chosen pairs of Tip cells from experiments (B) (the example is identical to the inset at the bottom of (A)) and 2D Tip–Stalk patterns from mathematical modeling (C). Black arrows indicate minimal and valid cell hops between Tips, whereas gray arrows indicate minimal but invalid cell hops (passing through other Tip cells); red arrows indicate the non-minimal cell hops which does not count in the Tip–Tip distance quantification. (D) Tip cell distance distribution from any given Tip cell. Red bars depict experimental measurement for VEGFEXT = 100 ng/ml and black line depicts the model’s prediction for VEGFEXT = 100 ng/ml. For reference, dashed lines indicate the expected Tip–Tip distance distribution of ‘perfect’ salt-and-pepper patterns shown in the inserts. (E) Detailed distance distribution for the closest Tip (left), second closest Tip (middle), and third closest Tip (right).Figure 3—source data 1.Figure 3D, E.
+**Figure 3.:** (A) Analysis pipeline to infer the 2D Tip–Stalk arrangements from 3D experimental images: experimental labeling of the nuclei of sprout/mini-sprout cells (above the plane of the parental vessel) and of the Stalk cells (below the plane of the parental vessel) is used to ‘compress’ the cells in each sprout or mini-sprout into a single Tip cell. Tip–Tip distance is defined as the number of cells measured in ‘cell hops’, that is, the minimal number of intermediate cells between randomly chosen pairs of Tip cells from experiments (B) (the example is identical to the inset at the bottom of (A)) and 2D Tip–Stalk patterns from mathematical modeling (C). Black arrows indicate minimal and valid cell hops between Tips, whereas gray arrows indicate minimal but invalid cell hops (passing through other Tip cells); red arrows indicate the non-minimal cell hops which does not count in the Tip–Tip distance quantification. (D) Tip cell distance distribution from any given Tip cell. Red bars depict experimental measurement for VEGFEXT = 100 ng/ml and black line depicts the model’s prediction for VEGFEXT = 100 ng/ml. For reference, dashed lines indicate the expected Tip–Tip distance distribution of ‘perfect’ salt-and-pepper patterns shown in the inserts. (E) Detailed distance distribution for the closest Tip (left), second closest Tip (middle), and third closest Tip (right).
 
 The processing of experimental data described above permitted a direct comparison of modeling predictions and experimental defined Tip cells locations, First, we examined the average distances from the Tip cells to the closest, second closest, etc. neighboring Tip cells. We found that these distance distributions closely agreed with the modeling predictions, particularly for the distances up to the fourth closest neighbor, differing substantially from the predictions for the ordered ‘salt-and-pepper’ patterns (Figure 3D). A key finding was that, in agreement with the expectation from the disordered pattern model, there were frequent cases of direct contact between two Tip cells, making the average distance to the closest Tip cell around 0.5 cells in the model. In contrast, two Tip cells were always separated by at least one Stalk cell in ‘traditional’ ‘salt-and-pepper’ models. As a baseline comparison, the mathematical model with a 100-fold reduction of VEGF stimulus (1 ng/ml) exhibited a Tip–Tip distance statistics more closely comparable with the ‘salt-and-pepper’ models. Further analysis of the experimental distributions of Tip cell distances revealed that Tip cells were adjacent to at least one other Tip cell with 80% chance, and with at least two other Tip cells with 40% chance, and with at least three other Tip cells with 20% chance (Figure 3E). These Tip cell distance distributions were again in agreement with the modeling results. Taken together these findings provided strong evidence for the predicted partially disordered pattern of Tip cell specification. In our experiments, the observed cell–cell contact area varied, spanning from almost corner-to-corner contact up to approximately 50 µm. Previous studies (Shaya et al., 2017; Kwak et al., 2022) have clearly demonstrated the influence of the cell–cell contact area on NOTCH signaling, but the values get nosy in the middle range, particularly when excluding extremely low cell–cell contact areas. Reflecting these findings, we excluded the corner contacts, which might correspond to extremely low cell–cell contact areas, from the Tip–Tip distance measurements as depicted in Figure 3B. We also made an assumption that variations in cell–cell contact size within tens of microns correlate weakly with the strength of NOTCH signaling. This assumption did not impede our effort to compare the overall trends with results from modeling using hexagonal cells, as shown in Figure 3D, E.
 
-## Dynamic tracking of angiogenic cell fate specification
+### Dynamic tracking of angiogenic cell fate specification
 
 The integrative, computational, and experimental analysis presented above suggested that the spatial Tip cell distribution can be well explained by the model of a partially disordered ‘salt-and-pepper’ mechanism. However, it is not clear whether all such Tip cells would spearhead the formation of a new sprout, or retract back to an alternative (Stalk) cell fate. We addressed this question by dynamically tracking the fates of mini-sprouts to examine whether this state is an intermediate step toward the sprout formation. Specifically, we imaged the progress of sprouting in the same areas of a live parental vessel at different time points of 1, 3, 7, and 28 hr of incubation in 100 ng/ml of VEGF (Figure 4A–H). We found that all sprouts formed either directly from Stalks or from mini-sprouts, suggesting a non-observed transition from Stalk to mini-sprout due to observational timeframe limitations. Strikingly, however, not all mini-sprouts persisted and initiated sprout formation. Instead, many mini-sprouts retracted and new mini-sprouts formed during the time-course of the analysis. We then tracked a group of 118 cells that adopted the mini-sprout phenotype at least once over a period of 28 hr after VEGF exposure. Their state change dynamics was visualized using the Sankey diagram (Figure 4I). The initial state of any sprouts or mini-sprouts was classified as the Stalk cell to reflect the hypothesized ‘salt-and-pepper’ patterning structure, entirely consisting of either Tip or Stalk cells. When a mini-sprout retracted, it was newly marked as a Stalk cell. By the final time point of 28 hr of VEGF exposure, 45.8% of the cells that displayed the mini-sprout phenotype at least once during the experiment retracted back to the Stalk state, illustrating the highly dynamic phenotype of mini-sprout extensions and retractions. Of the remaining cells, 41.5% and 12.7% were classified to be either in the mini-sprout or sprout-leading Tip cell states, respectively. Although sprout formation continued throughout the experiment, the rate of conversion of mini-sprouts to full-fledged sprouts gradually decreased over time, with 13.6%, 2.9%, and 7.5% of mini-sprouts becoming sprout-leading Tip cells in the time ranges of 1–3, 3–7, and 7–28 hr, respectively (Figure 4K–M). In most cases (86.7%), sprouts emerged from newly formed mini-sprouts (i.e., the cells that were Stalk cells and then mini-sprouts in the preceding two time points), suggesting that mini-sprouts represent transient states rapidly converting to either the fully committed sprout state or to the Stalk state (Figure 4O). These observations raised the question of what might define the commitment of a mini-sprout to the sprout differentiation. We next addressed this question by analyzing the spatial distribution of fully formed sprouts over the observed area of the parental vessel.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/89262/elife-89262-fig4-v2.jpg)
 
-**Figure 4.:** Green fluorescent protein (GFP)-expressing endothelium in the 3D vessel setup captured 1 hr (A), 3 hr (B), 7 hr (C), and 28 hr (D) after 100 ng/ml of vascular endothelial growth factor (VEGF) treatment. Sprouts and mini-sprouts are identified by red and blue surface entities, respectively. Square marks representing the positions of sprouts (red) and mini-sprouts (blue) in the original images at each time point (E–H). (I) Sankey diagram demonstrating the dynamic state change of sprouts with red lines and mini-sprouts with blue lines throughout the time points. And gray lines represent mini-sprouts which ended up being retracted at the last observation, time point 4. A purple line shows an example of the state change from a Stalk (initially non-invading endothelial cell) to mini-sprout, retraction, mini-sprout, and mini-sprout at each time point. Only cells that that became mini-sprout at least once during the experiment are shown. (J) Different types of observed transitions between consecutive time points when starting from the mini-sprout state: maintain the mini-sprout state, become a sprout, or retract to the Stalk state. The ratio of states switched from mini-sprouts in the previous time point 1 (K), time point 2 (L), and time point 3 (M). (N) The two observed pathways to sprout formation between consecutive time points: direct Stalk to sprout or mini-sprout to sprout transition. Once a newly formed vessel becomes a sprout, it is permanently committed. (O) Duration of staying as a mini-sprout or a Stalk in the previous state before being committed to a sprout.Figure 4—source data 1.Figure 4I–O.
+**Figure 4.:** Green fluorescent protein (GFP)-expressing endothelium in the 3D vessel setup captured 1 hr (A), 3 hr (B), 7 hr (C), and 28 hr (D) after 100 ng/ml of vascular endothelial growth factor (VEGF) treatment. Sprouts and mini-sprouts are identified by red and blue surface entities, respectively. Square marks representing the positions of sprouts (red) and mini-sprouts (blue) in the original images at each time point (E–H). (I) Sankey diagram demonstrating the dynamic state change of sprouts with red lines and mini-sprouts with blue lines throughout the time points. And gray lines represent mini-sprouts which ended up being retracted at the last observation, time point 4. A purple line shows an example of the state change from a Stalk (initially non-invading endothelial cell) to mini-sprout, retraction, mini-sprout, and mini-sprout at each time point. Only cells that that became mini-sprout at least once during the experiment are shown. (J) Different types of observed transitions between consecutive time points when starting from the mini-sprout state: maintain the mini-sprout state, become a sprout, or retract to the Stalk state. The ratio of states switched from mini-sprouts in the previous time point 1 (K), time point 2 (L), and time point 3 (M). (N) The two observed pathways to sprout formation between consecutive time points: direct Stalk to sprout or mini-sprout to sprout transition. Once a newly formed vessel becomes a sprout, it is permanently committed. (O) Duration of staying as a mini-sprout or a Stalk in the previous state before being committed to a sprout.
 
-## Random uniform model accounts for spatial distribution of extending sprouts
+### Random uniform model accounts for spatial distribution of extending sprouts
 
 While the NOTCH/VEGF mathematical model could quantitatively resolve Tip–Stalk spatial patterns, it did not capture the rate of cell fate switching or explained the commitment of Tip cells to lead the formation of a mature sprout. To identify the underlying principles of sprout initiation, we thus integrated the multicell model with several alternative phenomenological hypotheses (summarized in Figure 5A–D). We then tested these hypotheses against the measured distributions of distances between sprouts and, in particular, the observation that sprouts were always separated by at least one non-sprout cell (blue bars in Figure 5E). In these tests, we ensured that the results were normalized to the overall density of sprouts observed experimentally (see Method: Phenomenological models of Sprout selection). The first straightforward hypothesis was that mini-sprouts commit to the sprout phenotype independently of the location of other forming sprouts, constituting the ‘cell-autonomous sprout selection’ model (Figure 5A, B). In this case, however, the corresponding model predicted multiple contacts between sprouts (black line in Figure 5E), in sharp contrast with the experimental observation. The observation that most sprouts are in contact with at least another Tip (Figure 5—figure supplement 1A), but never in contact with another sprout, suggested a control mechanism where sprout selection inhibits nearby Tip cells from committing to the same fate. This led to two additional alternative hypotheses. In ‘repulsion between sprouts’ model, it was assumed that sprouts cannot be in contact; therefore, Tip cells cannot commit to the sprout phenotype if already in contact with a sprout (Figure 5C). In the ‘random uniform’ model, it was assumed that sprouts are selected randomly, but maximizing their overall spread in the lattice (Figure 5D; see Method: Phenomenological models of Sprout selection). While both models correctly predicted sprouts to never be in contact, the ‘random uniform’ model better described the cases where adjacent sprouts are separated by two or more cells (Figure 5E).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/89262/elife-89262-fig5-v2.jpg)
+
+**Figure 5.:** (A) An example of one-dimenstional Tip cell distribution, including a sprout and mini-sprouts, and Stalks pattern. (B) Sprout selection probability (PS) for the cell-autonomous model if a new sprout was added to the pattern of (A). Stalk cells cannot become sprouts, and existing mini-sprouts share the same selection probability. (C) Sprout selection probability (PS) for the sprout repulsion model. The leftmost mini-sprout cannot be selected because it is already in contact with an existing sprout, while the remaining two mini-sprouts share the same selection probability. (D) Sprout selection probability (PS) for the random uniform distribution model. The rightmost mini-sprout maximizes the distance to the existing sprout and is therefore the only viable selection. (E) Sprout distance distribution to its closest sprout neighbor. Blue bars indicate experimental results for VEGFEXT = 100 ng/ml while black, red, and blue lines depict the three different models of sprout selection (cell-autonomous, repulsion between sprouts, and random uniform distribution, respectively). (F) Average distance between a sprout and its closest sprout neighbor in the model as a function of sprout cell fraction in the lattice for the three proposed models of sprout selection. The green dot highlights the experimental sprout fraction and distance at VEGFEXT = 100 ng/ml.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89262/elife-89262-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Detailed distribution of Sprout distance to its closest Tip neighbor. Solid blue bars depict experimental measurements for the vascular endothelial growth factor (VEGF) =100 ng/ml experiment, while black, red, and green lines depict the predicted distance distributions for the cell-autonomous, repulsion, and random uniform Sprout selection models. (B–D) Distribution of Sprout distance to its closest Sprout neighbor predicted by the model. Different curves indicate the Sprout distance distribution for models with increasing Sprout cell density ranging from 2% to 10% (the experimental sprout density at VEGF =100 ng/ml is $ρ_{S}=7%$). Panels B–D depict predictions for the cell-autonomous, repulsion between sprouts, and random uniform sprout selection models, respectively. In all panels, the VEGF level is fixed to VEGF =100 ng/ml to match the experimental model.
+
 To test these mechanisms more rigorously, we computed the average distance (in cell numbers) between pairs of closest sprouts while also varying the number of sprouts allowed in the lattice (Figure 5—figure supplement 1B–D), thus generating a curve of the typical sprout–sprout distancing as a function of sprout density in the lattice (Figure 5F). The ‘random uniform’ model predictions agreed very closely with the experimentally observed combination of sprout fraction and sprout–sprout distance, whereas the other two models greatly underestimated the distances between sprouts (Figure 5F). Furthermore, while all models overestimated the fraction of the adjacent sprouts that are one cell away from the current sprout and underestimated the fractions of sprouts at greater distances, the deviation of the ‘random uniform’ model predictions for this inter-sprout distribution was the lowest of all the models, again supporting the ‘random uniform’ model as the more likely to account for sprout selection (Figure 5F).
 
-## Fibronectin distribution may mediate sprout induction
+### Fibronectin distribution may mediate sprout induction
 
 Random distribution maximizing the distance between sprouts is similar to allelopathy models, accounting to spatial dispersion of species maximizing distance between them. In these models, the key postulated mechanism is inhibition of growth of individuals of the same species through a mutual suppression mechanism (Liu, 2003; Fraenkel, 1959; Willis, 2007). Another analogous set of mechanisms are embedded within the concept of the Turing pattern formation, the key to which is diffusible negative feedback regulator setting spatial distribution of morphogenic features (Turing, 1990; Maini et al., 2006). A variant of such mechanisms is a model postulating depletion of some ingredient that is key to the local growth, by its active redistribution toward the growing pattern features and depletion from the zones between them, rather than active mutual inhibition of the pattern forming units.
 
@@ -78,7 +100,7 @@ Given these prior models, we hypothesized that a similar mechanism may account f
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/89262/elife-89262-fig6-v2.jpg)
 
-**Figure 6.:** (A) A schematic describing cross-sectional planes for subsequent confocal images: (i) for (B), (ii) for (C), and (iii) for (D). (B) Localization of fibronectin expression to a following cell than in a leading cell in a sprout. (C) Higher fibronectin expression in a sprout (a ‘following’ cell at the base of the sprout) than at a mini-sprout. (D) Intrinsic heterogeneity of fibronectin expression on quiescent endothelium displaying no mini-sprout or sprout formation. Images are 3D reconstructions of confocal z-stacks. Scale bars: 15 μm. Cells on the parental vessel were identified by GFP expression in the cytoplasm (E), then segmented (F). (G) Fibronectin intensity of each cell on the parental vessel is marked as a dot at the corresponding x and y positions of the cell centroids. Fibronectin intensities for sprouts (following cells) or mini-sprouts are indicated as squares. (H) Fibronectin intensity of leading cells and following cells of sprouts, mini-sprouts, and quiescent cells. Data are presented by box and whiskers with all individual points representing each cell (Nsprout(leading): 7; Nsprout(following): 11; NMini-sprout: 11; NNo treatment: 10). One-way ANOVA analysis was performed followed by Tukey’s multiple comparisons test (*p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001). (I) Cellular layer was segmented into groups containing seven neighboring cells to assess the local environment for each group. (J) Distributions of the ratio of cells having fibronectin levels higher than a threshold, the minimum value of sprout in (H), in a group of seven neighboring cells defined in (I), which included either a sprout or a mini-sprout. The overall distribution covers both regions.Figure 6—source data 1.Figure 6H, J.
+**Figure 6.:** (A) A schematic describing cross-sectional planes for subsequent confocal images: (i) for (B), (ii) for (C), and (iii) for (D). (B) Localization of fibronectin expression to a following cell than in a leading cell in a sprout. (C) Higher fibronectin expression in a sprout (a ‘following’ cell at the base of the sprout) than at a mini-sprout. (D) Intrinsic heterogeneity of fibronectin expression on quiescent endothelium displaying no mini-sprout or sprout formation. Images are 3D reconstructions of confocal z-stacks. Scale bars: 15 μm. Cells on the parental vessel were identified by GFP expression in the cytoplasm (E), then segmented (F). (G) Fibronectin intensity of each cell on the parental vessel is marked as a dot at the corresponding x and y positions of the cell centroids. Fibronectin intensities for sprouts (following cells) or mini-sprouts are indicated as squares. (H) Fibronectin intensity of leading cells and following cells of sprouts, mini-sprouts, and quiescent cells. Data are presented by box and whiskers with all individual points representing each cell (Nsprout(leading): 7; Nsprout(following): 11; NMini-sprout: 11; NNo treatment: 10). One-way ANOVA analysis was performed followed by Tukey’s multiple comparisons test (*p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001). (I) Cellular layer was segmented into groups containing seven neighboring cells to assess the local environment for each group. (J) Distributions of the ratio of cells having fibronectin levels higher than a threshold, the minimum value of sprout in (H), in a group of seven neighboring cells defined in (I), which included either a sprout or a mini-sprout. The overall distribution covers both regions.
 
 ## Discussion
 
@@ -96,60 +118,248 @@ The analysis presented here highlights the utility of combining experimental eng
 
 ## Materials and methods
 
-## Fabrication of 3D vessel chip
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Recombinant Anti-Fibronectin antibody(Rabbit monoclonal)</td>
+      <td>abcam</td>
+      <td>ab268020</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor Plus 594(Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A32740</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Animal-Free Recombinant Human FGF-basic (bFGF)</td>
+      <td>PeproTech</td>
+      <td>AF10018B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>VEGF Recombinant Human Protein</td>
+      <td>Life Technologies</td>
+      <td>PHC9394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sphingosine-1-phosphate</td>
+      <td>Sigma-Aldrich</td>
+      <td>S9666</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol myristate acetate</td>
+      <td>Sigma-Aldrich</td>
+      <td>P1585</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Primary human brain microvascular endothelial cells transfected with GFP-expressing lentivirial particles.</td>
+      <td>Angio-Proteomie</td>
+      <td>cAP-0002GFP</td>
+      <td>Isolated from normal human brain tissue</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMARIS 9.8.0</td>
+      <td>Bitplane</td>
+      <td></td>
+      <td>https://imaris.oxinst.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PRISM 9.0.0</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td>https://www.graphpad.com/features</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Jupyter Notebook 6.1.6</td>
+      <td>Project Jupyter</td>
+      <td></td>
+      <td>https://jupyter.org/install</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3.12.1</td>
+      <td>Python Software Foundation</td>
+      <td></td>
+      <td>https://www.python.org</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33342</td>
+      <td>Thermo Fisher</td>
+      <td>H3570</td>
+      <td>IF (5 µg/ml)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fabrication of 3D vessel chip
 
 Chips for mimicking 3D angiogenesis in vitro were fabricated as introduced in our previous work (Kang et al., 2019). The chip for live-cell imaging consists of a polydimethylsiloxane (PDMS) chamber, an engineered blood vessel embedded in collagen gel, and the whole construct was placed on a glass-bottom dish (Figure 1A). A single line mold (D: 200–250 µm, L: 10 mm) of polylactic acid (PLA) which has a semicircular cross-section was deposited on a Petri dish with a 3D printer (Ultimaker). After a PDMS chamber was put on the mold, pre-mixed collagen solution (5 mg/ml, Type 1 collagen, BD) according to the manufacturer’s protocol was injected through a hole on the PDMS chamber and collagen polymerization was induced on ice for 30 min and at 37°C for 1.5 hr. The PDMS chamber including the collagen construct was carefully peeled off, then the bottom side was sealed with a glass bottom of a dish. Laminin solution (60 µg/ml in phosphate-buffered saline, Sigma-Aldrich) was injected into the channel pre-made in collagen, then the chip was flipped upside down and incubated at 37°C for 1 hr. Finally, endothelial cell suspension (1 × 107 cells/ml) was injected into the channel, then the chip was flipped upside down again and incubated at 37°C for 1 hr to allow cells to attach to the lumen. Once endothelial cells form a confluent monolayer on the channel surface, a fresh medium was injected into the engineered blood vessel and changed every 12 hr before the treatment with pro-angiogenic factors.
 
-## Cell culture
+### Cell culture
 
 GFP-expressing human brain endothelial cells (GFP-HBMEC) were purchased from Angio-Proteomie. According to the information provided by Angio-Proteomie, primary human brain endothelial cells, isolated from normal human brain tissue, were transfected with GFP-expressing lentiviral particles and subsequently selected for puromycin resistance. Cells were cultured in a growth medium of M199 (Gibco) supplemented with 20% fetal bovine serum (Life Technologies), 1% HEPES buffer (Thermo Scientific), 1% Glutamax (Thermo Fisher), 1% antibiotic–antimycotic (Thermo Fisher), Heparin (25 mg/500 ml, Sigma-Aldrich), and endothelial cell growth supplement (Sigma-Aldrich) and used for further experiments at passage 9.
 
-## Induction of angiogenesis
+### Induction of angiogenesis
 
 For inducing angiogenesis in the 3D vessel chip, the growth medium was supplemented with 40 ng/ml of basic fibroblast growth factor (Thermo PeproTech), 500 nM of Sphingosine-1-phosphate (S1P, Sigma-Aldrich), and 75 ng/ml of phorbol myristate acetate (Sigma-Aldrich). And 100 or 10 ng/ml of VEGF was added on the top reservoir of the 3D vessel chip to create a VEGF gradient toward the engineered blood vessel (Figure 1B).
 
-## Mathematical model of VEGF/NOTCH signaling
+### Mathematical model of VEGF/NOTCH signaling
 
-We generalize existing mathematical models of the interconnected signaling between the NOTCH and VEGF pathways to a two-dimensional multicellular scenario (Kang et al., 2019; Boareto et al., 2015a). The temporal dynamics of NOTCH (N), Delta (D), Jagged (J), NOTCH intracellular domain or NICD (I), and VEGF receptor (VR) in a cell are modeled with ordinary differential equations: (1a)dNdt=N0H+(I)−kTN(DEXT+JEXT)−kCN(D+J)−γN(1b)dDdt=D0H−(I)H+(VRVEXT)−kTNEXTD−kCND−γD(1c)dJdt=J0H+(I)−kTNEXTJ−kCNJ−γJ(1d)dIdt=kTN(DEXT+JEXT)−γII(1e)dVRdt=VR0H−(I)−kTVRVEXT−γVR
+We generalize existing mathematical models of the interconnected signaling between the NOTCH and VEGF pathways to a two-dimensional multicellular scenario (Kang et al., 2019; Boareto et al., 2015a). The temporal dynamics of NOTCH (N), Delta (D), Jagged (J), NOTCH intracellular domain or NICD (I), and VEGF receptor (VR) in a cell are modeled with ordinary differential equations:
 
-NOTCH, Delta, Jagged, and VEGF receptor are produced with basal rates N0, D0, J0, VR0, and are degraded with rate constant γ. The basal production rates are modulated by NICD that transcriptionally activates NOTCH and Jagged while inhibiting Delta and VEGFR via shifted Hill functions:(2)HS(I,I0,n,λ)=1+λ(II0)n1+(II0)n
+$$
+\frac{dN}{dt}=N_{0}H^{+(I)−k_{T}N(D_{EXT}+J_{EXT})−k_{C}N(D+J)−\gammaN}
+$$
 
-where I0 is a threshold NICD level, n is the Hill coefficient, and λ represents the target’s production rate fold-change at high NICD concentrations (I≫I0). Therefore, λ>1 implies transcriptional activation while λ<1 implies transcriptional inhibition. For brevity, activating and inhibiting Hill functions are denoted by H+I and H-I , respectively.
 
-Receptors and ligands can bind to external ligands/receptors with binding rate constant kT. In the case of NOTCH signaling, NEXT, DEXT, and JEXT represent the average levels of NOTCH, Delta, and Jagged in the six nearest neighbor cells on the hexagonal lattice. Conversely, VEGF is modeled as an external signal provided to all endothelial cells; therefore, all cells are exposed to the same fixed level (VEXT). Moreover, NOTCH receptors and ligands can bind within the same cell with a rate constant kC, which results in the degradation of the ligand–receptor complex without any downstream signaling (cis-inhibition). NICD is released upon binding of NOTCH receptors with external ligands and degraded with rate constant γI . Finally, VEGF receptors can bind to external VEGF ligands, thus creating activated VEGF receptor (VRVEXT), which in turn inhibits the production of Delta. Details on parameter values are presented in Table 1. Compared to previous models, we rescaled the Hill function threshold for VEGF-mediated activation of Delta in order to match quantitatively the ratio of Tip/Stalk cells between model and experiment when the external input is VEXT=100 ng/ml.
+
+$$
+\frac{dD}{dt}=D_{0}H^{−(I)H^{+}(V_{R}V_{EXT})−k_{T}N_{EXT}D−k_{C}ND−\gammaD}
+$$
+
+
+
+$$
+\frac{dJ}{dt}=J_{0}H^{+}(I)−k_{T}N_{EXT}J−k_{C}NJ−\gammaJ
+$$
+
+
+
+$$
+\frac{dI}{dt}=k_{T}N(D_{EXT}+J_{EXT})−\gamma_{I}I
+$$
+
+
+
+$$
+\frac{dV_{R}}{dt}=V_{R0}H^{−}(I)−k_{T}V_{R}V_{EXT}−\gammaV_{R}
+$$
+
+NOTCH, Delta, Jagged, and VEGF receptor are produced with basal rates $N_{0}$, $D_{0}$, $J_{0}$, $V_{R0}$, and are degraded with rate constant $\gamma$. The basal production rates are modulated by NICD that transcriptionally activates NOTCH and Jagged while inhibiting Delta and VEGFR via shifted Hill functions:
+
+$$
+H^{S}(I,I_{0},n,\lambda)=\frac{1+\lambda(\frac{I}{I_{0}})^{n}}{1+(\frac{I}{I_{0}})^{n}}
+$$
+
+where $I_{0}$ is a threshold NICD level, $n$ is the Hill coefficient, and $\lambda$ represents the target’s production rate fold-change at high NICD concentrations ($I≫I_{0}$). Therefore, $\lambda>1$ implies transcriptional activation while $\lambda<1$ implies transcriptional inhibition. For brevity, activating and inhibiting Hill functions are denoted by $H^{+I}$ and $H^{-I}$ , respectively.
+
+Receptors and ligands can bind to external ligands/receptors with binding rate constant $k_{T}$. In the case of NOTCH signaling, $N_{EXT}$, $D_{EXT}$, and $J_{EXT}$ represent the average levels of NOTCH, Delta, and Jagged in the six nearest neighbor cells on the hexagonal lattice. Conversely, VEGF is modeled as an external signal provided to all endothelial cells; therefore, all cells are exposed to the same fixed level ($V_{EXT}$). Moreover, NOTCH receptors and ligands can bind within the same cell with a rate constant $k_{C}$, which results in the degradation of the ligand–receptor complex without any downstream signaling (cis-inhibition). NICD is released upon binding of NOTCH receptors with external ligands and degraded with rate constant $\gamma_{I}$ . Finally, VEGF receptors can bind to external VEGF ligands, thus creating activated VEGF receptor ($V_{R}V_{EXT}$), which in turn inhibits the production of Delta. Details on parameter values are presented in Table 1. Compared to previous models, we rescaled the Hill function threshold for VEGF-mediated activation of Delta in order to match quantitatively the ratio of Tip/Stalk cells between model and experiment when the external input is $V_{EXT}=100$ ng/ml.
+
+**Table 1.**
+ Parameter values for simulation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter type</th>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Units</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Production</td>
+      <td>N0, D0, J0, VR0</td>
+      <td>1200, 1000, 800, 1000</td>
+      <td>Molecule/hr</td>
+    </tr>
+    <tr>
+      <td>Degradation</td>
+      <td>γ, γI</td>
+      <td>0.1, 0.5</td>
+      <td>1/hr</td>
+    </tr>
+    <tr>
+      <td>Binding</td>
+      <td>kT, kC</td>
+      <td>2.5 × 10−5, 5 × 10−4</td>
+      <td>1/(molecule hr)</td>
+    </tr>
+    <tr>
+      <td>Hill threshold</td>
+      <td>I0, V0</td>
+      <td>200, 80*</td>
+      <td>Molecules</td>
+    </tr>
+    <tr>
+      <td>Fold-change</td>
+      <td>λN, λI,D, λV,I, λJ, λV</td>
+      <td>2, 0, 0, 2, 2</td>
+      <td>Dimensionless</td>
+    </tr>
+    <tr>
+      <td>Hill coefficient</td>
+      <td>nN, nI,D, nV,I, nJ, nV</td>
+      <td>2, 2, 2, 5, 2</td>
+      <td>Dimensionless</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Rescaled from previous model to match experimental observation._
 
 In this project, we focus specifically on the regulation of VEGF on the NOTCH–Delta signaling pathway (as shown in Figure 2A). A strong NOTCH–Jagged interaction can suppress Tip–Stalk differentiation and instead lead to a hybrid Tip/Stalk phenotype, which is beyond the scope of the current study. For completeness, we maintained the integrity of the entire circuit structure including NOTCH–Jagged interactions (Equation 1c) but fixed the production rate of Jagged at a low level that does not interfere with the bistable behavior of the VEGF/NOTCH circuit.
 
-## Definition of Tip cells in the model
+### Definition of Tip cells in the model
 
 Tip cells — usually defined as high Delta, low NOTCH cells — are defined in this model as cells with Delta levels larger than 103 molecules. This definition is motivated by observing that the distribution of cellular Delta at steady state in the multicell model is always bimodal irrespectively of the level of external VEGF input (see Figure 2B), with a large separation between the population of cells with low Delta levels (the Stalk cells) and the population of cells with high Delta levels (the Tip cells). This phenomenological definition suffices here due to the deterministic nature of the model; otherwise, more complex approaches would be necessary in presence of stochastic fluctuations (Galbraith et al., 2022).
 
-## Simulation details
+### Simulation details
 
 All results are calculated on a 30 × 30 hexagonal lattice with periodic boundary conditions. Initially, the lattice is prepared with randomized initial conditions where the initial levels of N, D, J, I, and VR within each cell are sampled from uniform distributions. Afterwards, the lattice equilibrates for 100 hr without any VEGF input to simulate the seeding of endothelial cells before VEGF is provided.
 
-## Quantification of Tip–Tip distance in experiments
+### Quantification of Tip–Tip distance in experiments
 
 Fluorescence microscopy images of Hoechst 33342/phalloidin staining from our previous work (Kang et al., 2019), two images for each VEGF condition, were used to quantify the distance between Tips. Before counting Tip–Tip distance, images were pre-processed to clean up intricate 3D images as depicted in Figure 3A with IMARIS (Bitplane). First, all newly formed vessels were separated from parental vessels, identified as surface entities, and labeled with different colors depending on lumen formation: red for sprout and blue for mini-sprout. And all nuclei were detected as spots (Figure 1A, label nuclei on the parental vessel and Tip region). In this step, nuclei on the parental vessel region were marked as Stalks and the nuclei in sprout or mini-sprout surfaces were marked as Tips. Second, the nuclei of Stalks on the parental vessel region were re-examined (Figure 3A), Re-label Tip and Stalk nuclei. If they are connected to sprout or mini-sprout surfaces (Figure 3A; Adams and Alitalo, 2007; Potente et al., 2011), they were re-labeled as nuclei of sprouts or mini-sprouts and all other nuclei in the sprout or the mini-sprout were deleted. If a nucleus of a sprout or a mini-sprout is not in the parental vessel, the closest nucleus to the parental vessel was labeled as a sprout or a mini-sprout and all other nuclei were deleted (Figure 3A). By going through these steps, we could derive 2D conceptual Tip–Stalk arrangements from 3D images, which are comparable to 2D Tip–Stalk patterns from mathematical modeling. The pre-process is based on our assumption that the Stalk cells found in the extending sprouts emerge de novo through cell proliferation, rather by Stalk cell migration from the parental vessel.
 
 In this study, we defined the distance between two Tips as the number of cells measured in ‘cell hops’, that is, the minimal number of intermediate cells between randomly chosen pairs of Tip cells. For example, in Figure 3B, the distances from Tip 1 to Tip 2 and to Tip 3 are 0 and 1, respectively. From Tip 1 to Tip 4, the distance is 3 in the minimal cell hops marked with gray arrows which pass through another Tip. Another cell hops marked with red arrows does not include any Tips, but the distance is 4. In this case, we discarded Tip 4 in the quantification of Tip–Tip distance from Tip 1. The same rule was applied in analyzing Tip–Tip distance from mathematical modeling (Figure 3C).
 
-## Quantification of Tip–Tip distance in modeling
+### Quantification of Tip–Tip distance in modeling
 
-Upon complete lattice equilibration, cells naturally separate into two distinct groups based on low or high expression of Delta irrespectively of the external VEGF input (see Figure 2B). Therefore, high-Delta cells are labeled as Tips and low-Delta cells are labeled as Stalk. The algorithm to compute distances between Tip cells on the hexagonal lattice follows the following two steps: (Adams and Alitalo, 2007) Computing the shortest path between a given pair of cells on the hexagonal grid; and (Potente et al., 2011) filtering out the measurement if the cell pair is ‘shielded’ by another Tip cell. First, the shortest path is defined as the minimum number of intermediate cells that connect the two cells of interest. Considering two cells with coordinates (x1,y1) and (x2,y2), their distance has different values based on the cells relative position. In the simple case where dx=0 or dy=0, the distance is d=dx+dy. Else, if the distance is d=dx+dy-1 (Adams and Alitalo, 2007) if dy is even of Potente et al., 2011 if dy is odd but y1 is even. In any other case, the distance is d=dx+dy. Next, to maintain consistency with the experimental statistics, the distance is not included in the Tip cell distribution if there is at least one intermediate Tip cell ‘shielding’ the two Tip cells of interest. In the experimental protocol, an intermediate cell ‘shields’ the two Tip cells if the straight line connecting the centers of the two cells passes through the shielding cell. Therefore, we search the intercept between the line connecting the pair of Tip cells and a circle centered at the position of the shielding cell with radius of 0.5. Assuming a circular geometry for the shielding cell removes artifacts emerging due to the polygonal shape of cells in the hexagonal lattice. The sprout–sprout distance statistics presented in Figure 5E are similarly computed by applying the same algorithm to the set of Sprout cells in the lattice (see the following section for details of sprout selection).
+Upon complete lattice equilibration, cells naturally separate into two distinct groups based on low or high expression of Delta irrespectively of the external VEGF input (see Figure 2B). Therefore, high-Delta cells are labeled as Tips and low-Delta cells are labeled as Stalk. The algorithm to compute distances between Tip cells on the hexagonal lattice follows the following two steps: (Adams and Alitalo, 2007) Computing the shortest path between a given pair of cells on the hexagonal grid; and (Potente et al., 2011) filtering out the measurement if the cell pair is ‘shielded’ by another Tip cell. First, the shortest path is defined as the minimum number of intermediate cells that connect the two cells of interest. Considering two cells with coordinates ($x_{1},y_{1}$) and ($x_{2},y_{2}$), their distance has different values based on the cells relative position. In the simple case where $dx=0$ or $dy=0$, the distance is $d=dx+dy$. Else, if the distance is $d=dx+dy-1$ (Adams and Alitalo, 2007) if $dy$ is even of Potente et al., 2011 if $dy$ is odd but $y_{1}$ is even. In any other case, the distance is $d=dx+dy$. Next, to maintain consistency with the experimental statistics, the distance is not included in the Tip cell distribution if there is at least one intermediate Tip cell ‘shielding’ the two Tip cells of interest. In the experimental protocol, an intermediate cell ‘shields’ the two Tip cells if the straight line connecting the centers of the two cells passes through the shielding cell. Therefore, we search the intercept between the line connecting the pair of Tip cells and a circle centered at the position of the shielding cell with radius of 0.5. Assuming a circular geometry for the shielding cell removes artifacts emerging due to the polygonal shape of cells in the hexagonal lattice. The sprout–sprout distance statistics presented in Figure 5E are similarly computed by applying the same algorithm to the set of Sprout cells in the lattice (see the following section for details of sprout selection).
 
-## Phenomenological models of sprout selection
+### Phenomenological models of sprout selection
 
 We developed three separate models of sprout selection: ‘Cell-autonomous’, ‘Repulsion’, and ‘Random uniform distribution’. For all three cases, cells equilibrate in the hexagonal lattice. Then, Tip cells are defined based on high-Delta expression. This analysis produces a discrete snapshot of Tip and Stalk cells on the hexagonal lattice. When comparing the model prediction to the 100 ng/ml VEGF dosage experiment, we constrain the sprout selection models to reproduce the experimental sprout fraction. In the ‘Cell-autonomous’ model, a fraction of the Tip cells is randomly selected and defined as Sprouts independently from the phenotype of their neighbors. In the ‘Repulsion’ model, a fraction of Tip cells is randomly selected as Sprouts with the additional constraint that Sprouts cannot be in direct contact. To implement this constraint, we iteratively select Tips one at a time. If the selected Tip is not already in contact with a previously selected Sprout, it is promoted to the Sprout state; otherwise, a new Tip cell is selected. The iteration stops when the target number of Sprouts is reached. Finally, in the ‘Random uniform distribution’ model, Tips are selected as Sprouts to maximize their overall spread in the lattice. To implement this constraint, we first select a random Tip and promote it to the Sprout state. Then, the furthest Tip from the newly selected Sprout is selected and promoted to the Sprout state as well. Afterwards, a max-distance function is defined as the sum of pairwise distances between all Sprouts already selected in the lattice. At each following iteration, the Tip cell that maximizes the distance function is selected as a Sprout. The iteration stops when the target number of Sprouts is reached.
 
-## Sprout/mini-sprout tracking and analysis
+### Sprout/mini-sprout tracking and analysis
 
 3D vessel chips were kept in a CO2 incubator at 37°C and taken out only for imaging at the time point depicted in Figure 4A–D. GFP-expressing endothelial cells on a chip at the same position were imaged with a ×20 water-immersion objective attached to Lecia scanning disk confocal microscope. IMARIS (Bitplane) was used to separate all newly formed vessels from the parental vessel and to label them with different colors depending on lumen formation: sprout and mini-sprout. The positions of sprouts and mini-sprouts were simply marked with red and blue squares, respectively (Figure 4E–H). Then the appearance, disappearance, or the transition from blue to red squares were recorded and tracked throughout the time points. Data from two independent samples were combined to plot the Sankey diagram demonstrating the dynamic change of sprouts and mini-sprouts (Figure 4I). The analysis was performed using the Jupyter Notebook graphing library Plotly.
 
-## Immunofluorescence staining of fibronectin and analysis
+### Immunofluorescence staining of fibronectin and analysis
 
 All reagents for fibronectin immunostaining were injected through the vessel on a chip and kept as follows: 4% (wt/wt) formaldehyde for 1 hr, 0.1% Triton-X for 1 hr, 10% goat serum for 1 hr, fibronectin antibody (Abcam) at 1:50 dilution for 1 day, secondary antibody (anti-rabbit 594 Invitrogen) at 1:100 dilution with 5 µg/ml of Hoechst 33342 for 1 day. 3D volumes at 10 positions from two independent samples of VEGF 100 ng/ml treatment and 2 positions from control (No treatment) were imaged with a ×20 water-immersion objective attached to a Lecia scanning disk confocal microscope. Cells on the parental vessel were identified by GFP expression in the cytoplasm (Figure 6E), then segmented (Figure 6F) with IMARIS (Bitplane). The averaged fibronectin intensity value of each 3D cell volume and its position were acquired in IMARIS, then each cell was marked as a circle at the corresponding x and y positions (Figure 6G). The averaged fibronectin intensity values and positions of sprouts and mini-sprouts were acquired by identifying cells as surface entities in IMARIS. The averaged fibronectin intensity values of sprouts (following cell) and mini-sprouts were marked as squares at the corresponding x and y positions (Figure 6G). Ten sprouts, 11 mini-sprouts induced by VEGF 100 ng/ml, and 10 quiescent cells without VEGF treatment were selected to compare fibronectin intensity values (Figure 6H). Sprouts often had two compartments of a leading cell and following cells where lumenization occurs. We distinguished the leading sprout and the following sprout for the fibronectin intensity comparison (Figure 6H). If a sprout was composed of a single cell with lumen, the cell was classified as the following cell. Seven neighboring cells including a sprout or a mini-sprout in each image were grouped (Figure 6I) to analyze the distribution of the ratio of cells having fibronectin levels higher than a threshold value of 30 (dashed line in Figure 6H). From 10 images, 21 groups were acquired and used for the analysis (Figure 6J).
 
-## Statistical analysis
+### Statistical analysis
 
 One-way ANOVA analysis was performed in GraphPad Prism 9.0.0 followed by Tukey’s multiple comparisons test. Differences between pairs were concluded to be significant if they had adjusted p values less than 0.05. For all figures, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. If there is no significant difference, it is left blank.

@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.00940.001 Pancreatic islet β-cell insufficiency underlies pathogenesis of diabetes mellitus; thus, functional β-cell replacement from renewable sources is the focus of intensive worldwide effort. However, in vitro production of progeny that secrete insulin in response to physiological cues from primary human cells has proven elusive. Here we describe fractionation, expansion and conversion of primary adult human pancreatic ductal cells into progeny resembling native β-cells. FACS-sorted adult human ductal cells clonally expanded as spheres in culture, while retaining ductal characteristics. Expression of the cardinal islet developmental regulators Neurog3, MafA, Pdx1 and Pax6 converted exocrine duct cells into endocrine progeny with hallmark β-cell properties, including the ability to synthesize, process and store insulin, and secrete it in response to glucose or other depolarizing stimuli. These studies provide evidence that genetic reprogramming of expandable human pancreatic cells with defined factors may serve as a general strategy for islet replacement in diabetes. DOI: http://dx.doi.org/10.7554/eLife.00940.001
+Pancreatic islet β-cell insufficiency underlies pathogenesis of diabetes mellitus; thus, functional β-cell replacement from renewable sources is the focus of intensive worldwide effort. However, in vitro production of progeny that secrete insulin in response to physiological cues from primary human cells has proven elusive. Here we describe fractionation, expansion and conversion of primary adult human pancreatic ductal cells into progeny resembling native β-cells. FACS-sorted adult human ductal cells clonally expanded as spheres in culture, while retaining ductal characteristics. Expression of the cardinal islet developmental regulators Neurog3, MafA, Pdx1 and Pax6 converted exocrine duct cells into endocrine progeny with hallmark β-cell properties, including the ability to synthesize, process and store insulin, and secrete it in response to glucose or other depolarizing stimuli. These studies provide evidence that genetic reprogramming of expandable human pancreatic cells with defined factors may serve as a general strategy for islet replacement in diabetes.
 
 ## Introduction
 
@@ -42,91 +42,330 @@ Here we report that normal human adult pancreatic duct cells can be sorted, clon
 
 ## Results
 
-## Purification and expansion of primary CD133+ human pancreatic ductal cells
+### Purification and expansion of primary CD133+ human pancreatic ductal cells
 
-To identify human pancreatic epithelial cells that can be grown and maintained in culture, we systematically screened cell isolation methods and culture conditions with dispersed adult human pancreatic cells obtained from cadaveric donors without known pancreatic cancer, diabetes mellitus, or other pancreatic diseases (
+To identify human pancreatic epithelial cells that can be grown and maintained in culture, we systematically screened cell isolation methods and culture conditions with dispersed adult human pancreatic cells obtained from cadaveric donors without known pancreatic cancer, diabetes mellitus, or other pancreatic diseases (Table 1). With primary cells plated at low density, we observed formation of multicellular epithelial spheres, when cultured in Matrigel with a serum-free culture medium without feeder cells (‘Materials and methods’, Figure 1—figure supplement 1A). The multicellular sphere formation suggested primary cell expansion, so based on this assay we fractionated cells by fluorescence-activated cell sorting (FACS) to isolate and characterize sphere-forming pancreatic cells. A survey of cell surface markers used for fetal mouse pancreatic cell isolation (Sugiyama et al., 2007) revealed that antibodies recognizing CD133 enriched sphere-forming cells by four fold, whereas sphere-forming cells were depleted in the CD133neg fraction (Figure 1A,B). Immunohistochemical analysis of the human adult pancreas revealed CD133 expression at the apical portion of duct epithelial cells that co-expressed keratin 19 (KRT19), whereas CD133 was undetectable in islet endocrine cells or acinar cells (Figure 1C, Figure 1—figure supplement 1B), consistent with prior reports (Lardon et al., 2008). We have achieved sphere formation from over 35 consecutive adult donors (Table 1); thus, the sphere formation of primary adult human pancreatic CD133+ cells was highly reproducible.
+
+**Table 1.**
+ Phenotypes of pancreas donors
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Anonymous ID</th>
+      <th>Age (year)</th>
+      <th>Gender</th>
+      <th>Body mass index</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>31</td>
+      <td>Male</td>
+      <td>28.1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>52</td>
+      <td>Male</td>
+      <td>31.6</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>52</td>
+      <td>Male</td>
+      <td>Not provided</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>16</td>
+      <td>Female</td>
+      <td>20.4</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>34</td>
+      <td>Male</td>
+      <td>35.4</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>50</td>
+      <td>Female</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>32</td>
+      <td>Female</td>
+      <td>36.2</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>35</td>
+      <td>Male</td>
+      <td>45.7</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>23</td>
+      <td>Female</td>
+      <td>26.6</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>51</td>
+      <td>Female</td>
+      <td>23.3</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>48</td>
+      <td>Male</td>
+      <td>36.7</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>25</td>
+      <td>Male</td>
+      <td>21.8</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>63</td>
+      <td>Female</td>
+      <td>30.9</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>44</td>
+      <td>Male</td>
+      <td>24.7</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>39</td>
+      <td>Male</td>
+      <td>27.36</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>44</td>
+      <td>Male</td>
+      <td>23.5</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>50</td>
+      <td>Female</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>40</td>
+      <td>Female</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>53</td>
+      <td>Male</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>19</td>
+      <td>Female</td>
+      <td>20.83</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>34</td>
+      <td>Male</td>
+      <td>22.8</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>55</td>
+      <td>Male</td>
+      <td>37.7</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>17</td>
+      <td>Female</td>
+      <td>31.1</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>33</td>
+      <td>Male</td>
+      <td>18.8</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>48</td>
+      <td>Male</td>
+      <td>36.6</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>40</td>
+      <td>Female</td>
+      <td>28.4</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>43</td>
+      <td>Female</td>
+      <td>35.3</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>47</td>
+      <td>Female</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>48</td>
+      <td>Female</td>
+      <td>23.3</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>28</td>
+      <td>Male</td>
+      <td>24.2</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>34</td>
+      <td>Male</td>
+      <td>32.8</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>22</td>
+      <td>Male</td>
+      <td>19.6</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>53</td>
+      <td>Female</td>
+      <td>22.4</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>16</td>
+      <td>Male</td>
+      <td>33.9</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>54</td>
+      <td>Male</td>
+      <td>29.6</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>18</td>
+      <td>Male</td>
+      <td>21.8</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>24</td>
+      <td>Male</td>
+      <td>25.5</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/00940/elife-00940-fig1-v1.jpg)
 
-**Figure 1.:** (A) Left panel, FACS plot of the dissociated human adult pancreas stained with (gray) or without (blue) antibodies specific for CD133. Right panel, A schematic of the sphere culture system and a representative sphere after culture. (B) Quantification of spheres generated from CD133+, CD133neg, and unsorted cells. Data are presented as mean ± SEM (n = 4). (C) Immunostaining of CD133 (green) with a ductal marker KRT19 (red) and C-peptide (red) in adult human pancreas. (D) The gene expression profiles of FACS-sorted human adult pancreatic cells and isolated islets (islet values normalized to 1). Data are presented as mean ± SEM (n = 3). (E) Representative immunostaining pictures of sorted cells with KRT19 (green) or C-peptide (green). (F) Quantification of cell immunostaining after FACS. ≥7200 cells were counted per staining condition. n.d.= not detected. Scale bars, 50 µm. See also Supplementary file 1D.DOI: http://dx.doi.org/10.7554/eLife.00940.004
+**Figure 1.:** (A) Left panel, FACS plot of the dissociated human adult pancreas stained with (gray) or without (blue) antibodies specific for CD133. Right panel, A schematic of the sphere culture system and a representative sphere after culture. (B) Quantification of spheres generated from CD133+, CD133neg, and unsorted cells. Data are presented as mean ± SEM (n = 4). (C) Immunostaining of CD133 (green) with a ductal marker KRT19 (red) and C-peptide (red) in adult human pancreas. (D) The gene expression profiles of FACS-sorted human adult pancreatic cells and isolated islets (islet values normalized to 1). Data are presented as mean ± SEM (n = 3). (E) Representative immunostaining pictures of sorted cells with KRT19 (green) or C-peptide (green). (F) Quantification of cell immunostaining after FACS. ≥7200 cells were counted per staining condition. n.d.= not detected. Scale bars, 50 µm. See also Supplementary file 1D.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/00940/elife-00940-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Schematic diagram of the experimental procedure. Dissociated pancreatic cells were embedded and cultured as previously described (Lawson et al., 2007). Scale bar, 200 µm. (B) Confocal images of CD133 (green) and CPA1 (red) co-staining in adult human pancreas tissue. Scale bar, 20 µm. (C) CEL expression profiles of FACS-sorted human adult pancreatic cells and isolated islets (islet values normalized to 1). Data are presented as mean ± SEM (n=3). (D) Representative immunostaining pictures of sorted cells. Scale bar, 50 µm.DOI: http://dx.doi.org/10.7554/eLife.00940.005
+**Figure 1—figure supplement 1.:** (A) Schematic diagram of the experimental procedure. Dissociated pancreatic cells were embedded and cultured as previously described (Lawson et al., 2007). Scale bar, 200 µm. (B) Confocal images of CD133 (green) and CPA1 (red) co-staining in adult human pancreas tissue. Scale bar, 20 µm. (C) CEL expression profiles of FACS-sorted human adult pancreatic cells and isolated islets (islet values normalized to 1). Data are presented as mean ± SEM (n=3). (D) Representative immunostaining pictures of sorted cells. Scale bar, 50 µm.
 
 To assess the properties of FACS-purified adult pancreatic CD133+ cells, we performed quantitative reverse transcription PCR (qRT-PCR). This revealed that CD133+ cells expressed high levels of mRNA encoding ductal markers (KRT19 and CAR2), while mRNAs expressed in acinar (CPA1 and CEL) and endocrine (CHGA, INS, and GCG) cells were exclusively enriched in the CD133neg fraction (Figure 1D, Figure 1—figure supplement 1C). Immunostaining confirmed that >98% of sorted CD133+ cells produced KRT19, whereas CD133+ cells produced no detectable islet hormone (Figure 1E,F, Figure 1—figure supplement 1D). Thus, FACS efficiently eliminated islet endocrine and acinar cells, and enriched for a population of primary adult pancreatic duct cells that expanded as epithelial spheres in feeder- and serum-free culture.
 
-## Maintenance of ductal phenotypes by self-renewing human pancreatic CD133+ cells
+### Maintenance of ductal phenotypes by self-renewing human pancreatic CD133+ cells
 
-After commencing in vitro cultures, the epithelial spheres from CD133
+After commencing in vitro cultures, the epithelial spheres from CD133+ ductal cells attained diameters ranging from 40 to 520 µm in 2 weeks (Figure 1A, Figure 1—figure supplement 1A and Figure 2—figure supplement 1A). Spheres 350–500 µm in diameter were composed of 1470 ± 310 cells (n = 5); thus, based on evidence of clonal expansion (see below), we calculated that spheres resulted from a minimum of 10 cell divisions in 2 weeks. Sphere epithelium maintained KRT19 protein expression and a polarized monolayer as indicated by apical localization of CD133 (Figure 2A, Figure 2—figure supplement 1A,D). Neither acinar (CPA1) nor islet endocrine (CHGA and insulin C-peptide) markers were detectable (Figure 3C and data not shown), suggesting epithelial cells in cultured spheres maintained ductal characteristics.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/00940/elife-00940-fig2-v1.jpg)
 
-**Figure 2.:** (A) Confocal images of 2-week-old spheres immunostained with KRT19, CD133, Ki-67, and Phospho-Histone H3 (all green). Note the apical localization of CD133. Scale bars, 50 µm. (B) Representative time-lapse images of sphere formation from single cell (arrowhead). Images taken every 12 hr for 9 days are shown. Arrows point a non-sphere forming cell used as a landmark. (C) Representative pictures of spheres after each passage. Scale bars, 100 µm. (D) Quantification of cell number in spheres after each indicated passage. Y axis represents fold increase of total cell numbers relative to the one measured in the first ‘generation’ of spheres (G1).DOI: http://dx.doi.org/10.7554/eLife.00940.006
+**Figure 2.:** (A) Confocal images of 2-week-old spheres immunostained with KRT19, CD133, Ki-67, and Phospho-Histone H3 (all green). Note the apical localization of CD133. Scale bars, 50 µm. (B) Representative time-lapse images of sphere formation from single cell (arrowhead). Images taken every 12 hr for 9 days are shown. Arrows point a non-sphere forming cell used as a landmark. (C) Representative pictures of spheres after each passage. Scale bars, 100 µm. (D) Quantification of cell number in spheres after each indicated passage. Y axis represents fold increase of total cell numbers relative to the one measured in the first ‘generation’ of spheres (G1).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/00940/elife-00940-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** (A) A representative image of human spheres grown for 2 weeks in culture. Note variable sphere sizes. Scale bar, 100 µm. (B) Quantification of Ki-67-expressing cells as a percentage of total cell number shown in Figure 2A. More than 200 cells per slide, from three or more slides per sample were counted. Data are presented as means ± S.D. (C) Quantification of the total cell number in each passage of the individual samples shown in Figure 2D. Y axis represents fold increase of total cell numbers relative to the one measured in the first ‘generation’ of spheres (G1). (D) Representative confocal images of G1 and G7 spheres co-immunostained with KRT19 (red) and CD133 (green). Scale bars, 50 µm. (E) Quantification of the total cell number of CD133+ cells in G1 and G7 spheres. Data are presented as means ± S.D.DOI: http://dx.doi.org/10.7554/eLife.00940.007
+**Figure 2—figure supplement 1.:** (A) A representative image of human spheres grown for 2 weeks in culture. Note variable sphere sizes. Scale bar, 100 µm. (B) Quantification of Ki-67-expressing cells as a percentage of total cell number shown in Figure 2A. More than 200 cells per slide, from three or more slides per sample were counted. Data are presented as means ± S.D. (C) Quantification of the total cell number in each passage of the individual samples shown in Figure 2D. Y axis represents fold increase of total cell numbers relative to the one measured in the first ‘generation’ of spheres (G1). (D) Representative confocal images of G1 and G7 spheres co-immunostained with KRT19 (red) and CD133 (green). Scale bars, 50 µm. (E) Quantification of the total cell number of CD133+ cells in G1 and G7 spheres. Data are presented as means ± S.D.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/00940/elife-00940-fig3-v1.jpg)
 
-**Figure 3.:** (A) Schematic of growth and reprogramming strategies. See ‘Materials and methods’ for details. (B) Schematics of adenoviral constructs used. (C) Relative mRNA level of Neurog3 targets (NEUROD1, INSM1, and RFX6), endocrine cell-specific genes (PAX4, NKX2.2, and CHGA), and pancreatic hormones (SST and GHRL). Data are presented as mean ± SEM (n ≥ 3). (D) Representative confocal images of Ad-RFP-Neurog3 infected spheres after immunostaining with antibodies specific to mouse Neurog3, NEUROD1, NKX2.2, SST, and GHRL. Note that all hormone-positive cells are CHGA-positive. Right: co-staining of SST and GHRL. Scale bar, 20 µm. (E) Quantification of the staining results shown in (D). Pie graph represents the percentage of the hormone+ cells. (F) A representative FACS plot of dissociated ductal spheres infected with Ad-RFP-Neurog3 adenovirus (red) or uninfected control (gray). Fractions P1 through P5 were sorted based on RFP fluorescence intensity. (G) qRT-PCR analysis of fractions P1 through P5 from (F). ‘U’ indicates unsorted cells. Analytical duplicates are shown. Data are presented as mean ± SD.DOI: http://dx.doi.org/10.7554/eLife.00940.008
+**Figure 3.:** (A) Schematic of growth and reprogramming strategies. See ‘Materials and methods’ for details. (B) Schematics of adenoviral constructs used. (C) Relative mRNA level of Neurog3 targets (NEUROD1, INSM1, and RFX6), endocrine cell-specific genes (PAX4, NKX2.2, and CHGA), and pancreatic hormones (SST and GHRL). Data are presented as mean ± SEM (n ≥ 3). (D) Representative confocal images of Ad-RFP-Neurog3 infected spheres after immunostaining with antibodies specific to mouse Neurog3, NEUROD1, NKX2.2, SST, and GHRL. Note that all hormone-positive cells are CHGA-positive. Right: co-staining of SST and GHRL. Scale bar, 20 µm. (E) Quantification of the staining results shown in (D). Pie graph represents the percentage of the hormone+ cells. (F) A representative FACS plot of dissociated ductal spheres infected with Ad-RFP-Neurog3 adenovirus (red) or uninfected control (gray). Fractions P1 through P5 were sorted based on RFP fluorescence intensity. (G) qRT-PCR analysis of fractions P1 through P5 from (F). ‘U’ indicates unsorted cells. Analytical duplicates are shown. Data are presented as mean ± SD.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/00940/elife-00940-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Representative confocal images of control virus (Ad-RFP) infected spheres after immunostaining with antibodies specific to mouse Neurog3, NEUROD1, NKX2.2, SST, and GHRL. Right: immunostaining to detect cells co-expressing SST and GHRL.DOI: http://dx.doi.org/10.7554/eLife.00940.009
+**Figure 3—figure supplement 1.:** (A) Representative confocal images of control virus (Ad-RFP) infected spheres after immunostaining with antibodies specific to mouse Neurog3, NEUROD1, NKX2.2, SST, and GHRL. Right: immunostaining to detect cells co-expressing SST and GHRL.
 
 To assess whether sphere growth was achieved by cell proliferation or by other mechanisms like cell migration and aggregation, we analyzed spheres by immunostaining and time-lapse imaging. Immunohistochemistry revealed the proliferation marker Ki-67 in more than 25% of cells comprising 2-week-old spheres (Figure 2A, Figure 2—figure supplement 1B; labeling index 26.5 ± 5.1%), data further supported by detection of a second proliferation marker, phospho-histone H3 (Figure 2A). Time-lapse imaging revealed that spheres arose from single cells (Figure 2B), providing strong evidence that sphere formation resulted from CD133+ ductal cell proliferation, rather than through cell migration and aggregation. Enzymatic dispersion of 2-week-old G1 spheres and subsequent culture revealed that the spheres can be passaged up to seven generations (G7, 3 months) and that the total number of cells increased with each generation (Figure 2C,D, Figure 2—figure supplement 1C). After G7, ductal cell expansion was not achieved, and the spheres were not formed (Figure 2—figure supplement 1C and data not shown), supporting the view that ductal epithelial cells are not immortalized, and consistent with the origin of pancreatic cells from donors without neoplasia.
 
-## Neurog3 converts pancreatic duct cells into progeny expressing islet hormones
+### Neurog3 converts pancreatic duct cells into progeny expressing islet hormones
 
-The endocrine potential of human or mouse pancreatic ductal cells remains controversial. To investigate the potential of purified human pancreatic ductal cells to achieve an endocrine fate, we used an adenovirus-mediated transgenic system.
+The endocrine potential of human or mouse pancreatic ductal cells remains controversial. To investigate the potential of purified human pancreatic ductal cells to achieve an endocrine fate, we used an adenovirus-mediated transgenic system. Neurog3 is a transcription factor necessary and sufficient for pancreatic endocrine cell differentiation in vivo (Gradwohl et al., 2000; Gu et al., 2002) and, combined with other factors, can induce pancreatic acinar-to-islet cell conversion in mice (Zhou et al., 2008). To test if Neurog3 expression could respecify human duct cells toward an endocrine fate, we infected cultured spheres as well as primary CD133+ cells with recombinant adenovirus co-expressing red fluorescent protein and Neurog3 (Ad-RFP-Neurog3), and assessed changes in gene expression by qRT-PCR (Figure 3A–C and 4C). Neurog3 induced the expression of NEUROD1, INSM1, and RFX6 (Figure 3C), genes whose mouse homologs are known direct targets of Neurog3 in pancreas development (Mellitzer et al., 2006; Smith et al., 2010). Ad-RFP-Neurog3 infection induced expression of the pan-endocrine markers chromogranin A (CHGA) and synaptophysin in both primary CD133+ duct cells and cultured spheres (Figures 3C and 4C, and data not shown). Ad-RFP-Neurog3 infection also induced expression of mRNA encoding PAX4 and NKX2.2, transcriptional regulators of pancreatic endocrine cell fate (Sosa-Pineda et al., 1997; Sussel et al., 1998), and mRNA encoding crucial β-cell factors such as the prohormone processing enzymes PCSK1 (PC1/3) and PCSK2 (PC2), KATP channel components KCNJ11 (KIR6.2) and ABCC8 (SUR1), and glucokinase (GCK) (Figure 4D). Moreover, Ad-RFP-Neurog3 significantly induced mRNA encoding the pancreatic hormones ghrelin and somatostatin, but not mRNAs encoding insulin, glucagon, PPY or the intestinal hormones cholecystokinin and gastrin (Figures 3C and 4D, Figure 4—figure supplement 1A, and data not shown). These findings support the conclusion that human adult pancreatic ductal cells harbor pancreatic endocrine potential upon induction of Neurog3.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/00940/elife-00940-fig4-v1.jpg)
 
-**Figure 4.:** (Neurog3, MafA, Pdx1, and Pax6) produces Insulin+ endocrine cells in pancreatic ductal spheres in vitro.(A) Schematics of adenoviruses used. (B) INS qRT-PCR analysis of human spheres infected with control (R = RFP) or a combination of MafA (M), Neurog3 (N), and Pdx1 (P) (MNP) n = 4. (C) qRT-PCR analysis of INS, SST, and CHGA with freshly sorted CD133+ ductal cells infected with adenoviruses encoding Neurog3 or all four genes (4V) (n = 2). (D) qRT-PCR analysis of the spheres infected with a combination of adenoviruses. Pax6 abbreviated as ‘6’, (n ≥ 3). (E) qRT-PCR analysis of the spheres infected with 4V minus each indicated factor n = 2. All bar graph data are presented as mean ± SEM with mRNA levels from purified adult human islets normalized to 1. (F) Confocal images of infected spheres after staining with antibodies recognizing C-peptide. Note that adenoviruses encoding Neurog3 (N) and Pdx1 (P) also express RFP. Scale bar, 20 µm. (G) Quantification of the CHGA-, SST-, and C-peptide-immunoreactive cells in the spheres infected with the indicated combination of adenoviruses. Note that the number of C-peptide-positive cells increased in 4V than MNP by 18–20-fold.DOI: http://dx.doi.org/10.7554/eLife.00940.010
+**Figure 4.:** (A) Schematics of adenoviruses used. (B) INS qRT-PCR analysis of human spheres infected with control (R = RFP) or a combination of MafA (M), Neurog3 (N), and Pdx1 (P) (MNP) n = 4. (C) qRT-PCR analysis of INS, SST, and CHGA with freshly sorted CD133+ ductal cells infected with adenoviruses encoding Neurog3 or all four genes (4V) (n = 2). (D) qRT-PCR analysis of the spheres infected with a combination of adenoviruses. Pax6 abbreviated as ‘6’, (n ≥ 3). (E) qRT-PCR analysis of the spheres infected with 4V minus each indicated factor n = 2. All bar graph data are presented as mean ± SEM with mRNA levels from purified adult human islets normalized to 1. (F) Confocal images of infected spheres after staining with antibodies recognizing C-peptide. Note that adenoviruses encoding Neurog3 (N) and Pdx1 (P) also express RFP. Scale bar, 20 µm. (G) Quantification of the CHGA-, SST-, and C-peptide-immunoreactive cells in the spheres infected with the indicated combination of adenoviruses. Note that the number of C-peptide-positive cells increased in 4V than MNP by 18–20-fold.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/00940/elife-00940-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** (A) qRT-PCR analysis of the spheres infected with a combination of adenoviruses. PAX6 abbreviated as ‘6’, (n ≥ 3). Note that PAX6 qRT-PCR probe recognizes both endogenous and exogenous PAX6 mRNA.DOI: http://dx.doi.org/10.7554/eLife.00940.011
+**Figure 4—figure supplement 1.:** (A) qRT-PCR analysis of the spheres infected with a combination of adenoviruses. PAX6 abbreviated as ‘6’, (n ≥ 3). Note that PAX6 qRT-PCR probe recognizes both endogenous and exogenous PAX6 mRNA.
 
 Immunostaining confirmed these qRT-PCR findings and demonstrated that only RFP+ cells produced by Ad-RFP-Neurog3 infection were immunostained with antibodies recognizing NEUROD1, NKX2.2, CHGA, SST or GHRL (Figure 3B,D, Figure 3—figure supplement 1). We also confirmed that no insulin-, glucagon- or PPY-positive cells were observed by immunostaining (data not shown). While only a subset of cells infected with Ad-RFP-Neurog3 (RFP+) expressed CHGA, we noted all GHRL+ or SST+ cells co-expressed CHGA (Figure 3D). Quantification of CHGA+ and hormone+ cells revealed that 30% of infected cells (RFP+) expressed CHGA. At least 45% of CHGA+ cells produced SST or GHRL, and less than 2% of CHGA+ cells expressed both hormones (Figure 3D,E). Thus, Neurog3 expression efficiently converted primary human ductal cells and cultured ductal epithelial spheres into hormone-expressing cells with cardinal features of endocrine pancreas.
 
 In mice, Neurog3 gene dosage can determine commitment between exocrine and endocrine lineages in pancreas development (Wang et al., 2010). Therefore, we next assessed the possibility that the 70% of RFP+ cells infected by Ad-RFP-Neurog3 failing to express CHGA may have achieved inadequate levels of Neurog3 expression. We fractionated cells produced by Ad-RFP-Neurog3 infection by RFP intensity and measured mRNA expression of Neurog3, CHGA, SST and GHRL by qRT-PCR (Figure 3F,G). We found that cell fractions with the highest levels of RFP expression (‘P4 and P5’, Figure 3F) had the highest levels of mouse Neurog3 mRNA, and only these cell fractions produced mRNA encoding CHGA, SST or GHRL (Figure 3G). These data suggest that relatively high threshold levels of Neurog3 may be necessary and sufficient for directing endocrine differentiation of human pancreatic cells.
 
-## Conversion of pancreatic duct cells into progeny that produce, process, and store insulin
+### Conversion of pancreatic duct cells into progeny that produce, process, and store insulin
 
-The transcription factors
+The transcription factors MafA, Neurog3, and Pdx1 (a combination hereafter summarized as ‘MNP’) were sufficient to convert adult mouse acinar cells into insulin-producing cells (IPCs: Zhou et al., 2008). We constructed three adenoviruses expressing MafA, Neurog3, or Pdx1 (see ‘Materials and methods’; Figure 4A), and infected cultured spheres with this MNP combination. Within 5 days after infection, we reproducibly detected INS mRNA induction but at extremely low levels relative to adult human islet controls (0.0035 ± 0.0012% of islet levels; Figure 4B). Thus, we sought additional factors and discovered that mRNA encoding PAX6, an important regulator of mouse pancreatic endocrine cell development (Sander et al., 1997), was induced by MNP to only 0.03% of levels in control islets (Figure 4—figure supplement 1A). When combined with MafA, Neurog3, and Pdx1 (encoded in four viruses, ‘4V’), Pax6 induced INS expression in primary CD133+ ductal cells or spheres by over 30-fold relative to MNP (Figure 4A,C,D). We observed ductal conversion to IPCs with four consecutive, independent donors (INS, Figure 4D). We also detected substantially increased expression of other islet endocrine markers, including SST, GCK, PCSK1, KCNJ11, and ABCC8 (Figure 4D). Immunohistochemical analyses demonstrated that the number of Insulin+ cells was increased by 18 to 20-fold in spheres transduced by the four factor combination (4V) compared to the MNP combination (Figure 4F,G). ELISA studies quantified and confirmed this increase of proinsulin levels, showing that the spheres derived from 4V exposure contained proinsulin levels that averaged 0.7% of those in human islets (Figure 5E). Systematic removal of individual factors from this four virus combination revealed that omission of Neurog3 prevented expression of INS, CHGA or SST (Figure 4E). Omission of virus expressing MafA or Pax6 from this combination significantly reduced INS expression (Figure 4E–G), whereas omission of virus expressing Pdx1 did not significantly decrease INS expression. Thus, Neurog3-mediated endocrine cell conversion is required for the production of IPCs as well as other hormone-producing cells from ductal spheres.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/00940/elife-00940-fig5-v1.jpg)
 
-**Figure 5.:** (A) Schematic of adenoviral constructs used. See ‘Materials and methods’ and Figure 5—figure supplement 5 for details. (B) A schematic diagram of growth, conversion, and maturation procedures. (C) qRT-PCR analysis of spheres infected with Ad-eGFP (black) or Ad-4TF (gray) followed by extended culture. Data are normalized to adult human islet samples (red dotted line). (D) Representative confocal images of 4TFM spheres immunostained with indicated antibodies. Scale bar, 20 µm. (E) Quantification of total proinsulin and C-peptide content in GFP, 4TF, 4TFM spheres and human adult islets (Top). Total protein level (pmol) was normalized by total genomic DNA content (µg). Ratio of proinsulin and C-peptide content is presented as % (Bottom). Sph. = Spheres. (F) Representative electron microscopic images of 4TFM spheres. Dotted white line demarks cell boundary between converted, granulated (left) and non-converted (right) cells. Dense core vesicles with different morphology in converted cells are shown in the right panels. Scale bar, 1 µm. (G) Human C-peptide secretion assay of 4TFM spheres stimulated by the indicated secretagogues and drugs. Gluc = Glucose, Tol = Tolbutamide, Diaz. = Diazoxide. Data are presented as means ± SEM (n = 2 for Diaz.; n ≥ 3 for all other conditions).DOI: http://dx.doi.org/10.7554/eLife.00940.012
+**Figure 5.:** (A) Schematic of adenoviral constructs used. See ‘Materials and methods’ and Figure 5—figure supplement 5 for details. (B) A schematic diagram of growth, conversion, and maturation procedures. (C) qRT-PCR analysis of spheres infected with Ad-eGFP (black) or Ad-4TF (gray) followed by extended culture. Data are normalized to adult human islet samples (red dotted line). (D) Representative confocal images of 4TFM spheres immunostained with indicated antibodies. Scale bar, 20 µm. (E) Quantification of total proinsulin and C-peptide content in GFP, 4TF, 4TFM spheres and human adult islets (Top). Total protein level (pmol) was normalized by total genomic DNA content (µg). Ratio of proinsulin and C-peptide content is presented as % (Bottom). Sph. = Spheres. (F) Representative electron microscopic images of 4TFM spheres. Dotted white line demarks cell boundary between converted, granulated (left) and non-converted (right) cells. Dense core vesicles with different morphology in converted cells are shown in the right panels. Scale bar, 1 µm. (G) Human C-peptide secretion assay of 4TFM spheres stimulated by the indicated secretagogues and drugs. Gluc = Glucose, Tol = Tolbutamide, Diaz. = Diazoxide. Data are presented as means ± SEM (n = 2 for Diaz.; n ≥ 3 for all other conditions).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/00940/elife-00940-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** (A) qRT-PCR analysis of INS and IAPP with GFP, 4TF or 4TFM spheres. Note that spheres from extended culture (4TFM) had significantly increased mRNA levels of INS and IAPP (n = 6). (B) Quantification of CHGA- and C-peptide-immunoreactive cells in the 4TFM spheres. (C) Representative confocal images of 4TFM spheres with NKX6.1 and SST. Note the non-overlapping staining. Blue = DAPI. (D and E) Representative images of electron microscopy. (D) Dense core vesicles found adjacent to the plasma membrane. (E) Rare cells contain vesicles with irregular shape, reminiscent of δ-cells. (F) Four different culture media used for this study. See ‘Experimental procedures’ for details. (G) C-peptide secretion was shown as a percentage of total C-peptide content (n = 4). (H) Human C-peptide secretion assay with step increase of glucose concentration (left) and with KCl in the presence or absence of extracellular calcium (right) (n ≥ 3). All bar graphs are presented as means ± SEM.DOI: http://dx.doi.org/10.7554/eLife.00940.013
+**Figure 5—figure supplement 1.:** (A) qRT-PCR analysis of INS and IAPP with GFP, 4TF or 4TFM spheres. Note that spheres from extended culture (4TFM) had significantly increased mRNA levels of INS and IAPP (n = 6). (B) Quantification of CHGA- and C-peptide-immunoreactive cells in the 4TFM spheres. (C) Representative confocal images of 4TFM spheres with NKX6.1 and SST. Note the non-overlapping staining. Blue = DAPI. (D and E) Representative images of electron microscopy. (D) Dense core vesicles found adjacent to the plasma membrane. (E) Rare cells contain vesicles with irregular shape, reminiscent of δ-cells. (F) Four different culture media used for this study. See ‘Experimental procedures’ for details. (G) C-peptide secretion was shown as a percentage of total C-peptide content (n = 4). (H) Human C-peptide secretion assay with step increase of glucose concentration (left) and with KCl in the presence or absence of extracellular calcium (right) (n ≥ 3). All bar graphs are presented as means ± SEM.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/00940/elife-00940-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** (A) Representative confocal images of kidney-transplanted IPCs immunostained with indicated antibodies (HuNu = human nuclei-specific antibody). (B) Human insulin levels in serum of an IPC-grafted mouse (ID51) before (fasting) or 30 min after glucose challenge (glucose injection). Data are presented as means ± S.D. (C) Representative confocal images of liver-transplanted IPCs immunostained with indicated antibodies. (D) Representative confocal images of human islets transplanted in the indicated sites (Kidney or EFP) and immunostained with indicated antibodies. (E) Human insulin level in serum of human islet-grafted mice before (gray) or 30 min after glucose challenge (black). Data are presented as means ± SD. Scale bars, 20 µm.DOI: http://dx.doi.org/10.7554/eLife.00940.014
+**Figure 5—figure supplement 2.:** (A) Representative confocal images of kidney-transplanted IPCs immunostained with indicated antibodies (HuNu = human nuclei-specific antibody). (B) Human insulin levels in serum of an IPC-grafted mouse (ID51) before (fasting) or 30 min after glucose challenge (glucose injection). Data are presented as means ± S.D. (C) Representative confocal images of liver-transplanted IPCs immunostained with indicated antibodies. (D) Representative confocal images of human islets transplanted in the indicated sites (Kidney or EFP) and immunostained with indicated antibodies. (E) Human insulin level in serum of human islet-grafted mice before (gray) or 30 min after glucose challenge (black). Data are presented as means ± SD. Scale bars, 20 µm.
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/00940/elife-00940-fig5-figsupp3-v1.jpg)
 
-**Figure 5—figure supplement 3.:** (A) Schematic of qRT-PCR probes designed against adenoviral constructs used. (B) qRT-PCR of spheres infected with Ad-eGFP (eGFP) or Ad-Neurog3-IRES-eGFP and Ad-eGFP-M6P (4TF) with or without extended culture. Note that insulin expression is markedly elevated independent of transgene expression.DOI: http://dx.doi.org/10.7554/eLife.00940.015
+**Figure 5—figure supplement 3.:** (A) Schematic of qRT-PCR probes designed against adenoviral constructs used. (B) qRT-PCR of spheres infected with Ad-eGFP (eGFP) or Ad-Neurog3-IRES-eGFP and Ad-eGFP-M6P (4TF) with or without extended culture. Note that insulin expression is markedly elevated independent of transgene expression.
 
 ![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/00940/elife-00940-fig5-figsupp4-v1.jpg)
 
-**Figure 5—figure supplement 4.:** qRT-PCR of human dermal fibroblasts or spheres infected with Ad-eGFP (GFP) or Ad-Neurog3-IRES-eGFP and Ad-eGFP-M6P (4TFM) and cultured. qRT-PCR probes for INS (A) and CHGA (B) were used to assess cell conversion. See ‘Materials and methods’ for detail.DOI: http://dx.doi.org/10.7554/eLife.00940.016
+**Figure 5—figure supplement 4.:** qRT-PCR of human dermal fibroblasts or spheres infected with Ad-eGFP (GFP) or Ad-Neurog3-IRES-eGFP and Ad-eGFP-M6P (4TFM) and cultured. qRT-PCR probes for INS (A) and CHGA (B) were used to assess cell conversion. See ‘Materials and methods’ for detail.
 
 ![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/00940/elife-00940-fig5-figsupp5-v1.jpg)
 
-**Figure 5—figure supplement 5.:** (A) Schematic of adenoviral constructs used. To differentiate viral transgenes from endogenously encoded proteins, MAFA, PAX6, and PDX1 were epotpe-tagged with Myc (N-terminus), HA (C-terminus), and Flag (C-terminus), respectively. (B) Representative confocal images of 4TFM spheres with antibodies against mouse Neurog3, Myc, HA, and Flag. Scale bar, 20 µm.DOI: http://dx.doi.org/10.7554/eLife.00940.017
+**Figure 5—figure supplement 5.:** (A) Schematic of adenoviral constructs used. To differentiate viral transgenes from endogenously encoded proteins, MAFA, PAX6, and PDX1 were epotpe-tagged with Myc (N-terminus), HA (C-terminus), and Flag (C-terminus), respectively. (B) Representative confocal images of 4TFM spheres with antibodies against mouse Neurog3, Myc, HA, and Flag. Scale bar, 20 µm.
 
 Although ELISA studies readily detected proinsulin production by IPCs in our 4V spheres, we failed to detect processed C-peptide by ELISA (Figure 5E) or by immunostaining with antibodies recognizing cleaved C-peptide (data not shown). Thus, we sought methods to enhance proinsulin processing in IPCs produced by genetic conversion. For this, we used Ad-Neurog3-IRES-eGFP and a second adenovirus constructed to express simultaneously the three transcription factors MAFA, PAX6, and PDX1 (Ad-eGFP-M6P) in cultured G1 spheres (Figure 5A, referred to as ‘4TF’ combination). Compared to our standard 5 day post-infection culture (4TF), we found that two additional weeks of culture (referred to as ‘4TFM’) resulted in a 10-fold increase of INS mRNA expression in spheres (Figure 5B,C, Figure 5—figure supplement 1A). We observed conversion to IPCs with five consecutive, independent donors (INS, Figure 5C), demonstrating the robustness of our conversion method. The total number of converted IPCs appeared unchanged after this extended culture compared to 4V cultures (Figure 4G, Figure 5—figure supplement 1B), suggesting that INS mRNA levels per cell were increased in the 4TFM (4 transcription factors in two viruses plus maturation period) condition. In addition, mRNA encoding islet amyloid pancreatic polypeptide (IAPP), a β-cell dense core granule component not detectable in standard 4TF conditions, was readily detected in 4TFM spheres (Figure 5—figure supplement 1A). Likewise, multiple mRNAs encoding β-cell factors were expressed at levels comparable to those in purified human islets (Figure 5C), including the transcription factors NKX2.2 and NKX6.1, GCK, glucose transporters SLC2A1 (GLUT1) and SLC2A2 (GLUT2), PCSK1, PCSK2, Zinc transporter SLC30A8, KCNJ11, ABCC8, the voltage-gated calcium channel component CACNA1C, regulators of Ca++-induced insulin exocytosis like RAB3A, SYT3, and VAMP2, and the postulated maturation marker Urocortin 3 (UCN3) (Suckale and Solimena, 2010; Blum et al., 2012). Immunohistochemical analyses corroborated our qRT-PCR analysis, and showed that converted Insulin+ IPCs did not express other islet hormones (Figure 5D). Although we were unable to assess endogenous MAFA and PDX1 in cells with virally-expressed exogenous MAFA and PDX1 protein, we readily detected other known β-cell specific markers including NKX6.1, IAPP, and PC1/3 (Figure 5D). Moreover, Insulin+ cells, but not other hormone+ cells, expressed NKX6.1, a transcription factor with expression normally restricted in islets to β-cells (Figure 5—figure supplement 1C and data not shown).
 
 To assess enhanced IPC maturation after extended culture (4TFM), we measured proinsulin and insulin C-peptide by ELISA. Total insulin (proinsulin + C-peptide) levels ranged from 3.4 to 15.2 pmol/µg DNA (Figure 5E), equal to approximately 9.6% of the total insulin protein level found in human adult islets (Figure 5E). Moreover, the percentage of insulin C-peptide processing in IPCs was comparable to that found in adult human islets (IPCs 77–92%; human islets 96–97%), indicating that maturation of IPCs during extended culture permitted proinsulin processing (Figure 5E). Ultrastructural studies by electron microscopy demonstrated round dense-core vesicles (Figure 5F) resembling those in adult human β-cells, including subsets of immature (light core) and mature (dense or crystallized core) vesicles, and vesicles adjacent to the plasma membrane (Figure 5F, Figure 5—figure supplement 1D). Consistent with the detection of SST mRNA (Figure 5C,D), we also observed rare cells with irregular electron-dense granules characteristic of islet δ-cells (Figure 5—figure supplement 1E; Klimstra et al., 2007).
 
-## Regulated insulin C-peptide secretion by IPCs
+### Regulated insulin C-peptide secretion by IPCs
 
 Native islet β-cells depolarize and secrete insulin and C-peptide in response to glucose and other physiological or pharmacological stimuli, but reconstructing these hallmark functions in progeny of purified primary human non-β-cells has not been previously achieved during in vitro culture. Compared to baseline secretion in media with 0.1 mM glucose, IPCs increased insulin C-peptide secretion by 2.4-fold upon exposure to 2 mM glucose (Figure 5G). Similar to insulin release by human islet β-cells (Lupi et al., 1999), glucose stimulated the secretion of approximately 4% of total insulin C-peptide in IPCs (Figure 5—figure supplement 1G). This effect was blocked when the cells were incubated with glucose and Diazoxide, a drug that opens KATP channels and prevents glucose-stimulated insulin secretion (Figure 5G). However, unlike adult human islet β-cells, the release of insulin by IPCs was not further increased by 11 mM glucose. Islets from fetal or neonatal stages do not show elevated insulin secretion by high level glucose challenge (Rozzo et al., 2009), suggesting that IPCs are similar to immature islet β-cells and that further maturation is possible (Figure 5G). Calcium and voltage-dependent calcium channels are important regulators of normal insulin secretion after KATP channel-mediated membrane depolarization in β-cells (Henquin, 2005). When calcium was omitted in secretion buffer, C-peptide secretion stimulated by glucose was abolished, but restored upon calcium addition (Figure 5G). Insulin C-peptide release by cultured IPCs was also induced by the depolarizing agent potassium chloride (30 mM KCl), an effect reversed by a subsequent wash in media with 4.8 mM potassium ion (Figure 5G, figure 5—figure supplement 1H). Treatment with tolbutamide, a KATP channel blocker causing membrane depolarization, also stimulated insulin secretion by IPCs, an effect prevented by omission of calcium (Figure 5G). Together with data showing expression of key regulators of stimulus-secretion coupling, these findings provide strong evidence that IPCs produced by conversion and extended culture in our system develop regulated insulin secretion.
 
@@ -154,46 +393,46 @@ In conclusion, our study provides unique evidence that primary human cells can g
 
 ## Materials and methods
 
-## Cell preparation
+### Cell preparation
 
 Institutional review board approval for research use of human tissue was obtained from the Stanford University School of Medicine. Human islet-depleted cell fractions were obtained with appropriate consent from healthy, non-diabetic organ donors deceased due to acute traumatic or anoxic death by overnight shipping from the following facilities: Division of Transplantation (Massachusetts General Hospital, MA), UAB Islet Resource Facility (University of Alabama at Birmingham, AL), UCSF Diabetes Center (University of California, San Francisco, CA), Kidney/pancreas transplantation center (University of Pennsylvania, PA), Islet Core of the University of Pittsburgh (Pittsburgh, PA), and Human Islet Isolation Program (The Hospital of the University of Virginia, VA). Donor samples with the age range 16–63 years (mean 38.24 years) used for this study are listed in Table 1. On receipt, the cell fractions were washed with PBS and cultured with CMRL media (Mediatech, Inc, Manassas, VA) supplemented with 10% heat inactivated fetal bovine serum (FBS, HyClone, Logan, UT), 2 mM GlutaMax (Life Technologies, Grand Island, NY), 2 mM nicotinamide (prepared in PBS, Sigma, St.Louis, MO), and 100 U Penicillin and 100 µg Streptomycin (Pen/Strep, Life Technologies) in a non-coated culture dish at 25.5°C in 5% CO2 until use. For dissociation, the cell pellet was washed with PBS, trypsinized with 0.05% Trypsin-EDTA solution (Life Technologies) for 5 min, and quenched with 5 vol of FACS buffer (10 mM EGTA, 2% FBS in PBS). Cells were collected by centrifugation and further digested in 1 U/ml dispase solution (Life Technologies) containing 0.1 mg/ml DNaseI in PBS on a nutating mixer at 37°C for 30 min. PBS washing was performed after each enzymatic digestion step. After centrifugation, the cell pellet was resuspended in FACS buffer and passed through a 40-µm-cell strainer. Cell viability and number were assessed using a Vi-Cell analyzer (Beckman Coulter, Fullerton, CA) and the samples exceeding 70% cell viability were used for subsequent antibody staining for FACS.
 
-## Cell sorting and culture
+### Cell sorting and culture
 
 Dissociated cells were stained with biotin-conjugated CD133 antibodies (clone AC133 and 293C3, Miltenyi Biotec, Auburn, CA) and then Allophycocyanin-conjugated Streptavidin (eBioscience, San Diego, CA) for 15 min, each at room temperature. Cell pellets were collected by centrifugation and washed with PBS after each staining steps. Propidium Iodide (Life Technologies) staining was used to exclude dead cells. The cells were sorted using a FACSAria II (BD Biosciences, Bedford, MA) and collected in 100% FBS, washed with PBS twice, and resuspended in ice-cold Advanced DMEM/F-12 media (Life Technologies) at a density of 8000 cells/µl. The average percentage of CD133+ fraction was 32.73% (n = 32). 50 µl of growth factor-reduced Matrigel (BD Biosciences) was then added to 30 µl cell suspension and the mixture was placed around the bottom rim of each well. After solidification at 37°C for 60 min, each well was overlaid with 500 µl of modified crypt culture media (Sato et al., 2009) comprised of Advanced DMEM/F-12 media supplemented with recombinant human (rh) EGF (50 ng/ml, Sigma), rhR-spondin I (500 ng/ml, R&D systems, Minneapolis, MN), rhFGF10 (50 ng/ml, R&D systems), recombinant mouse Noggin (100 ng/ml, R&D systems), 10 mM Nicotinamide in PBS, and Pen/Strep. The media was changed twice weekly. The spheres were harvested after 2 to 3 weeks for passaging or viral infection. Static and time-lapse images of sphere growth were collected using Zeiss Axiovert 200 inverted microscope and Zeiss Observer.Z1 equipped with a temperature- and CO2-controlled chamber using Axiovision (Carl Zeiss, Germany) and MetaMorph (Molecular Devices, Sunnyvale, CA) softwares, respectively. For harvesting spheres, 500 µl of 2 U/ml dispase (Life Technologies) solution containing 0.1 mg/ml DNaseI in PBS was added in each well and the Matrigel was mechanically disrupted by pipetting and incubated at 37°C for 45 min. The released spheres were collected, washed twice with PBS and used for subsequent applications. For passaging spheres, the harvested spheres were trypsinized at 37°C for 5 min followed by quenching with FBS. The dispersed cells were then used for cell counting with a hemocytometer or were plated as described above.
 
-## Construction of adenoviral vectors
+### Construction of adenoviral vectors
 
 Ad-eGFP and Ad-RFP control adenoviruses were purchased from Vector Biolabs (Philadelphia, PA). Ad-MafA and Ad-Neurog3-IRES-eGFP were described previously (Tashiro et al., 1999). To construct Ad-RFP-Neurog3 and Ad-RFP-Pdx1 adenoviruses, mouse cDNAs for Neurog3 (BC104326) and Pdx1 (BC103581) were purchased from Open Biosystems (Lafayette, CO) and the inserts were obtained by restriction enzyme digestion with EcoR V/BamH I and EcoR V/Msc I, respectively. The inserts were then subcloned into multiple cloning sites of Dual-RFP-CCM shuttle vector (Vector Biolabs) and adenoviruses were constructed by Vector Biolabs. For Ad-eGFP-M6P, human MAFA cDNA (gift from M German), PDX1 (NM_000209; GeneCopoeia, Rockville, MD), and PAX6 (BC011953; Open Biosystems) were used for PCR amplification with the primers shown in Supplementary file 1C to add T2A, P2A, restriction enzyme sites, and/or tagging proteins (Figure 5—figure supplement 5). A fused construct of MAFA-T2A-PAX6 was generated by PCR with MAFA and PAX6 PCR amplicons as templates. Similarly, PCR products for PAX6 and PDX1 were used to construct PAX6-P2A-PDX1. Next, MAFA-T2A-PAX6, PAX6-P2A-PDX1, and pDual-GFP-CCM vector (Vector Biolabs) were cut with BglII/PstI, PstI/EcoRI, and BglII/EcoRI, respectively, and ligated with NEB quick ligation kit (New England Biolabs, Ipswich, MA) followed by transformation of TOP10 chemically competent cells (Invitrogen, Carlsbad, CA). The construct was then used for generating adenoviruses by Vector Biolabs.
 
-## Sphere infection and post-infection culture
+### Sphere infection and post-infection culture
 
 Spheres were infected at 37°C in suspension overnight at a multiplicity of infection (MOI) 100 for Ad-MafA and Ad-eGFP-M6P, or MOI 500 for the rest of viruses used. The spheres were then washed twice with culture medium and embedded in Matrigel as described above. The infected spheres were overlayed with sphere growth media without R-spondin I and with 0.33 µM all-trans retinoic acid (Sigma), and cultured for 5 days. For extended culture, the media was replaced with either (1) DMEM with high glucose (Life Technologies) supplemented with 10% FBS (Hyclone) and Pen/Strep (Life Technologies) for 2 weeks (referred as ‘DF’ in Figure 3—figure supplement 1F), (2) DF plus 20 mM KCl and 10 µM R0-28-1675 (glucokinase activator; Axon Ligands) for 2 weeks (referred as ‘DFK’), (3) DF for one week and then DMEM/F-12 media (Life Technologies) supplemented with 0.5 × N2 supplement (Life technologies), 0.5 × B27 (Life technologies), 0.2% BSA (Sigma), 1% ITS supplement (Life Technologies), 10 mM nicotinamide, 10 ng/ml recombinant human basic FGF (R&D systems), 50 ng/ml Exendin-4 (R&D systems), recombinant human BMP-4 (R&D systems) for additional 1 week (referred as ‘Z’; Zhang et al., 2009), or (4) DMEM high glucose supplemented with 1 × B27, 55 nM GLP-1, 50 ng FGF10 (R&D Systems), and Pen/Strep for 3 days followed by 5 days with DMEM high glucose supplemented with 1 × B27, 55 nM GLP-1 (Sigma), 10 µM DAPT (Sigma), and Pen/Strep, then for 6 days with CMRL1066 media (Mediatech) supplemented with 1 × B27, 55 nM GLP-1, 50 ng HGF (R&D Systems), 50 ng IGF-1 (R&D Systems), and Pen/Strep (referred as ‘T’; Thatava et al., 2011). The media was replaced every other day unless otherwise noted.
 
-## cDNA preparation and qRT-PCR analyses
+### cDNA preparation and qRT-PCR analyses
 
 Total RNA was prepared from sorted cells or cultured spheres with QIAGEN RNeasy micro kit (QIAGEN Sciences, MD), and used for cDNA synthesis using QIAGEN Omniscript RT kit (QIAGEN), according to the manufacturer’s protocol. Relative mRNA level was measured by qRT-PCR of each cDNA in duplicate with gene-specific probe sets (Applied Biosystems, Foster City, CA) with TaqMan Universal PCR Master Mix (Applied Biosystems) and the ABI Prism 7500 detection system (Applied Biosystems). Normalizations across samples were performed using β-actin primers. Information of the primer and probe sets is available upon request.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 For immunohistochemical analyses, cultured spheres were harvested, washed with PBS, mixed with 20 µl of Collagen Gel Kit (Nitta Gelatin, Osaka, Japan), solidified at 37°C for 1 hr, fixed with 4% paraformaldehyde for 2 hr at 4°C, cryoprotected in 30% sucrose solution in PBS overnight, embedded in OCT on dry ice, and sectioned in 8 µm thickness. For sorted cells, the cell suspension was washed once and resuspended with 20 µl of PBS, placed on a Polysine slide (Thermo scientific, Waltham, MA), and waited for 30 min at room temperature (RT) to let the cells sit on the slide glass by gravity. Then the solution was removed carefully and 40 µl of 4% paraformaldehyde was added. After 10 min of incubation at RT, the fixative was removed and the slides were washed with PBS three times for 5 min each. After removal of PBS, the slides were dried at RT for 1 hr and stored at −20°C. For immunostaining transplanted IPCs, grafted organs (kidney, EFP, or liver) were harvested, fixed with 4% paraformaldehyde overnight at 4°C, cryoprotected in 30% sucrose solution in PBS overnight, embedded in OCT on dry ice, and sectioned in 8 µm (kidney and liver) or 40 µm (EFP) thickness. The primary antibodies used were rabbit anti-Amylase (1:1000; Sigma), goat anti-Amylase (sc-12821; 1:200; Santa Cruz Biotechnology, Dallas, TX), CD133 (1:100 each; clone AC133 and 293C3; Miltenyi Biotec, Auburn, CA), rabbit anti-ChromograninA (20085; 1:100; Immunostar, Hudson, WI), mouse anti-ChromograninA (LK2H10; 1:200; Cell Marque, Rocklin, CA), mouse anti-CK19 (KRT19) (M0888; 1:200; DAKO, Carpinteria, CA), rabbit anti-CK19 (319R-15; 1:200; Cell Marque), rabbit anti-CPA1 (1810-0006; 1:100; AbD Serotec, UK), rabbit anti-C-peptide (#4593B; 1:200; Cell Signaling Technology, Danvers, MA), mouse anti-C-peptide (capt) (1:100; Mercodia, Sweden), mouse anti-Flag (F1804; 1:1000; Sigma), goat anti-GHRL (sc-10368; 1:200; Santa Cruz Biotechnology), guinea pig anti-Glucagon (4031-01; 1:200; Linco, Billerica, MA), mouse anti-HA (MMS-101P-1000; 1:1000; Covance), mouse anti-HuNu (MAB1281; 1:200; Millipore, Billerica, MA), mouse anti-IAPP (MCA1126T; 1:200; AbD serotec), rabbit anti-Ki-67 (NCL-Ki67p; 1:100, Leica Microsystems, Germany), rabbit anti-Myc (sc-789; 1:1000; Santa Cruz Biotechnology), mouse anti-NeuroD (sc-46684; 1:10; Santa Cruz Biotechnology), mouse anti-Neurog3 (F25A1B3; 1:4000; DSHB, Iowa City, IA), mouse anti-Nkx2.2 (74.5A5; 1:10; DSHB), mouse anti-Nkx6.1 (F55A10; 1:200; DSHB), rabbit anti-PC1/3 (PCSK1, AB10553; 1:200; Millipore), rabbit anti-phospho-H3 (06-570; 1:500; Millipore), goat anti-PPY (NB100-1793; 1:200; Novus Biologicals, Littleton, CO), rabbit anti-Somatostatin (1:200, DAKO), goat anti-Somatostatin (sc-7819; 1:200; Santa Cruz Biotechnology), goat anti-SUR-1 (sc-5789; 1:50; Santa Cruz Biotechnology). Tyramide signal amplification (Perkin Elmer, Waltham, MA) was used for antibodies against Neurog3, NeuroD, Nkx2.2, Nkx6.1, and PC1/3. Antigen unmasking (H-3300; Antigen Unmasking Solution, Citric Acid Based, Vector Laboratories, Burlingame, CA) was performed for anti-Flag antibody staining. The Neurog3, Nkx2.2, and Nkx6.1 antibodies developed by Dr OD Madsen were obtained from the Developmental Studies Hybridoma Bank (DSHB) developed under the auspices of the NICHD and maintained by The University of Iowa, Department of Biological Sciences, Iowa City, IA 52242. Secondary antibodies used were from Jackson ImmunoResearch (West Grove, PA) or Molecular Probes (Eugene, OR). Stained sections were mounted with VECTASHIELD Mounting Medium with DAPI (Vector Laboratories). Fluorescence images were taken using Zeiss Axio Imager.M1 or Leica SP2 inverted confocal laser scanning microscope.
 
-## Electron microscopy
+### Electron microscopy
 
 The samples were fixed in Karnovsky’s fixative: 2% Glutaraldehyde (EMS Cat# 16000) and 4% Paraformaldehyde (EMS; Electron Microscopy Sciences, Hatfield, PA) in 0.1 M Sodium Cacodylate (EMS) pH 7.4 for 1 hr at RT then cut, post fixed in 1% Osmium tetroxide (EMS) for 1 hr at RT, washed three times with ultrafiltered water, then en bloc stained for 2 hr at RT or moved to 4°C overnight. The samples were then dehydrated in a series of ethanol washes for 15 min each at 4°C beginning at 50%, 70%, 95%, where the samples are then allowed to rise to RT, changed to 100% two times, followed by Acetonitrile for 15 min. The samples are infiltrated with EMbed-812 resin (EMS) mixed 1:1 with Acetonitrile for 2 hr followed by two parts EMbed-812 to 1 part Acetonitrile for 2 hr. The samples were then placed into EMbed-812 for 2 hr and then placed into molds, and resin filled gelatin capsules with labels were orientated over the cells of interest and placed into 65°C oven overnight. Sections were taken between 75 and 90 nm on a Leica Ultracut S (Leica, Wetzlar, Germany), picked up on formvar/Carbon coated slot grids (EMS Cat#FCF2010-Cu) or 100 mesh Cu grids (EMS). Grids were contrast stained for 15 min in 1:1 saturated UrAcetate (∼7.7%) to 100% ethanol followed by staining in 0.2% lead citrate for 3 to 4 min. JEOL JEM-1400 TEM was used to observe at 120 kV and photos were taken using a Gatan Orius digital camera.
 
-## C-peptide secretion and content measurement
+### C-peptide secretion and content measurement
 
 C-peptide secretion assay and content measurement were performed as described previously with minor modification (Chen et al., 2001). Briefly for secretion assay, media was replaced a day before assay was performed. On the day, each well with matrigel-embedded spheres was incubated with fresh media for 2 hr, washed twice with plain Krebs-Ringer bicarbonate buffer (KRBB), and incubated twice with plain KRBB for 1 hr each for thorough washing. Next, the spheres were incubated consecutively with 400 µl KRBB containing indicated concentrations of glucose (Sigma) with or without 0.5 mM Diazoxide (Sigma), KCl (30 mM, Sigma), or Tolbutamide (0.2 mM, Sigma) for 2 hr each. KRBB without Calcium (No Ca++) was prepared by omission of CaCl2 and addition of 1 mM EGTA (Sigma). Secreted C-peptide level was measured with Human Ultrasensitive C-peptide ELISA kit (Mercodia). For C-peptide content measurement, the spheres were harvested in 1.5 ml microfuge tube, washed with PBS, resuspended with 300 µl of ice-cold TE/BSA buffer (10 mM Tris-HCl, 1 mM EDTA, 0.1% wt/vol BSA, pH 7.0), and sonicated with Bioruptor Sonicator (Diagenode, Denville, NJ). Half of the lysate was used for genomic DNA isolation and quantification with Quant-iT PicoGreen dsDNA Assay Kit (Invitrogen). Same volume of acid alcohol (75% vol/vol ethanol, 2% vol/vol concentrated HCl, 23% vol/vol H2O) was added to the rest of lysate to extract C-peptide by rocking overnight at 4°C. The extract was then neutralized with 10 vol of PBS and used for C-peptide ELISA.
 
-## Transplantation
+### Transplantation
 
 Transplantation in kidney capsule, epididymal fat pad (EFP), or in the liver by portal vein injection was performed as previously described (Kroon et al., 2008; Alipio et al., 2010; Wang et al., 2011). For transplantation in kidney or EFP, converted spheres with or without extended culture were harvested and mixed with or without mouse embryonic fibroblasts (Supplementary file 1A). The spheres were then mixed with matrigel to make a final volume of 10 µl for kidney transplantation or overlayed on pre-wet gelfoam for EFP transplantation. For liver transplantation, single cells produced by trypsinization of harvested spheres were resuspended in 100 µl PBS and injected into the portal vein with a 27 G needle. All animal experiments and methods were approved by the Institutional Animal Care and Use Committee (IACUC) of Stanford University.
 
-## In vivo glucose-stimulated insulin secretion assay
+### In vivo glucose-stimulated insulin secretion assay
 
 Secretion of human Insulin or C-peptide by glucose injection was measured as previously described (Kroon et al., 2008). Briefly, transplanted mice were fasted overnight (14–16 hr) and 120 µl of blood was collected from tail into Microvette CB300LH (Sarstedt, Germany) to prepare 50 µl of serum. 3 g/kg glucose was then injected and blood was collected again 30 min after glucose administration. Secreted C-peptide or insulin level was measured with Human Ultrasensitive C-peptide or Insulin ELISA kits (Mercodia).
 
-## Human adult dermal fibroblast culture and conversion assay
+### Human adult dermal fibroblast culture and conversion assay
 
 Human adult dermal fibroblasts (Coriell Institute for Medical Research, Camden, New Jersey, USA) were cultured and maintained as described previously (Yoo et al., 2011). The cells were either trypsinized for suspension infection (as was described above for ductal spheres) or infected as adherent cells in six-well plates by direct addition of virus into the culture medium, with Ad-eGFP (GFP) or Ad-eGFP-M6P and Ad-Neurog3-IRES-eGFP (4TFM). The same MOIs used for ductal sphere infection were also used. The suspension-infected cells were harvested the following day and embedded in Matrigel as described above for infected ductal spheres. The culture was maintained for additional 18 days to match the duration of infected ductal sphere maturation. The infected adherent cells were cultured with virus for 48 hr and the media was replaced. The culture was maintained for additional 10 days, passaged in 1:3 ratio due to confluency, re-plated, and cultured additional 7 days to match the duration of infected ductal sphere maturation. In both cases, media was replaced every other day. Three independent experiments were performed for both conditions and each experiment at least in duplicates. RNA isolation, cDNA preparation, and qRT-PCR were performed with primers specific to human INS, CHGA, and β-actin as described above.

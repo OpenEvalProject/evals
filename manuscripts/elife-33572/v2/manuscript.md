@@ -42,7 +42,7 @@
 
 ## Abstract
 
-10.7554/eLife.33572.001 Insulin degrading enzyme (IDE) plays key roles in degrading peptides vital in type two diabetes, Alzheimer's, inflammation, and other human diseases. However, the process through which IDE recognizes peptides that tend to form amyloid fibrils remained unsolved. We used cryoEM to understand both the apo- and insulin-bound dimeric IDE states, revealing that IDE displays a large opening between the homologous ~55 kDa N- and C-terminal halves to allow selective substrate capture based on size and charge complementarity. We also used cryoEM, X-ray crystallography, SAXS, and HDX-MS to elucidate the molecular basis of how amyloidogenic peptides stabilize the disordered IDE catalytic cleft, thereby inducing selective degradation by substrate-assisted catalysis. Furthermore, our insulin-bound IDE structures explain how IDE processively degrades insulin by stochastically cutting either chain without breaking disulfide bonds. Together, our studies provide a mechanism for how IDE selectively degrades amyloidogenic peptides and offers structural insights for developing IDE-based therapies.
+Insulin degrading enzyme (IDE) plays key roles in degrading peptides vital in type two diabetes, Alzheimer's, inflammation, and other human diseases. However, the process through which IDE recognizes peptides that tend to form amyloid fibrils remained unsolved. We used cryoEM to understand both the apo- and insulin-bound dimeric IDE states, revealing that IDE displays a large opening between the homologous ~55 kDa N- and C-terminal halves to allow selective substrate capture based on size and charge complementarity. We also used cryoEM, X-ray crystallography, SAXS, and HDX-MS to elucidate the molecular basis of how amyloidogenic peptides stabilize the disordered IDE catalytic cleft, thereby inducing selective degradation by substrate-assisted catalysis. Furthermore, our insulin-bound IDE structures explain how IDE processively degrades insulin by stochastically cutting either chain without breaking disulfide bonds. Together, our studies provide a mechanism for how IDE selectively degrades amyloidogenic peptides and offers structural insights for developing IDE-based therapies.
 
 ## Introduction
 
@@ -62,37 +62,163 @@ Recent advances in cryogenic electron microscopy (cryoEM) have profoundly transf
 
 ## Results
 
-## Fab-assisted cryoEM of human IDE
+### Fab-assisted cryoEM of human IDE
 
 Because IDE in the open conformation has proved recalcitrant to crystallization, we explored the use of cryoEM to study these structures. While IDE readily dimerizes (Kd = 10 nM), the dimer's overall size (220 kDa), pseudo two-fold symmetry and conformational heterogeneity made it challenging for cryoEM (data not shown). We addressed these issues by using Fab-assisted cryoEM (Kim et al., 2015; Lyumkis et al., 2013; Wu et al., 2012). To identify Fabs that bind IDE tightly, we screened a phage-display synthetic Fab library constructed using ‘restricted chemical diversity’ where positions randomized within the complementarity determining regions are biased toward amino acids enriched in antibody paratopes (Miller et al., 2012). This allowed rapid identification of eighteen high-affinity IDE binding Fabs without immunization. FabH11 was chosen because it bound IDE tightly (~1 nM) and only slightly increased IDE activity (Figure 2—figure supplement 1A–C). We then rigidified the elbow region between the heavy and light chain of FabH11, which has improved the resolution of several structures that used Fab as the crystallization chaperone (Bailey et al., 2018). The resulting molecule, FabH11-E, was then used to determine an X-ray structure of FabH11-E-bound IDE at 3.8 Å resolution (R/Rfree = 22/27%, Supplementary file 1). This structure reveals the binding epitope of this Fab to IDE (Figure 2A and B). The tight binding between IDE and FabH11-E is mediated by a network of hydrogen bonds and van der Waal contacts (Figure 2B). The crystal structure revealed a closed-state IDE dimer that is nearly identical to those reported previously (Figure 2—figure supplement 1D)(Guo et al., 2010; Malito et al., 2008b2008; Manolopoulou et al., 2009; Ren et al., 2010; Shen et al., 2006). All crystal structures of IDE dimer solved so far are in the closed state, likely due to the constraints imposed by the crystal lattice. This illustrates the challenge in using crystallography to decipher the structure of open-state IDE.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig2-v2.jpg)
+
+**Figure 2.:** (A) Overall structure of FabH11-E-bound IDE dimer in ribbon representation (PDB code: 5UOE). IDE-N and IDE-C are colored in cyan and grey, respectively; The heavy and light chains of FabH11-E are colored in orange and purple, respectively. (B) Detailed interactions between IDE and FabH11-E. The key residues involved in the interaction of IDE with FabH11 were calculated using PDBePISA (Krissinel and Henrick, 2007). (C) Changes of hydrogen/deuterium exchange of IDE induced by the binding of FabH11-E. Representative 2D class averages of (D) insulin-bound IDE-FabH11-E, (E) Apo IDE-FabH11-E-bound IDE from untilted micrographs and (F) Apo IDE-FabH11-E-bound IDE from 30 degree titled micrographs. (G) Electron density map of IDE-FabH11-E-bound IDE dimer in the presence of insulin.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Sequence of 4 CDRs (H1, H2, H3, L3) of FabH11. (B) Representative SPR sensorgram on FabH11 binding to immobilized IDE. The kon and koff were estimated to be 1.6 × 105 M−1s−1 and 1.1 × 10−4 s−1, respectively. (C) Relative catalytic activity of IDE in the presence and absence of FabH11-E using a model fluorogenic substrate, substrate V. The standard deviation is derived from three experiments. (D) Alignment of IDE from IDE-Fab(H11-E) complex (colored green; PDB code: 5UOE) with that from bradykinin-bound IDE structure (colored blue; PDB code: 3CWW). The RMSD is 0.36 Å.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The percentages of deuteration levels of each peptide fragment at various time points are shown as a heat map color-coded from blue (<10%) to red (>90%), as indicated at the bottom right of the figure. Each block represents a peptide segment analyzed at each of the six time points (from top to bottom: 10, 100, 1000, 10,000, 100,000, and 1000,000 s). Proline residues, and regions with no amide exchange data available are colored in gray. The structure features of IDE are shown above IDE sequences and colored according to their domains/subdomains.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Differences in deuteration levels in the free and FabH11-bound IDE at various time points (from top to bottom: 10, 100, 1000, 10,000, 100,000, and 1000,000 s) are shown in a color-coded bar ranging from blue (−50%) to red (50%), as indicated at the bottom right of the figure. The structure features of IDE are shown above IDE sequences and colored according to their domains/subdomains.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Insulin-bound IDE-FabH11-E images with 3.04 μm (left micrograph) and 3.45 μm (right micrograph) defocus. Representative particles indicated in red circles are shown at higher resolution as insets. (B) Fourier transform of the corresponding image, showing Thon rings going out to 3.1 Angstrom. (C) 2D class averages of insulin-bound IDE-FabH11-E particles using Relion2.1 and the option to ignore the CTFs until the first peak.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Untilted apo IDE-FabH11-E images with 2.56 μm (left micrograph) and 3.05 μm (right micrograph) defocus. (B) 2D class averages of Apo IDE-FabH11-E particles from untilted micrographs using Relion2.1 and the option to ignore the CTFs until the first peak.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** (A) Tilted apo IDE-FabH11-E images with 3.51 μm (left micrograph) and 3.54 μm (right micrograph) defocus. (B) 2D class averages of Apo IDE-FabH11-E particles from 30 degree tilted micrographs using Relion2.1 and the option to ignore the CTFs until the first peak.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** The particle numbers for the final 3D classification, focused classification with signal subtraction and final refinement are indicated. (A) Apo IDE-FabH11-E. Particles from both tilted and untilted micrographs were automatically picked using DoGpicker followed by several rounds of 2D and 3D classification using RELION2.1. Bad 2D class averages were discarded. The particles were then selected for 3D refinement followed by focused classification with signal subtraction on the IDE dimer. The classes particles having the same conformation were grouped (dashed line) into three different subsets. Each subset of particles was refined independently. (B) Insulin-bound IDE-FabH11-E. Particles were automatically picked using DoGpicker followed by several rounds of 2D and 3D classification using RELION2.1. The particles were then selected for 3D refinement followed by focused classification with signal subtraction on IDE dimer. The classes particles having the same conformation were grouped together (dashed line) and refined.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** (A) Final refined map colored according to local resolution generated from ResMap. (B) Angular distribution plots generated from RELION2.1. (C) FSC plot and resolution estimation using the gold-standard 0.143 criterion generated from RELION2.1. (D) 3DFSC plots. The global half-map FSC (solid red line) and the spread of directional resolution values defined by ±1σ from the mean (green area encompassed by dotted green lines, left axis) and a histogram of directional FSC sampled over the 3D FSC (blue bars, right axis).
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig2-figsupp10-v2.jpg)
+
+**Figure 2—figure supplement 10.:** (A) Overall density maps of apo IDE in closed conformation with built structure model. (B) Overall density maps of apo IDE in open conformation with built structure model. (C) Overall density maps of apo IDE in open/closed conformation with built structure models. (D) Overall density maps of insulin-bound IDE with built structure model. (E) Representative density with built models of twoα-helixes from apo IDE in O/pO conformation (residue 659–672 and residue 855–875). (F) Representative density with built models of two α-helixes from insulin-bound IDE (residue 660–673, and residue 677–691).
 
 In order to ensure that Fab binding does not alter the conformation and function of IDE, we applied HDX-MS to assess whether FabH11-E causes noticeable global change in IDE conformations in solution because HDX-MS not only probes the binding regions of a given protein with its partners but also examines protein dynamics and regional stability (Chung et al., 2011; Li et al., 2011; Marciano et al., 2014). As predicted from the FabH11-E-bound IDE crystal structure, we found epitope residues 374–394 to be the primary region that displays strong reduction in HDX. Two additional regions, residues 297 to 303 and residues 501 to 508, also show moderate reduction in HDX in response to FabH11-E binding (Figure 2C, Figure 2—figure supplements 2–4). Together, these three regions form a conformational binding epitope, which is in an excellent agreement with our crystal structure. As there is no major change in HDX between IDE alone and FabH11-E-bound IDE that is distal to FabH11-E binding site, our HDX-MS data also suggest that FabH11-E binding has a minimal effect on the conformation dynamics or regional stability of IDE in solution. We only found a minor reduction in HDX in a small region, residues 169 to 198, which is a part of IDE door subdomain that contains the catalytic zinc ion. Interestingly, the stabilization of IDE door subdomain is a key feature induced by substrate binding, which is discussed in details in ‘substrate-induced conformational change of IDE’. This could explain a 50% enhancement of IDE catalytic activity upon FabH11-E binding (Figure 2—figure supplement 1C). Altogether, our data suggests that FabH11-E does not significantly alter the global structure or activity of IDE. Thus, the cryoEM structures of FabH11-E-bound IDE is likely to represent the conformations of IDE dimer in solution.
 
 We then performed cryoEM structural analysis of the FabH11-E-bound IDE dimer in the presence and absence of insulin. 3D maps were reconstructed from 388,643 and 762,283 particles for apo- and insulin-bound IDE-FabH11-E complex, respectively (Figure 2D–F; Figure 2—figure supplements 5–10; Supplementary file 2–3). A cryoEM map of the insulin-bound IDE-FabH11-E was constructed using 218,162 particles initially, refined, and solved at 4.1 Å resolution, which confirms how FabH11-E binds IDE (Figure 2G, Figure 2—figure supplement 8B, Supplementary file 3). We further improved the resolution of the IDE dimer using IDE dimer-focused classification with signal subtraction and refinement, resulting in a map and structural model with an overall resolution of 3.7 Å (Figure 2—figure supplements 8B, 9 and 10, Supplementary file 3). Apo FabH11-E-bound IDE showed a highly preferred orientation in vitreous ice. Thus, images were acquired with the grid tilted at an angle to the electron beam, which allowed better sampling of other orientations (Figure 2F, Figure 2—figure supplement 9B) (Tan et al., 2017). The initial 3D refinement of apo IDE-FabH11-E of 151,868 particles had a resolution of 4.4 Å. Further 3D classification revealed three major conformations and structural models were built (Supplementary file 3). We again applied IDE dimer-focused classification with signal subtraction of the IDE-FabH11-E dimer to refine each conformation separately, which improved the resolution significantly (Figure 2—figure supplement 9A, Supplementary file 3). The three apo-IDE structures derive from combinations of the IDE partial open (pO) and open (O) states (Figure 3A). The dimer with one open and one partially open conformational subunit (open/partial open, 110,499 particles) reached an overall resolution of 4.2 Å (Figure 3A, Figure 2—figure supplements 5–9, Supplementary file 3). The dimer with two open conformational subunits (open/open, 24,425 particles) resulted in an overall resolution of 6.5 Å (Figure 3A, Figure 2—figure supplements 5–9, Supplementary file 3). The dimer with two partially open conformational subunits (partial open/partial open, 16,944 particles) reached 6.9 Å resolution (Figure 3A, Figure 2—figure supplements 5–9, Supplementary file 3).
 
-## CryoEM structures of IDE dimer
+![Figure 3.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig3-v2.jpg)
+
+**Figure 3.:** (A) Overall structures of IDE dimer in the presence and absence of insulin. Models are shown as ribbons within the electron density map. O, open state; pO, partially open state; pC, partially-closed state. IDE-N and IDE-C are colored in cyan and grey, respectively; insulin inside the catalytic chamber of IDE is colored in yellow. For simplicity, Fab is not shown. (B) Comparison of four distinct conformational states within IDE structures; two pC states in the insulin-bound cryoEM IDE structure, three pO and three O states in apo-IDE cryoEM structures, and a closed structure from previous crystallographic work (Guo et al., 2010; Malito et al., 2008b2008; Manolopoulou et al., 2009; Noinaj et al., 2011; Ren et al., 2010; Shen et al., 2006). The buried surface between IDE-N and IDE-C, distance between the center of mass (COM) of IDE D1 and D4 domains, and dihedral angles (absolute values) between COM of IDE D1-D2 and COM of D3-D4 are shown below the ribbon presentation of IDE structures. (C) Structural comparison of IDE states aligned by IDE-N (top) or IDE-C (bottom), showing rigid body motion of IDE-N and IDE-C guided by the loop connecting IDE-N and IDE-C. (D) Structural basis of IDE open structure primed to capture insulin by size and charge complementarity. The boundaries for the substrate-binding catalytic chambers of IDE-N and IDE-C are marked by a dashed line. The color scale is set from −3 kT/e (red) to 3 kT/e (blue) calculated using APBS 2.1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The comparison of pC (cyan) with pO (magenta), (B) pC (cyan) with C (magenta), (C) pC (cyan) with O (magenta), (D) pO (purple) with O (magenta), and (E) pC (cyan), pO (magenta), and O (green). IDE is aligned by their IDE-C domain.
+
+### CryoEM structures of IDE dimer
 
 CryoEM analysis reveals four novel IDE dimer structures, one from insulin-bound IDE and three from apo-IDE (Figure 3A). The cryoEM structure of the insulin-bound IDE dimer at 3.7 Å resolution (Videos 1–2) shows that both IDE subunits adopt a similar but not identical partially closed (pC) state that differs from the previously reported closed-state IDE (Figure 3B, Figure 3—figure supplement 1, Supplementary file 4) (Guo et al., 2010; Malito et al., 2008b2008; Manolopoulou et al., 2009; Ren et al., 2010; Shen et al., 2006). The buried surface area between IDE-N and IDE-C and distance between center of mass (COM) of D1 and D4 in the cryoEM pC state is nearly identical to those in the closed-state IDE shown by X-ray crystallographic studies (Figure 3B, Supplementary file 4). However, this pC state has an approximately 2° decreased dihedral angle between the COM of four homologous domains, D1-D4, compared to those in the closed-state IDE (Figure 3B, Supplementary file 4), suggesting a potential gliding motion allows IDE to shift between partially closed and closed states. The position of insulin in the catalytic cleft of the cryoEM maps reveals that the IDE pC state is ready for catalysis. Thus, both IDE pC and C states are catalytically competent.
 
+![Video 1.](https://cdn.elifesciences.org/articles/33572/elife-33572-video1.mp4.jpg)
+
+**Video 1.:** Scheme 1: CryoEM structure of human insulin-bound dimeric IDE at 3.8 angstrom resolution. Electron density map colored in grey, IDE colored in cyan and in the ribbon representation, and insulin colored in yellow. Scheme 2: Cryo EM structure of human apo-IDE at 4.1 angstrom resolution that has one subunit in the partially-open state and the other in the open state. Electron density map in grey and IDE colored in pale green and in ribbon representation. This is the dominant conformational state of apo-IDE. Scheme 3: Cryo EM structure of human apo-IDE at 5.5 angstrom resolution that has both subunits in the open state. Electron density map in grey and IDE colored in magenta and in ribbon representation. Scheme 4: Cryo EM structure of human apo-IDE at 5.9 angstrom resolution that has both subunits in the partially-open state. Electron density map in grey and IDE colored in purple and in ribbon representation.
+
+![Video 2.](https://cdn.elifesciences.org/articles/33572/elife-33572-video2.mp4.jpg)
+
+**Video 2.:** The movie is 30 minutes long and is designed for the viewer to zip through residues by the control bar of the movie running software.
+
 The combinations of the IDE partial open (pO) and open (O) states results in three apo-IDE structures (Figure 3A). The IDE pO and O states differs from the pC and C states by 5 Å to 24 Å increases in the distance between D1 and D4 and 7° to 17° increases in the dihedral angle, respectively (Figure 3B, Figure 3—figure supplement 1, Supplementary file 4, Video 1). These changes result in decreased buried surface between IDE-N and IDE-C in pO and O states. The three conformers have resolution limits which correlated well with their relative populations: O/pO (4.2 Å, 73%), O/O (6.5 Å, 16%), and pO/pO (6.9 Å, 11%). Interestingly, the conformation of pO and O states in the pO/O IDE dimer differ significantly from those in pO/pO or O/O IDE dimer. Furthermore, two subunits within O/O or pO/pO states have noticeable differences in the distance and buried surface between IDE-N and IDE-C and the dihedral angle (Supplementary file 4). Such differences provide a potential explanation for the mechanism by which dimerization-induced allostery regulates the catalytic activity of IDE (Figure 3B, Figure 3—figure supplement 1) (McCord et al., 2013; Ralat et al., 2011; Song et al., 2010). Open-state IDE has an opening just wide enough to capture its substrates, for example, insulin, TGF-α, and MIP-1α/β, allowing the IDE catalytic chamber to attract these substrates with high dipole moment via charge complementarity (Figure 3D) (Guo et al., 2010; Manolopoulou et al., 2009; Ren et al., 2010).
 
-## SAXS analysis of IDE
+### SAXS analysis of IDE
 
 Our cryoEM structures reveal that only open-state IDE can capture its prototypical substrate, insulin, and release cleaved products. The interaction of open-state IDE with insulin likely facilitates the open-closed transition of IDE. We chose SAXS to test this hypothesis because SAXS provides the ensemble information regarding size and shape of molecules in solution (Blanchet and Svergun, 2013). To exclude IDE monomer and larger aggregates, we used size exclusion chromatography in-line with SAXS. Such a SAXS profile of the IDE dimer allows us to assess the distribution of open- and closed-state IDE in the presence and absence of insulin with better precision. We evaluated the experimental data with the prediction from our cryoEM models using the radius of gyration (Rg), the average of square center of mass distances of the molecule, and the distance distribution function, p(r) (Figure 4A, Figure 4—figure supplement 1). Our SAXS data showed that IDE in solution exist in equilibrium between open and partially open states and that insulin constrained the IDE dimer into mostly partially closed or closed states. This agrees with our observation in cryoEM.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig4-v2.jpg)
+
+**Figure 4.:** (A) Scattering curves from SEC-SAXS analysis using 2–3 mg IDE in the presence (left) or absence (right) of fourfold molar excess of insulin. Solid red and blue lines represent the predicted SAXS curves based on indicated IDE structures. (B) Time-resolved SAXS analysis of IDE-insulin interaction. Rapid mixing of IDE with insulin resulted in time-dependent reduction of Rg with τ = 0.1 s.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** IDE SAXS scattering profile (top), P(r) function distribution (middle), and Guinier plot (bottom) of IDE without EDTA (A), IDE with EDTA (B), and IDE with EDTA and insulin (C). The solution scattering of models is calculated and fitted to experiment data by CRYSOL. The P(r) distribution, the real space Rg, and Dmax, were calculated by GNOM. O/pO stands for cryoEM open/partial open state of IDE. C stands for IDE closed state from crystal structure, and pC/pC stands for cryoEM partial-closed/partial-closed state of IDE that is solved in the presence of insulin.
+
 Enzyme kinetic analysis estimated that insulin degradation by IDE occurs reasonably rapidly, up to ~2 per second (Manolopoulou et al., 2009). To assess whether the insulin-induced open-closed transition of IDE could limit insulin degradation by IDE, we used time-resolved SAXS analysis to obtain rate constants for the insulin-induced open-closed transition of IDE. Time-resolved SAXS experiments were done using a microfluidic laminar flow mixer adapted from the design initially developed for time resolved fluorescence studies (Park et al., 2008; Park et al., 2006). We found that the change in Rg value caused by the rapid mixing of IDE with insulin fit well with a single exponential decay with τ = 0.1 s (Figure 4B). Thus, the timeframe required for insulin to induce conformational switching from a high Rg state to a low Rg state is close to the rate of degradation of insulin by IDE (~2 s−1). This suggests that insulin-induced IDE open-closed transition is likely a key rate-limiting step for insulin clearance by IDE.
 
-## Substrate-induced conformational changes of IDE
+### Substrate-induced conformational changes of IDE
 
 In a previous crystal structure of the Fab1-bound closed apo-IDE, one subunit within the IDE dimer did not have the electron density for the IDE door subdomain (McCord et al., 2013). This leads to the hypothesis that IDE has a catalytic zinc-containing door subdomain that is partially unfolded and/or undergoes a rigid body motion. This hypothesis predicts that, under the crystallization conditions used for Fab1-bound closed apo-IDE crystal structure, the presence of IDE substrates would stabilize IDE door domain, rendering it visible. We thus solved crystal structures for Fab1-bound IDE structures in the presence of Aβ and insulin at 3.5 Å and 3.9 Å resolution, respectively (R/Rfree = 23/27%, R/free = 24/29%) and Fab1E- and insulin-bound IDE at 3.3 Å resolution (R/Rfree = 20/25%) (Supplementary file 1). Instead of being absent, as in the apo-IDE crystal structure (McCord et al., 2013), we found that the door subdomain of IDE is clearly visible in these structures (Figure 5A). In fact, these IDE structures are nearly identical to closed-state IDE determined in the previously reported insulin- or Aβ-bound IDE (RMSD = 0.46 and 0.56 Å, respectively, Figure 5—figure supplement 1). Consistent with that notion that this is induced by substrate, unfolded Aβ or insulin is clearly visible inside the IDE catalytic chamber. This hypothesis also predicts that the IDE door subdomains in the cryoEM structures of apo-IDE dimer would have the higher thermal B factors than those in that of insulin-bound IDE dimer. Indeed, while clearly visible, the IDE door subdomain, particularly the catalytic zinc-coordinating α4 helix, has significantly higher thermal B factors than in the insulin-bound structure (Figure 5B, Figure 5—figure supplement 2). The presence of insulin thus profoundly reduces the thermal B factors of IDE door subdomain (Figure 5B, Figure 5—figure supplement 2). Together, our data support the stabilization of the partial unfolding and/or motion of IDE catalytic domain by substrate binding. This lends credence to our hypothesis that IDE catalysis is assisted by its substrates and the importance of this region to the proper functioning of the enzyme.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig5-v2.jpg)
+
+**Figure 5.:** (A) Comparison of crystal structures of Fab1-bound IDE alone (PDB code: 4IDF), Fab1- and Aβ-bound IDE (PDB code: 4MIC) and Fab1- and insulin-bound IDE (PDB code: 5WOB). For simplicity, only the subunit of the dimeric IDE that has the profound change in IDE door subdomain is shown and Fab1 is not shown. (B) Thermal B factors of two IDE subunits within cryoEM IDE dimer structures of insulin-bound pC/pC state IDE (PDB code: 6B3Q) and pO/O apo-state IDE (PDB code: 6BF8). Averaged B factors of IDE door and D3 are shown for comparison. For simplicity, FabH11-E is not shown. (C, D) Changes in H/D exchange of IDE induced by inhibitors, BDM44768 and 6bK. The changes in H/D are mapped and the progress curve of regions with significant changes are shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Crystal structure of insulin- and Fab1-bound IDE (PDB code: 5WOB). Fab is not shown for clarity. (B) Insulin-bound IDE (PDB code: 2WBY). Alignment of the insulin (C) and IDE (D) from 5WOB and 2WBY. (E) Crystal structure of Aβ- and Fab1-bound IDE (PDB code: 4M1C). Fab is not shown for clarity. (F) Aβ-bound IDE (PDB code: 2G47). Alignment of Aβ(G) and IDE (H) from 4M1C and 2G47. IDE-C is colored in grey; IDE-N in Fab1- and substrate-bound IDE is colored in cyan; IDE-N in substrate-bound IDE is colored in green. Insulin A and B chains are colored in magenta and cyan, respectively. Aβ is colored in blue. The RMSD is calculated by PYMOL.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Thermal B factor distribution of cryoEM structures of FabH11-E- and insulin-bound IDE pC/pC (A), or apo IDE pO/pO (B), pO/O (C), and O/O (D) and that of crystal structures of Fab1-bound IDE in the absence (E) and presence of insulin (F). Averaged B factors of IDE door subdomain and D3 domain are shown for comparison in A-D. Only one dimer is shown in insulin- and Fab1-bound IDE structure as four IDE dimers in the asymmetric unit and are similar. Summary of average thermal B factors of various IDE domains for cryoEM structures (G) and crystal structures (H).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** The percentages of deuteration levels of each peptide fragment at various time points are shown as a heat map color-coded from blue (<10%) to red (>90%), as indicated at the bottom right of the figure. Each block represents a peptide segment analyzed at each of the six time points (from top to bottom: 10, 100, 1000, 10,000, 100,000, and 1000,000 s). Proline residues, and regions with no amide exchange data available are colored in gray. The structure features of IDE are shown above IDE sequences and colored according to their domains/subdomains.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** The percentages of deuteration levels of each peptide fragment at various time points are shown as a heat map color-coded from blue (<10%) to red (>90%), as indicated at the bottom right of the figure. Each block represents a peptide segment analyzed at each of the six time points (from top to bottom: 10, 100, 1000, 10,000, 100,000, and 1000,000 s). Proline residues, and regions with no amide exchange data available are colored in gray. The structure features of IDE are shown above IDE sequences and colored according to their domains/subdomains.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** Differences in deuteration levels in the free and BDM44768-bound (A) or 6bK-bound IDE (B) at various time points (from top to bottom: 10, 100, 1000, 10,000, 100,000, and 1000,000 s) are shown in a color-coded bar ranging from blue (−50%) to red (50%), as indicated at the bottom right of the figure. The structure features of IDE are shown above IDE sequences and colored according to their domains/subdomains.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** The standard deviation error bar to the WT IDE data is determined by three individual experiments.
 
 We then probed the dynamics of IDE door subdomain using two high-affinity IDE inhibitors, BDM44768 and 6bK by HDX-MS. Peptide amide HDX is a powerful tool to probe protein conformational dynamics because it allows evaluation of comparative solvent accessibility throughout the protein (Chung et al., 2011; Deprez-Poulain et al., 2015a; Li et al., 2011; Maianti et al., 2014; Marciano et al., 2014). These two inhibitors bind different sites to compete with substrate binding. BDM44768 binds the IDE catalytic zinc-binding site while 6bK binds to a site distinct from the catalytic cleft and the N-terminal substrate anchoring exosite. In addition to the expected HDX reduction where BDM44768 and 6bK directly bind, both inhibitors also decreased HDX in the IDE door subdomain (Figure 5C and D, Figure 5—figure supplements 3–6). These data support the dynamic nature of the catalytic cleft within IDE door subdomain and the importance of this region to the proper functioning of the enzyme.
 
 The combination of HDX-MS with cryoEM structures offers a framework for studying the detailed conformational changes of IDE induced by its substrates. Multiple regions in IDE exhibited a significant reduction in HDX upon insulin binding (Figure 6A, Figure 6—figure supplements 1–4). These regions correlate well with those that have higher thermal B factors in our cryoEM structures when insulin is absent (Figure 5B). These include known substrate-binding sites of IDE: the door subdomain that contains the zinc catalytic site in domain D1, exosite in domain D2 that anchors the N-terminal region of IDE substrates, and residues 821–830 in domain D4 that binds the P1' and P2' residues of IDE substrates after the scissile bond (McCord et al., 2013; Shen et al., 2006). Insulin also reduced HDX in regions that directly bind IDE door subdomain including the hydrophobic rich H loop, residues 668–673 and residues 821–830 (McCord et al., 2013). Together, these data support the conclusion that the binding of substrate stabilizes the IDE catalytic site. Furthermore, insulin binding also reduced the HDX at the IDE-N and IDE-C joining loop and its underlying α-helices, α11 and α20, which is consistent with our SAXS data showing that insulin facilitates the open-closed transition of IDE. A similar pattern of HDX reduction in IDE was also observed when IDE was mixed with Aβ1-40 (Figure 6B). However, subtle but noticeable differences exist that could aid the search to achieve substrate-selective modulation of IDE. For example, insulin stabilizes the entire IDE door subdomain (residues 170–237) while Aβ only stabilizes the zinc-binding portion of IDE door subdomain (residues 170–203) (Figure 6—figure supplements 3–4). Together, our data indicate that the binding of substrates promotes the open to closed transition of IDE and stabilizes the IDE catalytic site for substrate-assisted catalysis.
 
-## Mechanism for the processive degradation of insulin by IDE
+![Figure 6.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig6-v2.jpg)
+
+**Figure 6.:** (A) Major changes in H/D exchange of IDE induced by insulin. Changes in H/D are mapped onto IDE structure and the progress curve of regions with significant changes are shown. (B) Major changes in H/D exchange of IDE induced by Aβ.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The percentages of deuteration levels of each peptide fragment at various time points are shown as a heat map color-coded from blue (<10%) to red (>90%), as indicated at the bottom right of the figure. Each block represents a peptide segment analyzed at each of the six time points (from top to bottom: 10, 100, 1000, 10,000, 100,000, and 1000,000 s). Proline residues, and regions with no amide exchange data available are colored in gray. The structure features of IDE are shown above IDE sequences and colored according to their domains/subdomains.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** The percentages of deuteration levels of each peptide fragment at various time points are shown as a heat map color-coded from blue (<10%) to red (>90%), as indicated at the bottom right of the figure. Each block represents a peptide segment analyzed at each of the six time points (from top to bottom: 10, 100, 1000, 10,000, 100,000, and 1000,000 s). Proline residues, and regions with no amide exchange data available are colored in gray. The structure features of IDE are shown above IDE sequences and colored according to their domains/subdomains.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Differences in deuteration levels in the free and insulin-bound (A) or Aβ-bound IDE (B) at various time points (from top to bottom: 10, 100, 1000, 10,000, 100,000, and 1000,000 s) are shown in a color-coded bar ranging from blue (−50%) to red (50%), as indicated at the bottom right of the figure. The structure features of IDE are shown above IDE sequences and colored according to their domains/subdomains.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** The standard deviation error bar to the WT IDE data is determined by three individual experiments.
+
+### Mechanism for the processive degradation of insulin by IDE
 
 IDE processively cuts insulin into two pieces without breaking the disulfide bonds that hold the insulin A and B chains together (Figure 7A) (Manolopoulou et al., 2009). However, previously reported insulin-bound IDE structures could not explain the processivity of insulin degradation by IDE (Manolopoulou et al., 2009). In our cryoEM and crystal structures of insulin-bound IDE, extra electron density was clearly visible inside the IDE catalytic chamber (Figure 7B and C, Figure 7—figure supplement 1), and the insulin structure is quite different to that reported previously (Manolopoulou et al., 2009). The extra density fit well with regions of an unfolded insulin A or B chain with a known scissile bond properly residing at the IDE catalytic site (Figure 7A and B, Figure 7—figure supplement 2). Additional density is present for part of the other insulin chain, linked by the expected intermolecular disulfide bonds (Figure 7A, Figure 7—figure supplement 2). We also found that the N-terminus displays density characteristic of phenylalanine 1 of the insulin B chain, while other density corresponds to the ring structure formed by an intramolecular disulfide and a bulky tyrosine 14 side chain at the P1’ cleavage site, which are characteristic of the insulin A chain (Figure 7—figure supplement 2). Thus, this density has key features that can be contributed by either chain and can be best interpreted as an ensemble of unfolded insulin A and B chains, not belonging solely to either chain.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig7-v2.jpg)
+
+**Figure 7.:** (A) Cleavage sites of insulin by IDE. The initial cleavages and resulting fragments are shown. The red X marks the scissile bond revealed by insulin-bound IDE structures. (B) CryoEM structure of unfolded insulin inside IDE. The fitting of electron density at the catalytic sites with either insulin A (PDB code: 6B3Q) or B chain (PDB code: 6BFC) are shown. For simplicity, FabH11-E is not shown. (C) Structure of unfolded insulin inside IDE from insulin bound IDE-Fab1 complex (PDB code: 5WOB). For simplicity, only the fitting of insulin A chain is shown.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** All eight catalytic chambers from four IDE dimers in an asymmetric unit are shown. Insulin is colored in pink stick and the electron density around insulin is colored in yellow. The secondary structures and residues crucial for insulin binding of IDE is shown in grey.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/33572/elife-33572-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A, B) Two likely fit of either insulin A or B chain into the extra-density at the catalytic chamber of both IDE subunits. Only electron density within 3 Å around insulin are shown. The detailed features in the possible fit of extra electron density with unfolded insulin A (A) or B chain (B). The atoms were colored as N, blue; O, red; S, black; and C, magenta (insulin chain A), and C, cyan (insulin chain B). (C, D) The electron density of insulin and the surrounding residues of IDE. H110 and H112 are residues binding the catalytic Zn2+ ion while F115 and F820 form a hydrophobic pocket for the substrate binding. Electron density map is contoured to the level that the density around H110 and H112 (C) or insulin (D) is clearly visible to show the strength of the ligand density.
 
 Together, these structures provide the molecular basis of how IDE could processively cut insulin into two pieces without having to choose which insulin chain to cut first. Upon insulin capture by IDE catalytic chamber, IDE stochastically cuts whichever of either insulin A or B chain binds the IDE catalytic cleft first after insulin unfolding inside the catalytic chamber (Figure 8A). Our structures also reveal that the N-terminus of insulin interacts extensively with the IDE-N exosite while IDE-C makes substantial contacts with the C-terminal part of insulin. As the N- and C-terminal parts of insulin of the singly-cut insulin are still joined by the inter-molecular disulfide bond, insulin could still effectively keep IDE in the closed conformation. The subsequent unfolding of cleaved insulin leads to processive cleavage of the other insulin chain (Figure 8A). The resulting N- and C-terminal insulin fragments would then be released upon the closed to open transition of IDE.
 
@@ -104,6 +230,10 @@ Together, these structures provide the molecular basis of how IDE could processi
 
 By combining cryoEM, crystallography, SAXS, and HDX-MS, our integrative structural analysis reveals the molecular details of how IDE undergoes open to closed conformational switches for the capture, unfolding, and degradation of insulin and peptides that tend to form amyloid fibrils (Figure 8B). By rigid-body motion between IDE-N and IDE-C, IDE switches between O and pO states. This results in three possible conformers where the O/pO dimer is dominant (Figure 8B, Video 3). Only open-state IDE captures large peptide substrates (e.g. insulin and Aβ). The degree of opening and the charge distribution of the IDE catalytic chamber determine which peptides are captured by IDE depending on their size and high dipole moment (Figure 3D). The motions between open- and closed-state IDE, in conjunction with the selective interactions of the IDE catalytic chamber with these peptides, for example, IDE exosite with peptide's N-terminus, creates a force to selectively unfold amyloidogenic peptides. The exposed β-strand of these peptides then stabilizes the inherently unstable IDE catalytic center, leading to the degradation of amyloidogenic peptides by IDE.
 
+![Video 3.](https://cdn.elifesciences.org/articles/33572/elife-33572-video3.mp4.jpg)
+
+**Video 3.:** Only a few synchronized motions are depicted in such morph. Uncoordinated motions between two IDE subunits are not depicted even though they likely occur as well. Scheme 1: Morph to depict synchronized motion of IDE that one IDE subunit undergoes the transition from the open state to the partially open state while the other undergoes the transition in the opposite direction (from the partially open state to the open state). Scheme 2: Morph to depict synchronized motion of IDE that both IDE subunits undergoes the transition between the open state and the partially open state simultaneously. Scheme 3:Morph to depict synchronized motion of IDE that both IDE subunits undergoes the transition between the partially-open state and the partially closed state simultaneously. Scheme 4: Morph to depict synchronized motion of IDE that IDE subunits simultaneously undergoes the transition between the partially-open state, the closed state, and the partially closed state. We hypothesize that IDE undergoes such motion when its substrates are entrapped inside the catalytic chamber. Such motion would allow substrate unfolding, leading the substrate-assisted catalysis.
+
 The cryoEM structures of open-state IDE suggest the additional ways how IDE may work. Based on the size of catalytic chamber in the closed-state IDE, it is postulated that the entrapment of substrates inside the enclosed catalytic chamber of IDE is required for catalysis (Malito et al., 2008a; Shen et al., 2006). Thus, IDE only degrades peptides that are capable of fitting into the IDE catalytic chamber. This explains well why all of well-characterized IDE substrates are peptides less than 80 amino acids long (Malito et al., 2008a; Tang, 2016). This model has successfully guided the identification of CCL3 and CCL4 as novel IDE substrates and the combination of the oligomerization of these chemokines and their degradation by IDE modulates the effectiveness of the chemotactic gradient formed by these chemokines (Ren et al., 2010). It does not escape our attention that IDE should be able to degrade larger proteins if such proteins are readily captured by open-state IDE via the charge and surface complementarity and can effectively stabilize IDE catalytic cleft. We also envision that open-state IDE can bind α-synuclein oligomers and alter the kinetics of oligomerization process, which explains how IDE reduces the amyloid fibril formation of α-synuclein in vitro (Sharma et al., 2015).
 
 The catalytic activity of IDE is allosterically regulated by its substrate, ATP, and other partner proteins (McCord et al., 2013; Ralat et al., 2011; Song et al., 2003; Song et al., 2010; Tang, 2016). Based on our data, we put forth a model to explain how the equilibrium between IDE open and ‘closed’ states facilitates IDE allostery (for simplicity, we group structurally similar pO, pC, and C states into the ‘closed’ state that is distinct from open-state IDE). By the extensive contacts between IDE-C domains, IDE readily dimerizes (Kd =~ 10 nM) (Li et al., 2006; Shen et al., 2006). Our cryoEM data reveal that two IDE-N domains within the IDE dimer undergoes rigid body motion, allowing IDE to undergo the transition between the open and ‘closed’ states without the assistance of substrate (Figure 8B). Furthermore, the preferred O/pO combination indicates that the motion of IDE-N in one subunit of IDE dimer is not independent from the other (Figure 8B). We thus envision that the preferred combination of the open and ‘closed’ states within the IDE dimer would allow the substrate-induced closure of one subunit to promote the switch of the other subunit to the open state, allowing cleaved products to be released or substrate captured (Video 3 synchronized motion 1). Conversely, the opening of one subunit from the ‘closed’-state will promote the closure of the other for substrate unfolding and catalysis (Video 3 synchronized motion 1). Such motions can explain how substrate allosterically regulates IDE activity and how monomerization mutations render IDE less active as well as the lose the ATP- and substrate-mediated regulation (Ralat et al., 2011; Song et al., 2003; Song et al., 2010). This model is also consistent with the kinetic studies which show that phenylalanine 530 mutation to alanine at the linker joining IDE-N and IDE-C makes IDE hyperactive and alters allosteric regulation (McCord et al., 2013). Our HDX-MS data reveal that the binding of IDE substrate or inhibitor only affects the deuterium exchange at the IDE-N and IDE interface and the linker between IDE-N and IDE-C, not between the interface of two IDE subunits (Figures 5 and 6). Thus, our data does not offer an obvious path for substrate-facilitated allosteric communication between IDE subunits. We speculate that IDE allostery is mediated by the collective motions of many atoms in IDE, not by a subset of atoms within a defined path. The detailed mechanism for IDE allostery awaits future MD simulation studies.
@@ -114,34 +244,240 @@ The accumulation of toxic amyloid fibrils is associated with many human diseases
 
 ## Materials and methods
 
-## Protein
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Synthetic anti-IDE antibody Fab fragment (FabH11-E)</td>
+      <td>This study</td>
+      <td>NA</td>
+      <td>About 5 mg/ml for crystallization, and 0.15 mg/ml for cryoEM.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Synthetic anti-IDE antibody Fab fragment Fab1Fab1</td>
+      <td>(McCord et al., 2013)</td>
+      <td>NA</td>
+      <td>About 5 mg/ml for crystallization.</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein (Human)</td>
+      <td>Cysteine-free IDE</td>
+      <td>This study</td>
+      <td>NA</td>
+      <td>Described as above.</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein (Human)</td>
+      <td>Cysteine-free IDE-E111Q</td>
+      <td>This study</td>
+      <td>NA</td>
+      <td>Described as above.</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein (Human)</td>
+      <td>Insulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>234-279-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein (Human)</td>
+      <td>Amyloid β</td>
+      <td>(King et al., 2014)</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein (Human)</td>
+      <td>Pepsin</td>
+      <td>Sigma-Aldrich</td>
+      <td>P6887-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BDM44768</td>
+      <td>(Deprez-Poulain et al., 2015a)</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6bK</td>
+      <td>(Maianti et al., 2014)</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>D2O</td>
+      <td>Cambridge Isotope Laboratories, Inc.</td>
+      <td>DLM-4–1L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leginon 3.3</td>
+      <td>(Suloway et al., 2005)</td>
+      <td>NA</td>
+      <td>http://emg.nysbc.org/redmine/projects/leginon/wiki/Leginon_Homepage</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DoGpicker</td>
+      <td>(Voss et al., 2009)</td>
+      <td>NA</td>
+      <td>http://emg.nysbc.org/redmine/projects/software/wiki/DoGpicker</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>(Zheng et al., 2017)</td>
+      <td>NA</td>
+      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relion2.0</td>
+      <td>(Scheres, 2012)</td>
+      <td>NA</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/relion/index.php/Main_Page</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relion2.1</td>
+      <td>(Scheres, 2012)</td>
+      <td>NA</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/relion/index.php/Main_Page</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>3DFSC</td>
+      <td>(Tan et al., 2017)</td>
+      <td>NA</td>
+      <td>https://github.com/nysbc/Anisotropy</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF ChimeraX</td>
+      <td>(Goddard et al., 2018)</td>
+      <td>NA</td>
+      <td>https://www.cgl.ucsf.edu/chimerax/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>(Pettersen et al., 2004)</td>
+      <td>NA</td>
+      <td>https://www.cgl.ucsf.edu/chimera</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>(Adams et al., 2010)</td>
+      <td>NA</td>
+      <td>https://www.phenix-online.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phaser-MR</td>
+      <td>(McCoy et al., 2007)</td>
+      <td>NA</td>
+      <td>https://www.phenix-online.org/documentation/tutorials/mr.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>(Emsley et al., 2010a)</td>
+      <td>NA</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MolProbity</td>
+      <td>(Chen et al., 2010)</td>
+      <td>NA</td>
+      <td>http://www.ks.uiuc.edu/Research/mdff/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PRIMUS</td>
+      <td>(Konarev et al., 2003)</td>
+      <td>NA</td>
+      <td>https://www.embl-hamburg.de/biosaxs/primus.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CRYSOL</td>
+      <td>(Svergun et al., 1995)</td>
+      <td>NA</td>
+      <td>https://www.embl-hamburg.de/biosaxs/crysol.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GNOM</td>
+      <td>(Svergun, 1992)</td>
+      <td>NA</td>
+      <td>https://www.embl-hamburg.de/biosaxs/gnom.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SEQUEST/Proteome Discoverer Software</td>
+      <td>ThermoFisher Scientific</td>
+      <td>NA</td>
+      <td>https://www.thermofisher.com/order/catalog/product/OPTON-30795</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HDEXaminer</td>
+      <td>Sierra Analytics</td>
+      <td>NA</td>
+      <td>http://massspec.com/hdexaminer/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein
 
 Wild-type human IDE, cysteine-free IDE (IDE-CF), and catalytically inactive IDE mutant, IDE-CF-E111Q were expressed in E. coli BL21 (DE3) cells (at 25°C and 20 hr, 0.5 mM IPTG induction using T7 medium). His-tagged, biotinylated IDE was expressed in E. coli BL21 (DE3) that carried two plasmids, one for IDE with an N-terminal His-tag and a C-terminal AviTag (GLNDIFEAQKIEWHE), and the other for E. coli BirA, a biotin ligase that transfers biotin to AviTag. Recombinant IDE proteins were purified by Ni-NTA, source-Q, and Superdex 200 columns as previously described (Manolopoulou et al., 2009). Aβ1-40 was synthesized at a 0.25 mmol scale using Fmoc and HBTU/HOBt chemistry on an Applied Biosystems 433A instrument and purified by RP-HPLC, lyophilized, and stored at −20°C under Argon as described (King et al., 2014; Sohma et al., 2004). Insulin was purchased from SIGMA (91077C).
 
-## IDE-binding synthetic antibody
+### IDE-binding synthetic antibody
 
 We screened antigen-binding fragments (Fab) from a phage-display library using immobilized biotinylated IDE as previously described (Miller et al., 2012). To obtain Fabs binding to an epitope distinct from the previously reported IDE-Fab named Fab1 (McCord et al., 2013), we used 1 μM Fab1 as a competitor for panning in the final round of selection. In total, 18 new IDE binding Fabs were isolated and characterized. Of those, IDE-FabH11 was used in structural studies. Elbow-enhanced Fab1 (Fab1E) and FabH11-E were engineered to modify the switch residue region of the Fab heavy chain (wild-type sequence: 109VTVSSASTKGP119) to VTVFNQIKGP (Bailey et al., 2018). Fabs were expressed in E. coli strain BL21(DE3) or 55244 and purified using a HiTrap protein-G HP column or Protein-G-A1 column as described (Bailey et al., 2014; McCord et al., 2013). Surface plasmon resonance measurements were carried out at 20°C on a Biacore 3000 by immobilizing His-tagged IDE onto a Ni-NTA chip (GE Healthcare) and then injecting 3.3–100 nM of the Fab at a flow rate of 30 μl/min as previously described (Koide et al., 2012; Zhang et al., 2012).
 
-## Enzymatic activity assays
+### Enzymatic activity assays
 
 A fluorogenic bradykinin-mimetic substrate of IDE, substrate V (7-methoxycoumarin-4-yl-acetyl-RPPGF-SAFK-2,4-dinitrophenyl, R and D Systems), was used to measure the enzymatic activity of IDE on a Tecan Safire microplate reader using an excitation wavelength of 327 nm and emission wavelength of 395 nm (McCord et al., 2013). Reactions were carried out at 37°C, using 5 µM substrate V in 100 µl of 50 mM potassium phosphate (pH 7.3) with the addition of 0.6 nM IDE in the presence or absence of 12 nM FabH11. The degradation of substrate V was assessed by monitoring fluorescence increase and the initial velocity was calculated using linear regression after background subtraction. The standard deviation was derived from three individual experiments.
 
-## Crystallography
+### Crystallography
 
 IDE-CF-E111Q was first incubated with Aβ or insulin in a 1:10 or 1:2 ratio, respectively, at 18°C overnight (~16–18 hr) and IDE-substrate complex was purified using Superdex 200 column. This process was repeated three times. Substrate-bound IDE was then mixed in an equimolar ratio with Fab1 or Fab1E and substrate- and Fab-bound IDE was purified using Superdex 200 column. The resulting complexes were crystallized in 0.1M sodium cacodylate (pH6.5), 0.2M MgCl2, 10% PEG-3000, and 0.01% ethyl acetate at 18°C by hanging drop vapor diffusion. Crystals formed within 2–3 days. To crystallize Fab(H11-E)-bound IDE, IDE-CF was purified by Superdex 200 three times before mixing with extra molar FabH11-E and FabH11-E-bound IDE was purified by Superdex 200. Such protein complex was crystallized in 0.088M Ammonium citrate tribasic, pH 7, 10% w/v PEG3350, 0.02M ethylenediaminetetraacetic disodium salt dihydrate at 18°C by hanging drop vapor diffusion. Crystals formed in about a week. For data collection, crystals were equilibrated in reservoir buffer with 30% glycerol and flash frozen in liquid nitrogen. Diffraction data were collected at 100K on the 19-ID beamline at Argonne National Laboratory. Data sets were processed using HKL2000 and the CCP4 suite. The structures of were determined by molecular replacement. For substrate-bound Fab1-bound IDE structure, the unbound IDE-Fab1 complex (4IOF) was used as a search model and no NCS average for C2 symmetry of IDE dimer was applied during the refinement to avoid the bias. For the crystal structure of FabH11-E-bound IDE, the closed-state IDE (2WBY) and Fab in unbound IDE-Fab1 complex (4IOF) were used as the search model. Model building and refinement were performed by using REFMAC, PHENIX, and COOT (Adams et al., 2011; Emsley et al., 2010b; Potterton et al., 2002). The final model for Aβ-IDE-Fab1 (pdb = 4M1C) has Rwork = 23% and Rfree = 27%, that for Insulin-IDE-Fab1 (pdb = 5 WOB) has Rwork = 24% and Rfree = 29% and that for IDE-FabH11-E (pdb = 5 UOC) has Rwork = 22% and Rfree = 27%. The data and refinement statistics are listed on Supplementary file 1. The key residues involving in the interaction of IDE with FabH11-E was calculated using PDBePISA (Krissinel and Henrick, 2007).
 
-## CryoEM
+### CryoEM
 
 Purified wild-type IDE was further purified by Superdex 200 chromatography using buffer containing 20 mM HEPES, pH 7.2, 300 mM NaCl, and 20 mM EDTA and then mixed with FabH11-E at an equal molar ratio. FabH11-E-IDE complex was purified by Superdex 200 chromatography in the absence or presence of five-fold molar excess of insulin. Insulin-bound IDE-FabH11-E and IDE-FabH11-E cryoEM grids were prepared using either a manual plunger or Spotiton 1.0 (Dandey et al., 2018; Razinkov et al., 2016). For manual plunging, 300 mesh carbon or gold lacey grids, prepared in house (Fukami and Adachi, 1965), were plasma cleaned using O2 and H2 for 30 s using a Solarus plasma cleaner (Gatan). 3 μl of sample was applied to the grid and manually blotted with filter paper for 3 s from the back of the grids followed immediately by plunging into liquid ethane. For Spotiton prepared grids, 300 mesh carbon or gold lacey nanowire grids were plasma cleaned with O2 and H2 for 10 secs using a Solarus plasma cleaner (Gatan). 6 μl of protein sample was aspirated by the Spotiton piezo tip and about 80 × 50 pl of sample was delivered to the grid as it passes the piezo tip en route to being plunged into liquid ethane. All images were acquired using a Titan Krios microscope (FEI) operated at 300KeV with a Gatan K2 direct electron detector (Gatan) in counting mode. Images were automatically acquired using Leginon (Suloway et al., 2005) using collection parameters as shown in Supplementary file 2. IDE-FabH11-E showed highly preferred orientation in vitreous ice. Thus, images were acquired with the grid tilted at an angle to the electron beam, which allowed better sampling of other orientations (Figure 2—figure supplement 9B) (Tan et al., 2017). Images were processed using software integrated into the Appion (Lander et al., 2009) pipeline except where stated. Frames were aligned using MotionCor2 software with dose weighting (Zheng et al., 2017), particles were picked and extracted automatically using DoGpicker (Voss et al., 2009). Particle stacks were then passed to RELION2.1 (Scheres, 2012) and processed through several rounds of 2D and 3D classification. Example images and 2D class averages are shown in Figure 2—figure supplements 5–7. Selected classes were then processed for high resolution 3D refinement (Figure 2—figure supplement 8). The resolution was further improved by focused classification with signal subtraction. The mask was created in Chimera (Pettersen et al., 2004) with the Fab regions set to value zero and outside Fab regions set to value one. Subsequently the masked refinement was carried out with C1 symmetry using RELION 2.1 (Scheres, 2012). The final resolution was estimated using Fourier Shell Correlation (FSC = 0.143) in RELION 2.1 (Figure 2—figure supplement 9C and D). The anisotropy was analyzed using 3DFSC (Tan et al., 2017). The cryoEM data collection and processing statistics are listed in Supplementary file 2. The structural models were built using a combination of high-resolution IDE dimer structure (PDB = 2 cww) and FabH11-E-bound IDE dimer. The density fitting and structure refinement was done using UCSF CHIMERA (Pettersen et al., 2004), COOT (Emsley and Cowtan, 2004; Emsley et al., 2010b), and PHENIX (Adams et al., 2011). The refinement statistics are listed in Supplementary file 3.
 
-## SAXS
+### SAXS
 
 SAXS data were collected at the BioCAT/18ID beamline at Advanced Photon Source, Argonne National Laboratory (Chicago, USA) (Fischetti et al., 2004) using the photon counting PILATUS 3 1M at room temperature (23°C) and an incident X-ray wavelength of 1.03 Å. The 3.5 m sample-to-detector distance yielded a range of 0.005–0.33 Å−1 for the momentum transfer (q = 4π sinθ/λ where 2θ is the scattered angle between the incident and scattered beam and λ the X-ray wavelength). For size exclusion chromatography (SEC)-SAXS, 2–3 mg IDE was loaded onto a GE Superdex 200 10/300G in the buffer containing 20 mM Tris, pH 8.0, 100 mM NaCl and the eluates were immediately passed through X-ray beam. To prepare zinc-free catalytic inactive IDE, IDE was first washed with about 2M NaCl and then dialyzed against 500 ml 20 mM Tris pH8.0, 100 mM NaCl, 20 mM EDTA and subsequently purified by Superdex 200 column using the buffer containing 20 mM Tris, pH 8.0, 100 mM NaCl, 20 mM EDTA. Greater than 15 measurements around IDE protein peak were collected in each run for subsequent analysis. Time-resolved SAXS experiments were done using a microfluidic laminar flow mixer adapted from the design initially made for time resolved fluorescence studies (Park et al., 2008; Park et al., 2006). The mixer chip consisted of 5 inlets: a center channel for IDE solution, two diagonal channels for identical buffers as the IDE solution and two side channels for buffer containing insulin. Syringe pumps (Model 511, New Era Pump Systems Inc., NY) were used to inject sample and buffer solutions continuously into the mixer inlets. Per measurement, 5–10 mg IDE injected from the center channel were compressed into a thin sheet by the diagonal and side channel flows as a result of the hydrodynamic focusing effect. Kinetic reaction was triggered by diffusion of twofold molar excess of insulin into the jet of IDE from adjacent flow layers of buffer above and below. The thickness of the sheet was controlled by the flow rate ratios of the inlet channels. The observation channel is 1 mm deep (i.e. X-ray pathlength), 0.2 mm wide and 25 mm long. During the flow experiment, the observation channel was sampled by a grid scan of 10 × 30 positions and SAXS data was collected at each grid point. The total flow rate determined the maximum accessible time corresponding to the exit end of the observation channel. The time window of 2 s was performed by using the flow rates of 68, 2, 9 μL/min for side, diagonal and center syringe pumps, respectively. Increasing the flow rates to 682, 22 and 90 μL/min allows the kinetic study in the time window shorter than 0.2 s. We did three mixing experiments: i) IDE bound with insulin mixing with insulin buffer; ii) IDE mixing with insulin free buffer; and iii) IDE mixing with buffer containing insulin. The mixing experiments i and ii were done using flow rates for 2 s time window while the experiment iii was done for both 2 s and 0.2 s time windows. The SAXS data reduction and analyses were done using ATSAS package (Petoukhov et al., 2012), PRIMUS (Konarev et al., 2003) and CRYSOL (Svergun et al., 1995). Comparison of experimental scattering profiles with calculated profiles from high-resolution atomic models was done using CRYSOL (Svergun et al., 1995). For time-resolved experiments, in order to reduce the effects of the varied parasitic scattering in grid scans, radius of gyration values were obtained using the program GNOM (Petoukhov et al., 2012).
 
-## Hydrogen-deuterium exchange mass spectrometry
+### Hydrogen-deuterium exchange mass spectrometry
 
 Prior to carrying out hydrogen/deuterium exchange experiments, the optimal quench condition that generated the best sequence coverage map of IDE were established as previously described (Marsh et al., 2013). IDE stock solutions were prepared in 8.3 mM Tris-HCl, 50 m NaCl, 2.1% DMSO, pH7.2 H2O buffer by mixing 15 μM of IDE with 30 μM FabH11-E, 150 μM of Insulin, 150 μM of 6bk, 150 μM of BDM44768 or 300 μM of Aβ, incubating at room temperature for 30 min, then keep on ice for 15 min. Functional hydrogen-deuterium exchange reactions were initiated by dilution of 3 μl of stock solution into 9 μl of D2O buffer (8.3 mM Tris, 50 mM NaCl, pDREAD 7.2) and incubation at 0°C. The exchange reactions were quenched after various exchange time points (10, 100, 1000, 10,000, 100,000 s at 0°C, and 100,000 s at RT) by adding 18 μl of ice-cold 0.8% formic acid, 1.6M GuHCl, 16.6% glycerol for a final pH of 2.5. Quenched samples were then immediately frozen on dry ice and stored at −80°C before LC/MS analysis. Non-deuterated and equilibrium-deuterated control samples are also prepared as previously described (Tsalkova et al., 2012). The frozen samples were thawed automatically on a cryogenic autosampler(Woods and Hamuro, 2001) at 4°C, and digested on an immobilized pepsin column (16 μl bed volume). Proteolytic products were collected on a C18 trap column (Michrom Magic C18 AQ 0.2 × 1 mm) for 1 min desalting and separated using a reverse phase analytical column (Michrom Magic C18 AQ 0.2 × 50 mm, 3 μm) with a acetonitrile linear gradient (6.4%–38.4% over 30 min). MS analysis was performed on an OrbiTrap Elite Mass Spectrometer (ThermoFisher Scientific, San Jose, CA). Instruments settings was optimized to minimize the back-exchange(Walters et al., 2012). The data was acquired in both data-dependent MS/MS mode and MS1 profile mode and Proteome Discoverer software (ThermoFisher) was used to identify proteolytic peptides. The deuterium content of the peptides for each time point was calculated by DXMS Explorer (Sierra Analytics Inc, Modesto, CA), with corrections for back-exchange (Zhang and Smith, 1993). H/D exchange experiments performed using our automated system typically produce deuteron incorporation measurements with a standard deviation of less than 2% of the mean of triplicate determinations (Chang et al., 2015; Hsu et al., 2009a; Hsu et al., 2009b). In the present work, just as in our previous studies, only changes in deuteration level greater than 10% were considered significant (Burke et al., 2009; Hamuro et al., 2004). Heat maps were created using in house program that sub-localize HDX down to smaller fragments using all overlapping peptides.
 
-## Data and software availability
+### Data and software availability
 
 The cryoEM maps have been deposited in the Electron Microscopy Data Bank with accession codes EMD-7041, EMD-7092, EMD-7065, EMD-7090, EMD-7062, EMD-7093, EMD-7066, and EMD-7091. The atomic models have been deposited in the Protein Data Bank under accession code EMDB 6B3Q, 6BFC, 6BF8, 6B7Y, 6BF6, 6B70, 6BF9, 6B7Z and 6BF7. The crystal structures of Fab1-bound IDE in complex with insulin or Aβ have been deposited in the Protein Data Bank under access code 5WOB and 4M1C, respectively. The crystal structure of Fab1-bound IDE in complex with insulin and Fab1E has been deposited in the Protein Data Bank under access code 5CJO. The crystal structures of IDE in complex with FabH11-E has been deposited in the Protein Data Bank under access code 5UOE.

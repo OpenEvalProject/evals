@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.30697.001 A sudden aversive event produces escape behaviors, an innate response essential for survival in virtually all-animal species. Nuclei including the lateral habenula (LHb), the lateral hypothalamus (LH), and the midbrain are not only reciprocally connected, but also respond to negative events contributing to goal-directed behaviors. However, whether aversion encoding requires these neural circuits to ultimately prompt escape behaviors remains unclear. We observe that aversive stimuli, including foot-shocks, excite LHb neurons and promote escape behaviors in mice. The foot-shock-driven excitation within the LHb requires glutamatergic signaling from the LH, but not from the midbrain. This hypothalamic excitatory projection predominates over LHb neurons monosynaptically innervating aversion-encoding midbrain GABA cells. Finally, the selective chemogenetic silencing of the LH-to-LHb pathway impairs aversion-driven escape behaviors. These findings unveil a habenular neurocircuitry devoted to encode external threats and the consequent escape; a process that, if disrupted, may compromise the animal’s survival.
+A sudden aversive event produces escape behaviors, an innate response essential for survival in virtually all-animal species. Nuclei including the lateral habenula (LHb), the lateral hypothalamus (LH), and the midbrain are not only reciprocally connected, but also respond to negative events contributing to goal-directed behaviors. However, whether aversion encoding requires these neural circuits to ultimately prompt escape behaviors remains unclear. We observe that aversive stimuli, including foot-shocks, excite LHb neurons and promote escape behaviors in mice. The foot-shock-driven excitation within the LHb requires glutamatergic signaling from the LH, but not from the midbrain. This hypothalamic excitatory projection predominates over LHb neurons monosynaptically innervating aversion-encoding midbrain GABA cells. Finally, the selective chemogenetic silencing of the LH-to-LHb pathway impairs aversion-driven escape behaviors. These findings unveil a habenular neurocircuitry devoted to encode external threats and the consequent escape; a process that, if disrupted, may compromise the animal’s survival.
 
 ## Introduction
 
@@ -38,29 +38,81 @@ To test this hypothesis, we use a combination of electrophysiology with chemo- a
 
 ## Results
 
-## Aversive stimuli lead to glutamate-driven excitation of lateral habenula
+### Aversive stimuli lead to glutamate-driven excitation of lateral habenula
 
 To model aversive escape behaviors, we placed mice in a two-compartment chamber and delivered a series of unpredicted foot-shocks (30/session). Across trials, mice rapidly escaped to the compartment opposite to the one of shock delivery (Figure 1A). To explore habenula’s contribution to such behavioral response, we LHb-targeted a viral construct coding for the calcium sensor GCamp6f (rAAV-hSyn-GCamp6f-eGFP) (Figure 1A). Positioning a multimode optical probe above the LHb allowed fluorescence transients detection, which represent bouts of neuronal activity (Cui et al., 2014). Foot-shocks (0.3 mA), and aversive air-puffs (painless stimulus), evoked escape behavior (i.e. phasic increase in locomotion) along with time-locked fluorescent transients within the LHb (Figure 1A, Figure 1—figure supplement 1A–B). Notably, a progressive increase in locomotion in absence of foot-shock, artificially promoted using the rotarod, did not modify the fluorescence signal measured from the LHb (Figure 1—figure supplement 1C). Therefore, simultaneous monitoring of fluorescence and behavior suggests a relationship between LHb activity and escape (Lawson et al., 2014; Matsumoto and Hikosaka, 2007).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/30697/elife-30697-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental timeline, representative histogram and bar graphs reporting foot-shock (Fs)-driven mouse behavior (latency to escape and failures) (N = 10). Bottom, GCamp6f expression in LHb and Fs-mediated Ca2+ transients (N = 3, one way ANOVA RM, F = 14.24, ***p<0.0001). (B) Spike waveform and recording location of a LHb neuron (arrow, pontamine sky blue dye). Representative trace, raster plot and peristimulus time histogram (PSTH) for Fs-evoked excitation (Fs, 0.5 s, 3mA, ISI: 5 s). Bottom. PSTH reporting average spike counting and pie-chart for Fs-excited LHb neurons ((Firing rate/10 ms-average 2 s pre-shock)/Total trials) (N/n = 7/44). (C) Analysis of Fs excitation in LHb neurons. (D) Territorial distribution of Fs-excited and not-excited neurons. (E) PSTHs reporting Fs responses before/after local infusion of NBQX/AP5. (F) Bar graph and scatter plot for shock-driven activity before/after NBQX/AP5 (N/n = 6/10, paired t-test, t = 5.05; ***p=0.0007). Results are reported as mean ±S.E.M. N = mice; n = cells. 3V, 3rd ventricle, MHb, medial habenula. See Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/30697/elife-30697-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Timeline of the experiments, representative coronal sections showing the GCamp6f expression and the fiber placement (red dashed line) in the LHb. Bottom. Schematic of a LHb-containing coronal section with the fibers placement (red crosses, N = 7). (B) Representative trace and averaged time-course graph with plots showing the calcium dynamics upon an unpredicted air-puff (5 trials per mouse) eject on the mouse-tail (N = 4, One way Anova, F = 7.13, *p=0.03). (C) Representative calcium transients (green, average of 10 trials after shock and 5 during rotarod from a single mouse) and the relative change in locomotion (black). Right, bar graphs and scatter plot reporting the maximal normalized calcium transients at the peak of locomotion (N = 2, Shock versus rotarod, unpaired t-test, t = 3.44, **p=0.0018; Shock versus baseline, unpaired t-test, t = 6.27, †p<0.0001; Rotarod versus baseline, unpaired t-test, t = 1.002, p=0.34). Results are reported as mean ±S.E.M. N = mice. 3V, third ventricle, MHb, medial habenula. See also Figure 1. See Figure 1—figure supplement 1—source data 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/30697/elife-30697-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematics of recordings, traces and bar graph showing the firing pattern of LHb neurons (N/n = 7/44). (B) Bar graphs and single plots reporting electrophysiological properties of LHb neuronal firing activity. (C) Examples of baseline activity and FsE responses (PSTHs) acquired respectively from a Fs not excited (gray) and a Fs excited (black) neuron. (D) Bar graphs and plots reporting the electrophysiological properties of the LHb Fs excited (n = 23) and not-excited (n = 21) neurons. Note the typical irregular and low bursty firing activity of the LHb Fs encoding neurons (Unpaired t-test, firing rate, t = 4.11, ***p=0.0002; spikes in burst%, t = 2.63, *p=0.011; coefficient of variation%, t = 4.83, ***p<0.0001). (E) Schematic of recordings and local pharmacology. Time-course graph reporting the overall effect on firing activity of NBQX/AP5 (N/n = 6/10; One way ANOVA RM, F = 0.46, p=0.61) and vehicle local infusion (N/n = 2/5; One way ANOVA RM, F = 0.51, p=0.61). (F) Traces, averaged PSTHs, bar graph and plots showing the Fs response on LHb neurons before and after local infusion of vehicle (N/n = 2/5, paired t-test, t = 0.66, p=0.54). N = mice, n-cells. See also Figure 1. See Figure 1—figure supplement 2—source data 1.
+
 To examine aversive stimuli-mediated single-cell LHb dynamics, we analyzed single-unit activities in anesthetized mice. Foot-shocks (hindpaw delivery) led to fast (~60 ms) and phasic increase (~100 ms) in action potentials in ~50% of neurons recorded across the LHb (Figure 1A–D, Figure 1—figure supplement 2A–D). Local infusion of glutamate receptors antagonists (APV and NBQX) diminished foot-shock-driven excitation of LHb neurons, without altering baseline firing, indicating the glutamatergic nature of the response (Figure 1E, Figure 1F, Figure 1—figure supplement 2E–F). Altogether, aversive stimuli generate a rapid glutamate-dependent excitation of a subset of LHb neurons.
 
-## Control of aversion processing by hypothalamic-habenular projections
+### Control of aversion processing by hypothalamic-habenular projections
 
 What exact circuit architecture governs aversion-driven excitation of LHb? Glutamatergic projections from the medial ventral tegmentum (mVTA) in the midbrain and the lateral hypothalamus (LH) innervate almost-entirely the LHb (Stamatakis et al., 2013; Herkenham and Nauta, 1977; Barker et al., 2016; Kunwar et al., 2015; Root et al., 2014a; 2014b; Stamatakis et al., 2016), indicating their potential implication in conveying aversive information onto habenular neurons.
 
 Firstly, we examined mVTA and LH inputs synaptic nature onto LHb. In different sets of mice, we virally expressed either in mVTA or LH the excitatory opsin from Chloromonas oogama (rAAV-hSyn-CoChR-eGFP) (Klapoetke et al., 2014). Optical stimulation (1 ms; 470 nm) of CoChR-expressing mVTA or LH terminals (VTA→LHb and LH→LHb respectively), in acute slices, evoked inward glutamatergic currents onto recorded neurons (−50 mV) across the LHb (Figure 2A–B). Moreover, in behaving mice, optogenetic activation of either VTA→LHb or LH→LHb was sufficient to produce place aversion (Figure 2—figure supplement 1A–B) (Root et al., 2014a; Stamatakis et al., 2016). This supports the notion that VTA→LHb and/or LH→LHb can underlie aversive processing in the LHb and escape behaviors. We then tested whether both VTA→LHb and LH→LHb projections are, not only sufficient, but also necessary.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/30697/elife-30697-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental timeline, representative images for CoChR expression and recording map in LHb. Bottom. Sample currents and amplitude bar graphs for VTA→LHb terminals optical stimulation at rest (N/n = 4/11). (B) Same as (a) but for LH→LHb (N/n = 5/9). (C) Experimental timeline and DREADDi expression in mVTA somata and LHb terminals. Averaged PSTH, bar graph and scatter plot for Fs-driven excitation before/after local CNO (CNO, 100 µM; N/n = 4/7; paired t-test, t = 0.69 p=0.51). (D) Same as (c) but for LH→LHb projections (N/n = 5/7; paired t-test, t = 2.45 *p=0.04). Results are reported as mean ± S.E.M. N = mice; n = cells. 3V, third ventricle, MHb, medial habenula, EPN, entopeduncular nucleus, PAG, periaqueductal gray, IPN, interpeduncular nucleus, VTA, ventral tegmental area, Sn, substantia nigra, VmH, ventral medial hypothalamus. See Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/30697/elife-30697-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of the real time place aversion test and sample pictures reporting CoChR expression in the injection site and in the LHb. Red dashed lines highlight the fiber track. Bottom, LHb-containing coronal section reporting the placement of the fibers in CoChR injected mice. (B) Tracks of single mice performances in the three groups tested. Each time the mouse crossed in the light-paired compartment blue light stimulation was triggered (20 Hz). Bottom, bar graphs and plots showing % of total time spent the laser-paired compartment (one way ANOVA, F = 35.51, ***p<0.0001) and the total distance travelled (one way ANOVA, F = 1.87, p=0.19) in the three groups (CTRL vs LHCoChR vs mVTACoChR, N = 6, 6, 4). N = mice. 3V, third ventricle, MHb, medial habenula, EPN, entopeduncular nucleus, IPN, interpeduncular nucleus, VTA, ventral tegmental area, Sn, substantia nigra, VmH, ventral medial hypothalamus. See also Figure 2. See Figure 2—figure supplement 1—source data 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/30697/elife-30697-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Experimental timeline and representative pictures showing the expression of CoChR and DREADDi in the injection (LH) and recording sites (LHb). (B) Traces and time-course plots of LH opto-evoked currents before (a) and after (b) CNO application in a LHb neuron recorded in acute slices. Bar graph and plots reporting the overall decrease of the opto-evoked excitatory post-synaptic currents (oEPSCs) upon CNO application (N/n = 3/6 paired t-test, t = 3.97, *p=0.01). (C) Sample traces and averaged graph showing the effect of LH terminals DREADDi activation on oEPSCs train in LHb neurons (two way ANOVA RM, interaction: F = 3.65, *p=0.01). (D) Schematics of the double-barrel system allowing a local infusion of CNO in close proximity of the recording site. The time-course graph reports the effect of DREADDi activation on the firing activity of LHb neurons in mice expressing DREADDi in mVTA (N/n = 4/7, one way ANOVA RM, F = 0.57, p=0.57) or LH (N/n = 5/7, one way ANOVA RM, F = 0.26, p=0.72). N = mice, n = cells. 3V, third ventricle, MHb, medial habenula, EPN, entopeduncular nucleus, VmH, ventral medial hypothalamus. See Figure 2—figure supplement 2—source data 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/30697/elife-30697-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Schematic of the experiments: an HSV-based (HSV-EF1α-ChR2-mCherry) virus was injected in LHb allowing retro-transport of ChR2 in all neurons projecting to the LHb. Recordings were performed in LH and neurons identified by blue light (1 ms, 470 nm) stimulation delivered through an optrode. Representative pictures showing injection site and ChR2 transfection in LH neurons. (B) Sample recording and PSTHs built from a LHb-projecting LH neuron. The opto-stimulation (10 pulses, 10 Hz) evoked time-locked spikes. (C) Averaged spike waveform, bar graphs of firing rate and coefficient of variation expressed in % (N/n = 4/14). (D) Averaged PSTHs and pie-chart highlighting the Fs response of LHb-projecting LH neurons (Fs-excited/not excited = 11/3 neurons). (E) Electrophysiological properties of the LH neuronal excitation upon foot-shock. N = mice, n = cells. See also Figure 2. See Figure 2—figure supplement 3—source data 1.
+
 We targeted the mVTA or the LH with a viral construct coding for the inhibitory designer receptors exclusively-activated by designer drugs, DREADDi (rAAV8-hSyn-hM4Di-mCherry), to silence VTA→LHb LHb or LH→LHb inputs (Zhu and Roth, 2014) (Figure 2C and Figure 2D). To ascertain the efficacy of DREADDi in suppressing input-specific presynaptic release, we co-infused two viral vectors coding for CoChR and DREADDi within the LH (Figure 2—figure supplement 2A). Indeed, in acute slices, application of the DREADDi agonist clozapine-N-oxide (CNO) promptly reduced LH→LHb light-evoked excitatory postsynaptic currents and increased the paired-pulse ratios (Figure 2—figure supplement 2B–C). When recording LHb neuronal activity in vivo in anesthetized animals, local CNO infusion in mice expressing DREADDi in the LH→LHb, but not in the VTA→LHb, significantly reduced foot-shock-mediated excitation without altering baseline activity (Figure 2C and Figure 2D, Figure 2—figure supplement 2D). Consistently, retrogradely-labeled and optically-tagged LHb-projecting LH neurons were foot-shock responsive (Figure 2—figure supplement 3A–E). Altogether, the LH→LHb, but not VTA→LHb projection, underlies foot-shock excitation of LHb.
 
-## Targeted and cell-type trans-synaptic tracing in the lateral habenula
+### Targeted and cell-type trans-synaptic tracing in the lateral habenula
 
 Neurons of the LHb send their projections onto midbrain GABA, dopamine (DA) and serotonin (5HT) cells thereby engaging monoaminergic nuclei, which also contribute to aversion processing (Auerbach et al., 1985; Brischoux et al., 2009; Lammel et al., 2012; Pollak Dorocic et al., 2014; Stamatakis and Stuber, 2012; Tan et al., 2012). We sought to decipher the architecture of LH-LHb projections to midbrain GABA, DA or 5HT cells using slc30a1-Cre (VGat-Cre), Pitx3-Cre and Slc6a4-Cre (Sert-Cre) mice in combination with a retrograde cell-type-specific monosynaptic labeling strategy (RABVΔG-(EnvA)-eGFP). We employed this along with the activation of channelrhodopsin-2 (rAAV-CAG-ChR2(H134R)-mCherry)-expressing LH terminals to probe the strength of the following synapses: LH→LHb-to-GABA, LH→LHb-to-DA, and LH→LHb-to-5HT (Figure 3A). LHb-to-GABA cells were mostly located in the lateral portion of the LHb, in contrast to those projecting to DA- and 5HT neurons that were medially-located (Figure 3A and Figure 3—figure supplement 1A [Meye et al., 2016]). When recording from these output-identified LHb neurons in acute slices, we found that LH→LHb opto-stimulation led to inward (−60 mV, I-AMPA) and outward current responses (+10 mV, I-GABA) (Herrera et al., 2016; Stamatakis et al., 2016). LH synapses onto LHb-to-GABA and LHb-to-DA had high degree of connectivity (~90% and ~80% respectively) in contrast to those projecting to LHb-to-5HT neurons (~50%) (Figure 3B and Figure 3—figure supplement 1A–B). We then computed the I-GABA/I-AMPA ratios as a measure for the dominant synaptic component (Meye et al., 2016). The LH→LHb-to-GABA neurons presented lower I-GABA/I-AMPA ratios, and larger maximal I-AMPA compared to other LHb cell targets (Figure 3B), suggesting that LH excitation predominates over LHb neurons synapsing onto downstream midbrain GABA cells.
 
-## Hypothalamic-habenular projections guide escape behaviors in mice
+![Figure 3.](https://cdn.elifesciences.org/articles/30697/elife-30697-fig3-v2.jpg)
+
+**Figure 3.:** (A) Timeline for rabies-based labeling. Bottom. Image illustrating LH-ChR2-mCherry fibers (red) and RABVΔG-(EnvA)-eGFP-retrolabeled LHb neurons (green) projecting to midbrain GABA, DA and 5HT cells. (B) Light-evoked glutamatergic/GABAergic currents and connectivity charts for LH→LHb-to-GABA (N/n = 6/28; Connectivity = 89.2%), LH→LHb-to-DA (N/n = 6/29; Connectivity = 79.3%;) and LH→LHb-to-5HT neurons (N/n = 4/27; Connectivity = 55.5%). Bottom. Cumulative probability (Kolmogorov-Smirnov test; VGat-Cre, Pitx3-Cre, Sert-Cre, n = 25, 23, 15) for I-GABA/I-AMPA (Pitx3 vs Sert p=0.33; VGat vs Sert. ***p=0.0009; VGat vs Pitx3 *p=0.039) and maximal I-AMPA (VGat vs Pitx3 ***p=0.0005; VGat vs Sert ***p<0.0001; Pitx3 vs Sert ***p<0.0001) recorded. Results are reported as mean ±S.E.M. N = mice; n = cells. MHb, medial habenula, EPN, entopeduncular nucleus, PAG, periaqueductal gray, IPN, interpeduncular nucleus, VTA, ventral tegmental area, RMTg, rostromedial tegmental nucleus, DRN, dorsal raphe nucleus. See Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30697/elife-30697-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Maps of patch-clamp recordings in the three different Cre mouse lines (VGat-Cre, Pitx3-Cre and Sert-Cre) revealing an LHb-output specific territorial organization. (B) Representative traces and bar graph showing the opto-evoked excitatory or inhibitory currents in the LHb (at −60 mV: n = 6; at +10 mV: n = 8). Maximal I-GABA currents (Kolgorov-Smirnov test: VGat vs Pitx3. p=0.49; VGat vs Sert p=0.11; Pitx3 vs Sert *p=0.03). n-cells. See also Figure 3. See Figure 3—figure supplement 1—source data 1.
+
+### Hypothalamic-habenular projections guide escape behaviors in mice
 
 If LH inputs instruct LHb-to-midbrain projections to orchestrate aversion-driven escape behaviors, our prediction is that impairing their function may be detrimental for animal’s ability to cope with a threat. To test this, we targeted LH neurons with a Cre-dependent DREADDi construct (rAAV-EF1α-DIO-DREADDi-mCherry). We next infused the canine-derived Cav2-Cre vector within the LHb allowing for retrograde Cre-transport and subsequent DREADDi expression to selectively silence LH→LHb projections in mice (Figure 4A). Control (CTRL; rAAV-EF1α-td-Tomato) animals, after CNO injection, successfully shuttled to the compartment opposite to the one of shock delivery with short latencies across trials. Instead, mice expressing DREADDi in LH→LHb escaped with higher latencies, along with increased shuttling failure rate (Figure 4B). In contrast, no difference in latencies or failures was detected when silencing VTA→LHb projections consistent with the lack of contribution to foot-shock mediated LHb excitation (Figure 4—figure supplement 1A). Importantly, silencing the LH→LHb synapses did not alter locomotion in an open field, nor pain perception, measured with the hot-plate test (Figure 4—figure supplement 1B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/30697/elife-30697-fig4-v2.jpg)
+
+**Figure 4.:** (A) Timeline for Cre-dependent DREADDi strategy. Image for DREADDi expression (red) in LH somata and LH terminals in LHb. (B) Sample histograms for Fs-evoked latency to escape (30 trials) in a CTRL and DREADDi-expressing mouse. Bottom. Bar graphs and scatter plots for failure rates and latencies to escape (CTRL vs DREADDi, N = 17, 17; unpaired t-test; failures: t = 2.97, **p=0.005; latency: t = 2.79, **p=0.008). (C) Looming light test. Sample speed across time during the looming test in CTRLs and DREADDi-expressing animals. Bottom. Latency to escape (CTRL vs DREADDi, N = 12, 15; unpaired t-test; t = 4.12, ***p=0.0004) and strategy adopted upon the looming stimulus (Chi-square test, X2 = 1.29, p=0.25) in the two experimental groups. Results are reported as mean ±S.E.M. N = mice. MHb, medial habenula, EPN, entopeduncular nucleus, VmH, ventral medial hypothalamus. See Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/30697/elife-30697-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Timeline for Cre-dependent DREADDi strategy within the VTA. Representative image for DREADDi expression (red) in mVTA somata and terminals in LHb. Sample histograms for Fs-evoked latency to escape over 30 trials in a CTRL and DREADDi-expressing mouse. Bottom. Bar graphs and scatter plots for failure rates and latencies to escape (CTRL vs DREADDi, N = 7 vs 10; unpaired t-test; Failures: t = 1.17, p=0.25; Latency: t = 1.26, p=0.22). (B) Timeline for Cre-dependent DREADDi expression in LH→LHb. Bar graphs and scatter plots for data collected in the open field (CTRL vs DREADDi; N = 6 vs 6; unpaired t-test, t = 0.85; p=0.41) and in the hot-plate test (N = 7 vs 7; unpaired t-test, t = 0.16; p=0.87). N = mice. MHb, medial habenula, VTA, ventral tegmental area, IPN, interpeducular nucleus. See also Figure 4. See Figure 4—figure supplement 1—source data 1.
+
 Next, we investigated the role of LH→LHb in a more naturalistic setting, mimicking the attack of a predator with a projected shadow to model innate escape (Kunwar et al., 2015). When exposing CTRL mice, after CNO injection, to such paradigm, they rapidly escaped from the arena center to a ‘safe’ area (nest) (Figure 4C and Video 1). In contrast LH→LHb DREADDi mice had significant larger escape latencies (Figure 4C and Video 2). Altogether, these data attribute to the LH→LHb projection the crucial role in guiding escape, an evolutionary conserved innate response to a threat.
+
+![Video 1.](https://cdn.elifesciences.org/articles/30697/elife-30697-video1.mp4.jpg)
+
+**Video 1.:** Looming test performance of a representative mouse infused with a control virus within the LH and Cav2-Cre in the LHb.
+
+![Video 2.](https://cdn.elifesciences.org/articles/30697/elife-30697-video2.mp4.jpg)
+
+**Video 2.:** Looming test performance of a representative mouse infused with a AAV-hSyn-DIO-hM4Di-mCherry within the LH and Cav2-Cre in the LHb.
 
 ## Discussion
 
@@ -74,11 +126,11 @@ In conclusion, our data describe a neural circuit instrumental for escaping a th
 
 ## Materials and methods
 
-## Experimental subjects
+### Experimental subjects
 
 All in vivo and ex vivo procedures were performed on C57Bl/6J mice (males) wild-type or slc30a1-Cre (VGat-Cre), Pitx3-Cre and Slc6a4-Cre (Sert-Cre) mice aged 4–12 weeks. Mice were used in accordance with the guidelines of the Ministry of Agriculture and Forestry for animal handling and the ethic committee Charles Darwin #5 of the University Pierre et Marie Curie. Part of the current study was carried at the Department of Fundamental Neuroscience of the University of Lausanne (Lausanne, Switzerland) according to the regulations of the Cantonal Veterinary Offices of Vaud and Zurich (Switzerland; License VD3171). Mice were housed in groups of 5 per cage with water and food ad libitum. Mice were randomly allocated to experimental groups.
 
-## Stereotactic injections
+### Stereotactic injections
 
 For surgery, all mice were anaesthetized with ketamine (100 mg/kg)/xylazine (10 mg/kg) (Sigma-Aldrich, France). Viral injections were performed using a glass pipette mounted on a stereotactic frame (Kopf, France). Volumes ranged between 200 and 400 nl per side, infused at a rate of 100–150 nl/min. The injection pipette was withdrawn from the brain 10 min after the infusion.
 
@@ -96,11 +148,11 @@ For anatomical tracing studies Pitx3-Cre,VGAT-ires-Cre and Sert-CRE mice (4–7 
 
 For behavioral studies, C57B6J mice were infused with rAAV8-hSyn-DIO-HM4Di-mCherry virus (University of Pennsylvania, US) in the LH or mVTA. After a delay period of 3–5 weeks, mice were injected in the LHb (−1.45 mm AP, 0.45 mm ML, −3 mm DV) with retrograde Cav2-Cre virus (titer: ~2,5 × 1012 pp/ml, IGMM CNRS, France). The injection sites were examined for all experiments and only data from animals with correct injections were included in the analysis.
 
-## Real-time place aversion and optogenetics
+### Real-time place aversion and optogenetics
 
 Four weeks following surgery, mice implanted with optical fibers above the LHb were placed in a custom-made behavioral arena with two compartments with different visual cues and wall texture for 15 min. The counterbalanced side of the chamber was defined as the light-paired stimulation side. At the beginning of the session, the mouse was placed in the non-light paired side of the chamber. Every time the mouse crossed to the light-paired side a 20 Hz constant laser stimulation (473 nm, ~10 mW) was delivered. Light stimulation was interrupted when the mouse exit the light-paired side. Time spent on the stimulation-paired side and velocity were recorded via a digital camera interfaced with Any-maze software (Stoelting, Ireland).
 
-## In vivo photometry experiments
+### In vivo photometry experiments
 
 Fiber photometry experiments were performed using a custom-made set-up (airpuff experiments, Burdakov lab, London) and a photometry system using time-correlated photon counting technology (TCSPC) (footshocks experiments, ChiSquare Bioimaging, US)(Cui et al., 2014).
 
@@ -110,9 +162,9 @@ Puffs of compressed air lasting approximately 1 s were delivered to the base of 
 
 Foot-shocks experiments: Footshocks (3 s) were delivered in a chamber provided with an electrified grid-floor with an intensity of 0.3mA. Each mouse tested received 5–10 shocks in total with an inter-shock interval of 60 s. The mouse immediately reacted to the shock escaping in the other side of the chamber. A subset of animals was tested in the rotarod while monitoring locomotion. RPM increased continuously from 3 to 30 in bouts of 3 RPMs. The experiments were replicated two to three times in the laboratory.
 
-## Electrophysiology
+### Electrophysiology
 
-## In vivo recordings
+#### In vivo recordings
 
 Mice were anesthetized with isoflurane (Univentor, Malta. Induction: 2%; maintenance: 1–1.5%), and placed in the stereotaxic apparatus (Kopf, Germany). Their body temperature was maintained at 36 ± 1 °C using a feedback-controlled heating pad (CMA 450 Temperature Controller, USA). The scalp was retracted and one burr hole was drilled above the LHb (AP: −1.3 – −1.6 mm, L: 0.4–0.5 mm, V: −2.3 – −3.2) for the placement of a recording electrode. Single unit activity was recorded extracellularly using glass micropipettes filled with 2% pontamine sky blue dissolved in 0.5 M sodium acetate (impedance 3–6 MΩ). Signal was filtered (band-pass 500–5000 Hz), pre-amplified (DAM80, WPI, Germany), amplified and (Neurolog System, Digitimer, UK), displayed on a digital storage oscilloscope (OX 530, Metrix, USA).
 
@@ -130,7 +182,7 @@ A double barrel pipette assembly (injection tip,<50 μm in diameter attached ~1
 
 At the end of each experiment, the electrode placement was determined with an iontophoretic deposit of pontamine sky blue dye (−80 μA, continuous current for 5 min). Brains were then rapidly removed and fixed in 4% paraformaldehyde solution. The position of the electrodes was microscopically identified on serial sections (60 μm). Only recordings in the correct area were considered for analysis.
 
-## In vitro recordings
+#### In vitro recordings
 
 Animals were anesthetized with Ketamine/Xylazine (100 mg/10 mg Kg−1 i.p.; Sigma-Aldrich, France).
 
@@ -138,30 +190,30 @@ The preparation of LHb-containing brain slices was done in bubbled ice-cold 95% 
 
 The internal solution to measure excitatory and inhibitory currents contained (in mM): Cs-methanesulphonate 120, CsCl 10, HEPES 10, EGTA 10, creatine phosphate 5; Na2ATP 4; Na3GTP 0.4, with a liquid junction potential of −16 mV. Under these conditions, it was possible to detect inward glutamatergic currents (at −50/60 mV) and outward GABAergic (at +10 mV). When clamping neurons at −50/60 mV, the inward current was predominantly AMPAR-mediated (blocked by NBQX, 20 µM). In contrast, when clamping neurons at +10 mV, outward currents were predominantly GABAaR-mediated (blocked by picrotoxin, 100 µM).
 
-## Behavioral paradigms
+### Behavioral paradigms
 
 All behavioral tests were conducted during the light phase (7:00–19:00). Mice were habituated to the experimental room light level (35 lux) in their home cage (5 mice/cage) for at least 1 hr prior the testing. Animals were used for maximum two behavioral paradigms compatible one another, with behavioral paradigms repeated at least twice. Animals were randomly assigned to the experimental groups. Operators were blind to the experimental group during the scoring. All mice used for DREADDi silencing experiments received a single injection of CNO (1 mg/kg i.p.) ~20 min prior the test.
 
-## Hot plate test
+### Hot plate test
 
 A standard hot plate (Biosed, Chaville, France), adjusted to 52°C, was used to assess motor reactions in response to noxious stimuli. Mice were confined on the plate by a Plexiglas cylinder (diameter 19 cm, height 26 cm). The latency to a hind paw response (licking or shaking) or jumping was taken as the nociceptive threshold.
 
-## Locomotor activity
+### Locomotor activity
 
 To assess the locomotor activity we tested mice in an open field arena. Mice were placed in the center of a plastic box (50 cm x 50 cm x 45 cm) in a room with dim light. Following a 5 min habituation period, the animal’s behavior was videotaped and subsequently analyzed (Any-maze, France).
 
-## Shuttle box test
+### Shuttle box test
 
 A shuttle box (13 cm × 18 cm × 30 cm) was equipped with an electrified grid floor and a door separating the two compartments. The test session consisted of 30 trials of escapable foot-shocks (10 s at 0.1–0.3 mA) separated by an interval of 30 s. The shock ended when animals shuttled to the opposite compartment. Failure was defined as the absence of shuttling to the other compartment within the 10 s of shock delivery. The time employed by the mouse to shuttle in the other compartment during the shock (latency) was also calculated (Lecca et al., 2016).
 
-## Looming visual stimulus test
+### Looming visual stimulus test
 
 Mice were tested for behavior in a looming visual stimulus test, as described elsewhere (Yilmaz and Meister, 2013). Animals were placed in an open-top Plexiglas box (50 × 50 × 45 cm). A triangular shaped nest (20 × 12 cm) was placed in one corner. Recordings were performed under illumination provided by the projector screen placed above the arena. After 10 min of habituation, a looming stimulus was presented from the screen when an animal was in the center. The stimulus of 0.5 s duration was repeated 10 times with an interstimulus interval of 0.5 s. The latency to escape and the freezing time after escaping was calculated for each mouse. The analysis was performed off-line (Anymaze, Ireland).
 
-## Drugs
+### Drugs
 
 The amino-5-phosphonopentanoic acid (AP-5), the specific non-NMDA 2,3-Dioxo-6-nitro-1,2,3,4-tetrahydrobenzo[f]quinoxaline-7-sulfonamide (NBQX), the GABAA antagonist (picrotoxin) and the clozapine N-oxide (CNO) were obtained from Abcam (UK) and Tocris (UK). With the exception of picrotoxin and CNO (DMSO, 0.01% final concentration), all drugs were dissolved in purified water.
 
-## Statistical analysis
+### Statistical analysis
 
 Online/offline analyses were performed using Spike2 (Cambridge Electronic Design) IGOR-6 (Wavemetrics, US) and Prism (Graphpad, US). Data distribution was systematically tested with D’Agostino Pearson and Shapiro-Wilk normality tests. Depending on the distribution, parametric or not parametric test were used. Single data points are always plotted. Electrophysiological and behavioral experiments were replicated at least three times within the laboratory. Sample size was pre-estimated from previously published research and from pilot experiments performed in the laboratory. Compiled data are expressed as mean ± S.E.M. Significance was set at p<0.05 using two-sided unpaired t-test, Kolmogorov-Smirnov test, one or two-way ANOVA with multiple comparison when applicable. The use of the paired t-test and two way ANOVA for repeated measured were stated in the legend figure text. The Chi-Square test was used when required.

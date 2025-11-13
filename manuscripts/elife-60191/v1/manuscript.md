@@ -48,53 +48,306 @@ The small and well-defined interaction point between MYC and HCF-1, and the impo
 
 ## Results
 
-## Bidirectional modulation of the MYC−HCF-1 interaction
+### Bidirectional modulation of the MYC−HCF-1 interaction
 
 To understand the role of HCF-1 in MYC function, we sought to use separation-of-function mutations in MYC that modulate interaction with HCF-1 in a predictable way. We therefore introduced a number of mutations in the atypical HBM of MYC (QHNY) that we expected to decrease—or increase—interaction with HCF-1, based on properties of prototypical HBM sequences (Freiman and Herr, 1997; Figure 1A). We substituted the MYC HBM for the canonical HBM from VP16 (VP16 HBM); we also mutated the invariant histidine of the HBM to glycine in the MYC (H307G) and VP16 (VP16 HBM:H307G) contexts, or we changed all four HBM residues to alanine (4A). A mutation in the separate WDR5-binding motif (WBM; Thomas et al., 2015) was our specificity control. We transiently expressed these full-length FLAG-tagged MYC proteins in 293T cells and measured their ability to interact with endogenous HCF-1 in a co-immunoprecipitation (co-IP) assay (Figure 1B). As expected, the 4A mutation disrupts the MYC–HCF-1 interaction, as do both histidine to glycine substitutions—confirming the essentiality of this core HBM residue to the MYC–HCF-1 association. In contrast, replacing the MYC HBM with the canonical VP16 sequence increases the amount of HCF-1 recovered in the co-IP. The enhanced binding of the VP16 HBM MYC mutant to HCF-1 is also observed in vitro using purified recombinant MYC (Figure 1—figure supplement 1A) and in vitro translated HCF-1VIC (Figure 1—figure supplement 1B). Based on these data, we conclude that the MYC HBM is an authentic HBM, and that its variation from the canonical HBM sequence leads to a tempered interaction with HCF-1. We also conclude that we can use the 4A and VP16 HBM mutations to probe the significance of the MYC–HCF-1 interaction through both loss- and gain-of-function approaches.
 
-## The MYC–HCF-1 interaction stimulates proliferation of Burkitt lymphoma cells
+![Figure 1.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of MYC, depicting the location of the six MYC boxes (Mb0–MbIV). MbIIIb carries a WDR5-binding motif (WBM). MbIV contains an HCF-1-binding motif (HBM). Residues relevant to the WBM or HBM are in bold, and residues mutated in this study are in red. (B) FLAG-tagged full-length MYC proteins carrying the mutations described in (A) were transiently expressed in 293T cells, recovered by anti-FLAG immunoprecipitation (IP), and the input, or IP eluates, probed for the presence of HCF-1C, WDR5, or FLAG-tagged proteins by western blotting. (C) Western blot of lysates from parental (CRE-ERT2) or switchable Ramos cells (wild-type [WT], 4A, or VP16 HBM) ±20 nM 4-OHT for 24 hr. Blots were probed with antibodies against the HA tag, MYC, HCF-1C, and GAPDH. (D and E) Parental or switchable Ramos cells (WT, 4A, or VP16 HBM) were treated with 20 nM 4-OHT for 24 hr, lysates prepared, and IP performed using anti-IgG or anti-MYC antibodies. Input lysates and IP eluates were probed using antibodies against HCF-1C, WDR5, HA tag, and MYC by western blotting. All lines in these experiments express CRE-ERT2. (F) Switchable Ramos cell lines were pulsed with 20 nM 4-OHT for 2 hr to switch ~50% of cells, propagated for 3 days, and grown for 16 hr in media with or without glutamine. The impact of glutamine deprivation was measured by flow cytometry to determine the proportion of green fluorescent protein (GFP)-positive (switched) cells. For each of the mutants, the proportion of GFP-positive cells was normalized to that for WT cells. Shown are the mean and standard error for three biological replicates. Student’s t-test between +Gln and −Gln was used to calculate p-values; a = 0.0066, b = 0.0002. (G) Switchable Ramos cells were pulsed with 4-OHT as in (F), grown for 7 days, and cell cycle distribution determined by propidium iodide (PI) staining and flow cytometry, binning cells according to whether they expressed GFP (GFP+, switched) or not (GFP−, unswitched). Shown are the mean and standard error for three biological replicates. Student’s t-test between GFP− and GFP+ cells was used to calculate p-values; a = 0.033, b = 0.0041, c = 0.0006. (H) Switchable Ramos cells were pulsed with 4-OHT as in (F), and the proportion of GFP-positive cells measured by flow cytometry 24 hr after treatment and every 3 days following. For each of the replicates, the proportion of GFP-positive cells is normalized to that on day 1. Shown are the mean and standard error for three biological replicates. Student’s t-test between WT and each of the mutants at day 25 was used to calculate p-values; a = 0.000028, b = 0.00026.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Recombinant FLAG-tagged MYC was purified from E. coli (Rosetta) cells by nickel affinity chromatography. Shown are proteins from two sequential elutions with imidazole-containing buffer (E1 and E2), which were resolved by SDS-PAGE alongside a bovine serum albumin (BSA) standard and detected by Coomassie staining. (B) In vitro transcribed/translated T7-tagged host cell factor (HCF)–1VIC was incubated with recombinant FLAG-tagged MYC, either wild-type (WT) or mutant (4A or VP16 HCF-1-binding motif [HBM]), and IP performed using anti-FLAG M2 agarose. Western blot of the input lysate, and the IP eluate, was probed using antibodies against the T7 and FLAG tags. (C) The translocated MYC locus from Ramos cells is depicted at top, with chromosome 14 (red) and 8 (blue) elements indicated. Beneath is a representation of the locus modification, in either the unswitched (middle) or switched (bottom) states. This switchable allele contains a WT exon 3, a P2A-linked puromycin cassette, and a SV40 polyadenylation (SV40 PA) signal, all of which are flanked by LoxP sites (black triangles). Downstream of the LoxP-flanked region is an HA-tagged mutant exon 3 (mut-Ex3) and a P2A-linked green fluorescent protein (GFP) cassette, with the endogenous 3’ untranslated region (UTR) intact. Activation of CRE-ERT2 results in excision of WT exon 3 and its replacement with mutant exon 3 which carries sequences encoding either WT or mutant (4A or VP16 HBM) MYC protein. (D) Comparison of the structure of the parental (non-modified) MYC allele (top) compared to the switchable MYC allele (bottom). XbaI sites used for digestion of genomic DNA in Southern blot are highlighted, as are the complementary sites for the MYC and GFP probes. The expected products of XbaI digestion for the parental line are 6784 bp for the MYC probe (which detects both the translocated and non-translocated alleles) and nothing for the GFP probe; for correctly engineered lines the expected sizes are 6784 bp and 2942 bp for the MYC probe, and 6624 bp for the GFP probe. (E) Southern blot using GFP and MYC probes on XbaI-digested gDNA from unswitched parental or switchable cells (WT, 4A, and VP16 HBM), with digested positive and negative control plasmids. (F) Switchable cells were treated with or without 20 nM 4-OHT (24 hr), fixed using 1% formaldehyde, and subject to flow cytometry. The GFP profiles of the −4-OHT and +4-OHT cells are shown overlaid onto the same axes, with the approximate percentage of GFP-positive cells for 24 hr +4-OHT shown.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Chromatin fractionation of switchable Ramos cells was performed after a 24 hr treatment with 20 nM 4-OHT. S2 reflects the cytosolic, S3 the non-chromatin nuclear, and P3 the chromatin-bound fraction. Each fraction was probed using antibodies against host cell factor (HCF)–1C, HA, α-Tubulin, and H3. (B) Immunofluorescence of cells that had been switched for 24 hr as in (A), using a DAPI DNA stain and an antibody against the HA tag on switched MYC proteins. (C) Switchable Ramos cell lines were treated with 20 nM 4-OHT for 16 hr, then re-plated 24 hr later at a density of 2 × 104 cells/ml. The number of cells, including both green fluorescent protein (GFP)– and GFP+, was counted at 3 and 6 days following re-plating. Shown are the mean and standard error for three biological replicates. Student’s t-test between wild-type (WT) and mutant cells was used to calculate p-values; **=0.0023, ***=0.00087. (D) Using the difference in cell number between day 1 and day 7 from (C), we calculated growth rate and subsequently the approximate doubling time for each cell line following switching. Bar graph shows the mean and standard error for the three biological replicates. Student’s t-test between WT and mutant cells was used to calculate p-values; a = 0.002, b = 0.0012. Table below shows the mean growth rates and doubling time ± standard deviation.
+
+### The MYC–HCF-1 interaction stimulates proliferation of Burkitt lymphoma cells
 
 To understand the cellular consequences of modulating the MYC–HCF-1 interaction, we engineered a system that allows us to express the 4A or VP16 HBM mutant MYC proteins as the sole form of MYC in a cell. We chose Ramos cells, a Burkitt lymphoma (BL)-derived line in which a t(8;14) translocation places one MYC allele under regulatory control of the immunoglobulin heavy chain enhancer (Figure 1—figure supplement 1C; Wiman et al., 1984). The untranslocated MYC allele is not expressed in these cells (Bemark and Neuberger, 2000). Because sequences encoding the MYC HBM are contained within exon 3, we used CRISPR/Cas9-triggered homologous recombination of the translocated MYC allele to integrate an exon 3 switchable cassette for wild-type (WT) MYC, 4A, or VP16 HBM mutants, and confirmed appropriate integration by Southern blotting (Figure 1—figure supplement 1D and E). In cells expressing an inducible CRE-ERT2 recombinase, treatment with 4-hydroxytamoxifen (4-OHT) results in the excision of exon 3 of MYC, bringing in place a modified exon 3 that carries an HA-epitope tag and drives expression of P2A-linked green fluorescent protein (GFP). Twenty-four hours after 4-OHT treatment, at least 85% of cells in each population are switched—as monitored by GFP expression (Figure 1—figure supplement 1F), and we observe the expected appearance of HA-tagged MYC proteins, which migrate more slowly due to the presence of the epitope tag (Figure 1C). Importantly, the exchanged MYC proteins are expressed at levels comparable to endogenous MYC (Figure 1C), are predominantly nuclear (Figure 1—figure supplement 2A and B), and behave as expected, with the 4A mutant showing reduced (Figure 1D), and the VP16 HBM mutant enhanced (Figure 1E), interaction with endogenous HCF-1. Also as expected, these mutations have minimal impact on the interaction of MYC with WDR5. Thus, we successfully generated a system for inducible, selective, and bidirectional modulation of the MYC−HCF-1 interaction in the context of an archetypal MYC-driven cancer cell line.
 
 To monitor the contribution of the MYC–HCF-1 interaction to cell proliferation, we pulsed each of our engineered Ramos lines with 4-OHT for 2 hr to generate approximately equally mixed populations of switched and unswitched cells. Based on the ability of MYC to drive glutamine addiction (Jeong et al., 2014) and cell cycle progression (Pajic et al., 2000), we monitored how the GFP-positive switched cells in the population compared to their unswitched counterparts in terms of glutamine-dependency (Figure 1F), cell cycle profiles (Figure 1G), and proliferation (Figure 1H and Figure 1—source data 1). We see that 4A switched cells have a selective advantage over the WT switch in their ability to grow without exogenous glutamine (Figure 1F). This advantage is likely due to loss of the MYC–HCF-1 interaction, as the VP16 HBM mutant cells have a corresponding deficit in growth under glutamine-starvation conditions (Figure 1F). When assayed in media replete with glutamine, cell cycle profiles for the two mutants are modestly altered compared to their WT counterparts, including small but statistically significant changes in the proportion of cells in G2/M (Figure 1G), which again trend in opposite directions for the two MYC mutants—decreasing for the 4A-expressing cells and increasing for those that express the VP16 HBM mutant (Figure 1G). Finally, in long-term growth assays in complete media, we observe that 4A mutant cells are gradually lost from the culture over time, whereas there is a significant enrichment of VP16 HBM cells, compared to the WT control (Figure 1H and Figure 1—source data 1). The differences in representation of the two MYC mutants in these populations is unlikely due to apoptosis—we observe no differences in the proportion of sub-G1 cells between the different switches (Figure 1G)—but tracks with changes in cell doubling time (Figure 1—figure supplement 2C and D and Figure 1—source data 1), which are increased for the 4A, and decreased for the VP16 HBM mutant cells. The altered and opposing impact of the 4A and VP16 HBM mutations in these assays leads us to conclude that the MYC–HCF-1 interaction promotes the glutamine-dependency—and rapid proliferative status—of these BL cells in culture.
 
-## The MYC–HCF-1 interaction influences intracellular amino acid levels
+### The MYC–HCF-1 interaction influences intracellular amino acid levels
 
 As part of our survey of the impact of the MYC–HCF-1 interaction on Ramos cell processes, and because of its influence on glutamine dependency, we determined whether metabolite levels are altered in response to expression of the 4A or VP16 HBM MYC mutants. We performed global, untargeted, mass spectrometry-based metabolomics on switched cells using reverse-phase liquid chromatography (RPLC) and hydrophilic interaction liquid chromatography (HILIC) separation methods. We detected ~2000 metabolites with each approach (Figure 2A–F), and there is strong consistency among biological replicates (Figure 2—figure supplement 1A and B). In general, more metabolites are significantly changed, and with a greater magnitude, for the 4A than the VP16 HBM MYC mutant (Figure 2A–B and D–E and Figure 2—source data 1 and 2). For both mutants, significantly changed metabolites group into a variety of categories, with a particular enrichment for those related to amino acid and lipids (Figure 2C and F). Comparing the direction of individual metabolite changes for the 4A and VP16 HBM mutants (Figure 2—figure supplement 1C), we note that a significant portion of the metabolite changes detected by both the RPLC and HILIC methods are in the same direction for the two MYC mutants. In general, these shared metabolite changes fail to cluster strongly into biological pathways; the only significantly enrichment being glycerophospholipid metabolism (Figure 2—figure supplement 1D). Focusing on metabolite changes that occur in opposite directions for the 4A and VP16 HBM mutants, however, we observe significant enrichment in pathways linked to nitrogen and amino acid metabolism (Figure 2G). There is a clear anti-correlation between the impact of the 4A and VP16 HBM mutations on metabolites connected to aspartic acid (Figure 2H), and we observe that intracellular levels of glutamine (and associated metabolites) are increased in the 4A and decreased in the VP16 HBM mutant cells (Figure 2—figure supplement 1E and F). Notably, these changes in intracellular amino acid levels are not confined to aspartic acid and glutamine, but there is a general tendency for amino acid levels to be increased in 4A and decreased in VP16 HBM mutant cells, compared to the WT switch (Figure 2—figure supplement 1C and Table 1). Based on these data, we conclude that the MYC–HCF-1 interaction, directly or indirectly, plays a global role in influencing intracellular amino acid levels in this setting.
 
-## The MYC–HCF-1 interaction influences expression of genes connected to ribosome biogenesis and the mitochondrial matrix
+![Figure 2.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig2-v1.jpg)
+
+**Figure 2.:** (A and B) Volcano plots of metabolites detected by reverse-phase liquid chromatography (RPLC) (A) or hydrophilic interaction liquid chromatography (HILIC) (B) in wild-type (WT) and 4A switchable Ramos cells treated for 24 hr with 20 nM 4-OHT. Metabolites that were significantly (S) changed (false discovery rate [FDR] < 0.05 and |FC| > 1.5) with the 4A MYC mutant compared to WT are colored. Non-significant (NS) changes are in gray. Five biological replicates for WT and four biological replicates for 4A were used to calculate Q-values and fold-changes (FCs). Select metabolites are indicated. (C) Classification of metabolites that were significantly changed (FDR < 0.05 and |FC| > 1.5) with the 4A mutant compared to WT cells. (D and E) Volcano plots of metabolites detected by RPLC (D) or HILIC (E) in WT and VP16 HCF-1-binding motif (HBM) switchable Ramos cells treated for 24 hr with 20 nM 4-OHT. Metabolites that were significantly (S) changed (FDR < 0.05 and |FC| > 1.5) with the VP16 HBM MYC mutant compared to WT are colored. Non-significant (NS) changes are in gray. Five biological replicates for WT and VP16 HBM were used to calculate Q-values and FCs. Select metabolites are indicated. (F) Classification of metabolites that were significantly changed (FDR < 0.05 and |FC| > 1.5) with the VP16 HBM mutant compared to WT cells. (G) Annotated metabolites from Figure 2—figure supplement 1C that were changed in the opposite direction for the 4A and VP16 HBM mutants were independently subjected to pathway enrichment analysis. Pathways with FDR < 0.2 for either RPLC and HILIC are shown. (H) Metabolites (FDR < 0.05) in the ‘alanine, aspartate, and glutamate metabolism’ pathway that were impacted by the 4A (left) and VP16 HBM (right) MYC mutants. Node color represents the FC over WT. The remainder of the pathway is shown in Figure 2—figure supplement 1E and F.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** All data are derived from switchable Ramos cells treated with 20 nM 4-OHT for 24 hr. (A and B) Heatmap visualizing consistency between replicates of metabolites (z-transformed) detected with reverse-phase liquid chromatography (RPLC) (A) or hydrophilic interaction liquid chromatography (HILIC) (B) that were significantly (false discovery rate [FDR] < 0.05 and |FC| > 1.5) impacted by the 4A (left) or VP16 HBM (right) MYC mutants. Shown alongside each is a heatmap is the log2FC as calculated from the raw data. (C) Heatmap showing metabolites detected with RPLC (left) or HILIC (right) that are significantly (FDR < 0.05) changed for both the 4A and VP16 HBM mutants, compared to wild-type (WT) MYC. Metabolites are clustered according to the relationship between the two mutants, and ranked by the log2FC of 4A versus WT. The position of amino acids is highlighted in red. (D) Annotated metabolites from (C) that were changed in the same direction for the 4A and VP16 HBM mutants were independently subjected to pathway enrichment analysis. Pathways with FDR < 0.2 for either RPLC and HILIC are shown. (E) Metabolites in the ‘alanine, aspartate, and glutamate metabolism’ pathway that are significantly (FDR < 0.05) impacted in the 4A mutant. Node color represents the fold-change (FC) over WT. The remainder of the pathway is shown in Figure 2H. (F) Metabolites in the ‘alanine, aspartate, and glutamate metabolism’ pathway that are significantly (FDR < 0.05) impacted in the VP16 HBM mutant. Node color represents the FC over WT. The remainder of the pathway is shown in Figure 2H.
+
+**Table 1.**
+ Loss of the MYC–host cell factor (HCF)–1 interaction promotes amino acid accumulation.Modulating the MYC–HCF-1 interaction alters intracellular amino acid levels. All data are derived from switchable Ramos cells treated with 20 nM 4-OHT for 24 hr. Amino acid levels were measured following separations by hydrophilic interaction liquid chromatography (HILIC). Q-values and fold-changes (FCs) were calculated between the mutants and wild-type (WT). Five biological replicates for WT and VP16 HCF-1-binding motif (HBM) and four biological replicates for 4A were analyzed. Q-value < 0.05 are highlighted in green, FC > 0 in red, and FC < 0 in blue. Confidence levels reflect the confidence in metabolite identification; L1 is validated, L2 is putative, and L3 is tentative. ND = not detected; NS = not significant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">4A</th>
+      <th colspan="2">VP16 HBM</th>
+      <th>Confidence level</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Q-value</th>
+      <th>FC</th>
+      <th>Q-value</th>
+      <th>FC</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Glycine</td>
+      <td>2.52E-04</td>
+      <td>1.31</td>
+      <td>3.11E-05</td>
+      <td>−1.48</td>
+      <td>L3</td>
+    </tr>
+    <tr>
+      <td>L-alanine</td>
+      <td>9.97E-05</td>
+      <td>1.62</td>
+      <td>NS</td>
+      <td></td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>L-arginine</td>
+      <td>2.31E-02</td>
+      <td>1.18</td>
+      <td>NS</td>
+      <td></td>
+      <td>L1</td>
+    </tr>
+    <tr>
+      <td>L-asparagine</td>
+      <td>6.67E-05</td>
+      <td>1.5</td>
+      <td>2.02E-03</td>
+      <td>−1.23</td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>L-aspartic acid</td>
+      <td>1.24E-03</td>
+      <td>−1.37</td>
+      <td>1.54E-05</td>
+      <td>2.01</td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>L-cysteine</td>
+      <td>ND</td>
+      <td></td>
+      <td>ND</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L-glutamic acid</td>
+      <td>2.53E-03</td>
+      <td>1.46</td>
+      <td>NS</td>
+      <td></td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>L-glutamine</td>
+      <td>2.33E-05</td>
+      <td>1.46</td>
+      <td>9.38E-05</td>
+      <td>−1.41</td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>L-histidine</td>
+      <td>8.70E-05</td>
+      <td>1.64</td>
+      <td>NS</td>
+      <td></td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>L-isoleucine</td>
+      <td>1.10E-03</td>
+      <td>1.39</td>
+      <td>2.36E-02</td>
+      <td>−1.21</td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>L-leucine</td>
+      <td>8.63E-04</td>
+      <td>1.33</td>
+      <td>2.55E-02</td>
+      <td>−1.18</td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>L-lysine</td>
+      <td>1.66E-02</td>
+      <td>1.19</td>
+      <td>NS</td>
+      <td></td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>L-methionine</td>
+      <td>6.51E-05</td>
+      <td>1.61</td>
+      <td>4.39E-03</td>
+      <td>−1.27</td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>L-phenylalanine</td>
+      <td>4.71E-04</td>
+      <td>1.48</td>
+      <td>3.46E-02</td>
+      <td>−1.22</td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>L-proline</td>
+      <td>1.01E-02</td>
+      <td>1.17</td>
+      <td>NS</td>
+      <td></td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>L-serine</td>
+      <td>7.48E-05</td>
+      <td>1.59</td>
+      <td>NS</td>
+      <td></td>
+      <td>L1</td>
+    </tr>
+    <tr>
+      <td>L-threonine</td>
+      <td>9.63E-05</td>
+      <td>1.54</td>
+      <td>1.25E-02</td>
+      <td>−1.17</td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>L-tryptophan</td>
+      <td>1.56E-04</td>
+      <td>1.64</td>
+      <td>NS</td>
+      <td></td>
+      <td>L1</td>
+    </tr>
+    <tr>
+      <td>L-tyrosine</td>
+      <td>1.22E-04</td>
+      <td>1.59</td>
+      <td>1.9E-02</td>
+      <td>−1.18</td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>L-valine</td>
+      <td>4.41E-02</td>
+      <td>1.14</td>
+      <td>NS</td>
+      <td></td>
+      <td>L3</td>
+    </tr>
+  </tbody>
+</table>
+
+### The MYC–HCF-1 interaction influences expression of genes connected to ribosome biogenesis and the mitochondrial matrix
 
 Next, we used RNA-sequencing (RNA-Seq) to monitor transcriptomic changes associated with modulating the MYC–HCF-1 interaction. Twenty-four hours after switching, we observed changes in the levels of ~4000 transcripts in the 4A, and ~3600 transcripts in the VP16 HBM, cells compared to the WT switch (Figure 3—figure supplement 1A and Figure 3—source data 1 and 2). These changes are highly consistent among biological replicates (Figure 3—figure supplement 1B) and modest in magnitude (Figure 3A), congruous with what is typically reported for MYC (Levens, 2002; Nie et al., 2012). We confirmed for a representative set of genes that these changes are dependent on switching (Figure 3—figure supplement 1C). Gene ontology (GO) enrichment analysis revealed that transcripts decreased by introduction of the 4A mutant are strongly linked to ribosome biogenesis, tRNA metabolism, and the mitochondrial matrix (Figure 3B), while those that are induced have links to transcription, cholesterol biosynthesis, and chromatin. For the VP16 HBM MYC mutant, decreased transcripts cluster in categories mostly related to the centrosome and the cell cycle (Figure 3C). What is particularly striking, however, is that transcripts that are induced by the VP16 HBM protein have a pattern of clustering that is almost the exact opposite of those suppressed by the 4A mutant—including ribosome biogenesis, tRNA metabolism, and the mitochondrial matrix.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig3-v1.jpg)
+
+**Figure 3.:** Switchable Ramos cells were treated with 20 nM 4-OHT for 24 hr, RNA isolated, and RNA-Seq performed. (A) Scatterplot showing the distribution of log2FC of significant (false discovery rate [FDR] < 0.05) RNA-Seq changes with the 4A and VP16 HCF-1-binding motif (HBM) MYC mutants, compared to the wild-type (WT) switch. Solid lines represent the median log2FC for decreased (4A: −0.2858; VP: −0.2747) and increased (4A: 0.281; VP: 0.2558) transcripts compared to WT. For clarity, some data points were excluded; these data points are highlighted in Figure 3—source data 1 and 2. (B and C) Categories from the top eight families in gene ontology (GO) enrichment analysis of significant (FDR < 0.05) gene expression changes under each condition (B: 4A; C: VP16 HBM). (D) Heatmap showing the log2FC of significantly (FDR < 0.05) changed transcripts that are altered in expression in both the 4A and VP16 HBM mutants. Transcripts are clustered according to the relationship in expression changes between the 4A and VP16 HBM mutants, and ranked by the log2FC for the 4A mutant. Scale of heatmap is limited to [−3,3]. (E and F) Gene clusters in (D) were subject to GO enrichment analysis, and the top eight categories are shown for the correlative (E) or anti-correlative (F) clusters. The Q-value of categories is represented by bubble color, and the number of genes present in a category is represented by bubble size. The genes in these categories are identified in Figure 3—figure supplement 2A and B.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Volcano plots showing the significant (false discovery rate [FDR] < 0.05) gene expression changes for the 4A (left) and VP16 HBM (right) mutants. For clarity, some data points were excluded; these data points are highlighted in Figure 3—source data 1 and 2. (B) Heatmap visualizing consistency among replicates of RNA-Seq for switchable MYC allele cell lines at 24 hr, by z-transformation and ranking by fold-change (FC). Transcripts that were significantly (FDR < 0.05) impacted compared to wild type (WT) are shown. Three biological replicates for each WT, 4A, and VP16 HBM were used to calculate FDR and FCs. (C) Validation of a set of gene expression changes detected in RNA-Seq. Cells were grown with or without 4-OHT for 24 hr, RNA isolated, reverse transcribed, and the indicated transcripts quantified by real-time PCR. Cycle threshold (Ct) values were normalized to those for GAPDH and FCs calculated over −4-OHT samples. Shown are the mean and standard error for three biological replicates. Student’s t-test between WT and mutant cells was used to calculate p-values; *p<0.05, **p<0.01, ***p<0.001. (D) Significant (FDR < 0.05) gene expression changes that are anti-correlative (top) and correlative (bottom) in direction between the 4A and VP16 HBM mutants.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A and B) Categories from the top eight families in GO enrichment analysis of the anti-correlated (A) and correlated (B) gene clusters shown in Figure 3D, for transcripts that were decreased (top) or increased (bottom) with the 4A mutant. The Q-value of categories is represented by the ribbon color, which is scaled across these figures. Categories are ranked by the number of matched genes, and genes are ranked by the number of categories into which they fall.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Impact of the 4A (A) and VP16 HCF-1-binding motif (B) mutants on amino acid levels (hydrophilic interaction liquid chromatography) and on the expression of aminoacyl tRNA transferases (RNA-Seq).
 
 If anti-correlations between these gain- and loss-of-function mutants can be used to reveal MYC–HCF-1 co-regulated processes, the above data highlight protein synthesis and mitochondrial function as key points of convergence for the interaction of MYC with HCF-1. To explore this on a gene-by-gene basis, we compared individual gene expression changes that were either the same, or opposite, in direction for the 4A and VP16 HBM mutants (Figure 3D, Figure 3—figure supplement 1D and Figure 3—source data 3). Transcripts decreased by both mutations show modest enrichment in categories connected to immune signaling and cell adhesion (Figure 3E, left), whereas increased transcripts are primarily enriched in those encoding histones (Figure 3E, right). Turning to transcripts that change in opposite directions with each mutant, those that are induced by the 4A mutant are moderately enriched in categories relating to kinase function and the cell cycle (Figure 3F, left), while those that are reduced by the 4A mutant are strongly enriched in categories connected to ribosome biogenesis and the mitochondrial matrix (Figure 3F, right). The genes represented in each of these categories are shown in Figure 3—figure supplement 2A and B. This analysis confirms that reciprocal changes we observed for the GO categories in Figure 3B and C results from reciprocal changes in the expression of a common set of genes. From our data, we conclude that the MYC–HCF-1 interaction plays an important role in influencing the expression of genes that promote ribosome biogenesis and maintain mitochondrial function.
 
 Finally, we interrogated our RNA-Seq data set for transcript changes that correlate with the widespread changes in amino acid levels that occur upon modulation of the MYC–HCF-1 interaction. Here we discovered that the accumulation of amino acids we observe with the 4A mutant is generally matched with a decrease in transcripts of cognate aminoacyl-tRNA synthetases (Figure 3—figure supplement 3A)—and vice versa for the decreased amino acid levels in the gain-of-function VP16 HBM mutant (Figure 3—figure supplement 3B). The reciprocal relationship of amino acid levels and tRNA ligase expression changes in response to the 4A and VP16 HBM mutants is consistent with the notion that defects in tRNA charging lead to compensatory changes in amino acid uptake (Guan et al., 2014; Harding et al., 2000), further reinforcing the concept that a key biological context in which MYC and HCF-1 function together is protein synthesis.
 
-## Ribosome biogenesis and mitochondrial matrix genes respond rapidly to HCF-1 depletion
+### Ribosome biogenesis and mitochondrial matrix genes respond rapidly to HCF-1 depletion
 
 As a challenge to the concept that ribosome biogenesis and mitochondrial matrix genes are controlled via the MYC–HCF-1 interaction, we asked whether expression of these genes is impacted by acute depletion of HCF-1, mediated via the dTAG method (Nabet et al., 2018). We used CRISPR/Cas9-triggered homologous recombination to integrate an mCherry-P2A-FLAG-FKBP12F36V cassette into the HCFC1 locus in Ramos cells; the effect of which is to amino-terminally tag HCF-1N with the FLAG epitope and FKBP12F36V tags, and to mark the population of modified cells by mCherry expression (Figure 4—figure supplement 1A). Because the HCFC1 locus resides on the X-chromosome, and because Ramos cells are derived from an XY patient, only a single integration event is needed. Tagged cells sorted by fluorescence-activated cell sorting display the expected shift in apparent molecular weight of HCF-1N and the appearance of an appropriately-sized FLAG-tagged species (Figure 4A). Addition of the dTAG-47 degrader results in the rapid and selective disappearance of the HCF-1N fragment; the HCF-1C fragment is largely unaffected by up to 24 hr of dTAG-47 treatment (Figure 4B). Consistent with the known functions of HCF-1 (Julien and Herr, 2003), treated cells display altered cell cycle profiles (Figure 4—figure supplement 1B), but appear to be able to complete at least one round of cell division, as notable deficits in proliferation are only evident 48 hr after dTAG-47 addition (Figure 4C and Figure 4—source data 1). These data reveal that the HCF-1N fragment is essential in Ramos cells, and that early time point analyses should be resistant to complicating effects of HCF-1N degradation on cell proliferation.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig4-v1.jpg)
+
+**Figure 4.:** (A) Western blot, comparing the effects of treating untagged parental cells or FKBPFV-HCF-1N Ramos cells with DMSO or 500 nM dTAG-47 for 24 hr. Blots for HCF-1N, FLAG tag, HCF-1C, and GAPDH are shown. (B) Western blot of lysates from FKBPFV-HCF-1N Ramos cells treated with 500 nM dTAG-47 for varying times, compared to cells treated with DMSO for 24 hr. Shown are short and long exposures of HCF-1N, and HCF-1C, with a GAPDH loading control. (C) Growth curve of FKBPFV-HCF-1N Ramos cells treated with DMSO or 500 nM dTAG-47. Cells were counted every 24 hr for 4 days after plating. Shown are the mean and standard error for three biological replicates. Student’s t-test was used to calculate p-values; a = 0.0029, b = 0.000051, c = 0.000040. (D) Scatterplot showing the distribution of log2FC in RNA-Seq comparing DMSO to 3 hr of 500 nM dTAG-47 treatment (degradation of HCF-1N). Solid lines represent the median log2FC for decreased (−0.425655) and increased (0.270428) transcripts. For clarity, one data point was excluded; this data point is highlighted in Figure 4—source data 2. (E) Gene ontology enrichment analysis of transcripts significantly (false discovery rate [FDR] < 0.05) decreased (top) and increased (bottom) in expression following treatment of FKBPFV-HCF-1N Ramos cells with dTAG-47 for 3 hr. Excluded from this analysis are transcripts that were significantly changed when parental Ramos cells were treated with dTAG-47 for 3 hr. (F) Heatmap showing the log2FC of transcripts with significantly (FDR < 0.05) changed expression, as measured by RNA-Seq, under the indicated conditions. Transcripts are clustered according to the relationship in expression changes between the 4A and VP16 HBM mutants, and ranked by the log2FC for the 4A mutant. Scale of heatmap is limited to [−3,3]. (G) Box-and-whisker plot showing the relationship between transcripts that are anti-correlated between the 4A and VP16 HBM MYC mutants, and significantly changed with the degradation of HCF-1N. Box denotes the 25th to 75th percentile, whiskers extend from minimum to maximum point, and middle line marks the median (4A down/VP16 HBM up: −0.2276; 4A up/VP16 HBM down: 0.2349).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic of the HCF-1 fusion protein in Ramos FKBPFV-HCF-1N Ramos cells, which were generated using CRISPR/Cas9 homology-directed repair. Fused to the N-terminus of the VP16-induced complex (VIC) domain is mCherry linked by P2A to FLAG-tagged FKBP12FV. (B) Cell cycle distribution was determined using propidium iodide (PI) staining of FKBPFV-HCF-1N Ramos cells treated with DMSO or 500 nM dTAG-47 for 24 hr. Shown are the mean and standard error for three biological replicates. Student’s t-test was used to calculate p-values; a = 0.037, b < 0.0001. (C) Heatmap of significantly (false discovery rate [FDR] < 0.05) changed transcripts in FKBPFV-HCF-1N Ramos cells treated with DMSO or dTAG-47 for 3 hr. Shown are the z-transformed expression data for three biological replicates of RNA-Seq, ranked by fold-change (FC). (D) Heatmap of significantly (FDR < 0.05) changed transcripts in parental Ramos cells treated with DMSO or 500 nM dTAG-47 for 3 hr. Shown are the z-transformed expression data for three biological replicates of RNA-Seq, ranked by FC. (E) Heatmap showing the log2FC of all transcripts that are significantly (FDR < 0.05) changed when untagged Ramos cells were treated with DMSO or dTAG-47 for 3 hr, and the corresponding log2FC data in FKBPFV-HCF-1N Ramos cells. (F) Gene set enrichment analysis (GSEA) of significantly (FDR < 0.05) changed transcripts in FKBPFV-HCF-1N Ramos cells. Shown are the normalized enrichment scores (NES) and FDR for each gene set. (G) Validation of select RNA-seq changes in FKBPFV-HCF-1N Ramos cells. Cells were grown with DMSO or dTAG-47 for 3 hr, RNA isolated, RT-qPCR performed, and Ct values normalized to those for GAPDH. Fold-changes were then calculated over DMSO-treated samples. Shown are the mean and standard error for three biological replicates. Student’s t-test between DMSO and dTAG-47-treated cells was used to calculate p-values. *p<0.05, **p<0.01, ***p<0.001. (H) Venn diagram showing overlap of gene transcripts that are significantly (FDR < 0.05) changed in RNA-Seq with the 4A and VP16 HCF-1-binding motif (HBM) mutants, and with degradation of HCF-1N in Ramos cells. (I and J) Transcripts that are decreased with the 4A MYC mutant and increased with the VP16 HBM MYC mutant and fall into the ‘Ribosome biogenesis’ (I) or ‘Mitochondrial matrix’ (J) gene ontology categories. Highlighted in blue are the genes that are also significantly decreased with degradation of HCF-1N.
+
 We performed RNA-Seq analysis 3 hr after addition of dTAG-47—a time point at which the majority of HFC-1N is degraded (Figure 4B). Despite the early time point, we identified ~4500 significant transcript changes associated with dTAG-47 treatment of sorted cells (Figure 4—figure supplement 1C and Figure 4—source data 2). These changes are equally divided between increased and decreased, although decreased transcripts are generally more impacted (larger median fold-change [FC]) than those that are induced (Figure 4D). Seventy-five of these differentially expressed genes are also altered in response to dTAG-47 treatment of unmodified Ramos cells (Figure 4—figure supplement 1D and E and Figure 4—source data 3) and were excluded from further analyses. GO enrichment analysis showed that transcripts reduced by HCF-1N degradation are similar in kind to those reduced by the 4A mutation in MYC—including ribosome biogenesis and tRNA metabolic processes (Figure 4E)—while those induced by HCF-1N degradation tend to be cell cycle-connected (Figure 4E and Figure 4—figure supplement 1F). We validated representative transcript changes by reverse transcription and quantitative PCR (RT-qPCR; Figure 4—figure supplement 1G). Importantly, many of the genes that are differentially expressed upon HCF-1N degradation are also differentially expressed in the presence of either the 4A or VP16 HBM mutants (Figure 4—figure supplement 1H), and we identified a union set of ~450 genes—oppositely regulated by the 4A and VP16 HBM mutants—the expression of which also changes when HCF-1N is destroyed (Figure 4F). Within this set, loss of HCF-1N tends to mimic the loss of interaction 4A mutant (Figure 4G). Moreover, within the cohort of transcripts that are reduced by both HCF-1N destruction and the 4A mutation, we see clear representation of genes connected to ribosome biogenesis and the mitochondrial matrix (Figure 4—figure supplement 1I and J). Although performing RNA-Seq at this early time likely underestimates the impact of loss of HCF-1N on the transcriptome, the presence of these ribosome biogenesis and mitochondrial matrix genes at the point of coalescence of all our RNA-Seq experiments strongly suggests that they are directly controlled by the MYC–HCF-1 interaction.
 
-## Most HCF-1 binding sites on chromatin are bound by MYC
+### Most HCF-1 binding sites on chromatin are bound by MYC
 
 To help identify direct transcriptional targets of the MYC–HCF-1 interaction, we next compared the genomic locations bound by MYC and HCF-1N in Ramos cells. We performed ChIP-Seq using an antibody against the amino-terminus of HCF-1 (Machida et al., 2009), and identified ~1900 peaks for HCF-1N (Figure 5—source data 1), the majority of which are promoter proximal (Figure 5A). These peaks occur at genes enriched in functions connected to HCF-1 (Minocha et al., 2019), including the mitochondrial envelope, the cell cycle, as well as ribonucleoprotein complex biogenesis (Figure 5B). Known (Figure 5C) and de novo (Figure 5—figure supplement 1A) motif analysis revealed that HCF-1N peaks are enriched in DNA sequences linked to nuclear respiratory factor (NRF)–1, as well as the Sp1/Sp2 family of transcription factors. Although linked to NRF-1, the ‘CATGCG’ motif is also a non-canonical E-box that MYC binds in vitro and in vivo (Blackwell et al., 1993; Haggerty et al., 2003; Morrish et al., 2003; Shi et al., 2014). Overlaying these data with our previous ChIP-Seq analysis of MYC in Ramos cells (Thomas et al., 2019), we see that 85% of these HCF-1N peaks are also bound by MYC (Figure 5D and Figure 5—source data 2). The relationship between MYC and HCF-1N at these sites is intimate (Figure 5E and F and and Figure 5—figure supplement 1B), and sites of co-binding tend to have higher signals for MYC (Figure 5G) and HCF-1 (Figure 5—figure supplement 1C) than instances where each protein binds alone. As expected from the strong coalescence of MYC and HCF-1N binding events, the properties of shared MYC–HCF-1N peaks are very similar to those of HCF-1N alone, in terms of promoter-proximity (Figure 5—figure supplement 1D), GO enrichment categories (Figure 5—figure supplement 1E), and motif representation (Figure 5—figure supplement 1F). We conclude that most HCF-1N binding sites on chromatin in Ramos cells occur at promoter proximal sites and that the majority of these sites are also bound by MYC.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig5-v1.jpg)
+
+**Figure 5.:** (A) Distribution of HCF-1N peaks in Ramos cells in relation to the nearest transcription start site (TSS), as determined by ChIP-Seq. (B) Gene ontology (GO) categories strongly represented in genes nearest to HCF-1N peaks in Ramos cells. (C) Known motif analysis of HCF-1N peaks in Ramos cells. Two of the most highly enriched motifs are shown, as well as the percentage of target and background sequences with the motif, and the p-value. (D) Venn diagram showing HCF-1N and MYC peaks in Ramos cells, and the number of regions that overlap between the data sets. ChIP-Seq data for MYC are from GSE126207. (E) Heatmap of all MYC peaks in Ramos cells (from GSE126207) and the corresponding region in Ramos HCF-1N ChIP-Seq, representing the combined average of normalized peak intensity in ±2 kb regions surrounding the peak centers with 100 bp bin sizes. Ranking is by peak intensity in HCF-1N. (F) Example Integrative Genomics Viewer (IGV) screenshots of regions that have overlapping peaks for MYC and HCF-1N in Ramos cells. (G) Normalized MYC ChIP-Seq fragment counts where peaks overlap with HCF-1N (MYC/HCF), compared to where they do not overlap (MYC) in Ramos cells. Data are smoothed with a cubic spline transformation. (H) Venn diagram showing relationship between HCF-1N, MYC, and WDR5 peaks in Ramos cells, and the overlap between co-bound genes and genes for which WDR5 is responsible for MYC recruitment. GO enrichment analysis of genes co-bound by MYC and WDR5—taken from Thomas et al., 2019—is also shown. (I) The proportion of protein-coding genes that were co-bound by promoter-proximal MYC and HCF-1N by ChIP-Seq or an equal number of non-co-bound genes were compared to transcripts that were unchanged or significantly changed (false discovery rate [FDR] < 0.05) with the 4A and VP16 HCF-1-binding motif (HBM) mutants by RNA-seq. p-Value for the 4A mutant is 1.982 × 10−14 and 6.933 × 10−14 for the VP16 HBM mutant. (J) Heatmap showing genes that are co-bound by promoter proximal MYC and HCF-1N in Ramos cells, have anti-correlative gene expression changes between for the 4A and VP16 MYC mutants, and have significant gene expression changes with HCF-1N degradation. Genes that fall into GO categories relating to ribosome biogenesis or translation (RiBi/translation), and mitochondrial function or metabolism (Mito/metabolism) are highlighted.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) De novo motif analysis of HCF-1N peaks in Ramos cells. Two of the most highly enriched motifs are shown, as well as the percentage of target and background sequences with the motif, and the p-value. (B) Example IGV screenshots of regions that have overlapping MYC and HCF-1N in Ramos cells. (C) Normalized HCF-1N ChIP-Seq fragment counts where peaks overlap with MYC (HCF-1N/MYC) compared to where they do not overlap (HCF-1N only). Data are smoothed with a cubic spline transformation. (D) Distribution of regions that overlap between MYC and HCF-1N peaks in Ramos cells in relation to the nearest TSS. (E) Gene ontology enrichment analysis of genes nearest to regions of overlap between MYC and HCF-1N peaks. (F) Known and de novo motif analysis of regions that overlap between MYC and HCF-1N peaks in Ramos cells. For each motif represented, percentage of target and background sequences with the motif and p-value are shown. (G) Relationship between protein-coding genes that are co-bound by promoter-proximal MYC and HCF-1N by ChIP-Seq, and are significantly (false discovery rate [FDR] < 0.05) decreased or increased in response to the 4A or VP16 HCF-1-binding motif (HBM) mutations. Also shown are genes where the expression changes were anti-correlated between the 4A and VP16 HBM mutants.
 
 We previously reported that WDR5 has an important role in recruiting MYC to chromatin at a cohort of genes overtly linked to protein synthesis, including more than half of the ribosomal protein genes (Thomas et al., 2019). To determine whether these genes are also bound by HCF-1, we compared our HCF-1N and MYC ChIP-Seq data to those we generated for WDR5 in this setting. Interestingly, there is little overlap of binding sites for MYC, WDR5, and HCF-1N in Ramos cells, with just ~5% of MYC–﻿HCF-1N co-bound sites also being bound by WDR5 (Figure 5H). Moreover, of the 88 sites bound by all three proteins, only three of these are sites where WDR5 has a functional role in MYC recruitment. Thus, despite the fact that both WDR5 and HCF-1 are often members of the same protein complex (Cai et al., 2010), and despite both of them having links to key aspects of protein synthesis gene expression, the two proteins associate with MYC at distinct and separate regions of the genome.
 
 Finally, we overlaid the physical location of MYC and HCF-1N on chromatin with gene expression changes we had monitored in earlier experiments. Looking at genes displaying promoter proximal binding of MYC and HCF-1N—where clear gene assignments can be made—we see that approximately one-third of these genes are differentially regulated in the presence of either the 4A or VP16 HBM MYC mutants, and that this is significantly more than that predicted by chance alone (Figure 5I and Figure 5—figure supplement 1G). For the 4A mutant, a slightly greater proportion of co-bound genes are downregulated, while the opposite is true for the VP16 HBM mutant (Figure 5—figure supplement 1G). A relatively small cohort of MYC–HCF-1N co-bound genes are oppositely impacted by the 4A and VP16 HBM mutants (Figure 5—figure supplement 1G; ‘4A/VP’), but comparing these with those deregulated by depletion of HCF-1N (Figure 5J), we again see that a majority are connected to ribosome biogenesis and mitochondria, and that most are positively regulated by HCF-1 and the MYC–HCF-1 interaction. Together, these data strongly support the notion that ribosome biogenesis and mitochondrially connected genes are direct targets of the MYC–HCF-1 interaction.
 
-## MYC and HCF-1 bind chromatin independent of their ability to interact
+### MYC and HCF-1 bind chromatin independent of their ability to interact
 
 It has been reported that deletion of MbIV from N-MYC reduces the ability of MYC:MAX dimers to bind DNA (Cowling et al., 2006). This phenotype is unrelated to the MYC HBM, however, as we determined that neither the 4A nor the VP16 HBM mutations have an overt impact on the binding of recombinant MYC:MAX dimers to DNA in vitro (Figure 6—figure supplement 1A and B).
 
 To further explore whether the MYC–HCF-1 interaction influences the ability of either protein to engage its chromatin binding sites in cells, we performed ChIP-Seq for HCF-1N and MYC-HA in our switchable MYC cells that were treated with 4-OHT for 24 hr. Binding of HCF-1N to chromatin is largely unaffected by the 4A or VP16 HBM mutations (Figure 6A and Figure 6—figure supplement 1C), demonstrating that MYC does not recruit HCF-1 to chromatin. Binding of MYC is subtly altered by both the 4A and VP16 HBM mutations (Figure 6B and Figure 6—figure supplement 1D), but these changes are widespread and for the most part shared between the loss-of-function and gain-of-function MYC mutants (Figure 6—source data 1). Indeed, focusing on the top 140 significant changes, we see that the 4A and the VP16 HBM mutants both tend to have increased or expanded chromatin binding, compared to WT MYC (Figure 6C). Visual inspection of the ChIP-Seq data (Figure 6D and Figure 6—figure supplement 1E) confirms the subtlety of these effects and reinforces the concept that the binding of MYC (and HCF-1) to chromatin is not impacted in opposite ways by the 4A and VP16 HBM mutations. We further verified by ChIP-PCR—at genes flagged as direct targets in Figure 5 —that binding of MYC (Figure 6E) and HCF-1 (Figure 6—figure supplement 1F) is largely insensitive to the 4A and VP16 HBM mutations. Thus, although the HBM may play a modest role in chromatin targeting by MYC in cells, this is likely to be independent of the MYC–HCF-1 interaction. We conclude that MYC and HCF-1 interact to control the expression of ribosome biogenesis and mitochondrially connected genes through a co-recruitment-independent mechanism.
 
-## The MYC–HCF-1 interaction is important for tumor engraftment and maintenance
+![Figure 6.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig6-v1.jpg)
+
+**Figure 6.:** (A) Scatterplots of normalized average read counts for HCF-1N ChIP-seq peaks in wild-type (WT), 4A, or VP16 HCF-1-binding motif (HBM) switched cells. (B) As in (A) but showing normalized average read counts for MYC–HA ChIP-seq peaks. (C) Heatmap of the combined average normalized peak intensity in 100 bp bins for MYC-HA peaks that were significantly changed (false discovery rate [FDR] < 0.05 and |log2FC| > 0.7) for both the 4A and VP16 HBM mutants, and were within ±2 kb of a TSS. (D) Example IGV screenshots of regions that had significant (top) or non-significant (bottom) changes for MYC-HA or HCF-1N by ChIP-seq. Asterisks mark the peaks that were significantly changed compared to WT. (E) ChIP, using anti-HA antibody, was performed on parental or switchable Ramos cells treated for 24 hr with 20 nM 4-OHT. Enrichment of genomic DNA was monitored by qPCR using primers that amplify across peaks. HBB is a negative locus for HA-MYC. ChIP efficiency was measured based on the percent recovery from input DNA. Shown are the mean and standard error for three biological replicates.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Recombinant MYC (wild-type [WT], 4A, or VP16 HBM):MAX dimers used in these assays. Dimers were separated by SDS-PAGE alongside a BSA standard and stained using Coomassie Brilliant Blue. (B) Electrophoretic mobility shift assay (EMSA) using recombinant MYC:MAX and MAX:MAX dimers incubated with a biotinylated E-box probe (5′-GCTCAGGGACCACGTGGTCGGGGATC-3′). Binding reactions were conducted with or without 100-fold excess of unlabeled specific (as above) or nonspecific (5′-GCTCAGGGACCAGCTGGTCGGGGATC-3′) competitors. (C and D) Heatmap of the combined average normalized peak intensity in 100 bp bins for all HCF-1N (C) or MYC-HA (D) ChIP-Seq peaks that were within ±2 kb of a TSS, and scaled across each of the cell lines. For clarity in (D), some low-signal data points are excluded. (E) Example IGV screenshots of regions that had significant changes for MYC-HA by ChIP-seq. Asterisks mark the peaks that were significantly changed compared to WT. (F) ChIP, using anti-HCF-1N antibody, was performed on parental or switchable Ramos cells treated for 24 hr with 20 nM 4-OHT. Enrichment of genomic DNA was monitored by qPCR using primers that amplify across peaks. EIF4G3 and HBB are negative loci for HCF-1N. ChIP efficiency was measured based on the percent recovery from input DNA. Shown are the mean and standard error for three biological replicates.
+
+### The MYC–HCF-1 interaction is important for tumor engraftment and maintenance
 
 The ability of MYC to regulate ribosome (van Riggelen et al., 2010) and mitochondrial (Morrish and Hockenbery, 2014) biogenesis are core aspects of its tumorigenic repertoire. We would expect, therefore, that disrupting the MYC–HCF-1 interaction would have a significant impact on the ability of Ramos lymphoma cells to establish and maintain tumors in vivo. To address this expectation, we tested the impact of the 4A MYC mutant on tumorigenesis in mice. Because this is such an aggressive tumor model (Thomas et al., 2019), we did not test the gain-of-function VP16 HBM mutant. In these experiments, we included a second, independent clone carrying the switchable 4A mutation (4A-1 and 4A-2); we also included a switchable ∆264 mutant (Thomas et al., 2019), which deletes residues in the carboxy-terminal half of MYC required for its nuclear localization, as well as interaction with WDR5, HCF-1, and MAX.
 
 First, we assayed tumor engraftment by switching the engineered cells in culture and then injecting into the flanks of nude mice (Figure 7A). As expected, the WT to WT switched cells develop tumors rapidly in vivo (Figure 7B, Figure 7—figure supplement 1A, and Figure 7—source data 1), resulting in all mice reaching humane endpoints and being euthanized by 21 days post-injection (Figure 7C). In contrast, 4A-1, 4A-2, and ∆264 switched cells are significantly delayed, both in tumor growth (Figure 7B, Figure 7—figure supplement 1A, and Figure 7—source data 1) and mortality (Figure 7C). Although 4A-1, 4A-2, and ∆264 switched cells did form tumors, these appear to originate from the outgrowth of unswitched cells in the injected populations, as ~75% of cells in these tumors are in their unswitched state (Figure 7D). In this assay, therefore, the MYC–HCF-1 interaction is required for tumor growth, and there is little if any difference between disruption of the MYC–HCF-1 interaction and disabling the majority of the nuclear functions of MYC.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig7-v1.jpg)
+
+**Figure 7.:** (A) Tumor engraftment schema: wild-type (WT), 4A-1, 4A-2, and ∆264 cells are switched in culture prior to injection into flank of nude mice to test the impact of the mutations on tumor engraftment and growth. (B) Average tumor volume over time following injection of switched cells. Shown are the mean and standard error for six mice each. Only days 5–19 are shown here; the full course of the experiment is depicted in Figure 7—figure supplement 1A. Student’s t-test between WT and each of the mutants was used to calculate p-value; *p<0.000043. (C) Kaplan–Meier survival curves of mice (n = 6 of each) injected with switched cells. Log-rank test was used to calculate p-value (<0.0001) from six biological replicates. (D) PCR assays of genomic DNA were used to determine the proportion of switched cells present in each tumor after sacrifice. Each dot represents an individual tumor, and the line indicates the mean for each group. Student’s t-test between WT and each of the mutants was used to calculate p-values; a = 0.0002, b < 0.0001. (E) Tumor maintenance schema: Unswitched WT, 4A-1, 4A-2, and ∆264 cells were injected into the flanks of nude mice. Tumors were grown until day 15, at which point mice received tamoxifen injections (one per day for 3 days) to induce switching of the cells. (F) Average tumor volume before and after cells were switched. The day at which tamoxifen (Tam) administration was initiated is indicated with an arrow. Shown are the mean and standard error for seven mice for WT and six mice for 4A-1, 4A-2, and ∆264 cells. (G) Kaplan–Meier survival curves of mice in the tumor maintenance assay (n = 7 for WT, and n = 6 for 4A-1, 4A-2, and ∆264). The day at which tamoxifen (Tam) administration was initiated is indicated with an arrow. Log-rank test was used to calculate p-value (<0.0001). (H) Annexin V staining and flow cytometry were performed on cells isolated from tumors at 48 and 96 hr following the first tamoxifen administration to determine the extent of apoptosis. Shown are the mean and standard error for four mice each. Student’s t-test between WT and each of the mutants was used to calculate p-value; *p<0.000001. (I) Venn diagram showing the relationship between transcripts significantly (false discovery rate [FDR] < 0.05) decreased in the 4A cell line and the 4A-1 and 4A-2 tumors. (J) Gene ontology (GO) enrichment analysis of transcripts significantly (FDR < 0.05) decreased in the 4A cell line and the 4A-1 and 4A-2 tumors. (K) Venn diagram showing the overlap of transcripts significantly (FDR < 0.05) increased in the 4A cell line and the 4A-1 and 4A-2 tumors. (L) GO enrichment analysis of transcripts significantly (FDR < 0.05) increased in the 4A cell line and the 4A-1 and 4A-2 tumors.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/60191/elife-60191-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Tumor volumes for individual mice in the tumor engraftment assay. (B) Tumor volumes for individual mice in the tumor maintenance assay. The day at which tamoxifen (Tam) administration was initiated is indicated with an arrow. (C) Caspase activity in cells isolated from tumors (n = 4 each) at 48 and 96 hr following the first tamoxifen administration was measured. Shown are the mean and standard error for the fold-change (FC) over wild type (WT) for each. Student’s t-test between WT and each of the mutants was used to calculate p-value; *p<0.000001. (D) Propidium staining and flow cytometry were performed on cells isolated from four tumors each at 48 and 96 hr following the first tamoxifen administration to determine the extent of cell death. Shown are the mean and standard error. Student’s t-test between WT and each of the mutants was used to calculate p-value; *p<0.000628, **p<0.000001. (E) z-transformed RNA-Seq data from tumors (n = 4) extracted after switching, ranked by FC. Transcripts that were significantly (false discovery rate [FDR] < 0.05) impacted compared to WT are shown. (F) Venn diagram showing the overlap of transcripts significantly (FDR < 0.05) decreased in the 4A-1, 4A-2, and ∆264 tumors. (G) Venn diagram showing the relationship of transcripts significantly (FDR < 0.05) increased in the 4A-1, 4A-2, and ∆264 tumors. (H) Gene ontology (GO) enrichment analysis of transcripts with significantly (FDR < 0.05) decreased expression in the 4A-1, 4A-2, and ∆264 tumors. (I) GO enrichment analysis of transcripts significantly (FDR < 0.05) increased in the 4A-1, 4A-2, and ∆264 tumors. (J) GO enrichment analysis of transcripts significantly (FDR < 0.05) decreased in vivo only (4A-1 and 4A-2 tumors, but not the 4A cell line). (K) GO enrichment analysis of transcripts significantly (FDR < 0.05) increased in vivo only (4A-1 and 4A-2 tumors, but not the 4A cell line).
 
 Next, we injected unswitched cells into the flanks of mice, allowed tumors to form, and then switched to each of the MYC variants by injecting mice with tamoxifen (Figure 7E). As we observed previously (Thomas et al., 2019), the ‘WT to WT’ tumors continue to grow rapidly after switching (Figure 7F, Figure 7—figure supplement 1B, and Figure 7—source data 1), and all mice had to be euthanized before 30 days (Figure 7G). For the 4A switches, however, tumors rapidly regressed (Figure 7F), and all mice survived—and were tumor free—for the 60-day duration of the experiment (Figure 7—figure supplement 1B and Figure 7—source data 1). Regression of the 4A tumors occurs at a pace that is virtually indistinguishable from the ∆264 mutant (Figure 7—figure supplement 1B and Figure 7—source data 1), and like the ∆264 scenario, is accompanied by high levels of apoptosis, as measured by Annexin V staining (Figure 7H), caspase activity (Figure 7—figure supplement 1C), and sub-G1 DNA content (Figure 7—figure supplement 1D). We conclude that the interaction of MYC with HCF-1 is essential for tumor maintenance in this context.
 
@@ -118,31 +371,475 @@ Finally, there are two additional cancer-relevant connections worth mentioning. 
 
 ## Materials and methods
 
-## Primers and cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>MYC</td>
+      <td>NA</td>
+      <td>UniProt ID: P01106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>HCFC1</td>
+      <td>NA</td>
+      <td>UniProt ID: P51610</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta (DE3) Competent Cells</td>
+      <td>Millipore</td>
+      <td>Cat#: 70954</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>XL1-Blue Competent Cells</td>
+      <td>Agilent Technologies</td>
+      <td>Cat#: 200249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Ramos</td>
+      <td>ATCC</td>
+      <td>Cat#: CRL-1596; RRID:CVCL_0597</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Ramos Cre-ERT2</td>
+      <td>Thomas et al., 2019</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Ramos Cre-ERT2 MYC-WT</td>
+      <td>Thomas et al., 2019</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Ramos Cre-ERT2 MYC-Δ264</td>
+      <td>Thomas et al., 2019</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Ramos Cre-ERT2 MYC-4A</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘Generation of switchable MYC allele Ramos cell lines’</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Ramos Cre-ERT2 MYC-VP16 HBM</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘Generation of switchable MYC allele Ramos cell lines’</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Ramos FKBPFV-HCF-1N</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘Generation of dTAG Ramos cell lines’</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-HCF-1C polyclonal</td>
+      <td>Bethyl Laboratories</td>
+      <td>Cat#: A301-399A; RRID:AB_961012</td>
+      <td>Western blotting (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-HCF-1N polyclonal</td>
+      <td>Machida et al., 2009</td>
+      <td>NA</td>
+      <td>Western blotting (1:10,000), ChIP (6 μl)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-c-MYC (Y69) monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat#: ab32072; RRID:AB_731658</td>
+      <td>Western blotting (1:10,000), IP (2 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-HA (C29F4) monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 3724; RRID:AB_1549585</td>
+      <td>Western blotting (1:4000), ChIP (5 μl), IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-WDR5 (D9E1I) monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 13105; RRID:AB_2620133</td>
+      <td>Western blotting (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-IgG polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 2729; RRID:AB_1031062</td>
+      <td>IP (2 μg), ChIP (0.8 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-FLAG (M2) monoclonal (HRP)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: A8592; RRID:AB_439702</td>
+      <td>Western blotting (1:10,000 or 1:50,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-T7 monoclonal (HRP)</td>
+      <td>Millipore</td>
+      <td>Cat#: 69048; RRID:AB_11212778</td>
+      <td>Western blotting (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-GAPDH (GA1R) monoclonal (HRP)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: MA5-15738-HRP; RRID:AB_2537659</td>
+      <td>Western blotting (1:50,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-GAPDH (D16H11) monoclonal (HRP)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 8884; RRID:AB_11129865</td>
+      <td>Western blotting (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-α-Tubulin (11H10) monoclonal (HRP)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 11H10; RRID:AB_10695471</td>
+      <td>Western blotting (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-histone H3 (D1H2) XP monoclonal (HRP)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 12648; RRID:AB_2797978</td>
+      <td>Western blotting (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG polyclonal (HRP)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 31463; RRID:AB_228333</td>
+      <td>Western blotting (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-rabbit IgG monoclonal, light chain specific (HRP)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat#: 211-032-171; RRID:AB_2339149</td>
+      <td>Western blotting (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG polyclonal (Alexa Fluor 594)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A11012; RRID:AB_2534079</td>
+      <td>IF (1:350)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Anti-FLAG M2 affinity gel</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: A2220; RRID:AB_10063035</td>
+      <td>IP (20 μl bed volume)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein A Agarose</td>
+      <td>Roche</td>
+      <td>Cat#: 11134515001</td>
+      <td>IP/ChIP (20 μl bed volume)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCRIS-mCherry-FLAG-dTAG-HCFC1</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘Generation of dTAG Ramos cell lines’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGuide-HCFC1-N</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘Generation of dTAG Ramos cell lines’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-U6-Chimeric_BB-CBh-hSpCas9</td>
+      <td>Addgene</td>
+      <td>Cat#: 42230; RRID:Addgene_42230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MYC-WT targeting vector</td>
+      <td>Thomas et al., 2019</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MYC-4A targeting vector</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘Generation of switchable MYC allele Ramos cell lines’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MYC-VP16 HBM targeting vector</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘Generation of switchable MYC allele Ramos cell lines’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGuide-MYC1</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘Generation of switchable MYC allele Ramos cell lines’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-C2</td>
+      <td>Thomas et al., 2015</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-MYC WT</td>
+      <td>Thomas et al., 2015</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-MYC 4A</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘Transient transfection, western blotting, and immunoprecipitation’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-MYC H307G</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘Transient transfection, western blotting, and immunoprecipitation’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-MYC VP16 HBM</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘Transient transfection, western blotting, and immunoprecipitation’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-MYC VP16 HBM H307G</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘Transient transfection, western blotting, and immunoprecipitation’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-MYC WBM</td>
+      <td>Thomas et al., 2015</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSUMO-MYC WT-FLAG</td>
+      <td>Thomas et al., 2015</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSUMO-MYC 4A-FLAG</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘In vitro binding assays’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSUMO-MYC VP16 HBM-FLAG</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘In vitro binding assays’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT7-IRES His-T7-HCF-1VIC</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘In vitro binding assays’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRSET-6XHis-MYC WT</td>
+      <td>Farina et al., 2004</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRSET-6XHis-MYC 4A</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘Electrophoretic mobility shift assays’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRSET-6XHis-MYC VP16 HBM</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>See section ‘Electrophoretic mobility shift assays’</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 DNA Polymerase</td>
+      <td>NEB</td>
+      <td>Cat#: M0491</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>OneTaq DNA Polymerase</td>
+      <td>NEB</td>
+      <td>Cat#: M0480</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly Cloning Kit</td>
+      <td>NEB</td>
+      <td>Cat#: E5510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LightShift Chemiluminescent EMSA Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 20148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: D2650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dTAG-47</td>
+      <td>Vanderbilt Institute of Chemical Biology Synthesis Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PRISM 8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FACSDiva 8.0</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_001456</td>
+      <td>https://www.bdbiosciences.com/en-us/instruments/research-instruments/research-software/flow-cytometry-acquisition/facsdiva-software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>FlowJo</td>
+      <td>RRID:SCR_008520</td>
+      <td>https://www.flowjo.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaboAnalyst 4.0</td>
+      <td>Chong et al., 2019</td>
+      <td>RRID:SCR_015539</td>
+      <td>https://www.metaboanalyst.ca/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metascape</td>
+      <td>Zhou et al., 2019</td>
+      <td>RRID:SCR_016620</td>
+      <td>https://metascape.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID</td>
+      <td>Huang et al., 2009a, Huang et al., 2009b</td>
+      <td>RRID:SCR_001881</td>
+      <td>https://david.ncifcrf.gov/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Primers and cloning
 
 See Supplementary file 1 for primer sequences. PCRs were performed using either Q5 DNA Polymerase (NEB, Ipswich, Massachusetts, M0491) or OneTaq DNA Polymerase (NEB M0480). Gibson assemblies were performed using Gibson Assembly Cloning Kit (NEB E5510). More specific details about cloning steps can be found in the relevant sections.
 
-## Cell culture
+### Cell culture
 
 293T cells were maintained in DMEM with 4.5 g/l glucose, L-Glutamine, and sodium pyruvate (Corning, Corning, New York, 10–013-CV), and supplemented with 10% fetal bovine serum (FBS, Denville Scientific, Metuchen, New Jersey, FB5001-H), and 1% penicillin/streptomycin (P/S, Gibco, Waltham, Massachusetts, 15140122). Ramos cells were obtained directly from the ATCC (Manassas, Virginia, CRL-1596) and maintained in RPMI 1640 with L-glutamine (Corning 10–040-CV), and supplemented with 10% FBS (Denville Scientific FB5001-H), and 1% P/S (Gibco 15140122). All cell lines used were confirmed as mycoplasma-negative; 293T cells were authenticated by STR profiling.
 
-## Antibodies
+### Antibodies
 
 Rabbit anti-HCF1C polyclonal (Bethyl Laboratories, Montgomery, Texas, Cat# A301-399A); rabbit anti-HCF1N polyclonal (Machida et al., 2009); rabbit anti-c-MYC (Y69) monoclonal (Abcam, Cambridge, United Kingdom, Cat# ab32072); rabbit anti-HA (C29F4) monoclonal (Cell Signaling Technology, Danvers, Massachusetts, Cat# 3724); rabbit anti-WDR5 (D9E1I) monoclonal (Cell Signaling Technology Cat# 13105); rabbit anti-IgG polyclonal (Cell Signaling Technology Cat# 2729); mouse anti-FLAG (M2) monoclonal, HRP-conjugated (Sigma-Aldrich, St. Louis, Missouri, Cat# A8592); mouse anti-T7 monoclonal, HRP conjugated (Millipore, Burlington, Massachusetts, Cat# 69048); mouse anti-GAPDH (GA1R) monoclonal, HRP conjugated (Thermo Fisher Scientific, Waltham, Massachusetts, Cat# MA5-15738-HRP); rabbit anti-GAPDH (D16H11) monoclonal, HRP conjugated (Cell Signaling Technology Cat# 8884); goat anti-rabbit IgG polyclonal, HRP conjugated (Thermo Fisher Scientific Cat# 31463); mouse anti-rabbit IgG monoclonal, light chain specific, HRP conjugated (Jackson ImmunoResearch Laboratories, West Grove, Pennsylvania, Cat# 211-032-171); rabbit anti-histone H3 (D1H2) XP monoclonal, HRP conjugated (Cell Signaling Technology Cat# 12648); rabbit anti-α-Tubulin (11H10) monoclonal, HRP conjugated (Cell Signaling Technology Cat# 9099); goat anti-rabbit IgG polyclonal, Alexa Fluor 594 conjugated (Thermo Fisher Scientific A11012).
 
-## Generation of switchable MYC allele Ramos cell lines
+### Generation of switchable MYC allele Ramos cell lines
 
 Q5 site-directed mutagenesis of MYC-WT targeting vector from Thomas et al., 2019 was used to create MYC-4A (4A_F and 4A_R) and MYC-VP16 HBM (VP16 HBM_F and VP16 HBM_R). The pGuide plasmid described by Thomas et al., 2019 was used as a backbone to introduce the sgRNA sequence GCTACGGAACTCTTGTGCGTA (pGuide-MYC1) by Q5 site directed mutagenesis with the primers GUIDE MYC-1A and GUIDE MYC-1B.
 
 For the generation of switchable cells, 10 million Ramos cells stably expressing CRE-ERT2 (Thomas et al., 2019) were electroporated (BioRad Gene Pulser II, 220 V and 950 μF) with 10 μg of relevant targeting vector (MYC-4A or MYC-VP16 HBM), 15 μg pGuide-MYC1, and 15 μg pX330-U6-Chimeric_BB-CBh-hSpCas9 (gift from Feng Zhang, AddGene plasmid #42230) (Cong et al., 2013). WT and ∆264 cell lines were the same as those used in Thomas et al., 2019. Cells were treated with 150 ng/ml puromycin (Sigma-Aldrich P7255) and 100 μg/ml hygromycin (Corning 30240CR), selecting for the switchable MYC cassette and CRE-ERT2 recombinase, respectively. Following selection, single cells, stained using propidium iodide (PI, Sigma-Aldrich P4864) for viability, were sorted by the Vanderbilt Flow Cytometry Shared Resource using a BD FACSAria III flow cytometer into a 96-well plate to generate clonal cell lines under puromycin and hygromycin selection. Individual clones were expanded, and initially validated by switching for 24 hr using 20 nM (Z)−4-Hydroxytamoxifen (4-OHT, Tocris, Minneapolis, Minnesota, 3412), and flow cytometry (see below) for GFP expression. Further validation was performed by western blotting after 24 hr 20 nM ±4 OHT (see below) and by sSouthern blotting (see below). The 4A cell line (4A-1) used for the majority of experiments is haploinsufficient for part of chromosome 11, approximately between co-ordinates 118,685,194 and 134,982,408. This region of the genome was excluded from genomic analyses. For all experiments, switching was performed by treatment with 20 nM 4-OHT for 2 or 24 hr (see relevant method or figure legend).
 
-## Generation of dTAG Ramos cell lines
+### Generation of dTAG Ramos cell lines
 
 To create pCRIS-mCherry-FLAG-dTAG-HCFC1, pCRIS-PITChv2-Puro-dTAG (BRD4) (gift from James Bradner, AddGene plasmid #91793) (Nabet et al., 2018) was first modified to remove the BRD4 homology arms and replace the 2XHA tags with a FLAG tag. This was done by Gibson assembly of the vector (Q5 amplification using pCRIS-HCFC1N_F and pCRIS_R), puromycin cassette (Q5 amplification using Puro-1 and Puro-FLAG_R), and FKBP12FV (Q5 amplification using FLAG-FKBP_F and pCRIS-FKBP_R). The resulting vector was again modified using Gibson assembly by combining the vector (Q5 amplification using pCRIS-HCFC1N_F and pCRIS-HCFC1N_R), an upstream 271 bp HCFC1 5’ homology arm (hg19 chrX:153236265–153236535, OneTaq amplification using HCFC1N_F and HCFC1N-5’Hom_R), mCherry (Q5 amplification using mCherry_F and mCherry_R), FKBP12FV (Q5 amplification using HCFC1-mCherry-FKBP_F and HCFC1-mCherry-FKBP_R), and a downstream 800 bp HCFC1 3’ homology arm (hg19 chrX:153235465–153236264, OneTaq amplification using HCFC1N-3’Hom_F and HCFC1N-3’Hom_R). The pGuide plasmid described by Thomas et al., 2019 was used as a backbone to introduce the guide RNA sequence CAGAAGCACCGCTGGCAAGT (pGuide-HCFC1-N) by Q5 site-directed mutagenesis with the primers HCFC1N-sgRNA_F and HCFC1N-sgRNA_R.
 
 Fifteen micrograms of pGuide-HCFC1-N and 10 μg of pCRIS-mCherry-FLAG-dTAG-HCFC1 were electroporated (BioRad, Hercules, California, Gene Pulser II, 220 V and 950 μF) into Ramos cells, alongside 15 μg pX330-U6-Chimeric_BB-CBh-hSpCas9 (gift from Feng Zhang, AddGene plasmid #42230) (Cong et al., 2013) into 10 million Ramos cells. Because HCFC1 is on the X chromosome and Ramos cells are XY (Klein et al., 1975), only a single copy of HCFC1 is present for targeting using CRISPR/Cas9. Following electroporation, cells were expanded and a population of mCherry-positive cells, stained using Zombie NIR viability dye (BioLegend, San Diego, California, 423105), was sorted by the Vanderbilt Flow Cytometry Shared Resource using a FACSAria III flow cytometer (Becton Dickinson (BD), Franklin Lakes, New Jersey). This population of cells was expanded further before validation by western blotting. All experiments were conducted using this population and were treated with either DMSO (Sigma-Aldrich D2650) or 500 nM dTAG-47, which was synthesized by the Vanderbilt Institute of Chemical Biology Synthesis Core.
 
-## Transient transfection, western blotting, and immunoprecipitation
+### Transient transfection, western blotting, and immunoprecipitation
 
 Q5 site-directed mutagenesis of pFLAG-MYC WT (Thomas et al., 2015) was used to generate the following plasmids: pFLAG-MYC 4A (4A_F and 4A_R), pFLAG-MYC H307G (H307G_F and H307G_R), pFLAG-MYC VP16 HBM (VP16 HBM_F and VP16 HBM_R), and pFLAG-MYC VP16 HBM H307G (VP16 HBM H307G_F and VP16 HBM H307G_R). pFLAG-MYC WBM is from Thomas et al., 2015. Plasmid (19 μg) was prepared with 0.25 M CaCl2, incubated for 10 min with 1× HBS (2× HBS: 140 mM NaCl, 1.5 mM Na2HPO4, 50 mM HEPES, pH 7.05), and then applied drop-wise to 293T cells. Cells were grown for 2 days before harvesting (see below).
 
@@ -150,15 +847,15 @@ Cell lysates for western blotting or immunoprecipitation (IP) were prepared by r
 
 Protein from lysates and IPs were separated out by SDS-polyacrylamide gel electrophoresis (PAGE) in running buffer (25 mM Tris, 192 mM glycine, 0.2% SDS). Wet transfer to PVDF (PerkinElmer, Waltham, Massachusetts, NEF1002) was carried out in Towbin Transfer Buffer (25 mM Tris, 192 mM glycine, and 10% methanol). Membrane was blocked in 5% milk in TBS-T (20 mM Tris pH 7.6, 140 mM NaCl, 0.1% Tween-20), hybridized overnight in primary antibody (or 1 hr for HRP-conjugated), and for 1 hr in HRP-conjugated secondary antibody (if required). ECL substrates, SuperSignal West Pico (Pierce, Waltham, Massachusetts, 34080), Pico+ (Pierce 34580), and Femto (Pierce 34095) were used in various combinations for detection of bands by exposure to film.
 
-## Chromatin fractionation
+### Chromatin fractionation
 
 Chromatin fractionation was performed, with slight modification, as described by Méndez and Stillman, 2000. Switchable MYC Ramos cells that had been treated for 24 hr with 20 nM 4-OHT were washed in ice-cold PBS, resuspended in 200 µl Buffer A (10 mM HEPES pH 7.9, 10 mM KCl, 1.5 mM MgCl2, 0.34 M sucrose, 10% glycerol, 1 mM DTT) + PIC + PMSF + 0.1% Triton X-100, and incubated on ice for 10 min. The resulting lysate was centrifuged 1300 × g for 5 min at 4°C, with the pellet (P1) containing the nuclei. The supernatant (S1) was centrifuged at 20,000 × g for 10 min at 4°C, giving pellet P2 and supernatant S2. P2 was discarded and S2 corresponding to the soluble portion of the total cell extract was diluted out in Laemmli buffer. P1 was gently washed in Buffer A, resuspended by pipetting up and down in Buffer B (3 mM EDTA, 0.2 mM EGTA, 1 mM DTT) + PIC + PMSF, and incubated on ice for 30 min. The lysed nuclei were centrifuged at 1700 × g for 5 min at 4°C to give soluble nuclear proteins (S3) and chromatin-bound proteins (P3). S3 was diluted out in Laemmli buffer. P3 was gently washed in Buffer B, resuspended in Laemmli buffer, and sonicated for 15 s at 25% power. All samples were incubated at 95°C for 3 min. Proteins were separated out by SDS-PAGE and transferred to PVDF, as described above, and probed for HCF-1C, HA, tubulin, and H3.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Following a 24 hr treatment with 20 nM 4-OHT, 105 switchable MYC Ramos cells were attached to slides by CytoSpin (800 RPM, 3 min), fixed for 10 min with 3% methanol-free formaldehyde (Thermo Fisher Scientific 28908) diluted in PBS, and washed three times with PBS. Cells were permeabilized for 10 min with Permeabilization Solution (0.1% Triton X-100 in PBS), blocked for 1 hr with Blocking Solution (2.5% BSA in Permeabilization Solution), and incubated with Blocking Solution containing anti-HA antibody (1:500, Cell Signaling 3724) for 1 hr. Cells were washed three times with PBS and incubated with Blocking Solution containing Goat anti-Rabbit IgG Alexa Fluor 594 antibody (1:350, Thermo Fisher Scientific A11012) for 1 hr. Cells were then washed three times with PBS, and coverslips mounted with ProLong Gold Antifade Mountant with DAPI (Thermo Fisher Scientific P36941). Slides were imaged by wide-field fluorescent microscopy on a Nikon Eclipse Ti equipped with a Nikon Plan Apo λ 100×/1.45 Oil objective, Nikon DS-Qi2 camera, and Excelitas X-Cite 120LED illuminator using identical settings for each sample and representative images shown.
 
-## Flow cytometry and cell cycle analysis
+### Flow cytometry and cell cycle analysis
 
 Cells were filtered into 35 μm nylon mesh Falcon round bottom test tubes for flow cytometry, which was performed in the Vanderbilt Flow Cytometry Shared Resource. Single cells were gated based on side and forward scatter using the stated instruments.
 
@@ -170,11 +867,11 @@ For cell cycle analysis of the FKBPFV-HCF-1N Ramos cells, cells were treated wit
 
 See section 'In vivo studies: Tumor formation and maintenance assays' for details regarding flow cytometry experiments conducted on cells extracted from mice tumors.
 
-## Southern blotting
+### Southern blotting
 
 Genomic DNA (gDNA) was prepared from parental and unswitched MYC switchable cells (WT, 4A, and VP16 HBM) (Miller et al., 1988). Briefly, cells were rinsed in ice-cold 1× PBS and resuspended in DNA extraction buffer (10 mM Tris pH 8.1, 400 mM NaCl, 10 mM EDTA, 1% SDS, 50 μg/ml proteinase K [PK, Macherey-Nagel, Düren, Germany, 740506]). Lysis was performed overnight in a rotisserie at 56°C, before gDNA was extracted using ethanol precipitation. Southern blot was performed similar to that described by Southern, 1975. gDNA (10 μg) was digested using XbaI (NEB R0145) and run out on a 1% agarose gel. DNA was transferred overnight to Hybond-N+ nylon membrane (GE Healthcare, Chicago, Illinois, RPN303B) by capillary action in transfer buffer (0.5 M NaOH, 0.6 M NaCl). The following day the membrane was immersed in neutralization buffer (1 M NaCl, 0.5 M Tris pH 7.4), UV cross-linked, and pre-hybridized overnight at 42°C in pre-hybridization buffer (50% formamide, 5× SSCPE [20× SSCPE: 2.4 M NaCl, 0.3 M Na citrate, 0.2 M KH2PO4, 0.02 M EDTA], 5× Denhardt’s solution (Invitrogen, Waltham, Massachusetts, 750018), 0.5 mg/ml salmon sperm DNA [Agilent, Santa Clara, California, 201190], 1% SDS). Templates for probe generation were prepared by Q5 amplification from MYC-WT targeting vector using primers GFP_F and GFP_R (GFP template) and from parental Ramos cell gDNA using primers 5’_F and 5’_R, followed by gel purification. Probes were prepared by random priming of corresponding PCR products (5’ and GFP templates) in the presence of [αP32]CTP (PerkinElmer BLU513H100UC). Unincorporated nucleotides were removed using a Sephadex G-50 column (GE Healthcare 28-9034-08). The membrane was incubated overnight at 42°C with probe in hybridization buffer (50% formamide, 5× SSCPE, 5× Denhardt’s solution [Invitrogen 750018], 0.1 mg/ml salmon sperm DNA [Agilent 201190], 1% SDS, 10% Dextran solution). Membrane was washed three times in 2× SSC/0.1% SDS (20× SSC: 3 M NaCl, 0.3 M Na Citrate, pH 7.0) and twice in 0.2× SSC/0.1% SDS, then exposed to a phosphor screen and developed using a phosphorimager (GE Healthcare Typhoon).
 
-## Chromatin immunoprecipitation and library preparation
+### Chromatin immunoprecipitation and library preparation
 
 Chromatin immunoprecipitation (ChIP) was performed, with slight modification, as described by Thomas et al., 2015. Cells were first treated with 20 nM 4-OHT for 24 hr, then cross-linked in 1% methanol-free FA (Thermo Fisher 28908) for 10 min and quenched using 0.125 mM glycine. The cells were then rinsed twice in ice-cold 1× PBS, and lysed in formaldehyde lysis buffer (FALB: 50 mM HEPES pH 7.5, 140 mM NaCl, 1 mM EDTA, and 1% Triton X-100) + 1% SDS + PIC (Roche 05056489001). Sonication was performed in a BioRuptor (Diagenode, Denville, New Jersey) for 25 min, 30 s on/30 s off, and debris removed by centrifugation. To enable ChIP efficiency to be determined by qPCR, a 1:50 (2%) sample of chromatin was removed (input) prior to antibody addition.
 
@@ -188,7 +885,7 @@ In vitro binding assays pSUMO-MYC WT-FLAG containing 6XHis- and FLAG-tagged full
 
 HCF-1VIC (residues 1–380) from pCGT-HCF1VIC (Thomas et al., 2016) was cloned into pT7-IRES His-N (Takara 3290) using BamHI-HF (NEB R3136) and SalI-HF (NEB R3138), and Q5 site-directed mutagenesis was used to add an N-terminal T7 tag using the primers T7-HCF1_F and T7-HCF1_R. pT7-IRES His-T7-HCF-1VIC was in vitro transcribed/translated using the TnT Quick Coupled Transcription/Translation System (Promega, Madison, Wisconsin, L1171). Two milligrams of recombinant MYC and 12 μl of T7-HCF-1VIC were rotated overnight at 4°C in Kischkel buffer + PIC (Roche 05056489001). Anti-FLAG M2 Affinity Gel (Sigma-Aldrich), blocked with 10 μg BSA, was added to each sample and rotated for 2 hr at 4°C. Beads were washed 4× in Kischkel buffer + 2 μg/ml Aprotinin (VWR, Radnor, Pennsylvania, 97062–752) + 1 μg/ml Pepstatin (VWR 97063–246) + 1 μg/ml Leupeptin (VWR 89146–578), and incubated in 1× Laemmli buffer for 5 min at 95°C.
 
-## Electrophoretic mobility shift assays
+### Electrophoretic mobility shift assays
 
 MYC:MAX dimers were purified and prepared as described by Farina et al., 2004. pRSET-6XHis-MYC WT, a gift from Ernest Martinez, was used as a template for Q5 site directed mutagenesis to substitute in the 4A (4A_F and 4A_R) and VP16 HBM (VP16 HBM_F and VP16 HBM_R) mutations. The resulting plasmids, or pET-His-MAX, also from Ernest Martinez, were transformed into Rosetta cells (Millipore 70954), grown overnight, and induced the following day for 3 hr with 1 mM IPTG at 30°C. Resulting bacterial cell pellets were washed 1× with ice-cold wash buffer (10 mM Tris pH 7.9, 100 mM NaCl, 1 mM EDTA), then resuspended in lysis buffer (20 mM HEPES pH 7.9, 500 mM NaCl, 10% glycerol, 0.1% NP-40, 10 mM BME, 1 mM PMSF), and sonicated. Centrifugation was used to separate out the insoluble (pellet) and soluble (supernatant) fractions. For MAX, the recombinant protein is present in the supernatant and was then purified using Ni-NTA agarose (see below). For MYC samples, the supernatant was discarded, and the insoluble pellet was resuspended in E-buffer (50 mM HEPES pH 7.9, 5% glycerol, 1% NP-40, 10% Na-DOC, 0.5 mM BME), lysed using a Dounce homogenizer and B-pestle, and centrifuged. The pelleted inclusion bodies were lysed overnight in S-buffer (10 mM HEPES pH 7.9, 6 M GuHCl, 5 mM BME) by shaking at 25°C, and debris cleared by centrifugation.
 
@@ -198,19 +895,19 @@ For renaturation, 1.5 μg recombinant MAX was combined with 15 μg recombinant M
 
 Double-stranded labeled E-box probe (biotin group at the 3’ end) and unlabeled competitors were prepared with dsDNA buffer (30 mM Tris pH 7.9, 200 mM KCl), and incubated at 95°C for 5 min. The E-box sequence used was 5′-GCTCAGGGACCACGTGGTCGGGGATC-3′ and the mutant E-box sequence used was 5′-GCTCAGGGACCAGCTGGTCGGGGATC-3′ (IDT). Double-stranded probe and the specific and non-specific competitors were prepared by combining 25 μM of each strand in dsDNA buffer (30 mM Tris pH 7.9, 200 mM KCl). For the probe, the forward strand carried a 3’ biotin group; 20 fmol of labeled probe was bound to 0.55 pmol MYC:MAX or 0.06 pmol MAX:MAX dimers in the presence of 20 ng poly(dI-dC) (Thermo Fisher 20148E) in binding reaction buffer (15 mM Tris pH 7.9, 15% glycerol, 100 mM KCl, 0.15 mM EDTA, 0.075% NP-40, 7.5 mM BME, 375 ng/μl BSA) for 30 min at room temperature. For reactions involving unlabeled specific or nonspecific competitor, these were included in the binding reaction at a 100-fold excess over the biotinylated probe. EMSA gel loading solution (Thermo Fisher 20148K) was added to each sample and these were loaded onto a pre-run 6% polyacrylamide gel in 0.5× TBE (45 mM Tris, 45 mM boric acid, 1 mM EDTA). The gel was transferred to Hybond-N+ nylon membrane (GE Healthcare RPN303B) in 0.5× TBE for 30 min at 100 V. The remainder of the protocol was performed using LightShift Chemiluminescent EMSA Kit (Thermo Fisher 20148) according to manufacturer’s instructions.
 
-## RNA preparation, RT-qPCR, and RNA-Seq
+### RNA preparation, RT-qPCR, and RNA-Seq
 
 Cell pellets were resuspended in 1 ml TRIzol (Invitrogen 15596026), and RNA was prepared according to the manufacturer’s instructions. For switchable MYC allele Ramos cells, cells were treated with 20 nM 4-OHT for 24 hr and harvested. Prepared RNA was submitted to GENEWIZ (South Plainfield, NJ) for DNAse treatment, rRNA depletion, library preparation, and 150 bp paired-end sequencing on Illumina HiSeq. For untagged or FKBPFV-HCF-1N Ramos cells, cells were treated with DMSO or 500 nM dTAG-47 for 3 hr, and prepared RNA was DNAse treated prior to submission to Vanderbilt Technologies for Advanced Genomics for rRNA depletion, library preparation, and 150 bp paired-end sequencing on Illumina NovaSeq 6000. The total number of sequencing reads for each replicate is shown in Supplementary file 2.
 
 For validation of RNA-seq by reverse transcriptase qPCR (RT-qPCR), RNA was prepared as above and 1 μg converted to cDNA using M-MLV reverse transcriptase (Promega M1701) in the presence of random hexamers (Invitrogen N8080127), RNase inhibitor (Thermo Fisher Scientific N8080119), and dNTPs (NEB N0446S). The resulting cDNA was brought up to a final volume of 160 μl using water. qPCR was performed in a final volume of 15 μl, containing 2× SYBR FAST qPCR Master Mix (Kapa), 300 nM of each primer, and 2 μl of diluted sample. Three technical replicates were performed for each sample, and the mean Ct of these was used for calculating FC. The mean Ct value for the gene of interest (GOI) was normalized to GAPDH (ΔCt) using the equation Ct(GOI)-Ct(GAPDH). For switchable MYC allele Ramos cells, ∆∆Ct was calculated between treated (+4-OHT) and untreated (−4-OHT) cells. For FKBPFV-HCF-1N Ramos cells, ΔΔCt was calculated between dTAG-47-treated and DMSO-treated cells. FC was then calculated using the equation 2^(−∆∆Ct). Three biological replicates of RT-qPCR were performed. Primer sequences used are listed in Supplementary file 1.
 
-## Next-generation sequencing analyses
+### Next-generation sequencing analyses
 
 After adapter trimming by Cutadapt (Martin, 2011), RNA-Seq reads were aligned to the hg19 genome using STAR (Dobin et al., 2013) and quantified by featureCounts (Liao et al., 2014). Differential analysis were performed by DESeq2 (Love et al., 2014), which estimated the log2 FCs, Wald test p-values, and adjusted p-value (false discovery rate, FDR) by the Benjamini–Hochberg procedure. The significantly changed genes were chosen with the criteria FDR < 0.05. ChIP-Seq reads were aligned to the hg19 genome using Bowtie2 (Langmead et al., 2009) after adapter trimming. Peaks were called by MACS2 (Feng et al., 2012) with a q-value of 0.01. ChIP read counts were calculated using DiffBind (Stark and Brown, 2011) and differential peaks were determined by DESeq2 (Love et al., 2014). Peaks were annotated using Homer command annotatePeaks, and enriched motifs were identified by Homer command findMotifsGenome (http://homer.ucsd.edu/homer/). All genomics data were deposited at GEO with the accession number GSE152385. Reviewers may access these data with the token ‘enanoauyrpmfrmb’.
 
 Details for the referenced MYC ChIP-Seq experiments from Thomas et al., 2019 are available in Tansey et al., 2019 (samples: GSM3593604–GSM3593606 and GSM3593616–3593618).
 
-## Cell growth and glutamine deprivation assays
+### Cell growth and glutamine deprivation assays
 
 To generate a growth curve and determine doubling time of the MYC mutants, switchable MYC cells were treated with 20 nM 4-OHT for 16 hr, and then grown for a further 24 hr. Cells were then plated at a density of 20,000 cells/ml, and counted 3 and 6 days later. Growth rate (GR) was determined through the equation GR = ln(N(7) − N(1))/144, where N(7) is the number of cells per milliliter on day 7, N(1) is the number of cells per milliliter on day 1, and 144 is the number of hours that elapsed between the two measurements. Doubling time (DT) was then determined by the equation DT = ln(2)/GR. To measure the impact of HCF-1N degradation on cell growth, FKBPFV-HCF-1N Ramos cells were plated at a density of 20,000 cells/ml with either DMSO or 500 nM dTAG-47. Cells were then counted every 24 hr for the following 4 days, without replacement of the compound or changing of the media.
 
@@ -218,13 +915,13 @@ To measure the impact of altering the MYC−HCF-1 interaction on cell growth, sw
 
 To measure the impact of altering the MYC−HCF-1 interaction on glutamine dependence, switchable MYC allele Ramos cell lines were treated with 20 nM 4-OHT for 2 hr, and allowed to recover for 3 days. Cells were then split into RPMI 1640 without L-glutamine (Corning 15–040-CV), supplemented with 10% dialyzed FBS (Gemini Bio, West Sacramento, California, 100–108), and 1% P/S (Gibco 15140122), and grown for 16 hr with or without Supplementary file 2 mM glutamine (Gibco 25030081). Glutamine was added back to the cells that were deprived, grown for 3 days, and fixed in 1% FA in PBS for 10 min at room temperature. The proportion of GFP-positive cells was determined using a BD LSR II flow cytometer, and normalized to the proportion of GFP-positive cells prior to being grown with or without supplemental glutamine. For the 4A and VP16 HBM cells, the proportion of GFP-positive cells was normalized to that in WT for glutamine supplementation (Gln+) or deprivation (Gln−).
 
-## Metabolomics
+### Metabolomics
 
-## Sample preparation
+#### Sample preparation
 
 Global, untargeted metabolomics was performed on switchable MYC allele Ramos cell lines treated with 20 nM 4-OHT for 24 hr. Individual cell pellet samples were lysed using 200 µl ice cold lysis buffer (1:1:2, acetonitrile:methanol:ammonium bicarbonate 0.1 M, pH 8.0, LC-MS grade) and sonicated using a probe tip sonicator, 10 pulses at 30% power, cooling down on ice between samples. A bicinchoninic acid protein assay was used to determine the protein concentration for individual samples, and adjusted to 200 µg total protein in 200 µl of lysis buffer. Isotopically labeled standard molecules, Phenylalanine-D8 and Biotin-D2, were added to each sample to assess sample extraction quality. Samples were subjected to protein precipitation by addition of 800 µl of ice cold methanol (4× by volume), and incubated at −80°C overnight. Samples were centrifuged at 10,000 RPM for 10 min to eliminate precipitated proteins and supernatant(s) were transferred to a clean microcentrifuge tube and dried down in vacuo. Samples were stored at −80°C prior to LC-MS analysis.
 
-## Global untargeted LC-MS/MS analysis
+#### Global untargeted LC-MS/MS analysis
 
 For mass spectrometry analysis, individual samples were reconstituted in 50 μl of appropriate reconstitution buffer (HILIC: acetonitrile/ H2O, 90:10, v/v, RPLC: acetonitrile/H2O with 0.1% formic acid, 3:97, v/v). Samples were vortexed well to solubilize the metabolites and cleared by centrifugation using a benchtop mini centrifuge to remove insoluble material. Quality control samples were prepared by pooling equal volumes from each sample. During final reconstitution, isotopically labeled standard molecules, Tryptophan-D3, Carnitine-D9, Valine-D8, and Inosine-4N15, were spiked into each sample to assess LC-MS instrument performance and ionization efficiency.
 
@@ -234,31 +931,31 @@ Full MS analyses were acquired over a mass range of m/z 70–1050 using electros
 
 Tandem mass spectra were acquired using a data-dependent scanning mode in which one full MS scan (m/z 70–1050) was followed by 2, 4 or 6 MS/MS scans. MS/MS scans were acquired in profile mode using an isolation width of 1.3 m/z, stepped collision energy (NCE 20, 40), and a dynamic exclusion of 6 s. MS/MS spectra were collected at a resolution of 15,000, with an AGC target set at 2 × 105 ions, and maximum ion injection time of 100 ms. The retention times and peak areas of the isotopically labeled standards were used to assess data quality.
 
-## Metabolite data processing and analysis
+#### Metabolite data processing and analysis
 
 LC-HR MS/MS raw data were imported, processed, normalized, and reviewed using Progenesis QI v.2.1 (Non-linear Dynamics, Newcastle, UK). All MS and MS/MS sample runs were aligned against a quality control (pooled) reference run, and peak picking was performed on individual aligned runs to create an aggregate data set. Unique ions (retention time and m/z pairs) were grouped (a sum of the abundances of unique ions) using both adduct and isotope deconvolutions to generate unique ‘features’ (retention time and m/z pairs) representative of unannotated metabolites. Data were normalized to all features using Progenesis QI. Compounds with <25% coefficient of variance (%CV) were retained for further analysis. Variance stabilized measurements achieved through log normalization were used with Progenesis QI to calculate p-values by one-way analysis of variance (ANOVA) test and adjusted p-values (Q-values). Significantly changed metabolites were chosen with the criteria Q-value <0.05 and |FC| > 1.5.
 
 Tentative and putative identifications were determined within Progenesis QI using accurate mass measurements (<5 ppm error), isotope distribution similarity, and fragmentation spectrum matching based on database searches against Human Metabolome Database (HMDB) (Wishart et al., 2013), METLIN (Smith et al., 2005), the National Institute of Standards and Technology (NIST) database (Salvat et al., 2016), and an in-house library. In these experiments, the level system for metabolite identification confidence was utilized (Schrimpe-Rutledge et al., 2016). Briefly, many annotations were considered to be tentative (level 3, L3) and/or putative (level 2, L2); in numerous circumstances a top candidate cannot be prioritized, thus annotations may represent families of molecules that cannot be distinguished. Data are available at the NIH Common Fund’s National Metabolomics Data Repository (NMDR) Web site, the Metabolomics Workbench, https://www.metabolomicsworkbench.org where it has been assigned Study ID (ST001429).
 
-## In vivo studies
+### In vivo studies
 
-## Tumor formation and maintenance assays
+#### Tumor formation and maintenance assays
 
 Six-week-old athymic nude mice (female Foxn1nu/nu; Envigo, Indianapolis, IN) were injected subcutaneously into one flank with 107 switched or unswitched WT, ∆264, 4A-1 or 4A-2 cells at the Thomas Jefferson Research Animals Shared Resource Core (IACUC protocol #01770). Mice were maintained in groups for all experiments, unless they were the last surviving member of a cohort. 4A-1 and 4A-2 carry the same 4A mutation, but were independent clones obtained from the same population. To facilitate lymphoma cell seeding, mice received whole-body irradiation (6 Gy) 24 hr prior to cell injection. For tumor formation studies, lymphoma cells were treated in vitro with 4-OHT for 24 hr to induce the switchable MYC cassette and expanded for 2 days prior to being injected into mice. For tumor maintenance studies, mice were injected with unswitched cells and allowed to form palpable tumors. Once tumors reached approximately 200 mm3, mice received intraperitoneal injections of tamoxifen (2 mg in corn oil, Sigma-Aldrich T5648) once daily for three consecutive days to induce the switchable MYC cassette in vivo. Digital calipers were used to measure tumors and volumes calculated using the ellipsoid formula. Mice were sacrificed at humane endpoints based on tumor volume. Kaplan–Meier survival analyses were compared by log-rank tests to determine statistical significance. For lymphoma cell apoptosis evaluation, a cohort of mice with size-matched tumors prior to tamoxifen injection were sacrificed 48 and 96 hr following the first administration of tamoxifen. Flow cytometry (BD LSRII) at Thomas Jefferson University Flow Cytometry Shared Resource was used to measure fragmented (subG1) apoptotic DNA with propidium iodide (Sigma-Aldrich P4170), Annexin V/7AAD (BD Pharmingen 559763), and Caspase three activity (BD Pharmingen) in the lymphoma cells isolated from the tumors, as we previously reported (Adams et al., 2017) and as per manufacturer’s protocols. Two-tailed t-tests were used to determine significance when comparing two groups. All mouse experiments were approved by the Institutional Animal Care and Use Committee at Thomas Jefferson University and complied with state and federal guidelines.
 
-## Tumor gDNA analysis
+#### Tumor gDNA analysis
 
 To determine the proportion of cells that remain switched in the resulting tumors, gDNA was prepared from tumors using the PureLink Genomic DNA Mini Kit (Invitrogen K182002) according to manufacturer’s instructions. As described in Thomas et al., 2019, gDNA from 0% switched (switchable MYC WT cells grown in puromycin) and 100% switched (permanently switched clonal cells) was also prepared in this manner for normalization. The resulting gDNA was diluted down to 50 ng/μl, so that 2 μl (100 ng) was loaded per well for qPCR. qPCR was performed using 2× SYBR FAST qPCR Master Mix (Kapa, Wilmington, Massachusetts, KK4602) in a Bio-Rad CFX96 Real-Time System. For each primer set (MYCP-4 and MYCP-5; SNHG15_F and SNHG15_R) and each independent tumor replicate, an average of three qPCR wells (technical replicates) was used. MYCP-4 and MYCP-5 primer set only amplifies gDNA from unswitched cells, whereas SNHG15_F and SNHG15_R amplifies gDNA from both unswitched and switched cells. For each gDNA sample, ∆Ct was calculated as the difference between MYCP and SNHG15. gDNA from the 0% and 100% switched cells was used to calculate ∆∆Ct, which was then used to normalize the ∆Ct for the tumor gDNA to estimate the proportion of switched cells.
 
-## Tumor RNA-Seq
+#### Tumor RNA-Seq
 
 Tumors from mice sacrificed 48 hr after the first tamoxifen administration were submitted to GENEWIZ for RNA extraction, DNAse treatment, rRNA depletion, library preparation, and 150 bp paired-end sequencing on Illumina HiSeq. Four tumors for each WT, 4A-1, 4A-2, and ∆264 were submitted. The total number of sequencing reads for each replicate is shown in Supplementary file 2.
 
-## Pathway and GO analysis, and figure generation
+### Pathway and GO analysis, and figure generation
 
 Classification of annotated metabolites was extracted from HMDB (Wishart et al., 2018) and LIPID MAPS (Fahy et al., 2009). Metabolite pathway analyses were performed using MetaboAnalyst 4.0 (Chong et al., 2019), and GO analyses using Metascape (Zhou et al., 2019) or DAVID (Huang et al., 2009a; Huang et al., 2009b). Chord diagrams were created using Circos (Krzywinski et al., 2009), pathways using Cytoscape (Shannon et al., 2003), and bubble plots using ggplot2 (Wickham, 2016).
 
-## Statistical analysis and replicates for non-high throughput data
+### Statistical analysis and replicates for non-high throughput data
 
 Unless otherwise stated, all experiments were conducted with at least three independent, biological replicates, and statistical tests were carried out using PRISM 8 (GraphPad).
 

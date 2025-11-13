@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.41841.001 Before primary motor cortex (M1) develops its motor functions, it functions like a somatosensory area. Here, by recording from neurons in the forelimb representation of M1 in postnatal day (P) 8–12 rats, we demonstrate a rapid shift in its sensory responses. At P8-10, M1 neurons respond overwhelmingly to feedback from sleep-related twitches of the forelimb, but the same neurons do not respond to wake-related movements. By P12, M1 neurons suddenly respond to wake movements, a transition that results from opening the sensory gate in the external cuneate nucleus. Also at P12, fewer M1 neurons respond to individual twitches, but the full complement of twitch-related feedback observed at P8 is unmasked through local disinhibition. Finally, through P12, M1 sensory responses originate in the deep thalamorecipient layers, not primary somatosensory cortex. These findings demonstrate that M1 initially establishes a sensory framework upon which its later-emerging role in motor control is built.
+Before primary motor cortex (M1) develops its motor functions, it functions like a somatosensory area. Here, by recording from neurons in the forelimb representation of M1 in postnatal day (P) 8–12 rats, we demonstrate a rapid shift in its sensory responses. At P8-10, M1 neurons respond overwhelmingly to feedback from sleep-related twitches of the forelimb, but the same neurons do not respond to wake-related movements. By P12, M1 neurons suddenly respond to wake movements, a transition that results from opening the sensory gate in the external cuneate nucleus. Also at P12, fewer M1 neurons respond to individual twitches, but the full complement of twitch-related feedback observed at P8 is unmasked through local disinhibition. Finally, through P12, M1 sensory responses originate in the deep thalamorecipient layers, not primary somatosensory cortex. These findings demonstrate that M1 initially establishes a sensory framework upon which its later-emerging role in motor control is built.
 
 ## Introduction
 
@@ -33,13 +33,208 @@ By performing extracellular recordings in the forelimb representation of M1 in u
 
 We recorded neural activity from the forelimb representation of M1 in head-fixed, unanesthetized rats between P8 and P12 (P8: n = 10 pups, 160 neurons; P9: n = 9 pups, 112 neurons; P10: n = 8 pups, 123 neurons; P11: n = 15 pups, 197 neurons; P12 pups: n = 7, 165 neurons) using 4-shank silicon depth electrodes (Figure 1—figure supplement 1a,c; Table 1). Neuronal activity, as well as nuchal, forelimb, and hindlimb electromyographic (EMG) activity, was recorded for 30 min as pups cycled between sleep and wake (Figure 1a). We confirmed electrode placement in the forelimb representation of M1 through exafferent stimulation of the forelimb as well as subsequent staining of flattened, tangentially sectioned brains for cytochrome oxidase (CO; Figure 1b). M1 recording sites were restricted to agranular cortex immediately medial to S1 (Figure 1c–d). In a subset of coronally sectioned brains, recording depth was confirmed to be restricted to the deeper layers of cortex (Figure 1—figure supplement 1a–c).
 
-## Rapid developmental onset of sensory responsiveness in M1 neurons
+![Figure 1.](https://cdn.elifesciences.org/articles/41841/elife-41841-fig1-v2.jpg)
+
+**Figure 1.:** (a) The method used to record electrophysiologically from a head-fixed pup. Dots denote locations of the EMGs (forelimb, red; hindlimb, green; nuchal muscle, blue). (b) Top: Flattened cortex sectioned tangentially to the surface and stained for cytochrome oxidase (CO); primary somatosensory cortex (S1) appears darker than the surrounding tissue. Bottom: Boundaries of primary sensory areas from CO-stained tissue, illustrating S1 and primary motor cortex (M1), as well as primary auditory (A1) and visual (V1) cortex. (c) Enlargement of gray box in (b) showing the somatotopic organization within S1 and M1. hl: hindlimb. (d) Enlargement of gray box in (c) showing the locations of recording sites (blue bars) within the forelimb representation of M1. (e) Left: Representative data at P8 depicting 20 s periods of active sleep (blue) and wake (red), showing forelimb movements (twitches: blue ticks; wake movements: red ticks), unit activity within the forelimb representation of M1, and rectified EMGs from contralateral forelimb and nuchal muscles. Each row of depicts unit activity for a different neuron. The bottom-most neuron (blue or red), is represented further at right. Right, top: Raster sweeps for an individual M1 neuron triggered on twitches (blue) and wake movements (red), with each row representing a different movement. Right, bottom: Perievent histograms (bin size = 10 ms) showing the unit’s mean firing rate triggered on twitches (blue) or wake movements (red). (f) Same as in (e) except at P11. (g) Same as in (e) except at P12.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41841/elife-41841-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Upper: Illustration of an infant rat brain showing the location of primary somatosensory cortex (S1; red), the recording location in the forelimb representation of M1 (1), and the location of the ground electrode in occipital cortex (2). Grey box shows the rostrocaudal location of the coronal sections in (b). Lower: Diagram of the 4-shank electrode used for M1 recordings. (b) Left: Coronal section stained for CO showing the electrode location (black arrow). Right: Illustration of the somatotopic representations in S1 and the laminar structures of S1 and M1. Recordings with shank electrodes were performed at a depth of 700–1200 µm, with the recording sites targeted at layer 5. lj: lower jaw. (c) Left: Representative raw MUA trace at the beginning (first 120 s) and end (last 120 s) of data collection for a P8 (top) and P12 (bottom) rat. Right: Mean waveform (black line) overlaid on all individual waveforms for the records shown at left.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/41841/elife-41841-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Mean (±SEM) number of triggered twitches (blue) and wake movements (red) across all pups over 30 min of recording at each age. Dots indicate values for each individual pup. There was no effect of age on the number of wake movements, but there was for twitches. † Significant difference from two days prior (p<0.005). (b) Mean rectified EMGs for twitch (light-blue lines) and wake movements (light-red lines) for each pup at each age. Heavy blue and red lines represent median values. Arrowheads denote movement onset. For EMG records of twitches, insets are enlargements of the data in the gray rectangles.
+
+**Table 1.**
+ Details for all groups of infant subjects in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Expt.</th>
+      <th rowspan="2">Age</th>
+      <th rowspan="2"># of Animals</th>
+      <th rowspan="2">Mean Weight (g)</th>
+      <th rowspan="2"># of Neurons</th>
+      <th colspan="5">Neuronal Classification</th>
+      <th rowspan="2"></th>
+      <th rowspan="2">Mean # of Twitches</th>
+      <th rowspan="2">Mean # of Wake Movements</th>
+    </tr>
+    <tr>
+      <th>Unresp.</th>
+      <th>Resp.</th>
+      <th>Wake</th>
+      <th>Twitch</th>
+      <th>Both</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">M1</td>
+      <td>8</td>
+      <td>10</td>
+      <td>19.0 ± 0.40</td>
+      <td>160</td>
+      <td>84</td>
+      <td>76</td>
+      <td>0</td>
+      <td>64</td>
+      <td>12</td>
+      <td></td>
+      <td>302 ± 31</td>
+      <td>60 ± 11</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>9</td>
+      <td>21.8 ± 0.60</td>
+      <td>112</td>
+      <td>61</td>
+      <td>51</td>
+      <td>0</td>
+      <td>41</td>
+      <td>10</td>
+      <td></td>
+      <td>259 ± 10</td>
+      <td>72 ± 10</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>8</td>
+      <td>24.8 ± 0.27</td>
+      <td>123</td>
+      <td>73</td>
+      <td>50</td>
+      <td>10</td>
+      <td>26</td>
+      <td>14</td>
+      <td></td>
+      <td>187 ± 26</td>
+      <td>54 ± 10</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>15</td>
+      <td>27.4 ± 0.34</td>
+      <td>197</td>
+      <td>113</td>
+      <td>84</td>
+      <td>23</td>
+      <td>18</td>
+      <td>43</td>
+      <td></td>
+      <td>157 ± 18</td>
+      <td>79 ± 10</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>7</td>
+      <td>30.2 ± 0.74</td>
+      <td>165</td>
+      <td>102</td>
+      <td>63</td>
+      <td>48</td>
+      <td>3</td>
+      <td>12</td>
+      <td></td>
+      <td>104 ± 22</td>
+      <td>82 ± 14</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ECN</td>
+      <td>9</td>
+      <td>6</td>
+      <td>20.3 ± 1.18</td>
+      <td>16</td>
+      <td>0</td>
+      <td>16</td>
+      <td>1</td>
+      <td>11</td>
+      <td>4</td>
+      <td></td>
+      <td>253 ± 20</td>
+      <td>84 ± 15</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>7</td>
+      <td>28.1 ± 1.20</td>
+      <td>20</td>
+      <td>0</td>
+      <td>20</td>
+      <td>1</td>
+      <td>4</td>
+      <td>15</td>
+      <td></td>
+      <td>226 ± 27</td>
+      <td>70 ± 8</td>
+    </tr>
+    <tr>
+      <td>Saline Pre</td>
+      <td rowspan="2">12</td>
+      <td rowspan="2">6</td>
+      <td rowspan="2">31.1 ± 1.27</td>
+      <td rowspan="2">107</td>
+      <td>73</td>
+      <td>38</td>
+      <td>30</td>
+      <td>2</td>
+      <td>6</td>
+      <td></td>
+      <td>177 ± 43</td>
+      <td>113 ± 8</td>
+    </tr>
+    <tr>
+      <td>Saline Post</td>
+      <td>69</td>
+      <td>34</td>
+      <td>25</td>
+      <td>3</td>
+      <td>6</td>
+      <td></td>
+      <td>186 ± 29</td>
+      <td>97 ± 14</td>
+    </tr>
+    <tr>
+      <td>Bicuc. Pre</td>
+      <td rowspan="2">12</td>
+      <td rowspan="2">6</td>
+      <td rowspan="2">30.0 ± 1.23</td>
+      <td rowspan="2">99</td>
+      <td>56</td>
+      <td>43</td>
+      <td>39</td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+      <td>112 ± 19</td>
+      <td>80 ± 13</td>
+    </tr>
+    <tr>
+      <td>Bicuc. Post</td>
+      <td>34</td>
+      <td>65</td>
+      <td>19</td>
+      <td>7</td>
+      <td>39</td>
+      <td></td>
+      <td>131 ± 37</td>
+      <td>91 ± 19</td>
+    </tr>
+  </tbody>
+</table>
+
+_The number of animals, weight (mean ± s.d.), neuronal classification, and number of triggered twitches and wake movements (mean ± s.d.) for the M1, ECN, and disinhibition experiments._
+
+### Rapid developmental onset of sensory responsiveness in M1 neurons
 
 As reported previously in P8 rats (Tiriac and Blumberg, 2016; Tiriac et al., 2014), neurons in the forelimb representation of M1 exhibited more activity during periods of active sleep than during periods of wake (Figure 1e, left). Perievent histograms revealed that neuronal activity in M1 during active sleep clustered around forelimb twitches, but not wake movements (Figure 1e, right). The pattern of neural activity at P9 and P10 largely resembled that at P8. However, at P11, M1 neurons were substantially more active during wake (Figure 1f, left), with increased responsiveness to wake movements in addition to continued responsiveness to twitches (Figure 1f, right). By P12, M1 neurons were continuously active during sleep and wake (Figure 1g, left). Similar to P11, M1 activity increased after forelimb wake movements at P12, but no longer increased after twitches (Figure 1g, right). Notably, of the 757 M1 neurons from which we recorded, not one showed a pattern of activity reflective of motor output—that is, an activity peak preceding movement (Del Rio-Bermudez et al., 2015)—thus providing the strongest evidence to date that M1 does not produce movement at these ages (see An et al., 2014).
 
 Between P8 and P12, we observed an age-related decrease in the number of forelimb twitches (Figure 1—figure supplement 2a, F(4,44) = 11.4, p<0.0001), consistent with previous reports (Marcano-Reik et al., 2010), but not in the number wake movements (F(4,44) = 1.1, p=0.37). Importantly, because the EMG activity associated with twitches and wake movements did not change with age (Figure 1—figure supplement 2b), any age-related changes in the reafferent responses of M1 neurons to twitches and wake movements cannot be attributed to changes in the duration of these movements.
 
-## Developmental shift in the population characteristics of neuronal responses in M1
+### Developmental shift in the population characteristics of neuronal responses in M1
 
 To determine whether individual neurons were twitch- or wake-responsive, perievent histograms triggered on twitches or wake movements were constructed for each isolated M1 neuron. We then fit the histograms to models of idealized M1 neuronal responses using custom-written MATLAB code. Twitches, being discrete movements, were fit to a symmetrical Gaussian function (Figure 2a) and wake movements were fit to an asymmetrical function comprising a Gaussian with an exponential decay (Figure 2b). We used these models to perform regression analyses on each neuron, assigning each to a response category based on its adjusted r2 values. The adjustment to the r2 value was used to account for the number of regression coefficients (see Materials and methods), permitting a direct comparison of the fits for twitches and wake movements. Because r2adj describes how much of the variance in a neuron’s activity can be explained by the model, it functions as a responsivity index. (Hereafter, all reported r2s are adjusted values.)
 
@@ -47,13 +242,201 @@ To determine whether individual neurons were twitch- or wake-responsive, perieve
 
 **Figure 2.:** (a) Gaussian function used to model M1 neural responses to twitches. Based on the model fits for twitch-triggered perievent histograms, we derived estimates of each neuron’s baseline firing rate (BL), maximum response (Rmax), peak time (Tmax), and half-width at half-height (HWHH). (b) Gaussian-exponential function used to model M1 neural responses to wake movements. The function’s rising phase is a Gaussian function, identical to that in (a). The falling phase is an exponential decay function. Parameters defined as in (a). (c) Representative perievent histograms and model fits illustrating all four neuron classifications: Twitch-responsive, unresponsive, twitch- and wake-responsive, and wake-responsive. Also shown is each neuron’s Gaussian fit (blue lines) and Gaussian-exponential fit (red lines). Fits with adjusted r2 values less than 0.35 are shown with a dotted line and fits with an adjusted r2 value greater than 0.35 are shown with a solid line. Inset in the top left corner of is each neuron’s mean waveform (black line) ±standard deviation. Vertical scale bar = 20 μV, Horizontal scale bar = 0.2 ms.
 
-The threshold for distinguishing between responsive and unresponsive neurons was based on the mean change in firing rate (in relation to baseline) across neuron classifications. A threshold r2 of 0.35 was selected because it most effectively differentiated neurons that responded to twitches and wake movements from those that did not (Figure 3—figure supplement 1a). Using this threshold, we classified all M1 neurons as either unresponsive (r2 ≤ 0.35 for both twitches and wake movements) or responsive (r2 > 0.35 for twitches and/or wake movements). A representative unresponsive neuron, as well as representative responsive neurons from each of the three possible classifications (twitch-responsive, wake-responsive, twitch- and wake-responsive) are shown in Figure 2c . Mean perievent histograms of each neural classification can be found in Figure 3—figure supplement 1a. There was no age-related difference in the percentage of neurons classified as unresponsive (χ42= 5.3, p = 0.26; Figure 3—figure supplement 1b).
+The threshold for distinguishing between responsive and unresponsive neurons was based on the mean change in firing rate (in relation to baseline) across neuron classifications. A threshold r2 of 0.35 was selected because it most effectively differentiated neurons that responded to twitches and wake movements from those that did not (Figure 3—figure supplement 1a). Using this threshold, we classified all M1 neurons as either unresponsive (r2 ≤ 0.35 for both twitches and wake movements) or responsive (r2 > 0.35 for twitches and/or wake movements). A representative unresponsive neuron, as well as representative responsive neurons from each of the three possible classifications (twitch-responsive, wake-responsive, twitch- and wake-responsive) are shown in Figure 2c . Mean perievent histograms of each neural classification can be found in Figure 3—figure supplement 1a. There was no age-related difference in the percentage of neurons classified as unresponsive ($χ_{4}^{2}$= 5.3, p = 0.26; Figure 3—figure supplement 1b).
 
 Scatterplots of r2twitch vs. r2wake for each neuron show a developmental shift in the neural population responses to twitches and wake movements, particularly between P10 and P12 (Figure 3a). Whereas most responsive neurons at P8 and P9 (and, to a lesser extent, P10) occupy the twitch-responsive quadrant (top-left, blue), by P11 most of the responsive neurons have shifted to the twitch- and wake-responsive quadrant (top-right, purple). By P12 the population has shifted again, with most responsive neurons now occupying the wake-responsive quadrant (bottom-right, red). This population-level shift in responsivity is supported quantitatively, with responsive neurons showing a significant decrease in r2twitch from P8 to P12, the largest decrease being between P11 and P12 (Figure 3b, blue bars; H(4,321) = 85.4, p<0.001). Correspondingly, r2wake increased from P8 to P12 (Figure 3b, red bars; H(4,321) = 119.6, p<0.001). The age-related reversal in responsiveness is most visually apparent as a change in the percentage of responsive neurons that are twitch-responsive, twitch- and wake-responsive, and wake-responsive across age (Figure 3c). Importantly, all responsive neurons also responded to exafferent stimulation of the forelimb (Figure 3—figure supplement 1a; green lines), thus demonstrating consistency in the recorded neuron’s receptive field across age.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/41841/elife-41841-fig3-v2.jpg)
+
+**Figure 3.:** (a) Scatterplot of each M1 neuron’s adjusted r2 value for twitches (y-axis) and wake movements (x-axis) across age. Background color illustrates the classification of neurons within that region of the scatterplot. (b) Mean (±SEM) adjusted r2 values for twitches (blue) and wake movements (red) for responsive M1 neurons at each age. * Significant difference from previous day (p<0.005). † Significant difference from 2 days prior (p<0.005). (c) Percentage of neurons classified as wake-responsive (red), twitch- and wake-responsive (purple), and twitch-responsive (blue) at each age.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41841/elife-41841-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Mean perievent histograms (in spikes per s, sps) for all neurons at each age, for each response classification, and for each type of triggered event category. Baseline firing rates were subtracted from individual responses before calculating means. Each column identifies the type of triggered event (twitch, blue; wake movement, red; exafferent stimulation, green) denoted by the black arrows. For each colored grid, the color of the background indicates the response classification of the neurons being averaged (twitch, blue; twitch and wake, purple, wake, red; unresponsive, gray). Thus, a blue line against a blue background represents the mean twitch response (blue line) of all twitch-responsive neurons (blue background) at that age, and a blue line against a gray background represents the mean twitch response (blue line) of all unresponsive neurons (gray background) at that age. (b) Stacked bar plot of the percentage of neurons at each age classified as unresponsive (gray), twitch-responsive (blue), twitch- and wake-responsive (purple) and wake-responsive (red). Numbers within the stacked bar plots indicate the number of neurons identified for that response type at that age.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/41841/elife-41841-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Box plots of baseline activity for twitch-responsive (upper, blue) and wake-responsive (lower, red) neurons. A significant Kruskal-Wallis for twitch-responsive neurons (H(4,238) = 50.3, p<0.0001) and wake-responsive neurons (H(4,169) = 34.0, p<0.0001) permitted pairwise comparisons. Alpha was set to 0.05, with the Bonferroni adjustment used to correct for multiple comparisons. * Significant difference from previous day (p<0.005). † Significant difference from 2 days prior (p<0.005). (b) Same as in (a), but for peak height. Twitch-responsive neurons showed a significant effect of age (H(4,238) = 78.5, p<0.0001). (c) Same as in (a), but for half-width at half-height. For wake-responsive neurons, half-width at half-height refers only to the rising (Gaussian) part of the function. Twitch-responsive neurons showed a significant effect of age (H(4,238) = 55.4, p<0.0001). (d) Same as in (a), but for exponential half-life (only applicable to wake-responsive neurons). (e) Same as in (a), but for peak response time. Both twitch-responsive neurons (H(4,238) = 108.6, p<0.0001) and wake-responsive neurons (H(4,169) = 16.4, p=0.0025) showed a significant effect of age. (f) Percentage of twitches and wake movements that resulted in increased neural activity in relation to the activity expected during baseline. The percentage of twitches that produced a neural response showed a significant effect of age (H(4,238) = 33.66, p<0.0001).
+
 The decreased percentage of twitch-responsive neurons observed between P8 and P12 is accompanied by decreased variability in those neurons that did respond to twitches. Specifically, twitch-responsive neurons exhibited increases in peak firing rate, narrower response tuning (half-width at half-height), and decreased latency across these ages, and all of these measures were accompanied by less variability across neurons (Figure 3—figure supplement 2; top; Table 2). Further, P11 and P12 twitch-responsive neurons responded more consistently to every twitch than did twitch-responsive neurons at P8-10. Gaussian-exponential fits of wake-responsive neurons did not show similar developmental trajectories (Figure 3—figure supplement 2; bottom; Table 2), most likely because wake movements are inherently more noisy and variable than twitches.
 
-## M1 sensory responses originate in deep cortical layers
+**Table 2.**
+ Model-fit parameters for M1 and ECN neurons.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="7">M1 Twitch-Responsive Neurons</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>BL (sps)</td>
+      <td>Rmax (sps)</td>
+      <td>Tmax (s)</td>
+      <td>HWHH (s)</td>
+      <td></td>
+      <td>% Responding</td>
+    </tr>
+    <tr>
+      <td>P8</td>
+      <td>2.12 (1.05, 3.66)</td>
+      <td>3.86 (2.57, 7.65)</td>
+      <td>0.194 (0.141, 0.252)</td>
+      <td>0.186 (0.137, 0.220)</td>
+      <td></td>
+      <td>25.7 (18.1, 35.3)</td>
+    </tr>
+    <tr>
+      <td>P9</td>
+      <td>2.52 (1.67, 4.45)</td>
+      <td>7.14 (4.72, 9.62)</td>
+      <td>0.119 (0.095, 0.158)</td>
+      <td>0.122 (0.086, 0.154)</td>
+      <td></td>
+      <td>31.5 (25.5, 38.8)</td>
+    </tr>
+    <tr>
+      <td>P10</td>
+      <td>2.87 (1.68, 3.86)</td>
+      <td>5.18 (3.71, 9.94)</td>
+      <td>0.172 (0.111, 0.229)</td>
+      <td>0.124 (0.102, 0.192)</td>
+      <td></td>
+      <td>24.1 (19.0, 32.7)</td>
+    </tr>
+    <tr>
+      <td>P11</td>
+      <td>5.20 (3.18, 10.00)</td>
+      <td>14.95 (9.13, 27.22)</td>
+      <td>0.075 (0.054, 0.094)</td>
+      <td>0.085 (0.053, 0.132)</td>
+      <td></td>
+      <td>36.4 (27.8, 50.7)</td>
+    </tr>
+    <tr>
+      <td>P12</td>
+      <td>6.45 (4.11, 12.37)</td>
+      <td>12.82 (9.10, 20.10)</td>
+      <td>0.068 (0.056, 0.095)</td>
+      <td>0.105 (0.084, 0.115)</td>
+      <td></td>
+      <td>45.8 (25.6, 54.6)</td>
+    </tr>
+    <tr>
+      <td colspan="8">M1 Wake-Responsive Neurons</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>BL (sps)</td>
+      <td>Rmax (sps)</td>
+      <td>Tmax (s)</td>
+      <td>HWHH (s)</td>
+      <td>λ (s)</td>
+      <td>% Responding</td>
+    </tr>
+    <tr>
+      <td>P8</td>
+      <td>0.63 (0.39, 0.96)</td>
+      <td>6.70 (3.89, 8.93)</td>
+      <td>0.199 (0.185, 0.265)</td>
+      <td>0.178 (0.115, 0.229)</td>
+      <td>0.231 (0.154, 0.352)</td>
+      <td>57.7 (38.9, 64.7)</td>
+    </tr>
+    <tr>
+      <td>P9</td>
+      <td>1.04 (0.68, 1.55)</td>
+      <td>7.33 (5.59, 9.25)</td>
+      <td>0.109 (0.097, 0.120)</td>
+      <td>0.065 (0.059, 0.086)</td>
+      <td>0.298 (0.087, 0.364)</td>
+      <td>56.6 (46.5, 67.1)</td>
+    </tr>
+    <tr>
+      <td>P10</td>
+      <td>1.23 (0.52, 1.53)</td>
+      <td>9.62 (6.83, 13.14)</td>
+      <td>0.214 (0.166, 0.235)</td>
+      <td>0.091 (0.067, 0.116)</td>
+      <td>0.213 (0.114, 0.368)</td>
+      <td>60.4 (42.3, 68.5)</td>
+    </tr>
+    <tr>
+      <td>P11</td>
+      <td>2.63 (1.37, 5.35)</td>
+      <td>10.14 (6.63, 15.85)</td>
+      <td>0.095 (0.061, 0.165)</td>
+      <td>0.079 (0.028, 0.137)</td>
+      <td>0.401 (0.182, 1.319)</td>
+      <td>68.0 (51.0, 79.5)</td>
+    </tr>
+    <tr>
+      <td>P12</td>
+      <td>2.31 (0.99, 4.64)</td>
+      <td>9.05 (5.00, 14.10)</td>
+      <td>0.126 (0.052, 0.260)</td>
+      <td>0.089 (0.033, 0.239)</td>
+      <td>0.323 (0.181, 0.539)</td>
+      <td>60.6 (46.1, 69.3)</td>
+    </tr>
+    <tr>
+      <td colspan="8">ECN Twitch-Responsive Neurons</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>BL (sps)</td>
+      <td>Rmax (sps)</td>
+      <td>Tmax (s)</td>
+      <td>HWHH (s)</td>
+      <td></td>
+      <td>% Responding</td>
+    </tr>
+    <tr>
+      <td>P9</td>
+      <td>5.97 (3.19, 9.73)</td>
+      <td>14.59 (7.33, 24.79)</td>
+      <td>0.043 (0.036, 0.051)</td>
+      <td>0.063 (0.026, 0.085)</td>
+      <td></td>
+      <td>31.0 (17.1, 43.1)</td>
+    </tr>
+    <tr>
+      <td>P12</td>
+      <td>3.39 (2.33, 6.01)</td>
+      <td>23.42 (8.22, 34.07)</td>
+      <td>0.032 (0.027, 0.044)</td>
+      <td>0.031 (0.023, 0.036)</td>
+      <td></td>
+      <td>41.7 (23.3, 52.4)</td>
+    </tr>
+    <tr>
+      <td colspan="8">ECN Wake-Responsive Neurons</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>BL (sps)</td>
+      <td>Rmax (sps)</td>
+      <td>Tmax (s)</td>
+      <td>HWHH (s)</td>
+      <td>λ (s)</td>
+      <td>% Responding</td>
+    </tr>
+    <tr>
+      <td>P12</td>
+      <td>3.66 (1.61, 6.13)</td>
+      <td>19.94 (11.13, 35.38)</td>
+      <td>0.054 (0.038, 0.074)</td>
+      <td>0.058 (0.037, 0.079)</td>
+      <td>0.166 (0.034, 0.428)</td>
+      <td>74.1 (59.4, 85.9)</td>
+    </tr>
+  </tbody>
+</table>
+
+_The median values (along with the 25th and 75th percentiles) for all twitch-responsive and wake-responsive neurons in M1 and the ECN at each age. M1 data are the numerical values for Figure 3—figure supplement 2._
+
+### M1 sensory responses originate in deep cortical layers
 
 Sensory inputs to M1 in adults have two distinct origins: one arriving from S1 via horizontal connections to the superficial layers of M1 (Mao et al., 2011) and a second arriving directly from the thalamus to the deeper layers of M1 (Hooks et al., 2013). Despite numerous studies investigating the source and strength of sensory inputs to M1, it is not known whether these two inputs develop sequentially or simultaneously. To determine which M1 layers receive reafference at P8 and P12, we recorded M1 activity using 16-site linear electrodes (N = 2 at each age; Figure 4a,c). At both ages, the strongest M1 neural responses were found in layers 5b and 6 (Figure 4b,d; upper). Consistent with this, current source density analysis revealed a current sink in layers 5a and 5b (Figure 4b,d; lower). From these observations, we conclude that sensory input to M1 arrives directly from the thalamus.
 
@@ -67,9 +450,17 @@ Although anatomical evidence suggests that horizontal projections between S1 and
 
 **Figure 5.:** (a) Left: CO-stained tissue of the M1 and S1 forelimb representation of a P8 rat showing the location of electrodes. Right: Location of M1-S1 dual recordings for all P8 rats. M1 is shown in blue, S1 in red. Recording sites from stained tissue (left panels) are designated with yellow highlights in the right panels. (b) Same as in (a) except at P12. (c) Mean normalized perievent histograms (bin size = 10 ms) of neural activity of responsive neurons in M1 and S1 of P8 rats triggered on twitches (blue), wake movements (red), and exafferent stimulation (green). Blue plots include all twitch-responsive neurons (M1: N = 50, S1: N = 31), red plots include all wake-responsive neurons (M1: N = 21, S1: N = 18), and green plots include all twitch- or wake-responsive neurons (M1: N = 55, S1: N = 38). (d) Same as in (c) except at P12. Blue plots include all twitch-responsive neurons (M1: N = 15, S1: N = 15), red plots include all wake-responsive neurons (M1: N = 60, S1: N = 56), and green plots include all twitch- or wake-responsive neurons (M1: N = 63, S1: N = 65). (e) Cross-correlation (bin size = 1 ms) of all available pairs of responsive M1-S1 neurons, minus the shift predictor, for twitches (top row, blue) and wake movements (bottom row, red). These plots significant peaks of S1 activity at lags of 0 ms in relation to M1 activity. Gray regions denote confidence bands (p=0.01). (f) Same as in (e) except at P12.
 
-## Developmental onset of wake-related reafference in the ECN
+### Developmental onset of wake-related reafference in the ECN
 
 At P8-10, the ECN acts as a sensory gate that selectively blocks wake-related reafference (Tiriac and Blumberg, 2016; Figure 6a). Thus, we hypothesized that the sudden emergence of wake movement responses at P11-12 reflects the opening of the ECN’s sensory gate (Figure 6b). We tested this hypothesis by comparing ECN neuronal activity in unanesthetized, head-fixed rats at P8-9 (hereafter P9; n = 6 pups, 16 neurons) and P11-12 (hereafter P12; n = 7 pups, 20 neurons; Figure 6—figure supplement 1a,b; Table 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/41841/elife-41841-fig6-v2.jpg)
+
+**Figure 6.:** (a) Model of ECN neuronal activity in response to twitches and wake movements at P9, as proposed previously (Tiriac and Blumberg, 2016). Neurons in the ECN convey twitch-related reafference to downstream structures, including thalamus and, ultimately, M1. For wake movements, a motor copy inhibits the ECN neuron, preventing the conveyance of reafference to downstream structures. (b) Proposed model of ECN neuronal activity in response to twitches and wake movements at P12. The ECN’s gating of twitch-related reafference is identical to that at P9. However, at P12, we propose that wake-related reafference ceases to be gated in the ECN, permitting this reafference to be conveyed to downstream structures. (c) Left: At P9, representative data depicting 20 s periods of active sleep (blue) and wake (red), showing forelimb movements, multi-unit activity (MUA), sorted unit activity from the forelimb representation of M1, and rectified EMGs from ipsilateral forelimb and nuchal muscles. Right, top: Raster sweeps for an individual ECN neuron triggered on twitches (blue) and wake movements (red), with each row showing the unit activity surrounding a single movement. Right, bottom: Perievent histogram (bin size = 10 ms) showing mean firing rate for this neuron triggered on twitches (blue) and wake movements (red). (d) Same is in (c) except for a P12 rat.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/41841/elife-41841-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Left, Top: Nissl-stained coronal section showing electrode locations in the ECN (arrow). Right, Top: Nuclear boundaries of ECN, cuneate nucleus, and spinal trigeminal tract (sp5) in relation to the section at left. Left, Bottom: Locations of the recording (1) and ground (2) electrodes; gray box indicates the plane of the coronal section above. Green oval is the approximate extent of the ECN. Right, Bottom: Electrode used to record ECN neural activity. (b) Electrode locations for ECN recordings at P9 (gray) and P12 (black). Asterisk denotes recording site shown in (a). Single electrodes represent electrode locations for cases where ECN units were isolated on a single electrode shank; two electrodes bound together with a line are cases where ECN units were isolated on both electrode shanks. (c) Perievent histograms of firing rate (spikes per s, sps) for representative ECN neurons at P9 (left) and P12 (right) triggered on twitches (blue) and wake movements (red). Conventions as in Figure 2c. Insets in the top left corner show each neuron’s mean waveform (black line) ±standard deviation. Vertical scale bar = 20 μV; horizontal scale bar = 0.2 ms. (d) Normalized perievent histograms (bin size = 10 ms) of neural activity triggered on twitches (top, blue) and exafferent stimulation (bottom, green) in P9 rats with dual recordings in M1 and ECN. Blue plots include all twitch-responsive neurons, red plots include all wake-responsive neurons, and green plots include all twitch- or wake-responsive neurons. (e) Same as in (d) except for P12 rats. Also shown is neural activity triggered on wake movements (middle, red). (f) Cross-correlations (bin size = 1 ms) for all pairs of units recorded simultaneously in M1 and ECN, minus the shift predictor, for twitches (top, blue) and wake movements (bottom, red). Gray regions denote confidence bands (p=0.01).
 
 As described previously (Tiriac and Blumberg, 2016), we observed robust responses in P9 ECN neurons to forelimb twitches, but not wake movements (Figure 6c). At P12, however, ECN neurons responded to both twitches and wake movements (Figure 6d). Because the overall shapes of the perievent histograms for ECN and M1 neurons were similar, ECN neurons were also fit to Gaussian and Gaussian-exponential functions (Figure 3a,b). Representative fits of P9 and P12 ECN neurons are shown in Figure 6—figure supplement 1c. In a subset of these ECN recordings, we simultaneously recorded from M1, permitting direct comparison of the responses of neurons in both structures to the same twitches and wake movements (Figure 6—figure supplement 1d,e). Further, at P12, we again analyzed the data using the shift predictor and found that ECN activity reliably preceded M1 activity by 15 ms (Figure 6—figure supplement 1f), consistent with ECN inputs projecting to the forelimb representation of M1.
 
@@ -79,9 +470,17 @@ Whereas ECN neurons at P9 were predominantly responsive to twitches (Figure 7a, 
 
 **Figure 7.:** (a) Scatterplot of each ECN neuron’s adjusted r2 value for twitches (y-axis) and wake movements (x-axis) at P9 (left) and P12 (right). Background color illustrates the classification of neurons within that region of the scatterplot. (b) Mean (±SEM) adjusted r2 values for twitches (blue) and wake movements (red) for ECN neurons recorded at P9 and P12. * Significant difference from P9 (p<0.025). (c) Percentage of ECN neurons at P9 and P12 that were wake-responsive (red), twitch- and wake-responsive (purple), and twitch-responsive (blue).
 
-## Twitch-related activity in M1 is locally masked at P12
+### Twitch-related activity in M1 is locally masked at P12
 
 At P12, neurons in the ECN continue to respond to twitch-related reafference; accordingly, the decrease in twitch-related activity in M1 neurons cannot be attributed to the ECN. One possibility is that twitch-related reafference continues to reach M1 at P12, but changes in local circuitry—particularly local inhibitory circuitry—serve to mask this activity. If true, local disinhibition of M1 should unmask responses to twitches. Thus, we recorded M1 activity before and after local pharmacological disinhibition with the GABAA antagonist, bicuculline (n = 6 pups, 99 neurons) or injection of saline (n = 6 pups, 107 neurons; Table 1). We confirmed that electrodes were located within the forelimb representation of M1. Also, by adding Fluoro-Gold to the solution and using its spread as a proxy for the spread of bicuculline, we confirmed that drug diffusion was largely confined to the forelimb representation of M1 (Figure 8a,b).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/41841/elife-41841-fig8-v2.jpg)
+
+**Figure 8.:** (a) Left: Coronal section showing CO staining around the S1/M1 boundary. Middle: Fluorescent image of the same section showing the spatial extent of bicuculline diffusion (blue). White arrow indicates the location of an electrode shank in M1 (red). Right: Illustration of the histological sections at left to show the boundaries of S1 and M1, the laminar structure of each area, and a reconstruction of the location of the microsyringe needle immediately lateral to the recording electrode. Middle, bottom: Experimental timeline. (b) Recording sites (black bars) and diffusion boundaries (blue ovals) for all six saline injections (top) and five bicuculline injections (bottom) depicted in the horizontal plane. The 6th bicuculine injection is shown in the coronal section in (a). All recording sites were within the forelimb representation of M1; diffusion boundaries were largely restricted to M1. (c) Top: Adjusted r2 values for twitches (y-axis) and wake movements (x-axis) for each isolated M1 unit before (Pre) and after (Post) injection of saline. Bottom: Same as above, but for bicuculline group. (d) Mean (±SEM) adjusted r2 values for twitches (blue) and wake movements (red) before (Pre) and after (Post) injections of saline or bicuculline. * significant difference from Pre (p<0.0125). (e) Percentage of M1 neurons that were wake-responsive (red), twitch- and wake-responsive (purple), and twitch-responsive (blue) during the Pre and Post periods in the saline and bicuculline groups.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/41841/elife-41841-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (a) Representative data depicting 20 s periods of active sleep (blue) and wake (red) before (Pre, top) and after (Post, bottom) injection of bicuculline into M1. The data depicted are forelimb movements (twitches: blue ticks; wake movements: red ticks), unit activity within the forelimb representation of M1, and rectified EMGs from contralateral forelimb and nuchal muscles. Each row of depicts unit activity for a different neuron. (b) Perievent histograms of firing rate (spikes per s, sps) for representative M1 neurons triggered on twitches (blue) and wake movements (red) before (Pre) and after (Post) injections of saline (left) or bicuculline (right). Conventions as in Figure 2c. Insets in the top left corner show each neuron’s mean waveform (black line) ±standard deviation. Vertical scale bar = 20 μV; horizontal scale bar = 0.2 ms.
 
 Perievent histograms of twitch and wake responses before (Pre) and after (Post) injection of bicuculline or saline were fit to Gaussian and Gaussian-exponential functions. Representative neural and behavioral data during active sleep and wake, as well as representative perievent histograms, are illustrated in Figure 8—figure supplement 1. All bicuculline- and saline-injected pups continued to cycle between sleep and wake, and neither group showed a significant difference in the number of twitches (F(1,10) = 0.12, p=0.74) or wake movements (F(1,10) = 4.0, p=0.07; Table 1). For saline-injected pups, scatterplots of r2twitch and r2wake replicate our previous finding: P12 M1 neurons were predominantly wake-responsive. Likewise, before the injection of bicuculline, M1 neurons were predominantly wake-responsive (Figure 8c, bottom left). However, after injection of bicuculline, there was a clear increase in twitch-responsiveness of the previously wake-responsive neurons (Figure 8c, bottom right). This twitch-responsiveness was not the result of non-specific or abnormal bursting (Figure 8—figure supplement 1a). Quantitatively, as shown in Figure 8d, M1 neurons exhibited increased r2twitch values after injection of bicuculline (Z65 = 6.8, p<0.0001), with no corresponding change in r2wake (Z65 = 1.8, p=0.08); saline injection had no effect on either r2twitch or r2wake. Because local disinhibition of M1 neurons unmasked twitch-related reafference (Figure 8e), it is clear that twitch-related reafference reaches M1 at P12, just as it does at P8.
 
@@ -93,7 +492,7 @@ We have documented a complex and rapid developmental transition in M1 sensory re
 
 **Figure 9.:** Top left: At P8, twitch-related reafference (green) is conveyed from ECN to downstream structures, including M1. Top right: At P12, twitch-related reafference reaches cortex, but activity is masked due to local inhibition. Bottom left: At P8, inhibition at the ECN masks wake-related reafference (green) and prevents its conveyance to M1. Bottom right: At P12, the ECN no longer selectively inhibits reafference from wake movements, permitting its conveyance to M1.
 
-## Developmental changes in reafferent responses to twitches
+### Developmental changes in reafferent responses to twitches
 
 Similar to spontaneous retinal waves for the developing visual system (Ackman et al., 2012; Hanganu et al., 2006) and spontaneous cochlear activity for the developing auditory system (Tritsch et al., 2007), twitches provide a robust source of proprioceptive input to M1 neurons for early sensorimotor development (Blumberg, 2015b). In this regard, there are several features of twitches that make them more suitable than wake movements for directing activity-dependent development of the sensorimotor system. First, unlike wake movements, twitches are low-amplitude, discrete events that occur against a background of low muscle tone; these features enable individual twitches to provide high-fidelity reafferent signals to the developing brain. Second, twitches occur exclusively and abundantly during active sleep, the predominant behavioral state in early development (Jouvet-Mounier et al., 1970; Kayser and Biron, 2016). Finally, when combined with the inhibition of wake-related reafference in ECN neurons (Tiriac and Blumberg, 2016), which prevents this reafference from being conveyed to neurons in M1, sensory feedback from twitches is the only reliable source of self-generated proprioceptive input to M1 neurons before P10.
 
@@ -105,7 +504,7 @@ The percentage of twitch-responsive neurons in M1 decreased suddenly by P12 (Fig
 
 Closer inspection of twitch responses at P8 and P12 suggests a sharpening of the M1 receptive fields with age, such that a smaller subset of neurons become more consistently driven by the movement of individual muscles (Figure 3—figure supplement 2). In the context of inhibition, this type of sharpening—such that neurons are responsive only to preferred stimuli—has been termed the ‘iceberg effect’ (Carandini and Ferster, 2000; Isaacson and Scanziani, 2011; Rose and Blakemore, 1974) and has been demonstrated across several sensory modalities (Liu et al., 2011; Poo and Isaacson, 2009; Wu et al., 2008). Future work should address the specific contributions of different types of inhibitory interneurons to this developmental sharpening.
 
-## Developmental changes in reafferent responses to wake movements
+### Developmental changes in reafferent responses to wake movements
 
 The robust sensory response of M1 neurons to twitches at P8-10 stands in sharp contrast to their conspicuous silence following wake movements (Figure 1e, see Tiriac et al., 2014)—a silence highlighted further by the sudden influx of wake-movement reafference at P11 (Figure 1e,f; Figure 3d). This transition—the result of a rapid change in the processing of wake-related reafference in the ECN—represents a milestone in the development of the sensorimotor system. Just as neurons in the developing visual cortex are initially blind to patterned light (Colonnese et al., 2010)—instead relying on retinal waves for early retinotopic development—neurons in M1 are initially ‘blind’ to the consequences of wake movements, relying instead on sensory feedback provided by twitches. Interestingly, although retinal waves drive cortical activity across periods of sleep and wake (Ackman et al., 2012), analogous neural activity in the developing sensorimotor system occurs exclusively during active sleep.
 
@@ -113,7 +512,7 @@ What is the functional significance of the fact that the ECN does not relay wake
 
 Regardless, for M1 neurons to contribute to motor learning, they must eventually be sensitive to feedback from wake movements. As demonstrated here, the critical transition in the responsiveness of both M1 and ECN neurons to wake movements occurs suddenly between P10 and P12. This transition enables wake movements to differentially activate populations of M1 neurons. These early differential patterns of activation are precursors to the activity of ‘movement-related neurons’ in adult M1, as described by others (Hyland, 1998; Komiyama et al., 2010; Peters et al., 2014). Thus, the increase in wake responsiveness of M1 neurons at P12 provides an essential bridge linking their sensory activity during the first postnatal week (Tiriac and Blumberg, 2016; Tiriac et al., 2014) with their sensory activity after M1 has established its motor functions.
 
-## Implications of wake-movement reafference for emerging motor control
+### Implications of wake-movement reafference for emerging motor control
 
 In adults, the functional importance of wake-movement reafference for M1 motor control is well established (Iriki et al., 1989; Iriki et al., 1991). However, at P12, M1 neurons are not yet involved in motor control. This motivates the question: What is the function of wake-movement reafference during at this age? We propose that early wake-movement reafference shapes emerging motor control and plasticity.
 
@@ -121,13 +520,13 @@ Although adult M1 neurons receive a diversity of cortical and thalamic inputs, p
 
 Once both horizontal and ascending reafferent pathways to the deep layers of M1 are active, the next stage of M1 development can begin. Intracortical microstimulation experiments in rats reveal that the corticospinal tract is sufficiently developed to produce M1-mediated movements as early as P13, although inhibition on corticospinal neurons appears to limit motor outflow for several additional weeks (Young et al., 2012). Thus, for motor outflow to occur, inhibition of M1 corticospinal neurons must be overcome by sufficiently strong excitation. We suggest that repeated reafference arising from subcortically generated wake movements provides synapses on deep M1 neurons the opportunity to be shaped and strengthened, producing increased excitatory drive onto corticospinal neurons. With sufficient repetition, this excitatory drive can allow M1 motor neurons to contribute to movement.
 
-## Evolutionary implications
+### Evolutionary implications
 
 The traditional designation of primary motor and sensory cortices as exclusively ‘motor’ and ‘sensory,’ respectively, is contradicted by neurophysiological and comparative studies (Asanuma, 1981; Baldwin et al., 2017; Baldwin et al., 2018; Cooke et al., 2015; Hatsopoulos and Suminski, 2011; Lende, 1963a; Matyas et al., 2010). Further, such simplifications ignore the realities of thalamocortical loops as well as the ubiquity of descending motor projections from parietal and frontal cortex (Nudo et al., 1995; Sherman, 2016). From a comparative perspective, placental mammals have an M1, but many marsupials do not (Kaas, 2004). For example, Virginia opossums have what has been referred to as a ‘sensorimotor amalgam’ that exhibits a mix of features of S1 and M1 as defined in placental mammals (Karlen and Krubitzer, 2007; Lende, 1963a; Lende, 1963b; Lende, 1963c). This has led to the hypothesis that S1 and M1 are derived from the same ancestral brain area and that opossums have retained this ancestral state (Beck et al., 1996).
 
 Even though M1 in rats is highly specialized, its shared evolutionary history with somatosensory cortex suggests that it should develop similarly to other somatosensory areas, including S1. This suggestion is consistent with a developmental-evolutionary perspective, according to which evolution enables phenotypic transformations in cortical structure through alterations in developmental processes (Krubitzer and Dooley, 2013). Thus, earlier in development, M1 and S1 should exhibit more shared features. This idea gains support here from the similar sensory response profiles observed in M1 and S1 and the evidence that both sensory input to both structures arises from parallel ascending pathways.
 
-## Conclusions
+### Conclusions
 
 The present findings strongly support the idea that M1 is built on a sensory framework that scaffolds its later-emerging motor map (Chakrabarty and Martin, 2005; Huntley, 1997b; Keller et al., 1996). Unique to the present investigation, we have identified the relative contributions of sensory feedback from self-generated sleep and wake movements to M1’s somatotopically organized activity. Unlike the developing visual system, behavioral state provides a critical context for characterizing the sensory development of M1 neurons. Further, our findings suggest that M1’s sensory framework lays a foundation for this plasticity in adulthood.
 
@@ -137,33 +536,33 @@ Finally, it should be noted that the early, intimate connection between active s
 
 ## Materials and methods
 
-## Experimental models
+### Experimental models
 
 For recordings in the forelimb representation of M1, a total of 49 male and female Sprague-Dawley Norway rats (Rattus norvegicus) at P8-12 were used (n = 7–15 at each age; mean = 15.4 neurons per pup, s.d. = 7.24). In a subset of these animals, recordings were also performed in the ECN (n = 6 at P8-9; n = 7 at P11-12) or the forelimb representation of primary somatosensory cortex (S1; n = 6 at P8 and P12). Additional laminar electrode recordings were performed at P8 and P12 (n = 2 at each age). For M1 recordings before and after injection of saline or bicuculline, a total of 12 male and female rats were used at P12 (n = 6 per group). See Table 1 for additional information.
 
 Pups were born to mothers housed in standard laboratory cages (48 × 20 × 26 cm) in a room with a 12:12 light dark schedule. Food and water were available ad libitum. Expecting mothers were checked at least once daily for pups. The day of birth was considered P0. If necessary, on or before P3 litters were culled to eight pups (typically with equal numbers of males and females). Littermates were never assigned to the same experimental groups. All experiments were conducted in accordance with the National Institutes of Health (NIH) Guide for the Care and Use of Laboratory Animals (NIH Publication No. 80–23) and were approved by the Institutional Animal Care and Use Committee of the University of Iowa.
 
-## Surgery
+### Surgery
 
 For all studies, pups were prepared for neurophysiological recording using methods similar to those described previously (Blumberg et al., 2015a; Tiriac and Blumberg, 2016; Tiriac et al., 2014). On the day of testing, a pup with a visible milk band was removed from the litter. Under isoflurane anesthesia (3–5%; Phoenix Pharmaceuticals, Burlingame, CA), custom-made bipolar hook electrodes (epoxy coated, 0.002 inch diameter; California Fine Wire, Grover Beach, CA) were implanted into the biceps brachii muscle of the forelimb, the extensor digitorum longus muscle of the hindlimb, and the nuchal muscle for electromyographic (EMG) recordings. Wires were secured using a small amount of collodion. A stainless-steel ground wire (uncoated, 0.002 inch diameter; California Fine Wire, Grover Beach, CA) was implanted transdermally on the dorsum. The pup was injected with carprofen (5 mg/kg subcutaneously; Putney, Portland, ME) and a rectangular section of skin was removed above the skull. After topical application of bupivicane as an analgesic (Pfizer, New York, NY), the skull was cleaned and dried. Vetbond (3M, Minneapolis, MN) was applied to the skin around the perimeter of the exposed skull and a custom-built head-fix apparatus was secured to the skull using cyanoacrylate adhesive. To limit mobility during recovery, the pup was wrapped in gauze and maintained at thermoneutrality (35°C) in a humidified incubator for at least 1 hr. The entire surgery lasted approximately 15 min.
 
 After recovery, the pup was lightly reanesthetized (2–3% isoflurane) in a stereotaxic apparatus. A small hole (diameter = 1.8 mm) was drilled in the skull using a trephine drill bit (1.8 mm; Fine Science Tools, Foster City, CA), leaving the dura intact. In experiments where saline or bicuculine were also injected into M1, a larger 2.7 mm trephine was used to allow placement of both the electrode and the microsyringe needle. For M1 forelimb recordings, the coordinates were: AP: 0.8–1.2 mm anterior to bregma; L: 1.7–2.0 mm. For S1 forelimb recordings, the coordinates were: AP: 0.2–1 mm anterior to bregma; L: 2.2–3.5 mm. For ECN recordings, the coordinates were: AP: 3.0–3.2 mm posterior to lambda; L: 1.6–2.0 mm. Small holes were also made bilaterally in occipital cortex to allow insertion of the thermocouple and combined reference/ground electrode. This procedure lasted approximately 5 min, after which anesthesia stopped and the exposed dura was covered with mineral oil to prevent drying. The pup was then transferred and secured to a different stereotaxic apparatus within a Faraday cage where its torso was supported on a narrow platform and its limbs dangled freely on both sides (Figure 1a). Brain temperature was monitored using a fine-wire thermocouple (Omega Engineering, Stamford, CT) inserted into occipital cortex contralateral to the M1 recording site. The pup acclimated for at least 1 hr until its brain temperature reached at least 36°C and it was cycling between sleep and wake, at which time electrophysiological recordings began.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 The EMG bipolar hook electrodes and corresponding ground electrode were connected to a differential amplifier (Tucker-Davis Technologies, Alachua, FL). A chlorinated Ag/Ag-Cl ground electrode (0.25 mm diameter; Medwire, Mt. Vernon, NY) was inserted into occipital cortex ipsilateral to the M1 recording site or contralateral to the ECN recording site. For M1 and S1 recordings, data were acquired using 16-channel silicon depth electrodes (Figure 1—figure supplement 1a bottom; Model A4x4-3mm-100-125-177-A16; NeuroNexus, Ann Arbor, MI). The electrodes were positioned to be perpendicular to the cortical surface (0° to 20° medial, depending on location) and inserted 700–1400 µm beneath the cortical surface, corresponding to the deeper layers of cortex. For laminar recordings, a single shank 16-channel electrode (Model A1x16-3mm-100-703-A16) was used. Linear electrodes were inserted approximately 1500 µm perpendicular to the cortical surface. For ECN recordings, custom-designed 16-channel silicon depth electrodes were used (Figure 4c; NeuroNexus). The electrode was angled caudally 14–16° and lowered 3.7–4.2 mm beneath the surface of the brain. EMG and neural signals were sampled at approximately 1 kHz and 25 kHz, respectively. Bandpass filters were applied to EMG (300–5000 Hz) and neural (0.1 Hz-12.5 kHz) signals. A notch filter was also used. Before insertion of a silicon electrode, it was coated with fluorescent Dil (Vybrant Dil Cell-Labeling Solution; Life Techologies, Grand Island, NY) for subsequent histological verification of placement. Depth of insertion was monitored using a hydraulic micromanipulator (FHC, Bowdoinham, ME).
 
-## General experimental procedure
+### General experimental procedure
 
 The M1 electrode was slowly lowered while manually stimulating the contralateral forelimb (or the ipsilateral forelimb for ECN recordings) using a small wooden probe until a neural response was detected. Once responsive neurons were identified, the electrode settled in place for at least 15 min to allow stabilization of neural signals before the start of data collection. Recording sessions comprised continuous collection of neurophysiological and EMG data for 30 min. During acquisition, the experimenter monitored the pup’s behavior and used two digital markers to record the occurrence of active-sleep twitches and wake movements of the forelimb of interest. As described previously (Karlsson et al., 2005), myoclonic twitches are phasic, rapid, and independent movements of the skeletal muscles against a background of muscle atonia (Figure 2, Figure 6c,d, Figure 8—figure supplement 1a). In contrast, wake movements are high-amplitude, coordinated movements occurring against a background of high muscle tone (Figure 2, Figure 6c,d, Figure 8—figure supplement 1a). Throughout the recording session, the behavior of the animal was also recorded using a digital camera (Prosilica GC; Allied Vision, Exton, PA) whose signal was acquired and synchronized with the electrophysiological record (RV2; Tucker-Davis Technologies).
 
 After 30 min of uninterrupted behavioral data collection, exafferent neural responses were recorded by using a wooden probe to produce an elbow flexion. This method of exafferent stimulation was meant to activate proprioceptors in the bicep muscle, which was the muscle used to detect forelimb twitches and wake movements. However, in addition to providing tactile stimulation, this method certainly activated proprioceptors in other forelimb muscles. At least 20 stimulations were presented and were spaced 5–10 s apart.
 
-## Pharmacological disinhibition of forelimb M1
+### Pharmacological disinhibition of forelimb M1
 
 Pups were prepared for M1 recording as described above. In addition, a Hamilton microsyringe (1 µL; Hamilton, Reno, NV) was inserted immediately lateral to the recording electrode (see Figure 8b). The recording session began with a 30 min baseline period (Pre) followed by a 30- to 90 min diffusion/acclimation period and a 30-min recording period (Post). A total volume of 0.25–0.3 µL of bicuculline (2 mM; Sigma-Aldrich, St. Louis, MO) or saline was injected slowly (0.1 µL/min). Fluoro-Gold (4%; Fluorochrome, Denver, CO) was also included in both saline and bicuculline injections to enable subsequent visualization of drug diffusion (Figure 8b). Immediately after injection of bicuculline, M1 multiunit activity became synchronized, with all neurons bursting every 300–400 ms. The period of this activity varied across pups and the Post period did not begin until normal multiunit activity was observed. The bursts of synchronized activity rarely occurred after the Post period began; when they did, activity within ±100 ms of the burst was not included in the analysis.
 
-## Histology
+### Histology
 
 At the end of data collection, the pup was euthanized with an overdose of 10:1 ketamine/xylazine (>0.08 mg/kg) and perfused with phosphate-buffered saline (PBS), followed by 4% paraformaldehyde. The brain was immediately extracted and post-fixed in 4% paraformaldehyde for at least 24 hr. Next, 24–48 hr before the brain was sectioned, it was transferred to a 20% solution of sucrose in PBS until it was no longer buoyant in solution.
 
@@ -173,11 +572,11 @@ Cortical sections were stained for cytochrome oxidase (CO), which has been shown
 
 Stained sections were again photographed at 2.5X or 5X magnification, combined into a single composite image (Microsoft Image Composite Editor; Microsoft, Redmond, WA), and the location of the electrode was visualized in relation to areal, nuclear, or laminar boundaries of the stained tissue.
 
-## Statistical analysis
+### Statistical analysis
 
 All analyses and statistical tests for neural and behavioral data were performed using custom-written MATLAB routines (version 2017a; Mathworks, Natick, MA) and Spike2 software (version 8; Cambridge Electronic Design). Alpha was set at 0.05 for all analyses, unless otherwise stated. Normally distributed data were tested for significance using a one-way ANOVA, one-way repeated measures ANOVA, or t-test. Non-normally distributed data (adjusted r2 values, model fit parameters) were tested for significance using the Kruskal-Wallis nonparametric test or the Mann-Whitney U test. When Kruskal-Wallis tests were significant, post hoc pairwise comparisons across age were performed using the Mann-Whitney U test, with significance values adjusted for multiple comparisons using the Bonferroni procedure. Reported group data in text are always mean ±standard error (SEM), unless otherwise stated. Box plots represent the 25th, 50th (median), and 75th percentiles. Datapoints were considered outliers if they differed from the median by more than three standard deviations.
 
-## Behavioral state and movement classification
+### Behavioral state and movement classification
 
 As described previously (Tiriac et al., 2014), EMG signals and digitally scored behavior were used to identify behavioral states. EMG signals were rectified and smoothed at 0.001 s. Periods of wake were identified by dichotomizing all available EMGs into periods of high tone (indicative of wake) and atonia (indicative of sleep). As the nuchal muscle EMG typically shows chronic tone during wake periods, it was used most often for classifying sleep and wake states. Active sleep was characterized by the occurrence of myoclonic twitches against a background of muscle atonia (Seelke and Blumberg, 2008). For each EMG, a twitch threshold was set that was at least 3X greater than baseline. The initiation time of twitches was recorded as the first data point where the rectified EMG signal exceeded this threshold. When a twitch was identified, a subsequent twitch of that same muscle was only counted if it occurred at least 300 ms after the first; this procedure protected against duplicative analysis of neural data.
 
@@ -187,7 +586,7 @@ Our criteria ensured that only the first wake movement in a bout of wake movemen
 
 Using experimenter-recorded digital markers, EMG signals, and video, the timing of exafferent stimulation was also identified.
 
-## Multiunit activity and spike sorting
+### Multiunit activity and spike sorting
 
 All electrode channels were filtered for multiunit activity (MUA; 500–5000 Hz). Spike sorting was performed offline using Spike2. Once filtered, movement artifact was still visible in some medullary recordings; to remove this artifact we created a virtual reference for each channel out of the mean waveform of the remaining channels (Ludwig et al., 2009). This virtual reference was then subtracted from each channel’s multiunit waveform, thereby removing the movement artifact.
 
@@ -195,47 +594,109 @@ Spike sorting was performed on channels with visually identifiable spiking activ
 
 Neurons were only included in the final analysis if their signal remained stable throughout the recording session and they could be clearly differentiated from background noise (Figure 1—figure supplement 1c,d). An analysis of the amplitude of all isolated cortical neurons revealed no systematic differences in the stability of neurons between P8 and P12, with the peak amplitude waveform templates appearing similar (i.e., ±5%) at the beginning and end of the recording sessions. To ensure that two channels did not identify the same putative neuron, cross-correlations of all putative neurons were graphed and investigated; duplicate neurons were excluded when necessary.
 
-## Local field potential and current source density
+### Local field potential and current source density
 
 Raw waveforms were smoothed (τ = 1 ms) and downsampled to 1000 Hz. These waveforms were there averaged across all twitches and wake movements in order to generate sensory evoked potentials (Figure 4b,d lower; black lines). For P8 rats, we restricted our analysis to periods in which twitches clearly triggered local field potential events. To calculate a current source density map, a custom MATLAB script was used that determined the second spatial derivative of sensory evoked potentials in each channel, and interpolated the resulting data (Figure 4b,d).
 
-## Movement-related neural activity
+### Movement-related neural activity
 
-The relationship between neural response type and firing rate was assessed as follows: First, using either twitches or wake movements as triggers, perievent histograms (2000 ms windows; 10 ms bins) of neural activity were constructed. The average firing rate (in spikes per second, sps) was calculated for each bin and plotted. Next, the twitch-triggered perievent histogram was fit to the following Gaussian model:Rt=BL+Rmax⋅e-t-tmax22c2with baseline term BL in sps, maximum response term Rmax in sps, maximum time term tmax in seconds, and Gaussian width term c, proportunate to the half-width at half-height (HWHH), such that:HWHH=2ln⁡(2)c
+The relationship between neural response type and firing rate was assessed as follows: First, using either twitches or wake movements as triggers, perievent histograms (2000 ms windows; 10 ms bins) of neural activity were constructed. The average firing rate (in spikes per second, sps) was calculated for each bin and plotted. Next, the twitch-triggered perievent histogram was fit to the following Gaussian model:
 
-The rising phase of the neuron’s wake response was fit to the same Gaussian function above, whereas the fall was fit to an exponential decay function, centered around the time of maximal response:R(t)={t ≤tmax, BL+(Rmax⋅e−(t−tmax)22c2)t>tmax, BL+ (Rmax⋅e−λ⋅(t−tmax))with the same terms as for the Gaussian model, but with the addition of the exponential term λ, proportional to the half-life t12, where t12= ln⁡(2)λ
+$$
+Rt=BL+R_{max}⋅e^{-\frac{t-t_{max}^{2}}{2c^{2}}}
+$$
 
-The r2adj of these models was then calculated using the following equation:radj2=1- n-1n-pSSESSTwhere n is the number of observations, p is the number of parameters, SSE is the sum of squared error, and SST is the sum of squared total.
+with baseline term $BL$ in sps, maximum response term $R_{max}$ in sps, maximum time term $t_{max}$ in seconds, and Gaussian width term $c$, proportunate to the half-width at half-height $(HWHH)$, such that:
+
+$$
+HWHH=\sqrt{2ln⁡(2)}c
+$$
+
+The rising phase of the neuron’s wake response was fit to the same Gaussian function above, whereas the fall was fit to an exponential decay function, centered around the time of maximal response:
+
+$$
+R(t)={t \leqt_{max}, BL+(R_{max}⋅e^{−\frac{(t−t_{max})^{2}}{2c^{2}}})t>t_{max}, BL+ (R_{max}⋅e^{−\lambda⋅(t−t_{max})})
+$$
+
+with the same terms as for the Gaussian model, but with the addition of the exponential term λ, proportional to the half-life $t_{\frac{1}{2}}$, where 
+
+$$
+t_{\frac{1}{2}}=\frac{ln⁡(2)}{\lambda}
+$$
+
+The r2adj of these models was then calculated using the following equation:
+
+$$
+r_{adj}^{2}=1-\frac{n-1}{n-p}\frac{SSE}{SST}
+$$
+
+where $n$ is the number of observations, p is the number of parameters, $SSE$ is the sum of squared error, and $SST$ is the sum of squared total.
 
 By selecting a threshold r2adj value for twitch and wake movement model fits, every neuron was classified as one of four types: unresponsive, twitch-responsive, wake-responsive, or twitch- and wake-responsive. To select this threshold, mean perievent histograms were plotted for each age and neural classification. Using an r2adj value of 0.35, unresponsive neurons were most effectively differentiated from responsive neurons (Figure 3—figure supplement 1a). We confirmed that small changes (±0.15) to this threshold value did not meaningfully change the categorization of responsive neurons. Thus, neurons were considered responsive to a given movement (twitch or wake) if they had an adjusted r2adj > 0.35.
 
 For responsive neurons, these models also provided estimates of baseline firing rate, peak time, peak firing rate, half-width at half-height, and, for wake movements, half-life.
 
-## Neural percentages
+### Neural percentages
 
-The percentage of responsive neurons (PRtotal) was calculated to be the sum of neurons with either rtwitch2 or rwake2 greater than 0.35, divided by the total number of neurons (N), as follows:P(Rtotal)= (∑(N(rtwitch2>0.35)|N(rwake2>0.35))∑N)∗100
+The percentage of responsive neurons ($PR_{total}$) was calculated to be the sum of neurons with either $r_{twitch}^{2}$ or $r_{wake}^{2}$ greater than 0.35, divided by the total number of neurons ($N$), as follows:
+
+$$
+P(R_{total})= (\frac{\sum(N(r_{twitch}^{2}>0.35)|N(r_{wake}^{2}>0.35))}{\sumN})∗100
+$$
 
 The percentage of twitch-responsive, wake-responsive, and twitch- and wake-responsive neurons were then calculated relative to the total number of responsive neurons.
 
-## Percentage of movements with a response
+### Percentage of movements with a response
 
-For both twitches and wake movements, triggered movements did not always result in a neural response. Thus, we quantified the percentage of movements (with each twitch or wake movement being an individual trial) that resulted in more activity than would be expected during baseline activity. First, we used the models described above to determine the expected response start time (tstart) and end time (tend) relative to the movement time for each neuron. Next, we computed the response duration (tresponse), such that:tresponse= tend- tstart
+For both twitches and wake movements, triggered movements did not always result in a neural response. Thus, we quantified the percentage of movements (with each twitch or wake movement being an individual trial) that resulted in more activity than would be expected during baseline activity. First, we used the models described above to determine the expected response start time ($t_{start}$) and end time ($t_{end}$) relative to the movement time for each neuron. Next, we computed the response duration ($t_{response}$), such that:
 
-To calculate the total response for each movement (Rtrial), we then summed the total number of action potentials (S) within this response window for each movement:Rtrial=∑tendtstartS
+$$
+t_{response}=t_{end}-t_{start}
+$$
 
-Next, we determined the proportion of movement trials (PRtrial raw) with more action potentials than what would be expected at the baseline firing rate:P(Rtrial raw)= ∑ (Rtrial>(BL∗tresponse))Nmovements
+To calculate the total response for each movement ($R_{trial}$), we then summed the total number of action potentials ($S$) within this response window for each movement:
 
-Because the baseline action potentials were not normally distributed, we then calculated the number of action potentials during a period of baseline activity starting 2 s before the movement (RBL):RBL=∑t=(-2+tresponse)t= -2Sand determined the proportion of baseline periods of duration tresponse that exceeded the expected baseline firing rate:P(RBL)= ∑ (RBL>(BL∗tresponse))Nmovements
+$$
+R_{trial}=\sumt_{end}t_{start}S
+$$
 
-Finally, we subtracted the proportion of trials where the baseline firing rate exceeded its expected value (PRBL) from the proportion of trials with a response above baseline (PRtrial raw), and multiplied this value by 100 to determine the percentage of trials with a response exceeding the baseline firing rate (PRtrial):PRtrial= PRtrial raw - PRBL 1- PRBL*100
+Next, we determined the proportion of movement trials ($PR_{trialraw}$) with more action potentials than what would be expected at the baseline firing rate:
 
-## Cross-correlations
+$$
+P(R_{trial raw})= \frac{\sum (R_{trial}>(BL∗t_{response}))}{N_{movements}}
+$$
 
-For M1–S1 and M1–ECN dual recordings, we calculated cross-correlations for all available pairs of responsive neurons. These cross-correlations were computed using the activity of the first neuron (in S1 or ECN) triggered on the activity of an M1 neuron within 200 ms of either a twitch or wake movement. The resulting raw cross-correlation contained activity from two potential sources: (1) correlated activity due to the stimulus (twitch or wake movement) and (2) correlated activity due to neuron-neuron interactions (i.e., between S1/ECN and M1). We used the shift predictor to remove correlations due to the stimulus and reveal correlations due to neuron-neuron interactions (Averbeck and Lee, 2004; Engel et al., 1990; Perkel et al., 1967). Specifically, the shift predictor is defined as the mean cross-correlation produced by all noncongruent stimulus presentations (i.e. the cross-correlation is computed for Neuron A’s activity in relation to Twitch Z and Neuron B’s activity in relation to all twitches except Z). For bin τ, the shift-predictor-corrected cross-correlation for neurons 1 and 2 to stimulus s is defined as:CC12sτ= r1st+τr2st-m1st+τm2sttwith response r and mean response m across time bins t. The resulting shift-predictor-corrected cross-correlation was summed for all available neuron pairs (t=±250 ms in 1-ms bins).
+Because the baseline action potentials were not normally distributed, we then calculated the number of action potentials during a period of baseline activity starting 2 s before the movement ($R_{BL}$):
+
+$$
+R_{BL}=\sumt=(-2+t_{response})t=-2S
+$$
+
+and determined the proportion of baseline periods of duration $t_{response}$ that exceeded the expected baseline firing rate:
+
+$$
+P(R_{BL})= \frac{\sum (R_{BL}>(BL∗t_{response}))}{N_{movements}}
+$$
+
+Finally, we subtracted the proportion of trials where the baseline firing rate exceeded its expected value ($PR_{BL}$) from the proportion of trials with a response above baseline ($PR_{trialraw}$), and multiplied this value by 100 to determine the percentage of trials with a response exceeding the baseline firing rate ($PR_{trial}$):
+
+$$
+PR_{trial}=\frac{PR_{trialraw}-PR_{BL}}{1-PR_{BL}}*100
+$$
+
+### Cross-correlations
+
+For M1–S1 and M1–ECN dual recordings, we calculated cross-correlations for all available pairs of responsive neurons. These cross-correlations were computed using the activity of the first neuron (in S1 or ECN) triggered on the activity of an M1 neuron within 200 ms of either a twitch or wake movement. The resulting raw cross-correlation contained activity from two potential sources: (1) correlated activity due to the stimulus (twitch or wake movement) and (2) correlated activity due to neuron-neuron interactions (i.e., between S1/ECN and M1). We used the shift predictor to remove correlations due to the stimulus and reveal correlations due to neuron-neuron interactions (Averbeck and Lee, 2004; Engel et al., 1990; Perkel et al., 1967). Specifically, the shift predictor is defined as the mean cross-correlation produced by all noncongruent stimulus presentations (i.e. the cross-correlation is computed for Neuron A’s activity in relation to Twitch Z and Neuron B’s activity in relation to all twitches except Z). For bin $\tau$, the shift-predictor-corrected cross-correlation for neurons $1$ and $2$ to stimulus $s$ is defined as:
+
+$$
+CC_{12s}\tau=r_{1s}t+\taur_{2s}t-m_{1s}t+\taum_{2s}t_{t}
+$$
+
+with response $r$ and mean response $m$ across time bins $t$. The resulting shift-predictor-corrected cross-correlation was summed for all available neuron pairs ($t=\pm$250 ms in 1-ms bins).
 
 Confidence bands (p=0.01) for the resulting cross-correlogram were calculated by assuming that the count for each bin of the shift predictor follows a Poisson distribution (in which the standard deviation equals the square root of the total). Using the standard deviation, we then determined whether the difference between the raw cross-correlation and the shift predictor for that bin differed more than would be expected by chance. Values outside the confidence band indicate a source of cross-correlation beyond that induced by the stimulus and are interpreted as evidence of neuron-neuron interactions.
 
-## Data and software availability
+### Data and software availability
 
 Whenever possible, individual data points are represented within a figure and summarized in the included tables. Raw data time series for each animal (neural firing timecodes and behavioral event timecodes) have been uploaded to Dryad (https://dx.doi.org/10.5061/dryad.8231nj1).
 

@@ -8,13 +8,13 @@
 
 ### Affiliations
 
-1. https://ror.org/0040axw97 Southwest United Graduate School,Yunnan Key Laboratory of Cell Metabolism and Diseases, State Key Laboratory of Conservation and Utilization of Bio-resources in Yunnan, Center for Life Sciences, School of Life Sciences, Yunnan University Kunming China
+1. Southwest United Graduate School,Yunnan Key Laboratory of Cell Metabolism and Diseases, State Key Laboratory of Conservation and Utilization of Bio-resources in Yunnan, Center for Life Sciences, School of Life Sciences, Yunnan University Kunming China ([ROR:0040axw97](https://ror.org/0040axw97))
 
 † Corresponding author
 
 ## Abstract
 
-To survive in challenging environments, animals must develop a system to assess food quality and adjust their feeding behavior accordingly. However, the mechanisms that regulate this chronic physiological food evaluation system, which monitors specific nutrients from ingested food and influences food-response behavior, are still not fully understood. Here, we established a low-quality food evaluation assay system and found that heat-killed E. coli (HK- E. coli), a low-sugar food, triggers cellular UPR ER and immune response. This encourages animals to avoid low-quality food. The physiological system for evaluating low-quality food depends on the UPR ER (IRE-1/XBP-1) - Innate immunity (PMK-1/p38 MAPK) axis, particularly its neuronal function, which subsequently regulates feeding behaviors. Moreover, animals can adapt to a low-quality food environment through sugar supplementation, which inhibits the UPR ER -PMK-1 regulated stress response by increasing vitamin C biosynthesis. This study reveals the role of the cellular stress response pathway as physiological food evaluation system for assessing nutritional deficiencies in food, thereby enhancing survival in natural environments.
+To survive in challenging environments, animals must develop a system to assess food quality and adjust their feeding behavior accordingly. However, the mechanisms that regulate this chronic physiological food evaluation system, which monitors specific nutrients from ingested food and influences food-response behavior, are still not fully understood. Here, we established a low-quality food evaluation assay system and found that heat-killed E. coli (HK-E. coli), a low-sugar food, triggers cellular UPRER and immune response. This encourages animals to avoid low-quality food. The physiological system for evaluating low-quality food depends on the UPRER (IRE-1/XBP-1) - Innate immunity (PMK-1/p38 MAPK) axis, particularly its neuronal function, which subsequently regulates feeding behaviors. Moreover, animals can adapt to a low-quality food environment through sugar supplementation, which inhibits the UPRER -PMK-1 regulated stress response by increasing vitamin C biosynthesis. This study reveals the role of the cellular stress response pathway as physiological food evaluation system for assessing nutritional deficiencies in food, thereby enhancing survival in natural environments.
 
 ## Introduction
 
@@ -28,11 +28,23 @@ In this study, using the low-quality food evaluation assay system we established
 
 ## Results
 
-## Low-quality food induces stress response in animals
+### Low-quality food induces stress response in animals
 
 Our previous studies have shown that Heat-killed E. coli (HK-E. coli), which lacks certain molecules, is considered a low-quality food that is unable to support animal growth (Qi and Han, 2018; Qi et al., 2017). Moreover, through metabolic-seq analysis, we identified significant changes in a large numbers of derivatives (Figure 1—figure supplement 1A, Supplementary file 1a), including lipids and their derivatives (Figure 1—figure supplement 1B, Supplementary file 1b), amino acid and their metabolites (Figure 1—figure supplement 1C, Supplementary file 1c), as well as coenzymes and vitamins (Figure 1—figure supplement 1D, Supplementary file 1d). Interestingly, we observed a significant decrease in carboxylic acids and their derivatives (Figure 1—figure supplement 1E, Supplementary file 1e) in E. coli after being heat-killed (Figure 1—figure supplement 1F, Supplementary file 1f). This suggests that HK-E. coli is nutritionally deficient for C. elegans when compared to normal E. coli food.
 
 Next, we conducted two behavior assays to facilitate the analysis of the food evaluation process in animals by seeding L1 animals in assay plates (Figure 1A and B). In the avoidance assay, wild-type animals avoided the HK-E. coli OP50 (HK-OP50) food (Figure 1A). Interestingly, in the food choice assay, animals initially showed no preference between the two types of food (1–2 hr), but eventually exhibited a preference for high-quality food (Live E. coli) up until the 17 hr mark (Figure 1B, Figure 1—figure supplement 1G). This suggests that worms depart from the HK-E. coli after recognizing it as low-quality food source through ingestion.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/94181/elife-94181-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic drawing and quantitative data of the food aversion assay. Circles indicate the food spot for live (yellow) and HK-OP50 (red) bacteria, respectively. The animals were scored 16–17 hr after L1 worms were placed on the food spot. Data are represented as mean ± SD from three independent experiments, 79–129 animals/assay. (B) Schematic method and quantitative data of the food selection assay. Live (yellow), heat-killed (red) E. coli and LB as the buffer for E. coli were placed on indicated position. Synchronized L1 worms were place in the center spot. The selection index was calculated at the indicated time. Data are represented as mean ± SD from eight independent experiments, 123–792 animals/assay. (C) GO enrichment analysis of up-regulated genes in animals fed with HK-E. coli vs live E. coli. (D) Venn diagram showing numbers of UPRER target genes and up-regulated genes in animals fed HK-E. coli, and their overlap. (E) Venn diagram showing numbers of induction genes by four pathogenic bacteria and HK-E. coli induced genes, and their overlap. The gene expression data was extracted from published data of animals’ infection with Pseudomonas aeruginosa (PA) (Nakad et al., 2016), Bacillus thuringiensis (Bthu) (Sinha et al., 2012), Staphylococcus aureus (Saur) (Sinha et al., 2012), and Serratia marcescens (Smar) (Sinha et al., 2012). (F–G) GFP fluorescence images and bar graph showing that Phsp-4::GFP (F) and Pirg-5::GFP (G) were induced in animals fed with HK-E. coli. Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. For all panels, Scale bar shows on indicated figures, 50 μm. * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, ns: no significant difference. Precise p values are provided in Raw Data.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94181/elife-94181-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Relative to Figure 1. (A–E) Metabolomics analysis of different quality food (HK-K12, HK-yfbR and Live-K12). Cluster analysis of all metabolites (A), lipids and their derivatives (B), amino acids and their derivatives (C), coenzymes and vitamins (D), and carbohydrates and their derivatives (E) from Live-K12, HK-K12, and HK-yfbR. Color indicates the relative level of each metabolite. HK-K12: heat-killed E. coli wild-type K12; HK-yfbR: heat-killed E. coli mutant yfbR; K12: live E. coli wild-type K12. z-score for standardizing data, complete for bi-clustering algorithm, and Euclidean for distance method. (F) Principal component analysis to test the repeatability of the metabolic experiment. HK-K12: heat-killed E. coli wild-type K12; HK-yfbR: heat-killed E. coli mutant yfbR; K12: live E. coli wild-type K12. LB: LB buffer for culturing E. coli. (G) The number of worms in each position calculated at the indicated time, indicating that animals initially select both foods (1–2 hr), but eventually favor high-quality food (Live E. coli) until 17 hr. (H) GO enrichment analysis of UPRER dependent IRE-1 branch. For all panels, * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, ns: no significant difference. Precise p values are provided in Raw Data.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/94181/elife-94181-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Relative to Figure 1. (A) UPRER reporter (Phsp-4::GFP) and immunity reporter (Pirg-5::GFP) were induced in the neuron and intestine of animals fed with HK-E. coli. Neurons are highlighted with a red arrow. (B) UPRmit reporter (Phsp-6::GFP) was weakly induced in animals fed with HK- E. coli. (C) UPRER reporter (Phsp-4::GFP) expression in animals under normal food (OP50), low-quality food (HK-OP50), and starved (M9: hatching L1 worm in M9, NGM) condition; L1 animals were cultured in OP50, HK-OP50 or starved NGM for 20 hr. (D) Immunity reporter (Pirg-5::GFP) expression in animals under normal food (OP50), low-quality food (HK-OP50), and starved (M9: hatching L1 worm in M9, NGM). L1 animals were cultured in OP50, HK-OP50 or starved NGM for 20 hr. For all panels, Scale bar shows on indicated figures, 50 μm.
 
 In order to investigate the pathways in animals that respond to HK-E. coli, we performed transcriptomics analysis on worms that were cultured with both HK-E. coli and Live E. coli. Gene-expression profiling revealed that stress response genes, including those related to biotic stimulus, immune response and response to stress, are up-regulated in animals fed with HK-E. coli OP50 (HK-OP50; Figure 1C, Supplementary file 2a). Among these up-regulated genes, we identified 11 out of 62 of UPRER target genes (Figure 1D, Figure 1—figure supplement 1H and Supplementary file 2b). Additionally, about 50–80% of up-regulated genes overlap with genes responding pathogenic bacteria (Nakad et al., 2016; Sinha et al., 2012; Figure 1E, Supplementary file 2c). Consistent with the results of the RNA sequencing (RNA-seq) analysis, the UPRER reporter (Phsp-4::GFP) (Calfon et al., 2002) and immunity reporter (Pirg-5::GFP)(Bolz et al., 2010) were strongly induced in intestine (Figure 1F–G) and neurons (Figure 1—figure supplement 2A) by feeding unfavorable food (HK-E. coli OP50), suggesting that UPRER and immune pathways may respond to low-quality food (HK-E. coli OP50). As intestinal fluorescence (Phsp-4::GFP or Pirg-5::GFP) is easy observation and scoring, the further analyses were done in the intestine.
 
@@ -40,23 +52,47 @@ Moreover, UPRMt reporter (Phsp-6::GFP) (Yoneda et al., 2004) was weakly induced 
 
 Together, these findings suggest that low-quality food (HK-E. coli OP50) triggers a stress response pathway in animals, including UPRER and innate immune pathway. This implies that animals may assess the quality of food through UPRER and innate immune pathway.
 
-## Animals evaluate food quality through UPRER-immune-dependent physiological food quality evaluation system
+### Animals evaluate food quality through UPRER-immune-dependent physiological food quality evaluation system
 
 To determine whether the UPRER and innate immune pathways play a role in evaluating low-quality food, we first examined whether the activation of the UPRER by HK-E. coli was dependent on the known signaling components of the UPRER branches, including IRE/XBP-1, PERK/ATF-4 and ATF-6 (Hetz et al., 2020; Ron and Walter, 2007). We observed no difference in Phsp-4::GFP induction with atf-4 (Figure 2—figure supplement 1A) or atf-6 (Figure 2—figure supplement 1B) RNAi-mediated knockdown in animals fed with HK-E. coli. However, knockdown of ire-1/xbp-1 or mutation of xbp-1 reduced GFP fluorescence (Figure 2A and B). Among the 11 differentially expressed UPRER target genes in animals fed with HK-E. coli from RNA-seq (Figure 1D), 64% of the genes are IRE-mediated genes (Figure 1—figure supplement 1H, Supplementary file 2d). The mRNA level of IRE-1-mediated splicing of xbp-1 (Calfon et al., 2002) is also induced in animals fed with HK-E. coli OP50 (Figure 2—figure supplement 1C). However, UPRER is not affected in animals feeding live-E. coli by RNAi of ire-1, xpb-1, atf-4, and atf-6 (Figure 2—figure supplement 1D). These data suggest that activation of the UPRER by low-quality food (HK-E. coli) depends on the IRE-1/XBP-1.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/94181/elife-94181-fig2-v1.jpg)
+
+**Figure 2.:** (A–B) GFP fluorescence images and bar graph showing that HK-E. coli induced Phsp-4::GFP was decreased in animals with ire-1 or xbp-1 RNAi treatment (A) or xbp-1 mutation (B). Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. (C) Food aversion assay showing that xbp-1 mutation eliminated the discrimination against HK-E. coli. However, this effect is rescued by expressing xbp-1 in neurons rather than intestine. Data are represented as mean ± SD from five independent experiments, 156–763 animals/assay. (D) GFP fluorescence images and bar graph showing that HK-E. coli induced Pirg-5::GFP was decreased in animals with pmk-1 RNAi treatment. Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. (E) Western blot images showing the level of p-PMK-1 in L1 animals (Wild-type N2 and xbp-1 mutant) fed with OP50 or HK-OP50 for 4 hr. The level of p-PMK-1 is induced in animals fed HK-OP50. (F) Food aversion assay showing that pmk-1 mutation eliminated the discrimination against HK-E. coli. However, this effect is rescued by expressing pmk-1 in neurons rather than intestine. Data are represented as mean ± SD from five independent experiments, 168–492 animals/assay. (G) Food aversion assay in wild-type, xbp-1, pmk-1 and double mutant. Data are represented as mean ± SD from five independent experiments, 259–490 animals/assay. For all panels, Scale bar shows on indicated figures, 50 μm. * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, ns: no significant difference. Precise p values are provided in Raw Data.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94181/elife-94181-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Relative to Figure 2. (A–B) GFP fluorescence images and bar graph showing that HK-E. coli induced Phsp-4::GFP was not affected in animals with atf-4 (A) or atf-6 (B) RNAi treatment. Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. (C) qPCR showing that IRE-1-mediated splicing of xbp-1 mRNA is induced in animals fed with HK-E. coli. (D) UPRER reporter (Phsp-4::GFP) expression in animals with candidate RNAi feeding OP50 or HK-OP50. (E) Venn diagram showing the numbers of PMK-1-dependent genes 30 and up-regulated genes in animals fed HK-E. coli, and their overlap. (F) The expression of PMK-1-dependent genes which was extracted from RNA-seq data from animals fed with HK-E. coli. The data from average of three independent experiments. (G–H) GFP fluorescence images and bar graph showing that Psysm-1::GFP (G) and Pirg-1::GFP (H) were induced in animals fed HK-E. coli. Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. (I) Immunity reporter (Pirg-5::GFP) expression in animals with candidate RNAi feeding OP50 or HK-OP50. For all panels, Scale bar shows on indicated figures, 50 μm. * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, ns: no significant difference. Precise p values are provided in Raw Data.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/94181/elife-94181-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Relative to Figure 2. (A) GFP fluorescence images and bar graph showing that HK-E. coli induced Pirg-5::GFP was decreased in animals with ire-1 or xbp-1 RNAi treatment. Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. (B) GFP fluorescence images and bar graph showing that Phsp-4::GFP was not affected in animals with pmk-1 RNAi treatment. Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. (C) Images and bar graph showing that the avoidance behavior of N2, xbp-1 mutant, and pmk-1 mutant in response to different food source (Saprophytic staphylococci-SS, Pseudomonas aeruginosa-PA14, or OP50). ‘Broder’ indicates regions with thicker SS boundaries; ‘In’ denotes areas inside SS; ‘Out’ refers to areas without SS. The scale is as follows: 2 for animals capable of escaping from PA14 and feeding on PA14 located with edges; 1 for animals capable of escaping from PA14 but not feeding on PA14 located with edges; 0 for animals unable to escape from PA14 and being killed by PA14. Data are represented as mean ± SD from five independent experiments, 359–670 animals/assay. For all panels, Scale bar shows on indicated figures, 50 μm. * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, ns: no significant difference. Precise p values are provided in Raw Data.
 
 To further analyze whether XBP-1-dependent UPRER activation is critical for animals to leave low-quality food, we tested food avoidance behavior using xbp-1 mutant. The results show that xbp-1 mutants had a significantly decreased likelihood of leaving of HK-E. coli, which was rescued by expressing xbp-1 in neuron rather than intestine (Figure 2C). This indicates that XBP-1-dependent UPRER activation in neuron is critical for animals to specific evaluate low-quality food (HK-E. coli).
 
 We then investigated which innate immune pathway is involved in evaluating low-quality food. First, we analyzed HK-E. coli-induced genes from RNA-seq. Among these up-regulated genes, 82 out of 409 of PMK-1-dependent genes (Fletcher et al., 2019) were identified (Figure 2—figure supplement 1E, Supplementary file 2c). Second, we confirmed the induction of several well-known PMK-1 target genes in RNA-seq data (Foster et al., 2020; Figure 2—figure supplement 1F) and reporter analysis (Figure 2—figure supplement 1G–H). Moreover, the induction of Pirg-5::GFP was abolished in pmk-1 knockdown animals fed with HK-E. coli (Figure 2D). Third, we found that the phosphorylated PMK-1 (p-PMK-1) level was prominently increased in wild-type N2 animals fed HK-E. coli compared to feeding E. coli OP50 (Figure 2E). Finally, pmk-1 mutants had a decreased likelihood of leaving of HK-E. coli, which was rescued by expressing pmk-1 in neurons rather than intestine (Figure 2F). Moreover, Pirg-5::GFP is not affected in animals feeding live-E. coli by RNAi of pmk-1 (Figure 2—figure supplement 1I).These data suggest that PMK-1 regulated immune pathway evaluates low-quality food, especially the neuronal PMK-1 has a critical function for food quality response.
 
-## XBP-1 and PMK-1 are in the same pathway for evaluating food quality
+### XBP-1 and PMK-1 are in the same pathway for evaluating food quality
 
 Next, we explored the connection between UPRER (IRE-1/XBP-1) and innate immunity (PMK-1 p38 MAPK) in food quality evaluation. We found that Pirg-5::GFP induction (Figure 2—figure supplements 1I and 2A) and PMK-1 activation (Figure 2E) were decreased in animals with xbp-1 mutation or knockdown when fed with HK-E. coli, suggesting that XBP-1 could regulate PMK-1 under this condition. Additionally, Phsp-4::GFP induction under HK-E. coli was not affected in animals with pmk-1 RNAi (Figure 2—figure supplements 1D and 2B), indicating that XBP-1-dependent UPRER activation is not regulated by PMK-1. Finally, we constructed a double mutant of xbp-1 and pmk-1 and found that the food avoidance phenotype of the double mutant was similar to the pmk-1 mutant (Figure 2G), indicating that PMK-1 is downstream of XBP-1 in responding to low-quality food.
 
 We then asked whether UPRER (IRE-1/XBP-1) - Innate immunity (PMK-1/p38 MAPK) axis is specific to evaluate low-quality food (HK-E. coli). We performed behavior assay in N2, pmk-1 and xbp-1 mutant animals by feeding normal E. coli food, inedible food (Saprophytic staphylococci) (Geng et al., 2022) and pathogenic food (Pseudomonas aeruginosa-PA14; Richardson et al., 2010). We found that N2, pmk-1, and xbp-1 mutant worms did not exhibit avoidance behavior when presented with normal food (OP50). However, both N2 and xbp-1 mutant worms were able to escape from inedible food (N2 was predominantly found on the border areas of the bacterial lawn and xbp-1 mutant worms on border and in), Saprophytic staphylococci, whereas pmk-1 mutant worms did not exhibit this avoidance behavior. Notably, N2 and xbp-1 mutant worms exhibited even more pronounced avoidance behavior when exposed to Pseudomonas aeruginosa, whereas pmk-1 mutant worms were more susceptible to infection by this pathogen (Figure 2—figure supplement 2C). These findings suggest that the UPR-Immunity pathway plays a crucial role in helping animals avoid low-quality food (HK-E. coli) by triggering an avoidance response. In contrast, the Innate immunity pathway, which is mediated by PMK-1/p38 MAPK, appears to play a key role in evaluating unfavorable food sources, such as HK-E. coli, Saprophytic staphylococci, and Pseudomonas aeruginosa, and helping animals avoid these environments.
 
-## Sugar deficiency in HK-E. coli food induces stress response and avoidance behavior in animals
+### Sugar deficiency in HK-E. coli food induces stress response and avoidance behavior in animals
 
 We then investigated which nutrients/metabolites are sensed by animals through the XBP-1-PMK-1 axis for food quality evaluation. First, we hypothesized that the nutrition status is improved in E. coli mutant (HK-treatment), which could inhibit UPRER and immune response in animals. We established a system for screening the E. coli mutant Keio library (Figure 3—figure supplement 1A), and identified 20 E. coli mutants that did not induce Phsp-4::GFP through the UPRER reporter (Phsp-4::GFP) after three rounds of screening (Supplementary file 3a). From these 20 E. coli mutants, we identified 9 E. coli mutants that did not induce Pirg-5::GFP through the immunity reporter (Pirg-5::GFP) screening (Figure 3—figure supplement 1B–C, Supplementary file 3a). Animals fed HK-yfbR, which catalyzes carbohydrate derivative metabolic process (Weiss, 2007), had a decreased ability to leave food (Figure 3A, Supplementary file 3a), indicating that HK-yfbR may be a higher quality food for animals compared to HK-K12.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/94181/elife-94181-fig3-v1.jpg)
+
+**Figure 3.:** (A) Food aversion assay showing that wild-type animals eliminated the discrimination against HK-E. coli when yfbR is mutated in E. coli. Data are represented as mean ± SD four independent experiments, 251–490 animals/assay. (B) Heat map showing the 13 differential metabolites from HK-K12, HK-yfbR, and K12 in four independent experiments. Color indicates the relative level of each metabolite. (C–D) The bar graph showing that HK-E. coli induced Phsp-4::GFP was decreased in animals with lactose (C) or D-(+)-sucrose (D) supplementation. Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. (E–F) GFP fluorescence images and bar graph showing that HK-E. coli induced Phsp-4::GFP (E) and Pirg-5::GFP (F) were decreased in animals with D-(+)-glucose (D-Glc) supplementation. Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. (G) Western blot images showing the level of p-PMK-1 in L1 animals fed HK-E. coli with or without D-(+)-glucose (D-Glc) supplementation for 4 hr. The level of p-PMK-1 is decreased in animals fed HK-OP50 +D Glc. (H) Food aversion assay showing that wild-type animals eliminated the discrimination against HK-E. coli with D-Glc supplementation. Data are represented as mean ± SD six independent experiments, 190–492 animals/assay. For all panels, Scale bar shows on indicated figures, 50 μm. * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, ns: no significant difference. Precise p values are provided in Raw Data.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94181/elife-94181-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Relative to Figure 3. (A) Flow chart of strategy for E. coli Keio mutant screening. We identified 20 E. coli mutants that did not induce hsp-4::GFP through the UPRER reporter (Pirg-5::GFP) after three rounds of screening (Supplementary file 3a). From these 20 E. coli mutants, we identified 9 E. coli mutants that did not induce Pirg-5::GFP through the immunity reporter (Pirg-5::GFP) screening (Supplementary file 3a). (B–C) The bar graph showing that HK-E. coli induced Phsp-4::GFP (B) and Pirg-5::GFP (C) was decreased in animals fed mutant E. coli (Heat-killed). Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. For all panels, * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, ns: no significant difference. Precise p values are provided in Raw Data.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/94181/elife-94181-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Relative to Figure 3. (A) Venn diagram showing the number of differentially metabolites in HK-E. coli-K12, HK-E. coli-yfbR and E. coli. (B) KEGG enrichment analysis of differentially expressed genes in animals fed HK-E. coli vs live E. coli. We noticed that most of glycolysis/gluconeogenesis genes are up-regulated in animals fed HK-E. coli. (C) The bar graph showing that HK-E. coli induced Phsp-4::GFP was not affected in animals with D-(+)-trehalose supplementation. Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. (D) GFP fluorescence images and bar graph showing that HK-E. coli induced Psysm-1::GFP was decreased in animals with D-(+)-glucose (D-Glc) supplementation. Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. (E) UPRER reporter (Phsp-4::GFP) expression animals with D-Glc supplementation under OP50, HK-OP50, or NGM condition. (F) immunity reporter (Pirg-5::GFP) expression animals with D-Glc supplementation under OP50, HK-OP50, or NGM condition. (G) Development of animals after 48 h fed with OP50, HK-OP50, HK-OP50 +D Glc, and HK-OP50 +D GlcA. Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. For all panels, Scale bar shows on indicated figures, 50 μm. * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, ns: no significant difference. Precise p values are provided in Raw Data.
 
 Secondly, we performed a metabolomics analysis of different quality food (HK-K12, HK-yfbR and Live-K12). We found that the level of 13 metabolites were similar between HK-yfbR and Live-K12, but significantly changed in HK-K12 (Figure 3B, Figure 3—figure supplement 2A, and Supplementary file 1g). We also found that genes involved in glycolysis/gluconeogenesis were up-regulated in animals fed with HK-E. coli (Figure 3—figure supplement 2B), suggesting that glycolysis/gluconeogenesis metabolism is disordered in animals fed with HK-E. coli, which may result from changes in sugar/carbohydrate intake. The carbohydrates (D-trehalose, lactose, and D-(+)-sucrose) were also decreased in HK-E. coli (Figure 3B), suggesting that carbohydrate deficiency may induce stress response and avoidance behavior in animals feeding HK-E. coli.
 
@@ -66,9 +102,17 @@ Previous studies have shown that heat-killed E. coli (HK-E. coli) is a low-quali
 
 Together, these findings suggest that HK-E. coli induces a stress response and avoidance behavior in animals, which can be inhibited by D-(+)-glucose supplementation. This implies that animals may evaluate the sugar deficiency from HK-E. coli through the activation of UPRER and immune responses.
 
-## Animals could overcome a low-quality food environment by sugar supplementation through vitamin C biosynthesis
+### Animals could overcome a low-quality food environment by sugar supplementation through vitamin C biosynthesis
 
 We discovered that D-(+)-glucose supplementation inhibited HK-E. coli induced UPRER (Figure 3E), immune response (Figure 3F and G and Figure 3—figure supplement 2D) and avoidance (Figure 3H). Simultaneously, vitamin C (VC), which is synthesized by glucuronate pathway using D-glucose (Patananan et al., 2015; Yabuta et al., 2020; Figure 4A), was found to contribute to neuroprotective (Moritz et al., 2020; Rice, 2000), immune defense (Maggini et al., 2007; Webb and Villamor, 2007), and inhibits inflammatory and ER stress (Luo et al., 2022; Su et al., 2019). This led us to question whether the vitamin C biosynthesis pathway is involved in evaluating low-quality food by using D-glucose.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/94181/elife-94181-fig4-v1.jpg)
+
+**Figure 4.:** (A) Cartoon illustration of a simplified, Vitamin C biosynthesis pathway in C. elegans. The relevant coding genes of enzymes was labeled with red. (B) The level of total L-ascorbic acid (TAA), also known as vitamin C, in animals fed with Live-K12, HK-K12, or HK-yfbR. Data are represented as mean ± SD from six independent experiments. (C) The level of total L-ascorbic acid (TAA) in animals (control or knockdown of Vitamin C biosynthesis genes) fed with HK-E. coli with or without D-glucuronate (D-GlcA) supplementation. Data are represented as mean ± SD from eight independent experiments. (D–E) GFP fluorescence images and bar graph showing that HK-E. coli induced Phsp-4::GFP (D) and Pirg-5::GFP (E) were decreased in animals with D-GlcA or Vitamin C supplementation. Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. (F–G) Western blot images showing the level of p-PMK-1 in L1 animals fed with HK-E. coli with D-GlcA or Vitamin C supplementation for 4 hr. The level of p-PMK-1 is decreased in animals with D-GlcA (F) or Vitamin C (G) supplementation. (H) Food aversion assay showing that wild-type animals eliminated the discrimination against HK-E. coli with D-GlcA or Vitamin C supplementation. Data are represented as mean ± SD from four independent experiments, 153–292 animals/assay. (I–K) The bar graph showing that suppression of HK-E. coli induced Phsp-4::GFP (I), Pirg-5::GFP (J) and food avoidance (K) by D-GlcA supplementation was abolished in animals with RNAi of VC biosynthesis genes, which was not affect by Vitamin C supplementation. Blue numbers are the number of worms scored from at least three independent experiments and Data are represented as mean ± SD. (I-J) Data are represented as mean ± SD from five independent experiments, 252–537 animals/assay. (K) For all panels, Scale bar shows on indicated figures, 50 μm. * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, ns: no significant difference. Precise p values are provided in Raw Data.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94181/elife-94181-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Relative to Figure 4. (A) The level of total L-ascorbic acid (TAA) in Live-K12, HK-K12, or HK-yfbR. Data are represented as mean ± SD from six independent experiments. (B) The level of total L-ascorbic acid (TAA) in animals fed HK-E. coli with or without D-Glc supplementation. Data are represented as mean ± SD from eight independent experiments. (C) GFP fluorescence images and bar graph showing that HK-E. coli induced Psysm-1::GFP was decreased in animals with D-GlcA or vitamin C supplementation. Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. (D) The bar graph showing that suppression of HK-E. coli induced Psysm-1::GFP by D-GlcA supplementation was abolished in animals with RNAi of VC biosynthesis genes, which was not affect by vitamin C supplementation. Blue numbers are the number of worms scored from at least three independent experiments. Data are represented as mean ± SD. (E) Food selection assay showing that the preference of HK-E. coli with D-GlcA supplementation was abolished in animals by RNAi of vitamin C biosynthesis genes. Data are represented as mean ± SD from six independent experiments, 427–775 animals/assay. For all panels, Scale bar shows on indicated figures, 50 μm. * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, ns: no significant difference. Precise p values are provided in Raw Data.
 
 Firstly, we observed an increase in the vitamin C level in C. elegans when fed with HK-yfbR (Figure 4B), a high-carbohydrate food compared to HK-E. coli (Figure 3B and Figure 1—figure supplement 1E). However, the VC level in bacteria is the same (Figure 4—figure supplement 1A). The VC level also increased when D-glucose (Figure 4—figure supplement 1B) or D-glucuronate (D-GlcA) was added to HK-E. coli (Figure 4C), which was abolished by knocking down VC biosynthesis genes (Figure 4C and Figure 4—figure supplement 1B). This suggests that addition of sugar supplementation promotes VC synthesis in animals fed with HK-E. coli.
 
@@ -78,9 +122,17 @@ Finally, we asked whether inhibition of stress response and avoidance by sugar s
 
 Together, these data indicate that the vitamin C biosynthesis pathway is critical for evaluating whether food is of higher quality and can be eaten by animals. It also suggests that animals could improve their VC levels to adapt to bad food environment.
 
-## Animals evaluate sugar and vitamin C through neuronal XBP-1 and PMK-1
+### Animals evaluate sugar and vitamin C through neuronal XBP-1 and PMK-1
 
 As D-GlcA/sugar and VC supplementation suppressed HK-E. coli induced UPRER, immune response and food avoidance behavior, we investigated whether animals evaluate sugar and VC through XBP and PMK-1 dependent pathways. We performed a food selection behavior assay by adding D-Glc, D-GlcA or VC to the NGM, E. coli and HK-E. coli (Figure 5A). The food selection behavior assays revealed that supplementation with D-Glc, D-GlcA, or VC inhibits the animals’ choice of sugar or VC on E. coli-OP50 feeding conditions (Figure 5—figure supplement 1A). This suggests that supplementation with D-Glc, D-GlcA, or VC may alter the metabolites of live bacteria, leading to avoidance by the animals. There was no preference observed on NGM plate (no food condition) supplementation with D-Glc and VC (Figure 5—figure supplement 1B), indicating that the intake of sugar or VC alone does not influence animal preference. However, alone D-GlcA could influence worm physiology which induces preference change (Figure 5—figure supplement 1B). Interestingly, D-Glc and D-GlcA (Figure 5B and C) or VC (Figure 5D) supplementation increased the preference for heat-killed bacteria, which was suppressed in xbp-1 or pmk-1 mutant animals. However, this preference was also rescued in xbp-1 or pmk-1 mutant animals by expressing XBP-1 or PMK-1 in neurons rather than intestine (Figure 5B–D), indicating that neuronal XBP-1 and PMK-1 are critical for physiological food elevation system for monitoring the level of sugar and VC under low-quality food condition.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/94181/elife-94181-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic method of the food selection assay. Food (red) and food with carbohydrate (D-Glc, D-GlcA, or VC) supplementation (green) was placed on indicated position. Synchronized L1 worms were then place in plate. After 16-17h, the selection index was calculated. (B–D) Food selection assay showing that xbp-1 or pmk-1 mutation eliminated the preference of HK-E. coli with D-Glc (B), D-GlcA (C) or Vitamin C (D) supplementation, which was rescued in xbp-1 or pmk-1 mutant animals by expressing XBP-1 or PMK-1 in neurons rather than intestine. Data are represented as mean ± SD from five independent experiments, 68–647 animals/assay (B). Data are represented as mean ± SD from six independent experiments, 83–701 animals/assay (C). Data are represented as mean ± SD from six independent experiments, 67–1035 animals/assay (D). For all panels, Scale bar shows on indicated figures, 50 μm. * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, ns: no significant difference. Precise p values are provided in Raw Data.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94181/elife-94181-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Relative to Figure 5. (A) Food selection assay for OP50 and OP50 +D Glc, D-GlcA, or VC, respectively. Data are represented as mean ± SD from five independent experiments, 241–1182 animals/assay. (B) Food selection assay for buffer (H2O) & buffer (H2O)+D Glc, D-GlcA, or VC, respectively. Data are represented as mean ± SD from five independent experiments, 8–153 animals/assay. (C) Food avoidance assay for N2 and kgb-1 mutant animals fed with HK-E. coli. Data are represented as mean ± SD from six independent experiments, 348–660 animals/assay. (D) Translation ability of animals fed with OP50 or HK-OP50 are presented by western blot of puromycin-labeled peptides. For all panels, * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001, ns: no significant difference. Precise p values are provided in Raw Data.
 
 ## Discussion
 
@@ -88,7 +140,7 @@ To better survive, animals must evolve a system to recognize and evaluate the qu
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/94181/elife-94181-fig6-v1.jpg)
 
-**Figure 6.:** ER (IRE-1/XBP-1) - Innate immunity (PMK-1/p38 MAPK) axis.Vitamin C level is low in animals fed low sugar food, HK-E. coli. Sugar and Vitamin C deficiency activate cellular UPRER and immune response, which promote animals to leave low-quality food and seek better food for survival. This cellular stress regulated physiological food evaluation system depends UPRER (IRE-1/XBP-1) - Innate immunity (PMK-1/p38 MAPK) axis in neuron.
+**Figure 6.:** Vitamin C level is low in animals fed low sugar food, HK-E. coli. Sugar and Vitamin C deficiency activate cellular UPRER and immune response, which promote animals to leave low-quality food and seek better food for survival. This cellular stress regulated physiological food evaluation system depends UPRER (IRE-1/XBP-1) - Innate immunity (PMK-1/p38 MAPK) axis in neuron.
 
 One of the cellular stress response pathways, the Unfolded Protein Response (UPRER), is activated by various stresses, including infection and nutrition deficiency, which disrupt the homeostasis of the endoplasmic reticulum (ER) (Hetz et al., 2020). The activation of UPRER, specifically in the nervous system, has been shown to promote changes in feeding and foraging behavior (Özbey et al., 2020). The p38 PMK-1 pathway is also crucial for regulating the expression of secreted innate immune effectors and is essential for survival during infection (Troemel et al., 2006). Therefore, these two pathways play a critical role in ensuring animals' survival in changing environments. However, it is still unclear whether UPRER and innate immunity evaluate food quality under physiological conditions. Our study provides evidence that low-quality food (HK-E. coli) activates both UPRER and p-PMK-1, leading to animals leaving the low-quality food. Previously finding have shown that inhibition of ER function promotes C. elegans avoid to the toxic food, which employs the MLK-1/MEK-1/KGB-1 pathway (Melo and Ruvkun, 2012). Notably, HK-E. coli induced avoidance behavior is independent of the KGB-1 pathway (Figure 5—figure supplement 1C). Additionally, our study reveals that neuronal UPRER and PMK-1 are essential for evaluating low-quality food, suggesting that the nervous system plays a critical role in assessing food quality.
 
@@ -106,7 +158,7 @@ Collectively, this study uncovers the unexpected function of UPRER (IRE-1/XBP-1)
 
 ## Materials and methods
 
-## C. elegans strains and maintenance
+### C. elegans strains and maintenance
 
 Nematode stocks were maintained on nematode growth medium (NGM) plates seeded with bacteria (E. coli OP50) at 20 °C.
 
@@ -114,92 +166,108 @@ Nematode stocks were maintained on nematode growth medium (NGM) plates seeded wi
 
 (2) The following strains were constructed by this study:
 
-## Bacterial strains
+### Bacterial strains
 
 E. coli-OP50, Saprophytic staphylococci, Pseudomonas aeruginosa-PA14, E. coli-K12 (BW25113), and E. coli-K12 mutant were cultured at 37 °C in LB medium. A standard overnight cultured bacteria was then spread onto each Nematode growth media (NGM) plate.
 
-## Culture medium
+### Culture medium
 
 MGN Medium：Sigma agar: 20 g/L; Bacto Peptone: 2.5 g/L; NaCl: 3 g/L; MgSO4: 0.12 g/L; CaCl: 0.111 g/L; PPB:(KH2PO4 0.8 M; K2HPO4·3H2O 0.2 M) 25 ml/L; Cholesterol: 0.005 g/L.
 
 LB broth: TPYPTONE: 10 g/L; Yeast Extract: 5 g/L; NaCl 5 g/L.
 
-## Method details
+### Method details
 
-## Generation of transgenes
+#### Generation of transgenes
 
-## Preparation and feeding of worm food
+#### Preparation and feeding of worm food
 
 We followed an established protocol (Qi and Han, 2018; Qi et al., 2017) to prepare heat-killed (HK) E. coli. Briefly, a standard OD600=0.5–0.6 of E. coli OP50 and E. coli K12 grown in LB broth was concentrated to 1/20 vol and was then heat-killed at 80 °C for 180 min. About 150 µl of the heat-killed bacteria was spread onto each 35 mm NGM plate.
 
-## Preparation of HK-E. coli + carbohydrate or vitamin C food
+#### Preparation of HK-E. coli + carbohydrate or vitamin C food
 
-## Behavioral assay
+### Behavioral assay
 
-## C. elegans selection assays
+#### C. elegans selection assays
 
-For C. elegans to have enough space to evaluate food, we add 18 µl of the sample onto a 35 mm NGM plate. This creates a round lawn with a radius of 5 mm, which occupies about 8% of the total plate area.ab=πr12πγ22=5mm217.5mm2=8％
+For C. elegans to have enough space to evaluate food, we add 18 µl of the sample onto a 35 mm NGM plate. This creates a round lawn with a radius of 5 mm, which occupies about 8% of the total plate area.
 
-Here is Selection rate formula:selectionrate=wormamountonelawnareawormamountlawn1area+wormamountlawn2area+wormamountlawn3area⋅⋅⋅⋅
+$$
+\frac{a}{b}=\frac{\pir_{1}^{2}}{\pi\gamma_{2}^{2}}=\frac{5mm^{2}}{17.5mm^{2}}=8％
+$$
 
-## C. elegans aversion assays
+Here is Selection rate formula:
 
-18 µl food was spread out the center of NGM plate, then synchronized L1 by bleach solution (NaOH: 1 M, NaClO:4–6%) worms were seeded on center of food for 16–17 hr at 20 °C.Aversionindex=wormamountofoutoflawnwormamountof(out+in)lawn
+$$
+selectionrate=\frac{\frac{wormamount}{onelawnarea}}{\frac{wormamount}{lawn1area}+\frac{wormamount}{lawn2area}+\frac{wormamount}{lawn3area}⋅⋅⋅⋅}
+$$
+
+#### C. elegans aversion assays
+
+18 µl food was spread out the center of NGM plate, then synchronized L1 by bleach solution (NaOH: 1 M, NaClO:4–6%) worms were seeded on center of food for 16–17 hr at 20 °C.
+
+$$
+Aversionindex=\frac{wormamountofoutoflawn}{wormamountof(out+in)lawn}
+$$
 
 Three to 10 replicates for each condition were performed for each assay, and the experiments were duplicated on different days.
 
-## Analysis of the fluorescence intensity in worms
+#### Analysis of the fluorescence intensity in worms
 
 The synchronized L1 worms carrying either UPRER reporter (Phsp-4::GFP) or innate immunity reporter (Pirg-5::GFP; Psysm-1p::GFP; Pirg-1p::GFP) were seeded on NGM with indicated food and incubated for 24 hr at 20 °C. For fluorescence imaging, worms were anesthetized with 25 mM levamisole and photographed using either an Olympus BX53 microscope or Olympus MVX10 dissecting microscope equipped with a DP80 camera.
 
 The fluorescence intensity in entire intestinal region was quantified using ImageJ software and normalized to the body area.
 
-## E. coli Keio collection screen
+### E. coli Keio collection screen
 
 The whole Keio E. coli single mutant collection (Baba et al., 2006) was screened. Mutant bacteria strains, as well as the wild-type control strain BW25113, were cultured in LB medium with 50 µg/ml kanamycin at 37 °C until an OD600 of 0.5–0.6 was reached. The bacteria were then heat-killed following our established protocol (Qi et al., 2017), and 150 µl of the heat-killed mutant E. coli was spread onto 35 mm NGM plates. Synchronized L1 worms carrying UPRER reporter (Phsp-4::GFP) were seeded and cultured for 24 hr at 20 °C. The fluorescence was then examined by using an Olympus MVX10 dissecting microscope, progressive screening three times. Next, a 4th screen was performed using immune reporter (Pirg-5::GFP) animals fed with HK-E. coli mutants that reduced the Phsp-4::GFP fluorescence. Finally, an aversion behavior assay was performed using HK-E. coli mutants that both reduced Phsp-4::GFP and Pirg-5::GFP. HK-E. coli mutants that reduced UPRER, immune and avoidance behavior were identified through this screening.
 
-## RNAi treatment
+### RNAi treatment
 
 RNAi plasmid is delivered in a E. coli strain, HT115, from either the MRC RNAi library (Kamath et al., 2003) or the ORF-RNAi Library (Rual et al., 2004). RNAi plates were prepared by adding IPTG to NGM agar to a final concentration of 1 mM. Overnight E. coli cultures (LB broth containing 100 µg/ml ampicillin and 100 uM IPTG) of specific RNAi strains and the control HT115 strain were seeded onto RNAi feeding plates and cultured at room temperature until dry. Synchronized L1 worms were treated RNAi by feeding (Ahringer, Reverse genetics, WormBook 2006) for the first generation and allowed to grow to maturity. The worms were then bleached and hatched in M9 buffer for 18 hr. The synchronized L1 worms were then seeded on the indicated feeding plate.
 
-## Western blot
+### Western blot
 
 To measure the level of p-PMK-1, worms (feeding different food for 4 hr) were analyzed by standard western blot methods and probed with anti-p38 (dilution = 1:5000; Cell Signaling, 9212 S), anti-p-p38 (dilution = 1:5000; Cell Signaling, 4511 S) and anti-α-tubulin (dilution = 1:10,000; Sigma T5168) as a loading control.
 
 To measure the level of protein translation, worms (feeding different food for 24 hr) were analyzed by standard western blot methods and probed with anti-Puromycin (dilution = 1:10,000; Sigma-Aldrich, MABE343) and anti-α-tubulin (dilution = 1:10,000; Sigma T5168) as a loading control.
 
-## Total content of ascorbic acid (TAA) assay
+### Total content of ascorbic acid (TAA) assay
 
-The total content of ascorbic acid was measured using the kits (Beijing Biotech-Pack-analytical Scientific Co., Ltd., Beijing, China, BKWB132 http://biotech-pack-analytical.foodmate.net/) according to the manufacturer’s protocol. Briefly, L1 worms were seeded on the different feeding assay plate and cultured for 4 hr. The worms were then lysed in ice-cold conditions using lysis buffer. Equal amounts of protein were used for the normalization. Here is formula for getting TAA concentrationTAA(ug/mgprot)=((ΔA−a)÷b)÷(Cpr×V1)×D
+The total content of ascorbic acid was measured using the kits (Beijing Biotech-Pack-analytical Scientific Co., Ltd., Beijing, China, BKWB132 http://biotech-pack-analytical.foodmate.net/) according to the manufacturer’s protocol. Briefly, L1 worms were seeded on the different feeding assay plate and cultured for 4 hr. The worms were then lysed in ice-cold conditions using lysis buffer. Equal amounts of protein were used for the normalization. Here is formula for getting TAA concentration
+
+$$
+TAA(ug/mgprot)=((ΔA−a)\divb)\div(Cpr\timesV1)\timesD
+$$
 
 the standard curve y=0.0611 x+0.0003 for Figure 4C; y=0.0258 x+0.0066 for Figure 4B, Figure 4—figure supplement 1A and Figure 4—figure supplement 1B.
 
-## Preparation of samples for RNA sequencing
+### Preparation of samples for RNA sequencing
 
 RNA-seq was done with three biological replicates that were independently generated, collected, and processed. Adult wild type (N2) worms were bleached and then the eggs were incubated in M9 for 18 hr to obtain synchronized L1 worms. L1 worms were cultured in the NGM plate with HK-E. coli or E. coli for 4 hr at 20 °C. L1 worms were then collected for sequencing.
 
-## RNA sequencing and data processing
+### RNA sequencing and data processing
 
 For the RNA sequencing assay, cDNA libraries were constructed, and single-end libraries were sequenced using the Illumina platform (Novogene, Beijing, China). HISAT2 (Mortazavi et al., 2008) was used to map the clean reads to the reference gene sequence (Species: Caenorhabditis_elegans; Source: NCBI; Reference Genome Version: GCF_000002985.6_WBcel235), and then ‘featureCounts’ tool in subread software (Liao et al., 2014) was used to calculate the gene expression level of each sample. Read counts were inputted into DESeq2 Love et al., 2014 to calculate differential gene expression and statistical significance. Differentially expressed genes (DEGs) were screened using following criteria: |log2(FoldChange)|>1 & padj ≤ 0.05.
 
-## Preparation of samples for metabolome sequencing
+### Preparation of samples for metabolome sequencing
 
 Metabolome-seq of bacterial was done with four biological replicates that were independently generated, collected, and processed. Total of three group E. coli sample including: E. coli K12 (Con), HK-E. coli K12 (HK), and HK-E. coli yfbR mutant (HY). All bacteria were overnight cultured to the same OD (OD600=1). E. coli K12 and E. coli yfbR mutant are heat-killed (80, 180 min), E. coli K12, HK-E. coli K12 and HK-E. coli yfbR mutant were then spread out NGM plate for 72 hr at room temperature. Finally, sample was collected into 1.5 ml tube by using sterile cell scraping.
 
-## Metabolome sequencing and data processing
+### Metabolome sequencing and data processing
 
 Metabolome were sequenced using the Ultra Performance Liquid Chromatography (UPLC) (ExionLC AD, https://sciex.com.cn/) and Quadrupole-Time of Flight (TripleTOF 6600, AB SCIEX) for Non-targeted; Ultra Performance Liquid Chromatography (UPLC) (ExionLC AD, https://sciex.com.cn/) and Tandem mass spectrometry (MS/MS) (QTRAP, https://sciex.com/) for Broad targeting (Metware, Wuhan, China). Multiple reaction monitoring (MRM) was used to calculate the expression level of each metabolite. Differential metabolites were screened through Fold change ≥2 or Fold change ≤0.5 and VIP ≥1 (Variable Importance in Projection of OPLS-DA model).
 
-## Microscopy
+### Microscopy
 
 Analysis of fluorescence was performed with an Olympus BX53 microscope, CLSM (Zeiss LSM900), or Olympus MVX10 dissecting with a DP80 camera.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Quantification
+#### Quantification
 
 ImageJ software was used for quantifying fluorescence intensity of UPRER and Innate immunity reporter. ImageJ software was used for counting the number of worms about selection and aversion behavior.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed in Graphpad prism 8.0. Two-tailed unpaired t test was used for statistical analysis of two groups of samples, one-way or two-way ANOVA was used for statistical analysis of more than two groups of samples. Data are presented as Mean ± SD, and p<0.05 was considered a significant difference, ‘*’ represents p<0.05, ‘**’ represents p<0.01, ‘***’ is represents <0.001, ‘****’ represents p<0.0001, ‘ns’ represents no significant difference. For all figures, ‘n’ represents the number of worms scored from at least three independent experiments.

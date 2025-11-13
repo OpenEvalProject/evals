@@ -41,17 +41,132 @@ In total, we find that full-range CT values yield valuable insights into pertuss
 
 ## Results
 
-## Study overview
+### Study overview
 
 In 2015, we partnered with the Bill and Melinda Gates Foundation to conduct a prospective cohort study in Lusaka, Zambia (Gill et al., 2016). Between April and November 2015, we enrolled 1981 healthy Zambian mother/infant pairs (3962 individuals) shortly after birth and observed them during an additional six clinic visits scheduled at roughly 2–3 week intervals through approximately 14 weeks of age (when the last of the three routine infant DTP vaccine visits occurs). At each visit, we systematically obtained nasopharyngeal (NP) swabs and assessed symptoms and antibiotic use.
 
 Of the initial cohort of 1981 pairs, 1497 mother/infant pairs attended at least one post-enrollment clinic visit, and 834 pairs attended all seven scheduled visits (including enrollment, Table 1). In this analysis, we focus on the 1320 pairs with ≥4 NP samples per subject (Figure 1). Baseline cohort demographics are shown in Table 2. Infants were enrolled at a median of 7 days post-partum; 47% were female, with a median gestational age of 40 weeks and birth weight of 3000 g. Mothers’ median age was 25 years; >90% were married, and 17.5% were known to be infected with HIV. Among the HIV-positive mothers, nearly all were on antiretroviral therapy (ART) at the time of enrollment, and half had initiated ART prior to conception. Nearly all mothers received at least one dose of tetanus toxoid during pregnancy, signaling that some antenatal care was received by at least 99.5% of the maternal cohort. The final HIV status of the exposed infants could not be assessed.
 
+**Table 1.**
+ Study profile of cohort enrollment and attendance (bold indicates analysis set).Beyond eligibility and initial screening, the sole cause of cohort attrition was failure to attend one or more scheduled clinic visits. For eligibility and enrollment details, please see Gill et al., 2016.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study Phasephase</th>
+      <th>Mother/Infant Pairs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recruitment and screening</td>
+      <td>3033</td>
+    </tr>
+    <tr>
+      <td>Initial enrollment</td>
+      <td>1981</td>
+    </tr>
+    <tr>
+      <td>Post-enrollment attendence</td>
+      <td>1497</td>
+    </tr>
+    <tr>
+      <td>≥4 NP samples per subject</td>
+      <td>1320</td>
+    </tr>
+    <tr>
+      <td>Attended all seven scheduled visits</td>
+      <td>734</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Demographic characteristics of participants (interquartile range in parentheses).Only subjects with at least four NP samples were included in subsequent analyses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Study Participation</th>
+    </tr>
+    <tr>
+      <th>Parameter</th>
+      <th>Enrolled</th>
+      <th>≥4 NP Samples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number Under Study</td>
+      <td>1981</td>
+      <td>1320</td>
+    </tr>
+    <tr>
+      <td>Mothers</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Married</td>
+      <td>90.2%</td>
+      <td>89.8%</td>
+    </tr>
+    <tr>
+      <td>HIV+</td>
+      <td>17.5%</td>
+      <td>19.5%</td>
+    </tr>
+    <tr>
+      <td>Median Age</td>
+      <td>25 (21, 29)</td>
+      <td>25 (22, 30)</td>
+    </tr>
+    <tr>
+      <td>Median Infants In House (&lt;1 year)</td>
+      <td>1 (1, 1)</td>
+      <td>1 (1, 1)</td>
+    </tr>
+    <tr>
+      <td>Median Children In House (&lt;5 years)</td>
+      <td>2 (1, 2)</td>
+      <td>2 (1, 2)</td>
+    </tr>
+    <tr>
+      <td>Infants</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Born at Chawama PHC</td>
+      <td>56.9%</td>
+      <td>56.6%</td>
+    </tr>
+    <tr>
+      <td>Born at UTH</td>
+      <td>34.8%</td>
+      <td>35.5%</td>
+    </tr>
+    <tr>
+      <td>Female sex</td>
+      <td>46.9%</td>
+      <td>46.1%</td>
+    </tr>
+    <tr>
+      <td>Median birth weight (kg)</td>
+      <td>3 (2.8, 3.3)</td>
+      <td>3 (2.8, 3.3)</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/65663/elife-65663-fig1-v1.jpg)
 
 **Figure 1.:** (A) Percent attendance (%) of mother/infant pairs by infant age at last attendance (N = 1320, excluding pairs where subjects had <4 NP samples). Shaded regions show target age windows of DTP doses 1–3. Horizontal lines and text shows number of pairs attending up to marked ages: beginning of study enrollment, and at earliest timely administration of DTP doses 1–3. See Table 1 for study profile. Most pairs (734/1320) attended all seven scheduled visits (including enrollment). (B) NP samples per subject: number of subjects with each sample count (including enrollment and unscheduled visits). Note that, with rare exceptions, each mother has the same number of NP samples as their infant.
 
-## Descriptive analysis of eight noteworthy mother/infant pairs
+### Descriptive analysis of eight noteworthy mother/infant pairs
 
 In contrast to cross-sectional studies, our longitudinal analysis reveals the trajectory of qPCR signal intensity within subjects over time. To avoid confusion, we use the term ‘detecting assay’ throughout to describe a qPCR result with any detectable level of signal; all others are 'non-detecting' (N.D.). All qPCR assays were run for 45 cycles, making CT = 45 our effective limit of detection.
 
@@ -71,13 +186,60 @@ While all infants in this first analysis were selected based on their presentati
 
 Based on our initial results, we next assessed how frequent low-intensity signals were in our cohort by randomly selecting 500 NP samples from our catalogue of over 9000 maternal samples. None of these samples yielded detectable IS481. Applying the binomial theorem for an expected frequency of just under 1/500 (i.e., assuming that the next sample would have been detecting), the probability that seven of eight mothers of infected infants also had one or more detecting assays occurring by chance was <0.0001. We conclude that random chance is unlikely to account for the high concordance within these pairs, or for their evident tendency to coincide in time.
 
-## Quantitative analysis of the full cohort
+### Quantitative analysis of the full cohort
 
 The low-intensity IS481 CT values (i.e.,≥35) discussed above would be adjudicated as ‘negative’ or ‘indeterminate’ in a typical cross-sectional study. However, we observed multiple lines of evidence supporting their microbiological and epidemiological significance that compelled us toward a comprehensive analysis of full-range IS481 CT values for the entire cohort.
 
-## Concordance of qPCR signals over time
+### Concordance of qPCR signals over time
 
 In Table 3, we summarize IS481 qPCR assays from the full cohort (17,442 NP samples total). Approximately 91% of all tests were non-detecting (N.D.), with 1561 detecting assays, including 818 in mothers and 743 in infants. Only 0.11% and 0.18% of mother and infant samples, respectively, had CT <35 and would have been considered definitive positive samples; all other samples would have been deemed indeterminate or negative based on traditional cut-points.
+
+**Table 3.**
+ Frequency of NP samples in each IS481 CT intensity stratum for infants and mothers (not detected: N.D.).IS481 was detected in 1561 (8.95%) samples (743 in infants, 818 in mothers). Very few samples had CT <35: 16 samples (infants) and 10 samples (mothers).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CT Strata</th>
+      <th>Infant</th>
+      <th>Mother</th>
+      <th>Sum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(18,40)</td>
+      <td>99 (1.1%)</td>
+      <td>60 (0.69%)</td>
+      <td>159</td>
+    </tr>
+    <tr>
+      <td>(40,43)</td>
+      <td>254 (2.9%)</td>
+      <td>276 (3.2%)</td>
+      <td>530</td>
+    </tr>
+    <tr>
+      <td>(43,45)</td>
+      <td>390 (4.5%)</td>
+      <td>482 (5.5%)</td>
+      <td>872</td>
+    </tr>
+    <tr>
+      <td>N.D.</td>
+      <td>7980 (91%)</td>
+      <td>7901 (91%)</td>
+      <td>15,881</td>
+    </tr>
+    <tr>
+      <td>Sum</td>
+      <td>8723 (100%)</td>
+      <td>8719 (100%)</td>
+      <td>17,442</td>
+    </tr>
+  </tbody>
+</table>
 
 In Figure 3, we show the cohort’s structure and time course. Figure 3A illustrates subject participation over calendar time for several example pairs that were chosen to highlight the cohort’s rolling enrollment across 2015.
 
@@ -95,7 +257,7 @@ We further explore the temporal correlation among CT strata in Figure 4, which p
 
 We note that cohort size alone cannot explain these results, as the cohort’s size reached a steady state in June of 2015 that was sustained through the end of December 2015 (Figure 3C). Rather, these results are consistent with a population-level ‘fade-in/fade-out’ dynamic, where multiple overlapping signals from single individuals (e.g., Figure 3A) sum to create these curves. Table 3 also highlights the preponderance of detecting assays with low signal intensity. We note that the range of CT values appeared greater for infants than mothers, with twice as many with CT results below 35 (15 vs 8, RR 0.54 95% CI 0.2–1.3).
 
-## Impact of infant vaccinations
+### Impact of infant vaccinations
 
 During our study, infants received routine whole-cell pertussis (wP) vaccinations according to the Zambian schedule at approximately 6, 10, and 14 weeks of age (see also Gunning et al., 2020). In Figure 5, we explore the impact of prior vaccination (i.e., number of doses administered at least 14 days prior to NP sample collection, Figure 5A) on detecting assays (Figure 5B). Here we see a gradual increase in the percent of infant assays that are detecting with increasing infant age, though no such pattern is evident in mothers. We interpret this increase in detections as cumulative ongoing exposure to pertussis in infants in the early weeks of life that achieves an steady state at ~age 8–10 weeks. While it is tempting to ascribe the flattening of this prevalence curve as possible evidence for a vaccine effect, we find no statistical evidence of an effect of prior vaccine dose beyond the (correlated) effect of infant age (Figure 5B). We also note that the steady state of approximately 10% detecting assays reached by infants at age 8–10 weeks approximately equals that of mothers. Critically, we note that the ideal study to identify any such interaction between prior vaccine dose and pertussis detection would be a randomized controlled trial and that, in this observational study, our data leave this question largely unanswered.
 
@@ -103,7 +265,7 @@ During our study, infants received routine whole-cell pertussis (wP) vaccination
 
 **Figure 5.:** (A) number of infant NP samples per week. Shading shows the number of wP doses received at least 14 days prior to sample collection. With rare exceptions, each infant sample is accompanied by a corresponding mother’s sample. In most cases, the third wP dose was administered on the final study visit. (B) percent of NP samples with detectable IS481 over time with 95% CI (shading), estimated from generalized additive models (one each for mothers and infants). Infant age was a significant predictor of percent detection in infants only, while prior wP dose had no observable impact on percent detection in either infants or mothers.
 
-## Transitions of qPCR signals over time
+### Transitions of qPCR signals over time
 
 We next explore the time-course of IS481 assays within individual subjects. If qPCR signals track the course of pertussis infection then, accepting the presence of random variation due to NP sample collection and handling and/or qPCR testing processes, we would nonetheless anticipate that adjacent samples would be more similar than dissimilar. For example, if a subject’s first NP sample had CT = 44 (e.g., captured early in the infection process) then we would expect the next NP sample collected from this subject to be more similar (e.g., CT = 42) than different (e.g., CT <35.). Likewise, we expect fewer transitions from CT <40 to N.D. than from CT <40 to CT = 42. To explore this hypothesis, we conducted an analysis of pairwise transitions within individuals over time. In Figure 6, we summarize the relative frequency of transitions between qPCR signal intensity across adjacent NP samples (separated by no more than 25 days), where color shows the departure from expected frequency (assuming independence). Consistent with our hypothesis, we find that pairwise transitions tend to be cluster, with orderly transitions over time. In particular, transitions from detecting to detecting are much more common than expected by chance alone (red, lower left), while transitions from detecting to non-detecting are much less common (blue, right column) than expected. These results again demonstrate that full-range CT values contain epidemiologically relevant information consistent with an underlying biologic process.
 
@@ -111,27 +273,302 @@ We next explore the time-course of IS481 assays within individual subjects. If q
 
 **Figure 6.:** Assay pairs separated by more than 25 days are omitted. N shows total transitions from each CT stratum (row); text shows percent of row total (N) within each cell. Assays were bootstrap resampled to generate a null distribution (1000 draws). Color shows standardized residuals: the difference between observed and expected frequency divided by the standard error of the difference. Transitions from detecting to detecting are more common than expected by chance alone (red), while transitions from detecting to non-detecting are much less frequent than expected (blue). See Table 3 for marginal frequencies in each CT stratum.
 
-## Quantifying evidence for pertussis infection
+### Quantifying evidence for pertussis infection
 
 Our next analysis combines the contextual information provided by repeated sampling with that of full-range IS481 CT values to quantify the evidence for pertussis infection within individuals. As before, we focus on the 1320 mother/infant pairs where four or more NP samples (and associated IS481 assays) were available for each subject (see also Figure 1B).
 
 We first summarize CT values across the study: we compute the reverse cumulative distribution (RCD) plots for CT values for mothers and infants separately (Figure 7A). We then use these RCDs to compute, for each subject, a summary statistic that we term the 'evidence for infection' (EFI): one minus the geometric mean RCD probability. Here, EFI=0 indicates no evidence (no detecting assays), while an EFI approaching 1 indicates very strong evidence arising from more detecting assays and/or stronger signals. We note that by averaging across time EFI provides no information about when infection occurred within the study. In Figure 7B, we show the distribution of EFI in mothers and infants stratified by the number of detecting assays. Under the premise that many false positives would be highly unlikely regardless of signal intensity, we categorize individuals with three or more detecting assays as having strong EFI, as well as other individual within this EFI range (dotted line, EFI≥0.52). Individuals with intermediate evidence (0<EFI<0.52) are categorized as having weak EFI.
 
-## Concordance of evidence within mother/infant pairs
+![Figure 7.](https://cdn.elifesciences.org/articles/65663/elife-65663-fig7-v1.jpg)
+
+**Figure 7.:** (A) Reverse cumulative distribution (RCD) curves of IS481 CT values for mothers and infants. (B) Boxplot summarizing evidence for infection (EFI), stratified by number of detecting assays per subject (x-axis). For each subject, EFI equals one minus the geometric mean RCD proportions (as in A). In general, EFI increases with lower CT values (A) and more detecting assays. The dashed line delineates strong evidence (defined to include all subjects with ≥3 detecting assays, 0.52 ≤ EFI < 1) from weak evidence (0 < EFI < 0.52); dotted line delineates no evidence (EFI = 0). (C) EFI in mother/infant pairs. Dotted and dashed lines as in B for mothers (vertical) and infants (horizontal). (D) Association of EFI strength (from C) between mothers and infants, showing very strong concordance (red) and rare discordance (blue) within pairs, particularly for pairs exhibiting strong EFI. Bar widths are proportional to expected counts; bar height and color show Pearson residuals (scaled difference between observed and expected counts). p-Value and residuals are relative to independent association. See also Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/65663/elife-65663-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** As the threshold increases from A to C, strong EFI is observed in fewer individuals (and weak EFI in more), but the pattern of association between mothers and infants remains largely unchanged.
+
+### Concordance of evidence within mother/infant pairs
 
 Multiple prior studies have reported that mothers and close family contacts of infected infants are very likely to also be infected (Kara et al., 2017; Fedele et al., 2017; Skoff et al., 2015), as consistent with our results in Figure 2. Here we use EFI to assess concordance of infection status within mother/infant pairs across the study. In Figure 7C, we show the intersection of EFI scores in each mother/infant pair as a single point. We use dotted and dashed lines (EFI > 0 and EFI > 0.52, respectively) to delineate possible EFI combinations for each mother/infant pair, for example mother-weak/infant-none or mother-strong/infant-strong. Figure 7D highlights the strong association of EFI category within mother/infant pairs. This association plot shows the frequency of concordance relative to expectation (assuming independent assortment), plotted as Pearson residuals. We find that when infants have no EFI, the corresponding mothers’ EFI is also likely to be absent. Conversely, when infants display strong EFI, evidence in mothers also tends to be strong. We also repeat this analysis by varying the threshold defining a strong EFI score (using either two and four detecting assays, respectively), and find consistent results throughout (Figure 7—figure supplement 1). While this analysis does not provide evidence of contemporaneous infection within pairs, these results offer strong evidence of transmission within the mother/infant pair.
 
-## Concordance of evidence with symptoms
+### Concordance of evidence with symptoms
 
 We expect a positive correlation between observed CT values and bacterial burden, and between bacterial burden and the presence and intensity of symptoms. Indeed, such a relationship has been shown for Streptococcus pneumoniae, where NP carriage density was much higher in children with pneumococcal pneumonia compared with asymptomatic carriers (Piralam et al., 2020; Deloria Knoll et al., 2017). As defined, our EFI uses each subject’s full set of NP samples to provide an aggregate measure of the evidence for pertussis infection in that subject, and incorporates information regarding both the number of detecting assays and the CT values for each result. With this in mind, we tested whether EFI category was associated with cough and/or coryza (minimal symptoms), or additional pertussis symptoms (moderate to severe symptoms).
 
 In Table 4, we tabulate the frequency of EFI category stratified by symptoms for mothers and infants. Focusing on those with the strongest molecular evidence for pertussis infections, we identified 188 mothers and 177 infants who met our criteria for a ‘Strong EFI’. Within these groups, 130/188 (69%) of mothers had no symptoms, 55/188 (29%) had minimal symptoms, and only 3/188 (1.6%) had moderate to severe symptoms. By contrast, infants were more likely to be symptomatic than the mothers, but only in relative terms with 41/177 (23%) asymptomatic; 95/177 (54%) minimally symptomatic; and 41/177 (23%) with moderate to severe symptoms. Stated another way, 77% of infants with strong molecular evidence of infection were asymptomatic or minimally symptomatic. Only one infant presented with classic symptoms of whooping and paroxysmal cough. Such results are consistent with the theory that baseline host immune status (stronger in mothers, weaker or absent in infants) is at least partially responsible for mediating the clinical outcome of pertussis infections. It also emphasizes that minimally or asymptomatic infections occur commonly among infants.
 
+**Table 4.**
+ Frequency of EFI category in mothers and infants, stratified by occurrence of symptoms at any point during study participation.Percentages are relative to row sums. Minimal symptoms include coryza and/or uncomplicated cough. Moderate to severe symptoms include all other pertussis symptoms in the Modified Preziosi Scale.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="5">EFI Category</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Symptoms</th>
+      <th>None</th>
+      <th>Weak</th>
+      <th>Strong</th>
+      <th>Sum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Infants</td>
+      <td>None</td>
+      <td>446 (77%)</td>
+      <td>93 (16%)</td>
+      <td>41 (7%)</td>
+      <td>580</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Minimal</td>
+      <td>312 (58%)</td>
+      <td>128 (24%)</td>
+      <td>95 (18%)</td>
+      <td>535</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Moderate/Severe</td>
+      <td>108 (53%)</td>
+      <td>56 (27%)</td>
+      <td>41 (20%)</td>
+      <td>205</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sum</td>
+      <td>866 (66%)</td>
+      <td>277 (21%)</td>
+      <td>177 (13%)</td>
+      <td>1320</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mothers</td>
+      <td>None</td>
+      <td>669 (66%)</td>
+      <td>209 (21%)</td>
+      <td>130 (13%)</td>
+      <td>1008</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Minimal</td>
+      <td>145 (51%)</td>
+      <td>84 (30%)</td>
+      <td>55 (19%)</td>
+      <td>284</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Moderate/Severe</td>
+      <td>16 (57%)</td>
+      <td>9 (32%)</td>
+      <td>3 (11%)</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sum</td>
+      <td>830 (63%)</td>
+      <td>302 (23%)</td>
+      <td>188 (14%)</td>
+      <td>1320</td>
+    </tr>
+  </tbody>
+</table>
+
 These data are represented graphically in Figure 8A–B, where color shows the frequency of each group relative to independent assortment. Among infants there is a strong positive relationship between EFI strength and the presence and severity of respiratory symptoms (Figure 8A). A similar but less pronounced pattern is observed in mothers, where moderate to severe symptoms were rare in mothers (Figure 8B). This relative absence of symptoms in mothers across infection status (i.e., for both weak and strong EFI) is consistent with the well-documented protective effects of pre-existing immunity (Gill et al., 2017). We also briefly summarize the association, within each clinic visit, between the presence of the most common symptoms (cough and/or coryza) and CT intensity strata in Figure 8—figure supplement 1. At this more granular scale, we find a similar pattern: in infants, symptoms are more commonly found with lower CT values and less frequently found with non-detecting assays (A), with a similar but much less pronounced trend in mothers (B).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/65663/elife-65663-fig8-v1.jpg)
+
+**Figure 8.:** Minimal symptoms include cough and/or coryza only; bar heights and p-values as in Figure 7D. In A-B, frequent co-occurrence of strong EFI with minimal symptoms is evident in both mothers and infants, as is no symptoms with no EFI. In infants, moderate to severe symptoms commonly co-occur with strong EFI, while more severe symptoms are rare in mothers. In C-D, frequent co-occurrence of antibiotic use with strong EFI is evident in both mothers and infants. See also Table 4 and Figure 8—figure supplement 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/65663/elife-65663-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Bar widths are proportional to expected counts; bar height and color show Pearson residuals: the scaled difference between observed and expected counts (assuming independent association). Higher CT values were more commonly observed in infants experiencing cough and/or coryza; in symptom-free infants, IS481 was less likely to be detected. A similar but much less pronounced pattern was observed in mothers.
 
 For illustrative purposes, we also provide in Table 5 detailed results for each subject from the initial eight mother/infant pairs (i.e., from Figure 2), including total NP samples and percent detecting assays.
 
-## Concordance of evidence with antibiotic use
+**Table 5.**
+ Details for subjects shown in Figure 2, including NP sample number, percent samples with detected IS481, EFI, and summary of pertussis symptoms and antibiotics use.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>ID</th>
+      <th>Samples</th>
+      <th>Detected</th>
+      <th>EFI</th>
+      <th>Symptoms</th>
+      <th>Antibiotics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A Infant</td>
+      <td>126</td>
+      <td>11</td>
+      <td>3 (27.3%)</td>
+      <td>Strong (0.68)</td>
+      <td>Mod/Sev</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>A Mother</td>
+      <td>126</td>
+      <td>11</td>
+      <td>3 (27.3%)</td>
+      <td>Strong (0.52)</td>
+      <td>Mod/Sev</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>B Infant</td>
+      <td>269</td>
+      <td>7</td>
+      <td>4 (57.1%)</td>
+      <td>Strong (0.89)</td>
+      <td>Minimal</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>B Mother</td>
+      <td>269</td>
+      <td>8</td>
+      <td>1 (12.5%)</td>
+      <td>Weak (0.50)</td>
+      <td>None</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>C Infant</td>
+      <td>434</td>
+      <td>7</td>
+      <td>3 (42.9%)</td>
+      <td>Strong (0.84)</td>
+      <td>Minimal</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>C Mother</td>
+      <td>434</td>
+      <td>7</td>
+      <td>2 (28.6%)</td>
+      <td>Weak (0.52)</td>
+      <td>None</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>D Infant</td>
+      <td>474</td>
+      <td>9</td>
+      <td>4 (44.4%)</td>
+      <td>Strong (0.94)</td>
+      <td>Mod/Sev</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>D Mother</td>
+      <td>474</td>
+      <td>9</td>
+      <td>7 (77.8%)</td>
+      <td>Strong (0.99)</td>
+      <td>Mod/Sev</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>E Infant</td>
+      <td>573</td>
+      <td>7</td>
+      <td>4 (57.1%)</td>
+      <td>Strong (0.87)</td>
+      <td>Minimal</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>E Mother</td>
+      <td>573</td>
+      <td>7</td>
+      <td>0 (0.0%)</td>
+      <td>None (0.00)</td>
+      <td>Minimal</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>F Infant</td>
+      <td>579</td>
+      <td>7</td>
+      <td>4 (57.1%)</td>
+      <td>Strong (0.90)</td>
+      <td>Minimal</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>F Mother</td>
+      <td>579</td>
+      <td>7</td>
+      <td>3 (42.9%)</td>
+      <td>Strong (0.85)</td>
+      <td>Minimal</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>G Infant</td>
+      <td>691</td>
+      <td>7</td>
+      <td>4 (57.1%)</td>
+      <td>Strong (0.96)</td>
+      <td>Mod/Sev</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>G Mother</td>
+      <td>691</td>
+      <td>7</td>
+      <td>6 (85.7%)</td>
+      <td>Strong (0.98)</td>
+      <td>None</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>H Infant</td>
+      <td>752</td>
+      <td>9</td>
+      <td>7 (77.8%)</td>
+      <td>Strong (0.98)</td>
+      <td>Mod/Sev</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>H Mother</td>
+      <td>752</td>
+      <td>9</td>
+      <td>7 (77.8%)</td>
+      <td>Strong (0.95)</td>
+      <td>None</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+### Concordance of evidence with antibiotic use
 
 Finally, we observe a strong positive association between EFI and antibiotic use in both infants and mothers (Figure 8C–D). We cannot infer a causal direction from the observed association. On the one hand, antibiotic use presumably serves as a proxy for symptoms at some prior time, since a clinician must have judged the individual sick enough to warrant treatment. On the other hand, antibiotic use has been shown to reduce the infectious dose of B. pertussis through effects on respiratory microbiota (Zhang et al., 2019). We also note that amoxicillin, which is not effective against B. pertussis but is a first-line therapy for empiric treatment of pneumonia, accounted for the vast majority of antibiotics use in this study. Erythromycin, which would be active against pertussis, is available in Zambia but is not part of the Integrated Management of Childhood Illness algorithm by which children are diagnosed with pneumonia, and hence rarely used. With the above in mind, our results call into question whether ineffective antibiotics have been commonly prescribed for mild pertussis cases in this (and possibly other) populations.
 
@@ -157,7 +594,7 @@ In conclusion, these results provide an important benchmark of the relative freq
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 The Southern Africa Mother Infant Pertussis Study (SAMIPS) was a longitudinal cohort study conducted in Lusaka, Zambia that followed mother/infant pairs through the infants’ first three months of life. To this end, we sought to enroll all healthy live births that occurred between March and December 2015 in Chawama compound, a densely populated peri-urban slum near central Lusaka. A detailed account of study methods (including sample size considerations) was published previously (Gill et al., 2016).
 
@@ -171,31 +608,31 @@ After the baseline enrollment visit, infants were scheduled for six routine foll
 
 Routine childhood vaccinations were administered during scheduled clinic visits. Diphtheria-Tetanus-Pertussis (DTP) doses 1–3 were administered at visits corresponding to 6, 10, and 14 weeks of age as a pentavalent combination (Pentavac, Serum Institute of India Limited, Pune, India) that included whole-cell pertussis, Haemophilus influenzae type B (HIB), and Hepatitis B. The pneumococcal conjugate vaccine (PCV10) was co-administered with DTP, and the oral rotavirus vaccine administration was scheduled for 6 and 10 weeks of age. Additional details regarding infant vaccination are provided in Gunning et al., 2020. Routine childhood vaccinations were provided by regular clinic staff at no cost in a separate area of the clinic compound located ~50 feet from where the NP sampling was done. This was intended to avoid contamination of the swabs by pertussis DNA present within the pertussis vaccines themselves, a known cause of pseudo-outbreaks of pertussis in health care settings (Mandal et al., 2012).
 
-## Nasopharyngeal sampling
+### Nasopharyngeal sampling
 
 NP samples were obtained using flocked-tipped nylon swabs (Copan Diagnostics, Merrieta, California) (Van Horn et al., 2008) that were inserted into each nostril until contact with the posterior nasopharynx was made. Swabs were then rotated 180 degrees in both directions, placed in commercially prepared tubes with universal transport media (UTM), and stored on ice until transport. Samples were collected from the study clinic daily and were taken to the PCR laboratory at the University Teaching Hospital (UTH), where they were stored at −80°C.
 
-## Laboratory methods
+### Laboratory methods
 
 NP sample DNA was extracted using the NucliSENS EasyMag system (bioMérieux, Marcy l’Etoile, France) (Perandin et al., 2009; Kim et al., 2009). Samples were initially tested for B. pertussis using a singleplex TaqMan qPCR genomic assay targeting the IS481 insertion sequence. In addition, a qPCR assay tested each sample for the constitutively expressed human RNase P (RNP) to assess successful sample collection, storage, DNA extraction, and lack of PCR inhibition. Each 96-well qPCR plate contained approximately 46 samples (one each of IS481 and RNP), along with a positive and negative control for each assay. We note that a lower CT value indicates a greater quantity of target. Each reaction was run for 45 cycles, such that the minimum detectable target quantity has a CT value of 45. We consider assays with a CT value of 45 or less to be detecting assays; all others are non-detecting (N.D.) assays.
 
 For the descriptive analysis of the first eight symptomatic infants and their mothers, an IS481 detection was followed by a second assay targeting the ptxS1, the gene for a sub-unit of pertussis toxin. Given the high volume of testing, we only used IS481 for the full analysis of the library. All primers and probes were purchased from Life Sciences Solutions (a subsidiary of ThermoFisher Scientific Inc). Most samples were run using an ABI 7500 thermocycler (ThermoFisher Scientific Inc, Waltham, MA). Starting in 2019 some samples were also run on a QuantStudio5 thermocycler (ThermoFisher Scientific Inc, Waltham, MA). An analysis of samples run in parallel on both machines showed minimal systematic variation between machines, so we do not distinguish these in the current analysis.
 
-## Data and statistical analysis
+### Data and statistical analysis
 
-## Descriptive analysis of the first eight mother/infant pairs
+#### Descriptive analysis of the first eight mother/infant pairs
 
 As presented in our 2016 paper, from the 1981 infants in SAMIPS, we initially selected infants presenting with any respiratory symptoms (rather than classic pertussis symptoms) for qPCR testing (Gill et al., 2016). Thus, any pertussis detected in these infants will be ‘symptomatic pertussis’ by definition. Given our focus at this stage on detecting symptomatic pertussis, we defined pertussis strictly as per the US CDC’s protocol: any IS481 insertion sequence CT <35, or an IS481 of 35–40 plus a CT of <40 for ptxS1, the gene that codes for pertussis toxin. It should be noted that IS481 is a very sensitive probe as B. pertussis carries multiple gene copies per organism. By contrast, there is usually only one copy of ptxS1 per bacillus, making it highly specific but insensitive (Register and Sanden, 2006; Qin et al., 2007). We then expanded testing for IS481 and ptxS1 to all of the other samples within those eight mother/infant pairs.
 
-## Systematic analysis of the full data set
+#### Systematic analysis of the full data set
 
 We focus here on IS481 qPCR CT values. We did not include ptxS1 in these analyses due to its lack of sensitivity. While this introduces the possibility that some IS481 detections were due to a species other than B. pertussis, we expect a minimal impact of rare B. pertussis false positives on our findings. As the duration of study participation varied considerably between subjects (Table 1), we focus on subjects with at least 4 NP samples.
 
-## Temporal analysis
+##### Temporal analysis
 
 We first conduct an exploratory data analysis of IS481 CT values over time. We group assays into arbitrary ranges of CT values such that each range of decreasing CT value (greater target) contains fewer samples than the previous interval. We then use a set of generalized additive models (GAMs) to describe the relative frequency of samples in each CT range over the course of the study (binomial link function, smoothed by calendar date using cubic regression splines with shrinkage, one model per stratum). We use these models to visually compare the relative frequency and timing of IS481 signal intensity. We also use two GAMs (mothers and infants separately) to estimate the (smoothed) effect of infant age on expected percent of detecting assays (binomial link function). We then refit these models using the number of doses administered >14 days prior to NP sample collection as a categorical predictor, and used a Chi-Squared model comparison test to assess the additional explanatory value of vaccine dose.
 
-## Evidence for Infection
+##### Evidence for Infection
 
 For each participant, we compute a summary measure of their IS481 CT values across the course of the study, which we refer to as the evidence for infection (EFI). To compute the EFI, we first compute the reverse cumulative distributions (RCD) of CT values over all samples in the study (for mothers and infants separately). Emphasizing that the CT is roughly equivalent to the inverse of pathogen density, from these RCDs, each IS481 assay is now associated with a probability describing its rarity in the study, ranging from 1 (not detected after 45 cycles) to 0 (lowest CT value in the study). For each subject, we then compute the geometric mean RCD probability of that subject’s assays. One minus this mean proportion yields the evidence for infection (EFI) in this subject during the study period. Conceptually, zero detecting assays (EFI = 0, all N.D.) indicates no evidence for infection, whereas an EFI approaching one indicates strong evidence for infection at some point during the study (but does not provide information about the timing of infection).
 

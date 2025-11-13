@@ -30,7 +30,7 @@ For the first time, we have used phase-contrast X-ray tomography to characterize
 
 ## Introduction
 
-The coronavirus disease 2019 (Covid-19) is caused by the severe acute respiratory syndrome coronavirus (SARS-CoV-2), predominantly entering the body via the respiratory tract. SARS-CoV-2 infects cells by binding its spike protein to the surface protein angiotensin-converting enzyme 2 (ACE2) of the host cell (Hoffmann et al., 2020). Severe cases are most frequently affected by viral pneumonia and acute respiratory distress syndrome (ARDS), with a pathophysiology distinctly different from for example influenza infection (Ackermann et al., 2020b). Mediated by a distinct inflammatory microenvironment, an uncontrolled infection can develop and result in massive tissue damage, again primarily reported in the lung. Apart from diffuse alveolar damage, the main histological hallmark of ARDS, specific findings in the lung histopathology are high prevalence of micro-thrombi and high levels of intussusceptive angiogenesis (IA) (Ackermann et al., 2020a; Ackermann et al., 2020b; Bois et al., 2021Ackermann et al., 2020c). The latter is a rapid process of intravascular septation that produces two lumens from a single vessel. It is distinct from sprouting angiogenesis because it has no necessary requirement for cell proliferation, can rapidly expand an existing capillary network, and can maintain organ function during replication (Mentzer and Konerding, 2014). The mechanistic link between branch angle remodeling and IA is the intussusceptive pillar. The pillar is a cylindrical ’column’ or ’pillar’ that is 1μm to 3μm in diameter (Ackermann and Konerding, 2015). In short, the capillary wall extends into the lumen and split a single vessel in two. Opposing capillary walls are first dilated, and intraluminal pillars form at vessel bifurcations by an intraluminal intussusception of myofibroblasts, creating a core between the two new vessels. These cells begin depositing collagen fibers into the core, providing an extracellular matrix (ECM) for the growth of the vessel lumen. The extension of the pillar along the axis of the vessel then results in vessel duplication. These structural changes of the vasculature have been reported in various non-neoplastic and neoplastic diseases (Erba et al., 2011; Albert et al., 2020, Ackermann et al., 2012). These finding underline the notion that Covid-19 is a disease driven by, and centered around, the vasculature with direct endothelial infection, thus providing SARS-CoV-2 an easy entry route into other organs, subsequently resulting in multi-organ damage (Nishiga et al., 2020; Menter et al., 2020).
+The coronavirus disease 2019 (Covid-19) is caused by the severe acute respiratory syndrome coronavirus (SARS-CoV-2), predominantly entering the body via the respiratory tract. SARS-CoV-2 infects cells by binding its spike protein to the surface protein angiotensin-converting enzyme 2 (ACE2) of the host cell (Hoffmann et al., 2020). Severe cases are most frequently affected by viral pneumonia and acute respiratory distress syndrome (ARDS), with a pathophysiology distinctly different from for example influenza infection (Ackermann et al., 2020b). Mediated by a distinct inflammatory microenvironment, an uncontrolled infection can develop and result in massive tissue damage, again primarily reported in the lung. Apart from diffuse alveolar damage, the main histological hallmark of ARDS, specific findings in the lung histopathology are high prevalence of micro-thrombi and high levels of intussusceptive angiogenesis (IA) (Ackermann et al., 2020a; Ackermann et al., 2020b; Bois et al., 2021Ackermann et al., 2020c). The latter is a rapid process of intravascular septation that produces two lumens from a single vessel. It is distinct from sprouting angiogenesis because it has no necessary requirement for cell proliferation, can rapidly expand an existing capillary network, and can maintain organ function during replication (Mentzer and Konerding, 2014). The mechanistic link between branch angle remodeling and IA is the intussusceptive pillar. The pillar is a cylindrical ’column’ or ’pillar’ that is $1\mum$ to $3\mum$ in diameter (Ackermann and Konerding, 2015). In short, the capillary wall extends into the lumen and split a single vessel in two. Opposing capillary walls are first dilated, and intraluminal pillars form at vessel bifurcations by an intraluminal intussusception of myofibroblasts, creating a core between the two new vessels. These cells begin depositing collagen fibers into the core, providing an extracellular matrix (ECM) for the growth of the vessel lumen. The extension of the pillar along the axis of the vessel then results in vessel duplication. These structural changes of the vasculature have been reported in various non-neoplastic and neoplastic diseases (Erba et al., 2011; Albert et al., 2020, Ackermann et al., 2012). These finding underline the notion that Covid-19 is a disease driven by, and centered around, the vasculature with direct endothelial infection, thus providing SARS-CoV-2 an easy entry route into other organs, subsequently resulting in multi-organ damage (Nishiga et al., 2020; Menter et al., 2020).
 
 Clinically, the heart appears to be a particular organ at risk in Covid-19. Acute cardiac involvement (e.g. lowered ejection fraction, arrhythmia, dyskinesia, elevated cardiac injury markers) is reported in a broad range of cases. In contrast to other respiratory viral diseases affecting the heart (e.g. coxsackie virus), in the few Covid-19 cases reported so far that included cardiac histopathology, no classic lymphocytic myocarditis characterized by a T-lymphocyte predominant infiltrate with cardiomyocyte necrosis was observed (Gauchotte et al., 2021; Kawakami et al., 2021; Tavazzi et al., 2020; Albert et al., 2020; Wenzel et al., 2020; Halushka and Vander Heide, 2021). Furthermore, the underlying pathomechanisms are still poorly understood with both direct virus induced (cellular) damage and indirect injury being discussed (Zheng et al., 2020; Wichmann et al., 2020; Gauchotte et al., 2021; Chen et al., 2020; Deng et al., 2020; Zeng et al., 2020). Particularly, it is not known to which extent the vasculature of the heart, including the smallest capillaries, are affected and whether IA is also a dominant process in this organ. More generally, one would like to delineate the morphological changes of cytoarchitecture from other well described pathologies. Recently, we have used three-dimensional (3d) virtual histology based on phase-contrast X-ray tomography as a new tool for Covid-19 pathohistology and investigated these structural changes in postmortem tissue biopsies from Covid-19 diseased lung tissue using propagation based X-ray tomography (Eckermann et al., 2020; Walsh et al., 2021). Exploiting phase contrast based on wave propagation, the 3d structure of formalin-fixed, paraffin-embedded (FFPE) tissue–the mainstay for histopathological samples worldwide- can be assessed at high resolution, that is with sub-micron voxel size and with sufficient contrast also for soft and unstained tissues (Töpperwien et al., 2018). By relaxing the resolution to voxel sizes in the range of 25 µm and stitching of different tomograms, the entire human organ can be covered and an entire FFPE tissue block ‘unlocked’ by destruction-free 3d analysis (Walsh et al., 2021).
 
@@ -40,145 +40,404 @@ Following this introduction, we describe the methodology, which is already summa
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/71359/elife-71359-fig1-v2.jpg)
 
-**Figure 1.:** (A) HE stain of a 3-m-thick paraffin section of one sample from a patient who died from Covid-19 (Cov-I, Scalebar: ). In total, 26 postmortem heart tissue samples were investigated: 11 from Covid-19 patients, 4 from influenza patients, 5 from patients who died with myocarditis and six control samples. (100μmB) From each of the samples, a biopsy punch with a diameter of  was taken and transferred onto a holder for the tomography acquisition. After tomographic scans of all samples at the laboratory setup, Covid-19 and control specimens were investigated at the synchrotron. Furthermore,at the laboratory and parallel beam setup at the synchrotron, one punch with a diameter of 3.5⁢mm was taken from one of the control and Covid-19 samples for investigations at high resolution. (1⁢mmC) Sketch of the laboratory micro-CT setup. Tomographic scans of all samples were recorded in cone beam geometry with an effective pixel size of  using a liquid metal jet source (EXCILLUM, Sweden). (pxeff=2μmD) Sketch of the parallel beam setup of the GINIX endstation (P10 beamline, DESY, Hamburg). In this geometry, datasets of Covid-19 and control samples were acquired at an effective voxel size of . One plane of each sample was covered by 3×3 tomographic recordings. For each sample a plane of 3×3 tomographic acquisitions was recorded. (650nm3E) Cone beam setup of the GINIX endstation. After the investigation in parallel geometry, the 1 mm biopsy punches of one control and Covid-19 sample were probed and a high resolution scan in cone beam geometry was recorded. This configuration is based on a coherent illumination by a wave guide and allows for high geometric magnification and effective voxel sizes below .200⁢nm
+**Figure 1.:** (A) HE stain of a 3-m-thick paraffin section of one sample from a patient who died from Covid-19 (Cov-I, Scalebar: $100\mum$). In total, 26 postmortem heart tissue samples were investigated: 11 from Covid-19 patients, 4 from influenza patients, 5 from patients who died with myocarditis and six control samples. (B) From each of the samples, a biopsy punch with a diameter of $3.5⁢mm$ was taken and transferred onto a holder for the tomography acquisition. After tomographic scans of all samples at the laboratory setup, Covid-19 and control specimens were investigated at the synchrotron. Furthermore,at the laboratory and parallel beam setup at the synchrotron, one punch with a diameter of $1⁢mm$ was taken from one of the control and Covid-19 samples for investigations at high resolution. (C) Sketch of the laboratory micro-CT setup. Tomographic scans of all samples were recorded in cone beam geometry with an effective pixel size of $px_{eff}=2\mum$ using a liquid metal jet source (EXCILLUM, Sweden). (D) Sketch of the parallel beam setup of the GINIX endstation (P10 beamline, DESY, Hamburg). In this geometry, datasets of Covid-19 and control samples were acquired at an effective voxel size of $650nm^{3}$. One plane of each sample was covered by 3×3 tomographic recordings. For each sample a plane of 3×3 tomographic acquisitions was recorded. (E) Cone beam setup of the GINIX endstation. After the investigation in parallel geometry, the 1 mm biopsy punches of one control and Covid-19 sample were probed and a high resolution scan in cone beam geometry was recorded. This configuration is based on a coherent illumination by a wave guide and allows for high geometric magnification and effective voxel sizes below $200⁢nm$.
 
 ## Materials and methods
 
-## Autopsy, clinical background, and tissue preparation
+### Autopsy, clinical background, and tissue preparation
 
 In total, 26 postmortem heart tissue samples were investigated: 11 from Covid-19 patients (Cov), 4 from H1N1/A influenza patients (Inf), 5 from patients who died due to coxsackie virus myocarditis (Myo), as well as 6 control samples (Ctr). The age and sex of all patients are summarized in Table 1. Detailed information about age, sex, cause of death, hospitalization, clinical, radiological, and histological characteristics of all patients is given in Appendix 2 Tab. D.1.
 
-Figure 1 illustrates the sample preparation and the tomographic scan geometries used to assess the 3d cytoarchitecture on different length scales. FFPE-tissue from autopsies was prepared by standard formalin fixation and paraffin embedding. From the paraffin-embedded tissue block, sections of 3μm thickness were prepared for histomorphological assessment using conventional hematoxylin and eosin (HE) staining. One representative microscopy image of a Covid-19 patient is shown in Figure 1. An overview of HE stained sections from all samples is shown in the Appendix 1—figure 1. In previous studies, we could show the correlation of 3d X-ray phase contrast tomography data with conventional 2d histology (Eckermann et al., 2020; Töpperwien et al., 2018).
+**Table 1.**
+ Sample and medical information of patients.
 
-Biopsy punches with a diameter of 3.5⁢mm were then taken and transferred onto a holder for the tomographic scans. All samples were first scanned at a laboratory µCT instrument using a liquid metal jet anode. Next, tomograms of Covid-19 and control samples were scanned at the GINIX endstation of the P10 beamline at the PETRAIII storage ring (DESY, Hamburg), using the parallel (unfocused) synchrotron beam. Finally, biopsy punches with a diameter of 1⁢mm was taken from the 3.5⁢mm biopsy of one control and one Covid-19 sample and scanned at high geometric magnification M using a cone beam illumination emanating from a X-ray waveguide (WG).
 
-## Tomographic recordings
+<table>
+  <thead>
+    <tr>
+      <th>Sample group</th>
+      <th>N patients</th>
+      <th>Sample quantity</th>
+      <th>Age</th>
+      <th>Sex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control</td>
+      <td>2</td>
+      <td>6</td>
+      <td>31 ± 7</td>
+      <td>2 F</td>
+    </tr>
+    <tr>
+      <td>Covid-19</td>
+      <td>11</td>
+      <td>11</td>
+      <td>76 ± 13</td>
+      <td>10 M, 1 F</td>
+    </tr>
+    <tr>
+      <td>Myocarditis</td>
+      <td>5</td>
+      <td>5</td>
+      <td>43 ± 17</td>
+      <td>4 M, 1 F</td>
+    </tr>
+    <tr>
+      <td>Influenza</td>
+      <td>4</td>
+      <td>4</td>
+      <td>63 ± 9</td>
+      <td>3 M, 1 F</td>
+    </tr>
+  </tbody>
+</table>
 
-## Liquid metal jet (LJ) setup
+Figure 1 illustrates the sample preparation and the tomographic scan geometries used to assess the 3d cytoarchitecture on different length scales. FFPE-tissue from autopsies was prepared by standard formalin fixation and paraffin embedding. From the paraffin-embedded tissue block, sections of $3\mum$ thickness were prepared for histomorphological assessment using conventional hematoxylin and eosin (HE) staining. One representative microscopy image of a Covid-19 patient is shown in Figure 1. An overview of HE stained sections from all samples is shown in the Appendix 1—figure 1. In previous studies, we could show the correlation of 3d X-ray phase contrast tomography data with conventional 2d histology (Eckermann et al., 2020; Töpperwien et al., 2018).
 
-All samples were scanned using a home-built laboratory phase-contrast µCT-setup, as sketched in Figure 1C. X-rays emitted from a liquid metal jet anode (Excillum, Sweden) are used in cone beam geometry with a geometric magnification M=x01+x12x01 controlled by the source-sample x01 and sample-detector distance x12. The spectrum of photon energy E is dominated by the characteristic Kα lines of galinstan (G⁢a,Z⁢n,I⁢n alloy), in particular the G⁢a line EG⁢a=9.25⁢keV. Projections were acquired by a sCMOS detector with a pixel size of px=6.5μm coupled by a fiber-optic to a 15-m-thick Gadox-scintillator (Photonic Science, UK) (Bartels et al., 2013; Reichardt et al., 2020). In this work, data was acquired at an effective pixel size of pxeff=pxM=2μm. For each of the 1,501 angular positions 3 projections at 0.6 s acquisition time were averaged. Further, 50 flat field images before and after the tomographic acquisition, as well as 50 dark field images after the scan were recorded. The total scan time was approximately one hour per sample.
+Biopsy punches with a diameter of $3.5⁢mm$ were then taken and transferred onto a holder for the tomographic scans. All samples were first scanned at a laboratory µCT instrument using a liquid metal jet anode. Next, tomograms of Covid-19 and control samples were scanned at the GINIX endstation of the P10 beamline at the PETRAIII storage ring (DESY, Hamburg), using the parallel (unfocused) synchrotron beam. Finally, biopsy punches with a diameter of $1⁢mm$ was taken from the $3.5⁢mm$ biopsy of one control and one Covid-19 sample and scanned at high geometric magnification $M$ using a cone beam illumination emanating from a X-ray waveguide (WG).
 
-## Parallel beam (PB) setup
+### Tomographic recordings
 
-All Cov and Ctr samples were also scanned with an unfocused, quasi-parallel synchrotron beam at the GINIX endstation, at a photon energy Eph of 13.8⁢keV. Projections were recorded by a microscope detection system (Optique Peter, France) with a 50-m-thick LuAG:Ce scintillator and a 10× magnifying microscope objective onto a sCMOS sensor (pco.edge 5.5, PCO, Germany) (Frohn et al., 2020). This configuration enables a field-of-view (FOV) of 1.6⁢mm×1.4⁢mm, sampled at a pixel size of 650⁢nm. The continuous scan mode of the setup allows to acquire a tomographic recording with 3000 projections over 360° in less than 2 min.3×3 tomographic acquisitions in one plane for each of the 3.5 mm biopsy punches. For each sample, one plane of the 3.5⁢mm biopsy punch was covered by 3×3 tomographic acquisitions. Afterwards, dark field and flat field images were acquired. In total more than 150 tomographic scans (nine tomograms for each of the 17 samples) were recorded in this configuration.
+#### Liquid metal jet (LJ) setup
 
-## Waveguide (WG) setup
+All samples were scanned using a home-built laboratory phase-contrast µCT-setup, as sketched in Figure 1C. X-rays emitted from a liquid metal jet anode (Excillum, Sweden) are used in cone beam geometry with a geometric magnification $M=\frac{x_{01}+x_{12}}{x_{01}}$ controlled by the source-sample x01 and sample-detector distance x12. The spectrum of photon energy $E$ is dominated by the characteristic Kα lines of galinstan ($G⁢a,Z⁢n,I⁢n$ alloy), in particular the $G⁢a$ line $E_{G⁢a}=9.25⁢keV$. Projections were acquired by a sCMOS detector with a pixel size of $px=6.5\mum$ coupled by a fiber-optic to a 15-m-thick Gadox-scintillator (Photonic Science, UK) (Bartels et al., 2013; Reichardt et al., 2020). In this work, data was acquired at an effective pixel size of $px_{eff}=\frac{px}{M}=2\mum$. For each of the 1,501 angular positions 3 projections at 0.6 s acquisition time were averaged. Further, 50 flat field images before and after the tomographic acquisition, as well as 50 dark field images after the scan were recorded. The total scan time was approximately one hour per sample.
 
-As a proof-of-concept that subcellular resolution can also be obtained on cardiac tissue samples, a 1⁢mm-diameter biopsy punch was taken from both a Covid-19 and control sample, both of which were previously scanned (PB geometry). The highly coherent cone beam geometry and clean wavefront of the WG illumination allows for samples to be probed at high magnification in the holographic regime. Here, the sample was aligned at M≃40, resulting in an effective pixel size of 159⁢nm. Images of the Ctr were acquired by a sCMOS Camera (15μm Gadox scintillator, 2560 ×2,160 pixel) with a physical pixel size of 6.5⁢µ⁢m (Andor Technology Ltd, UK). Cov datasets were recorded by a 1:1 fiber-coupled scintillator-based sCMOS camera (2048 × 2048 pixels, Photonic Science, Sussex, UK) with a custom 15-m-thick Gadox scintillator with pixel size of 6.5μm. For Ctr data, the photon energy was E=10⁢keV and 1500 projections over 180 degrees were recorded with an acquisition time of 0.3 s, for the Cov sample 1500 projections were acquired for four slightly different propagation distances at E=10.8⁢keV. The difference in acquisition time of both scans (Ctr: ≃10 min, Cov ≃3 h) is given by different wavguide channel diameters and guiding layer materials (Ctr: Ge, Cov: Si). Before and after each tomographic scan, 50 empty beam projections as well as 20 dark fields after the scan were recorded. The experimental and acquisition parameters for all imaging modalities are listed in Table 2.
+#### Parallel beam (PB) setup
 
-## Phase retrieval and tomographic reconstruction
+All Cov and Ctr samples were also scanned with an unfocused, quasi-parallel synchrotron beam at the GINIX endstation, at a photon energy $E_{ph}$ of $13.8⁢keV$. Projections were recorded by a microscope detection system (Optique Peter, France) with a 50-m-thick LuAG:Ce scintillator and a 10× magnifying microscope objective onto a sCMOS sensor (pco.edge 5.5, PCO, Germany) (Frohn et al., 2020). This configuration enables a field-of-view (FOV) of $1.6⁢mm\times1.4⁢mm$, sampled at a pixel size of $650⁢nm$. The continuous scan mode of the setup allows to acquire a tomographic recording with 3000 projections over 360° in less than 2 min.3×3 tomographic acquisitions in one plane for each of the 3.5 mm biopsy punches. For each sample, one plane of the $3.5⁢mm$ biopsy punch was covered by 3×3 tomographic acquisitions. Afterwards, dark field and flat field images were acquired. In total more than 150 tomographic scans (nine tomograms for each of the 17 samples) were recorded in this configuration.
+
+#### Waveguide (WG) setup
+
+As a proof-of-concept that subcellular resolution can also be obtained on cardiac tissue samples, a $1⁢mm$-diameter biopsy punch was taken from both a Covid-19 and control sample, both of which were previously scanned (PB geometry). The highly coherent cone beam geometry and clean wavefront of the WG illumination allows for samples to be probed at high magnification in the holographic regime. Here, the sample was aligned at $M≃40$, resulting in an effective pixel size of $159⁢nm$. Images of the Ctr were acquired by a sCMOS Camera ($15\mum$ Gadox scintillator, 2560 ×2,160 pixel) with a physical pixel size of $6.5⁢µ⁢m$ (Andor Technology Ltd, UK). Cov datasets were recorded by a 1:1 fiber-coupled scintillator-based sCMOS camera (2048 × 2048 pixels, Photonic Science, Sussex, UK) with a custom 15-m-thick Gadox scintillator with pixel size of $6.5\mum$. For Ctr data, the photon energy was $E=10⁢keV$ and 1500 projections over 180 degrees were recorded with an acquisition time of 0.3 s, for the Cov sample 1500 projections were acquired for four slightly different propagation distances at $E=10.8⁢keV$. The difference in acquisition time of both scans (Ctr: $≃10$ min, Cov $≃3$ h) is given by different wavguide channel diameters and guiding layer materials (Ctr: Ge, Cov: Si). Before and after each tomographic scan, 50 empty beam projections as well as 20 dark fields after the scan were recorded. The experimental and acquisition parameters for all imaging modalities are listed in Table 2.
+
+**Table 2.**
+ Data acquisition parameters of the laboratory and synchrotron scans.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>LJ setup</th>
+      <th>PB setup</th>
+      <th>WG setup (Ctr/Cov)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Photon energy (keV)</td>
+      <td>9.25</td>
+      <td>13.8</td>
+      <td>10/10.8</td>
+    </tr>
+    <tr>
+      <td>Source-sample-dist. x01 (m)</td>
+      <td>0.092</td>
+      <td>≃90</td>
+      <td>0.125/0.125 0.127 0.131 0.139</td>
+    </tr>
+    <tr>
+      <td>Sample-detector-dist. x12 (m)</td>
+      <td>0.206</td>
+      <td>0.5</td>
+      <td>4.975</td>
+    </tr>
+    <tr>
+      <td>Geometric magnification M</td>
+      <td>≃3</td>
+      <td>≃1</td>
+      <td>≃40</td>
+    </tr>
+    <tr>
+      <td>Pixel size (µm)</td>
+      <td>6.5</td>
+      <td>0.65</td>
+      <td>6.5</td>
+    </tr>
+    <tr>
+      <td>Effective pixel size (µm)</td>
+      <td>2</td>
+      <td>0.65</td>
+      <td>0.159</td>
+    </tr>
+    <tr>
+      <td>Field-of-view h×v (mm2)</td>
+      <td>4.8×3.4</td>
+      <td>1.6× 1.4</td>
+      <td>0.344×0.407/0.325× 0.325</td>
+    </tr>
+    <tr>
+      <td>Acquisition time (s)</td>
+      <td>3× 0.6</td>
+      <td>0.035</td>
+      <td>0.3/2.5</td>
+    </tr>
+    <tr>
+      <td>Number of projections</td>
+      <td>1501</td>
+      <td>3000</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <td>Number of flat fieldempties</td>
+      <td>50</td>
+      <td>1000</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Number of dark field</td>
+      <td>50</td>
+      <td>150</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
+
+### Phase retrieval and tomographic reconstruction
 
 The 3d structure of the cardiac tissue was reconstructed from the raw detector images. To this end, we computed the phase information of each individual projection and performed tomographic reconstruction to access the 3d electron density distribution. For image processing and phase retrieval, we used the HoloTomoToolbox developed by our group, and made publicly available (Lohse et al., 2020)(Table 3). First, flat field empty beam and dark field corrections were performed for all raw projections. In addition, hot pixel and detector sensitivity variations were removed by local median filtering. Phase retrieval of LJ scans was carried out with the Bronnikov aided Correction (BAC) algorithm (De Witte et al., 2009; Töpperwien et al., 2018). For the PB scans, a local ring removal (width of ±40 pixel) was applied around areas where wavefront distortions from upstream window materials did not perfectly cancel out after empty beam division. Phase retrieval of PB scans was performed using the linear CTF-approach (Cloetens et al., 1999; Turner et al., 2004). Phase retrieval of WG scans was performed using a nonlinear approach of the CTF. This advanced approach does not rely on the assumption of a weakly varying phase, and iteratively minimizes the Tikhonov-functional starting from the CTF result as an initial guess. For a weakly phase-shifting sample (linear approximation) without further constraints, both approaches yield exactly the same result (Lohse et al., 2020). Apart from phase retrieval, the HoloTomoToolbox provides auxiliary functions, which help to refine the Fresnel number or to identify the tilt and shift of the axis of rotation (Lohse et al., 2020). Tomographic reconstruction of the datasets was performed by the ASTRA toolbox (van Aarle et al., 2016; van Aarle et al., 2015). For the LJ and WG scans recorded at large cone beam geometry, the FDK-function was used, while the PB was reconstructed by the iradon-function with a Ram-Lak filter.
 
-To combine the 3×3 tomographic volumes, covering one plane of the 3.5⁢mm biopsy in PB geometry, a non-rigid stitching tool of was used (Miettinen et al., 2019). Region-of-interest artefacts of the PB reconstructions, which led to circular low frequency artefacts at the borders of the biopsy reconstruction volume, were removed by radial fitting of cosine functions. In order to decrease the size of the stitched volume, and thus also reduce computational power needed for further analysis, the datasets were binned by a factor of 2.
+**Table 3.**
+ Phase retrieval algorithms and parameters used for the different setups.
 
-## Structure tensor analysis
 
-The laboratory datasets and the stitched datasets reconstructed from the PB recordings were used for further analysis of the cardiac structure, cytoarchitecture and the corresponding pathological changes, see the workflow sketched in Figure 2. For each reconstruction of the 3d electron density map (Figure 2A), the biopsy punches were first masked based on their higher electron density compared to the surrounding air. Missing areas in the PB acquisition (from corrupted datasets) were excluded. The intensities of the reconstructions were normalized. Figure 2B shows an exemplary masked 2D slice. For each sample, the local tissue orientation and the degree of alignment was then determined from structure tensor analysis (Krause et al., 2010). Accordingly, the local structural orientation at point r can be described by a vectorw(1)w(r)=argminv=1(I(r+v)−I(r))2
+<table>
+  <thead>
+    <tr>
+      <th>Setup</th>
+      <th>LJ setup</th>
+      <th>PB setup configuration</th>
+      <th>WG setup configuration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fresnel number</td>
+      <td>0.47125</td>
+      <td>0.0095</td>
+      <td>0.0017</td>
+    </tr>
+    <tr>
+      <td>phase retrieval</td>
+      <td>BAC</td>
+      <td>CTF</td>
+      <td>nonlinear CTF</td>
+    </tr>
+    <tr>
+      <td>δ/β-ratio</td>
+      <td>-</td>
+      <td>1/45</td>
+      <td>1/130</td>
+    </tr>
+    <tr>
+      <td>parameter</td>
+      <td>α=8⋅10-3</td>
+      <td>α1=10-3</td>
+      <td>α1=8⋅10-4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>γ= 1</td>
+      <td>α2= 0.5</td>
+      <td>α2= 0.2</td>
+    </tr>
+  </tbody>
+</table>
 
-with v∈ℝ3 and |v|=1 in voxel units. Since the vector w or set of vectors is computed from partial derivatives, one has to first compensate for the ill-posedness of computing derivatives of noisy intensity values by convolving intensities Iσ=Kσ∗I with a Gaussian kernel Kσ. The structure tensor Jρ then is defined as follows(2)Jρ=Kρ∗((∂xIσ)2(∂xIσ)(∂yIσ)(∂xIσ)(∂zIσ)(∂yIσ)(∂xIσ)(∂yIσ)2(∂yIσ)(∂zIσ)(∂zIσ)(∂xIσ)(∂zIσ)(∂yIσ)(∂zIσ)2),
+To combine the 3×3 tomographic volumes, covering one plane of the $3.5⁢mm$ biopsy in PB geometry, a non-rigid stitching tool of was used (Miettinen et al., 2019). Region-of-interest artefacts of the PB reconstructions, which led to circular low frequency artefacts at the borders of the biopsy reconstruction volume, were removed by radial fitting of cosine functions. In order to decrease the size of the stitched volume, and thus also reduce computational power needed for further analysis, the datasets were binned by a factor of 2.
 
-where a second convolution Kρ is applied with length scale ρ, thus defining the structural scale on which the tissue structure is analyzed/reported. Since the reconstructed electron density I(r) along a fiber is approximately constant along the fiber tangent, the vector describing the local structural orientation is given by the eigenvector with the smallest eigenvalue of the symmetric matrix Jρ. The implementation of the structure tensor analysis is provided in https://lab.compute.dtu.dk/patmjen/structure-tensor. In this work, the size of ρ, determining the sub-volume on which the structural analysis is performed, was set to 32 pixels for PB datasets and 12 pixels for LJ acquisitions. This corresponds to ≈20.8μm and 24μm, respectively, that is a value slightly smaller than the diameter of a cardiomyocyte (≈25μm). A smoothing parameter σ of 2 pixels was chosen to reduce noise. From the eigenvalues (λ1≥λ2≥λ3) of Jρ, quantitative shape measures (as first introduced for diffusion tensor MRI data) can be determined (Westin et al., 2002). These parameters describe the degree of anisotropy of the local structure orientation. Tissue structure with fiber-like symmetry are indicated by a high value of(3)Cl=λ2-λ3λ1.
+### Structure tensor analysis
+
+The laboratory datasets and the stitched datasets reconstructed from the PB recordings were used for further analysis of the cardiac structure, cytoarchitecture and the corresponding pathological changes, see the workflow sketched in Figure 2. For each reconstruction of the 3d electron density map (Figure 2A), the biopsy punches were first masked based on their higher electron density compared to the surrounding air. Missing areas in the PB acquisition (from corrupted datasets) were excluded. The intensities of the reconstructions were normalized. Figure 2B shows an exemplary masked 2D slice. For each sample, the local tissue orientation and the degree of alignment was then determined from structure tensor analysis (Krause et al., 2010). Accordingly, the local structural orientation at point $r$ can be described by a vector$w$
+
+$$
+w(r)=argmin_{v=1}(I(r+v)−I(r))^{2}
+$$
+
+with $v\inℝ^{3}$ and $|v|=1$ in voxel units. Since the vector $w$ or set of vectors is computed from partial derivatives, one has to first compensate for the ill-posedness of computing derivatives of noisy intensity values by convolving intensities $I_{\sigma}=K_{\sigma}∗I$ with a Gaussian kernel $K_{\sigma}$. The structure tensor $J_{ρ}$ then is defined as follows
+
+$$
+J_{ρ}=K_{ρ}∗((∂_{x}I_{\sigma})^{2}(∂_{x}I_{\sigma})(∂_{y}I_{\sigma})(∂_{x}I_{\sigma})(∂_{z}I_{\sigma})(∂_{y}I_{\sigma})(∂_{x}I_{\sigma})(∂_{y}I_{\sigma})^{2}(∂_{y}I_{\sigma})(∂_{z}I_{\sigma})(∂_{z}I_{\sigma})(∂_{x}I_{\sigma})(∂_{z}I_{\sigma})(∂_{y}I_{\sigma})(∂_{z}I_{\sigma})^{2}),
+$$
+
+where a second convolution $K_{ρ}$ is applied with length scale $ρ$, thus defining the structural scale on which the tissue structure is analyzed/reported. Since the reconstructed electron density $I(r)$ along a fiber is approximately constant along the fiber tangent, the vector describing the local structural orientation is given by the eigenvector with the smallest eigenvalue of the symmetric matrix $J_{ρ}$. The implementation of the structure tensor analysis is provided in https://lab.compute.dtu.dk/patmjen/structure-tensor. In this work, the size of $ρ$, determining the sub-volume on which the structural analysis is performed, was set to 32 pixels for PB datasets and 12 pixels for LJ acquisitions. This corresponds to $≈20.8\mum$ and $24\mum$, respectively, that is a value slightly smaller than the diameter of a cardiomyocyte ($≈25\mum$). A smoothing parameter $\sigma$ of 2 pixels was chosen to reduce noise. From the eigenvalues ($\lambda_{1}\geq\lambda_{2}\geq\lambda_{3}$) of $J_{ρ}$, quantitative shape measures (as first introduced for diffusion tensor MRI data) can be determined (Westin et al., 2002). These parameters describe the degree of anisotropy of the local structure orientation. Tissue structure with fiber-like symmetry are indicated by a high value of
+
+$$
+C_{l}=\frac{\lambda_{2}-\lambda_{3}}{\lambda_{1}}.
+$$
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/71359/elife-71359-fig2-v2.jpg)
 
-**Figure 2.:** (A) Volume rendering of a tomographic reconstruction from PB data. (B) Orthogonal slice of the masked tissue. Scale bar:  (1⁢mmC) Shape measure distribution ( red, Cl green and Cp blue) of the slice shown in B. (CsD) Ternary plot of shape measure distribution. The peak (red) and mean (yellow) values are marked with an asterisk. (E) Overview of the training process for the neural network. (1) Random subvolumes (containing labeled voxels) are sampled from the full volume and are collected in a batch. (2) The batch is fed through the neural network, resulting in (3) a segmentation (top) and labels for one subvolume (bottom). (4) The dice loss is computed from segmented subvolumes based on labeled voxels, and the parameters of the neural network are updated. (F) Scheme of branching and the relation to degree of the vessel nodes obtained by a graph representation of the segmented microvasculature.
+**Figure 2.:** (A) Volume rendering of a tomographic reconstruction from PB data. (B) Orthogonal slice of the masked tissue. Scale bar: $1⁢mm$ (C) Shape measure distribution ($C_{l}$ red, $C_{p}$ green and $C_{s}$ blue) of the slice shown in B. (D) Ternary plot of shape measure distribution. The peak (red) and mean (yellow) values are marked with an asterisk. (E) Overview of the training process for the neural network. (1) Random subvolumes (containing labeled voxels) are sampled from the full volume and are collected in a batch. (2) The batch is fed through the neural network, resulting in (3) a segmentation (top) and labels for one subvolume (bottom). (4) The dice loss is computed from segmented subvolumes based on labeled voxels, and the parameters of the neural network are updated. (F) Scheme of branching and the relation to degree of the vessel nodes obtained by a graph representation of the segmented microvasculature.
 
-Plane-like (lamellar) symmetry is described by a high value of(4)Cp=λ1-λ2λ1,
+Plane-like (lamellar) symmetry is described by a high value of
 
-and isotropic structures are described by a high value of the spherical shape measure(5)Cs=λ3λ1.
+$$
+C_{p}=\frac{\lambda_{1}-\lambda_{2}}{\lambda_{1}},
+$$
 
-The shape measure distribution of the exemplary slice is shown in Figure 2C. Red areas indicate a high Cl value and correlate with the well aligned chains of cardiomyocytes. Planar structures as collagen sheets and separated muscle bundles show a high Cp value and are color-coded in green. Isotropic areas as blood filled vessels are represented by a high Cs value (blue). The values of the three measures range between zero and one, and sum up to one(6)Cl+Cp+Cs=1.
+and isotropic structures are described by a high value of the spherical shape measure
 
-Thus, one of the three shape measures is redundant. The data can be plotted in a ternary diagram as used to represent phase diagrams of ternary mixtures (see Figure 2D). To characterize the distribution of the shape measures for each sample, a principal component analysis (PCA) was performed. Note, that for the LJ datasets, the paraffin surrounding the cardiac tissue was removed by an intensity-based mask. Since one axis of the shape measure is redundant, the distribution of all data points can be described by two eigenvectors (u1,u2 with the largest eigenvalues (η1,η2)). The PCA analysis is equivalent to a two-dimensional Gaussian with standard deviation η1,η2. The two eigenvectors (u1,u2) can be represented by the major and minor axis of an ellipse centred around the mean (μl,μp,μs) (yellow asteroid) representing the ‘point cloud’ of all shape measures. The eccentricity of the ellipse is given by(7)e=1-η2η1
+$$
+C_{s}=\frac{\lambda_{3}}{\lambda_{1}}.
+$$
 
-and describes how much the ellipse deviates from being circular. The area of the ellipse is given by Aη=π⁢η1⁢η2 and is a measure for the dispersion of the shape measure distribution. The eccentricity indicates whether the dispersion is isotropic in the plane of the shape parameters. Large values of e indicate a sharp elongated distribution along the major axis of the ellipse.
+The shape measure distribution of the exemplary slice is shown in Figure 2C. Red areas indicate a high $C_{l}$ value and correlate with the well aligned chains of cardiomyocytes. Planar structures as collagen sheets and separated muscle bundles show a high $C_{p}$ value and are color-coded in green. Isotropic areas as blood filled vessels are represented by a high $C_{s}$ value (blue). The values of the three measures range between zero and one, and sum up to one
 
-## Segmentation by deep learning
+$$
+C_{l}+C_{p}+C_{s}=1.
+$$
 
-A deep learning approach based on the V-Net architecture (Milletari et al., 2016) was used to segment the vascular network in the PB datasets. The V-Net can be regarded as a 3D version of the popular U-Net architecture (Ronneberger et al., 2015) often used for segmentation of medical images. Training was performed using the Dice loss (Milletari et al., 2016) and the ADAM optimizer (Kingma and Ba, 2015) with step size 0.001 and hyperparameters β1=0.9 and β2=0.999. To avoid the need of a fully labeled training dataset, a training strategy using sparsely annotated data sets was adopted, inspired by Çiçek et al., 2016. In each dataset, a small number of axis-aligned 2D slices was annotated manually, and the Dice loss was evaluated only for these annotated voxels. Prior to training, the annotated volumes were split into a training set and a smaller validation set. The network was trained on the training set, while the quality of the current model (network weights) was tested on the validation set, as sketched in Figure 2E. Instead of segmenting the entire volume before computing the loss, batches of 12 random subvolumes of size 96 × 96 × 96 voxels were selected, ensuring that each contained annotated voxels. These were then fed into the network, the loss was computed, and the parameters (network weights) were updated. After running on 256 subvolumes, the network was evaluated by running it on the validation set. Rotations by 90 degrees and mirror reflections (axis flips) were used both on the training and the validation subvolumes to augment the data. The neural network code of this implementation was uploaded to GitHub (github.com/patmjen/blood-vessel-segmentation; Jensen, 2021 copy archived at swh:1:rev:783df24c3068e35f2ae994cab095b4318c755b29).
+Thus, one of the three shape measures is redundant. The data can be plotted in a ternary diagram as used to represent phase diagrams of ternary mixtures (see Figure 2D). To characterize the distribution of the shape measures for each sample, a principal component analysis (PCA) was performed. Note, that for the LJ datasets, the paraffin surrounding the cardiac tissue was removed by an intensity-based mask. Since one axis of the shape measure is redundant, the distribution of all data points can be described by two eigenvectors ($u_{1},u_{2}$ with the largest eigenvalues ($η_{1},η_{2}$)). The PCA analysis is equivalent to a two-dimensional Gaussian with standard deviation $\sqrt{η_{1}},\sqrt{η_{2}}$. The two eigenvectors ($u_{1},u_{2}$) can be represented by the major and minor axis of an ellipse centred around the mean $(\mu_{l},\mu_{p},\mu_{s})$ (yellow asteroid) representing the ‘point cloud’ of all shape measures. The eccentricity of the ellipse is given by
+
+$$
+e=\sqrt{1-\frac{\sqrt{η_{2}}}{\sqrt{η_{1}}}}
+$$
+
+and describes how much the ellipse deviates from being circular. The area of the ellipse is given by $A_{η}=\pi⁢\sqrt{η_{1}⁢η_{2}}$ and is a measure for the dispersion of the shape measure distribution. The eccentricity indicates whether the dispersion is isotropic in the plane of the shape parameters. Large values of $e$ indicate a sharp elongated distribution along the major axis of the ellipse.
+
+#### Segmentation by deep learning
+
+A deep learning approach based on the V-Net architecture (Milletari et al., 2016) was used to segment the vascular network in the PB datasets. The V-Net can be regarded as a 3D version of the popular U-Net architecture (Ronneberger et al., 2015) often used for segmentation of medical images. Training was performed using the Dice loss (Milletari et al., 2016) and the ADAM optimizer (Kingma and Ba, 2015) with step size 0.001 and hyperparameters $\beta_{1}=0.9$ and $\beta_{2}=0.999$. To avoid the need of a fully labeled training dataset, a training strategy using sparsely annotated data sets was adopted, inspired by Çiçek et al., 2016. In each dataset, a small number of axis-aligned 2D slices was annotated manually, and the Dice loss was evaluated only for these annotated voxels. Prior to training, the annotated volumes were split into a training set and a smaller validation set. The network was trained on the training set, while the quality of the current model (network weights) was tested on the validation set, as sketched in Figure 2E. Instead of segmenting the entire volume before computing the loss, batches of 12 random subvolumes of size 96 × 96 × 96 voxels were selected, ensuring that each contained annotated voxels. These were then fed into the network, the loss was computed, and the parameters (network weights) were updated. After running on 256 subvolumes, the network was evaluated by running it on the validation set. Rotations by 90 degrees and mirror reflections (axis flips) were used both on the training and the validation subvolumes to augment the data. The neural network code of this implementation was uploaded to GitHub (github.com/patmjen/blood-vessel-segmentation; Jensen, 2021 copy archived at swh:1:rev:783df24c3068e35f2ae994cab095b4318c755b29).
 
 A separate model was trained for a Covid-19 volume (Cov-IV) and a control volume (Ctr-III). The models were trained for 24 hr (~900 epochs) using an NVIDIA Tesla V100 32 GB GPU, and the model version which achieved the highest validation score during the training was kept. Finally, the training was performed over two rounds. First, an initial training and validation set was created to train the model. Then, the training set was improved by adding additional annotations to areas which were falsely segmented, and a new model was trained on the improved data.
 
-As the segmentation masks produced by the neural networks typically contained a number of errors, a post-processing pipeline was designed to reduce the errors’ effect. The first step is to reduce the number of false positives. These typically materialize as small, roughly spherical regions of background which was erroneously detected as blood vessels. To remove them, the structure tensor shape measures Cl, Cp, and Cs are computed for the segmentation mask (treating background as 0 and foreground as 1) with σ and ρ set to 1 and 8 voxels, respectively. Then, all connected components with a volume less than 104 voxels or a mean value of Cs greater than 0.2 are removed. The thresholding on Cs ensures that isotropic components are removed regardless of their size while still preserving smaller sections of correctly segmented blood vessels. The last step is to reduce the number of false negatives by reconnecting segments of blood vessels which are disconnected due to small errors in the segmentation. Since endpoints of blood vessels will typically have a large value of Cs, small gaps in the vessels can be closed by performing a morphological closing of the isotropic regions of the segmentation mask. Specifically, the cleaned binary mask, B^, is given by(8)B^=max(B,close(Cl⊙B,S4)>0.2) ,
+As the segmentation masks produced by the neural networks typically contained a number of errors, a post-processing pipeline was designed to reduce the errors’ effect. The first step is to reduce the number of false positives. These typically materialize as small, roughly spherical regions of background which was erroneously detected as blood vessels. To remove them, the structure tensor shape measures $C_{l}$, $C_{p}$, and $C_{s}$ are computed for the segmentation mask (treating background as 0 and foreground as 1) with $\sigma$ and $ρ$ set to 1 and 8 voxels, respectively. Then, all connected components with a volume less than 104 voxels or a mean value of $C_{s}$ greater than 0.2 are removed. The thresholding on $C_{s}$ ensures that isotropic components are removed regardless of their size while still preserving smaller sections of correctly segmented blood vessels. The last step is to reduce the number of false negatives by reconnecting segments of blood vessels which are disconnected due to small errors in the segmentation. Since endpoints of blood vessels will typically have a large value of $C_{s}$, small gaps in the vessels can be closed by performing a morphological closing of the isotropic regions of the segmentation mask. Specifically, the cleaned binary mask, $B^$, is given by
 
-where B is the original binary mask (after the first post processing step), Cl is the line-like measure for all voxels in B, and close⁢(Cl⊙B,S4) denotes a closing of the elementwise product between Cl and B with a ball of radius 4. For performance reasons the closing uses an approximated ball as described in Jensen et al., 2019.
+$$
+B^=max(B,close(C_{l}⊙B,S_{4})>0.2) ,
+$$
 
-## Quantification of the vascular system
+where $B$ is the original binary mask (after the first post processing step), $C_{l}$ is the line-like measure for all voxels in $B$, and $close⁢(C_{l}⊙B,S_{4})$ denotes a closing of the elementwise product between $C_{l}$ and $B$ with a ball of radius 4. For performance reasons the closing uses an approximated ball as described in Jensen et al., 2019.
 
-A quantitative description of the vascular system was achieved by modeling the segmented vessels as a mathematical graph. A graph consists of a set of vertices and a set of edges where each edge connects a pair of vertices. If vertices are connected via an edge they are said to be neighbors and the degree of a vertex (nodes) n is equal to its number of neighbors. In Figure 2F a sketch of a vessel graph is shown for a straight vessel and for a vessel with multiple branching points. The degree of connectivity n is added to the sketch. This gives a natural correspondence to the complex vascular system by modeling bifurcation points as vertices and the blood vessels between pairs of bifurcation points as edges. Furthermore, structural phenomena such as excessive vessel bifurcation and intussusceptive angiogenesis can now be detected by, respectively, a large number of high degree vertices and loops in the graph. The graph corresponding to the vascular system is extracted from the segmentation created by the neural network. First, a skeletonization (Lee et al., 1994) is computed, which reduces all structures in the binary volume to 1-voxel wide centerlines without changing the connectivity. These centerlines are then converted to a graph as described in Kollmannsberger et al., 2017. Once the graph is constructed the vertex degrees can readily be extracted by counting the number of edges connected to each vertex. Loops are detected using the algorithm from Gashler and Martinez, 2012 which detects all atomic cycles in a given graph. A cycle is a path through the graph that begins and ends at the same vertex without reusing edges. An atomic cycle is a cycle which cannot be decomposed into shorter cycles. Only reporting atomic cycles is more robust, since small errors in the segmentation may cause the skeletonization to contain long cycles that do not correspond to anatomical structures. The 3d data sets (including tomographic reconstructions and segmentations) was visualized using the software Avizo (Thermo Fisher Scientific).
+#### Quantification of the vascular system
 
-## Vascular corrosion casting, scanning electron microscopy, and morphometry
+A quantitative description of the vascular system was achieved by modeling the segmented vessels as a mathematical graph. A graph consists of a set of vertices and a set of edges where each edge connects a pair of vertices. If vertices are connected via an edge they are said to be neighbors and the degree of a vertex (nodes) $n$ is equal to its number of neighbors. In Figure 2F a sketch of a vessel graph is shown for a straight vessel and for a vessel with multiple branching points. The degree of connectivity $n$ is added to the sketch. This gives a natural correspondence to the complex vascular system by modeling bifurcation points as vertices and the blood vessels between pairs of bifurcation points as edges. Furthermore, structural phenomena such as excessive vessel bifurcation and intussusceptive angiogenesis can now be detected by, respectively, a large number of high degree vertices and loops in the graph. The graph corresponding to the vascular system is extracted from the segmentation created by the neural network. First, a skeletonization (Lee et al., 1994) is computed, which reduces all structures in the binary volume to 1-voxel wide centerlines without changing the connectivity. These centerlines are then converted to a graph as described in Kollmannsberger et al., 2017. Once the graph is constructed the vertex degrees can readily be extracted by counting the number of edges connected to each vertex. Loops are detected using the algorithm from Gashler and Martinez, 2012 which detects all atomic cycles in a given graph. A cycle is a path through the graph that begins and ends at the same vertex without reusing edges. An atomic cycle is a cycle which cannot be decomposed into shorter cycles. Only reporting atomic cycles is more robust, since small errors in the segmentation may cause the skeletonization to contain long cycles that do not correspond to anatomical structures. The 3d data sets (including tomographic reconstructions and segmentations) was visualized using the software Avizo (Thermo Fisher Scientific).
+
+#### Vascular corrosion casting, scanning electron microscopy, and morphometry
 
 The microvascular architecture of Covid-19 hearts was also examined using scanning electron microscopy (SEM) and microvascular corrosion casting. So far, corrosion casting coupled with SEM represents the gold standard for assessing the subtypes of angiogenesis. The afferent vessels of heart specimens were cannulated with an olive-tipped cannula. The vasculature was flushed with saline (at body temperature) followed by glutaraldehyde fixation solution (2.5%, pH 7.4, Sigma Aldrich, Munich, Germany). Fixation was followed by injection of prepolymerized PU4ii resin (VasQtec, Zurich, Switzerland) mixed with a hardener (40% solvent) and blue dye as casting medium. After curing of the resin, the heart tissue was macerated in 10% KOH (Fluka, Neu-Ulm, Germany) at 40°C for 2–3 days. Specimens were then rinsed with water and frozen in distilled water. The casts were freeze-dried and sputtered with gold in an argon atmosphere and examined using a Philips ESEM XL-30 scanning electron microscope (Philips, Eindhoven, Netherlands). Vascular morphometry of variants of angiogenesis were then assessed: high-power images of the capillary network were scanned and quantified.
 
 ## Results and discussion
 
-## Reconstructed electron density: laboratory data
+### Reconstructed electron density: laboratory data
 
 Figure 3 shows representative slices of the tomographic reconstruction for all samples scanned at the laboratory LJ setup. The image quality is sufficient to identify the cytoarchitecture and main structural features of interest, such as the general orientation of the cardiomyocytes, large arteries and veins, as well as smaller capillaries. Occasionally, artefacts from sample preparation, such as small air filled micro-fractures of the paraffin, also appear in the reconstructions. In the top row of Figure 3, two annotated slices representative for the Covid-19 and control group are shown enlarged. In the following, the structural appearance of the different groups (Ctr, Cov, Inf and Myo) is briefly described.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/71359/elife-71359-fig3-v2.jpg)
 
-**Figure 3.:** For each sample analyzed at the LJ µ-CT setup one slice of the reconstructed volume is shown. In the top row, a slice of a tomographic reconstruction of a control sample (Ctr-I) and of a sample from a patient who died from Covid-19 (Cov-I) are shown. Below, further slices from control (Ctr-II to Ctr-VI), Covid-19 (Cov-II to Cov-XI) as well as myocarditis (Myo-I to Myo-V) and influenza (Inf-I to Inf-IV) samples are shown. Scale bars: .1⁢mm
+**Figure 3.:** For each sample analyzed at the LJ µ-CT setup one slice of the reconstructed volume is shown. In the top row, a slice of a tomographic reconstruction of a control sample (Ctr-I) and of a sample from a patient who died from Covid-19 (Cov-I) are shown. Below, further slices from control (Ctr-II to Ctr-VI), Covid-19 (Cov-II to Cov-XI) as well as myocarditis (Myo-I to Myo-V) and influenza (Inf-I to Inf-IV) samples are shown. Scale bars: $1⁢mm$.
 
-## Control (Ctr)
+#### Control (Ctr)
 
 The reconstructions of the control hearts are shown in the top row (Figure 3 (Ctr-I to Ctr-VI)). Biopsies Ctr-I to Ctr-III and Ctr-IV to Ctr-VI were taken from different areas of the same heart, respectively. In general, the cardiac structure with interload cardiomyocytes and vasculature of the control group is well preserved. The cardiomyocytes are arranged in close proximity and form bundled elongated myocyte chains. Vessels appear as bright tubes within the dense, homogeneous muscle tissue and only a few blood residues can be found in the vessels. Ctr-III differs from the other control samples. The alignment of the cardiomyocytes is not directed along the same direction, and the amount of collagen sheets and paraffin inclusions is comparably high. Further, a high amount of adipose tissue can be identified, as accumulations of less electron-dense (i.e. brighter) spheroids, see for example the top of the slice. Ctr-III also shows a high amount of collagen sheets, which appear as dark stripes in the reconstructions. Ctr-V contains many electron-dense spheres.
 
-## Covid-19 (Cov)
+#### Covid-19 (Cov)
 
 The cardiac samples of the hearts from patients who died from Covid-19 are shown in the next two rows of Figure 3 (Cov-I to Cov-XI). Compared to Ctr, all Cov samples show a high amount of blood filled, ectatic vessels with abrupt changes in diameter, plausibly correlating to micro-thrombi. The cardiomyocytes are not densely packed with substantial interstitial edema, and correspondingly there is a high amount of paraffin inclusions between the cells. This may also explain a higher amount of micro-fractures (e.g. in Cov-I and IV) in the paraffin, which are filled with air. Furthermore, Cov-I also shows an inflammatory infiltrate, predominantly consisting of macrophages, around the intramyocardial vessel, marked in the corresponding slice (top, right) of Figure 3.
 
-## Coxsackie virus myocarditis (Myo)
+#### Coxsackie virus myocarditis (Myo)
 
 In Figure 3, representative slices from tomographic reconstructions of biopsies of patients who died from coxsackie myocarditis (Myo-I to Myo-V) are shown. The tissue of the Myo group is almost as densely packed as the Ctr group. Only in the biopsy of Myo-III, which was sampled near an artery, some large paraffin inclusions between the cardiomyocytes are visible. Characteristic for all myocardits samples is a high amount of lymphocytes, which appear as small electron-dense spheres in the reconstructions. They are primarily located close to vessels (as in Myo-II), but also appear inside the ECM between cardiomyocytes (Myo-I), or infiltrate extensive areas of tissue devoid of vital cardiomyocytes, corresponding to necrosis (Myo-V).
 
-## Influenza (Inf)
+#### Influenza (Inf)
 
 The biopsies taken from patients who succumbed to H1N1/A influenza (Inf-I to Inf-IV) are shown in the bottom row of Figure 3. The tissue structure in this group is also densely packed. Inf-IV shows a high amount of blood filled vessels with abrupt changes in caliber, plausibly correlating to micro-thrombi. Otherwise, changes include lymphocytic infiltration and regions devoid of vital cardiomyocytes indicating necrosis, similar to (Myo).
 
 In summary, the quality of the reconstructions from laboratory data was already sufficiently high to identify the main anatomical features of the cardiac tissue, readily by eye in selected slices. The full reconstruction volumes were therefore targeted by automated geometric analysis based on a structure tensor approach, as described in the next section. However, smaller capillaries and subcellular features were not resolved in the laboratory LJ setup configuration. Thus, imaging using high coherent synchrotron radiation was chosen to analyze vascular changes within the tissue.
 
-## Reconstructed electron density: synchrotron data
+### Reconstructed electron density: synchrotron data
 
-## PB setup configuration
+#### PB setup configuration
 
 The samples from Ctr and Cov patients were scanned in the PB setup configuration of the GINIX endstation (Hamburg, DESY). Compared to the laboratory acquisitions, this allowed for smaller effective voxel sizes and enabled a higher contrast for smaller tissue structures as erythrocytes and capillaries (as shown in AppendixC Fig. C). Slices of the tomographic reconstruction of the 3d electron density distribution are shown in AppendixC Fig. C and were used for the segmentation of the vascular system.
 
-## WG setup
+#### WG setup
 
-In order to further explore high-resolution imaging capabilities, tomograms of two selected biopsies (Ctr-VI and Cov-III) with a diameter of 1⁢mm were recorded at the WG setup of the GINIX endstation, exploiting cone beam magnification and high coherence filtering based on the waveguide modes. Figure 4 shows the corresponding results. A cut of the entire control volume with a size of about 340 × 340 × 400 µm3 is shown in Figure 4. Figure 4 shows a slice through the tomographic reconstruction perpendicular to the orientation of the cardiomyocytes. A closer inspection of a single cardiomyocyte marked with a red box is shown on the right. The nucleus of the cell with nucleoli can be clearly seen. Within the cytosol, the myofibrils appear as small discs in the slice. Figure 4C shows a second slice through the 3d volume which is oriented along the orientation of the cardiomyocytes. In this view, intercalated discs can be identified. They appear as dark lines connecting two cardiomyocytes. A magnification of the area is marked with a red box. In this view, the myofibrils can be identified as elongated lines within the cell. This region also contains a nucleus of one cardiomyocyte, but also an intercalated disc at the bottom of the image. The tomographic reconstruction of the Cov sample is shown in the lower part of Figure 4 in the same manner as the Ctr. In this dataset capillaries, nuclei and myofibrils can also be identified. The volume contains smaller capillaries compared to the control, but this circumstance is probably due to a different location within the myocardium. The most important difference between the Ctr and Cov sample is the presence of small bars in the lumen of capillaries in the Cov sample. These intraluminal pillars are an indicator for IA.
+In order to further explore high-resolution imaging capabilities, tomograms of two selected biopsies (Ctr-VI and Cov-III) with a diameter of $1⁢mm$ were recorded at the WG setup of the GINIX endstation, exploiting cone beam magnification and high coherence filtering based on the waveguide modes. Figure 4 shows the corresponding results. A cut of the entire control volume with a size of about 340 × 340 × 400 $µm^{3}$ is shown in Figure 4. Figure 4 shows a slice through the tomographic reconstruction perpendicular to the orientation of the cardiomyocytes. A closer inspection of a single cardiomyocyte marked with a red box is shown on the right. The nucleus of the cell with nucleoli can be clearly seen. Within the cytosol, the myofibrils appear as small discs in the slice. Figure 4C shows a second slice through the 3d volume which is oriented along the orientation of the cardiomyocytes. In this view, intercalated discs can be identified. They appear as dark lines connecting two cardiomyocytes. A magnification of the area is marked with a red box. In this view, the myofibrils can be identified as elongated lines within the cell. This region also contains a nucleus of one cardiomyocyte, but also an intercalated disc at the bottom of the image. The tomographic reconstruction of the Cov sample is shown in the lower part of Figure 4 in the same manner as the Ctr. In this dataset capillaries, nuclei and myofibrils can also be identified. The volume contains smaller capillaries compared to the control, but this circumstance is probably due to a different location within the myocardium. The most important difference between the Ctr and Cov sample is the presence of small bars in the lumen of capillaries in the Cov sample. These intraluminal pillars are an indicator for IA.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/71359/elife-71359-fig4-v2.jpg)
 
-**Figure 4.:** (A) Volume rendering of a tomographic reconstruction from a control sample recorded in cone beam geometry based on a wave guide illumination. After the analysis in parallel beam geometry, a biopsy with a diameter of  was taken from the 1⁢mm biopsy punch. This configuration revealed sub-cellular structures such as nuclei of one cardiomyocytes, myofibrils and intercalated discs. (3.5⁢mmB) Slice of the reconstructed volume perpendicular to the orientation of the cardiomyocytes. The red box marks an area which is magnified and shown on the right. One cardiomyocyte is located in the center of the magnified area. In this view, the nucleus can be identified. It contains two nucleoli, which can be identified as dark spots. The myofibrils appear as round discs. (C) Orthogonal slice which oriented along the orientation of the cardiomyocytes. A magnification of the area marked with a red box. In this view, a nucleus but also the myofibrils can be identified as dark, elongated structures in the cell. Further, an intercalated disc is located at the bottom of the area. (D) Volume rendering of a tomographic reconstruction from a Covid-19 sample. Slices orthogonal (E) and along (F) to the cardiomyocyte orientation are shown on the right. In the magnified areas, a nucleus of an endothelial cell and an intraluminar pillar -the morphological hallmark of intussusceptive angiogenesis- are visible. Scale bars: orthoslices ; magnified areas 50μm.10μm
+**Figure 4.:** (A) Volume rendering of a tomographic reconstruction from a control sample recorded in cone beam geometry based on a wave guide illumination. After the analysis in parallel beam geometry, a biopsy with a diameter of $1⁢mm$ was taken from the $3.5⁢mm$ biopsy punch. This configuration revealed sub-cellular structures such as nuclei of one cardiomyocytes, myofibrils and intercalated discs. (B) Slice of the reconstructed volume perpendicular to the orientation of the cardiomyocytes. The red box marks an area which is magnified and shown on the right. One cardiomyocyte is located in the center of the magnified area. In this view, the nucleus can be identified. It contains two nucleoli, which can be identified as dark spots. The myofibrils appear as round discs. (C) Orthogonal slice which oriented along the orientation of the cardiomyocytes. A magnification of the area marked with a red box. In this view, a nucleus but also the myofibrils can be identified as dark, elongated structures in the cell. Further, an intercalated disc is located at the bottom of the area. (D) Volume rendering of a tomographic reconstruction from a Covid-19 sample. Slices orthogonal (E) and along (F) to the cardiomyocyte orientation are shown on the right. In the magnified areas, a nucleus of an endothelial cell and an intraluminar pillar -the morphological hallmark of intussusceptive angiogenesis- are visible. Scale bars: orthoslices $50\mum$; magnified areas $10\mum$.
 
 Since the FOV in this configuration is limited, and stitching of larger volumes required more beamtime than available, quantitative and statistical analysis was performed only on the datasets acquired in the laboratory and in PB geometry. At the same time, this proof-of-concept shows that much more structural information could be exploited by stitching tomography and speeding-up the measurement sequence in the WG configuration.
 
 The tomographic datasets recorded at the WG setup in WG configuration as well as the PB datasets used for the segmentation of the vascular system and the respective laboratory datasets were uploaded to https://doi.org/10.5281/zenodo.5658380 (Reichardt et al., 2021).
 
-## Automated tissue analysis and classification of pathologies
+### Automated tissue analysis and classification of pathologies
 
 Next, the reconstructed 3d tissue structure is analyzed by an automated workflow involving differential operators and subsequent statistical representations based on the structure tensor analysis. Instead of semantic analysis of specific structures (vessels, cardiomyocytes, ect), which is considered further below, we first target geometric properties encoded by gray value derivatives, possible prototypical distribution of these parameters in a sample, and the respective variations within and between groups. This can then later be interpreted also in view of semantic image information. A high local anisotropy and consistent orientation field, for example, can be indicative of an intact tissue with well-ordered cardiomyocyte chains. For all samples, eigenvector and eigenvalues were computed for all sampling points in the reconstructed volume. This information then includes the orientation (quasi-)vector as defined by the smallest eigenvector, as well as the shape measures for all points. As a word of caution, however, one has to keep in mind that these properties also depend on tissue preservation and preparations, as well as on the measurement and reconstruction. For this reason, the latter has to be carried out using identical workflows and parameters for all samples.
 
-Figure 5 shows the results of the structure tensor analysis for all samples reconstructed from LJ scans. In Figure 5A the mean values of the shape measures (μl,μp,μs) for all datasets are plotted in a shape-measure diagram, constructed as for ternary mixtures. Sample groups are indicated by color: control-green, Covid-19-red, myocarditis-blue and influenza-yellow. Already in this plot, differences between the groups can be identified. Compared to the Ctr, the pathological groups are shifted towards lower Cl, indicating a less-pronounced fiber-like structure, and to higher Cs, reflecting a larger amount of isotropic symmetry. The Cov, Inf and Myo groups differ mainly in the Cp coefficient. From Inf, to Myo and Cov, the point clouds of each group exhibit successive shifts toward increased Cp. However, these differences in µ are quite small, and it is not possible to classify samples only based on the average value of the shape measure. Instead, the distribution of real-space sampling points in each sample should be taken into account. Figure 5B and C show the area Aη and the eccentricity e, respectively, of the ellipse formed by the PCA eigenvectors u1,u2, for each sample, color-coded by groups. The corresponding box-whisker plots indicate a significant difference in Aη between Cov and Ctr (Welch t-test, p=0.0389) as well as a Cov and Inf (Welch t-test, p=0.0403). Concerning e, Cov tissues differs also from Myo (Welch t-test, p=0.0611). Small values of Aη, as obtained for Ctr, indicate a homogeneous tissue structure, while large values are obtained for samples with a more heterogeneous tissue composition. The parameters for each sample group are tabulated in Table 4. The large intra-group variance reflects the pronounced variability between individual subjects, which is in line with experience of conventional histology. The complete summary of all samples individually is given in Appendix 1—figure 1, Appendix 2—table 2. The results for the stitched tomographic datasets (PB setup) of Cov and Ctr are also shown in Appendix 1—figure 1.
+Figure 5 shows the results of the structure tensor analysis for all samples reconstructed from LJ scans. In Figure 5A the mean values of the shape measures $(\mu_{l},\mu_{p},\mu_{s})$ for all datasets are plotted in a shape-measure diagram, constructed as for ternary mixtures. Sample groups are indicated by color: control-green, Covid-19-red, myocarditis-blue and influenza-yellow. Already in this plot, differences between the groups can be identified. Compared to the Ctr, the pathological groups are shifted towards lower $C_{l}$, indicating a less-pronounced fiber-like structure, and to higher $C_{s}$, reflecting a larger amount of isotropic symmetry. The Cov, Inf and Myo groups differ mainly in the $C_{p}$ coefficient. From Inf, to Myo and Cov, the point clouds of each group exhibit successive shifts toward increased $C_{p}$. However, these differences in µ are quite small, and it is not possible to classify samples only based on the average value of the shape measure. Instead, the distribution of real-space sampling points in each sample should be taken into account. Figure 5B and C show the area $A_{η}$ and the eccentricity $e$, respectively, of the ellipse formed by the PCA eigenvectors $u_{1},u_{2}$, for each sample, color-coded by groups. The corresponding box-whisker plots indicate a significant difference in $A_{η}$ between Cov and Ctr (Welch t-test, $p=0.0389$) as well as a Cov and Inf (Welch t-test, $p=0.0403$). Concerning $e$, Cov tissues differs also from Myo (Welch t-test, $p=0.0611$). Small values of $A_{η}$, as obtained for Ctr, indicate a homogeneous tissue structure, while large values are obtained for samples with a more heterogeneous tissue composition. The parameters for each sample group are tabulated in Table 4. The large intra-group variance reflects the pronounced variability between individual subjects, which is in line with experience of conventional histology. The complete summary of all samples individually is given in Appendix 1—figure 1, Appendix 2—table 2. The results for the stitched tomographic datasets (PB setup) of Cov and Ctr are also shown in Appendix 1—figure 1.
+
+**Table 4.**
+ Parameters of the cardiac tissue obtained from LJ reconstructions.For all sample groups the mean value and standard deviation of the mean shape measures $\mu_{l}¯$, $\mu_{p}¯$, $\mu_{s}¯$ area of the elliptical fit $A_{η}¯$ (%) and the eccentricity $e¯$ is shown.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>μl¯</th>
+      <th>μp¯</th>
+      <th>μs¯</th>
+      <th>Aη¯(%)</th>
+      <th>e¯</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control</td>
+      <td>0.60± 0.11</td>
+      <td>0.18± 0.07</td>
+      <td>0.22± 0.06</td>
+      <td>11.98± 6.42</td>
+      <td>0.61± 0.13</td>
+    </tr>
+    <tr>
+      <td>Covid-19</td>
+      <td>0.44±0.12</td>
+      <td>0.23±0.03</td>
+      <td>0.32±0.11</td>
+      <td>16.92± 2.91</td>
+      <td>0.61± 0.09</td>
+    </tr>
+    <tr>
+      <td>Myocarditis</td>
+      <td>0.47±0.14</td>
+      <td>0.21± 0.02</td>
+      <td>0.33±0.13</td>
+      <td>16.69± 5.06</td>
+      <td>0.51± 0.12</td>
+    </tr>
+    <tr>
+      <td>Influenza</td>
+      <td>0.49±0.11</td>
+      <td>0.16±0.02</td>
+      <td>0.35±0.12</td>
+      <td>13.44± 1.31</td>
+      <td>0.63± 0.07</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/71359/elife-71359-fig5-v2.jpg)
 
-**Figure 5.:** (A) Ternary diagram of the mean value of the shape measures for all datasets. The control samples (green) show low  values, while samples from Covid-19 (red), influenza and myocarditis (blue) patients show a larger variance for Cs. (CsB) The fitted area of the elliptical fit from the PCA analysis of the shape measure distribution is an indicator for the variance in tissue structure. For Control and influenza sample this value differs significantly from the Covid-19 tissue. (C) The eccentricity of the fit indicates if the structural distribution in shape measure space has a preferred direction along any axis. The value of the myocarditis samples is comparable low.
+**Figure 5.:** (A) Ternary diagram of the mean value of the shape measures for all datasets. The control samples (green) show low $C_{s}$ values, while samples from Covid-19 (red), influenza and myocarditis (blue) patients show a larger variance for $C_{s}$. (B) The fitted area of the elliptical fit from the PCA analysis of the shape measure distribution is an indicator for the variance in tissue structure. For Control and influenza sample this value differs significantly from the Covid-19 tissue. (C) The eccentricity of the fit indicates if the structural distribution in shape measure space has a preferred direction along any axis. The value of the myocarditis samples is comparable low.
 
-## Characterization of the vascular system
+### Characterization of the vascular system
 
-Figure 6 reports on the segmentation and analysis of the vasculature. A surface rendering of the segmented vessels is shown in the top row, on the left for a Ctr sample (Ctr-III) and on the right for a Cov sample (Cov-IV). In Ctr, the vessels are well oriented and show a relatively constant diameter and a smooth surface. In Cov, the vessels show large deviations in diameter and the surface of the vessels is not as smooth as in Ctr. Furthermore, closed loops within the microvasculature can be identified. In Figure 6C, one of these vessel loops (marked with a blue line) in the Cov dataset is highlighted by a minimum intensity projection over ±30 slices around the centered slice. This pathological formation of a loop is indicative for an intermediate state in the process of IA. The corresponding vessel segmentation is depicted in Figure 6D, with a simplified vessel graph superimposed as black lines. Based on the simplified vessel graph, the connectivity of the capillaries can further be quantified. In total 19,893 nodes for the Cov sample and 8068 nodes in the segmentation of the Ctr were used. Figure 6E shows the probability density function (PDF) of the degree of connectivity n for control and Covid-19 samples. It indicates a higher amount of branching points in the Covid-19 sample. This is also confirmed by the ratio of endpoints of vessels (n=1) to the branching points (n≥3). Note, that the amount of nodes with n>3 is almost negligible. While the Ctr data shows approximately the same number of endpoints and branching points, the Cov segmentation show almost a ratio of 1:1.5, indicating a higher degree of cross-linking or loop formation of the capillary network.
+Figure 6 reports on the segmentation and analysis of the vasculature. A surface rendering of the segmented vessels is shown in the top row, on the left for a Ctr sample (Ctr-III) and on the right for a Cov sample (Cov-IV). In Ctr, the vessels are well oriented and show a relatively constant diameter and a smooth surface. In Cov, the vessels show large deviations in diameter and the surface of the vessels is not as smooth as in Ctr. Furthermore, closed loops within the microvasculature can be identified. In Figure 6C, one of these vessel loops (marked with a blue line) in the Cov dataset is highlighted by a minimum intensity projection over ±30 slices around the centered slice. This pathological formation of a loop is indicative for an intermediate state in the process of IA. The corresponding vessel segmentation is depicted in Figure 6D, with a simplified vessel graph superimposed as black lines. Based on the simplified vessel graph, the connectivity of the capillaries can further be quantified. In total 19,893 nodes for the Cov sample and 8068 nodes in the segmentation of the Ctr were used. Figure 6E shows the probability density function (PDF) of the degree of connectivity $n$ for control and Covid-19 samples. It indicates a higher amount of branching points in the Covid-19 sample. This is also confirmed by the ratio of endpoints of vessels ($n=1$) to the branching points ($n\geq3$). Note, that the amount of nodes with $n>3$ is almost negligible. While the Ctr data shows approximately the same number of endpoints and branching points, the Cov segmentation show almost a ratio of 1:1.5, indicating a higher degree of cross-linking or loop formation of the capillary network.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/71359/elife-71359-fig6-v2.jpg)
 
-**Figure 6.:** (A) Segmentation of the vessels of a Ctr sample. The vessels are well oriented and show a relatively constant diameter. (B) Segmentation of the vessels of a Covid-19 sample. The vessels show large deviations in diameter and the surface of the vessels is not as smooth as in the control sample. (C) Filtered minimum projection of an area of the reconstructed electron density of the Cov sample to highlight a vessel loop marked in blue. (D) Surface rendering of the segmented vessel and vessel graph in an area of the Cov sample. Scale bars . (25μmE) Comparison of node degree  between control and Covid-19. Ratio refers to the number of graph branch points (n > 2) divided by the number of end points (n = 1). (nF) Exemplary scanning electron microscopy image of a microvascular corrosion casting from a Covid-19 sample. The black arrows mark the occurrence of some tiny holes indicating intraluminar pillars with a diameter of  to 2μm, indicating intussusceptive angiogenesis. Magnification x800, scale bar 5μm.20μm
+**Figure 6.:** (A) Segmentation of the vessels of a Ctr sample. The vessels are well oriented and show a relatively constant diameter. (B) Segmentation of the vessels of a Covid-19 sample. The vessels show large deviations in diameter and the surface of the vessels is not as smooth as in the control sample. (C) Filtered minimum projection of an area of the reconstructed electron density of the Cov sample to highlight a vessel loop marked in blue. (D) Surface rendering of the segmented vessel and vessel graph in an area of the Cov sample. Scale bars $25\mum$. (E) Comparison of node degree $n$ between control and Covid-19. Ratio refers to the number of graph branch points ($n$ > 2) divided by the number of end points ($n$ = 1). (F) Exemplary scanning electron microscopy image of a microvascular corrosion casting from a Covid-19 sample. The black arrows mark the occurrence of some tiny holes indicating intraluminar pillars with a diameter of $2\mum$ to $5\mum$, indicating intussusceptive angiogenesis. Magnification x800, scale bar $20\mum$.
 
 An exemplary scanning electron micrograph of a Covid-19 sample is shown in Figure 6F. IA was identified via the occurrence of tiny holes with a diameter of 2–5µm in SEM of microvascular corrosion casts. Capillaries display the presence of characteristic intussusceptive pillars (marked by black arrows).
 
-## Summary, conclusion, and outlook
+### Summary, conclusion, and outlook
 
 This is the first report of a comprehensive 3d analysis of cardiac involvement in tissue of Covid-19, influenza and coxsackie virus infections using X-ray phase-contrast tomography of human FFPE heart tissue. In summary, a high amount of distinct caliber changes of blood filled capillaries in samples of Covid-19 (Cov) patients was identified compared to the control group (Ctr) as well as to coxsackie virus myocarditis (Myo) and influenza (Inv). This can readily be explained by a much higher prevalence of micro-thrombi in Cov compared to other viral pneumoniae (e.g. influenza), as has previously been reported in Covid-19 lungs. Most importantly, high-resolution synchrotron data revealed distinct alterations of the vasculature, with larger variation in vessels diameters, intravascular pillars and amount of small holes, indicative for IA. Branching points of vessels were quantified based on graph representations, after segmentation of vessels based on deep learning. For this purpose, a network for 3d datasets (V-net) was trained with sparse annotations. In Cov, the vasculature also showed a higher degree of branching. Further, SEM data showed a high amount of holes in the capillaries, indicating the presence of multiple intussusceptive pillars as a first stage of IA. The presence of intraluminar pillars was also confirmed by the high resolution reconstruction obtained from WG acquisitions. Accordingly, we could -for the first timeâ€“ visualize the presence of IA via destruction-free X-ray phase-contrast tomography not only in the heart but also for the first time in FFPE-tissue. Thus, IA is also a hallmark of Covid-19 inflammation in the heart, analogous to pulmonary previously reported for lung (Ackermann et al., 2020b). This finding is in line with the concept of Covid-19 as a systemic and multi-organ angiocentric entity.
 
@@ -186,4 +445,4 @@ The reconstructed electron density of the Cov sample group also showed that conc
 
 Compared to related studies (Walsh et al., 2021), which focused on the analysis of entire human organs, we investigated the cardiac structure from the scale of 3.5 mm biopsy punches down to a resolution showing subcellular and supramolecular structures such as myofibrils and intussusceptive pillars.
 
-Future improvements in segmentation and quantification will be required to fully exploit the structural data acquired here, or in similar studies. To this end, augmented image processing algorithms, deep learning, classification for example based on optimal transport, and the consolidation of the above in form of specialized software packages has to be considered. Technical improvements towards higher resolution and throughput can also be foreseen. Already at present, parallel beam synchrotron data acquisition (GINIX endstation, P10 beamline of PETRA III/DESY) completes a biopsy punch tomogram within 1.5⁢min, at a pixel size of 650⁢nm, and a volume throughput of 107μm3/s. Importantly, the image resolution and quality is sufficient to segment vasculature and cytoarchitectural features of interest, also and especially for standard unstained paraffin-embedded tissue used in routine diagnostics. The data acquisition rate and dwell time in the range of 10⁢ms to 20⁢ms (per projection) is dictated by detector readout, motor synchronisation, and data flow rather than by photon flux density for the PB setup. This is also underlined by the fact that (single-crystal) attenuators had to be used to prevent detector saturation. The situation is entirely different, however, for the waveguide cone beam setup, where the lower waveguide exit flux density, which comes with the significantly higher coherence and resolution, requires acquisition times of 200⁢ms to 2500⁢ms. Here, the projected source upgrade foreseen for PETRA IV will provide a significant gain in resolution and throughput. Robotic sample exchange will therefore be required, as well as a serious upscaling of the data management and online reconstruction pipeline. First reconstructions of heart biopsies exploiting the enhanced coherence and resolution of a waveguide holo-tomography setup already indicate that this is a very promising direction. With our presented workflow, especially in view of the laboratory system, we have for the first time implemented destruction free analysis of the ubiquitous FFPE embedded tissue readily available in every pathology lab around the world, based on an automated structure tensor and shape measures. This represents a first and major step in unlocking the extensive international FFPE archives for sub-light-microscope resolution destruction-free 3d-tissue analysis, unfolding manifold future research possibilities in human diseases far beyond Covid-19. This approach has been successfully used to classify the distinct changes in the myocardial cytoarchitecture induced by Covid-19. More importantly still, we have provided first proof for the suspected presence of IA in cardiac Covid-19 involvement, putting forward morphological evidence of a so far imprecisely defined clinical entity of great importance.
+Future improvements in segmentation and quantification will be required to fully exploit the structural data acquired here, or in similar studies. To this end, augmented image processing algorithms, deep learning, classification for example based on optimal transport, and the consolidation of the above in form of specialized software packages has to be considered. Technical improvements towards higher resolution and throughput can also be foreseen. Already at present, parallel beam synchrotron data acquisition (GINIX endstation, P10 beamline of PETRA III/DESY) completes a biopsy punch tomogram within $1.5⁢min$, at a pixel size of $650⁢nm$, and a volume throughput of $10^{7}\mum^{3}/s$. Importantly, the image resolution and quality is sufficient to segment vasculature and cytoarchitectural features of interest, also and especially for standard unstained paraffin-embedded tissue used in routine diagnostics. The data acquisition rate and dwell time in the range of $10⁢ms$ to $20⁢ms$ (per projection) is dictated by detector readout, motor synchronisation, and data flow rather than by photon flux density for the PB setup. This is also underlined by the fact that (single-crystal) attenuators had to be used to prevent detector saturation. The situation is entirely different, however, for the waveguide cone beam setup, where the lower waveguide exit flux density, which comes with the significantly higher coherence and resolution, requires acquisition times of $200⁢ms$ to $2500⁢ms$. Here, the projected source upgrade foreseen for PETRA IV will provide a significant gain in resolution and throughput. Robotic sample exchange will therefore be required, as well as a serious upscaling of the data management and online reconstruction pipeline. First reconstructions of heart biopsies exploiting the enhanced coherence and resolution of a waveguide holo-tomography setup already indicate that this is a very promising direction. With our presented workflow, especially in view of the laboratory system, we have for the first time implemented destruction free analysis of the ubiquitous FFPE embedded tissue readily available in every pathology lab around the world, based on an automated structure tensor and shape measures. This represents a first and major step in unlocking the extensive international FFPE archives for sub-light-microscope resolution destruction-free 3d-tissue analysis, unfolding manifold future research possibilities in human diseases far beyond Covid-19. This approach has been successfully used to classify the distinct changes in the myocardial cytoarchitecture induced by Covid-19. More importantly still, we have provided first proof for the suspected presence of IA in cardiac Covid-19 involvement, putting forward morphological evidence of a so far imprecisely defined clinical entity of great importance.

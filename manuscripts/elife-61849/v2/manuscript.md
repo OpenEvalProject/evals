@@ -17,7 +17,7 @@
 
 ## Abstract
 
-The zebra finch ( Taeniopygia guttata ) is a socially monogamous and colonial opportunistic breeder with pronounced sexual differences in singing and plumage coloration. Its natural history has led to it becoming a model species for research into sex differences in vocal communication, as well as behavioral, neural and genomic studies of imitative auditory learning. As scientists tap into the genetic and behavioral diversity of both wild and captive lineages, the zebra finch will continue to inform research into culture, learning, and social bonding, as well as adaptability to a changing climate.
+The zebra finch (Taeniopygia guttata) is a socially monogamous and colonial opportunistic breeder with pronounced sexual differences in singing and plumage coloration. Its natural history has led to it becoming a model species for research into sex differences in vocal communication, as well as behavioral, neural and genomic studies of imitative auditory learning. As scientists tap into the genetic and behavioral diversity of both wild and captive lineages, the zebra finch will continue to inform research into culture, learning, and social bonding, as well as adaptability to a changing climate.
 
 ## Introduction
 

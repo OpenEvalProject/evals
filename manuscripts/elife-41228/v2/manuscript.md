@@ -34,7 +34,7 @@
 
 ## Abstract
 
-10.7554/eLife.41228.001 Biodiversity increases ecosystem functions underpinning a suite of services valued by society, including services provided by soils. To test whether, and how, future environments alter the relationship between biodiversity and multiple ecosystem functions, we measured grassland plant diversity effects on single soil functions and ecosystem multifunctionality, and compared relationships in four environments: ambient conditions, elevated atmospheric CO 2 , enriched N supply, and elevated CO 2 and N in combination. Our results showed that plant diversity increased three out of four soil functions and, consequently, ecosystem multifunctionality. Remarkably, biodiversity-ecosystem function relationships were similarly significant under current and future environmental conditions, yet weaker with enriched N supply. Structural equation models revealed that plant diversity enhanced ecosystem multifunctionality by increasing plant community functional diversity, and the even provision of multiple functions. Conserving local plant diversity is therefore a robust strategy to maintain multiple valuable ecosystem services in both present and future environmental conditions.
+Biodiversity increases ecosystem functions underpinning a suite of services valued by society, including services provided by soils. To test whether, and how, future environments alter the relationship between biodiversity and multiple ecosystem functions, we measured grassland plant diversity effects on single soil functions and ecosystem multifunctionality, and compared relationships in four environments: ambient conditions, elevated atmospheric CO2, enriched N supply, and elevated CO2 and N in combination. Our results showed that plant diversity increased three out of four soil functions and, consequently, ecosystem multifunctionality. Remarkably, biodiversity-ecosystem function relationships were similarly significant under current and future environmental conditions, yet weaker with enriched N supply. Structural equation models revealed that plant diversity enhanced ecosystem multifunctionality by increasing plant community functional diversity, and the even provision of multiple functions. Conserving local plant diversity is therefore a robust strategy to maintain multiple valuable ecosystem services in both present and future environmental conditions.
 
 ## Introduction
 
@@ -48,7 +48,7 @@ Here, we report root biomass, soil respiration, soil microbial biomass, and wate
 
 ## Results
 
-## Single-soil ecosystem functions
+### Single-soil ecosystem functions
 
 Plant root biomass, soil respiration, and soil microbial biomass C increased significantly with plant diversity, while the percentage of water-stable soil aggregates increased with plant diversity but only with marginal statistical significance (Table 1, Figure 1). The identity of top-performing plant species in monoculture depended upon both the response variable and environmental context (Table S1), indicating that different species provide different functions under different conditions. Yet, results for community functioning were independent of the environmental context, as there were no significant interaction effects between plant diversity and global change agents on any individual ecosystem function. In contrast to plant diversity, none of the global change treatments had a significant effect on the single-soil functions (Table 1, Figure 1).
 
@@ -56,15 +56,332 @@ Plant root biomass, soil respiration, and soil microbial biomass C increased sig
 
 **Figure 1.:** Plant diversity effects on root biomass (a), soil respiration (b), soil microbial biomass (c), and water-stable soil aggregates (d) under ambient conditions (Control) and three different future environmental conditions (elevated CO2 concentrations, elevated nitrogen availability, and elevated CO2 concentrations and elevated nitrogen availability). Plant diversity effects are significant in (a), (b), and (c), while elevated CO2 and N did not affect any of the soil functions (Table 1). Shown are regression lines with 95% confidence intervals. Points staggered on x-axis for clarity.
 
-## Relationships among individual functions
+**Table 1.**
+ GLM table of F and p values on the effects of CO2 (ambient and elevated), N (ambient and elevated), plant species richness (PSR; one, four, nine, or 16 species; log-linear term), and all possible interactions on soil microbial biomass carbon, soil respiration, root biomass, water stable aggregates, and soil ecosystem multifunctionality using the averaging and the multiple thresholds approach.Ring effects indicate variation across experimental blocks (six rings). Full model: model degrees of freedom (dfs) = 13 (dfs of all factors and interactions = 1, except for Ring [dfs = 6]), error dfs = 301; error dfs for Ring(CO2)=18.56; reduced model without monocultures: error dfs = 177; error dfs for Ring(CO2)=23.65; significant effects (p≤0.05) are given in bold; effects of ring are given in italics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="2">CO2</td>
+      <td colspan="2">Ring(CO2)</td>
+      <td colspan="2">N</td>
+      <td colspan="2">PSR</td>
+      <td colspan="2">CO2 x N</td>
+      <td colspan="2">CO2 x PSR</td>
+      <td colspan="2">N x PSR</td>
+      <td colspan="2">CO2 x N x PSR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>F</td>
+      <td>p</td>
+      <td>F</td>
+      <td>p</td>
+      <td>F</td>
+      <td>p</td>
+      <td>F</td>
+      <td>p</td>
+      <td>F</td>
+      <td>p</td>
+      <td>F</td>
+      <td>p</td>
+      <td>F</td>
+      <td>p</td>
+      <td>F</td>
+      <td>p</td>
+    </tr>
+    <tr>
+      <td colspan="2">Single-soil functions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Soil microbial biomass</td>
+      <td>&lt;0.01</td>
+      <td>0.975</td>
+      <td>0.72</td>
+      <td>0.634</td>
+      <td>0.84</td>
+      <td>0.360</td>
+      <td>83.03</td>
+      <td>&lt;0.001</td>
+      <td>0.15</td>
+      <td>0.701</td>
+      <td>0.65</td>
+      <td>0.420</td>
+      <td>0.18</td>
+      <td>0.669</td>
+      <td>&lt;0.01</td>
+      <td>0.954</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Soil respiration</td>
+      <td>0.04</td>
+      <td>0.851</td>
+      <td>5.45</td>
+      <td>&lt;0.001</td>
+      <td>2.91</td>
+      <td>0.089</td>
+      <td>22.98</td>
+      <td>&lt;0.001</td>
+      <td>3.43</td>
+      <td>0.065</td>
+      <td>1.77</td>
+      <td>0.185</td>
+      <td>0.14</td>
+      <td>0.710</td>
+      <td>0.19</td>
+      <td>0.661</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Root biomass</td>
+      <td>0.25</td>
+      <td>0.621</td>
+      <td>1.77</td>
+      <td>0.105</td>
+      <td>1.15</td>
+      <td>0.285</td>
+      <td>80.23</td>
+      <td>&lt;0.001</td>
+      <td>2.03</td>
+      <td>0.155</td>
+      <td>0.14</td>
+      <td>0.714</td>
+      <td>0.72</td>
+      <td>0.398</td>
+      <td>0.01</td>
+      <td>0.940</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Soil aggregate stability</td>
+      <td>1.03</td>
+      <td>0.346</td>
+      <td>97.33</td>
+      <td>&lt;0.001</td>
+      <td>0.56</td>
+      <td>0.454</td>
+      <td>2.81</td>
+      <td>0.095</td>
+      <td>0.76</td>
+      <td>0.383</td>
+      <td>0.30</td>
+      <td>0.582</td>
+      <td>0.07</td>
+      <td>0.792</td>
+      <td>0.05</td>
+      <td>0.825</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Ecosystem multifunctionality (EM)</td>
+      <td>0.58</td>
+      <td>0.457</td>
+      <td>7.53</td>
+      <td>&lt;0.001</td>
+      <td>0.45</td>
+      <td>0.504</td>
+      <td>112.57</td>
+      <td>&lt;0.001</td>
+      <td>3.08</td>
+      <td>0.080</td>
+      <td>0.29</td>
+      <td>0.594</td>
+      <td>0.02</td>
+      <td>0.877</td>
+      <td>0.05</td>
+      <td>0.823</td>
+    </tr>
+    <tr>
+      <td colspan="2">EM, without monocultures‘</td>
+      <td>&lt;0.01</td>
+      <td>0.953</td>
+      <td>8.65</td>
+      <td>&lt;0.001</td>
+      <td>2.90</td>
+      <td>0.091</td>
+      <td>26.87</td>
+      <td>&lt;0.001</td>
+      <td>2.57</td>
+      <td>0.111</td>
+      <td>0.50</td>
+      <td>0.479</td>
+      <td>3.21</td>
+      <td>0.075</td>
+      <td>1.03</td>
+      <td>0.311</td>
+    </tr>
+    <tr>
+      <td colspan="2">EM, realized plant species richness‘‘</td>
+      <td>0.57</td>
+      <td>0.460</td>
+      <td>7.27</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.01</td>
+      <td>0.976</td>
+      <td>91.95</td>
+      <td>&lt;0.001</td>
+      <td>3.75</td>
+      <td>0.054</td>
+      <td>0.07</td>
+      <td>0.788</td>
+      <td>0.01</td>
+      <td>0.904</td>
+      <td>1.13</td>
+      <td>0.290</td>
+    </tr>
+    <tr>
+      <td colspan="2"># Functions &gt; 20% threshold</td>
+      <td>0.45</td>
+      <td>0.503</td>
+      <td>1.58</td>
+      <td>0.152</td>
+      <td>1.85</td>
+      <td>0.175</td>
+      <td>79.44</td>
+      <td>&lt;0.001</td>
+      <td>4.34</td>
+      <td>0.038</td>
+      <td>0.80</td>
+      <td>0.373</td>
+      <td>0.86</td>
+      <td>0.355</td>
+      <td>1.46</td>
+      <td>0.222</td>
+    </tr>
+    <tr>
+      <td colspan="2"># Functions &gt; 40% threshold</td>
+      <td>0.03</td>
+      <td>0.866</td>
+      <td>1.86</td>
+      <td>0.088</td>
+      <td>0.03</td>
+      <td>0.857</td>
+      <td>124.84</td>
+      <td>&lt;0.001</td>
+      <td>4.24</td>
+      <td>0.041</td>
+      <td>0.22</td>
+      <td>0.636</td>
+      <td>1.57</td>
+      <td>0.211</td>
+      <td>0.02</td>
+      <td>0.876</td>
+    </tr>
+    <tr>
+      <td colspan="2"># Functions &gt; 60% threshold</td>
+      <td>&lt;0.01</td>
+      <td>0.993</td>
+      <td>4.35</td>
+      <td>0.003</td>
+      <td>0.20</td>
+      <td>0.657</td>
+      <td>64.47</td>
+      <td>&lt;0.001</td>
+      <td>1.18</td>
+      <td>0.278</td>
+      <td>0.03</td>
+      <td>0.867</td>
+      <td>0.02</td>
+      <td>0.889</td>
+      <td>3.87</td>
+      <td>0.050</td>
+    </tr>
+    <tr>
+      <td colspan="2"># Functions &gt; 80% threshold</td>
+      <td>0.08</td>
+      <td>0.787</td>
+      <td>21.95</td>
+      <td>&lt;0.001</td>
+      <td>0.43</td>
+      <td>0.514</td>
+      <td>39.21</td>
+      <td>&lt;0.001</td>
+      <td>0.17</td>
+      <td>0.682</td>
+      <td>0.01</td>
+      <td>0.971</td>
+      <td>0.76</td>
+      <td>0.384</td>
+      <td>4.71</td>
+      <td>0.031</td>
+    </tr>
+  </tbody>
+</table>
+
+_‘without monocultures; only plant species richness levels 4, 9, and 16 used in the analysis‘‘using realized species richness_
+
+### Relationships among individual functions
 
 Despite the consistent linear relationships between plant diversity and the soil functions (Figure 1), the individual soil functions were generally not, or only weakly correlated with each other across the environmental contexts (in five out of the six possible correlations between soil functions r2 ≤0.1; Figure 2; note that Pearson’s correlation coefficients (r) are shown in Figure 2, while we refer to r² values in the text). As an exception, a significant proportion of soil respiration was associated with microbial biomass C (r² = 0.45; Figure 2). However, for the positive correlations between root biomass and soil microbial biomass C (r² = 0.10), and root biomass and respiration (r² = 0.04), the explained variance did not exceed 10%. Variation in water stable aggregates was not associated with any of the other variables (r²<0.02). These mostly weak correlations between soil functions suggest that the single soil functions (as well as ecosystem multifunctionality) may respond largely independently to experimental treatments.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/41228/elife-41228-fig2-v2.jpg)
 
-**Figure 2.:** 2, and N treatments.Lower panels show bivariate relationships among standardized values of root biomass, soil basal respiration, soil microbial biomass, and water-stable soil aggregates (>250 µm). Upper panels report Pearson’s correlation coefficient (r) and associated p-values.
+**Figure 2.:** Lower panels show bivariate relationships among standardized values of root biomass, soil basal respiration, soil microbial biomass, and water-stable soil aggregates (>250 µm). Upper panels report Pearson’s correlation coefficient (r) and associated p-values.
 
-## Ecosystem multifunctionality
+### Ecosystem multifunctionality
 
 Average ecosystem multifunctionality responded strongly to variations in plant diversity, increasing by 40% from monocultures to 16-species mixtures. The strong plant diversity effect on ecosystem multifunctionality was independent of the global change treatments (Table 1, Figure 3). These results did not depend on the shape of the plant diversity-ecosystem multifunctionality relationship, as additional tests of log-linear, polynomial, and exponential biodiversity-ecosystem multifunctionality relationships yielded qualitatively the same results. Additionally, the plant diversity effect on ecosystem multifunctionality did not depend on the inclusion of monocultures in the statistical analyses (Table 1), showing that plant diversity effects on ecosystem multifunctionality were also apparent when diversity increased from four to 16 species. Furthermore, testing the effects of realized, rather than planted, plant species richness did not alter the results (Table 1). In contrast to strong plant diversity effects, CO2 and N enrichment or their interactive effects with plant diversity on multifunctionality were not significant (Table 1, Figure 3).
 
@@ -74,9 +391,491 @@ Average ecosystem multifunctionality responded strongly to variations in plant d
 
 The multiple threshold approach demonstrates that increases in average ecosystem multifunctionality with increasing plant species richness typically were caused by simultaneous increases in the performance of all functions. However, the extent to which this was true depended upon the choice of threshold criteria for performance and environmental conditions (Table 1, Figure 4). As the threshold for performance increased from 20 to 80%, plant communities were able to support fewer functions above threshold values and the influence of diversity on multiple ecosystem functions was more strongly contingent upon environmental conditions (Figure 4). At the 20% and 40% thresholds, the interaction between CO2 and N was significant (Table 1), with more functions performed above thresholds in ambient conditions and in conditions with both elevated CO2 and elevated N (an effect that was also observed for 60% thresholds), and fewer functions performed above the threshold in conditions of elevated CO2 and elevated N in isolation (Figure 4). For the 60% and 80% thresholds, plant species richness effects on the number of functions delivered above the threshold level were strongest under ambient conditions, and the weakest effects were observed under elevated N conditions (significant plant species richness × CO2×N effect; Table 1, Figure 4).
 
-## Plant community composition and evenness of multiple soil functions
+![Figure 4.](https://cdn.elifesciences.org/articles/41228/elife-41228-fig4-v2.jpg)
+
+**Figure 4.:** The slope of the relationship between planted species richness and multifunctionality, defined as number of functions reaching a threshold of some percentage of the maximum observed function. Panels show the relationship for (a) the number of functions at or above a threshold of some proportion of the maximum observed function for threshold values ranging from 1 to 99% and (b) four different thresholds (20%, 40%, 60%, and 80% of maximum) as affected by plant species richness, CO2, and N in the BioCON experiment (Reich et al., 2001). Points are slightly jiggered to improve readability.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41228/elife-41228-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** For statistical results see main text. Means with 95% confidence intervals.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/41228/elife-41228-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** For statistical results see main text. Means with 95% confidence intervals.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/41228/elife-41228-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** For statistical results see main text. Means with 95% confidence intervals.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/41228/elife-41228-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** For statistical results see main text. Means with 95% confidence intervals.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/41228/elife-41228-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** For statistical results see main text. Means with 95% confidence intervals.
+
+### Plant community composition and evenness of multiple soil functions
 
 Sown plant species richness increased realized species richness, the Shannon diversity, evenness, and the functional diversity of the plant community (Table 2). Overall, however, this increase in realized diversity with increasing sown plant species richness tended to be less pronounced in the elevated CO2 and N treatments (significant plant species richness × environmental change effects in Table 2, Figure 4—figure supplement 1; this pattern was consistent across plant community diversity and functional diversity indices, Figure 4—figure supplements 2–5).
+
+**Table 2.**
+ GLM table of F and p values on the effects of CO2 (ambient and elevated), N (ambient and elevated), plant species richness (PSR; one, four, nine, or 16 species; log-linear term), and all possible interactions on realized plant species richness, Shannon diversity index of plants, Simpson evenness of plants, aboveground plant biomass, Shannon diversity index of soil functions, and evenness of soil functions.Ring effects indicate variation across experimental blocks (six rings). Model degrees of freedom (dfs) = 13 (dfs of all factors and interactions = 1, except for Ring [dfs = 6]), error dfs = 301; error dfs for Ring(CO2)=18.56; significant effects (p<0.05) are given in bold; effects of ring are given in italics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="2">CO2</td>
+      <td></td>
+      <td colspan="2">Ring(CO2)</td>
+      <td></td>
+      <td colspan="2">N</td>
+      <td></td>
+      <td colspan="2">PSR</td>
+      <td></td>
+      <td colspan="2">CO2 x N</td>
+      <td></td>
+      <td colspan="2">CO2 x PSR</td>
+      <td></td>
+      <td colspan="2">N x PSR</td>
+      <td></td>
+      <td colspan="2">CO2 x N x PSR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>F</td>
+      <td>p</td>
+      <td></td>
+      <td>F</td>
+      <td>p</td>
+      <td></td>
+      <td>F</td>
+      <td>p</td>
+      <td></td>
+      <td>F</td>
+      <td>p</td>
+      <td></td>
+      <td>F</td>
+      <td>p</td>
+      <td></td>
+      <td>F</td>
+      <td>p</td>
+      <td></td>
+      <td>F</td>
+      <td>p</td>
+      <td></td>
+      <td>F</td>
+      <td>p</td>
+    </tr>
+    <tr>
+      <td colspan="2">Plant community responses</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Realized plant species richness</td>
+      <td>0.01</td>
+      <td>0.938</td>
+      <td></td>
+      <td>1.11</td>
+      <td>0.355</td>
+      <td></td>
+      <td>&lt;0.01</td>
+      <td>0.949</td>
+      <td></td>
+      <td>1040.30</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>0.64</td>
+      <td>0.424</td>
+      <td></td>
+      <td>0.01</td>
+      <td>0.908</td>
+      <td></td>
+      <td>12.34</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>7.20</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Shannon diversity</td>
+      <td>0.82</td>
+      <td>0.365</td>
+      <td></td>
+      <td>0.86</td>
+      <td>0.526</td>
+      <td></td>
+      <td>0.40</td>
+      <td>0.528</td>
+      <td></td>
+      <td>761.67</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>0.26</td>
+      <td>0.590</td>
+      <td></td>
+      <td>5.81</td>
+      <td>0.017</td>
+      <td></td>
+      <td>11.62</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>5.03</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Shannon evenness</td>
+      <td>0.11</td>
+      <td>0.736</td>
+      <td></td>
+      <td>0.40</td>
+      <td>0.880</td>
+      <td></td>
+      <td>0.27</td>
+      <td>0.604</td>
+      <td></td>
+      <td>445.43</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>&lt;0.01</td>
+      <td>0.982</td>
+      <td></td>
+      <td>0.12</td>
+      <td>0.726</td>
+      <td></td>
+      <td>5.02</td>
+      <td>0.026</td>
+      <td></td>
+      <td>0.09</td>
+      <td>0.965</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Simpson evenness</td>
+      <td>0.91</td>
+      <td>0.342</td>
+      <td></td>
+      <td>1.05</td>
+      <td>0.392</td>
+      <td></td>
+      <td>0.72</td>
+      <td>0.397</td>
+      <td></td>
+      <td>622.34</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>0.09</td>
+      <td>0.763</td>
+      <td></td>
+      <td>6.28</td>
+      <td>0.013</td>
+      <td></td>
+      <td>8.05</td>
+      <td>0.005</td>
+      <td></td>
+      <td>3.43</td>
+      <td>0.065</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Functional richness</td>
+      <td>0.06</td>
+      <td>0.802</td>
+      <td></td>
+      <td>0.44</td>
+      <td>0.853</td>
+      <td></td>
+      <td>0.03</td>
+      <td>0.874</td>
+      <td></td>
+      <td>597.98</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>0.04</td>
+      <td>0.842</td>
+      <td></td>
+      <td>0.19</td>
+      <td>0.667</td>
+      <td></td>
+      <td>0.13</td>
+      <td>0.724</td>
+      <td></td>
+      <td>1.41</td>
+      <td>0.236</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Functional evenness</td>
+      <td>1.68</td>
+      <td>0.203</td>
+      <td></td>
+      <td>3.33</td>
+      <td>0.007</td>
+      <td></td>
+      <td>1.16</td>
+      <td>0.283</td>
+      <td></td>
+      <td>30.52</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>2.94</td>
+      <td>0.089</td>
+      <td></td>
+      <td>2.36</td>
+      <td>0.127</td>
+      <td></td>
+      <td>0.29</td>
+      <td>0.592</td>
+      <td></td>
+      <td>0.87</td>
+      <td>0.353</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Functional divergence</td>
+      <td>0.46</td>
+      <td>0.498</td>
+      <td></td>
+      <td>0.96</td>
+      <td>0.455</td>
+      <td></td>
+      <td>0.61</td>
+      <td>0.434</td>
+      <td></td>
+      <td>970.50</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>0.11</td>
+      <td>0.740</td>
+      <td></td>
+      <td>0.67</td>
+      <td>0.415</td>
+      <td></td>
+      <td>0.15</td>
+      <td>0.703</td>
+      <td></td>
+      <td>0.51</td>
+      <td>0.475</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Functional dispersion</td>
+      <td>0.57</td>
+      <td>0.453</td>
+      <td></td>
+      <td>1.12</td>
+      <td>0.353</td>
+      <td></td>
+      <td>0.35</td>
+      <td>0.555</td>
+      <td></td>
+      <td>905.91</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>0.02</td>
+      <td>0.893</td>
+      <td></td>
+      <td>7.71</td>
+      <td>0.006</td>
+      <td></td>
+      <td>4.71</td>
+      <td>0.031</td>
+      <td></td>
+      <td>0.71</td>
+      <td>0.399</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Aboveground plant biomass</td>
+      <td>0.99</td>
+      <td>0.323</td>
+      <td></td>
+      <td>1.52</td>
+      <td>0.171</td>
+      <td></td>
+      <td>6.71</td>
+      <td>0.010</td>
+      <td></td>
+      <td>65.37</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>0.54</td>
+      <td>0.463</td>
+      <td></td>
+      <td>0.28</td>
+      <td>0.596</td>
+      <td></td>
+      <td>0.01</td>
+      <td>0.926</td>
+      <td></td>
+      <td>0.20</td>
+      <td>0.657</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Ecosystem multifunctionality</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Shannon diversity index of soil functions</td>
+      <td>0.05</td>
+      <td>0.827</td>
+      <td></td>
+      <td>5.93</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>2.03</td>
+      <td>0.155</td>
+      <td></td>
+      <td>115.34</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>0.91</td>
+      <td>0.340</td>
+      <td></td>
+      <td>0.43</td>
+      <td>0.512</td>
+      <td></td>
+      <td>1.39</td>
+      <td>0.234</td>
+      <td></td>
+      <td>0.13</td>
+      <td>0.718</td>
+    </tr>
+    <tr>
+      <td colspan="2">Evenness of soil functions</td>
+      <td>0.11</td>
+      <td>0.652</td>
+      <td></td>
+      <td>6.24</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>0.58</td>
+      <td>0.449</td>
+      <td></td>
+      <td>135.63</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>0.80</td>
+      <td>0.371</td>
+      <td></td>
+      <td>0.46</td>
+      <td>0.500</td>
+      <td></td>
+      <td>0.96</td>
+      <td>0.327</td>
+      <td></td>
+      <td>0.51</td>
+      <td>0.477</td>
+    </tr>
+  </tbody>
+</table>
 
 Plant species richness increased the Shannon diversity and evenness of multiple soil functions (i.e. the Shannon evenness index of the four standardized soil function values), while CO2 and N as well as interactions among the three factors did not significantly influence these soil responses (Table 2). Moreover, structural equation models (SEMs) revealed that the positive effect of plant species richness on ecosystem multifunctionality could be explained by increased plant community functional diversity and evenness of multiple soil functions at high plant diversity (Figure 5). These results were consistent across functional diversity metrics (functional richness, functional evenness, functional diversity, and functional dispersion; not shown), but we focus on functional dispersion here, because this diversity index could be calculated for all 315 plots, while the other functional diversity indices need a minimum number of three species present in order to be calculated. No direct paths between plant species richness and ecosystem multifunctionality were supported by the SEM, indicating that plant species richness effects on ecosystem multifunctionality were fully explained by changes in the functional diversity of the plant community and evenness of ecosystem multifunctionality. Although several significant interaction effects for plant species richness × CO2 (Shannon diversity, Shannon evenness, functional dispersion) and plant species richness × N (realized species richness, Shannon diversity, Shannon evenness, Simpson evenness, functional dispersion) on the plant community were observed (Table 2), CO2 and N were not retained in the final SEM (removal of non-significant paths improved the model fit based on AIC). Taken together, these results suggest that strong plant species richness effects overrode any CO2 and N effects on plant community evenness, functional diversity, and evenness of multiple soil functions in driving ecosystem multifunctionality (Table 1, Figure 5).
 
@@ -102,7 +901,7 @@ In summary, our study showed strong and consistent effects of plant diversity on
 
 ## Materials and methods
 
-## Experimental setup
+### Experimental setup
 
 This experiment was conducted in the framework of the BioCON experiment at the Cedar Creek Long Term Ecological Research (LTER) site in Minnesota (Reich et al., 2001). The region has a continental climate with cold winters (mean January temperature −11°C) and warm summers (mean July temperature 22°C) and mean annual precipitation of 660 mm (Reich et al., 2001). The soils are sands (Typic Udipsamment, Nymore series) derived from sandy glacial outwash (94.4% sand, 2.5% clay). The BioCON experiment was designed for the simultaneous manipulation of plant diversity (1, 4, 9, 16 species), atmospheric CO2 concentrations (ambient, elevated), and N deposition (ambient, elevated) in experimental grassland plots (2 × 2 m) under field conditions, using a well-replicated split-plot experiment comprising a full-factorial combination of treatment levels (orthogonal cross of all plant diversity × CO2×N treatments) in a completely randomized design (Reich et al., 2001). It was established in 1997 on a level, secondary successional grassland after removing prior vegetation (Reich et al., 2001), and experimental treatments had been continuously ongoing since 17 years before the present study was conducted in the summer of 2014. The established plant diversity levels represent common plant species richness numbers per square meter in the study region and cover the range from disturbed grassland of anthropogenic origin to medium-high diversity native vegetation (Eisenhauer et al., 2013).
 
@@ -112,7 +911,7 @@ CO2 treatments consist of ambient and elevated CO2. Six circular areas (24 m dia
 
 Nitrogen was added to the surface of half the plots in each ring as 4 g N m−2 yr−1 slow-release ammonium nitrate (NH4NO3) in equal fractions in early May, June, and July. Annual net mineralization rates are roughly 3–4 g N m−2 y−1 in grassland at Cedar Creek. Thus, adding 4 g N m−2 y−1 doubles available N in this system and serves to elucidate responses of ecosystems differing in soil N supply because of differences in fertility or N deposition (Eisenhauer et al., 2013). The levels of experimentally increased N deposition rates are already realized across various locations around the globe (Simkin et al., 2016).
 
-## Samplings and measurements
+### Samplings and measurements
 
 In August 2014 (during the period of peak plant biomass), we determined plant aboveground biomass (in an area of 0.1 m² per plot), realized plant species richness, Shannon diversity and evenness, as well as functional richness, functional divergence, functional evenness, and functional dispersion (Villéger et al., 2008; Laliberté and Legendre, 2010) of the plant community at the plot level. Realized species richness, Shannon diversity and evenness, Simpson diversity and functional diversity indices of the communities were calculated based on plot- and species-specific cover estimates. We assembled trait data of all plant species used in this analysis representing a wide range of the global spectrum of plant forms and functions (Díaz et al., 2016): plant height (H), specific leaf area (SLA), leaf dry matter content (LDMC), leaf nitrogen concentration (leafN), and seed mass. Those traits reflect the capacity of light preemption (H), resource capturing (SLA, LDMC, leafN), and reproduction (seed mass). We derived data on seed mass and leafN from monocultures of the BioCON experiment (Reich et al., 2001), considering site- and treatment-specific variability in the traits. SLA and H were derived from monocultures of a nearby experiment; thus, these datasets do not reflect treatment-specific variability. LDMC data were derived from the TRY database (Kattge et al., 2011). Functional richness, functional evenness, functional divergence (Villéger et al., 2008), and functional dispersion (Laliberté and Legendre, 2010) were calculated with the function dbFD of the package FD in R 3.3.3. We weighted those indices by the relative abundances (plot cover) of the present target plant species. In cases where all sown species of a community went extinct, we set all diversity indices to zero.
 
@@ -122,16 +921,16 @@ Roots were washed, dried, and weighed (g m−2). Before measurement of soil micr
 
 To determine the resistance of soil aggregates against water as a disintegrating force, we applied an approach modified from Kemper and Rosenau (Kemper and Rosenau, 1986). The resulting index represents the percentage of water-stable aggregates with a diameter smaller than 4 mm. Dry soil (4.0 g, measured in duplicates) was placed onto small sieves with a mesh size of 250 µm, capillarily re-wetted with deionized water prior, and then placed in a sieving machine (Agrisearch Equipment, Eijkelkamp, Giesbeek, Netherlands) where the samples were agitated for 3 min. The re-wetting and agitation of the tested soil aggregates causes the compression of entrapped air inside of them resulting in a process called slaking, which is a function of re-wetting intensity, volume of entrapped air, and aggregate shear-strength (Bissonnais, 1996). This process leads to a separation into water-stable and water-unstable fraction with a size >250 µm. Additionally, debris (i.e. coarse matter) had to be separated from the water-stable fraction to correctly determine the water-stable aggregates (WSA) fraction of the sample:
 
-%WSA=(water stable fraction-coarse matter)/(4 g-coarse matter).
+$%WSA=(waterstablefraction-coarsematter)/(4g-coarsematter)$.
 
 The focal soil functions were carefully chosen to (i) represent different soil-related ecosystem services and (ii) to not be too tightly correlated with each other. Plant root biomass is an indicator of belowground primary production and is often related to soil carbon storage (Lange et al., 2015) and soil erosion control (Gyssels et al., 2005). While soil respiration indicates microbial decomposition activity (Lange et al., 2015), soil microbial biomass is a proxy for belowground secondary production, soil enzyme and phosphorous dynamics (Hacker et al., 2015), soil nitrogen leaching (Leimer et al., 2016), and both variables are powerful predictors of soil carbon storage (Thakur et al., 2015; Lange et al., 2015) and the natural attenuation of polycyclic aromatic compounds (Bandowe et al., 2018). The percentage of water-stable soil aggregates indicates soil stability and may be an important determinant of soil erosion control and soil sustainability (Lehmann et al., 2017). Given the tight correlation between soil carbon concentrations and soil microbial biomass C (Lange et al., 2015; Eisenhauer et al., 2010), and because soil microbial biomass has been shown to be a significant predictor of many soil functions (see above), we focused on the latter in the present study.
 
-## Calculations and statistical analyses
+### Calculations and statistical analyses
 
 We report the top performing monoculture in each environment/function to explore if the same or different species performed well under different environmental conditions (Supplementary file 1). We assessed ecosystem multifunctionality with the averaging and the multiple thresholds approach (Byrnes et al., 2014). Briefly, to calculate average ecosystem multifunctionality, we standardized all functions to values ranging between 0 and 1, and then calculated the average level of ecosystem multifunctionality per plot as the mean of the four standardized functions. We are aware of the advantages and disadvantages of presenting aggregate measures of ecosystem multifunctionality (for review see Manning et al., 2018), which is why we put equal emphasis on the results based on the four single focal soil functions and show results of the multiple thresholds approach (Figure 4). To evaluate whether multiple functions are simultaneously performing at high levels, we created an index of the number of functions surpassing different thresholds in each experimental plot. This threshold reflects the percentage of the maximum observed value of each function (R package ‘multifunc’; Byrnes et al., 2014). Although we present the slope of the relationship between planted species richness and the number of functions at or above a threshold of some proportion of the maximum observed function for threshold values ranging from 1 to 99% (Figure 4a), we focused on the number of functions for four different thresholds (20%, 40%, 60%, and 80% of maximum; Figure 4b) of percentage of the maximum observed function for statistical analyses (Byrnes et al., 2014). Moreover, we determined the evenness of multiple soil functions by treating the four functions like different species and calculating evenness based on the standardized values of these functions per plot.
 
 General linear models (GLMs, type III sum of squares) were used to measure the effects of plant species richness, CO2, N, and all interactions (Supplementary file 2) on the four single soil functions, ecosystem multifunctionality (based on the averaging approach and the multiple thresholds approach for 20%, 40%, 60%, and 80%), realized plant species richness, Shannon diversity, plant community evenness and functional diversity, as well as evenness of multiple soil functions (Tables 1 and 2). The effect of CO2 was tested against the random effect of ring nested within CO2 (Supplementary file 2). This creates a caveat regarding the comparison of CO2 with species richness, because size of effects may differ due to different levels of replication. Moreover, we were not able to test for interactive effects of plant species richness and environmental change drivers against species composition effects, because species composition changed significantly over time in response to the experimental treatments (Table 2; Schmid et al., 2017). In addition, we performed sensitivity analyses by running the same statistical models for ecosystem multifunctionality without the inclusion of plant monocultures to test if plant diversity effects are solely due to that plant diversity level (Table 1), and we explored treatment effects on realized plant community Shannon diversity and evenness as well as the functional diversity of the plant community (Table 2). Moreover, we used the same statistical model with realized plant species richness on the study plots to account for potential effects of CO2 and N through changes in plant diversity. These analyses were complemented by structural equation modeling (SEM) (Grace, 2006) to explore potential direct and indirect (through plant community functional diversity and evenness of multiple soil functions) global change effects on ecosystem multifunctionality in a multivariate analysis. The model fit was determined via χ2 tests, and the initial model with all hypothesized paths was modified to achieve a good model fit (Figure 5): removal of direct paths from plant species richness to ecosystem multifunctionality and the correlation between functional diversity of the plant community and evenness of multifunctionality improved the model fit based on AIC. Modification indices were checked to explore, if additional paths, including direct effects from plant species richness to multifunctionality, would improve the model; this, however, was never the case. Furthermore, we used Pearson correlations to explore potential relationships among the different soil functions (Figure 2), and we identified the top performing plant species in monoculture for each response variable in all four environmental contexts (Supplementary file 1). GLMs were performed in SAS 9.3 (SAS Institute), correlations were run in STATISTICA 10 (Statsoft), and SEM was performed using Amos 5 (Amos Development Corporation, Crawfordville, FL).
 
-## Data accessibility
+### Data accessibility
 
 Data are provided in Supplementary file 3.

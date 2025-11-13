@@ -18,10 +18,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01vjw4z39 General Practice Centre, The Seventh Affiliated Hospital, Southern Medical University Foshan China
-2. https://ror.org/01vjw4z39 Guangdong Provincial Key Laboratory of Bone and Joint Degeneration Diseases, Department of Cell Biology, School of Basic Medical Sciences, Southern Medical University Guangzhou China
-3. https://ror.org/0050r1b65 Academy of Orthopedics, Guangdong Province, Guangdong Provincial Key Laboratory of Bone and Joint Degeneration Diseases, The Third Affiliated Hospital of Southern Medical University Guangzhou China
-4. https://ror.org/01eq10738 Department of Neurosurgery, Institute of Brain Diseases, Nanfang Hospital of Southern Medical University Guangzhou China
+1. General Practice Centre, The Seventh Affiliated Hospital, Southern Medical University Foshan China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
+2. Guangdong Provincial Key Laboratory of Bone and Joint Degeneration Diseases, Department of Cell Biology, School of Basic Medical Sciences, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
+3. Academy of Orthopedics, Guangdong Province, Guangdong Provincial Key Laboratory of Bone and Joint Degeneration Diseases, The Third Affiliated Hospital of Southern Medical University Guangzhou China ([ROR:0050r1b65](https://ror.org/0050r1b65))
+4. Department of Neurosurgery, Institute of Brain Diseases, Nanfang Hospital of Southern Medical University Guangzhou China ([ROR:01eq10738](https://ror.org/01eq10738))
 
 † Corresponding author
 
@@ -41,21 +41,45 @@ Bone metastasis is a multistage process. Long before the development of clinical
 
 ## Results
 
-## Osteocytes inhibited NSCLC cell proliferation
+### Osteocytes inhibited NSCLC cell proliferation
 
 To study the spatial distribution of NSCLC cell proliferation in bone metastasis, bone metastasis tissues of six NSCLC patients were obtained. Bone destruction was found in the presence of bone metastasis in NSCLC (Figure 1—figure supplement 1a). Surprisingly, immunohistochemical staining showed that Ki-67 was much lower in tumor cells adjacent to bone tissue than in the surrounding tumor cells (Figure 1a). An intraosseous model was used to investigate the biological progression of NSCLC cells in a bone microenvironment via direct tibial implantation of A549 in nude mice. The results of biophotonic imaging, micro-computed tomography (micro-CT), and hematoxylin and eosin (H&E) staining indicated that the model was successfully established 21 days after modeling (Figure 1—figure supplement 1b–d). Consistent with the result in the clinical samples, Ki-67 expression was much lower in tumor cells adjacent to bone tissue than in the surrounding tumor cells (Figure 1b). The above results indicated that NSCLC cells adjacent to bone tissue have a much lower proliferative capacity than the surrounding tumor cells. Therefore, we hypothesized that bone tissues release some substance that inhibits tumor growth.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/89613/elife-89613-fig1-v1.jpg)
+
+**Figure 1.:** (a) Representative immunohistochemical staining and quantification of Ki-67 in bone metastasis site of patients with NSCLC. The dashed line indicates the boundary between bone and tumor. Scale bar: 50 µm. Blue arrows, low expression or negative of Ki-67. Red arrows, high expression of Ki-67. Tumor cells ≤50 μm from bone tissue were defined as adjacent cells, and those >50 μm from bone tissue were defined as surrounding cells. n=6; Student’s two-sided unpaired t test. (b) An intraosseous model of bone metastasis was used via direct implantation of NSCLC cells A549 into tibia of nude mice. Three weeks after implantation, mice were sacrificed. Representative immunohistochemical staining and quantification of Ki-67 in tibia of tumor-bearing nude mice. The dashed line indicates the boundary between bone and tumor. Scale bar: 50 µm. Blue arrows, low expression or negative of Ki-67. Red arrows, high expression of Ki-67. Tumor cells ≤50 μm from bone tissue were defined as adjacent cells, and those >50 μm from bone tissue were defined as surrounding cells. n=6; Student’s two-sided unpaired t test. (c) Schematic diagram of co-culture. (d) Cell Counting Kit-8 (CCK-8) assays were performed to evaluate the effects of MLO-Y4 cells, MC3T3-E1 or NCM460 cells on the proliferation of A549 cells in the co-culture system. n=6; one-way analysis of variance with Turkey’s multiple comparisons test. (e) EdU flow cytometry were performed to evaluate the effect of MLO-Y4 cells on the proliferation of A549 cells in the co-culture system. (f) CCK-8 assays were performed to evaluate the effect of MLO-Y4 cells on the proliferation of MC3T3-E1 cells in the co-culture system. n=6; Student’s two-sided unpaired t test. Error bars represent Mean ± SD. No significance (ns) p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89613/elife-89613-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) The representative images of hematoxylin and eosin (H&E) staining in bone metastatic sites of patients with NSCLC. Scale bar: 50 µm. (b) An intraosseous model of bone metastasis was used via direct implantation of A549 cells expressing green fluorescent protein (GFP) into tibia of mouse. Representative biophotonic images of NSCLC cells in hindlimb bones of mice. (c) Representative micro-computed tomography (micro-CT) imaging of the tibia in mice with or without bone metastasis. (d) The representative images of H&E staining of bone metastasis in tibia of mice. Scale bar: 50 µm. (e) Transwell assays were performed to evaluate the effects of MLO-Y4 cells or MC3T3-E1 cells on the migration of A549 cells in the co-culture system. Scale bar: 100 µm. n=6, one-way analysis of variance with Turkey’s multiple comparisons test. (f) Cell Counting Kit-8 (CCK-8) assays were performed to evaluate the effects of MLO-Y4 cells or MC3T3-E1 cells on the proliferation of NCI-H23 cells in the co-culture system. n=6, one-way analysis of variance with Turkey’s multiple comparisons test. (g) CCK-8 assays were performed to evaluate the effects of MLO-A5 cells on the proliferation of A549 and NCI-H23 cells in the co-culture system. n=6, Student’s two-sided unpaired t test. Error bars represent Mean ± SD. No significance (ns) p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
 To determine which type of cell inhibits proliferation after NSCLC cells have invaded bone tissue, A549 was co-cultured with MLO-Y4, MC3T3-E1, and NCM460 (as a negative control) cells for 48 hr, respectively (Figure 1c). We found that the A549 migration ability was improved after co-culture with MLO-Y4, with the promotional effect being much significantly stronger on co-culture with MC3T3-E1 (Figure 1—figure supplement 1e). More importantly, NSCLC cell proliferation was inhibited after co-culture with MLO-Y4, whereas no inhibitory effect was found after co-culture with MC3T3-E1 (Figure 1d and e and Figure 1—figure supplement 1f), indicating that it is osteocytes that inhibit NSCLC cell proliferation. Moreover, MLO-A5, another osteocyte-like cell, also inhibited the proliferation of NSCLC cells (Figure 1—figure supplement 1g). Surprisingly, MC3T3-E1 proliferation was effectively enhanced on co-culture with MLO-Y4 (Figure 1f), which indicated that the effect of osteocytes on NSCLC cell and osteoblast proliferation were different. Taken together, these data suggested that it is osteocytes that inhibit NSCLC cell proliferation in the endosteal niche.
 
-## Osteocyte sEVs inhibited NSCLC cell proliferation
+### Osteocyte sEVs inhibited NSCLC cell proliferation
 
 To investigate the mechanism by which osteocytes inhibit NSCLC cell proliferation, osteocyte-conditioned medium (CM) was separated into soluble factor (SF), large extracellular vesicles (lEVs), and small extracellular vesicles (sEVs) fractions by serial ultracentrifugation and ultrafiltration as performed previously with some modifications (Fafián-Labora et al., 2020; Figure 2a). The purified sEVs were verified by transmission electron microscopy (TEM), NanoSight analysis, and immunoblotting for protein markers (CD9, Alix, and TSG101), according to the proposal of the International Society of Extracellular Vesicles (Figure 2—figure supplement 1a–c). sEVs were labeled with PKH67 and were observed to be internalized by NSCLC cells (Figure 2—figure supplement 1d). Subsequently, we treated the NSCLC cells with fractions derived from osteocyte CM, with EV-depleted media as a negative control (fetal bovine serum [FBS] 10%). Interestingly, sEVs from osteocyte CM had a much significantly greater potential to inhibit NSCLC cell proliferation than the other groups (Figure 2—figure supplement 1e and f), whereas sEVs from osteoblast CM had no inhibitory effect on NSCLC cell proliferation (Figure 2b and c).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/89613/elife-89613-fig2-v1.jpg)
+
+**Figure 2.:** (a) Schematic diagram of serial centrifugation and concentration of culture medium. Conditioned medium (CM) was separated into soluble factor (SF), large extracellular vesicles (lEVs), and sEVs fractions, by serial ultracentrifugation and ultrafiltration. (b) Cell Counting Kit-8 (CCK-8) assays were performed to evaluate the effect of sEVs on the proliferation of NSCLC cells. n=4, two-way analysis of variance with Sidak’s multiple comparisons test. (c) EdU flow cytometry were performed to evaluate the effect of sEVs on the proliferation of NSCLC cells. (d) Western blot analysis of the typical sEVs markers CD63, TSG101, and Alix. n=3; Student’s two-sided unpaired t test. (e) The concentration of the sEVs were detected by NanoSight analysis. n=3; Student’s two-sided unpaired t test. (f) CCK-8 assays were performed to evaluate the rescue effect of GW4869 on the proliferation of NSCLC cells co-cultured with MLO-Y4 cells. n=4, two-way analysis of variance with Sidak’s multiple comparisons test. (g) EdU flow cytometry were performed to evaluate the rescue effect of GW4869 on the proliferation of NSCLC cells co-cultured with MLO-Y4 cells. Error bars represent Mean ± SD. No significance (ns) p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89613/elife-89613-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Representative transmission electron microscopy (TEM) images of small extracellular vesicles (sEVs) extracted from conditioned medium. Scale bar: 100 nm. (b) NanoSight particle analysis displays the size distribution of the sEVs. (c) Western blot analysis of the typical sEVs markers (CD9, Alix, and TSG101) of the sEVs isolated from the culture medium. (d) A549 cells were incubated with PKH67-labeled sEVs and subjected to immunofluorescence of PKH-67-labeled sEVs (green) and 4',6-diamidino-2-phenylindole (DAPI) (blue) for nuclei. Scale bar: 50 µm. (e, f) Cell Counting Kit-8 (CCK-8) assays were performed to evaluate the effects of the components of the MLO-Y4 cells culture medium on the proliferation of NSCLC cells. n=6, one-way analysis of variance with Turkey’s multiple comparisons test. (g, h) CCK-8 assays were performed to evaluate the effect of MLO-Y4-sEVs or bone marrow sEVs on the proliferation of NSCLC cells. n=6, one-way analysis of variance with Turkey’s multiple comparisons test. Error bars represent Mean ± SD. No significance (ns) p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
 To confirm the role of sEVs in osteocyte inhibition of NSCLC cell proliferation, GW4869 was used to inhibit sEVs secretion. The significant reduction of sEVs released from MLO-Y4 on GW4869 treatment was confirmed by NanoSight analysis and western blotting (Figure 2d and e). More importantly, it was found that GW4869 effectively eliminated the inhibitory effect of MLO-Y4 on NSCLC cell proliferation (Figure 2f and g), which suggested that sEVs release was required for osteocytes to inhibit NSCLC cell proliferation. Due to the complexity of the bone marrow microenvironment, we examined the effect of bone marrow-derived sEVs on NSCLC cells proliferation by Cell Counting Kit-8 (CCK-8) assay. The results showed that bone marrow-derived sEVs could promote the proliferation of NSCLC cells (Figure 2—figure supplement 1g, h). Taken together, osteocytes inhibit NSCLC cell proliferation by releasing sEVs.
 
-## Osteocyte sEVs miR-99b-3p inhibited NSCLC cell proliferation by directly targeting murine double minute2
+### Osteocyte sEVs miR-99b-3p inhibited NSCLC cell proliferation by directly targeting murine double minute2
 
 Subsequently, we performed micro-RNA (miRNA) sequencing to investigate how osteocyte-derived sEVs inhibit NSCLC cell proliferation. The miRNAs, which can be abundantly encapsulated in sEVs, are key regulators of cancer cell proliferation. To identify the specific miRNAs involved, we compared the miRNA profiles of MLO-Y4-sEVs and MC3T3-E1-sEVs, the results of which are shown as heatmaps (Figure 3—figure supplement 1a). Four of the maximally upregulated miRNAs and two of the downregulated miRNAs were validated by real-time quantitative polymerase chain reaction (qRT-PCR) (Figure 3a).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/89613/elife-89613-fig3-v1.jpg)
+
+**Figure 3.:** (a) Comparison of relative miR-365-1-5p, miR-99b-3p, miR-193a-5p, miR-125a-3p, miR-690, miR-1195, miR-122-5p, miR-140-3p content between MLO-Y4-sEVs and MC3T3-E1-sEVs by real-time quantitative polymerase chain reaction (qRT-PCR). n=3, Student’s two-sided unpaired t test. (b) NSCLC cells were transfected with miR-365a-5p, miR-30c-1-3p, miR-193a-5p, miR-99b-3p mimics, or NC (negative control) in Dulbecco’s modified eagle medium (DMEM). 48 hr later, Cell Counting Kit-8 (CCK-8) assays were performed. n=6, one-way analysis of variance with Turkey’s multiple comparisons test. (c, d) NSCLC cells were transfected with miR-99b-3p mimics, NC mimics, miR-99b-3p inhibitor, and NC inhibitor. 48 hr later, EdU flow cytometry were performed. CCK-8 assays were performed at different points in time after transfection. n=6, two-way analysis of variance with Sidak’s multiple comparisons test. (e) Schematic diagram of putative miR-99b-3p binding sites in the MDM2 3′-UTR. Green letters denote mutation sites. Relative luciferase activities of wild-type (WT) or mutant (MUT) MDM2 3′-UTRs were determined in A549 cells, which were co-transfected with the miR-99b-3p mimics or negative control. Luciferase activity was normalized using Renilla. n=4, Student’s two-sided unpaired t test. (f) MDM2 protein in A549 cells was analyzed by western blot 72 hr after transfection. n=3; one-way analysis of variance with Turkey’s multiple comparisons test. Error bars represent Mean ± SD. No significance (ns) p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89613/elife-89613-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) The heatmap shows differentially expressed miRNAs in small extracellular vesicles (sEVs) at least 1.5-fold difference between MLO-Y4-sEVs and MC3T3-E1-sEVs identified by microarray. (b) Representative in situ hybridization images showing the expression of miR-99b-3p in bone metastatic sites of patients with NSCLC. Scale bar: 50 µm.
 
 These four upregulated miRNA sequences are identically conserved in the human and mouse. To determine the effects of these miRNAs on NSCLC cell proliferation, A549 and NCI-H23 cells were transfected with miRNA mimics or negative controls. We found that both miR-99b-3p and miR-193a-5p significantly inhibited NSCLC cell proliferation 48 hr after transfection (Figure 3b), with miR-99b-3p having the most significant inhibitory effect. Inhibitors of miR-99b-3p, by contrast, promoted NSCLC cell proliferation (Figure 3c and d). These data indicated that sEVs released by osteocytes carried tumor suppressor miRNAs, such as miR-99b-3p.
 
@@ -63,19 +87,43 @@ Notably, in situ hybridization analysis demonstrated high miR-99b-3p expression 
 
 Taken together, these results suggested that miR-99b-3p derived from osteocyte sEVs directly downregulates MDM2 expression through its 3'UTR, by which osteocytes inhibited NSCLC cell proliferation.
 
-## Mechanical stimulation increased osteocyte sEVs release and enhanced the inhibitory effect of osteocytes on NSCLC cell proliferation
+### Mechanical stimulation increased osteocyte sEVs release and enhanced the inhibitory effect of osteocytes on NSCLC cell proliferation
 
 Osteocytes are thought to be the principal mechanosensors of bone by translating mechanical stimuli into molecular signals and appropriately controlling the downstream remodeling balance. Exercise has the potential to improve physical function and the quality of life in individuals with bone metastases. To determine whether osteocytes inhibit tumor proliferation by receiving mechanical stimulation, MLO-Y4 cells were subjected to sinusoidal stretching at 12% strain at a 1.25 Hz frequency for 12 hr, and sEVs were extracted from the CM. Interestingly, sEVs released from mechanically stimulated MLO-Y4 cells significantly inhibited NSCLC cell proliferation compared to static osteocyte sEVs (Figure 4a and b and Figure 4—figure supplement 1a, b). Moreover, the mechanically stimulated osteocyte sEVs had the most significant effect on the proliferation of NSCLC cells compared with SF and lEV components (Figure 4—figure supplement 1c and d). Notably, the concentration of sEVs of mechanically stimulated osteocytes was much significantly higher than that of static osteocyte sEVs (Figure 4c and d). Moreover, the miR-99b-3p content of osteocyte sEVs increased significantly after stretching (Figure 4e).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/89613/elife-89613-fig4-v1.jpg)
+
+**Figure 4.:** (a) MLO-Y4 cells were mechanically stimulated by stretching at 12% strain at a 1.25 Hz frequency for 12 hr, and sEVs were extracted from the conditioned medium. Cell Counting Kit-8 (CCK-8) assays were performed to evaluate the effect of sEVs on the proliferation of A549 cells. n=4, two-way analysis of variance with Sidak’s multiple comparisons test. (b) EdU flow cytometry were performed to evaluate the effect of sEVs on the proliferation of A549 cells. (c) Western blot analysis of the typical sEV markers CD63, TSG101, and Alix. n=3, Student’s two-sided unpaired t test. (d) Concentration of sEVs was detected by NanoSight analysis. n=3, Student’s two-sided unpaired t test. (e) Mechanical loading was applied to the tibiae with bone metastasis via direct implantation of GFP-LLC into tibia of mouse. Real-time quantitative polymerase chain reaction (qRT-PCR) identification of miR-99b-3p in sEVs. n=3, Student’s two-sided unpaired t test. An intraosseous model of bone metastasis was used via direct implantation of murine Lewis lung carcinoma (LLC) cells expressing green fluorescent protein (GFP) into tibia of mouse. Mice were subsequently randomized into tumor-bearing only (control), tibial loading, tibial loading+AntagomiR-NC, and tibial loading+AntagomiR-99b-3p groups. Four weeks later, mice were sacrificed. (f, i) Representative biophotonic images and quantification of fluorescence signal in hindlimb bones of mice. n=6, Student’s two-sided unpaired t test. (g, j) Representative immunofluorescence staining images of Ki-67 (green), DMP1 (red), and 4',6-diamidino-2-phenylindole (DAPI) (blue) in the tibia of mice with bone metastases and quantification of the number of Ki-67-positive cells in the images. The dashed line indicates the boundary between bone and tumor. Scale bars: 50 µm. n=6, Student’s two-sided unpaired t test. (h, k) Representative micro-computed tomography (micro-CT) imaging and quantitation of the tibia (bone/total volume) in mice. n=6, Student’s two-sided unpaired t test. Error bars represent Mean ± SD. No significance (ns) p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89613/elife-89613-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) MLO-Y4 cells were mechanically stimulated by stretching at 12% strain at a 1.25 Hz frequency for 12 hr, and sEVs were extracted from the conditioned medium. Cell Counting Kit-8 (CCK-8) assays were performed to evaluate the effect of sEVs on the proliferation of NCI-H23 cells. n=4, two-way analysis of variance with multiple comparisons test. (b) EdU flow cytometry were performed to evaluate the effect of sEVs on the proliferation of NCI-H23 cells. (c, d) CCK-8 assays were performed to evaluate the effects of the components of the static or mechanically stimulated MLO-Y4 cells culture medium on the proliferation of NSCLC cells. n=6; Student’s two-sided unpaired t test. (e, g) Representative immunofluorescence staining images of GFP (green), CCND3 (red), and 4',6-diamidino-2-phenylindole (DAPI) (blue) in the tibia of mice with bone metastases and quantification of the GFP and CCND3-positive cells. The dashed line indicates the boundary between bone and tumor. Scale bars: 50 µm. n=6, Student’s two-sided unpaired t test. (f, h) Representative micro-computed tomography (micro-CT) imaging and quantitation of the tibia (cortical bone thickness, trabecular bone thickness) in mice. n=6, Student’s two-sided unpaired t test. Error bars represent Mean ± SD. No significance (ns) p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
 To identify the effect of mechanical stimulation on bone metastasis of lung cancer in vivo, mechanical loading (1 N at 2 Hz for 10 min per day, 5 days per week for 4 weeks) was applied to the tibiae with bone metastasis induced by direct tibial implantation of GFP-LLC in mice. The biophotonic imaging showed that tumor growth was inhibited by mechanical loading (Figure 4f). Consistent with this, Ki-67 expression in NSCLC cells in the mechanical loading group was much lower than that of the control group (Figure 4g). Dentin matrix protein 1 (DMP1), specifically expressed in osteocytes, was used as a specific molecular marker of osteocytes in this study. Meanwhile, CCND3 and GFP were selected for co-localization staining to confirm the above phenomena, the results showed that mechanical loading could effectively inhibit tumor growth (Figure 4—figure supplement 1e). The micro-computed tomography (micro-CT) analysis of the proximal tibia showed that the mechanical loading effectively protected bone integrity and delayed its destruction in the presence of bone metastasis in NSCLC, specifically reflected in the bone volume/total volume (BV/TV), trabecular thickness (Tb.Th), and cortical thickness (Ct.Th) (Figure 4h and Figure 4—figure supplement 1f). Furthermore, we found that AntagomiR-99b-3p could effectively rescue the inhibitory effect on NSCLC cell proliferation, indicating that miR-99b-3p plays an important role in the mechanically inhibited proliferation of NSCLC cells (Figure 4i–k and Figure 4—figure supplement 1g and h). Taken together, these results suggested that mechanical stimulation enhanced the inhibitory effect of osteocytes on bone metastasis progression by increasing the release of sEVs containing proliferation-suppressive miRNA.
 
-## Moderate exercise combined with zoledronic acid effectively suppressed bone metastasis progression of NSCLC
+### Moderate exercise combined with zoledronic acid effectively suppressed bone metastasis progression of NSCLC
 
 Exercise is one of the ways in which the body senses mechanical stress, so we evaluated the effect of exercise in a mouse bone metastasis model. An intraosseous mouse model was used to investigate the biological progression of NSCLC cells in a bone microenvironment by direct tibial implantation of murine Lewis lung carcinoma (LLC) cells expressing green fluorescent protein (GFP). These mice were subsequently randomized into tumor-bearing only (control), zoledronic acid (ZA), treadmill running, and treadmill running combined with ZA (treadmill running+ZA) groups. Moderate exercise was provided by treadmill running for mice, which were involuntarily placed on a 12-lane rodent treadmill for 30 min per day at a speed of 15 cm/s for at least 5 days per week, and were euthanized after 4 weeks. Biophotonic imaging showed that tumor progression in the three treated groups was significantly slower than that in the control group, among which, the treadmill running+ZA group suppressed the growth of tumors in the tibia most effectively (Figure 5a). Tumor growth inhibition by the ZA and treadmill running groups was similar, with no statistical difference. Ki-67 protein has been widely used as a proliferation marker for tumor cells. In this study, immunofluorescence assessment results of Ki-67 and CCND3 were largely consistent with those of biophotonic imaging (Figure 5b, Figure 5—figure supplement 1). The Ki-67 and CCND3 expression level was lowest in the treadmill running+ZA group lung cancer cells in the tibia, which confirmed that in the treadmill running+ZA group, tumor growth in the tibia was suppressed most effectively. The micro-CT analysis showed that treadmill running and/or ZA protected bone integrity and delayed bone destruction in the presence of bone metastasis in NSCLC, among which, the treadmill running+ZA group displayed the strongest effect, specifically reflected in the BV/TV, Tb.Th, and Ct.Th (Figure 5c–e). The protective effect of bone integrity in the ZA and treadmill running groups was similar, with no statistical difference. Taken together, these results demonstrated that moderate exercise significantly suppressed bone metastasis progression of NSCLC. Furthermore, moderate exercise combined with ZA displayed additive effects.
 
-## Exercise preconditioning effectively suppressed bone metastasis progression of NSCLC
+![Figure 5.](https://cdn.elifesciences.org/articles/89613/elife-89613-fig5-v1.jpg)
+
+**Figure 5.:** An intraosseous model of bone metastasis was used via direct implantation of murine Lewis lung carcinoma (LLC) cells expressing green fluorescent protein (GFP) into tibia of mouse. Mice were subsequently randomized into tumor-bearing only (control), ZA, treadmill running, and treadmill running combined ZA (treadmill running+ZA) groups. Four weeks later, mice were sacrificed. (a) Representative biophotonic images and quantification of fluorescence signal in hindlimb bones of mice. n=6, one-way analysis of variance with Turkey’s multiple comparisons test. (b) Representative immunofluorescence staining images of Ki-67 (green), DMP1 (red), and 4',6-diamidino-2-phenylindole (DAPI) (blue) in the tibia of mice with bone metastases and quantification of the number of Ki-67-positive cells in the images. The dashed line indicates the boundary between bone and tumor. Scale bar: 50 µm. n=6, one-way analysis of variance with Turkey’s multiple comparisons test. (c–e) Representative micro-computed tomography (micro-CT) imaging and quantitation of the tibia (bone/total volume, cortical bone thickness, trabecular bone thickness) in mice. n=6, one-way analysis of variance with Turkey’s multiple comparisons test. Error bars represent Mean ± SD. No significance (ns) p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89613/elife-89613-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Representative immunofluorescence staining images of green fluorescent protein (GFP) (green), CCND3 (red), and 4',6-diamidino-2-phenylindole (DAPI) (blue) in the tibia of mice with bone metastases and quantification of the GFP and CCND3-positive cells. The dashed line indicates the boundary between bone and tumor. Scale bar: 50 µm. n=6, one-way analysis of variance with Turkey’s multiple comparisons test. Error bars represent Mean ± SD. No significance (ns) p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+### Exercise preconditioning effectively suppressed bone metastasis progression of NSCLC
 
 Physical exercise offers therapeutic potentials for bone metastasis. However, it remains mostly unknown whether and how exercise preconditioning affects bone metastasis progression. In this study, we examined the effects of preconditioning on bone metastasis progression in mature adult mice using treadmill running. Male, 8-week-old C57BL/6J mice were subjected to 4 weeks of treadmill exercise followed by tibial implantation of NSCLC cells. Mice were randomized into tumor-bearing only (control), treadmill running before and after tibial implantation of NSCLC cells (exercise preconditioning), and treadmill running after tibial implantation of NSCLC cells (treadmill running) groups (Figure 6—figure supplement 1a). The biophotonic imaging showed that tumor growth in the two exercise groups was significantly slower than that in the control group, with the exercise preconditioning group suppressing the tumor growth more significantly effectively than treadmill running only after tibial implantation of NSCLC cells, which were consistent in C57BL/6J and nude mice (Figure 6a). Regarding the proliferation marker, the Ki-67 and CCND3 immunofluorescence assessment results were largely consistent with those of the biophotonic imaging (Figure 6b, Figure 6—figure supplement 1b). The Ki-67 and CCND3 expression level in NSCLC cells in the exercise preconditioning group was much significantly lower than that in the other groups, which indicated that exercise preconditioning could effectively inhibit tumor growth. The micro-CT analysis showed that the exercise protected bone integrity and delayed bone destruction in the presence of bone metastasis in NSCLC, with the exercise preconditioning group having a stronger effect than the other group, specifically reflected in the BV/TV, Tb.Th, and Ct.Th (Figure 6c–e). The micro-CT analyses of C57BL/6 mice and nude mice were consistent. Therefore, these results suggested that maintaining exercise habits may effectively prevent bone metastasis of NSCLC.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/89613/elife-89613-fig6-v1.jpg)
+
+**Figure 6.:** An intraosseous model of bone metastasis was used via direct implantation of NSCLC cells (Lewis lung carcinoma [LLC] and A549) into tibia of mouse. Mice were subsequently randomized into tumor-bearing only (control), treadmill running before and after implantation of NSCLC cells into tibia (exercise preconditioning), and treadmill running after implantation of NSCLC cells into tibia (treadmill running) groups. For exercise preconditioning group, mice were subjected to 4 weeks of treadmill exercise before implantation of NSCLC cells into tibia of mouse. Four weeks after implantation, mice were sacrificed. (a) Representative biophotonic images and quantification of fluorescence signal in hindlimb bones of mice. n=6, one-way analysis of variance with Turkey’s multiple comparisons test. (b) Representative immunofluorescence staining images of Ki-67 (green), DMP1 (red), and 4',6-diamidino-2-phenylindole (DAPI) (blue) in the tibia of mice with bone metastases and quantification of the number of Ki-67-positive cells in the images. The dashed line indicates the boundary between bone and tumor. Scale bar: 50 µm. n=6, one-way analysis of variance with Turkey’s multiple comparisons test. (c–e) Representative micro-computed tomography (micro-CT) imaging and quantitation of the tibia (bone/total volume, cortical bone thickness, trabecular bone thickness) in mice. n=6, one-way analysis of variance with Turkey’s multiple comparisons test. Error bars represent Mean ± SD. No significance (ns) p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89613/elife-89613-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) An intraosseous model of bone metastasis was used via direct implantation of NSCLC cells (Lewis lung carcinoma [LLC] and A549) into tibia of mouse. Mice were subsequently randomized into tumor-bearing only (control), treadmill running before and after implantation of NSCLC cells into tibia (exercise preconditioning), and treadmill running after implantation of NSCLC cells into tibia (treadmill running) groups. For exercise preconditioning group, mice were subjected to 4 weeks of treadmill exercise before implantation of NSCLC cells into tibia of mouse. Four weeks after implantation, mice were sacrificed. (b) Representative immunofluorescence staining images of green fluorescent protein (GFP) (green), CCND3 (red), and 4',6-diamidino-2-phenylindole (DAPI) (blue) in the tibia of mice with bone metastases and quantification of the GFP and CCND3-positive cells. The dashed line indicates the boundary between bone and tumor. Scale bar: 50 µm. n=6, one-way analysis of variance with Turkey’s multiple comparisons test. Error bars represent Mean ± SD. No significance (ns) p>0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 ## Discussion
 
@@ -97,15 +145,256 @@ In conclusion, our study provides new insights into understanding the mechanism 
 
 ## Materials and methods
 
-## Patients
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>CVCL_0023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>NCI-H23</td>
+      <td>ATCC</td>
+      <td>CVCL_1547</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>MLO-Y4</td>
+      <td>ATCC</td>
+      <td>CVCL_M098</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>MLO-A5</td>
+      <td>ATCC</td>
+      <td>CVCL_0P24</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>MC3T3-E1</td>
+      <td>ATCC</td>
+      <td>CVCL_0409</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>LLC</td>
+      <td>ATCC</td>
+      <td>CVCL_4358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>NCM460</td>
+      <td>ATCC</td>
+      <td>CVCL_0460</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD63 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab193349</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TSG101 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab83</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ALIX (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab76608</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Actin(Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>4970S</td>
+      <td>1:4000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH(Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2118</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MDM2(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>66511-1-IG</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ki-67(Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>9129</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DMP1(Sheep polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>AF4386</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP(Mouse monoclonal)</td>
+      <td>ABclonal</td>
+      <td>AE012</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CCND3(Rabbit polyclonal)</td>
+      <td>Bioss</td>
+      <td>bs-0660R</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cel-miR-39-3p_F</td>
+      <td>Vazyme</td>
+      <td>qRT-PCR Forward primer</td>
+      <td>5'-GCGTCACCGGGTGTAAATC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mmu-miR-365-1-5p_F</td>
+      <td>Vazyme</td>
+      <td>qRT-PCR Forward primer</td>
+      <td>5'-AGGGACTTTTGGGGGCA-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mmu-miR-99b-3p_F</td>
+      <td>Vazyme</td>
+      <td>qRT-PCR Forward primer</td>
+      <td>5'-GCGCAAGCTCGTGTCTGTG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mmu-miR-193a-5p_F</td>
+      <td>Vazyme</td>
+      <td>qRT-PCR Forward primer</td>
+      <td>5'-TGGGTCTTTGCGGGCA-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mmu-miR-125a-3p_F</td>
+      <td>Vazyme</td>
+      <td>qRT-PCR Forward primer</td>
+      <td>5'-CGCGACAGGTGAGGTTCTTG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mmu-miR-690_F</td>
+      <td>Vazyme</td>
+      <td>qRT-PCR Forward primer</td>
+      <td>5'-GCGAAAGGCTAGGCTCACA-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mmu-miR-1195_F</td>
+      <td>Vazyme</td>
+      <td>qRT-PCR Forward primer</td>
+      <td>5'-GTGAGTTCGAGGCCAGCC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mmu-miR-122-5p_F</td>
+      <td>Vazyme</td>
+      <td>qRT-PCR Forward primer</td>
+      <td>5'-CGCGTGGAGTGTGACAATGG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mmu-miR-140-3p_F</td>
+      <td>Vazyme</td>
+      <td>qRT-PCR Forward primer</td>
+      <td>5'-GCGCGTACCACAGGGTAGAA-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse primer of all miRNAs</td>
+      <td>Vazyme</td>
+      <td>qRT-PCR Reverse primer</td>
+      <td>5'-AGTGCAGGGTCCGAGGTATT-3'</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PKH67 Green Fluorescent Cell Linker Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>PKH67GL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cell-Light EdU Apollo488 In Vitro Kit</td>
+      <td>Ribobio</td>
+      <td>C10310-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>miRCURY LNA miRNA Detection Kit</td>
+      <td>Exiqon</td>
+      <td>339115</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GW4869</td>
+      <td>Sigma-Aldrich</td>
+      <td>D1692</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>Version 6.0RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Patients
 
 Lung cancer patients with a diagnosis of bone metastases (six patients, radiologically confirmed) were recruited by the Third Affiliated Hospital of Southern Medical University (Guangzhou, China) from January 2020 to January 2021. All patients were fully informed of the study, and they provided written consent prior to participation. Surgically resected bone metastatic tumor tissue was collected from all patients. The obtained bone metastatic tumor tissue was trimmed to an appropriate size and rapidly transferred to formalin solution for storage until processing. We confirm that our study was compliant with the ‘Guidance of the Ministry of Science and Technology (MOST) for the Review and Approval of Human Genetic Resources’. Ethics approval was granted by the Human Research Ethics Committee of the Third Affiliated Hospital of Southern Medical University (2019-LS-16). The study was conducted in accordance with the principles and guidelines of The Declaration of Helsinki.
 
-## Cell lines
+### Cell lines
 
 A549, LLC, NCM460, MLO-A5, and MLO-Y4 cells were purchased from the American Type Culture Collection (Rockville, MD, USA) and grown in Dulbecco’s modified eagle medium (DMEM) (Invitrogen, Waltham, MA, USA) containing 10% FBS and 1% penicillin and streptomycin. MC3T3-E1 cells were purchased from the American Type Culture Collection and were cultured in α Minimum Essential Medium (Invitrogen) with 10% FBS and 1% penicillin and streptomycin. All cell lines were mycoplasma negative and authenticated by ATCC STR profiling.
 
-## Animal models
+### Animal models
 
 All animal experimental protocols were approved by the Animal Care and Use Committee of the Southern Medical University, Guangzhou, China (SMUL2020141). C57BL/6 and nude athymic mice were obtained from the Experimental Animal Center of the Southern Medical University in Guangzhou, China. Animal care was in accordance with the guidelines of the US National Institutes of Health and the Chinese National Institute of Health. All surgical interventions were performed under anesthesia with a mixture of 13.3% urethane and 0.5% chloralose (0.65 ml/100 g body weight). All efforts were made to reduce the number of animals used and to minimize animal discomfort. Animals were randomly grouped in all experiments, and the names of the groups were concealed until statistical analysis was completed.
 
@@ -115,23 +404,23 @@ For ZA experiments, starting on day 3 after lung cancer cell transplantation, mi
 
 We examined the effects of preconditioning on bone metastasis progression in mature adult mice using treadmill running. Male 8-week-old C57BL/6J mice were subjected to 4 weeks of treadmill exercise followed by tibial implantation of NSCLC cells.
 
-## Lung cancer cell preparation and in situ injection
+### Lung cancer cell preparation and in situ injection
 
 We used clones derived from the GFP-tagged LLC cells and A549 cells. The cells were maintained in DMEM containing 10% FBS and 0.1 mg/ml penicillin-streptomycin at 37°C under 5–8% CO2. Cells were passaged at 80–90% confluence and re-plated at a 1:10 dilution, which was approximately every 72 hr. Before in situ injection, cells were trypsinized at 80–90% confluence with 0.15% trypsin/ethylene diamine tetraacetic acid (EDTA) (0.5% Gibco trypsin EDTA diluted 1:2 in PBS). Cells were immediately removed from the plate with 10 ml ice-cold DMEM containing 10% FBS, pipetted into a 15 ml conical tube, and centrifuged at 200×g for 5 min. The pellet was resuspended in a 50 ml conical tube in 25 ml ice-cold PBS (without Ca or Mg) and counted. This was centrifuged to re-pellet, and finally resuspended at 25×104 cells/10 μl in ice-cold PBS.
 
 The mice were anesthetized using a mixture of 13.3% urethane and 0.5% chloralose (0.65 ml/100 g body weight). Both legs were cleaned with 10% povidone/iodine swab/solution, followed by ethanol, repeated twice. The skin was wetted with 70% ethanol to increase visibility of the underlying patellar ligament, which should be visible as a distinct, thick, white line. While firmly grasping the ankle/leg of the mouse, a 28 g ½ needle was inserted under the patella, through the middle of patellar ligament, and into the anterior intercondylar area in the top of the tibia. A gentle, lateral movement of the needle was applied to ensure it was in tibia and passed through the growth plate. The plunger was slowly depressed to inject 10 μl of cell solution. After 3 min, the needle was slowly extracted. The treated mice were kept on a heating pad until revived.
 
-## Mechanical stress stimulation of MLO-Y4 cells
+### Mechanical stress stimulation of MLO-Y4 cells
 
 MLO-Y4 cells were transferred to a Biofex six-well plate (Flexcell, Burlington, NC, USA) and allowed to adhere to the membrane until they attained 90% confluence. The cells were subjected to sinusoidal stretching (Flexcell) at 12% strain and 1.25 Hz frequency for 12 hr. Experiments were performed at 37°C under 5% CO2. Following 48 hr of stretching, the CM (or control medium) was collected for sEVs extraction.
 
-## Biophoton imaging and micro-CT imaging
+### Biophoton imaging and micro-CT imaging
 
 Tumor-bearing mice were euthanized 30 days after tumor cell injection, and their hindlimb bones were imaged by biophotonics. Fluorescence imaging for GFP-labeled tumor cells in these bones was performed using the optical imaging system, Fx Pro (Bruker BioSpin MRI GmbH, Ettlingen, Germany). For anatomical orientation, a white light/grayscale picture was performed and used with the fluorescent signal (Cy3.5: excitation = 570 nm; emission = 620 nm). For data analysis, molecular imaging software 7.1.3 (Bruker BioSpin MRI GmbH) was used. Regions of interest (ROIs) were defined around the bone and analyzed compared to the background of PBS injection to calculate the signal to noise ratio.
 
 Micro-CT was performed using the Skyscan 1172 (Bruker-MicroCT, Kontich, Belgium). The X-ray tube settings were 80 kV and 500 µA and images were acquired at the highest resolution without charge-coupled device binning, resulting in a voxel size of 9.44 µm. A 0.66° rotation step through a 195° angular range with 6500 ms exposure was used. After processing with a three-dimensional Gaussian filter to reduce noise, the ROIs were manually segmented such that they corresponded to the cortical and trabecular bone regions. Cortical ROIs comprised 470 µm thick regions (50 slices, 9.4 µm thickness per slice) located 3 mm distal to the growth plate, while 300 µm thick trabecular sections began 0.27 mm distal to the growth plate.
 
-## Histological analysis, immunohistochemistry, and immunofluorescence staining
+### Histological analysis, immunohistochemistry, and immunofluorescence staining
 
 Bone samples were fixed in 4% paraformaldehyde in PBS and decalcified in a 10% EDTA solution. They were subsequently dehydrated through a series of graded alcohols, cleared in xylene, and embedded in paraffin. Sagittal sections of 2–5 µm were prepared for histological analyses. Following deparaffinization and rehydration, H&E staining were performed on the tissue sections. The tissue sections were imaged using an FSX100 microscope (Olympus, Tokyo, Japan).
 
@@ -139,58 +428,58 @@ For immunohistochemistry, sections were incubated in 10 mM citrate buffer (pH 6.
 
 For immunofluorescence, we incubated primary antibodies that recognized Ki-67 (Cell Signaling Technology, cat. #: 9129, 1:200), DMP1 (R&D Systems, Minneapolis, MN, USA, cat. #: AF4386, 1:100), GFP (ABclonal, Wuhan, China, cat. #: AE012, 1:100), and CCND3 (Bioss, Woburn, MA, USA, cat. #: bs-0660R, 1:100) overnight at 4°C. For secondary reactions, species-matched Alexa Fluor 488- and Alexa Fluor 594-secondary antibodies were used (1:500 in 1% BSA, 1 hr) at 37°C in the dark. The secondary antibodies for immunofluorescence staining were goat anti-rabbit Alexa Fluor 488 (Invitrogen, cat, #: A-11008) and donkey anti-Sheep Alexa Fluor 594 (Invitrogen, cat. #: A-11016). The sections were mounted with 4',6-diamidino-2-phenylindole (DAPI) (Thermo Fisher, Waltham, MA, USA) before imaging and we examined more than five different microscopic images (per section) under a confocal laser scanning microscope (Olympus, Tokyo, Japan).
 
-## In situ hybridization
+### In situ hybridization
 
 In situ hybridization was performed to determine the expression of miR-99b-3p using miRCURY LNA miRNA Detection, Optimization Kit 2 (miR-99b-3p) (Exiqon, Vedbæk, Denmark), according to the manufacturer’s protocol. Sections were serially cut to 4 µm thicknesses, the tissues were subjected to pepsin (1.3 mg/ml, Sigma-Aldrich) for 30 min. After washing in PBS, the slides were submerged in 99.7% ethanol and air-dried. Slides were hybridized with 40 nM miR-99b-3p in an incubation chamber at 37°C for 16–18 hr, followed by stringent washes with saline-sodium citrate buffer at 37°C. For immunodetection, slides were blocked with digoxigenin blocking reagent (Roche, Mannheim, Germany) in maleic acid buffer containing 2% sheep serum at ambient temperature for 60 min and then incubated with sheep anti-digoxigenin conjugated to ALP (diluted 1:800 in blocking reagent) at ambient temperature for 60 min, resulting in dark-blue staining. The NBT/BCIP reaction mixture was incubated within a humidified chamber at 37°C for 2 hr and the reaction was stopped with KTBT buffer, and then washed in PBS three times, dehydrated, and mounted for microscopy.
 
-## Western blot analysis
+### Western blot analysis
 
 Cells and sEVs were lysed with 2% sodium dodecyl sulfonate (SDS), 2 M urea, 10% glycerol, 10 mM Tris-HCl (pH 6.8), 10 mM dithiothreitol, and 1 mM phenylmethylsulfonyl fluoride. The lysates were separated by SDS-polyacrylamide gel electrophoresis and blocked with BSA. Following blotting onto a nitrocellulose membrane (Bio-Rad Laboratories, Hercules, CA, USA), the membrane was incubated with primary antibodies that recognized TSG101 (Abcam, Cambridge, UK, cat. #: ab83, 1:1000), CD63 (Abcam, cat. #: ab193349, 1:1,00), CD9 (Abcam, cat. #: ab223052, 1:1000), Alix (Abcam, cat. #: ab76608, 1:1000), β-actin (Cell Signaling Technology, cat. #: 4970S, 1:4000), MDM2 (Proteintech, Wuhan, China cat. #: 66511-1-IG, 1:1000), and GAPDH (Cell Signaling Technology, cat. #: 2118, 1:5000) overnight at 4°C. Secondary antibodies for western blot were anti-rabbit IgG (cat. #: 7074, dilution 1:2000) from Cell Signaling Technology and anti-mouse IgG (cat. #: A9044, dilution 1:2000) from Sigma-Aldrich (1 hr at 37°C). The membrane was analyzed using specific antibodies and visualized using an enhanced chemiluminescence 50 kit (Amersham Biosciences, Piscataway, NJ, USA).
 
-## Transwell assay
+### Transwell assay
 
 The migration capacity of cancer cells was determined using a 24-well plate, Transwell chambers (Thermo Fisher) with an 8 μm pore size, and Matrigel (100 μg/ml). Approximately 5×104 cells in 200 μl serum-free DMEM were plated in the upper chambers, and 800 μl CM was added to the lower chambers. After 48 hr, the cells that had invaded to the lower side of the membrane were stained with crystal violet. At minimum of five randomly selected images were acquired, and the mean number of stained cells was determined.
 
-## Luciferase assays
+### Luciferase assays
 
 A549 cells were cultured at 1×105 cells/well in 12-well plates. The cells were co-transfected with miR-99b-3p mimic (50 nM) or miRNA mimic negative control (50 nM) and 0.2 µg psiCHECK-1-UTR. Transfection was performed using Lipofectamine 3000. After 48 hr, cells were collected and luciferase activity was determined using the DualLuciferase reporter assay system (Promega, Madison, WI, USA) with the dual luciferase assay reporter-ready luminometer (Promega). The assays were performed in triplicate.
 
-## TEM and NanoSight tracking analysis
+### TEM and NanoSight tracking analysis
 
 The morphology of the sEVs was observed by TEM. Briefly, the sEVs suspension was mixed with an equal amount of 4% paraformaldehyde. Following washing with PBS, 4% uranyl acetate was added for chemical staining of sEVs, and images were captured using a Hitachi H-7650 TEM (Hitachi, Tokyo, Japan). NanoSight tracking analysis was performed to determine the size and concentration of the isolated sEVs using the NanoSight NS500 (Malvern, Westborough, MA, USA), according to the operating instructions, without any changes. The sEVs were diluted to be within the recommended concentration range. Five 60 s videos were captured for each sample during flow mode (camera settings: slider shutter 890, slider gain 146). SEVs were diluted and loaded onto the NS500 instrument by a syringe. The videos were analyzed with the NTA 3.2 software (Malvern). All measurements were performed at room temperature.
 
-## RNA isolation
+### RNA isolation
 
 RNA was extracted from cells using the QIAzol Lysis Reagent (QIAGEN, Hilden, Germany) according to the user guidelines. Briefly, cells were collected in a reaction tube, lysed with QIAzol, and mixed with chloroform. Following centrifugation at 12,000×g for 15 min at 4°C, the upper aqueous phase was transferred to an RNeasy Mini spin column in a 2 ml collection tube and mixed with 100% ethanol. Following washing at 7500×g for 5 min at 4°C, the total RNA was collected for qRT-PCR analysis. RNA was extracted from sEVs fractions using the QIAGEN miRNeasy Mini kit (QIAGEN) according to the manufacturer’s instructions, with a final elution volume of 50 µl.
 
-## miRNA sequencing
+### miRNA sequencing
 
 Total RNA extraction from the samples was conducted using the miRNeasy Kit (QIAGEN), according to the standard operating procedures provided by the manufacturer. The quality and integrity of the total RNA were determined using the Agilent 2100 Bioanalyzer and the RNA 6000 Nano LabChip Kit (Agilent, Santa Clara, CA, USA). A sequencing RNA library was constructed by performing a 3′-end linker, a 5′-end linker, reverse transcription, amplification, cDNA library size selection, and purification steps using total RNA. Cluster generation and first stage sequencing primer hybridization were performed on the cBot of the Illumina HiSeq sequencer from Shanghai Biotechnology (Shanghai, China), according to the corresponding procedure in the cBot User Guide. Subsequently, the sequencing reagent was prepared following the Illumina User Guide and the flow cell carrying the cluster was loaded into the machine. Single-end sequencing was performed using the single-read program. The sequencing process was controlled by the data collection software provided by Illumina that performed real-time data analyses.
 
-## RT-PCR and qRT-PCR
+### RT-PCR and qRT-PCR
 
 RNA samples were quantitated and qualified using a NanoDrop analyzer (Thermo Fisher). Equal quantities (5 ng) of total RNA from each sample were used for cDNA synthesis using the PrimeScriptRT reagent kit (TaKaRa, Tokyo, Japan). The reverse transcriptions of miRNAs were performed using looped miRNA-specific RT primers for miRNAs. qRT-PCR was performed with the Step One Plus (Applied Biosystems, Carlsbad, CA, USA), using an SYBR Green I Real-Time PCR Kit (GenePharma) for miR-99b-3p. Dissociation curves were generated to ensure the specificity of each qRT-PCR. The relative expression levels of miRNAs in each sample were calculated and quantified using the 2−ΔΔCT method after normalization for expression of the positive control.
 
-## Co-culture experiments
+### Co-culture experiments
 
 Well inserts with a 0.4 mm pore size filter (BD Falcon, Franklin Lake, NJ, USA) for six-well plates were used following the manufacturer’s instructions. MLO-Y4 and MC3T3-E1 cells were seeded into the well inserts (5×105 cells/well) with DMEM. LLC, A549, and MLO-Y4 cells were also seeded into six-well plates (1×106 cells/well). After 48 hr of co-culture, cells in six-well plates were subjected to the next experiments. All co-culture experiments were conducted in DMEM with sEVs-free FBS (Life Technologies, Carlsbad, CA, USA).
 
-## Differential ultracentrifugation of several fractions from CM and sEVs isolation
+### Differential ultracentrifugation of several fractions from CM and sEVs isolation
 
 To isolate the different CM fractions, 1×106 cells were plated in a 10 cm dish (10 ml medium). After 72 hr we either separated the CM or isolated sEVs. For isolated bone marrow-derived sEVs, suspensions were obtained by flushing mouse bone marrow with medium. The supernatant was aspirated after settling, and impurities and cells from the bone marrow were removed by centrifugation (300×g for 5 min and 600×g for 10 min, subsequent steps were performed as for CM). For the dissection of the CM, whole CM (10 ml for one 10 cm dish) was collected by pipetting from the 10 cm dish into 50 ml falcon tubes, centrifuged at low speed (2000×g for 20 min) to eliminate dead cells and cellular debris prior to use, and divided into two. One half was used as whole CM, concentrated with a 10 KD ultrafiltration device (Millipore, Billerica, MA, USA) at 5000×g for 15 min and were transferred to 12 wells of a 96-well plate, while the remaining half was further processed. From the second half, lEVs were collected after a 10,000×g centrifugation step for 1 hr, washed in 15 ml PBS, and centrifuged again at 10,000×g for 1 hr. The SF was filtered through a 0.22 mm filter prior to a 100,000×g centrifugation step. The SF was collected after a 80 min 100,000×g centrifugation step and concentrated using a 10 KD ultrafiltration device (Millipore) at 5000×g for 15 min, obtaining concentrated factor. The final 100,000×g pellet (sEVs) was washed once in 15 ml PBS and resuspended in 10% EV-depleted FBS medium for the functional cell culture experiments. Each individual SF, lEVs, and sEVs fraction used were transferred to 12 wells of a 96-well plate. SEVs from 10 ml of CM were added either to 6 wells of a 96-well plate or 1 well of a 12-well plate. Media with EV-depleted serum (10% FBS) was used as a negative control in most experiments.
 
-## CCK-8 assay
+### CCK-8 assay
 
 The CCK-8 was used to determine cell viability. In total, 2×103 cells were seeded in 96-well plates and allowed to adhere overnight. Following incubation with the compounds under evaluation for 24 hr, 48 hr, 72 hr, and 96 hr (the bar chart shows the results at 72 hr), 10 μl CCK-8 dye was added to each well, and the cells were incubated for 1 hr at 37°C. Subsequently, the absorbance was determined at 450 nm (BioTek Synergy-HTX, Winooski, VT, USA).
 
-## Flow cytometry
+### Flow cytometry
 
 Approximately 10,000 cells were seeded in 12-well plates on day 1. Treatment was added on day 2, and cell proliferation was examined using a fluorescence-based cell proliferation kit (Cell-Light EdU Apollo488 In Vitro Flow Cytometry Kit, Ribobio, Guangzhou, China) on day 4. Following fluorescence labeling, the ratio of the number of fluorescently labeled cells to the total number of cells was determined by flow cytometry (Beckman, Brea, CA, USA).
 
-## SEVs labeling and cellular uptake
+### SEVs labeling and cellular uptake
 
 SEVs were labeled using the PKH67 Green Fluorescent Cell Linker Kit (Sigma-Aldrich) by following the manufacturer’s protocol. The isolated sEVs diluted in PBS was added to 0.5 ml Diluent C. Subsequently, 2 µl PKH67 dye was added and incubated for 4 min at room temperature. Two milliliters of 1% BSA/PBS was added to bind excess dye. The labeled sEVs were washed at 100,000×g for 70 min, and the sEVs pellet was suspended in PBS and used for uptake experiments. We subsequently co-cultured these PKH67 sEVs with A549. After the indicated time of co-culture, we stained the A549 with DAPI (Sigma-Aldrich) and observed them by confocal microscopy.
 
-## Statistical analysis
+### Statistical analysis
 
 Experiments were usually performed with at least three independent repeats (biological replicates) to ensure the results. All data were analyzed for statistical significance using GraphPad Prism 6.0 software (GraphPad Software, San Diego, CA, USA). The p value was determined by the Student’s t test for two-group, or one-way analysis of variance test for multiple group comparisons. It was considered indicative of statistical significance when p<0.05. All experiments were repeated a minimum of three times. Quantitative data were expressed as mean ± standard error of the mean.

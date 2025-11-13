@@ -26,7 +26,7 @@
 
 ## Abstract
 
-Decidualization of the uterine mucosa drives the maternal adaptation to invasion by the placenta. Appropriate depth of placental invasion is needed to support a healthy pregnancy; shallow invasion is associated with the development of severe preeclampsia (sPE). Maternal contribution to sPE through failed decidualization is an important determinant of placental phenotype. However, the molecular mechanism underlying the in vivo defect linking decidualization to sPE is unknown. Global RNA sequencing was applied to obtain the transcriptomic profile of endometrial biopsies collected from nonpregnant women who suffer sPE in a previous pregnancy and women who did not develop this condition. Samples were randomized in two cohorts, the training and the test set, to identify the fingerprinting encoding defective decidualization in sPE and its subsequent validation. Gene Ontology enrichment and an interaction network were performed to deepen in pathways impaired by genetic dysregulation in sPE. Finally, the main modulators of decidualization, estrogen receptor 1 ( ESR1 ) and progesterone receptor B ( PGR-B ), were assessed at the level of gene expression and protein abundance. Here, we discover the footprint encoding this decidualization defect comprising 120 genes—using global gene expression profiling in decidua from women who developed sPE in a previous pregnancy. This signature allowed us to effectively segregate samples into sPE and control groups. ESR1 and PGR were highly interconnected with the dynamic network of the defective decidualization fingerprint. ESR1 and PGR-B gene expression and protein abundance were remarkably disrupted in sPE. Thus, the transcriptomic signature of impaired decidualization implicates dysregulated hormonal signaling in the decidual endometria in women who developed sPE. These findings reveal a potential footprint that could be leveraged for a preconception or early prenatal screening of sPE risk, thus improving prevention and early treatments. This work has been supported by the grant PI19/01659 (MCIU/AEI/FEDER, UE) from the Spanish Carlos III Institute awarded to TGG. NCM was supported by the PhD program FDGENT/2019/008 from the Spanish Generalitat Valenciana. IMB was supported by the PhD program PRE2019-090770 and funding was provided by the grant RTI2018-094946-B-100 (MCIU/AEI/FEDER, UE) from the Spanish Ministry of Science and Innovation with CS as principal investigator. This research was funded partially by Igenomix S.L.
+Background:Decidualization of the uterine mucosa drives the maternal adaptation to invasion by the placenta. Appropriate depth of placental invasion is needed to support a healthy pregnancy; shallow invasion is associated with the development of severe preeclampsia (sPE). Maternal contribution to sPE through failed decidualization is an important determinant of placental phenotype. However, the molecular mechanism underlying the in vivo defect linking decidualization to sPE is unknown.Methods:Global RNA sequencing was applied to obtain the transcriptomic profile of endometrial biopsies collected from nonpregnant women who suffer sPE in a previous pregnancy and women who did not develop this condition. Samples were randomized in two cohorts, the training and the test set, to identify the fingerprinting encoding defective decidualization in sPE and its subsequent validation. Gene Ontology enrichment and an interaction network were performed to deepen in pathways impaired by genetic dysregulation in sPE. Finally, the main modulators of decidualization, estrogen receptor 1 (ESR1) and progesterone receptor B (PGR-B), were assessed at the level of gene expression and protein abundance.Results:Here, we discover the footprint encoding this decidualization defect comprising 120 genes—using global gene expression profiling in decidua from women who developed sPE in a previous pregnancy. This signature allowed us to effectively segregate samples into sPE and control groups. ESR1 and PGR were highly interconnected with the dynamic network of the defective decidualization fingerprint. ESR1 and PGR-B gene expression and protein abundance were remarkably disrupted in sPE.Conclusions:Thus, the transcriptomic signature of impaired decidualization implicates dysregulated hormonal signaling in the decidual endometria in women who developed sPE. These findings reveal a potential footprint that could be leveraged for a preconception or early prenatal screening of sPE risk, thus improving prevention and early treatments.Funding:This work has been supported by the grant PI19/01659 (MCIU/AEI/FEDER, UE) from the Spanish Carlos III Institute awarded to TGG. NCM was supported by the PhD program FDGENT/2019/008 from the Spanish Generalitat Valenciana. IMB was supported by the PhD program PRE2019-090770 and funding was provided by the grant RTI2018-094946-B-100 (MCIU/AEI/FEDER, UE) from the Spanish Ministry of Science and Innovation with CS as principal investigator. This research was funded partially by Igenomix S.L.
 
 ## Introduction
 
@@ -40,73 +40,252 @@ In the present study, we aimed to discern the preconception decidual transcripto
 
 ## Methods
 
-## Study design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Endometrial biopsies</td>
+      <td>University and Polytechnic La Fe Hospital (Valencia, Spain)</td>
+      <td></td>
+      <td>Freshly isolated from human donors</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-progesterone receptor antibody [YR85] (rabbit monoclonal anti-human)</td>
+      <td>Abcam</td>
+      <td>Cat: AB32085RRID:AB_777452</td>
+      <td>Dilution: (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-estrogen receptor alpha antibody (mouse monoclonal antibody)</td>
+      <td>Santa Cruz</td>
+      <td>Cat: sc-8002RRID:AB_627558</td>
+      <td>Dilution: (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG H&amp;L (Alexa Fluor 488) (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat: ab150077RRID:AB_2630356</td>
+      <td>Dilution: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG (H + L) Cro Alexa Fluor 488 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat: A-11001RRID:AB_2534069</td>
+      <td>Dilution: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RT-qPCR primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAsymphony RNA Kit</td>
+      <td>Qiagen</td>
+      <td>931636</td>
+      <td>Global RNA-seq library preparation</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Illumina TruSeq Stranded mRNA sample prep kit</td>
+      <td>Illumina</td>
+      <td>20020595</td>
+      <td>Global RNA-seq library preparation</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Kapa SYBR fast qPCR kit</td>
+      <td>Kapa Biosystems Inc</td>
+      <td>KK4602</td>
+      <td>Global RNA-seq library preparation</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq RNA CD Index Plate (96 indexes, 96 samples)</td>
+      <td>Illumina</td>
+      <td>20019792</td>
+      <td>RNA sequencing</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NextSeq 500/550 cartridge of 150 cycles</td>
+      <td>Illumina</td>
+      <td>FC-404-2002</td>
+      <td>RNA sequencing</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript VILO cDNA Synthesis Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11754250</td>
+      <td>RT-qPCR. cDNA preparation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>Dobin et al., 2013</td>
+      <td>URL: http://code.google.com/p/rna-star/RRID:SCR_004463</td>
+      <td>RNA-seq analysisRead alignerVersion 2.4.2a</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td></td>
+      <td>URL: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/RRID:SCR_014583</td>
+      <td>RNA-seq analysisQuality of FASTQ file determinationVersion 0.11.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAMtools</td>
+      <td>Li et al., 2009</td>
+      <td>URL: http://htslib.org/RRID:SCR_002105</td>
+      <td>RNA-seq analysisSAM and BAM manipulation files Version 1.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HTSeq</td>
+      <td>Anders et al., 2015</td>
+      <td>URL: http://htseq.readthedocs.io/en/release_0.9.1/RRID:SCR_005514</td>
+      <td>RNA-seq analysisTo count the number of reads per geneVersion 0.6.1p1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BEDtools</td>
+      <td>Quinlan and Hall, 2010</td>
+      <td>URL: https://github.com/arq5x/bedtools2RRID:SCR_006646</td>
+      <td>RNA-seq analysisTo obtain gene coverageVersion 2.17.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR</td>
+      <td>Robinson et al., 2010</td>
+      <td>URL: http://bioconductor.org/packages/edgeR/RRID:SCR_012802</td>
+      <td>RNA-seq analysisTo analyze differentially expressed genesVersion 3.24.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>String</td>
+      <td>Jensen et al., 2009</td>
+      <td>URL: http://string.embl.de/RRID:SCR_005223</td>
+      <td>Interaction Network.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape</td>
+      <td>Shannon et al., 2003</td>
+      <td>URL: http://cytoscape.orgSCR_003032</td>
+      <td>Interaction Network</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CytoHubba</td>
+      <td>Chin et al., 2014</td>
+      <td>URL: http://apps.cytoscape.org/apps/cytohubbaRRID:SCR_017677</td>
+      <td>Interaction Network</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Custom scripts</td>
+      <td></td>
+      <td>URL: https://github.com/mclemente-igenomix/garrido_et_al_2021</td>
+      <td>The specific script to run RNA-seq analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study design
 
 A total of 40 non-pregnant women who experienced a previous pregnancy were enrolled in this study for endometrial RNA-sequencing analysis. Endometrial samples were obtained for research purposes during late secretory phase in 24 women who had developed sPE in a previous pregnancy and in 16 women with no history of sPE with full term (n = 8) and preterm pregnancies (n = 8) as controls. sPE was clinically defined based on elevated blood pressure (systolic ≥160 or diastolic of ≥100 mm Hg) or thrombocytopenia, impaired liver function, progressive renal insufficiency, pulmonary edema, or the onset of cerebral or visual disturbances. Endometrial biopsies were processed to obtain RNA and then converted to cDNA for library generation to perform next-generation sequencing. The experimental design was based on a stratified random sampling with a 70:30 proportion in two cohorts: a training (n = 29) and validation (n = 11) set of samples. The training set of samples was analyzed by RNA-seq to identify the global transcriptomic profiling changes between control (n = 12) and sPE (n = 17) samples. Selection criteria were applied to define a transcriptomic fingerprinting associated with DD detected in sPE. Finally, targeted analysis of the DD signature was validated in the test set composed of controls (n = 4) and sPE (n = 7).
 
-## Human donors
+### Human donors
 
 Endometrial samples were collected from women aged 18–42 without any medical condition who had been pregnant 1–8 years earlier. All participants had regular menstrual cycles (26–32 days) with no underlying gynecological pathological conditions and had not received hormonal therapy in the 3 months preceding sample collection. After the inclusion criteria were applied, endometrial biopsies were obtained by pipelle catheter (Genetics Hamont-Achel, Belgium) under sterile conditions in the late secretory phase (cycle days 22–32). Specimens were kept in preservation solution until processing. Maternal and neonatal characteristics of women with sPE and controls are summarized in Supplementary file 1. Biological and technical variables for each donor were considered to discard confounding effects on the transcriptomic profile (Supplementary file 2). This study was approved by the Clinical Research Ethics Committee of University and Polytechnic La Fe Hospital (Valencia, Spain; 2011/0383), and written informed consent was obtained from all participants before tissue collection and all samples were anonymized.
 
-## RNA extraction
+### RNA extraction
 
 Total RNA from endometrial biopsies was isolated using QIAsymphony RNA kit (Qiagen, Hilden, Germany) following the manufacturer’s protocol. RNA concentrations were quantified using a Multiskan GO spectrophotometer (Thermo Fisher Scientific, Waltham, USA) at a wavelength of 260 nm. Integrity of the total RNA samples was evaluated by the RNA integrity number (RIN) and DV200 metrics using an Agilent high-sensitivity RNA ScreenTape in a 4200 TapeStation system (Agilent Technologies Inc, Santa Clara, CA). Samples used for the global RNA-seq showed RIN values ranging from 4.9 to 9.2.
 
-## Global RNA-seq library preparation and transcriptome sequencing
+### Global RNA-seq library preparation and transcriptome sequencing
 
 cDNA libraries from total RNA samples (n = 40) were prepared using an Illumina TruSeq Stranded mRNA sample prep kit (Illumina, San Diego, CA) following a balanced batch-group design. 3 µg of total RNA were used as the RNA input according to the manufacturer’s protocol. mRNAs were isolated from the total RNAs by purifying the poly-A containing molecules using poly-T oligo attached to magnetic beads. The RNA fragmentation, first- and second-strand cDNA syntheses, end repair, single ‘A’ base addition, adaptor ligation, and PCR amplification were performed according to the manufacturer’s protocol. The average size of the cDNA libraries was approximately 350 bp (including the adapters). cDNA libraries were quantified using an Agilent D1000 ScreenTape in a 4200 TapeStation system (Agilent Technologies Inc). Libraries were normalized to 10 nM and pooled in equal volumes. The pool concentration was quantified by qPCR using the KAPA Library Quantification Kit (Kapa Biosystems Inc) before sequencing in a NextSeq 500/550 cartridge of 150 cycles (Illumina). Indexed and pooled samples were sequenced 150 bp paired-end reads by on the Illumina NextSeq 500/550 platform according to the Illumina protocol.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 Reads were mapped to the hg19 human genome transcriptome using the STAR (version 2.4.2 a) read aligner (Dobin et al., 2013). FastQC (version 0.11.2) was used to determine the quality of FASTQ files. The manipulation of SAM and BAM files was done with the software SAMtools (version 1.1) (Li et al., 2009). To count the number of reads that could be assigned to each gene, we used HTSeq (version 0.6.1p1; Anders et al., 2015) and BEDtools software (version 2.17.0; Quinlan and Hall, 2010) to obtain gene coverage and work with bedFiles. Quality control filters in each program were used following the software package recommendations, and reads were filtered by mapping quality greater than 90%. Transcriptomic data were deposited in the Gene Expression Omnibus database (accession number GSE172381). The Bioconductor package edgeR (version 3.24.3; Robinson et al., 2010) was used to analyze differentially expressed genes (DEGs). The trimmed mean of M-values normalization method was applied to our gene expression values. The glmTreat function was used to find DEGs between groups. The p-value adjustment method was false discovery rate (FDR) with a cutoff of 0.05 (FDR < 0.05) and the fold-change (FC) threshold was 1.2. edgeR analysis was carried out in R version 3.5.1. A volcano plot was created to visualize DEGs. Custom scripts are available on GitHub at link https://github.com/mclemente-igenomix/garrido_et_al_2021.
 
-## Transcriptomic fingerprinting definition and validation
+### Transcriptomic fingerprinting definition and validation
 
 Genes with assigned EntrezID with an FDR cutoff of 0.05 and an expression ≥1.4-fold higher in the sPE vs. control training set samples were selected to define a fingerprint associated with DD in sPE. Targeted analysis of fingerprinting genes was performed using the validation set of samples. PCA and unsupervised hierarchical clustering with a Canberra distance based on gene signature were performed comparing sPE to control specimens. Custom scripts are available on GitHub at https://github.com/mclemente-igenomix/garrido_et_al_2021.
 
-## Enrichment analysis
+### Enrichment analysis
 
 Gene Ontology (GO) analyses were conducted to obtain biological processes using the goana function in edgeR (Robinson et al., 2010). The input genes were those 120 included in the fingerprinting (Figure 3—source data 1). The p-value adjustment method was FDR with a cutoff of 0.05 (FDR < 0.05; Figure 3—source data 2). Custom scripts are available on GitHub at https://github.com/mclemente-igenomix/garrido_et_al_2021.
 
-## Interaction network
+### Interaction network
 
 An interaction network between proteins encoded by DD fingerprinting genes was created using the functional analysis suite String (Jensen et al., 2009). To construct the network, the interactions included were from curated databases and included experimentally determined and predicted interactions, textmining, co-expression information. The clustering algorithm k-means was applied based on the distance matrix obtained from the String global scores. The network was visualized using Cytoscape software (Shannon et al., 2003). Hub genes were extracted using the maximal clique centrality (MCC) and maximum neighborhood component (MNC) of the cytoHubba plugin (Chin et al., 2014). The overlapping genes identified by the two topological analysis methods were selected as the hub genes.
 
-## qRT-PCR
+### qRT-PCR
 
 Gene expression of IHH, MSX2, ESR1, and PGR isoforms in the endometrial tissue from a subset of women with prior sPE (n = 13) compared to controls (n = 9) was obtained by RT-qPCR. Specific primers for each gene are described in Supplementary file 3. cDNA was generated from 400 ng of RNA using the SuperScript VILO cDNA Synthesis Kit (Thermo Fisher Scientific). Template cDNA was diluted 5 in 20 and 1 µL was used in each PCR. Real-time PCR was performed in duplicate in 10 µL using commercially validated Kapa SYBR fast qPCR kit (Kapa Biosystems Inc, Basilea, Switzerland) and the Lightcycler 480 (Roche Molecular Systems, Inc, Pleasanton, CA) detection system. Samples were run in duplicate along with appropriate controls (i.e., no template, no RT). Cycling conditions were as follows: 95°C for 3 min, 40 cycles of 95°C for 10 s, 60°C for 20 s, and 72°C for 1 s. A melting curve was done following the product specifications. Data were analyzed using the comparative Ct method (2−∆∆CT). Data were normalized to the housekeeping gene β-actin, and changes in gene expression were calculated using the ΔΔCT method with the control group used as the calibrator; values are illustrated relative to median in the control group. The relative expression of PGR-A mRNA was calculated by subtracting the relative expression of PGR-B mRNA from that of PGR total.
 
-## Immunofluorescence of tissue sections
+### Immunofluorescence of tissue sections
 
 Endometrial tissue samples were fixed in 4% paraformaldehyde and preserved in paraffin-embedded blocks. For immunostaining, tissue sections were deparaffinated and rehydrated. Antigen retrieval was performed with buffer citrate 1× at 100°C for 10 min. Then, non-specific reactivity was blocked by incubation in 5% BSA/0.1% PBS-Tween 20 at room temperature for 30 min. Sections were incubated at room temperature for 1.5 hr with primary antibodies (1:50 rabbit monoclonal anti-human progesterone receptor, Abcam, Cambridge, UK) and 1:50 mouse monoclonal anti-human estrogen receptor 1 (Santa Cruz Biotechnology, CA) diluted in 3% BSA/0.1% PBS-Tween 20. Then, slides were washed two times for 10 min with 0.1% PBS-Tween 20 before they were incubated for 1 hr at room temperature with AlexaFluor-conjugated secondary antibodies diluted in 3% BSA/0.1% PBS-Tween 20 (1:1000). Finally, slides were washed two times in 0.1% PBS-Tween 20. To visualize nuclei, 4′,6-diamidino-2-phenylindole at 400 ng/µL was used. Tissue sections were examined using a EVOS M5000 microscope.
 
-## Statistical analysis
+### Statistical analysis
 
 Clinical data are expressed as mean ± standard error mean (SEM). Clinical data were evaluated by Wilcoxon test for comparisons between sPE and control samples. Statistical significance was set at p<0.05. Differential expression analysis was performed using the R package edgeR.
 
 ## Results
 
-## Endometrial transcriptome alterations during decidualization in sPE
+### Endometrial transcriptome alterations during decidualization in sPE
 
 To identify transcriptomic alterations during decidualization in sPE, we applied global RNA sequencing (RNA-seq) to endometrial biopsies obtained in the late secretory phase from women who developed sPE in a previous pregnancy (n = 24) and controls who never had sPE (n = 16) (GSE172381). Clinical maternal and neonatal characteristics of the participants are summarized in Supplementary file 1. After quality trimming and filtering, reads were aligned to the reference genome hg19. The 40 samples produced 56,638 raw sequencing genes; after normalization, 18,301 genes were included in the analysis. Biological and technical variables for each donor were considered to discard confounding effects on the transcriptomic profile (Supplementary file 2). Controls included women who had a preterm birth with no signs of infection (n = 8) and women who gave birth at full term with normal obstetric outcomes (n = 8). Transcriptomic profiles were compared by differential expression analysis, revealing no significant changes in the endometrial transcriptome between preterm and term controls (FDR ≥ 0.05; Figure 1—figure supplement 1A). Principal component analysis (PCA) supported that there was no underlying pattern of distribution depending on gestational age at delivery (Figure 1—figure supplement 1B). Once we ruled out bias on controls, we randomly split samples into two cohorts, a training set (70%) and a test set (30%) (Figure 1A). Random sampling occurred within each class (sPE and controls), so overall class distribution of the data was preserved. The training set (n = 29) was used for the identification of molecular fingerprinting encoding DD in sPE, while the test set (n = 11) was used to confirm our findings. All samples in both cohorts were processed and sequenced in the same manner.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70753/elife-70753-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic drawing of the study design used to identify and validate defective decidualization (DD) fingerprinting in sPE. (B) Statistical significance (-log10 FDR) vs. gene expression log2 fold change (FC) is displayed as a volcano plot of global RNA-seq results. Label indicates: downregulated in sPE (blue dots); upregulated in sPE (red dots); not significant genes (grey dots). (C) Heatmap showing the 25 most upregulated and downregulated genes (total = 593; Figure 1—source data 1) of control vs. sPE samples. See also Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70753/elife-70753-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Volcano plot showing there were no significant differentially expressed genes (DEGs) between controls according to gestational age at delivery. Labels show the two criteria that we used to define the DEGs: p-value adjusted (false discovery rate [FDR] < 0.05) and fold-change (FC ≥ 1.2). Legend: not significant (FDR ≥ 0.05). (B) Principal component analysis (PCA) based on 18,476 genes after filtering out lowly expressed genes does not demonstrate clustering based on gestational age.
+
 Transcriptional analysis in the training set was performed by comparing gene expression patterns in sPE (n = 17) and controls (n = 12). This comparison revealed 593 DEGs based on FDR < 0.05 and with at least 1.2 FC between groups (FC ≥ 1.2). DEGs are shown in the volcano plot through yellow dots (Figure 1B). A total of 155 upregulated and 438 downregulated DEGs were identified as being associated with DD in sPE (Figure 1C; complete list in Figure 1—source data 1). Downregulated transcripts include those involved in decidualization, such as MMP3, PRL, IL-6, and IHH; and genes associated with signaling (e.g., NR4A3 and IL8), growth factors (e.g., FGF1 and FGF7), angiogenesis (e.g., EDN2 and TMEM215), and immune response (CCL20, CXCL3, and IGHG1). Upregulated genes are involved in amino acid metabolic/catabolic processes (IDO2 and CAPN3), transport, and oxidoreductase activity.
 
-## Comparison of DD transcriptomics in previous sPE in vivo vs. in vitro
+### Comparison of DD transcriptomics in previous sPE in vivo vs. in vitro
 
 We previously described DD in human endometrial stromal cells (hESCs) isolated from women with previous sPE compared to women with normal obstetric outcomes, but this finding was restricted to the stromal cell population using an in vitro decidualization cell culture model (Garrido-Gomez et al., 2017). Here, we compared DD overlapping between DEGs reported in vitro (n = 129) vs. in vivo (n = 593) in sPE compared to control women. Nine genes were overlapped between the two datasets (Figure 2A); one gene was upregulated (ERP27), and eight genes were downregulated (e.g., ISM1, MEST, MFAP2, and REEP2). The expression pattern of common genes is presented as a box plot using counts per million, corroborating significant differential expression between sPE and control (Figure 2B). Recently, in vivo transcriptomics of endometrium at single-cell resolution across the menstrual cycle were characterized (Wang et al., 2020). Transcriptome profiles of stromal fibroblasts from the late secretory phase allowed the identification of deregulated genes in sPE as associated to hESC. We found that 263 genes from the 593 DEGs in sPE vs. control are expressed by hESC (Figure 2C). Taken together, the in vivo assessment provides a broad spectrum of dysregulated transcripts comparing with previous in vitro findings, which includes a high concordance with in vivo hESC genes.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/70753/elife-70753-fig2-v1.jpg)
 
-**Figure 2.:** (A) Common genes between previous in vitro (left) and current in vivo approaches analyzing decidualization (right). Nine genes overlap in both approaches. (B) Box plot showing the average expression of the nine common genes between control (blue boxes) and severe preeclampsia (sPE) (orange boxes) samples. (C) From the 593 differentially expressed genes (DEGs) obtained by global RNA-seq, a subset of 263 DEGs were identified as genes with a human endometrial stromal cell (hESC) origin using the scRNA-seq data published by Wang et al., 2020. See also Figure 2—source data 1.Figure 2—source data 1.
+**Figure 2.:** (A) Common genes between previous in vitro (left) and current in vivo approaches analyzing decidualization (right). Nine genes overlap in both approaches. (B) Box plot showing the average expression of the nine common genes between control (blue boxes) and severe preeclampsia (sPE) (orange boxes) samples. (C) From the 593 differentially expressed genes (DEGs) obtained by global RNA-seq, a subset of 263 DEGs were identified as genes with a human endometrial stromal cell (hESC) origin using the scRNA-seq data published by Wang et al., 2020. See also Figure 2—source data 1.
 
-## Identification of the fingerprint encoding human endometrial DD
+### Identification of the fingerprint encoding human endometrial DD
 
 To formulate the transcriptomic signature that encodes DD detected in sPE in vivo, we selected genes with significant dysregulation (FDR < 0.05) and at least 1.4-fold increase (FC ≥1.4) between sPE and control with assigned EntrezID. A volcano plot shows 120 DEGs meeting these criteria included in the final DD signature (Figure 3A; complete list of genes is included in Figure 3—source data 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/70753/elife-70753-fig3-v1.jpg)
 
-**Figure 3.:** (A) Volcano plot showing downregulated (blue) and upregulated (red) genes in sPE from the DD fingerprint. Each point represents one gene; gray points are the rest of the genes obtained in the global RNA-seq analysis. (B) The three most highly downregulated biological process for each major category (red, cell cycle; yellow, DNA damage response; green, cell signaling; blue, cellular response; gray, cell motility; purple, extracellular matrix; pink, immune response; brown, reproductive process). Enrichment index was calculated by -log(p-value). (C) Clustering of DD fingerprint genes shown for reproductive process, response to bacterial molecules, extracellular matrix organization, regulation of receptor signaling, and response to hormones. See also Figure 3—source data 1 and Figure 3—source data 2.Figure 3—source data 1.Figure 3—source data 2.
+**Figure 3.:** (A) Volcano plot showing downregulated (blue) and upregulated (red) genes in sPE from the DD fingerprint. Each point represents one gene; gray points are the rest of the genes obtained in the global RNA-seq analysis. (B) The three most highly downregulated biological process for each major category (red, cell cycle; yellow, DNA damage response; green, cell signaling; blue, cellular response; gray, cell motility; purple, extracellular matrix; pink, immune response; brown, reproductive process). Enrichment index was calculated by -log(p-value). (C) Clustering of DD fingerprint genes shown for reproductive process, response to bacterial molecules, extracellular matrix organization, regulation of receptor signaling, and response to hormones. See also Figure 3—source data 1 and Figure 3—source data 2.
 
 GO analysis of the gene signature associated with DD in sPE identified 151 enriched biological processes downregulated (FDR < 0.05). These pathways were associated with cell cycle, DNA damage response, cell signaling, cellular response, cell motility, extracellular matrix, immune response, and reproductive process (Figure 3B). All are hallmarks of impaired decidualization and sPE pathogenesis. We identified fingerprinting genes representative of the altered pathways in sPE, such as IL6 and TNF, regulating the response to bacterial molecules, MMP3 and MMP1 participating in the extracellular matrix organization, and TNF, IL8, and FGF1 implicated in the downregulated receptor signaling (Figure 3C). Functional analysis revealed that the 120 DEGs included in DD fingerprinting are implicated in pathways related to decidualization, corroborating the maternal contribution to sPE. Interestingly, the number of downregulated genes was higher than the number of upregulated genes in sPE compared to controls, suggesting that, in vivo, DD may be induced by the lack of expression of a subset of genes.
 
@@ -114,11 +293,11 @@ Based on the 120 genes included in the DD signature, PCA showed that sPE and con
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/70753/elife-70753-fig4-v1.jpg)
 
-**Figure 4.:** (A) Principal component analysis (PCA) based on 120 genes included in the fingerprinting in the training set. Each sample is represented as a colored point (blue, control; orange, sPE). (B) Heatmap dendrogram of expression of the 120 genes included in the final fingerprinting for each sample of the training set (control, n = 12; sPE, n = 17). (C) PCA based on the fingerprinting in the test set. Each sample is represented as a colored point (blue, control; orange, sPE). (D) Heatmap dendrogram of expression of the 120 genes included in the final fingerprinting for each sample of the test set (control, n = 4; sPE, n = 7). See also Figure 4—source data 1.Figure 4—source data 1.
+**Figure 4.:** (A) Principal component analysis (PCA) based on 120 genes included in the fingerprinting in the training set. Each sample is represented as a colored point (blue, control; orange, sPE). (B) Heatmap dendrogram of expression of the 120 genes included in the final fingerprinting for each sample of the training set (control, n = 12; sPE, n = 17). (C) PCA based on the fingerprinting in the test set. Each sample is represented as a colored point (blue, control; orange, sPE). (D) Heatmap dendrogram of expression of the 120 genes included in the final fingerprinting for each sample of the test set (control, n = 4; sPE, n = 7). See also Figure 4—source data 1.
 
 To validate the DD gene signature in an independent cohort of samples (sPE [n = 7] vs. control [n = 4]), PCA based on these transcripts effectively segregated samples in two homogeneous groups (Figure 4C), corroborated by hierarchical clustering (Figure 4D). These genes successfully grouped 100% of controls and 85.7% of sPE cases supporting DD in sPE.
 
-## DD fingerprint in sPE is connected to ER1 and PR-B
+### DD fingerprint in sPE is connected to ER1 and PR-B
 
 Of the 120 genes in the DD signature, 94 endometrial enriched genes encode for specific proteins reported by the Human Protein Atlas (Uhlén et al., 2015). Interestingly, 45 of those genes (47.9%) were included in the transcriptome modulated by ESR1 (Hewitt et al., 2010), and 43 genes (45.7%) overlapped with the transcriptome and cistrome associated with PGR (Mazur et al., 2015; Figure 5A). Regarding target genes of ER1 and PR, the database of Human Transcription Factor Targets (hTFtarget) reported 17 genes responsive to ER1 and 50 target genes modulated by PR, based on epigenomic, CHIP-seq, or motif evidence (Zhang et al., 2020).
 

@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03rmrcq20 Department of Medical Genetics, University of British Columbia Vancouver Canada
-2. https://ror.org/03rmrcq20 Centre for Molecular Medicine and Therapeutics, British Columbia Children’s Hospital Research Institute, University of British Columbia Vancouver Canada
+1. Department of Medical Genetics, University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
+2. Centre for Molecular Medicine and Therapeutics, British Columbia Children’s Hospital Research Institute, University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
 
 † Corresponding author
 
@@ -31,15 +31,35 @@ We previously identified a physical association between yeast retromer and the V
 
 ## Results
 
-## Vrl1 is a predicted PX-BAR protein that interacts with conserved machinery at the endosome
+### Vrl1 is a predicted PX-BAR protein that interacts with conserved machinery at the endosome
 
 Vrl1 and its human ortholog VARP share a VPS9 domain, as well as a conserved N-terminus and ankyrin repeat domain (AnkRD) that are not found in other yeast VPS9-domain GEFs (Herman et al., 2018; Figure 1A). Vrl1 also features a ~350 amino acid (aa) unannotated region downstream of the AnkRD that is not present in VARP. The protein fold recognition program Phyre2 (Kelley et al., 2015) identified a PX-BAR module with very high confidence (98.6%) in this region (aa 737–1089; Figure 1—figure supplement 1A), and ab initio modeling of this region by AlphaFold2-powered ColabFold software (Mirdita et al., 2022) predicted a structure with striking similarity to the PX-BAR fold (Figure 1B, Figure 1—figure supplement 1B, C). Because the predicted Vrl1 PX domain is missing key residues for PI3P binding (Figure 1—figure supplement 1D), we refer to it as a ‘PX-like’ domain. To our knowledge, Vrl1 is the first VPS9 domain-containing protein with predicted structural homology to the SNX-BAR family.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of Vrl1 and VARP domain architecture. (B) ColabFold predicts the Vrl1 C-terminus has a SNX-BAR-like PX and BAR domain fold. (C) Vrl1-Envy colocalizes with Did2-mRuby2-labeled endosomes, but not with the Sec7-dsRed Golgi marker. (D) Quantification of colocalization as the percentage of Vrl1 puncta overlapping RFP puncta in C. Two-tailed equal variance t test; n=3, cells/strain/replicate ≥1395; ****=p < 0.0001. (E) Schematic of DHFR proximity screen methodology. (F) Z-score distribution of the ratio of colony areas from genome-wide DHFR screens of full-length and truncated Vrl1 baits that localize to the endosome and cytosol, respectively. (G) Gene Ontology (GO) functional enrichment analysis of Vrl1 DHFR interactors (Z-score >2; http://geneontology.org). GO terms of the most specific hierarchical subclass with a fold enrichment value >25 are presented as the negative base 10 log of the associated p-value from a Bonferroni-corrected binomial test of significance. Scale bars, 2 µm. Error bars report standard error of the mean (SEM). Enrich., enrichment. aa, amino acids.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Results from Phyre2 analysis of Vrl1 sequences (Intensive mode, http://www.sbg.bio.ic.ac.uk/phyre2). (B) ColabFold-predicted Vrl1 C-terminus with the predicted local-difference distance test (pLDDT; Jumper et al., 2021; Mirdita et al., 2022) scores mapped to each residue. (C) ColabFold-generated predicted alignment error (PAE; Jumper et al., 2021; Mirdita et al., 2022) plot for the Vrl1 C-terminus demonstrates a high confidence folding prediction. (D) Sequence alignment of Vrl1 C-terminus (aa 737–1089) with yeast and human PX domain-containing proteins. The canonical PI3P-binding ‘RRY’ motif is absent in Vrl1 (highlighted with red dots above alignment). aa, amino acids.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The Vrl1 N-terminus (aa 1–465) does not localize to puncta when expressed from the endogenous VRL1 promoter (VRL1pr) or the strong ADH1pr and instead accumulates in the cytosol. Insets are scaled to match other images in the same channel (see materials and methods for details). Scale bars, 2 µm. WT, wild type.
+
 We found that Vrl1, when C-terminally tagged with the bright GFP variant Envy, was present at perivacuolar puncta that colocalize with the endosomal marker Did2-mRuby2, but not the Golgi protein Sec7-dsRed (56% and 2%, respectively, p<0.0001; Figure 1C, D). These observations indicate that unlike other yeast VPS9-domain GEFs (Paulsel et al., 2013), Vrl1 constitutively localizes to endosomes. To identify endosomal partners of Vrl1, we performed a protein fragment complementation assay (PCA) based on a drug-resistant variant of the dihydrofolate reductase (DHFR) enzyme (Figure 1E; Michnick et al., 2010; Tarassov et al., 2008). Proximity between two proteins that are fused to complementary DHFR fragments reconstitutes enzyme activity and confers resistance to the inhibitor methotrexate. Full-length Vrl1, and a cytosolic fragment of Vrl1 lacking the AnkRD, PX-like and BAR domains (Vrl11-465; Figure 1—figure supplement 2), were expressed as DHFRNt fusions under the control of the constitutive ADH1 promoter (ADH1pr). Z-scores were generated from the colony area ratio of full-length Vrl1 vs Vrl11-465 (Figure 1F, Supplementary file 1). This identified the endosomal Rab GTPases Vps21 (Z=18.7) and Ypt52 (Z=7.6), and other conserved endosomal proteins including the retromer subunit Vps35 (Z=13), the hydrolase receptors Vps10 (Z=12.9) and Mrl1 (Z=7.7), and components of the Class C Core complex Vps11 (Z=16.9) and Vps18 (Z=12.2; Figure 1F). Functional enrichment analysis of Vrl1 interactors (Z>2) highlighted relationships with other subunits of endosomal complexes including retromer and the CORVET complex (Figure 1G, Supplementary file 2; Ashburner et al., 2000; Gene Ontology Consortium, 2021). These results suggest that Vrl1 is an endosomal SNX-BAR-like protein that contacts both membrane tethering and trafficking machinery.
 
-## Vrl1 and the Vps5 paralog Vin1 form the VINE complex
+### Vrl1 and the Vps5 paralog Vin1 form the VINE complex
 
 Our DHFR screen identified a strong connection between Vrl1 and the uncharacterized SNX-BAR Ykr078w (Z=9.5), the paralog of membrane-binding retromer subunit Vps5 (Byrne and Wolfe, 2005; Horazdovsky et al., 1997), which we have named ‘Vrl1-Interacting Sorting Nexin 1’ or Vin1 (Figure 2A). Vin1 has a reported cytosolic distribution (Huh et al., 2003), which is surprising given that its paralog Vps5 localizes to endosomes in a PI3P-dependent manner (Burda et al., 2002) and that Vin1 interacts with PI3P in vitro (Yu and Lemmon, 2001). Increasing Vin1 levels did not alter its cytosolic distribution pattern which we observed in both endogenously expressed N- and C-terminally tagged strains (Figure 2B; Figure 2—figure supplement 1A). Since common laboratory S. cerevisiae strains carry the non-functional mutant vrl1 allele (Bean et al., 2015), we wondered if complementing this mutation with a plasmid-expressed copy of VRL1 featuring the corrected sequence (pVRL1) would affect the localization of Vin1. Indeed, we found that expression of VRL1 caused a dramatic redistribution of Vin1-Envy from the cytosol to intracellular puncta (p<0.0001; Figure 2B, C; Figure 2—figure supplement 1A), and that over-expressing VRL1 from the ADH1pr further increased the number of bright Vin1-Envy puncta (p<0.0001; Figure 2—figure supplement 1B, C). Deletion of VIN1 prevented Vrl1-Envy from forming intracellular puncta (p<0.001; Figure 2B, C), suggesting that the localization of Vrl1 and Vin1 is highly interdependent.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of Ykr078w (Vin1) and its paralog Vps5. (B) Vin1-Envy and Vrl1-Envy require Vrl1 and Vin1, respectively, for localization to puncta. (C) Quantification of Vin1-Envy and Vrl1-Envy puncta per cell in B. Two tailed equal variance t tests; n=3, cells/strain/replicate ≥1,879; ***=p < 0.001, ****=p < 0.0001. (D) Vrl1-3HA and Vin1-3HA require Vin1 and Vrl1, respectively, for protein stability by western blot. Pgk1 serves as a loading control. (E) Quantification of Vrl1-3HA and Vin1-3HA levels in D by densitometry. Two tailed Welch’s t tests; n=3, **=p < 0.01, ***=p < 0.001. (F) Co-immunoprecipitation (CoIP) of Vin1-3HA with Vrl1-Envy suggests stable complex formation. (G) Vrl1-Envy colocalizes with Vin1-mScI at perivacuolar puncta. (H) Vrl1-Envy requires the PI3K catalytic subunit Vps34 for punctate localization. (I) Quantification of Vrl1-Envy puncta per cell in H. Two-tailed equal variance t test; n=3, cells/strain/replicate ≥897; **=p < 0.01. (J) Vrl1-Envy localization in the absence of VPS9-domain GEFs is dependent on the Vrl1 catalytic residue D373. (K) Quantification of Vrl1-Envy puncta per cell in J. One-way ANOVA with Tukey’s multiple comparison test; n=3, cells/strain/replicate ≥1705; not significant, n.s.=p > 0.05, *=p < 0.05, ***=p < 0.001, ****=p < 0.0001. (L) Model of the Vin1 and Vrl1-containing VINE complex at endosomes. Scale bars, 2 µm. Error bars report SEM. Exp., Exposure. WT, wild type.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) N-terminally tagged Vin1 requires Vrl1 for localization to puncta at three different expression levels. By relative fluorescence, the NOP1 promoter (NOP1pr) is stronger than the VIN1pr and the TEF2pr is stronger than the NOP1pr. Insets are scaled to match other images in the same channel (see Materials and methods for details). (B) Over-expression of Vrl1 from the ADH1pr increases the average number of bright Vin1-Envy puncta per cell. (C) Quantification of Vrl1-Envy puncta per cell in B. One-way ANOVA with Tukey’s multiple comparison test; n=3, cells/strain/replicate ≥1495; ***=p < 0.001, ****=p < 0.0001. Scale bars, 2 µm. Error bars report SEM.
 
 Vrl1 and Vin1 are also dependent on each other for stability, as the levels of triple hemagglutinin (3HA)-tagged Vrl1 and Vin1 were severely reduced in strains lacking VIN1 or VRL1 (17% of WT, p<0.001 and 18% of WT, p<0.01, respectively; Figure 2D, E). We found that Vin1-3HA strongly co-purified with Vrl1-Envy (64% recovery of Vin1; Figure 2F), and Vrl1-Envy and Vin1-mScarletI (-mScI) showed a high degree of colocalization at endosomal puncta (88%; Figure 2G), suggesting that these proteins form a complex.
 
@@ -47,21 +67,53 @@ Since both Vin1 and Vrl1 have predicted PX domains, we wondered if, like other S
 
 Taken together, our results suggest that Vrl1 and Vin1 form a novel complex that localizes to endosomes in a PI3P-dependent manner (Figure 2L). Since neither Vrl1 nor Vin1 is stable or capable of membrane localization in the absence of the other, we reason that these proteins primarily exist as members of this complex which we have named the ‘VPS9 GEF-Interacting Sorting Nexin’ or VINE complex.
 
-## Vrl1 is predicted to form a BAR-BAR dimer with both Vin1 and Vps5
+### Vrl1 is predicted to form a BAR-BAR dimer with both Vin1 and Vps5
 
 SNX-BAR proteins interact via an extensive hydrophobic interface between the BAR domains (van Weering et al., 2012). ColabFold software (Mirdita et al., 2022) predicted that the PX-like and BAR domains of Vrl1 (aa 732–1090) bind to the PX and BAR domains of Vin1 (aa 110–585) to form a canonical SNX-BAR dimer (pTMscore = 0.75; Figure 3A, Figure 3—figure supplement 1A). To assess the accuracy of ColabFold in predicting specific BAR domain pairings, we systematically modeled pairwise homotypic and heterotypic interactions of all yeast SNX-BAR proteins (Figure 3B, Supplementary file 3). This accurately predicted the homodimerization of Mvp1 (Suzuki et al., 2021) and the heterodimerization of Vps5/Vps17 (Seaman and Williams, 2002). Neither Vrl1 nor Vin1 was predicted to form homodimers, although unexpectedly Vrl1 was predicted to pair equally well with both Vin1 and its paralog Vps5. By comparing plots of predicted alignment error (PAE) for different combinations of SNX-BARs, we found that Vrl1 and Vps5 exhibit high confidence interactions with Vin1 and Vps17, respectively, whereas Vrl1 and Vps17 were predicted not to interact (Figure 3—figure supplement 1B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig3-v2.jpg)
+
+**Figure 3.:** (A) ColabFold-predicted physical interaction of Vrl1 and Vin1 BAR domains along the canonical BAR-BAR dimerization interface. pTMscore = 0.75. (B) Matrix of ColabFold-predicted BAR-BAR dimers for select yeast SNX-BARs. Hierarchical clustering was performed using an uncentered Pearson correlation with average linkage. (C) Vin1 is the only yeast SNX-BAR that interacts with over-expressed Vrl1-3HA by CoIP. (D) Vps5-3HA does not bind to Vrl1-Envy in a strain lacking Vin1. (E) Schematic of Envy-tagged Vrl1 truncations and chimeras in F. (F) The Vrl1 AnkRD is necessary to recruit Vin1-mScI to puncta. Images with very bright signals use custom settings to show protein localization; insets are scaled identically to other images in the same channel (see materials and methods for details). (G) Quantification of Vin1-mScI puncta per cell in F. One-way ANOVA with Dunnett’s multiple comparison test; n=3, cells/strain/replicate ≥764; not significant, n.s.=p > 0.05, *=p < 0.05, **=p < 0.01, ***=p < 0.001, ****=p < 0.0001. (H) Diagram of chimeric Vrl1 fusion proteins that are artificially recruited to the endosomal system by the PX domain of sorting nexin Ypt35. (I) The Vrl1 AnkRD is necessary for physical interaction with Vin1-3HA by CoIP. Pgk1 serves as a loading control. Scale bars, 2 µm. Error bars report SEM. OE, over-expressed. YPE, Ypt35(PX)-Envy. WT, wild type.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) ColabFold-predicted physical interaction of Vrl1 and Vin1 BAR domains with the predicted local-difference distance test (pLDDT; Jumper et al., 2021; Mirdita et al., 2022) scores mapped to each residue. (B) ColabFold-generated predicted alignment error (PAE; Jumper et al., 2021; Mirdita et al., 2022) plots for yeast SNX-BAR pairs demonstrate confidence of inter-chain contacts, indicating the relative likelihood of functional pairings. On-diagonal boxes with low PAE values reflect confidently predicted intramolecular interactions while off-diagonal boxes with low PAE values reflect confidently predicted intermolecular interactions between two separate polypeptide sequences. aa, amino acids.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Vrl1 protein levels are restored in a vin1Δ mutant by western blot when VRL1 is over-expressed on the ADH1pr. Pgk1 serves as a loading control.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Vrl1 does not interact strongly with subunits of retromer by CoIP. (B) Expression of VRL1 does not rescue loss of endosomal Vps10-Envy in a vps5∆ strain. (C) Expression of VRL1 does not rescue loss of endosomal Vps35-GFP or vacuolar morphology defects in retromer SNX-BAR deletion strains. (D) Quantification of Vps35-GFP puncta per cell in C. One-way ANOVA with Tukey’s multiple comparison test; n=3, cells/strain/replicate ≥1243; not significant, n.s.=p > 0.05, ***=p < 0.001. Scale bars, 2 µm. Error bars report SEM. OE, over-expressed.
+
 Given that Vrl1 was predicted to interact with both Vin1 and Vps5, we wondered if Vrl1 could functionally partner with Vps5 to form a novel retromer-like complex. First, we tested all known yeast SNX-BAR proteins for their ability to bind Vrl1 and found that Vin1 alone interacts with Vrl1 (Figure 3C). Vrl1 also failed to bind Vps5 when VIN1 was deleted from a strain that over-expresses Vrl1 to compensate for its instability in the vin1∆ mutant (Figure 3D; Figure 3—figure supplement 2), suggesting that a possible Vrl1/Vps5 interaction was not overlooked due to competition from Vin1. Further, Vrl1 did not interact with any of the other retromer subunits (Figure 3—figure supplement 3A), but this assay could fail to detect weak or transient interactions. Using functional readouts, we found that Vrl1 was unable to promote the endosomal localization of Vps10 (Figure 3—figure supplement 3B) or Vps35 (Figure 3—figure supplement 3C, D) in strains lacking Vps5 and/or Vps17, indicating that Vrl1 does not functionally pair with retromer SNX-BARs and that Vin1/Vrl1 cannot replace Vps5/17 to form a retromer-like complex. These results further suggest that Vrl1 has strong paralog specificity and that interactions beyond the BAR-BAR interface could be responsible for its specific recognition of Vin1.
 
-## Vrl1 interacts with Vin1 primarily via the AnkRD
+### Vrl1 interacts with Vin1 primarily via the AnkRD
 
 To identify regions critical for Vrl1/Vin1 binding, we quantified the membrane recruitment of Vin1-mScarletI in cells expressing a series of Envy-tagged Vrl1 fragments (Figure 3E, F). We found that the GEF-deficient mutant (Vrl1D373A; Bean et al., 2015) and the N-terminal truncation (Vrl1158-end) significantly recruited Vin1 (p<0.0001 and p<0.001, respectively; Figure 3G) despite the weaker punctate localization of the Vrl1158-end construct relative to WT, which could explain its reduced recruitment of Vin1. Deletion of C-terminal sequences (i.e. Vrl11-465) blocked the membrane localization of both Vrl1 and Vin1. To test the role of the Vrl1 PX-like and BAR domains, we replaced this region with a localization module consisting of the PI3P-binding PX domain of Ypt35 fused to Envy which we refer to as ‘YPE’ (Figure 3H). Strikingly, the resulting Vrl1(1-703)YPE chimera strongly recruited Vin1 to puncta (P<0.0001; Figure 3G), suggesting that BAR-BAR interactions are dispensable for Vin1 recruitment. A further truncation that removed the AnkRD to create Vrl1(1-465)YPE localized to endosomes yet failed to recruit Vin1 (Figure 3F, G), indicating that the AnkRD contains a potent interacting interface for Vin1. In support of this idea, the Vrl1465-end fragment which contains the AnkRD, PX-like and BAR domains weakly localized and recruited a small but significant amount of Vin1 (p<0.05) while the Vrl1700-end fragment containing only the PX-like and BAR domains did not localize or recruit Vin1 (Figure 3F,G).
 
 We then tested the Vrl1 truncation series (Figure 3E) for the ability to CoIP Vin1-3HA (Figure 3I), and found the Vrl1 constructs that strongly recruited Vin1 to puncta also showed physical interactions by CoIP. Taken together, the Vin1 recruitment assays, CoIPs and structural predictions suggest that the VINE complex assembles primarily through an interaction between Vin1 and the Vrl1 AnkRD, while a secondary interaction between the Vin1 and Vrl1 BAR domains may occur at the endosomal membrane.
 
-## The Vrl1 AnkRD recognizes a small region of the disordered Vin1 N-terminus
+### The Vrl1 AnkRD recognizes a small region of the disordered Vin1 N-terminus
 
 AnkRD interactions may explain how Vrl1 discriminates between Vin1 and its paralog Vps5. Vin1 and Vps5 have unstructured N-terminal regions preceding their respective PX domains (Vin11-116 and Vps51-276; Figure 4A, Figure 4—figure supplement 1). When we expressed the N-terminal regions of Vin1 or Vps5 fused to mScarletI (Figure 4B, C), we observed strong recruitment of the Vin1 N-terminus by the Vrl1(1-703)YPE chimera, but not the YPE module alone (p<0.0001; Figure 4D). In contrast, we detected no recruitment of the Vps5 N-terminus by any of our tested constructs suggesting that the N-terminal regions of the paralogous SNX-BARs dictate specificity for Vrl1.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of constructs used in C, D. Full-length Vps5 was not tested but is shown for comparison. (B) Diagram of chimeric Vrl1 recruitment assay used to test for interactions with the unstructured N-terminus of either Vps5 (Vps51-276) or Vin1 (Vin11-116). (C) The AnkRD-containing Vrl1(1-703)YPE chimera recruits the N-terminus of Vin1, but not Vps5. Insets are scaled to match other images in the same channel (see Materials and methods for details). (D) Quantification of RFP puncta per cell in C. One-way ANOVA with Tukey’s multiple comparison test; n=3, cells/strain/replicate ≥902; not significant, n.s.=p > 0.05, **=p < 0.01, ***=p < 0.001, ****=p < 0.0001. (E) Schematic of Vin1 N-terminal fragments used to map the Vrl1 recruitment site. (F) The AnkRD-containing Vrl1(1-703)YPE chimera recruits a small fragment of the Vin1 N-terminus. Insets are scaled to match other images in the same channel. (G) Quantification of Vin1-mScI puncta per cell in F. Two-tailed equal variance t tests; n=3, cells/strain/replicate ≥294; not significant, n.s.=p > 0.05, *=p < 0.05, **=p < 0.01. Scale bars, 2 µm. Error bars report SEM. OE, over-expressed. FL, full-length. WT, wild type. YPE, Ypt35(PX)-Envy.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** A lack of off-diagonal signal in the ColabFold-generated predicted alignment error (PAE; Jumper et al., 2021; Mirdita et al., 2022) plots of Vin1 and Vps5 indicates a shared lack of structure in the N-terminus of either protein. On-diagonal signal for the PX and BAR domains provides a point of comparison for how structured domains appear in prediction PAE plots. aa, amino acids.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The Vin1 N-terminus is not sufficient to localize over-expressed Vrl1-Envy to membranes in a VIN1 deletion strain. The Vrl1(1-703)YPE chimera recruits the Vin1 N-terminal prey construct to puncta in strains lacking the chromosomal copy of VIN1. Insets are scaled to match other images in the same channel (see Materials and methods for details). (B) Quantification of RFP puncta per cell in A. One-way ANOVA with Tukey’s multiple comparison test; n=3, cells/strain/replicate ≥1068; not significant, n.s.=p > 0.05, **=p < 0.01, ***=p < 0.001, ****=p < 0.0001. Scale bars, 2 µm. Error bars report SEM. WT, wild type. YPE, Ypt35(PX)-Envy.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Sequence alignment of Vin1 and Vps5 orthologs collected using the Yeast Gene Order Browser (http://ygob.ucd.ie/). Three conserved regions were selected for expression as mScI-tagged fragments: Vin11-29 (Region 1), Vin141-78 (Region 2), and Vin176-95 (Region 3). aa, amino acids.
 
 We noticed that wild type (WT) Vrl1-Envy recruited WT Vin1-mScI to colocalizing puncta (Figure 4C), but was unable to recruit the Vin1 N-terminus. The endogenous, untagged Vin1 may outcompete the Vin1 N-terminal fragment for recruitment by Vrl1, however this could not be tested directly because WT Vrl1 failed to localize when the Vin1 N-terminus was expressed in a vin1∆ strain (Figure 4—figure supplement 2A, B). This observation indicates that the Vin1 PX and BAR domains also contribute to VINE assembly and membrane recruitment.
 
@@ -69,21 +121,41 @@ We generated an alignment from fungal orthologs of Vps5 and Vin1 (Figure 4—fig
 
 ColabFold confidently predicted an interaction between Vrl1(1-703) and the minimal Vin1 fragment (Vin176-95; Figure 5A, B, Figure 5—figure supplement 1A). In this model, Vin176-95 binds Vrl1 at an interface between the VPS9 domain and AnkRD that is conserved in the Saccharomycetaceae family (Figure 5C). To identify other potential Vrl1-binding regions, we performed a prediction with the entire Vin1 N-terminal sequence and found that the exact Vin176-95 region that we identified in our subcellular recruitment assay (Figure 4F, G) was the only sequence predicted to associate with Vrl1 (Figure 5—figure supplement 1B, C). The Vin176-95 fragment contains a run of consecutive basic residues (Figure 5D). Interestingly, acidic and polar residues in the corresponding Vrl1 AnkRD interface were among the most conserved within Saccharomycetaceae (Figure 5D).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of query sequences used to predict the interact between Vrl1 and the Vin1 N-terminus. Modelled regions are shown as completely opaque. (B) ColabFold-predicted interaction between the Vrl1 AnkRD and a minimal fragment of the Vin1 N-terminus (Vin176-95; pTMscore = 0.73). (C) Vrl1 sequence conservation within family Saccharomycetaceae determined by ConSurf and mapped to a surface model that was predicted by ColabFold. Strong sequence conservation can be seen at the predicted Vin176-95 interacting site and near the catalytic D373 residue. (D) Top: Vin176-95 is predicted to associate with Vrl1 through a run of basic residues. Bottom: Acidic and polar residues in the predicted Vin1-associating Vrl1 AnkRD site are among the most conserved within family Saccharomycetaceae. (E) Mutation of acidic and polar residues in the Vrl1 AnkRD reduces recruitment of the Vin1 N-terminus by the Vrl1(1-703)YPE chimera. (F) Quantification of Vin11-116-mScI puncta per cell in E. One-way ANOVA with Tukey’s multiple comparison test; n=3, cells/strain/replicate ≥863; not significant, n.s.=p > 0.05, *=p < 0.05, ***=p < 0.001, ****=p < 0.0001. Scale bars, 2 µm. Error bars report SEM. OE, over-expressed. Nt, N-terminus. WT, wild type. aa, amino acids. YPE, Ypt35(PX)-Envy.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) ColabFold-predicted interaction between the Vrl1 AnkRD and a minimal fragment of the Vin1 N-terminus (Vin176-95; pTMscore = 0.73) with pLDDT scores mapped to each residue of Vin1 (left) or Vrl1 (right). In each case, the interacting protein partner is shown in gray. (B) ColabFold-generated predicted alignment error (PAE; Jumper et al., 2021; Mirdita et al., 2022) plot for Vrl1(1-703) and the Vin1 N-terminus (Vin11-116) indicates an intermolecular interaction in the off-diagonal boxes. (C) A plot of predicted local-difference distance test (pLDDT; Jumper et al., 2021; Mirdita et al., 2022) scores for five different models of Vrl1(1-703) and Vin11-116 indicates that the minimal region of Vin1 that was recruited by the Vrl1(1-703)YPE chimera, Vin176-95, is the sole confidently predicted region. aa, amino acids. Nt, N-terminus.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** AnkRD-containing Vrl1(1-703)YPE chimeras are stable by western blot when mutations are introduced to sites that are predicted to interact with the Vin1 N-terminus. Pgk1 serves as a loading control. OE, over-expressed. WT, wild type. YPE, Ypt35(PX)-Envy.
+
 To assess the relative contribution of residues in the Vrl1 AnkRD site, we generated a series of stable Vrl1 mutants in the context of the Vrl1(1-703)YPE chimera (Figure 5—figure supplement 2). When five of the conserved acidic and polar residues were simultaneously substituted with alanine (EEDNE-5A), recruitment of the Vin1 N-terminus was lost (p<0.0001; Figure 5E, F). In addition, swapping the charges of either E510 or D511 resulted in either complete or severe loss of recruitment, respectively (p<0.0001; Figure 5E, F). These experiments validate the predicted interaction interface in the Vrl1 AnkRD and suggests that Vrl1 binds the Vin1 N-terminus through electrostatic interactions.
 
-## Vin1 regulates Vrl1 GEF activity via membrane localization
+### Vin1 regulates Vrl1 GEF activity via membrane localization
 
 Disruption of the other VPS9-domain GEF proteins results in a severe temperature sensitivity phenotype and loss of endosomal PI3P (Paulsel et al., 2013; Singer-Krüger et al., 1994) that is rescued by Vrl1 in an activity-dependent manner (Bean et al., 2015). We found that deletion of VIN1, but not VPS5, prevented Vrl1 from rescuing the temperature sensitivity of the muk1∆vps9∆ strain (Figure 6A). We also found that localization of a fluorescent PI3P biosensor (Figure 6B) was restricted to the vacuolar membrane in muk1∆vps9∆vin1∆ cells expressing Vrl1 (Figure 6C), suggesting that VINE promotes the synthesis of endosomal PI3P only when fully assembled.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig6-v2.jpg)
 
-**Figure 6.:** (A) Deletion of VIN1, but not VPS5, prevents Vrl1 from rescuing the temperature sensitivity of a strain lacking other VPS9-domain GEFs. (B) Schematic of PI3P-binding fluorescent biosensor. (C) Deletion of VIN1 prevents Vrl1 from stimulating endosomal PI3P production in a strain lacking other VPS9-domain GEFs. (D) Deletion of VIN1 prevents Vrl1 from rescuing Vps26-GFP localization in a strain lacking other VPS9-domain GEFs. (E) Quantification of Vps26-GFP puncta per cell in D. One-way ANOVA with Tukey’s multiple comparison test; n=3, cells/strain/replicate ≥1503; not significant, n.s.=p > 0.05, *=p < 0.05, **=p < 0.01, ***=p < 0.001. (F) Vin1 is dispensable for Vrl1 activity when fragments containing the N-terminus and VPS9 domain are artificially recruited by a YPE endosomal anchor. Insets are scaled to match other images in the same channel (see materials and methods for details). (G) Quantification of Vps26-mScI puncta per cell in F. One-way ANOVA with Tukey’s multiple comparison test; n=3, cells/strain/replicate ≥750; not significant, n.s.=p > 0.05, ***=p < 0.001, ****=p < 0.0001. Scale bars, 2 µm. Error bars report SEM. OE, over-expressed. WT, wild type. YPE, Ypt35(PX)-Envy.Figure 6—source data 1.Figure 6E.Figure 6—source data 2.Figure 6G.
+**Figure 6.:** (A) Deletion of VIN1, but not VPS5, prevents Vrl1 from rescuing the temperature sensitivity of a strain lacking other VPS9-domain GEFs. (B) Schematic of PI3P-binding fluorescent biosensor. (C) Deletion of VIN1 prevents Vrl1 from stimulating endosomal PI3P production in a strain lacking other VPS9-domain GEFs. (D) Deletion of VIN1 prevents Vrl1 from rescuing Vps26-GFP localization in a strain lacking other VPS9-domain GEFs. (E) Quantification of Vps26-GFP puncta per cell in D. One-way ANOVA with Tukey’s multiple comparison test; n=3, cells/strain/replicate ≥1503; not significant, n.s.=p > 0.05, *=p < 0.05, **=p < 0.01, ***=p < 0.001. (F) Vin1 is dispensable for Vrl1 activity when fragments containing the N-terminus and VPS9 domain are artificially recruited by a YPE endosomal anchor. Insets are scaled to match other images in the same channel (see materials and methods for details). (G) Quantification of Vps26-mScI puncta per cell in F. One-way ANOVA with Tukey’s multiple comparison test; n=3, cells/strain/replicate ≥750; not significant, n.s.=p > 0.05, ***=p < 0.001, ****=p < 0.0001. Scale bars, 2 µm. Error bars report SEM. OE, over-expressed. WT, wild type. YPE, Ypt35(PX)-Envy.
 
 We previously found that Vrl1 recovers the PI3P-dependent endosomal localization of retromer in a muk1Δvps9Δ strain (Bean et al., 2015). By quantifying the localization of the endogenously tagged retromer subunit Vps26-GFP (Figure 6D), we reproduced this finding and found that deletion of VIN1 blocked rescue (p<0.01; Figure 6E). We next tested if Vin1 was still required for Vrl1 activity when the PX-like and BAR domains of Vrl1 were replaced by the YPE endosomal anchor (Figure 3H) using Vps26-mScarletI localization as a readout (Figure 6F). We observed that Vrl1(1-465)YPE and Vrl1(1-703)YPE, but not WT Vrl1, fully rescued the endosomal localization of Vps26-mScarletI in a muk1Δvps9Δvin1∆ strain (p<0.001; Figure 6G). These results suggest that Vin1 regulates the activity of Vrl1 by promoting its localization to endosomes.
 
-## The VINE complex exhibits characteristics of a SNX-BAR coat complex
+### The VINE complex exhibits characteristics of a SNX-BAR coat complex
 
 We wondered if the VINE complex occupies endosomal membrane tubules as other SNX-BAR coat complexes do (Suzuki et al., 2021; van Weering et al., 2012; Zhang et al., 2021). To test this, we over-expressed both Vrl1 and GFP-Vin1 from the ADH1 and NOP1 promoters, respectively, and acquired images of GFP-Vin1 at 100ms intervals (Figure 7A). When compared to the endosomal marker Did2-mRuby2, we could observe GFP-Vin1 on tubular structures that eventually underwent scission and separated from the endosome (Figure 7A, B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig7-v2.jpg)
+
+**Figure 7.:** (A) Time-lapse imaging of cells over-expressing GFP-Vin1 and Vrl1 show tubules emanating from Did2-labeled endosomes. Images were uniformly enlarged using a bicubic expansion function to show detail. Solid arrowheads mark a tubule, open arrowhead marks a scission event. (B) Normalized intensity line scan analysis performed on images from A along the yellow dotted line. (C) Punctate localization of GFP-tagged Mrl1, but not other endosomal recycling cargo, is decreased in cells expressing VRL1. (D) Quantification of GFP-tagged puncta in WT and vrl1 strains in C. Two tailed Welch’s t tests; n=3, cells/strain/replicate ≥902; not significant, n.s.=p > 0.05, *=p < 0.05. (E) Mutation of the D373 residue required for VPS9 GEF activity does not prevent Vrl1 from redistributing Mrl1. (F) Quantification of Mrl1-mScI puncta per cell in E. One-way ANOVA with Tukey’s multiple comparison test; n=3, cells/strain/replicate ≥1788; not significant, n.s.=p > 0.05, *=p < 0.05. (G) Schematic of Vps10 cytosolic tail mutant and Mrl1 cytosolic tail chimera tested for VINE-mediated sorting in H, I. (H) The Mrl1 cytosolic tail is sufficient to confer VINE-mediated redistribution. (I) Percent of cells showing punctate localization of indicated GFP-tagged constructs in H. Blind scoring of GFP signal was conducted manually. One-way ANOVA with Tukey’s multiple comparison test; n=3, cells/strain/replicate ≥237; not significant, n.s.=p > 0.05, ***=p < 0.001, ****=p < 0.0001. (J) Mrl1-mScI puncta are reduced in a snx4∆ strain. (K) Quantification of Mrl1-mScI puncta per cell in J. One-way ANOVA with Tukey’s multiple comparison test; n=3, cells/strain/replicate ≥1036; not significant, n.s.=p > 0.05, *=p < 0.05, **=p < 0.01, ***=p < 0.001, ****=p < 0.0001. (L) Model for VINE activity and redistribution of Mrl1. VINE promotes its own recruitment to endosomes through a positive feedback loop involving Vrl1 GEF activity and local PI3P production. VINE-coated tubules then recycle cargo, such as Mrl1, from endosomes. VINE may target Mrl1 to the Golgi for subsequent delivery to the vacuolar membrane by the AP-3 complex. Mrl1 is then returned to the endosome by Snx4-containing complexes. See text for details. Scale bars, 2 µm. Error bars report SEM. OE, over-expressed. TM, transmembrane. WT, wild type.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/77035/elife-77035-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Mrl1-mScI puncta colocalize with Did2-Envy and sfGFP-Vps21-labeled endosomes, but not with sfGFP-Ypt7 puncta that label vacuolar sites. Insets are scaled to match other images in the same channel (see Materials and methods for details). (B) Quantification of colocalization as the percentage of Mrl1 puncta overlapping GFP puncta in A. One-way ANOVA with Tukey’s multiple comparison test; n=3, cells/strain/replicate ≥2286; **=p < 0.01, ****=p < 0.0001. (C) Localization of Vin1-mScI in BY4741 (vrl1) and an isogenic strain with the vrl1 mutation corrected at the endogenous VRL1 locus using CRISPR-Cas9 gene editing technology. Vin1-mScI localizes to puncta in a CRISPR-corrected VRL1 strain. (D) Mrl1-mScI is redistributed from puncta in the CRISPR-corrected VRL1 strain. (E) Quantification of large, bright Mrl1-mScI puncta per cell in D. Two tailed equal variance t test; n=3, cells/strain/replicate ≥1183; **=p < 0.01. Scale bars, 2 µm. Error bars report SEM.
 
 The budding of VINE-coated endosomal tubules suggests the VINE complex could transport cargo proteins from this organelle. We examined the localization of several candidate cargo proteins in the presence and absence of Vrl1 (Figure 7C), including the mannose 6-phosphate receptor (MPR) homolog Mrl1, which had a strong DHFR interaction score with Vrl1 (Z=7.7; Figure 1F), and two proteins that require other SNX-BARs for their transport (Seaman et al., 1998; Seaman et al., 1997; Suzuki and Emr, 2018; Suzuki et al., 2021). We found that VRL1 expression had no significant effect on the localization of the retromer cargo Vps10 or the Snx4 cargo Atg27 but caused a significant decrease in the number of bright Mrl1-GFP puncta per cell (61% decrease relative to vrl1, p<0.05; Figure 7D). The bright Mrl1 puncta in vrl1 cells colocalize with the endosomal markers Did2-Envy and GFP-Vps21 (69% and 48%, respectively), but not with the vacuolar marker GFP-Ypt7 (9.6%, Figure 7—figure supplement 1A, B), suggesting that Vrl1 redistributes Mrl1 from endosomes. Vrl1 GEF activity was not required for this effect (p<0.05; Figure 7E, F), indicating that Vrl1 does not alter Mrl1 distribution by influencing the local activity of endosomal Rabs. Correction of the vrl1 frameshift mutation using CRISPR-Cas9 gene editing technology restored the punctate localization of Vin1 (Figure 7—figure supplement 1C) and caused a similar change in Mrl1 localization (p<0.01; Figure 7—figure supplement 1D, E). This Vrl1-dependent change in Mrl1 distribution suggests that the VINE complex directly or indirectly regulates the Mrl1 intracellular trafficking itinerary.
 
@@ -95,7 +167,7 @@ In cells with functional VINE, Mrl1 is prominently localized to the vacuole memb
 
 We have identified a novel endosomal SNX-BAR complex composed of the VPS9-domain GEF Vrl1 and the Vps5 paralog Vin1 which we have named the VINE complex. Our work suggests that VINE forms a novel endosomal coat with the potential to sort a unique set of cargo proteins that includes the mannose 6-phosphate receptor-like protein Mrl1.
 
-## Divergent N-terminal sequences in paralogous SNX-BARs specify complex formation
+### Divergent N-terminal sequences in paralogous SNX-BARs specify complex formation
 
 The function of the Vps5-related SNX-BAR protein Vin1 was not previously known. We found that in the absence of Vrl1, Vin1 is unstable and displaced to the cytosol suggesting that it functions solely as a member of the VINE complex. Vin1 and Vrl1 are both predicted to have PX-BAR domains and dimerize through a canonical BAR-BAR interface, yet this interaction is not the primary driver of Vrl1-Vin1 association. Instead, we found that a short sequence within the unstructured N-terminal extension of Vin1 binds specifically to the AnkRD of Vrl1, and this is necessary for selective incorporation into the VINE complex. Our work suggests that VINE assembly requires two inputs: a strong interaction involving the Vin1 N-terminus and a weak interaction between the BAR domains that may occur primarily at the endosomal membrane.
 
@@ -107,13 +179,13 @@ van Weering et al., 2012 have proposed a lock and key model to explain the speci
 
 New functions have been uncovered for the extended N-termini of other SNX-BAR proteins, suggesting these extended regions have previously unappreciated regulatory roles (Shortill et al., 2022). SNX1, which is the human homolog of Vps5 and Vin1, recognizes SNX5 (or its homolog SNX6) through BAR-BAR interactions based on lock-and-key charge pairing, and engages with other complexes, including SNX27 (Simonetti et al., 2022; Yong et al., 2021) and the retromer subunit VPS29 (Swarbrick et al., 2011), through its unstructured N-terminal domain. Thus, the N-termini of the SNX1/Vps5/Vin1 family of SNX-BAR proteins have diversified to bind different proteins and participate in different sorting complexes.
 
-## The VINE complex is both a SNX-BAR coat and a VPS9-domain GEF
+### The VINE complex is both a SNX-BAR coat and a VPS9-domain GEF
 
 The VINE complex is the first described SNX-BAR coat to possess a VPS9 domain-containing subunit. Retromer binds the VPS9-domain GEFs Vps9 and Muk1, which redundantly activate Rab5-like GTPases to stimulate PI3P production at endosomes (Bean et al., 2015). One benefit of wiring SNX-BARs to VPS9-domain GEFs could be to generate a local enrichment of PI3P that enhances SNX-BAR assembly. Indeed, we find that VINE localization requires its own GEF activity in a strain lacking other VPS9-domain GEFs.
 
 The human Vrl1 homolog VARP also contains a VPS9 domain and associates with retromer (Hesketh et al., 2014), albeit through a distinct interaction involving a motif that is not present in Vrl1 (Crawley-Snowdon et al., 2020). This example of convergent evolution suggests that the linking of retromer to the activation of endosomal Rabs has an important and conserved role. VARP activates Rab21, which is related to Rab5 (Stenmark and Olkkonen, 2001) and interacts with PI3K in a proximity-based assay (Del Olmo et al., 2019), although it has not yet been shown to stimulate PI3K activity. Because endosomal Rab GTPases also recruit a variety of effectors including the conserved tethering complexes Rabenosyn-5/Vac1 and CORVET (Cabrera et al., 2013; Christoforidis et al., 1999; Peplowska et al., 2007; Peterson et al., 1999) further work is required to clarify the conserved functional link between VPS9-domain GEFs and SNX-BAR sorting complexes.
 
-## VINE forms endosomal transport carriers and regulates cargo distribution
+### VINE forms endosomal transport carriers and regulates cargo distribution
 
 Our work suggests that VINE may also be a novel sorting complex that acts in a pathway-specific manner, thus joining the group of SNX-BAR complexes that promote independent sorting pathways from the endosome or vacuole in yeast (Ma and Burd, 2020; Suzuki et al., 2021). As VINE can be visualized at budding endosomal structures, we hypothesize that it recycles cargo from this organelle. We identified the MPR-related protein Mrl1 as a candidate VINE cargo. Although the function of Mrl1 is unclear, there is evidence that it works jointly with Vps10 to enhance the transport or maturation of some vacuolar proteases (Whyte and Munro, 2001). Restoring VINE function alters the steady state localization of Mrl1 and could modulate the rate at which it delivers proteins to the vacuole. Because Mrl1 contributes to protease delivery in a vrl1 mutant strain (Whyte and Munro, 2001), it is likely that other SNX-BAR complexes redundantly regulate Mrl1 sorting. Indeed, recent studies from our group and others have identified redundant cargo sorting roles of yeast SNX-BARs (Bean et al., 2017; Best et al., 2020; Suzuki et al., 2021).
 
@@ -123,34 +195,198 @@ Importantly, almost all studies on endosomal trafficking and signaling have been
 
 ## Materials and methods
 
-## Yeast strains and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA(Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>H9658; HA-7</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA(Mouse monoclonal)</td>
+      <td>Covance</td>
+      <td>MMS-101R; HA.11</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP(Mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>11-814-460-001</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pgk1(Mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>AB_2532235; 22C5D8</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP(Rabbit polyclonal)</td>
+      <td>Eusera</td>
+      <td>EU2</td>
+      <td>CoIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA(Rabbit polyclonal)</td>
+      <td>AbCam</td>
+      <td>Ab9110</td>
+      <td>CoIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-Anti-Mouse(Goat polyclonal)</td>
+      <td>Jackson</td>
+      <td>115-035-146</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>nProtein A Sepharose 4 Fast Flow</td>
+      <td>Cytiva</td>
+      <td>17528004</td>
+      <td>CoIP</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amersham Hyperfilm</td>
+      <td>GE Healthcare</td>
+      <td>28906839</td>
+      <td>Chemiluminescent film</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amersham ECL</td>
+      <td>Cytiva</td>
+      <td>GERPN2209</td>
+      <td>Chemiluminescent reagent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amersham ECL Prime</td>
+      <td>Cytiva</td>
+      <td>GERPN2232</td>
+      <td>Chemiluminescent reagent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Yeast/Fungal ProteaseArrest</td>
+      <td>GBiosciences</td>
+      <td>786–435</td>
+      <td>Yeast protease inhibitor; 100 X</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Concanavalin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>C2010</td>
+      <td>Yeast live-cell imaging preparation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FM4-64</td>
+      <td>Invitrogen</td>
+      <td>T3166</td>
+      <td>Vacuolar Rim Stain; 4 μM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CMAC</td>
+      <td>Setareh Biotech</td>
+      <td>6627</td>
+      <td>Vacuole Stain; 100 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methotrexate</td>
+      <td>Enzo Life Sciences</td>
+      <td>ALX-440–045 G001</td>
+      <td>DHFR inhibitor; 200 μg/mL, DMSO</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellProfiler</td>
+      <td>Lamprecht et al., 2007</td>
+      <td></td>
+      <td>Yeast colony array image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaMorph</td>
+      <td>MDS Analytical Technologies</td>
+      <td>Version 7.8</td>
+      <td>Automated image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>Version 9.1.0</td>
+      <td>Statistical analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+      <td>Band densitometry</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ColabFold AlphaFold2 Advanced</td>
+      <td>Jumper et al., 2021; Mirdita et al., 2022</td>
+      <td></td>
+      <td>Protein structure and binding prediction software</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains and plasmids
 
 Yeast strains and plasmids used in this study are described in Supplementary files 4 and 5, respectively. Yeast strains were built in the BY4741 strain background using homologous recombination-based integration unless otherwise indicated. Gene deletions, promoter exchanges and tags were confirmed by colony PCR and either western blot or fluorescence microscopy where possible. Plasmids were built by homologous recombination in yeast, recovered in Escherichia coli and confirmed by sequencing.
 
-## Bioinformatic analysis of protein folding and sequence conservation
+### Bioinformatic analysis of protein folding and sequence conservation
 
 Prediction of protein structure and binding interfaces was performed using Phyre2 (Kelley et al., 2015) and the ColabFold AlphaFold2 advanced server (Jumper et al., 2021; Mirdita et al., 2022) with default settings (https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/beta/AlphaFold2_advanced.ipynb#scrollTo=bQe3KeyTcv0n). ColabFold complex prediction confidence is reported as a pTMscore, which is a predicted template modeling score (TM-score; Zhang and Skolnick, 2004) derived from the predicted alignment error (PAE; Jumper et al., 2021). Vrl1 amino acid sequences were from the S. cerevisiae strain RM11-1a. Orthologous sequences were obtained from the OrthoDB database (Kriventseva et al., 2019), aligned using the EMBL-EBI Multiple Sequence Comparison by Log-Expectation (MUSCLE) tool (https://www.ebi.ac.uk/Tools/msa/muscle) and presented using Jalview (http://www.jalview.org). Protein sequence conservation was mapped to predicted structure using ConSurf (https://consurf.tau.ac.il; Ashkenazy et al., 2016).
 
-## DHFR protein fragment complementation assay and ontology analysis
+### DHFR protein fragment complementation assay and ontology analysis
 
 A MATa strain containing a plasmid that expresses the Vrl1-DHFR[1,2] (DHFRNt) fusion from the ADH1 promoter, or the pADHpr-VRL1(1–465)-DHFRNt control, was crossed into a library of MATα strains (n = ~4300) expressing proteins fused to DHFR[3] (DHFRCt; Tarassov et al., 2008). Diploids were subjected to two rounds of double mutant selection followed by two rounds of selection on media containing 200 µg/ml methotrexate, in 1536 arrays. Manipulations were carried out using a BM3-BC pinning robot (S&P Robotics inc, Toronto, Canada). Colony area was analyzed using CellProfiler (Lamprecht et al., 2007) after 8 days at 30 °C. Z-scores were generated using median colony area from two technical replicates for each Vrl1-prey combination. Functional analysis of Vrl1 DHFR interactors (Z>2) was performed using the Gene Ontology (Ashburner et al., 2000; Gene Ontology Consortium, 2021) GO Enrichment Analysis tool (Mi et al., 2019).
 
-## Fluorescence microscopy and automated image analysis
+### Fluorescence microscopy and automated image analysis
 
 Yeast cells were diluted from overnight cultures in fresh synthetic dextrose-based media (SD) and incubated at 30 °C for ~4 hr or until they reached an optical density of ~0.4–0.7 OD600 unless otherwise indicated. Log phase yeast were transferred to concanavalin A-treated 96-well glass bottom plates (Eppendorf, Hamburg, Germany) and imaged using a DMi8 microscope (Leica Microsystems, Wetzlar, Germany) equipped with an ORCA-flash 4.0 digital camera (Hamamatsu Photonics, Shizuoka, Japan) and a high-contrast Plan-Apochromat 63 x/1.30 Glyc CORR CS immersion lens (Leica Microsystems, Wetzlar, Germany). Image acquisition and processing was performed using the MetaMorph 7.8 software package (MDS Analytical Technologies, Sunnyvale, California). Yeast vacuoles were labelled with 100 µM CMAC (Setareh Biotech, San Jose, California) or 4 µM FM4-64 (Invitrogen, Waltham, Massachusetts) for 30 minutes at 30 °C. Dye-treated cells were washed once in SD media prior to imaging.
 
 Linear intensity scale changes were uniformly applied to all images of a given fluorophore in an experimental set using MetaMorph 7.8 (MDS Analytical Technologies, Sunnyvale, California). For very dim or bright signals that could not be identically scaled, uniformly applied brightness settings are shown as insets and custom settings were used to show protein localization in the full-size image. Images were prepared for presentation using Photoshop CC 2020 (Adobe, San Jose, California) and Illustrator CC 2020 (Adobe, San Jose, California). Quantification was performed on unscaled raw images with scripted MetaMorph 7.8 journals (MDS Analytical Technologies, Sunnyvale, California). The Count Nuclei feature was used to filter out dead cells and identify live cells based on intensity above local background (IALB). The Granularity feature was used to identify puncta in a dead cell-masked intermediate image based on IALB. Masking functions were performed using the Arithmetic function with Logical AND.
 
-## Coimmunoprecipitation, western blotting, and spheroplasting
+### Coimmunoprecipitation, western blotting, and spheroplasting
 
 For western blot-based stability assays, yeast cells were grown to log phase in SD media at 30 °C and 10 OD600/mL equivalents of cells were harvested and stored at –80 °C. Cells were thawed and lysed by vortexing in 100 µL of Thorner buffer (8 M Urea, 5% SDS, 40 mM Tris-Cl (pH 6.4), 1% beta-mercaptoethanol and 0.4 mg/mL bromophenol blue) with ~100 µL of acid-washed glass beads/sample at 70 °C for 5 minutes. Lysates were centrifuged at 14,000 RPM for 30 s and separated on 8% SDS-PAGE gels followed by western blotting with mouse anti-HA (H9658, Clone HA-7, Sigma-Aldrich) or anti-PGK1 monoclonal antibodies (AB_2532235, 22C5D8, Invitrogen), and secondary polyclonal goat anti-mouse antibodies conjugated to horseradish peroxidase (115–035-146; Jackson ImmunoResearch Laboratories).
 
 For CoIPs, yeast cells were grown to log phase in SD media at 30 °C and 75 OD600/mL equivalents of cells were incubated in 50 mM Tris-Cl with 10 mM DTT (pH 9.5) for 15 minutes at room temperature and digested in spheroplasting buffer (1.2 M sorbitol, 50 mM KH2PO4, 1 mM MgCl2 and 250 µg/ml zymolase at pH 7.4) at 30 °C for 1 hr. Spheroplasts were washed twice with 1.2 M sorbitol, frozen at –80 °C, then incubated in 500 µL of lysis buffer (0.1% Tween-20, 50 mM HEPES, 1 mM EDTA, 50 mM NaCl, 1 mM PMSF and 1 x fungal ProteaseArrest, pH 7.4) at room temperature for 10 minutes. A total of 50 µL volumes of lysate were collected for each sample and mixed with 2 x Laemmli buffer (4% SDS, 20% glycerol, 120 mM Tris-Cl (pH 6.8), 0.01 g bromophenol blue and 10% beta-mercaptoethanol) for western analysis while remaining lysates were incubated with either a polyclonal rabbit anti-GFP (EU2, Eusera) or a polyclonal rabbit anti-HA antibody (ab9110, Abcam) at 4 °C for 1 hr. Antibody-treated samples were next incubated with Protein A Sepharose beads (Cytiva) at 4 °C for 1 hr. Beads were washed 3 x in lysis buffer before being resuspended in 50 µL of Thorner buffer and heated at 80 °C for 5 minutes. Western blotting of proteins separated on 8% SDS-PAGE gels was carried out with monoclonal mouse anti-HA (H9658, Clone HA-7, Sigma-Aldrich), monoclonal mouse anti-HA (MMS-101R; Covance) or monoclonal mouse anti-GFP antibodies (11–814–460-001; Roche) prior to secondary antibody treatment with polyclonal goat anti-mouse conjugated to horseradish peroxidase (115–035-146; Jackson ImmunoResearch Laboratories). Blots were developed with Amersham ECL (GERPN2209, Cytiva) or Amersham ECL Prime (GERPN2232, Cytiva) chemiluminescent western blot detection reagents and exposed using Amersham Hyperfilm ECL (GE Healthcare). Densitometry of scanned films was performed using ImageJ (Schneider et al., 2012).
 
-## Correction of genomic vrl1 mutation using CRISPR-Cas9
+### Correction of genomic vrl1 mutation using CRISPR-Cas9
 
 A plasmid containing the Cas9 enzyme and a single guide RNA (sgRNA) targeting the VRL1-disrupting yml003w mutation was pre-cloned using small fragment golden gate assembly (Marillonnet and Grützner, 2020). BY4741 was co-transformed with linearized split URA3 marker Cas9-sgRNA(VRL1) plasmid and PCR product containing the corrected VRL1 sequence. Ura+ colonies were sequenced and an isolate with intact VRL1 was used for experiments.
 
-## Statistical analysis of quantitative data
+### Statistical analysis of quantitative data
 
 Statistical tests were performed using GraphPad Prism 9.1.0 (GraphPad Software, San. Diego, California) as indicated in figure legends with the appropriate post-hoc tests. Normality of data was assumed but not formally tested and hypotheses were measured against a threshold of 95% confidence (or p<0.05). Graphs were made in Microsoft Excel 2019 (Microsoft, Redmond, Washington). Column charts represent the average value from biological replicates while scatter points represent data from individual replicates and are colored by replicate. Error bars report the standard error of the mean value.

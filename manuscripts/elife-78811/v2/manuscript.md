@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01zgy1s35 Institute of Developmental Neurophysiology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf Hamburg Germany
-2. https://ror.org/04n0g0b29 Center for Brain and Cognition, Computational Neuroscience Group, Universitat Pompeu Fabra Barcelona Spain
+1. Institute of Developmental Neurophysiology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+2. Center for Brain and Cognition, Computational Neuroscience Group, Universitat Pompeu Fabra Barcelona Spain ([ROR:04n0g0b29](https://ror.org/04n0g0b29))
 
 † Corresponding author
 
@@ -27,15 +27,23 @@ Here, we combined in vivo extracellular electrophysiological recordings and opto
 
 ## Results
 
-## The patterns of prefrontal activity dynamically evolve with age
+### The patterns of prefrontal activity dynamically evolve with age
 
 To investigate the relationship between E-I ratio and the decorrelation of neural activity that occurs throughout development, we interrogated a large dataset (n=117 mice) of multi-site extracellular recordings of local field potential (LFP) and single unit activity (SUA) from the prelimbic subdivision of the mPFC of unanesthetized P2-12 mice (Figure 1A). Across this developmental phase, the LFP evolves from an almost complete lack of activity (silent periods) to uninterrupted (continuous) activity, passing through intermediate stages in which silent periods alternate with bouts of neuronal activity (active periods) (Figure 1A). To quantify this transition, we calculated the proportion of active periods over the recording and found that it monotonically increases over age (age slope = 0.88, 95% CI [0.84; 0.93], p<10–50, generalized linear model) (Figure 1B). The increase in the proportion of active periods resulted from the augmentation of both number and duration of individual active periods until continuous activity was detected (Figure 1—figure supplement 1A-C). Accompanying these high-level changes in activity dynamics, the maximum amplitude of active periods, the broadband LFP power, and the SUA firing rate exponentially increased over age (age slope = 0.24, 0.47, and 0.21, 95% CI [0.18; 0.30], [0.40; 0.53], and [0.15; 0.27], p<10–9, p<10–23, p<10–11, respectively, generalized linear model) (Figure 1C, Figure 1—figure supplement 1D-F).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78811/elife-78811-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation (Claudi et al., 2021) of extracellular recordings in the mPFC of P2-12 mice (left), and representative LFP traces from P3, P6, P9, and P12 mice (right). (B and C) Violin plots displaying the percentage of time spent in active periods (B) and the single unit activity (SUA) firing rate (C) of P2-12 mice (n=117 mice and 2269 single units, respectively). (D) Log-log plot displaying the normalized median power spectral density (PSD) power in the 1–40 Hz frequency range of P2-12 mice (n=117 mice). Color codes for age with 1 day increment. (E) Violin plot displaying the 1/f exponent of P2-12 mice (n=117 mice). In (B) and (E) white dots indicate individual data points. In (C) data are presented as median, 25th, 75th percentile, and interquartile range. In (B), (C), and (E) the shaded area represents the probability distribution density of the variable. In (D) data are presented as median. Asterisks in (B), (C), and (E) indicate significant effect of age. ***p<0.001. Generalized linear models (B–C) and linear model (E). For detailed statistical results, see Supplementary file 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78811/elife-78811-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A and B) Violin plots displaying the number (A) and duration (B) of active periods of P2-12 mice (n=117 mice). (C) Scatter plot displaying the time spent in active periods with respect to the number of active periods per minute of P2-12 mice (n=117 mice). Color codes for age. (D and E) Violin plot displaying the maximum amplitude of active periods (D) and the LFP power in the 1–40 Hz frequency range (E) of P2-12 mice (n=117 mice). (F) Log-log line plot displaying the median LFP power in the 0.1–4 Hz frequency range of P2-12 mice (n=117 mice). Color codes for age. In (A), (B), (D), and (E) white dots indicate individual data points and the shaded area represents the probability distribution density of the variable. In (F) data are presented as median. Asterisks in (B), (D), and (E) indicate significant effect of age. ***p<0.001. Generalized linear models. For detailed statistical results, see Supplementary file 1.
 
 Changes in the log-log power spectral density (PSD) slope (reflected by the 1/f exponent) have been linked to E-I ratio by several experimental (Trakoshis et al., 2020; Lendner et al., 2020; Colombo et al., 2019) and theoretical studies (Trakoshis et al., 2020; Lombardi et al., 2017; Gao et al., 2017). In particular, a relative increase in inhibition is thought of leading to a steeper PSD slope (higher 1/f exponent), whereas the opposite occurs when E-I ratio shifts toward excitation. Given that INs have a more protracted integration into cortical circuits than PYRs, this process might be accompanied by a developmental shift of the E-I ratio toward inhibition. In line with this hypothesis, the PSD slope grew steeper over age, as readily observed when the PSD was normalized by the area under the curve (Figure 1D). To quantify this observation, we parameterized the PSDs using a recently published protocol (Donoghue et al., 2020), and confirmed that the 1/f exponent increases with age (age slope = 0.12, 95% CI [0.11; 0.14], p<10–27, linear model) (Figure 1E).
 
 Thus, the monitoring of age-dependent dynamics of prefrontal LFP and SUA let us propose that, throughout development, E-I ratio tilts toward inhibition.
 
-## E-I ratio controls pairwise spike train correlations in a neural network model
+### E-I ratio controls pairwise spike train correlations in a neural network model
 
 To explore the relationship between the 1/f exponent, E-I ratio, and the (de)correlation of neuronal spike trains, we simulated a neural network of 400 interconnected conductance-based leaky integrate-and-fire (LIF) neurons (Figure 2A). In line with anatomical data (Markram et al., 2004; Hendry et al., 1987), 80% of those simulated neurons were excitatory (PYRs), whereas 20% were inhibitory (INs). PYRs were simulated with outgoing excitatory AMPA synapses, while INs were simulated with outgoing inhibitory GABAergic synapses, including recurrent connections for both PYRs and INs. In keeping with theoretical and experimental work (Buzsáki and Mizuseki, 2014; Hazan and Ziv, 2020), excitatory and inhibitory synaptic weights were simulated with a lognormal distribution. Both neuron types received input noise and PYRs received an additional external excitatory Poisson stimulus with a constant spike rate of 1.5 spikes/s (see Materials and methods for details on the model). We parametrically varied the AMPA and GABA conductances on both PYRs and INs and defined the network’s net inhibition strength as the ratio between the inhibitory and excitatory conductances. The network was simulated for 60 s for each parameter combination. The network’s LFP was defined as the sum of the absolute values of all synaptic currents on PYRs, which was shown to be a reliable proxy of experimental LFP recordings (Trakoshis et al., 2020; Mazzoni et al., 2008). Across all parameters combinations, INs exhibited higher average firing rates compared to PYRs (INs = 4.06 Hz, 95% CI [3.53; 5.42], PYRs = 1.51 Hz, 95% CI [1.02; 2.98]).
 
@@ -47,17 +55,37 @@ In agreement with previous results (Trakoshis et al., 2020; Gao et al., 2017), t
 
 Thus, simulations of a biologically plausible neural circuit reveal that increased net inhibition strength leads to an increase of the PSD 1/f exponent that is accompanied by decorrelation of neural spike trains.
 
-## Prefrontal spike trains decorrelate over development
+### Prefrontal spike trains decorrelate over development
 
 Since neural network modeling predicts that a shift of E-I ratio toward inhibition leads to higher 1/f exponent and decorrelation of neural activity, we tested on the experimental data whether the developmental increase in the 1/f exponent in the mouse mPFC was accompanied by a decorrelation of neural activity. For this, we calculated the STTC between >40,000 pairs of spike trains over a large range of lags (2.5 ms to 10 s) (Figure 3A). For the analysis, we only considered SUA that was recorded for at least 60 min. To verify the robustness of STTC as an estimator, we compared the STTC obtained on the first and the second half of the recording. The STTCs computed on the two halves of the recording strongly correlated with each other across all the investigated lags (0.70, [0.50; 0.80] median and min-max Pearson correlation; 0.70 [0.52; 0.79] median and min-max Spearman correlation) (Figure 3—figure supplement 1A-B), thus corroborating its robustness as an estimator. Throughout the manuscript, we will consider STTC computed at 1 s, yet the summary plots and the supplementary statistical table include values calculated at all lags.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/78811/elife-78811-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic representation of the STTC quantification. (B) Multivariate linear regression coefficients with respect to STTC lag (n=40,921 spike train pairs and 82 mice). (C) Average STTC at 1 s lag of P4, P6, P8, P10, and P12 mice over distance (n=40,921 spike train pairs and 82 mice). Color codes for age. (D) Weighted adjacency matrices displaying average STTC at 1 s lag of P4, P6, P8, P10, and P12 mice as a function of the recording sites in which the spike train pair has been recorded. Color codes for STTC value. In (B) regression coefficients are presented as mean and 95% CI. In (C) data are presented as mean ± SEM. Asterisks in (B) indicate significant regression coefficients of the respective (interaction between) variables for STTC at 1 s lag. Asterisks in (C) indicate significant effect of age*distance interaction. ***p<0.001. Linear mixed-effect models. For detailed statistical results, see Supplementary file 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78811/elife-78811-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Scatter plot displaying the STTC computed in the first half of the recording with respect to STTC computed in the second half of the recording (n=40,921 spike train pairs and 82 mice). (B) Scatter plot displaying Pearson and Spearman correlation coefficient for STTC computed on the first and second half of the recording over lags (n=40,921 spike train pairs and 82 mice). (C) Weighted adjacency matrices displaying average STTC at 2.5 ms lag of P4, P6, P8, P10, and P12 mice as a function of the recording sites in which the spike train pair has been recorded. Color codes for STTC value. For detailed statistical results, see Supplementary file 1.
 
 Using multivariate mixed hierarchical linear regression, we found that STTC negatively correlated with the distance between neurons (i.e. nearby neurons had higher STTC values than neurons that are far apart) over all the investigated lags (main distance effect, p<10–78 at 1 s lag, linear mixed-effect model) (Figure 3B–D). This is in line with previous studies conducted in the adult (Smith and Kohn, 2008; Goltstein et al., 2015; Greenberg et al., 2008) and developing brain (Golshani et al., 2009; Cutts and Eglen, 2014; Blankenship et al., 2011) of several mammalian species. Further, STTC values negatively correlated with age at lags ≤5 s (main age effect, p<10–4 at 1 s lag, linear mixed-effect model), an effect that was strongest in the 100–1000 ms range (Figure 3B and D, Figure 3—figure supplement 1C). This developmental STTC decrease did not occur uniformly across all neuron pairs. Rather, age and distance had a significant interaction, nearby pairs of neurons displaying a more severe decorrelation over age than neurons that were further apart (age*distance interaction, p<10–12 at 1 s lag, linear mixed-effect model) (Figure 3B–D).
 
 Taken together, these data indicate that, throughout development, as E-I ratio tilts toward inhibition, there is a concomitant decorrelation of pairwise neuronal activity computed over lags that span more than three orders of magnitude. This result is in agreement with data from the rodent barrel cortex (Golshani et al., 2009; Rochefort et al., 2009). In addition, we report that this process follows a specific spatial pattern, with the activity of nearby neurons being the most affected.
 
-## Optogenetic IN manipulation confirms developmental increase of inhibition
+### Optogenetic IN manipulation confirms developmental increase of inhibition
 
 To substantiate the experimental evidence supporting the developmental increase of inhibition in the mouse mPFC, we optogenetically manipulated IN activity at different stages of early development. To this aim, we selectively transfected Dlx5/6cre and Gad2cre INs with either an excitatory (ChR2, n=19 mice) or an inhibitory opsin (ArchT, n=40 mice) using a combination of mouse lines and viral approaches. Briefly, expression of an excitatory opsin in INs was achieved by injecting P0-1 Dlx5/6cre and Gad2cre mice with a virus encoding for ChR2 (AAV9-Ef1alpha-DIO-hChR2(ET/TC)-eYFP). Expression of an inhibitory opsin was instead achieved by crossing Dlx5/6cre and Gad2cre mice with a mouse line (Ai40(RCL-ArchT/EGFP)-D) expressing ArchT under a cre-dependent promoter. No significant differences between experiments targeting Dlx5/6cre and Gad2cre neurons were detected and therefore, the datasets were pooled. In line with previously developed protocols (Bitzenhofer et al., 2020; Chini et al., 2020; Bitzenhofer et al., 2017b), we applied a 3-s-long ‘ramp-like’ optogenetic stimulation of increasing intensity (Figure 4A, Figure 4—figure supplement 1A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/78811/elife-78811-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic representation of the effects induced by optogenetic IN stimulation (left). Representative local field potential (LFP) trace (4–100 Hz band-pass filter) with a corresponding wavelet spectrum at an identical timescale during ramp light stimulation (473 nm, 3 s) of INs in the mPFC of a P10 mouse. (B) Z-scored single unit firing rates in response to optogenetic stimulation of INs (left) and volcano plot displaying the modulation index of pre vs. stim single unit firing rates (right) for P4-6 (top, n=268 units and 5 mice), P7-9 (middle, n=480 units and 7 mice), and P10-12 (bottom, n=475 units and 7 mice) mice. Color codes for firing rate. (C) Scatter plot displaying the percentage of inhibited units with respect to age (n=19 mice). (D) First (top, putative pyramidal neurons [PYRs]) and second (bottom, putative INs) principal component analysis (PCA) component of trial-averaged spike trains in response to optogenetic stimulation of INs. Color codes for age group. In (C) the regression is presented as mean and 95% CI. Asterisks in (C) indicate significant effect of age. **p<0.01. Individual dots in (C) indicate distinct optogenetic protocols (up to two per mouse, for details see Materials and methods). Generalized linear mixed-effect model (C). For detailed statistical results, see Supplementary file 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78811/elife-78811-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic representation of the experimental approach employed to target INs with an excitatory and an inhibitory opsin. (B) Proportion of activated units in response to ramp light stimulation of INs as a function of age (n=19 mice). (C) Number of virally transfected neurons as a function of age (n=87 images and 16 mice). (D) Scatter plot displaying the percentage of inhibited units (restricted to the top 50% units for firing rate) with respect to age (n=19 mice). (E) Schematic representation of the neural network model. (F) Modeled pyramidal neurons (PYRs) (top) and INs (bottom) trial-averaged normalized firing rate in response to optogenetic stimulation of INs. Color codes for excitation-inhibition (E-I) ratio. (G) Violin plot displaying the log-transformed firing rate in simulated optogenetic experiments with an excitatory current injected into INs as a function of the difference between the chloride reverse potential and the membrane resting potential. (H) Modeled PYRs (top) and INs (bottom) trial-averaged normalized firing rate in response to optogenetic stimulation of INs. Color codes for the difference between the chloride reverse potential and the membrane resting potential. (I, J) Same as (G, H) for simulated optogenetic experiments with an inhibitory current injected into INs. In (B–D) and (C) the regression is presented as mean and 95% CI. Asterisks in (D) indicate significant effect of age. ***p<0.001. Individual dots in (B) and (D) indicate distinct optogenetic protocols (up to two per mouse, for details, see Materials and methods). Generalized linear mixed-effect model (B) and (D), linear mixed-effect model (C). For detailed statistical results, see Supplementary file 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/78811/elife-78811-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Schematic representation of the experimental approach employed to generate control (cre-) mice (left) and schematic representation of the lack of effects induced by optogenetic IN stimulation in cre- mice (right). (B) Z-scored single unit firing rates response to optogenetic stimulation in cre- mice (left) and volcano plot displaying the modulation index of pre vs. stim single unit firing rates (right) for P2-12 mice (n=380 units and 10 mice),.
 
 IN activation led to conspicuous modulation of SUA across all investigated ages. Upon stimulus, a small number of neurons (putative INs) gradually increased their firing rate (Figure 4B). The proportion of stimulated INs was similar among mouse lines (main mouse line effect, p=0.14, generalized linear mixed-effect model) and across ages (main age effect = 0.14, 95% CI [–0.04; 0.34], p=0.12, generalized linear mixed-effect model) (Figure 4—figure supplement 1B; individual dots correspond to optogenetic stimulation protocols, see figure legend and Materials and methods). This is in line with the histological quantification of the number of virally transfected neurons that led to similar results for all mouse lines (main mouse line effect, p=0.45, linear mixed-effect model) and developmental stages (main age effect = −1.35, 95% CI [–3.22; 0.51], p=0.18, linear mixed-effect model) (Figure 4—figure supplement 1C). While putative INs increased their firing rate in response to optogenetic stimulation, a larger proportion of neurons (putative PYRs) significantly decreased their firing rate (Figure 4B). In line with the results above that indicated increasing inhibition throughout development, the proportion of inhibited neurons augmented with age (main age effect = 0.31, 95% CI [0.09; 0.55], p=0.005, generalized linear mixed-effect model) (Figure 4C; individual dots correspond to optogenetic stimulation protocols, see figure legend and Materials and methods). These results are unlikely to be biased by a ‘floor effect’ due to the low firing rate of neurons in the youngest mice, as limiting the analysis to neurons in the top 50% for spikes fired during the optogenetic protocol yielded an even stronger effect (main age effect = 0.47, 95% CI [0.17; 0.81], p=0.002, generalized linear mixed-effect model) (Figure 4—figure supplement 1D; individual dots correspond to optogenetic stimulation protocols, see figure legend and Materials and methods). Regardless of age, after terminating the optogenetic stimulus, PYRs responded with a prominent ‘rebound’ increase in firing rate, similar to the effects reported for the adult brain (Roux et al., 2014; Sessolo et al., 2015). Such widespread inhibition upon IN stimulation supports the hypothesis that GABA exerts an inhibitory population-level effect already during the first postnatal days.
 
@@ -83,23 +111,47 @@ We have previously shown that the optogenetic paradigm that we utilized does not
 
 Taken together, these data show that optogenetic manipulation of INs robustly affects the neonatal prefrontal network in an age-dependent manner. Stimulating INs induced widespread inhibition of putative PYRs, whereas the contrary was true after IN inhibition. Both effects augmented with age. However, the ability of INs to control the cortical inhibition did not qualitatively change during the first 2 postnatal weeks, resembling adult patterns. These data provide evidence against the long-standing hypothesis of network-level excitatory effects of GABA in the developing mouse cortex.
 
-## Optogenetic manipulation of IN activity impacts pairwise spike train correlations
+### Optogenetic manipulation of IN activity impacts pairwise spike train correlations
 
 To investigate the relationship between age-dependent dynamics of inhibition and decorrelation of spike trains, we compared STTC before IN optogenetic manipulation (STTCpre) to STTC during optogenetic manipulation (STTCstim). Considering that STTCpre and STTCstim could only be computed in 3 s epochs (times the number of trials), we first verified whether STTCpre was a good predictor of ‘baseline’ STTC. Pooling across mice and different IN manipulations, STTCpre robustly correlated with baseline STTC across every investigated lag, from 2.5 ms to 1 s (0.66, [0.48; 0.72] median and min-max Pearson correlation; 0.68 [0.40; 0.71] median and min-max Spearman correlation) (Figure 6—figure supplement 1A-B). Further, STTCstim exhibited lower correlation values with baseline STTC across all lags, a first hint that optogenetic IN manipulation affected STTC (Figure 6—figure supplement 1A-B).
 
 As predicted by the experimental and modeling results, optogenetic modulation of IN activity affected the STTC values across all investigated timescales (Figure 6A–B, Figure 6—figure supplement 1C). IN stimulation resulted in decreased STTC values (main IN stimulation effect, p<10–71, 1 s lag, linear mixed-effect model) (Figure 6A). On the other hand, IN inhibition increased STTC (main IN inhibition effect, p<10–286, 1 s lag, linear mixed-effect model) (Figure 6B). Moreover, in line with the strongest decorrelation along development for nearby neurons (Figure 3D), IN modulation had a larger impact on STTC values of nearby neurons when compared to pairs that are further apart (IN stimulation*distance interaction, p=2*10–4; IN inhibition*distance interaction p<10–5, 1 s lag, linear mixed-effect model) (Figure 6C–D).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/78811/elife-78811-fig6-v2.jpg)
+
+**Figure 6.:** (A and B) 2D kernel density plots displaying STTC before IN optogenetic manipulation (STTCpre) and STTC during optogenetic manipulation (STTCstim) during IN activation (A) and inhibition (B) (n=10,173 spike train pairs and 19 mice, n=9778 spike train pairs and 40 mice, respectively). (C and D) Average STTCpre and STTCstim during IN activation (C) and inhibition (D) over distance (n=10,173 spike train pairs and 19 mice, n=9778 spike train pairs and 40 mice, respectively). In (C and D) data are presented as mean ± SEM. Asterisks in (A and B) indicate significant effect of IN activation and inhibition, respectively. Asterisks in (C and D) indicate significant effect of IN activation*distance and IN inhibition*distance interaction, respectively. ***p<0.001. Linear mixed-effect models. For detailed statistical results, see Supplementary file 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78811/elife-78811-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A and B) Scatter plot displaying Pearson (A) and Spearman (B) correlation coefficients for STTC before IN optogenetic manipulation (STTCpre) and STTC during optogenetic manipulation (STTCstim) with STTC computed on baseline data over lags (n=19,951 spike train pairs and 59 mice). (C) Multivariate linear regression coefficients as a function of STTC lag (n=19,951 spike train pairs and 59 mice). In (C) regression coefficients are presented as mean and 95% CI. Linear mixed-effect models. For detailed statistical results, see Supplementary file 1.
+
 Thus, these data indicate that IN manipulation causally impacts pairwise correlations between spike trains. The effect of IN manipulation increases with age, in agreement with the notion that inhibition strengthens throughout development.
 
-## Mice with altered developmental E-I ratio have excessively decorrelated activity
+### Mice with altered developmental E-I ratio have excessively decorrelated activity
 
 Developmental imbalances in E-I ratio have been linked to the pathophysiology of neurodevelopmental disorders (Antoine et al., 2019; Bitzenhofer et al., 2021). A corollary of the results above is that impaired developmental E-I ratio should result in altered correlation levels of neuronal activity. To test this hypothesis, we interrogated an open-source dataset that we recently published (Chini et al., 2020; Bitzenhofer et al., 2021). The dataset was obtained from extracellular recordings of SUA from the mPFC of P4-10 control and dual-hit genetic-environmental (GE) mice. GE mice mimic the etiology (combined disruption of Disc1 gene and maternal immune activation) and cognitive impairment of schizophrenia, showing already at neonatal age reduced excitatory activity in the superficial layers of the mPFC (Chini et al., 2020; Xu et al., 2019; Figure 7A). On the flipside, deep layers of the mPFC are not affected. Therefore, we hypothesized that GE mice have lower STTC values than controls (i.e. mice lacking the abnormal genetic background and influence of environmental stressor). Considering the layer specificity of the deficits identified in the mPFC of GE mice, we reasoned that this effect should be present in spike trains from neurons in the superficial layers. Overall, GE mice had lower spike train correlations when compared to controls (main condition effect, p=0.032, 1 s lag, linear mixed-effect model) (Figure 7—figure supplement 1A). In line with the proposed hypothesis, this deficit depended on whether the neuron pair was situated in the superficial or deep layers of the mPFC (condition*layer interaction, p<10–7, 1 s lag, linear mixed-effect model). While there was no significant difference between STTC of controls and GE spike train pairs situated in the deep layers (p=0.15, 1 s lag, linear mixed-effect model), spike train pairs of GE mice in which one of the two neurons was located in the superficial layers had reduced STTC values (p=0.016, 1 s lag). This difference was even more robust if both neurons were situated in the superficial layers (p=10–3, 1 s lag) (Figure 7B–D). Last, the effect did not depend on the age of the mouse (condition*age interaction, p=0.16, 1 s lag, linear mixed-effect model) (Figure 7—figure supplement 1A-B).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/78811/elife-78811-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic representation of the excitation-inhibition (E-I) ratio imbalance affecting GE mice. (B) STTC of control and GE mice (n=18,839 and 11,051 spike train pairs; 33 and 30 mice, respectively) with respect to the number of neurons in the superficial layers in the medial prefrontal cortex (mPFC). (C) Weighted adjacency matrices displaying average STTC at 1 s lag of P4, P6, P8, P10, and control mice as a function of the recording sites in which the spike train pair has been recorded (n=18,839 spike train pairs and 33 mice). White inset indicates STTC values between spike trains that are located in the superficial layers of the mPFC. Color codes for STTC value. (D) Same as (C) for GE mice (n=11,051 spike train pairs and 30 mice).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/78811/elife-78811-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Multivariate linear regression coefficients as a function of STTC lag (n=29,890 spike train pairs and 63 mice). (B) STTC of control and GE mice (n=18,839 and 11,051 spike train pairs; 33 and 30 mice, respectively) over age. Asterisks in (A) indicate significant regression coefficients of the respective variable for STTC at 1 s lag. *p<0.05. In (A) regression coefficients are presented as mean and 95% CI. In (B) data are presented as mean ± SEM. Linear mixed-effect models. For detailed statistical results, see Supplementary file 1.
+
 Taken together, these data support the hypothesis that decreased developmental E-I ratio results in reduced spike train pairwise correlations. Further, we show that this effect is remarkably specific. In GE mice, a mouse model characterized by reduced excitatory drive in prefrontal PYRs of the superficial layers, the reduced correlation levels were largely limited to spike train pairs involving PYRs of the superficial layers.
 
-## E-I ratio decreases with age in newborn babies
+### E-I ratio decreases with age in newborn babies
 
 Considering the role of E-I ratio for neurodevelopmental disorders, it is of critical relevance to assess whether a developmental strengthening of inhibition occurs also in humans. To this aim, we interrogated two EEG datasets recorded in newborn babies of an age between 35 and 46 post-conception weeks (PCW), a stage of brain development that is roughly equivalent to the one that we studied in mice (Chini and Hanganu-Opatz, 2021). While it is not straightforward to compare intracranial recordings from a deep structure like the mouse mPFC to human EEG data, to maximize the consistency between approaches, we limited our analysis to channels from the frontal derivations of the EEG (Figure 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/78811/elife-78811-fig8-v2.jpg)
+
+**Figure 8.:** (A) Schematic representation of EEG recording from frontal derivations of 36-45 post-conception week (PCW) newborn babies (left) displayed together with representative EEG traces from 36 and 45 PCW newborn babies (right). (B) Log-log plot displaying the normalized mean power spectral density (PSD) power in the 1–20 Hz frequency range of 36-45 PCW newborn babies (n=1110 babies). Color codes for age. (C) Violin plots displaying the 1/f exponent of 36-45 PCW newborn babies (n=1110 babies). (D) Same as (C) for 40 and 43 PCW newborn babies (n=72 EEG recordings and 40 babies). (E) 1/f exponent over age for the two EEG datasets (n=1110 babies and n=72 EEG recordings and 40 babies, respectively). In (D) black dots indicate individual data points. In (C) and (D) data are presented as median, 25th, 75th percentile, and interquartile range. In (C) and (D) the shaded area represents the probability distribution density of the variable. In (B) and (E) data are presented as mean ± SEM. Asterisks in (C) and (D) indicate significant effect of age. ***p<0.001. Linear model (C) and linear mixed-effect models (D–E). For detailed statistical results, see Supplementary file 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/78811/elife-78811-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Log-log plot displaying the mean PSD power in the 1–20 Hz frequency range of 36-45 post-conception week (PCW) newborn babies (n=1110 babies). Color codes for age. (B) Same as (A) for 40 and 43 PCW newborn babies (n=72 EEG recordings and 40 babies). Color codes for age. (C) Same as (B) for normalized mean PSD power. In (A–C) data are presented as mean ± SEM.
 
 The first dataset (Schetinin and Jakaite, 2017) consisted of 1100 EEG recordings from sleeping babies with an age comprised between 36 and 45 PCW. Similar to the PSDs of recordings from the neonatal mice mPFC, the PSD slope grew steeper over age (Figure 8—figure supplement 1A), a phenomenon that was readily apparent after normalization of the PSD (Figure 8B). We quantified the 1/f exponent on the 1–20 Hz frequency range and confirmed that it increased with age (age coefficient = 0.26, 95% CI [0.24; 0.27], p<10–183, linear model) (Figure 8C). A second dataset (Wielek et al., 2019) consisted of EEG recordings from 42 sleeping babies, recorded at 40 and 43 PCW. The analyses revealed that also for these data the PSD slope grew steeper (Figure 8—figure supplement 1B-C) and the 1/f exponent increased with age (age coefficient = 0.30, 95% CI [0.17; 0.42], p<10–4, linear mixed-effect model) (Figure 8D). The increase in 1/f slope over age was very similar across the two different datasets (mean age coefficients = 0.26 and 0.30) and no statistical difference was found between them (main dataset effect, p=0.15; age*dataset interaction, p=0.21, linear mixed-effect model) (Figure 8E).
 
@@ -121,95 +173,267 @@ Several studies have reported E-I imbalances in the mPFC of mouse models of ment
 
 ## Materials and methods
 
-## Data and code availability
+### Data and code availability
 
 LFP and SUA data that were newly generated for this study are available at the following open-access repository: https://gin.g-node.org/mchini/development_EI_decorrelation.
 
 Code supporting the findings of this study is available at the following open-access repository: https://github.com/mchini/Chini_et_al_EI_decorrelation; Chini, 2021.
 
-## Experimental models and subject details
+### Experimental models and subject details
 
 All experiments were performed in compliance with the German laws and following the European Community guidelines regarding the research animals use. All experiments were approved by the local ethical committee (G132/12, G17/015, N18/015). Experiments were carried out on C57BL/6J, Dlx5/6-Cre (Tg(dlx5a-cre)1Mekk/J, Jackson Laboratory), Gad2-IRES-Cre (Gad2tm2(cre)Zjh, Jackson Laboratory), and ArchT (Ai40(RCL-ArchT/EGFP)-D, Jackson Laboratory) mice of both sexes. Mice were housed in individual cages on a 12 hr light/12 hr dark cycle, and were given access to water and food ad libitum. The day of birth was considered P0. To inhibit IN activity, mice from the Dlx5/6-Cre and Gad2-IRES-Cre driver lines were crossed with mice from the ArchT reporter line. To stimulate IN activity, P0-P1 mice from the Dlx5/6-Cre and Gad2-IRES-Cre driver lines were injected in the mPFC with a virus encoding for ChR2 (AAV9-Ef1alpha-DIO-hChR2(ET/TC)-eYFP) as previously described (Xu et al., 2021). Details on the data acquisition and experimental setup of open-access datasets that were used in this project have been previously published (Chini et al., 2020; Bitzenhofer et al., 2021; Schetinin and Jakaite, 2017; Wielek et al., 2019).
 
-## In vivo electrophysiology and optogenetics
+### In vivo electrophysiology and optogenetics
 
-## Surgery
+#### Surgery
 
 In vivo extracellular recordings were performed from the prelimbic subdivision of the mPFC of non-anesthetized P2-12 mice. Before starting with the surgical procedure, a local anesthetic was applied on the mice neck muscles (0.5% bupivacain/1% lidocaine). The procedure was carried out under isoflurane anesthesia (induction: 5%; maintenance: 1–3%, lower for older pups, higher for younger pups). Neck muscles were cut to reduce muscle artifacts. A craniotomy over the mPFC (0.5 mm anterior to bregma, 0.1–0.5 mm lateral to the midline) was performed by first carefully thinning the skull and then removing it with the use of a motorized drill. Mice were head-fixed into a stereotactic frame and kept on a heated (37°C) surface throughout the entire recording. (Opto)Electrodes (four-shank, 4×4 recording sites, 100 µm between recording sites, 125 µm shank distance; NeuroNexus, Ann Arbor, MI) were slowly inserted into the prelimbic cortex, at a depth varying between 1.4 and 2 mm depending on the age of the mouse. A silver wire implanted into the cerebellum was used as ground and external reference. Before signal acquisition, mice were allowed to recover for 30–45 min, to maximize the quality and stability of the recording as well as single units yield.
 
-## Signal acquisition
+#### Signal acquisition
 
 Extracellular signals were acquired and digitized at a 32 kHz sampling rate after band-pass filtering (0.1–9000 Hz) using an extracellular amplifier (Digital Lynx SX; Neuralynx, Bozeman, MO, Cheetah, Neuralynx, Bozeman, MO).
 
-## Optogenetic stimulation
+#### Optogenetic stimulation
 
 Optical stimuli were delivered by an Arduino Uno-controlled (Arduino, Italy) diode laser (Omicron, Austria). The delivered light stimuli varied in wavelength (472 or 594 nm) according to the experimental paradigm (IN stimulation and inhibition, respectively). Laser power was titrated before signal acquisition and adjusted to the minimum level that induced reliable spiking response. Typical light power at the fiber tip was measured in the range of 15–40 mW/mm2. Optogenetic stimulations consisted of ramp-like stimuli of 3 s duration as previously described (Chini et al., 2020; Bitzenhofer et al., 2017b; Bitzenhofer et al., 2021; Bitzenhofer et al., 2017a). Ramp stimulations were repeated 30–120 times and carried out on the two outmost lateral shanks of the 4-shank electrodes, corresponding to superficial and deep layers of the mPFC. In Figures 3C and 4C, Figure 4—figure supplement 1B and D, these two distinct optogenetic protocols are plotted separately (statistical analysis is however run on the individual mouse level, see ‘Statistical modeling’ section).
 
-## Histology
+#### Histology
 
 Epifluorescence images of coronal brain sections were acquired postmortem to reconstruct the position of the recording electrode and quantify the amount of eYFP expressing neurons. Only mice in which the electrodes were placed in the correct position were kept for further analysis. eYFP expression was manually quantified on a slide-by-slide basis.
 
-## Neural network modeling
+### Neural network modeling
 
 The architecture of the network was set similarly to Trakoshis et al., 2020, and is schematically illustrated in Figure 2A. The network was composed of a total of 400 conductance-based LIF units, 80% of which were excitatory (E) (N=320) and 20% were inhibitory (I) (N=80). The units in the network were all connected with each other, with a synaptic weight that was log-normally distributed. Excitatory (E→E, E→I) and inhibitory (I→I and I→E) synapses were mediated by AMPA and GABA conductances, respectively. All baseline parameter values used in the simulations are listed in Table 1. All simulations were performed using Brain2 for Python3.7 (Stimberg et al., 2019).
 
-The dynamics of each excitatory and inhibitory cell were governed by the following stochastic differential equation:(1)CmdVmdt=-gLVm-VL-gAMPAVm-EAMPA-gGABAVm-EGABA+η
+**Table 1.**
+ Parameters of the leaky integrate-and-fire network.
 
-with(2)dgAMPAdt=-gAMPAτAMPA
 
-and(3)dgGABAdt=-gGABAτGABA
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Neuron model</th>
+    </tr>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Excitatory cells</th>
+      <th>Inhibitory cells</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VL</td>
+      <td>Leak membrane potential</td>
+      <td>–70 mV</td>
+      <td>–70 mV</td>
+    </tr>
+    <tr>
+      <td>VThr</td>
+      <td>Spike threshold potential</td>
+      <td>–52 mV</td>
+      <td>–52 mV</td>
+    </tr>
+    <tr>
+      <td>VRes</td>
+      <td>Reset potential</td>
+      <td>–59 mV</td>
+      <td>–59 mV</td>
+    </tr>
+    <tr>
+      <td>τRef</td>
+      <td>Refractory period</td>
+      <td>2 ms</td>
+      <td>1 ms</td>
+    </tr>
+    <tr>
+      <td>Cm</td>
+      <td>Membrane capacitance</td>
+      <td>500 pF</td>
+      <td>500 pF</td>
+    </tr>
+    <tr>
+      <td>gL</td>
+      <td>Membrane leak conductance</td>
+      <td>25 nS</td>
+      <td>20 nS</td>
+    </tr>
+    <tr>
+      <td>τm</td>
+      <td>Membrane time constant</td>
+      <td>20 ms</td>
+      <td>10 ms</td>
+    </tr>
+    <tr>
+      <td colspan="4">Synapse model</td>
+    </tr>
+    <tr>
+      <td>Parameter</td>
+      <td>Description</td>
+      <td>Excitatory cells</td>
+      <td>Inhibitory cells</td>
+    </tr>
+    <tr>
+      <td>EAMPA</td>
+      <td>Reversal potential (AMPA)</td>
+      <td>0 mV</td>
+      <td>0 mV</td>
+    </tr>
+    <tr>
+      <td>EGABA</td>
+      <td>Reversal potential (GABA)</td>
+      <td>–80 mV</td>
+      <td>–80 mV</td>
+    </tr>
+    <tr>
+      <td>gAMPA</td>
+      <td>Conductance (AMPA)</td>
+      <td>lognormal(0, 1)*/50 * nS</td>
+      <td>lognormal(0, 1)*/50 * nS</td>
+    </tr>
+    <tr>
+      <td>gGABA</td>
+      <td>Conductance (GABA)</td>
+      <td>lognormal(0, 1)*/12 * nS</td>
+      <td>lognormal(0, 1)*/60 * nS</td>
+    </tr>
+    <tr>
+      <td>gAMPA,ext</td>
+      <td>Conductance external input (AMPA)</td>
+      <td>0.234 * 5 nS</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>τAMPA</td>
+      <td>Time constant of AMPA decay</td>
+      <td>2 ms</td>
+      <td>1 ms</td>
+    </tr>
+    <tr>
+      <td>τGABA</td>
+      <td>Time constant of GABA decay</td>
+      <td>8 ms</td>
+      <td>8 ms</td>
+    </tr>
+    <tr>
+      <td colspan="4">Current</td>
+    </tr>
+    <tr>
+      <td>Parameter</td>
+      <td>Description</td>
+      <td>Excitatory cells</td>
+      <td>Inhibitory cells</td>
+    </tr>
+    <tr>
+      <td>Amplitude</td>
+      <td>Max (final) current amplitude</td>
+      <td>/</td>
+      <td>0.05–0.2 nAmp</td>
+    </tr>
+    <tr>
+      <td>Duration</td>
+      <td>Duration of ramp current</td>
+      <td>/</td>
+      <td>3 s</td>
+    </tr>
+    <tr>
+      <td>Interval</td>
+      <td>Interval between currents</td>
+      <td>/</td>
+      <td>6 s</td>
+    </tr>
+    <tr>
+      <td>Sweeps</td>
+      <td>Number of repetitions</td>
+      <td>/</td>
+      <td>60</td>
+    </tr>
+  </tbody>
+</table>
 
-where Vm is the membrane potential, VL is the leak membrane potential, and EAMPA and EGABA denote the AMPA and GABA current reversal potentials, respectively. The synaptic conductance parameters and the corresponding decay time constants are denoted by gAMPA, gGABA and τAMPA, τGABA, respectively. η is a noise term that is generated by an Ornstein-Uhlenbeck process with zero mean. Due to the near-instantaneous rise times of AMPA- and GABA-mediated currents (both typically <0.5 ms), we opted to neglect these in the current simulations. Moreover, synaptic transmission was assumed to be instantaneous (i.e. with zero delay). The excitatory units of the network received an additional external input in the form of AMPA-mediated Poisson spike trains from an external pool of 100 units with a constant spike rate of 1.5 spikes/s.
+_*The two parameters of the lognormal distribution refer to, respectively, the mean and the standard deviation of the underlying normal distribution._
 
-In order to assess the effect of altered E-I ratio (gE/gI), we parametrically modulated all excitatory (through multiplication with 25 linearly spaced values from 0.1 to 0.7) and all inhibitory (26 linearly spaced values from 0.2 to 1.2) synaptic conductances. The network was simulated for a duration of 30 s for each of the 25×26 parameter combinations. For each parameter combination, the LFP of the network was computed by taking the sum of the absolute values of the AMPA and GABA currents on all excitatory cells (Trakoshis et al., 2020). Neuronal correlation was estimated by means of the STTC (see below), assessed at a lag of 1 s.
+The dynamics of each excitatory and inhibitory cell were governed by the following stochastic differential equation:
 
-To mimic optogenetic modulation of IN activity, we added an external current to the stochastic differential equation regulating the dynamics of inhibitory neurons:(4a)CmdVmdt=-gLVm-VL-gAMPAVm-EAMPA-gGABAVm-EGABA+IStim+η
+$$
+C_{m}\frac{dV_{m}}{dt}=-g_{L}V_{m}-V_{L}-g_{AMPA}V_{m}-E_{AMPA}-g_{GABA}V_{m}-E_{GABA}+η
+$$
+
+with
+
+$$
+\frac{dg_{AMPA}}{dt}=\frac{-g_{AMPA}}{\tau_{AMPA}}
+$$
+
+and
+
+$$
+\frac{dg_{GABA}}{dt}=\frac{-g_{GABA}}{\tau_{GABA}}
+$$
+
+where $V_{m}$ is the membrane potential, $V_{L}$ is the leak membrane potential, and $E_{AMPA}$ and $E_{GABA}$ denote the AMPA and GABA current reversal potentials, respectively. The synaptic conductance parameters and the corresponding decay time constants are denoted by $g_{AMPA}$, $g_{GABA}$ and $\tau_{AMPA}$, $\tau_{GABA}$, respectively. $η$ is a noise term that is generated by an Ornstein-Uhlenbeck process with zero mean. Due to the near-instantaneous rise times of AMPA- and GABA-mediated currents (both typically <0.5 ms), we opted to neglect these in the current simulations. Moreover, synaptic transmission was assumed to be instantaneous (i.e. with zero delay). The excitatory units of the network received an additional external input in the form of AMPA-mediated Poisson spike trains from an external pool of 100 units with a constant spike rate of 1.5 spikes/s.
+
+In order to assess the effect of altered E-I ratio ($g_{E}/g_{I}$), we parametrically modulated all excitatory (through multiplication with 25 linearly spaced values from 0.1 to 0.7) and all inhibitory (26 linearly spaced values from 0.2 to 1.2) synaptic conductances. The network was simulated for a duration of 30 s for each of the 25×26 parameter combinations. For each parameter combination, the LFP of the network was computed by taking the sum of the absolute values of the AMPA and GABA currents on all excitatory cells (Trakoshis et al., 2020). Neuronal correlation was estimated by means of the STTC (see below), assessed at a lag of 1 s.
+
+To mimic optogenetic modulation of IN activity, we added an external current to the stochastic differential equation regulating the dynamics of inhibitory neurons:
+
+$$
+C_{m}\frac{dV_{m}}{dt}=-g_{L}V_{m}-V_{L}-g_{AMPA}V_{m}-E_{AMPA}-g_{GABA}V_{m}-E_{GABA}+I_{Stim}+η
+$$
 
 where Istim is a 3-s-long ramp-like inhibitory or excitatory current, administered in repeated sweeps, with an interval of 6 s.
 
-## Electrophysiological analysis
+### Electrophysiological analysis
 
 Data were analyzed with custom-written algorithms in the MATLAB and Python environment that are available on the following github repository: https://github.com/mchini/Chini_et_al_EI_decorrelation (copy archived at swh:1:rev:9a07c56f36c80a60a44a6607a5a4061a37d96ae7; Chini, 2021).
 
-## Detection of active periods
+#### Detection of active periods
 
 During early development, brain activity is characterized by an alternation of periods of isoelectric traces (silent periods) and oscillatory bursts (active periods). To detect and quantify the properties of active periods, we developed a novel detection algorithm. For this, the extracellular signal was band-pass filtered (4–20 Hz) and downsampled to 100 Hz, before being averaged across recording electrodes. The average signal (raw and z-scored) was then passed through a boxcar square filter (500 ms) on which a hysteresis threshold was applied. Active periods were firstly detected as oscillatory peaks exceeding an absolute or relative threshold (100 µV or four standard deviations, respectively) and subsequently extended to all neighboring time points that exceed a lower threshold (50 µV or two standard deviations, respectively). The combination of absolute and relative thresholding makes this approach suitable to a wide range of signals, from the highly discontinuous brain activity of P2 mice, to the nearly continuous brain activity of P11-12 mice (Figure 1A–B). Neighboring active periods whose inter-active period interval was shorter than 1 s were merged. Active periods whose duration was smaller than 300 ms were discarded.
 
-## Power spectral density
+#### Power spectral density
 
 PSDs for mouse and human data (see below for exception) were computed with the mtspecgramc function of the Chronux Toolbox (10-s-long windows, 5 s overlap). Median averaging was the preferred measure of central tendency (Izhikevich et al., 2018). To quantify the PSD modulation by IN optogenetic stimulation/inhibition, we computed the MI (see below) of the PSD computed on the last 1.5 s of the optogenetic stimulation with the PSD computed on the 1.5 s preceding stimulus delivery.
 
-## EEG preprocessing
+#### EEG preprocessing
 
 EEG signal was extracted only from frontal electrodes (Fp1, F7, F3, Fp2, F8, F4, Fpz, when available) and re-referenced to a common average reference before further analysis. From the EEG dataset of 1100 sleeping babies (Schetinin and Jakaite, 2017), epochs whose average envelope amplitude exceeded two standard deviations from the mean were considered as possible artifacts and were removed from further analysis. No preprocessing was applied to the EEG dataset of sleeping babies recorded at 40 and 43 PCW, as PSDs were already included in the freely available data (Wielek et al., 2019).
 
-## 1/f exponent
+#### 1/f exponent
 
 The 1/f exponent was extracted on the 5–20 and 5–45 Hz (human and mouse data, respectively) frequency range of PSDs using the FOOOF package (Donoghue et al., 2020) with the ‘fixed’ aperiodic mode. To quantify the 1/f exponent modulation by IN optogenetic stimulation/inhibition, we compared the exponent obtained by PSDs computed on the second half of the optogenetic stimulation with the baseline exponent.
 
-## Spike sorting
+#### Spike sorting
 
 Spike sorting was performed using Klusta (Rossant et al., 2016). Automatically obtained clusters were then manually curated using phy (https://github.com/cortex-lab/phy, Rossant, 2022).
 
-## Spike time tiling coefficient
+#### Spike time tiling coefficient
 
-The STTC, a metric that tracks correlations between spike trains and is robust to changes in firing rate, was calculated as previously described (Cutts and Eglen, 2014; Yang et al., 2021; Figure 3A):(4b)STTC=12PA-TB1-PATB+PB-TA1-PBTA
+The STTC, a metric that tracks correlations between spike trains and is robust to changes in firing rate, was calculated as previously described (Cutts and Eglen, 2014; Yang et al., 2021; Figure 3A):
+
+$$
+STTC=\frac{1}{2}\frac{P_{A}-T_{B}}{1-P_{A}T_{B}}+\frac{P_{B}-T_{A}}{1-P_{B}T_{A}}
+$$
 
 where PA is defined as the proportion of spikes in spike train A that falls within ±Δt of a spike from spike train B. TA is defined as the proportion of time that occurs within (is ‘tiled’ by) ±Δt from the spikes of spike train A. The same applies for PB and TB. The ‘lag’ parameter ±Δt controls the ‘timescale’ at which the STTC is computed, a parameter that we systematically varied across more than three orders of magnitude (from 2.5 ms to 10 s). Baseline STTC analysis was limited to spike trains pairs that were recorded for at least an hour and for which both spike trains had at least 50 spikes (40,921 of 56,613 spike train pairs). To quantify the STTC modulation by IN optogenetic stimulation/inhibition, we compared the STTC derived by spike matrices obtained during the 3 s optogenetic stimulation with the STTC derived by spike matrices obtained during the 3 s preceding optogenetic stimulation.
 
-## Modulation index
+#### Modulation index
 
-The modulation index (MI) is a normalization strategy that was used to compute optogenetically induced changes in firing rate and LFP power. The MI has the desirable property of bounding the normalized value between –1 and 1. MI was computed as:MI=ValuePRE-ValueSTIMValuePRE+ValueSTIM
+The modulation index (MI) is a normalization strategy that was used to compute optogenetically induced changes in firing rate and LFP power. The MI has the desirable property of bounding the normalized value between –1 and 1. MI was computed as:
 
-## Optogenetic modulation of electrophysiological parameters
+$$
+MI=\frac{Value_{PRE}-Value_{STIM}}{Value_{PRE}+Value_{STIM}}
+$$
+
+#### Optogenetic modulation of electrophysiological parameters
 
 Modulation of firing rate by optogenetic manipulation was quantified using the MI and signed-rank testing that compared the firing rate during the last 1.5 s of optical stimulation with the firing rate during the 1.5 s preceding stimulus delivery.
 
-## PCA of spike matrices during optogenetic stimulations
+#### PCA of spike matrices during optogenetic stimulations
 
 The first two PCA components of the spike during optogenetic stimulations were computed on trial-averaged spike trains that were convolved with a Gaussian window (500 ms length, 50 ms standard deviation) and z-scored across the time dimension.
 
-## Statistical modeling
+### Statistical modeling
 
 Statistical modeling was carried out in the R environment. All the scripts and the processed data on which the analysis is based are available from the following github repository: https://github.com/mchini/Chini_et_al_EI_decorrelation (Chini, 2021).
 

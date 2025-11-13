@@ -12,14 +12,14 @@
 
 ### Affiliations
 
-1. https://ror.org/00xjwyj62 Department of Laboratory Medicine, The Eighth Affiliated Hospital of Sun Yat-sen University Shenzhen China
-2. https://ror.org/00xjwyj62 Department of Orthopedics, The Eighth Affiliated Hospital of Sun Yat-sen University Shenzhen China
+1. Department of Laboratory Medicine, The Eighth Affiliated Hospital of Sun Yat-sen University Shenzhen China ([ROR:00xjwyj62](https://ror.org/00xjwyj62))
+2. Department of Orthopedics, The Eighth Affiliated Hospital of Sun Yat-sen University Shenzhen China ([ROR:00xjwyj62](https://ror.org/00xjwyj62))
 
 † Corresponding author
 
 ## Abstract
 
-Adjuvants can affect APCs function and boost adaptive immune responses post-vaccination. However, whether they modulate the specificity of immune responses, particularly immunodominant epitope responses, and the mechanisms of regulating antigen processing and presentation remain poorly defined. Here, using overlapping synthetic peptides, we screened the dominant epitopes of Th1 responses in mice post-vaccination with different adjuvants and found that the adjuvants altered the antigen-specific CD4 + T-cell immunodominant epitope hierarchy. MHC-II immunopeptidomes demonstrated that the peptide repertoires presented by APCs were significantly altered by the adjuvants. Unexpectedly, no novel peptide presentation was detected after adjuvant treatment, whereas peptides with high binding stability for MHC-II presented in the control group were missing after adjuvant stimulation, particularly in the MPLA- and CpG-stimulated groups. The low-stability peptide present in the adjuvant groups effectively elicited robust T-cell responses and formed immune memory. Collectively, our results suggest that adjuvants (MPLA and CpG) inhibit high-stability peptide presentation instead of revealing cryptic epitopes, which may alter the specificity of CD4 + T-cell-dominant epitope responses. The capacity of adjuvants to modify peptide–MHC (pMHC) stability and antigen-specific T-cell immunodominant epitope responses has fundamental implications for the selection of suitable adjuvants in the vaccine design process and epitope vaccine development.
+Adjuvants can affect APCs function and boost adaptive immune responses post-vaccination. However, whether they modulate the specificity of immune responses, particularly immunodominant epitope responses, and the mechanisms of regulating antigen processing and presentation remain poorly defined. Here, using overlapping synthetic peptides, we screened the dominant epitopes of Th1 responses in mice post-vaccination with different adjuvants and found that the adjuvants altered the antigen-specific CD4+ T-cell immunodominant epitope hierarchy. MHC-II immunopeptidomes demonstrated that the peptide repertoires presented by APCs were significantly altered by the adjuvants. Unexpectedly, no novel peptide presentation was detected after adjuvant treatment, whereas peptides with high binding stability for MHC-II presented in the control group were missing after adjuvant stimulation, particularly in the MPLA- and CpG-stimulated groups. The low-stability peptide present in the adjuvant groups effectively elicited robust T-cell responses and formed immune memory. Collectively, our results suggest that adjuvants (MPLA and CpG) inhibit high-stability peptide presentation instead of revealing cryptic epitopes, which may alter the specificity of CD4+ T-cell-dominant epitope responses. The capacity of adjuvants to modify peptide–MHC (pMHC) stability and antigen-specific T-cell immunodominant epitope responses has fundamental implications for the selection of suitable adjuvants in the vaccine design process and epitope vaccine development.
 
 ## Introduction
 
@@ -35,7 +35,7 @@ In this study, using MPLA, CpG, and MDP adjuvants and H. pylori antigens, we dem
 
 ## Results
 
-## Immunodominant T-cell epitope hierarchy varies in mice vaccinated with different adjuvants
+### Immunodominant T-cell epitope hierarchy varies in mice vaccinated with different adjuvants
 
 To determine the influence of adjuvants on the specificity of immune responses, BALB/c mice were vaccinated with antigen UreB, an effective antigen for the H. pylori vaccine, combined with the adjuvants CpG, MDP, and MPLA. Then, antigen-specific T-cells from immunized mice were expanded and their interferon-γ (IFN-γ) responses to 93 UreB overlapping 18mer peptides were screened using flow cytometry. T-cells from the CpG group exhibited a dominant response to 18mer peptides U313–330 and U403–426, while T-cells from the MDP group exhibited a dominant response to U409–426 and U481–498. T-cells from the MPLA group primarily recognized U313–U330 and U505–522, whereas U481–U504 was the dominant region in T-cells from the no-adjuvant group (Figure 1). These data indicate that immunodominant epitopes responding to antigen-specific T-cells varied in different adjuvant vaccination groups.
 
@@ -43,21 +43,41 @@ To determine the influence of adjuvants on the specificity of immune responses, 
 
 **Figure 1.:** Spleens were collected from mice on day 10 post-vaccination with the antigen UreB incorporated with adjuvants CpG, MDP, and MPLA; cultured in vitro; and stimulated with a panel of overlapping UreB 18 mer peptides to assess the responsiveness of CD4+ T-cells for interferon-γ (IFN-γ) using ICS. The percentages of CD4+ T-cells secreting IFN-γ against each peptide were determined using flow cytometry. Locations of the dominant peptides in different groups are indicated. The results are representative of three independent experiments.
 
-## Profiling MHC-II peptides in adjuvant-treated APCs
+### Profiling MHC-II peptides in adjuvant-treated APCs
 
 Considering that T-cell repertoires are the same in naïve mice, we speculate that dominant epitope variations in different adjuvant vaccination groups result from alterations in APCs peptide presentation. To investigate the MHC-II–peptide repertoire presented by APCs, antigens from H. pylori ultrasonic supernatant were used to pulse H-2d A20 cells combined with the adjuvants CpG, MDP, and MPLA. MHC-II–peptide complexes were immunoprecipitated. Bound peptides were eluted and identified by liquid chromatography–tandem MS (LC-MS/MS; Figure 2A). The whole proteomes of protein-pulsed A20 cells were also analyzed by LC-MS/MS to examine the effect of adjuvants on extracellular antigen phagocytosis and antigen processing- and presentation-associated protein expression.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/99173/elife-99173-fig2-v1.jpg)
+
+**Figure 2.:** A20 cells were treated with CpG ODN, MDP, or MPLA incorporated with Helicobacter pylori antigens for 12 hr. Most cells (108) were lysed for immunopeptidomics and the remaining cells (107) were used for proteomics. (A) Experimental flow chart. (B) Number of MHC peptides identified in the different adjuvant-treated groups (n=3, biological replicates). The numbers indicate mean values. (C) Length distribution of MHC peptides in different adjuvant-treated groups. (D) Sequence motifs of the MHC peptides identified in the adjuvant-treated groups. (E) Binding heatmaps of all eluted MHC peptides between 9–22 mer in adjuvant-treated groups were predicted and assigned to alleles using NetMHCIIpan. ns: not significantly different (p>0.05).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/99173/elife-99173-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Logo plots of the identified MHC peptides for individual alleles H2-IA and H2-IE were analyzed. The fractions of MHC peptides between 9–22 mer binding to each allele are shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/99173/elife-99173-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) 5×108 J774A.1 cells and 108 A20 cells were used for immunopeptidomics. The number of MHC peptides was compared. Less than 350 MHC peptides in J77A.1 cells and more than 5500 MHC peptides in A20 cells were observed at a peptide spectrum match (PSM) level of <1.0% false discovery rate (FDR). (B) J774.1 and A20 cell surface markers were stained with specific antibodies or corresponding isotype controls. Then, expression levels were compared between J774.1 and A20 cells (n=3, biological replicates). MFI, mean fluorescence intensity. ****p<0.0001.
 
 A total of 4074 peptides were identified: 3408, 3257, 3227, and 3330 peptides in the PBS, MDP, MPLA, and CpG groups, respectively. As expected, the number and length distributions of the peptides were not influenced by the adjuvants (Figure 2B and C). Most identified peptides were 16 mer. Next, the binding motifs of all identified peptides were analyzed (Figure 2D). No obvious differences were observed following the adjuvant treatment. The binding motifs of the peptides per individual MHC-II allele, H2-IA, and H2-IE, were also analyzed (Figure 2—figure supplement 1). No major differences were detected. The amino acids observed at the main anchor locations were consistent with the expected binding motifs. The binding affinity data predicted using NetMHCIIpan showed that most MS-detected peptides bind to MHC-II alleles (% rank <10) and are generally assigned to the H2-IA allele (Figure 2E; Figure 2—figure supplement 1). These results indicate that adjuvants did not affect MHC-II binding characteristics.
 
 We also selected another H-2d cell J774A.1, a macrophage cell line, for immunopeptidome analysis in this study. Briefly, 5×108 J774A.1 cells were used for immunopeptidomics. Moreover, fewer than 350 peptides were observed at a peptide spectrum match (PSM) level of <1.0% false discovery rate (FDR). However, more than 5500 peptides were detected in 108 A20 cells at FDR <1.0% (Figure 2—figure supplement 2A). CD86 and MHC-II molecule expression on J774A.1 cell was substantially lower than that on A20 cells (Figure 2—figure supplement 2B). Low MHC-II expression on J774A.1 cell could be the reason for the lack of peptides identified by LC–MS/MS. Thus, A20 cells instead of J774A.1 cells were used for the subsequent experiments.
 
-## Adjuvants affected the presentation of exogenous peptides exclusively
+### Adjuvants affected the presentation of exogenous peptides exclusively
 
 Next, we examined the exogenous peptides across the H. pylori genome from the MHC-II immunopeptidome. Surprisingly, H. pylori contained more than 3000 proteins, but less than 30 proteins were detected in the MHC-II immunopeptidomes (Figure 3A). To test whether the MHC-IP (MHC-immunoprecipitation) proteins had higher expression in bacteria, we ranked the individual H. pylori proteins according to their abundance. The abundance of MHC-IP-identified proteins in the entire H. pylori proteome MS data was analyzed, and we found that the abundance of these proteins was similar to that of other bacterial proteins (Figure 3B). We then verified whether MHC-IP proteins harbor more peptides compatible with MHC-II by comparing the ratio between the number of peptides predicted to bind MHC-II alleles and the total number of 13- to 17-mer. MHC-IP proteins contained more presentable peptides than most other bacterial proteins (Figure 3C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/99173/elife-99173-fig3-v1.jpg)
+
+**Figure 3.:** (A) Peptide locations across the Helicobacter pylori genome from MHC-II immunopeptidomes. (B) Rank plot of each protein abundance detected in the whole-proteome of bacterial ultrasonic supernatant antigens. Proteins identified in immunopeptidomes are annotated with their respective gene names. (C) MHC-II presentation potential of bacterial proteins. All reported H. pylori proteins were ranked according to the ratio between the number of peptides predicted to be presented by MHC-II alleles (rank ≤2) and the total number of 13- to 17-mer. Proteins identified in immunopeptidomes are annotated with their respective gene names. (D) Heatmap of exogenous MHC peptides from different adjuvant groups. The identified sequences are shown. (E) Numbers of MHC peptides derived from bacteria and hosts were compared among different adjuvant groups. n=3. **p<0.01, ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/99173/elife-99173-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Heatmap showing the host MHC peptides from the MHC-II immunopeptidome. (B) Venn diagrams showing the distribution of bacterial and host MHC peptides in different adjuvant groups. Fractions of bacterial and host-conserved and non-conserved MHC peptides were analyzed. The number and percentage of peptides are indicated. ****p<0.0001.
+
 By analyzing the host and exogenous MHC-II peptides present in different adjuvant groups, we found that 82.4% host MHC-II peptides were present in all the groups; however, only 34.4% exogenous MHC-II peptides were conserved after adjuvant treatment (Figure 3D; Figure 3—figure supplement 1). These data indicate that adjuvants affect exogenous peptide presentation. Many exogenous peptides are missing after adjuvant MPLA or CpG treatment. However, no changes were detected in the number of peptides in the host (Figure 3E). These data indicate that the repertoires of exogenous peptides presented by APCs are affected exclusively by adjuvants, and a smaller number of peptides are present.
 
-## Adjuvants may affect antigen processing but not phagocytosis
+### Adjuvants may affect antigen processing but not phagocytosis
 
 To test whether the changes in exogenous peptide presentation among adjuvant groups could be explained by differences in antigen phagocytosis, we examined whole-proteome data. We observed a strong correlation between the bacterial protein abundances in different adjuvant-treated groups (Figure 4A). We then compared the abundance of bacterial proteins in the proteome and MHC-II immunopeptidomes and found that the bacterial protein abundance in the immunopeptidome changed significantly among the adjuvant-treated groups, and no peptides of several bacterial antigens were detected in some groups. However, only several proteins showed altered abundance in the proteome (Figure 4B). These results suggest that the changes in exogenous peptide presentation among the adjuvant groups cannot be explained by antigen phagocytosis.
 
@@ -67,13 +87,29 @@ To test whether the changes in exogenous peptide presentation among adjuvant gro
 
 To further investigate how adjuvants affect bacterial antigen processing and presentation, we ranked individual bacterial proteins and MHC-II peptides according to their abundance and compared them with those from the host. The overall abundance of bacterial proteins in the APCs proteome was low (Figure 5—figure supplement 1A). Individual bacterial protein expression was below that of most host proteins in both the PBS- and adjuvant-treated groups (Figure 5A). In contrast to the low abundance of bacterial proteins, the intensities of their MHC-II peptides were similar to those of peptides from the host in the PBS-treated group according to the immunopeptidome data (Figure 5B), indicating that bacterial peptides are preferentially present. However, in the MPLA- and CpG-treated groups, the intensities of bacterial MHC-II peptides in the immunopeptidome were much lower than those in the hosts (Figure 5B). These results indicate that adjuvants MPLA and CpG restrain bacterial peptide presentation.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/99173/elife-99173-fig5-v1.jpg)
+
+**Figure 5.:** (A) Rank plot of host and bacterial protein abundances in the whole-proteome and (B) MHC–peptide abundances from immunopeptidomes of different adjuvant groups. Bacterial proteins are marked with red, and some of them are annotated with their respective gene names. Bacterial MHC peptides are annotated with their respective amino acid sequence. (C) Volcano plots comparing protein levels between PBS- and adjuvant-treated groups in the whole-proteome. Proteins involved in antigen processing, ubiquitination, proteasome, and peptidase, and interferon (IFN) pathways are colored accordingly. Above the dashed line (p<0.01) means significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/99173/elife-99173-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Percentage of bacterial protein abundances in the total whole proteomes. (B) Volcano plots comparing protein levels among adjuvant-treated groups (the dashed line: p<0.01). (C) Abundances of proteins (log10 protein iBAQ) involved in antigen processing and presentation in the whole-proteome analysis.
+
 We then investigated whole-proteome data to determine the evidence of adjuvant modification of antigen presentation. We focused on the proteins involved in antigen processing, peptidase function, ubiquitination pathway, and IFN signaling. The ubiquitination pathway and IFN signaling play crucial roles in the modification of antigen presentation and immune responses. Through KEGG enrichment analysis, we found that many proteins involved in antigen processing, peptidase function, ubiquitination pathways, and IFN signaling were altered after adjuvant treatment, particularly in the MPLA- and CpG-treated groups (Figure 5C; Figure 5—figure supplement 1B). The expression of each protein is shown in Figure 5—figure supplement 1C and Supplementary file 1. These data suggest that MPLA and CpG adjuvants may affect the antigen processing of APCs, resulting in fewer peptide presentations.
 
-## High-stability epitopes were deficient in MPLA- and CpG-treated groups
+### High-stability epitopes were deficient in MPLA- and CpG-treated groups
 
 We confirmed that the number of peptides from the exogenous antigens was significantly reduced in the MPLA- and CpG-treated groups. To further characterize the adjuvant effects on peptide presentation, the MHC-binding stability of the peptides present in the adjuvant-treated groups and that of the peptide-deficient post-adjuvant stimulation were analyzed using the IEDB website. Compared to that in the PBS-treated group, the IC50 of the peptides binding to H2-IA and H2-IE alleles in the CpG- or MPLA-treated groups were much higher than those of the deficient peptides in the corresponding groups, which indicated that the peptides presented in the MPLA- and CpG-treated groups have lower binding stability for MHC-II (Figure 6A). Similar results were obtained at cutoffs of the predicted percentile rank <2 (Strong Binders) or <10 (Weak Binders) (Figure 6—figure supplement 1). Furthermore, we found that the peptides present in both adjuvant- and PBS-treated control groups were mainly derived from proteins tuf, recA, etc., and the deficient peptides in the MPLA- or CpG-treated group were mainly derived from proteins such as ureA and hopZ (Figure 6B). To validate the amino acid sequences and binding stability of MS-detected peptides, 10 peptides derived from the top four presented and deficient proteins shown in Figure 6B, were synthesized (Figure 6C). The tandem mass spectra of the synthetic peptides and experimental spectra were compared, and strong correlations between fragment ions and retention times were observed (Figure 6D). We then performed an MHC-II competition-binding assay to detect the binding stability of the 10 synthetic peptides in the presence of one competing MHC-II ligand. We confirmed that the peptides missing in the MPLA-/CpG-treated groups had better binding stability for MHC-II molecules than the peptides presented in the adjuvant-treated groups (Figure 6E). These data indicate that epitopes with high binding stability were deficient after MPLA and CpG treatment.
 
-## Low-stability peptides presented in adjuvant-treated groups effectively induce robust T-cell responses
+![Figure 6.](https://cdn.elifesciences.org/articles/99173/elife-99173-fig6-v1.jpg)
+
+**Figure 6.:** (A) IC50 of the presented and deficient peptides post-adjuvant stimulation from immunopeptidome binding to H2-IA and H2-IE were predicted by the NN align method using the IEDB website. The data of peptides from adjuvants MPLA and CpG are shown. High IC50 means low binding stability. Boxes show quartiles, bars indicate medians, and whiskers show distributions. (B) Distribution of proteins corresponding to bacterial MHC peptides from immunopeptidome. The numbers of peptides identified by MS for each protein are indicated. (C) Information of 10 synthetic peptides from Top4 presented and deficient proteins. ×: Presence of peptides in the corresponding group. -: Peptides missing in the corresponding group. (D) Mirror plots with fragment ion mass spectra to confirm the sequences of MHC peptides from immunopeptidome. Positive y-axis, MHC-II IP sequences; negative y-axis, synthetic peptides. (E) Competitive binding curve of synthetic peptides for MHC-II H2-IA allele. n=3. The binding curves of peptides presented in adjuvant groups are marked with red.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/99173/elife-99173-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Peptides binding to MHC-II alleles were screened at cutoffs of percentile rank <2 (Strong Binders) or <10 (Weak Binders) by the NetNHCIIpan_el 4.1 method using the IEBD website. The IC50 of these peptides was predicted and compared using the NN alignment method. IC50 of the presented and deficient peptides after (A) CpG and (B) MPLA stimulation at cutoffs of percentile ranks <2 and <10 were analyzed. *p<0.05, **p<0.01, ***p<0.001.
+
+### Low-stability peptides presented in adjuvant-treated groups effectively induce robust T-cell responses
 
 To evaluate whether the low-stability peptides presented in the adjuvant-treated groups could induce T-cell responses, mice were immunized with a pool of 10 synthetic peptides. Cell responses to individual peptides were detected using IFN-γ ELISpot assay on days 10 (effective phase) and 28 (memory phase) post-immunization (Figure 7A). We found positive responses to the low-stability peptides recA #23 (AFIDAEHALDVHYAKR) and NCTC11637-00693 #38 (IHSQVEANTQAQEGLR) as well as highly stable peptides ureA #2 (ASMIHEVGIEAMFPDGTK), ureA #3(YVEAVALISAHIMEEAR), and hopZ #53(KMLELANQIKTNLSAIPQ) on day 10 (Figure 7B). On day 28, the response to the low-stability peptide recA #23 (AFIDAEHALDVHYAKR) was not weaker than that of the other peptides (Figure 7C). Peptides with low MHC-II stability skew T-cell repertoires toward high-affinity clonotypes that have excellent responses against pathogen infection (Baumgartner et al., 2010; Busch and Pamer, 1999). To assess the functional avidities of T-cell responses induced by the low-stability peptide presented in adjuvant-treated groups, peptide-specific CD4+ T-cells were expanded in vitro. Moreover, the magnitude of IFN-γ responses was detected by ICS using flow cytometry on stimulation with a set of titrated peptides. We found that the low-stability peptide recA #23 induced more robust CD4+ T-cell responses at lower peptide concentrations (Figure 7D). These data suggest that the low-stability peptide presented in the adjuvant-treated groups could induce robust CD4+ T-cell responses effectively.
 
@@ -99,70 +135,325 @@ A high abundance of pathogenic proteins is often preferred as candidate antigens
 
 Taken together, our results reveal that adjuvants influence the pMHC stability on APCs and change the epitope response specificity. In the process of adjuvant selection for vaccines, the adjuvant effect on immune response strength as well as response specificity, particularly for PRR ligand adjuvants, which mainly induce Th1- or CTL-biased responses, should be considered.
 
-## Limitations of the study
+### Limitations of the study
 
 First, the peptides screened in vitro using cell lines did not reflect the in vivo situation. The epitope presentation of APCs can be affected by the APC subtypes and inflammatory cytokines at the inoculation site (Fiebiger et al., 2001), which are difficult to simulate and reproduce in vitro. Second, peptide abundance below the limit of detection may be missed when using LC-MS/MS-based assays, which may cause false negatives. The possibility that these peptides induce immune responses cannot be ruled out. Third, human MHC molecules are more complex than mouse MHC molecules. Thus, whether the conclusions of this study can be generalized to the human population requires further investigation.
 
 ## Materials and methods
 
-## Synthetic peptides, antibodies, and other reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Helicobacter pylori)</td>
+      <td>NCTC 11637; ATCC 43504</td>
+      <td>ATCC</td>
+      <td>Cat#: 43504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>A20 (B cell lymphoma line, BALB/cAnN mouse)</td>
+      <td>ATCC</td>
+      <td>Cat#: TIB-208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>J774A.1 (monocyte/ macrophage cell line, BALB/cN mouse)</td>
+      <td>ATCC</td>
+      <td>Cat#: TIB-67</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (BALB/c Mouse, female)</td>
+      <td>Primary splenic cells</td>
+      <td>VITALSTAR, China</td>
+      <td></td>
+      <td>Freshly isolated from mouse</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45-FITC (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 103108</td>
+      <td>FACS (0.5 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD3-PE-Cy7 (Armenian Hamster monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 100320</td>
+      <td>FACS (2 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IFN-γ- PE/Dazzle594 (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 505846</td>
+      <td>FACS (0.3 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse MHC-II-APC (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 107614</td>
+      <td>FACS (1 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD4-APC (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 100412</td>
+      <td>FACS (1 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD86-PE (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 105007</td>
+      <td>FACS (5 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD80- FITC (Armenian Hamster monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 104706</td>
+      <td>FACS (2 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45- APC-Cy7 (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 147718</td>
+      <td>FACS (1 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD16/32 TruStain FcX PLUS (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 156604</td>
+      <td>FACS (1 ul per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse H2-IAd/IEd antibody (Rat monoclonal)</td>
+      <td>BioXcell</td>
+      <td>Cat#: BE00108</td>
+      <td>IP (2 mg per sample)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- Mouse MHC-II (I-A/I-E) antibody (Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 14-5321-82</td>
+      <td>MHC binding assay (10 μg/ ml)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Murine IL-2</td>
+      <td>PeproTech</td>
+      <td>Cat#: 212–12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Urease B subunit</td>
+      <td>This paper</td>
+      <td>Recombinant protein</td>
+      <td>Purified (purity &gt;95%) by ourselves.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>All peptides used in this paper</td>
+      <td>China Peptides</td>
+      <td>peptide</td>
+      <td>Customized (sequences were shown in the paper)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Purified mouse MHC-II</td>
+      <td>Proimmune</td>
+      <td></td>
+      <td>Customized</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IFN-γ precoated ELISpot kit</td>
+      <td>Dakewe</td>
+      <td>Cat#: 2210003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cyto-Fast Fix/Perm Buffer Set</td>
+      <td>Biolegend</td>
+      <td>Cat#: 426803</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MPLA-SM</td>
+      <td>Invivogen</td>
+      <td>Cat#: tlrl-mpla2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MDP</td>
+      <td>Invivogen</td>
+      <td>Cat#: tlrl-mdp</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CPG ODN</td>
+      <td>Invivogen</td>
+      <td>Cat#: tlrl-1826</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brefeldin A Solution</td>
+      <td>Biolegend</td>
+      <td>Cat#: 420601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CNBr-activated Sepharose</td>
+      <td>Cytivia</td>
+      <td>Cat#: 17-0430-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHAPS</td>
+      <td>Millipore</td>
+      <td>Cat#: 1116620001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Europium-Streptavidin</td>
+      <td>Abcam</td>
+      <td>Cat#: ab270228</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Complete Freund’s Adjuvant, CFA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: F5881-10ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>SPSS</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MHC-II binding prediction</td>
+      <td>IEDB</td>
+      <td>RRID:SCR_006604</td>
+      <td>https://www.iedb.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prediction of peptide-MHC-II binding motifs</td>
+      <td>MhcVizPipe (CaronLab, 2021)</td>
+      <td></td>
+      <td>https://github.com/CaronLab/MhcVizPipe/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Aseptic rabbit blood</td>
+      <td>Sbjbio</td>
+      <td>Cat#: SBJ-ST-RAB002</td>
+      <td>For making H. pylori culture plates</td>
+    </tr>
+  </tbody>
+</table>
+
+### Synthetic peptides, antibodies, and other reagents
 
 The 18mer peptides overlapping by 12 amino acids derived from antigen UreB were synthesized and puriﬁed (purity >90%) by ChinaPeptides (Shanghai, China). All peptides were dissolved in dimethyl sulfoxide (DMSO; Sigma-Aldrich, MO, USA) and stored at −80 °C.
 
-## Cell culture
+### Cell culture
 
 Mouse A20 (H-2d, B-cell lymphoma cell line) and J774A.1 (H-2d, monocyte/macrophage cell line) cells were obtained from the American Tissue Culture Collection (ATCC, VA, USA), and confirmed to be free of mycoplasma contamination. The identity of cell lines was authenticated through STR profiling. A20 cells were cultured in RPMI 1640 medium (Gibco) containing 10% fetal bovine serum (FBS; Biological Industries, Kibbutz Beit Haemek, Israel), 1% L-glutamine (Gibco), and 1% penicillin/streptomycin (Gibco). J774A.1 cells were maintained in DMED (Gibco) supplemented with 10% FBS, 1% L-glutamine, and 1% penicillin/streptomycin. All cell lines were maintained at 37 °C in a humidified incubator with 5% CO2.
 
-## Mice immunization and specific T-cell bulk culture
+### Mice immunization and specific T-cell bulk culture
 
 This study was approved by the Animal Ethics Review Committee of the Eighth Affiliated Hospital of Sun Yat-Sen University.
 
 Six- to eight-week-old SPF female BALB/c mice were immunized subcutaneously with 100 μg recombinant H pylori UreB (rUreB, purity >95%) emulsified in adjuvants CpG (20 μg/ mouse), MDP (30 μg/ mouse), and MPLA (10 μg/ mouse). Mice immunized with the same antigen without adjuvants were used as controls. Ten days later, the mice were euthanized with Carbon Dioxide (CO₂), and their spleens were harvested. Antigen-specific T-cells were expanded in vitro as described previously (Li et al., 2015). Briefly, the lymphocytes from spleens were isolated using a Ficoll–Hypaque (Dakewe, Shanghai, China) gradient, pulsed with 0.5 μM rUreB protein in the presence of 5 U/mL rmIL-2 (PeproTech, NJ, USA), and in vitro cultured in ‘RF-10’ medium consisting of RPMI 1640 (Gibco, CA, USA) supplemented with 10% fetal calf serum (Gibco), 1% L-glutamine, 1x 2-mercaptoethanol (Gibco), and 100 U/mL penicillin/ streptomycin. On day 5, the live cells were collected using a Ficoll–Hypaque gradient and cultured in a complete medium containing 20 U/mL rmIL-2. Half the medium was replaced when required.
 
-## Flow cytometry
+### Flow cytometry
 
 Bulk-cultured T-cells were stimulated with 5 μM peptides for 5 hr in the presence of brefeldin A (BioLegend). The cells were collected and stained with specific antibodies against surface markers. Intracellular cytokine staining was performed after fixation. Cells were acquired using an LSRFortessa Flow Cytometer (BD Biosciences) or a Navios Flow Cytometer (Beckman Coulter, FL, USA). The data were analyzed using FlowJo software (Tree Star, CA, USA).
 
-## H. pylori lysate preparation
+### H. pylori lysate preparation
 
 Helicobacter pylori strain NCTC 11637 (ATCC) was cultured on brain–heart infusion plates with 10% rabbit blood (Sbjbio, Nanjing, China) at 37 ℃ under microaerophilic conditions. Then, H. pylori was amplified in Brucella broth with 5% FBS (BI) at 37℃ under microaerophilic conditions with gentle shaking for 24 hr. The bacteria were collected, washed, and re-suspended in PBS (Gibco) for lysis using an ultrasonic dismembrator (Biosafer, Nanjing, China). The lysates were centrifuged at 4℃ and 12000×g for 20 min. The supernatant was stored at −80℃ for subsequent experiments.
 
-## MHC-II complex immunoprecipitation
+### MHC-II complex immunoprecipitation
 
 A20 cells were cultured in T75 cell culture flasks (Corning, NY, USA). The expanded cells were pulsed with H. pylori lysates in combination with adjuvants MPLA, MDP, or CpG for 12 hr, collected, washed twice with sterile PBS, and divided into two fractions. One fraction, approximately 107 cells, was used for whole-proteome analysis. The remaining 108 cells were lysed in cold lysis buffer (1.0% w/v CHAPS, Protease Inhibitor tablet, and PMSF) for MHC-II complex immunoprecipitation. The cell lysates were centrifuged at 18,000×g for 20 min. The supernatant (containing the MHC–peptide complexes) was transferred into a new 1.5 mL microcentrifuge tube (Corning) containing a mixture of Sepharose CNBr-activated beads (Cytivia, Utah, USA) and 2 mg Anti-Mouse H2-IAd/IEd (M5/114) antibody (BioXcell, NH, USA). The immune complexes were captured on the beads by incubating on a rotor at 4℃ for 18 hr. Sequentially, the immune complexes were transferred to a polypropylene column (Bio-Rad Laboratories, Hercules, CA, USA) and washed with 10 mL buffer A (150 mM NaCl, 20 mM Tris, pH 8.0), 10 mL buffer B (400 mM NaCl, 20 mM Tris, pH 8.0), 10 mL buffer A, and 10 mL buffer C (Tris 20 mM, pH 8.0). The MHC-II–peptide complexes were eluted with 300 µL 10% glacial acetic acid (Macklin, Shanghai, China) three times. The eluate was stored at −80℃ until mass spectrometry analysis was performed.
 
-## MHC-II peptidome LC-MS/MS data generation
+### MHC-II peptidome LC-MS/MS data generation
 
 MHC peptides were eluted and desalted from the beads as described previously (Sirois et al., 2021). The lyophilized peptides were re-suspended in ddH2O containing 0.1% formic acid and 2 μL aliquots were loaded to a nanoViper C18 (Acclaim PepMap 100, 75 μm×2 cm) trap column. Online chromatographic separation was performed using an Easy nLC 1200 system (Thermo Fisher Scientific, MA, USA). The trapping and desalting procedures were performed with 20 μL 100% solvent A (0.1% formic acid). Then, an elution gradient of 5–38% solvent B (80% acetonitrile, 0.1% formic acid) in 60 min was used on an analytical column (Acclaim PepMap RSLC, 75 μm×25 cm C18-2 μm 100 Å). Data-dependent acquisition (DDA) mass spectrometry was used to acquire tandem MS data on a Q Exactive mass spectrometer (Thermo Fisher) fitted with a Nano Flex ion source using an ion spray voltage of 1.9 kV and an interface heater temperature of 275℃. For a full mass spectrometry survey scan, the target value was 3×106 and the scan ranged from 350 to 2000 m/z at a resolution of 70,000 and a maximum injection time of 100 ms. For the MS2 scan, only spectra with a charge state of 2–5 were selected for fragmentation by high-energy collision dissociation with a normalized collision energy of 28. The MS2 spectra were acquired in the ion trap in rapid mode with an AGC target of 8000 and a maximum injection time of 50 ms. The dynamic exclusion was 25 s.
 
-## Whole-proteome LC-MS/MS data generation
+### Whole-proteome LC-MS/MS data generation
 
 Protein aliquots were mixed with 200 μL 8 M urea in Nanosep Centrifugal Devices (PALL) and centrifuged at 12,000×g at 20℃ for 20 min. All the centrifugation steps were performed under the same conditions, allowing for maximal concentration. Then, 200 μL 8 M urea solution with 10 mM DTT was added, and the reduction reaction was performed for 2 hr at 37°C. The solution was removed by centrifugation and 200 μL 8 M urea solution with 50 mM iodoacetamide (IAA) was added. The samples were incubated in the dark for 15 min at room temperature. The ultra-fraction tube was washed with 200 μL 8 M urea three times and 200 μL 25 mM ammonium bicarbonate three times by centrifugation at 12,000×g for 20 min at room temperature. Then, 100 μL 25 mM ammonium bicarbonate containing 0.01 μg/μL trypsin was added to each filter tube and incubated at 37°C for 12 hr. The filter tubes were washed twice with 100 μL 25 mM ammonium bicarbonate by centrifugation at 12,000×g for 10 min. The flow-through fractions were collected and lyophilized.
 
 The lyophilized peptides were re-suspended in ddH2O containing 0.1% formic acid, and 2 μL aliquots were loaded to a nanoViper C18 (Acclaim PepMap 100, 75 μm×2 cm) trap column. Online chromatographic separation was performed using an Easy nLC 1200 system (Thermo Fisher). The trapping and desalting procedures were carried out with 20 μL 100% solvent A (0.1% formic acid). Then, an elution gradient of 5–38% solvent B (80% acetonitrile, 0.1% formic acid) in 60 min was used on an analytical column (Acclaim PepMap RSLC, 75 μm×25 cm C18-2 μm 100 Å). A TimsTof Pro2 mass spectrometer (Bruker, USA) fitted with a Bruker captive spray ion source was operated in DIA-PASEF mode with a scan range of 100–1700 m/z and 10 PASEF ramps. The TIMS settings were 100ms ramp and accumulation time (100% duty cycle) and 9.42 Hz ramp rate; this resulted in 1.8 s cycle time and setting at a 5000 absolute intensity threshold. The collision energy remained at the default with a base of 1.60 /K0[V s/cm2] set at 59 eV and a base of 0.60 /K0[Vs/cm2] set at 20 eV. Active exclusion was enabled with a 0.4 min release. TIMS ranges were initially set from one range of 0.60–1.60 /K0[V s/cm2], as seen in most published studies.
 
-## Peptide identification verification
+### Peptide identification verification
 
 The screened peptides were verified using synthetic peptides. Peptides were synthesized by ChinaPeptides (Shanghai, China) at a purity >90% and dissolved to 10 mM with DMSO. For LC-MS/MS measurements, the peptides were pooled and further diluted with 0.1% FA/3% ACN to load 120 fmol/mL on the column. LC-MS/MS measurements were performed as previously described. The experimental and synthetic sequences were confirmed by plotting fragment ion mass spectra.
 
-## MHC-II–peptide binding assay in vitro
+### MHC-II–peptide binding assay in vitro
 
 A competition assay based on the binding of a high-affinity biotin-labeled control peptide (biotin–(Ahx)–(Ahx)–YAHAAHAAHAAHAAHAA) to MHC-II molecules was used to test peptide binding to MHC-II molecules. The assays were performed as previously described (Salvat et al., 2014). Briefly, test peptides were diluted to a series of concentrations and co-incubated with 0.1 μM biotin-labeled peptide and 50 nM purified MHC-II proteins (ProImmune, Oxford, UK) at 37 °C for 24 hr in the presence of octyl-β-D-glucopyranaside (Sigma-Aldrich). The binding reaction was neutralized and the products were transferred to MHC Class II (I-A/I-E) monoclonal antibody (M5/114.15.2) (Thermo Fisher)-coated ELISA plates (Corning), which were incubated at 4 °C overnight. Finally, diluted europium–streptavidin (Abcam, MA, USA) was added to each well of the ELISA plate, and the fluorescence was read using a time-resolved fluorescent plate reader (Thermo Fisher Scientific, MA, USA) with europium settings. Each peptide was tested at eight concentrations in three independent experiments.
 
-## Peptide immunization and ELISpot assay
+### Peptide immunization and ELISpot assay
 
 Six- to eight-week-old SPF female BALB/c mice were immunized subcutaneously with a pool of synthetic peptides (50 μg for each peptide) emulsified in Complete Freunds Adjuvant (Sigma-Aldrich). At 10 and 28 days post-vaccination, the mice were euthanized, and the spleens were removed for ELISpot assays.
 
 Splenocytes (500,000 cells/well) were treated with red blood cell lysis buffer and stimulated with 5 μM peptides in triplicate in ELISpot plates (Dakewe Biotech, Shenzhen, China) for 18 hr. IFN-γ secretion was detected using capture and detection antibodies and imaged using an ELISpot & FluoroSpot Reader (Mabtech, Stockholm, Sweden). OVA peptide323–339 (ISQAVHAAHAEINEAGR) and non-stimulated wells were used as negative controls. PMA (BioGems, NJ, USA) was used as a positive control. A threefold increase over baseline was used as the threshold for positive responses.
 
-## Peptide–MHC-II binding motif prediction
+### Peptide–MHC-II binding motif prediction
 
 The peptide–MHC-II binding motifs, alignment, and peptide clustering were predicted using the MhcVizPipe (MVP) software tool (CaronLab, 2021, https://github.com/CaronLab/MhcVizPipe). The MHC-II alleles I-Ad or I-Ed were selected while maintaining all standard parameters.
 
-## MHC-II binding prediction
+### MHC-II binding prediction
 
 The online tools NetMHCIIpan 4.1, SMM alignment, and NN_ alignment in IEDB (https://www.iedb.org/) were used to predict the binding of peptides to MHC-II alleles. To test whether MS-detected proteins harbored more peptides compatible with MHC-II binding motifs, all H. pylori strain NCTC 11637 protein sequences were retrieved from the UniProt database, and the ratio between the number of peptides predicted to bind MHC-II alleles and the total number of 13- to 17-mer at a cutoff of predicted percentile rank values (%) <2 were compared.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are shown as mean ± SD. One-way analysis of variance (ANOVA) was performed to compare statistical significance among three or more groups. Student’s t-test was used to compare the differences between the two groups; however, when the variances differed, the Mann–Whitney U test was used. The chi-square test was used to analyze the differences in the constituent ratios between the two groups. Pearson’s correlation was used to test the correlation between two continuous variables, and Spearman’s correlation was used for categorical variables. SPSS statistical software (version 25; SPSS Inc, IL, USA) and GraphPad Prism (version 9.0; GraphPad Software, CA, USA) were used for the statistical analyses. p<0.05 was considered statistically significant.

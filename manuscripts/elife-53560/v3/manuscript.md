@@ -41,37 +41,73 @@ To establish the normal range of metabolic rate under standardized experimental 
 
 ## Results
 
-## Factors influencing metabolic rate in mice
+### Factors influencing metabolic rate in mice
 
 To understand the different components affecting mouse metabolism, cohorts of genetically identical mice were shipped to four independent US MMPCs and assessed longitudinally over 12 weeks in indirect calorimeters while on LFD or HFD. Weekly body masses were similar among institutions for mice on LFD but diverged significantly among mice on HFD (Figure 1A and B). Regression plots of 24 hr average energy expenditure (EE) versus total body mass showed distinct site-specific metabolic rates which could be attributed to differences in body mass for mice on LFD or HFD (Figure 1C and D). Mice at each site and overall had a positive association between mass and EE. This mass effect reflects the biological consequence of Newton’s 2nd law of motion, whereby movement of greater mass requires more energy, and by extension larger animals require more energy for both resting metabolism and to perform work under standard conditions (Kleiber, 1932; White and Seymour, 2005). For mice on LFD, animals at each institution formed distinct slopes and intercepts indicative of location-specific differences in housing temperature, experimental apparatus, microbiome, and other factors. For animals on 4 or 11 weeks of HFD, we observed identical slopes with different intercepts (Figure 1D). This suggests that the relationship of EE to mass among genetically identical mice is similar despite absolute differences in EE at different locations.
 
-## Low-fat and high-fat diets
+![Figure 1.](https://cdn.elifesciences.org/articles/53560/elife-53560-fig1-v3.jpg)
+
+**Figure 1.:** Body weights of WT C57BL/6J mice maintained on LFD (A) or HFD (B). Indirect calorimetry was performed at 0 (ο), 4 (Δ), or 11 (□) weeks. EE rates vs total body mass are plotted by site for mice maintained on LFD (C) or HFD (D), with the slope and intercept in kJ/hr indicated for each site. Inset, geographical locations of MMPC sites. Body composition data from mice at 11 weeks on diet (E). The percent variation in EE explained by each of the listed factors (F). The otherwise unattributed institutional variation (16%) (G). n = 6–8 males per group. Error bars represent SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53560/elife-53560-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Plots of metabolic variables vs time are shown for mice on LFD (0 weeks). EE vs time (A). Mean values for the first dark photoperiod vs the mean of the subsequent three dark photoperiods at each site of the MMPC experiment (B). Energy intake (C, D); RER (E, F); Locomotor activity (G, H). Values are hourly means. *, p<0.05. n = 6–8 males per group. Error bars represent SEM. Shaded regions represent the dark or active phases from 18:00 to 6:00.
+
+### Low-fat and high-fat diets
 
 Despite an identical genetic background, a single source colony for all mice, as well as a single source of animal diet, an unexpectedly large weight variation was observed by site among the 30 mice randomly assigned to HFD. Body masses and compositions diverged appreciably, both among institutions and within each site’s colony. The mass variation was not observed for mice on LFD, suggesting strong effects driving obesity which are not encoded by genetic variation in C57BL/6 mice (Figure 1E). We sought to quantify the relative contribution of the likely sources for the variation in EE using a widely adopted method (Grömping, 2006). The R2 of 72% reflects total explained variance and a good overall fit. This analysis reveals the largest source of variation in metabolic rate is body composition. Other sources include activity, time of day (photoperiod), diet and acclimation (Figure 1F). The institutional site of experimentation which can affect these factors accounts for 16.3% of the residual variation not explained by these biological factors (Figure 1G).
 
-## Role of acclimation on indirect calorimetry data
+### Role of acclimation on indirect calorimetry data
 
 Rodents engage in a behavioral response when challenged with a novel environment (Archer, 1975). While there are no firm guidelines for how long mice may need to acclimate to indirect calorimeters, age, strain and diet can impinge on acclimation time. Here we defined the acclimation period as the first 18 hr or prior to the start of the first full photoperiod in the calorimeter. Analyses of the pre-acclimation and post-acclimation dark photoperiods were performed for each site. The hourly mean values for EE, energy intake, and respiratory exchange ratio (RER) from all four sites are plotted vs time. The strong effects of entrainment to 12 hr light/dark photoperiods produce differences at all sites for all parameters measured. The effects of acclimation were highly variable, differentially affecting mice at each location. At one of the four sites, EE increased following acclimation (Figure 1—figure supplement 1A and B). Similarly, energy intake was increased at only one site in non-acclimated mice (Figure 1—figure supplement 1C and D). The RER value, representing substrate oxidation, was significantly altered in three of four sites (Figure 1—figure supplement 1E and F). In this study, locomotor activity was not significantly impacted by lack of acclimation (Figure 1—figure supplement 1G and H). Overall, lack of acclimation adds a small but unpredictable level of noise and variation to the measurements tested.
 
-## Role of mass and body composition in energy expenditure
+### Role of mass and body composition in energy expenditure
 
 How HFD feeding contributes to obesity has been a topic of detailed investigation. Both male and female C57BL/6 mice typically gain weight on a diet high in fat (Johnston et al., 2007; West et al., 1992). The degree of weight gain however is highly variable and consequently there is considerable heterogeneity in the underlying mechanisms involving energy intake, metabolic rate, and absorption (Kohsaka et al., 2007; Lin et al., 2000; Mayer and Yannoni, 1956; Storlien et al., 1986; Yang et al., 2014). Here, we compare the calorimeter-determined energy intake and EE responses of WT male mice to HFD feeding at four different locations. After 11 weeks on LFD or HFD, as before, the EE was dependent on body mass (slopes of kJ/hr vs gram body weight) for all mice at all sites. However, HFD did not significantly alter this relationship except at one center (Figure 2A). We fitted the LFD mouse data at each site to a model including body mass and activity to predict expected values for mice on HFD. The difference from the expected values, or residual values from this fit show an overall decrease in the EE of HFD mice relative to the predicted EE (Figure 2B). We similarly examined how rates of energy intake changed with diet and found a surprising degree of variance among sites (Figure 2C and D). Body weight is ultimately affected by long-term differences in energy balance (energy intake minus EE). When calculating the difference between calories consumed and calories expended, as before, we observed a large variation in responses to HFD, including positive and negative changes in energy balance (Figure 2E and F). However, energy intake was the primary driver of energy balance. These findings serve to underscore the large site-specific effects that contribute to variability of metabolism. To evaluate the contribution of body composition to the variable metabolic rates observed between sites, we used lean mass values as the covariate for our ANCOVA analysis (Figure 2—figure supplement 1A–1C). In three of four sites, HFD altered the dependency of EE on lean mass. At one site, HFD altered the dependency of energy intake on lean mass. We also explicitly calculated the relative contribution of fat mass to EE using multiple linear regression and found an unexpectedly large range of fat mass contributions varying from +33% to −19% (Figure 2—figure supplement 1D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53560/elife-53560-fig2-v3.jpg)
+
+**Figure 2.:** Regression plots for each of the MMPC sites vs mass (left). A regression model fitted to LFD mice for site, mass, and locomotor activity was established; the deviation from the predicted values is shown as residuals (right). EE (A–B). Energy intake (C–D). Energy balance (E–F). Time-dependent plots for the UC Davis site after 11 weeks on HFD including EE (G), RER (H), hourly energy intake (I), cumulative energy intake (J), energy balance (K), and locomotor activity (L). Values are hourly means (G–L). *, p<0.05. n = 6–8 males per group. Error bars represent SEM. Shaded regions represent the dark photoperiod from 18:00 to 6:00.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53560/elife-53560-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Data as in Figure 3, using the lean mass as the covariate in place of total mass. Regression plots for each of the MMPC sites vs mass. EE (A). Energy intake (B). Energy balance (C). Relative contribution of fat mass to EE for each site from a linear regression model (D). n = 6–8 males per group.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53560/elife-53560-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Plots of change in energy balance (Energy intake minus EE) vs change in body weight (mass at start of experiment minus mass at end of experiment). MMPC (n = 56 males) (A). IMPC (n = 3738 males and 2140 females) (B).
+
 When we examined the time course of the calorimetry data for all the centers, they demonstrated the characteristic circadian patterns of EE, activity and RER in animals on LFD during the 3-day period (Figure 2G, L and H). Moreover, on HFD, EE was increased, and RER was decreased. Total energy intake and cumulative intake were increased by HFD, yet energy balance was unaltered by diet reflecting a neutral energy balance and weight stability (Figure 2K) while in the calorimeter. We also plotted change in energy balance vs weight change between the start and end of the first calorimetry experiment at week 0 (Figure 2—figure supplement 2A). The normal circadian patterns seen in these mice, as well as the positive linear relationship between their energy balance and mass balance (i.e. animals in positive energy balance tend to gain weight) speak to the quality of the acquired data.
 
-## Application to large-scale dataset. A role for location, temperature, mass and sex
+### Application to large-scale dataset. A role for location, temperature, mass and sex
 
 To understand the relevance of the initial analysis, we applied this approach to the IMPC dataset (Rozman et al., 2018). We similarly plotted the change in energy balance vs weight change between the start and end of the IMPC calorimetry experiments. The data appear to be of high quality as indicated by the expected positive linear relationship. Furthermore, mice in positive energy balance showed a higher RER consistent with carbohydrate oxidation, and mice with weight loss exhibit a lower RER consistent with oxidizing endogenous fat stores (Figure 2—figure supplement 2B).
 
 The IMPC data demonstrate a pronounced mass effect, representing that bigger male and female animals expend more energy under standard housing conditions. The IMPC data include results of indirect calorimetry performed on 32,748 distinct animals including 9358 WT C57BL/6N mice at 10–11 weeks of age. 69% of these mice were male. The mean body mass of female mice is lower than that for male mice (at 21.7 g and 27.4 g respectively; Figure 3A). In this analysis, there is a small but significant difference in the slope of the relationship between EE and body mass in WT male and female mice (Figure 3B and Figure 3—source data 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/53560/elife-53560-fig3-v3.jpg)
+
+**Figure 3.:** Distribution of body weights for male and female WT C57BL/6N mice from the IMPC database version 10.0 (A). Relationship of EE vs total body mass for female and male WT mice (B). The numbers of male WT mice examined at each of the 10 IMPC sites (C). Inset: geographical locations of IMPC sites. Relationship of EE vs total body mass for male WT mice at each of the 10 IMPC sites (D). Reported ambient temperatures for the experiments performed at each site (E). Relationship of EE vs total body mass in WT males for temperature (F) and season (G). Relationship of EE vs ambulatory activity in WT mice (n = 3886 males) (H). Unaccounted institutional contribution here is approximately 10% (J). The percent variation in EE explained by each of the listed factors (I). Percent contribution of fat mass to EE by site in WT males (K). n = 6469 males and 2889 females unless otherwise specified.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53560/elife-53560-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Plot of EE vs total mass for 4 body mass groups (small, 14.00–20.75 g; medium, 20.75–27.50 g; large, 27.50–34.25 g; largest, 34.25–41.00 g) (A). Relationship between the group with large masses is significant from small mass and medium mass groups. No other group relationships are significant. EE vs lean mass (small, 8.70–13.92 g; medium, 13.92–19.14 g; large, 19.14–24.36 g; largest, 24.36–29.60 g). No group relationships are significant. (B). *, p<0.05. n = 6469 males and 2889 females.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53560/elife-53560-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Plots of the EE vs total mass showing the quality of the fit (R2 values) and shaded by residual values—the deviation from predicted values for each of the 9358 mice (6469 males and 2889 females). For the seven sites studying both sexes, the R2 values were similar between female and male mice (+/- 9%). Sites with accurate temperature covariate tended to have larger R2 values (A). R2 at the 3 sites reporting only data from male mice (B). A modified quantile-quantile plot of male and female mice from the 7 sites studying both sexes (C).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/53560/elife-53560-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** A plot of VO2 vs total body mass for each of the 10 sites in the IMPC (A). Only one site demonstrates a negative mass effect due to a faulty calculation. Distribution of food intake among the reporting sites. The 0.05 g food intake was erroneously overrepresented (n = 10,021 males and 6818 females) (B). Two sites reported EEs calculated by a different equation from the rest of the dataset (C). Durations of calorimetry run data included in IMPC database (D). These four issues were corrected prior to analysis. n = 25,089 males and 10,725 females unless otherwise specified.
+
 We next sought to understand whether it is appropriate to compare mice of different weights. To do this, we examined whether the slope of the relationship between EE and body mass changes when comparing mice over a large range of masses (Figure 3—figure supplement 1A). We grouped all male and female WT mice into quartiles by body mass (small, 14.00–20.75 g; medium, 20.75–27.50 g; large, 27.50–34.25 g; largest, 34.25–41.00 g), and found that there were significant differences in the slope of the relationship between EE and body mass among the four groups. Somewhat surprisingly, largest mice are not significantly different from any of the other groups, which may be attributed to the fact that there are the fewest mice in the group with the largest masses. Our main finding shows the ‘large’ mice have a significantly shallower slope in the relationship between body mass and EE compared to both small and medium mice. This finding was similar to the relationship observed in the MMPC cohort on LFD and HFD (Figure 2A). This is due to the differential contribution of lean and fat mass to EE which are not equally accumulated in mice with greater body weight. Indeed, when examining only lean body mass as the covariate, there were no significant differences between any of the groups by ANCOVA (Figure 3—figure supplement 1B). This finding suggests that when comparing mice with more than 20% difference in body mass, that body composition data must be added to an ANCOVA model so as to not produce spuriously significant results.
 
-## Variability in WT female mouse metabolic rate
+### Variability in WT female mouse metabolic rate
 
 There is no indication that metabolic rate of female mice is more variable than that of male mice; a long-held assumption in metabolic research, despite recent contradictory evidence (Prendergast et al., 2014). Studies on mice of both sexes were performed at seven IMPC institutions; three institutions examined only male mice (Figure 3—figure supplement 2A and B). To determine the variability in metabolic rate, we fitted EE to the available data for each institution and both sexes. The R2 value of this fit represents the quality of the fit, with larger numbers representing a better fit, with lower unexplained variability. The R2 values varied considerably by site, likely due to six sites reporting locomotor activity values and only three sites reporting accurate ambient temperature data, while all sites reported body mass. Despite the great variation between sites, R2 values were similar between males and females at six of the sites (+/- 7.3% difference). The remaining site had a female R2 of less than 0.001, a poor fit, due to a small number of mice with little variation in mass, the sole predictor in this model, and therefore not an instructive example. The Canadian site reported mass, temperature and activity, and despite having the third smallest sample size had the best fit with R2female = 0.507 and R2male = 0.468. Combining the data from both sexes at this site further improved the fit to 0.581 suggesting only minor differences in metabolic rate among female and male young, chow-fed WT mice. Clearly, the more accurate the covariate information reported, the better the explanatory value of the model. As the sample sizes of the two sexes are unequal in these sites (2889 females and 6469 males), we also examined the distribution of variance in male and female mice with a modified quantile-quantile (Q-Q) plot. Here, the slope of the blue and pink lines represents the theoretical standard deviation (SD) for the EE of each sex. Parallel lines indicate similar variability; while points not falling on the line represent variation from the normal distribution. The greater slope for male mice is indicative of greater variability in the data. Overall, this representation suggests that female mice have a qualitatively better fit and lower overall variation (Figure 3—figure supplement 2C).
 
-## Institutional variability
+### Institutional variability
 
 Due to the significant differences in EE observed due to sex among all WT IMPC mice, for subsequent analysis of control and experimental mice, we present results only for male mice henceforth, but we find qualitatively similar metabolic results for WT male and female mice in the IMPC dataset when analyzed separately. The 10 sites represented in the IMPC data each reported between 240 and 1367 male WT mice (Figure 3C). We observed more than a three-fold difference in metabolic rate slopes (1.18–5.32 × 10−2 kJ/hr vs gram body mass) between sites despite standardized experimental protocols on mice of similar ages and similar diets (Figure 3D and Figure 3—source data 1). To further understand these differences, we examined other factors which influence metabolic rate including mass, temperature, season, and locomotor activity. The ambient temperature for mouse experiments varied by site. A range of ambient temperatures were reported for experiments performed by the sites in Canada, Germany, and Oxfordshire, UK. However, most sites report one single nominal temperature (e.g. 21.0°C) which likely does not accurately reflect daily variation in room temperature, nor the actual cage temperature, and may be a major source of unexplained variation (Figure 3E). WT mice housed at low temperatures had the highest EE, and conversely mice housed at warmer temperatures had the lowest EE (Figure 3F). We next examined the effect that time of year (i.e. season) might be having on metabolic rate. In the wild, mammals have seasonal differences in metabolic rate. There is evidence that despite the climate-controlled atmosphere of a vivarium, laboratory mice could similarly detect changes in season (Drickamer, 1977). All sites contributing data (Canada, China, France, Germany, Japan, Korea, UK, and USA) are located in the Northern Hemisphere and experience seasonal differences (Figure 3C, inset). Within these data, there were no significant differences in EE by season, suggesting that seasonal variation was not a significant contributor to experimental variability (Figure 3G). Differences in locomotor activity can contribute to whole-body EE, but typically have a negligible effect at non-thermoneutral temperatures (Virtue et al., 2012). We find a strong positive correlation between ambulatory locomotor activity and EE in the six sites reporting movement data (Canada, Oxfordshire UK, Japan, France, Korea, and Cambridgeshire UK) (Figure 3H). We examined the relative importance of these effects to predict rates of EE (Figure 3I). As with the MMPC dataset, lean mass is one of the top predictors of variability, though temperature (not included in the MMPC data) contributes the highest to explaining EE rate. Unlike the MMPC dataset, more than 60% of the variation in the IMPC data was unaccounted for by examining only these reported variables, suggesting that our model is as yet incomplete. Only 9.6% of the residual variance can be attributed to unaccounted for institutional differences (Figure 3J). We also examined the contribution of fat mass to overall EE and found a highly variable contribution from +55% to −69% among sites (Figure 3K). The variability is likely due to their low adiposity as these animals are on chow diets. Overall, our analysis of 9358 WT mice identifies housing temperature, body composition, locomotor activity, and sex as contributing variables to EE.
 
@@ -81,7 +117,7 @@ To test the applicability of our analysis to the IMPC dataset, we chose the data
 
 **Figure 4.:** Regression plots of EE vs total body mass for male and female WT mice (A). Institutional effects for male and female mice on regression plots of EE vs total mass (B). Temperature effects for male and female mice on regression plots of EE vs total mass by ambient temperature (blue, cold regression line <22°C; yellow, mid 22–26°C; red, hot >26°C) (C). The percent variation in EE explained by each of the listed factors (D). Unaccounted institutional variation is less than 1% (E). *, p<0.05. n = 1996 males and 1,153 females.
 
-## Variability in KO phenotypes
+### Variability in KO phenotypes
 
 After observing the large inter-site variation for WT mice, we next examined whether phenotypic differences due to genetic modulation could be observed reproducibly at multiple sites. In the IMPC dataset, there were six strains examined in at least four locations, Ap4e1-/-, Dbn1+/-, Dnase1l2-/-, Nxn+/-, and Prkab1-/- (AMPKβ1-/-), and Rnf10-/-. We also compared results for the Cdkal1-/- gene from two IMPC sites with our results (Massachusetts, USA). We plotted EE vs body mass for male mice at each of the sites to examine phenotypic variability (Figure 5A). This representation plots each individual mouse at each site but does not convey the difference from the local WT populations and thus is challenging to make direct comparisons. To provide context for the magnitude of these phenotypes, mass, activity (if available), and temperature were fit to a multiple linear regression model for WT male mice. We calculated the deviation from the model at each site and plotted these residual values (Figure 5B). Four of these strains have not previously been published and thus the expected phenotype is not known. The only strain with consistent phenotypic findings was Cdkal1-/-, where EE values similar to WT were observed for mice at all three locations tested (Palmer et al., 2017). Unidirectional phenotypes were observed for four strains. Significantly increased EE was observed in Ap4e1-/-, Dbn1+/-, and Rnf10-/- mice at four of nine sites, three of seven sites, and two of four sites, respectively. Nxn+/- mice had significantly lower EE at three of eight sites. Bidirectional changes were observed for the remaining two strains. Dnase1l2-/- mice were similar to WT controls at six sites, with two sites showing significantly altered EE, with one higher and one lower. Prkab1-/- mice were similar to controls at five sites, consistent with results from an independently generated strain of AMPKβ1 deficiency which found no significant EE phenotype (Dzamko et al., 2010). Yet at two sites Prkab1-/- mice were statistically different, higher and lower than controls at one site each. Consistently, the largest residual values were from sites that did not report accurate temperature values or locomotor activity, pointing toward incomplete modeling from these locations. These results illustrate the large phenotypic variability among mice with identical genetic perturbations observed at different locations.
 
@@ -89,19 +125,19 @@ After observing the large inter-site variation for WT mice, we next examined whe
 
 **Figure 5.:** Plots of EE vs mass for strains that were studied at in least four sites and also for Cdkal1, studied at two IMPC sites and in Massachusetts, USA, with overall best fit regression line shown in bold. (A). Mean residual values from a regression model showing the difference from the controls at the specific site (B). n = 4–21 males per group. *, p<0.05.
 
-## Model application: genes with known effect on body weight
+### Model application: genes with known effect on body weight
 
 Our analysis helps to quantify the magnitude by which site, temperature, mass, and sex contribute to metabolic rate in WT mice. However, genetic variations can also impact metabolic rate. One of the goals of the IMPC is to use mouse models to understand the contribution of genetic factors to phenotypic variation. The IMPC dataset contains the metabolic analysis of 2329 gene KO strains. Using the multiple linear regression model fitted from WT male mice, we examined the phenotype of all KO strains. To find the strains of KO mice with the greatest impact on metabolic rate we fitted the effects of mass and ambient temperature. After fitting the mean EE of each KO strain to the model, we plotted the unexplained metabolic effect, or EE residuals. The residuals are normally distributed around 0 for male mice (Figure 6A) suggesting the model is appropriately fitted (Figure 6B). The results of this analysis are included in Figure 6—source data 1. To validate this data treatment, we plotted the IMPC data for both EE vs total body mass (Figure 6C) and residual EE values from the regression model vs total body mass (Figure 6D). Using the IMPC data, we plotted the results for 10 genotypes previously shown to affect body weight in mice. These strains affect weight by different mechanisms, including by increasing food intake, limiting metabolic rate, and affecting energy absorption. Food intake drives obesity in strains deficient for melanocortin 2 receptor accessory protein 2, Mrap2-/- (Asai et al., 2013), carboxypeptidase E, Cpe-/- (Alsters et al., 2015; Naggert et al., 1995), proprotein convertase 1, Pcsk1+/- (O'Rahilly et al., 1995; Zhu et al., 2002), or growth differentiation factor 15, Gdf15-/- (Tsai et al., 2013). Low metabolic rate drives obesity in mice lacking growth hormone, Gh-/- (Meyer et al., 2004). Relatedly, at standard room temperatures, mice lacking the thermogenic uncoupling protein 1 have reduced metabolic rate, but obesity is not observed in Ucp1-/- mice until housing under thermoneutral conditions (Enerbäck et al., 1997). Mice lacking the biosynthetic enzyme for creatine, Gatm-/-, have also have a reduced metabolic rate, similar to findings in adipocyte specific knockout mice (Kazak et al., 2017). We also plotted the metabolic rate of strains which promote leanness due to high metabolic rate, Pparg+/-, Fgfr4+/-, Fgfr4-/-, and Acer1-/-. Peroxisome proliferator activated receptor-γ, Pparg heterozygous mice have increased metabolic rate driven by increased locomotor activity, controlled by the central nervous system (Lu et al., 2011). Elevated metabolic rate in mice with fibroblast growth factor receptor 4, Fgfr4 knockout and antisense inhibition have elevated metabolic rate likely due to increased levels of FGF19 and FGF21 (Ge et al., 2014; Yu et al., 2013). Alkaline ceramidase 1, Acer1-deficient mice have a skin barrier defect and progressive hair loss, likely accounting for compensatory increases in metabolic rate (Liakath-Ali et al., 2016). The uniform phenotyping standards of the IMPC allow a comprehensive comparison of relative phenotypic magnitude. Institutional effects on EE can make the true magnitude of effects between control and experimental strains difficult to discern in regression plots of EE vs mass (Figure 6C). Instead, when plotting against residual values, it is apparent that four of these genes have modest phenotypes residing within 1 SD of the predicted mean, Cpe-/-, Mrap2-/-, Gdf15-/-, and Ucp1-/- (Figure 6D). While the modestly decreased EE may contribute to obesity in the Cpe-/-, and Mrap2-/- mice, food intake and other factors are likely the primary drivers as reported. There was no suggestion of altered EE in Gdf15-/-, consistent with emerging reports that Gdf15 induction is required for altered body weight phenotypes (Coll et al., 2020). The −1.0 SD phenotype observed in the Pcks1+/- mouse has a large impact on EE to predispose to obesity (O'Rahilly et al., 1995; Zhu et al., 2002). Both Gh-/- and Gatm-/- groups have lower body weights than control mice, yet have lower than predicted EE as significant contributors to obesity in these strains. The hypermetabolic 2 SD and 3 SD effects of Fgfr4+/-, Fgfr4-/-, and Acer1-/- contribute to resistance to obesity, while the effects of Pparg heterozygosity are modest at just over 1 SD. The EE effects have been combined with other assays including skin barrier function or HFD challenge to explain these phenotypes. In concert with comprehensive phenotyping, the IMPC data have confirmed these previously published findings and demonstrated the robustness and utility of the IMPC experiment.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/53560/elife-53560-fig6-v3.jpg)
 
-**Figure 6.:** The residual change in EE compared to site-appropriate controls for males of 2329 strains (A). Distribution of residual changes in EE for all KO strains with the numbers of KO strains reaching 1SD (green), 2SD (orange), or 3SD (red). Regression plots of EE vs mass (C) or residual EE vs mass for mice from mouse strains with known metabolic phenotypes (D). Lines showing ranges of standard deviations in EE are overlayed. Similar plots for IMPC strains with genes identified by obesity related GWAS and having phenotypes of more than 1 standard deviation (E, F). n = 23,309 males.Figure 6—source data 1.
+**Figure 6.:** The residual change in EE compared to site-appropriate controls for males of 2329 strains (A). Distribution of residual changes in EE for all KO strains with the numbers of KO strains reaching 1SD (green), 2SD (orange), or 3SD (red). Regression plots of EE vs mass (C) or residual EE vs mass for mice from mouse strains with known metabolic phenotypes (D). Lines showing ranges of standard deviations in EE are overlayed. Similar plots for IMPC strains with genes identified by obesity related GWAS and having phenotypes of more than 1 standard deviation (E, F). n = 23,309 males.
 
-## Model application: unknown genes
+### Model application: unknown genes
 
 We next examined the human genetic loci linked to increased risk for obesity and body weight related traits through genome wide association studies (GWAS). The IMPC strains with a gene in a mapped obesity locus (n = 42) with phenotypes +/- 1 SD from the mean (n = 7) were plotted (Figure 6E and F). We found four strains with lower metabolic rate that might predict obesity susceptibility, Pax5+/- (Melka et al., 2012), Chst8-/- (Tachmazidou et al., 2017), Tfap2b+/- (Lindgren et al., 2009), and Pald1-/- (Cotsapas et al., 2009). We also found three KO strains which might protect from obesity, Pepd-/- (Shungin et al., 2015), Klf12+/- (Jiang et al., 2018), and Pacs1+/- (Wheeler et al., 2013). Further characterization of these strains, including exposure to HFD, may reveal insights into the phenotypic effects driving common forms of human obesity.
 
-## Physiological context
+### Physiological context
 
 The normal distribution of changes in EE which are not accounted for by site, mass, and temperature is relatively narrow, with 2/3 of all strains (1 SD) having modest differences of +/- 0.161 kJ/hr. To place these values into a physiological context we compared the magnitude of examples of the effects of age, voluntary exercise, adrenergic activation, and temperature on metabolism in C57BL/6 mice (Figure 7A). The effects of aging on basal metabolic rate, as reported by Houtkooper et al. (2011) were modest, with differences at 15, 55, and 94 weeks of age differing by less than 0.04 kJ/hr on average, all corresponding to less than 1 SD (Figure 7B). In voluntary wheel running, O'Neal et al., 2017 report a strong (3 SD) induction of EE after one week, which decreases to a 2 SD effect at 2 and 3 weeks of exercise (Figure 7C). In mice housed at thermoneutrality, administration of the β3 adrenergic agonist CL316,243 produces a > 3 SD effect over 3 hr (Figure 7D). We also plotted metabolic rates at ambient temperatures varying from 6°C to 30°C (Figure 7E). Using 22°C as the comparator, increasing the temperature just 3 degrees produced a 2 SD effect. Similarly, decreasing temperature 4 degrees has a nearly 3 SD effect. Greater temperature changes produced larger effects on EE except for the transition from 28°C to 30°C which likely reflected a departure from true thermoneutrality. These plots help to provide a frame of reference for the magnitude of effects observed in both the MMPC and IMPC datasets.
 
@@ -111,53 +147,98 @@ The normal distribution of changes in EE which are not accounted for by site, ma
 
 ## Discussion
 
-## Small-scale data, large-scale data and data sharing
+### Small-scale data, large-scale data and data sharing
 
 The past decade has seen a transformation in our understanding of mammalian metabolism. New genetic tools, increased commitment to large-scale experimentation, and greater sharing of data are welcome developments. Large-scale systemic experiments such as the IMPC provide an unprecedented view into the genetic pathways that control energy balance in mammals. Yet, despite information on thousands of mice being deposited annually into the IMPC, data from far greater numbers of experimental animals are produced at institutions worldwide. These smaller datasets remain siloed and unshared at great loss to the scientific community. A critical unmet need exists to create centralized data repositories on metabolism if we are to make sense of often conflicting information on the drivers of obesity. Differences in observed phenotypes may well be due to environmental variances including temperature and diet. Preclinical studies in model organisms should pave the way forward for greater understanding of the role of genetic variation, diet, exercise, macronutrient composition, age, and obesity on human metabolism. A metabolism data repository is the obvious next step given these advances. The necessary prerequisites to achieve this reality are: 1) standardization of experimentation and analysis, 2) standardization of data formats, and 3) consensus approaches to essential metadata collection. The results of experiments in mice vary by strain, age, diet, temperature, site, intervention protocols, and other factors, and there can be useful covariates in explaining variance among experiments. The absence of this information can turn an attempt at experimental replication into part of an ongoing replication crisis in biomedical research.
 
-## Essential data to report
+### Essential data to report
 
 The goal of the present study was to understand the critical variables that would be necessary to make in vivo studies of metabolic rate broadly comparable. The largest source of variation observed in the small-scale pilot MMPC experiment was mass, including body composition data. Locomotor activity, photoperiod, diet and acclimation were smaller contributors. In the IMPC dataset, temperature and mass were the largest contributors to variation. The lack of accurate temperature information reduced the utility of the IMPC data at many of the sites where even reporting average daily temperature would be beneficial. Other details including the type of indirect calorimeter or body composition method (e.g. DEXA or MRI) would also help interpretation. We recommend that in future publications, the minimal necessary information to compare and interpret metabolic studies (Table 1) should be included.
 
-## Sources of variation
+**Table 1.**
+ Essential information to report on indirect calorimetry studies.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Location</td>
+    </tr>
+    <tr>
+      <td>Body mass</td>
+    </tr>
+    <tr>
+      <td>Body composition</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+    </tr>
+    <tr>
+      <td>Accurate ambient temperature</td>
+    </tr>
+    <tr>
+      <td>Locomotor activity</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+    </tr>
+    <tr>
+      <td>Diet name and composition</td>
+    </tr>
+    <tr>
+      <td>Strain/Genotype</td>
+    </tr>
+    <tr>
+      <td>Intervention details</td>
+    </tr>
+    <tr>
+      <td>Calorimeter model/parameters</td>
+    </tr>
+    <tr>
+      <td>Body composition method</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sources of variation
 
 At the outset of this project, we envisioned determining the range of metabolic rates observed in WT mice on a LFD or HFD. We predicted a high level of concordance between sites due to the experience, strong reputation for excellence, and know-how in metabolic phenotyping at the participating sites. The MMPC and IMPC experiments were both expressly designed to minimize variation between sites by standardizing protocols, and by studying age and diet-matched animals. Despite these safeguards, we saw a large variance in metabolic rate in each experiment (Figures 1 and 3). For the MMPC, these small-scale studies (n = 6–8 mice per group) are typical and can be instructive. In this case, the response of these mice to HFD was highly variable with mice at one site gaining three times more fat mass than mice at another site. Despite the large differences in phenotype, these four MMPC sites produced high-quality data on body mass, locomotor activity, photoperiod, diet, and acclimation which accounted for 80% of the variation. There are no right and wrong phenotypes, only the phenotypic differences in institutional responses, which we have quantified but have yet to fully elucidate. Here temperature and body composition provide the greatest sources of variation.
 
 The IMPC data afford the largest evaluation of non-genetic and genetic sources of variation yet described. This dataset is both impressively large and yet still narrowly focused on a single age and genetic background, on a standard chow diet. Expanding the types of experiments, strains, and covariates beyond those studied by the MMPC and IMPC will be essential for greater understanding. Our analysis helps to quantify the relative contributions of well-known environmental variables including mass, temperature, activity, sex, and season. This was further exemplified both by the comparison of 9358 WT mice (Figure 3B) and by comparing the same KO strains at up to nine different institutions (Figure 5). We observe phenotypic differences for specific KO strains at some locations, but not at others. However, for most strains we observe good agreement. Understanding the drivers of this variation can help increase reproducibility. Pooling data from multiple sites can also help to reach consensus. The variation or differences among sites is one component of the reproducibility crisis (Drucker, 2016) and understanding institutional variability is a key to increasing reproducibility of metabolic data.
 
-## Our current understanding of the critical covariates is as follows
+### Our current understanding of the critical covariates is as follows
 
-## Sex
+#### Sex
 
 We found similar variability of WT female mice compared to male mice in the IMPC experiment. Indeed, we were surprised at the small contribution of sex to metabolic rate. The differences between female and male mice were largely due to the smaller body mass in the former, rather than sex per se. These effects would be predicted to become more pronounced on HFD, as body weights of male and female mice would further diverge and the metabolic effects of altered estrogen and androgen levels may become more prominent.
 
 Body mass: The single most consistent result across the two experimental datasets is the positive correlation between body mass and EE. With sufficient sample size and variation in mass range, this positive relationship can be observed and is one indication of a successful experiment (Tschöp et al., 2012).
 
-## Body composition
+#### Body composition
 
 Typically, inclusion of body composition can improve the quality of regression plots, especially as fat mass accumulates with aging or obesity (Kaiyala et al., 2010). In the IMPC experiment, mice were maintained on standard chow diets and had small quantities of body fat. Using body composition data rather than whole body mass as a covariate can help to decrease the variation between groups. It has been proposed that lean mass + 20% fat mass might be used as the covariate for metabolic analysis (Even and Nadkarni, 2012), a calculation which has seen limited adoption (Coyne et al., 2019; Ivry Del Moral et al., 2016; Dorfman et al., 2017; Montgomery et al., 2013; Piattini et al., 2019; Schöttl et al., 2015; Seyfarth et al., 2015; Zhao et al., 2016). We find the contribution of fat mass to whole body EE to be highly variable and dependent on the particular features of the study group. In our study, lean mass + 20% fat mass was not an appropriate mass covariate, and we believe it is unlikely to be a generalizable solution. Furthermore, using lean mass as a covariate in studies of obese mice fails to capture the metabolic contribution imparted by the adipose tissue; an approach that should be treated cautiously (Tschöp et al., 2012; Figure 3—figure supplement 1).
 
-## Temperature
+#### Temperature
 
 Adding the bona fide experimental temperature improved our ability to account for the variation in metabolic rate at the three sites where this information was available. The powerful role of temperature to affect EE is well established (Abreu-Vieira et al., 2015; Mount and Willmott, 1967). It therefore stands that providing accurate recorded temperatures would be an easy and effective way to improve the utility of indirect calorimetry results in the IMPC and elsewhere.
 
-## Locomotor activity
+#### Locomotor activity
 
 Most indirect calorimeters developed in the past 10 years will include the ability to record locomotor activity either by incorporating a calculated distance traveled by counting infrared beam breaks or by tracking a device implanted into the animal. A surprising lack of standardization makes direct comparisons between instruments challenging. However, locomotor activity adds a small but significant contribution to variation in EE and these values should be incorporated whenever possible.
 
-## Acclimation
+#### Acclimation
 
 Acclimation to the indirect calorimetry cages had only a modest effect in the MMPC dataset. Prior to acclimation, mice tended to eat more food than after acclimation. Consequently, for mice on a high-carbohydrate low-fat diet, RER tended to be higher. An acclimation period was not included in a majority of IMPC sites; data were recorded for only 21 hr. The analysis of the MMPC experiments suggest that this had only a small effect on the results presented. However, the rapid adaptation time may be due to the young age of these animals and other experimental strains or conditions may greatly affect acclimation time.
 
-## Sample size
+#### Sample size
 
 Relatively large numbers of subjects are required to find statistically significant differences between groups using ANCOVA, especially with small variance of body weight or metabolic parameters (Arch et al., 2006; Even and Nadkarni, 2012; Fernández-Verdejo et al., 2019; Tschöp et al., 2012). This point is well illustrated by the large effect of LFD and HFD on mice in the MMPC at UC Davis to promote a change in fat mass from 5 to 14 g in 11 weeks. Yet, despite the obvious phenotypic differences, neither EE nor energy intake was significantly different by ANCOVA in these WT mice with eight animals per group, suggesting that these studies were underpowered. Together, recording and applying these covariates can maximize experimental reproducibility.
 
-## Genetics
+### Genetics
 
 The standardization of the IMPC pipeline is an unparalleled resource for re-assessing phenotypic effects of genes with known effects on energy balance. In the scope of performing standardized phenotyping on knockout strains of all mouse gene, several well-characterized genetic experiments have been reproduced by the IMPC consortium members. These genes include those shown to regulate food intake: Cpe, Mrap2, and Gdf15; metabolic rate and thermogenesis: Ucp1, PPARg, Gh, Gatm, and Fgfr4; Skin barrier function: Acer1, and intestinal absorption Pcsk1.
 
-## Human GWAS
+### Human GWAS
 
 Our analysis of obesity-related GWAS results specifically focused on strains which may impact EE. Genetic variants identified with these methods are often outside of protein-coding sequences and may affect positive or negative gene regulation (Buniello et al., 2019). It is therefore of interest that our analysis predicts KO strains which both increase and decrease metabolic rate. One of the biggest advantages conferred by a repository of metabolic data will be the opportunity for researchers to investigate phenotypes of specific alleles or interventions. In the publication describing the metabolic data from the IMPC, the authors chose a ratio-based reporting system based on a residuals from multiple linear regression (Rozman et al., 2018). We have reported the residual as well as standard deviation from the mean. Both approaches are similar, but we find reporting the average mass and deviations of the KO strain can add a dimension of context to the results. The strains we identified have not been well characterized with regard to their roles in metabolic pathways, suggesting follow-up studies are warranted.
 
@@ -167,36 +248,102 @@ Strains with increased metabolic rate include Pepd, Klf12, and Pacs1. Pepd, pept
 
 In summary, these seven genes may affect EE through roles in POMC or melanocortin signaling, skin barrier function, lung defects, hematopoiesis, and bone formation. Follow-up studies will help to clarify the role of these proteins in mouse biology. Greater understanding in mice would provide testable hypotheses for assignment of causal human genetic variants to clinical phenotypes.
 
-## Limitations
+### Limitations
 
 Several key limitations of the current study include the currently accepted methodology for analysis which requires reduction of hundreds of data measurements collected for each animal down to a single value for ANCOVA or multiple linear regression-based statistical analysis. The IMPC data provides one data point per metabolic variable (e.g. oxygen consumption or EE) per animal. Further research on time-series could potentially extract meaningful information from these discarded values. One possible source of unexplained variation between sites is the different models of indirect calorimetry systems used. This study was unable to directly compare the efficacy of different indirect calorimeter manufacturers due to the large institutional differences in EE even between sites using the same instrumentation. However, a direct comparison of results from mice with two different systems within the same room has recently been reported (Soto et al., 2019). Different calorimeter parameters and calibrations, such as how many chambers feed into a single gas analyzer, and humidity, pressure and flow rate of gases, can influence results and should be included when reporting data (Table 1). It is not common practice for investigators to calibrate the whole mouse calorimetry system (calorimetry chambers through the gas analyzers). However, this whole system calibration can be accomplished by introducing a standard gas of known composition into each chamber at a controlled flow rate and measuring recovery of carbon dioxide and oxygen. Appropriate software modules can be used to ensure the accuracy of calibrations and data accuracy. This type of calibration system should be encouraged to facilitate comparisons of indirect calorimetry apparatus. The process of observing mice in an indirect calorimeter may affect their behavior and fail to accurately reflect normal food intake, locomotion, and EE. The energy balance calculated for the MMPC experiment is inconsistent with the body weight gain over the 11-week period on HFD. This finding emphasizes the difficulty in accurately determining energy balance over a few days and may be better captured by longer measurements. It is also possible that the calorimetry environment altered energy balance compared to home cage conditions. It can be challenging to accurately measure energy intake and systems designed to minimize spillage could also impact food intake by making it more difficult for mice to eat. Observing serial measurements of body weight can help to mitigate interpretation of experiments where data unexpectedly reflects weight loss (as in Figure 1). Both in-depth phenotyping and large-scale population-based phenotyping reveal the large effect size of institutional variation. Two possible but untested sources of variation in these datasets include changes in gut microbiota and/or epigenetic changes induced by different environmental triggers. Mice have specific microbial flora which change over time and affect energy balance (Turnbaugh et al., 2006). The microbiome is likely to be an institutionally local phenomenon which can affect metabolic rates; indeed studies linking the dependence on thermogenesis with the microbiome have reported different results in experiments performed in Boston, New York City, Geneva and Beijing (Chevalier et al., 2015; Krisko et al., 2020; Li et al., 2019). Knowledge of microbial populations which correlate with EE may help to refine metabolic studies in the future. Attempts to rescue phenotypic variation by microbiome reconstitution may prove fruitful. Similarly, it may soon be possible to interrogate the set of epigenetic modifications to genes controlling metabolic rate and help to predict or modify metabolic rate accordingly.
 
-## Conclusions
+### Conclusions
 
 There is a surprisingly large degree of phenotypic variation observed in mouse energy expenditure. The two experimental paradigms analyzed were deliberately designed to create consistent, reproducible results. Contrary to our predictions, there were still unaccounted-for differences among institutions either in the response of WT animals to differentially gain body weight or with intrinsic differences in energy expenditure due to uncontrolled factors such as ambient temperature. This variation was sufficiently large to prevent consistent phenotypic conclusions caused by the same genetic interventions. The experimental location variability strongly affected results in both WT and genetically modified strains. These findings suggest that reporting experimental conditions including body composition, accurate temperature, and activity should be essential to reproducing and comparing calorimetry data, and can explain the majority of institutional differences. Identifying the as-yet unknown sources of experimental variability among sites should also become a priority to foster consistency and reproducibility in experimental results among multiple institutions. However, within any one institution, we can trust that results obtained comparing littermate controls using ANCOVA for analysis are experimentally valid for those conditions. Yet investigators dedicated the reproducibility of their experimental model at other sites will need to report the essential information for interpretation of indirect calorimetry studies (Table 1). Using this model, individual labs or centers may leverage the big data approach to understanding phenotypes by meticulously creating datasets of non-littermate control mice (as in the IMPC data, Figure 6). Once validated, these data can be used to regress against smaller cohorts of experimental mice, as well as controls to validate the approach in each instance. This strategy suggests that indirect calorimetry can still be a useful tool to understand metabolic phenotypes.
 
 ## Materials and methods
 
-## MMPC experimental description
+### MMPC experimental description
 
 Data from the NIH-funded MMPCs (RRID:SCR_008997) represent longitudinal measurements at 4 sites located at University of California, Davis (UC Davis), University of Massachusetts (UMass), Yale University (Yale) and Vanderbilt University (Vanderbilt). Indirect calorimetry measurements were recorded for each mouse for at least 4 days, allowing for analysis of pre-acclimation (the first 18 hr) and post-acclimation (18–96 hr). Unless otherwise noted, our analyses use the post-acclimation data. The 4 geographically distinct MMPC sites used calorimeters from 3 different manufacturers (Columbus Instruments at UC Davis, California and Yale, Connecticut; TSE Systems at UMass, Massachusetts; Sable Systems International at Vanderbilt, Tennessee). Genetically identical C57BL/6J male mice (n = 60, 6–7 weeks of age) originating from the same room in the Jackson Laboratory facility were divided into four groups, and each group was shipped to one site. On arrival, mice were maintained on LFD for one week and then randomized into two groups for all further experiments (n = 6–8 mice per diet per site). To control for the transition from group to single housing, all animals remained singly housed for the duration of the study. Indirect calorimetry was performed on all mice at each site (week 0) after which one group was given HFD for the next 12 weeks, while the other was maintained on LFD. All mice were returned to the calorimeters at 4 and 11 weeks post-diet randomization. Mouse diets were purchased as a uniform lot from a singular production stream for all sites from Research Diets (LFD: D12450B, 10% energy derived from fat, 15.69 kJ/g; HFD: D12452, 60% energy derived from fat, 21.92 kJ/g) and were delivered to each site simultaneously. Energy intake was calculated by taking the product of food intake in grams with the energy density of the diet in kJ. UC Davis used a PIXIMus DEXA scanner under anesthesia for body composition measurements. Other sites used an NMR-based Bruker minispec without anesthesia. Reported room temperatures for the UC Davis, UMass, Yale, and Vanderbilt MMPC sites were 22.0, 21.1, 21.5°C and 22.5°C respectively. For indirect calorimetry, the Vanderbilt site used a temperature-controlled environment of 24°C. Beam breaks reported from Columbus Instruments, Sable Systems International, and TSE Systems correspond to different distances. Accordingly, locomotor activity was calculated as beam breaks as a percent of the global maximum per site.
 
-## IMPC experimental description
+### IMPC experimental description
 
 IMPC (RRID:SCR_006158) data were collected as described (Rozman et al., 2018). In version 10.0 of this dataset, the 24 hr averaged metabolic data from more than 30,000 mice is publicly available. The IMPC data uses highly similar indirect calorimetry protocols across 10 sites in 8 countries. All indirect calorimetry data were collected from 11-week-old mice, except for body composition data. Lean and fat masses corresponding to week 11 were estimated for each mouse based on body composition percentages collected at week 14. The calorie content and macronutrient compositions of the chow diets used were provided when requested. The IMPC 10.0 sites uniformly provide a single average value reported for oxygen consumption, carbon dioxide release, RER, and EE, per animal although additional hourly data is available through their API. Data were not consistently present at all sites for both males and females, and sites did not uniformly report locomotor activity, precise housing temperatures, or food intake data. Similarly, acclimation was performed only at a subset of sites and pre-acclimation data was not readily available. On initial visualization, the data deposited showed several abnormalities. These included one site where larger animals paradoxically consumed less oxygen than smaller animals, demonstrating an inverse mass effect (Figure 3—figure supplement 3A). When contacted this site quickly identified and corrected a persistent error in their data analysis pipeline which will be rectified in a future IMPC data release. A different site reported erroneous food intake data with each animal consuming exactly 0.05 g of food per hour regardless of body mass or genotype. This site also provided an updated dataset with corrected food intake values (Figure 3—figure supplement 3B). We also observed differences in methods to calculate EE from indirect calorimetry data. When calculating EE using the Weir formula (Weir, 1949) we find two sites which produced different values, likely due to implementation of other formulae including the Lusk equation (Lusk, 1993; Figure 3—figure supplement 3C). Lastly, we identified multiple sites providing data from calorimetry experiments shorter than the reported 21 hr minimum duration. At one site, the full run data was erroneously excluded from the IMPC database, and once contacted the complete data was provided for use in this analysis. All other experiments with durations shorter than 18 hr were excluded from our analysis (Figure 3—figure supplement 3D). To improve consistency, we re-calculated data for all mice using the Weir equation. Erroneously keyed data were corrected as described in Figure 3—figure supplement 3. One strain was excluded due to highly variable values within the genotype in a subset of mice, Fbxl19. The acronyms describing the IMPC sites have changed in some instances. For simplicity, the following sites are indicated by the country in which they are located. For countries with two sites, the state or county is indicated (Table 2).
 
-## Other data sources for indirect calorimetry measurements
+**Table 2.**
+ IMPC sites and abbreviations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name in this study</th>
+      <th>Location</th>
+      <th>IMPC abbreviation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>California, USA</td>
+      <td>University of California, Davis</td>
+      <td>UC Davis</td>
+    </tr>
+    <tr>
+      <td>Cambridgeshire, UK</td>
+      <td>Wellcome Trust Sanger Institute</td>
+      <td>WTSI</td>
+    </tr>
+    <tr>
+      <td>Canada</td>
+      <td>Toronto Centre for Phenogenomics, The Centre for Phenogenomics</td>
+      <td>TCP</td>
+    </tr>
+    <tr>
+      <td>China</td>
+      <td>Model Animal Research Center of Nanjing University</td>
+      <td>MARC</td>
+    </tr>
+    <tr>
+      <td>France</td>
+      <td>PHENOMIN-Institut Clinique de la Souris</td>
+      <td>ICS</td>
+    </tr>
+    <tr>
+      <td>Germany</td>
+      <td>Helmholtz-Zentrum Muenchen</td>
+      <td>HMGU</td>
+    </tr>
+    <tr>
+      <td>Japan</td>
+      <td>RIKEN BioResource Research Center</td>
+      <td>RBRC</td>
+    </tr>
+    <tr>
+      <td>Korea</td>
+      <td>Korea Mouse Phenotype Consortium</td>
+      <td>KMPC</td>
+    </tr>
+    <tr>
+      <td>Oxfordshire, UK</td>
+      <td>Medical Research Council, Harwell</td>
+      <td>MRC Harwell</td>
+    </tr>
+    <tr>
+      <td>Texas, USA</td>
+      <td>Baylor College of Medicine</td>
+      <td>BCM</td>
+    </tr>
+  </tbody>
+</table>
+
+### Other data sources for indirect calorimetry measurements
 
 All data were collected with Columbus Instruments CLAMS indirect calorimeters in male mice. Data demonstrating the effect of age in chow-fed (Teklad 2018) C57BL/6J mice were graciously contributed by Houtkooper et al. (2011). EE values during voluntary wheel running exercise in 6-month-old chow-fed (Teklad 7022) C57BL/6 male mice at 22°C are as reported in the supplemental materials from O'Neal et al. (2017). Studies of the effect of β3-adrenergic stimulation and of temperature change were performed in a temperature-controlled chamber enclosing the indirect calorimeter. Both studies were conducted in Boston MA. For β3 stimulation, 6.5-month-old chow-fed (LabDiet 5053) C57BL/6J global Cdkal1-/- or WT littermate male mice were maintained at 30°C for 24 hr. Mice received an IP administration of 1 mg/kg CL, 5 hr into the light photoperiod. The mean EE over the 3 hr post-injection period was used in this analysis. No significant differences in EE were observed between genotypes; accordingly, data for all mice were pooled. EE measurements of Cdkal1-/- or WT littermate control male mice maintained at 23°C were used in Figure 5. The study of the effect of temperature on EE was performed on 10-week-old chow-fed (LabDiet 5053) C57BL/6J male mice with an incremental decrease in temperature. Mice were maintained at 30°C for 24 hr intervals between each 24 hr temperature challenge ranging from 28°C to 6°C.
 
-## CalR analysis
+### CalR analysis
 
 CalR analysis (RRID:SCR_015849) was performed on the MMPC dataset (Figure 1—figure supplement 1) as described (Mina et al., 2018). The ‘remove outliers’ feature was enabled to exclude from analysis data that were recorded during momentary cage opening.
 
-## Animal experiments
+### Animal experiments
 
 Previously unpublished studies were performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All the animals were handled according to approved institutional animal care and use committee (IACUC) at the site where they were performed.
 
-## Statistical methods
+### Statistical methods
 
 Data input, cleaning, visualization, and statistical analysis were performed in the R programming language (R Development Core Team, 2019). The relative contribution of covariates were calculated with the relaimpo package (Grömping, 2006) The multiple linear regression model and model to quantify the explained variance for the MMPC experiment after 11 weeks on diet included body composition, locomotor activity, photoperiod, diet, and acclimation. These models were not improved by the addition of equipment manufacturer or temperature as each site reported a single, unique temperature, and only two sites used a similar manufacturer of indirect calorimeter. The IMPC models included body composition, locomotor activity, ambient temperature, sex and season. These models were not improved with addition of equipment manufacturer. The q-q plot was performed with a geom_qq using EE data from WT mice at the seven sites examining both sexes (Wickham, 2009). All plots were produced with ggplot2 or CalR (Mina et al., 2018; Wickham, 2009). Unless otherwise specified, all reported data are based on the daily EE (DEE), 24 hr averaged EE values. Experiments were not performed at thermoneutrality, eliminating the possibility of determining basal EE or resting metabolic rate at thermoneutrality (Even and Nadkarni, 2012; Meyer et al., 2015).

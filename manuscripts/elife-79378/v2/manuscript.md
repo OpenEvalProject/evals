@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/045c7t348 Laboratory of Ion Channel Research (LICR), VIB-KU Leuven Center for Brain & Disease Research Leuven Belgium
-2. https://ror.org/05f950310 Department of Cellular and Molecular Medicine, KU Leuven Leuven Belgium
-3. https://ror.org/045c7t348 VIB BioImaging Core – VIB-KU Leuven Center for Brain & Disease Research, KU Leuven Neuroscience Department Leuven Belgium
-4. https://ror.org/05f950310 Laboratory of Organ System, Department of Development and Regeneration, KU Leuven Leuven Belgium
+1. Laboratory of Ion Channel Research (LICR), VIB-KU Leuven Center for Brain & Disease Research Leuven Belgium ([ROR:045c7t348](https://ror.org/045c7t348))
+2. Department of Cellular and Molecular Medicine, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+3. VIB BioImaging Core – VIB-KU Leuven Center for Brain & Disease Research, KU Leuven Neuroscience Department Leuven Belgium ([ROR:045c7t348](https://ror.org/045c7t348))
+4. Laboratory of Organ System, Department of Development and Regeneration, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
 
 † Corresponding author
 
@@ -33,13 +33,21 @@ To address this problem, we developed a machine-learning approach where we train
 
 ## Results
 
-## Machine-learning-based analysis of fluoroscopic images of the LUT
+### Machine-learning-based analysis of fluoroscopic images of the LUT
 
 We combined classic cystometry with fluoroscopy-based imaging to study LUT function in awake, unrestrained mice. In previous work, we had established two methods to determine bladder volume (Vves) from fluoroscopic images. The first method, which is based on the linear relation between background-corrected opacity and volume of contrast-filled bladders, is only applicable to recordings with a stable background, that is in anesthetized or otherwise immobile animals. The second method, which is based on the approximation of the bladder as a spheroid, depends on the delineation of the bladder wall but does not require background subtraction, making it, in principle, suitable to determine bladder volume from images of moving mice. However, considering that our videocystometry experiments lasted up to 3 hr, at a sampling rate of 30 images/s, manual delineation of the bladder wall in these large sets of time-lapse fluoroscopic images was impossible. We therefore developed a machine-learning protocol to automatically identify the bladder border in fluoroscopy images, independent of the position or posture of the mouse or the degree of bladder filling. To achieve this, we performed several cycles of training of a neural network using a set of human-annotated fluoroscopy images (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/79378/elife-79378-fig1-v2.jpg)
+
+**Figure 1.:** (A) Image analysis protocol using artificial intelligence-based automatic annotation of the bladder border. (B) Representative bladder volume trace from an anesthetized animal (1.2 g/kg urethane) based on artificial assisted automated annotation of the bladder. Annotated bladder images (blue line), corresponding to different filling states of the bladder, are shown. (C) Examples showing annotated bladders before, during, and after voiding in different positions. Example 1 represents the same animal as in panel B, whereas Example 2 represents an awake animal.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79378/elife-79378-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Simulated time course of a bladder, filled at 20 μl/min, that fully voids at time point 300 s (black trace; no averaging). Panel B zooms in on the 4 s surrounding the void, showing individual time points in a 30 Hz recording, similar to the fluoroscopy imaging used in this study. Also shown in are the time courses of bladder volume that would be calculated when using a rolling average with the indicated number of frames (N). These time courses were determined based on the assumption that, when averaging N images, the derived length of the long and short radii of the detected bladder circumference of the averaged image are equal to the mean value of the long and short radii of the N images. (C) Simulated time courses of the urethral flow rate (UFR) during a void, determined as minus the time derivative of the volume traces in (A, B). A rolling average of 15 frames, as used in this work, leads to a small (<5%) decrease in maximal UFR, with little effect on the time course of the void. As expected, further increasing the number of images for averaging (30 or 60 frames) leads to a gradual broadening of the void, associated with a shift and decrease of the voiding peak. Note that this simulation was done for a void with a short duration (t20–80 = 1.2 s), comparable to the results obtained in catheterized mice. The effect a 15-image rolling average will be even smaller for the fluoroscopic volumetry experiments in noncatheterized animals, where void durations were significantly longer (t20–80 = 2–5 s).
+
 The machine-learning protocol was able successfully identify the bladder border compared to manual bladder wall delineation in time-lapse image sequences, irrespective of the posture of the animal or phase of the filling/voiding cycle (Figure 1B–C; Figure 1—video 1, and Figure 1—video 2), with the exception of brief failures of one or two frames during abrupt mouse movements or when the bladder was almost fully emptied. During efficient voids, the lowest volume at which the bladder was successfully detected by the machine-learning protocol was 4.1 ± 2.2 µl (n = 15 voids from 3 animals). We calculated the Dice similarity index (DISI; see Materials and methods) to benchmark the performance of the neural network (Dice, 1945). This analysis yielded a median DISI value of 0.95 (mean ± standard deviation [SD]: 0.92 ± 0.13), indicating overall excellent agreement between human annotation and network prediction. We therefore used this approach to determine time-dependent changes in bladder volume based on the spheroid approximation (Figure 1B), along with other volume-related voiding parameters: BC, residual volume (RV), and voiding efficiency (Evoiding), as described previously (Franken et al., 2021).
 
-## Dose-dependent effect of urethane anesthesia on voiding function
+### Dose-dependent effect of urethane anesthesia on voiding function
 
 Next, we used this approach to evaluate the dose-dependent effects of urethane, the most predominantly used anesthetic during in vivo cystometry in rodents, on LUT function. Urethane was administered at four time points, leading to a stepwise increase of the total dose from 0 to 1.2 g/kg bodyweight, the latter being the typical dose used in most rodent studies. This protocol caused the animals to gradually transit from a nonanesthetized state, where they could freely move within the boundaries of the recording box, to a fully anesthetized, largely immobile state. Before dosing and after each urethane administration, videocystometry was performed during 40 min (n = 5), resulting in 200-min-long recordings. These encompass approximately 360,000 time-lapse fluoroscopy images per experiment, from which we derived time-dependent changes in volume and the various volume-related parameters (Figure 2A). Urethane did not have a statistically significant effect on BC (Figure 2C), but exhibited a pronounced and dose-dependent effect on RV and Evoiding (Figure 2D and E). Indeed, whereas awake animals completely emptied their bladder at each void, urethane at doses >0.3 g/kg caused a dose-dependent increase in the volume that remained after each void and a corresponding decrease in Evoiding from ~100% to below 50% (Figure 2E). The intercontractile interval (ICI) decreased concomitantly with the reduced efficiency of voiding (Figure 2F). Note that animals that were immediately treated with a single 1.2 g/kg-dose yielded similar values for BC, RV, and Evoiding as animals that reached this dose at the end of the stepwise dosing protocol, indicating that the reduced voiding efficiency and increased RV are due to the urethane rather than to fatigue (Figure 2C–F, blue) (Franken et al., 2021). Taken together, our findings indicate that urethane leads to a pronounced and dose-dependent reduction of the ability of the bladder to empty during voiding.
 
@@ -53,7 +61,7 @@ Next, we zoomed in on individual voids to identify changes in void duration or u
 
 **Figure 3.:** (A) Zoomed-in examples of average bladder volume, bladder pressure, urethral flow rate, and urethral flow conductance at increasing doses of urethane in catheterized mice. (B) Combined 2D/3D pressure plots showing 100 s of intravesical pressure changes aligned to a voiding contraction at time point 80 s from a single animal at the indicated dose. Each row represents the pressure during one individual void. The color scale on the right represents the intravesical pressure (in cmH2O). (C–F) Assessment of the effect of urethane on void duration, urethral flow rate, urethral flow conductance, and nonvoiding contractions (mean ± standard error of the mean [SEM]). One-way repeated measures analysis of variance (ANOVA) was used to test for statistically significant differences with the 0.0 g/kg condition.
 
-## Non-invasive fluoroscopic monitoring of the LUT
+### Non-invasive fluoroscopic monitoring of the LUT
 
 In classic cystometry and videocystometry experiments, surgery is performed to implant a catheter into the bladder dome, through which the bladder is filled at a constant, often supraphysiological filling rate. The impact of this invasive intervention on bladder function is poorly understood. We adapted our fluoroscopy-based approach to monitoring bladder volume in a noninvasive manner in awake, unrestrained animals. Injection of a bolus of contrast solution subcutaneously in the scruff region resulted in the excretion of iodine-containing urine, enabling fluoroscopy-based imaging of the bladder without catheter implantation. In this setting, the filling rate of the bladder is solely determined by the renal urine output, which we accelerated within a physiologically acceptable range using a diuretic. Animals were imaged during 120 min, during which voids occurred spontaneously at a rate of 1–2 voids per hour, and the machine-learning protocol was used to automatically detect the bladder border. In these experiments, we measured an average filling rate of 7.3 ± 2.8 μl/min (mean ± SD). This approach, fluoroscopic volumetry, allowed for the first time to accurately and continuously quantify volume- and flow-related parameters noninvasively in awake and behaving animals (Figure 4A–C), albeit without concomitant pressure measurement.
 
@@ -79,27 +87,136 @@ In conclusion, we have combined fluoroscopy with a machine learning-assisted ana
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Wild-type mice</td>
+      <td>Janvier</td>
+      <td>C57BL/6J</td>
+      <td>12- to 16-week-old females</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoflurane</td>
+      <td>Dechra veterinary products</td>
+      <td>Iso-vet</td>
+      <td>Anesthesia</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carprofen</td>
+      <td>Zoetis</td>
+      <td>Rimadyl</td>
+      <td>Analgesia</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Surgical skin glue</td>
+      <td>Vygon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Iomeprol</td>
+      <td>Bracco Imaging Europe</td>
+      <td>Iomeron 250</td>
+      <td>Contrast agent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Iodixanol</td>
+      <td>GE Healthcare</td>
+      <td>Visipaque 320 mg I/ml</td>
+      <td>Contrast agent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urethane</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Anesthesia</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Furosemide</td>
+      <td>Sanofi</td>
+      <td>Lasix</td>
+      <td>Diuretic</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/FIJI</td>
+      <td>NIH</td>
+      <td>RRID:SCR_002865</td>
+      <td>Image processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro</td>
+      <td>Wavemetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td>Data processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 9.0</td>
+      <td>Originlab</td>
+      <td>RRID:SCR_014212</td>
+      <td>Data processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIS-Elements; NIS.ai</td>
+      <td>Nikon</td>
+      <td>RRID:SCR_014329</td>
+      <td>Image processing</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Experiments were conducted on 12- to 16-week-old female C57BL/6J mice (Janvier). Mice were housed in filter-top cages in a conventional facility at 21°C on a 12 hr light–dark cycle with unrestricted access to food and water. After each experiment, all animals were sacrificed due to the toxicity associated with urethane anesthesia. All animal experiments were carried out after approval of the Ethical Committee Laboratory Animals of the Faculty of Biomedical Sciences of the KU Leuven under project number P035/2018.
 
-## Surgery and experimental setup
+### Surgery and experimental setup
 
-## Urethane dose escalation
+#### Urethane dose escalation
 
 Videocystometry and suprapubic catheter implantation were performed as described earlier (Franken et al., 2021; Uvin et al., 2012). In short, a PE-50 catheter was implanted into the bladder dome of five female mice through an abdominal midline incision while under 2% isoflurane anesthesia (Iso-vet, Dechra veterinary products, Bladel, The Netherlands). At the start of surgery, the anesthetized animals received carprofen (5 mg/kg bodyweight; Zoetis, Louvain-la-Neuve, Belgium) diluted in NaCl 0.9% by SC injection to achieve analgesia during videocystometry. At the end of surgery, the implanted catheter was tunneled subcutaneously and exteriorized at the scruff. At the point of exteriorization, the catheter was secured to the skin using surgical skin glue (Derma+flex, Vygon, Brussels, Belgium), to prevent dislocation. After the animals recovered from surgery, they were placed in a small radiolucent container (4 cm × 3 cm × 7 cm) in which the animals were not restrained. Next, the container was placed in an X-ray-based small animal fluoroscopy system (LabScopeTM, Glenbrook Technologies, New Jersey, USA), and the PE-50 catheter was connected to a pressure sensor and to an infusion pump through a three-way stopcock. Videocystometry was performed with an infusion of an iodine-based intravesical contrast solution (50% Iomeron 250, Bracco Imaging Europe, Wavre, Belgium) at a rate of 20 µl/s. Simultaneously, pressure measurements were recorded at 50 Hz, and bladder images were acquired at a frame rate of 30 frames per second. Videocystometry was performed for 40 min, including a habituation period of 10 min. Next, a dose of 0.3 g/kg bodyweight urethane (Sigma-Aldrich, Diegem, Belgium) was injected subcutaneously. Ten minutes after the injection, videocystometry was performed for another 40 min. This procedure was repeated until a cumulative urethane dose of 1.2 g/kg was reached; at this dose, videocystometry was performed one last time, after which the experiment was terminated.
 
-## Catheter-free bladder imaging
+#### Catheter-free bladder imaging
 
 Thirty minutes prior to fluoroscopy, mice were injected subcutaneously with the diuretic furosemide (15 mg/kg, 1 mg/ml solution, Sanofi, Paris, France), to increase the diuresis and thereby the filling rate of the bladder (Monjotin et al., 2017), and with an iodine-containing nonionic radiocontrast agent iodixanol (12 mg I/kg bodyweight, Visipaque 320 mg I/ml; GE Healthcare, Chicago, IL, USA). The contrast agent was injected in the scruff area, to prevent superposition of the injected contrast solution with the bladder. Time-lapse fluoroscopy was performed on awake, freely moving mice, without bladder catheter in situ, during multiple cycles of 40 min. Next, urethane was injected subcutaneously at a dose of 1.2 g/kg bodyweight, after which the bladder was again imaged until a void occurred.
 
-## Data processing and analysis
+### Data processing and analysis
 
-As the animals were awake and freely moving, background subtraction was not possible, and the bladder volume could not be determined based on image intensity as in previous experiments (Franken et al., 2021). Therefore, we identified the bladder and traced the bladder circumference in each image, and calculated bladder volume based on the long and short radii of the identified bladder area, assuming the bladder approaches a prolate spheroid, as established in our earlier work (Franken et al., 2021):.Vves= 43π × long radius × short radius2
+As the animals were awake and freely moving, background subtraction was not possible, and the bladder volume could not be determined based on image intensity as in previous experiments (Franken et al., 2021). Therefore, we identified the bladder and traced the bladder circumference in each image, and calculated bladder volume based on the long and short radii of the identified bladder area, assuming the bladder approaches a prolate spheroid, as established in our earlier work (Franken et al., 2021):
+
+$$
+Vves= \frac{4}{3}\pi \times long radius \times short radius^{2}
+$$
 
 Images were saved as Audio Video Interleave file (AVI), loaded into FIJI (ImageJ) (Schindelin et al., 2012), and saved as an image sequence. This image sequence was loaded into NIS Elements-AR 5.30.01 (Nikon, Tokyo, Japan) and smoothed using a rolling average, to enhance image quality for bladder delineation. Based on simulations using artificial images of an idealized spheroid bladder, we determined that a rolling average of 15 frames provided an overall suitable image quality with limited influence on key parameters such as the timing and amplitude of the UFR (see Figure 1—figure supplement 1). To identify the bladder border in large sets of time-lapse fluoroscopy images, we used Segment.ai, an AI module that is a part of the NIS-Elements NIS.ai suite (Nikon, Tokyo, Japan), a commercially available (licensed) software. We trained this neural network using a set of manually annotated fluoroscopy images in which the contrast-filled bladder was imaged from various angles and at different stages of the filling/voiding cycle. The neural network was then applied to identify the bladder in similar but different datasets. It was repeatedly retrained using images where the bladder was not properly identified until satisfactory identification of the bladder border was achieved in all experiments (Figure 1A). Additional filtering steps were applied to detect only one closed object (the biggest) as the bladder. The NIS GA3 script used for this purpose together with a description can be found here (https://doi.org/10.6084/m9.figshare.c.6004234). The neural network was then used to generate an image sequence with an overlay tracing the bladder border, used for quantifying the long and short axes of the bladder and the bladder area, for large sets of time-lapse fluoroscopy images.
 
-To benchmark the performance of the neural network, 20% of the ground truth annotations were kept aside, as described in the BIAFLOWS collaborative framework for quality control of object segmentation (Rubens et al., 2020), and used to calculate the DISI:,DISI=2×(X∩Y)X+Y
+To benchmark the performance of the neural network, 20% of the ground truth annotations were kept aside, as described in the BIAFLOWS collaborative framework for quality control of object segmentation (Rubens et al., 2020), and used to calculate the DISI:
+
+$$
+DISI=\frac{2\times(X∩Y)}{X+Y}
+$$
 
 where X is the area of the ground truth binary mask, Y the area of the prediction binary mask, and X∩Y the area of overlap between the ground truth and prediction masks (Dice, 1945).
 
@@ -109,6 +226,6 @@ From the time course of Vves, we determined a set of parameters related to volum
 
 Raw data for Figures 1—4 are available via https://doi.org/10.6084/m9.figshare.19826050.v1.
 
-## Statistics
+### Statistics
 
 Statistical analysis and graphing were performed in OriginPro 9.0 (Originlab Corporation, Northampton, MA, USA). The Shapiro–Wilk test was used to assess normality of the data. Paired Student’s t-test, Student’s t-test, and one-way repeated measures analysis of variance were used for analysis of the data. Except where indicated otherwise, all summary data are reported as mean ± standard error. The sample sizes were calculated based on our earlier work, which yielded that a sample size of four to five animals was sufficient to detect a 40% change in key parameters such as Evoiding and UFRmax with a power of 80% and a significance level of p < 0.05. Animals were randomly assigned to each experimental condition. All measurements were performed on distinct animals; no animals were used in multiple experiments. Analysis was performed automatically, eliminating the need for blinding.

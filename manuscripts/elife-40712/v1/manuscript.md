@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.40712.001 During apoptosis, Bcl-2 proteins such as Bax and Bak mediate the release of pro-apoptotic proteins from the mitochondria by clustering on the outer mitochondrial membrane and thereby permeabilizing it. However, it remains unclear how outer membrane openings form. Here, we combined different correlative microscopy and electron cryo-tomography approaches to visualize the effects of Bax activity on mitochondria in human cells. Our data show that Bax clusters localize near outer membrane ruptures of highly variable size. Bax clusters contain structural elements suggesting a higher order organization of their components. Furthermore, unfolding of inner membrane cristae is coupled to changes in the supramolecular assembly of ATP synthases, particularly pronounced at membrane segments exposed to the cytosol by ruptures. Based on our results, we propose a comprehensive model in which molecular reorganizations of the inner membrane and sequestration of outer membrane components into Bax clusters interplay in the formation of outer membrane ruptures. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+During apoptosis, Bcl-2 proteins such as Bax and Bak mediate the release of pro-apoptotic proteins from the mitochondria by clustering on the outer mitochondrial membrane and thereby permeabilizing it. However, it remains unclear how outer membrane openings form. Here, we combined different correlative microscopy and electron cryo-tomography approaches to visualize the effects of Bax activity on mitochondria in human cells. Our data show that Bax clusters localize near outer membrane ruptures of highly variable size. Bax clusters contain structural elements suggesting a higher order organization of their components. Furthermore, unfolding of inner membrane cristae is coupled to changes in the supramolecular assembly of ATP synthases, particularly pronounced at membrane segments exposed to the cytosol by ruptures. Based on our results, we propose a comprehensive model in which molecular reorganizations of the inner membrane and sequestration of outer membrane components into Bax clusters interplay in the formation of outer membrane ruptures.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -35,13 +35,33 @@ Here, we used a set of correlative microscopy approaches, including electron tom
 
 ## Results
 
-## Bax clusters form regions of ribosome-exclusion in the cytosol
+### Bax clusters form regions of ribosome-exclusion in the cytosol
 
 To mimic Bax-mediated apoptosis in HeLa cells, we took advantage of the previous observation that overexpression of Bax can induce cell death by apoptosis (Han et al., 1996; Pastorino et al., 1998). When cells expressed cytosolic GFP-Bax in the presence of the caspase inhibitor Q-VD-OPh, we observed on average 77 min later (SD 69 min, N = 86 cells) that GFP-Bax translocated to the mitochondria, which displayed fragmentation typical for apoptosis, as expected (Karbowski et al., 2002; Figure 1A and B). On average, 102 min (SD 57 min, N = 92 cells) after the initial recruitment into diffraction-limited punctae (Figure 1B), larger, irregular foci of Bax appeared (Figure 1C). Cells representing these two stages were similarly frequent 14–18 hr after GFP-Bax transfection. We confirmed by immunofluorescence that these stages coincided with the release of cytochrome c from the mitochondria (Figure 1—figure supplement 1). Of 42 cells expressing GFP-Bax, 9 contained diffraction-limited Bax punctae and displayed no or little cytosolic cytochrome c release (Figure 1—figure supplement 1B). Thirty-three cells contained larger GFP-Bax foci, of which 17 displayed partial and 16 complete cytochrome c release (Figure 1—figure supplement 1C and D, respectively). Consequently, for our further experiments, we chose 16 hr after GFP-Bax transfection as a time point that captures stages around cytochrome c release.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/40712/elife-40712-fig1-v1.jpg)
+
+**Figure 1.:** HeLa cells transfected with GFP-Bax (green) in the presence of Q-VD-OPh were imaged every 30 min for 24 hr after transfection. Cells were stained with MitoTracker Deep Red (magenta) prior to imaging. (A) Representative cell 9 hr after transfection. (B) Representative cell 14 hr after transfection, showing formation of GFP-Bax punctae. (C) Larger clusters of GFP-Bax in a representative cell 19 hr after transfection. White boxes indicate areas shown magnified below the large image. The three magnified images correspond to: GFP-Bax channel (left), MitoTracker Deep Red channel (middle), and merge (right). Scale bars: 5 µm (upper panel) and 2 µm (lower panel).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40712/elife-40712-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Confocal FM of fixed HeLa cells, 16 hr post-transfection with GFP-Bax (yellow) in the presence of Q-VD-OPh. Cells were stained with antibodies for the translocase of outer membrane 20 (TOM20) (magenta) and cytochrome c (cyan). A-C are merges of GFP-Bax (yellow) with TOM20 (magenta) and cytochrome c (cyan) signals. White boxes indicate areas shown magnified to the right side of the large image. The four magnified images correspond to: GFP-Bax channel (top left), cytochrome c channel (top right), TOM20 channel (bottom left), merge (bottom right). (A) Cell that does not express GFP-Bax. No release of cytochrome c from the mitochondria. (B) Cell that shows small punctae of GFP-Bax and displays partial release of cytochrome c. (C) Cell that shows large clusters of GFP-Bax and displays partial release of cytochrome c. (D) Cell that shows large clusters of GFP-Bax and displays full release of cytochrome c from the mitochondria into the cytosol. Scale bars are 10 µm (overview images) and 2 µm (magnified views).
+
 To visualize Bax clusters and associated mitochondrial membrane shape, we imaged resin-embedded cells by correlative FM and ET (Ader and Kukulski, 2017; Kukulski et al., 2011) (Figure 2). We targeted 82 GFP-Bax signals by ET and found that 79 of them localized adjacent to mitochondria (Figure 2; crosses). Further, of the 82 GFP-Bax signals imaged, 77 localized to dense regions in the cytosol that were devoid of other cytosolic features. In particular, they excluded the otherwise ubiquitously distributed ribosomes. These regions were irregular in shape and extended over approximately 100 to 1300 nm. More intense GFP-Bax signals corresponded to larger ribosome-exclusion zones (Figure 2F). We thus conclude that these ribosome-exclusion zones in the cytosol comprise the Bax clusters previously observed by immuno-electron, scanning confocal, and super-resolution microscopy (Große et al., 2016; Nasu et al., 2016; Nechushtan et al., 2001; Salvador-Gallego et al., 2016; Zhou and Chang, 2008). We henceforth refer to these cellular structures as Bax clusters.
 
-## Mitochondria near Bax clusters display outer membrane ruptures, influx of cytosolic content, and inner membrane restructuring
+![Figure 2.](https://cdn.elifesciences.org/articles/40712/elife-40712-fig2-v1.jpg)
+
+**Figure 2.:** Gallery of GFP-Bax locations and the associated mitochondrial morphologies, 16 hr post-transfection with GFP-Bax, in the presence of Q-VD-OPh. (A–D) FM images of sections of resin-embedded cells. GFP-Bax (green) and MitoTracker Deep Red (magenta). Yellow squares indicate the field of view imaged by ET. White circles indicate GFP-Bax signals localized in electron tomograms. (E–H) Virtual slices from electron tomograms acquired at areas indicated by yellow squares in A-D, respectively. Red circles mark representative ribosomes in intermembrane space. White arrowheads indicate membrane ruptures. Green crosses indicate predicted positions of GFP-Bax signal centroids indicated by white circles in fluorescence micrographs. (I–L) 3D segmentation models of mitochondria in E-H, respectively. Outer membranes are in dark blue, inner membranes in light blue and ribosomes in the intermembrane space in white. Scale bars: 500 nm (A–D), 100 nm (E–L).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40712/elife-40712-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Virtual slice from electron tomogram of HeLa cells (16 hr post-transfection with GFP-Bax). (B) 3D segmentation model of outer membrane in A. (C–F’) The thin samples used in our experiments are prepared by sectioning or cryo-FIB milling and represent only a partial volume of the cell. These diagrams depict how two theoretical mitochondria, spherical (left column) and indented (right column), would appear in ET data of thin samples. (C–D’) Three-dimensional representation of an entire mitochondrion. In C, C’, the brown rectangular prism represents the volume of the mitochondrion contained in a thin sample. In D, D’, the brown plane intersecting the mitochondrion represents the location of the virtual slice shown in F, F’. (E, E’) Side view of a virtual slice bisecting the mitochondrion. Brown box represents the location of the brown rectangular prism in C, C’. Brown dotted-line represents the location of the brown plane in D, D’. (F, F’) Top view of a virtual slice through the mitochondrion at the brown plane in D, D’ and the brown dotted-line in E, E’. Outer membranes are in dark blue, intermembrane space in orange, inner membranes in light blue, and matrix in gray. Arrows provide relative spatial orientation for each view. Scale bars: 100 nm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40712/elife-40712-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Live confocal FM of Bax/Bak DKO HCT116 cells stably expressing GFP-Bax (green), treated with ABT-737 and Q-VD-OPh for 3 hr. Cells were stained with MitoTracker Deep Red (magenta) prior to treatment. Cells were imaged every 30 min for 3 hr after treatment. FM images shown are from (A) 30 min, (B) 1 hr, and (C) 2 hr 30 min following treatment. White squares indicate areas shown magnified below A-C. The three magnified images correspond to: GFP-Bax channel (left), MitoTracker Deep Red channel (middle), and merge (right). (D–F) Correlative microscopy: FM image of section of resin-embedded Bax/Bak DKO HCT116 cells stably expressing GFP-Bax (green) that were treated with ABT-737 and Q-VD-OPh for 3 hr. GFP-Bax (green), MitoTracker Deep Red (magenta). Yellow squares indicate the field of view imaged by ET. White circles indicate GFP-Bax signals localized in electron tomograms. (G–I) Virtual slices from electron tomograms acquired at areas indicated by yellow square in FM images. White arrowheads indicate ruptured membranes. Green crosses indicate predicted positions of GFP-Bax signal centroids indicated by white circles in fluorescence micrographs. (J–L) 3D segmentation model of mitochondria in G-I, respectively. Outer membranes in dark blue, inner membranes in light blue. Scale bars: 10 µm (A-C, upper panels), 2 µm (A-C, lower panels), 500 nm (D–F), 100 nm (G–L).
+
+### Mitochondria near Bax clusters display outer membrane ruptures, influx of cytosolic content, and inner membrane restructuring
 
 The mitochondria that we found near GFP-Bax clusters often exhibited substantial gaps in their outer membranes (Figure 2), which we henceforth refer to as ruptures. These ruptures were between 100 and 700 nm wide (mean 316 nm, SD 156 nm, N = 37). Of the 37 mitochondrial ruptures we found, 33 directly bordered the Bax clusters (Figure 2). Near the rupture, the remaining outer membrane appeared associated with the inner membrane at a similar distance as in non-ruptured regions. There were no outer membrane segments peeling off significantly from the inner membrane, or membrane segments loosely adhering to the remaining outer membrane. Although most ruptured mitochondria had single ruptures visible, occasionally two ruptures could be discerned at different regions of the same mitochondrion. Some of the mitochondria displayed large-scale concave indentations of their surfaces. Depending on their orientation within the tomographic volume, these indentations gave the false appearance of cytosolic content enclosed in a mitochondrion (Figure 2F, and Figure 2—figure supplement 1).
 
@@ -49,23 +69,51 @@ In 12 of the ruptured mitochondria, we observed ribosome-like structures, often 
 
 The ruptured mitochondria in our dataset showed a wide heterogeneity of inner membrane morphology. While some ruptured mitochondria displayed canonical cristae folding (Figure 2E), others lacked cristae over large areas of a smooth inner membrane (Figure 2G and H). Furthermore, we frequently observed more than one inner membrane compartment surrounded by a single outer membrane, indicating fragmentation of the inner membrane without concomitant outer membrane fission. In these cases, one matrix displayed canonical cristae shape, while the other matrix lacked cristae (Figure 2F). These observations indicate that, besides outer membrane ruptures, Bax activity induces fragmentation and restructuring of the inner membrane.
 
-## Drug-induced apoptosis has similar effects on mitochondrial membranes to Bax overexpression
+### Drug-induced apoptosis has similar effects on mitochondrial membranes to Bax overexpression
 
 We next set out to test whether the mitochondrial restructurings we observed in HeLa cells upon overexpression of Bax were intrinsic hallmarks of apoptosis. We therefore analyzed Bax/Bak double knockout (DKO) HCT116 cells stably expressing GFP-Bax, in which we induced apoptosis with ABT-737, a BH3 mimetic pro-apoptotic compound (van Delft et al., 2006) (Figure 2—figure supplement 2). We found that the signals of GFP-Bax foci localized to ribosome-exclusion zones like in HeLa cells overexpressing GFP-Bax (Figure 2—figure supplement 2G). We also observed ruptured outer membranes, mostly (3 of 5 ruptures) near Bax clusters. The ruptures were, however, less frequent (5 ruptures for 45 GFP-Bax target signals) than in HeLa cells. These ruptured mitochondria displayed multiple matrices and unfolded inner membranes, similar to those in Bax-overexpressing HeLa cells (Figure 2—figure supplement 2D–L). Furthermore, 13 other mitochondria had multiple matrices, while no rupture was observed within the imaged cell volume. These results suggest that ribosome-excluding Bax clusters, ruptures in the outer membrane, as well as rearrangements of the inner membrane are characteristic of Bax activity independent of means inducing apoptosis.
 
-## Bax clusters consist of a sponge-like meshwork
+### Bax clusters consist of a sponge-like meshwork
 
 We next sought to obtain higher resolution details of Bax cluster organization by using cryo-ET. In tomograms of resin-embedded cells, the clusters appeared amorphous (Figure 2), but protein structures are best preserved in vitreous ice (Dubochet et al., 1988). We therefore used a correlative cryo-microscopy approach that allowed us to locate GFP-Bax clusters in vitreous sections of HeLa cells that were vitrified by high-pressure freezing (Bharat et al., 2018) (Figure 3A,B,E and F). In electron cryo-tomograms acquired at the predicted GFP-Bax locations, we found ribosome-exclusion zones in the cytosol, in agreement with our data from resin-embedded cells (Figure 3C and G) (N = 7 GFP-Bax signals). Within these exclusion zones, we could discern ultrastructural details that were not visible in the electron tomograms of resin-embedded cells (Figure 3D and H, and Videos 1 and 2). We found irregularly arranged plane and line segments that appeared to be part of a dense network within the exclusion zones that corresponded to GFP-Bax localization (Figure 3D’ and H’, and Videos 1 and 2; red highlights). We tested if the occurrence of these structural elements was specific to Bax clusters. For that, we compared areas that correlated to the presence of GFP-Bax signals to areas without GFP-Bax signal within the same tomogram, using an image analysis tool that detects ridge-like segments (see Materials and methods, and Figure 3—figure supplement 1)(Steger, 1998; Wagner and Hiner, 2017). We consistently found that the number of detected segments was higher in areas corresponding to GFP-Bax signals than in the areas that did not correlate to GFP-Bax signals (Figure 3—figure supplement 1H). These data suggest that Bax clusters are not amorphous, featureless structures, but that they contain elements indicative of a higher order ultrastructural organization.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/40712/elife-40712-fig3-v1.jpg)
+
+**Figure 3.:** (A, E) Cryo-FM of vitreous sections of HeLa cells (high-pressure frozen 16 hr post-transfection with GFP-Bax). GFP-Bax signal in green. White squares indicate areas shown in B and F, respectively. (B, F) Cryo-EM overview images of areas shown in white squares in A and E, respectively. The corresponding cryo-FM images, transformed according to correlation procedure, are overlaid in green. White squares indicate areas imaged by cryo-ET. (C, G) Virtual slices through electron cryo-tomograms corresponding to white squares in B and F, respectively. Black squares indicate areas magnified in D and H, respectively. (D, H) Magnifications of virtual slices shown in C and G, respectively, areas corresponding to black squares. (D’, H’): Annotation of images in D and H, respectively. Some of the structural features of the GFP-Bax cluster ultrastructure are highlighted in red. (I, L, O) Virtual slices through electron cryo-tomograms of HeLa cells (plunge-frozen 16 hr post-transfection with GFP-Bax), targeted by cryo-FM (see Figure 3—figure supplement 1) and thinned by cryo-FIB milling. Note that L and O show different virtual slices of the same mitochondrion rotated by 180° around the image y-axis. Black squares indicate areas magnified in K, N and Q, respectively. Yellow and red arrowheads indicate ruptured outer and inner membranes, respectively. (J, M and P) 3D segmentation model of mitochondria seen in I, L and O, respectively. Outer membranes are in dark blue, inner membranes in light blue and ribosomes in intermembrane space in white (J). White borders (M) indicate end of segmentation (see Materials and methods). Note that M and P show the same mitochondrion at different viewing angles and magnifications. (K, N and Q) Magnifications of virtual slices shown in I and L, respectively, areas corresponding to the black squares. Yellow and red arrowheads indicate ruptured outer and inner membranes, respectively. (K’, N’ and Q’) Annotation of images in K, N and Q, respectively. Some of the structural features of the cluster ultrastructure are highlighted in red. Scale bars: 1 µm (A, E), 500 nm (B, F), 100 nm (C, G, I, J, L, M, O, P), 50 nm (D, D’, H, H’, K, K’, N, N’, Q, Q’).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40712/elife-40712-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cryo-FM (GFP channel) of vitreous section of HeLa cells (high-pressure frozen 16 hr post-transfection with GFP-Bax). White square indicates area shown in B. (B) Cryo-EM overview image of area shown in white square in A. The corresponding cryo-FM image, transformed according to correlation procedure, is overlaid in green. White square indicates area imaged by cryo-ET. (C) Virtual slice through electron cryo-tomogram corresponding to white square in B. Green and black squares indicate locations on the tomogram that were analyzed by ridge detection as shown in D, E and F, G respectively. (D, E) Maximum intensity projection images of two sets of 10 virtual slices taken from region of GFP-Bax cluster, indicated by green square in C. (D’, E’) Application of ridge detection plugin on images in D and E, respectively. Detected segments are highlighted in red. (F, G) Maximum intensity projection images of two sets of 10 virtual slices taken from control region without GFP-Bax signal, indicated by black square in C. (F’, G’) Application of ridge detection plugin on images in F and G, respectively. Detected segments are highlighted in red. (H) Ratio of ridge detection segment counts on five areas of different GFP-Bax clusters to control regions in the same tomogram (see Materials and methods). p=0.0066 for the ratio being significantly different from 1. Scale bars: 1 µm (A), 500 nm (B), 200 nm (C), 20 nm (D, D’, E, E’, F, F’, G, G’).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/40712/elife-40712-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Shown are all apoptotic cells that were used to acquire the cryo-ET data set presented in this study. A-E and G-K are HeLa cells that were grown on EM grids and plunge-frozen 16 hr after transfection with GFP-Bax. F and L show a Bax/Bak DKO HCT116 cell stably expressing GFP-Bax, that was grown on an EM grid and plunge-frozen 3 hr after treatment with ABT-737. GFP-Bax (green), MitoTracker Deep Red (magenta). (A–F) Cryo-FM of cells. Cells were selected for cryo-FIB milling based on the presence of GFP-Bax punctae. In A, the outlines of the resulting lamella are indicated by white dashed lines. (G–L) Cryo-EM overview images of the lamellae resulting from cryo-FIB milling of the cells shown in A-F, respectively. Approximate lamella thicknesses, estimated based on reconstructed tomograms, are: 150 nm (G), 240 nm (H), 200 nm (I), 280 nm (J), 180 nm (K), 280 nm (L). Scale bars: 5 µm (A–L).
+
+![Video 1.](https://cdn.elifesciences.org/articles/40712/elife-40712-video1.mp4.jpg)
+
+**Video 1.:** Movie through virtual slices of electron cryo-tomogram. Movie pauses at the virtual slice shown in Figure 3D and D’ to indicate structural features highlighted in red. Scale bar: 50 nm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/40712/elife-40712-video2.mp4.jpg)
+
+**Video 2.:** Movie through virtual slices of electron cryo-tomogram. Movie pauses at the virtual slice shown in Figure 3H and H’ to indicate structural features highlighted in red. Scale bar: 50 nm.
 
 While vitreous sections allow precise localization of fluorescent signals to electron cryo-tomograms (Bharat et al., 2018), artifacts induced by the sectioning process limit interpretability of structural details (Al-Amoudi et al., 2005). We therefore moved on to thinning cells grown on EM grids and vitrified by plunge-freezing using cryo-focused ion beam (FIB) milling (Mahamid et al., 2016; Marko et al., 2007). Prior to cryo-FIB milling, we screened these grids by cryo-FM to identify target cells that were transfected with GFP-Bax and were at the stage of Bax cluster formation. Furthermore, by targeting cell regions containing GFP-Bax clusters, we increased the likelihood that the clusters were contained in the thin lamellae produced by cryo-FIB milling (Figure 3—figure supplement 2). We then collected electron cryo-tomograms of mitochondria visibly identified in intermediate magnification maps of the lamellae (Figure 3I and L, Figure 4A–C). Adjacent to outer mitochondrial membrane ruptures in three different cells, we found six ribosome-exclusion zones that contained similar structural motifs as observed in vitreous sections. We therefore attributed these regions to correspond to Bax clusters (Figure 3K,N and Q, and Videos 3 and 4). These regions contained small planar segments, which manifest as lines in individual tomographic slices. The segments appeared irregularly connected to each other in a network (Figure 3K’, N’ and Q’, and Videos 3 and 4; red highlights). The average length of the segments was 21 nm (SD 5.6 nm, N = 59 segments from 3 clusters from two different cells). In addition, dot-like densities could be discerned at and between the segments (Figure 3K’, N’ and Q’, and Videos 3 and 4; red highlights). The network ultrastructure resembled a sponge with irregular fenestration, containing patches of high or low density.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/40712/elife-40712-fig4-v1.jpg)
 
-**Figure 4.:** (A-C) Virtual slices through electron cryo-tomograms of HeLa cells (16 hr post-transfection with GFP-Bax), thinned by cryo-FIB milling. Black squares indicate areas magnified in D-I, respectively. (D–I) Magnifications of the virtual slices shown in A-C, respectively, areas corresponding to black squares. White arrowheads indicate ruptured membranes. (J–L) 3D segmentation model of mitochondria seen in A-C, respectively. Outer membranes are in dark blue, inner membranes in light blue. (M) Quantification of rupture sizes, grouped according to inner membrane morphology category. Data points are from both ET of resin-embedded HeLa cells and from cryo-ET of cryo-FIB milled HeLa cells, all 16 hr post-transfection with GFP-Bax. Schematic representation of each category is shown above columns. Note that the 'lamellar cristae' category contains 10 ruptures from 9 mitochondria. p=0.0024 for lamellar cristae vs. unfolded cristae. The red lines indicate the mean and the standard deviation. For numerical data see Figure 4—source data 1. (N) The percentage of mitochondrial surface area consisting of exposed inner membrane, plotted for mitochondria with unfolded cristae (indicated by schematic in upper right corner). The red lines indicate the mean and the standard deviation. For numerical data see Figure 4—source data 2. Scale bars: 100 nm (A–C and J–L), 20 nm (D–I).10.7554/eLife.40712.013Figure 4—source data 1.Figure 4M.10.7554/eLife.40712.014Figure 4—source data 2.Figure 4N.
+**Figure 4.:** (A-C) Virtual slices through electron cryo-tomograms of HeLa cells (16 hr post-transfection with GFP-Bax), thinned by cryo-FIB milling. Black squares indicate areas magnified in D-I, respectively. (D–I) Magnifications of the virtual slices shown in A-C, respectively, areas corresponding to black squares. White arrowheads indicate ruptured membranes. (J–L) 3D segmentation model of mitochondria seen in A-C, respectively. Outer membranes are in dark blue, inner membranes in light blue. (M) Quantification of rupture sizes, grouped according to inner membrane morphology category. Data points are from both ET of resin-embedded HeLa cells and from cryo-ET of cryo-FIB milled HeLa cells, all 16 hr post-transfection with GFP-Bax. Schematic representation of each category is shown above columns. Note that the 'lamellar cristae' category contains 10 ruptures from 9 mitochondria. p=0.0024 for lamellar cristae vs. unfolded cristae. The red lines indicate the mean and the standard deviation. For numerical data see Figure 4—source data 1. (N) The percentage of mitochondrial surface area consisting of exposed inner membrane, plotted for mitochondria with unfolded cristae (indicated by schematic in upper right corner). The red lines indicate the mean and the standard deviation. For numerical data see Figure 4—source data 2. Scale bars: 100 nm (A–C and J–L), 20 nm (D–I).
+
+![Video 3.](https://cdn.elifesciences.org/articles/40712/elife-40712-video3.mp4.jpg)
+
+**Video 3.:** Movie through virtual slices of electron cryo-tomogram. 3D segmentation model of mitochondrion is shown as an overlay. Outer membranes in dark blue, inner membranes in light blue, and ribosomes in intermembrane space in white. Movie pauses at the virtual slice shown in Figure 3K and K’ to indicate structural features highlighted in red. Scale bar: 50 nm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/40712/elife-40712-video4.mp4.jpg)
+
+**Video 4.:** Movie through virtual slices of electron cryo-tomogram. 3D segmentation model of mitochondrion is shown as an overlay. Outer membranes are in dark blue, inner membranes in light blue. White borders indicate end of segmentation (see Materials and methods). Movie pauses at the virtual slice shown in Figure 3N and N’, and at the virtual slice shown in Figure 3Q and Q’ to indicate structural features highlighted in red. Scale bar: 50 nm.
 
 Thus, using two different vitrification and two independent imaging methods, we identify structural motifs that suggest that Bax clusters contain higher order structures and their supramolecular organization resembles a sponge-like meshwork.
 
-## Inner membrane flattening is most definite at outer membrane ruptures and inner membrane reshaping correlates with rupture size
+### Inner membrane flattening is most definite at outer membrane ruptures and inner membrane reshaping correlates with rupture size
 
 We sought to use the superior preservation in cryo-ET to reveal details of the changes in membrane architecture occurring to apoptotic mitochondria. First, we inspected the ruptures in the outer mitochondrial membranes from five cells (Figure 3I–Q and Figure 4). The ruptured membrane bilayers displayed distinct, often sharp edges (Figure 4D–I) that were similar in thickness to the rest of the membrane. Some of the rupture edges appeared embedded into the cluster (Figure 3K,N,Q and Figure 4F,H). Furthermore, fragments of bilayer that appeared continuous with the outer membrane appeared also connected to the cluster (Figure 3Q; yellow arrowheads). In 11 of the 12 outer membrane ruptures we visualized by cryo-ET, the inner membrane appeared intact with no visible rupture. In only one case, we observed that both outer and inner membranes were ruptured, and a Bax cluster was protruding through the rupture into the mitochondrial matrix (Figure 3O–Q’). In the other 11 cases of ruptured outer membrane, substantial segments of the inner membrane were exposed to the cytosol at the site of the rupture (Figure 4A–C). In nine of these cases, there were no cristae protruding from the exposed inner membrane segment, and no intracristae spaces exposed to the outer membrane ruptures (Figure 4A–C). Thus, these segments appeared very smooth relative to the rest of the inner membrane, which displayed cristae of variable curvature that protruded into the matrix (Figure 4J–L).
 
@@ -73,27 +121,27 @@ We classified the ruptured mitochondria that we observed both by ET of resin-emb
 
 The mitochondria in the last category, which shared a similar degree of unfolded cristae and largely flattened inner membrane, appeared nearly spherical (Figure 2G,H,K,L and Figure 4A–L). We could thus estimate the total surface area of these mitochondria, and the surface area of the inner membrane that was exposed to the cytosol due to the rupture. The percentage of mitochondrial surface area that consisted of exposed inner membrane varied between 2% and 50% (mean total surface area: 1.15 µm2, SD 0.41 µm2, N = 19; mean surface area of exposed inner membrane: 0.21 µm2, SD 0.19 µm2, N = 19) (Figure 4N). Thus, rupture sizes varied largely at a given stage of inner membrane remodeling.
 
-## The matrices of apoptotic mitochondria are dilute compared to non-apoptotic mitochondria
+### The matrices of apoptotic mitochondria are dilute compared to non-apoptotic mitochondria
 
 As cryo-ET relies on the inherent contrast of native macromolecules, differences in density within individual tomograms can be interpreted as differences in density of macromolecules. The mitochondrial matrix is a compartment of high protein concentration (Kühlbrandt, 2015). Therefore, mitochondrial matrices are expected to display a higher density in cryo-ET than the surrounding cytoplasm. However, in our data set the mitochondria with unfolded inner membranes did not appear different in density than the surrounding cytosol (Figure 5A). To assess this observation quantitatively, we measured the ratio of average matrix-gray value to cytosol-gray value in electron cryo-tomograms of HeLa cells overexpressing GFP-Bax (Figure 5A) (N = 4 mitochondria). For comparison, we acquired electron cryo-tomograms of mitochondria in control HeLa cells that did not overexpress Bax and performed the same measurement (Figure 5B) (N = 5 mitochondria). The ratio was close to one in the cells overexpressing GFP-Bax, suggesting that the matrices of these mitochondria were similar in macromolecular density to the cytosol (Figure 5C). In mitochondria of control cells, the ratio was significantly lower (Figure 5C, p<0.0001), as expected for a compartment higher in macromolecular density than the cytosol. These results indicate that the mitochondria that had unfolded inner membranes in Bax-overexpressing cells had dilute matrices as compared to mitochondria in control cells.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/40712/elife-40712-fig5-v1.jpg)
 
-**Figure 5.:** (A) Virtual slice through an electron cryo-tomogram of a HeLa cell (16 hr post-transfection with GFP-Bax) thinned by cryo-FIB milling. (B) Virtual slice through an electron cryo-tomogram of a control HeLa cell thinned by cryo-FIB milling, showing typical mitochondria in absence of GFP-Bax expression. (C) Quantitative analysis of the ratio between average pixel gray values in the matrix and average pixel gray values in the cytosol. A low value is attributed to a darker pixel, and a high value is attributed to a lighter pixel. p<0.0001 for comparison between mitochondria in GFP-Bax overexpressing and control HeLa cells. The red lines indicate the mean and the standard deviation. For numerical data see Figure 5—source data 1. (D) Virtual slice through an electron cryo-tomogram of a HeLa cell (16 hr post-transfection with GFP-Bax), thinned by cryo-FIB milling. Note that this is a different virtual slice of the tomogram shown in Figure 4C. Black squares indicate areas magnified in F-H. (E) 3D segmentation model of mitochondrion seen in D. Outer membranes are in dark blue, inner membranes in light blue and ATP synthase heads in red. (F–H) Magnified areas of the virtual slice shown in D, corresponding to the black squares. White arrowheads indicate ATP synthase heads. Arrowheads of matching color in F denote dimers of ATP synthases. (F’–H’) Images from F-H shown with the segmentation model from E. Outer membranes are in dark blue, inner membranes in light blue, and ATP synthase heads in red. (I) Structure of the yeast ATP synthase dimer (EMD-2161, Davies et al., 2012), to illustrate how we measured the angle enclosed by ATP synthases heads and membrane (yellow points and dashed lines) for our analysis. (J) ATP synthase angles measured in dimers in cristae membranes, and between neighboring ATP synthases in the boundary membrane (BM). The red lines indicate the mean and the standard deviation. For numerical data see Figure 5—source data 2. Scale bars: 100 nm (A, B, D, E), 20 nm (F, F’, G, G’, H, H’).10.7554/eLife.40712.018Figure 5—source data 1.Figure 5C.10.7554/eLife.40712.019Figure 5—source data 2.Figure 5J.
+**Figure 5.:** (A) Virtual slice through an electron cryo-tomogram of a HeLa cell (16 hr post-transfection with GFP-Bax) thinned by cryo-FIB milling. (B) Virtual slice through an electron cryo-tomogram of a control HeLa cell thinned by cryo-FIB milling, showing typical mitochondria in absence of GFP-Bax expression. (C) Quantitative analysis of the ratio between average pixel gray values in the matrix and average pixel gray values in the cytosol. A low value is attributed to a darker pixel, and a high value is attributed to a lighter pixel. p<0.0001 for comparison between mitochondria in GFP-Bax overexpressing and control HeLa cells. The red lines indicate the mean and the standard deviation. For numerical data see Figure 5—source data 1. (D) Virtual slice through an electron cryo-tomogram of a HeLa cell (16 hr post-transfection with GFP-Bax), thinned by cryo-FIB milling. Note that this is a different virtual slice of the tomogram shown in Figure 4C. Black squares indicate areas magnified in F-H. (E) 3D segmentation model of mitochondrion seen in D. Outer membranes are in dark blue, inner membranes in light blue and ATP synthase heads in red. (F–H) Magnified areas of the virtual slice shown in D, corresponding to the black squares. White arrowheads indicate ATP synthase heads. Arrowheads of matching color in F denote dimers of ATP synthases. (F’–H’) Images from F-H shown with the segmentation model from E. Outer membranes are in dark blue, inner membranes in light blue, and ATP synthase heads in red. (I) Structure of the yeast ATP synthase dimer (EMD-2161, Davies et al., 2012), to illustrate how we measured the angle enclosed by ATP synthases heads and membrane (yellow points and dashed lines) for our analysis. (J) ATP synthase angles measured in dimers in cristae membranes, and between neighboring ATP synthases in the boundary membrane (BM). The red lines indicate the mean and the standard deviation. For numerical data see Figure 5—source data 2. Scale bars: 100 nm (A, B, D, E), 20 nm (F, F’, G, G’, H, H’).
 
-## The organization of ATP synthases in apoptotic mitochondria exhibits localized changes
+### The organization of ATP synthases in apoptotic mitochondria exhibits localized changes
 
 The dilute matrices allowed us to see individual protein complexes within the mitochondria of Bax-overexpressing HeLa cells, usually obscured by the high protein density (Kühlbrandt, 2015). In particular, ATP synthase heads were recognizable. As described by cryo-ET of purified mitochondria, densities characteristic for ATP synthases are localized at the ridges of cristae, where their distinct dimerization is thought to contribute to cristae structure (Anselmi et al., 2018; Davies et al., 2012; Dudkina et al., 2010; Strauss et al., 2008). We investigated the distribution of ATP synthases in apoptotic mitochondria (Figure 5D,E). ATP synthases were abundant on cristae (Figure 5F and F’; matching arrowheads). Albeit more rarely, ATP synthases were also present on shallow indentations of the boundary membrane, the region of the inner membrane directly opposed to the outer membrane (Figure 5G and G’; arrowheads). No ATP synthase heads were observed on the smooth regions of the inner membrane exposed to the cytosol by the ruptured outer membrane (Figure 5H and H’). Thus, the frequency of observing ATP synthases appeared to correlate with membrane curvature and the localization seemed to require an intact, adjacent outer membrane.
 
 We next investigated the dimeric states of the ATP synthases on cristae and boundary membranes. The ATP synthase dimer is reported to comprise an angle of 70–100˚ between the major stalks (Davies et al., 2011; Hahn et al., 2016). On cristae, dimers were readily discernable (Figure 5F). Within these dimers, we measured the angle enclosed by the two heads and the membrane between the two monomers (Figure 5I). The average angle was 106˚ (SD 19˚, N = 81 dimers)(Figure 5J). Note that 106˚ measured in this way correspond to approximately 70˚ between the major stalks. On the boundary membrane it was not possible to unambiguously identify dimers among ATP synthases (Figure 5G). We therefore measured all possible angles between neighboring ATP synthases. These measurements thus included potential dimers as well as monomers positioned near to each other. For 52 ATP synthases on boundary membranes, we measured 66 angles between ATP synthase pairs (Figure 5J). The average angle was 53˚ (SD 15˚), and only three ATP synthase pairs enclosed angles within the range we had measured for dimers in cristae, indicating that the majority of ATP synthases on the boundary membrane were not arranged into dimers similar to those on cristae. These results suggest that Bax-mediated flattening of the inner membrane is coupled to changes in the supramolecular organization of ATP synthases. These changes involve the dissociation of dimers into monomers upon unfolding of cristae, and clearance of ATP synthase heads from areas of smooth, cytosol-exposed inner membrane segments.
 
-## Bax activity can result in mitochondrial matrices entirely devoid of outer membrane
+### Bax activity can result in mitochondrial matrices entirely devoid of outer membrane
 
 Recently, leakage of mtDNA into the cytosol of apoptotic cells was reported to result from expulsion of inner membrane compartments through ruptured outer membranes (McArthur et al., 2018). In our correlative microscopy data from resin-embedded apoptotic Bax/Bak DKO HCT116 cells stably expressing GFP-Bax, MitoTracker signals localized to clumps of electron-dense compartments that were adjacent to GFP-Bax spots (Figure 6A–D). In cryo-ET data of these cells prepared by cryo-FIB milling, we also found single-membrane bound compartments that contained granular structures similar to those in the mitochondrial matrix (Figure 6E and Wolf et al., 2017), and highly curved membranes lined with particles reminiscent of ATP synthases (Figure 6E–I). To determine whether these compartments consisted of inner mitochondrial membranes, we tested whether the particles could correspond to ATP synthases by comparing them to the ATP synthases we identified in HeLa cells (Figure 5). We therefore measured the shortest distance from the center of the head to the membrane. The average distance was similar in both data sets (Figure 6J; HCT116: 12.02 nm, SD 1.69 nm, N = 65; HeLa: 12.07 nm, SD 1.00 nm, N = 65), and matched estimates from known ATP synthase structures (Hahn et al., 2016; Hahn et al., 2018; Srivastava et al., 2018). We concluded that these particles were likely ATP synthases, and hence these compartments corresponded to mitochondrial inner membranes lacking an outer membrane. These results indicate that Bax activity can result in complete removal of the outer membrane.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/40712/elife-40712-fig6-v1.jpg)
 
-**Figure 6.:** (A) FM of a section of resin-embedded Bax/Bak DKO HCT116 cells stably expressing GFP-Bax, treated with ABT-737 for 3 hr. GFP-Bax (green), MitoTracker Deep Red (magenta). Yellow square indicates the field of view imaged by ET, white circles indicate fluorescent signals of interest localized in electron tomograms. (B) Virtual slice through an electron tomogram acquired at area indicated by the yellow square in A. Green and magenta crosses indicate predicted position of GFP-Bax and MitoTracker Deep Red signal centroids, respectively, indicated by white circles in fluorescence micrographs. Black square indicates area magnified in C. (C) Magnified area of the virtual slice shown in B, corresponding to the black square. The image shows an accumulation of single membrane compartments near the GFP-Bax clusters. (D) 3D segmentation model of mitochondria and single-membrane compartments seen in B. Outer membranes are in dark blue, inner membranes in light blue. (E) Virtual slice through an electron cryo-tomogram of a cryo-FIB milled Bax/Bak DKO HCT116 cell stably expressing GFP-Bax treated with ABT-737 for 3 hr. Arrows indicate compartments reminiscent of mitochondrial inner membranes that appear to have no outer membrane.Arrowhead indicates an inner membrane within an intact mitochondrion. (F, G) Magnified areas of the virtual slice shown in E, corresponding to the black squares. White arrowheads indicate putative ATP synthase heads. (H) 3D segmentation model of compartments seen in E. Membranes are in light blue, putative ATP synthase heads in red. White box indicates magnified area in I. (I) Magnified area from white box in H, depicting the arrangement of putative ATP synthase heads. (J) Measured distances between head and membrane. Comparison between ATP synthases identified in mitochondria in HeLa cells, and putative ATP synthases in the compartments without outer membrane in HCT116 cells. The red lines indicate the mean and the standard deviation. For numerical data see Figure 6—source data 1. Scale bars: 500 nm (A), 100 nm (B–E, H), 20 nm (F, G, I).10.7554/eLife.40712.021Figure 6—source data 1.Figure 6J.
+**Figure 6.:** (A) FM of a section of resin-embedded Bax/Bak DKO HCT116 cells stably expressing GFP-Bax, treated with ABT-737 for 3 hr. GFP-Bax (green), MitoTracker Deep Red (magenta). Yellow square indicates the field of view imaged by ET, white circles indicate fluorescent signals of interest localized in electron tomograms. (B) Virtual slice through an electron tomogram acquired at area indicated by the yellow square in A. Green and magenta crosses indicate predicted position of GFP-Bax and MitoTracker Deep Red signal centroids, respectively, indicated by white circles in fluorescence micrographs. Black square indicates area magnified in C. (C) Magnified area of the virtual slice shown in B, corresponding to the black square. The image shows an accumulation of single membrane compartments near the GFP-Bax clusters. (D) 3D segmentation model of mitochondria and single-membrane compartments seen in B. Outer membranes are in dark blue, inner membranes in light blue. (E) Virtual slice through an electron cryo-tomogram of a cryo-FIB milled Bax/Bak DKO HCT116 cell stably expressing GFP-Bax treated with ABT-737 for 3 hr. Arrows indicate compartments reminiscent of mitochondrial inner membranes that appear to have no outer membrane.Arrowhead indicates an inner membrane within an intact mitochondrion. (F, G) Magnified areas of the virtual slice shown in E, corresponding to the black squares. White arrowheads indicate putative ATP synthase heads. (H) 3D segmentation model of compartments seen in E. Membranes are in light blue, putative ATP synthase heads in red. White box indicates magnified area in I. (I) Magnified area from white box in H, depicting the arrangement of putative ATP synthase heads. (J) Measured distances between head and membrane. Comparison between ATP synthases identified in mitochondria in HeLa cells, and putative ATP synthases in the compartments without outer membrane in HCT116 cells. The red lines indicate the mean and the standard deviation. For numerical data see Figure 6—source data 1. Scale bars: 500 nm (A), 100 nm (B–E, H), 20 nm (F, G, I).
 
 ## Discussion
 
@@ -129,41 +177,254 @@ In summary, we reveal molecular and morphological details of the effects of Bax 
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Bax/Bak DKO HCT116 GFP-Bax</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cell line generated by transfection of GFP-Bax and selection for stable expression in Bax/Bak DKO HCT116 line generated in PMID:22056880</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa/wtOTC, TetOn promoter</td>
+      <td>PMID:24149988</td>
+      <td></td>
+      <td>Cell line maintained in Richard Youle lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa control/Fsp27-EGFP</td>
+      <td>other</td>
+      <td></td>
+      <td>Cell line stably expressing Fsp27-EGFP from tet-inducible promoter. Obtained from Koini Lim (David Savage lab).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-cytochome c (monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>BD Pharmingen:556432</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-TOM20 (polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz:sc-11415</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit Alexa Fluor 405 nm</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:A31556</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-mouse Alexa Fluor 647 nm</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:A31571</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hBax-C3-EGFP</td>
+      <td>Addgene</td>
+      <td>Addgene:19741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ABT-737</td>
+      <td>Cayman</td>
+      <td>Cayman:11501</td>
+      <td>assay concentration = 10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Takara</td>
+      <td>Takara:631311</td>
+      <td>assay concentration = 1 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hygromycin B</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:10687010</td>
+      <td>assay concentration = 0.2 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oleic acid</td>
+      <td>Sigma</td>
+      <td>Sigma:O3008</td>
+      <td>assay concentration = 0.4 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Q-VD-Oph</td>
+      <td>APExBIO</td>
+      <td>APExBIO:A1901</td>
+      <td>assay concentration = 10 µM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lowicryl HM20</td>
+      <td>Polysciences, Inc.</td>
+      <td>Polysciences, Inc.:15924–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Correlative Microscopy, MATLAB-based scripts</td>
+      <td>PMID:22863005; PMID:24275379; Mathworks</td>
+      <td></td>
+      <td>https://www.embl.de/download/briggs/cryoCLEM/index.htm</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMOD</td>
+      <td>PMID:8742726</td>
+      <td></td>
+      <td>http://bio3d.colorado.edu/imod/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>PMID:16182563</td>
+      <td></td>
+      <td>http://bio3d.colorado.edu/SerialEM/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ridge Detection 1.4.0</td>
+      <td>DOI:10.5281/zenodo.845874</td>
+      <td></td>
+      <td>https://imagej.net/Ridge_Detection</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Specimen carrier, aluminum, B</td>
+      <td>Engineering Office M. Wohlwend</td>
+      <td>Engineering Office M. Wohlwend: Art. 1314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Specimen carrier, copper gold-coated</td>
+      <td>Engineering Office M. Wohlwend</td>
+      <td>Engineering Office M. Wohlwend: Art. 1322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EM grids, copper, 200 mesh carbon support</td>
+      <td>Agar Scientific Ltd.</td>
+      <td>Agar Scientific Ltd:S160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EM grids, copper, 200 mesh, R 3.5/1 holey carbon</td>
+      <td>Quantifoil</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EM grids, gold, 200 mesh, R 2/2 holey carbon</td>
+      <td>Quantifoil</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MitoTracker Deep Red</td>
+      <td>Thermo</td>
+      <td>Thermo:22426</td>
+      <td>assay concentration = 20 nM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sapphire disks, 3 mm</td>
+      <td>Engineering Office M. Wohlwend</td>
+      <td>Engineering Office M. Wohlwend: Art. 405</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TetraSpeck microspheres,50 nm</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>custom order, (diluted 1:100 in PBS)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TetraSpeck microspheres, 100 nm</td>
+      <td>Invitrogen</td>
+      <td>T7279</td>
+      <td>(diluted 1:50 in PBS)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>X-tremeGENE 9</td>
+      <td>Roche</td>
+      <td>Roche:06365787001</td>
+      <td>3 µL reagent: 1 µg DNA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 HeLa cells for all Bax experiments were grown at 37˚C, 5% CO2 in DMEM, high glucose, GlutaMAX, pyruvate (Thermo 31996) medium supplemented with 10% heat-inactivated FBS (Gibco 10270), 10 mM HEPES, and 1 × NEAA (Thermo 11140). Control HeLa cells for matrix density measurements were grown at 37˚C, 5% CO2 in DMEM, high glucose, GlutaMAX, pyruvate (Thermo 31996) medium supplemented with 10% heat-inactivated, Tet-approved FBS, (Pan Biotech p30-3602), 0.2 µg/mL hygromycin B (Invitrogen 10687010), 10 mM HEPES, and 1 × NEAA (Thermo 11140). Bax/Bak DKO HCT116 GFP-Bax cells were grown at 37˚C, 5% CO2 in McCoy’s 5A, GlutaMAX medium (Thermo 36600) supplemented with 10% heat-inactivated FBS (Gibco 10270), 10 mM HEPES, and 1 × NEAA (Thermo 11140). Cell lines were regularly tested for mycoplasma infection using the MycoAlert mycoplasma detection kit (Lonza). Cell lines were authenticated as HeLa and HCT116, respectively, by PCR-single-locus-technology (Eurofins).
 
-## Constructs and reagents
+### Constructs and reagents
 
 hBax-C3-EGFP (Addgene plasmid 19741) (Nechushtan et al., 1999) was used for transient GFP-Bax expression in HeLa cells. Transient transfection was performed using X-tremeGENE 9 (Roche 06365787001) at a ratio of 3 µL of transfection reagent to 1 µg DNA. MitoTracker Deep Red (Thermo 22426) was used for cellular staining at 20 nM. Drug treatments used were ABT-737 at 10 µM (Cayman 11501) and Q-VD-OPh at 10 µM (APExBIO A1901).
 
-## Live-cell confocal microscopy
+### Live-cell confocal microscopy
 
 HeLa cells were grown in two-well chamber slides (iBidi 80286 or Lab-Tek 155380), stained with MitoTracker Deep Red, transfected with 1000 ng hBax-C3-EGFP plasmid and incubated with Q-VD-OPh. Bax/Bak DKO HCT116 GFP-Bax cells were grown in two-well chamber slides (iBidi 80286), stained with MitoTracker Deep Red, and incubated with ABT-737 and Q-VD-OPh. Both cell lines were imaged every 30 min. Imaging was performed with either a Zeiss LSM 710 or a Zeiss LSM880 Spectral confocal microscope each equipped with a 63× Plan Apo oil-immersion objective with NA=1.4. GFP-Bax and MitoTracker Deep Red were excited using 488 and 633 nm lasers, respectively. For both cell lines, the live-imaging experiments were repeated at least three times. Fluorescence images of live cells shown in all figures have been processed with the Smooth function in ImageJ and have been adjusted for contrast individually.
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 HeLa cells were plated onto 13 mm cover glasses (Assistant, 41001113) in a 24-well plate, transfected with 300 ng hBax-C3-EGFP plasmid and incubated with Q-VD-OPh for 16 h. Cells were then fixed with 4% paraformaldehyde in phosphate buffer saline (PBS), pH 7.2 for 30 min. The cover glasses containing cells were removed from the plate, blocked for 1 h in 10% goat serum (Sigma G6767) and 1% Saponin (Sigma 8047-15-2) and incubated overnight at 4°C with 1:250 mouse monoclonal anti-cytochrome c antibody (BD Pharmingen 556432) and 1:250 rabbit polyclonal anti-TOM20 antibody (Santa Cruz Biotechnology; sc-11415). The samples were then incubated with 1:200 goat anti-rabbit Alexa Fluor 405 and donkey anti-mouse Alexa Fluor 647 antibodies (Invitrogen; A31556 and A31571, respectively) for 1 hr at room temperature and mounted with ProLong Diamond Antifade Mountant (Invitrogen P36965) on an imaging slide. Imaging was performed on a Zeiss LSM 710 confocal microscope with a 63× Plan Apo oil-immersion objective with NA=1.4. Alexa Fluor 405, GFP-Bax, and Alexa Fluor 647 were excited at 405, 488, and 633 nm, respectively. Immunofluorescence images shown in Figure 1—figure supplement 1 have been adjusted for contrast individually.
 
-## Correlative FM and ET of resin-embedded cells
+### Correlative FM and ET of resin-embedded cells
 
 Correlative microscopy of resin-embedded cells was performed as described in (Ader and Kukulski, 2017). In brief, cells were grown on 3 mm sapphire disks (Engineering Office M. Wohlwend, Switzerland) in six-well plates for 24 hr, transfected with 2000 ng hBax-C3-EGFP plasmid and incubated with Q-VD-OPh for 16 hr, stained with MitoTracker Deep Red, and high-pressure frozen using a HPM100 (Leica Microsystems), screened for quality of cell distribution and for GFP-Bax expression by cryo-FM (Leica EM Cryo CLEM, Leica Microsystems) equipped with an Orca Flash 4.0 V2 sCMOS camera (Hamamatsu Photonics) and a HCX PL APO 50× cryo-objective with NA = 0.9. For screening, a 2 × 2 mm montage was taken of green (L5 filter, 250 ms), far red (Y5 filter, 100 ms), and brightfield (50 ms) channels (all filters: Leica Microsystems). Z-stacks (0.5 µm intervals) were collected on regions of interest (0.6 x 0.6 mm) with the same exposure settings. Cells were then freeze-substituted with 0.008% uranyl acetate in acetone and embedded in Lowicryl HM20 using a AFS2 (Leica Microsystems). Resin-embedded cells were sectioned 300 nm thin using a Ultracut E Microtome (Reichert) and a diamond knife (Diatome), and collected on 200 mesh copper grids with carbon support (S160, Agar Scientific Ltd.). As fiducial markers for correlation, 50 nm TetraSpeck microspheres (custom order, Invitrogen) diluted 1:100 in PBS pH 8.4 were adsorbed for 5-10 min to the sections. Fluorescence images were acquired using a TE2000-E widefield fluorescence microscope (Nikon) with a 100× oil-immersion TIRF objective with NA = 1.49. Filters: 89006 ET CFP/YFP/mCherry (Chroma), excitation 560/20, dichroic 89008bs, emission 535/30 for YFP-Parkin and 49006 ET CY5 (Chroma), excitation 520/60, dichroic T660Ipxr, emission 700/75 for MitoTracker Deep Red. Fiducial markers were visible in both channels. EM was performed on a Tecnai F20 (FEI) operated at 200 kV. Transmission EM (TEM) images at approximately 100 µm defocus were collected using the montaging function in SerialEM (Mastronarde, 2005) at a region of interest, at a pixel size of 1.1 nm. Correlation between fluorescence images and TEM montaged images was performed using the fiducial marker positions as previously described (Ader and Kukulski, 2017; Kukulski et al., 2011). ET was done in Scanning TEM mode on an axial bright field detector. Tilt series were collected using a high-tilt tomography holder (Fischione Instruments; Model 2020) from approximately -65˚ to +65˚ (1˚ increments) at a pixel size of 1.1, 1.6, 2.9, 3.1, or 4.4 nm. Reconstruction and segmentation were performed using IMOD (Kremer et al., 1996). The data set on resin-embedded HeLa cells has been acquired from cells grown on two different sapphire disks, vitrified during the same high-pressure freezing session. The data set on resin-embedded Bax/Bak DKO HCT116 has been acquired from cells grown on one sapphire disk. See also Supplementary file 1. Segmentations and figures were made from tomograms acquired at 1.1 nm pixel size. For better visibility in all figures, we filtered tomograms with a nonlinear anisotropic diffusion (NAD) and reduced noise in the shown virtual slices by using a Gaussian filter in IMOD. Fluorescence images of resin sections shown in all figures have been rotated to match orientation of ET virtual slices, and have been adjusted for contrast individually.
 
-## Vitreous sectioning and correlative microscopy of vitreous sections
+### Vitreous sectioning and correlative microscopy of vitreous sections
 
 HeLa cells were grown for 24 hr in six-well plates, transfected with 2000 ng hBax-C3-EGFP plasmid and incubated with Q-VD-OPh for 16 hr, then trypsinized and pelleted. Immediately before trypsinizing, cells were stained with MitoTracker Deep Red. Pellets were maintained at 37 ˚C while they were mixed 1:1 with 40% Dextran (Sigma) in PBS, pipetted into the 0.2 mm recess of gold-coated copper carriers, covered with the flat side of Aluminum carriers B and high-pressure frozen with a Leica HPM100 (Leica Microsystems). 100 nm-thick vitreous sections were produced at -150˚C in a UC6/FC6 cryo-ultramicrotome (Leica Microsystems) using cryotrim 25 and a 35˚ cryo immuno knives (Diatome). The sections were attached using a Crion antistatic device (Leica Microsystems) to EM grids (R3.5/1, copper, Quantifoil) that were plasma cleaned and had 100 nm TetraSpeck beads (Invitrogen) diluted 1:50 in PBS adhered to them. To identify areas in the sections that contained GFP-Bax signals and were suitable for cryo-ET, we used the procedure described in (Bharat et al., 2018). In brief, grids with vitreous sections were imaged by cryo-FM on the Leica EM Cryo CLEM (Leica Microsystems), equipped with an Orca Flash 4.0 V2 sCMOS camera (Hamamatsu Photonics) and a HCX PL APO 50× cryo-objective with NA = 0.9, in a humidity-controlled room (humidity below 25%). For screening, a 1.5 × 1.5 mm montage was taken of green (L5 filter, 1 s), far red (Y5 filter, 1 s), and brightfield (50 ms) channels (all filters: Leica Microsystems). TetraSpecks were visible in both green and far red. Z-stacks were collected of grid squares of interest (0.3 µm intervals), acquiring green (L5 filter, 3 s), far red (Y5 filter, 3 s), and brightfield (50 ms) channels. Localization of GFP signals in cryo-EM intermediate magnification maps was done by visual correlation, as described in (Bharat et al., 2018). Subsequent precise correlation was done using custom MATLAB-based scripts (Kukulski et al., 2012; Schorb and Briggs, 2014). However, because in many areas of the grids, TetraSpeck fiducial markers were sparse, we instead used the centers of carbon film holes as landmarks for correlation between cryo-FM and cryo-EM images. Fluorescence images of vitreous sections shown in Figures have been rotated to match orientation of cryo-EM images and have been adjusted for contrast individually.
 
-## Cryo-FIB milling
+### Cryo-FIB milling
 
 HeLa cells were grown for 24 hr on 200 mesh gold grids with a holey carbon film R2/2 (Quantifoil) in six-well plates and transfected with 2000 ng hBax-C3-EGFP plasmid in presence of Q-VD-OPh. Sixteen hr after transfection, cells were stained with MitoTracker Deep Red, grids were manually backside blotted using Whatman filter paper No. 1 and vitrified using a manual plunger. Bax/Bak DKO HCT116 GFP-Bax cells were grown on grids for 36 hr, stained with MitoTracker Deep Red, and incubated with ABT-737 and Q-VD-OPh for 3 hr before plunge-freezing. Control HeLa cell for measurements of matrix density contained a doxycycline-inducible Fsp27-EGFP construct and were prepared for an unrelated project by treating with 0.4 mM oleic acid (Sigma, O3008) and 1 µg/mL doxycycline (Takara, 631311) for 15 hr before incubation with 1× LipidTox Deep Red (Thermo, H34477) for 1 hr, and then plunge-frozen as described above. Grids were screened for cells with GFP-Bax expression using cryo-FM (Leica EM Cryo CLEM, Leica Microsystems), equipped with an Orca Flash 4.0 V2 sCMOS camera (Hamamatsu Photonics) and a HCX PL APO 50 × cryo-objective with NA = 0.9, in a humidity-controlled room (humidity below 25%). For screening, a 1.5 × 1.5 mm montage was taken of green (L5 filter, 250 ms), far red (Y5 filter, 100 ms), and brightfield (50 ms) channels (all filters: Leica Microsystems). Z-stacks were collected of grid squares of interest (0.5 µm intervals) over the cell volume using the same exposure settings. Cells were cryo-FIB milled to prepare lamellae using a Scios DualBeam FIB/SEM (FEI) equipped with a Quorum cryo-stage (PP3010T), following the protocol described in (Schaffer et al., 2015). In brief, grids were coated with an organic Pt compound using the gas injection system for either 8 s at 12 mm working distance or 30 s at 13 mm working distance from a stage tilt of 25˚. The stage was then tilted so that the grid was at a 10˚ angle toward the ion beam for all subsequent steps. The electron beam was used at 13 pA and 5-10 kV to locate cells, 2 kV for subsequent imaging. The ion beam was used at 30 kV and 10 pA for imaging. Rough milling was performed at 30 kV ion beam voltage and 0.5 nA current until a lamella thickness of 5 µm was reached. Subsequently, the current was reduced to 0.3 nA until 3 µm lamella thickness, and further to 0.1 nA until 1 µm lamella thickness. Fine milling to a final lamella thickness of approximately 200 nm was performed either at 30 kV and 30 pA, or 16 kV and 11 pA ion beam setting. The temperature of the cryo-stage was kept at -170 to -180˚C and that of anti-contaminators below -190˚C.
 
-## Electron cryo-tomography of vitreous sections and cryo-FIB milled lamellae
+### Electron cryo-tomography of vitreous sections and cryo-FIB milled lamellae
 
 Montaged images of the entire grid were acquired at low magnification at pixel size of 182.3 nm for vitreous sections and either 190.9 or 99.4 nm for lamella. Intermediate magnification maps of grid squares with vitreous sections or lamellae of interest were acquired at pixel size 5.5 nm. Electron cryo-tomographic tilt-series were collected on a Titan Krios (FEI) operated at 300 kV using a Quantum energy filter (slit width 20 eV) and a K2 direct electron detector (Gatan) in counting mode at a pixel size of 3.7 Å and at a dose rate of ~ 2-4 e-/pixel/second on the detector, dependent on sample thickness. Tilt-series were acquired between ±60° starting from 0˚ with 1˚ increment using SerialEM (Mastronarde, 2005) following a grouped dose-symmetric acquisition with a group size of four (Bharat et al., 2018; Hagen et al., 2017), and at 5 µm defocus. A dose of approximately 1.0 to 1.2 e-/Å2 was applied per image of the tilt-series. Reconstruction and segmentation were performed using IMOD (Kremer et al., 1996). The vitreous section data were acquired on sections produced from one high-pressure frozen pellet of one HeLa cell culture. The HeLa (GFP-Bax overexpression) lamella data were acquired on five different lamellae (each lamella corresponding to one cell) produced from three separate plunge-freezing sessions, thus three separate cell culture experiments. The HeLa control lamella data were acquired on two lamellae from two separate plunge-freezing sessions. The Bax/Bak DKO HCT116 lamella data were acquired on one lamella corresponding to one cell. See also Supplementary file 1.
 
 Segmentations shown in Figure 3M and P only represent those parts of the membranes that were well visible in the electron cryo-tomograms. Due to the anisotropic resolution of electron tomograms, membranes that are oriented at shallow angles or parallel relative to the section plane are difficult to see. We therefore did not segment regions of mitochondria in which we could not unambiguously determine membrane position or connectivity. Ends of the segmentation are indicated in white in Figure 3M. For better visibility in all figures, we used tomograms reconstructed by simultaneous iterative reconstruction technique (SIRT) (10 iterations), binned to a pixel size of 7.5 Å, and reduced noise in the virtual slices shown by using both a 3D Median and a Gaussian filter in IMOD. For Videos, the tomographic volumes were filtered as a whole in IMOD.
 
-## Quantifications and statistical analysis
+### Quantifications and statistical analysis
 
 We estimated the size of outer membrane ruptures (Figure 4M) by measuring the shortest distance between the two edges visible in a single virtual slice of the electron tomogram using IMOD. In some cases, parts of the membrane were oriented at oblique angles relative to the tomographic image plane. Due to the anisotropic resolution of electron tomograms, these membrane parts were difficult to discern and therefore rupture sizes could not in all cases be estimated. Rupture size distributions of the three inner membrane morphologies were compared using an ordinary one-way ANOVA with Tukey’s multiple comparisons test, assuming that the data are normally distributed (significance shown in Figure 4M). The mitochondria diameters used to calculate total surface area were estimated by measuring the furthest distance between outer membranes in a single virtual slice of the electron tomogram using IMOD. Surface area of the whole mitochondrion was calculated with the formula for surface area of a sphere, while surface area of the exposed inner membrane was calculated with the formula for surface area of a spherical cap using the rupture sizes (Figure 4N).
 

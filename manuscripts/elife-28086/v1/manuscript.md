@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.28086.001 The ParB protein forms DNA bridging interactions around parS to condense DNA and earmark the bacterial chromosome for segregation. The molecular mechanism underlying the formation of these ParB networks is unclear. We show here that while the central DNA binding domain is essential for anchoring at parS , this interaction is not required for DNA condensation. Structural analysis of the C-terminal domain reveals a dimer with a lysine-rich surface that binds DNA non-specifically and is essential for DNA condensation in vitro. Mutation of either the dimerisation or the DNA binding interface eliminates ParB-GFP foci formation in vivo. Moreover, the free C-terminal domain can rapidly decondense ParB networks independently of its ability to bind DNA. Our work reveals a dual role for the C-terminal domain of ParB as both a DNA binding and bridging interface, and highlights the dynamic nature of ParB networks in Bacillus subtilis .
+The ParB protein forms DNA bridging interactions around parS to condense DNA and earmark the bacterial chromosome for segregation. The molecular mechanism underlying the formation of these ParB networks is unclear. We show here that while the central DNA binding domain is essential for anchoring at parS, this interaction is not required for DNA condensation. Structural analysis of the C-terminal domain reveals a dimer with a lysine-rich surface that binds DNA non-specifically and is essential for DNA condensation in vitro. Mutation of either the dimerisation or the DNA binding interface eliminates ParB-GFP foci formation in vivo. Moreover, the free C-terminal domain can rapidly decondense ParB networks independently of its ability to bind DNA. Our work reveals a dual role for the C-terminal domain of ParB as both a DNA binding and bridging interface, and highlights the dynamic nature of ParB networks in Bacillus subtilis.
 
 ## Introduction
 
@@ -40,27 +40,59 @@ ParB is an unusual DNA binding protein. In addition to sequence-specific interac
 
 Genomically-encoded ParB proteins comprise three distinct domains (Figure 1A and Figure 1—figure supplement 1A,B and C). Our understanding of their structure is limited to the N-terminal domain (NTD) which binds ParA (Bouet and Funnell, 1999; Davey and Funnell, 1997; Davis et al., 1992; Radnedge et al., 1998) and the central DNA binding domain (CDBD) which binds parS and possibly also nsDNA (Leonard et al., 2004; Schumacher and Funnell, 2005). A structure of Thermus thermophilus ParB lacking the C-terminal domain (CTD) revealed a compact dimer in which the helix-turn-helix (HtH) motifs were symmetrically arranged in a manner suitable for binding to the palindromic parS sequence (Figure 1—figure supplement 1D) (Leonard et al., 2004). Analysis of the CTD by analytical ultracentrifugation suggested that it also formed a dimer, and it was argued that this interface might promote spreading interactions. Recently, a structure of Helicobacter pylori ParB, in which the protein was also truncated by removal of the CTD, showed a strikingly different conformation, where the NTD had moved away from the CDBD domain to form a tetrameric self-association interface (Figure 1—figure supplement 1E) (Chen et al., 2015). The CDBD was bound to a parS half site, and it was argued that tetramerisation of the NTD could be responsible for bridging interactions between specific and nsDNA bound to the CDBD.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig1-v1.jpg)
+
+**Figure 1.:** (A) Domains and regions as identified in (Bartosik et al., 2004; Kusiak et al., 2011). (B) ParB is thought to be anchored at parS (grey) via the HtH motif found in the CDBD (red). ParB protomers self-associate via poorly defined interactions and also make non-specific contacts with DNA segments, leading to the formation of ParB networks. In this work we have investigated the potential role of the CTD (green) in mediating ParB oligomerisation and non-specific DNA binding.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) Schematics of different domain arrangements for dimeric B. subtilis ParB. Whilst it is known that ParB is dimeric in solution, the primary dimerisation interface is unclear and possibly condition-dependent. Structural evidence suggests that this could occur between the N-terminal and central DNA-binding domains or between the C-terminal domains. Additional structural evidence suggests that the NTD may flip away from the CDBD to form higher order ParB oligomers via a tetrameric interface. (D) Crystal structure of a dimer of the NTD and CDBD of T. thermophilus ParB (PDB entry IVZ0) (Leonard et al., 2004). (E) Crystal structure of a tetramer of the NTD and CDBD of H. pylori ParB bound to two parS-containing 24 bp dsDNA (PDB entry 4UMK) (Chen et al., 2015). The structures are colour-coded as in the primary structure diagram (Figure 1, main text).
+
 In previous work, we hypothesised that ParB contains a second DNA binding locus for nsDNA that functions independently of the HtH motif (Figure 1B) (Taylor et al., 2015). This idea was attractive to us for several reasons. Firstly, in a single DNA binding locus model, it is not straightforward to reconcile the strict localisation of ParB networks to just a few parS sites (and their surroundings) with the limited discrimination between specific and nsDNA binding that is observed in vitro (a <10 fold apparent difference in affinity) (Taylor et al., 2015; Broedersz et al., 2014). Secondly, although binding to parS protects the CDBD region from proteolysis, binding to nsDNA affords no such protection, implying that it interacts elsewhere on the protein (Taylor et al., 2015). Thirdly, the distantly-related ParB protein from plasmid P1 provides a precedent for a second DNA binding locus in a Type I centromere binding protein (albeit an additional specific DNA binding site), and highlights the CTD as the putative candidate region (Schumacher et al., 2007). However, the lack of any structural information for the CTD of a genomically-encoded ParB prevents a rigorous comparison of the systems because the primary structure similarity in this region is negligible.
 
 In this work, we have probed the role of the CDBD and CTD of B. subtilis ParB using a combination of structural, biochemical, single molecule and in vivo approaches. We find that while the CDBD is responsible for specific recognition of parS, the CTD provides both a second nsDNA binding site and a self-association interface that is important for bridging interactions and DNA condensation.
 
 ## Results
 
-## The R149 residue within the HtH motif is essential for specific binding to parS, but not required for non-specific binding and condensation
+### The R149 residue within the HtH motif is essential for specific binding to parS, but not required for non-specific binding and condensation
 
 Genetic and structural analyses have suggested that residue R149 may be critically important for specific binding to parS at the HtH locus (Graham et al., 2014; Chen et al., 2015; Autret et al., 2001; Gruber and Errington, 2009). To probe the role of the HtH motif using biochemical techniques, we compared binding of parS by wild type ParB and ParBR149G using electrophoretic mobility shift assays containing Mg2+ cations (TBM-EMSA). As reported previously, inclusion of divalent cations in both the gel composition and running buffer enables the clear differentiation of specific and nsDNA-binding activities of ParB (Taylor et al., 2015). As expected, binding of wild type ParB to parS-containing DNA produced a distinct band shift corresponding to the ParB2-parS complex, as well as poorly migrating species at high [ParB] (Figure 2A). These latter complexes are also formed on DNA that does not contain parS, and are therefore indicative of ParB bound to nsDNA flanking the central parS sequence. ParB, and mutants thereof, were purified to homogeneity (Figure 2—figure supplement 1A). EMSA experiments with ParBR149G fail to produce the specific ParB2-parS complex whereas the formation of nsDNA complexes is largely unaffected (Figure 2A). The retention of nsDNA binding activity in ParBR149G is further supported by data using gels lacking Mg2+ ions (TBE-EMSA) (Figure 2—figure supplement 1C), as well as a solution-based protein-induced fluorescence enhancement (PIFE) assay (Figure 2—figure supplement 1B), in which an increase in Cy3 intensity reports ParB binding. For wild type ParB, the data were fitted to the Hill equation yielding an apparent Kd of 361 ± 14 nM and Hill coefficient of 3.2 ± 0.3 in reasonable agreement with published data (Lin and Grossman, 1998; Taylor et al., 2015). ParBR149G produced a similar binding isotherm yielding a moderately weaker Kd of 493 ± 18 nM. This apparent Kd was not significantly altered when the Hill coefficient was not shared between datasets indicating the cooperativity of binding was not impaired in this ParB variant.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative TBM-EMSAs for wild type ParB and ParBR149G monitoring binding of parS-containing or non-specific 147 bp dsDNA. (B) Schematic of the magnetic tweezer assay used to monitor ParB-dependent DNA condensation. (C) Mean force-extension curves for parS-containing DNA molecules in the presence of wild type ParB and ParBR149G. Non-condensed DNA data is fitted to the worm-like chain model. Solid lines in condensed data are guides for the eye. Errors are the standard error of the mean of measurements on different molecules (N ~15–35 molecules).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) SDS-PAGE of wild type ParB and mutant protein preparations. (B) Non-specific DNA binding isotherms for wild type ParB and ParBR149G measured using a PIFE assay. The data were fitted to the Hill equation. Error bars represent the standard errors from three independent experiments. Standard errors of fitted parameters were calculated in GraphPad Prism. (C) TBE-EMSAs for wild type ParB and ParBR149G binding 147 bp DNA. (D) Left panel: representative condensation traces for wild type ParB and ParBR149G, monitored by magnetic tweezers. At a 3.70 pN stretching force, ParB was introduced to single DNA tethers. Following incubation, force was reduced to 0.34 pN to induce condensation. Expected DNA extension under 0.34 pN and in the absence of ParB is indicated by the dashed line. Right panel: representative force-induced decondensation traces for wild type ParB and ParBR149G.
 
 We next investigated the ability of ParBR149G to condense DNA tethers using magnetic tweezers (Figure 2B). We previously showed that wild type ParB mediates progressive condensation of DNA substrates which is reversible by both force and protein unbinding (Taylor et al., 2015). The condensed state is not highly ordered and its formation is not dependent upon parS sequences, indicating that nsDNA binding is required for condensation. At a concentration sufficient for efficient condensation by wild type ParB (1 µM), ParBR149G did not fully condense DNA, although fluctuations of the DNA tether were consistent with minor condensation events that do not greatly affect the mean extension value measured (data not shown). However, at moderately elevated concentrations (3-fold), reversible condensation did occur and was qualitatively equivalent to wild type behaviour (Figure 2C and Figure 2—figure supplement 1D).
 
 Together, these data show that mutation of the HtH motif effectively eliminates the ability of ParB to interact specifically with its cognate parS site, while nsDNA binding and condensation is relatively unaffected. This is consistent either with the R149G mutation exclusively affecting nucleobase-specific contacts in the ParB-parS complex, and/or with the idea that nsDNA binding may occur at a second DNA binding locus.
 
-## The structure of BsParB CTD reveals a dimer with a putative DNA binding interface
+### The structure of BsParB CTD reveals a dimer with a putative DNA binding interface
 
 We next used solution NMR to determine the structure of the CTD alone (see Figure 3—source data 1 for structure validation and statistics and Figure 3—figure supplement 1A for an assigned 1H-15N HSQC spectrum). The structure forms a well-defined dimer containing two α-helices and two β-strands per monomer in a α1-β1-β2-α2 arrangement (Figure 3A and B). The dimer interface is formed via an intermolecular β-sheet and two domain-swapped C-terminal helices. Although this protein fold is somewhat similar to that seen in the plasmid P1 and SopB ParB proteins (Figure 3—figure supplement 1B,C and D) (Schumacher and Funnell, 2005; Schumacher et al., 2007), there are also significant differences especially in the N-terminal region: the α1 helix in the chromosomal ParB structure is replaced by an additional β-strand in the CTDs of P1 ParB and SopB. Analytical ultracentrifugation, native mass spectrometry and circular dichroism (CD) thermal melt scans further confirmed that the CTD was primarily dimeric in solution and measured a Tm of 68°C (Figure 3—figure supplement 1E and F). NMR H-D exchange data revealed that the dimer exchanges slowly (which will be relevant to the interpretation of later experiments), with those most stable being the intermolecular H-bonds between the two β2 strands (data not shown; the half-lives range from 10 min to 4 hr). This secondary structure element is at the centre of the hydrophobic core which is made up of several Ile, Val and Phe residues in the β-sheet (Figure 3C). The α1 helix forms a leucine zipper with the α2 helix, where alternating Leu residues interdigitate (Figure 3D). A striking feature of the structure is a highly electropositive face of the dimer arising from several conserved Lys residues (Figure 3E and F) analogous to the plasmid-encoded SopB and P1 ParB proteins (Figure 3—figure supplement 1G,H and I).
 
-## The CTD binds DNA non-specifically via a lysine-rich surface
+![Figure 3.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig3-v1.jpg)
+
+**Figure 3.:** (A) Ensemble overlay of the 14 lowest-energy CTD structures. Red and blue depict separate monomers within the dimer. (B) Secondary structure elements are identified. α1 indicates the N-terminus of each monomer. (C) The hydrophobic core of Ile, Val, Leu and Phe residues. For clarity, portions of both monomers were removed. (D) Interdigitating Leu residues of both monomers form a leucine-zipper interaction. (E) Surface charge representation reveals a large electropositive region across the β-sheet face (orientation as in B, right hand side). Continuum electrostatics calculations used the PDB2PQR web server (Dolinsky et al., 2004) and the APBS plugin for PyMOL (Lerner and Carlson, 2006; Baker et al., 2001). (F) Evolutionary conservation surface profile of the CTD of ParB prepared using ConSurf (Goldenberg et al., 2009; Celniker et al., 2013) (orientation as in E). The chemical shifts, restraints and structural co-ordinates have been deposited with the BMRB (34122) and PDB (5NOC).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Assigned 1H-15N HSQC spectra of CTD. Arginine ε and η peaks are aliased once and twice, respectively. Starred peaks indicate additional (usually minor) species. (B) The C-terminal domain of B. subtilis ParB (green). (C) Alignment of the secondary structure elements of the CTDs of B. subtilis ParB and E. coli plasmid-encoded SopB (orange) (Schumacher et al., 2010). PDB entry 3KZ5. (D) Alignment of the secondary structure elements of the CTDs of B. subtilis ParB and E. coli plasmid-encoded P1 ParB (orange) (Vecchiarelli et al., 2007). PDB entry 2NTZ. (E) ParB sedimentation velocity c(s) distribution fit at 20°C. Residuals are shown as a grayscale bitmap where the vertical axis lists each scan and the horizontal axis depicts radial position over which data were fitted. Shade indicates variance between fitted and raw data. RMSD = 0.0079. (F) CD spectra over a thermal denaturation scan (5°C to 90°C) for 10 µM CTD2 in PBS. (G–I) Continuum electrostatics calculations were prepared using the PDB2PQR web server (Dolinsky et al., 2004) and the APBS plugin for PyMOL (Lerner and Carlson, 2006). G to I are B. subtilis ParB, E. coli F-plasmid SopB and E. coli P1 ParB, respectively.
+
+### The CTD binds DNA non-specifically via a lysine-rich surface
 
 To test the idea that the lysine-rich surface we had observed might bind to DNA, we performed TBE-EMSAs with the isolated CTD. These showed that the CTD was indeed able to bind dsDNA (Figure 4Ai) resulting in the formation of a ‘ladder’ of bands of decreasing mobility. This is highly reminiscent of patterns formed by full length ParB under the same conditions (Figure 4Aii and (Taylor et al., 2015)) except for the presence of smaller gaps between the ‘rungs’ as would be expected for a protein of smaller size. The CTD was also shown to bind to hairpin oligonucleotides as short as 10 bp and to ssDNA (Figure 4—figure supplement 1A and data not shown). We do not see substantial differences in the affinity of ParB for DNA substrates with different sequences and so this binding activity appears to be non-specific (data not shown). Native mass spectrometry of complexes formed between the CTD and a 15 bp duplex DNA revealed a stoichiometry of 1 DNA per dimer (Figure 4D). This is in contrast to the P1 ParB system where the CTD operates in a different binding mode, and can bind two 16-mers (Schumacher et al., 2007).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig4-v1.jpg)
+
+**Figure 4.:** (A–C) TBE-EMSAs for the titration of full length ParB and CTD against 147 bp DNA. Wild type and mutant proteins, K255A + K257A and K252A + K255A + K259A, are indicated. (D) Native mass spectrometry. Titrations of a 15 bp nsDNA hairpin against CTD were performed between ratios of 1.1:1 and 1.5:1 DNA:CTD2. Example spectra are shown with the DNA-CTD2 complex shaded in grey. (E) Deviations in the assigned 1H-15N HSQC spectra of CTD upon titration with a 10 bp hairpin DNA. (F) Chemical shift perturbations exceeding 0.08 ∆δ are highlighted on the structure in yellow. (G) Lys residues thought most likely to bind to DNA are shown as sticks.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) TBE-EMSA showing binding of the CTD to the 10 bp hairpin DNA substrate used for NMR experiments. (B) Assigned 1H-15N HSQC spectra of the CTD prior (blue) and after (red) titration with a 10 bp hairpin DNA substrate. Arginine ε and η peaks are aliased once and twice, respectively. (C) CD spectra over a thermal denaturation scan (5°C to 90°C) for 10 µM CTD2KK in PBS. (D) PIFE assay showing binding of full length ParBKK to non-specific DNA. The data were fitted to the Hill equation. Error bars represent the standard errors from three independent experiments. Standard errors of fitted parameters were calculated in GraphPad Prism. (E) TBM-EMSA showing binding of full length ParBKK to parS-containing DNA. ParBKK is able to form specific complexes. (F) TBE-EMSA showing no binding of CTDKKK to DNA at concentrations as high as 50 µM dimer. (G) CD spectra for 10 µM CTD2KKK recorded as in C. (H) As in D, using ParBKKK. H uses the same wild-type ParB dataset as D. (I) TBM-EMSA showing binding of full length ParBKKK to parS-containing DNA. This mutant protein is also able to form specific complexes.
 
 To further probe the putative DNA binding surface, we performed a titration of the 10 bp hairpin DNA against the isotopically-labelled CTD dimer (Figure 4E, assigned 1H-15N HSQC spectra are shown in Figure 4—figure supplement 1B). Residues with large chemical shift perturbations (CSPs, Δδ > 0.08) are either directly involved in DNA-binding or undergo a conformational change as an indirect result of DNA-binding, and these were mapped onto the structure (Figure 4F). Two regions of interest were identified: D231-V233, and K252-K259, which are found on the intermolecular β-sheet face and proximal loop regions to form a large, concave and positively-charged interaction surface (Figure 4G).
 
@@ -68,23 +100,51 @@ To confirm that this surface was responsible for DNA binding we substituted seve
 
 We next designed a triple K252A/K255A/K259A variant with the aim of fully dissipating the positive charge density across the surface of the CTD, rather than only targeting the loop-proximal regions. EMSA analysis showed that DNA binding was completely abolished in CTDKKK up to concentrations of 50 µM (Figure 4Ci and Figure 4—figure supplement 1F). CD thermal melt analysis showed that CTDKKK was equivalently folded to wild type CTD at ambient temperatures, but with a reduced Tm (53°C) indicating a moderate destabilising effect of the mutations (Figure 4—figure supplement 1G). Interestingly, analysis of full length ParBKKK showed a clear and consistent defect in all nsDNA binding assays used. TBM-EMSA gels showed that ParB-parS complexes were still formed, although it should be noted that their yield was reduced relative to wild type (Figure 4—figure supplement 1I). TBE-EMSA gels showed a complete eradication of the discrete lower mobility bands which arise from nsDNA binding (Figure 4Cii). Moreover, nsDNA binding was undetectable using the PIFE analysis (Figure 4—figure supplement 1H). Interestingly, EMSA analysis showed that DNA-bound ParBKKK networks do still form as very low mobility species that assemble co-operatively at high ParB concentrations. Given that the ParBKKK protein retains a functional HtH motif, this property might well reflect a role for the CDBD in binding to nsDNA, albeit weakly compared to the parS sequence. This highlights the potential complexity of nsDNA binding in ParB which might involve synergistic binding by both the CDBD and CTD domains.
 
-## DNA binding by the CTD is essential for DNA condensation and bridging in vitro
+### DNA binding by the CTD is essential for DNA condensation and bridging in vitro
 
 We next exploited our double- and triple-lysine mutant ParB proteins to test the role of the DNA-binding activity associated with the CTD in forming condensed ParB networks. These networks have been extensively characterised previously for wild type ParB using magnetic tweezers with single tethered DNA substrates (Taylor et al., 2015) and also in TIRF-based microscopy (Graham et al., 2014).
 
 Unlike full length ParB, the CTD was not capable of condensing DNA tethers under any condition tested, even up to 5 µM CTD2 concentrations and under applied forces as low as 0.02 pN (Figure 1—figure supplement 1Ai). This is consistent with the expected requirement for multiple protein-protein and/or protein-DNA interfaces to promote DNA looping and condensation. Incubation of full length ParBKK with single DNA tethers resulted in defective DNA condensation compared to wild type ParB (Figure 5A). When it was observed, condensation was sudden (rather than progressive, as for wild type ParB) and full condensation required the applied force to be dropped to an exceptionally low value (0.09 pN) (Figure 5—figure supplement 1Aii). The DNA molecules also showed unusually large steps when decondensed by force, suggesting that ParBKK was infrequently stabilising in cis DNA-bridging interactions between isolated DNA regions (data not shown). Co-incubation of ParBKKK with single DNA tethers under our standard experimental conditions resulted in no measurable condensation events, even under applied forces as low as 0.02 pN and at elevated concentrations (Figure 5A and Figure 5—figure supplement 1Aiii). The average work done by ParB compared to the variant proteins during these condensation events was determined from the difference between the integral of the force-extension curve in the presence of the protein and that of DNA alone. This provides a means to quantitatively compare the condensation efficiency between mutants (Figure 5—figure supplement 1B). We also performed plectoneme stabilisation experiments (Figure 5B). In this assay, a single torsionally-constrained DNA molecule is positively supercoiled at a 4 pN force by applying 60 turns. ParB is then introduced and, after full buffer exchange, all turns are released whilst monitoring DNA extension. Any deviation of DNA extension from that expected of bare DNA is indicative of supercoiled regions being stabilised by ParB. ParBKK could stabilise DNA-bridging interactions between isolated DNA regions but this was often characterised by large steps in the DNA tether extension increase which is unlike the behaviour of wild type (Figure 5C and Figure 5—figure supplement 1C). ParBKKK was unable to stabilise plectoneme structures showing that it cannot bridge DNA segments in trans (Figure 5D and Figure 5—figure supplement 1D).
 
-## The CTD can both inhibit the formation of, and decondense, ParB-DNA networks in vitro
+![Figure 5.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig5-v1.jpg)
+
+**Figure 5.:** (A) Mean force-extension curves of DNA molecules co-incubated with ParB variants at the indicated concentrations. Non-condensed (protein-free) DNA data is fitted to the worm-like chain model. Solid lines in condensed data are guides for the eye. Errors are the standard error of the mean of measurements on different molecules (N ~ 18–35 molecules). (B) Schematic of plectoneme stabilisation assay. A single torsionally-constrained DNA molecule was positively supercoiled at 4 pN force by applying 60 turns. This shortens the tether length due to the formation of plectonemes in the overwound DNA. ParB2 is then introduced and all turns are released whilst monitoring DNA extension. Evidence for ParB-dependent plectoneme stabilisation is provided by hysteresis in the extension as a function of magnet turns as the supercoiling is removed. (C) Plectoneme stabilisation assay comparing bare DNA, wild type ParB and ParBKK. The double-mutant protein supported DNA bridging and occasionally large steps were observed in the backward trace (see text for discussion). (D) Plectoneme stabilisation assay comparing wild type ParB and ParBKKK. No activity was detected for the triple-mutant protein.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative traces of condensation assays monitored by magnetic tweezers. The expected DNA extension in the absence of ParB at each force is indicated by the dashed lines. (i), (ii) and (ii) use CTD, ParBKK and ParBKKK, respectively. (B) A comparison of the work produced by full length ParB variants in condensing DNA. Errors are standard error of the mean. * indicates this experiment used nsDNA rather than parS-containing. (C) Representative trace of a ParBKK plectoneme stabilisation assay showing hysteresis of DNA extension upon DNA rewinding. (D) Representative trace of a ParBKKK plectoneme stabilisation assay showing no hysteresis upon DNA rewinding.
+
+### The CTD can both inhibit the formation of, and decondense, ParB-DNA networks in vitro
 
 The CTD potentially acts as both an oligomerisation interface and also a site of nsDNA-binding. Therefore, we hypothesised that the CTD might have a dominant negative effect on full length ParB by competing for the DNA and protein interfaces that mediate the formation of ParB networks in the magnetic tweezers (MT).
 
 Purified CTD completely inhibited the formation of the condensed state if pre-incubated with wild type ParB and DNA under the high stretching force regime (Figure 6A and Figure 6—figure supplement 1A). We also tested whether the introduction of free CTD to pre-condensed tethers was able to disrupt ParB-DNA networks. Condensed ParB networks were completely stable in a flow of free ParB on the timescale of these experiments, and the DNA tethers were also able to re-condense following force-induced decondensation (Figure 6Bi). However, the inclusion of excess free CTD rapidly disrupted ParB networks, with some degree of decondensation observed in 94% of all the molecules tested (Figure 6Bii). Moreover, those molecules which did not decondense spontaneously could be stretched by force, but were then unable to recondense when permissive forces were restored. This ability of the CTD to decondense ParB networks demonstrates that the protein-protein and/or protein:DNA interfaces that maintain the condensed state under a low force regime are dynamic (i.e. they are exchanging while the overall structure of the network is maintained).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig6-v1.jpg)
+
+**Figure 6.:** (A) Mean force-extension curves for DNA molecules co-incubated with 1 µM ParB2 in the presence or absence of 5 µM CTD2. Non-condensed (protein-free) DNA data is fitted to the worm-like chain model. Solid lines in condensed data are guides for the eye. (B) (i) ParB-DNA networks are stable in magnetic tweezers in the presence of 1 µM ParB2. (ii) ParB-DNA complexes spontaneously decondense following the introduction of 1 µM ParB2 and 5 µM free CTD2. (iii) ParB-DNA complexes spontaneously decondense following the introduction of 1 µM ParB2 and 5 µM CTD2KKK. (C) Mean force-extension curves for DNA molecules co-incubated with 1 µM ParB2 in the presence or absence of 5 µM mutant CTD2KKK. Errors are the mean of measurements on different molecules (N > 40 molecules) (D) Condensation ratio (see Materials and methods for definition) for individual DNA condensation events involving the addition of CTD competitor variants to pre-condensed ParB-DNA networks.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative traces of condensation assays for ParB in the presence and absence of excess free CTD. The expected DNA extension in the absence of ParB at each force is indicated by the dashed lines. (B) As in A, but using the CTDKKK variant in place of the CTD.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) A working model for ParB network formation and concomitant DNA condensation incorporating ideas from this work and other published studies (see main text for details). At least two DNA:protein and three protein:protein interfaces have been identified (greek letters), which together result in the formation of ParB networks on DNA, but only dimers in free solution. In free solution, the interfaces supporting dimerisation of ParB are unclear, but scenarios in which the CTD is dimerised may be considered to be more likely because the purified CTD has been shown to be a tight dimer. (B) Hypothetical mechanisms to explain CTD-induced DNA condensation. Scenario 1: The CTD dimer (which can bind dsDNA but not support condensation itself) simply competes for the DNA substrate in the magnetic tweezers, displacing full length ParB and therefore decondensing the DNA. Alternatively, the CTD exchanges with full length ParB forming inactive heterodimers in free solution that can no longer exchange with the ParB network (Scenario 2) or heterooligomers that retain DNA binding activity but which are not able to condense DNA because important bridging interactions are ‘capped’ by the CTD (Scenario 3). In scenario 3, we cannot exclude the idea that the interaction with the truncated CTD somehow has an allosteric effect on a different bridging interface, but the simplest explanation is that the CTD is itself responsible for key bridging interactions between DNA segments.
+
 We have shown above that the CTD binds tightly to nsDNA. Therefore, its ability to prevent condensation and induce decondensation might simply reflect competition for the nsDNA that becomes available during exchange of ParB:DNA interfaces. Indeed, we have shown previously that free DNA is a potent inducer of network decondensation in the MT apparatus (Taylor et al., 2015). To test the idea that the CTD dimerisation interface is also important for maintaining the condensed state, we repeated our experiments with the CTDKK and CTDKKK constructs, which are defective and apparently unable (respectively) to bind nsDNA. Both mutant proteins were as effective as wild type in preventing condensation (Figure 6C and Figure 6—figure supplement 1B), and both were able to induce decondensation in approximately 95% of all molecules tested (Figure 6Biii and D). This strongly suggests that CTD-dependent ParB network dissipation is primarily mediated by competition for the CTD dimerisation interface and further confirms that the CTDKKK construct is folded. This competition presumably results from the formation of heteroligomers between full length ParB and the CTD, which disrupts interactions that are essential for condensation (Figure 6—figure supplement 1C).
 
-## The CTD is critical for the formation of ParB foci in vivo
+### The CTD is critical for the formation of ParB foci in vivo
 
 To test the importance of the CTD dimerisation and DNA binding interfaces in vivo, we compared the ability of wild type and mutant ParB-GFP proteins to form foci in B. subtilis cells when expressed from the endogenous locus. Wild type ParB-GFP formed discrete foci around oriC as expected (Murray et al., 2006; Graham et al., 2014; Autret et al., 2001; Real et al., 2005; Glaser et al., 1997; Lin et al., 1997; Lewis and Errington, 1997; Marston and Errington, 1999). In contrast, ParBKKK-GFP failed to form discrete foci (Figure 7Ai–ii) despite wild type expression (Figure 7—figure supplement 1A). Interestingly, the triple-mutant protein appeared to localise non-specifically to the nucleoid, perhaps as a result of residual DNA binding by the HtH motifs, suggesting that ParBKKK-GFP retained the ability to dimerise. A caveat in interpreting this experiment is that, in addition to a complete eradication of nsDNA binding by the CTD domain, the ParBKKK mutant protein also showed a reduction in parS binding (Figure 4—figure supplement 1I). Therefore, we cannot exclude the possibility that defective parS binding also contributes to the lack of ParB foci formation we have observed. A ParBL270D+L274D construct, designed to prevent leucine zipper-mediated dimerisation of the CTD, was completely unable to form ParB foci (Figure 7Aiii–v) despite being expressed at approximately wild type levels (Figure 7—figure supplement 1B). The complete deletion of the CTD by truncation to E222 or E227 resulted in the same phenotype (data not shown).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig7-v1.jpg)
+
+**Figure 7.:** (A) Variant ParB-GFP mutants form abnormal foci in B. subtilis. Cells were grown overnight in slow growth conditions before dilution (1:100) into fast growth media, and were allowed to achieve at least five mass doublings before observation by microscopy (N > 300 cells). Scale bar is 2 µm. (B) Construct design for overexpression of the CTD in vivo. (C) CTD overexpression was induced by IPTG in the presence of chromosomally-encoded wild type ParB-GFP using the Phyperspank construct. Cells were grown as in A. (D) Construct design for ChIP-qPCR. (E) ChIP-qPCR assay for ParB spreading. Cells were grown slowly overnight, diluted (1:100) into fast growth media, and allowed to reach eight mass doublings before crosslinking with 1% formaldehyde. Background IP was measured at the terminus (146°). Primer pairs produced 200–300 bp fragments.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/28086/elife-28086-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A–B) Western blot analysis. Expression levels of ParBL270D+L274D and ParBK252A+K255A+K259A with a C-terminal gfp fusion were similar to wild type ParB. DivIVA is an abundant cell division protein that was used as a loading control, as well as FtsZ. (C) Wild type ParB-GFP levels of expression were unaffected by overexpression of CTD. (D) As in C using the construct for ChIP-qPCR (Figure 7D). (E) Marker frequency analysis was used to measure the rate of DNA replication initiation. Cells were grown in slow growth media and allowed to achieve at least three mass doublings (A6000.3 to 0.5) before DNA was extracted. Regulation of DnaA by Soj was affected by overexpression of CTD. R149A is a parS DNA-binding mutant. Error bars indicate the standard deviation of three technical replicates.
 
 Our attempts to purify recombinant ParBL270D+L274D failed because the protein was insoluble upon overexpression in E. coli. This raises the possible caveat that the loss of function associated with this dimerisation mutant in vivo might reflect mis-folding. Therefore, we also investigated whether the free CTD was able to interfere with dimerisation in vivo, thereby causing a dominant negative effect on ParB function. A B. subtilis strain was engineered with a C-terminal gfp fusion replacing the endogenous spo0J and the unlabelled CTD-only gene inserted at an ectopic locus downstream of a Phyperspank promoter, designed for high protein expression that is tightly-controlled with IPTG (Figure 7B). Overexpression of the CTD caused ParB-GFP foci to become diffuse (Figure 7C), although expression levels of endogenous ParB-GFP were unaffected (Figure 7—figure supplement 1C).
 
@@ -106,73 +166,85 @@ Previously, high-resolution SIM and ChIP-seq data have suggested that ParB-DNA p
 
 ## Materials and methods
 
-## Plasmids and DNA substrate preparation
+### Plasmids and DNA substrate preparation
 
 All mutagenesis used the pET28a-ParB expression vector as a template (Taylor et al., 2015). The R149G mutation was introduced by site-directed mutagenesis using a QuikChange II XL kit (Agilent Technologies). The full length ParB gene (1-849) with the K255A + K257A or K252A + K255A + K259A substitutions was produced synthetically (Life Technologies) and subcloned into pET28a using NcoI and BamHI restriction sites (Taylor et al., 2015). CTD only (217-282) constructs were produced using PCR with primer overhangs incorporating 5’ PacI and 3’ XmaI restriction sites for subcloning (5’ - GCGTAAGCCCCGGGCAGAATGTTCCACGTGAAACAAAG - 3’ and 5’ - GCGTCATGTTAATTAATCATTATGATTCTCGTTCAGACAAAAG - 3’) into pET47b (Novagen) to produce a protein with an N-terminal HRV 3C protease cleavable His-tag. The integrity of all DNA sequences was confirmed by direct sequencing (DNA Sequencing Service, University of Dundee).
 
 Preparation of radiolabelled, 5’ Cy3-labelled and magnetic tweezer DNA substrates was as described (Taylor et al., 2015). 10 bp DNA hairpins were prepared by heating a self-complementary oligonucleotide (5' - GCGTACATCATTCCCTGATGTACGC - 3') in 10 mM Na2HPO4/NaH2PO4 pH 6.5, 250 mM KCl and 5 mM EDTA to 95°C for 25 min, followed by rapid cooling in an ice bath. The DNA was purified by anion-exchange chromatography using a 0.25–1 M KCl gradient, and desalted over multiple NAP-10 columns (GE Healthcare Life Sciences) before concentration in a centrifugal vacuum concentrator.
 
-## ParB overexpression and purification
+### ParB overexpression and purification
 
 ParB, and the variants R149G, K255A + K257A and K252A + K255A + K259A, were overexpressed and purified as described (Taylor et al., 2015). CTD, and mutants thereof, were His-tagged and purified to homogeneity as follows. Cell pellets, produced as described (Taylor et al., 2015), were resuspended in 20 mM Tris-HCl pH 7.5, 500 mM NaCl and 1 mM BME (TNB buffer) with the addition of 10 mM imidazole, 5% (v/v) glycerol and protease inhibitor cocktail set II (Millipore), before being snap-frozen and stored at −80°C. Cells were lysed by sonication in the presence of 0.2 mg/ml lysozyme (Sigma). The lysate was clarified by centrifugation and loaded onto a 5 ml HisTrap HP column (GE Healthcare Life Sciences) equilibrated with TNB buffer +10 mM imidazole. CTD elution was achieved with a linear gradient of 10 mM to 500 mM imidazole. Peak fractions were assessed by SDS-PAGE and pooled accordingly. The tag was removed with HRV 3C protease (Thermo Scientific, Pierce) for 16 hr at 4°C during dialysis into TNB buffer +10 mM imidazole. The products were subsequently loaded onto a HisTrap HP column whereby the cleaved CTD was collected in the flow-through volume, followed by concentration by centrifugation in Amicon Ultra-15 3 kDa MWCO spin filters (Millipore). This concentrate was loaded at 1 ml/min onto a Hiload 16/600 Superdex S75 gel filtration column (GE Healthcare Life Sciences) equilibrated with 50 mM Tris-HCl pH 7.5, 1 mM EDTA, 300 mM NaCl and 1 mM DTT (storage buffer). Appropriate peak fractions were pooled, followed by final concentration by centrifugation as described. Spectrophotometric grade glycerol (Alfa Aesar) was added to 10% (v/v). The final protein was then snap-frozen as aliquots and stored at −80°C. ParB concentration was determined by spectrophotometry using theoretical extinction coefficients of 7450 M−1 cm−1 and 2560 M−1 cm−1 for ParB and CTD respectively. ParB concentrations in all assays refer to the dimeric state. The wild type, K255A + K257A and K252A + K255A + K259A variants of ParB behaved equivalently during purification, and run almost identically on preparative size exclusion columns (both in the context of the CTD and full length protein), suggesting that they are all dimeric. For structure determination by NMR, the CTD was dual isotopically (13C and 15N) labelled during overexpression in M9 media, as described previously (Williams et al., 2007), and subsequently purified as above.
 
-## CD spectroscopy
+### CD spectroscopy
 
 CD spectra were collected using a JASCO J-810 spectropolarimeter fitted with a Peltier temperature control (Jasco UK). 50 µM protein samples were buffer exchanged into phosphate buffered saline (PBS; 8.2 mM NaH2PO4, 1.8 mM KH2PO4, 137 mM NaCl and 2.7 mM KCl (pH 7.4)) by 16 hr dialysis at 4°C using a membrane with a MWCO of 3.5 kDa. At 20 µM and using a 0.1 cm quartz cuvette, thermal stability data was acquired across a 190–260 nm absorbance scan (1 nm data pitch at a scanning speed of 100 nm/min) from 5°C to 90°C at 5°C increments. Raw data was normalised to molar ellipticity (MRE (deg.cm2.dmol−1)) using calculation of the concentration of peptide bonds and the cell path length. A buffer only baseline was subtracted from all datasets. All data for mutant variants was acquired alongside a wild type CTD control.
 
-## NMR
+### NMR
 
 NMR datasets were collected at 35°C, utilising a Varian VNMRS 600 MHz spectrometer with a cryogenic cold-probe. The purified protein was buffer exchanged into PBS (10 mM NaH2PO4, 1.8 mM KH2PO4, 137 mM NaCl and 2.7 mM KCl (pH 6.1)) and concentrated to 1 mM. 1H-15N HSQC, 1H-13C HSQC, HNCACB, CBCA(CO)NH, HNCA, HN(CO)CA, HNCO, CC(CO)NH, H(CCO)NH, HCCH-TOCSY, 15N-NOESY-HSQC (150 ms mixing time), 13C-NOESY-HSQC (140 ms mixing time) and aromatic 13C-NOESY-HSQC (140 ms mixing time) experiments were collected on 13C,15N-labelled CTD. 2D 1H-1H TOCSY and NOESY spectra were recorded on unlabelled protein. 13C,15N-labelled and unlabelled protein were mixed in equimolar amounts to create a mixed labelled sample used to record 3D13C,15N F1-filtered, 13C,15N F3-edited 13C-NOSEY-HSQC and 15N-NOESY-HSQC experiments (Zwahlen et al., 1997). A hydrogen-deuterium (HD) exchange experiment was conducted by recording 1H-15N HSQC experiments at several intervals following dissolution of freeze-dried protein in D2O. A titration was conducted by adding a 10 bp DNA hairpin step-wise to 13C, 15N-labelled CTD and recording a 1H-15N HSQC experiment after each addition. The final molar ratio of protein:DNA was 1:1.25. All NMR data were processed using NMRPipe (Delaglio et al., 1995). Spectra were assigned using CcpNmr Analysis 2.4 (Vranken et al., 2005). Proton chemical shifts were referenced with respect to the water signal relative to DSS.
 
 Heteronuclear NOE experiments showed residues 214–228 to be highly flexible. This was supported by chemical shift analysis with TALOS+ (Shen et al., 2009) and the absence of any medium or long-range NOEs for these residues. Structure calculations were only conducted on residues 229–280, as the unstructured tail made unfavourable energy contributions to the calculation which distorted the selection of ensembles of low-energy structures. Structure calculations were conducted using ARIA 2.3 (Rieping et al., 2007). 10 structures were calculated at each iteration except iteration 8, at which 200 structures were calculated. The 20 lowest energy structures from this iteration went on to be water refined. Spin diffusion correction was used during all iterations (Linge et al., 2004). Two cooling phases, each with 30,000 steps were used. Torsion angle restraints were calculated using TALOS+. Standard ARIA symmetry restraints for two monomers with C2 symmetry were included (Bardiaux et al., 2009). Structural rules were enabled, using the secondary structure predictions made by TALOS+. The HD exchange experiment showed 29 NH groups to be protected after 8 min. Initial structure calculations were conducted without hydrogen bond restraints. Hydrogen bond donors were then identified and corresponding hydrogen bond restraints included in later calculations. Calculations were conducted using a flat-bottom harmonic wall energy potential for the distance restraints until no consistent violations above 0.1 Å were observed. The final calculation was then performed using a log-harmonic potential (Nilges et al., 2008) with a softened force-field (Mareuil et al., 2015). Structures were validated using the Protein Structure Validation Software (PSVS) suite 1.5 (Bhattacharya et al., 2007) and CING (Doreleijers et al., 2012). The chemical shifts, restraints and structural co-ordinates have been deposited with the BMRB (34122) and PDB (5NOC).
 
-## EMSA experiments
+### EMSA experiments
 
 The specific and nsDNA-binding activity of ParB was analysed by TBM- and TBE-PAGE as described (Taylor et al., 2015). Serial dilutions of ParB, to the indicated concentrations, were incubated with 20 nM 147 bp parS or ‘scrambled’ DNA (at a ratio of 1:19 labelled to unlabelled), 50 mM HEPES-KOH pH 7.5, 100 mM KCl, 2.5 mM MgCl2, 0.1 mg/ml BSA, 1 mM DTT and 2.5% (v/v) Ficoll in a 20 µl reaction volume. Where indicated, different length dsDNA substrates were used equivalently. Samples were incubated at room temperature for 30 min followed by 5 min on ice. 10 µl of each were loaded onto a 6% acrylamide/bis-acrylamide (29:1) gel in 90 mM Tris, 150 mM H3BO3 (final pH 7.5), supplemented with either 2.5 mM MgCl2 (TBM) or 1 mM EDTA (TBE). Gels were pre-run at 150 V, 4°C for 30 min in a buffer identical to their composition, and run post-loading at 150 V, 4°C for 1 hr. For imaging, gels were vacuum-dried, exposed to a phosphor screen and subsequently scanned by a Phosphor-Imager (Typhoon FLA 9500, GE Healthcare Life Sciences). Gels are representative of three biological replicate experiments.
 
-## Protein induced fluorescence enhancement (PIFE) assay
+### Protein induced fluorescence enhancement (PIFE) assay
 
-ParB DNA-binding to non-specific substrates was analysed in a solution-based assay where a change of emitted Cy3 fluorescence acted as a reporter of ParB binding (Taylor et al., 2015). ParB was incubated with 20 nM 147 bp 5’-Cy3-labelled DNA, 50 mM HEPES-KOH pH 7.5, 100 mM KCl, 2.5 mM MgCl2, 0.1 mg/ml BSA and 1 mM DTT. Samples of 120 µl were incubated at room temperature for 30 min before being transferred into a quartz cuvette for data collection. Cy3 fluorescence in each sample was measured by excitation at 549 nm and an emission scan between 560 and 600 nm (Cary Eclipse Fluorescence Spectrophotometer, Agilent Technologies). Peak maxima were calculated by the area under the curve function in GraphPad Prism software, and the increase in fluorescence calculated relative to a DNA only control. Where appropriate, data was fitted with a Hill equation.(1)Y=Bmax × [ParB2]hKdapph+[ParB2]h
+ParB DNA-binding to non-specific substrates was analysed in a solution-based assay where a change of emitted Cy3 fluorescence acted as a reporter of ParB binding (Taylor et al., 2015). ParB was incubated with 20 nM 147 bp 5’-Cy3-labelled DNA, 50 mM HEPES-KOH pH 7.5, 100 mM KCl, 2.5 mM MgCl2, 0.1 mg/ml BSA and 1 mM DTT. Samples of 120 µl were incubated at room temperature for 30 min before being transferred into a quartz cuvette for data collection. Cy3 fluorescence in each sample was measured by excitation at 549 nm and an emission scan between 560 and 600 nm (Cary Eclipse Fluorescence Spectrophotometer, Agilent Technologies). Peak maxima were calculated by the area under the curve function in GraphPad Prism software, and the increase in fluorescence calculated relative to a DNA only control. Where appropriate, data was fitted with a Hill equation.
+
+$$
+Y=\frac{B_{max} \times [ParB_{2}]^{h}}{Kd_{app}^{h}+[ParB_{2}]^{h}}
+$$
 
 Where Y is the measured increase in fluorescence, Bmax is the maximal increase in fluorescence, h is the Hill coefficient and Kdapp is the apparent dissociation constant. When comparing wild type and mutant binding isotherms, the data were well-fitted using a shared value for the Hill coefficient (i.e. there was no evidence for changes in binding cooperativity as a result of the mutations studied). Standard errors for the fitted parameters were calculated in GraphPad Prism using three independent repeat experiments.
 
-## Magnetic tweezers
+### Magnetic tweezers
 
-## Instrument and samples
+#### Instrument and samples
 
 We used a home-made magnetic tweezers setup similar in design to that described in Strick et al. (1998), Carrasco et al. (2013) and detailed in Pastrana et al. (2016). In brief, images of 1 μm superparamagnetic beads tethered to the surface of a glass slide by DNA constructs are acquired with a 100x oil immersion objective and a CCD camera. Real-time image analysis was used to determine the spatial coordinates of beads with nm accuracy in x, y and z. A step-by-step motor located above the sample moves a pair of magnets allowing the application of stretching forces to the bead-DNA system. Applied forces can be quantified from the Brownian excursions of the bead and the extension of the DNA tether. Unless specified otherwise, data were acquired at 120 Hz and filtered down to 3 Hz for representation and analysis.
 
 Fabrication of DNA substrates for MT experiments containing a single parS sequence with biotins and digoxigenins at the tails was described in Taylor et al. (2015). The DNA substrates were incubated with 1 μm streptavidin-coated beads (MyOne, Invitrogen) for 10 min. Then, the DNA-bead complex was injected in a liquid cell functionalised with anti-digoxigenin antibodies (Roche) and incubated for 10 min before applying force. In a first step, visual inspection allows identification and selection of tethered DNA molecules. Torsionally-constrained molecules and beads with more than a single DNA molecule were identified from its distinct rotation-extension curves. Double or multiple tethers were discarded for further analysis in this work. All the experiments were performed in a reaction buffer composed of 100 mM NaCl, 50 mM Tris-HCl or HEPES-KOH pH 7.5, 100 μg/ml BSA and 0.1% Tween 20 (v/v).
 
-## CTD-induced decondensation
+#### CTD-induced decondensation
 
 Once selected single torsionally-relaxed DNA molecules, 1 μM ParB2 was incubated for 2–3 min and condensation was induced by decreasing the force to 0.34 pN. Immediately after this, one cell-volume of reaction buffer containing 5 μM CTD and 1 μM ParB2, pre-incubated for 2–3 min, was applied at a constant flow velocity of 16 µl/min. In control experiments where only 1 μM ParB2 was applied, the reaction was supplemented with a volume of storage buffer equal to that used in the CTD experiments and thus maintaining the ionic conditions.
 
-To have a measurement of the degree of induced decondensation, we determined a condensation ratio, Cr (Figure 6D), which was calculated simply as:(2)Cr= z0-zz0
+To have a measurement of the degree of induced decondensation, we determined a condensation ratio, Cr (Figure 6D), which was calculated simply as:
+
+$$
+C_{r}=\frac{z_{0}-z}{z_{0}}
+$$
 
 where z0 is the expected extension at 0.34 pN measured before ParB injection and z is the equilibrium extension after induced-decondensation. z was determined from average extensions of 120 data points at 390 s after the cell volume was completely exchanged. These data were acquired at 60 Hz and filtered down to 3 Hz.
 
-## Force-extension curves and work calculation
+#### Force-extension curves and work calculation
 
 Force-extension curves were obtained by decreasing the applied force in steps from 4 pN to ~0.02 pN for a total measuring time of 13 min. This procedure is initially performed for bare DNA molecules. Then, the force is reset to 4 pN and ParB variants are flown and incubated for 2 min before starting the measurement of a new force-extension curve using the same magnet positions in absence of proteins. In every case, the force applied to each bead was calculated from the force-extension data of bare DNA molecules.
 
-The work done during condensation (ΔW) can be calculated by the difference in work between the force-extension curve in the presence of ParB variants and that of bare DNA (Equation 3), where zmax is the extension at the maximum applied force of 4 pN. Integrals were calculated using the trapezoidal rule using OriginLab software.(3)ΔW=∫0zmax(FParB−FDNA)dz
+The work done during condensation (ΔW) can be calculated by the difference in work between the force-extension curve in the presence of ParB variants and that of bare DNA (Equation 3), where $z_{max}$ is the extension at the maximum applied force of 4 pN. Integrals were calculated using the trapezoidal rule using OriginLab software.
 
-## Native mass spectrometry
+$$
+ΔW=\int_{0}^{z_{max}}(F_{ParB}−F_{DNA})dz
+$$
+
+### Native mass spectrometry
 
 Mass spectra were collected using a Synapt G2 HDMS T-wave ion mobility mass spectrometer (Waters) with nano-electrospray using in-house made gold-coated borosilicate capillaries. Protein only experiments required buffer exchange to 300 mM NH4Ac (pH 6.9) using Micro Bio-Spin P-6 Gel columns (Bio-Rad). In analysis of CTD-DNA interactions, mixtures of CTD and 15 bp hairpin DNA were co-incubated for 5 min at 30°C prior to buffer exchange. The sequence of the 15 bp DNA hairpin was 5’- GCATAGCGTACATCATTCCCTGATGTACGCTATGC-3’. CTD samples were loaded at 10 or 50 µM. The following parameters were applied to preserve non-covalent interactions (Sobott et al., 2005; Konijnenberg et al., 2013): backing pressure ca. 5 mbar (adjusted with Speedivalve), source pressure 5.8 × 10−3 mbar, trap pressure 4.4 × 10−2 mbar; capillary voltage 1.3–1.7 kV, sampling cone 20–60 V, extraction cone 1 V, trap and transfer collision energy 10–25 V and 2–5 V, trap DC bias 35–45 V, IMS wave velocity 300–750 m/s, IMS wave height 40 V, helium cell gas flow 180 ml/min, IMS gas flow 90 ml/min (IMS gas cell pressure ca. 3.1 mbar) and source temperature 30°C. The measured mass of CTD was 8096.1 ± 0.2 Da, which matches well with the calculated value of 8096.1 Da. Molecular weights of multiply charged proteins, DNA and complexes were calculated using the MaxEnt1 function in MassLynx (Waters). For the error of the mass measurements in both directions, the MaxEnt peak width at half height was divided by 2. Both biological (new sample preparations from a fresh stock aliquot) and technical (repeat MS measurements of the same buffer exchanged complexes) repeats were undertaken.
 
-## AUC
+### AUC
 
-Sedimentation velocity experiments were conducted in an Optima XL-A analytical ultracentrifuge using an An-60 Ti rotor (Beckman) at 20°C. 420 µl volume solutions of 250 µM ParB CTD were prepared in storage buffer with 10% (v/v) glycerol and loaded into a sedimentation velocity cell with sapphire windows and a buffer only reference channel. A rotor speed of 60,000 rpm was employed, with absorbance scans (A280) taken across a radial range of 5.85 to 7.25 cm at 2 min intervals to a total of 200 scans. Data were fitted (baseline, meniscus, frictional coefficient (f0), and time- and radial-invariant noise) to a continuous c(s) distribution model using SEDFIT version 9.4, at a 95% confidence level (Schuck, 2000; Brown and Schuck, 2006). The partial specific volume (v¯) of the CTD and storage buffer density and viscosity were calculated using Sednterp (Hayes et al., 1995). Residuals are shown as a grayscale bitmap where the vertical axis lists each of the 200 scans (with scan one at the top) and the horizontal axis depicts radial position over which the data were fitted. Shade indicates variance between fitted and raw data.
+Sedimentation velocity experiments were conducted in an Optima XL-A analytical ultracentrifuge using an An-60 Ti rotor (Beckman) at 20°C. 420 µl volume solutions of 250 µM ParB CTD were prepared in storage buffer with 10% (v/v) glycerol and loaded into a sedimentation velocity cell with sapphire windows and a buffer only reference channel. A rotor speed of 60,000 rpm was employed, with absorbance scans (A280) taken across a radial range of 5.85 to 7.25 cm at 2 min intervals to a total of 200 scans. Data were fitted (baseline, meniscus, frictional coefficient (f0), and time- and radial-invariant noise) to a continuous c(s) distribution model using SEDFIT version 9.4, at a 95% confidence level (Schuck, 2000; Brown and Schuck, 2006). The partial specific volume ($v¯$) of the CTD and storage buffer density and viscosity were calculated using Sednterp (Hayes et al., 1995). Residuals are shown as a grayscale bitmap where the vertical axis lists each of the 200 scans (with scan one at the top) and the horizontal axis depicts radial position over which the data were fitted. Shade indicates variance between fitted and raw data.
 
-## In vivo fluorescence imaging
+### In vivo fluorescence imaging
 
 Nutrient agar (Oxoid) was used for routine selection and maintenance of B. subtilis strains. Supplements were added as required: chloramphenicol (5 µg/ml), erythromycin (1 µg/ml), kanamycin (2 µg/ml), spectinomycin (50 µg/ml), tetracycline (10 µg/ml), zeomycin (10 µg/ml), and ampicillin (200 µg/ml). Cells were grown in defined minimal medium base (Spizizen minimal salts supplemented with Fe-NH4-citrate (1 µg/ml), MgSO4 (6 mM), CaCl2 (100 µM), MnSO4 (130 µM), ZnCl2 (1 µM), thiamine (2 µM)) supplemented with casein hydrolysate (200 µg/ml) and/or various carbon sources (succinate (2.0%), glucose (2.0%)). Supplements were added as required: tryptophan (20 µg/ml), erythromycin (1 µg/ml), spectinomycin (50 µg/ml), IPTG (1 mM). Standard techniques were used for strain construction (Harwood and Cutting, 1990). B. subtilis competent cells were transformed using an optimised two-step starvation procedure as described (Anagnostopoulos and Spizizen, 1961; Hamoen et al., 2002). All plasmids and strains were verified by sequencing.
 
 To visualise cells, starter cultures were grown at 37°C overnight in SMM-based medium supplemented with tryptophan (20 µg/ml), casein hydrolysate (200 µg/ml), succinate (2.0%), then diluted 1:100 into fresh medium supplemented with glucose (2.0%) and with/without 1 mM IPTG (as indicated) and allowed to achieve early exponential growth (OD600 0.3–0.4). Cells were mounted on ~1.2% agar pads (0.25X minimal medium base) and a glass coverslip was placed on top. To visualise individual cells the cell membrane was stained with 0.4 µg/ml FM5-95 (Molecular Probes). Microscopy was performed on an inverted epifluorescence microscope (Nikon Ti) fitted with a Plan-Apochromat objective (Nikon DM 100x/1.40 Oil Ph3). Light was transmitted from a 300 Watt xenon arc-lamp through a liquid light guide (Sutter Instruments) and images were collected using a CoolSnap HQ2 cooled CCD camera (Photometrics). All filters were Modified Magnetron ET Sets from Chroma. Digital images were acquired of >300 cells per sample (and for two biological repeats) and analysed using METAMORPH software (version V.6.2r6).
 
-## ChIP-qPCR
+### ChIP-qPCR
 
 To determine the amount of ParB bound to the chromosome by ChIP-qPCR, starter cultures were grown overnight at 30°C in SMM-based medium supplemented with tryptophan (20 µg/ml), casein hydrolysate (200 µg/ml) and succinate (2.0%), then diluted 1:100 into fresh medium supplemented with glucose (2.0%) and 1 mM IPTG (as indicated), and allowed to grow to an A600 of 1. Samples were treated with sodium phosphate (final concentration 10 mM) and cross-linked with formaldehyde (final concentration 1%) for 10 min at room temperature, followed by a further incubation for 30 mins at 4°C. Cells were pelleted at 15°C and washed three times with PBS (pH 7.3). Cell pellets were resuspended in 500 µl of lysis buffer (50 mM NaCl, 10 mM Tris-HCl pH 8.0, 20% sucrose, 10 mM EDTA, 100 µg/ml RNase A, ¼ complete mini protease inhibitor tablet (Roche), 2000 K u/µl Ready-Lyse lysozyme (Epicentre)) and incubated at 37°C for 45 min to degrade the cell wall. 500 µl of IP buffer (300 mM NaCl, 100 mM Tris-HCl pH 7.0, 2% Triton X-100, ¼ complete mini protease inhibitor tablet (Roche), 1 mM EDTA) was added to lyse the cells and the mixture was incubated at 37°C for a further 10 min before cooling on ice for 5 min. To shear DNA to an average size of ~500 to 1000 bp samples were sonicated (40 amp) four times at 4°C. The cell debris was removed by centrifugation at 15°C and the supernatant transferred to a fresh Eppendorf tube. To determine the relative amount of DNA immunoprecipitated compared to the total amount of DNA, 100 µl of supernatant was removed, treated with Pronase (0.5 mg/ml) for 10 min at 37°C before SDS (final concentration 0.67%) was added, and stored at 4°C.
 
@@ -180,10 +252,106 @@ To immunoprecipate protein-DNA complexes, 800 µl of the remaining supernatant w
 
 To measure the amount of DNA bound to ParB, GoTaq (Promega) qPCR mix was used for the PCR reactions and qPCR was performed in a Rotor-Gene Q Instrument (Qiagen) using serial dilution of the immunoprecipitate and the total DNA control as the template. Oligonucleotide primers were then designed that amplify at an interval of ~500–1000 bp away from parS359˚ and were typically 20–25 bases in length and amplified a ~ 200–300 bp PCR product (Table 1). Error bars indicate the standard deviation of two technical replicates.
 
-## Western blot analysis
+**Table 1.**
+ Primer sequences used in ChIP-qPCR
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid</th>
+      <th>Genotype</th>
+      <th>Genome location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>oqAKPCR3</td>
+      <td>5’-AGCCGGATTGATCAAACATC-3’</td>
+      <td>359.32°</td>
+    </tr>
+    <tr>
+      <td>oqAKPCR4</td>
+      <td>5’-AGAGCCGATCAGACGAAAAC-3’</td>
+      <td>359.32°</td>
+    </tr>
+    <tr>
+      <td>oqAKPCR5</td>
+      <td>5’-GAGGCAAGCAAAGCTCACTC-3’</td>
+      <td>359.45°</td>
+    </tr>
+    <tr>
+      <td>oqAKPCR6</td>
+      <td>5’-TGCCATGACAGAGCTGAAAC-3’</td>
+      <td>359.45°</td>
+    </tr>
+    <tr>
+      <td>oqAKPCR7</td>
+      <td>5’-CTTTTCCAAGGCCTTTAGCC-3’</td>
+      <td>359.22°</td>
+    </tr>
+    <tr>
+      <td>oqAKPCR8</td>
+      <td>5’-TCACGGAAAACCCATCATTT-3’</td>
+      <td>359.22°</td>
+    </tr>
+    <tr>
+      <td>oqAKPCR9</td>
+      <td>5’-TATTGGCCTGCTTCATACCC-3’</td>
+      <td>359.65°</td>
+    </tr>
+    <tr>
+      <td>oqAKPCR10</td>
+      <td>5’-TGGAGATTCTGTCCACGAAA-3’</td>
+      <td>359.65°</td>
+    </tr>
+    <tr>
+      <td>oqPCR9</td>
+      <td>5’-AAAAAGTGATTGCGGAGCAG-3’</td>
+      <td>359.16°</td>
+    </tr>
+    <tr>
+      <td>oqPCR10</td>
+      <td>5’-AGAACCGCATCTTTCACAGG-3’</td>
+      <td>359.16°</td>
+    </tr>
+    <tr>
+      <td>oqPCR25</td>
+      <td>5’-TCCATAATCGCCTCTTGGAC-3’</td>
+      <td>359.37°</td>
+    </tr>
+    <tr>
+      <td>oqPCR26</td>
+      <td>5’-AAGCGCATGCTTATGCTAGG-3’</td>
+      <td>359.37°</td>
+    </tr>
+    <tr>
+      <td>oqPCR31</td>
+      <td>5’-GATCCGAAGGTCTGTCTACG-3’</td>
+      <td>359.76°</td>
+    </tr>
+    <tr>
+      <td>oqPCR32</td>
+      <td>5’-CGATTGCGATTGTACGGTTG-3’</td>
+      <td>359.76°</td>
+    </tr>
+    <tr>
+      <td>oqPCR57</td>
+      <td>5’-TTTGCATGAACTGGGCAATA-3’</td>
+      <td>146.52°</td>
+    </tr>
+    <tr>
+      <td>oqPCR58</td>
+      <td>5’-TCCGAACATGTCCAATGAGA-3’</td>
+      <td>146.52°</td>
+    </tr>
+  </tbody>
+</table>
+
+### Western blot analysis
 
 Proteins of the whole cell extract were separated by electrophoresis using a NuPAGE 4–12% Bis-Tris gradient gel in MES buffer (Life Technologies) and transferred to a Hybond-P PVDF membrane (GE Healthcare Life Sciences) using a semi dry apparatus (Hoefer Scientific Instruments). Polyclonal primary antibodies were used to probe protein of interest and then detected with an anti-rabbit horseradish peroxidase-linked secondary antibody using an ImageQuant LAS 4000 mini digital imaging system (GE Healthcare Life Sciences).
 
-## Marker frequency analysis
+### Marker frequency analysis
 
 To obtain chromosomal DNA, starter cultures were grown at 37˚C in SMM based medium supplemented with tryptophan (20 µg/ml), casein hydrolysate (200 µg/ml), succinate (2.0%) overnight, then diluted 1:100 into fresh medium supplemented with glucose (2.0%) and with/without 1 mM IPTG (as indicated) and allowed to achieve early exponential growth (OD6000.3–0.5). Sodium azide (0.5%; Sigma) was added to exponentially growing cells to prevent further metabolism. Chromosomal DNA was isolated using a DNeasy Blood and Tissue Kit (Qiagen). GoTaq (Promega) qPCR mix was used for PCR reactions. Q-PCR was performed in a Rotor-Gene Q Instrument (Qiagen). For quantification of the origin, the intergenic region between dnaA and dnaN was amplified using primers 5’-GATCAATCGGGGAAAGTGTG-3’ and 5’-GTAGGGCCTGTGGATTTGTG-3’. For quantification of the terminus, the region downstream of yocG was amplified using primers 5’-TCCATATCCTCGCTCCTACG-3’ and 5’-ATTCTGCTGATGTGCAATGG-3’. By use of crossing points (CT) and PCR efficiency a relative quantification analysis (ΔΔCT) was performed using Rotor-Gene Software version 2.0.2 (Qiagen) to determine the ori/ter ratio of each sample. These results were normalised to the ori/ter ratio of a DNA sample from B. subtilis spores which only contain one chromosome and thus have an ori/ter ratio of 1. Error bars indicate the standard deviation of three technical replicates.

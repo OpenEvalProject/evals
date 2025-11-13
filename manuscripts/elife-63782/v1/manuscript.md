@@ -38,7 +38,7 @@ The present study uses a combination of tRNS and fMRI, in conjunction with cross
 
 ## Results
 
-## Learning-dependent changes in behavior
+### Learning-dependent changes in behavior
 
 We examined the effect of tRNS delivered concurrently with the task in a 4-day PL protocol (Figure 1A, orange section) that embedded two attentional tasks: an OD task in which participants were asked to determine if the Gabors (disks with black and white stripes, Figure 1D) presented either side of a fixation cross had the ‘same’ or ‘different’ orientation, and a TOJ task in which participants were asked to determine if the Gabors’ onsets were simultaneous (same) or asynchronous (different) (Figure 1C and D; for a detailed description of the experimental procedure, tasks, and the stimuli see ‘Materials and methods’ section). These two attention tasks, well known to increase activity within attention-related cortical areas, were randomly presented within each block, a ‘cross-tasks’ procedure which has shown efficacy in supporting more learning than single-task training (Szpiro et al., 2014). While engaged in the attention tasks, participants received concurrent tRNS to cortical regions crucial hotspots of visuospatial attention, bilateral IPS, and over hMT+ or Sham in control conditions (Figure 1B). Pre and post-measures of task performance, as well as resting state connectivity, were collected prior and subsequent to the multi-day training sessions. This allowed us to evaluate both the effect of stimulation combined with training on each task separately (Figure 1A, blue section) and the time course of learning across training and stimulation days (Figure 1A, orange section).
 
@@ -46,9 +46,9 @@ We examined the effect of tRNS delivered concurrently with the task in a 4-day P
 
 **Figure 1.:** (A) Experiment timeline. Thresholds for OD and TOJ tasks were performed at the beginning of the multi-session experimental procedure (green section). On the pre-test session, subjects were tested on the tasks while fMRI data were collected (blue section). A resting-state scan was also collected during this session. Next, subjects underwent behavioral training concurrently with tRNS for 25 min (Training Day 1, Training Day 2, Training Day 3, and Training Day 4, orange section). Post-test session was a repeat of the pre-test session (blue section). For detailed information on fMRI data acquisition order, see Materials and methods section. (B) Stimulation settings. Location of stimulation sites were localized using EEG 10/20 system. Saline-soaked electrodes was placed over P3 (red filled circle) and P4 (blue filled circle) for bilateral parietal and Sham stimulation, and over P07 (red filled circle) and P08 (blue filled circle) for hMT+ stimulation. (C) Intermixed trials sequence example: two types of attention tasks were randomly presented within each block, the OD and the TOJ task. (D). Example trial. The visual information was the same for TOJ and OD tasks. The cue at the beginning of the trial dictated which feature (time or orientation) should be attended. Red outline boxes are used to highlight the Gabors stimuli (black and white oriented bars) in the illustration but they were not present during the experiment. OD, orientation discrimination; TOJ, temporal order judgment.
 
-## Magnitude of learning
+### Magnitude of learning
 
-## Orientation discrimination
+#### Orientation discrimination
 
 We first ensured that the three stimulation groups did not differ prior to stimulation by comparing their behavioral performance on the orientation task. A one-way analysis of variance (ANOVA) revealed no significant difference between groups prior to stimulation (F(2, 27)=0.575, p=0.569, ηp2=0.041). We then examined the combination of stimulation and training on learning. This analysis revealed a main effect of session on OD performance (F(1, 27)=10.056, p=0.004, ηp2=0.271), indicating that accuracy scores changed as a function of training. There was no significant main effect of stimulation condition alone on performance (F(2, 27)=0.273, p=0.763, ηp2=0.020). Crucially, the analysis revealed a significant interaction between stimulation condition and session (F(2, 27)=11.257, p<0.001, ηp2=0.455), indicating that learning from the pre- to post-test sessions varied significantly depending on the stimulation site.
 
@@ -58,27 +58,27 @@ To further investigate the significant interaction effect, we ran pairwise t-tes
 
 **Figure 2.:** (A) Box plots for behavioral improvement by stimulation condition on the OD and (B) the TOJ task normalized to performance at baseline, prior to stimulation. The center line in the middle of the box is the median of each data distribution, while the box represents the interquartile range (IQR), with the lower quartile representing the 25th percentile (Q1) and the upper quartile representing the 75th percentile (Q3). (C) Change in accuracy across training days for all conditions on the OD and on the TOJ task (D) during training and stimulation sessions. Each line represents a different stimulation condition (green for parietal, orange for Sham, and blue for hMT+ group), error bars represent SEM. Asterisks indicate significant differences relative to the first training session (*<0.05, **<0.01). OD, orientation discrimination; TOJ, temporal order judgment.
 
-## Temporal order judgment
+#### Temporal order judgment
 
 A one-way ANOVA on pre-test session data revealed no significant differences between groups at baseline (F(2, 27)=0.14, p = 0.867; ηp2=0.010). We next investigated whether there was a significant difference between the pre- and post-test TOJ performance depending on stimulation condition. A mixed factors repeated measures ANOVA revealed no main effect of session (F(1, 27)=0.496, p=0.48; ηp2=0.018) nor of condition (F(1, 27)=0.669, p=0.521; ηp2=0.047) on performance. There was also no significant interaction between session and stimulation condition (F(2, 27)=0.589, p=0.562; ηp2=0.042), which indicates that performance in the pre- and post-test session did not differ depending on stimulation condition.
 
 A one-way ANOVA on calculated improvement scores (difference between pre- and post-test performance, Figure 2B) confirmed a non significant performance change between stimulation conditions (F(2, 27)=0.589, p=0.562; η2=0.042). Participants in the parietal tRNS group performed on average 3.1% better following multi-session stimulation and training, while there was a slight decrease in performance for the hMT+ (–4.1%) and the Sham groups (–7.8%), Figure 2B.
 
-## Time course of learning
+### Time course of learning
 
-## Orientation discrimination
+#### Orientation discrimination
 
-We next analyzed performance during the 4-day training sessions. To measure changes in performance over time, we performed a mixed repeated measures ANOVA with stimulation site (n=3 ) as between-subjects factor and training day (n=4) as within-subjects factor. Mauchly’s test indicated that the assumption of sphericity was violated (χ2 (5)=19.7, p=0.001); hence, the Greenhouse-Geisser correction was used to correct the degrees of freedom and to assess the significance of the corresponding p-values. We found a significant main effect of training days (F(1.97, 53.31)=8.89, p<0.001; ηp2=0.248) but no main effect of stimulation condition (F(2, 27)=2.9, p=0.068; ηp2=0.181). Importantly, the analysis revealed a significant two-way interaction between stimulation and training day on performance (F(3.94, 53.31)=4.37, p=0.004; ηp2=0.245), indicating the effects of training on performance depended on stimulation condition.
+We next analyzed performance during the 4-day training sessions. To measure changes in performance over time, we performed a mixed repeated measures ANOVA with stimulation site ($n=3$ ) as between-subjects factor and training day ($n=4$) as within-subjects factor. Mauchly’s test indicated that the assumption of sphericity was violated ($χ^{2}$ (5)=19.7, p=0.001); hence, the Greenhouse-Geisser correction was used to correct the degrees of freedom and to assess the significance of the corresponding p-values. We found a significant main effect of training days (F(1.97, 53.31)=8.89, p<0.001; ηp2=0.248) but no main effect of stimulation condition (F(2, 27)=2.9, p=0.068; ηp2=0.181). Importantly, the analysis revealed a significant two-way interaction between stimulation and training day on performance (F(3.94, 53.31)=4.37, p=0.004; ηp2=0.245), indicating the effects of training on performance depended on stimulation condition.
 
 To further investigate the time-dependent impact of stimulation on training performance and to analyze at what time point the groups began to diverge, we evaluated the effect of group on each training day separately. Levene’s test was not significant for any training day (Training Day 1 p=0.778, Training Day 2 p=0.269, Training Day 3, p=0.742, and Training Day 4 p=0.297), indicating the assumption of homogeneity of variances was not violated. tRNS administered during training caused learning that was significantly different among stimulation groups from the third day of training (Training Day 3: F(2,27)=4.65, p=0.018; ηp2=0.257) and remained sustained on the final day of training (Training Day 4: F(2,27)=6.63, p=0.005; ηp2=0.330). Post-hoc pairwise t-tests revealed the Parietal group performed significantly better than the hMT+ group on Training Day 3 (t(18)=3.6, p=0.00; Cohen’s d=1.51) and approached significance when compared to Sham (t(18)=2.03, p=0.056, Cohen’s d=0.91), while hMT+ and Sham did not differ significantly (t(18)=0.9, p=0.37, Cohen’s d=−0.40). Similarly, on training Day 4, we found a significant difference in performance between the Parietal and the hMT+ groups (t(18)=3.6, p=0.002; Cohen’s d=1.61) and between Parietal and Sham (t(18)=3.102, p=.006); Cohen’s d=1.39, but not between hMT+ and Sham (t(18)=0.58, p=0.57; Cohen’s d=−0.26).
 
 Finally, we analyzed performance of the Parietal group only during training to investigate whether performance increased across sessions (Training Days 1, 2, 3, and 4). We found that performance on training Day 1 was significantly different from performance of training Day 2 (t(9)=−3.34, p=0.009; Cohen’s d=−1.056), Day 3 (t(9)=−4.63, p=0.001; Cohen’s d=−1.46), and Day 4 (t(9)=−5.05, p=0.001; Cohen’s d=−1.59). These comparisons indicate that Parietal group performances on the OD task significantly increased on each stimulation training session relative to the first training session (Figure 2C).
 
-## Temporal order judgment
+#### Temporal order judgment
 
-We ran the same analysis on training data for the TOJ task. Mauchly’s test for the mixed factor ANOVA indicated that the assumption of sphericity was violated (χ2 (5)=18.86, p=0.002); hence, the Greenhouse-Geisser correction was used to correct the degrees of freedom and to assess the significance of the corresponding p-values. There was no significant effect of training session on TOJ performance (F(1.8, 53.50)=2.707, p=0.076; ηp2=0.091), but there was a significant main effect of stimulation condition (F(2, 27)=4.79, p=0.017; ηp2=0.262). For the mean performance evaluated during the tRNS session, but notable not pre- and post-training (above), the Parietal stimulation group performance was significantly better than that of the Sham group (post hoc t-test: p=0.014; Bonferroni corrected; Cohen’s d=1.84), but not the hMT+ group (post hoc t-test: p=0.256, Bonferroni corrected; Cohen’s d=0.77), no significant difference was found also between Sham and hMT+ groups (post hoc t-test: p=0.618, Bonferroni corrected; Cohen’s d=0.50). We note, however, that there was no interaction between stimulation and training session on performance (F(3.96, 53.506)=2.277, p=0.073; ηp2=0.144), indicating that the tRNS did not preferentially benefit training for any stimulation group on this TOJ task (Figure 2D).
+We ran the same analysis on training data for the TOJ task. Mauchly’s test for the mixed factor ANOVA indicated that the assumption of sphericity was violated ($χ^{2}$ (5)=18.86, p=0.002); hence, the Greenhouse-Geisser correction was used to correct the degrees of freedom and to assess the significance of the corresponding p-values. There was no significant effect of training session on TOJ performance (F(1.8, 53.50)=2.707, p=0.076; ηp2=0.091), but there was a significant main effect of stimulation condition (F(2, 27)=4.79, p=0.017; ηp2=0.262). For the mean performance evaluated during the tRNS session, but notable not pre- and post-training (above), the Parietal stimulation group performance was significantly better than that of the Sham group (post hoc t-test: p=0.014; Bonferroni corrected; Cohen’s d=1.84), but not the hMT+ group (post hoc t-test: p=0.256, Bonferroni corrected; Cohen’s d=0.77), no significant difference was found also between Sham and hMT+ groups (post hoc t-test: p=0.618, Bonferroni corrected; Cohen’s d=0.50). We note, however, that there was no interaction between stimulation and training session on performance (F(3.96, 53.506)=2.277, p=0.073; ηp2=0.144), indicating that the tRNS did not preferentially benefit training for any stimulation group on this TOJ task (Figure 2D).
 
-## Stimulation and learning-dependent changes in functional connectivity
+### Stimulation and learning-dependent changes in functional connectivity
 
 We next examined the effect of multi-session hf-tRNS and training on resting-state functional connectivity (rs-FC) of the DVAN, the functional network targeted by stimulation and training protocol.
 
@@ -86,7 +86,11 @@ To analyze the effect of stimulation and training on rs-FC of the DVAN, we first
 
 To ensure that the number of data points remaining after time series were cleaned from motion did not bias the r-to-z transformations, we performed statistical analysis to test whether the number of censored frames was equivalent across conditions. A two-way mixed repeated measures ANOVA was performed to evaluate whether the number of censored data frames was affected by stimulation conditions and time (fMRI session). There was homogeneity of variances on both sessions (p>0.05) as assessed by Levene’s test. There was no statistically significant interaction between stimulation group and time on censored frames (F(2, 27)=1.604, p=0.220, ηp2=0.034). Finally, we found no main effect of condition (F(2, 27)=0.038, p=0.963; ηp2=0.003) nor session (F(1, 27)=0.619, p=0.438; ηp2=0.007) indicating that the mean number of censored data frames was equivalent across conditions and sessions.
 
-We compared FC prior to stimulation between groups and found no significant difference (F(2, 27)=0.300, p=0.743; ηp2=0.22), indicating that FC did not differ between stimulation groups at baseline (pre-test session). A mixed repeated measures ANOVA testing the two factors of session (within-subjects factor, n=2) and stimulation site (between-subjects factor, n=3) on functional connectivity scores revealed no main effect of training on FC scores (F(1, 27)=0.001, p=0.986; ηp2=0.00) and a main effect of stimulation site (F(2, 27)=4.064, p=0.029; ηp2=0.231), indicating that the connectivity among the DVAN nodes changed as a function of where tRNS was applied. Importantly, the interaction between stimulation condition and session was found to be highly significant (F(2, 27)=11.507, p<0.001; ηp2=0.460), indicating that the change in rs-FC scores differed depending on the stimulation group (Figure 3) and this change was persistent the day following the last combined training and stimulation session.n=3
+We compared FC prior to stimulation between groups and found no significant difference (F(2, 27)=0.300, p=0.743; ηp2=0.22), indicating that FC did not differ between stimulation groups at baseline (pre-test session). A mixed repeated measures ANOVA testing the two factors of session (within-subjects factor, $n=2$) and stimulation site (between-subjects factor, $n=3$) on functional connectivity scores revealed no main effect of training on FC scores (F(1, 27)=0.001, p=0.986; ηp2=0.00) and a main effect of stimulation site (F(2, 27)=4.064, p=0.029; ηp2=0.231), indicating that the connectivity among the DVAN nodes changed as a function of where tRNS was applied. Importantly, the interaction between stimulation condition and session was found to be highly significant (F(2, 27)=11.507, p<0.001; ηp2=0.460), indicating that the change in rs-FC scores differed depending on the stimulation group (Figure 3) and this change was persistent the day following the last combined training and stimulation session.
+
+$$
+n=3
+$$
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/63782/elife-63782-fig3-v1.jpg)
 
@@ -122,7 +126,7 @@ We also conducted a node-by-node FC analysis (all ROIs pairs within the network 
 
 **Figure 7.:** Left Panel: z-scores frequency distribution pre- (light blue bars) and post- (light red bars) multi-session hf-tRNS coupled with training per each stimulation condition (A. Parietal, B. hMT+, C. Sham). Dark red indicates the overlapping distribution between pre- and post-sessions. Dotted red and blue lines indicated the mean for each z-scores distribution. Right Panel: Correlation matrices represent the result of the computed difference between FC scores pre- and post-test sessions (Δ=FC(S2)−FC(S1)) depicted by condition (A. Parietal, B. hMT+, C. Sham). Each correlation difference between ROI pairs was first calculated at subject level and then averaged across subjects. Colors bars indicate the strength and direction of correlation change values for each regions’ pair (red colors indicate higher connectivity; blue colors indicate lower connectivity). DMN, default mode network; ROI, region of interest; tRNS, transcranial random noise stimulation.
 
-## Functional connectivity-behavior correlation
+### Functional connectivity-behavior correlation
 
 Next, we examined the relationship between changes in behavioral performance and the resting-state FC within the DVAN. Only those subjects that were included in both behavioral and FC analysis were incorporated in the linear model analysis (a total of 26 subjects). We observed a number of positive correlations between FC changes and behavioral improvement in the OD task. In particular, to estimate the behavioral relevance of rs-FC, we correlated connectivity scores with two independent behavioral indices: one behavioral index measured during the scanning sessions (pre- and post-test sessions), and a second behavioral index measured during the Training sessions. We found subjects that displayed a higher performance improvement also tended to show higher rs-FC within the DVAN (measured as the mean of the correlations within the nodes of the DVAN) in the post-test session (r=0.44). The linear regression model revealed a significant regression coefficient (p=0.022, R-squared=0.2) which indicates that post-session functional connectivity scores are significantly associated with changes in behavioral scores in the final test session. We then examined whether there was a relationship between rs-FC and behavioral changes measured at the end of training (Training Day 1 relative to Training Day 4). We found that subjects with higher FC scores within the DVAN in the post-test MRI session showed a positive correlation with higher behavior improvement in the OD task achieved during training (r=0.48). The regression coefficient for this relationship was significant (p=0.012, R-squared=0.23) indicating that changes in behavioral performance during training are significantly correlated with post-test session connectivity scores. Taken together, these results indicate that post-test functional connectivity scores within the attention network significantly correlated with behavioral improvement measured not only immediately at the end of the stimulation and training protocol, but also 24 hr after the end of the stimulation protocol.
 
@@ -156,43 +160,43 @@ Consistent with the relevance of both ventral and dorsal streams of the attentio
 
 Functional connectivity changes following parietal stimulation are likely to have affected behavior and driven the system to better respond to the demands of the attention task. Rapidly evolving changes in connectivity between interconnected regions have been proposed as the key mechanism that allows large-scale networks to respond to task demands (Buschman and Kastner, 2015). In the context of tRNS, we speculate that a fast modulation of the network connectivity can be due to the temporal summation of neural activity, as well as to the offline stochastic effect of tRNS (Chaieb et al., 2015). In fact, the stochastic resonance mechanism has been proposed to lead to higher synchrony of oscillations between neurons across large-scale functional systems, which in turn creates strong links between firing neurons (van der Groen and Wenderoth, 2016; van der Groen et al., 2018; Schwarzkopf et al., 2011; McDonnell et al., 2009; McDonnell and Ward, 2011). The strong correlation found between improved performance and increased FC suggests the pivotal role of the IPS in network mediating these system effects during PL (Szczepanski and Kastner, 2013).
 
-## Conclusions
+### Conclusions
 
 This multi-method study investigates the potential long-term benefits of tRNS on cortical plasticity and its ability to efficiently alter cortical networks to promote attention and visual PL. Our neuroimaging and behavioral results support the idea that the modulation of task-related neural networks induced by tRNS can efficiently promote behavioral improvements and speed up the emergence of learning. Overall, this is the first study demonstrating the sustained and selective nature by which tRNS operates on cortical dynamics, and consequently opens a critical window during which the cortex might be more plastic and responsive to reorganization needs to promote learning. Clinical and healthy populations could significantly benefit from the shortened learning time afforded by the combination of tRNS with behavioral learning.
 
 ## Materials and methods
 
-## Regulatory approval
+### Regulatory approval
 
 The study was approved by the ethical committee of the University of Trento.
 
-## Participants
+### Participants
 
 Thirty-seven neurologically healthy subjects (20 females, mean age 22.8 years old), with normal or corrected-to-normal vision participated in the study. All subjects were screened for medical contra-indications to MRI and brain stimulation and received monetary compensation for their participation in the experiment.
 
-## Study design
+### Study design
 
 Participants were randomly assigned to one of three stimulation conditions: (1) bilateral tRNS over parietal cortex (Parietal group), (2) bilateral tRNS over middle temporal cortex, hMT+ area (hMT+ group), and (3) Sham stimulation (Sham group). Seven subjects were excluded from the analysis due to head motion during one or both scanning procedures or due to inadequate behavioral performance (i.e., performance was at chance in catch trials), leaving 30 participants for behavioral and FC analysis.
 
 Subjects participated in a multi-session experiment that lasted 7 days (one session per day; Figure 1A). On thresholding session, they completed a staircase procedure to measure their psychophysical thresholds for two separate attention tasks: a TOJ and an OD task (described below). On pre-test session, resting-state and the attention task performance measures were taken in the MRI, with trials (from both tasks) randomly interleaved within each block. Participants completed a total of five blocks per task (see Neuroimaging procedure section for details). On training and stimulation sessions (Training Day 1, Training Day 2, Training Day 3, and Training Day 4), subjects received 25 min hf-tRNS or sham while training on the same TOJ and OD tasks, with the two trial types randomly interleaved (cross-tasks training), as in the pre-test (five blocks per day). Post-test session was a repeat of pre-test session.
 
-## Stimuli
+### Stimuli
 
 Stimuli consisted of a pair of sine-wave gratings (Gabors) positioned 4° to the left and right of a central fixation cross. The Gabors were presented with a spatial frequency of 3 cycles/deg and reduced 50% contrast against a uniform gray background (47.5 cd/m2), with a fixation cross positioned in the center of the screen for the entire duration of the trial. The two Gabors were presented with temporal offset asynchronies (for the TOJ task) that corresponded to the individual temporal threshold described in detail below. In addition to the temporal offset, one of the two discs was tilted along the vertical line with a degree that corresponded to the individual orientation threshold calculated for the OD task at baseline. In the TOJ task, participants were asked to judge whether two Gabors were presented simultaneously or not, while in the OD task, participants were asked to determine whether the two Gabors had the same or different orientation. Throughout the experiment, subjects always viewed stimuli at their individual thresholds (except during catch trials where stimuli were presented above threshold) for both dimensions (time and orientation); however, on any given trial, they had to attend to only one of the features, as instructed by the pre-cue word. The target feature (or ‘test Gabor’) was presented for equal number of trials (120 trials per trial type, 240 in total per session) on the left and right visual field, within each block per task. Easy (above threshold) catch-trials were also interleaved randomly within each block (n=6, 24 catch trials per session) to check that participants remained engaged and were performing the cross-attention task correctly. In the Easy trials, the two Gabors were presented with large offset asynchronies (≈150 ms, for the TOJ condition), or with a large orientation difference (≈20°, for the OD condition). Importantly, in both tasks, visual stimuli were presented with temporal offsets (TOJ) and orientation values (OD) fixed at individual threshold levels, which were calculated on thresholding session.
 
 During training days, stimuli were displayed on a 22-in. LCD monitor with a 60 Hz refresh rate controlled by a DELL computer equipped with Matlab r2016a (The MathWorks, Natick, MA) and Psychtoolbox 3.0.8 (Brainard, 1997; Pelli, 1997). Participants were seated 57 cm from the screen in a dark and quiet room, and used a chin rest to ensure consistent positioning. During the fMRI sessions (pre- and post-test sessions), stimuli were displayed on a Nordic NeuroLab LCD monitor (Basic monitor specs include: 878 mm horizontal × 485 mm vertical; 3840×2160 pixels) connected to a Windows PC equipped with the Matlab r2016a and Psychtoolbox 3.0.8, and stimuli were back projected through a mirror inside the scanner.
 
-## Apparatus and procedure
+### Apparatus and procedure
 
 On thresholding session (Figure 1A, green section), subjects performed two two-alternative forced-choice tasks within each block: (1) a TOJ or (2) an OD task. Two 3–1 staircase procedures were used to assess thresholds values for the two tasks (TOJ and OD), separately. A single incorrect response decreased task difficulty, while three consecutive correct responses increased task difficulty. The staircase terminated after 30 reversals of the staircase parameter. Temporal offsets and orientation values in the remaining sessions were calibrated based on the thresholds to yield 50% accuracy in the same/different judgments. The threshold corresponded to the point of subjective equality, which represents the threshold value at which the observer experiences two stimuli as identical. The estimated threshold was then used for the last 15 trials and it was considered accurate if subjects performed at 50% on these trials, the expected performance. 50% accuracy was chosen to prevent ceiling effects, thus allowing PL to occur.
 
 On the pre-test, post-test, and training sessions, participants performed the PL cross-tasks procedure. Each trial started with a 2-s instruction interval during which a cue-word indicated which of the two tasks the subjects should perform in the upcoming trial: ‘Time’ instructed the subject to perform the TOJ task (120 trials), and ‘Orientation’ instructed the subject to perform the OD task (120 trials). After the pre-cue, stimuli were presented for 500 ms. Subjects were then prompted to make a forced-choice judgment to indicate whether the two stimuli had same/different orientation (OD task) or if they were presented at the same/different time (TOJ task), depending on the task. During the response interval (1.5 s), a cue-word was presented to remind subjects which judgment they had to report. A fixation interval of 2 or 4 s terminated the trial (trial example, Figure 1D).
 
-## Stimulation protocol
+### Stimulation protocol
 
 Before testing, all participants were provided with a short introduction to brain stimulation and safety information. After each participant was briefed, they completed a stimulation safety questionnaire and signed the informed consent. At this time, any participant deemed ineligible for stimulation or MRI procedures was excluded from the experiment. A battery-driven stimulator (DC-Stimulator, NeuroConn, Ilmenau, Germany) was used for electrical stimulation. For the two active tRNS conditions (Parietal and hMT+), 2 mA current was applied for 25 consecutive min with random alternating frequency delivered at a high frequency range between 101 and 640 Hz. Stimulation was delivered with a fade in/out period of 20 s at the beginning and at the end of each stimulation session. For Sham stimulation, the machine was turned off after the fade-in phase. Two rubber electrodes (size=5×7 cm2), contained in sponges soaked in saline solution, were placed on the subject’s head and were kept fixed on the stimulation sites with a rubber band and a head cap. Stimulation sites were identified using the International electroencephalographic 10/20 system for scalp electrode localization. The center of the electrode was placed bilaterally over PO7/PO8 (left and right, respectively) for hMT+ and bilaterally over P3/P4 for parietal and sham conditions (Figure 1B). Participants reported no noticeable sensation resulting from tRNS (see also Ambrus et al., 2010). Modeling of the electric field following tRNS was performed with free ROAST software package (Huang et al., 2019; Huang et al., 2016) using the standard MNI-152 template (ICBM project) and visualized separately for the two active stimulation groups (Figure 8B and C). To evaluate whether the electric fields peaks induced by the two stimulation conditions targeted the same brain regions activated by the behavioral tasks, we analyzed BOLD signal changes in response to the OD and the TOJ task in the pre-stimulation session (details for statistical analysis are reported in the Task-Evoked brain activity section). Figure 8 includes the results of a second-level deconvolution general linear model (GLM) analysis for significant positive BOLD response for the OD and TOJ tasks versus rest (Figure 8A), together with the simulation of the current distribution induced by the two stimulation conditions to qualitatively assess the overlap between positive BOLD response for the two tasks and the current distribution peaks over the cortex.
 
-## Neuroimaging procedure
+### Neuroimaging procedure
 
 Whole-brain scanning was performed with a 4 T Bruker MedSpec MRI scanner using an 8-channel head-coil at the Center for Mind and Brain Sciences of the University of Trento, Italy. High-resolution T1-weighted images were acquired for each subject at the beginning of each fMRI session (MP-RAGE 1×1×1 mm3 voxel size, 176 sagittal slices). Functional images (T2*-weighted EPIs, TR=2.0 s, TE=28.0, flip angle=73∘, 3×3×3 mm3 voxel size, 0.99 mm gap, 30 axial slices acquired interleaved, 192 mm FOV) were collected, for a total of 120 volumes per resting-state functional run and 185 volumes per task-based functional run.
 
@@ -200,15 +204,15 @@ The entire session consisted of one anatomical run followed by six functional ru
 
 During MRI data collection, subjects viewed the stimuli through a periscope mirror mounted on the MR head-coil that allowed the subject to view a screen positioned at the head of the scanner. Throughout the experiment, participants were instructed to maintain fixation on a constantly present central fixation cross. Participants were instructed to indicate the response with an MR compatible response box (two double-buttons response pads) with left index finger indicating ‘same’ and right index finger indicating ‘different’ responses.
 
-## Data analysis
+### Data analysis
 
-## Behavioral data analysis
+#### Behavioral data analysis
 
 Statistical analyses were performed using MATLAB (The MathWorks, Natick, MA) and SPSS (IBM Corporation, Armonk, NY), while figures were made using both MATLAB and R toolbox (ggplot2, CRAN; Patil, 2018). We first compared behavioral data from pre- and post-test days (see ‘Magnitude of learning’ section), the two sessions during which fMRI data were also collected, while data from the training and stimulation phase (Training Day 1, Training Day 2, Training Day 3, and Training Day 4) are presented separately (see ‘Time course of learning’ section). Accuracy scores were calculated as a proportion of correct responses from the recorded responses on each day. Data are analyzed and depicted for each task (OD and TOJ) and each analysis (pre- vs. post-test analysis, and training analysis) separately.
 
-For pre- and post-test data analysis, we first checked for normality and homogeneity using Levene’s test and corrected with Brown-Forsythe correction when necessary. We performed two mixed repeated measures ANOVA to determine the effect of stimulation condition on performance in the two attention tasks across sessions. The within-subjects factor was Day (n=2 for pre-post stimulation analysis) and the between-subjects factor was Stimulation condition (n=3). For the pre- and post-test analysis, we tested whether the three stimulation groups differed at pre-test (baseline) and post-test sessions (post-stimulation and training session). Pairwise comparisons were performed to compare pre- and post-test performance for each group. We further analyzed data by calculating the total improvement as the difference between the post- and pre-test performance, thus obtaining the delta value for each stimulation condition (ΔPerformance|Improvement=Post-Test Performance – Pre-Test Performance). We then performed a one-way ANOVA to test whether there was a significant difference between the performance improvements (delta values) between stimulation conditions, and run post hoc pairwise comparisons to reveal differences in improvement between groups. Next, we analyzed data from the training and stimulation phase for the two tasks separately. Specifically, to measure changes in performance over time, we performed a mixed repeated measures ANOVA with stimulation condition (n=3) as between-subjects factor and Training Day (Time, n=4) as within-subjects factor. Mauchly’s test was used to evaluate the assumption of sphericity, and, when necessary, the Greenhouse-Geisser correction was used to correct degrees of freedom and to assess the significance of the corresponding p-values, while Levene’s test was used to address the assumption of equality of variances. Following the significance found in the mixed repeated measures ANOVA, we then compared performance between stimulation groups on each training day, and run post hoc pairwise comparisons to reveal simple differences between stimulation groups and training days performances.
+For pre- and post-test data analysis, we first checked for normality and homogeneity using Levene’s test and corrected with Brown-Forsythe correction when necessary. We performed two mixed repeated measures ANOVA to determine the effect of stimulation condition on performance in the two attention tasks across sessions. The within-subjects factor was Day ($n=2$ for pre-post stimulation analysis) and the between-subjects factor was Stimulation condition ($n=3$). For the pre- and post-test analysis, we tested whether the three stimulation groups differed at pre-test (baseline) and post-test sessions (post-stimulation and training session). Pairwise comparisons were performed to compare pre- and post-test performance for each group. We further analyzed data by calculating the total improvement as the difference between the post- and pre-test performance, thus obtaining the delta value for each stimulation condition (ΔPerformance|Improvement=Post-Test Performance – Pre-Test Performance). We then performed a one-way ANOVA to test whether there was a significant difference between the performance improvements (delta values) between stimulation conditions, and run post hoc pairwise comparisons to reveal differences in improvement between groups. Next, we analyzed data from the training and stimulation phase for the two tasks separately. Specifically, to measure changes in performance over time, we performed a mixed repeated measures ANOVA with stimulation condition ($n=3$) as between-subjects factor and Training Day (Time, $n=4$) as within-subjects factor. Mauchly’s test was used to evaluate the assumption of sphericity, and, when necessary, the Greenhouse-Geisser correction was used to correct degrees of freedom and to assess the significance of the corresponding p-values, while Levene’s test was used to address the assumption of equality of variances. Following the significance found in the mixed repeated measures ANOVA, we then compared performance between stimulation groups on each training day, and run post hoc pairwise comparisons to reveal simple differences between stimulation groups and training days performances.
 
-## Resting-state fMRI data analysis
+#### Resting-state fMRI data analysis
 
 We analyzed resting-state data collected in each fMRI session (pre-post sessions). Pre-processing of functional scans was initially performed using BrainVoyagerQX (Brain Innovations Inc, Maastricht, The Netherlands) and included the elimination of the first four volumes due to non-steady-state magnetization. Images were subsequently subjected to 3D motion correction, slice-timing correction, realignment, and spatial smoothing with a 6-mm FWHM Gaussian kernel. Runs with instantaneous head motion exceeding 3 mm in any given dimension were discarded. The functional scans were manually co-registered to each individual’s high-resolution anatomical scan, then normalized into standardized Talairach coordinates (Laitinen, 1989).
 
@@ -216,9 +220,82 @@ Advanced pre-processing of the functional data from targeted ROIs was performed 
 
 We computed functional connectivity on resting-state data using 10 bilateral ROIs included in the DVAN: the IPS, hMT+, and frontal eye fields (FEFs) of the dorsal network; and the temporal parietal junction (TPJ) and ventral frontal cortex (VFC) of the ventral network. These regions were identified using standardized mean coordinates (Table 1) derived from the literature (Battelli et al., 2017; Vossel et al., 2014; Corbetta et al., 2008; Fox et al., 2006). Functional data from all voxels within a 6-mm radius sphere from the center coordinate were averaged into a single time series, keeping the ROIs similar in size across participants. The time courses were extracted from each ROI in the resting-state run and functional connectivity scores were computed as the Pearson’s r correlation coefficient. Correlation coefficients were Fisher-z transformed prior to subsequent statistical analyses.
 
+**Table 1.**
+ Brain coordinates.Group mean Talairach X, Y, and Z coordinates for the centroid of each region of interest (left and right hemisphere) for the DVAN.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="8">ROIs standardized coordinates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2" colspan="2"></td>
+      <td colspan="3">Left Hemisphere</td>
+      <td colspan="3">Right Hemisphere</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>Y</td>
+      <td>Z</td>
+      <td>X</td>
+      <td>Y</td>
+      <td>Z</td>
+    </tr>
+    <tr>
+      <td rowspan="5">DVAN</td>
+      <td>IPS</td>
+      <td>–26</td>
+      <td>–63</td>
+      <td>48</td>
+      <td>25</td>
+      <td>–60</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>hMT+</td>
+      <td>–44</td>
+      <td>–67</td>
+      <td>3</td>
+      <td>44</td>
+      <td>–71</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>FEF</td>
+      <td>–30</td>
+      <td>–5</td>
+      <td>48</td>
+      <td>30</td>
+      <td>–5</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>TPJ</td>
+      <td>–48</td>
+      <td>–54</td>
+      <td>26</td>
+      <td>48</td>
+      <td>–54</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>VFC</td>
+      <td>–42</td>
+      <td>12</td>
+      <td>–1</td>
+      <td>40</td>
+      <td>17</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
 The Pearson correlations (r scores) among all the ROIs embedded in the attention network produced a connectivity matrix for each subject and each session (pre-post session). In total, there were 45 unique connectivity values among the 10 ROIs (10*(10−1)/2) for each correlation matrix. Z-transformed correlations were used to compute several measures of functional connectivity.
 
-In the first set of analysis, we analyzed whether stimulation-induced connectivity changes at a whole-network level by examining connectivity scores that were the result of averaged correlation values among all connections between ROIs (van den Heuvel et al., 2017; Nicolini et al., 2020). Hence, these analyses examined one connectivity score representing the overall connectivity trend of the entire network. To test the effect of training and stimulation site, functional connectivity scores were subjected to a mixed repeated measures ANOVA with the within-subject factor session (n=2) and between-subject factor of stimulation site (n=3). We also compared rs-FC at each time point (pre- and post-test sessions) by performing two one-way ANOVAs, one per session. Following significance found in the post-test session only, post hoc pairwise comparisons on post-stimulation connectivity scores were run to reveal simple effects between pairs of stimulation conditions. We then run the second set of analysis to examine whether all ROI-to-ROI patterns within the network reliably contribute to the overall condition-related differences in FC, and to evaluate whether there still was a significant change in connectivity modulation when taking into consideration the contribution given by each pair of ROIs embedded in the network. We therefore adopted a different approach to analyze connectivity within the attention network where each ROI-to-ROI contribution (measures of connectivity level between two pair of ROIs as z-scores) to the network state connectivity is considered as a single observation of the attention network. We derived correlation coefficients within-subjects first, and then averaged across subjects obtaining mean z-scores per group, to ensure that changes in connectivity modulation were present in most individual subjects rather than derived from a group average (Varangis et al., 2019; Bellana et al., 2017; for further discussion about differences between within-subjects versus group-averaged approaches, see Roberts et al., 2016). In these analyses, we first performed a one-way ANOVA to compare connectivity scores between stimulation groups prior to stimulation (at baseline). We next tested the effect of stimulation coupled with training on functional connectivity by performing a mixed repeated measure ANOVA to test the effect of stimulation site and session on all correlation values within the network. We then compared post-test connectivity scores of all network components by performing a one-way ANOVA, followed by post hoc pairwise comparisons to reveal differences between groups. We further analyzed stimulation-induced changes in connectivity by calculating the difference between functional connectivity scores in the first and last MRI sessions per each ROI pair, on individual subjects (Δ rs-FC=rs-FC(S2)–rs-FC(S1)). These measures indicate the stimulation-induced changes in connectivity, normalized to baseline.
+In the first set of analysis, we analyzed whether stimulation-induced connectivity changes at a whole-network level by examining connectivity scores that were the result of averaged correlation values among all connections between ROIs (van den Heuvel et al., 2017; Nicolini et al., 2020). Hence, these analyses examined one connectivity score representing the overall connectivity trend of the entire network. To test the effect of training and stimulation site, functional connectivity scores were subjected to a mixed repeated measures ANOVA with the within-subject factor session ($n=2$) and between-subject factor of stimulation site ($n=3$). We also compared rs-FC at each time point (pre- and post-test sessions) by performing two one-way ANOVAs, one per session. Following significance found in the post-test session only, post hoc pairwise comparisons on post-stimulation connectivity scores were run to reveal simple effects between pairs of stimulation conditions. We then run the second set of analysis to examine whether all ROI-to-ROI patterns within the network reliably contribute to the overall condition-related differences in FC, and to evaluate whether there still was a significant change in connectivity modulation when taking into consideration the contribution given by each pair of ROIs embedded in the network. We therefore adopted a different approach to analyze connectivity within the attention network where each ROI-to-ROI contribution (measures of connectivity level between two pair of ROIs as z-scores) to the network state connectivity is considered as a single observation of the attention network. We derived correlation coefficients within-subjects first, and then averaged across subjects obtaining mean z-scores per group, to ensure that changes in connectivity modulation were present in most individual subjects rather than derived from a group average (Varangis et al., 2019; Bellana et al., 2017; for further discussion about differences between within-subjects versus group-averaged approaches, see Roberts et al., 2016). In these analyses, we first performed a one-way ANOVA to compare connectivity scores between stimulation groups prior to stimulation (at baseline). We next tested the effect of stimulation coupled with training on functional connectivity by performing a mixed repeated measure ANOVA to test the effect of stimulation site and session on all correlation values within the network. We then compared post-test connectivity scores of all network components by performing a one-way ANOVA, followed by post hoc pairwise comparisons to reveal differences between groups. We further analyzed stimulation-induced changes in connectivity by calculating the difference between functional connectivity scores in the first and last MRI sessions per each ROI pair, on individual subjects (Δ rs-FC=rs-FC(S2)–rs-FC(S1)). These measures indicate the stimulation-induced changes in connectivity, normalized to baseline.
 
 Throughout analysis, Levene’s test was used to test for normality and homogeneity of variance, and Brown-Forsythe correction was used to correct the F-ratio and degrees of freedom when necessary. Figures were made using MATLAB and R (ggplot2, CRAN; Patil, 2018).
 
@@ -226,6 +303,300 @@ Finally, to explore the relationship between functional connectivity within the 
 
 We also computed functional connectivity on resting-state data of 10 DMN ROIs defined based on previous imaging studies (Buckner et al., 2008; Buckner et al., 2008; Crittenden et al., 2015; Andrews-Hanna et al., 2010): the ventral medial prefrontal cortex, the dorsal prefrontal cortex, the left posterior cingulate cortex, the left lateral temporal cortex, the bilateral inferior parietal lobe (IPL), the bilateral parahippocampal cortex, and bilateral hippocampal formation (HF+). Coordinates in MNI space were mapped onto Talairach space using the ‘MNI-to-Talairach converter with Brodmann Areas tool’ included in the Yale BioImage Suite Package (Papademetris et al., 2005; Papademetris et al., 2005). We followed the same procedure used for the DVAN analysis to extract the time series within each ROIs, the computation of Pearson’s r correlation coefficient and subsequent statistical analysis as for the DVAN. Finally, we compared the mean change in FC measured within the DVAN and the DMN. A two-way ANOVA was conducted with independent factors being network effects of stimulation condition and network on FC modulation to evaluate whether there was a difference in FC modulation within the two networks depending on stimulation conditions.
 
-## Task-evoked brain activity
+#### Task-evoked brain activity
 
 We analyzed BOLD signal changes in response to the OD and the TOJ task in the pre-stimulation session, before any manipulation (e.g., stimulation and training) could potentially change the brain response to the task. Therefore, we included all subjects in the analysis within one group (N=30, 2 subjects were excluded due to data motion contamination recorded during task-runs; leaving 28 subjects) and we observed the brain areas significantly activated while performing the two tasks. Pre-processing of task-related functional scans was performed using BrainVoyagerQX (Brain Innovations Inc, Maastricht, The Netherlands) and included the elimination of the first six volumes due to non-steady-state magnetization effects. Functional data were motion-corrected (3D motion correction) and adjusted for temporal fluctuation in intensity over time (linear-trend removal and mean intensity adjustment). Runs with head motion exceeding 3 mm in any given dimension and direction were discarded. Functional scans were initially co-registered using automatic BV procedures and then manually adjusted to each individual’s high-resolution anatomical scan, then normalized into standardized Talairach coordinates (Talairach and Tournoux, 1988). BOLD activation was analyzed using a deconvolution GLM that included predictors for each volume (sampled at 2 s), each task-condition, extending 20 s following the onset of a trial. Statistical contrasts were estimated from the four volumes surrounding the peak of the hemodynamic response (4 s post-stimulus onset) for each voxel. In the first-level analysis, a GLM regression model was performed to fit data for each subject. Individual subject data were then combined into a deconvolution GLM in which beta estimates on OD and TOJ trials were contrasted with estimates for baseline activity. This contrast identified brain areas associated with OD task performance and TOJ performance, with statistical maps significance thresholded with a false discovery rate of 0.05 (FDR corrected). Figure 8A shows the results of the second-level deconvolution GLM analysis for significant BOLD response for the OD and TOJ tasks. The positive brain activations evoked by the two tasks largely overlap, with significant activity peaks over the parietal lobes (bilateral superior and IPLs), and on more anterior areas of the brain (including FEFs bilateral areas). Details of the statistical maps with Talairach coordinates are reported in the table below (Table 2 for OD and Table 3 for the TOJ contrast, respectively). The Talairach daemon (talairach.org) was used to identify the associated anatomical/functional brain regions and relative Broadmann areas (Lancaster et al., 2000; Lancaster et al., 1997).
+
+**Table 2.**
+ Clusters peak activation.Peak activation coordinates of significant voxel clusters for the OD task are reported in Talairach space with relative number of voxels included in each cluster. Talairach Client was used to identy related anatomical/functional brain location and associated Broadmann Areas.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="7">OD</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Cluster</th>
+      <th>X coor</th>
+      <th>Y coor</th>
+      <th>Z coor</th>
+      <th>No. of Voxels</th>
+      <th>Hemisphere</th>
+      <th colspan="2">Brain area</th>
+      <th>Broadmann area</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>29</td>
+      <td>–44</td>
+      <td>35</td>
+      <td>10,156</td>
+      <td>Right cerebrum</td>
+      <td>Parietal lobe</td>
+      <td>VisuoMotor area</td>
+      <td>Broadmann area 7</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>47</td>
+      <td>1</td>
+      <td>21</td>
+      <td>714</td>
+      <td>Right cerebrum</td>
+      <td>Frontal lobe</td>
+      <td>Inferior frontal gyrus</td>
+      <td>Brodmann area 9</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>35</td>
+      <td>–59</td>
+      <td>–24</td>
+      <td>4067</td>
+      <td>Right cerebellum</td>
+      <td>Cerebellum</td>
+      <td>Culmen</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>35</td>
+      <td>37</td>
+      <td>21</td>
+      <td>2337</td>
+      <td>Right cerebrum</td>
+      <td>Frontal lobe</td>
+      <td>Middle frontal gyrus</td>
+      <td>Brodmann area 10</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>26</td>
+      <td>–5</td>
+      <td>51</td>
+      <td>1203</td>
+      <td>Right cerebrum</td>
+      <td>Frontal lobe</td>
+      <td>Middle frontal gyrus</td>
+      <td>Brodmann area 6</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>11</td>
+      <td>–29</td>
+      <td>15</td>
+      <td>862</td>
+      <td>Right cerebrum</td>
+      <td>Sub-lobar</td>
+      <td>Thalamus</td>
+      <td>Pulvinar</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>–4</td>
+      <td>7</td>
+      <td>48</td>
+      <td>6029</td>
+      <td>Left cerebrum</td>
+      <td>Frontal lobe</td>
+      <td>Superior frontal gyrus</td>
+      <td>Brodmann area 6</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>–43</td>
+      <td>–50</td>
+      <td>–15</td>
+      <td>11,400</td>
+      <td>Left cerebrum</td>
+      <td>Temporal lobe</td>
+      <td>Fusiform gyrus</td>
+      <td>Brodmann area 37</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>–16</td>
+      <td>–5</td>
+      <td>18</td>
+      <td>470</td>
+      <td>Left cerebrum</td>
+      <td>Sub-lobar</td>
+      <td>Caudate</td>
+      <td>Caudate body</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>–40</td>
+      <td>–8</td>
+      <td>39</td>
+      <td>19,818</td>
+      <td>Left cerebrum</td>
+      <td>Frontal lobe</td>
+      <td>Precentral gyrus</td>
+      <td>Brodmann area 6</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>–40</td>
+      <td>–38</td>
+      <td>30</td>
+      <td>21,367</td>
+      <td>Left cerebrum</td>
+      <td>Parietal lobe</td>
+      <td>Supramarginal gyrus</td>
+      <td>Brodmann area 40</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>–31</td>
+      <td>13</td>
+      <td>9</td>
+      <td>569</td>
+      <td>Left cerebrum</td>
+      <td>Sub-lobar</td>
+      <td>Insula</td>
+      <td>Brodmann area 13</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>–58</td>
+      <td>–17</td>
+      <td>18</td>
+      <td>327</td>
+      <td>Left cerebrum</td>
+      <td>Parietal lobe</td>
+      <td>Postcentral gyrus</td>
+      <td>Brodmann area 43</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Peak activation coordinates of significant voxel clusters and the TOJ task are reported in Talairach space with relative number of voxels included in each cluster.Talairach Client was used to identy related anatomical/functional brain location and associated Broadmann areas.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="7">TOJ</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Cluster</th>
+      <th>X coor</th>
+      <th>Y coor</th>
+      <th>Z coor</th>
+      <th></th>
+      <th>Hemisphere</th>
+      <th colspan="2">Brain area</th>
+      <th>Broadmann area</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>47</td>
+      <td>1</td>
+      <td>21</td>
+      <td>1499</td>
+      <td>Right cerebrum</td>
+      <td>Frontal lobe</td>
+      <td>Inferior frontal gyrus</td>
+      <td>Brodmann area 9</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>29</td>
+      <td>–47</td>
+      <td>33</td>
+      <td>8339</td>
+      <td>Right cerebrum</td>
+      <td>Parietal lobe</td>
+      <td>VisuoMotor area</td>
+      <td>Broadmann area 7</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>29</td>
+      <td>–65</td>
+      <td>–27</td>
+      <td>2278</td>
+      <td>Right cerebellum</td>
+      <td>Posterior lobe</td>
+      <td>Pyramis</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>35</td>
+      <td>37</td>
+      <td>21</td>
+      <td>2564</td>
+      <td>Right cerebrum</td>
+      <td>Frontal lobe</td>
+      <td>Middle frontal gyrus</td>
+      <td>Brodmann area 10</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>11</td>
+      <td>–29</td>
+      <td>15</td>
+      <td>359</td>
+      <td>Right cerebrum</td>
+      <td>Sub-lobar</td>
+      <td>Thalamus</td>
+      <td>Pulvinar</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>–7</td>
+      <td>7</td>
+      <td>48</td>
+      <td>6975</td>
+      <td>Left cerebrum</td>
+      <td>Frontal lobe</td>
+      <td>Medial frontal gyrus</td>
+      <td>Brodmann area 6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>–19</td>
+      <td>–41</td>
+      <td>6</td>
+      <td>6430</td>
+      <td>Left cerebrum</td>
+      <td>Limbic lobe</td>
+      <td>Parahippocampal gyrus</td>
+      <td>Brodmann area 30</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>–40</td>
+      <td>–8</td>
+      <td>39</td>
+      <td>23,304</td>
+      <td>Left cerebrum</td>
+      <td>Frontal lobe</td>
+      <td>Precentral gyrus</td>
+      <td>Brodmann area 6</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>–43</td>
+      <td>–41</td>
+      <td>33</td>
+      <td>19,411</td>
+      <td>Left cerebrum</td>
+      <td>Parietal lobe</td>
+      <td>Supramarginal gyrus</td>
+      <td>Brodmann area 40</td>
+    </tr>
+  </tbody>
+</table>

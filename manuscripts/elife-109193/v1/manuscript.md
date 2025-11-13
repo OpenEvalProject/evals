@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02f99v835 Decision and Awareness Group, Cognitive Neuroscience Laboratory, German Primate Center – Leibniz Institute for Primate Research Göttingen Germany
+1. Decision and Awareness Group, Cognitive Neuroscience Laboratory, German Primate Center – Leibniz Institute for Primate Research Göttingen Germany ([ROR:02f99v835](https://ror.org/02f99v835))
 
 † Corresponding author
 

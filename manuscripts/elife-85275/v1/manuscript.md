@@ -8,15 +8,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01dq60k83 Department of Robotics, Graduate School of Engineering, Tohoku University Sendai Japan
-2. https://ror.org/02hpadn98 Department of Biological Cybernetics, Faculty of Biology, Bielefeld University Bielefeld Germany
-3. https://ror.org/02hpadn98 Centre for Cognitive Interaction Technology, Bielefeld University Bielefeld Germany
+1. Department of Robotics, Graduate School of Engineering, Tohoku University Sendai Japan ([ROR:01dq60k83](https://ror.org/01dq60k83))
+2. Department of Biological Cybernetics, Faculty of Biology, Bielefeld University Bielefeld Germany ([ROR:02hpadn98](https://ror.org/02hpadn98))
+3. Centre for Cognitive Interaction Technology, Bielefeld University Bielefeld Germany ([ROR:02hpadn98](https://ror.org/02hpadn98))
 
 † Corresponding author
 
 ## Abstract
 
-Cyborg control of insect movement is promising for developing miniature, high-mobility, and efficient biohybrid robots. However, considering the inter-individual variation of the insect neuromuscular apparatus and its neural control is challenging. We propose a hierarchical model including inter-individual variation of muscle properties of three leg muscles involved in propulsion (retractor coxae), joint stiffness (pro- and retractor coxae), and stance-swing transition (protractor coxae and levator trochanteris) in the stick insect Carausius morosus . To estimate mechanical effects induced by external muscle stimulation, the model is based on the systematic evaluation of joint torques as functions of electrical stimulation parameters. A nearly linear relationship between the stimulus burst duration and generated torque was observed. This stimulus-torque characteristic holds for burst durations of up to 500ms, corresponding to the stance and swing phase durations of medium to fast walking stick insects. Hierarchical Bayesian modeling revealed that linearity of the stimulus-torque characteristic was invariant, with individually varying slopes. Individual prediction of joint torques provides significant benefits for precise cyborg control.
+Cyborg control of insect movement is promising for developing miniature, high-mobility, and efficient biohybrid robots. However, considering the inter-individual variation of the insect neuromuscular apparatus and its neural control is challenging. We propose a hierarchical model including inter-individual variation of muscle properties of three leg muscles involved in propulsion (retractor coxae), joint stiffness (pro- and retractor coxae), and stance-swing transition (protractor coxae and levator trochanteris) in the stick insect Carausius morosus. To estimate mechanical effects induced by external muscle stimulation, the model is based on the systematic evaluation of joint torques as functions of electrical stimulation parameters. A nearly linear relationship between the stimulus burst duration and generated torque was observed. This stimulus-torque characteristic holds for burst durations of up to 500ms, corresponding to the stance and swing phase durations of medium to fast walking stick insects. Hierarchical Bayesian modeling revealed that linearity of the stimulus-torque characteristic was invariant, with individually varying slopes. Individual prediction of joint torques provides significant benefits for precise cyborg control.
 
 ## Introduction
 
@@ -32,89 +32,316 @@ With regard to our general understanding of insect motor control, our study demo
 
 ## Results
 
-## Joint torque measurements
+### Joint torque measurements
 
 Since movement at a given leg joint is effected by joint torque, the goal of our experimental measurements was measure jont torque as a function of electrical stimulation. This was done for the two proximal joints of the stick insect middle leg. The insect was fixed dorsal side up on a wooden support, with its right middle leg coxa reaching beyond the edge (Figure 1A right). We selected three leg muscles (protractor, retractor, and levator) for electrical stimulation (Figure 1B). When stick insects walk, they use the protractor to swing the leg forward during the swing phase, the retractor to move the leg backward during the stance phase, and levator to initiate the stance-to-swing transition (Rosenbaum et al., 2010; Dallmann et al., 2019; Günzel et al., 2022; Bässler and Wegner, 1983). Moreover, co-contraction of the protractor and retractor are known to vary based on the overall load distribution, thus being important for postural control by regulating joint stiffness (Dallmann et al., 2019; Günzel et al., 2022). Accordingly, electrical stimulation of the protractor and retractor muscles generated forward and backward movements at the thorax–coxa (ThC) joint, as measured by a calibrated custom-made force transducer with a strain gauge held against the femur with known distance from the joint. Stimulation of the levator muscle generated an upward movement at the coxa–trochanter (CTr) joint (Dallmann et al., 2016).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/85275/elife-85275-fig1-v1.jpg)
 
-**Figure 1.:** A) The insect was fixed dorsal side up on a balsa wood platform.Two small insect pins attached to the tip of the force transducer held the middle part of the femur segment of the middle leg. (B) Electrodes (arrows) implanted into the three leg muscles protractor, retractor, and levator, in the right middle leg. (C) We systematically analyzed how joint torques depended on the three PWM burst parameters amplitude [V], frequency [Hz], and duty ratio [%], and identified the combinations that most effectively and repeatedly produced torque. The upper graph shows the profile of an electrical stimulation signal for each muscle. The lower graph shows the profile of the sensor value measured with the force transducer. (D). The panel shows the calculated ThC-joint torque profile versus the burst duration  during the protractor stimulations (animal05, Ti). In this experiment, the burst duration n=74 was varied at random, and the torque was calculated from force measurements with calibrated conversion factor and moment arm (see (TiC)). The voltage, frequency, and duty ratio of the PWM signals were 2.0 V, 50 Hz, and 30%, respectively. The color of the dots represents the number of stimulations (blue–yellow: 1–74). The orange dotted vertical line indicates  at 500ms.Ti
+**Figure 1.:** Two small insect pins attached to the tip of the force transducer held the middle part of the femur segment of the middle leg. (B) Electrodes (arrows) implanted into the three leg muscles protractor, retractor, and levator, in the right middle leg. (C) We systematically analyzed how joint torques depended on the three PWM burst parameters amplitude [V], frequency [Hz], and duty ratio [%], and identified the combinations that most effectively and repeatedly produced torque. The upper graph shows the profile of an electrical stimulation signal for each muscle. The lower graph shows the profile of the sensor value measured with the force transducer. (D). The panel shows the calculated ThC-joint torque profile versus the burst duration $T_{i}$ during the protractor stimulations (animal05, $n=74$). In this experiment, the burst duration $T_{i}$ was varied at random, and the torque was calculated from force measurements with calibrated conversion factor and moment arm (see (C)). The voltage, frequency, and duty ratio of the PWM signals were 2.0 V, 50 Hz, and 30%, respectively. The color of the dots represents the number of stimulations (blue–yellow: 1–74). The orange dotted vertical line indicates $T_{i}$ at 500ms.
 
-Figure 2 illustrates the obtained relation between the PWM burst duration and the generated joint torques for the protractor (A), retractor (B), and levator (C) muscles from 10 animals (N=10). The parameters of the PWM signals were set to 2.0 V, 50 Hz, and 30% duty ratio. During one trial, we stimulated one muscle n times with fixed PWM parameters and measured the generated torque at the corresponding joint.
+Figure 2 illustrates the obtained relation between the PWM burst duration and the generated joint torques for the protractor (A), retractor (B), and levator (C) muscles from 10 animals ($N=10$). The parameters of the PWM signals were set to 2.0 V, 50 Hz, and 30% duty ratio. During one trial, we stimulated one muscle $n$ times with fixed PWM parameters and measured the generated torque at the corresponding joint.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/85275/elife-85275-fig2-v1.jpg)
 
-**Figure 2.:** Data from 10 animals with three muscles, each: (A) protractor, (B) retractor, and (C) levator muscle stimulation. The PWM burst parameters were 2.0 V. 50 Hz, and 30% duty ratio.  gives the number of stimulations for each animal. Electrical stimulations were performed manually and randomly; therefore, the total number of stimuli was different for each animal. The color of the symbols indicates the order of the stimulations: blue (1) to yellow (n). The positive values of joint torque represent intended (nA) forward, (B) backward and (C) upward rotation of the coxa relative to the thorax. Source code and data are available on Dryad (Figure2.zip, https://doi.org/10.5061/dryad.wpzgmsbsw).
+**Figure 2.:** Data from 10 animals with three muscles, each: (A) protractor, (B) retractor, and (C) levator muscle stimulation. The PWM burst parameters were 2.0 V. 50 Hz, and 30% duty ratio. $n$ gives the number of stimulations for each animal. Electrical stimulations were performed manually and randomly; therefore, the total number of stimuli was different for each animal. The color of the symbols indicates the order of the stimulations: blue (1) to yellow ($n$). The positive values of joint torque represent intended (A) forward, (B) backward and (C) upward rotation of the coxa relative to the thorax. Source code and data are available on Dryad (Figure2.zip, https://doi.org/10.5061/dryad.wpzgmsbsw).
 
-The results indicate the input–output relation (burst duration and generated torque) corresponded to a linear function or a power function with an exponent of less than 1.0. Furthermore, the relationship holds for burst durations up to 500ms for all animals, corresponding to the duration of swing and stance phases in medium to fast walking stick insects (Dürr et al., 2018). Maximum torques for ThC and CTr joints were 60 µNm, 120 µNm, and 40 µNm (Dallmann et al., 2019). For a given set of PWM parameters, the generated torque characteristics remained almost constant during all stimulations under the same condition, suggesting that muscle fatigue or warm-up effects were negligible for at least n=50 stimulations. Furthermore, we verified that no significant changes occurred in muscle characteristics owing to the pre- and post-experimental relationship.
+The results indicate the input–output relation (burst duration and generated torque) corresponded to a linear function or a power function with an exponent of less than 1.0. Furthermore, the relationship holds for burst durations up to 500ms for all animals, corresponding to the duration of swing and stance phases in medium to fast walking stick insects (Dürr et al., 2018). Maximum torques for ThC and CTr joints were 60 µNm, 120 µNm, and 40 µNm (Dallmann et al., 2019). For a given set of PWM parameters, the generated torque characteristics remained almost constant during all stimulations under the same condition, suggesting that muscle fatigue or warm-up effects were negligible for at least $n=50$ stimulations. Furthermore, we verified that no significant changes occurred in muscle characteristics owing to the pre- and post-experimental relationship.
 
-## Bayesian statistical modeling
+### Bayesian statistical modeling
 
 To investigate joint-torque properties generated by muscle stimulation while explicitly considering inter-individual variation of muscle physiology, we used a Bayesian statistical analysis and modeling framework. The probabilistic nature of Bayesian models makes them appropriate for modeling ‘uncertainty’, as introduced by inter-individual variation (Gelman et al., 2013). Bayesian analysis can be used to estimate a probabilistic distribution (model) that encodes an unknown observation target by using observed data and updating the distribution in the model. Furthermore, hierarchical model variants allow the inclusion of a hyperparameter, thus allowing for a parameter of choice to be drawn from yet another probabilistic distribution. In our case, hierarchical-model variants were used to account for inter-individual differences (Watanabe, 2018).
 
-Here, we modeled the relationship between the burst duration of the electrical stimulation and the joint torque generated using a single model (a power function) with six variants (for details, see subsection ‘Models’). All model variants were specified in a probabilistic programming language developed by Stan (Stan Development Team, 2023). Here, we used non-informative uniform priors for the parameters β, γ, and σ, unless stated otherwise. For estimation, we used the numerical Markov Chain Monte Carlo (MCMC) method, and scripted the models in R (v.4.1.3; R Development Core Team, 2023), in which the Stan code was compiled and executed using the R package ‘rstan’ (Stan Development Team, 2023). The software performed sampling from prior distributions using No-U-Turn Sampler (NUTS; Hoffman and Gelman, 2014). Sampling convergence was detected through trace plots and the quantitative Gelman–Rubin convergence statistic Rh⁢a⁢t (Gelman and Rubin, 1992), where Rhat<1.10.
+Here, we modeled the relationship between the burst duration of the electrical stimulation and the joint torque generated using a single model (a power function) with six variants (for details, see subsection ‘Models’). All model variants were specified in a probabilistic programming language developed by Stan (Stan Development Team, 2023). Here, we used non-informative uniform priors for the parameters $\beta$, $\gamma$, and $\sigma$, unless stated otherwise. For estimation, we used the numerical Markov Chain Monte Carlo (MCMC) method, and scripted the models in R (v.4.1.3; R Development Core Team, 2023), in which the Stan code was compiled and executed using the R package ‘rstan’ (Stan Development Team, 2023). The software performed sampling from prior distributions using No-U-Turn Sampler (NUTS; Hoffman and Gelman, 2014). Sampling convergence was detected through trace plots and the quantitative Gelman–Rubin convergence statistic $R_{h⁢a⁢t}$ (Gelman and Rubin, 1992), where $R_{hat}<1.10$.
 
-## Models
+### Models
 
-τi and Ti represent the calculated joint torque based on the force-transducer value and the burst duration of a PWM signal for electrical stimulation, respectively. We assumed that τi follows a normal distribution, described by the N(μ,σ) function, where µ and σ represent the mean and standard deviation (S.D.) of the distribution. Indexes i and j represent the numbers of stimulations and animals, respectively.
+$\tau_{i}$ and $T_{i}$ represent the calculated joint torque based on the force-transducer value and the burst duration of a PWM signal for electrical stimulation, respectively. We assumed that $\tau_{i}$ follows a normal distribution, described by the $N(\mu,\sigma)$ function, where µ and $\sigma$ represent the mean and standard deviation (S.D.) of the distribution. Indexes $i$ and $j$ represent the numbers of stimulations and animals, respectively.
 
-Model 1-1: Linear model representing the linear relationship between burst duration and joint torque(1)τi∼N(μ=βTi,σ),
+Model 1-1: Linear model representing the linear relationship between burst duration and joint torque
 
-where β represents the inclination of the estimated linear function.
+$$
+\tau_{i}∼N(\mu=\betaT_{i},\sigma),
+$$
 
-Model 1-2: Hierarchical model representing the linear relation between burst duration and joint torque(2)τi,j∼N(μ=βjTi,σ),(3)βj∼N(μ=μβ,σβ),
+where $\beta$ represents the inclination of the estimated linear function.
 
-where βj represents the inclination of the estimated linear function on the (j)th animal. Furthermore, in this hierarchical model, βj is drawn out of a normal distribution that captures inter-individual variation, where μβ and σβ represent the mean and S.D. of the distribution, respectively.
+Model 1-2: Hierarchical model representing the linear relation between burst duration and joint torque
 
-Model 2-1: Non-linear model representing the nonlinear relationship between burst duration and joint torque(4)τi∼N(μ=β{Ti}γ,σ),
+$$
+\tau_{i,j}∼N(\mu=\beta_{j}T_{i},\sigma),
+$$
 
-where, β and γ represent the magnitude of the base and exponent of the estimated non-linear power function, respectively.
 
-Model 2-2: Hierarchical model representing the nonlinear relationship between burst duration and joint torque(5)τi,j∼N(μ=βj{Ti}γ,σ),(6)βj∼N(μ=μβ,σβ),
 
-where βj and γ represent the magnitude of the base on the (j)th animal and the exponent of the estimated nonlinear power function, respectively. In this model, βj follows a normal distribution as described above, where, μβ and σβ represent the mean and S.D. of the distribution.
+$$
+\beta_{j}∼N(\mu=\mu_{\beta},\sigma_{\beta}),
+$$
 
-Model 2-3: Hierarchical model representing the nonlinear relation between burst duration and joint torque(7)τi,j∼N(μ=β{Ti}γj,σ),(8)γj∼N(μ=μγ,σγ),
+where $\beta_{j}$ represents the inclination of the estimated linear function on the ($j$)th animal. Furthermore, in this hierarchical model, $\beta_{j}$ is drawn out of a normal distribution that captures inter-individual variation, where $\mu_{\beta}$ and $\sigma_{\beta}$ represent the mean and S.D. of the distribution, respectively.
 
-where β and γj represent the magnitude of the base and the exponent on the (j)th animal for the estimated nonlinear, power function, respectively. In this model, γj follows a normal distribution as described above, where μγ and σγ represent the mean and S.D. of the distribution.
+Model 2-1: Non-linear model representing the nonlinear relationship between burst duration and joint torque
 
-Model 2-4: Hierarchical model representing the nonlinear relationship between burst duration and joint torque(9)τi,j∼N(μ=βj{Ti}γj,σ),(10)βj∼N(μ=μβ,σβ),(11)γj∼N(μ=μγ,σγ),
+$$
+\tau_{i}∼N(\mu=\beta{T_{i}}^{\gamma},\sigma),
+$$
 
-where βj and γj represent the magnitude of the base and the exponent of the estimated nonlinear power function, respectively, on the (j)th animal. In this model, βj and γj follow normal distributions as described above, where μβ and μβ are the means, and σγ and σβ are the S.D.s of the distribution.
+where, $\beta$ and $\gamma$ represent the magnitude of the base and exponent of the estimated non-linear power function, respectively.
 
-## Comparison of model predictability
+Model 2-2: Hierarchical model representing the nonlinear relationship between burst duration and joint torque
 
-Using the WAIC described in the ‘Materials and methods’ section, we compared the prediction performance of the six models. Figure 3 (A)–(C) shows the WAIC values for each voltage applied (1.0–4.0 V) and models 1–1 to 2–4. Figure 3 (A)–(C) show the results for the protractor, retractor, and levator muscles, respectively. For stimulation experiments on each of the three muscles, the models with a hierarchical parameter for expressing individual differences for β~ (models 1–2 and 2–2) had the lowest WAIC and, therefore, the best predictive performance. Conversely, the model with individual differences for both β~ and γ~ (model 2–4) exhibited the lowest prediction performance, indicating that inter-individual variation of the exponent does not improve model estimates.
+$$
+\tau_{i,j}∼N(\mu=\beta_{j}{T_{i}}^{\gamma},\sigma),
+$$
+
+
+
+$$
+\beta_{j}∼N(\mu=\mu_{\beta},\sigma_{\beta}),
+$$
+
+where $\beta_{j}$ and $\gamma$ represent the magnitude of the base on the ($j$)th animal and the exponent of the estimated nonlinear power function, respectively. In this model, $\beta_{j}$ follows a normal distribution as described above, where, $\mu_{\beta}$ and $\sigma_{\beta}$ represent the mean and S.D. of the distribution.
+
+Model 2-3: Hierarchical model representing the nonlinear relation between burst duration and joint torque
+
+$$
+\tau_{i,j}∼N(\mu=\beta{T_{i}}^{\gamma_{j}},\sigma),
+$$
+
+
+
+$$
+\gamma_{j}∼N(\mu=\mu_{\gamma},\sigma_{\gamma}),
+$$
+
+where $\beta$ and $\gamma_{j}$ represent the magnitude of the base and the exponent on the ($j$)th animal for the estimated nonlinear, power function, respectively. In this model, $\gamma_{j}$ follows a normal distribution as described above, where $\mu_{\gamma}$ and $\sigma_{\gamma}$ represent the mean and S.D. of the distribution.
+
+Model 2-4: Hierarchical model representing the nonlinear relationship between burst duration and joint torque
+
+$$
+\tau_{i,j}∼N(\mu=\beta_{j}{T_{i}}^{\gamma_{j}},\sigma),
+$$
+
+
+
+$$
+\beta_{j}∼N(\mu=\mu_{\beta},\sigma_{\beta}),
+$$
+
+
+
+$$
+\gamma_{j}∼N(\mu=\mu_{\gamma},\sigma_{\gamma}),
+$$
+
+where $\beta_{j}$ and $\gamma_{j}$ represent the magnitude of the base and the exponent of the estimated nonlinear power function, respectively, on the ($j$)th animal. In this model, $\beta_{j}$ and $\gamma_{j}$ follow normal distributions as described above, where $\mu_{\beta}$ and $\mu_{\beta}$ are the means, and $\sigma_{\gamma}$ and $\sigma_{\beta}$ are the S.D.s of the distribution.
+
+### Comparison of model predictability
+
+Using the WAIC described in the ‘Materials and methods’ section, we compared the prediction performance of the six models. Figure 3 (A)–(C) shows the WAIC values for each voltage applied (1.0–4.0 V) and models 1–1 to 2–4. Figure 3 (A)–(C) show the results for the protractor, retractor, and levator muscles, respectively. For stimulation experiments on each of the three muscles, the models with a hierarchical parameter for expressing individual differences for $\beta~$ (models 1–2 and 2–2) had the lowest WAIC and, therefore, the best predictive performance. Conversely, the model with individual differences for both $\beta~$ and $\gamma~$ (model 2–4) exhibited the lowest prediction performance, indicating that inter-individual variation of the exponent does not improve model estimates.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/85275/elife-85275-fig3-v1.jpg)
 
-**Figure 3.:** We compared the six models that were explained in the ‘Model’ subsection. (A), (B), and (C) show plots of the WAIC (Watanabe, 2018) values for the protractor, retractor, and levator stimulations, respectively ( animals per muscle). The parameters with tilde, N=10 and β~, indicate that the parameters include inter-individual variation. PWM parameters were set as follows: (1.0 V, 2.0 V, 3.0 V, and 4.0 V), at 50 Hz and 30% duty ratio. Negative values were obtained for models 1–2 and 2–2 for all voltages and all muscles. The lowest WAIC indicates the best prediction model, as explained in the "WAIC" subsection. Right panels show Bayesian predictive estimation for the protractor (γ~D), retractor (E), and levator (F) stimulation experiments with PWM parameters 2.0 V, 50 Hz, and 30% duty ratio. The differences in the point styles indicate individual animals. In each panel, the violet shading indicates the probability density of the distribution predictive. The green lines represent twenty samples from the posterior distribution in decreasing order of probability density. Source code and data are available on Dryad (Figure3-5.zip, https://doi.org/10.5061/dryad.wpzgmsbsw).
+**Figure 3.:** We compared the six models that were explained in the ‘Model’ subsection. (A), (B), and (C) show plots of the WAIC (Watanabe, 2018) values for the protractor, retractor, and levator stimulations, respectively ($N=10$ animals per muscle). The parameters with tilde, $\beta~$ and $\gamma~$, indicate that the parameters include inter-individual variation. PWM parameters were set as follows: (1.0 V, 2.0 V, 3.0 V, and 4.0 V), at 50 Hz and 30% duty ratio. Negative values were obtained for models 1–2 and 2–2 for all voltages and all muscles. The lowest WAIC indicates the best prediction model, as explained in the "WAIC" subsection. Right panels show Bayesian predictive estimation for the protractor (D), retractor (E), and levator (F) stimulation experiments with PWM parameters 2.0 V, 50 Hz, and 30% duty ratio. The differences in the point styles indicate individual animals. In each panel, the violet shading indicates the probability density of the distribution predictive. The green lines represent twenty samples from the posterior distribution in decreasing order of probability density. Source code and data are available on Dryad (Figure3-5.zip, https://doi.org/10.5061/dryad.wpzgmsbsw).
 
-## Bayesian estimation of the generated torque for a given burst duration
+### Bayesian estimation of the generated torque for a given burst duration
 
-Figure 3(D)-(F) shows the predictive distributions for data of a new animal using the Bayesian posterior distribution for the six models. The results were obtained with PWM bursts at 2.0 V voltage, 50 Hz frequency, and 30% duty ratio. The results show that the hierarchical models (model 1–2 and model 2–2) for the β~ parameter can successfully and adequately capture the range of experimental results on (D) protractor, (E) retractor, and (F) levator torques for all animals. This suggests that, compared with other models, the hierarchical models can appropriately account for inter-individual variation of muscle properties for new unknown animals. Figure 4 depicts the distributions predicted by the linear hierarchical model (model 1–2) for each individual by overlapping the experimental data shown in Figure 2.
+Figure 3(D)-(F) shows the predictive distributions for data of a new animal using the Bayesian posterior distribution for the six models. The results were obtained with PWM bursts at 2.0 V voltage, 50 Hz frequency, and 30% duty ratio. The results show that the hierarchical models (model 1–2 and model 2–2) for the $\beta~$ parameter can successfully and adequately capture the range of experimental results on (D) protractor, (E) retractor, and (F) levator torques for all animals. This suggests that, compared with other models, the hierarchical models can appropriately account for inter-individual variation of muscle properties for new unknown animals. Figure 4 depicts the distributions predicted by the linear hierarchical model (model 1–2) for each individual by overlapping the experimental data shown in Figure 2.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85275/elife-85275-fig4-v1.jpg)
 
-**Figure 4.:** A), retractor (B), and levator (C) stimulation experiments with PWM parameters, 2.0 V, 50 Hz, and 30% duty ratio. gives the number of stimulations for each animal. The color legend indicates the order of the stimulations: blue (1) to yellow (n). In each panel, the violet shading indicates the probability density of the predictive distribution. The green lines represent twenty samples from the posterior distribution in decreasing order of probability density. The results demonstrate that the linear hierarchical model had an accurate predictive distribution in the range up to 500ms. Source code and data are available on Dryad (Figure3-5.zip, nhttps://doi.org/10.5061/dryad.wpzgmsbsw).
+**Figure 4.:** $n$ gives the number of stimulations for each animal. The color legend indicates the order of the stimulations: blue (1) to yellow ($n$). In each panel, the violet shading indicates the probability density of the predictive distribution. The green lines represent twenty samples from the posterior distribution in decreasing order of probability density. The results demonstrate that the linear hierarchical model had an accurate predictive distribution in the range up to 500ms. Source code and data are available on Dryad (Figure3-5.zip, https://doi.org/10.5061/dryad.wpzgmsbsw).
 
-## Effect of an individual animal and applied voltage on muscle properties
+### Effect of an individual animal and applied voltage on muscle properties
 
-Figure 5 presents the variations in the muscle characteristic parameters β and γ in response to changes in the applied voltage. In the voltage-change experiments, we followed a specific order of voltage application, gradually increasing from 1 V to 4 V, for each individual. Furthermore, we confirmed that applying voltages ranging between 1 and 4 V did not induce fatigue. Table 1 summarizes the number of electrical stimuli administered to each muscle in each individual. We determined the changes in β and γ with respect to the applied voltage by analyzing the experimental results using the six Bayesian models.
+Figure 5 presents the variations in the muscle characteristic parameters $\beta$ and $\gamma$ in response to changes in the applied voltage. In the voltage-change experiments, we followed a specific order of voltage application, gradually increasing from 1 V to 4 V, for each individual. Furthermore, we confirmed that applying voltages ranging between 1 and 4 V did not induce fatigue. Table 1 summarizes the number of electrical stimuli administered to each muscle in each individual. We determined the changes in $\beta$ and $\gamma$ with respect to the applied voltage by analyzing the experimental results using the six Bayesian models.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/85275/elife-85275-fig5-v1.jpg)
 
-**Figure 5.:** A), (B), and (C) represent the estimation for  for the applied voltage varied from 1.0 to 4.0 V for the six models.β(A) and (D), (B) and (E), and (C) and (F) illustrate the protractor, retractor, and levator stimulations, respectively. In (A) to (C), the upper and lower panels show non-hierarchical (1-1, 2-1, 2-3) and hierarchical (1-2, 2-2, 2-4) models for , respectively. The right graphs (βD), (E), and (F) represent the estimation for  in applied voltage changes. In (γD) to (F), the left panel shows linear models (, 1–1, 1–2); the middle and right panels illustrate non-hierarchical (2-1, 2-2), and hierarchical (2-3, 2-4) models for γ=1, respectively. For hierarchical models (1-2, 2-2, 2-3, 2-4), the plot includes thirty samples from the posterior distribution in decreasing order of probability density, showing inter-individual variation. Source code and data are available on Dryad (Figure3-5.zip, γhttps://doi.org/10.5061/dryad.wpzgmsbsw).
+**Figure 5.:** Dependence of muscle property parameters on the applied voltage and individual animals in the six models: The left graphs (A), (B), and (C) represent the estimation for $\beta$ for the applied voltage varied from 1.0 to 4.0 V for the six models.(A) and (D), (B) and (E), and (C) and (F) illustrate the protractor, retractor, and levator stimulations, respectively. In (A) to (C), the upper and lower panels show non-hierarchical (1-1, 2-1, 2-3) and hierarchical (1-2, 2-2, 2-4) models for $\beta$, respectively. The right graphs (D), (E), and (F) represent the estimation for $\gamma$ in applied voltage changes. In (D) to (F), the left panel shows linear models ($\gamma=1$, 1–1, 1–2); the middle and right panels illustrate non-hierarchical (2-1, 2-2), and hierarchical (2-3, 2-4) models for $\gamma$, respectively. For hierarchical models (1-2, 2-2, 2-3, 2-4), the plot includes thirty samples from the posterior distribution in decreasing order of probability density, showing inter-individual variation. Source code and data are available on Dryad (Figure3-5.zip, https://doi.org/10.5061/dryad.wpzgmsbsw).
 
-The results indicate the following three points: (1) β varied with the applied voltage, and there exists an optimal voltage that maximizes β; (2) except for non-hierarchical nonlinear models (models 2–1 and 2–3), γ has a low dependence on the applied voltage; and (3) β is strongly subject to inter-individual variation (large variability), whereas γ is affected much less.
+**Table 1.**
+ List of Stick insects used in the stimulation experiments for each muscle.Animal ** denotes the identification number of the stick insects. We analyzed 20 animal data from ‘Animal 01’ to ‘Animal 22’ except for ‘12’ and ‘16’. Due to experimental failures and time limitations, we could not obtain stimulation data for all three muscles from the same animal on the same day. Therefore, we conducted experiments to collect data for ten animals ($N=10$) for each muscle through experiments using 20 animals.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Protractor</th>
+      <th>1,2,3,4 V</th>
+      <th>Retractor</th>
+      <th>1,2,3,4 V</th>
+      <th>Levator</th>
+      <th>1,2,3,4 V</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2018.8.21.</td>
+      <td>Animal 01</td>
+      <td>50,49,60,50</td>
+      <td>Animal 01</td>
+      <td>60,65,55,72</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2018.8.22.</td>
+      <td>Animal 02</td>
+      <td>49,55,51,40</td>
+      <td>Animal 02</td>
+      <td>55,68,58,65</td>
+      <td>Animal 02</td>
+      <td>37,68,67,70</td>
+    </tr>
+    <tr>
+      <td>2018.8.27.</td>
+      <td>Animal 03</td>
+      <td>60,77,91,72</td>
+      <td>Animal 03</td>
+      <td>94,81,63,75</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2018.8.28.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Animal 04</td>
+      <td>74,69,80,77</td>
+    </tr>
+    <tr>
+      <td>2018.8.30.</td>
+      <td>Animal 05</td>
+      <td>67,74,79,79</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2018.8.31.</td>
+      <td></td>
+      <td></td>
+      <td>Animal 06</td>
+      <td>75,86,76,76</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2018.9.03.</td>
+      <td>Animal 07</td>
+      <td>81,79,74,78</td>
+      <td>Animal 07</td>
+      <td>82,77,81,75</td>
+      <td>Animal 07</td>
+      <td>75,75,75,75</td>
+    </tr>
+    <tr>
+      <td>2018.9.04.</td>
+      <td></td>
+      <td></td>
+      <td>Animal 08</td>
+      <td>75,75,79,75</td>
+      <td>Animal 08</td>
+      <td>75,71,77,84</td>
+    </tr>
+    <tr>
+      <td>2018.9.05.</td>
+      <td>Animal 10</td>
+      <td>74,74,74,75</td>
+      <td></td>
+      <td></td>
+      <td>Animal 09</td>
+      <td>75,95,75,75</td>
+    </tr>
+    <tr>
+      <td>2018.9.19.</td>
+      <td></td>
+      <td></td>
+      <td>Animal 13</td>
+      <td>62,60,70,69</td>
+      <td>Animal 11</td>
+      <td>50,50,50,50</td>
+    </tr>
+    <tr>
+      <td>2018.9.20.</td>
+      <td>Animal 14</td>
+      <td>59,59,60,59</td>
+      <td>Animal 14</td>
+      <td>60,60,60,60</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2018.9.21.</td>
+      <td>Animal 15</td>
+      <td>59,59,59,59</td>
+      <td></td>
+      <td></td>
+      <td>Animal 15</td>
+      <td>61,60,60,51</td>
+    </tr>
+    <tr>
+      <td>2018.9.23.</td>
+      <td>Animal 17</td>
+      <td>59,59,60,69</td>
+      <td></td>
+      <td></td>
+      <td>Animal 17</td>
+      <td>59,61,60,61</td>
+    </tr>
+    <tr>
+      <td>2018.9.24.</td>
+      <td></td>
+      <td></td>
+      <td>Animal 19</td>
+      <td>61,61,61,60</td>
+      <td>Animal 18</td>
+      <td>60,60,59,66</td>
+    </tr>
+    <tr>
+      <td>2018.9.25.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Animal 20</td>
+      <td>62,60,70,60</td>
+    </tr>
+    <tr>
+      <td>2018.9.26.</td>
+      <td>Animal 21</td>
+      <td>59,59,60,59</td>
+      <td>Animal 22</td>
+      <td>60,60,60,60</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>N=10</td>
+      <td></td>
+      <td>N=10</td>
+      <td></td>
+      <td>N=10</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+The results indicate the following three points: (1) $\beta$ varied with the applied voltage, and there exists an optimal voltage that maximizes $\beta$; (2) except for non-hierarchical nonlinear models (models 2–1 and 2–3), $\gamma$ has a low dependence on the applied voltage; and (3) $\beta$ is strongly subject to inter-individual variation (large variability), whereas $\gamma$ is affected much less.
 
 ## Discussion
 
-In this study, we investigated externally controlled joint torques induced by external electrical stimulation of one out of three leg muscles (protractor, retractor, and levator) in the stick insect Carausius morosus. For a given parameter set for PWM burst stimulation, we found a piecewise linear relationship between the burst duration and generated joint torque. Linearity holds for a burst duration up to 500ms. For a more detailed analysis of the joint torques generated by leg muscles, we used Bayesian statistical analysis and modeling to account for inter-individual variation. A comparison of the six models (with combinations of linear, nonlinear, non-hierarchical, and hierarchical models) showed that the two models that include inter-individual variation of slope parameter β performed best. Models 1–2 and 2–2 provide the most accurate predictions of the posterior predictive distribution.
+In this study, we investigated externally controlled joint torques induced by external electrical stimulation of one out of three leg muscles (protractor, retractor, and levator) in the stick insect Carausius morosus. For a given parameter set for PWM burst stimulation, we found a piecewise linear relationship between the burst duration and generated joint torque. Linearity holds for a burst duration up to 500ms. For a more detailed analysis of the joint torques generated by leg muscles, we used Bayesian statistical analysis and modeling to account for inter-individual variation. A comparison of the six models (with combinations of linear, nonlinear, non-hierarchical, and hierarchical models) showed that the two models that include inter-individual variation of slope parameter $\beta$ performed best. Models 1–2 and 2–2 provide the most accurate predictions of the posterior predictive distribution.
 
-The exponent γ is a macroscopic property of the generated joint torque, that is the degree of non-linearity of the stimulus-torque characteristic; it is linear when γ=1. Conversely, slope parameter β defines the rate of increase of the generated torque. In a comparison of the prediction performance of models in Figure 3, the mathematical index WAIC revealed that the models 1–2 and 2–2, wherein only β was a hierarchical parameter, performed the best. Since only hierarchical parameters account for inter-individual variation, we conclude that β is strongly affected by individual differences, whereas γ is invariant among specimens. Thus, we found that the macroscopic properties of leg muscles are common to all individuals, whereas individuals differ in the slope β, that is the rate by which the three types of leg muscles respond to electrical stimulation. Furthermore, as shown in Figure 5, we found that β was highly affected by the applied voltage, whereas the exponent γ was close to unity, largely independent of the applied voltage, indicating that the macroscopic properties of leg muscles were invariant to the applied voltage. We conclude that linearity was an invariant feature of the stimulus-torque characteristic, whereas the slope of this characteristic varies among individual stick insects and with the applied voltage. These results are in line with those of existing studies on the properties of myogenic forces in other insect species (Cao et al., 2014; Blümel et al., 2012a; Harischandra et al., 2019): The generated torque depends considerably less on the PWM voltage and frequency (Blümel et al., 2012a; Harischandra et al., 2019) than on the burst duration, suggesting that the total number of subsequent input pulses is important. This is indeed expected for a slow insect muscle (Blümel et al., 2012a) that essentially ‘counts’ incoming spikes within a given time window. Compared to the nonlinear properties of muscle, we demonstrated that our monitoring of torques in an intact animal resulted in a linear characteristic (for intervals up to 500ms) that would not be expected from isometric force measurements of isolated muscles. Furthermore, changing the PWM frequency was found to be comparable to changing the number of spikes over a given period, whereas changing the duty ratio was found to be comparable to varying the average voltage over a given period (see Appendix 1—figures 1 and 2). Therefore, from both technical and cyborg control viewpoints, the control of burst duration provides beneficial insights into feasibility.
+The exponent $\gamma$ is a macroscopic property of the generated joint torque, that is the degree of non-linearity of the stimulus-torque characteristic; it is linear when $\gamma=1$. Conversely, slope parameter $\beta$ defines the rate of increase of the generated torque. In a comparison of the prediction performance of models in Figure 3, the mathematical index WAIC revealed that the models 1–2 and 2–2, wherein only $\beta$ was a hierarchical parameter, performed the best. Since only hierarchical parameters account for inter-individual variation, we conclude that $\beta$ is strongly affected by individual differences, whereas $\gamma$ is invariant among specimens. Thus, we found that the macroscopic properties of leg muscles are common to all individuals, whereas individuals differ in the slope $\beta$, that is the rate by which the three types of leg muscles respond to electrical stimulation. Furthermore, as shown in Figure 5, we found that $\beta$ was highly affected by the applied voltage, whereas the exponent $\gamma$ was close to unity, largely independent of the applied voltage, indicating that the macroscopic properties of leg muscles were invariant to the applied voltage. We conclude that linearity was an invariant feature of the stimulus-torque characteristic, whereas the slope of this characteristic varies among individual stick insects and with the applied voltage. These results are in line with those of existing studies on the properties of myogenic forces in other insect species (Cao et al., 2014; Blümel et al., 2012a; Harischandra et al., 2019): The generated torque depends considerably less on the PWM voltage and frequency (Blümel et al., 2012a; Harischandra et al., 2019) than on the burst duration, suggesting that the total number of subsequent input pulses is important. This is indeed expected for a slow insect muscle (Blümel et al., 2012a) that essentially ‘counts’ incoming spikes within a given time window. Compared to the nonlinear properties of muscle, we demonstrated that our monitoring of torques in an intact animal resulted in a linear characteristic (for intervals up to 500ms) that would not be expected from isometric force measurements of isolated muscles. Furthermore, changing the PWM frequency was found to be comparable to changing the number of spikes over a given period, whereas changing the duty ratio was found to be comparable to varying the average voltage over a given period (see Appendix 1—figures 1 and 2). Therefore, from both technical and cyborg control viewpoints, the control of burst duration provides beneficial insights into feasibility.
 
-The comparison of the linear model (model 1–2) with the nonlinear model (model 2–2) using the WAIC for all conditions (muscle type and applied voltage) resulted in lower values for the linear model. Models with lower WAIC can generate predictive distributions closer to the true distribution while using fewer parameters (Watanabe, 2018), suggesting that the experimental results obtained in this study can be adequately explained using a linear hierarchical Bayesian model (1-2). This model renders it useful for predicting the generated torque for each new animal in real-time during an experiment. Specifically, by assuming the linear hierarchical Bayesian model, we can measure responses to very few PWM stimulus bursts and estimate β for the current individual’s stimulus-torque characteristic. This allows an experimenter to acquire an appropriate muscle model of an unknown animal in a short time without having to use potentially time-consuming machine learning methods, such as deep learning algorithms. Moreover, the properties were linear for stimulus burst durations up to 500ms. This linearity region corresponds to the stance and swing phase durations of medium-speed to fastwalking stick insects of the species Carausius morosus (Dürr et al., 2018). The magnitudes of the joint torques generated by the protractor, retractor, and levator were comparable to those for resisted movement during stick-insect walking, for example coxa-trochanter joint depression during stance (Dallmann et al., 2016). This suggests that the estimated stimulus-torque characteristic captures the natural dynamic properties of leg muscles during walking in terms of both the duration of excitation and maximum torque. However, the hierarchical nonlinear model (model 2–2) would be more appropriate for estimating properties related to longer time scales, such as those associated with the complete range of muscle excitation. Nevertheless, we emphasize once again that a key contribution of this study lies in demonstrating, based on experimental data, that the muscle property γ across the complete excitation range exhibits inter-individual variations and is independent of linear or nonlinear properties; hence, the weight β^ assigned to these properties represents individual differences.
+The comparison of the linear model (model 1–2) with the nonlinear model (model 2–2) using the WAIC for all conditions (muscle type and applied voltage) resulted in lower values for the linear model. Models with lower WAIC can generate predictive distributions closer to the true distribution while using fewer parameters (Watanabe, 2018), suggesting that the experimental results obtained in this study can be adequately explained using a linear hierarchical Bayesian model (1-2). This model renders it useful for predicting the generated torque for each new animal in real-time during an experiment. Specifically, by assuming the linear hierarchical Bayesian model, we can measure responses to very few PWM stimulus bursts and estimate $\beta$ for the current individual’s stimulus-torque characteristic. This allows an experimenter to acquire an appropriate muscle model of an unknown animal in a short time without having to use potentially time-consuming machine learning methods, such as deep learning algorithms. Moreover, the properties were linear for stimulus burst durations up to 500ms. This linearity region corresponds to the stance and swing phase durations of medium-speed to fastwalking stick insects of the species Carausius morosus (Dürr et al., 2018). The magnitudes of the joint torques generated by the protractor, retractor, and levator were comparable to those for resisted movement during stick-insect walking, for example coxa-trochanter joint depression during stance (Dallmann et al., 2016). This suggests that the estimated stimulus-torque characteristic captures the natural dynamic properties of leg muscles during walking in terms of both the duration of excitation and maximum torque. However, the hierarchical nonlinear model (model 2–2) would be more appropriate for estimating properties related to longer time scales, such as those associated with the complete range of muscle excitation. Nevertheless, we emphasize once again that a key contribution of this study lies in demonstrating, based on experimental data, that the muscle property $\gamma$ across the complete excitation range exhibits inter-individual variations and is independent of linear or nonlinear properties; hence, the weight $\beta^$ assigned to these properties represents individual differences.
 
 This study takes a first but important step towards highly precise insect cyborg control. In previous studies, we defined Motion Hacking (Owaki et al., 2019; Owaki and Dürr, 2022) as a technique for controlling insect leg movements through external electrical stimulation, while retaining the insect’s own nervous system and sensorimotor loops. This approach requires a collaborative effort of engineering and biology in order to elucidate how adaptive walking ability of insects may be exploited for biohybrid control of motor flexibility. The Motion Hacking (Owaki et al., 2019; Owaki and Dürr, 2022) method strives to observe the adaptation process in the insect’s own sensorimotor system as leg movements are intentionally controlled by a human operator, so as to reveal hidden mechanisms underlying natural locomotion. Thus far, research on insect cyborg control has addressed aspects of flight control (Sato, 2009; Sato and Maharbiz, 2010; Sato et al., 2015; Kosaka et al., 2021; Sane et al., 2007; Bozkurt et al., 2009; Hinterwirth et al., 2012), gait control (Cao et al., 2016; Vo Doan et al., 2018; Nguyen et al., 2020; Ando and Kanzaki, 2017; Sanchez et al., 2015), and controlling jellyfish propulsion (Xu and Dabiri, 2020a; Xu et al., 2020b; Xu et al., 2020c). In contrast to our present study, the main objective of the mentioned studies was to convert target animals into cyborgs, with little examination of the control mechanisms and/or muscle properties involved. Here, we used PWM pulse bursts to mimic motor neuron commands during insect locomotion, and selected key muscles to estimate stimulus-torque characteristics reliably and in very short time. Then, we used Bayesian statistical modeling to tell which parameters were subject to inter-individual variation and which were not. Our finding of linear characteristics with inter-individual variation of slope show compellingly how a systematic engineering intervention to an otherwise intact animal motor system can yield a simple, technically exploitable description of motor system properties. We argue that this description could not have been obtained by methods addressing isolated neural circuits or partial anatomical structures, but required the physical intactness of the natural system.
 
@@ -126,29 +353,29 @@ Finally, so far we have not fully investigated the effects of the electrical mus
 
 ## Materials and methods
 
-## Animals
+### Animals
 
-We tested 20 adult female Carausius morosus from our laboratory colony at Bielefeld University in 2018. The animals were raised under a 12 hr:12 hr light:dark cycle at a temperature of 23.9 ±1.3 °C (mean ± S.D). All experiments were conducted at room temperature (20–24 °C). Table 1 lists the stick insects used in the electrical stimulation experiments. Owing to a combination of experimental failures and time constraints, we could not obtain stimulation data for all three muscles from the same animal on a single day. Therefore, we collected data from 10 animals (N=10) for each muscle through experiments with 20 animals. Joint torques were measured with custom-built force sensors with strain gauges. Prior to the experiments, the measured force [mN] was calibrated from the force-sensor value [V] with weights of known mass (0.2–5 g). Two small insect pins attached to the tip of the force transducer held the middle part of the femur of the middle leg (Figure 1A right). The length between the ThC or CTr joints and the attachment point at the femur was measured and used as the moment arm for the calculation of torque.
+We tested 20 adult female Carausius morosus from our laboratory colony at Bielefeld University in 2018. The animals were raised under a 12 hr:12 hr light:dark cycle at a temperature of 23.9 ±1.3 °C (mean ± S.D). All experiments were conducted at room temperature (20–24 °C). Table 1 lists the stick insects used in the electrical stimulation experiments. Owing to a combination of experimental failures and time constraints, we could not obtain stimulation data for all three muscles from the same animal on a single day. Therefore, we collected data from 10 animals ($N=10$) for each muscle through experiments with 20 animals. Joint torques were measured with custom-built force sensors with strain gauges. Prior to the experiments, the measured force [mN] was calibrated from the force-sensor value [V] with weights of known mass (0.2–5 g). Two small insect pins attached to the tip of the force transducer held the middle part of the femur of the middle leg (Figure 1A right). The length between the ThC or CTr joints and the attachment point at the femur was measured and used as the moment arm for the calculation of torque.
 
-## Electrical stimulation
+### Electrical stimulation
 
 We developed a custom-built electrical stimulator for stimulating muscles (Figure 1A left). An extension circuit board was designed for Raspberry Pi 3 B+ (Raspberry Pi Foundation), including isolated 8-channel PWM signal outputs. The parameters of the PWM signals, for example, frequency (1–120 Hz) and duty ratio (0 to 100%), were changed using a Raspberry Pi microprocessor. The amplitude of the output voltage (0–9 V) was changed using variable resistors on the circuit board, which enabled the investigation of the effects of these parameters on torque generation due to muscle stimulation. In this study, we systematically analyzed the joint torques generated by muscle contraction as induced by bursts of PWM pulses. To do so, we varied the amplitude [V], frequency [Hz] and duty ratio [%] of the PWM-signal, and identified the combinations that most effectively and repeatedly produced torque.
 
-For one trial of the stimulation experiments, the frequency, duty ratio, and amplitude (voltage) of the PWM signals were not changed, but the burst duration Ti of the signals was changed (Figure 1C top). Owing to the slow activation dynamics of an insect muscle, burst duration is one of two key parameters for controlling isometric muscle-contraction force because the muscle essentially acts as a second-order low-pass filter (Harischandra et al., 2019). The pulse frequency is the other key parameter, which can be held constant because burst duration alone is sufficient to effectively control joint torques in the range of 0–1.0 [s].
+For one trial of the stimulation experiments, the frequency, duty ratio, and amplitude (voltage) of the PWM signals were not changed, but the burst duration $T_{i}$ of the signals was changed (Figure 1C top). Owing to the slow activation dynamics of an insect muscle, burst duration is one of two key parameters for controlling isometric muscle-contraction force because the muscle essentially acts as a second-order low-pass filter (Harischandra et al., 2019). The pulse frequency is the other key parameter, which can be held constant because burst duration alone is sufficient to effectively control joint torques in the range of 0–1.0 [s].
 
-## Electrode implementation
+### Electrode implementation
 
 A pair of stimulation electrodes was implanted into each muscle through two small holes in the cuticle. Holes were pierced using an insect pin, and wires were fixed with dental glue (Figure 1B). The stimulation electrodes were thin silver wires (A-M Systems, diameter = 127 µm, without insulation; 178 µm with Teflon insulation). The insulation at the end of the silver wire was removed, and the wires were implanted. The other end of the stimulation electrode was connected to the output of the electrical stimulator. The correctness of the electrode implantation was verified through triggered resistance reflexes, which are responses to imposed movements of the ThC and CTr joints for the corresponding muscles.
 
-## Data collection
+### Data collection
 
-We determined the parameter set with a frequency of 50 Hz and a duty ratio of 30%, which would allow continuous and effective torque generation in a pre-experiment. We performed electrical stimulation experiments in the following order: (i) first, we selected one of the three muscles (protractor, retractor, levator) to be stimulated in each stick insect and (ii) performed electrical stimulation of the selected muscle more than 50 times at 1 V (50 Hz, 30%). The duration of the electrical stimulation, Ti, was set manually and randomly; this was followed by a (iii) 3-min-resting-period to reduce the effect of muscle fatigue (the resting period was determined in the pre-experiment). (iv) We then performed electrical stimulations at 2 V, 3 V, and 4 V for more than 50 times each; note that each stimulation was preceded by a 3-min-resting-period. (v) A voltage from 1 to 4 V that effectively generated the torque for the corresponding muscle was selected. (vi) Following this selection, we conducted electrical stimulation experiments for each combination of frequency (30 Hz, 50 Hz, 70 Hz, 90 Hz, and 110 Hz) and duty ratio (10%, 30%, 50%) for more than 50 times, with a resting time of 3 min between each condition. (vii) The next muscles were selected depending on the condition of the stick insect and within the time constraints, and we repeated steps (ii)–(vi) and recorded the data. (viii) The individuals were changed (on another day), and steps (i)–(vii) were repeated. We collected 10 individuals (N=10 in Table 1) for each muscle using this procedure. Notably, even after such a large number of electrical stimulations of the muscles, we did not observe any significant biological damage to the stick insect nor any fatigue or warm-up effects.
+We determined the parameter set with a frequency of 50 Hz and a duty ratio of 30%, which would allow continuous and effective torque generation in a pre-experiment. We performed electrical stimulation experiments in the following order: (i) first, we selected one of the three muscles (protractor, retractor, levator) to be stimulated in each stick insect and (ii) performed electrical stimulation of the selected muscle more than 50 times at 1 V (50 Hz, 30%). The duration of the electrical stimulation, $T_{i}$, was set manually and randomly; this was followed by a (iii) 3-min-resting-period to reduce the effect of muscle fatigue (the resting period was determined in the pre-experiment). (iv) We then performed electrical stimulations at 2 V, 3 V, and 4 V for more than 50 times each; note that each stimulation was preceded by a 3-min-resting-period. (v) A voltage from 1 to 4 V that effectively generated the torque for the corresponding muscle was selected. (vi) Following this selection, we conducted electrical stimulation experiments for each combination of frequency (30 Hz, 50 Hz, 70 Hz, 90 Hz, and 110 Hz) and duty ratio (10%, 30%, 50%) for more than 50 times, with a resting time of 3 min between each condition. (vii) The next muscles were selected depending on the condition of the stick insect and within the time constraints, and we repeated steps (ii)–(vi) and recorded the data. (viii) The individuals were changed (on another day), and steps (i)–(vii) were repeated. We collected 10 individuals ($N=10$ in Table 1) for each muscle using this procedure. Notably, even after such a large number of electrical stimulations of the muscles, we did not observe any significant biological damage to the stick insect nor any fatigue or warm-up effects.
 
-## Data analysis
+### Data analysis
 
-To investigate the dependence of externally induced joint torques by electrostimulating one out of the three leg muscles, we measured the force generated at the attachment point and multiplied it with the known moment arm as follows: (1) For different burst duration Ti we estimated peak-to-peak sensor values Sp⁢2⁢p⁢(i) [V] (Figure 1C left). (2) Applying the conversion factor obtained from the previous calibration, we obtained peak-to-peak force change [mN] in response to stimulation. (3) The force was then multiplied with the measured moment arm [mm] to obtain the joint torque τi [µNm] (Figure 1C right).
+To investigate the dependence of externally induced joint torques by electrostimulating one out of the three leg muscles, we measured the force generated at the attachment point and multiplied it with the known moment arm as follows: (1) For different burst duration $T_{i}$ we estimated peak-to-peak sensor values $S_{p⁢2⁢p}⁢(i)$ [V] (Figure 1C left). (2) Applying the conversion factor obtained from the previous calibration, we obtained peak-to-peak force change [mN] in response to stimulation. (3) The force was then multiplied with the measured moment arm [mm] to obtain the joint torque $\tau_{i}$ [µNm] (Figure 1C right).
 
-## Widely applied information criterion (WAIC)
+### Widely applied information criterion (WAIC)
 
 We compared the predictive performances of the formulated models using the mathematical index WAIC (Watanabe, 2018Watanabe, 2005; Watanabe, 2010a; Watanabe, 2010b). The WAIC is a measure of the degree to which an estimate of the predictive distribution is accurate relative to the true distribution (Watanabe, 2018). Essentially, it is based on the difference between the information conveyed by the mean and that conveyed by the variance. This difference is negative if the term corresponding to the mean exceeds that corresponding to the variance. The smaller (or more negative) the WAIC index, the higher the predictive value of the model variant.
 

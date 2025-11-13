@@ -21,15 +21,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03f9nc143 Center of Life Sciences, Skolkovo Institute of Science and Technology Moscow Russian Federation
+1. Center of Life Sciences, Skolkovo Institute of Science and Technology Moscow Russian Federation ([ROR:03f9nc143](https://ror.org/03f9nc143))
 2. Shemyakin-Ovchinnikov Institute of Bioorganic Chemistry RAS Moscow Russian Federation
-3. https://ror.org/018159086 Institute of Translational Medicine, Pirogov Russian National Research Medical University Moscow Russian Federation
-4. https://ror.org/010pmpe69 Department of Molecular Biology, Lomonosov Moscow State University Moscow Russian Federation
-5. https://ror.org/00apdsa62 Privolzhsky Research Medical University Nizhny Novgorod Russian Federation
-6. https://ror.org/009w6v212 Nizhny Novgorod Regional Clinical Cancer Hospital Nizhny Novgorod Russian Federation
+3. Institute of Translational Medicine, Pirogov Russian National Research Medical University Moscow Russian Federation ([ROR:018159086](https://ror.org/018159086))
+4. Department of Molecular Biology, Lomonosov Moscow State University Moscow Russian Federation ([ROR:010pmpe69](https://ror.org/010pmpe69))
+5. Privolzhsky Research Medical University Nizhny Novgorod Russian Federation ([ROR:00apdsa62](https://ror.org/00apdsa62))
+6. Nizhny Novgorod Regional Clinical Cancer Hospital Nizhny Novgorod Russian Federation ([ROR:009w6v212](https://ror.org/009w6v212))
 7. Volga Regional Medical Centre Under Federal Medical and Biological Agency Nizhny Novgorod Russian Federation
-8. https://ror.org/010pmpe69 Department of Bioengineering and Bioinformatics, Lomonosov Moscow State University Moscow Russian Federation
-9. https://ror.org/01p8ehb87 Federal State Budgetary Institution "N.N. Blokhin National Medical Research Center of Oncology" of the Ministry of Health of Russian Federation Moscow Russian Federation
+8. Department of Bioengineering and Bioinformatics, Lomonosov Moscow State University Moscow Russian Federation ([ROR:010pmpe69](https://ror.org/010pmpe69))
+9. Federal State Budgetary Institution "N.N. Blokhin National Medical Research Center of Oncology" of the Ministry of Health of Russian Federation Moscow Russian Federation ([ROR:01p8ehb87](https://ror.org/01p8ehb87))
 
 † Corresponding author
 
@@ -57,7 +57,7 @@ Therefore, in the current study, we aimed to comprehensively and systematically 
 
 ## Results
 
-## Experimental and computational study design
+### Experimental and computational study design
 
 To systematically study the relationships between BCR repertoires in tumors and normal peripheral compartments, we performed RNA-based targeted BCR repertoire analysis from four tissue types: tumor (tum), corresponding normal tissue (norm), tumor-draining LNs, and peripheral blood mononuclear cells (PBMC), of 14 cancer patients (melanoma, n=6; lung cancer, n=4; and colorectal cancer, n=4). To account for spatial heterogeneity, we obtained three fragments of tumor tissue per patient. For draining LNs, we either dissected them into three separate pieces to study intra-LN spatial heterogeneity (lung cancer and melanoma, parts of LNs designated as LN11, LN12, LN13), or, where available, obtained three separate draining LNs (designated as LN1, LN2, LN3; Figure 1A). All fragments were homogenized separately into single-cell suspensions. To account for sampling noise at the level of individual cells, we obtained two replicate samples from each fragment after homogenization. As shown on Figure 1B, repertoires obtained from replicates at the level of cell suspension (left panel) show much stronger clonotype frequency correlation compared to repertoires obtained from separate tumor fragments (right panel). However, to determine the level of sampling noise for each individual clonotype, and therefore confidently identify it as significantly expanded in one sample over the other, replicates at the level of cell suspension are strictly required.
 
@@ -69,39 +69,51 @@ BCR repertoires libraries were obtained using the 5’-RACE (Rapid Amplification
 
 For BCR repertoire reconstruction from sequencing data, we first performed unique molecular identifier (UMI) extraction and error correction (UMI threshold = 3 for 5`RACE and 4 for Ig Multiplex libraries). Then, we used MIXCR (Bolotin et al., 2015) software to assemble reads into clonotypes, determine germline V, D, and J genes, isotypes, and find the boundaries of target regions, such as CDR-H3. Only UMI counts, and not read counts, were used for quantitative analysis. Clonotypes derived from only one UMI were excluded from the analysis of individual clonotype features but were used to analyze clonal lineages and hypermutation phylogeny, where sample size was crucial. Samples with 50 or less clonotypes left after preprocessing were excluded from the analysis.
 
-## Bulk BCR repertoires are dominated by clonotypes derived from plasma cells
+### Bulk BCR repertoires are dominated by clonotypes derived from plasma cells
 
 Previously, correlation between BCR repertoire parameters and clinical outcomes in cancer patients was mostly described using bulk RNA-Seq data (Bolotin et al., 2017; Dyugay et al., 2022). BCR repertoires extracted from RNA-Seq data represent the most dominant BCR clonotypes in the sample. These clonotypes are expected to come from antibody-secreting plasma and plasmablast cells, which are known to have as much as 500-fold higher IGH expression compared to naive and memory cells (Tumeh et al., 2014). Therefore, it may be assumed that as we look at bulk tumor BCR repertoire properties and their correlation with clinical outcomes, we mostly see the influence of antibody-producing plasma cells. To directly address this question, we compared RNA-based BCR repertoires obtained from sorted plasma cells/plasmablasts and bulk cell suspensions in parallel from the same samples of PBMC, LN, and tumors from patients with ccp2 and ccp3. We found that the repertoire overlap between tissues, isotype composition, and clonal distribution found in BCR repertoires from bulk (unsorted) samples closely resembled those of sorted plasma cells (Figure 2A, B and C). One notable exception was the IgM proportion in tumors, which was significantly higher in sorted plasma cells than in unsorted TIL-B (Figure 2B). This indicates a significant underrepresentation of IgM-producing plasma cells in bulk tumor BCR repertoires compared to other tissues, which in turn may indicate a lower expression of BCRs in tumor-infiltrating IgM +plasma cells.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/89506/elife-89506-fig2-v1.jpg)
 
-**Figure 2.:** A, B) or pooled patient data from colorectal cancer patients ccp2 and ccp3 (panel C).(A) Correlation plots, comparing PC and bulk frequencies of top 400 clonotypes in total tumor repertoire and isotypes A, G and M separately for colon cancer patient ccp2. Up to 47% of identical amino acid sequences were found. (B) Comparison of F2-overlaps for three tissue repertoires’ pairs (LN and PBMC, LN and tumor, tumor and PBMC). No significant difference was found between bulk and PC-sorted samples (Wilcoxon signed-rank test). (C) Comparison between bulk and PC IgM proportions in lymph node, tumor and PBMC samples, the share of IgM in tumor was significantly higher in PC samples (p=0.05, Mann-Whitney test).
+**Figure 2.:** (A) Correlation plots, comparing PC and bulk frequencies of top 400 clonotypes in total tumor repertoire and isotypes A, G and M separately for colon cancer patient ccp2. Up to 47% of identical amino acid sequences were found. (B) Comparison of F2-overlaps for three tissue repertoires’ pairs (LN and PBMC, LN and tumor, tumor and PBMC). No significant difference was found between bulk and PC-sorted samples (Wilcoxon signed-rank test). (C) Comparison between bulk and PC IgM proportions in lymph node, tumor and PBMC samples, the share of IgM in tumor was significantly higher in PC samples (p=0.05, Mann-Whitney test).
 
 In the following experiments, we used bulk RNA-based BCR profiling with the understanding that the dominant clonotypes and B cell lineages reproducibly represented in biological replicates reflect the presence of clonally expanded plasma cells, plasmablasts, and the most expanded memory B cell clones. In other words, the RNA-based approach mainly revealed the repertoire of the most functionally active B-cell lineages.
 
-## Tumor/non-tumor repertoire overlap and isotype composition
+### Tumor/non-tumor repertoire overlap and isotype composition
 
 First, we characterized the relative similarity of IGH repertoires derived from tumors, tumor-draining LNs, and PBMC on the individual CDR-H3 clonotype level. We define clonotype as an instance with an identical CDR-H3 nucleotide sequence and identical V- and J- segment attribution (isotype attribution may be different). Unlike other authors, here we do not pool together similar CDR-H3 sequences to account for hypermutation. (Hypermutation analysis is done separately and defined as clonal group analysis.)
 
 As overlap metrics are dependent on overall repertoire richness, we normalized the comparison using the same number of top most frequent clonotypes of each isotype from each sample (N=109). Repertoire data for each sample were split according to the immunoglobulin isotype, and the F2 metric was calculated for each isotype separately and plotted as an individual point. We used the repertoire overlap metric F2 (Сlonotype-wise sum of geometric mean frequencies of overlapping clonotypes), which accounts for both the number and frequency of overlapping clonotypes (Figure 3A). As expected, significantly lower overlaps were observed between the IGH repertoires of peripheral blood and tumors compared to LN/tumor overlaps. The LN/PBMC overlap also tended to be lower, but the difference was not statistically significant. We also analyzed D metric (Fig. S1A, D metric), which represents the relative overlap diversity uninfluenced by clonotype frequency (Dij = dij/(di*dj), where dij is the number of clonotypes present in both samples, while di and dj are the diversities of samples i and j, respectively). The results for D metric indicate a similar trend to that of F2 metric. This observation allows us to conclude that tumor IGH repertoires are more similar to the repertoires of tumor-draining LNs than to those of peripheral blood, both if clonotype frequency is taken into account, and when it is not.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/89506/elife-89506-fig3-v1.jpg)
+
+**Figure 3.:** (A) - repertoire overlap between pairs of tissues, by F2 metric, repertoires split by immunoglobulin isotype, (N=6); (B) network representation of Ig repertoires from PBMC, tumor-draining LN, and tumor of mp3 patient (melanoma); individual clonotypes of the same origin (PBMC, tumors, or draining LN) are shown as bubbles connected with the edges to one anchor node. Clonotypes shared between tissues were connected with two or three edges to the corresponding anchor nodes and were located between them. The size of the bubbles represents the relative frequency of clonotypes within a sample, and the color represents the isotype. The relative distance between anchor nodes corresponded to the similarity of repertoires (the number of shared clonotypes). (C, D) Clonality of Ig repertoires in PBMC, draining LNs, and tumors of 14 cancer patients. This reflects the presence of clonal expansion. Calculated as in Tumeh et al., 2014: [1-normalized Shannon-Wiener index]; (C) total IG repertoire; (D) IgM repertoire; (E) LN/tumor overlap for IgA and IgG repertoires (N=7); (F) PBMC/tumor overlap for IgA and IgG repertoires (N=9); (G, H) isotype fraction correlation between PBMC and tumor repertoires (G, N=9), or between LN and tumor repertoires (H, N=7).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89506/elife-89506-fig3-figsupp1-v1.jpg)
+
 These results are corroborated by visualization at the individual patient level, using Cytoscape network visualization platform to visualize the structure of the repertoire overlap. As exemplified by melanoma patient mp3 (Figure 3B), the repertoire from the tumor is closely related to the tumor-draining LN repertoire, whereas the PBMC repertoire has very few overlapping clonotypes with both tumors and draining LNs. Overall, these analyses revealed that the extent of clonal exchange between tumors and PBMC was significantly lower than that between tumors and draining LNs. The frequencies of overlapping clonotypes were also more strongly correlated between tumors and draining LNs than between tumors and peripheral blood (Fig. S1A, R metric). The level of clonal exchange between tissues was dependent on isotype (Figure 3E and F). LN/tumor overlap was higher in the IgG repertoire (Figure 3E), whereas PBMC/tumor overlap was lower in the IgG repertoire (Figure 3F) than in the IgA repertoire. This suggests that tumor-infiltrating IgG-expressing B-cells (IgG-TI-Bs) avoid systemic circulation, whereas IgA-expressing tumor-infiltrating B-cells (IgA-TI-Bs) may be found in the peripheral blood with a higher probability. In addition, the tumor repertoire was significantly more clonal (clonality calculated as [1-normalized Shannon-Wiener index] Tumeh et al., 2014) than the PBMC or draining LN repertoire, both overall (Figure 3C) and separately for the IGHM repertoire (Figure 3D).
 
 We did not find a statistically significant difference in isotype composition between cancers in any of the studied tissues, with the exception of IgM percentage in melanoma tumors. In BCR repertoires from melanoma tumors, the total percentage of repertoire consisting of IgM clonotypes was significantly lower than that in other types of cancers (colorectal and lung; Fig. S1B). The isotype composition of non-tumor tissues correlated with the isotype composition of the tumor; this effect was less prominent in peripheral blood (R=0.42, p=0.028; Figure 3G) and more prominent for LN (R=0.74, p<0.01; Figure 3H).
 
-## CDR-H3 properties
+#### CDR-H3 properties
 
 Analysis of averaged CDR-H3 repertoire characteristics revealed increased CDR-H3 length in tumors compared to PBMC for the total repertoire (Figure 4A) and also in IgA and IgG repertoires separately (Fig. S2A, B), but this was not the case for IgM (Fig. S2C). In addition, the increase in CDR-H3 length in IgA repertoires from tumor-draining LNs compared to PBMC was statistically significant (Fig. S2A). Interestingly, the only significant difference we found when comparing CDR-H3 lengths between cancer types was reduced IgA CDR-H3 length in colorectal cancer, especially compared to melanoma (p=0.02; Figure 4B). This could reflect a generally more mature IgA repertoire in colon tissues owing to the previous history of interactions with microbiota (Benckert et al., 2011; Hapfelmeier et al., 2010). However, the relationship between this difference and tumor antigen specificity remains to be verified.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/89506/elife-89506-fig4-v1.jpg)
+
+**Figure 4.:** (A) Mean amino CDR-H3 length of top 100 most frequent clonotypes from tumor, lymph node and PBMC tissues irrespective of isotype CDR-H3 are on average significantly longer in tumor than PBMC for total repertoire (N=14, p<0.01, two-sided t-test, Bonferroni correction); (B) Comparison of mean amino acid CDR-H3 length of 100 most frequent clonotypes for colon, lung and melanoma cancer samples from, tumor. CDR-H3s of tumor-infiltrating clonotypes were shorter for colorectal cancer patients compared to melanoma in IgA repertoires (N=11, p=0.02); (C) Comparison of amino acid properties in the central region of CDR-H3, for total repertoire (C-left) or IGHG repertoire (C-right), all cancers (significantly increased - red, significantly decreased - blue) two-sided t-test, Bonferroni-Holm correction; (D) Comparison of amino acid properties in the central region of CDR-H3, for IGHM repertoire, lung cancer (significantly increased - red, significantly decreased - blue); (p<0.01, two-sided t-test, Bonferroni-Holm correction); (E) Average number of mutations relative to germline for tumor samples from different types of cancers, N=14.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89506/elife-89506-fig4-figsupp1-v1.jpg)
 
 To explore CDR-H3 physicochemical properties, we calculated the mean charge, hydropathy, predicted interaction strength, and Kidera factors 1–9 (kf1-kf9) for five central amino acids of the CDR-H3 region for the 100 most frequent clonotypes of each sample using VDJtools. Kidera factors are a set of scores which quantify physicochemical properties of protein sequences (Nakai et al., 1988). 188 physical properties of the 20 amino acids are encoded using dimension reduction techniques, to yield 9 factors which are used to quantitatively characterize physicochemical properties of amino acid sequences. Comparing between tissues, we found that kf4 value for the tumor repertoire was decreased compared to PBMC in the total repertoire, and kf5 was decreased in tumor vs. PBMC in the IgG repertoire (Figure 4C). In addition, kf6 value was decreased in the LN repertoire compared to PBMC. Kf4 inversely correlates with hydrophobicity, indicating a higher proportion of hydrophobic residues in BCR CDR-H3s from the tumor repertoire. Kf5 reflects a double-bend preference and has not been previously found to be significant in the context of antibody properties. Kf6 is a measure of partial specific volume; therefore, a lower kf6 value indicates less bulky amino acid residues in CDR-H3s from the LN repertoire. Between the tumor and normal tissue repertoires, the hydropathy value was lower in normal lung tissue, also indicating a higher proportion of hydrophobic residues in tumor-derived CDR-H3 repertoires (Figure 4D). According to Grimsholm et al., 2020, more mature B-cell subpopulations have higher mjenergy, disorder, kf4, kf6, and kf7 and lower CDR-H3 length, strength, volume, kf2, and kf3. Again, the mean CDR-H3 charge was negatively associated with specificity Rabia et al., 2018 and beta-sheet propensity was associated with antibody promiscuity (Laffy et al., 2017). Poly-reactive and self-reactive antibodies have, on average, longer CDR-H3s Prigent, 2016 with a higher charge Rabia et al., 2018 and net hydrophobicity (Wardemann et al., 2003; Larimore et al., 2012; Lecerf et al., 2019).
 
 Therefore, collectively, our observations suggest a less mature and less specific BCR repertoire of tumor-infiltrating B cells compared to circulating B cells and B cells infiltrating normal tissue, which may indicate less stringent control for antibody-producing B cell development in the TME.
 
-## Immunoglobulin hypermutation analysis across tissues and isotypes
+#### Immunoglobulin hypermutation analysis across tissues and isotypes
 
 Intensity of somatic hypermutation (average number of mutations relative to the most recent common ancestor, MRCA) reflects the average extent of antigenic selection experience of the clonotypes found in a given tissue or cancer type. No significant difference was found between PBMC, tumor-draining LNs, and tumors for the top 100 most frequent clonotypes in the total repertoire as well as for the top 100 most frequent clonotypes of each isotype separately (not shown). This indicates that in the RNA-based BCR repertoires, in all studied tissues, the most dominant immunoglobulin clonotypes belong to cell populations with an equivalent history of antigen exposure, selection, and maturation. However, there was a statistically significant difference in the number of hypermutations in IgG between the cancers (Figure 4E). IGHG clonotypes from lung cancer samples show higher number of hypermutations, possibly reflecting high mutational load found in lung cancer tissue. For melanoma, another cancer known for high mutational load, no statistically significant difference was found. This may be due to higher variance between melanoma samples, which hinders the analysis, or due to the small sample size.
 
-## Clonal exchange between tissues at the level of B cell lineages
+#### Clonal exchange between tissues at the level of B cell lineages
 
 Next, we investigated clonal exchange between the PBMCs, tumor-draining LNs, and tumors at the level of hypermutating clonal lineages, which are likely to be involved in recent and ongoing immune responses. The results are shown in Figure 5A. After pooling clonotype data patient-wise, clonal groups were assembled by sequence similarity, and then IGH clonotypes within a group were arranged into clonal lineages that shared a common ancestor Barak et al., 2008 and represented a B-cell clone undergoing the affinity maturation process. Each clonotype within a clonal group was attributed to the tissue of origin, tumor, LN, and/or PBMC, and to a particular isotype. For each clonal group, the percentage of clonotypes belonging to each isotype and tissue was calculated. Clonal groups from all patients with a given cancer type were plotted on a triangle plot using the percentage of clonotypes from the tumor, LN, and PBMC as coordinates and colored according to the dominant isotype (>60%).
 
@@ -111,7 +123,7 @@ Next, we investigated clonal exchange between the PBMCs, tumor-draining LNs, and
 
 In all studied cancer types, IgA-dominated clonal groups were evenly distributed among the three tissues, indicating no preference for IgA-switched cells towards lymphoid or tumor tissue residence. IgG-dominated clonal groups showed a preference for tumor and LN residence in lung cancer and melanoma, in accordance with the idea of tight interaction between LN and tumor in mounting anti-tumor immune responses. IgM-dominated clonal groups showed a strong preference for colorectal cancer tumors, indicating intensive intratumoral somatic hypermutation without isotype switching (Figure 5B, red triangle).
 
-## LN-to-LN heterogeneity in colorectal cancer
+### LN-to-LN heterogeneity in colorectal cancer
 
 Next, we sought to investigate whether within a group of tumor-draining LNs BCR repertoire analysis could discern LNs that were in more intensive clonal exchange with the tumor. This question may be addressed at the individual clonotype level and at the level of clonal groups.
 
@@ -119,15 +131,25 @@ At the individual clonotype level, we compared F2 metric values for pairwise tum
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/89506/elife-89506-fig6-v1.jpg)
 
-**Figure 6.:** A, B; clonal group level - panels C, D; individual patient data).(A) Repertoire overlap between tumor and three separate LNs from the draining lymph node pool; Mann-Whitney test, Bonferroni correction. (B) Network representation of Ig repertoires from tumor and three separate LNs, with circles representing individual CDR-H3 sequences, size of the circles corresponding to the clone frequency, and color corresponding to the isotype; (C) triangle plot visualization of clonal group distribution between three different LNs, with size corresponding to the number of individual CDR-H3 sequences (clonotypes) within a given clonal group, and color corresponding to the percentage of tumor-derived clonotypes–within the clonal group; (D) example of a clonal lineage consisting of CDR-H3 sequences derived from a lymph node (blue) and all three tumor fragments (shades of red) from patient ccp2, shapes representing isotypes and size representing frequency of a given sequence in a given sample.
+**Figure 6.:** (A) Repertoire overlap between tumor and three separate LNs from the draining lymph node pool; Mann-Whitney test, Bonferroni correction. (B) Network representation of Ig repertoires from tumor and three separate LNs, with circles representing individual CDR-H3 sequences, size of the circles corresponding to the clone frequency, and color corresponding to the isotype; (C) triangle plot visualization of clonal group distribution between three different LNs, with size corresponding to the number of individual CDR-H3 sequences (clonotypes) within a given clonal group, and color corresponding to the percentage of tumor-derived clonotypes–within the clonal group; (D) example of a clonal lineage consisting of CDR-H3 sequences derived from a lymph node (blue) and all three tumor fragments (shades of red) from patient ccp2, shapes representing isotypes and size representing frequency of a given sequence in a given sample.
 
 These observations reflect a complex interplay between tumors and LNs, which may be involved in the adaptive immune response to tumor antigens.
 
-## Intra-LN heterogeneity
+### Intra-LN heterogeneity
 
 Likewise, we asked whether parts of LNs are equally involved in interaction with tumor. For lcp3, we obtained BCR repertoires from 3 fragments of one draining LN and compared them to tumor repertoires on the individual clonotype and clonal group level. Repertoire from fragment LN11 showed significantly lower overlap with the tumor than other two LN fragments, LN12 and LN13 (Figure 7A, left). Triangle plot analysis of clonal group distribution also showed that the majority of the tumor-dominated (red) clonal groups resided in the LN12-LN13 side of the triangle (Figure 7B, left).
 
-## Intratumoral heterogeneity of immune repertoires
+![Figure 7.](https://cdn.elifesciences.org/articles/89506/elife-89506-fig7-v1.jpg)
+
+**Figure 7.:** (A) Repertoire overlap between tumor and lymph node fragments for colorectal cancer patient ccp6 and lung cancer patient lcp3; Mann-Whitney test, Bonferroni corr. (B) Triangle plot visualization of clonal group distribution between lymph node fragments, with size corresponding to the number of individual CDR-H3 sequences (clonotypes) within a given clonal group, and color corresponding to the percentage of tumor-derived clonotypes within the clonal group; (C) network representation of Ig repertoires from tumor fragments, with circles representing individual CDR-H3 sequences, size of the circles corresponding to the clone frequency, and color corresponding to the isotype, edges connect clonotypes to their fragment of origin; (D) triangle plot visualization of clonal group distribution between tumor fragments, with size corresponding to the number of individual CDR-H3 sequences (clonotypes) within a given clonal group, and color representing dominant clonotype; Stars represent non-weighted by size mean center of triangle coordinates. Chi-2 test for goodness of fit is used to test if each tumor segment equally contributes to clonal groups formation.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/89506/elife-89506-fig7-figsupp1-v1.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/89506/elife-89506-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Schematic representation of slice orientation relative to the intestine wall and tumor. (B) Tissue section stained with hematoxylin and eosin (H&E). Different layers of the intestine wall and tumor are marked. Regions 1 and 2 are magnified on the panels (C and D) respectively. (C, D. H&E) histology of the peritumoral region and mucosal/submucosal layers. Lymphoid structures in these regions were classified as TLS and Peyer’s patches, respectively and are marked with arrows. Regions on (C and D) orespond to the areas that are shown on fluorescent images of parallel slices in (E and F), respectively. CD20 fluorescence is shown in green, CD3 in blue, CXCL13 in red and PNAd in yellow. Scale bar is shown in black and corresponds to 100 µm.
+
+### Intratumoral heterogeneity of immune repertoires
 
 Statistically, the magnitude of intratumoral genetic heterogeneity correlates with the heterogeneity of immune cell infiltration, implying the co-evolution of the tumor genetic architecture and immune microenvironment Jia et al., 2018. Spatial heterogeneity of the T cell receptor repertoire is also known to reflect the spatial distribution of mutations in the tumor (Reuben et al., 2017; Joshi et al., 2019). Furthermore, this is clinically relevant, because higher heterogeneity of tumor-infiltrating T-cell repertoire is associated with higher risk of recurrence and shorter disease-free survival (Reuben et al., 2017).
 
@@ -139,7 +161,17 @@ To analyze the presence of TLSss in our tumor samples, we used histology and imm
 
 The design of our study included obtaining cellular-level replicates for each processed tissue fragment. This allowed us to reliably detect CDR-H3 clonotypes that were significantly expanded in a given sample relative to other samples. Figure 8 shows an example of such analysis. We used the EdgeR library from the Bioconductor package to detect clonotypes that were differentially expanded in separate fragments of tumors. These clonotypes are represented on Figure 8A and B as colored circles on frequency correlation plots. Expanded clonotypes with the highest frequencies are also labeled on Cytoscape plots (Figure 8C, sequence labels). Interestingly, the most expanded clonotypes were not attributed to any clonal group (and thus were presumably not actively hypermutating), and the largest of these were of IgM isotype. Only one of the expanded clonotypes in this tumor was involved in the hypermutation process, and the structure of its clonal lineage is shown in Figure 8D. Conversely, none of the largest clonal lineages detected in this patient contained any expanded clonotypes (Figure 8E). In addition, on average, expanded clonotypes had fewer mutations than non-expanded clonotypes, both in tumors and in tumor-draining LNs (Figure 8F, all patients).
 
-## Short vs long trees - phylogeny analysis
+![Figure 8.](https://cdn.elifesciences.org/articles/89506/elife-89506-fig8-v1.jpg)
+
+**Figure 8.:** (A, B) Visualization of expanded clonotypes on frequency correlation plots for pairs of tumor fragments of melanoma tumor from patient mp3; (C) Cytoscape network visualization of top 300 most frequent individual Ig CDR-H3 clonotypes, colored by isotype, with size of circles proportional to the frequency of a given clonotype; (D) example of a clonal lineage containing expanded CDR-H3 sequence; (E) examples of the biggest clonal lineages, none of which contain expanded CDR-H3 sequences; (F) average number of mutations in expanded and non-expanded clonotypes; Mann-Whitney test; N=11.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/89506/elife-89506-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Distance to MRCA comparison for same clonal groups on short and long trees; (B) distance to MRCA comparison for IgM, IgA and IgG-dominated clonal groups on short and long trees; (C) distribution of CDR-H3 amino acid properties (charge, kf4 and strength) along short and long trees in healthy donor (top row) and cancer patients (bottom row); (D) dN/dS values for trees os size > 20.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/89506/elife-89506-fig8-figsupp2-v1.jpg)
+
+### Short vs long trees - phylogeny analysis
 
 CDR-H3 is the most variable component of the BCR and is also the most important in terms of antigen recognition. However, missing mutations in other segments may lead to difficulties or a complete inability to accurately recover the phylogeny of hypermutations. Moreover, shorter sequencing reads, which may be sufficient to obtain CDR-H3 data, cover the V segment to a lesser extent, which may lead to less accurate germline gene assignment and, consequently, erroneous rooting of the phylogenetic tree.
 
@@ -149,7 +181,7 @@ One potential explanation for this could be that a larger sample size and a high
 
 Grimsholm et al., 2020 showed that memory B cells have, on average, higher Kidera factor 4 values and lower predicted interaction strength than naive B-cells. We assumed that these features may evolve during the affinity maturation process. Therefore, we checked how the mean kf4, strength, and charge of the five central CDR-H3 amino acids depend on the clonotype’s distance to the MRCAon the phylogenetic tree. To ensure that there was no bias in phylogeny as a result of short sequencing length and small sample size, we used full-length sequence trees inferred from lung cancer patient lcp3 and full-length repertoire with very high sequencing depth from a healthy donor. However, we did not find any correlation between strength, charge, and kf4 and the clonotype’s position on a tree (Fig. S5C). One exception was a very small increase in charge down the tree found in the healthy donor repertoire (r=0.04, p=4.9*10–05), which, despite being statistically significant, is probably not mechanistically meaningful. In addition, the largest (>20 members) trees had dN/dS values <1, indicating negative selection pressure (Fig. S5D). Taken together, these data suggest that, in the absence of a defined time-controlled antigenic stimulus, such as vaccination, in steady-state equilibrium, only a few immunoglobulin clonal groups show definitive signs of positive selection.
 
-## Productive involvement in hypermutating lineages depends on CDR-H3 characteristics
+### Productive involvement in hypermutating lineages depends on CDR-H3 characteristics
 
 Taking into consideration the previously found differences between memory and naïve cell features by Grimsholm et al., 2020, we hypothesized that amino acid features of CDR-H3 may be selected even before the start of hypermutation and affinity maturation. To test this hypothesis, we checked how the mean kf4, strength, and charge of five central CDR-H3 amino acids depend on the clonal status of the clonotype (Fig. S6) and found the results to be tissue-specific. In particular, clonotypes not assigned to any clonal lineage (singles) had lower kf4 values, and hence higher hydrophobicity, than members of clonal groups in the tumor and PBMC repertoires. The predicted interaction strength was higher for singles in PBMC and LNs, but not in the tumor, potentially indicating that tumor-resident clonotypes have undergone selection for CDR-H3 properties, irrespective of their involvement in SHM. Finally, clonal lineages had a higher charge in tumor repertoires, but not in the LNs or PBMCs, indicating a tendency towards polyreactivity in clonotypes evolving locally under the influence of TME.
 
@@ -183,7 +215,7 @@ Nevertheless, our observations contribute to the understanding of the interactio
 
 ## Materials and methods
 
-## Patients
+### Patients
 
 All clinical samples were acquired from the N.N. Blokhin National Medical Research Center of Oncology or Volga District Medical Centre under the Federal Medical and Biological Agency. This study was conducted in accordance with ICH-GCP. The protocol was approved by the Ethical Committees of the Volga District Medical Centre under the Federal Medical and Biological Agency, and by the N.N. Blokhin National Medical Research Center of Oncology. Written informed consent was obtained from all patients.
 
@@ -193,15 +225,15 @@ Blood sampling was performed immediately prior to surgery, and the total volume 
 
 Tum, LN, and normal tissues were mechanically cut into 3–7 mm fragments and incubated in RPMI 1640 medium (Gibco, cat. 42401042) containing 1 mg/ml Liberase TL Research Grade (Roche, cat. 5401020001) and 30 U/ml DNase I (Qiagen, cat. 15200–50), at 37°С for 30–60 min with gentle shaking. Samples were then processed using a gentleMACS Dissociator (Miltenyi Biotec, cat. 130-093-235) and passed through a 100 um Nylon cell strainer to remove non-dissociated fragments. The resulting cell suspension was concentrated by centrifugation (7 min, 350 g) and lysed in RLT buffer(Qiagen, cat. 79216) 0.1–0.5 *10^6 lymphocytes /sample density. All RLT samples (PBMC, tum, LN, and norm lysates) were stored at –80 °C before preparation of the BCR IGH repertoire libraries.
 
-## PC isolation
+### PC isolation
 
 For colon cancer patients, three distant samples (at least 3 cm apart) were obtained from the tumor border with a portion of normal tissue. Cells from three digested tumor samples, three LNs (for patients ccp2 and ccp3) and two replicates of PBMC were stained with a panel of fluorescent antibodies: CD45-PerCP/Cy5.5 (BD 564105, clone HI30), CD38-PE (BD 555460, clone HIT2), CD19-Alexa700 (BD 557921, clone HIB19), CD20-BV510 (BD 563067, clone 2H7), CD25-V450 (BD 560458, clone M-T271) and isolated BD FACSAriaIII cell sorter (BD Bioscience). First, lymphocytes were gated as CD45 + cells, and the plasma cell population was isolated as CD20_neg/CD19_low/CD27_high/CD38_high. Sorting was performed using a FACSAria III cell sorter (BD Bioscience) directly into RLT lysis buffer (Qiagen, cat 79216). Cells from the ccp6 LNs were lysed and unsorted.
 
-## BCR library preparation and sequencing
+### BCR library preparation and sequencing
 
 All BCR IGH libraries were generated using the 5RACE methodology described by Turchaninova et al., 2016 and sequenced with a 150+150 bp read length. For one of the lung cancer patients, lcp3, additional tumor, lymph node, and normal lung tissue libraries were generated using IG RNA Multiplex kit (MiLaboratories Inc) and sequenced with 250+250 read length. To account for sampling bias, we also obtained technical replicate samples at the cell suspension level.
 
-## Preprocessing of sequencing data
+### Preprocessing of sequencing data
 
 To process sequencing reads, we used the MiNNN software to extract UMIs from raw sequencing reads, correct errors, and assemble consensus sequences for each UMI. For bulk libraries prepared with the 5’RACE protocol and sequenced with 150+150 read length, we filtered out UMI with less than three reads. For bulk libraries prepared with the Multiplex protocol and sequenced with 250+250 read length, we filtered out UMI with less than four reads. For libraries of sorted plasma cells prepared with the 5’RACE protocol and sequenced with 150+150 read length, we filtered out UMI for which there were fewer than two reads.
 
@@ -211,31 +243,31 @@ After UMI-based decontamination, we used MIXCR software (MiLaboratories Inc) to 
 
 Samples with 50 or less clonotypes left after preprocessing were excluded from the analysis.
 
-## Clonal lineage inference
+### Clonal lineage inference
 
 We identified sequences belonging to the same clonal lineage using the ChangeO software. The criteria for the initial grouping were the same V and J germline genes identified by MIXCR, and the same CDR-H3 length. These criteria do not account for the D segment, as there is insufficient confidence in the germline annotations due to its short length and high level of mutations. Sequences within each group were defined as belonging to the same clonal lineage if they had a nucleotide CDR-H3 sequence identity above a certain threshold. Such a threshold was individually defined for each patient’s dataset as a local minimum of the distance-to-nearest distribution function (Gupta et al., 2015). In most cases, this threshold is set between 80% and 85%.
 
-## Phylogenetic inference
+### Phylogenetic inference
 
 The phylogeny of B-cell hypermutations was inferred for each clonal lineage of size five or more using the maximum likelihood method and the GTR GAMMA nucleotide substitution model. To find the most recent common ancestor (MRCA) or root of the tree, we used an outgroup constructed as a conjugate of germline segments V and J defined by MIXCR. The D segment was excluded from the outgroup formation, as there was insufficient confidence in the germline annotations due to its short length and high level of mutations. The MUSCLE tool was used for multiple sequence alignment and RAxML software was used to build and root phylogenetic trees.
 
-## Sample pooling and normalization
+### Sample pooling and normalization
 
 For some parts of the analysis, we considered samples irrespective of technical replicates or specific tumor/LN segments. In such cases, the corresponding repertoire datasets were pooled in one, where for each clonotype, its new frequency was calculated as the mean of the clonotype’s frequencies from separate files. Such an approach helps avoid sampling bias and achieve equal contributions of all clonotype sets being pooled.
 
-## Statistical analysis
+### Statistical analysis
 
 In our analysis, we often used repertoires of different parts of the same tissue as separate observations within the same comparison. Examples of these could be isotypes, different pieces of tumors or LNs, or PBMC samples taken at different time points. Understanding the pitfalls of this approach in general, we argue that it can be justified in some cases considering the heterogeneity of tissues, especially tumors, and the distinctive characteristics of different isotypes.
 
 Most of the analysis was performed using VDJtools and custom Python and R scripts.
 
-## Expanded clonotypes detection
+### Expanded clonotypes detection
 
 We used the EdgeR package in R to identify the clonotypes that were differentially expressed between the two sample sets. The problem with this approach is determining the correct number of counts required to pass into the DGEList function of EdgeR. Using a number of unique UMIs detected for each clonotype in the sample might not be a good idea, considering the possibility of sampling bias (e.g. resecting tumors into pieces of slightly different sizes). To account for sampling bias, we defined clonotype count for the DGEList function as clonotype frequency in a normalized sample multiplied by the total number of unique UMIs in all groups of samples.
 
 The output of the DGEList function is then normalized and passed to the exactTest function of the EdgeR. Clonotypes with FDR <0.05 and logFC >0 were considered expanded in a corresponding group of samples.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Sections of formalin-fixed paraffin-embedded tissue were sliced on an RM2235 microtome (Leica Biosystems). Slices were deparaffinized with Xylol and Ethanol. H&E staining was performed using Mayer’s hematoxylin and eosin (Biovitrum, Russia). For IHC staining, the slices were demasked in AR9 buffer (PerkinElmer) for 10 min at 98°С in a water bath, washed twice in PBS, and blocked for 30 min with Protein Block (Leica Novocastra, UK). Primary antibodies were added without washing the blocking solution and incubated overnight at 4°С. After incubation with primary antibodies, slices were washed twice in PBS and stained with the NovoLink polymer detection system (Leica Biosystems, UK) according to the manufacturer’s instructions or with HRP-streptavidin (Jackson Immunoresearch 016-620-084, 1:500 for 30 min) and contrasted with 10 µM CF tyramide dye (Biotium, USA). The following primary antibodies were used at the consequence and with indicated dilutions and CF dyes: CD20 (Leica Biosystems PA0200), 1:1 with CF488; CXCL13 (GeneTex GTX108471, Taiwan), 1:100 with CF660; CD3 (HuaBio HA720082, China), 1:200 with CF430; PNAd-biotin (BioLegend 120804, USA), 1:200 with CF555. Before staining with non-biotinylated antibodies, the antibodies were stripped in AR9 buffer for 10 min at 98 0С. After staining with antibodies, the slides were counterstained with DAPI (0.2 nM) for 5 min, embedded in Mowiol 4–88 (Sigma-Aldrich), and coverslipped.
 

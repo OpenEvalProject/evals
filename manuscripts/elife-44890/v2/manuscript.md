@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.44890.001 Previously we showed that network-based modelling of brain connectivity interacts strongly with the shape and exact location of brain regions, such that cross-subject variations in the spatial configuration of functional brain regions are being interpreted as changes in functional connectivity (Bijsterbosch et al., 2018). Here we show that these spatial effects on connectivity estimates actually occur as a result of spatial overlap between brain networks. This is shown to systematically bias connectivity estimates obtained from group spatial ICA followed by dual regression. We introduce an extended method that addresses the bias and achieves more accurate connectivity estimates.
+Previously we showed that network-based modelling of brain connectivity interacts strongly with the shape and exact location of brain regions, such that cross-subject variations in the spatial configuration of functional brain regions are being interpreted as changes in functional connectivity (Bijsterbosch et al., 2018). Here we show that these spatial effects on connectivity estimates actually occur as a result of spatial overlap between brain networks. This is shown to systematically bias connectivity estimates obtained from group spatial ICA followed by dual regression. We introduce an extended method that addresses the bias and achieves more accurate connectivity estimates.
 
 ## Introduction
 
@@ -40,7 +40,7 @@ The aim of this work is to disambiguate functional connectivity information in t
 
 ## Results
 
-## Dual regression performance in the presence of misalignment
+### Dual regression performance in the presence of misalignment
 
 One potential explanation for our previously reported findings (Bijsterbosch et al., 2018), is spatial misalignment between the exact location of node boundaries in individual subjects compared with group maps. In a typical ICA pipeline, group ICA (using the temporal concatenation approach) is followed by dual regression (Nickerson et al., 2017). Dual regression aims to estimate subject-specific spatial maps that accurately capture spatial organisation, accounting for any misalignment with the group maps. We will refer to group ICA followed by dual regression as the ‘ICA-DR’ pipeline throughout.
 
@@ -50,15 +50,23 @@ Here, we directly compare spatial alignment using MSMAll, MSMSulc, and volumetri
 
 Firstly, we perform spatial correlations between group maps and single-subject spatial ICA maps to determine how well the group maps represent the subject-specific organisation. Correlations are transformed using Fisher’s R-to-Z and entered into a one-way ANOVA with a factor for alignment (3 levels corresponding to MSMAll, MSMSulc, and volumetric). The main effect was significant (F(2,1098)=673.2, p<10−10), and all post-hoc paired tests were significant after Bonferroni correction (MSMAll-MSMSulc ΔZ=0.045, p<10−10; MSMSulc-volumetric ΔZ=0.152, p<10−10; see Figure 1, Figure 1—figure Supplement 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44890/elife-44890-fig1-v2.jpg)
+
+**Figure 1.:** (A) Single-subject ICA result from MSMAll data acts as ‘ground truth’. (B) Dual regression of this subject’s MSMAll data against MSMAll group maps captures subject-specific spatial organisation well. (C) Single-subject ICA result from MSMSulc data shows spatial misalignment in parietal regions compared to single-subject MSMAll ICA results shown in A (from which the black outline was derived). (D) Dual regression of this subject’s MSMSulc data against MSMAll group maps captures spatial organisation well, despite the observed spatial shift. These results illustrate dual regression being minimally affected by spatial misalignment. Note that the black outline in A, B, C reflects boundaries of MSMAll single subject results (shown in A), while the blue outline in D reflects boundaries of MSMSulc single subject results (shown in C). Data of Figure 1 is available on BALSA (https://balsa.wustl.edu/study/show/0Lwm6), where all 25 components can be viewed.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44890/elife-44890-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Correlation between group ICA maps and individual-subject ICA maps (which can be seen as the ‘ground truth’) is highest for MSMAll and lowest for MSMSulc. (B) Correlation between subject-specific dual regression spatial estimates (stage two maps) and individual-subject ground truth ICA maps show that dual regression can appropriately correct for minor misalignment between MSMSulc and MSMAll. However, dual regression spatial estimates from volumetrically aligned data are significantly less well matched to the ground truth maps. Coloured area represents one standard deviation (across 22 subjects).
+
 Next, we estimate the correlation between subject-specific maps obtained with dual regression and “ground truth” maps, separately for MSMSulc, MSMAll, and volumetrically aligned data. Results from a one-way ANOVA with a factor for alignment (3 levels corresponding to MSMAll, MSMSulc, and volumetric), showed a significant main effect, F(2,1098)=842.2, p<10−10. This effect was driven by a significantly lower correlation between dual regression and “ground truth” maps in volumetric data (MSMSulc-volumetric ΔZ=0.242, p<10−10). Conversely, the difference in this correlation between MSMAll and MSMSulc did not reach significance (ΔZ=0.013, p=0.061; see Figure 1, Figure 1—figure Supplement 1B).These results show that, despite misalignment between MSMSulc subject data and MSMAll group maps, dual regression was largely able to overcome this misalignment to estimate the subject-specific spatial organisation. However, dual regression was not able to correct for the more substantial amounts of misalignment observed in volumetrically aligned data.
 
 An example of an individual ICA component is shown in Figure 1. These results qualitatively illustrate the extent to which dual regression corrected for minor misalignment between MSMAll and MSMSulc. There was a clear shift in the parietal node of the default mode network in MSMSulc data (Figure 1C) compared with MSMAll data (Figure 1A). Nevertheless, dual regression against the identical set of group maps is able to accurately estimate the shifted versions of the subject maps (Figure 1B and D).
 
-## Cross-subject relationship between temporal and spatial connectivity
+### Cross-subject relationship between temporal and spatial connectivity
 
 As discussed in the introduction, there are multiple potential reasons for the previously observed influence of spatial information on estimated node-based functional connectivity, including spatial misalignment and inappropriate parcellation assumptions. In the previous section we show that the contribution of spatial misalignment is likely to be relatively minor provided that surface-based alignment is used in conjunction with the ICA-DR pipeline. Next, we aim to test the role of inappropriate parcellation assumptions.
 
-Previous rfMRI research has utilised the spatial shape and amplitude of intrinsic networks (Filippini et al., 2009), or temporal correlation patterns between timeseries extracted from nodes (Smith et al., 2011). However, correlations between network/node spatial maps (“spatial edges”) are not commonly studied. A potential reason for this is that many parcellation approaches (by design) result in binary, non-overlapping node maps (Glasser et al., 2016; Gordon et al., 2016; Yeo et al., 2011). For the purposes of this paper, we define temporal edges as the correlation between fMRI timeseries extracted from two separate nodes, i.e., cov(TX,TY)σTX σTY, where TX and TY are vectors (size timepoints x 1) representing the extracted timeseries of two different nodes (X and Y; Figure 2). Spatial edges are mathematically defined as the correlation between the two node spatial maps, i.e., cov(SX,SY)σSX σSY (Figure 2). In the case of grayordinate data, SX and SY (the spatial maps of nodes X and Y) are represented as vectors (size 91282 x 1), but three dimensional (volumetric) spatial node maps can also simply be vectorised to allow straightforward calculation of the correlation coefficient. To begin to elucidate the interaction between estimated functional connectivity in the spatial and temporal domains, we first assess the relationship between temporal correlations and spatial correlations estimated with spatial ICA using HCP data.
+Previous rfMRI research has utilised the spatial shape and amplitude of intrinsic networks (Filippini et al., 2009), or temporal correlation patterns between timeseries extracted from nodes (Smith et al., 2011). However, correlations between network/node spatial maps (“spatial edges”) are not commonly studied. A potential reason for this is that many parcellation approaches (by design) result in binary, non-overlapping node maps (Glasser et al., 2016; Gordon et al., 2016; Yeo et al., 2011). For the purposes of this paper, we define temporal edges as the correlation between fMRI timeseries extracted from two separate nodes, i.e., $\frac{cov(T_{X},T_{Y})}{\sigma_{TX}\sigma_{TY}}$, where $T_{X}$ and $T_{Y}$ are vectors (size timepoints x 1) representing the extracted timeseries of two different nodes ($X$ and $Y$; Figure 2). Spatial edges are mathematically defined as the correlation between the two node spatial maps, i.e., $\frac{cov(S_{X},S_{Y})}{\sigma_{SX}\sigma_{SY}}$ (Figure 2). In the case of grayordinate data, $S_{X}$ and $S_{Y}$ (the spatial maps of nodes $X$ and $Y$) are represented as vectors (size 91282 x 1), but three dimensional (volumetric) spatial node maps can also simply be vectorised to allow straightforward calculation of the correlation coefficient. To begin to elucidate the interaction between estimated functional connectivity in the spatial and temporal domains, we first assess the relationship between temporal correlations and spatial correlations estimated with spatial ICA using HCP data.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/44890/elife-44890-fig2-v2.jpg)
 
@@ -74,19 +82,43 @@ The results reveal a significant negative correlation (across edges and subjects
 
 **Figure 3.:** Each point in the figure panels represents one edge in one subject (i.e., 1225 edges x 1004 subjects are shown). The results show that full temporal and full spatial edges obtained from ICA-DR are negatively correlated. This negative correlation largely persists when ‘outlier’ edges with a spatial correlation below −0.2 are removed from the comparison (r = −0.19).
 
-## Temporal network and spatial overlap matrix estimation in ICA followed by dual regression
+### Temporal network and spatial overlap matrix estimation in ICA followed by dual regression
 
 We now provide evidence that the negative association between node spatial map correlations and functional connectivity in Figure 3 could be the result of dual regression being used on spatial ICA maps that are incorrect, due to the assumption of spatial independence being wrong (e.g. when there is spatial overlap between nodes).
 
-Consider that neuroimaging data Y[timepoints x voxels] can be summarised as a linear combination of a set of spatial maps S[voxels x N] (where N = number of extracted components) and a set of timeseries T[timepoints x N] following the outer product model:(1)Y=TRS'(2)Y=TQQ'S'
+Consider that neuroimaging data $Y[timepointsxvoxels]$ can be summarised as a linear combination of a set of spatial maps $S[voxelsxN]$ (where N = number of extracted components) and a set of timeseries $T[timepointsxN]$ following the outer product model:
 
-Here, R=QQ' [N x N] is a square rotation matrix, which may be changed from the identity matrix in order to enforce independence in either the spatial or temporal domain (as is the case in ICA). The decomposition is often considered in terms of estimated component spatial maps M [N x voxels], and component timeseries A [timepoints x N].(3)M = Q'S'(4)A = TQ
+$$
+Y=TRS'
+$$
 
-If the rotation matrix QQ' enforces spatial independence, cov(M')=cov(QS) [N x N] is equal to the identity matrix. Equation 4 therefore shows that all between-component covariance information must be contained in cov(A)=cov(TQ) [N x N] in the case of spatial independence. Hence, cov(TQ) as estimated from spatial ICA (or equivalently from stage 1 dual regression) reflects a weighted combination of the ground truth temporal and spatial covariance. Generally speaking, each parcellation method sits somewhere along a continuum of how the total combined temporal and spatial covariance structure is represented, as determined by the form of the rotation matrix QQ'. For example, both non-overlapping hard parcellations and spatial ICA represent all covariance structure temporally, whereas temporal ICA represents all covariance structure spatially (Smith et al., 2012). PROFUMO does not explicitly enforce orthogonality or independence in either domain, and sits along this continuum between both extremes based on model parameters and priors.
 
-To explain the negative correlation between dual regression spatial overlap and temporal network matrices (Figure 3), we need to look at stage 2 of dual regression. Here, a multiple temporal regression is performed using the A = TQ timeseries from Equation (4) to estimate node spatial maps:(5)SDR=pinv(TQ) Y
 
-For clarity, we provide the matrix dimensions as: pinv(TQ) [N x timepoints] and Y[timepoints x voxels]. Assuming that TQ are zero mean and unit variance, the first part of the pseudo-inverse ((TQ)'TQ)-1[N x N] is equal to the inverse of the covariance matrix (i.e., the partial correlation between stage 1 dual regression timeseries multiplied by -1). Therefore, the spatial maps obtained in Equation (5) (SDR) are negatively weighted by the partial correlation between the stage 1 timeseries (TQ). As we saw in Equation (4), cov(TQ) represents a weighted combination of the ground truth spatial and temporal covariance due to the enforced spatial independence. Therefore, the inflated temporal correlations in cov(TQ) will negatively weight the correlations between spatial maps, resulting in the negative correlation observed in Figure 3.
+$$
+Y=TQQ'S'
+$$
+
+Here, $R=QQ'[NxN]$ is a square rotation matrix, which may be changed from the identity matrix in order to enforce independence in either the spatial or temporal domain (as is the case in ICA). The decomposition is often considered in terms of estimated component spatial maps $M[Nxvoxels]$, and component timeseries $A[timepointsxN]$.
+
+$$
+M=Q'S'
+$$
+
+
+
+$$
+A=TQ
+$$
+
+If the rotation matrix $QQ'$ enforces spatial independence, $cov(M')=cov(QS)[NxN]$ is equal to the identity matrix. Equation 4 therefore shows that all between-component covariance information must be contained in $cov(A)=cov(TQ)[NxN]$ in the case of spatial independence. Hence, $cov(TQ)$ as estimated from spatial ICA (or equivalently from stage 1 dual regression) reflects a weighted combination of the ground truth temporal and spatial covariance. Generally speaking, each parcellation method sits somewhere along a continuum of how the total combined temporal and spatial covariance structure is represented, as determined by the form of the rotation matrix $QQ'$. For example, both non-overlapping hard parcellations and spatial ICA represent all covariance structure temporally, whereas temporal ICA represents all covariance structure spatially (Smith et al., 2012). PROFUMO does not explicitly enforce orthogonality or independence in either domain, and sits along this continuum between both extremes based on model parameters and priors.
+
+To explain the negative correlation between dual regression spatial overlap and temporal network matrices (Figure 3), we need to look at stage 2 of dual regression. Here, a multiple temporal regression is performed using the $A=TQ$ timeseries from Equation (4) to estimate node spatial maps:
+
+$$
+S_{DR}=pinv(TQ)Y
+$$
+
+For clarity, we provide the matrix dimensions as: $pinv(TQ)[Nxtimepoints]$ and $Y[timepointsxvoxels]$. Assuming that $TQ$ are zero mean and unit variance, the first part of the pseudo-inverse $((TQ)'TQ)^{-1}[NxN]$ is equal to the inverse of the covariance matrix (i.e., the partial correlation between stage 1 dual regression timeseries multiplied by -1). Therefore, the spatial maps obtained in Equation (5) ($S_{DR}$) are negatively weighted by the partial correlation between the stage 1 timeseries ($TQ$). As we saw in Equation (4), $cov(TQ)$ represents a weighted combination of the ground truth spatial and temporal covariance due to the enforced spatial independence. Therefore, the inflated temporal correlations in $cov(TQ)$ will negatively weight the correlations between spatial maps, resulting in the negative correlation observed in Figure 3.
 
 It is worth noting that the above theory holds in the absence of any added unstructured noise, which is expected to be present in realistic rfMRI data. Previous work has shown that thresholding can be used in the presence of noise to recover spatial overlap between group spatial ICA node maps (Beckmann et al., 2005). Therefore, using thresholded maps to extract timeseries may be an appropriate technique to provide more accurate measures of spatial overlap and temporal network matrices for the ICA-DR pipeline. This thresholding approach is discussed and tested in detail below in the section entitled ‘Using mixture-model thresholding to improve ICA dual regression estimates’.
 
@@ -100,7 +132,7 @@ The theory and simulation above describe the effects of the presence of ‘true�
 
 In our previous work, we showed that simulated data containing *only* interindividual variation in node spatial maps resulted in a substantial amount of interindividual information in temporal network matrices estimated with ICA-DR (Bijsterbosch et al., 2018). There, the spatial information in the simulated data (i.e., the simulation ‘ground truth’) were subject-specific PFM maps, which are known to contain spatial overlap (Harrison et al., 2019; Harrison et al., 2015). Therefore, the theory above provides a clean (and mathematical) explanation for how the ‘ground truth’ spatial correlations present between PFM spatial maps can contaminate temporal correlations estimated from traditional ICA-DR.
 
-## Evidence for the existence of overlap in real data
+### Evidence for the existence of overlap in real data
 
 The theory and results in the previous sections show the potential effect of ‘true’ spatial overlap on results obtained from the ICA-DR pipeline. An important question is what level of overlap in the spatial organisation of large-scale brain networks is present in rfMRI data. While it is not straightforward to know the ‘ground truth’ functional organisation in the human brain, we present several results that can provide insights.
 
@@ -112,7 +144,7 @@ The first approach is to simply take subject-specific map estimates obtained fro
 
 In addition, it is of interest to compare maps obtained from ICA and PROFUMO. PROFUMO does not enforce the spatial independence constraint and is therefore well suited to capture overlap. Figure 5B shows a direct comparison of the overlap between two matching group-level components obtained from PROFUMO and ICA. The spatial correlation between un-thresholded ICA and PFM maps is high (r = 0.84 between the red maps and r = 0.80 between the green maps). However, the spatial correlation between the two un-thresholded PFM maps is strong (r = 0.46), whereas there is no correlation between the two un-thresholded ICA maps. While the thresholded maps in Figure 5B on the right show that ICA captures some of the overlapping regions, the extent of these is qualitatively reduced compared to PFM maps on the left.
 
-## Using mixture-model thresholding to improve ICA dual regression estimates
+### Using mixture-model thresholding to improve ICA dual regression estimates
 
 We have demonstrated that if the assumption of spatial independence is incorrect, then this induces negative correlations between node spatial maps, which in turn can contaminate functional connectivity through dual regression. We now consider an alteration to traditional ICA dual regression to alleviate this contamination. The proposed method works by reducing the problematic negative spatial correlations present in the node/component spatial maps following spatial ICA. This is known as thesholded dual regression, in which a Gaussian/Gamma mixture model can be fitted to the histogram of an ICA component map to determine a threshold used to zero the background. This allows better recovery of ground truth spatial correlations in simple simulations (see Figure 3 in Beckmann et al., 2005).
 
@@ -128,7 +160,7 @@ In stage three above, mixture modelling is used to approximate the distribution 
 
 Dual regression can be performed as part of two different analysis pipelines with relatively separate goals and interpretations. Firstly, dual regression can be performed in order to draw inferences regarding the spatial shape and local amplitude of networks. This analysis procedure is best performed on the un-thresholded stage two spatial maps, because subject-specific thresholding may introduce unwanted biases in the subsequent voxel-wise inference performed on the maps. Secondly, dual regression can be performed in order to extract timecourses used to estimate temporal network matrices (and hence downstream inferences based on network-matrix edge comparisons across subjects). For this second analysis pipeline we show here that using stage four timeseries instead of stage one timeseries is beneficial in order to more clearly separate spatial and temporal information (at least in the typical case of whole-brain analyses; spatial ICA performed within a small region of interest may behave differently if the number of background voxels is reduced relative to the number of ‘active’ voxels, such that the mixture model may not be valid). A third potential use of dual regression is to study spatial overlap matrices. While spatial relationships between networks are not typically studied, there is increasing interest in cross-subject differences in spatial network organisation. Spatial overlap matrices (which should be studied using stage three thresholded maps) reflect a relatively simple metric related to overlapping organisation and may become of increasing interest, particularly when studying associations with behaviour.
 
-## Direct comparisons of PROFUMO and ICA accuracy using simulations
+### Direct comparisons of PROFUMO and ICA accuracy using simulations
 
 To test the accuracy of estimates obtained from PROFUMO, traditional ICA-DR, and thresholded ICA-DR (described in the previous section), we simulated an rfMRI dataset containing a ground truth set of nodes. To generate the simulations, we followed the general framework described in detail in Harrison et al. (2019) and Harrison et al. (2015), with slight changes to some of the parameters. Briefly, the simulated data contained 10,000 voxels, 30 subjects, two runs per subject, and 600 timepoints per run. This full simulation is repeated 10 times in order to obtain well-sampled results.
 
@@ -140,7 +172,15 @@ In addition, we focus on a specific subset of the edges (across all repeats of t
 
 The results show that the accuracy of estimated timeseries is relatively good in all of the analysis pipelines tested here (Figure 7A). The accuracy of spatial map estimation is superior in PROFUMO compared to both variations of the ICA-DR pipeline (Figure 7B). As expected, the accuracy of spatial map estimates was improved using the thresholded ICA-DR pipeline compared to the traditional ICA-DR pipeline (Figure 7B). Similar overall results are found for the accuracy of spatial overlap matrices (Figure 7D). These biases in secondary estimates for spatial and temporal edges are also found in the absence of any between-subject spatial misalignment, confirming that this effect is independent of any potential misalignment problems (Figure 7, Figure 7—figure supplement 1). When focusing on edges with significantly positive ground truth spatial correlation, PROFUMO outperformed both ICA-DR pipelines for estimating spatial edges (Figure 7E), whereas thresholded ICA-DR results were closest to the ground truth for estimating temporal edges (Figure 7F).
 
-## Linking spatial overlap and temporal network matrices to behaviour
+![Figure 7.](https://cdn.elifesciences.org/articles/44890/elife-44890-fig7-v2.jpg)
+
+**Figure 7.:** (A) Correlations between ground truth and estimated subject timeseries is high across all three methods. (B) Correlations between ground truth and estimated subject spatial maps is highest in PROFUMO results (red), and improved in thresholded ICA-DR results (blue) compared to traditional ICA-DR results (green). Similar results are found for cross-subject correlations of temporal network matrix edges (C), and for cross-subject correlations of spatial overlap matrix edges (D). Results in A-D are shown for all maps that achieved a minimum group-average spatial correlation between ground truth and estimated maps of r = 0.5 across the three methods. Figures E and F show results for a subset of edges with significantly positive spatial correlation. Here, the first ‘ground truth’ column shows the distribution of ground truth edge strengths, whereas columns 2–4 show the difference between estimated and ground truth edge strengths (i.e., results in columns 2–4 that are closest to zero are best).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/44890/elife-44890-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The ‘full simulation’ included both spatial overlap and spatial misalignment (this matches the results in Figure 6). The ‘no misalignment’ simulation was run with identical parameters, except that there was no misalignment between subjects. The ‘no overlap’ simulation was again run with identical parameters, except that spatial maps were forced to be uncorrelated at the level of individual subjects by running spatial ICA at this stage in the simulation prior to generating the data. Results show similar biases in spatial and temporal edge estimates from standard dual regression in the full and no misalignment simulations, indicating that this effect is observed irrespective of spatial misalignment. The no overlap simulation also shows improvement of thresholded dual regression over standard dual regression, likely as a result of the effective reduction of noise that is achieved when thresholding the maps. Note that there are no meaningful spatial edges in the ‘no overlap’ simulation, so it is expected that none of the methods estimate this.
+
+### Linking spatial overlap and temporal network matrices to behaviour
 
 In our previous work we found a strong relationship between PROFUMO spatial maps and a behavioural mode that includes positive and negative traits (Bijsterbosch et al., 2018). Here, we repeat the canonical correlation analysis (CCA) on 1,001 HCP subjects to estimate multivariate relationships between a set of behavioural variables and a set of edges. For the edges, we test both spatial overlap and temporal network matrices obtained from one of the pipelines described above. Temporal network matrices are classically used as a proxy for neural coupling, and are commonly studied in the literature. On the other hand, spatial overlap matrices reflect spatial overlap between resting state networks, which is an aspect of functional connectivity that has not yet received attention in the existing literature. Here, we aim to test which of these different aspects of functional connectivity is most strongly and uniquely associated with individual differences in behaviour.
 
@@ -149,6 +189,10 @@ Details of the CCA procedure can be found in our previous work (Bijsterbosch et 
 To determine the unique variance contained in spatial overlap and temporal network matrices respectively, we adopted the same partial CCA approach that was used previously (Bijsterbosch et al., 2018; Smith et al., 2015). We regress spatial edges onto temporal edges within each method (after dimensionality reduction), and enter the residuals into a standard CCA against behavioural measures. Hence, the partial CCA results remove any shared behaviourally-relevant variance that is present in both spatial overlap and temporal network matrices within the overall method (i.e., within PROFUMO/standard ICA-DR/thresholded ICA-DR).
 
 All of the spatial overlap and temporal network matrix results obtained with any of the three pipelines show significant associations with behaviour (Figure 8, blue bars). The strongest relationship with behaviour is observed for spatial overlap matrices estimated with PROFUMO (RUV = 0.72), which is significantly stronger than with the original ICA-DR temporal network matrix result (p=0.03), and compared with the thresholded ICA-DR temporal network matrix result (p=0.001). This finding is closely linked to our earlier work, where we reported a strong CCA result for PFM spatial maps, but there are key differences in the way brain-based inputs to the CCA were calculated between these two findings. Here, we use subject-specific spatial overlap matrices as input (i.e., only including spatial correlations between maps), whereas our previous results were based on the full set of subject spatial maps (i.e., including all spatial features in all maps).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/44890/elife-44890-fig8-v2.jpg)
+
+**Figure 8.:** The strongest association with behaviour is found for PFM spatial edges. Temporal network matrices estimated with thresholded ICA-DR (thres) are less strongly linked to behaviour than those estimated with traditional ICA-DR (orig), and show a greater reduction when partialling out matching spatial edges. The dashed line indicates the mean p<0.05 significance level from permutation testing.
 
 To facilitate the interpretation of these findings in light of our earlier work (Bijsterbosch et al., 2018), we include a movie of spatial overlap as a function of the most significant behavioural CCA mode (Figure 8—video 1). Here, we followed the same procedure described previously to generate interpolated movie frames for each of the 50 PFM maps, and subsequently summed the grayordinate-wise weights across all 50 maps following normalisation (as for Figure 5A). The resulting movie (Figure 8—video 1) shows that spatial overlap systematically varies along with the network-specific spatial variation that we showed previously (Bijsterbosch et al., 2018). Hence, these results show that spatial overlap (and resulting correlation) is a key behaviourally-relevant aspect of spatial information.
 
@@ -176,48 +220,48 @@ In conclusion, we replicate our previous work showing that spatial topographical
 
 ## Materials and methods
 
-## Dataset
+### Dataset
 
 Data from the Human Connectome Project S1200 release were used including 1004 subjects with 4800 resting state timepoints (Van Essen et al., 2013). The data were preprocessed using the HCP minimally preprocessing pipeline (Glasser et al., 2013), followed by FIX cleanup of artificial components obtained from single-run ICA (Smith et al., 2013). Three subjects were excluded for CCA purposes due to incomplete genetic information (i.e., N = 1001 for CCA).
 
-## Simulation 1
+### Simulation 1
 
-The simulation for Figure 4 contained two-dimensional spatial maps with 10,000 voxels. A total of 50 subjects with 200 timepoints each were simulated, and the full simulation was repeated 10 times. Two spatial nodes were generated using a Laplacian distribution (μ=0; σ=0.5) for the background and linearly added uniformly distributed (ranging between 2-12) weights. Each spatial node included 100 voxels (out of 10,000), with 25% overlap between the two spatial nodes to ensure ground truth spatial correlation. Normally distributed timeseries were generated for each node, and a shared normally distributed timeseries was added to both to ensure ground truth temporal correlation. Simulated data for each subject was generated by taking the outer product between simulated timeseries and spatial maps, resulting in a 10,000 x 200 dataset. For each repeat, these datasets were concatenated across all 50 subjects before running group ICA, following by dual regression.
+The simulation for Figure 4 contained two-dimensional spatial maps with 10,000 voxels. A total of 50 subjects with 200 timepoints each were simulated, and the full simulation was repeated 10 times. Two spatial nodes were generated using a Laplacian distribution ($\mu=0;\sigma=0.5$) for the background and linearly added uniformly distributed (ranging between 2-12) weights. Each spatial node included 100 voxels (out of 10,000), with 25% overlap between the two spatial nodes to ensure ground truth spatial correlation. Normally distributed timeseries were generated for each node, and a shared normally distributed timeseries was added to both to ensure ground truth temporal correlation. Simulated data for each subject was generated by taking the outer product between simulated timeseries and spatial maps, resulting in a 10,000 x 200 dataset. For each repeat, these datasets were concatenated across all 50 subjects before running group ICA, following by dual regression.
 
-## Simulation 2
+### Simulation 2
 
 A second simulation was performed to enable a direct comparison between the results from original ICA-DR, thresholded ICA-DR, and PROFUMO. The key differences between simulation 1 and simulation two are: (a) a spatial model that builds complex modes from an atlas of contiguous parcels, and (b) a temporal model of the ‘neural’ timeseries that is convolved with a hemodynamic response function. Simulation two was based on previous work (Harrison et al., 2019; Harrison et al., 2015), and is described in more detail below:
 
-## Atlas generation
+#### Atlas generation
 
 The 10,000 voxels were split into 100 contiguous parcels, with the parcel widths drawn from a Dirichlet distribution. The parcel weights were then drawn from a Gamma distribution. The gradient of the warp field was generated by convolving random Gaussian noise with a boxcar function, passing through a nonlinearity to limit the range to [−1,1] (i.e., to ensure the warp remained invertible).
 
-## Node generation
+#### Node generation
 
 Each node was formed from a number of spatially contiguous regions. The number of regions followed a Poisson distribution, the total number of parcels followed a beta distribution, and the number of parcels per region followed a Dirichlet distribution. Several regions were made to be anticorrelated (i.e., were given negative weights). The parcel weights again followed a gamma distribution.
 
-## Time course generation
+#### Time course generation
 
 ‘Neural’ time courses were simulated at 0.1 Hz. The frequency spectra of these were randomly generated, with a bias towards low frequencies. Correlations were induced based on group, subject, and run covariance matrices each drawn from a Wishart distribution. Finally the time courses were sparsified by setting sub-threshold time points to zero.
 
-## HRF convolution
+#### HRF convolution
 
 The time courses were convolved with random draws from the FLOBS basis set, with a unique HRF being generated for every subject.
 
-## Outer product model
+#### Outer product model
 
 The time courses and spatial maps were combined by taking the outer product, and a weak nonlinearity was applied to the resulting voxelwise timecourses to simulate saturation of the HRF in regions exhibiting high levels of activity.
 
-## Noise model
+#### Noise model
 
 Finally, noise was added to the BOLD signal. This consisted of a structured and unstructured noise subspace: the structured subspace consisted of a set of ‘confounds’, which consisted of the outer product of Gaussian spatial maps and time courses. The unstructured noise was weakly non-Gaussian, following a Student’s t-distribution.
 
 The code, containing all used parameter values, is available from https://git.fmrib.ox.ac.uk/samh/PFM_Simulations (Harrison, 2019; copy archived at https://github.com/elifesciences-publications/PFM_Simulations).
 
-## Mixture modelling
+### Mixture modelling
 
 Spatial maps for resting state fMRI networks are commonly relatively sparse, with a large proportion of voxels or grayordinates considered to be part of the background (i.e., many voxels have relatively low weights and do not contribute to the network). In the presence of additive Gaussian noise, we can therefore model the distribution of spatial weights in any single ICA components using a mixture of one Gaussian distribution (for the background) and two Gamma distributions (for the positive and negative aspects of the ICA networks). Subsequently, the mean and standard deviation of the Gaussian distribution (background) are used to shift and rescale the distribution of spatial weights for each map, and a threshold of ±2 is used to threshold the spatial map such that background voxels are set to zero. Previous work has shown that this threshold procedure can accurately capture ground truth spatial correlations (Beckmann et al., 2005). Here, we adopt mixture model thresholding in a proposed extension to dual regression designed to estimate ICA timeseries and derived correlations with improved accuracy.
 
-## Data and code availability
+### Data and code availability
 
 HCP data are distributed from the Connectome Coordination Facility (https://www.humanconnectome.org/). The simulation code is available from https://git.fmrib.ox.ac.uk/samh/PFM_Simulations. Brain data for Figures 1 and 5 are available on Balsa (https://balsa.wustl.edu/study/show/0Lwm6).

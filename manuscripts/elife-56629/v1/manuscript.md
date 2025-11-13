@@ -24,7 +24,7 @@
 
 ## Abstract
 
-Previously, we showed that a hierarchy of spectrin cytoskeletal proteins maintains nodal Na + channels (Liu et al., 2020). Here, using mice lacking β1, β4, or β1/β4 spectrins, we show this hierarchy does not function at axon initial segments (AIS). Although β1 spectrin, together with AnkyrinR (AnkR), compensates for loss of nodal β4 spectrin, it cannot compensate at AIS. We show AnkR lacks the domain necessary for AIS localization. Whereas loss of β4 spectrin causes motor impairment and disrupts AIS, loss of β1 spectrin has no discernable effect on central nervous system structure or function. However, mice lacking both neuronal β1 and β4 spectrin show exacerbated nervous system dysfunction compared to mice lacking β1 or β4 spectrin alone, including profound disruption of AIS Na + channel clustering, progressive loss of nodal Na + channels, and seizures. These results further define the important role of AIS and nodal spectrins for nervous system function.
+Previously, we showed that a hierarchy of spectrin cytoskeletal proteins maintains nodal Na+ channels (Liu et al., 2020). Here, using mice lacking β1, β4, or β1/β4 spectrins, we show this hierarchy does not function at axon initial segments (AIS). Although β1 spectrin, together with AnkyrinR (AnkR), compensates for loss of nodal β4 spectrin, it cannot compensate at AIS. We show AnkR lacks the domain necessary for AIS localization. Whereas loss of β4 spectrin causes motor impairment and disrupts AIS, loss of β1 spectrin has no discernable effect on central nervous system structure or function. However, mice lacking both neuronal β1 and β4 spectrin show exacerbated nervous system dysfunction compared to mice lacking β1 or β4 spectrin alone, including profound disruption of AIS Na+ channel clustering, progressive loss of nodal Na+ channels, and seizures. These results further define the important role of AIS and nodal spectrins for nervous system function.
 
 ## Introduction
 
@@ -34,39 +34,51 @@ Using conditional knockout mice, we previously showed that loss of β4 spectrin 
 
 ## Results
 
-## Loss of β4 spectrin impairs AIS nav channel clustering
+### Loss of β4 spectrin impairs AIS nav channel clustering
 
 To disrupt the function of β4 spectrin at AIS we generated Nes-Cre;Sptbn4F/F mice. Mice lacking β4 spectrin show a pronounced tremor and perform significantly worse on the rotarod (Figure 1A) compared to littermate controls. Immunostaining showed that in the absence of β4 spectrin, AIS Nav channels and AnkG are significantly reduced in β4 spectrin-deficient mice (Figure 1B,C). These results are similar to those obtained in other whole-body β4 spectrin mutant mice (Komada and Soriano, 2002; Lacas-Gervais et al., 2004). Remarkably, despite the loss of β4 spectrin, super-resolution stimulated emission depletion (STED) microscopy of AIS AnkG (Figure 1D) showed that AnkG retained its appropriate periodic spacing (Figure 1E). In contrast to AIS, nodes of Ranvier in Nes-Cre;Sptbn4F/F mice still had appropriately clustered nodal Nav channels (Figure 1F) since β1 spectrin and AnkR compensate for loss of β4 spectrin and AnkG at CNS nodes in the corpus callosum (Figure 1G,H; Ho et al., 2014; Liu et al., 2020). Thus, AIS are disrupted without β4 spectrin. In contrast, Nes-Cre;Sptbn4F/F CNS nodes of Ranvier are rescued by β1 spectrin and AnkR.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/56629/elife-56629-fig1-v1.jpg)
 
-**Figure 1.:** (A) Accelerating rotarod test performed on 3 month-old Sptbn4 and F/FNes-cre;Sptbn4 mice. F/FSptbn4, N = 8; F/FNes-cre;Sptbn4, N = 7. Data are mean ± SEM, **p=0.0017. (F/FB) Immunostaining of cortical brain sections from 3 month-old Sptbn4 and F/FNes-cre;Sptbn4 mice using antibodies against the β4 spectrin (blue), PanNav channels (green), and AnkG (red). Scale bar, 50 μm. (F/FC) Normalized fluorescence intensity of AnkG and PanNav channel at AIS were measured from cortical brain sections of 3 month-old Sptbn4 and F/FNes-cre;Sptbn4 mice. N = 3 mice with a total of 51–70 AIS were measured in each genotype. Data are mean ± SEM, For AnkG, **p=0.0079; PanNav channel, *p=0.0282. (F/FD) STED images of AnkG at cortical AIS from 3 month-old Sptbn4 and F/FNes-cre;Sptbn4 mice. The regions between the yellow lines (as shown in images) were used to generate intensity profile as shown in lower panels. (F/FE) Measurements of cortical AIS AnkG spacing by STED imaging from 3 month-old Sptbn4 and F/FNes-cre;Sptbn4 mice. Data are mean ± SEM. F/FSptbn4, n = 107 spacings; F/FNes-cre;Sptbn4, n = 96 spacings were measured from 2 mice of each genotype. (F/FF) Immunostaining of corpus callosum from 3 month-old Sptbn4 and F/FNes-cre;Sptbn4 mice using antibodies against PanNav channel (green), and Caspr (red). Scale bar, 10 μm. (F/FG) Immunostaining of corpus callosum from 3 month-old Sptbn4 and F/FNes-cre;Sptbn4 mice using antibodies against β4 spectrin (blue), β1 spectrin (green), and Caspr (red). Scale bar, 10 μm. (F/FH) Immunostaining of corpus callosum from 3 month-old Sptbn4 and F/FNes-cre;Sptbn4 mice using antibodies against Caspr (blue), AnkG (green), and AnkR (red). Scale bar, 10 μm.F/FFigure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Accelerating rotarod test performed on 3 month-old Sptbn4F/F and Nes-cre;Sptbn4F/F mice. Sptbn4F/F, N = 8; Nes-cre;Sptbn4F/F, N = 7. Data are mean ± SEM, **p=0.0017. (B) Immunostaining of cortical brain sections from 3 month-old Sptbn4F/F and Nes-cre;Sptbn4F/F mice using antibodies against the β4 spectrin (blue), PanNav channels (green), and AnkG (red). Scale bar, 50 μm. (C) Normalized fluorescence intensity of AnkG and PanNav channel at AIS were measured from cortical brain sections of 3 month-old Sptbn4F/F and Nes-cre;Sptbn4F/F mice. N = 3 mice with a total of 51–70 AIS were measured in each genotype. Data are mean ± SEM, For AnkG, **p=0.0079; PanNav channel, *p=0.0282. (D) STED images of AnkG at cortical AIS from 3 month-old Sptbn4F/F and Nes-cre;Sptbn4F/F mice. The regions between the yellow lines (as shown in images) were used to generate intensity profile as shown in lower panels. (E) Measurements of cortical AIS AnkG spacing by STED imaging from 3 month-old Sptbn4F/F and Nes-cre;Sptbn4F/F mice. Data are mean ± SEM. Sptbn4F/F, n = 107 spacings; Nes-cre;Sptbn4F/F, n = 96 spacings were measured from 2 mice of each genotype. (F) Immunostaining of corpus callosum from 3 month-old Sptbn4F/F and Nes-cre;Sptbn4F/F mice using antibodies against PanNav channel (green), and Caspr (red). Scale bar, 10 μm. (G) Immunostaining of corpus callosum from 3 month-old Sptbn4F/F and Nes-cre;Sptbn4F/F mice using antibodies against β4 spectrin (blue), β1 spectrin (green), and Caspr (red). Scale bar, 10 μm. (H) Immunostaining of corpus callosum from 3 month-old Sptbn4F/F and Nes-cre;Sptbn4F/F mice using antibodies against Caspr (blue), AnkG (green), and AnkR (red). Scale bar, 10 μm.
 
-## β1 spectrin is found at the AIS of some β4 spectrin-deficient neurons
+### β1 spectrin is found at the AIS of some β4 spectrin-deficient neurons
 
 β1 spectrin is expressed in motor and sensory cortex (layers II-V) at very high levels in some neurons (β1-high), but at low levels in most neurons (β1-low). Among the β1-high neurons, most are Parvalbumin-positive (PV(+)) interneurons where β1 spectrin colocalizes with AnkR (Figure 2A–C). In control Sptbn4F/F mice we did not detect AIS β1 spectrin in β1-low neurons, and only very rarely was it found at the AIS of β1-high neurons (Figure 2D,E). Remarkably, in Nes-Cre;Sptbn4F/F mice we found increased levels of AIS β1 spectrin in the majority of β1-high neurons (where somatic expression remained high; Figure 2D, arrow, 2E), but not at the AIS of β1-low neurons (Figure 2D, arrowheads, 2E). Despite the presence of AIS β1 spectrin in β1-high neurons, AIS Nav channels were still significantly reduced (Figure 2F) and the density of AIS Nav channels was comparable between β1-high and β1-low neurons (Figure 2G).
 
-## Loss of β1 spectrin does not affect AIS structure or function
+![Figure 2.](https://cdn.elifesciences.org/articles/56629/elife-56629-fig2-v1.jpg)
+
+**Figure 2.:** (A) Immunostaining of brain cortical sections from 3 month-old SptbF/F mice using antibodies against the AnkR (blue), β1 spectrin (green), and parvalbumin (PV, red). Scale bar, 50 μm. (B) The percentage of PV-positive neurons labeled with high β1 spectrin in 3 month-old SptbF/F mice cortex. N = 3 animals, with total 166 neurons counted. (C) The percentage of high β1 spectrin signal in cortical neurons labeled with PV or AnkR in 3 month-old SptbF/F mice. N = 3 animals, with total 231 and 251 neurons counted, respectively. (D) Immunostaining of brain cortical sections from 3 month-old Sptbn4F/F and Nes-cre;Sptbn4F/F mice using antibodies against β4 spectrin (blue), β1 spectrin (green), and AnkG (red). AIS of high and low β1 spectrin expression neurons are indicated by arrows and arrowheads, respectively. Scale bar, 25 μm. (E) The percentage of neurons with AIS β1 spectrin in β1 spectrin low and β1 spectrin high 3 month-old Sptbn4F/F and Nes-cre;Sptbn4F/F mice. N = 3 mice in each genotype. For Sptbn4F/F mice, 122 and 125 β1 spectrin low/high neurons were counted, respectively; for Nes-cre; Sptbn4F/F mice, 122 and 120 β1 spectrin low/high neurons were counted, respectively. For β1 spectrin (low) population, p=0.1162; for β1 spectrin (high) population, ***p=1.14E-06. (F) Normalized fluorescence intensity of AnkG and PanNav channel at AIS from β1 spectrin (high) cortical neurons measured in 3 month-old Sptbn4F/F and Nes-cre;Sptbn4F/F mice. N = 3 mice with a total of 50–63 AIS were measured in each neuron type per genotype. Data are mean ± SEM, For AnkG, p=0.0829; PanNav channel, *p=0.018. (G) The average changes of percentage of fluorescence intensity of AnkG and PanNav channel in β1 spectrin low and β1 spectrin high neurons in 3 month-old Sptbn4F/F and Nes-cre;Sptbn4F/F mice.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56629/elife-56629-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Accelerating rotarod test performed on 3 month-old SptbF/F and Nes-cre;SptbF/F mice. SptbF/F, N = 9; Nes-cre;Sptbn4F/F, N = 8. Data are mean ± SEM, *p=0.0276. (B) Immunostaining of brain cortical sections from 3 month-old SptbF/F and Nes-cre;SptbF/F mice using antibodies against the parvalbumin (PV, blue), PanNav channel (green) and AnkG (red). AIS of PV-expressing neurons are indicated by arrows. Scale bar, 25 μm. (C–D) Normalized fluorescence intensity of AnkG and PanNav at AIS in PV-positive (PV+) and negative (PV-) neurons were measured from cortical brain sections of 3 month-old SptbF/F and Nes-cre;SptbF/F mice. N = 3 mice with a total of 43–44 AIS were measured in each neuron type per genotype. Data are mean ± SEM. For AnkG in PV(-) and PV(+) neurons, p=0.1395 and p=0.3505, respectively; For PanNav in PV(-) and PV(+) neurons, p=0.1813 and p=0.1812, respectively. (E) Immunostaining of brain cortical sections from 3 month-old SptbF/F and Nes-cre;SptbF/F mice using antibodies against the parvalbumin (red) and β4 spectrin (green). AIS of PV-expressing neurons are indicated by arrows. Scale bar, 25 μm. (F) Normalized fluorescence intensity of β4 spectrin at AIS in PV-positive (PV+) and negative (PV-) neurons measured in cortical brain sections of 3 month-old SptbF/F and Nes-cre;SptbF/F mice. N = 3 mice in each genotype, with a total of 57–69 AIS were measured in each neuron type per genotype. Data are mean ± SEM. For β4 spectrin in PV(-) and PV(+) neurons, p=0.5775 and p=0.4268, respectively.
+
+### Loss of β1 spectrin does not affect AIS structure or function
 
 β1 spectrin is expressed at high levels in PV+ cells (Figure 2A–C). However, the normal function of neuronal β1 spectrin is unknown. To determine if β1 spectrin plays important roles in the nervous system we constructed Nes-Cre;SptbF/F mice. β1 spectrin-deficient mice had no discernable behavioral abnormalities and performed well on the rotarod (Figure 2—figure supplement 1A). β1 spectrin-deficient mice also had normal AIS (Figure 2—figure supplement 1B), with appropriate levels of AnkG, Nav channels, and β4 spectrin in PV(+) and PV(-) neurons (Figure 2—figure supplement 1C–F). Thus, like at nodes of Ranvier (Liu et al., 2020), β1 spectrin appears not to play critical roles in AIS structure or function when β4 spectrin is present.
 
-## AnkR cannot compensate for AnkG at AIS
+### AnkR cannot compensate for AnkG at AIS
 
 How can β1 spectrin compensate for loss of β4 spectrin at nodes, but not AIS? Since nodal Na+ channel clustering can be rescued in β4 spectrin-deficient mice by β1 spectrin and AnkR (Figure 1F–H; Liu et al., 2020), we first determined if AnkR is found at cortical neuron AIS. We found that AnkR is not located at AIS of control Sptbn4F/F cortical neurons despite its robust expression in β1-high neurons (Figures 2C and 3A, arrows, 3B). Furthermore, but in contrast to Nes-Cre;Sptbn4F/F nodes of Ranvier, we found no AIS AnkR in Nes-Cre;Sptbn4F/F mice; even cortical neurons expressing high levels of AnkR did not have AnkR at the AIS (Figure 3B). Thus, AIS β1 spectrin cannot compensate for loss of β4 spectrin since it lacks its preferential binding partner AnkR (Ho et al., 2014).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/56629/elife-56629-fig3-v1.jpg)
 
-**Figure 3.:** (A) Immunostaining of brain cortical sections from 3 month-old Sptbn4 and F/FNes-cre;Sptbn4 mice using antibodies against β4 spectrin (blue), AnkR (green), and AnkG (red). AIS of high AnkR expression neurons are indicated by arrows. Scale bar, 25 μm. (F/FB) The percentage of neurons with AnkR in the AIS in two subpopulations (AnkR low/high) of 3 month-old Sptbn4 and F/FNes-cre;Sptbn4 mice. N = 3 mice in each genotype. For F/FSptbn4 mice, 150 and 129 AnkR low/high neurons were counted; for F/FNes-cre; Sptbn4 mice, 127 and 128 AnkR low/high neurons were counted. For AnkR (low) population, p=0.3739; for AnkR (high), p=0.9497. (F/FC) Domain structure and design of AnkG-270kDa-GFP, AnkR-GFP, and AnkR/G chimera-GFP expression constructs. (D) Immunostaining of cultured rat hippocampal neurons at DIV10 after transfected with AnkG-270kDa-GFP, AnkR-GFP, or AnkR/G chimera-GFP expression plasmids. Antibodies were used against β4 spectrin (red), GFP (green), and the somatodendritic marker MAP2 (blue). AIS are indicated by arrows. Scale bar, 50 μm. (E) Quantification of the ratio of GFP signal intensity at AIS versus proximal dendrite in AnkG-270kDa-GFP, AnkR-GFP, or AnkR/G chimera-GFP transfected cultured hippocampal neurons. N = 3 batches of cultured neurons for each transfected plasmids, with total 43–49 neurons were measured for each plasmid. Data are mean ± SEM. For AnkG-270kDa-GFP versus AnkR-GFP, ***p=0.0002; for AnkR-GFP versus AnkR/G chimera-GFP, ***p=0.0002.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Immunostaining of brain cortical sections from 3 month-old Sptbn4F/F and Nes-cre;Sptbn4F/F mice using antibodies against β4 spectrin (blue), AnkR (green), and AnkG (red). AIS of high AnkR expression neurons are indicated by arrows. Scale bar, 25 μm. (B) The percentage of neurons with AnkR in the AIS in two subpopulations (AnkR low/high) of 3 month-old Sptbn4F/F and Nes-cre;Sptbn4F/F mice. N = 3 mice in each genotype. For Sptbn4F/F mice, 150 and 129 AnkR low/high neurons were counted; for Nes-cre; Sptbn4F/F mice, 127 and 128 AnkR low/high neurons were counted. For AnkR (low) population, p=0.3739; for AnkR (high), p=0.9497. (C) Domain structure and design of AnkG-270kDa-GFP, AnkR-GFP, and AnkR/G chimera-GFP expression constructs. (D) Immunostaining of cultured rat hippocampal neurons at DIV10 after transfected with AnkG-270kDa-GFP, AnkR-GFP, or AnkR/G chimera-GFP expression plasmids. Antibodies were used against β4 spectrin (red), GFP (green), and the somatodendritic marker MAP2 (blue). AIS are indicated by arrows. Scale bar, 50 μm. (E) Quantification of the ratio of GFP signal intensity at AIS versus proximal dendrite in AnkG-270kDa-GFP, AnkR-GFP, or AnkR/G chimera-GFP transfected cultured hippocampal neurons. N = 3 batches of cultured neurons for each transfected plasmids, with total 43–49 neurons were measured for each plasmid. Data are mean ± SEM. For AnkG-270kDa-GFP versus AnkR-GFP, ***p=0.0002; for AnkR-GFP versus AnkR/G chimera-GFP, ***p=0.0002.
 
 Why does AnkR fail to be recruited to the AIS of Nes-Cre;Sptbn4F/F mice when it can be recruited to nodes of Ranvier? To address this question we examined the AIS targeting of GFP-tagged AnkG and AnkR in cultured hippocampal neurons. Ankyrin proteins consist of a membrane binding domain (MBD), a spectrin-binding domain (SBD), and a regulatory domain (RD) (Figure 3C). AnkG also contains a giant exon (GE) that can result in 270 and 480 kDa splice variants (Jenkins et al., 2015). Transfection of AnkG-270kDa-GFP or AnkR-GFP into hippocampal neurons revealed that only AnkG-270kDa-GFP is targeted to the AIS (Figure 3D,E). However, introduction of the GE into AnkR (AnkR/G chimera-GFP) was sufficient for it to be targeted to the AIS (Figure 3D,E). Thus, AnkR is not found at the AIS of Nes-Cre;Sptbn4F/F mice since AnkR lacks the critical GE domain necessary for AIS localization.
 
-## Loss of β1 and β4 spectrin disrupts AIS and nodal nav channel clustering and causes seizures
+### Loss of β1 and β4 spectrin disrupts AIS and nodal nav channel clustering and causes seizures
 
 Human pathogenic variants of β4 spectrin cause severe neurologic dysfunction (Knierim et al., 2017; Wang et al., 2018). However, DRG sensory neuron physiology is intact, most likely due to partial compensation by β1 spectrin. To further determine if β1 spectrin contributes to nervous system function in the context of β4 spectrin-deficient neurons, we generated mice lacking both β1 and β4 spectrin. We found that Nes-Cre;SptbF/F;Sptbn4F/F mice performed worse on the rotarod than Nes-Cre;SptbF/F, Nes-Cre;Sptbn4F/F, or SptbF/F;Sptbn4F/F (p<0.0001; Figures 1A and 4A, Figure 2—figure supplement 1A, and Video 1). We next performed EEG recordings on 4 Nes-Cre;SptbF/F;Sptbn4F/F and 3 SptbF/F;Sptbn4F/F mice aged 1.5–3 months over prolonged periods (15–121 hr). Control mice displayed rare to infrequent spike activity but no evidence of seizures (Figure 4B). In β1/β4 spectrin-deficient mice, we detected very frequent interictal cortical spike discharges (299–792/hour; Figure 4C), and frequent spontaneous generalized spike-wave seizures (49–154/hour; Figure 4D) in both male and female mice. These brief (0.5–2 s) stereotyped seizure discharges occurred only during behavioral arrest. Immunostaining for AnkG and PanNav showed profound disruption of cortical AIS (Figure 4E–F). However, we did not observe increased neuronal cell death or neurodegeneration as indicated by antibodies against active caspase-3 or βAPP (not shown). Analysis of nodes of Ranvier in the corpus callosum showed that as in peripheral sensory neurons, the number of nodes with Nav channels gradually decreased over time (Figure 4G–H). Thus, the worsened behavioral and functional phenotypes in β1/β4 spectrin-deficient mice reflect disruption of both AIS and nodes of Ranvier and show the importance of these excitable domains for proper nervous system function.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/56629/elife-56629-fig4-v1.jpg)
 
-**Figure 4.:** (A) Accelerating rotarod test performed on 3 month-old Sptb and F/F; Sptbn4F/FNes-cre;Sptb mice, with N = 7 animals tested per genotype. Data are mean ± SEM, ***p=5.78E-06. (F/F; Sptbn4F/FB) Video EEG monitoring of awake and behaving 3 month-old mice showed generalized seizure discharges in Nes-cre;Sptb mice that were not detected in F/F; Sptbn4F/FSptb littermates. (F/F; Sptbn4F/FC–D) Quantification of interictal-spikes/hr and seizures/hr in Sptb and F/F; Sptbn4F/FNes-cre;Sptb mice. N = 3 and 4 for F/F; Sptbn4F/FSptb and F/F; Sptbn4F/FNes-cre;Sptb mice, respectively. Data are mean ± SEM. For interictal-spikes/hr, *p=0.0194; for seizures/hr, **p=0.0085. (F/F; Sptbn4F/FE) Immunostaining of brain cortical sections from 3 month-old Sptb and F/F; Sptbn4F/FNes-cre;Sptb mice using PanNav (green) and AnkG (red) antibodies. Scale bar, 50 μm. (F/F; Sptbn4F/FF) Normalized fluorescence intensity for AnkG and PanNav at AIS in PV(-) and PV(+) neurons in cortex from 3 month old Sptb and F/F; Sptbn4F/FNes-cre;Sptb mice. N = 3 mice with a total of 37–50 AIS measured in each neuron type per genotype. Data are mean ± SEM. For AnkG in PV(-) and PV(+) neurons, *p=0.0152 and *p=0.0135, respectively; for PanNav in PV(-) and PV(+) neurons, *p=0.0159 and **p=0.0073, respectively. (F/F; Sptbn4F/FG) Immunostaining of corpus callosum from 3 and 6 month-old Sptb and F/F; Sptbn4F/FNes-cre;Sptb mice using PanNav (green) and Caspr (red) antibodies. Arrows indicate intact nodal Nav clusters, whereas arrowheads indicate nodes devoid of Nav channels. Scale bar, 10 μm. (F/F; Sptbn4F/FH) Quantification of the percentage of corpus callosum nodes labeled for Nav channels in Sptb and F/F; Sptbn4F/FNes-cre;Sptb mice at the indicated ages. Data are mean ± SEM. N = 3 animals with a total of 345–377 nodes counted in each genotype per age. For 3 month-old, *p=0.0152; 6 month-old, ***p=0.0009.F/F; Sptbn4F/FFigure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Accelerating rotarod test performed on 3 month-old SptbF/F; Sptbn4F/F and Nes-cre;SptbF/F; Sptbn4F/F mice, with N = 7 animals tested per genotype. Data are mean ± SEM, ***p=5.78E-06. (B) Video EEG monitoring of awake and behaving 3 month-old mice showed generalized seizure discharges in Nes-cre;SptbF/F; Sptbn4F/F mice that were not detected in SptbF/F; Sptbn4F/F littermates. (C–D) Quantification of interictal-spikes/hr and seizures/hr in SptbF/F; Sptbn4F/F and Nes-cre;SptbF/F; Sptbn4F/F mice. N = 3 and 4 for SptbF/F; Sptbn4F/F and Nes-cre;SptbF/F; Sptbn4F/F mice, respectively. Data are mean ± SEM. For interictal-spikes/hr, *p=0.0194; for seizures/hr, **p=0.0085. (E) Immunostaining of brain cortical sections from 3 month-old SptbF/F; Sptbn4F/F and Nes-cre;SptbF/F; Sptbn4F/F mice using PanNav (green) and AnkG (red) antibodies. Scale bar, 50 μm. (F) Normalized fluorescence intensity for AnkG and PanNav at AIS in PV(-) and PV(+) neurons in cortex from 3 month old SptbF/F; Sptbn4F/F and Nes-cre;SptbF/F; Sptbn4F/F mice. N = 3 mice with a total of 37–50 AIS measured in each neuron type per genotype. Data are mean ± SEM. For AnkG in PV(-) and PV(+) neurons, *p=0.0152 and *p=0.0135, respectively; for PanNav in PV(-) and PV(+) neurons, *p=0.0159 and **p=0.0073, respectively. (G) Immunostaining of corpus callosum from 3 and 6 month-old SptbF/F; Sptbn4F/F and Nes-cre;SptbF/F; Sptbn4F/F mice using PanNav (green) and Caspr (red) antibodies. Arrows indicate intact nodal Nav clusters, whereas arrowheads indicate nodes devoid of Nav channels. Scale bar, 10 μm. (H) Quantification of the percentage of corpus callosum nodes labeled for Nav channels in SptbF/F; Sptbn4F/F and Nes-cre;SptbF/F; Sptbn4F/F mice at the indicated ages. Data are mean ± SEM. N = 3 animals with a total of 345–377 nodes counted in each genotype per age. For 3 month-old, *p=0.0152; 6 month-old, ***p=0.0009.
+
+![Video 1.](https://cdn.elifesciences.org/articles/56629/elife-56629-video1.mp4.jpg)
+
+**Video 1.:** Mice lacking β1 and β4-spectrin in the central nervous system showed motor impairments.
 
 ## Discussion
 
@@ -82,30 +94,376 @@ In summary, our results show that although AIS are thought to be the evolutionar
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Sptb</td>
+      <td>https://www.ncbi.nlm.nih.gov/gene/20741</td>
+      <td>Gene ID: 20741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Sptbn4</td>
+      <td>https://www.ncbi.nlm.nih.gov/gene/80297</td>
+      <td>Gene ID: 80297</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Nestin-cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No:003771</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Sptbflox/flox</td>
+      <td>PMID:32052742</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Sptbn4flox/flox</td>
+      <td>PMID:30226828</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ankyrin G (Mouse monoclonal)</td>
+      <td>Neuromab</td>
+      <td>Clone: N106/36; RRID:AB_10673030</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ankyrin G (Mouse monoclonal)</td>
+      <td>Neuromab</td>
+      <td>Clone N106/65; RRID:AB_10675130</td>
+      <td>IF (1:100) for STED</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ankyrin R (Mouse monoclonal)</td>
+      <td>Neuromab</td>
+      <td>Clone N380/A10; RRID:AB_2491109</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Parvalbumin (Mouse monoclonal)</td>
+      <td>Neuromab</td>
+      <td>Clone L114/3; RRID:AB_2651167</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PanNav (Mouse monoclonal)</td>
+      <td>Neuromab</td>
+      <td>Clone: N419/78; RRID:AB_2493099</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PanNav (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Clone: K58/35; RRID:AB_477552</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β1 spectrin (Mouse monoclonal)</td>
+      <td>Neuromab</td>
+      <td>Clone: N385/21; RRID:AB_2315815</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β4 spectrin SD antibody (Rabbit polyclonal)</td>
+      <td>PMID:28123356</td>
+      <td></td>
+      <td>IF (1:500) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ankyrin R (Rabbit polyclonal)</td>
+      <td>PMID:25362473</td>
+      <td></td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Caspr (Rabbit polyclonal)</td>
+      <td>PMID:10460258</td>
+      <td>RRID:AB_2572297</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pan Neurofascin (Chicken polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat.#: AF3235; RRID:AB_10890736</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MAP2 (Chicken polyclonal)</td>
+      <td>Encor</td>
+      <td>Cat.#: CPCA-MAP2; RRID:AB_2138173</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat.#: 338002; RRID:AB_1279414</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Parvalbumin (Rabbit polyclonal)</td>
+      <td>Novus</td>
+      <td>RRID:AB_791498</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-active Caspase 3 (Rabbit polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>RRID:AB_2243952</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-βAPP (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_2533902</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genotyping primer for Sptbn4flox/flox mouse (sense)</td>
+      <td>PMID:30226828</td>
+      <td></td>
+      <td>5’-GAGCTGCATAAGTTCTTCAGCGATGC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genotyping primer for Sptbn4flox/flox mouse (anti-sense)</td>
+      <td>PMID:30226828</td>
+      <td></td>
+      <td>5’-ACCCCATCTCAACTGGCTTTCTTGG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genotyping primer for Sptbflox/flox mouse (sense)</td>
+      <td>PMID:32052742</td>
+      <td></td>
+      <td>5’- ACAGAGACAGATGGCCGAAC-3‘</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genotyping primer for Sptbflox/flox mouse (anti-sense)</td>
+      <td>PMID:32052742</td>
+      <td></td>
+      <td>5’-CTCTGGTTCCCAGGAGAGC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genotyping primer for Avil-cre mouse (primer 1)</td>
+      <td>PMID:29038243</td>
+      <td></td>
+      <td>5’-CCCTGTTCACTGTGAGTAGG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genotyping primer for Avil-cre mouse (primer 2)</td>
+      <td>PMID:29038243</td>
+      <td></td>
+      <td>5’- AGTATCTGGTAGGTGCTTCCAG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genotyping primer for Avil-cre mouse (primer 3)</td>
+      <td>PMID:29038243</td>
+      <td></td>
+      <td>5’-GCGATCCCTGAACATGTCCATC-3’</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Rat)</td>
+      <td>pEGFP-N1-AnkG-270kDa</td>
+      <td>PMID:9744885</td>
+      <td></td>
+      <td>Transfected construct (Rat)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Human)</td>
+      <td>pEGFP-N1-AnkR</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Transfected construct (Human) Rasband laboratory</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Human/Rat)</td>
+      <td>pEGFP-N1- AnkR/G chimera</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Transfected construct (Human/Rat) Rasband laboratory</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AnkR-F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5’-ATCTCGAGATGCCCTATTCTGTGG-3’ Rasband laboratory</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AnkR-R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5’-AGCTTGAGGGGGTTGGGTGTCGA-3’ Rasband laboratory</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pEGFP-N1-F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5’-CCAACCCCCTCAAGCTTCGAATTCTG-3’ Rasband laboratory</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pEGFP-N1-R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5’-TAGGGCATCTCGAGATCTGAGTCC-3’ Rasband laboratory</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AnkR-SBD-F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5’-CCCCTGGTACAGGCAACGTTCCCGGAGAATG-3’ Rasband laboratory</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AnkR-SBD-R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5’-ACTGTTTTGTATCGCAGGGCCAG-3’ Rasband laboratory</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AnkG-RD-F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5’-TGCGATACAAAACAGTTGAACGGAG-3’ Rasband laboratory</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AnkG-RD-R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5’- GTACCGTCGACTGCAGAATTCGGTGGGCTTTCTTCTC-3’ Rasband laboratory</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AnkR-RD-F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5’- TCCGATATCAGCATTCTCAGTGAGTCC-3’ Rasband laboratory</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AnkR-RD-R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5’- TAGAATTCGGGGGTTGGGTGTCGAGGTG-3’ Rasband laboratory</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GeneArt Seamless Cloning and Assembly Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A13288</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen</td>
+      <td>Carl Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Labchart 8.0</td>
+      <td>ADI Systems</td>
+      <td>RRID:SCR_017551</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leica Application Suite X</td>
+      <td>Leica</td>
+      <td>RRID:SCR_013673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>National Institutes of Health</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>Graph Pad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 6</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 SptbF/F and Sptbn4F/F mice were generated as described previously (Unudurthi et al., 2018; Liu et al., 2020). Both SptbF/F and Sptbn4F/F mice were maintained on a mixed C57BL/6 and 129/sv background. Nestin-cre (Nes-cre) mice were purchased from the Jackson laboratory (Stock No:003771). Both male and female mice were used in our studies. All experiments comply with the National Institutes of Health Guide for the Care and Use of Laboratory Animals and were approved by the Baylor College of Medicine Institutional Animal Care and Use Committee.
 
-## Antibodies
+### Antibodies
 
 The following mouse monoclonal primary antibodies were purchased from the UC Davis/NIH NeuroMab facility: AnkG (106/36; RRID:AB_10673030), AnkG (106/65; RRID:AB_10675130), PanNav (N419/78; RRID:AB_2493099), β1 spectrin (N385/21; RRID:AB_2315815), Parvalbumin (L114/3; RRID:AB_2651167), AnkR (N388A/10, RRID:AB_2491109). Other antibodies were sourced as follows: mouse anti-PanNav (Sigma-Aldrich K58/35; RRID:AB_477552), chicken anti-MAP2 (Encor cat. CPCA-MAP2; RRID:AB_2138173), rat anti-GFP (Biolegend cat. 338002; RRID:AB_1279414), chicken anti-Pan-Neurofascin (R and D Systems cat. AF3235; RRID:AB_10890736), rabbit anti-βAPP (Thermo Fisher Scientific, RRID:AB_2533902), rabbit anti-Parvalbumin (Novus, RRID:AB_791498), rabbit anti-active Caspase3 (R and D Systems, RRID:AB_2243952). The following antibodies were described previously: rabbit anti-βIV Spectrin SD antibodies (Yoshimura et al., 2016); rabbit anti-AnkR (Ho et al., 2014); rabbit anti-Caspr (RRID:AB_2572297; Rasband et al., 1999). Secondary antibodies were purchased from Thermo Fisher Scientific and Jackson ImmunoResearch Laboratories.
 
-## DNA constructs
+### DNA constructs
 
 The full-length rat 270 kDa AnkG-GFP has been described (Zhang and Bennett, 1998). The Flag-tagged full-length human AnkR (Flag-AnkR) was generated from the Ank1 isoform 1 (NM_020476.2 CDS) as described previously (Ho et al., 2014). The construct pEGFP-N1-AnkR was made with GeneArt Seamless Cloning and Assembly Kit (Thermo Fisher Scientific, cat. No. A13288). The primers for amplifying full-length AnkR from Flag-AnkR are forward: ATCTCGAGATGCCCTATTCTGTGG, and reverse: AGCTTGAGGGGGTTGGGTGTCGA. The primers for amplifying pEGFP-N1 are forward: CCAACCCCCTCAAGCTTCGAATTCTG, and reverse: TAGGGCATCTCGAGATCTGAGTCC. To generate pEGFP-N1-AnkR/G chimera, we first generate pEGFP-N1-AnkR (MBD-SBD)-AnkG (GE-270-RD) construct. pEGFP-N1-full length AnkR was cut with restriction enzymes EcoRI and Acl1 and ligated with two fragments, AnkR SBD C-terminal half and AnkG GE-270-RD, using GeneArt Seamless Cloning and Assembly Kit (Thermo Fisher Scientific, cat. No. A13288). The primers for amplifying AnkR SBD C-terminal half from pEGFP-N1-AnkR are forward: CCCCTGGTACAGGCAACGTTCCCGGAGAATG, and reverse: ACTGTTTTGTATCGCAGGGCCAG. The primers for amplifying AnkG GE270-RD from rat 270 kDa AnkG-GFP are forward: TGCGATACAAAACAGTTGAACGGAG, and reverse: GTACCGTCGACTGCAGAATTCGGTGGGCTTTCTTCTC. After generating pEGFP-N1-AnkR (MBD-SBD)-AnkG (GE-270-RD) construct, we constructed pEGFP-N1-AnkR (MBD-SBD)-AnkG (GE-270)-AnkR (RD) (i.e., AnkR/G chimera), by amplifying DNA fragment encoding AnkR (RD) by PCR using Flag-AnkR as template and introduced into the EcoRV-EcoRI sites of the pEGFP-N1-AnkR (MBD-SBD)-AnkG (GE-270-RD) construct. The primers for amplifying AnkR (RD) are forward: TCCGATATCAGCATTCTCAGTGAGTCC, and reverse: TAGAATTCGGGGGTTGGGTGTCGAGGTG.
 
-## Hippocampal neuron culture and transfection
+### Hippocampal neuron culture and transfection
 
 Hippocampi were isolated and dissociated from E18.5 Sprague Dawley rat embryos. Neurons were plated on poly-D-Lysine and laminin-coated glass coverslips, and cultured in Neurobasal medium containing 1% Glutamax, 1% Penicillin/Streptomycin and 2% B27 supplement in a 5% CO2 incubator. At DIV7, DNA constructs were transfected into cultured neurons using Lipofectamine 2000; after 2 days, neurons were fixed by 4% PFA and proceed to immunostaining. Above reagents were sourced from Thermo Fisher Scientific.
 
-## Behavioral testing and electroencephalogram (EEG) recording
+### Behavioral testing and electroencephalogram (EEG) recording
 
 For accelerating rotarod test, mice were conditioned on rotating rod (Ugo Basile) with steady 5 rpm for 5 min. After 1 hr break, mice were placed on accelerated rotarod starting with 4 rpm to 40 rpm in 5 min. Latency to fall were recorded and averaged from 3 trials, which with 30 min breaks between trials. For EEG recording, mice were anesthetized with isoflurane (2.0–4% in oxygen, Patterson Veterinary Vaporizer), and silver wire electrodes (0.005″ diameter) soldered to a connector were surgically implanted bilaterally into the subdural space over frontal and parietal cortex. Mice were allowed to recover for 14 days before recording. Simultaneous video-EEG and behavioral monitoring (Labchart 8.0, ADI Systems) was performed during 24 hr sessions in adult (aged >6 weeks) mice of either sex. EEG was recorded while mice moved freely in the test cages. All EEG signals were amplified by a g.BSAMP biosignal amplifier (Austria), digitized by PowerLab with a 0.3 Hz high-pass and 60 Hz low-pass filter (ADInstruments, Dunedin, New Zealand) and acquired via Labchart 8.0 (ADInstruments). EEGs were reviewed by two trained observers.
 
-## Immunofluorescence and stimulated emission depletion (STED) microscopy
+### Immunofluorescence and stimulated emission depletion (STED) microscopy
 
 Procedures of mice tissue collection and preparation for immunostaining were described previously (Liu et al., 2020). Immunofluorescence images were captured by Axio-imager Z1 microscope or Axio-observer Z1 microscope fitted with an AxioCam digital camera, and collected by Zen software. All of these apparatus were sourced from Carl Zeiss MicroImaging. For STED microscopy, tissue sections were prepared through regular procedures except mounting using ProLong Diamond Antifade Mountant (Thermo Fisher Scientific, P36965). Imaging was performed on Leica TCS SP8X STED3x super-resolution microscope system (Leica) with 592 nm pulsed excitation laser, a pulsed 775 nm STED laser, and a 100X oil immersion objective lens (N.A. 1.4). Pixel size were around 17–30 nm among images. Deconvolution of image was performed by default LIGHTNING settings in LAS X Software (Leica). Measurements of fluorescence intensity and linear intensity profile were performed using FIJI (National Institutes of Health) and Zen (Carl Zeiss MicroImaging).
 
-## Statistical analysis
+### Statistical analysis
 
 Unpaired, two-tailed Student’s t-test was performed for statistical analysis unless otherwise indicated. Data were collected and processed randomly and analyzed using GraphPad Prism and Microsoft Excel. No statistical methods or power analysis were used to predetermine sample sizes, but our sample sizes are similar to those reported previously (Susuki et al., 2013). Data distribution was assumed to be normal. Experimenters were blinded to genotype in the following experiments: all behavioral experiments comparing SptbF/F and Nes-cre; SptbF/F mice, all behavioral experiments comparing Sptbn4F/F and Nes-cre; Sptbn4F/F mice, all analyses of AnkG spacing at AIS, all analyses of AnkG, Nav channel and GFP fluorescence intensity, and all analyses of EEG recordings. Experimenters were not blinded to genotype in the behavioral tests comparing SptbF/F; Sptbn4F/F and Nes-cre; SptbF/F; Sptbn4F/F mice due to obvious motor impairments. No data points were excluded.

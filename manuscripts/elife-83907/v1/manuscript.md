@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02bpp8r91 Center for Microbiology, VIB-KU Leuven Leuven Belgium
-2. https://ror.org/05f950310 Centre of Microbial and Plant Genetics, Department of Microbial and Molecular Systems, KU Leuven Leuven Belgium
+1. Center for Microbiology, VIB-KU Leuven Leuven Belgium ([ROR:02bpp8r91](https://ror.org/02bpp8r91))
+2. Centre of Microbial and Plant Genetics, Department of Microbial and Molecular Systems, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
 
 † Corresponding author
 

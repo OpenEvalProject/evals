@@ -18,15 +18,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01gdjt538 Structural Biology Initiative, CUNY Advanced Science Research Center New York United States
-2. https://ror.org/00453a208 PhD Program in Biochemistry, CUNY Graduate Center New York United States
-3. https://ror.org/043mz5j54 Department of Bioengineering and Therapeutic Sciences, University of California, San Francisco San Francisco United States
-4. https://ror.org/05etxs293 Diamond Light Source Didcot United Kingdom
-5. https://ror.org/00gqx0331 Research Complex at Harwell, Harwell Science and Innovation Campus Didcot United Kingdom
-6. https://ror.org/052gg0110 Centre for Medicines Discovery, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom
-7. https://ror.org/04z6c2n17 Department of Biochemistry, University of Johannesburg Johannesburg South Africa
-8. https://ror.org/00wmhkr98 Department of Chemistry and Biochemistry, City College of New York New York United States
-9. https://ror.org/00453a208 PhD Programs in Biochemistry, Biology, and Chemistry, CUNY Graduate Center New York United States
+1. Structural Biology Initiative, CUNY Advanced Science Research Center New York United States ([ROR:01gdjt538](https://ror.org/01gdjt538))
+2. PhD Program in Biochemistry, CUNY Graduate Center New York United States ([ROR:00453a208](https://ror.org/00453a208))
+3. Department of Bioengineering and Therapeutic Sciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+4. Diamond Light Source Didcot United Kingdom ([ROR:05etxs293](https://ror.org/05etxs293))
+5. Research Complex at Harwell, Harwell Science and Innovation Campus Didcot United Kingdom ([ROR:00gqx0331](https://ror.org/00gqx0331))
+6. Centre for Medicines Discovery, Nuffield Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+7. Department of Biochemistry, University of Johannesburg Johannesburg South Africa ([ROR:04z6c2n17](https://ror.org/04z6c2n17))
+8. Department of Chemistry and Biochemistry, City College of New York New York United States ([ROR:00wmhkr98](https://ror.org/00wmhkr98))
+9. PhD Programs in Biochemistry, Biology, and Chemistry, CUNY Graduate Center New York United States ([ROR:00453a208](https://ror.org/00453a208))
 
 † Corresponding author
 
@@ -54,7 +54,7 @@ Overall, this work provides new insights into ligandability and allostery in the
 
 ## Results
 
-## Two crystallographic fragment screens at RT
+### Two crystallographic fragment screens at RT
 
 This work centers on two RT crystallographic screens of PTP1B: single-crystal (hereafter abbreviated as ‘1-xtal’) and in situ. For both these two new RT screens and the prior cryo screen (Keedy et al., 2018), the procedures were identical for crystallization and crystal soaking with small-molecule fragments. However, the procedures differed in their approaches to crystal harvesting and diffraction data collection. In the previous cryo screen, the fragment-soaked crystals were harvested by hand with nylon loops, cryo-cooled in liquid nitrogen, and subjected to X-ray diffraction under a traditional cryo gas stream. In the new 1-xtal RT screen, the fragment-soaked crystals were harvested by hand with nylon loops, enclosed in plastic capillaries to prevent dehydration, and subjected to X-ray diffraction at ambient temperature. In the new in situ RT screen, the unharvested fragment-soaked crystals, still in the mother liquor solution in the crystallization plates, were subjected directly to X-ray diffraction at ambient temperature. See Materials and methods for further details about the experimental procedures. As outlined below, the crystallographic data and hit rates were similar for both RT screens, suggesting that the alternative protocols did not significantly impact the overall results.
 
@@ -62,9 +62,62 @@ For each RT screen, we used small-molecule fragments that were used previously f
 
 The fragment-soaked and control dataset for both screens are totaled and categorized in Table 1. Unless noted otherwise, the unique fragment datasets plus DMSO datasets for each screen were used for all subsequent analyses. As the two screens had 23 fragments in common, there were a total of 86+80–23=143 unique fragments overall across both RT screens.
 
+**Table 1.**
+ X-ray datasets collected for both room-temperature crystallographic screens.The total datasets tally for the in situ screen derives from a larger number of partial datasets or ‘wedges’ that were merged (see Materials and methods). The cryo-hit and cryo-non-hit categories are defined in Materials and methods. Datasets from crystals soaked with DMSO only are included in the total datasets tally, but not in the unique fragments tally.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>1-xtal</th>
+      <th>In situ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total raw X-ray datasets collected</td>
+      <td>269</td>
+      <td>111</td>
+    </tr>
+    <tr>
+      <td>Processed datasets with unique fragments</td>
+      <td>86</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>Cryo-hit</td>
+      <td>38</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>Cryo-non-hit</td>
+      <td>48</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>DMSO (negative control)</td>
+      <td>7</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
+
 The data were high resolution for both RT screens (Figure 1): the average resolution was 2.30 Å for 1-xtal and 1.99 Å for in situ, as compared to 2.10 Å for the previous cryo screen (Keedy et al., 2018). The slightly lower resolution of the 1-xtal data may be due to some degree of radiation damage, which was largely avoided by the in situ strategy (see Materials and methods). As outlined below, the results of the two screens are broadly very similar, and indeed identical for several fragments used in both screens (Figure 4—figure supplement 4), suggesting that radiation damage with the 1-xtal data was not a major factor in dictating our overall results. Additionally, a visual inspection of all the 1-xtal RT hits featured in this paper did not show any signs of local radiation damage (see Materials and methods).
 
-## Identifying fragment-binding hits
+![Figure 1.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig1-v1.jpg)
+
+**Figure 1.:** Histogram of X-ray resolutions of datasets soaked with DMSO (green), cryo-hits compounds (blue), or cryo-non-hits (red), collected at RT via (A) 1-xtal or (B) in situ data collection techniques.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** A comparison of RT vs. cryo unit cells (left: cryo a or b length vs. RT a or b length, right: cryo c length vs. RT c length) reveals the cryo datasets’ unit cell size has more variability than those at RT.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Partial datasets or ‘wedges’ are represented in a reduced dimensionality space based upon structure factor amplitude differences. These wedges can be approximately divided into three clusters (orange, purple, green). Some wedges at the cluster interfaces were used in multiple clusters. Wedges within a cluster were subsequently merged to generate complete datasets for input to PanDDA. Image from cluster4× (Ginn, 2020).
+
+### Identifying fragment-binding hits
 
 Using these high-resolution datasets, we identified low-occupancy protein fragment-binding events using the PanDDA algorithm (Pearce et al., 2017a) and manual inspection and modeling (see Materials and methods). For the fragments that bound to PTP1B at cryo (cryo-hits) (Keedy et al., 2018), we then examined how many bound to PTP1B at RT. The initial hit rates from the event maps automatically generated by PanDDA were surprisingly low: 12/38 (32%) for 1-xtal and 7/48 (15%) for in situ. Additionally, for cryo-non-hits, PanDDA revealed only two binding events; both were for the same fragment in the same dataset (vide infra).
 
@@ -78,19 +131,100 @@ Given the final cryo-hit reproduction rates of 39% and 29% for the RT screens, w
 
 **Figure 2.:** 1-BDC (a proxy for occupancy) is plotted for each binding event observed in either of two RT screens vs. in the previous cryogenic (cryo) screen. For two datasets, two binding events for the same fragment in the same structure are included as separate points. See Table 2 for definitions of pose categories. Those that did not show binding at RT are in gray along the x-axis. In some additional cases, RT event maps were calculated using the cryo 1-BDC to identify bound ligands at RT; these cases would sit artificially on the diagonal, and are not shown here.
 
-## Distribution of fragment hits at RT
+**Table 2.**
+ Characteristics of fragment hits for room-temperature (RT) screens.Table 2—source data 1.List of all fragment hits for room-temperature (RT) screens.* The fragment pose is the same but the protein conformation is altered at RT vs. cryo. ** We assume the cryo pose is different but the cryo model was not published since the ligand density was poorly defined.Table 2—source data 2.Chemical properties of fragments and their binding sites.H-bonds and non-H-bond interactions were calculated using Probe (Word et al., 1999) H-bonds are from ligand atoms to protein or water atoms. Other parameters were calculated using SwissADME (Daina et al., 2017). To test the significance of the difference in each parameter between the two fragment categories, Student’s t-tests were performed (*p<0.05, **p=0.054).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>RT pose category</th>
+      <th>1-xtal</th>
+      <th>In situ</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Same site, same pose</td>
+      <td>9</td>
+      <td>7</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Same site, new pose*</td>
+      <td>4</td>
+      <td>5</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>New site</td>
+      <td>3</td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Protein change</td>
+      <td>2</td>
+      <td>3</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Not hit</td>
+      <td>71</td>
+      <td>66</td>
+      <td>137</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The ‘same site, new pose’ category includes cases in which the fragment pose is the same but the protein conformation is notably altered at RT vs. cryo. See Table 2—source data 1 for more information on which individual datasets fit into which categories._
+
+### Distribution of fragment hits at RT
 
 Between our two RT screens, we have 15+14 = 29 new RT events with small-molecule fragments. These fragments fall into several categories based on the binding site, binding pose, and conformational response by the binding site (Table 2, Table 2—source data 1).
 
 The RT fragment hits are bound at sites distributed throughout PTP1B, including at least one at the active site and at all three allosteric sites previously highlighted by the cryo screen (Keedy et al., 2018): the 197 site, BB site, and L16 site (Figure 3—figure supplement 1). Many of these sites have RT hits in both the 1-xtal and in situ screens (Figure 3—figure supplement 1), confirming the success of both screens. Notably, in all of these four key sites, one or more fragments bind differently from cryo – either binding with a new pose at RT or binding to this site only at RT and not cryo (Figure 3).
 
-## Similar binding for many cryo-hits at RT
+![Figure 3.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig3-v1.jpg)
+
+**Figure 3.:** Overview of fragments bound across PTP1B at RT, colored by RT pose compared to cryogenic (cryo) pose: same site, same pose (blue); same site, new pose (orange); new site (red). See Table 2 for more details on the definitions of these classifications. Also highlighted are the active-site WPD loop (red), P loop (yellow), 197 allosteric site (green), BB allosteric site (orange), and L16 allosteric site (purple) (Keedy et al., 2018). The protein is shown in its open conformation with the WPD loop and L16 in the open state. The α7 helix is not shown since it is disordered when the protein is in the open state, which is favored at higher temperatures (Keedy et al., 2018). α7 does become ordered in one RT fragment-bound structure, but is not shown here.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Same views and fragments as Figure 3, but with fragments colored based on the RT screen: 1-xtal (dark pink) or in situ (light pink).
+
+### Similar binding for many cryo-hits at RT
 
 We next turned our attention to the precise binding poses of cryo-hit fragments at RT. Of the cryo-hits that also bind at RT, most do so with a similar pose (Figure 4, Table 2): 9 cases for 1-xtal (Figure 4—figure supplement 1) and 7 for in situ (Figure 4—figure supplement 2). Many of these are concentrated in two sites on the non-allosteric front side of the protein (Figure 3—figure supplement 1) that were also highly populated in the cryo screen. Additionally, some fragments are double-represented due to the overlap between the two screens. Notably, of the three fragments with binding events in both the 1-xtal and in situ screens, all three bind similarly in both RT screens (Figure 4—figure supplement 4), suggesting the RT results are reproducible and reliable.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig4-v1.jpg)
+
+**Figure 4.:** For each dataset, the RT PanDDA event map is in red (contour levels below), the RT model is in red (waters in red), and the corresponding cryo model is in blue (waters in purple). Datasets are named as follows: x####=RT in situ, z####=RT 1-xtal, y####=cryo. (A–C) in situ. (D–F) 1-xtal. (A) RT: x0224 (2.0 σ), cryo: y0118. (B) RT: x0285 (1.5 σ), cryo: y0772. (C) RT: x0262 (1.5 σ), cryo: y1656. (D) RT: z0007 (2.0 σ), cryo: y1710. (E) RT: z0015 (1.8 σ), cryo: y1554. (F) RT: z0025 (1.5 σ), cryo: y1294. This figure contains selected examples of fragments that bind similarly at RT vs. cryo; for all examples, see Figure 4—figure supplement 1 for 1-xtal and Figure 4—figure supplement 2 for in situ. For examples with no RT density for the cryo ligand using the cryo 1-BDC, see Figure 4—figure supplement 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** For each panel: RT event map density on left, cryo event map density on right (blue). Same coloring as main Figure 4. (A) RT: z0007 (2 σ), cryo: y1710 (1.2 σ). (B) RT: z0015 (1.8 σ), cryo: y1554 (1.5 σ). (C) RT: z0021 (1.1 σ), cryo: y1312 (1.5 σ). (D) RT: z0025 (1.5 σ), cryo: y1294 (1.5 σ). (E) RT: z0028 (1.2 σ), cryo: y1819 (1.2 σ). (F) RT: z0033 (0.8 σ), cryo: y1842 (1.2 σ). (G) RT: z0089 (2 σ), cryo: y0118 (1.5 σ). (H) RT: x0267 (1.5 σ), cryo: y0112 (1.5 σ). (I) RT: z0115 (1.5 σ), cryo: y0660 (1.5 σ).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** For each panel: RT density on left, cryo on right. Same coloring as main Figure 4. (A) RT: x0224 (2 σ), cryo: y0118 (1.5 σ). (B) RT: x0285 (1.5 σ), cryo: y0772 (0.9 σ). (C) RT: x0267 (1.5 σ), cryo: y0112 (0.9 σ). (D) RT: x0228 (1.9 σ), cryo: y0076 (1.2 σ). (E) RT: x0262 (1.5 σ), cryo: y1656 (1.2 σ). (F) RT: x0158 (2 σ), cryo: y0175 (1 σ). (G) RT: x0283 (2 σ), cryo: y0829 (1.5 σ).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Using the same 1-BDC as cryo, there is no RT density for the cryo ligand. (A) RT: z0011 (1.5 σ), cryo: y0363. (B) RT: z0023 (2 σ), cryo: y0522. (C) RT: x0199 (1.8 σ), cryo: y0049. (D) RT: x0219 (1.5 σ), cryo: y0426.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** For each panel: room temperature (RT) in situ density on left, RT 1-xtal density on right. Same coloring as main Figure 4. (A) RT: x0224 (2 σ), cryogenic (cryo): y0118; RT: z0089 (2 σ), cryo: y0118. (B) RT: x0267 (1.5 σ), cryo: y0112; RT: z0102 (1.5 σ), cryo: y0112.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** Red arrows indicate an RT water with only RT event map density. Blue arrows indicate a cryo water with only cryo event map density. Typical map contour levels used when modeling are shown, but conclusions were similar when visualizing at different map contour levels. For each panel: RT density on left, cryo on right. Same coloring as main Figure 4. (A) RT: x0228 (1.9 σ), cryo: y0076 (1.2 σ). (B) RT: x0262 (1.5 σ), cryo: y1656 (1.2 σ). (C) RT: x0267 (1.5 σ), cryo: y0112 (0.9 σ). This figure contains selected examples; see also Figure 6.
+
 Although all of the aforementioned fragments themselves bind with the same pose at RT vs. cryo, in some cases water molecules around them differ with temperature. In a few examples, clear event map density is present for a water at RT but not at cryo (Figure 4C, Figure 4—figure supplement 5A–B) or vice versa (Figure 4—figure supplement 5C), even when varying event map contour levels. Therefore, even when ligand binding is similar, the solvation layer around the ligand can change at cryo vs. RT.
 
-## New binding poses at RT
+### New binding poses at RT
 
 Some cryo-hit fragments bind in the same site at RT, but with a quite different pose. In one striking example, the fragment binds with the central ring in the same position at RT vs. cryo, but with substantially different positions for the two substituent groups (Figure 5). The in-plane chlorine and out-of-plane methylamine group are clearly defined in the respective event maps: the RT density is incompatible with the cryo model, and vice versa. Notably, this fragment binds in the allosteric L16 site (Figure 3), which was first reported alongside the original cryo fragment screen for PTP1B and highlighted as a promising target for small-molecule allosteric inhibitor development (Keedy et al., 2018).
 
@@ -110,9 +244,21 @@ A pair of other examples also feature fragments with distinct poses that are dif
 
 **Figure 7.:** (A) Left: RT density (red) 1.5 σ, z0055 (red); y0884 (blue). Right: cryo density (blue) 1 σ, z0055 (red); y0884 (blue). (B) Left: RT density (red) 2 σ, x0256 (red); y0650 (blue). Right: cryo density (blue) 0.8 σ, x0256 (red); y0650 (blue) (not previously deposited to the PDB). Density is linked at RT (dashed box), consistent with the fragment pose, but is cut off at cryo, even at lower contour. There is little to no density for the open state of the WPD loop (not shown).
 
-## New binding sites at RT
+### New binding sites at RT
 
 Beyond just differences within the same binding site, temperature can also modulate ligand binding more dramatically, even altering what protein site the ligand binds to. In a first example, the fragment binds to the allosteric BB site (Wiesmann et al., 2004; Keedy et al., 2018) at cryo (Figure 8A and C), but there is no event density at RT. Instead, there is strong fragment-binding event density at a different site nearly 40 Å away (Figure 8A and B). The RT event density supports subtle protein shifts in the new binding site to accommodate the new fragment-binding event (Figure 8B). By contrast, in the cryo-binding site, the RT protein conformation would clash with the cryo pose, disallowing binding at RT.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig8-v1.jpg)
+
+**Figure 8.:** (A–C) First example. (A) The two sites are ~38 Å away from one another. (B) In the RT dataset (z0042), the RT event map, calculated with 1-BDC of 0.36 and contoured at 1.5 σ (red), supports a bound fragment in the RT model (red) at a new site while the cryogenic (cryo) model (y1525) (blue) has no bound fragment. (C) By contrast, the RT event map (same contour) does not show any density for the cryo model (blue) from the previous cryo dataset (y1525). (D–F) Second example. (D) The two sites are ~46 Å away from one another. (E) The RT event map contoured at 1.75 σ (red) (same contour) does not support the cryo model (blue) from the previous cryo dataset (y0572). (F) By contrast, at a new site the RT event map (same contour) supports a bound fragment in the RT model (x0225) (red). The cryo model has no bound fragment.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Cryo y0660 (blue); cryo density (blue) 1.5 σ. (B) RT z0115 (red); RT density (red) 0.7 σ.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A) The two sites are ~40 Å away from one another. (B) In the RT event map contoured at 2.5 σ (red), the RT dataset (x0285) supports a bound fragment at a new site. The cryogenic (cryo) model (blue) from the previous cryo dataset (y0772) has no bound fragment. (C) By contrast, the RT event map, calculated with 1-BDC of 0.15 (same contour), does not support the cryo model. (The site where the RT map matches the cryo site is not shown.)
 
 In additional examples, elevated temperature dissipates what seem to be cryo-binding artifacts. In the first such example, at cryo the fragment binds with an artifactual stacking arrangement involving three copies of the fragment (Figure 8D and E), but at RT there is no event density (automated or custom) for this stacking. This result suggests that temperature can modulate protein-ligand energy landscapes significantly, in this case by disfavoring enthalpically favorable stacking at higher temperature. Moreover, at RT, new event density for a single copy of this fragment appears at a distal site (Figure 8F) that is over 45 Å away from the cryo site (Figure 8D). Cryo event density at the new site was too weak to justify modeling a bound fragment (Keedy et al., 2018). Thus, the cryo-binding site is unique to cryo and the RT-binding site is unique to RT. In fact, this is the only case in which a fragment binds at RT to a new site that was not previously thought to bind any fragments at cryo (although later computational reanalysis did discover one previously undetected adjacent cryo-hit in this area; Ginn, 2020). A Tris buffer molecule also fortuitously binds in the same location in another published structure (PDB ID 4y14), although it is held in place by a distinct crystal contact due to that structure’s space group.
 
@@ -120,15 +266,23 @@ In a related but distinct case, a fragment previously bound at cryo with a seemi
 
 In a final, somewhat more complicated example, a fragment previously bound at three distal sites at cryo. At RT the fragment binds to only one of the cryo sites, in a nearly identical pose. In the other cryo sites, RT-binding events were not readily detected, either automatically by PanDDA or in RT event maps calculated at the cryo events’ 1-BDC values. More strikingly, at RT the fragment now binds to an additional new site (Figure 8—figure supplement 2A and B) that is over 40 Å away from any of the three cryo sites (Figure 8—figure supplement 2C). Although fragment binding was clear in cryo event maps at the three cryo sites, cryo density was unconvincing at the RT site; therefore, no binding event was detectable at this new site at cryo. Thus, as with the examples above (Figure 8), this fragment binds uniquely to a new site at RT.
 
-## New covalent binding events to lysines
+### New covalent binding events to lysines
 
 In addition to the fragments that switch binding sites at RT as detailed above, one fragment binds only in our RT datasets – and in an unexpected fashion. In RT event maps, we observe strong event density at/near both the allosteric 197 and L16 sites (Keedy et al., 2018). Surprisingly, at each site, the event density is contiguous with the side chains of a nearby lysine residue (Figure 9), consistent with covalent binding by the isatin-based fragment. First, at the allosteric L16 site, the fragment binds covalently to Lys237 (part of the eponymous Loop 16) – although it binds adjacent to the L16 pocket itself, nearer to the allosteric BB site (Figure 9C). Second, at the allosteric 197 site site, the fragment binds covalently to Lys197 with a pose that is strikingly similar to that of a covalent allosteric inhibitor tethered to a K197C mutant (Keedy et al., 2018; Figure 9A).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig9-v1.jpg)
+
+**Figure 9.:** (A) RT structure with the fragment covalently bound to both K197 and K237 (z0048, red), aligned with cryogenic (cryo) structure with a previously reported allosteric inhibitor covalently bound to K197C (6b95, green). (B) Fragment bound to K197 at the 197 allosteric site, with RT event density at 1.5 σ. (C) Fragment bound to K237 at the L16 allosteric site, with RT event density at 1.5 σ.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) 180° rotation around the vertical axis of main Figure 9A, to view the backside of z0048 (red) aligned with 6b95 (green). The WPD loop remains open, but the P loop and the nearby substrate-binding loop adopt different conformations. (B) z0048 aligned with 6b95 and a structure with Cys215 in the P loop oxidized, PDB ID 1oes (orange). Room temperature (RT) event density is shown at 1.5 σ (red mesh). The new loop conformation at RT matches 1oes, not 6b95.
 
 The distal active-site P loop and substrate-binding loop adopt new conformations that are similar to those observed when the catalytic Cys215 is oxidized (van Montfort et al., 2003), although it is unclear whether Cys215 is oxidized in our RT event map. These conformations were not observed with the K197C-tethered allosteric inhibitor (Figure 9—figure supplement 1).
 
 This fragment is a cryo-non-hit, meaning it demonstrably did not bind at cryo despite a high-resolution cryo dataset (1.89 Å, y1159). Indeed, it is the only cryo-non-hit to bind in either RT screen. This cryo-non-hit was chemically dissimilar to all previous cryo-hits: the most similar cryo-hit has a low Tanimoto score relative to this RT fragment (0.36, y1703) and does not bind near the RT sites. It is possible that the crystal for the cryo dataset was insufficiently soaked with this compound, or that the new RT-binding events seen here are due to additional chemical changes to the compound in DMSO solvent over time that altered its reactivity toward lysines. As expected for fragments due to their weak binding affinities, this molecule does not inhibit PTP1B with an in vitro activity assay (Keedy et al., 2018) (data not shown). However, our observations here raise the hope that optimized versions of this compound, particularly driven by fragment linking of the K197C-targeted compound and this new fragment (Figure 9A), could yield potent allosteric inhibitors for wildtype (WT) PTP1B, without need for mutation to a cysteine.
 
-## Unique protein conformational responses at RT
+### Unique protein conformational responses at RT
 
 Temperature does not only affect fragment binding to the protein – it can also affect the protein’s conformational response to fragment binding. With both screens, we observe protein conformational responses that are preferentially localized to the key allosteric sites that were identified in our previous study as being inherently linked to the active site (Keedy et al., 2018).
 
@@ -136,7 +290,23 @@ The C-terminal end of the α6 helix forms part of the allosteric L16 site (Keedy
 
 However, in the nearby allosteric BB site (Wiesmann et al., 2004), the α6 helix is differentially ordered upon binding of a fragment at RT vs. cryo (Figure 10). Although the fragment binds in the same pose at RT and cryo, an entire additional helical turn of α6 is ordered at RT. This example illustrates that temperature can modulate not only the positions of protein structural elements during ligand binding, but also their relative order vs. disorder.
 
+![Figure 10.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig10-v1.jpg)
+
+**Figure 10.:** (A) In the BB allosteric site, the room temperature (RT) density, x0222 (red); contoured at 1.25 σ, is consistent with an extended and more ordered α6 helix (dashed box). (B) In contrast, the cryogenic (cryo) density, y0205 (blue); contoured at 1.75 σ, becomes disordered and therefore the α6 helix is not modeled as extended as in the RT model (dashed box). (C) Overlay of the two models showing the fragment pose is extremely similar whereas the RT helix is extended and more ordered (dashed box).
+
 Elsewhere on the contiguous allosteric back face of PTP1B, in the 197 site (Keedy et al., 2018), a fragment binds with a similar pose at cryo and RT (Figure 11, Figure 11—figure supplement 1). When this fragment binds at cryo, the protein globally remains in its default open state (Figure 11). However, at RT, the allosteric L16 site closes, and the active-site WPD loop partially closes (Figure 11). Notably, this fragment binds in the same position as a previously reported covalently tethered allosteric inhibitor (Keedy et al., 2018; Figure 11—figure supplement 2; see also Figure 9). Thus, RT allows for distinct protein conformational redistributions in response to fragment binding in allosteric sites.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig11-v1.jpg)
+
+**Figure 11.:** Although the fragment binds in a similar manner and in the same allosteric site (the 197 site) in both the RT model (z0032) (red) and the cryogenic (cryo) model (y1763) (blue), the protein response is different between the two temperatures. At cryo, the protein retains the default open conformation, with loop 16 in the L16 site open and the WPD loop also open. Alternatively, at RT, the L16 site is fully closed, while the WPD loop exhibits alternate conformations with the loop both open and closed. The α7 helix (not shown) remains disordered in both temperatures.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig11-figsupp1-v1.jpg)
+
+**Figure 11—figure supplement 1.:** (A) Same as main Figure 11. (B) z0032 (red), y1763 (blue), RT density, 1.5 σ, indicate the fragment binds in the 197 site. (C) RT density, 1.5 σ, showing the WPD loop adopts alternative conformations with the WPD loop open and closed. (D) RT density, 1.5 σ, is consistent with loop 16 modeled in the closed conformation.
+
+![Figure 11—figure supplement 2.](https://cdn.elifesciences.org/articles/84632/elife-84632-fig11-figsupp2-v1.jpg)
+
+**Figure 11—figure supplement 2.:** Overlay of z0032 with PDB ID 6b95, which includes a covalent inhibitor targeting the K197C mutation in the allosteric 197 site. Same coloring as in Figure 9.
 
 ## Discussion
 
@@ -164,19 +334,50 @@ Overall, our work highlights the value and accessibility of RT crystallographic 
 
 ## Materials and methods
 
-## Protein expression
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human PTP1B recombinant protein</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from Escherichia coli BL21 cells</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PanDDA software</td>
+      <td>PanDDA (https://pandda.bitbucket.io/)</td>
+      <td></td>
+      <td>Version 0.2.14</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression
 
 All experiments used the same PTP1B construct as was used previously: residues 1–321, WT* (C32S/C92V double mutation), in the pET24b vector carrying a kanamycin resistance gene (Keedy et al., 2018). Expression and purification were also performed as previously described (Keedy et al., 2018). PTP1B was transformed into BL21 Escherichia coli competent cells. The cultures were grown overnight in a 5 mL LB media containing 35 mg/L (final) kanamycin at 37°C shaking continuously at 150 rpm. Next, this overnight culture was used to inoculate 1 L LB media containing 35 mg/L (final) kanamycin. This culture was grown until the optical density at 600 nm (OD600) reached between 0.6 and 0.8. PTP1B expression was then immediately induced by adding IPTG to 100 µM (final) and incubating for about 18–20 hr at 18°C shaking continuously at 200–250 rpm. The culture was then pelleted by centrifugation, the supernatant discarded, and the cell pellets (‘cellets’) harvested and stored at –80°C for subsequent purification.
 
-## Protein purification
+### Protein purification
 
 On the day of purification, each cellet was retrieved from –80°C and thawed on ice in 45 mL of lysis buffer (100 mM MES pH 6.5, 1 mM EDTA, freshly added 1 mM DTT) and a dissolved Pierce Protease Inhibitor Tablet. The cells were resuspended using a tabletop vortex. The homogenous cell suspension was then subjected to sonication using a Branson Digital Sonifier, with the probe submerged halfway into the suspension for about 20 min (10 s on/off) with 50% amplitude. The lysed cells were then subjected to centrifugation at 4°C, and the supernatant was filtered using 0.22 µm syringe filters and loaded onto an SP FF 16/10 cation exchange column, pre-equilibrated in lysis buffer, in an ÄKTA Pure purification system (GE Healthcare Life Sciences). The protein was eluted as 5 mL fractions using a linear gradient of lysis buffer from 0 to 1 M NaCl. PTP1B eluted at approximately 200 mM NaCl per the UV detector and SDS-PAGE analysis. The PTP1B fractions were pooled together and concentrated to 3 mL volume, then applied to a Superdex 75 (GE Healthcare Life Sciences) size exclusion column pre-equilibrated in crystallization buffer (10 mM Tris pH 7.5, 0.2 mM EDTA, 25 mM NaCl, 3 mM freshly added DTT). PTP1B eluted as a single peak, with high purity per SDS-PAGE analysis. The purified PTP1B protein was then concentrated to 40 mg/mL and used for crystallization.
 
-## Protein crystallization
+### Protein crystallization
 
 The PTP1B crystallization conditions used here were similar to those described previously (Keedy et al., 2018). 40 mg/mL protein in crystallization buffer was mixed with well solution (0.1 M HEPES pH 7.5, 0.3 M magnesium acetate, 13.5% PEG 8000, 2% ethanol, and 1 mM beta-mercaptoethanol) and seed stock in a 135:135:30 nL protein:well:seed ratio. Glycerol was not included. Seed stocks were prepared using Hampton Seed Bead tools with previously grown crystals. Drops were set using a TTP Labtech Mosquito device in 96-well sitting-drop crystallization trays. For the single-crystal screen, both MiTeGen In-Situ-1 and MRC SwissCi trays were used. For the in situ crystallographic screen, MiTeGen In-Situ-1 trays were used. Crystals appeared within about 3 days, and grew to maximum size within about 1 week. Crystals grew to dimensions of approximately 100×20×20 μm3 up to approximately 500×100×100 μm3.
 
-## Fragment selection
+### Fragment selection
 
 For the 1-xtal screen, we used fragments from the Maybridge 1000 fragment library (Maybridge Ro3 core set), the Edelris Keymical fragment library, and the Diamond Light Source in-house fragment library (DSPL) (Cox et al., 2016). For cryo-hits, we included 59 fragments that bound to several different sites of interest at cryo. For cryo-non-hits, we included 51 fragments that spanned the range of highly similar to dissimilar as compared to the previous cryo-hits.
 
@@ -184,13 +385,13 @@ For the in situ screen, we used fragments from the DSi-Poised (DSiP) library, wh
 
 Some fragments that were cryo-non-hits in our original cryo screen (Keedy et al., 2018) were subsequently identified as cryo-hits using the new cluster4x method for computational clustering method (Ginn, 2020). Here, for both screens, we considered such fragments to be cryo-hits. This corresponded to three fragments for 1-xtal and one fragment for in situ. However, no RT-binding events were seen for any of these newly identified cryo-hits.
 
-## Crystal soaking
+### Crystal soaking
 
 For each screen, crystals were soaked with small-molecule fragments using an Echo acoustic droplet ejection liquid handler and a database mapping individual fragments to individual crystals, as described (Collins et al., 2017). For the in situ screen, anywhere from one to five wells were soaked with a given fragment, depending on the number of crystals per well.
 
 Two strategies were used to confirm that fragments were successfully soaked into the crystallization drops. First, for both screens, log files for the acoustic droplet ejection device were inspected, and any wells with suspicious entries or errors were excluded. Second, for the in situ screen, optical images of the drops after soaking were visually inspected, and any wells that did not clearly feature a second adjacent drop corresponding to the fragment in DMSO were excluded.
 
-## X-ray diffraction
+### X-ray diffraction
 
 For the 1-xtal screen, harvested crystals on size-matched nylon loops were enclosed in plastic capillaries containing ~10 µL of well solution and sealed with vacuum grease, and these samples were mounted onto the goniometer at Diamond Light Source beamline i03. Most datasets were collected with 180° of rotation over 1800 images with 0.1° oscillations with 0.05 s exposures. Some datasets near the end of the data collection shift were lowered to collect only 120° of crystal rotation, as smaller crystals sometimes did not appear to survive the full 180° dose. The X-ray beam was attenuated to 4.5% transmission for a flux of ~4.5e11 ph/s with a 50×20 or 80×20 μm2 beam profile at a wavelength of 0.97625 Å. Temperature was controlled at 278 K using an Oxford Cryostream (800 Series).
 
@@ -198,7 +399,7 @@ For the in situ screen, crystallization trays were mounted onto the goniometer a
 
 Translational/vector data collection was not used for either screen. Whereas cryo datasets were previously named y#### (y for ‘cryo’), RT datasets here were named x#### for the in situ screen and z#### for the 1-xtal screen.
 
-## X-ray data processing
+### X-ray data processing
 
 For the 1-xtal screen, datasets were reduced using XDS (Kabsch, 2010). The frames that were used to process the datasets were manually chosen to exclude frames where the number of detected spots dipped below around 20, commonly due to the crystal rotating out of the beam, the crystal reaching the end of its lifetime due to radiation damage, or when the diffraction quality dropped as a result of the dimensions of the crystal. Multiple datasets were merged only if they derived from the same crystal. Resolution cutoffs were chosen to ensure the following statistics in the highest resolution bin: an <I/σ(I)> of 1.0 or higher, a completeness of 90% or higher, and a CC1/2 of at least 50%. The resolutions of individual datasets were not held to be identical, and the cutoff for each dataset was chosen to be the point at which the reflections from the highest resolution bin made the statistics of that bin better, or kept the same for <I/σ(I)>, CC1/2 and completeness. Datasets shared a common set of Rfree flags and a common reference dataset to ensure consistent data indexing due to the space group of the crystal form, P 31 2 1. The final datasets were reasonably high resolution (Figure 1A).
 
@@ -210,7 +411,7 @@ For an alternative data processing pipeline for the in situ data, the cluster4x 
 
 For each dataset, we used the Dimple utility from CCP4 (Winn et al., 2011) for phasing and initial refinement. Dimple was run with molecular replacement (flag: -M0) for the first dataset only, and only with downstream refinement steps (flag: -M1) for all other datasets. Additional flags were included to obtain a consistent set of Rfree reflections (--free-r-flags, --freecolumn R-free-flags). For both screens, the same structural model was used for Dimple, based on a high-resolution DMSO-soaked in situ merged dataset. This model reflects the predominant global open state of PTP1B, with the α7 helix unmodeled and the C-terminus of the α6 helix modeled with partial occupancy (Keedy et al., 2018).
 
-## PanDDA modeling and refinement
+### PanDDA modeling and refinement
 
 For both the 1-xtal and in situ screens, PanDDA (Pearce et al., 2017a) version 0.2.14 was used. The pandda.analyse command was used with the minimum build datasets set to 20.
 

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.03523.001 Deep transcriptome sequencing has revealed the existence of many transcripts that lack long or conserved open reading frames (ORFs) and which have been termed long non-coding RNAs (lncRNAs). The vast majority of lncRNAs are lineage-specific and do not yet have a known function. In this study, we test the hypothesis that they may act as a repository for the synthesis of new peptides. We find that a large fraction of the lncRNAs expressed in cells from six different species is associated with ribosomes. The patterns of ribosome protection are consistent with the translation of short peptides. lncRNAs show similar coding potential and sequence constraints than evolutionary young protein coding sequences, indicating that they play an important role in de novo protein evolution. DOI: http://dx.doi.org/10.7554/eLife.03523.001
+Deep transcriptome sequencing has revealed the existence of many transcripts that lack long or conserved open reading frames (ORFs) and which have been termed long non-coding RNAs (lncRNAs). The vast majority of lncRNAs are lineage-specific and do not yet have a known function. In this study, we test the hypothesis that they may act as a repository for the synthesis of new peptides. We find that a large fraction of the lncRNAs expressed in cells from six different species is associated with ribosomes. The patterns of ribosome protection are consistent with the translation of short peptides. lncRNAs show similar coding potential and sequence constraints than evolutionary young protein coding sequences, indicating that they play an important role in de novo protein evolution.
 
 ## Introduction
 
@@ -32,77 +32,319 @@ The idea that lncRNAs serve as a repository for the evolution of new peptides is
 
 ## Results
 
-## Characterization of coding and long non-coding transcripts
+### Characterization of coding and long non-coding transcripts
 
-We obtained polyA+ RNA and ribosome profiling sequencing data from six different published experiments performed in diverse eukaryotic species, mouse (Mus musculus), human (Homo sapiens, HeLa cells), zebrafish (Danio rerio), fruit fly (D. melanogaster), Arabidopsis (A. thaliana), and yeast (S. cerevisiae) (Table 1). After read mapping and transcript assembly, we classified the expressed transcripts longer than 200 nucleotides into coding and long non-coding classes (codRNAs and lncRNAs, respectively, Table 2).10.7554/eLife.03523.003Table 1.Data sets used in the studyDOI: http://dx.doi.org/10.7554/eLife.03523.003SpeciesGEO AccessionMapped reads (millions)Max read length (bp)DescriptionReferenceMouse M. musculusRNA-seqGSE30839226.043ES cells, E14Ingolia et al., 2011Ribosome profilingGSE3083939.247Human H. sapiensRNA-seqGSE2200429.836HeLa cellsGuo et al., 2010Ribosome profilingGSE2200478.336Zebrafish D. rerioRNA-seqGSE329001382.22 × 75Series of developmental stagesChew et al., 2013Ribosome profilingGSE465121040.044Fruit fly D. melanogasterRNA-seqGSE491971317.9500–2hr embryos, wild typeDunn et al., 2013Ribosome profilingGSE49197105.750Arabidopsis A. thalianaRNA-seqGSE5059779.851No stress conditions, TRAP purificationJuntawong et al., 2014Ribosome profilingGSE50597140.351Yeast S. cerevisiaeRNA-seqGSE5211920.5450GSY83, diploidMcManus et al., 2014Ribosome profilingGSE521196.835010.7554/eLife.03523.004Table 2.Fraction of transcripts associated with ribosomesDOI: http://dx.doi.org/10.7554/eLife.03523.004codRNAlncRNAExpressedAssociated with ribosomes (RP)ExpressedAssociated with ribosomes (RP)TotalStringentTotalStringentMouse14,24514,196 (99.7%)13,918 (97.7%)476390 (81.9%)367 (77.1%)Human17,01116,630 (97.8%)16,617 (97.7%)934403 (43.1%)343 (36.7%)Zebrafish12,59511,643 (92.4%)11,637 (92.4%)2392726 (30.4%)684 (28.6%)Fruit fly80418031 (99.9%)7623 (94.8%)2822 (78.6%)10 (35.7%)Arabidopsis19,16218,879 (98.5%)10,329 (53.9%)13993 (66.9%)68 (48.9%)Yeast47404547 (95.9%)4335 (91.5%)216 (28.6%)6 (28.6%)Stringent: number of transcripts significant at p < 0.05 using 3′UTRs as a null model (see ‘Materials and methods’ for more details).
+We obtained polyA+ RNA and ribosome profiling sequencing data from six different published experiments performed in diverse eukaryotic species, mouse (Mus musculus), human (Homo sapiens, HeLa cells), zebrafish (Danio rerio), fruit fly (D. melanogaster), Arabidopsis (A. thaliana), and yeast (S. cerevisiae) (Table 1). After read mapping and transcript assembly, we classified the expressed transcripts longer than 200 nucleotides into coding and long non-coding classes (codRNAs and lncRNAs, respectively, Table 2).
+
+**Table 1.**
+ Data sets used in the study
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Species</th>
+      <th>GEO Accession</th>
+      <th>Mapped reads (millions)</th>
+      <th>Max read length (bp)</th>
+      <th>Description</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Mouse M. musculus</td>
+      <td>RNA-seq</td>
+      <td>GSE30839</td>
+      <td>226.0</td>
+      <td>43</td>
+      <td rowspan="2">ES cells, E14</td>
+      <td rowspan="2">Ingolia et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Ribosome profiling</td>
+      <td>GSE30839</td>
+      <td>39.2</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Human H. sapiens</td>
+      <td>RNA-seq</td>
+      <td>GSE22004</td>
+      <td>29.8</td>
+      <td>36</td>
+      <td rowspan="2">HeLa cells</td>
+      <td rowspan="2">Guo et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Ribosome profiling</td>
+      <td>GSE22004</td>
+      <td>78.3</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Zebrafish D. rerio</td>
+      <td>RNA-seq</td>
+      <td>GSE32900</td>
+      <td>1382.2</td>
+      <td>2 × 75</td>
+      <td rowspan="2">Series of developmental stages</td>
+      <td rowspan="2">Chew et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Ribosome profiling</td>
+      <td>GSE46512</td>
+      <td>1040.0</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Fruit fly D. melanogaster</td>
+      <td>RNA-seq</td>
+      <td>GSE49197</td>
+      <td>1317.9</td>
+      <td>50</td>
+      <td rowspan="2">0–2hr embryos, wild type</td>
+      <td rowspan="2">Dunn et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Ribosome profiling</td>
+      <td>GSE49197</td>
+      <td>105.7</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Arabidopsis A. thaliana</td>
+      <td>RNA-seq</td>
+      <td>GSE50597</td>
+      <td>79.8</td>
+      <td>51</td>
+      <td rowspan="2">No stress conditions, TRAP purification</td>
+      <td rowspan="2">Juntawong et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Ribosome profiling</td>
+      <td>GSE50597</td>
+      <td>140.3</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Yeast S. cerevisiae</td>
+      <td>RNA-seq</td>
+      <td>GSE52119</td>
+      <td>20.54</td>
+      <td>50</td>
+      <td rowspan="2">GSY83, diploid</td>
+      <td rowspan="2">McManus et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Ribosome profiling</td>
+      <td>GSE52119</td>
+      <td>6.83</td>
+      <td>50</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Fraction of transcripts associated with ribosomes
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">codRNA</th>
+      <th colspan="3">lncRNA</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Expressed</th>
+      <th colspan="2">Associated with ribosomes (RP)</th>
+      <th>Expressed</th>
+      <th colspan="2">Associated with ribosomes (RP)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Total</th>
+      <th>Stringent</th>
+      <th></th>
+      <th>Total</th>
+      <th>Stringent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse</td>
+      <td>14,245</td>
+      <td>14,196 (99.7%)</td>
+      <td>13,918 (97.7%)</td>
+      <td>476</td>
+      <td>390 (81.9%)</td>
+      <td>367 (77.1%)</td>
+    </tr>
+    <tr>
+      <td>Human</td>
+      <td>17,011</td>
+      <td>16,630 (97.8%)</td>
+      <td>16,617 (97.7%)</td>
+      <td>934</td>
+      <td>403 (43.1%)</td>
+      <td>343 (36.7%)</td>
+    </tr>
+    <tr>
+      <td>Zebrafish</td>
+      <td>12,595</td>
+      <td>11,643 (92.4%)</td>
+      <td>11,637 (92.4%)</td>
+      <td>2392</td>
+      <td>726 (30.4%)</td>
+      <td>684 (28.6%)</td>
+    </tr>
+    <tr>
+      <td>Fruit fly</td>
+      <td>8041</td>
+      <td>8031 (99.9%)</td>
+      <td>7623 (94.8%)</td>
+      <td>28</td>
+      <td>22 (78.6%)</td>
+      <td>10 (35.7%)</td>
+    </tr>
+    <tr>
+      <td>Arabidopsis</td>
+      <td>19,162</td>
+      <td>18,879 (98.5%)</td>
+      <td>10,329 (53.9%)</td>
+      <td>139</td>
+      <td>93 (66.9%)</td>
+      <td>68 (48.9%)</td>
+    </tr>
+    <tr>
+      <td>Yeast</td>
+      <td>4740</td>
+      <td>4547 (95.9%)</td>
+      <td>4335 (91.5%)</td>
+      <td>21</td>
+      <td>6 (28.6%)</td>
+      <td>6 (28.6%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Stringent: number of transcripts significant at p < 0.05 using 3′UTRs as a null model (see ‘Materials and methods’ for more details)._
 
 We detected hundreds of annotated lncRNAs in the vertebrate species (mouse, human and zebrafish), the number being lower (<150) in the other species (fruit fly, Arabidopsis and yeast). In addition, we identified a large number of novel lncRNAs not annotated in the databases, 2488 taking all species together (Supplementary file 1A). The inclusion of such lncRNAs resulted in a sixfold increase in the number of lncRNAs amenable for study in zebrafish and a twofold increase in mouse. In yeast, we only found two annotated lncRNAs, but there were 19 novel ones. In the majority of the analyses, we merged the annotated and the novel lncRNAs.
 
-As expected, lncRNAs tended to be much shorter than codRNAs in all the species studied (
+As expected, lncRNAs tended to be much shorter than codRNAs in all the species studied (Figure 1A). We found that most lncRNAs contained at least one short ORF (≥24 amino acids) and often several ORFs. The average ORF size in lncRNAs was between 43 and 68 amino acids depending on the species (Supplementary file 1B). Consistent with previous studies, lncRNAs were expressed at significantly lower levels than codRNAs (Figure 1B, Wilcoxon test, p < 10−5).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig1-v1.jpg)
 
-**Figure 1.:** (A) Density plots of transcript length. (B) Box-plots of transcript expression level in log2(FPKM) units. lncRNA_ribo: lncRNAs associated with ribosomes; lncRNA_noribo: lncRNAs for which association with ribosomes was not detected. codRNA: coding transcripts encoding experimentally validated proteins except for zebrafish in which all transcripts annotated as coding were considered. The area within the box-plot comprises 50% of the data and the line represents the median value. In all studied species, codRNAs were expressed at higher levels than lncRNAs (Wilcoxon test, p < 10−5), and lncRNA_ribo at higher levels than lncRNA_noribo (Wilcoxon test, p < 0.005).DOI: http://dx.doi.org/10.7554/eLife.03523.005
+**Figure 1.:** (A) Density plots of transcript length. (B) Box-plots of transcript expression level in log2(FPKM) units. lncRNA_ribo: lncRNAs associated with ribosomes; lncRNA_noribo: lncRNAs for which association with ribosomes was not detected. codRNA: coding transcripts encoding experimentally validated proteins except for zebrafish in which all transcripts annotated as coding were considered. The area within the box-plot comprises 50% of the data and the line represents the median value. In all studied species, codRNAs were expressed at higher levels than lncRNAs (Wilcoxon test, p < 10−5), and lncRNA_ribo at higher levels than lncRNA_noribo (Wilcoxon test, p < 0.005).
 
-## Efficient detection of translation events by ribosome profiling
+### Efficient detection of translation events by ribosome profiling
 
 The analysis of ribosome profiling sequencing data showed that the percentage of expressed coding transcripts associated with ribosomes was >90% in all species, with the highest values (>99%) in mouse and fruit fly (Table 2). Pseudogenes had a lower rate of association with ribosomes than coding RNAs, but surprisingly, in species with many annotated pseudogenes, such as human, mouse, and Arabidopsis, the majority of them showed association with ribosomes (Supplementary file 1A). This appeared to be a true signal; while pseudogenes will typically show sequence similarity to other functional copies in the genome, we only considered uniquely mapped reads with no mismatches.
 
-Ribosome profiling is based on deep sequencing, and thus provides an unmatched level of resolution of the translated peptides when compared with current proteomics techniques. This is especially important for short proteins, which are difficult to detect by standard mass spectrometry methods (Slavoff et al., 2013). We used the ribosome-associated protein-coding RNA data to investigate the relationship between peptide detection by proteomics and protein length. We found that human and mouse translated proteins between 24 and 80 amino acids long were more difficult to identify in proteomics databases than longer proteins (Table 3).10.7554/eLife.03523.006Table 3.Fraction of translated proteins of different size detected in proteomics databasesDOI: http://dx.doi.org/10.7554/eLife.03523.006Protein size (amino acids)Species24–8081–130131–180>180Mouse27/58 (46.6%)222/286 (77.6%)256/330 (77.6%)3716/4786 (77.7%)Human116/272 (42.6%)536/748 (71.7%)669/875 (76.5%)6757/8964 (75.4%)Yeast27/30 (90.0%)168/207 (81.1%)234/265 (88.3%)2934/3224 (91.0%)Only transcripts encoding experimentally validated proteins (codRNAe) were considered.
+Ribosome profiling is based on deep sequencing, and thus provides an unmatched level of resolution of the translated peptides when compared with current proteomics techniques. This is especially important for short proteins, which are difficult to detect by standard mass spectrometry methods (Slavoff et al., 2013). We used the ribosome-associated protein-coding RNA data to investigate the relationship between peptide detection by proteomics and protein length. We found that human and mouse translated proteins between 24 and 80 amino acids long were more difficult to identify in proteomics databases than longer proteins (Table 3).
 
-## Long non-coding RNA transcripts frequently associate with ribosomes
+**Table 3.**
+ Fraction of translated proteins of different size detected in proteomics databases
 
-The percentage of lncRNAs scanned by ribosomes (lncRNA_ribo) was surprisingly high in all the species studied (
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Protein size (amino acids)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Species</td>
+      <td>24–80</td>
+      <td>81–130</td>
+      <td>131–180</td>
+      <td>&gt;180</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>27/58 (46.6%)</td>
+      <td>222/286 (77.6%)</td>
+      <td>256/330 (77.6%)</td>
+      <td>3716/4786 (77.7%)</td>
+    </tr>
+    <tr>
+      <td>Human</td>
+      <td>116/272 (42.6%)</td>
+      <td>536/748 (71.7%)</td>
+      <td>669/875 (76.5%)</td>
+      <td>6757/8964 (75.4%)</td>
+    </tr>
+    <tr>
+      <td>Yeast</td>
+      <td>27/30 (90.0%)</td>
+      <td>168/207 (81.1%)</td>
+      <td>234/265 (88.3%)</td>
+      <td>2934/3224 (91.0%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Only transcripts encoding experimentally validated proteins (codRNAe) were considered._
+
+### Long non-coding RNA transcripts frequently associate with ribosomes
+
+The percentage of lncRNAs scanned by ribosomes (lncRNA_ribo) was surprisingly high in all the species studied (Table 2). The values ranged from 28.6% in yeast to 81.9% in mouse. This affected the main lncRNA classes described in Ensembl v. 70, including long intervening non-coding RNAs (lincRNAs) or antisense transcripts (Supplementary file 1C). Short transcript size may hinder ribosome association detection (Aspden et al., 2014). We also found that the ribosome profiling signal was more difficult to detect in poorly expressed transcripts than in highly expressed ones, both for lncRNAs and codRNAs (Figure 2). As lncRNAs tend to be expressed at low levels and are short when compared to codRNAs (Figure 1), we might be underestimating their association with ribosomes.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig2-v1.jpg)
 
-**Figure 2.:** The percentage of transcripts associated with ribosomes is shown for several transcript expression intervals. codRNA: annotated coding transcripts encoding experimentally verified proteins (except in zebrafish for which all coding transcripts were considered). lncRNA: annotated and novel long non-coding RNAs. Only species with at least 20 transcripts in each expression bin were plotted. In the rest of species, the data were consistent with the trends shown.DOI: http://dx.doi.org/10.7554/eLife.03523.007
+**Figure 2.:** The percentage of transcripts associated with ribosomes is shown for several transcript expression intervals. codRNA: annotated coding transcripts encoding experimentally verified proteins (except in zebrafish for which all coding transcripts were considered). lncRNA: annotated and novel long non-coding RNAs. Only species with at least 20 transcripts in each expression bin were plotted. In the rest of species, the data were consistent with the trends shown.
 
-In order to determine if the ribosome profiling signal in lncRNAs was different from noise, we compared ribosome density in the transcripts it to that in 3′untranslated regions (3′UTRs). More specifically, the null model consisted in a size-matched set of sequences containing randomly taken 3′UTR from annotated coding transcripts. Ribosome density was calculated as the number of ribosome profiling reads divided by RNA-seq reads, a ratio defined as translational efficiency (TE) (
+In order to determine if the ribosome profiling signal in lncRNAs was different from noise, we compared ribosome density in the transcripts it to that in 3′untranslated regions (3′UTRs). More specifically, the null model consisted in a size-matched set of sequences containing randomly taken 3′UTR from annotated coding transcripts. Ribosome density was calculated as the number of ribosome profiling reads divided by RNA-seq reads, a ratio defined as translational efficiency (TE) (Ingolia et al., 2011). Both codRNAs and lncRNAS displayed much higher TE values than 3′UTRs in all species studied (Wilcoxon test p < 10−5, Figure 3). We could reject the null model for 90.12% of the lncRNAs and 87.19% of the codRNAs associated with ribosomes (p < 0.05) (see details by species in Table 2, Stringent set). Therefore, we concluded that the density of ribosomes in lncRNAs is much higher than expected by spurious ribosome binding.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig3-v1.jpg)
 
-**Figure 3.:** Cumulative distribution of TE values in human codRNAs, lncRNAs, and 3′UTR sequences. We randomly selected 3′UTRs with a minimum length of 30 nucleotides to build a set of 3′UTR sequences with the same size distribution as the complete transcripts.DOI: http://dx.doi.org/10.7554/eLife.03523.008
+**Figure 3.:** Cumulative distribution of TE values in human codRNAs, lncRNAs, and 3′UTR sequences. We randomly selected 3′UTRs with a minimum length of 30 nucleotides to build a set of 3′UTR sequences with the same size distribution as the complete transcripts.
 
-Next, we compared ribosome density in lncRNAs and codRNAs in each of the species focusing on regions covered by ribosome profiling reads to accommodate for any differences in the length of the putatively translated regions. In human, fruit fly, and yeast, TE was higher in codRNAs than in lncRNAs (Wilcoxon test, p < 0.005), but in mouse and zebrafish the opposite trend was observed (Wilcoxon test, p < 0.05) (
+Next, we compared ribosome density in lncRNAs and codRNAs in each of the species focusing on regions covered by ribosome profiling reads to accommodate for any differences in the length of the putatively translated regions. In human, fruit fly, and yeast, TE was higher in codRNAs than in lncRNAs (Wilcoxon test, p < 0.005), but in mouse and zebrafish the opposite trend was observed (Wilcoxon test, p < 0.05) (Figure 4). Despite the differences between the species, which may be due to technical issues, it is clear that lncRNAs can show TE values that are similar or even higher than codRNAs. The results were similar when we restricted the analysis to genes encoding a single transcript to avoid any possible biases due to multiple read mapping or when we employed the maximum TE in 90 nucleotide windows (Figure 4—figure supplement 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig4-v1.jpg)
 
-**Figure 4.:** Box-plots of transcript translational efficiency (TE) in log2(TE) units. The area within the box-plot comprises 50% of the data, and the line represents the median value. lncRNA: lncRNAs for which association with ribosomes was detected. codRNA: coding RNAs transcripts encoding experimentally validated proteins except for zebrafish in which all transcripts annotated as coding were considered.DOI: http://dx.doi.org/10.7554/eLife.03523.009
+**Figure 4.:** Box-plots of transcript translational efficiency (TE) in log2(TE) units. The area within the box-plot comprises 50% of the data, and the line represents the median value. lncRNA: lncRNAs for which association with ribosomes was detected. codRNA: coding RNAs transcripts encoding experimentally validated proteins except for zebrafish in which all transcripts annotated as coding were considered.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** Single isoforms correspond to data for genes with a single transcript. The number of such genes was 2961 codRNA and 246 lncRNA_ribo for mouse, 2853 codRNA and 150 lncRNA_ribo for human, 9352 codRNA and 412 lncRNA_ribo for zebrafish, 836 codRNA and 18 lncRNA_ribo for fruit fly, and 3024 codRNA and 92 lncRNA_ribo for Arabidopsis. In the case of yeast, all genes were taken. TE max is the maximum TE value taking 90 nucleotide windows.DOI: http://dx.doi.org/10.7554/eLife.03523.010
+**Figure 4—figure supplement 1.:** Single isoforms correspond to data for genes with a single transcript. The number of such genes was 2961 codRNA and 246 lncRNA_ribo for mouse, 2853 codRNA and 150 lncRNA_ribo for human, 9352 codRNA and 412 lncRNA_ribo for zebrafish, 836 codRNA and 18 lncRNA_ribo for fruit fly, and 3024 codRNA and 92 lncRNA_ribo for Arabidopsis. In the case of yeast, all genes were taken. TE max is the maximum TE value taking 90 nucleotide windows.
 
 For comparison, we collected a set of 29 human genes with non-coding functions described in several recent reviews (Supplementary file 2A; Ponting et al., 2009; Ulitsky and Bartel, 2013; Fatica and Bozzoni, 2014). Many of these genes play roles in the regulation of gene expression in the nucleus and are thus unlikely to be translated. We only detected expression for five of these genes: Malat1, Pvt1, Neat1, Meg8, and Cyrano. Transcripts encoded by the first three genes showed ribosome association. In the case of Malat1, this was also consistently observed in mouse and zebrafish (in the latter species Malat1 was identified as a novel transcript) and in the case of Pvt1 in mouse. Given the small number of expressed transcripts, we could not draw any general conclusions for this set.
 
-## lncRNAs show similar ribosome protection profiles to codRNAs
+### lncRNAs show similar ribosome protection profiles to codRNAs
 
 The exact positions of ribosome profiling reads on the RNA can be used to delineate the regions that are being actively translated or to discover new functional ORFs (Chew et al., 2013; Guttman et al., 2013; Ingolia, 2014). Because the ribosome is released after encountering a stop codon, this technique can also be employed to identify novel C-terminal protein extensions (Dunn et al., 2013) or to evaluate if a predicted ORF is likely to correspond to a translated peptide (Guttman et al., 2013). We next aimed at comparing the TE values in different transcript regions, including open reading frames (ORFs), putative 5′ and 3′ untranslated regions (UTRs), and the regions between ORFs.
 
 In order to obtain an unbiased picture, it was important to define the different regions in the same way in lncRNAs and codRNAs. In typical codRNAs there is a main translated ORF that covers a large fraction of the transcript, sometimes accompanied by short upstream ORFs in the 5′UTR (Chew et al., 2013). However, lncRNAs may potentially encode several short peptides (Ingolia et al., 2011). The minimum size of ORFs was set at 24 amino acids (75 nucleotides counting the STOP codon), as peptides of this size have been identified in genetic screen studies in humans (Hashimoto et al., 2001). To simplify the comparisons, we employed the same ORF size cut-off in all species. We also considered both a primary ORF, defined as the ORF with the largest number of ribosome profiling reads, as well as any additional non-overlapping ORFs that mapped to ribosome profiling reads (rest of ORFs).
 
-In codRNAs, the primary ORF showed a nearly perfect degree of agreement with the annotated protein, indicating that it was an appropriate metric for the main translated product. Primary ORFs in lncRNAs typically occupied a shorter fraction of the transcript than in codRNAs (
+In codRNAs, the primary ORF showed a nearly perfect degree of agreement with the annotated protein, indicating that it was an appropriate metric for the main translated product. Primary ORFs in lncRNAs typically occupied a shorter fraction of the transcript than in codRNAs (Figure 5A). The relative length of the ORF with respect to transcript length did not seem to be a strong predictor of ribosome association, as it did not help distinguish lncRNAs associated with ribosomes (lncRNA_ribo) to those not associated with ribosomes (lncRNA_noribo). In lncRNAs, most of the primary ORFs corresponded to proteins less than 100 amino acids long (Figure 5—figure supplement 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig5-v1.jpg)
 
-**Figure 5.:** (A) Density plot of the relative length of the primary ORF in lncRNA_ribo and codRNA with respect to transcript length. For comparison data for the longest ORF in lncRNA_noribo is also shown (except for fruit fly due to insufficient data). (B) Box-plots of TE distribution in primary ORF, 5′UTR, and 3′UTR regions. The area within the box-plot comprises 50% of the data, and the line represents the median value. The analysis considered all transcripts with 5′UTR and 3′UTR longer than 30 nucleotides and >0.2 FPKM in all three regions. The number of transcripts was 1956 codRNA and 159 lncRNA_ribo in mouse, 3558 codRNA and 139 lncRNA_ribo in human, 5216 codRNA and 252 lncRNA_ribo in zebrafish, and 2019 codRNA and 33 lncRNA_ribo in Arabidopsis. (C) Box-plots of TE distribution in primary ORFs, rest of ORFs with ribosome profiling reads and non-ORF regions (interORF). The analysis considered all transcripts with at least two ORFs and more than 30 nucleotides interORF. The number of transcripts was 3264 codRNA and 204 lncRNA_ribo in mouse, 3104 codRNA and 168 lncRNA_ribo in human, 1646 codRNA and 212 lncRNA_ribo in zebrafish, and 1098 codRNA and 25 lncRNA_ribo in Arabidopsis. Fruit fly and yeast were not included in the last two analyses due to insufficient data (<8 lncRNA_ribo meeting the conditions).DOI: http://dx.doi.org/10.7554/eLife.03523.011
+**Figure 5.:** (A) Density plot of the relative length of the primary ORF in lncRNA_ribo and codRNA with respect to transcript length. For comparison data for the longest ORF in lncRNA_noribo is also shown (except for fruit fly due to insufficient data). (B) Box-plots of TE distribution in primary ORF, 5′UTR, and 3′UTR regions. The area within the box-plot comprises 50% of the data, and the line represents the median value. The analysis considered all transcripts with 5′UTR and 3′UTR longer than 30 nucleotides and >0.2 FPKM in all three regions. The number of transcripts was 1956 codRNA and 159 lncRNA_ribo in mouse, 3558 codRNA and 139 lncRNA_ribo in human, 5216 codRNA and 252 lncRNA_ribo in zebrafish, and 2019 codRNA and 33 lncRNA_ribo in Arabidopsis. (C) Box-plots of TE distribution in primary ORFs, rest of ORFs with ribosome profiling reads and non-ORF regions (interORF). The analysis considered all transcripts with at least two ORFs and more than 30 nucleotides interORF. The number of transcripts was 3264 codRNA and 204 lncRNA_ribo in mouse, 3104 codRNA and 168 lncRNA_ribo in human, 1646 codRNA and 212 lncRNA_ribo in zebrafish, and 1098 codRNA and 25 lncRNA_ribo in Arabidopsis. Fruit fly and yeast were not included in the last two analyses due to insufficient data (<8 lncRNA_ribo meeting the conditions).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** In codRNAs and lncRNA_ribo, we selected the primary ORF (the ORF with the largest number of ribosome profiling reads), whereas in lncRNA_noribo we selected the longest ORF.DOI: http://dx.doi.org/10.7554/eLife.03523.012
+**Figure 5—figure supplement 1.:** In codRNAs and lncRNA_ribo, we selected the primary ORF (the ORF with the largest number of ribosome profiling reads), whereas in lncRNA_noribo we selected the longest ORF.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** (A) Box-plots of TE distribution in primary ORF, 5′UTR, and 3′UTR regions. The analysis considered only genes with one isoform, with UTR and ORF regions expressed at >0.2 FPKM and with 5′UTR and 3′UTR longer than 30 nucleotides. The number of transcripts was 980 codRNA and 97 lncRNA_ribo in mouse, 758 codRNA and 36 lncRNA_ribo in human, 3763 codRNA and 117 lncRNA_ribo in zebrafish, and 1495 codRNA and 32 lncRNA_ribo in Arabidopsis. (B) Box-plots of TE distribution in primary ORFs, other ORFs with ribosome profiling reads and non-ORF regions (interORFs). The analysis only considered genes with one isoform in which these regions were longer than 30 nucleotides and with expression >0.2 FPKM. The number of transcripts was 1691 codRNA and 113 lncRNA_ribo in mouse, 763 codRNA and 54 lncRNA_ribo in human, 1170 codRNA and 108 lncRNA_ribo in zebrafish, and 817 codRNA and 25 lncRNA_ribo in Arabidopsis.DOI: http://dx.doi.org/10.7554/eLife.03523.013
+**Figure 5—figure supplement 2.:** (A) Box-plots of TE distribution in primary ORF, 5′UTR, and 3′UTR regions. The analysis considered only genes with one isoform, with UTR and ORF regions expressed at >0.2 FPKM and with 5′UTR and 3′UTR longer than 30 nucleotides. The number of transcripts was 980 codRNA and 97 lncRNA_ribo in mouse, 758 codRNA and 36 lncRNA_ribo in human, 3763 codRNA and 117 lncRNA_ribo in zebrafish, and 1495 codRNA and 32 lncRNA_ribo in Arabidopsis. (B) Box-plots of TE distribution in primary ORFs, other ORFs with ribosome profiling reads and non-ORF regions (interORFs). The analysis only considered genes with one isoform in which these regions were longer than 30 nucleotides and with expression >0.2 FPKM. The number of transcripts was 1691 codRNA and 113 lncRNA_ribo in mouse, 763 codRNA and 54 lncRNA_ribo in human, 1170 codRNA and 108 lncRNA_ribo in zebrafish, and 817 codRNA and 25 lncRNA_ribo in Arabidopsis.
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig5-figsupp3-v1.jpg)
 
-**Figure 5—figure supplement 3.:** (A) Box-plots of TE distribution in primary ORF, 5′UTR, and 3′UTR regions. The analysis considered only annotated transcripts, with UTR and ORF regions expressed at >0.2 FPKM and with 5′UTR and 3′UTR longer than 30 nucleotides. The number of transcripts was 1956 codRNA and 92 lncRNA_ribo in mouse, 3558 codRNA and 138 lncRNA_ribo in human, 5216 codRNA and 54 lncRNA_ribo in zebrafish, and 2019 codRNA and 22 lncRNA_ribo in Arabidopsis. (B) Box-plots of TE distribution in primary ORFs, other ORFs with ribosome profiling reads (rest ORFs) and non-ORF regions (interORF). The analysis only considered annotated transcripts in which these regions were longer than 30 nucleotides and with expression >0.2 FPKM. The number of transcripts was 3264 codRNA and 128 lncRNA_ribo in mouse, 3104 codRNA and 167 lncRNA_ribo in human, 1646 codRNA and 58 lncRNA_ribo in zebrafish, and 1098 codRNA and 18 lncRNA_ribo in Arabidopsis.DOI: http://dx.doi.org/10.7554/eLife.03523.014
+**Figure 5—figure supplement 3.:** (A) Box-plots of TE distribution in primary ORF, 5′UTR, and 3′UTR regions. The analysis considered only annotated transcripts, with UTR and ORF regions expressed at >0.2 FPKM and with 5′UTR and 3′UTR longer than 30 nucleotides. The number of transcripts was 1956 codRNA and 92 lncRNA_ribo in mouse, 3558 codRNA and 138 lncRNA_ribo in human, 5216 codRNA and 54 lncRNA_ribo in zebrafish, and 2019 codRNA and 22 lncRNA_ribo in Arabidopsis. (B) Box-plots of TE distribution in primary ORFs, other ORFs with ribosome profiling reads (rest ORFs) and non-ORF regions (interORF). The analysis only considered annotated transcripts in which these regions were longer than 30 nucleotides and with expression >0.2 FPKM. The number of transcripts was 3264 codRNA and 128 lncRNA_ribo in mouse, 3104 codRNA and 167 lncRNA_ribo in human, 1646 codRNA and 58 lncRNA_ribo in zebrafish, and 1098 codRNA and 18 lncRNA_ribo in Arabidopsis.
 
 ![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig5-figsupp4-v1.jpg)
 
-**Figure 5—figure supplement 4.:** We restricted this analysis to transcripts with ORF and UTR regions expressed at >0.2 FPKM and with 5′UTR and 3′UTR longer than 30 nucleotides. (A) Expressed at low levels: transcripts expressed at 0.5–2 FPKM, (B) expressed at high levels: transcripts expressed at 2–10 FPKM. codRNAs were sampled in such a way as to have the same gene expression distribution as the corresponding lncRNA set. Results for species in which all sets contained at least 20 transcripts are shown.DOI: http://dx.doi.org/10.7554/eLife.03523.015
+**Figure 5—figure supplement 4.:** We restricted this analysis to transcripts with ORF and UTR regions expressed at >0.2 FPKM and with 5′UTR and 3′UTR longer than 30 nucleotides. (A) Expressed at low levels: transcripts expressed at 0.5–2 FPKM, (B) expressed at high levels: transcripts expressed at 2–10 FPKM. codRNAs were sampled in such a way as to have the same gene expression distribution as the corresponding lncRNA set. Results for species in which all sets contained at least 20 transcripts are shown.
 
 Next, we focused our attention on the differences between the primary ORF and the 5′UTR and 3′UTR regions in codRNAs and lncRNAs. We defined the 3′ untranslated region (3′UTR) as the sequence located immediately after the STOP codon of the primary ORF or the most downstream ORF associated with ribosomes. We used the same criteria to define the 5′UTR upstream from the initiation codon. In this analysis, we included all transcripts containing at least one ORF associated with ribosomes (the primary ORF) and sufficiently long UTR regions as to detect ribosome profiling reads (>30 nucleotides); insufficient data for fruit fly and yeast precluded the analysis for these species. In both codRNAs and lncRNAs, the 5′UTR showed a ribosome density (translational efficiency, TE) comparable to that of the primary ORF (Figure 5B). In contrast, the 3′UTR showed very little ribosome association and often we could not find a single read mapping to this region (31–91% of cases in codRNAs and 46–68% in lncRNAs). Using genes with a single isoform or considering only annotated transcripts produced similar results (Figure 5—figure supplements 2 and 3). We also controlled for expression level by dividing the data set in transcripts with low (0.5–2 FPKM) and high expression (>2 FPKM), and by sampling the codRNAs in such a way as to have a similar expression distribution as lncRNAs. The results were very similar to those obtained with the complete data set (Figure 5—figure supplement 4), indicating that the analysis is robust to transcript expression differences.
 
@@ -110,43 +352,43 @@ As transcripts may contain several ORFs, we performed a separate analysis in whi
 
 Taken together, these results indicate that lncRNAs have ribosome profiling signatures consistent with translation, with a strong decrease of ribosome density in the 3′UTR but not the 5′UTR region, and preferential binding of ribosomes to the primary ORF. There exists the possibility that the translated peptides are degraded soon after being produced. However, we estimate that the percentage of cases that may undergo nonsense-mediated decay (NMD, see ‘Materials and methods’ for more details) is low, between 4.47 and 14.11% depending on the species. For comparison, the percentage for protein-coding transcripts showing the same patterns (including transcripts annotated as NMD in Ensembl) is between 0.34 and 13.33%.
 
-## lncRNAs are less conserved than codRNAs
+### lncRNAs are less conserved than codRNAs
 
 Are the putatively translated ORF in lncRNAs conserved? We performed sequence similarity searches using BLASTP (E-value < 10−4) against all annotated coding transcripts in Ensembl, as well as against the primary ORFs in lncRNAs, for the six species studied here (Supplementary files 1D and 2B). The number of lncRNA_ribo with homologues in other species was remarkably low (0–15.6%) except for zebrafish (49.4%). In contrast, the majority of codRNAs had homologues in other species (>95% for vertebrates and fruit fly and 70–73% for Arabidopsis and yeast). After we discarded lncRNAs that showed cross-species conservation, association with ribosomes was still very prevalent (80.4% of mouse, 40.3% of human, and 22.1% of zebrafish lncRNAs were associated with ribosomes).
 
 We also investigated whether the ribosome-associated ORFs in lncRNAs showed homology to annotated proteins in the same species. The values were very low for all the species (0–12.4%) except for zebrafish (47.5%). Therefore, in general lncRNAs are not truncated duplicated copies (pseudogenes). The case of zebrafish is an exception probably because of missing protein-coding annotations in this species.
 
-## Coding properties of ribosome-protected ORFs in lncRNAs
+### Coding properties of ribosome-protected ORFs in lncRNAs
 
-Subsequently, we compared the sequence coding properties of the primary ORF in lncRNAs with those in
+Subsequently, we compared the sequence coding properties of the primary ORF in lncRNAs with those in bona fide coding and non-coding sequences using a hexamer-based coding score (see ‘Materials and methods’). In all species the coding scores of the primary ORF in lncRNAs, while lower than that of codRNAs, were significantly higher than the coding score of ORFs in introns (Figure 6, Wilcoxon test lncRNA_ribo vs intron, human, mouse, zebrafish, and Arabidopsis p < 10−16; fruit fly and yeast p < 10−5). This clearly shows that ORFs in lncRNAs are more coding-like than random ORFs. We repeated the same comparison using 100 different randomly sampled intronic sequence sets, and in >95% of the cases, we obtained the same result. lncRNAs associated with ribosomes (lncRNA_ribo) showed higher coding scores than those not associated with ribosomes (lncRNA_noribo), even when we did not use the ribosome profiling information and compared the longest ORF in both types of transcripts (Figure 6—figure supplement 1). We reached similar conclusions when we restricted the analysis to annotated lncRNA transcripts (Figure 6—figure supplement 2), when we used ORFs from gene deserts as an alternative non-coding sequence set (differences with lncRNAs significant by Wilcoxon test, p < 10−16, see ‘Materials and methods’ for more details), and when we restricted the analysis to lncRNAs for which we did not find protein coding homologues in the other species studied (Figure 6—figure supplement 3). Because a high proportion of lncRNAs contained small ORFs, we repeated the comparison only considering transcripts with ORFs shorter than 100 amino acids to avoid any length biases, again obtaining similar results (Figure 6—figure supplement 4). The use of other coding scores, for example based on codon frequencies instead of hexamer frequencies or related metrics such as GC content produced consistent results (Figure 6—figure supplement 5; Supplementary file 1E).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig6-v1.jpg)
 
-**Figure 6.:** Intron: randomly selected intronic regions; lncRNA_noribo: lncRNAs not associated with ribosomes; lncRNA_ribo: lncRNAs associated with ribosomes; pseudogene: pseudogenes associated with ribosomes; codRNAne: coding transcripts encoding non-validated proteins associated with ribosomes; codRNAe: coding transcripts encoding experimentally validated proteins. The coding score was calculated as the log ratio of hexamer frequencies in coding vs intronic sequences. In lncRNA_noribo and introns, we considered the longest ORF and in the rest of transcripts the primary ORF. The Class ‘pseudogene’ was only included in species with more than 20 expressed pseudogenes with mapped ribosome profiling reads. The coding score of the primary ORF in lncRNAs (lncRNA_ribo) was significantly higher than the coding score in ORFs defined in introns (Wilcoxon test, human, mouse, zebrafish, and Arabidopsis p < 10−16; fruit fly and yeast p < 10−4, Wilcoxon test) and in lncRNA_ribo it was significantly higher than in lncRNA_noribo in four species (Wilcoxon test, human, mouse and zebrafish p < 10−5, and Arabidopsis p < 0.05). Transcripts from genes of different evolutionary age were taken from the literature (see manuscript text). The number of transcripts was 68 for rodent, 127/123 for mammalian (mouse/human as reference species), 11,203/13,423/9812 for metazoan (mouse/human/zebrafish), 162 for fish, 208 for Crucifera, 28 for S. cerevisiae and 84 for Saccharomyces. The youngest class of codRNAs displayed similar scores than lncRNA_ribo in mouse, zebrafish, and yeast (classes rodent, fish and S. cerevisiae, respectively), being only significantly higher in human and Arabidopsis (Wilcoxon test, p < 0.005; classes primate and Cruciferae). We did not analyze young genes in fruit fly due to lack of a suitable young set of codRNAs in this species.DOI: http://dx.doi.org/10.7554/eLife.03523.016
+**Figure 6.:** Intron: randomly selected intronic regions; lncRNA_noribo: lncRNAs not associated with ribosomes; lncRNA_ribo: lncRNAs associated with ribosomes; pseudogene: pseudogenes associated with ribosomes; codRNAne: coding transcripts encoding non-validated proteins associated with ribosomes; codRNAe: coding transcripts encoding experimentally validated proteins. The coding score was calculated as the log ratio of hexamer frequencies in coding vs intronic sequences. In lncRNA_noribo and introns, we considered the longest ORF and in the rest of transcripts the primary ORF. The Class ‘pseudogene’ was only included in species with more than 20 expressed pseudogenes with mapped ribosome profiling reads. The coding score of the primary ORF in lncRNAs (lncRNA_ribo) was significantly higher than the coding score in ORFs defined in introns (Wilcoxon test, human, mouse, zebrafish, and Arabidopsis p < 10−16; fruit fly and yeast p < 10−4, Wilcoxon test) and in lncRNA_ribo it was significantly higher than in lncRNA_noribo in four species (Wilcoxon test, human, mouse and zebrafish p < 10−5, and Arabidopsis p < 0.05). Transcripts from genes of different evolutionary age were taken from the literature (see manuscript text). The number of transcripts was 68 for rodent, 127/123 for mammalian (mouse/human as reference species), 11,203/13,423/9812 for metazoan (mouse/human/zebrafish), 162 for fish, 208 for Crucifera, 28 for S. cerevisiae and 84 for Saccharomyces. The youngest class of codRNAs displayed similar scores than lncRNA_ribo in mouse, zebrafish, and yeast (classes rodent, fish and S. cerevisiae, respectively), being only significantly higher in human and Arabidopsis (Wilcoxon test, p < 0.005; classes primate and Cruciferae). We did not analyze young genes in fruit fly due to lack of a suitable young set of codRNAs in this species.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** Comparison between lncRNAs associated and not associated with ribosomes using the longest ORF in both cases (lncRNA_ribo and lncRNA_noribo, respectively). Differences between lncRNA_ribo and lncRNA_noribo are significant by a Wilcoxon test (p < 10−10 in human, mouse, and zebrafish; p < 0.005 in Arabidopsis).DOI: http://dx.doi.org/10.7554/eLife.03523.017
+**Figure 6—figure supplement 1.:** Comparison between lncRNAs associated and not associated with ribosomes using the longest ORF in both cases (lncRNA_ribo and lncRNA_noribo, respectively). Differences between lncRNA_ribo and lncRNA_noribo are significant by a Wilcoxon test (p < 10−10 in human, mouse, and zebrafish; p < 0.005 in Arabidopsis).
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig6-figsupp2-v1.jpg)
 
-**Figure 6—figure supplement 2.:** Comparison between different transcript classes using only annotated lncRNAs. Yeast transcriptome is composed of very few annotated lncRNAs, and this analysis could not be performed.DOI: http://dx.doi.org/10.7554/eLife.03523.018
+**Figure 6—figure supplement 2.:** Comparison between different transcript classes using only annotated lncRNAs. Yeast transcriptome is composed of very few annotated lncRNAs, and this analysis could not be performed.
 
 ![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig6-figsupp3-v1.jpg)
 
-**Figure 6—figure supplement 3.:** Comparison between different transcript classes using only lncRNA with no homologues (noH) in other species. Only species in which several lncRNA_ribo and lncRNA_noribo had homology matches were considered.DOI: http://dx.doi.org/10.7554/eLife.03523.019
+**Figure 6—figure supplement 3.:** Comparison between different transcript classes using only lncRNA with no homologues (noH) in other species. Only species in which several lncRNA_ribo and lncRNA_noribo had homology matches were considered.
 
 ![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig6-figsupp4-v1.jpg)
 
-**Figure 6—figure supplement 4.:** Here we only employed lncRNAs in which the primary ORF was shorter than 100 amino acids. codRNA refers to joined codRNAe and codRNAne sets, since experimentally verified proteins are usually longer than 100 amino acid. The number of transcripts is shown in red.DOI: http://dx.doi.org/10.7554/eLife.03523.020
+**Figure 6—figure supplement 4.:** Here we only employed lncRNAs in which the primary ORF was shorter than 100 amino acids. codRNA refers to joined codRNAe and codRNAne sets, since experimentally verified proteins are usually longer than 100 amino acid. The number of transcripts is shown in red.
 
 ![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig6-figsupp5-v1.jpg)
 
-**Figure 6—figure supplement 5.:** Equal dicodon was based on the observed hexamer frequencies in coding sequences vs hexamer equiprobability, intron dicodon was based on the differences between hexamer frequencies in coding vs non-coding sequences and intron_monocodon was based on the observed codon frequences in coding sequences vs codon equiprobability.DOI: http://dx.doi.org/10.7554/eLife.03523.021
+**Figure 6—figure supplement 5.:** Equal dicodon was based on the observed hexamer frequencies in coding sequences vs hexamer equiprobability, intron dicodon was based on the differences between hexamer frequencies in coding vs non-coding sequences and intron_monocodon was based on the observed codon frequences in coding sequences vs codon equiprobability.
 
 ![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig6-figsupp6-v1.jpg)
 
-**Figure 6—figure supplement 6.:** (A) Mouse CUFF.34338.1 (chr5:113183493–113188347) is a novel lncRNA, it contains an ORF encoding a 169 amino acid protein associated with ribosomes and with protein-coding homologues in human, zebrafish, and yeast. (B) ENSMUST00000107081 is an annotated codRNA in mouse which evolved recently since no homologues were found in any other species. It has a small ORF that translates a 55 amino acid protein. (C) AT1G34418.1 is an annotated lncRNA in Arabidopsis showing abundant association with ribosomes in the 5′UTR region, the primary ORF (34 amino acid) and the final region of the transcript, which contains two redundant ORFs (in red) coding the sequence: MGLGFVN(V/F)LLGM. RNAseq: profile of RNAseq reads. RPFs: profile of ribosome profiling reads. Exon-intron transcript structures are represented; the thickest boxes on the exons are the primary ORFs.DOI: http://dx.doi.org/10.7554/eLife.03523.022
+**Figure 6—figure supplement 6.:** (A) Mouse CUFF.34338.1 (chr5:113183493–113188347) is a novel lncRNA, it contains an ORF encoding a 169 amino acid protein associated with ribosomes and with protein-coding homologues in human, zebrafish, and yeast. (B) ENSMUST00000107081 is an annotated codRNA in mouse which evolved recently since no homologues were found in any other species. It has a small ORF that translates a 55 amino acid protein. (C) AT1G34418.1 is an annotated lncRNA in Arabidopsis showing abundant association with ribosomes in the 5′UTR region, the primary ORF (34 amino acid) and the final region of the transcript, which contains two redundant ORFs (in red) coding the sequence: MGLGFVN(V/F)LLGM. RNAseq: profile of RNAseq reads. RPFs: profile of ribosome profiling reads. Exon-intron transcript structures are represented; the thickest boxes on the exons are the primary ORFs.
 
 At the individual transcript level, a sizeable fraction of lncRNAs associated with ribosomes displayed significantly higher coding scores than expected for non-coding sequences (p < 0.05 in all 100 intronic random sets; data in Supplementary file 2C; examples in Figure 6—figure supplement 6). These transcripts are comprised of 143 human lncRNAs (35.5% of the lncRNAs, score > 0.0189), 137 mouse lncRNAs (35.1%, score > 0.0377), 379 zebrafish lncRNAs (52.1% score > 0.0095), 7 fruit fly lncRNAs (31.8%, score > −0.0483), 43 Arabidopsis lncRNAs (46.2%, score > −0.0202), and 5 yeast lncRNAs (83.3%, score > 0.03387). Annotated and novel lncRNAs were present in similar proportions in these sets, supporting the validity of our strategy of merging the two types of transcripts from the beginning. We also noted that the fraction of lncRNAs with coding homologues in other species increased in these sets. For example, whereas the proportion of total human lncRNA_ribo with homologues in other species was 15.6%, in the set with significant coding scores it was 29.3%. This number increased to 57.3% when we performed searches against the NCBI non-redundant peptide database ‘nr’, as some of the ORFs in lncRNAs are annotated as predicted peptides in this database.
 
@@ -154,15 +396,15 @@ If ORFs in lncRNAs are being translated this is likely to be a relatively recent
 
 We also collected information from young protein coding genes encoding experimentally verified proteins according to Swiss-Prot (Supplementary file 2D). We observed that these proteins were short and the ORF occupied a relatively small fraction of the transcript, features typically observed in lncRNAs. For example, the average size of proteins encoded by primate-specific transcripts was 148 amino acids and the average transcript coverage 47%. The coding score was remarkably low and again similar to that of lncRNAs (median 0.008 for primate-specific human transcripts, 0.046 for rodent-specific mouse transcripts, and 0.089 for yeast-specific coding transcripts).
 
-## Selection pressure signatures in ORFs associated with ribosomes
+### Selection pressure signatures in ORFs associated with ribosomes
 
 An important measure of the strength of purifying selection acting on a coding sequence is the ratio between the number of non-synonymous and synonymous single nucleotide polymorphisms (PN/PS). Given the nature of the genetic code, there are more possible non-synonymous mutations than synonymous mutations. Under neutrality (no purifying selection), the PN/PS ratio is expected to be approximately 2.89 (Nei and Gojobori, 1986).
 
-Here, we applied the large amount of available polymorphism data for human, mouse, and zebrafish to compare the level of purifying selection in primary ORFs from codRNAs and lncRNAs (
+Here, we applied the large amount of available polymorphism data for human, mouse, and zebrafish to compare the level of purifying selection in primary ORFs from codRNAs and lncRNAs (Figure 7; Supplementary file 1F). In general, human sequences showed higher PN/PS ratios than sequences from the other analyzed species, probably due to the presence of many slightly deleterious mutations segregating in the population (Eyre-Walker, 2002). However, despite the intrinsic differences between organisms, we observed the same general trends. First, the PN/PS was significantly lower in codRNAs than in lncRNAs (proportion test, p < 10−5), denoting stronger purifying selection in the former. Second, there was a very clear inverse relationship between the strength of purifying selection and the age of the gene (p < 10−15 between the youngest and rest of codRNAs in mouse and zebrafish), in agreement with previous studies (Liu et al., 2008; Cai et al., 2009). High PN/PS values were also observed in the subset of young genes encoding experimentally validated proteins in human (primate-specific transcripts median PN/PS of 3.10) and mouse (rodent-specific transcripts median PN/PS 1.42), confirming this tendency. Third, the distribution of PN/PS values in lncRNAs was very similar to that of young protein-coding genes. In human and mouse, there were no significant differences, and in the case of zebrafish the lncRNAs had even slightly lower PN/PS values than the fish-specific protein coding genes (p < 0.01).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/03523/elife-03523-fig7-v1.jpg)
 
-**Figure 7.:** PN/PS: ratio between the number of non-synonymous and synonymous single nucleotide polymorphisms (SNPs) in the complete set of primary ORFs for a given class of transcripts (in lncRNA_noribo the longest ORF was considered). In blue, data for different coding and non-coding transcript classes. In brown, data for different age codRNA classes. The bars represent the 95% confidence interval for the PN/PS value. For the species not shown there was not sufficient data to perform this analysis.DOI: http://dx.doi.org/10.7554/eLife.03523.023
+**Figure 7.:** PN/PS: ratio between the number of non-synonymous and synonymous single nucleotide polymorphisms (SNPs) in the complete set of primary ORFs for a given class of transcripts (in lncRNA_noribo the longest ORF was considered). In blue, data for different coding and non-coding transcript classes. In brown, data for different age codRNA classes. The bars represent the 95% confidence interval for the PN/PS value. For the species not shown there was not sufficient data to perform this analysis.
 
 ## Discussion
 
@@ -188,13 +430,13 @@ Recently, it has been reported that human-specific protein-coding genes are ofte
 
 ## Materials and methods
 
-## Sequencing and mapping of reads
+### Sequencing and mapping of reads
 
 We downloaded the original data from Gene Expression Omnibus (GEO) for six different ribosome profiling experiments that had both ribosome footprinting and polyA+ RNA-seq sequencing reads: mouse (M. musculus) (Ingolia et al., 2011), human (H. sapiens, HeLa cells) (Guo et al., 2010), zebrafish (D. rerio) (Chew et al., 2013), fruit fly (D. melanogaster) (Dunn et al., 2013), Arabidopsis (A. thaliana) (Juntawong et al., 2014), and yeast (S. cerevisiae) (McManus et al., 2014). We retrieved genome sequences and gene annotations from Ensembl v.70 and Ensembl Plants v.21 (Flicek et al., 2012).
 
 Raw ribosome and RNA-seq sequencing reads underwent quality filtering using Condentri (v.2.2) (Smeds and Künstner, 2011) with the following settings (-hq=30 –lq=10). Adaptors described in the original publications were trimmed from filtered reads if at least five nucleotides of the adaptor sequence matched the end of each read. In zebrafish, reads from different developmental stages were pooled to improve read coverage. In all experiments, reads below 25 nucleotides were not considered. Clean ribosome short reads were filtered by mapping them to the corresponding species reference RNA (rRNA) using the Bowtie2 short-read alignment program (v. 2.1.0) (Langmead et al., 2009). Unaligned reads were aligned to a genomic reference genome with Bowtie2 allowing one mismatch in the first 'seed' region (the length of this region was selected according to the descriptions provided in each individual experiment). RNA-seq short reads were mapped with Tophat (v. 2.0.8) (Kim et al., 2013) to the corresponding reference genome. We allowed two mismatches in the alignment with the exception of zebrafish, for which we allowed three mismatches since the reads were significantly longer. Multiple mapping was allowed unless specifically stated.
 
-## Defining a set of expressed transcripts
+### Defining a set of expressed transcripts
 
 Expressed transcripts were assembled using Cufflinks (v 2.2.0) (Trapnell et al., 2010). We initially considered a transcript as expressed if it was covered by at least four reads and its abundance was higher than 1% of the most abundant isoform of the gene. We also discarded assembled transcripts in which >20% of reads were mapped to several locations in the genome. Gene annotation files from Ensembl (gtf format, v.70) were provided to Cufflinks to guide the reconstruction of already annotated transcripts. Annotated transcripts were divided into coding RNAs and long non-coding RNAs (lncRNAs), we only considered lncRNAs that were not part of genes with coding transcripts. Novel isoforms corresponding to annotated loci were not analyzed. Transcripts that did not match or overlapped annotated genes were labeled 'novel’ lncRNAs. We used a length threshold of 200 nucleotides to select novel long non-coding RNAs, as in ENCODE annotations (Djebali et al., 2012).
 
@@ -210,7 +452,7 @@ We built a data set of human lncRNAs with described non-coding functions using d
 
 We used cufflinks to estimate the expression level of a transcript in FPKM units (Fragments Per Kilobase per total Million mapped reads). We used a threshold of >0.5 FPKM except in yeast, in which the average read coverage per transcript was much higher than in the other species and the threshold was set up at >5 FPKM. These thresholds guaranteed detection of ribosome association for the majority of expressed coding transcripts (>92%), while yielding proportions of transcripts comparable to those reported in the original papers.
 
-## Definition of potential open reading frames (ORFs) and other transcript regions
+### Definition of potential open reading frames (ORFs) and other transcript regions
 
 We predicted all possible open reading frames (ORFs) in the expressed transcripts. We defined an ORF as any sequence starting with an AUG codon and finishing with a stop codon (TAA, TAG, or TGA), and at least 75 nucleotides long. This would correspond to a 24 amino acid protein, which is the size of the smallest complete human polypeptide found in genetic screen studies (Hashimoto et al., 2001). This ORF definition will not detect non-canonical ORFs with different start or stop codons, although these ORFs often correspond to regulatory ORFs (uORFs) in the 5′UTR region. In monoexonic transcripts (Arabidopsis and yeast), we considered all six possible different frames.
 
@@ -218,7 +460,7 @@ We also defined each transcript 5′UTR as the region between the transcription 
 
 We defined a set of bona fide non-coding sequences sampled from intronic fragments. We used the introns of the genes expressed in each experiment, provided they did not overlap to any exons from other overlapping genes. We randomly selected fragments in such a way as to simulate the same size distribution as in the complete set of expressed transcripts. We performed 100 simulations of intron sampling to ensure the results were robust to the randomization process. We selected the longest ORF in each intronic fragment for the calculation of coding scores and GC content.
 
-## Association with ribosomes and translational efficiency (TE)
+### Association with ribosomes and translational efficiency (TE)
 
 We computed the number of reads overlapping each feature of interest (transcript, UTR, ORF, and interORF) using the BEDTools package (v. 2.16.2) (Quinlan and Hall, 2010). We only considered ribosome reads in which more than half of their length spanned the considered region. This was considered appropriate because the ribosome P-site is usually detected at the central region of the read, with only slight variations depending on the experimental setting. We set up a minimum ribosome profiling coverage of 75 nucleotides per transcript to define the transcript or transcript region (e.g., ORF) as associated with ribosomes. This is significantly longer than the length of the ribosome profiling sequencing reads (36–51 nucleotides) and is consistent with the minimum ORF length threshold.
 
@@ -228,44 +470,54 @@ In order to have a null model of ribosome binding against which to compare the r
 
 We defined the primary ORF in a transcript as the ORF with the largest number of RPF reads with respect to the total RPF reads covering the transcript. The rest of ORFs ≥24 amino acids associated with ribosomes were considered as well; when two or more ORFs overlapped, we selected the longest one. In ORFs, interORFs, and UTRs, we computed the TE along the whole region. For comparing the TE in different regions, we only considered transcripts in which all regions had >0.2 FPKM.
 
-## Peptide evidence in existing proteomics databases
+### Peptide evidence in existing proteomics databases
 
 We downloaded all peptide sequences from the PeptideAtlas database: 338,013 human peptides (August 2013), 101,695 mouse peptides (June 2013), and 86,836 yeast peptides (March 2013). We investigated if the number of ribosome-associated protein-coding transcripts that matched the peptides in these databases varied with protein length. We omitted this analysis in zebrafish and Arabidopsis due to the lack of sufficiently large peptide databases. The matches were identified using BLASTP searches (v. 2.2.28+) (Altschul et al., 1997). We selected perfect matches only.
 
-## Evidence of nonsense mediated decay in ORFs
+### Evidence of nonsense mediated decay in ORFs
 
 We investigated how many primary ORFs may be candidates for being regulated via non-sense mediated decay (NMD) surveillance pathways, whose main function is to eliminate transcripts containing premature stop codons. We defined NMD candidates as all cases in which the stop-codon from a predicted ORF was located ≥55 nucleotides upstream of a splice junction site, provided the stop-codon was not in the terminal exon (Scofield et al., 2007). This mechanism is well characterized in protein-coding genes and it has been proposed as a way to degrade non-functional peptides translated in lncRNAs (Tani et al., 2013). Other surveillance mechanisms, such as non-stop-mediated decay or no-go decay, were not considered since all predicted ORFs finished at a stop codon, and we did not analyze RNA secondary structures.
 
-## Defining ages of protein-coding transcripts
+### Defining ages of protein-coding transcripts
 
 We utilized existing gene age classifications in human, mouse, and zebrafish (Neme and Tautz, 2013) to identify young gene classes: human primate-specific (∼55.8 My), mouse rodent-specific (∼61.7 My), human and mouse mammalian-specific (∼225 My), zebrafish actinopterygii-specific (∼420 My) (abbreviated fish) and metazoan (∼800 My). In yeast, we used predefined genes specific to S. cerevisiae (1–3 My)(abbreviated S. cerevisiae) and the Saccharomyces group (∼100 My) (Ekman et al., 2007). In Arabidopsis, we retrieved Cruciferae(Brassicaceae)-specific genes (20–40 My) (Donoghue et al., 2011). These genes are believed to have arisen primarily by de novo mechanisms, as no homologies in other species have been detected despite the fact that many closely related genomes have now been sequenced.
 
-## Defining gene desert sequences
+### Defining gene desert sequences
 
 In humans, we obtained a set of gene desert sequences as defined in Ovcharenko et al. (2005). We selected two stable and two flexible gene deserts (the definition depends on the degree of conservation in other species). They belonged to chromosome 4 (flexible located in coordinates 136,000,001–138,000,000; stable located in coordinates 180,000,001–182,000,010) that has a high number of gene deserts; and chromosome 17 (flexible located in coordinates 51,100,001–51,900,000; stable located in coordinates 69,300,001–70,000,000) that has a high gene density. We ensured that no protein-coding genes were annotated in subsequent Ensembl versions in these regions. We predicted all possible ORFs in these regions and evaluated their coding score and GC content.
 
-## ORF coding score
+### ORF coding score
 
-The examination of nucleotide hexamer frequencies has been shown to be a powerful way to distinguish between coding and non-coding sequences (Sun et al., 2013; Wang et al., 2013). We computed one coding score (CS) per hexamer:CShexamer(i)=log(freqcoding(hexamer(i))freqnon−coding(hexamer(i))).
+The examination of nucleotide hexamer frequencies has been shown to be a powerful way to distinguish between coding and non-coding sequences (Sun et al., 2013; Wang et al., 2013). We computed one coding score (CS) per hexamer:
 
-The coding hexamer frequencies were obtained from the open reading frame of all transcripts in a species encoding experimentally validated proteins (except for zebrafish in which all protein-coding transcripts were considered). The non-coding hexamer frequencies were calculated using the longest ORF in intronic regions, which were selected randomly from expressed protein-coding genes. Next, we used the following statistic to measure the coding score of an ORF:CSORF=∑i=1i=nCShexamer(i)n,where i is each sequence hexamer in the ORF, and n the number of hexamers considered.
+$$
+CS_{hexamer(i)}=log(\frac{freq_{coding}(hexamer(i))}{freq_{non−coding}(hexamer(i))}).
+$$
+
+The coding hexamer frequencies were obtained from the open reading frame of all transcripts in a species encoding experimentally validated proteins (except for zebrafish in which all protein-coding transcripts were considered). The non-coding hexamer frequencies were calculated using the longest ORF in intronic regions, which were selected randomly from expressed protein-coding genes. Next, we used the following statistic to measure the coding score of an ORF:
+
+$$
+CS_{ORF}=\frac{\sum_{i=1}^{i=n}CS_{hexamer(i)}}{n},
+$$
+
+where i is each sequence hexamer in the ORF, and n the number of hexamers considered.
 
 The hexamers were calculated in steps of three nucleotides in frame (dicodons). We did not consider the initial hexamers containing a Methionine or the last hexamers containing a STOP codon, since they are not informative. Given that all ORFs were at least 75 nucleotides long the minimum value for n was 22.
 
 We calculated other related statistics in a similar way. This included using an equiprobable hexamer distribution instead of the distribution obtained from non-coding sequences, or using codon frequencies instead of hexamer frequencies. These statistics showed somewhat lower power to distinguish between coding and non-coding sequences. As a complementary measure, we quantified the GC content in different coding and non-coding transcripts and ORFs.
 
-## Sequence similarity searches
+### Sequence similarity searches
 
 We employed BLASTP with an E-value cutoff of 10−4 to compare the amino acid sequences encoded by ORFs in different kinds of transcripts. We enabled SEG to mask low complexity regions in protein sequences before doing the homology searches. We also searched for homologues in the NCBI non-redundant (nr) protein database (Pruitt et al., 2014). BLAST sequence similarity search programs are based on gapped local alignments (Altschul et al., 1997).
 
-## Analysis of single nucleotide polymorphisms
+### Analysis of single nucleotide polymorphisms
 
 We downloaded all available single-nucleotide polymorphisms (SNPs) from dbSNP (Sherry et al., 2001) for human (∼50 million), mouse (∼64.2 million), and zebrafish (∼1.3 million). We did not consider other species due to insufficient data for the analysis. We classified SNPs in ORFs as non-synonymous (PN, amino acid altering) and synonymous (PS, not amino acid altering). We computed the PN/PS ratio in each sequence data set by using the sum of PN and PS in all sequences. The estimation of PN/PS ratios of individual sequences was in general not reliable due to lack of sufficient SNP data. We obtained confidence intervals using the proportion test in R (see below).
 
-## Statistical data analyses
+### Statistical data analyses
 
 The analysis of the data, including generation of plots and statistical tests, was done with R (R Development Core Team, 2010).
 
-## Additional files
+### Additional files
 
 Supplementary file 1 contains additional Tables and Supplementary file 2 data subsets. The genomic coordinates of all transcripts used in this study (GTF files) and the amino acid sequences corresponding to primary ORFs in lncRNA with coding scores significant at p < 0.05 (FASTA files) are available at figshare (http://dx.doi.org/10.6084/m9.figshare.1114969).

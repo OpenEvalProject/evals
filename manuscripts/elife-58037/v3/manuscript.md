@@ -41,17 +41,29 @@ We were also keen to determine whether we could identify a physiological stimulu
 
 ## Results
 
-## Increased intracellular levels of cAMP induces reactivation of HSV from latent infection in murine sympathetic neurons
+### Increased intracellular levels of cAMP induces reactivation of HSV from latent infection in murine sympathetic neurons
 
 Both forskolin and cAMP mimetics are known to induce neuronal hyperexcitation and have previously also been found to trigger HSV reactivation (Smith et al., 1992; Colgin et al., 2001; De Regge et al., 2010; Danaher et al., 2003). Using a model of HSV latency in mouse sympathetic neurons isolated from the superior-cervical ganglia (SCG) (Cliffe et al., 2015) we investigated whether forskolin treatment induced reactivation in this system and the potential mechanism resulting in the initial induction of viral lytic gene expression. Sympathetic SCG neurons were infected with a Us11-GFP tagged HSV-1 (Benboudjema et al., 2003) at a multiplicity of infection (MOI) of 7.5 PFU/cell in the presence of acyclovir (ACV). After 6 days the ACV was washed out and the neuronal cultures monitored to ensure that no GFP-positive neurons were present. Two days later, reactivation was triggered by addition of forskolin (Figure 1A). WAY150138 was added to the media post-reactivation to prevent cell-to-cell spread (Newcomb and Brown, 2002). As represented in Figure 1B, forskolin can act either extracellularly on ion channels or intracellularly to activate adenylate cyclase (Hoshi et al., 1988; Kandel, 2012; de Rooij et al., 2000). Activation of adenylate cyclase results in the propagation of second-messenger pathways resulting from activation of PKA, EPAC1 (Exchange Factor directly Activated by cAMP, also known as Rap Guanine Nucleoside Exchange Factor 1) or EPAC 2. In addition, cAMP can act directly on cyclic nucleotide-gated ion channels, and PKA can also modulate ion-channel activity via phosphorylation. Dideoxy-forskolin (dd-forskolin) is a cell-impermeable forskolin analog that can act directly on voltage-gated ion channels but does not activate adenylate cyclase (Hoshi et al., 1988; Gandía et al., 1997). We found addition of forskolin but not dd-forskolin triggered robust HSV reactivation (Figure 1C). A slight increase in GFP-positive neurons did occur with dd-forskolin treatment compared to mock (approximately 6.5-fold increase compared to a 130-fold increase for forskolin). Based on a Tukey’s multiple comparison test, this change from mock treated neurons was not significant (p=0.07), however, a direct comparison between mock and dd-forskolin using a T-test suggested a significant induction (p=0.03). Therefore, direct stimulation of ion-channels by dd-forskolin may trigger some reactivation. However, maximal reactivation requires forskolin to enter neurons. Treatment of latently-infected primary neurons with a cAMP mimetic (8-bromo-cAMP) was sufficient to trigger reactivation (Figure 1D), suggesting that increased intracellular levels of cAMP are capable of inducing HSV reactivation. Furthermore, inhibition of adenylate cyclase activity using SQ22, 536 (Haslam et al., 1978) significantly diminished HSV reactivation (Figure 1E). Therefore, activation of adenylate cyclase, which results in increased intracellular levels of cAMP, is required for robust forskolin-mediated reactivation.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/58037/elife-58037-fig1-v3.jpg)
 
-**Figure 1.:** (A) Schematic of the primary sympathetic superior cervical ganglia (SCG)-derived model of HSV latency. Reactivation was quantified based on Us11-GFP-positive neurons in presence of WAY-150168, which prevents cell-to-cell spread. (B) Schematic of the cellular pathways activated by forskolin treatment. Forskolin can act both intracellularly to activate adenylate cyclase (AC) and increasing the levels of cAMP or extracellularly on ion channels. (C) Numbers of Us11-GFP-positive neurons following addition of either forskolin (60 μM) or cell-impermeable dideoxy-forskolin (60 μM) treatment of latently-infected sympathetic neurons. (D) Numbers of Us11-GFP-positive neurons following treatment with a cAMP mimetic 8-Bromo-cAMP (125 μM). (E) Reactivation, quantified by Us11-GFP-positive neurons, was induced by forskolin in the presence or absence of the adenylate cyclase inhibitor SQ22,536 (50 μM). In C-E each point represents a single biological replicate, and the mean and standard errors of the mean (SEM) are also shown. In D statistical comparisons were made using an unpaired t-test. In C and E statistical comparisons were made using a one-way ANOVA with a Tukey's multiple comparisons test. *p<0.05, **p<0.01.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Schematic of the primary sympathetic superior cervical ganglia (SCG)-derived model of HSV latency. Reactivation was quantified based on Us11-GFP-positive neurons in presence of WAY-150168, which prevents cell-to-cell spread. (B) Schematic of the cellular pathways activated by forskolin treatment. Forskolin can act both intracellularly to activate adenylate cyclase (AC) and increasing the levels of cAMP or extracellularly on ion channels. (C) Numbers of Us11-GFP-positive neurons following addition of either forskolin (60 μM) or cell-impermeable dideoxy-forskolin (60 μM) treatment of latently-infected sympathetic neurons. (D) Numbers of Us11-GFP-positive neurons following treatment with a cAMP mimetic 8-Bromo-cAMP (125 μM). (E) Reactivation, quantified by Us11-GFP-positive neurons, was induced by forskolin in the presence or absence of the adenylate cyclase inhibitor SQ22,536 (50 μM). In C-E each point represents a single biological replicate, and the mean and standard errors of the mean (SEM) are also shown. In D statistical comparisons were made using an unpaired t-test. In C and E statistical comparisons were made using a one-way ANOVA with a Tukey's multiple comparisons test. *p<0.05, **p<0.01.
 
-## DLK and JNK activity are required for the early phase of viral gene expression in response to forskolin treatment
+### DLK and JNK activity are required for the early phase of viral gene expression in response to forskolin treatment
 
 We previously found that DLK-mediated JNK activation was essential for Phase I reactivation following interruption of nerve growth factor signaling (Cliffe et al., 2015). To determine whether DLK and JNK activation were crucial for reactivation in response to forskolin, neurons were reactivated in the presence of the JNK inhibitor SP600125 (Figure 2A) or the DLK inhibitor GNE-3511 (Patel et al., 2015; Figure 2B). Because DLK has been proposed as a target to prevent neuronal cell death or axon degeneration in neurological disease, GNE-3511 was recently developed as a small-molecule inhibitor of DLK that shows selective inhibition of DLK activity and protection against axon pruning with an IC50 of 0.1 μM (Patel et al., 2015). Both the JNK and DLK inhibitors prevented forskolin-mediated reactivation based on the number of GFP-positive neurons at 3 days post-stimulus. These data therefore indicate forskolin-mediated reactivation is dependent on the neuronal stress pathway mediated by DLK activation of JNK.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58037/elife-58037-fig2-v3.jpg)
+
+**Figure 2.:** (A) Reactivation was induced by forskolin in the presence of JNK inhibitor SP600125 (20 μM). (B) Reactivation was induced by forskolin in the presence of the DLK inhibitor GNE-3511 (4 μM). In A and B each experimental replicate is shown. (C) Reactivation was induced by forskolin or superinfection with a wild-type (F strain) HSV-1 (MOI of 10 PFU/cell) and qualified based on Us11-GFP-positive neurons (n = 3). (D–F) RT-qPCR for viral mRNA transcripts following forskolin treatment of latently infected SCGs. (G–I) RT-qPCR for viral lytic transcripts at 20 hr post-forskolin treatment and in presence of the JNK inhibitor SP600125 (20 μM) and the DLK inhibitor GNE-3511 (4 μM). (J) Neurons were transduced with a non-targeting shRNA control lentivirus or two independent lentiviruses expressing shRNAs that target DLK (shDLK-1, shDLK-2). Western-blotting for DLK or β-III tubulin was carried out 3 days post transduction. The percentage knock-down of DLK normalized to β-III tubulin is shown. (K and L) RT-qPCR for viral mRNA transcripts following forskolin treatment of latently infected SCGs that were either transduced with the shRNA control or shRNA DLK lentiviruses. In D-I, K, and L, each experimental replicate is represented. Statistical comparisons were made using a one-way ANOVA with a Tukey’s multiple comparison. *p<0.05, **p<0.01, ***p<0.001. The mean and SEM are shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58037/elife-58037-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Titers of infectious virus detected from reactivating neurons induced with forskolin (n = 4). (B) Quantification of the relative viral genome copy number following forskolin-mediated reactivation based on gC copy number normalized to cellular GAPDH and expressed relative to the 0 hr time-point (n = 7). (C–E) RT-qPCR for viral mRNA transcripts following forskolin treatment of latently infected SCGs. (F) Quantification of Us11-GFP neurons and (G) RT-qPCR for UL30 mRNA transcript following forskolin treatment of latently infected SCGs that were either transduced with the shRNA control or shRNA DLK lentiviruses. Statistical comparisons were made using a one-way ANOVA with a Tukey’s multiple comparison. *p<0.05, **p<0.01, ***p<0.001. (C–E) In C-G each biological replicate is represented. The means and SEMs are shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58037/elife-58037-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Latently infected cultures were reactivated with forskolin (60 μM) in the presence of the PKA inhibitor KT 5720 (3 µM) and the number of Us11-GFP-positive neurons quantified at 3 days post-reactivation. (B) RT-qPCR for the viral lytic transcript ICP27 at 20 hr post-forskolin treatment and in the presence of KT 5720. (C) Latently infected cultures were reactivated with forskolin in the presence of the CREB inhibitor 666–15 (2 µM). (D) RT-qPCR for ICP27 at 20 hr post-forskolin treatment and in the presence of 666–15. (E) Latently infected cultures were reactivated with forskolin (60 μM) in the presence of the EPAC inhibitor ESI09 (10 µM). (F) Latently infected cultures were reactivated with 8-Bromo-cAMP (125 μM) in the presence of the Rapgef2 inhibitor SQ22,536 (50 µM). Individual experimental replicates are represented along with the means and SEMs. Statistical comparisons were made using a one-way ANOVA with a Tukey’s multiple comparison. *p<0.05, **p<0.01, ***p<0.001.
 
 Because we and others previously found that JNK activation results in a unique wave of viral gene expression in response to inhibition of nerve growth factor signaling (Kim et al., 2012; Cliffe et al., 2015; Cliffe and Wilson, 2017), we were especially intrigued to determine whether forskolin triggers a similar wave of JNK-dependent viral gene expression. The previously described bi-phasic progression to viral reactivation is characterized by viral DNA replication and production of infectious virus, occurring around 48–72 hr post-stimulus (Kim et al., 2012), but with an earlier wave of lytic gene expression occurring around 20 hr post-stimulus. To determine whether forskolin-mediated reactivation results in a similar kinetics of reactivation, we investigated the timing of Us11-GFP synthesis, viral DNA replication, production of infectious virus, and lytic gene induction following forskolin treatment. In response to forskolin treatment, Us11-GFP synthesis in neurons started to appear around 48 hr post-reactivation, with more robust reactivation observed at 72 hr (Figure 2C). In contrast to forskolin-mediated reactivation, the number of GFP-positive neurons following superinfection with a replication competent wild-type virus resulted in a rapid induction of GFP-positive neurons by 24 hr post-superinfection (Figure 2C). Therefore, forskolin-triggered reactivation results in slower synthesis of Us11-GFP than superinfection. In addition, these data highlight the ability of forskolin to trigger reactivation from only a subpopulation of latently-infected neurons (approximately 1 in every 3.4 neurons compared to superinfection).
 
@@ -63,7 +75,7 @@ To determine whether JNK and DLK were required Phase I gene expression in respon
 
 It was possible that in addition to JNK, other signal transduction proteins were important in forskolin-mediated reactivation. A previous study found that DLK can be activated by PKA, which is known to be activated by cAMP (Hao et al., 2016). However, using well a characterized inhibitor of PKA (KT 5720), we were unable to find a role for PKA in Phase I reactivation (Figure 2—figure supplement 2B), although full reactivation was inhibited (Figure 2—figure supplement 2A). PKA has a number of downstream targets, including the transcription factor CREB, which is also involved in cellular gene expression changes in response to neuronal stimulation. Although addition of a CREB inhibitor (666-15), inhibited full reactivation (Figure 2—figure supplement 2C) it did not inhibit Phase I gene expression (Figure 2—figure supplement 2D). Because we did not detect a role for PKA we also investigated two additional proteins that can respond to increased levels of cAMP and mediate downstream signaling responses (see Figure 1B); EPAC1/Rapgef1 (inhibited by ESI09) and EPAC2/Rapgef2 (inhibited by SQ22,536). Downstream targets of EPAC1 1 and 2 include ERK and PKC respectively (Huang and Gu, 2017). However, inhibition of EPAC1 with ESI09 did not inhibit forskolin-mediated reactivation (Figure 2—figure supplement 2E). SQ22,536 is known to inhibit both adenylate cyclase and EPAC2 (Emery et al., 2013). Given that we had already found that SQ22,536 inhibited forskolin-mediated reactivation (Figure 1E), to directly test the inhibition of EPAC2 by SQ22,536 in a way that bypasses adenylate cyclase we investigated the effect reactivation induced by 8-Bromo-cAMP. Addition of SQ22,536 did not prevent reactivation triggered by the cAMP mimetic (Figure 2—figure supplement 2F). Taken together, these data suggest that forskolin induces a Phase I wave of gene expression that does not depend on activation of PKA, EPAC1 or EPAC2 but does require DLK and JNK activity. Because additional targets of cAMP in neurons include cyclic nucleotide-gated ion channels, we turned our attention to the role of hyperexcitability in HSV reactivation.
 
-## Forskolin triggers a Phase I wave of viral gene expression that is independent of histone demethylase activity
+### Forskolin triggers a Phase I wave of viral gene expression that is independent of histone demethylase activity
 
 Hyperexcitability results in the propensity of neurons to fire repeated action potentials, and is associated with specific changes in histone posttranslational modifications and accumulation of nuclear cFOS. This includes increased levels of γH2AX, a histone posttranslational modification linked to physiological DNA damage (Alt and Schwer, 2018; Madabhushi et al., 2015), which can be measured by the intensity of staining in neuronal nuclei. Forskolin treatment was associated with an increase in the levels of γH2AX at 5 hr post-treatment, which resolved by 15 hr post-treatment (Figure 3—figure supplement 1A and C), and is therefore indicative of physiological DNA damage and repair, which occurs upon neuronal hyperexcitability. To also indirectly probe for neuronal hyperexcitability following forskolin treatment, we also quantified nuclear cFOS accumulation and found that the intensity increased at 5 hr post-forskolin treatment (Figure 3—figure supplement 1D).
 
@@ -73,19 +85,35 @@ Previously, we found that Phase I reactivation is accompanied with a JNK-depende
 
 We next sought to determine whether the phospho/methyl switch that arises as a result of hyperexcitability plays a role in Phase I of HSV reactivation. We therefore investigated whether viral genomes were co-localized with H3K9me3/S10p following forskolin treatment. To visualize HSV genomes, viral stocks were grown in the presence of EdC as described previously (Alandijany et al., 2018; McFarlane et al., 2019). Click-chemistry was performed on latently infected neurons following forskolin treatment. As shown in Figure 3A and B, viral genomes co-localized with H3K9me3/pS10 following robust H3K9me3/S10p staining at 5 hr. The percentage of viral genomes that co-localized with H3K9me3/S10p was significantly increased compared to the mock reactivated samples at 5 hr and 20 hr post-forskolin treatment (Figure 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/58037/elife-58037-fig3-v3.jpg)
+
+**Figure 3.:** (A) Quantification of the percentage of genome foci stained using click-chemistry that co-localize with H3K9me3/S10p. At least 15 fields of view with 1–8 genomes per field of view were blindly scored from two independent experiments. Data are plotted around the median, with the boxes representing the 25th–75th percentiles and the whiskers the 1st-99th percentiles. (B) Representative images of click-chemistry based staining of HSV-EdC genomes and H3K9me3/S10p staining at 5 hr post-forskolin treatment. (C and D). Effect of the LSD1 inhibitors OG-L002 and S 2101 on forskolin-mediated Phase I of reactivation determined by RT-qPCR for ICP27 (C) and gC (D) viral lytic transcripts at 20 hr post-forskolin treatment and in the presence of 15 μM OG-L002 and 20 μM S 2102. (E) Effect of the JMJD3 and UTX inhibitor GSK-J4 (2 μM) on forskolin-mediated Phase I measured by RT-qPCR for viral lytic transcripts ICP27 (E) and gC (F) at 20 hr post-forskolin treatment and in the presence of GSK-J4. For C-F each experimental replicate along with the mean and SEM is represented. (C–F). Statistical comparisons were made using a one-way ANOVA with a Tukey’s multiple comparison. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58037/elife-58037-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) SCG neurons were treated with forskolin and immunofluorescence staining was carried out for H3K9me3/S10p, the DNA damage marker γH2AX and the neuronal marker beta III-tubulin. (B) Quantification of neuronal nuclear staining intensity for H3K9me3 (>150 cells/condition). (C) Quantification of neuronal nuclear staining for γH2AX. In B and C data are plotted around the median and whiskers represent the 2.5–97.5 percentile range. (D). Western blotting for pS475-AKT, total AKT, pS73-c-Jun and tubulin at 15 hr post-treatment with the PI3-kinase inhibitor LY294002 (20 µM) or forskolin (60 µM) (E). Effect of the LSD1 inhibitors OG-L002 (15 μM) and S 2101 (20μM) on forskolin-mediated reactivation measured by Us11-GFP-positive neurons (F). Effect of the JMJD3 and UTX inhibitor GSK-J4 (2 μM) on forskolin-mediated reactivation measured by Us11-GFP-positive neurons (G). Statistical comparisons were made using a one-way ANOVA with a Tukey’s multiple comparison. *p<0.05, **p<0.01, ***p<0.001 (E, F). In E and F individual experimental replicates are shown along with the mean and SEM.
+
 Serine phosphorylation adjacent to a repressive lysine modification is thought to permit transcription without removal of the methyl group (Gehani et al., 2010; Noh et al., 2015). Therefore, we investigated whether histone demethylase activity was required for the initial induction in lytic gene expression following forskolin treatment. Previously, the H3K9me2 histone demethylase LSD1 has been found to be required for full HSV reactivation (Liang et al., 2009; Hill et al., 2014), and in our in vitro model this was determined by the synthesis of late viral protein at 48–72 hr post-reactivation (Cliffe et al., 2015). The addition of two independent LSD1 inhibitors (OG-L002 and S 2102) inhibited Us11-GFP synthesis at 72 hr post-reactivation (Figure 3—figure supplement 1F). Hence, LSD1 activity, and presumably removal of H3K9-methylation, is required for forskolin-mediated reactivation. However, LSD1 inhibition did not prevent the initial induction of ICP27 and gC mRNA expression at 20 hr post-forskolin treatment (Figure 3C and D). Therefore, this initial wave of viral lytic gene expression following forskolin-mediated reactivation is independent of histone H3K9 demethylase activity.
 
 We previously found that H3K27me demethylase activity is required for full reactivation but not the initial wave of gene expression (Cliffe et al., 2015). However, because of the lack of an antibody that specifically recognizes H3K27me3/S28p and not also H3K9me3/S10p (Cliffe et al., 2015), we are unable at this point to investigate genome co-localization with this combination of modifications. However, we could investigate the role of the H3K27me demethylases in forskolin-mediated reactivation. Treatment of neurons with the UTX/JMJD3 inhibitor GSK-J4 (Kruidenier et al., 2012) prevented the synthesis of Us11-GFP at 72-hr post-reactivation, indicating that removal of K27 methylation is required full reactivation (Figure 3—figure supplement 1G). However, the initial burst of gene expression (assessed by ICP27 and gC mRNA levels) was robustly induced at 20 hr post-forskolin treatment in the presence of GSK-J4 (Figure 3E and F). Taken together, our data indicate that the initial phase of gene expression following forskolin treatment is independent of histone demethylase activity and therefore consistent with a role for a histone methyl/phospho switch in permitting lytic gene expression.
 
-## Forskolin-mediated reactivation requires neuronal excitability
+### Forskolin-mediated reactivation requires neuronal excitability
 
 Given that the HSV genome co-localized with regions of hyperexcitability-induced changes in histone phosphorylation, we investigated whether reactivation was linked to neuronal excitability. To inhibit action potential firing, we treated neurons with tetrodotoxin (TTX), which inhibits the majority of the voltage-gated sodium channels and consequently depolarization. The addition of TTX significantly inhibited HSV reactivation triggered by forskolin, as measured by Us11-GFP-positive neurons at 72-hr post-stimulus (Figure 4A). To further confirm a role for repeated action potential firing in forskolin-mediated reactivation, we investigated the role of voltage-gated potassium channels, which are required for membrane repolarization. The addition of tetraethylammonium (TEA), which inhibits voltage-gated potassium channel activity, also blocked HSV reactivation measured by Us11-GFP-positive neurons at 3 days post-forskolin treatment (Figure 4B). Taken together, these data indicate that action potential firing is required for forskolin-mediated reactivation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58037/elife-58037-fig4-v3.jpg)
+
+**Figure 4.:** (A) Latently infected cultures were reactivated with forskolin in the presence of the voltage-gated sodium channel blocker tetrodotoxin (TTX; 1 µM) and the number of Us11-GFP-positive neurons quantified at 3 days post-reactivation. (B) Latently infected cultures were reactivated with forskolin in the presence of the voltage-gated potassium channel blocker tetraethylammonium (TEA; 10 mM) and the number of Us11-GFP-positive neurons quantified at 3 days post-reactivation. (C) Forskolin-mediated reactivation in the presence of the HCN channel blockers ZD 7288 (10μM) quantified as the numbers of Us11-GFP-positive neurons at 3 days post-reactivation. (D) The effect of ZD 7288 on the HSV lytic gene transcript ICP27 during Phase I reactivation measured at 20 hr post-forskolin treatment by RT-qPCR. In A-D individual experimental replicates are represented along with the mean and SEM. (E and F) Quantification of the relative nuclear staining for H3K9me3/S10p and γH2AX in SCG neurons at 5 hr post-forskolin treatment and in the presence of ZD 7288 from >800 cells/condition from two independent experiments. Data are plotted around the mean, with the boxes representing the 25th-75th percentiles and the whiskers the 5st-95th percentiles. Statistical comparisons were made using a one-way ANOVA with a Tukey’s multiple comparison (A–D) or two-tailed unpaired t-test (E–F). *p<0.05, **p<0.01, ***p<0.001. In A-D individual experimental replicates are represented.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58037/elife-58037-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B) Latently infected cultures were reactivated with forskolin in the presence of the HCN channel inhibitors ivabradine (20 µM; A) and CsCl (3 mM; B). Latently infected cultures were reactivated with forskolin in the presence of the HCN inhibitor ZD 7288 (10 µM) and viral lytic transcripts measured at 20 hr post-reactivation (C and D). Individual experimental replicates are represented in addition to the mean and SEM. Statistical comparisons were made using a one-way ANOVA with a Tukey’s multiple comparison. *p<0.05, **p<0.01.
 
 Increased levels of cAMP can act on nucleotide-gated ion channels, including the hyperpolarization-activated cyclic nucleotide-gated (HCN) channels. HCN channels are K+ and Na+ channels that are activated by membrane hyperpolarization (Sartiani et al., 2017; Kullmann et al., 2016). In the presence of high levels of cAMP, the gating potential of HCN channels is shifted in the positive direction, such that HCN channels can open at resting membrane potential, resulting in an increased propensity of neurons to undergo repeated firing (Kullmann et al., 2016; DiFrancesco and Tortora, 1991; Kase and Imoto, 2012). HCN channel activity inhibitors include ZD 7288, Ivabradine, or cesium chloride. ZD 7288 has been characterized as an open-state blocker of HCN channels, however there is also evidence that it can inhibit voltage-gated sodium channel activity (Wu et al., 2012). This combined effect of ZD 7288 is a plus as it operates via multiple mechanism to inhibit neuronal excitability. Ivabradine is an FDA approved HCN inhibitor that has been demonstrated to specifically inhibit all four HCN channels (Novella Romanelli et al., 2016). Cesium chloride is a non-selective cation channel blocker. Addition of ZD 7288 (Figure 4C), Ivabradine (Figure 4—figure supplement 1A) or CsCl (Figure 4—figure supplement 1B) all significantly reduced HSV reactivation triggered by forskolin, as measured by Us-11 GFP-positive neurons at 3 days post-stimulus. To determine the contribution of HCN channel activity and neuronal excitability to the initial induction of HSV lytic mRNA expression, we assessed viral mRNA expression during Phase I in the presence and absence of ZD 7288. Expression of representative lytic mRNAs ICP27 (Figure 4D), UL30 and gC (Figure 4—figure supplement 1C and D) were significantly decreased in the presence of ZD 7288 compared to the forskolin treated neurons alone, and were not significantly increased compared to the mock treated samples.
 
 We also confirmed that neuronal excitation was required for the global changes in histone phosphorylation observed with exposure of sympathetic neurons to forskolin. Addition of ZD 7288 resulted in significantly decreased staining intensities of both H3K9me3/S10p and γH2AX at 5 hr post-forskolin treatment (Figure 4E and F), which was the peak time-point for which we observed these changes upon forskolin treatment alone (Figure 3—figure supplement 1B and S3C). Therefore, activity of the HCN channels and/or voltage-gated sodium channels in response to increased levels of cAMP, results in hyperexcitability-associated changes in histone modifications and the initial induction of lytic gene expression during Phase I and reactivation of HSV from latent infection.
 
-## HSV reactivation can be induced by stimuli that directly increase neuronal excitability
+### HSV reactivation can be induced by stimuli that directly increase neuronal excitability
 
 The role of ion channel activity in forskolin-mediated reactivation prompted us to investigate whether additional stimuli that induce hyperexcitability in neurons also trigger HSV reactivation. We were also interested in whether reactivation required chronic versus short-term hyperexcitability. Increasing the extracellular concentration of KCl is well-known to induce action potential firing. Therefore, we investigated the timing of both KCl and forskolin-mediated hyperexcitability in HSV reactivation. Both of these treatments triggered HSV reactivation more robustly if applied for 8 hr or more (Figure 5A). This indicates that chronic neuronal hyperexcitability is important in inducing reactivation of HSV.
 
@@ -93,11 +121,19 @@ To further clarify that hyperexcitability can directly trigger HSV reactivation,
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/58037/elife-58037-fig5-v3.jpg)
 
-**Figure 5.:** (A) Latently infected SCG cultures were treated with forskolin or KCl (55 mM) for the indicated times followed by wash-out. Reactivation was quantified by number of Us11-GFP-positive neurons at 3 days after the initial stimulus was added. (B) Latently infected neurons were placed in tetrodotoxin (TTX; 1 μM) for 2 days and the TTX was then washed out. At the time of wash-out the JNK inhibitor SP600125 (20 μM) or DLK inhibitor GNE-3511 (4 μM) was added. (C) Latently infected neurons were transduced with either control non-targeting shRNA or shRNA targeting DLK for 3 days, then placed in tetrodotoxin (TTX; 1 μM) for 2 days and the TTX was then washed out. Reactivation was quantified at 3 days post-wash-out. Individual experimental replicates, the mean and SEMs are represented. Statistical comparisons were made using a one-way ANOVA with a Tukey’s multiple comparison. **p<0.01, ***p<0.001.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Latently infected SCG cultures were treated with forskolin or KCl (55 mM) for the indicated times followed by wash-out. Reactivation was quantified by number of Us11-GFP-positive neurons at 3 days after the initial stimulus was added. (B) Latently infected neurons were placed in tetrodotoxin (TTX; 1 μM) for 2 days and the TTX was then washed out. At the time of wash-out the JNK inhibitor SP600125 (20 μM) or DLK inhibitor GNE-3511 (4 μM) was added. (C) Latently infected neurons were transduced with either control non-targeting shRNA or shRNA targeting DLK for 3 days, then placed in tetrodotoxin (TTX; 1 μM) for 2 days and the TTX was then washed out. Reactivation was quantified at 3 days post-wash-out. Individual experimental replicates, the mean and SEMs are represented. Statistical comparisons were made using a one-way ANOVA with a Tukey’s multiple comparison. **p<0.01, ***p<0.001.
 
-## IL-1β triggers HSV reactivation in mature neurons in a DLK and voltage-gated sodium channel-dependent manner
+### IL-1β triggers HSV reactivation in mature neurons in a DLK and voltage-gated sodium channel-dependent manner
 
 Our data thus far point to reactivation of HSV following increasing episodes of neuronal hyperexcitability in a way that requires activation of the JNK cell stress pathway. However, we wished to link this response to a physiological trigger that may stimulate HSV reactivation in vivo. Increased HCN channel activity has been associated with inflammatory pain resulting from the activity of pyrogenic cytokines on neurons (Emery et al., 2011). In addition, IL-1β is known to act on certain neurons to induce neuronal excitation (Vezzani and Viviani, 2015; Schneider et al., 1998; Binshtok et al., 2008). IL-1β is released in the body during times of chronic, psychological stress. In addition, IL-1β contributes to the fever response (Ericsson et al., 1994; Goshen and Yirmiya, 2009; Koo and Duman, 2009; Saper and Breder, 1994). In sympathetic neurons, we found that exposure of mature neurons to IL-1β induced an accumulation of the hyperexcitability-associated histone post-translational modifications γH2AX and H3K9me3/S10p (Figure 6A, Figure 6—figure supplement 1A–B). We did not observe the same changes for post-natal neurons. The precise reasons for this maturation-dependent phenotype are unknown at this point but we hypothesize it could be due to changes in the expression of cellular factors required to respond to IL-1β. Therefore, these experiments were carried out on neurons that were postnatal day 36. The kinetics of induction of these histone modifications were different from what we had previously observed for forskolin treatment, as both γH2AX and H3K9me3/S10p steadily accumulated to 20 hr post-treatment. This likely reflects the activation of upstream signaling pathways in response to IL-1β prior to inducing neuronal excitation as IL-1β is known to increase the expression of voltage-gated sodium channels (Binshtok et al., 2008). To confirm that the increase in γH2AX and H3K9me3/S10p was linked to neuronal excitation we measured the staining intensity when IL-1β was added in the presence of TTX. We also added an IL1R neutralizing antibody to verify that the response was specific to signaling via IL-1 mediated binding to its receptor. Addition of either TTX or anti-IL1R antibody resulted in a significant reduction in γH2AX and H3K9me3/S10p levels in response to IL-1β treatment (Figure 6B–C), indicating that the response is directly due to IL1 and requires activity of voltage-gated sodium channels.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/58037/elife-58037-fig6-v3.jpg)
+
+**Figure 6.:** (A) Adult P36 SCG neurons were treated with IL-1β (30 ng/mL) for 15 hr and stained for H3K9me3/S10p, γH2AX and beta II-tubulin to mark neurons. (B and C) Quantification of the intensity of H3K9me3/S10p (B) and γH2AX (C) staining following 15 of IL-1β treatment and in the presence of tetrodotoxin (TTX; 1 μM) or anti-IL1 receptor (IL-1R) blocking antibody (2 μg/mL). Data are plotted around the median and whiskers represent the 5th-95th percentiles. (D) Representative images of cytosolic Ca2+ elevations measured using Fura-2-AM in neurons stimulated with 100 µM acetylcholine either pre-treated with IL-1β for 20 hr or mock treated. As a control the neurons were also treated with Ionomycin at the end of the protocol. Bar = 100 μm. (E) Representative experiment for cytosolic Ca2+ elevations in neurons stimulated with 100 µM acetylcholine. Cells were pretreated with IL-1β or vehicle for 20 hr prior to imaging. The plotted values were calculated as a change in fluorescence/initial fluorescence (ΔF/F0). Error bars represent SEM (IL-1β treatment, n = 58 cells and vehicle control, n = 25 cells). (F) Peak cytosolic Ca2+ elevations normalized to untreated controls in neurons stimulated with 100 µM acetylcholine. Cells were pretreated with IL-1β (n = 70, wells) or vehicle (n = 58, wells) for 20 hr prior to imaging. IL-1R blocking antibody (n = 54, wells) was also added. Data points represent individual wells, horizontal line represents mean. Statistical comparisons were made using a one-way ANOVA with a Tukey’s multiple comparison (B–D). ***p<0.001 ****p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/58037/elife-58037-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Quantification of the nuclear staining intensity in P36 sympathetic neurons for H3K9me3/S10 (A) and γH2AX (B) following treatment with IL-1β (30 ng/mL) from 150 nuclei from two independent experiments. Data are plotted around the median and whiskers represent the 5th-95th percentile.
 
 To test whether IL-1β induces a hyperexcitable state in sympathetic neurons, we measured cytosolic Ca2+ elevations within neurons following addition of their cognate neurotransmitter, acetylcholine. Compared to mock treated controls, neurons that were pre-treated with IL-1β for 20 hr displayed higher elevations in cytosolic Ca2+ as measured by Fura-2-AM, a ratiometric indicator of cytosolic Ca2+ (Figure 6D–E). To control for any intrinsic artifacts in dye loading or retention, neurons were also treated with Ca2+ ionophore, ionomycin, to raise the intracellular levels of Ca2+ directly at the end of the recording protocol. We observed nearly identical elevations in ionomycin-mobilized Ca2+ in both untreated and IL-1β treated neurons. Importantly, compared to untreated controls, neurons pre-treated with IL-1β exhibit significantly higher levels of cytosolic Ca2+ in response to acetylcholine. When IL-1β pre-treated sympathetic neurons were measured on a population basis for their response to acetylcholine (Figure 6E), we did observe a range of responses, which likely reflects that these are a heterogenous population of mature neurons that vary in response to IL-1β as well as acetylcholine. Importantly, we did detect a significant increase in intracellular Ca2+ in response to acetylcholine in neurons that we treated with IL-1β. The increase in acetylcholine responses observed in IL-1β treated neurons was prevented with the addition of the IL1R blocking antibody, indicating that it is specific for signaling through the IL1 receptor (Figure 6F).
 
@@ -105,7 +141,7 @@ Because IL-1β was found to cause sympathetic neurons to enter a hyperexcitable 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/58037/elife-58037-fig7-v3.jpg)
 
-**Figure 7.:** (A) Quantification of Us11-GFP expressing neurons following addition of IL-1β to latently infected cultures of mature SCG neurons. (B) Numbers of Us11-GFP-positive neurons following addition of forskolin or IL-1β to mature SCG neurons, and in the presence of an IL-1R-blocking antibody (2 μg/mL). (C) Quantification of IL-1β induced reactivation in the presence of the voltage-gated sodium channel blocker TTX (1 μM), the HCN-channel blocker ZD 7288 (10 μM) and the DLK inhibitor GNE-3511 (4 μM). (D) Latently infected SCG neurons were transduced with an shRNA control lentivirus or lentiviruses expressing shRNA against DLK. Three days later IL-1β was added to the cultures and the numbers of GFP-positive neurons quantified at 3 days later. Individual experimental replicates, means and SEMs are represented. Statistical comparisons were made using two-tailed unpaired t-test (A) or a one-way ANOVA with a Tukey’s multiple comparison (B–D). *p<0.05, **p<0.01.Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A) Quantification of Us11-GFP expressing neurons following addition of IL-1β to latently infected cultures of mature SCG neurons. (B) Numbers of Us11-GFP-positive neurons following addition of forskolin or IL-1β to mature SCG neurons, and in the presence of an IL-1R-blocking antibody (2 μg/mL). (C) Quantification of IL-1β induced reactivation in the presence of the voltage-gated sodium channel blocker TTX (1 μM), the HCN-channel blocker ZD 7288 (10 μM) and the DLK inhibitor GNE-3511 (4 μM). (D) Latently infected SCG neurons were transduced with an shRNA control lentivirus or lentiviruses expressing shRNA against DLK. Three days later IL-1β was added to the cultures and the numbers of GFP-positive neurons quantified at 3 days later. Individual experimental replicates, means and SEMs are represented. Statistical comparisons were made using two-tailed unpaired t-test (A) or a one-way ANOVA with a Tukey’s multiple comparison (B–D). *p<0.05, **p<0.01.
 
 Inhibition of voltage-gated sodium channels by TTX resulted in a significant decrease in the ability of IL-1β to induce reactivation (Figure 7E), therefore indicating that IL-1β triggered reactivation is via increasing neuronal activity. Reactivation was reduced in the presence of the HCN-channel inhibitor ZD 7288, although this decrease was not significant (p=0.2255), perhaps suggesting that IL-1β induction of neuronal activity is not directly due to the action of cAMP on HCN channels and instead HCN channel activity may be required for maximal hyperexcitability and reactivation. Importantly, the addition of the DLK inhibitor GNE-3511 blocked reactivation in response to IL-1β (Figure 7C) and the role for DLK was confirmed by shRNA mediated depletion (Figure 7D). Therefore, IL-1β can induce sympathetic neurons to become hyperexcitable and trigger HSV-1 reactivation via activation of DLK.
 
@@ -129,50 +165,564 @@ Previously, we found that JNK activation by DLK is required for reactivation fol
 
 ## Materials and methods
 
-## Reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, M/F)</td>
+      <td>CD1</td>
+      <td>Charles River</td>
+      <td>Crl:CD1(ICR)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Human herpesvirus 1)</td>
+      <td>HSV Us11-GFP</td>
+      <td>I gift from Ian Mohr, NYU. PMID:12915535</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Human herpesvirus 1)</td>
+      <td>HSV-1 17syn+</td>
+      <td>A gift from Roger Everett, MRC Virology Unit Glasgow</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293LTV</td>
+      <td>Cell Biolabs</td>
+      <td>Cat # LTV-100 RRID:CVCL_JZ09</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>Vero</td>
+      <td>ATCC</td>
+      <td>Cat # CCCL-81 RRID:CVCL_0059</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-VSV-G</td>
+      <td>A gift from Bob Weinberg/Addgene PMID:12649500</td>
+      <td>Cat # 8454 RRID:Addgene_8454</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPax2</td>
+      <td>A gift from Didier Trono/Addgene</td>
+      <td>Cat # 12260 RRID:Addgene_12260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-Akt (S473) (Rabbit monoclonal)</td>
+      <td>Cell Signalling Technologies</td>
+      <td>Cat # 4060 RRID:AB_2315049</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Akt (pan) (Rabbit monoclonal)</td>
+      <td>Cell Signalling Technologies</td>
+      <td>Cat # C67E7 RRID:AB_915783</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phopsho-c-Jun (Rabbit monoclonal)</td>
+      <td>Cell Signalling Technologies</td>
+      <td>Cat # 3270 RRID:AB_2129575</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DLK/MAP3K12 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>PA5-32173 RRID:AB_2549646</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-a-tubulin (Mouse monoclonal)</td>
+      <td>Millipore sigma</td>
+      <td>Cat # T9026 RRID:AB_477593</td>
+      <td>WB (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG Antibody (H+L), Peroxidase (Goat polyclonal)</td>
+      <td>Vector Labs</td>
+      <td>Cat # PI-1000 RRID:AB_2336198</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG Antibody (H+L), Peroxidase (Horse polyclonal)</td>
+      <td>Vector Labs</td>
+      <td>Cat # PI-2000 RRID:AB_2336177</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- H3K9me3S10P (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # Ab5819 RRID:AB_305135</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Beta-III Tubulin (Chicken polyclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat # AB9354 RRID:AB_570918</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-γH2A.X (Mouse monoclonal)</td>
+      <td>Cell Signalling Technologies</td>
+      <td>Cat # 80312 RRID:AB_2799949</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c-Fos (Rabbit polyclonal)</td>
+      <td>Novus</td>
+      <td>Cat # NB110-75039 RRID:AB_1048550</td>
+      <td>IF (1:125)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>F(ab’)2 Anti-Mouse IgG (H+L) Alexa Fluor 647, (Goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # A21237 RRID:AB_2535806</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>F(ab’)2 Anti-Rabbit IgG (H+L) Alexa Fluor 555 (Goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # A21425 RRID:AB_2535846</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Chicken IgY (H+L) Alexa Fluor 647 (Goat pAb)</td>
+      <td>Abcam</td>
+      <td>Cat # Ab150175 RRID:AB_2732800</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Chicken IgY (H+L) Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # Ab150173 RRID:AB_2827653</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>F(ab’)2 Anti-Rabbit IgG (H+L) Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # A-11070 RRID:AB_2534114</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IL-1R (Goat polyclonal)</td>
+      <td>Leinco Technologies</td>
+      <td>Cat # I-736 RRID:AB_2830857</td>
+      <td>Blocking (2 ug/mL)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mGAP F</td>
+      <td>PMID:19515781</td>
+      <td>PCR primers</td>
+      <td>CATGGCCTTCCGTGTGTTCCTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mGAP R</td>
+      <td>PMID:19515781</td>
+      <td>PCR primers</td>
+      <td>GCGGCACGTCAGATCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ICP27 F</td>
+      <td>PMID:21285374</td>
+      <td>PCR primers</td>
+      <td>GCATCCTTCGTGTTTGTCATTCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ICP27 R</td>
+      <td>PMID:21285374</td>
+      <td>PCR primers</td>
+      <td>GCATCTTCTCTCCGACCCCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ICP8 F</td>
+      <td>PMID:23322639</td>
+      <td>PCR primers</td>
+      <td>GGAGGTGCACCGCATACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ICP8 R</td>
+      <td>PMID:23322639</td>
+      <td>PCR primers</td>
+      <td>GGCTTAAATCCGGCATGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ICP4 F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGCTGCTGCTGTCCACGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ICP4 R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGGTGTTGACCACGATGAGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>UL30 F</td>
+      <td>PMID:22383875</td>
+      <td>PCR primers</td>
+      <td>CGCGCTTGGCGGGTATTAACAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>UL30 R</td>
+      <td>PMID:22383875</td>
+      <td>PCR primers</td>
+      <td>TGGGTGTCCGGCAGAATAAAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>UL48 F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGCTCGCGAATGTGGTTTAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>UL48 R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTGTTCCAGCCCTTGATGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gC F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGTTTGTCTGGTTCGAGGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gC R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACGGTAGAGACTGTGGTGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shRNA: DLK-1</td>
+      <td>Broad Institute: Genetic Perturbation Platform/Millipore Sigma</td>
+      <td>TRCN0000022573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shRNA: DLK-2</td>
+      <td>Broad Institute: Genetic Perturbation Platform/Millipore Sigma</td>
+      <td>TRCN0000022572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shRNA: non-targeting control</td>
+      <td>PMID:16873256</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick-RNA Miniprep</td>
+      <td>Zymo Research</td>
+      <td>R1054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript IV First-Strand Synthesis System</td>
+      <td>ThermoFisher</td>
+      <td>18091050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR Green PCR Master Mix</td>
+      <td>ThermoFisher</td>
+      <td>4309155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acycloguanosine</td>
+      <td>Millipore Sigma</td>
+      <td>A4669</td>
+      <td>10 µM, 50 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FUDR</td>
+      <td>Millipore Sigma</td>
+      <td>F-0503</td>
+      <td>20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uridine</td>
+      <td>Millipore Sigma</td>
+      <td>U-3003</td>
+      <td>20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SP600125</td>
+      <td>Millipore Sigma</td>
+      <td>S5567</td>
+      <td>20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GNE-3511</td>
+      <td>Millipore Sigma</td>
+      <td>533168</td>
+      <td>4 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GSK-J4</td>
+      <td>Millipore Sigma</td>
+      <td>SML0701</td>
+      <td>2 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Glutamic Acid</td>
+      <td>Millipore Sigma</td>
+      <td>G5638</td>
+      <td>3.7 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Forskolin</td>
+      <td>Tocris</td>
+      <td>1099</td>
+      <td>60 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LY 294002</td>
+      <td>Tocris</td>
+      <td>1130</td>
+      <td>20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>666–15</td>
+      <td>Tocris</td>
+      <td>5661</td>
+      <td>2 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SQ 22,536</td>
+      <td>Tocris</td>
+      <td>1435</td>
+      <td>50 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KT 5720</td>
+      <td>Tocris</td>
+      <td>1288</td>
+      <td>3 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TEA</td>
+      <td>Tocris</td>
+      <td>3068</td>
+      <td>10 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CsCl</td>
+      <td>Tocris</td>
+      <td>4739</td>
+      <td>3 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>OG-L002</td>
+      <td>Tocris</td>
+      <td>6244</td>
+      <td>30 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S2101</td>
+      <td>Tocris</td>
+      <td>5714</td>
+      <td>20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin</td>
+      <td>Tocris</td>
+      <td>1069</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ESI-09</td>
+      <td>Tocris</td>
+      <td>4773</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZD 7288</td>
+      <td>Cayman</td>
+      <td>15228</td>
+      <td>20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>8-bromo-cyclic AMP</td>
+      <td>Cayman</td>
+      <td>14431</td>
+      <td>125 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NGF 2.5S</td>
+      <td>Alomone Labs</td>
+      <td>N-100</td>
+      <td>50 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Primocin</td>
+      <td>Invivogen</td>
+      <td>ant-pm-1</td>
+      <td>100 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aphidicolin</td>
+      <td>AG Scientific</td>
+      <td>A-1026</td>
+      <td>3.3 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IL-1β</td>
+      <td>Shenendoah Bio.</td>
+      <td>100–167</td>
+      <td>30 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>WAY-150138</td>
+      <td>Pfizer, gift from Lynn Enquist and Jay Brown.</td>
+      <td>NA</td>
+      <td>10 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fura-2 AM</td>
+      <td>Thermo Fisher</td>
+      <td>F1221</td>
+      <td>5 µM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoescht Stain</td>
+      <td>Thermo</td>
+      <td>62249</td>
+      <td>2 µM</td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents
 
 Compounds used in the study are as follows: Acycloguanosine, FUDR, Uridine, SP600125, GNE-3511, GSK-J4, L-glutamic acid, and Ivabradine (Millipore Sigma); Forskolin, LY 294002, 666–15, SQ 22536, KT 5720, tetraethylammonium chloride, cesium chloride, OG-L002, S2101, tetrotdotoxin, and ESI-09 (Tocris); 1,9-dideoxy-Forskolin, ZD 7288 and 8-bromo-cyclic AMP (Cayman Chemicals); nerve growth factor 2.5S (Alomone Labs); Primocin (Invivogen); aphidicolin (AG Scientific); IL-1β (Shenandoah Biotechnology); WAY-150138 was kindly provided by Pfizer, Dr. Jay Brown at the University of Virginia, and Dr. Lynn Enquist at Princeton University. Compound concentrations were used based on previously published IC50s and assessed for neuronal toxicity using the cell body and axon health and degeneration index (Supplementary file 1 Table 1 and 2). All compounds used had an average score ≤1. Untreated controls are quantified as ‘Mock’ treatments for all experiments.
 
-## Preparation of HSV-1 virus stocks
+### Preparation of HSV-1 virus stocks
 
 HSV-1 stocks of eGFP-Us11 Patton were grown and titrated on Vero cells obtained from the American Type Culture Collection (Manassas, VA). Cells were maintained in Dulbecco’s Modified Eagle’s Medium (Gibco) supplemented with 10% FetalPlex (Gemini Bio-Products) and 2 mM L-Glutamine. Cells were confirmed to be mycoplasma negative using the Mycoplasma PCR Detection Kit (amb). eGFP-Us11 Patton (HSV-1 Patton strain with eGFP reporter protein fused to true late protein Us11 [Benboudjema et al., 2003]) was kindly provided by Dr. Ian Mohr at New York University.
 
-## Primary neuronal cultures
+### Primary neuronal cultures
 
 Sympathetic neurons from the superior cervical ganglia (SCG) of post-natal day 0–2 (P0-P2) or adult (P21-P24) CD1 Mice (Charles River Laboratories) were dissected as previously described (Cliffe et al., 2015). Rodent handling and husbandry were carried out under animal protocols approved by the Animal Care and Use Committee of the University of Virginia (UVA). Ganglia were briefly kept in Leibovitz’s L-15 media with 2.05 mM L-Glutamine before dissociation in Collagenase Type IV (1 mg/mL) followed by Trypsin (2.5 mg/mL) for 20 min each at 37°C. Dissociated ganglia were triturated, and approximately 10,000 neurons per well were plated onto rat tail collagen in a 24-well plate. Sympathetic neurons were maintained in CM1 (Neurobasal Medium supplemented with PRIME-XV IS21 Neuronal Supplement (Irvine Scientific), 50 ng/mL Mouse NGF 2.5S, 2 mM L-Glutamine, and Primocin). Aphidicolin (3.3 µg/mL), Fluorodeoxyuridine (20 µM) and Uridine (20 µM) were added to the CM1 for the first five days post-dissection to select against proliferating cells.
 
-## Establishment and reactivation of latent HSV-1 infection in primary neurons
+### Establishment and reactivation of latent HSV-1 infection in primary neurons
 
 Latent HSV-1 infection was established in P6-8 and P30-32 sympathetic neurons from SCGs. Neurons were cultured for at least 24 hr without antimitotic agents prior to infection. The cultures were infected with eGFP-Us11 (Patton recombinant strain of HSV-1 expressing an eGFP reporter fused to true late protein Us11). Neurons were infected at a Multiplicity of Infection (MOI) of 7.5 PFU/cell (assuming 1.0 × 104 neurons/well/24-well plate) in DPBS +CaCl2 +MgCl2 supplemented with 1% Fetal Bovine Serum, 4.5 g/L glucose, and 10 µM Acyclovir (ACV) for 3 hr at 37 °C. Post-infection, inoculum was replaced with CM1 containing 50 µM ACV for 5–6 days, followed by CM1 without ACV. Reactivation was carried out in DMEM/F12 (Gibco) supplemented with 10% Fetal Bovine Serum, Mouse NGF 2.5S (50 ng/mL) and Primocin. Inhibitors were added either 1 hr prior to or concurrently with the reactivation stimulus. WAY-150138 (2–10 µg/mL) was added to reactivation cocktail to limit cell-to-cell spread. Reactivation was quantified by counting number of GFP-positive neurons or performing Reverse Transcription Quantitative PCR (RT-qPCR) of HSV-1 lytic mRNAs isolated from the cells in culture.
 
-## Analysis of mRNA expression by reverse-transcription quantitative PCR (RT-qPCR)
+### Analysis of mRNA expression by reverse-transcription quantitative PCR (RT-qPCR)
 
 To assess relative expression of HSV-1 lytic mRNA, total RNA was extracted from approximately 1.0 × 104 neurons using the Quick-RNA Miniprep Kit (Zymo Research) with an on-column DNase I digestion. mRNA was converted to cDNA using the SuperScript IV First-Strand Synthesis system (Invitrogen) using random hexamers for first-strand synthesis and equal amounts of RNA (20–30 ng/reaction). To assess viral DNA load, total DNA was extracted from approximately 1.0 × 104 neurons using the Quick-DNA Miniprep Plus Kit (Zymo Research). qPCR was carried out using Power SYBR Green PCR Master Mix (Applied Biosystems). The relative mRNA or DNA copy number was determined using the Comparative CT (ΔΔCT) method normalized to mRNA or DNA levels in latently infected samples. Viral RNAs were normalized to mouse reference gene GAPDH. All samples were run in duplicate on an Applied Biosystems QuantStudio 6 Flex Real-Time PCR System and the mean fold change compared to the reference gene calculated. Primers used are described in Key Resources Table.
 
-## Western blot analysis
+### Western blot analysis
 
 Neurons were lysed in RIPA Buffer with cOmplete, Mini, EDTA-Free Protease Inhibitor Cocktail (Roche) and PhosSTOP Phosphatase Inhibitor Cocktail (Roche) on ice for 1 hr with regular vortexing to aid lysis. Insoluble proteins were removed via centrifugation, and lysate protein concentration was determined using the Pierce Bicinchoninic Acid Protein Assay Kit (Invitrogen) using a standard curve created with BSA standards of known concentration. Equal quantities of protein (20–50 µg) were resolved on 4–20% gradient SDS-Polyacrylamide gels (Bio-Rad) and then transferred onto Polyvinylidene difluoride membranes (Millipore Sigma). Membranes were blocked in PVDF Blocking Reagent for Can Get Signal (Toyobo) for 1 hr. Primary antibodies were diluted in Can Get Signal Immunoreaction Enhancer Solution 1 (Toyobo) and membranes were incubated overnight at 4°C. HRP-labeled secondary antibodies were diluted in Can Get Signal Immunoreaction Enhancer Solution 2 (Toyobo) and membranes were incubated for 1 hr at room temperature. Blots were developed using Western Lightning Plus-ECL Enhanced Chemiluminescence Substrate (PerkinElmer) and ProSignal ECL Blotting Film (Prometheus Protein Biology Products) according to manufacturer’s instructions. Blots were stripped for reblotting using NewBlot PVDF Stripping Buffer (Licor). Band density was quantified in ImageJ.
 
-## Preparation of lentiviral vectors
+### Preparation of lentiviral vectors
 
 Lentiviruses expressing shRNA against DLK (DLK-1 TRCN0000022572, DLK-2 TRCN0000022573), or a control lentivirus shRNA (Everett et al., 2006) were prepared by co-transfection with psPAX2 and pCMV-VSV-G (Stewart et al., 2003) using the 293LTV packaging cell line (Cell Biolabs). Supernatant was harvested at 40 hr and 64 hr post-transfection. Sympathetic neurons were transduced overnight in neuronal media containing 8 μg/mL protamine and 50 μM ACV.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Neurons were fixed for 15 min in 4% Formaldehyde and blocked in 5% Bovine Serum Albumin and 0.3% Triton X-100 and incubated overnight in primary antibody. Following primary antibody treatment, neurons were incubated for 1 hr in Alexa Fluor 488-, 555-, and 647-conjugated secondary antibodies for multi-color imaging (Invitrogen). Nuclei were stained with Hoechst 33258 (Life Technologies). Images were acquired using an sCMOS charge-coupled device camera (pco.edge) mounted on a Nikon Eclipse Ti Inverted Epifluorescent microscope using NIS-Elements software (Nikon). Images were analyzed and intensity quantified using ImageJ.
 
-## Click-chemistry
+### Click-chemistry
 
 For EdC-labeled HSV-1 virus infections, an MOI of 7.5 was used. EdC labeled virus was prepared using a previously described method (McFarlane et al., 2019). Click-chemistry was carried out a described previously (Alandijany et al., 2018) with some modifications. Neurons were washed with CSK buffer (10 mM HEPES, 100 mM NaCl, 300 mM Sucrose, 3 mM MgCl2, 5 mM EGTA) and simultaneously fixed and permeabilized for 10 min in 1.8% methonal-free formaldehyde (0.5% Triton X-100, 1% phenylmethylsulfonyl fluoride (PMSF)) in CSK buffer, then washed twice with PBS before continuing to the click-chemistry reaction and immunostaining. Samples were blocked with 3% BSA for 30 min, followed by click-chemistry using EdC-labeled HSV-1 DNA and the Click-iT EdU Alexa Flour 555 Imaging Kit (ThermoFisher Scientific, C10638) according to the manufacturer’s instructions. For immunostaining, samples were incubated overnight with primary antibodies in 3% BSA. Following primary antibody treatment, neurons were incubated for 1 hr in Alexa Fluor 488-, 555-, and 647-conjugated secondary antibodies for multi-color imaging (Invitrogen). Nuclei were stained with Hoechst 33258 (Life Technologies). Images were acquired at 60x using an sCMOS charge-coupled device camera (pco.edge) mounted on a Nikon Eclipse Ti Inverted Epifluorescent microscope using NIS-Elements software (Nikon). Images were analyzed and intensity quantified using ImageJ.
 
-## Cytosolic Ca2+ imaging using ratiometric Fura-2 (microscopy)
+### Cytosolic Ca2+ imaging using ratiometric Fura-2 (microscopy)
 
 For ratiometric Ca2+ imaging, neurons were seeded on coverslips and incubated for 30 min at RT with 5 μM Fura-2-AM, 0.02% pluronic acid in Ringer solution (in mM, 155 NaCl, 4.5 KCl, 2 CaCl2, 1 MgCl2, 5 HEPES, 10 glucose, adjusted to pH 7.4). Excitations of Fura-2 at 340 nm and 380 nm emissions were carried out using a DG4 Illuminator (Sutter Instruments). Emissions were collected at 510 nm using an ORCA-Flash 4.0 V2 CMOS camera (Hamamatsu). Cells were imaged every 500 milliseconds for the duration of the experiment. Acetylcholine (100 µM) and Ionomycin (2 µM) were applied at indicated timepoints. Data were acquired and processed using SlideBook six software.
 
-## Cytosolic Ca2+ imaging using ratiometric Fura-2 (FlexStation)
+### Cytosolic Ca2+ imaging using ratiometric Fura-2 (FlexStation)
 
 For ratiometric Ca2+ imaging, neurons were seeded on a 96-well black walled plate and incubated for 30 min at RT with 5 μM Fura-2-AM, 0.02% of pluronic acid in Ringer solution ([in mM] 155 NaCl, 4.5 KCl, 10 CaCl2, 1 MgCl2, 5 HEPES, 10 glucose, pH 7.4). Fura-2 emissions were collected at 510 nm and with 340/380 nm excitation. Plates were imaged using the FlexStation 3 (Molecular Devices). Cells were imaged every 5 s for the duration of the experiment.
 
-## Statistical analysis
+### Statistical analysis
 
 Power analysis was used to determine the appropriate sample sizes for statistical analysis. All statistical analysis was performed using Prism V8.4. An unpaired t-test was used for all experiments where the group size was 2. All other experiments were analyzed using a one-way ANOVA with a Tukey’s multiple comparison. Specific analyses are included in the figure legends. For all reactivation experiments measuring GFP expression, viral DNA, gene expression or DNA load, individual biological replicates were plotted (an individual well of primary neurons) and all experiments were repeated from pools of neurons from at least three litters. EdC virus and H3K9me3S10/p co-localization was quantified using ImageJ after sample blinding of at least 8 fields of view from two biological replicates. Mean fluorescence intensity of γH2AX and H3K9me3pS10 was quantified using ImageJ from at least 100 cells from at least three biological replicates.

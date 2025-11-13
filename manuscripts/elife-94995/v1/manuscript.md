@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01y2jtd41 Department of Medical Microbiology and Immunology, University of Wisconsin-Madison Madison United States
-2. https://ror.org/01y2jtd41 Cellular and Molecular Biology Graduate Program, University of Wisconsin-Madison Madison United States
-3. https://ror.org/01y2jtd41 Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison Madison United States
-4. https://ror.org/01y2jtd41 Department of Pediatrics, University of Wisconsin-Madison Madison United States
+1. Department of Medical Microbiology and Immunology, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+2. Cellular and Molecular Biology Graduate Program, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+3. Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+4. Department of Pediatrics, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
 
 † Corresponding author
 
@@ -32,47 +32,99 @@ Using real-time imaging, we took advantage of the optical transparency of larval
 
 ## Results
 
-## Burn injury induces peripheral sensory axon damage
+### Burn injury induces peripheral sensory axon damage
 
 To visualize sensory neurons responding to tissue injury, we used 3 days post-fertilization (dpf) Tg(Ngn1:GFP-Caax) larval zebrafish that express GFP in sensory neurons (Andermann et al., 2002; Blader et al., 2003; McGraw et al., 2008). Larvae were either mechanically injured by tailfin transection or burn as previously described (Figure 1A; Miskolci et al., 2019). Intravital imaging of larvae beginning at 24 hr post-wound (hpw) revealed an abnormal axon morphology in burned larvae compared to mechanical transection, with axons showing fewer branch points (Figure 1B). To evaluate sensory axons following injury, we assessed axon density in the wounded tissue posterior to the notochord 24 hpw. Larval zebrafish caudal fins can regenerate fully by 3 days post-transection, with 60% of fin regrowth occurring by day 1.5 (Lisse et al., 2015). Following transection, axon density was 89.5±0.02% of the density observed in age-matched uninjured larvae 24 hpw. In contrast, we found that burned larvae had significantly reduced sensory axon density, with an axon density of 63.7±0.02% compared to uninjured fins (Figure 1C). This relative decrease was sustained even 96 hpw with an axon density of only 65.1±0.04% compared to control (Figure 1C). To test whether this regenerative defect was associated with a defect in sensory neuron function, we assessed the touch responsiveness of wounded tissue. Light pressure was applied by an eyelash brush directly to the wound area, and sensory neuron function was scored by the presence of a tail flick reflex (Granato et al., 1996). As expected, larvae wounded by transection had a nearly 100% response rate 24 hpw, indicating the rapid recovery of sensory neurons following mechanical injury (Figure 1D). In contrast, none of the burned larvae were sensitive to touch 24 hpw with resolution occurring by 96 hpw (Figure 1D). Importantly, all tested larvae exhibited a tail flick reflex when pressure was applied to the trunk, showing that the impaired sensation was limited to the damaged tissue.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/94995/elife-94995-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of larval zebrafish injury. Gray dashed line denotes area used to measure axon density to the right of the notochord. (B) Confocal max-projected images of sensory axons in uninjured, transected, and burned Tg(Ngn1:GFP-Caax) caudal fins 24 hr post-wound (hpw). (C) Quantification of axon density for uninjured, transected, and burned larvae in the wound area 24–96 hpw. N>20 larvae per condition from four replicates. (D) Quantification of sensory perception for uninjured, transected, and burned larvae 24–96 hpw. N>32 larvae per condition from four replicates. (E) Confocal time-series images of axonal damage, indicated by calcium-positive punctae (black dots), in Tg(Elavl3:GCaMP5) larvae following either transection or burn injury. Each series follows one representative larva over 6 hpw. (F) Quantification of axon damage area in transected and burned larvae 6 hpw. N>12 larvae per condition from two replicates. (G) Images of larvae either transected or burned in the presence of FM 1–43 dye. White dashed box denotes area of uninjured tissue in which axonal damage appears in H. (H) Images show axonal damage following transection or burn injury. Red dashed box corresponds to the tissue region highlighted in G. In all cases, scale bars = 20 µm. *p<0.05, **p<0.01, ***p<0.001, ns = not significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94995/elife-94995-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Confocal max-projected images of axon damage in Tg(Elavl3:GCaMP5) larval zebrafish caudal fins either untreated or 30 min post-treatment with the neurotoxin sodium azide (NaN3, 1.5% final concentration). Sensory neuron damage is indicated by calcium-positive axon fragments (black dots). Dashed black lines denote the fin edge. Black boxes highlight area of inset, shown below. (B) Confocal max-projected images of Tg(Elavl3:GCaMP5) larvae injected with Ngn1 morpholino both before and 5 min after the indicated injury. (C) Confocal max-projected images of Tg(Elavl3:GCaMP5) larvae taken from a time series. Red dashed box denotes inset area shown on right of a sensory axon fragmenting over a period of 30 min. (D) Confocal max-projected images of Tg(Ngn1:GFP-Caax) larvae taken from a time series. Red dashed box denotes inset area shown on right of a sensory axon fragmenting over a period of 30 min. In all cases, scale bar = 20 µm.
 
 We next sought to further investigate sensory neuron function in burned tissue. For this, we assessed wound-induced axonal damage using Tg(Elavl3:GCaMP5) zebrafish larvae that express the calcium probe GCaMP under the pan-neuronal Elavl3 promoter. Using these larvae, we observed no noticeable change in GCaMP intensity under homeostatic conditions (Figure 1—figure supplement 1A). While transient calcium increase following cell damage is required for immediate membrane repair and subsequent regeneration, chronically elevated cytosolic calcium is associated with cell degeneration and death (Khaitin, 2021). GCaMP has previously been used as a marker of real-time axonal damage in zebrafish (Adalbert et al., 2012; Linsley et al., 2021; Ziv and Spira, 1993). Therefore, GCaMP can be used for real-time labeling of axon damage in larval zebrafish (Adalbert et al., 2012; Linsley et al., 2021; Ziv and Spira, 1993). Axon damage is characterized by the fragmenting of axons and the formation of small punctae, which are later cleared by phagocytes (Reyes et al., 2004; Villegas et al., 2012). Accordingly, the neurotoxin sodium azide elicited widespread and long-lasting calcium-positive punctae, indicating sustained axonal damage (Figure 1—figure supplement 1A; Linsley et al., 2021). Unlike Ngn1, the Elavl3 promoter is expressed by both sensory and motor neurons. To ensure that the calcium increase in wounded tissue was specific to sensory axons, sensory neurons were depleted by injecting a morpholino targeting Ngn1 (Cornell and Eisen, 2002). These larvae did not have any obvious developmental defects but lacked responsiveness to touch stimulation, as previously reported (Cornell and Eisen, 2002). As expected, no calcium increase was detected in Ngn1 depleted larvae following injury (Figure 1—figure supplement 1B).
 
 Time-lapse images were taken of Elavl3:GCaMP5 larvae to visually capture instances of axon damage indicated by calcium-positive punctae during the 30 min after injury (Figure 1—figure supplement 1C). These images were compared to time-lapse images of sensory neuron-labeled larvae (Figure 1—figure supplement 1D). In agreement with previous observations of axonal damage following mechanical injury (Arrázola et al., 2019; Rasmussen et al., 2015; Rieger and Sagasti, 2011), tailfin transection resulted in spatially localized axonal damage that was almost completely resolved by 1 hpw (Figure 1E). In contrast, burn injury resulted in a distinct temporal and spatial profile of sensory axon damage. While initial wound-induced sensory neuron-specific calcium increase appeared to be localized to burned tissue, axonal damage continued to increase and spread across the tissue for approximately 6 hr (Figure 1E and F). This raised the question of whether axonal damage was restricted to epithelial tissue directly impacted by injury, as observed in transected larvae. To label wounded epithelium, we used the lipophilic dye FM 1–43, which is commonly used to label damaged cell membranes after wounding (Defour et al., 2014; Sønder et al., 2022; McDade et al., 2021; Shannon et al., 2017). Immediately following either transection or thermal injury, axonal damage overlapped spatially with wounded epithelial tissue (Figure 1G and H). However, by 6 hr following burn injury, there was widespread damage to axons that extended beyond the initial wound area (Figure 1G and H). These findings suggest that burn injury induces axonal damage that accumulates over time and is spatially uncoupled from the surrounding epithelial damage.
 
-## The burn wound microenvironment contributes to defective axon regeneration and function
+### The burn wound microenvironment contributes to defective axon regeneration and function
 
 To determine if early wound signaling regulates sensory axon regeneration, we used a two-wound model (Figure 2A) to excise the burned tissue at different times post-wound. In this system, zebrafish were first injured by either a primary tailfin transection or burn, and then a secondary transection injury was carried out either early at 5 min post-wound (mpw) or late at 6 hpw. The secondary transection was performed so that all the burned tissue was excised (Figure 2A and B). As expected, larvae that underwent only transections at both time points had full sensory function by 24 hpw regardless of the timing of the second transection injury, showing that zebrafish efficiently heal after mechanical damage (Figure 2C–E). In burned larvae, early transection after thermal injury (5 mpw) improved sensory axon regeneration and function to levels similar to transected larvae (Figure 2C–E), suggesting that burn injury does not immediately affect sensory axons differently than mechanical damage. However, when burned tissue was excised after 6 hr, significant defects were noted in both axon density and sensory function compared to larvae that either received two transection injuries or had burned tissue transected at 5 mpw (Figure 2C–E). These findings suggest that the local wound environment modulates sensory axon outcomes following burn injury, and that events in the first 6 hr after injury impact longer-term sensory axon repair.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/94995/elife-94995-fig2-v1.jpg)
 
-**Figure 2.:** (A) Schematic of two-wound experiment design. (B) Confocal max-projected images of FM dye staining following secondary transection in the two-wound experiment at 5 min post-wound (mpw) and 6 hr post-wound (hpw). (C) Images of sensory axons in larvae subjected to an initial transection or burn injury followed by subsequent transection either early (5 mpw) or late (6 hpw). (D) Quantification of axon density in wounded tissue 24 hpw from larvae wounded as in B. N>28 larvae per condition from three replicates. (E) Quantification of sensory perception in wounded tissue 24 hpw from larvae wounded as in B. N = 24 larvae each from three replicates. In all cases, scale bars = 20 µm. *p<0.05, ***p<0.001, ns = not significant.Figure 2—source data 1.Figure 2D.Figure 2—source data 2.Figure 2E.
+**Figure 2.:** (A) Schematic of two-wound experiment design. (B) Confocal max-projected images of FM dye staining following secondary transection in the two-wound experiment at 5 min post-wound (mpw) and 6 hr post-wound (hpw). (C) Images of sensory axons in larvae subjected to an initial transection or burn injury followed by subsequent transection either early (5 mpw) or late (6 hpw). (D) Quantification of axon density in wounded tissue 24 hpw from larvae wounded as in B. N>28 larvae per condition from three replicates. (E) Quantification of sensory perception in wounded tissue 24 hpw from larvae wounded as in B. N = 24 larvae each from three replicates. In all cases, scale bars = 20 µm. *p<0.05, ***p<0.001, ns = not significant.
 
-## Burn injury induces the early collective movement of keratinocytes and sensory axons
+### Burn injury induces the early collective movement of keratinocytes and sensory axons
 
 To understand how burn injury damages sensory axons, we performed live imaging of epithelial keratinocytes, which closely associate with sensory axons (O’Brien et al., 2012; Rieger and Sagasti, 2011; Rosa et al., 2023). Live imaging of Tg(Krt4:UtrCH-GFP) larvae that express the actin probe Utrophin under a pan-keratinocyte promoter allowed for visualization of keratinocyte dynamics following either mechanical or burn injury. In response to transection, we initially observed characteristic epithelial cell contraction at the wound edge; however, keratinocytes distal to the wound edge remained relatively stationary (Figure 3A; Video 1). In contrast, burn wounding resulted in a rapid collective movement of keratinocytes toward the site of tissue damage (Figure 3A). To quantify the rapid movement of keratinocytes in burn injured larvae, we used Tg(Krtt1c19e:acGFP) zebrafish to specifically label motile basal epithelial cells (Lee et al., 2014). Live-imaging experiments revealed that basal keratinocytes, on average, moved a total distance of 205.7±10.7 µm in the first hour following burn injury, which was significantly greater than the 58.9±5.8 µm of migration observed following tailfin transection (Figure 3B; Figure 3—figure supplement 1A). Although keratinocytes moved as a collective in response to burn injury, they exhibited chaotic movement and appeared to be loosely associated with their neighbors.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/94995/elife-94995-fig3-v1.jpg)
+
+**Figure 3.:** (A) Confocal max-projected time-series images of Tg(Krt4:UtrCH-GFP) larvae after either transection or burn injury. Yellow pseudocolored cells and colored tracks highlight keratinocyte displacement. Scale bar = 20 µm. (B) Quantification of keratinocyte movement distance over 1 hr post-wound (hpw). N = 8 larvae each collected from three replicates. (C) Confocal max-projected images of superficial and basal keratinocytes in Tg(Krt4:Lifeact-mRuby) labeled larvae. Left, superficial keratinocytes. Middle, basal keratinocytes. Right, merge. Superficial and basal cell images were taken from the same z-stack and pseudocolored to match the appropriate cell layer. Dashed lines outline one individual keratinocyte. Scale bar = 10 µm. (D) Confocal max-projected time-series images of sensory axons and basal keratinocytes in dual-labeled Tg(Krt4:Lifeact-mRuby); Tg(Ngn1:GFP-Caax) larvae unwounded or after burn. Arrows highlight coincident movement between keratinocytes and associated sensory axons. Unless otherwise stated, scale bar = 20 µm. ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94995/elife-94995-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Confocal time series of basal keratinocyte, Tg(Krtt1c19e:acGFP), movement after the indicated injury. Yellow pseudocolored cells highlight keratinocyte displacement. Scale bars = 20 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/94995/elife-94995-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Schematic of Rohon-Beard (RB) (green) and dorsal root ganglia (DRG) (blue) soma localization in 3 days post-fertilization (dpf) zebrafish. Red box denotes area in which the image shown in B was acquired. (B) Representative confocal max-projected image of intact RB and DRG somas 24 hr post-wound (hpw) in a Tg(Ngn1:GFP-Caax); Tg(Krtt1c19e:Lifeact-mRuby) dual-labeled larva. Arrows denote RB somas, while arrowheads indicate DRG somas. Soma position was unchanged compared to pre-wounding.
+
+![Video 1.](https://cdn.elifesciences.org/articles/94995/elife-94995-video1.mp4.jpg)
+
+**Video 1.:** Tg(Krt4:UtrCH-GFP) larvae were injured either by tailfin transection (left) or burn (right). While minimal keratinocyte movement is observed following transection, burn injury results in keratinocyte movement toward the wound edge for approximately 1 hr post-wound. Yellow pseudocolored cells indicate representative keratinocyte movement. Images were collected at 2 frames/min. Scale bar = 20 µm.
 
 To determine if this process was due to active migration, time-lapse imaging was performed using Tg(Krt4:Lifact-mRuby) larvae to visualize actin dynamics of both the superficial and basal layers. Unwounded larvae had regularly shaped keratinocytes with even actin distribution around the cell periphery in both the superficial and basal layers (Figure 3C), indicative of a non-migratory epithelium. Superficial keratinocytes in burned larvae were elongated and had an even actin distribution, but the basal keratinocytes showed actin localization to the leading edge with the formation of lamellipodia (Figure 3C), suggesting that the superficial keratinocytes are being pulled by the motile basal keratinocytes.
 
 The axons of sensory neurons are ensheathed within actin-rich channels running through basal keratinocytes (O’Brien et al., 2012; Jiang et al., 2019). Given the chaotic and sustained keratinocyte migration associated with burn injury, we next tested if sensory axons are displaced along with associated migrating keratinocytes. Simultaneous imaging of basal keratinocytes and sensory axons following thermal injury revealed that sensory axon movement is coordinated with keratinocyte migration (Figure 3D; Video 2). To characterize the kinetics of axonal damage following burn, time-lapse movies were performed with Tg(Elavl3:GCaMP5) larvae to determine if the onset of axonal damage occurs during basal keratinocyte migration. Within the first hour after burn, calcium-positive punctae were identified that coincided with keratinocyte migration, indicating that early keratinocyte migration was associated with the initial axonal damage (Video 3). To determine if damage was limited to axons, we imaged the cell bodies of peripheral sensory neurons. At 3 dpf, the skin is innervated by Rohon-Beard (RB) and dorsal root ganglia (DRG) neurons with cell bodies that reside within and just outside the spinal cord, respectively. Following burn injury, we noted that both the RB and DRG cell bodies that innervate the caudal fin were intact and non-motile in comparison to their pre-burn morphology (Figure 3—figure supplement 2A and B). Taken together, these findings indicate that sensory axons are displaced along with the collective movement of basal keratinocytes following burn, and that this early movement is associated with the start of axonal damage.
 
-## The Arp 2/3 inhibitor CK666 impairs initial basal keratinocyte migration and modulates early ROS signaling following burn
+![Video 2.](https://cdn.elifesciences.org/articles/94995/elife-94995-video2.mp4.jpg)
+
+**Video 2.:** Basal keratinocyte (magenta), Tg(Krtt1c19e:Lifeact-Ruby), and sensory axon (cyan), Tg(Ngn1:GFP-Caax), movement was tracked following burn injury. Arrows highlight regions where keratinocyte and sensory axon movement is spatially coincident. Images were collected at 3 frames/min. Scale bar = 10 µm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/94995/elife-94995-video3.mp4.jpg)
+
+**Video 3.:** Tg(Elavl3:GCaMP5) larva was burn wounded to track axonal damage, indicated by elevated intracellular calcium (black dots). Damage present at time 0 min is due to the burn wound itself, while new axonal damage coincides with keratinocyte movement. Images collected at 2 frames/min. Scale bar = 20 µm.
+
+### The Arp 2/3 inhibitor CK666 impairs initial basal keratinocyte migration and modulates early ROS signaling following burn
 
 We next determined if a known regulator of leading-edge actin dynamics and migration, Arp2/3, modulates the movement of basal keratinocytes after burn (Henson et al., 2015). Treatment with the Arp2/3 inhibitor CK666 limited keratinocyte lamellipodia formation and impaired early keratinocyte migration, indicating that the early keratinocyte movement is Arp2/3 dependent (Figure 4A–C). Although early migration was impaired, by 40 mpw the migration was not significantly different between control and CK666-treated larvae, suggesting that CK666 treatment only inhibits early keratinocyte migration. To determine if this early treatment altered signaling in wounded tissue, we probed the effects of CK666 treatment on the generation of ROS signaling at the burn wounds. It is known that efficient tissue repair after injury relies on coordinated ROS production by epithelial cells (Enyedi and Niethammer, 2015; Jelcic et al., 2019; Yoo et al., 2012). Following mechanical injuries such as tailfin transection or laser ablation, transient and localized H2O2 also promotes sensory axon regeneration and wound healing (Cadiz Diaz et al., 2022; Rieger and Sagasti, 2011). Because of this ROS requirement, we hypothesized that the robust keratinocyte movement and sustained damage in burned tissue may result in dysregulated ROS production. To test this, H2O2 level was determined using the fluorescent dye pentafluorobenzenesulfonyl fluorescein (Pfbsf), an established readout of ROS production that has previously been used in larval zebrafish (Maeda et al., 2004; Niethammer et al., 2009). Early after burn wounding, there was robust generation of hydrogen peroxide in burned tissue that was dampened in CK666-treated larvae. In the presence of CK666, H2O2 production was concentrated at the wound edge, similar to what has been reported with tail transection (Figure 4D and E). These findings suggest that early migration alters the temporal and spatial distribution of ROS after wounding. Interestingly, CK666-treated larvae had no significant difference in axon damage or regeneration 24 hr after burn compared to controls, although there was a trend toward improved sensory function (Figure 4F–H). Taken together, the findings suggest that keratinocyte migration regulates early tissue scale ROS production after burn injury.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/94995/elife-94995-fig4-v1.jpg)
+
+**Figure 4.:** (A) Confocal max-projected images of control or CK666-treated transiently injected Tg(Krtt1c19e:Lifeact-mRuby) larvae. Arrows point to lamellipodia in the control larva, and lack of lamellipodia in the CK666-treated larva. Scale bar = 10 µm. (B) Plot of keratinocyte speed over 1 hr post-wound (hpw) as treated in A. N = 10 larvae each collected from three replicates. (C) Plot of keratinocyte distance moved over 1 hpw as treated in A. N = 10 larvae each collected from three replicates. (D) Confocal sum-projected time-series images of hydrogen peroxide level (pentafluorobenzenesulfonyl fluorescein [Pfbsf] intensity) in 1 larva over 1 hpw in the indicated treatment. (E) Quantification of Pfbsf intensity in the wound or fin area of the represented larva after burn injury as treated in D over 1 hpw. N = 1 representative larva per condition. (F) Confocal max-projected images of sensory axons 24 hpw in larvae wounded in control medium or CK666. (G) Quantification of axon density 24 hpw in larvae treated as in J. N>22 larvae per condition from four replicates. (H) Quantification of sensory perception 24 hpw in larvae treated as in J. N = 32 larvae per condition from four replicates. Unless otherwise specified, scale bars = 20 µm. ns = not significant.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94995/elife-94995-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Confocal max-projected images of sensory axons treated with diphenyleneiodonium (DPI). (B) Quantification of axon density 24 hr post-wound (hpw). N>19 larvae per condition from three replicates. (C) Quantification of sensory perception 24 hpw. N = 24 larvae each from three replicates. Scale bar = 20 µm. ns = not significant.
+
 The direct effects of early ROS signaling on burn wound healing were also tested using the drug diphenyleneiodonium (DPI) to inhibit ROS production (Li and Trush, 1998; Niethammer et al., 2009; Yoo et al., 2012). Treatment longer than 1 hpw was not possible due to toxicity. With this short treatment, larvae showed some improvement in axon density and touch sensitivity, although it was not statistically significant (Figure 4—figure supplement 1A–C). These data suggest that early ROS inhibition is not sufficient to rescue axon regeneration and function, although it is possible that short-term dampening of ROS may improve sensory neuron function.
 
-## Isotonic solution limits keratinocyte movement induced by burn injury and alters the temporal and spatial distribution of redox signaling
+### Isotonic solution limits keratinocyte movement induced by burn injury and alters the temporal and spatial distribution of redox signaling
 
 Previous studies have demonstrated that the presence of an osmotic gradient promotes keratinocyte migration via cell swelling in response to mechanical injury (Gault et al., 2014). To determine if other treatments that affect keratinocyte migration also impact tissue scale ROS production after burn, we determined if altering osmotic balance impacts keratinocyte migration and the distribution of ROS signaling after burn. Under control conditions, zebrafish are maintained in hypotonic solution. Removing this osmotic gradient by wounding larvae in the presence of solution that is isotonic to the interstitial fluid has previously been shown to inhibit keratinocyte migration following mechanical injury and impair wound healing (Gault et al., 2014; Kennard and Theriot, 2020). We found that wounding in the presence of an isotonic solution prevented the rapid movement of keratinocytes in response to a burn. Within the first hour following burn injury, keratinocyte average speed was reduced from 0.059 µm/s in control medium to 0.003 µm/s in isotonic medium (Figure 5A–C; Video 4). Immediately following burn injury, the level of H2O2 was the same between the treatment groups, indicating that cells wounded in the presence of isotonic solution maintain their normal ability to generate ROS (Figure 5F and G; Enyedi and Niethammer, 2015). Examining ROS production during the first hour post-burn revealed that control larvae had increased ROS throughout the fin tissue compared to isotonic-treated larvae, while both conditions had comparable levels of ROS at the wound (Figure 5D and E). At 6 hr post-burn, H2O2 production was no longer localized to the wound edge in control burned larvae and had increased throughout the tailfin. By contrast, H2O2 remained restricted to the wound edge in larvae burned in the presence of isotonic solution, displaying a similar localized pattern to that observed after mechanical injury (Figure 5F; Jelcic et al., 2019; Korte et al., 2022). Quantification revealed that H2O2 level at the wound edge was similar between control and isotonic-treated larvae 6 hpw. However, the level of H2O2 was approximately sixfold lower in the fin epithelial tissue adjacent to the burn wound with isotonic treatment (Figure 5F and H). These findings suggest that robust keratinocyte movement induced by burn injury generates an oxidative environment at the tissue scale.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/94995/elife-94995-fig5-v1.jpg)
 
-**Figure 5.:** (A) Confocal time-series images of basal keratinocyte movement in Tg(Krtt1c19e:acGFP) larvae over 1 hr post-wound (hpw) after burn injury in the indicated treatment. (B) Plot of basal keratinocyte average speed over 1 hpw treated as in A. N = 10 larvae per condition collected from three replicates. (C) Distance of keratinocyte movement over 1 hpw treated as in A. N = 10 larvae per condition collected from three replicates. (D) Confocal sum-projected, heat-mapped time-series images of hydrogen peroxide level (pentafluorobenzenesulfonyl fluorescein [Pfbsf] intensity) over 1 hpw as treated in A. (E) Quantification of Pfbsf intensity in the wound or fin area of the represented larva after burn injury as treated in D over 1 hpw. N = 1 representative larva per condition. (F) Confocal sum-projected images of Pfbsf intensity in the fin and wound zone either 0 or 6 hr following burn injury. Dashed red line denotes the boundary between the wound area and distal fin tissue. Scale bar = 50 µm. (G) Quantification of mean Pfbsf fluorescence intensity (MFI) immediately (0 hpw) after burn injury normalized to the control condition. N>27 larvae per condition from three replicates. (H) Quantification of MFI 6 hpw in the indicated region of the fin normalized to the control condition. N>26 larvae per condition from three replicates. Unless otherwise indicated, scale bars = 20 µM. *p<0.05, ***p<0.001, ns = not significant.Figure 5—source data 1.Figure 5B.Figure 5—source data 2.Figure 5C.Figure 5—source data 3.Figure 5E.Figure 5—source data 4.Figure 5G.Figure 5—source data 5.Figure 5H.
+**Figure 5.:** (A) Confocal time-series images of basal keratinocyte movement in Tg(Krtt1c19e:acGFP) larvae over 1 hr post-wound (hpw) after burn injury in the indicated treatment. (B) Plot of basal keratinocyte average speed over 1 hpw treated as in A. N = 10 larvae per condition collected from three replicates. (C) Distance of keratinocyte movement over 1 hpw treated as in A. N = 10 larvae per condition collected from three replicates. (D) Confocal sum-projected, heat-mapped time-series images of hydrogen peroxide level (pentafluorobenzenesulfonyl fluorescein [Pfbsf] intensity) over 1 hpw as treated in A. (E) Quantification of Pfbsf intensity in the wound or fin area of the represented larva after burn injury as treated in D over 1 hpw. N = 1 representative larva per condition. (F) Confocal sum-projected images of Pfbsf intensity in the fin and wound zone either 0 or 6 hr following burn injury. Dashed red line denotes the boundary between the wound area and distal fin tissue. Scale bar = 50 µm. (G) Quantification of mean Pfbsf fluorescence intensity (MFI) immediately (0 hpw) after burn injury normalized to the control condition. N>27 larvae per condition from three replicates. (H) Quantification of MFI 6 hpw in the indicated region of the fin normalized to the control condition. N>26 larvae per condition from three replicates. Unless otherwise indicated, scale bars = 20 µM. *p<0.05, ***p<0.001, ns = not significant.
 
-## Isotonic medium is sufficient to improve sensory neuron regeneration and function after burn
+![Video 4.](https://cdn.elifesciences.org/articles/94995/elife-94995-video4.mp4.jpg)
+
+**Video 4.:** Basal keratinocyte, Tg(Krtt1c19e:acGFP), movement was tracked in control (left) and isotonic-treated (right) larvae following burn injury. Wounding in the presence of isotonic medium prevents keratinocyte movement associated with burn wounding. Yellow pseudocolored cells indicate representative keratinocyte movement. Images were collected at 2 frames/min. Scale bar = 20 µm.
+
+### Isotonic medium is sufficient to improve sensory neuron regeneration and function after burn
 
 We next assessed sensory axon damage after burning in isotonic solution. Immediately following injury, larvae burned in isotonic solution displayed axon damage similar to larvae injured in control medium (Figure 6A). However, 6 hpw, axonal damage in isotonic-treated larvae was reduced and remained restricted to the site of injury, similar to the spatially restricted H2O2 signal induced by isotonic treatment (Figure 6A and B). Accordingly, larvae burned in isotonic medium had significantly greater axon density 24 hpw, and more than 85% of isotonic-treated larvae had normal sensory function by 24 hpw (Figure 6C–E). To determine if the benefit of isotonic solution was due to its ionic composition, we tested the effects of an isotonic solution of the sugar D-Sorbitol. We also found that an isotonic solution with D-Sorbitol limited basal keratinocyte migration and had normal axon density and sensory function 24 hpw, suggesting that the benefit of isotonic solution is independent of effects on electrical cues (Figure 6—figure supplement 1A–C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/94995/elife-94995-fig6-v1.jpg)
+
+**Figure 6.:** (A) Confocal max-projected images of axon damage in control or isotonic-treated Tg(Elavl3:GCaMP5) larvae 0 or 6 hr post-wound (hpw). (B) Quantification of axon damage in control and isotonic-treated burned fins at 6 hpw as treated in A. N = 16 larvae per condition from three replicates. (C) Confocal max-projected images of sensory axons in larvae 24 hpw as treated in A. (D) Quantification of axon density 24 hpw in larvae treated as depicted in C. N>30 larvae per condition from three replicates. (E) Quantification of sensory perception 24 hpw in larvae treated as in C. N = 24 larvae each from three replicates. (F) Schematic illustrating the different isotonic treatment paradigms that are being compared. (G) Confocal sum-projected images of pentafluorobenzenesulfonyl fluorescein [Pfbsf] intensity in control and isotonic +1 hpw treated burned larvae. Dashed red line denotes the boundary between the wound area and distal fin tissue. White dashed line denotes the fin. (H) Quantification of mean Pfbsf fluorescence intensity (MFI) 6 hpw in the indicated region of the fin normalized to the control condition. N = 31 larvae per condition from three replicates. (I) Confocal max-projected images of sensory axons 24 hpw in burned control or isotonic-treated larvae starting 1 hpw. (J) Quantification of axon density 24 hpw in larvae treated as in D. N = 29 larvae per condition from three replicates. (K) Quantification of sensory perception 24 hpw in larvae treated as in D. N = 24 larvae per condition from three replicates. Unless otherwise indicated, scale bars = 20 µm. *p<0.05, **p<0.01, ns = not significant.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/94995/elife-94995-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative max-projected confocal images of sensory axons in control and isotonic D-Sorbitol-treated larvae 24 hr post-wound (hpw). (B) Quantification of axon density in wounded tissue 24 hpw. N = 28 larvae each from four replicates. (C) Quantification of sensory perception 24 hpw. N = 24 larvae each collected from four replicates. Scale bar = 20 µm. **p<0.01, ***p<0.001,.
 
 To determine if early keratinocyte migration contributes to the impact of isotonic solution on sensory neuron function at later time points, we treated with isotonic solution starting 1 hr following burn injury (Figure 6F). When isotonic medium was added 1 hpw, after keratinocyte migration was complete, there was no rescue of ROS production in either the wound area or the fin 6 hpw (Figure 6G and H). Additionally, there was no improvement in sensory axon density or function 24 hpw, supporting the idea that early wound events during the first hour are critical for their effects on later sensory neuron function (Figure 6I–K). Collectively, these findings suggest that early keratinocyte movement after burn coordinates spatial redox signaling and impacts sensory axon regeneration.
 
@@ -94,54 +146,204 @@ In summary, we have identified early wound-induced keratinocyte migration as a m
 
 ## Materials and methods
 
-## Zebrafish maintenance and handling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain background (D. rerio)</td>
+      <td>WT (AB)</td>
+      <td>ZIRC</td>
+      <td>ZL1</td>
+      <td>https://zebrafish.org/home/guide.php</td>
+    </tr>
+    <tr>
+      <td>Strain background (D. rerio)</td>
+      <td>Tg(Ngn1:GFP-Caax)</td>
+      <td>Blader et al., 2003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain background (D. rerio)</td>
+      <td>Tg(Krt4:LifeAct-mRuby)</td>
+      <td>Lam et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain background (D. rerio)</td>
+      <td>Tg(Krt4:UtrCH-GFP)</td>
+      <td>Lam et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain background (D. rerio)</td>
+      <td>Tg(Krt4:TdTomato)</td>
+      <td>Huttenlocher lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain background (D. rerio)</td>
+      <td>TgBac(Lamc1:Lamc1-sfGFP)</td>
+      <td>Yamaguchi et al., 2022</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain background (D. rerio)</td>
+      <td>Tg(ElavI3:GCaMP5)</td>
+      <td>Akerboom et al., 2012</td>
+      <td></td>
+      <td>Received from Jan Huisken lab</td>
+    </tr>
+    <tr>
+      <td>Strain background (D. rerio)</td>
+      <td>Tg(Krtt1c19e:LifeAct-mRuby)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain background (D. rerio)</td>
+      <td>Tg(Krtt1c19e:acGFP)</td>
+      <td>Lee et al., 2014</td>
+      <td></td>
+      <td>Received from Alvaro Sagasti lab</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FM 1-43 dye</td>
+      <td>Life Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Fisher Scientific</td>
+      <td>CAS 7647-14-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-Sorbitol</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS 50-70-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CK666 (Arp2/3 inhibitor)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS 442633-00-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Azide</td>
+      <td>Fisher Scientific</td>
+      <td>CAS 26628-22-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pentafluorobenzenesulfonyl fluorescein</td>
+      <td>Santa Cruz</td>
+      <td>CAS 728912-45-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cautery pen, fine tip</td>
+      <td>Bovie</td>
+      <td>AA01</td>
+      <td>https://www.delasco.com/geiger/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Surgical blade No. 10</td>
+      <td>Feather</td>
+      <td>2976</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td></td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fuji, ImageJ</td>
+      <td>Schneider et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td>https://fiji.sc/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish maintenance and handling
 
 Adult zebrafish and embryos were maintained as described previously (Houseright et al., 2021; Miskolci et al., 2019). For all experiments, 3 dpf larvae were anesthetized in E3 medium containing 0.2 mg/mL Tricaine (ethyl 3-aminobenzoate; Sigma-Aldrich) and maintained at 28.5°C. All transgenic lines including Tg(Ngn1:GFP-Caax) (Blader et al., 2003), Tg(Krt4:LifeAct-mRuby) (Lam et al., 2015), Tg(Krt4:UtrCH-GFP), Tg(Krt4:TdTomato), TgBac(Lamc1:Lamc1-sfGFP) (Yamaguchi et al., 2022), Tg(ElavI3:GCaMP5) (Akerboom et al., 2012), Tg(Krtt1c19e:LifeAct-mRuby), and Tg(Krtt1c19e:acGFP) were maintained on the AB background strain. To screen larvae for fluorescence, a Zeiss Zoomscope EMS3/SyCoP3 with a Plan-NeoFluar Z objective was used.
 
-## Generation of Tg(Krtt1c19e:LifeAct-mRuby) transgenic line
+### Generation of Tg(Krtt1c19e:LifeAct-mRuby) transgenic line
 
 The Krtt1c19e promoter (Lee et al., 2014) flanked by Age1 and NotI was isolated and cloned into an expression vector containing Lifeact-mRuby and Tol2 elements for genomic integration. 3 nL of solution made of 50 ng DNA and 25 ng Tol2 transposase mRNA were injected into the yolk of one-cell stage embryos. F0 larvae were raised to adulthood and crossed to adult AB zebrafish. F2 larvae were screened for mRuby expression and grown to generate stable lines. Tg(Ngn1:GFP-Caax) larvae transiently expressing Krtt1c19e:Lifeact-mRuby were used for simultaneous imaging of axon-keratinocyte interactions, and larvae transiently expressing Krtt1c19e:Lifeact-mRuby were used to acquire time-lapses of basal keratinocyte migration in the CK666 treatment condition.
 
-## Caudal fin transection and burn injury
+### Caudal fin transection and burn injury
 
 All injuries were applied to fish anesthetized in 1× Tricaine with E3. Transection of the caudal fin was performed on anesthetized larvae in a 60 mm tissue culture-treated dish containing 1× Tricaine with E3. Larvae were cut perpendicular to the caudal notochord boundary using a surgical blade (Feather No. 10, VWR). Burn injury was performed on anesthetized larvae in a 60 mm tissue culture-treated dish containing 1× Tricaine with E3. A fine tip cautery pen (Geiger Medical Technologies) was used to burn the caudal fin until the wounded region reached halfway to the posterior notochord boundary. After injury, larvae were kept in 60 mm dishes and maintained at 28.5°C until imaged. For two-wound experiments, larvae were either transected or burned as described above. Secondary transection, after either 5 min or 6 hr, was performed as described above.
 
-## Drug treatment
+### Drug treatment
 
 For all treatments, larvae were incubated in the indicated drug solution for at least 15–30 min. Each drug solution was made containing 1× Tricaine with E3 to keep larvae anesthetized during the experiment. Unless indicated otherwise, larvae were in the presence of treatment for the duration of all experiments. All treatments did not obviously impair larval development or health, and axon density in unwounded larvae was measured for each treatment to ensure there were no deficits in axonal patterning (Appendix 1—figure 1). To elicit sensory axon damage in the absence of a wound, larvae were treated with 1.5% sodium azide (Fisher Scientific). Isotonic medium was prepared by supplementing 1× Tricaine with E3 with either NaCl (Fisher Scientific) or D-Sorbitol (Sigma-Aldrich) to a final concentration of 135 mM. Isotonic medium does not noticeably impair embryonic development or health of the larvae on the time scale used here (Gault et al., 2014; Jelcic et al., 2019). For experiments using CK666 (Sigma), larvae were incubated in 100 µM CK666 for 1 hr before wounding and kept in treatment until 6 hpw. The DPI dosage of 20 µM used in this manuscript was determined by dosage curve of 1–200 µM. Larvae were pre-treated for 1 hr and then burned and incubated in treatment for 1 hr – treatments over 20 µM or over 1 hpw were detrimental to larval health and development.
 
-## Live and time-lapse imaging
+### Live and time-lapse imaging
 
 Larvae were imaged using a spinning disc microscope (CSU-X, Yokogawa) with a confocal scanhead on a Zeiss Observer Z.1 inverted microscope, Plan-Apochromat NA 0.8/20× objective, and a Photometrics Evolve EMCCD camera. All images were acquired using ZEN 2.6 software. For time-lapse imaging, larvae were mounted in a zWEDGI restraining device (Huemer et al., 2017) with the head covered in 2% low-melting point agarose (Sigma-Aldrich). For single time point imaging, anesthetized larvae were mounted in 2% low-melting point agarose on a 35 mm glass-bottom depression dish (CellVis). In all cases, larvae were imaged in E3 medium supplemented with Tricaine as described above.
 
-## Quantification of axon density and sensory function
+### Quantification of axon density and sensory function
 
 Axon density was measured by generating maximum intensity z-projected confocal images of the caudal fin using Fiji (Schneider et al., 2012). For every experiment, the caudal fin area posterior to the notochord was outlined using the Polygon tool and measured to obtain a total surface area ROI. Axons inside the outlined area were manually thresholded so all axons posterior to the notochord were labeled and no saturated pixels were present. Density was measured by dividing the area of detected axons by the area of the ROI. In each case, density values of the experimental sample were normalized to the indicated control – either unwounded or control-treated fins. Sensory neuron function was determined using a behavioral touch assay (Granato et al., 1996). 3 dpf larvae were wounded as described above. At the indicated time post-wound, larvae were briefly anesthetized for mounting into the zWEDGI restraining device, with only the head mounted in 2% low-melting point agarose. Fresh E3 was added, and larvae were allowed to rest for 1 hr. To assess sensory function, the wounded region of caudal fin was touched with the tip of an eyelash brush (No. 1 Superfine Eyelash, Ted Pella) and the presence or absence of a twitch reflex was recorded.
 
-## Quantification of axon damage
+### Quantification of axon damage
 
 Maximum intensity z-projected confocal images of the caudal fin were generated using Fiji. For all experiments, the caudal fin area posterior to the notochord was outlined using the Polygon tool and measured to obtain a total surface area ROI. Axon fragments inside the outlined area were manually thresholded so all fragments posterior to the notochord were labeled and no saturated pixels were present, and an area measurement of these thresholded pixels was taken.
 
-## Visualization of sensory axon and tissue damage
+### Visualization of sensory axon and tissue damage
 
 To visualize damage to sensory axons, Tg(ElavI3:GCaMP5) larvae were used. Identical microscope settings (20× objective, 10% laser, 100 ms exposure, 2 µm step size) were used for all experiments to acquire images and movies. Representative images are maximum intensity z-projections of the caudal fin generated using Fiji. FM 1–43 dye (Life Technologies) was used to visualize tissue damage following transection and burn injury. For these experiments, larvae were incubated in 1 mg/mL FM 1–43 for 15 min prior to injury and through time at which they were imaged. Larvae were maintained at 28.5°C until imaging at the indicated time post-injury.
 
-## Quantification of hydrogen peroxide level
+### Quantification of hydrogen peroxide level
 
 Hydrogen peroxide was quantified using Pfbsf (Santa Cruz) (Maeda et al., 2004). Larvae were incubated in 1 µM Pfbsf for 15 min prior to injury and maintained in dye solution for the duration of each experiment. Identical microscope settings (10× objective, 1% laser, 50 ms exposure, 3.7 µm step size) were used for all experiments to acquire images and movies. Pfbsf intensity was calculated by generating sum projections and measuring mean gray value of the fin and wound zone in Fiji. Wound zone Pfbsf quantifications were taken by measuring mean gray value of the area posterior to the notochord. For measurements of the fin, mean gray value of the trunk area 200 µm anterior to the tip of the notochord and excluding pigmented skin within the region was measured. Background signal was subtracted for each measurement.
 
-## Cell tracking
+### Cell tracking
 
 Basal keratinocyte tracking following tissue injury was performed using Tg(Krtt1c19e:acGFP) larvae. Cell tracking was performed using the Spots module in Imaris version 9.8.2 (Bitplane, Zurich, Switzerland). For each larva, three representative cells were identified and manual tracking was performed, with the average of these cells being used to generate a single value for further analysis. To control for drift of the entire fin during imaging, non-moving pigment was manually tracked by Brightfield and track length was subtracted from basal keratinocyte movement. In all cases, larvae were imaged for 1 hr following injury at an interval of 30 s.
 
-## Morpholino injection
+### Morpholino injection
 
 Ngn1 morpholino with the sequence 5’-ACG ATC TCC ATT GTT GAT AAC CTG G-3’ (Cornell and Eisen, 2002) was used to prevent sensory neuron formation in Elavl3-GCaMP5 larvae to confirm damage signals were constrained only to axons. 5 ng of Ngn1 morpholino was injected into the yolk of one- to two-cell stage zebrafish embryos. Larvae were incubated at 28.5°C until used for experiments at 3 dpf. Before use in experiments, larvae were screened by the sensory function assay described above to ensure that sensory neurons were depleted.
 
-## Image processing
+### Image processing
 
 Images were processed and analyzed using Fiji and Imaris version 9.8.2 as indicated. Supplemental movies were generated in Fiji and edited using Adobe Premiere Pro (Adobe). In Adobe Premiere Pro, pseudocoloring of individual keratinocytes was done using the Color Effects module with manual tracking.
 
-## Statistical analysis
+### Statistical analysis
 
 Each experimental condition consists of at least three independent biological replicates, defined as three clutches of larvae spawned on 3 different days. Cell-tracking experiments were analyzed using non-parametric methods (Wilcoxon rank-sum test). Quantification of axon density was analyzed using linear mixed-effect models in which biological replicate was treated as a random effect and experimental conditions (e.g. wound, time, or chemical treatment) treated as fixed factors. Experiments measuring fluorescence intensity (Pfbsf intensity) were analyzed in the same manner, except the response (fluorescence) was log-transformed prior to analysis. Means computed on the log scale estimate the median response when back-transformed to original units. At the same time, differences between means (of log-transformed data) become ratios of medians after back transformation to the original scale (Aitkin et al., 1989). Experiments involving the proportion of fish that responded to touch were analyzed using a general linear model that included replicate and experimental condition as fixed effects; standard errors used for estimation and testing were adjusted to correct for heteroscedasticity in the proportions (Long and Ervin, 2000). Graphing was performed using GraphPad Prism 9 (GraphPad Software, Inc, San Diego, CA, USA). Sample size is reported for specific experiments in the Figure legends.

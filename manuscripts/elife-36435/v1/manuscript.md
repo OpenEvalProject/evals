@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.36435.001 We have examined the role of Fam60a , a gene highly expressed in embryonic stem cells, in mouse development. Fam60a interacts with components of the Sin3a-Hdac transcriptional corepressor complex, and most Fam60a –/– embryos manifest hypoplasia of visceral organs and die in utero. Fam60a is recruited to the promoter regions of a subset of genes, with the expression of these genes being either up- or down-regulated in Fam60a –/– embryos. The DNA methylation level of the Fam60a target gene Adhfe1 is maintained at embryonic day (E) 7.5 but markedly reduced at E9.5 in Fam60a –/– embryos, suggesting that DNA demethylation is enhanced in the mutant. Examination of genome-wide DNA methylation identified several differentially methylated regions, which were preferentially hypomethylated, in Fam60a –/– embryos. Our data suggest that Fam60a is required for proper embryogenesis, at least in part as a result of its regulation of DNA methylation at specific gene promoters.
+We have examined the role of Fam60a, a gene highly expressed in embryonic stem cells, in mouse development. Fam60a interacts with components of the Sin3a-Hdac transcriptional corepressor complex, and most Fam60a–/– embryos manifest hypoplasia of visceral organs and die in utero. Fam60a is recruited to the promoter regions of a subset of genes, with the expression of these genes being either up- or down-regulated in Fam60a–/– embryos. The DNA methylation level of the Fam60a target gene Adhfe1 is maintained at embryonic day (E) 7.5 but markedly reduced at E9.5 in Fam60a–/– embryos, suggesting that DNA demethylation is enhanced in the mutant. Examination of genome-wide DNA methylation identified several differentially methylated regions, which were preferentially hypomethylated, in Fam60a–/– embryos. Our data suggest that Fam60a is required for proper embryogenesis, at least in part as a result of its regulation of DNA methylation at specific gene promoters.
 
 ## Introduction
 
@@ -40,49 +40,197 @@ We have previously identified Fam60a (Sinhcaf) as a gene of unknown function (ge
 
 ## Results
 
-## Fam60a interacts with components of the Sin3a-Hdac complex
+### Fam60a interacts with components of the Sin3a-Hdac complex
 
 To examine the biochemical function of Fam60a, we generated mice harboring a Fam60a::Venus BAC (bacterial artificial chromosome) transgene (Figure 1—figure supplement 1A; as described below, the Fam60a-Venus fusion protein encoded by this transgene is functional). Immunostaining revealed that the Fam60a-Venus protein was present in nuclei of embryonic day (E) 9.5 embryos harboring the transgene, and that Fam60a was localized to the nucleus of undifferentiated P19 (mouse embryonic carcinoma) cells (Figure 1—figure supplement 2).
 
 To identify proteins that might interact with Fam60a, we prepared nuclear extracts from E10.5 embryos harboring the Fam60a::Venus transgene under three different conditions, subjected the extracts to immunoprecipitation with antibodies to green fluorescent protein (GFP), and analyzed the precipitated proteins by mass spectrometry. The major proteins identified were Arid4a, Arid4b, Sin3a, Sap130, Hdac1, Hdac2, Suds3, and Brms1l (Figure 1A), all of which are components of the Sin3a-Hdac corepressor complex (Cunliffe, 2008; Fleischer et al., 2003; Grzenda et al., 2009; Nikolaev et al., 2004; Shiio et al., 2006; Silverstein and Ekwall, 2005). Arid4a and Arid4b were not detected if nuclear extracts were prepared with radioimmunoprecipitation assay (RIPA) buffer (Figure 1A), the most stringent of the three conditions used, suggesting that these proteins interact weakly with the other components of the Sin3a-Hdac complex (Lai et al., 2001).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig1-v1.jpg)
+
+**Figure 1.:** (A) Nuclear lysates prepared under three different conditions from E10.5 embryos harboring the Fam60a::Venus transgene were subjected to immunoprecipitation with bead-coupled antibodies to GFP that either had (control) or had not been previously exposed to recombinant GFP. Proteins that bound to the beads were then fractionated by SDS-polyacrylamide gel electrophoresis and revealed by silver staining. Proteins that bound nonspecifically to the beads are indicated by asterisks, and the identity of those that bound specifically was determined by mass spectrometry. The bead-bound proteins were also subjected to immunoblot (IB) analysis with antibodies to GFP for detection of Fam60a-Venus. (B) Nuclear extracts of E10.5 WT embryos, undifferentiated P19 cells, or E10.5 embryos harboring the Fam60a::Venus transgene were subjected to immunoprecipitation (IP) with bead-coupled anti-Fam60a, anti-GFP, or control rabbit immunoglobulin G (IgG), as indicated, and the resulting precipitates were subjected to immunoblot analysis with antibodies to Sin3a, to Hdac1, and to Hdac2 (upper panel). The nuclear extracts (Input) as well as the material that bound nonspecifically to beads before exposure to the antibodies used for immunoprecipitation (Preclear) were also subjected to immunoblot analysis. Alternatively, nuclear extracts of E10.5 WT embryos were subjected to immunoprecipitation with antibodies to Sin3a, to Hdac1, to Hdac2, or to the FLAG epitope (control), and the resulting precipitates were subjected to immunoblot analysis with antibodies to Fam60a (lower panel). See also Figure 3—figure supplement 1 to 3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representation of the Fam60a::Venus BAC transgene. The position of a probe for Southern hybridization is indicated. (B) Genotyping of adult mice for WT and βgeo alleles of Fam60a as well as for the Fam60a::Venus transgene by Southern blot analysis of EcoRI-digested tail genomic DNA with the probe indicated in (A). (C) Adult mice genotyped in (B). Mice 3 and 5, which had a genotype of Fam60aβgeo/βgeo and harbored the Fam60a::Venus BAC transgene, did not show developmental defects.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A and B) Immunofluorescence staining of Fam60a in undifferentiated P19 cells (A) as well as in P19 cells induced to differentiate by exposure to retinoic acid (1.0 µM) for 8 days (B). The fluorescence images are superimposed on Nomarski optics images. Scale bar, 50 μm. (C) Immunofluorescence staining of Fam60a-Venus with antibodies to GFP in E9.5 embryos harboring the Fam60a::Venus transgene. Nuclei were also stained with 4',6-diamidino-2-phenylindole (DAPI). Transverse cryosections at the level of the SHF are shown in the upper panels, with the lower panels presenting the SHF at higher magnification. The Fam60a-Venus protein was localized in nuclei but not in nucleoli. Scale bars, 100 µm (upper panels) and 10 µm (lower panels).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Nuclear extracts prepared from Fam60aflox/– and Fam60a–/– ES cells were subjected to immunoprecipitation with antibodies to Sin3a, and the resulting precipitates were fractionated by SDS-polyacrylamide gel electrophoresis and stained with silver (left panel). The gel was also subjected to immunoblot analysis with antibodies to the indicated proteins (right panel).
+
 Further co-immunoprecipitation analysis confirmed that Fam60a interacts with components of the Sin3a-Hdac complex. Immunoprecipitates prepared from nuclear extracts of E10.5 wild-type (WT) embryos with antibodies to Fam60a were thus found to contain Sin3a, Hdac1, and Hdac2 (Figure 1B). In addition, these three proteins were detected in immunoprecipitates prepared from nuclear extracts of Fam60a::Venus transgenic embryos with antibodies to GFP (Figure 1B). Immunoprecipitates prepared from undifferentiated P19 cells with antibodies to Fam60a also contained Sin3a and Hdac1 but not Hdac2 (Figure 1B). Reciprocal co-immunoprecipitation analysis with nuclear extracts of E10.5 WT embryos revealed that Fam60a was present in immunoprecipitates prepared with antibodies to Sin3a or to Hdac1 but not in those prepared with antibodies to Hdac2 (Figure 1B), suggesting that the association between Hdac2 and Fam60a is relatively weak. Together, these data indicated that Fam60a is a component of the Sin3a-Hdac corepressor complex in developing mouse embryos and in undifferentiated P19 cells. This is consistent with recent findings that Fam60a is a core subunit of a variant Sin3a complex in ES cells (Streubel et al., 2017). Formation of the Sin3a-Hdac complex was not affected by the absence of Fam60a, however, given that Hdac1, Hdac2, and RbAp46/48 were co-immunoprecipitated with Sin3a from Fam60a–/– ES cells (Figure 1—figure supplement 3).
 
-## Fam60a expression in mouse embryos and adult intestine
+### Fam60a expression in mouse embryos and adult intestine
 
 To shed light on the physiological function of Fam60a, we first examined the pattern of Fam60a expression during mouse embryogenesis. Expression of Fam60a was ubiquitous at E9.5, but it gradually became restricted to a subset of cells as development proceeded (Figure 2—figure supplement 1). At E12.5, Fam60a expression was thus apparent in the neural tube, neural crest cells, lung, pancreas, and intestine, but not in liver. Epithelial cells of the intestinal tract showed a high level of Fam60a expression at E15.5 (Figure 2A), and intervilli of the intestinal tract continued to express Fam60a at E17.5 (Figure 2B and C). In adult mice, Fam60a expression was maintained in crypts of the duodenum (Figure 2D–F). Given that intestinal stem and progenitor cells reside in crypts, we examined the fate of Fam60a+ cells in crypts by administering tamoxifen to adult mice harboring a Fam60a-CreERT2 transgene and lacZ reporter gene. Examination of the mice at 1, 3, and 5 days after tamoxifen injection revealed that LacZ+ cells were present at the base of intestinal villi at 1 day and that they subsequently migrated toward the tip of the villi during the next 4 days (Figure 2G–I). These data thus suggested that Fam60a is expressed in a subset of cells including somatic stem cells in the intestine.
 
-## Developmental defects in Fam60a mutant mice
+![Figure 2.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig2-v1.jpg)
+
+**Figure 2.:** (A–C) In situ hybridization analysis of Fam60a expression in sections of mouse embryonic intestine at E15.5 (A) and E17.5 (B and C). Fam60a is expressed in epithelial cells of the gastrointestinal tract at E15.5 and in intervilli of the intestine at E17.5. A higher magnification view of the image in (B) is shown in (C). Scale bars, 100 µm. (D–F) Immunohistochemical analysis of Fam60a expression in the adult duodenum. Staining for a wild-type mouse was performed without primary antibodies as a control (D) or with antibodies to Fam60a (E), and that for a mouse harboring a Fam60a::Venus transgene was performed with antibodies to GFP (F). Scale bars, 100 µm. (G–I) Lineage trace analysis of LacZ+ cells (stained with the LacZ substrate X-gal) in intestinal villi of the duodenum at 1, 3, or 5 days, respectively, after injection of tamoxifen (6 mg) in adult mice harboring a Fam60a-CreERT2 transgene and lacZ reporter gene. Scale bar, 500 µm. See also Figure 1—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Sectional in situ hybridization analysis of Fam60a expression in an E9.5 embryo. (B–E) Higher magnification views of the telencephalon (B), neural tube (C), heart tube (D), and somites (E) of the embryo in (A). Scale bar, 200 µm. (F–H) In situ hybridization analysis of Fam60a expression in sections of a mouse embryo at E12.5. Fam60a is highly expressed in the neural tube (nt), lung (l), pancreas (p), and epithelial cells of the midgut (mg). Scale bar, 1 mm.
+
+### Developmental defects in Fam60a mutant mice
 
 We next generated mice lacking Fam60a. Two types of mutant allele were generated: Fam60a– and Fam60aβgeo (Figure 3—figure supplement 1A and B). Fam60a–/– and Fam60aβgeo/βgeo mice showed indistinguishable phenotypes, suggesting that both alleles are functionally null, with subsequent analyses being performed with Fam60a–/– mice unless indicated otherwise. Both types of heterozygote also appeared indistinguishable from WT mice. We confirmed that Fam60a mRNA and Fam60a protein were absent in Fam60a–/– embryos (Figure 3—figure supplement 1C and D, Figure 3—source data 1). Fam60a–/– mice were born at a frequency much lower than that expected. They were detected at the expected frequency at E9.5 and E10.5, but their number started to decline thereafter and was greatly decreased at E18.5 (Supplementary file 1). Examination of Fam60a–/– embryos at E13.5 revealed that many visceral organs including the heart, lungs, liver, and gut were markedly smaller than those of WT embryos (Figure 3A–C). In particular, hypoplasia of the right ventricle of the heart was apparent, and a ventricular septum defect was also frequently observed, in Fam60a–/– embryos (Figure 3D). Fam60a was expressed in the developing heart, predominantly in the right ventricle and outflow tract, of WT embryos at E13.5 (Figure 3G). Many of the Fam60a–/– embryos that survived to E18.5 manifested transposition of the great arteries, double-outlet right ventricle, and ventricular septum defects as well as spleen hypoplasia, incomplete lobulation of the lungs, and abnormal rotation of the gut (Figure 3—figure supplements 2 and 3). Although these abnormalities appeared reminiscent of laterality defects, left-right asymmetric expression of Pitx2 was maintained at E8.0 (data not shown), suggesting that the abnormalities are not directly due to impaired left-right patterning.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig3-v1.jpg)
+
+**Figure 3.:** (A–C) Whole embryos and the indicated organs of WT (Fam60a+/+, (A) and Fam60a–/– (B and C) mice at E13.5. Scale bars, 1 mm. (D–F) Sections of the heart of WT (D) or Fam60a–/– (E and F) embryos at E13.5 stained with hematoxylin-eosin. The mutant embryos manifest ventricular septum defects (red arrows). Scale bar, 500 µm. (G) Expression of Fam60a in E13.5 heart was examined by whole-mount in situ hybridization. (H and I) Fam60a–/– and WT embryos, respectively, at E9.5. The mutant embryos show overall growth retardation as well as shortening of the outflow tract (red bars) and a severe neural tube defect. Scale bars, 1 mm. See also Figure 3—figure supplement 1 to 4 and Supplementary file 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Strategy for generation of Fam60a mutant alleles. Numbered boxes denote Fam60a exons. The positions of three PCR primers used for genotyping of Fam60a alleles (Fam60a-5A, Fam60a-3A, Fam60a-3C) are indicated. (B) PCR-based genotyping of Fam60a alleles in embryos of the indicated Fam60a genotypes. Null (–) and WT (+) alleles yield products of 417 and 232 bp, respectively. (C) RT-qPCR analysis of Fam60a mRNA in WT (+/+) and Fam60a–/– (–/–) embryos. Data are means ± s.d. for four embryos of each genotype. (D) Immunoblot analysis of Fam60a (arrow) and α-tubulin (loading control) in WT and Fam60a–/– embryos.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) WT (Fam60a+/+) and Fam60a–/– embryos at E18.5. The mutant embryo is smaller than the WT one. Scale bar, 1 mm. (B–I) Morphology of visceral organs in WT (B, D, F, H) and Fam60a–/– (C, E, G, I) embryos at E18.5. Frontal views of the heart show that the aorta (ao) and pulmonary artery (pa) are positioned in parallel in the mutant embryo (B and C). Right side views of the lungs show that lung lobulation is incomplete in the mutant (arrowhead) (D and E). Left side views of the spleen show severe aplasia in the mutant embryo (arrowhead) (F and G). Left side (H) and frontal (I) views of the gut show that duodenal-colon crossing is abnormal in the mutant. Scale bars, 1 mm. (J–M) Hematoxylin-eosin–stained sections of the heart of WT (J and K) and Fam60a–/– (L and M) embryos at E18.5. In WT embryos, the aorta (ao) connects to the left ventricle (LV) whereas the pulmonary artery (pa) connects to the right ventricle (RV). In the mutant, however, the aorta and pulmonary artery connect to the right ventricle, giving rise to double-outlet right ventricle. In addition, a ventricular septum defect (arrowhead) is apparent in the mutant heart. Scale bar, 1 mm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Macroscopic views of the gut of WT and Fam60aβgeo/βgeo embryos at E18.5 are shown on the left, with arrowheads indicating the ascending and descending colon. Corresponding diagrams of the gut are shown on the right. The ascending colon (blue in the diagrams) is located on the ventral side of the intestine (green in the diagrams) in the WT embryo, whereas it is located on the dorsal side in the mutant embryos. Scale bar, 1 mm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A–H) The secondary heart field (SHF) (A and B), proepicardium (PE) (C and D), ventricle (V) (E and F), and septum transversum (ST) (G and H) of WT (A, C, E, G) and Fam60a–/– (B, D, F, H) embryos labeled with BrdU in utero at E9.0 to E9.5 were sectioned and stained with antibodies to BrdU. Images in (A) through (D), (G), and (H) are shown at higher magnification in (A') through (D'), (G'), and (H'), respectively. Scale bars, 100 µm. (I) Proliferation index determined by BrdU labeling for the indicated tissues of WT (open bars) or Fam60a–/– (closed bars) embryos at E9.0 to E9.5 as in (A) through (H). NT, neural tube. Data are means ± s.d. for five embryos. *p<0.05, **p<0.01 (Student’s unpaired t test).
+
 The Fam60a–/– embryos already showed morphological abnormalities including growth retardation as well as cardiac (shortening of the outflow tract) and neural tube defects at E9.5 (Figure 3H and I). Given that most of the mutant embryos manifested growth retardation, we examined the rate of cell proliferation in various tissues of embryos at E9.0 to E9.5 by labeling with bromodeoxyuridine (BrdU) and counting of BrdU-positive cells (Figure 3—figure supplement 4, Figure 3—source data 2). The extent of cell proliferation was significantly reduced in the septum transversum, secondary heart field (SHF), and proepicardium, whereas it was unaffected in the heart ventricle and slightly increased in the neural tube, of Fam60a–/– embryos compared with control embryos. Given that the outflow tract is derived from SHF cells (Buckingham et al., 2005) and that Fam60a is expressed in SHF-derived regions of WT embryos (Figure 3G), the reduced proliferation rate of SHF cells may give rise to the shortening of the outflow tract and subsequent right ventricle hypoplasia apparent in the mutant embryos. These results thus suggested that Fam60a is required for cell proliferation and organogenesis in mouse embryos.
 
-## Fam60a is recruited to promoter regions and regulates gene expression
+### Fam60a is recruited to promoter regions and regulates gene expression
 
 Given that the Sin3a-Hdac complex is thought to repress gene expression by binding to promoter regions, we examined the global gene expression pattern in Fam60a–/– embryos by RNA-sequencing (RNA-seq) analysis. Comparison of Fam60a–/– and WT embryos at E9.5 revealed that the expression of 558 genes was up-regulated and that of 172 genes was down-regulated in the mutant embryos (Figure 4A and B, Figure 4—source datas 1 and 2). Gene ontology analysis revealed that the expression of genes related to the response to nutrients or to extracellular matrix organization was increased, whereas that of those related to lipid biosynthesis was decreased, in the mutant embryos (Figure 4—figure supplement 1). These data suggested that Fam60a regulates gene expression in both a negative and positive manner, but predominantly in a negative manner, in E9.5 embryos.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig4-v1.jpg)
+
+**Figure 4.:** (A) Venn diagram showing the overlap between Fam60a target genes identified by ChIP-seq analysis and genes whose expression was up- or down-regulated in Fam60a–/– embryos at E9.5 as revealed by RNA-seq analysis. (B) Fold change in RNA-seq values for genes that were differentially expressed in E9.5 Fam60a–/– relative to WT embryos and which were also found to bind Fam60a-Venus in the TSS region by the ChIP-seq analysis. Data are means ± s.d. for three embryos. (C) Validation of RNA-seq data by RT-qPCR analysis for E9.5 WT and Fam60a–/– embryos. Data are means ± s.d. for five independent experiments. *p<0.05, **p<0.01, ***p<0.001 (Student’s unpaired t test). See also Figure 4—figure supplements 1 and 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways with the top 10 and top five enrichment scores (–log10(ρ-value)) are shown for up-regulated genes (red bars) and down-regulated genes (green bars), respectively. The length of each bar represents the significance of the enrichment.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Phase-contrast microscopy showing the morphology of Fam60aflox/– and Fam60a–/– ES cells. Scale bar, 100 µm. (B) RT-qPCR analysis of mRNAs for the indicated Fam60a target genes in Fam60aflox/– and Fam60a–/– ES cells. Data are means ± s.d. for five independent experiments. *p<0.05, **p<0.01, ***p<0.001 (Student’s unpaired t test). (C) ChIP-qPCR analysis of AcH3K9 at the promoter region of the indicated Fam60a target genes in Fam60aflox/– and Fam60a–/– ES cells. Data are expressed as percentage of input and are means ± s.d. for four independent experiments. *p<0.05, **p<0.01 (Student’s unpaired t test). (D) ChIP-qPCR analysis of Tet1 recruitment to the promoter region of the indicated Fam60a target genes in Fam60aflox/– and Fam60a–/– ES cells. Immunoprecipitation was performed with antibodies to Tet1 or with control IgG. Data are means ± s.d. for three independent experiments.
+
 We also performed chromatin immunoprecipitation followed by deep sequencing (ChIP-seq) analysis with E9.5 Fam60a::Venus transgenic embryos and antibodies to GFP to identify Fam60a binding sites in the genome. The Fam60a-Venus fusion protein encoded by this transgene was able to rescue the defects of Fam60a mutant mice (Figure 1—figure supplement 1B and C), suggesting that it is fully functional. Approximately 17,000 and 14,000 peaks were detected in two independent experiments (ChIP-seq1 and ChIP-seq2, respectively), with ~80% of the peaks being localized at gene loci, in particular in the vicinity of transcription start sites (TSSs) (Figure 5A and B; Figure 5—figure supplement 1A and B, Figure 5—source data 1). This distribution pattern was highly similar to that previously determined for Sin3a (Bowman et al., 2014). Co-immunoprecipitation analysis of E10.5 transgenic embryos revealed that Fam60a-Venus interacts with Ing2 (Figure 5—figure supplement 1C), a protein that binds to Lys4-trimethylated histone H3 (H3K4me3), suggesting that Fam60a is recruited predominantly to the promoters of transcribed genes. Examination of the TSS region (between –3 kb and +3 kb relative to the TSS) of all genes resulted in the identification of 7989 genes that reproducibly showed at least one Fam60a binding site in this region (Figure 5C), suggesting that these genes may be directly regulated by Fam60a.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig5-v1.jpg)
+
+**Figure 5.:** (A) Average binding profile for Fam60a-Venus at the TSS region of all genes with binding peaks identified by ChIP-seq analysis of E9.5 transgenic embryos with antibodies to GFP. Distance is expressed relative to the TSS. (B) Peak distribution for ChIP-seq analysis as in (A). About 80% of peaks were localized to gene loci. UTR, untranslated region. (C) Venn diagram showing the overlap in Fam60a target genes (those with binding peaks within ±3 kb of the TSS) for two independent ChIP-seq analyses (ChIP-seq1 and ChIP-seq2). (D) ChIP-qPCR analysis of the binding of Fam60a-Venus and Sin3a to the TSS regions of the indicated genes in E9.5 transgenic and WT embryos, respectively. The pale blue and orange bars represent IgG controls for antibodies to GFP and to Sin3a, respectively. Data are expressed as percentage of input and are means ± s.d. for three independent experiments. Actb was examined as a positive control. (E) Examples of Fam60a-Venus ChIP-seq results for E9.5 Fam60a-Venus embryos. ChIP-seq1 and ChIP-seq2 were both performed with antibodies to GFP. Peaks around the TSS are shown for four Fam60a target genes, with red arrows indicating the direction of transcription. See also Figure 5—figure supplements 1 and 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Average binding profile for Fam60a-Venus at the TSS region of all genes with binding peaks identified by ChIP-seq2. Distance is expressed relative to the TSS. (B) Peak distribution for ChIP-seq2 analysis (left panel) compared with overall composition of the mouse genome (right panel). (C) Nuclear extracts prepared from E10.5 Fam60a-Venus transgenic embryos with RIPA buffer or buffer C were subjected to immunoprecipitation with antibodies to GFP or control IgG, and the resulting precipitates were subjected to immunoblot analysis with antibodies to Ing2.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** E9.5 WT and Fam60a–/– embryos were subjected to ChIP-qPCR analysis with antibodies to AcH3K9. Data are expressed as percentage of input and are means ± s.d. for four independent experiments. Values for control IgG were essentially 0% and are therefore not shown.
 
 Among the 558 up-regulated and 172 down-regulated genes identified in Fam60a–/– embryos, 245 and 45 genes, respectively, had at least one Fam60a binding peak in the TSS region (Figure 4A). Given that 74% (127/172) of the down-regulated genes lacked a Fam60a binding site in this region, the change in expression of most of the down-regulated genes was likely due to a secondary effect of Fam60a loss. We selected for further analysis 18 genes from the 290 (245 + 45) identified genes on the basis of their large fold change in expression in the mutant embryos as revealed by RNA-seq (Figure 4B). Reverse transcription and quantitative polymerase chain reaction (RT-qPCR) analysis confirmed significant differences in expression level for at least six of these putative Fam60a target genes between WT and Fam60a–/– embryos at E9.5, with the expression of Leng9, Adhfe1, Mxd3, Dchs1, and Nagk being up-regulated and that of Gt(ROSA)26Sor being down-regulated in the mutant (Figure 4C, Figure 4—source data 3). The expression of some of these up-regulated genes (such as Leng9, Dchs1, and Nagk) was also increased in Fam60a–/– ES cells compared with control ES cells (Figure 4—figure supplement 2A and B, Figure 4—source data 4). ChIP-qPCR analysis for three of the up-regulated genes (Adhfe1, Nagk, Dchs1) also revealed the association of their promoter regions with Fam60a-Venus and Sin3a in E9.5 transgenic and WT embryos, respectively (Figure 5D, Figure 5—source data 2). The Fam60a binding peaks identified by ChIP-seq analysis in the TSS regions of Adhfe1, Nagk, and Dchs1 are shown in Figure 5E. Although the Sin3a-Hdac complex possesses histone-deacetylating activity, the level of Lys9-acetylated histone H3 (AcH3K9) at the promoter regions of Fam60a target genes (Adhfe1, Nagk, Dchs1) did not differ between WT and Fam60a–/– embryos (Figure 5—figure supplement 2, Figure 5—source data 3). However, similar analysis with Fam60a–/– ES cells revealed that the level of AcH3K9 at the promoter regions of three such genes (Leng9, Dchs1, Nagk) was increased (Figure 4—figure supplement 2C, Figure 4—source data 5).
 
-## Association of Fam60a with DNA methylation and Tet
+### Association of Fam60a with DNA methylation and Tet
 
 We examined the molecular phylogeny of Fam60a with a sequence data set containing invertebrate homologs as well as a paralog, designated Fam60b (Figure 6A). The phylogenetic tree revealed the gene duplication event that gave rise to Fam60a and Fam60b in the early vertebrate lineage before the radiation of jawed vertebrates, likely during the well-studied genome expansion (2R-WGD, two-round whole genome duplication) that occurred in this period. It also highlighted the origin of the preduplication ortholog Fam60 in the early metazoan era. Analysis of the families of genes encoding Sin3, Tet, and Dnmt proteins as well as the presence or absence of DNA methylation in individual species suggested an association of Fam60a with DNA methylation, Tet, and Sin3 (Figure 6B). Fam60a proteins of ~220 amino acid residues were thus found in all vertebrates examined, and Fam60a orthologs were also detected in insects but not in nematodes or yeasts (Figure 6—figure supplement 1) (Smith et al., 2012). DNA methylation and Tet proteins are also conserved from humans to insects but not in nematodes or yeasts, whereas Sin3 is more widely conserved from yeasts to humans.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig6-v1.jpg)
+
+**Figure 6.:** (A) Molecular phylogeny of Fam60a and related proteins. The tree was inferred with the maximum-likelihood method and 99 amino acid residues. Bootstrap values are indicated at individual nodes. (B) Gene repertories for Fam60, Sin3, Tet, and Dnmt families. Black boxes indicate the presence of at least one phylogenetically validated ortholog, whereas white boxes indicate the absence of orthologs. 2R-WGD, two rounds of whole-genome duplication. The presence or absence of DNA methylation in individual species based on current knowledge (Suzuki and Bird, 2008; Zemach and Zilberman, 2010) is also shown. (C and D) Fam60a inhibits Tet1 activity in NIH3T3 cells. Immunofluorescence staining of 5hmC and FLAG-Tet1 was performed for NIH3T3 cells expressing FLAG-Tet1 either together with Fam60a (C) or alone (D). The cells were analyzed 24 hr after the induction of FLAG-Tet1 expression by doxycycline administration. Nuclei were stained with 4',6-diamidino-2-phenylindole (DAPI). Red arrows indicate cells positive for both 5hmC and FLAG immunoreactivity. White arrows indicate cells positive for FLAG but negative for 5hmC. (E) Plots of mean fluorescence intensity for 5hmC versus FLAG-Tet1 in cells expressing FLAG-Tet1 without (left) or with (right) Fam60a as in (C) and (D). (F) Proportion of FLAG-Tet1+ cells that were negative for 5hmC in experiments similar to that in (C) and (D). Data are means ± s.d. for three independent experiments. *p<0.05 (Student’s unpaired t test). See also Figure 6—figure supplements 1 and 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Asterisks, colons, and periods indicate positions with a fully conserved residue, conservation of highly similar properties, and conservation of weakly similar properties, respectively. Conserved hydrophobic residues (A, V, F, P, M, I, L, W) are shown in red, acidic residues (D, E) in blue, basic residues (R, K) in magenta, and hydroxyl-, sulfhydryl-, or amine-containing residues (S, T, Y, H, C, N, G, Q) in green.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Schematic representation of cell transfection and induction of FLAG-Tet1 expression by doxycycline (DOX) for the experiments shown in Figure 6C–F. (B) Immunofluorescence (IF) staining of cells transfected and induced to express FLAG-Tet1 as in A). Staining was performed with antibodies to Fam60a and to FLAG at 24 hr after doxycycline administration. Nuclei were stained with DAPI. Scale bar, 50 µm.
+
 The association of Fam60a with DNA methylation and Tet, together with the fact that the Sin3a-Hdac complex interacts with methylation-regulating proteins such as methylated CpG binding protein2 (MeCP2), Dnmt1, and Tet1 (Nan et al., 1998; Williams et al., 2011), suggested that Fam60a might regulate Tet-mediated DNA demethylation. We tested this possibility in NIH3T3 cells transfected with a doxycycline-inducible expression vector for FLAG epitope–tagged Tet1 and with either an expression vector for both Fam60a and Venus or the corresponding empty vector. Exposure of the transfected cells to doxycycline thus induced the expression of Tet1 in the absence or presence of that of Fam60a (Figure 6—figure supplement 2). In the absence of Fam60a, 83% of FLAG-Tet1+ cells were positive for 5hmC (that is, only 17% of FLAG-Tet1+ cells remained negative for 5hmC) at 24 hr after the administration of doxycycline, suggestive of the efficient conversion of 5mC to 5hmC by FLAG-Tet1. In the presence of Fam60a, however, 55% of FLAG-Tet1+ cells remained negative for 5hmC (Figure 6C–F, Figure 6—source data 1 and 2), suggesting that Fam60a might inhibit Tet1 activity. Recruitment of Tet1 to the promoter regions of Fam60a target genes (Leng9, Dchs1, Nagk) was not affected in Fam60a–/– ES cells (Figure 4—figure supplement 2D, Figure 4—source data 6), suggesting that Fam60a negatively regulates Tet1 activity without affecting its recruitment to promoter regions.
 
-## Aberrant promoter hypomethylation in Fam60a–/– mouse embryos
+### Aberrant promoter hypomethylation in Fam60a–/– mouse embryos
 
 Given that our results suggested that Fam60a inhibits Tet1 activity in cultured cells, we next determined whether DNA methylation is affected in Fam60a–/– mouse embryos. Bisulfite sequencing of the promoter regions of Nagk and Leng9 revealed little or no DNA methylation in WT or Fam60a–/– embryos at E9.5 (Figure 7—figure supplement 1), even though our ChIP analyses showed that Fam60a-Venus was recruited to these promoter regions in transgenic embryos. In contrast, the promoter region of Adhfe1 was found to be hypomethylated in Fam60a–/– embryos, with a methylation level of 4 to 10% compared with a value of ~20% in WT embryos at E9.5 (Figure 7, Figure 7—source data 1). This hypomethylation might have been due to reduced de novo DNA methylation or increased demethylation mediated by Tet. To distinguish between these possibilities, we examined methylation of the Adhfe1 promoter at earlier developmental stages, given that de novo DNA methylation occurs predominantly before implantation. No significant difference in methylation was observed between WT and Fam60a–/– embryos at E7.5, after which the methylation level of this promoter gradually decreased in the mutant embryos (Figure 7, Figure 7—source data 1). These results suggested that impaired maintenance of methylation or increased demethylation is responsible for the hypomethylation of the Adhfe1 promoter in Fam60a–/– embryos, consistent with our observation that Fam60a inhibited Tet1 activity in cultured cells. Providing further support for this notion, hydroxymethyl DNA immunoprecipitation (hMeDIP) analysis revealed 5hmC deposition at almost all Fam60a target gene promoters examined in WT embryos (Figure 7—figure supplement 2, Figure 7—source data 2). Hypomethylation was not detected at the imprinting control regions of Kcnq1ot1 or Peg3 in Fam60a–/– embryos (Figure 7—figure supplement 3). Together, these findings suggested that Fam60a regulates Tet-mediated demethylation at a subset of gene promoters.
 
-## Differentially methylated regions in the genome of Fam60a–/– embryos
+![Figure 7.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig7-v1.jpg)
+
+**Figure 7.:** (A) Methylation pattern at the Adhfe1 promoter in representative WT and Fam60a–/– embryos at the indicated developmental stages as revealed by bisulfite sequencing. Closed and open circles indicate methylated and nonmethylated CpG sites, respectively. Arrows indicate the TSS of Adhfe1. (B) Methylation frequency at the Adhfe1 promoter determined as in (A) for three or four individual embryos of each genotype at each developmental stage. The p value was determined with Student’s unpaired t test. See also Figure 7—figure supplement 1 to 3.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The methylation status of Nagk (A) and Leng9 (B) promoters was determined in individual WT and Fam60a–/– embryos at E9.5.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Data are expressed as percentage of input and are means ± s.d. for four independent experiments.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** The methylation status of the imprinting control regions (ICRs) of Kcnq1ot1 (A) and Peg3 (B) was determined in individual WT and Fam60a–/– embryos at E9.5.
+
+### Differentially methylated regions in the genome of Fam60a–/– embryos
 
 To verify the role of Fam60a in regulation of DNA methylation, we examined the methylation status of promoters, CpG islands, and CpG shores in the genome of Fam60a–/– and WT embryos at E9.5. These target regions were captured, subjected to bisulfite conversion, and sequenced with a next-generation sequencer. The overall methylation level of CpG sites in the captured DNA was around 45% and showed a similar distribution pattern in both Fam60a–/– and WT embryos (Supplementary file 2, Figure 8—figure supplement 1).
 
 Given that genome-wide DNA methylation level did not appear to be affected by the absence of Fam60a, we first examined DNA methylation levels over Fam60a-bound promoters (~8000 promoters) in the wild-type and Fam60a–/– embryos. Hypomethylation was commonly observed at the Fam60a-binding regions, but there was no obvious difference in the profile between the wild-type and Fam60a–/– embryos (Figure 8—figure supplement 2). We next examined if the DNA methylation level was affected in a subset of gene promoters, by focusing on differentially methylated regions (DMRs). 7245 DMRs were detected with average changes of DNA methylation 11.87 and 10.99% for hyper- and hypomethylated DMRs, respectively (Figure 8—figure supplement 3). Among the 7245 DMRs detected, 3049 and 4196 regions were hyper- and hypomethylated, respectively, in Fam60a–/– embryos, with 388 hypermethylated DMRs (12.7%) and 1257 hypomethylated DMRs (30.0%) being found to overlap with Fam60a binding regions (Table 1). Among the top 500 hyper- and hypomethylated DMRs showing the largest differences in methylation level between mutant and WT embryos, 83 of the hypermethylated DMRs (16.6%) and 254 of the hypomethylated DMRs (50.8%) contained Fam60a binding sites (Table 1), suggestive of a preferential association of Fam60a binding sites with hypomethylated DMRs. The promoter of Adhfe1, which was found to be hypomethylated in Fam60a–/– embryos (Figure 7), was included in the top 500 hypomethylated DMRs (Figure 8—source data 1).
 
+**Table 1.**
+ The number of hyper- and hypomethylated DMRs overlapping with ChIP-seq peaks.Relation between DMRs and Fam60a binding site for E9.5 embryos. Methyl-seq data were obtained for three Fam60a–/– and three WT embryos, and ChIP-seq data were obtained for ChIP-seq1 and ChIP-seq2 experiments. The number of ChIP-seq peaks that overlap with all or the top 500 hyper- and hypomethylated DMRs are shown.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Data set</th>
+      <th rowspan="2">Total DMRs</th>
+      <th rowspan="2">Direction</th>
+      <th rowspan="2">DMRs</th>
+      <th colspan="2">Overlap with ChIP-seq peaks</th>
+    </tr>
+    <tr>
+      <th>vs. all DMRs (%)</th>
+      <th>vs. top 500 (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">3 embryos (triplicates) (mean Diff &gt;= 0.05)</td>
+      <td rowspan="2">7245</td>
+      <td>Hyper</td>
+      <td>3049</td>
+      <td>388 (12.7)</td>
+      <td>83 (16.6)</td>
+    </tr>
+    <tr>
+      <td>Hypo</td>
+      <td>4196</td>
+      <td>1257 (30.0)</td>
+      <td>254 (50.8)</td>
+    </tr>
+  </tbody>
+</table>
+
 We next examined the positions of the top 500 hypermethylated and top 500 hypomethylated DMRs in the genome. The distributions of these two types of region differed, with hypermethylated DMRs being preferentially located in exonic regions of genes at 5 to 50 kb downstream of the TSS (Figure 8A and C), whereas most hypomethylated DMRs were located in intronic regions at 0 to 5 kb downstream of the TSS (Figure 8B and D). The distribution pattern of hypomethylated DMRs (Figure 8B) was similar to that of Fam60a binding sites (Figure 5B and Figure 5—figure supplement 1B). These data thus suggested that Fam60a is associated with DNA methylation status in mouse embryos.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig8-v1.jpg)
+
+**Figure 8.:** (A and B) Distribution of the top 500 hyper- and hypomethylated DMRs, respectively, among various genomic features. (C and D) Genomic position profile for the top 500 hyper- and hypomethylated DMRs, respectively, relative to the nearest TSSs. Note that the total number exceeds 500 because TSSs on both strands, in the vicinity of a DMR, are counted. See also Figure 8—figure supplements 1 and 2 and Supplementary file 2.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Dendrogram of hierarchical clustering analysis for samples based on the similarity of their methylation profiles.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** A methylation profile of Fam60a-bound promoter regions is shown for wild-type and Fam60a-/- embryos. A Fam60a-bound promoter region was defined as a 10 kb region between 5 kb upstream and 5 kb downstream of a Fam60a ChIP-seq peak summit. For the methylation value of each CpG, the mean of triplicates was used. The heatmap was plotted by EnrichedHeatmap (Gu et al., 2018) of Bioconductor package with following parameters: bin size = 50 bp, mean mode = absolute, and smoothing = on. The center of the heatmap indicates the peak summits of Fam60a-bound regions obtained from the ChIP-seq experiments. Regions containing hypomethylated CpGs are shown in blue. The line plots above the heatmap summarizes the enrichment of DNA methylation. Note that most of Fam60a-bound promoter regions are hypomethylated, and there is no obvious difference in the heatmap between wild-type and Fam60a-/- embryos.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/36435/elife-36435-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** Methylation changes in hyper- and hypomethylated DMRs identified in Fam60a-/- embryos are shown by box plots. Average changes in DNA methylation were 11.87 and 10.99% for hyper- and hypomethylated DMRs, respectively.
 
 ## Discussion
 
@@ -100,86 +248,502 @@ How might Fam60a regulate Tet activity? It may inhibit dioxygenase enzymatic act
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (mus musculus)</td>
+      <td>fam60a</td>
+      <td>NA</td>
+      <td>NCBI Gene: 56306</td>
+      <td>also known as SINHCAF</td>
+    </tr>
+    <tr>
+      <td>Gene (mus musculus)</td>
+      <td>Tet1</td>
+      <td>NA</td>
+      <td>NCBI Gene: 52463</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mus musculus)</td>
+      <td>ICR</td>
+      <td>charles river</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>charles river</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mus musculus)</td>
+      <td>129</td>
+      <td>charles river</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mus musculus)</td>
+      <td>B6C3F1/Crl</td>
+      <td>charles river</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (EMCV)</td>
+      <td>internal ribosomal entry site (IRES)-βgeo</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (P1 phage)</td>
+      <td>loxP</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (P1 phage)</td>
+      <td>FRT</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Saccharomyces cerevisiae)</td>
+      <td>CAG-Flpe</td>
+      <td>PMID: 16651697</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (P1 phage)</td>
+      <td>CAG-Cre</td>
+      <td>PMID: 9268708</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Aequorea victoria)</td>
+      <td>Fam60a-Venus</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (P1 phage)</td>
+      <td>Fam60a-CreERT2</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mus musculus)</td>
+      <td>P19</td>
+      <td>PMID:7056443</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mus musculus)</td>
+      <td>NIH3T3 Tet-On 3G</td>
+      <td>Clontech</td>
+      <td>631197</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Antibody to Fam60a (α-E15W) (rabbit polyclonal)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>1/1000 dilution for IHC or WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (rabbit polyclonal)</td>
+      <td>MBL</td>
+      <td>Code No.598 RRID: AB_591819</td>
+      <td>10 µl for IP, 1/2000 dilution for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>control Rabbit IgG</td>
+      <td>Kamiya Biomedical</td>
+      <td>PC-124</td>
+      <td>used for IP control</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>control Rabbit IgG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>used for IP control</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HDAC1 (mouse monoclonal)</td>
+      <td>abcam</td>
+      <td>ab31263 RRID: AB_732774</td>
+      <td>this product is discontinued by abcam</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3165 RRID: AB_259529</td>
+      <td>1/2000 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HDAC2 (rabbit polyclonal)</td>
+      <td>abcam</td>
+      <td>ab7029 RRID: AB_305706</td>
+      <td>1/1000 dilution for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sin3a (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-994 RRID: AB_2187760</td>
+      <td>1/1000 dilution for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ing2 (rabbit polyclonal)</td>
+      <td>abcam</td>
+      <td>ab109504 RRID: AB_10861294</td>
+      <td>1/2000 dilution for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BrdU (mouse monoclonal)</td>
+      <td>BD bioscience</td>
+      <td>347580 RRID: AB_10015219</td>
+      <td>1/200 dilution for IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-5hmC (rabbit polyclonal)</td>
+      <td>active motif</td>
+      <td>39769 RRID: AB_10013602</td>
+      <td>1/2000 dilution for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Histone H3K9ac (rabbit polyclonal)</td>
+      <td>active motif</td>
+      <td>39917 RRID: AB_2616593</td>
+      <td>used for ChIP assay</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RbAp46/48 (rabbit polyclonal)</td>
+      <td>active motif</td>
+      <td>39199 RRID: AB_2615007</td>
+      <td>1/2000 dilution for WB</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRE3G-FLAG-Tet1</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF-BOS-Fam60a-IRES-Venus</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF-BOS</td>
+      <td>PMID: 1698283</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>E15W</td>
+      <td>this paper</td>
+      <td></td>
+      <td>for the rise of Anti-Fam60a antibody</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant GFP protein</td>
+      <td>abcam</td>
+      <td>ab85191</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EpiTect Bisulfite Kit</td>
+      <td>Qiagen</td>
+      <td>ID: 59104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PrimeScript RT Reagent Kit with gDNA Eraser</td>
+      <td>Takara</td>
+      <td>RR047A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SOLiD Total RNA-Seq Kit</td>
+      <td>Life Technologies</td>
+      <td>4445374</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SureSelect Methyl-Seq Target Enrichment System</td>
+      <td>Agilent Technologies</td>
+      <td>931052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZ Methylation-Gold Kit</td>
+      <td>Zymo Research</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BS3</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Prod#21580</td>
+      <td>for antibody conjugation to dynabeads</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline hyclate</td>
+      <td>Sigma-Aldrich</td>
+      <td>D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>T5648-1G</td>
+      <td>dissolved in corn oil</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LifeScope software</td>
+      <td>Applied Biosystem</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS</td>
+      <td>PMID: 18798982</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CEAS</td>
+      <td>PMID: 19689956</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QUMA</td>
+      <td>PMID: 18487274</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bowtie2</td>
+      <td>PMID: 22388286</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bismark</td>
+      <td>PMID: 21493656</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools</td>
+      <td>PMID: 19505943</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Picard toolkit</td>
+      <td>Broad Institute</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>methylKit program</td>
+      <td>PMID: 23034086</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BSseq program</td>
+      <td>PMID: 23034175</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bedtools</td>
+      <td>PMID: 20110278</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GREAT</td>
+      <td>PMID: 20436461</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>aLeaves</td>
+      <td>PMID: 23677614</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAFFT</td>
+      <td>PMID: 23329690</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>trimAl</td>
+      <td>PMID: 19505945</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RAxML</td>
+      <td>PMID: 24451623</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Fam60aβgeo, a mutant allele of Fam60a in which an internal ribosome entry site (IRES)–βgeo cassette and a loxP site are inserted in intron 4 and intron 1, respectively, was generated by gene targeting in mouse ES cells (Figure 2—figure supplement 1A). A Fam60aflox allele was subsequently generated with the use of the CAG-Flpe transgene (Kanki et al., 2006), and a Fam60a– allele lacking exons 2 to 4 was generated with the use of the CAG-Cre transgene (Sakai and Miyazaki, 1997). Both Fam60aβgeo and Fam60a– alleles are functionally null. Mutant mice were maintained on the 129/C57B6 mixed background. PCR primers for genotyping were Fam60a-5A (5′-ATATGCTGCTAGGTGCCACAG-3′), Fam60a-3A (5′-TTCTCTACTCCATAGCACAGG-3′), and Fam60a-3C (5′-CTACTGTGGTCACAAGCAGAC-3′). A BAC transgene (Fam60a::Venus) encoding a Fam60a-Venus fusion protein was constructed from mouse BAC clone RP23-100A22 with the use of a BAC recombination system (Figure 3—figure supplement 1A) (Copeland et al., 2001). The Fam60a-Venus protein, in which Venus is fused to the COOH-terminus of Fam60a, is functional, given that the transgene is able to rescue the phenotype of Fam60a mutant mice (Figure 3—figure supplement 1C). A BAC transgene (Fam60a-CreERT2) was constructed by inserting CreERT2 into the Fam60a BAC clone.
 
-## Cell line origin and authentication
+### Cell line origin and authentication
 
 P19 embryonal carcinoma cell line (McBurney and Rogers, 1982) is a gift from Michael McBurney (University of Ottawa). NIH3T3 Tet-On 3 G cell line (631197, Clontech) was purchased from Clontech, Takara-bio (Kyoto, Japan).
 
-## Identification of Fam60a-interacting proteins
+### Identification of Fam60a-interacting proteins
 
 E10.5 embryos harboring the Fam60a::Venus transgene were recovered in PBS for the preparation of nuclear extracts. The embryos were passed through a 70 µm cell strainer with a plunger, and the cells were allowed to swell by incubation in buffer A (10 mM Hepes-KOH (pH 7.9), 10 mM KCl, 1.5 mM MgCl2, 0.1 mM EGTA, 1 mM dithiothreitol, and Roche complete protease inhibitor cocktail) for 15 min on ice before homogenization with 20 strokes of a loose-fitting pestle in a Dounce homogenizer. Nonidet P-40 was then added to the homogenate at a final concentration of 0.1%, and another 20 strokes of the pestle were applied. The homogenate was centrifuged at 960 × g for 5 min at 4°C, and the resulting nuclear pellet was suspended and incubated for 3 hr at 4°C either in RIPA buffer (50 mM Tris-HCl (pH 8.0), 150 mM NaCl, 2 mM EDTA, 1% Nonidet P-40, 0.5% sodium deoxycholate, 0.1% SDS, 1 mM dithiothreitol, and Roche complete protease inhibitor cocktail), in buffer C (20 mM Hepes-KOH (pH 7.9), 400 mM NaCl, 0.1 mM EDTA, 0.1 mM EGTA, 0.1% Nonidet P-40, 1 mM dithiothreitol, and Roche complete protease inhibitor cocktail), or in nondenaturing lysis buffer containing Benzonase nuclease (20 mM Tris-HCl (pH 8.0), 137 mM NaCl, 2 mM EGTA, 1.5 mM MgCl2, 10% glycerol, 1 mM dithiothreitol, Benzonase nuclease (125 U; 70,446–3, Novagen), and Roche complete protease inhibitor cocktail). The samples were centrifuged at 18,000 × g for 10 min at 4°C, and the resulting supernatants (nuclear extracts) were incubated with Dynal Protein G beads (Invitrogen) for 3 hr at 4°C. After removal of the beads, the extracts were divided into two halves. One half was incubated for 3 hr at 4°C with Dynal Protein G beads conjugated with antibodies to GFP, whereas the other half was incubated with identical antibody-conjugated beads that had been previously exposed to recombinant GFP (ab84191, Abcam) to mask the antigen binding site. Proteins that bound to the beads were eluted by incubation for 30 min at 37°C with 1 × SDS sample buffer not containing dithiothreitol. They were then fractionated by SDS-polyacrylamide gel electrophoresis and silver-stained. Target proteins were identified by liquid chromatography and tandem mass spectrometry with a nano-UPLC Q-TOF MS/MS system (SYNAPT G2, Waters).
 
-## Immunoprecipitation and immunoblot analysis
+### Immunoprecipitation and immunoblot analysis
 
 Nuclear extracts prepared from E10.5 embryos or undifferentiated P19 cells with RIPA buffer as described above were incubated for 3 hr at 4°C first with Dynal Protein G beads alone and then with antibody-conjugated beads. Proteins that bound to the antibody-conjugated beads were eluted by incubation for 30 min at 37°C with 1 × SDS sample buffer not containing dithiothreitol, fractionated by SDS-polyacrylamide gel electrophoresis, and transferred to a polyvinylidene difluoride membrane. The membrane was then subjected to immunoblot analysis with primary antibodies, horseradish peroxidase–conjugated secondary antibodies, and ECL Plus reagents (RPN2133, Amersham).
 
-## Lineage tracing
+### Lineage tracing
 
 Tamoxifen (6 mg; T5648, Sigma-Aldrich) in 1 ml of corn oil (C8267, Sigma-Aldrich) was administered orally to Fam60a-CreERT2::ROSA26RlacZ mice at the age of 8 weeks age. One, 3, or 5 days after tamoxifen administration, mice were killed and the duodenum was removed and then fixed overnight at 4°C in phosphate-buffered saline (PBS) containing 1% paraformaldehyde, 0.2% glutaraldehyde, and 0.02% Nonidet P-40. Expression of the lacZ transgene was detected by staining with X-gal as described previously (Saijoh et al., 1999).
 
-## In situ hybridization and histology
+### In situ hybridization and histology
 
 Embryos were dissected in PBS and fixed with 4% paraformaldehyde. In situ hybridization was performed with whole-mount preparations (Sakai et al., 2001) or sections (Yashiro et al., 2000). The 3′untranslated region of Fam60a was used as a probe for in situ hybridization. For histological analysis, embryos were fixed with 4% paraformaldehyde, dehydrated, and embedded in paraffin. Serial sections (thickness, 7 µm) were stained with hematoxylin-eosin according to standard procedures.
 
-## Antibodies
+### Antibodies
 
 Antibodies to Fam60a (α-E15W) were generated in rabbits by injection of a synthetic peptide corresponding to the COOH-terminal region of the mouse protein (EEQGPAPLPISTQEW) and were affinity-purified. Additional antibodies included control rabbit IgG (Kamiya Biomedical or Thermo Fisher Scientific), conformation-specific mouse monoclonal antibodies to rabbit IgG (#3678, Cell Signaling) that can avoid detection of denatured rabbit IgG used for immunoprecipitation, as well as rabbit polyclonal antibodies to GFP (598, MBL International), to Hdac1 (ab31263, Abcam), to FLAG (F3165, Sigma-Aldrich), to Hdac2 (ab7029, Abcam), to Sin3a (sc-994, Santa Cruz Biotechnology), to Ing2 (ab109504, Abcam), to RbAp46/48 (39199, Active Motif), to AcH3K9 (39917, Active Motif), to BrdU (347580, BD Biosciences), and to 5hmC (39769, Active Motif). Mouse monoclonal antibodies to FLAG for immunostaining were obtained from Sigma.
 
-## Immunostaining of embryos
+### Immunostaining of embryos
 
 Cryosections were incubated overnight at 4°C with primary antibodies. Immune complexes were detected with horseradish peroxidase–conjugated secondary antibodies (ImmPRESS reagent, Vector labs) or Alexa Fluor 488–conjugated secondary antibodies (Molecular Probes). Nuclei were counterstained with 4',6-diamidino-2-phenylindole (DAPI). Confocal images were acquired with a confocal microscope (Olympus FV1000D or Zeiss LSM510META).
 
-## BrdU incorporation assay
+### BrdU incorporation assay
 
 Pregnant mice were injected intraperitoneally with undiluted BrdU labeling reagent (RPN20LR, Amersham) at a dose of 1 ml per 100 g of body weight. Embryos were dissected 30 min after BrdU injection and were subjected to immunostaining of BrdU as previously described (Santarelli et al., 2003) with the use of a Vectastain ABC Kit (Vector labs) and diaminobenzidine. The proliferation index was calculated as the percentage of cells positive for BrdU incorporation.
 
-## RT-qPCR analysis
+### RT-qPCR analysis
 
 Total RNA was isolated from E9.5 embryos with the use of TRIzol reagent (15596026, Invitrogen), and portions of the RNA (1 in 20 µl) were subjected to RT with the use of a PrimeScript RT Reagent Kit with gDNA Eraser (RR047A, Takara). The resulting cDNA (corresponding to an RNA amount of 15, or 0.92 ng for β-actin qPCR) was subjected to real-time PCR analysis with the use of Power SYBR Green PCR Master Mix (4367659, Applied Biosystems). For quantitation of mRNAs, we established standard curves with serial dilutions of RNA of known concentrations. Data were normalized byβ-actin mRNA abundance. PCR primers (forward and reverse, respectively) were as follows: 5′-GGTCATCACTATTGGCAACG-3′ and 5′-ACGGATGTCAACGTCACACT-3′ for Actb (β-actin); 5′-TACCAGGGTAGCAACCCAAT-3′ and 5′-GGTTTCTGACAGCCCTCTTC-3′ for Adhfe1; 5′-CTGATTGAGGAGTTGAGGC-3′ and 5′-AGCCTACAGTTGGAGCCTG-3′ for Nagk; 5′-CTGACTTTTCGGTGGGCTACA-3′ and 5′-GGCGCAGAATGGCTCTTC-3′ for Leng9; 5′-GGCCTGCCTCCTTTAGTCTC-3′ and 5′-TGTCAGCATCTGTGGCTGTT-3′ for Dchs1; 5′-GCTCAGACTCAGACCAAGAG-3′ and 5′-TGCTGTGTGAGTAGCTGTGC-3′ for Mxd3; 5′-GGGGGAATGAGTGCTTGAAG-3′ and 5′-TCACCTGGACCTCCAAATGTC-3′ for AA465934; 5′-AAAGAGAAACTGCCAACGC-3′ and 5′-TATTCATACCTGGGCCGAAG-3′ for 2610020C07Rik; 5′-GTAGGGGATCGGGACTCTGG-3′ and 5′-TCCTCAAGGAATGATCCGGC-3′ for Gt(ROSA)26Sor; and 5′-CAATTACAGAAGTGTGGGACT-3′ and 5′-CACCTTCCTCCCAGTTCTTT-3′ for Acsl3.
 
-## ChIP-seq and RNA-seq
+### ChIP-seq and RNA-seq
 
 E9.5 embryos harboring the Fam60::Venus transgene were recovered in PBS for ChIP with antibodies to GFP performed as previously described (Hayakawa et al., 2007). The isolated DNA was applied to ChIP-seq library construction with the use of a SOLiD Fragment Library Core Kit (PN 4464412, Life Technologies). Sequencing was performed with a SOLiD four instrument (Life Technologies). Sequenced reads were aligned to the mouse genome (mm9) with the use of LifeScope software (Applied Biosystems). Aligned peaks were called and BED and Wig files were generated with MACS version 1.4.1 (Zhang et al., 2008), and the files were visualized in the UCSC genome browser as custom tracks. The called peaks were filtered with the following criteria: false discovery rate (FDR) of ≤1% and fold enrichment of ≥2.0. To obtain a peak distribution and averaged peak profile around genes, we analyzed the filtered peaks with CEAS version 1.0.2. Genes with filtered peaks within ±3 kb of the TSS in UCSC RefGene were defined as Fam60a target genes.
 
 For RNA-seq, E9.5 embryos were collected in PBS and stored in RNAlater (AM7020, Ambion) at –80°C. After genotyping with yolk sac DNA, RNA was isolated from WT and Fam60a–/– embryos with the TRIzol reagent and mRNA was extracted twice with the use of a MicroPoly(A) Purist Kit (AM1922, Life Technologies). Library preparation was performed with the use of a SOLiD Total RNA-Seq Kit (4445374, Life Technologies). Three biological replicates were analyzed for each genotype. Libraries were labeled with distinct barcoding adapters. Sequencing was performed with a SOLiD4 instrument, and sequencing data were mapped to the mouse genome (mm9) with the use of LifeScope software. Differentially expressed genes were identified with the edgeR Bioconductor package. Transcripts with an FDR of <0.01 were considered to be significantly up- or down-regulated.
 
-## Bisulfite sequencing
+### Bisulfite sequencing
 
 Genomic DNA was isolated from WT and Fam60a–/– embryos according to standard procedures, and its concentration was determined by spectrophotometry. The DNA (500 to 1000 ng) was treated with bisulfite and purified with the use of an EpiTect Bisulfite Kit (59104, Qiagen) and was then subjected to PCR amplification with the following primer sets: 5′- ATTTAGTGGGGTTTTTGTTATTG-3′ (Adhfe1 Bis F1) and 5′-TATTTCTACACATAAACCCATAC-3′ (Adhfe1 Bis R1) for initial PCR and Adhfe1 Bis F1 and 5′-ACTAAACCACATTACACCATCC-3′ (Adhfe1 Bis R2) for seminested PCR; 5′-TGGAAGGAGGTTAAAGGATTAG-3′ (Leng9 Bis F1) and 5′-AAATTATCTAAACCCTACCCCC-3′ (Leng9 Bis R1); 5′-ATTTTTTTAGGAGTTTTAGTTGGGGTG-3′ (Nagk Bis F1) and 5′-CAACTCTACACAACTCTCCAAATTAAC-3′ (Nagk Bis R1); 5′-AGAGGGTGTATGTTGTAGAGTAGTTAGGTG-3′ (Peg3 Met11) and 5′-CATCCCATCCCCCTTTTCCAAACTCTAC-3′ (Peg3 Met12.1); and 5′-GTATTTAGTTTATTATGAGGAAGAGTTT-3′ (Kcnq1ot1 1F) and 5′-CAAAAACAACTCCAAAAAAACTATAAA-3′ (Kcnq1ot1 1R). The amplified fragments were separated by agarose gel electrophoresis and the target bands excised. DNA was recovered from the excised gel pieces with the use of a QIAquick Gel Extraction Kit (28706, Qiagen) and was then cloned into the pCRII vector with the use of a Dual Promoter TA Cloning Kit (K207020, Invitrogen). Sequenced fragments were analyzed with the QUMA tool (quantification tool for methylation analysis; http://quma.cdb.riken.jp).
 
-## Forced expression of Fam60a and FLAG-Tet1
+### Forced expression of Fam60a and FLAG-Tet1
 
 NIH3T3 Tet-On 3G fibroblasts (631197, Clontech) were seeded at ~80% confluence on 15-mm-diameter cover slips coated with 0.1% gelatin and placed in 24-well plates. The cells were cultured for at least 2 hr at 37°C in Dulbecco’s modified Eagle’s medium supplemented with 10% fetal bovine serum and were then transfected for 24 hr with 125 ng of pTRE3G-FLAG-Tet1 (encoding FLAG-tagged mouse Tet1) with or without 250 ng of pEF-BOS-Fam60a-IRES-Venus (encoding mouse Fam60a and Venus) with the use of the Lipofectamine LTX reagent (15338500, Invitrogen). The cells transfected without or with pEF-BOS-Fam60a-IRES-Venus were also transfected with 375 or 125 ng, respectively, of the pEF-BOS empty vector. Expression of FLAG-Tet1 was induced by exposure of the cells to doxycycline (1 µg/ml) for 24 hr, after which the cells were fixed for 15 min with 4% paraformaldehyde in PBS, permeabilized for 15 min with 0.2% Triton X-100 in PBS, treated for 20 min with 2 M HCl, neutralized for 10 min with 100 mM Tris-HCl (pH 8.0), washed with PBS, and exposed for 1 hr to blocking buffer (1% bovine serum albumin and 0.1% Tween 20 in PBS), all at room temperature. The cells were then incubated overnight at 4°C with mouse monoclonal antibodies to FLAG (1:2000 dilution) and rabbit polyclonal antibodies to 5hmC (1:2000 dilution) in blocking buffer. Immune complexes were detected with Alexa Fluor 568– or Alexa Fluor 647–conjugated secondary antibodies (Molecular Probes), respectively, and nuclei were stained with DAPI (250 ng/ml). The cells were mounted in ProLong Gold antifade reagent (P36930, Invitrogen), and images were acquired with a confocal microscope (Olympus FV1000D). The fluorescence intensity of 5hmC was plotted against that of FLAG. If FLAG fluorescence intensity was >40, the cell was considered as FLAG-Tet1 positive; if 5hmC fluorescence intensity was >30, the cell was considered as 5hmC positive.
 
-## ChIP-qPCR
+### ChIP-qPCR
 
 ChIP was performed as described above, and the precipitated DNA was subjected to qPCR analysis with the following primers (forward and reverse, respectively): 5′-CTAGCCACGAGAGAGCGAAG-3′ and 5′-AGCTTCTTTGCAGCTCCTTC-3′ for Actb; 5′-GACCGGATTGGCTGTTAGTG-3′ and 5′-TAGGTGCCTCAGCAAGTGTG-3′ for Adhfe1; 5′-CTAGGAAGAAGCGGCAGACC-3′ and 5′-GGCGTCACAGTTGGAGATCA-3′ for Leng9; 5′-CTGAGATTCATGCACAAGGG-3′ and 5′-TATAGGAACCAAGGGCGTTC-3′ for Nagk; 5′-GCGAGGACACTCACTGACTC-3′ and 5′-AGTGTGTGGTGGTGCTTGAG-3′ for Dchs1; 5′-GTGACGACAACTCGCGTAC-3′ and 5′-AATGGCCCTAATGAGAGACG-3′ for Mxd3; 5′-TTGGGAATCCAGTGGAAACT-3′ and 5′-AGCCATGCACAAAGTTCTTG-3′ for Acsl3; 5′-CTGGAGTTGCAGATCACGAG-3′ and 5′-CCTTTCTGGGAGTTCTCTGC-3′ for Gt(ROSA)26Sor; 5′-TAAAGAGAAACTGCCAACGC-3′ and 5′ CTCATAGGACGTTCTGGCG 3′ for 2610020C07Rik; and 5′-CTGTCCAAGACTGCGGAATG-3′ and 5′-CCTGAAGCCATCCTTGGTAG-3′ for AA465934.
 
-## hMeDIP analysis
+### hMeDIP analysis
 
 E9.5 embryos were recovered in PBS and stored at –80°C. After genotyping, embryos were lysed overnight at 55°C in a solution containing 20 mM Tris-HCl (pH 8.0),
 
 4 mM EDTA, 20 mM NaCl, 1% SDS, and proteinase K (0.4 mg/ml, Nacalai). They were then exposed for 30 min at 37°C to RNase A (5 mg/ml, Sigma) before purification of genomic DNA first by phenol-chloroform treatment and ethanol precipitation and then with the use of a QIAamp DNA Micro Kit (56304, Qiagen). The DNA was sheared with the use of a Bioruptor UCD-250 (Diagenode) (15 s on and 15 s off for 10 min at low power). Portions (500 ng) of the sheared DNA were denatured for 10 min at 98°C, placed on ice, and then incubated overnight at 4°C with rotation in 100 µl of hMeDIP buffer containing 20 mM Tris-HCl (pH 8.0), 2 mM EDTA, 150 mM NaCl, 1% Triton X-100, 4 µg of antibodies to 5hmC, and 1% bovine serum albumin. Dynal Protein G beads were then added to the samples to precipitate the antibody-DNA complexes, after which the beads were washed three times with hMeDIP wash buffer (20 mM Tris-HCl (pH 8.0), 2 mM EDTA, 300 mM NaCl, 1% Triton X-100, 0.1% SDS) and then treated overnight at 55°C with proteinase K in hMeDIP elution buffer (20 mM Tris-HCl (pH 8.0), 8 mM EDTA, 300 mM NaCl, 0.5% SDS). The eluted DNA was purified with the use of a QIAquick PCR Purification Kit (28106, Qiagen) and subjected to qPCR analysis with the primers described above for ChIP-qPCR.
 
-## Methyl-seq library construction
+### Methyl-seq library construction
 
 Libraries compatible with the Illumina platform were prepared from 3 µg of genomic DNA with the use of a SureSelect Methyl-Seq Target Enrichment System (Agilent Technologies). Genomic DNA was sheared at 4°C by focused ultrasonic disruption with a Focused-ultrasonicator E220 (Covaris) (duty factor, 10%; PIP, 175; cycles per burst, 200; time, 360 s). The fragmented DNA was end-repaired, adenylated at the 3′ end, and ligated to a methylated adapter. The prepared libraries were subjected to hybridization with the biotinylated SureSelect Methyl-Seq Capture Library (Agilent Technologies), which covers genomic regions of 109 Mb in total including GENCODE promoters; CpG islands, shores, and shelves; DNase I–hypersensitive sites; and RefGenes. Library molecules that overlapped the targeted regions were collected with streptavidin-conjugated beads and converted with bisulfite with the use of an EZ Methylation-Gold Kit (Zymo Research) before amplification by PCR. Further amplification was performed with the use of the SureSelect Methyl-Seq Indexing Primer (Agilent Technologies) to allow multiplexed sequencing on the Illumina platform.
 
-## Methyl-seq and detection of DMRs
+### Methyl-seq and detection of DMRs
 
 The amplified libraries supplemented with 20% of a phiX sequencing control library were sequenced with an Illumina HiSeq 1500 instrument with 2 × 127 cycles in the Rapid Run Mode. Sequence reads were obtained with HiSeq Control Software (HCS) version 2.2.58 and Real-Time Analysis (RTA) version 1.18.64.0. The obtained paired-end reads were subjected to quality control with FastQC version 0.11.5 (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), and adapter sequences and low-quality reads were removed using Trim Galore! version 0.4.2 and with the parameters ‘-e 0.1 -q 30’ (http://www.bioinformatics.babraham.ac.uk/projects/trim_galore). After the removal of phiX-derived reads with Bowtie2 version 2.3.0 (Langmead and Salzberg, 2012), the valid reads were mapped to the UCSC mm9 reference genome sequence using Bismark version 0.17.0 (Krueger and Andrews, 2011) and with the parameters ‘--bowtie2 -N 1 L 22 --score_min L,-0.6,-0.6.’ Before methylation calling at each CpG site, potential PCR duplicates were removed and only read-pairs from the expected strand (the original bottom strand of the reference genome sequence) were extracted with the use of Bismark and Samtools version 1.3.1 (Li et al., 2009), respectively. The on-bait coverage of mapped reads was calculated with CollectHsMetrics of the Picard package version 2.8.1 (http://broadinstitute.github.io/picard). Methylated CpG was identified using the bismark_methylation_extractor function of Bismark and with the parameter ‘--cutoff 5.’ To compare methylation profiles among libraries, we performed a hierarchical clustering analysis according to Ward’s method with the use of the methylKit program version 1.0.0 (Akalin et al., 2012) in the Bioconductor package. For detection of DMRs in three mutant embryos compared with three WT embryos, we used BSseq version 1.10.0 (Hansen et al., 2012) in the Bioconductor package. After importation of the CpG report files of the Bismark output, the BSseq data were processed with the BSmooth algorithm for computation of smoothed methylation levels. The smoothed methylation data were selected for regions with a read coverage of at least five reads at the CpG sites in at least two of the three samples in both comparison groups. Comparison of the mutant and WT samples was then performed with t-statistics. DMRs were detected on the basis of the threshold ‘qcutoff (low = 0.025, high = 0.975)’ and were further narrowed down to those with a minimum of three CpG sites and mean methylation difference of ≥0.05. For examination of the relation between DMRs and Fam60a ChIP-seq peak regions, the peaks of the two ChIP-seq analyses were merged on the basis of their genomic locations and the merged peaks were then compared with DMRs with the use of bedtools version 2.26.0 (http://bedtools.readthedocs.io). Regions of overlap were characterized by statistical evaluation of peak enrichment at genome features such as promoters, exons, introns, untranslated regions (UTRs), and distal intergenic regions with the use of CEAS version 0.9.9.7 (Shin et al., 2009), and plots of average profiles near TSSs were constructed with GREAT version 3.0.0 (McLean et al., 2010). Methylation levels at imprinted genes and DMRs were visualized with the UCSC Integrative Genomics Viewer (IGV) version 2.3.72 (Thorvaldsdóttir et al., 2013).
 
-## Molecular phylogenetics
+### Molecular phylogenetics
 
 Amino acid sequences similar to that of human Fam60a were collected by aLeaves (Kuraku et al., 2013), and the resultant sequence set was then modified to remove redundant sequences. The modified sequence set was subjected first to multiple alignment with the use of the program MAFFT v7.299b (Katoh and Standley, 2013) and with the option ‘-linsi’ and then to trimming of unaligned and gapped sites with the program trimAl v1.4.rev15 (Capella-Gutiérrez et al., 2009) with the options ‘-automated1’ and ‘-nogaps’ in order. The obtained sequence file was used to infer the maximum-likelihood tree with the program RAxML v8.2.8 (Stamatakis, 2014) according to the PROTCATWAG model and with 1000 bootstrap resamplings.
 
-## Data availability
+### Data availability
 
 RNA-seq, ChIP-seq and Methyl-seq data have been deposited in DNA Data Bank of Japan (DDBJ) with the accession numbers DRA004841, DRA004842 and DRA006579, respectively.
 
-## Statistical analysis
+### Statistical analysis
 
 Quantitative data are presented as means ± s.d. and were analyzed with the unpaired Student’s t test. A p value of < 0.05 was considered statistically significant.

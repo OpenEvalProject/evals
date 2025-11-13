@@ -21,17 +21,17 @@
 
 ### Affiliations
 
-1. https://ror.org/05bpbnx46 Danish Research Centre for Magnetic Resonance, Center for Functional and Diagnostic Imaging and Research, Copenhagen University Hospital Amager and Hvidovre Hvidovre Denmark
-2. https://ror.org/04qtj9h94 Department of Applied Mathematics and Computer Science, Technical University of Denmark Kongens Lyngby Denmark
-3. https://ror.org/0064kty71 Guangdong Provincial Engineering Research Center of Molecular Imaging, The Fifth Affiliated Hospital, Sun Yat-sen University Zhuhai China
-4. https://ror.org/02550n020 ESRF - The European Synchrotron Grenoble France
-5. https://ror.org/039bp8j42 Department of Computer Science, University of Verona Verona Italy
-6. https://ror.org/01y9bpm73 Institut für Röntgenphysik, Universität Göttingen, Friedrich-Hund-Platz Göttingen Germany
-7. https://ror.org/00ey0ed83 Department of Neurology, Odense University Hospital Odense Denmark
-8. https://ror.org/03yrrjy16 Institute of Molecular Medicine, University of Southern Denmark Odense Denmark
-9. https://ror.org/03yrrjy16 BRIDGE—Brain Research—Inter-Disciplinary Guided Excellence, Department of Clinical Research, University of Southern Denmark Odense Denmark
-10. https://ror.org/00ey0ed83 Rheumatology Research Unit, Odense University Hospital Odense Denmark
-11. https://ror.org/0161xgx34 School of Optometry, University of Montreal Montreal Canada
+1. Danish Research Centre for Magnetic Resonance, Center for Functional and Diagnostic Imaging and Research, Copenhagen University Hospital Amager and Hvidovre Hvidovre Denmark ([ROR:05bpbnx46](https://ror.org/05bpbnx46))
+2. Department of Applied Mathematics and Computer Science, Technical University of Denmark Kongens Lyngby Denmark ([ROR:04qtj9h94](https://ror.org/04qtj9h94))
+3. Guangdong Provincial Engineering Research Center of Molecular Imaging, The Fifth Affiliated Hospital, Sun Yat-sen University Zhuhai China ([ROR:0064kty71](https://ror.org/0064kty71))
+4. ESRF - The European Synchrotron Grenoble France ([ROR:02550n020](https://ror.org/02550n020))
+5. Department of Computer Science, University of Verona Verona Italy ([ROR:039bp8j42](https://ror.org/039bp8j42))
+6. Institut für Röntgenphysik, Universität Göttingen, Friedrich-Hund-Platz Göttingen Germany ([ROR:01y9bpm73](https://ror.org/01y9bpm73))
+7. Department of Neurology, Odense University Hospital Odense Denmark ([ROR:00ey0ed83](https://ror.org/00ey0ed83))
+8. Institute of Molecular Medicine, University of Southern Denmark Odense Denmark ([ROR:03yrrjy16](https://ror.org/03yrrjy16))
+9. BRIDGE—Brain Research—Inter-Disciplinary Guided Excellence, Department of Clinical Research, University of Southern Denmark Odense Denmark ([ROR:03yrrjy16](https://ror.org/03yrrjy16))
+10. Rheumatology Research Unit, Odense University Hospital Odense Denmark ([ROR:00ey0ed83](https://ror.org/00ey0ed83))
+11. School of Optometry, University of Montreal Montreal Canada ([ROR:0161xgx34](https://ror.org/0161xgx34))
 
 † Corresponding author
 
@@ -55,7 +55,7 @@ In this work, we applied a multimodal imaging approach, aiming to bridge the gap
 
 ## Results
 
-## Multi-scale, multi-modal imaging data in the monkey CC
+### Multi-scale, multi-modal imaging data in the monkey CC
 
 We first acquired an ex vivo diffusion MRI image of the whole monkey brain, which was reconstructed with isotropic 0.5×0.5×0.5 mm3 voxel sizes (Figure 1A) (see Methods section for details). We then obtained a thin needle biopsy sample of 1 mm diameter from the mid-body of the corpus callosum (CC) (Figure 1B), which we imaged twice with phase contrast tomography; at DESY with 550 nm voxel size, providing fascicular resolution, and at ESRF with 75 nm voxel size, providing axonal resolution. At ESRF, we stacked four consecutive image volumes to create a large effective FOV (Figure 1C). The relative sizes of an MRI voxel and the various synchrotron volumes are shown in Figure 1D. The dark image intensities in the synchrotron x-ray images (Figure 1B and C) are due to osmium staining of the myelin.
 
@@ -67,7 +67,7 @@ As seen in the image acquired at DESY in Figure 1B, the staining only penetrated
 
 The high-resolution ESRF data has a field-of-view (FOV) of 0.21×0.21×0.21 mm. Figure 1B depicts the placement of the FOV in the osmium-stained rim of the CC sample. The four stacked scans provide an extended FOV of 0.21×0.21×0.78 mm to match better that of the DESY volume and an MRI voxel (Figure 1C). In this data, it is possible to observe and quantify fine microstructural details, i.e., axon morphology, myelin thickness, nodes of Ranvier, clusters of cell bodies, vacuoles, and blood vessels (for a detailed description see Andersson et al., 2020).
 
-## Corpus callosum: A “straight fibre” region in the monkey brain
+### Corpus callosum: A “straight fibre” region in the monkey brain
 
 The CC, the largest white matter tract in the brain, has high tissue anisotropy, being dominated by densely packed axon fasciculi that all run in the right-left direction between the two hemispheres (Andersson et al., 2020). The directional colour-coding of the three eigenvectors from the diffusion MRI tensor model suggests that the axonal directions are locally consistent and symmetric around the midsagittal plane (Figure 2A). The MRI voxel corresponding to the location of the synchrotron samples is located in the mid-body, approximately 2 mm lateral to the midsagittal plane (the white box in Figure 2A). In this voxel, the estimated orientations of the diffusion tensor and CSD models (Figure 2B and C) both have a main R-L component (red) with a strong I-S inclination (blue), and very little response in the A-P direction (green). The multi-fibre (CSD) model shows a single fibre peak, with a relatively narrow and isotropic spread of the fibre orientation distribution (FOD) when mapped onto a spherical polar histogram (Figure 2B). This is consistent with a homogeneous microstructural environment dominated by densely packed parallel axons. Indeed, the diffusion tensor model predicted a high fractional anisotropy (FA) value of 0.861 (Basser and Pierpaoli, 1996) and even higher FA anisotropy in the micro-tensor domain of 0.997, i.e., the micro (μ)FA calculated as (Kaden et al., 2016).
 
@@ -89,11 +89,15 @@ The direction vectors of the structure tensor analysis from all four stacked ESR
 
 In Figure 3G, we present the calculated distribution of FA values of the structure tensor for the four stacked ESRF volumes, intended to match approximately a single MRI voxel. The mean FA value of the ESRF data was higher than in the DESY data (0.67±0.05 vs 0.54±0.09, respectively) and the ESRF data distribution was narrower than in the DESY data, i.e., (the ESRF median/Inter quartile range (IQR): 0.68/0.06, DESY median/IQR: 0.55/0.12). The high anisotropy at the micrometre-scale image resolutions is in accord with the FA value of 0.86 and μFA of 0.99 in the dMRI voxel, as shown in Figure 2C. Although the two synchrotron volumes originated from the same biopsy, the FA distributions are not identical. Visual inspection reveals that smaller axons and cell bodies are hardly distinguishable in the DESY data (Figure 3A) but are clearly evident in the higher-resolution ESRF data (Figure 3B).
 
-## Deep white matter: A “complex tissue” region in the monkey brain
+### Deep white matter: A “complex tissue” region in the monkey brain
 
 We next investigated the axonal organisation in the centrum semiovale (CS) in deep white matter. The region contains up to three major pathways that are potentially crossing, i.e., the corticospinal tract, the CC, and the superior-longitudinal fasciculus (Schmahmann and Pandya, 2009). We imaged this complex tissue sample with dMRI and ultra-high resolution synchrotron imaging at the ESRF, and then applied a structure tensor analysis using the same range of scale-space parameters as for the CC sample, i.e., focusing on contrasted tissue features of size in the range of 9.2–2 μm.
 
 Figure 4A shows the CSD FOD multi-fibre reconstructions from dMRI of a region encompassing the sample puncture. Due to the image resolution of dMRI and the known regional complexity of fibre organisation, most voxels contained more than one fibre peak, which indicates the expected presence of crossing fibres. (Figure 4A) (white circle) highlights the dMRI voxel best matching the FOD in the synchrotron imaging volume; it contains three fibre components, as shown by the spherical polar histogram (Figure 4B) and the corresponding glyph (Figure 4C). The two largest peaks (‘parallel fibres’) are S-I directed (blue) and the smaller peaks point mostly in the R-L direction (red).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/94917/elife-94917-fig4-v1.jpg)
+
+**Figure 4.:** A) Anatomy and constrained spherical deconvolution (CSD) glyphs are seen in the volume surrounding the local neighbourhood of the sampled biopsy location (white circle). (B and C) Results in the matching magnetic resonance imaging (MRI) voxel, showing (CSD) fibre orientation distribution (FOD) and the corresponding glyph. (D) The directional colour map used throughout the figure. (E) Example of rendering from an European Synchrotron (ESRF) volume with colouring corresponding to the structure tensor main direction. Marking with dashed lines indicates clear fasciculi. (F and G) Structure tensor directional statistics from the stacked field-of-view (FOV), showing the structure tensor FOD and corresponding glyph. (H) Structure tensor shape statistics from the stacked FOV, showing the kernel density estimate of fractional anisotropy (FA) values. The red curve is a copy of the FA distribution from the ESRF corpus callosum (CC) region (Figure 3G).
 
 The synchrotron data from centrum semiovale shows axons that visually tend to organise as laminae similarly to the CC. The laminar thickness ranges from as little as 5–10 μm to as much as 35–40 μm. Some laminae are predominantly populated by axons of small diameter, too small to segment individually at this image resolution. Other laminae include a mixture of populations of different diameters. Some axons intermingle with a neighbouring lamina as shown in Figure 4E. The laminar findings are consistent across the four stacked sub-volumes (see the supplementary animation, Figure 4—video 1).
 
@@ -105,11 +109,15 @@ Finally, the estimated FA of the diffusion tensor within the single dMRI voxel (
 
 The structure tensor FA histogram from the ESRF data (Figure 4H) had a median value of 0.66 and of IQR 0.07. Interestingly, the structure tensor FA histograms of the ‘complex region’ and the ‘straight fibre’ regions (Figure 3G vs. Figure 4H, respectively) are almost identical, suggesting that the given scale-space structure tensor is independent of fibre organisation, similar to the diffusion micro-tensor model (μFA).
 
-## Axon fasciculi trajectories in straight and complex tissue samples
+### Axon fasciculi trajectories in straight and complex tissue samples
 
 To explore the macroscopic axonal organisation and trajectory variations of fasciculi at the MRI sub-voxel level, we applied streamlined tractography (Tournier et al., 2019) to the main direction of the structure tensor analysis of the synchrotron data. We manually drew seeding regions to delineate where we expected axons to project towards within the sampled volume (see Methods section). To ease visualisation and quantification, we used QuickBundle clustering (Garyfallidis et al., 2012) to group neighbouring streamlines with similar trajectories into a centroid streamline. This centroid streamline serves as an approximation of the actual trajectory of a fasciculus. For simplicity, we designate such a centroid streamline as streamline.
 
 Tractography in the DESY corpus callosum data revealed evenly distributed streamlines throughout the sample (Figure 5A). The streamlines all follow a primary L-R direction, and a large portion of the trajectories follow a small S-I bending (coloured purple), which is in good agreement with the local FODs both from structure tensor and CSD dMRI data (Figure 2 vs. Figure 3). Depicting the portion of streamlines without a strong S-I direction component with a separate colour (Figure 5A, cyan streamlines, and the supplementary animation, Figure 5—video 1) conveys the laminar organisation also observed in the structure tensor analysis (Figure 3A). The inclination angle between the trajectory of the two laminae is about 35 degrees.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/94917/elife-94917-fig5-v1.jpg)
+
+**Figure 5.:** (A) Streamlines in the corpus callosum (CC) sample from Deutsches Elektronen-Synchrotron (DESY). Purple streamlines have a strong upward directional component, unlike the cyan streamlines (assuming that streamlines travel from right to left). (B) The statistics of streamlines quantification using tortuosity index and maximum deviation. (C) A selection of streamlined in the CC within a single ESRF scan. Cyan streamlines have R-L as the strongest directional component, whereas red streamlines do not. The orange structure is a segmented blood vessel. (D) Streamlines in the complex centrum semiovale region (CS) within a single ESRF scan. Streamlines are coloured according to their local main direction. Orange structures represent segmented blood vessels.
 
 For the ESRF data, the streamlines typically represent the trajectory of a small number of axons or, in some cases, of single large-diameter axons. As such, the streamlines in ESRF data (Figure 5C) better reflect detailed axonal trajectory variations as compared to the DESY data. For example, streamlines in the CC show non-straight trajectories that circumvent neighbourhood obstacles such as clusters of cell bodies, other axons, and blood vessels (orange structures). Interestingly, we observed a few axon fasciculi crossing the FOV orthogonally to the otherwise dominant R-L organisation. This phenomenon was particularly evident along the blood vessels, as illustrated in Figure 5C (red streamlines).
 
@@ -123,7 +131,7 @@ In the ESRF centrum semiovale sample, the median tortuosity index was significan
 
 We conducted three non-parametric statistical tests of significance (⍺=0.05) between the two CC samples (DESY vs. ESRF) and between the two ESRF samples (CC vs. CS). These tests included: a Kolmogorov-Smirnov (two-sample) test for equality of distributions, a Wilcoxon rank sum test for equality of medians, and a Brown-Forsythe test for equality of variance (Hollander et al., 2015; Brown and Forsythe, 1974; Massey, 1951). For streamline tortuosity (Figure 5B, top), the null hypothesis was accepted for all three tests between CC samples (p=0.2, p=0.7, p=0.2), but rejected for all tests comparing CC and CS (p<0.001). For streamline maximum deviation (Figure 5B, bottom), all six null hypotheses were rejected (p<<0.001).
 
-## Multi-scale, multi-modal imaging data in healthy and demyelination mouse brains
+### Multi-scale, multi-modal imaging data in healthy and demyelination mouse brains
 
 Finally, we investigated the organisation of fasciculi in both healthy mouse brains and a murine model of focal demyelination induced by 5 wk of cuprizone (CPZ) treatment. This allowed for the exploration of the disease-related influence on axonal organisation, particularly under inflammation-like conditions with high glial cell density at the demyelination site (He et al., 2021). The experimental setup for DESY and ESRF is similar to that described for the monkey, with the exception that we did not perform dMRI and synchrotron imaging on the same brains, and only collected MRI data for healthy mouse brains. This approach allowed us to apply the same structure tensor and tractography streamline analysis used previously, but in a healthy versus disease comparison, demonstrating the methodology’s ability to provide insights into pathological conditions.
 
@@ -133,9 +141,69 @@ The dMRI is a whole-brain FOV, whereas the FOVs of DESY and ESRF are similar to 
 
 **Figure 6.:** (A) Location of the sample within the mouse brain and a coronal slice from the Deutsches Elektronen-Synchrotron (DESY) dataset, with indications of anatomic regions: cc = corpus callosum, cg = cingulum, ctx = cortex, and ccp = cortical projections. The blue box indicates the size of a DWI voxel. (B) The co-registered slice from the European Synchrotron (ESRF) volume (position indicated by the red frame). Labels indicating blood vessels (bv) and cells (c), (C) Coronal slice from the DESY dataset of a cuprizone (CPZ)-treated mouse, with indication of anatomic regions: cc = corpus callosum, cg = cingulum, alv = alveus, hps = hippocampal striatum, hpp = hippocampal pyramidal layer, ccp = cortical projections. The dashed purple line shows a demyelinated region of the CC. (D) The co-registered slice from the ESRF volume (indicated by the red frame). Labels indicate blood vessels (bv), cells (c), and myelin ‘debris’/macrophages (m). (E) 3D rendering of a local segmentation in the corresponding region in D. The blood vessel is coloured in red, cells in blue, and ‘myelin debris’ in green. This segmentation was done manually using ITK-SNAP (RRID:SCR_002010).
 
+**Table 1.**
+ Data samples included in this study.All voxel sizes are isotropic. The field-of-views (FOVs) of ID-2 and ID-3 are given as four stitched scans (marked with *). Individual FOVs were 0.21×0.21×0.21 mm.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Specimen</th>
+      <th>Synchrotron</th>
+      <th>Sample</th>
+      <th>FOV [mm]</th>
+      <th>Voxel size [nm]</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">12</td>
+      <td rowspan="3">Monkey</td>
+      <td rowspan="2">DESYESRF</td>
+      <td rowspan="2">Corpus callosum (CC), midbody</td>
+      <td rowspan="2">0.54×0.99 ×0.990.78×0.21 ×0.21*</td>
+      <td rowspan="2">550100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ESRF</td>
+      <td>Centrum semiovale (CS)</td>
+      <td>0.78×0.21 ×0.21*</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">45</td>
+      <td rowspan="2">Mouse</td>
+      <td rowspan="2">DESYESRF</td>
+      <td rowspan="3">Corpus callosum, splenium &amp; cingulum</td>
+      <td rowspan="2">0.63×0.35 ×0.350.24×0.24 ×0.24</td>
+      <td rowspan="2">55075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>CPZ Mouse</td>
+      <td>DESYESRF</td>
+      <td>0.64×0.38 x 0.500.30×0.30 ×0.30</td>
+      <td>550100</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 DESY and ESRF data both revealed demyelinated regions in the CC of the cuprizone-treated mouse. The lesion area is demarcated by an intensity gradient increasing from dark (intact myelination) toward a brighter signal (demyelination) (Figure 6C and D). In the demyelinated area, the ESRF data revealed a higher density of cell bodies and small accumulations of heavily stained material. Cellular structures were manually segmented in a small representative region to reveal their 3D shapes (Figure 6E).
 
-## Preservation of the organisation of major pathways in healthy and demyelination mouse brains
+### Preservation of the organisation of major pathways in healthy and demyelination mouse brains
 
 In dMRI of the healthy mouse brain, the colour-coded diffusion tensor directions of the first (major) principal direction have the same R-L direction (red) as seen in the monkey (Figure 7A vs. Figure 2A). However, Figure 7A shows a shift of the second and third principal directions in the mouse CC, as compared to the monkey.
 
@@ -145,6 +213,63 @@ In dMRI of the healthy mouse brain, the colour-coded diffusion tensor directions
 
 In the healthy and demyelination mouse brains, we use only a single scale-space level for the structure tensor patch size (see method section) both in the DESY and ESRF data sets. The integration patch sizes correspond to 18.7 μm for the DESY and 9.4 μm for the ESRF samples (see Table 2).
 
+**Table 2.**
+ Structure tensor parameter values used for the samples in this study (see Table 1 for sample ID).The kernel size represents the width of the ρ-kernel converted to physical distance in accordance with the voxel size of the specific dataset. The scale-space approach was applied only to the monkey ESRF samples, with the range of scales listed in Table 2. In all other cases, the image resolution was too low compared to the anatomical scale for structures to visually present with distinguishably different sizes. Therefore, there was no benefit in the scale-space approach. Instead, the standard ST analysis with a fixed kernel size was used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Voxel size [nm]</th>
+      <th>Scaling factor</th>
+      <th colspan="2">ST-parameters (ρ,σ) [voxels]</th>
+      <th>ST conversion (γ)</th>
+      <th>Kernel size [μm]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12</td>
+      <td>550100</td>
+      <td>24</td>
+      <td>2.58 scales*</td>
+      <td>0.58 scales*</td>
+      <td>0.300.30</td>
+      <td>12[9.2–2]</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>100</td>
+      <td>4</td>
+      <td>8 scales*</td>
+      <td>8 scales*</td>
+      <td>0.30</td>
+      <td>[9.2–2]</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>55075</td>
+      <td>25</td>
+      <td>46</td>
+      <td>11</td>
+      <td>0.350.25</td>
+      <td>18.79.4</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>550</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0.35</td>
+      <td>18.7</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Scale space structure tensor parameters:ρ = [5.50, 4.50, 3.50, 3.50, 2.50, 2.50, 1.50, 1.00], σ = [3.00, 2.75, 2.50, 1.50, 1.50, 1.00, 1.00, 0.50]._
+
 In the DESY data from healthy mice, the directional colour coding of the structure tensor was in accord with the diffusion tensor MRI (Figure 7A vs. Figure 7B). We found sporadic directional deviations in the coronal view, represented as local regions with different directional colours in Figure 7B, which indicate local crossing axon fasciculi and/or blood vessels. Nevertheless, the visualisation of orientations did not reveal any axonal organisation in the mouse CC due to the lack of local angular contrast, unlike the clear laminar structures seen in the monkey sample (Figure 3A). Any parallel organisation in tissue remains undetectable because our visual contrast relies on angular differences.
 
 The two major pathways, the CC and cingulum, appear in the mouse as two sharply separated structures, facilitating the generation of image masks for regionally independent quantifications of the structure tensor analysis. These structures cross almost orthogonally, as shown in the 3D glyphs of the structure tensor FODs from both the ESRF and DESY datasets (Figure 7E). In all cases, the ODI was estimated to be below 0.06, indicating highly directed pathways, similar to those values measured in the monkey CC. The DA indices show more variation: In the CC, DA was 0.49 and 0.32 for the DESY and ESRF samples, respectively, and in the cingulum, 0.78 and 0.29. These values are on the same scale as those for the monkey and are non-zero, suggesting some axonal organisation is present, even though it was not visually confirmed.
@@ -153,7 +278,7 @@ The structure tensor FA histograms of the mouse CC and cingulum, are both shifte
 
 In the CPZ-treated mouse brain, the directional colour-coded structure tensors in the DESY data match that in the healthy mouse, even in the demyelination region, which shows reduced image contrast (Figure 7C vs. D). The fact that there even is directional contrast in the demyelinated region, depicts the advantage of phase-contrast imaging, where the obtained contrast is not solely dependent on absorption. Note that the demyelination region is confined to axons within the CC, with sparing of the cingulum. The lower image contrast (lack of strong edges) in the demyelinated region contributes to the blurrier tensor shapes and lower FA values as compared to the normal-appearing white matter (mean FA: 0.44 vs 0.52), as shown in Figure 7H. The FODs are similar (Figure 7F) with ODI = 0.03 and 0.04 for the normal-appearing and lesioned regions respectively as expected for the highly aligned axons in CC. In the same order DA = 0.18 and 0.40.
 
-## Axon fasciculi trajectories in healthy and demyelination mouse brains
+### Axon fasciculi trajectories in healthy and demyelination mouse brains
 
 For better comparisons, we registered the ESRF data of mouse CC onto the DESY data. In healthy and cuprizone-lesioned mice, Figure 8A and B shows that the CC and cingulum are both mappable using streamlines. Irrespective of image resolution, the cingulum did have a lower tortuosity and maximal deviation than the CC (Figure 8C and E), which could be due to differences in densities of extra-axonal structures. This is suggested by the streamlines projecting through the demyelinated region (Figure 8B), which contains more cells (Figure 6D and E). Indeed, both indices broadened with lower image resolution in combination with a larger FOV that covers macroscopic shape changes. An example is the bending of the corpus callosum detected by the longer streamlines.
 
@@ -169,7 +294,7 @@ Interestingly, both in healthy and demyelination samples, some streamlines from 
 
 By combining diffusion MRI and high-resolution phase-contrast synchrotron imaging, we quantified the 3D organisation of fibre pathways in white matter across a range of anatomical length scales. Importantly, our findings revealed common principles of fibre organisation in both monkeys and mice despite differences between species; small axonal fasciculi and major bundles formed sheet-like laminar structures, with relative angles that depended on the characteristics of the major pathways to which they belonged. By applying a scale-space structure tensor analysis and streamline tractography to the synchrotron datasets, we quantified the micro-dispersion of individual axons and fasciculi. Interestingly, the dispersion magnitude is indicative of fasciculi that skirt around obstacles in the white matter such as cells and blood vessels, and the results are observed across both white matter complexity (straight vs crossing fibre region) and pathology. Our dMRI and scale-space structure tensor analysis allowed us to compare and quantify tissue anisotropies and fibre orientations. We found that FODs were comparable across image resolutions and modalities. The observed discrepancies can be attributed to the fact that the FOVs are not exactly matched. Estimates of structure tensor-derived microscopic FA show a clear pattern across modalities. However, to achieve good specificity in the anatomical feature correlation the diffusion tensor and structure tensor models must be sensitive to the same anatomical length scale.
 
-## Laminar organisation across image resolutions and modalities
+### Laminar organisation across image resolutions and modalities
 
 Our white matter samples from monkey and mouse brains were geometrically organised as stacked laminae across anatomical length scales extending from individual axons to axon fasciculi and the major WM pathways.
 
@@ -181,7 +306,7 @@ Invasive tracer studies and histology in monkeys (Caminiti et al., 2009; Howard 
 
 Structure tensor analysis of the present ESRF data in the complex fibre region clearly shows the crossing of three pathways composed of laminar sheets of fasciculi (Figure 4E). Compared to the parallel within-tract axonal fasciculi in the monkey CC, the boundaries between fasciculi in the complex fibre region are thin (tens of micrometres), and, therefore, likely to be less well defined when visualised as streamlines. However, we did not see such an intermingling of streamlines at the interface between the crossing of the larger well-defined tracts such as the CC and cingulum in the mouse brain (Figure 7B–D).
 
-## The inclination angle between fasciculi
+### The inclination angle between fasciculi
 
 The structure tensor method performed very well in analysing the fasciculi without segmentation, through its detection of tracts and fasciculi based on their angular differences and highlighting of their sheet-like and laminar organisation. The observed tendencies regarding fasciculi organisation can be grouped into two: Within-WM pathways where inclination angles are low, including 0 degree parallel alignment, and between-WM pathways where the angles are high.
 
@@ -201,7 +326,7 @@ Our findings of laminar organisation and the distinction between high and low in
 
 We believe our observed topological rule of white matter laminar organisation can be explained by a biological principle known from studies of nervous tissue development. The first axons to reach their destination, guided by their growth cones, are known as ‘pioneering’ axons. ‘Follower’ axons use the shaft of the pioneering axon for guidance to efficiently reach the target region (Breau and Trembleau, 2023). Axons can form a fasciculus by fasciculating or defasciculating along their trajectory through a zippering or unzipping mechanism, controlled by chemical, mechanical, and geometrical parameters. Zippering ‘glues’ the axons together, while unzipping allows them to defasciculate at a low angle (Šmít et al., 2017). Although speculative, the zippering mechanism may be responsible for forming the laminar topology observed across length scales. The defasciculation effect can explain our results in the corpus callosum (CC) of monkeys, with laminar structures at low angles (~35 degrees) also observed by Innocenti et al., 2019; Caminiti et al., 2009, as well as in other major pathways (Sarubbo et al., 2019). In contrast, a fasciculation mechanism may be observed in the mouse CC (0 degrees). If the geometrical angle between two axons is high, i.e., toward 90 degrees, the zippering mechanism will not occur, and the two axons (fasciculi) will cross (Šmít et al., 2017). This supports our and other findings that crossing fasciculi or pathways occur at high angles toward 90 degrees in the fully matured brain (Wedeen et al., 2012). Once myelination begins, the zippering mechanism is lost (Šmít et al., 2017), suggesting that laminar topology is established at the earliest stages of brain maturation.
 
-## Sources to the non-straight trajectories of axon fasciculi
+### Sources to the non-straight trajectories of axon fasciculi
 
 Applying streamlined tractography to the main fibre orientations in the structure tensor analysis enabled a geometric quantification of the non-linearity of axon fasciculi trajectories as a tortuosity metric (Pingel et al., 2022). Surprisingly, we observed that the maximal amplitude of the axon fasciculi was comparable when measured in the crossing and straight fibre regions. This suggests that the geometrical variation in an axon fasciculus trajectory may hold similarly throughout the white matter.
 
@@ -215,13 +340,13 @@ Diffusion MRI is sensitive to the micro-dispersion effects (Lee et al., 2019; An
 
 Notably, high-resolution light-microscopy-techniques such as Polarised Light imaging with in-plane 5 μm and 30–100 μm thick slices (Axer et al., 2011) as well as light-sheet imaging are expected to be too low in resolution to detect the micro-dispersion effects.
 
-## Fibre orientation distributions across image resolutions depend on FOV
+### Fibre orientation distributions across image resolutions depend on FOV
 
 We found a general agreement in the FODs between the different image modalities and across image resolutions. This is in line with other studies comparing dMRI with structure tensor analysis using both single and multi-fibre models (Khan et al., 2015; Budde and Frank, 2012; Leuze et al., 2021; Schilling et al., 2016).
 
 The FOD discrepancies that we did observe could be attributed to the differences in the FOVs across the imaging modalities. As shown in Figure 1, we prepared biopsy samples for synchrotron imaging that was on a sufficiently large scale to cover several MRI voxels of isotropic 500 μm size. Indeed, the DESY sample covered multiple MRI voxels, except that a relatively large unstained region in the middle of the sample was not included in the generated FOD. Similarly, the four stacked image volumes of the ESRF measuring 780 μm in length by 210 μm in diameter only covered a fraction of the DESY volume and MRI image voxel. Since the FOD is dependent upon fibre organisation, the observed FOD differences reflect actual anatomical differences, for example with more volumetric weighing in one fibre direction. Therefore, although FODs are independent of image resolution, care must be taken when comparing two modalities without covering the same 3D volume, as observed in the CC (Figure 3E and F vs. Figure 3H, I). Examples are validation studies comparing the FOD from diffusion MRI fibre models with that derived from 2D or 3D histology which only rarely cover the same identical volume (Khan et al., 2015; Budde and Frank, 2012). In cases of differing FOV, there may be a risk of misattributing an actual difference in anatomical information across length scales as a methodological difference.
 
-## Tissue micro anisotropy across modalities, image resolutions, and pathology
+### Tissue micro anisotropy across modalities, image resolutions, and pathology
 
 We show that tissue anisotropy metrics are comparable across modalities but vary with the anatomical length scale. The simple FA metric in the diffusion tensor MRI model was, as expected, sensitive to the average tissue organisation/anisotropy in the voxel. Thus, we found higher anisotropy in the CC (Figure 2C) as compared to the centrum semiovale, a more complex fibre region, much as observed by others (Andersen et al., 2020). In contrast, the μFA dMRI metric (Kaden et al., 2016; Jespersen et al., 2013; Jespersen et al., 2013; Lasič et al., 2014) is sensitive to tissue anisotropy only in micro-domains of 10 μm length scale (molecular displacement). The μFA generates a mean anisotropy value within a voxel, returning similarly high FA values in both the CC and centrum semiovale, thereby confirming the expected independence of FA on the structural organisation (Andersen et al., 2020).
 
@@ -235,13 +360,13 @@ In our comparison of structure tensor anisotropy in healthy mice versus cuprizon
 
 Interestingly, despite reduced anisotropy in demyelinated regions, the structure tensor still detects a clear directionally dependent anisotropy as in the healthy brain, consistent with the persistence of axons in this animal model despite demyelination (He et al., 2021). We did not collect diffusion MRI for the cuprizone-lesioned brains. However, we recently reported relatively preserved μFA values in demyelinated regions of the rat CC (He et al., 2021). Similar findings were made in a group of multiple sclerosis patients compared to normal (Andersen et al., 2020) supporting our synchrotron anisotropy results.
 
-## Limitations
+### Limitations
 
-## Sample size
+#### Sample size
 
 Increasing the number of samples across both species and examining laminar organisation at various length scales in more regions would strengthen our findings. However, securing beamtime at two different synchrotron facilities to scan the same sample with varying image resolutions is a limiting factor. Beamline development for multi-resolution experimental setups, along with faster acquisition methods, is a rapidly advancing field. For instance, the Hierarchical Phase-Contrast Tomography (HiP-CT) imaging beamline at ID-18 at the ESRF, enables multi-resolution imaging within a single session to address this challenge, though it is currently limited to a resolution of 2.5 μm (Walsh et al., 2021).
 
-## Registration
+#### Registration
 
 It was not possible to realise perfect correlational cell-to-cell imaging between the three very different modalities and experimental set-ups. This resulted in minor cross-modal differences between FODs, for example in Figure 3, where we see a FOD tilt difference due to either misalignment or an anatomical difference, albeit without affecting the interpretation of quantitative measures.
 
@@ -249,7 +374,7 @@ MRI-to-synchrotron registration is challenging due both to the large resolution 
 
 The matching between the different synchrotron volumes was easier and achievable manually for the mouse samples, as they contained large global features in the form of both the CC and cingulum and even a little beyond. Despite our efforts, we could not obtain similar matching for the monkey samples. Due to the imaging at different beamlines, the samples had been physically moved and repositioned in a new setup, thus losing alignment. This process gradually becomes easier and more streamlined as the various synchrotron beamlines develop. Walsh et al., 2021 recently succeeded in applying several zoom-ins on a low-resolution overview scan of an intact brain within the same scanning session at the ESRF BM05 beamline. This approach removes the need to collect small selective biopsy samples for the different experiments. However, the finest pixel size in Walsh et al. was isotropic 2.5 μm, which might be too coarse to perform the structure tensor analysis that we undertook to map fibre organisation across anatomical length scales to be compared with diffusion MRI.
 
-## Resolution
+#### Resolution
 
 The different imaging setups each have characteristic image resolutions and native voxel sizes, but these are not the only relevant factors in this study. The targeted anatomical features are a primary consideration. Our examination of the monkey and mouse samples at the same beamlines gave approximately the same image resolution, voxel size, and FOV size. Nevertheless, the anatomical scales are quite different simply because the mouse brain is smaller, with a brain volume ratio of approximately 1:190. Thus, the same synchrotron FOV covered only a small part of the CC in the monkey, vs. a large portion of the major callosal pathway and part of the cingulum in the mouse. When defining terminologies such as ‘high image resolution,’ it is essential to relate it to the size of the anatomical structures of interest (Dyrby et al., 2014).
 
@@ -261,17 +386,17 @@ Additionally, the image resolution does not determine voxel size, since acquired
 
 ## Materials and methods
 
-## Monkey
+### Monkey
 
 The tissue came from a 32-mo-old female perfusion-fixated vervet (Chlorocebus aethiops) monkey brain, obtained from the Montreal Monkey Brain Bank. The monkey, cared for on the island of St. Kitts, had been treated in line with a protocol approved by The Caribbean Primate Center of St. Kitts.
 
-## Mice
+### Mice
 
 C57BL/6 female mice were obtained from Taconic Ltd. (Ry, Denmark). Mice were bred at the Biomedical Laboratory, University of Southern Denmark according to protocols and guidelines approved by the Danish Animal Health Care Committee (2014-15-00369). All animal experiments complied with the EU Directive 2010/63/EU for animal experiments.
 
 Repeated oral administration of the copper chelator bis-cyclohexanone-oxalyldihydrazone (cuprizone) leads to demyelination and oligodendrocyte loss notably in the CC, and thus serves as a model for the demyelination lesions in patients with multiple sclerosis (MS) (Torkildsen et al., 2008). Cuprizone (Sigma Aldrich, MO, USA) was administered as 0.4% cuprizone in powdered standard chow to female mice aged 8–9 wk for 5 wk. Control mice were kept on a normal diet. During experiments, mice were weighed every second day to monitor the characteristic weight loss due to cuprizone exposure, with euthanasia of mice losing more than 20% of their baseline body weight. After 5 wk on the cuprizone diet, the mice were euthanized with an overdose of pentobarbital (Glostrup Apotek, Glostrup, Denmark) followed by perfusion with DPB and 4% paraformaldehyde (PFA). The brains were stored in 4% PFA at 4 °C.
 
-## Diffusion MRI
+### Diffusion MRI
 
 Two acquisition setups were used to collect the ex vivo diffusion MRI data sets on whole brains from the monkey (N=1) and normal mouse (N=1). The protocol for the monkey brain was from Andersson et al., 2020 and includes three shells: b-values of [2011, 2957, 9259] s/mm^2, (gradient strength (G) = [300, 219, 300] mT/m, gradient duration (δ) = [5.6, 7.0, 10.5] ms, gradient separation (Δ) = [12.1, 20.4, 16.9] ms), [84, 87, 68] non-collinear diffusion encoding directions and the number of b=0 s/mm2 was [15, 16, 13]. The higher b-value was adjusted to the lowered ex vivo diffusivity compared to in vivo (Dyrby et al., 2011). Correspondingly, the mouse brain protocol is from Perens et al., 2023 and includes a single shell: b-value of 4000 s/mm^2 (G=456 mT/m, δ=5 ms, Δ=13 ms), 60 non-collinear diffusion encoding directions and five b=0 s/mm2. Indeed, whole-brain MRI scanning was performed on both the normal and cuprizone mice prior to synchrotron sample preparation. However, the MRI image quality was poor and could not be improved, as this was only realised after the tissue had been processed for synchrotron imaging. Therefore, the collected MRI mice data from Perens et al., 2023 was included in the study.
 
@@ -279,11 +404,11 @@ Tissue preparation in both species followed a standard pipeline for diffusion MR
 
 Before local fibre modelling, the diffusion MRI datasets were denoised (Veraart et al., 2016) and processed in the MRTrix3 software toolbox (RRID:SCR_ 006971)(Andersson et al., 2020; Perens et al., 2023) to remove Gibbs ringing artefacts (Kellner et al., 2016). Then, we fitted the single-fibre diffusion tensor and the multi-fibre constrained-spherical deconvolution models in the MRtrix3 software toolbox (Tournier et al., 2019). For the monkey data, we fitted the constrained-spherical deconvolution using only a single-shell b-value i.e., 9686 s/mm2, from which we estimated the fibre orientation distribution (Tournier et al., 2004). The diffusion tensors were fitted with a single-shell b-value, i.e., 2957 s/mm2 for the monkey (Andersson et al., 2020) and 4000 s/mm2 for the mouse (Perens et al., 2023). From the diffusion tensor, we estimated the three Eigenvectors representing fibre orientations as well as the fractional anisotropy (FA) metric (Basser et al., 1994). Since the FA value of microstructure anisotropy is biased by fibre architecture (Andersson et al., 2020), we also fitted a micro-tensor model to estimate μFA from the monkey three-shell diffusion MRI data set of monkey (Kaden et al., 2016). The diffusion tensor model assumes a single tensor per voxel, whereas the micro-tensor model assumes a micro-tensor regime with many micro-tensors on the diffusion length scale. Hence, the micro-tensor model is not sensitive to fibre organisation (Kaden et al., 2016; Lasič et al., 2014; Jespersen et al., 2013).
 
-## Diffusion MRI human
+### Diffusion MRI human
 
 We used data from four subjects of the Human Connectome Project (HCP) Adult Diffusion database to compute the eigenvalues and eigenvectors of the diffusion tensor (Basser et al., 1994) via a two-step weighted and iterated least-squares method (Veraart et al., 2013) as implemented in MRtrix3 (Tournier et al., 2019). Data were denoised as indicated in Pizzolato et al., 2023 using a Rician variance stabilisation transform (Foi, 2011) in combination with PCA optimal shrinkage (Gavish and Donoho, 2017), with subsequent application of Gibbs ringing removal (Kellner et al., 2016) and eddy current distortion correction (Andersson and Sotiropoulos, 2016). For the estimation of the tensor, we selected only the b=0 and the 64 volume directions corresponding to b=1000 s/mm2. The resulting eigenvector colour-coded maps (Pajevic and Pierpaoli, 2000) are shown in Appendix 1—figure 1, which is organised similarly to Figure 2A.
 
-## Tissue preparation for synchrotron imaging
+### Tissue preparation for synchrotron imaging
 
 To perform the SRI experiments, small tissue samples extracted from the monkey and normal (N=1) and cuprizone (N=1) mouse brains were processed and embedded in EPON.
 
@@ -291,7 +416,7 @@ The monkey brain was sliced in the sagittal plane with a monkey brain matrix. Cy
 
 The brains of the normal and cuprizone mice were cut into 1 mm thick coronal slices using a mouse brain matrix. For the cuprizone mouse, we selected a slice where a demyelination lesion in the white matter was visible. The same slice position was selected in the normal mouse brain for comparison. After selecting the slice containing the splenium of the CC, we carefully excised the part of the splenium traversing the mid-sagittal plane and extending approximately 2 mm into the left hemisphere, using a scalpel under a microscope. The mouse brain samples were then processed as described above. Once the EPON resin had polymerized, we used a metallographic grinder to polish the blocks to have a smooth surface, a thickness of approximately 700 µm, and a length of a few millimetres.
 
-## Synchrotron imaging
+### Synchrotron imaging
 
 The specimens were imaged at beamline ID16A of the European Synchrotron Radiation Facility (ESRF) with x-ray nano-holotomography, as described in Andersson et al., 2020. In short, the samples were illuminated with a nano-focused cone (Cesar da Silva et al., 2017) 17 keV x-ray beam. The samples were rotated over 180 degrees, and tomographic scans were acquired at four different propagation distances (Hubert et al., 2018). Each scan consisted of 1800 projections with exposure times of 0.22 s, and a pixel size of 100 nm or 75 nm, taking approximately 4 hr to acquire. Upon performing the phase retrieval and tomographic reconstruction, the resulting volumes had dimensions 2048×2048 ×2048 voxels. In the case of the healthy mouse sample, the reconstruction was performed in an extended FOV providing a volume of 32003 voxels as presented in Table 1. For the monkey CC and CS samples, we collected four consecutive image volumes with a small overlap to extend the total FOV.
 
@@ -301,25 +426,37 @@ Note that several separate beamline experiments were conducted to collect the vo
 
 Due to the size of the data selected, processed volumes, masks and results are available at https://zenodo.org/records/10458911. Other datasets can be shared on request.
 
-## Image registration
+### Image registration
 
 Finding spatial correspondences within and across image modalities was largely a manual process. For aligning DESY/ESRF images to MRI, photo documentation of tissue extraction sites was visually compared with the dMRI scan, and the best matching dMRI voxel or region was selected manually. For registering ESRF images to DESY scans, manual initialisation in ITK-SNAP was followed by rigid registration refinement, employing rigid transformation and mutual information-based image similarity. Stitching individual ESRF fields of view involved translation-only registration, where the approximate translation shift - known from the scan setup- was manually refined using the ITK-SNAP (RRID:SCR_002010).
 
-## Structure tensor analysis
+### Structure tensor analysis
 
 For each synchrotron volume, we computed the 3D structure tensor for each voxel (Jeppesen et al., 2021; Khan et al., 2015). The processing involves three steps: (1) Computation of the image gradients, by filtering with the derivative of a Gaussian kernel, where the parameter σ is the standard deviation of the Gaussian; (2) Calculating the outer product of the gradient with itself, yielding a tensor in each image voxel; (3) Aggregation of tensor information within a local neighbourhood, by filtering with a Gaussian kernel i.e., also known as the patch size, where the parameter ρ is the standard deviation of the Gaussian.
 
-Similar to the Diffusion Tensor in MRI (Basser et al., 1994), the eigendecomposition of the structure tensor defines a 3D ellipsoid, whose axes are scaled according to the eigenvalues λ1*, λ2* and λ3* (where λ1* > λ2* > λ3* and may be normalised to ensure that ∑λi∗=1), and their orientations are defined by the three orthogonal eigenvectors v1, v2, and v3. Throughout this paper, the estimated structure tensor decomposition is by default converted to a diffusion-like tensor, as the structure tensor and the diffusion tensor are ‘inverted’ to one another (Khan et al., 2015). We use the following single parameter (γ) model for converting the eigenvalues of the structure tensor:λi=e−λi∗/γ
+Similar to the Diffusion Tensor in MRI (Basser et al., 1994), the eigendecomposition of the structure tensor defines a 3D ellipsoid, whose axes are scaled according to the eigenvalues $\lambda_{1}^{*}$, $\lambda_{2}^{*}$ and $\lambda_{3}^{*}$ (where $\lambda_{1}^{*}$ > $\lambda_{2}^{*}$ > $\lambda_{3}^{*}$ and may be normalised to ensure that $\sum\lambda_{i}^{∗}=1$), and their orientations are defined by the three orthogonal eigenvectors $v_{1}$, $v_{2}$, and $v_{3}$. Throughout this paper, the estimated structure tensor decomposition is by default converted to a diffusion-like tensor, as the structure tensor and the diffusion tensor are ‘inverted’ to one another (Khan et al., 2015). We use the following single parameter ($\gamma$) model for converting the eigenvalues of the structure tensor:
 
-Afterwards, the values are normalised to have ∑λi=1.
+$$
+\lambda_{i}=e^{−\lambda_{i}^{∗}/\gamma}
+$$
 
-From the eigenvalues, the anisotropy of the structure tensor i.e., its shape is characterised by the same Fractional Anisotropy (FA) metrics as defined for the diffusion tensor (Basser et al., 1994) i.e.,FA=32((λ1−λ^)2+(λ2−λ^)2+(λ3−λ^)2λ12+λ22+λ32)
+Afterwards, the values are normalised to have $\sum\lambda_{i}=1$.
 
-where λ^= (λ1+λ2+λ3)/3 is the mean of the three eigenvalues.
+From the eigenvalues, the anisotropy of the structure tensor i.e., its shape is characterised by the same Fractional Anisotropy (FA) metrics as defined for the diffusion tensor (Basser et al., 1994) i.e.,
 
-We introduce a scale-space structure tensor approach to ease parameter tuning and provide a scale-invariant analysis. The variation of axon diameters within some of the samples makes it challenging to capture all relevant structural orientation information with a single set of (σ,ρ)-parameters, i.e., for a single patch size. Therefore, we employed a ‘scale space structure tensor’ approach (Lindeberg, 1998). Here, the structure tensor is computed multiple times using a suite of varying (σ,ρ)-parameters called scales. Finally, for each voxel, we search for the dominating scale from which we retain the tensor. The criterion for selecting the dominant scale is based on the scale-wise relative maximum fractional anisotropy (FA) value. Let FAji be the calculated FA-value in voxel j at scale i using the parameter set (σ,ρ)i. The dominant scale index, dj, for voxel j is then selected asdj=argmaxi(FAjimaxj(FAji)) ,j=1,2,...,N
+$$
+FA=\sqrt{\frac{3}{2}(\frac{(\lambda_{1}−\lambda^)^{2}+(\lambda_{2}−\lambda^)^{2}+(\lambda_{3}−\lambda^)^{2}}{\lambda_{1}^{2}+\lambda_{2}^{2}+\lambda_{3}^{2}})}
+$$
 
-In other words, at a given scale, the maximum observed FA value across all voxels, maxj(FAji), is used as a normalisation factor. With this approach, we select the structure tensor that provides the most anisotropic response across the set of manually defined scales. This ensures that the tensor-derived quantities—eigenvectors, eigenvalues, and FA—become independent of the axon diameter. Using the FA value for scale selection is reasonable, as we focus on the fibre-like axons. Appendix 1—figure 2 in the Appendix illustrates the scale-space structure tensor concept applied to the monkey CC ESRF data, where the FA of three selected scales of gradually decreasing patch sizes (scales 2, 6, and 8), are shown to emphasise distinctly different microstructural features. The dominant scale illustration shows how scales with large patch sizes are selected where the axons are large.Structure tensor-based quantifications.
+where $\lambda^= (\lambda_{1}+\lambda_{2}+\lambda_{3})/3$ is the mean of the three eigenvalues.
+
+We introduce a scale-space structure tensor approach to ease parameter tuning and provide a scale-invariant analysis. The variation of axon diameters within some of the samples makes it challenging to capture all relevant structural orientation information with a single set of (σ,ρ)-parameters, i.e., for a single patch size. Therefore, we employed a ‘scale space structure tensor’ approach (Lindeberg, 1998). Here, the structure tensor is computed multiple times using a suite of varying (σ,ρ)-parameters called scales. Finally, for each voxel, we search for the dominating scale from which we retain the tensor. The criterion for selecting the dominant scale is based on the scale-wise relative maximum fractional anisotropy (FA) value. Let $FA_{j}^{i}$ be the calculated FA-value in voxel j at scale i using the parameter set (σ,ρ)i. The dominant scale index, dj, for voxel j is then selected as
+
+$$
+d_{j}=argmaxi(\frac{FA_{j}^{i}}{maxj(FA_{j}^{i})}) ,j=1,2,...,N
+$$
+
+In other words, at a given scale, the maximum observed FA value across all voxels, $maxj(FA_{j}^{i})$, is used as a normalisation factor. With this approach, we select the structure tensor that provides the most anisotropic response across the set of manually defined scales. This ensures that the tensor-derived quantities—eigenvectors, eigenvalues, and FA—become independent of the axon diameter. Using the FA value for scale selection is reasonable, as we focus on the fibre-like axons. Appendix 1—figure 2 in the Appendix illustrates the scale-space structure tensor concept applied to the monkey CC ESRF data, where the FA of three selected scales of gradually decreasing patch sizes (scales 2, 6, and 8), are shown to emphasise distinctly different microstructural features. The dominant scale illustration shows how scales with large patch sizes are selected where the axons are large.Structure tensor-based quantifications.
 
 The ST analysis, whether using the scale space or standard variant with a single scale, provides one tensor per voxel. Each sample is then quantified by the statistical distribution of FA values and the FOD based on the principal directions. The distributions are estimated from the combination of the following inclusion and exclusion regions of interest (ROIs).
 
@@ -331,27 +468,35 @@ The Fibre Orientation Distribution (FOD) was generated by binning the principal 
 
 To characterise the FOD, we fitted a spherical Bingham distribution to the FOD using the mtex toolbox (https://mtex-toolbox.github.io/BinghamODFs.html). From the Bingham parameters, we derive two indices: the Orientation Dispersion Index (ODI), which describes the dispersion of the fibres on the surface of the unit sphere, and the Dispersion Anisotropy Index (DA), which expresses the anisotropic shape of the fibre dispersion (Tariq et al., 2016). Both metrics range from 0 to 1. A low ODI indicates a population of fibres with a narrow spread (a focused main direction), while a low DA suggests that the shape of the fibre dispersion is close to isotropic. It should be noted that the use of ODI and DA is only meaningful for a single pathway FOD.
 
-## Structure tensor-based tractography
+### Structure tensor-based tractography
 
 The principle and the process of structure tensor-based tractography are much the same as in diffusion MRI-based tractography, but applied to the synchrotron volumes using the direction vectors of the structure tensor and the deterministic FACT algorithm (Tournier et al., 2019). The process is controlled by defining seeding point regions, masks for rejection, inclusion/termination, and various streamlined filtering parameters, such as minimum length. We utilise an a priori anatomical understanding of the sample and it’s the axonal organisation to manually generate the seeding region(s). For example, in the CC samples, the axons should primarily run in the L-R direction. We therefore create a mask at the left and right ends of the sample (with some margin from the sample edge). When seeding points in the left region of interest (ROI), streamlines must reach the right ROI to be included, and vice versa.
 
 In several instances, we employed inclusion or rejection masks, which defined the permitted boundaries of travel for the streamlines. In essence, these masks should roughly represent axonal tissue segmentations. Depending on the sample, such a mask can be generated by thresholding either FA - or image intensity values, followed by morphological operations (opening, closing) to close holes and remove small spurious regions.
 
-## Streamline clustering
+#### Streamline clustering
 
 The output of tractography is unstructured, thus often resulting in an overabundance of streamlines, which may be hard to interpret. It is then beneficial to apply a streamline clustering method, which can collect multiple streamlines into meaningful axonal bundles/fasciculi, while filtering away lone and spurious streamlines. To this end, we used the QuickBundles method (Garyfallidis et al., 2012), known for its simplicity and scalability, with manual selection of the distance threshold parameter for each sample individually.
 
-## Streamline analysis
+#### Streamline analysis
 
 We use two different metrics to quantify the clustered tractography streamlines: Tortuosity and maximum deviation.
 
-The tortuosity index is a single number representing the non-straightness of the trajectory of each streamline. It is calculated as the ratio of the length of a straight line, d, (between the streamline endpoints) and the piecewise length of the actual streamline trajectory, L.τ=L/d
+The tortuosity index is a single number representing the non-straightness of the trajectory of each streamline. It is calculated as the ratio of the length of a straight line, d, (between the streamline endpoints) and the piecewise length of the actual streamline trajectory, L.
+
+$$
+\tau=L/d
+$$
 
 The tortuosity index is bound between [1, ∞]. Following this definition, perfectly straight streamlines have a score of 1, and erratic streamlines have higher values. The various tortuosity indices are finally summarised in a histogram for each sample.
 
 The maximum deviation is a supplementary index that describes for each streamline the largest observed physical deviation from a straight line between the given endpoints, which might be described as the maximum amplitude. This index may be easier to interpret in anatomical terms, compared to the unit-less tortuosity.
 
-Similar to the tortuosity measure, we define the direct vector, vd, as going from the streamline starting point to the end point, i.e., ||vd|| = d. Additionally, we let vi be the vector extending from the streamline starting point to either of the N streamline sampling points. We then measure the orthogonal distance from each sample point of the streamline to this direct vector by finding the projection of vi onto vd. The maximum deviation, dmax, is then defined as the largest observed distance between all sample points and vd,dmax=argmaxi(‖vi− vi ⋅ vdvd ⋅ vd vd‖),    i = 2:N−1
+Similar to the tortuosity measure, we define the direct vector, $v_{d}$, as going from the streamline starting point to the end point, i.e., ||$v_{d}$|| = $d$. Additionally, we let $v_{i}$ be the vector extending from the streamline starting point to either of the N streamline sampling points. We then measure the orthogonal distance from each sample point of the streamline to this direct vector by finding the projection of $v_{i}$ onto $v_{d}$. The maximum deviation, $d_{max}$, is then defined as the largest observed distance between all sample points and $v_{d}$,
+
+$$
+d_{max}=argmaxi(‖v_{i}− \frac{v_{i} ⋅ v_{d}}{v_{d} ⋅ v_{d}} v_{d}‖),    i = 2:N−1
+$$
 
 Statistical tests of significance were applied to both described streamline measures where relevant. Specifically, we conducted:
 

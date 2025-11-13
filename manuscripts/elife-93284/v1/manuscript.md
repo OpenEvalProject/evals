@@ -9,15 +9,15 @@
 
 ### Affiliations
 
-1. https://ror.org/02crff812 Department of Plant and Microbial Biology, University of Zurich Zurich Switzerland
-2. https://ror.org/02banhz78 DIADE, University of Montpellier, CIRAD, IRD Montpellier France
-3. https://ror.org/03ykbk197 University of Portsmouth Portsmouth United Kingdom
+1. Department of Plant and Microbial Biology, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+2. DIADE, University of Montpellier, CIRAD, IRD Montpellier France ([ROR:02banhz78](https://ror.org/02banhz78))
+3. University of Portsmouth Portsmouth United Kingdom ([ROR:03ykbk197](https://ror.org/03ykbk197))
 
 † Corresponding author
 
 ## Abstract
 
-Understanding how plants adapt to changing environments and the potential contribution of transposable elements (TEs) to this process is a key question in evolutionary genomics. While TEs have recently been put forward as active players in the context of adaptation, few studies have thoroughly investigated their precise role in plant evolution. Here, we used the wild Mediterranean grass Brachypodium distachyon as a model species to identify and quantify the forces acting on TEs during the adaptation of this species to various conditions, across its entire geographic range. Using sequencing data from more than 320 natural B. distachyon accessions and a suite of population genomics approaches, we reveal that putatively adaptive TE polymorphisms are rare in wild B. distachyon populations. After accounting for changes in past TE activity, we show that only a small proportion of TE polymorphisms evolved neutrally (<10%), while the vast majority of them are under moderate purifying selection regardless of their distance to genes. TE polymorphisms should not be ignored when conducting evolutionary studies, as they can be linked to adaptation. However, our study clearly shows that while they have a large potential to cause phenotypic variation in B. distachyon , they are not favored during evolution and adaptation over other types of mutations (such as point mutations) in this species.
+Understanding how plants adapt to changing environments and the potential contribution of transposable elements (TEs) to this process is a key question in evolutionary genomics. While TEs have recently been put forward as active players in the context of adaptation, few studies have thoroughly investigated their precise role in plant evolution. Here, we used the wild Mediterranean grass Brachypodium distachyon as a model species to identify and quantify the forces acting on TEs during the adaptation of this species to various conditions, across its entire geographic range. Using sequencing data from more than 320 natural B. distachyon accessions and a suite of population genomics approaches, we reveal that putatively adaptive TE polymorphisms are rare in wild B. distachyon populations. After accounting for changes in past TE activity, we show that only a small proportion of TE polymorphisms evolved neutrally (<10%), while the vast majority of them are under moderate purifying selection regardless of their distance to genes. TE polymorphisms should not be ignored when conducting evolutionary studies, as they can be linked to adaptation. However, our study clearly shows that while they have a large potential to cause phenotypic variation in B. distachyon, they are not favored during evolution and adaptation over other types of mutations (such as point mutations) in this species.
 
 ## Introduction
 
@@ -29,29 +29,166 @@ Despite such evidence, whether TE polymorphisms are major contributors to adapta
 
 B. distachyon is a wild annual grass endemic to the Mediterranean basin and Middle East. Recent genetic studies based on more than 320 natural accessions spanning from Spain to Iraq (hereafter referred to as the B. distachyon diversity panel) revealed that B. distachyon accessions cluster into three main genetic lineages (the A, B, and C genetic lineages), which further divide into five main genetic clades that display little evidence for historical gene flow (Figure 1A; Stritt et al., 2022; Minadakis et al., 2023). Niche modeling analyses suggest that the species moved southward during the last glacial period and recolonized Europe and the Middle East within the last five thousand years (Minadakis et al., 2023). Consequently, while some B. distachyon genetic clades currently occur in the same broad geographical areas (Figure 1A), natural accessions are adapted to a mosaic of habitats (Stritt et al., 2022; Minadakis et al., 2023). These past and more recent shifts in the species distribution led to clear footprints of positive selection in the genome (Minadakis et al., 2023; Bourgeois et al., 2018) and make B. distachyon an ideal study system to investigate the contribution of TEs to the adaptation of plants in the context of environmental changes.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig1-v1.jpg)
+
+**Figure 1.:** (A) Map showing the geographical distribution of the accessions (n = 326) used in the current study. The phylogenetic tree illustrates the phylogeny between the five genetic clades. This panel was made based on the data and results published by Stritt et al., 2022 and Minadakis et al., 2023. (B) Observed (blue, n = 97,660) and simulated (gray, n = 100,000) XtX values of TE polymorphisms in B. distachyon. Dotted lines show the 2.5% and 97.5% quantiles of the simulated XtX values. (C-G) Folded site frequency spectrum of TE polymorphisms and synonymous SNPs in all clades. (C) A_East (nTE = 37,563; nSNP = 92,130); (D) A_Italia (nTE = 32,753; nSNP = 82,101); E: B_West (nTE = 48,315; nSNP = 99,953); F: B_East (nTE = 25,757; nSNP = 60,539); G: C (nTE = 24,161 ; nSNP = 78,681). Principal Component Analyses using TE, SNP, retrotransposon and DNA-transposon are shown in Figure 1—figure supplements 1 and 2. Observed correlation between age in generations and frequency of synonymous SNPs in the four derived genetic clades are shown in Figure 1—figure supplement 3. Distribution of the observed TE age scaled by the effective population size (Ne) in the four derived genetic clades are shown in Figure 1—figure supplement 4. Folded site frequency spectrum of DNA-transposons and retrotransposons are shown in Figure 1—figure supplements 5 and 6.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The red points show the expected age of a neutrally evolving mutation at a specific frequency based on the predictions of Kimura and Ohta, 1973. (A) A_East (n = 48,604); (B) A_Italia (n = 36,881); (C) B_West (n = 64,794) and (D) B_East (n = 36,892).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** The age estimates were scaled by the effective population size to improve readability (n = 28,650; 13,867; 15,683; 26,672; respectively).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Panel (A) A_East (nTE = 20,206 ; nSNP = 92,130); (B) A_Italia (nTE = 16,801 ; nSNP = 82,101); (C) B_West (nTE = 27,603 ; nSNP = 99,953); (D) B_East (nTE = 15,693 ; nSNP = 60,539); (E) C (nTE = 10,948 ; nSNP = 78,681).
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A) A_East (nTE = 3,677 ; nSNP = 92,130); (B) A_Italia (nTE = 3,589 ; nSNP = 82,101); (C) B_West (nTE = 4,590 ; nSNP = 99,953); (D) B_East (nTE = 2,537 ; nSNP = 60,539); (E) C (nTE = 2,897 ; nSNP = 78,681).
+
 In B. distachyon, TEs are exhaustively annotated and account for approximately 30% of the genome (International Brachypodium Initiative, 2010). Recent TE activity has been reported for many families, but despite past independent bottlenecks and expansions experienced by the different genetic clades, no lineage-specific TE family activity has been observed (Lockton et al., 2008). Rather, TE activity tends to be homogeneous throughout the species range and across genetic clades, indicating a high level of conservation of the TE regulatory apparatus (Lockton et al., 2008). While purifying selection shapes the accumulation patterns of TEs in this species (Lockton et al., 2008), some TE polymorphisms have been observed in the vicinity of genes (Lockton et al., 2008), potentially affecting gene expression (Wyler et al., 2020). These early studies, based on a relatively small number of accessions originating exclusively from Spain and Turkey, suggested that TE polymorphisms could contribute to functional divergence and local adaptation in B. distachyon (Lockton et al., 2008).
 
 To test this hypothesis, we used the B. distachyon diversity panel to identify TE polymorphisms in a large set of 326 natural accessions spanning the whole species distribution. We combined a set of population genomic analyses to assess the proportion of TE polymorphisms associated with positive or purifying selection as well as neutral evolution. We also quantified the strength of purifying selection through forward simulations. Altogether, our work provides the first quantitative estimate, to our knowledge, of the adaptive, neutral, and disruptive potential of TEs, while accounting for changes in TE activity, in a plant harboring a relatively small genome. Altogether, our result advocate against an extended role of TEs in recent adaptation.
 
 ## Results
 
-## Genetic variation in Brachypodium distachyon
+### Genetic variation in Brachypodium distachyon
 
 Using the B. distachyon diversity panel (Figure 1A), we identified 97,660 TE polymorphisms in our B. distachyon dataset, of which 9172 were retrotransposons, 52,249 were DNA-transposons and 36,239 were unclassified. We also identified 9 million SNPs across the 326 samples, including 182,801 synonymous SNPs. A Principal Component Analysis (PCA) performed either with SNPs or TE polymorphisms reflects the previously described population structure of B. distachyon (Stritt et al., 2022; Minadakis et al., 2023), with the first two components of the PCA splitting the data according to the demographic structure (Figure 1—figure supplement 1). Investigating the genetic variation caused by retrotransposons and DNA-transposons revealed that the observed diversity in retrotransposons strongly correlated with the demographic structure (Mantel test; r=0.79, p-value = 0.001), while the observed diversity in DNA-transposons only had a weaker correlation (Mantel test; r=0.36, p-value = 0.001) with the demographic structure (Figure 1—figure supplement 2).
 
 From the initial TE and SNP dataset, we could estimate the time of origin in generations (age) of 50,891 TE polymorphisms and 108,855 synonymous SNPs based on pairwise differences in identity by descent (IBD) regions around the focal mutation (see Materials and methods). The results of the age estimate analysis were checked by contrasting the observed correlation between allele age and frequency of synonymous SNPs to the theoretical predictions of Kimura and Ohta, 1973 for neutrally evolving mutations. We found that, the observed correlation matched expectations (Figure 1—figure supplement 3), with older alleles found on average at higher frequencies than younger ones. Furthermore, most TE polymorphisms in our dataset were young and only a few were very old (Figure 1—figure supplement 4).
 
-## The overall contribution of TEs to clade differentiation and adaptation is limited
+### The overall contribution of TEs to clade differentiation and adaptation is limited
 
 To examine the overall contribution of TEs to evolution and adaptation in B. distachyon, we first identified regions of the genomes that were likely affected by recent selective sweeps. The fast increase in the frequency of a beneficial allele is expected to lead to a longer than average haplotype around the mutation under positive selection. Such events (known as selective sweeps) can be identified by computing the integrated haplotype score (iHS) around focal mutations (Voight et al., 2006). We therefore computed iHS along the genome for the four derived genetic clades. Regions of the genomes with significantly higher iHS than average are expected to harbor mutations that were under positive selection during evolution and adaptation. We hypothesized that if TEs constitute an important part of the genetic makeup that led to adaptation in a given genetic clade, then they should be more frequently fixed or at higher frequencies in regions with high iHS than in the corresponding regions that did not experience recent selective sweeps in other clades.
 
 First, we tested if more TE polymorphisms were fixed in a specific region of the genome if a genetic clade had a high iHS, and presumably experienced a selective sweep, than in other genetic clades. An analysis of covariance (ANCOVA) revealed that the number of fixed TE polymorphisms per clade did not significantly differ between high iHS regions and the same regions in other clades (Table 1). These results indicate that there is no correlation between the overall number of fixed TE polymorphisms per clade in a region and recent selective sweeps. However, the number of fixed TEs in genomic regions along the genome was significantly affected by the total number of TEs in the region, the TE superfamily, the TE age, the genetic clade and the overall genetic features of the region (e.g. recombination rate, see Materials and methods) but not by the iHS itself (Table 1). Similarly, we tested if the allele frequency of TE polymorphisms was significantly higher in a specific region of the genome if a genetic clade had a high iHS than in other genetic clades. A second ANCOVA revealed that the allele frequency of TE polymorphisms was significantly influenced by the TE superfamily, TE age, clade and overall genetic features of the region but not by the iHS (Table 2). These results indicate that TEs in high iHS regions did not experience a significant increase in their frequency and that TEs in high iHS regions are experiencing the same selective constraints as other TEs. Similar results were obtained when investigating the number of fixed TE polymorphisms (Supplementary file 1 -table 1a) and the allele frequency of TE polymorphisms (Supplementary file 1-table 1b) in high iHS regions using a subset of our dataset with an expected lower false negative TE call rate, that only included samples with a genome-wide mapping coverage of at least 20 x (see Discussion and Materials and ethods for more details).
 
+**Table 1.**
+ ANCOVA predicting the number of fixed TE polymorphisms per clade in candidate regions under positive selection.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Sum of squares</th>
+      <th>degrees of freedom</th>
+      <th>F value</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total number of TEs in the region</td>
+      <td>28969.6</td>
+      <td>1</td>
+      <td>35405.64</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>TE superfamily</td>
+      <td>887.5</td>
+      <td>14</td>
+      <td>77.48</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Clade</td>
+      <td>587</td>
+      <td>3</td>
+      <td>239.13</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Genomic region</td>
+      <td>136.7</td>
+      <td>80</td>
+      <td>2.09</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>TE age</td>
+      <td>45.5</td>
+      <td>2</td>
+      <td>27.81</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>High iHS</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.03</td>
+      <td>0.869</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ ANCOVA predicting the allele frequency of TE polymorphisms per clade in candidate regions under positive selection.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Sum of squares</th>
+      <th>degrees of freedom</th>
+      <th>F value</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TE superfamily</td>
+      <td>453.2</td>
+      <td>14</td>
+      <td>247.3</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Clade</td>
+      <td>17.7</td>
+      <td>3</td>
+      <td>45.18</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Genomic region</td>
+      <td>147</td>
+      <td>80</td>
+      <td>14</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>TE age</td>
+      <td>2</td>
+      <td>2</td>
+      <td>7.7</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>High iHS</td>
+      <td>0.1</td>
+      <td>1</td>
+      <td>0.79</td>
+      <td>0.374</td>
+    </tr>
+  </tbody>
+</table>
+
 A complementary approach to explore the impact of positive selection on TEs consists in investigating their genetic differentiation among populations. Using the five genetic clades as focal populations, we computed XtX values, a standardized measure of genetic differentiation corrected for the neutral covariance structure across populations (Günther and Coop, 2013; Olazcuaga et al., 2020), for each TE polymorphism. Mutations affected by positive selection are expected to be over-differentiated between clades and display significantly higher XtX values than other mutations (Olazcuaga et al., 2020). In contrast, a low XtX value implies that the mutation is less differentiated than other mutations and potentially evolves under balancing selection, whereas purifying selection and a neutral evolution are not expected to impact the differentiation of a mutation among populations (Günther and Coop, 2013). We contrasted the observed XtX values computed for each TE polymorphism to a simulated pseudo-observed dataset (simulated observations under the demographic model inferred from the covariance matrix of the SNP dataset, for more details see Olazcuaga et al., 2020) and found that only a small fraction of the TE polymorphisms (0.06%) displayed XtX values higher than the 97.5% quantile of the simulated values (Figure 1B). This indicates that only a few TE polymorphisms are over-differentiated among genetic clades and might have been affected by positive selection. However, a relatively larger portion of the TE polymorphisms (4.3%) displayed XtX values smaller than the 2.5% quantile of the simulated values (Figure 1B), indicating that balancing selection might also shape TE frequency in B. distachyon.
 
 To further examine the contribution of TEs to adaptation, we tested whether and how many TE polymorphisms were significantly associated with environmental factors. If the presence of a TE provides an advantage in a certain environment and contributes to adaptation, we expected a correlation between the environment and the presence/absence of this TE. In this context, we performed genome-environment association analyses (GEA) using all TEs and SNPs identified across the 326 samples and 32 environmental factors associated with precipitation, solar radiation, temperature, elevation and aridity (see in Materials and methods for the full list). The GEA revealed that only nine of the 97,660 TE polymorphisms were significantly associated with some environmental factors (Supplementary file 1-table 1c), confirming that TEs only had a limited contribution to adaptation in B. distachyon. Importantly, two of these nine TEs were found in a gene, and three were in the vicinity of genes (less than 2 kilobase (kb) away, Supplementary file 1-table 1c).
 
-## Purifying selection dominates the evolution of TE polymorphisms in B. distachyon
+### Purifying selection dominates the evolution of TE polymorphisms in B. distachyon
 
 To further characterize the forces governing the evolution of TE polymorphisms in B. distachyon, we examined the genome-wide frequency distribution of TEs. We first computed the folded site frequency spectrum (SFS) and found that the folded SFS of TE polymorphisms was shifted toward a higher proportion of rare minor alleles compared to neutral sites in all genetic clades (Figure 1C–G). Splitting the TE data into DNA-transposons and retrotransposons resulted in similar folded SFS and shifts in both TE classes (Figure 1—figure supplements 5 and 6).
 
@@ -59,23 +196,67 @@ These shifts could be the result of purifying selection as the analyses presente
 
 Because this model does not allow for back mutations, as typically observed for DNA-transposons that can excise from the genome, we primarily investigated the age-adjusted SFS of retrotransposons in the four derived clades. This analysis revealed that retrotransposons are indeed prevented by natural selection from randomly accumulating, as older retrotransposons are significantly less frequent than neutral SNPs of the same age (Figure 2; one-sided Wilcoxon test, Bonferroni corrected p-value <0.01).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig2-v1.jpg)
+
+**Figure 2.:** The top row shows the age-adjusted SFS of all retrotransposons (colored), non-synonymous SNPs (light gray) and high effect SNPs (dark gray) in the four derived clades. The bottom row shows the age-adjusted SFS of retrotransposons based on their distance to the next gene in the four derived clades. The X axes show the age range of the mutations in each bin, and the age range of each bin was chosen so that each bin represents the same number of retrotransposon observations in the top row. The different columns show the four derived clades: (A) A_East (nretrotransposon = 2,106, nnon-synonymous SNP = 10,000, nhigh effect SNP = 9,050, nretrotransposon in genes and 1 kb surrounding = 733, nretrotransposon between 1 and 5 kb away from genes = 664, nretrotransposon more than 5 kb away from genes = 709); (B) A_Italia (nretrotransposon = 1,232, nnon-synonymous SNP = 10,000, nhigh effect SNP = 7,273, nretrotransposon in genes and 1 kb surrounding = 390, nretrotransposon between 1 and 5 kb away from genes = 388, nretrotransposon more than 5 kb away from genes = 454); (C) B_West (nretrotransposon = 2,081, nnon-synonymous SNP = 10,000, nhigh effect SNP = 10,000, nretrotransposon in genes and 1 kb surrounding = 812, nretrotransposon between 1 and 5 kb away from genes = 647, nretrotransposon more than 5 kb away from genes = 622); (D) B_East (nretrotransposon = 1,035 , nnon-synonymous SNP = 10,000, nhigh effect SNP = 6,306, nretrotransposon in genes and 1 kb surrounding = 387, nretrotransposon between 1 and 5 kb away from genes = 311, nretrotransposon more than 5 kb away from genes = 337). Boxplots are based on 100 estimations of D frequency. Significant deviations of D frequency estimates from 0 in the age-adjusted SFS of retrotransposons are shown with asterisks (one-side Wilcoxon tests, Bonferroni corrected p-value <0.01: ***). Age-adjusted SFS of DNA-transposons are shown in Figure 2—figure supplement 1. Age-adjusted SFS of simulated mutations under negative selection in the four derived clades transposons are shown in Figure 2—figure supplement 2. Age-adjusted SFS of retrotransposons in accessions with at least 20 x coverage are shown in Figure 2—figure supplement 3. Age-adjusted SFS of retrotransposons more than 5 kb away from genes are shown in Figure 2—figure supplement 4. Age-adjusted SFS of Copia, Ty3, Helitron and MITE TEs are shown in Figure 2—figure supplements 5–8.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The X axes show the age range of the mutations in each bin, and the age range of each bin was chosen so that each bin represents the same number of DNA-transposons observations. (A) A_East (nDNA-transposon = 17,053, nnon-synonymous SNP = 10,000, nhigh effect SNP = 9,050); (B) A_Italia (nDNA-transposon = 7,538, nnon-synonymous SNP = 10,000, nhigh effect SNP = 9,050); (C) B_West (nDNA-transposon = 16,335, nnon-synonymous SNP = 10,000, nhigh effect SNP = 9,050); (D) B_East (nDNA-transposon = 10,101, nnon-synonymous SNP = 10,000, nhigh effect SNP = 9,050). Boxplots are based on 100 estimations of Δ frequency. Significant deviations of Δ frequency estimates from 0 in the age-adjusted SFS of DNA-transposons are shown with asterisks (one-side Wilcoxon tests, Bonferroni corrected p-value <0.01: ***).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The four columns show the results for the A_East, A_Italia, B_West and B_East genetic clades, respectively. Each line shows the results for the different scaled selection coefficients (S). The five colored curves in each plot show the shape of the age-adjusted SFS with varying ratios of neutrally evolving mutations, and the gray curves show variation within one standard deviation based on the 20 runs for each simulation. The X axes show the age bin from the youngest to the oldest, with each age bin including the same number of observations for each simulation.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The top row shows the age-adjusted SFS of retrotransposons in the four derived clades. The bottom row shows the age-adjusted SFS of retrotransposons based on their distance to the next gene in the four derived clades. The X axes show the age range of the mutations in each bin, and the age range of each bin was chosen so that each bin represents the same number of retrotransposon observations in the top row. The different columns show the four derived clades: (A): A_East (nretrotransposon = 1,688, nretrotransposon in genes and 1 kb surrounding = 564, nretrotransposon between 1 and 5 kb away from genes = 536, nretrotransposon more than 5 kb away from genes = 590); (B): A_Italia (nretrotransposon = 1,216, nretrotransposon in genes and 1 kb surrounding = 384, nretrotransposon between 1 and 5 kb away from genes = 381, nretrotransposon more than 5 kb away from genes = 451); (C): B_West (nretrotransposon = 1,911, nretrotransposon in genes and 1 kb surrounding = 746, nretrotransposon between 1 and 5 kb away from genes = 593, nretrotransposon more than 5 kb away from genes = 572); (D): B_East (nretrotransposon = 1,035, nretrotransposon in genes and 1 kb surrounding = 387, nretrotransposon between 1 and 5 kb away from genes = 311, nretrotransposon more than 5 kb away from genes = 337). Boxplots are based on 100 estimations of Δ frequency. Significant deviations of Δ frequency estimates from 0 in the age-adjusted SFS of retrotransposons are shown with asterisks (one-side Wilcoxon tests, Bonferroni corrected p-value <0.05: *;<0.01: ***).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The X axes show the age range of the mutations in each bin. (A): A_East (nretrotransposon = 709); (B): A_Italia (nretrotransposon = 454); (C): B_West (nretrotransposon = 622); (D): B_East (nretrotransposon = 337). Boxplots are based on 100 estimations of Δ frequency.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** The X axes show the age range of the mutations in each bin. (A): A_East (n = 1,027); (B): A_Italia (n = 621); (C): B_West (n = 1,066); (D): B_East (n = 531). Boxplots are based on 100 estimations of Δ frequency.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** The X axes show the age range of the mutations in each bin. (A): A_East (n = 786)s; (B): A_Italia (n = 457); (C): B_West (n = 727); (D): B_East (n = 373). Boxplots are based on 100 estimations of Δ frequency.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** The X axes show the age range of the mutations in each bin. (A): A_East (n = 8,895); (B): A_Italia (n = 4,291); (C): B_West (n = 8,324); (D): B_East (n = 5,736). Boxplots are based on 100 estimations of Δ frequency.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig2-figsupp8-v1.jpg)
+
+**Figure 2—figure supplement 8.:** The X axes show the age range of the mutations in each bin. (A): A_East (n = 2,802); (B): A_Italia (n = 956); (C): B_West (n = 2,521); (D): B_East (n = 1,100). Boxplots are based on 100 estimations of Δ frequency.
+
 As previous studies showed that the distance between TE polymorphisms and the next gene can impact the strength of selection affecting TEs (Hollister and Gaut, 2009; Wright et al., 2003; Horvath and Slotte, 2017), we further split our retrotransposon polymorphisms into three categories based on their distance to the next gene: retrotransposons (i) in and up to 1 kb away from genes, (ii) between 1 kb and 5 kb away and (iii) more than 5 kb away. The age-adjusted SFS of all three categories displayed the same pattern as that observed for the whole retrotransposon polymorphism dataset: older retrotransposon polymorphisms were significantly less frequent than neutral sites of the same age regardless of their distance to genes (one-sided Wilcoxon test, Bonferroni corrected p-value <0.01), indicating that retrotransposons more than 5 kb away from genes are also affected by purifying selection (Figure 2).
 
 Retrotransposon polymorphisms tended to be more deleterious than SNPs predicted to have a high impact on fitness. Indeed, the age-adjusted SFS of retrotransposons resulted in a larger deviation of Δ frequency from 0 than for non-synonymous SNPs and high effect SNPs (Figure 2). In addition, Δ frequency in the oldest (last) age bin was significantly more negative than in all other age bins in the A_East, B_East and B_west clades (one-sided Wilcoxon test, Bonferroni corrected p-value <0.01). In the A_Italia clades the oldest age bin was not significantly different from the second oldest age bin (two-sided Wilcoxon test, Bonferroni corrected p value N.S.). While older non-synonymous SNPs and high effect SNPs were generally less frequent than neutrally evolving SNPs at the same age, the negative Δ frequency trend was reversed for the oldest non-synonymous SNPs and high effect SNPs (Figure 2). In all clades, Δ frequency in the oldest age bin was significantly higher than at least the lowest Δ frequency observed in the other age bins for non-synonymous SNPs, as well as high effect SNPs (one-sided Wilcoxon test, Bonferroni corrected p-value <0.01). This might be because not all predicted non-synonymous SNPs and high effect SNPs might result in fitness effects. Those SNPs can therefore evolve neutrally or nearly neutrally and persist as polymorphic SNPs much longer in a population than those affecting fitness negatively. Hence, even the oldest retrotransposon polymorphisms seem to be mostly non-neutral and are affected by purifying selection.
 
 To assess whether similar forces may drive retrotransposon and DNA-transposon evolution, we repeated the analysis for DNA-transposons. The age-adjusted SFS of DNA-transposons revealed very similar patterns, with Δ frequency showing significant deviations from 0 in older age bins (one-sided Wilcoxon test, Bonferroni corrected p-value <0.01), but DNA-transposon polymorphisms seemed less deleterious than non-synonymous SNPs and high effect SNPs (Figure 2—figure supplement 1).
 
-## Forward simulations allow us to quantify the strength of purifying selection
+### Forward simulations allow us to quantify the strength of purifying selection
 
 To evaluate to what extent the proportion of neutrally evolving mutations in the focal group of mutations affects the shape of the age-adjusted SFS, we ran forward simulation with mutations under multiple selective constraints, and we tested what ratio of neutral to selected mutations can lead to an age-adjusted SFS similar to that observed for retrotransposons in B. distachyon. Specifically, we investigated the conditions under which we observed a Δ frequency in the oldest age bin significantly smaller than Δ frequency in all other age bins. Our simulations revealed that the shape of the age-adjusted SFS of retrotransposons could only be reproduced if less than 10% of the mutations were neutrally evolving for most of the selective constraint investigated (Figure 2—figure supplement 2 and Supplementary file 1-table 1d).
 
 Finally, we used the results from our simulations to narrow down the selection strength affecting retrotransposons in B. distachyon by investigating the age of the oldest retrotransposons in our dataset. The main difference between the age-adjusted SFS of mutations evolving under weak and strong purifying selection is that the oldest mutations are much older in the simulation with weak purifying selection than in the simulation with strong purifying selection. This age difference arises because mutations under strong purifying selection are removed from the population more effectively and, therefore, cannot persist as long in the population. Examining the age of the last retrotransposon bins in the age-adjusted SFS revealed that the ages of the oldest retrotransposons were the most similar to the expected ages of the oldest mutations in our simulations, with a scaled selection coefficient (S) of –5 and –8 (Figure 3), indicating that retrotransposons in B. distachyon are under moderate purifying selection. In simulations with a nearly neutral selection coefficient (S = –1), the simulated mutations were much older than the oldest observed retrotransposons (Figure 3). Conversely, in simulations with a strong purifying selection coefficient (S < –10), they were much younger than the oldest observed retrotransposons (Figure 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig3-v1.jpg)
+
+**Figure 3.:** (A): 25% quantile; (B): 50% quantile; (C): 75% quantile. Relative age difference between simulated data assuming fully outcrossing individuals and observed data in the last bin of the age-adjusted SFS are shown in Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93284/elife-93284-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A): 25% quantile; (B): 50% quantile; (C): 75% quantile.
+
 ## Discussion
 
 B. distachyon is a widely used model species in evolutionary genomics, molecular ecology, developmental biology, and crop functional genomics (for review Raissig and Woods, 2022; Hasterok et al., 2022) with past and ongoing TE movements in its genome (Lockton et al., 2008). In this study, we used a diversity panel containing next-generation sequencing data from over 320 individuals sampled across the whole geographical range of B. distachyon to examine the role of TEs during evolution and adaptation. We investigated the frequency with which positive selection led to an increase in the frequency and fixation of TEs and quantified the strength of purifying selection on TE polymorphisms. Accounting for population structure and fluctuant transposition rates, we demonstrate that TEs are rarely part of the genetic makeup that was positively selected during environmental adaptation in B. distachyon. Furthermore, we show that the majority of TE polymorphisms found in the natural population of this model species are under weak to moderate purifying selection, with only a small minority of TE polymorphisms evolving neutrally.
 
-## Rare instances of positive selection on TEs
+### Rare instances of positive selection on TEs
 
 By combining complementary approaches, we were able to demonstrate that TEs are rarely the target of positive selection in B. distachyon. We first probed for footprints of positive selection on TE polymorphisms using the five genetic clades as focal populations. In conducting this analysis, we did not find TE polymorphisms to be at high frequencies or fixed at higher rates than expected, in regions of the genome presumably harboring selective sweeps in at least one of the genetic clades (high iHS regions). This suggested that TEs were rarely the target of positive selection, which we confirmed with a genome-wide scan for overly differentiated TE polymorphisms using XtX analysis. Indeed, this approach revealed that only a very small proportion of TE polymorphisms are more differentiated than expected under a neutral scenario.
 
@@ -83,7 +264,7 @@ Importantly, the XtX analysis also revealed that a non-negligible fraction of th
 
 Single TE insertions can have a drastic impact on phenotypic variation and be affected by positive selection (for review, see Dubin et al., 2018; Bourgeois and Boissinot, 2019; Casacuberta and González, 2013). For instance, TEs have increased in frequency through positive selection in humans (Jiang et al., 2022) or during range expansion in Arabidopsis (Castanera et al., 2023) and D. melanogaster (Barrón et al., 2014; Niu et al., 2019). Evidently, B. distachyon exhibits a different pattern, as causal mutations for adaptation in this grass species are rarely TEs. Only a few studies have thoroughly quantified the extent to which positive selection influences the evolution of TEs (Castanera et al., 2023; Bourgeois et al., 2020; Charlesworth, 1991; Charlesworth and Charlesworth, 1983; Charlesworth, 1996). But two of these drew similar conclusions to us, in the green anole Anolis carolinensis (Charlesworth and Charlesworth, 1983) and in the invasive species Drosophila Suzukii (Charlesworth, 1996). In addition, a large number of candidate genes for adaptation were identified with a similar approach focusing on SNPs (Minadakis et al., 2023), indicating that population structure or demographic events are not limiting factors for the methods we used. Altogether, these observations call for a closer investigation of which forces, for example purifying selection or neutral evolution, are important in shaping TE allele frequency in natural populations.
 
-## Moderate purifying selection is the dominant force during TE evolution
+### Moderate purifying selection is the dominant force during TE evolution
 
 Our results suggest that purifying selection is an important factor limiting the ability of TE polymorphisms to fix and increase their frequency in B. distachyon. This finding that purifying selection is the main force shaping the landscape of TE polymorphisms in B. distachyon is in line with similar observations made for example in maize (Stitzer et al., 2023), Arabidopsis thaliana (Quadrana et al., 2016; Baduel et al., 2021) and Drosophila simulans (Langmüller et al., 2023). Indeed, one of the significant explanatory variables in our ANCOVA models was the genetic clade, a proxy for the effective population size (Ne), which affects the efficiency with which selection can fix beneficial mutations and purge deleterious ones. In B. distachyon, the number of fixed TE polymorphisms per clade and the frequency of TE polymorphisms were negatively correlated with Ne, indicating that the accumulation of TEs is significantly lower in genetic clades with a larger Ne, potentially because of a greater efficacy of purifying selection.
 
@@ -99,17 +280,17 @@ While some of the parameters we chose for our simulations, such as the dominance
 
 While the analyses of positive selection and GEA were based on both DNA-transposons and retrotransposons, we only used retrotransposons to assess the strength of selection on TE polymorphisms, as the age-adjusted SFS was developed with the assumption of no back mutations (Horvath et al., 2022). Yet, DNA-transposons do not solely transpose through cut and paste mechanisms as they would otherwise not be so abundant in Eukaryotic genomes. DNA-transposons can also create extra copies of themselves by transposing during chromosome replication or repair from a position that has already been replicated, or repaired (Wicker et al., 2007). We therefore repeated the age-adjusted SFS analyses using DNA-transposons to evaluate whether DNA-transposons were affected by similar selective constraints. The folded SFS of DNA-transposons and retrotransposons display similar shifts toward high proportions of rare alleles and Δ frequency deviations from 0 in the age-adjusted SFS of DNA-transposons and retrotransposons are comparable. Hence, we argue that the conclusion drawn for retrotransposons also holds for DNA-transposons, and that purifying selection affect TEs broadly. To further examine our conclusion on purifying selection, we investigated the selective regime affecting different retrotransposons and DNA-transposons superfamilies. Thereby, we generated age-adjusted SFS for the four most common TE superfamilies Copia, Ty3 (also known under the name Gypsy, but we will avoid using this name because of its problematic nature see Wei et al., 2022), Helitron and MITE and found similar deviations of the Δ frequency from 0 in the four investigated TE superfamilies (Figure 2—figure supplements 5–8). These results indicate that our conclusion on the broad effect of purifying selection is not driven by a single TE superfamily but is at least common among the four most numerous TE superfamilies.
 
-## Conclusion
+### Conclusion
 
 Adaptation to different environmental conditions is a complex process that involves various mutation types. Here, we show that the vast majority of TE polymorphisms are under purifying selection in the small genome of B. distachyon. Conversely, only a very small proportion of TEs seem to have contributed to adaptation. The observed lack of neutrally evolving TE polymorphisms in B. distachyon advocates for a large potential of TE polymorphisms to contribute to the genetic diversity and phenotypic variation on which selection can act and highlights the need to consider TE polymorphisms during evolutionary studies. Finally, our work shows that the ability of TEs to cause phenotypic variation does not necessarily translate into being favored during evolution and adaptation over other mutations with more subtle effects, such as SNPs.
 
 ## Materials and methods
 
-## Whole-genome resequencing data
+### Whole-genome resequencing data
 
 In this study, we analyzed a total of 326 publicly available whole-genome sequencing data from Brachypodium distachyon accessions sampled around the Mediterranean Basin (Figure 1A; Supplementary file 1-table 1e). Our B. distachyon dataset consisted of 47 samples published by Gordon et al., 2017, 57 samples published by Skalska et al., 2020, 65 samples published by Gordon et al., 2020, 86 samples published by Stritt et al., 2022 and 71 samples published by Minadakis et al., 2023, covering all five genetic clades previously described in this species (Stritt et al., 2022; Minadakis et al., 2023). Each sample was assigned to a genetic clade based on previously published results (Minadakis et al., 2023).
 
-## Data processing
+### Data processing
 
 Raw reads were trimmed using Trimmomatic 0.36 (Bolger et al., 2014) and mapped to the B. distachyon reference genome version 3.0 (International Brachypodium Initiative, 2010) using bowtie2 (Langmead and Salzberg, 2012) and yaha (Faust and Hall, 2012), and TE polymorphisms were identified using the TEPID pipeline (Stuart et al., 2016) and the recently updated TE annotation by Stritt et al., 2020 and Wyler et al., 2022. TE polymorphisms include both TE insertion polymorphisms (TIPs; insertions absent from the reference genome but present in at least one natural accession) and TE absence polymorphisms (TAPs; insertions present in the reference genome but absent from at least one natural accession). The class, superfamily and family of each TE call were assigned based on the TEPID results and the TE annotation from the reference genome. TIPs that were less than 100 base pairs (bp) apart in different samples and assigned to the same TE family were merged.
 
@@ -121,7 +302,7 @@ The observed SNP and TE diversity was first examined using a principal component
 
 Mapping coverage is known to influence false discovery rate (Stritt et al., 2018; Stuart et al., 2016). To investigate the impact of false positive and false negative TE calls on our results, we down sampled the TE dataset to only include TEs that have been called in samples that had at least an average mapping coverage of 20 x. The allele frequencies of TEs present in our high coverage dataset was recalculated only considering samples with at least an average mapping coverage of 20 x. This second TE dataset was then used to check if using a dataset with a higher mapping coverage and presumably a lower false TE calling rate impacted our results.
 
-## Analyses of positive selection
+### Analyses of positive selection
 
 Regions of the genome affected by positive selection were identified using the integrated haplotype score (iHS), a measure of the amount of extended haplotype homozygosity along the ancestral allele relative to the derived allele for a given polymorphic site (Sabeti et al., 2002). iHS was calculated using the SNP dataset, and regions displaying longer haplotypes and hence high iHS were identified in R using the rehh package (Gautier et al., 2017; Gautier and Vitalis, 2012). The threshold to distinguish between regions of high iHS and other regions was selected such that less than 5% of the B. distachyon genome was classified as high iHS regions in each clade (Supplementary file 1-table 1f). Candidate regions under positive selection were defined as all regions that were found to have high iHS in each clade separately.
 
@@ -129,16 +310,16 @@ A first ANCOVA was used to model the number of fixed TE polymorphisms in each cl
 
 The standardized allele frequency of a mutation across populations (XtX) values (Günther and Coop, 2013) were computed for the combined TE and SNP dataset using Baypass version 2.3 (Olazcuaga et al., 2020; Gautier, 2015). The XtX values were used to identify over- and under differentiated TE polymorphisms between clades. A pseudo-observed dataset (POD) of 100,000 SNPs was simulated under the demographic model inferred from the covariance matrix of the SNP dataset. The POD was then used to determine the 97.5% (over-differentiated polymorphisms) and 2.5% (under differentiated polymorphisms) quantiles.
 
-## Genome-environment association analyses
+### Genome-environment association analyses
 
 We identified TE polymorphisms significantly associated with environmental factors using genome-environment association analyses (GEA) following Minadakis et al., 2023. GEAs were run with GEMMA 0.98.5 (Zhou and Stephens, 2012) using the combined TE and SNP vcf file against the following 32 environmental factors extracted by Minadakis et al., 2023: altitude, aridity from March to June, aridity from November to February, annual mean temperature, mean temperature of warmest quarter, mean temperature of coldest quarter, annual precipitation, precipitation of wettest month, precipitation of driest month, precipitation seasonality, precipitation of wettest quarter, precipitation of driest quarter, precipitation of warmest quarter, precipitation of coldest quarter, mean diurnal Range, isothermality, temperature seasonality, maximum temperature of warmest month, minimum temperature of coldest month, temperature annual range, mean temperature of wettest quarter, mean temperature of driest quarter, precipitation from March to June, precipitation from November to February, solar radiation from March to June, solar radiation from November to February, mean temperature between March and June, mean temperature between November and February, maximum temperature between March and June, maximum temperature between November and February, minimum temperature between March and June and minimum temperature between November and February. We applied a False Discovery Rate (FDR, Benjamini and Hochberg, 1995) threshold of 5% to control for false positive rates.
 
-## Age-adjusted frequency spectra and analyses of purifying selection
+### Age-adjusted frequency spectra and analyses of purifying selection
 
 Footprints of purifying selection on TE polymorphisms were first evaluated using folded SFS. An age-adjusted site frequency spectrum (age-adjusted SFS) approach was used to further investigate the impact of purifying selection on retrotransposons while accounting for nonconstant transposition rates. Briefly, the age-adjusted SFS is a summary statistic that describes the difference between the average frequency of TEs at a specific age and the average frequency of neutral sites of the same age (Horvath et al., 2022). Therefore, the TE dataset was sorted by age and split into equally large bins with respect to the number of observations in each age bin. Neutral sites were then randomly down-sampled to match the number of observations in the TE dataset and its age distribution (Horvath et al., 2022).
 
 The difference between the average TE and neutral site frequency, or Δ frequency, was computed for each age bin (Horvath et al., 2022). This method allows for an unbiased comparison between the allele frequencies of TEs and neutral sites, and is robust to transposition rate changes and demographic changes (Horvath et al., 2022). However, the theory behind this method was developed assuming no back mutations and is therefore best suited for retrotransposons, as DNA-transposons can exit an insertion site (Horvath et al., 2022). We used the synonymous SNPs identified with SnpEff as the neutrally evolving sites. However, because estimating the population wide frequency of TEs is more challenging than estimating SNP frequencies, putative biases in frequency estimates need to be assessed before performing age-adjusted SFS analyses. To do so, the SNP dataset was resampled so that the SNP dataset used in the age-adjusted SFS had a frequency distribution that matched the observed TE frequency distribution. The age-adjusted SFS of retrotransposons was contrasted against the age-adjusted SFS of non-synonymous, as well as against high fitness effect SNPs. Therefore, 10,000 non-synonymous and high fitness effect SNPs were randomly selected for each clade to reach approximately the same number of retrotransposon polymorphisms, non-synonymous and high fitness effect SNPs for final comparisons. To estimate the variation in Δ frequency estimates, all age-adjusted SFS were computed 100 times. All Wilcoxon tests and Bonferroni p value corrections were done in R version 4.1.2 (R Development Core Team, 2021).
 
-## Forward simulation
+### Forward simulation
 
 We used SLiM 4.0.1 (Haller and Messer, 2019a; Haller and Messer, 2019b) to run forward simulations and assess the proportion of neutrally evolving retrotransposons and the average selection strength affecting them. The simulations were designed to reflect the population size and demographic history of B. distachyon. The simulated genomic fragment was 1 megabase (Mb) long and included neutral (synonymous) mutations as well as focal mutations that evolved under different selective constraints. The focal mutations were a mix of neutrally evolving mutations and mutations evolving under a constant selection pressure. Therefore, the ratio (r) of focal mutations that evolved neutrally was either 0%, 5%, 10%, 25% or 50%. The scaled selection coefficient (S, defined as Nes, with s the strength of selection and Ne the effective population size) affecting the remaining focal mutations was set at the beginning of the simulation to be either −1,–5, −8,–10, −12,–15, –20 or –50 to cover effectively neutral (0>S ≥ –1), intermediate (–1>S ≥ –10) ,and strongly deleterious (–10>S) selective constraints. The selfing rate was set to 70%, as B. distachyon is a highly selfing species with occasional outcrossing (Stritt et al., 2022; Minadakis et al., 2023). In addition, a high recombination rate was chosen to minimize the effects of linked selection in the small genomic fragment simulated. Simulations for each combination of these two parameters were run 20 times to assess the variation in the resulting age-adjusted SFS. The shape of the resulting age-adjusted SFS was used to narrow down the ratio of neutrally evolving TE polymorphisms. Similarly, the age distribution of the mutations in the oldest bin of the age-adjusted SFS was used to narrow down the strength of selection affecting TE polymorphisms.

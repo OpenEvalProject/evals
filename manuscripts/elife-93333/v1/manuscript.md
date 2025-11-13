@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03r0ha626 Department of Human Genetics, University of Utah Salt Lake City United States
-2. https://ror.org/01an3r305 Department of Computational Biology, University of Pittsburgh Pittsburgh United States
-3. https://ror.org/01an3r305 Department of Biological Sciences, University of Pittsburgh Pittsburgh United States
+1. Department of Human Genetics, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+2. Department of Computational Biology, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
+3. Department of Biological Sciences, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
 
 † Corresponding author
 
@@ -38,7 +38,7 @@ In this study, we test the contribution of compensatory physical coevolution to 
 
 ## Results
 
-## Protein pathways and complexes both have elevated ERC
+### Protein pathways and complexes both have elevated ERC
 
 Protein pathways and complexes are both functional units of the cell; however, complexes are defined by their physical interactions, while pathways may contain many proteins that do not physically interact at all. To investigate the discrepancy between contributions to ERC signal from co-function and physical interaction, we used a dataset of 343 evolutionarily distant yeast species. In total, 332 of the species are Saccharomycotina with 11 closely related outgroup species providing as much evolutionary divergence as between humans to roundworms (Shen et al., 2018). This dataset started with 12,552 orthologous genes, which we parsed into annotated pathways from KEGG (Kanehisa et al., 2023) and YeastPathway (Cherry et al., 2012) and protein complexes from the EMBL-EBI yeast complex portal (Meldal et al., 2019).
 
@@ -46,17 +46,184 @@ ERC was calculated for all pairs of the 12,552 genes. For each pair, the correla
 
 In general, ERC values for pathways and complexes were both high and had similar distributions after accounting for their sizes (Figure 2A). A majority of complexes (346 of 617) and pathways (109 of 125) had mean ERC values significantly greater (p<0.05) than a null distribution consisting of random size-matched protein sets (Figure 2—figure supplement 1). While protein complexes have higher mean ERC scores (median 5.366) than the pathways (median 4.597), the members of a given complex are also co-functional, making interpretation of the relative contribution of physical interactions to the average ERC score difficult.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/93333/elife-93333-fig2-v1.jpg)
+
+**Figure 2.:** (A) The mean ERC values for 617 protein complexes (purple, median 5.366) and 125 cellular pathways (orange, median 4.597) versus the number of members contributing to the score. (B) Heat maps of the ERC scores for each protein pair in the motor proteins pathway (left) and SLIK complex (right). ERC for members of the motor proteins pathways that physically interact was set to NA (gray). (C) Scatter plots of the relative evolutionary rates for the top scoring pair from the motor proteins pathway (orange) and SLIK complex (purple).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93333/elife-93333-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93333/elife-93333-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Median = 0.953.
+
 To illustrate this difficulty at a more granular level, we present two examples, the SLIK protein complex and the motor protein pathway, both of which have significantly high average ERC values (p<0.001; Figure 2B). It is notable that when the ERC values for all physical interactions within the motor protein pathway are removed, it continues to have a significantly high average ERC. While the highest scoring protein pair in the SLIK complex, TAF5 and TAF6, physically interact and have a highly elevated ERC score (in top 1% genome-wide; Figure 2—figure supplement 2), the highest scoring pair in the motor protein pathway, TUB3 and TPM1, also have a highly elevated ERC score but do not physically interact (Figure 2C). This observation, which reflects the global pattern, makes it difficult to determine whether the higher score between TAF5 and TAF6 is indicative of a stronger contribution from physical interaction to the ERC value or whether co-functionality is the main driver. These observations at both the global level and in individual complexes and pathways prompted further investigation into individual complexes to determine whether the physical interactions within a complex have higher average ERC scores.
 
-## ERC does not distinguish physical interactions from nonphysical interactions within a given protein complex
+### ERC does not distinguish physical interactions from nonphysical interactions within a given protein complex
 
 To more directly test whether the signal contributing to the high rate covariation comes from the coevolution of physical interactions, we divided the proteins in a complex into their domains. A domain-level ERC analysis allowed us to directly contrast physically interacting domains with nonphysically interacting domains. To maintain the highest level of confidence in the analyses, we only selected complexes whose members had well-defined domain boundaries and annotated physical interactions between complex members (‘Methods’). This resulted in a dataset of 14 complexes spanning functions from transcription and translation to autophagosome formation. We also added three complexes from Jothi et al., 2006: mitochondrial F1-ATPase, SEC23/24 heterodimer, and exportin CSE1 with substrate (Table 1).
+
+**Table 1.**
+ Evolutionary rate covariation for 17 protein complexes and their physically interacting domains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Complex</th>
+      <th>Complex ERC</th>
+      <th>Complex permutation p-value</th>
+      <th>Physically interacting domain ERC</th>
+      <th>Nonphysically interacting domain ERC</th>
+      <th>Number of proteins (domains)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eukaryotic translation initiation factor 3 core complex (Politis et al., 2015)</td>
+      <td>11.539</td>
+      <td>&lt;0.001</td>
+      <td>8.852</td>
+      <td>11.125</td>
+      <td>6 (14)</td>
+    </tr>
+    <tr>
+      <td>MCM complex (Frigola et al., 2017)</td>
+      <td>12.116</td>
+      <td>&lt;0.001</td>
+      <td>10.283</td>
+      <td>8.000</td>
+      <td>6 (26)</td>
+    </tr>
+    <tr>
+      <td>NUP84 (Shi et al., 2014)</td>
+      <td>3.590</td>
+      <td>0.001</td>
+      <td>1.541</td>
+      <td>4.411</td>
+      <td>5 (9)</td>
+    </tr>
+    <tr>
+      <td>Origin of replication complex (Feng et al., 2021)</td>
+      <td>5.420</td>
+      <td>0.012</td>
+      <td>5.250</td>
+      <td>4.035</td>
+      <td>6 (15)</td>
+    </tr>
+    <tr>
+      <td>PAN1 actin cytoskeleton-regulatory complex (Complex Portal, 2023)</td>
+      <td>6.140</td>
+      <td>0.014</td>
+      <td>4.963</td>
+      <td>4.716</td>
+      <td>3 (13)</td>
+    </tr>
+    <tr>
+      <td>SMC5-6 SUMO ligase complex (Yu et al., 2021)</td>
+      <td>8.813</td>
+      <td>0.004</td>
+      <td>5.153</td>
+      <td>4.110</td>
+      <td>4 (15)</td>
+    </tr>
+    <tr>
+      <td>TREX (Xie et al., 2021)</td>
+      <td>5.368</td>
+      <td>0.02</td>
+      <td>4.157</td>
+      <td>4.129</td>
+      <td>5 (12)</td>
+    </tr>
+    <tr>
+      <td>EXOCYST (Ganesan et al., 2020)</td>
+      <td>12.040</td>
+      <td>&lt;0.001</td>
+      <td>6.221</td>
+      <td>5.974</td>
+      <td>8 (21)</td>
+    </tr>
+    <tr>
+      <td>COMA complex (Fischböck-Halwachs et al., 2019)</td>
+      <td>2.883</td>
+      <td>0.157</td>
+      <td>3.051</td>
+      <td>2.869</td>
+      <td>4 (11)</td>
+    </tr>
+    <tr>
+      <td>SWI/SNF chromatin remodeling complex (Han et al., 2020; Schubert et al., 2013)</td>
+      <td>1.853</td>
+      <td>0.291</td>
+      <td>4.121</td>
+      <td>1.783</td>
+      <td>7 (20)</td>
+    </tr>
+    <tr>
+      <td>CUL8-MMS1-MMS22-CTF4 E3 ubiquitin ligase complex (Mimura et al., 2010)</td>
+      <td>0.9925</td>
+      <td>0.175</td>
+      <td>2.611</td>
+      <td>1.576</td>
+      <td>5 (14)</td>
+    </tr>
+    <tr>
+      <td>GET4-GET5 transmembrane domain recognition complex (Chang et al., 2010)</td>
+      <td>2.501</td>
+      <td>0.17</td>
+      <td>4.569</td>
+      <td>3.302</td>
+      <td>4 (7)</td>
+    </tr>
+    <tr>
+      <td>ATG17-ATG31-ATG29 complex (Ragusa et al., 2012)</td>
+      <td>1.825</td>
+      <td>0.29</td>
+      <td>3.444</td>
+      <td>1.584</td>
+      <td>5 (9)</td>
+    </tr>
+    <tr>
+      <td>ESCRT-I complex (Kostelansky et al., 2007)</td>
+      <td>2.752</td>
+      <td>0.137</td>
+      <td>4.041</td>
+      <td>2.402</td>
+      <td>4 (8)</td>
+    </tr>
+    <tr>
+      <td>Mitochondrial F1 ATPase (Jothi et al., 2006)</td>
+      <td>11.015</td>
+      <td>&lt;0.001</td>
+      <td>4.883</td>
+      <td>5.654</td>
+      <td>3 (7)</td>
+    </tr>
+    <tr>
+      <td>SEC23/24 heterodimer (Jothi et al., 2006)</td>
+      <td>9.321</td>
+      <td>0.004</td>
+      <td>10.530</td>
+      <td>7.754</td>
+      <td>2 (10)</td>
+    </tr>
+    <tr>
+      <td>Exportin CSE1 with cargo (Jothi et al., 2006)</td>
+      <td>10.902</td>
+      <td>&lt;0.001</td>
+      <td>8.871</td>
+      <td>6.326</td>
+      <td>2 (12)</td>
+    </tr>
+  </tbody>
+</table>
+
+_ERC, evolutionary rate covariation._
 
 We split the proteins from the 17 complexes into their annotated domains (‘Methods’) and calculated ERC between all domains in a complex. The average ERC for the physically interacting and nonphysically interacting domains for each complex was compared. Of the 17 complexes, 12 had higher average ERC for the physically interacting than the nonphysically interacting. When we look at an individual complex such as the COMA complex (Figure 3), the physically interacting domains have some of the highest ERC values. However, other physically interacting domains have some of the lowest ERC scores. To classify how often physically interacting domains have greater ERC and the statistical significance of such results, we proceeded with a rank-based analysis.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/93333/elife-93333-fig3-v1.jpg)
 
-**Figure 3.:** Figure 1B with the COMA complex.The table shows the evolutionary rate covariation (ERC) values for each domain pair as labeled in the cartoon on the right. The domain pairs with physical interactions are highlighted in green.
+**Figure 3.:** The table shows the evolutionary rate covariation (ERC) values for each domain pair as labeled in the cartoon on the right. The domain pairs with physical interactions are highlighted in green.
 
 The rank-based method, receiver-operating characteristic (ROC) curve analysis, ranks the domain pairs based on their ERC score and calculates the true positive rate (TPR) and false positive rate (FPR) based on whether each pair is physically interacting (positive) or not (negative). The relationship between TPR and FPR is then plotted on a curve that scores the ability to rank a true positive above a false positive; the curve is summarized by the area under the curve (ROC-AUC). In our analysis, the ROC-AUC gives the proportion of times a random pair of physically interacting domains has a higher ERC score than a random pair of nonphysically interacting domains where a value of 1 would indicate that all physical interactions ranked above all nonphysical interactions.
 
@@ -68,7 +235,7 @@ Of the 17 complexes, 12 had an ROC-AUC > 0.5. Since the random expectation would
 
 We then applied a third test for a general pattern among all 17 complexes. We generated a null ROC-AUC distribution by permuting the location of the positive class along the ranked list for each complex (‘Methods’). We compared the true average ROC-AUC from the 17 complexes (0.596) to the permuted distribution of average ROC-AUCs, which resulted in a permutation p-value of 0.08. The lack of significance in the global permutation test suggests that the global signal for the contribution of physical coevolution to ERC is weak enough that it can be masked by the majority of complexes that show no evidence in favor.
 
-## The power of ERC to detect physically interacting domains is not generalizable in single protein pairs
+### The power of ERC to detect physically interacting domains is not generalizable in single protein pairs
 
 The wide range in ROC-AUCs from the previous analysis suggested the possibility of confounding factors masking the signal. Potential confounders could be members of the complex moonlighting in other pathways (Mani et al., 2015) or core membership versus peripheral membership within the complex itself (Chakraborty et al., 2010). To test for the effect of physical interaction free from these confounders, we broke each complex down and only compared the domains within two proteins at a time. Thus, the variation introduced by these potential confounders will be consistent across all domains between a single protein pair, and comparing only their domains pair-by-pair allows cleaner testing of the contribution of physical coevolution to the ERC signal. This analysis also allowed us to determine the significance of a complex having a physical interaction ranked first. If the ranking is significant, it would indicate a future use case of ERC to predict physical interactions.
 
@@ -94,39 +261,82 @@ These previous studies agreed that compensatory coevolution is not the sole forc
 
 ## Methods
 
-## Calculating ERC
+**Key resources table**
 
-ERC is calculated by correlating RERs between two gene trees using a Pearson correlation. The RER is the rate at which a branch on a gene tree changes compared to the genome-wide average and is calculated as described by Kowalczyk et al., 2019. The method limits comparisons to gene trees that share at least 15 species and requires that all trees have the same topology. Prior to correlation, the RERs are Winsorized, taking the three most extreme values and condensing them to the fourth. This reduces false positives that are due to single outliers skewing the correlation. After calculating the correlation between RERs for each gene pair, the correlation values are Fisher transformed using the equationftERC=arctan(correlation)∗numberofbranches−3
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ERC</td>
+      <td>https://github.com/nclark-lab/erc/; copy archived at Clark and Little, 2023</td>
+      <td></td>
+      <td>See ‘Calculating ERC’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>343 yeast amino acid sequences and trees</td>
+      <td>https://doi.org/10.1016/j.cell.2018.10.023</td>
+      <td>https://doi.org/10.6084/m9.figshare.5854692.v1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Calculating ERC
+
+ERC is calculated by correlating RERs between two gene trees using a Pearson correlation. The RER is the rate at which a branch on a gene tree changes compared to the genome-wide average and is calculated as described by Kowalczyk et al., 2019. The method limits comparisons to gene trees that share at least 15 species and requires that all trees have the same topology. Prior to correlation, the RERs are Winsorized, taking the three most extreme values and condensing them to the fourth. This reduces false positives that are due to single outliers skewing the correlation. After calculating the correlation between RERs for each gene pair, the correlation values are Fisher transformed using the equation
+
+$$
+ftERC=arctan(correlation)∗\sqrt{numberofbranches−3}
+$$
 
 This allows for a direct comparison between gene pairs that do not have the same number of branches contributing.
 
 The full ERC pipeline can be found at https://github.com/nclark-lab/erc/tree/main/physical_interaction_paper.
 
-## Complex and pathway ERC permutation test
+### Complex and pathway ERC permutation test
 
 We took the entire yeast complexome from the EMBL complex portal (Meldal et al., 2019) and curated yeast pathways from KEGG (Kanehisa et al., 2023) and YeastPathway (Cherry et al., 2012). These lists were then compared to our dataset and pared down to complexes/pathways that had greater than four members. This resulted in 617 protein complexes and 125 pathways.
 
 We then ran 1000 permutations to find the significance of the ERC scores between complex/pathway members. The null distribution was generated by sampling the same number of random genes in the complex/pathway from the entire dataset. The average ERC from the complex/pathway was then compared to the null distribution to get a p-value.
 
-## Preparing the protein complexes
+### Preparing the protein complexes
 
 Fourteen complexes were chosen by searching for protein complexes within the EMBL yeast complex portal with crosslink, crosslink/mass spectrometry, or crystallographic data. Three additional complexes were added based on Jothi et al., 2006: mitochondrial F1 ATPase, SEC23/24 heterodimer, and the exportin CSE1P complexed with cargo. The physical interactions were collected from the literature sources for each complex .
 
 Each protein was subdivided into domains by running the amino acid sequence through interpro scan (Jones et al., 2014). New gene trees were generated for each domain using phangorn (Schliep, 2011), and ERC was run to calculate an all-domain-by-all-domain matrix. We generated domain-vs-domain ERC matrices for each of the 17 complexes that were used for all analyses.
 
-## Generating ROC curves
+### Generating ROC curves
 
 ROC curve analysis was performed using the PRROC package (Grau et al., 2015). First, the ERC matrices for each complex were turned into pairwise edge lists with columns [GENEA, GENEB, ERC, class] and ranked by ERC value. The positive class was defined as the physical interactions found in the primary reference for each complex and denoted with a ‘1’. The negative class was any protein domain pair without annotated physical interactions, denoted with a ‘0’.
 
-The statistical significance of the ROC-AUC was determined by a one-tailed Mann–Whitney U test, using the relationship between AUC and U defined byAUC = Un0∗ n1
+The statistical significance of the ROC-AUC was determined by a one-tailed Mann–Whitney U test, using the relationship between AUC and U defined by
+
+$$
+AUC = \frac{U}{n_{0}∗ n_{1}}
+$$
 
 where n0 is the number of nonphysically interacting domains and n1 is the number of physically interacting domains.
 
 ROC-AUC permutations were calculated by randomly shuffling the order of physical interactions within each complex ranked list 1000 times. The permuted AUC was calculated using the same pipeline as described above. The full study analysis was performed by taking the average from each of the 1000 permutations across all complexes.
 
-## Calculating proportional rank of physically interacting domain pairs versus all other domain pairs
+### Calculating proportional rank of physically interacting domain pairs versus all other domain pairs
 
-To test how often ERC ranks the physical interactions higher than nonphysical, we compared each pair of proteins individually, where each protein’s domains were only compared to one other protein’s domains if they shared a physical interaction somewhere along the full protein. For example, in the COMA complex, the domains for OKP1 were only compared to the domains of AME1 because OKP1 does not share a physical interaction with either CTF19 or MCM21. The matrix was then ranked by ERC score. The proportional ranking of the physically interacting domain pair was calculated by:1− 1 − (rank of physical interaction)1 − (total number of pairs)
+To test how often ERC ranks the physical interactions higher than nonphysical, we compared each pair of proteins individually, where each protein’s domains were only compared to one other protein’s domains if they shared a physical interaction somewhere along the full protein. For example, in the COMA complex, the domains for OKP1 were only compared to the domains of AME1 because OKP1 does not share a physical interaction with either CTF19 or MCM21. The matrix was then ranked by ERC score. The proportional ranking of the physically interacting domain pair was calculated by:
+
+$$
+1− \frac{1 − (rank of physical interaction)}{1 − (total number of pairs)}
+$$
 
 A score of 1 indicates the physically interacting domain pair is ranked first. A score of 0 indicates the domain pair with a physical interaction was ranked last. If the protein pair had more than one domain pair that had a physical interaction, the average proportional rank score was taken. The observed complex proportional rank score is the average of each protein’s score .
 

@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.33845.001 Early vertebrate embryos possess cells with the potential to generate all embryonic cell types. While this pluripotency is progressively lost as cells become lineage restricted, Neural Crest cells retain broad developmental potential. Here, we provide novel insights into signals essential for both pluripotency and neural crest formation in Xenopus . We show that FGF signaling controls a subset of genes expressed by pluripotent blastula cells, and find a striking switch in the signaling cascades activated by FGF signaling as cells lose pluripotency and commence lineage restriction. Pluripotent cells display and require Map Kinase signaling, whereas PI3 Kinase/Akt signals increase as developmental potential is restricted, and are required for transit to certain lineage restricted states. Importantly, retaining a high Map Kinase/low Akt signaling profile is essential for establishing Neural Crest stem cells. These findings shed important light on the signal-mediated control of pluripotency and the molecular mechanisms governing genesis of Neural Crest.
+Early vertebrate embryos possess cells with the potential to generate all embryonic cell types. While this pluripotency is progressively lost as cells become lineage restricted, Neural Crest cells retain broad developmental potential. Here, we provide novel insights into signals essential for both pluripotency and neural crest formation in Xenopus. We show that FGF signaling controls a subset of genes expressed by pluripotent blastula cells, and find a striking switch in the signaling cascades activated by FGF signaling as cells lose pluripotency and commence lineage restriction. Pluripotent cells display and require Map Kinase signaling, whereas PI3 Kinase/Akt signals increase as developmental potential is restricted, and are required for transit to certain lineage restricted states. Importantly, retaining a high Map Kinase/low Akt signaling profile is essential for establishing Neural Crest stem cells. These findings shed important light on the signal-mediated control of pluripotency and the molecular mechanisms governing genesis of Neural Crest.
 
 ## Introduction
 
@@ -28,15 +28,23 @@ In this study, we investigate the requirement for FGF signaling in the transient
 
 ## Results
 
-## FGF signaling is required for proper gene expression in pluripotent blastula cells
+### FGF signaling is required for proper gene expression in pluripotent blastula cells
 
 Because FGF signaling is known to play a role in the establishment of the neural crest cell population at the neural plate border in Xenopus, and is also linked to the control of pluripotency in mESCs, we sought to determine if these signals were required in the pluripotent animal pole cells of blastula stage embryos. Consistent with such a role, FGF receptor 4 (FGFR4) is expressed throughout the animal hemisphere of blastula stage embryos, where the pluripotent stem cells reside. By gastrula stages (St. 12), FGFR4 expression is heightened in the neural plate border region, and by neurula stages (St. 15) is strongly enriched in neural crest forming regions of the embryo (Figure 1a). The expression pattern of FGFR4 at gastrula and neurula stages has been previously described (Hongo et al., 1999; Golub et al., 2000; Lea et al., 2009), and its expression in neural crest forming regions at neurula stages has been reported to overlap with that of Snail2 (Golub et al., 2000) in agreement with our unpublished observations.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/33845/elife-33845-fig1-v2.jpg)
+
+**Figure 1.:** (A) In situ hybridization examining FGFR4 expression in wildtype Xenopus embryos collected at blastula (stage 9, lateral view, animal pole up), late gastrula (stage 12, dorsal view, anterior up), and mid-neurula (stage 15, dorsal view, anterior up) stages. Expression is seen in the pluripotent cells of the animal hemisphere at blastula stages and in the neural plate and neural crest forming regions at gastrula and neurula states. (B) Animal pole explant assay examining FGFR4 expression. Explants were cultured alongside sibling embryos and collected at blastula (stage 9), late gastrula (stage 12), and mid-neurula (stage 15) stages. (C) In situ hybridization examining Vent2, Id3, Myc, and FoxD3 expression in blastula stage (stage 9) embryos injected with dominant-negative FGFR4 (dnFGFR4). Asterisk denotes injected side, marked by staining of the lineage tracer β-galactosidase (red). Dominant-negative FGFR4 blocks expression of Vent2 and Id3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33845/elife-33845-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B). In situ hybridization examining FoxD3, Sox9, and Snail2 expression in mid-neurula stage (stage 16) embryos injected with dnFGFR4 (A) or dnFGFR1 (B). Asterisk denotes injected side, marked by staining of the lineage tracer β-galactosidase (red). Blocking FGF signaling using dnFGFR4 causes a loss of FoxD3, Sox9, and Snail2 expression. (C) Quantification of effects on FoxD3 expression in embryos injected with dnFGFR4 or dnFGFR1 scored for loss of neural crest/exclusion of injected cells from the neural crest, normalized to control injections. (ns, not significant; **p<0.01).
 
 To determine whether FGFR4 expression correlates with the stem cell state, we utilized explants of pluripotent blastula stem cells (‘animal caps’). At blastula stages, these explants are pluripotent and can be induced to give rise to any embryonic cell type. The pluripotency of these cells is transient in culture, however, as it is in the developing embryo. As explants age from blastula to gastrula then neurula stages, they lose pluripotency and become lineage restricted; in the absence of exogenous signals, they will transit to an epidermal state. We therefore examined expression of FGFR4 in these explants as they aged. We found that at blastula stages, when explanted cells are pluripotent, they strongly express FGFR4 (Figure 1b), however, as these cells transit to an epidermal state, FGFR4 expression is lost. This expression pattern is consistent with a role for this receptor in events prior to the onset of lineage restriction. However, although FGFR4 is the most abundant FGFR in these cells (unpublished data), other FGFRs are also expressed (Lea et al., 2009) and thus could play roles in control of pluripotency and lineage restriction.
 
 In order to determine whether FGF signaling plays a role in pluripotency and lineage restriction in Xenopus, we used a dominant-negative inhibitory receptor to carry out loss of function studies. We chose a dominant negative strategy because we were interested in the overall role of FGF-mediated signals, rather than role of any specific receptor. While we mainly deployed a dominant negative FGFR4 for these studies, dominant negative receptors frequently inhibit the activity of other related receptors and its effects should therefore be interpreted as effects on FGF signaling in general, not on FGFR4 signaling specifically. Embryos expressing a dominant-negative FGFR4 (dnFGFR4) were cultured to blastula stages and examined by in situ hybridization for genes expressed by pluripotent animal pole cells. We found that blocking FGF signaling led to a significant reduction in the expression of both Vent2 (98%, n = 186) and Id3 (96%, n = 84), but did not alter expression of other factors such as Myc or FoxD3 (Figure 1c). The requirement for FGF signaling for proper gene expression in pluripotent animal pole cells suggests an essential role for these signals in controlling the developmental state of these cells. We similarly found that cells expressing dnFGFR4 were deficient in their ability to give rise to neural crest cells in whole embryos, as assayed by expression of FoxD3, Sox9 and Snail2 (Figure 1—figure supplement 1). By contrast, we found that expression of a dnFGFR1 did not similarly lead to loss of neural crest formation, suggesting that these two dominant negative receptors have distinct activities. We thus utilized dnFGFR4 to block FGF signaling for subsequent experiments, while recognizing that it may block FGF receptors other than FGFR4.
 
-## Blocking FGF signaling in pluripotent blastula cells interferes with the adoption of an epidermal state
+### Blocking FGF signaling in pluripotent blastula cells interferes with the adoption of an epidermal state
 
 Since blocking FGF signaling inhibited expression of Vent2 and Id3 in pluripotent blastula cells, we hypothesized that FGF signaling might be required for the pluripotency of these cells, and/or for cells to exit pluripotency and transit to a restricted state. At blastula stages, when cells are pluripotent, animal pole explants express core pluripotency markers such as Sox2/3, and the Oct4 homologue, Oct60 (pou5F3.3). These genes are subsequently down-regulated as explants age and become restricted to an epidermal state. To test the requirement for FGF signaling in this process, embryos injected with dnFGFR4 were allowed to develop until blastula stages, when animal cap explants were isolated, and then cultured until sibling embryos reached blastula (St.9), gastrula (St.11) or neural plate (St.13) stages. We found that explants blocked for FGF signaling exhibited prolonged, low level expression of Sox3 (95%, n = 97), and poorly expressed the epidermal marker Epidermal Keratin (EPK) (90%, n = 62), suggesting that FGF signaling was essential for pluripotent blastula cells to transit to an epidermal state (Figure 2a,c). Since Sox3 expression is characteristic of both pluripotent cells and neuronal progenitor cells, we investigated whether explants expressing dnFGFR4 were being retained in a pluripotent state or instead were being biased toward a neuronal progenitor fate. We found that Stage 13 explants blocked for FGF signaling do not express the pluripotency factor Oct60 (pou5F3.3), suggesting that they are not retaining pluripotency (Figure 2b). These explants do weakly express the definitive neural marker Nrp1 (94%, n = 85), suggesting that they may be biased toward a neuronal progenitor state. However, the explants do not express levels of either Sox3 or Nrp1 associated with chordin-mediated neural induction, indicating that they are not adopting a definitive neural state (Figure 2c,d). It is possible that, as previously reported, FGF signals are later involved in the commitment of these cells to a neuronal state in response to neural-inducing cues (Hongo et al., 1999). Our experiments do not address this question.
 
@@ -44,25 +52,53 @@ Since blocking FGF signaling inhibited expression of Vent2 and Id3 in pluripoten
 
 **Figure 2.:** (A–D) In situ hybridization examining expression of Epidermal Keratin (EPK) (A) Oct60 (B) Sox3 (C) or Nrp1 (D) in animal pole explants injected with dnFGFR4 or chordin for phenotypic comparison. Explants were cultured alongside sibling embryos and collected at blastula (stage 9), midgastrula (stage 11), and early neurula (stage 13) stages. Blocking FGF signaling interferes with EPK expression and mildly induces Nrp1 expression.
 
-## Cells progress from a high pERK state to a high pAkt state as they transit from the pluripotent to the lineage-restricted state
+### Cells progress from a high pERK state to a high pAkt state as they transit from the pluripotent to the lineage-restricted state
 
 Like other tyrosine kinase receptors, FGF receptors can activate multiple downstream signaling cascades upon ligand binding, including the Ras/Map Kinase cascade that leads to Erk phosphorylation and activation, and the PI3 Kinase cascade that leads to Akt phosphorylation and activation (Figure 3a). Both of these signaling cascades have previously been implicated in Neural Crest development (Stuhlmiller and García-Castro, 2012b; Pegoraro et al., 2015). Given our findings that FGF signaling plays an essential role in pluripotent blastula cells, we wished to determine which signaling cascades were activated by FGF signaling in these cells during the transition from pluripotency to lineage restriction.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/33845/elife-33845-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic representation of the FGF receptor and select signaling cascades activated downstream, highlighting the Ras/MAPK (Erk) and PI3K/Akt cascades. (B) Western blot of lysates from animal pole explants cultured alongside sibling embryos and collected at blastula (stage 9), midgastrula (stage 11), and early neurula (stage 13) stages to examine levels of phosphorylated and unphosphorylated Erk1/2 and Akt. Pluripotent cells show high pErk while lineage restricted cells display high pAkt. (C) Western blot of lysates from animal pole explants injected with dnFGFR4. Explants were cultured alongside sibling embryos and collected at blastula (stage 9) and early neurula (stage 13) stages to examine levels of phosphorylated and unphosphorylated Erk1/2 and Akt. Both pErk and pAkt are blocked by dnFGFR4. (D) Animal pole explant assay examining Epidermal Keratin (EPK) and Trim29 expression in explants injected with either dnFGFR4 or dominant- negative PI3K (dnPI3K) or treated with Meki (RDEA119) and collected alongside sibling embryos at early neurula stages (stage 13–14). Meki treatment phenocopies dnFGFR4.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33845/elife-33845-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Western blot of lysates from animal pole explants treated with DMSO, Meki, or PI3Ki. Stage 9 (A) or Stage 13 (B) explants were cultured in vehicle or inhibitor treated media and collected after 0, 10, or 20 min to examine levels of phosphorylated and unphosphorylated Erk1/2 and Akt. Meki blocks pErk but not pAkt, while PI3Ki blocks pAkt but not pErk.
 
 To assess the activation of these two cascades, we utilized antibodies that detect the phosphorylated, active, forms of Map Kinase and Akt. Animal pole explants were isolated at blastula stages and collected at blastula, gastrula, or early neural plate stages for western analysis. Unexpectedly, we detected a striking transition in cascade activation as cells transited from a pluripotent to a lineage-restricted state. Pluripotent cells of blastula-stage explants exhibited robust phosphorylated-Erk (pErk), which was lost as cells became lineage-restricted (Figure 3b). By contrast, pluripotent cells showed low or undetectable phosphorylated-Akt (pAkt), but activation of this kinase increased as cells lost pluripotency and transited to an epidermal state. Both the early pErk signal and the later pAkt signal were blocked in explants expressing dnFGFR4, confirming that both were FGF signaling-dependent (Figure 3c).
 
 Because the above findings implicate two different signaling cascades in FGF-mediated regulation of pluripotency and lineage restriction, and because these signaling cascades appear to play temporally distinct roles in this transition, we wished to determine the contributions that each pathway makes to the developmental potential of these cells. To address this, we utilized reagents that can block the activation of each pathway. Map Kinase signaling was blocked using a chemical inhibitor of the upstream kinase Mek, RDEA119 (Iverson et al., 2009), (‘Meki’) or using a dominant negative form of Raf1 (‘dnRaf’). Activation of Akt signaling was blocked by over-expressing a dominant-negative PI3 Kinase subunit (Δp85, ‘dnPI3K’) (Carballada et al., 2001; Nie and Chang, 2007) or using a chemical inhibitor of PI3 kinase, LY294 or Wortmannin (‘PI3Ki’). We confirmed that these inhibitors blocked the activation of its respective cascade without interfering with the other pathway (Figure 3—figure supplement 1a,b). We then compared the effects of each of these inhibitors to dnFGFR4 in animal pole explants. We found that blocking Map Kinase signaling phenocopied the effects of blocking FGF signaling, preventing cells from transiting to an epidermal state, as evidenced by a loss of two different epidermal markers EPK (85%, n = 56) and Trim29 (100%, n = 25) (Figure 3d). By contrast, blocking PI3 Kinase/Akt signaling with dnPI3K or with the chemical inhibitor LY294 had no effect on EPK or Trim29 expression (Figure 3d and not shown). These findings reveal a differential requirement for Map Kinase and PI3 Kinase/Akt signaling during the transition from a pluripotent to an epidermal state.
 
-## PI3K/AKT signaling, but not MAPK signaling, is required for pluripotent blastula cells to adopt a neural fate
+### PI3K/AKT signaling, but not MAPK signaling, is required for pluripotent blastula cells to adopt a neural fate
 
 Given the strikingly different responses of pluripotent animal pole cells to blocking Map Kinase vs. PI3 Kinase/Akt signaling with respect to adopting an epidermal state, we wished to examine the role these pathways play in adopting an alternative ectoderm-derived state, neuronal progenitor cells. It is well established that blocking BMP signaling with BMP antagonists such as Chordin directs cells to form neural plate rather than epidermis (Sasai et al., 1995; Zimmerman et al., 1996). We therefore examined the effects of blocking Map Kinase or PI3 Kinase/Akt on Chordin-mediated neural induction. Chordin expressing animal pole explants, but not control explants, strongly express the neuronal progenitor markers Sox2 and Sox3 at Stage 13, and the definitive neural marker Nrp1 at stage 18. Inhibition of the PI3 Kinase/Akt cascade prevented cells from adopting a neuronal state in response to Chordin, as evidenced by decreased expression of Sox2 (92%, n = 26), Sox3 (100%, n = 28), and Nrp1 (96%, n = 28) (Figure 4b). Similar results were obtained by blocking the PI3 Kinase/Akt cascade with the PI3 Kinase inhibitors LY294 and Wortmannin (Figure 4—figure supplement 1b,c). By contrast, blocking the Map Kinase cascade with RDEA119 did not interfere with expression of Sox3 (93%, n = 27) or Nrp1 (100%, n = 25), suggesting that this pathway is not essential for neural fates (Figure 4a). Similarly, blocking the Map Kinase cascade using a dominant-negative Raf1 (dnRaf) did not block Chordin-mediated neural induction (Figure 4—figure supplement 1a). Interestingly, we found that RDEA119 could interfere with Chordin-mediated Sox2 expression in response to low levels of Chordin (92%, n = 26) but not high (Figure 4a and not shown).
 
-## MAPK signaling and PI3K/Akt signaling are differentially required for transit to non-ectodermal lineages
+![Figure 4.](https://cdn.elifesciences.org/articles/33845/elife-33845-fig4-v2.jpg)
+
+**Figure 4.:** (A–B) Animal pole explant assay examining Sox2, Sox3, and Nrp1 expression in Chordin (Chd) induced animal cap explants treated with Meki (RDEA119) (A) or injected with dnPI3K (B). Explants were cultured alongside sibling embryos and collected at early neurula stages (stage 13) for Sox2/3 or late neurula stages (stage 18) for Nrp1. Meki treatment does not affect Chordin-mediated neural induction whereas dnPI3K blocks induction of all three neural markers.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33845/elife-33845-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) Animal pole explant assay examining Sox2, Sox3, and Nrp1 expression in Chordin (Chd) induced animal cap explants injected with dnRaf (A) or treated with PI3Ki (L) (B) or PI3Ki (W) (C). Explants were cultured alongside sibling embryos and collected at early neurula stages (stage 13) for Sox2/3 or late neurula stages (stage 18) for Nrp1. PI3Ki (L) and PI3Ki (W) phenocopy the effects of dnPI3K on Chordin-mediated neural induction.
+
+### MAPK signaling and PI3K/Akt signaling are differentially required for transit to non-ectodermal lineages
 
 Pluripotent animal pole cells can adopt mesodermal and endodermal fates, in addition to ectoderm-derived fates, under appropriate inducing conditions. Given our findings that Map Kinase and PI3 Kinase/Akt signaling are differentially required for these cells to transit to epidermal versus neuronal progenitor states, we further investigated the roles of these pathways in the formation of mesoderm and endoderm. The TGF-beta signaling pathway plays a central role in the formation of these two germ layers, and the ability of the ligand activin to induce mesodermal and endodermal states in a dose-dependent manner has been well documented (Green and Smith, 1990; Thomsen et al., 1990; Hudson et al., 1997). Treatment of control animal pole explants with low levels of activin is sufficient to promote a mesodermal state, as evidenced by high levels of Xbra and MyoD. We found that blocking activation of Map Kinase in these explants led to a complete loss of this mesodermal gene expression (100%, n = 60), as did blocking PI3 Kinase/Akt signaling (98%, n = 56), demonstrating that both of these signaling pathways play essential roles in the adoption of a mesodermal fate (Figure 5a), which is consistent with previous findings (Umbhauer et al., 1995; Carballada et al., 2001).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/33845/elife-33845-fig5-v2.jpg)
+
+**Figure 5.:** (A–B) Animal pole explant assay examining expression of Xbra and MyoD (A) or Endodermin and Sox17 (B) in explants cultured with or without activin after treatment with Meki (RDEA119) or injection with dnPI3K. Explants were cultured alongside sibling embryos and collected at midgastrula stages (stage 11.5) for Xbra, Endodermin, and Sox17 expression and midneurula stages (stage 15/16) for MyoD expression. Blocking either cascade interferes with mesoderm formation whereas only MAPK signaling is required for Endodermin induction.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33845/elife-33845-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Animal pole explant assay examining expression of Endodermin in explants cultured with or without activin after injection with dnRaf or treatment with PI3Ki (L) (LY294) or PI3Ki (W) (Wortmannin). Explants were cultured alongside sibling embryos and collected at midgastrula stages (stage 11.5). MAPK signaling is required for Endodermin induction.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/33845/elife-33845-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Blocking MAPK activation inhibits Snail1, FoxD3, Zic1, and Sox2 expression while blocking PI3K activation increases Zic2, Sox2, Sox3, Sox11, Sox17, and MyoD expression. (*p<0.05; **p<0.01).
+
 Treating pluripotent animal pole cells with higher doses of activin can induce endoderm formation, accompanied by expression of the primitive endodermal markers Endodermin and Sox17. We found that blocking PI3 Kinase/Akt activation had no effect on activin-mediated induction of Endodermin or Sox17 in this assay, indicating that this signaling cascade is not essential for transit to an endodermal state (Figure 5b; Figure 5—figure supplement 1a). By contrast, inhibition of Map Kinase activation in these explants led to a loss of Endodermin expression (88%, n = 58), suggesting an inability to adopt a proper endodermal fate. Interestingly, expression of Sox17 was increased following RDEA119 treatment (100%, n = 25), showing differential regulation of these two key markers of primitive endoderm (Figure 5b; Figure 5—figure supplement 1a).
 
-## Prolonged MAPK activation alters the timing of pluripotency gene expression
+### Prolonged MAPK activation alters the timing of pluripotency gene expression
 
 A synthesis of the above findings indicates that blastula animal pole cells cannot adopt epidermal, mesodermal, or endodermal states when Map Kinase signaling is blocked, and are partially impaired in transiting to a neuronal progenitor state. We interpret these findings to mean that Map Kinase signaling is essential to the pluripotency of these cells. Consistent with this interpretation, qRT-PCR analysis of blastula stage explants treated with RDEA119 showed a significant reduction in expression of the pluripotency and blastula stage markers Snail1, FoxD3, Zic1, and Sox2, compared to control explants (Figure 5—figure supplement 2a). By contrast, while inhibition of PI3 Kinase/Akt signaling prevents transit to a neural or mesodermal state, it has no effect on the ability of pluripotent blastula cells to form endoderm or epidermis. Thus, this signaling pathway appears to be essential for transit to a subset of restricted states . To further understand the role of PI3 Kinase/Akt signaling in these cells, we examined the changes in gene expression elicited by treatment of explants aged to stage 13 in the presence of the PI3 Kinase inhibitor LY294. We found that when PI3 Kinase/Akt activation was blocked, a diverse set of lineage markers were up-regulated, including Zic2, Sox3, Sox17, and MyoD, potentially impeding adoption of certain lineage fates (Figure 5—figure supplement 2b). Importantly, the differential requirements for these two signaling cascades correlates with their temporal activation in animal pole cells, with high levels of pErk and low/absent pAkt characterizing pluripotent cells, whereas a transition to high pAkt and low pErk accompanies lineage restriction.
 
@@ -74,11 +110,23 @@ These findings suggest that prolonged Map Kinase signaling might interfere with 
 
 We also examined the effects of prolonged Map Kinase activity on the ability of blastula animal pole cells to adopt mesodermal or endodermal fates. We found that activation of the Map Kinase cascade alone also caused low-level expression of mesodermal markers (89%, n = 28), consistent with previous reports (LaBonne et al., 1995), and did not interfere with activin-mediated mesoderm formation. Interestingly, activating Map Kinase did interfere with transit to an endodermal state in response to high activin (81%, n = 27) (Figure 6c). By contrast, premature activation of PI3 Kinase/Akt activity (achieved by expressing a constitutively active p110 subunit of PI3 Kinase (p110caax) [Carballada et al., 2001; Nie and Chang, 2007]) did not affect the ability of blastula stem cells to transit to either a mesodermal or endodermal lineage in response to activin treatment, and indeed caused low-level activation of the mesodermal marker Xbra in the absence of activin (50%, n = 30) (Figure 6c).
 
-## Reprograming blastula stem cells to a neural crest state leads to prolonged MAPK activation at the expense of PI3K activity
+### Reprograming blastula stem cells to a neural crest state leads to prolonged MAPK activation at the expense of PI3K activity
 
 We recently proposed that Neural Crest cells arise via retention of the circuitry of pluripotency possessed by their blastula ancestors (Buitrago-Delgado et al., 2015; Hoppler and Wheeler, 2015). Intriguingly, our current work indicates that the pluripotent state is characterized by high Map Kinase activity, and low Akt signaling. This raises the important question of whether FGF-mediated activation of Map Kinase activity may contribute to establishment of the Neural Crest state in pluripotent blastula cells, protecting them from lineage restriction, and similarly if activation of PI3 Kinase/Akt might oppose formation of the Neural Crest. To test this, we first asked if Map Kinase activity was required for establishment of the neural crest stem cell population at the neural plate border. When Map Kinase activation was blocked by expressing dnRaf, expression of neural crest markers FoxD3, Sox9 and Snail2 was lost. By contrast, blocking PI3 Kinase activation using the inhibitor Wortmannin did not significantly alter neural crest factor expression, despite completely blocking Akt activation (Figure 7—figure supplement 2a,d).
 
 To further examine the link between establishment of the Neural Crest state and the balance between the Map Kinase and PI3 Kinase/Akt cascades, we asked if reprogramming cells to a Neural Crest state would alter the activity of these two signaling cascades. Animal pole explants can be reprogramed to a Neural Crest state by forced expression of the neural plate border factors Pax3 and Zic1 (Monsoro-Burq et al., 2005; Hong and Saint-Jeannet, 2007). Strikingly, high levels of pErk activity were maintained in these explants through stages when control explants are undergoing lineage restriction and adopting an epidermal state (Figure 7a). Similarly, reprogramed explants did not exhibit the increase in pAkt characteristic of the lineage-restricted state. These findings demonstrate that pluripotent blastula cells and Neural Crest cells share a common signature with respect to the activity of these two signaling cascades. Establishing a Neural Crest state was also accompanied by sustained expression of FGFR4 (96%, n = 27) (Figure 7—figure supplement 1a).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/33845/elife-33845-fig7-v2.jpg)
+
+**Figure 7.:** (A) Western blot of lysates from Pax3-GR/Zic1-GR injected animal pole explants. Explants were cultured alongside sibling embryos and collected at blastula (stage 9) and early neurula (stage 13) stages to examine levels of phosphorylated and unphosphorylated Erk1/2 and Akt. Reprograming to a neural crest state retains the activities of these pathways characteristic of pluripotent blastula cells. (B–C) Animal cap explant assay examining Sox9 and FoxD3 expression in Pax3GR/Zic1-GR injected explants treated with Meki (RDEA119) (B) or co-injected with Act-PI3K (C). Explants were cultured alongside sibling embryos and collected at late neurula stages (stage 18). Blocking MAPK activation or activating PI3K/Akt blocks expression of neural crest markers.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/33845/elife-33845-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Animal pole explant assay examining FGFR4 expression in animal cap explants injected with Pax3-GR/Zic1-GR. Explants were cultured alongside sibling embryos and collected at blastula (stage 9), midgastrula (stage 12), and midneurula (stage 15) stages. Reprogramming to a neural crest state causes sustained FGFR4 expression.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/33845/elife-33845-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A–D). In situ hybridization examining FoxD3, Sox9, and Snail2 expression in mid-neurula stage (stage 15) embryos injected with dnRaf (A) or treated with the PI3Ki (Wortmannin) (C). Western Blot analyses were conducted with stage nine animal cap explants dissected from dnRaf injected sibling embryos (B) or with mid-neurula stage (stage 15) whole embryos treated with PI3Ki (D). Asterisk denotes injected side, marked by staining of the lineage tracer β-galactosidase (red). Blocking MAPK activation causes a loss of FoxD3, Sox9, and Snail2 expression.
 
 The above findings suggest that FGF signaling, and the differential utilization of Map Kinase and PI3 Kinase/Akt activation in pluripotent vs. lineage restricted cells, could play a role in the retention of stem cell attributes underlying the establishment of the Neural Crest state. We hypothesized that if this were the case, then either blocking Map Kinase signaling or prematurely activating PI3 Kinase/Akt might block formation of the Neural Crest. To test this, we again used Pax3/Zic1-mediated reprogramming to establish the Neural Crest state in explants, which leads to robust expression of the Neural Crest markers in these cells at stage 18 (Figure 7b,c). Notably, blocking Map Kinase signaling in these explants with RDEA119 interfered with establishing a Neural Crest state, as evidenced by reduced expression of both FoxD3 (88%, n = 26) and Sox9 (85%, n = 27) (Figure 7b,c). Similar results were found following forced activation of PI3 Kinase/Akt using Act-PI3K (FoxD3: 81%, n = 26; Sox9: 81%, n = 27). These findings provide strong evidence that retention of blastula-stage potential in the cells that will ultimately become the Neural Crest is controlled, at least in part, by retaining the high Map Kinase:low PI3 Kinase/Akt signaling profile essential to the pluripotency of blastula animal pole cells (Figure 8).
 
@@ -104,24 +152,84 @@ This correlation suggested that retaining a signature of high Map Kinase and low
 
 ## Materials and methods
 
-## Embryological methods
+### Embryological methods
 
 Wildtype Xenopus laevis embryos were collected at the indicated stages and processed for in situ hybridization as previously described (LaBonne and Bronner-Fraser, 1998). Manipulated whole embryos were microinjected into 1–2 cells at the 2–8 cell stage with mRNA (Ambion, mMessage mMachine SP6 Transcription Kit) as previously described (Lee et al., 2012) and collected at blastula stages (stage 9) or midneurula stages (stage 15–17) for in situ hybridization. Inhibitor-treated whole embryos were treated with the chemical inhibitor Wortmannin (Sigma) at a final concentration of 750 nM and collected at early neurula stages (stage 15) for in situ hybridization. Animal cap explants were manually dissected from wildtype or manipulated stage 9 embryos and aged to the denoted stage in 1xMMR. Manipulated embryos used for these animal cap dissections include embryos injected into both cells at the two-cell stage with the denoted mRNA and embryos treated at the 2–4 cell stage with a specific chemical inhibitor. For Map Kinase inhibition (Meki), the highly specific Mek1/2 chemical inhibitor Refametinib (RDEA119, Selleckchem) was used. Fresh RDEA119 (50–100 μM) was added to the culture media of explants upon dissection from RDEA119 treated embryos. For PI3 Kinase inhibition (PI3Ki), the chemical inhibitors LY294 (Sigma) and Wortmannin (Sigma) were added to the culture media of explants dissected from stage 9 embryos. LY294 was used at a final concentration of 20 μM and Wortmannin was used at a final concentration of 100 nM. Both of these inhibitors can have off-target effects when used at higher doses. Pax3-GR and Zic1-GR explants were dissected from injected embryos treated with 15 μM Dexamethasone (Sigma) at stage 9 as previously described (Buitrago-Delgado et al., 2015). All results are representative of a minimum of three independent experiments.
 
-## RNA isolation, CDNA synthesis, and qRT-PCR
+### RNA isolation, CDNA synthesis, and qRT-PCR
 
 RNA isolation, cDNA synthesis, and qPCR was performed as previously described (Buitrago-Delgado et al., 2015). Primers used include FoxD3, MyoD, ornithine decarboxylase (ODC), Sox2, Sox3, Sox11, Snail1, Sox17, Zic1, and Zic2 (sequences below). Expression was normalized to ODC and fold change calculated using ΔΔCT relative to stage 9 or stage 13 control samples. Represented is the mean of three independent biological replicates, with error bars depicting the standard error of the mean (SEM). An unpaired, two-tailed t-test was used to determine significance.
 
-GeneForwardReverseFoxD3TCC TCT GAA CTG ACC AGG AATGC CGA CAC CCC AAT AAT GTMyoDCTG CTC CGA CGG CAT GAATCC CAA GTC TCA CGT CAT TGODCTGA AAA CAT GGG TGC CTA CATGC CAG TGT GGT CTT GAC ATSox2TCA CCT CTT CTT CCC ATT CGCGA CAT GTG CAG TCT GCT TTSox3CAC AAC TCG GAG ATC AGC AATCG TCG ATG AAG GGT CTT TTSox11GAA CTT CAC CCA GCA GAA CCCCC TCG CTA CAA GAG TCC AASox17GCA AGA TGC TTG GCA AGT CGGCT GAA GTT CTC TAG ACA CASnail1AAG TCT CCC ATC AGC CCT TCAGT CTT GCC CCC TTC ATC TTZic1CCT GGA TGT GGC AAA GTC TTGTC ACA GCC TTC AAA CTC GCZic2AAT CCA CAA GAG GAC TCA CAGTG TGC ACG TGC ATG TGC TT
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FoxD3</td>
+      <td>TCC TCT GAA CTG ACC AGG AA</td>
+      <td>TGC CGA CAC CCC AAT AAT GT</td>
+    </tr>
+    <tr>
+      <td>MyoD</td>
+      <td>CTG CTC CGA CGG CAT GAA</td>
+      <td>TCC CAA GTC TCA CGT CAT TG</td>
+    </tr>
+    <tr>
+      <td>ODC</td>
+      <td>TGA AAA CAT GGG TGC CTA CA</td>
+      <td>TGC CAG TGT GGT CTT GAC AT</td>
+    </tr>
+    <tr>
+      <td>Sox2</td>
+      <td>TCA CCT CTT CTT CCC ATT CG</td>
+      <td>CGA CAT GTG CAG TCT GCT TT</td>
+    </tr>
+    <tr>
+      <td>Sox3</td>
+      <td>CAC AAC TCG GAG ATC AGC AA</td>
+      <td>TCG TCG ATG AAG GGT CTT TT</td>
+    </tr>
+    <tr>
+      <td>Sox11</td>
+      <td>GAA CTT CAC CCA GCA GAA CC</td>
+      <td>CCC TCG CTA CAA GAG TCC AA</td>
+    </tr>
+    <tr>
+      <td>Sox17</td>
+      <td>GCA AGA TGC TTG GCA AGT CG</td>
+      <td>GCT GAA GTT CTC TAG ACA CA</td>
+    </tr>
+    <tr>
+      <td>Snail1</td>
+      <td>AAG TCT CCC ATC AGC CCT TC</td>
+      <td>AGT CTT GCC CCC TTC ATC TT</td>
+    </tr>
+    <tr>
+      <td>Zic1</td>
+      <td>CCT GGA TGT GGC AAA GTC TT</td>
+      <td>GTC ACA GCC TTC AAA CTC GC</td>
+    </tr>
+    <tr>
+      <td>Zic2</td>
+      <td>AAT CCA CAA GAG GAC TCA CA</td>
+      <td>GTG TGC ACG TGC ATG TGC TT</td>
+    </tr>
+  </tbody>
+</table>
 
-## Activin treatment of animal cap explants
+### Activin treatment of animal cap explants
 
 Animal cap explants were isolated from control or manipulated blastula (stage 9) embryos. Following dissection, explants were cultured with recombinant Activin protein (R and D Systems) at a final concentration of 20–40 ng/mL for mesoderm induction and 100 ng/mL for endoderm induction in 1xMMR supplemented with 0.1% BSA as a carrier. Explants were cultured to midgastrula and midneurula stages (stage 11.5–16) following mesoderm induction and midgastrula stages (stage 11.5) following endoderm induction and processed for in situ hybridization.
 
-## Western blot analysis
+### Western blot analysis
 
 For western blot analyses, animal cap explants (10–20 explants) or whole embryos (five embryos) were lysed using a fresh 50 mM HEPES lysis buffer containing 5 mM EDTA, 2 mM Sodium Orthovanadate, 20 mM Sodium Fluoride, 10 mM β-Glycerophosphate, 1 mM Sodium Molybdate dihydrate, PhosStop phosphatase inhibitors (Roche), and protease inhibitors described previously (Lee et al., 2012). Animal cap explants were dissected from either wildtype or manipulated blastula (stage 9) embryos and cultured in 1XMMR until the indicated stage and collected. Stage 9 explants were collected 1 hr post-dissection. For the RDEA119 and LY294 time series, wildtype explants were dissected, cultured for 1 hr in 1X MMR for stage 9 treatment or cultured to stage 13, and subsequently cultured in inhibitor-containing media for the denoted length of time prior to collection. For Pax3-GR and Zic1-GR explant analysis, both control and Pax3-GR and Zic1-GR explants were cultured for 1 hr in 1XMMR, treated with 15 μM Dexamethasone, and then collected at the indicated stage. SDS-PAGE and Western blot analysis was used to visualize proteins, which were detected using the following antibodies: p44/42 MAPK (Erk1/2) (1:2000, Cell Signaling Technology), Phospho-p44/42 (Erk1/2) (Thr202/Tyr204) XP (1:2000, Cell Signaling Technology), Akt (1:2000, Cell Signaling Technology), Phospho-Akt (Ser473) XP (1:2000, Cell Signaling Technology), and Actin (1:8000, Sigma-Aldrich,St. Louis, MO). Corresponding secondary antibodies conjugated to horseradish peroxidase (HRP) and chemiluminescense was used.
 
-## DNA constructs
+### DNA constructs
 
 The truncated Xenopus laevis FGFR4 (AB007036) construct used (dnFGFR4) was cloned into a pCS2 vector from dnFGFR4-cs108, a kind gift from R. Harland (University of California, Berkeley). The dominant-negative PI3 Kinase subunit (dnPI3K, or Δp85) and constitutively-active PI3 Kinase subunit (Act-PI3K, or p110caax) was a gift from Chenbei Chang (University of Alabama), and constitutively-activate Mek (Act-Mek) was a gift from Ira Daar (National Cancer Institute, Maryland). Dominant-negative Raf (dnRaf) was generated by quick change mutagenesis (hRaf S621A) and subcloned into pCS2. All constructs received and cloned were confirmed by sequencing.

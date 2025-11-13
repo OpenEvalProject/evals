@@ -11,14 +11,14 @@
 
 ### Affiliations
 
-1. https://ror.org/03dbr7087 Department of Biochemistry, University of Toronto Toronto Canada
-2. https://ror.org/013meh722 MRC Laboratory of Molecular Biology, University of Cambridge Cambridge United Kingdom
+1. Department of Biochemistry, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+2. MRC Laboratory of Molecular Biology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
 ## Abstract
 
-Surface lipoproteins (SLPs) are peripherally attached to the outer leaflet of the outer membrane in many Gram-negative bacteria, playing significant roles in nutrient acquisition and immune evasion in the host. While the factors that are involved in the synthesis and delivery of SLPs in the inner membrane are well characterized, the molecular machinery required for the movement of SLPs to the surface are still not fully elucidated. In this study, we investigated the translocation of a SLP TbpB through a Slam1-dependent pathway. Using purified components, we developed an in vitro translocation assay where unfolded TbpB is transported through Slam1-containing proteoliposomes, confirming Slam1 as an outer membrane translocon. While looking to identify factors to increase translocation efficiency, we discovered the periplasmic chaperone Skp interacted with TbpB in the periplasm of Escherichia coli . The presence of Skp was found to increase the translocation efficiency of TbpB in the reconstituted translocation assays. A knockout of Skp in Neisseria meningitidis revealed that Skp is essential for functional translocation of TbpB to the bacterial surface. Taken together, we propose a pathway for surface destined lipoproteins, where Skp acts as a holdase for Slam-mediated TbpB translocation across the outer membrane.
+Surface lipoproteins (SLPs) are peripherally attached to the outer leaflet of the outer membrane in many Gram-negative bacteria, playing significant roles in nutrient acquisition and immune evasion in the host. While the factors that are involved in the synthesis and delivery of SLPs in the inner membrane are well characterized, the molecular machinery required for the movement of SLPs to the surface are still not fully elucidated. In this study, we investigated the translocation of a SLP TbpB through a Slam1-dependent pathway. Using purified components, we developed an in vitro translocation assay where unfolded TbpB is transported through Slam1-containing proteoliposomes, confirming Slam1 as an outer membrane translocon. While looking to identify factors to increase translocation efficiency, we discovered the periplasmic chaperone Skp interacted with TbpB in the periplasm of Escherichia coli. The presence of Skp was found to increase the translocation efficiency of TbpB in the reconstituted translocation assays. A knockout of Skp in Neisseria meningitidis revealed that Skp is essential for functional translocation of TbpB to the bacterial surface. Taken together, we propose a pathway for surface destined lipoproteins, where Skp acts as a holdase for Slam-mediated TbpB translocation across the outer membrane.
 
 ## Introduction
 
@@ -30,7 +30,7 @@ In this study, we developed an in vitro functional assay that allowed us to inve
 
 ## Results
 
-## Incorporation of Slam1 into liposomes for functional study
+### Incorporation of Slam1 into liposomes for functional study
 
 Although Slam1 was first discovered in Neisseria species (Hooda et al., 2016), expressing Neisseria Slam1 in E. coli for purification and structural study has been proven a challenge in terms of yield and protein stability. Fortunately, our bioinformatic study later revealed hundreds of homologs of Neisseria Slam1 in other Gram-negative bacteria (Hooda et al., 2017a) including the Moraxella catarrhalis Slam1 (Mcat Slam1) that has 40.3% sequence identity. The purification of Mcat Slam1 in n-dodecyl-B-D-maltoside (DDM) proved to be more stable and resulted in much higher yields (Figure 1—figure supplement 1).
 
@@ -38,51 +38,236 @@ To evaluate the feasibility of characterizing the function of M. catarrhalis Sla
 
 To determine whether Slam1 is an outer membrane translocon working independently from other major translocation systems such as the Bam complex, we attempted to reconstitute the Slam1-dependent TbpB translocation with minimal components. First, we tested the incorporation of purified Mcat Slam1–DDM complex (N-terminal his-tag) into liposomes. Detergent removal allowed for successful insertion of Mcat Slam1 as seen by sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE), and western blot analysis using α-his antibodies (Figure 1—figure supplement 3). To examine liposome insertion, we used the E. coli BamABCDE complex as a control. BamABCDE was purified as previously described (Hagan et al., 2011) and could potentiate the insertion of the outer membrane protein OmpA into liposomes (Figure 1—figure supplement 4). Insertion of Mcat Slam1 or Bam complex into liposomes did not affect the stability of liposomes as proteoliposomes containing these proteins were able to float to the top of sucrose gradients upon ultracentrifugation (Figure 1—figure supplement 5a). Further, to examine the orientation of Mcat Slam1 and Bam complex in proteoliposomes, we incubated the Mcat Slam1 and BamABCDE containing proteoliposomes with proteinase K. The addition of proteinase K led to formation of low-molecular weights bands in an SDS–PAGE gel (marked with asterisk, Figure 1—figure supplement 5b, left panel) and loss of Slam1 band in an α-His western blot (Figure 1—figure supplement 5b, right panel), indicating that over 80% of Slam is inserted with its periplasmic domain protruding from the surface – the ‘inside-out’ orientation required for the in vitro translocation assay.
 
-## Slam1 proteoliposomes translocate purified unfolded substrate
+### Slam1 proteoliposomes translocate purified unfolded substrate
 
 Once we established a proteoliposome with Slam1 incorporation, we attempted to detect the Slam-mediated transport of SLPs across the bilayer (Hagan et al., 2010). To this end, we purified lipidated functional M. catarrhalis TbpB in DDM detergent for the assay (Figure 1—figure supplement 6) and then unfolded the proteins using urea. DDM was removed by SM2 biobeads, and the urea concentration was reduced upon diluting the urea-unfolded TbpB into the preformed proteoliposomes (Figure 1a). Translocation of TbpB was assessed by sensitivity to proteinase K. Only the urea-unfolded TbpB was successfully translocated into Slam1 proteoliposomes (~3% protection), but not in empty liposomes or Bam proteoliposomes (Figure 1b). Although the protection is low, the analysis of variance (ANOVA) test determined the translocation efficiency is significant between Slam1 proteoliposomes and the two negative controls for unfolded TbpB (Figure 1c). This protection results from translocation of TbpB into the lumen of the Slam containing proteoliposome and not from Slam1–TbpB interactions, as a proteinase K digestion of TbpB in the presence of Slam1–DDM results in completely digested TbpB in the solution (Figure 1—figure supplement 7 – upper panel). Moreover, the protection of TbpB was specific to Slam1 proteoliposomes only, as Slam1 proteoliposomes did not protect the negative control AfuA, a nonlipoprotein that typically resides in the periplasm of Actinobacillus pleuropneumonia (Sit et al., 2015; Figure 1—figure supplement 7f – lower panel). The addition of the Bam complex did not affect the TbpB translocation efficiency, suggesting that Bam complex does not play a role in this translocation process. Finally, the low efficiency of insertion observed for the defined system, together with the observation that translocation across Slam1 proteoliposomes occurs only when the TbpB is denatured by urea, lead us to hypothesize that there are likely additional periplasmic factors that keep the SLP unfolded for an efficient translocation.
 
-## Translocation of TbpB via Slam1 requires periplasmic components but the process is independent from the release of TbpB from the inner membrane
+![Figure 1.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig1-v2.jpg)
+
+**Figure 1.:** (a) Model of a defined in vitro assay for TbpB translocation. M. catarrhalis TbpB (folded and urea-unfolded) is translocated inside Slam1-containing proteoliposomes. SM2 biobeads were used to remove DDM detergent from TbpB before adding proteoliposomes for translocation. Efficiency of TbpB translocation/insertion was calculated based on percentage of TbpB that was protected from proteinase K. (b) Representative proteinase K protection assay results obtained for Slam1 or Slam1 + Bam incubated with purified TbpB (folded or kept unfolded by 8 M urea). Proteoliposomes containing Empty or Bam were used as controls. Each sample was treated with PK or PK + Triton X-100 and examined by western blot. α-flag antibody western blots were used to quantify the amount of TbpB. Asterisk (*) The lower band in the (+PK and −Triton X) samples in Slam1 and Bam + Slam1 proteoliposomes treatment likely represents incompletely translocated TbpB that has been partially degraded by proteinase K. (c) Quantification of TbpB protection in proteoliposomes through densitometry analysis. The % TbpB insertion was calculated by dividing the protected TbpB of + PK sample by TbpB of the input sample. The plot contains results obtained from three biological replicates. Individual data points were included on the graph. Two-way analysis of variance (ANOVA) test was performed to determine the statistical significance for the translocation of unfolded TbpB by Slam1 proteoliposomes and Slam1 + Bam proteoliposomes treatment versus by the negative controls (empty liposomes and Bam proteoliposomes). Only statistical significance of the unfolded TbpB translocation by Slam1 proteoliposomes against the two negative controls are included on the blot for simplification. (***) represents p-value < 0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Sequence identity of N. meningitidis Slam1 and M. catarrhalis Slam1. (b) Overall membrane protein expression and purification pipeline. (c) Sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gels of pure MonoQ fractions from Mcat Slam1 purification. Pure Slam–DDM detergent complex eluted at 50 mM Tris–HCl pH 8, 40 mM NaCl from a MonoQ column. The proteins were used for the downstream functional assays. Proteins that were used for structural studies were passed through S200 gel filtration.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Plate reader assay was used to examine the function of Slam homologs. Slams and TbpB were coexpressed in E. coli strain C43(DE3) and probed with α-flag antibodies followed by labeling with the secondary antibody conjugated with fluorescent probe phycoerythrin (PE). The fluorescence was quantified using a plate reader. (b) Quantification of surface display of Mcat TbpB by Slam1 and Slam2 homologs. Slam2 are negative controls as they have different substrate specificity (HpuA) for translocation. Normalized fluorescence values obtained for each of the Slam homologs is shown. The results represent at least three biological replicates and demonstrate that Mcat Slam1 is functional in translocating TbpB in the E. coli model. (***) represents p-value < 0.001 and (ns) represents p-value > 0.05.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Protocol used for insertion of outer membrane proteins (OMPs) into liposomes. OMP-DDM protein–detergent complexes were diluted (below the critical micellar concentration [CMC] of DDM) into preformed liposomes. Detergent was further removed using SM2 biobeads. (b) Quantification of Slam1 and BamABCDE insertion using Coomassie staining. Bovine Serum Albumin (BSA) was used as a control for estimating absolute protein quantity. Insertion percentages were calculated by dividing the band intensity of protein inserted in liposomes (l) by total protein incubated with liposomes (T). For the Bam complex, BamA intensity was used to calculate insertion efficiency. (c) Confirmation of Slam1 and BamABCDE insertion using western blots with α-His antibodies.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) BamABCDE fractions obtained from a S200 gel filtration column. The BamABCDE complex was obtained using previously described protocols (Hagan et al., 2010). Some non-Bam complex bands (marked in asterisk) were observed, and they most likely correspond to common E. coli proteins that have been reported in previous His-tag purified proteins. (b) Design of an in vitro translocation assay for testing the function of the Bam complex. E. coli spheroplasts secrete porins such as OmpA into the supernatant. When incubated with Bam complex proteoliposomes, secreted OmpA is successfully inserted into Bam proteoliposomes. (c) An α-OmpA western blot to access the folding states of secreted OmpA over time in Tris pH 8 buffer, empty liposome, and Bam proteoliposomes. Approximately 95% of OmpA achieved folded form in the presence of Bam proteoliposomes within the first 10 min of incubation while self-folding in the empty liposome remained at 50%.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (a) Sucrose floatation assay for Slam1 and Bam proteoliposomes. Proteoliposomes were resuspended to a final concentration of 60% sucrose and subsequently layered with 30% sucrose and buffer B (50 mM Tris pH 7, 200 mM NaCl). Ten fractions were collected from the top and alternate fractions were run on an sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gel. Western blots using α-His antibodies are shown indicating the amount of protein present in each fraction. (b) Proteinase K protection assay on Slam1 and Bam proteoliposomes. Proteoliposomes were incubated with 0.1 mg/ml proteinase K for 15 min at room temperature. Coomassie blue stained gel and α-His western blot were used to assess orientation of the proteins in liposomes. Approximately 18% of Slam1 inserted with N-terminal his-tag residing in the lumen of liposomes and was protected from PK digestion. Percentage protection was calculated using densitometry. Asterisk (*) indicates fragments of Slam1 (potentially C-terminal barrel) remaining after PK shaving.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (a) Purified TbpB–DDM complexes obtained from a S200 size chromatography column. The sample was subsequently used for the in vitro translocation assay. (b) Dot blot assay with biotinylated human transferrin (bio-hTf) for detecting the function of TbpB. 0.5 μl TbpB and respective controls (TbpA, BamABCDE, and BSA) were spotted on nitrocellulose membrane and blotted with bio-hTf (50 μg/ml) followed by streptavidin–horseradish peroxidase (HRP). TbpB is bound tightly with bio-hTf indicating it is functional.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** Mixture of urea-unfolded TbpB and urea-unfolded AfuA (1:1 molar ratio) was incubated with empty liposomes, proteoliposomes, or Slam1–DDM complex (1:20 volume ratio), followed by proteinase K treatment (0.1 mg/ml). Reaction was inhibited by 1 mM phenylmethylsulfonyl fluoride (PMSF) before loading on sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gel and western transferred to PVDF blot. Blot was cut and the two halves were incubated with α-flag (for 75 kDa TbpB) or α-his antibodies (for 38 kDa AfuA) accordingly.
+
+### Translocation of TbpB via Slam1 requires periplasmic components but the process is independent from the release of TbpB from the inner membrane
 
 To delve deeper into the mechanism of Slam-mediated SLP translocation and whether additional of periplasmic contents are required for efficient translocation, we examined the translocation of TbpB presented by E. coli spheroplasts that lack an intact outer membrane (Norell et al., 2014; Figure 2a). Like other lipoproteins, after being expressed and translocated across the inner membrane into the periplasm, TbpB is modified by Lgt, Lsp, and Lnt like other lipoproteins and displayed on the outer surface of the inner membrane (Hooda et al., 2016). Previous studies have shown that the addition of the periplasmic chaperone LolA leads to release of SLPs from spheroplasts into the culture supernatant (Tajima et al., 1998). Hence, we purified E. coli LolA and tested LolA-dependent release of Mcat TbpB from spheroplasts (Figure 2—figure supplement 1). Higher amounts of TbpB were detected in the supernatant in the presence of LolA. We incubated the TbpB expressing spheroplasts directly with Slam1 or Bam proteoliposomes and estimated the translocation efficiency of TbpB using a proteinase K assay (spheroplast-dependent translocation). Any TbpB translocated into the lumen of the proteoliposome should be protected from proteinase K digestion. From this assay, we found that proteoliposomes containing Slam1 showed significantly higher protection (40%) compared to Bam proteoliposomes or empty liposomes (5%) (Figure 2b – upper panel). The protection of TbpB was lost upon the addition of Triton X-100 suggesting that TbpB is shielded from the protease activity by the lipid bilayer of the liposomes. The background protection observed in empty and Bam proteoliposomes is inherent to the procedure as experiment without the presence of liposome showed similar background protection, suggesting that the background protection may originate from the spheroplast secretions themselves (Figure 2—figure supplement 2a). Interestingly, proteoliposomes containing both Bam complex and Slam once again did not improve the efficiency, indicating that the translocation of TbpB does not require Bam complex.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig2-v2.jpg)
+
+**Figure 2.:** (a) Model of the proposed in vitro proteoliposomes translocation assay for TbpB secreted directly from E. coli spheroplast. As E. coli cell expressing TbpB, the cells were converted into spheroplast that has an intact inner membrane. Purified LolA was added to release mature TbpB (processed by Lgt, Lsp, and Lnt) from the LolCDE complex in the inner membrane. The secreted TbpB was incubated with proteoliposomes for translocation, followed by PK digestion to quantify the amount of TbpB that had been translocated inside the liposomes. (b) Representative α-flag western blots obtained for the in vitro translocation assay. Slam1 proteoliposomes were incubated either with spheroplasts expressing TbpB (spheroplast-dependent translocation, upper panel) or supernatant of spheroplasts that have been induced for TbpB production (spheroplast-independent translocation, lower panel). Empty liposomes and Bam proteoliposomes were used as controls. Proteoliposomes containing Bam + Slam1 were used to test if the Bam complex plays an accessory role to Slam in TbpB translocation. For each proteoliposome, no proteinase K treatment (−PK), proteinase K treatment (+PK) and proteinase K + Triton X-100 treatment (+PK + T) samples are shown. The % TbpB protection shown was calculated by dividing the intensity of the mature TbpB band (~75 kDa) for each sample by the −PK sample. (*) Partial TbpB fragment which is only seen in the presence of Slam1 proteoliposomes. (c) Quantification of TbpB protection in proteoliposomes through densitometry analysis. The plot represents data obtained from at least three biological replicates for both spheroplast-dependent translocation and spheroplast-independent assay. Individual data points were included on the graph. (d) Representative α-flag western blot of spheroplast-independent TbpB translocation into Bam and Slam1 proteoliposomes over time. Spheroplast-secreted TbpB was incubated with proteoliposomes in 1:1 ratio at room temperature. Samples were collected every 5 or 10 min and left on ice before proteinase K treatment. (e) Quantification of spheroplast-secreted TbpB translocation into Bam proteoliposomes and Slam1 proteoliposomes over the course of 60 min.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Model of the release of SLPs from spheroplasts upon addition of purified E. coli LolA. SLPs are synthesized in the cytoplasm and transported to the periplasm via the Sec translocon. After the addition of the lipid anchor, SLPs are transferred to the LolCDE complex and released into the periplasm by LolA. In spheroplasts, SLPs are released into the supernatant upon LolA addition. (b) Uncut 6x-His tagged E. coli LolA (~22 kDa) after Ni-NTA affinity chromatography purification. (c) Release of Mcat TbpB in the presence of purified LolA over a time course of 60 min. E. coli cell pellets were converted into spheroplasts and induced for expression of TbpB in the presence or absence of 10 μM LolA. Samples were collected every 15 min, spun down at 13,500 rpm for 5 min and the supernatants were loaded on sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE). The amount of TbpB (~75 kDa) that was released into the supernatant in the presence and absence of LolA was accessed using a α-flag antibody western blot. Lower bands are degradation products of TbpB which also increase over time.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Western blot accessing the protection of secreted TbpB in the absence of liposomes. Similar background protection was observed in no liposomes and liposome negative control (8.5% and 9.3%, respectively). Note: The input (−PK/−T) has been diluted by 1:10 to enhance the signal of the background protection for quantification. The protection percentage was calculated using the densitometry method and accounted for the dilution. Protection for TbpB in Slam1 proteoliposomes is still four times higher than the background protection (40.7%). (b) Functionality test of TbpB-containing proteoliposomes after translocation. After inhibiting proteinase K using PMSF, protected TbpB-proteoliposomes samples were treated with 0.1% Triton X and further incubated with human transferrin-conjugated beads to pulldown functional TbpB (flag-tagged). The lower band in Slam1-elution represents partially degraded TbpB. Note: The input of TbpB from Bam proteoliposomes and Slam1 proteoliposomes are different as they are outputs of the PK digestion assay (5% vs. 45% protected TbpB as the input for Bam and Slam1 proteoliposomes respectively).
 
 The success of the in vitro Slam-dependent translocation of spheroplast-released SLPs into liposomes provided an assay to investigate SLP translocation in greater detail. Many OMPs require inner membrane factors for energy transduction such as TonB-dependent receptors (Pawelek et al., 2006) or chaperone activity TamA (Stubenrauch et al., 2016) to perform their function. Studies of the Lol system have shown that LolA shuttles between the inner membrane and the outer membrane (Szewczyk and Collet, 2016), and hence we predicted that Slam-mediated SLP translocation does not require any inner membrane factors unlike the Lpt system (Sherman et al., 2018). To validate this hypothesis, we incubated the empty, Bam, Slam1, or Bam + Slam1 proteoliposomes with the supernatant isolated from spheroplasts that were expressing TbpB (spheroplast-independent translocation). As seen previously in the spheroplast-dependent translocation assay, we observed similar TbpB protection from proteinase K in proteoliposomes containing Slam1 (~40% protection) and Bam + Slam1 (~35%) (Figure 2b – lower panel) but not empty (~7%) nor Bam (~5%) proteoliposomes. Interestingly, we did not observe any loss in translocation efficiency between spheroplast-dependent and -independent assay (Figure 2c), confirming that Slam-mediated SLP translocation is independent of SLP release from the inner membrane. This differs from other secretion systems that require partners in the inner membrane who provide energy through ATP/proton motive force (Sherman et al., 2018; Stubenrauch et al., 2016). This finding suggests Slam-dependent SLP translocation is akin to two-partner secretion systems (Fan et al., 2012; Norell et al., 2014; Guérin et al., 2017).
 
 To further examine the fate of TbpB after being translocated into Slam1 proteoliposomes, samples of proteinase K protected solutions were treated with 1 mM PMSF to inhibit proteinase K activity before being dissolved in 0.1% Triton X and incubated with iron-loaded human transferrin-conjugated beads (Figure 2—figure supplement 2b). Although the amount of the protected sample from Bam and Slam1 proteoliposomes differs (5% and 43%, respectively), none of the TbpB protected by the negative control Bam proteoliposomes binds to human transferrin beads. Meanwhile, the TbpB that is translocated and protected by Slam1 proteoliposomes was shown to retain its functionality through binding to human transferrin-conjugated resin. This result suggested that the TbpB which is protected by Slam1 proteoliposomes is properly folded after being translocated inside the liposomes.
 
-## Translocation of spheroplast-secreted TbpB into Slam1 proteoliposomes is time dependent
+### Translocation of spheroplast-secreted TbpB into Slam1 proteoliposomes is time dependent
 
 To further elaborate the function of Slam1 in the translocation of TbpB into proteoliposomes, we performed a time-dependent translocation assay over the course of 60 min. Samples were withdrawn every 5–10 min and incubated on ice before being treated with proteinase K. The result showed that Slam1 translocation for TbpB reaches the maximal efficiency (40–43%) between 20 and 30 min (Figure 2d, e). Compared with other major translocons such as the Bam complex (10–20 min) (Hussain and Bernstein, 2018), Slam1-dependent translocation takes a similar amount of time to reach maximal translocational activity (Figure 1—figure supplement 4c). Notably, we also observed the protection of TbpB reduced after 30 min but this could be attributed to the instability of proteoliposomes after a period of time with changes in pH, protein composition, size, and charge of macromolecules (Nakhaei et al., 2021).
 
-## Periplasmic chaperone Skp interacts with prefolded TbpB in the periplasm
+### Periplasmic chaperone Skp interacts with prefolded TbpB in the periplasm
 
 As mentioned above, the Slam1-dependent translocation requires TbpB to be unfolded and hence, we hypothesized that other factors in the periplasm bind the SLPs and prevent their premature folding prior to Slam-mediated translocation. To identify periplasmic factors that might be involved in the translocation, periplasmic TbpB complexes were isolated using an affinity flag-tag on its C-terminus (Figure 3a). The pulldown fraction was analyzed using mass spectrometry and western blots. In this pulldown assay, AfuA – a well-folded periplasmic nonlipoprotein from A. pleuropneumonia was used as a negative control to rule out nonspecific periplasmic protein interactions (Sit et al., 2015). Skp – a periplasmic chaperone was the only protein that was identified in the pulldown of TbpB but not in the negative control (Table 1). The mass spectrometry results were validated using western blots (Figure 3b). As expected, LolA only interacts with lipoprotein TbpB in the elution fraction (Figure 3b – middle panel). In addition, the blot confirmed the presence of periplasmic protein in the elution of TbpB (Figure 3b – bottom panel).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig3-v2.jpg)
 
-**Figure 3.:** (a) Model of pulldown assay using the flag-tag on the C-terminus of TbpB. Samples were analyzed using mass spectrometry (summarized in Table 1) and examined on western blots. (b) Representative western blots for TbpB pulldown assay followed by mass spectrometry. LolA and periplasmic chaperone Skp were detected in the TbpB eluted fraction. No LolA and Skp were eluted in negative control AfuA experiment. Note: Upper and lower panels are from the same blot. Bottom panel was run on a second blot and the dashed line in the middle to indicate the exclusion of lanes (bead lanes – not shown) between the control (AfuA) and treatment (TbpB). (c) Model of reciprocal pulldown assay using the his-tag on the N-terminus of chaperones. Purified his-tagged chaperones (SurA, Skp, and DegP) were added to the spheroplast before the induced secretion of SLPs. (d) Representative western blots of the reciprocal pulldown assay. Only periplasmic chaperone Skp (17 kDa) was found to pull down lipoprotein TbpB and HpuA while no AfuA was found in the Skp elution fraction. All three proteins AfuA (negative control), TbpB and HpuA (Slam-dependent lipoproteins) were not found in the elution fraction of SurA and DegP pulldown. Note: α-his blot was used to detect chaperones and α-flag was used to detect HpuA samples within the same experiment. Elution volumes were 100 μl (1:10 input). DegP has molecular weight at 54 kDa. Lower band is the result of self degradation.Figure 3—source data 1.
+**Figure 3.:** (a) Model of pulldown assay using the flag-tag on the C-terminus of TbpB. Samples were analyzed using mass spectrometry (summarized in Table 1) and examined on western blots. (b) Representative western blots for TbpB pulldown assay followed by mass spectrometry. LolA and periplasmic chaperone Skp were detected in the TbpB eluted fraction. No LolA and Skp were eluted in negative control AfuA experiment. Note: Upper and lower panels are from the same blot. Bottom panel was run on a second blot and the dashed line in the middle to indicate the exclusion of lanes (bead lanes – not shown) between the control (AfuA) and treatment (TbpB). (c) Model of reciprocal pulldown assay using the his-tag on the N-terminus of chaperones. Purified his-tagged chaperones (SurA, Skp, and DegP) were added to the spheroplast before the induced secretion of SLPs. (d) Representative western blots of the reciprocal pulldown assay. Only periplasmic chaperone Skp (17 kDa) was found to pull down lipoprotein TbpB and HpuA while no AfuA was found in the Skp elution fraction. All three proteins AfuA (negative control), TbpB and HpuA (Slam-dependent lipoproteins) were not found in the elution fraction of SurA and DegP pulldown. Note: α-his blot was used to detect chaperones and α-flag was used to detect HpuA samples within the same experiment. Elution volumes were 100 μl (1:10 input). DegP has molecular weight at 54 kDa. Lower band is the result of self degradation.
+
+**Table 1.**
+ Summary of mass spectrometry for flag-tagged TbpB pulldown.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="4">AfuA</th>
+      <th colspan="4">TbpB</th>
+    </tr>
+    <tr>
+      <th>Proteins</th>
+      <th>Total peptides</th>
+      <th>% Coverage</th>
+      <th>Location</th>
+      <th>Proteins</th>
+      <th>Total peptides</th>
+      <th>% Coverage</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>AfuA</td>
+      <td>380</td>
+      <td>78%</td>
+      <td>P</td>
+      <td>TbpB</td>
+      <td>265</td>
+      <td>31%</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>TufA</td>
+      <td>119</td>
+      <td>70%</td>
+      <td>IM</td>
+      <td>LolA</td>
+      <td>146</td>
+      <td>73%</td>
+      <td>P</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>LolA</td>
+      <td>36</td>
+      <td>72%</td>
+      <td>P</td>
+      <td>TufA</td>
+      <td>57</td>
+      <td>59%</td>
+      <td>IM</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>OmpF</td>
+      <td>12</td>
+      <td>34%</td>
+      <td>OM</td>
+      <td>OmpF</td>
+      <td>21</td>
+      <td>38%</td>
+      <td>OM</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>DegP</td>
+      <td>10</td>
+      <td>30%</td>
+      <td>P</td>
+      <td>DegP</td>
+      <td>15</td>
+      <td>32%</td>
+      <td>P</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>FlgH</td>
+      <td>12</td>
+      <td>34%</td>
+      <td>P</td>
+      <td>OmpA</td>
+      <td>15</td>
+      <td>34%</td>
+      <td>OM</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>DegQ</td>
+      <td>6</td>
+      <td>14%</td>
+      <td>P</td>
+      <td>Skp</td>
+      <td>9</td>
+      <td>27%</td>
+      <td>P</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>OmpA</td>
+      <td>5</td>
+      <td>22%</td>
+      <td>OM</td>
+      <td>FlgH</td>
+      <td>8</td>
+      <td>26%</td>
+      <td>P</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>DegQ</td>
+      <td>5</td>
+      <td>13%</td>
+      <td>P</td>
+    </tr>
+  </tbody>
+</table>
 
 To further validate the interaction between Skp and SLPs, a reciprocal pulldown assay was performed in which a purified His-tagged chaperone was added into the spheroplast prior to the secretion of SLPs (Figure 3c). In this assay, we also examined whether Skp interacts with other SLPs such as hemoglobin–haptoglobin utilization protein (HpuA) – a substrate of Slam2 homolog in N. meningitidis (Hooda et al., 2016). Two other periplasmic chaperones which are known to be involved in the transport of OMPs, SurA, and DegP were also examined (Sklar et al., 2007). As expected, none of the chaperones pulled down the negative control protein AfuA (Figure 3d – first panel). Although chaperones SurA and DegP showed no binding to TbpB, a small amount of HpuA was detected in the elution fraction (Figure 3d – third panel). However, these interactions were probably nonspecific since the intensity of HpuA bands detected in SurA and DegP elutions are similar to the nonspecific binding levels detected in the negative control Ni-NTA beads (Figure 3d – third panel). The coimmunoprecipitation experiments confirmed that only the periplasmic chaperone Skp interacts with the spheroplast-released TbpB and HpuA, as these lipoproteins were found in the elution (E) fraction of the Skp pulldown (Figure 3d – second and third panels). Skp is a well-studied homotrimeric chaperone which is known to bind unfolded proteins in the periplasm to prevent their aggregation and degradation (Walton et al., 2009; Volokhina et al., 2011). Skp has been shown to be important for OMP membrane insertion by the Bam complex (Sklar et al., 2007; Mas et al., 2019). Our findings suggest that Skp also interacts with TbpB-like SLPs in the periplasm and assists in their translocation across the outer membrane.
 
-## Periplasmic chaperone Skp is essential for Slam-dependent translocation in E. coli
+### Periplasmic chaperone Skp is essential for Slam-dependent translocation in E. coli
 
 To determine whether Skp is essential for the translocation of SLPs via Slam, we co-expressed TbpB and Slam1 in K12 E. coli strains devoid of functional Skp or DegP (as a negative control) (Baba et al., 2006). The presence of TbpB on the surface of E. coli was detected using rabbit α-flag antibody, followed by phycoerythrin-conjugated α-rabbit IgG . The E. coli K12 Δskp mutant had significant reduction of TbpB surface exposure (50%) compared to wild-type cells (Figure 4a). Depletion of DegP slightly reduced the translocation of TbpB (12%) but this was not statistically significant (by one-way ANOVA test). No reduction in the expression of either Slam1 or TbpB was observed in western blots. Furthermore, the processing of TbpB by signal peptidase II (lower band of TbpB ~75 kDa) and subsequence release from the inner membrane was unaffected suggesting the defect in surface display by Skp occurs after the release of TbpB from the inner membrane.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig4-v2.jpg)
 
-**Figure 4.:** (a) Translocation of TbpB via Slam1 to the surface of E. coli K12 mutants. Depletion of Skp significantly reduces the translocation of TbpB to the surface (by 50% – detecting by using α-flag antibody). Bottom panel – western blots of whole cell lysates detecting the expression of TbpB and Slam1 in K12 E. coli mutant strains. The processed TbpB (high intensity lower band at 75kDa) was unaffected in the mutant E. coli indicating that absence of one of the chaperones did not affect the maturation of TbpB in the periplasm. (***) represents p-value < 0.001 and (ns) represent p-value > 0.05. (b) Representative western blot of the in vitro proteoliposomes translocation for TbpB secreted from K12 E. coli spheroplast mutants. TbpB secreted from Δskp spheroplast fails to translocate into the Slam1 proteoliposomes for protection against proteinase K. (c) Representative western blot (left panel) and quantification (right panel) of the in vitro translocation of purified TbpB into Slam1 proteoliposomes in addition of purified chaperones. Full length lipidated TbpB was unfolded in urea followed by incubation with LolA and either SurA (negative control) or Skp before incubating with empty or Slam1 proteoliposomes and proteinase K digestion. TbpB–Skp complex provided extra protection for TbpB even in the absence of Slam1. (d) Representative western blot (left panel) and quantification (right panel) of the protected TbpB by the liposomes which were isolated using sucrose flotation assay after proteinase K digestion. Translocation of TbpB into Slam1 proteoliposomes increased by 2.5-fold in the presence of Skp in comparison with the Slam1 proteoliposomes + SurA (positive control). Results are from at least three biological replicates. Individual data points were included on the graph.Figure 4—source data 1.E. coli.Figure 4—source data 2.Figure 4—source data 3.
+**Figure 4.:** (a) Translocation of TbpB via Slam1 to the surface of E. coli K12 mutants. Depletion of Skp significantly reduces the translocation of TbpB to the surface (by 50% – detecting by using α-flag antibody). Bottom panel – western blots of whole cell lysates detecting the expression of TbpB and Slam1 in K12 E. coli mutant strains. The processed TbpB (high intensity lower band at 75kDa) was unaffected in the mutant E. coli indicating that absence of one of the chaperones did not affect the maturation of TbpB in the periplasm. (***) represents p-value < 0.001 and (ns) represent p-value > 0.05. (b) Representative western blot of the in vitro proteoliposomes translocation for TbpB secreted from K12 E. coli spheroplast mutants. TbpB secreted from Δskp spheroplast fails to translocate into the Slam1 proteoliposomes for protection against proteinase K. (c) Representative western blot (left panel) and quantification (right panel) of the in vitro translocation of purified TbpB into Slam1 proteoliposomes in addition of purified chaperones. Full length lipidated TbpB was unfolded in urea followed by incubation with LolA and either SurA (negative control) or Skp before incubating with empty or Slam1 proteoliposomes and proteinase K digestion. TbpB–Skp complex provided extra protection for TbpB even in the absence of Slam1. (d) Representative western blot (left panel) and quantification (right panel) of the protected TbpB by the liposomes which were isolated using sucrose flotation assay after proteinase K digestion. Translocation of TbpB into Slam1 proteoliposomes increased by 2.5-fold in the presence of Skp in comparison with the Slam1 proteoliposomes + SurA (positive control). Results are from at least three biological replicates. Individual data points were included on the graph.
 
 To further investigate the role of periplasmic chaperone Skp, we leveraged our in vitro translocation assay using Slam1 proteoliposomes and spheroplast-secreted TbpB. TbpB that was secreted from K12 spheroplast mutants that lacked Skp or DegP, was incubated with Slam1 proteoliposomes for translocation. The overall results were consistent with the in vivo translocation in K12 E. coli (Figure 4b). In comparison with wild-type spheroplast TbpB, the Δskp-spheroplast-secreted TbpB failed to translocate inside of Slam1 proteoliposomes, while the translocation efficiency of Δdegp-spheroplast-secreted TbpB was only marginally reduced. This suggests that Slam-mediated translocation of SLPs requires the periplasmic chaperone Skp.
 
-## Skp increases the translocation of purified TbpB in Slam1-containing proteoliposomes
+### Skp increases the translocation of purified TbpB in Slam1-containing proteoliposomes
 
 Given that Skp is necessary for Slam-mediated translocation, we hypothesized that addition of purified E. coli Skp should increase the translocation efficiency of purified TbpB into Slam1 proteoliposomes. To test this hypothesis, we purified E. coli Skp and LolA and added these to urea-denatured TbpB prior to incubation with Slam1-containing proteoliposomes. Periplasmic chaperone SurA was also purified and used as a negative control as we have shown that SurA does not interact with TbpB (Figure 3d – second panel). As expected, with the addition of Skp to Slam1 proteoliposomes, the translocation efficiency of TbpB significantly increased by 10-fold (30% protection) in comparison with addition of SurA into the same proteoliposomes (3.5% protection) (Figure 4c). Notably, the addition of Skp to the empty liposomes also increased TbpB’s protection by 3-fold (up to 10% protection) relative to the control SurA + Slam1 proteoliposomes (Figure 4c – right panel). This result is comparable to with the background protection observed for the empty liposomes in the translocation assays which used TbpB secreted directly from spheroplast (Figure 2b). The protection might be due to protease resistance that chaperones provide for their substrates in the periplasm which has previously also been reported for unfolded OMPs (Yan et al., 2019).
 
 To confirm that the background protection is from the protease resistance of chaperone–substrate complexes, the samples were spun down against a sucrose gradient (0–60% wt/vol) after the proteinase K treatment to isolate only the proteoliposomes. The western blots and Coomassie blue stained SDS–PAGE showed a clear separation of the two components, the intact proteoliposomes in the top layer and unincorporated proteins in the middle and bottom layers of the sucrose gradient (Figure 4d – left panel). While most of the unincorporated proteins were located in the bottom and middle fractions, significant amounts of Slam1 and TbpB were found only in the top fractions of Slam1 proteoliposomes (Figure 4d – upper left panel). In comparison to the SurA + Slam1 proteoliposomes, the addition of Skp to Slam1 proteoliposomes increased translocation efficiency for TbpB by almost 3-fold (Figure 4d – right panel). This ratio supports the previous result of the 3-fold increase in protection from proteinase K observed when comparing the Skp–TbpB chaperone-mediated protection with the translocation-mediated protection observed with Skp–TbpB + Slam1 proteoliposomes (Figure 4c – right panel). There was no trace of TbpB in either of the negative controls which could be attributed to the presence of trace amounts of proteinase K which could have continuously degraded the unfolded TbpB during the 18 hr ultracentrifuge run. Taken together, these results suggest that Skp plays an important role in the translocation of TbpB to the surface via Slam1, likely through its holdase function.
 
-## Deletion of Skp in B16B6 decreases the exposure of TbpB on the surface of N. meningitidis
+### Deletion of Skp in B16B6 decreases the exposure of TbpB on the surface of N. meningitidis
 
 To examine the role of Skp in the Slam-dependent translocation of SLPs in B16B6 N. meningitidis that contains endogenous TbpB and Slam1, we deleted the gene skp (Δskp strain) and examined its effect on surface display of TbpB (Figure 5—figure supplements 1 and 2). Such experiments have been previously done in other studies for periplasmic chaperones SurA, Skp, and DegQ (homolog of DegP) in N. meningitidis in which a single deletion of either one of the chaperones did not affect cell vitality nor the expression of OMPs or their insertion into the outer membrane via the Bam complex (Volokhina et al., 2011). In our study, the deletion of skp (Δskp) overall did not affect the growth of N. meningitidis as the cells reached the optimal OD600 after 12 hr (Figure 5—figure supplement 3a). However, the total amount of TbpB detected after 18 hr of growth was significantly diminished (Figure 5—figure supplement 3b). Such a reduction was also observed in a Δslam1 strain, and it has been shown in the previous study that in the absence of Slam1, the built-up TbpB in the periplasm was subjected to degradation (Hooda et al., 2016). Similar rationale can be made here for the reduction of TbpB in Δskp strain, as without Skp to keep unfolded TbpB for Slam1 translocation, the built-up TbpB was eventually degraded by periplasmic proteases. To examine whether the deletion of Skp only affected the translocation of TbpB to the surface, equal expression of TbpB is also needed for the comparison. Thus, the cells were treated with 0.1 mM deferoxamine, an iron-chelating agent, to induce the expression of proteins that are involved in iron acquisition such as TbpB (Fegan et al., 2019). In this assay, we used α-TbpB antibody to probe for TbpB on the cell surface. Unlike the two negative controls (ΔtbpB and Δslam1) which completely inhibit the translocation of TbpB, deletion of Skp reduces the amount of TbpB on the surface about 50% comparing to the wild-type strain (Figure 5a – top panel). Whole cells samples of these strains were analyzed on western blots to assess the expression of the Slam1–TbpB pair (Figure 5b). The results indicated that the amount of TbpB within the mutant strains (Δslam1 and Δskp) were successfully induced by deferoxamine to a comparable level of TbpB expression in the wild-type strain (Figure 5b – top panel) and depletion of Skp did not affect the expression level of Slam1 (Figure 5b – middle panel). Thus, the reduction of TbpB on the surface of the Δskp strain is likely due to the decrease in translocation activity of Slam1. This result is comparable to the translocation of Mcat TbpB to the surface of the E. coli Δskp mutant in which the signal from a C-terminal flag-tag was used to assess the surface display of the lipoprotein (Figure 4c).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig5-v2.jpg)
+
+**Figure 5.:** (a) Relative fluorescence intensity accessing the presence of TbpB (65 kDa) on the surface of N. meningitidis mutants using α-TbpB antibody (exposure – top) and biotinylated human transferrin (functional – bottom). Individual data points were included on the graph. Depletion of Skp decreased surface exposed TbpB by 50% and the translocated TbpB is nonfunctional (not binding to biotinylated human transferrin). Complementation of skp from pGCC4 vector and 0.1 mM IPTG successfully restored the translocation of TbpB and its function. (*) represent 0.01 < p-value < 0.05 and (***) represent p-value < 0.001. (b) Representative western blots to access the expression of TbpB, Slam1, and Skp in the N. meningitidis strains examined. Depletion of Skp did not affect the expression of outer membrane protein (OMP) Slam1 or TbpB (induced by 0.1 mM deferoxamine). Fluorescent assay results are combined from three biological replicates and statistically analyzed by one-way analysis of variance (ANOVA) test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) The complete knockout process using spot transformation. Gene skp in N. meningitidis B16B6 is replaced by kan cassette. (b) Agarose gel of single colony PCR using external primers (targeting DNA 500 bp upstream and downstream of skp) and internal primers (targeting DNA within skp gene) to confirm the successful replacement of kan for skp gene.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Coomassie blue stained sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) of Nme Skp after S75 gel filtration to access its purity prior to antibody production (left panel) and α-Nme Skp antibody western blot to validate the antibody and confirm the knock-out of Skp (17 kDa) in B16B6 N. meningitidis (right panel). (*) is the contamination from BL21 E. coli. There is no cross-reactivity of the Nme Skp antibody with E. coli Skp.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/72822/elife-72822-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (a) OD600 was recorded every 30 min over a 24-hr period. Δskp and Δslam1 mutants were lagging behind but reached OD600 of 0.7 eventually. (b) Representative western blots detecting the expression of Nme TbpB (65 kDa), Nme Slam1 (48 kDa), and Nme Skp (17 kDa). Knockout of slam1 or skp affected the quantity of TbpB in whole cells.
 
 To examine whether these surface exposed TbpB in B16B6 Δskp strain is functional, we probed the cells using biotinylated human transferrin (Calmettes et al., 2012). A 5-fold reduction in binding to biotinylated human transferrin was observed for Δskp N. meningitidis strain, indicating a significant loss of functional TbpB assembled on the surface of N. meningitidis (Figure 5a – bottom panel). The complementation of skp from the pGCC4 vector successfully rescued the translocation of TbpB of the B16B6 Δskp strain back to the wild-type level. Taken together, in the absence of the periplasmic chaperone Skp, significantly less properly folded TbpB is translocated to the surface of N. meningitidis.
 
@@ -98,98 +283,98 @@ Combined with our previous work (Hooda et al., 2016), we propose a model for the
 
 ## Materials and methods
 
-## Bacterial strains and growth conditions
+### Bacterial strains and growth conditions
 
 Strains used in this study are summarized in Supplementary file 1. E. coli were grown in LB media containing antibiotics when necessary – 50 μg/ml kanamycin, 50 μg/ml erythromycin, and 100 μg/ml ampicillin. Cloning procedures were carried out using E. coli MM294 competent cells. Protein expression was performed using E. coli C43 (DE3) cells for Slam homologs, Bam complex, and the translocation experiments (Wagner et al., 2008). E. coli BL21 (DE3) cells were used for purification of E. coli LolA, SurA, Skp, DegP, and B16B6 N. me Skp. In vivo translocation reconstitution and spheroplast secretion assays were performed using E. coli C43 (DE3) or E. coli K12 cells from Keio’s collection (Baba et al., 2006). N. meningitidis B16B6 strain was used for knockout study.
 
-## Cloning of Slam, SLPs, LolA, and periplasmic chaperones
+### Cloning of Slam, SLPs, LolA, and periplasmic chaperones
 
 Genes were cloned into expression vectors by RF cloning (van den Ent and Löwe, 2006) and signal peptides and tags were inserted using round the horn cloning (Liu and Naismith, 2008). pET52 Nme hpuA was made by amplifying hpua from N. meningitidis strain B16B6 and inserting it into an empty pET52b vector. pET52 Nme HpuA-flag was made by addition of a flag-tag at the C-terminus of the hpua gene in pET52 Nme hpuA. pET26 Ngo Slam2 construct was obtained by cloning the mature N. gonorrhoeae strain MS11 gene ngfg_00064 and inserting into an empty pET26b vector. To be expressed in K12 E. coli, slam1, and tbpb were cloned on pGCC4 and pHERD plasmid, respectively. E. coli lola, sura, skp, degp genes from E. coli strain C43 (DE3) genome and N. meningitidis skp gene from N. meningitidis B16B6 strain were cloned into an empty pET28a vector with an N-terminal 6xHis tag for purification. The constructs used in this study are summarized in Supplementary file 1.
 
-## Plate reader assay for Slam-SLP in vivo translocation assay
+### Plate reader assay for Slam-SLP in vivo translocation assay
 
 Pairs of Slams and SLPs were cotransformed into E. coli C43(DE3) or E. coli K12 cells. Cells were grown overnight in autoinduction media (Studier, 2005) with appropriate antibiotics as described above. Cells were harvested from the overnight culture by centrifugation at 1500 × g, 3 min. Cell pellets were washed gently with PBS + 1 mM MgCl2 before incubating with biotinylated human transferrin or rabbit α-flag antibody (1:200 dilution). After 1-hr incubation, cells were harvested and washed with PBS + 1 mM MgCl2. The cells were then incubated with streptavidin-conjugated phycoerythrin (for biotinylated human transferrin) or α-rabbit IgG-conjugated phycoerythrin (for rabbit-α-flag antibody) with 1:200 ratio for 1 hr. Cells were then harvested, washed, and resuspended in PBS + 1 mM MgCl2. The samples were aliquoted on a 96-well plate and read on a Synergy 2 (BioTek) plate reader at 488 and 575 nm. OD600 was also recorded for data normalization.
 
-## Purification of Mcat Slam1
+### Purification of Mcat Slam1
 
 E. coli strain C43 (DE3) with pET26 Mcat Slam1 were grown overnight at 37°C in LB + ampicillin. The cells were used to inoculate (1:1000) 6 l of autoinduction media + kanamycin. Cells were grown at 20°C for 48 hr and then harvested by centrifugation at 12,200 × g for 20 min at 4°C. The cell pellets were resuspended in 20 ml/l of 50 mM Tris–HCl pH 8, 200 mM NaCl, and cells were lysed using an EmulsiFlex C3 (Avestin). Lysates were spun down at 35,000 × g at 4°C for 10 min. The supernatants were spun down in a 45Ti rotor at 40,000 rpm for 1 hr at 4°C to isolate total membranes. Membrane pellets were homogenized, incubated in 15 ml/l of 50 mM Tris pH 8, 200 mM NaCl, 3% Elugent overnight at 4°C and the ultracentrifugation step was repeated to remove insoluble membrane pellet. Supernatants containing the soluble membrane proteins were then incubated with 1 ml Ni-NTA agarose O/N at 4°C. Ni-NTA beads were washed three times with 10 column volumes of buffer A (20 mM Tris pH 8, 100 mM NaCl, 0.03% DDM) containing increasing concentration of imidazole. Mcat Slam1 was then eluted in buffer A containing 200 mM imidazole. The protein sample was exchanged into low salt buffer (20 mM Tris pH 8, 20 mM NaCl, 0.03% DDM) using a PD-10 column (GE Healthcare) and then injected onto a MonoQ column (GE Healthcare) equilibrated with low salt buffer. The column was washed with increasing concentration of salt using a high salt buffer (20 mM Tris pH 8, 2 M NaCl, 0.03% DDM). Fractions that contained pure Mcat Slam1 were identified using SDS–PAGE gels, pooled, concentrated, and stored at −80°C.
 
-## Purification of Bam complex
+### Purification of Bam complex
 
 The plasmid and protocol for Bam complex purification were adapted from Dr. Bernstein’s group (Roman-Hernandez et al., 2014). E. coli strain C43 (DE3) with pJH114 was grown overnight at 37°C in LB + ampicillin. The cells were used to inoculate (1:1000) into 6 l of autoinduction media + ampicillin. Cells were grown at 20°C for 48 hr and harvested by centrifugation at 12,200 × g for 20 min at 4°C. Cell pellets were resuspended in 20 ml/l of 50 mM Tris–HCl pH 8, 200 mM NaCl, and cells were lysed using an EmulsiFlex C3 (Avestin). Lysates were spun down at 35,000 × g at 4°C for 10 min. The supernatants were spun down in a 45Ti rotor at 40,000 rpm for 1 hr at 4°C to isolate total membranes. Membrane pellets were homogenized, incubated in 15 ml/l of 50 mM Tris pH 8, 200 mM NaCl, 3% Elugent overnight at 4°C, and the ultracentrifugation step was repeated. Supernatants containing the soluble membrane proteins were then incubated with 1 ml Ni-NTA agarose O/N at 4°C. Ni-NTA beads were washed with one column volume with buffer A containing increasing concentration of imidazole. BamABCDE was then eluted in buffer A containing 200 mM imidazole. The protein sample was concentrated and injected onto a S200 column equilibrated with buffer A. Fractions that contained complete BamABCDE complexes were identified using SDS–PAGE gels, pooled, concentrated, and stored at −80°C.
 
-## Liposome and proteoliposome preparation
+### Liposome and proteoliposome preparation
 
 100 mg of E. coli polar lipid extract (Avanti) was resuspended in chloroform (Sigma). The lipid solution was then dried off under N2 gas and resuspended in 10 ml of buffer B (50 mM Tris–HCl pH 7, 200 mM NaCl). The solution was flash frozen and thawed five times and stored at −80°C as a 10 mg/ml stock. For each experiment, 1 ml of the liposome solution (10 mg/ml) was extruded through a 0.2 μm filter (Whatman) to make unilamellar liposomes. The extruded solution was split, and the purified outer-membrane proteins (Bam complex and Slam1 and 2) were diluted 1:5 into the liposome solutions at 1.5 μM for Bam and 15 μM for Slam1 and 2. 50 mg of biobeads SM2 (BioRad) were added to remove detergent and promote protein insertion into liposomes. Tubes were sealed with parafilm and kept at room temperature with gentle end-to-end rotation for ~2 hr. Beads were changed two more times and the proteoliposomes were incubated at 4°C overnight with end-to-end rotation. Proteoliposomes were separated from biobeads and spun down at 18,000 × g at 4°C for 5 min. The supernatant was kept at 4°C and used for the experiments within a week. The insertion of Slam1 and 2 and the Bam complex was assessed by SDS–PAGE gels, silver stain, and western blots with α-His antibody.
 
-## Sucrose floatation assay
+### Sucrose floatation assay
 
 The protocol used for the sucrose floatation assay was adapted from Dr. Müller’s group (Fan et al., 2012) with a few modifications. 200 μl of Bam and Slam1 proteoliposomes were resuspended in 1000 μl solution containing 60% sucrose (wt/vol) and transferred to a 5-ml thin-wall polypropylene Beckman tube. The 60% sucrose was layered with 3.8 ml of 30% sucrose and 200 μl of buffer B. The samples were spun in a Beckman SW 50.2 Ti rotor at 45,000 rpm for 16 hr at 4oC. Upon ultracentrifugation, 500 μl fractions were collected from the top. Each fraction was precipitated with 5% TCA, washed three times with 100% acetone. The samples were resuspended in 100 μl of 1× SDS buffer and alternate fractions (first, third, fifth, seventh, and ninth) were run on an SDS–PAGE gel. Western blots were completed with α-His antibody to estimate the quantity of Mcat Slam1 and BamABCDE present in each of the fractions.
 
-## Purification of periplasmic chaperones from E. coli and N. meningitidis
+### Purification of periplasmic chaperones from E. coli and N. meningitidis
 
 Purifications were performed similarly for the soluble proteins E. coli BL21 (DE3) cells expressing either E. coli LolA, SurA, Skp, DegP, or N. meningitidis Skp were grown in 20 ml of LB + kanamycin overnight at 37°C and used for inoculating 2 l of 2YT media. The cells were grown at 37°C to an OD600 ~ 0.6, induced with 1 mM IPTG and then incubated overnight at 20°C. The cells were harvested the next day by centrifugation at 12,200 × g for 20 min at 4°C. The pellets were resuspended in buffer B (50 mM Tris–HCl pH 7, 200 mM NaCl). Cell lysis was performed using EmulsiFlex C3 (Avestin). The cell lysates were spun down at 35,000 × g at 4°C for 50 min to remove cell debris. Supernatant was filtered through a 0.22 μm filter and incubated with 1 ml of Ni-NTA beads for 2 hr at 4°C with gentle stirring. The solution was applied to a column and the Ni-NTA beads were subsequently washed three times with 10 ml buffer B with increasing concentrations of imidazole (10, 20, and 40 mM). Proteins were eluted from the Ni-NTA beads by adding buffer B with 200 mM imidazole. The purified proteins were dialyzed overnight in buffer B at 4°C. The proteins were further purified using S75 or S200 gel filtration (GE Healthcare). The purity of proteins was accessed on SDS–PAGE. The proteins were either stored at −80°C or sent for antibody production.
 
-## Spheroplast release assay
+### Spheroplast release assay
 
 The protocol was adapted from Dr. Müller’s group (Fan et al., 2012) with a few modifications. Briefly, spheroplasts were obtained from E. coli C43 (DE3) or E. coli K12 cells transformed with either pET52 Mcat TbpB-flag or pET52 Nme HpuA-flag or pHERD Mcat TbpB-flag (E. coli K12 only). The cells were grown in LB with 100 μg/ml ampicillin and induced for expression by 0.5 mM IPTG (E. coli C43) or 0.1% arabinose (E. coli K12) overnight at 20°C. E. coli cells were adjusted to have OD600 ~ 1.0. The cells were harvested by centrifugation at 6800 × g for 2 min at 4°C. The pellets were then resuspended in 100 μl of buffer containing 50 mM Tris–HCl pH 7 and 0.5 M sucrose. The resuspended solutions were kept on ice and converted to spheroplasts by adding 100 μl of buffer containing 0.2 mg/ml lysozyme and 8 mM EDTA with gentle inversion for mixing. The solutions were incubated on ice for at least 20 min. The spheroplasts were collected by spinning at 10,000 × g for 10 min and resuspended in 100 μl of M9 minimal media containing M9 minimal salts, 2% glucose and 0.25 μM sucrose. Expression of SLPs was resumed by addition of 0.5 mM IPTG or 0.1% arabinose. 10 μM of E. coli LolA was added to promote the release of SLPs from the spheroplasts at 37°C. Samples were collected at different time points and spun down at 18,000 × g for 10 min at 4°C to remove spheroplasts. Supernatants at different time points were mixed with SDS loading buffer and run on an SDS–PAGE gel. Western blot analysis using α-flag antibody to estimate the quantity of TbpB and HpuA released by spheroplasts upon the addition of LolA.
 
-## Bam complex functional assay
+### Bam complex functional assay
 
 To test the activity of the Bam complex, the ability of Bam proteoliposomes to potentiate the insertion of spheroplast-released OmpA was used. E. coli strain C43 (DE3) cells were converted into spheroplasts and recovered in M9 minimal media as previously described. Spheroplasts were then spun down at 18,000 × g at 4oC for 10 min to isolate the secreted supernatant. Supernatant was spun down again at 60,000 × g at 4oC to further remove insoluble and remains of outer membrane. Top 200 μl of the soluble fraction was collected and kept on ice. 10 μl of iced-cold supernatant was incubated with either 10 μl of buffer B (liposome buffer), empty liposome, or Bam proteoliposome. Incubations were started every 5 min and all reactions were stopped at the same time by adding 5 μl of 5× SDS loading buffer. Samples of 0, 5, 10, and 20 min were loaded on SDS–PAGE and followed by α-OmpA western blot to access the folding process of E. coli OmpA in the presence of Bam proteoliposome.
 
-## Purification of Mcat TbpB
+### Purification of Mcat TbpB
 
 E. coli C43 (DE3) cells were transformed with pET52b Mcat TbpB flag-tag. The cells were grown in 20 ml of LB + 100 μg/ml ampicillin overnight at 37°C and were used to inoculate 2 l of 2YT + 100 μg/ml ampicillin the next day. Once OD600 reached 0.6, 1 mM IPTG was added to induce Mcat TbpB-flag and the protein expression was carried overnight at 20°C. The purification was performed similar to Slam and Bam OMP purification protocol. After the membranes were extracted and solubilized in 50 mM Tris pH 8, 200 mM NaCl, and 0.1% DDM, 100 μl of flag-beads (sigma) was added into the solution and incubated for 4 hr at 4°C. The beads were loaded on a gravity column and washed three times with 5 ml of 50 mM Tris pH 8, 200 mM NaCl, and 0.03% DDM. Mcat TbpB-flag was eluted by adding 500 μl of 0.1 M glycine, pH 3.5, 0.03% DDM, and 100 μl of 1 M Tris pH 8 was immediately added into the eluted fraction. A280 of the last eluted droplet was measured to determine whether additional volume is needed to elute more protein. All eluted fractions were pooled and concentrated to 0.5 mg/ml. The protein was flash-freezed in liquid nitrogen and stored at −80°C for in vitro proteoliposomes assay.
 
-## Dot blot assay for testing function of TbpB
+### Dot blot assay for testing function of TbpB
 
 0.5 μl of TbpB (1 mg/ml), TbpA (1 mg/ml), BSA (1 mg/ml), and BamABCDE (1 mg/ml) was spotted on a nitrocellulose membrane. The cells were blocked with 5% skim milk and then developed with a biotinylated human transferrin (50 μg/ml) followed by streptavidin-conjugated HRP.
 
-## Translocation assay with purified TbpB
+### Translocation assay with purified TbpB
 
 To develop the defined translocation assay, purified TbpB was diluted to 6 μM in buffer B or 8 M urea. The TbpB samples were rapidly diluted 1/12 into 50 μl of Empty, Bam, Slam1&2, and Bam + Slam1&2 proteoliposomes to bring the final concentration of TbpB to 0.5 μM and urea to 0.66 M. The samples were incubated for 15 min at 37°C with addition of 10 mg biobeads. The solutions were isolated and then incubated with proteinase K (0.5 mg/ml) in the presence or absence of Triton X-100 (1%). Samples were incubated at room temperature for 30 min. 5 mM PMSF was then added to inhibit proteinase K. Samples were then run on SDS–PAGE, followed by western blotting and α-flag antibody was used to detect TbpB.
 
-## Spheroplast-dependent translocation assay
+### Spheroplast-dependent translocation assay
 
 To develop the spheroplast-dependent translocation assay, we followed the protocol described above for the generation of spheroplasts. Spheroplasts were collected by spinning at 10,000 × g for 10 min and resuspended in 100 μl of M9 minimal salt media containing M9 minimal salts, 2% glucose, 0.25 μM sucrose, and 10 μM of E. coli LolA. Subsequently, 50 μl of empty liposomes or Bam, Slam1, or Bam + Slam1 proteoliposomes were added to the separate tubes of the spheroplasts. Expression of TbpB was induced by the addition of 1 mM IPTG and incubation at 37°C for 15 min. Spheroplasts were spun down at 18,000 × g for 10 min at 4°C. Supernatants were collected and treated with the final concentration of 0.5 mg/ml proteinase K in the presence/absence of 1% Triton X-100 and incubated at 37°C for 1 hr. 5 mM PMSF was added to inactivate the proteinase K and samples were loaded on SDS–PAGE gels followed by western blots with α-flag antibodies to assess protection from proteinase K activity.
 
-## Spheroplast-independent translocation assay
+### Spheroplast-independent translocation assay
 
 A similar protocol was performed for spheroplast-independent translocation assay. After 30 min of spheroplasts resuming protein expression in M9 media with addition LolA, the solution was spun down at 16,000 × g for 10 min at 4°C. 50 μl of obtained supernatant was incubated with 50 μl of Empty, Bam, Slam1, or Bam + Slam1 proteoliposomes for additional 15 min at 37°C (1:1). The samples were then treated with proteinase K (0.5 mg/ml) in the presence or absence of Triton X-100 (1%) as described in the previous section.
 
-## TbpB pulldown assay
+### TbpB pulldown assay
 
 C-terminal flag-tagged TbpB was released from E. coli spheroplasts as described above. After 15 min of incubating with LolA, spheroplasts were removed by spinning down at 16,000 × g for 20 min at 4°C. 1 ml of supernatant was obtained and incubated with 50 μl prewashed flag beads at 4°C for 2 hr. Beads were spun down at 700 × g at 4°C for 10 min and supernatant was collected as flow through (FT). Beads were washed three times with 1 ml of 1× M9 media. Bead samples were sent to mass spectrometry facility (SPARC – Sickkids) for trypsin digestion and analysis. Data analysis was done by Scaffold 4 software. Cytoplasmic contaminations and proteins that have less than five total spectrums count were excluded from the summary table. For eluting protein complexes, beads were incubated with 200 μl of 50 mM glycine pH 2.8 at room temperature for 5 min. Beads were spun down at 700 × g at 4°C for 10 min and supernatant was collected as elution (E). All samples were treated with 5× SDS loading buffer and pH was adjusted before loading on SDS–PAGE followed by western blotting. TbpB and AfuA (the negative control) were detected using rabbit α-flag antibody, followed by α-rabbit HRP secondary antibody. LolA was detected using mouse α-his antibody and Skp was detected using mouse α-E. coli Skp antibody, followed by α-mouse HRP secondary antibody.
 
-## Chaperone pulldown assays
+### Chaperone pulldown assays
 
 His-tagged chaperones (SurA, Skp, and DegP) were purified as described above. 10 μM of each chaperone was added along with 10 μM untagged LolA during TbpB/HpuA expression in E. coli spheroplasts. After 15 min, spheroplasts were removed by spinning down at 16,000 × g for 20 min at 4°C. 1 ml of supernatant was obtained and incubated with 20 μl prewashed Ni-resin at 4°C for 2 hr. Beads were spun down at 700 × g at 4°C for 10 min and supernatant was collected as flow through (FT). Beads were washed three times with 1 ml of 50 mM Tris 7, 200 mM NaCl, 10 mM imidazole, and 0.1% Triton X-100. Proteins were eluted with 100 μl of 50 mM Tris 7, 200 mM NaCl, and 200 mM imidazole. All samples were treated with 5× SDS loading buffer and pH was adjusted before loading on SDS–PAGE followed by western blotting. TbpB, HpuA, and AfuA (the negative control) were detected using rabbit α-flag antibody, followed by α-rabbit HRP secondary antibody.
 
-## Reconstitution of Mcat Slam1 and Mcat TbpB in K12 E. coli strains (wild type and mutants)
+### Reconstitution of Mcat Slam1 and Mcat TbpB in K12 E. coli strains (wild type and mutants)
 
 E. coli K12 wild type, K12 Δskp and K12 Δdegp were obtained from the Keio’s collection (Baba et al., 2006). These cells were cotransformed with pGCC4 mcat slam1 (with N-terminal his-tag) and pHERD mcat tbpb (with C-terminal flag-tag). Successfully transformed cells were selected on LB + erythromycin (50 μg/ml) + ampicillin (100 μg/ml) plate. Cells were grown in LB media with the appropriate antibiotics until OD600 ~ 0.6 and then were treated with 0.5 mM IPTG for Slam1 overnight expression. The next day, the cells were spun down at 3000 rpm for 5 min and the pellets were resuspended in fresh LB media (with appropriate antibiotics), recovered for 30 min at 37°C, 150 rpm. 0.1% arabinose was added into the media to induce the expression for TbpB for 4 hr. The cells were then harvested and ready for plate reader assay with biotinylated human transferrin and α-flag antibody as previous described above.
 
-## In vitro proteoliposomes translocation with addition of periplasmic chaperones
+### In vitro proteoliposomes translocation with addition of periplasmic chaperones
 
 The assay was modified based on the previous assay described above for purified TbpB. In this assay, 10 μM of DDM-Mcat TbpB complex was diluted 1:10 in 50 mM Tris 7, 200 mM NaCl, 8 M urea buffer with addition of 20 mg biobeads, 10 μM E. coli LolA and 30 μM E. coli Skp or E. coli SurA (negative control). The denaturation was performed at 4°C for 2 hr in 1.5 ml microcentrifuge tube with end-to-end rotation. The beads and insoluble were removed by spinning down at 16,000 × g for 5 min. 50 μl of the supernatant was then incubated with 250 μl of either empty liposomes or Slam1 proteoliposomes (to further dilute urea concentration) with 50 mg fresh SM2 biobeads. The solutions were incubated at room temperature for 1 hr and were then treated with 0.1 mg/ml proteinase K or proteinase K + 0.1% Triton X-100 for 15 min. 1 mM PMSF was added to inhibit the proteinase K before adding SDS loading buffer for gel electrophoresis and western blot.
 
 For the follow-up sucrose floatation assay, the proteinase K digested proteoliposomes solutions (no Triton X-100 treatment) were mixed with 1 ml of 60% sucrose and incubated on ice for 10 min. A layer of 10 ml of 30% sucrose was then added on top and incubated on ice for 10 min. 1 ml of 50 mM Tris 7, 200 mM NaCl was used to top up the 13 ml polyethylene tube and the solutions were spun at 27,000 × g for 18 hr at 4°C using SW45 rotor (Beckman). 1 ml of top fraction, 10 ml of middle fraction, and 2 ml of bottom fractions were collected for TCA precipitation (Koontz, 2014). The pellets were resuspended in 1× SDS loading buffer, followed by SDS–PAGE and α-flag western blots to estimate the quantity of Mcat TbpB in each fraction.
 
-## Gene deletion and complementation of Skp in N. meningitidis
+### Gene deletion and complementation of Skp in N. meningitidis
 
 Restriction-free (RF) cloning was used for the following plasmid (Supplementary file 1). To completely replace skp gene with a kanamycin cassette, pUC19 Δskp::kan plasmid was cloned to contain the kan2 gene with upstream and downstream 500 bp flanking region of skp. The plasmid was used to transform N. meningitidis B16B6 strain using spot transformation on BHI plate (Dillard, 2011). The plate was incubated overnight at 37°C, 5% CO2. The lawn within the spot was streaked onto a BHI + 75 μg/ml kanamycin and incubated for 18 hr. Colony PCR was used to select cells that have skp deleted and the colony was then grown in 3 ml of BHI media + 75 μg/ml kanamycin overnight at 37°C, 5% CO2. The cells were adjusted to have OD600 ~ 1.0 and 500 μl was spun down at 3000 rpm for 5 min while the remaining cells were used to make 30% glycerol stock and stored at −80°C. The cell pellets were resuspended in PBS buffer. 2× SDS loading buffer was then added for SDS–PAGE, followed by an α-Nme Skp antibody to confirm the absence of Skp in the B16B6 Δskp mutant.
 
 Complementation vector pGCC4 Nme Skp was constructed by cloning the B16B6 skp gene into the PacI/FseI site of pGCC4 by RF cloning. The plasmid was used to transform B16B6 N. meningitidis Δskp strain using spot transformation. The lawn within the spawn was streaked onto a BHI + 5 µg/ml erythromycin plate and incubated for 36 hr. Colony PCR was used to select cell colonies that have skp gene reintroduced. The colonies were then streaked on new BHI (+5 µg/ml erythromycin) with 1 mM IPTG plate and incubated overnight. Colonies were collected, resuspended in 1× SDS loading buffer, ran on SDS–PAGE, and transferred on PVDF blots. α-Nme skp antibody was used to access the expression of Skp from pGCC4 plasmid in the B16B6 Δskp mutant.
 
-## N. meningitidis growth assay
+### N. meningitidis growth assay
 
 B16B6 N. meningitidis wild type, Δslam1, Δtbpb, and Δskp mutant was grown overnight in 2 ml BHI ± 50 μg/ml kanamycin. The OD600 was adjusted to 1.0 and 2 μl was used to inoculate 200 μl of BHI ± 50 μg/ml kanamycin. The cells were grown on a 96-well plate with 150 rpm shaking at 37°C. The OD600 was recorded every 30 min for 24 hr using Nivo microplate reader (VICTOR Nivo).
 
-## Exposure of functional TbpB on the surface of N. meningitidis mutants
+### Exposure of functional TbpB on the surface of N. meningitidis mutants
 
 The cultures were started similar to the growth assay. After adjusting the OD600 to 1.0, 30 μl of cells were used to inoculate 3 ml of BHI ± kanamycin (50 μg/ml) in a 15-ml culture tube. After 4 hr, 0.1 mM deferoxamine was added to induce expression of TbpB. 1 mM IPTG was also added to Δskp + pGCC4 Nme Skp to induce expression of Skp. The cells were grown for 16 hr at 37°C, 5% CO2. Cells were adjusted to have OD600 ~ 1.0 and 1 ml of cells were spun down at 3000 rpm for 5 min. Cell pellets were washed with 500 μl of PBS + 1 mM MgCl2 and then resuspended in 200 μl of PBS + 1 mM MgCl2 + 50 μg/ml biotinylated human transferrin (bio-htf) or rabbit α-TbpB antibody (1:200 of unknown concentration) followed by 1-hr incubation at 25°C. The cells were spun down at 3000 rpm for 5 min and the pellets were washed three times with 200 μl of PBS + 1 mM MgCl2. The cell pellets were resuspended in 200 μl of PBS + 1 mM MgCl2 buffer with 50 μg/ml streptavidin-conjugated phycoerythrin (for primary of bio-htf) or 50 μg/ml α-rabbit IgG-linked phycoerythrin (for primary of α-TbpB) and incubated for 1 hr. Cells were spun down, pellets were washed three times, resuspended in 200 μl of PBS + 1 mM MgCl2 and transferred into Greiner 96-well plates black flat-bottom. Fluorescence intensity was read using a microplate reader (Synergy) at wavelength 488 nm (excitation) and 575 nm (emission). OD600 was measured for normalizing the fluorescent signal.
 
-## Materials and correspondence
+### Materials and correspondence
 
 All data are available in the main text or the supplementary materials. Correspondence and requests for materials should be addressed to trevor.moraes@utoronto.ca.

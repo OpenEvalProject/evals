@@ -14,20 +14,20 @@
 
 ### Affiliations
 
-1. https://ror.org/01qv8fp92 Department of Physiology, Louisiana State University Health Sciences Center New Orleans United States
-2. https://ror.org/0130frc33 Department of Pharmacology, University of North Carolina Chapel Hill United States
-3. https://ror.org/03gds6c39 Institute of Molecular Medicine, University of Texas Health Sciences Center Houston United States
-4. https://ror.org/0130frc33 Bowles Center for Alcohol Studies, University of North Carolina Chapel Hill United States
+1. Department of Physiology, Louisiana State University Health Sciences Center New Orleans United States ([ROR:01qv8fp92](https://ror.org/01qv8fp92))
+2. Department of Pharmacology, University of North Carolina Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+3. Institute of Molecular Medicine, University of Texas Health Sciences Center Houston United States ([ROR:03gds6c39](https://ror.org/03gds6c39))
+4. Bowles Center for Alcohol Studies, University of North Carolina Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
 5. Department of Integrative Biology and Pharmacology, McGovern Medical School at UT Health Houston United States
-6. https://ror.org/01qv8fp92 Neuroscience Center of Excellence, Louisiana State University Health Sciences Center New Orleans United States
-7. https://ror.org/01qv8fp92 Alcohol & Drug Abuse Center of Excellence, Louisiana State University Health Sciences Center New Orleans United States
-8. https://ror.org/03jg6a761 Southeast Louisiana VA Healthcare System (SLVHCS) New Orleans United States
+6. Neuroscience Center of Excellence, Louisiana State University Health Sciences Center New Orleans United States ([ROR:01qv8fp92](https://ror.org/01qv8fp92))
+7. Alcohol & Drug Abuse Center of Excellence, Louisiana State University Health Sciences Center New Orleans United States ([ROR:01qv8fp92](https://ror.org/01qv8fp92))
+8. Southeast Louisiana VA Healthcare System (SLVHCS) New Orleans United States ([ROR:03jg6a761](https://ror.org/03jg6a761))
 
 † Corresponding author
 
 ## Abstract
 
-Corticotropin-releasing factor type-1 (CRF 1 ) receptors are critical to stress responses because they allow neurons to respond to CRF released in response to stress. Our understanding of the role of CRF 1 -expressing neurons in CRF-mediated behaviors has been largely limited to mouse experiments due to the lack of genetic tools available to selectively visualize and manipulate CRF 1 + cells in rats. Here, we describe the generation and validation of a transgenic CRF 1 -Cre- td Tomato rat. We report that Crhr1 and Cre mRNA expression are highly colocalized in both the central amygdala (CeA), composed of mostly GABAergic neurons, and in the basolateral amygdala (BLA), composed of mostly glutamatergic neurons. In the CeA, membrane properties, inhibitory synaptic transmission, and responses to CRF bath application in td Tomato + neurons are similar to those previously reported in GFP + cells in CRFR1-GFP mice. We show that stimulatory DREADD receptors can be targeted to CeA CRF 1 + cells via virally delivered Cre-dependent transgenes, that transfected Cre/ td Tomato + cells are activated by clozapine-n-oxide in vitro and in vivo, and that activation of these cells in vivo increases anxiety-like and nocifensive behaviors. Outside the amygdala, we show that Cre- td Tomato is expressed in several brain areas across the brain, and that the expression pattern of Cre- td Tomato cells is similar to the known expression pattern of CRF 1 cells. Given the accuracy of expression in the CRF 1 -Cre rat, modern genetic techniques used to investigate the anatomy, physiology, and behavioral function of CRF 1 + neurons can now be performed in assays that require the use of rats as the model organism.
+Corticotropin-releasing factor type-1 (CRF1) receptors are critical to stress responses because they allow neurons to respond to CRF released in response to stress. Our understanding of the role of CRF1-expressing neurons in CRF-mediated behaviors has been largely limited to mouse experiments due to the lack of genetic tools available to selectively visualize and manipulate CRF1+ cells in rats. Here, we describe the generation and validation of a transgenic CRF1-Cre-tdTomato rat. We report that Crhr1 and Cre mRNA expression are highly colocalized in both the central amygdala (CeA), composed of mostly GABAergic neurons, and in the basolateral amygdala (BLA), composed of mostly glutamatergic neurons. In the CeA, membrane properties, inhibitory synaptic transmission, and responses to CRF bath application in tdTomato+ neurons are similar to those previously reported in GFP+ cells in CRFR1-GFP mice. We show that stimulatory DREADD receptors can be targeted to CeA CRF1+ cells via virally delivered Cre-dependent transgenes, that transfected Cre/tdTomato+ cells are activated by clozapine-n-oxide in vitro and in vivo, and that activation of these cells in vivo increases anxiety-like and nocifensive behaviors. Outside the amygdala, we show that Cre-tdTomato is expressed in several brain areas across the brain, and that the expression pattern of Cre-tdTomato cells is similar to the known expression pattern of CRF1 cells. Given the accuracy of expression in the CRF1-Cre rat, modern genetic techniques used to investigate the anatomy, physiology, and behavioral function of CRF1+ neurons can now be performed in assays that require the use of rats as the model organism.
 
 ## Introduction
 
@@ -41,9 +41,9 @@ Here, we describe the generation of a novel CRF1-Cre-tdTomato transgenic rat lin
 
 ## Results
 
-## Generation of CRF1-Cre-tdTomato rats and validation of iCre (TdTomato) expression in CRF1-expressing cells in the CeA
+### Generation of CRF1-Cre-tdTomato rats and validation of iCre (TdTomato) expression in CRF1-expressing cells in the CeA
 
-## Design of CRF1-Cre bacterial artificial chromosome (BAC) transgene
+#### Design of CRF1-Cre bacterial artificial chromosome (BAC) transgene
 
 Please refer to Figure 1 for a schematic of the BAC generation. The design of the CRF1:Cre rat BAC transgene is similar to the design used to generate CRFR1:Cre BAC transgenic mice (Jiang et al., 2018), with the exception that a BAC clone from rat was used (clone RNB2-336H12 from Riken Rat genomic BAC library). The BAC clone used lacks any other identified protein encoding genetic sequences, reducing the possibility that other genes will be expressed from BAC when introduced into the rat genome. We obtained the RNB2-336H12 clone from the Riken Rat BAC clone collection (STAR Consortium et al., 2008). This BAC was inserted using recombineering techniques such that sequences encoding Crhr1 were replaced, beginning at the translation ATG start site, with sequences encoding a bicistronic iCre-2A-tdTomato transgene (Figure 1C). iCre is a codon-optimized Cre that produces consistent Cre activity (Koresawa et al., 2000). tdTomato encodes a red fluorescent protein that allows cells expressing the transgene to be visualized (Shaner et al., 2004). The poly A and WPRE sequences stabilize the mRNA to achieve more robust expression (Glover et al., 2002). To insert the iCre-p2A-tdTomato cassette into the BAC, we transformed bacterial cells that contain the BAC with a helper plasmid (Portmage-4) which contains a heatshock-inducible element that drives expression of lambda red recombinase and confers chloramphenicol resistance (Liu et al., 2003). These cells were then transformed with the iCre-p2A-tdTomato homology arm targeting cassette, after a 15 min heatshock. Cells were selected on kanamycin (for neoR) and colonies were screened by PCR for insertion of the cassette at the site of Crhr1 in the BAC. BAC DNA from a single clone that contained the correct insertionwas purified, then transformed into EL250 cells, which carry an arabinose inducible flipase construct. Cultures of EL250 carrying the inserted BAC were induced to express flp recombinase by incubating in L-arabinose for 1 hr, then selected on ampicillin (the resistance of the BAC) and screened for loss of kanamycin resistance (removed by flp recombinase; Figure 1). Colonies were PCR screened to confirm that they contained BAC DNA containing the Cre-2A-Tom transgene inserted in the Crhr1 locus, and lacked the f3 flanked neoR cassette. A single bacterial clonecontaining the final full-length inserted BAC construct was sent to the University of North Carolina (UNC) Transgenic Core, where BAC DNA was purified, checked for integrity by DNA laddering with EcoR1 and XbaI followed bypulsed-gel electrophoresis, and by PCR, linearized, then injected into single-cell Wistar rat oocytes.
 
@@ -51,17 +51,17 @@ Please refer to Figure 1 for a schematic of the BAC generation. The design of th
 
 **Figure 1.:** (A)Crhr1 is located on chromosome 10 in the rat. A BAC clone containing 196 kb of DNA surrounding the Crhr1 coding region includes 100 kb of upstream and 80 kb of downstream DNA, where the majority of promoter and enhancer sequences that control Crhr1 expression are located, was obtained (Riken, RNB2-336H12). There are no other sequences within this 196 kb DNA clone have been annotated as coding sequences for genes other than Crhr1. (B) A transgene containing 5’ (blue) and 3’ (magenta) targeting sequences, a bicistronic iCre 2 A fused tdTomato (red) sequence, 3’ polyA/WPRE stabilizing sequence, and a F3 flanked neomycin resistance sequence (yellow) was constructed then transformed into E. coli containing the RNB2-336H12 BAC construct. (C) Using recombineering techniques we isolated BAC clones in which targeted insertion of the transgene at the translation start site of Crhr1 (ATG) was confirmed by PCR/sequencing. A single Bacterial clone containing the transgene inserted BAC was sent to the UNC transgenic facility where BAC DNA was purified and injected into single cell, fertilized rat oocytes. Two independent rat lines were recovered in which the entire BAC sequence (confirmed by PCR) was inserted into genomic DNA, of which one line displayed transgenic expression in a pattern representative of known Crhr1 expression patterns.
 
-## Generation of transgenic rats
+#### Generation of transgenic rats
 
 Transgenic rats were generated by the UNC Transgenic Core by injecting single-cell rat oocytes with the modified BAC described above (Figure 1D and E). DNA from F1 offspring were tested for the presence of the introduced BAC transgene using PCR. Complete BAC insertion was determined using four primer sets representing unique junctions in the BAC. Two animals containing BAC insertions were further tested using this procedure and were found to contain the entire BAC sequence. Transgenic rats were first outcrossed to wildtype Wistar animals, then intercrossed to maximize the genetic similarity of transgenic offspring. Transgenic animals were generated on a Wistar backgroud because Wistar rats are commonly used in models of alcohol and substance use disorders, and other models of behavioral and physiological disorders.
 
-## Validation of iCre (tdTomato) expression in CeA CRF1 cells
+#### Validation of iCre (tdTomato) expression in CeA CRF1 cells
 
 The purpose of this experiment was to determine the pattern of tdTomato protein expression and Crhr1 and iCre mRNA expression within the CeA. Immunohistochemical labeling of tdTomato in the amygdala showed that tdTomato+ cells were located in the lateral, basolateral, central, and medial amygdala (Figure 2A). Within the CeA, tdTomato+ cells were found to be concentrated in the CeAm, whereas the CeAl was largely devoid of tdTomato+ cells (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/67822/elife-67822-fig2-v2.jpg)
 
-**Figure 2.:** tdTomato in CRF1+ expressing neurons located in the medial central nucleus of the amygdala (CeAm).(A) A low-magnification image of a section containing the amygdala from a CRF1-Cre rat, immunohistochemically labeled for tdTomato. Expression of the CRF1-Cre transgene is broadly very similar to previous reports of CRF1 expression in both rat and mouse. (B) Within the boxed region of panel A, higher magnification reveals CRF1+ cells in the lateral amygdala (LA), basolateral amygdala (BLA), medial portion central amygdala (CeAm), and medial amygdala (MeA). The lack of significant labeling in the CeAl is consistent with reports using both in situ hybridization and transgenic reporters to detect CRF1 expression. (C) Micrograph of the CeA from the region boxed in panel B allows visualization of mRNA encoding iCre (red) and Crhr1 (green) along with nuclei stained with DAPI (blue). (D–G) Higher magnification images of the boxed region in (C) allows visualization of mRNA for Crhr1 (D, green), and iCre (E, red), with nuclei visualized by DAPI staining (F). (G) Merged images reveals that many CeAm neurons that are positive for Crhr1 mRNA are also positive for iCre mRNA (arrows point to double positive neurons). Quantification of coincidence of in situ hybridization for both Crhr1 and iCre mRNAs demonstrates that >90% of Crhr1-positive cells are also positive for iCre in the CeAm (n = 3). (H) Graphical representation of quantification of coincident labeling, or (I) a table of the precise counts from each of three male and three female CRF1-Cre transgenic animals. We observed greater than 90% of neurons positive for both Crhr1 and iCre in the CeAm.
+**Figure 2.:** (A) A low-magnification image of a section containing the amygdala from a CRF1-Cre rat, immunohistochemically labeled for tdTomato. Expression of the CRF1-Cre transgene is broadly very similar to previous reports of CRF1 expression in both rat and mouse. (B) Within the boxed region of panel A, higher magnification reveals CRF1+ cells in the lateral amygdala (LA), basolateral amygdala (BLA), medial portion central amygdala (CeAm), and medial amygdala (MeA). The lack of significant labeling in the CeAl is consistent with reports using both in situ hybridization and transgenic reporters to detect CRF1 expression. (C) Micrograph of the CeA from the region boxed in panel B allows visualization of mRNA encoding iCre (red) and Crhr1 (green) along with nuclei stained with DAPI (blue). (D–G) Higher magnification images of the boxed region in (C) allows visualization of mRNA for Crhr1 (D, green), and iCre (E, red), with nuclei visualized by DAPI staining (F). (G) Merged images reveals that many CeAm neurons that are positive for Crhr1 mRNA are also positive for iCre mRNA (arrows point to double positive neurons). Quantification of coincidence of in situ hybridization for both Crhr1 and iCre mRNAs demonstrates that >90% of Crhr1-positive cells are also positive for iCre in the CeAm (n = 3). (H) Graphical representation of quantification of coincident labeling, or (I) a table of the precise counts from each of three male and three female CRF1-Cre transgenic animals. We observed greater than 90% of neurons positive for both Crhr1 and iCre in the CeAm.
 
 We used RNAscope ISH to test the hypothesis that Crhr1 and iCre mRNA are highly colocalized within the CeA. tdTomato mRNA was not probed because iCre and tdTomato are expressed as a single polypeptide (iCre-2A-tdTomato) that is cleaved at the 2 A site. RNAscope ISH probing of Crhr1 and iCre mRNA showed strong expression of these molecules within the CeAm (Figure 2C–G). Since previous work (e.g., Justice et al., 2008) and our data show that CRF1+ cells are largely localized to the CeAm, analysis of Crhr1 and iCre mRNA expression was focused on this subregion. Quantification of Crhr1- and iCre-expressing cells within the CeAm showed that more than 90% of Crhr1-expressing cells co-express iCre (Figure 2H, I). There were no significant sex differences in the number of Crhr1+, Cre+, and Crhr1+/Cre+ +, but there was a trend for more Crhr1+ cells in the CeAm of male rats (p = 0.07).
 
@@ -69,49 +69,49 @@ Previous work showed that CeA CRF+ cells are concentrated in the CeAl, whereas C
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/67822/elife-67822-fig3-v2.jpg)
 
-**Figure 3.:** 1-driven expression of Cre/tdTomato in the CeA.(A) Visualization of CRF using immunofluorescent labeling (green) in a rat carrying the CRF1-Cre2aTom transgene (red) reveals minimal cellular expression of CRF1 in the lateral central nucleus of the amygdala (CeAl) where CRF is highly abundant. This discrepancy in CRF localization compared to CRF1 expression is consistent with previous reports of CRF1 expression in both rat and mouse. In contrast to the CeAl, the medial central nucleus of the amygdala (CeAm) contains many CRF1+ neurons (reported by the CRF1-Cre2Atom transgene), in contact with puncta positive for CRF peptide. (B) High-resolution images from the boxed regions of CeAl and CeAm in panel A. CRF staining is dense in both the CeAl and CeAm (top panels); however, cellular expression of the CRF1-Cre2aTom transgene is low in the CeAl, while many neurons in the CeAm are positive for CRF1 expression (middle panels). Merged images (lower panels) display the coincident staining of CRF1+neurons with CRF puncta in the CeAm, suggesting that stress driven CRF release directly signals to CRF1+ neurons in the CeAm to modulate neural excitability to influence the output of CeAm neurons. LA – lateral amygdala, BLA – basolateral amygdala.
+**Figure 3.:** (A) Visualization of CRF using immunofluorescent labeling (green) in a rat carrying the CRF1-Cre2aTom transgene (red) reveals minimal cellular expression of CRF1 in the lateral central nucleus of the amygdala (CeAl) where CRF is highly abundant. This discrepancy in CRF localization compared to CRF1 expression is consistent with previous reports of CRF1 expression in both rat and mouse. In contrast to the CeAl, the medial central nucleus of the amygdala (CeAm) contains many CRF1+ neurons (reported by the CRF1-Cre2Atom transgene), in contact with puncta positive for CRF peptide. (B) High-resolution images from the boxed regions of CeAl and CeAm in panel A. CRF staining is dense in both the CeAl and CeAm (top panels); however, cellular expression of the CRF1-Cre2aTom transgene is low in the CeAl, while many neurons in the CeAm are positive for CRF1 expression (middle panels). Merged images (lower panels) display the coincident staining of CRF1+neurons with CRF puncta in the CeAm, suggesting that stress driven CRF release directly signals to CRF1+ neurons in the CeAm to modulate neural excitability to influence the output of CeAm neurons. LA – lateral amygdala, BLA – basolateral amygdala.
 
-## Electrophysiological characterization of CeA CRF1-Cre-tdTomato neurons
+### Electrophysiological characterization of CeA CRF1-Cre-tdTomato neurons
 
-## Membrane properties and inhibitory transmission
+#### Membrane properties and inhibitory transmission
 
 tdTomato+ CRF1+ neurons were identified and differentiated from unlabeled CeA neurons using fluorescent optics and brief ( < 2 s) episcopic illumination in slices from adult male and female CRF1-Cre-tdTomato rats. Consistent with our immunohistochemical studies (Figure 3), the majority of CRF1+ neurons were observed in the medial subnucleus of the CeA (CeAm) and this region was targeted for recordings. Passive membrane properties were determined during online voltage-clamp recordings using a 10 mV pulse delivered after break-in and stabilization. The resting membrane potential was determined online after breaking into the cell using the zero current (I = 0) recording configuration. No differences were observed between male and female membrane properties including membrane capacitance, membrane resistance, decay time constant, or resting membrane potential (Figure 4A). CRF1+ CeA neurons were then placed in current clamp configuration and a depolarizing step protocol was conducted to allow cell-typing based on previously described firing properties (Chieng et al., 2006; Herman and Roberto, 2016). The majority of CRF1+ CeA neurons were of the low-threshold bursting type (Figure 4B). Voltage-clamp recordings of pharmacologically-isolated GABAA receptor-mediated spontaneous inhibitory postsynaptic currents (sIPSCs) revealed that CRF1+ neurons are under a significant amount of phasic inhibition (Figure 4C) with no significant sex differences in sIPSC frequency (Figure 4D, left) or sIPSC amplitude (Figure 4D, right).These data indicate that male and female CRF1+ CeA neurons have similar basal membrane properties and are under similar levels of basal inhibitory transmission.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/67822/elife-67822-fig4-v2.jpg)
 
-**Figure 4.:** 1-Cre-tdTomato neurons.(A) Basal membrane properties (Membrane Capacitance, Cm; Membrane Resistance, Rm; Decay Constant, Tau; Membrane Potential, Vm) from male and female CRF1+ CeAm neurons. (B) Representative current-evoked spiking properties from male (top) and female (bottom) CRF1+ CeAm neurons. (C) Basal spontaneous inhibitory postsynaptic currents (sIPSCs) from male (top) and female (bottom) CRF1+ CeAm neurons (right). Inset: representative fluorescent (left) and infrared differential interference contract (IR-DIC, right) image of a CRF1+ CeAm neuron targeted for recording. Scale bar = 20 μm. (D) Average sIPSC frequency (left) and sIPSC amplitude (right) from male and female CRF1+ CeAm neurons. Raw data are available in Source Data File 1.
+**Figure 4.:** (A) Basal membrane properties (Membrane Capacitance, Cm; Membrane Resistance, Rm; Decay Constant, Tau; Membrane Potential, Vm) from male and female CRF1+ CeAm neurons. (B) Representative current-evoked spiking properties from male (top) and female (bottom) CRF1+ CeAm neurons. (C) Basal spontaneous inhibitory postsynaptic currents (sIPSCs) from male (top) and female (bottom) CRF1+ CeAm neurons (right). Inset: representative fluorescent (left) and infrared differential interference contract (IR-DIC, right) image of a CRF1+ CeAm neuron targeted for recording. Scale bar = 20 μm. (D) Average sIPSC frequency (left) and sIPSC amplitude (right) from male and female CRF1+ CeAm neurons. Raw data are available in Source Data File 1.
 
-## CRF sensitivity
+#### CRF sensitivity
 
 Spontaneous firing activity was recorded in CRF1+ CeA neurons from male and female CRF1-Cre-tdTomato rats using the cell-attached configuration. After a stable baseline period of regular firing was established, CRF (200 nM) was focally applied and the firing activity was recorded for a sustained application period of 7–12 min. CRF1+ CeA neurons from male rats had an average baseline firing rate of 2.1 ± 0.5 Hz and focal application of CRF significantly increased the firing activity to 3.4 ± 0.7 Hz (t = 3.5, p = 0.011; Figure 5A and C). CRF1+ CeA neurons from female rats had an average baseline firing rate of 0.8 ± 0.2 Hz and focal application of CRF significantly increased the firing activity to 1.3 ± 0.3 Hz (t = 3.1, p = 0.016 by paired t-test; Figure 5B and D). When firing activity was normalized to baseline values, CRF application significantly increased firing in CRF1+ CeA neurons from male rats to 192.3% ± 25.6% of Control (t = 3.6, p = 0.009; Figure 5E) and significantly increased firing in CRF1+ CeA neurons from female rats to 166.5% ± 13.9% of Control (t = 4.8, p = 0.002; Figure 5E) with no significant difference in the change in firing in response to CRF between male and female CRF1+ neurons.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/67822/elife-67822-fig5-v2.jpg)
 
-**Figure 5.:** 1-Cre-tdTomato neurons.(A) Representative cell-attached recording of spontaneous firing activity in a CRF1+ CeAm neuron from a male CRF1-Cre-tdTomato rat before and during CRF (200 nM) application. (B) Representative cell-attached recording of spontaneous firing activity in a CRF1+ CeAm neuron from a female CRF1-Cre-tdTomato rat before and during CRF (200 nM) application. (C) Summary of changes in spontaneous firing activity with CRF application in CRF1+ CeAm neurons from male CRF1-Cre-tdTomato rats.*p < 0.05 by paired t-test. (D) Summary of changes in spontaneous firing activity with CRF application in CRF1+ CeAm neurons from female CRF1-Cre-tdTomato rats.*p < 0.05 by paired t-test. (E) Normalized change in firing activity in CRF1+ CeAm neurons from male and female CRF1-Cre-tdTomato rats.*p < 0.05 by one-sample t-test. Raw data are available in Source Data File 1.
+**Figure 5.:** (A) Representative cell-attached recording of spontaneous firing activity in a CRF1+ CeAm neuron from a male CRF1-Cre-tdTomato rat before and during CRF (200 nM) application. (B) Representative cell-attached recording of spontaneous firing activity in a CRF1+ CeAm neuron from a female CRF1-Cre-tdTomato rat before and during CRF (200 nM) application. (C) Summary of changes in spontaneous firing activity with CRF application in CRF1+ CeAm neurons from male CRF1-Cre-tdTomato rats.*p < 0.05 by paired t-test. (D) Summary of changes in spontaneous firing activity with CRF application in CRF1+ CeAm neurons from female CRF1-Cre-tdTomato rats.*p < 0.05 by paired t-test. (E) Normalized change in firing activity in CRF1+ CeAm neurons from male and female CRF1-Cre-tdTomato rats.*p < 0.05 by one-sample t-test. Raw data are available in Source Data File 1.
 
 Targeting of Cre-dependent Gq-DREADDs to the CeA increases c-Fos+ CRF1-Cre-tdTomato cells and CeA CRF1-Cre-tdTomato cell activity following CNO treatment c-Fos immunohistochemistry: Four weeks after CRF1-Cre-tdTomato male and female rats were given intra-CeA microinjections of AAV8-hSyn-DIO-HA-hM3D(Gq)-IRES-mCitrine (Active Virus) or AAV5-hSyn-DIO-EGFP (Control Virus), rats were given an injection (i.p.) of CNO (4 mg/kg) and were sacrificed 90 min later. Brain sections containing the CeA were processed for c-Fos immunohistochemistry and the number of c-Fos+ tdTomato cells were quantified. An overwhelming majority of tdTomato cells were located in the CeAm as shown above (Figure 3). Therefore, quantification of c-Fos and tdTomato cells was focused on this subregion. We found that rats in the active virus group had a higher percentage of c-Fos+ tdTomato cells than rats in the control virus group (t = 7.1, p < 0.001; Figure 6A and B).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/67822/elife-67822-fig6-v2.jpg)
 
-**Figure 6.:** 1-Cre-tdTomato neurons.(A) Representative images of CRF1-Cre-tdTomato cells (red) and c-Fos immunostaining (white) in CeAm of rats that were given intra-CeA microinjections of AAV8-hSyn-DIO-HA-hM3D(Gq)-IRES-mCitrine (active virus) or AAV5-hSyn-DIO-EGFP (control virus). Scale bar: 50 µm. (B) CNO treatment 90 min before sacrifice increased the percentage of c-Fos+ tdTomato cells in CeAm of rats that were given active virus compared to rats that were given control virus microinjections. *p < 0.05. (C) Representative whole-cell current clamp recording of membrane potential and firing activity in a CRF1+ CeAm neuron from a male CRF1-Cre-tdTomato rat before and during CNO (10 μM) application. (D) Summary of the change in membrane potential (left) and action potentials (right) in male CRF1+ CeAm neurons after CNO application. *p < 0.05 by paired t-test. (E) Representative whole-cell current clamp recording of membrane potential and firing activity in a CRF1+ CeAm neuron from a female CRF1-Cre-tdTomato rat before and during CNO (10 μM) application. (D) Summary of the change in membrane potential (left) and action potentials (right) in female CRF1+ CeAm neurons after CNO application. *p < 0.05 by paired t-test. Raw data are available in Source Data File 1.
+**Figure 6.:** (A) Representative images of CRF1-Cre-tdTomato cells (red) and c-Fos immunostaining (white) in CeAm of rats that were given intra-CeA microinjections of AAV8-hSyn-DIO-HA-hM3D(Gq)-IRES-mCitrine (active virus) or AAV5-hSyn-DIO-EGFP (control virus). Scale bar: 50 µm. (B) CNO treatment 90 min before sacrifice increased the percentage of c-Fos+ tdTomato cells in CeAm of rats that were given active virus compared to rats that were given control virus microinjections. *p < 0.05. (C) Representative whole-cell current clamp recording of membrane potential and firing activity in a CRF1+ CeAm neuron from a male CRF1-Cre-tdTomato rat before and during CNO (10 μM) application. (D) Summary of the change in membrane potential (left) and action potentials (right) in male CRF1+ CeAm neurons after CNO application. *p < 0.05 by paired t-test. (E) Representative whole-cell current clamp recording of membrane potential and firing activity in a CRF1+ CeAm neuron from a female CRF1-Cre-tdTomato rat before and during CNO (10 μM) application. (D) Summary of the change in membrane potential (left) and action potentials (right) in female CRF1+ CeAm neurons after CNO application. *p < 0.05 by paired t-test. Raw data are available in Source Data File 1.
 
-## Slice electrophysiology
+#### Slice electrophysiology
 
 Coronal sections containing the CeA were prepared from male and female CRF1-Cre-tdTomato rats > 4 weeks after rats were given intra-CeA microinjections of AAV8-hSyn-DIO-HA-hM3D(Gq)-IRES-mCitrine. tdTomato+ and mCitrine+ neurons were identified by brief episcopic illumination using fluorescent optics and positively-identified neurons were targeted for recording in whole-cell current clamp configuration to measure changes in resting membrane potential and spontaneous firing. CNO (10 μM) significantly increased membrane potential and number of action potentials in both male (t = 4.3, p = 0.002; t = 2.6, p = 0.030, respectively; Figure 6C and D) and in female CRF1+ mCitrine+ neurons in the CeA (t = 3.2, p = 0.016; t = 3.6, p = 0.006, respectively; Figure 6E and F), suggesting that hM3D(Gq) receptor expression was functional and could be stimulated by CNO application with no sex differences in expression or agonist sensitivity.
 
-## Chemogenetic stimulation of CeA CRF1-Cre-tdTomato cells increases mechanical nociception and anxiety-like behaviors
+### Chemogenetic stimulation of CeA CRF1-Cre-tdTomato cells increases mechanical nociception and anxiety-like behaviors
 
 Rats were given intra-CeA microinjections of a viral vector for Cre-dependent expression of Gq-DREADD receptors (AAV8-hSyn-DIO-HA-hM3D(Gq)-IRES-mCitrine) or control fluorophore (AAV5-hSyn-DIO-EGFP) (Figure 7A). Behavioral procedures began ≥4 weeks later (Figure 7B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/67822/elife-67822-fig7-v2.jpg)
 
-**Figure 7.:** 1-Cre-tdTomato neurons on nociception and anxiety-like behaviors.(A) Representative image of AAV8-hSyn-DIO-HA-hM3D(Gq)-IRES-mCitrine expression (green) in the CeA. Scale bar: 500 µm. BLA: basolateral amygdala, Opt: optic tract. (B) Timeline of experimental procedures. (C) CNO treatment decreased paw withdrawal thresholds in the Von Frey test of mechanical nociception in rats that were given intra-CeA hM3D(Gq) virus microinjections. There were no effects of treatment on paw withdrawal thresholds in the EGFP control group. (D) CNO treatment had no effects on paw withdrawal latencies in either the hM3D(Gq) or EGFP groups in the Hargreaves test of thermal nociception. (E) CNO treatment decreased the percent time spent in open arms in the EPM test in the hM3D(Gq) group, but had no effect in the EGFP group. (F) CNO treatment decreased the percent time spent in the center of the arena in the OF test in the hM3D(Gq) group, but had no effect in the EGFP group. (G) CNO treatment had no effect on percent time spent in the light box in the LD test. *p < 0.05. Raw data are available in Source Data File 2. iCre and Crhr1 mRNA are highly co-expressed in BLA.
+**Figure 7.:** (A) Representative image of AAV8-hSyn-DIO-HA-hM3D(Gq)-IRES-mCitrine expression (green) in the CeA. Scale bar: 500 µm. BLA: basolateral amygdala, Opt: optic tract. (B) Timeline of experimental procedures. (C) CNO treatment decreased paw withdrawal thresholds in the Von Frey test of mechanical nociception in rats that were given intra-CeA hM3D(Gq) virus microinjections. There were no effects of treatment on paw withdrawal thresholds in the EGFP control group. (D) CNO treatment had no effects on paw withdrawal latencies in either the hM3D(Gq) or EGFP groups in the Hargreaves test of thermal nociception. (E) CNO treatment decreased the percent time spent in open arms in the EPM test in the hM3D(Gq) group, but had no effect in the EGFP group. (F) CNO treatment decreased the percent time spent in the center of the arena in the OF test in the hM3D(Gq) group, but had no effect in the EGFP group. (G) CNO treatment had no effect on percent time spent in the light box in the LD test. *p < 0.05. Raw data are available in Source Data File 2. iCre and Crhr1 mRNA are highly co-expressed in BLA.
 
-## Nociception
+#### Nociception
 
 In the Von Frey test of mechanical nociception, CNO treatment decreased paw withdrawal thresholds in rats that have hM3D(Gq) expression targeted to CeA CRF1+ cells [repeated measures ANOVA; test x treatment interaction (F1,13 = 14.0, p = 0.002)]. There was a significant effect of test within the CNO group only [(F1,7 = 38.0, p < 0.001)], suggesting that chemogenetic stimulation of CeA CRF1+ cells increases mechanical sensitivity. CNO treatment had no effect on paw withdrawal thresholds in rats that received the control EGFP fluorophore (Figure 7C). In the Hargreaves test of thermal nociception, CNO did not affect paw withdrawal latencies in either the hM3D(Gq) or control EGFP groups (Figure 7D).
 
-## Anxiety-like behaviors
+#### Anxiety-like behaviors
 
 In the EPM test, in the hM3D(Gq) group, rats that were given CNO treatment had lower open arms time compared to rats that were given vehicle treatment (t-test; t = 2.6, p = 0.022), suggesting that chemogenetic stimulation of CeA CRF1+ cells increases anxiety-like behavior on the EPM. Control EGFP virus rats did not show differences in open arms times after CNO treatment (Figure 7E). One rat in the hM3D(Gq) group that was given vehicle injection fell off the maze >3 times and was therefore excluded from analysis. In the OF field test, hM3D(Gq) rats that were given CNO treatment spent less time in the center of the arena compared to rats that were given vehicle treatment (t-test; t = 3.3, p = 0.006), suggesting that chemogenetic stimulation of CeA CRF1+ cells increases anxiety-like behavior in the OF. EGFP control rats did not show differences in time spent in the center of the arena after CNO treatment (Figure 7F). In the LD test, CNO treatment did not produce differences in time spent in the light box in either hM3D(Gq) or EGFP control groups (Figure 7G). There were also no differences in latency to enter the light box (data not shown; 20.14 ± 5.63 s, 29.38 ± 10.42 s, 23.00 ± 3.94 s, and 16.17 ± 4.48 s, respectively, for rats in hM3D(Gq) – Veh, hM3D(Gq) – CNO, EGFP – Veh, and EGFP Virus – CNO groups).
 
@@ -119,15 +119,128 @@ Given that most cells in the CeA are GABAergic, we next tested if Crhr1 and iCre
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/67822/elife-67822-fig8-v2.jpg)
 
-**Figure 8.:** Crhr1 and iCre mRNA expression in BLA of CRF1-Cre-tdTomato rats.(A) Crhr1 (green) and iCre (red) mRNA are highly co-expressed in BLA and surrounding areas. (B) Within the BLA, 98.5% of Crhr1 + co-express +iCre (top), and 99.4% of iCre + co-express +Crhr1 (bottom).
+**Figure 8.:** (A) Crhr1 (green) and iCre (red) mRNA are highly co-expressed in BLA and surrounding areas. (B) Within the BLA, 98.5% of Crhr1+ + co-express iCre (top), and 99.4% of iCre+ + co-express Crhr1 (bottom).
 
-## Cre-tdTomato cells are found throughout the brain in areas known to contain CRF1 cells
+### Cre-tdTomato cells are found throughout the brain in areas known to contain CRF1 cells
 
 The purpose of this experiment is to examine if the Cre-tdTomato transgene is expressed in brain areas outside of the amygdala in a pattern that is consistent with known CRF1 expression patterns. Fluorescence imaging of coronal sections across the rostrocaudal axis of CRF1-Cre-tdTomato rat brains show that Cre-tdTomato cells are found in brain areas known to contain CRF1 cells, including the prelimbic and infralimbic cortex, BNST, piriform cortex (PIR), PVN, lateral hypothalamus (LHA), paraventricular thalamus (PVT), hippocampus, ventral tegmental area (VTA), periaqueductal grey (PAG), and dorsal raphe (DR) (Figure 9). The density of Cre-tdTomato cells in these brain areas were surveyed and compared to published reports of Crhr1 mRNA expression patterns in the wildtype rat brain (Van Pett et al., 2000) and of CRF1-GFP cell densities in CRF1-GFP mouse brain (Justice et al., 2008; Table 1). We found that a majority of cells in the BNST and PIR, that a substantial number of cells in the PrL, IL, PVT, VTA, PAG, and DR, and that some cells in the ventral lateral septum (LSv), PVN, LHA, and hippocampus are tdTomato+. The lateral (LHb) and medial habenula (MHb) were largely devoid of tdTomato+ cells, but a small number of tdTomato cells were found in the ventricular zone of the MHb (Figure 9Q). The locus coeruleus (LC) was devoid of tdTomato cells, but a small number of tdTomato puncta was detected (Figure 9X). These tdTomato expression patterns are mostly consistent with Crhr1 mRNA expression patterns in wildtype rats, but some species-specific differences are seen when compared to GFP expression patterns in CRF1-GFP mice. Please see Table 1.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/67822/elife-67822-fig9-v2.jpg)
 
-**Figure 9.:** tdTomato expression.(A) A schematic summary of brain areas that were surveyed for tdTomato expression. Solid red circles indicate brain areas that contain tdTomato cells and dashed circles indicate brain areas that were devoid of tdTomato cells. (B–X) Low (4 x) and high-magnification (×20 ) images of tdTomato (red) and DAPI (blue) fluorescent signals. Yellow boxes demarcate areas from which high-magnification (×20 ) images were acquired. (B) 4 x image of the PrL, IL, and surrounding landmarks. (C) 20 x image of PrL and IL. (D) 4 x of BNST and LSv. (E) 20 x image of BNST and (F) LSv. (G) 4 x and (H) 20 x image of PVN. (I) 4 x image of PIR, MeA, and LHA. (J) 20 x image of PIR, (K) MeA, and (L) LHA. (M) 4 x and (N) 20 x image of hippocampus. (O) 4 x image PVT, LHB, and MHb. (P) 20 x image of PVT and (Q) LHb/MHb. (R) 4 x and (S) 20 x image of VTA. (T) 4 x image of PAG and DR. (U) 20 x image of PAG and (. (V) DRW) 4 x and (X) 20 x image of LC. 3 V: 3rd ventricle, 4 V: 4th ventricle, D3V: dorsal 3rd ventricle, Aq: cerebral aqueduct.
+**Figure 9.:** (A) A schematic summary of brain areas that were surveyed for tdTomato expression. Solid red circles indicate brain areas that contain tdTomato cells and dashed circles indicate brain areas that were devoid of tdTomato cells. (B–X) Low (4 x) and high-magnification (×20 ) images of tdTomato (red) and DAPI (blue) fluorescent signals. Yellow boxes demarcate areas from which high-magnification (×20 ) images were acquired. (B) 4 x image of the PrL, IL, and surrounding landmarks. (C) 20 x image of PrL and IL. (D) 4 x of BNST and LSv. (E) 20 x image of BNST and (F) LSv. (G) 4 x and (H) 20 x image of PVN. (I) 4 x image of PIR, MeA, and LHA. (J) 20 x image of PIR, (K) MeA, and (L) LHA. (M) 4 x and (N) 20 x image of hippocampus. (O) 4 x image PVT, LHB, and MHb. (P) 20 x image of PVT and (Q) LHb/MHb. (R) 4 x and (S) 20 x image of VTA. (T) 4 x image of PAG and DR. (U) 20 x image of PAG and (V) DR. (W) 4 x and (X) 20 x image of LC. 3 V: 3rd ventricle, 4 V: 4th ventricle, D3V: dorsal 3rd ventricle, Aq: cerebral aqueduct.
+
+**Table 1.**
+ Comparison of CRF1-Cre-tdTomato cell densities with Crhr1 mRNA expression levels in rats and CRF1-GFP cell densities in mice in several areas across the rostrocaudal axis of the brain.+: Some cells are positive, ++: A substantial number of cells are positive, +++: Most cells are positive.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Brain area</th>
+      <th>Density of tdTomato cells in CRF1-Cre-tdTomato rats</th>
+      <th>Expression level of Crhr1 mRNA in wildtype rats (Van Pett et al., 2000)</th>
+      <th>Density of GFP cells in CRF1-GFP Mice (Justice et al., 2008)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PrL</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>IL</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>BNST</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+/++</td>
+    </tr>
+    <tr>
+      <td>LSv</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PVN</td>
+      <td>+</td>
+      <td>+</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>PIR</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>++/+++</td>
+    </tr>
+    <tr>
+      <td>MeA</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+/++</td>
+    </tr>
+    <tr>
+      <td>LHA</td>
+      <td>+</td>
+      <td>+</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>Hipp</td>
+      <td>+ (subiculum, CA3)/+++ (CA1)</td>
+      <td>++ (CA1, CA3, subiculum)</td>
+      <td>+ (subiculum, CA3)/+++ (CA1)</td>
+    </tr>
+    <tr>
+      <td>PVT</td>
+      <td>++</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>LHb</td>
+      <td>-</td>
+      <td>-</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>MHb</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>VTA</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>PAG</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>DR</td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>LC</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+/-</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -151,84 +264,227 @@ In summary, we present a novel CRF1-Cre-tdTomato rat line that allows for the vi
 
 ## Materials and methods
 
-## Subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>BAC containing the Crfr1 genomic locus</td>
+      <td>Riken Gene Engineering Division</td>
+      <td>RNB2-336H12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Rattus norvegicus)</td>
+      <td>iCre-2a-tdTomato BAC transgene</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Results, Design of CRF1-Cre BAC; Contact Justice Lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Rattus norvegicus)</td>
+      <td>CRF1-Cre-tdTomato rat</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Results, Generation of Transgenic Rats; Contact Gilpin Lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV8-hSyn-DIO-HA-hM3D(Gq)-IRES-mCitrine</td>
+      <td>Addgene</td>
+      <td>Cat# 50454-AAV8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV5-hSyn-DIO-EGFP</td>
+      <td>Addgene</td>
+      <td>Cat# 50457-AAV5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c-Fos (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab190289, RRID:AB_2737414</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA-Tag (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 3724, RRID:AB_1549585</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RFP (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab34771, RRID:AB_777699</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CRF (Rabbit monoclonal)</td>
+      <td>The Salk Institute</td>
+      <td>Rc-68</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Multiplex Fluorescent Kit v2</td>
+      <td>ACD Bio</td>
+      <td>iCre and Crfr1 probes</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSA Detection Kit</td>
+      <td>Akoya Biosciences</td>
+      <td>Cat# NEL701A001KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Prolong Gold Antifade Reagent with DAPI</td>
+      <td>Invitrogen</td>
+      <td>Cat# P36935</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine-n-oxide</td>
+      <td>NIH Drug Supply Program</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Corticotropin-releasing factor</td>
+      <td>Tocris</td>
+      <td>Cat# 1,607</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mini Analysis</td>
+      <td>Synaptosoft Inc.</td>
+      <td>RRID:SCR_002184</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit 10.6</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 7.0</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS 25</td>
+      <td>IBM SPSS</td>
+      <td>RRID:SCR_019096</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Subjects
 
 Adult male and female CRF1-Cre-tdTomato rats were used in all experiments. Rats bred from the original founder F1 line were group-housed in humidity- and temperature-controlled (22 °C) vivaria at UNC, LSUHSC, or UTHSC on a reverse 12 hr light/dark cycle (lights off at 7:00 or 8:00 AM) and had ad libitum access to food and water. All behavioral procedures occurred in the dark phase of the light-dark cycle. Sample sizes were estimated using published work from our labs. In situ hybridization and immunohistochemistry experiments were performed in a single pass. Behavioral experiments were performed in two independent, fully counterbalanced replicates. Slice electrophysiology experiments were conducted in a single pass, such that one experiment was performed in each slice and each experimental group contained neurons from a minimum of three rats. All procedures were approved by the Institutional Animal Care and Use Committee of the respective institutions at which procedures occurred (LSUHSC IACUC Protocol #3749; UNC IACUC Protocol #19–190; UTHSC IACUC Protocol #21–075) and were in accordance with National Institutes of Health guidelines.
 
-## Stereotaxic surgeries
+### Stereotaxic surgeries
 
 Rats were anesthetized with isoflurane (2 min at 4% for induction, 1%–3% for maintenance) and mounted into a stereotaxic frame (Kopf Instruments) for all stereotaxic surgeries. The following coordinates (from bregma) were used for bilateral intra-CeA microinjections: –2.5 mm posterior, ± 4.0 mm lateral, and –8.4 mm ventral for male rats and –2.2 mm posterior, ± 4.0 mm lateral, and –8.2 mm ventral for female rats. Viral vectors for Cre-dependent expression of Gq-DREADDs or control (see below) were injected into each side of the CeA at a volume of 0.5 µL over 5 min and injectors were left in place for an additional 2 min. Viral titers were between 1.0–1.5 x 1013 GC/mL. At the end of surgeries, rats were monitored to ensure recovery from anesthesia and were given a minimum of 4 weeks to recover before the start of procedures. Rats were treated with the analgesic flunixin (2.5 mg/kg, s.c.) and, in some rats, the antibiotic cefazolin (20 mg/kg, i.m.) before the start of surgeries and once the following day.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Rats were deeply anesthetized with isoflurane and were transcardially perfused with ice-cold phosphate buffered saline (PBS) followed by 4% paraformaldehyde (PFA). Brains were extracted and post-fixed in 4% PFA for 24 hr (at 4 °C), cryoprotected in 20% sucrose for 48–72 hr (at 4 °C), and frozen in 2-methylbutane on dry ice. Coronal sections were collected using a cryostat and stored in 0.1% sodium azide in PBS at 4 °C until further processing.
 
-## c-Fos immunofluorescent labeling
+#### c-Fos immunofluorescent labeling
 
 Sections (40 µm) containing the CeA were washed 3 × 10 min in PBS and incubated in blocking buffer (2.5% normal goat serum with 0.3% Triton X-100) for 2 hr at RT. Subsequently, sections were incubated in rabbit anti-c-Fos polyclonal antibody (1:1000 in blocking buffer; catalog no. 190289, Abcam, Cambridge, United Kingdom) for 48 hr at 4 °C. Sections were then washed 3 × 10 min in PBS and incubated in goat anti-rabbit Alexa Fluor 647 (1:500 in blocking buffer; catalog no. A32733, Invitrogen, Carlsbad, CA) for 2 hr at RT. After 3 × 10 min washes in PBS, sections were mounted on microscope slides and coverslipped with Prolong Gold Antifade Reagent with DAPI (Invitrogen, catalog no. P36935). Sections were imaged using a Keyence (Osaka, Japan) BZ-X800 fluorescent microscope at ×20 magnification and Fos+ cells were quantified manually by a blinded experimenter. Four sections representative of the CeA anterior-posterior axis (~bregma –1.8––2.8) from each animal were used for analysis.
 
-## HA-tag immunofluorescent labeling
+#### HA-tag immunofluorescent labeling
 
 Sections (40 µm) containing the CeA were washed 3 × 10 min in PBS and incubated in 3% hydrogen peroxide for 5 min. Sections were then washed 3 × 10 min in PBS and incubated in a blocking buffer containing 1% (w/v) bovine serum albumin and 0.3% Triton X-100 in PBS for 1 h at room temperature (RT). Then, sections were incubated in a rabbit anti-HA monoclonal antibody (1:250 in blocking buffer; catalog no. 3724, Cell Signaling, Danvers, MA) for 48 hr at 4 °C. Sections were then washed for 10 min in TNT buffer (0.1 M Tris base in saline with 0.3% Triton X-100), incubated for 30 min in 0.5% (w/v) Tyramide Signal Amplification (TSA) blocking reagent in 0.1 M Tris base, and incubated for 30 min in ImmPRESS horseradish peroxidase horse anti-rabbit antibody (catalog no. MP-7401, Vector Laboratories, Burlingame, CA) at RT. Following 4 × 5 min washes in TNT buffer, sections were incubated in fluorescein TSA reagent (1:50 in TSA amplification diluent) for 10 min at RT. TSA blocking reagent, fluorescein TSA reagent, and TSA amplification diluent are part of the TSA detection kit (catalog no. NEL701A001KT, Akoya Biosciences, Marlborough, MA). Sections were washed 3 × 10 min in TNT buffer, mounted on microscope slides, and coverslipped with Prolong Gold Antifade Reagent with DAPI (Invitrogen, catalog no. P36935). Sections were imaged using a Keyence BZ-X800 fluorescent microscope at ×2 and ×20 magnification.
 
-## tdTomato DAB immunostaining
+#### tdTomato DAB immunostaining
 
 Because tdTomato signal degrades over time, to create a permanent set of slides for anatomical analysis, we performed immunohistochemistry to label tdTomato protein permanently. Briefly, fixed, free-floating sections (30 µm) were incubated overnight in monoclonal rabbit anti-RFP, biotin-tagged antibody (1:500; Abcam, catalog no. ab34771). Sections were then washed 3 x with PBS and incubated in streptavidin-conjugated peroxidase (DAB-elite kit) for 1 hr. After incubation with streptavidin, sections were washed 2 x in PBS, then 2 x in 0.1 M NaOAc (pH 6.0), then stained in a solution of 0.1 M NaOAC (pH 6.0) containing nickel ammonium sulfate (3%) and 5 µl of 3% H202. Sections were stained for up to 10 min, then washed 2 x in NaOAc (pH 6.0), then in PBS, before being mounted on gelatin coated slides, dehydrated, and coverslipped in DPX. Bright-field images were acquired using a Cytation 5 imager (BioTek Instruments, Winooski, VT). tdTomato and CRF immunofluorescent labeling: Tissue processing procedures were similar to the immunofluorescent procedures described above. Sections through the amygdala were incubated in antibodies against CRF (rabbit anti-CRF, # rc-68, 1:2000, The Salk Institute) and goat-anti-RFP (1:1000; Rockland, catalog no. 200-101-379). Primary antibodies were detected by secondary anti-rabbit antibody conjugated with Alexa Fluor 488 and anti-goat antibody conjugated with Alexa Fluor 555 (Invitrogen), resulting in tdTomato protein being visible as red fluorescence and CRF peptide visible as green fluorescence. High-magnification images of the CeA were taken using a Leica (Wetzlar, Germany) Sp5 confocal microscope.
 
-## In situ hybridization
+### In situ hybridization
 
 All solutions were prepared with DEPC treated water and all tools and surfaces were wiped with RNAzap followed by DEPC treated water. Adult Crhr1:Cre -tdTomato rats (3 males and 3 females) were deeply anesthetized with Avertin (2,2,2,-tribromoethanol, 1.25% solution, 0.2 ml/10 g BW, IP), then transcardially perfused with PBS followed by 4% PFA in PBS. Brains were removed, fixed in 4% PFA at 4 °C overnight, then equilibrated in 30% sucrose, sectioned into six series of sections (30 µM, coronal sections) on a frozen sliding microtome (SM 2000R, Leica), and stored in PBS at 4 °C. Brain slices were mounted onto glass slides, dried, and went through in situ hybridization (ISH) using a RNAscope Multiplex Fluorescent kit v2 (ACDbio, Newark, CA) following the manufacturer’s protocol.
 
-## Slice electrophysiology
+### Slice electrophysiology
 
 Following rapid decapitation, brains were extracted and sectioned as previously described (Herman and Roberto, 2016). Briefly, brains were placed in ice-cold high sucrose solution containing (in mM): sucrose 206.0; KCl 2.5; CaCl2 0.5; MgCl2 7.0; NaH2PO4 1.2; NaHCO3 26; glucose 5.0; HEPES 5. Coronal sections (300 µm) were prepared on a vibrating microtome (Leica VT1000S, Leica Microsystem) and placed in an incubation chamber with oxygenated (95% O2/5% CO2) artificial cerebrospinal fluid (aCSF) containing (in mM): NaCl 120; KCl 2.5; EGTA 5; CaCl2 2.0 MgCl2 1.0; NaH2PO4 1.2; NaHCO3 26; Glucose 1.75; HEPES 5. Slices were incubated for 30 min at 37 °C, followed by a 30 min acclimation at room temperature. Patch pipettes (3–6 MΏ; King Precision Glass Inc, Claremont, CA) were filled with an internal solution containing (in mM): potassium chloride (KCl) 145; EGTA 5; MgCl2 5; HEPES 10; Na-ATP 2; Na-GTP 0.2 (for whole cell voltage-clamp recordings) or containing potassium gluconate 145; EGTA 5; MgCl2 5; HEPES 10; Na-ATP 2; Na-GTP 0.2 (for whole cell current clamp experimental recordings). Data acquisition was performed with a Multiclamp 700B amplifier (Molecular Devices, San Jose, CA), low-pass filtered at 2–5 kHz, coupled to a digitizer (Digidata 1,550B; Molecular Devices) and stored on a PC using pClamp 10 software (Molecular Devices). Whole-cell voltage-clamp recordings were performed at Vhold = –60 mV. Cell-attached recordings were performed with no holding parameters (0 mV). All recordings were performed at room temperature. Series resistance was continuously monitored and cells with series resistance >15 MΩ were excluded from analysis. Properties of sIPSCs were analyzed and visually confirmed using a semi-automated threshold detection program (Minianalysis). The frequency of firing discharge was evaluated and visually confirmed using threshold-based event detection analysis in Clampfit 10.2 (Molecular Devices). Experimental drugs were applied by bath application or y tube for focal application. Analysis was performed on recordings containing >60 events or that encompassed a period of 2–5 min.
 
-## Drugs
+### Drugs
 
 Clozapine-n-oxide (CNO, NIH Drug Supply Program) was dissolved in 5% DMSO (v/v in saline). CRF was purchased from Tocris Bioscience (Bristol, United Kingdom), dissolved in stock solutions in ultra-pure water, and diluted to final experimental concentration in aCSF.
 
-## Crhr1 and iCre expression in CeA
+### Crhr1 and iCre expression in CeA
 
 The purpose of this experiment was to determine the pattern of tdTomato protein expression and Crhr1 and iCre mRNA expression within the CeA. Coronal brain sections containing the CeA were processed for immunohistochemical DAB labeling of tdTomato protein or RNAscope ISH for labeling Crhr1 and iCre mRNA, as described above. A separate set of brain sections containing CeA were processed for immunofluorescent labeling of tdTomato and CRF to map the expression pattern of these proteins in the CeA of Crhr1-Cre-tdTomato rats. Images were captured using a confocal microscope (model TCS SP5, Leica) and processed with Fiji ImageJ. Coronal sections containing the CeA were identified by neuroanatomical landmarks with reference to a rat brain atlas and captured at ×20 magnification at one single focal plane (1 µm). For analysis of Crhr1 and iCre RNAscope images, punctate signals from each channel were quantified separately following the manufacturer’s guideline (ACDbio SOP45-006). Quantification was performed by an experimenter blinded to experimental groups. Based on pilot studies, cells that had more than 3 puncta were considered positive. At least 3 sections representative of the anterior-posterior axis of the CeA were analyzed in each animal.
 
-## Membrane properties, inhibitory synaptic transmission, and CRF sensitivity of CeA CRF1-Cre-tdTomato cells
+### Membrane properties, inhibitory synaptic transmission, and CRF sensitivity of CeA CRF1-Cre-tdTomato cells
 
 The purpose of this experiment was to characterize intrinsic properties, inhibitory synaptic transmission, and CRF sensitivity in CRF1+ neurons in the CeA. These neurons were identified using fluorescent optics and brief ( < 2 s) episcopic illumination. All labeled neurons were photographed, recorded, and saved. Intrinsic membrane properties were determined in voltage clamp configuration (Vhold = –60 mV) using pClamp 10 Clampex software. Current clamp recordings were performed to determine current-voltage (I-V) changes and the firing type of each neuron. Voltage clamp recordings of pharmacologically-isolated GABAA receptor-mediated spontaneous inhibitory postsynaptic currents (sIPSCs) were performed with bath application of the glutamate receptor blockers 6,7-dinitroquinoxaline-2,3-dione (DNQX, 20 µM) and DL-2-amino-5-phosphonovalerate (AP-5, 50 µM) and the GABAB receptor antagonist GCP55845A (1 µM). Cell-attached recordings were made in close juxtacellular (i.e., membrane intact) cell-attached configuration and only cells with regular spontaneous firing were included in analysis. After a stable baseline period, CRF (200 nM) was applied for a period of 7–10 min and changes in firing were measured and compared to baseline. Experiments were performed in individual slices to ensure that drug application was never repeated in the same slice.
 
-## Functional validation of Cre-dependent expression of Gq-DREADD receptors in CeA CRF1-Cre -tdTomato cells
+### Functional validation of Cre-dependent expression of Gq-DREADD receptors in CeA CRF1-Cre -tdTomato cells
 
 The purpose of this experiment was to test if CeA CRF1-Cre-tdTomato cells can be activated using chemogenetics via Cre-mediated targeting of Gq-DREADD receptors [hM3D(Gq)] to these cells.
 
-## c-Fos validation
+#### c-Fos validation
 
 To test if Cre-dependent expression of Gq-DREADD receptors can stimulate CeA CRF1-Cre-tdTomato cells, CRF1-Cre-tdTomato rats were given bilateral microinjections of AAV8-hSyn-DIO-HA-hM3D(Gq)-IRES-mCitrine (50454-AAV8, Addgene, Watertown, MA) or a control virus (AAV5-hSyn-DIO-EGFP; Addgene, 50457-AAV5) targeting the CeA. Four weeks later, rats were given a systemic CNO injection (4 mg/kg, i.p.) and sacrificed 90 min later. Brain sections (4 sections/rat x 4 rats/group) were processed for c-Fos immunohistochemistry and the percentage of c-Fos+ tdTomato+ cells in the CeA was calculated. Cell counts were performed by an experimenter blinded to experimental groups.
 
-## Electrophysiological validation
+#### Electrophysiological validation
 
 To functionally validate Cre-dependent expression of Gq-DREADD receptors in CeA CRF1-Cre -tdTomato cells, CRF1-Cre-tdTomato rats were given bilateral microinjections as described above. After a minimum of 4 weeks, brain slices of CeA were prepared as described above. CeA neuronal expression of mCitrine and tdTomato were confirmed by fluorescent optics and neurons were targeted for electrophysiological recording. After a stable baseline period, CNO (10 μM) was applied and changes in membrane potential and action potential firing were measured and compared to baseline.
 
-## Effects of chemogenetic stimulation of CeA CRF1-Cre -tdTomato cells on nociception and anxiety-like behavior
+### Effects of chemogenetic stimulation of CeA CRF1-Cre -tdTomato cells on nociception and anxiety-like behavior
 
 The purpose of these experiments was to test the effects of chemogenetic stimulation of CeA CRF1 cells on nociception and anxiety-like behavior. Rats were given intra-CeA microinjections of AAV8-hSyn-DIO-HA-hM3D(Gq)-IRES-mCitrine (Addgene, 50454-AAV8; Active Virus) or AAV5-hSyn-DIO-EGFP (Addgene, 50457-AAV5; Control Virus) and were given 4 weeks for recovery and viral expression (Figure 7A). Please refer to Figure 7B for a timeline schematic of this experiment. All rats were habituated to handling before the start of behavioral procedures. On behavioral procedure days, rats were given at least 30 min to acclimate to the procedure room.
 
-## Nociception
+#### Nociception
 
 Mechanical and thermal nociception were measured using the Von Frey (Pahng et al., 2017) and Hargreaves (Avegno et al., 2018) assays, respectively, as previously described. Briefly, the Von Frey apparatus consists of clear chambers placed on top of a mesh floor. To measure sensitivity to mechanical nociception, each hind paw was perpendicularly stimulated with a Von Frey filament (Electronic Von Frey 38450, Ugo Basile, Gemonio, Italy) calibrated to measure the amount of force applied using the up-down method and the force (g) threshold required to elicit a paw withdrawal response was recorded. Force thresholds were measured twice for each hind paw in alternating fashion, with at least 1 min between measurements, and an average threshold was calculated for each animal. The Hargreaves apparatus consists of clear chambers placed on top of a glass pane suspended above a tabletop. To measure sensitivity to thermal nociception, each hind paw was stimulated by a halogen light heat source (Model 309 Hargreaves Apparatus, IITC Life Sciences, Woodland Hills, CA) and latency (s) for hind paw withdrawal was measured. Withdrawal latencies were measured twice for each hind paw in alternating fashion, with at least 1 min between measurements, and an average withdrawal latency was calculated for each animal.
 
 Baseline paw withdrawal thresholds in the Von Frey assay and withdrawal latencies in the Hargreaves assay were measured over 3 sessions (1 baseline session/day; baseline sessions for each assay occurred on alternating days; Figure 7B) that were each preceded 30 min earlier by a vehicle (5% DMSO in saline, i.p.) pretreatment. After the final baseline session, rats were counterbalanced into CNO (4 mg/kg) or Vehicle (5% DMSO) treatment groups based on paw withdrawal latencies during the 3rd (final) Hargreaves baseline session. During Von Frey and Hargreaves test sessions, rats were given CNO (4 mg/kg) or vehicle injections (i.p.) 30 min before the start of testing. All Von Frey and Hargreaves procedures occurred under regular white light illumination.
 
-## Anxiety-like behaviors
+#### Anxiety-like behaviors
 
 One day after Hargreaves testing, rats were tested for anxiety-like behaviors in the elevated plus maze (EPM), open field (OF), and light-dark box (LD) on consecutive days (Figure 7B). All procedures occurred under indirect, dim illumination (~10 lux). Rats were given CNO (4 mg/kg) or vehicle injections (i.p.) 30 min before the start of each test. The EPM and OF tests were performed as previously described (Albrechet-Souza et al., 2020; Fucich et al., 2020). Briefly, the EPM consists of two open and two closed arms elevated 50 cm above the floor. Rats were individually placed in the center of the maze facing an open arm and were given 5 min to explore the maze. Time spent in the open and closed arms of the maze was measured. The OF consists of a square arena with a checkerboard patterned floor (4 × 4 squares). Rats were individually placed in one corner of the arena and were given 5 min to explore the arena. Time spent in the periphery and the center of the arena (defined as the 3 × 3 squares in the center of the arena) was measured. The LD box consists of a two compartments; one with black walls and a black floor, and the other with white walls and a white floor. The black compartment was protected from light (dark box) and the white compartment was illuminated (light box; ~ 1000 lux). Rats were able to freely explore both dark and light boxes through an opened door. Rats were individually placed in the dark box and were given 5 min to explore the apparatus. Time spent in dark and light boxes, as well as the latency to enter the light box were measured. EPM, OF, and LD tests were recorded via a camera mounted above the apparatus and videos were scored by an experimenter blinded to treatment groups. At the end of the experiment, rats were sacrificed and brain sections were analyzed for virus placement.
 
-## Crhr1 and iCre expression in BLA
+### Crhr1 and iCre expression in BLA
 
 The purpose of this experiment was to examine Crhr1 and iCre mRNA expression in a brain area outside the CeA. The basolateral amygdala (BLA) was selected for analysis because CRF1 receptors are highly expressed in, and functionally regulate the activity of pyramidal glutamatergic neurons in this area (as opposed to GABAergic neurons in CeA) (Refojo et al., 2011; Rostkowski et al., 2013). Brain sections containing BLA were processed for Crhr1 and iCre RNAscope and analyzed as described above.
 
-## Cre-tdTomato fluorescent expression across the brain
+### Cre-tdTomato fluorescent expression across the brain
 
 The purpose of this experiment was to examine if the Cre-tdTomato transgene is expressed in brain areas outside of the amygdala in a pattern that is consistent with known CRF1 expression patterns. Male and female (n = 2/sex) CRF1-Cre-tdTomato rats were perfused transcardially with PBS and 4% PFA, and brains were post-fixed in 4% PFA overnight. Brains were cryoprotected, snap-frozen, and sectioned with a cryostat. Coronal sections (40 µm) were collected across the rostrocaudal axis, mounted onto microscope slides, and coverslipped with Fluorogel-II containing DAPI (Electron Microscopy Sciences). Brain sections were imaged using a Keyence BZ-X800 fluorescent microscope. For each brain region, at least three sections were analyzed.
 
-## Statistical analyses
+### Statistical analyses
 
 Electrophysiology data on frequency and amplitude of spontaneous inhibitory postsynaptic currents (sIPSCs) were analyzed and manually confirmed using a semi-automated threshold-based detection software (Mini Analysis, Synaptosoft Inc, Decatur, GA). Cell-attached firing discharge data were analyzed and manually confirmed using a semi-automated threshold-based detection software (Clampfit 10.6, Molecular Devices). Electrophysiological characteristics were determined from baseline and experimental drug application containing a minimum of 65 events each. Event data were represented as mean ± SEM or mean % change from baseline ± SEM and analyzed for independent significance using a one-sample t-test, compared by paired or unpaired t-test where appropriate. Data analysis and visualization were completed using Prism 7.0 (GraphPad, San Diego, CA). Behavioral data were analyzed using multifactorial repeated measures ANOVAs (for Von Frey and Hargreaves tests) or t-tests (for anxiety tests). For RM ANOVAs, between-subjects factors include sex and treatment, and the within-subjects repeated measure was test session (i.e. baseline vs. test). Data from the active and control virus groups were analyzed separately (i.e. the control virus group was treated as a replication of the experiment; Weera et al., 2021). Data from experiments that only have two groups (e.g. c-Fos immunohistochemistry) were analyzed using t-tests. Data were analyzed using the Statistical Package for Social Sciences (Version 25, IBM Corporation, Armonk, NY). Statistical significance was set at p < 0.05.

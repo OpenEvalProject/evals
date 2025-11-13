@@ -19,9 +19,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04a9tmd77 Center for Translational Medicine and Pharmacology, Icahn School of Medicine at Mount Sinai New York United States
-2. https://ror.org/04a9tmd77 Department of Medicine and of Pharmacological Sciences, Icahn School of Medicine at Mount Sinai New York United States
-3. https://ror.org/04a9tmd77 Department of Psychiatry, Icahn School of Medicine at Mount Sinai New York United States
+1. Center for Translational Medicine and Pharmacology, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+2. Department of Medicine and of Pharmacological Sciences, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+3. Department of Psychiatry, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
 
 † Corresponding author
 
@@ -39,7 +39,7 @@ Utilizing this viral technology, we have previously shown postganglionic SNS inn
 
 ## Results
 
-## Validation
+### Validation
 
 Following PRV152 infections, mice remained asymptomatic until day 5 post-inoculation, after which time, mice began to display symptoms of infection, including occasional loss of body weight and decreased mobility, but most often an ungroomed coat. Mice were euthanized for histological analyses when such symptoms became apparent. Four of six mice were equally infected by PRV152 throughout the neuroaxis from the hindbrain to the forebrain and therefore were included in the analyses. Two mice exhibited over-infection by PRV152, as evidenced by widespread cloudy plaques surrounding the infected neurons; these mice were excluded from the analysis. We also found PRV152-labeled neurons in the IML of the spinal cord in accordance with our previous studies that defined SNS innervations of fat pads in the Siberian hamster (Ryu and Bartness, 2014; Ryu et al., 2015; Ryu et al., 2017).
 
@@ -51,13 +51,13 @@ To validate the retrograde tract tracing methodology, we placed PRV152 at the sa
 
 **Figure 1.:** (A) As a control for viral injection, no expresses enhanced green fluorescent protein (EGFP) signal was detected in the paraventricular nucleus (PVH), known to possess main sympathetic pre-autonomic neurons, and the RPa, when PRV152 was placed on the bone surface. (B) By contrast, PRV152 injections into the periosteum or metaphyseal bone resulted in positive EGFP immunoreactivity in the PVH. In addition, we found PRV152-infected neurons in the intermediolateral cell column (IML) of the spinal cord at T13-L2 levels, suggesting specific bone-sympathetic nervous system (SNS) ganglia-IML-brain route of infection which are in concordance with our previous findings where PRV152 individually infected the classic SNS spinal cord neurons. Also shown are representative microphotographs illustrating PRV152 immunolabeling in the PAG (midbrain and pons), RPa (medulla), LH (hypothalamus), MPOM (forebrain), S1HL (cerebral cortex), and pv (thalamus). PVH, paraventricular hypothalamic nucleus; PAG, periaqueductal gray; RPa, raphe pallidus; LH, lateral hypothalamus; MPOM, medial preoptic nucleus, medial part; S1HL, primary somatosensory cortex, hindlimb region; pv, periventricular fiber system. Scale bar = 50 µm. Also shown is a representative low-magnification image at the hypothalamus neuroanatomical level (scale bar = 500 µm).
 
-## Viral infections in the brain
+### Viral infections in the brain
 
 We identified 87 PRV152-positive brain nuclei, sub-nuclei, and regions within six brain divisions, with the hypothalamus having the most PRV152-infected SNS neurons connecting to bone (1177.25±62.75), followed, in descending order, by midbrain and pons (1065±22.39), hindbrain medulla (495.25±33.49), forebrain (237.5±15.08), cerebral cortex (104.75±4.64) and thalamus (65.25±7.78) (Figure 2). Hypothalamic areas with the highest percentages of PRV152-labeled neurons included the lateral hypothalamus (LH), PVH and dorsomedial hypothalamus (DM) (Figure 1B and Figure 2; see Appendix for a glossary of brain nuclei, sub-nuclei and regions). The LH and PVH also were among the regions with the highest absolute numbers of infected neurons of the 25 PRV152-positive nuclei, sub-nuclei, and regions. In the midbrain and pons, areas with the highest percentages and counts of PRV152-infected neurons included the PAG, lateral PAG (LPAG) and pontine reticular nucleus, oral part (PnO), among 18 nuclei, sub-nuclei, and regions. Single-labeled neurons were also notable in the hindbrain medulla, where the raphe pallidus nucleus (RPa), RMg, and gigantocellular reticular nucleus (Gi) were among 23 nuclei, sub-nuclei and regions, heavily represented by the largest percentages and counts of PRV152-labeled neurons. The forebrain areas with the highest percentages and numbers of PRV152-labeled neurons were the medial preoptic nucleus, medial part (MPOM), bed nucleus of the stria terminalis (BST), and lateral septal nucleus, ventral part (LSV) among 15 PRV152-positive nuclei, sub-nuclei, and regions. In the cerebral cortex, there were only three regions containing PRV152-labeled neurons–namely, the primary somatosensory cortex, hindlimb region (S1HL), and secondary and primary motor cortex (M2 and M1, respectively). The S1HL and M2 had both the highest percentages and numbers of PRV152-labeled neurons. Finally, we detected 3 brain sites with PRV152-infected neurons within the thalamus. Among the nuclei possessing the highest percentages and numbers of PRV152-labeled neurons were the periventricular fiber system (pv) and precommisural nucleus (PrC).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/95727/elife-95727-fig2-v2.jpg)
 
-**Figure 2.:** Numbers, and heat map representation of PRV152-labeled neurons in brain regions, namely, hypothalamus, midbrain and pons, medulla, forebrain, cerebral cortex, and thalamus, as well as their sub-regions and nuclei, following viral injections into bone. n=4. Statistics: Mean ± SEM, two-tailed Student’s t-test, *p<0.05, **p<0.01, ***p<0.001, ns (no significance).Figure 2—source data 1.
+**Figure 2.:** Numbers, and heat map representation of PRV152-labeled neurons in brain regions, namely, hypothalamus, midbrain and pons, medulla, forebrain, cerebral cortex, and thalamus, as well as their sub-regions and nuclei, following viral injections into bone. n=4. Statistics: Mean ± SEM, two-tailed Student’s t-test, *p<0.05, **p<0.01, ***p<0.001, ns (no significance).
 
 ## Discussion
 
@@ -81,22 +81,22 @@ In all, our results provide compelling evidence for a brain-bone SNS neuroaxis, 
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 Adult male mice (~3-4-month-old) were single-housed in a 12 hr:12 hr light:dark cycle at 22 ± 2 °C with ad libitum access to water and regular chow. All procedures were approved by the Mount Sinai Institutional Animal Care and Use Committee and were performed in accordance with Public Health Service and United States Department of Agriculture guidelines (IBC: SPROTO202200000224; IACUC: PROTO202100074).
 
-## Viral injections
+### Viral injections
 
 To identify brain sites sending the SNS outflow to bone, we used a transsynaptic tracing technique with a pseudorabies virus strain, PRV152. PRV152 expresses enhanced green fluorescent protein (EGFP) under control of the human cytomegalovirus immediate-early promoter. When injected into the femur, the virus travels exclusively in a retrograde manner via synaptically-linked neurons, first through SNS postganglionic neurons at L1-L2 levels, followed by infection of SNS preganglionic neurons in the IML of the spinal cord and, finally, ascending to the brain. This allows the mapping of the entire femur-brain neuroaxis.
 
 All virus injections were performed according to Biosafety Level 2 standards. Mice (n=6) were anesthetized with isoflurane (2-3% in oxygen; Baxter Healthcare, Deerfield, IL) and the right femur-tibia joint was exposed for a series of PRV152 microinjections (4.7×109 pfu/mL) into five loci (150 nL/locus) evenly distributed across the bone metaphysis and periosteum areas, which are known to be enriched with SNS innervation. The syringe was held in place for 60 s to prevent efflux of virus after each injection. Finally, the incision was closed with sterile sutures and wound clips. Nitrofurazone powder (nfz Puffer; Hess & Clark, Lexington, KY) was applied locally to minimize the risk of bacterial infection. Note that, as a control for viral injection, we showed that no EGFP signal was detected when PRV152 was placed on the bone surface rather than injected into the periosteum or metaphyseal bone. In addition, we found PRV152-infected neurons in the IML of the spinal cords, suggesting specific bone-SNS ganglia-IML-brain route of infection, which is in concordance with our previous findings where PRV152 individually infected the classic SNS spinal cord neurons (Bamshad et al., 1999; Ryu and Bartness, 2014; Ryu et al., 2015). As a control for possible viral diffusion, we previously confirmed that the same virus titer and volume of PRV152 placed on the bone surface resulted in no infection in the sympathetic chain, spinal cord, and brain as opposed to intra-periosteum or intra-metaphyseal bone.
 
-## Histology
+### Histology
 
 Animals were sacrificed 6 days after the last PRV152 injection based on the progression of the virus to the brain in pilot studies (Ryu, V., unpublished observations). Mice were euthanized with carbon dioxide and perfused transcardially with 0.9% heparinized saline followed by 4% paraformaldehyde in 0.1 M phosphate-buffered saline (PBS; pH 7.4). Brains were collected and post-fixed in the same fixative for 3-4 hr at 4 °C, then transferred to a 30% sucrose solution in 0.1 M PBS with 0.1% sodium azide and stored at 4 °C until sectioning on a freezing stage sliding microtome at 25 μm. Sections were stored in 0.1 M PBS solution with 0.1% sodium azide until processing for immunofluorescence.
 
 The EGFP reporter protein of the PRV152 is not resistant to fading once injected into peripheral tissues, therefore, a standard immunofluorescence procedure was utilized. For immunofluorescence, free-floating brain sections were rinsed in 0.1 M PBS (2×15 min) followed by a 30 min blocking in 10% normal goat serum (NGS; Vector Laboratories, Burlingame, CA) and 0.4% Triton X-100 in 0.1 M PBS. Next, sections were incubated with a primary chicken anti-EGFP antibody (1:1000; Thermo Fisher Scientific, catalog no. A10262) for 18 hr. Sections were then incubated in the secondary AlexaFluor-488-coupled goat anti-chicken antibody (1:700; Jackson Immunoresearch, catalog no. 103-545-155) with 2% NGS and 0.4% Triton X-100 in 0.1 M PBS at room temperature for 2 hr. For immunofluorescence controls, the primary antibody was either omitted or pre-adsorbed with the immunizing peptide overnight at 4 °C resulting in no immunoreactive staining. Sections were mounted onto slides (Superfrost Plus) and cover-slipped using ProLong Gold Antifade Reagent (Thermo Fisher Scientific, catalog no. P36982). All steps were performed at room temperature.
 
-## Quantitation
+### Quantitation
 
 Immunofluorescence images were viewed and captured using 10x and 20x magnification with an Observer.Z1 fluorescence microscope (Carl Zeiss, Germany) with appropriate filters for AlexaFluor-488 and DAPI. The single-labeled PRV152 and DAPI images were evaluated and overlaid using Zen software (Carl Zeiss, Germany) and ImageJ (NIH, Bethesda, MD). We counted cells positive for SNS PRV152 immunoreactivity in every sixth brain section using the manual tag feature of the Adobe Photoshop CS5.1 software, thus eliminating the likelihood of counting the same neurons more than once. Neuron numbers in the brain were averaged across each examined nucleus/sub-nucleus/region from all animals. A mouse brain atlas (Paxinos and Franklin, 2007) was used to identify brain areas. For the photomicrographs, we used Adobe Photoshop CS5.1 (Adobe Systems) only to adjust the brightness, contrast, and sharpness, to remove artifactual obstacles (i.e. obscuring bubbles) and to make the composite plates.

@@ -47,9 +47,33 @@ We then tested the hypothesis that a short ‘invader’ RNA strand could open u
 
 Encouraged by our initial observation of non-enzymatic strand displacement synthesis, we sought to optimize this process by varying invader length and concentration. We examined primer extension reactions with 6-nt and 8-nt invaders as a function of concentration, and calculated the pseudo-first order reaction rate, kobs, from the disappearance of unreacted primer versus time (Figure 2). For the octamer invader at room temperature, kobs increased as a function of invader concentration until a maximal rate of 0.9 ± 0.1 h−1 was reached at a concentration of 5 μM. For the hexamer invader, essentially no primer extension could be observed when the concentration was 15 μM or below. The reaction rate increased at higher concentrations, but even at 100 μM, kobs was only 0.11 ± 0.03 h−1, and we were unable to reach a saturating concentration of hexamer. These results are consistent with the hypothesis that invader binding to the toehold region of the blocker is a necessary first step for strand displacement synthesis, and that saturation of invader/blocker binding leads to the maximum observed rate of strand displacement synthesis. We were therefore curious as to whether lower temperature could promote the reaction at lower invader concentrations and especially for shorter invaders. Lower temperature could facilitate strand displacement synthesis by increasing the stability of the invader/toehold duplex, but could also slow down the rate of the chemical reaction step, rendering the effects difficult to predict. We therefore conducted the same series of experiments as above, except on ice (blue squares, Figure 2). For reactions using the octamer invader, kobs in general decreased by ~50%, reaching a plateau of 0.4 h−1. In contrast, when using the hexamer invader, the lower temperature significantly increased the reaction rates, and the plateau now also reached 0.4 h−1. These results are consistent with the enhanced binding of a shorter invader to the toehold region at lower temperature facilitating strand displacement synthesis, together with a modest slowing of the overall reaction rate, possibly due to a slower chemical step.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig2-v2.jpg)
+
+**Figure 2.:** (A) Reactions with the blocker possessing a 6-nt toehold, and an 8-nt long invader. (B) Reactions with the blocker possessing a 4-nt toehold, and a 6-nt long invader. All primer extension reactions were conducted in 50 mM Na+-HEPES, pH 8.0, 50 mM MgCl2, 3 mM C*C, 1.5 μM primer, 2.5 μM template, 3.5 μM blocker, at room temperature or on ice as indicated. Reaction products were analyzed by denaturing PAGE. (n ≥ 3, The error bars are smaller than the symbol when they are not visible.).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig2-figsupp2-v2.jpg)
+
 All steps of non-enzymatic strand displacement synthesis are expected to be affected by the concentration of Mg2+ in the reaction. Mg2+ is thought to catalyze non-enzymatic primer extension in part by deprotonating the 3ʹ-hydroxyl group (Giurgiu et al., 2018), and also by promoting the formation of stable RNA duplex structures as well as other effects. We therefore investigated the effect of Mg2+ concentration on the rate of primer extension. At room temperature and with a saturating 5 μM concentration of octamer invader, kobs reached a maximum of 2.9 h−1 at 400 mM Mg2+, compared to 0.5 h−1 at 20 mM Mg2+ (Figure 3). The same trend also occurred for reactions on ice; kobs reached 1.4 h−1 with 400 mM Mg2+, compared to 0.1 h−1 with 20 mM Mg2+. High concentrations of Mg2+ are known to favor canonical primer extension on open templates, and the effect appears to be qualitatively similar for primer extension with strand displacement. The simplest explanation for this observation is that the chemical step of primer extension is enhanced at high concentrations of Mg2+, with other effects being relatively minor, at least in the presence of a saturating concentration of invader oligonucleotide. We performed all following experiments, unless otherwise indicated, with 50 mM Mg2+, to be consistent with previous work (Li et al., 2017).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig3-v2.jpg)
+
+**Figure 3.:** All primer extension reactions were conducted in 50 mM Na+-HEPES, pH 8.0, 3 mM C*C, 1.5 μM primer, 2.5 μM template, 3.5 μM blocker and 5 μM octamer invader, at room temperature or on ice as indicated. (n ≥ 3).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig3-figsupp1-v2.jpg)
+
 Following invader-toehold binding and branch migration, the template should be in an open state such that the C*C substrate can bind to the template and react with the primer. However, it is possible that C*C binding to the template could be sterically impaired by the overhanging blocker-invader duplex, and furthermore, once bound to the template the conformation of the C*C could be impacted in a way that might alter its reactivity with the primer. We therefore performed three experiments to disentangle the effects of the toehold and invader on substrate binding and on the rate of the chemical reaction step (Figure 4). In the first case (1), the ‘blocker’ did not contain a toehold region and did not block the GG templating region, only base pairing with the downstream sequence. In the second case (2), the ‘blocker’ contained an 8 bp toehold region but was not complementary to the GG templating region, due to substitution of AA for CC in the blocker sequence. In this case, the templating region is expected to remain open for substrate binding. The third case (3) represents the strand displacement scenario discussed above with an octamer invader (Figure 1). We measured the rate of primer extension as a function of C*C concentration for each of the three scenarios (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig4-v2.jpg)
+
+**Figure 4.:** (A) Three different template configurations. In case (1), the template region GG is open. In case (2), the blocker oligonucleotide cannot base-pair with the template region GG. The complex is constitutively open. In case (3), the template region GG is partitioned between open and closed states. (B) Rates of primer extension reactions as a function of C*C concentration. (C) An experimental design illustration for case (2). Case (1) and (3) schematics have been shown in Figure 1B and D, respectively. All primer extension reactions were conducted at room temperature, 50 mM Na+-HEPES, pH 8.0, 50 mM MgCl2, 1.5 μM primer, 2.5 μM template, 3.5 μM blocker, 0 or 5 μM invader as indicated. Reaction products were analyzed by urea PAGE. (n = 4).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig4-figsupp3-v2.jpg)
 
 For cases (1) and (2), in which the template region is expected to be open, the observed maximum rates (kobs max) are identical (9.6 ± 0.1 h−1 and 9.5 ± 0.1 h−1, respectively). This suggests that once the C*C substrate is bound to the GG template region, its reactivity is not affected by the presence or absence of the overhanging invader-blocker duplex. In contrast, when the blocker is able to bind the GG templating region (case 3), kobs max drops to 3.6 ± 0.1 h−1,~40% of kobs max in (1) and (2). This effect is consistent with a two-state model in which the blocker strand is base-paired to the template GG (and thus preventing C*C binding) about 60% of the time, but is base-paired to the invader GG the other 40% of the time, in which case C*C can bind to the template and once bound reacts normally with the primer. The apparent Km values for C*C show larger differences across these three regimes. In case (1) where the template is open and there is no overhanging invader-blocker duplex, the Km for C*C is approximately three times lower (0.34 ± 0.01 mM) than previously observed for binding to a primer template complex with no blocker strand at all (Walton and Szostak, 2017). This suggests that the binding of C*C is stabilized by stacking with the downstream blocker strand. In contrast, the presence of an overhanging invader-blocker duplex increases the Km for C*C roughly 6-fold to 2.2 ± 0.1 mM, suggesting that the presence of an invader-blocker duplex sterically interferes with C*C binding. Finally, for case (3), in which the blocker is partitioned between base-pairing with the template or the invader, the binding of C*C to the template is further impaired and the apparent Km is 7.3 ± 0.5 mM. The reason for this further increase in Km is not obvious, but could reflect subtle changes in the extent of steric blocking due to the altered sequence context near the bound C*C, or perhaps more complex effects not fully accounted for by a simple two state model for blocker partitioning.
 
@@ -65,7 +89,7 @@ To investigate whether the multiple addition products observed in these experime
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig6-v2.jpg)
 
-**Figure 6.:** (A) Illustration of the experimental design. The template was labeled with Cy3 at its 5′-end. The blocker was modified by Black Hole Quencher−2 at the 3′-end. When the blocker forms a stable duplex with the template, the fluorescent signal of Cy3 is quenched. In the presence of invaders and 3′-NH2-2AIpddN, the primer extends, resulting in blocker dissociation and increasing Cy3 signal. (B) Time course of the fluorescent signal in five different experiment groups. Strand displacement reactions contained 1.5 μM template, 2 μM blocker, 2.5 μM primer, 50 mM Na+-HEPES, pH 8.0, 50 mM MgCl2, 20 μM each hexamer invader and 10 mM 3′-NH2-2AIpddA/G/T. Positive control reactions contained the same components, with the addition of 2 μM of complementary strand RNA to the template, so that the blocker was unbound. The negative control reactions contained the same components but omitted monomers and/or invaders, as indicated. The experiments were performed at room temperature in triplicate.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Illustration of the experimental design. The template was labeled with Cy3 at its 5′-end. The blocker was modified by Black Hole Quencher−2 at the 3′-end. When the blocker forms a stable duplex with the template, the fluorescent signal of Cy3 is quenched. In the presence of invaders and 3′-NH2-2AIpddN, the primer extends, resulting in blocker dissociation and increasing Cy3 signal. (B) Time course of the fluorescent signal in five different experiment groups. Strand displacement reactions contained 1.5 μM template, 2 μM blocker, 2.5 μM primer, 50 mM Na+-HEPES, pH 8.0, 50 mM MgCl2, 20 μM each hexamer invader and 10 mM 3′-NH2-2AIpddA/G/T. Positive control reactions contained the same components, with the addition of 2 μM of complementary strand RNA to the template, so that the blocker was unbound. The negative control reactions contained the same components but omitted monomers and/or invaders, as indicated. The experiments were performed at room temperature in triplicate.
 
 ## Discussion
 
@@ -81,19 +105,19 @@ In summary, our work demonstrates the concept of non-enzymatic RNA copying with 
 
 ## Materials and methods
 
-## Oligonucleotides synthesis and purification
+### Oligonucleotides synthesis and purification
 
 Chemical reagents were purchased from Chemgenes (Wilmington, MA) and Glen Research (Sterling, VA). Oligonucleotides were prepared by solid-phase synthesis on an Expedite 8909 or ABI 394 DNA/RNA synthesizer. RNAs were deprotected by standard methods. Non-dye labeled oligonucleotides were purified by GlenPak columns. Dye-labeled oligos were purified by polyacrylamide gel electrophoresis and desalted on Sep-Pak C18 cartridges from Waters (Milford, MA). Oligonucleotides were analyzed by high resolution mass spectrometry (HRMS) on an Agilent 6520 QTOF LC-MS in house.
 
-## C*C synthesis and purification
+### C*C synthesis and purification
 
 0.3 mmol CMP (Sigma) was mixed with 0.15 mmol 2-amino-imidazole•HCl (Combi-blocks) in 5 ml anhydrous DMSO (Sigma) and 0.4 ml TEA (Sigma). Then 1 g triphenylphosphine (Sigma) and 0.88 g 2,2'-dipyridyldisulfide (Combi-blocks) were added in order and stirred vigorously. The reaction was continued in a sealed container for 20 min. The product C*C was precipitated by adding 40 ml acetone and 2 ml NaClO4-saturated acetone. After centrifugation at 3500 rpm for 10 min, the pellet was washed with 40 ml acetone:diethyl ether (1:1) and centrifuged again. The pellet was washed twice, then dried under house vacuum to remove organic solvent. The dry pellet was resuspended in 20 mM TEAB pH 8.0 and purified on a 50 g C18Aq column over 12 CV of 0–10% acetonitrile in 2 mM TEAB buffer (pH 8.0). The product was analyzed by 31P-NMR and low resolution mass spectrometry (LRMS) before being aliquoted and lyophilized.
 
-## 2-AIpG synthesis and purification
+### 2-AIpG synthesis and purification
 
 2-AIpG was prepared by the same procedures as C*C, except that 0.3 mmol GMP (Sigma) and 3 mmol2-amino-imidazole•HCl were used in the reaction. The dry pellet was resuspended in 20 mM TEAB pH 8.0 and purified on a 50 g C18Aq column over 12 CV of 0–10% acetonitrile in 2 mM TEAB buffer (pH 8.0). After purification, the 2-AIpG solution was adjusted to pH ~10 with NaOH before being aliquoted and lyophilized.
 
-## 2-AIp2sU synthesis and purification
+### 2-AIp2sU synthesis and purification
 
 2-AIp2sU was prepared according to previously published procedures (Li et al., 2017), as summarized below.
 
@@ -101,20 +125,18 @@ Chemical reagents were purchased from Chemgenes (Wilmington, MA) and Glen Resear
 
 The purification procedure is the same as 2-AIpG.
 
-## 3′-NH2-2AIpddA/G/T synthesis and purification
+### 3′-NH2-2AIpddA/G/T synthesis and purification
 
 3′-NH2-2AIpddA, G, and T were prepared according to previously published procedures (O'Flaherty et al., 2019), as summarized below.
 
 ![Chemical structure 2.](https://cdn.elifesciences.org/articles/51888/elife-51888-fig8-v2.jpg)
 
-**Chemical structure 2.:** 2-2AIpddA/G/T synthesis.
-
 The purification procedure is the same as 2-AIpG.
 
-## Primer extension reaction and PAGE analysis
+### Primer extension reaction and PAGE analysis
 
 The primer-template and primer-template-blocker complexes were prepared in a solution containing 7.5 μM primer, 12.5 μM template, 0 or 17.5 μM blocker, 50 mM Na+-HEPES (pH 8.0), 50 mM NaCl and 1 mM EDTA (pH 8.0) by heating at 95°C for 30 s and slowly cooling down to 25°C. The annealed product was diluted five fold in primer extension reaction. Stock solutions of C*C and monomers used in the reaction were prepared freshly and adjusted to pH 8.0 immediately before the reaction. At each time point, 0.5 μl of reaction sample was added to 25 μl quenching buffer, containing 8M Urea, 20 mM EDTA, 1x TBE and 10 µM complementary RNA of template. Primer extension products were resolved by 20% (19:1) denaturing PAGE with 7 M urea. The gel was scanned using a Typhoon 9410 scanner, and the bands were quantified using the ImageQuant TL software.
 
-## Fluorescence-quencher assay
+### Fluorescence-quencher assay
 
 All components were mixed in 96 well, half-area, black, polystyrene plates (Costar). Fluorescence signals were recorded at an excitation wavelength of 535 nm and an emission wavelength of 595 nm using a SpectraMax i3 plate-reader.

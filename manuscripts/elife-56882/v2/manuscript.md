@@ -35,43 +35,67 @@ In the current study, we analyzed survival, viral titers, IFN-I production and N
 
 ## Results
 
-## MyD88 and STING-dependent pathways control MCMV infection in vivo
+### MyD88 and STING-dependent pathways control MCMV infection in vivo
 
 We set out to investigate the relative contribution of STING- versus MyD88-dependent pathways in controlling MCMV infection by analyzing the morbidity and mortality in wildtype C57BL/6 (WT), MyD88-deficient (MyD88 KO), and STING-deficient (STING GT) mice as well as mice deficient in both MyD88 and STING (DKO) that were infected with 50,000 PFU MCMV (Figure 1). Consistent with previously published data (Lio et al., 2016), WT mice lost approximately 10% of weight by 3 days p.i. after which they recovered (Figure 1A). Here we observed that STING GT mice showed more pronounced weight loss compared to WT mice, but were also able to recover. Consistent with previously published data (Delale et al., 2005), MyD88 KO mice showed delayed weight loss as compared to WT mice, indicating that the initial weight loss in WT mice was caused by immunopathology mediated by MyD88. The weight curves of DKO mice overlapped with MyD88 KO mice, suggesting that STING-mediated responses do not contribute to immunopathology. Both WT and STING GT mice were able to control and survive viral infection upon challenge with MCMV (Figure 1B). MyD88 KO mice were moderately resistant to the infection as 37% of the mice died between days 6 and 7. In contrast, the majority (70%) of DKO mice succumbed to the infection. Thus, both STING and MyD88 significantly contribute to control of MCMV infection in vivo.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/56882/elife-56882-fig1-v2.jpg)
 
-**Figure 1.:** Mice were infected with 50,000 PFU MCMV WT-1, weight loss and survival was monitored over time. (A) Weight loss over time in wildtype (n = 12), STING-deficient (STING GT, n = 21), MyD88-deficient (MyD88 KO, n = 9) and mice deficient in both STING and MyD88 (DKO; n = 14). The numbers indicate the number of mice at the start of the experiment, weight loss of surviving mice at each timepoint is plotted. (B) Survival curves of wildtype (n = 17), STING GT (n = 18), MyD88 KO (n = 17) and DKO mice (n = 20). Cumulative data of 3 independent experiments. Error bars indicate SEM; *p<0.05, **p<0.01, ****p<0.0001.  Figure 1—source data 1.
+**Figure 1.:** Mice were infected with 50,000 PFU MCMV WT-1, weight loss and survival was monitored over time. (A) Weight loss over time in wildtype (n = 12), STING-deficient (STING GT, n = 21), MyD88-deficient (MyD88 KO, n = 9) and mice deficient in both STING and MyD88 (DKO; n = 14). The numbers indicate the number of mice at the start of the experiment, weight loss of surviving mice at each timepoint is plotted. (B) Survival curves of wildtype (n = 17), STING GT (n = 18), MyD88 KO (n = 17) and DKO mice (n = 20). Cumulative data of 3 independent experiments. Error bars indicate SEM; *p<0.05, **p<0.01, ****p<0.0001.
 
-## STING contributes in both the hematological and radio-resistant compartments in controlling viral load
+### STING contributes in both the hematological and radio-resistant compartments in controlling viral load
 
 To investigate the contribution of STING and MyD88 in different organs, we analyzed viral loads in the spleen and liver, the initial organs of replication after infection (Hsu et al., 2009; Sacher et al., 2008). In the spleen, we observed a modest but significant increase (6.9-fold) in viral load in MyD88 KO mice two days p.i., whereas the spleens of DKO mice contained 84-fold higher viral copies compared to WT controls (Figure 2A). Consistent with previous studies (Lio et al., 2016), we observed a 3.5-fold increase in viral load in the spleens of STING GT versus WT controls, but this difference did not reach statistical significance. By 5 days p.i. we observed an 85-fold increase in viral load in the spleens of MyD88-deficient and 1901-fold increase in viral load in DKO, both as compared to WT controls (Figure 2B). We did not observe significant differences in STING-deficient animals, but we observed a 23-fold increase in viral load in DKO spleens compared to MyD88 KO, indicating that STING contributes to viral control in the absence of MyD88. In the liver, we were unable to detect significant differences in viral load at 2 days p.i. (Figure 2A). By day 5, we observed a 221-fold increase in DKO and 51-fold increase in MyD88 KO viral load compared to WT controls (Figure 2B). Taken together, these data indicate that the STING and MyD88 pathways contribute to viral control at early timepoints, particularly in the spleen and to a lesser extent in the liver.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56882/elife-56882-fig2-v2.jpg)
+
+**Figure 2.:** Mice were infected with 50,000 PFU (A) and (B) or 20,000 PFU (C) MCMV. Viral load was quantified 2 days (A) or 5 days (B) and (C) p.i. (C) Indicated bone marrow was adoptively transferred into irradiated wildtype (WT) or STING-deficient (STING GT) hosts. Bone marrow chimeras were infected 6 weeks post transfer and viral load was analyzed 5 days p.i. Each panel shows cumulative data of 2 independent experiments. Error bars indicate SEM; ns, not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56882/elife-56882-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mice were infected with 20,000 PFU and viral load was quantified 5 p.i. (B) Extended statistical analysis for bone marrow chimeras presented in Figure 2C. Each panel shows cumulative data of 2 independent experiments. Error bars indicate SEM; ns, not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
 MyD88 has been reported to be required in the hematological compartment, but not in the radio-resistant compartment (Puttur et al., 2016), yet it is unclear which compartment(s) requires STING-dependent pathways. To investigate the contributions of STING and MyD88 dependent pathways in these compartments, we generated bone marrow (BM) chimeras of either or both knockout BM into irradiated WT or STING GT hosts and analyzed viral load day 5 p.i. (Figure 2C). While WT hosts reconstituted with WT BM controlled viral load similar to WT control mice (Figure 2C vs Figure 2—figure supplement 1A), reconstitution of WT hosts with MyD88-deficient BM resulted in elevated viral loads compared to reconstitution with WT BM (Figure 2C), consistent with previously published results (Puttur et al., 2016). We also observed that the contribution of MyD88 in the hematological compartment was particularly overt in the absence of STING, revealed by comparison of DKO BM into STING GT host versus STING GT BM into STING GT host, which resulted in a 3882-fold difference in the spleen and 344-fold in the liver, respectively. STING also had anti-viral effects in the hematological compartment, evident by comparing DKO BM into STING GT host versus MyD88 KO BM into STING GT host, which revealed a 59-fold difference in the spleen. STING played also a role in the radio-resistant compartment in both spleen and liver, revealed by comparison of DKO BM into WT host versus DKO BM into STING GT host, for which we observed a 49-fold and 24-fold differences in the spleen and liver, respectively. Jointly, the BM chimeras reveal an evident role for MyD88 in the hematological compartment, while STING contributes to viral control in both the hematological and radio-resistant compartments, most explicitly in the spleen.
 
-## Multiple cell populations produce IFN-I in response upon MCMV infection
+### Multiple cell populations produce IFN-I in response upon MCMV infection
 
 Type I IFNs are induced in response to triggering of pathogen recognition receptors that signal through MyD88 and STING and are key players in the initial anti-viral response. To investigate the IFN-I response in virus-infected cells we made use of a reporter virus that expresses GFP under the IE1 promoter (Henry et al., 2000). We analyzed initial times (8- and 36 hours p.i.) and focused on stromal cell and CD11c+ dendritic cell (DC) populations, which are the major cell types infected at these timepoints (Hsu et al., 2009). Consistent with previous published data, we detected infection of the stromal cell but not CD45+CD11c+ compartment at 8 hours p.i. (Figure 3A). At 36 hours p.i., the percentage of infected stromal cells increased substantially and infected CD45+CD11c+ cells were detected as well. Infected CD45+CD11c+ cells included among others conventional dendritic cells (cDC) and plasmacytoid DC (pDC) populations. Based on these data, we sorted and analyzed infected and uninfected populations at 36 hours p.i. for IFNα and IFNβ transcripts by quantitative PCR (Figure 3—figure supplement 1). The infected stromal cells (GFP+) specifically expressed Ifna and Ifnb1 transcripts, which were not detected in the uninfected (GFP-) cells (Figure 3B). Infected CD11c+ cells also expressed transcripts for Ifna and Ifnb1 but high levels of Ifna transcripts were also detected in GFP- CD11c+ cells isolated from MCMV-infected animals, while Ifnb1 transcripts were much lower in this population compared to infected CD11c+ cells (Figure 3C). Thus, Ifnb1 expression correlated with infection status in CD45- and CD45+CD11c+ cells, while Ifna did not correlate with infection in CD45+CD11c+ cells. Based on these data we chose to investigate the role of STING and MyD88 on IFNβ production by different cell types.
 
-## IFNβ is produced by pDCs in a MyD88-dependent but STING-independent manner during infection
+![Figure 3.](https://cdn.elifesciences.org/articles/56882/elife-56882-fig3-v2.jpg)
+
+**Figure 3.:** WT mice were infected with 100,000 PFU MCMV IE1-GFP reporter virus. (A) Analysis of GFP expression in CD45- stromal cells and CD45+CD11c+ DC at 8 hr and 36 hours p.i. (B) GFP+ and GFP- stromal cells and DC were FACS-sorted 36 hours p.i. and Ifnb1 and pan-Ifna transcript levels were quantified by real-time PCR. Both panels show representative experiments from two independent experiments. Error bars indicate SD; ns, not significant, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56882/elife-56882-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** WT mice were infected with 100,000 PFU MCMV IE1-GFP reporter virus. GFP+ and GFP- stromal cells and DC were FACS-sorted 36 hours p.i. Representative gating strategy and purity of sorted cells that were used in Figure 3BC are shown.
+
+### IFNβ is produced by pDCs in a MyD88-dependent but STING-independent manner during infection
 
 To evaluate the role of STING and MyD88 on IFNβ production by individual cells upon infection, we backcrossed MyD88 KO, STING GT, and DKO mice to the IFNβ-YFP reporter mouse (Scheu et al., 2008). Approximately 20% of the pDCs were YFP+, indicating at least this percentage of pDCs produced IFNβ in response to MCMV infection, whereas much fewer cDCs produced IFNβ because less than 1% of cDCs were YFP+ (Figure 4B). Consistent with previous studies of primary pDC in vitro and in vivo (Krug et al., 2004; Tomasello et al., 2018; Zucchini et al., 2008b), we observed that the production of IFNβ by pDCs was solely dependent on MyD88 because MyD88 KO mice were unable to induce detectable YFP (IFNβ) in pDCs. By contrast, here we found that STING GT mice did not significantly affect pDC IFNβ production, indicating that MyD88 functions in these cells without requiring STING-dependent pathways. On the other hand, both STING and MyD88 seemed to affect IFNβ reporter levels in the few YFP+ cDCs, although the differences were not significant (Figure 4B). Nonetheless, these results indicate that MyD88-dependent sensing of MCMV dictated the IFNβ response in pDCs, but it remained unclear how MyD88- and STING-dependent pathways contribute to IFNβ production in stromal cells.
 
-## IFNβ is produced by stromal cells in a STING-dependent but MyD88-independent manner during infection
+![Figure 4.](https://cdn.elifesciences.org/articles/56882/elife-56882-fig4-v2.jpg)
+
+**Figure 4.:** IFNβ-YFP reporter mice were backcrossed to MyD88- (MyD88 KO), STING- (STING GT) and double-deficient (DKO) mice. Animals were infected with 200,000 PFU WT1 MCMV and analyzed 48 hr post infection. Spleens were digested to a single cell suspension, stained and analyzed by flow cytometry. Error bars indicate SD; **p<0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56882/elife-56882-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** IFNβ-YFP reporter mice were backcrossed to MyD88- (MyD88 KO), STING- (STING GT) and double-deficient (DKO) mice. Animals were infected with 200,000 PFU WT1 MCMV and analyzed 48 hr post infection. Gating strategy for samples presented in Figure 4 are shown.
+
+### IFNβ is produced by stromal cells in a STING-dependent but MyD88-independent manner during infection
 
 Since we were unable to find YFP+ infected stromal cells, which might be due to a detection level issue in these cells in vivo (Figure 4), we turned to in vitro infection of primary splenic fibroblasts and challenged them with MCMV at MOI 5 (Figure 5A). Indeed, splenic fibroblasts readily expressed 8000-fold increase in Ifnb1 transcripts by qPCR at 8 hours p.i. To determine the role of key innate sensing components, we used mouse embryonic fibroblasts (MEFs) that were genetically deficient in these components. Consistent with primary splenic fibroblasts, MEF expressed Ifnb1 transcripts upon MCMV infection (Figure 5B), reaching levels similar to those detected in primary splenic fibroblasts. We further observed that Ifnb1 expression was independent of MyD88 and TRIF, indicating that TLRs do not contribute to IFNβ production in fibroblasts even though Ifnb1 expression was dependent on IRF3/7 and TBK1, which is consistent with cytosolic sensing of MCMV. Using MEF lines with two different mutations in STING (Ishikawa and Barber, 2008; Sauer et al., 2011), we found that the IFNB1 response was instead dependent on STING. However, IFNB1 production was independent of MAVS (also known as CARDIF and IPS-1), suggesting that the IFN-response is independent of the cytosolic RNA sensors (Tan et al., 2018). Finally, we investigated the role of cytosolic DNA sensors and found that fibroblast sensing of MCMV was dependent on cGAS, but independent of ZBP1 and DNA-PK. To confirm that the cGAS pathway is involved in adult splenic stromal cells, we analyzed Ifnb1 expression in cGAS-deficient primary splenic fibroblasts (Figure 5C). Indeed, cGAS-deficient splenic fibroblasts were unable to express Ifnb1 in response to MCMV challenge, indicating that the STING-cGAS-dependent pathway is responsible for the IFNβ response in the stromal cell compartment. To validate that these pathways are also involved in IFNβ protein production and secretion, we analyzed cell culture supernatants at 48 hours p.i. with MCMV MOI 0.5 (Figure 5D). WT MEF secreted IFNβ in response to MCMV infection, but neither STING nor cGAS-deficient MEFs produced IFNβ. Collectively, these results strongly suggest that the stromal cell compartment produces IFNβ in a STING-cGAS dependent but MyD88-independent manner.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/56882/elife-56882-fig5-v2.jpg)
 
-**Figure 5.:** (A) IFNB1 mRNA levels of primary splenic fibroblasts infected with WT1 MCMV (MOI = 5) 8 hr post-infection. (B) IFNB1 mRNA levels of murine embryonic fibroblasts (MEF) from wildtype (WT) or indicated deficient mice were infected and analyzed as in (A). (C) IFNB1 mRNA levels in infected WT or cGAS-deficient primary splenic fibroblasts, analyzed as in (A). (D) Secreted IFNβ by WT or indicated gene deficient MEF, infected with MCMV (MOI = 0.5); supernatant was analyzed 48 hours p.i. by ELISA. Panels show representative experiments from two independent experiments performed in duplicate. WT, STING GT, and TBK1-, MAVS-, ZBP1-, DNA-PK-, and cGAS-deficient MEF represent data from two independent MEF preparations. Error bars indicate SEM; ns, not significant, *p<0.05, **p<0.01, ***p<0.001.  Figure 5—source data 1.
+**Figure 5.:** (A) IFNB1 mRNA levels of primary splenic fibroblasts infected with WT1 MCMV (MOI = 5) 8 hr post-infection. (B) IFNB1 mRNA levels of murine embryonic fibroblasts (MEF) from wildtype (WT) or indicated deficient mice were infected and analyzed as in (A). (C) IFNB1 mRNA levels in infected WT or cGAS-deficient primary splenic fibroblasts, analyzed as in (A). (D) Secreted IFNβ by WT or indicated gene deficient MEF, infected with MCMV (MOI = 0.5); supernatant was analyzed 48 hours p.i. by ELISA. Panels show representative experiments from two independent experiments performed in duplicate. WT, STING GT, and TBK1-, MAVS-, ZBP1-, DNA-PK-, and cGAS-deficient MEF represent data from two independent MEF preparations. Error bars indicate SEM; ns, not significant, *p<0.05, **p<0.01, ***p<0.001.
 
-## MyD88 and STING contribute to NK cell cytolytic potential
+### MyD88 and STING contribute to NK cell cytolytic potential
 
 We previously reported that both IFN-I and IL-12 act directly on NK cells to induce perforin (Prf) and granzyme B (GzB) protein levels, thereby increasing NK cell cytolytic potential, which was required for Ly49H-dependent control of MCMV infection (Parikh et al., 2015). Moreover, IL-12 production in response to MCMV has been reported to be dependent on MyD88 (Krug et al., 2004), and thus contributed to the phenotypes observed in MyD88 KO mice independent of IFN-I. Here we investigated the role of MyD88 and STING in increasing NK cell reactivity during MCMV infection. Consistent with previous reports (Fehniger et al., 2007; Orange et al., 1995; Parikh et al., 2015), we observed increased levels of NK cell GzB, Prf and IFNγ at 48 hours p.i. (Figure 6A). At this time point, NK cell production of IFNγ is reportedly dependent on IL-18, which signals through MyD88 (Adachi et al., 1998; Pien et al., 2000). Indeed, NK cell IFNγ production was dependent on MyD88, whereas STING did not impair IFNγ production, and rather increased the IFNγ response (Figure 6B). This potentially could be due to a relatively small increase in viral load at these timepoints. Expression of both GzB and Prf followed a similar pattern, as the vast majority of increased expression was dependent on MyD88, whereas STING did not overtly contribute to the production of these lytic proteins (Figure 6B). Finally, we analyzed NK cell cytolytic capacity using a 3 hr in vivo target cell rejection assay. We previously reported that MCMV increased m157-target cell rejection in an IL-12- and IFN-I-dependent manner (Parikh et al., 2015). Consistent with our previous data, m157-specific target cell rejection increased 3 days post-MCMV infection from 50% to 80% (Figure 6C). MHC-I-deficient cell (‘missing self’) rejection was higher and increased from 30% to 90%. MyD88 KO or STING GT mice did not display substantial differences in target cell rejection, but DKO mice substantially decreased NK cell cytolytic capacity with m157-specific rejection showing levels of uninfected mice. Similarly, MHC-I-deficient rejection was decreased in double versus single deficient mice. Together, these data indicate that both MyD88 and STING-dependent pathways contribute to NK cell cytolytic potential, albeit that MyD88 predominantly affects production of Prf and GzB.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/56882/elife-56882-fig6-v2.jpg)
 
-**Figure 6.:** (A and B) Mice deficient in MyD88 and/or STING were infected with MCMV and 2 days later splenocytes were harvested and analyzed for GzmB, Prf1, and IFNγ expression by FACS. Representative contour plots of individual mice are shown in (A) and quantification for multiple mice is shown in (B). (C) Differentially labelled WT, m157-Tg and MHC-I deficient splenocytes were adoptively transferred into indicated day 3-infected mice. Specific rejection was analyzed 3 hr post-transfer in the spleen. Representative experiments from two independent experiments per panel are shown. Error bars indicate SEM; ns, not significant, *p<0.05, **p<0.01, ***p<0.001.  Figure 6—source data 1.
+**Figure 6.:** (A and B) Mice deficient in MyD88 and/or STING were infected with MCMV and 2 days later splenocytes were harvested and analyzed for GzmB, Prf1, and IFNγ expression by FACS. Representative contour plots of individual mice are shown in (A) and quantification for multiple mice is shown in (B). (C) Differentially labelled WT, m157-Tg and MHC-I deficient splenocytes were adoptively transferred into indicated day 3-infected mice. Specific rejection was analyzed 3 hr post-transfer in the spleen. Representative experiments from two independent experiments per panel are shown. Error bars indicate SEM; ns, not significant, *p<0.05, **p<0.01, ***p<0.001.
 
 ## Discussion
 
@@ -93,38 +117,412 @@ IFN-I and IL-12 produced in response to MCMV infection are required for full NK 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, C57BL/6 background (Mus musculus)</td>
+      <td>C57BL/6</td>
+      <td>Charles River Laboratories</td>
+      <td>556; RRID:MGI:2160593</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, BALB/c background (Mus musculus)</td>
+      <td>BALB/c</td>
+      <td>Charles River Laboratories</td>
+      <td>555; RRID:MGI:2160915</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, C57BL/6 background (Mus musculus)</td>
+      <td>STING golden ticket</td>
+      <td>Jackson Laboratories</td>
+      <td>017537; RRID:IMSR_JAX:017537</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, C57BL/6 background (Mus musculus)</td>
+      <td>IFNβ-YFP reporter mice</td>
+      <td>Jackson Laboratories</td>
+      <td>010818; RRID:IMSR_JAX:010818</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, C57BL/6 background (Mus musculus)</td>
+      <td>DNA-PK SCID</td>
+      <td>Jackson Laboratories</td>
+      <td>001913; RRID:IMSR_JAX:001913</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, C57BL/6 background (Mus musculus)</td>
+      <td>Β2m KO</td>
+      <td>Jackson Laboratories</td>
+      <td>002087; RRID:IMSR_JAX:002087</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, C57BL/6 background (Mus musculus)</td>
+      <td>M157-Tg</td>
+      <td>Tripathy et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, C57BL/6 background (Mus musculus)</td>
+      <td>H-2Kb x H-2Db KO</td>
+      <td>Taconic</td>
+      <td>4215; RRID:IMSR_TAC:4215</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, C57BL/6 background (Mus musculus)</td>
+      <td>MyD88 KO</td>
+      <td>S. Akira</td>
+      <td>RRID:MGI:3577712</td>
+      <td>through the JCRB Laboratory Animal Resource Bank of the National Institute of Biomedical Innovation</td>
+    </tr>
+    <tr>
+      <td>Strain, C57BL/6 background (Mus musculus)</td>
+      <td>TBK1 KO</td>
+      <td>S. Akira</td>
+      <td>nbio156; RRID:MGI:3053427</td>
+      <td>through the JCRB Laboratory Animal Resource Bank of the National Institute of Biomedical Innovation</td>
+    </tr>
+    <tr>
+      <td>Strain, C57BL/6 background (Mus musculus)</td>
+      <td>ZBP1 KO</td>
+      <td>S. Akira</td>
+      <td>nbio155; RRID:MGI:3776852</td>
+      <td>through the JCRB Laboratory Animal Resource Bank of the National Institute of Biomedical Innovation</td>
+    </tr>
+    <tr>
+      <td>Strain, C57BL/6 background (Mus musculus)</td>
+      <td>IPS1 KO</td>
+      <td>Michael Gale</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, C57BL/6 background (Mus musculus)</td>
+      <td>cGAS KO</td>
+      <td>Herbert Virgin</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>IRF3/7 KO MEF</td>
+      <td>Michael Diamond</td>
+      <td></td>
+      <td>Primary murine embryonic fibroblasts.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>STING KO MEF</td>
+      <td>Glen Barber</td>
+      <td></td>
+      <td>Primary murine embryonic fibroblasts.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MyD88xTRIF KO MEF</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary murine embryonic fibroblasts. See Materials and methods, Section 2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TBK1 KO MEF</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary murine embryonic fibroblasts. See Materials and methods, Section 2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TBK1 HET MEF</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary murine embryonic fibroblasts. See Materials and methods, Section 2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>STING GT MEF</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary murine embryonic fibroblasts. See Materials and methods, Section 2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MAVS (IPS1) KO MEF</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary murine embryonic fibroblasts. See Materials and methods, Section 2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MAVS (IPS1) KO MEF</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary murine embryonic fibroblasts. See Materials and methods, Section 2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MAVS (IPS1) KO MEF</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary murine embryonic fibroblasts. See Materials and methods, Section 2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ZBP1 KO MEF</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary murine embryonic fibroblasts. See Materials and methods, Section 2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DNA-PKSCID MEF</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary murine embryonic fibroblasts. See Materials and methods, Section 2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>cGAS KO MEF</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary murine embryonic fibroblasts. See Materials and methods, Section 2</td>
+    </tr>
+    <tr>
+      <td>Virus (murine cytomegalovirus)</td>
+      <td>MCMV WT1</td>
+      <td>Cheng et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Virus (murine cytomegalovirus)</td>
+      <td>MCMV GFP</td>
+      <td>Henry et al., 2000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MCMV IE1</td>
+      <td>IDT DNA</td>
+      <td>TAQman assay</td>
+      <td>Forward: 5’-CCCTCTCCTAACTCTCCCTTT-3’; Reverse: 5’-TGGTGCTCTTTTCCCGTG −3’; Probe: 5’- TCTCTTGCCCCGTCCTGAAAACC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ACTB</td>
+      <td>IDT DNA</td>
+      <td>TAQman assay</td>
+      <td>Forward: 5’-AGCTCATTGTAGAAGGTGTGG-3’; Reverse: 5’- GGTGGGAATGGGTCAGAAG-3’; Probe: 5’-TTCAGGGTCAGGATACCTCTCTTGCT-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IFNB1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>TAQman assay</td>
+      <td>Mm00439546_s1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>(pan)Ifna</td>
+      <td>IDT DNA</td>
+      <td>TAQman assay</td>
+      <td>Forward: 5’-CTTCCACAGGATCACTGTGTACCT-3’; Reverse: 5’-TTCTGCTC TGACCACCTCCC-3’; Probe: 5’-AGAGAGAAGAAACACAGCCC CTGTGCC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>TAQman assay</td>
+      <td>Mm99999915_g1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse NK1.1 PE-Cy7 (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 25-5941-82; RRID:AB_469665</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse NKp46 PerCP-eFluor710 (Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 46-3351-82; RRID:AB_1834441</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD3 APC-eFluor780 (Armenian hamster monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>cat# 47-0031-82, RRID:AB_11149861</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD19 APC-eFluor780 (Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 47-0193-82, RRID:AB_10853189</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ly49H FITC (Mouse monoclonal)</td>
+      <td>Made in-house</td>
+      <td></td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD31 PE (Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12-0311-83, RRID:AB_465633</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse PDCA1 PE (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12-3171-81, RRID:AB_763427</td>
+      <td>FACS (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse gp38 PE-Cy7 (Syrian hamster monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 25-5381-82, RRID:AB_2573460)</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45 APC (Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 17-0451-83, RRID:AB_469393)</td>
+      <td>FACS (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11c APC-eFluor780 (Armenian hamster monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 47-0114-82, RRID:AB_1548652)</td>
+      <td>FACS (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ly49H APC (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 17-5886-82, RRID:AB_10598809</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Perforin PE (Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12-9392-82, RRID:AB_466243</td>
+      <td>FACS (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Granzyme B APC (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# MHGB05, RRID:AB_10373420</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IFNg eFluor450 (Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 48-7311-82, RRID:AB_1834366</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IFNB ELISA</td>
+      <td>Biolegend</td>
+      <td>439407</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cytofix/Cytoperm kit</td>
+      <td>BD Biosciences</td>
+      <td>554714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>Graphpad</td>
+      <td>RRID: SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flowjo</td>
+      <td>Treestar Inc</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Viability stain eFluor 506</td>
+      <td>Thermofisher Scientific</td>
+      <td>65-0866-14</td>
+      <td>FACS (1:1000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 C57BL/6 (stock number 556) and BALB/c (555) mice were purchased from Charles River Laboratories. The following mouse strains were purchased from Jackson Laboratories: STING golden ticket (Sting1 <gt > ; 017537), IFNβ-YFP reporter mice (Ifnb1; 010818), DNA-PK SCID (Prkdc <scid > ; 001913), and β2m KO (B2m; 002087) all on the C57BL/6 background. m157-Tg mice were generated and maintained in-house on the C57BL/6 background (Tripathy et al., 2008). H-2Kb KO x H-2Db KO (H2-k1 x H2-d1; 4215) mice on the C57BL/6 background were purchased from Taconic Farms. MyD88 KO (Myd88), TBK1 KO (Tbk1; nbio156), and ZBP1 KO (Zbp1; nbio155) mice were kindly provided by S. Akira (Osaka University, Osaka, Japan) through the JCRB Laboratory Animal Resource Bank of the National Institute of Biomedical Innovation (Adachi et al., 1998; Hemmi et al., 2004; Ishii et al., 2008) and were maintained on a C57BL/6 background. IPS1 KO (Mavs) mice on the C57BL/6 background were kindly provided by Michael Gale (University of Washington, Seattle, WA, USA). Mice deficient for cGAS (Cgas) were kindly provided by Herbert Virgin (Vir Biotechnology, San Francisco, CA, USA) (Schoggins et al., 2014). Triple MHC Class I KO mice (TKO) were generated by crossing β2m KO mice to H-2Kb KO x H-2Db KO mice. STING GT mice were crossed to MyD88 KO to generate DKO mice. Subsequently DKO and single KO mice were crossed with IFNβ-YFP reporter to generate IFNβ-YFP on the various KO backgrounds. All mice were maintained in-house in accordance with institutional ethical guidelines. Age- and sex-matched mice were used in all experiments.
 
-## Cell lines
+### Cell lines
 
 3T12 cells (ATCC CCL-164) were maintained in DMEM supplemented with newborn calf serum, L-glutamine, penicillin, and streptomycin and were used for production of tissue culture derived MCMV and tittering of virus stocks. All MEF were maintained in RPMI supplemented with fetal bovine serum, L-glutamine, penicillin, and streptomycin. IRF3/7 KO MEF were kindly provided by Michael S Diamond (Washington University in St Louis, MO, USA). STING KO MEF have been described before (Ishikawa et al., 2009). All other MEF lines were generated from day 11.5–13.5 embryos, at least two independent lines were generated per genotype. To generate splenic fibroblasts, spleens were minced and digested with Liberase TL, adherent cells were cultured for 3–6 weeks to obtain pure fibroblast populations.
 
-## In vivo virus infections
+### In vivo virus infections
 
 For in vivo studies salivary gland MCMV (sg-MCMV) of the WT-1 strain, a subcloned Smith strain (Cheng et al., 2010), was used for infections unless otherwise indicated. Where indicated, MCMV that expressed GFP under the IE1 promotor was used to visualize infected cells (Henry et al., 2000). This reporter virus contained a mutation in m157. All viral strains for in vivo infections were propagated in BALB/c mice; virus was isolated from salivary glands and titers were determined as previously described (Brune et al., 2001; Jonjic, 2001). Mice were infected with indicated dose of MCMV intraperitoneally in 200 µl PBS. For survival studies weight was monitored daily and mice were sacrificed when more than 30% of initial weight was lost, in accordance to animal protocol. Viral load analysis was performed as previously described (Parikh et al., 2015). Briefly, RNA-free organ DNA was isolated using Puregene extraction kit (Qiagen). 160 ng DNA was quantified for MCMV IE1 (Forward: 5’-CCCTCTCCTAACTCTCCCTTT-3’; Reverse: 5’-TGGTGCTCTTTTCCCGTG −3’; Probe: 5’-TCTCTTGCCCCGTCCTGAAAACC-3’; IDT DNA) and host Actb (Forward: 5’- AGCTCATTGTAGAAGGTGTGG-3’; Reverse: 5’- GGTGGGAATGGGTCAGAAG-3’; Probe: 5’-TTCAGGGTCAGGATACCTCTCTTGCT-3’; IDT DNA) against plasmid standard curves using TAQman universal master mix II on a StepOnePlus real time PCR system (Thermo Fisher Scientific).
 
-## Bone marrow chimeras
+### Bone marrow chimeras
 
 C57BL/6 and STING GT mice were irradiated with 950 rad by an x-ray irradiator and were intravenously with 5 million of the indicated genotype donor bone marrow cells. Chimeric mice were given antibiotic water (sulfamethoxazole/trimethoprim) for 4 weeks. 6 weeks post-irradiation mice were infected with MCMV and analyzed for viral load at 5 days p.i. We observed greater sensitivity of reconstituted BM chimeric mice to infections than mice not subjected to the BM transplant procedure in our facility so we infected reconstituted mice with a lower dose of MCMV (20,000 PFU) as compared to non-chimeric mice.
 
-## In vitro virus infections
+### In vitro virus infections
 
 For in vitro studies, pelleted tissue culture-derived MCMV was prepared and viral titers were determined as previously described (Brune et al., 2001). 200,000 cells were plated in a 6-well plate overnight and were infected with 200 µl of MCMV at MOI five for RNA analysis and MOI 0.5 for supernatant analysis for 1 hr, after which wells were washed with PBS to remove free virus and 2 ml fresh culture media was added. Cells were lysed in the wells with 1 ml trizol after an additional 5 hr culture for RNA analysis. Samples were stored at −80°C until analysis. Supernatants were harvested 48 hr after culture and analyzed for IFNβ by ELISA (Biolegend) according to manufacturer protocol.
 
-## Flow cytometry
+### Flow cytometry
 
 Fluorescent-labeled antibodies used were anti-NK1.1 (clone PK136), anti-NKp46 (29A1.4), anti-CD3 (145–2 C11), anti-CD19 (eBio1D3), anti-CD31 (390), anti-PDCA1 (eBio129c), anti-gp38 (eBio8.1.1), anti-CD45 (30-F11), anti CD11c (N418), anti-Ly49H (3D10), anti-Perforin (eBioOMAK-D), anti-Granzyme B (GB12), and anti-IFNγ (XMG1.2), all from Thermo Fisher Scientific. For analysis of splenic dendritic and stromal cells, spleens were digested with 1 mg/ml Liberase TL and DNAse -I (Millipore Sigma) for 45 min with mechanical dissociation with a pipette every 15 min to obtain a single cell suspension. For analysis of NK cells, spleens were crushed through a 70 μm cell strainer to obtain a single cell suspension. Red blood cells (RBC) in all samples were lysed with RBC lysis buffer. Cells for analysis were first stained with fixable viability day (Thermo Fisher Scientific). Subsequently, cell surface molecules were stained in 2.4G2 hybridoma supernatant to block Fc receptors. For intracellular staining, cells were fixed and stained intracellularly using the Cytofix/Cytoperm kit (BD Biosciences) according to manufacturer’s instructions. Samples were acquired using FACSCanto (BD Biosciences) and analyzed using FlowJo software (Treestar). NK cells were defined as Viability-NK1.1+CD3-CD19-. Where indicated, cells were sorted on a FACSaria (BD Biosciences) into media and subsequently lysed in Trizol for RNA analysis.
 
-## RNA analysis
+### RNA analysis
 
 RNA was isolated from cultured or sorted cells using Trizol according to manufacturer instruction (Thermo Fisher Scientific). Contaminating DNA was removed using Turbo DNAse, and cDNA was synthesized using Superscript III using oligo(dT) (Thermo Fisher Scientific). Quantification was performed for Ifnb1 (Mm00439546_s1; Thermo Fisher Scientific), (pan)Ifna (Forward: 5’-CTTCCACAGGATCACTGTGTACCT-3’; Reverse: 5’-TTCTGCTC tgaccacctccc-3’; Probe: 5’-AGAGAGAAGAAACACAGCCC CTGTGCC-3’; IDT DNA) (Samuel and Diamond, 2005) and Gapdh (Mm99999915_g1; Thermo Fisher Scientific) against plasmid or pooled standard curves using TAQman universal master mix II on a StepOnePlus real time PCR system (Thermo Fisher Scientific).
 
-## In vivo cytotoxicity assay
+### In vivo cytotoxicity assay
 
 Target splenocytes were isolated from C57BL/6, m157-Tg, and MHC-I deficient (TKO) mice and differentially labelled with CFSE, CellTrace violet, and CellTrace far red (Thermo Fisher Scientific). Target cells were mixed at a 1:1:1 ratio and 3 × 106 target cells were injected i.v. into naïve or day 3 MCMV-infected mice. 3 hr after challenge splenocytes were harvested and stained. The ratio of target (m157-tg or TKO) to control (C57BL/6) viable CD19+ cells was determined by flow cytometry. Target cell rejection was calculated using the formula [(1−(Ratio(target:control)sample/Ratio(target:control)NK depleted))×100]. Average of two NK1.1-depleted mice served as control.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using Prism (GraphPad software). Survival curves were compared using Log-Rank (Mantel-Cox) tests, other comparisons were performed using one-way ANOVA with Bonferroni’s multiple comparisons tests to calculate P values. Error bars in figures represent the SEM. Statistical significance was indicated as follows: ****, p<0.0001; ***, p<0.001; **, p<0.01; *, p<0.05; ns, not significant.

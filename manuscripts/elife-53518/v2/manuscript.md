@@ -41,11 +41,27 @@ Assembling complex region-specific intricate neural networks for an entire brain
 
 ## Results
 
-## Mapping 18 neuronal lineages concurrently with vnd-GAL4
+### Mapping 18 neuronal lineages concurrently with vnd-GAL4
 
 In order to target a large subset of related neuronal lineages, we wanted to exploit a conserved patterning gene. Both anteroposterior and dorsoventral patterning of the CNS are remarkably conserved from insects to humans (Lichtneckert and Reichert, 2008; Urbach and Technau, 2008), including the tripartite organization of the brain (the forebrain, midbrain and hindbrain correspond to the fly’s protocerebral, deutocerebral, and tritocerebral neuromeres). With the aim of making our findings applicable to all three neuromeres, we searched for a conserved dorsoventral patterning gene with relatively even distribution. Urbach and Technau reported 21 fly brain NBs expressing Ventral nervous system defective (Vnd, homolog of the Nkx2 family of homeobox transcription factors). These include 13 of the 72 protocerebral NBs, 4 of the 21 deutocerebral NBs, and 4 of the 13 tritocerebral NBs (Urbach and Technau, 2003). Therefore, we decided to target these Vnd-expressing NB lineages for a detailed, large-scale analysis.
 
 To analyze Vnd+ NBs, we created a GAL4 driver under the control of endogenous vnd regulatory sequences using gene targeting (Chen et al., 2015). To immortalize the NB expression of Vnd into the neuronal progeny, we derived a Vnd-specific, lineage-restricted LexA driver using a cascade of site-specific recombinases. This cascade is triggered by vnd-GAL4, filtered through dpnEE (a pan-NB promoter), and then driven ubiquitously so that each of the NB’s daughter cells express LexA (Figure 1A). To isolate/identify individual Vnd lineages, we utilized stochastic clonal induction of a conditional LexA reporter. We detected 18 stereotyped neuronal lineages with cell bodies within the Drosophila central brain (modeled in Figure 1A based on data from Figure 2). These lineages correspond to the SMPad1, SMPp&v1, SLPpm3, CREa1, CREa2, WEDd1, AOTUv1, AOTUv3, AOTUv4, VLPa2, VESa1, VESa2, ALv1, LALv1, FLAa1, FLAa2, FLAa3, and WEDa1 lineages that we previously identified (Yu et al., 2013). The cell body clusters of these vnd-GAL4 lineages cover the medial part of the anterior brain surface (Figure 1A and Figure 2), consistent with Vnd’s expression around the midline of the embryonic CNS (https://insitu.fruitfly.org/cgi-bin/ex/report.pl?ftype=1&ftext=FBgn0261930).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53518/elife-53518-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic illustration of twin-spot MARCM with vnd-specific lineage-restricted driver. Top left: LexA driver is restricted to Vnd+ lineages via a multi-step cascade. vnd-GAL4 (pink) reconstitutes dpn-CrePEST (yellow), which in turn reconstitutes nSyp-LexA::P65 (blue). LexA::P65 is only expressed in neurons produced by Vnd+ NBs. Bottom left: mitotic recombination leads to differential labeling of paired sister cells by twin-spot MARCM. Top right: Twin-spot MARCM clones (red/green cells) are stochastically introduced only in LexA::P65 expressing lineages (blue intensity indicates frequency of nSyb-LexA::P65 reconstitution). Middle right: mitotic recombination (hs-FLP) in a GMC elicits paired single-cell clones, whereas recombination in a NB leads to GMC offspring (red) paired with the remainder of the lineage (green). Bottom right: approximate distribution of Vnd neuronal cell bodies in a standard fly brain template. (B–D) Example mapping of multiple twin-spot MARCM clones. A representative nc82-counterstained (blue) adult fly brain (B) carrying multiple twin-spot clones (green/red), induced at 78 hr ALH. The green neurons (C) and red neurons (D) were segmented out and then warped onto a standard adult fly brain. Lineage origin is annotated for neurons with cell bodies in the central brain.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53518/elife-53518-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A log2-scale heatmap to show the twin-spot clone numbers for each of the 18 Vnd lineages (Y axis) across 59 time points (X axis). The total clone number for each lineage is shown to the right. ALH: after larval hatching; BPF: before pupa formation; APF: after pupa formation. (B) Heatmap of the percentage of twin-spot clones, derived from specific Vnd lineages (Y axis) at specific time points (X axis), that exist as one green and one red neuron or as two viable neurons accompanied by a multi-cellular NB clone. The co-existent two neurons in such twin-spot clones were mostly made by a common GMC, although could possibly arise from separate precursors due to independent mitotic recombination events.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/53518/elife-53518-fig2-v2.jpg)
+
+**Figure 2.:** (A–R) Hemilineage morphology is revealed by pseudo-coloring Non/A neurons green and Noff/B neurons magenta based on the Notch state (judged from notch RNAi phenotypes). For the seven Vnd lineages composed of dual hemilineages (A–G), representative single-cell clones of A or B neurons were assembled to create synthetic NB clones with sister hemilineages in distinct colors. For the 11 unpaired Vnd hemlineages (H–R), the full pattern was shown by merging the first larval-born neuron with its accompanying NB clone and then pseudo-coloring the merged clone according to A/B fate. (S–X’’) Full-size NB clones (orange) overlaid with both A (green) and B (magenta) hemilineage masks (S–X) or either B (S’–X’) or A (S’’–X’’) hemilineage mask, to examine the hemilineage-structure correspondence in dual-hemilineage NB clones (except SMPp&v1 with widely separate A/B cell body clusters). Composite confocal images viewed from various angles (x, y, and z coordinates indicated above) demonstrate distinct hemilineage-specific neurite fascicles (indicated with green/magenta arrows), extending out of fully or partially separate A and B cell body clusters, in six of the seven Vnd lineages (S–W’’). Only the LALv1 lineage has a mixed cell body region that extends a single neurite bundle projecting posteriorly before dividing into multiple fascicles (X–X’’).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53518/elife-53518-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic illustration showing how a conditional GAL4 driver can be irreversibly activated in random type I NBs (through a cascade of pattered recombinase activities) at the timing of interest (controlled by heat shock). The reconstituted ubiquitous GAL4 driver can then activate notch RNAi in addition to the reporter continuously in a lineage-restricted manner. (B–H) Representation of distinct sister hemilineages (Non: green, Noff: red) reconstituted through merging the identified neuron types of distinct Notch states separately in the standard fly brain template (grey). The Notch states were determined based on phenotypes shown in [B’] to [H’]. (B’–H’) Representative notch-RNAi NB clones (green) in nc82-counterstained adult fly brains (blue). Note persistence of only a half pattern (corresponding to the red Noff hemilineage shown in [B] to [H]) in the labeled notch-RNAi NB clones. Multiple notch-RNAi NB clones could coexist; and some bilaterally symmetrical neurons with midline crossing existed as background clones in almost all samples.
 
 Despite sharing Vnd expression, the labeled NB clones each show distinct gross morphology. To unravel the extent to which lineage origins and temporal regulation govern neuronal morphology and target selection, we compared the progeny of each Vnd+ NB in detail. We identified individual neurons based on morphology and determined the neuronal birth order for each of the 18 vnd-GAL4 lineages. We simultaneously mapped all Vnd lineages by twin-spot MARCM (Yu et al., 2009) using the Vnd-specific, lineage-restricted LexA driver (Figure 1). We conducted transient clone induction in contiguous 2-hr windows from 18 hr after larval hatching (ALH) to 92 hr ALH and from 22 hr before pupa formation (BPF) to 16 hr after pupa formation (APF). We imaged 5771 brains containing twin-spot clones of the 18 Vnd lineages.
 
@@ -55,7 +71,7 @@ In fact, only 7 of the 18 Vnd lineages (SMPp&v1, CREa1, CREa2, AOTUv1, AOTUv3, A
 
 To map progeny diversity, we clustered single-neuron clones based on neuron morphology and timing of clone induction. For each of the 18 Vnd lineages, we identified morphologically distinguishable neuron types and further determined their approximate birth sequence based on the recovery window of each neuron type (Figure 1—source data 1; Supplementary file 1). Single neurons consistently occupied a much more restricted domain compared to full-size NB clones. Moreover, single-neuron clones exhibited birth order-dependent trajectories. Given these phenomena, we examined the extent of lineage coverage in our single-neuron collection by merging representative single neurons from all annotated morphological types and comparing the merged single cells with full-size NB clones. Aligning samples through a standard 3D fly brain template confirmed that all major trajectories from a NB clone were covered by single-neuron projections, ensuring that we have not missed any major neuron types (Figure 1—source data 2). Together, our analysis demonstrates that we have systematically mapped the 18 Vnd lineages with single-cell resolution.
 
-## A/B hemilineage-characteristic neurite trajectories
+### A/B hemilineage-characteristic neurite trajectories
 
 Assigning clonally related neurons to the A (Non) or B (Noff) hemilineage is essential to resolve the impact of binary sister fate decision on neuronal differentiation. Unfortunately, twin-spot MARCM labels paired sister neurons with randomly segregated reporter genes, rather than in a hemilineage-specific manner. Thus, given that Notch underlies hemilineage specification, we genetically manipulated Notch to determine hemilineage identity.
 
@@ -71,7 +87,7 @@ Contrasting the sharp distinctions across paired sister hemilineages, certain no
 
 Given that hemilineages are distinct, our following analyses of neuron diversity independently considered the 25 hemilineages. Nonetheless, in the seven lineages composed of sister hemilineages, we exploited the paired sister-neurons to compare sister-hemilineage development.
 
-## Morphological complexity decreases with birth order
+### Morphological complexity decreases with birth order
 
 In the process of overlaying single-neuron clones onto full-size NB clones (Figure 1—source data 2), we noticed that the first larval-born neurons show uniquely extensive elaborations in five (20%) hemilineages: CREa1B, ALv1(A), VESa1(A), VESa2(A), and FLAa1(B). These first larval-born neurons consistently project farther than the remaining offspring. We thus see extra distant targets exclusively on the GMC side of twin-spot NB clones induced around quiescence exit (Figure 3). For instance, the striking LO and SLP innervation by the first larval-born VESa2(A) neuron (green in Figure 3D) is completely absent from the largest larval-induced VESa2(A) NB clone (red in Figure 3D). In another seven hemilineages (CREa1A, CREa2A, AOTUv1A, AOTUv4A, SLPpm3(B), FLAa2(A), and WEDd1(B)), multiple early larval-born neurons substantially extend beyond the remainder of the lineage (see Figure 1—source data 1). For instance, the postembryonic WEDd1(B) hemilineage consistently starts with two descending neurons that project to the ventral nerve cord (VNC), followed by neurons completely confined to the brain (Figure 1—source data 1). All together, we found that 12 out of 25 (48%) Vnd hemilineages contain neurons with uniquely exuberant elaborations born at the beginning of larval neurogenesis.
 
@@ -85,7 +101,7 @@ Contrasting the complexity of early-born neurons, eight hemilineages (32%), SMPa
 
 **Figure 4.:** (A) Heatmap of sample distribution of the annotated VESa1 neurons types (Y-axis) vs. timing of clone induction (X-axis). Blue to red color represents the actual single-cell clone numbers (max = 10) recovered from induction at given time points. Neuron types were manually sorted to reflect their ordered production. Colored arrows indicate distinct morphological groups shown in [B-I]. See text for neuron type nomenclature. (B–I) Serially derived single neuron types (green) shown in the context of all recovered VESa1 neuron types (grey). Note reduction in neurite elaboration along birth order.
 
-## Neurons of same hemilineage origin vary in topology
+### Neurons of same hemilineage origin vary in topology
 
 We wish to understand to what extent lineage origins determine neuronal morphology and neuronal targets. Considering neuron topology in the context of brain-wide networking, we established a refined neuron classification scheme that takes into account neuron topology and basic topographic features (Figure 5). First, we assign the brain-input/output ‘extrinsic’ neurons, including descending neurons, to the External cluster. Second, we classify brain-intrinsic neurons based on (1) single or multiple domains of arborization, and (2) unilateral, bilateral, or midline targeting. Briefly, we designate neurons with a single unilateral arborization domain as Single (S), neurons with multiple arborization domains exclusively within one hemisphere as Projection (P), neurons with a single domain of arborization covering the brain midline as Central (C), neurons with midline targeting plus non-midline arborization as Midline (M), and neurons with midline crossing as either Transverse (T) or Horizontal (H) depending on absence or presence of bilaterally symmetric innervation.
 
@@ -101,7 +117,7 @@ We annotated the neurons of Vnd lineages according to this classification scheme
 
 Given the hemilineage-dependent coexistence of selective topological classes, we decided to name clonally related morphological types of neurons with the following convention. Our nomenclature starts with lineage name followed by topology-class letter and a two-digit number. The lineage name is separated from the topology-class letter with a dash sign. To distinguish sister hemilineages, we add ‘A’ or ‘B’ after the lineage name to represent Non or Noff. The two-digit serial number starts from 01 and is assigned by arranging neuron types of the same hemilineage-topology class by first clustering neuron types based on closeness in morphology and then determining cluster sequence as well as intra-cluster neuron sequence to roughly reflect birth order. We typically provide extra information in parentheses at the end, to indicate the key morphological feature (e.g. the most distal neuropil target) or simply the preexisting name if available. For H-class neurons with asymmetric neuropil targets, when their key asymmetric target is enclosed as extra information, we add ‘/’ in front of and italicize the enclosed neuropil name. We may add ‘i’ or ‘c’ after the neuropil name to indicate ‘ipsilateral’ or ‘contralateral’. Briefly, we have identified 467 morphological neuron types from 25 Vnd hemilineages in the fly central brain (Supplementary file 2). The five most heterogeneous hemilineages are: ALv1(A) (46 types), VLPa2(A) (37 types), LALv1B (31 types), LALv1A (29 types), and CREa1A (26 types). The five least heterogeneous are: FLAa1(B) (five types), FLAa3(A) (seven types), CREa1B (nine types), SLPpm3(B) (11 types), and VESa1(A) (12 types). The remaining 15 hemilineages yield 15 to 24 morphological neuron types. As a caveat, we could have over-estimated neuron types due to structural plasticity or we could have under-estimated neuron types due to lack of landmarks, particularly in neuropils that are not well-characterized.
 
-## Hemilineages vary greatly in gross complexity
+### Hemilineages vary greatly in gross complexity
 
 A ‘diverse’ hemilineage (one with many assigned neuron types) might consist of distinct neurons that uniformly target the same set of neuropils or grossly dissimilar neurons each innervating distinctive sets of neuropils. Given this phenomenon, we further clustered clonally related neuron types into ‘morphological groups’ based on patterns of neuropil targeting. For instance, the paired LALv1A and LALv1B hemilineages yield similar numbers (29 vs. 31) of morphologically distinguishable neuron types (Figure 1—source data 1J). However, the LALv1A hemilineage produces only one dominant morphological group, whereas LALv1B neurons can be clustered into six different morphological groups (Figure 7).
 
@@ -115,7 +131,7 @@ In contrast to the relatively uniform LALv1A hemilineage, the sister hemilineage
 
 Moreover, Notch modulates temporal patterning as evidenced by unilateral switches in producing distinct neurons on the A or B side. There exist windows when only one hemilineage is changing types, such that multiple A or B neuron types are paired with a single B or A neuron type (e.g. Figure 7E–F’ and H–I’). Given the well-defined stereotyped organization of CX sub-compartments, we have high confidence that we identified all individual LALv1A neuron types based on morphology. However, we may have under- or over-estimated the number of LALv1B neuron types. Perhaps, there could exist unidentified types of VLP-targeting LALv1B P-class neurons, as we only distinguished two types of P-class VLP neurons from the same window of time when the sister LALv1A hemilineage contains seven types of FB neurons (Figure 1—source data 1J16-20 and 29-30). Conversely, we may have overestimated the number of PS-targeting LALv1B neuron types, especially among late-born neurons which appear more plastic in their morphology (Figure 1—source data 1J33-45). Nonetheless, at the level of morphological groups, the paired LALv1A and LALv1B hemilineages show independent temporal patterning despite being derived from the same neural stem cell.
 
-## 12 of 25 hemilineages yield only one dominant morphological group
+### 12 of 25 hemilineages yield only one dominant morphological group
 
 There are 11 additional (48% in total) Vnd hemilineages which, like LALv1A, contain only one dominant morphological group. Notably, four of the above five most heterogeneous (having the highest number of distinguishable neuron types) Vnd hemilineages, ALv1(A), VLPa2(A), LALv1A, and CREa1A, are among the 12 hemilineages with uniform single-neuron morphology. This paradoxical phenomenon evidently results from the composition of many neuron types involved in constructing fine topographic maps. In particular, the postembryonic VLPa2(A) hemilineage is exclusively dedicated to the formation of the visual topographic map in the VLP neuropil (Figure 1—source data 1P). Analogously, all the 46 ALv1(A) neuron types, with the exception of the unique first larval-born neuron, uniformly relay olfactory information from the AL to the LH (Figure 1—source data 1A). Besides VLP and LH, the main neuropils targeted by relatively uniform Vnd hemilineages include: the FB (innervated by LALv1A and AOTUv4A), MB lobes (innervated by CREa1A and CREa2A), SP (innervated by SMPad1(A), SLPpm3(B), and FLAa3(A)), PS (innervated by AOTUv1B), WED/SAD (innervated by WEDa1(B)), and VES (innervated by the small FLAa1(B) hemilineage). Interestingly, two thirds of these uniform neuronal series arise from hemilineages with the Non state (see Discussion).
 
@@ -125,7 +141,7 @@ Notably, 10 of the 12 single-group Vnd hemilineages (excluding FALa1(B), and FLA
 
 **Figure 8.:** Representative ALv1 neuron types (Non green) arranged in birth-order, shown in the context of all identified ALv1 neuron types merged together (grey). Note several recurrent features, including mono-glomerular AL innervation (B, C, E, F, I, K, M and N), extension beyond LH (D, H and P), and SEZ targeting (A, L).
 
-## 13 of 25 hemilineages yield multiple morphological groups targeting discrete neuropils
+### 13 of 25 hemilineages yield multiple morphological groups targeting discrete neuropils
 
 There are 12 additional (52% in total) Vnd hemilineages which, like LALv1B, contain multiple neuron groups targeting discrete sets of neuropils. This list includes four unpaired hemilineages (VESa1(A), VESa2(A), FLAa2(A), WEDd1(B)), five paired with a single-group hemilineage (LALv1B, CREa1B, CREa2B, AOTUv1A, AOTUv4B), and two pairs of sister hemilineages (SMPp&v1A/B, AOTUv3A/B). Among them, we see successive neuropil targeting only in four hemilineages and recurrent neuropil targeting (same pattern in multiple windows) in SMPp&v1A, SMPp&v1B, CREa2B, AOTUv3A, AOTUv4B, VESa1(A), VESa2(A), FLAa2(A), and WEDd1(B). Below, we utilize the paired AOTUv3B and AOTUv3A hemilineages to illustrate the successive versus recurrent targeting of discrete neuropils by serially derived neurons.
 
@@ -137,7 +153,7 @@ The AOTUv3B hemilineage yields four morphological neuron groups successively (Fi
 
 By contrast, we see the recurrence of neurons with characteristic morphology in the AOTUv3A hemilineage (Figure 9I–P). All AOTUv3A neurons project across the brain midline through the same commissure. Their morphological diversity results from variability in the major branches that extend out at the common entry and exit points of the commissure (e.g. arrow/arrowhead in Figure 9M). There are three main configurations of the AOTUv3A neurons’ major branches: (1) two posteriorly projecting branches at both entry and exit points (e.g. Figure 9J and P), (2) one branch at the exit point (e.g. Figure 9N), and (3) no branches (e.g. Figure 9L). Various additional features increase diversity within each configuration, such as ipsilateral AOTU innervation (e.g. Figure 9L), ipsilateral or bilateral LAL elaboration (e.g. Figure 9O), and a long ventral extension at the entry point (e.g. Figure 9M). Notably, there are some T-topology neuron types in this otherwise pure H-topology hemilineage (e.g. Figure 9M), which connect the ipsilateral SAD with different contralateral neuropils. As to temporal patterning of neuron morphology, almost all morphological characteristics reoccur multiple times. For instance, we have recovered neurons with bilateral posteriorly projecting branches (‘PS1’) in three separate temporal windows: at the beginning of larval neurogenesis, shortly after the first, and during the larval-to-pupal transition (e.g. Figure 9J and P; Figure 9R). In support of long-range temporal patterning (green in Figure 1—source data 1C), certain features favor early windows (e.g. AOTU innervation in the first ‘PS1’ window), some favor late windows (e.g. posterior projection only at the exit point in ‘CL’ and ‘PS5’), and few appear in just one window (e.g. contralateral ICL targeting in ‘CL’). In sum, the AOTUv3A hemilineage contains neurons with diverse trajectories in complex temporal patterns.
 
-## Related lineages make similar neurons in comparable temporal patterns
+### Related lineages make similar neurons in comparable temporal patterns
 
 Despite stark differences between sister hemilineages, we see striking similarities between select hemilineages from different NBs. This phenomenon is evident when comparing the sister AOTUv4A and AOTUv4B hemilineages with the unrelated LALv1A and AOTUv3B hemilineages, respectively.
 
@@ -149,7 +165,7 @@ The AOTUv4A hemilineage, like LALv1A, produces only FB-targeting neurons after a
 
 Unlike AOTUv4A, the AOTUv4B hemilineage consists of multiple morphological groups of AOTU-related neurons arising largely in a sequential manner (Figure 10U). This is akin to the AOTUv3B hemilineage. The AOTUv4B and AOTUv3B hemilineages have similarities in spatial as well as temporal patterning of neuron morphology. First, both produce P-topology neurons, then many BU-targeting dot-to-dot neurons, followed by midline-crossing neurons (Figure 10M–T). Second, in the otherwise pure H- or M-topology group of AOTUv4B or AOTUv3B midline-crossing neurons, there consistently exist a few T-topology neurons (e.g. Figure 10T). Third, we see comparable progressive changes in the proximal elaboration from the AOTU to the SP in the non-BU groups of both hemilineages (e.g. arrows in Figure 10Q–S). Fourth, in the middle of P-topology neuron production, the appearance of a single neuron type with H- or M-topology occurs in both AOTUv4B and AOTUv3B (Figures 10O and 9D). These extensive parallels between non-sister hemilineages argue for involvement of conserved mechanisms in diversifying neuron fate over time during neurogenesis.
 
-## PAM dopaminergic neurons arise from ‘duplicated’ lineages
+### PAM dopaminergic neurons arise from ‘duplicated’ lineages
 
 In search of closely related lineages, the neighboring CREa1 and CREa2 lineages have long caught our attention because their full-size NB clones show extensive overlapping elaboration in the MB lobes. However, prior to this study, the identities of neurons innervating the MB lobes were elusive. Briefly, we found that each of the CREa1 and CREa2 NBs produces an intricate sequence of PAM neurons (Aso et al., 2014) and that the Non hemlineages, CREa1A and CREa2A, are indistinguishable from each other (compare CREa1A(type) with CREa2A(type) heatmaps in Figure 1—source data 1).
 
@@ -163,7 +179,7 @@ In each series of PAM neurons, we identified 17 types of PAM neurons based on MB
 
 **Figure 11.:** (A) PAM neuronal elaborations (pseudo-colored based on lobe identity) within the MB medial lobes (grey) showing progressive innervation of neighboring MB lobe zones. Note recurrence of four targeting patterns: beta2, gamma5, beta’2m, gamma4. (B) Representative PAM neurons (early-born: green and late-born: red) with the same target zone merged onto an adult brain template. Note differential proximal elaborations in early- vs. late-born neurons targeting the same zone of MB medial lobes.
 
-## Single-neuron comparison by NBLAST
+### Single-neuron comparison by NBLAST
 
 Above, we describe the manual annotation of diverse neuronal types based on morphology. This annotation was instructed first by hemilineage identity and then by birth order. In the course of this analysis we could observe patterns that occurred within a hemilineage such as alternate production of neuron types or the recurrence of certain morphological features in complex patterns. With manual analysis, we could also detect long series of analogous neuron types made by independent hemilineages. However, manual intra/inter-hemilineage comparison is not comprehensive at the single-cell level. We therefore aspired to look for isolated instances of similar neuron types and examine intra-hemilineage morphological diversity in a more systematic manner.
 
@@ -171,7 +187,7 @@ The NBLAST computer algorithm has proven effective in recovering related neurons
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/53518/elife-53518-fig12-v2.jpg)
 
-**Figure 12.:** (A) Sixteen groups of morphologically related neuron types were recovered across independent hemilineages, based on the adjacency matrix derived from NBLAST scores larger than 0.3. Shown side by side are the heatmap of NBLAST scores and the list of Vnd neuron types for the 16 non-overlapping similarity groups. Note that the extensive CREa1A/CREa2A and AOTUv4A/LALv1A inter-hemilineage analogies account for all four (#3/8/10/11) large groups with six or more members. (B–D) Representative neurons of the related neuron types for the similarity group #1 (B), #6 (C), and #16 (D). Note extensive overlap in both proximal and distal (B and C) or just proximal neurite elaborations (D), despite distinct hemilineage-characteristic primary projections. (E) Heatmaps of intra-hemilineage NBLAST scores, sorted based on the birth-order of neuron types (indicated with alternating x-tick and y-tick labels). Note distinct temporal patterns of relatedness in diverse hemilineages. The CREa1B hemilineage displays progressive changes, and the SMPp&v1B hemilineage exhibits both progressive and cyclic changes. By contrast, the CREa2B and SMPp&v1A hemilineages yield more neuron types that appear in various cyclic manners. Please find the complete set of hemilineage NBLAST heatmaps in Figure 1—source data 1.Figure 12—source data 1.
+**Figure 12.:** (A) Sixteen groups of morphologically related neuron types were recovered across independent hemilineages, based on the adjacency matrix derived from NBLAST scores larger than 0.3. Shown side by side are the heatmap of NBLAST scores and the list of Vnd neuron types for the 16 non-overlapping similarity groups. Note that the extensive CREa1A/CREa2A and AOTUv4A/LALv1A inter-hemilineage analogies account for all four (#3/8/10/11) large groups with six or more members. (B–D) Representative neurons of the related neuron types for the similarity group #1 (B), #6 (C), and #16 (D). Note extensive overlap in both proximal and distal (B and C) or just proximal neurite elaborations (D), despite distinct hemilineage-characteristic primary projections. (E) Heatmaps of intra-hemilineage NBLAST scores, sorted based on the birth-order of neuron types (indicated with alternating x-tick and y-tick labels). Note distinct temporal patterns of relatedness in diverse hemilineages. The CREa1B hemilineage displays progressive changes, and the SMPp&v1B hemilineage exhibits both progressive and cyclic changes. By contrast, the CREa2B and SMPp&v1A hemilineages yield more neuron types that appear in various cyclic manners. Please find the complete set of hemilineage NBLAST heatmaps in Figure 1—source data 1.
 
 For NBLAST analysis of hemilineage temporal patterning, we clustered the all-to-all pairwise neuronal similarity scores according to hemilineages. When visualizing the NBLAST scores along the order of neuronal birth, diverse temporal patterns of relatedness emerge (e.g. Figure 12E). Only two relatively simple hemilineages, CREa1B and FLAa1, display progressive changes in morphology along an entire neuron series. By contrast, various degrees of cyclic changes (indicating recurrent relatedness) exist in all other hemilineages. Patterns of progressive and cyclic changes coexist in six hemilineages: AOTUv4B, CREa1A, CREa2A, SMPp&v1B, SMPad1, and WEDa1. Further, cyclical fluctuations in relatedness (with variable periods) extend throughout the remaining 17 Vnd hemilineages (e.g. CREa2B and SMPp&v1A in Figure 12E). Given NBLAST’s superb ability to detect local similarities, the widespread phenomenon of cyclic increases in similarity scores indicates the presence of recurrent morphological features. This aligns well with the insights we made above with manual analysis. Taken together, multiple hemilineage-characteristic features may recur at different frequencies to expand the morphological diversity of neurons in a combinatorial manner.
 
@@ -180,6 +196,14 @@ For NBLAST analysis of hemilineage temporal patterning, we clustered the all-to-
 Brain neurogenesis involves conserved patterning mechanisms and employs homologous developmental genes across species (Huang, 2014; Vasconcelos and Castro, 2014). In Drosophila, a series of fating events must occur to promote neuron diversity. First, NBs acquire lineage identity via spatial patterning cues. Second, sequentially born GMCs inherit temporal factors. Finally, GMCs divide into pairs of distinct neurons, generating sister hemilineages with differential Notch signaling. Predetermined fates evidently guide most, if not all, aspects of neuronal differentiation in the invariant fly lineages (Erclik et al., 2017).
 
 Despite having predetermined fates, it is hard to imagine how complex neuronal morphology is controlled. Mapping neuron morphology for 25 hemilineages in this study reveals that primary trajectories and thus neuropil targets are mainly dependent upon both lineage identity and Notch signaling—that is hemilineage identity. Notably, sister hemilineages can vary greatly in the extent of innervation. Hemilineages with excessive coverage areas are consistently associated with the Noff state (Figure 2A,B,G). However, the larger coverage area of the B hemilineage could be a result of only a subset of neurons with lengthy projections (e.g. Figure 13A). At the single-cell level, the average length of the main trajectory (defined as the total length of the segmented neuron after pruning branches shorter than 50 microns) is significantly greater on the Noff than Non side in only two (CREa1 and SMPp&v1, p-value<0.01) of the seven Vnd lineages composed of dual hemilineages (Figure 13—figure supplement 1). Instead, we found evidence in support of presence of more diverse morphological groups and/or topological classes of B neurons (as opposed to a dominant group/class of A neurons) (e.g. Figure 13B). First, the degree (coefficient) of variation in the length of the main trajectory is significantly higher on the Noff than Non side (p-value=0.036 for one-tailed paired T test). Second, there indeed exist significantly higher numbers of topological neuronal classes in the B than A hemilineages (p-value=0.023 for one-tailed paired T test). However, it is unclear if the hemilineage Notch state also affects diversity of neuronal topology in the Drosophila thoracic ganglion with well-defined hemilineages (Shepherd et al., 2019).
+
+![Figure 13.](https://cdn.elifesciences.org/articles/53518/elife-53518-fig13-v2.jpg)
+
+**Figure 13.:** (A) Notch state correlates with coverage area of neuropil targets. Representative pairs of Non/A (i) and Noff/B (ii) neurons from the LALv1 (yellow), CREa1 (magenta), and SMPp&v1 (cyan) lineages. (B) Relatively uniform Non/A neurons pair with grossly diverse Noff/B neurons. Representative pairs of Non/A (i) and Noff/B (ii) neurons, color-coded based on birth order (yellow, magenta, cyan) in the AOTUv4 lineage.
+
+![Figure 13—figure supplement 1.](https://cdn.elifesciences.org/articles/53518/elife-53518-fig13-figsupp1-v2.jpg)
+
+**Figure 13—figure supplement 1.:** Distribution of the main trajectory lengths of the A versus B neuron types identified from the seven paired Vnd hemilineages, shown in standard boxplot with interquartile-range boxes, minimum and maximum whiskers, and circles for individual outliners. * indicates p-value<0.01 for two-tailed T test.
 
 Notch signaling as a binary switch delivers context-dependent outcomes, including grossly opposite phenotypes. For instance, Notch can promote or suppress neuronal cell death depending on lineage identity. This can lead to unpaired hemilineages, in which only one viable neuron is produced after each GMC division. From the 11 Vnd unpaired hemilineages, seven are Non and four are Noff. Given this random association, it is curious that we see correlation between Notch state and hemilineage complexity. We frequently observe higher gross diversity on the Noff side (see above). The same applies to the previously mapped ALl1 lineage where the Non hemilineage consists exclusively of AL local interneurons, whereas its Noff sister hemilineage consists of projection neurons innervating diverse neuropils, including AL, AMMC, LH, PLP, and VLP (Lin et al., 2012). However, the striking Notch-dependent LN/PN fate separation appears to be a characteristic of only the ALl1 lineage. We found instead that neurons of the same hemilineage can adopt various topologies. In fact, both general topology and terminal arborization seem primarily tailored by the targets innervated (Figure 1—source data 1). Further, unrelated hemilineages with striking similarities (e.g. CREa1A/CREa2A and LALv1A/AOTUv4A) consistently have the same Notch state. Such resemblance across non-sister hemilineages could simply reflect their evolutionary relatedness at the lineage level. Nonetheless, Notch may directly regulate neuropil targeting, as implicated by the complete segregation of the Non and Noff neuronal processes observed in six of the seven (not LALv1) dual lineages (Figure 2A–G). Further, Notch can promote cell adhesion, either by acting as a cell adhesion molecule or by upregulating canonical cell adhesion molecules such as integrins (Murata and Hayashi, 2016). Here, we speculate that Notch may strengthen neurite-neurite affinity, as higher affinity in A hemilineages could suppress neurite defasciculation resulting in more uniform trajectory (e.g. Figure 2B[green], C[green], F[green], G[green], I, K, L, N), and facilitate extension of long neurite fascicles (e.g. Figure 2I,K,L,M,N). By contrast, reduced affinity in B hemilineages could promote gross diversity through serial defasciculation of primary projections. Further, reduced affinity across sister branches could enhance neurite elaboration within targeted neuropils. Nonetheless, additional factors (e.g. neuropil-characteristic topographic maps) might modulate the gross manifestation of Notch’s morphogenetic effects.
 
@@ -199,31 +223,251 @@ In conclusion, our high-resolution, comprehensive analysis of Vnd lineages revea
 
 ## Materials and methods
 
-## Fly strains and DNA constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # A-11122; RRID:AB_221569</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mCD8 (Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # MCD0800; RRID:AB_10392843</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RFP (Rabbit polyclonal)</td>
+      <td>Clontech</td>
+      <td>Cat # 632496</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-nc82 (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>nc82; Registry ID:AB_2314866</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit, Alexa488 (Goat)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # A-11034; RRID:AB_2576217</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rat, Alexa488 (Goat)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # A-11006; RRID:AB_2534074</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit, Alexa568 (Goat)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # A-11036; RRID:AB_10563566</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse, Alexa647 (Donkey)</td>
+      <td>Jackson ImmunoResearch lab, Inc</td>
+      <td>Cat # 715-605-151</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound drug</td>
+      <td>Paraformadehyde 20% Solution, EM Grade</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat # 15713</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound drug</td>
+      <td>Phosphate Buffered Saline 10X,Molecular Biology Grade</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # 46–013 CM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # 329830772</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound drug</td>
+      <td>SlowFadeTM Gold antifade Mountant</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # S36936</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound drug</td>
+      <td>Ethyl alcohol, pure</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # 459844</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound drug</td>
+      <td>Xylenes</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # X5-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound drug</td>
+      <td>DPX mountant</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat # 13512</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Notch-RNAi</td>
+      <td>BloomingtonDrosophilastock center</td>
+      <td>BDSC:33611; FBti0140084; RRID:BDSC_33611</td>
+      <td>FlyBase symbol:P{TRiP.HMS00001}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCD8-GFP</td>
+      <td>Lee and Luo (1999)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hs-ATG &gt; KOT &gt; FLP</td>
+      <td>Ren et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>dpn &gt; FRT-STOP-FRT&gt;Cre::PEST</td>
+      <td>Awasaki et al. (2014)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>lexAop2-rCD2::RFP-insulator-lexAop2-GFP-RNAi, FRT40A</td>
+      <td>Awasaki et al. (2014)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hs-FLP,dpn &gt; KDRT-stop-KDRT&gt;Cre PEST; lexAop2-mCD8::GFP-insulator-lexAop2-rCD2-RNAi, FRT40A; nSyb &gt; loxP-stop-loxP&gt;LexA::P65,UAS-KD1</td>
+      <td>Awasaki et al. (2014)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>vnd-T2A-Gal4</td>
+      <td>This paper: Materials and methods</td>
+      <td></td>
+      <td>Lee T, Janelina Research Campus, HHMI</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ase-KD1</td>
+      <td>This paper: Materials and methods</td>
+      <td></td>
+      <td>Lee T, Janelina Research Campus, HHMI</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>act &gt; loxP-STOP-loxP&gt;Gal4</td>
+      <td>This paper: Materials and methods</td>
+      <td></td>
+      <td>Lee T, Janelina Research Campus, HHMI</td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Fiji</td>
+      <td>NIH; Schindelin et al., 2012</td>
+      <td>https://fiji.sc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Adobe Photoshop</td>
+      <td>Adobe Systems, San Jose, CA</td>
+      <td>https://www.adobe.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe Systems, San Jose, CA</td>
+      <td>https://www.adobe.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Python</td>
+      <td>Python Software Foundation</td>
+      <td>https://www.python.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Flybase 2.0</td>
+      <td>FlyBase Consortium et al., 2019</td>
+      <td>http://flybase.org</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains and DNA constructs
 
 Transgenes used for twin-spot MARCM for vnd lineages include: vnd-T2A-GAL4 (this study), UAS-KD, dpn >KDRT-stop-KDRT>Cre:PEST, nSyb >loxP-stop-loxP>LexA: :p65, hs-FLP, FRT40A, lexAop-mCD8: :GFP-insulated spacer-lexAop-rCD2i, and lexAop-rCD2: :RFP-insulated spacer-lexAop-GFPi (Awasaki et al., 2014). Transgenes used for Notch depletion include: hs-ATG >KOT > FLP (Ren et al., 2018), ase-KD (this study), dpn >FRT-stop-FRT>Cre::PEST (Awasaki et al., 2014), actin^loxP-stop-loxP^Gal4 (this study), ﻿UAS-Notch-RNAi (BL#33611), USA-mCD8::GFP (Lee and Luo, 1999). vnd-T2A-Gal4, homology arms of about 3 kb each were cloned into pTL1 for knocking-in T2A- Gal4 in vnd with following primers: ﻿vnd_55AgeI: TACGACCGGTGATCAAGGAGAACGAGCTATACG; vnd_53StuI: AAGGCCTGGGCCACCAGGCGG; vnd_35PmeI: TACGGTTTAAACTAATATTGCTAGGAACTGGCATTCAC; vnd_33MluI: AAGTACGCGTAACTGGAATAAGTTC. T2A-Gal4 CDS was inserted right after the second last amino acid ﻿using traditional Golic heat shock strategy for gene targeting to obtain vnd-T2A-Gal4 transgenic fly (Rong and Golic, 2000). ase-KD, the asense promoter (Jarman et al., 1993) was put in front of the KD in modified pBPGw through gateway system (Invitrogen) as described previously (Awasaki et al., 2014).
 
 actin^loxP-stop-loxP^Gal4, a synthetic Flox cassette was inserted into a KpnI site between the actin promoter and Gal4 as described previously (Awasaki et al., 2014).
 
-## MARCM
+### MARCM
 
 ﻿For ts-MARCM clonal analysis, 0–2 hr old newly hatched larvae with proper genotype were collected and put into vials (80 larvae/vial) containing standard fly food. The larvae were raised at 25°C until desired stages. Organisms were resynchronized with respect to puparium formation for those clones induced at late larval and early pupal stages. To induce clones, the organisms were heat-shocked at 37°C for 15–40 min. After heat shock, the organisms were put back to 25°C until dissection. For Notch depletion, newly hatched larvae with proper genotype were heat shocked at 37°C for 15 min to induce the activation of lineage restricted driver for clonal labeling and Notch depletion. After heat shock, the larvae were put back to 25°C until dissection.
 
-## ﻿Immunostaining and Confocal imaging
+### ﻿Immunostaining and Confocal imaging
 
 Adult brains were dissected, fixed, and processed as described previously (Awasaki et al., 2014). Antibodies used in this study include rabbit anti-GFP (1:1,000, Invitrogen), rat monoclonal anti-mCD8 (1:100, Invitrogen), rabbit anti-RFP (1:1,000, Clontech), mouse monoclonal anti-Bruchpilot, nc82 (1:50, Developmental Studies Hybridoma Bank), Alexa 488, (Invitrogen), Cy3, Cy5 or Alexa 647 (Jackson ImmunoResearch) conjugated anti-mouse, anti-rabbit, and anti-rat antibody (1:500). After immunohistochemistry, brains were post-fixed with 4% PFA in PBS for 4 hr at RT followed by four washes in PBT for 10 mins and then rinsed with PBS. Brain samples were placed on poly-L-lysine-coated cover slips followed by series dehydrated in ethanol baths (30%, 50%, 75%, 95%, and 3 × 100%) for 10 min each and then 100% xylene three times for 5 min each in Coplin jars. Samples were embedded in DPX mounting medium (Electron Microscopy Sciences, Hatfield, PA). Fluorescent signals of whole-mount adult fly brains were acquired at 1 µm intervals using a 40 × C Apochromat water objective (NA = 1.2) and 0.7 zoom factor at 1024 × 1024 pixel resolution on Zeiss LSM710 confocal microscope (Carl Zeiss). The ‘Janelia Workstation’ image‐viewing software (Murphy et al., unpublished data) was used to analyze confocal stacks. The whole brain images were registered and aligned to a standard brain (JFRC2010, https://github.com/VirtualFlyBrain/DrosAdultBRAINdomains) using the reference nc82 channel as described previously (Aso et al., 2014).
 
-## Neuron type annotation and visualization
+### Neuron type annotation and visualization
 
 Following brain registration, manual annotation of clone morphologies with respect to neuropil structures was carried out using the standard fly brain template harboring predefined neuropil masks. Clones were ascribed to specific lineages based on cell body position and primary neurite trajectory characteristic of each lineage (Yu et al., 2013). Clones of the same lineage origin were then clustered into morphological types that target distinct neuropils and/or elaborate differentially within shared targets (Supplementary file 1), with each stereotyped pattern seen in at least three samples. We further categorized morphological types of a given hemilineage into few morphological groups based on distinctive group-characteristic features (e.g. common primary neuropil targets).
 
 For cross-comparison and presentation, we segmented out representative neurons via 3D interactive segmentation (Wan et al., 2012) and warped segmented neurons into the same standard fly brain through whole-brain alignment (Rohlfing and Maurer, 2003). To show single neurons with respect to hemilineage morphology, we created 25 hemilineage masks. The hemilineage masks of the seven lineages composed of dual viable hemilineages were generated by compiling representative A or B neurons of each type together. The lineage masks for the 11 lone hemilineages were derived from merging the first larval-born neuron with its paired NB clone present in isolated twin-spot MARCM clones. 3D rendering for 2D presentation was carried out using VVDviewer (https://github.com/takashi310/VVD_Viewer/releases) (Wan et al., 2009).
 
-## Birth order analysis
+### Birth order analysis
 
 Custom algorithms were used to present the birth time of neuron types or morphological groups with heatmaps. The neuron-type heatmaps show manually sorted neuron types with actual single-cell numbers (max = 10) recovered from induction at given time points. The birth-order of neuron types was determined to our best judgement, based on relative time of beginning, ending, or peak recovery using both single-cell and NB clone data. By contrast, the morphological-group heatmaps show computer-sorted morphological groups that often consist of types made in discrete time windows. To reflect the multi-window production due to heterogeneous compositions, we generated group-level heatmaps by (1) identifying well-separated production windows within each group, (2) normalizing single-cell distribution to one for each production window, and (3) sorting morphological groups based on the sample distribution in the first production window. For detail, please see the custom algorithms in supplementary materials.
 
-## Quantitative analysis of single neuron morphology
+### Quantitative analysis of single neuron morphology
 
 For pairwise comparison of Vnd neuron types by NBLAST, we selected 464 segmented neurons that were warped into a standard adult fly brain template. We then generated the all-to-all score matrix using the NBLAST package available at GitHub (https://github.com/jefferislab/NBLAST_on-the-fly). Various analyses of the score matrix and visualization of the results were carried out by Python.
 

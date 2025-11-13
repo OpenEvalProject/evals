@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/022k4wk35 State Key Laboratory of Cognitive Neuroscience and Learning and the IDG/McGovern Institute for Brain Research, Beijing Normal University Beijing China
+1. State Key Laboratory of Cognitive Neuroscience and Learning and the IDG/McGovern Institute for Brain Research, Beijing Normal University Beijing China ([ROR:022k4wk35](https://ror.org/022k4wk35))
 
 † Corresponding author
 

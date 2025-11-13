@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/034m6ke32 Africa Health Research Institute Durban South Africa
+1. Africa Health Research Institute Durban South Africa ([ROR:034m6ke32](https://ror.org/034m6ke32))
 
 † Corresponding author
 

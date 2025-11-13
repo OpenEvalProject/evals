@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.36688.001 Chimeric antigen receptors (CARs) are synthetic receptors that reprogram T cells to kill cancer. The success of CAR-T cell therapies highlights the promise of programmed immunity and suggests that applying CAR strategies to other immune cell lineages may be beneficial. Here, we engineered a family of Chimeric Antigen Receptors for Phagocytosis (CAR-Ps) that direct macrophages to engulf specific targets, including cancer cells. CAR-Ps consist of an extracellular antibody fragment, which can be modified to direct CAR-P activity towards specific antigens. By screening a panel of engulfment receptor intracellular domains, we found that the cytosolic domains from Megf10 and FcRɣ robustly triggered engulfment independently of their native extracellular domain. We show that CAR-Ps drive specific engulfment of antigen-coated synthetic particles and whole human cancer cells. Addition of a tandem PI3K recruitment domain increased cancer cell engulfment. Finally, we show that CAR-P expressing murine macrophages reduce cancer cell number in co-culture by over 40%.
+Chimeric antigen receptors (CARs) are synthetic receptors that reprogram T cells to kill cancer. The success of CAR-T cell therapies highlights the promise of programmed immunity and suggests that applying CAR strategies to other immune cell lineages may be beneficial. Here, we engineered a family of Chimeric Antigen Receptors for Phagocytosis (CAR-Ps) that direct macrophages to engulf specific targets, including cancer cells. CAR-Ps consist of an extracellular antibody fragment, which can be modified to direct CAR-P activity towards specific antigens. By screening a panel of engulfment receptor intracellular domains, we found that the cytosolic domains from Megf10 and FcRɣ robustly triggered engulfment independently of their native extracellular domain. We show that CAR-Ps drive specific engulfment of antigen-coated synthetic particles and whole human cancer cells. Addition of a tandem PI3K recruitment domain increased cancer cell engulfment. Finally, we show that CAR-P expressing murine macrophages reduce cancer cell number in co-culture by over 40%.
 
 ## Introduction
 
@@ -31,6 +31,14 @@ Macrophages are critical effectors of the innate immune system, responsible for 
 ## Results
 
 To program engulfment towards a target antigen, we created a CAR strategy using the CAR-T design as a guide (Fesnak et al., 2016). We call this new class of synthetic receptors Chimeric Antigen Receptors for Phagocytosis (CAR-Ps). The CAR-P molecules contain the extracellular single-chain antibody variable fragment (scFv) recognizing the B cell antigen CD19 (ɑCD19) and the CD8 transmembrane domain present in the ɑCD19 CAR-T (Fesnak et al., 2016; Kochenderfer et al., 2009). To identify cytoplasmic domains capable of promoting phagocytosis, we screened a library of known murine phagocytic receptors: Megf10 (Figure 1a), the common ɣ subunit of Fc receptors (FcRɣ), Bai1, and MerTK (Penberthy and Ravichandran, 2016). FcR triggers engulfment of antibody-bound particles, while the other receptors recognize apoptotic corpses (Freeman and Grinstein, 2014; Penberthy and Ravichandran, 2016). We also made a receptor containing an extracellular ɑCD19 antibody fragment and a cytoplasmic GFP, but no signaling domain, to test whether adhesion mediated by the ɑCD19 antibody fragment is sufficient to induce engulfment (Figure 1a; CAR-PGFP).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematics show the structure of CAR-P constructs. An ɑCD19 (purple) or ɑCD22 (blue, center) scFv directs CAR specificity. Intracellular signaling domains from Megf10 or the indicated engulfment receptor (green) activate engulfment. CAR-PGFP contains only GFP and no intracellular signaling domains (right). All constructs include a transmembrane domain from CD8 and a C-terminal GFP. (B) J774A.1 macrophages expressing ɑCD19 CAR-P with the indicated intracellular signaling domain (green) engulf 5 µm silica beads covered with a supported lipid bilayer containing His-tagged CD19 extracellular domain. The beads were visualized with atto390-labeled lipid incorporated into the supported lipid bilayer (magenta). Cells infected with the cell membrane marker, mCherry-CAAX, were used as a control (no CAR, top left). To the right of each image is a histogram depicting the frequency of cells engulfing the indicated number of beads. The average number of beads eaten per cell is quantified in (C). (D) Bone marrow derived macrophages were infected with CAR-PFcRɣ or GFP-CAAX (green, left and center top; grey, center bottom) and incubated with CD19 beads (magenta) for 45 min. Images show an x-y plane through the center of the engulfed beads (left), or a cross section (center) of the z plane indicated in the inset panel (white line). The histogram depicts the number of cells engulfing the indicated number of beads. The scale bar indicates 5 µm and n = 78–163 cells per condition, collected during three separate experiments. Error bars denote 95% confidence intervals and *** indicates p<0.0001 compared to mCherry-CAAX control by Kruskal-Wallis test with Dunn’s multiple comparison correction.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Images of macrophages infected with various ɑCD19 CAR-PGFP constructs were acquired with identical acquisition settings and scaling to depict differences in expression levels. Fluorescent intensity at the cell cortex of 20 representative ɑCD19 CAR-PGFP-infected macrophages was quantified using the mean intensity of a two pixel width linescan at the cell membrane, minus the mean intensity of a linescan immediately adjacent to the cell. The images are the same cells included in Figure 1B and fluorescent intensity was measured from the same macrophages assayed in Figure 1C. The dashed red line indicates the position of a bead in contact with the CAR-PGFP macrophage. The scale bar indicates 5 µm.
 
 To assay our library of CAR-Ps, we introduced each CAR-P into J774A.1 murine macrophages by lentiviral infection. As an engulfment target, we used 5 µm diameter silica beads coated with a supported lipid bilayer. A His8-tagged extracellular domain of CD19 was bound to a NiNTA-lipid incorporated into the supported lipid bilayers. Macrophages expressing a CAR-P with the Megf10 (CAR-PMegf10) or FcRɣ (CAR-PFcRɣ) intracellular domain promoted significant engulfment of CD19 beads compared to macrophages with no CAR (Figure 1b,c, Figure 1—video 1). Macrophages expressing CAR-PBai1, CAR-PMerTK, and the adhesion-only CAR-PGFP did not bind the CD19 beads even though these CAR-Ps are present at the cell surface (Figure 1b,c, Figure 1—figure supplement 1). To confirm that the CAR-P was a viable strategy for redirecting primary macrophages, we expressed the CAR-PFcRɣ in primary murine bone marrow derived macrophages and found that these transfected primary cells also were able to trigger engulfment of CD19 beads (Figure 1d).
 
@@ -44,9 +52,37 @@ To further define the capabilities of the CAR-P, we assessed the capacity of CAR
 
 To determine if the CAR-PMegf10 initiates active signaling at the synapse between the macrophage and target, we stained for phosphotyrosine. Macrophages expressing CAR-PMegf10 exhibited an increase in phosphotyrosine at the synapse, while macrophages expressing CAR-PGFP did not show this enrichment (Figure 3a). Consistent with previous reports, we found that F-actin also was enriched at the cell bead synapse (Figure 3—figure supplement 1). This result suggests that CAR-PMegf10 initiates engulfment through a localized signaling cascade involving tyrosine phosphorylation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig3-v3.jpg)
+
+**Figure 3.:** (A) Macrophages expressing ɑCD19 CAR-PMegf10 (green, top) or ɑCD19 CAR-PGFP were incubated with CD19-ligated beads (position indicated with dotted line), fixed and stained for phosphotyrosine (magenta, top; greyscale, bottom). The fold enrichment of phosphotyrosine at the cell-bead synapse compared to the cell cortex is graphed on the right (n ≥ 11; each dot represents one cell-bead synapse; lines represent the mean ±one standard deviation). (B) Schematic shows the structure of CAR-P constructs in the plot at right. An αCD19 (purple) scFv directs CAR specificity. The intracellular signaling domains from CD3ζ activate engulfment. On the right is a histogram depicting the fraction of macrophages engulfing the indicated number of CD19-coated beads. (C) Comparison showing the average number of beads eaten per cell in J774A.1 macrophages expressing αCD19 CAR-Ps with the indicated intracellular signaling domain. 5 μm silica beads covered with a supported lipid bilayer containing His-tagged CD19 extracellular domain were used as an engulfment target (n = 156–167 cells per condition collected during three separate experiments). Error bars denote 95% confidence intervals and *** indicates p<0.0001 compared to CAR-PGFP control by Kruskal-Wallis test with Dunn’s multiple comparison in correction. (D) Model of the liposome-based fluorescence quenching assay used to determine affinity between the Syk tSH2 domains and the receptor tails of CD3ζ and FcRɣ, two intracellular signaling domains that promote engulfment. Binding between the Syk tSH2 reporter (Syk tSH2), green, and a receptor tail, purple, was detected by rhodamine quenching of BG505 dye on the reporter (see Materials and methods). Kd was determined by assessing mean fluorescence quenching for the last 20 timepoints collected ~45 min after ATP addition over a receptor titration from 0 to 500 nM. Each point represents the mean ± SD from three independent experiments. Kd ± SE was calculated by nonlinear fit assuming one site specific binding.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Phalloidin staining (magenta overlayed with brightfield and DAPI, left; heatmap, right) of F-actin in a CAR-PFcRɣ expressing macrophage shows a 2.3 fold enrichment at the cell-bead synapse (standard deviation of 1.2). The graph depicts actin enrichment at 30 cell-bead synapses collected on three separate days. Each dot represents a cell-bead synapse. The box plot indicates the interquartile range. The cell is in contact with a second bead, but this site of contact has not initiated cup formation and no actin enrichment.
+
 Both successful CAR-P intracellular domains (from FcRɣ and Megf10) have cytosolic Immunoreceptor Tyrosine-based Activation Motifs (ITAMs) that are phosphorylated by Src family kinases. Based on this observation, we hypothesized that the expression of an alternate ITAM-containing receptor might initiate phagocytosis when expressed in macrophages. The CD3ζ subunit of the T cell receptor contains three ITAM motifs. To test if the CD3ζ chain was able to activate phagocytic signaling, we transduced macrophages with the first generation CAR-T (Figure 3b). The CAR-T was able to trigger engulfment of CD19 beads to a comparable extent as CAR-PMegf10 (Figure 3c). In T cells, phosphorylated ITAMs in CD3ζ bind to tandem SH2 domains (tSH2) in the kinase ZAP70. Zap70 is not expressed in macrophages, but Syk, a phagocytic signaling effector and tSH2 domain containing protein, is expressed at high levels (Andreu et al., 2017). Previous work suggested that Syk kinase can also bind to the CD3ζ ITAMs (Bu et al., 1995), indicating that the CAR-T may promote engulfment through a similar mechanism as CAR-PFcRɣ. To quantitatively compare the interaction between SyktSH2 and CD3ζ or FcRɣ in a membrane proximal system recapitulating physiological geometry, we a used liposome-based assay (Figure 3d [Hui and Vale, 2014]). In this system, His10-CD3ζ and His10-Lck (the kinase that phosphorylates CD3ζ) are bound to a liposome via NiNTA-lipids and the binding of labeled tandem SH2 domains to phosphorylated CD3ζ was measured using fluorescence quenching. Our results show that Syk-tSH2 binds the CD3ζ and FcRɣ with comparable affinity (~15 nM and ~30 nM respectively, Figure 3d). Collectively, these results demonstrate that the TCR CD3ζ chain can promote phagocytosis in a CAR-P, likely through the recruitment of Syk kinase.
 
 We next sought to program engulfment towards a cellular target. We incubated the CAR-PMegf10 and CAR-PFcRɣ macrophages with cancerous Raji B cells that express high levels of endogenous CD19. Strikingly, the majority of CAR-P-expressing macrophages internalized bites of the target cell (Figure 4a, Figure 4—video 1, 78% of CAR-PMegf10 and 85% of CAR-PFcRɣ macrophages internalized bites within 90 min). The biting phenotype resembles trogocytosis, or nibbling of live cells, which has been reported previously in immune cells (Joly and Hudrisier, 2003). This process was dependent on the ITAM-bearing intracellular signaling domain, as removing the signaling domain (CAR-PGFP) dramatically reduced trogocytosis (Figure 4a). Enrichment of phosphotyrosine at the cell-cell synapse further supports active signaling initiating trogocytosis (Figure 4—figure supplement 1). The CAR-P module also was able to induce trogocytosis in non-professional phagocytes, human NIH 3T3 fibroblast cells (Figure 4—figure supplement 2). This suggests that the CAR-P can promote cancer antigen-dependent engulfment by both professional and non-professional phagocytes.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig4-v3.jpg)
+
+**Figure 4.:** (A) J774A.1 macrophages expressing the ɑCD19 CAR-PMegf10 (top panel, green in merge, left; greyscale, center) engulf pieces of CD19 +Raji B cells (labeled with mCherry-CAAX; magenta in merge, left; greyscale, right). The corresponding control ɑCD19 CAR-PGFP-infected cells are shown below. Arrows point to pieces of ingested Raji B cell. The proportion of CAR-P expressing macrophages internalizing one or more bite within 90 min is quantified on the right. Bites are defined as a fully internalized mCherry-positive vesicle >1 µm in diameter; n = 46 CAR-PMegf10 macrophages, n = 39 CAR-PFcRɣ macrophages and 102 CAR-PGFP macrophages acquired during three separate experiments. (B) Time course of a J774A.1 macrophage expressing CAR-PFcRɣ (green) internalizing a whole Raji B cell labeled with mCherry-CAAX (magenta). These images correspond to frames from Figure 4—video 2. (C) Schematic shows the structure of CAR-Ptandem construct, combining the intracellular signaling domain from FcRɣ and the p85 recruitment domain from CD19. (D) Time course of a J774A.1 macrophage expressing CAR-Ptandem (green) internalizing a whole Raji B cell labeled with mCherry-CAAX (magenta). These images correspond to frames from Figure 4—video 3. (E) Macrophages and Raji B cells were incubated together at a 1:2 macrophage:Raji ratio, and the number of whole Raji B cells eaten per 100 macrophages during 4–8 hr of imaging is graphed. Graph depicts pooled data from four independent experiments; n = 921 CAR-PGFP, n = 762 CAR-PFcRɣ, n = 638 CAR-PPI3K, n = 555 CAR-Ptandem cells. Sample sizes were selected for their ability to detect a 5% difference between samples with 95% confidence. (F) 10,000 macrophages and 20,000 Raji B cells were incubated together for 44 hr. The number of Rajis was then quantified by FACS. 2–3 technical replicates were acquired each day on three separate days. The number of Rajis in each replicate was normalized to the average number present in the GFP-CAAX macrophage wells on that day. * indicates p<0.01, *** indicates p<0.0001 by two-tailed Fisher Exact Test (a and e) or by Ordinary one way ANOVA with Dunnet’s correction for multiple comparisons (f); error bars denote 95% confidence intervals.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Phosphotyrosine staining (teal) of macrophages expressing CAR-PMegf10 (green) in contact with Raji B cells (cell membrane visualized with mCherry-CAAX, magenta). Below, the enrichment at the synapse is quantified as the mean intensity of a five pixel width linescan at the synapse divided by the mean intensity at the adjacent cell cortex for at least 11 sites of contact. Each dot represents one cell-cell synapse, lines represent the mean ±one standard deviation, and the graph is the pooled results o three biological replicates. The scale bar indicates 5 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** NIH 3T3 cells expressing the ɑCD19 CAR-PMegf10 (green in merge, left; greyscale, center) engulf pieces of CD19 +Raji B cells (labeled with mCherry-CAAX; magenta in merge, left; greyscale, right). The control ɑCD19 CAR-PGFP-infected 3T3s are shown below. Arrows point to pieces of ingested Raji B cell. The proportion of cells taking at least one bite after 90 min co-incubation is graphed on the left (graphs show the pooled data of three separate experiments; n = 111 CAR-PMegf10 3T3 cells and 121 CAR-PGFP 3T3; *** indicates p<0.0001 by two-tailed Fisher Exact Test; error bars denote 95% confidence intervals). Bites are defined as a fully internalized piece of mCherry-labeled material >1 µm in diameter.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** The number of whole Raji B cells eaten per 100 macrophages during 4–8 hr of imaging is graphed. Graph depicts pooled data from three independent experiments; n = 232 with no antibody, n = 257 with anti-CD19 antibody, n = 347 with anti-CD47 antibody; * indicates p<0.05 by two-tailed Fisher Exact test.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/36688/elife-36688-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Schematic of antigen internalization and cross-presentation assay. CAR-P expressing Bone Marrow Derived Dendritic Cells (BMDC) were differentiated using GM-CS. CAR-P BMDC were incubated with Raji B cells expressing soluble ovalbumin (OVA). DC with OVA bites (internalized antigen) were then incubated with OTI T cells (OVA specific CD8 +T cells) and OTI proliferation assessed as a measure of T cell stimulation. Results from each step of this assay are shown in sequence in (B), (C), and (D). (B) Ovalbumin staining (magenta) in Raji B cells infected with mCherry-CAAX-p2a-Ovalbumin lentivirus (OVA) and uninfected controls (uninfected) shows robust OVA expression in infected cells. At right the intracellular OVA signal is plotted as corrected total cell fluorescence (CTCF) for the ovalbumin channel. Each dot represents the CTCF of one cell; n = 26 cells OVA, n = 33 cells (uninfected); lines represent the mean ±one standard deviation, and the graph is the pooled results of three biological replicates. The scale bar indicates 5 µm. (C) Bone marrow-derived dendritic cells expressing the CAR-PFcRɣ (top panel, green in merge, left; greyscale, center) engulf pieces of CD19 +Raji B cells (labeled with mCherry-CAAX; magenta in merge, left; greyscale, right). The control ɑCD19 CAR-PGFP-infected dendritic cells are shown below. Arrows point to pieces of ingested Raji B cell. The proportion of cells taking at least one bite after 90 min co-incubation is graphed on the right of images. Graphs show the pooled data of two separate experiments; n = 28 CAR-PFcRɣ dendritic cells and n = 33 CAR-PGFP dendritic cells; *** indicates p<0.0001 by two-tailed Fisher Exact Test; error bars denote 95% confidence intervals. Bites are defined as a fully internalized piece of mCherry-labeled material >1 µm in diameter. (D) OTI T cell proliferation after 72 hr incubation with CAR-P transduced CD11c + dendritic cells.±RAJI below the x-axis indicates whether Raji-OVA B cells were added to CAR-P transduced dendritic cells prior to OTI addition. To measure proliferation, T cells were uniformly stained with eFluor670 dye on day 0, and proliferation was measured by dilution of the cell-bound dye. Graphs show the mean ±SD of three independent biological replicates. Data points are values for individual wells of differentiated CD11c + dendritic cells. Boxed data indicate the mean % T cells dividing when dendritic cells were pulsed with SL8 (OVA) peptide, which directly binds to MHC without undergoing cross presentation. If dendritic cell differentiation was successful, the pulsed dendritic cells should be capable of inducing robust OTI proliferation. Sample sizes were selected to match previous studies that were able to detect robust T cell stimulation (Roberts et al., 2016).
 
 We next focused on engineering strategies to engulf whole human cancer cells. We observed that macrophages expressing the CAR-PMegf10 or CAR-PFcRɣ were capable of engulfing whole Raji B cells (2 cancer cells eaten per 100 macrophages in a 4–8 hr window for both CAR-PMegf10 or CAR-PFcRɣ, Figure 4b,e, Figure 4—video 2). Whole cell engulfment was infrequent but trogocytosis was robust, suggesting that productive macrophage target interactions were frequently insufficient to trigger whole cell engulfment. To determine if whole cell eating could be enhanced by further opsonization of CD19, we opsonized Raji B cells with a mouse IgG2a anti-CD19 antibody. While addition of this antibody did not trigger additional whole cell internalization, blockade of the ‘don’t eat me’ signal CD47 using the mouse IgG1 anti-human B6H12 clone resulted in a 2.5 fold increase of whole cell eating of opsonized Raji B cells (Figure 4—figure supplement 3). Both endogenous FcR recognition of the anti-CD47 antibody and blockade of CD47 signaling may contribute to this effect.
 
@@ -66,80 +102,650 @@ Overall, our study demonstrates that the CAR approach is transferrable to biolog
 
 ## Materials and methods
 
-## Constructs and antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>J774A.1 Macrophages</td>
+      <td>UCSF Cell Culture Facility</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Raji B Cells</td>
+      <td>Other</td>
+      <td></td>
+      <td>Obtained from M. McManus, UCSF</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>3t3 Fibroblasts</td>
+      <td>UCSF Cell Culture Facility</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>PMID: 21356739</td>
+      <td></td>
+      <td>Bone Marrow Derived Macrophages (BMDM)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>PMID: 7489412</td>
+      <td></td>
+      <td>Bone Marrow derived Dendritic Cells (BMDC)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T cells</td>
+      <td>UCSF Cell Culture Facility</td>
+      <td></td>
+      <td>Lentivirus production</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (Mus musculus)</td>
+      <td>OTI</td>
+      <td>PMID: 8287475</td>
+      <td></td>
+      <td>E. Roberts/M. Krummel Lab UCSF</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CD19-mMegf10 CAR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Signal peptide: aa 1–21 CD8 (Uniprot Q96QR6_HUMAN) Extracellular antibody sequence: V-L chain: aa 23–130 anti-CD19 CAR (Genbank AMZ04819) -- GS linker: ggtggcggtggctcgggcggtggtgggtcgggt ggcggcggatct -- V-H chain: aa 148–267 anti-CD19 CAR (Genbank AMZ04819) Stalk/Transmembrane: aa 138–206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: aa 879–1147 Mouse Megf10 (Uniprot Q6DIB5 (MEG10_MOUSE)) Fluorophore: mGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CD19-FcGamma CAR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Signal peptide: aa 1–21 CD8 (Uniprot Q96QR6_HUMAN) Extracellular antibody  sequence: V-L chain: aa 23–130 anti-CD19 CAR (Genbank AMZ04819) -- GS linker: ggtggcggtggctcgggcggtggtgggtcgg gtggcggcggatct -- V-H chain: aa 148–267 anti-CD19 CAR (Genbank AMZ04819) Stalk/Transmembrane: aa 138–206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: aa 19–86 Mouse Fc ERG precursor (Uniprot P20491 (FCERG_MOUSE)) Fluorophore: mGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CD19-empty CAR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Signal peptide: aa 1–21 CD8 (Uniprot Q96QR6_HUMAN) Extracellular antibody sequence: V-L chain: aa 23–130 anti-CD19 CAR (Genbank AMZ04819) -- GS linker: ggtggcggtggctcgggcggtggtgggtcggg tggcggcggatct -- V-H chain: aa 148–267 anti-CD19 CAR (Genbank AMZ04819) Stalk/Transmembrane: aa 138–206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: basic linker NHRNRRR (nucleotide AACCACAGG AACCGAAGACGT) Fluorophore: mGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CD22-Megf10 CAR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Signal peptide: aa 1–21 CSF2R (Uniprot P15509 (CSF2R_HUMAN)) Extracellular antibody sequence: aa 22–258 of translated JP 2016502512-A/1: M971 Chimeric Antigen (Genbank HZ530416.1) Stalk/Transmembrane: aa 138–206 CD8 (Uniprot Q96QR6_ HUMAN) Cytosolic sequence: aa 879–1147 Mouse Megf10 (Uniprot Q6DIB5 (MEG10_ MOUSE)) Fluorophore: mGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CD22-empty CAR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Signal peptide: aa 1–21 CSF2R (Uniprot P15509 (CSF2R_HUMAN)) Extracellular antibody  sequence: aa 22–258 of translated JP 2016502512-A/1: M971 Chimeric Antigen (Genbank HZ530416.1) Stalk/Transmembrane: aa 138–206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: basic linker NHRNRRR (nucleotide AACCACAGGAACCGAAGACGT) Fluorophore: mGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CD19-MerTK CAR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Signal peptide: aa 1–21 CD8 (Uniprot Q96QR6 _HUMAN) Extracellular antibody sequence: V-L chain: aa 23–130 anti-CD19 CAR (Genbank AMZ04819) -- GS linker: ggtg gcggtggctcgggcggtggtgggtcgggtggcggcggatct -- V-H chain: aa 148–267 anti-CD19 CAR (Genbank AMZ04819) Stalk/Transmembrane: aa 138–206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: aa 519–994 Mouse MerTK (Uniprot Q60805 (MERTK_MOUSE)) Fluorophore: mGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CD19-Bai1 CAR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Signal peptide: aa 1–21 CD8 (Uniprot Q96QR6_HUMAN)Extracellular antibody  sequence: V-L chain:aa 23–130 anti-CD19 CAR (Genbank AMZ04819)-- GS linker:  ggtggcggtggctcgggcggtggtgggtcgggtggcgg cggatct -- V-H chain: aa 148–267 anti-CD19 CAR (GenbankAMZ04819) Stalk/Transmembrane: aa 138–206 CD8 (UniprotQ96QR6_HUMAN) Cytosolic sequence: aa1188–1582 Mouse Bai1 (Uniprot Q3UHD1 (BAI1_MOUSE)) Fluorophore: mGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CD19-CD3zeta CAR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Signal peptide: aa 1–21 CD8 (Uniprot Q96QR6_ HUMAN) Extracellular antibody sequence: V-L chain: aa 23–130 anti-CD19 CAR (Genbank AMZ04819) -- GS linker: ggtggcggtggctcg ggcggtggtgggtcgggtggcggcggatct -- V-H chain: aa 148–267 anti-CD19 CAR (Genbank AMZ04819) Stalk/Transmembrane: aa 138–206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: aa 52–164, Human TCR CD3 zeta chain (Uniprot P20963) Fluorophore: sfGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CD19-PI3K CAR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Signal peptide: aa 1–21 CD8 (Uniprot Q96QR6 _HUMAN) Extracellular antibody sequence: V-L chain: aa 23–130 anti-CD19 CAR (Genbank AMZ04819) -- GS linker: ggtggcggtggct cgggcggtggtgggtcgggtggcggcggatct -- V-H chain: aa 148–267 anti-CD19 CAR (Genbank AMZ04819) Stalk/Transmembrane: aa 138–206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: aa 500–534 Mouse CD19 (Uniprot CD19_MOUSE) Fluorophore: mCherry</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CD19 tandem CAR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Signal peptide: aa 1–21 CD8 (Uniprot Q96QR6_ HUMAN) Extracellular antibody sequence: V-L chain: aa 23–130 anti-CD19 CAR (Genbank AMZ04819) -- GS linker: ggtggcggtggctc gggcggtggtgggtcgggtggcggcggatct -- V-H chain: aa 148–267 anti-CD19 CAR (Genbank AMZ04819) Stalk/Transmembrane: aa 138–206 CD8 (Uniprot Q96QR6_HUMAN) Cytosolic sequence: aa 500–534 Mouse CD19 (Uniprot CD19 _MOUSE) fused to aa 19–86 Mouse Fc ERG precursor (FCERG_MOUSE) Fluorophore: mGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-CaaX</td>
+      <td>this paper</td>
+      <td></td>
+      <td>eGFP fused to a c terminal CaaX targeting sequence: aaaatgtccaaggatggta agaaaaagaagaagaagtcaaaaaccaagtgtgttatcatg</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mCherry-CaaX</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mCherry fused to a c terminal CaaX targeting sequence: aaaatgtccaaggatggt aagaaaaagaagaagaagtcaaaaaccaagtgtgttatcatg</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>OVA/p2a/mCherry-CaaX</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cytoplasmic Ovalbumin (UNIPROT: SERPINB14)/p2 a site: GGAAGCGGAGCTACTAA CTTCAGCCTGCTGAAGCAGGCTGGAGA CGTGGAGGAGAACCCTGGACCT/followed by mCherry fused to a c terminal CaaX targeting sequence: aaaatgtccaaggatggtaagaaaaagaag aagaagtcaaaaaccaagtgtgttatcatg</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His10-CD3 zeta</td>
+      <td>Hui and Vale (2014) PMID: 24463463</td>
+      <td></td>
+      <td>aa 52–164, Human TCR CD3 zeta chain (Uniprot CD3Z_HUMAN) fused to Hisx10 tag</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His10-FcRɣ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>aa 45–85, Human FcRɣ (Uniprot FCERG _HUMAN) fused to Hisx10 tag</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SNAP-Syk tSH2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>aa 1–262, Mouse Syk (Uniprot KSYK_MOUSE) with N-term SNAP tag</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His10-Lck Y505F</td>
+      <td>Hui and Vale (2014) PMID: 24463463</td>
+      <td></td>
+      <td>full length Human Lck with inhibitory Tyr 505 mutated to Phe (Uniprot LCK_HUMAN) fused to Hisx10 tag</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti phospho-Tyrosine</td>
+      <td>Santa Cruz</td>
+      <td>PY20</td>
+      <td>1:100 IF primary</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti mouse IgG coupled to Alexa Fluor 647</td>
+      <td>Thermo/Lifetech</td>
+      <td>A21236</td>
+      <td>1:200 IF secondary</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti mouse CD11c coupled to APC</td>
+      <td>BioLegend</td>
+      <td>117313</td>
+      <td>FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti mouse F4/80 coupled to APC/Cy7</td>
+      <td>BioLegend</td>
+      <td>123117</td>
+      <td>FACS</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM</td>
+      <td>Gibco</td>
+      <td>11965–092</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pen-Strep-Glutamine</td>
+      <td>Corning</td>
+      <td>30–009 Cl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal Bovine Serum (FBS)</td>
+      <td>Atlanta Biologicals</td>
+      <td>S1150H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RPMI</td>
+      <td>Gibco</td>
+      <td>11875–093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HEPES</td>
+      <td>Gibco</td>
+      <td>1530080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2-Mercaptoethanol</td>
+      <td>Sigma</td>
+      <td>M6250-100mL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MycoAlert Mycoplasma Testing Kit</td>
+      <td>Lonza</td>
+      <td>LT07-318</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G lentiviral plasmid</td>
+      <td>other</td>
+      <td>Addgene 12259</td>
+      <td>D. Stainier, Max Planck; VSV-G envelope</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-dR8.91</td>
+      <td>other</td>
+      <td>Current Addgene 8455</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHRSIN-CSGW</td>
+      <td>other</td>
+      <td></td>
+      <td>As cited James and Vale (2012), PMID: 22763440</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine LTX</td>
+      <td>Invitrogen</td>
+      <td>15338–100</td>
+      <td>Lentivirus production</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine</td>
+      <td>Invitrogen</td>
+      <td>18324–012</td>
+      <td>Added to spin infections to improve transduction</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hamilton Gastight Syringes</td>
+      <td>Hamilton</td>
+      <td>8 1100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>POPC</td>
+      <td>Avanti</td>
+      <td>850457</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ni2+-DGS-NTA</td>
+      <td>Avanti</td>
+      <td>790404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PEG5000-PE</td>
+      <td>Avanti</td>
+      <td>880230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>atto390 DOPE</td>
+      <td>ATTO-TEC GmbH</td>
+      <td>AD 390–161</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PBS (Tissue Culture Grade)</td>
+      <td>Gibco</td>
+      <td>20012050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bioruptor Pico</td>
+      <td>Diagenode</td>
+      <td></td>
+      <td>Used for producing SUVs</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5 um silica microspheres</td>
+      <td>Bangs</td>
+      <td>SS05N</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CD19-His8</td>
+      <td>Sino Biological</td>
+      <td>11880H08H50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CD22-His8</td>
+      <td>Sino Biological</td>
+      <td>11958H08H50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2.5 um silica microspheres (size titration)</td>
+      <td>Corpuscular</td>
+      <td>C-SIO-2.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5 um silica microspheres (size titration)</td>
+      <td>Corpuscular</td>
+      <td>C-SIO-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>10 um silica microspheres (size titration)</td>
+      <td>Corpuscular</td>
+      <td>C-SIO-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>15 um silica microspheres (size titration)</td>
+      <td>Corpuscular</td>
+      <td>C-SIO-15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>20 um silica microspheres (size titration)</td>
+      <td>Corpuscular</td>
+      <td>C-SIO-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Low retention tubes for microsphere cleaning</td>
+      <td>Eppendorf</td>
+      <td>22431081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MatriPlate</td>
+      <td>Brooks</td>
+      <td>MGB096-1-2-LG-L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>M-CSF</td>
+      <td>Peprotech</td>
+      <td>315–02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>IMDM</td>
+      <td>Thermo</td>
+      <td>12440079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Retronectin</td>
+      <td>Clontech</td>
+      <td>T100A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CD8 + T cell purification kit</td>
+      <td>Stemcell</td>
+      <td>19853</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>eFluor670 proliferation dye</td>
+      <td>Thermo</td>
+      <td>65-0840-85</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>phRSIN-CSGW</td>
+      <td>Sigma</td>
+      <td>L4516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluorobrite DMEM</td>
+      <td>Gibco</td>
+      <td>A1896701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM minus phenol red</td>
+      <td>Gibco</td>
+      <td>A14430-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Rhodamine PE</td>
+      <td>Avanti</td>
+      <td>810150C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DOPS</td>
+      <td>Avanti</td>
+      <td>840035C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SNAP-Cell 505-Star</td>
+      <td>NEB</td>
+      <td>S9103S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PD MiniTrap G-25 column</td>
+      <td>GE Healthcare</td>
+      <td>28-9225-29 AB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>6.4% Paraformaldehyde solution</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>50980495</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AlexaFluor 647 Phalloidin</td>
+      <td>Thermo/Molecular Probes</td>
+      <td>A22284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>CC, CS6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td>CC, CS6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>https://fiji.sc/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti human CD19 (mouse antibody)</td>
+      <td>OriGene</td>
+      <td>TA506240 Clone OTI2F6</td>
+      <td>IgG2a mouse monoclonal antibody</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti human CD47 (mouse antibody)</td>
+      <td>BD</td>
+      <td>556044 Clone B6H12</td>
+      <td>IgG1 mouse monoclonal antibody</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti Ovalbumin (rabbit antibody)</td>
+      <td>Pierce</td>
+      <td>PA1-196</td>
+      <td>IgG rabbit polyclonal antibody</td>
+    </tr>
+  </tbody>
+</table>
+
+### Constructs and antibodies
 
 Detailed information for all constructs can be found in the Key resources table. This file includes the following information for all receptors developed in this study: signal peptide, extracellular antibody fragment, stalk/transmembrane domain, and cytosolic tail including appropriate accession numbers. Antibodies used in this study are described in Supplemental Excel File 1, ‘Antibodies’ tab.
 
-## Cell culture
+### Cell culture
 
 J774A.1 macrophages and NIH 3T3 fibroblasts were obtained from the UCSF cell culture facility and cultured in DMEM (Gibco, Catalog #11965–092) supplemented with 1 x Pen-Strep-Glutamine (Corning, Catalog #30–009 Cl) and 10% fetal bovine serum (FBS) (Atlanta Biologicals, Catalog #S11150H). Raji B cells were obtained from J. Blau (McManus lab, UCSF) and cultured in RPMI (Gibco, Catalog #11875–093) supplemented with 1 x Pen-Strep-Glutamine (Corning, Catalog #30–009 Cl), 10% FBS (Atlanta Biologicals, Catalog #S11150H), 10 mM HEPES (Gibco, Catalog #1530080), and 5 µM 2-Mercaptoethanol (Sigma, Catalog #M6250-100mL). All cell lines used in this study were tested for Mycoplasma at least once per month using the Lonza MycoAlert Detection Kit (Lonza, Catalog# LT07-318) and control set (Lonza, Catalog #LT07-518).
 
-## Lentivirus production and infection
+### Lentivirus production and infection
 
 Lentiviral infection was used to stably express CAR-P constructs in all cell types. Lentivirus was produced by HEK293T cells transfected with pMD2.G (a gift from Didier Tronon, Addgene plasmid # 12259 containing the VSV-G envelope protein), pCMV-dR8.91 (since replaced by second generation compatible pCMV-dR8.2, Addgene plasmid #8455), and a lentiviral backbone vector containing the construct of interest (derived from pHRSIN-CSGW) using lipofectamine LTX (Invitrogen, Catalog # 15338–100). The media on the HEK293T cells was replaced with fresh media 8–16 hr post transfection to remove transfection reagent. At 50–72 hr post-transfection, the lentiviral media was filtered with a 0.45 µm filter and concentrated by centrifugation at 8000 x g for 4 hr or overnight. The concentrated supernatant was applied directly to ~0.5×106 NIH 3T3 cells in 2 ml of fresh media. For J77A4.1 macrophages and Raji B cells, the concentrated supernatant was mixed with 2 mls of media and 2 µg lipofectamine (Invitrogen, Catalog # 18324–012) and added to the cells. The cells were spun at 2200 x g for 45 min at 37°C. Cells were analyzed a minimum of 72 hr later.
 
-## Preparation of CD19 and CD22 5 µm silica beads
+### Preparation of CD19 and CD22 5 µm silica beads
 
 Chloroform-suspended lipids were mixed in the following molar ratio using clean glasstight Hamilton syringes (Hamilton, Catalog #8 1100): 97% POPC (Avanti, Catalog # 850457), 2% Ni2+-DGS-NTA (Avanti, Catalog # 790404), 0.5% PEG5000-PE (Avanti, Catalog # 880230, and 0.5% atto390-DOPE (ATTO-TEC GmbH, Catalog # AD 390–161). Lipid mixes were dried under argon and desiccated overnight under foil. Dried lipids were resuspended in 1 ml tissue-culture grade PBS, pH7.2 (Gibco, Catalog # 20012050), and stored under argon gas. Small unilamellar vesicles were formed by five freeze-thaw cycles followed by 2 × 5 min of bath sonication (Bioruptor Pico, Diagenode), and cleared by ultracentrifugation (TLA120.1 rotor, 35,000 rpm / 53,227 x g, 35 min, 4°C) or by 33 freeze thaw cycles. Lipid mixes were used immediately for form bilayers or shock frozen in liquid nitrogen and stored under argon at −80°C. To form bilayers on silica beads, 6 × 108 5 µm silica microspheres (10% solids, Bangs Labs, Catalog # SS05N) were washed 2x in water, and 2x in PBS by sequential suspension in water and spinning at 800 rcf, followed by decanting. Cleaned beads were resuspended in 150 µl tissue-culture grade PBS, pH7.2 (Gibco, Catalog # 20012050) and briefly vortexed. 30 µl cleared SUVs prepared as above as a 10 mM stock were added to bead suspension for a 2 mM final SUV concentration. Beads were vortexed for 10 s, covered in foil, and rotated for 30 min at room temperature to form bilayers. Bilayer-coated beads were washed 3x in PBS by sequential centrifugation at 800 rcf and decanting. Beads were resuspended in PBS + 0.1% w/v BSA for blocking for 15 min rotating at room temperature under foil. 10 nM final concentration of CD19his8 (Sino Biological, Catalog # 11880H08H50) or CD22his8 (Sino Biological, Catalog # 11958H08H50) protein were added to blocked beads and proteins were allowed to bind during a 45 min incubation rotating under foil at room temperature. Beads were washed 3x in PBS + 0.1% w/v BSA by sequential centrifugation at 300 rcf and decanting. Beads were resuspended in 120 µl PBS + 0.1% w/v BSA.
 
-## Preparation of CD19 silica beads over a range of diameters
+### Preparation of CD19 silica beads over a range of diameters
 
 Prior building bilayers on Silica beads ranging from 2.5 µm-20 µm in diameter (Microspheres-Nanospheres, Catalog# C-SIO-2.5, 5, 10, 15, 20), beads were RCA cleaned as follows: beads were pelleted at 2000 x g in low retention tubes (Eppendorf, Catalog #022431081) and resuspended in acetone. Resuspended beads were sonicated for 60 min in a bath sonicator. Rinse and sonication were repeated in ethanol. Finally, rinse and sonication were repeated in water. Beads were then washed 2x in water to remove all traces of ethanol and left in a small volume after decanting. All further steps were performed in a 70–80°C water bath prepared in a fume hood. Proper Personal Protective Equipment (PPE) was worn throughout the RCA cleaning protocol. Washed beads were added to 3 ml of hot 1.5 M KOH in a clean glass vial suspended in the water bath described above. 1 ml 30% H2O2 to bead solution and allowed to react for 10 min. Washed beads were cooled on ice, pelleted at 2000xg and rinsed 5x in ultrapure water. Used cleaning solution was saved for disposal by Environmental Health and Safety (EH and S). Cleaned beads were resuspended in 240 µl tissue-culture grade PBS, pH7.2 (Gibco, Catalog # 20012050) and briefly vortexed. The lipid mix used in this assay differed slightly from above. Here a mix of 93.5% POPC (Avanti, Catalog # 850457), 5% Ni2+-DGS-NTA (Avanti, Catalog # 790404), 1% PEG5000-PE (Avanti, Catalog # 880230, and 0.5% atto390-DOPE (ATTO-TEC GmbH, Catalog # AD 390–161. Bilayers were built and proteins coupled as described above. The concentration of CD19 was scaled appropriately to account for the increased surface area of the larger beads.
 
-## Bead engulfment assay
+### Bead engulfment assay
 
 12 to 16 hr prior to imaging, 2.5 × 104 J774A.1 macrophages expressing the appropriate CAR-P or control construct were plated in a 96-well glass bottom MatriPlate (Brooks, Catalog # MGB096-1-2-LG-L). To assess engulfment, 0.5 × 106 CD19 or CD22-ligated beads were added to each well. Engulfment was allowed to proceed for 45 min at 37°C incubator with CO2. Cells were then imaged as described below.
 
-## Bites assay – J774A.1 macrophages, dendritic cells and NIH 3T3 fibroblasts
+### Bites assay – J774A.1 macrophages, dendritic cells and NIH 3T3 fibroblasts
 
 On the day of imaging 0.5 × 106 NIH 3T3 fibroblasts, dendritic cells or macrophages and 1.5 million Raji B cells were combined in a 1.5 ml eppendorf tube and pelleted by centrifugation (800 rpm / 68 x g) for 5 min at room temperature. Culture media was decanted to ~100 µl volume and cells were gently resuspended, and allowed to interact in the small volume for 60 min in a 37°C incubator with CO2. After incubation cells and beads were diluted to a final volume of 1000 µl and 300 µl of this co-culture plated for imaging in a 96-well glass bottom MatriPlate (Brooks, Catalog # MGB096-1-2-LG-L), and imaged as described below.
 
-## Eating assay read by FACS – J774A.1 macrophages and Raji B cells
+### Eating assay read by FACS – J774A.1 macrophages and Raji B cells
 
 20,000 J774A.1 macrophages were plated into 96-well glass bottom MatriPlate (Brooks, Catalog # MGB096-1-2-LG-L) in a final volume of 300 µl complete DMEM (Gibco, Catalog #11965–092) supplemented with 1 x Pen-Strep-Glutamine (Corning, Catalog #30–009 Cl) and 10% fetal bovine serum (FBS) (Atlanta Biologicals, Catalog #S11150H). 52 hr prior to reading the assay macrophages were stimulated with 500 ng/ml LPS (Sigma, Catalog # L4516). 44 hr prior to imaging LPS was removed by three sequential gentle washes. After LPS removal 10,000 Rajis expressing mCherry-CAAX were added to the well containing stimulated macrophages. The co-culture was incubated for 44 hr in a 37°C tissue culture incubator with 5% CO2. After 44 hr, the remaining number of Raji B cells remaining was analyzed by FACS as follows: 10,000 counting beads were added to the well immediately prior to reading and the cell-counting bead mixture was harvested by pipetting up and down 8x with a p200 pipet. The assay was read on an LSRII (BD Biosciences) and Rajis were identified by the presence of mCherry fluorescence.
 
-## Primary cell transduction and differentiation
+### Primary cell transduction and differentiation
 
 Bone marrow derived macrophages (BMDMs) were produced as previously described (Weischenfeldt and Porse, 2008), except that L-929 conditioned media was replaced with purified 25 ng/ml M-CSF (Peprotech, Catalog # 315–02). The BMDMs were lentivirally infected with concentrated lentivirus after 5 days of differentiation. Differentiation was confirmed by F4/80 staining on day seven and found to be >95% efficient for each replicate. Phagocytosis was measured on day nine in imaging media lacking M-CSF.
 
 To produce CAR-P expressing dendritic cells, bone marrow-derived hematopoietic stem cells were lentivirally infected immediately after harvest by spinning with concentrated lentivirus in GMCSF-containing media (IMDM supplemented with 10% FBS and PSG) on retronectin (Clontech, Catalog # T100A)-coated plates at 2200 x g for 45 min at 37°C. Dendritic cells were produced as previously described (Mayordomo et al., 1995) by culturing bone marrow cells for 8–11 days with GMCSF. IL-4 was added 2–3 days before use. Efficient differentiation into CD11c + dendritic cells was verified by FACS, revealing ≥95% APC-CD11c + cells (Biolegend, Catalog #N418).
 
-## Antigen cross-presentation assay
+### Antigen cross-presentation assay
 
 The ability of CAR-P to stimulate OTI T cell proliferation was tested using the co-culture assay shown as a schematic in Figure 4—figure supplement 4 and described previously (Roberts et al., 2016). 10,000 CAR-P transduced CD11c + dendritic cells transduced and differentiated as above were plated in U bottom 96 well dishes (Falcon, Catalog #353077) and stimulated with 1 ug/ml LPS. 12 hr after LPS stimulation, 40,000 Raji B cells expressing soluble cytosolic ovalbumin (Raji B-OVA) were added to the culture. 24 hr after Raji B-OVA cell addition, 50,000 OTI CD8 + T cells isolated from lymph nodes of OTI TCR transgenic mice using a CD8 +T cell purification kit (Stemcell, Catalog #19853) and labeled with e670 proliferation dye (Thermo, Catalog #65-0840-85) were added. 72 hr after OTI addition the percent of OTI cells divided was measured by eFluor670 signal using flow cytometry.
 
-## Confocal imaging
+### Confocal imaging
 
 All imaging in this study was performed using a spinning disk confocal microscope with environmental control (Nikon Ti-Eclipse inverted microscope with a Yokogawa spinning disk unit). For bead internalization assays, images were acquired using a 40 × 0.95 N/A air objective and unbiased live image acquisition was performed using the High Content Screening (HCS) Site Generator plugin in µManager3. Other images were acquired using either a 100 × 1.49 N/A oil immersion objective. All images were acquired using an Andor iXon EM-CCD camera. The open source µManager software package was used to control the microscope and acquire all images3.
 
-## Quantification of whole cell internalization
+### Quantification of whole cell internalization
 
 20,000 J774A.1 macrophages were plated into 96-well glass bottom MatriPlate (Brooks, Catalog # MGB096-1-2-LG-L). Four hours prior to imaging, the macrophages were stimulated with 500 ng/ml LPS (Sigma, Catalog # L4516). Immediately prior to imaging the LPS-containing media was replaced with Fluobrite DMEM (ThermoFisher Scientific, Catalog # A1896701) containing 10% FBS. 40,000 Raji cells were added to the macrophages and the co-culture was imaged at 5 min intervals for 12 hr. For the antibody experiments, macrophages were washed into DMEM minus phenol red (A14430-01) containing 10% FBS just prior to addition of 40,000 Raji cells. Where indicated antibody was added to a final concentration of 20 µg/ml immediately after Raji cell addition and prior to imaging to limit antibody internalization. Because cells moved in and out of the field of view, we selected the cells present after 8 hr of imaging and quantified their B cell eating if they could be followed for four hours or more. Time-lapse analysis was essential to ensure that the B cell appeared viable prior to engulfment by the macrophage. Engulfment of B cells with an apoptotic morphology was not counted as a whole cell eating event.
 
-## Quantification of bites internalization
+### Quantification of bites internalization
 
 During live cell image acquisition GFP-positive J774A.1 macrophages or NIH 3T3 cells were selected by the presence of GFP signal. A full z-stack comprising the entire cell was captured using 1 µm steps. All z sections were then manually inspected for internalized Raji B cell material. Cells containing one or more bites of fully internalized Raji B cell material >1 µm in diameter were scored as positive.
 
-## Liposome FRET assay
+### Liposome FRET assay
 
 Experiments were carried out as previously described2. Briefly, proteins were purified using a bacterial expression system. All protein components (1 mg/ml BSA, 100 nM tSH2-Syk SNAP-505, 0 to 500 nM His10-CD3ζ or His10-FcRɣ intracellular chain, and 7.2 nM His10-Lck Y505F) were mixed into kinase buffer (50 mM HEPES-NaOH pH 6.8, 150 mM NaCl, 10 mM MgCl2, and 1 mM TCEP). Liposomes prepared at the following molar ratios: 74.5% POPC (Avanti, Catalog # 850457C), 10% DOGS-NTA (Nickel) (Avanti, Catalog # 790404C, 0.5% Rhodamine PE (Avanti, Catalog # 810150C), and 15% DOPS (Avanti, Catalog # 840035C) were added and the mixture was incubated for 40–60 min at room temperature, during which the SNAP-505 fluorescence was monitored at 8 s intervals with 504 nm excitation and 540 nm emission. 1 mM ATP was then injected to trigger Lck mediated phosphorylation of CD3ζ or FcRɣ. Injection was followed by 5 s of automatic shaking of the plate, and the fluorescence was further monitored at 8 s intervals for at least 1 hr. Data were normalized by setting the average fluorescence value of the last 10 data points before ATP addition as 100% and background fluorescence as 0%. The final extent of fluorescence quenching (% fluorescence change) at each concentration of receptor was determined using the average of the last 20 data points after ensuring fully equilibrated binding. Nine reactions containing increasing concentrations of CD3ζ and nine reactions containing increasing concentrations of FcRɣ were run in parallel. The final % fluorescence change was plotted against FcRɣ or CD3ζ concentration. The apparent dissociation constants (Kd) of tSH2-Syk to FcRɣ and CD3ζ were calculated by fitting the data with Graphpad Prism 6.0, using the ‘one site specific binding’ model.
 
-## Protein expression, purification, and labeling
+### Protein expression, purification, and labeling
 
 The intracellular portion of the FcR γ-chain (aa 45–85, Human FcRɣ, Uniprot FCERG_HUMAN) was cloned into a modified pET28a vector containing a His10 upstream to the multiple cloning site using BamHI and EcoRI. The intracellular portion of CD3ζ (aa 52–164, Human CD3ζ, Uniprot CD3Z_HUMAN) was also cloned into the His10 modified pET28a vector. A Lys-Cys-Lys-Lys sequence, originally present for fluorescent labeling, is also present between His10 and CD3ζ in this construct. SNAP-tSH2Syk (aa 1–262) was cloned into a pGEX6 vector using BamHI and EcoRI. His10-CD3ζ, His10-FcR γ-chain, and GST-SNAP-tSH2Syk were bacterially expressed in BL21 (DE3) RIPL strain of Escherichia coli as described previously2. His10-Lck Y505F was expressed in SF9 cells using the Bac-to-Bac baculovirus system as described previously2. All cells were lysed in an Avestin Emulsiflex system. His10 proteins were purified by using Ni-NTA agarose (Qiagen, Catalog # 30230) and GST-SNAP-tSH2Syk was purified by using glutathione-Sepharose beads (GE Healthcare, Catalog # 17075601) as described previously2. Soluble SNAP-tSH2 Syk was generated by cleaving the GST moiety via the PreScission Protease at 4°C overnight. All proteins were subjected to gel-filtration chromatography using a Superdex 200 10/300 GL column (GE Healthcare, Catalog # 17517501) in HEPES-buffered saline (HBS) containing 50 mM HEPES-NaOH (pH 6.8 for His10-CD3ζ, His10-FcR γ-chain, and GST-SNAP-tSH2Syk and pH 7.4 for His10-Lck Y505F), 150 mM NaCl, 5% glycerol, and 1 mM TCEP. The monomer fractions were pooled, frozen in liquid nitrogen and stored at −80°C. All gel-filtered proteins were quantified by SDS-PAGE and Coomassie staining, using BSA as a standard. To prepare fluorescently labeled tSH2 Syk, 10 uM SNAP-tSH2 Syk was incubated at a 1:2 ratio with SNAP-Cell 505-Star (NEB, Catalog # S9103S) overnight at 4°C and run over a PD MiniTrap G-25 (GE Healthcare, Catalog # 28-9225-29 AB) column to eliminate excess dye.
 
-## Phosphotyrosine and phalloidin staining
+### Phosphotyrosine and phalloidin staining
 
 To fix and stain preparations described above in bead and bites assays for quantifying enrichment of phosphotyrosine staining, half the media (~150 µl) was gently removed from the imaging well and replaced with 150 µl 6.4% paraformaldehyde solution (prepared from 32% stock, Electron Microscopy Sciences, Catalog # 50980495) in tissue culture grade PBS, pH7.2 (Gibco, Catalog # 20012050). Cells were fixed for 15 min in a 37°C incubator with CO2. After fixation cells were washed 2x with PBS and permeabilized/blocked for 60 min at room temperature in freshly prepared, filter sterilized PBS + 5% FBS+0.1% w/v saponin (PFS solution). After permeabilization, cells were washed 2 × 3 min with PFS solution. Following block, cells were incubated with 1:100 dilution of mouse anti-phosphotyrosine (pTyr) antibody to stain pan-pTyr (Santa Cruz, Catalog # PY20) diluted in PFS solution in the dark for 60 min at room temperature then washed 3 × 5 min in PFS solution. Washed cells were incubated with a 1:500 dilution of goat anti-mouse Alexa Fluor 647 antibody (Thermo/Molecular Probes, Catalog # A21236) in PFS solution in the dark for 60 min at room temperature. Wells were then washed 3 × 5 min in PFS solution. Cells were covered in 200 µl PBS. If not imaged immediately samples were wrapped in parafilm and foil and stored at 4°C prior to microscopy. Phosphotyrosine enrichment at the synapse was calculated by dividing the mean Alexa Fluor 647 signal of a 5 pixel linescan at the synapse with bead or cell by a 5 pixel linescan on the cortex. For phalloidin staining, cells were fixed with 4% PFA for 15 min at room temperature, blocked and permeabilized with 5% BSA in TBS with 0.5% triton X overnight, and incubated with AlexaFluor 647 Phalloidin (Thermo/Molecular Probes, Catalog # A22284) for 20 min. Cells were then washed with PBS, imaged and quantified using the method described above. Each data point represents a single cell, and the graphs reflect pooled results from three biological replicates.
 
-## Ovalbumin antibody staining
+### Ovalbumin antibody staining
 
 To fix and stain preparations described above for ovalbumin staining, half the media (~150 µl) was gently removed from the imaging well and replaced with 150 µl 8% paraformaldehyde solution (prepared from 32% stock, Electron Microscopy Sciences, Catalog # 50980495) in tissue culture grade PBS, pH7.2 (Gibco, Catalog # 20012050). Cells were fixed for 10 min in a 37°C incubator with CO2. After fixation cells were washed 2x with PBS and permeabilized/blocked for 60 min at room temperature in freshly prepared, filter sterilized PBS + 0.1% w/v casein +0.1% w/v saponin (PCS solution). After permeabilization, cells were washed 1 × 3 min with PCS solution and blocked for 1 hr at room temperature in PCS. Following block, cells were incubated with 1:100 dilution of rabbit anti-ovalbumin (OVA) antibody to stain OVA (Thermo/Pierce, Catalog # PA1-196) diluted in PCS solution overnight at 4°C. Washed cells were incubated with a 1:200 dilution of goat anti-rabbit Alexa Fluor 647 antibody (Thermo/Molecular Probes, Catalog # A21235) and 3.3 nM 488 phallodin (dissolved at 6.6 µM in methanol) in PCS solution in the dark for 60 min at room temperature. Wells were then washed 3 × 5 min in PCS solution. Cells were covered in 200 µl PBS and immediately imaged. Ovalbumin signal was quantified as the corrected total cell fluorescence (CTCF). CTCF = Integrated Density – Area of Selected Cell * Mean Fluorescence of 3 Background Readings. Each data point represents a single cell, and the graphs reflect pooled results from three biological replicates.
 
-## Image processing and analysis
+### Image processing and analysis
 
 All image quantification was done on raw, unedited images. All images in figures were first analyzed in ImageJ, where a single Z-slice at the center of the cell was extracted. The image intensities were scaled to enhance contrast and cropped in Photoshop. For movies, background was subtracted in Fiji using a rolling ball radius of 50 μm and bleach corrected using the Histogram Matching plug in.
 
-## Statistics
+### Statistics
 
 All statistical analysis was performed in Prism 6.0 (GraphPad, Inc.). The statistical test used is indicated in each figure legend. Error bars throughout the paper denote 95% confidence intervals of the mean. *** indicates p<0.0001; ** indicates p<0.001 and * indicates p<0.01.

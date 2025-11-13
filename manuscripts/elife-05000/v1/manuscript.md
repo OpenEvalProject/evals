@@ -14,4 +14,4 @@
 
 ## Abstract
 
-In the developing fruit fly brain, a protein called Trithorax increases the number of neural cells produced from a single stem cell, in part by regulating the transcription of the target genes buttonhead and pointed .
+In the developing fruit fly brain, a protein called Trithorax increases the number of neural cells produced from a single stem cell, in part by regulating the transcription of the target genes buttonhead and pointed.

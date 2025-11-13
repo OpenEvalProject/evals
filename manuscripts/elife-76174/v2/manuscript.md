@@ -9,16 +9,16 @@
 
 ### Affiliations
 
-1. https://ror.org/051gsh239 Lawson Health Research Institute London Canada
-2. https://ror.org/0213rcc28 Department of Mathematics, Simon Fraser University Burnaby Canada
-3. https://ror.org/03dbr7087 The Donnelly Centre, University of Toronto Toronto Canada
-4. https://ror.org/043q8yx54 Ontario Institute for Cancer Research Toronto Canada
+1. Lawson Health Research Institute London Canada ([ROR:051gsh239](https://ror.org/051gsh239))
+2. Department of Mathematics, Simon Fraser University Burnaby Canada ([ROR:0213rcc28](https://ror.org/0213rcc28))
+3. The Donnelly Centre, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+4. Ontario Institute for Cancer Research Toronto Canada ([ROR:043q8yx54](https://ror.org/043q8yx54))
 
 † Corresponding author
 
 ## Abstract
 
-The role of schools in the spread of SARS-CoV-2 is controversial, with some claiming they are an important driver of the pandemic and others arguing that transmission in schools is negligible. School cluster reports that have been collected in various jurisdictions are a source of data about transmission in schools. These reports consist of the name of a school, a date, and the number of students known to be infected. We provide a simple model for the frequency and size of clusters in this data, based on random arrivals of index cases at schools who then infect their classmates with a highly variable rate, fitting the overdispersion evident in the data. We fit our model to reports from four Canadian provinces, providing estimates of mean and dispersion for cluster size, as well as the distribution of the instantaneous transmission parameter β , whilst factoring in imperfect ascertainment. According to our model with parameters estimated from the data, in all four provinces (i) more than 65% of non-index cases occur in the 20% largest clusters, and (ii) reducing instantaneous transmission rate and the number of contacts a student has at any given time are effective in reducing the total number of cases, whereas strict bubbling (keeping contacts consistent over time) does not contribute much to reduce cluster sizes. We predict strict bubbling to be more valuable in scenarios with substantially higher transmission rates.
+The role of schools in the spread of SARS-CoV-2 is controversial, with some claiming they are an important driver of the pandemic and others arguing that transmission in schools is negligible. School cluster reports that have been collected in various jurisdictions are a source of data about transmission in schools. These reports consist of the name of a school, a date, and the number of students known to be infected. We provide a simple model for the frequency and size of clusters in this data, based on random arrivals of index cases at schools who then infect their classmates with a highly variable rate, fitting the overdispersion evident in the data. We fit our model to reports from four Canadian provinces, providing estimates of mean and dispersion for cluster size, as well as the distribution of the instantaneous transmission parameter β, whilst factoring in imperfect ascertainment. According to our model with parameters estimated from the data, in all four provinces (i) more than 65% of non-index cases occur in the 20% largest clusters, and (ii) reducing instantaneous transmission rate and the number of contacts a student has at any given time are effective in reducing the total number of cases, whereas strict bubbling (keeping contacts consistent over time) does not contribute much to reduce cluster sizes. We predict strict bubbling to be more valuable in scenarios with substantially higher transmission rates.
 
 ## Introduction
 
@@ -30,7 +30,7 @@ Studies that have looked at the effect of school closures on the overall rate of
 
 One source of evidence for transmission in schools are school exposure reports. Throughout the pandemic organizations have collected data submitted by volunteers about COVID cases in schools, and such data has subsequently been published online (National Education Association, 2020; Covid Schools Canada, 2021; Support Our Students Alberta, 2022). Data consists of reports of exposures or clusters in schools, either submitted by parents or determined from reading newspaper reports. Several such websites exist, though many ceased due to excessive workload after the 2020–2021 school year. In some jurisdictions there are also similar sources of data provided by local government (Government of Ontario, 2021; State of Michigan, 2021) or Public Health Agencies (Vancouver Coastal Health, 2021; Health, 2021).
 
-Here, we propose a simple model of transmission in schools, and we use these data on cluster sizes to estimate parameters of the model for four Canadian provinces. Our model allows for heterogeneity in transmission rate, which is able to capture the considerable variability in the sizes of the clusters, with most exposures leading to no further cases (and so a cluster of size 1) but with few having a large number of cases (Tufekci, 2020). We estimate the mean and overdispersion parameters for different jurisdictions. We then use our parameter estimates in a couple of ways: firstly, we explore the overdispersion of cluster sizes in different jurisdictions, giving estimates of what fraction of all cases are in the 20% largest of all clusters. Secondly, we can obtain an estimate of the distribution of the transmission rate β, the rate at which a single infected individual infects a susceptible person when they are in contact. This parameter, in turn, could be used to simulate school transmission and explore the impacts of interventions (Tupper et al., 2020) as we explore for some parameter choices. In Appendix 1 we perform a similar analysis for eight US states, where only substantially less complete datasets were available.
+Here, we propose a simple model of transmission in schools, and we use these data on cluster sizes to estimate parameters of the model for four Canadian provinces. Our model allows for heterogeneity in transmission rate, which is able to capture the considerable variability in the sizes of the clusters, with most exposures leading to no further cases (and so a cluster of size 1) but with few having a large number of cases (Tufekci, 2020). We estimate the mean and overdispersion parameters for different jurisdictions. We then use our parameter estimates in a couple of ways: firstly, we explore the overdispersion of cluster sizes in different jurisdictions, giving estimates of what fraction of all cases are in the 20% largest of all clusters. Secondly, we can obtain an estimate of the distribution of the transmission rate $\beta$, the rate at which a single infected individual infects a susceptible person when they are in contact. This parameter, in turn, could be used to simulate school transmission and explore the impacts of interventions (Tupper et al., 2020) as we explore for some parameter choices. In Appendix 1 we perform a similar analysis for eight US states, where only substantially less complete datasets were available.
 
 Finally, two important changes have occurred in 2021 that we expect to impact cluster sizes in schools. On the one hand, in many jurisdictions, large portions of children aged 5 and up have been vaccinated with the Pfizer/BioNTech vaccine (The New York Times, 2020). According to the extent to which the vaccine protects against infection, we expect cluster size will be reduced, as fewer students will be infected if they have been immunized. Observed cluster size may be reduced further even than this, if the vaccine allows harder-to-detect infections to occur. On the other hand, now more infectious variants of the coronavirus have emerged; the Alpha, Delta, and Omicron variants have all had a higher estimated transmissibility than their predecessors (CDC, 2021b; CDC, 2022). Increased transmissibility would suggest larger cluster sizes, certainly among unvaccinated ages, but the relative impact of vaccination and the new variants together is difficult to gauge. Furthermore, changes in vaccination, transmission, and immune evasion may all lead to a change in the variability in cluster sizes.
 
@@ -40,19 +40,19 @@ Our data consist of reports of confirmed cases among students, teachers, and sta
 
 There is substantial uncertainty in whether each of our determined clusters of cases accurately represents a set of cases linked by transmission. For any cluster of two or more cases, it may be that two independent sets of cases are incorrectly included in the same cluster. This may lead us to overestimate the size of clusters. Likewise, any two of our clusters in the the same school that occur further apart than 7 days may in fact be linked by a chain of undetected transmission, leading to an underestimate of cluster size. Both these factors may occur in our data, but we neglect both of them, taking the observed cluster size as given by our method. We are also unable to distinguish between transmission occurring in a school and in social activities with classmates outside of school.
 
-In a given jurisdiction, we assume exposure events occur according to a Poisson process with variable rate. Independently of this process, once an exposure event occurs at a school, we say Z additional people are infected by the index case, for a total of Z+1 individuals in the cluster. The variable Z includes individuals directly infected by the index case, as well as any subsequent infected individuals that are included in the same cluster. Following Lloyd-Smith et al., 2005, we model Z as a Poisson random variable with parameter ν, where ν itself is a Gamma-distributed random variable. As described by Lloyd-Smith et al., 2005, Z is then a negative binomial random variable. Rather than the usual parametrization of a negative binomial distribution, we use parameters Rc and k. The parameter Rc is the expected number of additional infections in a cluster, and k is the dispersion: a measure of how far the distribution of Z is from being Poisson. As k→∞, the distribution of Z approaches that of a Poisson distribution with mean Rc. The variance of Z is Rc⁢(1+Rc/k) and so for smaller values of k we expect more of the secondary cases to occur in rare large clusters rather than in frequent small clusters (Lloyd-Smith et al., 2005).
+In a given jurisdiction, we assume exposure events occur according to a Poisson process with variable rate. Independently of this process, once an exposure event occurs at a school, we say $Z$ additional people are infected by the index case, for a total of $Z+1$ individuals in the cluster. The variable $Z$ includes individuals directly infected by the index case, as well as any subsequent infected individuals that are included in the same cluster. Following Lloyd-Smith et al., 2005, we model $Z$ as a Poisson random variable with parameter $ν$, where $ν$ itself is a Gamma-distributed random variable. As described by Lloyd-Smith et al., 2005, $Z$ is then a negative binomial random variable. Rather than the usual parametrization of a negative binomial distribution, we use parameters $R_{c}$ and $k$. The parameter $R_{c}$ is the expected number of additional infections in a cluster, and $k$ is the dispersion: a measure of how far the distribution of $Z$ is from being Poisson. As $k→∞$, the distribution of $Z$ approaches that of a Poisson distribution with mean $R_{c}$. The variance of $Z$ is $R_{c}⁢(1+R_{c}/k)$ and so for smaller values of $k$ we expect more of the secondary cases to occur in rare large clusters rather than in frequent small clusters (Lloyd-Smith et al., 2005).
 
-There are then a total of Z+1 infected individuals in the school. To give an idea of how the distribution of true cluster size depends on the parameters when they are in this range, in Figure 1 we show the theoretical distributions for varying parameters. On the left, we fix Rc+1=2 and vary k. Decreasing k causes there to be more clusters of size 1 (i.e. no transmission) and more large clusters, but reduces the number of intermediate-sized clusters. On the right, we fix k=0.3 and show the effect of varying mean cluster size Rc+1. As Rc increases, the frequency of clusters with no or little transmission decreases and the frequency of larger cluster sizes increases.
+There are then a total of $Z+1$ infected individuals in the school. To give an idea of how the distribution of true cluster size depends on the parameters when they are in this range, in Figure 1 we show the theoretical distributions for varying parameters. On the left, we fix $R_{c}+1=2$ and vary $k$. Decreasing $k$ causes there to be more clusters of size 1 (i.e. no transmission) and more large clusters, but reduces the number of intermediate-sized clusters. On the right, we fix $k=0.3$ and show the effect of varying mean cluster size $R_{c}+1$. As $R_{c}$ increases, the frequency of clusters with no or little transmission decreases and the frequency of larger cluster sizes increases.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/76174/elife-76174-fig1-v2.jpg)
 
-**Figure 1.:** Trends continue as shown for larger clusters. (Left) Fixing mean cluster size  and varying dispersion Rc+1. (Right) Fixing k and varying k.Rc+1
+**Figure 1.:** Trends continue as shown for larger clusters. (Left) Fixing mean cluster size $R_{c}+1$ and varying dispersion $k$. (Right) Fixing $k$ and varying $R_{c}+1$.
 
-The number of the total Z+1 cases that are actually observed, X, depends on the ascertainment model. We consider a model where each case is observed and contributes to the reported cluster size with probability q, so that the observed cluster size X (conditioned on Z) is binomial with parameters n=Z+1 and probability q. The index case is treated the same as the infectees, so X may or may not include the index case. If none of the cases in a cluster are observed, we assume the cluster is not reported, so our model factors in the effect that smaller clusters are more likely to be missed. See Appendix 1 for an explicit statement of the likelihood function.
+The number of the total $Z+1$ cases that are actually observed, $X$, depends on the ascertainment model. We consider a model where each case is observed and contributes to the reported cluster size with probability $q$, so that the observed cluster size $X$ (conditioned on $Z$) is binomial with parameters $n=Z+1$ and probability $q$. The index case is treated the same as the infectees, so $X$ may or may not include the index case. If none of the cases in a cluster are observed, we assume the cluster is not reported, so our model factors in the effect that smaller clusters are more likely to be missed. See Appendix 1 for an explicit statement of the likelihood function.
 
-For each collection of cluster sizes in our datasets we estimate the mean Rc and dispersion k using the ascertainment model with q=0.75. We base this value on the meta-analysis (Bobrovitz et al., 2021) which reports ascertainment fractions for high-income regions in the Americas between 66% (in the last quarter of 2020) and 85% (in the second quarter of 2021). We use maximum likelihood estimation to obtain estimates of Rc and k, and we use the Hessian of the log-likelihood to obtain 95% confidence ellipses for the parameters [Wasserman, 2013, Sec. 9.10].
+For each collection of cluster sizes in our datasets we estimate the mean $R_{c}$ and dispersion $k$ using the ascertainment model with $q=0.75$. We base this value on the meta-analysis (Bobrovitz et al., 2021) which reports ascertainment fractions for high-income regions in the Americas between 66% (in the last quarter of 2020) and 85% (in the second quarter of 2021). We use maximum likelihood estimation to obtain estimates of $R_{c}$ and $k$, and we use the Hessian of the log-likelihood to obtain 95% confidence ellipses for the parameters [Wasserman, 2013, Sec. 9.10].
 
-Finally, we perform a second analysis using the same model, using a smaller window of time for the definition of a cluster. In this way we hope to identify only the index case and the cases directly infected by the index case. We use the model above for this (smaller) number of cases for each cluster to estimate a distribution for ν, but then use this in turn to estimate a distribution for the instantaneous transmission rate β. Our reasoning is that if ν is the random Poisson parameter when the index case it exposed to n people for time T, then β has approximately the same distribution as ν/(n⁢T). Under these assumptions, β is also a Gamma-distributed random variable with parameter we can easily identify, from those for ν.
+Finally, we perform a second analysis using the same model, using a smaller window of time for the definition of a cluster. In this way we hope to identify only the index case and the cases directly infected by the index case. We use the model above for this (smaller) number of cases for each cluster to estimate a distribution for $ν$, but then use this in turn to estimate a distribution for the instantaneous transmission rate $\beta$. Our reasoning is that if $ν$ is the random Poisson parameter when the index case it exposed to $n$ people for time $T$, then $\beta$ has approximately the same distribution as $ν/(n⁢T)$. Under these assumptions, $\beta$ is also a Gamma-distributed random variable with parameter we can easily identify, from those for $ν$.
 
 ## Results
 
@@ -62,53 +62,248 @@ Figure 2 shows histograms of cluster size according to our definition in the fou
 
 **Figure 2.:** Inset histograms only show clusters of size 11 or more on a different scale.Each dot represents a single cluster of size 11 or larger, and indicates the presence of (more rare) larger clusters.
 
+**Table 1.**
+ Cluster statistics for each province.(Top) For each of the four Canadian provinces: number of clusters in the data, number of schools reported, number of schools with multiple clusters, fraction of schools with multiple clusters. (Bottom) Fraction of clusters with one case, mean observed cluster size, maximum observed cluster size, and index of dispersion (variance of number of cases divided by mean number of cases) with and without subtracting one for the index case.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Province</th>
+      <th>Number of Clusters</th>
+      <th>Number of Schools</th>
+      <th>Schools with Multiple clusters</th>
+      <th>Fraction of schools Multiple clusters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Manitoba</td>
+      <td>1754</td>
+      <td>542</td>
+      <td>396</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>Saskatchewan</td>
+      <td>1211</td>
+      <td>466</td>
+      <td>295</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>Ontario</td>
+      <td>8482</td>
+      <td>3337</td>
+      <td>2147</td>
+      <td>0.64</td>
+    </tr>
+    <tr>
+      <td>Alberta</td>
+      <td>5032</td>
+      <td>1537</td>
+      <td>1158</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Province</td>
+      <td>Fraction with</td>
+      <td>Mean observed</td>
+      <td>Max observed</td>
+      <td>Index of</td>
+      <td>IoD without</td>
+    </tr>
+    <tr>
+      <td>One case</td>
+      <td>Cluster size</td>
+      <td>Cluster size</td>
+      <td>Dispersion (IoD)</td>
+      <td>Index case</td>
+    </tr>
+    <tr>
+      <td>Manitoba</td>
+      <td>0.58</td>
+      <td>2.16</td>
+      <td>44</td>
+      <td>3.44</td>
+      <td>6.43</td>
+    </tr>
+    <tr>
+      <td>Saskatchewan</td>
+      <td>0.66</td>
+      <td>1.70</td>
+      <td>16</td>
+      <td>1.23</td>
+      <td>2.98</td>
+    </tr>
+    <tr>
+      <td>Ontario</td>
+      <td>0.63</td>
+      <td>1.83</td>
+      <td>50</td>
+      <td>1.87</td>
+      <td>4.13</td>
+    </tr>
+    <tr>
+      <td>Alberta</td>
+      <td>0.47</td>
+      <td>2.45</td>
+      <td>108</td>
+      <td>4.94</td>
+      <td>8.35</td>
+    </tr>
+  </tbody>
+</table>
+
 In Figure 3 (left) we show the rate (in clusters per day per 100,000 population) that cases appear in the dataset over time. In Figure 3 (right) we show the rate of COVID incidence per 100,000 population in the province over the same period of time. There is an apparent correspondence between the two time series, with peaks in rate of clusters per day occuring near peaks in incidence.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/76174/elife-76174-fig3-v2.jpg)
 
 **Figure 3.:** (Left) Estimates of the rate of new clusters (per 100,000 population) as a function of time in each province. (Right) Incident cases per day (per 100,000 population) in the same province over the corresponding time interval. Case counts are averaged over a 2-week window.
 
-Figure 4 (left) shows the estimated mean cluster size (=Rc+1) and dispersion k for the four Canadian provinces. Mean cluster sizes ranged from 1.9 to 2.9 cases, and dispersion ranged from 0.34 to 0.53 (recalling that no overdispersion corresponds to k→∞.) Recall that we determined clusters by including cases in the same cluster if they were reported within 7 days of each other. In Appendix 1 we explore what happens if we change this window to either 4 or 10 days. We find that estimates of k do not change much: there is less than a 10% change in k in all cases. A window of 4 days leads to smaller cluster sizes (at most 18% smaller) and a window of 10 days leads to larger cluster sizes (at most 11% larger).
+Figure 4 (left) shows the estimated mean cluster size ($=R_{c}+1$) and dispersion $k$ for the four Canadian provinces. Mean cluster sizes ranged from 1.9 to 2.9 cases, and dispersion ranged from 0.34 to 0.53 (recalling that no overdispersion corresponds to $k→∞$.) Recall that we determined clusters by including cases in the same cluster if they were reported within 7 days of each other. In Appendix 1 we explore what happens if we change this window to either 4 or 10 days. We find that estimates of $k$ do not change much: there is less than a 10% change in $k$ in all cases. A window of 4 days leads to smaller cluster sizes (at most 18% smaller) and a window of 10 days leads to larger cluster sizes (at most 11% larger).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/76174/elife-76174-fig4-v2.jpg)
 
-**Figure 4.:** (Left) Estimates of mean and dispersion of cluster size for four Canadian provinces using the individual ascertainment model with ascertainment rate 0.75. Estimate of mean includes index case. The sample size for estimates for each province is the Number of Clusters as shown in Table 1. 95% confidence ellipses are shown, computed using the inverse Hessian method. (Right) Estimated distribution of  (left axis) and instantaneous transmission rate ν (right axis) for different provinces.β
+**Figure 4.:** (Left) Estimates of mean and dispersion of cluster size for four Canadian provinces using the individual ascertainment model with ascertainment rate 0.75. Estimate of mean includes index case. The sample size for estimates for each province is the Number of Clusters as shown in Table 1. 95% confidence ellipses are shown, computed using the inverse Hessian method. (Right) Estimated distribution of $ν$ (left axis) and instantaneous transmission rate $\beta$ (right axis) for different provinces.
 
-In Appendix 1 we explore varying the ascertainment fraction between 0.2 and 1. Though lower ascertainment fractions yield bigger values of Rc and smaller values of k, we see that the parameter estimates are relatively insensitive to values of q between 0.5 and 1. For example, when q1 is reduced from 0.75 to 0.5, the range of Rc+1 shifts from 1.9–2.9 to 3.2–6.4, and the range of k shifts from 0.34–0.53 to 0.22–0.39. The reason for this is that though a given cluster with multiple cases will look smaller with fewer cases detected, and lower detection will thereby bias observed size downwards, many single-case clusters will not be detected at all, biasing the observed cluster size upwards again. We also consider an alternate model of ascertainment, where the chance of a cluster being reported at all depends on the size of the cluster, and vary the rate of ascertainment in that alternate model; see Appendix 1.
+In Appendix 1 we explore varying the ascertainment fraction between 0.2 and 1. Though lower ascertainment fractions yield bigger values of $R_{c}$ and smaller values of $k$, we see that the parameter estimates are relatively insensitive to values of $q$ between 0.5 and 1. For example, when q1 is reduced from 0.75 to 0.5, the range of $R_{c}+1$ shifts from 1.9–2.9 to 3.2–6.4, and the range of $k$ shifts from 0.34–0.53 to 0.22–0.39. The reason for this is that though a given cluster with multiple cases will look smaller with fewer cases detected, and lower detection will thereby bias observed size downwards, many single-case clusters will not be detected at all, biasing the observed cluster size upwards again. We also consider an alternate model of ascertainment, where the chance of a cluster being reported at all depends on the size of the cluster, and vary the rate of ascertainment in that alternate model; see Appendix 1.
 
-Another way to visualize the variability of transmission we have inferred from the data is to show the distribution of the Poisson parameter ν, of which Rc is just the mean. In our model ν is the index case-specific expected number of further cases in a cluster, and is a gamma-distributed random variable. Figure 4 (right) shows the estimated distribution of ν for each jurisdiction, and Table 2 shows some key properties of the distribution for each of the provinces.
+Another way to visualize the variability of transmission we have inferred from the data is to show the distribution of the Poisson parameter $ν$, of which $R_{c}$ is just the mean. In our model $ν$ is the index case-specific expected number of further cases in a cluster, and is a gamma-distributed random variable. Figure 4 (right) shows the estimated distribution of $ν$ for each jurisdiction, and Table 2 shows some key properties of the distribution for each of the provinces.
 
-As a way of interpreting dispersion values and what they mean for cluster size, we consider the fraction of all cases that occur in the largest 20% of all clusters. (If the distribution of cases follows the Pareto principle Wikipedia contributors, 2021 then 80% of the cases will be in the top 20% largest clusters.) If we consider only secondary cases (not including the index case) we see from Figure 5 (right) the fraction that are due to the 20% largest clusters for various values of mean cluster size and k. For example, for Alberta with a mean cluster size of 2.9 and a dispersion k of 0.53, 69% of the secondary cases are in the top 20% of the clusters by size. For Saskatchewan, with a mean cluster size of 1.9 and k=0.37, 82% of secondary cases are in the top 20% of clusters by size. When we include index cases, the fractions are correspondingly lower, as we see in Figure 5 (right).
+**Table 2.**
+ Properties of the estimated distribution for the Poisson parameter $ν$, the index case-specific expected number of further cases in a cluster.The expected value of $ν$ is $R_{c}$ and its distribution gives important information about overdispersion of clusters. In units of hours-1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Province</th>
+      <th>Mean</th>
+      <th>Standard deviation</th>
+      <th>Median</th>
+      <th>90th percentile</th>
+      <th>99th percentile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alberta</td>
+      <td>1.86</td>
+      <td>2.55</td>
+      <td>8.9e-01</td>
+      <td>5.0</td>
+      <td>11.9</td>
+    </tr>
+    <tr>
+      <td>Manitoba</td>
+      <td>1.43</td>
+      <td>2.45</td>
+      <td>4.3e-01</td>
+      <td>4.1</td>
+      <td>11.7</td>
+    </tr>
+    <tr>
+      <td>Saskatchewan</td>
+      <td>0.88</td>
+      <td>1.46</td>
+      <td>2.9e-01</td>
+      <td>2.5</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td>Ontario</td>
+      <td>1.04</td>
+      <td>1.70</td>
+      <td>3.5e-01</td>
+      <td>3.0</td>
+      <td>8.1</td>
+    </tr>
+  </tbody>
+</table>
+
+As a way of interpreting dispersion values and what they mean for cluster size, we consider the fraction of all cases that occur in the largest 20% of all clusters. (If the distribution of cases follows the Pareto principle Wikipedia contributors, 2021 then 80% of the cases will be in the top 20% largest clusters.) If we consider only secondary cases (not including the index case) we see from Figure 5 (right) the fraction that are due to the 20% largest clusters for various values of mean cluster size and $k$. For example, for Alberta with a mean cluster size of 2.9 and a dispersion $k$ of 0.53, 69% of the secondary cases are in the top 20% of the clusters by size. For Saskatchewan, with a mean cluster size of 1.9 and $k=0.37$, 82% of secondary cases are in the top 20% of clusters by size. When we include index cases, the fractions are correspondingly lower, as we see in Figure 5 (right).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/76174/elife-76174-fig5-v2.jpg)
 
-**Figure 5.:** , the fraction of cases in the 20% largest clusters, counting only secondary cases (left), or all cases, index and secondary (right).kDots indicate the location of the four provinces in the plots.
+**Figure 5.:** For a range of mean cluster size and dispersion $k$, the fraction of cases in the 20% largest clusters, counting only secondary cases (left), or all cases, index and secondary (right).Dots indicate the location of the four provinces in the plots.
 
-Our model does not consider the details of transmission at the individual level, and so does not make use of an instantaneous transmission rate per contact pair. However, by making some simple assumptions about SARS-CoV-2 transmission, we can infer a distribution of transmission rate β from our estimate of the distribution of the parameter ν. Recall that ν is a Gamma-distributed random variable that gives mean number of secondary cases. Another way to estimate mean cluster size is to use an individual contact model where when an infectious person is in contact with a susceptible person, the susceptible person is infected with rate β. In such a model we assume that infected individuals are in a classroom for 2 days before isolating (when they develop symptoms), and that the total contact time with their classmates is T=12 hr. Assuming that all individuals are in the same class, the infected individual is in contact with n=25 other susceptible students for that time period. Then the infected individual will on average infect β⁢n⁢T other students. So we estimate β=ν/(n⁢T). Since ν is Gamma-distributed, our estimate of β is too. For estimating the distribution of β we used a 4-day window for the definition of clusters, since this is more likely to include only people directly infected by the index case. Figure 6 shows our estimated distribution of β for the different Canadian provinces. Table 3 shows some of the features of the estimated distribution for β.
+Our model does not consider the details of transmission at the individual level, and so does not make use of an instantaneous transmission rate per contact pair. However, by making some simple assumptions about SARS-CoV-2 transmission, we can infer a distribution of transmission rate $\beta$ from our estimate of the distribution of the parameter $ν$. Recall that $ν$ is a Gamma-distributed random variable that gives mean number of secondary cases. Another way to estimate mean cluster size is to use an individual contact model where when an infectious person is in contact with a susceptible person, the susceptible person is infected with rate $\beta$. In such a model we assume that infected individuals are in a classroom for 2 days before isolating (when they develop symptoms), and that the total contact time with their classmates is $T=12$ hr. Assuming that all individuals are in the same class, the infected individual is in contact with $n=25$ other susceptible students for that time period. Then the infected individual will on average infect $\beta⁢n⁢T$ other students. So we estimate $\beta=ν/(n⁢T)$. Since $ν$ is Gamma-distributed, our estimate of $\beta$ is too. For estimating the distribution of $\beta$ we used a 4-day window for the definition of clusters, since this is more likely to include only people directly infected by the index case. Figure 6 shows our estimated distribution of $\beta$ for the different Canadian provinces. Table 3 shows some of the features of the estimated distribution for $\beta$.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/76174/elife-76174-fig6-v2.jpg)
 
-**Figure 6.:** for different provinces.β
+**Figure 6.:** Estimated distribution of $\beta$ for different provinces.
 
-One application of these estimates of the distribution of β is that we can explore the consequences of different types of interventions in the classroom setting. In Tupper et al., 2020 the authors consider a simple model of SARS-CoV-2 transmission among a group of contacts and investigate the quantity Revent, the average number of secondary infections due to the presence of a single infectious individual. Revent is determined by T, the total length of time the infectious individual is with others; ncontact, the number of contacts at any point in time, τ the length of time the individual is with a fixed set of contacts; and β, the instantaneous transmission rate. The parameter τ can vary between some fraction of T (e.g., T/3, if the index case divides their time equally between three sets of ncontact contacts) or T if the set of contacts is fixed. Interventions can be classified according to which of these parameters they modify: reducing transmission reduces β, social distancing reduces ncontact, and ‘bubbling’ (staying with the same small group rather than mingling) increases τ to T. If we use our distributions for β with the model of Tupper et al., 2020 we can estimate how the distribution of cluster sizes is changed with different interventions under different values of the parameters Rc and k.
+**Table 3.**
+ Properties of the estimated distribution for the instantaneous transmission rate β.In units of hours-1.
 
-In Figure 7 we show estimated size distributions of clusters under different interventions. Our baseline simulation settings intend to capture a pre-COVID high school classroom: T=12 hr (2 days of exposure before the index case isolates), τ=3 hr (each student has four different classes that they attend for equal periods of time), nclass=25, and β is sampled from our estimated distribution for a given choice of Rc and k. We consider three interventions: transmission reduction (e.g., by introducing masks) reduces β by a factor of 2; social distancing cuts the size of a class in half; strict bubbling increases τ to T. For all values of Rc and k we consider, we simulate 107 clusters to obtain a histogram of the number of secondary cases as well a mean and standard deviations, for the baseline conditions and for each of the three interventions, as shown in Figure 7. Means and standard deviations are accurate to the number of digits reported, and are shown with the corresponding histogram in the figure.
+
+<table>
+  <thead>
+    <tr>
+      <th>Jurisdiction</th>
+      <th>Mean</th>
+      <th>Standard deviation</th>
+      <th>Median</th>
+      <th>90th percentile</th>
+      <th>99th percentile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alberta</td>
+      <td>4.8e-03</td>
+      <td>6.7e-03</td>
+      <td>2.2e-03</td>
+      <td>1.3e-02</td>
+      <td>3.2e-02</td>
+    </tr>
+    <tr>
+      <td>Manitoba</td>
+      <td>3.3e-03</td>
+      <td>5.5e-03</td>
+      <td>1.1e-03</td>
+      <td>9.5e-03</td>
+      <td>2.6e-02</td>
+    </tr>
+    <tr>
+      <td>Saskatchewan</td>
+      <td>2.5e-03</td>
+      <td>4.4e-03</td>
+      <td>7.4e-04</td>
+      <td>7.4e-03</td>
+      <td>2.1e-02</td>
+    </tr>
+    <tr>
+      <td>Ontario</td>
+      <td>2.5e-03</td>
+      <td>4.1e-03</td>
+      <td>7.8e-04</td>
+      <td>7.1e-03</td>
+      <td>2.0e-02</td>
+    </tr>
+  </tbody>
+</table>
+
+One application of these estimates of the distribution of $\beta$ is that we can explore the consequences of different types of interventions in the classroom setting. In Tupper et al., 2020 the authors consider a simple model of SARS-CoV-2 transmission among a group of contacts and investigate the quantity $R_{event}$, the average number of secondary infections due to the presence of a single infectious individual. $R_{event}$ is determined by $T$, the total length of time the infectious individual is with others; ncontact, the number of contacts at any point in time, $\tau$ the length of time the individual is with a fixed set of contacts; and $\beta$, the instantaneous transmission rate. The parameter $\tau$ can vary between some fraction of $T$ (e.g., $T/3$, if the index case divides their time equally between three sets of ncontact contacts) or $T$ if the set of contacts is fixed. Interventions can be classified according to which of these parameters they modify: reducing transmission reduces $\beta$, social distancing reduces ncontact, and ‘bubbling’ (staying with the same small group rather than mingling) increases $\tau$ to $T$. If we use our distributions for $\beta$ with the model of Tupper et al., 2020 we can estimate how the distribution of cluster sizes is changed with different interventions under different values of the parameters $R_{c}$ and $k$.
+
+In Figure 7 we show estimated size distributions of clusters under different interventions. Our baseline simulation settings intend to capture a pre-COVID high school classroom: $T=12$ hr (2 days of exposure before the index case isolates), $\tau=3$ hr (each student has four different classes that they attend for equal periods of time), $n_{class}=25$, and $\beta$ is sampled from our estimated distribution for a given choice of $R_{c}$ and $k$. We consider three interventions: transmission reduction (e.g., by introducing masks) reduces β by a factor of 2; social distancing cuts the size of a class in half; strict bubbling increases $\tau$ to $T$. For all values of $R_{c}$ and $k$ we consider, we simulate 107 clusters to obtain a histogram of the number of secondary cases as well a mean and standard deviations, for the baseline conditions and for each of the three interventions, as shown in Figure 7. Means and standard deviations are accurate to the number of digits reported, and are shown with the corresponding histogram in the figure.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/76174/elife-76174-fig7-v2.jpg)
 
-**Figure 7.:** Left: under parameter choice  and Rc=1. Right: with k=0.4.Rc=2.5
+**Figure 7.:** Left: under parameter choice $R_{c}=1$ and $k=0.4$. Right: with $R_{c}=2.5$.
 
-Figure 7 (left) shows results for Rc and k close to that of Manitoba with a 4-day window for cluster definition (Rc=1.0, k=0.4). We see that both reducing transmission and social distancing are effective in reducing the total number of cases, whereas bubbling does not contribute much to reduce cluster sizes. This is characteristic of what (Tupper et al., 2020) call the linear regime: the number of secondary infections depends linearly on the time the infectious person is present with others. Figure 7 (right) shows the results in a hypothetical setting where Rc is much larger (Rc=2.5, k=0.4), perhaps due to the existence of a more transmissible variant such as Omicron. Here, transmission reduction is less effective than in the linear regime, and strict bubbling more so; increasing β has moved us closer to the so-called saturating regime, where transmission reduction is relatively less effective than bubbling.
+Figure 7 (left) shows results for $R_{c}$ and $k$ close to that of Manitoba with a 4-day window for cluster definition ($R_{c}=1.0$, $k=0.4$). We see that both reducing transmission and social distancing are effective in reducing the total number of cases, whereas bubbling does not contribute much to reduce cluster sizes. This is characteristic of what (Tupper et al., 2020) call the linear regime: the number of secondary infections depends linearly on the time the infectious person is present with others. Figure 7 (right) shows the results in a hypothetical setting where $R_{c}$ is much larger ($R_{c}=2.5$, $k=0.4$), perhaps due to the existence of a more transmissible variant such as Omicron. Here, transmission reduction is less effective than in the linear regime, and strict bubbling more so; increasing $\beta$ has moved us closer to the so-called saturating regime, where transmission reduction is relatively less effective than bubbling.
 
 ## Discussion
 
 We have used cluster size data to estimate the mean and dispersion in cluster sizes, accounting for imperfect case detection. We have found that in each of the provinces we consider, the majority of school transmission occurs in a small number of classrooms, with the top 20% of clusters containing between 70% and 80% of the secondary cases in school settings. We developed a method to estimate the transmission rate per contact per unit time, with reference to a simple model of classroom transmission. Having a direct estimate of the transmission rate allows us to compare the benefits of different control measures. We find that with parameters estimated from Canadian jurisdictions during the 2020–2021 school year, interventions that reduce transmission rates (such as masking) and reduce number of contacts at any one time (class size reduction), are more effective than strategies aimed at keeping sets of contacts consistent (such as bubbling).
 
-Overdispersion in transmission of SARS-CoV-2 and other infectious diseases is well documented (e.g., Woolhouse et al., 1997) and is often described with reference to the 20/80 rule: that 20% of the infected individuals account for 80% of the transmission. Naturally, if the more infectious 20% can be identified, interventions targeting that portion of the population are likely to have a high impact. For SARS in 2003, Lloyd-Smith et al., 2005, estimated that 20% of the cases were responsible for almost 90% of the transmission. Estimates for SARS-CoV-2 also find considerable overdispersion, with the parameter k between 0.1 (Endo et al., 2020) and 0.5 (Laxminarayan et al., 2020) (with R0=2.5 this gives the top 20% of cases causing 69–96% of the transmissions; see Sneppen et al., 2021, for a survey). These estimates focus on the distribution of the number of people an infectious person infects directly during the whole course of infection (with mean R0), which is of obvious epidemiological importance, but for which it is difficult to obtain high-quality data. When a case is identified, we are not always able to determine who they infected, and indirect methods must be used. We may miss cases, and others may be wrongly attributed to a given index case.
+Overdispersion in transmission of SARS-CoV-2 and other infectious diseases is well documented (e.g., Woolhouse et al., 1997) and is often described with reference to the 20/80 rule: that 20% of the infected individuals account for 80% of the transmission. Naturally, if the more infectious 20% can be identified, interventions targeting that portion of the population are likely to have a high impact. For SARS in 2003, Lloyd-Smith et al., 2005, estimated that 20% of the cases were responsible for almost 90% of the transmission. Estimates for SARS-CoV-2 also find considerable overdispersion, with the parameter $k$ between 0.1 (Endo et al., 2020) and 0.5 (Laxminarayan et al., 2020) (with $R_{0}=2.5$ this gives the top 20% of cases causing 69–96% of the transmissions; see Sneppen et al., 2021, for a survey). These estimates focus on the distribution of the number of people an infectious person infects directly during the whole course of infection (with mean R0), which is of obvious epidemiological importance, but for which it is difficult to obtain high-quality data. When a case is identified, we are not always able to determine who they infected, and indirect methods must be used. We may miss cases, and others may be wrongly attributed to a given index case.
 
-In our present study, we examined a different random quantity, the number of additional cases Z infected, either directly or through intermediaries, by a given index case in a given setting. We denoted the mean of Z by Rc. Including the index case means that the cluster size is Z+1, with mean Rc+1. Compared to estimates of R0, Rc does not count people infected at other sites, but it does include additional cases, because it includes both direct and indirect transmission. Z and its mean Rc are therefore more focused on the particular setting (in this case a school) than R0 is. In general it will depend on the infectiousness of the index case, as well as how conducive the environment is to transmission, and what activities are undertaken there. Determining the distribution of Z, as we have done here, provides an alternative means of investigating transmission.
+In our present study, we examined a different random quantity, the number of additional cases $Z$ infected, either directly or through intermediaries, by a given index case in a given setting. We denoted the mean of $Z$ by $R_{c}$. Including the index case means that the cluster size is $Z+1$, with mean $R_{c}+1$. Compared to estimates of R0, $R_{c}$ does not count people infected at other sites, but it does include additional cases, because it includes both direct and indirect transmission. $Z$ and its mean $R_{c}$ are therefore more focused on the particular setting (in this case a school) than R0 is. In general it will depend on the infectiousness of the index case, as well as how conducive the environment is to transmission, and what activities are undertaken there. Determining the distribution of $Z$, as we have done here, provides an alternative means of investigating transmission.
 
-However, these two measures of transmissibility (R0 and Rc, the mean of Z) may be close enough that it is instructive to compare our estimates for Z with the traditional R0, and our dispersion estimates with dispersion estimates for the number of secondary infections. Our Rc ranges from 0.9 in Saskatchewan to 1.9 in Alberta. These low values of Rc are inconsistent with R0 estimates (which range from 2 to 6; Alimohamadi et al., 2020), and indicate that in the pre-Delta time frame in these jurisdictions schools were unlikely to be a major contributor to SARS-CoV-2 spread. However, with increased transmissibility with new variants such as Omicron, this situation may have changed. The discrepancy is even greater when we consider clusters defined by the 4-day window, which are even smaller. Our estimates for k range from 0.34 (in Manitoba) to 0.53 (in Alberta), corresponding closely to earlier estimates of dispersion.
+However, these two measures of transmissibility (R0 and $R_{c}$, the mean of $Z$) may be close enough that it is instructive to compare our estimates for $Z$ with the traditional R0, and our dispersion estimates with dispersion estimates for the number of secondary infections. Our $R_{c}$ ranges from 0.9 in Saskatchewan to 1.9 in Alberta. These low values of $R_{c}$ are inconsistent with R0 estimates (which range from 2 to 6; Alimohamadi et al., 2020), and indicate that in the pre-Delta time frame in these jurisdictions schools were unlikely to be a major contributor to SARS-CoV-2 spread. However, with increased transmissibility with new variants such as Omicron, this situation may have changed. The discrepancy is even greater when we consider clusters defined by the 4-day window, which are even smaller. Our estimates for $k$ range from 0.34 (in Manitoba) to 0.53 (in Alberta), corresponding closely to earlier estimates of dispersion.
 
 Overdispersion has consequences for controlling transmission and for estimation. Estimating the average transmission rate from a small number of clusters will be difficult, and will result in a high variability. Most likely what will be observed in a small number of sampled clusters will be little to no onward transmission, which would lead to underestimates of the transmission rate. But if one or more larger clusters are included in a sample by chance, then this could lead to an overestimate of the transmission rate.
 
@@ -116,10 +311,10 @@ If we could identify the conditions under which the rare larger clusters occur (
 
 Two important changes have happened since the majority of the data here was collected. Firstly, in the jurisdictions studied, effective vaccines have been developed and deployed for those aged 5 and up (The New York Times, 2020). There are several ways in which this may effect cluster sizes in the school setting. To the extent that the general population (including adults) being vaccinated reduces incidence of COVID (Wilder-Smith and Mulholland, 2021; Leshem and Wilder-Smith, 2021; Mallapaty, 2021), there will be fewer introductions of SARS-CoV-2 into the classroom, and so fewer exposures will occur leading to fewer clusters. This effect may be dampened by relaxation of distancing and other measures that were keeping COVID-19 at bay and are no longer necessary in the context of vaccination. The distribution of cluster sizes when clusters do occur will also change: many students who might otherwise be infected will be protected by the vaccine, others who are vaccinated but infected (breakthrough infection) may have reduced symptoms and therefore may not be detected. We therefore expect the mean cluster size to be reduced by vaccination, in age ranges where vaccination has been deployed. It is unclear what the consequences will be for the dispersion.
 
-Secondly, new, more transmissible variants of SARS-CoV-2 have emerged (CDC, 2021a), most notably the Alpha variant, the Delta variant, the Omicron variant, and most recently the BA.2 strain of the Omicron variant, each with a substantially higher transmissibility than its predecessors. A natural way to implement this change in our model is to multiply Rc by an appropriate factor, boosting the size of clusters, without changing the dispersion parameter k. Data from the period in which Delta was the prevalent strain is not available, but schools in the Canada and the US saw resurgences in clusters in schools around school openings (Cravey, 2021; Star staff wire services, 2021; CNN, 2021).
+Secondly, new, more transmissible variants of SARS-CoV-2 have emerged (CDC, 2021a), most notably the Alpha variant, the Delta variant, the Omicron variant, and most recently the BA.2 strain of the Omicron variant, each with a substantially higher transmissibility than its predecessors. A natural way to implement this change in our model is to multiply $R_{c}$ by an appropriate factor, boosting the size of clusters, without changing the dispersion parameter $k$. Data from the period in which Delta was the prevalent strain is not available, but schools in the Canada and the US saw resurgences in clusters in schools around school openings (Cravey, 2021; Star staff wire services, 2021; CNN, 2021).
 
 Our data and model have some limitations. The data rely on crowdsourcing, and there is reason to believe that reporting is incomplete. Inequity may effect data collection, as wealthier districts are more likely to have the resources to identify and track transmission. In general, larger clusters may be more likely to be reported. In the modelling, we assumed a Poisson random variable for the cluster size, with an underlying gamma-distributed rate variable. This is a flexible model allowing for considerable overdispersion, but it is simple and does not explicitly handle complexities such as the differences between elementary and high schools. Our estimates of the transmission rate were derived (where feasible) from a model with a fixed number of hours that the index case would be infectious in the classroom, and fixed class sizes. Accounting for variation in these would result in more variability in the estimates.
 
-A major limitation of our analysis is how we assigned cases to clusters. Since the only data available was the number of cases reported on a given day at a school, we put cases in the same cluster if they occurred within 7 days of each other. The choice of 7 days was informed by the serial interval of COVID-19, but unavoidably, some cases will have been put in clusters that were not linked by transmission, whereas other that were linked were not put in the same cluster. Furthermore, we assumed that all clusters consisted of an index case and a number of other cases directly infected by the index case. In reality, there may be longer chains of transmission. Any of these assumptions may bias our estimates of the distribution of ν and β. Finally, our illustrative modelling of the impact of interventions was simple, and used simple assumptions for the impacts of masking, distancing, and cohorts (bubbling). Our estimates of the per-contact transmission rate per unit time could, however, be used in more sophisticated simulation modelling to compare interventions.
+A major limitation of our analysis is how we assigned cases to clusters. Since the only data available was the number of cases reported on a given day at a school, we put cases in the same cluster if they occurred within 7 days of each other. The choice of 7 days was informed by the serial interval of COVID-19, but unavoidably, some cases will have been put in clusters that were not linked by transmission, whereas other that were linked were not put in the same cluster. Furthermore, we assumed that all clusters consisted of an index case and a number of other cases directly infected by the index case. In reality, there may be longer chains of transmission. Any of these assumptions may bias our estimates of the distribution of $ν$ and $\beta$. Finally, our illustrative modelling of the impact of interventions was simple, and used simple assumptions for the impacts of masking, distancing, and cohorts (bubbling). Our estimates of the per-contact transmission rate per unit time could, however, be used in more sophisticated simulation modelling to compare interventions.
 
 Despite these limitations, our approach has distinct advantages. We have developed estimates of the person-to-person transmission rate derived directly from data. The data we use (cluster sizes) are relatively easy to access. This approach does not require individual-level data or contact tracing information, which are often not available; individuals may be identifiable and data are held within public health institutions. However, we note that if it were available, contact tracing data would be an excellent gold standard against which to check our assumptions about cluster identification. Our estimation approach, together with cluster size data, offers a high-resolution view of transmission: we can estimate the distribution of cluster sizes in specific settings, accounting for reporting and overdispersion, and in some contexts we can estimate the transmission rate, all without requiring either individual-level data or assumptions on transmission parameters such as the serial interval (see, in contrast, Cori et al., 2013; Wallinga and Teunis, 2004, which require serial interval estimates). The results offer context-specific tools to simulate interventions in particular settings (here, schools). The methods are readily generalizable to other structured settings, such as workplace outbreaks where workplaces are similar in size and structure. Our results also suggest the need for data collection activities that can relate cluster sizes to setting variables such as occupancy, density, ventilation, activity, and distancing behaviour. Ultimately this would provide the data needed to design interventions that best reduce school and/or workplace transmission.

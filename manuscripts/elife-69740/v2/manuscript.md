@@ -17,7 +17,7 @@
 
 ## Abstract
 
-Class A G-protein-coupled receptors (GPCRs) normally function as monomers, although evidence from heterologous expression systems suggests that they may sometimes form homodimers and/or heterodimers. This study aims to evaluate possible functional interplay of endogenous µ- and δ-opioid receptors (MORs and DORs) in mouse neurons. Detecting GPCR dimers in native tissues, however, has been challenging. Previously, MORs and DORs co-expressed in transfected cells have been reported to form heterodimers, and their possible co-localization in neurons has been studied in knock-in mice expressing genetically engineered receptors fused to fluorescent proteins. Here, we find that single cholinergic neurons in the mouse striatum endogenously express both MORs and DORs. The receptors on neurons from live brain slices were fluorescently labeled with a ligand-directed labeling reagent, NAI-A594. The selective activation of MORs and DORs, with DAMGO (µ-agonist) and deltorphin (δ-agonist) inhibited spontaneous firing in all cells examined. In the continued presence of agonist, the firing rate returned to baseline as the result of receptor desensitization with the application of deltorphin but was less observed with the application of DAMGO. In addition, agonist-induced internalization of DORs but not MORs was detected. When MORs and DORs were activated simultaneously with [Met 5 ]-enkephalin, desensitization of MORs was facilitated but internalization was not increased. Together, these results indicate that while MORs and DORs are expressed in single striatal cholinergic interneurons, the two receptors function independently.
+Class A G-protein-coupled receptors (GPCRs) normally function as monomers, although evidence from heterologous expression systems suggests that they may sometimes form homodimers and/or heterodimers. This study aims to evaluate possible functional interplay of endogenous µ- and δ-opioid receptors (MORs and DORs) in mouse neurons. Detecting GPCR dimers in native tissues, however, has been challenging. Previously, MORs and DORs co-expressed in transfected cells have been reported to form heterodimers, and their possible co-localization in neurons has been studied in knock-in mice expressing genetically engineered receptors fused to fluorescent proteins. Here, we find that single cholinergic neurons in the mouse striatum endogenously express both MORs and DORs. The receptors on neurons from live brain slices were fluorescently labeled with a ligand-directed labeling reagent, NAI-A594. The selective activation of MORs and DORs, with DAMGO (µ-agonist) and deltorphin (δ-agonist) inhibited spontaneous firing in all cells examined. In the continued presence of agonist, the firing rate returned to baseline as the result of receptor desensitization with the application of deltorphin but was less observed with the application of DAMGO. In addition, agonist-induced internalization of DORs but not MORs was detected. When MORs and DORs were activated simultaneously with [Met5]-enkephalin, desensitization of MORs was facilitated but internalization was not increased. Together, these results indicate that while MORs and DORs are expressed in single striatal cholinergic interneurons, the two receptors function independently.
 
 ## Introduction
 
@@ -29,15 +29,23 @@ Thus, in the present study, we used a novel labeling approach combined with imag
 
 ## Results
 
-## Ligand-directed labeling of opioid receptors
+### Ligand-directed labeling of opioid receptors
 
 Naltrexamine-acylimidazole-alexa594 (NAI-A594; Figure 1A–a) is a labeling reagent that has been shown to specifically bind opioid receptors and then covalently tag them with the fluorophore Alexa-594 to MORs in brain slices (Arttamangkul et al., 2019). The labeling of this molecule is based on traceless affinity labeling approach (Hayashi and Hamachi, 2012; Shiraiwa et al., 2020), in which the naltrexamine moiety acts as a ligand that guides specific binding to opioid receptors. Once bound, the fluorophore is transferred to the receptor by the reaction of the acylimidazole group with an amino acid side chain nucleophile, and at the same time, the guide ligand (naltrexamine) is cleaved and released from the binding pocket (Figure 1A–b).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69740/elife-69740-fig1-v2.jpg)
+
+**Figure 1.:** (A) Covalent labeling of opioid receptors with NAI compounds. (a) Chemical structure of naltrexamine-acylimidazole-alexa594 (NAI-A594). (b) Diagram of traceless labeling shown in two steps. Step 1, NAI compound binds and reacts with the receptor. Step 2, washing of naltrexamine moiety released from the reaction. (B) Live images of rat striatum incubated for 1 hr in (a) 100 nM NAI-A594, (b) 100 nM NAI-A594 plus 1 μM ICI-174,864, (c) 100 nM NAI-A594 plus 1 μM CTAP, and (d) zoom area of patch-like structure in the dorsal part of striatum showing a large neuron believed to be the cholinergic interneuron at the boundary of the patch. (C) Near infrared western blots of HEK293 cells expressing FDOR and FMOR labeled with 30 and 100 nM NAI-A488 in the absence and presence of 10 μM naloxone, shown in a merge channel. The FLAG-epitope on opioid receptors was detected with anti-FLAG M1 (red), and the NAI-A488 modification of the receptors was identified with rabbit anti-Alexa Fluor 488 antibody (green). (D) Concentration-dependent curves of FDOR and FMOR labeled with NAI-A488. The fluorescence intensity ratios of NAI-A488 (784 nm of secondary antibody to IR dye CW800) over anti-Flag M1 (658 nm of secondary antibody conjugated to Alexa680) were plotted against NAI-A488 concentrations. The graph shows labeling curves performed in triplicate from one of three experiments. Data are shown as mean ± SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69740/elife-69740-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Single channel of the merged image shown in Figure 1C. (B) On-cell western analysis shows concentration dependence of NAI-A488 labeling FDOR and FMOR cells. The labeling was done in the absence and presence of 10 μM naloxone. Fluorescence intensities were measured with AzureSpot software.
 
 The labeling of striatal slices from wild-type rats with NAI-A594 revealed striosomal patches, regions that are known to contain abundant MORs (Figure 1B–a and Arttamangkul et al., 2019). The MOR-binding sites in the patches persisted when DORs were blocked with a selective antagonist ICI-174,864 (Figure 1B-b). In contrast, fluorescent labeling of the whole striatum was greatly diminished when the MOR selective antagonist, CTAP, was included in NAI-A594 solution (Figure 1B–c). These results suggest that most of the labeling in the striatum were at MORs. Large neurons with a few dendrites near the boundary of the striosomal patches were also fluorescently tagged (Figure 1B–d). The cell morphology and location of these neurons suggested that they were most likely ChI neurons (Brimblecombe and Cragg, 2016). The labeled receptors on these large neurons, however, could be either MORs or DORs, due to the ability of NAI-A594 to label both receptors (Arttamangkul et al., 2019).
 
 To verify the comparable labeling of MORs and DORs with NAI-A594, a series of biochemical experiments were done using Flag-tagged MOR (FMOR) and Flag-tagged DOR (FDOR) cells. Naltrexamine-acylimidazole-alexa488 (NAI-A488), was used to detect the labeled receptors with an anti-Alexa488 antibody, and an anti-Flag antibody was used as a control for comparison in a western blot analysis. The results showed that NAI-A488 at 30 and 100 nM reacted similarly with both receptors (Figure 1C, Figure 1—figure supplement 1A and Figure 1—figure supplement 1—source data 1 and Figure 1—figure supplement 1—source data 2, for red and green bands, respectively). The labeling of FDOR and FMOR by NAI-A488 was specific, as it could be completely blocked by addition of the opioid antagonist naloxone (Figure 1C). The fact that Alexa488-labeled receptors are detected even after denaturing gel electrophoresis confirms that the fluorophore is covalently bound to the receptors. The ability of NAI-A488 to label FDOR and FMOR was further analyzed by comparing concentration labeling curves of each receptor using an on-cell western assay (Figure 1D, Figure 1—figure supplement 1—source data 3, Figure 1—figure supplement 1—source data 4, Figure 1—figure supplement 1—source data 5). The labeling curves for NAI-A488 reacted FDORs and FMORs were similar and saturated at about 100 nM. The labeling coefficients were also comparable, with apparent Kd values of 7.1 ± 2.8 nM for FDOR and 3.3 ± 0.7 nM for FMOR (two-tailed, unpaired t-test, p = 0.2543, n = 3 experiments performed in triplicate). Thus, the fluorescent NAI compound effectively and covalently labeled MORs and DORs.
 
-## Labeling of MORs and DORs on cholinergic interneurons with NAI-A594
+### Labeling of MORs and DORs on cholinergic interneurons with NAI-A594
 
 To determine which opioid receptors are present on the striatal ChIs, brain slices from transgenic ChAT(BAC)-eGFP mice were used to identify ChIs. As previously observed, patch-like structures were present in the striatum of the ChAT-GFP mice following incubation with NAI-A594 (Figure 2A). The ChAT-GFP neurons were found scattered throughout the striatum (Figure 2B). The plasma membrane of GFP-positive perikarya, dendrites and axon terminals were also Alexa 594 positive (Figure 2C&E for NAI-A594 staining and D&F for the merged images of NAI-A594 labeling and GFP). There are GFP-negative neurons, presumably medium spiny neurons that were also labeled with NAI-A594 (Figure 2C&D).
 
@@ -47,9 +55,17 @@ To determine which opioid receptors are present on the striatal ChIs, brain slic
 
 Live-cell imaging experiments revealed all GFP-positive neurons reacted with NAI-A594 (n = 246 from seven male and six female mice). Figure 3A shows example images of GFP-positive cells labeled with NAI-A594 alone, and NAI-A594 in the presence of µ-selective antagonist CTAP (1 µM) such that DORs alone were identified. In experiments with NAI-A594 in the presence of δ-selective antagonist SDM25N (0.5 µM), MORs were specifically detected. The results show a partial decrease of the fluorescence on the plasma membrane of CTAP-treated neurons as compared to experiments with NAI-A594 alone (see Figure 3A–b and Figure 3A-a). In the presence of SDM25N, the fluorescence staining was further reduced as compared to CTAP-treated cells (Figure 3A–c and Figure 3A-b). Finally, the combination of SDM25N and CTAP completely blocked the labeling of ChAT-GFP neurons (Figure 3A–d).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/69740/elife-69740-fig3-v2.jpg)
+
+**Figure 3.:** (A) Examples of single ChAT-GFP positive cell showing staining of NAI-A594 under different conditions: (a) NAI-A594, (b), NAI-A594+ CTAP, (c) NAI-A594+ SDM25 N, and (d) NAI-A594+ CTAP and SDM25N. The upper panel are images from Alexa594 channel, and the bottom panel are the merged images of GFP (blue) and Alexa594 (gray). (B) Diagram images illustrate the method of measurement of surface membrane fluorescent intensity. Left is the raw signal of a neuron labeled with NAI-A594. Middle shows outline boundary derived from GFP signal and thresholding using ImageJ (details in Materials and methods). Right, the fluorescent intensities of Alexa594 channel are measured along the outline drawn in the GFP channel and superimposed onto the raw image. The lines drawn here are enlarged for illustration. The true thickness of line is ~0.08 μm or one pixel. (C) Summarized results of fluorescent intensities in each labeling condition. Dorsal and ventral areas are defined according to the mouse brain atlas (Franklin and Paxinos, 2007). All data are shown in mean ± SD, and statistical analyses using ordinary one-way ANOVA and Sidak’s post-test for multiple comparisons. (D) Distribution maps of the observed ChIs, in which fluorescent intensities were measured in different conditions. Data are presented as combined results from both male and female. Color codes represent the range of fluorescent intensities (in Arbitrary Units, AU) shown in (C).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69740/elife-69740-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Summary data show that fluorescent intensities in each labeling condition do not differ between male and female mice. Solid dot = male and open dot = female. Data are shown as mean ± SD. Statistical analyses using ordinary one-way ANOVA, Sidak’s post test showed no difference between male and female in each treatment. (B) Comparison of fluorescent intensities after labeling of the ChAT-GFP neurons with NAI-A594 plus CTAP and after labeling of ChI neurons from MOR knockout mice with NAI-A594 alone. Because there is no GFP in MOR knockout cells, both measurements were done manually by drawing the outline corresponding to the Alexa594 signals of both MORKO and ChAT-GFP neurons. ChIs from these animals were identified by their morphology of larger size than nearby neurons. Data are shown as mean ± SD and p values were calculated by one-way ANOVA with Sidak’s post test.
+
 To estimate the relative amount of MORs and DORs on ChAT-GFP neurons, the fluorescent intensity of Alexa594 on an individual ChAT-GFP neuron was measured in different parts of the striatum. Results are presented as mean fluorescence of Alexa 594 along the plasma membrane of the cell body (pink line derived from rendering of the cytoplasmic GFP signal in Figure 3B). The results from male and female mice were not different (Figure 3—figure supplement 1A: Figure 3—figure supplement 1—source data 1), thus the data were pooled. Average mean fluorescence intensity of NAI-A594-labeled cells in the dorsal striatum was ~20 % higher than in ventral striatum (mean fluorescence± SD = 170.7 ± 57.6 for dorsal, n = 52 and 140.9 ± 47.6 for ventral n = 47; ordinary one-way ANOVA, Sidak’s test, p = 0.0100 and n = numbers of GFP-positive neurons, Figure 3C, Figure 3—source data 1). When DOR was measured by co-incubating with NAI-A594 plus CTAP, the fluorescent intensity on neurons in the dorsal striatum was reduced to 68% of that observed with NAI-A594 alone (mean fluorescence± SD = 115.5 ± 49.7, n = 41 as compared to the mean fluorescence of NAI-A594 = 170.7 ± 57.6 for dorsal, n = 52; p < 0.0001, Figure 3C). Similarly, the fluorescence of neurons in the ventral striatum was reduced to 61% of NAI-A594 alone (mean fluorescence± SD = 85.8 ± 47.3, n = 35 as compared to the mean fluorescence of NAI-A594 = 140.9 ± 47.6 for ventral, n = 47; p < 0.0001, Figure 3C). Fluorescence of Alexa594-labeled ChAT-GFP neurons in the presence of CTAP was found to be similar to the labeling of the cholinergic neurons from MOR knockout mice (Figure 3—source data 1: Figure 3—figure supplement 1—source data 2), suggesting that the blockade of NAI-A594 labeling at MORs by CTAP was sufficient. Interestingly, when the detection of MOR was determined by NAI-A594 in the presence of SDM25N, the fluorescent intensity of labeled cells was only ~37% and ~ 47% of that observed with NAI-A594 alone in the dorsal and ventral striatum, respectively (mean fluorescence± SD = 63.9 ± 19.5, n = 48 as compared to the mean fluorescence of NAI-A594 = 170.7 ± 57.6, n = 52 for dorsal, and 65.7 ± 25.5, n = 22 as compared to the mean fluorescence of NAI-A594 = 140.9 ± 47.6, n = 47 for ventral; p < 0.0001 for both, Figure 3C). There was a large difference between fluorescent staining of DOR and MOR in dorsal part of the striatum (115.5 ± 49.7, n = 41 for DOR vs. 63.9 ± 19.5, n = 48 for MOR, one-way ANOVA, p < 0.0001), while the relative fluorescence of DOR and MOR in the ventral striatum was comparable (85.8 ± 47.3, n = 35 for DOR vs. 65.7 ± 25.5, n = 22 for MOR, p = 0.612, Figure 3C). Thus, these results indicate that: (i) cholinergic interneurons contain both MORs and DORs and (ii) expression of DORs appears to be higher than MORs in the dorsal striatum but not different from MORs in the ventral striatum. Figure 3D shows the distribution map of NAI-A594 labeled ChAT-GFP-positive neurons.
 
-## Inhibition of ChI spontaneous firing by MOR and DOR agonists
+### Inhibition of ChI spontaneous firing by MOR and DOR agonists
 
 Cholinergic interneurons are spontaneously active in mouse brain slice preparations with a firing rate of 1–2 Hz (Ponterio et al., 2013). Cell attached extracellular recordings were used to measure the firing activity and the action of MOR and DOR agonists. All recordings were made in the ventral striatum because of the similar expression of MOR and DOR. The average spontaneous firing rate of the GFP-positive neurons was 1.5 ± 0.1 Hz (n = 9 cells from three male and three female mice). Figure 4 shows a representative trace and time-course of firing rate (15-second binning) during agonist and antagonist application. The µ-agonist, DAMGO (1 µM) completely inhibited firing, and this inhibition was reversed following application of CTAP (1 µM). Subsequent application of the δ-agonist, deltorphin (1 µM) also stopped firing and this was reversed by SDM25N (0.5 µM, Figure 4A). The inhibition of firing induced by muscarine (10 µM) was included as a control. The results indicate that ChIs co-express functional MORs and DORs.
 
@@ -59,15 +75,103 @@ Cholinergic interneurons are spontaneously active in mouse brain slice preparati
 
 The inhibition of firing induced by opioid agonists was also studied in neurons from wild-type C57/B6 mice. ChIs were identified by the cell morphology and regular firing activity. As in experiments with the slices from the ChAT-GFP mice, neurons in slices from wild-type animals were responsive to consecutive application of DAMGO and deltorphin (n = 19 cells, from four female and six male mice, data not shown). Each opioid agonist decreased the spontaneous firing and is reported as a percent inhibition, calculated by measuring the firing activity before (baseline) and at 1–2 min following agonist application (Table 1).
 
+**Table 1.**
+ Activation and desensitization by opioids.Table 1—source data 1.Spontaneous firing inhibition (%) and desensitization induced by agonists.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Agonists</th>
+      <th>Inhibition of firing (%)*</th>
+      <th>Desensitization (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DAMGO (10 μM)</td>
+      <td>98.7 ± 0.9 (n = 11, 4 M,3F)</td>
+      <td>32.1 ± 5.8 (n = 11)†</td>
+    </tr>
+    <tr>
+      <td>DAMGO (1 μM)</td>
+      <td>98.0 ± 1.2 (n = 7, 2 M,4F)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DAMGO (1 μM) after Deltorphin (1 μM)‡</td>
+      <td>93.5 ± 6.1 (n = 5, 1 M,2F)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DAMGO (1 μM) after ME (1 or 10 μM)‡</td>
+      <td>36.4 ± 6.0 (n = 7, 3 M,3F)§</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Deltorphin (1 μM)</td>
+      <td>96.6 ± 2.7 (n = 10, 2 M,2F)</td>
+      <td>86.7 ± 6.4 (n = 7)</td>
+    </tr>
+    <tr>
+      <td>Deltorphin (1 μM) after DAMGO (10 μM)‡</td>
+      <td>89.8 ± 5.8 (n = 6, 3 M,2F)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Deltorphin (1 μM) after ME (10 μM)‡</td>
+      <td>18.3 ± 3.4(n = 5, 1 M,2F)¶</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ME (10 μM)</td>
+      <td>99.4 ± 0.6 (n = 11, 3 M,3F)</td>
+      <td>83.0 ± 6.0 (n = 8)</td>
+    </tr>
+    <tr>
+      <td>ME (1 μM)</td>
+      <td>92.6 ± 2.6 (n = 12, 6 M,2F)</td>
+      <td>79.9 ± 9.9 (n = 5)</td>
+    </tr>
+    <tr>
+      <td>ME (1 μM)+ CTAP (1 μM)</td>
+      <td>97.7 ± 1.4 (n = 6, 2 M,1F)</td>
+      <td>76.8 ± 8.4 (n = 6)</td>
+    </tr>
+    <tr>
+      <td>ME (1 μM)+ SDM (1 μM)</td>
+      <td>97.3 ± 1.7 (n = 6, 4 M)</td>
+      <td>26.1 ± 8.8 (n = 5)</td>
+    </tr>
+    <tr>
+      <td>Morphine (10 μM)</td>
+      <td>79.4 ± 5.0 (n = 10, 4 M)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Morphine (1 μM)</td>
+      <td>48.9 ± 8.3 (n = 8, 4 M)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Morphine (10 μM)+ CTAP (1 μM)</td>
+      <td>10.0 ± 3.7 (n = 7, 4 M)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*n = number of cells (one cell per slice), and numbers of male (M) and female (F) used in the experiments are shown in parentheses.†p < 0.0001 compared to desensitization induced by Deltorphin (1 μM).‡Inhibition of firing after agonist-induced desensitization.§p < 0.0001 compared to firing inhibition of DAMGO (1 μM).¶p < 0.0001 compared to firing inhibition of Deltorphin (1 μM)._
+
 The firing frequency of ChIs from wild-type mice was similar to that of ChAT-GFP (1.4 ± 0.1 Hz, n = 67 cells from fourteen male and eleven female mice, compared to the firing rate of ChAT-GFP neurons of 1.5 ± 0.1 Hz, n = 9 cells, two-tailed, unpaired t-test, p = 0.6490). DAMGO (1 µM) caused an inhibition of firing activity by 98.0% ± 1.2% (n = 7) and increasing the concentration to (10 µM) had no further effect (Table 1). Deltorphin (1 µM) also caused a total inhibition of firing (96.6% ± 2.7% n = 10). Application of a saturating concentration of [Met5]-enkephalin (ME, 10 µM) resulted in a complete inhibition of the spontaneous firing (99.4% ± 0.6%, n = 11) and ME (1 µM) reduced the firing by 92.6% ± 2.6% of baseline (n = 12). Because ME acts on MORs and DORs (Gomes et al., 2020), selective antagonists were used to identify the receptor. When CTAP was used to block activity of MORs, ME (1 µM) inhibited the firing activity by 97.7% ± 1.4% (n = 6) (Table 1, Table 1—source data 1). When DORs were blocked with SDM25N, ME (1 µM) reduced the firing rate by 97.3% ± 1.7% (n = 6, Table 1). Thus, as expected, ME acted on both receptors. Morphine (10 µM) only partially decreased the firing by 79.4% ± 5.0% (n = 10) and morphine (1 µM) reduced the firing rate by 48.9% ± 8.3% (n = 8) (Table 1). In addition, CTAP blocked the inhibition induced by morphine (10.0% ± 3.7% inhibition in 10 µM morphine +1 µM CTAP, n = 7) (Table 1). The results from these experiments provide further evidence of individual activation of MORs and DORs in ChIs by various opioids.
 
-## Receptor desensitization
+### Receptor desensitization
 
 The application of saturating concentrations of efficacious agonist commonly results in the desensitization of MORs and DORs in many brain areas (Williams et al., 2013; Gendron et al., 2016). We next used the inhibition of firing rate induced by DAMGO and deltorphin to determine the extent of MOR and DOR desensitization. Desensitization was calculated from the difference of percent inhibition of firing inhibition at 5 min and the percent maximal inhibition at 1–2 min. Deltorphin (1 μM) initially stopped the firing and within 3–5 min the firing returned toward baseline (Figure 5A, top trace). Thus, deltorphin triggered significant desensitization to 86.7% ± 6.4% (n = 7, Table 1). In contrast, DAMGO (10 μM) induced only 32.1% ± 5.8 % desensitization (n = 11, Figure 5A bottom trace, Table 1). Together, these results indicate that DORs significantly desensitize within 5 min whereas MORs are more resistant to desensitization (Figure 5B, Figure 5—source data 1, one-way ANOVA with Sidak’s multiple comparisons test, p < 0.0001).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/69740/elife-69740-fig5-v2.jpg)
 
-**Figure 5.:** (A) Top trace shows spontaneous firing of ChI neurons during 5 min application of the DOR selective agonist Deltorphin (1 µM) that caused 100% inhibition of the firing during the first 1–2 min and the firing activity gradually returned to nearly baseline during the last 3 min of continuous application of the agonist, an indication of desensitization. Bottom trace. In contrast, the selective agonist DAMGO caused the persistent inhibition of the firing throughout its 5 min application. (B) Summary results of desensitization by Deltorphin, DAMGO, ME (1 and 10 µM) and ME (1 µM) with selective antagonists, CTAP (1 µM) and SDM25N (0.5 µM). (C) Top trace, desensitization of DORs by deltorphin did not change the ability of DAMGO to stop the firing that was reversed by naloxone. Middle trace shows similar experiment in which DAMGO caused little desensitization and subsequent application of deltorphin also inhibited the firing. Bottom trace illustrates the experiment when desensitization by ME decreased the ability of DAMGO to inhibit the firing. Time courses of each experiment plotted as the number of spikes binned every 15 s are shown next to the activity traces. (D) Desensitization by ME is very different when co-incubated with CTAP or SDM25N. Top trace shows ME desensitization in CTAP developed quickly. Middle trace shows no or little desensitization occurred during application of ME plus SDM25N. Bottom trace represents desensitization caused by ME alone. (E) The graph shows change of % inhibition of firing activity during 5-min application of ME in different conditions, Two-way ANOVA showed ** p = 0.0040 and **** p < 0.0001. (F) Summary of firing inhibition shown in pink, the ability of DAMGO (1 μM) to inhibit ChI firing activity was reduced after pre-desensitization by ME (1 μM) but not deltorphin (1 μM) as compared to the inhibition without pre-desensitization (p < 0.0001 and p = 0.9343, respectively), and in blue, the inhibition of firing by deltorphin (1 μM) was attenuated after pre-desensitization by ME (p < 0.0001) but was not different after pre-desensitization by DAMGO (p = 0.6687) as compared to the inhibition without pre-desensitization.Figure 5—source data 1.Figure 5—source data 2.Figure 5—source data 3.
+**Figure 5.:** (A) Top trace shows spontaneous firing of ChI neurons during 5 min application of the DOR selective agonist Deltorphin (1 µM) that caused 100% inhibition of the firing during the first 1–2 min and the firing activity gradually returned to nearly baseline during the last 3 min of continuous application of the agonist, an indication of desensitization. Bottom trace. In contrast, the selective agonist DAMGO caused the persistent inhibition of the firing throughout its 5 min application. (B) Summary results of desensitization by Deltorphin, DAMGO, ME (1 and 10 µM) and ME (1 µM) with selective antagonists, CTAP (1 µM) and SDM25N (0.5 µM). (C) Top trace, desensitization of DORs by deltorphin did not change the ability of DAMGO to stop the firing that was reversed by naloxone. Middle trace shows similar experiment in which DAMGO caused little desensitization and subsequent application of deltorphin also inhibited the firing. Bottom trace illustrates the experiment when desensitization by ME decreased the ability of DAMGO to inhibit the firing. Time courses of each experiment plotted as the number of spikes binned every 15 s are shown next to the activity traces. (D) Desensitization by ME is very different when co-incubated with CTAP or SDM25N. Top trace shows ME desensitization in CTAP developed quickly. Middle trace shows no or little desensitization occurred during application of ME plus SDM25N. Bottom trace represents desensitization caused by ME alone. (E) The graph shows change of % inhibition of firing activity during 5-min application of ME in different conditions, Two-way ANOVA showed ** p = 0.0040 and **** p < 0.0001. (F) Summary of firing inhibition shown in pink, the ability of DAMGO (1 μM) to inhibit ChI firing activity was reduced after pre-desensitization by ME (1 μM) but not deltorphin (1 μM) as compared to the inhibition without pre-desensitization (p < 0.0001 and p = 0.9343, respectively), and in blue, the inhibition of firing by deltorphin (1 μM) was attenuated after pre-desensitization by ME (p < 0.0001) but was not different after pre-desensitization by DAMGO (p = 0.6687) as compared to the inhibition without pre-desensitization.
 
 The interaction between the desensitization of DORs and activation of MORs was next examined by the application of deltorphin (1 µM, 5 min) followed by DAMGO (1 µM, Figure 5C top trace). Desensitization caused by deltorphin (1 µM) did not change the ability of DAMGO (1 µM) to fully inhibit the firing rate (93.5% ± 6.1% inhibition after deltorphin, n = 5 compared to 98.0% ± 1.2% inhibition without deltorphin pre-treatment, n = 7, one-way ANOVA, Sidak’s multiple comparions, p = 0.9343, Figure 5F, Figure 5—source data 3). The reverse experiment where DAMGO (10 µM) was applied first followed by deltorphin (1 µM) was examined next (Figure 5C -middle trace and Figure 5F). There was a small return of firing due to DAMGO-induced desensitization and the subsequent application of deltorphin caused an inhibition. The inhibition induced by deltorphin after DAMGO was not statistically different from the inhibition of deltorphin without DAMGO pre-treatment (81.6% ± 6.2% of DAMGO pre-desensitized, n = 5, as compared to 96.6% ± 2.7% of control, n = 10, p = 0.6687, Figure 5F). These results suggest that MORs and DORs are functionally independent and that there is no major long-lasting cross desensitization between the receptors by selective agonists.
 
@@ -77,13 +181,13 @@ These results were surprising because the above findings predict that activation
 
 These results suggest that when ME interacts with both MORs and DORs at the same time, MOR desensitization is augmented. To test this assumption, we measured the ability of DAMGO (1 µM) to inhibit the firing rate after ME-induced desensitization (Figure 5C bottom trace). The results show a substantial reduction in the inhibition as compared to the control result of DAMGO alone (36.4% ± 6.0% inhibition after ME, n = 7 vs. 98.0% ± 1.2% of DAMGO alone, n = 7, one-way ANOVA, p < 0.0001, Figure 5F and Table 1). In addition, the ability of deltorphin (1 µM) to inhibit the firing rate after ME desensitization was also reduced (18.3% ± 3.4%, n = 5 inhibition after ME vs. 96.6 ± 2.7, n = 10 of deltorphin alone, one-way ANOVA, p < 0.0001, Figure 5F and Table 1). Thus, ME caused desensitization at both MORs and DORs, and desensitization of MORs could be accelerated by DOR desensitization.
 
-## Receptor internalization
+### Receptor internalization
 
 One possible explanation for the increase of MOR desensitization when MOR and DOR are simultaneously activated could be co-internalization of both induced by ME. To test for this, we used live cell imaging to examine agonist-induced internalization of endogenous MORs and DORs labeled with NAI-A594 in ChAT-GFP mice. Labeled ChI neurons were first imaged once before agonist application (time = 0 min, Figure 6A - top panel). A saturating concentration of each agonist was applied for 20 min followed by a 10-minute washout before a second image was taken. The control group was treated with only buffer for the same time and images captured at 0 min and 30 min. Fluorescence in the cytoplasm and at the plasma membrane before (F0) and after agonist (F) was measured and used to determine the amount of endocytosis. Figure 6A showed the images of cells before (top panel) and after treatment with different agonists and buffer control (bottom panel). The measurement of fluorescence in the cytoplasm and at the plasma membrane was determined by making an outline of the cells based on the GFP signal (Figure 6B).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69740/elife-69740-fig6-v2.jpg)
 
-**Figure 6.:** (A) Images show receptor redistribution induced by different agonists. Upper panel shows images taken before agonist application. Each slice was incubated in NAI-A594 100 nM for 1 hr and washed with Kreb’s buffer with continuous bath-perfusion for 10–15 min before acquiring the image. Lower panels show images taken after agonist application by bath-perfusion for 20 min and following 10 min of buffer. The control experiment was treated with buffer alone for 30 min. (B) Diagram images show measurements of fluorescent intensities along the plasma membrane and inside the cytoplasm using ImageJ. Raw images of one optical slice of a neuron taken simultaneously are shown for GFP (a) and Alexa594 (b). The GFP signal is used to define an outline of plasma membrane (c). This outline is copied to the image of Alexa594 signals (d). The outline of cytoplasm is then dilated eight pixels (~0.6 μm) and the inner line is used to define the area of cytoplasm where internalization is taking place (cyan shade area in (e)). Mean fluorescent intensity along the outline of plasma membrane is measured as F-memb (pink line). Mean fluorescent intensity in the area of cytoplasm is measured as F-cyt (cyan shade area). The ratio values of F-memb/(F-memb+ F cyt) and F-cyt/(F-memb+ F cyt) are then calculated for F/F0. F is the ratio value after agonist application and F0 is the value before agonist application. (C) Summary of fluorescent intensity changes in cytoplasm (top) and plasma membrane (bottom) of neurons treated with agonists. Data shown as mean ± SEM compared to buffer control group, one-way ANOVA, Dunnett’s test p < 0.0001 (****) and p = 0.0002 (***) as compared to control group. ME = [Met5] enkephalin, Delt = deltorphin.Figure 6—source data 1.
+**Figure 6.:** (A) Images show receptor redistribution induced by different agonists. Upper panel shows images taken before agonist application. Each slice was incubated in NAI-A594 100 nM for 1 hr and washed with Kreb’s buffer with continuous bath-perfusion for 10–15 min before acquiring the image. Lower panels show images taken after agonist application by bath-perfusion for 20 min and following 10 min of buffer. The control experiment was treated with buffer alone for 30 min. (B) Diagram images show measurements of fluorescent intensities along the plasma membrane and inside the cytoplasm using ImageJ. Raw images of one optical slice of a neuron taken simultaneously are shown for GFP (a) and Alexa594 (b). The GFP signal is used to define an outline of plasma membrane (c). This outline is copied to the image of Alexa594 signals (d). The outline of cytoplasm is then dilated eight pixels (~0.6 μm) and the inner line is used to define the area of cytoplasm where internalization is taking place (cyan shade area in (e)). Mean fluorescent intensity along the outline of plasma membrane is measured as F-memb (pink line). Mean fluorescent intensity in the area of cytoplasm is measured as F-cyt (cyan shade area). The ratio values of F-memb/(F-memb+ F cyt) and F-cyt/(F-memb+ F cyt) are then calculated for F/F0. F is the ratio value after agonist application and F0 is the value before agonist application. (C) Summary of fluorescent intensity changes in cytoplasm (top) and plasma membrane (bottom) of neurons treated with agonists. Data shown as mean ± SEM compared to buffer control group, one-way ANOVA, Dunnett’s test p < 0.0001 (****) and p = 0.0002 (***) as compared to control group. ME = [Met5] enkephalin, Delt = deltorphin.
 
 ME (10 µM) caused a visible redistribution of the labeled receptors from plasma membrane into the cytoplasm. Fluorescent puncta were found throughout the cell body of the neuron (Figure 6A–a). The F/F0 in the cytoplasm from the ME-treated neurons was significantly higher than F/F0 of cells perfused with buffer alone (1.49 ± 0.05 for ME, n = 9 and 1.13 ± 0.03 for control, n = 8, one-way ANOVA, Dunnett’s test, p < 0.0001, Figure 6C, top). Deltorphin (1 µM) was used to induce endocytosis of DORs (Figure 6A–b). The change of fluorescence in the cytoplasm from deltorphin-treated cells was also greater than in the buffer control group (F/F0 = 1.38 ± 0.04 for deltorphin, n = 7 vs 1.13 ± 0.03 for control, n = 8, one-way ANOVA, Dunnett’s test, p = 0.0002, Figure 6C, top: Figure 6—source data 1). Surprisingly, the MOR selective agonist DAMGO (10 μM) caused little or no redistribution of receptors (Figure 6A-c ), and the F/F0 of the cytoplasm was the same as that of the buffer control group (1.13 ± 0.03, n = 7 DAMGO vs. 1.13 ± 0.03 control, n = 8, one-way ANOVA, Dunnett’s test, p > 0.9999, Figure 6C, top).
 
@@ -111,44 +215,194 @@ In summary, the results in this study illustrate co-existence of endogenous MOR 
 
 ## Materials and methods
 
-## Drugs and chemicals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>R.norvegicus, Sprague Dawley, male and female</td>
+      <td>Charles River Laboratories</td>
+      <td>Stock# 001RRID:RGD_734476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>M. musculus, C57BL/6 J, male and female</td>
+      <td>Jackson Laboratories</td>
+      <td>Stock# 000664RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>M. musculusC57BL/6 J (ChAT-BAC-eGFP)</td>
+      <td>Jackson Laboratories</td>
+      <td>Stock # 007902RRID:IMSR_JAX:007902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>M. musculus C57BL/6 J MOR-KO</td>
+      <td>Schuller et al., 1999</td>
+      <td>Oprm1-exon-1 knockout mice</td>
+      <td>Dr. John E. Pintar, RWJMS</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>Homo sapiens HEK293, female</td>
+      <td>ATCC</td>
+      <td>CRL-1573:RRID:CVCL_0045</td>
+      <td>Human embryonic kidney</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag-M1 (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat#F-3040RRID:AB_439712</td>
+      <td>1:600</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Alexa Fluor 488 (rabbit polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#A-11094RRID:AB_221544</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat-anti mouse IgG Alexa 680</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#A28183RRID:AB_2536167</td>
+      <td>1:5,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat-anti rabbit IgG IRDYE CW800</td>
+      <td>LI-COR</td>
+      <td>Cat#P/N 926–32211RRID:AB_621843</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NAI-A594 and NAI-A488</td>
+      <td>Arttamangkul et al., 2019</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[Met5]-enkephalin</td>
+      <td>GenScript</td>
+      <td>Cat# RP10886</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Morphine</td>
+      <td>NIDA</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CTAP</td>
+      <td>Sigma</td>
+      <td>Cat# C6352</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SDM25N</td>
+      <td>Tocris</td>
+      <td>Cat# 1,410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Naloxone HCl</td>
+      <td>Hello Bio</td>
+      <td>Cat# HB2451</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, drug</td>
+      <td>DAMGO</td>
+      <td>Hello Bio</td>
+      <td>Cat# HB2409</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[D-Ala2]-Deltorphin II</td>
+      <td>Tocris</td>
+      <td>Cat# 1,180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ScanImage</td>
+      <td>Vidrio Technologies, LLC</td>
+      <td>ScanImageRRID:SCR_014307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji Image J</td>
+      <td>Rueden et al., 2017</td>
+      <td>FijiRRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drugs and chemicals
 
 NAI-A594 and NAI-A488 were synthesized as previously described (Arttamangkul et al., 2019). 20 nmole of NAI-A594 and NAI-A488 were aliquoted and kept in dried-pellet form at –20 °C until used. A stock solution of 100 µM in 2% DMSO-water was made and used within one week. The following reagents were purchased from companies as indicated in parentheses: DAMGO, naloxone and (+)MK-801 (Hello Bio, Princeton, NJ), [DAla2]-Deltorphin II and SDM25H HCl (Tocris, Minneapolis, MN), [Met5]enkephalin (Genscript, Piscataway, NJ), CTAP (Sigma, St. Louis, MO). Morphine alkaloid was obtained from National Institute on Drug Abuse, Neuroscience Center (Bethesda, MD) and was dissolved in a few drops of 0.1 M HCl and an adjusted volume of water to make a stock solution of 10 mM. All salts to make artificial cerebrospinal fluid (ACSF) used in electrophysiological experiments were purchased from Sigma. Drugs were diluted to the tested concentrations in (ACSF) and applied by bath-perfusion.
 
-## Animals
+### Animals
 
 All animals were handled in accordance with the National Institutes of Health guidelines and with approval from the Institutional Animal Care and Use Committee of OHSU. Mice (21–28 days), both male and female, on a C57BL/6 J background were used for all genotypes. ChAT(BAC)-eGFP transgenic mice were purchased from the Jackson Laboratory (Bar Harbor, ME) and the homozygous pairs were bred. Wild-type mice were raised from breeders obtained from the Jackson Laboratory. MOR-KO (Oprm1 gene) mice were gifted from Dr. John Pintar (Schuller et al., 1999). Juvenile Sprague-Dawley rats (21–28 days), both male and female, were raised from two breeding pairs that were purchased from Charles River Laboratories (Wilmington, MA).
 
-## Chemical labeling of endogenous MOR and DOR in brain slices
+### Chemical labeling of endogenous MOR and DOR in brain slices
 
 Rats and mice were anesthetized with isoflurane and brains were removed and placed in warm (30 °C) oxygenated ACSF plus MK-801 (0.03 mM). Brain slices were prepared (280 µm thickness) using a vibratome (Leica, Nussloch, Germany). The slices containing striatum between bregma 0.38–1.4 mm of mouse brain and 0.6–2 mm of rat brain were collected and allowed to recover in oxygenated warm ACSF (34 °C) containing 10 µM MK-801 for 30 min. Slices were then hemisected. One half was incubated in oxygenated ACSF containing 100 nM NAI-A594 for 1 hr at room temperature. In a separate vial, the other half of brain slice was also incubated for 1 hr at room temperature in the solution of 100 nM NAI-A594 plus CTAP (1 µM) or NAI-A594 plus SDM25N (0.5 µM) to selectively block the labeling of MOR or DOR, respectively. The labeled slice was then transferred to an upright microscope (Olympus BX51W1, Center Valley, PA) equipped with a custom-built two-photon apparatus and a 60 x water immersion lens (Olympus LUMFI, NA 1.1). Both Alexa594 dye and GFP were excited simultaneously with a high-frequency laser beam at 810 nm (Chameleon, Coherent, Inc, Santa Clara, CA). Fluorescence of GFP and Alexa594 were acquired and collected in two separate channels using ScanImage software (Pologruto et al., 2003). Each image acquisition contained 10 optical slices at 0.5 µm thickness. Each optical slice was averaged from five consecutive scans of 512 × 512 pixels. Brain slices were submerged in continuous flow of ACSF at a rate of 1.5–2 ml/min and drugs were applied via superfusion. All experiments were done at 34°C. Macroscopic images of labeled slices were captured with a Macro Zoom Olympus MVX10 microscope and a MV PLAPO2xC, NA 0.5 lens (Olympus). Alexa594 dye was excited with yellow LED (567 nm). The slices were kept under ACSF in a petri dish during data acquisitions. Data were acquired using Q Capture Pro software (Q Imaging, British Columbia, Canada).
 
-## Electrophysiology
+### Electrophysiology
 
 Brain slices were prepared as described for the labeling study. A loose cell-attached extracellular recording was done with an Axopatch-1C amplifier in current mode. Recording pipettes (1.7–2.1 MΩ, TW150F-3, World Precision Instruments, Saratosa, FL) were filled with 175 mM NaCl buffered to pH7.4 with 5 mM HEPES. The on-cell pipet resistance varied in the range of 5–15 MΩ. Immediately the cell attaching was formed, spontaneous activity of the neuron was monitored. Only cells that showed steady regular firing at baseline for 3–5 min were used in the experiments. Data were collected at sampling rate of 10 KHz, and episode width of 50 s with Axograph X (1.5.4). Drugs were applied by bath perfusion. Bestatin (10 μM, Sigma) and thiorphan (1 μM, Sigma) were included in all peptide solutions to prevent enzymatic degradation.
 
-## Chemical labeling of FDOR and FMOR in HEK293 cells
+### Chemical labeling of FDOR and FMOR in HEK293 cells
 
 Human embryonic kidney 293 (HEK293) cells were originally obtained from ATCC (Cat. No. CRL_1573) and maintained in house. Its identity has been authenticated and there is no mycoplasma contamination. HEK293 cells expressing FlagDOR and FlagMOR were generated by transfection with FlagMOR and FlagDOR plasmids obtained from Dr. Mark von Zastrow (UCSF). Stable expressing cells were selected, grown and maintained in Dulbecco’s minimal essential media (DMEM, Gibco, Grand Island, NY) containing 10% fetal bovine serum (FBS), Geneticin sulfate (0.5 mg/ml, ThermoFisher, Waltham, MA) and antibiotic-antimycotic (1 x, ThermoFisher). Twenty-four hr before labeling, cells were seeded at 3.0 × 105 cells/well in a 12-well plate. The next day, cells were labeled with 30 or 100 nM NAI-A488 for 30 min at 37°C. Control cells were labeled in the presence of excess 10 μM naloxone to confirm the specificity of labeling. After the labeling period, cells were washed two times in PBS + 1 µM naloxone, followed by incubation with 10 µM naloxone in PBS containing calcium and magnesium at 37°C for another 10 min. Cells were then placed on ice and washed two times in ice-cold PBS plus 1 μM naloxone. The wells were scraped, and cell pellets collected by centrifugation at 4000 rpm for 4 min at 4 °C in an Eppendorf microcentrifuge. Whole cell extracts were produced by resuspending cell pellets in lysis buffer (50 mM Tris pH 7.4, 150 mM NaCl, 1.0 % nonidet P-40, 0.5% sodium deoxycholate, 0.5 mM PMSF, 5 μg/ml leupeptin, 1 X Halt protease inhibitor cocktail (Thermo Scientific Cat. No. 78437)) and nutating for 30 min at 4 °C, followed by centrifugation at 14,000 rpm for 20 min at 4°C. The supernatant was collected for further analysis. Protein concentrations were determined using Bio-Rad DC Protein Assay Kit II (cat. no. 5000112) according to the manufacturer’s recommendations. The NAI-A488-labeled cell extracts were then subjected to western blotting.
 
-## Western blotting
+### Western blotting
 
 Cell extracts prepared from NAI-A488-labeled cells were analyzed by SDS-PAGE followed by western immunoblotting. Ten μg total protein of each sample was denatured in SDS containing sample buffer (2% SDS, 10% glycerol, 62.5 mM Tris pH 6.8, 0.001% bromophenol blue) in the presence of 0.1 M DTT, at 37°C for 10 min. The samples were then loaded onto 8% SDS-polyacrylamide denaturing gels and run until the dye front just ran off the bottom. The proteins were then electro-transferred to PVDF membranes (Immobilon-FL, cat. no. IPFL00010), blocked in Odyssey Blocking Buffer (LI-COR, cat. no. 927–40000) and probed with two primary antibodies, M1 anti-FLAG MAb (Sigma, cat. no. F3040, used at a 1:600 dilution) and rabbit anti Alexa Fluor 488 (Invitrogen, cat. no. A11094, 1:500), followed by washing and incubation with two secondary antibodies, goat-anti mouse IgG Alexa-680 (Thermo Fisher, A28183, 1:5,000 dilution) and goat-anti rabbit IgG IRDye CW 800 (LI-COR cat no. P/N 926–32211, 1:10,000 dilution). Antibodies were diluted in a buffer consisting of 1/10 diluted Odyssey Blocking Buffer, TBS (20 mM Tris pH 7.4, 100 mM NaCl)/1 mM CaCl2 and 0.2% Tween-20. Blots were washed in TBS/1 mM CaCl2/0.3% Tween-20, and final washes were in TBS/1 mM CaCl2. The western blot membranes were scanned using a Sapphire Biomolecular Imager (Azure Biosystems) at 784 nm and 658 nm excitation and images were acquired using Sapphire Capture software (2017).
 
-## On-cell western analysis
+### On-cell western analysis
 
 96-well, black walled, optical bottom plates (Thermo Fisher Scientific, cat. no. 165305) were coated with 0.1 mg/ml poly-D-lysine followed by seeding, in triplicate for each condition, 3.0 × 104 DOR or MOR cells per well. 24 hr later, using the same method as above, the cells were labeled with varying concentrations of NAI-A488 (0, 1, 3, 10, 30, 100 nM) and duplicate wells were labeled with each NAI-A488 concentration in the presence of 10 μM naloxone, in order to determine non-specific binding. After the final PBS wash, cells were fixed in 3.7% formaldehyde, 20 min, at room temperature, washed in PBS three times and then blocked for 1.5 hr, at room temperature, with rocking, in Odyssey Blocking Buffer. The fixed and blocked cells were then incubated overnight at 4°C, on an orbital shaker with primary antibodies (M1, 1:600 and rabbit anti-Alexa Fluor 488, 1:500) diluted in 1:10 Odyssey Blocking Buffer in TBS/1 mM CaCl2. The next morning, the wells were washed five times, 5 min each in TBS containing 1 mM CaCl2 and 0.05% Tween-20 (OCW wash buffer), followed by incubation in secondary antibodies (Goat-anti mouse IgG-Alexa-680, 1:2500; goat anti-rabbit-IRDye CW 800, 1:5000 diluted in OCW wash buffer) for 1 h, at room temperature while rocking. The wells were then washed five times for 5 min in wash buffer, followed by three washes for 5 min each in TBS plus 1 mM CaCl2. The wells were air-dried before imaging on a Sapphire Biomolecular Imager using 784 nm and 658 nm excitation. In this experiment, the signal from 784 nm excitation represents opioid receptors modified by NAI-A488, while the 658 nm signal indicates opioid receptor present in each condition. Background values were obtained from cells that were labeled with 100 nM NAI-A488, but that did not receive any primary antibody. Fluorescence intensities were quantitated using AzureSpot Analysis Software (version 2.0.062). All values were background subtracted and the 784 nm signal for each condition was normalized to the 658 nm signal in the same condition. The ratios (784/658) were also calculated for cells labeled with NAI-A488 in the presence of 10 μM naloxone. Prism 6 (GraphPad software, SanDiego, CA) was used to construct concentration dependent curves of non-specific and total labeling and calculate Kd’s.
 
-## Quantitative image analysis of membrane fluorescent intensity
+### Quantitative image analysis of membrane fluorescent intensity
 
 We wrote an ImageJ macro to automate the fluorescent intensity analysis of two-photon microscopy data using Fiji software (Rueden et al., 2017). The data were collected from two fluorescence emission channels, GFP and Alexa 594. The macro inputs a data stack, first deinterleaving the channels and Gaussian blurring (sigma = 1) to smooth the GFP channel’s pixels (Figure 3B). Moments-preserving thresholding is then applied to generate a mask on each slice of the GFP signal. We assigned this GFP mask’s edge corresponding to the shape of the neuron (Figure 3B). The assignment was verified qualitatively, and the result was well-matched with the signals of NAI-A594 staining on the membrane. Some errors however may occur particularly along dendritic branching planes resulting in truncated masking (down skewing the membrane mean intensity measurement), and the data in this area would be avoided (see Figure 3B). The mask from each GFP optical slice was then overlaid onto the same optical slice of corresponding Alexa594 channel. The procedure was scanned through every optical section to ensure that the largest area corresponding to the shape of the neuron was included in the analysis. The membrane fluorescent intensity was measured by converting the GFP mask area to a line with a random break introduced along its length. The line traced along the membrane-mask edge and thereby the neuron’s membrane (Figure 3B). The mean pixel intensity was collected along the line’s length. Each data stack is analyzed over ten consecutive slices. The mean fluorescence of each optical slice was pooled and computed for the mean membrane fluorescence intensity of a neuron (F-memb). The macro was run without intervention by a researcher who was blinded to the data collection.
 
-## Quantitative image analysis of receptor endocytosis
+### Quantitative image analysis of receptor endocytosis
 
 With the same masking procedure, the analysis comprised two separate operations on the selected mask. The first operation was to determine the mean membrane fluorescent intensity (F-memb) as described earlier. The second operation used an 8-pixel dilation (corresponding to ~0.6 µm) along every point in the membrane mask’s definition to define an area of the neuron’s cytoplasmic portion (Figure 6B). The mean cytoplasmic fluorescent intensity of each optical slice was measured from this area, and all slices’ means were pooled and averaged for the final output of mean cytoplasmic fluorescence (F-cyt) of a neuron.
 
 Receptor endocytosis was determined by two methods. One method calculated the change of cytoplasmic fluorescent intensity from the ratio of F/F0, where F = F-cyt/(F-cyt+ F memb) after drug treatment and F0 = F-cyt/(F-cyt+ F memb) before drug treatment. The other method used F/F0 calculated from membrane fluorescent intensity and F = F-memb/(F-cyt+ F memb) after drug and F0 = F-memb/(F-cyt+ F memb) before drug.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as mean ± standard error of the mean (SEM) except the data of fluorescent membrane surface intensity, which is shown as mean ± standard deviation (SD). The number of sample size is indicated in the figure legends. Statistical analysis and graphs were made with Prism 6 (GraphPad Software, SanDiego, CA). One-way ANOVA with Sidak’s multiple comparison test was used to compare treatment groups and p < 0.05 was considered significant. A non-linear saturation of one-site binding curve was constructed from total and non-specific labeling curve and Kd was calculated from curve fitting values using Prism 6.

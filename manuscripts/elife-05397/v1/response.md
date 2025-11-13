@@ -202,6 +202,4 @@ The reviewer is correct, we had fixed the Hill coefficient to 1. We now fit with
 
 In Figure 5, the Y-axis of the concentration-response curves should be on a linear scale, not a log scale. If it were, the reader would quickly notice that the curves are quite steep, which can be informative, and sometimes concerning.
 
-As exemplified by Figure 5A, a semi-log representation does not provide more information, also with respect to the steepness of the curves. As we published all our research on antivirals as log-log diagrams e.g. Zirafi et al. (Zirafi et al., 2014; Zirafi et al., 2015), we would prefer (if possible) to keep the figures in their original log-log representation.10.7554/eLife.05397.032Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.05397.032
-
-DOI: http://dx.doi.org/10.7554/eLife.05397.032
+As exemplified by Figure 5A, a semi-log representation does not provide more information, also with respect to the steepness of the curves. As we published all our research on antivirals as log-log diagrams e.g. Zirafi et al. (Zirafi et al., 2014; Zirafi et al., 2015), we would prefer (if possible) to keep the figures in their original log-log representation.10.7554/eLife.05397.032Author response image 1.

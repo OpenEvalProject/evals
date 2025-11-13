@@ -18,10 +18,10 @@
 
 ### Affiliations
 
-1. https://ror.org/04pp8hn57 Center for Translational Immunology, University Medical Center Utrecht, Utrecht University Utrecht Netherlands
-2. https://ror.org/00xcwps97 Translational Immunology Institute, Singhealth/Duke-NUS Academic Medical Centre, the Academia Singapore Singapore
-3. https://ror.org/04pp8hn57 Pediatric Immunology & Rheumatology, Wilhelmina Children’s Hospital, University Medical Center Utrecht, Utrecht University Utrecht Netherlands
-4. https://ror.org/04pp8hn57 Theoretical Biology, Utrecht University Utrecht Netherlands
+1. Center for Translational Immunology, University Medical Center Utrecht, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+2. Translational Immunology Institute, Singhealth/Duke-NUS Academic Medical Centre, the Academia Singapore Singapore ([ROR:00xcwps97](https://ror.org/00xcwps97))
+3. Pediatric Immunology & Rheumatology, Wilhelmina Children’s Hospital, University Medical Center Utrecht, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+4. Theoretical Biology, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
 
 † Corresponding author
 
@@ -41,33 +41,89 @@ Here, we had the unique opportunity to study autoimmune inflammation: (1) within
 
 ## Results
 
-## Immune architecture of cellular infiltrates is similar between anatomically distinct inflamed sites
+### Immune architecture of cellular infiltrates is similar between anatomically distinct inflamed sites
 
 To study the peripheral and tissue-specific immune cell composition in autoimmune disease, we profiled peripheral blood mononuclear cells (PBMCs) and synovial fluid mononuclear cells (SFMCs) from JIA patients with both knees affected at the time of sampling using CyTOF (Supplementary file 1). T-distributed stochastic neighbor embedding (t-SNE) and k-means clustering identified 22 immune cell populations in the PB and synovial fluid (SF) compartments (Figure 1A, p<1e−21, Figure 1—figure supplement 1A, B). These populations could be broadly segregated into Treg (CD25+/FoxP3+), naive (CD45RA+), effector/memory (CD45RA-), and non-T cell populations (CD3−/CD4−/CD8−). Preliminary clustering of the median marker expression on T cells revealed a clear demarcation of SFMCs and PBMCs (Figure 1B), and a strong association of immune phenotypes between intra-individual paired knee SFMCs. Furthermore, density maps of immune cell populations within the t-SNE indicate strong dichotomy in the locations of SFMC and PBMC subsets (Figure 1C). Comparison of the node fingerprints between SFMC and PBMC samples (Figure 1D) revealed that SMFCs were enriched in CD4+CD25+FoxP3+ Tregs (node 2), and CD4+CD45RA− memory T cells (nodes 5, 9, and 10), while PBMCs were enriched in CD45RA+ naive T cells (nodes 3, 6, 7, 13, and 15). Next to this, a strikingly similar cellular distribution profile was observed in the left and right knee joints of each JIA individual (Figure 1C/D). The correlation matrix of the entire spectrum of node frequencies demonstrated a strong positive correlation between the SFMCs and their left and right joints, and a strong negative correlation compared with the PBMC populations (Figure 1—figure supplement 1C). These results demonstrate that, while distinct differences in T cell signatures can be identified between PB and SF compartments, the phenotypic T cell architecture of distinct inflamed sites (left and right knees) are remarkably similar, indicating commonality in underlying disease etiology.
 
-## Effector T cells and Tregs are phenotypically similar across distinct inflamed sites
+![Figure 1.](https://cdn.elifesciences.org/articles/79016/elife-79016-fig1-v2.jpg)
+
+**Figure 1.:** (A) Density maps based on t-SNE dimensional reduction and k-means clustering analysis on SF and PB samples, resulting in 22 cellular nodes. (B) Preliminary hierarchal clustering on the median expression of all markers, excluding lineage markers. (C) Density maps of immune cellular populations within the t-SNE maps. (D) Node frequency fingerprints showing the distribution across the nodes of SFMCs and PBMCs. PB, peripheral blood; PBMC, peripheral blood mononuclear cell; SF, synovial fluid; SFMC, synovial fluid mononuclear cell; t-SNE, t-distributed stochastic neighbor embedding.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79016/elife-79016-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Node frequency showing the distribution of T cell markers across the nodes of SFMCs an PBMCs in the CyTOF analysis. (B) Marker expression of t-SNE dimensional reduction and k-means clustering analysis on SFMC and PBMC samples (C) Correlation matrix using spearman correlation of the entire spectrum of node frequency given in (A). PBMC, peripheral blood mononuclear cell; SF, synovial fluid; SFMC, synovial fluid mononuclear cell; t-SNE, t-distributed stochastic neighbor embedding.
+
+### Effector T cells and Tregs are phenotypically similar across distinct inflamed sites
 
 Next, we functionally characterized SFMC-specific T cells, and found that CD4+ and CD8+ T cell subsets displayed an increased expression of pro-inflammatory cytokines (TNFα, IFNγ, and IL-6), indications of chronic TCR activation (PD1 and LAG3) (Petrelli et al., 2018) and a memory phenotype (CD45RA−), compared to their PBMC counterparts (Figure 2—figure supplement 1A, B, p<0.05). Remarkably, the cytokine diversity of CD4+ memory T cells revealed nearly identical profiles for the left and right knee joints for each individual (Figure 2A), with minor inter-individual differences. This trend in cytokine profile was also reflected in the CD8+CD45RA− compartment (data not shown). The Treg (CD25+FOXP3+) population was significantly enriched in SFMC (Figure 2B, p<0.05, Figure 2—figure supplement 1C, D) with enhanced expression of memory (CD45RA−) and activation markers (HLA-DR/ICOS). Additionally, SFMC memory Tregs displayed a significantly higher proliferation (Ki67) as compared to SFMC effector memory T cells (Figure 2B, p<0.05), which was further confirmed by flow cytometry (Figure 2—figure supplement 1E). This indicates that Tregs belong to the most proliferative T cell subset in the inflamed environment. Moreover, memory Tregs showed very similar CTLA4/HLA-DR/ICOS/PD1 expression profiles in the left and right knee joints for each individual (Figure 2C). Altogether, these data demonstrate that within JIA patients, there is an identical T cell phenotypic and functional profile present at separate inflamed locations, with increased amounts of activated and proliferating Treg populations.
 
-## Tregs are increased in autoimmune rheumatic disease and express markers of enhanced activation
+![Figure 2.](https://cdn.elifesciences.org/articles/79016/elife-79016-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cytokine production of CD4+CD45RA− memory T cells depicted in radar plots. Axis indicates the proportion of positive cells for individual cytokines (indicated by coloring) within the memory T cell fraction. (B) Percentage CD25+FOXP3+ Treg of CD3+CD4+ cells in SFMC and PBMC of JIA patients and healthy children, and percentage of Ki67+ cells within CD45RA− cells in Treg and non-Treg in SFMC (nonparametric Mann-Whitney, *=p<0.05). For SFMCs, data from the right and left knee joints for all patients is shown. (C) Expression of functional markers by CD25+FOXP3+CD45RA− cells. JIA, juvenile idiopathic arthritis; PBMC, peripheral blood mononuclear cell; SFMC, synovial fluid mononuclear cell.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79016/elife-79016-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) t-SNE plots showing the expression profile of phenotypical and functional markers in SFMC and PBMC from JIA patients and PBMC from healthy children. (B) Bar charts showing the percentage of specific cell populations within CD4+CD45RA− and CD8+CD45RA− cells (nonparametric Mann-Whitney, *=p<0.05). (C) TtSNE plots showing the expression profile of phenotypical and functional Treg markers in SFMC, PBMC from JIA patients and PBMC from healthy children. (D) Quantification of CD45RA−ICOS+ and CD45RA−HLA−DR+ expression on CD25+FOXP3+ Treg (nonparametric Mann-Whitney, *=p<0.05). (E) MFI of Ki67 protein expression in Treg and non-Treg as determined by flow cytometry. JIA, juvenile idiopathic arthritis; PBMC, peripheral blood mononuclear cell; SFMC, synovial fluid mononuclear cell; t-SNE, t-distributed stochastic neighbor embedding.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/79016/elife-79016-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) UMAP of scRNA-seq data of T cells obtained from RA and OA patients. Colors indicate different clusters, with cluster 3 being classified as Tregs. (B) Expression of prototypical Treg markers across different clusters identified in (A). (C) Frequency of Tregs as a percentage of the total number of T cells (y-axis) in OA (orange) and RA (green) patients. (D) Expression of markers associated with chronic TCR activation (PDCD1, CTLA4, and ICOS), and cytokines (TNF, IFNG, and GZMB) across OA (orange) and RA (green) patients. Numbers indicate p values (Wilcoxon rank-sum test) of the comparison between OA and RA. OA, osteoarthritis; NS, not significant; RA, rheumatoid arthritis.
+
+### Tregs are increased in autoimmune rheumatic disease and express markers of enhanced activation
 
 To further study the relevance of Tregs in autoimmune rheumatic disease, we sought to validate our findings in data sets comparing SFMCs from rheumatoid arthritis (RA) to non-autoimmune osteoarthritis (OA, a degenerative, non-autoimmune disease of the joints, often used as a proxy for healthy donors). We obtained publicly available single-cell transcriptomics data (Zhang et al., 2019), and compared the gene expression profiles T cells from SFMC between RA and OA patients. We identified a cluster of CD4+FOXP3+ Tregs (characterized by high CD4, FOXP3, PDCD1, CTLA4, TIGIT, and IL2RA expression, Figure 2—figure supplement 2A, B) that showed increased frequency in RA patients compared to OA (Figure 2—figure supplement 2C). This increase of Tregs in RA SFMCs is consistent with the high frequency of Tregs that we observed in our JIA SFMC samples (Figure 2B). Additionally, the expression of markers related to chronic TCR activation (PDCD1, CTLA4, and ICOS), and cytokines (TNF, IFNG, and GZMB) were significantly increased in RA compared to OA (Figure 2—figure supplement 2D), in line with what we observed in JIA SFMC (Figure 2A/B).
 
-## Hyper-expanded T cell clones are shared between left and right joints
+### Hyper-expanded T cell clones are shared between left and right joints
 
 To study whether the same expanded T cell clones infiltrate multiple joints, we performed TCR sequencing for similar numbers of CD3+CD4+CD25+CD127low Tregs and CD3+CD4+CD25−CD127+ non-Tregs sorted from affected joints of JIA patients, derived from the same donors and time points as the ones used for CyTOF analysis regarding the first two patients. Within the inflamed joints, clonally expanded cells were detected, which was more pronounced for Tregs than non-Tregs (Figure 3A). In line with the CyTOF analysis, the distribution of T cell clones was highly similar between left and right joints, both for Tregs and non-Tregs. Hyper-expanded T cells were further studied by the sequential intersection of the most abundant TCRβ clonotypes across samples. We found a high degree of sharing between two affected joints, while a small fraction of clones was shared between SF and PB (Figure 3B). Moreover, sharing of clones between two joints was more evident for Tregs than non-Tregs (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/79016/elife-79016-fig3-v2.jpg)
+
+**Figure 3.:** (A) Clonal proportions of the TCRβ clones as detected in Treg and non-Treg sorted from PBMC, SF left joint, SF right joint of two different JIA patients. (B) Sequential intersection of abundant TCRβ clonotypes (based on amino acid sequence) across samples. Top clonotypes (ranging from 1 to 1000) are given on the x-axis, with the percentage of sequences overlapping between two given samples on the y-axis. For patient 3, no PB sample was available. (C) Frequency plots showing the overlapping Treg and non-Treg clones between left joint derived SF (x-axis) and right joint derived SF (y-axis), with color coding highlighting the clones that are shared with none of the other samples (black circle), shared in two samples (purple) and all three samples (PB, SF left, SF right; yellow). (D) Correlation (linear regression, dashed line) between frequency (x-axis) and generation probability (y-axis) of TCR clones shared across SF two samples. (E) Results of correlation between frequency and generation probability across all samples. p, p value; Pat., patient; PBMC, peripheral blood mononuclear cell; R, Spearman’s Rho; SF, synovial fluid.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79016/elife-79016-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Sample-based rarefaction and extrapolation curves. Solid lines depict observed data, dashed lines depict extrapolated data. Calculated for all healthy samples (green), and JIA samples (orange). Every line represents one individual sample. Boxplots show median of estimated species richness (left) and estimated Shannon diversity (right) calculated from the rarefied and extrapolated data shown in (A). JIA, juvenile idiopathic arthritis; HC, healthy control.
 
 Detailed analysis further revealed that frequencies of hyper-expanded T cells were highly conserved between distinct anatomical sites, with the most dominant clones also detectable in PB (Figure 3C). To assess whether dominant clones were shared as a result of high generation probability (pgen, convergent recombination; Sethna et al., 2019), or in response to antigen (convergent selection), we calculated the pgens of shared and non-shared clones and correlated these with their respective frequencies. Frequencies of shared clones were not correlated with pgen (Figure 3D), while frequencies of non-shared clones showed a significant positive correlation with pgen (Figure 3E). Notably, this correlation was more pronounced for non-Tregs (Figure 3E), indicating either bystander activation or non-antigen-specific circulation of the non-shared TCR clones in the non-Treg compartment. In summary, both non-Treg and Treg hyper-expanded T cell clones are shared between inflamed joints. This overlap is most pronounced for Treg, with the highly dominant Treg clones in SF also being detectable in circulation, likely driven by responses to shared antigens.
 
 To investigate whether the TCR repertoire of JIA patients differs from healthy, we compared the repertoire diversity of PB JIA Tregs to the diversity of Tregs obtained from PB of healthy individuals from a publicly available data set (Kasatskaya et al., 2020). Sample-based rarefaction analysis showed that the estimated species richness and Shannon diversity was significantly lower for JIA Tregs compared to Tregs obtained from healthy donors (Figure 3—figure supplement 1), demonstrating that the JIA Treg repertoire is less diverse than healthy.
 
-## Dominant clones persist over time during relapsing-remitting disease
+### Dominant clones persist over time during relapsing-remitting disease
 
 Next, to study the temporal dynamics of T cells in JIA, we profiled the Treg and non-Treg TCRβ repertoire of SF and PB samples from five JIA patients over time (Figure 4A, Figure 4—figure supplement 1). Repertoire overlap analysis showed that TCRβs of SF Tregs were highly shared within patients over time (Figure 4A), which was also conserved across different joints (Figure 4A/B, Figure 4—figure supplement 2A). In contrast, TCRβs from PB did not cluster together over time, and showed much less overlap with their synovial counterparts (Figure 4A). More detailed analysis showed that frequencies of shared TCRβs were also consistent over time, with the most dominant T cell clones having the highest degree of sharing (Figure 4C, Figure 4—figure supplement 3). Again, this phenomenon was more pronounced in Tregs from SF compared to PB (Figure 4C), although the most dominant clones from SF were also detectable in PB (Figure 4—figure supplement 4). Moreover, persistent TCRβs with high abundance were not driven by recombination bias (Figure 4D), similar to what was observed for T cell clones shared between two knees sampled at the same time point (Figure 3D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/79016/elife-79016-fig4-v2.jpg)
+
+**Figure 4.:** (A) Heatmap showing overlap (Jaccard index, light blue = limited overlap, darkblue = high overlap) of Treg derived TCRβ sequences obtained from SF or PB from JIA patients over time. L=left knee, R=right knee. (B) Venn diagrams displaying the 100 most abundant unique TCRβ clones, defined by amino acid sequence, for longitudinal SF samples from all patients. (C) Frequency plots showing the overlapping Treg clones between visits for SF and PB, with color coding and shapes highlighting the number of samples in which unique clones are found. L=left; R=right. (D) Correlation (linear regression, dashed line) between frequency (x-axis) and generation probability (y-axis) of TCR clones shared across two visits for SF samples. PB, peripheral blood; SF, synovial fluid; TCR, T cell receptor.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79016/elife-79016-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** JIA, juvenile idiopathic arthritis; L, left; PB, peripheral blood; R, right; SF, synovial fluid.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/79016/elife-79016-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Venn diagrams displaying the overlap of all unique TCRβ clones, defined by amino acid sequence, for longitudinal SF samples from all patients for Tregs and (B) non-Tregs. SF, synovial fluid; TCR, T cell receptor.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/79016/elife-79016-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Frequency plots showing the overlapping Treg clones between visits for SF and PB, with color coding and shapes highlighting the number of samples in which unique clones are found. JIA, juvenile idiopathic arthritis; L, left; PB, peripheral blood; R, right; SF, synovial fluid; TCR, T cell receptor.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/79016/elife-79016-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Frequency plots showing the overlapping Treg clones between visits for SF and PB for patient 1, with color coding and shapes highlighting the number of samples in which unique clones are found. PB, peripheral blood; SF, synovial fluid; TCR, T cell receptor.
+
 Next, we repeated our analysis on TCRβ sequences of non-Tregs from the same samples. Although non-Tregs also display sharing of TCRβ sequences over time (Figure 5A/B, Figure 4—figure supplement 2B), the degree of sharing was less pronounced compared to Tregs (Figure 4A). Frequencies of highly shared TCRβs in non-Tregs were also consistent over time (Figure 5C, Figure 5—figure supplement 1), and not driven by recombination bias (Figure 5D; Figure 5—figure supplement 1). Collectively, these data show that during relapsing-remitting disease, persistent dominant T cell clones are taking part in the local immune response in JIA patients, and this phenomenon is more pronounced for Tregs than non-Tregs.
 
-## Patterns in similar TCR sequences are shared between JIA patient knees
+![Figure 5.](https://cdn.elifesciences.org/articles/79016/elife-79016-fig5-v2.jpg)
+
+**Figure 5.:** (A) Heatmap showing overlap (Jaccard index, light blue = limited overlap, darkblue = high overlap) of non-Treg derived TCRβ sequences obtained from SF or PB from JIA patients over time. L, left knee, R, right knee. (B) Venn diagrams displaying the 100 most abundant unique TCRβ clones, defined by amino acid sequence, for longitudinal SF samples from all patients. (C) Frequency plots showing the overlapping non-Treg clones between visits for SF and PB, with color coding and shapes highlighting the number of samples in which unique clones are found. L, left; R, right. (D) Correlation (linear regression, dashed line) between frequency (x-axis) and generation probability (y-axis) of TCR clones shared across two visits for SF samples. JIA, juvenile idiopathic arthritis; PB, peripheral blood; SF, synovial fluid; TCR, T cell receptor.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79016/elife-79016-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Frequency plots showing the overlapping non-Treg clones between visits for SF and PB, with color coding and shapes highlighting the number of samples in which unique clones are found. JIA, juvenile idiopathic arthritis; L, left; PB, peripheral blood; R, right; SF, synovial fluid; TCR, T cell receptor.
+
+### Patterns in similar TCR sequences are shared between JIA patient knees
 
 Recent studies have demonstrated that immune responses against a particular antigen involve T cell clones with similar TCR sequences (Dash et al., 2017; Glanville et al., 2017; Pogorelyy et al., 2019). To investigate whether persistent T cell clones in JIA cluster together with other, similar T cell clones involved in responses against the same antigens, we performed TCR similarity analysis, focusing on SF samples obtained from two affected knees. We constructed similarity networks for JIA patients and compared these to networks generated from random repertoires with the same number of TCRβ sequences (Figure 6A). TCR networks from JIA patients were highly connected (more than expected by chance), showing that patient repertoires exhibit a high degree of sequence similarity (Figure 6B). Moreover, in the random repertoires, clusters were less mixed (indicated by a high cluster purity) than JIA networks (Figure 6C), highlighting that TCRs from JIA samples display higher sequence similarity than expected by chance. Overall, these results show that the SF Treg repertoire is highly skewed by antigenic selection.
 
@@ -89,40 +145,519 @@ In conclusion, we show that in SF the immune cell architecture is marked by infl
 
 ## Materials and methods
 
-## Collection of SF and PB samples
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Peripheral blood</td>
+      <td>University Medical Center Utrecht</td>
+      <td></td>
+      <td>Healthy donors and JIA patients</td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Synovial fluid</td>
+      <td>University Medical Center Utrecht</td>
+      <td></td>
+      <td>JIA patients</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD3 (UCHT1) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 300402</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD4 (SK3) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 344625</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD8 (SK1) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 344727</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD11b (ICRF44) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 301302</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD16 (3G8) (Mouse monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat#: 3209002B</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD14 (M5E2) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 301843</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IL-4 (8D4-8) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 500707</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IFN-g (B27) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 506513</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IL-17A (BL168) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 512302</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IL-21 (3A4-N2) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 513009</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD161 (HP-3G10) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 339902</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD45RA (HI100) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 304102</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD69 (FN50) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 310902</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD28 (CD28.2) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 302923</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD152 (BNI3) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 555851</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD154 (24-31) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 310835</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human HLA-DR (L243) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 307612</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human LAG3 (17B4) (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab40466</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human PD1 (EH12.2H7) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 329941</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human Ki67 (20Raj1) (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific/eBioscience</td>
+      <td>Cat#: 14-5699-82</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human ICOS (C398.4A) (Armenian Hamster monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 313512</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD31 (WM59) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 303102</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD103 (B-Ly7) (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific/eBioscience</td>
+      <td>Cat#: 14-1038-82</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CXCR3 (G025H7) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 353718</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CXCR5 (RF8B2) (Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 552032</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CCR5 (NP-6G4) (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab115738</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CCR6 (G034E3) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 353402</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD25 (M-A251) (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 555429</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD127 (A019D5) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 351302</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human FOXP3 (PCH101) (Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific/eBioscience</td>
+      <td>Cat#: 14-4776-82</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human GITR (621) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 311602</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human TGF-B (TW4-2F8) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 349602</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IL-10 (JES3-9D7) (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 501402</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human TNF-alpha (Mab11) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 502902</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IL-6 (MQ2-13A5) (Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific/eBioscience</td>
+      <td>Cat#: 16-7069-85</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human Granzyme B (CLB-GB11) (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab103159</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-humanPerforin (B-D48) (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab47225</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-humanCD45-A (HI30) (Mouse monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat#: 3089003B</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-humanCD45-B, C or D (HI30) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 304002</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DNA (singlets) Cell-ID Intercalator-Ir</td>
+      <td>Fluidigm</td>
+      <td>Cat#: 201192</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cisplatin (Live/Dead)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 479306-1G</td>
+      <td>CyTOF (5μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-humanCD3-BV510 (UCHT1) (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 300448</td>
+      <td>FACS (dilution 1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-humanCD4-FITC (SK3) (Mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 11-0047-42</td>
+      <td>FACS (dilution 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-humanCD25-PE/Cy7 (2A3) (Mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat#: 335789</td>
+      <td>FACS (dilution 1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-humanCD127-AF647 (A019D5) (Mouse monolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#: 351318</td>
+      <td>FACS (dilution 1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-humanFOXP3-eF450 (PCH101) (Rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 48-4776-42</td>
+      <td>FACS (dilution 1:50)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol 12-myristate 13-acetate (PMA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: P1585</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: I9657</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brefeldin A</td>
+      <td>eBioscience</td>
+      <td>Cat#: 00-4506-51</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Monensin</td>
+      <td>BioLegend</td>
+      <td>Cat#: 420701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Intracellular Fixation &amp; Permeabilization Buffer Set</td>
+      <td>eBioscience</td>
+      <td>Cat#: 88-8824-00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EQ Four Element Calibration beads</td>
+      <td>Fluidigm</td>
+      <td>Cat#: NC1307119</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy mini kit</td>
+      <td>Qiagen</td>
+      <td>Cat#: 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Micro Kit</td>
+      <td>Qiagen</td>
+      <td>Cat#: 74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMARTer RACE cDNA Amplification kit</td>
+      <td>Clontech</td>
+      <td>Cat#: 634923</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NGSgo-LibrX</td>
+      <td>GenDx</td>
+      <td>Cat#: 2342605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NGSgo-IndX</td>
+      <td>GenDx</td>
+      <td>Cat#: 2342153</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo (v.10.2)</td>
+      <td>TreeStar</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MarVis</td>
+      <td>https://doi.org/10.1186/1471-2105-10-92</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat (v.4.1.1)</td>
+      <td>Massachusetts Institute of Technology (MIT)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iNEXT (v.3.0.0)</td>
+      <td>https://doi.org/10.1111/2041-210X.12613</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism (v.7.0)</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RTCR</td>
+      <td>https://doi.org/10.1093/bioinformatics/btw339</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OLGA</td>
+      <td>https://doi.org/10.1093/bioinformatics/btz035</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Collection of SF and PB samples
 
 Patients with JIA were enrolled at the University Medical Center Utrecht (The Netherlands) (Supplementary file 1). A total of nine JIA patients were included in this study. Of these, n=2 were diagnosed with extended oligo JIA, n=2 with rheumatoid factor negative poly-articular JIA, and n=5 with oligo JIA, according to the revised criteria for JIA (Petty et al., 1998). The average age at the time of inclusion was 13.1 years (range 3.2–18.1 years) with a disease duration of 7.3 years (range 0.4–14.2 years). Patients included for CyTOF and TCR sequencing analysis of two affected knee joints were all treated with non-steroidal anti-inflammatory drugs (NSAIDs) or methotrexate, but no biologicals at the time of sampling. For sequential TCR sequencing analysis, we included patients with a relapsing disease course. At the first time point, all patients were treated with NSAIDs or methotrexate, but no biologicals. During the follow-up (after experiencing a relapse of disease), patients were treated with disease-modifying anti-rheumatic drugs (leflunomide) and/or biologicals (humira).
 
 PB of JIA patients was obtained via veni-puncture or intravenous drip, while SF was obtained by therapeutic joint aspiration of affected joints. Informed consent was obtained from all patients either directly or from parents/guardians when the patients were younger than 12 years of age. The study was conducted in accordance with the Institutional Review Board of the University Medical Center Utrecht (approval no. 11-499/C), in compliance with the Declaration of Helsinki. PB from n=3 healthy children (average age 15.1 years with range 14.7–15.4 years) was obtained from a cohort of control subjects for a case-control clinical study (Supplementary file 1).
 
-## Cell isolation
+### Cell isolation
 
 For cell isolation, SF was incubated with hyaluronidase (Sigma-Aldrich, St. Louis, MO) for 30 min at 37°C to break down hyaluronic acid. SFMCs and PBMCs were isolated using Ficoll Isopaque density gradient centrifugation (GE Healthcare Bio-Sciences AB, Uppsala, Sweden), and were used after freezing in fetal calf serum (FCS) (Invitrogen, Waltham, MA) containing 10% DMSO (Sigma-Aldrich).
 
-## Flow cytometry and cell sorting
+### Flow cytometry and cell sorting
 
 For TCR sequencing purposes, CD3+CD4+CD25highCD127low Tregs and CD3+CD4+CD25low/intCD127int/high non-Tregs were isolated from frozen PBMCs and SFMCs, using the FACS Aria III (BD, Franklin Lakes, NJ). Antibodies used for sorting were: anti-human CD3-BV510 (BioLegend, San Diego, CA), CD4-FITC (eBioscience, Frankfurt am Main, Germany), CD25-PE/Cy7 (BD), and CD127-AF647 (BioLegend). To check for FOXP3 expression of the sorted populations anti-human FOXP3-eF450 (eBioscience) was used.
 
-## CyTOF and CyTOF data analysis
+### CyTOF and CyTOF data analysis
 
 Frozen PBMCs and SFMCs were thawed and stained with a T cell focused panel of 37 heavy metal-conjugated antibodies (Supplementary file 2), as previously described (Chew et al., 2019), and analyzed by CyTOF-Helios (Fluidigm, San Francisco, CA). Briefly, PBMCs were stimulated with or without phorbol 12-myristate 13-acetate (150 ng/ml, Sigma-Aldrich) and ionomycin (750 ng/ml, Sigma-Aldrich) for 4 h, and blocked with secretory inhibitors, brefeldin A (1:1000, eBioscience) and monensin (1:1000, BioLegend) for the last 2 h. The cells were then washed and stained with cell viability dye cisplatin (200 μM, Sigma-Aldrich). Each individual sample was barcoded with a unique combination of anti-CD45 conjugated with either heavy metal 89, 115, 141, or 167, as previously described (Lai et al., 2015). Barcoded cells were washed and stained with the surface antibody cocktail for 30 min on ice, and subsequently washed and re-suspended in fixation/permeabilization buffer (permeabilization buffer, eBioscience) for 45 min on ice. Permeabilized cells were subsequently stained with an intra-cellular antibody cocktail for 45 min on ice, followed by staining with a DNA intercalator Ir-191/193 (1:2000 in 1.6% w/v paraformaldehyde, Fluidigm) overnight at 4°C or for 20 min on ice. Finally, the cells were washed and re-suspended with EQ Four Element Calibration beads (1:10, Fluidigm) at a concentration of 1×106 cells/ml. The cell mixture was then loaded and acquired on a Helios mass cytometer (Fluidigm) calibrated with CyTOF Tunning solution (Fluidigm). The output FCS files were randomized and normalized with the EQ Four Element Calibration beads (Fluidigm) against the entire run, according to the manufacturer’s recommendations.
 
 Normalized CyTOF output FCS files were de-barcoded manually into individual samples in FlowJo (v.10.2), and downsampled to equal cell events (5000 cells) for each sample. Batch run effects were assessed using an internal biological control (PBMC aliquots from the same healthy donor for every run). Normalized cells were then clustered with MarVis (Kaever et al., 2009), using Barnes Hut Stochastic Neighbor Embedding (SNE) nonlinear dimensionality reduction algorithm and k-means clustering algorithm, as previously described (Chew et al., 2019). The default clustering parameters were set at perplexity of 30, and p<1e−21. The cells were then mapped on a two-dimensional t-distributed SNE scale based on the similarity score of their respective combination of markers, and categorized into nodes (k-means). To ensure that the significant nodes obtained from clustering were relevant, we performed back-gating of the clustered CSV files and supervised gating of the original FCS files with FlowJo as validation. Visualizations (density maps, node frequency fingerprint, node phenotype, and radar plots) were performed through R scripts and/or Flow Jo (v.10.2). Correlation matrix and node heatmaps were generated using MarVis (Kaever et al., 2009) and PRISM (v.7.0).
 
-## Single-cell RNA-sequencing analysis
+### Single-cell RNA-sequencing analysis
 
 Single-cell RNA-sequencing data from RA and OA SF was obtained from Zhang et al., 2019. We only included data from cells that were characterized as T cells. Next, we discarded cells with fewer than 1000 genes detected with at least one fragment, and cells that had more than 25% of reads from mitochondrial genes. Gene expression across cells was normalized using the NormalizeData function implemented in the R package Seurat (Hao et al., 2021) using the following parameters: normalization.method = "LogNormalize", scale.factor=1e4. Dimensionality reduction was performed using the Seurat RunUMAP function using the first 15 principal components. Clusters were annotated using the Seurat FindClusters function, with a resolution of 0.25. Differentially expressed genes between RA and OA patients were identified using the Seurat FindMarkers function with default parameters.
 
-## TCR sequencing and analysis
+### TCR sequencing and analysis
 
 Tregs and non-Tregs were lysed in RLT buffer (Qiagen, Hilden, Germany) and frozen at –80°C. Between 0.15×106 and 1×106 Tregs, and between 0.46×106 and 1×106 non-Tregs were obtained for TCR sequencing. Total RNA was isolated using the RNeasy Mini Kit (Qiagen) for cell fractions ≥0.2×106 cells and the RNeasy Micro Kit (Qiagen) for fractions ≤0.2×106 cells, following the manufacturer’s instructions. cDNA was synthesized using the SMARTer RACE cDNA Amplification kit (Clontech, Palo Alto, CA). Amplification of the TCRβ VDJ region was performed using previously described primers and amplification protocols (Zhou et al., 2006). PCR product fragment size was analyzed using the QIAxcel Advanced System (Qiagen). End repair and barcode adapter ligation were performed with the NGSgo-LibrX and NGSgo-IndX (GenDx, Utrecht, The Netherlands) according to the manufacturer’s instructions. Cleanup of the samples was performed after each step using HighPrep PCR beads and following the manufacturer’s instructions (GC Biotech, Waddinxveen, The Netherlands). Paired-end next-generation sequencing was performed on the Illumina MiSeq system 500 (2×250 bp) (Illumina, San Diego, CA). TCR sequencing analysis was performed using RTCR as previously described (Gerritsen et al., 2016).
 
 Healthy Treg TCRβ data (Kasatskaya et al., 2020) was obtained from the Gene Expression Omnibus (GEO). Diversity estimates were calculated by sample-size-based rarefaction and extrapolation using the R package iNEXT (iNterpolation/EXTrapolation) (Hsieh et al., 2016).
 
-## TCR network analysis
+### TCR network analysis
 
 For sequence similarity analysis, we counted the presence of overlapping 3-mer amino acid segments (defined as k-mers) in the TCRβ (CDR3) sequences. TCR sequences were considered similar when they shared at least eight k-mers, independent of the total sequence length. Random repertoires were generated using the generative model of V(D)J recombination implemented in OLGA (Sethna et al., 2019). For equal comparison to biological samples, random repertoires were downsampled to equal the number of TCR sequences. Cluster purity was calculated as the ratio of number of TCR sequences from the most abundant sequence within the cluster and the total number of TCR sequences in the cluster.
 
-## Statistical analyses
+### Statistical analyses
 
 Nonparametric Mann-Whitney (two-tailed) statistical test was performed in the manual gating of cellular subsets in FlowJo; p values<0.05 were considered statistically significant. The correlation matrix for the node frequency was calculated using Spearman’s rank-order correlation. Generation probabilities (pgens) of TCRβ amino acid sequences were computed using OLGA (Sethna et al., 2019). Figures were produced using the R package ggplot2 (Wickham, 2016). Venn diagrams were made on: http://bioinformatics.psb.ugent.be/webtools/Venn/.

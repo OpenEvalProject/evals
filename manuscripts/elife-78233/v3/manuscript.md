@@ -50,36 +50,36 @@
 
 ### Affiliations
 
-1. https://ror.org/036rp1748 Department of Electronic Systems Engineering, University of São Paulo São Paulo Brazil
-2. https://ror.org/041kmwe10 Imperial College London London United Kingdom
-3. https://ror.org/041kmwe10 MRC Centre for Global Infectious Disease Analysis, Imperial College London London United Kingdom
-4. https://ror.org/041kmwe10 Abdul Latif Jameel Institute for Disease and Emergency Analytics, Imperial College London London United Kingdom
-5. https://ror.org/01p7p3890 Faculdade Ciências Médicas de Minas Gerais Belo Horizonte Brazil
-6. https://ror.org/028kg9j04 Universidade Federal do ABC São Bernardo do Campo Brazil
-7. https://ror.org/02d3hy418 Institute for Applied Economic Research (Ipea) Brasília Brazil
-8. https://ror.org/04jhswv08 Fundação Oswaldo Cruz Manguinhos Brazil
-9. https://ror.org/03srtnf24 Universidade Federal do Ceará Fortaleza Brazil
-10. https://ror.org/05cjk9k86 Fundação Pró Sangue Hemocentro de São Paulo (FPS) São Paulo Brazil
+1. Department of Electronic Systems Engineering, University of São Paulo São Paulo Brazil ([ROR:036rp1748](https://ror.org/036rp1748))
+2. Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+3. MRC Centre for Global Infectious Disease Analysis, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+4. Abdul Latif Jameel Institute for Disease and Emergency Analytics, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+5. Faculdade Ciências Médicas de Minas Gerais Belo Horizonte Brazil ([ROR:01p7p3890](https://ror.org/01p7p3890))
+6. Universidade Federal do ABC São Bernardo do Campo Brazil ([ROR:028kg9j04](https://ror.org/028kg9j04))
+7. Institute for Applied Economic Research (Ipea) Brasília Brazil ([ROR:02d3hy418](https://ror.org/02d3hy418))
+8. Fundação Oswaldo Cruz Manguinhos Brazil ([ROR:04jhswv08](https://ror.org/04jhswv08))
+9. Universidade Federal do Ceará Fortaleza Brazil ([ROR:03srtnf24](https://ror.org/03srtnf24))
+10. Fundação Pró Sangue Hemocentro de São Paulo (FPS) São Paulo Brazil ([ROR:05cjk9k86](https://ror.org/05cjk9k86))
 11. Centro de Hematologia e Hemoterapia do Paraná (HEMEPAR) Curitiba Brazil
-12. https://ror.org/055x5vq73 Fundação Hospitalar de Hematologia e Hemoterapia do Amazonas (HEMOAM) Manaus Brazil
+12. Fundação Hospitalar de Hematologia e Hemoterapia do Amazonas (HEMOAM) Manaus Brazil ([ROR:055x5vq73](https://ror.org/055x5vq73))
 13. Fundação de Hematologia e Hemoterapia da Bahia (HEMOBA) Salvador Brazil
 14. Centro de Hematologia e Hemoterapia do Ceará (HEMOCE) Fortaleza Brazil
 15. Fundação HEMOMINAS Belo Horizotne Brazil
 16. Fundação de Hematologia e Hemoterapia de Pernambuco (HEMOPE) Recife Brazil
-17. https://ror.org/003mvv560 Instituto Estadual de Hematologia Arthur de Siqueira Cavalcanti (HEMORIO) Rio de Janeiro Brazil
-18. https://ror.org/02263ky35 Universidade Federal do Amazonas Manaus Brazil
-19. https://ror.org/018mj2m06 Centro Universitário do Norte Manaus Brazil
+17. Instituto Estadual de Hematologia Arthur de Siqueira Cavalcanti (HEMORIO) Rio de Janeiro Brazil ([ROR:003mvv560](https://ror.org/003mvv560))
+18. Universidade Federal do Amazonas Manaus Brazil ([ROR:02263ky35](https://ror.org/02263ky35))
+19. Centro Universitário do Norte Manaus Brazil ([ROR:018mj2m06](https://ror.org/018mj2m06))
 20. Vitalant Research Institute San Franscico United States
-21. https://ror.org/043mz5j54 University of California, San Francisco San Francisco United States
+21. University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 22. Harvard TH Chan School of Public Health Boston United States
-23. https://ror.org/052gg0110 Department of Zoology, University of Oxford Oxford United Kingdom
-24. https://ror.org/036rp1748 Instituto de Medicina Tropical, University of São Paulo São Paulo Brazil
+23. Department of Zoology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+24. Instituto de Medicina Tropical, University of São Paulo São Paulo Brazil ([ROR:036rp1748](https://ror.org/036rp1748))
 
 † Corresponding author
 
 ## Abstract
 
-The COVID-19 situation in Brazil is complex due to large differences in the shape and size of regional epidemics. Understanding these patterns is crucial to understand future outbreaks of SARS-CoV-2 or other respiratory pathogens in the country. We tested 97,950 blood donation samples for IgG antibodies from March 2020 to March 2021 in 8 of Brazil’s most populous cities. Residential postal codes were used to obtain representative samples. Weekly age- and sex-specific seroprevalence were estimated by correcting the crude seroprevalence by test sensitivity, specificity, and antibody waning. The inferred attack rate of SARS-CoV-2 in December 2020, before the Gamma variant of concern (VOC) was dominant, ranged from 19.3% (95% credible interval [CrI] 17.5–21.2%) in Curitiba to 75.0% (95% CrI 70.8–80.3%) in Manaus. Seroprevalence was consistently smaller in women and donors older than 55 years. The age-specific infection fatality rate (IFR) differed between cities and consistently increased with age. The infection hospitalisation rate increased significantly during the Gamma-dominated second wave in Manaus, suggesting increased morbidity of the Gamma VOC compared to previous variants circulating in Manaus. The higher disease penetrance associated with the health system’s collapse increased the overall IFR by a minimum factor of 2.91 (95% CrI 2.43–3.53). These results highlight the utility of blood donor serosurveillance to track epidemic maturity and demonstrate demographic and spatial heterogeneity in SARS-CoV-2 spread. This work was supported by Itaú Unibanco ‘Todos pela Saude’ program; FAPESP (grants 18/14389-0, 2019/21585-0); Wellcome Trust and Royal Society Sir Henry Dale Fellowship 204311/Z/16/Z; the Gates Foundation (INV- 034540 and INV-034652); REDS-IV-P (grant HHSN268201100007I); the UK Medical Research Council (MR/S0195/1, MR/V038109/1); CAPES; CNPq (304714/2018-6); Fundação Faculdade de Medicina; Programa Inova Fiocruz-CE/Funcap - Edital 01/2020 Number: FIO-0167-00065.01.00/20 SPU N°06531047/2020; JBS – Fazer o bem faz bem.
+Background:The COVID-19 situation in Brazil is complex due to large differences in the shape and size of regional epidemics. Understanding these patterns is crucial to understand future outbreaks of SARS-CoV-2 or other respiratory pathogens in the country.Methods:We tested 97,950 blood donation samples for IgG antibodies from March 2020 to March 2021 in 8 of Brazil’s most populous cities. Residential postal codes were used to obtain representative samples. Weekly age- and sex-specific seroprevalence were estimated by correcting the crude seroprevalence by test sensitivity, specificity, and antibody waning.Results:The inferred attack rate of SARS-CoV-2 in December 2020, before the Gamma variant of concern (VOC) was dominant, ranged from 19.3% (95% credible interval [CrI] 17.5–21.2%) in Curitiba to 75.0% (95% CrI 70.8–80.3%) in Manaus. Seroprevalence was consistently smaller in women and donors older than 55 years. The age-specific infection fatality rate (IFR) differed between cities and consistently increased with age. The infection hospitalisation rate increased significantly during the Gamma-dominated second wave in Manaus, suggesting increased morbidity of the Gamma VOC compared to previous variants circulating in Manaus. The higher disease penetrance associated with the health system’s collapse increased the overall IFR by a minimum factor of 2.91 (95% CrI 2.43–3.53).Conclusions:These results highlight the utility of blood donor serosurveillance to track epidemic maturity and demonstrate demographic and spatial heterogeneity in SARS-CoV-2 spread.Funding:This work was supported by Itaú Unibanco ‘Todos pela Saude’ program; FAPESP (grants 18/14389-0, 2019/21585-0); Wellcome Trust and Royal Society Sir Henry Dale Fellowship 204311/Z/16/Z; the Gates Foundation (INV- 034540 and INV-034652); REDS-IV-P (grant HHSN268201100007I); the UK Medical Research Council (MR/S0195/1, MR/V038109/1); CAPES; CNPq (304714/2018-6); Fundação Faculdade de Medicina; Programa Inova Fiocruz-CE/Funcap - Edital 01/2020 Number: FIO-0167-00065.01.00/20 SPU N°06531047/2020; JBS – Fazer o bem faz bem.
 
 ## Introduction
 
@@ -91,9 +91,9 @@ Here, we analyse the divergent epidemic SARS-CoV-2 dynamics in eight of the bigg
 
 ## Methods
 
-## Selection of blood donors for estimation of seroprevalence
+### Selection of blood donors for estimation of seroprevalence
 
-Each of the eight cities had a monthly quota of 1,000 kits for testing selected donation samples in this study. In order to select more representative samples, we selected blood samples so that the spatial distribution of residential location of selected donors matches the spatial distribution of population density in each municipality. More specifically, each city was divided into sub-municipal administrative zones, and the original quota (1,000 kits) was divided into sub-quotas following the populational distribution of the city administrative zones. Starting from the second week of each month, we selected consecutive blood donors based on the geolocation of their residential postcode to fill the sub-quotas. In this way, donations with missing or wrong postal code were considered ineligible for selection. We chose the sample size (1,000) so an increase in crude seroprevalence of 5% can be detected with power 1-β=80% and confidence level 1-α=95% assuming a baseline seroprevalence of 15%.
+Each of the eight cities had a monthly quota of 1,000 kits for testing selected donation samples in this study. In order to select more representative samples, we selected blood samples so that the spatial distribution of residential location of selected donors matches the spatial distribution of population density in each municipality. More specifically, each city was divided into sub-municipal administrative zones, and the original quota (1,000 kits) was divided into sub-quotas following the populational distribution of the city administrative zones. Starting from the second week of each month, we selected consecutive blood donors based on the geolocation of their residential postcode to fill the sub-quotas. In this way, donations with missing or wrong postal code were considered ineligible for selection. We chose the sample size (1,000) so an increase in crude seroprevalence of 5% can be detected with power $1-\beta=80%$ and confidence level $1-\alpha=95%$ assuming a baseline seroprevalence of 15%.
 
 In Manaus, however, donor postcodes were not reliably collected, so that the number of missing and wrong values makes this strategy unfeasible. So, samples were selected consecutively with no postal code restrictions. We also developed a study management system to operationalize this sampling strategy, whereby blood donor postcodes and epidemiological data were automatically extracted and selected. After that, the selected donation sample IDs were released for the research assistant to be separated for testing.
 
@@ -103,7 +103,7 @@ In Brazil, blood donation samples are usually saved for 6 months, so when serolo
 
 Blood donors are a convenience sample, and thus may not be representative of the wider population in terms of their risk of SARS-CoV-2 exposure. Appendix 1—figures 3–6 show a comparison between recorded blood donor demographics and the last available Brazilian census conducted in 2010. Donors differ systematically in age, sex, and self-reported skin colour compared to the population, but the income per capita is similar. To account for the differences in the age-sex structure of blood donors, we divide donors in age-sex groups and estimate the prevalence of each age-sex group separately. Then, we calculate the seroprevalence of the population as a weighted sum of the seroprevalences of each age-sex group.
 
-## SARS-CoV-2 serology assays
+### SARS-CoV-2 serology assays
 
 We applied chemiluminescent microparticle immunoassays (CIMA, AdviseDx, Abbott) that detect IgG antibodies against the SARS-CoV-2 nucleocapsid (N) because it was the only automated commercially available kit in Brazil when the study started (July 2020). We used this kit throughout the study until March in all eight cities except Recife, where we used the kit until February 2021. This assay suffers from signal waning - resulting in positive-negative transition, or ‘seroreversion’ - during convalescence. This amounts to a fall in assay sensitivity through time. The Abbott anti-N IgG CMIA shows particularly rapid signal decay when compared with other assays (Di Germanio et al., 2021). These antibody dynamics mean that as an epidemic progresses, the crude proportion of individuals with a positive test result will increasingly underestimate the true attack rate (Buss et al., 2021; Takahashi et al., 2021; Takahashi et al., 2020).
 
@@ -113,49 +113,65 @@ To determine the test sensitivity, we considered a cohort of 208 non-hospitalise
 
 We subsequently estimated the distribution of time to seroreversion, and thus the sensitivity decreasing through time, for the anti-N assay. We first calculated this in the convalescent donors, in whom the date of symptom onset is known, and whose blood samples were collected longitudinally during convalescence. As such, the time-to-seroreversion distribution was computed after accounting for right censoring. However, due to spectrum bias, the extrapolation of antibody waning from convalescent donors to whole blood donors is unlikely to be valid. As such, we obtained a second cohort of repeat blood donors in Manaus that provided multiple donations during the 2020–2021 period. These donors are expected to have the same antibody dynamics as the seroprevalence cohort, as they are drawn from the same population and have predominantly mild or asymptomatic infections. However, in this group the time of infection is unknown, as infection is inferred by serostatus alone. The procedure to manage this problem is described below.
 
-## Methods used to estimate the time-dependent sensitivity
+### Methods used to estimate the time-dependent sensitivity
 
 We developed an analytic method to correct raw seroprevalence data for seroreversion, improving on the method used in Buss et al., 2021. We first estimate the time-to-seroreversion distribution using serial donations from repeat blood donors, which determines how sensitivity for a given individual decreases with the time after seroconversion. We then corrected the raw seroprevalence estimates for the changing sensitivity within a Bayesian framework. We first calculated attack rates for each age and sex group in each city and summed these using the proportion of each group in the Brazilian reference population to obtain standardised estimates. In this section, we describe a procedure to estimate the time-dependent sensitivity used to obtain a seroprevalence estimate corrected for antibody waning.
 
-Let se0 be the sensitivity measured shortly after symptomatic infection (i.e. the probability of an infected individual seroconverting to an S/C above the threshold), and p+[n] be the probability of a donor remaining positive n weeks after seroconversion (given that the donor seroconverted). Then, the sensitivity of the test n weeks after seroconversion is se0×p+[n] for a given donor. In this section, we describe the procedure used to determine p+[n] from repeat blood donors data, for which time of infection and time of seroreversion are unknown. The seroreversion correction model described in the next section uses the estimate of p+[n] to calculate the seroprevalence accounting for seroreversion.
+Let $se_{0}$ be the sensitivity measured shortly after symptomatic infection (i.e. the probability of an infected individual seroconverting to an S/C above the threshold), and $p^{+}[n]$ be the probability of a donor remaining positive $n$ weeks after seroconversion (given that the donor seroconverted). Then, the sensitivity of the test $n$ weeks after seroconversion is $se_{0}\timesp^{+}[n]$ for a given donor. In this section, we describe the procedure used to determine $p^{+}[n]$ from repeat blood donors data, for which time of infection and time of seroreversion are unknown. The seroreversion correction model described in the next section uses the estimate of $p^{+}[n]$ to calculate the seroprevalence accounting for seroreversion.
 
 The criteria to select repeat blood donors were: (1) at least one positive test, indicating SARS-CoV-2 infection, (2) at least one subsequent blood sample, in order to interpolate the date of seroreversion, and (3) falling S/C between these two samples, because one of the samples used to define the interpolation curve may have occurred before the peak S/C; hence, the half-life and the date of seroreversion cannot be estimated. Therefore, all selected donors had at least one positive sample and at least one subsequent sample (positive or negative) with smaller S/C.
 
-To calculate p+[n], we first estimate the date of seroreversion for each repeat blood donor using an exponential interpolation (a linear interpolation in the log scale). We choose an exponential interpolation because an exponential decay is frequently used to model antibody dynamics (Takahashi et al., 2021). When seroreversion is interval-censored, i.e., a donor that has a positive test subsequently becomes negative, we interpolate an exponential curve that passes through the last positive sample and the first negative sample. Otherwise, when seroreversion is not interval-censored, then it is right-censored (a donor remains positive on their last sample), in which case we extrapolate an exponential line through the last two positive samples and project this forward. As such, the estimated instant of seroreversion for blood donor i (denoted as ti-) is the point where the interpolation curve crosses the threshold for a positive test. The interpolation procedure is illustrated in Appendix 1—figure 10. The proposed method may overestimate ti- if an S/C used to define the interpolation curve was sampled shortly after seroconversion before the peak S/C was reached, since in this case the S/C curve does not behave as an exponential, leading to an overestimated half-life. To partially overcome this problem, we discard donors that do not serorevert within 106 weeks (2 years) after their first positive test.
+To calculate $p^{+}[n]$, we first estimate the date of seroreversion for each repeat blood donor using an exponential interpolation (a linear interpolation in the log scale). We choose an exponential interpolation because an exponential decay is frequently used to model antibody dynamics (Takahashi et al., 2021). When seroreversion is interval-censored, i.e., a donor that has a positive test subsequently becomes negative, we interpolate an exponential curve that passes through the last positive sample and the first negative sample. Otherwise, when seroreversion is not interval-censored, then it is right-censored (a donor remains positive on their last sample), in which case we extrapolate an exponential line through the last two positive samples and project this forward. As such, the estimated instant of seroreversion for blood donor $i$ (denoted as $t_{i}^{-}$) is the point where the interpolation curve crosses the threshold for a positive test. The interpolation procedure is illustrated in Appendix 1—figure 10. The proposed method may overestimate $t_{i}^{-}$ if an S/C used to define the interpolation curve was sampled shortly after seroconversion before the peak S/C was reached, since in this case the S/C curve does not behave as an exponential, leading to an overestimated half-life. To partially overcome this problem, we discard donors that do not serorevert within 106 weeks (2 years) after their first positive test.
 
-After estimating ti-, for each blood donor i, we compute the probability distribution of the date of seroconversion for that donor, pi. For this, we identify the earliest and latest possible date of seroconversion tmin (the date of the last negative result before seroconversion or 1 March 2020 if the donor has no positive results before seroconversion) and tmax (the date of the first positive result). The relative probability of seroconversion within this window depends on the incidence of seroconversions due to SARS-CoV-2 infection for the cohort of repeat donors, denoted urepeat[n]. To estimate this quantity, we calculate the histogram of the date of first positive donation for repeat blood donors and then apply a 30-day moving average. As a sensitivity analysis, we also calculate urepeat[n] by computing the histogram of the date of onset of ion (SARI) deaths observed in Manaus, and applying to it a 7-day window moving average, yielding similar seroprevalence estimates (Appendix 1—figures 11 and 12).
+After estimating $t_{i}^{-}$, for each blood donor $i,$ we compute the probability distribution of the date of seroconversion for that donor, $p_{i}$. For this, we identify the earliest and latest possible date of seroconversion $t_{min}$ (the date of the last negative result before seroconversion or 1 March 2020 if the donor has no positive results before seroconversion) and $t_{max}$ (the date of the first positive result). The relative probability of seroconversion within this window depends on the incidence of seroconversions due to SARS-CoV-2 infection for the cohort of repeat donors, denoted $u_{repeat}[n]$. To estimate this quantity, we calculate the histogram of the date of first positive donation for repeat blood donors and then apply a 30-day moving average. As a sensitivity analysis, we also calculate $u_{repeat}[n]$ by computing the histogram of the date of onset of ion (SARI) deaths observed in Manaus, and applying to it a 7-day window moving average, yielding similar seroprevalence estimates (Appendix 1—figures 11 and 12).
 
-The distribution of the date of seroconversion is obtained by truncating the incidence curve of repeat blood donors urepeat[n] in the interval [tmin,tmax] and renormalizing the distribution. We then generate 1,000 samples of the instant of seroconversion ti+∼pi[n] and compute the 1,000 sample delays between seroconversion and seroreversion Δti=ti--ti+.
+The distribution of the date of seroconversion is obtained by truncating the incidence curve of repeat blood donors $u_{repeat}[n]$ in the interval $[t_{min},t_{max}]$ and renormalizing the distribution. We then generate 1,000 samples of the instant of seroconversion $t_{i}^{+}∼p_{i}[n]$ and compute the 1,000 sample delays between seroconversion and seroreversion $Δt_{i}=t_{i}^{-}-t_{i}^{+}$.
 
-The probability of the delay between seroconversion and seroreversion being n≥1 days (denoted as pday−[n]) is calculated with the empirical histogram of the 1000×Ndonors samples of Δti , i=1,⋯, Ndonors. The distribution pday−[n] is then binned into weeks by taking the average of (pday−[7n], pday−[7n+1],⋯,pday−[7n+6]) for n≥1. The resulting distribution, denoted as pweek−[n], represents the probability of seroreversion exactly n weeks after seroconversion.
+The probability of the delay between seroconversion and seroreversion being $n\geq1$ days (denoted as $p_{day}^{−}[n]$) is calculated with the empirical histogram of the $1000\timesN_{donors}$ samples of $Δt_{i}$ , $i=1,⋯, N_{donors}$. The distribution $p_{day}^{−}[n]$ is then binned into weeks by taking the average of $(p_{day}^{−}[7n], p_{day}^{−}[7n+1],⋯,p_{day}^{−}[7n+6])$ for $n\geq1$. The resulting distribution, denoted as $p_{week}^{−}[n]$, represents the probability of seroreversion exactly $n$ weeks after seroconversion.
 
-Finally, the probability of a donor remaining positive n weeks after seroconversion p+n (i.e. the probability of a donor seroreverting after week n) is obtained through,p+[n]=1−∑k=1npweek−[k].
+Finally, the probability of a donor remaining positive $n$ weeks after seroconversion $p^{+}n$ (i.e. the probability of a donor seroreverting after week $n$) is obtained through,
+
+$$
+p^{+}[n]=1−\sumk=1np_{week}^{−}[k].
+$$
 
 The presented method is summarised in Appendix 1.
 
-## Estimating the seroreversion probability from convalescent plasma donors
+### Estimating the seroreversion probability from convalescent plasma donors
 
-Unlike repeat blood donors, convalescent plasma donors have a known date of symptom onset. To compute p+[n] for plasma donors, we estimate the instant of seroreversion for each plasma donor as described above and define the date of seroconversion as 8 days after the reported date of symptom onset. This interval of 8 days is the average lag between seroconversion and seroreversion reported in Orner et al., 2021 for a threshold of 1.4 S/C, but it can be shorter for a threshold of 0.49 employed in this work. The probability mass function of the time to seroreversion pday−[n] is then the empirical histogram of Δti=ti- -ti+, and p+n is obtained from pday−[n] using the method presented above.
+Unlike repeat blood donors, convalescent plasma donors have a known date of symptom onset. To compute $p^{+}[n]$ for plasma donors, we estimate the instant of seroreversion for each plasma donor as described above and define the date of seroconversion as 8 days after the reported date of symptom onset. This interval of 8 days is the average lag between seroconversion and seroreversion reported in Orner et al., 2021 for a threshold of 1.4 S/C, but it can be shorter for a threshold of 0.49 employed in this work. The probability mass function of the time to seroreversion $p_{day}^{−}[n]$ is then the empirical histogram of $Δt_{i}=t_{i}^{- }-t_{i}^{+}$, and $p^{+}n$ is obtained from $p_{day}^{−}[n]$ using the method presented above.
 
-## Our proposed seroreversion correction model
+### Our proposed seroreversion correction model
 
-Here, we present a Bayesian model that draws posterior samples from the incidence over time corrected by sensitivity, specificity, and seroreversion using as input the estimated curve for p+[n], the number of weekly positive tests, and total number of tests. Even though the main output of the model is the incidence at week n for age-sex group a (denoted as u[n,a]), the seroprevalence at week n for group a can be calculated from u[n,a] as ρn,a=∑k=1nu[k,a]. For simplicity, the proposed model ignores the delay between infection and seroconversion, as it should have small impact on the estimate of u[n,a]. To define the age-sex groups, age was discretized in the intervals 16–24, 25–34, 35–44, 45–54, and 55–69.
+Here, we present a Bayesian model that draws posterior samples from the incidence over time corrected by sensitivity, specificity, and seroreversion using as input the estimated curve for $p^{+}[n]$, the number of weekly positive tests, and total number of tests. Even though the main output of the model is the incidence at week $n$ for age-sex group $a$ (denoted as $u[n,a]$), the seroprevalence at week $n$ for group $a$ can be calculated from $u[n,a]$ as $ρn,a=\sum_{k=1}^{n}u[k,a]$. For simplicity, the proposed model ignores the delay between infection and seroconversion, as it should have small impact on the estimate of $u[n,a]$. To define the age-sex groups, age was discretized in the intervals 16–24, 25–34, 35–44, 45–54, and 55–69.
 
-Assuming that the sensitivity se0 and specificity sp of the assay are independent of the age-sex group, the probability of a random person from age-sex group a being tested positive at week n, denoted as θ[n,a], isθn,a=se0∑k=1np+[n-k]u[k,a]+1-sp1-∑k=1nu[k,a].
+Assuming that the sensitivity $se_{0}$ and specificity $sp$ of the assay are independent of the age-sex group, the probability of a random person from age-sex group $a$ being tested positive at week $n$, denoted as $\theta[n,a]$, is
 
-The derivation of the expression above is presented in Appendix 1. The left term se0∑k=1np+[n-k]u[k,a] represents true positives (previously infected donors that are still seropositive), while the right term 1-sp1-∑k=1nu[k,a] represents false positives (uninfected donors that test positive).
+$$
+\thetan,a=se_{0}\sum_{k=1}^{n}p^{+}[n-k]u[k,a]+1-sp1-\sum_{k=1}^{n}u[k,a].
+$$
 
-Let us denote as T+[n,a] and Tn,a, respectively, the number of positive tests and the total number of tests for week n and age-sex group a. Given θ[n,a], the probability distribution of T+[n,a] isT+[n,a]∣θ[n,a]∼Binomial(T[n,a],θ[n,a]).
+The derivation of the expression above is presented in Appendix 1. The left term $se_{0}\sum_{k=1}^{n}p^{+}[n-k]u[k,a]$ represents true positives (previously infected donors that are still seropositive), while the right term $1-sp1-\sum_{k=1}^{n}u[k,a]$ represents false positives (uninfected donors that test positive).
 
-We use a Bayesian framework to draw posterior samples from u assuming a non-informative prior, but limiting the final seroprevalence in the interval [0,b], where b is a fixed input of the algorithm that can be 1 or 2 depending on whether reinfections are allowed, and we use b=2 in this work. Instead of defining a prior distribution for u[n,a] directly, we decompose it into u[n,a]=ρmax[a]unorm[n,a], where ρmax[a]∼Uniform(0,b) sets the upper bound of the final prevalence to b and unorm[:,a]∼Dirichlet(1,1,…,1) is the normalised incidence which sums to 1. This decomposition is equivalent to assuming a uniformly distributed prior for u:,a in the simplex 0≤∑n=1Nun,a≤b with un,a≥0  ∀n.
+Let us denote as $T^{+}[n,a]$ and $Tn,a$, respectively, the number of positive tests and the total number of tests for week $n$ and age-sex group $a$. Given $\theta[n,a]$, the probability distribution of $T^{+}[n,a]$ is
 
-After drawing posterior samples from u[n,a], we calculate the seroprevalence at week n for age-sex group a as ρn,a= ∑k=1nu[k,a] and then compute the age-sex weighted seroprevalence ρ[n], given byρ[n]=∑a=1Mwaρn,a,  w[a]=pop[a]∑k=1Mpop[k],
+$$
+T^{+}[n,a]∣\theta[n,a]∼Binomial(T[n,a],\theta[n,a]).
+$$
 
-where pop[a] is the population for the age-sex group a in the corresponding city and M is the number of age-sex groups. Of note, in this work we also refer to ρ[n] as the estimated seroprevalence, cumulative seroprevalence or attack rate.
+We use a Bayesian framework to draw posterior samples from $u$ assuming a non-informative prior, but limiting the final seroprevalence in the interval $[0,b]$, where $b$ is a fixed input of the algorithm that can be 1 or 2 depending on whether reinfections are allowed, and we use $b=2$ in this work. Instead of defining a prior distribution for $u[n,a]$ directly, we decompose it into $u[n,a]=ρ_{max}[a]u_{norm}[n,a],$ where $ρ_{max}[a]∼Uniform(0,b)$ sets the upper bound of the final prevalence to $b$ and $u_{norm}[:,a]∼Dirichlet(1,1,…,1)$ is the normalised incidence which sums to 1. This decomposition is equivalent to assuming a uniformly distributed prior for $u:,a$ in the simplex $0\leq\sum_{n=1}^{N}un,a\leqb$ with $un,a\geq0  ∀n$.
+
+After drawing posterior samples from $u[n,a]$, we calculate the seroprevalence at week $n$ for age-sex group $a$ as $ρn,a= \sum_{k=1}^{n}u[k,a]$ and then compute the age-sex weighted seroprevalence $ρ[n]$, given by
+
+$$
+ρ[n]=\sum_{a=1}^{M}waρn,a,  w[a]=\frac{pop[a]}{\sum_{k=1}^{M}pop[k]},
+$$
+
+where $pop[a]$ is the population for the age-sex group $a$ in the corresponding city and $M$ is the number of age-sex groups. Of note, in this work we also refer to $ρ[n]$ as the estimated seroprevalence, cumulative seroprevalence or attack rate.
 
 The presented Bayesian model is summarised in Appendix 1. The posterior samples are drawn using a Monte-Carlo Markov Chain algorithm with 100,000 iterations.
 
-The incidence returned by the model was validated through posterior predictive checks by randomly selecting 1,000 samples from un,a and drawing samples from T+[n,a]∣θ[n,a]∼Binomial(T[n,a],θ[n,a]) . The resulting crude seroprevalence is then compared with the measured crude seroprevalence (Appendix 1—figure 13).
+The incidence returned by the model was validated through posterior predictive checks by randomly selecting 1,000 samples from $un,a$ and drawing samples from $T^{+}[n,a]∣\theta[n,a]∼Binomial(T[n,a],\theta[n,a])$ . The resulting crude seroprevalence is then compared with the measured crude seroprevalence (Appendix 1—figure 13).
 
 It is worth noting that the age-specific crude seroprevalence can be larger than the seroprevalence corrected for seroreversion in some weeks, as the model may remove outlier samples. This is because seroprevalence curves that cannot be reconstructed by the model (e.g. due to bias or sampling noise) generate a small likelihood, hence, a smaller probability of being included in the set of posterior samples generated by the model. Therefore, the model excludes weeks where donors are significantly biased towards more seropositive or more seronegative individuals.
 
@@ -163,13 +179,17 @@ The proposed Bayesian seroreversion correction model can be seen as an improveme
 
 Despite these differences, the results presented here are compatible with the seroprevalence estimates of 28.8 and 76.0%, respectively, for São Paulo and Manaus in Buss et al. The proposed seroreversion method also differs from other methods in the literature (Shioda et al., 2021; Takahashi et al., 2021) in that we use the incidence curve to estimate the time-dependent sensitivity instead of the deaths or confirmed cases curve, producing a seroprevalence that does not depend on case reporting and that can be reliably inferred in epidemics where the IFR changes with time, as was the case in Manaus.
 
-## Estimating the IFR for December 2020
+### Estimating the IFR for December 2020
 
 We estimate the IFR using total deaths due to Severe Acute Respiratory Infection (SARI), which includes PCR- and clinically confirmed SARS-CoV-2 infection as well as SARI deaths without a final diagnosis, and we exclude SARI deaths confirmedly caused by other aetiologies. This approach reduces under-reporting, particularly in 2020 when testing was not widely available, as discussed in de Souza et al., 2020. We further justify this approach in Appendix 1.
 
 We retrieved the daily number of SARI deaths from SIVEP-Gripe (Sistema de Informação da Vigilância Epidemiológica da Gripe), a public database containing individual-level information of all SARI cases reported in Brazil. To estimate the IFR in 2020, we use the seroprevalence estimated by our model for 16 December 2020 and select only SARI deaths with symptom onset between 1 March and 15 December 2020. Selecting deaths based on the date of first symptoms instead of date of death was possible because SIVEP-Gripe contains the date of symptom onset for each individual. For the first wave of COVID-19 that occurred in the eight cities, we estimate the number of cases as the age-specific population size (https://demografiaufrn.net/laboratorios/lepp/) multiplied by the estimated seroprevalence in the corresponding age group. We propagate the uncertainty in the prevalence estimate through the calculation of IFR.
 
-Let ρ[a] and popa be the cumulative seroprevalence and the population estimated for age group a. We assume a uniform distribution in the interval [0, 1] as a non-informative prior for IFR[a], and the number of deaths D[a] observed for each age group a is Binomial-distributed with size ⌊ρa×pop[a]⌋ (the number of infections) and probability IFR[a]. For each sample of ρ[a], we draw a sample of the posterior distribution of IFRa , given byBeta(1+Da, 1+⌊ρa×popa⌋-D[a])
+Let $ρ[a]$ and $popa$ be the cumulative seroprevalence and the population estimated for age group $a$. We assume a uniform distribution in the interval [0, 1] as a non-informative prior for $IFR[a]$, and the number of deaths $D[a]$ observed for each age group $a$ is Binomial-distributed with size $⌊ρa\timespop[a]⌋$ (the number of infections) and probability $IFR[a]$. For each sample of $ρ[a]$, we draw a sample of the posterior distribution of $IFRa$ , given by
+
+$$
+Beta(1+Da, 1+⌊ρa\timespopa⌋-D[a])
+$$
 
 and compute the median, interquartile ranges (IQRs), and 95% confidence intervals of the IFR by retrieving the quantiles of the posterior distribution.
 
@@ -179,17 +199,17 @@ We note that the proposed seroreversion correction model can be used to estimate
 
 To validate the obtained IFRs, we also estimate the IFRs using the measured prevalence corrected only by the sensitivity and specificity of the assay, without explicitly accounting for seroreversion. In this validation analysis, we use a small threshold of 0.1 S/C to avoid underestimating the prevalence due to seroreversion (see Appendix 1).
 
-## Estimating the IFR for the Gamma VOC
+### Estimating the IFR for the Gamma VOC
 
 We estimate the IFR and the attack rate separately for the second, Gamma-dominant, SARS-CoV-2 wave that occurred in Manaus. The Gamma variant was first detected in Manaus in November 2020, and its prevalence among PCR-positive patients grew rapidly to 87.0% on 4 January 2021 (Faria et al., 2021). For this reason, it is reasonable to assume that all infections in Manaus that occurred after 15 December, 2020, are due to the Gamma VOC. The Gamma-dominated wave was characterised by a non-negligible proportion of reinfections (Coutinho et al., 2021; Faria et al., 2021; Prete et al., 2022). It is estimated that 13.6–39.3% of the infections in the second wave of COVID-19 epidemic in Manaus were reinfections (Prete et al., 2022), which are explained by the higher in-vitro reinfection potential of Gamma (Lucas et al., 2021) and partial immunity waning 8 months after the first surge. Thus, to calculate the attack rate and IFR of the Gamma-dominated wave, reinfections must be considered.
 
 However, estimating the incidence of reinfections among positive donors is not straightforward - as a positive result may be either primary infection or reinfection, and these cannot be distinguished using a single test result. For this reason, it was not possible to obtain a point estimate for the number of infections that happened in the second wave in Manaus. To overcome this problem, we calculate upper bounds for the attack rate of the Gamma-dominated wave in Manaus (i.e. the incidence between December 2020 and March 2021) and conversely lower bounds for the IFR of the Gamma VOC.
 
-We first estimate the attack rate of the second wave using a Bayesian model that does not take reinfections into account. This model also neglects seroreversion for individuals infected during the second wave due to the small interval of 3 months considered in this analysis (see Appendix 1 for a complete description of the model). Denoting as AR^ the attack rate estimated by this model, the true attack rate AR is given by AR=AR^+R+S, where R is the proportion of donors that were seropositive in December 2020 and subsequently had a reinfection, and S is the proportion of donors that were seropositive in December 2020 and became seronegative in the following months. Since R+S cannot be greater than the seroprevalence in December 2020 (denoted as ρDecember), the upper bound for the attack rate is ARmax=AR^+ρDecember. Therefore, the upper bound is obtained assuming that all individuals that were seropositive in December were later reinfected or were seronegative in March 2021.
+We first estimate the attack rate of the second wave using a Bayesian model that does not take reinfections into account. This model also neglects seroreversion for individuals infected during the second wave due to the small interval of 3 months considered in this analysis (see Appendix 1 for a complete description of the model). Denoting as $AR^$ the attack rate estimated by this model, the true attack rate $AR$ is given by $AR=AR^+R+S$, where $R$ is the proportion of donors that were seropositive in December 2020 and subsequently had a reinfection, and $S$ is the proportion of donors that were seropositive in December 2020 and became seronegative in the following months. Since $R+S$ cannot be greater than the seroprevalence in December 2020 (denoted as $ρ_{December}$), the upper bound for the attack rate is $AR_{max}=AR^+ρ_{December}$. Therefore, the upper bound is obtained assuming that all individuals that were seropositive in December were later reinfected or were seronegative in March 2021.
 
-To estimate ARmax, we compute the monthly number of positive tests T+n from December 2020 to March 2021 for each age-sex group, as well as the number of true positives (TP) and false negatives (FN) from convalescent plasma donors and the number of false positives (FP) and true negatives (TN) from the pre-pandemic blood donors cohort in Manaus (Supplementary file 1). The Bayesian model generates posterior samples of the crude monthly incidence and the crude seroprevalence in December ρDecember . We then correct the crude incidence by the sensitivity of the assay to obtain posterior samples of AR^, which are then added to the posterior samples of ρDecember, resulting in samples of ARmax. As explained above, the lower bound for the IFR is then calculated using the upper bound of the attack rate and the number of deaths with symptom onset between 16 December and 15 March. This procedure is repeated for each age-sex group independently and is summarised in Appendix 1.
+To estimate $AR_{max}$, we compute the monthly number of positive tests $T^{+}n$ from December 2020 to March 2021 for each age-sex group, as well as the number of true positives (TP) and false negatives (FN) from convalescent plasma donors and the number of false positives (FP) and true negatives (TN) from the pre-pandemic blood donors cohort in Manaus (Supplementary file 1). The Bayesian model generates posterior samples of the crude monthly incidence and the crude seroprevalence in December $ρ_{December}$ . We then correct the crude incidence by the sensitivity of the assay to obtain posterior samples of $AR^$, which are then added to the posterior samples of $ρ_{December}$, resulting in samples of $AR_{max}$. As explained above, the lower bound for the IFR is then calculated using the upper bound of the attack rate and the number of deaths with symptom onset between 16 December and 15 March. This procedure is repeated for each age-sex group independently and is summarised in Appendix 1.
 
-Only small estimates of the upper bound for the attack rate are informative, as in scenarios where ρDecember is small. To limit ρDecember, we estimate the incidence using a threshold of 1.4 S/C (the upper threshold recommended by the manufacturer) instead of 0.49 S/C (the lower threshold recommended by the manufacturer) and correct for sensitivity based on 163 true positives and 30 false negatives in the plasma donors cohort. Since the specificity of the test using a threshold of 1.4 is 99.9%, and since it is not straightforward to take the specificity into account when reinfections are allowed, we do not correct for specificity in this analysis.
+Only small estimates of the upper bound for the attack rate are informative, as in scenarios where $ρ_{December}$ is small. To limit $ρ_{December}$, we estimate the incidence using a threshold of 1.4 S/C (the upper threshold recommended by the manufacturer) instead of 0.49 S/C (the lower threshold recommended by the manufacturer) and correct for sensitivity based on 163 true positives and 30 false negatives in the plasma donors cohort. Since the specificity of the test using a threshold of 1.4 is 99.9%, and since it is not straightforward to take the specificity into account when reinfections are allowed, we do not correct for specificity in this analysis.
 
 We additionally computed the IFR obtained using the seroprevalence estimated by the model. It is worth noting that our seroreversion correction model only estimates the incidence among seronegative individuals, thus an S/C boosting due to reinfection is not detected by our method. As such, our model estimates the seroprevalence assuming there are no reinfections among positive individuals, underestimating the size of the second wave in Manaus.
 
@@ -197,19 +217,23 @@ The IHR for the Gamma VOC was estimated using the same procedure but using the n
 
 This method can be applied to estimate upper bounds for the attack rate of epidemics driven by other lineages with high rates of reinfection such as Delta and Omicron VOCs, but as previously highlighted the upper bound is only informative if the initial crude seroprevalence is small. This may not be the case in regions where vaccines inducing anti-N antibodies were applied, as it is not possible to distinguish vaccination from natural infection based only on anti-N serological data.
 
-## Definition of the homestay index
+### Definition of the homestay index
 
-The homestay index for the eight cities was extracted from https://bigdata-covid19.icict.fiocruz.br/. It was calculated using data from Google Mobility reports using the procedure described in Barreto et al., 2021. The homestay index is defined asHomestay Index=XH−XG+XP+XT+XR+XW5,
+The homestay index for the eight cities was extracted from https://bigdata-covid19.icict.fiocruz.br/. It was calculated using data from Google Mobility reports using the procedure described in Barreto et al., 2021. The homestay index is defined as
 
-where XH, XG,XP,XT,XR, and XW are, respectively, the variation of mobility (using pre-pandemic mobility levels as baseline) in the following place categories: residential areas, grocery and pharmacy, parks, transit stations, retail and recreation, and workplaces.
+$$
+Homestay Index=X_{H}−\frac{X_{G}+X_{P}+X_{T}+X_{R}+X_{W}}{5},
+$$
 
-## Calculation of age-standardised estimates
+where $X_{H}, X_{G},X_{P},X_{T},X_{R}$, and $X_{W}$ are, respectively, the variation of mobility (using pre-pandemic mobility levels as baseline) in the following place categories: residential areas, grocery and pharmacy, parks, transit stations, retail and recreation, and workplaces.
 
-In this work, we calculated the age-standardised mortality, the age-standardised overall IFR, and the age-standardised overall IHR. The procedure used to perform age standardisation was the same for all these quantities. We define an age-standardised variable as the estimate that would be obtained if all cities had the same age structure. Denoting η[a] as an age-specific IFR or IHR for a given city and w[a] as the proportion of the combined population of all eight cities belonging to age group a, then the age-standardised overall IFR or IHR is ∑a=1Mw[a]η[a], where M=5 is the number of age groups. Similarly, denoting μ(t,a) as the mortality for age group a and day t for a given city, the age-standardised mortality is ∑a=1Mwaμ(t,a).
+### Calculation of age-standardised estimates
+
+In this work, we calculated the age-standardised mortality, the age-standardised overall IFR, and the age-standardised overall IHR. The procedure used to perform age standardisation was the same for all these quantities. We define an age-standardised variable as the estimate that would be obtained if all cities had the same age structure. Denoting $η[a]$ as an age-specific IFR or IHR for a given city and $w[a]$ as the proportion of the combined population of all eight cities belonging to age group $a$, then the age-standardised overall IFR or IHR is $\suma=1Mw[a]η[a],$ where $M=5$ is the number of age groups. Similarly, denoting $\mu(t,a)$ as the mortality for age group $a$ and day $t$ for a given city, the age-standardised mortality is $\suma=1Mwa\mu(t,a).$
 
 ## Results
 
-## Serology assay validation and antibody waning
+### Serology assay validation and antibody waning
 
 Antibody kinetics vary with disease severity (Buss et al., 2021; Lumley et al., 2021; Takahashi et al., 2021), and whole blood donors represent predominantly asymptomatic or mild SARS-CoV-2 infections due to donation eligibility criteria (Buss et al., 2021). As such, we sought to estimate a time-to-seroreversion distribution that accurately reflected the blood donor convenience sample used in this study. We identified and tested 7675 repeat whole blood donors in Manaus who had made multiple donations throughout for 2020–2021 (Appendix 1—figure 14) and used these data to estimate the time-to-seroreversion probability distribution (see Materials and methods).
 
@@ -219,15 +243,123 @@ The results are shown in Figure 1, which compares the half-life, peak S/C values
 
 **Figure 1.:** (A) and (B) Trajectories of signal-to-cutoff (S/C) values for the Abbott anti-N chemiluminescent microparticle immunoassays in 218 SARS-CoV-2-infected convalescent plasma donors (A) and 7675 repeat whole blood donors (B). Time is measured from the first positive test. (C) and (D) Probability distribution of the half-lives following infection in SARS-CoV-2-infected convalescent plasma donors (C) and repeat whole blood donors (D). Binned (bars) and smoothed kernel (lines) densities are shown. (E), (F), and (G) Comparison of the probability distribution of the highest S/C measured in plasma donors and seropositive repeat blood donors that donated before 31 May 2020 and the S/C distribution in Manaus in May 2020. (H) Estimated time between seroconversion and seroreversion (positive-negative conversion) at a threshold of 0.49 S/C for repeat blood donors and convalescent plasma donors. In all figures, box plots show the median (central lines), interquartile range (hinges), and range extending to 1.5 times the interquartile range from each hinge (whiskers).
 
-## COVID-19 mortality across Brazilian capitals
+### COVID-19 mortality across Brazilian capitals
 
 The location of the eight Brazilian state capitals that contributed serology data is shown in Figure 2A. They collectively represent approximately 14% of the total Brazilian population. The age distributions of the eight cities differ widely (Figure 2—figure supplement 1), as such COVID-19 mortality is presented as age-standardised rates (see Appendix 1—figure 15 for the crude mortality curves). Between 1 March 2020 and 31 March 2021, the age-standardised mortality rate varied from 1.7 deaths per 1,000 inhabitants in Belo Horizonte to 5.3 deaths per 1,000 in Manaus, which had twice the mortality of Fortaleza, the city with the next highest mortality (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/78233/elife-78233-fig2-v3.jpg)
+
+**Figure 2.:** (A) Map of the Brazilian states with the location of the eight capital cities. (B) Homestay index for the eight cities. Data were obtained from Fiocruz, available at https://bigdata-covid19.icict.fiocruz.br/. (C) Cumulative mortality due to severe acute respiratory syndrome (SIVEP-Gripe system) standardised for age and sex by the direct method using the total Brazilian age-sex structure as reference. Cumulative over the period from 1 March 2020 to 31 March 2021. (D) Weekly SARS-CoV-2 seroprevalence in blood donors across eight Brazilian state capitals. Three seroprevalence estimates are shown: (i) crude seroprevalence (i.e. the proportion of positive tests); (ii) seroprevalence adjusted for sensitivity, specificity, and reweighted by age and sex but not corrected for seroreversion; and (iii) adjusted seroprevalence estimated by our seroreversion corrected model (continuous curves), which accounts for seroreversion in addition to sensitivity, specificity, and age-sex distribution. Both infections and reinfections in seronegative donors are considered to estimate the adjusted seroprevalence, which can surpass 100%. The grey-filled curve shows age-standardised mortality per 10,000 residents. Ribbons and whiskers represent 95% Bayesian credible intervals.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78233/elife-78233-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Data was extracted from https://demografiaufrn.net/laboratorios/lepp/. The proportions are relative to the population between 15 and 69.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/78233/elife-78233-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** The information on health insurance, incidence of comorbidities, number of individuals per household, as well as household income per capita was retrieved from the National Household Sample Survey (Pesquisa Nacional por Amostra de Domicílios COVID-19), a national telephone survey conducted by the Brazilian Institute of Geography and Statistics (IBGE) with over 1,888,560 interviews between May and September 2020. The data on comorbidities included chronic obstructive pulmonary disease, diabetes, hypertension, or cardiovascular disease such as myocardial infarction, angina, or heart failure.
+
 Figure 2B shows the homestay index for the eight cities (see Materials and methods for the definition). Manaus, the city with the youngest population, returned to pre-pandemic levels of mobility by July 2020, having consistently lower homestay index (i.e. higher mobility) than other cities after June 2020, whereas the other seven cities showed a relatively homogenous mobility pattern. The shape of the mortality curves also varied markedly (Figure 2D). Manaus was also an outlier in having the lowest income per capita, health insurance coverage, and lowest proportion of the population with comorbidities, along with the highest number of residents per household (Figure 2—figure supplement 2).
 
-## Blood donor serosurveillance
+### Blood donor serosurveillance
 
 Using an average of 951 monthly samples of routine whole blood donations (from March 2020 to March 2021, a total of 97,950 samples) in each of the eight cities, we measured the crude seroprevalence of anti-N IgG antibodies detectable by the Abbott CIMA (Table 1). However, these raw estimates of seroprevalence are affected by seroreversion dynamics and provide a poor guide for assessing past levels of population exposure.
+
+**Table 1.**
+ Attack rate estimates for 16 December 2020 (before the Gamma-dominated wave in Manaus) and 24 February 2021.This table contains the attack rate estimated by our seroreversion correction model along with the crude seroprevalence and the adjusted seroprevalence obtained by correcting the crude seroprevalence by sensitivity, specificity, and reweighted by age and sex, but without any correction for seroreversion. Seroprevalence estimates can surpass 100% due to reinfections. Seroprevalence estimates are only available for all cities simultaneously until 24 February 2021.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">December 2020</th>
+      <th colspan="3">February 2021</th>
+    </tr>
+    <tr>
+      <th>Crude seroprevalence (%)</th>
+      <th>Adjusted seroprevalence with no correction for seroreversion (%)</th>
+      <th>Attack rate (%)</th>
+      <th>Crude seroprevalence (%)</th>
+      <th>Adjusted seroprevalence with no correction for seroreversion (%)</th>
+      <th>Attack rate (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Belo Horizonte</td>
+      <td>12.8 (10.8–15.1)</td>
+      <td>13.1 (10.0–16.5)</td>
+      <td>20.6 (18.6–22.7)</td>
+      <td>25.2 (22.5–28.1)</td>
+      <td>27.8 (23.7–32.3)</td>
+      <td>27.8 (25.2–30.6)</td>
+    </tr>
+    <tr>
+      <td>Curitiba</td>
+      <td>15.2 (13.0–17.5)</td>
+      <td>14.4 (11.5–17.7)</td>
+      <td>19.3 (17.5–21.2)</td>
+      <td>30.8 (28.0–33.7)</td>
+      <td>31.1 (27.4–35.1)</td>
+      <td>27.6 (25.2–30.3)</td>
+    </tr>
+    <tr>
+      <td>Fortaleza</td>
+      <td>28.1 (25.4–31.0)</td>
+      <td>29.8 (25.6–34.2)</td>
+      <td>48.8 (45.4–52.7)</td>
+      <td>24.9 (22.2–27.7)</td>
+      <td>26.6 (22.6–31.0)</td>
+      <td>57.4 (53.3–62.2)</td>
+    </tr>
+    <tr>
+      <td>Manaus</td>
+      <td>34.6 (31.6–37.7)</td>
+      <td>36.1 (32.0–40.6)</td>
+      <td>75.0 (70.8–80.3)</td>
+      <td>47.7 (44.4–51.0)</td>
+      <td>52.6 (47.8–57.8)</td>
+      <td>95.8 (90.6–102.5)</td>
+    </tr>
+    <tr>
+      <td>Recife</td>
+      <td>27 (24.3–29.8)</td>
+      <td>30.7 (25.9–35.8)</td>
+      <td>49.4 (46.1–53.1)</td>
+      <td>27.4 (24.7–30.2)</td>
+      <td>27.1 (23.2–31.5)</td>
+      <td>59.9 (55.6–64.6)</td>
+    </tr>
+    <tr>
+      <td>Rio de Janeiro</td>
+      <td>24.4 (21.7–27.2)</td>
+      <td>24.8 (21.4–28.4)</td>
+      <td>42.2 (39.4–45.4)</td>
+      <td>34.5 (31.6–37.5)</td>
+      <td>36.8 (32.9–41.0)</td>
+      <td>54.7 (51.1–58.9)</td>
+    </tr>
+    <tr>
+      <td>Salvador</td>
+      <td>18.4 (16.0–21.0)</td>
+      <td>18.4 (15.3–22.0)</td>
+      <td>35.3 (32.8–38.1)</td>
+      <td>20.1 (17.6–22.7)</td>
+      <td>20.1 (16.8–23.8)</td>
+      <td>42.4 (39.5–45.8)</td>
+    </tr>
+    <tr>
+      <td>São Paulo</td>
+      <td>18.8 (16.5–21.4)</td>
+      <td>19.0 (15.9–22.4)</td>
+      <td>26.6 (24.3–29.1)</td>
+      <td>21.7 (19.1–24.4)</td>
+      <td>22.3 (19.0–25.9)</td>
+      <td>33.3 (30.3–36.5)</td>
+    </tr>
+  </tbody>
+</table>
 
 Using our Bayesian seroreversion correction model, we present in Figure 2D the age-standardised SARS-CoV-2 attack rates (i.e. the cumulative rate of the population that was infected or reinfected) as of March 2021 after accounting for test sensitivity, test specificity, and IgG seroreversion (coloured lines) along with the directly measured seroprevalence (light grey boxplots) and the estimated seroprevalence adjusting for test sensitivity and specificity (dark grey boxplots). Our results further underscore the significantly different scales of SARS-CoV-2 epidemic impact experienced across the eight cities, with the implied attack rates ranging from only 19.3% in Curitiba, to as high as 75.0% in Manaus by December 2020 (see Table 1). Alternative cumulative seroprevalence estimates produced using different time-to-seroreversion distributions are similar to those in Figure 2D and shown in Appendix 1—figure 12. We note that even though the seroprevalence estimated by our model includes reinfection in seronegative individuals, the model does not capture reinfection in already positive individuals. Therefore, the model is likely to underestimate SARS-CoV-2 attack rates in scenarios where reinfection is not rare, and the obtained seroprevalence can surpass 100% due to reinfections among seronegative individuals.
 
@@ -235,7 +367,7 @@ The slope of the seroprevalence curves (Figure 2D) also differed significantly a
 
 The estimated seroprevalence in June and July in Fortaleza was significantly smaller than the measured seroprevalence without correction for seroreversion, even though the seroprevalence estimates disaggregated by age and sex (Appendix 1—figure 16) lie within or above the confidence intervals of the measured seroprevalence. This effect happened especially in women, which had a crude seroprevalence that was significantly larger than in men in June and July 2020, but became similar in the following months. It is possible that the seroreversion rate observed in Fortaleza had been faster than the rate estimated from repeat blood donors, in which case we undercorrected for seroreversion, underestimating the attack rate. However, a more likely explanation is that samples between March and July 2020 for Fortaleza are less representative of the population, since only 39.4% from 4970 selected samples could have been retrieved and tested, compared to 97.0% for the other cities and months. As such, seropositive individuals from Fortaleza may have been more likely to donate in these months, leading to an overestimated crude seroprevalence.
 
-## Age-sex patterns in blood donor seroprevalence
+### Age-sex patterns in blood donor seroprevalence
 
 We next examine the patterns and dynamics of attack rates across different groups by disaggregating the seroprevalence data by age and sex. The seroprevalence estimates disaggregated by age and sex are shown in Figure 3 (see Appendix 1—figures 17–18 for seroprevalence disaggregated by only age or sex). Across the eight cities, our results consistently show differences between sexes - on average, men tended to have higher attack rates than women, although the degree and extent of this difference varied between cities. In São Paulo, the seroprevalence in December 2020 for men was 30.6% compared to the 23.0% estimated in women (i.e. 33.5% (95% CrI 17.7–51.9) higher, Figure 3B). By contrast, seroprevalence in Curitiba in December 2020 was similar for women and men, being only 4.65% (95% CrI –11.5 to 18.5) higher in women.
 
@@ -247,19 +379,33 @@ We also observed an extensive variation in the dynamics of population-level sero
 
 In addition to the differences in attack rates by age and sex, seroprevalence did not increase homogeneously among different age and sex groups. In Manaus, seroprevalence was significantly larger in men and younger individuals aged 16–44 in July 2020, but between July and December seroprevalence increased faster in women and donors older than 45 years, leading to smaller differences in attack rate by age and sex in December 2020 (Figure 3B). Similar patterns are also observed in Salvador, Recife, and Fortaleza, although with smaller age and sex inequalities.
 
-## Variation in the SARS-CoV-2 IFR across age groups and locations
+### Variation in the SARS-CoV-2 IFR across age groups and locations
 
 Using estimates of the cumulative number of individuals infected alongside records of COVID-19 deaths available from Brazil’s SIVEP-Gripe platform, we next calculated the IFR for each city and age group. Figure 4A presents the estimated age-specific IFRs for each municipality as of December 2020, before the Gamma VOC epidemic in Brazil. Our results show the IFR significantly increases with age, ranging from 0.03% in individuals aged 16–24 years to 1.31% in individuals aged 55–64 years. This is in-keeping with previous work highlighting a strong age dependency in COVID-19 mortality (Brazeau et al., 2020; Buss et al., 2021; O’Driscoll et al., 2021). Cities presented different age-standardised overall IFRs, being smaller in Manaus (0.24%) and higher in Curitiba (0.54%).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/78233/elife-78233-fig4-v3.jpg)
+
+**Figure 4.:** The number of deaths was obtained from the SIVEP-Gripe reporting system including all SARI deaths with symptom onset between 1 March 2020 and 15 December 2021. (A) Age-specific IFRs. (B) Association between age-standardised mortality rate and cumulative seroprevalence in blood donors for each of the eight cities by December 2020. The black line is a linear regression fit to the coloured points, each representing one of the eight cities. (C) Crude and age-adjusted overall IFRs, for the age range of 16–64 years, in each of the eight participating cities. (D) Overall IFR of the eight cities for the age range of 16–64 years obtained with our age-specific IFR estimates compared with the overall IFR calculated using age-specific IFRs from Brazeau et al., 2020 and O’Driscoll et al., 2021.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78233/elife-78233-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Note that IHR depends not only on intrinsic disease severity but also on access to healthcare and availability of hospital resources, which can vary across cities.
 
 There was a strong correlation (Pearson’s correlation = 0.92) between the age-standardised mortality rate in each city and the attack rate inferred from blood donor serosurveillance data (Figure 4B). Both the overall IFR and the overall IFR adjusted for the age structure of the city differed significantly between cities (Figure 4C), showing that the IFR differences cannot be explained only by the different age structures. Despite the differences between cities, the obtained age-specific IFRs were similar to the estimates from Brazeau et al., 2020 but higher than the estimates from O’Driscoll et al., 2021 (Figure 4D). The age-specific and overall IHR were also estimated (Figure 4—figure supplement 1) and showed similar patterns, being larger in Belo Horizonte, Curitiba, and São Paulo.
 
 The obtained IFRs and attack rates for December 2020 were validated using alternative approaches that do not correct directly for seroreversion, not depending on the proposed seroreversion correction model (see Appendix 1).
 
-## The dynamics and epidemiological impacts of the Gamma VOC in Manaus
+### The dynamics and epidemiological impacts of the Gamma VOC in Manaus
 
 As previously highlighted, we could not obtain a point estimate of the attack rate in the Gamma-dominated period in Manaus because we are unable to identify which of the seropositive blood donors are primary infections and which are reinfections. Instead, we calculated upper bounds assuming maximum proportions of reinfections. The inferred upper bound of the age-specific attack rate in the Gamma-dominated period in Manaus ranged from 30.6% (95% Bayesian CrI 22.8–41.1) to 46.0% (95% CrI 32.8–60.6) in individuals aged 45–54 and 55–64 (Figure 5—figure supplement 1), showing small variation among age groups. The estimated upper bound for the age-standardised cumulative attack rate in the second period dominated by the Gamma variant was 37.5% (95% CrI 35.3–42.6), significantly smaller than the cumulative attack rate of 75.0% (Figure 2) estimated for the first period dominated by non-Gamma variants.
 
 Comparing to the COVID-19 attributable hospitalisations and deaths reported to the SIVEP database, we next used the estimated upper bounds of the age-specific attack rates in the Gamma period in Manaus to calculate lower bounds of the age-specific IHR and IFR for the Gamma period. We then compared the IFRs and IHRs obtained with the attack rate estimated for the period during which non-Gamma variants dominated (from 1 March 2020 to 15 December 2020). The resulting age-specific IFRs and IHRs are shown in Figure 5A, B, respectively, and the relative risks obtained using the IFR or IHR in December 2020 as baseline in Figure 5C, D. The lower bound for the IHR increased in all age groups, from 34.4% (95% CrI 6.5–70.0) in individuals aged 16–24 to 163.4% (95% CrI 90.9–264.3) in individuals aged 45–54 when compared to the IHR estimated for the non-Gamma period. The increased hospitalisation risk combined with an increased in-hospital fatality rate (HFR, defined as the number of deaths per hospitalisation) during the second wave (Appendix 1—figure 19) resulted in an increased age-specific IFR, with a lower bound increasing 93.8% (95% CrI 36.4–186.4) in individuals aged 55–64 to 273.5% (95% CrI 167.8–423.4%) in individuals aged 45–54 when compared to the first wave (Figure 5C). As such, even though the IFR and IHR increased for all age groups during the Gamma-dominated period, this difference was more significant in younger age groups. The obtained lower bound for the overall IFR was 0.527% (95% CrI 0.447–0.630), 2.91 (95% CrI 2.43–3.53) times higher than the estimated IFR for the first wave in Manaus.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78233/elife-78233-fig5-v3.jpg)
+
+**Figure 5.:** (A) Estimated infection fatality rates (IFRs) and (B) infection hospitalisation rates (IHR s) for Manaus in the periods from 1 March 2020 to 15 December 2020 (non-Gamma dominated) and 16 December 2020 to 31 March 2021 (Gamma dominated). For the Gamma-dominated period, estimates shown are lower bounds that were calculated assuming a maximum proportion of reinfections (see Materials and methods). (C) Relative risks of the lower bound estimate of the iIFRs in the Gamma-dominated period using the estimated IFRs in the non-Gamma period as reference and (D) similarly for IHRs.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78233/elife-78233-fig5-figsupp1-v3.jpg)
 
 ## Discussion
 

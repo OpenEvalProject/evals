@@ -12,7 +12,7 @@
 
 ## Abstract
 
-William R Bishai , director of the KwaZulu-Natal Research Institute for Tuberculosis and HIV (K-RITH), argues that the best place to carry out research into a disease is in its midst.
+William R Bishai, director of the KwaZulu-Natal Research Institute for Tuberculosis and HIV (K-RITH), argues that the best place to carry out research into a disease is in its midst.
 
 ## A new approach
 
@@ -54,7 +54,7 @@ Since its official opening on October 9 last year, K-RITH has been ramping up to
 
 Just as important, K-RITH will address the two most pressing problems in the fight against TB—the lack of good, quick diagnostics and biomarkers, and the dearth of new drugs and treatments. The mainstay TB diagnostic is still the basic smear microscopy technique used by Robert Koch to discover M. tuberculosis in 1882: get patients to cough up a sputum sample, stain it with dye, wash it with acid alcohol and put it under a microscope to look for TB bacteria. However, the test spots only about half of those with active disease, and the failure rate is even higher in those with HIV, who often have little disease in their lungs. Most of the patients missed by the sputum test can be diagnosed with a culture test, but because M. tuberculosis grows so slowly, a culture takes 10 to 60 days. Many patients from Tugela Ferry with XDR-TB died before they were even diagnosed. And neither the sputum nor the first-line culture tests can determine whether TB strains are resistant to some or all drugs.
 
-There has been some progress in developing better diagnostics. The GeneXpert system developed by Cepheid, Inc. and the Foundation for Innovative New Diagnostics, uses new technology to simultaneously detect DNA sequences specific both to TB and to resistance to the drug rifampicin, and has been hailed as a potential game-changer (
+There has been some progress in developing better diagnostics. The GeneXpert system developed by Cepheid, Inc. and the Foundation for Innovative New Diagnostics, uses new technology to simultaneously detect DNA sequences specific both to TB and to resistance to the drug rifampicin, and has been hailed as a potential game-changer (Evans, 2011). But the test is relatively expensive, misses a fraction of infected smear-negative TB patients, and tells us nothing about resistance to the nine other commonly used drug classes.
 
 ![Figure](https://cdn.elifesciences.org/articles/00639/elife-00639-fig2-v1.jpg)
 

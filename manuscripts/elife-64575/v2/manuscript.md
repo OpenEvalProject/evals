@@ -8,17 +8,17 @@
 
 ### Affiliations
 
-1. https://ror.org/00hx57361 Princeton Neuroscience Institute, Princeton University Princeton United States
-2. https://ror.org/00971b260 DeepMind London United Kingdom
-3. https://ror.org/02jx3x895 Department of Ophthalmology, University College London London United Kingdom
-4. https://ror.org/02jx3x895 Gatsby Computational Neuroscience Unit, University College London London United Kingdom
-5. https://ror.org/00hx57361 Howard Hughes Medical Institute and Department of Molecular Biology, Princeton University Princeton United States
+1. Princeton Neuroscience Institute, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
+2. DeepMind London United Kingdom ([ROR:00971b260](https://ror.org/00971b260))
+3. Department of Ophthalmology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+4. Gatsby Computational Neuroscience Unit, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+5. Howard Hughes Medical Institute and Department of Molecular Biology, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
 
 † Corresponding author
 
 ## Abstract
 
-Humans and animals make predictions about the rewards they expect to receive in different situations. In formal models of behavior, these predictions are known as value representations, and they play two very different roles. Firstly, they drive choice : the expected values of available options are compared to one another, and the best option is selected. Secondly, they support learning : expected values are compared to rewards actually received, and future expectations are updated accordingly. Whether these different functions are mediated by different neural representations remains an open question. Here, we employ a recently developed multi-step task for rats that computationally separates learning from choosing. We investigate the role of value representations in the rodent orbitofrontal cortex, a key structure for value-based cognition. Electrophysiological recordings and optogenetic perturbations indicate that these representations do not directly drive choice. Instead, they signal expected reward information to a learning process elsewhere in the brain that updates choice mechanisms.
+Humans and animals make predictions about the rewards they expect to receive in different situations. In formal models of behavior, these predictions are known as value representations, and they play two very different roles. Firstly, they drive choice: the expected values of available options are compared to one another, and the best option is selected. Secondly, they support learning: expected values are compared to rewards actually received, and future expectations are updated accordingly. Whether these different functions are mediated by different neural representations remains an open question. Here, we employ a recently developed multi-step task for rats that computationally separates learning from choosing. We investigate the role of value representations in the rodent orbitofrontal cortex, a key structure for value-based cognition. Electrophysiological recordings and optogenetic perturbations indicate that these representations do not directly drive choice. Instead, they signal expected reward information to a learning process elsewhere in the brain that updates choice mechanisms.
 
 ## Introduction
 
@@ -36,13 +36,25 @@ Here, we adopt a computational approach that separates learning from choosing, e
 
 **Figure 1.:** (a) Rat two-step task. The rat initiates a trial by entering the top center port (i), then chooses to enter one of two choice ports (ii). This leads to a probabilistic transition (iii) to one of two possible paths. In both paths, the rat enters the bottom center port (v), causing one of two outcome ports to illuminate. The rat enters that outcome port (v), and receives a reward (vi). (b) Example behavioral session. At unpredictable intervals, outcome port reward probabilities flip synchronously between high (80%) and low (20%). The rat adjusts choices accordingly. (c) The fraction of trials on which each rat (n=19) selected the choice port whose common (80%) transition led to the outcome port with the currently higher reward probability, as a function of the number of trials that have elapsed since the last reward probability flip.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig2-v2.jpg)
+
+**Figure 2.:** (a) Schematic of the planning strategy. Agent maintains value estimates (V) for each outcome port, based on a history of recent rewards at that port; as well as value estimates (Q) for each choice port, which are computed on each trial based on the outcome values and the world model (P(o|c)). Choices are drawn probabilistically, based on a weighted combination of these values and of the influence of three other behavioral patterns: perseveration, novelty preference, and bias (see Methods for details). (b): Mixture weights of the different components of the cognitive model fit to rats’ behavioral data. shown for electrophysiology rats (n=6, squares), optogenetics rats (n=9, triangles), and sham optogenetics rats (n=4, diamonds). (c) Change in quality of model fit resulting from removing components from the model (red) or adding additional components (green). (d) Fit weights of the trial-history regression for an example rat (left) and averaged over all rats (right). (e) Definitions of the four behavioral indices in terms of the fit stay/switch regression weights. The planning index for a particular rat is defined as the sum of that rat’s common-reward and the uncommon-omission weights, minus the sum of its common-omission and uncommon-reward weights. The ‘stay’ index is defined as the sum of all weights. (f) Values of the four behavioral indices for all rats. The planning and stay indices are large and positive for all rats, while the common-stay/uncommon-switch and win-stay/lose-switch indices are smaller and inconsistent in sign.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Fit learning rate parameters from the mixture-of-agents model for the model-based planning agent and for the perseverative agent. Learning rates for perseveration are smaller for all rats, indicating that this agent takes into account a larger number of recent trials than the model-based agent does. Shapes of symbols indicate rats participating in the electrophysiology (squares), optogenetics (triangles), or sham optogenetics (diamonds) experiments.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The planning strategy is characterized by a greater tendency to repeat choices that lead to rewards following a common transition than following an uncommon transition (solid blue line above dotted blue line), as well as a greater tendency to repeat choices that lead to omissions following an uncommon transition than following a common transition (dotted red line above solid red line). All nineteen rats show evidence of such a strategy.
+
 We asked whether OFC neuron firing rates were correlated with the expected values of the items being learned about, the values being chosen between, or both. We find that neurons in the OFC correlate significantly with the expected values of the items being learned about, but only weakly with the expected values of the items being chosen between. This indicates that, within a repeated-trials task, neural representations in the OFC carry value information that is largely selective for a role in learning, but only weakly carry value information selective for a role in choice. To causally probe whether OFC plays a role in learning, in choosing, or in both processes, we transiently silenced OFC activity, and found that the pattern of behavior induced by this silencing was reproduced in our computational model only when we disrupted only the role of expected value in learning. Disrupting the role of value in choice did not reproduce this effect. In this model, learning could still occur, but was impaired due to one of its key input signals, expected value, being disrupted.
 
 These results suggest that, even when choosing and learning are commingled on the same trial-by-trial timescale, value representations in the rodent OFC do not drive choices directly, but instead support learning. Moreover, we identify a specific computational role for OFC within learning: it supplies information about expected outcomes to a separate learning process, elsewhere in the brain, that updates value estimates, which can then in turn be used to drive future behavior (Schoenbaum et al., 2011).
 
 ## Results
 
-## Planning strategy in the two-step task separates choosing and learning
+### Planning strategy in the two-step task separates choosing and learning
 
 We trained rats to perform a multistep decision-making task in which they adopt a strategy of model-based planning (Miller et al., 2017). The structure of the task was as follows: The rat initiated each trial by poking its nose into a neutral center port, and then selected one of two choice ports (Figure 1a i,ii). One choice caused a left outcome port to become available with probability 80% (‘common’ transition), and a right outcome port to become available with probability 20% (‘uncommon’ transition), while the opposite choice reversed these probabilities (Figure 1a iii). These transition probabilities were fixed for each rat, but counterbalanced across rats. Following the initial choice, an auditory cue informed the rat which of the two outcome ports had in fact become available on that trial and, after poking into a second neutral center port, the available outcome port was further indicated by a light (Figure 1a iv,v). The rat was required to poke into the available outcome port (no choice in this step), where it received a water reward with some probability (Figure 1a v,vi). The reward probability at each outcome port on each trial was either 80% or 20%, and these probabilities reversed at unpredictable intervals (Figure 1b). Earning a high reward rate on this task requires learning which outcome port currently has the higher reward probability, and choosing the choice port that is more likely to lead to that outcome port. Rats did this successfully, switching their average choices to the appropriate choice port within several trials of a reward probability reversal (Figure 1b and c).
 
@@ -56,21 +68,97 @@ Our second way of validating the cognitive model makes use of a trial-history re
 
 This cognitive model allows us to probe the role of the OFC in two key ways. First, the model can be run using choices and rewards actually experienced by the rat to provide trial-by-trial timecourses for the expected values of the choice ports (Q) and outcome ports (V). We will use these timecourses (Daw, 2011) as estimates of the value placed by the rat on the various ports, and look for correlates of them in the activity of OFC neurons. Second, the model can be altered selectively and run to generate synthetic behavioral datasets, providing predictions about the specific behavioral effects of particular cognitive impairments. We will selectively disrupt choice port value information (which directly drives choice) or outcome port value information (which participates in learning) within the model on a random subset of trials. We will compare these synthetic datasets to real behavioral datasets from rats in which we silence neural activity in the OFC.
 
-## Neural activity in orbitofrontal cortex codes expected value of outcomes
+### Neural activity in orbitofrontal cortex codes expected value of outcomes
 
 We implanted a recording array into the left OFC (Figure 3d, Figure 3—figure supplement 1) of each of six rats, and performed electrophysiological recordings during 51 behavioral sessions. This dataset yielded 477 activity clusters, including both single-unit and multi-unit recordings. We characterized whether the activity of each unit encoded three different types of value information, which we estimated trial-by-trial using fits of the cognitive model (Daw, 2011). The first type was the difference in expected value between the left and the right choice ports, which we term ‘choice value difference’. Representations of this kind would be consistent with a role in driving choice. The second was the expected value of the choice port that the rat actually selected on that trial, termed ‘chosen value’. This signal has also been proposed to play a role in the choice process (Rustichini and Padoa-Schioppa, 2015). The last was the expected value of the outcome port visited by the rat on that trial, which we term ‘outcome value’. Representations of outcome value are predictions about immediate reward probability, and are consistent with a role in learning. We sought to determine whether our neural recording data contained correlates of choice-related value signals, outcome-related value signals, or both.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig3-v2.jpg)
+
+**Figure 3.:** (a) Example unit whose firing rate differs both with the rat’s choice and with the difference in value between the two possible choices. An analysis using coefficient of partial determination (CPD) reveals choice coding, but no coding of expected value. (b) Example unit whose firing rate differs both with the rat’s choice and with the expected value of the choice port visited on that trial. CPD analysis reveals coding of both of these variables, though with different timecourses. (c) Example unit whose firing rate differs both with reward received and with the expected value of the outcome port visited. CPD analysis reveals coding of both of these variables, with different timecourses. (d) Approximate location of recording electrodes targeting OFC, which in rats is represented by regions LO and AIv (Paxinos and Watson, 2006; Price, 2007; Stalnaker et al., 2015), estimated using histology images (Figure 3—figure supplement 1).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Brightfield image of a coronal section from a rat implanted with an electrode array targeting OFC. The locations of the electrode tips are visible, as is damage done when the array was removed post-mortem. Red box indicates the estimated location of electrode tips.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Correlations among regressors motivate the use of a coefficient of partial determination analysis to quantify the unique contribution of each predictor to explaining neural activity.
 
 Determining whether a unit encodes these quantities requires separating their influence from that of other variables with which they may be correlated. For example, if the firing rate of a unit differs between left-choice and right-choice trials, it will also differ between trials in which the left port had a higher value and those in which the right port had a higher value (Figure 3a). This happens because the rat is more likely to select the choice port that is currently higher-valued. Similarly, if the firing rate of a unit differs between rewarded and unrewarded trials, it will also differ between trials with a high and a low outcome port value (Figure 3c). To quantify coding strength in light of these and other correlations (Figure 3—figure supplement 2), we used a multiple regression approach. Specifically, we fit a separate regression model to predict the spike counts of each unit in each of several 200ms time bins taken relative to the port entry events, using as regressors the potentially learning-related events from one trial (choice port, outcome port, reward, and their interactions, as well as outcome value) as well as the potentially choosing-related variables from the next trial (choice port, choice value difference, and chosen value). We then computed for each regressor the coefficient of partial determination (CPD, also known as ‘partial r-squared’; Cai et al., 2011; Kennerley et al., 2011), which quantifies the percentage of remaining variance explained by that regressor, once the influence of all other regressors has been accounted for (Figure 3abc, bottom row).
 
 Coefficients of partial determination can be computed for a particular fit (one unit in one time bin), or for a collection of fits (aggregating variance over units, bins, or both). First, we considered coding in individual clusters (single- or multi-unit), aggregating data from time bins within a one-second window around the time of each nose port entry. We assess significance by constructing for each unit a set of null datasets by circularly permuting the trial labels, and comparing the CPDs in the true dataset to those in the null datasets. Using this method, we found that a large fraction of units significantly modulated their firing rate according to outcome-value, with the largest fraction doing so at outcome port entry (170/477, 36%; permutation test at p<0.01). In contrast, a relatively small fraction of units modulated their firing rate according to choice-value-difference (largest at outcome port entry: 34/477, 7%), or to chosen-value (largest at choice port entry: 61/477, 13%). Furthermore, the magnitude of CPD was larger for outcome-value than for the other value regressors. Considering the port entry event with the strongest coding for each regressor, the mean cluster had CPD for outcome-value 3.5 x larger than for choice-value-difference (p=10–24, sign rank test; median unit 1.6 x larger; Figure 4a, note logarithmic axes), and 3.7 x larger than for chosen-value (p=10–14; median unit 1.7 x; Figure 4a). Considering each 200ms time bin separately, we find the fraction of units encoding outcome value rises shortly before step two initiation and peaks sharply around the time of outcome port entry, the fraction coding choice value difference peaks at outcome port entry as well, while the fraction coding chosen value peaks at the time of choice port entry (Figure 4—figure supplement 1). Next, we considered coding at the population level, computing CPD over all clusters for each time bin and subtracting the average CPD from the null datasets (Figure 4b). We found robust population coding of outcome-value, beginning at the time of entry into the bottom-center port, and peaking shortly after entry into the outcome port at 0.82%. In contrast, population coding of choice-value-difference and chosen-value was low in all time bins, reaching a maximum of only 0.29%. Population coding in the OFC was also present for other regressors in our model, especially for reward, choice, and outcome port (Figure 4c).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig4-v2.jpg)
+
+**Figure 4.:** (a) Left: Scatterplot showing CPD for each unit (n=477) for the outcome-value regressor against CPD for the choice-value-difference regressor, both computed in a one-second window centered on entry into the outcome port. Right: Scatterplot showing CPD for outcome-value, computed at outcome port entry, against CPD for the chosen-value regressor, computed at choice port entry. (b). Timecourse of population CPD for the three expected value regressors. We have subtracted from each CPD the mean CPD found in permuted datasets. (c) Timecourse of population CPD for the remaining regressors in the model, which reflect observable variables and interactions between them.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Units were deemed significant if they earned a coefficient of partial determination larger than that of 99% of permuted datasets for that regressor in that time bin. Gray shading indicates a threshold for population-level significance (17/477 units; equivalent to p=2 × 10–6 by a Bernoulli test uncorrected; p<0.01 after Bonferroni correction).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Above. Right: Scatterplot showing CPD for each single unit (n=251) for the outcome-value regressor against CPD for the choice-value-difference regressor, both computed in a one-second window centered on entry into the outcome port. Right: Scatterplot showing CPD for outcome-value, computed at outcome port entry, against CPD for the chosen-value regressor, computed at choice port entry. below. As above but for multi-unit clusters (n=226). In all panels, CPD for outcome value is greater than for choice-related value information (all p<10–7, signrank test. See also Figure 4a).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** See also Figure 2a and c.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Above: Population CPD computed separately for units from each rat in the dataset. Below: Number of single-unit and number of multi-unit clusters recorded in each rat.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Units were deemed significant if they earned a coefficient of partial determination larger than that of 99% of permuted datasets for that regressor in that time bin. Gray shading indicates a threshold for rat-level significance (p=2 × 10–6 by a Bernoulli test uncorrected; p<0.01 after Bonferroni correction).
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** The coefficient of partial determination earned by each regressor is sensitive to our choice of which other regressors to include in the model. The strength of this sensitivity depends on the correlation between the regressors (adding an orthogonal regressor will not affect CPD; adding a perfectly correlated regressor will reduce CPD to zero). The ‘choice value difference’ regressor in our model is highly correlated with one of our other regressors ‘outcome port by reward interaction’. This is because, in our model, outcome port and reward information are used to update outcome port values, which in turn update choice port values: a reward at the left outcome port or an omission at the right outcome port will increase the relative value of one choice port; a reward at the right outcome port or an omission at the left outcome port will increase the relative value of the other. This raises the possibility that our finding that the choice value difference regressor earns a relatively small CPD is an artifact of this correlation. To check this, we re-ran our regression analysis without the ‘outcome port by reward interaction’ regressor. Plots of individual clusters (a) and of the population timecourse (b) show that choice value difference still earns ambler CPDs than outcome value.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** To compute choice-related value regressors, we used the expected values of the model-based planning component of our cognitive model (Q, see Figure 2a). However, the decision variable used by our model is not this expected value in isolation, but instead a weighted sum including expected value as well as variables related to perseveration and novelty preference (P and N, Figure 2a). Here, we compute analogs of choice value difference and of chosen value in terms of this decision variable instead of in terms of Q.
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig4-figsupp8-v2.jpg)
+
+**Figure 4—figure supplement 8.:** It has been suggested that OFC causes value-guided learning in other brain regions via signaling of reward prediction errors (RPE; Banerjee et al., 2020). RPE is defined as the difference between the reward that was actually experienced and the reward that was expected. Above: We tested whether our OFC units tended to carry such a signal by examining the fit weights from our regression model in the time bins immediately following reward, following the method of Sul et al., 2010. A unit signaling RPE in our task is expected to have equal and opposite regression weights for reward and for outcome port expected value. Considering all units, we find that there is a weak but significant tendency for these weights to have opposite sign in two of the time bins (400ms: 257/477, 54%, p=0.04; 600ms: 262/477, 55%, p=0.01). Considering only units which correlate significantly with both reward and expected value, there was a similar trend (400ms: 37/62, 60%, p=0.05; 600ms: 39/66, 59%, p=0.05). These results are consistent with the idea that OFC contains units which correlate with RPE, with the caveats that it also contains a substantial number of units which correlate with its opposite (reward expected plus reward received), as well as units which correlate with expected reward without correlating with reward itself at all. Below: Example units illustrating these three patterns.
+
 Similar results were found when considering single- and multi-unit clusters separately (Figure 4—figure supplement 2, Figure 4—figure supplement 3), as well as when separating the units recorded from individual rats (Figure 4—figure supplement 4, Figure 4—figure supplement 5). These results were robust to replacing the choice-related value regressors with analogs that consider the full decision variable, including contributions from perseveration and novelty preference as well as expected value (Figure 4—figure supplement 6). They were also robust to removing a regressor (interaction of reward and outcome port) that was particularly highly correlated with choice value difference (Figure 4—figure supplement 6). Across all of these variants a clear pattern was present: neural activity in OFC encodes the expected value of the visited outcome port more strongly than it encodes either type of value information about the choice ports. In computational models (Figure 2a), this type of value information plays a role in supporting learning, but does not play a direct role in choice. Our neural recording results therefore suggest that the OFC may play a role in supporting learning, but cast doubt on the idea that they play a strong role in driving choice directly.
 
-## Inactivations of OFC impair update process, not choice process
+### Inactivations of OFC impair update process, not choice process
 
 To assess the causal role of the OFC’s value signals, we silenced neural activity using the optogenetic construct halorhodopsin (eNpHR3.0; Figure 5b, Figure 5—figure supplement 1) during either the outcome period (beginning at entry into the outcome port and lasting until the end of reward consumption), the choice period (beginning at the end of reward consumption and lasting until entry into the choice port on the subsequent trial), or both periods (Figure 5a, Figure 5—figure supplement 2) in an experimental group of nine rats (577 total sessions). Previous work (Miller et al., 2017) had shown that whole-session pharmacological silencing of the OFC specifically attenuates the ‘planning index’ (Figure 2e, see Methods), which quantifies the extent to which the rats’ choices are modulated by past trials’ outcomes in a way consistent with planning. Here, we found that optogenetic inactivation spanning both the outcome and the reward period reproduced this effect, decreasing the planning index on the subsequent trial (p=0.007, t-test with n=9 rats; Figure 5c). Inactivation during the outcome period alone also decreased the planning index on the subsequent trial (p=0.0007, Figure 5c), but inactivation during the choice period alone did not (p=0.64). Comparing the strength of the effect across time periods, we found that both reward-period and both-periods inactivation produced effects that were similar to one another (p=0.5), but greater than the effect of choice-period inactivation (p=0.007, p=0.02). We repeated the experiment in a control group of four rats (109 total sessions) that were implanted with optical fibers but did not express halorhodopsin. This sham inactivation produced no significant effect on the planning index for any time period (all p>0.15, t-test with n=4 rats; Figure 5c, grey diamonds), and experimental and control rats differed in the effects of outcome-period and both-period inactivation (p=0.02, p=0.02, two-sample t-tests). As in our previous study, inactivation of OFC did not significantly affect other regression-based behavioral indices (Figure 5—figure supplement 3). Together, these results indicate that silencing the OFC at the time of the outcome (and therefore the time of peak outcome-value coding, Figure 4b) is sufficient to disrupt planning behavior.
 
-To help understand which aspect of the behavior was affected by silencing the OFC, we used our cognitive model (Figure 2a) to perform three different types of synthetic inactivation experiments. Each of these produced a distinct pattern of behavior, most clearly visible when we separately computed the contribution to the planning index of the past three trials’ outcomes (Figure 5e). To simulate an effect of inactivation on the choice process, we decreased the value of the planning agent’s weighting parameter (βq; Figure 2a, ‘choose a choice port’) on synthetic inactivation trials, effectively reducing the influence of choice port value representations on choice. This resulted in choices that were more noisy in general, affecting the influence of all past outcomes (Figure 5e, left). To simulate effects of inactivation on the learning process, we reparameterized the agent’s learning equation (Figure 2a, ‘update outcome port values’) to facilitate trial-by-trial alterations of learning parameters:V(Ot)←αvalueV(Ot)+αreward−Rt+(1−αvalue−αreward)−E[V]
+![Figure 5.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig5-v2.jpg)
+
+**Figure 5.:** (a) Three time periods of inactivation. Outcome-period inactivation began when the rat entered the outcome port, and continued until the rat exited the port, or for a minimum of two seconds. Choice-period inactivation began after this outcome period, and continued until the rat entered the choice port on the next trial, or for a maximum of 15 s. Both-period inactivation encompassed both of these periods. (b) Target location for optical fiber implants. See Figure 5—figure supplement 1 for estimated actual locations in individual rats. Coronal section modified from Paxinos and Watson, 2006. (c) Effects of inactivation on the planning index on the subsequent trial for experimental rats (n=9, colored triangles) and sham-inactivation rats (n=4, gray diamonds). Bars indicate standard errors across rats. (d) Simplified schematic of the representations and computations that take place in our software agent between the delivery of the outcome on one trial and the choice on the next. Compare to Figure 2a. (e) Analysis of synthetic datasets created by disrupting different representations within the software agent on a subset of trials. Each panel shows the contribution to the planning index of trial outcomes at different lags on choices, both on control trials (black) and on trials following disruption of a representation (red). Bars indicate standard error across simulated rats (see Methods) (f) Same analysis as in c, applied to data from optogenetic inactivation of the OFC during the outcome period.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Example brightfield and YFP images of a coronal section taken from a rat implanted with optical fibers and infected with AAV-halorhodopsin. The location of the optical fiber on the right is visible as a scar (optical fiber on the left is visible in a different coronal section in this rat). The area of expression is visible in the YFP channel. Below: Estimates of the locations of all recording electrodes and fiber tips, obtained by comparing histology images to the reference atlas (Paxinos and Watson, 2006).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The ‘outcome period’ on each trial was defined as beginning when the rat entered the outcome port, and ending either when the rat had left the outcome port for a continuous period of one second or more or after 2.5 s (unrewarded trials) or 5 s (rewarded trials). The ‘choice period’ was defined as beginning at the end of the outcome period, and ending when the rat entered the choice port on the subsequent trial. ‘Both periods’ inactivation began at entry into the outcome port and ended at entry into the choice port on the subsequent trial. For both ‘choice period’ and ‘both periods’ inactivation, an upper limit of 15 seconds was imposed. Trials on which inactivation ended due to this limit were not analyzed. Above: Histograms of the total duration of inactivation in each condition. Below: Relationship between the timebins used in electrophysiology analysis and the optogenetic inactivation periods. Line plot shows the population CPD for each of the three value-related regressors from the electrophysiology experiment (identical to Figure 4b). Red and green stripes show the probability of each timebin being in each of the optogenetic inactivation periods, computed using the optogenetics dataset.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Above: Regression-based behavioral indices computed considering only trials that were not preceded by inactivation, shown separately for optogenetics rats (triangles) and sham optogenetics rats (diamonds). Behavior was similar in the two groups of rats. Below: Difference in behavioral indices between trials that were preceded by inactivation in each time period and those that were not preceded by inactivation. Only for the planning index were there significant differences between optogenetics and sham optogenetics rats (p-values shown from two-sample rank sum test).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Weights were estimated separately for trials preceded by (a) no inhibition, (b) inhibition during the reward period, (c) inhibition during the choice period, or (d) inhibition during both periods. Weights for individual rats are shown in Figure 5—figure supplement 5.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/64575/elife-64575-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** Weights were estimated separately for trials preceded by no inhibition, inhibition during the reward period, inhibition during the choice period, or inhibition during both periods.
+
+To help understand which aspect of the behavior was affected by silencing the OFC, we used our cognitive model (Figure 2a) to perform three different types of synthetic inactivation experiments. Each of these produced a distinct pattern of behavior, most clearly visible when we separately computed the contribution to the planning index of the past three trials’ outcomes (Figure 5e). To simulate an effect of inactivation on the choice process, we decreased the value of the planning agent’s weighting parameter (βq; Figure 2a, ‘choose a choice port’) on synthetic inactivation trials, effectively reducing the influence of choice port value representations on choice. This resulted in choices that were more noisy in general, affecting the influence of all past outcomes (Figure 5e, left). To simulate effects of inactivation on the learning process, we reparameterized the agent’s learning equation (Figure 2a, ‘update outcome port values’) to facilitate trial-by-trial alterations of learning parameters:
+
+$$
+V(O_{t})←\alpha_{value}V(O_{t})+\alpha_{reward}−R_{t}+(1−\alpha_{value}−\alpha_{reward})−E[V]
+$$
 
 where αvalue and αreward are now separate learning rate parameters, and E[V] represents the expected reward of a random-choice policy. We made a corresponding change to the symmetric update for the outcome port that was not visited (see Methods). To simulate an effect of inactivation on the role of reward in learning, we decreased αreward on synthetic inactivation trials. This resulted in a change specifically to the influence of the outcome during which we performed the synthetic inactivation on future choice (Figure 5e, middle). To simulate an effect of inactivation on the role of value in learning, we decreased αvalue on synthetic inactivation trials. This resulted in a change to the influence of outcomes from previous trials (Figure 5e right) but not of the trial during which synthetic inactivation was actually performed. This is because value acts as a summarized memory of previous trials’ outcomes, and attenuating it affects the influence of all of these.
 
@@ -100,83 +188,139 @@ In summary, we find that rat behavior on a multi-step decision task dissociates 
 
 ## Methods
 
-## Subjects
+### Subjects
 
 All subjects were adult male Long-Evans rats (Taconic Biosciences; Hilltop Lab Animals), placed on a restricted water schedule to motivate them to work for water rewards. Rats were housed on a reverse 12 hr light cycle and trained during the dark phase of the cycle. Rats were pair housed during behavioral training and then single housed after being implanted with microwire arrays or optical fiber implants. All experimental procedures were performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health., and were approved by the Princeton University Institutional Animal Care and Use Committee (protocol #1853). No explicit power analysis was used to determine the number of rats; instead we aimed for a sample size consistent with previous studies using similar tools.
 
-## Two-step behavioral task
+### Two-step behavioral task
 
 Rats were trained on a two-step behavioral task, following a shaping procedure which has been previously described (Miller et al., 2017). Rats performed the task in custom behavioral chambers containing six ‘nose ports’ arranged in two rows of three, each outfitted with a white LED for delivering visual stimuli, as well as an infrared LED and phototransistor for detecting rats’ nose entries into the port. The left and right ports in the bottom row also contained sipper tubes for delivering water rewards. The rat initiated each trial by entering the illuminated top center port, causing the two top side ports (‘choice ports’) to illuminate. The rat then made his choice by entering one of these ports. Immediately upon entry into a choice port, two things happened: the bottom center port light illuminateed, and one of two possible sounds began to play, indicating which of the two bottom side ports (‘outcome ports’) would eventually be illuminated. The rat then entered the bottom center port, which caused the appropriate outcome port to illuminate. Finally, the rat entered the outcome port which illuminated, and received either a water reward or an omission. Once the rat had consumed the reward, a trial-end sound played, and the top center port illuminated again to indicate that the next trial was ready.
 
 The selection of each choice port led to one of the outcome ports becoming available with 80% probability (common transition), and to the other becoming available with 20% probability (uncommon transition). These probabilities were counterbalanced across rats, but kept fixed for each rat for the entirety of his experience with the task. The probability that entry into each bottom side port would result in reward switched in blocks. In each block one port resulted in reward 80% of the time, and the other port resulted in reward 20% of the time. Block shifts happened unpredictably, with a minimum block length of 10 trials and a 2% probability of block change on each subsequent trial.
 
-## Analysis of behavioral data: Planning index and model-free index
+### Analysis of behavioral data: Planning index and model-free index
 
-We quantify the effect of past trials and their outcomes on future decisions using a logistic regression analysis based on previous trials and their outcomes (Lau and Glimcher, 2005; Miller et al., 2017). We define vectors for each of the four possible trial outcomes: common-reward (CR), common-omission (CO), uncommon-reward (UR), and uncommon-omission (UO), each taking on a value of +1 for trials of their type where the rat selected the left choice port, a value of –1 for trials of their type where the rat selected the right choice port, and a value of 0 for trials of other types. We use the following regression model:(1)log(Pleft(t)Pright(t))=∑τ=1TβCR(τ)⋅CR(t−τ)+∑τ=1TβCO(τ)⋅CO(t−τ)+∑τ=1TβUR(τ)⋅UR(t−τ)+∑τ=1TβUO(τ)⋅UO(t−τ)
+We quantify the effect of past trials and their outcomes on future decisions using a logistic regression analysis based on previous trials and their outcomes (Lau and Glimcher, 2005; Miller et al., 2017). We define vectors for each of the four possible trial outcomes: common-reward (CR), common-omission (CO), uncommon-reward (UR), and uncommon-omission (UO), each taking on a value of +1 for trials of their type where the rat selected the left choice port, a value of –1 for trials of their type where the rat selected the right choice port, and a value of 0 for trials of other types. We use the following regression model:
+
+$$
+log(\frac{P_{left}(t)}{P_{right}(t)})=\sum\tau=1T\beta_{CR}(\tau)⋅CR(t−\tau)+\sum\tau=1T\beta_{CO}(\tau)⋅CO(t−\tau)+\sum\tau=1T\beta_{UR}(\tau)⋅UR(t−\tau)+\sum\tau=1T\beta_{UO}(\tau)⋅UO(t−\tau)
+$$
 
 where βcr, βco, βur, and βuo are vectors of regression weights which quantify the tendency to repeat on the next trial a choice that was made trials ago and resulted in the outcome of their type, and T is a hyperparameter governing the number of past trials used by the model to predict upcoming choice, which was set to 3 for all analyses.
 
-We expect model-free agents to repeat choices which lead to reward and switch away from those which lead to omissions Daw et al., 2011, so we define a model-free index for a dataset as the sum of the appropriate weights from a regression model fit to that dataset:(2)ModelFreeIndex=∑τ=1T[βCR(τ)+βUR(τ)]−∑τ=1T[βUO(τ)+βCO(τ)]
+We expect model-free agents to repeat choices which lead to reward and switch away from those which lead to omissions Daw et al., 2011, so we define a model-free index for a dataset as the sum of the appropriate weights from a regression model fit to that dataset:
 
-We expect that planning agents will show the opposite pattern after uncommon transition trials, since the uncommon transition from one choice is the common transition from the other choice. We define a planning index:(3)PlanningIndex=∑τ=1T[βCR(τ)−βUR(τ)]+∑τ=1T[βUO(τ)−βCO(τ)]
+$$
+ModelFreeIndex=\sum\tau=1T[\beta_{CR}(\tau)+\beta_{UR}(\tau)]−\sum\tau=1T[\beta_{UO}(\tau)+\beta_{CO}(\tau)]
+$$
 
-We also compute the main effect of past choices on future choice(4)StayIndex=∑τ=1T[βCR(τ)+βUR(τ)+βUO(τ)+βCO(τ)]
+We expect that planning agents will show the opposite pattern after uncommon transition trials, since the uncommon transition from one choice is the common transition from the other choice. We define a planning index:
 
-As well as an index quantifying the tendency to repeat choices the lead to common transitions and to switch away from those that lead to uncommon transitions:(5)Common−Stay/Uncommon−Switch=∑τ=1T[βCR(τ)−βCO(τ)]+∑τ=1T[βUR(τ)−βUO(τ)]
+$$
+PlanningIndex=\sum\tau=1T[\beta_{CR}(\tau)−\beta_{UR}(\tau)]+\sum\tau=1T[\beta_{UO}(\tau)−\beta_{CO}(\tau)]
+$$
 
-## Mixture-of-agents behavior model
+We also compute the main effect of past choices on future choice
 
-We model behavior and obtain trial-by-trial estimates of value signals using an agent-based computational model similar to one that we have previously shown to provide a good explanation of rat behavior on the two-step task (Miller et al., 2017). This model adopts the mixture-of-agents approach, in which each rat’s behavior is described as resulting from the influence of a weighted average of several different ‘agents’ implementing different behavioral strategies to solve the task. On each trial, each agent A computes a value, QA(c), for each of the two available choices c, and the combined model makes a decision according to a weighted average of the various strategies’ values, Qtotal(c):(6)Qtotal(c)=∑A∈{agents}βAQA(c)π(c)=eQtotal(c)∑c′eQtotal(c′)
+$$
+StayIndex=\sum\tau=1T[\beta_{CR}(\tau)+\beta_{UR}(\tau)+\beta_{UO}(\tau)+\beta_{CO}(\tau)]
+$$
+
+As well as an index quantifying the tendency to repeat choices the lead to common transitions and to switch away from those that lead to uncommon transitions:
+
+$$
+Common−Stay/Uncommon−Switch=\sum\tau=1T[\beta_{CR}(\tau)−\beta_{CO}(\tau)]+\sum\tau=1T[\beta_{UR}(\tau)−\beta_{UO}(\tau)]
+$$
+
+### Mixture-of-agents behavior model
+
+We model behavior and obtain trial-by-trial estimates of value signals using an agent-based computational model similar to one that we have previously shown to provide a good explanation of rat behavior on the two-step task (Miller et al., 2017). This model adopts the mixture-of-agents approach, in which each rat’s behavior is described as resulting from the influence of a weighted average of several different ‘agents’ implementing different behavioral strategies to solve the task. On each trial, each agent A computes a value, QA(c), for each of the two available choices c, and the combined model makes a decision according to a weighted average of the various strategies’ values, Qtotal(c):
+
+$$
+Q_{total(c)}=\sumA\in{agents}\beta_{A}Q_{A}(c)\pi(c)=\frac{e^{Q_{total}(c)}}{\sumc^{′}e^{Q_{total}(c^{′})}}
+$$
 
 where the β’s are weighting parameters determining the influence of each agent, and (c) is the probability that the mixture-of-agents will select choice c on that trial. The model which we have previously shown to provide the best explanation of rat’s behavior contains four such agents: model-based temporal difference learning, novelty preference, perseveration, and bias. The model used here is identical to the one in our previous paper (Miller et al., 2017), except that the perseverative agent is modified to allow it to consider many past trials rather than only the immediately previous trial (Miller et al., 2019).
 
-## Model-based temporal difference learning
+#### Model-based temporal difference learning
 
-Model-based temporal difference learning is a planning strategy, which maintains separate estimates of the probability with which each action (selecting the left or the right choice port) will lead to each outcome (the left or the right outcome port becoming available), P(o|a), as well as the probability, R(o), with which each outcome will lead to reward. This strategy assigns values to the actions by combining these probabilities to compute the expected probability with which selection of each action will ultimately lead to reward:(7)Qplan(c)=∑oV(o)P(o|c)
+Model-based temporal difference learning is a planning strategy, which maintains separate estimates of the probability with which each action (selecting the left or the right choice port) will lead to each outcome (the left or the right outcome port becoming available), P(o|a), as well as the probability, R(o), with which each outcome will lead to reward. This strategy assigns values to the actions by combining these probabilities to compute the expected probability with which selection of each action will ultimately lead to reward:
 
-At the beginning of each session, the reward estimate V(o) is initialized to 0.5 for both outcomes, and the transition estimate P(o|c) is set to the true transition function for the rat being modeled (0.8 for common and 0.2 for uncommon transitions). After each trial, the reward estimate for both outcomes is updated according to(8)V(o)←{(1−αplan)⋅V(o)+αplan⋅rt,foro=ot(1−αplan)⋅V(o)−αplan⋅rt,foro≠ot
+$$
+Q_{plan}(c)=\sumoV(o)P(o|c)
+$$
+
+At the beginning of each session, the reward estimate V(o) is initialized to 0.5 for both outcomes, and the transition estimate P(o|c) is set to the true transition function for the rat being modeled (0.8 for common and 0.2 for uncommon transitions). After each trial, the reward estimate for both outcomes is updated according to
+
+$$
+V(o)←{(1−\alpha_{plan})⋅V(o)+\alpha_{plan}⋅r_{t},foro=o_{t}(1−\alpha_{plan})⋅V(o)−\alpha_{plan}⋅r_{t},foro\neqo_{t}
+$$
 
 where ot is the outcome that was observed on that trial, rt is a binary variable indicating reward delivery, and α is a learning rate parameter constrained to lie between zero and one.
 
-## Novelty preference
+#### Novelty preference
 
-The novelty preference agent follows an ‘uncommon-stay/common switch’ pattern, which tends to repeat choices when they lead to uncommon transitions on the previous trial, and to switch away from them when they lead to common transitions. Note that some rats have positive values of the βnp parameter weighting this agent (novelty preferring) while others have negative values (novelty averse; see Figure 1e):(9)Qnp(ct)←{0, common transition trails1,uncommon transition trialsQnp(c≠ct)←1−Qnp(ct)
+The novelty preference agent follows an ‘uncommon-stay/common switch’ pattern, which tends to repeat choices when they lead to uncommon transitions on the previous trial, and to switch away from them when they lead to common transitions. Note that some rats have positive values of the βnp parameter weighting this agent (novelty preferring) while others have negative values (novelty averse; see Figure 1e):
 
-## Perseveration
+$$
+Q_{np}(ct)←{0, common transition trails1,uncommon transition trialsQ_{np}(c\neqc_{t})←1−Q_{np}(c_{t})
+$$
 
-Perseveration is a pattern which tends to repeat choices that have been made in the recent past, regardless of whether they led to a common or an uncommon transition, and regardless of whether or not they led to reward.(10)Qpersev(ct)<−(1−αpersev)Qpersev(ct)+αpersevQpersev(c≠ct)<−(1−αpersev)Qpersev(c≠ct)
+#### Perseveration
 
-## Bias
+Perseveration is a pattern which tends to repeat choices that have been made in the recent past, regardless of whether they led to a common or an uncommon transition, and regardless of whether or not they led to reward.
 
-Bias is a pattern which tends to select the same choice port on every trial. Its value function is therefore static, with the extent and direction of the bias being governed by the magnitude and sign of this strategy’s weighting parameter βbias.(11)Qbias(left)=1Qbias(right)=−1
+$$
+Q_{persev}(c_{t})<−(1−\alpha_{persev})Q_{persev}(c_{t})+\alpha_{persev}Q_{persev}(c\neqc_{t})<−(1−\alpha_{persev})Q_{persev}(c\neqc_{t})
+$$
 
-## Model fitting
+#### Bias
+
+Bias is a pattern which tends to select the same choice port on every trial. Its value function is therefore static, with the extent and direction of the bias being governed by the magnitude and sign of this strategy’s weighting parameter βbias.
+
+$$
+Q_{bias}(left)=1Q_{bias}(right)=−1
+$$
+
+### Model fitting
 
 We implemented the model described above using the probabilistic programming language Stan (Carpenter, 2016; Lau, 2017), and performed maximum-a-posteriori fits using weakly informative priors on all parameters (Gelman et al., 2013) The prior over the weighting parameters β was normal with mean 0 and sd 0.5, and the prior over α was a beta distribution with a=b = 3. For ease of comparison, we normalize the weighting parameters βplan, βnp, and βpersev, dividing each by the standard deviation of its agent’s associated values (Qplan, Qnp, and Qpersev) taken across trials. Since each weighting parameter affects behavior only by scaling the value output by its agent, this technique brings the weights into a common scale and facilitates interpretation of their relative magnitudes, analogous to the use of standardized coefficients in regression models.
 
-## Surgery: Microwire array implants
+### Surgery: Microwire array implants
 
 Six rats were implanted with microwire arrays (Tucker-David Technologies) targeting OFC unilaterally. Arrays contained tungsten microwires 4.5 mm long and 50 μm in diameter, cut at a 60° angle at the tips. Wires were arranged in four rows of eight, with spacing 250 μm within-row and 375 μm between rows, for a total of 32 wires in a 1.125 mm by 1.75 mm rectangle. Target coordinates for the implant with respect to bregma were 3.1–4.2 mm anterior, 2.4–4.2 mm lateral, and 5.2 mm ventral (~4.2 mm ventral to brain surface at the posterior-middle of the array).
 
 In order to expose enough of the skull for a craniotomy in this location, the jaw muscle was carefully resected from the lateral skull ridge in the area near the target coordinates. Dimpling of the brain surface was minimized following procedures described in more detail elsewhere (Akrami et al., 2017). Briefly, a bolus of petroleum jelly (Puralube, Dechra Veterinary Products) was placed in the center of the craniotomy to protect it, while cyanoacrylate glue (Vetbond, 3 M) was used to adhere the pia mater to the skull at the periphery. The petroleum jelly was then removed, and the microwire array inserted slowly into the brain. Rats recovered for a minimum of 1 week, with ad lib access to food and water, before returning to training.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Once rats had recovered from surgery, recording sessions were performed in a behavioral chamber outfitted with a 32 channel recording system (Neuralynx). Spiking data was acquired using a bandpass filter between 600 and 6000 Hz and a spike detection threshold of 30 μV. Clusters were manually cut (Spikesort 3D, Neuralynx), and both single- and multi-units were considered. All manually cut units were used for analysis. We observed that a small fraction of trials showed apparent artifacts in which some units appeared to have extremely high firing rates, which we suspect was due to motion of the implant or tether. We therefore excluded units from analysis on trials where the Median Absolute Deviation (Leys et al., 2013) of their spike count exceeded a conservative threshold of three.
 
-## Analysis of electrophysiology data
+### Analysis of electrophysiology data
 
 To determine the extent to which different variables were encoded in the neural signal, we fit a series of regression models to our spiking data. Models were fit to the spike counts emitted by each unit in 200ms time bins taken relative to the four noseport entry events that made up each trial. There were ten total regressors, defined relative to a pair of adjacent trials. Seven of them were binary (coded as +–1), and related to observable task variables: the choice port selected on the earlier trial(left or right), the outcome port visited (left or right), the reward received (reward or omission), the interaction between choice port and outcome port (common or uncommon transition), the interaction between choice port and reward, the interaction between outcome port and reward, and the choice port selected on the later trial. Three additional regressors were continuous and related to subjective reward expectation: the expected value of the outcome port visited (V) for the first trial, the value difference between the choice ports (Q(left) - Q(right)), and the value of the choice port selected (Q(chosen)) on the subsequent trial. These last three regressors were obtained using the agent-based computational model described above, with parameters fit separately to each rat’s behavioral data. Regressors were z-scored to facilitate comparison of fit regression weights. Models were fit using the Matlab function glmnet Qian, 2013 using a Poisson noise model. We fit each model both with no regularization and with L1 regularization (α=1, λ=0, 10–10, 10–9, …,10–1), using the model with the weakest regularization that still allowed all weights to be identifiable.
 
-In our task, many of these regressors were correlated with one another (Figure 3—figure supplement 2), so we quantify encoding using the coefficient of partial determination (CPD; also known as partial r-squared) associated with each (Cai et al., 2011; Kennerley et al., 2011). This measure quantifies the fraction of variance explained by each regressor, once the variance explained by all other regressors has been taken account of:(12)CPD(Xi,u,t)=(SSE(X−i,u,t)−SSE(Xall,u,t))SSE(X−i,u,t)
+In our task, many of these regressors were correlated with one another (Figure 3—figure supplement 2), so we quantify encoding using the coefficient of partial determination (CPD; also known as partial r-squared) associated with each (Cai et al., 2011; Kennerley et al., 2011). This measure quantifies the fraction of variance explained by each regressor, once the variance explained by all other regressors has been taken account of:
 
-where u refers to a particular unit, t refers to a particular time bin, and SSE(Xall) refers to the sum-squared-error of a regression model considering all eight regressors described above, and SSE(X-i) refers to the sum-squared-error of a model considering the seven regressors other than Xi. We compute total CPD for each unit by summing the SSE associated with the regression models for that unit for all time bins:(13)CPD(Xi,u)=∑t(SSE(X−i,u,t)−SSE(Xall,u,t))∑tSSE(X−i,u,t)
+$$
+CPD(X_{i},u,t)=\frac{(SSE(X_{−i},u,t)−SSE(X_{all},u,t))}{SSE(X_{−i},u,t)}
+$$
 
-We report this measure for individual example units showing all time bins (Figure 2, bottom). We report the CPD for each unit for particular port entry events (Figure 3a), taking the sum over the five bins making up a 1 s time window centered on a particular port entry event (top neutral center port, choice port, bottom neutral center port, or outcome port). We report the ‘population CPD’ (Figure 3b, Figure 3c) by aggregating over all units for a particular time bin:(14)CPD(Xi,t)=∑u(SSE(X−i,u,t)−SSE(Xall,u,t))∑uSSE(X−i,u,t)
+where u refers to a particular unit, t refers to a particular time bin, and SSE(Xall) refers to the sum-squared-error of a regression model considering all eight regressors described above, and SSE(X-i) refers to the sum-squared-error of a model considering the seven regressors other than Xi. We compute total CPD for each unit by summing the SSE associated with the regression models for that unit for all time bins:
+
+$$
+CPD(X_{i},u)=\frac{\sumt(SSE(X_{−i},u,t)−SSE(X_{all},u,t))}{\sumtSSE(X_{−i},u,t)}
+$$
+
+We report this measure for individual example units showing all time bins (Figure 2, bottom). We report the CPD for each unit for particular port entry events (Figure 3a), taking the sum over the five bins making up a 1 s time window centered on a particular port entry event (top neutral center port, choice port, bottom neutral center port, or outcome port). We report the ‘population CPD’ (Figure 3b, Figure 3c) by aggregating over all units for a particular time bin:
+
+$$
+CPD(X_{i},t)=\frac{\sumu(SSE(X_{−i},u,t)−SSE(X_{all},u,t))}{\sumuSSE(X_{−i},u,t)}
+$$
 
 For each of these measures, we assess significance by comparing the CPD computed on the true dataset to a distribution of CPDs computed on surrogate datasets constructed by circularly permuting the trial labels within each session. We use permuted, rather than shuffled, labels in order to preserve trial-by-trial correlational structure. If the true CPD is larger than most of the CPDs from these surrogate datasets, we can reject the null hypothesis that the CPD is driven by correlational structure alone. We compute a permutation p-value by finding the percentile of the true CPD within the distribution of CPDs in surrogate datasets. In the main-text figure (Figure 3b, Figure 3c) we additionally subtract the mean of the CPDs from the surrogate datasets, in order to give a measure that can be fairly compared to zero.
 
-## Surgery: Optical fiber implant and virus injection
+### Surgery: Optical fiber implant and virus injection
 
 Rats were implanted with sharpened fiber optics and received virus injections following procedures similar to those described previously (Hanks et al., 2015; Kopec et al., 2015; Akrami et al., 2017), and documented in detail on the Brody lab website. A 50/125 μm LC-LC duplex fiber cable (Fiber Cables) was dissected to produce four blunt fiber segments with LC connectors. These segments were then sharpened by immersing them in hydroflouric acid and slowly retracting them using a custom-built motorized jig attached to a micromanipulator (Narashige International) holding the fiber. Each rat was implanted with two sharpened fibers, in order to target OFC bilaterally. Target coordinates with respect to bregma were 3.5 mm anterior, 2.5 mm lateral, 5 mm ventral. Fibers were angled 10 degrees laterally, to make space for female-female LC connectors which were attached to each and included as part of the implant.
 
@@ -186,33 +330,55 @@ Nine additional rats received both fiber implants as well as injections of a vir
 
 Rats recovered for a minimum of one week, with ad lib access to food and water, before returning to training. Rats with virus injections returned to training, but did not begin inactivation experiments until a minimum of 6 weeks had passed, to allow for virus expression.
 
-## Optogenetic perturbation experiments
+### Optogenetic perturbation experiments
 
 During inactivation experiments, rats performed the task in a behavioral chamber outfitted with a dual fiber optic patch cable connected to a splitter and a single-fiber commutator (Princetel) mounted in the ceiling. This fiber was coupled to a 200 mW 532 nm laser (OEM Laser Systems) under the control of a mechanical shutter (ThorLabs) by way of a fiber port (ThorLabs). The laser power was tuned such that each of the two fibers entering the implant received between 25 and 30 mW of light when the shutter was open.
 
 Each rat received several sessions in which the shutter remained closed, in order to acclimate to performing the task while tethered. Once the rat showed behavioral performance while tethered that was similar to his performance before the implant surgery, inactivation sessions began. During these sessions, the laser shutter was opened (causing light to flow into the implant, activating the eNpHR3.0 and silence neural activity) on 7% of trials each in one of three time periods. ‘Outcome period’ inactivation began when the rat entered the bottom center port at the end of the trial, and ended either when the rat had left the port and remained out for a minimum of 500ms, or after 2.5 s. ‘Choice period’ inactivation began at the end of the outcome period and lasted until the rat entered the choice port on the following trial. ‘Both period’ inactivation encompassed both the outcome period and the choice period. The total duration of the inactivation therefore depended in part on the movement times of the rat, and was somewhat variable from trials to trial (Figure 5—figure supplement 2). If a scheduled inactivation would last more than 15 s, inactivation was terminated, and that trial was excluded from analysis. Due to constraints of the bControl software, inactivation was only performed on even-numbered trials.
 
-## Analysis of optogenetic effects on behavior
+### Analysis of optogenetic effects on behavior
 
-We quantify the effects of optogenetic inhibition on behavior by computing separately the planning index for trials following inactivation of each type (outcome period, choice period, both periods) and for control trials. Specifically, we fit the trial history regression model of Equation 1 with a separate set of weights for trials following inactivation of each type:(15)log(Pleft(t)Pright(t))=∑τ=1TβCR,i(τ)⋅CR(t−τ)+∑τ=1TβCO,i(τ)⋅CO(t−τ)+∑τ=1TβUR,i(τ)⋅UR(t−τ)+∑τ=1TβUO,i(τ)⋅UO(t−τ)(16)i={cntrl,trailt−1wascontroltrailout,trailt−1hadoutcomeperiodinactivationch,trailt−1hadchoiceperiodinactivationboth,trailt−1hadboth
+We quantify the effects of optogenetic inhibition on behavior by computing separately the planning index for trials following inactivation of each type (outcome period, choice period, both periods) and for control trials. Specifically, we fit the trial history regression model of Equation 1 with a separate set of weights for trials following inactivation of each type:
 
-We used maximum a posteriori fitting in which the priors were Normal(0,1) for weights corresponding to control trials, and Normal(βX, cntrl, 1) for weights corresponding to inactivation trials, where βX, cntrl is the corresponding control trial weight – e.g. the prior for βCR, out(1) is Normal(βCR, cntrl(1), 1). This prior embodies the belief that the effect of inactivation on behavior is likely to be small, and that the direction of any effect is equally likely to be positive or negative. This ensures that our priors cannot induce any spurious differences between control and inactivation conditions into the parameter estimates. We then compute a planning index separately for the weights of each type, modifying Equation 3:(17)PlanningIndexi(τ)=[βCR,i(τ)−βUR,i(τ)]+[βUO,i(τ)−βCO,i(τ)]
+$$
+log(\frac{P_{left}(t)}{P_{right}(t)})=\sum\tau=1T\beta_{CR,i}(\tau)⋅CR(t−\tau)+\sum\tau=1T\beta_{CO,i}(\tau)⋅CO(t−\tau)+\sum\tau=1T\beta_{UR,i}(\tau)⋅UR(t−\tau)+\sum\tau=1T\beta_{UO,i}(\tau)⋅UO(t−\tau)
+$$
+
+
+
+$$
+i={cntrl,trailt−1wascontroltrailout,trailt−1hadoutcomeperiodinactivationch,trailt−1hadchoiceperiodinactivationboth,trailt−1hadboth
+$$
+
+We used maximum a posteriori fitting in which the priors were Normal(0,1) for weights corresponding to control trials, and Normal(βX, cntrl, 1) for weights corresponding to inactivation trials, where βX, cntrl is the corresponding control trial weight – e.g. the prior for βCR, out(1) is Normal(βCR, cntrl(1), 1). This prior embodies the belief that the effect of inactivation on behavior is likely to be small, and that the direction of any effect is equally likely to be positive or negative. This ensures that our priors cannot induce any spurious differences between control and inactivation conditions into the parameter estimates. We then compute a planning index separately for the weights of each type, modifying Equation 3:
+
+$$
+PlanningIndex_{i}(\tau)=[\beta_{CR,i}(\tau)−\beta_{UR,i}(\tau)]+[\beta_{UO,i}(\tau)−\beta_{CO,i}(\tau)]
+$$
 
 We compute the relative change in planning index for each inactivation condition: (PlanningIndexi - PlanningIndexcntrl) / PlanningIndexcntrl, and report three types of significance tests on this quantity. First, we test for each inactivation condition the hypothesis that there was a significant change in the planning index, reporting the results of a one-sample t-test over rats. Next, we test the hypothesis that different inactivation conditions had effects of different sizes on the planning index, reporting a paired t-test over rats. Finally, we test the hypothesis for each condition that inactivation had a different effect than sham inactivation (conducted in rats which had not received virus injections to deliver eNpHR3.0), reporting a two-sample t-test.
 
-To test the hypothesis that inactivation specifically impairs the effect of distant past outcomes on upcoming choice, we break down the planning index for each condition by the index of the weights the contribute to it:(18)PlanningIndexi(τ)=[βCR,i(τ)−βUR,i(τ)]+[βUO,i(τ)−βCO,i(τ)]
+To test the hypothesis that inactivation specifically impairs the effect of distant past outcomes on upcoming choice, we break down the planning index for each condition by the index of the weights the contribute to it:
+
+$$
+PlanningIndex_{i}(\tau)=[\beta_{CR,i}(\tau)−\beta_{UR,i}(\tau)]+[\beta_{UO,i}(\tau)−\beta_{CO,i}(\tau)]
+$$
 
 We report these trial-lagged planning indices for each inactivation condition, and assess the significance of the difference between inactivation and control conditions at each lag using a paired t-test.
 
-## Synthetic datasets
+### Synthetic datasets
 
-To generate synthetic datasets for comparison to optogenetic inactivation data, we generalized the behavioral model to separate the contributions of representations of expected value and of immediate reward. In particular, we replaced the learning equation within the model-based RL agent (Equation 7) with the following:(19)V(o)←{αvalue⋅V(o)+αreward⋅Rt+(1−αvalue−αreward)⋅E[V],foro=otαvalue⋅V(o)−αreward⋅Rt+(1−αvalue−αreward)⋅E[V],foro≠ot
+To generate synthetic datasets for comparison to optogenetic inactivation data, we generalized the behavioral model to separate the contributions of representations of expected value and of immediate reward. In particular, we replaced the learning equation within the model-based RL agent (Equation 7) with the following:
+
+$$
+V(o)←{\alpha_{value}⋅V(o)+\alpha_{reward}⋅R_{t}+(1−\alpha_{value}−\alpha_{reward})⋅E[V],foro=o_{t}\alpha_{value}⋅V(o)−\alpha_{reward}⋅R_{t}+(1−\alpha_{value}−\alpha_{reward})⋅E[V],foro\neqo_{t}
+$$
 
 where αvalue and αreward are separate learning rate parameters, constrained to be nonnegative and to have a sum no larger than one, and E[V] represents the expected reward of a random-choice policy on the task, which in the case of our task is equal to 0.5.
 
 To generate synthetic datasets in which silencing the OFC impairs choice value representations, outcome value representations, or reward representations, we decrease the parameter βplan, αvalue, or αreward, respectively. Specifically, we first fit the model to the dataset for each rat in the optogenetics experiment (n=9) as above (i.e. using equation 7 as the learning rule) to obtain maximum a posteriori parameters. We translated these parameters to the optogenetics (equation 18) version of the model by setting αvalue equal to the fit parameter α and αreward equal to 1 - α. We then generated four synthetic datasets for each rat. For the control dataset, the fit parameters were used on trials of all types, regardless of whether inhibition of OFC was scheduled on that trial. For the ‘impaired outcome values’ dataset, αvalue was decreased specifically for trials with inhibition scheduled during the outcome period or both periods, but not on trials with inhibition during the choice period or on control trials. For the ‘impaired reward processing’ dataset, αreward was decreased on these trials instead. For the ‘impaired decision-making’ dataset, βplan was decreased specifically on trials following inhibition. In all cases, the parameter to be decreased was multiplied by 0.3, and synthetic datasets consisted of 100,000 total trials per rat.
 
-## Histological verification of targeting
+### Histological verification of targeting
 
 We verified that surgical implants were successfully placed in the OFC using standard histological techniques. At experimental endpoint, rats with electrode arrays were anesthetized, and microlesions were made at the site of each electrode tip by passing current through the electrodes. Rats were then perfused transcardially with saline followed by formalin. Brains were sliced using a vibratome and imaged using an epifluorescent microscope. Recording sites were identified using these microlesions and the scars created by the electrodes in passing, as well dimples in the surface of the brain. Locations of optical fibers were identified using the scars created by their passage. Location of virus expression was identified by imaging the YFP conjugated to the eNpHR3.0 molecule Figure 5—figure supplement 1.
 

@@ -37,23 +37,39 @@ These findings highlight a major unanswered question in our understanding of MCF
 
 ## Results
 
-## MIR1 does not transport Cu
+### MIR1 does not transport Cu
 
 To determine if MIR1 can transport Cu in addition to phosphate, we exploited the fact that MCF proteins insert into the cytoplasmic membrane of L. lactis in an active state and that Cu transport activity in this system can be detected by growth arrest in the presence of Ag+ (Figure 1A; Monné et al., 2005; Vest et al., 2013). This assay was also used to assess phosphate transport by quantifying the growth rates of L. lactis strains expressing MCF genes in the presence of the toxic phosphate mimetic arsenate (AsO43−). In the presence of 80 µM Ag+, the growth of L. lactis expressing PIC2, but not MIR1 or an empty vector (EV), was significantly inhibited (Figure 1B). In contrast, the growth of L. lactis expressing MIR1 or PIC2 was inhibited to the same extent when cultured in 1.6 mM AsO43− relative to a control strain harboring the EV (Figure 1C). These data show that in L. lactis MIR1 is capable of transporting the phosphate mimetic AsO43− but not the Cu mimetic Ag+.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig1-v2.jpg)
 
-**Figure 1.:** S.cerevisiae MIR1 does not transport Cu.(A) Schematic representation of the L. lactis expression system used to quantify transport characteristics. Survival is determined by the growth rate in liquid culture or by visual inspection of cells grown on agar plates containing Ag+ or AsO43− in the presence of the inducer nisin. (B) Quantification of the growth of L. lactis expressing empty vector (EV), S. cerevisiae PIC2, or S. cerevisiae MIR1 after 12 hr in 80 µM Ag+-containing media (n > 5). (C) Quantification of the growth of L. lactis expressing EV, PIC2, or MIR1 after 12 hr in 1.6 mM AsO43−-containing media (n = 5). (D) Wild-type (WT), pic2∆, or mir1∆ yeast grown in rich medium with a fermentable (Glu: glucose) or a non-fermentable (glycerol: Gly) carbon source in the absence (0) or presence of Ag+ (75 or 125 µM). All strains were spotted on media as a 10−3 dilution of OD600 of 1. (E) Densitometry measurements of serial dilutions (10, 102, 103, 104) of cells in D on Glu, Gly, and Gly plus 75 µM Ag (WT n = 4, pic2∆ n = 8, mir1∆ n = 6). (F) Cu content of purified intact mitochondria from mir1Δ cells assayed by Inductively coupled plasma - optical emission spectrometry (ICP-OES) and compared with that of parental WT cells. Both strains were grown in YP medium with glucose as a carbon source containing 10 μM bathocuproinedisulfonic acid (BCS) or 100 μM Cu (+Cu) (n = 3). (G) Fluorescence anisotropy (FA) of CuL (Ex320, Em400) upon the addition of reconstituted PIC2 or MIR1 in proteoliposomes prepared from extracted egg yolk lipids. Control FA of equal quantity of lipids without protein added was subtracted from each data point. Protein concentrations were determined by Bradford assay, and curves are fit with a nonlinear regression that assumes a single binding site. In all panels, data are plotted as the mean ± standard deviation and a one-way ANOVA was used for statistical analysis; ns: not statistically significant; *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+**Figure 1.:** (A) Schematic representation of the L. lactis expression system used to quantify transport characteristics. Survival is determined by the growth rate in liquid culture or by visual inspection of cells grown on agar plates containing Ag+ or AsO43− in the presence of the inducer nisin. (B) Quantification of the growth of L. lactis expressing empty vector (EV), S. cerevisiae PIC2, or S. cerevisiae MIR1 after 12 hr in 80 µM Ag+-containing media (n > 5). (C) Quantification of the growth of L. lactis expressing EV, PIC2, or MIR1 after 12 hr in 1.6 mM AsO43−-containing media (n = 5). (D) Wild-type (WT), pic2∆, or mir1∆ yeast grown in rich medium with a fermentable (Glu: glucose) or a non-fermentable (glycerol: Gly) carbon source in the absence (0) or presence of Ag+ (75 or 125 µM). All strains were spotted on media as a 10−3 dilution of OD600 of 1. (E) Densitometry measurements of serial dilutions (10, 102, 103, 104) of cells in D on Glu, Gly, and Gly plus 75 µM Ag (WT n = 4, pic2∆ n = 8, mir1∆ n = 6). (F) Cu content of purified intact mitochondria from mir1Δ cells assayed by Inductively coupled plasma - optical emission spectrometry (ICP-OES) and compared with that of parental WT cells. Both strains were grown in YP medium with glucose as a carbon source containing 10 μM bathocuproinedisulfonic acid (BCS) or 100 μM Cu (+Cu) (n = 3). (G) Fluorescence anisotropy (FA) of CuL (Ex320, Em400) upon the addition of reconstituted PIC2 or MIR1 in proteoliposomes prepared from extracted egg yolk lipids. Control FA of equal quantity of lipids without protein added was subtracted from each data point. Protein concentrations were determined by Bradford assay, and curves are fit with a nonlinear regression that assumes a single binding site. In all panels, data are plotted as the mean ± standard deviation and a one-way ANOVA was used for statistical analysis; ns: not statistically significant; *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 Consistent with our previous results (Vest et al., 2013), we find that the growth of yeast lacking PIC2 is severely compromised on a non-fermentable carbon source in the presence of 75 µM Ag+ due to a Cu deficiency in mitochondria (Figure 1D, E). In contrast, yeast lacking MIR1 only exhibited a mild growth defect relative to the isogenic WT strain at this Ag+ concentration (Figure 1D, E). Exposure to 125 µM Ag+ led to a growth defect in both mir1∆ and pic2∆ yeast but not in the isogenic WT strain (Figure 1D). To further establish that MIR1 is incapable of Cu transport activity, we quantified mitochondrial Cu levels by inductively coupled optical emission spectroscopy. Cu levels in mitochondria from mir1∆ yeast cells were similar to those isolated from WT cells (Figure 1F). In yeast mitochondria, Cu is stably bound by a fluorescent, non-proteinaceous ligand (CuL). Previously we used fluorescence anisotropy to investigate the binding of this fluorescent complex to purified PIC2 and SLC25A3 (Boulet et al., 2018; Vest et al., 2016; Vest et al., 2013). The decreased levels of anisotropy observed for purified MIR1 compared to PIC2 showed limited interaction with the CuL complex and MIR1 (Figure 1G). Thus, while the growth assays indicate that MIR1 deletion can produce a Cu-dependent respiration defect at high Ag+ concentrations, our biochemical data suggest that MIR1 does not transport Cu. Therefore, both MIR1 and PIC2 transport phosphate but only PIC2 can transport Cu.
 
-## Mitochondrial Cu and phosphate carriers duplicated early in the evolution of eukaryotes
+### Mitochondrial Cu and phosphate carriers duplicated early in the evolution of eukaryotes
 
 It is not surprising that MCF proteins are present across all eukaryotes given their fundamental roles in maintaining cellular physiology. We hypothesize that Cu transport to mitochondria was an important consideration in eukaryogenesis as it is required to maintain the activity of the electron transport chain and provide an advantage to the ancestral eukaryote (Cobine et al., 2021). Conservation of this activity across diverse organisms may provide a phylogenetic signal with which to resolve residues that dictate PIC2 and MIR1 substrate specificities. One hypothesis is that because ancient proteomes were smaller the transporters in these organisms were generalists that gained specificity as a consequence of gene duplication and subsequent subfunctionalization (Risso et al., 2014; Risso et al., 2013; Eick et al., 2017; Eick et al., 2012).
 
 To provide evolutionary context for the existing experimental data, which has nearly all been collected from mammals and yeast, we performed a phylogenetic analysis on MCF transporters from a broad range of eukaryotic lineages. We selected a set of 47 taxa that spanned the supergroups within the eukaryotic Tree of Life (eToL) (Burki et al., 2020; Supplementary file 1, Figure 2—figure supplement 1). Only taxa with complete nuclear and mitochondrial genome sequences were included to accurately enumerate gene duplications and losses, and to ensure that apparent losses were not due to incomplete datasets. From these genomes, a total of 2447 putative MCF family members were identified based on the presence of a mitochondrial carrier domain (PFAM domain PF00153) (Supplementary file 1). To distinguish PIC2-MIR1 orthologs from other members of the MCF family, phylogenetic trees were constructed using the MCF proteins from each taxon as well as the complete set of yeast and human MCF proteins. Candidate sequences that clustered with PIC2 or MIR1 were retained for further analyses (92 of 2447 MCF sequences) (Figure 2—figure supplement 1).
 
 The amino acid sequences of these potential Cu and/or phosphate transporting proteins were aligned and subsequently used to reconstruct the evolutionary history of PIC2-MIR1 orthologs across eukaryotes (Figure 2). Of the 92 sequences, 47 clustered with S. cerevisiae PIC2 and are referred to as PIC2-like while 42 clustered with S. cerevisiae MIR1 and are defined as MIR1-like. The remaining three sequences were more closely related to PIC2-MIR1 than other MCFs but nonetheless fell outside of these two well-supported clades (Figure 2 and Figure 2—figure supplement 3).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig2-v2.jpg)
+
+**Figure 2.:** Amino acid sequences of the eukaryotic MIR1/PIC2/SLC25A3 orthologs were aligned with the complete set of mitochondrial carrier family (MCF) proteins from S. cerevisiae. The maximum-likelihood tree shown was constructed in iQ-TREE using a general codon exchange matrix for nuclear genes with amino acid frequencies determined empirically from the data and seven rate categories (LG+F+R7). Support for the nodes was calculated using 1000 replications and is indicated as follows: **>95%; *>75%. Taxa names for the MIR1/PIC2/SLC25A3 sequences are color-coded according to the eukaryotic Tree of Life supergroups as indicated; the S. cerevisiae MCF outgroup sequences (gray) have been collapsed to a single branch. Accession numbers for each of the sequences are available in Supplementary file 1 and Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** We confirmed that PIC2/MIR1 sequences eliminated by threshold of 90% similarity were duplicate sequences from the same locus where possible. The majority of eliminated sequences at this threshold were isoforms from genomes with deep transcriptomic datasets. To account for very recent duplications, we included them in the analysis only if they could be unambiguously assigned to a different chromosomal location to allow for more even comparison across diverse datasets that differed in depth of coverage (Supplementary file 1).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Amino acid sequences of the eukaryotic MIR1/PIC2/SLC25A3 orthologs were aligned with the complete set of mitochondrial carrier family proteins from S. cerevisiae. The tree shown includes all bootstrap values and individual accession numbers.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) The complete neighbor joining tree of proteins designated to contain at least two MCF domains (PFAM PF00153) and 150 amino acids and complete set of human and yeast MCFs. (B) Enlargement of the PIC2/MIR1/SLC25A3 clade showing the initial classification of XP_004356622.1 as PIC2-like, XP_004344643.1 as MIR1-like, and XP_004336520.1 as supported potential PIC2/MIR1 ‘other’. These sequences were advanced to the analysis of the maximum likelihood tree shown in Figure 2.
 
 To estimate the timing of gene duplications and losses within eukaryotes, we overlaid the presence and/or absence of PIC2-like or MIR1-like sequences onto the established eToL tree (Figure 3A). Recent phylogenomic analyses indicate that extant eukaryotes form nine supergroups (Burki et al., 2020). Species from seven of these groups were included in this analysis: Amorphea, Discoba, Archaeplastida, TSAR (Telonemids, Stramenopiles, Alveolates, and Rhizaria), Haptista, Cryptista, and Metamonada. Two additional groups, CRuMs (Collodictyonids, Rigifilida, and Mantamonas) and Hemimastigophora, were not included due to the lack of complete nuclear genome sequences. PIC2-MIR1 orthologs were present in each taxon analyzed with the exception of those from Metamonada, which are anaerobic protists that secondarily lost mitochondria (Karnkowska et al., 2019; Karnkowska et al., 2016). This broad phylogenetic conservation suggests that the two paralogs were present within the last common eukaryotic ancestor (Figure 3A).
 
@@ -63,27 +79,67 @@ To estimate the timing of gene duplications and losses within eukaryotes, we ove
 
 Given the ancient origin of PIC2 and MIR1, we first analyzed the presence and absence of orthologs within Amorphea, which consists of the opisthokonts (animals, fungi, and yeast), apusomonads, and amoebae (Burki et al., 2020). MIR1-like sequences are absent from Holozoan taxa with this lineage retaining only PIC2-like transporters (Figure 3A, B). In contrast, the fungal lineages (Holomycota) exhibit more variability in the numbers of PIC2-like and MIR1-like sequences (Figure 3B). Single orthologs of each type are present in S. cerevisiae and the closely related Neurospora crassa. The only Amorphea taxa that lost PIC2 are Ustilago maydis and Dictyostelium discoideum, which both have a MIR1 duplication. Outside the Amorphea, the gene copy number of the PIC2-MIR1 orthologs is more variable, which may reflect different evolutionary pressures on these transporters across lineages. Several lineages have lost either PIC2 or MIR1 and retained multiple copies of the remaining paralog (e.g., PIC2-like transporters within Chloroplastida and the alveolate Perkinsus marinus or the MIR1 duplications in Cryptista and Stramenopile lineages; Figure 3). This raises the possibility that, to compensate for the loss of the MIR1 transporter, PIC2 duplicated and convergently evolved additional substrate specificities. While there may be other constraints on this evolution, the loss of a PIC2 ortholog is always accompanied by duplication of the MIR1 ortholog. In contrast, a PIC2-like MCF is retained in all species that have a single PIC2-MIR1 ortholog, indicating that the loss of MIR1 does not always coincide with PIC2 duplication.
 
-## Structural modeling of PIC2 suggests appropriate spatial organization of conserved residues that may coordinate Cu transport
+### Structural modeling of PIC2 suggests appropriate spatial organization of conserved residues that may coordinate Cu transport
 
 We hypothesize that specific residues in PIC2-like proteins that confer the ability to transport Cu are absent in MIR1-like proteins, while amino acids conserved across PIC2- and MIR1-like proteins are required for both Cu and phosphate transport. To predict residues involved in substrate specificity, we modeled the PIC2 sequence onto the c-state and m-state structures of the ADP/ATP carrier (Ruprecht et al., 2019; Pebay-Peyroula et al., 2003; Figure 4—figure supplement 1). To quantify sequence conservation at the level of individual residues independently of the evolutionary histories of the proteins, Shannon entropy was calculated for each position within an alignment of the PIC2-like sequences (Figure 4A, B; Supplementary file 1). Shannon entropy is one of the simplest and most common measures of conservation that can be calculated from multiple sequence alignments (Capra and Singh, 2007). The Shannon entropy was calculated for each residue within alignments of the PIC2-like sequences and compared to the values determined from the complete PIC2-MIR1 grouping (Supplementary file 1). By integrating the structural models and phylogenetic analyses, we were able to visualize conserved residues as a surface representation (Figure 4C–E). The PIC2-like orthologs show high conservation (Shannon entropy <0.5 suggesting that the residue is maintained across all forms of the protein in the multiple sequence alignment) in the aqueous binding pocket, while alignment with the complete PIC2-MIR1 family further reveals a smaller subset of conserved residues (Figure 4—figure supplement 2). This analysis also detects conserved patches extending into the IMS and outside the aqueous binding pocket in the lipid bilayer that may be required for interactions with other components of the IM (Figure 4D, E).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig4-v2.jpg)
+
+**Figure 4.:** (A) A Protter representation of the PIC2 amino acid sequence was generated and colored based on Shannon entropy scores for conservation of a given residue. (B) The Shannon entropy for each residue in PIC2 based on all sequences in the PIC2-specific clade (see Supplementary file 1). (C) Structure of PIC2 in the c-state viewed from the intermembrane space side, with conserved residues (Shannon entropy <0.5) highlighted in purple and all other residues shown in gray. (D) A 90° rotation of the structure to view it from side, and (E) a 180° rotation to view it from the opposite side.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Cartoon ribbon structure of PIC2 modeled onto ADP-ATP carrier in the c-state and m-state.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The c-state model of PIC2 with surface representation colored based on the conservation of residues using the sequences designated as PIC2-like based on the PIC2 clade as defined in Figure 3. (B) The c-state model of PIC2 with surface coloring representing the level of conservation when using the complete PIC2-MIR1 family as defined in Figure 3.
+
 To identify residues that mediate Cu transport, we initially focused on the well-established Cu-binding ligands Cys, His, and Met. Analysis of the PIC2-MIR1 ortholog trees showed that histidine 33 (all residues are numbered according to the yeast PIC2 sequence) is conserved in both the PIC2 and MIR1 clades (Figure 5). Cysteine 29 is conserved in the PIC2 clade and most MIR1 proteins but is replaced with alanine in the MIR1-like transporters from lineages with multiple duplications (Emiliania huxleyi, Thalassiosira pseudonana, and Phaeodactylum tricornutum) (Figure 5, Figure 5—figure supplement 1). Cysteine 21 and Cys225 are strictly conserved among PIC2 orthologs, but not among MIR1 orthologs (Figure 5). Cysteine 44 is conserved in the PIC2-like clade, while MIR1-like orthologs have a conserved threonine in the equivalent position (Figure 5). The PIC2-like transporters that lack Cys44 are the P. marinus duplications, one of two copies of PIC2 in P. tricornutum, and the single copy of PIC2 in N. crassa. Analysis of the structural models revealed that Cys21, Cys29, Cys44, and His33 are positioned along one side of the aqueous binding pocket (Figure 5—figure supplement 2), whereas Cys225 is on the opposite side of this pocket. Cysteine 225 is positioned to interact with the peptide backbone of Cys182 (based on the alignments, this residue is only a cysteine in S. cerevisiae), which faces away from the aqueous binding pocket. Together, these data suggest that Cys21, Cys29, Cys44, and His33 may combine to form transient sites that bind Cu directly as it moves through the IM.
 
-## Mutating structural elements and conserved contact points cause differential transport defects
+![Figure 5.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig5-v2.jpg)
+
+**Figure 5.:** The tree topology is identical to that shown in Figure 2. Amino acids are colored according to the key, and insertion/deletion events that lead to gaps within the alignment are indicated by the hollow circles. P indicates position of S. cerevisiae PIC2, and M indicates S. cerevisiae MIR1. Small dots indicate that the residue is identical to that of PIC2 (shown at the top), and large dots indicate differences.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Graphical representation of the residues in organisms that have duplicated MIR1 and lack PIC2. (B) Graphical representation of the residues in organisms that have duplicated PIC2 and lack MIR1. Larger dots are residues in S. cerevisiae PIC2 or MIR1 while smaller dots are the residues encoded by the gene duplicates.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Model of the c-state of PIC2 with C21, C29, C44, C225, H33, and M275 highlighted in sticks format and with the backbone cartoon representation removed. (B) Model of the c-state of PIC2 with Q47, Q86, K90, D124, and Q176 highlighted in sticks format and with the backbone cartoon representation removed. (C) Model of the c-state of PIC2 with V48, L127, and G268 residues highlighted in sticks format and with the backbone cartoon representation removed.
+
+### Mutating structural elements and conserved contact points cause differential transport defects
 
 To assess the functional importance of the Cys-His residues in Cu and/or phosphate transport, we altered these residues in the context of S. cerevisiae PIC2 and expressed the mutants in L. lactis. To verify expression, protein content was assessed in L. lactis cells expressing the mutants versus EV controls. Although the levels of heterologous expression were too low to observe using Sypro Ruby (Figure 6—figure supplement 1), the mutant proteins were readily detectable upon immunoblot analysis (Figure 6A, Figure 6—figure supplement 2). To assay Cu transport, we cultured each variant in media containing an Ag+ concentration that inhibited growth of L. lactis expressing WT PIC2 but not of cells harboring an EV (Figure 1A, Figure 6). L. lactis expressing C21A, C29A, H33A, C44A, and C225A PIC2 mutants showed equal expression levels to WT PIC2 (Figure 6A) but displayed Ag+ resistance relative to L. lactis expressing WT PIC2 (all p<0.012) (Figure 6B), with the most resistance observed in the H33A mutant. However, these mutants also exhibited a growth defect relative to cells with an EV, suggesting that residual transport activity is present. Similarly, when Ag+ was replaced with AsO43− to assess phosphate transport, L. lactis expressing each of the five PIC2 mutants displayed increased resistance to AsO43− (Figure 6C), suggesting that these mutations also limit its transport.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig6-v2.jpg)
+
+**Figure 6.:** (A) Immunoblot of L. lactis extracts expressing empty vector (EV), wild-type PIC2 (WT), or a given PIC2 variant in which each of the listed residues was converted to an alanine prepared from equal numbers of cells based on optical density after induction with nisin. (B) Growth of L. lactis expressing EV, wild-type PIC2 (WT), or a given PIC2 variant in Ag+-containing media. Each bar represents the median of 10–18 independent cultures with 95% confidence interval as error bars (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 based on one-way ANOVA relative to PIC2 wild-type control). The color of the bar indicates one of four major groupings: Cu-binding (orange), structural motifs or contact points (gray), evolutionarily conserved and present in the aqueous binding pocket of the transporter (green), and unstable in L. lactis (yellow). (C) As described in (B) except L. lactis strains were grown in AsO43−-containing media.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Extracts of L. lactis expressing empty vector (EV), wild-type PIC2 (WT), or a given PIC2 alanine point mutation were prepared from equal numbers of cells based on optical density after induction with nisin. The total protein extracts were run on 10–15% tris-tricine SDS-PAGE gels and transferred to nitrocellulose membranes for staining with Sypro-Ruby and visualized under UV irradiation. The red bracket shows the expected size for PIC2. No obvious band is detected in any lane compared to EV, suggesting that the expression is only detectable by immunoblot analysis. Note that these membranes are independent gels not shown in Figure 6 or Figure 6—figure supplement 2. The size of each standard in kDa is shown (the unmarked standards are 260, 90, and 70 kDa).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Extracts of L. lactis expressing empty vector (EV), wild-type PIC2 (WT), or a given PIC2 alanine point mutant were prepared from equal numbers of cells based on optical density after induction with nisin. The total protein extracts were run on SDS-PAGE gels and transferred to nitrocellulose membranes probed with a polyclonal PIC2 antibody. Black and blue dashed boxes represent region cropped to become part of Figure 6A. (B) Independent gels of L. lactis extracts expressing EV, wild-type PIC2 (WT), or variant forms of PIC2. The size of each standard in kDa is shown (the unmarked standards are 125, 70, and 15 kDa).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Alignment of amino acid sequences from MIR1, PIC2, and SLC25A3. (B) Model of the c-state of PIC2 with residues mutated highlighted in sticks format and with the backbone cartoon representation removed. (C) Growth of L. lactis expressing empty vector (EV), wild-type PIC2 (WT), or a given PIC2 variant in which each of the listed residues was converted to an alanine in Ag+-containing media. Each bar represents the median of six independent cultures with 95% confidence interval as error bars (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 based on one-way ANOVA relative to PIC2 wild-type control).
 
 Computational analyses predict that S. cerevisiae MCF transporters have three contact sites for substrate binding (Robinson et al., 2008). In PIC2, the proposed phosphate substrate contact points are Gln86 and Lys90 in transmembrane helix (TMH) 2, Gln176 in TMH4, and Met275 in TMH6 (Figure 4; Ruprecht and Kunji, 2020; Ruprecht et al., 2019; Robinson et al., 2008). These residues are largely conserved in both the PIC2-like and MIR1-like clades (Figure 5), as is expected for transporters that share a substrate. We mutated each of these residues to alanine and assessed transport activity as described above. When expressed in L. lactis, the Q86A and Q176A mutants were expressed at WT levels (Figure 6A) and were more resistant to Ag+ than WT PIC2 (Figure 6B) but less resistant than cells expressing EV. In contrast, the K90A and M275A mutants exhibited comparable Ag+ sensitivity to WT PIC2 (p>0.05), suggesting that these substitutions do not affect Cu transport (Figure 6B). The addition of AsO43− to the media only inhibited the growth of cells expressing WT PIC2; cells expressing Q86A, K90A, Q176A, and M275A all grew at similar rates as cells expressing the EV (Figure 6C).
 
 Finally, we interrogated the functional significance of a subset of residues that were selected based on sequence conservation and our structural model: Gln47, Val48, Asp124, Leu127, and Gly268 (Figure 4A, Figure 5—figure supplement 2). With very few exceptions, Gln47 is conserved among eukaryotic PIC2-MIR1 orthologs (Figure 4A, B and Figure 5). Val48 is part of a group of residues that appear to close the aqueous binding pocket in the c-state (Figure 5—figure supplement 2). Asp124 interacts with Gln176 (Figure 5—figure supplement 2) and is conserved among all PIC2-like orthologs and those transporters most closely related to yeast MIR1 (Figure 5). Leu127 is conserved in all orthologs and interacts with Gln86 (Figure 4A, B, Figure 5, Figure 5—figure supplement 2). Gly268 is maintained throughout the evolution of this protein family (Figure 4A, Figure 5). The Q47A variant was unstable in L. lactis (Figure 6A), suggesting that it has been maintained across evolution for structural stability. The V48A variant did not affect protein expression (Figure 6—figure supplement 2) or AsO43− resistance. However, it did result in a significant difference in Ag+ resistance compared to WT PIC2 (Figure 6B, C). The D124A PIC2 mutant was stably expressed in L. lactis (Figure 6A) and more resistant to Ag+ than WT PIC2 (Figure 6A) but less resistant than cells expressing EV, suggesting that it harbored residual Cu transport activity. When expressed in L. lactis, the L127A PIC2 variant showed WT expression (Figure 6A) and equivalent susceptibility to Ag+ as WT PIC2 but was resistant to AsO43− (Figure 6B, C), indicating that this single substitution interferes with phosphate transport but does not prevent Cu transport. Finally, the G268A variant was unstable in L. lactis (Figure 6A, Figure 6—figure supplement 2), suggesting that the increased resistance to Ag+ and AsO43− associated with the expression of this variant was due to decreased levels of the protein (Figure 6B, C). We also tested a series of mutants that exchanged the residues found in yeast PIC2 and mammalian SLC25A3 with those found in MIR1. Conversion of the PIC2 residues Ser102, Tyr156, Thr180, Gln138, Glu242, and Val191 to the equivalent residues in MIR1 did not affect the ability to transport Ag+ (Figure 6—figure supplement 3). Collectively, the data from the L. lactis assays show that mutating individual residues can impair the transport of both substrates, or Cu or phosphate alone.
 
-## Mitochondrial transport of phosphate but not Cu is compromised in a Leu175 mutant of SLC25A3
+### Mitochondrial transport of phosphate but not Cu is compromised in a Leu175 mutant of SLC25A3
 
 Based on the His33 and Leu127 PIC2 mutant data from L. lactis, we investigated the transport activity of the equivalent variants in murine SLC25A3 (His75 and Leu175). Consistent with the failure of the H33A PIC2 mutant to transport Ag+ or AsO43− in L. lactis, expression of the H75A SLC25A3 variant in immortalized mouse embryonic fibroblasts (MEFs) with floxed (WT) or collapsed (KO) Slc25a3 alleles did not rescue the COX deficiency of the knock-out (KO) cells (Figure 7A, B). Conversely, expression of the L175A SLC25A3 variant was able to reverse the COX defect (Figure 7B). Immunoblot analysis showed that the L175A mutant was present in mitochondria and increased steady-state COX1 levels (Figure 7C). Consistent with our previous studies using a mitochondrially targeted Cu sensor (Dodani et al., 2011; Boulet et al., 2018), we found that total mitochondrial Cu content was significantly reduced in KO MEFs and increased in KO MEFs expressing the L175A variant (Figure 7D).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig7-v2.jpg)
 
-**Figure 7.:** c oxidase (COX) deficiency in KO MEFs.(A) Immunoblot analysis of SLC25A3 abundance in Slc25a3 KO MEFs alone or those transduced with wild-type SLC25A3 (WT), a H75A variant (H75), or a L175A variant (L175). Actin served as an internal loading control. (B) COX activity in KO MEFs alone (n = 6) or transduced with WT SLC25A3 (n = 4), a H75A variant (H75) (n = 5), or a L175A variant (L175) (n = 6). ns, p>0.05, ****, p<0.0001 based on a one-way ANOVA. (C) Immunoblot analysis of SLC25A3, TOM40, and COX1 abundance in whole cells (WC) or isolated mitochondrial (M) from WT or KO MEFs alone (NA) or transduced with the SLC25A3 L175A variant (L175). (D) Total Cu levels in mitochondria from WT or KO cells as in (C), determined by ICP-OES. (E) Cu uptake in mitochondrially derived liposomes created by the membranes of mitochondria in (C) with additional lipids. Liposomes contain Phen Green to monitor the uptake of Cu. (F) Mitochondrial swelling rate in the presence of phosphate as a measure of phosphate uptake.
+**Figure 7.:** (A) Immunoblot analysis of SLC25A3 abundance in Slc25a3 KO MEFs alone or those transduced with wild-type SLC25A3 (WT), a H75A variant (H75), or a L175A variant (L175). Actin served as an internal loading control. (B) COX activity in KO MEFs alone (n = 6) or transduced with WT SLC25A3 (n = 4), a H75A variant (H75) (n = 5), or a L175A variant (L175) (n = 6). ns, p>0.05, ****, p<0.0001 based on a one-way ANOVA. (C) Immunoblot analysis of SLC25A3, TOM40, and COX1 abundance in whole cells (WC) or isolated mitochondrial (M) from WT or KO MEFs alone (NA) or transduced with the SLC25A3 L175A variant (L175). (D) Total Cu levels in mitochondria from WT or KO cells as in (C), determined by ICP-OES. (E) Cu uptake in mitochondrially derived liposomes created by the membranes of mitochondria in (C) with additional lipids. Liposomes contain Phen Green to monitor the uptake of Cu. (F) Mitochondrial swelling rate in the presence of phosphate as a measure of phosphate uptake.
 
 Reconstitution of MCF proteins in liposomes has been used extensively to assess substrate transport and specificity (Marobbio et al., 2015; Marobbio et al., 2003; Fiermonte et al., 1998; Fiermonte et al., 2003; Cavero et al., 2003; Catalina-Rodriguez et al., 2012). Liposomes created from mitochondrial membranes of WT but not KO MEFs were able to transport Cu (Figure 7E). The Cu transport defect in KO-derived liposomes was reversed upon expression of the L175A variant (Figure 7E). To assess phosphate uptake, mitochondrial swelling in the presence of phosphate was measured (Kwong et al., 2014; Hamel et al., 2004). Intact mitochondria isolated from KO cells had a phosphate uptake defect compared to WT that was rescued by expressing WT SLC25A3 but not the L175A variant (Figure 7F). Taken together, these data show that the L175A mutant is able to transport Cu but not phosphate in mitochondria and that this Cu transport activity is sufficient to rescue COX activity.
 
@@ -91,13 +147,13 @@ Reconstitution of MCF proteins in liposomes has been used extensively to assess 
 
 The mechanisms that mediate MCF transporter specificity remain largely unknown. Although two recent studies have shown that single residue changes can modulate MCF substrate specificity (Knight et al., 2019; King et al., 2020), the majority of investigations have focused on deficiencies in the transport of one substrate, and few have assessed substrate promiscuity. Here, we directly addressed this issue by focusing on Cu and phosphate transport, which, in mammals, is mediated by the single MCF transporter SLC25A3. Multiple studies clearly connect SLC25A3 to phosphate transport, and mutations in SLC25A3 lead to skeletal muscle myopathy and heart disease in humans (Boulet et al., 2018; Seifert et al., 2016; Bhoj et al., 2015; Kwong et al., 2014; Mayr et al., 2011; Mayr et al., 2007) and cardiac hypertrophy in mice (Kwong et al., 2014). MEFs derived from the heart-specific Slc25a3 knockout mouse exhibit clear COX and SOD1 defects that can be rescued by overexpression of a Slc25a3 cDNA or addition of Cu (Boulet et al., 2018). These data are complemented by in vitro assays in liposomes showing Cu transport by purified SLC25A3 and by Ag+ growth arrest phenotypes associated with its expression in L. lactis (Boulet et al., 2018). The data presented in this study provide the first experimental evidence of a missense mutation that separates Cu and phosphate transport, and firmly establish that physiological defects in COX and SOD1 are due to impaired Cu transport rather than a secondary consequence of decreased phosphate transport.
 
-## Evolutionary history of mitochondrial Cu–phosphate transporters
+### Evolutionary history of mitochondrial Cu–phosphate transporters
 
 Our evolutionary analyses of the Cu–phosphate transporters were prompted by the observation that S. cerevisiae PIC2 and MIR1 exhibit substrate specificity, whereas the mammalian ortholog SLC25A3 is responsible for the transport of both Cu and phosphate. Selection on genes with multiple functions can constrain diversity to avoid negative effects associated with losing one of these functions. Therefore, gene duplications serve as important sources for evolutionary selection and refinement. Resulting duplications can be retained for the original function, specialized for new functions, refined to enhance an existing function or allow for increased expression by gene dosage; if none of these outcomes occur, the duplicate gene is lost (Kuang et al., 2016; Conant et al., 2014; Sandegren and Andersson, 2009; Conant and Wolfe, 2007; Hittinger and Carroll, 2007; Zhang et al., 2002; Force et al., 1999). In S. cerevisiae, PIC2 and MIR1 are partially redundant for phosphate transport (Hamel et al., 2004). However, mutation of MIR1 in S. cerevisiae is sufficient to produce phosphate-related phenotypes, suggesting that, under most conditions, the ability of PIC2 to transport phosphate is unable to compensate for loss of MIR1 function (Boulet et al., 2018; Hamel et al., 2004). Instead, the PIC2 sequence appears to be optimized for Cu transport. Similarly, we show here that MIR1 lacks clear Cu transport activity even though mir1∆ yeast exhibit increased susceptibility to Cu restriction compared to WT cells. Our phylogenetic analyses of PIC2 and MIR1 sequences suggest that the gene duplication that created these two orthologs was an ancient event, and that evolutionary interplay between these two substrate specificities may have occurred multiple times throughout eukaryotic evolution.
 
 The loss of MIR1 has occurred multiple times in eukaryotes, an event that is likely facilitated by the dual specificity of PIC2. SLC25A3 is essential in mammals as the homozygous deletion is embryonic lethal. While mammals do express two SLC25A3 isoforms, isoform A is expressed primarily in heart and skeletal muscle whereas isoform B is expressed in all tissues (Fiermonte et al., 1998; Seifert et al., 2016; Kwong et al., 2014). Therefore, it is unlikely that the isoforms provide the functional redundancy that would be afforded via gene duplication or retention of MIR1.
 
-## Understanding Cu transport
+### Understanding Cu transport
 
 Copper transport in eukaryotic cells has been an area of intense research since the discovery of cytosolic copper chaperones (Robinson and Winge, 2010; Pufahl et al., 1997), and the observation that there is vanishingly little freely available copper in the cytosol (Rae et al., 1999). These early findings have been refined to recognize that, in addition to proteins, multiple cytosolic ligands contribute to the regulation of metal trafficking and target binding (Waldron et al., 2009). The recruitment of Cu to mitochondria was initially attributed to COX17 due to its dual localization in cytosol and IMS (Glerum et al., 1996). However, COX is fully functional when COX17 is artificially restricted to the IMS by an IM tether (Maxfield et al., 2004), suggesting that its critical role in holoenzyme assembly involves local, redox-regulated delivery of Cu to the accessory proteins SCO1/2 and COX11 (Banci et al., 2008; Horng et al., 2004). Consistent with a mitochondrially restricted function for COX17 in Cu handling, yeast cells lacking this gene accumulate wild-type levels of Cu in mitochondria (Cobine et al., 2004). In fact, attempts to isolate a protein that delivers Cu to mitochondria led to the identification of a non-proteinaceous ligand (CuL) that accumulates in the matrix (Cobine et al., 2021; Vest et al., 2019; Vest and Cobine, 2011; Cobine et al., 2006; Cobine et al., 2004). Although the molecular identity of this ligand remains unknown, its biophysical properties have been used to suggest that the ligand contributes to buffering cytosolic Cu and facilitating uptake of Cu into mitochondria (Cobine et al., 2006; Cobine et al., 2004). PIC2 is able to transport both the CuL purified from the mitochondrial matrix as well as ionic Cu in both liposomes and the L. lactis system (Vest et al., 2013). It is unclear if the transport of the CuL proceeds as an intact complex or if Cu is released from the ligand during transport. The ionic Cu in our transport assays is Cu+ due to the presence of an exogenous reductant (e.g., ascorbate) or the endogenous reductant menaquinone in L. lactis (Abicht et al., 2013), and there is no experimental evidence for other metal ions being transported by PIC2. The transport of ionic Cu could be a mechanism to limit cytosolic accumulation of Cu during Cu-overload-induced stress (Vest et al., 2013; Cobine et al., 2021). Crosslinking and damage of mitochondrial membranes induced by Cu has been observed in models of Cu overload, such as the Long–Evans Cinnamon rat (Zischka et al., 2011).
 
@@ -109,19 +165,282 @@ Our phylogenetic analysis revealed nine taxa that lack a PIC2-like ortholog but 
 
 We favor an idea that MIR1 duplication is a response to overcome the loss of PIC2 due to the basal polytomy among MCF subfamilies observed in our phylogenetic analyses of MCF proteins from each taxon. The lack of clear phylogenetic relationship to a second MCF group suggested that functional transitions are occurring within PIC2-MIR1 clades. However, this requires further investigation and an acknowledgement that other MCF transporters may have also acquired Cu transport activity. Indeed, in yeast we have shown that the MCF family member MRS3 serves as a secondary importer of mitochondrial Cu (Vest et al., 2016). MRS3 is known as an iron transporter, but transport of Cu by MRS3 and its orthologs has been reported in studies using mitochondrially derived vesicles from yeast and plants and in a reconstituted assay system (Brazzolotto et al., 2014; Froschauer et al., 2009; Christenson et al., 2018; Jain et al., 2019). MRS3 orthologs are not consistently recovered in a well-supported sister clade to the PIC2-MIR1 clade, suggesting that this functional redundancy is the result of convergent evolution.
 
-## Understanding phosphate transport
+### Understanding phosphate transport
 
 Our biochemical data suggest that Lys90, Leu127, and Met275 are important for phosphate transport but are dispensable for Cu transport in L. lactis. The proposed mechanism of transport for MCFs based on the comparison of the c- and m-states of the ADP-ATP carrier suggests that even-numbered helices shift to allow transport/transition to the opposite state (Ruprecht and Kunji, 2020; Ruprecht et al., 2019). The PIC2 structural model shows that Leu127 is located on helix 3 adjacent to a proline that kinks the helix, thereby altering helix–helix packing interactions with helix 2 (Figure 8). The Leu127 side chain interacts with the peptide backbone between Leu85 (Met in SLC25A3) and Gln86 in a knobs-into-holes interaction. We hypothesize that helix 2 reorients in the alanine substitution mutant especially in the vicinity of Gln86, changing the dynamics of that part of the structure. In the c-state, this change could shift the side chains of Gln86, and therefore Lys90, to a conformation that disrupts a phosphate binding site (Figure 8) and, by extension, decreases its rate of transport. Methionine 275 is part of the computationally predicted conserved substrate contact point (Robinson et al., 2008). Based on its position in the c-state model below Lys90, Met275 is most likely involved in transport after phosphate enters deeper into the aqueous binding pocket of the protein (Figure 4—figure supplement 2).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig8-v2.jpg)
+
+**Figure 8.:** Ribbon diagrams of PIC2 (A) c-state and (B) m-state structures. The polypeptide is shown as a ribbon trace (aquamarine) and the side chains as stick models. The Leu127 is colored purple to distinguish it from the adjacent Leu85 (green), Gln86 (orange), and Lys90 (blue) residues on helix 2 (α2). Enlargement of the Leu127 interaction with the surrounding residues shown as spheres in (C) c-state and (D) m-state.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/64690/elife-64690-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) 1H-13C heteronuclear multiple bond correlation (HMBC) spectrum of the purified CuL complex. The 1D 1H and 13C spectrum are shown. The box highlights the signals consistent with a benzene ring (carbon shifts 110–175 ppm and proton shifts 6.75–7.9 ppm) in the CuL. (B) Enlargement of the C29-H33 region of c-state with C29, H33, and Y83 shown in sticks. (C) Enlargement of the C29-H33 region of m-state with C29, H33, and Y83 shown in sticks with Y83 between the C29-H33 ‘replacing/occluding’ a potential site for CuL binding.
+
 Cu transport requires the formation of transient covalent bonds between the metal and ligands during transport, whereas phosphate transport relies on hydrogen bonding and salt bridges. These requirements may account for the fact that multiple mutations were able to inhibit the ability of PIC2 to transport phosphate. Other site-directed mutational studies of MIR1 have identified multiple residues that are required for phosphate transport (Wohlrab et al., 2002; Briggs et al., 1999; Phelps et al., 1996; Wohlrab and Briggs, 1994; Phelps and Wohlrab, 1991), including His33, Thr44, and Lys90 (using PIC2 numbering). Consistent with these earlier studies, we observe decreased phosphate transport when mutating the corresponding residues in PIC2. In fact, previous studies of MIR1 function showed that mutation of Thr44 to cysteine partially inactivated phosphate transport (Phelps and Wohlrab, 1991). This cysteine/threonine is clearly demarcated at the node between PIC2 and MIR1 clades, suggesting that it may be a critical change that weakened, but did not eliminate, phosphate transport in PIC2-like transporters (Figure 5). Three lineages (Oryza sativa, Spizellomyces punctatus, and P. marinus) lack MIR1-like transporters and have multiple PIC2-like transporters. In the case of rice, this could simply be due to the polyploid nature of its genome. In the chytrid S. punctatus, it may suggest that duplication enhances gene dosage. That is, additional copies compensate for less efficient phosphate transport. In contrast, the duplicated genes in P. marinus have undergone several notable changes; one variant has a large carboxy terminal truncation, three of the four variants have valine replacing cysteine at position 44 (as noted above from previous studies, threonine at this position is optimal for phosphate transport), and histidine at position 230 is replaced by the glutamine that is found in more phosphate-selective transporters. These changes and gene dosage may be sufficient to overcome the loss of a MIR1-like transporter. Testing these hypotheses will require in vitro expression of multiple transporters to assess substrate selection.
 
-## Conclusions
+### Conclusions
 
 Mitochondria function as a metabolic hub that controls physiology and disease by balancing the concentrations of multiple metabolites and essential elements (Baker et al., 2017; Martínez-Reyes and Chandel, 2020). The MCF proteins play a critical role in regulating the import and export of these substrates (Cunningham and Rutter, 2020; Palmieri et al., 2020), and have been duplicated and specialized over evolutionary time to selectivity recognize and transport highly similar substrates. However, gene duplication has allowed for the retention of some carriers with multiple substrates. The evolutionary relationships among these carriers reveal aspects of transport mechanisms and the physiological demands of the organism. Our analysis of the Cu–phosphate MCF transporters shows that organisms deploy multiple strategies to recruit these substrates. We cannot determine a single characteristic that indicates an advantage or disadvantage of either strategy as unique patterns appear nested in different lineages. Metal transport to the mitochondrial matrix is required for Fe–S cluster assembly and COX assembly. Perhaps metal substrates are sufficiently simple that multiple MCFs are capable of transport. However, given the fatal disorders that result from too much or too little Cu or iron, it is unlikely that their transport is left to chance (Xu et al., 2013). Storage in the mitochondrial matrix may have evolved as a mechanism to ensure Cu availability for COX assembly in an early endosymbiont that was subsequently retained during eukaryogenesis (Cobine et al., 2021). Additional roles for Cu in the matrix remain to be determined. The recent discoveries that mitochondrial Cu can induce cell death through a pathway coined cuproptosis (Tsvetkov et al., 2019), disrupt essential processes such as Fe–S assembly (Vallières et al., 2017; Brancaccio et al., 2017), and alter the stability of SOD1 in the cytosol (Boulet et al., 2018) collectively suggest that understanding the physiological consequences of disrupting this Cu pool and its homoeostasis remains an important area of future research.
 
 ## Materials and methods
 
-## Phylogenetic analysis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>PIC2</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000000855</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>MIR1</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000003838</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>SLC25A3</td>
+      <td>doi:10.1074/jbc.RA117.000265</td>
+      <td>Ensembl: ENSMUSG00000061904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>BY4741</td>
+      <td>Thermo Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactococcus lactis)</td>
+      <td>NZ9000 pepN::nisRK</td>
+      <td>doi:10.1007/s00253-005-0107-6</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>New England Biolabs</td>
+      <td>Cat# C2527H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>SLC25A3</td>
+      <td>doi:10.1074/jbc.RA117.000265</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>MEF</td>
+      <td>doi:10.1074/jbc.RA117.000265</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SLC25A3 (rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See 'Materials and methods' for details WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PIC2 (rabbit polyclonal)</td>
+      <td>doi:10.1074/jbc.M113.470674</td>
+      <td></td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>COX1 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab14705</td>
+      <td>WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TOM40 (rabbit polyclonal)</td>
+      <td>ProteinTech</td>
+      <td>18409-1-AP</td>
+      <td>WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EV</td>
+      <td>MoBiTec</td>
+      <td>Cat# ELV00200-01</td>
+      <td>pNZ8148 expression vector containing the nisA promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>WT; C21A; C29A; H33A; C44A; C225A; Q47A; V48A; Q86A; K90A; D124A; L127A; Q176A; G268A</td>
+      <td>This paper</td>
+      <td>See Supplementary file 1</td>
+      <td>pNZ8148 with wild-type PIC2 sequence or with individual residue mutated</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHis.Parallel.1</td>
+      <td>doi:10.1006/prep.1998.1003</td>
+      <td></td>
+      <td>Expression vector for E. coli</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nisin</td>
+      <td>MoBiTec</td>
+      <td>Cat# VS-ELK01000-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Silver</td>
+      <td>SPEX certiPrep</td>
+      <td></td>
+      <td>Lot #19-13 AGX</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Arsenate</td>
+      <td>Alfa Aesar</td>
+      <td></td>
+      <td>Lot #U21A031</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phen Green SK</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>Lot #2034143</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioEdit</td>
+      <td>Ibis Biosciences, USA</td>
+      <td>RRID:SCR_007361</td>
+      <td>http://www.mbio.ncsu.edu/ BioEdit/bioedit.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>doi:10.1107/S0907444904019158</td>
+      <td>RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CD-HIT</td>
+      <td>doi:10.1093/bioinformatics/bts565</td>
+      <td>RRID:SCR_007105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ConSurf server</td>
+      <td>doi:10.1093/nar/gkw408</td>
+      <td>RRID:SCR_002320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji (ImageJ)</td>
+      <td>doi:10.1038/nmeth.2019</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HMMER, v3.3</td>
+      <td>doi:10.1093/nar/gkr367</td>
+      <td>RRID:SCR_005305</td>
+      <td>http://hmmer.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IQ-TREE, v2.0.3</td>
+      <td>doi:10.1093/molbev/msu300</td>
+      <td>RRID:SCR_017254</td>
+      <td>http://www.iqtree.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEGA Software, v10.1.8</td>
+      <td>doi:10.1093/molbev/msz312</td>
+      <td>RRID:SCR_000667</td>
+      <td>https://www.megasoftware.net/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>doi:10.1107/S2059798319011471</td>
+      <td>RRID:SCR_014224</td>
+      <td>https://www.phenix-online.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>Graph Pad, Inc</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger, LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td>http://www.pymol.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SWISS-MODEL</td>
+      <td>doi:10.1093/nar/gkg520</td>
+      <td>RRID:SCR_018123</td>
+      <td>https://swissmodel.expasy.org/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bovine ADP/ATP carrier</td>
+      <td>doi:10.1038/nature02056</td>
+      <td>PDB:1OKC</td>
+      <td>Crystal structure of the bovine ADP/ATP carrier</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Yeast ADP/ATP carrier, c-state</td>
+      <td>doi:10.1073/pnas.1320692111</td>
+      <td>PDB:4C9G</td>
+      <td>Crystal structure of the yeast ADP/ATP carrier in the cytoplasmic-open state</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Yeast ADP/ATP carrier, m-state</td>
+      <td>doi:10.1016/j.cell.2018.11.025</td>
+      <td>PDB:6GCI</td>
+      <td>Crystal structure of the yeast ADP/ATP carrier in the matrix-open state</td>
+    </tr>
+  </tbody>
+</table>
+
+### Phylogenetic analysis
 
 To delineate the evolutionary histories of the PIC2/MIR1 orthologs, 47 species were chosen that span the eukaryotic supergroups defined here. For each of these species, complete nuclear genome assemblies and protein predictions are available from NCBI (Supplementary file 1). MCF orthologs were identified using HMMER (Potter et al., 2018) to detect sequences containing the mitochondrial carrier (MC) domain (PFAM PF00153). Redundant sequences and transcript variants were eliminated using CD-Hit with a threshold of 0.9 (Huang et al., 2010).
 
@@ -129,38 +448,38 @@ To distinguish PIC2/MIR1 orthologs from other members of the MCF family, phyloge
 
 Amino acid sequences of the eukaryotic MIR1/PIC2 orthologs were aligned with 32 S. cerevisiae MCF proteins using MUSCLE implemented in MEGA X. Phylogenetic analysis was performed using IQ-TREE version 2.0.3 (Minh et al., 2020). The optimal substitution model was selected using the IQ-TREE ModelFinder (Kalyaanamoorthy et al., 2017). A maximum likelihood tree was constructed using the LG+F+R7 model (a general codon exchange matrix for nuclear genes with amino acid frequencies determined empirically from the data and seven rate categories). Support was calculated based on 1000 replications using ultrafast bootstrap approximation (UFBoot2; Hoang et al., 2018).
 
-## Structural modeling
+### Structural modeling
 
 Multiple sequence alignments between PIC2, its mammalian orthologs, and the ADP/ATP exchanger family were used to correctly place indels at secondary structure boundaries between helices and loops on the molecular surface and also to ensure robust alignment of the key helices. Insertions and deletions were modest in the resultant alignment (three deletions and one insertion, ranging from 5 to 10 residues each; Supplementary file 1). Initial molecular models of the cytosolic open form of PIC2 were generated using Swissmodel (Waterhouse et al., 2018) from the atomic coordinates of the yeast ATP/ADP exchanger bound to carboxyatractyloside (PDB:4C9G) (Ruprecht et al., 2014). The aligned PIC2 and yeast ATP/ADP carrier sequences share 19% identity and 37% similarity over 305 residues. The resultant model was carefully compared to the parent structure and to the structure of the cytosolic open form of the bovine mitochondrial ATP/ADP carrier bound to carboxyatractyloside (PDB:1OKC) (Pebay-Peyroula et al., 2003), again 19% identical and 37% similar to PIC2 over 305 residues. Side chains in the model were adjusted for sensible hydrogen bonding, salt bridge formation, and consistency and packing of rotamers using Coot (Emsley and Cowtan, 2004). Finally, the model atomic coordinates were energy minimized within the PHENIX suite to optimize molecular geometry and relieve steric clashes (Liebschner et al., 2019). Using the atomic coordinates of the bongkrekic acid-bound matrix open form of the yeast ATP/ADP carrier (PDB:6GCI) (Ruprecht et al., 2019), we then constructed a model of the matrix open form of yeast PIC2. Both models appeared to be sensible, preserving secondary structure, cardiolipin-binding sites, and exhibiting the expected constellation of hydrophobic residues facing the membrane. Using the same methodology, we also built atomic models of the cytosolic open and matrix open forms of mouse SLC25A3 (also 18% identical and 37% similar over 305 residues to the template structures), and then carefully compared the PIC2 and SLC25A3 models for consistency of helix positions, side chain packing, and hydrogen bonding (PIC2 and SLC25A3 sequences are 47% identical and 64% similar over 312 residues with only 8% indels).
 
-## Expression in L. lactis
+### Expression in L. lactis
 
 L. lactis cells transformed with vector (pNZ8148 [MoBiTec]) alone or pNZ8148 carrying yeast MIR1, PIC2, or site-directed PIC2 mutants were grown overnight at 30°C in M17 medium with 0.5% glucose and 10 µg/mL chloramphenicol. To determine Ag+ toxicity, cells were grown in a 96-well plate containing M17 medium plus 1 ng/mL nisin and increasing concentrations of Ag+ (0–250 µM) or AsO43− (0–2.5 mM). Controls containing M17 without nisin or M17 plus Ag+ or AsO43− without nisin were included. Optical density at 600 nm was used to assess growth after 24 hr. Percent growth was quantified by comparing to the optical density of the same genotype in nisin alone.
 
-## Elemental analysis
+### Elemental analysis
 
 Samples were digested in 40% nitric acid by boiling for 1 hr in capped, acid washed tubes, diluted in ultra-pure, metal-free water and analyzed by ICP-OES (Perkin Elmer, Optima 7300DV) versus acid-washed blanks. Concentrations were determined from a standard curve constructed with serial dilutions of two commercially available mixed metal standards (Optima). Blanks of nitric acid with and without ‘metal-spikes’ were analyzed to ensure reproducibility.
 
-## Cell lines
+### Cell lines
 
 Clonal Slc25a3Flox/Flox and Slc25a3-/- MEF lines (Boulet et al., 2018) were maintained at the University of Saskatchewan and verified as Mycoplasma-free using the MycoAlert Mycoplasma Detection Kit (Lonza). The integrity of the mutation was routinely verified using PCR and immunoblotting.
 
-## Cell culture conditions
+### Cell culture conditions
 
 Clonal Slc25a3Flox/Flox and Slc25a3-/- MEF lines were cultured in high-glucose DMEM (Dulbecco's Modified Eagle's medium) containing sodium pyruvate, 50 µg/mL uridine, 0.1 mM mercaptoethanol, and 10% fetal bovine serum at 37°C at an atmosphere of 5% CO2 (Boulet et al., 2018). Mouse Slc25a3-b cDNA was amplified from RNA and cloned into a Gateway-modified retroviral expression vector. The fidelity of this construct was confirmed by Sanger sequencing and retrovirus was produced with the Phoenix Amphotrophic packaging cell line used to transduce MEFs.
 
-## Immunoblot and activity assays
+### Immunoblot and activity assays
 
 This study used monoclonal antibodies raised against COX1 (Abcam ab14734), a rabbit polyclonal antibody TOM40 (ProteinTech 18409-1-AP), and a rabbit polyclonal antibody raised against the KLH conjugated SLC25A3 peptide CRMQVDPQKYKGIFNGSVTLKED (Pacific Immunology). For L. lactis extracts, we used rabbit polyclonal antibody raised against a PIC2 peptide (Vest et al., 2013). COX activity was determined by monitoring the decrease in absorbance at 550 nm of chemically reduced cytochrome c in the presence of whole cell or mitochondrial extracts (Cobine et al., 2004). All activities were normalized to protein concentration, then converted to percentage of maximum control value.
 
-## Expression of recombinant proteins
+### Expression of recombinant proteins
 
 PIC2 and MIR1 from S. cerevisiae (strain BY4741) were sub-cloned into pHis parallel 1 for Escherichia coli expression. BL21(DE3) E. coli transformed with the vector were grown to optical density at 600 nm of 0.6–0.8, and protein expression was induced with isopropyl β-D-1-thiogalactopyranoside for 2 hr. Inclusion bodies containing the recombinant proteins were isolated as described (Palmieri et al., 2000). Cells were resuspended in cell lysis buffer (150 mM NaCl, 50 mM Tris pH 7.5) and disrupted by sonication. Insoluble material was collected by centrifugation at 18,500 g and resuspended in cell lysis buffer and loaded onto a stepwise 40%, 53%, 70% sucrose gradient. Samples were centrifuged at 18,500 g for 1 hr, and inclusion bodies were isolated at the interface of the 53% and 70% layers. Recombinant proteins were solubilized in 6 M urea, then incorporated into liposomes by mixing egg yolk phospholipids before overnight dialysis in 25 mM Tris buffer pH 7.2. The dialyzed mixture was sonicated in the presence of the metal-responsive fluorophore Phen Green, then purified by loading the vesicles in 35% sucrose under 20% sucrose and centrifuged at 18,500 g for 60 min. The final proteoliposomes were isolated from the top of the sucrose layer and protein concentration was determined by Bradford assay.
 
-## Purification and NMR analysis of CuL
+### Purification and NMR analysis of CuL
 
 Intact mitochondria were fractionated in soluble and insoluble fractions as described previously (Vest et al., 2016). The soluble anionic fractions were isolated by adding DEAE (Whatman) resin in batch. The resin was washed with 20 mM ammonium acetate, pH 8.0, and eluted with of 1 M ammonium acetate, pH 8.0. The samples were dried and loaded onto a Phenomenex C18 column. Unbound fractions were removed with 50 mM ammonium acetate, pH 5.0 followed by a 60 min gradient to 100% acetonitrile. The final fractions were analyzed for copper by ICP-OES (PerkinElmer, Optima 7300DV) and for fluorescence (PerkinElmer Life Sciences LS55 fluorimeter). Excitation and emission scans of copper-containing fractions used an excitation maximum of 320 nm and an emission maximum of 400 nm with 5-nm slit widths. For NMR analysis, samples were dried in CentriVap concentrator (Labconco), then resuspended in 100% D2O. The process of drying and resuspending in D2O was repeated at least five times placing samples in >95% D2O. Samples were analyzed on a 500-mHz NMR spectrometer (Varian, Inova) referenced to residual solvent. 1H 1D spectrum, 13C 1D spectrum, 1H13C HSQC, and 1H13C HMBC experiments were collected. Purity of individual samples could not be confirmed by mass spectroscopy based on failure to reliably detect ions. However, the identical 1H and 13C spectra were consistently produced from the final product of the chromatography.
 
-## Fluorescence anisotropy
+### Fluorescence anisotropy
 
 Purified CuL isolated from mitochondria was diluted in 150 mM NaCl, 50 mM Tris pH 7.5 to give a fluorescence intensity (excitation at 320 nm and emissions at 400 nm) of 30–50. MCF proteins incorporated into liposomes were added in 1–5 µL increments, and anisotropy was measured using a PerkinElmer Life Sciences LS55 fluorescence spectrometer.

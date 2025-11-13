@@ -16,10 +16,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01xsqw823 GSK Stevenage United Kingdom
-2. https://ror.org/01xsqw823 GSK Brentford United Kingdom
-3. https://ror.org/01tvt4d48 GSK Mumbai India
-4. https://ror.org/025vn3989 GSK Upper Providence United States
+1. GSK Stevenage United Kingdom ([ROR:01xsqw823](https://ror.org/01xsqw823))
+2. GSK Brentford United Kingdom ([ROR:01xsqw823](https://ror.org/01xsqw823))
+3. GSK Mumbai India ([ROR:01tvt4d48](https://ror.org/01tvt4d48))
+4. GSK Upper Providence United States ([ROR:025vn3989](https://ror.org/025vn3989))
 
 † Corresponding author
 
@@ -39,27 +39,27 @@ Watson et al. mentioned the phase 2b dose-selection study (DETECTIVE) of tafenoq
 
 ## Results
 
-## Efficacy models employed by Watson et al
+### Efficacy models employed by Watson et al
 
 In their efficacy models, Watson et al. explored the association between the odds of P. vivax recurrence and the following predictors: mg/kg dose of tafenoquine; AUC0–∞; peak plasma tafenoquine concentration; terminal elimination half-life; and Day 7 methaemoglobin (MetHb) level. However, details of how the best predictor was selected and how statistical significance was judged were not provided in the manuscript.
 
-## Use of a 4-month versus 6-month follow-up period
+### Use of a 4-month versus 6-month follow-up period
 
 Regarding radical curative efficacy, Watson et al. selected P. vivax recurrence within 4 months as their primary endpoint. However, the trial-defined primary endpoint at 6 months from the pivotal tafenoquine clinical trials (Llanos-Cuentas et al., 2019; Llanos-Cuentas et al., 2014; Lacerda et al., 2019) was an FDA requirement and was mandated for analysis purposes. This was to maximise the probability of capturing relapses, including those from regions with longer latency periods. Watson et al. used the INSPECTOR study (Sutanto et al., 2023) as one of two reasons to justify the selection of a 4-month endpoint. Relapse rates differ greatly from country to country, so the duration of the endpoint should not be based on rates observed in a single country. Moreover, the 6-month rate of loss to follow-up (only 9.1%) does not justify a change of treatment endpoint from 6 months to 4 months . Furthermore, Watson et al. describe a possible association between tafenoquine mg/kg dose and the odds of recurrence (using logistic regression), with a 4-month rather than 6-month follow-up. An odds ratio of 0.66 (95% confidence interval [CI]: 0.51, 0.85) is cited by Watson et al. in their analysis of the effect of tafenoquine mg/kg dose in patients who received tafenoquine 300 mg, but descriptive details for this result and the analysis are limited. Figure 2 in the Watson et al. manuscript shows Kaplan–Meier survival curves for time to first recurrence, based on tafenoquine mg/kg dosing category, but some areas require clarification, such as how the dosing bands were selected.
 
-## Rationale for tafenoquine dose selection
+### Rationale for tafenoquine dose selection
 
 Importantly, the classification and regression tree analysis, in which a clinically relevant breakpoint tafenoquine AUC value of 56.4 μg·h/mL was identified, was not discussed (Tenero et al., 2015). Population PK modelling revealed that tafenoquine 300 mg would provide systemic exposure greater than or equal to the AUC breakpoint in approximately 93% of individuals, who would have a high probability (85%; 95% CI: 80, 90) of remaining relapse-free at 6 months (Tenero et al., 2015). Therefore, this ‘… model-based approach was critical in selecting an appropriate phase 3 dose’ for tafenoquine (Tenero et al., 2015). Although data from the TEACH paediatric study (Vélez et al., 2022) were not available when Watson et al. conducted their analysis, had the data been available, they would have validated the AUC approach to tafenoquine dose selection, with an overall efficacy of approximately 95% (Vélez et al., 2022). Individuals (aged 2–15 years) were given tafenoquine, based on bodyweight, to achieve the same median AUC as the 300 mg dose in adults (children weighing >10–20 kg received tafenoquine 100 or 150 mg; >20–35 kg received 200 mg; and >35 kg received 300 mg). The recurrence-free rate at 4 months was 94.7% (95% CI: 84.6, 98.3) (Vélez et al., 2022), and the TEACH study supported the successful approval of tafenoquine for children aged 2–16 years by the Australian TGA in March 2022 (Medicines for Malaria Venture, 2022).
 
 Another important counter to the mg/kg-based dose selection is that, when bodyweight categories were fitted as a continuous variable in the INSPECTOR study (using data for the time to recurrence for all participants), neither bodyweight nor bodyweight-by-treatment interactions were statistically significant (P=0.831 and P=0.520, respectively) (Sutanto et al., 2023).
 
-## Use of an unvalidated biomarker
+### Use of an unvalidated biomarker
 
 The hypothetical causal model proposed by Watson et al. for the clinical pharmacology of tafenoquine for the radical treatment of P. vivax malaria is problematic. Central to this model are MetHb production and active metabolites. However, MetHb is not a validated biomarker of tafenoquine efficacy, and currently there is no evidence, from non-clinical or clinical studies, of circulating active metabolites of tafenoquine; if such metabolites were fleetingly present, they would require extraordinary potency to exert any significant pharmacodynamic effect (GSK Investigator Brochure. Data on file).
 
 In addition, although Watson et al. state that increases in blood MetHb concentrations after tafenoquine administration were highly correlated with mg/kg dose, no correlation coefficients, indicating strength of correlation, were discussed in the manuscript. It should be re-emphasised that MetHb is not a validated, surrogate biomarker of antimalarial treatment efficacy as a radical cure for P. vivax malaria and was used as a safety measure in the INSPECTOR study (Sutanto et al., 2023).
 
-## Potential safety concerns
+### Potential safety concerns
 
 In the Tolerability and safety section, Watson et al. state that severe haemolytic events were rare; however, this is because all the studies were randomised and controlled, which excluded patients with <70% G6PD activity. In addition, no mention was made that, in one of the constituent studies (which examined the dose–response for haemoglobin decline in participants with 40–60% G6PD enzyme activity) (Rueangweerayut et al., 2017), dose escalation of tafenoquine from 300 mg to 600 mg was not attempted due to safety concerns about potential haemolysis in patients with G6PD deficiency. In tafenoquine-treated patients in the real-world setting, some instances of severe haemolysis might be expected, and it is already known from the previously highlighted phase 1 study that the haemolytic potential of tafenoquine increases with increasing dose (Rueangweerayut et al., 2017). Watson et al.’s Tolerability and safety section also mentions that one tafenoquine-treated patient had a >5 g/dL decrease in haemoglobin level, but the baseline haemoglobin level and tafenoquine dose are not mentioned. The section may have benefitted from a holistic discussion of safety parameters per tafenoquine dose group: for example, the occurrence of serious adverse events, gastrointestinal adverse events (beyond the selective discussion of vomiting within 1 hour post dose) and neuropsychiatric adverse events.
 

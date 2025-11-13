@@ -145,9 +145,7 @@ In particular, we had checked if anteroposterior flow-fields are similar with an
 
 Second to investigate if there is an impact on the alignment profile, we compared three different LifeAct constructs with distinct expression levels and different fluorophores. We find that both anteroposterior flowfields and the profile of nematic order are not significantly different between these three lines (Figure 2—figure supplement 5A-C). Note that for Lifeact:GFP the peak in nematic order is slightly lower than for the other two lines, but this is likely due to our quantification method and the reduced LifeAct fluorescence intensity signal (see also below). The general shape, however, is well preserved among the three lines, all three strains showed similar nematic order profiles with a peak of vertical alignment at the cell equator during pseudocleavage. Taken together, this indicates that we are using LifeAct at concentrations that do not significantly impact actin and actomyosin cortex dynamics.
 
-Finally, we verified that the dynamics of cytokinetic ring closure, another process that sensitively depends on actomyosin mechanics, appears similar both with and without LifeAct (see Author response image 1).10.7554/eLife.17807.029Author response image 1.Actomyosin ring closure dynamics.DOI: http://dx.doi.org/10.7554/eLife.17807.029
-
-DOI: http://dx.doi.org/10.7554/eLife.17807.029
+Finally, we verified that the dynamics of cytokinetic ring closure, another process that sensitively depends on actomyosin mechanics, appears similar both with and without LifeAct (see Author response image 1).10.7554/eLife.17807.029Author response image 1.Actomyosin ring closure dynamics.
 
 Note that Lifeact is the best probe we have to follow in real time the dynamics of the actin filaments in C. elegans. All our efforts to directly label actin have led to severe actomyosin phenotypes that prohibit any type of quantitative analysis.
 

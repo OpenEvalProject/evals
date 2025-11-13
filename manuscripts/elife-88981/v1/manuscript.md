@@ -11,22 +11,157 @@
 
 ### Affiliations
 
-1. https://ror.org/02s376052 Laboratory of Systems Biology and Genetics, Institute of Bioengineering, School of Life Sciences, Ecole Polytechnique Fédérale de Lausanne (EPFL) Lausanne Switzerland
-2. https://ror.org/002n09z45 Swiss Institute of Bioinformatics Lausanne Switzerland
-3. https://ror.org/02s376052 Bioinformatics Competence Center, EPFL Lausanne Switzerland
-4. https://ror.org/05f950310 Laboratory of Behavioral and Developmental Genetics, Center for Human Genetics, KU Leuven Leuven Belgium
+1. Laboratory of Systems Biology and Genetics, Institute of Bioengineering, School of Life Sciences, Ecole Polytechnique Fédérale de Lausanne (EPFL) Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
+2. Swiss Institute of Bioinformatics Lausanne Switzerland ([ROR:002n09z45](https://ror.org/002n09z45))
+3. Bioinformatics Competence Center, EPFL Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
+4. Laboratory of Behavioral and Developmental Genetics, Center for Human Genetics, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
 
 † Corresponding author
 
 ## Abstract
 
-Genome-wide association studies have advanced our understanding of complex traits, but studying how a GWAS variant can affect a specific trait in the human population remains challenging due to environmental variability. Drosophila melanogaster is in this regard an excellent model organism for studying the relationship between genetic and phenotypic variation due to its simple handling, standardized growth conditions, low cost, and short lifespan. The Drosophila Genetic Reference Panel (DGRP) in particular has been a valuable tool for studying complex traits, but proper harmonization and indexing of DGRP phenotyping data is necessary to fully capitalize on this resource. To address this, we created a web tool called DGRPool ( dgrpool.epfl.ch ), which aggregates phenotyping data of 1034 phenotypes across 135 DGRP studies in a common environment. DGRPool enables users to download data and run various tools such as genome-wide (GWAS) and phenome-wide (PheWAS) association studies. As a proof-of-concept, DGRPool was used to study the longevity phenotype and uncovered both established and unexpected correlations with other phenotypes such as locomotor activity, starvation resistance, desiccation survival, and oxidative stress resistance. DGRPool has the potential to facilitate new genetic and molecular insights of complex traits in Drosophila and serve as a valuable, interactive tool for the scientific community.
+Genome-wide association studies have advanced our understanding of complex traits, but studying how a GWAS variant can affect a specific trait in the human population remains challenging due to environmental variability. Drosophila melanogaster is in this regard an excellent model organism for studying the relationship between genetic and phenotypic variation due to its simple handling, standardized growth conditions, low cost, and short lifespan. The Drosophila Genetic Reference Panel (DGRP) in particular has been a valuable tool for studying complex traits, but proper harmonization and indexing of DGRP phenotyping data is necessary to fully capitalize on this resource. To address this, we created a web tool called DGRPool (dgrpool.epfl.ch), which aggregates phenotyping data of 1034 phenotypes across 135 DGRP studies in a common environment. DGRPool enables users to download data and run various tools such as genome-wide (GWAS) and phenome-wide (PheWAS) association studies. As a proof-of-concept, DGRPool was used to study the longevity phenotype and uncovered both established and unexpected correlations with other phenotypes such as locomotor activity, starvation resistance, desiccation survival, and oxidative stress resistance. DGRPool has the potential to facilitate new genetic and molecular insights of complex traits in Drosophila and serve as a valuable, interactive tool for the scientific community.
 
 ## Introduction
 
 Drosophila melanogaster is an excellent model organism for studying genotype-to-phenotype relationships. It is a short-living species and is very easy to maintain in similar laboratory conditions, which limits confounding factors such as the environment. The Drosophila Genetic Reference Panel (DGRP) was created in the early 2010s and now consists of 205 inbred lines that are fully sequenced, of which 192 are still available in the Bloomington Drosophila Stock Center (https://bdsc.indiana.edu/; Mackay, 2012; Huang et al., 2014). The DGRP has proven highly valuable to study the genetic basis of complex traits, as illustrated by the many studies that have used GWAS principles to identify variants that contribute to traits related to morphology, metabolism, behavior, aging, disease susceptibility etc. (Figure 1A). Furthermore, since the DGRP lines were inbred for many generations, they are almost fully homozygous, which simplifies the identification of putatively causal alleles and elucidation of implicated molecular mechanisms (Bou Sleiman et al., 2015). Moreover, the fact that the same lines can be studied by various researchers for diverse traits should leverage these data generation efforts to uncover unexpected correlations between phenotypes or relationships between genetic variants and a wide range of traits.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/88981/elife-88981-fig1-v1.jpg)
+
+**Figure 1.:** (A) Pubmed search on ‘Drosophila DGRP’ terms unveiled 155 results from 2012–2024 (search made in July 2024). (B) Sex of the DGRP lines used across all 135 studies (left) and 43 curated studies (right), for each phenotype. (C) Number of studies per phenotype category. Studies can be assigned to multiple categories. (D) Number of phenotypes per study and per sex. Studies without attached phenotypes were not plotted. Of note, a given phenotype can be measured for different sexes and thus counted multiple times.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88981/elife-88981-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** This screenshot shows the metadata section of the editing page for a study, where the curator can edit any of the fields. We expect the curator to set a description (short abstract) for the study, and associate some categories. The curator can also deactivate a phenotype if they consider that it is not a proper phenotype (like the number of replicates). Once the curation is done, the ‘Status’ field can be changed to ‘Validated’, which signifies that the curation process is finished, allowing the study to be widely visible to the users.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/88981/elife-88981-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Studies have only been curated up to study 43 at the time of writing. Studies without attached phenotypes were not plotted. Here, we disregard the sex and thus count the unique phenotypes irrespective of the available sex linked to them. The 43 curated studies have 505 different phenotypes (~60%), while the remaining studies provide another 333 phenotypes (~40%).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/88981/elife-88981-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** This screenshot shows the phenotype section of the editing page for a study, where the curator can create or update the phenotyping data associated with the study. Here, the data is from Huang et al., 2014; Huang et al., 2020, taken as an example study. It is divided into four columns (from left to right): (1) dataset type (raw or summary), (2) phenotypes, (3) DGRP lines, and (4) actions. If the curator submits or updates a phenotype, a parsing script is then run to check the data format, and then the data is updated in the DGRPool database. For each study, the curator can submit, update or delete a unique summary dataset, containing summary data for each DGRP line (e.g. for mean or median values). The curator can also submit multiple raw datasets, if the raw data is available for this study. Raw data means that the phenotyping data is not summarized, that is, there are multiple values for the same DGRP line (e.g. because of replicate flies). Note: Gray phenotypes are deactivated phenotypes, that is, data that are present in the imported dataset, but not treated as ‘real’ phenotypes (here, it is a block number for each fly).
+
 However, there is currently only one major data resource that aims to compile DGRP information, the DGRP2 website (http://dgrp2.gnets.ncsu.edu/; Mackay, 2012; Huang et al., 2014). This website hosts the genotyping data, its annotation, and potential known covariates (well-established inversion genotypes and symbiont levels), as well as 31 phenotypes from 12 studies (Table 1). The data is primarily hosted as static files, downloadable from the website, along with limited RNA expression data. In addition, a very important tool, used by the DGRP community, is the possibility for any user to submit their own phenotype files for running a GWAS analysis (corrected for the so-called ‘known covariates’, i.e. established inversions and Wolbachia infection status). This is particularly useful, especially for researchers that do not have the bioinformatics knowledge or capacity to perform these tasks internally. However, the DGRP2 website has not been updated for an extended period as the last referenced paper dates back to 2015, and, except for the GWAS computation, has remained static. This means that any meta-study, which would aim to aggregate datasets across available phenotypes, would require hours (if not days) of work to transform the data into an appropriate and common format. Moreover, the result of such effort would unlikely become available to the rest of the community, and thus any other group would need to redo this work in order to gather similar information, while the data of other phenotyping studies beyond the 12 available would not be easily accessible.
+
+**Table 1.**
+ Comparison of the two currently available web portals organizing DGRP phenotyping data.This table compares different features available in DGRPool, with DGRP2 being the main current resource for DGRP data. DGRPool separates the features into (1) Data, which summarizes the available phenotyping data, (2) Tools, which lists the available tools and options, mainly GWAS, PheWAS and phenotype correlation, (3) Web, which describes the website itself, and (4) Additional features that are available in DGRPool, such as the curation system, the possibility to publish new studies and the interactive plots. Of note, the 838 phenotypes are counted regardless of the linked sex (M, F and/or NA), while the ‘sex-specific’ value is calculated by counting the same phenotype separately for each available sex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>DGRPool</th>
+      <th>DGRP2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">REFERENCE</td>
+      <td>This study</td>
+      <td>Mackay, 2012; Huang et al., 2014</td>
+    </tr>
+    <tr>
+      <td rowspan="4">DATA</td>
+      <td colspan="2">DGRP lines</td>
+      <td>342</td>
+      <td>205</td>
+    </tr>
+    <tr>
+      <td colspan="2">DGRP studies</td>
+      <td>135 (43 fully curated)</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td colspan="2">Phenotypes</td>
+      <td>1034 (840 unique)</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td colspan="2">Gene Expression data</td>
+      <td>External links</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td rowspan="8">TOOLS</td>
+      <td rowspan="6">GWAS</td>
+      <td>Calculated on all phenotypes</td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>User upload</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>Method</td>
+      <td>Plink2</td>
+      <td>FastLMM</td>
+    </tr>
+    <tr>
+      <td>Covariates</td>
+      <td>Wolbachia + 5 Insertions</td>
+      <td>Wolbachia + 5 Insertions</td>
+    </tr>
+    <tr>
+      <td>Boxplot of REF vs ALT</td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PheWAS of top variants</td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Phenotype correlation</td>
+      <td>Calculated on all phenotypes</td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>User upload</td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">WEB</td>
+      <td colspan="2">URL</td>
+      <td>https://dgrpool.epfl.ch/</td>
+      <td>http://dgrp2.gnets.ncsu.edu/</td>
+    </tr>
+    <tr>
+      <td colspan="2">Backend</td>
+      <td>Ruby-on-rails+PostgreSQL</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td colspan="2">Frontend</td>
+      <td>Javascript, Plotly</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td rowspan="3">FEAT.</td>
+      <td colspan="2">Curation system &amp; tools</td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Publish new studies</td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Interactive plots</td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 For all these reasons, we decided to create a web application that would both act as a repository of DGRP phenotyping datasets and also as an online tool for assisting researchers with some basic systems genetics-inspired analyses. Our goal was to index all existing literature about DGRP phenotyping data —where possible— in order for users to quickly search through the website using simple keywords. We manually associated each study with broad and tailored categories such as ‘ageing’, ‘metabolism’, or ‘olfactory’. We specifically spent important time curating the datasets to avoid any errors or misrepresentations of datasets. To avoid the ‘maintenance issue’ that is common to online tools, and keep the data up to date, we implemented specific curators’ tools, to help maintain the web application in the future. These tools allow any user to submit a novel dataset, which is then attributed to a curator, in order to manually format and validate all phenotyping data and metadata associated with the study. Importantly, any user can become a curator, as advertised on the main page of the resource, since we strongly believe that such a community-run resource architecture is most optimal to keep a web tool state-of-the-art and allow crowd-based curation work (Gramates et al., 2022).
 
@@ -38,7 +173,7 @@ To showcase the potential of our tool in facilitating new biological discoveries
 
 ## Results
 
-## A thousand phenotypes across 135 studies
+### A thousand phenotypes across 135 studies
 
 To start our data collection, we searched for DGRP studies that reference any phenotyping data and, in parallel, implemented diverse tools to automatically aggregate these data and their associated metadata from the journals hosting the datasets. However, we quickly realized that it was difficult to automate the entire process. Specifically, the import of phenotyping data proved challenging since (i) datasets tended to be hosted in very different formats such as Excel files or PDF, (ii) data was stored within the journal’s supplementary section, or in external repositories such as Figshare; and (iii) the format of the phenotyping data differed from one publication to another. Because of these challenges, we implemented a curation page to manually review, edit, and correct datasets that were automatically aggregated, aiming to prevent errors in the imported datasets. In addition, this allows the curator to add relevant remarks or comments on the study under review, thus providing enhanced context for future analyses of these datasets.
 
@@ -50,7 +185,7 @@ For all of the curated studies, we carefully separated the data by sex when info
 
 Upon data curation, the assigned curator(s) has to specify a few phenotypic categories for each study, for example, ‘Metabolism’, ‘Nutrition’, or ‘Ageing’ (Figure 1C). Since these categories are browsable, it facilitates searching for a set of specific studies or linking the studies together. Interestingly, the top annotated categories are either ‘Behaviour’, ‘Life History Traits’, or ‘Resistance’, which is consistent with historical behavioral and immune studies conducted for Drosophila as a model organism (Arch et al., 2022; Dissel, 2020; Flatt, 2020; Harnish et al., 2021; O’Kane, 2011). The number of phenotypes per study ranges from 1 to 89 (Figure 1D, Figure 1—figure supplement 2), with a median of 5, and a mean of 11, revealing that, while a low number of phenotypes (usually less than 10) tends to be the norm, some studies aggregate lots of (often similar) phenotypes. An example of the latter is Chaston et al., 2016 which investigated the impact of microbiota on nutritional traits. The authors studied 76 different microbial taxa, whose effect was quantified independently, generating a high number of phenotypes. Similarly, Dembeck et al., 2015 studied cuticular hydrocarbon composition, considering 66 different cuticular components, while Vonesch et al., 2016 studied organismal size traits, regrouping 28 morphological phenotypes such as wing length or intraocular distance. In total, the 43 curated studies aggregate 316 M+220 F+133 NA=669 sex-specific phenotypes, for a total of 505 unique phenotypes (~60%), while the remaining non-curated studies provide another 60 M+37 F+268 NA=365 sex-specific phenotypes, for a total of 333 unique phenotypes (~40%).
 
-## Harmonization and formatting of phenotyping data
+### Harmonization and formatting of phenotyping data
 
 DGRP phenotyping data are often available as a supplemental data table, published along with the main paper on the journal’s website. Such data can also be stored on external websites such as Figshare and, as already indicated, the corresponding file can be in varying formats (i.e. Excel, text, or PDF), so it is challenging to entirely automate extraction algorithms. Usually, the data are presented in the form of a matrix, with DGRP lines in rows and phenotypes in columns. But sometimes, they can be in a more ‘exotic’ format (Hope et al., 2019), requiring a hands-on approach to format it appropriately. Also, the provided phenotyping data are often not sufficiently self-informative and thus require in-depth reading of the original manuscript to grasp abbreviations or identify the correct measurement units. These are important, in particular, to assure reproducibility, but especially when aggregating multiple studies together such that the scale of the values is similar. In DGRPool, we therefore created a common matrix format to represent all studies, and we implemented a ‘Unit’ metadata for each phenotype. Then, for each study, we mapped all phenotypes to their appropriate format and units (Figure 1—figure supplement 3). This part is fully accessible to the curator, who can update or add any phenotype that would be missing, with their corresponding units and meta-data description.
 
@@ -60,15 +195,39 @@ Finally, for some studies, phenotyping data were not or no longer available from
 
 To avoid such issues in the future, we have formulated a couple of good practice guidelines for authors to facilitate and improve upon our and future datasets with the aim of enabling harmonized and reproducible research. These guidelines are detailed in the Discussion section of this manuscript. All curated datasets in DGRPool are formatted following these guidelines (where possible), and phenotypes can now be easily downloaded in a standard TSV format from a particular study, or from a phenotype page.
 
-## How to leverage these datasets by correlating phenotypes
+### How to leverage these datasets by correlating phenotypes
 
 Our formatting and harmonizing of all datasets now enable interesting cross-phenotype analyses to generate new biological insights. One strategy to perform such analyses is to download a summary table that contains all the phenotypes in a common format and that is available from DGRPool’s front page. However, we deemed this still insufficient as a catalyzing resource, which is why we implemented tools to correlate existing and user-submitted phenotypes with all the other phenotypes in DGRPool (Figure 2—figure supplement 1).
 
 To better understand the structure of these phenotypes, and how they relate together, we also computed a global visualization of the phenotype correlations across all curated studies (Figure 2A, Figure 2—figure supplement 2). Of note, by ‘phenotype correlations’, we mean direct phenotype-phenotype correlations, that is, a straightforward Spearman’s correlation of two phenotypes between common DRGP lines, and we repeated this process for each pair of phenotypes. This revealed a clear trend, with phenotypes belonging to the same study (within-study) correlating in general stronger than those from different studies (Figure 2B, Figure 2—figure supplement 3). This is expected since a given study will typically contain phenotypes that have been acquired for a given research topic, thus they will share similarities. Another potential factor that could explain this similarity is the well-known ‘batch effect’. Indeed, phenotypes acquired in the same environment (same lab, technician, reagents etc.) may sometimes show greater similarity than those acquired across different labs and conditions (Ackermann, 2001). The longevity phenotype however, assessed in at least six of the studies in DGRPool (Durham et al., 2014; Arya et al., 2010; Huang et al., 2020; Ivanov et al., 2015; Zhao et al., 2022; Hoffman et al., 2021) across different laboratories, illustrates that phenotype and its measurements not only exhibits strong correlation across sexes (Figure 2C), but are also sufficiently robust between laboratories (Figure 2D). This example illustrates both the high robustness of results acquired in the context of DGRP studies (stable genotype, stable environment) and the robustness of the phenotype itself, which highlights its potential high heritability.
 
-## Cross-study correlations highlight phenotype relationships
+![Figure 2.](https://cdn.elifesciences.org/articles/88981/elife-88981-fig2-v1.jpg)
+
+**Figure 2.:** (A) Spearman’s correlation of all phenotypes available in the 43 curated studies. Of note, we separately computed the phenotype correlations when data per sex were available (M, F, or NA), and we restricted the computation to quantitative (non-categorical) phenotypes. Phenotypes are grouped by study (colored box at the bottom of the plot). (B) Absolute value of the Spearman’s correlation of pairs of phenotypes that originated from the same study (within-study) and those that originated from two different studies (cross-study). Of note, displayed values are median. Mean values are 0.099 for cross-study, and 0.259 for within-study. Again, we restricted the calculation to the 43 curated studies. (C) Correlation of two longevity phenotypes from the same study (Arya et al., 2010), revealing a strong correlation between Female (F) and Male (M) longevity. (D) Correlation of two phenotypes from different studies: mean lifespan (Durham et al., 2014) and mean longevity (Arya et al., 2010). Of note, both the C and D plots were generated using the ‘phenotype correlation’ tool in DGRPool.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88981/elife-88981-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** This screenshot shows the results obtained after running the phenotype vs phenotype correlation tool, available directly from a phenotype page, by clicking the ‘Compute Correlation’ button. Of note, there is also the possibility to run this tool from the ‘Tool’ section displayed on the banner of the DGRPool website on any user-submitted phenotype file.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88981/elife-88981-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Here, we applied a binary coloring using a fixed threshold to better visualize the correlations. All correlations above abs(Spearman’s ⍴)>0.3 are shown in black (therefore anti-correlated phenotypes are also in black), the others are in white.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/88981/elife-88981-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** We calculated the absolute value of the Spearman’s correlation of pairs of phenotypes that originated from the same study (within-study) and those that originated from two different studies (cross-study). Of note, displayed values are median. Mean values are 0.138 for cross-study, and 0.281 for within-study. These values are calculated across all phenotypes (135 studies).
+
+### Cross-study correlations highlight phenotype relationships
 
 Figure 2A also highlights interesting cross-study correlations. For example, we can see a strong correlation between Vonesch et al., 2016 and Grubbs et al., 2013 which is perhaps expected since both studies examine fly morphology traits. The first one measures different organismal size traits such as eye interocular distance, or wing length, while the second studies leg and antenna development from imaginal discs, resulting in measuring phenotypes such as leg and bone length (Figure 3A). Similarly, three studies: Mackay, 2012, Richardson et al., 2012, and Huang et al., 2014 are expectedly correlated since all three investigate the influence of the Wolbachia endosymbiont. Another interesting correlation is between Chow et al., 2013 and Durham et al., 2014 which both studied fecundity and yield a cross-study correlation between remating proportion Chow et al., 2013 vs. mean fecundity Durham et al., 2014; Figure 3B. While potentially conceptually obvious, this correlation suggests that females that are more likely to mate with multiple males tend to also produce a greater number of eggs.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88981/elife-88981-fig3-v1.jpg)
+
+**Figure 3.:** (A) Correlation of mean femur length Grubbs et al., 2013 vs. mean head width Vonesch et al., 2016 showing the significant cross-study association of organismal size traits. (B) Correlation of remating proportion Chow et al., 2013 vs. mean fecundity Durham et al., 2014. (C) 33 phenotypes correlated with longevity Arya et al., 2010 at a 5% FDR threshold (Spearman’s correlation), revealing three main groups of phenotypes: lifespan phenotypes (middle rows), other correlated phenotypes (bottom rows) and anti-correlated phenotypes (top rows). Of note, both the A and B plots were generated using the ‘phenotype correlation’ tool in DGRPool.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88981/elife-88981-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** 87 phenotypes correlated with longevity Arya et al., 2010 at a 25% FDR threshold (Pearson’s correlation), revealing three main groups of phenotypes: lifespan phenotypes (middle rows), other correlated phenotypes (bottom rows) and anti-correlated phenotypes (top rows).
 
 These examples were all generated using the DGRPool phenotype correlation tool, supporting our notion that it can leverage cross-study comparisons of multiple phenotypes to unveil potentially new interesting phenotype interaction/associations. As a further proof of concept and given society’s strong interest in defining ‘healthy aging’ determinants (Friedman, 2020), we continued investigating the ‘mean longevity’ phenotype from Arya et al., 2010 and we studied the 33 phenotypes that were significantly correlated with it at 5% FDR threshold (Figure 3C). The hierarchical clustering clearly separated the phenotypes into three clusters: longevity-like phenotypes (strongly correlated together), other longevity-associated phenotypes (correlated with longevity), and phenotypes that seem antagonistic to longevity (anti-correlated phenotypes). Among the phenotypes that positively correlated with longevity, some may be expected such as starvation resistance (Rion and Kawecki, 2007; Chippindale et al., 1996; Jang and Lee, 2015) and oxidative stress resistance (Finkel and Holbrook, 2000) but some are less intuitive such as desiccation survival (Rion and Kawecki, 2007; Hoffmann and Harshman, 1999), and certain cuticular components of the epicuticle (Wang et al., 2022). We further investigated the results for an alternative Pearson’s correlation test, at 25% FDR threshold (Figure 3—figure supplement 1), and recapitulated most of these findings, with the addition of sleep duration (Bushey et al., 2010; Thompson et al., 2020), whose relationship to longevity is complex and still not fully understood (Watson et al., 2015). Although we cannot exclude spurious correlations, some of these more surprising correlations appear biologically highly interesting, illustrating the capacity of DGRPool to unveil new research avenues that seem worth exploring in greater molecular detail. Also of interest is the group of often unexpected phenotypes that significantly anti-correlates with longevity. These include locomotor activity (Magwere et al., 2006), and some other cuticular components of the epicuticle (Nghiem et al., 2000), suggesting that higher locomotor activity is linked to reduced longevity. At 25% FDR (Figure 3—figure supplement 1), we can also see an anti-correlation with food intake (Lee et al., 2008; Piper and Partridge, 2007), which potentially recapitulates previous results stating that limiting food intake increases organismal lifespan (McCracken et al., 2020). Whether these are direct or indirect links remains unanswered, but appears worthy for a more in-depth scrutiny that is beyond the scope of this paper.
 
@@ -76,7 +235,7 @@ Inversely, our analyses also revealed that some expected phenotype correlations 
 
 These proof-of-concept examples demonstrate in our opinion the utility of the DGRP lines and by extension DGRPool to serve as powerful tools that will facilitate the identification of non-intuitive phenotype correlations and their underlying molecular basis as well as the discovery of putative genotype to phenotype relationships, as detailed below.
 
-## From phenotypes to associated genotypes
+### From phenotypes to associated genotypes
 
 The goal of most DGRP phenotyping studies is to eventually be able to link the phenotypes to potentially causal variants or sets of variants (Mackay and Huang, 2018). In response, tools like DGRP2 GWAS http://dgrp2.gnets.ncsu.edu/; Mackay, 2012; Huang et al., 2014 have been put in place to accommodate geno-phenotype relationship analyses.
 
@@ -88,11 +247,23 @@ As mentioned, these GWAS results are available for each existing phenotype in DG
 
 After having run GWAS on all phenotypes in DGRPool, we observed the distribution of the number of significant variants per phenotype at p≤1 x 10–5 threshold, which is an often-used arbitrary threshold for GWAS analyses in DGRP studies (Figure 4—figure supplement 2). This threshold yields on average 118 significant hits per tested phenotype, which is skewed due to some phenotypes leveraging lots of results (median = 20). Interestingly, from the shape of the distribution, it seems that this threshold may not be sufficiently stringent for avoiding some false positives in the results. This may be specific to the GWAS parameters we used (--quantile-normalize --variance-standardize), which already provide a more stringent list of hits than without normalizing the phenotypes. However, in this configuration, the p≤1 x 10–6 threshold appears to be a good alternative for avoiding an excessive number of false positives (Figure 4A), as evident from the distribution of GWAS results across different thresholds (Figure 4—figure supplement 2). Another very often used threshold is the Bonferroni one, which is much more stringent and varies from p≤1.126 x 10–8 (if considering all 4 M variants) to p≤2.67 x 10–8 (if removing variants with low MAF or high number of missing values). In our results, the Bonferroni threshold (p≤2.67 x 10–8) yielded 20 significant hits on average (median = 0, Figure 4—figure supplement 2) which could be limiting for many studies as it may mask potentially interesting variants that, while minimally contributing on an individual basis, may collectively point to implicated pathways or biological processes (Uffelmann et al., 2021). Thus, while choosing an optimal threshold is in general challenging, our results indicate that any threshold below or equal to 1x10–6 is reasonable given that at this threshold, the p-values appear not overestimated. We also verified if any variant is over-selected across all phenotypes to uncover a possible bias in our studies (Figure 4B). We found that only three loci are clearly overrepresented, corresponding to two studies with many correlated phenotypes (Dembeck et al., 2015 and Vonesch et al., 2016; Dembeck et al., 2015; Vonesch et al., 2016). Both studies were already prominent in Figure 2A, both in terms of their number of phenotypes and high correlation. One study comprises 66 cuticular hydrocarbon composition traits (Dembeck et al., 2015) and the other involves 27 organismal size traits (Vonesch et al., 2016). These results are thus expected and do not indicate an overestimation of certain variants.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/88981/elife-88981-fig4-v1.jpg)
+
+**Figure 4.:** (A) Distribution of the number of significant variants after a GWAS, for each phenotype available in DGRPool. Of note, all values > 50 have been set to 50, for easier visualization. (B) For each variant, we plotted the number of times it was significantly associated with a phenotype (y-axis=number of occurrences). It is worth noting that we chose a Manhattan plot for representing this information, but this is not a ‘real’ GWAS Manhattan plot. (C) Case study on survival to azinphos-methyl exposure Battlay et al., 2016, here to a 0.25 µg/ml dose. This plot was extracted from the phenotype’s page on DGRPool at https://dgrpool.epfl.ch/phenotypes/20. (D) Manhattan plot (taken from DGRPool’s result page https://dgrpool.epfl.ch/phenotypes/20/gwas_analysis) showing the association of variants to the ‘survival at 0.25 µg/ml dose’ phenotype. (E) Boxplot (taken from DGRPool’s result page https://dgrpool.epfl.ch/phenotypes/20/gwas_analysis), showing the effect of the top variant, 2 R:8072884, which is a long insertion.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88981/elife-88981-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** This screenshot shows the results obtained after running the GWAS analysis, available directly from a phenotype page, by clicking the ‘GWAS’ button. Of note, there is also the possibility to run this tool from the ‘Tool’ section displayed on the banner of the DGRPool website on any user-submitted phenotype file. There is a ‘Filter’ button on top, allowing users to filter the GWAS results by genomic coordinates or variant impact. Then, the first section compares the phenotype to the six known covariates (Wolbachia status, and ive known insertions), to check for any association through both an ANOVA and a Kruskal-Wallis test. The next section shows the conventional QQplot and Manhattan plots. And the last section displays the top 1000 significant variants, filtered at nominal p-value ≤ 0.001. Of note, there are two buttons in the GWAS result section, showing the enrichment of the variant-associated genes into two gene set databases: the Gene Ontology, and the FlyBase phenotypes.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/88981/elife-88981-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** These plots show the distribution of the number of significant variants after a GWAS, for each phenotype available in DGRPool. Each of the eight plots are the results for different p-value thresholds, ranging from p≤0.05 (the less stringent) to p≤2.67 x 10–8 (the Bonferroni threshold, i.e. the more stringent). Of note, for better visualization, all values > X have been set to X, with different limit values X for each plot (as depicted in the x-axis legend).
+
 As a proof-of-concept and a validation of our approach, we compared our results with a randomly selected study that identified several variants associated with survival to azinphos-methyl at different doses (0.25, 0.5, 1, and 2 µg/ml; Battlay et al., 2016). Of note, this study is available in DGRPool under https://dgrpool.epfl.ch/studies/3. In particular, this study showed that survival to azinphos-methyl is highly variable among DGRP lines, even at a ‘low‘0.25 µg/ml dose. Importantly, the results of this study are reproduced in DGRPool as can be observed on the respective phenotype’s page (https://dgrpool.epfl.ch/phenotypes/20, Figure 4C). For example, DGRPool’s GWAS results are very similar to those of the study (https://dgrpool.epfl.ch/phenotypes/20/gwas_analysis, Figure 4D) and show a strong association at a 2R locus. Interestingly, the top variant we found, 2R:8072884 (p=1.966 x 10–26), a 509 bp insertion polymorphism, is the Accord LTR insertion. It is annotated as located upstream of the Cyp6g1 gene and has a high likelihood to be the main causal gene (Daborn et al., 2002; Schmidt et al., 2010). As described in the author’s Ph.D. thesis (Battlay, 2019), the minor allele at this variant —which corresponds to NOT having the insertion— correctly genotypes eight out of nine susceptible DGRP lines that are homozygous for the ancestral Cyp6g1M arrangement at this locus (DGRP lines 091, 486, 642, 776, 802, 821, 843, 852, and 857). The presence of the Accord LTR insertion is associated with increased resistance to organophosphates, suggesting that derived alleles of Cyp6g1 confer organophosphate resistance in the DGRP (Figure 4E).
 
 These results show that DGRPool is able to accurately reproduce results from existing studies, and that new biological findings can be leveraged from its interactive results and plots. Revisiting the same organophosphate study (Battlay et al., 2016), the PheWAS page present in the GWAS results shows that this top variant is not only significant at other doses, but that it is also significant in the context of another study investigating Drosophila microbiota (Chaston et al., 2016). This could help with fine-tuning putative causal variants, but also with uncovering potential associations between certain phenotypes that in turn could enable studies aimed at providing underlying genetic and molecular mechanisms.
 
-## Extreme phenotypes
+### Extreme phenotypes
 
 After having collected and harmonized thousands of DGRP phenotypes, we investigated if we could identify outliers amongst DGRP lines that would potentially bias phenotypic associations. Indeed, if a particular DGRP line is repeatedly ranked in the extreme of all phenotypes, it could be that there are unknown cofactors that make the line ‘weaker’ in general, or inversely. Although it is difficult to judge what phenotype is particularly advantageous or disadvantageous due to the presence of potential trade-offs (Zwaan et al., 1995; Rose and Charlesworth, 1980), we can determine how often a DGRP line is in the top or bottom 15% of a given phenotype. By focusing on phenotypes that are likely impacting overall viability, we ranked DGRP lines for each associated phenotype. Upon ranking the DGRP lines, we calculated whether the rank falls within the top or bottom 15% performers of the phenotype. We then assessed for each DGRP line how often they are ‘extreme’ and divided this by the total number of phenotypes in which the DGRP line has been included to obtain a ‘fraction of extremeness’ (FoE). Finally, we filtered for lines with at least 50 available phenotypic measures to ensure that our values were not driven by a low number of observations (Figure 5A). Overall, we observed a modest correlation in the FoE across the sexes (Figure 5B, Spearman’s ρ=0.3514, <1.57 x 10–5). While this suggests that extremeness is a population-wide feature, the correlation is not sufficiently strong to conclude that DGRP lines are generally extreme in both sexes, which may only apply to specific lines.
 
@@ -124,7 +295,7 @@ In conclusion, we propose that DGRPool has two primary purposes within the Droso
 
 ## Methods
 
-## Data availability
+### Data availability
 
 All phenotyping data aggregated in DGRPool can be downloaded in a common format on each phenotype page. In the ‘Download’ section on the front page, we also provide four.tsv files containing (1) All studies and their metadata (authors, citation,...), (2) All phenotypes and their metadata (name, description, unit, …), (3) All DGRP lines and their metadata (name, bloomington accession, …), and (4) a global file with all numerical phenotypes across all studies, formatted following our recommendations.
 
@@ -132,21 +303,21 @@ We also provide an API for programmatic access to the data hosted on our website
 
 All codes used to produce the figures of this manuscript are available at this GitHub repository: https://github.com/DeplanckeLab/DGRPool, copy archived at DeplanckeLab, 2024a. The website code is available as a Docker container at this GitHub repository: https://github.com/DeplanckeLab/DGRPool_web, copy archived at DeplanckeLab, 2024b.
 
-## Web application
+### Web application
 
 The DGRPool web application is hosted on a virtual machine at EPFL. All compute-intensive calculations (i.e. GWAS) are performed on an HPC within EPFL and results are then moved to the virtual machine’s local storage. The back-end is implemented with Ruby-on-Rails (RoR) 7 and all data is stored in a PostgreSQL relational database. The front-end uses different JavaScript libraries and is set to enable interactive usage. For instance, the application implements bootstrap tooltips to display HTML texts within tooltips, plotly.js v.2.16.1 to generate the scatter plots, bar plots and box plots, using scattergl, bar and box modes respectively, or Jquery autocomplete for phenotype search combined with a SOLR search engine running on the server side (used for the phenotype comparison tool).
 
-## Semi-automated referencing of studies and/or phenotypes
+### Semi-automated referencing of studies and/or phenotypes
 
 To submit a new study, any user can submit a DOI from the front page. Then, all metadata associated with this study (authors, journal, date, …) are automatically imported from the Crossref API (Hendricks et al., 2020). When the study is created, it acquires the ‘Submitted’ state, and administrators are notified. Then, a curator is assigned to the study and needs to manually verify all information. A specific curator page allows him/her to (1) edit the metadata, (2) edit the categories associated with the study, or (3) add/remove/modify the phenotyping data and edit their names/types/units.
 
 Identifiers from GEO (Barrett et al., 2009), ArrayExpress (Brazma et al., 2003), or the Sequence Read Archive (SRA) (Kodama et al., 2011) can be associated manually with any study, for example for referencing additional gene expression data that would be published along with the phenotyping data.
 
-## GWAS
+### GWAS
 
 GWAS analyses (whether pre-calculated, or using the web tool) were computed using Plink2 v2.00a3LM (1 Jul 2021) with these parameters: “--glm hide-covar --quantile-normalize --variance-standardize --geno 0.2 –maf 0.01”. It runs on all available variants in the DGRP database which is using the dm3 assembly (4,438,427 variants: 3,963,420 SNPs, 293,363 deletions, 169,053 insertions and 12,591 MNPs). We corrected the model for six known covariates (Wolbachia status, and five major insertions) that were described in Huang et al., 2014 and also used on the DGRP2 website. Of note, these known covariates can also be considered as phenotypes, and thus are also available as a separate, browsable study on DGRPool (https://dgrpool.epfl.ch/studies/17). For each phenotype, we also provide (similar to the DGRP2 website), both a Kruskal-Wallis test and an ANOVA test to inform the user about the association between the phenotype and the six known covariates. We also provide the results of a Shapiro-Wilk normality test of the phenotype distribution. Of note, the Kruskal-Wallis test is used for a single factor (independent variables) at a time, unlike the ANOVA test which is handling multiple factors simultaneously (as it is performed in a multifactorial design).
 
-## Extremeness
+### Extremeness
 
 Fraction of extremeness was calculated for each phenotypic spectrum separately by ranking the values with ties being assigned the minimum rank. We then calculated a cut-off to assign ranks in the bottom or upper 15% of a phenotypic range. This rank cut-off was further rounded up to be more inclusive on either end (i.e. if the cut-off was 1.2 or 1.8, the cut-off would become 2). Phenotypes equal or lower than the cut-off were assigned –1, whereas phenotypes equal to the max rank minus the cutoff or higher were assigned 1. Remaining phenotypic values were assigned 0. DGRP lines with phenotypic values of either –1 or 1 were then considered extreme for a given phenotype.
 

@@ -50,9 +50,7 @@ Lastly, we now explicitly state our rationale (subsection “A probabilistic mod
 
 2.2) The nature of the clustering method in which only three clusters of cells are considered at a time inherently limits the hierarchy produced by the author's Bayesian framework (see Figure 2—figure supplement 1B, right). In this way, the final lineage tree is limited only to branching into two arms at any given differentiation step. Thus, any differentiation program that produces more than two offspring would not be properly modeled. The authors should address this limitation in their framework.
 
-We thank the reviewers for bringing up this point. Our framework does not in fact inherently limit the resulting lineage tree to bifurcation fate decisions. We illustrate this point using the example in Author response image 1.10.7554/eLife.20487.022Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.20487.022
-
-DOI: http://dx.doi.org/10.7554/eLife.20487.022
+We thank the reviewers for bringing up this point. Our framework does not in fact inherently limit the resulting lineage tree to bifurcation fate decisions. We illustrate this point using the example in Author response image 1.10.7554/eLife.20487.022Author response image 1.
 
 Given the set of triplets shown in Author response image 1 (left), the only possible lineage topology is one where the yellow cell type is intermediate to all four other (purple, green, blue, pink) cell types (right). Also, in Figure 2—figure supplement 3C, we show an example of a lineage tree that, based on the set of most likely triplets inferred, contains a trifurcation point. Further, in the accompanying manuscript by Furchtgott et. al, the inferred lineage tree from intestinal single- cell data (Figure 3—figure supplement 2) and single-cell human brain development data (Figure 4) contain differentiation steps where three distinct cell types are produced from the same progenitor cell type.
 

@@ -9,15 +9,15 @@
 
 ### Affiliations
 
-1. https://ror.org/00a0jsq62 Centre for Mathematical Modelling of Infectious Diseases, London School of Hygiene and Tropical Medicine London United Kingdom
-2. https://ror.org/00a0jsq62 Department of Infectious Disease Epidemiology, London School of Hygiene and Tropical Medicine London United Kingdom
-3. https://ror.org/05a28rw58 Department of Biosystems Science and Engineering, ETH Zürich Zürich Switzerland
+1. Centre for Mathematical Modelling of Infectious Diseases, London School of Hygiene and Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
+2. Department of Infectious Disease Epidemiology, London School of Hygiene and Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
+3. Department of Biosystems Science and Engineering, ETH Zürich Zürich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))
 
 † Corresponding author
 
 ## Abstract
 
-Ebola virus disease outbreaks can often be controlled, but require rapid response efforts frequently with profound operational complexities. Mathematical models can be used to support response planning, but it is unclear if models improve the prior understanding of experts. We performed repeated surveys of Ebola response experts during an outbreak. From each expert, we elicited the probability of cases exceeding four thresholds between 2 and 20 cases in a set of small geographical areas in the following calendar month. We compared the predictive performance of these forecasts to those of two mathematical models with different spatial interaction components. An ensemble combining the forecasts of all experts performed similarly to the two models. Experts showed stronger bias than models forecasting two-case threshold exceedance. Experts and models both performed better when predicting exceedance of higher thresholds. The models also tended to be better at risk-ranking areas than experts. Our results support the use of models in outbreak contexts, offering a convenient and scalable route to a quantified situational awareness, which can provide confidence in or to call into question existing advice of experts. There could be value in combining expert opinion and modelled forecasts to support the response to future outbreaks. This study was partly funded by the Department of Health and Social Care using UK Aid funding 47 and is managed by the National Institute for Health and Care Research (VEEPED: PR-OD-1017- 48 20002; AR and WJE). This study was partly funded by the Wellcome Trust (210758/Z/18/Z : JDM 49 and SF). The views expressed in this publication are those of the authors and not necessarily 50 those of the funders.
+Background:Ebola virus disease outbreaks can often be controlled, but require rapid response efforts frequently with profound operational complexities. Mathematical models can be used to support response planning, but it is unclear if models improve the prior understanding of experts.Methods:We performed repeated surveys of Ebola response experts during an outbreak. From each expert, we elicited the probability of cases exceeding four thresholds between 2 and 20 cases in a set of small geographical areas in the following calendar month. We compared the predictive performance of these forecasts to those of two mathematical models with different spatial interaction components.Results:An ensemble combining the forecasts of all experts performed similarly to the two models. Experts showed stronger bias than models forecasting two-case threshold exceedance. Experts and models both performed better when predicting exceedance of higher thresholds. The models also tended to be better at risk-ranking areas than experts.Conclusions:Our results support the use of models in outbreak contexts, offering a convenient and scalable route to a quantified situational awareness, which can provide confidence in or to call into question existing advice of experts. There could be value in combining expert opinion and modelled forecasts to support the response to future outbreaks.Funding:This study was partly funded by the Department of Health and Social Care using UK Aid funding 47 and is managed by the National Institute for Health and Care Research (VEEPED: PR-OD-1017- 48 20002; AR and WJE). This study was partly funded by the Wellcome Trust (210758/Z/18/Z : JDM 49 and SF). The views expressed in this publication are those of the authors and not necessarily 50 those of the funders.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ In this article, we extend the use of expert forecasters to predict spatial risk
 
 ## Methods
 
-## Expert elicitation
+### Expert elicitation
 
 Experts in EVD epidemiology with knowledge of the local geography speaking English or French were identified originally by convenience sampling. The pool of experts was then expanded through recommendation from the identified experts (snowball sampling). This approach was best suited to capture the expertise of individuals who were most often temporarily based in the field.
 
@@ -55,37 +55,75 @@ The experts were asked to estimate the number of reported cases they would expec
 
 **Figure 2.:** (A) shows the provinces around the affected area, and included in the transmission model, and the red box shows the area detailed in panel (B). (B) shows the health zones included at least once in the expert elicitation survey we conducted.
 
-## Modelling framework
+### Modelling framework
 
-In parallel with the expert elicitation programme, we developed a modelling framework to forecast spatial risk of infection. In the framework, the incidence of cases is forecast in each HZ based on historical case reports. The model was formed of two components, the autoregressive component and the spatial component.(1)λ=∑s=t−(D+L)t−D(γNi,s+α∑jwijNj,s)\begin{document}$$\displaystyle  \lambda=\sum _{s=t- \left (D+L\right)}^{t- D}\left (\gamma N_{i,s}+\alpha \sum _{j}w_{ij}N_{j,s}\right)$$\end{document}
+In parallel with the expert elicitation programme, we developed a modelling framework to forecast spatial risk of infection. In the framework, the incidence of cases is forecast in each HZ based on historical case reports. The model was formed of two components, the autoregressive component and the spatial component.
 
-The auto-regressive component modelled the rate of infections in a particular HZ i, on day t, to be proportional to the number of cases in the same HZ (i) between dates t-(D+L) and t-D, where L is the estimated latent period and D is the estimated infectious period. The spatial component accounts for transmission between HZs, where rate of infection was proportional to the cases in each other HZ (i.e. ∀j j≠i) and moderated by a pairwise specific factor defined by a spatial kernel wij\begin{document}$w_{ij}$\end{document}wij\begin{document}$w_{ij}$\end{document}wij\begin{document}$w_{ij}$\end{document}. We used two spatial kernels, both of which use proximity of HZs to each other and their respective population size, wij\begin{document}$w_{ij}$\end{document}Pi\begin{document}$P_{i}$\end{document}Pi\begin{document}$P_{i}$\end{document}Pi\begin{document}$P_{i}$\end{document} and Pi\begin{document}$P_{i}$\end{document}Pj\begin{document}$P_{j}$\end{document}Pj\begin{document}$P_{j}$\end{document}Pj\begin{document}$P_{j}$\end{document}. Firstly, the gravity model which treats interaction in an analogous way to Newtonian gravity with population size in place of mass, such that interaction reduces distance, Pj\begin{document}$P_{j}$\end{document}d, raised to a power, k.(2)wij=PiPjdijk\begin{document}$$\displaystyle w_{ij}=\frac{P_{i}P_{j}}{d_{ij}^{k}}$$\end{document}
+$$
+\lambda=\sums=t−(D+L)t−D(\gammaN_{i,s}+\alpha\sumjw_{ij}N_{j,s})
+$$
 
-Secondly, we applied a model with adjacency-based interaction. In this model, only adjacent HZs can interact. The strength of interaction between HZs is proportional to the product of their population sizes.(3)wij=δijPiPj\begin{document}$$\displaystyle w_{ij}=\delta _{ij}P_{i}P_{j}$$\end{document}(4)δij={1,ifadjacent0,otherwise\begin{document}$$\displaystyle \delta _{ij}=\begin{cases} 1, {\rm if\, adjacent}\\0, {\rm otherwise}\end{cases}$$\end{document}
+The auto-regressive component modelled the rate of infections in a particular HZ i, on day t, to be proportional to the number of cases in the same HZ (i) between dates t-(D+L) and t-D, where L is the estimated latent period and D is the estimated infectious period. The spatial component accounts for transmission between HZs, where rate of infection was proportional to the cases in each other HZ (i.e. ∀j j≠i) and moderated by a pairwise specific factor defined by a spatial kernel $w_{ij}$$w_{ij}$$w_{ij}$. We used two spatial kernels, both of which use proximity of HZs to each other and their respective population size, $w_{ij}$$P_{i}$$P_{i}$$P_{i}$ and $P_{i}$$P_{j}$$P_{j}$$P_{j}$. Firstly, the gravity model which treats interaction in an analogous way to Newtonian gravity with population size in place of mass, such that interaction reduces distance, $P_{j}$d, raised to a power, k.
 
-Cases were modelled as Poisson distributed such that(5)Ni,t=Poisson(λi,t)\begin{document}$$\displaystyle N_{i,t}=\text{Poisson}\left (\lambda _{i,t}\right)$$\end{document}
+$$
+w_{ij}=\frac{P_{i}P_{j}}{d_{ij}^{k}}
+$$
 
-To forecast cases, we fitted the spatiotemporal model to historical data from the 60 days prior to the date the forecast was made, accounting for cases in HZs in seven regions (169 HZs) centred on the location of the epidemic; Nord-Kivu, Ituri, Tshopo, Maniema, Sud-Kivu, Haut-Uele, and Bas-Uele. We fit the model using the No U-Turn Sampling (NUTS) method for Hamiltonian Monte Carlo with Stan (Stan Team, 2012), a probabilistic programming framework. We estimated α\begin{document}$\alpha $\end{document} and γ\begin{document}$\gamma $\end{document}, which vary the contribution of within-health-zone and between-health-zone transmission. We also estimated k, which determines how rapidly transmission rate decays with distance in the spatial component of the model. We sampled parameters from the resultant joint posterior distribution to simulate daily incidence in all HZs in the seven regions, up to and including the last day of the following month. We performed 1000 iterations for each forecast date. We then extracted the full distribution of the number of cases incident within the calendar month of interest. Forecasts were made using data up to the last day of the month prior to the forecast period.
+Secondly, we applied a model with adjacency-based interaction. In this model, only adjacent HZs can interact. The strength of interaction between HZs is proportional to the product of their population sizes.
 
-## Ensemble forecasts
+$$
+w_{ij}=\delta_{ij}P_{i}P_{j}
+$$
+
+
+
+$$
+\delta_{ij}={1,ifadjacent0,otherwise
+$$
+
+Cases were modelled as Poisson distributed such that
+
+$$
+N_{i,t}=Poisson(\lambda_{i,t})
+$$
+
+To forecast cases, we fitted the spatiotemporal model to historical data from the 60 days prior to the date the forecast was made, accounting for cases in HZs in seven regions (169 HZs) centred on the location of the epidemic; Nord-Kivu, Ituri, Tshopo, Maniema, Sud-Kivu, Haut-Uele, and Bas-Uele. We fit the model using the No U-Turn Sampling (NUTS) method for Hamiltonian Monte Carlo with Stan (Stan Team, 2012), a probabilistic programming framework. We estimated $\alpha$ and $\gamma$, which vary the contribution of within-health-zone and between-health-zone transmission. We also estimated k, which determines how rapidly transmission rate decays with distance in the spatial component of the model. We sampled parameters from the resultant joint posterior distribution to simulate daily incidence in all HZs in the seven regions, up to and including the last day of the following month. We performed 1000 iterations for each forecast date. We then extracted the full distribution of the number of cases incident within the calendar month of interest. Forecasts were made using data up to the last day of the month prior to the forecast period.
+
+### Ensemble forecasts
 
 Ensemble forecasts were calculated as an average of the probabilities attributed by the members of the ensemble. For the expert ensemble, the arithmetic mean was calculated across all experts with equal weighting. Similarly, the model ensemble used the unweighted mean of the model forecasts. For the mixed (model and expert) ensemble, the mean was weighted such that the combined weight of the experts' forecasts and the combined weight of the models' forecasts were equal.
 
-## Quantification of risk and forecast evaluation
+### Quantification of risk and forecast evaluation
 
 To compare the model and the expert forecasts and score them according to the eventual true number of cases, we calculated the probability attributed to cases over four thresholds, ≥2, ≥6, ≥10, and ≥20 cases.
 
-We evaluated the forecasts using the Brier score, a proper scoring rule which quantifies how accurate a forecast or a group of forecasts is when compared to true data after the event. The Brier score, BS, is defined as the square of the difference between the probability of observing an event and the observation oi\begin{document}$o_{i}$\end{document} status, which takes a value 1 or 0 for cases observed and none observed, respectively. We calculated this for multiple (N) forecasts by taking the mean of the individual forecast scores.(6)BS=1N∑i=1N(pi−oi)2\begin{document}$$\displaystyle  BS=\frac{1}{N}\sum _{i=1}^{N}\left (p_{i}- o_{i}\right)^{2}$$\end{document}
+We evaluated the forecasts using the Brier score, a proper scoring rule which quantifies how accurate a forecast or a group of forecasts is when compared to true data after the event. The Brier score, BS, is defined as the square of the difference between the probability of observing an event and the observation $o_{i}$ status, which takes a value 1 or 0 for cases observed and none observed, respectively. We calculated this for multiple (N) forecasts by taking the mean of the individual forecast scores.
 
-We also quantified the general bias and calibration of the forecasts by considering the hazard rate predicted by each forecast, which we calculated as the sum of probabilities attributed to exceeding each threshold. This gives the number of HZs the forecast ‘expected’ to cross the threshold in each month. To quantify the bias of each set of predictions, we took the difference between the hazard rate and the actual number of HZs that exceeded each threshold in each month. We refer to this as the hazard gap (HG).(7)HG=∑∀HZp(c>cthresh)−∑∀HZo(c>cthresh)\begin{document}$$\displaystyle  HG=\sum _{\forall HZ}p\left (c\gt c_{thresh}\right)- \sum _{\forall HZ}o\left (c\gt c_{thresh}\right)$$\end{document}
+$$
+BS=\frac{1}{N}\sumi=1N(p_{i}−o_{i})^{2}
+$$
+
+We also quantified the general bias and calibration of the forecasts by considering the hazard rate predicted by each forecast, which we calculated as the sum of probabilities attributed to exceeding each threshold. This gives the number of HZs the forecast ‘expected’ to cross the threshold in each month. To quantify the bias of each set of predictions, we took the difference between the hazard rate and the actual number of HZs that exceeded each threshold in each month. We refer to this as the hazard gap (HG).
+
+$$
+HG=\sum∀HZp(c>c_{thresh})−\sum∀HZo(c>c_{thresh})
+$$
 
 where p(c>cthresh) is the probability of threshold exceedance and o(c>cthresh) is the observation status of the threshold exceedance 1 if true 0 if false.
 
 ## Results
 
-## Expert panel and HZs included in survey
+### Expert panel and HZs included in survey
 
 Over the study period, we conducted a total of 40 interviews with 15 experts, 3 of which took place during the pilot phase (November 2019). Figure 3 shows the timeline of the expert elicitations.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig3-v2.jpg)
+
+**Figure 3.:** Each point shows the date of the interview of the expert labelled to obtain forecasts for the following month. Colour indicates the month for which the forecast was made, and the forecast windows are highlighted with a shaded band of the same colour.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** On the left, a screenshot of the interactive map provided to experts. On the right, a screenshot of the MATCH expert elicitation tool.
 
 Eight experts worked at the World Health Organization, four at the London School of Hygiene & Tropical Medicine, two for Médecins Sans Frontières, and one at the DRC Ministry of Health. Most experts (10/15) had more than 5 years of experience working in infectious disease epidemiology. About half of the interviews (21 of 40) were conducted with experts who were in the outbreak area (defined HZs affected by EVD or Goma, the site of the international response base) or had been there within 2 weeks of the interview. Four experts had never been in the outbreak area.
 
@@ -99,13 +137,33 @@ Of the 11 nominated HZs, only Beni reported confirmed cases in February (9), exc
 
 No cases were reported in any HZ during March. Experts broadly anticipated this, with only one expert assigning over 50% probability of exceeding two cases in any HZ. Beni had the highest average assigned risk at 33% (Figures 4 and 5).
 
-## Performance evaluation
+![Figure 4.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig4-v2.jpg)
+
+**Figure 4.:** Only the health zones (HZs) that were rated by all experts are included here. Results are shown as probabilities (vertical axes) that a given HZ (horizontal panels) exceeds a given threshold (horizontal axes) according to the experts (box plots) or models (square/diamond for gravity and adjacency models, respectively) across different months (vertical panels). HZ/month combinations where the given thresholds were exceeded are marked in cyan, and ones where they were not are marked in red.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig4-figsupp3-v2.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig4-figsupp4-v2.jpg)
+
+![Figure 5.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig5-v2.jpg)
+
+**Figure 5.:** (A) shows the overall Brier score for each expert, model, and ensemble (calculated over all forecasts included in the study). In (B), each panel shows the Brier score across all health zones for each month (vertical) at each case threshold (horizontal). Coloured points show each expert score, and the violin plot shows their distribution. The grey hollow points show the model scores, the yellow points show the ensemble scores (circles show experts alone, squares show models alone, and triangles show experts and models with 50% weight given to each). (C) shows the ranking of each expert and model in terms of forecast performance.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98005/elife-98005-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Each panel shows the rank of the health zones based on expert ensemble, expert, and model ensemble and model forecast probabilities of exceeding each case threshold (horizontal panels) in each month (vertical panels). Coloured lines and points indicate the health zone rank. Solid lines show health zones where the case threshold was met, and faded lines show those where the case threshold was not met.
+
+### Performance evaluation
 
 We evaluated the forecasts using the Brier score. The overall scores of individual experts varied between 0 and 0.6 across the four thresholds. Collectively, the experts scored best at the highest threshold (20 cases) and worst for forecasts of the lowest threshold (2 cases). The models also performed better at higher thresholds than low thresholds, but the difference was less pronounced. Overall, the gravity model ranked best among all forecasts at the two-case threshold. It also ranked best for this threshold in the month of February and consistently in the top half of forecasts in December and January; however, it performed comparatively poorly in March, ranking higher than only one of the experts. The adjacency model also performed better than the experts overall for the two-case threshold. Related to this, including the models improved the ensemble forecast. Although the gravity model performed better than the adjacency model for higher thresholds, together the models performed similarly to the expert ensemble forecast overall. In January and February, the gravity model performed well compared to the adjacency model and the expert ensemble; however in March, both models performed particularly badly compared to the experts for all thresholds. None of the experts performed consistently well relative to the others; experts 3 and 10 performed best for the two-case threshold, whereas experts 13 and 14 did best for higher thresholds.
 
 To evaluate how the different forecasts may impact decision-making, we ranked the HZs for each month, based on the probability of exceeding each threshold of cases forecast by each ensemble and by the model alone (Figure 5—figure supplement 1). In general, the model and the ensembles all ranked HZs that did reach the threshold highly. In some cases, the model performed better, ranking HZs that did meet the threshold higher than the experts, specifically ranking Beni higher than Mandima in higher thresholds (≥ 6 and 10 cases) for the forecast of January, where Beni ultimately had cases and Mandima did not, in that month. Considering the models separately, the gravity model performed better than the adjacency model in general, with the adjacency model occasionally performing worse than the experts when ranking the HZs. This was clearest in the forecasts of November and January.
 
-## Bias and calibration in forecasts
+### Bias and calibration in forecasts
 
 We evaluated the bias in each forecast type by considering the hazard gap between forecasts and actual cases. We found that experts systematically forecasted higher risk of the lowest threshold (≥2 cases) than was warranted, but tended to forecast lower risk of exceeding the highest threshold (≥20 cases) than was borne out across all HZs (Figure 6). When calculated across all months, this bias was present in 12 of the 15 experts. The models did not show clear, consistent bias in either direction.
 
@@ -113,9 +171,346 @@ We evaluated the bias in each forecast type by considering the hazard gap betwee
 
 **Figure 6.:** Panels show the hazards gap difference between the hazard rate (expected number of exceedances across all health zones) for each threshold attributed by the forecast and the actual number of health zones that exceeded the associated threshold. Each panel shows one forecast (expert or model) in each month. The bottom row shows the same for each forecast calculated over the entire study period.
 
-## Forecasting flare-ups
+### Forecasting flare-ups
 
 In addition to the HZs presented to all experts, each expert was able to nominate HZs, which they deemed at risk. Experts nominated seven further HZs to forecast in December, four in January, four in February, and one in March (Table 1).
+
+**Table 1.**
+ Experts and health zones included in each round of the survey.The left part of the table details the experts interviewed (highlighted in green) the health zones included in the main survey in each month. In addition, the right part of the table details the health zones nominated by experts and the number of experts that nominated each one.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Month forecasted</th>
+      <th colspan="4">Experts interviewed (highlighted)</th>
+      <th colspan="2">Health zones in interview (HZs)</th>
+      <th>No. of experts</th>
+      <th>HZ nominated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>December</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td></td>
+      <td>Beni</td>
+      <td></td>
+      <td>7</td>
+      <td>Oicha</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td></td>
+      <td>Goma</td>
+      <td></td>
+      <td>5</td>
+      <td>Komanda</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td></td>
+      <td>Kalunguta</td>
+      <td></td>
+      <td>2</td>
+      <td>Butembo</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td></td>
+      <td>Mabalako</td>
+      <td></td>
+      <td>2</td>
+      <td>Katwa</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>13</td>
+      <td>14</td>
+      <td></td>
+      <td></td>
+      <td>Mambasa</td>
+      <td></td>
+      <td>1</td>
+      <td>Lolwa</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Mandima</td>
+      <td></td>
+      <td>1</td>
+      <td>Makiso-Kisangani</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>Nyankunde</td>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td></td>
+      <td>Beni</td>
+      <td></td>
+      <td>6</td>
+      <td>Butembo</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td></td>
+      <td>Biena</td>
+      <td></td>
+      <td>3</td>
+      <td>Katwa</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td></td>
+      <td>Goma</td>
+      <td></td>
+      <td>1</td>
+      <td>Kalunguta</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td></td>
+      <td>Mabalako</td>
+      <td></td>
+      <td>1</td>
+      <td>Mangurerdjipa</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>13</td>
+      <td>14</td>
+      <td></td>
+      <td></td>
+      <td>Mandima</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Oicha</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td></td>
+      <td>Beni</td>
+      <td></td>
+      <td>6</td>
+      <td>Oicha</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td></td>
+      <td>Bunia</td>
+      <td></td>
+      <td>4</td>
+      <td>Biena</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td></td>
+      <td>Butembo</td>
+      <td></td>
+      <td>2</td>
+      <td>Vuhovi</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td></td>
+      <td>Goma</td>
+      <td></td>
+      <td>1</td>
+      <td>Lolwa</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>13</td>
+      <td>14</td>
+      <td></td>
+      <td></td>
+      <td>Kalunguta</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Katwa</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Kayna</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Mabalako</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Mambasa</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Mandima</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Musienene</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td></td>
+      <td>Beni</td>
+      <td></td>
+      <td>3</td>
+      <td>Mabalako</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td></td>
+      <td>Butembo</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td></td>
+      <td>Goma</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td></td>
+      <td>Mandima</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>13</td>
+      <td>14</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 The only two HZs not included in the default list but exceeding two cases were Butembo and Katwa. These were nominated by 2 of the 10 experts (4 and 10), both attributing 50% chance of exceeding two cases. In contrast, Oicha and Komanda had the most nominations with 7 and 5 each, and 6 and 4 of the 10 experts interviewed allotted greater than 5% chance of two or more cases in December, with attributed probabilities ranging between 5% and 95% chance of crossing the two-case threshold.
 
@@ -153,6 +548,6 @@ Our analysis represents the comparison of expert forecasts to only two specific 
 
 Since our findings, like those of similar studies, suggest that models and experts perform comparably in this context, there is an argument that models have no value in informing expert decision-making. It can be argued, however, that models remain useful in outbreak response. Firstly, while the models performed similarly to the ensemble forecasts of the experts, there was no individual expert that performed consistently better than the models. Secondly, models are much more easily scaled and generalized, making them simple to deploy in new contexts and to adapt as epidemics grow. Expert interviews are time-consuming and often inconvenient, especially in the context of outbreak response activities, which are characteristically fast paced. Models therefore offer a more convenient route to a quantified insight, which from our results performs comparably to the way groups of experts may think. Finally, there are ways to combine both methods. For example, in the event that expert forecasts can be garnered, joint ensembles can capture information from both the expert and modelled forecasts. Further, we suggest that models can offer a role in aiding decision-making by providing confidence in or calling into question expert advice that is being considered.
 
-## Conclusions
+### Conclusions
 
 Our analysis evaluated performance of experts and models when forecasting the spatial spread of Ebola, representing the first such study incorporating local geographic distribution and the first to focus on an epidemic in a resource-poor setting. We found that forecasts made by experts and models performed comparably overall, but experts tended to be slightly more biased towards predicting that a small number of cases would persist. The results support the use of models in outbreak response and provide insight into how models and expert opinion could be combined when tackling future epidemics.

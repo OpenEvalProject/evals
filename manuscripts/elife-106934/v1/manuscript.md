@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/016tfm930 Department of Biochemistry and Molecular Biology, University of Texas Medical Branch at Galveston Galveston United States
+1. Department of Biochemistry and Molecular Biology, University of Texas Medical Branch at Galveston Galveston United States ([ROR:016tfm930](https://ror.org/016tfm930))
 
 † Corresponding author
 
@@ -33,13 +33,25 @@ The role of WRN’s helicase activity in the unwinding of DNA containing seconda
 
 ## Results
 
-## Proficiency of replication through UV lesions is not affected by defects in WRN and WRNIP1 ATPase activities
+### Proficiency of replication through UV lesions is not affected by defects in WRN and WRNIP1 ATPase activities
 
 Even though WRN DNA helicase activity is not required for TLS opposite a cis-syn TT dimer or a (6-4) TT photoproduct carried on the leading strand template in a duplex plasmid (Yoon et al., 2024), the proficiency of WRN helicase for unwinding DNA containing secondary structures raised the possibility that this activity might increase the proficiency of Y-family Pols for replicating through DNA lesions in the genomic context. To check for this, we monitored replication fork (RF) progression through UV lesions on single DNA fibers in WRN-/- HFs carrying the vector or expressing either wild-type WRN or ATPase-defective K577A WRN (Figure 1—figure supplement 1). And to determine the effects of combinations of WRN ATPase/helicase, WRNIP1 ATPase, and WRN 3’ →5’ exonuclease activities on RF progression through UV lesions, we extended these studies to WRNIP1 depleted WRN-/- HFs expressing both the ATPase-defective K577A WRN and K274A WRNIP1 proteins or expressing K274A WRNIP1 together with the 3’→5’ exonuclease and helicase-defective E84A, K577A WRN (Figure 1—figure supplement 1). The E84A WRN mutation has been described previously (Yoon et al., 2024). The K577A WRN and K274A WRNIP1 mutations are in the conserved Walker A motif (Figure 1—figure supplement 1) involved in ATP binding (Kawabe et al., 2001; Kawabe et al., 2006; Newman et al., 2021).
 
 HFs were pulse-labeled with iododeoxyuridine (IdU) for 20 min, then UV irradiated (10 J/m2) followed by labeling with chlorodeoxyuridine (CldU) for 20 min (Figure 1A). Since RF progression through UV lesions occurs as proficiently in HFs defective in WRN ATPase or defective in both the WRN and WRNIP1 ATPase activities as in WT cells, both these activities have no perceptible effect on the proficiency of replication through UV lesions by Y-family Pols (Figure 1). Moreover, RF progression through UV lesions was not affected in cells lacking the WRN exonuclease activity as well as the WRN and WRNIP1 ATPase activities (Figure 1). Accordingly, the accumulation of WRN or WRNIP1 into UV-induced replication foci was not affected by the K577A and K274A mutations in these proteins (Figure 1—figure supplement 2).
 
-## Defects in WRN ATPase, WRNIP1 ATPase, and WRN 3’→5’ exonuclease confer an immense increase in error-proneness upon error-free TLS through CPDs by Polη
+![Figure 1.](https://cdn.elifesciences.org/articles/106934/elife-106934-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of DNA fiber assay and representative images of stretched DNA fibers in UV-irradiated WRN-/- HFs expressing WT WRN or mutant WRN/WRNIP1 proteins. (B) Quantitative analyses of RF progression through UV lesions represented as mean CldU/IdU ratio based on ~400 DNA fibers from four independent experiments. Error bars indicate SD. Student’s two-tailed t test p values: ns, not significant; ** p<0.01. (C) Distribution of CldU/IdU ratios in % of replication tracts measured in WRN-/- HFs expressing WT WRN or mutant WRN/WRNIP1 proteins. The mean CldU/IdU ratios for these data are shown in (B).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/106934/elife-106934-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) (i) Schematic representation of WRNIP1 protein. The positions of UBZ, siRNA target site, the core ATPase domain, and the position of K274A mutation in this domain are indicated. (ii) The sequence of the conserved Walker A motif containing the ATP-binding-deficient K577A mutation in WRN or K274A mutation in WRNIP1 is shown. (iii) Western blot analyses of the efficiency of WRNIP1 knockdown in HFs and BBMEFs. (B) Western blot analyses of stable expression of WT and mutant WRN proteins in WRN-/- HFs (left) and BBMEFs (right). (C) Western blot analyses of stable expression of WT and mutant WRNIP1 proteins in WT HFs (left) and BBMEFs (right). (D) Western blot analyses of stable expression of combinations of WRN and WRNIP1 mutant proteins in WRN-/- HFs (left) and BBMEFs (right).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/106934/elife-106934-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) UV-induced foci in WT HFs expressing Flag WT WRNIP1 or Flag K274A WRNIP1. (B) UV-induced foci in WRN-/- HFs expressing WT WRN or K577A WRN. In (A) and (B), error bars indicate SD. About 200 cells from three independent experiments were analyzed.
+
+### Defects in WRN ATPase, WRNIP1 ATPase, and WRN 3’→5’ exonuclease confer an immense increase in error-proneness upon error-free TLS through CPDs by Polη
 
 TLS through CPDs is conducted by a Polη dependent error-free pathway or by Polθ/Polκ and Polθ/Polζ dependent error-prone pathways (Yoon et al., 2019b). Although WRN and WRNIP1 are required for TLS opposite CPDs by Polη and Polκ, the WRN exonuclease activity functions only in removing Polη errors (Yoon et al., 2024). In the last section of studies described below, we confirm that defects in WRN and WRNIP1 ATPase activities also have no effect on the fidelity of Polκ; hence, the data described below result from the effects of these activities on the fidelity of TLS opposite CPDs by Polη.
 
@@ -49,6 +61,179 @@ To determine the effects of WRN or WRNIP1 ATPase activities on the fidelity of P
 
 **Figure 2.:** (A) UV-induced mutation frequencies resulting from TLS through CPDs by Polη in the cII gene in BBMEFs expressing E84A WRN, K577A WRN, K274A WRNIP1, or combinations of these mutant proteins. The contribution of Polη to UV-induced mutation frequency in BBMEFs defective in WRN ATPase, WRNIP1 ATPase, WRN exonuclease, or in combinations of these activities is indicated within the bar diagram. The simultaneous absence of WRN ATPase and exonuclease activities and WRNIP1 ATPase activity imposes a mutation frequency of ~90 x 10–5 upon error-free TLS through CPDs by Polη (A, last bar). (B) Verification that the increase in UV-induced mutation frequencies seen in the absence of WRN exonuclease, WRN ATPase, or WRNIP1 ATPase activities in (A) results from the error-proneness imposed upon Polη by the absence of these activities. (C) Verification that the increase in UV-induced mutation frequencies seen in the simultaneous absence of both WRN exonuclease and WRNIP1 ATPase activities or in the absence of both the WRN and WRNIP1 ATPase activities in (A) results from the error-proneness imposed upon Polη by the absence of these activities.
 
+**Table 1.**
+ UV-induced mutation frequencies resulting from TLS through CPDs in the cII gene in BBMEFs expressing ATPase-defective K577A WRN, 3’→5’ exonuclease-defective E84A WRN, ATPase-defective K274A WRNIP1, or combinations of these mutant proteins.Table 1—source data 1.Mutation frequencies from independent experiments for the data shown in Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>siRNA/ART558</th>
+      <th>Vector expressing</th>
+      <th>UV*</th>
+      <th>Photo-reactivation†</th>
+      <th>Mutation frequency (x10-5)‡</th>
+      <th>UV induced mutation frequency (x10-5)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WRN</td>
+      <td>Myc-WT-WRN</td>
+      <td>-</td>
+      <td>+</td>
+      <td>17.3±0.8</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>WRN</td>
+      <td>Myc-WT-WRN</td>
+      <td>+</td>
+      <td>+</td>
+      <td>46.9±2.4</td>
+      <td>29.6§</td>
+    </tr>
+    <tr>
+      <td>WRN</td>
+      <td>Myc-E84A-WRN</td>
+      <td>+</td>
+      <td>+</td>
+      <td>73.7±3.0</td>
+      <td>56.4</td>
+    </tr>
+    <tr>
+      <td>WRN</td>
+      <td>Myc-K577A-WRN</td>
+      <td>+</td>
+      <td>+</td>
+      <td>78.2±1.4</td>
+      <td>60.9</td>
+    </tr>
+    <tr>
+      <td>WRN</td>
+      <td>Myc-E84A,K577A-WRN</td>
+      <td>+</td>
+      <td>+</td>
+      <td>103.3±2.9</td>
+      <td>86</td>
+    </tr>
+    <tr>
+      <td>WRNIP1</td>
+      <td>Flag-WT-WRNIP1</td>
+      <td>+</td>
+      <td>+</td>
+      <td>46.0±1.2</td>
+      <td>28.7</td>
+    </tr>
+    <tr>
+      <td>WRNIP1</td>
+      <td>Flag-K274A-WRNIP1</td>
+      <td>+</td>
+      <td>+</td>
+      <td>79.4±2.7</td>
+      <td>62.1</td>
+    </tr>
+    <tr>
+      <td>WRN +WRNIP1</td>
+      <td>Myc-E84A-WRN+Flag-K274A-WRNIP1</td>
+      <td>+</td>
+      <td>+</td>
+      <td>102.9±4.9</td>
+      <td>85.6</td>
+    </tr>
+    <tr>
+      <td>WRN +WRNIP1</td>
+      <td>Myc-K577A-WRN+Flag-K274A-WRNIP1</td>
+      <td>+</td>
+      <td>+</td>
+      <td>106.0±1.8</td>
+      <td>88.7</td>
+    </tr>
+    <tr>
+      <td>WRN +WRNIP1</td>
+      <td>Myc-E84A,K577A-WRN+Flag-K274A-WRNIP1</td>
+      <td>+</td>
+      <td>+</td>
+      <td>136.3±2.5</td>
+      <td>119</td>
+    </tr>
+    <tr>
+      <td>WRN +Polθ</td>
+      <td>Myc-WT-WRN</td>
+      <td>+</td>
+      <td>+</td>
+      <td>19.9±1.2</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>WRN +Polθ</td>
+      <td>Myc-E84A-WRN</td>
+      <td>+</td>
+      <td>+</td>
+      <td>49.7±1.6</td>
+      <td>29.8¶</td>
+    </tr>
+    <tr>
+      <td>WRN +Polθ</td>
+      <td>Myc-K577A-WRN</td>
+      <td>+</td>
+      <td>+</td>
+      <td>54.2±1.6</td>
+      <td>34.3</td>
+    </tr>
+    <tr>
+      <td>WRN +Polθ</td>
+      <td>Myc-E84A,K577A-WRN</td>
+      <td>+</td>
+      <td>+</td>
+      <td>78.3±2.1</td>
+      <td>58.4</td>
+    </tr>
+    <tr>
+      <td>WRNIP1+Polθ</td>
+      <td>Flag-WT-WRNIP1</td>
+      <td>+</td>
+      <td>+</td>
+      <td>20.6±1.4</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>WRNIP1+Polθ</td>
+      <td>Flag-K274A-WRNIP1</td>
+      <td>+</td>
+      <td>+</td>
+      <td>60.1±2.7</td>
+      <td>39.5¶</td>
+    </tr>
+    <tr>
+      <td>ART558 (20 μM)</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+      <td>20.6±0.7</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>WRN +WRNIP1/ART558 (20 μM)</td>
+      <td>Myc-E84A-WRN+Flag-K274A-WRNIP1</td>
+      <td>+</td>
+      <td>+</td>
+      <td>77.2±1.2</td>
+      <td>56.6¶</td>
+    </tr>
+    <tr>
+      <td>WRN +WRNIP1/ART558 (20 μM)</td>
+      <td>Myc-K577A-WRN+Flag-K274A-WRNIP1</td>
+      <td>+</td>
+      <td>+</td>
+      <td>78.9±1.6</td>
+      <td>58.3</td>
+    </tr>
+  </tbody>
+</table>
+
+_*5 J/m2 of UVC (254nm) light.†Photoreactivation with UVA (360nm) light for 3 hr in cells expressing (6-4)PP photolyase.‡Data are represented as mean ± SEM. Mean mutation frequencies and standard error of the mean were calculated from 3-4 independent experiments.§UV-induced mutation frequencies were calculated by subtracting the spontaneous mutation frequency in unirradiated cells (17.3 x 10-5) from the mutation frequency in UV-irradiated cells.¶UV-induced mutation frequencies were calculated by subtracting the basal level of mutations in WT cells depleted or inhibited for Polθ. Since error-prone TLS by Polθ is inactivated, these mutations represent error-proneness imposed upon Polη by the inactivation of WRN and/or WRNIP1 activities._
+
 Next, we determined the effects of the ATPase-defective K274A WRNIP1 mutation on the frequency of UV-induced mutations in the cII gene resulting from TLS through CPDs. In cells expressing WT WRNIP1, UV-induced mutations occur at a frequency of ~29 x 10–5, and this frequency rises to ~62 x 10–5 in cells expressing K274A WRNIP1 (Table 1, last column). The increase of ~33 x 10–5 in mutation frequency over that in WT cells represents the error-proneness conferred upon Polη TLS by the K274A WRNIP1 mutation (Table 1, Figure 2A).
 
 We then examined the effects of combinations of these WRN and WRNIP1 mutations on the frequency of UV-induced mutations. In cells expressing the combination of E84A WRN and K274A WRNIP1, or expressing the combination of K577A WRN and K274A WRNIP1, UV-induced mutation frequency rises to ~86 x 10–5 and 89 x 10–5, respectively, and in BBMEFs expressing E84A, K577A WRN together with K274A WRNIP1, UV-induced mutation frequency rises to ~119 x 10–5 (Table 1, last column). Thus, the combination of defects in WRN 3’→5’ exonuclease and in both the WRN and WRNIP1 ATPase activities confers vast error-proneness on error-free TLS through CPDs by Polη, such that Polη generates mutations at a frequency of ~90 x 10–5 (Figure 2A, last bar).
@@ -57,11 +242,19 @@ Since Polθ-dependent TLS through CPDs requires Polκ or Polζ for the extension
 
 Next, we verified the effects of combinations of E84A WRN and K274A WRNIP1 or K577A WRN and K274A WRNIP1 in BBMEFs depleted for WRN and WRNIP1 and treated with the Polθ inhibitor ART558. As expected from the role of Polθ in conducting error-prone TLS through CPDs, treatment with ART558 reduces mutation frequency in UV-irradiated BBMEFs near to that in unirradiated cells (Table 1). Importantly, in BBMEFs co-depleted for WRN and WRNIP1 treated with ART558 and expressing E84A WRN and K274A WRNIP1 or K577A WRN and K274A WRNIP1, UV-induced mutation frequency resulting from error-prone TLS through CPDs by Polη rises to ~57 x 10–5 (Table 1, last column; Figure 2C). These results concur with the inferences derived from mutational analyses in Polθ proficient cells for the additive effects of combinations of these WRN and WRNIP1 mutations on elevating the error-proneness of TLS through CPDs by Polη (Figure 2A).
 
-## Defects in WRN and WRNIP1 ATPase activities cause a diversity of nucleotide misincorporations opposite CPDs by Polη
+### Defects in WRN and WRNIP1 ATPase activities cause a diversity of nucleotide misincorporations opposite CPDs by Polη
 
 UV-induced C>T mutations in the cII gene in WT BBMEFs resulting from error-prone TLS through CPDs by Polθ are clustered at hot spots at 11 dipyrimidine sites. In BBMEFs depleted for Polθ and expressing the exonuclease-defective E84A WRN, C>T and CC >TT tandem mutations resulting from error-prone TLS by Polη occur mostly at the same hot spots as those generated by Polθ (Yoon et al., 2024). The very high prevalence of C>T or CC >TT mutations to the almost exclusion of all other mutational changes in cells deficient in WRN 3’→5’ exonuclease activity could arise because Polη misinserts only an A opposite the C residue of the CPD in CC, CT, or TC dipyrimidine sequences. Alternatively, it could derive from a role of WRN and WRNIP1 ATPase activities in preventing the diversity of nt misincorporations opposite CPDs by Polη.
 
 To determine whether defects in WRN ATPase activity increase the variety of nt misincorporations opposite CPDs by Polη, we analyzed the spectrum of UV-induced mutations resulting from Polη’s role in TLS opposite CPDs in the cII gene in BBMEFs co-depleted for WRN and Polθ and expressing ATPase-defective K577A WRN (Figure 3A). Interestingly, both the pattern and the variety of nt misincorporations in BBMEFs expressing K577A WRN (Figure 3A) differ markedly from that in cells expressing the E84A WRN mutation (Yoon et al., 2024). Thus, in K577A WRN cells, C>T mutational hot spots are prevalent at positions 1, 2, 5, 7, 8, 9, and 10, but not at positions 3, 4, 6, and 11. Additionally, a new major C>T hot spot appears at the CT sequence at site a and a minor C>T hot spot occurs at the CT sequence at site b (Figure 3A). Quite remarkably, a number of hot spots manifest at other sites which entail mutational changes other than C>T. At hot spots at sites c, d, e, and h, the observed G>C changes would occur by the insertion of a C opposite the C residue of the CPD in the opposite strand; additionally, the C>G changes at hot spots at sites f and g would occur by the insertion of a C opposite the C residue of the CPD formed at these CT sequences (Figure 3A). The infrequent occurrence of a G>T change at sites 1, e, and 8 would occur from the insertion of a T opposite the C residue of the CPD in the opposite strand. Thus, defects in WRN ATPase greatly increase the misinsertion of an A or a C opposite the C residue of CPD.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/106934/elife-106934-fig3-v1.jpg)
+
+**Figure 3.:** (A) Mutational spectra in BBMEFs co-depleted for WRN and Polθ and expressing K577A WRN are shown above the sequence; mutational spectra in BBMEFs co-depleted for WRNP1 and Polθ and expressing K274A WRNIP1 are shown below the sequence. Novel hot spots restricted to K577A WRN are indicated in red lettering and novel hot spots restricted to K274A WRNIP1 are depicted in blue lettering. Green lettering indicates novel shared hot spots that appear in cells expressing either of these mutant proteins. (B) Mutational spectra in BBMEFs co-depleted for WRN and WRNIP1, treated with Polθ inhibitor ART558 (Polθi), and expressing both E84A WRN and K274A WRNIP1 are shown above the sequence, and expressing both K577A WRN and K274A WRNIP1 are shown below the sequence. Novel hot spots that appear in BBMEFs expressing a combination of these mutant proteins are demarcated by violet lettering. The designations for the other mutational changes in (A) and (B) are: X, deletions; underlines, tandem mutations.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/106934/elife-106934-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** UV-induced mutational spectra in BBMEFs co-depleted for WRN and Polθ and expressing K577A WRN are shown above the sequence and expressing E84A, K577A WRN are shown below the sequence.
 
 To determine whether defects in WRNIP1 ATPase activity increase the variety of nt misinsertions opposite CPDs by Polη, we analyzed the spectrum of mutational hot spots in BBMEFs co-depleted for WRNIP1 and Polθ and expressing the ATPase-defective WRNIP1 K274A mutation (Figure 3A). Interestingly, defects in WRNIP1 ATPase activity confer a greater diversity of nt misincorporations opposite CPDs by Polη than those conferred by WRN ATPase deficiency. In WRNIP1 K274A cells, C>T mutational hot spots occur at sites 2, 3, 4, 5, 7, 8, 9, and 11 but not at sites 1, 6, or 10. However, the mutational pattern at site 9 differs from the pattern at other sites in the diversity of substitutions; in addition to the G>A change that would occur from the insertion of an A opposite the C residue of the CPD in the opposite strand, G>C, G>T, and GG >AA substitutions occur at this site (Figure 3A). These changes would involve the misincorporation of a C or T opposite the C residue of the CPD in the opposite strand, or the insertion of an A opposite both the 3’C and 5’C residues of the CPD in the opposite strand accounting for the tandem GG >AA mutations. Additionally, in BBMEFs expressing K274A WRNIP1, C>T mutational changes occur at sites a’, d’ and e’. Furthermore, the C>G mutational hot spot at the CT sequence present at sites f and g would result from the insertion of a C opposite the C residue of the CPD (Figure 3A). Thus, defects in WRNIP1 ATPase activity increase the misinsertion of an A as well as of a C opposite the C residue of CPD.
 
@@ -73,17 +266,25 @@ To determine whether the absence of both WRN and WRNIP1 ATPase activities expose
 
 Overall, these mutational data show that whereas defects in WRN ATPase activity primarily increase the misinsertion of an A or a C opposite the C residue of CPD by Polη, defects in WRNIP1 ATPase activity, in addition to increasing the misinsertion of an A or a C opposite the C residue of CPD, increase the misinsertion of C, G, or T opposite the T residue of CPD by Polη. Additionally, defects in these ATPase activities cause mutational hot spot formation in different sequence contexts.
 
-## Defects in WRN ATPase, WRNIP1 ATPase, and WRN 3’→5’ exonuclease impart an additive increase in the error-proneness of TLS opposite (6-4) photoproducts by Polη and Polι
+### Defects in WRN ATPase, WRNIP1 ATPase, and WRN 3’→5’ exonuclease impart an additive increase in the error-proneness of TLS opposite (6-4) photoproducts by Polη and Polι
 
 TLS opposite (6-4) PPs is conducted via error-prone Polη/Polθ or Polι/Polθ pathways in which following nt insertion opposite (6-4) PPs by Polη or Polι, Polθ would extend synthesis (Yoon et al., 2010b; Yoon et al., 2019b). In the alternative pathway, error-free TLS through (6-4) PPs is conducted by Polλ together with Polζ (Yoon et al., 2021b). Since WRN and WRNIP1 are required for TLS opposite (6-4) PPs by Polη and Polι (Yoon et al., 2024), a defect in WRN ATPase, WRN exonuclease, or WRNIP1 ATPase would impact the fidelity of TLS by these Pols. To determine whether WRN and WRNIP1 ATPase activities modulate the fidelity of Pols η and ι for TLS opposite (6-4) PPs, we analyzed the effects of K577A WRN and K274A WRNIP1 on the frequency of UV-induced mutations in the cII gene in BBMEFs expressing CPD photolyase (Figure 4A). In this BBMEF cell line, spontaneous mutations occur at a frequency of ~15 x 10–5 in cells expressing WT WRN (Figure 4A). In UV-irradiated BBMEFs expressing WT WRN, mutations occur at a frequency of ~28 x 10–5. Thus, in WT cells, error-prone TLS through (6-4) PPs generates mutations at a frequency of ~14 x 10–5 (Figure 4A, last column). UV-induced mutation frequency rises to ~32 x 10–5 in cells expressing exonuclease-defective E84A WRN, and also in cells expressing ATPase-defective K577A WRN (Figure 4A, last column). In cells expressing E84A, K577A WRN, UV-induced mutation frequency rises to ~57 x 10–5 (Figure 4A). In cells expressing ATPase-defective K274A WRNIP1, UV-induced mutation frequency rises to ~36 x 10–5 and in cells expressing E84A WRN and K274A WRNIP1, or K577A WRN and K274A WRNIP1, UV-induced mutation frequency rises to ~56 x 10–5 (Figure 4A). In the absence of all three activities, UV-induced mutation frequency resulting from TLS through (6-4) PPs rises to ~76 x 10–5 (Figure 4A). Thus, defects in the WRN ATPase, WRNIP1 ATPase, or WRN exonuclease each increase the error-proneness of Pols η and ι dependent TLS through (6-4) PPs to a similar extent, and the combination of these defects confers an additive increase in error-prone TLS such that in cells deficient in all three activities, UV-induced mutation frequency is elevated ~fivefold compared to that in WT cells (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/106934/elife-106934-fig4-v1.jpg)
 
-**Figure 4.:** 2) mutation frequencies resulting from TLS opposite (6-4) photoproducts in the cII gene in BBMEFs expressing E84A WRN, K577A WRN, K274A WRNIP1, or combinations of these mutant proteins.(A) UV mutations resulting from TLS opposite (6-4) PPs were examined in a BBMEF cell line expressing a CPD photolyase and photoreactivated with UVA (360 nm) light for 3 hr. Mutation frequencies and SEM were calculated from three to four independent experiments. UV-induced mutation frequency (last column) resulting from TLS through (6-4) PPs was calculated by subtracting the spontaneous mutation frequency (14.6x10–5) from the mutation frequency in UV irradiated cells. (B) Diagrammatic representation of elevation in error-proneness conferred by E84A WRN, K577A WRN, K274A WRNIP1, or by their combinations upon TLS opposite (6-4) PPs by Polη and Polι. The figure depicts the elevation in UV-induced mutation frequencies resulting from TLS opposite (6-4) PPs that occurs in BBMEFs expressing these WRN or WRNIP1 mutant proteins.Figure 4—source data 1.Figure 4A.
+**Figure 4.:** (A) UV mutations resulting from TLS opposite (6-4) PPs were examined in a BBMEF cell line expressing a CPD photolyase and photoreactivated with UVA (360 nm) light for 3 hr. Mutation frequencies and SEM were calculated from three to four independent experiments. UV-induced mutation frequency (last column) resulting from TLS through (6-4) PPs was calculated by subtracting the spontaneous mutation frequency (14.6x10–5) from the mutation frequency in UV irradiated cells. (B) Diagrammatic representation of elevation in error-proneness conferred by E84A WRN, K577A WRN, K274A WRNIP1, or by their combinations upon TLS opposite (6-4) PPs by Polη and Polι. The figure depicts the elevation in UV-induced mutation frequencies resulting from TLS opposite (6-4) PPs that occurs in BBMEFs expressing these WRN or WRNIP1 mutant proteins.
 
-## Defects in WRN and WRNIP1 ATPase activities confer a distinct pattern of nucleotide misinsertions opposite (6-4) PPs in TLS mediated by Polη and Polι
+### Defects in WRN and WRNIP1 ATPase activities confer a distinct pattern of nucleotide misinsertions opposite (6-4) PPs in TLS mediated by Polη and Polι
 
 In WT BBMEFs, TLS through (6-4) PPs by Pols η and ι generates C>T mutational hot spots clustered at sites 1, 2, 3, 4, and 5 (Yoon et al., 2010b; Yoon et al., 2021b), and the pattern of mutations remains basically the same in WRN exonuclease deficient cells (Yoon et al., 2024). In BBMEFs expressing ATPase-deficient K577A WRN, in addition to hot spots at sites 1, 2, 3, and 5, new hot spots appear at sites a, b, c, and d (Figure 5A). While hot spots a, c, and d exhibit canonical C>T mutations in a potential dipyrimidine sequence, the G>C hot spot at site b would require the formation of UV photoproduct in a non-dipyrimidine sequence. This hot spot might result from TLS through the AC photoproduct in the opposite strand in which a C is inserted opposite the C residue of the photoproduct. The formation of such a UV photoproduct has been inferred from studies in yeast (Laughery et al., 2020). In BBMEFs expressing ATPase-deficient K274A WRNIP1, C>T mutational hot spots occur at sites 1 and 5 and at sites a and d; additional hot spots appear at sites a’, b’, and c’; wherein at site a’, tandem AA misinsertions would occur opposite the CC residues in the opposite strand, and at sites b’ and c’, misinsertions would occur at UV photoproducts formed at non-dipyrimidine sequences (Figure 5A). These analyses indicate that defects in the WRN ATPase or WRNIP1 ATPase elevate the misinsertion of an A opposite the C residue of (6-4) PPs and also the misinsertions that occur at UV photoproducts that are presumably formed at non-dipyrimidine sequences.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/106934/elife-106934-fig5-v1.jpg)
+
+**Figure 5.:** (A) Mutational spectra in BBMEFs depleted for WRN and expressing K577A WRN are shown above the sequence; mutational spectra in BBMEFs depleted for WRNIP1 and expressing K274A WRNIP1 are shown below the sequence. Novel hot spots restricted to K577A WRN are indicated by red lettering, and novel hot spots restricted to K274A WRNIP1 are indicated in blue lettering. Green lettering indicates novel shared hot spots that appear in cells expressing either of these mutant proteins. Hot spots 1 and 5 in WT cells are also present in cells expressing either of these mutant proteins. However, hot spots 2 and 3 present in WT cells are present only in cells expressing K577A WRN. (B) Mutational spectra in BBMEFs depleted for WRNIP1 and expressing K274A WRNIP1 are shown above the sequence; and mutational spectra in BBMEFs co-depleted for WRN and WRNIP1 and expressing E84A WRN and K274A WRNIP1 are shown below the sequence. Novel hot spots that appear in BBMEFs expressing E84A WRN, K274A WRNIP1 are indicated by violet lettering.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/106934/elife-106934-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Mutational spectra in BBMEFs co-depleted for WRN and WRNIP1 and co-expressing K577A WRN and K274A WRNIP1. Red and Blue letters demarcate novel hot spots that appear in cells expressing K577A WRN vs. K274A WRNIP1, respectively; violet lettering demarcates hot spots that appear in cells expressing K577A WRN and K274A WRNIP1 together. Green lettering indicates a hot spot that appears in cells expressing either K577A WRN or K274A WRNIP1. (B) Mutational spectra in BBMEFs depleted for WRN and expressing K577A WRN or E84A, K577A WRN. Hot spots in E84A, K577A WRN (shown below the sequence) resemble those in K577A WRN (shown above the sequence). Violet lettering indicates a minor novel hot spot in E84A, K577A WRN.
 
 Next, we determined whether the deficiency of both WRN and WRNIP1 ATPase activities generates a pattern of mutational hot spots different from that in cells deficient for either of these activities alone. However, the mutational pattern in the absence of both the WRN and WRNIP1 ATPases primarily exhibits features of both the deficiencies with the minor exception of a hot spot at position e’’ where the G>A or G>T change would involve the misinsertion of an A or a T opposite the 3’C of the CC sequence in the opposite strand (Figure 5—figure supplement 1A). The pattern of nt misincorporations in E84A, K577A WRN cells basically remains the same as in K577A WRN cells (Figure 5—figure supplement 1B).
 
@@ -91,13 +292,143 @@ Interestingly, the mutational spectra in E84A WRN, K274A WRNIP1 cells differ str
 
 Thus, overall, defects in WRN and WRNIP1 ATPase activities greatly elevate the misinsertion of an A opposite the C residue of (6-4) PP; additionally, defects in WRNIP1 ATPase activity engender a large increase in the misinsertion of T and, to a lesser extent, the misinsertion of G opposite the T residue of (6-4) PP. Furthermore, defects in WRN or WRNIP1 ATPase activities cause mutational hot spot formation in different sequence contexts, and they expose misinsertions at UV photoproducts that presumably form at non-dipyrimidine sites.
 
-## Defects in WRNIP1 ATPase activity impair WRN 3’→5’ exonuclease function in the removal of Polκ misinsertions in TLS at the Tg lesion
+### Defects in WRNIP1 ATPase activity impair WRN 3’→5’ exonuclease function in the removal of Polκ misinsertions in TLS at the Tg lesion
 
 TLS through the Tg lesion is conducted by error-free Polκ/Polζ pathway in which following nt insertion opposite Tg by Polκ, Polζ would extend synthesis (Yoon et al., 2010a). In the alternative pathway, Polθ promotes error-prone TLS and generates ~2% mutational products in which a wrong nt is inserted opposite Tg (Yoon et al., 2014; Table 2). The frequency of TLS through the Tg adduct is not affected by the K274A WRNIP1, K577A WRN, or E84A WRN mutations or by their combinations (Supplementary file 1A). However, defects in WRNIP1 ATPase activity confer a high degree of error-proneness on TLS at the Tg lesion, as the expression of K274A WRNIP1 in WT HFs raises the mutation frequency to ~9% (Table 2), and this elevation derives primarily from mutations that occur from insertion of G opposite the next T on the 5’ side of the Tg lesion, resulting in 5’ T Tg >5’ CT change (Table 2). Since Polκ conducts error-free TLS at the Tg lesion and since WRN and WRNIP1 are required for TLS by Polκ (Yoon et al., 2024), this increase in mutation frequency would accrue from the error-proneness imposed upon Polκ by the lack of WRNIP1 ATPase activity.
 
+**Table 2.**
+ Mutation frequencies and nucleotides inserted opposite a thymine glycol carried on the leading strand DNA template of a duplex plasmid in wild type human fibroblasts or WRN -/- fibroblasts and expressing WRN and/or WRNIP1 mutant proteins.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">HFs</th>
+      <th rowspan="2">siRNA</th>
+      <th rowspan="2">Vector expressing</th>
+      <th rowspan="2">Number of Kan+ blue colonies sequenced</th>
+      <th colspan="5">Nucleotide inserted</th>
+      <th rowspan="2">Mutation frequency (%)</th>
+    </tr>
+    <tr>
+      <th>A</th>
+      <th>G</th>
+      <th>C</th>
+      <th>T</th>
+      <th>Other*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">WT</td>
+      <td>WRNIP1</td>
+      <td>WT-WRNIP1</td>
+      <td>96 (2)†</td>
+      <td>94</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2</td>
+      <td>-</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>WRNIP1</td>
+      <td>K274A-WRNIP1</td>
+      <td>156(14)</td>
+      <td>142</td>
+      <td>-</td>
+      <td>-</td>
+      <td>4</td>
+      <td>10</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td rowspan="6">WRN -/-</td>
+      <td>NC</td>
+      <td>Myc-WT-WRN‡</td>
+      <td>192 (4)</td>
+      <td>188</td>
+      <td>1</td>
+      <td>-</td>
+      <td>3</td>
+      <td>-</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>NC</td>
+      <td>Myc-E84A-WRN ‡</td>
+      <td>208 (15)</td>
+      <td>193</td>
+      <td>2</td>
+      <td>-</td>
+      <td>4</td>
+      <td>9</td>
+      <td>7.2</td>
+    </tr>
+    <tr>
+      <td>NC</td>
+      <td>Myc-K577A-WRN</td>
+      <td>160 (3)</td>
+      <td>157</td>
+      <td>-</td>
+      <td>-</td>
+      <td>3</td>
+      <td>-</td>
+      <td>1.9</td>
+    </tr>
+    <tr>
+      <td>NC</td>
+      <td>Myc-E84A,K577A-WRN</td>
+      <td>140 (11)</td>
+      <td>129</td>
+      <td>2</td>
+      <td>-</td>
+      <td>1</td>
+      <td>8</td>
+      <td>7.9</td>
+    </tr>
+    <tr>
+      <td>WRNIP1</td>
+      <td>K577A-WRN+K274A-WRNIP1</td>
+      <td>90 (7)</td>
+      <td>94</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1</td>
+      <td>6</td>
+      <td>7.8</td>
+    </tr>
+    <tr>
+      <td>WRNIP1</td>
+      <td>E84A-WRN+K274A-WRNIP1</td>
+      <td>184(16)</td>
+      <td>168</td>
+      <td>2</td>
+      <td>-</td>
+      <td>3</td>
+      <td>11</td>
+      <td>8.7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Mutations occurred at the 5’ template residue next to Tg lesion. The sequence 5’-CAATTgG-3’ is changed to 5’-CAACTG-3’. The corresponding 5’ residues are underlined.†Numbers of colonies where TLS occurred by insertion of a nucleotide other than an A are shown in parenthesis.‡These data have been published previously (Yoon et al., 2024) and are shown here for comparison._
+
 By contrast, ATPase-defective K577A WRN has no adverse effect on error-free TLS by Polκ as the mutation frequency and the mutational pattern remain the same in WRN-/- HFs expressing K577A WRN as in WT WRN and these result from Polθ errors; moreover, the frequency of error-prone TLS and the mutational pattern in WRN-/- HFs expressing E84A K577A WRN remain the same as in E84A WRN (Table 2). The lack of any role of WRN ATPase activity in the fidelity of TLS by Polκ was further confirmed from the observation that the frequency and mutational pattern in WRN-/- HFs expressing K577A WRN and K274A WRNIP1 together remain the same as in K274A WRNIP1 (Table 2). To determine whether the WRNIP1 ATPase and WRN exonuclease activities act independently, we analyzed the frequency and pattern of mutational changes in WRN-/- HFs expressing both the E84A WRN and K274A WRNIP1 proteins together. Unexpectedly, we find that the frequency of mutations and the prevalence of T>C change at the 5’T next to Tg remain nearly the same in the absence of both these activities as in the absence of WRNIP1 ATPase or WRN 3’→5’ exonuclease activity (Table 2). This epistatic interaction implicates a role of WRNIP1 ATPase in facilitating the action of WRN 3’→5’ exonuclease in the removal of Polκ misinsertions at the Tg lesion.
 
-## Defects in WRN and WRNIP1 ATPase activities elevate G misinsertions by Polι opposite εdA
+### Defects in WRN and WRNIP1 ATPase activities elevate G misinsertions by Polι opposite εdA
 
 TLS through εdA operates via an error-free Polι/Polζ dependent pathway or by an error-prone Polθ dependent pathway; additionally, a third pathway dependent upon Rev1 polymerase activity, although minor in its contribution to overall TLS, makes a significant contribution to error-prone TLS (Yoon et al., 2019a). TLS through the εdA adduct occurs at the same frequency in HFs defective in WRN ATPase or WRNIP1 ATPase activity, or in HFs defective in both these activities together with WRN 3’→5’ exonuclease activity (Supplementary file 1B). As we have shown previously, in WRN-/- HFs expressing WT WRN, error-prone TLS by Polθ and Rev1 generates ~19% mutational TLS products and the exonuclease-deficient E84A WRN mutation elevates this mutation frequency to ~62% (Yoon et al., 2024; Figure 6A). This immense rise in mutation frequency accrues from the error-proneness that the absence of WRN exonuclease activity confers upon error-free TLS by Polι; and it derives from highly elevated C misinsertions and to a lesser extent A misinsertions by Polι. These results indicate that even with intact WRN and WRNIP1 ATPase activities, Polι operates in a very highly error-prone manner and that this vast error-proneness is annulled by the removal of all the Polι misinsertions by the WRN 3’→5’ exonuclease activity.
 
@@ -109,7 +440,7 @@ To determine whether WRNIP1 and WRN ATPase activities contribute to the fidelity
 
 ## Discussion
 
-## WRN and WRNIP1 ATPases restrain nucleotide misincorporations opposite DNA lesions by Y-Family Pols
+### WRN and WRNIP1 ATPases restrain nucleotide misincorporations opposite DNA lesions by Y-Family Pols
 
 Our evidence that error-free TLS through CPDs by Polη manifests high mutagenicity in BBMEFs defective in WRN or WRNIP1 ATPase activity demarcates a role of both these activities in imposing high fidelity on TLS through CPDs by Polη. From the mutational pattern incurred by defects in WRN or WRNIP1 ATPase activity, we infer a role for both these activities in restraining the misincorporation of an A or a C opposite the C residue of the CPD by Polη (Figure 7A). Furthermore, from the mutational pattern incurred by defects in WRNIP1 ATPase activity, we infer an additional role of WRNIP1 ATPase in preventing the misincorporation of a C, G, or a T opposite the T residue of CPD by Polη (Figure 7A).
 
@@ -121,15 +452,15 @@ The additive increase in UV-induced mutation frequencies resulting from TLS thro
 
 The additive increase in the frequency of UV-induced mutations generated from TLS opposite (6-4) PPs by Polη and Polι in cells defective in both the WRN and WRNIP1 ATPase activities adds further evidence for the independent roles of WRN and WRNIP1 ATPase activities in elevating the fidelity of TLS by Y-family Pols. And the preponderance of C>T hot spots in BBMEFs expressing K577A WRN or K274A WRNIP1 conforms with a role for both ATPases in restraining misincorporation of an A opposite the C residue of the photoproduct; additionally, WRNIP1 ATPase prevents misincorporation of a T or a G opposite the T residue of (6-4) PP (Figure 7B). Altogether,the combined actions of WRN and WRNIP1 ATPases in preventing nt misincorporations opposite (6-4) PPs by Polη and Polι and of the WRN exonuclease in expunging misincorporated nts confer an immense rise in the fidelity of these Pols for TLS opposite (6-4) PPs (Figure 4).
 
-## Imposition of a tight configuration on the active site of Y-family Pols by the WRN and WRNIP1 ATPase activities
+### Imposition of a tight configuration on the active site of Y-family Pols by the WRN and WRNIP1 ATPase activities
 
 The role of DNA helicases in the opening of the DNA helix in DNA replication, transcription, and recombination is well established (Chen et al., 2008; Aibara et al., 2021; Schilbach et al., 2021; Lewis et al., 2022). In keeping with such roles, WRN helicase has been shown to unwind a variety of secondary DNA structures (Chu and Hickson, 2009). Our results show that inactivation of the WRN ATPase activity has no adverse effect on the replication of UV-damaged DNA but greatly enhances nt misinsertions opposite UV lesions by Y-family Pols, identifying a role for this activity in restraining nt misincorporation by Y-family Pols. It is difficult to explain how the WRN DNA unwinding activity could modulate TLS Pol fidelity. Hence, we suggest that rather than employing the WRN ATPase activity for unwinding the DNA helix, the role of this activity gets modified by the components of the Y-family Pol multiprotein ensemble – that include WRN, WRNIP1, Rev1, and likely other proteins – to impact the active site of the TLS Pol, limiting misincorporations. In the Y-family Pol ensemble, WRNIP1 DNA-dependent ATPase activity could also be modified to act on the active site of the TLS Pol. Regardless of the mechanisms involved, these studies identify an unprecedented role of WRN and WRNIP1 ATPase activities in imposing high fidelity on TLS by Y-family Pols – which play a pre-eminent role in promoting replication through a large variety of DNA lesions.
 
-## Activation of the WRN 3’→5’ exonuclease function by the WRNIP1 ATPase activity
+### Activation of the WRN 3’→5’ exonuclease function by the WRNIP1 ATPase activity
 
 In the replicative B-family Pols, the close proximity of the polymerase and exonuclease active sites in the same protein allows for the switching of a mismatched primer terminus from the polymerase active site to the exonuclease active site for the removal of misinserted nt (Hogg et al., 2007; Darmawan et al., 2015; Jain et al., 2019). In the Y-family Pol ensemble, the switching of a mismatched primer from the TLS Pol active site to the WRN exonuclease active site would require coordination of these two active sites, likely aided by their placement in close proximity to one another. The lack of requirement of WRN or WRNIP1 ATPase activity for the WRN exonuclease function in the removal of nts misinserted by Polη opposite CPDs or of nts misinserted by Polη or Polι opposite (6-4) PPs would suggest that opposite these DNA lesions, the coordination of the TLS Pol active site with the WRN exonuclease active site for the removal of misinserted nts is attained in the TLS Pol ensemble without the requirement of WRN or WRNIP1 ATPase activities. By contrast, the requirement of WRNIP1 ATPase activity for WRN exonuclease function in the removal of Polκ misinsertions at the Tg lesion might suggest that nt misinsertion at this site alters the configuration of the Polκ active site such that the proximity of the Polκ active site to the WRN exonuclease active site is disrupted and WRNIP1 ATPase activity aids in restoring that proximity. Regardless of the mechanism(s) involved, the requirement of WRNIP1 ATPase activity for the WRN exonuclease function in the removal of Polκ misinsertions implicates a close coordination in the actions of these different components of the Y-family Pol multiprotein ensemble.
 
-## Imposition of high fidelity on TLS by Y-family Pols by the combined action of WRN and WRNIP1 ATPase activities and WRN 3’→5’ exonuclease activity
+### Imposition of high fidelity on TLS by Y-family Pols by the combined action of WRN and WRNIP1 ATPase activities and WRN 3’→5’ exonuclease activity
 
 Altogether, our studies show that the combined actions of WRN and WRNIP1 ATPases and WRN 3’→5’ exonuclease confer such a high elevation in the fidelity of TLS by Y-family Pols that these very highly error-prone TLS Pols conduct TLS in an entirely or predominantly error-free manner. The relative contributions of these activities to the fidelity of TLS Pols, however, vary, depending upon the DNA lesion and the TLS Pol involved. Thus, for error-free TLS through CPDs by Polη, all three activities make a prominent contribution – the WRN and WRNIP1 ATPases by restraining nt misincorporations and the WRN exonuclease by expunging nts misincorporated by Polη (Figure 7A). In a similar manner, the combined actions of all three activities confer an immense rise in the fidelity of Polη and Polι for TLS opposite (6-4) PPs (Figure 7B). For error-free TLS opposite εdA by Polι, however, the role of WRN exonuclease in the removal of misinserted nts makes a greater contribution than the WRN and WRNIP1 ATPase activities do by curtailing G misinsertions (Figure 7C). At the Tg lesion, WRNIP1 ATPase promotes the WRN exonuclease function in the removal of Polκ misinsertions (Figure 7D).
 
@@ -137,38 +468,38 @@ Our evidence that the combined action of WRN and WRNIP1 ATPases along with WRN 3
 
 ## Materials and methods
 
-## Cell lines and cell culture
+### Cell lines and cell culture
 
 WT human fibroblast (GM00637) and WRN-deficient AG11395 cell line (Dhillon et al., 2007) derived from AG00780G fibroblasts (Saito and Moses, 1991) were obtained from Corriell Institute Cell Repository. We refer to WRN-deficient cells as WRN-/-. Cell lines were authenticated by STR analysis and verified to be free of mycoplasma contamination. These and BBMEF cell lines (Agilent, Cat# 726010) and the methods for their growth have been described previously (Yoon et al., 2024).
 
-## Construction of plasmid vectors containing aTg or an εdA lesion
+### Construction of plasmid vectors containing aTg or an εdA lesion
 
 The heteroduplex TLS vectors containing a thymine glycol, or an 1-N6-etheno dA on the leading strand template were constructed as described previously (Yoon et al., 2010a; Yoon et al., 2019a).
 
-## Translesion synthesis assays in human cells
+### Translesion synthesis assays in human cells
 
 For siRNA knockdown of WRNIP1, HPLC-purified duplex siRNA for human WRNIP1 was purchased from Thermo Fisher Scientific. The sense sequence of WRNIP1 siRNA target sequence is 5’-GAAACAUAGCAUAAGGUUU-3’ and the efficiency of WRNIP1 knockdown was verified by western blot analysis (Figure 1—figure supplement 1). The siRNA knockdown efficiency of WRN or TLS Pols as well as the detailed methods for TLS assay and mutation analyses have been described previously (Yoon et al., 2009; Yoon et al., 2010a; Yoon et al., 2019a; Yoon et al., 2024).
 
-## Western blot analysis
+### Western blot analysis
 
 48 hr after siRNA transfection, cells were lysed with RIPA buffer (1 x PBS, 1% IP-40, 0.5% sodium deoxycholate, 0.1% SDS). After 1 hr incubation on ice, cellular mixture was centrifuged and the supernatant was collected. Equivalent amounts (approximately 30 µg) of prepared cellular extracts were separated on a 10% SDS-polyacrylamide gel and transferred to a PVDF membrane (Bio-Rad). The membranes were probed with rabbit polyclonal WRN antibody (Novus Bio, Cat#: NB100-471), rabbit polyclonal WRNIP1 antibody (Novus Bio, Cat#: NBP2-38190), mouse monoclonal flag antibody (Sigma, Cat#: F1804) or mouse monoclonal myc antibody (Santa Cruz Biotechnology, Cat#: sc-40) for 1 hr. After washing with PBS buffer, the membranes were mixed with appropriate secondary antibodies conjugated with horseradish peroxidase. The signals were detected using ECL-Plus (GenDEPOT). For the loading control, anti-β-tubulin antibody (Cell Signaling, Cat#: 2146), or anti-LaminB1 antibody (Abcam, Cat#: ab16048) was used.
 
-## Foci formation assay
+### Foci formation assay
 
 HFs (GM637) stably expressing flag-wild type WRNIP1 or flag-K274A WRNIP1 were treated with siRNA and cultured on a coverslip with 50% confluence. After 48 hr incubation, cells were treated with UVC (30 J/m2). WRN-/- HFs stably expressing myc-wild type WRN or myc-K577A WRN were cultured on a coverslip with 50% confluence. After 16 hr incubation, cells were treated with UVC (30 J/m2). After UV irradiation, fresh DMEM growth media were added and cells were incubated for 3 hr. After washing with PBS buffer, cells were pre-extracted in 0.2% Triton X-100 for 2 min and fixed with 4% paraformaldehyde for 20 min. Primary antibodies, mouse monoclonal flag antibody (Sigma, Cat#: F1804) or rabbit polyclonal WRN antibody (Novus Bio, Cat#: NB100-471) were diluted in blocking buffer and incubated for 1 hr followed by washing with PBS buffer. Secondary antibodies, goat anti-mouse Alexa 488 (Thermo Fisher Scientific, Cat# A-11001) or goat anti-rabbit Alexa 488 (Thermo Fisher Scientific, Cat# A-11034) were applied for 30 min. Nuclear staining was performed with DAPI (Thermo Fisher Scientific) in PBS buffer for 20 min. The fluorescent images were visualized and captured by fluorescence microscope (Nikon Eclipse 80i).
 
-## DNA fiber assay
+### DNA fiber assay
 
 WRN-/- HFs stably expressing myc vector control, myc-wild type WRN, myc-K577A WRN, myc-K577A WRN and flag-K274A WRNIP1, or myc-E84A, K577A-WRN and flag-K274A WRNIP1 were treated with siRNA. After 48 hr incubation, cells were pulse-labeled with 25 µM IdU (Sigma) for 20 min. Cells were then washed with PBS buffer twice and irradiated with UVC (10 J/m2). After UV irradiation, cells were labeled with 250 µM CldU for 20 min. DNA fibers were spread on glass slides, and slides were incubated in 2.5 M HCl for 90 min and then washed with PBS buffer. The slides were incubated in blocking buffer (5% BSA in PBS buffer) for 2 hr. Primary antibodies, rat anti-BrdU antibody (Abcam Cat#: Ab6326) and mouse anti-BrdU antibody (BD Bioscience Cat#: 347580) were diluted in blocking buffer and incubated for 1 hr followed by washing with PBS buffer. Secondary antibodies, goat anti-rat Alexa 594 (Thermo Fisher Scientific, Cat# A-11007) and goat anti-mouse Alexa 488 (Thermo Fisher Scientific, Cat# A-11001) were applied for 30 min and slides were mounted with antifade gold mounting media (Invitrogen). Fibers were analyzed by Nikon Eclipse fluorescence microscope.
 
-## Big blue transgenic mouse cell line and siRNA knockdown
+### Big blue transgenic mouse cell line and siRNA knockdown
 
 The big blue transgenic mouse embryonic fibroblasts (BBMEFs) were grown in DMEM medium containing 10% FBS (GenDEPOT) and antibiotics. Duplex siRNA for mouse WRNIP1 was purchased from Santa Cruz Biotechnology. The efficiency of its knockdown was verified by western blot analysis (Figure 1—figure supplement 1). For the cII mutation assay, cells were plated on 10 cm plates at 50% confluence and 500 pmoles of duplex siRNAs were transfected using 50 μl of iMfectin transfection reagent (GenDEPOT) following the manufacturer’s instructions.
 
-## Stable expression of myc-wild type WRN, myc-E84A WRN, myc-K577A WRN, myc-E84A,K577A WRN or flag-wild type WRNIP1, flag-K274A WRNIP1 or combinations of these mutant proteins in WRN-/- HFs or BBMEFs
+### Stable expression of myc-wild type WRN, myc-E84A WRN, myc-K577A WRN, myc-E84A,K577A WRN or flag-wild type WRNIP1, flag-K274A WRNIP1 or combinations of these mutant proteins in WRN-/- HFs or BBMEFs
 
 Plasmids containing myc-wild type-WRN, myc-E84A-WRN, myc-K577A-WRN or myc-E84A, K577A-WRN were transfected into WRN-/- (AG11395) HFs or BBMEFs by iMfectin transfection reagent (GenDEPOT). After 24 hr incubation, 2 μg/mL of puromycin (Thermo Fisher Scientific) were added to the culture media. After 3 days of incubation, cells were washed with PBS buffer and were continuously cultured with the media containing 1 μg/mL of puromycin for 2 weeks. Plasmids containing flag-wild type-WRN or flag-K274A-WRNIP1 were transfected into normal human fibroblasts (GM637) or BBMEFs. After 24 hr incubation, 50 μg/mL of zeocin (Thermo Fisher Scientific) were added to the culture media. After 3 days of incubation, cells were washed with PBS buffer and were continuously cultured with the media containing 25 μg/mL of zeocin for 2 weeks. For co-expression of WRN mutants and flag-K274A-WRNIP1, plasmids containing flag-K274A-WRNIP1 were transfected in WRN-/- HFs or BBMEFs stably expressing myc-E84A-WRN, myc-K577A-WRN, or myc-E84A,K577A-WRN by iMfectin transfection reagent. Cells were continuously cultured with the media containing 1 μg/mL of puromycin and 25 μg/mL of zeocin. Protein expressions were verified by western blot analysis (Figure 1—figure supplement 1).
 
-## UV irradiation, photoreactivation, and cII mutational assays in BBMEFs
+### UV irradiation, photoreactivation, and cII mutational assays in BBMEFs
 
 48 hr after siRNA knockdown, cells were washed with HBSS buffer (Invitrogen) and irradiated at 5 J/m2 with UVC light, followed by photoreactivation for 3 hr at room temperature as previously described (Yoon et al., 2009; Yoon et al., 2010b). Fresh DMEM growth medium was then added and cells were incubated for 24 hr. After the 24 hr incubation, the second siRNA transfection was carried out to maintain the siRNA knockdown of the target gene(s). Cells were incubated for an additional 3 days to allow for mutation fixation. For Polθ inhibition, 24 hr after siRNA treatment, cells were treated with 20 μM ART558 (Med Chem Express) for 16 hr. Then, cells were washed with HBSS buffer (Invitrogen) and irradiated at 5 J/m2 with UVC light followed by photoreactivation. Fresh DMEM growth containing 20 μM ART558 was then added and cells were incubated for 24 hr. Following that, the second siRNA transfection was carried out to maintain the siRNA knockdown. Cells were incubated for an additional 3 days with DMEM growth media containing 20 μM ART558. The genomic DNA was isolated using the genomic DNA isolation kit (QIAGEN). The LIZ shuttle vector was rescued from the genomic DNA by mixing DNA aliquots and transpack packaging extract (Stratagene), and the cII assay was carried out as previously described (Yoon et al., 2009; Yoon et al., 2010b). The mutation frequency was calculated by dividing the number of mutant plaques by the number of total plaques. For mutation analysis, the sequence of PCR products of the cII gene from the mutant plaques was analyzed as described previously (Yoon et al., 2009; Yoon et al., 2010b).

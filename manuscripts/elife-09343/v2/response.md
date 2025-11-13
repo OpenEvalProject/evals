@@ -75,9 +75,7 @@ In the revised version of the manuscript, all claims about significant findings 
 
 We do not observe a bias towards DMR detection in mCG-rich regions. As shown in the manuscript Figure 2A, most PSI DMRs occur in the CHH context, thus indicating that the DMR detection is not biased towards the CG context.
 
-We agree that the identification of DMPs can be biased towards the CG context (Author response image 1). However, comparison of the proportion of significantly differentially methylated cytosines located within the identified DMRs did not reveal an enrichment of DMPs in the CG context, suggesting that the identification of DMRs is unlikely to be biased towards the CG context.10.7554/eLife.09343.036Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.09343.036
-
-DOI: http://dx.doi.org/10.7554/eLife.09343.036
+We agree that the identification of DMPs can be biased towards the CG context (Author response image 1). However, comparison of the proportion of significantly differentially methylated cytosines located within the identified DMRs did not reveal an enrichment of DMPs in the CG context, suggesting that the identification of DMRs is unlikely to be biased towards the CG context.10.7554/eLife.09343.036Author response image 1.
 
 More importantly: why are the thresholds for DMR detection in the root and in the shoot different from each other (FDR<0.01 vs. FDR<0.05)? Could the lower threshold in the shoot explain why more DMRs are found in this tissue, which is not the primary Pi sensing organ?
 

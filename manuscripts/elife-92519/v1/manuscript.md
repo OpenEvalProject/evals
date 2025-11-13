@@ -15,17 +15,17 @@
 
 ### Affiliations
 
-1. https://ror.org/05ggc9x40 Univ Paris Est Creteil, INSERM, IMRB Creteil France
-2. https://ror.org/05f82e368 Paris Cité University, Imagine Institute, Laboratory of Inflammatory Responses and Transcriptomic Networks in Diseases, Atip-Avenir Team, INSERM UMR 1163 Paris France
-3. https://ror.org/05rq3rb55 Labtech Single-Cell@Imagine, Imagine Institute, INSERM UMR 1163 Paris France
-4. https://ror.org/053p5te48 Bioinformatics Core Facility, Institut Imagine-Structure Fédérative de Recherche Necker, INSERM U1163 Paris France
-5. https://ror.org/05f82e368 INSERM US24/CNRS UAR3633, Paris Cité University Paris France
+1. Univ Paris Est Creteil, INSERM, IMRB Creteil France ([ROR:05ggc9x40](https://ror.org/05ggc9x40))
+2. Paris Cité University, Imagine Institute, Laboratory of Inflammatory Responses and Transcriptomic Networks in Diseases, Atip-Avenir Team, INSERM UMR 1163 Paris France ([ROR:05f82e368](https://ror.org/05f82e368))
+3. Labtech Single-Cell@Imagine, Imagine Institute, INSERM UMR 1163 Paris France ([ROR:05rq3rb55](https://ror.org/05rq3rb55))
+4. Bioinformatics Core Facility, Institut Imagine-Structure Fédérative de Recherche Necker, INSERM U1163 Paris France ([ROR:053p5te48](https://ror.org/053p5te48))
+5. INSERM US24/CNRS UAR3633, Paris Cité University Paris France ([ROR:05f82e368](https://ror.org/05f82e368))
 
 † Corresponding author
 
 ## Abstract
 
-Bone regeneration is mediated by skeletal stem/progenitor cells (SSPCs) that are mainly recruited from the periosteum after bone injury. The composition of the periosteum and the steps of SSPC activation and differentiation remain poorly understood. Here, we generated a single-nucleus atlas of the periosteum at steady state and of the fracture site during the early stages of bone repair ( https://fracture-repair-atlas.cells.ucsc.edu ). We identified periosteal SSPCs expressing stemness markers ( Pi16 and Ly6a /SCA1) and responding to fracture by adopting an injury-induced fibrogenic cell (IIFC) fate, prior to undergoing osteogenesis or chondrogenesis. We identified distinct gene cores associated with IIFCs and their engagement into osteogenesis and chondrogenesis involving Notch, Wnt, and the circadian clock signaling, respectively. Finally, we show that IIFCs are the main source of paracrine signals in the fracture environment, suggesting a crucial paracrine role of this transient IIFC population during fracture healing. Overall, our study provides a complete temporal topography of the early stages of fracture healing and the dynamic response of periosteal SSPCs to injury, redefining our knowledge of bone regeneration.
+Bone regeneration is mediated by skeletal stem/progenitor cells (SSPCs) that are mainly recruited from the periosteum after bone injury. The composition of the periosteum and the steps of SSPC activation and differentiation remain poorly understood. Here, we generated a single-nucleus atlas of the periosteum at steady state and of the fracture site during the early stages of bone repair (https://fracture-repair-atlas.cells.ucsc.edu). We identified periosteal SSPCs expressing stemness markers (Pi16 and Ly6a/SCA1) and responding to fracture by adopting an injury-induced fibrogenic cell (IIFC) fate, prior to undergoing osteogenesis or chondrogenesis. We identified distinct gene cores associated with IIFCs and their engagement into osteogenesis and chondrogenesis involving Notch, Wnt, and the circadian clock signaling, respectively. Finally, we show that IIFCs are the main source of paracrine signals in the fracture environment, suggesting a crucial paracrine role of this transient IIFC population during fracture healing. Overall, our study provides a complete temporal topography of the early stages of fracture healing and the dynamic response of periosteal SSPCs to injury, redefining our knowledge of bone regeneration.
 
 ## Introduction
 
@@ -35,33 +35,113 @@ The periosteum, an heterogeneous tissue located on the outer surface of bones, i
 
 ## Results
 
-## Heterogeneity of the periosteum at steady state
+### Heterogeneity of the periosteum at steady state
 
 To investigate the heterogeneity of the periosteum at steady state, we performed snRNAseq of the periosteum of wild-type mice (Figure 1A and B). Single-nucleus transcriptomics was previously shown to provide results equivalent to single-cell transcriptomics, but with better cell type representation and reduced digestion-induced stress response (Machado et al., 2021; Selewa et al., 2020; Ding et al., 2020; Wen et al., 2022). After filtering, we obtained 1189 nuclei, corresponding to eight cell populations: SSPCs (expressing Pi16), fibroblasts (expressing Pdgfra), osteogenic cells (expressing Runx2), Schwann cells (expressing Mpz), pericytes/smooth muscle cells (SMCs, expressing Tagln), immune cells (expressing Ptprc), adipocytes (expressing Lpl), and endothelial cells (ECs, expressing Pecam1) (Figure 1C and D, Figure 1—figure supplement 1A). We performed in-depth analyses of the SSPC, fibroblast, and osteogenic cell populations. Subset analyses of clusters 0–5 identified five distinct SSPC/fibroblast populations expressing Pdgfra and Prrx1: Pi16+ Ly6a (SCA1) + cells (cluster 0), Csmd1+ cells (cluster 1), Hsd11b1+ cells (cluster 2), Cldn1+ cells (cluster 3), and Luzp2+ cells (cluster 4) (Figure 2A and B). Cluster 0 is the only cell cluster containing cells expressing Pi16 and stemness markers including Ly6a (SCA1), Dpp4, and Cd34 (Figure 2C and D). CytoTrace scoring identified Pi16+ cells as the population in the most undifferentiated state (Figure 2E). We performed in vitro CFU assays with sorted GFP+SCA1+ and GFP+SCA1- cells isolated from the periosteum of Prrx1Cre; R26mTmG mice, as Prrx1 labels all SSPCs contributing to the callus formation including Pi16+ cells (Figure 2D; Duchamp de Lageneste et al., 2018). Prrx1-GFP+ SCA1+ cells showed higher CFU potential compared to GFP+SCA1- cells, confirming their stem/progenitor property (Figure 2F and G). Then, we grafted Prrx1-GFP+ SCA1+ and Prrx1-GFP+ SCA1- periosteal cells at the fracture site of wild-type mice. Only GFP+SCA1+ cells formed cartilage after fracture indicating that GFP+SCA1+ cells encompass periosteal SSPCs with osteochondrogenic potential (Figure 2H). We explored the expression of other known markers of periosteal SSPCs, including Ctsk, Acta2 (αSMA), Gli1, and Mx1, but no marker was fully specific to one cell cluster (Figure 2—figure supplement 1; Duchamp de Lageneste et al., 2018; Jeffery et al., 2022; Debnath et al., 2018; Matthews et al., 2021; Ortinau et al., 2019; Tournaire et al., 2020; Gao et al., 2019; Chan et al., 2015; He et al., 2017; Böhm et al., 2019).
 
-## The fracture repair atlas
+![Figure 1.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig1-v1.jpg)
+
+**Figure 1.:** (A) Experimental design. Nuclei were extracted from the periosteum of uninjured tibia and processed for single-nucleus RNAseq. (B) Sorting strategy of nuclei stained with Sytox-7AAD for snRNAseq. Sorted nuclei are delimited by a red box. (C) UMAP of color-coded clustering of the uninjured periosteum dataset. Eight populations are identified and delimited by black dashed lines. (D) Violin plots of key marker genes of the different cell populations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig1-figsupp1-v1.jpg)
+
+![Figure 2.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig2-v1.jpg)
+
+**Figure 2.:** (A) UMAP of color-coded clustering of the subset of SSPCs/fibroblasts. (B) Feature plots of Prrx1 and Pdgfra in the subset of SSPCs/fibroblasts. (C) Feature plots of key marker genes of the different cell populations. (D) Dot plot of the stemness markers Pi16, Ly6a (SCA1), Cd34, and Dpp4. (E) Violin and feature plots of CytoTrace scoring in the subset of SSPCs/fibroblasts, showing that SCA1 expressing SSPCs (cluster 0) are the less differentiated cells in the dataset. (F) Experimental design: GFP+ SCA1+ and GFP+ SCA1- were isolated from uninjured tibia of Prrx1Cre; R26mTmG mice and used for in vitro CFU assays or grafted at the fracture site of wild-type mice. (G) In vitro CFU assay of murine periosteal Prrx1-GFP+ SCA1+ and Prrx1-GFP+ SCA1- cells (n = 5 biological replicates from 2 distinct experiments). (H) High magnification of SOX9 immunofluorescence of callus section 14 days post-fracture showing that GFP+SCA1+ cells contribute to the callus (white arrowheads) while GFP+ SCA1- cells are not contributing (n = 3 per group).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Feature plots of known markers of SSPCs in the SSPC/fibroblast subset of the periosteum at steady state.
+
+### The fracture repair atlas
 
 To investigate the periosteal response to bone fracture, we collected injured periosteum with hematoma /callus at days 3, 5, and 7 post-fracture, extracted the nuclei and processed them for snRNAseq (Figure 3A). We combined the datasets with the uninjured periosteum from Figure 1 and obtained a total of 6213 nuclei after filtering. The combined dataset was composed of 25 clusters corresponding to 11 cell populations: SSPCs (expressing Pi16), IIFCs (expressing ECM-related genes including Postn), osteoblasts (expressing Ibsp), chondrocytes (expressing Col2a1), osteoclasts (expressing Ctsk), immune cells (expressing Ptprc), Schwann cells (expressing Mpz), endothelial cells (expressing Pecam1), pericytes (expressing Rgs5), SMCs (expressing Tagln), and adipocytes (expressing Lpl) (Figure 3B and C, Figure 3—figure supplements 1 and 2). Next, we observed the dynamics of the cell populations in response to bone fracture (Figure 3D, Figure 3—figure supplement 1B). After injury, the percentage of SSPCs was strongly decreased and the percentage of IIFCs progressively increased (Figure 3D and E). The percentage of chondrocytes and osteoblasts increased from day 3 post-fracture. Immune cells were drastically increased at day 3 after injury, before progressively decreasing at days 5 and 7 post-fracture (Figure 3E).
 
-## Spatial organization of the fracture callus
+![Figure 3.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig3-v1.jpg)
+
+**Figure 3.:** (A) Experimental design. Nuclei were extracted from the periosteum of uninjured tibia and from the injured periosteum and hematoma/callus at days 3, 5, and 7 post-tibial fracture of wild-type mice and processed for single-nucleus RNAseq. (B) UMAP of color-coded clustering of the integration of uninjured, day 3, 5, and 7 datasets. Eleven populations are identified and delimited by black dashed lines. (C) Violin plots of key marker genes of the different cell populations. (D) UMAP of the combined dataset separated by time point. (E) Percentage of cells in skeletal stem/progenitor cell (SSPC), injury-induced fibrogenic cell, osteoblast, chondrocyte, and immune cell clusters in uninjured, day 3, 5, and 7 datasets.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Feature plots of the lineage score of the different cell populations in the combined fracture datasets. (B) Percentage of cells in each cell population per time point.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig3-figsupp2-v1.jpg)
+
+### Spatial organization of the fracture callus
 
 To evaluate the spatial distribution of the main cell populations identified in the snRNAseq datasets, we performed in situ immunofluorescence and RNAscope experiments on uninjured periosteum and days 3, 5, and 7 post-fracture hematoma/callus tissues. In the uninjured periosteum, we detected Pi16-expressing SSPCs, Postn-expressing cells, OSX+ osteoblasts, PECAM1+ endothelial cells, and CD45+ immune cells (Figure 4A and B). Pi16-expressing SSPCs were located within the fibrous layer, while Postn-expressing cells were found in the cambium layer and corresponded to Runx2-expressing osteogenic cells (Figure 4—figure supplement 1A–C). Although Postn expression was weak in uninjured periosteum, Postn expression was strongly increased in response to fracture, specifically in IIFCs (Figure 4—figure supplement 1D and E). At day 3 post-fracture, we observed periosteal thickening and the formation of a fibrous hematoma (Figure 4C). We did not detect Pi16-expressing SPPCs, consistent with the absence of cells expressing SSPC markers in the day 3 snRNAseq dataset compared to uninjured periosteum (Figure 4—figure supplement 2). POSTN+ IIFCs and immune cells were the main populations present in hematoma and activated periosteum. Few IIFCs in the activated periosteum expressed SOX9 and OSX and only the periosteum was vascularized (Figure 4D). At days 5 and 7 post-fracture, the callus was formed mainly of fibrotic tissue, new bone formed on the periosteal surface at the periphery of the callus and small cartilage islets were detected in the center of the callus near the periosteal surface (Figure 4E–H). The fibrotic tissue contained mostly IIFCs, as well as immune and endothelial cells. We also observed SOX9+ and OSX+ cells in the fibrotic tissue, while the cartilage was solely composed of SOX9+ chondrocytes. OSX+ osteoblasts were the main cell population detected in the new bone at the periosteal surface. We also observed a progressive reduction of POSTN+ cells and immune cells from days 5 to 7 and increased vascularization in the newly formed bone (Figure 4E–H).
 
-## Periosteal SSPCs differentiate via an injury-induced fibrogenic stage
+![Figure 4.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig4-v1.jpg)
+
+**Figure 4.:** (A) Picrosirius staining of the uninjured periosteum. (B) Immunofluorescence and RNAscope on adjacent sections show the presence of SSPCs (Pi16-expressing cells) in the fibrous layer (fl), Postn-expressing cells in the cambium layer (cl), OSX+ osteoblasts, immune cells (CD45+), and endothelial cells (PECAM1+) in the periosteum (n = 3 per group). (C) Safranin’O staining of longitudinal callus sections at day 3 post-tibial fracture. (D) Immunofluorescence and RNAscope on adjacent sections show absence of skeletal stem/progenitor cells (SSPCs) (Pi16+), and presence of IIFCs (Postn+) and immune cells (CD45+) in the activated periosteum and hematoma at day 3 post-fracture. Chondrocytes (SOX9+, white arrowhead), osteoblasts (OSX+,white arrowhead), immune cells (CD45+), and endothelial cells (PECAM1+) are detected in the activated periosteum (n = 3 per group). (E) Safranin’O staining of longitudinal callus sections at day 5 post-tibial fracture. (F) Immunofluorescence and RNAscope on adjacent sections show injury-induced fibrogenic cells (IIFCs) (Postn+), chondrocytes (SOX9+, white arrowhead), osteoblasts (OSX+, white arrowhead), immune cells (CD45+), and endothelial cells (PECAM1+) in the fibrosis, chondrocytes (SOX9+) in the cartilage and osteoblasts (OSX+), immune cells (CD45+,white arrowhead), and endothelial cells (PECAM1+) in the new bone (n = 3 per group). (G) Safranin’O staining of longitudinal callus sections at day 7 post-tibial fracture. (H) Immunofluorescence and RNAscope on adjacent sections show IIFCs (Postn+), chondrocytes (SOX9+, white arrowhead), osteoblasts (OSX+, white arrowhead), immune cells (CD45+), and endothelial cells (PECAM1+) in the fibrosis, chondrocytes (SOX9+) in the cartilage and osteoblasts (OSX+), immune cells (CD45+, white arrowhead), and endothelial cells (PECAM1+) in the new bone (n = 3 per group). Scale bars: (A–B–E) 1 mm, (B–D–F) 100 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) RNAscope experiment showing the presence of Postn expressing cells in the inner cambium layer (cambium l.) of the periosteum and Pi16-expressing cells in the fibrous layer (fibrous l.). (B) Feature plots of Postn and Runx2 expression in the uninjured periosteum. (C) Scatter plot of Runx2 and Postn expression in the uninjured periosteum dataset showing that Postn is mostly expressed by cells expressing Runx2. (D) Feature plot of Postn expression in the subset of SSPCs, injury-induced fibrogenic cells (IIFCs), osteogenic and chondrogenic cells from Figure 5B. (E) Violin plot of Postn expression per time point.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Feature plot of SSPC lineage score in the subset of SSPCs, injury-induced fibrogenic cells (IIFCs), osteoblasts, and chondrocytes separated by time point from Figure 5B. (B) Violin plot of SSPC lineage score by time point.
+
+### Periosteal SSPCs differentiate via an injury-induced fibrogenic stage
 
 To understand the differentiation and fate of pSSPCs after fracture, we analyzed the subset of SSPC, IIFC, chondrocyte, and osteoblast clusters from the combined fracture dataset (Figure 5A, Figure 5—figure supplement 1). We performed pseudotime analyses to determine the differentiation trajectories, defining the starting point in the pSSPC population, as it corresponds to the uninjured and undifferentiated cells. We identified that pSSPCs differentiate in three stages starting from the pSSPC population (expressing Ly6a, Pi16, and Cd34), predominant in the uninjured dataset (Figure 5B and C). Periosteal SSPCs then transition through an injury-induced fibrogenic stage predominant at days 3 and 5 post-injury. In this intermediate fibrogenic stage, IIFCs express high levels of extracellular matrix genes, such as Postn, Aspn, and collagens. Subsequently, IIFCs differentiate into chondrocytes (expressing Acan, Col2a1, and Sox9) or osteoblasts (expressing Sp7, Alpl, and Ibsp), both predominant at days 5 and 7 (Figure 5B and C). We observed a parallel between pseudotime and the time points of the dataset, confirming that the differentiation trajectory follows the timing of cell differentiation (Figure 5D). These results show that pSSPCs respond to fracture via an injury-induced fibrogenic stage common to chondrogenesis and osteogenesis and independent of their final fate (Figure 5E). To visualize the transition of IIFCs toward chondrocytes and osteoblasts in the fracture callus, we performed co-immunofluorescence on day 5 post-fracture hematoma/callus. We observed a progressive increase in SOX9 and OSX signals in IIFCs at the fibrosis-to-cartilage and fibrosis-to-bone transition zones, respectively (Figure 6A). To functionally validate the steps of pSSPC activation, we isolated SCA1+ GFP+ pSSPCs from Prrx1Cre; R26mTmG mice, excluding endothelial cells (SCA1+GFP-) and pericytes (SCA1-GFP+), and grafted them at the fracture site of wild-type hosts (Figure 6B, Figure 6—figure supplement 1). We observed that grafted GFP+ pSSPCs formed POSTN+ IIFCs at day 5 post-fracture (Figure 6B). Then, we isolated IIFCs, which correspond to GFP+ CD146- cells from the day 3 post-fracture callus of Prrx1Cre; R26mTmG mice without contamination by pericytes (GFP+CD146+ cells) (Figure 6C, Figure 6—figure supplement 1). We grafted the GFP+ IIFCs at the fracture site of wild-type hosts and showed that grafted cells formed bone and cartilage at day 14 post-fracture. These results confirmed that pSSPCs first become IIFCs that differentiate into osteoblasts and chondrocytes.
 
-## Characterization of injury-induced fibrogenic cells
+![Figure 5.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig5-v1.jpg)
+
+**Figure 5.:** (A) SSPCs, injury-induced fibrogenic cells (IIFCs), chondrocytes, and osteoblasts from integrated uninjured, day 3, 5, and 7 post-fracture samples were extracted for a subset analysis. (B) UMAP of color-coded clustering (left), color-coded sampling (middle), and monocle pseudotime trajectory (right) of the subset dataset. The four populations are delimited by black dashed lines. (C) (Top) Feature plots of the stem/progenitor, fibrogenic, chondrogenic, and osteogenic lineage scores. (Middle) Scatter plot of the lineage scores along pseudotime. (Bottom) Violin plot of the lineage scores per time point. (D) Distribution of the cells along the pseudotime per time point. (E) Schematic representation of the differentiation trajectories of pSSPCs after fracture.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig5-figsupp1-v1.jpg)
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig6-v1.jpg)
+
+**Figure 6.:** (A) (Top) Representative Safranin’O staining on longitudinal sections of the hematoma/callus at day 5 post-fracture. The callus is composed of fibrosis, cartilage (red dashed line), and bone (green dashed line). (Middle, box 1) Immunofluorescence on adjacent section shows decreased expression of POSTN (green) and increased expression of SOX9 (red) in the fibrosis-to-cartilage transition zone. (Bottom, box 2) Immunofluorescence on adjacent section shows decreased expression of POSTN (green) and increased expression of OSX (red) in the fibrosis-to-bone transition zone (n = 3 per group). (B) Experimental design: GFP+ SCA1+ SSPCs were isolated from uninjured tibia of Prrx1Cre; R26mTmG mice and grafted at the fracture site of wild-type mice. Safranin’O staining of callus sections at day 5 post-fracture and high magnification of POSTN immunofluorescence of adjacent section showing that grafted GFP+ SSPCs contribute to the callus and differentiate into POSTN+ IIFCS (white arrowheads) (n = 4 per group). (C) Experimental design: GFP+ IIFCs from periosteum and hematoma at day 3 post-fracture tibia were isolated from Prrx1Cre; R26mTmG mice and grafted at the fracture site of wild-type mice. Safranin’O of callus sections at day 14 post-fracture and high magnification of OSX and SOX9 immunofluorescence of adjacent sections showing that grafted GFP+ injury-induced fibrogenic cells (IIFCs) contribute to the callus and differentiate into OSX+ osteoblasts (box 3, white arrowheads) and SOX9+ chondrocytes (box 4, white arrowheads) (n = 4 per group). Scale bars: low magnification: (A) 500 µm; (B, C) 1 mm. High magnification: 100 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) UMAP of the clustering of the uninjured periosteum. (B) Feature plots of Prrx1 and Ly6a expression in the uninjured dataset. (C) UMAP of the clustering of the day 3 post-fracture periosteum and hematoma. (D) Feature plots of Prrx1 and Mcam (CD146) expression in the day 3 post-fracture periosteum and hematoma dataset. (E) Relative expression of cell population markers by GFP+ SCA1+ SSPCs from uninjured periosteum (n = 4) and GFP+ CD146- IIFCs from day 3 post-fracture periosteum and hematoma (n = 3).
+
+### Characterization of injury-induced fibrogenic cells
 
 We performed in-depth analyses of the newly identified IIFC population. Gene Ontology (GO) analyses of upregulated genes in IIFCs (clusters 2–6) showed enrichment in GOs related to tissue development, extracellular matrix (ECM), and ossification (Figure 7A). We identified several ECM-related genes specifically upregulated in IIFCs, including collagens (Col3a1, Col5a1, Col8a1, Col12a1), Postn, and Aspn (Figure 7B and C, Figure 7—figure supplement 1). We also identified GO terms related to cell signaling, migration, differentiation, and proliferation, classic hallmarks of injury response. Only a small subset of IIFCs undergo apoptosis, further supporting that IIFCs are maintained in the fracture environment giving rise to osteoblasts and chondrocytes (Figure 7—figure supplement 2). To further understand the mechanisms regulating SSPC activation and fate after injury, we performed gene regulatory network (GRN) analyses on the subset of SSPCs, IIFCs, osteoblasts, and chondrocytes using SCENIC package (Single Cell rEgulatory Network Inference and Clustering) (Aibar et al., 2017). We identified 280 activated regulons (transcription factor/TF and their target genes) in the subset dataset. We performed GRN-based tSNE clustering and identified SSPC, IIFC, chondrocyte, and osteoblast populations (Figure 7D and E, Figure 7—figure supplement 3A). Fibroblasts from uninjured periosteum (Hsd11b1+, Cldn1+, and Luzp2+ cells and corresponding to cluster 10 of Figure 5B) clustered separately from the other populations, suggesting the absence of their contribution to bone healing. Analysis of the number of activated regulons per cell indicated that SSPCs are the most stable cell population (higher number of activated regulons), while IIFCs are the less stable population, confirming their transient state (Figure 7F). We then investigated cell population-specific regulons. SSPCs showed activated regulons linked to stemness, including Hoxa10 (16g), Klf4 (346g), Pitx1 (10g), and Mta3 (228g) (Leclerc et al., 2023; Nemec et al., 2017; Takahashi and Yamanaka, 2006), and immune response, including Stat6 (30g), Fiz1 (72g), and Stat5b (18g) (Chen et al., 2011; Kollmann et al., 2021; Tsuruyama et al., 2010; Figure 7G). Osteoblasts and chondrocytes display cell-specific activated regulons including Sp7 (18g) and Sox9 (77g), respectively. We identified 21 regulons that we named fibro-core and that were upregulated specifically in the IIFC population (Figure 7H and I, Supplementary file 2). Several fibro-core regulons, such as Meis1 (1556g), Pbx1 (11g), Six1 (20g), and Pbx3 (188g), are known to be involved in cell differentiation during tissue development and repair (Le Grand et al., 2012; Linares et al., 2015; Rottkamp et al., 2008; Wang et al., 2023). Reactome pathway analysis showed that the most significant terms linked to IIFC-specific TFs are related to Notch signaling (Figure 7J, Supplementary file 3). We confirmed that Notch signaling is increased in the IIFC stage (Figure 7J), suggesting its involvement in the fibrogenic phase of bone repair.
 
-## Distinct gene cores regulate the engagement of IIFCs in chondrogenesis and osteogenesis
+![Figure 7.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig7-v1.jpg)
+
+**Figure 7.:** (A) Gene Ontology analyses of upregulated genes in injury-induced fibrogenic cells (IIFCs) (clusters 2–6 of UMAP clustering from Figure 5). (B) Dot plot of extracellular matrix (ECM) genes in UMAP clustering from Figure 5. (C) Feature plot per cluster and scatter plot along pseudotime of the mean expression of ECM genes. (D) Gene regulatory network (GRN)-based tSNE clustering of the subset of skeletal stem/progenitor cells (SSPCs), IIFCs, chondrocytes, and osteoblasts. (E) Activation of Mta3, Six1, Sox9, and Sp7 regulons in SSPCs, IIFCs, chondrocytes, and osteoblasts. Blue dots mark cells with active regulon. (F) Number of regulons activated per cell in the SSPC, IIFC, osteoblast (Ob), and chondrocyte (Ch) populations. Statistical differences were calculated using one-way ANOVA. ***p-value<0.001. (G) Heatmap of activated regulons in SSPC, IIFC, osteoblast (osteob), and chondrocyte (chondro) populations. (H) Scatter plot of the activity of the combined fibrogenic regulons along monocle pseudotime from Figure 5. (I) Reactome pathway analyses of the fibrogenic regulons shows that the three most significant terms are related to Notch signaling (blue). (J) Feature plot in Seurat clustering and scatter plot along monocle pseudotime of the Notch signaling score.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Violin plot of the fibrogenic score in the integrated dataset. (B) Feature plots of Aspn, Col3a1, Col5a1, and Col8a1 in the subset of skeletal stem/progenitor cells (SSPCs), IIFCs, osteoblasts, and chondrocytes.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Feature plot of the apoptosis score in the subset of skeletal stem/progenitor cells (SSPCs), IIFCs, osteoblast, and chondrocytes. (B) Violin plot of the apoptosis score separated by time points. (C) Immunofluorescence of cleaved caspase 3 in callus fibrosis at days 3, 5, and 7 post-fracture. (D) Percentage of cleaved caspase 3 positive cells in the fibrosis callus fibrosis at day 3 (n = 3), day 5 (n = 3), and day 7 post-fracture (n = 2).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig7-figsupp3-v1.jpg)
+
+### Distinct gene cores regulate the engagement of IIFCs in chondrogenesis and osteogenesis
 
 We sought to identify the drivers of the transition of IIFCs to chondrocytes or osteoblasts. We identified two cores of regulons involved in chondrogenic differentiation. Chondro-core 1 is composed of 9 regulons specific to the transition of IIFCs to chondrocytes, including Maf (17g), Arntl (1198g), and Nfatc2 (37g), and chondro-core 2, composed of 14 regulons specific to differentiated chondrocytes (Figure 8A, Figure 8—figure supplement 1A). Chondro-core 1 regulons are known to be regulators of the circadian clock (Npas2, Arntl) or of the T/B-cell receptor cellular response (Bach2, Nfact2, Nfkb1). STRING network analysis showed that TFs from the chondro-core 1 are interacting with each other and are at the center of the interactions between the chondro-core 2 TFs, including Sox9, Trp53, and Mef2c (Figure 8B, Figure 8—figure supplement 1B). We observed that chondro-core 1 is only transiently activated when IIFCs are engaging in chondrogenesis and precedes the activation of chondro-core 2 (Figure 8C and D). Chondro-core 1 activity was high in early differentiated chondrocytes (low Acan expression) and progressively reduced as chondrocytes underwent differentiation, while chondro-core 2 activity was gradually increased as chondrocytes differentiate (Figure 8D). This suggests that transient activation of the chondro-core 1 allows the transition of IIFCs in chondrocytes. Then, we investigated the osteogenic commitment of IIFCs. We identified eight regulons forming the osteo-core and activated in IIFCs transitioning to osteoblasts, such as Tcf7 (23g), Bcl11b (14g), and Tbx2 (36g) (Figure 8E, Figure 8—figure supplement 1C). STRING network analysis showed that the genes with the strongest interaction with the osteo-core TFs are mostly related to Wnt signaling (Figure 8F). This reveals the role of Wnt signaling in this transition from early fibrogenic activation of pSSPCs to osteogenic differentiation during bone repair. We calculated the osteo-core activity and observed that it is gradually increased and maintained in osteogenic cells, showing that the osteo-core is required for the transition and maturation of IIFC into osteoblasts (Figure 8G and H). Overall, we identified distinct cores of regulons with distinct dynamics driving the transition of IIFCs into chondrocytes and osteoblasts.
 
-## IIFCs mediate paracrine interactions during bone repair
+![Figure 8.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig8-v1.jpg)
+
+**Figure 8.:** (A) Activation of Maf, Arntl, and Nfatc2 regulons in skeletal stem/progenitor cells (SSPCs), injury-induced fibrogenic cells (IIFCs), chondrocytes, and osteoblasts. (B) STRING interaction network of the chondro-core 1 and 2 transcription factors (blue and orange, respectively). (C) Feature plot of chondro-core 1 (top) and chondro-core 2 (bottom) activities in SSPCs, IIFCs, chondrocytes, and osteoblasts in Seurat UMAP from Figure 5. (D) Scatter plot of chondro-core 1 (top) and chondro-core 2 (bottom) activities along monocle pseudotime and Acan expression. (E) Activation of Tcf7, Bclb11b, and Tbx2 regulons in SSPCs, IIFCs, chondrocytes, and osteoblasts. (F) STRING interaction network of the osteo-core transcription factors (green) and their related genes shows that most of osteo-core related genes are involved in Wnt pathway (purple). (G) Feature plot of the osteo-core activity in SSPCs, IIFCs, chondrocytes, and osteoblasts in Seurat UMAP from Figure 5. (H) Scatter plot of osteo-core activity along monocle pseudotime and Ibsp expression.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Activity of chondro-core 1 regulons in SCENIC tSNE clustering of SSPCs, IIFCs, chondrocytes, and osteoblasts. (B) Activity of chondro-core 2 regulons in SCENIC tSNE clustering of SSPCs, IIFCs, chondrocytes, and osteoblasts. (C) Activity of osteo-core regulons in SCENIC tSNE clustering of SSPCs, IIFCs, chondrocytes, and osteoblasts.
+
+### IIFCs mediate paracrine interactions during bone repair
 
 Paracrine cell interactions are crucial drivers of tissue regeneration and stem cell activation. To identify key cell interactions during bone repair, we performed cell interaction analyses using CellChat package (Jin et al., 2021). We observed that IIFCs are one of the predominant sources of outgoing signals during bone repair and are also important receivers of signals, suggesting their central role in mediating cell interactions after fracture (Figure 9A and B). Endothelial cells were mostly receiving signaling, while chondrocytes, osteoblasts, and most immune cells exhibited reduced interactions with the other cell types in the fracture environment. IIFCs interact with all cell populations in the fracture environment, but the strongest interactions were with SSPCs and IIFCs (Figure 9—figure supplement 1A). CellChat analyses of the subset of SSPCs, IIFCs, osteoblasts, and chondrocytes confirmed that IIFCs are a major source and receiver population of paracrine signals after fracture (Figure 9—figure supplement 1B). We then analyzed the main secreted factors from IIFCs. IIFCs secreted periostin (Postn), BMPs (Bmp5), pleiotropin/PTN (Ptn), TGFβs (Tgfb2, Tgfb3), PDGFs (Pdgfc, Pdgfd), and angiopoietin-likes/ANGPTLs (Angplt2, Angplt4) (Figure 9C and D, Figure 9—figure supplement 1C). We observed differences in the dynamics of these factors as some of them peaked at day 3 post-fracture such as TGFβ, while others peak at day 5 such as BMP, POSTN, PTN, and ANGPLT (Figure 9E). We assessed the dynamics of ligand and receptor expression and observed that ligand expression was increased during the IIFC phase and specific to the fracture response (Figure 9F). Receptor expression was high in both SSPCs and IIFCs, and receptors were expressed from steady state, suggesting that SSPCs can receive signals from IIFCs. Analysis of SSPC incoming signals showed that IIFCs produce paracrine factors that can regulate SSPCs (Figure 9G), indicating that they contribute to SSPC recruitment after fracture.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig9-v1.jpg)
+
+**Figure 9.:** (A) Outgoing interaction strengths of the different cell populations of the fracture environment determined using CellChat package. (B) Comparison of incoming and outgoing interaction strengths across SSPC, IIFC, chondrogenic, and osteogenic populations. (C) Outgoing and incoming signaling from and to SSPCs, IIFCs, chondrocytes, and osteoblasts. (D) Cell–cell interactions identified between SSPCs, IIFCs, chondrocytes, and osteoblasts. (E) Violin plots of the score of BMP, TGFβ, PDGF, POSTN, PTN, and ANGPTL signaling per time point. (F) Scatter plot along pseudotime and violin plot per time point of the mean expression of the ligand and receptors involved in signaling from IIFCs. (G) Circle plot of the interactions between SSPCs, IIFCs, chondrocytes, and osteoblasts, showing that most signals received by SSPCs are coming for IIFCs. Ob: osteoblasts; Oc: osteoclasts; Ch: chondrocytes; SC: Schwann cells; Ad: adipocytes.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/92519/elife-92519-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Circle plots showing the interaction strengths between IIFCs in clusters 2 and 5 with the other cell populations. (B) (Left) Feature plot of the subset of SSPCs, IIFCs, chondrocytes and osteoblasts from Figure 5. (Right) Outgoing and incoming interaction strengths of the subset of skeletal stem/progenitor cells (SSPCs), IIFCs, chondrocytes, and osteoblasts. (C) Dot plots of the expression of the ligands (underlined) and receptors of BMP, TGFβ, PDGF, POSTN, PTN, and ANGPTL family involved in cell–cell interactions from IIFCs after fracture.
 
 ## Discussion
 
@@ -79,76 +159,219 @@ Overall, our study provides a complete dataset of the early steps of bone regene
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mice)</td>
+      <td>C57BL/6ScNj</td>
+      <td>Janvier Labs</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mice)</td>
+      <td>B6.Cg-Tg(Prrx1-cre)1Cjt/J</td>
+      <td>Jackson Laboratory</td>
+      <td>IMSR_JAX:005584</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mice)</td>
+      <td>B6.129(Cg)-Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo/J</td>
+      <td>Jackson Laboratory</td>
+      <td>IMSR_JAX:007676</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or Kit</td>
+      <td>Chromium Single Cell Next GEM 3′ Library &amp; Gel Bead Kit v.3.1</td>
+      <td>10X Genomics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or Kit</td>
+      <td>RNAscope Multiplex Fluorescent Assay V2</td>
+      <td>Bio-Techne</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal to mouse SCA1</td>
+      <td>740450, BD Biosciences</td>
+      <td>RRID:AB_2740177</td>
+      <td>Dilution: 1/200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal to mouse SOX9</td>
+      <td>ab185230, Abcam</td>
+      <td>RRID:AB_2715497</td>
+      <td>Dilution: 1/1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal to mouse Osterix/Sp7</td>
+      <td>ab22552, Abcam</td>
+      <td>RRID:AB_2194492</td>
+      <td>Dilution: 1/200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal to mouse Periostin</td>
+      <td>AF2955, R&amp;D Systems</td>
+      <td>RRID:AB_664123</td>
+      <td>Dilution: 1/400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal to mouse PECAM1</td>
+      <td>AF3628, Bio-Techne</td>
+      <td>RRID:AB_2161028</td>
+      <td>Dilution: 1/200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal to mouse CD45</td>
+      <td>552848, BD Biosciences</td>
+      <td>RRID:AB_394489</td>
+      <td>Dilution: 1/200</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat</td>
+      <td>https://github.com/satijalab/seurat; Butler et al., 2024</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>monocle3</td>
+      <td>https://github.com/cole-trapnell-lab/monocle3; Pliner et al., 2024</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CytoTrace</td>
+      <td>https://cytotrace.stanford.edu/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EnrichR</td>
+      <td>https://maayanlab.cloud/Enrichr/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SCENIC</td>
+      <td>https://github.com/aertslab/SCENIC; Aibar, 2024</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STRING v11.5 database</td>
+      <td>https://string-db.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellChat</td>
+      <td>https://github.com/sqjin/CellChat; Jin, 2024</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 C57BL/6ScNj were obtained from Janvier Labs (France). Prrx1Cre (IMSR_JAX:005584) (Logan et al., 2002) and Rosa26-mtdTomato-mEGFP (R26mTmG) (IMSR_JAX:007676) (Muzumdar et al., 2007) were obtained from Jackson Laboratory (Bar Harbor, ME). All SSPCs, including pSSPCs, are marked by GFP in Prrx1Cre; R26mTmG mice. Mice were bred in animal facilities at IMRB, Creteil, and kept in separated ventilated cages, in pathogen-controlled environment and ad libitum access to water and food. All procedures performed were approved by the Paris Est Creteil University Ethical Committee (#27176-2020091117563300, #19295-2019052015468705, #27181-202009141201846, #33818-2021110818301267, #33820-2021110819067229). Twelve-week-old males and females were mixed in experimental groups.
 
-## Tibial fracture
+### Tibial fracture
 
 Open non-stabilized tibial fractures were induced as previously described (Perrin et al., 2021). Mice were anesthetized with an intraperitoneal injection of ketamine (50 mg/mL) and Medetomidine (1 mg/kg) and received a subcutaneous injection of buprenorphine (0.1 mg/kg) for analgesia. Mice were kept on a 37°C heating pad during anesthesia. The right hindlimb was shaved and sanitized. The skin was incised to expose the tibia and osteotomy was performed in the mid-diaphysis by cutting the bone. The wound was sutured, and the mice were revived with an intraperitoneal injection of atipamezole (1 mg/kg) and received two additional analgesic injections in the 24 hr following surgery. Mice were sacrificed at 3, 5, 7, or 14 days post-fracture.
 
-## Nuclei extraction
+### Nuclei extraction
 
 Nuclei extraction protocol was adapted from Santos et al., 2021 and Martelotto, 2019, and a detailed step-by-step protocol is available (Perrin et al., 2024). We generated four datasets for this study: uninjured periosteum, periosteum, and hematoma at days 3, 5, and 7 post-tibial fracture. The uninjured and day 3 post-fracture datasets were generated in duplicates. For uninjured periosteum, tibias from four mice were dissected free of muscle and surrounding tissues. The epiphyses were cut and the bone marrow flushed. The periosteum was scraped from the cortex using dissecting Chisel (10095-12, Fine Science Tools). For days 3, 5, and 7 post-fracture, injured tibias from 4 to 9 mice were collected and the surrounding tissues were removed. The activated periosteum was scraped and collected with the hematoma. Collected tissues were minced and placed 5 min in ice-cold Nuclei Buffer (NUC101, Merck) before mechanical nuclei extraction using a glass douncer. Extraction was performed by 20 strokes of pestle A followed by 5–10 of pestle B. Nuclei suspension was filtered, centrifuged, and resuspended in RNAse-free PBS (AM9624, Thermo Fisher Scientific) with 2% bovine serum albumin (A2153, Merck) and 0.2 U/µL RNAse inhibitor (3335399001, Roche). A second step of centrifugation was performed to reduce contamination by cytoplasmic RNA. Sytox AADvanced (S10349, Thermo Fisher Scientific) was added (1/200) to label nuclei and Sytox-AAD+ nuclei were sorted using Sony SH800.
 
-## Single-nucleus RNA sequencing
+### Single-nucleus RNA sequencing
 
 The snRNA-seq libraries were generated using Chromium Single Cell Next GEM 3′ Library & Gel Bead Kit v.3.1 (10X Genomics) according to the manufacturer’s protocol. Briefly, 10,000–20,000,000 nuclei were loaded in the 10X Chromium Controller to generate single-nucleus gel-beads in emulsion. After reverse transcription, gel-beads in emulsion were disrupted. Barcoded complementary DNA was isolated and amplified by PCR. Following fragmentation, end repair, and A-tailing, sample indexes were added during index PCR. The purified libraries were sequenced on a Novaseq (Illumina) with 28 cycles of read 1, 8 cycles of i7 index, and 91 cycles of read 2. Sequencing data were processed using the Cell Ranger Count pipeline, and reads were mapped on the mm10 reference mouse genome with intronic and exonic sequences.
 
-## Filtering and clustering using Seurat
+### Filtering and clustering using Seurat
 
 Single-nucleus RNAseq analyses were performed using Seurat v4.1.0 (Stuart et al., 2019; Butler et al., 2018) and RStudio v1.4.1717. Aligned snRNAseq datasets were filtered to retain only nuclei expressing between 200 and 5000 genes and expressing less than 2% of mitochondrial genes and 1.5% of ribosomal genes. Contamination from myogenic cells was removed from the analyses. After filtering, we obtained 1378 nuclei from uninjured periosteum, 1634 from day 3 post-fracture, 2089 from day 5 post-fracture, and 1112 from day 7 post-fracture. The replicates of the uninjured dataset were integrated using Seurat. The integrated dataset was regressed on cell cycle, mitochondrial, and ribosomal content, and clustering was performed using the first 15 principal components and a resolution of 0.5. SSPC/fibroblast and osteogenic cells were isolated and reclustered using the first 10 principal components and a resolution of 0.2. Uninjured, days 3, 5, and 7 datasets were integrated using Seurat. The integrated dataset was regressed on cell cycle, mitochondrial, and ribosomal content. Clustering was performed using the first 20 principal components and a resolution of 1.3. SSPC, IIFC, chondrogenic, and osteogenic clusters from the integration were isolated to perform subset analysis. The subset was reclustered using the first 15 principal components and a resolution of 0.6.
 
-## Pseudotime analysis using monocle3
+### Pseudotime analysis using monocle3
 
 Monocle3 v1.0.0 was used for pseudotime analysis (Cao et al., 2019). Single-cell trajectories were determined using monocle3 default parameters. The starting point of the pseudotime trajectory was determined as the cells from the uninjured dataset with the highest expression of stem/progenitor marker genes (Ly6a, Cd34, Dpp4, Pi16). Pseudotime values were added in the Seurat object as metadata and used with Seurat package.
 
-## Differentiation state analysis using CytoTrace
+### Differentiation state analysis using CytoTrace
 
 To assess the level of differentiation of the cell clusters, we performed analyses using CytoTrace with the default parameters. CytoTrace scoring was plotted in violin plot and on the Seurat UMAP clustering.
 
-## GO and Reactome and analyses
+### GO and Reactome and analyses
 
 Reactome and GO analyses were performed using EnrichR (Kuleshov et al., 2016). All significant GO terms from upregulated genes in clusters 2–6 of the subset of SSPCs, IIFCs, osteoblasts, and chondrocytes were manually categorized. The five more significant terms of the Reactome analysis from the fibrogenic TFs of Figure 6 are presented in Supplementary file 3.
 
-## Single-cell regulatory network inference using SCENIC
+### Single-cell regulatory network inference using SCENIC
 
 Single-cell regulatory network inference and clustering (SCENIC) (Aibar et al., 2017) was used to infer transcription factor (TF) networks active in SSPCs, IIFCs, osteoblasts, and chondrocytes. Analysis was performed using recommended parameters using the packages SCENIC v1.3.1, AUCell v1.16.0, and RcisTarget v1.14 and the motif databases RcisTarget and GRNboost. SCENIC package was used to perform regulon-based tSNE clustering and identified population-specific regulons. Regulon activity values were added in the Seurat object as metadata and used with Seurat package for individual feature plots or lineage scores.
 
-## Cell–cell interaction using CellChat
+### Cell–cell interaction using CellChat
 
 Cell communication analysis was performed using the R package CellChat (Jin et al., 2021), with default parameters on the complete fracture combined dataset and on the subset of SSPCs, IIFCs, osteoblasts, and chondrocytes.
 
-## STRING network analyses
+### STRING network analyses
 
 To assess protein–protein interaction network, we used the STRING v11.5 database (Szklarczyk et al., 2021). To assess interaction in the chondrogenic cluster, we performed the analysis on the chondro-core 1 and chondro-core 2 TFs identified in our analysis. For osteo-core analyses, we performed the analysis with osteo-core genes and the most significant interactions.
 
-## Histology and immunofluorescence
+### Histology and immunofluorescence
 
 Mouse samples were processed as previously described (Perrin et al., 2021). Tibias were collected and fixed in 4% PFA (sc-281692, CliniSciences) for 4 to 24h hr at 4°C. Then, samples were decalcified in 19% EDTA for 10 days (EU00084, Euromedex), cryoprotected in 30% sucrose (200-301-B, Euromedex) for 24 hr, and embedded in OCT. Samples were sectioned in 10-µm-thick sections. Cryosections were defrosted and rehydrated in PBS. For Safranin O staining, sections were stained with Weigert’s solution for 5 min, rinsed in running tap water for 3 min, and stained with 0.02% Fast Green for 30 s (F7252, Merck), followed by 1% acetic acid for 30 s and Safranin O solution for 45 min (S2255, Merck). For immunofluorescence, sections were incubated 1 hr at room temperature in 5% serum, 0.25% Triton PBS before incubation overnight at 4°C with the following antibodies: rat monoclonal to mouse SCA1 (740450, RRID:AB_2740177, BD Biosciences), rabbit monoclonal to mouse SOX9 (ab185230, RRID:AB_2715497, Abcam), rabbit polyclonal to mouse Osterix/Sp7 (ab22552, RRID:AB_2194492, Abcam), goat polyclonal to mouse Periostin (AF2955, RRID:AB_664123, R&D Systems), goat polyclonal to mouse PECAM1 (AF3628, RRID:AB_2161028, Bio-Techne), and rat monoclonal to mouse CD45 (552848, RRID:AB_394489, BD Biosciences). Secondary antibody incubation was performed at room temperature for 1 hr. Slides were mounted with Fluoromount-G mounting medium with DAPI (00-4959-52, Life Technologies) and imaged using confocal microscopy (Carl Zeiss Microscopy GmbH).
 
-## RNAscope in situ hybridization
+### RNAscope in situ hybridization
 
 The expression of Pi16 and Postn was visualized using the RNAscope Multiplex Fluorescent Assay V2 (Bio-Techne). Tissues were processed as described above. 10-µm-thick sections were cut and processed according to the manufacturer’s protocol: 15 min of post-fixation in 4% PFA, ethanol dehydration, 10 min of H2O2 treatment, and incubation in ACD custom reagent for 30 min at 40°C. After hybridization and revelation, the sections were mounted under a glass coverslip with Prolong Gold Antifade (P10144, Thermo Fisher).
 
-## Tissue dissociation and cell sorting
+### Tissue dissociation and cell sorting
 
-## Periosteal SSPC isolation
+#### Periosteal SSPC isolation
 
 To isolate periosteal cells, uninjured tibias from Prrx1Cre; R26mTmG mice were collected, and all surrounding soft tissues were carefully removed. Epiphyses were embedded in low melting agarose and tibias were placed for 30 minutes at 37°C in digestion medium composed of PBS with 3mg/mL of collagenase B (C6885, Merck), 4mg/mL of Dispase (D4693, Merck), and 100U/mL of DNAse I (WOLS02007, Serlabo, France). After digestion, tibias were removed and the suspension was filtered, centrifuged, and resuspended.
 
-## Injury-induced fibrogenic cell isolation
+#### Injury-induced fibrogenic cell isolation
 
 The fracture hematoma and the activated periosteum were collected from Prrx1Cre; R26mTmG mice 3 days post-fracture. Tissues were minced and digested at 37°C for 2 hr in DMEM (21063029, Life Technologies) with 1% Trypsin (15090046, Life Technologies) and 1% collagenase D (11088866001, Roche). Cells in suspension were removed every 20 min and the digestion medium was replaced. After 2 hr, the cell suspension was filtered, centrifuged, and resuspended.
 
-## Cell sorting and transplantation
+#### Cell sorting and transplantation
 
 Digested cells were incubated 30 min with anti-SCA1-BV650 (BD Biosciences, 740450) or anti-CD146-BV605 (BD Biosciences, 740636). Cells were sorted using Influx Cell Sorter. Prior sorting, Sytox Blue (S34857, Thermo Fisher Scientific) was added to stain dead cells. We sorted living single GFP+ SCA1+ (pSSPCs excluding GFP- endothelial cells and SCA1- pericytes) and living single GFP+ SCA1- cells from the uninjured periosteum of Prrx1Cre;R26mTmG mice. For IIFCs, living single GFP+ CD146- cells were sorted, to eliminate CD146+ pericytes. Cell transplantation was performed as described in Perrin et al., 2021. 30,000–45,000 sorted GFP+ cells were embedded in Tisseel Prima fibrin gel, composed of fibrinogen and thrombin (3400894252443, Baxter S.A.S, USA), according to the manufacturer’s instructions. Briefly, the cells were resuspended in 15 μL of fibrin (diluted at 1/4), before adding 15 μL of thrombin (diluted at 1/4) and mixing. The pellet was then placed on ice for at least 15 min for polymerization. The cell pellet was transplanted at the fracture site of wild-type mice at the time of fracture.
 
-## In vitro colony-forming unit (CFU) assay
+### In vitro colony-forming unit (CFU) assay
 
 Prrx1-GFP+ SCA1+ and Prrx1-GFP+ SCA1- periosteal cells were isolated from Prrx1Cre;R26mTmG mice (male and female) as described above. Sorted cells were plated at a cell density of 2000 cells per 6-well plates in growth media consisting of MEMα supplemented with 20% FBS, 1% penicillin-streptomycin (Life Technology, Carlsbad, CA), and 0.01% bFGF (R&D, Minneapolis, MN). The medium was changed every 2–3 days. After 11 days, plates were washed twice with PBS, fixed with methanol, stained with 0.5% crystal violet diluted in 20% methanol, and colonies were manually counted.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical difference between CFU potential of SCA1+ and SCA1- cells was determined using Mann–Whitney test. Statistical difference between the number of activated regulons per cell was determined using one way-ANOVA followed by a post hoc test. p-Values <0.01 and <0.001 are reported as ** and ***, respectively.

@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.01236.001 How cancer cells globally struggle with a chemotherapeutic insult before succumbing to apoptosis is largely unknown. Here we use an integrated systems-level examination of transcription, translation, and proteolysis to understand these events central to cancer treatment. As a model we study myeloma cells exposed to the proteasome inhibitor bortezomib, a first-line therapy. Despite robust transcriptional changes, unbiased quantitative proteomics detects production of only a few critical anti-apoptotic proteins against a background of general translation inhibition. Simultaneous ribosome profiling further reveals potential translational regulation of stress response genes. Once the apoptotic machinery is engaged, degradation by caspases is largely independent of upstream bortezomib effects. Moreover, previously uncharacterized non-caspase proteolytic events also participate in cellular deconstruction. Our systems-level data also support co-targeting the anti-apoptotic regulator HSF1 to promote cell death by bortezomib. This integrated approach offers unique, in-depth insight into apoptotic dynamics that may prove important to preclinical evaluation of any anti-cancer compound. DOI: http://dx.doi.org/10.7554/eLife.01236.001
+How cancer cells globally struggle with a chemotherapeutic insult before succumbing to apoptosis is largely unknown. Here we use an integrated systems-level examination of transcription, translation, and proteolysis to understand these events central to cancer treatment. As a model we study myeloma cells exposed to the proteasome inhibitor bortezomib, a first-line therapy. Despite robust transcriptional changes, unbiased quantitative proteomics detects production of only a few critical anti-apoptotic proteins against a background of general translation inhibition. Simultaneous ribosome profiling further reveals potential translational regulation of stress response genes. Once the apoptotic machinery is engaged, degradation by caspases is largely independent of upstream bortezomib effects. Moreover, previously uncharacterized non-caspase proteolytic events also participate in cellular deconstruction. Our systems-level data also support co-targeting the anti-apoptotic regulator HSF1 to promote cell death by bortezomib. This integrated approach offers unique, in-depth insight into apoptotic dynamics that may prove important to preclinical evaluation of any anti-cancer compound.
 
 ## Introduction
 
@@ -33,71 +33,260 @@ Most cytotoxic chemotherapeutics eliminate tumor cells by activating the intrins
 
 However, each of these approaches only captures a segment of the functional reaction to a chemotherapeutic insult and does not tell the full story of how cancer responds to apoptosis-inducing drug treatment. It is known that cells undergoing apoptosis show strong suppression of protein translation (Bushell et al., 2004). While a few specific transcripts are known to escape this translational suppression (Spriggs et al., 2010), the general link between transcriptional and translational changes during apoptosis is not well understood. Furthermore, different chemotherapeutics produce distinct quantitative signatures of caspase cleavage substrates following apoptosis (Shimbo et al., 2012), and it is unclear how the cellular response to chemotherapy prior to apoptotic induction may influence the later deconstruction of cellular protein contents.
 
-Here we examine in depth the response of a multiple myeloma cell culture line (MM1.S) exposed to the proteasome inhibitor bortezomib, a clinically relevant model system. Multiple myeloma, one of the most common blood cancers, is an aggressive malignancy of clonal plasma cells. Proteasome inhibition has become an effective first-line therapy for this disease, though myeloma currently has no known cure (
+Here we examine in depth the response of a multiple myeloma cell culture line (MM1.S) exposed to the proteasome inhibitor bortezomib, a clinically relevant model system. Multiple myeloma, one of the most common blood cancers, is an aggressive malignancy of clonal plasma cells. Proteasome inhibition has become an effective first-line therapy for this disease, though myeloma currently has no known cure (Lonial et al., 2011). We use a suite of emerging systems-level approaches to globally examine the dynamic interplay between transcription, translation, and proteolytic degradation during chemotherapy-induced apoptosis in this system (Figure 1A). Via ribosome profiling, we identify preferential translation and translational regulation of genes expected to reduce unfolded protein stress after bortezomib treatment. Surprisingly, despite these changes in translational control, during rapid apoptosis only a few critical pro-survival proteins are detectably increased in proteomic studies. Furthermore, we find that cleavage patterns by both caspase and non-caspase proteases during apoptosis are largely independent of drug response at the transcriptional and translational level prior to cell death. We also use this integrated data to examine the potential of small molecule therapeutics to work in concert with bortezomib in myeloma. Such a global examination of how cells struggle at all levels with a chemotherapeutic insult provides important insights into mechanisms of therapeutic resistance and novel methods to assess tumor response to chemotherapy.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig1-v1.jpg)
 
-**Figure 1.:** (A) MM1.S cells were prepared in six separate flasks each containing 3 × 108 cells. All time points past 0 hr were exposed to 20 nM bortezomib. Cells were harvested and analyzed using four systems-level technologies shown. (B) Cells undergo rapid apoptosis with initial increase in caspase activation seen at 6 hr and <10% cell viability by 12 hr (duplicate, mean ± SD). Total RNA and mRNA were isolated and measured by spectrophotometry; total protein was measured by BCA assay (measured in duplicate, isolated from 106 cells; mean ± SD). G(t), describing global mRNA degradation, is derived from a sigmoid fit to the total mRNA data. (C) Heat map showing log2 expression compared to 0 hr for normalized mRNA and ribosome footprint read density (reads per kilobase million, RPKM) for 5680 well-expressed transcripts (Figure 1—source data 1). Also shown is calculated translational efficiency (TE) relative to 0 hr, calculated as the ratio of (footprint RPKM)/(mRNA RPKM) per transcript at each time point. We used unsupervised hierarchical clustering to define five broad groups of transcripts with relation to mRNA, footprint, and translational efficiency changes.DOI: http://dx.doi.org/10.7554/eLife.01236.00310.7554/eLife.01236.004Figure 1—source data 1.(A) mRNA-seq and (B) ribosome profiling deep sequencing data with assigned UCSC hg19 identifier, associated UniProt accession number, and gene identifier as defined by kgXref feature in UCSC genome browser. For samples at each time point, we display raw reads that uniquely mapped to canonical transcript as well as mapped reads normalized to total read number and transcript length (reads per kilobase million, RPKM) for comparison across samples. These 5680 tracked transcripts had RPKM ≥1 across all 12 samples (six mRNA-seq, six ribosome footprint). (C) Translational efficiency (TE) for all tracked transcripts as measured by (RPKM of footprint sample/RPKM of mRNA-seq sample) at each time point. Table is ordered by descending TE at 0 hr. The histone genes are artifactually elevated as these mRNA's do not contain poly (A) tails and are therefore under-represented in the mRNA-seq data, as previously noted in Ingolia et al. (2011). (D) List of transcripts included in each Cluster (as in Figure 1C) as uploaded to Ingenuity Pathway Analysis server for analysis (results in Table 1).DOI: http://dx.doi.org/10.7554/eLife.01236.004
+**Figure 1.:** (A) MM1.S cells were prepared in six separate flasks each containing 3 × 108 cells. All time points past 0 hr were exposed to 20 nM bortezomib. Cells were harvested and analyzed using four systems-level technologies shown. (B) Cells undergo rapid apoptosis with initial increase in caspase activation seen at 6 hr and <10% cell viability by 12 hr (duplicate, mean ± SD). Total RNA and mRNA were isolated and measured by spectrophotometry; total protein was measured by BCA assay (measured in duplicate, isolated from 106 cells; mean ± SD). G(t), describing global mRNA degradation, is derived from a sigmoid fit to the total mRNA data. (C) Heat map showing log2 expression compared to 0 hr for normalized mRNA and ribosome footprint read density (reads per kilobase million, RPKM) for 5680 well-expressed transcripts (Figure 1—source data 1). Also shown is calculated translational efficiency (TE) relative to 0 hr, calculated as the ratio of (footprint RPKM)/(mRNA RPKM) per transcript at each time point. We used unsupervised hierarchical clustering to define five broad groups of transcripts with relation to mRNA, footprint, and translational efficiency changes.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) mRNA and (B) footprint samples prepared and sequenced independently at early time points show strong correlation in read density, demonstrating consistency in experimental methods. In footprint samples the mean difference between read density at 1.5 hr and 0 hr across transcripts = 28%, reflecting both experimental error and biological variation. (C) Translational efficiency spans >10-fold across all tracked transcripts without any large shifts across time points.DOI: http://dx.doi.org/10.7554/eLife.01236.005
+**Figure 1—figure supplement 1.:** (A) mRNA and (B) footprint samples prepared and sequenced independently at early time points show strong correlation in read density, demonstrating consistency in experimental methods. In footprint samples the mean difference between read density at 1.5 hr and 0 hr across transcripts = 28%, reflecting both experimental error and biological variation. (C) Translational efficiency spans >10-fold across all tracked transcripts without any large shifts across time points.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** Western blotting for proteins related to ER stress/UPR (ATF4, CHOP, XBP1s [‘s’ for spliced, active form]) and apoptosis (Bid, XIAP).DOI: http://dx.doi.org/10.7554/eLife.01236.006
+**Figure 1—figure supplement 2.:** Western blotting for proteins related to ER stress/UPR (ATF4, CHOP, XBP1s [‘s’ for spliced, active form]) and apoptosis (Bid, XIAP).
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig1-figsupp3-v1.jpg)
 
-**Figure 1—figure supplement 3.:** Genes curated from the literature related to ER stress (left) and apoptosis (right) that were found in among the ∼5700 tracked transcripts. Genes highlighted with ribosome footprint analysis are highlighted with red arrows (DDIT3 = CHOP; DDIT4 = REDD1; PPP1R15A = GADD34). All data are shown as Log2 expression ratio vs 0 hr.DOI: http://dx.doi.org/10.7554/eLife.01236.007
+**Figure 1—figure supplement 3.:** Genes curated from the literature related to ER stress (left) and apoptosis (right) that were found in among the ∼5700 tracked transcripts. Genes highlighted with ribosome footprint analysis are highlighted with red arrows (DDIT3 = CHOP; DDIT4 = REDD1; PPP1R15A = GADD34). All data are shown as Log2 expression ratio vs 0 hr.
 
 ## Results
 
-## Simultaneous monitoring of multiple systems-level processes during apoptosis
+### Simultaneous monitoring of multiple systems-level processes during apoptosis
 
 We designed our experiment to monitor four systems-level processes simultaneously in the same cellular population, from transcription through protein production and proteolysis (Figure 1A). Deep sequencing of mRNA (mRNA-seq) examines the detailed transcriptional response of myeloma cells to bortezomib-induced stress. We pair this data with ribosome profiling, the deep sequencing of ribosome-protected mRNA fragments during active translation; this approach offers significant insight into proteome dynamics and translational regulation not available by monitoring transcript expression alone (Ingolia et al., 2009, 2011; Stern-Ginossar et al., 2012). To directly measure changes at the protein level after bortezomib perturbation, we use isobaric labeling by iTRAQ (Mertins et al., 2012) and tandem mass spectrometry to measure in an unbiased fashion the relative abundance of ∼2600 proteins. Finally, using enzymatically-driven labeling of free protein α-amines (N-terminomics) (Mahrus et al., 2008; Agard et al., 2012), we develop a quantitative mass spectrometry assay to monitor to the relative kinetics of both caspase and non-caspase cleavage events during apoptotic cellular deconstruction. To begin, we prepared separate flasks of MM1.S cells and harvested cells at five time points after induction of apoptosis with 20 nM bortezomib. Similar to previous studies (Shimbo et al., 2012), caspase activity was first detected at 6 hr and the majority of cells were non-viable by 12 hr (Figure 1B). mRNA levels were also markedly decreased prior to loss of cell viability, as previously seen across a range of apoptotic conditions (Del Prete et al., 2002; Bushell et al., 2004). Total RNA levels, primarily reflecting ribosomal RNA abundance, and total protein levels were relatively stable.
 
-## Ribosome occupancy generally tracks with transcript production
+### Ribosome occupancy generally tracks with transcript production
 
-To understand how myeloma cells were struggling after bortezomib exposure, we determined the relative changes in transcription and translation within the remaining mRNA pool at each time point. We normalized mRNA-seq and ribosome profiling sample using reads per kilobase million (RPKM) and focused our analysis on 5680 well-expressed transcripts (
+To understand how myeloma cells were struggling after bortezomib exposure, we determined the relative changes in transcription and translation within the remaining mRNA pool at each time point. We normalized mRNA-seq and ribosome profiling sample using reads per kilobase million (RPKM) and focused our analysis on 5680 well-expressed transcripts (Figure 1C). We compared log2 expression vs the untreated sample and organized the data using unsupervised hierarchical clustering. This approach allowed us to center on relative expression changes found in multiple independent samples. We generally found that changes in ribosome footprints tracked with changes in transcript abundance. The transcripts could be sub-divided into five clusters (Figure 1C). Clusters ‘Upreg’ and ‘Downreg’ encompass transcripts that are generally increased or decreased, respectively, at both the level of mRNA and footprint reads (Figure 2A,B). Cluster ‘Stable’ includes transcripts that demonstrate very mild changes at both the mRNA and footprint level. We calculated the translational efficiency (TE) from the ratio of ribosome footprint to mRNA-seq read density for each transcript (Ingolia et al., 2011). This enabled us to characterize two other groups that are particularly interesting, Cluster ‘TE Up’ and ‘TE Down’. These groups showed little change in the level of mRNA, but large increases or decreases, respectively, in relative ribosome footprint density. This suggests that genes in these two clusters are regulated at the level of translation.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig2-v1.jpg)
 
-**Figure 2.:** (A and B) Paired mRNA and ribosome footprint reads for HSPB1 (Cluster Upreg) and HMGB1 (Cluster Downreg) showing that protein translation generally tracks with transcript abundance. Displayed read counts are median-normalized to total aligned reads in 0 hr sample for comparison across the time course. Thick green bars = protein coding sequence (CDS); medium bars = untranslated regions (UTR); thin lines = intronic or intergenic regions. Read counts are inverted depending on coding direction. (C) ATF4 shows increased footprint read density in the absence of mRNA increase at 6 hr. (D) SEC61B, a downstream target of XBP1, shows increased footprints and decreased mRNA reads, leading to increased TE. (E) Many ribosome structural proteins, including RPL7A, are found in Cluster TE down. (F) Log2 changes in transcript TE from Cluster TE up and Cluster TE down at 12 hr vs 0 hr demonstrate statistically significant changes in the overall TE distribution (p<0.0001, Mann-Whitney test). (G) Mean (±SEM) changes in TE during the apoptotic time course generally do not exceed twofold even at later time points.DOI: http://dx.doi.org/10.7554/eLife.01236.008
+**Figure 2.:** (A and B) Paired mRNA and ribosome footprint reads for HSPB1 (Cluster Upreg) and HMGB1 (Cluster Downreg) showing that protein translation generally tracks with transcript abundance. Displayed read counts are median-normalized to total aligned reads in 0 hr sample for comparison across the time course. Thick green bars = protein coding sequence (CDS); medium bars = untranslated regions (UTR); thin lines = intronic or intergenic regions. Read counts are inverted depending on coding direction. (C) ATF4 shows increased footprint read density in the absence of mRNA increase at 6 hr. (D) SEC61B, a downstream target of XBP1, shows increased footprints and decreased mRNA reads, leading to increased TE. (E) Many ribosome structural proteins, including RPL7A, are found in Cluster TE down. (F) Log2 changes in transcript TE from Cluster TE up and Cluster TE down at 12 hr vs 0 hr demonstrate statistically significant changes in the overall TE distribution (p<0.0001, Mann-Whitney test). (G) Mean (±SEM) changes in TE during the apoptotic time course generally do not exceed twofold even at later time points.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Genes included in IPA as XBP1 downstream targets (left) and Genes included as part of the eIF2 signaling pathway in IPA (right). Green boxed area indicates numerous ribosome structural proteins with decreased footprint reads relative to mRNA. SEC61B and RPL7A (shown in Figure 2) are highlighted with red arrows, as is PERK (EIF2AK3). All data are shown as Log2 expression ratio vs 0 hr.DOI: http://dx.doi.org/10.7554/eLife.01236.009
+**Figure 2—figure supplement 1.:** Genes included in IPA as XBP1 downstream targets (left) and Genes included as part of the eIF2 signaling pathway in IPA (right). Green boxed area indicates numerous ribosome structural proteins with decreased footprint reads relative to mRNA. SEC61B and RPL7A (shown in Figure 2) are highlighted with red arrows, as is PERK (EIF2AK3). All data are shown as Log2 expression ratio vs 0 hr.
 
-## A subset of stress response genes show changes in translational efficiency
+### A subset of stress response genes show changes in translational efficiency
 
 Bortezomib is known to be an inducer of the unfolded protein response (UPR) and endoplasmic reticulum (ER) stress (Aronson and Davies, 2012). Myeloma plasma cells are particularly sensitive to proteasome inhibition in vivo due to extremely high rates of immunoglobulin production, potentially leading to apoptosis via the UPR (Obeng et al., 2006; Walter and Ron, 2011). In Figure 2C we display reads for one of the critical factors in the UPR, ATF4, a transcription factor known to be under translational control during ER stress (Lu et al., 2004). Consistent with this prior work, we find that ATF4 does not increase in transcript abundance but shows a nearly threefold increase of ribosome occupancy (see heat map in Figure 1—figure supplement 3).
 
-To better assess the biological implications of these results we turned to Ingenuity Pathway Analysis (IPA) (Ingenuity Systems, www.ingenuity.com) (Table 1). Cluster Upreg is enriched for genes related to protein ubiquitination (p=1.50 × 10−34), protein degradation (9.63 × 10−9), chaperones (4.15 × 10−11), and hypoxic response (2.90 × 10−10). Cluster Downreg includes genes important in cellular proliferation (p=3.61 × 10−11) and DNA repair (3.81 × 10−9). These findings are consistent with mRNA microarray studies of bortezomib response (Mitsiades et al., 2002). We examined in more detail a subset of genes related to cellular apoptosis and both ER stress and hypoxic response (Figure 1—figure supplement 3). Notably, we found little change in expression or translation of canonical apoptosis players.10.7554/eLife.01236.010Table 1.Biological relevance of findings from Ingenuity Pathway Analysis (IPA)DOI: http://dx.doi.org/10.7554/eLife.01236.010ClusterMolecular and cellular functionp valueCanonical pathwayp valueUpstream regulatorp valueCluster UpregPost-translational modification4.15 e-11Protein ubiquitination pathway1.50e-34NFE2L2 (NRF2)7.77e-16Protein Folding4.15 e-11NRF2-mediated oxidative stress response2.90e-10HSF11.70e-14Cell death and survival2.47 e-10EIF2AK3 (PERK)6.47e-10Protein synthesis8.82 e-09Protein degradation9.63 e-09Cluster StableRNA post-transcriptional modification1.44e-09––Molecular transport8.87 e-09Protein trafficking8.87 e-09Cluster TE Up–Mitochondrial dysfunction6.04e-10XBP18.79e-10Cluster DownregCell death and survival7.56e-12–TP532.67e-15Cellular growth and proliferation3.61e-11MYC1.53e-10DNA replication, recombination and repair3.81e-09XBP11.65e-10RNA post-transcriptional modification8.91e-08INSR5.94e-09E2F46.20e-09Cluster TE DownRNA post-transcriptional modification8.88e-11EIF2 signaling2.35e-17–Gene expression3.24e-09Regulation of eIF4 and p70S6K signaling1.40e-085% transcripts highest TE at 0 hr–Mitchondrial dysfunction1.52e-26–Increased 5′ UTR translation–EIF2 signaling2.45 e-17MYC1.09e-08HSF18.11e-08Decreased 5′ UTR translation–––Clusters defined by hierarchical clustering of mRNA, footprint, and translational efficiency data as shown in Figure 1B (included genes listed in Figure 1—source data 1). We also analyzed the top 5% of transcripts by translational efficiency at 0 hr as calculated by (footprint RPKM)/(mRNA RPKM) per transcript. p values are as calculated using Fisher′s exact test by Ingenuity Pathway Analysis software. We report findings here with a p<10−7. Results from each category (Molecular and cellular function; Canonical pathway; Upstream regulator) are listed in order of decreasing p, independent of the other categories.
+To better assess the biological implications of these results we turned to Ingenuity Pathway Analysis (IPA) (Ingenuity Systems, www.ingenuity.com) (Table 1). Cluster Upreg is enriched for genes related to protein ubiquitination (p=1.50 × 10−34), protein degradation (9.63 × 10−9), chaperones (4.15 × 10−11), and hypoxic response (2.90 × 10−10). Cluster Downreg includes genes important in cellular proliferation (p=3.61 × 10−11) and DNA repair (3.81 × 10−9). These findings are consistent with mRNA microarray studies of bortezomib response (Mitsiades et al., 2002). We examined in more detail a subset of genes related to cellular apoptosis and both ER stress and hypoxic response (Figure 1—figure supplement 3). Notably, we found little change in expression or translation of canonical apoptosis players.
+
+**Table 1.**
+ Biological relevance of findings from Ingenuity Pathway Analysis (IPA)
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cluster</th>
+      <th>Molecular and cellular function</th>
+      <th>p value</th>
+      <th>Canonical pathway</th>
+      <th>p value</th>
+      <th>Upstream regulator</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Cluster Upreg</td>
+      <td>Post-translational modification</td>
+      <td>4.15 e-11</td>
+      <td>Protein ubiquitination pathway</td>
+      <td>1.50e-34</td>
+      <td>NFE2L2 (NRF2)</td>
+      <td>7.77e-16</td>
+    </tr>
+    <tr>
+      <td>Protein Folding</td>
+      <td>4.15 e-11</td>
+      <td>NRF2-mediated oxidative stress response</td>
+      <td>2.90e-10</td>
+      <td>HSF1</td>
+      <td>1.70e-14</td>
+    </tr>
+    <tr>
+      <td>Cell death and survival</td>
+      <td>2.47 e-10</td>
+      <td></td>
+      <td></td>
+      <td>EIF2AK3 (PERK)</td>
+      <td>6.47e-10</td>
+    </tr>
+    <tr>
+      <td>Protein synthesis</td>
+      <td>8.82 e-09</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein degradation</td>
+      <td>9.63 e-09</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Cluster Stable</td>
+      <td>RNA post-transcriptional modification</td>
+      <td>1.44e-09</td>
+      <td>–</td>
+      <td></td>
+      <td>–</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Molecular transport</td>
+      <td>8.87 e-09</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein trafficking</td>
+      <td>8.87 e-09</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cluster TE Up</td>
+      <td>–</td>
+      <td></td>
+      <td>Mitochondrial dysfunction</td>
+      <td>6.04e-10</td>
+      <td>XBP1</td>
+      <td>8.79e-10</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Cluster Downreg</td>
+      <td>Cell death and survival</td>
+      <td>7.56e-12</td>
+      <td>–</td>
+      <td></td>
+      <td>TP53</td>
+      <td>2.67e-15</td>
+    </tr>
+    <tr>
+      <td>Cellular growth and proliferation</td>
+      <td>3.61e-11</td>
+      <td></td>
+      <td></td>
+      <td>MYC</td>
+      <td>1.53e-10</td>
+    </tr>
+    <tr>
+      <td>DNA replication, recombination and repair</td>
+      <td>3.81e-09</td>
+      <td></td>
+      <td></td>
+      <td>XBP1</td>
+      <td>1.65e-10</td>
+    </tr>
+    <tr>
+      <td>RNA post-transcriptional modification</td>
+      <td>8.91e-08</td>
+      <td></td>
+      <td></td>
+      <td>INSR</td>
+      <td>5.94e-09</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>E2F4</td>
+      <td>6.20e-09</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cluster TE Down</td>
+      <td>RNA post-transcriptional modification</td>
+      <td>8.88e-11</td>
+      <td>EIF2 signaling</td>
+      <td>2.35e-17</td>
+      <td>–</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene expression</td>
+      <td>3.24e-09</td>
+      <td>Regulation of eIF4 and p70S6K signaling</td>
+      <td>1.40e-08</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5% transcripts highest TE at 0 hr</td>
+      <td>–</td>
+      <td></td>
+      <td>Mitchondrial dysfunction</td>
+      <td>1.52e-26</td>
+      <td>–</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Increased 5′ UTR translation</td>
+      <td>–</td>
+      <td></td>
+      <td>EIF2 signaling</td>
+      <td>2.45 e-17</td>
+      <td>MYC</td>
+      <td>1.09e-08</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>HSF1</td>
+      <td>8.11e-08</td>
+    </tr>
+    <tr>
+      <td>Decreased 5′ UTR translation</td>
+      <td>–</td>
+      <td></td>
+      <td>–</td>
+      <td></td>
+      <td>–</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Clusters defined by hierarchical clustering of mRNA, footprint, and translational efficiency data as shown in Figure 1B (included genes listed in Figure 1—source data 1). We also analyzed the top 5% of transcripts by translational efficiency at 0 hr as calculated by (footprint RPKM)/(mRNA RPKM) per transcript. p values are as calculated using Fisher′s exact test by Ingenuity Pathway Analysis software. We report findings here with a p<10−7. Results from each category (Molecular and cellular function; Canonical pathway; Upstream regulator) are listed in order of decreasing p, independent of the other categories._
 
 Surprisingly, IPA showed that Cluster TE Up included many genes regulated by XBP1 (p=8.79 × 10−10) (Table 1), an important component of the UPR (Walter and Ron, 2011). The only known function of XBP1 is as a transcription factor (Acosta-Alvear et al., 2007) without known direct effects on translation. Although we do see a slight increase in the active XBP1 protein (Figure 1—figure supplement 2), most downstream XBP1 targets do not respond by increases in mRNA abundance. Instead we see increased translation efficiency (Figure 2—figure supplement 1). Notably, transcripts related to the ER transport machinery (including SEC61B, Figure 2D) demonstrate 1.5- to 2-fold increases in translation vs transcription. Therefore, changes in translation of XBP1downstream targets may reflect the activity of a parallel UPR mechanism to favor adaptation to cellular stress.
 
 Cluster TE Down includes many transcripts involved in the translational machinery itself, particularly ribosomal structural proteins (Figure 2E, Figure 2—figure supplement 1) of which the most significant pathway affected involved eIF2 signaling (p=2.35 × 10−17) (Table 1). In parallel we examined the 5% of genes with the highest translational efficiency in the untreated sample. The pathway ‘mitochondrial dysfunction’ was highly enriched (p=1.52 × 10−26) (Table 1), including numerous cytochrome c oxidase and NADH dehydrogenase subunits (Figure 1—source data 1). This finding suggests a favoring of translation of aerobic metabolism components in myeloma cells at baseline. In Figure 2F we display the distribution of log2-fold changes in translational efficiency for Clusters TE Up and TE Down, which both show a significant difference between 12 hr vs 1.5 hr (p<0.0001, Mann-Whitney test). These changes contrast with the large majority of transcripts which show little change in TE (Figure 2G).
 
-## Differential 5′ UTR translation
+### Differential 5′ UTR translation
 
-Taking advantage of the nucleotide resolution of ribosome profiling, we examined whether there were any large-scale changes in ribosome occupancy along mRNA during apoptosis. We performed a metagene analysis, where all footprint profiles are averaged and then aligned based on the midpoint of the protected reads (
+Taking advantage of the nucleotide resolution of ribosome profiling, we examined whether there were any large-scale changes in ribosome occupancy along mRNA during apoptosis. We performed a metagene analysis, where all footprint profiles are averaged and then aligned based on the midpoint of the protected reads (Figure 3A). We find a strong peak of ribosome occupancy at both the 5′ and 3′ ends of annotated coding sequence (CDS) and a 3-nucleotide offset resulting from position of the ribosome P site, as described previously (Ingolia et al., 2009). We also note peaks appearing every three nucleotides across the averaged reads, consistent with the triplet nucleotide coding sequence. Averaged across all transcripts, we did not find any large changes in footprint read distribution across mRNAs at different time points.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig3-v1.jpg)
 
-**Figure 3.:** (A) Metagene analysis, the alignment of footprint reads across all transcripts, to both the 5′ CDS start site and 3′ termination site (Ingolia et al., 2009). Reads counts are median-normalized to total aligned reads per sample. No significant changes are noted in overall read alignments during apoptosis. (B) Relative translation of 5′ UTR measured by the ratio of 5′ UTR reads to CDS reads per transcript. The log2 change in this ratio is compared to the 5′ UTR/CDS ratio at 0 hr. (C and D) Examples of genes with most increased or decreased relative 5′ UTR translation include HSPA8 (Hsc70 protein) and CYCS (cytochrome c), respectively. (E–H) Genes known to be involved in ER stress response show increased read density at 5′ UTR upstream open reading frames (uORFs). ATF4 shows density at known uORFs as well as a single upstream AUG codon. Putative uORF translation with noted initiation codon is also identified based on areas of increased read density for DDIT4 (REDD1), PPP1R15B, and TXNIP (see detailed sequence information in Figure 3—figure supplement 2).DOI: http://dx.doi.org/10.7554/eLife.01236.01110.7554/eLife.01236.012Figure 3—source data 1.(A) RPKM values of reads uniquely mapped to either 5′ UTR or CDS of transcripts (same list of transcripts as in Figure 1—source data 1). Sequence and length of 5′ UTR and CDS (for RPKM calculation) are defined based on the canonical transcript isoform annotated in hg19. (B) Transcripts with 5′ UTR/CDS translation ratio increased ≥twofold at a minimum of three time points compared to transcript 5′ UTR/CDS translation ratio at 0 hr. (C) as in B but for transcripts with decreased 5′ UTR to CDS translation ratio.DOI: http://dx.doi.org/10.7554/eLife.01236.012
+**Figure 3.:** (A) Metagene analysis, the alignment of footprint reads across all transcripts, to both the 5′ CDS start site and 3′ termination site (Ingolia et al., 2009). Reads counts are median-normalized to total aligned reads per sample. No significant changes are noted in overall read alignments during apoptosis. (B) Relative translation of 5′ UTR measured by the ratio of 5′ UTR reads to CDS reads per transcript. The log2 change in this ratio is compared to the 5′ UTR/CDS ratio at 0 hr. (C and D) Examples of genes with most increased or decreased relative 5′ UTR translation include HSPA8 (Hsc70 protein) and CYCS (cytochrome c), respectively. (E–H) Genes known to be involved in ER stress response show increased read density at 5′ UTR upstream open reading frames (uORFs). ATF4 shows density at known uORFs as well as a single upstream AUG codon. Putative uORF translation with noted initiation codon is also identified based on areas of increased read density for DDIT4 (REDD1), PPP1R15B, and TXNIP (see detailed sequence information in Figure 3—figure supplement 2).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** For genes found to have most increased (274 genes) and most decreased (219 genes) relative 5′ UTR translation during the time course, there is no significant difference in the distribution of annotated 5′ UTR length (p=0.94, Mann-Whitney U test).DOI: http://dx.doi.org/10.7554/eLife.01236.013
+**Figure 3—figure supplement 1.:** For genes found to have most increased (274 genes) and most decreased (219 genes) relative 5′ UTR translation during the time course, there is no significant difference in the distribution of annotated 5′ UTR length (p=0.94, Mann-Whitney U test).
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** DDIT3 (CHOP) and PPP1R15A (GADD34).DOI: http://dx.doi.org/10.7554/eLife.01236.014
-
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig3-figsupp3-v1.jpg)
 
-**Figure 3—figure supplement 3.:** REDD1, TXNIP, and PPP1R15B 5′ UTRs.Putative REDD1 uORFs are translated out of frame with the CDS; TXNIP uORFs 1 and 2 are out of frame, while uORF3 is in frame; both PPP1R15B uORFs are in frame with the CDS.DOI: http://dx.doi.org/10.7554/eLife.01236.015
+**Figure 3—figure supplement 3.:** Putative REDD1 uORFs are translated out of frame with the CDS; TXNIP uORFs 1 and 2 are out of frame, while uORF3 is in frame; both PPP1R15B uORFs are in frame with the CDS.
 
 We next investigated whether there were general changes in proteome control by differing ribosome occupancy of the mRNA 5′ untranslated region (UTR). Ribosome occupancy in this region may indicate translation of short regulatory polypeptides in upstream open reading frames (uORFs) or production of alternate N-terminal isoforms of canonically translated proteins (Ingolia et al., 2011; Lee et al., 2012; Stern-Ginossar et al., 2012). Others have shown that yeast responding to oxidative stress produce large increases in 5′ UTR translation (Gerashchenko et al., 2012). A general decrease in 5′ UTR translation was also seen in differentiating mouse embryonic stem cells (Ingolia et al., 2011). In contrast, we identified no overall trend toward altered 5′ UTR translation relative to CDS translation in our system (Figure 3B). However, these frequency distributions are broad and some individual transcripts do have large changes in the relative translation of the 5′ UTR during apoptosis. We examined transcripts with >twofold change in 5′ UTR translation relative to CDS translation when compared to untreated sample in at least three time points after drug exposure (Figure 3—source data 1). By χ2 analysis, genes in Cluster Upreg were significantly over-represented among the 274 genes in the increased UTR translation group (p=0.033). Both Clusters Upreg and Downreg were over-represented among the 219 genes in the decreased UTR translation group (p=0.0006 and p=0.014, respectively). No other Clusters showed significant over- or under-representation. We did not find any difference in 5′ UTR length between the groups with most increased and most decreased relative 5′ UTR translation (Figure 3—figure supplement 1). IPA (Table 1) and inspection of genes in the increased UTR translation group revealed numerous translation elongation and initiation factors, ribosome structural proteins, chaperones (i.e., DNAJA1, HSP90AB1, CCT5, HSPA8; Figure 3C), and proteasomal subunits. The decreased UTR translation group does not show as strong a biological pattern although we do find ubiquitin (UBB), the co-chaperone BAG3, and cytochrome c (CYCS; Figure 3D), that are relevant to bortezomib-induced apoptosis.
 
@@ -105,29 +294,29 @@ The production of ATF4 is thought to be governed by the relative translation of 
 
 We note that in these samples translation elongation was inhibited by cycloheximide. This treatment does not identify uORFs with as high precision as inhibition of initiation complexes by harringtonine or lactimidomycin (Ingolia et al., 2011; Lee et al., 2012; Stern-Ginossar et al., 2012). Thus, we cannot confidently assign 5′ UTR read density across all genes to specific start codons, particularly non-AUG uORFs. However, we did focus on a subset of genes important in the ER stress response. We first looked at DDIT3 (CHOP) and PPP1R15A (GADD34), where in both genes we found strong footprint read density in uORFs known to regulate CDS translation (Figure 3—figure supplement 2) (Jousse et al., 2001; Lee et al., 2009). We next examined other genes with a role in the ER stress response but without known uORF translation. These include DDIT4 (REDD1), a repressor of mTOR signaling potentially under control of ATF4 (Whitney et al., 2009); TXNIP, recently found to be a key mediator of apoptosis under the UPR (Lerner et al., 2012; Oslowski et al., 2012); and PPP1R15B, which also plays a role in the dephosphorylation of eIF2α (Harding et al., 2009). Intriguingly, all three genes showed apparent uORF translation, identified as areas of increased 5′ UTR read density with a peak corresponding to AUG or near-AUG initiation codons (Ingolia et al., 2011) and bounded by a stop codon on the 3′ end (Figure 3F–H, Figure 3—figure supplement 3).
 
-## Quantitative proteomics detects only a small subset of anti-apoptotic proteins notably produced
+### Quantitative proteomics detects only a small subset of anti-apoptotic proteins notably produced
 
-We next explored how the changes at the level of transcription and translation compare to the changes in protein levels during bortezomib-induced apoptosis. At each time point we isolated total protein and employed 6-plex iTRAQ labeling with a different isobaric mass tag (
+We next explored how the changes at the level of transcription and translation compare to the changes in protein levels during bortezomib-induced apoptosis. At each time point we isolated total protein and employed 6-plex iTRAQ labeling with a different isobaric mass tag (Mertins et al., 2012) so that data from all time points can be compared simultaneously in a single mass spectrometry (MS) experiment. After analysis on two different mass spectrometers, a total of 2686 proteins were identified with at least two unique peptides and quantifiable iTRAQ reporter intensities. Typical MS spectra are shown in Figure 4A.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig4-v1.jpg)
 
-**Figure 4.:** (A) Example mass spectra demonstrating both m/z peaks used for peptide sequencing and iTRAQ reporter ion signal to measure relative abundance across time points. (B) Hierarchical clustering heat map of paired mRNA and ribosome footprint relative read density vs 0 hr with relative iTRAQ protein abundance for 2572 proteins. (C) Inset of heat map for proteins increased in relative abundance by >50% at ≥2 time points shows few proteins are measurably produced during bortezomib-induced apoptosis. (D) Targeted selected reaction monitoring (SRM) assays orthogonally validate iTRAQ data for 152 proteins. In this representative data, each colored trace monitors the intensity of a given parent and fragment ion pair, as demarcated in the peptide sequence; multiple co-eluting peaks positively identify a targeted peptide. (E) Protein abundance measured by both SRM and iTRAQ demonstrate strong correlation across time points (r = 0.80).DOI: http://dx.doi.org/10.7554/eLife.01236.01610.7554/eLife.01236.017Figure 4—source data 1.iTRAQ proteomic data organized at the protein (A) and peptide (B) level for 2686 proteins. All proteins included had a minimum of two unique peptides mapping to the protein; all peptides showed minimum iTRAQ reporter ion intensity of 300 cps at 0 hr. (C) iTRAQ proteomic data matched by UniProt Accession number to genes tracked in mRNA and footprint data across the time course. (D) List of proteins identified by iTRAQ proteomics but not present in analyzed genes from RNA deep sequencing. (E) List of parent and fragment ion transitions used for all peptides in SRM validation of iTRAQ data. (F) Protein and (G) peptide intensity data for targets tracked in SRM assay.DOI: http://dx.doi.org/10.7554/eLife.01236.017
+**Figure 4.:** (A) Example mass spectra demonstrating both m/z peaks used for peptide sequencing and iTRAQ reporter ion signal to measure relative abundance across time points. (B) Hierarchical clustering heat map of paired mRNA and ribosome footprint relative read density vs 0 hr with relative iTRAQ protein abundance for 2572 proteins. (C) Inset of heat map for proteins increased in relative abundance by >50% at ≥2 time points shows few proteins are measurably produced during bortezomib-induced apoptosis. (D) Targeted selected reaction monitoring (SRM) assays orthogonally validate iTRAQ data for 152 proteins. In this representative data, each colored trace monitors the intensity of a given parent and fragment ion pair, as demarcated in the peptide sequence; multiple co-eluting peaks positively identify a targeted peptide. (E) Protein abundance measured by both SRM and iTRAQ demonstrate strong correlation across time points (r = 0.80).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** Frequency distribution of protein abundance monitored by iTRAQ proteomics (∼2700 proteins) and ribosome profiling (∼5700 proteins) compared to average cellular protein abundance as estimated in PaxDB (www.pax-db.org). We note that both distributions examine similar portions of the proteome, though the iTRAQ demonstrates greater coverage of higher abundance proteins.DOI: http://dx.doi.org/10.7554/eLife.01236.018
+**Figure 4—figure supplement 1.:** Frequency distribution of protein abundance monitored by iTRAQ proteomics (∼2700 proteins) and ribosome profiling (∼5700 proteins) compared to average cellular protein abundance as estimated in PaxDB (www.pax-db.org). We note that both distributions examine similar portions of the proteome, though the iTRAQ demonstrates greater coverage of higher abundance proteins.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** We find a weak but positive correlation (R = 0.27, p<0.0001). This distribution is comparable to the relationship between absolute transcript and protein copies at baseline in Figure 5—figure supplement 2.DOI: http://dx.doi.org/10.7554/eLife.01236.019
+**Figure 4—figure supplement 2.:** We find a weak but positive correlation (R = 0.27, p<0.0001). This distribution is comparable to the relationship between absolute transcript and protein copies at baseline in Figure 5—figure supplement 2.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig4-figsupp3-v1.jpg)
 
-**Figure 4—figure supplement 3.:** Relative 5′ UTR translation (measured as normalized footprint read density in 5′ UTR vs normalized footprint read density in coding sequence) over the time course for selected genes (A) upregulated at the mRNA and footprint level and also increased by iTRAQ proteomics and (B) upregulated at the mRNA and footprint level with no detected change by iTRAQ. We note that for both sets of genes relative 5′ UTR translation stays relatively constant during bortezomib-induced apoptosis, consistent with genome-wide analysis in Figure 3B.DOI: http://dx.doi.org/10.7554/eLife.01236.020
+**Figure 4—figure supplement 3.:** Relative 5′ UTR translation (measured as normalized footprint read density in 5′ UTR vs normalized footprint read density in coding sequence) over the time course for selected genes (A) upregulated at the mRNA and footprint level and also increased by iTRAQ proteomics and (B) upregulated at the mRNA and footprint level with no detected change by iTRAQ. We note that for both sets of genes relative 5′ UTR translation stays relatively constant during bortezomib-induced apoptosis, consistent with genome-wide analysis in Figure 3B.
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig4-figsupp4-v1.jpg)
 
-**Figure 4—figure supplement 4.:** Data from 150 proteins targeted in SRM assay to validate iTRAQ data. Comparison heat map of mRNA and footprint read density with iTRAQ and SRM relative protein abundance.DOI: http://dx.doi.org/10.7554/eLife.01236.021
+**Figure 4—figure supplement 4.:** Data from 150 proteins targeted in SRM assay to validate iTRAQ data. Comparison heat map of mRNA and footprint read density with iTRAQ and SRM relative protein abundance.
 
 We compared the proteins identified by MS as well as those tracked by ribosome profiling to a database of cellular protein abundance (www.pax-db.org; Figure 4—figure supplement 1; Wang et al., 2012). There was significant overlap between the protein abundance range monitored both by ribosome profiling and iTRAQ proteomics, demonstrating that these two techniques are probing a similar portion of the proteome. We concentrated on 2572 of these proteins that also had corresponding mRNA and ribosome footprint data (Figure 4—source data 1). We noted a slight positive correlation (R = 0.27) between baseline transcript read density and number of peptides identified by iTRAQ proteomics (Figure 4—figure supplement 2). Strikingly, for the vast majority of proteins there is no distinct change in relative protein abundance while large changes are observed in relative mRNA and footprint reads (Figure 4B).
 
@@ -135,37 +324,37 @@ Nonetheless, we did find a subset of 12 proteins (0.47% of total) with >50% incr
 
 To further validate the iTRAQ findings, we employed an orthogonal method of label-free, targeted, quantitative mass spectrometry termed Selected reaction monitoring (SRM). This method is analogous to Western blotting without the need for dozens of antibodies and potential improvement in performance characteristics (Maiolica et al., 2012). We prepared an independent biological time course of MM1.S cells treated with 20 nM bortezomib and isolated tryptic peptides from total cellular lysate. We tracked the relative abundance of one to three peptides from 152 proteins. The SRM peak area intensity data was compared to the iTRAQ reporter signal (e.g., in Figure 4A–D, respectively; heat map in Figure 4—figure supplement 4). Comparing across all time points in Figure 4E we found a strong correlation between SRM and iTRAQ data (R = 0.80). For the few increased proteins the abundance changes detected by SRM are greater than those found by iTRAQ, which is consistent with the greater suppression of iTRAQ reporter ions often seen in complex samples (Ow et al., 2009). The label-free SRM data do not suffer from this same limitation and more likely reflect the true change in protein abundance. This independent MS assay confirms that only a small subset of proteins show measurable increases in abundance during apoptosis.
 
-## Global translational shutdown during apoptosis
+### Global translational shutdown during apoptosis
 
-Our quantitative proteomic results are strongly consistent with polysome analysis (
+Our quantitative proteomic results are strongly consistent with polysome analysis (Figure 5—figure supplement 1) showing a significant decrease in translation well before any loss in cell viability. We wished to better understand the mechanism leading to this translational shutdown during apoptosis. During the UPR, it is well-known that phosphorylation of the initiation factor eIF2α by the ER-resident sensor kinase PERK is associated with general translation inhibition (Walter and Ron, 2011). At early time points we find that PERK appears phosphorylated, as previously reported (Atkins et al., 2013), and at later time points it undergoes proteolysis (Figure 5A). In contrast to other drugs that induce ER stress, we find levels of eIF2α phosphorylation actually decrease after bortezomib exposure (Figure 5A). This finding suggests that there must be other drivers of translation inhibition in this system.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig5-v1.jpg)
 
-**Figure 5.:** (A) Western blotting tracked UPR proteins important in modulating translation via ER stress. We detect the known caspase cleavage of PERK and 4E-BP1. (B) Differential rate equations describing protein production. R(t) = mRNA abundance; P(t) = protein abundance; ksp = protein translation rate constant; kdp = protein degradation rate constant. G(t) describes global mRNA degradation (Figure 1B). (C) Absolute copies per cell at 0 hr of both mRNA (∼5700 transcripts) and protein measured by iBAQ (∼3400 proteins) demonstrates distributions of same order of magnitude as those seen in mouse NIH3T3 cells (Schwanhausser et al., 2011). (D) Extrapolation of absolute mRNA copy numbers per cell based on RPKM, not accounting for mRNA degradation, is well-fit by either a sigmoid or quadratic function to define R(t). (E) Absolute protein copies per cell were extrapolated from iBAQ results based on SRM assay intensity. The modified mass-action model incorporating mRNA degradation was able to well-fit the subset of proteins that were detectably increased and also explained why others increased at the transcriptional level did not show protein increases.DOI: http://dx.doi.org/10.7554/eLife.01236.02210.7554/eLife.01236.023Figure 5—source data 1.(A) Absolute copies of mRNA and (B) protein per MM1.S cell at 0 hr as determined using mRNA read density and iBAQ calculation, respectively, as described in the ‘Materials and methods’. (C) Relative 5′ UTR translation at baseline vs absolute protein copies per cell by iBAQ. (D) Extrapolated mRNA and protein copies per cell for 13 genes as used for model fitting as shown in Figure 5—figure supplement 4.DOI: http://dx.doi.org/10.7554/eLife.01236.023
+**Figure 5.:** (A) Western blotting tracked UPR proteins important in modulating translation via ER stress. We detect the known caspase cleavage of PERK and 4E-BP1. (B) Differential rate equations describing protein production. R(t) = mRNA abundance; P(t) = protein abundance; ksp = protein translation rate constant; kdp = protein degradation rate constant. G(t) describes global mRNA degradation (Figure 1B). (C) Absolute copies per cell at 0 hr of both mRNA (∼5700 transcripts) and protein measured by iBAQ (∼3400 proteins) demonstrates distributions of same order of magnitude as those seen in mouse NIH3T3 cells (Schwanhausser et al., 2011). (D) Extrapolation of absolute mRNA copy numbers per cell based on RPKM, not accounting for mRNA degradation, is well-fit by either a sigmoid or quadratic function to define R(t). (E) Absolute protein copies per cell were extrapolated from iBAQ results based on SRM assay intensity. The modified mass-action model incorporating mRNA degradation was able to well-fit the subset of proteins that were detectably increased and also explained why others increased at the transcriptional level did not show protein increases.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** Polysome profiles by sucrose gradient during the apoptotic time course show decrease in polysome peaks over time during during apoptosis. Translation is largely suppressed well before any loss in cell viability.DOI: http://dx.doi.org/10.7554/eLife.01236.024
+**Figure 5—figure supplement 1.:** Polysome profiles by sucrose gradient during the apoptotic time course show decrease in polysome peaks over time during during apoptosis. Translation is largely suppressed well before any loss in cell viability.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** Correlation of mRNA amount (A) and ribosome footprint (B) read density (in RPKM) with absolute protein abundance by iBAQ MS analysis at 0 hr in MM1.S cells demonstrates limited correlation. (C) Strong correlation of ribosome footprint and mRNA read density at 0 hr. All correlations in A–C with p<0.0001. (D) Relative 5′ UTR translation at baseline vs protein abundance. We note a weak but non-significant correlation (p=0.35) suggesting that increased 5′ UTR translation may relate to lower steady-state protein abundance.DOI: http://dx.doi.org/10.7554/eLife.01236.025
+**Figure 5—figure supplement 2.:** Correlation of mRNA amount (A) and ribosome footprint (B) read density (in RPKM) with absolute protein abundance by iBAQ MS analysis at 0 hr in MM1.S cells demonstrates limited correlation. (C) Strong correlation of ribosome footprint and mRNA read density at 0 hr. All correlations in A–C with p<0.0001. (D) Relative 5′ UTR translation at baseline vs protein abundance. We note a weak but non-significant correlation (p=0.35) suggesting that increased 5′ UTR translation may relate to lower steady-state protein abundance.
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig5-figsupp3-v1.jpg)
 
-**Figure 5—figure supplement 3.:** Relative mRNA expression data from Figure 4B scaled to reflect global mRNA degradation at later time points during apoptosis. By this scaling (scaling factors for mRNA based on fit G(t) function = 1.0 at 0 hr, 0.93 at 1.5 hr, 0.91 at 3 hr, 0.48 at 6 hr, 0.17 at 9 hr, 0.12 at 12 hr), assuming that all mRNA are degraded at the same rate, the absolute mRNA abundance can be estimated across all cells in the population. Upper inset demonstrate that transcripts with absolute mRNA abundance changes across the entire time course are more likely to have increases in protein level, whereas those with transient increases in mRNA generally do not result in detectable protein production.DOI: http://dx.doi.org/10.7554/eLife.01236.026
+**Figure 5—figure supplement 3.:** Relative mRNA expression data from Figure 4B scaled to reflect global mRNA degradation at later time points during apoptosis. By this scaling (scaling factors for mRNA based on fit G(t) function = 1.0 at 0 hr, 0.93 at 1.5 hr, 0.91 at 3 hr, 0.48 at 6 hr, 0.17 at 9 hr, 0.12 at 12 hr), assuming that all mRNA are degraded at the same rate, the absolute mRNA abundance can be estimated across all cells in the population. Upper inset demonstrate that transcripts with absolute mRNA abundance changes across the entire time course are more likely to have increases in protein level, whereas those with transient increases in mRNA generally do not result in detectable protein production.
 
 ![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig5-figsupp4-v1.jpg)
 
-**Figure 5—figure supplement 4.:** We used our quantitative model to describe a subset of genes increased at both the transcript and protein level (A and B) and those where relative transcript levels increased but protein levels were unchanged (C and D). Solid lines in (A and C) represent quadratic fits (FTL, SQSTM1, CTSD) or four-parameter sigmoid fits (all others) to relative mRNA abundance data to describe R(t), as in Figure 5E. Solid lines in (B and D) represent fits to modified mass-action to describe P(t) as shown in Figure 5F.DOI: http://dx.doi.org/10.7554/eLife.01236.027
+**Figure 5—figure supplement 4.:** We used our quantitative model to describe a subset of genes increased at both the transcript and protein level (A and B) and those where relative transcript levels increased but protein levels were unchanged (C and D). Solid lines in (A and C) represent quadratic fits (FTL, SQSTM1, CTSD) or four-parameter sigmoid fits (all others) to relative mRNA abundance data to describe R(t), as in Figure 5E. Solid lines in (B and D) represent fits to modified mass-action to describe P(t) as shown in Figure 5F.
 
 ![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig5-figsupp5-v1.jpg)
 
-**Figure 5—figure supplement 5.:** Model predictions demonstrating that even during apoptosis, for the same increase in relative transcript levels low-abundance proteins (500 copies per cell at baseline) will have substantial relative protein increases, whereas high abundance proteins (100,000 copies per cell at baseline) will have much smaller changes in relative protein abundance. This is even true when the absolute transcript abundance change is much greater for the high abundance protein and including ksp, the rate constant describing proteins produced per mRNA per hour, as greater for the high abundance protein based on the results of Schwanhausser et al. 2011.DOI: http://dx.doi.org/10.7554/eLife.01236.028
+**Figure 5—figure supplement 5.:** Model predictions demonstrating that even during apoptosis, for the same increase in relative transcript levels low-abundance proteins (500 copies per cell at baseline) will have substantial relative protein increases, whereas high abundance proteins (100,000 copies per cell at baseline) will have much smaller changes in relative protein abundance. This is even true when the absolute transcript abundance change is much greater for the high abundance protein and including ksp, the rate constant describing proteins produced per mRNA per hour, as greater for the high abundance protein based on the results of Schwanhausser et al. 2011.
 
 Phosphorylation and dephosphorylation of proteins in the eIF4 complex may also inhibit mRNA cap-dependent translation, including hypophosphorylation of 4E-BP1 (Spriggs et al., 2010). Indeed, we observed 4E-BP1 dephosphorylation at the 6 hr time point. This is followed by rapid caspase degradation of 4E-BP1 during cell death (Figure 5A). It is also known that caspases target other proteins in the eIF4 complex (Bushell et al., 2004). Using N-terminomics (described in more detail below) we found that proteolysis of initiation factors begins at the 6 hr time point and accelerates later in apoptosis (Figure 6—figure supplement 1). Another potentially important mechanism is the global degradation of mRNA during apoptosis (Del Prete et al., 2002) (Figure 1B), depriving ribosomes of substrates for translation. Together, these results demonstrate that well before the loss of cellular viability, translation is inhibited both by shutting down translation initiation and destruction of mRNA.
 
-## A quantitative mass-action model describes protein changes
+### A quantitative mass-action model describes protein changes
 
 We sought a quantitative explanation for the limited changes in relative protein level we observed despite large changes in relative transcript and ribosome footprints. Recently developed systems-level technologies, as we use here, enable genome-wide quantitative assessment of the efficiency for decoding of mRNA to protein (Vogel and Marcotte, 2012). In this apoptotic system, proteins are relatively stable due to several factors: at 20 nM bortezomib in MM1.S cells, proteasomal activity is almost completely inhibited (Berkers et al., 2005). The proteasome is also extensively cut by caspases leading to loss of activity (Gray et al., 2010; Figure 6—figure supplement 1). Moreover, we find that endoproteolysis during apoptosis cuts fewer than 20% of the proteins in the cell and often only once or twice per protein leading to stable domains (Dix et al., 2008; Mahrus et al., 2008; Crawford et al., 2013). These domains would be indistinguishable from intact proteins by iTRAQ. Therefore, we expect that detectable protein degradation is extremely limited and changes by iTRAQ largely reflect protein production alone. In contrast, mRNAs with very different stabilities (steady-state half-lives on the order of minutes to hours) are rapidly degraded with similar kinetics under various apoptotic inducers even prior to cell death (Del Prete et al., 2002).
 
@@ -175,45 +364,74 @@ We used these absolute abundance measurements to prepare an approximate quantita
 
 Based on this model, we can begin to reconcile our deep sequencing and proteomic data. During the early stages of apoptosis, the group of transcripts with multi-fold increases in relative abundance do not all lead to measurable protein increases. This is because the absolute number of these transcripts per cell in the sample remains fairly stable as transcription and mRNA degradation offset. This is illustrated by scaling the relative mRNA data shown in Figure 4A by a factor reflecting global mRNA degradation (Figure 5—figure supplement 3). Notably, the few proteins that are increased tend to demonstrate increases in absolute transcript level at later time points. Our model further shows that with the same fold-increase in transcript level, proteins with low baseline abundance will have more dramatic increases in relative protein concentration when compared to proteins with high baseline abundance (Figure 5—figure supplement 5).
 
-## Cellular struggle with chemotherapy does not affect apoptotic proteolysis
+### Cellular struggle with chemotherapy does not affect apoptotic proteolysis
 
 It is unknown how the cellular response to chemotherapeutic treatment influences cellular deconstruction by proteases during apoptosis, including both caspase and non-caspase proteases (Pop and Salvesen, 2009; Moffitt et al., 2010). Our laboratory has developed an N-terminomics technology using the engineered enzyme subtiligase to specifically label and enrich for free protein N-termini generated by proteolysis in complex biological samples (Mahrus et al., 2008). Others have also identified caspase cleavage substrates after treatment with chemotherapeutics with different N-terminomics approaches (Gausdal et al., 2008; Impens et al., 2008). By MS analysis in a variety of cell lines under both apoptotic and non-apoptotic conditions our laboratory has identified >8000 protein cleavage sites, including >1700 putative caspase substrates with an Asp immediately N-terminal to cleavage site (P1 position). We have compiled these cleavage sites into the ‘DegraBase’ (Crawford et al., 2013); wellslab.ucsf.edu/degrabase).
 
-We have previously found that different apoptotic inducers result in different patterns of caspase substrate cleavage, though the reasons for these differences remain unknown (
+We have previously found that different apoptotic inducers result in different patterns of caspase substrate cleavage, though the reasons for these differences remain unknown (Shimbo et al., 2012). We can now directly compare whether the cellular response to chemotherapy at the transcriptional and translational level influences the cleavage of substrates during terminal apoptosis. For each Cluster (Figure 1C) we queried the DegraBase to investigate if a potential substrate was identified in the DegraBase, if it was cut by caspases, and, if so, the relative frequency of caspase cleavage. If the cellular response to bortezomib induced common anti-apoptotic pathways targeted by the caspases, it was possible that genes in Cluster Upreg would be more prominently featured as substrates in the DegraBase. However, we found no evidence that genes in any Cluster were significantly enriched (or de-enriched) among identified caspase substrates (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig6-v1.jpg)
 
-**Figure 6.:** (A) We compared defined hierarchical clusters (Figure 1C) to all proteolytic cleavage substrates present in the DegraBase, a database of over 8000 cleavage events (Crawford et al., 2013). D at P1 suggests a putative caspase substrate. We find no significant variation in levels of proteolysis by χ2 analysis of each cluster compared to the set of all substrates. (B) Representative SRM intensity for appearance of proteolytically-processed peptides, both caspase- and non-caspase-cleaved (Figure 6—source data 1). Each trace represents a single parent ion/fragment ion transition; co-elution of multiple targeted transitions confirms peptide. (C) Heat map showing relative SRM intensity of 252 proteolytic peptides monitored in this system compared to 0 hr baseline. Five groups defined by unsupervised hierarchical clustering representing relative cleavage kinetics show caspase proteolysis generally precedes other apoptotic proteolytic events.DOI: http://dx.doi.org/10.7554/eLife.01236.02910.7554/eLife.01236.030Figure 6—source data 1.(A) SRM intensity data for peptides included in targeted degradomics assay. P1 residue refers to residue immediately N-terminal to identified proteolytic cleavage site based on protein sequence. (B) List of parent and fragment ion transitions tracked for targeted degradomic SRM assay.DOI: http://dx.doi.org/10.7554/eLife.01236.030
+**Figure 6.:** (A) We compared defined hierarchical clusters (Figure 1C) to all proteolytic cleavage substrates present in the DegraBase, a database of over 8000 cleavage events (Crawford et al., 2013). D at P1 suggests a putative caspase substrate. We find no significant variation in levels of proteolysis by χ2 analysis of each cluster compared to the set of all substrates. (B) Representative SRM intensity for appearance of proteolytically-processed peptides, both caspase- and non-caspase-cleaved (Figure 6—source data 1). Each trace represents a single parent ion/fragment ion transition; co-elution of multiple targeted transitions confirms peptide. (C) Heat map showing relative SRM intensity of 252 proteolytic peptides monitored in this system compared to 0 hr baseline. Five groups defined by unsupervised hierarchical clustering representing relative cleavage kinetics show caspase proteolysis generally precedes other apoptotic proteolytic events.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** Log2 expression of N-terminomics SRM data across apoptotic time course. N-terminomics data divided by biological function show that caspase proteolysis proceeds with similar rates across biological subdivisions. Proteins increased at the transcriptional and ribosome footprint level after bortezomib treatment are primarily included in the ‘chaperones and cell stress’ and ‘proteasome and ubiquitination’ groups. The ‘translation’ group demonstrates cleavage of many translation initiation factors.DOI: http://dx.doi.org/10.7554/eLife.01236.031
+**Figure 6—figure supplement 1.:** Log2 expression of N-terminomics SRM data across apoptotic time course. N-terminomics data divided by biological function show that caspase proteolysis proceeds with similar rates across biological subdivisions. Proteins increased at the transcriptional and ribosome footprint level after bortezomib treatment are primarily included in the ‘chaperones and cell stress’ and ‘proteasome and ubiquitination’ groups. The ‘translation’ group demonstrates cleavage of many translation initiation factors.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig6-figsupp2-v1.jpg)
 
-**Figure 6—figure supplement 2.:** These data demonstrate that even in the same protein substrates, caspase cleavage tends to proceed more rapidly during apoptosis than non-caspase cleavage.DOI: http://dx.doi.org/10.7554/eLife.01236.032
+**Figure 6—figure supplement 2.:** These data demonstrate that even in the same protein substrates, caspase cleavage tends to proceed more rapidly during apoptosis than non-caspase cleavage.
 
 These findings suggest that protease substrates are not targeted based on changes in their abundance. We further explored this hypothesis by monitoring the kinetic appearance of proteolytic substrates with a quantitative SRM assay (Agard et al., 2012; Shimbo et al., 2012). We included both non-caspase and caspase-cleaved peptides in our SRM assay with a preference for those found in multiple experiments under apoptotic conditions. Interestingly, many of the chaperone and co-chaperone proteins, relatively increased at the transcriptional and translational levels, had only non-caspase proteolytic peptides identified in the DegraBase. These included Hsp70-1, Hsp40, Hsp27, BiP (HSPA5), Hsc70 (HSPA8), and BAG3. The highly abundant and constitutively expressed chaperone Hsp90-β had numerous non-caspase cleavages and a single caspase-cleaved peptide.
 
 We used this SRM assay to explore whether proteins upregulated in response to bortezomib were more rapidly cleaved during apoptotic proteolysis. In Figure 6B we show example SRM intensity data while Figure 6C displays a heat map of similar SRM intensity data compared to the untreated baseline across all 252 peptides targeted. Caspase-cleaved peptides begin to appear at the 6 hr time point, when caspase activity was also detected biochemically (Figure 1B). In Figure 6—figure supplement 1 we subdivide the monitored peptides based on biological function. We do not find that stress response proteins are cleaved more rapidly than those in other groups. However, we note rapid cleavage of ATF4 (as seen before, [Shimbo et al., 2012]), BAG3, and Hsp90-β. It is possible that these particular proteins represent important nodes in deconstructing the cellular stress response after bortezomib. Generally, our results suggest that drug-specific response at the transcriptional and translational level does not broadly affect protease dynamics once apoptosis ensues.
 
-## Non-caspase proteolytic events with caspase-like kinetics
+### Non-caspase proteolytic events with caspase-like kinetics
 
 Our prior studies examining quantitative appearance of proteolytic substrates only focused on caspase substrates (Agard et al., 2012; Shimbo et al., 2012). Here, we also monitored the kinetics of appearance of non-caspase proteolytic events during apoptosis. We tracked 163 caspase-cleaved peptides (D at P1) and 89 peptides derived from non-caspase proteolysis. The list includes 52 proteins that were cleaved by both caspase- and non-caspase proteases to examine the relative kinetics of different proteolytic events in the same substrate (Figure 6—figure supplement 2).
 
 Unsupervised hierarchical clustering was used to rank the rates of proteolytic cleavage events (Figure 6C). We defined five broad groups ranging from the Fastest cleavages, with robust substrate appearance at 6 hr, to Slowest/No Change, with no increase in cleavage even at late apoptosis. Interestingly, the large majority of non-caspase-cleaved substrates appear in the Slow and Slowest/No Change groups. While this only represents a small portion of the >3,000 non-caspase endoproteolytic cleavages in the DegraBase, this finding suggests that most non-caspase proteolytic events in apoptotic cells are a consequence of and not a driver of apoptosis itself.
 
-However, we did find 16 non-caspase-cleaved peptides appearing in either the Fastest, Faster, or Mid categories (Table 2). Of the 89 non-caspase peptides monitored, 24 were tryptic-like (K or R at P1). Yet none of the 16 most rapidly cleaved peptides had a tryptic-like cleavage and only one has been previously annotated in MEROPS, the largest current database of proteolytic cleavage (Rawlings et al., 2012). These 16 peptides were cleaved with kinetics similar to caspases, suggesting that they may play roles in driving apoptosis. Among these we noted a relative preponderance of Pro (3 peptides), Gln (4 peptides), and Glu (4 peptides) residues at the P1 site (Table 2). While caspases may occasionally cleave at Glu (Krippner-Heidenreich et al., 2001), none of the other classic proteases thought to be active during MM1.S cell apoptosis, including the cathepsins or calpains, have a preference for Pro, Gln, or Glu at the P1 site (as described in MEROPS). Our findings suggest that, at least in a limited set of substrates, non-Asp cleavages may be mediated by uncharacterized proteases acting with similar kinetics as the caspases during apoptosis.10.7554/eLife.01236.033Table 2.Comparison of caspase- and non-caspase cleavages during apoptotic time course as monitored by N-terminomics and SRMDOI: http://dx.doi.org/10.7554/eLife.01236.033Total D = P1 peptides163Total non-D = P1 peptides89Tryptic-like (K or R at P1)24Non-tryptic (all other residues at P1)65ClusterD at P1Non-D at P1Slowest/no change636Slow2328Mid5010Faster372Fastest384Non-D peptides in fastest three clustersUniProtGeneP1Sequence PositionMEROPS annotated?Fastest(C)GQVAAAAAAQPPASHGPERO95817BAG3C151N(S)AVGFNEMEAPTTAYKP14317HCLS1S208N(P)GHGSGWAETPRO75533SF3B1P304N(Q)VLTVPATDIAEETVISEEPPAKRQ06547GABP1Q306NFast(Q)ALKEEPQTVPEMPGETPPLSPIDMESQERP05412JUNQ223N(P)AVNGATGHSSSLDARQ07817BCL2L1P63NMid(E)AAGATGDAIEPAPPSQGAEAKP49006MARCKSL1E56N(Q)AASGDVQTYQIRP16220CREB1Q243N(E)GGIDMDAFQERP29083GTF2E1E297N(A)SIFGGAKPVDTAARP23588EIF4BA358Y–meprin alpha (Becker-Pauly et al., 2011)(E)AIQNFSFRO75122CLASP2E946N(P)HFEPVVPLPDKIEVKP49792RANBP2P1170N(N)SWFENAEEDLTDPVRQ13813SPTAN1N2104N(L)AFSEQEEHELPVLSRO75995SASH3L128N(Q)AIMEMGAVAADKGKKO95817BAG3Q522N(E)AILEDEQTQRQ9P2E9RRBP1E1298NBy Fisher′s exact test there is a significant absence of tryptic-like cleavages in the 16 rapidly cleaved peptides (p=0.005).
+However, we did find 16 non-caspase-cleaved peptides appearing in either the Fastest, Faster, or Mid categories (Table 2). Of the 89 non-caspase peptides monitored, 24 were tryptic-like (K or R at P1). Yet none of the 16 most rapidly cleaved peptides had a tryptic-like cleavage and only one has been previously annotated in MEROPS, the largest current database of proteolytic cleavage (Rawlings et al., 2012). These 16 peptides were cleaved with kinetics similar to caspases, suggesting that they may play roles in driving apoptosis. Among these we noted a relative preponderance of Pro (3 peptides), Gln (4 peptides), and Glu (4 peptides) residues at the P1 site (Table 2). While caspases may occasionally cleave at Glu (Krippner-Heidenreich et al., 2001), none of the other classic proteases thought to be active during MM1.S cell apoptosis, including the cathepsins or calpains, have a preference for Pro, Gln, or Glu at the P1 site (as described in MEROPS). Our findings suggest that, at least in a limited set of substrates, non-Asp cleavages may be mediated by uncharacterized proteases acting with similar kinetics as the caspases during apoptosis.
 
-## An integrated approach informs combination therapeutic regimens
+**Table 2.**
+ Comparison of caspase- and non-caspase cleavages during apoptotic time course as monitored by N-terminomics and SRM
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Total D = P1 peptides</td>
+      <td>163</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Total non-D = P1 peptides</td>
+      <td>89</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tryptic-like (K or R at P1)</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Non-tryptic (all other residues at P1)</td>
+      <td>65</td>
+    </tr>
+  </tbody>
+</table>
+
+_By Fisher′s exact test there is a significant absence of tryptic-like cleavages in the 16 rapidly cleaved peptides (p=0.005)._
+
+### An integrated approach informs combination therapeutic regimens
 
 Genes upregulated at both the transcriptional, translational, and protein level may represent the cellular protective response to avoid apoptosis. We thus hypothesized that by inhibiting these ‘first responders’ to the chemotherapeutic treatment we may be able to drive the malignant cell toward apoptosis and reduce therapeutic resistance. To this end we identified the most prominent upstream regulators of the genes in Cluster Upreg (Table 1). These include NRF2, a transcription factor regulating the hypoxic response; HSF1, a transcription factor regulating the heat shock response; and PERK, the ER-resident kinase. HSF1 in particular regulates the transcription of many genes we also found increased by proteomics experiments (Mendillo et al., 2012).
 
-We therefore explored whether HSF1 inhibition would enhance cell death by bortezomib in MM1.S cells. We used a recently described small molecule inhibitor of HSF1, KRIBB11 (
+We therefore explored whether HSF1 inhibition would enhance cell death by bortezomib in MM1.S cells. We used a recently described small molecule inhibitor of HSF1, KRIBB11 (Yoon et al., 2011). This drug was added with and without a low dose of 2.5 nM bortezomib, which alone led to ∼50% cell death over 48 hr. At the 24 hr time point, the combination of KRIBB11 and bortezomib caused significant cell death, while neither compound alone decreased cell viability (Figure 7A).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/01236/elife-01236-fig7-v1.jpg)
 
-**Figure 7.:** (A) Bort = bortezomib. HSF1 inhibitor used was KRIBB11 (Yoon et al., 2011) and shows additive effect with bortezomib. (B) PERK inhibitor was GSK2606414 and shows additive effect with bortezomib (Axten et al., 2012). All measurements in 24-well plates in triplicate; mean ± SD shown.DOI: http://dx.doi.org/10.7554/eLife.01236.034
+**Figure 7.:** (A) Bort = bortezomib. HSF1 inhibitor used was KRIBB11 (Yoon et al., 2011) and shows additive effect with bortezomib. (B) PERK inhibitor was GSK2606414 and shows additive effect with bortezomib (Axten et al., 2012). All measurements in 24-well plates in triplicate; mean ± SD shown.
 
 There are no known small molecules which specifically inhibit NRF2, but we could test whether PERK inhibition could sensitize cells to death using a newly described small molecule PERK inhibitor, GSK2606414 (Axten et al., 2012). Indeed, PERK inhibition did sensitize cells to death by bortezomib (Figure 7B). For both the HSF1 and PERK inhibitors the most robust effects were seen at concentrations in excess of the in vitro IC50 (∼1.2 µM for KRIBB11, ∼1 nM for GSK2606414). Notwithstanding potential off-target effects, these results would support the notion that integrated systems-level data can inform potential chemotherapeutic combinations.
 
@@ -237,21 +455,21 @@ We hypothesize that using a similar systems-based approach with less well-studie
 
 ## Materials and methods
 
-## Cell culture and drug treatment
+### Cell culture and drug treatment
 
 MM1.S cells (obtained from ATCC, Manassas, VA, USA) were grown in suspension to 1 × 106 cells/ml in RPMI-1640 media with 10% FBS. Bortezomib (LC Laboratories, Woburn, MA, USA) 20 µM stock solution in sterile-filtered phosphate buffered saline (PBS) was simultaneously added to a final concentration of 20 nM to flasks each containing 300 × 106 cells (PBS only added to control sample). At the indicated time point cells were separated into aliquots for each experimental approach (15 × 106 cells in duplicate for each of mRNAseq, iTRAQ proteomics, and ribosome footprinting; 200 × 106 cells for N-terminomics). Cells for ribosome footprinting alone were incubated at 37°C for 1 min with 100 µg/mL cycloheximide (Sigma-Aldrich, St. Louis, MO, USA) from 50 mg/ml stock in 100% EtOH. All cells were washed in PBS (PBS + 100 µg/ml cycloheximide for ribosome footprint samples), pelleted by centrifugation, and flash frozen in liquid N2, then stored at −80°C. Cell viability and caspase activity were assessed by Cell-Titer Glo and Caspase-Glo (Promega, Madison, WI, USA) assays per manufacturer protocol, respectively. KRIBB11 and GSK2606414 were purchased from EMD Millipore (Billerica, MA, USA) and 10 mM stock solutions prepared in DMSO and stored in single-use aliquots at −80°C. These drugs and bortezomib were added as indicated in triplicate in 24-well plates at an MM1.S cell density of 0.5 × 106 cells/ml.
 
-## Measurement of total RNA and mRNA
+### Measurement of total RNA and mRNA
 
 Duplicate samples of 4 × 106 MM1.S cells at each time point after 20 nM bortezomib treatment were pelleted at 800×g for 5 min, supernatant aspirated, resuspended in ice-cold PBS, pelleted again, and supernatant aspirated. Total RNA was extracted using Trizol reagent (Invitrogen, Carlsbad, CA, USA) following manufacturer’s protocol; lysis was performed by passing 20x through a 22½ gauge needle. Total RNA was resuspended in 100 µl RNAse-free water and further purified using RNAeasy kit (Qiagen, Germantown, MD) with on-column DNAse I treatment per manufacturer’s protocol. Purified RNA pellet was resuspended in 100 µl RNAse-free water. Total RNA concentration (as shown in Figure 1B) was measured spectrophotometrically using a NanoDrop ND-1000 UV-Vis spectrophotometer (Thermo Fisher, Waltham, MA, USA).
 
 mRNA was further purified by poly(A) separation using Oligo (dT)25 Magnetic Beads kit (New England BioLabs, Ipswich, MA, USA). Total RNA samples were diluted with 500 µl of kit Lysis/Binding buffer and bound to of equilibrated beads (100 µl bead slurry used). Beads were washed once in 500 µl Wash Buffer one followed by one wash in 500 µl Wash Buffer two. mRNA was eluted in 40 µl Elution Buffer and concentration measured by NanoDrop.
 
-## Immunoblotting and protein measurements
+### Immunoblotting and protein measurements
 
 A separate time course of MM1.S cells was prepared and treated with 20 nM bortezomib as described above 10 × 106 MM1.S cells harvested at indicated time points were lysed in RIPA buffer (50 mM Tris-HCl, 150 mM NaCl, 1% NP-40, 0.5% sodium deoxycholate, 0.1% SDS, pH 8.0) supplemented with 5 mM EDTA and 1x protease inhibitor cocktail (Cell Signaling Technology, Danvers, MA, USA). Protein concentration from cell lysates was measured by BCA assay (Thermo Fisher, Waltham, MA, USA). ∼25 µg of total protein at each time point was separated on NuPAGE 4–12% Bis-Tris polyacrylmide gels (Invitrogen) and transferred to 0.45 µM PVDF membrane. Primary antibodies used for immunoblotting were obtained from Cell Signaling Technology (α-CHOP, α-XIAP, α-Bid, α-PERK, α-4E-BP1, α-phospho(Thr37/46)-4E-BP1, α-eIF2α, α-phospho(Ser51)-eIF2α), Santa Cruz Biotechnology (Santa Cruz, CA, USA) (α-CREB2 [ATF4]), BioLegend (San Diego, CA, USA) (α-XBP1s), and Sigma (α-β-actin).
 
-## Ribosome profiling and mRNAseq sample preparation and library generation
+### Ribosome profiling and mRNAseq sample preparation and library generation
 
 Harvested cell pellets for ribosome profiling were suspended and lysed in 500 µl ice-cold polysome lysis buffer (20 mM Tris, pH 7.4, 250 mM NaCl, 15 mM MgCl2, 1 mM dithiothreitol, 0.5% Triton X-100, 24 U/ml Turbo DNase (Ambion, Austin, TX, USA), and 100 µg/ml cycloheximide) by repeated pipetting. Lysate was clarified by centrifugation for 10 min at 20,000×g at 4°C. 3 µl of RNase I 100 U/μl (Ambion) was added and sample incubated for 45 min at room temperature. The digestion was stopped by the addition of 10 μl SuperaseIn 20 U/μl (Ambion). Digested samples was then loaded onto a 1 M sucrose cushion, prepared in polysome buffer plus 0.1 U/μl SuperaseIn. Ribosomes were pelleted by centrifugation for 4 hr at 70,000 rpm, 4°C in a TLA-110 rotor. The liquid was removed and the pellet was resuspended in 600 μl 10 mM Tris (pH 7), followed by the immediate addition of 40 μl 20% SDS. The sample was heated to 65°C and RNA was extracted using two rounds of acid phenol/chloroform followed by chloroform alone. RNA was precipitated from the aqueous phase by adding sodium acetate to a final concentration of 300 mM followed by at least one volume of isopropanol. Precipitation was carried out at −20°C overnight and RNA was then pelleted by centrifugation for 30 min at 20,000×g, 4°C. The supernatant was discarded, the pellet was air-dried, and the RNA was resuspended in 25 μl Tris (pH 7). RNA was separated by gel electrophoresis on a 15% TBE-Urea gel (Invitrogen) and gel fragments extracted corresponding to ∼25–35 nt in size. RNA was extracted from gel as in Ingolia et al. (2011).
 
@@ -259,7 +477,7 @@ Harvested cell pellets for mRNAseq were lysed by repeated pipetting in Trizol (I
 
 RNA samples were dephosphorylated, ligated to linker, and separated by gel electrophoresis as described previously (Ingolia et al., 2011). Ribosome footprint samples were enriched by subtractive hybridization of contaminating rRNA sequences. We used biotin-modified oligonucletoides and capture on streptavidin-coated beads; oligonucleotide sequences complimentary to rRNA were identical to Stern-Ginossar et al. (2012). Reverse transcription and cDNA library preparation were completed as in Ingolia et al. (2011).
 
-## Analysis of deep sequencing data
+### Analysis of deep sequencing data
 
 Sequencing was performed on an Illumina HiSeq 2000 using single end, 50-bp reads. Before alignment, linker and poly(A) sequences were computationally removed from the 3′ ends of raw sequencing reads. Bowtie v0.12.8 (Langmead et al., 2009) (allowing up to two mismatches) was used to perform the alignments with up to two mismatches allowed. For footprint data only reads of length 26–36 nt (footprint length with cycloheximide (Ingolia et al., 2011)) were used for alignment. Reads were first aligned vs human rRNA and tRNA sequences; aligned reads were discarded. All remaining reads were next aligned to known canonical transcripts in hg19 (downloaded from genome.ucsc.edu 23 May 2012). Remaining unaligned reads were aligned to the hg19 genome. We used in-house C++ scripts to assign and count unique reads mapping to canonical hg19 transcripts. Only uniquely mapping reads were used for further analysis. The midpoint of footprint reads was used to assign a unique nucleotide location for that read. mRNA-seq reads were assigned a unique nucleotide position at the 5′ end of the read. mRNA and footprint read density were calculated in units of reads per kilobase million (RPKM) to normalize for gene length and total reads per sequencing run. Raw sequencing data is available in the GEO repository with accession number GSE48785.
 
@@ -267,13 +485,13 @@ Selected sequencing reads were visualized through Integrative Genomics Viewer 2.
 
 All aligned transcripts were initially assigned to a unique UCSC gene ID. Conversion tables available from UCSC through the kgXref function were used to convert UCSC gene ID to HUGO gene nomenclature and to UniProt accession number for further analysis. Where indicated, gene lists were analyzed by Ingenuity Pathway Analysis (Ingenuity Systems, Redwood City, CA, USA) using default settings for included genes and interaction networks.
 
-## iTRAQ proteomics—sample preparation
+### iTRAQ proteomics—sample preparation
 
 iTRAQ sample preparation was performed in a similar manner to Mertins et al. (2012) with some modifications. 15 × 106 cells harvested at each time point (as above) were thawed and lysed by sonication in 250 µl lysis buffer (7M Guanidine HCl, 75 mM NaCl, 100 mM bicine pH 8.0) supplemented with protease inhibitors (500 µM 4-(2-Aminoethyl) benzenesulfonyl fluoride HCl, 1 mM E-64, 1 mM phenylmethylsulfonyl fluoride, and 1 mM EDTA). Lysates were cleared by centrifugation at 16,500×g for 10 min and protein concentration was measured by BCA assay. Lysate containing 250 µg of protein was diluted to 100 µl with lysis buffer. Disulfide bonds were reduced with 5 mM dithiothreitol and cysteines alkylated with 10 mM iodoacetimide. Lysate was diluted 1:8 with trypsin dilution buffer (100 mM bicine pH 8.0, 1 mM CaCl2, 75 mM NaCl). Sequencing grade modified trypsin (Promega) was added at an enzyme-to-substrate ratio of 1:25. Trypsin digestion took place for 16 hr with agitation at room temperature. Samples were acidified with trifluoroacetic acid to a final concentration of 0.5% to halt digestion. Tryptic peptides were desalted on Waters SepPak C18 (Milford, MA, USA) columns and evaporated to dryness on a vacuum concentrator.
 
 Peptide samples were resuspended in 40 µl 0.5 M TEAB pH 8.5. Peptide concentration was determined by BCA assay. Labeling with 8-plex iTRAQ reagent was performed per manufacturer instructions (AB Sciex, Framingham, MA, USA): briefly, 100 µg of peptides at each time point was diluted to 30 µl with 0.5 M TEAB; 6-plex iTRAQ reagent was resuspended in 70 µl EtOH. Peptides were mixed with reagent and incubated for 1 hr at room temperature. The reaction was halted using 50 mM Tris/HCl pH 7.5. The labeled reaction products for each sample were combined and evaporated to dryness. Combined labeled peptides were desalted using Waters SepPak C18 cartridge. 0 hr samples were labeled with 113 mass tag; 1.5 hr, 115; 3 hr, 116; 6 hr, 117; 9 hr, 118; 12 hr, 119.
 
-## iTRAQ proteomics–LC-MS/MS
+### iTRAQ proteomics–LC-MS/MS
 
 Peptides were resuspended in 0.1% formic acid and then separated into 30 fractions via reverse phase high-pH fractionation using an XBridge C18 column (1.0 × 100 mm, 3.5 μm; Waters) on a Waters 2796 BioSeparations Module HPLC. We used a 70 min gradient with a linear increase from 2% to 38% acetonitrile in water and constant 10% ammonium bicarbonate, pH 10.5; flow rate was 50 µl/min. Fractions were evaporated to dryness and stored at −80°C, then resuspended in 0.1% formic acid prior to mass spectrometry analysis.
 
@@ -283,13 +501,13 @@ Data-dependent acquisition was performed using Analyst v.2.0 software (AB Sciex)
 
 Each fraction of the combined iTRAQ sample was also analyzed on an LTQ Orbitrap Velos mass spectrometer (Thermo Fisher Scientific) coupled in-line to a nanoAcquity UPLC system (Waters). Injected samples were trapped on a Symmetry C18 Column (0.18 × 20 mm, 5 μm; Waters) for 5 min at 1% of Buffer B before starting the gradient; an analytical BEH130 C18 column (0.075 × 200 mm column, 1.7 μm; Waters) was used with a flow rate of 600 nl/min. A linear gradient to 38% Buffer B was run over 100 min, then increased to 75% B over 10 min, increased to 90% B over 5 min, then decreased to 2% B and re-equilibrated for 15 min (total method 130 min). Data-dependent acquisition was performed using the Xcalibur 2.1 software in positive ion mode at a spray voltage of 2.5 kV. MS1 survey spectra were acquired in the Orbitrap with a resolution of 60,000 and a mass range from 300 to 1400 m/z. All iTRAQ data was acquired by fragmenting the eight most intense ions per cycle in higher-energy collisional dissociation (HCD) mode. Collision energy was set to 45, maximum inject time was 250 ms and maximum ion count was 1 × 105 counts. We used an isolation window of 2.3 Th for ions selected for MS/MS. Ions selected for MS/MS were dynamically excluded for 60 s after acquisition.
 
-## iTRAQ proteomics—peptide identification and protein quantification
+### iTRAQ proteomics—peptide identification and protein quantification
 
 Peptide identification was performed using Protein Prospector (v. 5.9) (University of California, San Francisco). All spectra were searched vs the full human SwissProt database (downloaded 21 March 2012) with reverse sequence database as implemented in Protein Prospector for decoy matches. Search parameters included: Fixed modifications carbamidomethyl (cysteine), iTRAQ-8plex (N-terminus), iTRAQ-8plex (lysine); Variable modifications methione-loss (N-terminus) and methionine oxidation; two missed tryptic cleavages allowed; for Orbitrap Velos data, parent and fragment mass tolerance of 20 ppm was used; for QSTAR Elite data, parent mass tolerance was 50 ppm and fragment mass tolerance was 150 ppm. Expectation value thresholds for peptide identification were modified to maintain a false discovery rate <1% based on the number of spectra matching to reverse decoy sequences.
 
 iTRAQ signal was quantified using the Search Compare function of Protein Prospector, which extracts the peak intensity of the MS2 signal in the iTRAQ label range. Only peptides with an iTRAQ signal >300 cps at the 0 hr time point were included for further analysis to reduce noise in quantification. Only peptides uniquely matching to a single entry in the human SwissProt database were included. Proteins were only included with a minimum of two unique peptides matched. Protein quantification was performed by summation of iTRAQ signal across all peptides assigned to that protein at each time point. Total log2 iTRAQ signal intensity across all peptides at a time point was median-normalized for comparison across time points.
 
-## SRM assay for iTRAQ validation–method development
+### SRM assay for iTRAQ validation–method development
 
 We attempted to develop orthogonal, targeted, label-free Selected reaction monitoring (SRM) assays for 250 proteins that were identified in iTRAQ experiments. We primarily concentrated on proteins with relative increases in mRNA expression as found in deep sequencing experiments. Based on prior yeast studies (Lee et al., 2011), these would be expected to most likely result in protein changes after perturbation.
 
@@ -299,35 +517,55 @@ All SRM analysis was carried out on an AB Sciex QTRAP 5500 triple quadrupole mas
 
 Peptides chosen for further development were then limited to the four most intense transitions as found in unscheduled runs. A scheduled SRM method was developed with a retention time window of ±5 min. The four most intense transitions were first subject to collision energy (CE) optimization in ±4 V steps to enhance intensity of detected transitions. CE-optimization data from QTRAP 5500 on the same samples was again analyzed in SkyLine. Peptides were confidently assigned based on the identification of four out of four targeted transitions co-eluting at the appropriate retention time. Ultimately, our final SRM method included from one to three confidently-assigned peptides matching to 152 proteins (all transitions listed in Figure 4—source data 1) with the CE for each transition used which maximized detected intensity.
 
-## SRM assay for iTRAQ validation—sample analysis
+### SRM assay for iTRAQ validation—sample analysis
 
 We prepared an independent time course of MM1.S cells exposed to 20 nM bortezomib and harvested at 0 hr, 1.5 hr, 3 hr, 6 hr, 9 hr, and 12 hr. Cell viability and caspase activity assays were similar to that shown in Figure 1B. We prepared tryptic peptides from 15 × 106 cells at each time point (as described above prior to iTRAQ labeling). ∼500 ng of tryptic peptides were injected in triplicate and analyzed using the final scheduled SRM assay.
 
 Peptide intensity in each sample was measured as the sum of all transition peak areas for that peptide (as measured by analysis in SkyLine). For peptides not clearly identified at all time points, a retention time window was used identical to that in other injections with background signal integrated and used for analysis. To normalize peptide concentration across samples, we used peptides derived from a set of high abundance proteins not expected to significantly change during the time course (actin, tubulin, and filamin-A). We derived an index based on the geometric mean intensity of peptides from these ‘housekeeping’ proteins and scaled SRM intensity of all peptides in each sample based on the median value of this index. Corrected peptide intensity was averaged across injections for each sample. Protein intensity was measured as the sum of peptide intensity for each sample.
 
-## Estimation of absolute mRNA and protein copies per cell
+### Estimation of absolute mRNA and protein copies per cell
 
-For mRNA copy number estimation we used an approach similar to that used in Schwannhausser et al. (2011), described initially by Mortazavi et al. (2008). Total mRNA measured in duplicate by NanoDrop in the untreated MM1.S sample (0.88 ± 0.09 µg) was divided by 4 × 106 cells to estimate the mRNA yield per cell (2.19 × 10−13 g). mRNA sequencing reads were approximately evenly distributed across A:C:G:T; the average molecular weight of a RNA monophosphate nucleotide (averaged across AMP, CMP, GMP, and UMP) is 339.5 g/mol. We can thus calculate the total number of mRNA nucleotides per cell (T; 6.40 × 10−15 mol/cell). The copy numbers of individual mRNAs (c) can be calculated by the total number of sequencing reads which mapped uniquely to a given transcript (rtranscript), the total reads (rtotal; 8,744,024 reads uniquely aligning to hg19 transcripts for the 0 hr MM1.S sample), and the transcript length (L) by the equation:rtranscriptrtotal=c×LT.
+For mRNA copy number estimation we used an approach similar to that used in Schwannhausser et al. (2011), described initially by Mortazavi et al. (2008). Total mRNA measured in duplicate by NanoDrop in the untreated MM1.S sample (0.88 ± 0.09 µg) was divided by 4 × 106 cells to estimate the mRNA yield per cell (2.19 × 10−13 g). mRNA sequencing reads were approximately evenly distributed across A:C:G:T; the average molecular weight of a RNA monophosphate nucleotide (averaged across AMP, CMP, GMP, and UMP) is 339.5 g/mol. We can thus calculate the total number of mRNA nucleotides per cell (T; 6.40 × 10−15 mol/cell). The copy numbers of individual mRNAs (c) can be calculated by the total number of sequencing reads which mapped uniquely to a given transcript (rtranscript), the total reads (rtotal; 8,744,024 reads uniquely aligning to hg19 transcripts for the 0 hr MM1.S sample), and the transcript length (L) by the equation:
+
+$$
+\frac{r_{transcript}}{r_{total}}=\frac{c\timesL}{T}.
+$$
 
 For protein copy number estimation, we harvested and prepared tryptic peptides (as described above prior to iTRAQ labeling) from 15 × 106 untreated MM1.S cells. Peptides were separated into 20 fractions by reverse-phase high pH chromatography (same protocol as above for iTRAQ peptides). Each fraction was analyzed separately in HCD mode on the LTQ Orbitrap Velos Mass Spectrometer and nanoAcquity UPLC as above (gradient: 60 min linear gradient from 3% to 30% buffer B, 5 min gradient to 90% B, held 10 min, re-equilibrate 15 min at 3% B; mass spectrometer settings same as for iTRAQ analysis except collision energy at 35% and ion accumulation at 1 × 106). We analyzed the MS data using the MaxQuant software package (v.1.3.0.5) (Cox and Mann, 2008) with Carbamidomethyl cysteine as a fixed modification; Methionine oxidation and N-terminal acetylation as variable modifications; initial parent and fragment MS/MS tolerance of 20 ppm; a minimum peptide length of seven; one missed tryptic site; and razor peptides used for iBAQ quantification. Peptides were searched against the full Uniprot Human Proteome database (downloaded November 10, 2012) and contaminants enabled in MaxQuant; maximum allowable peptide and protein false discovery rate was 1% as searched against reverse sequence library based on Uniprot database. In MaxQuant peptide matches were assigned to protein groups (a cluster of a base protein plus additional proteins matching to a subset of the same peptides). Protein groups matching the reverse database or contaminants were discarded.
 
-iBAQ quantification in MaxQuant evaluates the intensity of each protein in the sample as the sum of all the peptide intensities in the MS1 scan for peptides which matched to that protein group. iBAQ analysis and database searching resulted in assignment of intensity to 3390 protein groups with a minimum of one assigned peptide. We assigned each protein group to an individual protein based on the primary UniProt ID associated with the analysis output. We used the total iBAQ signal in the sample (Itotal), across all matched peptides, as a measure of the total cellular protein signal as measured on the mass spectrometer. We divided the measurement of total protein in the sample (from BCA assay) by 10 × 106 cells to obtain an estimate of total protein per cell (gtotal; 5.28 × 10−11 g). We then calculated the grams of protein in the cell comprised of an individual protein (gprotein) based on the iBAQ signal assigned to that protein (Iprotein) as a fraction of total iBAQ signal.gproteingtotal=IproteinItotalUsing the grams of an individual protein per cell, the molecular weight of the assigned protein in g/mol, and Avagadro’s number, we assign an estimated number of copies per protein per cell.
+iBAQ quantification in MaxQuant evaluates the intensity of each protein in the sample as the sum of all the peptide intensities in the MS1 scan for peptides which matched to that protein group. iBAQ analysis and database searching resulted in assignment of intensity to 3390 protein groups with a minimum of one assigned peptide. We assigned each protein group to an individual protein based on the primary UniProt ID associated with the analysis output. We used the total iBAQ signal in the sample (Itotal), across all matched peptides, as a measure of the total cellular protein signal as measured on the mass spectrometer. We divided the measurement of total protein in the sample (from BCA assay) by 10 × 106 cells to obtain an estimate of total protein per cell (gtotal; 5.28 × 10−11 g). We then calculated the grams of protein in the cell comprised of an individual protein (gprotein) based on the iBAQ signal assigned to that protein (Iprotein) as a fraction of total iBAQ signal.
+
+$$
+\frac{g_{protein}}{g_{total}}=\frac{I_{protein}}{I_{total}}
+$$
+
+Using the grams of an individual protein per cell, the molecular weight of the assigned protein in g/mol, and Avagadro’s number, we assign an estimated number of copies per protein per cell.
 
 These measures of absolute copies of mRNA transcripts and proteins per cell are clearly rough approximations. In an important initial comparison, the median of the distributions for both mRNA and protein copy per cell are of the same order of magnitude as, though somewhat lower than, those found in Schwanhausser et al. (2013). This may reflect differences in the cell line (mouse NIH3T3 vs human MM1.S) as well as differences in measurement. However, the overall similarity of the distributions found here to those found by Schwanhausser et al. (2013) indicates that our data are sufficient as a guide for our mass-action model (below). We further emphasize that our data are not intended as a definitive measure of mRNA or protein copy numbers in MM1.S cells. Even if there are systematic errors in the quantitation (i.e., if true protein copies per cell are all threefold higher), the fitting parameters for our mass-action model (see below) will be uniformly scaled but the overall interpretation of the model will be unchanged. This issue of scaling was illustrated in the corrigendum to the original manuscript by Schwanhausser et al. (2013). The original paper (Schwanhausser et al., 2011) used the incorrect standard for protein abundance estimation, leading to threefold in changes in the protein distribution; the corrected scale led to an increase in the fit parameter ksp but no changes to the model or conclusions of the paper.
 
-## Quantitative modeling of protein translation
+### Quantitative modeling of protein translation
 
-To model the conversion of mRNA to protein in this system we used a mass-action model of translation, as originally described in Hargrove and Schmidt (1989), and further used by Schwanhausser et al. (2011), as an ordinary differential equation:dPdt=kspR(t)−kdpP(t)Here the number of protein copies (P(t)) changes over time as a function of the number of mRNA transcripts (R(t)), the translation rate constant ksp, and the protein degradation rate constant kdp.
+To model the conversion of mRNA to protein in this system we used a mass-action model of translation, as originally described in Hargrove and Schmidt (1989), and further used by Schwanhausser et al. (2011), as an ordinary differential equation:
+
+$$
+\frac{dP}{dt}=k_{sp}R(t)−k_{dp}P(t)
+$$
+
+Here the number of protein copies (P(t)) changes over time as a function of the number of mRNA transcripts (R(t)), the translation rate constant ksp, and the protein degradation rate constant kdp.
 
 In our system, we first modeled R(t) using the normalized sequencing reads (RPKM) at later time points and taking the ratio to the RPKM at 0 hr. We then multiplied this RPKM ratio at each time point by the absolute number of mRNA transcripts at 0 hr as measured above. We focused on analyzing only a subset of 13 transcripts with increased relative mRNA abundance but with variable detected changes at the protein level (i.e., some with increased protein, some with no protein change). We plot this data in Figure 5D, Figure 5—figure supplement 4A,C. We found that for this subset of transcripts, this mRNA transcript data could be well-approximated by fitting either a quadratic (FTL, SQSTM1, CTSD) or 4-parameter sigmoid (all others). This fit function (fitting performed in GraphPad Prism software) describes R(t).
 
-However, as discussed in the main text, this function R(t) is based on relative transcript expression at different time points. This would be an effective measure of mRNA transcripts per cell in the setting of constant total mRNA concentration. In this system, though, we find that mRNA is significantly degraded at later time points (Figure 1B). Therefore, we fit an additional function G(t) to this mRNA data as a four-parameter sigmoid fit to describe this global mRNA degradation. By incorporating G(t) into the mass-action model above, assuming similar degradation rates of each transcript during apoptosis (as described by Del Prete et al. (2002)), the combined term R(t)G(t) now represents the absolute number of mRNA transcripts per cell in our system:dPdt=kspR(t)G(t)−kdpP(t).
+However, as discussed in the main text, this function R(t) is based on relative transcript expression at different time points. This would be an effective measure of mRNA transcripts per cell in the setting of constant total mRNA concentration. In this system, though, we find that mRNA is significantly degraded at later time points (Figure 1B). Therefore, we fit an additional function G(t) to this mRNA data as a four-parameter sigmoid fit to describe this global mRNA degradation. By incorporating G(t) into the mass-action model above, assuming similar degradation rates of each transcript during apoptosis (as described by Del Prete et al. (2002)), the combined term R(t)G(t) now represents the absolute number of mRNA transcripts per cell in our system:
+
+$$
+\frac{dP}{dt}=k_{sp}R(t)G(t)−k_{dp}P(t).
+$$
 
 To estimate absolute protein copies per cell at later time points, we used the label-free SRM intensity data (as this does not suffer from compression ratio artifacts as seen in iTRAQ data). We took the ratio of SRM intensity at later time points to that at 0 hr, then multiplied by the absolute copies protein copies per untreated MM1.S cell as measured by iBAQ. We scaled the 12 hr SRM data to reflect the decreased protein concentration in the sample.
 
 We used Mathematica (v. 9) software to numerically solve the differential equation above for each of the 13 genes chosen for analysis. We fit this differential equation to the plotted protein data (as shown in Figure 5E, Figure 5—figure supplement 4B,D). This equation has three free fitting parameters to describe the six protein data points: protein copies at 0 hr, ksp, and kdp. Protein copies at 0 hr was varied a maximum of 10% from the measured protein copies per cell by iBAQ. kdp was assumed to be relatively constant for all proteins in the background of proteasomal blockade by bortezomib. We only varied the range between 0.010–0.015 hr−1, similar to the corresponding average protein half-life found in Schwanhausser et al. (2011). Therefore, we primarily varied the translation rate constant ksp in order to fit this model to the protein data. We performed the fits by manually minimizing the least-squares difference between model fit and protein data in Mathematica. We found that the model could indeed well-describe the protein data; in addition, the fit ksp parameter ranged from 10 to 270 proteins/transcript/hr, consistent with the range in Schwanhausser et al. (2011).
 
-## SRM assay for degradomics
+### SRM assay for degradomics
 
 As described in Shimbo et al. (2012), cell pellets were lysed by sonication in 4.0% SDS, 400 mM Bicine (pH8.0), and supplemented with protease inhibitors 0.1 mM z-VAD-fmk, 0.1 mM E-64, 1 mM AEBSF, 1 mM PMSF, and 5 mM EDTA. Spike-in internal standards were added to each sample after lysis: 50 µg each of bovine catalase and yeast alcohol dehydrogenase (Sigma). Proteins were reduced by TCEP, cysteines alklyated by iodoacetamide, and free N-termini biotinylated via the reaction of TEVest4 ester and subtiligase enzyme as previously described (Shimbo et al., 2012). Biotinylated peptides were precipitated, resuspended in 5.3 M Guanidine HCl and captured on NeutraAvidin agarose beads (Thermo). The beads were extensively washed in 5 M Guanidine HCl followed by on-bead trypsin digestion overnight at room temperature with agitation. As previously described, captured peptides were released from beads by incubation with TEV protease (Shimbo et al., 2012). Peptides were desalted using C18 ZipTips (Millipore), evaporated to dryness, and stored at −80°C for analysis.
 

@@ -23,11 +23,11 @@
 
 ### Affiliations
 
-1. https://ror.org/023b72294 College of Biomedicine and Health, College of Life Science and Technology, Huazhong Agricultural University Wuhan China
-2. https://ror.org/01dr2b756 Center for Neurological Disease Research, Taihe Hospital, Hubei University of Medicine Shiyan China
-3. https://ror.org/05xdrcw34 iRegene Therapeutics Co., Ltd Wuhan China
-4. https://ror.org/01v5mqw79 Department of Neurosurgery, Zhongnan Hospital of Wuhan University Wuhan China
-5. https://ror.org/00p991c53 Department of Radiology, Hubei Cancer Hospital, Tongji Medical College, Huazhong University of Science and Technology Wuhan China
+1. College of Biomedicine and Health, College of Life Science and Technology, Huazhong Agricultural University Wuhan China ([ROR:023b72294](https://ror.org/023b72294))
+2. Center for Neurological Disease Research, Taihe Hospital, Hubei University of Medicine Shiyan China ([ROR:01dr2b756](https://ror.org/01dr2b756))
+3. iRegene Therapeutics Co., Ltd Wuhan China ([ROR:05xdrcw34](https://ror.org/05xdrcw34))
+4. Department of Neurosurgery, Zhongnan Hospital of Wuhan University Wuhan China ([ROR:01v5mqw79](https://ror.org/01v5mqw79))
+5. Department of Radiology, Hubei Cancer Hospital, Tongji Medical College, Huazhong University of Science and Technology Wuhan China ([ROR:00p991c53](https://ror.org/00p991c53))
 
 † Corresponding author
 
@@ -45,35 +45,79 @@ In this study, we established ischemic stroke in mice with middle cerebral arter
 
 ## Results
 
-## NSC-derived exosomes facilitate post-stroke recovery after NSC transplantation in MCAO/R mice
+### NSC-derived exosomes facilitate post-stroke recovery after NSC transplantation in MCAO/R mice
 
 We first characterized the NSCs derived from iPSCs by examining the expression of NSC marker genes including SOX2 and PAX6 by immunocytochemistry staining. The results showed that the cells used for subsequent transplantation expressed high level of NSC marker genes (Figure 1—figure supplement 1A), indicating that NSCs were efficiently induced from iPSCs. We isolated exosomes from the same NSCs and examined the expression of exosomal markers including TSG101, CD63, and CD9 (Figure 1—figure supplement 1B). Furthermore, the results of transmission electron microscopy showed that the particle size of exosomes mixture was less than 200 nm, and nanoparticle tracking analysis confirmed the typical distribution of particle diameter of exosomes (Figure 1—figure supplement 1C, D).
 
 We next examined the effects of different treatment strategies on the brain lesion after cerebral ischemia and reperfusion in MCAO/R mice. To examine the presence and persistence of cerebral edema, 2,3,5-triphenyl tetrazolium chloride (TTC) staining was performed 1 and 7 days after MCAO/R (Figure 1—figure supplement 1E). Two doses of NSC transplantation, 2 × 105 and 5 × 105, were first tested. The results of survival analysis (Figure 1—figure supplement 1F) and rotarod test (Figure 1—figure supplement 1G) showed the dose-dependent effects of transplanted NSCs. Therefore, we determined to use the dose of 5 × 105 NSCs for the subsequent treatments to achieve a robust therapeutic effect. Mice were randomly divided into five groups (Sham, PBS, Exo, NSC, and NSC + Exo). Except Sham group, mice in all the other four groups received standard MCAO/R surgery. Lateral ventricle injections of 5 μl PBS (PBS group), 10 μg exosomes in 5 μl PBS (Exo group), 5 × 105 NSCs in 5 μl PBS (NSC group), and 5 × 105 NSCs + 10 μg exosomes in 5 μl PBS (NSC + Exo group) were performed at 7 days post-MCAO/R (Figure 1A). The levels of reactive oxygen species (ROS) and inflammation were measured in focal brain tissues at 3 days post treatment; behavioral assessments were performed at 0-8 weeks post treatment; histological examinations were analyzed at 8 weeks post treatment (Figure 1A). To ensure the successful establishment of cerebral ischemia, the cerebral blood flow was examined before, during, and after MCAO/R (Figure 1B). Neurological functions were evaluated by balance beam, ladder lung, rotarod test, and modified neurological severity score (mNSS) up to 8 weeks after treatment (Figure 1C and Figure 1—figure supplement 2A). The results suggested that transplantation of NSCs combined with exosomes began to take effect starting at 4 weeks after treatment and significantly worked better than that solely with NSCs at 8 weeks post treatment (Figure 1C). The infarct area in the ipsilateral hemisphere was determined by MRI (Figure 1D) at 8 weeks post treatment. Compared to the severe damages of brain tissues in PBS group, mice treated by NSCs combine with exosomes showed significantly reduced infarct areas (Figure 1E). Meanwhile, the combination of NSCs and exosomes showed better protective effects on the brain tissue than either alone (Figure 1F), which was further confirmed by the results of brain weight analysis (Figure 1G). Therefore, our results indicated that NSC-derived exosomes could significantly enhance the therapeutic effects of NSCs on motor dysfunction and brain infarction in MCAO/R mice. Furthermore, the NSC-mediated therapeutic effects were greatly accelerated by addition of exosomes.
 
-## NSC-derived exosomes enhance the therapeutic effects of NSCs on neuronal damage
+![Figure 1.](https://cdn.elifesciences.org/articles/84493/elife-84493-fig1-v1.jpg)
+
+**Figure 1.:** (A) Summary of the experimental timeframes. (B) Images of cerebral blood flow before, during, and 24 hr of the middle cerebral artery occlusion/reperfusion (MCAO/R) procedure. Scale bar: 2 mm. (C) Behavioral test results (the balance beam, ladder rung, rotarod tests) and modified neurological severity score (mNSS) at 0, 4, and 8 weeks after treatment, n = 10 mice per group. *p < 0.05, **p < 0.01, ***p < 0.001, versus Sham group. #p < 0.05, ##p < 0.01, ###p < 0.001, versus PBS group. $p < 0.05, $$p < 0.01, $$$p < 0.001, versus NSC group. (D) MRI images show brain cerebral infarct at 8 weeks after treatment. The infarct area is marked by dotted lines. Scale bar: 2 mm. (E) Quantification of (D), n = 3 per group. (F) Representative images show brain atrophy at 8 weeks after treatment. The ischemic hemispheres are marked by dotted lines. Scale bar: 2 mm. (G) Quantification of the brain weights at 8 weeks after treatment, n = 6 per group. *p < 0.05, **p < 0.01, ns indicates non-significant difference.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84493/elife-84493-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative images of immunostaining against SOX2, E-cad, PAX6, Ki67, and DAPI on NSCs. Scale bar: 25 μm. (B) Western blot results showed the expression of exosome markers TSG101, CD63, and CD9. (C) Representative transmission electron microscopy (TEM) image of NSC-derived exosomes. Scale bar: 200 nm. (D) The distribution of particle diameters of exosomes mixture examined by Malvern Nano ZS90. (E) Representative images of 2,3,5-triphenyl tetrazolium chloride (TTC) staining on day 1 and 7 post-stroke. The infract area was marked by dotted lines. Scale bar: 2 mm. (F) The survival curve of different dosed NSC treatment (2 × 105 and 5 × 105). (G) The rotarod test at 0, 2, and 4 weeks after treatment, n = 5 mice/group. *p < 0.05, **p < 0.01, ***p < 0.001 versus Sham group. ###p < 0.001 versus PBS group.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84493/elife-84493-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Behavioral test results (the balance beam, ladder rung, rotarod tests) and modified neurological severity score (mNSS) up to 8 weeks after treatment, n = 10 mice per group. **p < 0.01, ***p < 0.001.
+
+### NSC-derived exosomes enhance the therapeutic effects of NSCs on neuronal damage
 
 We next examined the recovery of ischemia-induced neuronal damage of cerebral cortex in different treatment groups. The results of immunostaining and qRT-PCR of RBFOX3/NeuN revealed that, compared with the mice treated solely with NSCs, the combination NSCs and exosomes significantly reduced the tissue loss from 14.32 ± 3.52% to 7.57 ± 2.59% (Figure 2A, B; Figure 2—figure supplement 1A). Consistently, Nissl staining showed that MCAO/R mice had damaged pyramidal and granular cells with fuzzy cell contours (Figure 2C and Figure 2—figure supplement 1B). The addition of exosomes could further reduce the neuronal loss in the ipsilesional hemisphere on top of the effects of NSC transplantation. To further explore the effects of exosomes on neuronal survival, HT22 cells were subjected to oxygen and glucose deprivation (OGD)/reoxygenation (OGD/R). Immunostaining on neuronal marker MAP2 and apoptotic marker cleaved Caspase-3 (c-Caspase-3) showed that OGD/R caused robust neuronal apoptosis was alleviated by exosomes (Figure 2—figure supplement 1C). Western blot results showed that the expression of Caspase-3 and c-Caspase-3 was significantly increased after OGD/R, whereas exosomes downregulated the expression of c-Caspase-3 (Figure 2—figure supplement 1D). We further examined the effects of exosome treatment on the mRNA expression level of pro-apoptotic gene Bax by qRT-PCR, which confirmed that exosome significantly reduced the expression of Bax (Figure 2—figure supplement 1E).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/84493/elife-84493-fig2-v1.jpg)
+
+**Figure 2.:** (A) Immunofluorescent staining of NeuN in different groups at 8 weeks after treatment. The ipsilateral hemispheres are marked by the dotted lines. Scale bar: 2 mm. (B) Quantification of defect volume of NeuN staining, n = 4 mice per group. (C) Nissl staining of infarct area in the brain at 8 weeks after treatment. Scale bar: 25 μm. (D) Representative images of Golgi-Cox staining in the infarct area at 8 weeks after treatment. Quantitative analysis of total dendritic length (E), dendritic spine number (F), and neuronal complexity (G). Scale bar: 100 μm. Fifteen neurons from three mice were analyzed for each group. (H) Western blot results show the expression of SYN1 in the ipsilateral cerebral cortexs from different groups at 8 weeks after treatment, n = 3 per group. *p < 0.05, **p < 0.01, ***p < 0.001. ns indicates non-significant difference.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84493/elife-84493-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Relative expression of RBFOX3 in the cerebral cortex of infarcted side at 8 weeks after treatment by qRT-PCR, n = 3 per group. (B) Nissl staining of infarct area in the brain at 4 weeks after treatment. Scale bar: 25 μm. (C) Immunofluorescent staining of cleaved Caspase-3 (c-Caspase-3) and MAP2 showing the effects of oxygen and glucose deprivation/reoxygenation (OGD/R) and exosomes on the apoptosis of HT22 cells. Nuclei are counterstained with Hoechst. Scale bar: 50 μm. (D) Western blot results show the expression of Caspase-3 and c-Caspase-3 in different groups. (E) The relative mRNA expression of apoptosis genes Bax. *p < 0.05, **p < 0.01.
+
 We performed Golgi staining to examine the recovery of neuronal complexity. The results suggested that the reduction of infarct area after combined treatment was also accompanied with improved dendritic density and length (Figure 2D, E), alleviated spines loss (Figure 2F), and increased complexity of neuronal projections (Figure 2G) in the cerebral cortex. Interestingly, although exosome treatment did not show robust therapeutic effects on behavior impairment and infarct area, the number of dendritic spines was significantly increased by exosome treatment in Exo group compared to that of PBS group (Figure 2F), suggesting that exosomes might play an important role in the recovery of neuronal complexity. SYN1 is a member of the synapsin family, localizes on the presynaptic membrane, and plays a crucial role in the regulation of axonogenesis and synaptogenesis. We examined the expression of SYN1 to by western blot to evaluate the recovery of neural connection, which showed that SYN1 expression was increased in both NSC and NSC + Exo groups at 8 weeks after treatment (Figure 2H).
 
-## Exosomes promote the survival and differentiation of transplanted NSCs
+### Exosomes promote the survival and differentiation of transplanted NSCs
 
 We first examined the overall apoptosis in the cerebral cortex of mice after MCAO/R by TUNEL staining. The results revealed that the excessive cell apoptosis caused by MCAO/R was reduced by exosome transplantation (Figure 3—figure supplement 1B). As NSCs and exosomes were transplanted simutaneously into the lateral ventricle (Figure 3—figure supplement 1A), we next inspected whether exosomes could inhibit the apoptosis of transplanted NSCs. The mice were sacrificed and the brain isolated for analysis 1 week after transplantation. To track the transplanted NSCs, we employed the human-specific STEM121 antibody, which enables the quantification of engraftment, survival, migration, and differentiation of transplanted human stem cells in xenograft models. Serial sections covering the transplantation zone were stained for c-Caspase-3 and STEM121. As shown in Figure 3A, co-transplantation of exosomes reduced the number of c-Caspase-3+/STEM121+ cells, suggesting that exosomes promote the survival of transplanted NSCs. Interestingly, the anti-STEM121 staining revealed a larger distribution area of STEM121+ cells in NSC + Exo group compared with NSC group suggesting that exosomes might help the migration of transplanted cells (Figure 3—figure supplement 1C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/84493/elife-84493-fig3-v1.jpg)
+
+**Figure 3.:** (A) Immunofluorescent staining of STEM121 and cleaved Caspase-3 (c-Caspase-3) at 7 days after transplantation. Scale bar: 20 μm. (B) Immunofluorescent staining of STEM121 and NeuN staining at 4 weeks after transplantation. Scale bar: 10 μm. White arrowhead: STEM121+/NeuN+ cells. (C) Representative images of Nestin staining at 8 weeks after transplantation. (D) Tuj1 staining at 8 weeks after transplantation. Quantification of tdTomato+ cells (E), Nestin+/tdTomato+ cells (F), and Tuj1+/ tdTomato+ cells (G). Scale bar: 50 μm. *p < 0.05, **p < 0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84493/elife-84493-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic illustration of neural stem cells (NSCs) and exosomes transplantation and the migration of transplanted NSCs. LV: lateral ventricle. (B) TUNEL (green) and NeuN (purple) staining at 7 days after treatment. Scale bar: 50 μm. (C) Immunofluorescent staining of STEM121 at 7 days after transplantation. Scale bar: 20 μm. Nuclei are counterstained with Hoechst. (D) Immunofluorescent staining of STEM121 (red) and postsynaptic density protein-95 (PSD95; green) at 4 weeks after transplantation. Scale bar: 10 μm.
+
 To investigate the regulatory effects of exosomes on the differentiation of transplanted NSCs, cerebral sections of mice at 4 and 8 weeks after transplantation were immunostained with specific antibodies for NSC and neuronal markers to assess the extent of NSC differentiation. Nestin is a NSC marker and its expression is downregulated once NSCs start to differentiate (Park et al., 2010). Tuj1 is a neuronal marker from the early stage of neural differentiation (Nogueras-Ortiz et al., 2020). RBFOX3/NeuN is detected exclusively in post-mitotic mature neurons (Gusel’nikova and Korzhevskiy, 2015). Postsynaptic density protein-95 (PSD95) is a scaffolding protein involved in the assembly and function of the postsynaptic density complex (Mardones et al., 2019). The results showed that, at 4 weeks after transplantation, NeuN and PSD95 staining were rare in STEM121+ cells in NSC group while NeuN+/STEM121+ and PSD95+/STEM121+ cells were significantly increased in NSC + Exo group (Figure 3B and Figure 3—figure supplement 1D). The results suggest that NSCs rarely differentiate at 4 weeks after transplantation, which is promoted by exosome treatment. We further analyzed the NSC differentiation at 8 weeks. Compared with the NSC group, the number of tdTomato-positive NSCs was significantly increased in the NSC + Exo group (Figure 3C, E). Among the tdTomato-positive cells, Nestin+/tdTomato+ cells were less in NSC + Exo group than the other groups (Figure 3C, F), while the number of Tuj1+/tdTomato+ cells was significantly higher in NSC + Exo group, which implied that exosomes could promote the differentiation of NSCs into neurons (Figure 3D, G). Therefore, our data indicated that co-transplantation of exosomes could effectively facilitate the differentiation of transplanted NSCs in MCAO/R mice.
 
-## Exosomes promote the microenvironment remodeling
+### Exosomes promote the microenvironment remodeling
 
 Oxidative stress and global brain inflammation are closely involved in the progressing pathology after stroke (Hum et al., 2007, Shi et al., 2019), which challenges the survival and colonization of transplanted NSCs (Li et al., 2017). We employed OGD/R on cultured NSCs to simulate the main pathogenesis of stroke, ischemia–reperfusion (Zhang et al., 2017; Yu et al., 2018). The results showed that OGD/R treatment could induce high level of oxidative stress in NSCs, whereas exosomes could reduce the production of ROS after OGD/R (Figure 4A, B). We further examined the expression of oxidative stress-related genes. The mRNA expression level of CHOP (endoplasmic reticulum stress marker) was reduced by exosome treatment after OGD/R (Figure 4C). Meanwhile, exosome treatment increased the expression of antioxidant genes NRF2, NQO1, and SOD2 (Figure 4C). Besides the in vitro OGD/R experiments, the level of oxidative stress in vivo was also determined at 3 days after MCAO/R, which disclosed that the MDA content was significantly decreased in exosome-treated mice (Figure 4D). Therefore, our data suggested that NSC-derived exosomes could ameliorate oxidative stress, which could potentially facilitate the survival, colonization and differentiation of transplanted NSCs.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/84493/elife-84493-fig4-v1.jpg)
+
+**Figure 4.:** (A) Reactive oxygen species (ROS) generation was evaluated by DCF-DA fluorescent probe labeling (green) in oxygen and glucose deprivation/reoxygenation (OGD/R)-treated neural stem cells (NSCs). Nuclei were counterstained with Hoechst (blue). Scale bar: 50 μm. (B) Percentage of ROS-positive cells. (C) The relative mRNA expression of oxidative stress-related genes CHOP, NRF2, NQO1, and SOD2 were measured by qRT-PCR. (D) The MDA level at 3 days after treatment, n = 3 mice/group. (E) The mRNA expression of Tnfa, Il1b, and Il10 of the ipsilesional brain was measured by qRT-PCR at 3 days after treatment, n = 3 mice/group. (F) Representative images and quantification (H) of scar-forming astrocytes detected by GFAP staining. Scale bar: 50 μm. (G) Western blot results show the expression of GFAP in different groups. *p < 0.05, **p < 0.01, ***p < 0.001. ns indicates non-significant difference.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84493/elife-84493-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Immunofluorescent staining of GFAP at 8 weeks after treatment. Scale bar: 1 mm. LV represents lateral ventricle, and Core represents infarct area. The mRNA expression of C3, Gbp2, and Lcn2 was measured by qRT-PCR at 24 hr (B) and 48 hr (C) after oxygen and glucose deprivation/reoxygenation (OGD/R) and exosome treatment on primary astrocytes. *p < 0.05, **p < 0.01, ***p < 0.001. (D) Immunofluorescent staining of GFAP at 7 days after treatment. Scale bar: 50 μm.
 
 Heterologous stem cells transplantation could induce robust inflammatory response. It has been reported that the proliferation of immune cells reaches the peak during the acute phase post-transplantation (Graf and Stern, 2012; Boncoraglio et al., 2019). Interestingly, our results showed that exosomes could reduce the expression of inflammatory cytokines including Tnfa and Il1b, while increase the expression of anti-inflammatory cytokine Il10 in brain tissues (Figure 4E) suggesting that exosomes could alleviate the elevated immune response after NSC transplantation.
 
 Inflammatory cytokines can induce the activation of A1 reactive astrocytes, after brain tissue damages caused by conditions such as cerebral ischemia and reperfusion. A1 reactive astrocytes produce complement components and release toxic factors which promote neuronal death (Clarke et al., 2018). A1 reactive astrocytes could form glial scars to reestablish the physical and chemical integrity of the brain tissue by generating a barrier across the injured area, but inhibit the neuronal recovery as well (Michinaga and Koyama, 2021). In order to explore the effects of NSC-derived exosomes on the generation of A1 reactive astrocytes, exosomes were applied to cultured astrocytes following OGD/R, and the expression of A1 astrocyte markers was examined by qRT-PCR. OGD/R significantly increased the expression of C3, Gbp2, and Lcn2 at 24 and 48 hr post OGD/R, which was alleviated by exosomes (Figure 4—figure supplement 1B, C). Our results indicated that astrocytes were prone to form glial scars during the chronic phase after stroke in vivo (Figure 4F–H and Figure 4—figure supplement 1A). We subsequently investigated the effects of different treatments on the formation of glial scars in MCAO/R mice. The results suggested that the combined treatment of NSCs and exosomes significantly decreased the glia scars in the subacute phase (Figure 4—figure supplement 1D) and the chronic phase (Figure 4F, H).
 
-## miRNA profiling and functional enrichment analysis of NSC-derived exosomes
+### miRNA profiling and functional enrichment analysis of NSC-derived exosomes
 
 To explore the underlying molecular mechanisms of exosomes regulating the transplanted NSCs and the brain microenvironment, we proposed that the exosomes might regulate target genes through the release of miRNAs, components of the key functional molecules carried by exosomes. Therefore, we profiled the miRNA expression of NSC-derived exosomes using miRNA microarray. A total of 850 known miRNAs were detected, and the top 10 miRNAs with the highest read counts were displayed and verified by qRT-PCR (Figure 5A and Figure 5—figure supplement 1A). Targetscan, miRcode and miRDB databases were used to predict the downstream targets of the top 10 abundant miRNAs, and 17 potential target genes were selected, which have been proven to play important roles in neural modulation. The interactive network of the exosomal miRNAs and the selected target genes were analyzed and visualized using Cytoscape (Figure 5B). Target genes were predicted to be regulated by multiple miRNAs, among which hsa-miR-30a-5p and hsa-miR-7-5p were involved in multiple regulation. We next examined the effects of exosome treatment on the expression of candidate target genes STAT3, CHUK (IKKα), and PTPN1 (Park et al., 2012; Wang et al., 2018; Culley et al., 2019) in cultured NSCs after OGD/R by RT-qPCR and in MCAO/R mice brain tissues by western blot. The results confirmed that exosomes reduced the expression of downstream genes in NSCs (Figure 5—figure supplement 1B) as well as in brain tissues (Figure 5—figure supplement 1C, D), suggesting that exosomes might modulate the recipient cells and brain tissues through carrying miRNAs that regulate the expression of target genes.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/84493/elife-84493-fig5-v1.jpg)
+
+**Figure 5.:** (A) The read counts of the top 10 abundant miRNAs in NSC-derived exosomes. (B) miRNA–mRNA regulatory networks. miRNA and mRNA are represented by the pink and blue circles, respectively. Gene ontology analysis of predicted target genes in terms of biological process (C), molecular function (D), and cellular component (E). (F) The KEGG pathway analysis of predicted target genes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84493/elife-84493-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cycle threshold (Ct) value of each top 10 abundant miRNAs detected by qPCR. (B) The relative mRNA expression level of STAT3, CHUK, and PTPN1 after OGD/R treatment in neural stem cells (NSCs). (C) Western blot results and (D) quantification of the expression of STAT3, IKKα, and PTPN1 in cerebral cortex tissues at 3 days after treatment. *p < 0.05, **p < 0.01, ***p < 0.001. ns indicates non-significant difference.
 
 To further depict the regulatory effects of exosomal miRNAs on NSCs and the microenvironment, we performed gene ontology (GO) enrichment analysis and KEGG pathway analysis on all the potential target genes. GO enrichment analysis, in terms of biological process (Figure 5C), molecular function (Figure 5D), and cellular component (Figure 5E), disclosed that the potential target genes were enriched in functions that were correlated with cellular and microenvironmental homeostasis of the central nervous system such as regulation of neuron death and neurogenesis, stress-activated protein kinase signaling cascade, cytokine receptor binding, and neuron spine. KEGG pathway analysis suggested that the target genes were mainly involved in inflammation and apoptosis-related signaling pathways (Figure 5F). Therefore, the predicted target genes of exosomal miRNAs were concentrated in the functions and pathways that could regulate the cellular behavior of transplanted NSCs as well as the microenvironment remodeling.
 
@@ -95,98 +139,732 @@ As miRNAs were reported to be one of the major exosomal components, we profiled 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>iPSCs</td>
+      <td>Cai et al., 2021</td>
+      <td>N/A</td>
+      <td>iPSCs</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA assay</td>
+      <td>Biosharp</td>
+      <td>BL521A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BSA</td>
+      <td>Sigma</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TTC</td>
+      <td>Solarbio</td>
+      <td>T8170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sox2 (Rabbit Polyclonal)</td>
+      <td>GeneTex</td>
+      <td>Cat. No. 43019</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-E-Cadherin (Mouse Monoclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat. No. 60335</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pax6 (Rabbit Polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat. No. 12323</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (Mouse Monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. No. 9449</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NeuN (Rabbit Polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. No. ab177487</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MAP2 (Mouse Monoclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat. No. 67015</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>STEM121 (Mouse Monoclonal)</td>
+      <td>Takara</td>
+      <td>Cat. No. Y40410</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Goat anti-Mouse IgG 568</td>
+      <td>Invitrogen</td>
+      <td>A-10037</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Goat anti- Rabbit IgG 568</td>
+      <td>Invitrogen</td>
+      <td>A-11036</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Goat anti-Mouse IgG 488</td>
+      <td>Invitrogen</td>
+      <td>A-11029</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Goat anti-Rabbit IgG 488</td>
+      <td>Invitrogen</td>
+      <td>A-11034</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst</td>
+      <td>Sigma</td>
+      <td>94403</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFAP(Mouse Monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. No. 3670S</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-III-tubulin (Rabbit Monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. No. 5568S</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Nestin (Mouse Monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. No. Sc-23927</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TSG101 (Rabbit Polyclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat. No. A1692</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD9 (Rabbit Monoclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat. No. A19027</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD63 (Rabbit Monoclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat. No. A19023</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SYN1 (Rabbit Polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat. No. 20258-1-AP</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH (Mouse Monoclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat. No. 60004-1-Ig</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Caspase-3 (Mouse Monoclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat. No. 66470-2-Ig</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>c-Caspase-3 (Rabbit Monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. No. ab214430</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>STAT3 (Rabbit Monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. No. ab68153</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PTPN1 (Rabbit Polyclonal)</td>
+      <td>Abclonal</td>
+      <td>Cat. No. A1590</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IKKα (Rabbit Monoclonal)</td>
+      <td>Abclonal</td>
+      <td>Cat. No. A19694</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Actin (Mouse Monoclonal)</td>
+      <td>Abclonal</td>
+      <td>Cat. No. AC004</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PSD95 (Rabbit Polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat. No. 20665-1-AP</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Goat anti-Mouse</td>
+      <td>Proteintech</td>
+      <td>Cat No. PR30012</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Goat anti-Rabbit</td>
+      <td>Proteintech</td>
+      <td>Cat No. PR30011</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ECL Enhanced Kit</td>
+      <td>Abclonal</td>
+      <td>RM00021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoflurane</td>
+      <td>RWD</td>
+      <td>R510-22-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RIPA lysis buffer</td>
+      <td>Biosharp</td>
+      <td>BL504A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>https://imagej.net/Fiji</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FD rapid Golgi Stain kit</td>
+      <td>FD Neuro Technologies</td>
+      <td>PK401A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nissl Stain Solution</td>
+      <td>Solarbio</td>
+      <td>G1434</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DCF-DA</td>
+      <td>Invitrogen</td>
+      <td>D399</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4% paraformaldehyde</td>
+      <td>Biosharp</td>
+      <td>BL539A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Biofroxx</td>
+      <td>Cat. No. 1139 ML100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>10% formalin</td>
+      <td>Coolaber</td>
+      <td>SL1560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>OCT compound</td>
+      <td>SAKURA</td>
+      <td>Japan</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Targetscan</td>
+      <td>http://www.targetscan.org/</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cell death detection kit</td>
+      <td>Roche</td>
+      <td>Cat. No. 11684795910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TBA method</td>
+      <td>Nanjing Jiancheng Bioengineering Institute</td>
+      <td>A003-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>miRcode</td>
+      <td>http://www.mircode.org/</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>miRDB</td>
+      <td>http://mirdb.org/</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape software</td>
+      <td>Cytoscape software</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>RStudio</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad PRISM</td>
+      <td>GraphPad Software</td>
+      <td>Version 9.2.0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Male C57BL/6 mice (age: 7–8 weeks, weight: 22–24 g) were selected due to estrogen and progesterone have recognized neuroprotective effects (Newton et al., 2022). All animal procedures were performed in compliance with guidelines for the care and use of animals and were approved by the University Huazhong Agriculture Institutional Animal Care and Use Committee (approval number: HZAUMO-2021-0111). Mice were assigned to MCAO/R or sham operation, and accepted NSCs or exosome treatment.
 
-## NSCs induction and culture
+### NSCs induction and culture
 
 NSCs induction was performed by iRegene Therapeutics, Wuhan, China as previously reported (Cai et al., 2021).Briefly, human iPSCs were cultured with STEMdiff Neural Induction Medium (iRegene Therapeutics). The medium was replaced daily until day 9. After the first passage, Y-27632 was added to the medium on day 1 to ensure the cell attachment and then removed from the medium on day 2. NSCs were cultured in STEMdiff Neural Progenitor Medium (iRegene Therapeutics) to maintain cell growth after passage. The identity of NSCs has been authenticated by immunofluorescence staining and qRT-PCR. Mycoplasma contamination is not detected in cell cultures.
 
-## Exosomes isolation and detection
+### Exosomes isolation and detection
 
 Cellular debris were removed from cell culture supernatant at 2000 × g for 10 min. The supernatants were centrifuged at 20,000 × g for 30 min. Then, exosomes were collected by ultracentrifugation (Beckman, America) at 100,000 × g for 120 min. Finally, exosomes were washed in 12 ml PBS and collected again for 90 min. Exosomes were resuspended in PBS and protein concentration was measured by bicinchoninic acid (BCA) assay (Biosharp, China). For observation by transmission electron microscopy, exosomes were fixed in 2.5% glutaraldehyde at 4°C overnight and then mounted on a copper grid, stained with 2% uranyl acetate, and examined with a transmission electron microscope with 100 kV. For nanoparticle tracking analysis, exosomes were examined by Malvern Nano ZS90 as previously described (Shi et al., 2018). Exosomes were diluted in PBS and 1.0 ml suspension was loaded into a cuvette to measure and analyze.
 
-## MCAO/R model
+### MCAO/R model
 
 Ischemic stroke was established with MCAO/R surgery on male C57BL/6 mice (age: 7–8 weeks, weight: 22–24 g). Mice were anesthetized with 2% isoflurane (RWD, China). For focal cerebral ischemia, a silicon-coated filament (RWD, China) was inserted into the left middle cerebral artery to block blood flow. Sixty minutes later, the filament was extracted for reperfusion. Rectal temperature was maintained at 37°C during the entire procedure. Then anesthesia was discontinued and mice were allowed to recover. The cerebral blood flow (rCBF) was detected using a laser doppler flowmetry (Perimed, Sweden). A 55% decrease in the rCBF of the ipsilateral hemisphere, as compared to contralateral hemisphere, was considered the threshold for successful establishment of cerebral ischemia. Mice of the Sham group were performed the same as the MCAO/R procedure without filament insertion.
 
-## Delivery of NSCs and exosomes
+### Delivery of NSCs and exosomes
 
 Eighty-eight MCAO/R mice were randomly divided into 4 groups at 7 days postoperation, and 12 mice with low body weight (less than 15 g) were excluded. Mice were anesthetized and placed in a mouse stereoscopic apparatus (RWD, China). The skull was drilled to make a burr hole above the lateral ventricle (AP+0, ML-1, DV-2.25 mm) for NSCs and exosomes injection. NSCs were genetically labeled with tdTomato for cell tracking. The five groups were treated as follows: PBS (MCAO/R mice treated with 5 μl PBS), Exo (MCAO/R mice treated with 10 μg exosomes in 5 μl PBS), NSC (MCAO/R mice treated with 5 × 105 NSCs in 5 μl PBS), NSC + Exo (MCAO/R mice treated with 5 × 105 NSCs combine with 10 μg exosomes in 5 μl PBS), and Sham (15 mice with sham operation not treated).
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 The cells were planted on round glass coverslips, and fixed with 10% formalin overnight at 4°C, then permeabilized with 0.25% Triton X-100, and blocked with 2% bovine serum albumin (BSA; Sigma, America) for 1 hr at room temperature. The coverslips were incubated with primary antibodies including anti-Sox2 (1:500, GeneTex, catalog 43019), anti-E-Cadherin (E-cad, 1:200, Proteintech, catalog 60335), anti-Pax6 (1:200, Proteintech, catalog 12323), anti-Ki67 (1:1000, Cell Signaling Technology, catalog 9449), anti-c-Caspase-3 (1:200, Abcam, catalog ab214430), and anti-MAP2 (1:500, Proteintech, catalog 67015) at 4°C overnight. The primary antibodies were then washed off and sections were incubated with secondary antibodies (Invitrogen, America) for 1 hr at room temperature. Cells were counterstained with Hoechst for 10 min after wash. Images were captured using a spinning disk confocal microscope (Andor Technology, UK).
 
 Stroke leads to damage in the cerebral cortex, the atrophy was more severe without treatment, therefore we chose to observe the neuron recovery corresponding to the atrophied area in the model group. For staining of mice brain tissues, mice were anesthetized and immediately perfused with PBS followed by 10% formalin for 30 min. Brains were fixed overnight in fixative at 4°C. Fixed brains were dehydrated in 30% sucrose in PBS for 2 days at 4°C. Brains were embedded in the optimal cutting temperature (OCT) compound (SAKURA, Japan). Brain sections were obtained at a thickness of 25 μm using a microtome cryostat (Leica, Germany). Tissues were permeabilized, blocked, and incubated as the above-mentioned protocol for cultured cell staining. Tissues were incubated with primary antibodies, including anti-NeuN (1:300, Abcam, catalog ab177487), anti-STEM121 (1:1000, Takara, catalog Y40410), anti-GFAP (1:1000, Cell Signaling Technology, catalog 3670S), anti-β-III-tubulin (1:300, Cell Signaling Technology, catalog 5568S), or anti-Nestin (1:250, Santa Cruz Biotechnology, catalog Sc-23927). For TUNEL staining, in situ cell death detection kit (Roche, Germany) was used to detect the cell apoptosis according to the manufacturer’s instructions. Briefly, 3% BSA incubated sections were incubated with TUNEL reaction mixture for 1 hr at 37°C in the dark. Then sections were incubated with anti-NeuN primary antibody (1:300, Abcam, catalog ab177487) and corresponding secondary antibody successively.
 
-## Western blot analysis
+### Western blot analysis
 
 Total protein was extracted from NSCs or exosomes using RIPA lysis buffer (Biosharp, China) with protease inhibitor phenylmethylsulfonyl fluoride. Protein content was observed by the BCA assay (Biosharp, China). Protein samples (30 µg) were electrophoretically separated on 12% sodium dodecyl sulfate–polyacrylamide gel electrophoresis gels and then transferred to polyvinylidene fluoride membranes (Immobilon, America). The membranes were incubated with primary antibodies including TSG101, CD63, CD9, SYN1, GAPDH, β-actin, GFAP, STAT3, IKKα, and PTPN1 overnight at 4°C. The membranes were next incubated with secondary antibodies for 1 hr at room temperature (1:5000, Proteintech) and were detected using the ECL Enhanced Kit (ECL, Abclonal).
 
-## Motor function assessment
+### Motor function assessment
 
 Testing on balance beam, ladder rung, rotarod test, and mNSS tasks was conducted preoperatively, and at 1–8 weeks postoperatively. Investigators were blinded to treatment groups in test.
 
-## Balance beam
+#### Balance beam
 
 The balance beam apparatus used in this study was a 10-mm square wood in width and 50-cm wood in length (Beijing Zhongshi Science, China). Mice were trained to pass through the balance beam 3 days before the MCAO/R procedure. The mice that successfully passed the beam without foot slips were recruited and grouped. On behavioral test days (0, 4, and 8 weeks after treatment), the right feet slips were recorded when mice were passing through the balance beam three times. The scores were full score (10) minus the number of foot slips. If the mouse could not pass through or fall, the minimum score was recorded as 0.
 
-## Ladder rung
+#### Ladder rung
 
 The ladder rung instrument was made up of 2 transparent glass walls and 70 irregular metal bars (Beijing Cinontech Co Ltd, China). The number of mice that stepped wrong was recorded on behavioral test days. The score was calculated as 10 minus the number of wrong steps. If the mouse could not pass through, the minimum score was recorded as 0.
 
-## Rotarod test
+#### Rotarod test
 
 At 3 days before MCAO/R procedure, mice were trained on an accelerating rotarod at 30 rpm and only the mice that remained on the rotarod for 300 s at 30 rpm of three trials were recruited and grouped. The test was carried out at 30 rpm on behavioral days. The final scores were the seconds of mice remaining on the rotarod over three trials. The maximum score is 300 s.
 
-## mNSS
+#### mNSS
 
 According to the aforementioned report (Table 1; Chen et al., 2001), mNSS test is a composite of balance, motor, and reflex tests to assess neurological deficit. The normal score varies from 0 to 10, where 0 represents normal function and 10 maximal deficits. Three measurements were obtained per behavioral day.
 
-## TTC staining
+**Table 1.**
+ Modified neurological severity score.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Motor tests</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Raise mouse by the tail</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Flexion of forelimb</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Flexion of hindlimb</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Head moved more than 10° to vertical axis</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Place mouse on the floor (minimum = 0; maximum = 3)</td>
+      <td>0–3</td>
+    </tr>
+    <tr>
+      <td>Normal walk</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Incapacity to walk straight</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Circle toward the hemiplegia side</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Fall down to the hemiplegia side</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Reflexes deficient and aberrant movements</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Seizures, myoclonus, or myodystony</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Beam balance tests (minimum = 0; maximum = 4)</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Maintain in stable posture</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hugs the beam and limb falls down from the beam</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Hugs the beam or spins on beam (&gt;40 s)</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Attempts to balance on the beam but falls off (&gt;20 s)</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Fall off the beam (&lt;20 s)</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Maximum points</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+
+### TTC staining
 
 The brain of mice was removed quickly and carefully, then dissected into 2-mm thick sections on ice. Fresh brain slices were stained with 1% TTC solution (Solarbio, China) solution for 15 min at 37°C. TTC solution was then replaced with 4% paraformaldehyde and incubated overnight at 4°C. The sections were photographed with a digital camera.
 
-## MRI
+### MRI
 
 Mice were anesthetized and scanned by MRI (United Imaging, America) to detect the infarct area in the ipsilateral brain. Mice were imaged with a T2-weighted fast spin-echo imaging sequence using a 3T MRI scanner for mice.
 
-## Golgi staining and analysis
+### Golgi staining and analysis
 
 Golgi staining was conducted using the FD rapid Golgi Stain kit (FD Neuro Technologies, America) according to the manufacturer’s instructions. Mice were anesthetized and sacrificed, and the brains were removed quickly and immersed in the mixture of Solutions A and B for 2 weeks at room temperature in the dark. The brain was then transferred into Solution C for 48 hr at 4°C. Sections were cut with 100 μm thickness using a concussion slicer (Lecia, Germany) and stained with D and E mixture. Images were captured by an inverted microscope using Z-stack images (Lecia, Germany). Golgi-stained neurons were reconstructed using Fiji-Image J. The total dendritic length, the number of dendritic spines and intersections was calculated and analyzed by Sholl analysis according to the previous study (Yang et al., 2020).
 
-## Nissl staining
+### Nissl staining
 
 Nissl staining was conducted using the Nissl Stain Solution (Solarbio, America) according to the manufacturer’s instructions. Mice brain sections were stained with methylene blue stain for 10 min at 65°C, then differentiated by nissl differentiation solution for 3 min. The brain sections were subsequently treated in ammonium molybdate solution for 5 min followed by a quick rinse quickly in distilled water to avoid decolorizing. Images were taken using an inverted microscope (Lecia, Germany).
 
-## qRT-PCR
+### qRT-PCR
 
 Total RNA was extracted from ipsilateral brain tissue using TriQuick Reagent (Solarbio, China). Reverse transcription was performed by HiFiScript gDNA Removal RT MasterMix kit (CWBIO, China) following the manufacturer’s instructions. qRT-PCR was implemented in CFX (Bio-rad) using MagicSYBR Mixture (CWBIO, China). The threshold cycle (CT) was evaluated to quantify transcripts. The relative expression level of a specific gene was calculated as the expression 2−ΔΔCT. The primers used in this study are listed in Table 2. To examine the expression of miRNAs, total miRNA was extracted from cells by miRcute miRNA Isolation Kit (TIANGEN, China), and reverse transcription was performed by miRcute Plus miRNA First-Strand cDNA Kit (TIANGEN, China). qRT-PCR was implemented by miRcute Plus miRNA qPCR Kit (SYBR Green, TIANGEN, China). The CT value was used to quantify transcripts. The relative expression level of a specific miRNA was calculated as the expression 2−ΔΔCT. The forward primers used in this study are shown in Table 3.
 
-## Isolation and culture of primary astrocytes
+**Table 2.**
+ Quantitative PCR primer sequence for gene.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mBax</td>
+      <td>AGACAGGGGCCTTTTTGCTAC</td>
+      <td>AATTCGCCGGAGACACTCG</td>
+    </tr>
+    <tr>
+      <td>mGapdh</td>
+      <td>AGGTCGGTGTGAACGGATTTG</td>
+      <td>GGGGTCGTTGATGGCAACA</td>
+    </tr>
+    <tr>
+      <td>mTnfa</td>
+      <td>CAGGCGGTGCCTATGTCTC</td>
+      <td>CGATCACCCCGAAGTTCAGTAG</td>
+    </tr>
+    <tr>
+      <td>mIl1b</td>
+      <td>GCCCATCCTCTGTGACTCAT</td>
+      <td>AGCTCATATGGGTCCGACAG</td>
+    </tr>
+    <tr>
+      <td>mIl10</td>
+      <td>CTTACTGACTGGCATGAGGATCA</td>
+      <td>GCAGCTCTAGGAGCATGTGG</td>
+    </tr>
+    <tr>
+      <td>mC3</td>
+      <td>GAGCGAAGAGACCATCGTACT</td>
+      <td>TCTTTAGGAAGTCTTGCACAGTG</td>
+    </tr>
+    <tr>
+      <td>mGbp2</td>
+      <td>CTGCACTATGTGACGGAGCTA</td>
+      <td>CGGAATCGTCTACCCCACTC</td>
+    </tr>
+    <tr>
+      <td>mLcn2</td>
+      <td>GCAGGTGGTACGTTGTGGG</td>
+      <td>CTCTTGTAGCTCATAGATGGTGC</td>
+    </tr>
+    <tr>
+      <td>mStat3</td>
+      <td>CACCTTGGATTGAGAGTCAAGAC</td>
+      <td>AGGAATCGGCTATATTGCTGGT</td>
+    </tr>
+    <tr>
+      <td>mPtpn1</td>
+      <td>GTCGGATTAAATTGCACCAGGA</td>
+      <td>TGATGCGGTTGAGCATGACC</td>
+    </tr>
+    <tr>
+      <td>mChuk</td>
+      <td>GGTTTCGGGAACGTCAGTCTG</td>
+      <td>GCACCATCGCTCTCTGTTTTT</td>
+    </tr>
+    <tr>
+      <td>hNQO1</td>
+      <td>GAAGAGCACTGATCGTACTGGC</td>
+      <td>GGATACTGAAAGTTCGCAGGG</td>
+    </tr>
+    <tr>
+      <td>hNRF2</td>
+      <td>CCTGTAAGTCCTGGTCATCG</td>
+      <td>TTTCTACAGGGAATGGGATA</td>
+    </tr>
+    <tr>
+      <td>hCHOP</td>
+      <td>GGAAACAGAGTGGTCATTCCC</td>
+      <td>CTGCTTGAGCCGTTCATTCTC</td>
+    </tr>
+    <tr>
+      <td>hSOD2</td>
+      <td>GCTCCGGTTTTGGGGTATCTG</td>
+      <td>GCGTTGATGTGAGGTTCCAG</td>
+    </tr>
+    <tr>
+      <td>hSTAT3</td>
+      <td>CAGCAGCTTGACACACGGTA</td>
+      <td>AAACACCAAAGTGGCATGTGA</td>
+    </tr>
+    <tr>
+      <td>hPTPN1</td>
+      <td>GCAGATCGACAAGTCCGGG</td>
+      <td>GCCACTCTACATGGGAAGTCAC</td>
+    </tr>
+    <tr>
+      <td>hCHUK</td>
+      <td>GGCTTCGGGAACGTCTGTC</td>
+      <td>TTTGGTACTTAGCTCTAGGCGA</td>
+    </tr>
+    <tr>
+      <td>hGAPDH</td>
+      <td>GGAGCGAGATCCCTCCAAAAT</td>
+      <td>GGCTGTTGTCATACTTCTCATGG</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Quantitative PCR primer sequence for miRNA.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>hsa-miR-9-5p</td>
+      <td>UCUUUGGUUAUCUAGCUGUAUGA</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-7-5p</td>
+      <td>UGGAAGACUAGUGAUUUUGUUGUU</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-148a-3p</td>
+      <td>UCAGUGCACUACAGAACUUUGU</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-26a-5p</td>
+      <td>UUCAAGUAAUCCAGGAUAGGCU</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-21-5p</td>
+      <td>UAGCUUAUCAGACUGAUGUUGA</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-151a-3p</td>
+      <td>CUAGACUGAAGCUCCUUGAGG</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-218-5p</td>
+      <td>UUGUGCUUGAUCUAACCAUGU</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-30a-5p</td>
+      <td>UGUAAACAUCCUCGACUGGAAG</td>
+    </tr>
+    <tr>
+      <td>hsa-let-7i-5p</td>
+      <td>UGAGGUAGUAGUUUGUGCUGUU</td>
+    </tr>
+    <tr>
+      <td>hsa-miR-25-3p</td>
+      <td>CAUUGCACUUGUCUCGGUCUGA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Isolation and culture of primary astrocytes
 
 Primary astrocytes were prepared from cerebral cortices of 1-day-old neonatal C57BL/6 mice. Cerebral cortices were isolated carefully and digested with 0.125% trypsin at 37°C for 10 min followed by filtering through a 70-μm cell strainer. The isolated cells were cultured in Dulbecco’s modified of Eagle’s medium/F12 medium for 10 days until they reached 80% confluence.
 
-## Oxygen-glucose deprivation and reoxygenation
+### Oxygen-glucose deprivation and reoxygenation
 
 To perform OGD/R on cultured NSCs, HT22 cells and primary astrocytes, the normal culture medium was replaced with Dulbecco’s modified of Eagle’s medium (Solarbio, China). The culture was then incubated in a hypoxia chamber aerated with 5% CO2, 94% N2, and 1% O2 at 37°C for 2 hr for NSCs and HT22 cells, and 6 hr for primary astrocytes. Then the NSCs were transferred back into the normal culture medium and incubated in normal culture conditions for 24 hr.
 
-## Intracellular ROS detection
+### Intracellular ROS detection
 
 ROS level was detected using the fluorescent probe DCF-DA (Invitrogen, America). Cultured NSCs were incubated with 10 μM DCF-DA for 30 min at 37°C and then fixed with 4% paraformaldehyde. DCF-DA fluorescence was photographed and quantified via a spinning disk confocal microscope (Andor Technology, UK).
 
-## MDA-level measurement
+### MDA-level measurement
 
 The MDA level was measured at 3 days after treatment by the TBA method (Nanjing Jiancheng Bioengineering Institute, China) according to the manufacturer’s instructions. The ipsilateral brain was homogenized and incubated in the assay solution at 95°C for 80 min. The optical density was measured at 532 nm by a microplate reader. The value was calculated based on the standard formula.
 
-## Microarray analysis of exosomal miRNAs
+### Microarray analysis of exosomal miRNAs
 
 Sequencing libraries of miRNAs of NSC-derived exosomes were produced using NEBNext Multiplex Small RNA Library Prep Set for Illumina (NEB, United States) following the previous report (Cai et al., 2021).
 
 The downstream target genes of exosomal miRNAs were predicted using three online databases: Targetscan (http://www.targetscan.org/), miRcode (http://www.mircode.org/), and miRDB (http://mirdb.org/). The enrichment analysis of the predicted target genes was performed using ClusterProfiler R package for GO process and KEGG pathway enrichment. The miRNA–mRNA regulatory network was built by Cytoscape software. miRNA was calculated by qRT-PCR. Libraries were prepared by ligating adaptors to the total RNA, PCR amplification and size selection using 6% polyacrylamide gels. Sequencing was performed on Illumina NovaSeq 6000 (Illumina Inc, USA).
 
-## Statistics
+### Statistics
 
 GraphPad Prism version 7 was used for statistical analyses. Unpaired t-tests (two-tailed) were used for single comparisons, and two-way analysis of variance was used for multiple comparisons. Survival analysis was performed via the Kaplan–Maier method. All data are presented as mean ± standard error of the mean.

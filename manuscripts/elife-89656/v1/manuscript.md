@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05qghxh33 Department of Pharmacological Sciences, Stony Brook University Stony Brook United States
-2. https://ror.org/05qghxh33 Department of Microbiology and Immunology, Stony Brook University Stony Brook United States
-3. https://ror.org/05qghxh33 Department of Biomedical Informatics, Stony Brook University Stony Brook United States
+1. Department of Pharmacological Sciences, Stony Brook University Stony Brook United States ([ROR:05qghxh33](https://ror.org/05qghxh33))
+2. Department of Microbiology and Immunology, Stony Brook University Stony Brook United States ([ROR:05qghxh33](https://ror.org/05qghxh33))
+3. Department of Biomedical Informatics, Stony Brook University Stony Brook United States ([ROR:05qghxh33](https://ror.org/05qghxh33))
 
 † Corresponding author
 
@@ -31,17 +31,33 @@ It is natural to assume that the enrichment of slow codons near 5’ ends is a p
 
 ## Results
 
-## Calculations of encoded translation speed imply slow initial translation
+### Calculations of encoded translation speed imply slow initial translation
 
 Tuller et al., 2010 used codon-specific tRNA abundance as a proxy to estimate the speed of translation of codons. Since then, analysis of ribosome profiling data has yielded direct measurements of the translation speed of individual codons (Weinberg et al., 2016; Dao Duc and Song, 2018; Gardin et al., 2014; Gritsenko et al., 2015; Lareau et al., 2014; Sharma et al., 2019; Tunney et al., 2018; Wang et al., 2017). Accordingly, we have repeated some of the work of Tuller et al. but using the Ribosome Residence Time (RRT, Methods and materials, Supplementary file 1; Gardin et al., 2014) of each of the 61 sense codons as a measure of translation speed. We refer to ‘encoded translation speed’ to specify that we are focusing purely on the effects of different codons on translation speed, and not on other factors that might differentially affect translation speed at different regions of the mRNA, such as secondary structure.
 
 Using the RRT, encoded translation speeds were calculated in sliding windows across all coding ORFs from S. cerevisiae. The start codon was omitted because it is constant across genes and is an unusually ‘fast’ codon. Consistent with Tuller et al. we find that the first 30–100 codons had lower calculated translation speeds than the rest of the gene (Figure 1). We focused our analyses on the first 40 codons for comparability to Tuller et al.; we call this the ‘Slow Initial Translation’ region, or SIT. Although the tendency towards slow translation near the beginning of the gene is very highly statistically significant, the size of the effect is small. When we compare the first 40 codons of a gene to the rest of the same gene, we find that the average difference in encoded translation speed is about 1.2% (similar to Tuller et al., 2010), with a p-value <0.001. For comparison, codons can vary in translation speed by about threefold (Supplementary file 1), or perhaps as much as sixfold (Weinberg et al., 2016, their Table S2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/89656/elife-89656-fig1-v1.jpg)
+
+**Figure 1.:** Translation speeds were calculated using ribosome residence time (RRT) (Gardin et al., 2014; Supplementary file 1 for RRT values) as a measure of codon-specific translation speed over S. cerevisiae open reading frames (ORFs). The horizontal line indicates average inverse RRT across all ORFs. The average speed in the first 40 amino acids is about 1.1% slower than in the rest of the gene (p < 0.001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89656/elife-89656-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The distribution of relative translation speeds over 5694 genes is shown for the first and last 40 amino acids. For the 5’ end, 57.2% of genes have relatively slow initial translation, while for the 3’ end, 50.14% of genes have a slow terminal translation.
+
 Although on average genes are translated slowly near their 5’ ends, there is variability. Figure 1—figure supplement 1 shows the distribution of initial encoded translation speed for all yeast ORFs. About 57% of genes have a slow initial translation (SIT) region, while the remainder have fast initial translation (FIT).
 
-## Rare (slow) codons are enriched within the first 40 codons
+### Rare (slow) codons are enriched within the first 40 codons
 
 Rare codons tend to be slow codons, and vice versa (Gardin et al., 2014; Figure 2—figure supplement 1). But the correlation is not perfect—other things being equal, A/T-rich codons tend to be faster than G/C-rich codons, and codons with a third position wobble base tend to be faster than codons with the cognate base (Gardin et al., 2014). To better understand why gene beginnings are more slowly translated, we examined the relative usage of each of the 61 sense codons in the first 40 codons after but not including the initiator ATG (Figure 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/89656/elife-89656-fig2-v1.jpg)
+
+**Figure 2.:** (A). Relative codon usage in the SIT versus the rest of the gene. The Y-axis shows codon usage in the first 40 amino acids (omitting ATG) divided by its usage in the rest of the gene. The 61 sense codons are grouped by amino acid. Within each group, codons are ordered from least to most frequent left to right. Red arrows show the seven slowest codons by ribosome residence time (RRT), purple arrows show the seven rarest codons by total usage, and Figure 2—figure supplement 1 shows the correlation between codon usage and translation speed. Blue shows Start and alternative Start codons (ATG, TTG, ATT, ATA). Ratios above 1 show enrichment in the first 40 amino acids. Typically, the rarest codons are enriched. (B). Absolute usage of each leucine codon in the SIT. The absolute usage frequency of each leucine codon is shown globally, and for the first 40 amino acids. Rare codons are still rare in the SIT, just not as rare as elsewhere. The same pattern holds for the other amino acids.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89656/elife-89656-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Rare codons are translated slowly. Each dot represents a sense codon. The x-axis displays the translation speed of each codon (modified from Gardin et al., 2014); the y-axis displays the global frequency of usage of each codon. The correlation is 0.64, p<0.001. (B) The first 40 codons are enriched for rare codons. Each dot represents a sense codon. The relative usage of each type of codon in the first 40 codons of genes (i.e. in the slow initial translation , SIT) (y-axis) is displayed against global codon usage (x-axis). The correlation is –0.61, p<0.001. (C) The first 40 codons are enriched for slow codons. Each dot represents a sense codon. The relative usage of each type of codon in the first 40 codons of genes (i.e. in the SIT) is displayed against codon translation speed (i.e. 1/ribosome residence time (RRT), Gardin et al., 2014). The correlation is –0.45, p<0.001.
 
 For almost all amino acids, with isoleucine (ATC, ATA, ATT) being the only clear exception, we saw relative enrichment of the rarest and generally slowest codons. In particular, there were notable enrichments of the three rarest, slowest arginine codons (CGA, CGC, CGG) (likely because of their use in N-terminal signal sequences, see below) and the slow, rare codons for proline (CCC, CCG), leucine (CTC), glycine (GGG), and cysteine (TGC) (Figure 2A). These enrichments can explain most of the slow initial translation.
 
@@ -49,21 +65,21 @@ In addition, in the first 40 codons after but not including the initiator ATG, w
 
 (ATG and alternative Start codons are also depleted in the other two reading frames, but these depletions have indirect effects on the in-frame codons, such that there are roughly off-setting effects on translation speed. For instance, the depletion of TGG (Trp) (Figure 2) is likely partly due to depletion of xxA TGG, but since TGG is a slow codon, this depletion increases 5’ translation speed.)
 
-## Rare codons are rare in the first 40 codons, just not as rare as elsewhere
+### Rare codons are rare in the first 40 codons, just not as rare as elsewhere
 
 Although the proportion of rare, slow codons in the SITs is relatively higher than in the body of genes, in absolute terms rare codons are still rare compared to more common synonymous codons (e.g. Figure 2B, Leu codons). That is, rare, slow codons are still strongly disfavored in the SIT, though they are less strongly disfavored than elsewhere. This was true for all rare codons.
 
-## Why are there relatively more rare, slow codons at 5’ ends?
+### Why are there relatively more rare, slow codons at 5’ ends?
 
 Our analysis is consistent with that of Tuller et al. to the extent that we find a slight relative enrichment of rare, slow codons near the 5’ ends of coding regions. Tuller et al. interpret the slow translation ramp as an adaptation—they believe there is a selection for slow codons near the 5’ end to enhance the efficiency of translation. But there are other possibilities.
 
-## The Young Spandrel hypothesis
+### The Young Spandrel hypothesis
 
 We noticed (see below) that the N-termini of yeast genes are often poorly conserved, and otherwise highly homologous genes often vary at the N-termini between different closely related species. This suggests a different idea: N-termini are unstable and variable in evolution. They form de novo from new DNA sequence, and so all codons may initially occur at similar frequencies. De novo formation of a N-terminus could occur from use of a new Start codon (Bazykin and Kochetov, 2011; Kochetov, 2008). Since these N-termini are, on average, younger than the remainder of the gene, selection has worked on them for a shorter time. Therefore, selection against rare, slow codons may be less complete, and N-termini, due to their relative youth, may still retain some extra rare codons.
 
 In this idea, in contrast to Tuller et al. the slight excess of rare codons near N-termini is not adaptive; it is not at all a product of selection. Instead, in the words of Gould and Lewontin, 1979, it is a spandrel. It is a non-adaptive by-product of something else, in this case, the evolutionary instability of N-termini. This idea is explored below.
 
-## Poor 5’ conservation is a feature of many yeast genes
+### Poor 5’ conservation is a feature of many yeast genes
 
 We picked example genes for illustration. We used protein-protein BLAST at NCBI to blast several query genes against species of the subphylum Saccharomycotina (but having subtracted out all of Saccharomyces). Figure 3 shows that for these examples, the middle portions of the proteins are highly conserved, but the N-termini are not. We suggest that these non-conserved N-terminal regions are young in evolution, and therefore likely contain an excess of rare codons.
 
@@ -73,23 +89,43 @@ We picked example genes for illustration. We used protein-protein BLAST at NCBI 
 
 In the next section, we ask whether the findings of Figure 3 can be generalized to proteins of S. cerevisiae.
 
-## Method of scoring N-terminal conservation, and rationale for using Saccharomycotina
+### Method of scoring N-terminal conservation, and rationale for using Saccharomycotina
 
 We investigated N-terminal protein conservation using a quantitative approach. We ran local protein-protein BLAST for all S. cerevisiae genes against sequences of the Saccharomycotina subphylum, omitting Saccharomyces cerevisiae. Saccharomycotina was chosen because almost every gene from S. cerevisiae has a recognizable, conserved homolog in almost every species in Saccharomycotina, and yet the evolutionary distances are long enough that there is considerable sequence variability. We excluded species of Saccharomyces as they are too closely related to S. cerevisiae, and they are very numerous in sequence collections, and would overwhelm results from the other members of Saccharomycotina. However, we believe that this choice of subphylum does not greatly affect the final result.
 
 Conservation at the N-terminus was calculated as the weighted proportion of yeast species with sequence matches (a match by default BLAST parameters) beginning in the first 40 amino acids. The lowest conservation score is 0 (no hits in the first 40 amino acids), whereas the highest conservation score is 40 indicating that every species had a match (default BLAST parameters) starting at the first amino acid (Supplementary file 3 and 4). The length of genes is negatively correlated with the conservation score, especially at the N-terminus (rho = –0.47; p <0.001), but also for the rest of the gene (rho = −0.37, p<0.001)—that is, short genes tend to be more conserved.
 
-## N-termini are variable and poorly conserved
+### N-termini are variable and poorly conserved
 
 We measured protein conservation across more than 3000 S. cerevisiae proteins with orthologues among 822 closely related yeasts from Saccharomycotina. For each protein, we developed a conservation score for the first 40 amino acids to represent the N-termini, an equivalent conservation score for the middle 40 amino acids, and an equivalent conservation score for the C-terminal 40 amino acids (Methods and materials; Supplementary file 3 and 4).
 
 Strikingly, the N-termini of S. cerevisiae orthologs had conservation scores that were much lower, and very differently distributed than the middle of the same orthologs (Figure 4). The first 40 amino acids had a flat distribution of protein conservation scores, indicating high levels of variability amongst these orthologs. That is, many of the orthologs had no detectable homology with the first 40 amino acids of the cerevisiae protein.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/89656/elife-89656-fig4-v1.jpg)
+
+**Figure 4.:** S. cerevisiae proteins were blasted against proteins of Saccharomycotina (excluding cerevisiae). ‘Conservation Scores’ (Methods and materials) were calculated for the N-terminal, Middle, and C-terminal 40 amino acids of the S. cerevisiae proteins. Scores range from 0 (no conservation) to 40 (perfect conservation). The frequency of each conservation score (3964 S. cerevisiae proteins) was plotted.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89656/elife-89656-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Gray, N-terminal conservation scores. Red, C-terminal conservation scores.
+
 In contrast, the middle 40 amino acids were highly conserved, with conservations scores peaking at 40, the highest possible score. It Is evident that for the middle 40 amino acids, a large fraction of orthologs had a region of high homology to the S. cerevisiae protein, whereas this was not true for the N-termini. Finally, the last 40 amino acids had conservation scores similar to those of the first 40 amino acids, though a bit higher (more conserved) see Figure 4—figure supplement 1 for a comparison. These results suggest both ends of the gene ‘breathe,’ gaining and losing new sequences during evolution, whilst the middles stay constant. Thus the ends of genes are younger than their middles. At their first formation, they would likely have contained some rare codons, which selection may not yet have had time to remove.
 
-## The 3’ ends of genes also have slightly slow translation
+### The 3’ ends of genes also have slightly slow translation
 
 As shown in Figure 4C, the C-termini of proteins have poor conservation, like the N-termini. Therefore, the Spandrel hypothesis predicts slow translation at 3’ ends. We calculated translation speeds at 3’ ends, and again found slightly slow translation (Figure 5). This was not statistically significant over the last 40 codons, but it was significant over the last 100 codons (Figure 5) and the last 120 codons (Supplementary file 2). Like the 5’ end, there was a slightly increased relative frequency of rare codons (Figure 5—figure supplement 1), but unlike the 5’ end, ATG was not depleted (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/89656/elife-89656-fig5-v1.jpg)
+
+**Figure 5.:** Translation speeds at the 3’ ends of genes were calculated using ribosome residence time (RRT) (Gardin et al., 2014; Supplementary file 1 for RRT values). The average speed over the last 40 amino acids is about 0.1% slower than in the rest of the gene, not statistically significant. The average speed over the last 100 amino acids is about 0.19% slower, which is significantly different (p=0.028).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89656/elife-89656-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Red arrows identify the seven slowest codons (CCG, CGA, CGG, GGG, CGC, CCC, and TGG), purple arrows identify the seven rarest codons (CGG, CGC, CGA, TGC, CCG, CTC, and GGG), and blue arrows identify four Start codons (ATA, ATG, ATT, and TTG). Codons for each amino acid are arranged from least to most used, left to right.(A) Each bar is a ratio of the codon usage among the last 125 codons relative to codon usage for the remainder of genes. (B) Codon usage among the first 40 codons relative to the last 125 codons.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/89656/elife-89656-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** 467 mitochondrial genes were defined according to Williams et al. (14), and 222 proteins with a predicted ER signal peptide were defined according to Jan et al. (15). (A) The relative initial translation speeds (SITs) of mitochondrial, ER, and all other proteins were characterized. (B) The N-terminal protein conservation scores were characterized for the three sets of proteins.
 
 There may be at least three reasons why translation at 3’ ends is not as slow as at 5’ ends. First, at 3’ ends, Start codons and alternative-Start codons (which are fast) are not depleted (because at 3’ ends, there is no issue of generating incorrect translation initiation sites), and this retention of fast codons tends to make 3’ ends faster than 5’ ends.
 
@@ -99,17 +135,25 @@ Third, as an adaptation argument, 5’ ends could sometimes be selected for poor
 
 (Cope et al., 2018) had similar findings for N-terminal signal peptides of E. coli, which are enriched in translationally inefficient codons. Like us, they suggested selection for codon usage was relatively weak (or evolutionarily brief) at 5’ ends, and they cited the ‘Spandrel’ idea of Gould and Lewontin, 1979: that is, the inefficient codons might have arisen for a non-adaptive reason, and persisted because of weak (or brief) selection.
 
-## 5’ translation speeds positively correlate with 5’ conservation scores
+### 5’ translation speeds positively correlate with 5’ conservation scores
 
 If the ‘Young Spandrel’ hypothesis is true, and slow 5’ translation is partly caused by evolutionary instability of 5’ ends, then there should be a correlation between encoded slow translation, and poor N-terminal conservation. Our model predicts the least conserved N-termini to have the slowest translation (i.e. rarest codons), and, vice versa, the termini with the slowest translation should have the lowest conservation. To test this, we ranked all genes by the conservation scores of their first 40 amino acids. We then divided this ranked list into thirds. For each of the thirds (i.e. the bottom, middle, and top conservation scores) we plotted the average relative initial translation speeds.
 
 As shown in Figure 6A, the genes with the most poorly conserved N-termini also had the slowest initial translation, while the genes with the most conserved N-termini had the fastest initial translation, supporting the Spandrel hypothesis, and opposite to the Ramp hypothesis.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/89656/elife-89656-fig6-v1.jpg)
+
+**Figure 6.:** (A) Proteins were grouped by their N-terminal conservation scores (top, middle, and bottom thirds), and then the relative initial translation rate was plotted for each group. More conserved N-termini have a faster initial translation. (B) Proteins were grouped by their initial translation rate (Slow, SIT; Medium, MIT, or Fast, FIT), and then the N-terminal conservation scores were plotted for each group. Genes with faster initial translation have more conserved N-termini. Relative Initial Translation Speed is the log2 of (average ribosome residence time, RRT of the first 40 amino acids divided by the average RRT of the rest of the same gene) (Methods and materials).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89656/elife-89656-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Proteins were grouped by their C-terminal conservation scores (top, middle, and bottom thirds), and then the terminal translation rate was plotted for each group. More conserved C-termini have faster terminal translation. (B) Proteins were grouped by their C-terminal translation rate (top, middle, and bottom thirds), and then the C-terminal conservation scores were plotted for each group. Genes with faster terminal translation have more conserved C-termini.
+
 We also looked at the correlation in the other direction (Figure 6B). We ranked genes by their relative initial translation speed, and divided the ranked list into thirds, then plotted N-terminal conservation scores. Again the effects are correlated: genes with the slowest initial translation have the lowest N-terminal conservation scores. Thus, overall, there is a strong correlation between N-terminal instability (i.e. newness in evolution, low conservation scores) and slow initial translation (i.e. the presence of slow/rare codons).
 
 These correlations (i.e. between poor conservation and slow translation; and between slow translation and poor conservation) were also seen at the 3’ ends of genes (Figure 6—figure supplement 1).
 
-## The Ramp hypothesis is inconsistent with observations of ribosome density and gene expression
+### The Ramp hypothesis is inconsistent with observations of ribosome density and gene expression
 
 In the Tuller ‘Ramp’ hypothesis, in which the purpose of the slow translational ramp is to queue ribosomes and prevent collisions, genes with the highest ribosome occupancy would be in the most danger of ribosome collisions, and would, therefore, presumably have pronounced SITs. SITs might not be necessary on genes with low ribosome density, since there would not be much danger of collision in any case. To test this, we used information from Arava et al., 2003, which measured the density of ribosomes on all S. cerevisiae mRNAs (Arava et al., 2003; Figure 7). We ranked genes by ribosome density, then grouped them in thirds. Opposite to the expectation from the Tuller et al. ‘Ramp’ theory, the genes with the highest ribosome densities had the fastest initial translation, whereas the genes with the lowest ribosome densities had the slowest initial translation (Figure 7C). While these findings are opposite to the expectation of the ‘Ramp’ theory, they are consistent with the spandrel theory, because genes with high ribosome density would be subject to more intense selection against slow codons, thus leading to faster 5’ ends. Furthermore, analysis of Conservation Scores on the same genes showed that the genes with the lowest ribosome densities also had the lowest Conservation Scores (Figure 7D), as predicted by the Spandrel hypothesis.
 
@@ -119,13 +163,21 @@ In the Tuller ‘Ramp’ hypothesis, in which the purpose of the slow translatio
 
 Similarly, in the ‘Ramp’ hypothesis, ribosome collisions on highly-expressed genes would presumably have more serious consequences for the cell than collisions on poorly-expressed genes, and so highly-expressed genes ought to have the most pronounced SITs. To test this, we used transcriptomic information from Lipson et al., 2009, which measured the number of mRNA transcripts for S. cerevisiae genes (Lipson et al., 2009). Again, we ranked genes by expression, then grouped them by thirds. Exactly contrary to the ‘Ramp’ hypothesis, we found that genes with the highest expression had the fastest initial translation (Figure 7A). In this analysis, the middle and bottom genes are not significantly different from each other; possibly some of the poorly expressed genes are inducible genes that would be highly expressed under some other condition (e.g. the sporulation genes, the GAL genes). In addition, the most highly expressed genes had the highest conservation scores, consistent with the Spandrel hypothesis (Figure 7B).
 
-## Experimentally, encoded slow initial translation does not increase gene expression; the opposite is true
+### Experimentally, encoded slow initial translation does not increase gene expression; the opposite is true
 
 Tuller et al. hypothesized that slow initial translation was adaptive, and improved the efficiency of translation and gene expression by minimizing ribosome collisions. However, in the Spandrel hypothesis, slow initial translation is not generated by selection and is not adaptive. It might not have any effect on gene expression, but, if anything, slow translation might reduce gene expression. While informatics is wonderful, it is always nice to do an experiment, and in this section, we present direct experimental results regarding the effect of encoded slow, medium, and fast initial translation on gene expression.
 
 We used a gene expression reporter based on EKD1024 (Brule et al., 2016) (Methods and materials). In this construct, GFP is the reporter, but for accuracy it is normalized against a divergently transcribed red fluorescent protein (Figure 8—figure supplement 1). Thus, GFP expression is reported as a GFP/RFP ratio. Although the reporter is GFP, the N-terminal region of this particular protein is derived from yeast HIS3, not GFP, and likely has little if any effect on the fluorescence of the GFP fused downstream (Dean and Grayhack, 2012; Gamble et al., 2016; Pédelacq et al., 2006). We used synonymous slow, medium, or fast codons to recode some of the codons in the first 41 amino acids of this GFP reporter to generate three reporters with slow, medium, or fast translation over the first 41 amino acids. We emphasize that the amino acid sequences of the three constructs were identical. The slow, medium, and fast average RRT values over the first 41 codons were 1.20, 1.04, and 0.93, respectively. That is, this SIT is slower than most natural SITs, and this FIT is faster than most natural FITs, but the difference is moderate.
 
 As shown in Figure 8 (left three bars), the SIT did not improve expression of GFP, contrary to Tuller et al. In fact, the GFP with the SIT was expressed at only 71% of the level of the GFP with the FIT. It was surprising to us that the difference was this large—again, recoding was limited to codons within the first 41, and the protein sequences were identical.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/89656/elife-89656-fig8-v1.jpg)
+
+**Figure 8.:** Left three bars. A synthetic GFP was constructed with a leader amino acid sequence that had little effect on GFP. The leader sequence was recoded to give slow (SIT), medium (MIT), or fast (FIT) translation speed over the first 41 amino acids, without changing the amino acid sequence—i.e., the SIT, MIT, and FIT had identical amino acid sequences, but different average ribosome residence times (RRTs). Each construct (SIT, MIT, FIT) was integrated in a single copy at the ADE2 locus, and 25 independently-transformed strains were picked, and GFP fluorescence was measured for each, and the RFP-normalized mean was plotted. Numerical values were: SIT, 1.66; MIT, 1.80, FIT, 2.29. GFP was normalized to RFP expressed from the same reporter molecule, but RFP fluorescence hardly changed amongst the transformants, and non-normalized GFP would have given very similar results. Slower initial translation reduced gene expression. Right three bars. As above, a Putative ribosome collision site (PCS) (CGA-CGG) was inserted between the leader and the GFP. Again, slower initial translation reduced gene expression. Values were: SIT:PCS, 0.69, MIT:PCS, 0.74, FIT:PCS, 0.99.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/89656/elife-89656-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** These reporters were adapted from Brule et al., 2016; Gamble et al., 2016 . A leader sequencer (purple), originally from HIS3, is appended upstream of GFP. (A) For the first three constructs, recoding of some residues within the first 41 codons with synonymous codons gave either a slow (SIT), medium (MIT), or fast (FIT) initial translation rate. Protein sequences were preserved. (B) Three analogous reporters were made with a putative ribosome collision site (PCS) at codon positions 68 and 69 (still upstream of GFP sequences). The PCS was the codon pair CGA-CGG, two rare Arg codons.
 
 Another possibility is that a SIT can protect against ribosome collisions when there is a site downstream that induces ribosome collisions. Sites thought to induce ribosome collisions include rare Arg-Arg codon pairs (Dao Duc and Song, 2018; Tesina et al., 2020). We, therefore, introduced the codon pair CGA-CGG (replacing Asn-Asp, AAT-GAT) downstream of the first 41 amino acids, but still upstream of important GFP residues. Indeed, this single CGA-CGG codon pair, potentially inciting ribosome collisions, caused a large reduction--about 50%--in the expression of GFP (Figure 8, right three bars). The reduction was about the same in the SIT, MIT, and FIT constructs. In this case, with putative collision sites, the GFP with the SIT was expressed at only 67% of the level of the equivalent GFP with the FIT. That is, this SIT (a fairly extreme SIT) did not at all protect against the putative ribosome collisions—if anything, it made things slightly worse. This result suggests there is no benefit to ‘queuing’ ribosomes, if queuing even occurs. Instead, the fastest-translating gene once again gave the highest expression, and the highest relative expression, despite the collision site.
 
@@ -151,23 +203,27 @@ Finally, again, in ‘The Spandrels of San Marco...,’ (Gould and Lewontin, 197
 
 ## Materials and methods
 
-## Statistical calculations of relative initial rate of translation
+### Statistical calculations of relative initial rate of translation
 
 Bioinformatics were performed on protein-coding open reading frames (ORFs) of Saccharomyces cerevisiae downloaded from the Saccharomyces Genome Database (SGD) website, as last modified on April 22, 2021. Protein-coding ORFs annotated as dubious or pseudogenes were not included in analyses. All statistics were performed using The R Project for Statistical Computing. Translation speed was measured using the ribosome residence time (RRT) which is a metric of the occupancy of ribosomes on each sense codon within the A-site (Gardin et al., 2014). The RRT values we used are shown in Supplementary file 1; these are modified from the original RRT results of Gardin et al. by inclusion of the ribosome profiling data of Jan et al., 2014.
 
-## Relative initial translation speed
+### Relative initial translation speed
 
 (Tuller et al., 2010) focused on a ‘ramp’ of translation speed, where the first part of the gene has slow translation relative to the rest of the gene. The ramp thus refers to a rate. To quantitate this slow relative ramp for each gene, we calculated the average RRT for an initial window of the gene (e.g. 40 amino acids, see below), then divided by the average RRT of the rest of the gene. Thus, genes with a ‘slow ramp’ have a ratio of less than 1. We then took log2 of this ratio; genes with a slow ramp yield a negative number, and the more negative the number, the steeper the ramp.
 
-For each gene, the relative initial translation speed (RIT) (explained above) was calculated across windows of the first 30, 40, 50... and 100 codons, with all windows being statistically significant for slow translation. For these RIT calculations, the first (start) codon was omitted since all protein-coding genes in this dataset except Q0075 start with ATG, and ATG is one of the fastest codons, which would skew the RIT. Similarly, the last (stop) codon was omitted.RIT=log2(meanRRT(codons2:window)meanRRT((codons(window+1)):(last codon−1)))
+For each gene, the relative initial translation speed (RIT) (explained above) was calculated across windows of the first 30, 40, 50... and 100 codons, with all windows being statistically significant for slow translation. For these RIT calculations, the first (start) codon was omitted since all protein-coding genes in this dataset except Q0075 start with ATG, and ATG is one of the fastest codons, which would skew the RIT. Similarly, the last (stop) codon was omitted.
+
+$$
+RIT=log2(\frac{meanRRT(codons2:window)}{meanRRT((codons(window+1)):(last codon−1))})
+$$
 
 Windows of the first 30, 40, 50... and 100 codons each had statistically significant depletion in translation speed compared to the body of genes. We chose to focus on the first 40 codons. All genes shorter than 303 nucleotides (translated into 100 amino acids) were omitted from all analyses. For all RIT analyses, 328 out of 6022 ORFs were omitted leaving a dataset of 5694 ORFs.
 
-## Data
+### Data
 
 mRNA transcript readings, which we used as a proxy for gene expression, was acquired from Lipson et al., 2009. Genes with a read count of less than 10 were omitted due to concerns about noise. Ribosome density measurements were acquired from Arava et al., 2003. These values were calculated as the number of ribosomes, detected on an mRNA, divided by the nucleotide length of the gene (including the stop codon).
 
-## Protein BLAST setup and diagnostics
+### Protein BLAST setup and diagnostics
 
 S. cerevisiae proteins were downloaded from the SGD (last modified on April 22, 2021). Proteins derived from ORFs annotated as dubious or pseudogene were omitted from analyses. The Saccharomycotina (Taxonomy ID: 147537) protein sequences were downloaded from NCBI using the links here.
 
@@ -177,22 +233,22 @@ We wanted to compare conservation at the beginning of proteins with conservation
 
 With respect to the above procedure, we note that we are relying on the BLAST algorithm to find regions of homology. Homology would be somewhat more easily found in the middle of sequences than at the ends because of seeding issues. It is for this reason that we divided proteins in half, and used a BLAST with the second half of the protein to find homologies with the first 40 amino acids of the second half. That is, in this procedure, for the middle homologies, the algorithm is being asked to find homologies at the end of a sequence, exactly as is the case for the first 40 and last 40 amino acids. We also used the alternative approach of finding homologies in the last 40 amino acids of the first half of the protein, with essentially identical results (Figure 4—figure supplement 1).
 
-## Calculations of protein conservation scores and ratios
+### Calculations of protein conservation scores and ratios
 
 The general idea of the ‘Conservation Score’ is that it represents the lengths of the regions of BLAST homology between the S. cerevisiae query and the Saccharomycotina subjects in the beginning, middle, and end 40-aminoacid windows. Each S. cerevisiae query sequence was separated into two equal halves, and then BLASTs were done on both halves against all of Saccharomycotina (omitting all submissions from the Saccharomyces genus). For all subject proteins with high homology over any region (i.e. a bit-score greater than 50), one finds the pair-wise regions of homology with a BLAST ‘Alignment Score’ of 200 or more (red colored regions in the BLAST website ‘Graphic Summary’). The length of the high-homology region in the window of interest (but not the actual number of amino acid sequence matches within that region) contributes to the Conservation Score. That is, amino acids have to be within a region of homology found by BLAST in order to contribute to the score; even though all proteins begin with ‘M,’ these only contribute to the conservation score if they are within a region of BLAST homology. The Conservation Score is the sum of (the length of the homology in the window, multiplied by the proportion of qualified subject proteins with that length of homology). Example Conservation Scores are shown in Supplementary file 3, and an example Conservation Score is calculated in Supplementary file 4. We only considered conservation scores from proteins that had homology with at least 40 unique species in Saccharomycotina. We also omitted proteins that were shorter than 100 amino acids. As shown in Supplementary file 3, conservation scores ranged from 0, meaning no BLAST homology region within the window of 40 amino acids for any qualifying homolog in Saccharomycotina, up to a maximum of 40, meaning that all qualifying homologs in Saccharomycotina had matches starting at the first amino acid. In total, protein conservation analyses used 3964 S. cerevisiae proteins with high homology hits for BLAST done on the first and second half of proteins (Figure 4).
 
-## Design of the fluorescent reporter gene constructs
+### Design of the fluorescent reporter gene constructs
 
 We created a reporter gene based on reporter plasmid EKD1024 (Brule et al., 2016). Briefly, a bidirectional galactose promoter simultaneously induces the expression of GFP and RFP in the presence of galactose, and we integrated the reporter into the yeast genome at the ADE2 locus. We recoded GFP to give the first 41 codons of GFP a slow initial translation speed (SIT), medium initial translation speed (MIT), or fast initial translation speed (FIT), while maintaining the same amino acid sequence (Figure 8—figure supplement 1, sequences in Supplementary file 5). We also designed three more constructs (Figure 8—figure supplement 1, sequences in Supplementary file 5) with a SIT, MIT, or FIT upstream of one of the slowest and rarest codon pairs, CGA-CGG (replacing AAT-GAT, Asn-Asp), which is known to greatly attenuate gene expression in living yeast (Gamble et al., 2016). Other rare codon pairs (CGA-CGA and CGA-CCG) have been shown to promote ribosome stalling (Tesina et al., 2020) so in Figure 8, right, CGA-CGG operates as a putative ribosome collision site (PCS). Instead of a PCS, the constructs in Figure 8, left, had AAT-GAT (Asn Asp), a frequent codon pair with above average translation speed. The Relative Initial Translation Speed scores of the constructs were: SIT was 0.208; MIT was –0.0004; FIT was –0.166; SIT + PCS was 0.198; MIT + PCS was –0.0109; and FIT + PCS was –0.177. (Note that the RIT scores of the constructs with the PCS change because the PCS makes the translation speed of the body of the gene slower; that is, the change is due to a change in the denominator.)
 
-## Yeast strains
+### Yeast strains
 
 The constructs were transformed into BY4741 (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0). The reporter expresses MET15 allowing selection. Transformants were selected for Met+ on HULA plates (0.075 g/L Histidine; 0.075 g/L Uracil; 0.25 g/L Leucine; 0.075 g/L Adenine; 20 g/L D-Glucose; 5 g/L Ammonium Sulfate; 1.7 g/L Yeast Nitrogen Base). The reporter gene integrates into the ADE2 locus, and thus successful transformants are ade2-delete which becomes red when grown on YPD plates; this was used as a secondary biological marker to confirm successful transformants. About 30 Met+, Ade-, red transformants were chosen for each recoded GFP construct. These transformants were pre-screened using a flow cytometer for absolute levels of galactose-induced green and red fluorescence; out of all the individual colonies initially chosen (~180), about 5 were rejected because their absolute levels of both GFP and RFP fluorescence were about twice as high as for other strains. We believe these rejected transformants contained two copies of the reporter construct. For each construct, 25 Met+, Ade-, red transformants were chosen for analysis. Strains are available upon request to BF, and sequences of SIT, MIT, and FIT constructs are available in Supplementary file 5.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 The strains were inoculated in liquid HULA media, with 2% galactose, until mid-log phase (around 10–14 hr) containing around 3×10^7 cells/mL. The strains were sonicated to separate cells and the strains were stored on ice (typically around an hour) until data collection. An LSR Fortessa Flow Cytometer was used to measure GFP levels (All Events FITC-A Mean) and RFP levels (All Events PE-Texas Red-A Mean) across 75,000 events. As a control, a strain lacking a fluorescent reporter was used. For all samples, GFP levels were normalized by RFP levels. All samples (25 per experiment) were included in the analysis with no exclusions.
 
-## Statistical tests
+### Statistical tests
 
 None of our analyses made assumptions regarding the normality of the data. As such, we only performed nonparametric statistics. Wilcoxon signed-rank tests were done for relevant pairwise analyses; when necessary, p-values were corrected for multiple comparisons using the Holm–Bonferroni method. Spearman correlations were used. We used the Kolmogorov–Smirnov goodness of fit test to confirm that the three distributions were significantly different (p<0.001) for Figure 4.

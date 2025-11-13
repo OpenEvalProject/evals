@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.36245.001 Chromatin looping controls gene expression by regulating promoter-enhancer contacts, the spread of epigenetic modifications, and the segregation of the genome into transcriptionally active and inactive compartments. We studied the impact on the structure and expression of host chromatin by the human retrovirus HTLV-1. We show that HTLV-1 disrupts host chromatin structure by forming loops between the provirus and the host genome; certain loops depend on the critical chromatin architectural protein CTCF, which we recently discovered binds to the HTLV-1 provirus. We show that the provirus causes two distinct patterns of abnormal transcription of the host genome in cis: bidirectional transcription in the host genome immediately flanking the provirus, and clone-specific transcription in cis at non-contiguous loci up to >300 kb from the integration site. We conclude that HTLV-1 causes insertional mutagenesis up to the megabase range in the host genome in >10 4 persistently-maintained HTLV-1 + T-cell clones in vivo.
+Chromatin looping controls gene expression by regulating promoter-enhancer contacts, the spread of epigenetic modifications, and the segregation of the genome into transcriptionally active and inactive compartments. We studied the impact on the structure and expression of host chromatin by the human retrovirus HTLV-1. We show that HTLV-1 disrupts host chromatin structure by forming loops between the provirus and the host genome; certain loops depend on the critical chromatin architectural protein CTCF, which we recently discovered binds to the HTLV-1 provirus. We show that the provirus causes two distinct patterns of abnormal transcription of the host genome in cis: bidirectional transcription in the host genome immediately flanking the provirus, and clone-specific transcription in cis at non-contiguous loci up to >300 kb from the integration site. We conclude that HTLV-1 causes insertional mutagenesis up to the megabase range in the host genome in >104 persistently-maintained HTLV-1+ T-cell clones in vivo.
 
 ## Introduction
 
@@ -35,37 +35,168 @@ The observation that CTCF binds to the HTLV-1 provirus (Satou et al., 2016) rais
 
 In this paper, we refer to loci in the host genome relative to the orientation of the HTLV-1 provirus. Thus, a locus ‘downstream’ of the provirus is located 3′ to the 3′ LTR, whether the provirus is integrated in the positive or negative sense in the host genome.
 
-## HTLV-1 forms chromatin loops with the flanking host genome
+### HTLV-1 forms chromatin loops with the flanking host genome
 
 To test the hypothesis that HTLV-1 integration alters the host chromatin structure, we performed a genome-wide search for chromosomal positions that contact the HTLV-1 provirus, using a modified version of circular chromosome conformation capture (4C). 4C is a powerful tool to study the 3D chromatin looping between a specified genomic region (the 'viewpoint') with respect to the rest of the genome. The standard 4C protocol has limitations in that it is only semiquantitative (Denker and de Laat, 2016). To improve the quantification, we adapted our protocol for quantification of HTLV-1 integration sites (Gillet et al., 2011; Gillet et al., 2017). We followed the 4C protocol described by van de Werken et al. (van de Werken et al., 2012), but instead of using a second restriction enzyme, we sonicated the library, added adapters and performed ligation-mediated PCR (see Materials and methods). This modification confers two advantages. First, it precludes the bias towards detection of chromatin contacts that lie near a given restriction site. Second, the amplicon length serves as a unique molecular identifier, enabling relative quantification (Gillet et al., 2017) of the chromatin contacts. We refer to this modified method as quantitative 4C (q4C); a similar approach (UMI-4C) has been described by others (Schwartzman et al., 2016).
 
 We applied q4C to test the hypothesis that the HTLV-1 provirus forms chromatin contacts with the host genome in a series of T cell clones isolated by limiting dilution from circulating CD4+ T lymphocytes of HTLV-1-infected individuals (Cook et al., 2012) (Table 1; Supplementary file 1). Each clone has a single copy of the provirus in a unique integration site. As the viewpoint in q4C, we used the 679 bp NlaIII fragment containing the proviral CTCF-BS (Figure 1A). Chromatin contacts were identified using a protocol based on a hidden Markov model (Materials and methods).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig1-v1.jpg)
+
+**Figure 1.:** (A) Upper line: the HTLV-1 genome (green), with a long terminal repeat (LTR) at each end, is integrated into a clone-specific site in the human genome (grey). The q4C viewpoint (blue rectangle) is the NlaIII fragment within the HTLV-1 genome (nucleotide residues 6564–7246) which contains the CTCF binding site (CTCF-BS; black arrowhead). Lower line: the CTCF-BS (blue hexagon) in the provirus can dimerize with a CTCF-BS in the flanking host genome. (B) Chromatin contacts identified by q4C in two different clones. For each clone, the top panel depicts the q4C profile in the 5′ and 3′ host genome flanking the provirus (two biological duplicates), quantified as the normalized frequency of ligation events in overlapping windows (window width 10 kb, step 1 kb). On the horizontal axis, positive values denote positions downstream of the provirus (i.e. lying 3′ of the 3′ LTR); negative values denote upstream position. VP – viewpoint in q4C (proviral integration site). Diamonds mark the positions of reproducible chromatin contact sites called by the peak caller (Materials and methods). CTCF panel – open arrowheads denote positions of CTCF-BS; the filled arrowhead denotes the CTCF-BS in the provirus. Genes panel shows RefSeq protein-coding genes in the flanking host genome. The q4C profiles of remaining clones are shown in Figure 1—figure supplement 1–10. (C) Number of detected peaks in each clone. (D) Distance from detected q4C peaks to the respective proviral integration site.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The distance from the integration site was chosen such that all called peaks are shown. For each clone, the top panel depicts q4C profile in the infected chromosome in duplicate (normalized frequency of ligation events in overlapping 10 kb windows, step 1 kb). On the horizontal axis, positive values denote positions downstream of the provirus (i.e. lying 3′ of 3′ LTR), negative values denote upstream position. VP – viewpoint in q4C (proviral integration site). Diamonds mark the positions of reproducible chromatin contact sites called by the peak caller. CTCF panel – open arrowheads denote positions of CTCF-BS. The filled arrowhead denotes the CTCF-BS in the provirus. Genes panel shows RefSeq protein coding genes in the genomic environment. RNA density – the normalized transcription density in 1 kb bins in same (blue) or opposite (red) orientation compared to the HTLV-1 plus-strand. RNA ratio – the ratio of transcription density over the median of all clones in the same position in same (blue) or opposite (red) orientation. Clones also displayed in main body of the paper are highlighted at the top of the page.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** See legend for Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** See legend for Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** See legend for Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** See legend for Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** See legend for Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** See legend for Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** See legend for Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig1-figsupp9-v1.jpg)
+
+**Figure 1—figure supplement 9.:** See legend for Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig1-figsupp10-v1.jpg)
+
+**Figure 1—figure supplement 10.:** See legend for Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 11.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig1-figsupp11-v1.jpg)
+
+**Figure 1—figure supplement 11.:** (A) significantly fewer peaks were found upstream of the integration site than downstream (15 vs 29; p=0.03, chi-squared goodness of fit test). (B) The distribution of absolute distance between each q4C peak and the integration site was compared between upstream and downstream peaks (p=0.13, Wilcoxon rank sum test). (C) The frequency of the presence of a CTCF binding site (CTCF-BS) in a q4C peak did not differ between upstream and downstream peaks. (p=1, Fisher’s exact test).
+
+**Table 1.**
+ T cell clones used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Clone(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TBJ</td>
+      <td>3.60, 3.83</td>
+    </tr>
+    <tr>
+      <td>TCX</td>
+      <td>8.13, 8.8</td>
+    </tr>
+    <tr>
+      <td>TCT</td>
+      <td>10.1</td>
+    </tr>
+    <tr>
+      <td>TBW</td>
+      <td>11.50, 11.63, 11.65, 13.50(U)</td>
+    </tr>
+    <tr>
+      <td>TBX</td>
+      <td>TBX4B</td>
+    </tr>
+    <tr>
+      <td>HAY</td>
+      <td>6.25, 6.30(U)</td>
+    </tr>
+  </tbody>
+</table>
+
 We detected reproducible q4C peaks (long-range chromatin contacts between the provirus and the host genome) in 9 of the 10 infected T-cell clones examined (Figure 1B,C; Figure 1—figure supplement 1–10). The number of peaks per clone varied between 0 and 15, with a median of 3 peaks per clone (Figure 1C); There were significantly more peaks downstream of the integration site than upstream (p=0.03, Chi-squared goodness-of-fit test; Figure 1—figure supplement 11A). The distance between identified peaks and the provirus of the respective clone varied between 12.9 kb and 1.4 Mb, with a median of 85 kb (Figure 1D). The distance between each peak and the integration site did not significantly differ between upstream and downstream peaks (p=0.13, Wilcoxon test; Figure 1—figure supplement 11B).
 
 We wished to identify whether the HTLV-1 provirus makes preferential contacts with the host genome in cis. The provirus is present in a single copy per cell (Figure 2A) (Cook et al., 2012). First, to determine whether the q4C reads were derived from a single chromosome (i.e. were monoallelic) or from both homologous chromosomes (biallelic), we identified single-nucleotide polymorphisms (SNPs) present in the respective donor subject by whole-genome sequencing (see Materials and methods). The alleles identified at heterozygous SNPs in q4C reads demonstrated that the observed ligation events were confined to a single strand (i.e. were monoallelic), with a range of at least 4 Mb from the provirus (Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig2-v1.jpg)
+
+**Figure 2.:** (A) The HTLV-1 provirus is present in one copy per cell. The infected chromosome (green) can be distinguished from the uninfected homologous chromosome (dark blue) by heterozygous single-nucleotide polymorphisms (SNPs), marked by the nucleotides above each chromosome. (B) The frequency of allele usage in unique q4C reads containing heterozygous SNPs (at least two reads per position) was measured, to quantify the degree of allelic imbalance, that is the degree of monoallelic usage present in q4C reads at a heterozygous SNP. Allelic imbalance ranges between 0 (biallelic, i.e. half of reads come from each allele) and 0.5 (monoallelic, i.e. all reads from one allele only). The dark blue line (above) shows the range of allele usage in the q4C reads; the light grey line (below) shows the allele usage for the same SNPs in the whole-genome sequencing reads. Curves were computed using LOESS regression. (C) The infected chromosome was distinguished from the homologous uninfected chromosome using q4C data (top panel) and chromosome-specific PCR (bottom panel). Top panel - heterozygous SNPs in DNA were phased computationally to identify the two haplotypes (A and B) (Materials and methods); the alleles present in q4C data were then assigned to the respective haplotype (circles). On the horizontal axis, positive values denote positions downstream of the provirus, and negative values denote positions upstream. Within at least 100 kb, all identified heterozygous SNP alleles mapped to only one of the two haplotypes. Bottom panel – haplotype assignment was confirmed using haplotype-specific PCR. Each nucleotide shown is a heterozygous SNP within 5 kb of the proviral integration site, identified in the respective clone by whole-genome sequencing. The SNPs were then mapped to the respective haplotype by Sanger sequencing of long-range products amplified by PCR either between the provirus and host genome (inf – infected haplotype) or across the provirus (uninf – uninfected haplotype). Further examples are shown in Figure 2—figure supplement 1–5.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The infected chromosome was distinguished from the homologous uninfected chromosome using q4C data (top panel) and chromosome-specific PCR (bottom panel) (further example shown in Figure 2C). Top panel - heterozygous SNPs in DNA were phased computationally to identify the two haplotypes (A and B) (see Materials and methods), and the alleles present in q4C data were then assigned to the respective haplotype (circles). On the horizontal axis, positive values denote positions downstream of the provirus and negative values denote positions upstream. Within at least 100 kb, all identified heterozygous SNP alleles mapped to only one of the two haplotypes. Bottom panel – haplotype assignment was confirmed using haplotype-specific PCR. Each nucleotide shown is a heterozygous SNP within 5 kb of the viral integration site. These SNPs were mapped to the respective haplotype by Sanger sequencing of long-range products amplified by PCR either between the provirus and host genome (inf – infected) or across the provirus (uninf – uninfected).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** See legend for Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** See legend for Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** See legend for Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** See legend for Figure 2—figure supplement 1.
+
 Next, we used the heterozygous SNPs to distinguish the chromosome carrying the provirus from its homologous chromosome, using computationally-determined phased haplotypes (see Materials and methods). In this way, the infected chromosome could be distinguished from the uninfected chromosome for at least 100 kb either side of the integration site in 8 of the 10 clones (Figure 2C; Figure 2—figure supplement 1–5). To validate the haplotype-calling, we identified heterozygous SNPs in long-range PCR products, amplified either between the provirus and the host genome (infected haplotype) or across the proviral integration site (uninfected haplotype) (Figure 2C; Figure 2—figure supplement 1–5). The results (Figure 2C) showed that the reproducible contacts between the host genome and the HTLV-1 provirus were exclusively made in cis, that is, on the infected chromosome.
 
-## Certain long-range chromatin contacts are CTCF-dependent
+### Certain long-range chromatin contacts are CTCF-dependent
 
 We wished to test the hypothesis that the observed abnormal long-range chromatin contacts are associated with the presence of CTCF-BS identified in the T cell clones by ChIP-seq. The results showed that that CTCF-BS were enriched at the chromatin contacts in the host genome: ~50% of q4C peaks overlapped with at least one CTCF-BS (Figure 3A); in 10% of peaks there were two CTCF-BS. The frequency of CTCF-BS overlapping the observed 4C peaks was significantly higher than random expectation (p=4.73 * 10−4, Fisher’s exact test; Figure 3—figure supplement 1). Consistent with recent findings by others (de Wit et al., 2015; Sanborn et al., 2015), where a peak overlapped a CTCF-BS the viral and host CTCF binding motifs were present in convergent or tandem orientation in 80% of cases (Figure 3B). However, not all nearby tandem or convergent host CTCF-BS formed detectable contacts with the provirus: see, for example, clones 8.13 and TBX4B (Figure 1—figure supplement 5 and 8, respectively). The presence of a CTCF-BS was associated with a significantly greater observed q4C peak height (p=0.025, Wilcoxon test), and there was a significant positive trend between the q4C peak height and the number of CTCF sites within the peak (Figure 3C; p=0.016, Spearman’s test). Finally, there was a significant positive correlation between the number of observed chromatin contacts in a clone and the number of CTCF-BS within 0.5 Mb of the integration site (Figure 3D; Pearson’s correlation test); this correlation remained significant up to 1.16 Mb from the provirus.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig3-v1.jpg)
+
+**Figure 3.:** (A) Of 44 contacts identified by q4C in the clones examined, 22 contained one CTCF-BS (N = 17) or two CTCF-BS (N = 5); the remaining 22 contacts did not contain a CTCF-BS. The presence of one or more CTCF-BS in observed q4C peaks was higher than expected by chance (p=4.73 * 10−4, Fisher’s exact test; see also Figure 3—figure supplement 1). (B) The polarity was determined of the proviral CTCF-BS (filled arrowhead) and the host CTCF-BS (open arrowhead). Of the CTCF-containing peaks whose polarity could be determined, convergent orientation (possible only for downstream peaks) was found in 46% of peaks, divergent orientation (possible only for upstream peaks) in 8% of peaks, and tandem orientation (possible for either upstream or downstream peaks) in 46% of peaks. (C) Distribution of q4C peak height (mean number of ligation events between replicates identified in each peak) in peaks containing 0, 1 or 2 CTCF-BS (coloured as in panel A): peaks that contained at least one CTCF-BS were significantly higher than those that lacked a CTCF-BS (p=0.025, Wilcoxon test). In addition, there was a significant correlation between mean q4C peak height and the number of overlapping CTCF-BS (p=0.0156, Spearman’s rank correlation test) (not illustrated). (D) The number of observed contacts was positively correlated with the number of CTCF-BS within 0.5 Mb of the proviral integration site (p=0.011, Pearson’s correlation test). (E–F) q4C analysis was carried out on a clone from an ATL-derived cell line (E) and a T-cell clone (F), respectively either the wild-type cells (WT; top panels) or after CRISPR-Cas9 knockout of the proviral CTCF-BS (bottom panels). The vertical axis shows the normalized number of q4C ligation events (overlapping windows 5 kb wide, with 1 kb steps). The bottom track in each panel shows the position of known RefSeq protein-coding genes; in clone TBX4B the provirus is inserted between exons of the gene PNPLA (shown in blue; see Results section).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** For each observed peak, we selected random control sites within 2 Mb of the provirus and with a width equal to the observed peak and a position on the same chromosome, within a reasonable distance from the same viral integration site (observed range), and the number of overlapping CTCF binding site (BS) was counted. This process was repeated 100 times. The number of 4C peaks (left) or randomly matched ranges (median of 100; right) which did (blue) or did not (yellow) contain a CTCF BS. Error bars indicate interquartile range.
+
 We then tested whether CTCF binding to the provirus is required for formation of provirus-host contacts. We used a CRISPR-modified cell line (ED) (Satou et al., 2016), derived from an individual with the HTLV-1-associated malignancy adult T-cell leukemia (ATL) (Figure 3E). We also applied CRISPR-Cas9 ribonucleoprotein transfection (Schumann et al., 2015) to knock out the CTCF-BS in a non-malignant T-cell clone (TBX4B; Figure 3F). We carried out q4C analysis on cells from the wild-type (WT) clone, and the mutant (Mut) clone containing a mutated CTCF-BS. The results show that the loss of CTCF binding was associated with a loss of 5 of the eight observed contacts; three of the five lost contacts overlapped a CTCF-BS in the host.
 
-## HTLV-1 alters contiguous host transcription
+### HTLV-1 alters contiguous host transcription
 
 The results obtained by q4C demonstrated that HTLV-1 integration can alter host chromatin looping. We wished to investigate the impact of the HTLV-1 provirus on transcription in the host genome both immediately flanking the provirus and at distant loci. We carried out strand-specific mRNA-sequencing (RNA-seq) on the HTLV-1-infected T cell clones, and quantified the density of reads mapping to discrete 1 kb windows up to 2 Mb from the respective proviral integration site. The results showed upregulated transcription in the host genome immediately flanking the HTLV-1 provirus, in all clones examined (Figure 4A,B; Figure 1—figure supplement 1–10, Figure 4—figure supplement 1). This upregulated transcription was observed either upstream or downstream of the provirus, or both, with a predominant increase downstream in the same sense as the HTLV-1 plus-strand and upstream in the opposite sense (Figure 4C). We then performed this analysis separately to compare the clones with high HTLV-1 plus-strand expression and those with low plus-strand expression (defined respectively as those clones with a tax read intensity in the RNA-seq above or below the median intensity of all clones). The results showed that, whereas abnormal upstream antisense expression was present in most clones, an increase in same-sense transcription was specific to those clones with high plus-strand expression (Figure 4D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig4-v1.jpg)
+
+**Figure 4.:** (A) In each column, the green arrow indicates the HTLV-1 proviral integration site in the clone indicated at the top of the column. Each row shows the the transcription density (normalized RNA-seq read count) flanking that genomic position in the clone indicated at the right-hand side. In each case, transcription orientation and positions are shown relative to the integrated provirus. Read density shown in blue shows transcription in the same orientation as the proviral plus-strand; red shows transcription in the antisense orientation to the proviral plus-strand. (B) q4C profiles of two clones aligned with the transcription density within 300 kb of the proviral integration site. The RNA ratio shows the ratio of transcription density in a given bin (number of reads in 1 kb bin/total number of reads in sample) in the target clone, divided by the median expression density of all clones in that bin. Colours represent expression in the same sense (blue) or opposite sense (red) to the HTLV-1 plus-strand. Data on the remaining clones are shown in Figure 1—figure supplement 1–10. (C) Left panel: median ratio of transcription density of all clones, aligned on the integration site (1 kb bins, up to 0.5 Mb from the integration site). Right panel: median ratio of transcription density at 10 genomic positions, selected at random from a gap-excluded hg19 reference genome. (D) Analysis carried out as in panel C, separately for clones expressing HTLV-1 plus-strand transcripts at a level greater than (left panel) or less than (right panel) the median of all clones.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Normalized ratio of transcription density in each clone (Figure 1, Figure 1—figure supplements 1–10) between 100 kb upstream and 100 kb downstream of the respective proviral integration site; transcription is oriented relative to the proviral plus-strand. Data are normalized within each clone to the highest ratio value within these 200 kb.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/36245/elife-36245-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) RNA-seq reads (upper panel) and splice junctions (boxed, lower panel) flanking the provirus in clone 3.60 and at the same genomic location in clone 3.83. Transcription in the same orientation as the proviral plus-strand is shown in blue; transcription in the antisense orientation to the proviral plus-strand in red. (B) Splice junctions flanking the provirus in clone 8.8 and at the same genomic location in clones 6.25 and 11.63, coloured relative to the proviral plus-strand as in A. The green arrows indicate the HTLV-1 proviral integration sites respectively in clone 3.60 (A) and clone 8.8 (B).
+
 The observed upregulation of transcription was frequently intergenic, but we also observed instances of clone-specific gene expression. For example, in clone TBX4B, HTLV-1 is inserted between exons of the gene PNPLA (Figure 3F). This gene was not expressed in the other T cell clones, but was highly expressed in TBX4B both downstream and upstream of the integration site, in the same sense as the proviral plus-strand. The presence of abnormal same-sense host transcription upstream of the 5′ LTR suggests that the transcription was driven by the proviral enhancer.
 
-## Transcription is altered at non-contiguous sites
+### Transcription is altered at non-contiguous sites
 
 In addition to the abnormal transcription immediately flanking the provirus, there were frequent examples of clone-specific transcription in regions of the host genome not contiguous with the provirus (Figure 4B. Figure 4—figure supplement 1). For example, in clone 8.8, there was upregulation of host transcription both flanking the integration site and in the gene TBC1D4 (a Rab GTPase-activating protein) ~44 kb upstream; no transcripts were detected in the intervening host genome (Figure 4B, left). Non-contiguous transcription also occurred at the downstream contact site made with the provirus, resulting in aberrant splicing of the gene UCHL3 to produce putative novel UCHL3 transcripts (Figure 4—figure supplement 2B).
 
 In clone 3.60, abnormal non-contiguous transcription was found downstream of the provirus (Figure 4B, right) between the provirus and the contact (indicated by the q4C peak) formed with the host genome. This region contains a gene (SULT1B1) in the negative strand of the genome; the abnormal transcription observed in clone 3.60 was present in the positive strand with alternative splicing, resulting in a putative novel transcript (Figure 4—figure supplement 2A). These observations demonstrate that the provirus can alter transcription in cis both within and between genes, and alter splicing, producing novel transcripts.
 
-## HTLV-1 alters host transcription in cis
+### HTLV-1 alters host transcription in cis
 
 To test the hypothesis that the observed abnormal transcription of the host genome was confined to the chromosome carrying the provirus, we quantified the allelic imbalance in the SNPs identified in RNA-seq reads up to 2 Mb from the integration sites. The results showed that in heterozygous SNPs identified in the clone-specific transcripts, transcription was predominantly homozygous, that is, monoallelic (Figure 5A).
 
@@ -107,11 +238,11 @@ The HTLV-1 transcriptional transactivator protein Tax drives expression not only
 
 ## Materials and methods
 
-## Cell culture, preparation
+### Cell culture, preparation
 
 The HTLV-1-infected T-lymphocyte clones were derived by limiting dilution from peripheral blood mononuclear cells (PBMCs) of donors attending the National Centre for Human Retrovirology (NCHR) at Imperial College Healthcare NHS Trust, St Mary's Hospital, London. All donors gave written informed consent in accordance with the Declaration of Helsinki to donate blood samples to the Communicable Diseases Research Tissue Bank, approved by the UK National Research Ethics Service (15/SC/0089). The derivation of these clones and the genomic insertion site of the single-copy HTLV-1 provirus in each clone were previously reported (Cook et al., 2012). The cells were cultured in RPMI-1640 medium (Sigma-Aldrich) with added L-glutamine (Invitrogen), penicillin and streptomycin (Invitrogen), 10% AB human serum (Biowest) at 37˚C, 5% CO2. IL-2 (Promokine) was added to the culture every 3 days, and the retroviral integrase inhibitor raltegravir (Selleck) was maintained at 10 μM throughout cell culture, to prevent secondary infection. In addition, the cells were activated every 14 days by the addition of beads coated with antibodies against CD2, CD3 and CD28 (Miltenyi-Biotech). All experiments were carried out on cells harvested on Day 9 of this cycle, after addition of fresh media on Day 8.
 
-## Quantitative circular chromosome conformation capture (q4C); CRISPR/Cas9 modification
+### Quantitative circular chromosome conformation capture (q4C); CRISPR/Cas9 modification
 
 We used Cas9 ribonucleoprotein transfection (Schumann et al., 2015) to selectively mutate six nucleotides in the core CTCF binding-site in the HTLV-1 provirus and abrogate CTCF binding (Satou et al., 2016). q4C–seq libraries were prepared according the 4C protocol by (van de Werken et al., 2012) and our protocol for linker-mediated PCR (LM-PCR) (Gillet et al., 2011) with a modification (Supplementary file 2). Eight million cells were crosslinked in phosphate-buffered saline (PBS) containing 1% formaldehyde for 10 min at room temperature. Cells were lysed using a buffer containing 10 mM Tris-HCl (pH 8.0), 10 mM NaCl, 0.2% NP-40 and complete EDTA-free Protease Inhibitor Cocktail (Roche). The DNA was digested with NlaIII (New England Biolabs, NEB) in the presence of 0.2% SDS, followed by ligation using T4 DNA ligase (NEB) under dilute conditions. The ligated DNA (3 μg) was sheared by sonication with a Covaris S2 instrument; adapters were added and the fragments were subjected to LM-PCR for preparation of 4C–seq libraries. DNA fragments were end-repaired using T4 DNA polymerase, DNA polymerase I Klenow fragment, and T4 polynucleotide kinase (NEB). An adenosine residue was added at the 3′ end of the DNA fragments using Klenow fragment 3′ to 5′ exo– (NEB). A partially double-stranded DNA linker with a specific 6 bp tag was ligated to the DNA ends using a Quick ligation kit (NEB). The linker-ligated product (200 ng per reaction tube) was amplified by a first PCR (PCR1) using the primers HY3 (5′-CTCCTCCTTGTCCTTTAACTCTTCCTC-3′) and Bio4 (5′-TCATGATCAATGGGACGATCA −3′) and Phusion DNA polymerase (NEB). Eight individual PCR1 reactions of 50 μL were prepared for each sample and purified individually using QIAquick PCR Purification Kit (Qiagen) columns. To perform PCR2, 2 μl of the purified PCR1 product was amplified in a 50μl reaction volume between the primers HY12
 
@@ -123,28 +254,28 @@ To call chromatin contact sites from the q4C data, we first counted the unique l
 
 To define continuous genomic regions of interactions for a given chromosome, we applied a cubic smoothing spline to each sample’s respective state space, interpolating over n points across the chromosome with n being 0.25 * the number of overlapping windows in that chromosome. The edges for each peak were defined by the change in sign of the difference of the curve between consecutive points. Peaks were called for a single replicate only if included windows with a minimum of state 2 (probable peak) in both replicates. The peaks were intersected between the replicates using the GenomicRanges package (Lawrence et al., 2013) and intersects which did not include the local maximum of each peak in both replicates were discarded. Peaks which were unique to one clone, were under 50 kb in width and did not overlap the integration site were used in subsequent analysis.
 
-## RNA-seq
+### RNA-seq
 
 RNA-seq libraries were prepared from total RNA of the T cell clones using the TruSeq Stranded mRNA HT Sample Prep Kit according to the manufacturer’s instructions, and sequenced with the HiSeq4000 (150 bp paired-end reads). RNA sequencing for each clone was performed using the Ilumina platform. Where more than one replicate was sequenced, the one with a larger number of reads was used in subsequent analysis. Data quality was assessed using FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) and aligned to the same combined reference (human genome + proviral genome) as described above for q4C analysis, using GSNAP v2017-05-08 (Wu et al., 2010). Read depth analysis was carried out using bedtools v2.25.0 (RRID:SCR_006646) (Quinlan and Hall, 2010) against a series of non-overlapping 1 kb windows up to to 1.5 Mb either side of the respective integration site. The read count for each window was normalized to the total number of aligned reads in the same sample.
 
-## ChIP sequencing (ChIP-seq)
+### ChIP sequencing (ChIP-seq)
 
 Cells (1.5 × 107) were cross-linked with 1% formaldehyde at room temperature for 5 min. Nuclear cell lysates were sonicated with a Covaris S2 and immunoprecipitated using anti-CTCF (Millipore #07–729; RRID:AB_441965) antibody. The ChIP DNA libraries (ChIP and input DNAs) were prepared using NEBNext Ultra II DNA Library Prep Kit for Illumina and Multiplex Oligos for Illumina (New England Biolabs, NEB) according to the manufacturer’s instructions. Libraries were sequenced (single-end 50 bp reads) on a HiSeq 2500 (Illumina).
 
 CTCF ChIP libraries from three T-cell clones (two of which carry an HTLV-1 provirus), and a DNA input control were sequenced on the Ilumina platform. Sequence data were trimmed to remove adapters and low-quality bases using TrimGalore, and aligned against the same combined reference (human + viral genomes) as above, using GSNAP. Duplicates were removed using Picard v.2.9.0 (http://broadinstitute.github.io/picard; RRID:SCR_006525)) and peaks were called against the DNA input control using MACS (Zhang et al., 2008), and data from the best replicate (highest number of peaks identified) of each clone were used in downstream analysis. CTCF-BS identified in at least two of the clones examined were used in further analysis. The orientation of CTCF motifs within identified CTCF ChIP peaks was determined using PWMtools PWMscan (Ambrosini G., PWMTools, http://ccg.vital-it.ch/pwmtools) to call the orientation of the highest scoring motif. The orientation of ~79% of CTCF observed binding sites was determined in this way.
 
-## Whole-genome sequencing
+### Whole-genome sequencing
 
 Genomic DNA (gDNA) was extracted from each subject’s PBMCs and the respective T cell clones using DNeasy Blood and Tissue kit (QIAGEN). Whole-genome sequencing was carried out on PBMC DNA from each subject from whom clones were used in this study, with the exception of subject TBX; DNA from this subject’s clone TBX4B was sequenced because PBMC DNA was not available. DNA sequencing was performed on the Ilumina X10 platform, one sample per lane. Alignment against the same combined reference (human + viral genomes) was done using BWA-MEM v0.5.9 (RRID:SCR_010910) (Li and Durbin, 2009), and duplicates were removed using Picard. Base calibration (against known dbsnp_135.hg19) and SNP calling for all samples was done using Genome Analyser ToolKit (GATK; RRID:SCR_001876) v3.7 (DePristo et al., 2011). Pre-processing, variant discovery and calling followed GATK best practices workflow 3.6. The variant list was filtered to select biallelic variants using GATK SelectVariants and reads per allele were counted by GATK ASEReadCounter, using minimum mapping quality 10, minimum base quality two and minimum depth 10. The B-allele frequency (BAF) of each SNP was calculated as the allele count of alternative base/sum of allele counts of reference and alternative bases. SNPs were defined as heterozygous if the B allele frequency (BAF) was between 0.15 and 0.85.
 
-## Haplotype analysis
+### Haplotype analysis
 
 Read-aware phasing into haplotypes was performed using SHAPIT v2.r837 (Delaneau et al., 2013) which extracts phase-informative reads and assembles them into haplotypes using data modelled on the data from the 1000 Genome Project (https://mathgen.stats.ox.ac.uk/impute/1000GP_Phase3.html). RNASeq data were aligned to the combined reference using GSNAP (a variant-aware aligner, known to reduce reference bias [DePristo et al., 2011]); duplicates were removed using Picard and the alleles counted for each biallelic variant using GATK ASEReadCounter, using a minimum mapping quality of 10 and minimum base quality of 2. Allelic imbalance (AI) in q4C and RNA-seq data was calculated by the formula AI = abs(0.5 – BAF); AI ranges between 0 (biallelic) and 0.5 (monoallelic expression).
 
-## Statistics
+### Statistics
 
 Nonparametric tests were used to examine the association between the number of CTCF-BS and the q4C peak height (Wilcoxon) and the number of q4C peaks (Spearman). The difference in the frequency of q4C peaks at a given distance from the provirus was tested using a chi-squared goodness of fit test. The correlation between the number of q4C peaks and the density of CTCF-BS was examined using Pearson’s test. The curves showing the relationship between allelic imbalance and genomic distance (Figure 2B) were computed using LOESS regression.
 
-## Data availability
+### Data availability
 
 Sequence data have been deposited at the European Genome-phenome Archive (EGA, http://www.ebi.ac.uk/ega/), hosted by the European Bioinformatics Institute (accession number EGAS00001002259). Custom scripts used to analyse this data are available at https://github.com/ImperialCollegeLondon/q4C-2018 (Melamed, 2018; copy archived at https://github.com/elifesciences-publications/q4C-2018).

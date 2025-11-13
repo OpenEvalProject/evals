@@ -32,33 +32,89 @@ Previously, we developed a system in which dual fluorescence CRE-reporter zebraf
 
 Here we describe Q-STARZ (Quantitative Spatial and Temporal Assessment of Regulatory element activity in Zebrafish), a new and significantly improved design of our previous transgenic reporter assay, based upon targeted integration of a dual-CRE dual-reporter cassette into a pre-defined site in the zebrafish genome (Figure 1). A unique feature of this design is the single transgenic cassette containing both Wt and mutant CREs, separated by strong insulator sequences, with the transcriptional potential of both CREs read out as expression of different fluorescent proteins. Qualitative and quantitative activity of the two CRE alleles is analysed from eGFP/mCherry fluorescence in real time by live imaging of embryos obtained from the founder (F0) lines bearing the dual CRE dual-reporter cassette. This allows robust, unbiased assessment of spatial and temporal activities of both CREs using a single transgenic line, thereby reducing animal usage by up to 75% compared to the previous design. We utilise disease-associated mutations in well-characterised CREs from the PAX6 and SHH loci to demonstrate the salient features of the Q-STARZ method.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65601/elife-65601-fig1-v1.jpg)
+
+**Figure 1.:** Diagramatic representation of the Q-STARZ pipeline. (A). Top: map of the landing pad vector. Bottom: scheme for generating stable transgenic ‘landing lines’. The landing pad vector is co-injected with Tol2 mRNA into one-cell stage wild-type embryos. Tol2-mediated recombination integrates the landing pad containing phiC31-attB sites flanking the tracking cis-regulatory element (CRE)-reporter cassette (SHH-SBE2, a CRE driving eGFP in the developing forebrain) at random locations in the zebrafish genome. F0 embryos showing mosaic eGFP expression are raised to adulthood. F1 embryos obtained by outcrossing F0 lines with wild-type zebrafish are screened for tracking CRE-driven reporter (eGFP) expression. Embryos where eGFP expression was only observed in the expected activity domain (forebrain) of the tracking CRE were raised to adulthood to establish stable ‘landing lines’. (B) Top: map of the dual-CRE dual-reporter vector. Bottom: scheme for replacing the tracking cassette in the landing line with the dual-CRE dual-reporter cassette containing the enhancers to be assayed for spatiotemporal activity. Assay vector and mRNA coding for phiC31 integrase are injected in one cell stage embryos derived from outcrossing F1 landing line with wild-type fish. Injected embryos were selected for loss of tracking CRE (SHH-SBE2)-driven eGFP fluorescence in forebrain and mosaic expression of both eGFP and mCherry resulting from the test CREs in the assay cassette. F0 transgenic lines were established from selected embryos and eGFP and mCherry expression imaged in F1 embryos derived from outcrossing these lines with wild-type fish. Signals from both reporters were observed in the activity domains of both CREs in F1 embryos bearing the assay constructs with ‘neutral’ sequence between the two CRE-reporter units (yellow signal seen in expressing tissues in the merge channel). However, eGFP and mCherry expression was restricted to tissues where the associated CREs are active upon inclusion of three copies of the chicken β-globin 5′HS4 (3XcHS4) insulator between the two CRE-reporter units.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65601/elife-65601-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The recombination sites used in each vector and other salient features are indicated on each vector map.
+
 ## Results
 
-## Targeted integration of a dual-CRE dual-reporter transgenic cassette in the zebrafish genome
+### Targeted integration of a dual-CRE dual-reporter transgenic cassette in the zebrafish genome
 
 Analysis of enhancer activities in conventional zebrafish reporter assays suffers from bias arising from position effects due to the random integration of the transgene at Tol2 sites naturally distributed at a low frequency throughout the zebrafish genome (Kawakami et al., 2000; Mann and Bhatia, 2019). Most assay designs also harbour only one CRE per transgene introducing ambiguity in the analysis when comparing CREs with highly similar activities or subtle changes in sequence (e.g. disease-associated mutations or SNPs). Q-STARZ is a versatile, robust and cost-effective analysis pipeline designed to alleviate both these limitations (Figure 1).
 
 We first generated ‘landing lines’ harbouring phiC31 attB integration sites at inert positions in the zebrafish genome. Using Tol2-mediated transgenesis, we integrated ‘landing pads’ at random sites in the zebrafish genome (Figure 1A, Figure 1—figure supplement 1). To visualise successful integration events, the landing pads contain ‘tracking CREs’ (Supplementary file 1) driving expression of a ‘tracking reporter gene’. These CREs had previously well-characterised activities, enabling us to select transgenic lines devoid of bias arising from the site of integration (Bhatia et al., 2015). We assessed reporter gene expression in F1 embryos derived from several independent F0 transgenic lines for each tracking CRE (Figure 2A, Figure 2—figure supplement 1, Supplementary file 2). F1 embryos in which the activity of CRE was not influenced by the site of integration were raised to adulthood to establish ‘landing lines’ presumed to be harbouring the phiC31 attB sites in an inert position of the zebrafish genome (Figure 1A). CRE activities were observed to be highly influenced by the site of integration in F1 embryos derived from founder lines bearing SOX9-CNEa and Pax6-SIMO CREs (Figure 2, Figure 2—figure supplement 1), but we obtained three independent landing lines with a clean eGFP expression pattern using Shh-SBE2 as the tracking CRE (Supplementary file 2). Shh-SBE2 is a forebrain enhancer driving Shh expression in the hypothalamus (Jeong and Epstein, 2003). Based on these observations, we decided to use the Shh-SBE2 landing line for all subsequent experiments described in this study. The precise integration site of the landing pad in the three Shh-SBE2 lines was determined using ligation-mediated PCR (LM-PCR) and transgene segregation analysis (described in Materials and methods). Based on these observations, we decided to use the Shh-SBE2 landing line with a clean single-site integration for all subsequent experiments described in this study (Figure 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65601/elife-65601-fig2-v1.jpg)
+
+**Figure 2.:** (A) Top: schematic of the design of the landing pad bearing SHH-SBE2 as the tracking cis-regulatory element (CRE). Below: CRE activity observed exclusively in the forebrain in F1 embryos with the SHH-SBE2-eGFP tracking cassette. Images shown for pool of F1 embryos (scale bar = 1000 μm) and individual embryos (scale bar = 100 μm) at different stages of embryonic development. FB, forebrain; hpf, hr post fertilisation. Scale bar = 100 μm. (B) Unique bands (*) observed in round 2 of PCR amplification of DpnI digested genomic DNA from F1 embryos bearing the landing pad cassette. (C) Ensembl Genome Browser snapshot depicting the integration site (red arrow) of the SHH-SBE2 landing pad and sequencing data from clones bearing the PCR product shown by * in (B).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65601/elife-65601-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Top: tracking CREs used in the landing line. Bottom: activities of the SOX9 (A) and PAX6-SIMO (B) CREs in the landing pad highly influenced by the site of integration indicated by eGFP expression in multiple tissues. NT, neural tube; HB, hindbrain; PF, pectoral fin; hpf, hr post fertilisation. Scale bar = 100 μm.
+
 In the second part of the Q-STARZ pipeline, we generated a ‘dual-CRE dual-reporter assay construct’ containing two CRE-reporter cassettes separated from each other by strong insulator sequences (Figure 1B, Figure 1—figure supplement 1). The assay construct was co-injected with mRNA encoding phiC31 integrase into F2 embryos derived from the Shh-SBE2 landing line. Recombination-mediated cassette exchange between the attB sites on the landing pad construct and attP sites on the assay construct integrates a single copy of the dual-CRE dual-reporter cassette at the pre-defined site in the zebrafish genome (Figure 1B). Injected embryos were scored for loss of Shh-SBE2-driven CRE activity in the forebrain and gain of mosaic eGFP and mCherry signals from the assay CRE-reporter cassette. These were scored as successful flipping events and were observed at a frequency of about 10% of the injected embryos. Selected embryos were raised to sexual maturity to establish 2–3 independent founder transgenic lines for each assay cassette analysed in this study (Supplementary file 2). Activity of both CREs was visualised simultaneously as eGFP or mCherry signals by live imaging of F1 embryos derived from outbreeding the founder lines with Wt zebrafish (Figure 1B). Detailed protocols for the various steps described in this section are provided in Materials and methods.
 
-## Robust, quantitative assessment of CRE activity using Q-STARZ
+### Robust, quantitative assessment of CRE activity using Q-STARZ
 
 A key feature of Q-STARZ is the simultaneous assessment of activities of the two CREs present on the assay cassette. In order to prevent crosstalk between the two enhancers, a well-characterised insulator sequence from the chicken genome, chicken β-globin 5′HS4 (cHS4) (Chung et al., 1997; Wang et al., 1997), was placed between the two CRE-reporter cassettes (Figure 1B, Figure 1—figure supplement 1). We optimised the assay using constructs bearing two CREs with previously well-characterised tissue-specific activities from the PAX6 regulatory domain (Figure 3). PAX6 is a TF with vital pleiotropic roles in embryonic development (Ashery-Padan and Gruss, 2001; Kleinjan and van Heyningen, 2005; Osumi et al., 2008) and >30 CREs have been characterised which coordinate precise spatial and temporal PAX6 expression in the developing eyes, brain and pancreas (Bhatia and Kleinjan, 2014). We selected PAX6-7CE3 and PAX6-SIMO for this analysis as they have well-established and highly distinct tissue-specific activities during zebrafish embryogenesis. PAX6-7CE3 drives expression in the hindbrain and neural tube from 24 to 120 hr post fertilisation (hpf), while PAX6-SIMO activity is in developing lens and forebrain from 48 to 120 hpf (Bhatia et al., 2013; Ravi et al., 2013; Supplementary file 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65601/elife-65601-fig3-v1.jpg)
+
+**Figure 3.:** Constructs carrying well-characterised CREs from the PAX6 locus (PAX6-7CE3, hindbrain enhancer, and PAX6-SIMO, lens enhancer). (A) Confocal images of 96hpf F1 embryos derived from founder lines injected with the cassettes indicated above each image panel. Top two panels show dye-swap experiment (eGFP and mCherry reporters swapped between the two CREs) with a neutral sequence (–, no insulator activity) between the two CRE-reporter cassettes. eGFP and mCherry expression is observed in both lens and hindbrain indicating complete crosstalk between 7CE3 and SIMO CREs. Bottom panel: inclusion of three copies of the well-characterised chicken β-globin 5′HS4 (3XcHS4) insulator restricts the activities of each enhancer to their respective specific domains. Scale bars = 100 μm. (B) Average of mean fluorescence intensities ratios (G/C: eGFP/mCherry; C/G: mCherry/eGFP) in the lens and hindbrain at 72 and 120 hr post fertilisation (hpf) in F1 embryos derived from founders bearing constructs without (–) or with 1×, 2× or 3× insulator sequences. Each bar indicates average of ratios of mean fluorescence intensities from at least five independent images of embryos bearing the assay construct indicated (n ≥ 5, error bars indicate standard deviation). A highly significant difference in fluorescence intensity ratios (computed by two-tailed Student’s t-test) was observed between embryos at the same stage of development harbouring constructs with no insulator (–) and those with three copies of the insulator (3xI). This demonstrates that fluorescence is progressively restricted to the tissue where the associated CRE is active as the number of copies of the insulator increases. Raw data used for plotting the graphs are provided in Figure 3—source data 1. L, Lens; H, hindbrain, ****p<0.0001, ***p<0.001, **p<0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65601/elife-65601-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Images shown for pool of F1 embryos (scale bar = 1000 μm) and individual embryos (scale bar = 100 μm) at different stages of embryonic development (24–96 hr post fertilisation) derived from founder lines injected with the replacement cassettes lacking insulator sequences (–) and containing previously well-characterised CREs from PAX6 locus (PAX6-7CE3, hindbrain enhancer, and PAX6-SIMO, lens enhancer). (A) PAX6-SIMO driving eGFP and PAX6-7CE3 driving mCherry. (B) Dye-swap experiment with PAX6-SIMO driving mCherry and PAX6-7CE3 driving eGFP. In both (A) and (B), eGFP and mCherry expression is observed in both lens and hindbrain, indicating complete crosstalk of activity between the two CREs consistent with the lack of insulation.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65601/elife-65601-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Replacement constructs designed with previously well-characterised enhancers from PAX6 locus (PAX6-7CE3, hindbrain enhancer, and PAX6-SIMO, lens enhancer). Images shown for pool of F1 embryos (scale bar = 1000 μm) and individual embryos (scale bar = 100 μm) at different stages of embryonic development (24–96 hr post fertilisation) derived from founder lines injected with the replacement cassettes bearing the enhancer-reporter cassettes separated by one copy of the insulator sequence (1XcHS4). eGFP and mCherry expression is observed in both lens (L) and hindbrain (HB), indicating a complete crosstalk of activity between the two CREs.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/65601/elife-65601-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Replacement constructs designed with previously well-characterised CREs from PAX6 locus (PAX6-7CE3, hindbrain enhancer, and PAX6-SIMO, lens enhancer). Images shown for pool of F1 embryos (scale bar = 1000 μm) and individual embryos (scale bar = 100 μm) at different stages of embryonic development (24–96 hr post fertilisation) derived from founder lines injected with the replacement cassettes bearing the CRE-reporter cassettes separated by two copies of the insulator sequence (2XcHS4). eGFP and mCherry expression is observed largely restricted to either lens (L) or hindbrain (HB), indicating a blocking of crosstalk of activity between the two CREs by the presence of two copies of insulator sequence.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/65601/elife-65601-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Replacement constructs designed with previously well-characterised CREs from PAX6 locus (PAX6-7CE3, hindbrain enhancer, and PAX6-SIMO, lens enhancer). Images shown for pool of F1 embryos (scale bar = 1000 μm) and individual embryos (scale bar = 100 μm) at different stages of embryonic development (24–96 hr post fertilisation) derived from founder lines injected with the replacement cassettes bearing the CRE-reporter cassettes separated by three copies of the insulator sequence (3XcHS4). eGFP and mCherry expression is observed completely restricted to either lens (L) or hindbrain (HB), indicating a complete insulation of crosstalk of activity between the two CREs by the presence of three copies of insulator sequence.
+
 When the two CRE-reporter cassettes were separated by a ‘neutral’ sequence – a randomly selected region from the mouse genome with no insulator activity – we observed complete crosstalk of the two CRE activities (Figure 3A, Figure 3—figure supplement 1, Supplementary file 2). We also performed a dye-swap experiment wherein the eGFP and mCherry reporters were swapped between the two CREs. We observed no significant difference in CRE activities in the dye-swap experiment, indicating no bias was introduced by varying signal intensities from the two fluorophores used (Figure 3A, Figure 3—figure supplement 1). Next, we substituted the neutral sequence with one, two or three tandem copies of the cHS4 insulator. Enhancer blocking activity of this insulator has been attributed to its ability to bind CTCF (Bell et al., 1999). Crosstalk between the two enhancer-reporter cassettes was progressively reduced with increasing copies of cHS4, with complete insulation achieved in replacement cassettes bearing three copies (3xcHS4) (Figure 3A, Figure 3—figure supplements 2–4). We quantified the effects of the presence of insulator sequences by measuring eGFP and mCherry intensities in the expressing tissues at all stages of embryonic development in multiple embryos for each of the constructs analysed. Quantification was focussed on lens and hindbrain tissues as we observed expression at these sites consistently in all the lines analysed (Supplementary file 2). This analysis confirmed that, as the number of copies of the insulator increases, there is progressively restricted expression of the reporters towards expression only in the activity domains of their associated CRE (Figure 3B).
 
-## Dissecting spatial and temporal dynamics of CREs with highly overlapping activities using live imaging
+### Dissecting spatial and temporal dynamics of CREs with highly overlapping activities using live imaging
 
 A salient feature of Q-STARZ is the ability to simultaneously visualise the activity of both CREs on the assay cassette in the same developing zebrafish embryo in real time using live imaging. To establish proof of principle, we investigated the precise spatial and temporal activities of two CREs from the Shh locus, Shh-SBE2 and Shh-SBE4, previously demonstrated to have highly similar domains of activity in the developing forebrain of mouse embryos (Figure 4; Jeong and Epstein, 2003; Jeong et al., 2008). We analysed the activities of the two CREs in transgenic lines generated with two assay constructs (Shh-SBE2-eGFP/3xcHS4/Shh-SBE4-mCherry and Shh-SBE2-mCherry/3xcHS4/Shh-SBE4-eGFP) to avoid any bias arising from stability of the fluorophores. Our analyses revealed unique, as well as overlapping, domains of activity of both CREs in the early stages of forebrain development (~24–50 hpf) (Figure 4, Video 1). However, from ~60 to 120 hpf, the activities of both CREs are in completely distinct domains of the developing forebrain with no overlapping activity observed. Shh-SBE2 was active in the rostral part of forebrain while Shh-SBE4 activity was restricted to caudal forebrain (Figure 4, Video 2). This analysis highlights the importance of simultaneous visualisation of CRE activities in the developing embryo to define the precise spatial and temporal activity of each CRE.
 
-## Robust assessment of the effects of disease-associated mutations on CRE activity
+![Figure 4.](https://cdn.elifesciences.org/articles/65601/elife-65601-fig4-v1.jpg)
+
+**Figure 4.:** (A) Top: schematic of assay construct with two enhancers from the mouse Shh locus active in developing forebrain (Shh-SBE2 and Shh-SBE4 driving eGFP and mCherry respectively). Below: snapshots of live imaging of F1 embryos derived from transgenic lines bearing the assay construct. Distinct as well as overlapping domains (marked by *) of activities are observed for the two cis-regulatory elements (CREs) in early stages of development, until about 54 hr post fertilisation (hpf). At later stages of embryonic development, the activities of the two forebrain CREs are observed in completely distinct domains. Scale bar = 100 μm. (B) As in (A) but with a dye-swap, that is, Shh-SBE2 driving mCherry and Shh-SBE4 driving eGFP.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65601/elife-65601-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Top: position of the screening primers (SP1- 12) used for genotyping a replacement construct bearing SHH-SBE2 and SHH-SBE4 cis-regulatory elements (CREs). Bottom: PCR products obtained using the specified SP sets on genomic DNA derived from wild-type (Wt) embryos or embryos derived from transgenic (Tg) line. Details of the screening primer positions are listed in Supplementary file 1.
+
+![Video 1.](https://cdn.elifesciences.org/articles/65601/elife-65601-video1.mp4.jpg)
+
+**Video 1.:** The distinct expression domains of SBE2 and SBE4 enhancers in the developing forebrain are seen in green and red, respectively, while the region where their activities overlap is depicted in yellow.
+
+![Video 2.](https://cdn.elifesciences.org/articles/65601/elife-65601-video2.mp4.jpg)
+
+**Video 2.:** Images were acquired from 54 to 69 hr post fertilisation, with a time interval of 1 hr. The distinct expression domains of SBE2 and SBE4 enhancers in the developing forebrain are seen in green and red, respectively.
+
+### Robust assessment of the effects of disease-associated mutations on CRE activity
 
 As well as qualitative comparison of activity between two different CREs, a key strength of the Q-STARZ pipeline is its suitability for discerning the precise effects of disease-associated mutations or SNPs within a specific CRE. We tested this in SBE2, a regulatory element that controls SHH expression in the developing forebrain, using a point mutation (C>T) identified in a patient with holoprosencephaly and shown to abrogate the activity of SBE2 in the rostral hypothalamus of the mouse (Figure 5; Bhatia et al., 2015; Jeong et al., 2008). We simultaneously visualised the activities of the human Wt(C) and Mut(T) SBE2 alleles in our dual-CRE dual-reporter system by live imaging of transgenic zebrafish embryos from 24 to 72 hpf (SBE2-Wt(C)-eGFP/3xcHS4/SBE2-Mut(T)-mCherry and SBE2-Wt(C)-mCherry/3xcHS4/SBE2-Mut(T)-eGFP, Figure 5, Video 3). We detected no difference in the activities of the two alleles in very early development until ~40 hpf. However, from ~48 to 72 hpf, activity of the alleles started to diverge. Expression driven by the Wt allele was observed in the developing rostral and caudal hypothalamus of transgenic embryos while the Mut allele was only active in the caudal hypothalamus, indicating that the mutation disrupts rostral activity of the SBE2. Upon quantification of reporter gene expression associated with each allele, we observed no significant difference in activity between the two alleles at 28 hpf. However, at later stages of development (48 and 72 hpf), the mutant allele failed to drive reporter gene expression in the rostral hypothalamus and had significantly weaker activity in the caudal hypothalamus (Figure 5). Our analysis thus unambiguously and precisely uncovered where and when in embryonic development the mutation associated with holoprosencephaly alters the enhancer activity of SBE2.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/65601/elife-65601-fig5-v1.jpg)
 
-**Figure 5.:** Dye swap experiment with SHH-SBE2 enhancer wild-type Wt(C) allele and Mut(T) allele bearing a holoprosencepaly- associated mutation (A: Wt(C)-eGFP/ Mut(T)-mCherry; B: Wt(C)-mcherry/ Mut(T)-eGFP).Top: Schematic representation of the test construct indicating the reporter genes driven by the two alleles. Bottom: confocal images and histogram of average of mean fluorescence intensities ratio (A:eGFP/mCherry; B:mcherry/eGFP) in the rostral (RH) and caudal (CH) hypothalamus for F1 embryos derived from founder lines bearing the test construct described (n≥5, error bars indicate standard deviation). At earlier stages of development (28-36 hpf, no significant difference in activity was observed between the two alleles). However at later stages of development (48 hpf and 72h pf) the mutant allele failed to drive reporter gene expression in the RH, and had significantly weaker activity in the CH at 72 hpf. Raw data used for plotting the graphs is provided in Figure 5—source data 1. ****p<0.0001, **p<0.01 (computed by two-tail student t-test). Scale bar = 100 μm.Figure 5—source data 1.Figure 5.
+**Figure 5.:** Dye swap experiment with SHH-SBE2 enhancer wild-type Wt(C) allele and Mut(T) allele bearing a holoprosencepaly- associated mutation (A: Wt(C)-eGFP/ Mut(T)-mCherry; B: Wt(C)-mcherry/ Mut(T)-eGFP).Top: Schematic representation of the test construct indicating the reporter genes driven by the two alleles. Bottom: confocal images and histogram of average of mean fluorescence intensities ratio (A:eGFP/mCherry; B:mcherry/eGFP) in the rostral (RH) and caudal (CH) hypothalamus for F1 embryos derived from founder lines bearing the test construct described (n≥5, error bars indicate standard deviation). At earlier stages of development (28-36 hpf, no significant difference in activity was observed between the two alleles). However at later stages of development (48 hpf and 72h pf) the mutant allele failed to drive reporter gene expression in the RH, and had significantly weaker activity in the CH at 72 hpf. Raw data used for plotting the graphs is provided in Figure 5—source data 1. ****p<0.0001, **p<0.01 (computed by two-tail student t-test). Scale bar = 100 μm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/65601/elife-65601-video3.mp4.jpg)
+
+**Video 3.:** Images were acquired from 40 to 60 hr post fertilisation, with a time interval of 2 hr.
 
 ## Discussion
 
@@ -74,30 +130,180 @@ Finally, we demonstrate that Q-STARZ can robustly detect differences in activiti
 
 ## Materials and methods
 
-## Generation of landing pad and dual-CRE dual-reporter assay vectors
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway recombination cloning system</td>
+      <td>Invitrogen</td>
+      <td>12535-019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phusion high fidelity polymerase</td>
+      <td>NEB</td>
+      <td>M0530S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TOPO TA Cloning Kit</td>
+      <td>Thermo Fischer Scientific</td>
+      <td>451641</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Plasmid purification columns</td>
+      <td>QIAGEN</td>
+      <td>12123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PCR purification columns</td>
+      <td>QIAGEN</td>
+      <td>28115</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SP6 mMessage mMachine kit</td>
+      <td>Ambion</td>
+      <td>AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy blood and tissue kit</td>
+      <td>QIAGEN</td>
+      <td>69504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T4 ligase</td>
+      <td>NEB</td>
+      <td>M020S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2-TP (plasmid)</td>
+      <td>Bischof et al., 2007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 phiC31 (plasmid)</td>
+      <td>Addgene</td>
+      <td>Plasmid #68310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NlaIII(enzyme)</td>
+      <td>NEB</td>
+      <td>R0125S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BfaI(enzyme)</td>
+      <td>NEB</td>
+      <td>R0568S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DpnII(enzyme)</td>
+      <td>NEB</td>
+      <td>R0543S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PTU (1-phenyl2-thio-urea)</td>
+      <td>Sigma-Aldrich</td>
+      <td>S515388</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Low-melting point (LMP) agarose</td>
+      <td>Sigma-Aldrich</td>
+      <td>A9414</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tricaine</td>
+      <td>Sigma-Aldrich</td>
+      <td>MS222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane, Oxford Instruments</td>
+      <td>RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td></td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>Danio rerio</td>
+      <td>Strain AB</td>
+      <td>RRID: ZIRC_ZL1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of landing pad and dual-CRE dual-reporter assay vectors
 
 All the constructs in this study were generated using the Gateway recombination cloning system (Invitrogen). PCR primers with suitable recombination sites were used for amplification of CREs from the genomic DNA (Supplementary file 1). The PCR amplification was performed using Phusion high fidelity polymerase (NEB), and the amplified fragments were cloned in Gateway pDONR entry vectors (pP4P1r or pP2rP3) and sequenced using M13 forward and reverse primers for verification. The recombination sites attached in primers, entry vector for cloning and genomic DNA used in amplification for each CRE are indicated in Supplementary file 1. For generating the landing pad vector, pP4P1r entry vector with the tracking CRE and pDONR221 entry vector containing a gata2-eGFP (Bhatia et al., 2015) were recombined with a destination vector with a Gateway R4-R2 cassette flanked by phiC31_attB1/B2 and Tol2 recombination sites (Figure 1, Figure 1—figure supplement 1). The details of the tracking CREs are provided in Supplementary file 1. The assay vector was generated via three-way gateway reaction as described in Figure 1, Figure 1—figure supplement 1. The test CREs were cloned either in pP4P1r or pP2rP3 entry vectors and the insulator sequences and neutral sequence was cloned in pDONR221. For generating constructs with multiple copies of the insulator sequence, the sequences were first cloned in tandem in TOPO TA Cloning Kit (Thermo Fisher Scientific, cat no. 451641). Plasmids containing one, two or three copies of the insulator sequence were used as templates for amplification of products suitable for cloning in pDONR221. The destination vector was synthesised by Geneart and contained a Gateway R4-R3 cassette flanked by phiC31_attP1/P2 recombination sites and minimal promoter-reporter gene units (gata2-eGFP and gata2-mCherry). Gata2 promoter was used as the minimal promoter in both the landing pads and dual-CRE dual-reporter cassettes based on previous studies demonstrating robust promoter activity devoid of any basal level of reporter gene activation (Bhatia et al., 2015). Details of each construct generated in the article are provided in Supplementary file 1, and complete vector maps for all the constructs would be available on request.
 
-## Generation of zebrafish transgenic lines
+### Generation of zebrafish transgenic lines
 
 Zebrafish were maintained in a recirculating water system according to standard protocols (Sprague et al., 2008). Embryos were obtained by breeding adult fish of standard stains (AB, RRID:ZIRC_ZL1) and raised at 28.5°C as described (Sprague et al., 2008). Embryos were staged by hpf as described (Kimmel et al., 1995). Final CRE-reporter plasmids were isolated using QIAGEN miniprep columns and were further purified on a QIAGEN PCR purification column (QIAGEN) and diluted to 50 ng/ml with nuclease-free water. Tol2 transposase mRNA and phiC31 integrase mRNA were synthesised from a NotI-linearised pCS2-TP or pcDNA3.1 phiC31 plasmid, respectively (Bischof et al., 2007; Ishibashi et al., 2013), using the SP6 mMessage mMachine kit (Ambion), and final RNA diluted to 50 ng/ml. Equal volumes of the reporter construct(s) and the transposase RNA were mixed immediately prior to injections. 1–2 nl of the solution was micro-injected per embryo and up to 200 embryos were injected at the one- to two-cell stage. Embryos were screened for mosaic fluorescence at 1–5 days post fertilisation (dpf), that is, 24–120 hpf and raised to adulthood. Germline transmission was identified by outcrossing sexually mature F0 transgenics with Wt fish and examining their progeny for reporter gene expression/fluorescence. 2–3 F0 lines were generated for each construct, and F1 embryos were screened for reporter gene expression driven by the CREs in the transgenic cassette (Supplementary file 2). For the landing pad lines, F1 embryos derived from F0 lines showing the best representative expression pattern for the tracking CRE in the cassette were selected for establishing the line, genotyping and confocal imaging (Figure 1A). Dual-CRE dual-reporter construct and phiC31 integrase mRNA was injected in one-cell stage embryos from the selected landing line. The injected embryos were observed from 1 to 5 dpf and successful flipping events scored on the basis of loss of tracking CRE-driven reporter gene expression and gain of mosaic eGFP and mCherry expression patterns (Figure 1B). This was observed in about 10% of the injected embryos. Embryos with successful integration of the assay cassette were raised to sexual maturity to establish 2–3 independent F0 lines for each CRE pair tested. We observed <5% variability in the reporter gene expression driven by the CREs in F1 embryos derived from independent founder lines (Supplementary file 2, Figure 3A, Figure 3—figure supplements 1–4). A few positive embryos were also raised to adulthood, and F1 lines were maintained by outcrossing. A summary of the number of independent lines analysed for each construct and their expression sites is included in Supplementary file 2.
 
-## Mapping of transgene integration site in the landing lines
+### Mapping of transgene integration site in the landing lines
 
 Transgenic embryos obtained from outcrossing transgenic lines harbouring the landing pad vectors with Wt strain were sorted into eGFP-positive and eGFP-negative groups. The proportion of eGFP-positive embryos were recorded to identify lines with single and multiple independent transgene integration events. Genomic DNA was purified from ~100 eGFP-positive and eGFP-negative embryos derived from outcrossing the transgenic line with potentially single transgene integration event using QIAGEN DNeasy blood and tissue kit (cat no./ID 69504). Ligation-mediated PCR (LM-PCR) (Dupuy et al., 2005) was used for mapping the landing pad integration site using previously published protocol (Davison et al., 2007). 1 μg of genomic DNA was digested with either NlaIII, BfaI or DpnII and purified using a QIAGEN QIAquick PCR purification kit (cat no./ID 28104). A 5 μl aliquot was added to a ligation reaction containing 150 μmoles of a double-stranded linker. Ligations were performed using high-concentration T4 ligase (NEB, M020S) at room temperature for 2–3 hr. The first round of the nested PCR was performed using linker primer 1 with either Tol2 Left 1.1 or Tol2 Right 1.1 using the following cycling conditions: 94°C (15 s)–51°C (30 s)–68°C (1 min), 25–30 cycles. Second round nested PCR was then performed using linker primer 2 with either Tol2 Left 2.1 or Tol2 Right 2.1 using the following cycling conditions: 94°C (15 s)–57.5°C (30 s)–68°C (1 min), 25–30 cycles. The PCR products were resolved by electrophoresis on a 3% agarose gel, and the products selectively amplified in samples derived from eGFP-positive embryos were cloned and sequenced. Sequences flanking the Tol2 arms were used to search the Ensembl Danio rerio genomic sequence database to position and orient the insert within the zebrafish genome. The sequences of the linker oligos and primers used are provided in Supplementary file 1.
 
-## Genotyping of transgenic lines bearing dual-CRE dual-reporter constructs
+### Genotyping of transgenic lines bearing dual-CRE dual-reporter constructs
 
 Genomic DNA was isolated from F1 embryos obtained by outcrossing F0 lines established for each assay construct. PCR-based genotyping assay was designed to assess the integration of the cassette in the landing pad. Primers were designed across the junctions of assay vector and landing site (SP1-2, SP11-12) and within the assay cassette (SP3-10). Details of the screening primers (primer sequences and source genome) are provided in Supplementary file 1. Genotyping data for a transgenic line described in Figure 4 are shown in Figure 4—figure supplement 1.
 
-## Imaging of zebrafish transgenic lines
+### Imaging of zebrafish transgenic lines
 
 Embryos for imaging were treated with 0.003% 1-phenyl2-thio-urea (PTU) from 24 hpf to prevent pigmentation. Embryos selected for imaging were anaesthetised with tricaine (20–30 mg/l) and mounted in 1% low-melting point (LMP) agarose. Images were taken on a Nikon A1R confocal microscope and processed using A1R analysis software. Time-lapse imaging was performed on an Andor Dragonfly spinning disk confocal and processed using Imaris (Bitplane, Oxford Instruments, RRID:SCR_007370) and Fiji (RRID:SCR_002285). Embryos mounted in 1% LMP were covered with tricaine solution and held in a chamber at 28.5°C.
 
-## Quantification of imaging data
+### Quantification of imaging data
 
 eGFP and mCherry signal intensities were quantified in selected regions of expression in images acquired from F1 transgenic embryos using ImageJ software. Measurements were taken from at least five independent embryos for each line. Mean fluorescence intensity ratios (eGFP/ mCherry, G/C or mCherry/eGFP, C/G) were computed for each expression domain. Average of mean fluorescence intensity ratios was computed using measurements from independent embryos derived from each line for each expression domain and plotted as shown in Figures 3 and 5. The level of significance (p-value) of differences in average mean florescence intensity ratios in expressing tissues between different transgenic lines was computed using two-tailed Student’s t-test. Raw values of the data plotted are provided in Figure 3—source data 1 and Figure 5—source data 1.
 
-## Distribution of Q-STARZ reagents
+### Distribution of Q-STARZ reagents
 
 All the plasmids required for the assay would be deposited in Addgene, and the landing lines would be made available to the zebrafish scientific community upon request.

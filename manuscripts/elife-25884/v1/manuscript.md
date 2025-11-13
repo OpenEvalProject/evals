@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.25884.001 The underground environment imposes unique demands on life that have led subterranean species to evolve specialized traits, many of which evolved convergently. We studied convergence in evolutionary rate in subterranean mammals in order to associate phenotypic evolution with specific genetic regions. We identified a strong excess of vision- and skin-related genes that changed at accelerated rates in the subterranean environment due to relaxed constraint and adaptive evolution. We also demonstrate that ocular-specific transcriptional enhancers were convergently accelerated, whereas enhancers active outside the eye were not. Furthermore, several uncharacterized genes and regulatory sequences demonstrated convergence and thus constitute novel candidate sequences for congenital ocular disorders. The strong evidence of convergence in these species indicates that evolution in this environment is recurrent and predictable and can be used to gain insights into phenotype–genotype relationships.
+The underground environment imposes unique demands on life that have led subterranean species to evolve specialized traits, many of which evolved convergently. We studied convergence in evolutionary rate in subterranean mammals in order to associate phenotypic evolution with specific genetic regions. We identified a strong excess of vision- and skin-related genes that changed at accelerated rates in the subterranean environment due to relaxed constraint and adaptive evolution. We also demonstrate that ocular-specific transcriptional enhancers were convergently accelerated, whereas enhancers active outside the eye were not. Furthermore, several uncharacterized genes and regulatory sequences demonstrated convergence and thus constitute novel candidate sequences for congenital ocular disorders. The strong evidence of convergence in these species indicates that evolution in this environment is recurrent and predictable and can be used to gain insights into phenotype–genotype relationships.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ To investigate the demands placed upon subterranean species by their extreme env
 
 ## Results
 
-## Many genes have altered evolutionary rates specifically in subterranean mammals
+### Many genes have altered evolutionary rates specifically in subterranean mammals
 
 We first sought to identify the genes that responded to conditions in the subterranean environment. Accordingly, we used relative evolutionary rate (RER) methods to identify protein-coding genes that evolved at a more rapid rate specifically on subterranean branches of the mammalian phylogenetic tree. Subterranean branches consisted of those leading to the star-nosed mole (Condylura cristata), the cape golden mole (Chrysochloris asiatica), the naked mole-rat (Heterocephalus glaber) and the blind mole-rat (Nannospalax galili). Each of these species represents a lineage that independently colonized the subterranean habitat, as each is more closely related to aboveground mammals than they are to each other (Figure 1A). Hence, similar phenotypic changes within these species are regarded as convergent traits. To demonstrate our RER methods, we first present the case of the eye-specific gene LIM2, which encodes Lens intrinsic membrane protein 2. First, the amount of amino acid divergence in LIM2 on each mammalian branch was quantified using sequences from 39 species and standard evolutionary models (Figure 1B) (see Materials and methods). The resulting LIM2 tree is markedly different from the genome-wide average tree in Figure 1A, and reveals distinctly high amounts of divergence in LIM2 for the four subterranean species. This rapid divergence probably resulted from loss of selective constraint in the dark subterranean environment. To quantify this rate acceleration in the LIM2 tree, we normalized all branch lengths for the expected amount of change as defined by the genome-wide average divergence for each branch. This average, after scaling (see Materials and methods), should reflect both the underlying speciation times in the mammalian phylogeny as well as changes in demographic factors affecting substitution rates. The resulting RER values for each branch are plotted in Figure 1C. An RER of zero indicates that LIM2 evolved at exactly the expected rate on that branch, while positive and negative values reflect faster and slower rates, respectively. By examining RERs it becomes clear that LIM2 changed at abnormally rapid rates in the four subterranean mammals; the rates for all four subterranean species are more rapid than all aboveground species, and this difference is supported statistically (p=0.00084, Mann-Whitney U test). Thus, extending the RER calculations to all other genes, we can distinguish the functions that responded during adaptation to the subterranean environment. Importantly, the convergence of these species allows us to confidently infer genes that responded specifically to subterranean life, because faster rates in all four species are not likely to be due to random fluctuations, as reflected by the low P-value for LIM2.
 
@@ -52,7 +52,7 @@ We first sought to identify the genes that responded to conditions in the subter
 
 We performed the same RER analysis on 18,980 protein-coding genes to determine which shifted to faster or slower evolutionary rates specifically in subterranean species. We will hereafter refer to such genes as ‘mole-accelerated’ and ‘mole-decelerated’, respectively (see Materials and methods). At a false discovery rate (FDR) of 15%, we identified 55 mole-accelerated genes. We expect mole-accelerated genes to result from either selection for amino acid changes (i.e., positive Darwinian selection) or, alternatively, from a reduction in purifying selection, as suggested for the LIM2 protein. At the other extreme, we identified 1306 mole-decelerated genes at the same FDR. We expect genes to show rate deceleration if there is stronger purifying selection on that gene’s function in the subterranean environment, perhaps as the result of increased importance for fitness.
 
-## Vision-related functions are highly enriched among mole-accelerated genes
+### Vision-related functions are highly enriched among mole-accelerated genes
 
 Genes with the strongest evidence of mole-acceleration were consistently associated with function in two organs, eye and skin. To illustrate, 17 of the top 30 mole-accelerated genes are expressed solely in eye tissues or are associated with eye-related disorders, whereas three accelerated genes are associated with skin, hair, and nails (Table 1). Among the genes showing very strong signals of mole-acceleration, we find proteins tha are specifically expressed in tissues of the eye such as the retina-specific proteins ROM1 and GNAT1 (Figure 2). The complete list of the 55 mole-accelerated genes similarly contains a large proportion that are related to vision and external tissues (Supplementary file 1), and they were highly enriched for functional annotations including eye morphology, photoreceptors, visual signal transduction, and eye-related mutant phenotypes (Table 2, Supplementary file 2). The strength of this enrichment is clearly illustrated by examining all genes annotated to the Gene Ontology (GO) term ‘visual perception’, because a large fraction of genes that have this annotation are ranked very highly in the list of mole-accelerated genes (Figure 3A ‘subterranean’). Furthermore, if we were to employ mole-acceleration as a sole predictor of visual function, a search would correctly identify many known visual perception genes with high accuracy, even when searching the entire genome (Figure 3B). This strong enrichment allows us to pose specific hypotheses in subsequent sections about which tissues and genetic pathways were altered during the regressive evolution of the eye.
 
@@ -64,17 +64,281 @@ Genes with the strongest evidence of mole-acceleration were consistently associa
 
 **Figure 3.:** (A) Histogram of the rankings of 189 visual perception genes based on their mole-acceleration. We see a clear enrichment of the genes with low rank numbers, reflecting the strong signal of mole-acceleration in visual perception genes. As a control, we use four non-subterranean species, and as expected, genes involved in vision do not show convergent rate acceleration. (B) Mole-acceleration can equivalently serve as a predictor for function in visual perception. The plot shows the Precision-Recall values at varying p-value thresholds reflecting the fraction of visual perception genes significant at a particular threshold (Precision) and the fraction of visual perception genes retrieved at the same threshold (Recall). We see that mole-acceleration specifically identifies visual perception genes with high precision when compared to acceleration in two sets of four non-subterranean control species.
 
+**Table 1.**
+ Top 30 of 55 subterranean-accelerated genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>P-value</th>
+      <th>Tissues</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LIM2*</td>
+      <td>0.00084</td>
+      <td>Lens</td>
+      <td>Lens intrinsic membrane protein 2</td>
+    </tr>
+    <tr>
+      <td>CRYBB3*</td>
+      <td>0.00087</td>
+      <td>Lens</td>
+      <td>Lens-specific crystallin, beta B3</td>
+    </tr>
+    <tr>
+      <td>R0M1*</td>
+      <td>0.00096</td>
+      <td>Retina</td>
+      <td>Retinal outer segment membrane protein 1</td>
+    </tr>
+    <tr>
+      <td>CRYBA1*</td>
+      <td>0.00098</td>
+      <td>Lens</td>
+      <td>Lens-specific crystallin, beta Al</td>
+    </tr>
+    <tr>
+      <td>CRYGC*</td>
+      <td>0.00119</td>
+      <td>Lens</td>
+      <td>Lens-specific crystallin, gamma C</td>
+    </tr>
+    <tr>
+      <td>CRYBB2*</td>
+      <td>0.00128</td>
+      <td>Lens</td>
+      <td>Lens-specific crystallin, beta B2</td>
+    </tr>
+    <tr>
+      <td>GPR89B</td>
+      <td>0.00130</td>
+      <td>Ubiquitous</td>
+      <td>G-protein-coupled receptor 89B, pH mediator in Golgi</td>
+    </tr>
+    <tr>
+      <td>GNAT1*</td>
+      <td>0.00133</td>
+      <td>Retina</td>
+      <td>Rod cell-specific G-protein, subunit alpha</td>
+    </tr>
+    <tr>
+      <td>GPRS9A</td>
+      <td>0.00134</td>
+      <td>Ubiquitous</td>
+      <td>G-protein-coupled receptor 89A, pH mediator in Golgi</td>
+    </tr>
+    <tr>
+      <td>NRL*</td>
+      <td>0.00138</td>
+      <td>Retina</td>
+      <td>Neural retina leucine zipper responsible for expression of rhodopsin</td>
+    </tr>
+    <tr>
+      <td>CRYGS*</td>
+      <td>0.00146</td>
+      <td>Lens</td>
+      <td>Lens-specific crystallin, gamma S</td>
+    </tr>
+    <tr>
+      <td>GRM6*</td>
+      <td>0.00150</td>
+      <td>Retina</td>
+      <td>Metabotropic glutamate receptor 6, required for normal vision</td>
+    </tr>
+    <tr>
+      <td>GBX2</td>
+      <td>0.00165</td>
+      <td>Embryo</td>
+      <td>Gastrulation brain homeobox 2, developmental transcription factor</td>
+    </tr>
+    <tr>
+      <td>LGSN*</td>
+      <td>0.00171</td>
+      <td>Lens</td>
+      <td>Lengsin, lens protein with glutamine synthetase domain</td>
+    </tr>
+    <tr>
+      <td>CRYBB1*</td>
+      <td>0.00183</td>
+      <td>Lens</td>
+      <td>Lens-specific crystallin, beta Bl</td>
+    </tr>
+    <tr>
+      <td>KLHDC3</td>
+      <td>0.00186</td>
+      <td>Ubiquitous</td>
+      <td>Kelch-domain-containing 3, high expression in brain</td>
+    </tr>
+    <tr>
+      <td>KRT81#</td>
+      <td>0.00186</td>
+      <td>Hair and nails</td>
+      <td>Keratin 81, primarily in hair cortex</td>
+    </tr>
+    <tr>
+      <td>WDFY1</td>
+      <td>0.00192</td>
+      <td>Ubiquitous</td>
+      <td>WD repeat and FYVE-domain-containing 1, endosomal protein</td>
+    </tr>
+    <tr>
+      <td>KRT9#</td>
+      <td>0.00195</td>
+      <td>Skin</td>
+      <td>Keratin 9, specific to palms of hands and soles of feet</td>
+    </tr>
+    <tr>
+      <td>POMP#</td>
+      <td>0.00199</td>
+      <td>Ubiquitous</td>
+      <td>Proteasome maturation protein, associated with rare skin disorder</td>
+    </tr>
+    <tr>
+      <td>RRH*</td>
+      <td>0.00201</td>
+      <td>Retina</td>
+      <td>Retinal pigment epithelium-derived rhodopsin homolog</td>
+    </tr>
+    <tr>
+      <td>DPCD*</td>
+      <td>0.00201</td>
+      <td>Ciliated cells</td>
+      <td>Deleted in primary ciliary dyskinesia; maintenance of ciliated cells</td>
+    </tr>
+    <tr>
+      <td>RAD54L</td>
+      <td>0.00217</td>
+      <td>Ubiquitous</td>
+      <td>RAD54-like: DNA double-strand break repair</td>
+    </tr>
+    <tr>
+      <td>TATDN1</td>
+      <td>0.00235</td>
+      <td>Ubiquitous</td>
+      <td>TatD DNase-domain-containing 1</td>
+    </tr>
+    <tr>
+      <td>ITLN2</td>
+      <td>0.00244</td>
+      <td>Small intestine</td>
+      <td>Intelectin 2, may play a role in defense against pathogens</td>
+    </tr>
+    <tr>
+      <td>STX3*</td>
+      <td>0.00245</td>
+      <td>Ubiquitous</td>
+      <td>Syntaxin 3, associated with congenital cataracts and intellectual disability</td>
+    </tr>
+    <tr>
+      <td>SKJV2L*</td>
+      <td>0.00254</td>
+      <td>Ubiquitous</td>
+      <td>DEAD box protein, yeast SKI2 homolog, implicated in macular degeneration</td>
+    </tr>
+    <tr>
+      <td>DPY19L1</td>
+      <td>0.00254</td>
+      <td>Ubiquitous</td>
+      <td>dpy-19-like 1 (Caenorhabditis elegans), probable C-mannosyltransferase</td>
+    </tr>
+    <tr>
+      <td>TFPT</td>
+      <td>0.00266</td>
+      <td>Ubiquitous</td>
+      <td>TCF3 (E2A) fusion partner (in childhood leukemia)</td>
+    </tr>
+    <tr>
+      <td>RSI*</td>
+      <td>0.00275</td>
+      <td>Retina</td>
+      <td>Retinoschisin 1, extracellular protein involved in organization of retina</td>
+    </tr>
+  </tbody>
+</table>
+
+_*related to vision.#related to skin and hair.Refer to Supplementary file 1 for a full list of the subterranean-accelerated genes._
+
+**Table 2.**
+ Representative enriched functions in mole-accelerated genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Functional annotation</th>
+      <th>Fold enrichment</th>
+      <th>p-value</th>
+      <th>FDR q-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Visual perception</td>
+      <td>23.16</td>
+      <td>6.84E-16</td>
+      <td>1.02E-11</td>
+    </tr>
+    <tr>
+      <td>Sensory perception of light stimulus</td>
+      <td>22.69</td>
+      <td>9.12E-L6</td>
+      <td>6.82E-12</td>
+    </tr>
+    <tr>
+      <td>Sensory perception</td>
+      <td>8.47</td>
+      <td>5.83E-10</td>
+      <td>2.91E-06</td>
+    </tr>
+    <tr>
+      <td>Neurological system process</td>
+      <td>5.39</td>
+      <td>1.75E-07</td>
+      <td>6.53E-O4</td>
+    </tr>
+    <tr>
+      <td>Detection of light stimulus</td>
+      <td>29.57</td>
+      <td>7.04E-07</td>
+      <td>2.10E-03</td>
+    </tr>
+    <tr>
+      <td>Detection of light stimulus involved in sensory perception</td>
+      <td>56.35</td>
+      <td>1.92E-05</td>
+      <td>4.77E 02</td>
+    </tr>
+    <tr>
+      <td>Detection of light stimulus involved in visual perception</td>
+      <td>56.35</td>
+      <td>1.92E-05</td>
+      <td>4.09E-02</td>
+    </tr>
+    <tr>
+      <td>Detection of external stimulus</td>
+      <td>14.38</td>
+      <td>2 49E-05</td>
+      <td>4.66E-02</td>
+    </tr>
+  </tbody>
+</table>
+
 We performed a control analysis to demonstrate that these functional enrichments are unique to subterranean species. We chose four aboveground species (Control species) for which there is no reason to expect phenotypic convergence and whose branch lengths are similar to the moles – pika, guinea pig, squirrel and cow. Whereas mole-accelerated genes were enriched in 15 GO categories at a FDR of 15%,control-accelerated genes had no enriched categories at the same FDR (Supplementary file 2). Furthermore, these control species showed no enrichment of visual perception genes specifically (Figure 3).
 
 There were also 1306 mole-decelerated genes that evolved at significantly slower rates in subterranean species than in other mammals (Supplementary file 3). Although mole-decelerated genes are individually significant, only one GO category showed significant functional enrichment – GO Biological Process: Nucleic acid binding transcription factor activity – at an FDR of 15% (Supplementary file 4). A similar control analysis showed 626 genes as being significantly decelerated at an FDR of 15%, and these control-decelerated genes were enriched in 24 GO categories. Therefore, despite there being vastly more mole-decelerated genes than mole-accelerated genes, mole-decelerated genes as a group do not show strong functional enrichment. This result stands in stark contrast to the strong enrichment seen in the mole-accelerated genes.
 
-## Most mole-accelerated genes are under relaxed constraint
+### Most mole-accelerated genes are under relaxed constraint
 
 Accelerated rates could have resulted from adaptive evolution or, alternatively, from relaxation of constraint. We distinguished between these scenarios using codon-based evolutionary models to detect signatures of adaptive evolution. We tested whether the nonsynonymous to synonymous rate ratio (dN/dS) was significantly greater than 1 – the expectation for positive selection – for any portion of the gene specifically on the subterranean species branches, and also more generally across the entire mammalian phylogeny (Yang, 2007). Of the top 55 mole-accelerated genes, only one gene rejected a neutral model not allowing dN/dS ratios exceeding 1 in favor of a model allowing positive selection (dN/dS > 1) on subterranean branches (Supplementary file 5). This gene is involved in connective tissue and hair structure (KRTAP17-1).
 
 The other accelerated genes did not show evidence of adaptive evolution and thus are probably under relaxed constraint. Almost all accelerated genes rejected a model requiring them to have identical constraints in all mammals (model M1) in favor of a model that allowed subterranean-specific relaxation of constraint (model BS1) (Supplementary file 5). Some of these genes seem to have lost all functional constraint because they show genetic lesions such as stop codons and frameshifts in some subterranean species (Supplementary file 6). This evidence of relaxed constraint is consistent with the expectation that some vision-related genes have been undergoing regressive evolution.
 
-## Skin-related genes were accelerated possibly in response to the demands of tunneling
+### Skin-related genes were accelerated possibly in response to the demands of tunneling
 
 The fossorial lifestyle of subterranean species has selected for traits related to digging and locomotion underground (Nevo, 1979). Perhaps because of this selective pressure, many of the top mole-accelerated genes encode proteins that are structural components of skin, hair and epithelial connective tissues. The reasons for their acceleration are the result of relaxation of constraint on their coding sequence. Genes encoding keratin proteins 9, 12, and 81 (KRT9, KRT12, KRT81) were studied using codon models, and the results indicated that they experienced relaxed constraint in subterranean species but not positive selection for amino acid diversification (Supplementary file 5). They contain early stop codons in multiple subterranean species, which is consistent with complete loss of constraint (Supplementary file 6).
 
@@ -86,7 +350,7 @@ The convergent acceleration and pseudogenization of KRT9 is particularly interes
 
 In addition, we discovered skin- and hair-related genes showing evidence of positive selection rather than of loss of function in subterranean species. Although these genes were not significantly mole-accelerated at a FDR of 15%, they potentially reflect functional changes in response to subterranean adaptation. One such gene, COL4A4, a gene encoding a subunit of Type IV collagen, was strongly accelerated, did not contain genetic lesions, and showed evidence of positive selection in subterranean species (Supplementary file 1,5,6). Type IV collagen is the major structural component of the basal lamina in many tissues, including skin epithelium, and is composed of six subunits, three of which (COL4A4, COL4A5 and COL4A3) were notably mole-accelerated. On average, the six subunits were more accelerated than 71% of all other genes, which is a significant difference (p=0.0342, Mann-Whitney U test). Whereas Type IV Collagen seems to have responded to the subterranean environment, other major components of the basal lamina, the laminin proteins (e.g., LAMA1), were not notably accelerated.
 
-## Regressive evolution is limited to the lens, retina, and eye-specific developmental genes
+### Regressive evolution is limited to the lens, retina, and eye-specific developmental genes
 
 In order to compare how specific eye tissues have evolved in subterranean species, we first compiled tissue-specific gene sets using expression data from 91 mouse tissues (Su et al., 2004). We identified tissue-specific genes for cornea, iris, lens and retina by selecting those genes with significant differential expression in the tissue of interest but not in other tissues. Using literature, we also compiled a set of 71 important eye developmental genes (Supplementary file 7). We first asked whether there is a relationship between the degree of tissue-specificity and the degree of mole-acceleration measured as the difference in dN/dS between subterranean and aboveground species (Figure 5A). We found a clear positive correlation between eye tissue-specificity and mole-acceleration, which is consistent with a greater relaxation of constraint on genes with few or no roles outside the eye. Next, we asked which genes with eye-tissue-specific expression showed acceleration and found that genes that are specifically expressed in the cornea (a protective tissue of the outer eye) and the iris were not accelerated in subterranean species when compared to a set of randomly chosen genes (background) (Figure 5B and C). By contrast, many lens- and retina-specific genes are accelerated. On average, lens genes are more accelerated than 84% of background genes, and retina genes are more accelerated than 82% (p=9.07×10−6 and p=6.10×10−10 for lens and retina, respectively, Mann-Whitney U test). The contrast between the front and the interior of the eye suggests that the sensory functions of the inner eye, such as phototransduction and the visual cycle, are under relaxed constraint, whereas the protective function of the cornea is not. Indeed, two of these subterranean species have eyes that are open to the environment, such that the cornea may continue to serve as a barrier to pathogens and debris.
 
@@ -96,7 +360,7 @@ In order to compare how specific eye tissues have evolved in subterranean specie
 
 Eye developmental genes as a whole were not accelerated compared to background, which may reflect the fact that most of them, such as Sonic Hedgehog (Shh), are important in the development of non-eye tissues. However, five eye-specific developmental genes were notably present at the top of the accelerated list (Vax2, Nrl, Foxe3, Crx and Aldh3A1), whereas no eye-specific genes were found lower in the list (Supplementary file 7). This is consistent with the positive relationship between eye-specificity and relaxation of constraint (Figure 5A).
 
-## Eye-specific enhancers of PAX6 show convergent acceleration in subterranean mammals
+### Eye-specific enhancers of PAX6 show convergent acceleration in subterranean mammals
 
 Although we observe specific instances in which eye developmental genes show accelerated rates in subterranean mammals, there is no significant global trend. This is understandable given that a majority of these developmental transcription factors have important roles in the development of non-eye-related tissues. For example, Pax6 is important in the development of pancreas and brain in addition to the eye (Kleinjan et al., 2006; Kammandel et al., 1999; Xu et al., 1999). Hence the protein-coding sequences of the transcription factors encoded by these genes experience selective pressure against deleterious mutations. However, regulatory regions controlling the expression of these developmental genes in the eye might be under relaxed constraint in subterranean mammals, given the relaxation of the need to maintain the functionality of visual pathways. We hypothesize that these eye-specific cis-regulatory elements (CREs) would thus show accelerated rates of evolution in the subterranean mammals.
 
@@ -106,9 +370,9 @@ The results of our analyses show that the three regions showing the strongest si
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/25884/elife-25884-fig6-v1.jpg)
 
-**Figure 6.:** Pax6 gene region.(A) Genomic region spanning Pax6 and its neighbor Elp4. The exons and introns of the two genes are represented by black blocks and lines respectively, whereas the conserved non-coding regions analyzed are represented in light blue. The conservation signal as given by the 100 vertebrates Basewise Conservation is shown in dark blue. The mole-acceleration scores for these regions are represented in red. The three most accelerated non-coding regions identified in this analysis are consistent with the eye-specific enhancers regulating Pax6 expression in the eye. (B) The mole-acceleration scores for the three eye-specific enhancers of Pax6 are the highest among 150 regions analyzed, including enhancers of other tissues and uncharacterized non-coding regions. (C) The relative rates in each species for the most accelerated region ‘cre149’.
+**Figure 6.:** (A) Genomic region spanning Pax6 and its neighbor Elp4. The exons and introns of the two genes are represented by black blocks and lines respectively, whereas the conserved non-coding regions analyzed are represented in light blue. The conservation signal as given by the 100 vertebrates Basewise Conservation is shown in dark blue. The mole-acceleration scores for these regions are represented in red. The three most accelerated non-coding regions identified in this analysis are consistent with the eye-specific enhancers regulating Pax6 expression in the eye. (B) The mole-acceleration scores for the three eye-specific enhancers of Pax6 are the highest among 150 regions analyzed, including enhancers of other tissues and uncharacterized non-coding regions. (C) The relative rates in each species for the most accelerated region ‘cre149’.
 
-## Mole-accelerated non-coding elements are strongly enriched near transcription factor genes driving eye development
+### Mole-accelerated non-coding elements are strongly enriched near transcription factor genes driving eye development
 
 Expanding from our analysis of Pax6, we performed a large-scale scan for convergently accelerated non-coding elements near transcription factor genes in the mammalian genome. We compiled two sets of transcription factor genes – one comprising 20 genes known to be important in eye development (the Eye set), such as Pax6, Pax2, Otx2, and another set consisting of an equal number of tissue-specific transcription factor genes that are expressed in other tissues and with no evidence of expression in eye (the Other set), which includes Hoxa9, Pax8 and Sox13 (Supplementary file 9). We identified 200 conserved non-coding elements near each gene in both sets, totaling to 8000 elements split equally between the two gene sets (see Materials and methods). We subsequently applied our method and calculated the mole-acceleration of each element. This large-scale scan revealed a total of 17 elements as convergently accelerated at an FDR of 10% (Figure 7A, Supplementary file 10). Fourteen of the 17 elements are found near to genes belonging to the Eye set, reflecting a significant enrichment of mole-accelerated elements near transcription factor genes driving eye development (Hypergeometric test, p-value=0.001). We subsequently checked the genomic locations of these mole-accelerated elements to ensure that they are not clustered at the same locus for instance. These 17 elements are found close to 14 unique genes, with 11 unique genes belonging to the Eye set, and three genes belonging to the Other set, further showcasing the strong enrichment of unique eye developmental transcription factor genes close to mole-accelerated elements (Hypergeometric test p-value = 0.0016).
 
@@ -116,11 +380,11 @@ Expanding from our analysis of Pax6, we performed a large-scale scan for converg
 
 **Figure 7.:** (A) Enrichment of mole-accelerated elements near eye developmental transcription factor genes. The bar plot shows the 17 mole-accelerated conserved non-coding elements identified. Fourteen of the 17 elements are present near transcription factor genes in the Eye set, denoted in red. (B) FANTOM5 Eye enhancers show strong mole-acceleration. The plot shows the relative proportion of FANTOM5 eye enhancers identified among all enhancers significant at the corresponding p-value threshold. We see a strong enrichment of eye enhancers identified at low mole-acceleration p-values (red points) whereas no such enrichment is observed using control-species-acceleration p-values (blue points).
 
-## FANTOM5 eye enhancers show strong convergent acceleration in subterranean mammals
+### FANTOM5 eye enhancers show strong convergent acceleration in subterranean mammals
 
 The FANTOM5 consortium has identified putative enhancer sites in the human and mouse genomes based on bidirectional enhancer transcription across tissues as well as at multiple developmental time points (Andersson et al., 2014). These putative enhancer sites include genomic regions that are transcribed in the eyeball of mouse embryos at four developmental time points. On the basis of this resource, we compiled two sets of FANTOM5 enhancer sites (see Materials and methods) – a set consisting of 900 genomic regions with non-zero expression in the eyeball across four developmental time points (‘Eye’ enhancers), and another set consisting of 6000 regions with zero expression across the same samples (‘Other’ enhancers). We subsequently calculated the convergent rate acceleration of these genomic elements in the four subterranean mammals and compared the acceleration observed for the ‘Eye’ enhancers to that of the ‘Other’ enhancers. Our analysis revealed a strong enrichment of FANTOM5 ‘Eye’ enhancers showing convergent rate acceleration in the four subterranean species when compared to the four control species (Figure 7B). We observe 62 FANTOM5 enhancers in total that showed significant mole acceleration at an FDR of 15% (Supplementary file 11). Fifteen of these correspond to the FANTOM5 Eye enhancers set, reflecting a significant enrichment of detected FANTOM5 eye enhancers using mole-acceleration (Hypergeometric test p-value=0.006).
 
-## Some aboveground species exhibit gene acceleration indicative of their altered visual capacities
+### Some aboveground species exhibit gene acceleration indicative of their altered visual capacities
 
 To understand differences in the visual capabilities of mammals systematically, we studied the overall relative rates of evolution of visual genes across all mammals. Our gene set of interest (189 genes in total) was comprised of all genes with ‘Visual perception’ GO term annotation, excluding developmental transcription factors. For each species, we then calculated the mean relative rate across all of the genes (Figure 8). We observed the four subterranean mammals to be among the accelerated species (with mean >0), as was our expectation. However, we also observed aboveground species with overall rate accelerations comparable to those of the moles, such as the armadillo, the thirteen-lined ground squirrel, the big brown bat, David’s myotis bat and a shrew. Notably, all of these mammals show varying types of visual regression: the armadillo has poor vision characterized by a lack of cone cells in the retina (McDonough and Loughry, 2013), and shrews also have poor vision and diminutive eyes, which in some species are hidden in fur (Nowak, 1999). The nocturnal big brown bat and David’s myotis bat possess reduced eyes and rely on echolocation for navigation (Koay et al., 1998). The thirteen-lined ground squirrel displays a rare visual trait: the central region of its retina is dominated by cone photoreceptors in contrast to the retinas of most mammals (Kim et al., 2016). These scenarios could have important implications because the ground squirrel is used as a model for vision research (Li et al., 2010; Chen and Li, 2012).
 
@@ -144,38 +408,38 @@ Visual regression is not limited to these four mole species, and mammals display
 
 ## Materials and methods
 
-## Adding Nannospalax galili orthologs to alignment
+### Adding Nannospalax galili orthologs to alignment
 
 Given the absence of Nannospalax galili (blind mole-rat or BMR) in the 100-species alignments made available by the UCSC genome browser, we employed a custom approach to add the correct BMR orthologous sequence based on its closest relative on the mammalian species phylogeny, mouse. Using the publicly available BMR gene models (ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF_000622305.1_S.galili_v1.0/), we first perform ed pairwise reciprocal nucleotide blast of all BMR gene cDNA sequences and the corresponding cDNA sequences of all genes in the mouse mm9 genome. For every mm9 gene sequence, we subsequently identify the correct BMR ortholog using the InParanoid program as follows: the program clusters pairs of sequences from the two queried genomes into groups of orthologs, and the BMR sequence forming the main ortholog pair (pairs with mutually best hit) in every group was identified as the correct ortholog (Remm et al., 2001). We then performed a profile alignment using the openly available Muscle program to add the identified BMR ortholog to the gene’s multi-species alignment (Edgar, 2004). For all analyses involving non-coding regions, we utilized a simpler approach to identify the BMR orthologous region. For each non-coding region of interest, we performed blastn with the mm9 orthologous sequence as the query against the BMR assembled genome, with the default Expect (E) value of 10 (NCBI Resource Coordinators, 2016). The resulting best scoring blastn hit in the BMR genome, if any, was added to the non-coding region’s multi-species alignment (obtained from the UCSC genome browser) using the profile alignment utility of the Muscle program (Edgar, 2004).
 
-## Calculating gene correlations with the subterranean environment
+### Calculating gene correlations with the subterranean environment
 
 Using the 100-way 100 vertebrate species amino acid alignments from the multiz alignment available at the UCSC genome browser (Blanchette et al., 2004; Harris, 2007), those alignments with a minimum of 10 species that are also present in at least two subterranean species were selected for the study. We pruned each alignment to include only the 39 species of interest represented in the proteome-wide average tree (Figure 1A), after adding the BMR ortholog of the corresponding gene sequence to this alignment as described in the previous section. For each resulting amino acid alignment, we estimated branch lengths using the ‘aaml’ program from the phylogenetic analysis using the maximum likelihood (PAML) package (Yang, 2007). Branch lengths were estimated under an empirical model of amino acid substitution rates with rate variability between sites modeled as a gamma distribution approximated with four discrete classes (for computational efficiency) and an additional class for invariable sites (aaml model ‘Empirical + F’) (Whelan and Goldman, 2001; Yang, 1996). Branch lengths were estimated on a published mammalian species tree topology (Murphy et al., 2004), modified to include Nannospalax galili whose position in the tree was inferred based on existing literature on its ancestry (Fang et al., 2014). For the analyses involving conserved non-coding elements, we identified the elements of interest based on the human phastCons track generated from the 100-way vertebrate multiz alignment, eliminating any region of overlap with the human mRNAs track. For each such element, we obtained an alignment of orthologous regions across our species of interest, pruning from the UCSC 100-way multiz alignment. The previous section further details the procedure employed for adding the BMR orthologous region. We subsequently estimated the branch lengths using the baseml program of the PAML package under the general reversible process (REV) model for nucleotide substitution rates, with rate variability between sites modeled as a gamma distribution approximated with four discrete classes and an additional class for invariable sites (Blanchette et al., 2004; Rodríguez et al., 1990).
 
 Subsequent to reconstructing the maximum likelihood trees using PAML, we filter out the trees of genetic elements that have zero branch lengths in at least 80% of the species present in the tree. Raw branch lengths in trees retained after this filtering step were transformed into relative rates using a projection operator method (Sato et al., 2005). These branch-specific relative rates were then used to perform a Mann-Whitney U test and correlation analysis over the binary variable of ‘subterranean’ or ‘aboveground’ (i.e., not subterranean) branches (Figure 1A). Subterranean branches are those leading to the star-nosed mole (Condylura cristata), cape golden mole (Chrysochloris asiatica), naked mole-rat (Heterocephalus glaber) and blind mole-rat (Nannospalax galili).
 
-## Datasets of ‘Eye’ vs ‘Other’ conserved non-coding elements and FANTOM5 enhancers
+### Datasets of ‘Eye’ vs ‘Other’ conserved non-coding elements and FANTOM5 enhancers
 
-## A. Conserved non-coding elements near transcription factor genes
+#### A. Conserved non-coding elements near transcription factor genes
 
 We identified 20 developmental transcription factors that have important developmental roles in the formation of eye tissues (‘Eye’ set) based on a literature search. The detailed functional roles of these transcription factors and the specific eye tissues where they are relevant are provided in Supplementary file 9. The second part of the dataset comprises 20 transcription factors identified as belonging to the ‘Other’ set. These transcription factors have no known role in eye development and their tissue-specific functions were identified from a census of human transcription factors [Supplementary file 9] (Vaquerizas et al., 2009). Subsequently, we used the UCSC phastConsElements100way track to identify conserved non-coding elements near each transcription factor gene. For each gene, we identify 200 elements expanding the search window from the center of the gene along either direction. We limit the number of elements to 200 in order to avoid any biases arising out of the total number of elements studied near any particular gene. This leads to a total of 8000 elements split equally between the ‘Eye’ and the ‘Other’ set.
 
-## B. FANTOM5 enhancers
+#### B. FANTOM5 enhancers
 
 We downloaded a dataset of 44,460 putative enhancers identified by the FANTOM5 consortium, including their mm9 coordinates and expression quantification across 1190 tissue samples (Andersson et al., 2014). These include 1217 enhancers with non-zero expression level in the eyeball of mice (‘Eye’) across four developmental time-points and 13,100 enhancers with zero expression in eyeball (‘Other’). We obtained the corresponding hg19 coordinates of these enhancers using the UCSC liftOver utility (Kent et al., 2002). Based on this, we were able to map correctly 995 enhancers belonging to the ‘Eye’ set and 7695 enhancers belonging to the ‘Other’ set. From among these enhancers, we were able to confidently calculate the evolutionary rate correlation with the subterranean environment for 946 FANTOM5 ‘Eye’ enhancers and 6,331 FANTOM5 ‘Other’ enhancers, after filtering out enhancers that were either poorly conserved across our species set or whose trees were dominated by branches of length zero.
 
-## Functional enrichment analysis
+### Functional enrichment analysis
 
 We performed functional enrichment analysis using the GOrilla tool by searching for enriched GO terms in the foreground set of genes compared to the full background set of genes tested for mole convergence (Eden et al., 2009). In addition to this, functional information for subterranean-associated genes was mined from the Uniprot and RefSeq databases, and from literature cited directly (UniProt Consortium, 2007; Pruitt et al., 2007). Enrichment analysis was performed using the hypergeometric test with the background set of genes restricted to genes that were tested for mole convergence and that had at least one annotation in the corresponding annotation file. Correction for multiple testing was performed using false discovery rate q-values (Storey, 2002).
 
-## Multiple hypothesis testing correction
+### Multiple hypothesis testing correction
 
 False Discovery Rate analysis was performed on probabilities resulting from the Mann-Whitney U test. We employed an empirical permutation-based FDR calculation, often the standard approach in genome-wide analysis. We generated 10,000 null datasets, obtaining each dataset by randomly permuting the species labels of the relative rates. This process is equivalent to calculating the Mann-Whitney U test and correlation analysis over four random branches vs the rest instead of over the binary variable of ‘subterranean’ vs ‘aboveground’ branches. The subsequent permuted datasets were used to estimate the FDR q-values for each p-value in our subterranean correlation analysis. Genes showing a correlation greater than or equal to 0.5 in the Mann-Whitney U test and significant at a FDR of 15% were considered mole-accelerated genes, and the p-value reflecting the strength of this acceleration is referred to as mole-acceleration. Similarly, genes showing a correlation less than 0.5 and significant at a FDR of 15% are considered mole-decelerated genes.
 
-## Tissue-specific gene analysis
+### Tissue-specific gene analysis
 
 In order to determine how specific eye tissues have evolved across subterranean species, we first identified tissue-specific gene sets using microarray expression data from 91 mouse tissues (Su et al., 2004). We isolated tissue-specific genes for cornea, iris, lens and retina (including retinal pigmented epithelium). These sets were defined as those with significant differential expression only in the tissue of interest compared to all other tissues at an alpha of 0.05 (T-test).
 
-## Phylogenetic models of selective pressure
+### Phylogenetic models of selective pressure
 
-The subterranean-accelerated genes were subjected to phylogenetic models of codon evolution to test for significant evidence of relaxation of constraint or positive selection over the subterranean mammal branches. Using PAML, we ran codeml using five different models: the branch-site neutral model (BS Neutral), the branch-site selection model (BS Alt Mod), the sites neutral model (M1), the positive selection model (M8) and its null model (M8A) (Yang, 2007). To assess the significance of relaxation of constraint on subterranean mammal branches, we performed likelihood ratio tests (LRT) between BS Neutral and its nested null model M1. LRTs between BS Alt Mod and its null BS Neutral were used to infer positive selection on subterranean mammal branches. Probabilities were assigned for each of these two LRTs using the chi-square distribution with 1 degree of freedom. Mammal-wide positive selection was inferred using the M8 vs M8A models and their respective LRT, using 1 degree of freedom chi square distribution to assess LRT significance. For calculating the correlation between mole-acceleration and degree of tissue-specificity of genes, we estimated the mole-acceleration of each gene as follows: using a branch-site selection model (BS Alt Mod) we estimated two different values of ω (dN/dS) – one for the four subterranean branches and one for the rest of the branches on the tree. Mole-acceleration was calculated as the difference in the two ω values that were estimated.
+The subterranean-accelerated genes were subjected to phylogenetic models of codon evolution to test for significant evidence of relaxation of constraint or positive selection over the subterranean mammal branches. Using PAML, we ran codeml using five different models: the branch-site neutral model (BS Neutral), the branch-site selection model (BS Alt Mod), the sites neutral model (M1), the positive selection model (M8) and its null model (M8A) (Yang, 2007). To assess the significance of relaxation of constraint on subterranean mammal branches, we performed likelihood ratio tests (LRT) between BS Neutral and its nested null model M1. LRTs between BS Alt Mod and its null BS Neutral were used to infer positive selection on subterranean mammal branches. Probabilities were assigned for each of these two LRTs using the chi-square distribution with 1 degree of freedom. Mammal-wide positive selection was inferred using the M8 vs M8A models and their respective LRT, using 1 degree of freedom chi square distribution to assess LRT significance. For calculating the correlation between mole-acceleration and degree of tissue-specificity of genes, we estimated the mole-acceleration of each gene as follows: using a branch-site selection model (BS Alt Mod) we estimated two different values of $\omega$ (dN/dS) – one for the four subterranean branches and one for the rest of the branches on the tree. Mole-acceleration was calculated as the difference in the two $\omega$ values that were estimated.

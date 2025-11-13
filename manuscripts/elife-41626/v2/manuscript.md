@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.41626.001 Pitch perception is critical for recognizing speech, music and animal vocalizations, but its neurobiological basis remains unsettled, in part because of divergent results across species. We investigated whether species-specific differences exist in the cues used to perceive pitch and whether these can be accounted for by differences in the auditory periphery. Ferrets accurately generalized pitch discriminations to untrained stimuli whenever temporal envelope cues were robust in the probe sounds, but not when resolved harmonics were the main available cue. By contrast, human listeners exhibited the opposite pattern of results on an analogous task, consistent with previous studies. Simulated cochlear responses in the two species suggest that differences in the relative salience of the two pitch cues can be attributed to differences in cochlear filter bandwidths. The results support the view that cross-species variation in pitch perception reflects the constraints of estimating a sound’s fundamental frequency given species-specific cochlear tuning.
+Pitch perception is critical for recognizing speech, music and animal vocalizations, but its neurobiological basis remains unsettled, in part because of divergent results across species. We investigated whether species-specific differences exist in the cues used to perceive pitch and whether these can be accounted for by differences in the auditory periphery. Ferrets accurately generalized pitch discriminations to untrained stimuli whenever temporal envelope cues were robust in the probe sounds, but not when resolved harmonics were the main available cue. By contrast, human listeners exhibited the opposite pattern of results on an analogous task, consistent with previous studies. Simulated cochlear responses in the two species suggest that differences in the relative salience of the two pitch cues can be attributed to differences in cochlear filter bandwidths. The results support the view that cross-species variation in pitch perception reflects the constraints of estimating a sound’s fundamental frequency given species-specific cochlear tuning.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ The present study overcomes these limitations by directly comparing the pitch cu
 
 ## Results
 
-## Simulating the filtering of complex tones in the ferret and human cochlea
+### Simulating the filtering of complex tones in the ferret and human cochlea
 
 Humans (Glasberg and Moore, 1990; Shera et al., 2002) are believed to have narrower cochlear filter bandwidths than ferrets (Alves-Pinto et al., 2016; Sumner et al., 2018; Sumner and Palmer, 2012) and other non-human animals (Joris et al., 2011; Osmanski et al., 2013; Pickles and Comis, 1976), and these physiological constraints may predispose them to rely on different acoustical cues to classify the pitch of complex tones. Specifically, sharper frequency tuning in humans should result in more resolvable harmonics across the human tonotopic map. On the other hand, if the bandwidth of an auditory nerve fibre is broader, its firing should phase lock more strongly to the beating of adjacent harmonics, potentially providing a stronger explicit representation of the temporal periodicity of F0 in ferrets than in humans.
 
@@ -58,7 +58,7 @@ We also examined whether the temporal representation of F0 was enhanced in the f
 
 These simulations suggest that the ferret cochlea provides an enhanced representation of the envelope periodicity of a complex tone, as conveyed by spikes that are phase-locked to the F0 in the auditory nerve. On the other hand, the human auditory nerve provides a better resolved representation of individual harmonics across the tonotopic array. It might thus be expected that these two types of cues would be utilized to different extents by the two species.
 
-## Behavioural measures of pitch cue use in ferrets
+### Behavioural measures of pitch cue use in ferrets
 
 To test the role of different pitch cues in ferret pitch perception, we trained five animals on a two-alternative forced choice (2AFC) task that requires ‘low’ and ‘high’ pitch judgements analogous to those used in human psychophysical tasks (Figure 2A,B). On each trial, a harmonic complex tone was presented at one of two possible fundamental frequencies. Ferrets were given water rewards for responding at the right nose-poke port for a high F0, and at the left port for a low F0. Incorrect responses resulted in a time-out. We began by training four ferrets to classify harmonic complex tones with an F0 of 500 and 1000 Hz, with a repeating pure tone presented at 707 Hz (the midpoint on a logarithmic scale) for reference before each trial. Two of these animals, along with one naïve ferret, were then trained on the same task using target F0 values of 150 and 450 Hz and a 260 Hz pure tone reference. In both cases, the integer ratios between the F0s to be discriminated allowed us to match their spectral bandwidths exactly, so that ferrets could not solve the task based on the frequency range of the sound (Figure 3; first four rows). Rather, the animals had to discriminate sounds based on some cue to the F0. After completing several pre-training stages to habituate the animals to the apparatus and sound presentation (see Materials and methods), the ferrets learned to perform the pitch classification task within 22 ± 3 (mean ± standard deviation) days of twice daily training.
 
@@ -84,9 +84,17 @@ The spectral ranges of these stimuli are given in Figure 4B, and the spectra and
 
 The performance of ferrets on the standard and probe stimuli is shown in Figure 5A. Data for individual subjects are shown in Figure 5—figure supplement 1A. A repeated-measures 3-way ANOVA was carried out on the three ferrets trained with both references. This analysis indicated that performance varied with stimulus type (i.e., the standard and four probe stimuli) (F(4,8) = 10.540, p=0.003), but not across subjects (F(2,8) = 1.060; p=0.391) or the two reference conditions (i.e., 260 and 707 Hz) (F(1,8) = 0.438, p=0.576). Scores did not significantly vary across individual ferrets in either the 260 Hz (2-way ANOVA; F(2,8) = 0.366, p=0.704) or 707 Hz condition (2-way ANOVA; F(3,12) = 2.063, p=0.158), so data collected from the same animals in these two conditions were treated as independent measurements in subsequent analyses.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/41626/elife-41626-fig5-v2.jpg)
+
+**Figure 5.:** (A) Ferrets’ percent correct scores on the pitch classification task are plotted for the standard tone trials (left) and each of the four probe stimuli (right). The results of testing with the 260 Hz reference (150 and 450 Hz targets; red) and 707 Hz reference (500 and 1000 Hz targets; black) are plotted separately. (B) Humans’ pitch classification performance is plotted, as in (A). (C) Performance for each of the four probe stimuli is expressed as the ratio of the percentage correct score and that achieved with the standard training tone stimulus. Data are shown for ferrets (black) and humans (blue). Values of 0 indicate that subjects performed at chance for the probe stimulus, while one indicates that they classified the F0 of the probe as accurately as the standard stimulus. Error bars shown mean ± standard error. Individual data for (A) and (B) are shown in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/41626/elife-41626-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Ferrets’ percent correct scores on the pitch classification task are plotted for the standard tone trials (left) and each of the four probe stimuli (right). The results of testing with the 260 Hz reference (150 and 450 Hz targets; red) and 707 Hz reference (500 and 1000 Hz targets; black) are plotted separately. Symbol shapes represent individual ferrets. (B) Humans’ pitch classification performance is plotted, as in (A). Data are randomly jittered on the x-axis to facilitate visualization of individual points. Each symbol and colour combination indicates an individual subject.
+
 To assess the acoustical cues used by animals to solve the pitch classification task, we compared ferrets’ performance on the standard trials with that on each of the four probe trial types (repeated measures 2-way ANOVA, Tukey’s HSD test). Compared to their performance on standard trials, ferrets showed impaired performance on probes that contained only low harmonics (p=0.001), but performed well when only high harmonics were presented (p=1.000). Their performance was impaired when we randomized the phases of the high harmonics (p=0.002). Phase randomization also impaired performance when the full set of harmonics (both resolved and unresolved; ‘All Harmonics Random Phase’) were present (p=2.173×10−5). This pattern of results suggests that ferrets rely more strongly on the temporal envelope periodicity (produced by unresolved harmonics) than on resolved harmonics to classify the pitch of harmonic tone complexes, unlike what would be expected for human listeners.
 
-## Comparison of human and ferret pitch classification performance
+### Comparison of human and ferret pitch classification performance
 
 Humans were trained on a similar pitch classification task to the one described for ferrets in order to best compare the use of pitch cues between these two species. Participants were presented with harmonic complex tones and classified them as high or low. A training phase was used to teach participants the high and low F0s.
 
@@ -100,7 +108,7 @@ The performance for each probe type, relative to performance on the standard sti
 
 We used a combination of cochlear modelling and behavioural experiments to examine the use of pitch cues in ferrets and human listeners. Our model simulations illustrated how broader cochlear filter widths in ferrets result in fewer resolved harmonics and a more enhanced representation of temporal envelopes than the human cochlea, as suggested by previous authors (Cedolin and Delgutte, 2010; Shofner and Chaney, 2013). Based on this result, we predicted that the pitch judgments of ferrets would rely more strongly on temporal envelope cues than that of human listeners. Our behavioural experiments directly compared the use of pitch cues in the two species and found that this is indeed the case. Our results provide the first unambiguous dissociation of pitch mechanisms across species, by utilizing the same task across species, and provide an illustration of the potential consequences of species differences in cochlear tuning.
 
-## Findings in other species
+### Findings in other species
 
 Human listeners have consistently been found to have better pitch discrimination thresholds when stimuli contain resolved harmonics (Bernstein and Oxenham, 2003; Kaernbach and Bering, 2001; Moore et al., 1985; Ritsma, 1967; Shackleton and Carlyon, 1994). Moreover, cortical responses to pitched sound in humans are stronger for resolved than unresolved harmonics, mirroring perceptual sensitivity (Norman-Haignere et al., 2013; Penagos et al., 2004). The results of our human experiments are thus fully consistent with this large body of prior work, while enabling comparison with non-human animals. Because most natural sounds contain both low- and high-numbered harmonics, humans may learn to derive pitch primarily from resolved harmonics even when temporal envelope cues are also available, and are thus less equipped to derive pitch from unresolved harmonics alone. This would explain the drop in performance when resolved harmonic cues were removed on probe trials in our experiment.
 
@@ -114,7 +122,7 @@ The use of probe trials without feedback in the present experiment allowed us to
 
 Overall, the available evidence fits with the idea that pitch judgments are adapted to the acoustical cues that are available and robust in a particular species, with differences in cochlear tuning thus producing cross-species diversity in pitch perception. A similar principle may be at work within human hearing, where listeners appear to rely on harmonicity for some pitch tasks and spectral changes in others, potentially because of task-dependent differences in the utility of particular cues (McPherson and McDermott, 2018). The application of normative models of pitch perception will likely provide further insight into the relative importance of these cues.
 
-## Implications for neurophysiological work
+### Implications for neurophysiological work
 
 A better understanding of the similarities and differences in pitch processing across species is essential for relating the results of neurophysiological studies in animals to human pitch perception. The present experiments suggest that ferrets, a common animal model in studies of hearing (e.g. Atilgan et al., 2018; Bizley et al., 2013; Fritz et al., 2003; Schwartz and David, 2018), can estimate F0 from the temporal envelopes of harmonic complex tones. Our data indicate that ferrets generalize across sounds with different spectral properties (including wideband sounds, sounds in noise, and sounds containing only high harmonics) without relying on explicit energy at the F0. In this respect, ferrets appear to have a pitch percept, even though the cues underlying it are apparently weighted differently than in human pitch perception.
 
@@ -124,37 +132,47 @@ The existing literature might be taken to suggest that primates are more appropr
 
 ## Materials and methods
 
-## Experimental subjects
+### Experimental subjects
 
-## Ferrets (Mustela putorius furo)
+#### Ferrets (Mustela putorius furo)
 
 Five adult female pigmented ferrets (aged 6–24 months) were trained in this study. Power calculations estimated that five animals was the minimum appropriate sample size for 1-tailed paired comparisons with alpha = 5%, a medium (0.5) effect size, and beta = 20%. Ferrets were housed in groups of 2–3, with free access to food pellets. Training typically occurred in runs of 5 consecutive days, followed by two days rest. Ferrets could drink water freely from bottles in their home boxes on rest days. On training days, drinking water was received as positive reinforcement on the task, and was supplemented as wet food in the evening to ensure that each ferret received at least 60 ml/kg of water daily. Regular otoscopic and typanometry examinations were carried out to ensure that the animals’ ears were clean and healthy, and veterinary checks upon arrival and yearly thereafter confirmed that animals were healthy. The animal procedures were approved by the University of Oxford Committee on Animal Care and Ethical Review and were carried out under license from the UK Home Office, in accordance with the Animals (Scientific Procedures) Act 1986.
 
-## Humans
+#### Humans
 
 The pitch classification performance of 16 adult humans (nine male, ages 18–53 years; mean age = 25.3 years) was also examined, which provided a 60% beta in the power calculations described for ferrets. All subjects reported having normal hearing. All experimental procedures on humans were approved by the Committee on the Use of Humans as Experimental Subjects at MIT.
 
-## Method details
+### Method details
 
-## Cochlear filter simulations
+#### Cochlear filter simulations
 
-We used a cochlear filter bank previously developed by Patterson et al. (1992) and implemented by Slaney (1993) to simulate representations of sounds on the basilar membrane. The model simulates the response of the basilar membrane to complex sounds as a set of parallel Gammatone filters, each with a different characteristic frequency and Equivalent Rectangular Bandwidth (ERB). In order to compare the representation of harmonic tone complexes in the human and ferret cochlea, we modified this model to use filter constants derived from either psychophysical estimates of human cochlear filters (Glasberg and Moore, 1990), or ferret auditory nerve recordings (Sumner and Palmer, 2012). Based on these sources, the equivalent rectangular bandwidth of filter i in the human cochlea was calculated as:ERBi=fi/(12.7∗(fi/1000)0.3),where fi is the centre frequency of the filter in Hz.
+We used a cochlear filter bank previously developed by Patterson et al. (1992) and implemented by Slaney (1993) to simulate representations of sounds on the basilar membrane. The model simulates the response of the basilar membrane to complex sounds as a set of parallel Gammatone filters, each with a different characteristic frequency and Equivalent Rectangular Bandwidth (ERB). In order to compare the representation of harmonic tone complexes in the human and ferret cochlea, we modified this model to use filter constants derived from either psychophysical estimates of human cochlear filters (Glasberg and Moore, 1990), or ferret auditory nerve recordings (Sumner and Palmer, 2012). Based on these sources, the equivalent rectangular bandwidth of filter $i$ in the human cochlea was calculated as:
 
-For the ferret cochlea, the equivalent rectangular bandwidth of each filter was estimated using the following linear fit to the data in Sumner and Palmer (2012):ERBi=fi/8.9047+209.6149.
+$$
+ERB_{i}=f_{i}/(12.7∗(f_{i}/1000)0.3),
+$$
+
+where $f_{i}$ is the centre frequency of the filter in Hz.
+
+For the ferret cochlea, the equivalent rectangular bandwidth of each filter was estimated using the following linear fit to the data in Sumner and Palmer (2012):
+
+$$
+ERB_{i}=f_{i}/8.9047+209.6149.
+$$
 
 The output of each channel in the above Gammatone filter bank was half-wave rectified and then compressed (to the power of 0.3) to simulate transduction of sound by inner hair cells. Finally, the output was low-pass filtered at 3 kHz (FIR filter, passband 3 kHz, stopband 4 kHz, attenuation 60 dB) to reflect the phase locking limit of auditory nerve fibres. This model architecture is similar to that used in previous studies (e.g. Karajalainen, 1996; Roman et al., 2003).
 
-## Training apparatus
+#### Training apparatus
 
 Ferrets were trained to discriminate sounds in custom-built testing chambers, constructed from a wire mesh cage (44 × 56 × 49 cm) with a solid plastic floor, placed inside a sound-insulated box lined with acoustic foam to attenuate echoes. Three plastic nose poke tubes containing an inner water spout were mounted along one wall of the cage: a central ‘start spout’ and two ‘response spouts’ to the left and right (Figure 2A). Ferrets’ nose pokes were detected by breaking an infrared LED beam across the opening of the tube, and water was delivered from the spouts using solenoids. Sound stimuli, including acoustic feedback signals, were presented via a loudspeaker (FRS 8; Visaton, Crewe, UK) mounted above the central spout, which had a flat response (±2 dB) from 0.2 to 20 kHz. The behavioural task, data acquisition, and stimulus generation were all automated using a laptop computer running custom MATLAB (The Mathworks, Natick, MA, USA) code, and a real-time processor (RP2; Tucker-Davis Technologies, Alachua, FL, USA).
 
-## Pre-training
+#### Pre-training
 
 Ferrets ran two training sessions daily, and typically completed 94 ± 24 trials per session (mean ± standard deviation). Several pre-training stages were carried out to shape animals’ behaviour for our classification task. In the first session, animals received a water reward whenever they nose poked at any of the spouts. Next, they received water rewards only when they alternated between the central and peripheral spouts. The water reward presented from the peripheral response spouts (0.3–0.5 ml per trial) was larger than that presented at the central start spout (0.1–0.2 ml per trial). The animal was required to remain in the central nose poke for 300 ms to receive a water reward from that spout.
 
 Once animals performed this task efficiently, sound stimuli were introduced in the next session. At the start of each trial, a repeating pure tone ‘reference’ (200 ms duration, 200 ms inter-tone interval, 60 dB SPL) was presented to indicate that the central spout could be activated. Nose poking at the central spout resulted in the presentation of a repeating complex tone ‘target’ (200 ms duration, 200 ms inter-tone interval, 70 dB SPL) after a 100 ms delay. The animal was again required to remain at the centre for 300 ms, and early releases now resulted in the presentation of an ‘error’ broadband noise burst (200 ms duration, and 60 dB SPL) and a 3 s timeout before a new trial began. The target tone could take one of two possible F0 values, which corresponded to rewards at one of the two peripheral spouts (right rewards for high F0 targets, and left for low F0s). For all training and testing stages, the target tones contained harmonics within the same frequency range, so that animals could not use spectral cut-offs to classify the sounds. The target tone continued to play until the animal responded at the correct peripheral spout, resulting in a water reward. Once the animals could perform this final pretraining task with >70% accuracy across trials, they advanced to pitch classification testing.
 
-## Testing stages and stimuli
+#### Testing stages and stimuli
 
 The complex tone target was presented only once per trial, and incorrect peripheral spout choices resulted in an error noise and a 10 s timeout (Figure 2B). After such an error, the following trial was an error correction trial, in which the F0 presented was the same as that of the previous trial. These trials were included to discourage ferrets from always responding at the same peripheral spout. If the ferret failed to respond at either peripheral spout for 14 s after target presentation, the trial was restarted.
 
@@ -166,15 +184,15 @@ Stage 2: On 80% of trials, the same standard target tones from Stage one were pr
 
 Stage 3: The probe stimulus from Stage two served as the ‘Standard’ sound on 80% of trials, and all stimuli (both the standard and probes) included the pink noise masker described above. Twenty percent of trials were probe trials, as in Stage 2, but this stage contained tones manipulated to vary the available pitch cues. We estimated the resolvability of individual harmonics using ERB measurements available in previously published auditory nerve recordings (Sumner and Palmer, 2012). For a given F0, the number of resolved harmonics was approximated as the ratio of F0 and the bandwidth of auditory nerve fibres with a characteristic frequency at that F0, as described by Moore and Ohgushi (1993), and applied by Osmanski et al. (2013). This measure yielded between 1 and 8 resolved harmonics for ferrets, depending on the F0 (Figure 4A). Four types of probe stimuli were presented: (1) ‘Low Harmonics’, which contained only harmonics presumed to be resolved; (2) ‘High Harmonics’, comprised of harmonics presumed to be unresolved; (3) ‘All Harmonics Random Phase’, which contained the same set of harmonics as the standard, but whose phases were independently randomized in order to reduce temporal envelope cues for pitch; and (4) ‘High Harmonics Random Phase’, which contained the harmonics present in ‘High Harmonics’ stimuli, but with randomized phases. The bandpass cutoffs for the probe stimuli were chosen so that the ‘Low Harmonic’, but not ‘High Harmonic’, probes contained resolved harmonics for ferret listeners. Each probe stimulus was presented on at least 40 trials for each ferret, while the standard was tested on over 1000 trials per ferret.
 
-## Human psychophysical task
+#### Human psychophysical task
 
 Human subjects were tested on a pitch classification task that was designed to be as similar as possible to Stage 3 of ferrets’ task (see above). 16 subjects discriminated target F0s of 180 and 220 Hz. Due to the smaller F0 difference required to make the task difficult enough to challenge human listeners (Walker et al., 2009), it was not possible to match the lower spectral edge of the ‘Low Harmonic’ and ‘All Harmonic’ stimuli as we did for ferrets. However, the stimuli were set such that the higher F0 target had the lower spectral edge. As a result, these edge cues were incongruent with the F0. Because feedback was not provided, it is unlikely that subjects could have learned to associate a lower spectral edge with the higher F0 and vice versa. This stimulus confound thus if anything is likely to have made the task more difficult in the ‘Low Harmonic’ and ‘All Harmonic’ conditions. Because our main finding is that the relative performance of humans was better than that of ferrets in these conditions, it seems unlikely to have influenced the key results.
 
 In the psychophysical task, human listeners were presented with the same classes of stimuli described above for ferrets. The frequency ranges included in the probe stimuli are listed in Figure 4B. Sounds were presented over headphones (Sennheiser HD280) in a sound attenuated booth (Industrial Acoustics, USA). A repeating reference pure tone (200 ms duration, 200 ms inter-tone interval, 60 dB SPL) was presented at the start of a trial, and the subject initiated the target harmonic tone complex (200 ms duration, 70 dB SPL) presentation with a keypress. Text on a computer monitor then asked the subject whether the sound heard was the low or high pitch, which the subjects answered via another keypress (1 = low, 0 = high). Feedback was given on the monitor after each trial to indicate whether or not the subject had responded correctly. Incorrect responses to the standard stimuli resulted in presentation of a broadband noise burst (200 ms duration, and 60 dB SPL) and a 3 s timeout before the start of the next trial. Error correction trials were not used for human subjects, as they did not have strong response biases. Standard harmonic complex tones were presented on 80% of trials, and the four probes (‘Low Harmonics’, ‘High Harmonics’, ‘All Harmonics Random Phase’, and ‘High Harmonics Random Phase’) were presented on 20% of randomly interleaved trials. Feedback for probe trials was always ‘correct’, irrespective of listeners’ responses. Humans were given 10 practice trials with the standard stimuli before testing, so that they could learn which stimuli were low and high, and how to respond with the keyboard. Each probe stimulus was tested on 40 trials for each subject, while the standard was tested on 680 trials per subject.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Psychophysical data analysis
+#### Psychophysical data analysis
 
 Error correction trials were excluded from all data analysis, as were data from any testing session in which the subject scored less than 60% correct on standard trials. T-tests and ANOVAs with an alpha of 5% were used throughout to assess statistical significance.
 
@@ -182,6 +200,12 @@ Because only 3 of the four ferrets were trained on both references (the final fe
 
 Error bars in Figures 1 and 5 show mean ± standard errors. Further details of all statistical tests described here are provided as tables (Supplementary files 1a-1k).
 
-Because humans produced higher percent correct scores overall than ferrets on the behavioural task, we normalized probe scores against the standard scores when directly comparing performance between species. The score of each species in each probe condition was represented as:Pnormai=(Pai−50)/(Sa−50),where Pnorm is the normalized probe score for species a on probe i, Pai is the percent correct score for species a on probe i, and Sa is the percent correct score of species a on the standard trials. If the performance of species a is unimpaired for a given probe stimulus i relative to the standard stimulus, then Pnormai will equal 1. If the listeners are completely unable to discriminate the F0 of the probe, then Pnormai=0.
+Because humans produced higher percent correct scores overall than ferrets on the behavioural task, we normalized probe scores against the standard scores when directly comparing performance between species. The score of each species in each probe condition was represented as:
+
+$$
+Pnorm_{ai}=(P_{ai}−50)/(S_{a}−50),
+$$
+
+where $Pnorm$ is the normalized probe score for species $a$ on probe $i$, $P_{ai}$ is the percent correct score for species $a$ on probe $i$, and $S_{a}$ is the percent correct score of species $a$ on the standard trials. If the performance of species $a$ is unimpaired for a given probe stimulus $i$ relative to the standard stimulus, then $Pnorm_{ai}$ will equal 1. If the listeners are completely unable to discriminate the F0 of the probe, then $Pnorm_{ai}=0$.
 
 The data and custom software developed in this manuscript are available on the Dryad archive.

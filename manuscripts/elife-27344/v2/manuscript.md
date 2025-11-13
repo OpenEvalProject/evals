@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.27344.001 Synonymous codon usage (SCU) varies widely among human genes. In particular, genes involved in different functional categories display a distinct codon usage, which was interpreted as evidence that SCU is adaptively constrained to optimize translation efficiency in distinct cellular states. We demonstrate here that SCU is not driven by constraints on tRNA abundance, but by large-scale variation in GC-content, caused by meiotic recombination, via the non-adaptive process of GC-biased gene conversion (gBGC). Expression in meiotic cells is associated with a strong decrease in recombination within genes. Differences in SCU among functional categories reflect differences in levels of meiotic transcription, which is linked to variation in recombination and therefore in gBGC. Overall, the gBGC model explains 70% of the variance in SCU among genes. We argue that the strong heterogeneity of SCU induced by gBGC in mammalian genomes precludes any optimization of the tRNA pool to the demand in codon usage.
+Synonymous codon usage (SCU) varies widely among human genes. In particular, genes involved in different functional categories display a distinct codon usage, which was interpreted as evidence that SCU is adaptively constrained to optimize translation efficiency in distinct cellular states. We demonstrate here that SCU is not driven by constraints on tRNA abundance, but by large-scale variation in GC-content, caused by meiotic recombination, via the non-adaptive process of GC-biased gene conversion (gBGC). Expression in meiotic cells is associated with a strong decrease in recombination within genes. Differences in SCU among functional categories reflect differences in levels of meiotic transcription, which is linked to variation in recombination and therefore in gBGC. Overall, the gBGC model explains 70% of the variance in SCU among genes. We argue that the strong heterogeneity of SCU induced by gBGC in mammalian genomes precludes any optimization of the tRNA pool to the demand in codon usage.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ To test this hypothesis, we analyzed SCU among different functional categories o
 
 ## Results
 
-## Variation in codon usage among functional categories results from differences in GC-content
+### Variation in codon usage among functional categories results from differences in GC-content
 
 To better understand the causes of the differences in codon usage between sets of genes involved in cellular proliferation and differentiation (reported by [Gingold et al., 2014]), we started by investigating the main factors that discriminate codon usage between functional categories in general. For this purpose, we grouped genes per functional category (687 biological processes, associated to more than 40 genes in the Gene Ontology database), and computed codon frequencies for each of these gene sets. We used the classification proposed by Gingold et al. (2014) to distinguish GO gene sets associated to ‘proliferation’ or ‘differentiation’. Variation in relative synonymous codon usage (RSCU; see Materials and methods) among GO gene sets was analyzed by Principal Component Analysis (PCA). The first principal component of this analysis segregates ‘proliferation’ (red dots) from ‘differentiation’ (blue dots) GO categories (Figure 1A). Thus, in agreement with Gingold et al. (2014), synonymous codon usage clearly varies between functional categories in general, and between proliferation and differentiation in particular. Previous studies had shown that synonymous codon usage is correlated to GC content at third position of codons – termed GC3 (Mouchiroud et al., 1988). And indeed, we observed that the average GC3 of each GO gene set is perfectly correlated to their coordinates on the first PCA axis (R2 = 0.99; Figure 1B). Hence, variation in SCU between functional categories is fully explained by variation in GC3.
 
@@ -44,7 +44,7 @@ To better understand the causes of the differences in codon usage between sets o
 
 On average, in our dataset, each gene is associated to nine GO biological processes. Many genes belong to more than one GO biological-process category, either because they have several functions (pleiotropy) or because these categories are nested from specific to broad functions. Hence, GO-terms are not independent. To avoid this redundancy, for the remainder of this study we switched from analyses at the level of GO gene sets to analyses at the level of individual genes (except when stated otherwise). Each gene was assigned with one of three categories based on their GO annotation: 1008 genes associated with ‘proliferation’, 2833 genes associated with ‘differentiation’, and 12,129 ‘other’ genes unrelated to these key words (see Materials and methods). Genes associated to ‘proliferation’ are on average less GC-rich than genes associated to ‘differentiation’ (mean GC3 0.53 and 0.61 in the two subsets respectively). The two distributions of GC3 differ significantly from each other (t-test, p-value<2.10−16), and their peaks coincide with each of the two modes observed for the rest of the genome (Figure 1C).
 
-## Variation in synonymous codon usage is not driven by translational selection
+### Variation in synonymous codon usage is not driven by translational selection
 
 We first investigated whether the observed variation in synonymous codon usage (i.e. variation in GC3) might be driven by translational selection. This model proposes that the relative usage of synonymous codons should co-vary with the abundance of their cognate tRNAs. A property of the tRNA gene repertoires allows us to test this hypothesis. The human genome contains 506 tRNA genes (decoding the 20 standard amino acids), corresponding to 48 different tRNA isoacceptors (Chan and Lowe, 2016). Among the 18 amino acids having two or more synonymous codons, 4 are decoded by a single tRNA isoacceptor (mono-isoacceptor amino acids: Phe, Asp, His and Cys), and the 14 other ones are decoded by several tRNA isoacceptors (multi-isoacceptors amino acids).
 
@@ -52,17 +52,53 @@ For multi-isoacceptors amino acids, the relative abundance of the different tRN
 
 To test whether variation in synonymous codon usage was driven by translational selection, we computed synonymous codon usage (GC3) in GO gene sets, separately for codons corresponding to mono-isoacceptor amino acids and for codons corresponding to multi-isoacceptor amino acids. We observed that the range of variation in GC3 is very similar for mono- and multi-isoacceptor amino acids. Importantly, the two parameters are strongly correlated (R2 = 0.90) (Figure 1D). This implies that GC3 variation is driven by a process that affects both mono-isoacceptor and multi-isoacceptor amino acids, and hence that this process is not related to variation in tRNA abundance. This observation holds true for all functional categories, including those associated to differentiation or proliferation (red and blue dots in Figure 1D).
 
-## Impact of large-scale variation in genomic GC-content on synonymous codon usage
+### Impact of large-scale variation in genomic GC-content on synonymous codon usage
 
 We observed that the GC3 of genes correlates with the GC-content of their flanking regions (Figure 2A, Figure 2—figure supplement 1, R2 = 0.48, p-value<2.10−16). This correlation is observed for all genes, including the subsets of genes associated with ‘proliferation’ and ‘differentiation’ (R2 = 0.48 and 0.46, all p-values<2.10−16). Thus, variation in SCU between genes is to a large extent attributable to the GC-content of the genomic region in which they are located (the isochore effect). However, when the regional GC-content is controlled for, there remains a difference in GC3 between gene categories (Figure 2A): for a given regional GC-content, the GC3 of proliferation-associated genes is lower than that of differentiation or other genes. This difference is highly significant (Figure 2A, Figure 2—figure supplement 1, p-value<2.10−16). This implies that the difference in synonymous codon usage between these gene categories does not result from a preferential location in different isochores.
 
-## Variation in synonymous codon usage among functional categories correlates with differences in intragenic recombination rate
+![Figure 2.](https://cdn.elifesciences.org/articles/27344/elife-27344-fig2-v2.jpg)
+
+**Figure 2.:** (A) Variation in gene GC3 according to the GC content of their flanking region (GC-flank) in each functional category. Genes were first binned into 10 classes of equal sample size according to their GC-flank, and then split into three sets according to their functional category: ‘proliferation’ (red), ‘differentiation’ (blue), and ‘other’ genes (grey). Boxplots display the distribution of GC3 for each functional category within each GC-flank bin. (B) Mean sex-averaged intragenic crossover rate (HapMap) in each functional category. Error bars represent the 95% confidence interval of the mean.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/27344/elife-27344-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Each dot corresponds to one gene. GC-flank was measured in 10 kb upstream and 10 kb downstream of the transcription unit. The curves show a generalized linear model (glm), predicting GC3 according to GC-flank and gene functional category. Glm is performed with a binomial logistic regression. The curves corresponding to ‘differentiation’ genes (blue), ‘proliferation’ genes (red) and other genes (grey), differ significantly (LRT of glm with and without gene function, p-values<2.10−16). Correlation coefficients were computed on logit transformed values, independently for ‘differentiation’ genes (N = 2,833, R2 = 0.46), ‘proliferation’ genes (N = 1,008, R2 = 0.48), other genes (N = 12,129, R2 = 0.49) and all genes (N = 15,970, R2 = 0.48). All p-values<2.10−16.
+
+### Variation in synonymous codon usage among functional categories correlates with differences in intragenic recombination rate
 
 Previous studies have demonstrated that the evolution of GC-content along chromosomes is driven by meiotic recombination, both on a broad (Mb) scale (Duret and Arndt, 2008; Munch et al., 2014) and on a fine (kb) scale (Clément and Arndt, 2013; Pratto et al., 2014). There is now strong evidence that this correlation between GC-content and recombination is caused by the process of GC-biased gene conversion (gBGC) which leads to increase the GC-content in regions of high recombination (Galtier et al., 2001; Galtier and Duret, 2007; Duret and Galtier, 2009; Munch et al., 2014; Pratto et al., 2014; Williams et al., 2015). Recombination rate varies along chromosomes, and notably tends to be lower within genes than in flanking regions (Myers et al., 2005; McVicker and Green, 2010). Interestingly, we observed that intragenic crossover rates (in cM/Mb) differ among the three sets of genes defined previously, and covary with their GC3: the average intragenic crossover rate is lower in ‘proliferation’ genes compared to other genes, whereas it is higher in ‘differentiation’ genes (Figure 2B; p-value of Kruskal-Wallis test <2.10−16 as for all pairwise Wilcoxon tests). These observations are therefore consistent with the hypothesis that differences in GC3 between ‘differentiation’ and ‘proliferation’ genes could also be driven by gBGC.
 
-## The difference in intragenic recombination rate between functional categories is explained by their expression level in meiosis
+### The difference in intragenic recombination rate between functional categories is explained by their expression level in meiosis
 
 McVicker and Green (2010) reported a negative correlation between intragenic recombination rate and meiotic gene expression level. We reevaluated this relationship using recently published high-resolution genetic maps (Bhérer et al., 2017), meiotic double-strand breaks (DSBs) maps (Pratto et al., 2014) and meiotic gene expression datasets (Guo et al., 2015; Lesch et al., 2016). These new data show that the relationship between crossover rate and meiotic gene expression is even stronger than initially reported: we observed that the crossover rate is 3.5 (males) to 5.4 (females) times lower in highly expressed genes (top 10%) compared to weakly expressed genes (bottom 10%) (Figure 3A, Figure 3—figure supplement 3A,B). This reduction in crossover rate is explained, at least in part, by a lower density of meiotic DSB hotspots within highly expressed genes (Figure 3—figure supplement 3C). In agreement with Bhérer et al. (2017), we observed an elevation of crossover rate around transcription start sites, specifically in females (Figure 4—figure supplement 1). However, this peak is observed only in genes with low or medium meiotic expression level (Figure 4). Within genes with high meiotic expression level, we observed a strong reduction of crossover rate in both sexes, affecting the entire transcription unit, from the TSS to the polyadenylation site (Figure 4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/27344/elife-27344-fig3-v2.jpg)
+
+**Figure 3.:** (A) Genes were classified according to their sex-averaged expression level in meiotic cells into 10 bins of equal sample size. The mean sex-averaged intragenic crossover rate (HapMap) was computed for each bin. Error bars represent the 95% confidence interval of the mean. Similar results were obtained when analyzing sex-specific crossover rates and expression levels or when using DSB maps to measure of recombination rate (Figure 3—figure supplement 3). (B) Variation in GC3 according to meiotic expression levels. Genes were first binned into 3 classes of equal sample size according to their sex-averaged expression level in meiotic cells (low:<3.07 FPKM; high:>22.68 FPKM: medium: the others), and then split into three sets according to their functional category: ‘proliferation’ (red), ‘differentiation’ (blue), and ‘other’ genes (grey). Boxplots display the distribution of GC3 for each functional category within each expression bin.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/27344/elife-27344-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** This differential is computed as the difference between the mean sex-averaged intragenic crossover rates (HapMap) of lowly expressed genes (10% most lowly expressed for bulk tissue data or non-expressed genes for single cells data) and the mean of the 10% most highly expressed genes. Dots are ordered by increasing differential values. Rounded dots correspond to data from individual embryonic cells (Guo et al., 2015) and triangles to adult tissues (Fagerberg et al., 2014). Dark blue dots: somatic adult tissues and somatic embryonic cells are in dark blue. Orange dots: male testis tissue and primordial germ cells (between 4 and 19 weeks). Red dot: female primordial germ cells (between 4 and 17 weeks). Green dot: inner cell mass ICM of the blastocysts.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/27344/elife-27344-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** For each functional category (‘proliferation’: red, ‘differentiation’: blue, and ‘other’ genes: grey), barplots display the distribution of genes among the three classes of sex-averaged meiotic expression level (as defined in Figure 3): low (L):<3.07 FPKM; high (H):>22.68 FPKM; medium (M).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/27344/elife-27344-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Autosomal genes (>5 kb) were classified into 10 bins of equal sample size according to their expression level in female (A) or male (B, C, D) meiotic cells. (A) Mean intragenic crossover rate in female meiosis. (B) Mean intragenic crossover rate in male meiosis. (C) Mean density in intragenic DSB hotspots in male meiosis. Error bars represent the 95% confidence interval of the mean.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/27344/elife-27344-fig4-v2.jpg)
+
+**Figure 4.:** Autosomal genes longer than 5 kb (N = 15,055) were classified into three bins of equal sample size according to their expression level in female (top panels) or male meiosis (bottom panels): low (green), medium (orange) and high (red) expression level. Sex-specific crossover rates were measured in 1 kb-long non-overlapping windows. Shaded area represent the 95% confidence interval of the mean.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/27344/elife-27344-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Autosomal genes longer than 5 kb (N = 15,055). Male (blue) and female (red) crossover rates were measured in 1 kb-long non-overlapping windows. Shaded areas represent the 95% confidence interval of the mean.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/27344/elife-27344-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Autosomal genes longer than 5 kb (N = 15,055) were classified into three bins of equal sample size according to their expression level in male meiosis: low (green), medium (orange) and high (red) expression level. DSB hotspot density (detected by DMC1 ChipSeq in males) were measured in 1 kb-long non-overlapping windows. Shaded areas represent the 95% confidence interval of the mean.
 
 We also analyzed other RNA-seq data sets (either from single cells or bulk samples), covering a broad range of tissues/cell types: somatic or germ cells at different stages of developing male and female embryo (20 different conditions; [Guo et al., 2015]) and differentiated adult tissues (26 somatic tissues, plus testis, which contains a fraction of germ cells; [Fagerberg et al., 2014]). In agreement with McVicker and Green (2010), we observed that the negative correlation between expression level and intragenic crossover rate is stronger in germ cells than in somatic samples (Figure 3—figure supplement 1), which indicates that recombination is associated with expression level, specifically in meiotic cells.
 
@@ -76,13 +112,72 @@ To check whether this cascade of effects fully recapitulates the difference in s
 
 **Figure 5.:** (A) Bulk adult tissues data (Fagerberg et al., 2014) and (B) early embryo single-cell data (Guo et al., 2015). These two subsets were obtained via very different protocols, which prevents direct cross-comparisons. Samples are sorted by increasing correlation coefficient (R2) between expression levels and GC3 (NB: all correlations are negative). Samples containing somatic cells are shown in blue; male germ cells in orange (testis or single cell) and female germ cells in red (PGC: primordial germ cells). The green point corresponds to cells from the inner cell mass (ICM) of the blastocysts, i.e. pluripotent cells from an early stage of development preceding the differentiation of germ cells.
 
-## GC-content of non-coding regions and meiotic expression explain 70% of the variation in synonymous codon usage of human genes
+### GC-content of non-coding regions and meiotic expression explain 70% of the variation in synonymous codon usage of human genes
 
 Meiotic expression is associated with a deficit of recombination rates all along the gene (Figure 4). Thus, the expression pattern is expected to affect gBGC intensity (and hence the GC-content) both in exons and in introns. Consistent with that prediction, the GC3 of human genes is strongly correlated to the GC-content of their introns (GCi, R2 = 62.7%, p-value<2.10−16). We build a linear model to quantify the relative contribution of the different parameters that covary with the GC3 of human genes (GCi, GC-flank, intragenic crossover rate, meiotic expression level, and ‘proliferation’ or ‘differentiation’ functional category). The analysis of variance demonstrates that GCi is by far the best predictor of GC3, but GC-flank, intragenic crossover rate and gene expression level during meiosis, also significantly improve the model (by 1%, 4% and 1.4%, respectively, Table 1, ANOVA, p-values<2.10−16). The integration of a categorical variable ‘differentiation’ versus ‘proliferation’ in the model significantly improves the model but its quantitative influence is minor (0.1%, p-value<2.10−16, Table 1). Altogether, 68.2% of the variance in GC3 among human genes can be explained by the first four parameters (GCi, GC-flank, intragenic crossover rate, meiotic expression). Adding interaction terms to the linear model gives very similar results (70.4% variance explained, same levels of significance for all variables).
 
+**Table 1.**
+ Analysis of the variance of GC3 among individual genes.Variables included in the linear model are: GC-content of introns (GCi), GC-content of flanking regions (GC-flank), HapMap sex-averaged intragenic crossover rate (log scale), sex-averaged meiotic gene expression level (log scale) and functional category (‘differentiation’, ‘proliferation’ and ‘other’). Pairwise correlations (pairwise R2) were computed between GC3 and each of the other variables. Correlations of the model (model R2) were computed by adding variables sequentially.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GC3 predictors</th>
+      <th>Pairwise R2</th>
+      <th>p-value</th>
+      <th>Model R2</th>
+      <th>F statistic</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GCi</td>
+      <td>62.7%</td>
+      <td>&lt;2.10−16</td>
+      <td>62.7%</td>
+      <td>30232.4</td>
+      <td>&lt;2.10−16</td>
+    </tr>
+    <tr>
+      <td>GC-flank</td>
+      <td>48.1%</td>
+      <td>&lt;2.10−16</td>
+      <td>62.9%</td>
+      <td>126.8</td>
+      <td>&lt;2.10−16</td>
+    </tr>
+    <tr>
+      <td>Intragenic crossover rate</td>
+      <td>12.8%</td>
+      <td>&lt;2.10−16</td>
+      <td>66.8%</td>
+      <td>1453.3</td>
+      <td>&lt;2.10−16</td>
+    </tr>
+    <tr>
+      <td>Expression level in meiosis</td>
+      <td>8.3%</td>
+      <td>&lt;2.10−16</td>
+      <td>68.2%</td>
+      <td>875.7</td>
+      <td>&lt;2.10−16</td>
+    </tr>
+    <tr>
+      <td>Functional category</td>
+      <td>1%</td>
+      <td>&lt;2.10−16</td>
+      <td>68.3%</td>
+      <td>30.43</td>
+      <td>&lt;2.10−16</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Discussion
 
-## Biased gene conversion drives codon usage in humans
+### Biased gene conversion drives codon usage in humans
 
 In the human genome, gene sets that belong to different functional categories differ by their synonymous codon usage. Initially this pattern has been interpreted as evidence that the translation program was under tight control, notably to ensure a precise regulation of genes involved in cellular differentiation or proliferation (Gingold et al., 2014). According to this model, selection should optimize the match between the SCU of genes and tRNA abundances in the cells where they are expressed. However, the comparison of synonymous codon usage for amino acids with single or multiple tRNA isoacceptors (Figure 1D) shows that the difference in SCU between functional categories does not result from constraints linked to tRNA abundance. In fact, variation in synonymous codon usage among functional categories is explained by one single dominant factor: the GC-content at third codon position (Figure 1B). The GC3 of human genes is strongly correlated to the GC-content of their introns and flanking regions (Table 1). This implies that variation in SCU results from a process that affects both coding and non-coding regions (including non-transcribed intergenic regions), and hence that it is not related to the process of translation. In fact, this observation invalidates all the models that assume that SCU is driven by a selective pressure acting on RNAs (not only translational selection, but also selection on mRNA processing, structure or stability).
 
@@ -90,54 +185,66 @@ Many lines of evidence indicate that large-scale variation in GC-content along c
 
 Besides these regional fluctuations, recombination rates also vary at finer scale. In particular, recombination rates tend to be reduced within human genes compared to their flanking regions (Myers et al., 2005), and this decrease depends on the level of expression of genes during meiosis (McVicker and Green, 2010) – see also Figure 3A and Figure 4. Hence, the gBGC model predicts that the GC3 of a gene should depend not only of the long-term recombination rate of the region where it is located, but also on its specific pattern of expression. And indeed, we observed that the difference in synonymous codon usage between ‘proliferation’ and ‘differentiation’ genes is not due to their preferential location in different classes of isochores, but to the fact that ‘proliferation’ genes tend to be expressed a high level in meiotic cells, and therefore to have a reduced intragenic recombination rate (Figures 2 and 3).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/27344/elife-27344-fig6-v2.jpg)
+
+**Figure 6.:** Average values of these parameters were computed for each GO gene set. We then measured correlations between these parameters: (A) Mean GC3 vs. mean sex-averaged intragenic crossover rate (HapMap). (B) Mean intragenic crossover rate vs. mean expression level in meiotic cells. (C) Mean GC3 vs. mean expression level in meiotic cells. (D) Mean intronic GC-content (GCi) vs. mean intragenic crossover rate. GO gene sets associated to ‘proliferation’ (red) or ‘differentiation’ (blue) are displayed as in Figure 1. Similar results were obtained when analyzing separately expression levels in female or male meiosis (Figure 6—figure supplement 1).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/27344/elife-27344-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) Same as Figure 6B and C, but with expression level measured by single-cell analysis of female primordial germ cells at 17 weeks (Guo et al., 2015). (C, D) Same as 6B and C, but with expression level measured in male meiotic cells (Lesch et al., 2016). Expression levels are expressed in log(FPKM).
+
 To test whether this observation holds true for other functional categories, we measured the average GC3, intragenic crossover rate and meiotic expression level of each GO gene set. As predicted by the gBGC model, we observed a strong correlation between GC3 and the average intragenic crossover rate of GO gene sets (R2 = 0.51, Figure 6A). The variance in intragenic crossover rate, in turn, is very well explained by differences in meiotic expression levels among functional classes (R2 = 0.46, Figure 6B). As mentioned previously, these correlations measured on gene concatenates should be interpreted with caution because the different points are not independent (a same gene can belong to different GO categories). However, this analysis clearly shows that a large fraction of the variance in SCU observed among GO gene sets can be explained by variation in gBGC intensity, caused by variation in intragenic crossover rates, linked to differences expression patterns (Figure 6C). In agreement with the gBGC model, the intragenic crossover rate correlates with the base composition of the entire gene, including introns (Figure 6D). This observation clearly invalidates the hypothesis that the observed differences in SCU among functional categories might be driven by selection on codon usage.
 
 In summary, the SCU of individual genes depends primarily on the isochore in which they are located (i.e. large-scale long-term variation in recombination rate), and secondarily on their meiotic expression level (which affects locally the intragenic recombination rate) (Table 1). In gene set analyses, the variance in SCU explained by expression (Figure 6) appears much stronger than in individual genes analyses (Table 1). This is due to the fact that in gene set analyses, SCU is averaged over a large number of genes, located in different isochores, which leads to decrease the isochore effect among functional categories (and hence mechanically increase the fraction of the variance explained by expression). Overall, the different variables linked to the intensity of gBGC explain 70% of the variance in GC3 of individual genes (Table 1). In other words, the gBGC model can account for most of the variation in synonymous codon usage in the human genome.
 
 It should be noted that co-variation between SCU and expression is generally considered as a typical signature of translational selection and is often used to predict optimal codons (Duret, 2002; Plotkin et al., 2004; dos Reis and Wernisch, 2009). However, as shown here, such correlations can also emerge as a result of a non-adaptive process. Given that gBGC is widespread in eukaryotes (Mancera et al., 2008; Capra and Pollard, 2011; Pessia et al., 2012; de Boer et al., 2015; Williams et al., 2015; Smeds et al., 2016), it appears essential to take this process into account to interpret variation in synonymous codon usage (and more generally in base composition) among genes.
 
-## Relationship between meiotic expression and recombination
+### Relationship between meiotic expression and recombination
 
 The reason why intragenic recombination rate correlates negatively with meiotic expression level is not known. In human and mice, the location of recombination hotspots is determined by PRDM9, a Zn-Finger DNA-binding protein with histone H3 lysine four trimethylation (H3K4me3) activity. PRDM9 is expressed during early meiosis and marks sites where DSBs are afterwards introduced by Spo11 (for review, see Baudat et al., 2013). These DSBs are then repaired by homologous recombination, forming either crossovers, the reciprocal exchanges of genetic material between parental chromosomes, or noncrossovers. Knockout experiments in mice have demonstrated that PRDM9 targets recombination away from active promoters (Brick et al., 2012). The analyses of male DSB maps suggests that PRDM9 plays the same role in humans: we observed a deficit of DSB hotpots around the transcription start site (TSS), specifically within genes that are highly expressed in meiotic cells (Figure 4—figure supplement 2). The decrease in recombination rate within highly expressed genes is however not restricted to the promoter region: in both sexes, there is a strong deficit of crossovers within the entire transcription unit, from the TSS to the polyadenylation site (Figure 4). In species that lack Prdm9 (such as dogs, birds, arabidopsis or yeast), recombination hotspots are strongly enriched in active promoters (Auton et al., 2013; Choi et al., 2013; Singhal et al., 2015; Lam and Keeney, 2015), which indicates that there is no mechanistic incompatibility between recombination and transcription activity in meiotic cells. However there is evidence that in highly expressed genes, H3K36me3 marks trigger DNA methylation in the gene body, and thereby prevent spurious transcription initiation (Neri et al., 2017). It is therefore possible that the peculiar chromatin state of highly expressed genes also interferes with the binding of PRDM9 (or with its histone modification activity), and thereby decrease the rate of DSB formation within the transcription unit. Consistent with this hypothesis, we observed a deficit in male DSB hotspot density along the transcription unit of highly expressed genes (Figure 4—figure supplement 2). This difference in DSB rates is, however, much less pronounced than the difference in male crossover rates (Figure 4; Figure 3—figure supplement 3). Furthermore, the profile of DSB hotspot density in highly expressed genes differs from that of crossover rates, with a strong deficit around the TSS and an excess around the polyadenylation site (Figure 4—figure supplement 2), whereas the deficit in male crossovers is more uniform along the transcription unit (Figure 4). This suggests that the differences in crossover profiles observed between highly and weakly expressed genes might also reflect differences in the way recombination events are resolved (crossover vs. non-crossovers).
 
-## gBGC precludes selection on translation efficiency in humans
+### gBGC precludes selection on translation efficiency in humans
 
 There is a clear evidence that the usage of synonymous codons is under selective pressure in some metazoan species (such as drosophila or nematode), which implies that it has a significant impact on the fitness of organisms – for review, see (Duret, 2002; Chamary et al., 2006; Plotkin and Kudla, 2011). It is a priori expected that codon usage should also affect translation efficiency (speed and accuracy) in mammals. However, our results show that selection on codon usage is not strong enough to counteract the impact of gBGC. In principle, this does not exclude the hypothesis that the human genome might be subject to selection for translational efficiency: even if the GC-content of genes is driven by non-adaptive processes, there might be a selective pressure on the expression of tRNA genes to match the demand in synonymous codon usage. However, recent analyses of tRNA isoacceptors pools found no evidence for such variation (Schmitt et al., 2014; Rudolph et al., 2016). Moreover, we argue here that the peculiar base composition landscape induced by gBGC in the genomes of mammals and birds makes it impossible to match the tRNA pool to the demand in codon usage. Indeed, large-scale variation in recombination rates along the genome causes very strong variation in GC3 among genes, and this, regardless of their functional category. In particular, ‘proliferative’ genes, which are involved in basic cellular process, and are expressed at high levels in most tissues, show a very strong heterogeneity in GC3 (from 20% to almost 100%; Figure 1C). This implies that in any given cell, the set of highly expressed genes will show a very heterogeneous usage of synonymous codons. Hence, whatever the pool of tRNA available in that cell, there will be a large fraction of genes with a codon usage that does not match tRNA abundance. In other words, the heterogeneity of synonymous codon usage in mammalian genomes reflects a non-optimal situation, caused the gBGC process, in which it is not possible to adapt the tRNA pool to the demand in codon usage of the transcriptome of any cell type.
 
 ## Materials and methods
 
-## Human protein coding genes
+### Human protein coding genes
 
 For each of the human protein coding genes in the Ensembl (RRID: SCR_002344) release 83 (Yates et al., 2016); assembly GRCh38.p5), we identified a canonical transcript as defined in http://www.ensembl.org/Help/Glossary?id=346 (PERL script available in supplementary material). Mitochondrial genes were excluded from this analysis. Sequences of the remaining 19,766 canonical transcripts together with exons coordinates, were downloaded through the BioMart query interface (Smedley et al., 2015)(RRID: SCR_010714).
 
-## Recombination rates
+### Recombination rates
 
 Sex-specific crossover rates were measured using pedigree-based genetic maps (Bhérer et al., 2017). For sex-averaged crossover rates, we used the HapMap genetic map (Frazer et al., 2007)(RRID: SCR_002846), which is based on the analysis of linkage disequilibrium in human populations, and provides a higher resolution than pedigree-based genetic maps.
 
 The density in DSB hotspots along genes was measured using the map of DSB hotspots (targeted by Prdm9 alleles A, B or C) identified by DMC1-ChipSeq experiments in male meiotic cells (Pratto et al., 2014).
 
-## Definition of functional categories
+### Definition of functional categories
 
-The GO Term Accessions and GO domain were retrieved from Ensembl version 83 for the 19,766 genes. We retrieved biological process GO terms, counted the number of genes associated to each GO term and kept the ones that include at least 40 genes, except GO:0005515 that is too general to be informative (‘protein binding’ GO set, which includes 14,542 genes). This led to a final list of 687 GO gene sets. For each gene set, we concatenated coding sequences to compute the total codon usage, the relative synonymous codon usage (RSCU) and GC-content, and we also computed the average intragenic crossover rate and average expression levels (see below). The RSCU of a given codon corresponds to its frequency, normalized by its expected frequency if all corresponding synonymous codons were equally used (Sharp et al., 1986). For a given amino acid (x), encoded by nx synonymous codons, the RSCU of its codon y is given by:RSCUxy=Cxy/(Ax/nx)
+The GO Term Accessions and GO domain were retrieved from Ensembl version 83 for the 19,766 genes. We retrieved biological process GO terms, counted the number of genes associated to each GO term and kept the ones that include at least 40 genes, except GO:0005515 that is too general to be informative (‘protein binding’ GO set, which includes 14,542 genes). This led to a final list of 687 GO gene sets. For each gene set, we concatenated coding sequences to compute the total codon usage, the relative synonymous codon usage (RSCU) and GC-content, and we also computed the average intragenic crossover rate and average expression levels (see below). The RSCU of a given codon corresponds to its frequency, normalized by its expected frequency if all corresponding synonymous codons were equally used (Sharp et al., 1986). For a given amino acid (x), encoded by nx synonymous codons, the RSCU of its codon y is given by:
 
-where Cxy is the number y for amino acid x,Ax is the total number of occurrence of codons for the amino acid x.
+$$
+RSCU_{xy}=C_{xy}/(A_{x}/n_{x})
+$$
+
+where $C_{xy}$ is the number $y$ for amino acid $x,A_{x}$ is the total number of occurrence of codons for the amino acid x.
 
 Following the classification used by Gingold et al. (2014), we further defined two broad functional categories: ‘proliferation’ and ‘differentiation’. GO terms containing the following keywords were associated to ‘proliferation’: ‘Chromatin modification’, ‘chromatin remodeling’, ‘mitotic cell cycle’, ‘mRNA metabolic process’, ‘negative regulation of cell cycle’, ‘nucleosome assembly’, ‘translation’. GO terms containing the following keywords were associated to ‘differentiation’: ‘Development’, ‘differentiation’, ‘cell adhesion’, ‘pattern specification’, ‘multicellular organism growth’, ‘angiogenesis’. Please note that GO terms corresponding to negative effects were excluded where appropriate (e.g. ‘negative regulation of proliferation’ was not included in the ‘proliferation’ category). Complete lists of GO terms are available in the supplementary material.
 
-## Analyses of individual genes
+### Analyses of individual genes
 
 We also measured the codon usage of individual genes, to analyze covariations with their GC-content, expression levels and sex-averaged intragenic crossover rate (HapMap). Owing to the low SNP density in human populations, the resolution of recombination maps is limited to about 5 kb (Myers et al., 2005). Because we investigate the relationship between GC3 and intragenic crossover rate, we selected genes that are long enough to measure recombination, that is at least 5 kb long (N = 16,223 genes).
 
 We defined three non-overlapping classes of genes according to their GO category: genes associated to at least one of the ‘proliferation’ GO terms (N = 1,008), genes associated to ‘differentiation’ GO terms (N = 2,833) and other genes (N = 12,129). A group of 253 genes that were associated to both ‘proliferation’ and ‘differentiation’ GO terms were discarded from further analyses. The final dataset used in our analyses included 15,970 genes. In this dataset, there were 15,848 genes that contain at least one intron and for which we computed the GC content of intronic regions. The analyses of sex-specific crossover rates and of DSB hotspot densities (Figure 4; Figure 4—figure supplement 2) were based on 15,055 autosomal genes.
 
-## Expression data
+### Expression data
 
 Gene expression levels were collected from three publicly available human RNA-seq experiment datasets. The first one includes 27 differentiated adult tissues (Fagerberg et al., 2014; Kryuchkova-Mostacci and Robinson-Rechavi, 2015); EBI accession number E-MTAB-1733). We downloaded normalized expression levels, already averaged across replicates, from (Fagerberg et al., 2014; Kryuchkova-Mostacci and Robinson-Rechavi, 2015) (see supplementary information). The second one is based on single-cell RNA-seq analysis, and includes 20 samples, corresponding to inner cell mass (ICM) of the blastocysts, and to primordial germ cells (PGC) and somatic cells, from male and female embryos at different development stages (4, 7 or 8, 10, 11 and 17 or 19 weeks, (Guo et al., 2015) GEO accession number GSE63818). We downloaded normalized expression levels from their dataset of pool-split PGCs (for more details see supplementary information). Female 17 weeks PGCs are entered in meiosis (Guo et al., 2015). This sample was therefore taken as representative of the transcriptome of meiotic cells in female. The third dataset corresponds to human male germ cells at pachytene spermatocytes (i.e. cells entering meiosis) and at round spermatids stages (post meiotic stage) ([Lesch et al., 2016]; GEO accession number GSE68507, human RNA expression datasets GSM1673959, GSM1673963, GSM1673967, GSM1673971, GSM1673975 and GSM1673978). Guo and Lesch datasets include several replicates for each sample. We therefore computed the average expression levels over all replicates for each sample. The sex-averaged meiotic expression level was estimated by computing the mean of expression levels in female 17 weeks PGCs (Guo et al., 2015) and male spermatocytes or spermatids (Lesch et al., 2016). The correspondence between gene expression datasets and codon usage tables was based on Ensembl gene identifiers (Fagerberg and Lesch datasets), or on gene names (Guo dataset). In total, our analyses of expression levels were based on 15,305 genes (665 genes were absent from the Guo dataset).
 
-## Statistical analysis
+### Statistical analysis
 
 Unless stated otherwise, reported R2 values correspond to Pearson correlation tests. R version 3.2.2 (Core Team R, 2015) was used with Base package for statistical tests and graphics, plus ade4 library (Dray and Dufour, 2007) for PCA analysis. The data and R scripts, which permit to reproduce the figures and tests presented here, are provided in the supplementary material.
 
-## Supplementary information
+### Supplementary information
 
 Supplementary materials with R scripts and supplementary methods are available at: http://doi.org/10.5281/zenodo.835063 (Pouyet et al., 2017).

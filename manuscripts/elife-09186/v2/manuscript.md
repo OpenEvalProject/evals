@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.09186.001 As of November 2015, the Ebola virus disease (EVD) epidemic that began in West Africa in late 2013 is waning. The human toll includes more than 28,000 EVD cases and 11,000 deaths in Guinea, Liberia, and Sierra Leone, the most heavily-affected countries. We reviewed 66 mathematical modeling studies of the EVD epidemic published in the peer-reviewed literature to assess the key uncertainties models addressed, data used for modeling, public sharing of data and results, and model performance. Based on the review, we suggest steps to improve the use of modeling in future public health emergencies. DOI: http://dx.doi.org/10.7554/eLife.09186.001
+As of November 2015, the Ebola virus disease (EVD) epidemic that began in West Africa in late 2013 is waning. The human toll includes more than 28,000 EVD cases and 11,000 deaths in Guinea, Liberia, and Sierra Leone, the most heavily-affected countries. We reviewed 66 mathematical modeling studies of the EVD epidemic published in the peer-reviewed literature to assess the key uncertainties models addressed, data used for modeling, public sharing of data and results, and model performance. Based on the review, we suggest steps to improve the use of modeling in future public health emergencies.
 
 ## Introduction
 
@@ -28,69 +28,885 @@ We draw on this vigorous response of the epidemiological modeling community to t
 
 ## Results
 
-## Overview of modeling applications
+### Overview of modeling applications
 
-We identified 66 publications meeting inclusion criteria (
+We identified 66 publications meeting inclusion criteria (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/09186/elife-09186-fig1-v2.jpg)
 
-**Figure 1.:** DOI: http://dx.doi.org/10.7554/eLife.09186.003
+Models addressed 6 key uncertainties about the EVD epidemic: transmissibility, typically represented by the reproduction number (R, the average number of people each infected person infects; assessed in 41 publications); effectiveness of various interventions that had been or might be implemented (in 29 publications); epidemic forecast (in 29 publications); regional or international spreading patterns or risk (in 15 publications); phylogenetics of EVD viruses (in 9 publications); and feasibility of conducting vaccine trials in West Africa (in 2 publications) (Table 1, Supplementary file 1).
 
-Models addressed 6 key uncertainties about the EVD epidemic: transmissibility, typically represented by the reproduction number (R, the average number of people each infected person infects; assessed in 41 publications); effectiveness of various interventions that had been or might be implemented (in 29 publications); epidemic forecast (in 29 publications); regional or international spreading patterns or risk (in 15 publications); phylogenetics of EVD viruses (in 9 publications); and feasibility of conducting vaccine trials in West Africa (in 2 publications) (Table 1, Supplementary file 1).10.7554/eLife.09186.004Table 1.Overview of modeling publications on the 2013-present EVD epidemic.DOI: http://dx.doi.org/10.7554/eLife.09186.004Ref.Date of latest EVD dataDate publishedEVD data was pre-existing and publicUncertainties addressedRInterventionsForecastSpreadPhylogeneticsClinical trialsBaize et al., 2014 3/20/144/16/14No*Dudas and Rambaut, 2014 3/20/145/2/14Yes*Alizon et al., 2014 6/18/1412/13/14Yes**Gire et al., 2014 6/18/148/28/14No**Stadler et al., 2014 6/18/1410/6/14Yes*Volz and Pond, 2014 6/18/1410/24/14Yes*Pandey et al., 2014 8/7/1410/30/14Yes***Gomes et al., 2014 8/9/149/2/14Yes***Valdez et al., 2015 8/15/147/20/15Yes****Merler et al., 2015 8/16/141/7/15Yes****Rainisch et al., 2015 8/16/142/18/15Yes*Althaus, 2014 8/20/149/2/14Yes*Fisman et al., 2014 8/22/149/8/14Yes**Nishiura and Chowell, 2014 8/26/149/11/14Yes**Poletto et al., 2014 8/27/1410/23/14Yes**Meltzer et al., 2014 8/28/149/26/14Yes***Agusto et al., 2015 8/29/144/23/15Yes**Althaus, 2015 8/31/144/19/15Yes*Scarpino et al., 2014 8/31/1412/15/14Yes*Weitz and Dushoff, 2015 8/31/143/4/15Yes**Drake et al., 2015 9/2/1410/30/14Yes***Towers et al., 2014 9/8/149/18/14Yes**Bellan et al., 2014 9/14/1410/14/14Yes*Chowell et al., 2015 9/14/141/19/15Yes*Cooper et al., 2015 9/14/144/14/15Yes*Read et al., 2015 9/14/1411/12/14Yes**WHO Ebola Response Team, 2014 9/14/149/23/14No***Faye et al., 2015 9/16/141/23/15No**Bogoch et al., 2015 9/21/1410/21/14Yes**Yamin et al., 2014 9/22/1410/28/14No**Lewnard et al., 2014 9/23/1410/24/14Yes***Webb et al., 2015 9/23/141/30/15Yes***Shaman et al., 2014 9/28/1410/27/14Yes**Chowell et al., 2014 10/1/1411/20/14Yes**Fasina et al., 2014 10/1/1410/9/14Yes*Khan et al., 2015 10/1/142/24/15Yes*Rivers et al., 2014 10/5/1410/16/14Yes***Xia et al., 2015 10/7/149/8/15Yes**Majumder et al., 2014 10/11/144/28/15Yes**Kiskowski, 2014 10/15/1411/13/14Yes**Fisman and Tuite, 2014 10/18/1411/21/14Yes***Althaus et al., 2015 10/20/141/15/15Yes***Simon-Loriere et al., 2015 10/25/146/24/15No*Rainisch et al., 2015 10/31/146/16/15Yes*Fast et al., 2015 11/1/145/15/15Yes*Kucharski et al., 2015 11/1/142/18/15Yes***Tong et al., 2015 11/11/145/13/15No**Hoenen et al., 2015 11/21/143/26/15No*Cope et al., 2014 12/3/1412/10/14Yes**White et al., 2014 12/3/141/30/15Yes***WHO Ebola Response Team, 2015 12/14/1412/24/14No**Chowell et al., 2014 12/17/141/21/15Yes*Siettos et al., 2014 12/21/143/9/15Yes**Park et al., 2015 12/26/146/18/15No*Nadhem and Nejib, 2015 12/30/146/14/15Yes*Camacho et al., 2015 1/18/152/10/15Yes**Carroll et al., 2015 1/31/156/17/15No**Bellan et al., 2015 2/9/154/15/15Yes**Barbarossa et al., 2015 2/13/157/21/15Yes***Kugelman et al., 2015 2/14/156/12/15No*Cleaton et al., 2015 2/28/159/3/15Yes*Wang and Zhong, 2015 3/18/153/24/15Yes*Toth et al., 2015 3/31/157/14/15Yes**Dong et al., 2015 4/3/159/5/15Yes**Browne et al., 2015 4/12/155/14/15Yes**Zinszer et al., 2015 5/13/159/1/15Yes*
+**Table 1.**
+ Overview of modeling publications on the 2013-present EVD epidemic.
 
-The number of publications with models to estimate
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Ref.</th>
+      <th rowspan="2">Date of latest EVD data</th>
+      <th rowspan="2">Date published</th>
+      <th rowspan="2">EVD data was pre-existing and public</th>
+      <th colspan="6">Uncertainties addressed</th>
+    </tr>
+    <tr>
+      <th>R</th>
+      <th>Interventions</th>
+      <th>Forecast</th>
+      <th>Spread</th>
+      <th>Phylogenetics</th>
+      <th>Clinical trials</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baize et al., 2014</td>
+      <td>3/20/14</td>
+      <td>4/16/14</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dudas and Rambaut, 2014</td>
+      <td>3/20/14</td>
+      <td>5/2/14</td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Alizon et al., 2014</td>
+      <td>6/18/14</td>
+      <td>12/13/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gire et al., 2014</td>
+      <td>6/18/14</td>
+      <td>8/28/14</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stadler et al., 2014</td>
+      <td>6/18/14</td>
+      <td>10/6/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Volz and Pond, 2014</td>
+      <td>6/18/14</td>
+      <td>10/24/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pandey et al., 2014</td>
+      <td>8/7/14</td>
+      <td>10/30/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gomes et al., 2014</td>
+      <td>8/9/14</td>
+      <td>9/2/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Valdez et al., 2015</td>
+      <td>8/15/14</td>
+      <td>7/20/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Merler et al., 2015</td>
+      <td>8/16/14</td>
+      <td>1/7/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rainisch et al., 2015</td>
+      <td>8/16/14</td>
+      <td>2/18/15</td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Althaus, 2014</td>
+      <td>8/20/14</td>
+      <td>9/2/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fisman et al., 2014</td>
+      <td>8/22/14</td>
+      <td>9/8/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nishiura and Chowell, 2014</td>
+      <td>8/26/14</td>
+      <td>9/11/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Poletto et al., 2014</td>
+      <td>8/27/14</td>
+      <td>10/23/14</td>
+      <td>Yes</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Meltzer et al., 2014</td>
+      <td>8/28/14</td>
+      <td>9/26/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Agusto et al., 2015</td>
+      <td>8/29/14</td>
+      <td>4/23/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Althaus, 2015</td>
+      <td>8/31/14</td>
+      <td>4/19/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Scarpino et al., 2014</td>
+      <td>8/31/14</td>
+      <td>12/15/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Weitz and Dushoff, 2015</td>
+      <td>8/31/14</td>
+      <td>3/4/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Drake et al., 2015</td>
+      <td>9/2/14</td>
+      <td>10/30/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Towers et al., 2014</td>
+      <td>9/8/14</td>
+      <td>9/18/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bellan et al., 2014</td>
+      <td>9/14/14</td>
+      <td>10/14/14</td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chowell et al., 2015</td>
+      <td>9/14/14</td>
+      <td>1/19/15</td>
+      <td>Yes</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cooper et al., 2015</td>
+      <td>9/14/14</td>
+      <td>4/14/15</td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Read et al., 2015</td>
+      <td>9/14/14</td>
+      <td>11/12/14</td>
+      <td>Yes</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WHO Ebola Response Team, 2014</td>
+      <td>9/14/14</td>
+      <td>9/23/14</td>
+      <td>No</td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Faye et al., 2015</td>
+      <td>9/16/14</td>
+      <td>1/23/15</td>
+      <td>No</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bogoch et al., 2015</td>
+      <td>9/21/14</td>
+      <td>10/21/14</td>
+      <td>Yes</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yamin et al., 2014</td>
+      <td>9/22/14</td>
+      <td>10/28/14</td>
+      <td>No</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lewnard et al., 2014</td>
+      <td>9/23/14</td>
+      <td>10/24/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Webb et al., 2015</td>
+      <td>9/23/14</td>
+      <td>1/30/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Shaman et al., 2014</td>
+      <td>9/28/14</td>
+      <td>10/27/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chowell et al., 2014</td>
+      <td>10/1/14</td>
+      <td>11/20/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fasina et al., 2014</td>
+      <td>10/1/14</td>
+      <td>10/9/14</td>
+      <td>Yes</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Khan et al., 2015</td>
+      <td>10/1/14</td>
+      <td>2/24/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rivers et al., 2014</td>
+      <td>10/5/14</td>
+      <td>10/16/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Xia et al., 2015</td>
+      <td>10/7/14</td>
+      <td>9/8/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Majumder et al., 2014</td>
+      <td>10/11/14</td>
+      <td>4/28/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kiskowski, 2014</td>
+      <td>10/15/14</td>
+      <td>11/13/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fisman and Tuite, 2014</td>
+      <td>10/18/14</td>
+      <td>11/21/14</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Althaus et al., 2015</td>
+      <td>10/20/14</td>
+      <td>1/15/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Simon-Loriere et al., 2015</td>
+      <td>10/25/14</td>
+      <td>6/24/15</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rainisch et al., 2015</td>
+      <td>10/31/14</td>
+      <td>6/16/15</td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fast et al., 2015</td>
+      <td>11/1/14</td>
+      <td>5/15/15</td>
+      <td>Yes</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kucharski et al., 2015</td>
+      <td>11/1/14</td>
+      <td>2/18/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tong et al., 2015</td>
+      <td>11/11/14</td>
+      <td>5/13/15</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hoenen et al., 2015</td>
+      <td>11/21/14</td>
+      <td>3/26/15</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cope et al., 2014</td>
+      <td>12/3/14</td>
+      <td>12/10/14</td>
+      <td>Yes</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>White et al., 2014</td>
+      <td>12/3/14</td>
+      <td>1/30/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WHO Ebola Response Team, 2015</td>
+      <td>12/14/14</td>
+      <td>12/24/14</td>
+      <td>No</td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chowell et al., 2014</td>
+      <td>12/17/14</td>
+      <td>1/21/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Siettos et al., 2014</td>
+      <td>12/21/14</td>
+      <td>3/9/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Park et al., 2015</td>
+      <td>12/26/14</td>
+      <td>6/18/15</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadhem and Nejib, 2015</td>
+      <td>12/30/14</td>
+      <td>6/14/15</td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Camacho et al., 2015</td>
+      <td>1/18/15</td>
+      <td>2/10/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Carroll et al., 2015</td>
+      <td>1/31/15</td>
+      <td>6/17/15</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bellan et al., 2015</td>
+      <td>2/9/15</td>
+      <td>4/15/15</td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Barbarossa et al., 2015</td>
+      <td>2/13/15</td>
+      <td>7/21/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kugelman et al., 2015</td>
+      <td>2/14/15</td>
+      <td>6/12/15</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cleaton et al., 2015</td>
+      <td>2/28/15</td>
+      <td>9/3/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wang and Zhong, 2015</td>
+      <td>3/18/15</td>
+      <td>3/24/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Toth et al., 2015</td>
+      <td>3/31/15</td>
+      <td>7/14/15</td>
+      <td>Yes</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dong et al., 2015</td>
+      <td>4/3/15</td>
+      <td>9/5/15</td>
+      <td>Yes</td>
+      <td></td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Browne et al., 2015</td>
+      <td>4/12/15</td>
+      <td>5/14/15</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Zinszer et al., 2015</td>
+      <td>5/13/15</td>
+      <td>9/1/15</td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>*</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+The number of publications with models to estimate R increased rapidly early in the epidemic, along with those including intervention, forecasting, and regional and international spread models; the growth rate of publications with phylogenetic modeling applications and clinical trial models increased later in the epidemic (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/09186/elife-09186-fig2-v2.jpg)
 
-**Figure 2.:** The figure includes 125 modeling applications across the 66 publications.DOI: http://dx.doi.org/10.7554/eLife.09186.005
+**Figure 2.:** The figure includes 125 modeling applications across the 66 publications.
 
 Of the 125 models reported across the studies, 74% included mechanistic assumptions about disease transmission (e.g., compartmental, agent-based, or phylogenetic models), while 26% were purely phenomenological (Supplementary file 2).
 
-## Data sources
+### Data sources
 
 For 54 (82%) of the 66 publications, the only EVD data used was pre-existing and publicly-available (Table 1). Typically, these were aggregate case data posted online by the WHO or affected countries, or Ebola virus genetic data released previously during the epidemic. Twelve studies used original EVD epidemiological data (Baize et al., 2014; WHO Ebola Response Team, 2014; 2015; Faye et al., 2015; Yamin et al., 2014) or genomic data (Baize et al., 2014; Gire et al., 2014; Simon-Loriere et al., 2015; Tong et al., 2015; Hoenen et al., 2015; Park et al., 2015; Carroll et al., 2015; Kugelman et al., 2015).
 
 Examples of additional data used for some modeling applications include official reports of social mobilization efforts (Fast et al., 2015), media reports of case clusters (Cleaton et al., 2015), media reports of events that may curtail or aggravate transmission (Majumder et al., 2014), and international air travel data (Gomes et al., 2014; Poletto et al., 2014; Read et al., 2015; Bogoch et al., 2015; Rainisch et al., 2015; Cope et al., 2014). Several studies incorporated spatial data on EVD cases into models of regional EVD spread (Gire et al., 2014; Merler et al., 2015; Rainisch et al., 2015; Tong et al., 2015; Carroll et al., 2015; Zinszer et al., 2015).
 
-## Data and results sharing
+### Data and results sharing
 
 Of the 12 studies that collected original EVD data, 9 released those data before or at the time of publication (8 with Ebola virus genetic data deposited in GenBank (Baize et al., 2014; Gire et al., 2014; Simon-Loriere et al., 2015; Tong et al., 2015; Hoenen et al., 2015; Park et al., 2015; Carroll et al., 2015; Kugelman et al., 2015) and 1 with detailed epidemiological data in the online publication (Yamin et al., 2014). Many publications used results from the WHO Ebola Response Team investigations (WHO Ebola Response Team, 2014; 2015) (for example, estimates of the generation time, case fatality rate, or other epidemiological parameters as model inputs), but the detailed epidemiological data from these studies, to date, are not publicly available.
 
 Accumulation of shared EVD data over successive studies was evident especially in the phylogenetic analyses. For example, all phylogenetic studies published after release of the initial Ebola virus sequences by (Baize et al., 2014) (Guinea) and (Gire et al., 2014) (Sierra Leone) incorporated those sequence data.
 
-Across all studies, the publication lag (defined as date of most recent EVD data used to date of online publication) was almost 3 months (median [interquartile range] = 85 [30–157] days). The lag varied across modeling applications, and was considerably shorter in studies that included models to estimate
+Across all studies, the publication lag (defined as date of most recent EVD data used to date of online publication) was almost 3 months (median [interquartile range] = 85 [30–157] days). The lag varied across modeling applications, and was considerably shorter in studies that included models to estimate R (median = 58 days for publications with R estimation versus 118 days for others) or to forecast (median = 50 versus 125 days) (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/09186/elife-09186-fig3-v2.jpg)
 
-**Figure 3.:** The vertical red and turquoise lines indicate the median lag for publications including and not including, respectively, the type of modeling application.DOI: http://dx.doi.org/10.7554/eLife.09186.006
+**Figure 3.:** The vertical red and turquoise lines indicate the median lag for publications including and not including, respectively, the type of modeling application.
 
 Lags were longest for studies with phylogenetic and clinical trials applications (median = 125 and 108 days, respectively), although there were fewer publications with these models.
 
-## Modeling results: R and forecasts
+### Modeling results: R and forecasts
 
-Forty-one publications characterized epidemic dynamics using epidemiological (N=36), genomic (N=4), or news report data (N=1). Twenty-four of these provided estimates of the basic reproduction number (
+Forty-one publications characterized epidemic dynamics using epidemiological (N=36), genomic (N=4), or news report data (N=1). Twenty-four of these provided estimates of the basic reproduction number (R0) for Guinea, Liberia, Sierra Leone, or West Africa, using epidemiological or genomic data (Figure 4, Supplementary file 3).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/09186/elife-09186-fig4-v2.jpg)
 
-**Figure 4.:** R estimates by type of model input data.0Aggregate, case counts released by the WHO or Ministries of Health; Line-level, individual-level data from epidemiological investigations; Genomic, Ebola virus sequence data. The Figure excludes an outlier estimate of 8.33 for Sierra Leone (Fisman et al., 2014).DOI: http://dx.doi.org/10.7554/eLife.09186.007
+**Figure 4.:** Aggregate, case counts released by the WHO or Ministries of Health; Line-level, individual-level data from epidemiological investigations; Genomic, Ebola virus sequence data. The Figure excludes an outlier estimate of 8.33 for Sierra Leone (Fisman et al., 2014).
 
-There were 16 country-specific estimates of
+There were 16 country-specific estimates of R0 for Guinea, Liberia, or Sierra Leone that used EVD epidemiological data (aggregate or line-level) and provided 95% confidence or credible intervals (CIs). Median CI width was about 85% smaller for models that used cumulative EVD counts (N=11 models in 5 publications) than for models that used disaggregated EVD case data, such as weekly counts (N=5 models in 3 publications) (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/09186/elife-09186-fig5-v2.jpg)
 
-**Figure 5.:** R estimates and CIs by type of epidemiological input data.0Disaggregated data typically were weekly counts. Top row: Vertical lines indicate 95% CIs. Bottom row: Horizontal bars indicate median CI width.DOI: http://dx.doi.org/10.7554/eLife.09186.008
+**Figure 5.:** Disaggregated data typically were weekly counts. Top row: Vertical lines indicate 95% CIs. Bottom row: Horizontal bars indicate median CI width.
 
-Although CIs were also narrower for models when deterministic rather than stochastic methods were used to estimate parameter uncertainty, all of the deterministic results came from a single study (
+Although CIs were also narrower for models when deterministic rather than stochastic methods were used to estimate parameter uncertainty, all of the deterministic results came from a single study (Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/09186/elife-09186-fig6-v2.jpg)
 
-**Figure 6.:** R estimates and CIs by model fitting method.0Top row: Vertical lines indicate 95% CIs. Bottom row: Horizontal bars indicate median CI width.DOI: http://dx.doi.org/10.7554/eLife.09186.009
+**Figure 6.:** Top row: Vertical lines indicate 95% CIs. Bottom row: Horizontal bars indicate median CI width.
 
-Fifteen publications provided numerical forecasts of cumulative EVD incidence for West African countries. Of 22 models that assumed no additional response measures beyond those implemented at the time (i.e., 'status quo' assumptions), 18 overestimated the future number of cases (
+Fifteen publications provided numerical forecasts of cumulative EVD incidence for West African countries. Of 22 models that assumed no additional response measures beyond those implemented at the time (i.e., 'status quo' assumptions), 18 overestimated the future number of cases (Figure 7, Supplementary file 4).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/09186/elife-09186-fig7-v2.jpg)
 
-**Figure 7.:** Accuracy is shown as the ratio of predicted incidence to incidence subsequently reported by the WHO. 'Dampening' refers to various approaches to restrict the growth of forecasted incidence over time. Top row: Accuracy by date of forecast. Bottom row: Accuracy by forecast lead time ('Horizon'). The Figure excludes one forecast with horizon > 1 year (Fisman and Tuite, 2014).DOI: http://dx.doi.org/10.7554/eLife.09186.010
+**Figure 7.:** Accuracy is shown as the ratio of predicted incidence to incidence subsequently reported by the WHO. 'Dampening' refers to various approaches to restrict the growth of forecasted incidence over time. Top row: Accuracy by date of forecast. Bottom row: Accuracy by forecast lead time ('Horizon'). The Figure excludes one forecast with horizon > 1 year (Fisman and Tuite, 2014).
 
 In multivariate analysis, forecast error was lower for forecasts made later in the outbreak (14% reduction in mean absolute percentage error [MAPE] per week, P<0.001), higher for forecasts with longer time horizons (29% increase in MAPE per week, P<0.01), and lower for forecasts that used decay terms, spatially heterogeneous contact patterns, or other methods that served to constrain projected incidence growth (90% reduction in MAPE, P<0.01). Country and number of parameters in the model were not statistically significant predictors of forecast accuracy.
 

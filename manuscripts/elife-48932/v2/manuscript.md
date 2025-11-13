@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.48932.001 Studying the human subcortical auditory system non-invasively is challenging due to its small, densely packed structures deep within the brain. Additionally, the elaborate three-dimensional (3-D) structure of the system can be difficult to understand based on currently available 2-D schematics and animal models. Wfe addressed these issues using a combination of histological data, post mortem magnetic resonance imaging (MRI), and in vivo MRI at 7 Tesla. We created anatomical atlases based on state-of-the-art human histology (BigBrain) and postmortem MRI (50 µm). We measured functional MRI (fMRI) responses to natural sounds and demonstrate that the functional localization of subcortical structures is reliable within individual participants who were scanned in two different experiments. Further, a group functional atlas derived from the functional data locates these structures with a median distance below 2 mm. Using diffusion MRI tractography, we revealed structural connectivity maps of the human subcortical auditory pathway both in vivo (1050 µm isotropic resolution) and post mortem (200 µm isotropic resolution). This work captures current MRI capabilities for investigating the human subcortical auditory system, describes challenges that remain, and contributes novel, openly available data, atlases, and tools for researching the human auditory system.
+Studying the human subcortical auditory system non-invasively is challenging due to its small, densely packed structures deep within the brain. Additionally, the elaborate three-dimensional (3-D) structure of the system can be difficult to understand based on currently available 2-D schematics and animal models. Wfe addressed these issues using a combination of histological data, post mortem magnetic resonance imaging (MRI), and in vivo MRI at 7 Tesla. We created anatomical atlases based on state-of-the-art human histology (BigBrain) and postmortem MRI (50 µm). We measured functional MRI (fMRI) responses to natural sounds and demonstrate that the functional localization of subcortical structures is reliable within individual participants who were scanned in two different experiments. Further, a group functional atlas derived from the functional data locates these structures with a median distance below 2 mm. Using diffusion MRI tractography, we revealed structural connectivity maps of the human subcortical auditory pathway both in vivo (1050 µm isotropic resolution) and post mortem (200 µm isotropic resolution). This work captures current MRI capabilities for investigating the human subcortical auditory system, describes challenges that remain, and contributes novel, openly available data, atlases, and tools for researching the human auditory system.
 
 ## Introduction
 
@@ -46,7 +46,7 @@ Where histology provides ground truth information about neural anatomy, we show 
 
 ## Results
 
-## Definition of a subcortical auditory atlas from histology
+### Definition of a subcortical auditory atlas from histology
 
 To obtain a spatially accurate reference for all the subcortical auditory structures, we manually segmented publicly available histological data (100 µm version of the BigBrain 3-D Volume Data Release 2015 in MNI space from https://bigbrain.loris.ca; Amunts et al., 2013).
 
@@ -56,11 +56,11 @@ The results of our BigBrain subcortical auditory segmentation in corrected MNI s
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig1-v2.jpg)
 
-**Figure 1.:** Moore (1987) for the cochlear nucleus (CN), superior olivary complex (SOC), inferior colliculus (IC) and from the Allen Human Brain Atlas (Hawrylycz et al., 2012) for the medial geniculate body (MGB) compared to similar cuts from histology (BigBrain) in MNI (central column) and 3-D reconstructions of the segmented structures from the histology (bottom right column).The auditory structures are highlighted in gray in the left column, by a dotted line in the central column and in red on the modified Gray’s anatomy Plate 719 (Gray and Lewis, 1918) and rendered as solid red surface meshes within the surface point cloud render of BigBrain MNI brainstem (right column). See Figure 9 for 3-D animated videos of these auditory structures.
+**Figure 1.:** The auditory structures are highlighted in gray in the left column, by a dotted line in the central column and in red on the modified Gray’s anatomy Plate 719 (Gray and Lewis, 1918) and rendered as solid red surface meshes within the surface point cloud render of BigBrain MNI brainstem (right column). See Figure 9 for 3-D animated videos of these auditory structures.
 
-## Postmortem MRI
+### Postmortem MRI
 
-## Postmortem MRI atlas of the human subcortical auditory system
+#### Postmortem MRI atlas of the human subcortical auditory system
 
 Magnetic resonance histology—that is the study of tissue at microscopic resolution using MRI—provides several unique advantages over conventional histology: (1) it is non-destructive; (2) it suffers minimal distortion from physical sectioning and dehydration; (3) it yields unique contrast based on water in the tissue and how it is bound (e.g. diffusion); and (4) it produces 3-D data. These advantages make it an ideal medium for visualizing the 3-D organization of the deep brain structures (Johnson et al., 1993). To delineate the subcortical auditory structures with MR histology, we acquired 50 µm isotropic voxel size 3-D gradient echo (GRE) MRI on a human postmortem brainstem and thalamus (described previously in Calabrese et al., 2015; see Materials and methods for additional details). These data are presented in Figure 2 (second column) after transformation to MNI space and resampling to 100 µm isotropic resolution (see Materials and methods section for details). The postmortem MRI data are presented together with the histological data for comparison (first column).
 
@@ -70,9 +70,77 @@ Magnetic resonance histology—that is the study of tissue at microscopic resol
 
 Based on our segmentations of the subcortical auditory structures in the postmortem MRI data, the resulting 3-D model is presented in Figure 2. A volumetric quantification of the identified structures (in the BigBrain and postmortem MRI) is reported in Table 1 and the overlap between the segmentations computed after projection in MNI space are reported in Table 2 (as inset in Figure 2).
 
-## 3-D connectivity map of the human subcortical auditory system from postmortem diffusion MRI
+**Table 1.**
+ Comparisons between the volume (mm3) of auditory subcortical structures reported in the literature (Glendenning and Masterton, 1998) and the volume obtained in our BigBrain segmentation (in MNI space), post mortem MRI data segmentation and in vivo functional clusters (defined based on voxels that are significant in at least three, four, or five participants out of the 10 included in Experiment 1).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Literature</th>
+      <th>BigBrain</th>
+      <th>Post mortem</th>
+      <th>In vivo (thr=3)</th>
+      <th>In vivo (thr=4)</th>
+      <th>In vivo (thr=5)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>46</td>
+      <td>32</td>
+      <td>11</td>
+      <td>54</td>
+      <td>24</td>
+      <td>11</td>
+      <td>CN</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>6</td>
+      <td>4</td>
+      <td>124</td>
+      <td>63</td>
+      <td>29</td>
+      <td>SOC</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>63</td>
+      <td>73</td>
+      <td>263</td>
+      <td>189</td>
+      <td>146</td>
+      <td>IC</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>75</td>
+      <td>134</td>
+      <td>304</td>
+      <td>207</td>
+      <td>152</td>
+      <td>MGN</td>
+    </tr>
+  </tbody>
+</table>
+
+### 3-D connectivity map of the human subcortical auditory system from postmortem diffusion MRI
 
 Identifying the connectivity between subcortical auditory nuclei is crucial for understanding the structure of the pathway. However, methods for tracing neuronal pathways that are available in other animal models are generally not available in human studies, even post mortem. Diffusion-weighted MRI (dMRI) can be used to measure the orientation and magnitude of molecular motion and infer patterns of white matter in brain tissue (both post mortem and in vivo). Using 200 µm diffusion-weighted MRI data acquired on the same post mortem sample (see Materials and methods for details), we modeled diffusion orientations and estimated likely connectivity pathways (or streamlines) using tractography. Constraining the streamlines to only those that pass through auditory structures (as identified from the anatomical MRI data and dilated 500 µm to include adjacent white matter), we visualized the connectivity map of the subcortical auditory pathway in Figure 3, left panel.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig3-v2.jpg)
+
+**Figure 3.:** Left: streamlines passing through subcortical auditory structures, defined from 50 µm post mortem MRI in the same specimen, warped to 200µm isotropic diffusion image space and dilated 2.5 voxels (500 µm) to include neighboring white matter. Colors represent the local orientation at each specific point along the streamline: blue is inferior-superior, red green is anterior-posterior, and red is left-right. Ten percent of streamlines are represented in this image. A rotating animation is available in the online resources. Top right: Connectivity heatmap of subcortical auditory structures. Bottom right: Diffusion orientation distribution functions (ODFs) for each voxel; axial slice at the level of the rostral inferior colliculus (IC), including the commissure of the IC (bottom center arrow) and brachium of the IC (top left arrow). A video of the streamlines is available online: https://osf.io/kmbp8/.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Postmortem human diffusion-weighted MRI tractography (from 200 µm isotropic voxels) with anatomically defined subcortical auditory seeds, downsampled to 200 µm but undilated. Streamlines that passed through manual segmentations of the medulla and optic tracts were excluded. 10% of streamlines are visualized for clarity. Top right: connectivity heatmap of subcortical auditory structures. Bottom right: Streamlines that pass through the right inferior colliculus.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Postmortem human diffusion-weighted MRI tractography with anatomically defined subcortical auditory seeds. MRI data were downsampled from 200 µm to 1050 µm to match in vivo data acquisition and then processed in the same manner as other diffusion tractography analyses. Streamlines that passed through manual segmentations of the medulla and optic tracts were excluded. 10% of streamlines are visualized for clarity. Top right: Connectivity heatmap of subcortical auditory structures.
 
 Connectivity closely resembles the expected pattern of the human subcortical auditory wiring. In particular, streamlines predominantly pass through the lateral lemniscus, the primary subcortical auditory tract. Additional streamlines run through the brachium of the inferior colliculus, connecting the inferior colliculus with the medial geniculate of the thalamus. Many streamlines then course rostrally toward the auditory cortex (not present in this specimen).
 
@@ -84,25 +152,59 @@ To investigate the relationship between streamline connectivity and ROI definiti
 
 Next, we resampled the diffusion MRI images to an in vivo-like resolution (1.05 mm isotropic). We again estimated fiber ODFs using CSD and estimated white matter connections with deterministic tractography. Using the (undilated but downsampled) anatomically defined ROIs as tractography waypoints, we can visualize streamline estimates connecting subcortical auditory structures (Figure 3—figure supplement 2). Similar to the dilated ROI connectivity estimates, we see greater ipsilateral connectivity estimates between structures, particularly between left structures.
 
-## Vasculature representations from postmortem MRI
+#### Vasculature representations from postmortem MRI
 
 Because T2*-weighted GRE imaging is sensitive to blood vessels, we processed our anatomical MR image to highlight brainstem vasculature (Figure 5, right column, base image). These 3-D vasculature images bear striking resemblance to post mortem data acquired with a stereoscopic microscope after full clearing method (see Duvernoy, 2013 for detailed diagrams of human brainstem vasculature). These vasculature images in the MNI space can be helpful to understand the nature of the in vivo functional signals (see next section).
 
-## In vivo MRI
+### In vivo MRI
 
 We next sought to identify the structures and connections of the human subcortical auditory system in living participants. By leveraging the increase signal and contrast to noise available at ultra-high magnetic fields (7 Tesla) (Vaughan et al., 2001; Uğurbil et al., 2003; Ugurbil, 2016), we collected high-resolution anatomical (0.7 mm isotropic), diffusion-weighted (1.05 mm isotropic; 198 diffusion gradient directions across three gradient strengths) and functional (1.1 mm isotropic) MRI in ten participants (see Materials and methods for details). Leveraging the increased SNR available at high fields, we aimed to collect data that would allow a functional definition of the auditory pathway in individual participants. For this reason, we collected a large quantity of functional data in all individuals: two sessions with 12 runs each in Experiment 1 and 2 sessions with eight runs each in Experiment 2 (totalling 8 hr of functional data for each participant who completed both experiments). All statistical analyses were performed at the single subject level. Group analyses were used to evaluate the correspondence across subjects of individually defined regions (i.e. the definition of a probabilistic atlas across participants) as well as the ability to generalize to new participants by means of a leave-one-out analysis.
 
-## Anatomical MRI
+#### Anatomical MRI
 
 Visual inspection and comparison to the MNI dataset (Figure 5—figure supplement 2) showed that the MGB and IC could be identified on the basis of the anatomical contrast in our participants (Figure 5—figure supplement 1), especially in the short inversion time T1-weighted data (Tourdias et al., 2014; Moerel et al., 2015). However, while the superior olivary complex (SOC) could be identified in the MNI dataset (Figure 5—figure supplement 2), it could not be identified in average anatomical image from our 7T data. This is possibly due to the limited number of subjects leading to the lower signal to noise in the average image. We have also explored the combination of image contrasts within each individual using a compositional method proposed in Gulban et al. (2018b), but the results were inconclusive.
 
-## Functional MRI
+#### Functional MRI
 
 The difficulty in delineating the CN and SOC from anatomical in vivo MRI data (see Figure 5—figure supplement 1 for the average anatomical images obtained from our in vivo data) oriented our investigation towards the possibility to identify the subcortical auditory pathway—in vivo and in single individuals—on the basis of the functional responses to sounds. Functional responses to 168 natural sounds (Experiment 1) were collected at 7T using a sparse acquisition scheme and a fast event-related design. We additionally report the reproducibility of the individual functional delineations in six out of the 10 participants who participated in a follow up experiment in which responses to 96 natural sounds (Experiment 2) were collected at 7T using a sparse acquisition scheme and a fast event-related design.
 
 Statistical analysis of the functional responses allowed us to define voxels with significant activation in response to sounds in each individual. Additionally, we created a probabilistic functional atlas based on the overlap of statistically significant maps across individuals (after anatomical registration to a reference subject). Figure 5 shows the overlap of functional responses across participants, plotted on top of in vivo anatomical MRI, histology, and post mortem MRI. To evaluate the generalization to new data we also computed leave-one-out probabilistic functional atlases each time leaving one one of our participants (see Materials and methods for details).
 
 Figure 4 shows, for each individual participant, the statistically thresholded (see Materials and methods) activation maps together with leave-one-out probabilistic functional maps obtained considering all other individuals. The unthresholded maps are reported in supplement videos to Figure 4 and available for inspection in the online repository of the data. In all our participants, we could identify clusters of significant activation in response to sounds in the MGB, IC, SOC, and CN. In each individual and for each auditory nucleus, these activation clusters correspond to locations that are significantly active in at least three out of the other nine participants to the experiment. Figure 4—figure supplement 1 reports the overlap and distance between functional centroids of the single subject activation maps and the leave-one-out probabilistic maps. In addition, Figure 4—figure supplement 3 shows the reproducibility of the functional responses across experiments in six of the participants. The analysis of the overlap and distance between the centroids of activation across experiments within each of these six participants is reported in Figure 4—figure supplement 4. The higher signal-to-noise ratio attainable in regions corresponding to the IC and MGB results in highly reproducible functional responses both within and across participants in these regions. Activation clusters identified at the level of CN and SOC in single individuals also reproduce (albeit to a smaller degree with respect to IC and MGB), both within subjects (i.e. across experiments) and across subjects.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig4-v2.jpg)
+
+**Figure 4.:** For each participant, CN/SOC and IC are shown in transversal cuts, MGB is shown in a coronal cut. See single subject videos for 3-D view of these maps in Figure 10 supplements. Unthresholded maps can be found in our online resources (see Data Availability section).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Correspondence between single subject activation maps and leave-one-out functional probabilistic maps. Leave-one-out probabilistic functional maps are thresholded to identify voxels that are significantly responding to sounds in at least three of nine participants. The overlap represents (per region of interest) the percentage of the voxels on the leave-one-out probabilistic maps that is significantly responding to sounds in the left out subject. For each region of interest, we also report the distance in mm between the centroids of the leave-one-out probabilistic maps and the centroids of the regions significantly responding to sounds in the left out subject. The last column represents the average overlap and distance across participants per region and error bars represent the standard error across the participants.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Correspondence between single subject activation maps and leave-one-out functional probabilistic maps at different thresholds. Leave-one-out probabilistic functional maps are thresholded to identify voxels that are significantly responding to sounds by varying thresholds from at least one of nine participants to at least six of nine participants. The overlap represents (per region of interest) the percentage of the voxels on the leave-one-out probabilistic maps that is significantly responding to sounds in the left out subject. For each region of interest, we also report the distance in mm between the centroids of the leave-one-out probabilistic maps and the centroids of the regions significantly responding to sounds in the left out subject. Boxplots represent the average overlap and distance across participants per region and error bars represent the standard error across the participants.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Reproducibility of functional activation maps. Functional activation maps obtained from Experiment one and Experiment 2 (six participants) thresholded for significance (FDR-q = 0.05 and p<0.001; see Materials and methods for details). For each participant, CN/SOC and IC are shown in transversal cuts, MGB is shown in a coronal cut.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Correspondence between single subject activation maps Experiment one and Experiment 2. All maps are thresholded for significance (FDR-q = 0.05 and p<0.001; see Materials and methods for details). The overlap represents (per region of interest) the percentage of the voxels significantly active in Experiment 1 that is significantly responding to sounds in Experiment 2. For each region of interest, we also report the distance in mm between the centroids of the regions significantly responding to sounds in both experiments. Videos are provided in the appendix that visualize thresholded and unthresholded maps for each of the individual participants. The last column represents the average overlap and distance across participants per region and error bars represent the standard error across the participants.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Effect of spatial smoothing on functional activation maps. Functional activation maps obtained from Experiment one in two participants with and without applying spatial smoothing (1.5 mm FWHM Gaussian smoothing) prior to the statistical analysis. Maps are thresholded for statistical significance (FDR-q = 0.05 and p<0.001; see Materials and methods for details)). For each participant, CN/SOC and IC are shown in transversal cuts, MGB is shown in a coronal cut.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig5-v2.jpg)
+
+**Figure 5.:** Left column: Conjunction of participants plotted on top of one participant’s short inversion T1-weighted anatomical MRI. Center column: Conjunction of participants’ fMRI responses warped to MNI space and plotted on top of BigBrain MNI (corrected) image. Right column: Conjunction of fMRI responses plotted on top of post mortem MRI vasculature images (1.1 mm minimum intensity projection).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** In vivo anatomical group average images in MNI space.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig5-figsupp2-v2.jpg)
 
 The left column of Figure 5 shows the probabilistic functional map obtained from all participants in Experiment 1 (i.e. representing the number of subjects in which each voxel was identified as significantly responding to sounds-the map is thresholded to display voxels that are significantly activated in at least three out of the 10 participants) overlaid on the in vivo average anatomical MRI image (short inversion time T1-weighted image [Tourdias et al., 2014]; see Materials and methods for details).
 
@@ -118,11 +220,19 @@ The functional responses in the MGB cover an area that is in agreement with hist
 
 A quantification of the volume of functionally defined structures is reported in Table 1 for different thresholds of the probabilistic group map (from a threshold that defines the regions based on voxels that are significant in at least three out of the 10 participants to a threshold that define the regions based on voxels that are significant in at least five out of the ten participants). The overlap between functional regions and the BigBrain segmentations after projection in MNI space is reported in Table 2 (as bottom right inset in Figure 2 - computed using a threshold for the probabilistic maps that defines the regions based on voxels that are significant in at least three of the 10 participants).
 
-## Diffusion MRI
+#### Diffusion MRI
 
 With the successful identification of the subcortical auditory structures with functional MRI, we next sought to estimate the likely connections between these structures in vivo. We analyzed the high spatial and angular resolution diffusion data to estimate streamlines of white matter connectivity following a similar process as the postmortem MRI (see Materials and methods for further details).
 
 Figure 6 shows diffusion tractography streamlines that pass through at least one subcortical auditory structure (as defined by group-level probabilistic functional activation [significant response in at least three out of 10 subjects]; see section above). The high spatial and angular resolution of these data allow for vastly improved estimation of white matter connections between these deep, small structures.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig6-v2.jpg)
+
+**Figure 6.:** Left: 3-D images from one participant. Fiber orientation distribution functions were estimated from diffusion-weighted MRI images of the brainstem and were used for deterministic tractography. Streamlines that passed through functionally defined auditory ROIs (dark grey) are shown here (excluding streamlines through the medulla). Colors represent the local orientation at each specific point along the streamline: blue is inferior-superior, red green is anterior-posterior, and red is left-right. A rotating animation is available in the online resources. Top right: connectivity between subcortical auditory ROIs as a percentage of total brainstem streamlines, averaged over 10 participants. Bottom right: schematic of auditory brainstem connectivity from Gray’s Anatomy of the Human Body. A video of the streamlines is available online: https://osf.io/ykd24/.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Diffusion-weighted MRI tractography streamlines passing through each subcortical auditory region of interest for the ten in vivo participants. Bars represent 95% confidence intervals.
 
 While not a measure of actual physical brain connections—and therefore requiring caution in interpretation—connectivity patterns resemble what we would expect to see based on animal model tracer investigations. Overall, the connectivity network appears to be dominated by laterality, in that left hemisphere structures are generally more connected with other left hemisphere structures.
 
@@ -172,15 +282,15 @@ Despite these limitations, the inter-rater and inter-experiment reliability in t
 
 See Figure 8 for a summary of data sources, data processing steps, and software used in these analyses.
 
-## MRI acquisition parameters
+### MRI acquisition parameters
 
-## In vivo MRI
+#### In vivo MRI
 
 The experimental procedures were approved by the ethics committee of the Faculty for Psychology and Neuroscience at Maastricht University (reference number: ERCPN-167_09_05_2016), and were performed in accordance with the approved guidelines and the Declaration of Helsinki. Written informed consent was obtained for every participant before conducting the experiments. All participants reported to have normal hearing, had no history of hearing disorder/impairments or neurological disease.
 
 Images were acquired on a 7T Siemens MAGNETOM scanner (Siemens Medical Solutions, Erlangen, Germany), with 70 mT/m gradients and a head RF coil (Nova Medical, Wilmington, MA, USA; single transmit, 32 receive channels) at Maastricht University, Maastricht, Netherlands.
 
-We conducted two separate experiments. In Experiment 1, data were collected for n=10 participants (age range 25 to 30, six females), in three separate sessions. In the first session, we acquired the in vivo anatomical data set consisting of: 1) a T1-weighted (T1w) image acquired using a 3-D MPRAGE sequence (repetition time [TR]=3100 ms; time to inversion [TI]=1500 ms [adiabatic non-selective inversion pulse]; echo time [TE]=2.42 ms; flip angle = 5°; generalized auto-calibrating partially parallel acquisitions [GRAPPA]=3 (Griswold et al., 2002); field of view [FOV]=224 × 224 mm2; matrix size = 320 × 320; 256 slices; 0.7 mm isotropic voxels; pixel bandwidth = 182 Hz/pixel; first phase encode direction anterior to posterior; second phase encode direction superior to inferior); 2) a Proton Density weighted (PDw) image (0.7 mm iso.) with the same 3-D MPRAGE as for the T1w image but without the inversion pulse (TR = 1380 ms; TE = 2.42 ms; flip angle = 5°; GRAPPA = 3; FOV = 224 × 224 mm2; matrix size = 320 × 320; 256 slices; 0.7 mm iso. voxels; pixel bandwidth = 182 Hz/pixel; first phase encode direction anterior to posterior; second phase encode direction superior to inferior); 3) a T2*-weighted (T2w) anatomical image acquired using a modified 3-D MPRAGE sequence (De Martino et al., 2015) that allows freely setting the TE (TR = 4910 ms; TE = 16 ms; flip angle = 5°; GRAPPA = 3; FOV = 224 × 224 mm2; matrix size = 320 × 320; 256 slices; 0.7 mm iso. voxels; pixel bandwidth = 473 Hz/pixel; first phase encode direction anterior to posterior; second phase encode superior to inferior) and 4) a T1-weighted images acquired with a short inversion time (SI-T1w) using a 3-D MPRAGE (Tourdias et al., 2014) (TR = 4500 ms; TI = 670 ms [adiabatic non-selective inversion pulse]; TE = 3.37 ms; flip angle = 4°; GRAPPA = 3; FOV = 224 × 224 mm2; matrix size = 320 × 320; 256 slices; 0.7 mm isotropic voxels; pixel bandwidth = 178 Hz/pixel; first phase encode direction anterior to posterior; second phase encode direction superior to inferior). To improve transmit efficiency in temporal areas when acquiring these anatomical images we used dielectric pads (Teeuwisse et al., 2012).
+We conducted two separate experiments. In Experiment 1, data were collected for $n$=10 participants (age range 25 to 30, six females), in three separate sessions. In the first session, we acquired the in vivo anatomical data set consisting of: 1) a T1-weighted (T1w) image acquired using a 3-D MPRAGE sequence (repetition time [TR]=3100 ms; time to inversion [TI]=1500 ms [adiabatic non-selective inversion pulse]; echo time [TE]=2.42 ms; flip angle = 5°; generalized auto-calibrating partially parallel acquisitions [GRAPPA]=3 (Griswold et al., 2002); field of view [FOV]=224 × 224 mm2; matrix size = 320 × 320; 256 slices; 0.7 mm isotropic voxels; pixel bandwidth = 182 Hz/pixel; first phase encode direction anterior to posterior; second phase encode direction superior to inferior); 2) a Proton Density weighted (PDw) image (0.7 mm iso.) with the same 3-D MPRAGE as for the T1w image but without the inversion pulse (TR = 1380 ms; TE = 2.42 ms; flip angle = 5°; GRAPPA = 3; FOV = 224 × 224 mm2; matrix size = 320 × 320; 256 slices; 0.7 mm iso. voxels; pixel bandwidth = 182 Hz/pixel; first phase encode direction anterior to posterior; second phase encode direction superior to inferior); 3) a T2*-weighted (T2w) anatomical image acquired using a modified 3-D MPRAGE sequence (De Martino et al., 2015) that allows freely setting the TE (TR = 4910 ms; TE = 16 ms; flip angle = 5°; GRAPPA = 3; FOV = 224 × 224 mm2; matrix size = 320 × 320; 256 slices; 0.7 mm iso. voxels; pixel bandwidth = 473 Hz/pixel; first phase encode direction anterior to posterior; second phase encode superior to inferior) and 4) a T1-weighted images acquired with a short inversion time (SI-T1w) using a 3-D MPRAGE (Tourdias et al., 2014) (TR = 4500 ms; TI = 670 ms [adiabatic non-selective inversion pulse]; TE = 3.37 ms; flip angle = 4°; GRAPPA = 3; FOV = 224 × 224 mm2; matrix size = 320 × 320; 256 slices; 0.7 mm isotropic voxels; pixel bandwidth = 178 Hz/pixel; first phase encode direction anterior to posterior; second phase encode direction superior to inferior). To improve transmit efficiency in temporal areas when acquiring these anatomical images we used dielectric pads (Teeuwisse et al., 2012).
 
 In the same session we acquired, for each participant, a diffusion-weighted MRI data set using a multi-band diffusion-weighted spin-echo EPI protocol originating from the 7T Human Connectome Project (1.05 mm isotropic acquisition and b-values = 1000 and 2000 s/mm2) (Vu et al., 2015), extended in order to collect one additional shell at b-value at b = 3000 s/mm2(Gulban et al., 2018a). Other relevant imaging parameters were (FOV = 200 × 200 mm2 with partial Fourier 6/8, 132 slices, nominal voxel size = 1.05 mm isotropic, TR/TE = 7080/75.6 ms, MB = 2, phase encoding acceleration (GRAPPA) = 3, 66 directions and 11 additional b = 0 volumes for every b-value). A total of 462 volumes were obtained (231 in each phase encoding direction anterior-posterior and posterior-anterior) for a total acquisition time of 60 min.
 
@@ -192,7 +302,7 @@ In experiment 2, six of the volunteers that participated in experiment one were 
 
 Both in vivo datasets acquired for experiment 1 and experiment 2 have never been published before. This is the first work that uses this dataset.
 
-## Postmortem MRI
+#### Postmortem MRI
 
 A human brainstem and thalamus specimen were dissected at autopsy from a 65-year-old anonymous male. The specimen was flushed with saline and immersed for 2 weeks in 10% solution of neutral buffered formalin. Following this, the specimen was re-hydrated for 1 week in 0.1 M solution of phosphate buffered saline doped with 1% (5 mM) gadoteridol. Before the MRI acquisition, the specimen was placed in custom MRI-compatible tube immersed in liquid fluorocarbon.
 
@@ -200,11 +310,11 @@ Magnetic resonance imaging was conducted in a 210 mm small-bore Magnex/Agilent M
 
 Diffusion-weighted spin echo images were collected at 200 µm3 spatial resolution with 120 diffusion gradient directions at strength b = 4000 s/m2 and 11 b = 0 s/m2 volumes over 208 hr. The FOV was 90 × 55 × 45 mm with TR = 100 ms, TE = 33.6 ms, and bandwidth = 278 Hz/pixel.
 
-## Anatomical image registration
+### Anatomical image registration
 
 SI-T1w, T1w, T2*w and PDw images (700 µm iso.) were transformed to Talairach space (500 µm iso.) using BrainvoyagerQX version 2.8.4 (Goebel, 2012). Intensity inhomogeneity correction as implemented in SPM12 unified segmentation (Ashburner and Friston, 2005) was used for all images. A smaller volume containing brainstem and thalamus in each image was extracted (in the Talairach space) using FSL version 5.0.9 (Jenkinson et al., 2012) and histogram matched using percentile clipping (1% and 99%).
 
-Individual masks for each 10 brainstems were created semi-automatically using ITK-SNAP version 3.6.0 active contour segmentation mode followed by manual edits. These masks included regions starting from 2 cm below the inferior part of pons to 0.5 cm above the medial geniculate nucleus (MGN), with a lateral extend reaching until the lateral geniculate nucleus (LGN) and 3 cm anterior from MGN, not including cerebellum or large arteries that lie on the surface of brainstem. These brainstem masks were then used with FSL-FNIRT (Andersson et al., 2007) to warp nine of the 10 brainstems to the reference brainstem (subject 1) using SI-T1w images. We used the SI-T1w images to drive the non linear registration due to the enhanced anatomical contrast across structures within the thalamus and brainstem present in these images (Tourdias et al., 2014; Moerel et al., 2015). The FNIRT parameters were subsamp=2,2,1,1, miter=100,100,50,50, infwhm=2,2,1,1, reffwhm=2,2,0,0, lambda=100,50,20,5, estint=0,0,0,0, warpres=2,2,2 with spline interpolation (parameters not mentioned here were the defaults as set in FSL 5.0.9).
+Individual masks for each 10 brainstems were created semi-automatically using ITK-SNAP version 3.6.0 active contour segmentation mode followed by manual edits. These masks included regions starting from 2 cm below the inferior part of pons to 0.5 cm above the medial geniculate nucleus (MGN), with a lateral extend reaching until the lateral geniculate nucleus (LGN) and 3 cm anterior from MGN, not including cerebellum or large arteries that lie on the surface of brainstem. These brainstem masks were then used with FSL-FNIRT (Andersson et al., 2007) to warp nine of the 10 brainstems to the reference brainstem (subject 1) using SI-T1w images. We used the SI-T1w images to drive the non linear registration due to the enhanced anatomical contrast across structures within the thalamus and brainstem present in these images (Tourdias et al., 2014; Moerel et al., 2015). The FNIRT parameters were $subsamp=2,2,1,1$, $miter=100,100,50,50$, $infwhm=2,2,1,1$, $reffwhm=2,2,0,0$, $lambda=100,50,20,5$, $estint=0,0,0,0$, $warpres=2,2,2$ with spline interpolation (parameters not mentioned here were the defaults as set in FSL 5.0.9).
 
 To compare in vivo with postmortem MRI and histology data, we projected the averaged SI-T1w, T1w, T2*w and PDw images to the MNI reference space (ICBM 152 2009b non-linear symmetric, 500 µm iso. ; Fonov et al., 2009; Fonov et al., 2011; http://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009). The ICBM 152 reference includes T1w, T2w and PDw data and projecting in vivo and postmortem MRI as well as histology data to this space allowed us also to evaluate the contrast that these commonly used template images have in subcortical auditory areas. To register our in vivo MRI data set to MNI, we used FSL-FNIRT but this time driven by the T1w images (available both in our data set and in the MNI ICBM 152 2009b data).
 
@@ -216,23 +326,23 @@ The ANTs non-linear registration also created warp and inverse warp transforms t
 
 Finally, to transform the postmortem anatomical image (50 µm) to MNI space, we applied the inverse transform from postmortem anatomical to diffusion space (resampled to 50 µm), then the inverse transform from diffusion space to in vivo space (similarly upsampled to 50 µm), and finally from in vivo space to MNI space using the FSL-FNIRT inverse transform (described above).
 
-## BigBrain histology segmentation
+### BigBrain histology segmentation
 
 In what follows we describe the main anatomical observations related to the auditory structures as segmented in the 100 µm histological data. Images were segmented independently by two raters (KRS, OFG). Overlap between the two raters was high (see Table 2 [top row - Big Brain across segmenters] in Figure 2); in the figures we show the regions that were consistently segmented by both raters.
 
-## Vestibulocochlear nerve
+#### Vestibulocochlear nerve
 
 The vestibulocochlear nerve (the eighth cranial nerve, or CNVIII) enters the brainstem where the medulla and the pons meet (the pontomedullary junction). The cochlear component of the vestibulocochlear nerve is composed of spiral ganglion neurons, whose cell bodies are within the cochlea and which carry frequency-specific information to the brainstem.
 
 In the BigBrain histology, CNVIII extends primarily laterally (but also anteriorly and inferiorly) from the pontomedullary junction, bound posteriorly by the cerebellum. Parts of the nerve root are still visible in the images although being cut. It is therefore not labeled in our histological atlas (but see the post mortem MRI atlas below).
 
-## Cochlear nucleus
+#### Cochlear nucleus
 
 Once reaching the brainstem, the auditory nerves split into two main routes-one to the anterior ventral cochlear nucleus (AVCN), and one to the posterior ventral cochlear nucleus (PVCN) and then on to the dorsal cochlear nucleus (DCN) (Webster, 1992). Within each subnucleus, the neurons maintain the tonotopic frequency representation they receive from the cochlea via the cochlear nerve (De No, 1933a; De No, 1933b; Rose et al., 1960; Sando, 1965; Evans, 1975; Ryugo and May, 1993; Ryugo and Parks, 2003) (see bottom panels of the two left most columns in Figure 2).
 
 In the BigBrain data, the AVCN is situated anterior and medial to the root of CNVIII, while the PVCN continues from the root of CNVIII and extends posteriorly toward the DCN. The DCN is clearly visible as a dark band wrapping around the cerebellar peduncle posteriorly, becoming exposed on the dorsal surface of the pons.
 
-## Superior olivary complex
+#### Superior olivary complex
 
 The next structure along the auditory pathway is the superior olivary complex (SOC), which in humans is located in the inferior pons. The SOC receives the majority of its ascending inputs from the contralateral cochlear nucleus, although it also receives ipsilateral inputs as well. The contralateral dominance is maintained throughout the remaining ascending pathway. The SOC is comprised of the lateral superior olive (LSO), medial superior olive (MSO), and the medial nucleus of the trapezoid body (MNTB). The size of each of these nuclei varies between species, and it is debated whether the trapezoid body exists in the human SOC (Moore, 1987; Strominger and Hurwitz, 1976; but see Kulesza and Grothe, 2015 review of recent findings affirming the existence of the human MNTB).
 
@@ -240,45 +350,45 @@ Although the individual substructures within the SOC have unique anatomy that ca
 
 The MSO and LSO are visible in the BigBrain images, despite their small size. The MSO is a thin pencil-like collection of nuclei whose caudalmost point begins around the same axial plane as the rostralmost extent of the AVCN, about 4 mm medial (and slightly anterior) to the AVCN. It then extends about 1 cm rostrally (angled slightly laterally), where it eventually meets the lateral lemniscal tract. The LSO neighbors the MSO near its caudalmost portion, forming a 'V’ shape when viewed axially. In our histological atlas, these two structures are combined into a single SOC segmentation. Cells of the MNTB are not clear to us in this sample, so we do not segment it in our atlas.
 
-## Inferior colliculus
+#### Inferior colliculus
 
 The inferior colliculus (IC) is a large, spherical structure in the dorsal midbrain and receives ascending inputs from the auditory brainstem via the lateral lemniscus (see second panel from the top of the two left most columns in Figure 1). The central nucleus of the inferior colliculus receives most of these connections, with external nuclei primarily receiving descending connections (Webster, 1992). The inferior colliculus sends axons to the medial geniculate body of the thalamus via the brachium of the inferior colliculus.
 
 In the BigBrain data, the inferior colliculus is clearly identifiable as the lower two of the four bumps along the dorsal portion of the midbrain (or tectum). The darkest staining within these structures corresponds to the central nucleus of the inferior colliculus. An intensity gradient outside of the central nucleus likely corresponds to the external and dorsal nuclei, which were included in our segmentation of the IC. Bounding the IC superiorly is the superior colliculus; medially, the commissure of the IC connecting the two inferior colliculi, as well as the aqueduct and periaqueductal grey; and anteriorly, other midbrain nuclei such as the cuneiform nucleus (lateral and inferior to the IC are the borders of the midbrain).
 
-## Medial geniculate of the thalamus
+#### Medial geniculate of the thalamus
 
 The medial geniculate body (MGB) of the thalamus is the final subcortical auditory structure that sends auditory signals to the auditory cortex via the acoustic radiations (Winer, 1984; see top panel of the two left most columns in Figure 1). The MGB contains two or three major subdivisions: the ventral MGB receives the majority of IC inputs, while the dorsal and medial subdivisions (at times grouped together, at times separately) receive more varied inputs from auditory and non-auditory subcortical structures.
 
 In the BigBrain sample, the MGB is visible as a dark patch medial to the lateral geniculate nucleus (which can be easily identified by its striations) in a coronal view. Axially, the MGB takes an ovoid shape with a clear dorsolateral boundary next to the brachium of the superior colliculus, which appears light due to lack of cell nuclei being stained. Ventromedially, the MGB is bordered by a light band corresponding to the medial lemniscus. Rostrally, we marked the edge of the MGB where cell staining decreases, at the border with the pulvinar nucleus and ventral posterolateral nucleus of the thalamus.
 
-## Postmortem MRI segmentation
+### Postmortem MRI segmentation
 
 In what follows we describe the anatomical contrast that can be leveraged from these post mortem MRI data in order to identify structures in the auditory brainstem. We then used these segmentations to create an MRI-based atlas of the subcortical auditory system, separate from the BigBrain histology-based atlas.
 
-## Vestibulocochlear nerve
+#### Vestibulocochlear nerve
 
 The CNVIII is visible in the post mortem MRI near the pontomedullary junction, extending laterally and anteriorly from the brainstem (see the lower panels in Figure 2).
 
-## Cochlear nucleus
+#### Cochlear nucleus
 
 The cochlear nuclei are challenging to identify in the postmortem MRI data, although the presence of the CNVIII root provides a landmark for localizing the other structures. Due to low signal contrast around the ventral cochlear nucleus area in the T2*-weighted GRE MRI, we segmented the VCN according to the literature: bound by the cochlear nerve root and wall of the pons laterally, and by cerebellar white matter tracks medially. We were able to segment the dorsal cochlear nucleus based on the T2*-weighted image, where it appears brighter and can be identified as running posteriorly from the VCN and dorsally along the surface of the pons, distal to the inferior cerebellar peduncle.
 
-## Superior olivary complex
+#### Superior olivary complex
 
 As with the cochlear nuclei, the SOC are more difficult to identify in the post mortem MRI than in the histology, likely since the individual subnuclei like the MSO and LSO approach the size of a voxel in at least one direction and are therefore prone to partial voluming effects. However, the pencil-like MSO can still be identified in the coronal plane as a dark, elongated structure in the T2*-weighted image, starting around the level of the ventral cochlear nucleus. In the axial plane, the SOC (but not its individual subnuclei) can be seen as a dark spot in the T2*-weighted image between the facial nucleus and the trapezoid body (see the second row from the bottom in Figure 2).
 
-## Inferior colliculus
+#### Inferior colliculus
 
 As in the BigBrain data, the inferior colliculus is relatively easy to identify based on its gross anatomical structure on the dorsal aspect of the midbrain. Additionally, the MR contrast provides relatively clear boundaries between the colliculi and surrounding structures. Indeed, it may even be possible to segment the inferior colliculus into its subnuclei-the central, external, and dorsal nuclei-based on T2*-weighted MR signal intensities (see the second row from the top in Figure 2). The external nucleus of the IC appears dark in the T2*-weighted image, on the lateral aspect of the IC. Medial to the external nucleus is the central nucleus, which has higher T2*-weighted intensity (appears brighter) in our MR images, and has clear boundaries on its ventral, medial, and dorsolateral sides. The dorsal nucleus is along the dorsal aspect of the IC and is the brightest subcomponent within the IC in terms of T2*-weighted MR signal.
 
-## Medial geniculate
+#### Medial geniculate
 
 Although the borders of the MGB are less clear in the post mortem MRI than in the BigBrain images, the structure itself is again relatively easy to identify by its gross anatomical location as well as MR signal intensity. In the coronal plane, the medial geniculate is medial to the lateral geniculate at the junction of the midbrain and thalamus. Axially, the medial geniculate has circular or ovoid shape, again medial to the lateral geniculate. In the axial plane, the medial geniculate is largely bordered dorsolaterally by the brachium of the superior colliculus, which appears as a thick, dark band of fibers in the T2*-weighted image. Medially, the medial geniculate is bound by the brachium of the inferior colliculus (also appearing as a dark fiber band), at least through the caudal half of the structure. We have included the portions of this fiber bundle in the segmentation of the medial geniculate, as the auditory fibers connecting the IC and the MGB are quite relevant to MRI connectivity investigations (including our own; post mortem tractography results below).
 
 As with the inferior colliculus, it may be possible to identify separate divisions within the medial geniculate. Within the overall structure, there are two identifiable substructures based on T2*-weighted MR image intensity. Dorsomedially (and somewhat caudally), about half of the medial geniculate has high T2*-weighted contrast and appears bright; the ventrolateral (and slightly rostral) half appears darker in the T2*-weighted image. These segmentations largely (but not perfectly) align with the ventral and dorsal/medial nuclei of the medial geniculate in the Allen Human Brain Atlas (Hawrylycz et al., 2012), as well as with those of Paxinos (2019). However, they vary somewhat from the the axial slice segmentation from Merker (1983) shown in Amunts et al. (2012), which show a largely horizontal delineation between the substructures.
 
-## Functional MRI analysis
+### Functional MRI analysis
 
 In both functional experiments, data were preprocessed using BrainvoyagerQX version 2.8.4 (Goebel, 2012). Slice-scan-time correction, motion correction, temporal high-pass filtering (GLM-Fourier, six sines/cosines) and temporal smoothing (Gaussian, width of kernel 5.2 s). The defaults in BrainvoyagerQX v2.8.4 were used for these steps aside from the explicitly stated values. The functional images were then distortion corrected using the opposite phase encoding direction images using FSL-TOPUP (Andersson et al., 2003). Conversion between Brainvoyager file types to NIfTI which was required to perform distortion correction was done using Neuroelf version 1.1 (release candidate 2) http://neuroelf.net/ in Matlab version 2016a. For alignment across experiments (i.e. to co-register the data of experiment two to the ones collected in experiment 1) we used FSL-FLIRT. In this procedure the alignment between the functional data of the two experiments was tailored to a mask that included the brainstem, thalamus and auditory cortex.
 
@@ -300,23 +410,23 @@ We evaluated how well cluster localized on the basis of our probabilistic maps g
 
 To compare the functional activation maps with histology data and post mortem MRI data, the probabilistic maps were projected to the MNI space using the warping field obtained from the anatomical dataset.
 
-## BigBrain data
+### BigBrain data
 
 Histology data were obtained by downloading the 100 µm version of the BigBrain (Amunts et al., 2013) 3-D Volume Data Release 2015 (from https://bigbrain.loris.ca). We downloaded both the original images and the dataset already aligned to MNI ICBM 152. The nuclei along the auditory pathway (cochlear nucleus, superior olive, inferior colliculus and medial geniculate nucleus) were manually segmented in the histology space image using ITK-SNAP (Yushkevich et al., 2006) largely following the definitions in Moore (1987) when possible.
 
-## Correction of the alignment of the inferior colliculi to MNI
+#### Correction of the alignment of the inferior colliculi to MNI
 
 Upon visual inspection of the BigBrain image in the MNI ICM 152 space, we detected a major registration error around the inferior colliculi (see Figure 7 - second panel from the left). The registration quality to MNI ICMBM 152 space in the rest of the brainstem was deemed satisfactory, but the the region of the inferior colliculus required correction in order to perform a valid comparison with the MRI data (in vivo and post mortem). Interestingly, the region of the colliculi of the BigBrain in the original histology space appeared to be closer in location to the position of the inferior colliculus in the MNI dataset (compare panels 1 and 3 in Figure 7) indicating that the highlighted misalignment in the original BigBrain MNI dataset originated during the registration procedure.
 
 To perform a new registration to MNI of the brainstem and thalamus of the BigBrain data that observed the already correctly registered boundaries (e.g. the Pons) but corrected the region around the inferior colliculus bilaterally, we followed N steps. First, we defined a region of interest around the inferior colliculus using common anatomical landmarks that were visible in the BigBrain MNI and MNI (2009b) T1, PD, T2 images and where aligned satisfactorily. Second, this region was cut out from the BigBrain MNI and replaced by the same region (i.e. defined by the same anatomical landmarks) in the BigBrain histology space data (before projection to MNI). The convex hulls of the region of interest in the BigBrain histology and in the MNI space were matched using 3-D optimal transport as implemented in Geogram version 1.6.7 (Lévy, 2015; Lévy and Schwindt, 2018). Third, the convex hull matched region of the the BigBrain histology space was used to replace the incorrect region which was cut out at step 2. As a result of these three steps we obtained a version of the BigBrain in MNI (BigBrain MNI - implanted) that had the inferior colliculus in the right position but where the transitions between outside to inside of the region of interest that was corrected were visible and not respecting of the topology. To correct for these residual errors, we performed a new FSL-FNIRT alignment between the original BigBrain in histology space and the BigBrain MNI - implanted image. The resulting image (BigBrain MNI - corrected) preserved the actual topology inside the brainstem and at the same time resulted in a correct alignment of the regions around the inferior colliculus bilaterally (see Figure 7 - right panel).
 
-## Postmortem MRI vasculature analysis
+### Postmortem MRI vasculature analysis
 
 Gradient echo (GRE) MRI is sensitive to vasculature within the imaged tissue. To highlight vasculature in the post mortem brainstem specimen, we computed the minimum intensity projection in coronal sagittal and axial direction from the 50 µm isotropic voxel GRE MRI data over slabs of 1.1 mm in thickness using Nibabel (Brett et al., 2017) and Numpy (van der Walt et al., 2011). This image can be seen in Figure 5 right column.
 
-## Diffusion MRI analysis
+### Diffusion MRI analysis
 
-## Postmortem diffusion
+#### Postmortem diffusion
 
 Before analysis, postmortem diffusion volumes were each registered to the first b0 volume using an affine transformation in ANTs version 2.1.0 (Avants et al., 2011). To estimate white matter fiber orientations, we used the constrained spherical deconvolution (CSD) model as implemented in DIPY 0.14 (Gorgolewski et al., 2011; Garyfallidis et al., 2014; Tournier et al., 2007) as a Nipype pipeline (Gorgolewski et al., 2011). CSD posits that the observed diffusion signal is a convolution of the true fiber orientation distribution (FOD) with a response function. DIPY’s ‘auto-response‘ function estimates the fiber response function from a sphere of 10 voxels in the center of the sample above a given fractional anisotropy (FA) threshold (0.5 in our study). We then estimated FOD peaks in each voxel using DIPY’s ‘peaks-from-model‘ method with a 10° minimum separation angle and a maximum of 5 peaks per voxel.
 
@@ -324,7 +434,7 @@ White matter fiber streamlines were estimated deterministically with DIPY’s Eu
 
 To define regions of interest (ROIs) for the fiber display, the auditory structures manually delineated in the post mortem T2*-weighted MR images were transformed to diffusion space using ANTs, and global streamlines were filtered by considering only the voxels in each one of the ROIs as a seed and further constrained by using all auditory ROIs as tractography waypoints. This resulted in a high-resolution, high-quality auditory-specific subcortical tractogram, which were then visualized in TrackVis 0.6.1 (Wang et al., 2007).
 
-## In vivo diffusion
+#### In vivo diffusion
 
 7T in vivo dMRI data was corrected for distortions with the HCP pipeline (Glasser et al., 2016; Sotiropoulos et al., 2013). Specifically, geometric and eddy-current distortions, as well as head motion, were corrected by modeling and combining data acquired with opposite phase encoding directions (Andersson et al., 2003; Andersson and Sotiropoulos, 2015; De No, 2016). The data were then masked to include just the brainstem and thalamus, matching the post mortem specimen.
 
@@ -332,12 +442,22 @@ Similar to the post mortem analysis, we estimated diffusion FODs with a CSD mode
 
 For the tractography in the in vivo data we used subcortical auditory ROIs as defined by the analysis of the functional data (i.e. regions that exhibited significant [corrected for multiple comparisons] response to sound presentation in at least three out of 10 subjects). The functional ROIs were transformed to individual diffusion space and used as tractography seeds, with all other auditory ROIs as waypoints, producing a subcortical auditory tractogram for each in vivo subject.
 
-## Data and code availability
+### Data and code availability
 
 Unprocessed in vivo data are available at https://openneuro.org/datasets/ds001942/versions/1.2.0 (DOI: 10.18112/openneuro.ds001942.v1.2). Atlas segmentations and tractography streamlines are available through the Open Science Framework (https://osf.io/hxekn/). Processing and analysis resources, including links to all data and software used in this paper, are available at https://github.com/sitek/subcortical-auditory-atlas (Sitek and Gulban, 2019; copy archived at https://github.com/elifesciences-publications/subcortical-auditory-atlas). See Figure 8 for an overview of currently available data and code (full resolution version available at our code repository).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig8-v2.jpg)
 
-## Animated 3D volume renderings
+### Animated 3D volume renderings
 
 Video animations in Figure 9, Figure 10 and Figure 11 were created using pyqtgraph (v0.10.0, http://www.pyqtgraph.org/) volume rendering. The t-value maps were clipped to 0–20 range and scaled to 0–255 range. These t-values are 3D volume rendered by assigning the corresponding gray value to each voxel as well as the alpha channel (transparency). Which means that lower values are closer to black and translucent. Animation frames were generated by rotating camera one degree at a time for 360 degrees. Additive rendering was used for 2D projections to provide depth vision (i.e. for preventing voxels closest to the camera from seeing values inside the clusters.).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig9-v2.jpg)
+
+![Figure 10.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig10-v2.jpg)
+
+**Figure 10.:** (Left)positive t-values (middle) after thresholding (right) leave-one-out probabilistic map ($\geq4$)). Viewing angle here is similar to Figure 1.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/48932/elife-48932-fig11-v2.jpg)
+
+**Figure 11.:** Viewing angle here is similar to Figure 1.

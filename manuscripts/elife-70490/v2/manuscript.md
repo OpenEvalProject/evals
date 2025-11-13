@@ -32,7 +32,7 @@
 
 ## Abstract
 
-Skeletal muscles are composed of hundreds of multinucleated muscle fibers (myofibers) whose myonuclei are regularly positioned all along the myofiber’s periphery except the few ones clustered underneath the neuromuscular junction (NMJ) at the synaptic zone. This precise myonuclei organization is altered in different types of muscle disease, including centronuclear myopathies (CNMs). However, the molecular machinery regulating myonuclei position and organization in mature myofibers remains largely unknown. Conversely, it is also unclear how peripheral myonuclei positioning is lost in the related muscle diseases. Here, we describe the microtubule-associated protein, MACF1, as an essential and evolutionary conserved regulator of myonuclei positioning and maintenance, in cultured mammalian myotubes, in Drosophila muscle, and in adult mammalian muscle using a conditional muscle-specific knockout mouse model. In vitro, we show that MACF1 controls microtubules dynamics and contributes to microtubule stabilization during myofiber’s maturation. In addition, we demonstrate that MACF1 regulates the microtubules density specifically around myonuclei, and, as a consequence, governs myonuclei motion. Our in vivo studies show that MACF1 deficiency is associated with alteration of extra-synaptic myonuclei positioning and microtubules network organization, both preceding NMJ fragmentation. Accordingly, MACF1 deficiency results in reduced muscle excitability and disorganized triads, leaving voltage-activated sarcoplasmic reticulum Ca 2+ release and maximal muscle force unchanged. Finally, adult MACF1-KO mice present an improved resistance to fatigue correlated with a strong increase in mitochondria biogenesis.
+Skeletal muscles are composed of hundreds of multinucleated muscle fibers (myofibers) whose myonuclei are regularly positioned all along the myofiber’s periphery except the few ones clustered underneath the neuromuscular junction (NMJ) at the synaptic zone. This precise myonuclei organization is altered in different types of muscle disease, including centronuclear myopathies (CNMs). However, the molecular machinery regulating myonuclei position and organization in mature myofibers remains largely unknown. Conversely, it is also unclear how peripheral myonuclei positioning is lost in the related muscle diseases. Here, we describe the microtubule-associated protein, MACF1, as an essential and evolutionary conserved regulator of myonuclei positioning and maintenance, in cultured mammalian myotubes, in Drosophila muscle, and in adult mammalian muscle using a conditional muscle-specific knockout mouse model. In vitro, we show that MACF1 controls microtubules dynamics and contributes to microtubule stabilization during myofiber’s maturation. In addition, we demonstrate that MACF1 regulates the microtubules density specifically around myonuclei, and, as a consequence, governs myonuclei motion. Our in vivo studies show that MACF1 deficiency is associated with alteration of extra-synaptic myonuclei positioning and microtubules network organization, both preceding NMJ fragmentation. Accordingly, MACF1 deficiency results in reduced muscle excitability and disorganized triads, leaving voltage-activated sarcoplasmic reticulum Ca2+ release and maximal muscle force unchanged. Finally, adult MACF1-KO mice present an improved resistance to fatigue correlated with a strong increase in mitochondria biogenesis.
 
 ## Introduction
 
@@ -46,43 +46,87 @@ Here, using in vitro and in vivo models, we report that MACF1 is important for t
 
 ## Results
 
-## MACF1 uses microtubules to set myonuclei spreading during myofibers maturation
+### MACF1 uses microtubules to set myonuclei spreading during myofibers maturation
 
 To identify new factors that contribute to myonuclei spreading in myofibers, we purified proteins able to bind to Taxol-stabilized microtubules from 3 days primary mouse myotubes and 13 days differentiated myofibers (Figure 1A). The major Microtubule-Associated-Proteins (MAPs) identified by mass-spectrometry using this protocol revealed the significant presence of MACF1 protein (Figure 1—figure supplement 1A–B). MACF1 is a member of the spectraplakin family known to play an architectural role through regulation of the spatial arrangement and function of specific organelles such as the nucleus, the mitochondria, the Golgi apparatus, and the sarcoplasmic reticulum (Boyer et al., 2010). MACF1 is a large protein mainly described as a cytoskeleton linker that binds and aligns microtubules and actin networks (Preciado López et al., 2014). In developing myofibers, actin is actively involved in myoblasts fusion and contributes to sarcomere formation (Kim et al., 2015; Sanger et al., 2010) while microtubules actively participate in myofiber elongation and myonuclei spreading (Metzger et al., 2012). Although MACF1 was initially described to be predominantly expressed in neurons and muscle (Bernier et al., 2000), its role in muscle fibers remains elusive. We first addressed the localization of MACF1 in mature myofibers formed in vitro. Our immunofluorescence approach revealed a dotted pattern all along the myofibers that mainly colocalized with its cortical microtubule network, in agreement with our mass-spectrometry results (Figure 1B). Of importance, MACF1 accumulates preferentially around the peripheral myonuclei in mature myofibers (Figure 1B, zoom panels). Conversely, MACF1 is clearly excluded from actin network structures (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/70490/elife-70490-fig1-v2.jpg)
+
+**Figure 1.:** (A) Scheme presentation of the sequential steps to obtain immature myotubes and mature myofibers from primary mouse myoblasts. Taxol stabilized microtubules proteome was collected either from WT elongated myotubes or from mature contractile myofibers. For downregulating experiments, siRNA/shRNA were transfected in early steps of differentiation just before myotubes formation. (B) Confocal immunofluorescence images (63×) presenting the organization of MACF1 (green) and total alpha tubulin or F-actin (red) in WT mature mouse primary myofibers. Scale bar = 10 µm. (C) Western blot analysis of MACF1 protein expression (main two isoforms at 830 and 630 kD) in total protein extracts of primary cells at proliferation cycle (GM for growth media) and in 3- or 5 days post-differentiation myotubes or myofibers. Cells were treated either with a scramble shRNA or a pool of four shRNAs targeting Macf1. GAPDH was used as loading control. (D) Immunofluorescence staining (10×) of F-actin (green) and myonuclei (red) in primary myofibers treated either with scramble shRNA (left panel) or with a pool of four distinct shRNAs targeting Macf1 (right panel) after 13 days of differentiation. Scale Bar = 50 µm. (E) Representative immunofluorescence microscopy images (63×) of F-actin (green) and myonuclei (red) in primary myofibers treated with scramble shRNA (left panel) or with a pool of four distinct shRNAs targeting Macf1 (right panel) after 13 days of differentiation. Scale Bar = 10 µm. (F) Sarcomere length measured on the immunofluorescence images of F-actin from 13 days mature primary myofibers treated with either scramble shRNA or a pool of four distinct shRNAs targeting Macf1. Data were obtained from three individual experiments. Line is set at median. Ns stands for not significant (Student’s t test). (G) Confocal immunofluorescence images (63×) presenting the organization of total alpha tubulin (red) or MACF1 (green) in mature primary myofibers following treatment with either scramble shRNA (left panel) or a pool of four distinct shRNAs (right panel) targeting Macf1. Scale bar = 10 µm. (H–J) Mean values for fluorescent intensity of total alpha tubulin (H), myonuclei ferret (I) and distance between adjacent myonuclei (J) measured on mature primary myofibers following treatment with either scramble shRNA or a pool of four distinct shRNAs targeting Macf1. All panels were generated from data obtained from three individual experiments. Line is set at median. *p<0.05 and ***p<0.001 (Student’s t test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70490/elife-70490-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Table showing mass spectrometry identification of MACF1 and Kif4b in 3- and 13-day-old primary myotubes and myofibers, respectively. (B) Schematic representation of MACF1 identified domains. ABD is the ‘Actin Binding Domain’ and MTBD is the ‘Microtubule Binding Domain’. (C) Western blot analysis of MACF1 protein expression (main two isoforms at 830 and 630 kD) in total protein extracts of primary cells in myotubes and myofibers at 3- and 5 days post-differentiation, respectively. Cells were treated with a scramble siRNA or a pool of three individual siRNAs targeting Macf1. GAPDH was used as loading control. (D) QRT-PCR analysis of Macf1 gene expression level relative to housekeeping genes in proliferating C2C12 cells (GM) and after 1, 3, or 5 days of differentiation. Data are from three individual experiments. Mean (with SEM) values are presented. (E) Immunofluorescence staining of Myosin Heavy Chain (green) and myonuclei (red) in primary myotubes treated with scramble siRNA (left panel) or a pool of three distinct siRNAs targeting Macf1 (right panel) after 3 days of differentiation. Scale Bar = 150 µm. (F–G) Values for myotube’s length (F) and mean distance between myonuclei and myotube’s centroid (G) ranked by myonuclei content per myotubes were quantified after 3 days of differentiation on cells treated with a scramble siRNA or a pool of three individual Macf1 siRNAs. At least three individual experiments per condition were quantified. Line is set at median. (H–I) Myonuclei Spreading Graph (MSG) representing the statistical spatial distribution of myonuclei along myotubes in cells treated with scramble siRNA (H) or with a pool of three individual siRNAs (I) after 3 days of differentiation. (J) Immunofluorescence staining of Myosin Heavy Chain (green) and myonuclei (red) in 5-day-differentiated C2C12 myotubes treated with scramble siRNA (left panel) or a pool of three individual siRNAs targeting Macf1 (right panel). Scale Bar = 50 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70490/elife-70490-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–C) Myofibers width (A), myonuclei ferret (B) and distance between adjacent myonuclei (C) measured on mature primary myofibers treated with either scramble siRNA, three individual siRNAs targeting Macf1 or a pool of the three siRNAs targeting Macf1 in addition to cells treated with scramble shRNA, four individual shRNAs targeting Macf1 or a pool of the four shRNAs targeting Macf1. All panels were generated from data obtained from three individual experiments. Line is at median. Ns stands for not significant and ***p<0.001 (Student’s t test).
 
 To determine whether MACF1 is important for skeletal muscle development, we addressed its role during myotubes formation and in mature myofibers. Mouse Macf1 mRNA was previously shown to increase steadily during myogenesis (Leung et al., 1999). We first observed an absence of MACF1 in proliferating myoblasts and confirmed a burst of MACF1 protein expression during the early steps of myotubes formation using primary mouse myoblasts cells and the C2C12 myogenic cell line (Figure 1C, Figure 1—figure supplement 1C–D). MACF1 expression was dramatically reduced upon transfection of siRNA or small hairpin RNA (shRNA) targeting the MACF1 mRNA compared to their respective scrambled (Scr) controls (Figure 1C, Figure 1—figure supplement 1C). MACF1 down-regulation had no impact on myotubes formation and architecture, as reflected by the unaffected ratio of myotube length to myonuclei content (Figure 1—figure supplement 1E–F). In accordance, neither myonuclei distribution as assessed by the mean distance between myonuclei and myotube’s centroid nor the statistical distribution of myonuclei along myotubes length were affected following MACF1 down-regulation (Figure 1—figure supplement 1G–I). These results were confirmed in C2C12 myotubes cells where no alteration in myonuclei spreading was observed following MACF1 downregulation (Figure 1—figure supplement 1J).
 
 To further investigate the implication of MACF1 in mature myofibers, primary mouse myotubes were maintained in differentiation media for 10 additional days using a protocol that allows myofibrillogenesis, sarcomeric structures formation and peripheral myonuclei adopting a flatten architecture and regular spreading along myofibers (Falcone et al., 2014). This long-term differentiation approach showed that MACF1 depletion did not impact the global maturation of myofibers, as reflected by homogeneous myofibers width and unaffected actin network striation (Figure 1D–F; Figure 1—figure supplement 2A). Yet, when addressing the global integrity of the microtubule network in these mature myofibers by immunofluorescence, we found a 50% decrease of the microtubule staining intensity in the vicinity of the myonuclei perimeter and an apparently less dense cortical network (Figure 1G–H). Accordingly, myonuclei shape was much rounder in MACF1-depleted condition, as appreciated by a significant reduction of the myonuclei feret diameter (Figure 1I, Figure 1—figure supplement 2B). As microtubules are used in developing myofibers by multiple molecular motors to determine myonuclei spreading (Gache et al., 2017), we investigated the impact of MACF1 depletion on this process and observed a significant reduction in the mean distance between adjacent myonuclei (Figure 1J, Figure 1—figure supplement 2C) in MACF1-depleted myotubes.
 
-## MACF1 controls microtubules dynamics and myonuclei motion in developing muscle fibers
+### MACF1 controls microtubules dynamics and myonuclei motion in developing muscle fibers
 
 To better understand the localization of MACF1, as driven by its Microtubule Binding Domain (MTBD), we expressed only the MTBD of MACF1 in immature primary myotubes and in mature primary myofibers (Figure 2A–B). Interestingly, in primary myotubes, MACF1-MTBD appeared as small comets that merged with the microtubule network all along myotubes length (Figure 2A). In contrast, in mature myofibers, we observed a strong accumulation of stable MACF1-MTBD longitudinal bundles close to myonuclei, in addition to small comets dispersed along the myofibers (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/70490/elife-70490-fig2-v2.jpg)
 
-**Figure 2.:** (A–B) representative confocal immunofluorescence images (63×) presenting MACF1-MTBD (green) and tyrosinated alpha tubulin (red) in primary myotubes (A) or alpha actinin (red) in primary myofibers (B). Scale bar = 10 µm. (C) Quantification of EB3 comets speed in primary cells treated with either scramble siRNA or a pool of 3 individual siRNAs targeting Macf1 in primary myotubes at three different time points during maturation. At least 200 comets from three individual experiments were mapped per condition. Line is set at median. Ns stands for not significant, *p<0.05 and **p<0.01 (Student’s t test). (D) Frames from a 14 hr time-lapse movie of two channels (shRNA in green and lamin-chromobody in red) taken 5 days post differentiation from primary myotubes treated with either a scramble shRNA (upper panel) or a mix of shRNAs targeting Macf1 (lower level). In the first frame (on the left), myofibers are selected in white, which corresponds to the region used to create the adjacent kymograph. Scale bar = 10 µm. (E–H) Speed (E), Time in motion (F), Duration of pauses (G), and Distance travelled by myonuclei (H) were quantified using SkyPad analysis (Cadot et al., 2014). Quantifications were done on myonuclei within different myofibers from three individual experiments. Line is set at median. Ns stands for not significant, *p<0.05, **p<0.01, and ***p<0.001 (Student’s t test).Figure 2—source data 1.Figure 2C and E–H.
+**Figure 2.:** (A–B) representative confocal immunofluorescence images (63×) presenting MACF1-MTBD (green) and tyrosinated alpha tubulin (red) in primary myotubes (A) or alpha actinin (red) in primary myofibers (B). Scale bar = 10 µm. (C) Quantification of EB3 comets speed in primary cells treated with either scramble siRNA or a pool of 3 individual siRNAs targeting Macf1 in primary myotubes at three different time points during maturation. At least 200 comets from three individual experiments were mapped per condition. Line is set at median. Ns stands for not significant, *p<0.05 and **p<0.01 (Student’s t test). (D) Frames from a 14 hr time-lapse movie of two channels (shRNA in green and lamin-chromobody in red) taken 5 days post differentiation from primary myotubes treated with either a scramble shRNA (upper panel) or a mix of shRNAs targeting Macf1 (lower level). In the first frame (on the left), myofibers are selected in white, which corresponds to the region used to create the adjacent kymograph. Scale bar = 10 µm. (E–H) Speed (E), Time in motion (F), Duration of pauses (G), and Distance travelled by myonuclei (H) were quantified using SkyPad analysis (Cadot et al., 2014). Quantifications were done on myonuclei within different myofibers from three individual experiments. Line is set at median. Ns stands for not significant, *p<0.05, **p<0.01, and ***p<0.001 (Student’s t test).
 
 MACF1 was previously shown to regulate microtubules polymerization (Alves-Silva et al., 2012; Ka et al., 2016; Wang et al., 2015). We thus questioned, in our system, how microtubule dynamics evolve during the myofibers maturation steps and whether MACF1 depletion impacts this process. To study the microtubule network dynamics in developing myofibers, we used the tracking of a fluorescently-tagged End Binding protein member (EB3) at different time points during maturation of in vitro primary myofibers (Figure 2C, Video 1). During myofibers maturation process, EB3-comets speed was relatively constant (≈ 19 μm/min) until 5 days of maturation. After this time point, EB3-comets speed decreased significantly, reflecting a progressive downturn in microtubule dynamics (Oddoux et al., 2013; Figure 2C). However, the velocity of EB3 comets was increased by 15% upon MACF1 downregulation and remained high (≈ 23 μm/min) all along the process of myofibers maturation (Figure 2C). This is consistent with a role for MACF1 in the regulation of microtubule polymerization, mainly as a stabilization factor. As myonuclei preferentially use the microtubule network to move longitudinally along myotubes (Gache et al., 2017; Metzger et al., 2012), we next investigated the impact of the increase in microtubule dynamics on myonuclei movements during myofibers maturation. Just before fusion, myoblasts were co-transfected with the lamin-chromobody to visualize myonuclei concomitantly with a shRNA targeting either a scramble sequence or Macf1, and a GFP reporter (Figure 2D, Video 2). We tracked myonuclei in 5-day-differentiated myofibers every 15 min for 14 hr and analyzed their displacement parameters by the SkyPad method (Cadot et al., 2014). In control conditions, myonuclei spent 32% of the time in motion at a median speed of 0.16 μm/min, resulting in a displacement of 24 μm after 14 hr (more than twice bigger than the mean myonuclei feret). Interestingly, in the absence of MACF1, the median velocity of myonuclei was not significantly changed (Figure 2E) but the percentage of time that myonuclei spent in motion was doubled, reaching 66% of the time (Figure 2F). Accordingly, the median motion pause was 530 min in the control conditions while it fell down to 330 min in the absence of MACF1 (Figure 2G). Overall, in the absence of MACF1, myonuclei traveled twice more distance than in control conditions with a mean distance of 44 μm in 14 hr (Figure 2H).
 
+![Video 1.](https://cdn.elifesciences.org/articles/70490/elife-70490-video1.mp4.jpg)
+
+**Video 1.:** Each frames represent 500 milliseconds and was recorded for a period of time of 7 s.
+
+![Video 2.](https://cdn.elifesciences.org/articles/70490/elife-70490-video2.mp4.jpg)
+
+**Video 2.:** Time laps images were captured form myotubes 5 days after starting differentiation process. Primary myotubes were recorded every 15 min for a period of time of 14 hr.
+
 Thus, depletion of MACF1 generates increased microtubule dynamics, which in turn elevate myonuclei motion during myofibers maturation, inducing failure in myonuclei spreading in mature myofibers.
 
-## Conditional MACF1-KO adult mice show microtubule network disorganization in their skeletal muscle fibers
+### Conditional MACF1-KO adult mice show microtubule network disorganization in their skeletal muscle fibers
 
 To further investigate the role of MACF1 in skeletal muscle development, we used a conditional Macf1 knockout mouse line in which exons 6 and 7 of the Macf1 gene are floxed (Goryunov et al., 2010). Homozygous mice were crossed with mice carrying the Cre-recombinase expression under the control of the Human Skeletal muscle Actin (HSA) promoter (Miniou, 1999). Briefly, mice carrying two floxed alleles of Macf1 (Macf1f/f) were crossed with heterozygous mice for Macf1 (Macf1f/-) that carried the HSA::Cre transgene (HSA::Cre; Macf1f/−), generating the conditional mutant (HSA::Cre; Macf1f/f; hereafter referred to as Macf1 Cre+) and control mice (WT; Macf1f/f referred as Macf1 Cre-) (Figure 3A–B). We quantified the efficiency of this approach by measuring the loss of MACF1 mRNA in muscle lysates and observed that its levels were reduced by 70% (Figure 3C, Figure 3—figure supplement 1A). Besides, MACF1 downregulation was confirmed by western blotting (Figure 3—figure supplement 1B). Macf1 conditional-KO mice were born at Mendelian frequency and appeared indistinguishable from WT littermates (data not shown). Comparing the body weight evolution between conditional-KO (Macf1 Cre+) and control mice (Macf1 Cre-) throughout growing and maturation did not reveal any difference between the two groups (Figure 3—figure supplement 1C–E).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70490/elife-70490-fig3-v2.jpg)
+
+**Figure 3.:** (A) Scheme of the strategy used to generate muscle specific Macf1 knockout mouse model. (B) Representative PCR gel confirming the floxed Macf1 gene in mutant mice carrying Cre transgene. (C) Quantification of efficacy of the Cre-lox system in our muscle specific mouse model by analyzing the Macf1 gene expression level. qRT-PCR was carried out on total mRNA extracted from Gastrocnemius of 3 WT and 3 Macf1 KO mice of 12-month-old. Following the calculation of relative gene expression level on housekeeping genes for each mouse, the mean expression level of Macf1 was calculated for the WT mice. To generate the graph, the Macf1 expression level of each WT and KO mouse was then normalized on the previously calculated mean value. Line is set at mean (with SEM). ***p<0.001 (Student’s t test). (D) Representative confocal images (63×) of isolated myofibers from Tibialis Anterior of Macf1 Cre- (upper panel) and Cre+ (lower panel) mice, showing MACF1 (green), myonuclei (blue) and microtubules or F-actin (red). Scale Bar = 15 µm. (E) Sarcomere length quantified from the alpha actinin staining from 3 Macf1 Cre- and 3 Macf1 Cre+ 12-month-old mice. Following myofibers isolation from Tibialis Anterior, the distance between alpha actinin transverse bands of 3 myofibers per mouse was measured. Line is set at mean (with SD). Ns stands for not significant (Mann-Whitney test). (F) Microtubules network organization analysis of at least three myofibers from each of the three WT and three conditional Macf1-KO mice using TeDT software. The final generated graph presents a global score for each given degree of microtubules orientation, with 0 and 180 degrees corresponding to the longitudinal microtubules and 90 degrees corresponding to the transverse microtubules. Mean values (with SEM) is presented. (G) Representative confocal images (63×) from myofibers isolated from Tibialis Anterior issued from 12-month-old Macf Cre- (upper panel) or Cre+ (lower panel) mice, presenting tyrosinated tubulin (green), de-tyrosinated tubulin (red) and myonuclei (blue). White arrows point to myonuclei. Scale Bar = 15 µm. (H) Quantification of the percentage of myonuclei presenting the total de-tyrosinated tubulin ring. Quantifications were done on confocal images obtained from several isolated myofibers from Tibialis Anterior of three WT and three conditional Macf1-KO mice at the age of 12 months. Line is set at median. ***p<0.001 (Student’s t test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70490/elife-70490-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Quantification of efficacy of Cre-lox system in our muscle specific mouse model by analyzing the Macf1 gene expression level. QRT-PCR was carried out on total mRNA extracted from Gastrocnemius of three individual Macf1 Cre- and Macf1 Cre+ mice at different ages. Following the calculation of relative gene expression level to housekeeping genes for each mouse, the mean expression level of Macf1 was calculated for the WT mice. To generate the graph, the Macf1 expression level of each WT and KO mouse was then normalized on the previously calculated mean value. Line is set at mean (with SEM). (B) Dot blot assay for MACF1 expression in Heart, Brain and Gastrocnemius lysates from 12-month-old Macf1 Cre- and Macf1 Cre+ mice. (C–E) Evaluation of total body weight (C), weight of Tibialis Anterior (D) and weigh of Gastrocnemius (E) of Macf1 Cre- and Macf1 Cre+ mice at different ages. Line is set at mean (with SEM). Ns stands for not significant (Student’s t test). (F) Measurements of sarcomere length quantified on alpha actinin staining in three individual Macf1 Cre- and Macf1 Cre+ mice at each given age. Following myofibers isolation from Tibialis Anterior, the distance between alpha actinin transverse bands of 3 myofibers per mouse was measured. Line is set at mean (with SD). (G–H) Microtubule network organization analysis from at least three myofibers from three individual Macf1 Cre- or conditional KO Macf1 Cre+ mice at 2 months (G) or 6 months (H) of age, using TeDT software. The final graph presents a global score for each given degree of microtubules orientation, with 0 and 180 degrees corresponding to the longitudinal microtubules and 90 degrees to the transverse microtubules. Mean values (with SEM) is presented. (I) Quantification of the percentage of myonuclei presenting the total de-tyrosinated tubulin ring. Quantifications were done on confocal images obtained from several myofibers isolated from Tibialis Anterior muscles of three Macf1 Cre- and three conditional KO Macf1 Cre+ mice at different ages. Line is set at median. Ns stands for not significant and ***p<0.001 (Student’s t test).
 
 We first addressed the impact of MACF1 depletion on the cytoskeleton network using mature myofibers extracted from the Tibialis Anterior muscles of WT and conditional MACF1-KO mice. As expected from our in vitro experiments, immunofluorescence approach confirmed the preferred co-localization of MACF1 with the microtubule network rather than with the actin network (Figure 3D). We also observed a clear accumulation of MACF1 in the vicinity of myonuclei (Figure 3D, arrows) as previously reported in Drosophila myofibers but not in murine myofibers (Oury et al., 2019; Wang et al., 2015). In Macf1 Cre+ muscle myofibers, MACF1 staining was clearly less intense all along the myofibers and particularly within the myonuclei vicinity. Also, the microtubule network organization was clearly altered in Macf1 Cre+ myofibers while there was no concurrent sign of actin network defect (Figure 3D). The preserved integrity of the actin network was confirmed by the absence of change in sarcomere length at different ages (Figure 3E, Figure 3—figure supplement 1F). To quantify the spatial disorganization of the microtubule network, we used a texture detection tool (TeDT) (Liu and Ralston, 2014). Our data show that the longitudinal microtubule network is the most affected regardless of the age of the animals (2-, 6-, or 12-month-old mice (Figure 3F, Figure 3—figure supplement 1G–H)), in agreement with the loss of MACF1 staining in the Macf1 Cre+ muscle myofibers (Figure 3D). Altogether, these evidences demonstrate that MACF1 stabilizes the microtubule network during myofibers maturation.
 
 MACF1 can modulate microtubule dynamics through the interaction with different partners such as CLAPS2, EB1, CAMSAP3, Nesprin, Map1B, ErbB2 (Ka et al., 2014; Noordstra et al., 2016; Pereira et al., 2006; Ryan et al., 2012; Zaoui et al., 2010). In addition, microtubules are subject to a variety of post-translational modifications (PTMs) that are associated with changes in microtubules dynamics (Nieuwenhuis and Brummelkamp, 2019). Among these, tubulin de-tyrosination is associated with longer-living microtubules, whereas dynamic microtubules are mainly tyrosinated (Bulinski and Gundersen, 1991). To further investigate the role of MACF1 in the long-term balance of microtubule dynamic in myofibers, we addressed the microtubule tyrosination/de-tyrosination status in muscles from our conditional-KO and control mice (Figure 3G–H). In Macf1 Cre- muscle fibers, tyrosinated tubulin is found all along microtubules and in the vicinity of myonuclei along myofibers. Conversely, de-tyrosinated tubulin was found preferentially in the vicinity of myonuclei. While in Macf1 Cre+ muscles, there was no change in the tyrosinated tubulin pattern, de-tyrosinated tubulin staining at myonuclei periphery was either severely reduced or absent (Figure 3G, arrows). Interestingly, this modification was relevant only in muscles from 12-month-old Macf1 Cre+ mice (Figure 3H, Figure 3—figure supplement 1I), suggesting a progressive impact of MACF1 loss on the microtubules pattern. Therefore, MACF1 plays a critical role in the long-term maintenance of stability of the peri-nuclear and longitudinal microtubule network of myofibers.
 
-## Muscle-specific conditional MACF1-KO mice exhibit progressive myonuclei mislocalization
+### Muscle-specific conditional MACF1-KO mice exhibit progressive myonuclei mislocalization
 
 We next assessed myonuclei localization along muscle fibers of Macf1 Cre+ mice. Tibialis Anterior myofibers were extracted from 2-, 6-, and 12 months old Macf1 Cre- and Macf1 Cre+ mice and immunofluorescence staining was used to analyze myonuclei distribution (Figure 4A). We found that the shortest distance between neighboring myonuclei was increasing throughout development in wild-type muscles, reaching a plateau at 6 months of age (Figure 4B). In MACF1 depleted myofibers, not only this increase was not observed during development but there was also a significant drop in the value for the distance between myonuclei in myofibers from 12-month-old mice (Figure 4B). In addition, the increase in the myonuclei feret value observed in control myofibers, was abolished in Macf1 Cre+ myofibers (Figure 4C), leading to an increase in myonuclei roundness (Figure 4D), consistent with the slackening of the cytoskeleton pressure on the myonuclei membrane (Wang et al., 2015).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/70490/elife-70490-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative confocal images (63×) of myofibers isolated from Tibialis Anterior of Macf1 Cre- (upper panel) and Cre+ (lower panel) mice at the age of 12 months presenting alpha-actinin (green) and myonuclei (red). Scale Bar = 15 µm. (B–D) Quantification of distance between the nearest myonuclei (B), myonuclei feret (C) and myonuclei roundness (D) measured on isolated myofibers from Tibialis Anterior of Macf1 Cre- and Cre+ mice (as presented in panel A) at 2-, 6-, and 12 months of age. Several myofibers were subjected to analysis per mouse. Each group gathers data obtained from myofibers of 3 or more mice. Line is set at median. **p<0.01 and ***p<0.001 (Student’s t test). (E) Representative images of Tibialis Anterior muscle cross-section from Macf1 Cre- (left panels) and Macf1 Cre+ (right panels) mice at the age of 8 and 12 months, stained for myonuclei (red) and Laminin (green). Examples of myofibers with mis-localized myonuclei are indicated by white arrows. Scale Bar = 150 µm. (F) Quantification of the percentage of myofibers with mis-localized myonuclei in Tibialis Anterior of 3, 8, and 12 months-old Macf1 Cre- and Macf1 Cre+ mice. Line is set at median. Ns stands for not significant and ***p<0.001 (Student’s t test). (G) Distribution of myofibers cross-section area in the Tibialis Anterior from 3-, 8-, and 12-months-old Macf1 Cre- and Macf1 Cre+ mice. Line is set at mean (with SEM). Ns stands for not significant, *p<0.05 and **p<0.01 (Student’s t test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70490/elife-70490-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative images of Gastrocnemius and Soleus muscles cross-sections from Macf1 Cre- (left panels) and Macf1 Cre+ (right panels) mice at the age of 8 and 12 months, stained for myonuclei (red) and Laminin (green). Example of myofibers with mis-localized myonuclei are indicated by white arrows. Scale Bar = 100 µm. (B) Quantification of the percentage of myofibers with mis-localized myonuclei in Tibialis Anterior, Soleus and Gastrocnemius of 3-, 8-, and 12-month-old Macf1 Cre- and Macf1 Cre+ mice. Line is set at median. Ns stands for not significant, *p<0.05, **p<0.01, and ***p<0.001 (Student’s t test). (C) Quantification of the number of muscle fibers per cross-sections of Tibialis Anterior, Soleus and Gastrocnemius of 3-, 8-, and 12-month-old Macf1 Cre- and Macf1 Cre+ mice. Line is set at median. Ns stands for not significant (Student’s t test). (D–E) QRT-PCR results presenting relative gene expression levels for Myogenin (D) and MyoD (E) in total mRNA extracts from Gastrocnemius of Macf1 Cre- and Cre+ at each given age. Target genes relative expression level to housekeeping genes is presented on each panel. Line is set at mean (with SEM). Ns stands for not significant (Student’s t test).
+
 In normal conditions, myonuclei are regularly spaced at the periphery along muscle fibers (Bruusgaard et al., 2006). We compared myonuclei localization in different types of muscles from Macf1 Cre- and Macf1 Cre+ mice by analyzing muscle cross-sections stained with DAPI and laminin (to determine the limit of each myofiber) (Figure 4E, Figure 4—figure supplement 1A). We observed a significant increase in the number of delocalized myonuclei in the Macf1 Cre+ muscles, either at the center or elsewhere dispatched within the myofibers of several skeletal muscles (Tibialis Anterior, Soleus and Gastrocnemius) in 12-month-old mice (Figure 4E–F, Figure 4—figure supplement 1A–B). Interestingly, no significant delocalization of myonuclei was observed in 3- and 8-month-old mice (Figure 4—figure supplement 1A–B), suggesting that peripheral myonuclei alteration precede myonuclei internalization. Remarkably, peripheral myonuclei spreading is altered concomitantly with microtubules disorganization, while myonuclei internalization correlates with the disappearance of stable microtubules around myonuclei. With respect to myofiber size, no significant alteration was detected in the cross-sectional area (CSA) in Tibialis Anterior muscles from 3-month-old mice (Figure 4G). Nonetheless, we observed a shift of the distribution towards a smaller CSA in muscles from 8-month-old Macf1 Cre+ mice, which was maintained at 12 months of age (Figure 4G). Of note, changes in myonuclei positioning were not associated with an alteration in the total number of myofibers per muscle (Figure 4—figure supplement 1C), nor with a massive regeneration process, as evidenced by the absence of Myogenin or MyoD mRNA upregulation (Figure 4—figure supplement 1D–E). Thus, MACF1 is implicated in the maintenance of peripheral myonuclei spreading in adult myofibers as well as in the prevention of myonuclei internalization.
 
-## MACF1-deficient muscles exhibit progressive neuromuscular junction alteration
+### MACF1-deficient muscles exhibit progressive neuromuscular junction alteration
 
 MACF1 contributes to the maintenance of the neuromuscular junction (NMJ) by recruiting microtubules at that location (Oury et al., 2019) where synaptic myonuclei are clustered underneath the junction (Bruusgaard et al., 2006). We thus investigated the potential implication of MACF1 in myonuclei clustering at the NMJ. Immunofluorescence staining revealed no clear accumulation or specific localization of MACF1 at the NMJ, in contrast with a previous report on mouse muscle (Oury et al., 2019). However, consistent with observations from this group, there was a clear progressive alteration of acetylcholine receptors (AChRs) patterning in myofibers from Macf1 Cre+ mice, characterized by a decrease of AChRs clusters size and an increase of NMJ fragmentation (Figure 5A–C). This AChRs clustering impairment was confirmed in different muscles (Tibialis Anterior, Extensor Digitorum Longus, and Rectus Lateralis) (Figure 5—figure supplement 1A–B). We also confirmed these results on the neuromuscular junction of Drosophila model, using the muscle-specific driver (Mef2-GAL4) to express RNAi against Drosophila Shot (Macf1 orthologous) (Wang et al., 2015). Immunostaining against Shot confirmed a preferential localization of the protein around myonuclei but not at the NMJ and showed a significant reduction of protein level around myonuclei in Shot-KD larval muscles (Figure 5—figure supplement 1C–D). In accordance with the conditional-KO mouse model, we found that the size of active zones of synaptic buttons and post-synaptic terminals were decreased in Shot-KD larval muscles (Figure 5—figure supplement 1E–F).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/70490/elife-70490-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative confocal images (63×) of post-synaptic NMJs within isolated myofibers from Tibialis Anterior of Macf1 Cre- (left panel) and Cre+ (right panel) mice at the age of 12 months presenting MACF1 (green), AChRs clusters (red) and myonuclei (blue). Scale Bar = 10 µm. (B–D) Quantification of post-synaptic NMJs area (B), number of AChRs clusters (C) and number of synaptic myonuclei (D) measured on myofibers isolated from Tibialis Anterior of Macf1 Cre- and Cre+ mice (as presented in panel A) at 2-, 6-, and 12 months of age. Several myofibers were subjected to analysis per mouse and each group is formed from at least three mice. Line is set at median. Ns stands for not significant, *p<0.05, **p<0.01 and ***p<0.001 (Student’s t test). (E) Representative confocal images (63×) presenting tyrosinated tubulin (green), de-tyrosinated tubulin (red), and AChRs clusters (blue) in myofibers isolated from Tibialis Anterior of Macf1 Cre- (three left panels) and Cre+ (three right panels) mice at the age of 12 months. Scale Bar = 10 µm. (F) Quantification of the ratios of fluorescence intensity from tyrosinated tubulin to total tubulin, de-tyrosinated tubulin to total tubulin and de-tyrosinated tubulin to tyrosinated tubulin. The mean fluorescence intensity of each given staining was measured specifically for the post-synaptic NMJs area (as presented in panel E) on NMJs of myofibers isolated from Tibialis Anterior of Macf1 Cre- and Cre+ mice at the age of 12 months. Line is set at median. Ns stands for not significant (Student’s t test). (G) Scheme of the strategy used to induce sciatic nerve crush and subsequent analysis of muscle fibers from Macf1 Cre- and Cre+ mice. (H) Distribution of myofibers cross-section areas from non-denervated (referred as ND) and denervated (referred as D) Tibialis Anterior muscles of Macf1 Cre- and Cre+ mice at the age of 8 months. Line is set at mean (with SEM). (I–J) Quantification of post-synaptic NMJs area (I) and number of synaptic myonuclei (J) measured on isolated myofibers from non-denervated (referred as ND) and denervated (referred as D) Tibialis Anterior muscles of Macf1 Cre- and Cre+ mice at the age of 8 months. Line is set at median. *p<0.05, **p<0.01, and ***p<0.001 (Student’s t test). (K) Representative fluorescence images (63×) of AChRs clusters (green) and myonuclei (red) in myofibers treated with scramble shRNA (two upper panels) or with a pool of the four distinct shRNAs targeting Macf1 (two lower panels) after 10 days of differentiation in presence of Agrin in culture medium. Scale Bar = 10 µm. (L) Percentage of myofibers expressing immunofluorescence staining for AChRs in primary myofibers treated with scramble shRNA, with each of the four distinct shRNAs or with a pool of these four distinct shRNAs targeting Macf1 after 10 days of differentiation in the presence of Agrin. Data are from three individual experiments. Line is set at median. Ns stands for not significant (Student’s t test). (M) AChRs clustering distribution in cells treated with scramble shRNA, with each of the four individual shRNAs or with a pool of the four individual shRNAs targeting Macf1 after 10 days of differentiation in the presence of Agrin. Data was collected from three individual experiments for each condition. Line is set at median. Ns stands for not significant, *p<0.05 and **p<0.01 (Student’s t test).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70490/elife-70490-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–B) Representative images of myofibers extracted from Rectus Lateralis muscle stained for myonuclei (blue), presynaptic markers (Neurofilament and Synaptic vesicles 2) (red) and AChRs (green) from 4-month-old Macf1 Cre- (A) and Macf1 Cre+ (B) mice. Scale Bar = 150 µm. (C–D) Larval muscles labeled for Shot (Green), myonuclei (blue) and F-actin (red) in WT (left panels) or RNAi treated muscle-targeting Shot (right panels). (E) Larval muscles labeled for Discs-Large, Dlg (Green), myonuclei (blue) and F-actin (red) in WT (left panel) or RNAi treated muscle targeting Shot (right panel). (F) Larval muscles labeled for Bruchpilot, BRP (Green), myonuclei (blue) and F-actin (red) in WT (left panel) or RNAi-treated muscle targeting Shot (right panel). Scale Bar = 50 µm.
 
 We next studied the association of synaptic myonuclei with the NMJ. We observed a progressive recruitment of myonuclei underneath the NMJ in Tibialis Anterior myofibers of control mice with age, concomitant with an enlargement of the area occupied by AChRs. In control mice, the number of synaptic myonuclei increased from approximately 7 at 2 months of age to 11 at 12 months of age (Figure 5D). In MACF1-depleted myofibers (Macf1 Cre+), there was no new recruitment of synaptic myonuclei over the same period and the number of synaptic myonuclei remains close to 7 from 2- to 12 months of age (Figure 5D). As we identified that microtubule network is altered along muscle fibers in MACF1-depleted condition, we analyzed the potential changes in tyrosinated/de-tyrosinated tubulin distribution at the NMJ. Surprisingly, tubulin accumulation was not observed around the synaptic myonuclei of control myofibers, in contrast with the pattern observed at extra-synaptic nuclei (Figure 5E, Figure 3G). Instead, we detected tubulin accumulation close to the NMJ site of MACF1 mutant mice with a blurry patterning. Nonetheless, de-tyrosinated tubulin accumulation appeared highly correlated with AChRs staining even when AChR clusters were fragmented in the conditional-KO mice (Figure 5E, arrows). Finally, the ratio of both tyrosinated and de-tyrosinated tubulin vs total tubulin at NMJs were not different between Macf1 Cre- and Macf1 Cre+ mice (Figure 5F). This suggests that the role of MACF1 at the NMJ is not related to myonuclei clustering nor to the control of microtubule dynamics but is instead associated with AChRs clustering.
 
@@ -92,21 +136,29 @@ As the role of MACF1 at the NMJ seemed specifically related to AChR clustering, 
 
 Altogether, MACF1 is required to maintain the neuromuscular synapse integrity through AChRs clustering in developing and differentiated myofibers, which in turn controls synaptic myonuclei recruitment at the NMJ.
 
-## Muscle fibers from MACF1-KO mice show muscle excitability defects and T-tubules alteration with preserved excitation-contraction coupling
+### Muscle fibers from MACF1-KO mice show muscle excitability defects and T-tubules alteration with preserved excitation-contraction coupling
 
 To determine whether the above-described alterations impact muscle function, we tested muscular performance in young (4-month-old) and in adult (12-month-old) Macf1 conditional-KO mice compared to age-matched control animals. The formers are mainly characterized by peripheral extra-synaptic myonuclei disorganization, while the latters also exhibit large internalization of extra-synaptic myonuclei mice. We used a strictly non-invasive experimental setup offering the possibility to stimulate the hindlimb muscles in vivo to record force production. Force was measured in response to incremental stimulation frequencies (from 1 to 100 Hz) to obtain the force-frequency relationship. There was no significant difference in the values for maximum force produced between the two groups, irrespective of the mouse age. However, in young mice, there was a large rightward shift of the force production capacity in conditional Macf1 KO mice (Figure 6A), suggesting alteration of either the neuromuscular transmission or of the excitation-contraction coupling process. Of note, this shift was also maintained in adult mice, although in a less pronouced manner (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/70490/elife-70490-fig6-v2.jpg)
 
-**Figure 6.:** Macf1 knockout affects muscle force production and T-tubule organization but leaves SR Ca2+ release unchanged.(A) Force production from the Hindlimb muscles in young (4 months) and adult (12 months) Macf1 Cre- and Macf1 Cre+ mice in response to various incremental stimulation frequencies (from 1 to 100 Hz). Line is set at median. *p<0.05 and **p<0.01 (Student’s t test). (B) Representative electron microscopy images of myofibrils and T-tubule organization within Tibialis Anterior muscles from 12-month-old Macf1 Cre- and Macf1 Cre+ mice. Scale Bar = 0.5 µm. (C) Representative fluorescence microscopy images of di-8-anepps staining of the T-tubule network in Flexor Digitalis Brevis muscle fibers of 12-month-old Macf1 Cre- and Macf1 Cre+ mice. Scale Bar = 15 µm. (D–F) Quantification of T-tubules density index (D), Sarcomere length (E) and T-tubules orientation (F) in Flexor Digitalis Brevis muscle fibers from 12-month-old Macf1 Cre- and Macf1 Cre+ mice. Mean with SD is showing. Ns stands for not significant and *p<0.05 (Student’s t test). (G) Representative rhod-2 Ca2+ transients in a Macf1 Cre- and in a Macf1 Cre+ fiber in response to 0.5 s-long depolarizing pulses from −80 mV to the range of indicated values, with intervals of 10 mV. (H) Corresponding Ca2+ release flux (d[CaTot]/dt) traces calculated as described in the Materials and methods. (I) Mean voltage-dependence of the peak rate of SR Ca2+ release in Macf1 Cre- and in a Macf1 Cre+ fibers. (J) Inset shows the mean values for maximal rate, half-activation voltage and steepness factor (k) for SR Ca2+ release in the two groups of fibers, as assessed from Boltzmann fits to data from each fiber.Figure 6—source data 1.Figure 6A,D–F and I.
+**Figure 6.:** (A) Force production from the Hindlimb muscles in young (4 months) and adult (12 months) Macf1 Cre- and Macf1 Cre+ mice in response to various incremental stimulation frequencies (from 1 to 100 Hz). Line is set at median. *p<0.05 and **p<0.01 (Student’s t test). (B) Representative electron microscopy images of myofibrils and T-tubule organization within Tibialis Anterior muscles from 12-month-old Macf1 Cre- and Macf1 Cre+ mice. Scale Bar = 0.5 µm. (C) Representative fluorescence microscopy images of di-8-anepps staining of the T-tubule network in Flexor Digitalis Brevis muscle fibers of 12-month-old Macf1 Cre- and Macf1 Cre+ mice. Scale Bar = 15 µm. (D–F) Quantification of T-tubules density index (D), Sarcomere length (E) and T-tubules orientation (F) in Flexor Digitalis Brevis muscle fibers from 12-month-old Macf1 Cre- and Macf1 Cre+ mice. Mean with SD is showing. Ns stands for not significant and *p<0.05 (Student’s t test). (G) Representative rhod-2 Ca2+ transients in a Macf1 Cre- and in a Macf1 Cre+ fiber in response to 0.5 s-long depolarizing pulses from −80 mV to the range of indicated values, with intervals of 10 mV. (H) Corresponding Ca2+ release flux (d[CaTot]/dt) traces calculated as described in the Materials and methods. (I) Mean voltage-dependence of the peak rate of SR Ca2+ release in Macf1 Cre- and in a Macf1 Cre+ fibers. (J) Inset shows the mean values for maximal rate, half-activation voltage and steepness factor (k) for SR Ca2+ release in the two groups of fibers, as assessed from Boltzmann fits to data from each fiber.
 
 In skeletal muscle, triads consist of one transverse tubule (T-tubule) with two appended terminal cisternae of sarcoplasmic reticulum (SR). The triad is the structure where excitation-contraction coupling (ECC) takes place. Efficient triad formation has been linked to microtubule organization in muscle cells (Osseni et al., 2016). Since Macf1 conditional-KO myofibers exhibit microtubule disorganization, we used electron microscopy to study the ultrastructure of muscle in Macf1 Cre+ mice and analyzed T-tubules and SR organization (Figure 6B). We found signs of alteration of the T-tubules in some Macf1 Cre+ myofibers (Figure 6B, white arrows) consistent with a possible alteration of ECC. To test this possibility, we compared voltage-activated SR Ca2+ release in Flexor Digitalis Brevis (FDB) muscle fibers isolated from conditional Macf1 Cre+ mice and control mice. Confocal staining using di-8-anepps showed an overall comparable structure of T-tubule network in Macf1 Cre- and in Macf1 Cre+ FDB muscle fibers (Figure 6C -top and -middle panels). However, some isolated muscle fibers from the conditional mutant mice exhibited strong alteration of T-tubule orientation without perturbation in T-tubules density or sarcomere length (Figure 6C -Bottom panel, D-F). We next tested if SR Ca2+ release amplitude and kinetics are affected in Macf1 Cre+ muscle fibers. Figure 6G shows rhod-2 Ca2+ transients elicited by membrane depolarizing steps of increasing amplitude in a Macf1 Cre- and in a Macf1 Cre+ fibers. As routinely observed under these conditions (Kutchukian et al., 2017), transients in control fibers exhibit a fast early rising phase upon depolarization followed by a slower phase at low and intermediate voltages and by a slowly decaying phase for the largest depolarizing steps. As shown in Figure 6H, rhod-2 transients from Macf1 Cre+ fibers exhibited an overall similar time-course, not distinguishable from control muscle fibers. In each tested fiber, the rate of SR Ca2+ release was calculated from the rhod-2 Ca2+ transients. Traces for the calculated rate of SR Ca2+ release corresponding to the transients shown in Figure 6H are shown in Figure 6I. In both fibers, the rate exhibits a similar early peak, whose amplitude increases with that of the pulse, followed by a spontaneous decay down to a low level. The SR Ca2+ released peak amplitude was similar in Macf1 Cre- and in Macf1 Cre+ muscle fibers for all voltages (Figure 6I) and the time to reach the peak was also not affected in the Macf1 Cre+ muscle fibers (Figure 6I, values not shown). Mean values for maximal rate of SR Ca2+ release (Max d[Catot]/dt), mid-activation voltage (V0.5) and slope factor (k) of the voltage-dependence were statistically unchanged in Macf1 Cre+ muscle fibers compared to control fibers (Figure 6J). Accordingly, there was also no change in the voltage-dependent Ca2+ channel activity of the dihydropyridine receptor (also referred to as CaV1.1, the voltage-sensor of excitation-contraction coupling) in fibers from Macf1 Cre+ mice (not shown).
 
 Overall, despite some structure alterations, myofibers isolated from Macf1 conditional-KO mice exhibit efficient voltage-activated SR-Ca2+ release, strongly suggesting that altered force-frequency relationship is related to neuromuscular transmission deficiency.
 
-## MACF1 controls mitochondria biogenesis in skeletal muscle
+### MACF1 controls mitochondria biogenesis in skeletal muscle
 
 During our studies on muscle excitability, measurement of the absolute maximal force developed by Macf1 conditional KO mice was not changed compared to control mice (data not shown) but when we questioned the fatigability of those muscles, we found that in both young and old mice, Macf1 Cre+ are more resistant to fatigue compared to control mice (Figure 7A). Since skeletal muscles are composed of a functional and metabolic continuum of slow (type I) and fast fibers (types IIa and IIx) known to distinctively rely on metabolic pathways and mitochondrial activity, we first questioned whether there were changes in the mitochondrial pool of adult conditional-KO mice. We measured the intensity of succinate dehydrogenase (SDH) staining, indicative of mitochondrial activity, and found a significant increase in the number of fibers with strong positive succinate dehydrogenase staining in Tibialis Anterior muscle from 12-month-old Macf1 Cre+ compared to control mice (Figure 7B–C). As the intensity of SDH staining is commonly used to discriminate slow and fast fibers, we investigated if the proportion of slow fibers was changed in Macf1 Cre+ mice. Cross-sections of 12-month-adult muscles from the Tibialis Anterior, Soleus and Gastrocnemius were analyzed for slow myosin content and no alteration was observed (Figure 7—figure supplement 1A–B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/70490/elife-70490-fig7-v2.jpg)
+
+**Figure 7.:** (A) Quantification of the fatigue index from the Hindlimb muscles in young (4 months) and adult (12 months) Macf1 Cre- and Macf1 Cre+. Line is set at median. *p<0.05 (Student’s t test). (B) Representative images of transversal cross-section of Tibialis Anterior muscle from 12-month-old Macf1 Cre- (left panel) and Macf1 Cre+ (right panel) mice stained for Succinate DeHydrogenase activity. Scale Bar = 150 µm. (C) Quantification of the Succinate DeHydrogenase activity relative to myofibers distribution in conditional Macf1-KO mice compared to control mice. Line is set at median. Ns stands for not significant, **p<0.01 (Student’s t test). (D) Western blot analysis of OXPHOS mitochondrial electron transport chain, TOM20 and actin proteins expression in total extracts from Gastrocnemius muscles of 12-month-old Macf1 Cre- and Macf1 Cre+ mice. (E) QPCR quantification of the ratio between mitochondrial and genomic DNA in total DNA extracts obtained from Gastrocnemius muscles of three individual Macf1 Cre- and Macf1 Cre+ mice at each given age. Line is set at mean (with SEM). (F) QRT-PCR results presenting relative gene expression level for SLN in Macf1 Cre- and Cre+ at each given age. Following the calculation of relative gene expression level with reference to housekeeping genes for each mouse, the mean expression level of SLN was calculated for the WT mice. Next, the expression level of each WT and KO mouse was normalized to the previously calculated mean value. Line is set at mean (with SEM). Ns stands for not significant and **p<0.01 (Mann-Whitney test). (G) Representative confocal images (63×) from isolated myofibers of Tibialis Anterior stained for Cytochrome C in Macf1 Cre- (left panel) and Cre+ (right panel) mice of 12-month-old mice. Scale Bar = 15 µm. (H) Quantification of the percentage of myofibers with irregular (broken/oriented/accumulated) mitochondrial staining in isolated myofibers of Tibialis Anterior muscles from three individual Macf1 Cre- and Cre+ mice at the age of 12 months. Line is set at median. **p<0.01 (Student’s t test). (I) Representative electron microscopy images of myofibrils and mitochondria organization within Tibialis Anterior muscles from 12-month-old Macf1 Cre- (upper panels) and Macf1 Cre+ (lower panels) mice. Scale Bar = 1, 0.5, 0.2 µm. (J) Confocal immunofluorescence images (63×) presenting the organization of Cytochrome C (green) in primary myofibers treated either with scramble shRNA (upper panel) or with a pool of four distinct shRNAs targeting Macf1 (lower panel) after 13 days of differentiation. Myonuclei are presented in red. Scale Bar = 10 µm. (K) Quantification of mitochondrial content per area in primary myofibers treated either with scramble shRNA or with a pool of four distinct shRNAs targeting Macf1 after 13 days of differentiation. Line is set at median. **p<0.01 (Student’s t test).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/70490/elife-70490-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Representative microscopy images of transverse cross sections from Tibialis Anterior muscle of 12-month-old Macf1 Cre- (left panel) and Macf1 Cre+ (right panel) mice stained for slow myosin (red), Laminin (green) and myonuclei (blue). Scale Bar = 150 µm. (B) Quantification of the percentage of myofibers with slow myosin expression in Tibialis Anterior, Soleus and Gastrocnemius muscles from 12-month-old Macf1 Cre- and Macf1 Cre+ mice. Mean values (with SEM) is presented. Ns stands for not significant (Student’s t test). (C) QRT-PCR results presenting relative gene expression levels for Dnm1, Dnm2, and PPARGC1A in total mRNA extracts from Gastrocnemius of Macf1 Cre- and Cre+ at each given age. Following the calculation of relative gene expression level with reference to housekeeping genes for each mouse, the mean expression level of each target gene was calculated for the WT mice. Next, the expression level of each WT and KO mouse was normalized to the previously calculated mean value. Line is set at mean (with SEM). Ns stands for not significant (Student’s t test). (D) Representative confocal images (63×) from isolated myofibers of Tibialis Anterior stained for Desmin in Macf1 Cre- (left panel) and Cre+ (right panel) mice of 12-month-old mice. Scale Bar = 15 µm. (E) Quantification of the percentage of myofibers with irregular (broken/oriented/accumulated) Desmin staining in isolated myofibers of Tibialis Anterior muscles from three individual Macf1 Cre- and Cre+ mice at the age of 12 months. Line is set at median. **p<0.01 (Student’s t test).
 
 We next quantified the content of mitochondria and of proteins of the electron transport chain. There was an increase in the total amount of mitochondria (Tom20 relative to actin) in total protein extracts from Gastrocnemius of 12-month-old Macf1 Cre+ mice, as compared to control mice. However, there were no changes in the levels of mitochondrial electron transport chain proteins (CI, II, III, IV, and V, relative to Tom20) (Figure 7D). To confirm the increase of mitochondria pool, we measured the ratio of Mitochondrial-DNA to Genomic-DNA. This ratio did not differ between young (3-month-old) and adult (12-month-old) control mice, nor did it between young Macf1 Cre+ and control mice (Figure 7E). Interestingly, adult Macf1 Cre+ mice showed an increased amount of mitochondrial DNA compared to the other groups (Figure 7E). To understand this phenomenon, we followed the expression level of different genes known to contribute to mitochondria fusion/fission/biogenesis such as DNM1, DNM2, PPARGC1A and SLN. Remarkably, we found that only the expression of Sarcolipin, known to promote mitochondria biogenesis in skeletal muscle (Maurya et al., 2018; Maurya et al., 2015) was increased in Macf1 Cre+ mice compared to control mice (Figure 7F, Figure 7—figure supplement 1C). We next checked the staining of Cytochrome C, indicative of mitochondria content and spatial organization, in myofibers isolated from Tibialis Anterior muscles from 12-month-old mice. Our immunofluorescence approach showed a strong accumulation of mitochondria in different areas at the periphery of myofibers from the conditional-KO mice compared to control mice (Figure 7G, arrow). Additionally, there was an accumulation of mis-oriented longitudinal staining (Figure 7H), reminiscent of what was observed with the T-tubules staining in certain Macf1 Cre+ myofibers (Figure 6C). This suggests an alteration of myofibrils cohesion at the periphery of the myofibers. In this view, since mitochondria are linked to both the microtubule network and to Desmin intermediate filaments (Reipert et al., 1999), we questioned the integrity of the Desmin network and found a similar disruption as observed for mitochondria staining (Figure 7—figure supplement 1D-E). Electron microscopy was next used to visualize the ultrastructure of mitochondria in Tibialis Anterior muscle of Macf1 Cre+ mice. This approach confirmed the increase in mitochondria content in Macf1 Cre+ myofibers, associated with the presence of spherical mitochondria in-between myofibrils (Figure 7I). We next questioned if the mitochondrial network distribution was altered in vitro, in primary myofibers (Figure 7J). In myofibers treated with scrambled siRNA/shRNA, mitochondria lined up in the bulk of myofibers, in-between myofibrils, where they followed the longitudinal axis, just like the microtubule network. However, in Macf1 siRNA/shRNA-treated myofibers, we observed a 30% increase of mitochondria content (Figure 7K). These results confirmed a role of MACF1 in muscles specifically related to mitochondria biogenesis. Consequently, MACF1 is involved in the regulation of mitochondria biogenesis as loss of MACF1 is associated with an increase in Sarcolipin level and redistribution of mitochondrial content.
 
@@ -124,45 +176,128 @@ The present results have physiopathological relevance as there are several disea
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 Primary myoblasts were collected from wild type C57BL6 mice as described before (Falcone et al., 2014; Pimentel et al., 2017). Briefly, Hindlimb muscles from 6 days pups were extracted and digested with collagenase (Sigma, C9263-1G) and dispase (Roche, 04942078001). After a pre-plating step to discard contaminant cells such as fibroblasts, myoblasts were cultured on 1% matrigel coated-dish (Corning, 356231) in growth media (GM: IMDM (Gibco, 21980–032), 20% fetal bovine serum (Gibco, 10270–106), 1% chicken embryo extract (USBiological, C3999), and 1% penicillin-streptomycin (Gibco, 15140–122)). When reached to 90% of confluence, myocytes were induced to differentiate in myotubes for 2–3 days in differentiation media (DM: IMDM (Gibco, 21980–032), 2% of horse serum (Gibco, 16050–122) and 1% penicillin-streptomycin (Gibco, 15140–122)). Myotubes were then covered by a concentrated layer of matrigel and maintained for up to 10 days in long differentiation culture medium (LDM: IMDM (Gibco, 21980–032), 2% of horse serum (Gibco, 16050–122), 0.1% Agrin + 1% penicillin-streptomycin (Gibco, 15140–122)) until the formation of mature and contracting myofibers. LDM was changed every two days.
 
 Mouse myoblast C2C12 cells (ATCC, CRL-1772, RRID:CVCL_0188), tested negative form mycoplasma, were cultured in growth media (DMEM (Gibco, 41966029), 15% fetal bovine serum (Gibco, 10270–106) and 1% penicillin-streptomycin (Gibco, 15140–122)) and were plated on 1% Matrigel-coated dishes for 1–2 days before differentiation. Differentiation was induced by switching to differentiation media (DMEM (Gibco, 41966029)) with 1% horse serum (Gibco, 16050–122).
 
-## Production of wild-type Agrin recombinant proteins
+### Production of wild-type Agrin recombinant proteins
 
 For the production of recombinant proteins, the stably transfected HEK293-EBNA cells were grown to about 80% confluence and were transferred to expression medium without FBS. Conditioned medium containing secreted proteins was collected every 3 days and replaced with fresh expression media for 12 days. Conditioned medium was centrifuged at 2000xg for 10 min to pellet the cells before storing at −20°C. After thawing, recombinant proteins were purified from conditioned media by HPLC, on a HiTRAP Imac HP column (GE Healthcare, 17-0920-03), eluted with imidazol and desalted on silica column with PBS (GE Healthcare, HiPrep 26 /10Desalting) or on a Vivaspin column (Vivaspin Sartorius). The absolute concentration of soluble Agrins was estimated on a coomassie blue stained gel by comparison with a known amount of a commercial purified Agrin.
 
-## Cell transfection
+### Cell transfection
 
 For C2C12 cells, scramble or Macf1 targeting siRNAs were transfected in cells using Lipofectamine 2000 (ThermoFisher Scientifics, 11668–019) at the final concentration of 10 nM, following manufacturer instructions, just before differentiation. Same transfection methode was used according to the instructions to deliver scramble or Macf1 targeting shRNAs to cells.
 
 For primaries cells, siRNAs were transfected using Lipofectamine 2000 (ThermoFisher Scientifics, 11668–019) at the final concentration of 2 nM. shRNAs (Geneocopia), MACF1-MTBD-GFP (gift from Carsten Janke team, Institut Curie, Paris, France), EB3-GFP (gift from Annie Andrieux team, Grenoble Institute Neurosciences, Grenoble, France) or RFP-Lamin-chromobody (Chromotek) cDNA were transfected to cells using Lipofectamine 3000 (ThermoFisher Scientifics, L3000-008) following manufacturer instructions, just before differentiation.
 
-siRNASense oligonucleotide sequenceAnti-Sense oligonucleotide sequenceMACF1 #952GAGUUUCAAAAGAACCUUAttUAAGGUUCUUUUGAAACUCttMACF1 #954CAAUACAGCUGAAAAAGUUttAACUUUUUCAGCUGUAUUGggMACF1 #958GGAUGAAAUUAAUACUCGAttUCGAGUAUUAAUUUCAUCCatshRNAClone NameTarget SequenceMACF1 #1MSH071923-1-CU6 (OS398499)GCACATCAATGATCTCTATGAMACF1 #2MSH071923-2-CU6 (OS398500)GCAGGTGAAGCTAGTGAATATMACF1 #3MSH071923-3-CU6 (OS398501)GCAGATTGCAAACAAGATACAMACF1 #4MSH071923-4-CU6 (OS398502)GCTAAAGAATATCCGACTACT
+<table>
+  <thead>
+    <tr>
+      <th>siRNA</th>
+      <th>Sense oligonucleotide sequence</th>
+      <th>Anti-Sense oligonucleotide sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MACF1 #952</td>
+      <td>GAGUUUCAAAAGAACCUUAtt</td>
+      <td>UAAGGUUCUUUUGAAACUCtt</td>
+    </tr>
+    <tr>
+      <td>MACF1 #954</td>
+      <td>CAAUACAGCUGAAAAAGUUtt</td>
+      <td>AACUUUUUCAGCUGUAUUGgg</td>
+    </tr>
+    <tr>
+      <td>MACF1 #958</td>
+      <td>GGAUGAAAUUAAUACUCGAtt</td>
+      <td>UCGAGUAUUAAUUUCAUCCat</td>
+    </tr>
+    <tr>
+      <td>shRNA</td>
+      <td>Clone Name</td>
+      <td>Target Sequence</td>
+    </tr>
+    <tr>
+      <td>MACF1 #1</td>
+      <td>MSH071923-1-CU6 (OS398499)</td>
+      <td>GCACATCAATGATCTCTATGA</td>
+    </tr>
+    <tr>
+      <td>MACF1 #2</td>
+      <td>MSH071923-2-CU6 (OS398500)</td>
+      <td>GCAGGTGAAGCTAGTGAATAT</td>
+    </tr>
+    <tr>
+      <td>MACF1 #3</td>
+      <td>MSH071923-3-CU6 (OS398501)</td>
+      <td>GCAGATTGCAAACAAGATACA</td>
+    </tr>
+    <tr>
+      <td>MACF1 #4</td>
+      <td>MSH071923-4-CU6 (OS398502)</td>
+      <td>GCTAAAGAATATCCGACTACT</td>
+    </tr>
+  </tbody>
+</table>
 
-## Mouse model
+### Mouse model
 
 Mice that carry a loxP-flanked allele of Macf1 (Goryunov et al., 2010) and Hsa-Cre transgenic mice (Miniou, 1999) have been described previously. All of the experiments and procedures were conducted in accordance with the guidelines of the local animal ethics committee of the University Claude Bernard – Lyon one and in accordance with French and European legislation on animal experimentation and approved by the ethics committee CECCAPP and the French ministry of research (CECCAPP_ENS_2018_022).
 
-## In vivo force measurements
+### In vivo force measurements
 
 Mice were initially anesthetized in an induction chamber using 4% isoflurane. The right Hindlimb was shaved before an electrode cream was applied at the knee and heel regions to optimize electrical stimulation. Each anesthetized mouse was placed supine in a cradle allowing for a strict standardization of the animal positioning. Throughout a typical experiment, anesthesia was maintained by air inhalation through a facemask continuously supplied with 1.5% isoflurane. The cradle also includes an electrical heating blanket in order to maintain the animal at a physiological temperature during anesthesia. Electrical stimuli were delivered through two electrodes located below the knee and the Achille’s tendon. The right foot was positioned and firmly immobilized through a rigid slipper on a pedal of an ergometer (NIMPHEA_Research, AII Biomedical SAS) allowing for the measurement of the force produced by the Hindlimb muscles (i.e. mainly the Gastrocnemius muscle). The right knee was also firmly maintained using a rigid fixation in order to optimize isometric force recordings. Monophasic rectangular pulses of 0.2 ms were delivered using a constant-current stimulator (Digitimer DS7AH, maximal voltage: 400V). The force-frequency curves were determined by stepwise increasing stimulation frequency, with resting periods > 30 s between stimuli in order to avoid effects due to fatigue. For each stimulation train, isometric peak force was calculated. After a 3 min recovery period, force was assessed during a fatigue protocol consisting of 30 Hz stimulation trains of 0.3 s delivered once every second for 180 s. The peak force of each contraction was measured and averaged every five contractions. A fatigue index corresponding to the ratio between the last five and the first five contractions was determined. Force signal was sampled at 1000 Hz using a Powerlab system and Labchart software (ADinstruments).
 
-## Sciatic nerve crush
+### Sciatic nerve crush
 
 The mice were made unconscious by isoflurane anesthesia prior to the intraperitoneal injection of ketamine (100 mg/kg) and xylazine (10 mg/kg) in order to obtain a deep state of general anesthesia. To limit the pain on awakening, mice received a subcutaneous injection of buprenorphine at 30 µg/ml (0.1 µg/g of bodyweight). Once deeply anesthetized mice were shaved at the level of the left hip and the skin incised over 3 mm, then the connective tissue (muscle fascia) was incised. In order to reach the sciatic nerve the muscle mass was pushed back with the delicate help of fine forceps. The exposed sciatic nerve was subjected for two minutes to a drop of lurocaïne in order to inhibit any nociceptive impulse. Then the nerve was seized using fine forceps and sectioned by ablation of 2–3 mm to avoid any reconnection by scarring. The wound was then stitched up using suture. 15 days later, after killing the mice according to the ethical rules of the establishment, Tibialis anterior muscles were collected for examination.
 
-## Mouse genotyping
+### Mouse genotyping
 
 In order to extract the DNA, samples (mice tales) were incubated in extraction solution (25 mM NAOH, 0.2 mM EDTA) for 30 min at 95°C. Following the addition of neutralization solution (40 mM Tris-HCL), samples were centrifuged at 13000 RPM for 2 min at RT and the DNA were collected. DNA concentration was evaluated using Nanodrop (ThermoFisher Scientifics). PCR were carried (Hot Start Taq polymerase (QIAGEN, 1007837), PCR buffer mix (QIAGEN, 1005479) DNTP mix (Biolabs, 447)) using the following primers. The same amount of PCR products was loaded in 2X Agarose-1X TAE gels and were migrated for 2H at 130V. Results were obtained using GelDoc (BioRad).
 
 List of the primers used for PCR:
 
-PrimerSequenceMACF1 FCATCAGAAGAGATCAACCAACCMACF1 RAAAGGAAGAGAGGTCCAAGGTCre FGAGTTGATAGCTGGCTGGTGGCAGATGCre RCCTGGAAAATGCTTCTGTCCGTTTGCCCD8 FGGTGCATTCTCACTCTGAGTTCCCD8 RGCAGACAGAGCTGATTTCCTATGTG
+<table>
+  <thead>
+    <tr>
+      <th>Primer</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MACF1 F</td>
+      <td>CATCAGAAGAGATCAACCAACC</td>
+    </tr>
+    <tr>
+      <td>MACF1 R</td>
+      <td>AAAGGAAGAGAGGTCCAAGGT</td>
+    </tr>
+    <tr>
+      <td>Cre F</td>
+      <td>GAGTTGATAGCTGGCTGGTGGCAGATG</td>
+    </tr>
+    <tr>
+      <td>Cre R</td>
+      <td>CCTGGAAAATGCTTCTGTCCGTTTGCC</td>
+    </tr>
+    <tr>
+      <td>CD8 F</td>
+      <td>GGTGCATTCTCACTCTGAGTTCC</td>
+    </tr>
+    <tr>
+      <td>CD8 R</td>
+      <td>GCAGACAGAGCTGATTTCCTATGTG</td>
+    </tr>
+  </tbody>
+</table>
 
-## Protein extraction, western blot, and dot blot analysis
+### Protein extraction, western blot, and dot blot analysis
 
 For primary cultured cells or C2C12 cell lines, cells were harvested, using 1X Trypsin for 5 min at 37°C and centrifuged at 1500 RPM for 5 min at 4°C. Cell pellets were diluted and incubated in the optimal volume of RIPA lysis buffer containing phosphatases inhibitors (Sigma, P5726-5mL) and proteases inhibitors (Sigma, P8340) for 30 min at 4°C. Following a sonication and a centrifugation at 12,000 RPM for 10 min at 4°C, protein samples were collected for further uses. The concentration of proteins was determined using BCA protein assay kit (Thermo Fisher Scientifics, 23225) as described by the manufacturer.
 
@@ -174,21 +309,169 @@ Western blot or dot blot Membranes were then saturated in 5% milk in TBS for 1H 
 
 List of antibodies used for western blot:
 
-AntibodySpecies and utilityDilution factorManufacturer and referenceAnti-MACF1Rabbit - primary1:1000Novus Biologicals NBP2-36528 (RRID:AB_2893083)Anti-GAPDHMouse - primary1/1000Sigma-Aldrich MAB374 (RRID:AB_2107445)Anti-TOM20Rabbit - primary1:1000Cell Signaling Technologies D8T4N (RRID:AB_2687663)Anti-OXPHOSMouse - primary1:1000Abcam Ab110413 (RRID:AB_2629281)Anti-mouse-HRPGoat - secondary1:5000Invitrogen 62–6520 (RRID:AB_2533947)Anti-rabbit-HRPGoat - secondary1:5000Invitrogen 65–6120 (RRID:AB_2533967)
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Species and utility</th>
+      <th>Dilution factor</th>
+      <th>Manufacturer and reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anti-MACF1</td>
+      <td>Rabbit - primary</td>
+      <td>1:1000</td>
+      <td>Novus Biologicals NBP2-36528 (RRID:AB_2893083)</td>
+    </tr>
+    <tr>
+      <td>Anti-GAPDH</td>
+      <td>Mouse - primary</td>
+      <td>1/1000</td>
+      <td>Sigma-Aldrich MAB374 (RRID:AB_2107445)</td>
+    </tr>
+    <tr>
+      <td>Anti-TOM20</td>
+      <td>Rabbit - primary</td>
+      <td>1:1000</td>
+      <td>Cell Signaling Technologies D8T4N (RRID:AB_2687663)</td>
+    </tr>
+    <tr>
+      <td>Anti-OXPHOS</td>
+      <td>Mouse - primary</td>
+      <td>1:1000</td>
+      <td>Abcam Ab110413 (RRID:AB_2629281)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse-HRP</td>
+      <td>Goat - secondary</td>
+      <td>1:5000</td>
+      <td>Invitrogen 62–6520 (RRID:AB_2533947)</td>
+    </tr>
+    <tr>
+      <td>Anti-rabbit-HRP</td>
+      <td>Goat - secondary</td>
+      <td>1:5000</td>
+      <td>Invitrogen 65–6120 (RRID:AB_2533967)</td>
+    </tr>
+  </tbody>
+</table>
 
-## Primary cells immunofluorescence staining
+### Primary cells immunofluorescence staining
 
 Cells were fixed in 4% PFA in PBS for 20 min at 37°C followed by washes with PBS and permeabilization with 0.5% Triton-X100 in PBS for 5 min at RT. Following washes with PBS, cells were saturated with 1% BSA in PBS for 30 min at RT and incubated in primary antibodies over night at 4°C. After several washes with 0.05% Triton-X100-1X PBS, cells were incubated in secondary antibodies or dyes for 2H at RT and washed with 0.05% Triton-X100 in PBS before image acquisition. The list of the antibodies used for each staining can be found in the following section.
 
-## Isolation of mono-myofibers and immunofluorescence staining
+### Isolation of mono-myofibers and immunofluorescence staining
 
 Following the dissection of the whole muscle from the mice, muscle blocks were fixed in 4% PFA in PBS for 2H at RT. After several washes, 30– 50 mono-myofibers were isolated per staining from each muscle. Myofibers were then permeabilized using 1% Triton-X100 in PBS for 15 min at 37°C and saturated in 1% BSA in PBS for 30 min at RT. Based on the experiments, myofibers were incubated in desired primary antibodies at 4°C for two nights. Following washes with 0.05% Triton-X100 in PBS, myofibers were incubated in secondary antibodies or dyes for 2H at RT and washed several times with 0.05% Triton-X100 in PBS before mounting on slides. Myofibers were mounted on slides using fluromount Aqueous mounting (Sigma, F4680-25mL) and kept at 4°C utile image acquisition.
 
 List of the antibodies used for immunofluorescent staining:
 
-Antibody or dyeSpecies and utilityDilution factorManufacturer and referenceAnti-Cytochrome CMouse - primary1:300Cell Signaling Technologies 12963S (RRID:AB_2637072)Anti-MACF1Rabbit - primary1:200Novus Biologicals NBP2-36528 (RRID:AB_2893083)Anti-alpha tubulinMouse - primary1:1000Sigma T6074 (RRID:AB_477582)Anti-Tyrosinated tubulinRat - primary1:100Andrieux’s Lab giftAnti-De-tyrosinated tubulinRabbit - primary1:100Andrieux’s Lab giftMF20Mouse-primary1:10DSHB MF20 (RRID:AB_2147781)Anti-alpha actininMouse – primary1:350Sigma A7811 (RRID:AB_476766)Anti-DesminRabbit - primary1:500Cell Signaling Technologies D93F5 (RRID:AB_1903947)Dapi-brilliant blueDye1:50000Thermo Fisher Scientifics D1306 (RRID:AB_2629482)α-Bungarotoxin-Alexa Flour 488Dye1:1000Thermo Fisher Scientifics B13422α-Bungarotoxin-Alexa Flour 555Dye1:200Thermo Fisher Scientifics B35451Phalloidin-Alexa Flour 647Dye1:100Thermo Fisher Scientifics A22287Anti-rat- Alexa Flour 488Donkey - secondary1:500Thermo Fisher Scientifics A-21208 (RRID:AB_2535794)Anti-rabbit- Alexa Flour 647Goat - secondary1:500Thermo Fisher Scientifics A-21245 (RRID:AB_2535813)Anti-mouse- Alexa Flour 647Goat - secondary1:500Thermo Fisher Scientifics A-21240 (RRID:AB_2535809)
+<table>
+  <thead>
+    <tr>
+      <th>Antibody or dye</th>
+      <th>Species and utility</th>
+      <th>Dilution factor</th>
+      <th>Manufacturer and reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anti-Cytochrome C</td>
+      <td>Mouse - primary</td>
+      <td>1:300</td>
+      <td>Cell Signaling Technologies 12963S (RRID:AB_2637072)</td>
+    </tr>
+    <tr>
+      <td>Anti-MACF1</td>
+      <td>Rabbit - primary</td>
+      <td>1:200</td>
+      <td>Novus Biologicals NBP2-36528 (RRID:AB_2893083)</td>
+    </tr>
+    <tr>
+      <td>Anti-alpha tubulin</td>
+      <td>Mouse - primary</td>
+      <td>1:1000</td>
+      <td>Sigma T6074 (RRID:AB_477582)</td>
+    </tr>
+    <tr>
+      <td>Anti-Tyrosinated tubulin</td>
+      <td>Rat - primary</td>
+      <td>1:100</td>
+      <td>Andrieux’s Lab gift</td>
+    </tr>
+    <tr>
+      <td>Anti-De-tyrosinated tubulin</td>
+      <td>Rabbit - primary</td>
+      <td>1:100</td>
+      <td>Andrieux’s Lab gift</td>
+    </tr>
+    <tr>
+      <td>MF20</td>
+      <td>Mouse-primary</td>
+      <td>1:10</td>
+      <td>DSHB MF20 (RRID:AB_2147781)</td>
+    </tr>
+    <tr>
+      <td>Anti-alpha actinin</td>
+      <td>Mouse – primary</td>
+      <td>1:350</td>
+      <td>Sigma A7811 (RRID:AB_476766)</td>
+    </tr>
+    <tr>
+      <td>Anti-Desmin</td>
+      <td>Rabbit - primary</td>
+      <td>1:500</td>
+      <td>Cell Signaling Technologies D93F5 (RRID:AB_1903947)</td>
+    </tr>
+    <tr>
+      <td>Dapi-brilliant blue</td>
+      <td>Dye</td>
+      <td>1:50000</td>
+      <td>Thermo Fisher Scientifics D1306 (RRID:AB_2629482)</td>
+    </tr>
+    <tr>
+      <td>α-Bungarotoxin-Alexa Flour 488</td>
+      <td>Dye</td>
+      <td>1:1000</td>
+      <td>Thermo Fisher Scientifics B13422</td>
+    </tr>
+    <tr>
+      <td>α-Bungarotoxin-Alexa Flour 555</td>
+      <td>Dye</td>
+      <td>1:200</td>
+      <td>Thermo Fisher Scientifics B35451</td>
+    </tr>
+    <tr>
+      <td>Phalloidin-Alexa Flour 647</td>
+      <td>Dye</td>
+      <td>1:100</td>
+      <td>Thermo Fisher Scientifics A22287</td>
+    </tr>
+    <tr>
+      <td>Anti-rat- Alexa Flour 488</td>
+      <td>Donkey - secondary</td>
+      <td>1:500</td>
+      <td>Thermo Fisher Scientifics A-21208 (RRID:AB_2535794)</td>
+    </tr>
+    <tr>
+      <td>Anti-rabbit- Alexa Flour 647</td>
+      <td>Goat - secondary</td>
+      <td>1:500</td>
+      <td>Thermo Fisher Scientifics A-21245 (RRID:AB_2535813)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse- Alexa Flour 647</td>
+      <td>Goat - secondary</td>
+      <td>1:500</td>
+      <td>Thermo Fisher Scientifics A-21240 (RRID:AB_2535809)</td>
+    </tr>
+  </tbody>
+</table>
 
-## Histological staining and analysis
+### Histological staining and analysis
 
 Tibialis anterior, Soleus and Gastrocnimius muscles were collected, embedded in tragacanth gum, and quickly frozen in isopentane cooled in liquid nitrogen. Cross-sections were obtained from the middle portion of frozen muscles and processed for histological, immunohistochemical or enzymohistological analysis according to standard protocols.
 
@@ -198,7 +481,7 @@ SDH staining was performed as previously described (Nachlas et al., 1957). Brief
 
 Fluorescence microscopy and transmission microscopy were performed using Axioimager Z1 microscope with CP Achromat 5x/0.12, 10x/0.3 Ph1, or 20x/0.5 Plan NeoFluar objectives (Zeiss). Images were captured using a charge- coupled device monochrome camera (Coolsnap HQ, Photometrics) or color camera (Coolsnap colour) and MetaMorph software. For all imaging, exposure settings were identical between compared samples. Fiber number and size, central nuclei and peripheral myonuclei were calculated using ImageJ software.
 
-## Analysis of T-tubule network and intracellular Ca2+ in voltage-clamped fibers
+### Analysis of T-tubule network and intracellular Ca2+ in voltage-clamped fibers
 
 FDB muscle fibers were incubated for 30 min in the presence of 10 µm di-8-anepps in Tyrode solution. Estimation of the T-tubule density from the di-8-anepps fluorescence was carried out from a largest possible region of interest excluding the plasma membrane, within each fiber. For each fiber, two images taken at distinct locations were used. Analysis was carried out with the ImageJ software (National Institute of Health). Automatic threshold with the Otsu method was used to create a binary image of the surface area occupied by T-tubules. The ‘skeletonize’ function was then used to delineate the T-tubule network. T-tubule density was expressed as the percent of positive pixels within the region. Sarcomere length was estimated from half the number of fluorescence peaks (T-tubules) along the length of the main axis of a given fiber. To assess variability in T-tubule orientation, objects within two T-tubule binary images of each fiber were outlined and particle analysis was performed to determine the angle of all objects yielding a perimeter larger than an arbitrary value of 10 µm. For each fiber, the standard deviation of angle values was then calculated. This analysis was performed on 10 muscle fibers from 3 Macf1f/f Cre- and from 3 Macf1f/f Cre+ mice, respectively.
 
@@ -206,45 +489,150 @@ Single fibers were isolated from FDB muscles as described previously (Jacquemond
 
 Isolated muscle fibers were handled with the silicone voltage-clamp technique (Lefebvre et al., 2014). Briefly, fibers were partly insulated with silicone grease so that only a short portion (50–100 µm long) of the fiber extremity remained out of the silicone. Fibers were bathed in a standard voltage-clamp extracellular solution containing (in mM) 140 TEA-methanesulfonate, 2.5 CaCl2, 2 MgCl2, 1 4-aminopyridine, 10 HEPES and 0.002 tetrodotoxin. An RK-400 patch-clamp amplifier (Bio-Logic, Claix) was used in whole-cell conFigureuration in combination with an analog-digital converter (Axon Instruments, Digidata 1440A) controlled by pClamp nine software (Axon Instruments). Voltage-clamp was performed with a micropipette filled with a solution containing (in mM) 120 K-glutamate, 5 Na2-ATP, 5 Na2-phosphocreatine, 5.5 MgCl2, 15 EGTA, 6 CaCl2, 0.1 rhod-2, five glucose, 5 HEPES. The tip of the micropipette was inserted through the silicone within the insulated part of the fiber and was gently crushed against the bottom of the chamber to ease intracellular equilibration and decrease the series resistance. Intracellular equilibration of the solution was allowed for 30 min before initiating measurements. Membrane depolarizing steps of 0.5 s duration were applied from −80 mV. Confocal imaging was conducted with a Zeiss LSM 5 Exciter microscope equipped with a 63x oil immersion objective (numerical aperture 1.4). Rhod-2 fluorescence was detected in line-scan mode (x,t, 1.15 ms per line) above 560 nm, upon excitation from the 543 nm line of a HeNe laser. Rhod-2 fluorescence transients were expressed as F/F0 where F0 is the baseline fluorescence. The Ca2+ release flux (rate of SR Ca2+ release) was estimated from the time derivative of the total myoplasmic Ca2+ ([Catot]) calculated from the occupancy of intracellular calcium binding sites following a previously described procedure (Kutchukian et al., 2017).
 
-## q-PCR
+### q-PCR
 
-## RNA extraction and RT-PCR
+#### RNA extraction and RT-PCR
 
 After the addition of Trizol (Sigma, T9424-200mL) on each sample, lysing matrix D and fast prep system (MPbio, 6913–100) were used for sample digestion and pre-RNA extraction. In order to extract RNA, samples were incubated in chloroform for 5 min at RT, centrifuged for 15 min at 12,000 rcf at 4°C and incubated in the tubes containing isopropanol (precipitatation of RNA) for 10 min at RT. following a centrifuge of samples for 15 min at 12,000 rcf at 4°C, samples were washed 2 times with 70% ethanol and the final RNA pellets were diluted in ultra-pure RNase free water (Invitrogen, 10977–035). RNA concentration was calculated using Nanodrop (ThermoFisher Scientifics). Goscript Reverse Transcriptase System (Promega, A5001) was used as described by the manufacturer to produce the cDNA.
 
-## DNA extraction
+#### DNA extraction
 
 DNA was extracted from frozen whole Gastrocnimius according to the manufacturers' protocol, using a Maxwell 16 Instrument (Promega Corporation, Madison, USA) and a Maxwell 16 Tissue DNA Purification Kit ((Promega Corporation, Madison, USA)). DNA concentration was calculated using Nanodrop (ThermoFisher Scientifics).
 
-## q-PCR
+#### q-PCR
 
 Fast Start Universal SYBR Green Master (Rox)(Roche, 04913914001) and CFX Connect Real-Time PCR Detection System (BioRad) were used to carry out the quantitative PCR using the following primer sets. For analysis of genes expression level, The CT of target genes was normalized on four control genes. To compare the level of mitochondrial DNA, CT of mitochondrial DNA was normalized on genomic DNA.
 
 List of the primares used for q-PCR:
 
-PrimersSequenceMACF1 FATTGATTCACCGATACAGGCCCMACF1 RATCTTCTGCATCTAGCAGTCGGMyoD FAGCACTACAGTGGCGACTCAMyoD RGCTCCACTATGCTGGACAGGMyogenin FCAATGCACTGGAGTTCGGTCMyogenin RACAATCTCAGTTGGGCATGGSarcolipin FGGTCCTTGGTAGCCTGAGTGSarcolipin RCGGTGATGAGGACAACTGTGDNM1 FATTTCGTGGGCAGGGACTTTCDNM1 RCAGTGCAGGAACTCGGCATADNM2 FGGACCAGGCAGAGAATGAGGDNM2 RACGTAGGAGTCCACCAGGTTPPARGC1A FGCAGGTCGAACGAAACTGACPPARGC1A RCTTGCTCTTGGTGGAAGCAGGusb FGAGGATTGCCAACGAAACCGGusb RGTGTCTGGGGACCACCTTTGARpL4 FGCCATGAGAGCGAAGTGGRpL4 RCTCCTGCAGGCGTCGTAGMyoglobin FCCTGGGTACTATCCTGAAGAMyoglobin RGAGCATCTGCTCCAAAGTCCBetatub F (gDNA)GCCAGAGTGGTGCAGGAAABetatub R (gDNA)TCACCACGTCCAGGACAGND1 F (mDNA)CCCAGCTACTACCATCATTCAAGTND1 R (mDNA)GATGGTTTGGGAGATTGGTTGATGT
+<table>
+  <thead>
+    <tr>
+      <th>Primers</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MACF1 F</td>
+      <td>ATTGATTCACCGATACAGGCCC</td>
+    </tr>
+    <tr>
+      <td>MACF1 R</td>
+      <td>ATCTTCTGCATCTAGCAGTCGG</td>
+    </tr>
+    <tr>
+      <td>MyoD F</td>
+      <td>AGCACTACAGTGGCGACTCA</td>
+    </tr>
+    <tr>
+      <td>MyoD R</td>
+      <td>GCTCCACTATGCTGGACAGG</td>
+    </tr>
+    <tr>
+      <td>Myogenin F</td>
+      <td>CAATGCACTGGAGTTCGGTC</td>
+    </tr>
+    <tr>
+      <td>Myogenin R</td>
+      <td>ACAATCTCAGTTGGGCATGG</td>
+    </tr>
+    <tr>
+      <td>Sarcolipin F</td>
+      <td>GGTCCTTGGTAGCCTGAGTG</td>
+    </tr>
+    <tr>
+      <td>Sarcolipin R</td>
+      <td>CGGTGATGAGGACAACTGTG</td>
+    </tr>
+    <tr>
+      <td>DNM1 F</td>
+      <td>ATTTCGTGGGCAGGGACTTTC</td>
+    </tr>
+    <tr>
+      <td>DNM1 R</td>
+      <td>CAGTGCAGGAACTCGGCATA</td>
+    </tr>
+    <tr>
+      <td>DNM2 F</td>
+      <td>GGACCAGGCAGAGAATGAGG</td>
+    </tr>
+    <tr>
+      <td>DNM2 R</td>
+      <td>ACGTAGGAGTCCACCAGGTT</td>
+    </tr>
+    <tr>
+      <td>PPARGC1A F</td>
+      <td>GCAGGTCGAACGAAACTGAC</td>
+    </tr>
+    <tr>
+      <td>PPARGC1A R</td>
+      <td>CTTGCTCTTGGTGGAAGCAG</td>
+    </tr>
+    <tr>
+      <td>Gusb F</td>
+      <td>GAGGATTGCCAACGAAACCG</td>
+    </tr>
+    <tr>
+      <td>Gusb R</td>
+      <td>GTGTCTGGGGACCACCTTTGA</td>
+    </tr>
+    <tr>
+      <td>RpL4 F</td>
+      <td>GCCATGAGAGCGAAGTGG</td>
+    </tr>
+    <tr>
+      <td>RpL4 R</td>
+      <td>CTCCTGCAGGCGTCGTAG</td>
+    </tr>
+    <tr>
+      <td>Myoglobin F</td>
+      <td>CCTGGGTACTATCCTGAAGA</td>
+    </tr>
+    <tr>
+      <td>Myoglobin R</td>
+      <td>GAGCATCTGCTCCAAAGTCC</td>
+    </tr>
+    <tr>
+      <td>Betatub F (gDNA)</td>
+      <td>GCCAGAGTGGTGCAGGAAA</td>
+    </tr>
+    <tr>
+      <td>Betatub R (gDNA)</td>
+      <td>TCACCACGTCCAGGACAG</td>
+    </tr>
+    <tr>
+      <td>ND1 F (mDNA)</td>
+      <td>CCCAGCTACTACCATCATTCAAGT</td>
+    </tr>
+    <tr>
+      <td>ND1 R (mDNA)</td>
+      <td>GATGGTTTGGGAGATTGGTTGATGT</td>
+    </tr>
+  </tbody>
+</table>
 
-## Drosophila model and sample preparation
+### Drosophila model and sample preparation
 
 Shot GD9507 UAS-RNAi line from VDRC collection crossed to Mef2-GAL4 driver has been used to attenuate shot gene expression specifically in muscles. Third instar larvae were dissected in physiological salt with 25 mM EDTA. Body wall muscles were fixed with 4% formaldehyde in PBS for 15 min and then rinsed three times for 5 min each in PBS with 0.5% Tween 20 (PBT). Muscles were blocked for 30 min with 20% horse serum in PBT at RT. Staining was performed by using primary antibodies applied overnight at 4°C and after washing three times in PBT secondary antibodies were applied at RT for 1 hr. The following primary antibodies were used: anti-Brp1 (1:100; DSHB, Nc82-s), anti-Shot (1:100; DSHB, mAbRod1).
 
-## Electronic-microscopy
+### Electronic-microscopy
 
 Tissues were cut into small pieces and fixed in 2% glutaraldehyde for 2 hr at 4°C. Samples were washed three times for 1H at 4°C and post-fixed with 2% OsO41 hr at 4°C. Then tissues were dehydrated with an increasing ethanol gradient (5 min in 30%, 50%, 70%, 95%) and tree times for 10 min in absolute ethanol. Impregnation was performed with Epon A (75%) plus Epon B (25%) plus DMP30 (1.7%). Inclusion was obtained by polymerization at 60°C for 72 hr. Ultrathin sections (approximately 70 nm thick) were cut on a UC7 (Leica) ultra-microtome, mounted on 200 mesh copper grids coated with 1:1000 polylysine, and stabilized for 1 day at room temperature and contrasted with uranyl acetate and lead citrate. Sections were acquired with a Jeol 1400JEM (Tokyo, Japan) transmission electron microscope, 80Kv, equipped with a Orius 600 camera and Digital Micrograph.
 
-## Video-microscopy
+### Video-microscopy
 
 To analyze the movement of myonuclei, time-lapse 10X images were acquired using Z1-AxioObserver (Zeiss) with intervals of 15 min. Final videos were analyzed using Metamorph (Zeiss) and SkyPad plugin as described before (Cadot et al., 2014).
 
 To analyze the dynamic of EB3, 50 stream acquisitions were obtained at 63X with 500 ms of intervals using Z1-AxioObserver (Zeiss). The movement and speed of each comet was further analyzed as described before (Sbalzarini and Koumoutsakos, 2005).
 
-## Quantification methods for myonuclei spreading in myotubes in vitro
+### Quantification methods for myonuclei spreading in myotubes in vitro
 
 Quantifications in immature myotubes were assessed using an analysis tool developed in our team. An image analysis performed in ImageJ software is combined with a statistical analysis in RStudio software. This provides quantifications of parameters, ranked by myonuclei content per myotubes, regarding phenotype of myotubes (area, length) and their respective myonuclei positioning compare to centroid of myotubes (DMcM).
 
 MSG diagrams were obtained through the normalization of lengths of all analyzed myotubes (independently to their myonuclei content) to 100%. White lines represent myonuclei density curves assessing the statistical frequency for myonuclei positioning along myotubes. Each color group reflects statistical estimation of myonuclei clustering along myotubes.
 
-## Quantification methods for fixed myofibers in vitro
+### Quantification methods for fixed myofibers in vitro
 
 Following fixation and immunofluorescent staining, the following steps were taken to generate data.
 
@@ -260,7 +648,7 @@ Cytochrome C was used to study the mitochondrial content of each myofiber in vit
 
 All the quantifications/measurements were done using ImageJ software (RRID:SCR_003070).
 
-## Quantification methods for fixed myofibers isolated from control or conditional KO mice
+### Quantification methods for fixed myofibers isolated from control or conditional KO mice
 
 After immunofluorescence staining, the distance between each myonuclei and its closest neighbor, myonuclei feret and myonuclei roundness were quantified on 3 μM peripheral Z stacks of each myofiber.
 
@@ -274,6 +662,6 @@ To analyze the organization of mitochondria and Desmin, 3 μM peripheral Z stack
 
 All the quantifications/measurements were done using ImageJ software (RRID:SCR_003070).
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism (RRID:SCR_002798) was used to perform statistical analysis (Student’s t test or the Mann-Whitney test) according to samples amount and distribution.

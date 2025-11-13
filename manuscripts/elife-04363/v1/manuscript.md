@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.04363.001 The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of 50 papers in the field of cancer biology published between 2010 and 2012. This Registered report describes the proposed replication plan of key experiments from ‘Tumour vascularization via endothelial differentiation of glioblastoma stem-like cells’ by Ricci-Vitiani and colleagues, published in Nature in 2010 ( Ricci-Vitiani et al., 2010 ). The experiments that will be replicated are those reported in Figure 4B and Supplementary Figure 10B ( Ricci-Vitiani et al., 2010 ), which demonstrate that glioblastoma stem-like cells can derive into endothelial cells, and can be selectively ablated to reduce tumor progression in vivo, and Supplementary Figures S10C and S10D ( Ricci-Vitiani et al., 2010 ), which demonstrate that fully differentiated glioblastoma cells cannot form functionally relevant endothelium. The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange , and the results of the replications will be published by eLife . DOI: http://dx.doi.org/10.7554/eLife.04363.001
+The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of 50 papers in the field of cancer biology published between 2010 and 2012. This Registered report describes the proposed replication plan of key experiments from ‘Tumour vascularization via endothelial differentiation of glioblastoma stem-like cells’ by Ricci-Vitiani and colleagues, published in Nature in 2010 (Ricci-Vitiani et al., 2010). The experiments that will be replicated are those reported in Figure 4B and Supplementary Figure 10B (Ricci-Vitiani et al., 2010), which demonstrate that glioblastoma stem-like cells can derive into endothelial cells, and can be selectively ablated to reduce tumor progression in vivo, and Supplementary Figures S10C and S10D (Ricci-Vitiani et al., 2010), which demonstrate that fully differentiated glioblastoma cells cannot form functionally relevant endothelium. The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange, and the results of the replications will be published by eLife.
 
 ## Introduction
 
@@ -34,148 +34,879 @@ Recently, multiple other studies have explored the phenomenon of tumor-derived v
 
 Unless otherwise noted, all protocol information was derived from the original paper, references from the original paper, or information obtained directly from the authors.
 
-## Protocol 1: Evaluation of Tie2 expression in various cell lines using qPCR
+### Protocol 1: Evaluation of Tie2 expression in various cell lines using qPCR
 
 This protocol evaluates the expression of the endothelial marker Tie2 in three cell lines using semi-quantitative PCR: patient-derived glioblastoma neurospheres (GSC83), human glioblastoma cell line U87MG, and normal human dermal microvascular endothelial cells (HMVEC-d). The expression of Tie2 will be normalized against the endogenous expression of 18S rRNA. Expression of Tie2 is expected to be very low in GSC83 and U87MG cells, and robust in the endothelial cell line HMVEC-d, as depicted in Figure S11C. This protocol serves as a quality control step to ensure the lack of Tie2 expression in the glioblastoma cell lines used later in the study.
 
-## Sampling
+#### Sampling
 
 This experiment will be performed three times (biological replicates) with each run using two technical replicates, for a final power of at least 80%.A. Test conditions:i. qRT-PCR of Tie2 (and 18S rRNA) from GSC83 glioblastoma neurospheres.ii. qRT-PCR of Tie2 (and 18S rRNA) from U87MG cells.iii. qRT-PCR of Tie2 (and 18S rRNA) from HMVEC cells.
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #CommentsGSC83 glioblastoma neurospheresHuman cell lineN/AN/AReagent being provided by original authorsU87MG glioblastoma cellsHuman cell lineN/AN/AReagent being provided by original authorsNormal human dermal microvascular endothelial cells (HMVEC-d)Human cell lineN/AN/AReagent being provided by original authors25 cm2 tissue culture flasksLabwareCorning3289Original brand not specifiedDulbecco's Modified Eagle's medium (DMEM)/F-12, no glutamineCell culture reagentSigma-AldrichD6421Replaces Gibco cat. no. 21331-020 used in original studyHuman recombinant epidermal growth factor (EGF)Cell culture reagentSigma–AldrichE5036Replaces Peprotech cat no. AF-100-15 used in original studyHuman recombinant basic fibroblast growth factor (FGF2)Cell culture reagentSigma–AldrichF0291Replaces Peprotech cat no. AF-100-18B used in original studyGlutamineCell culture reagentSigma–AldrichG7513Replaces Gibco cat no. 25030-081 used in original studyGlucoseCell culture reagentSigma–Aldrich49163PutrescineCell culture reagentSigma–AldrichP5780ProgesteroneCell culture reagentSigma–AldrichP6149Sodium seleniteCell culture reagentSigma–AldrichS9133InsulinCell culture reagentSigma–AldrichI9278TransferrinCell culture reagentSigma–AldrichT8158Dulbecco's Modified Eagle's medium (DMEM), high glucoseCell culture reagentSigma–AldrichD6429Fetal bovine serum (FBS)Cell culture reagentSigma–AldrichF2442Endothelial Growth Medium-2 Microvascular (EGM-2MV)Cell culture reagentLonzaCC-3202TRI reagentReagentSigma–AldrichT9424Replaces Invitrogen cat. no. 15596-018 (Trizol) used in original studyFirst-Strand cDNA Synthesis KitcDNA synthesisGE Healthcare (Sigma-Aldrich)GE27-9261-01Replaces Invitrogen cat. no. 28025-013 used in original study96-Well qPCR platesqPCRSpecific brand information will be left up to the discretion of the replicating laboratory and recorded laterTaqMan Gene Expression Master MixqPCRApplied Biosystems4369016TaqMan Gene Expression Assay Hs00945155_m1TaqMan probeApplied Biosystems433118218S rRNA Endogenous Control 4319413ETaqMan probeApplied Biosystems4319413EStepOnePlus Real-Time PCR SystemEquipmentApplied Biosystems
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GSC83 glioblastoma neurospheres</td>
+      <td>Human cell line</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>U87MG glioblastoma cells</td>
+      <td>Human cell line</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>Normal human dermal microvascular endothelial cells (HMVEC-d)</td>
+      <td>Human cell line</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>25 cm2 tissue culture flasks</td>
+      <td>Labware</td>
+      <td>Corning</td>
+      <td>3289</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Dulbecco's Modified Eagle's medium (DMEM)/F-12, no glutamine</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>D6421</td>
+      <td>Replaces Gibco cat. no. 21331-020 used in original study</td>
+    </tr>
+    <tr>
+      <td>Human recombinant epidermal growth factor (EGF)</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>E5036</td>
+      <td>Replaces Peprotech cat no. AF-100-15 used in original study</td>
+    </tr>
+    <tr>
+      <td>Human recombinant basic fibroblast growth factor (FGF2)</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>F0291</td>
+      <td>Replaces Peprotech cat no. AF-100-18B used in original study</td>
+    </tr>
+    <tr>
+      <td>Glutamine</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>G7513</td>
+      <td>Replaces Gibco cat no. 25030-081 used in original study</td>
+    </tr>
+    <tr>
+      <td>Glucose</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>49163</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Putrescine</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>P5780</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Progesterone</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>P6149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sodium selenite</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>S9133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Insulin</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>I9278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transferrin</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>T8158</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dulbecco's Modified Eagle's medium (DMEM), high glucose</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>D6429</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fetal bovine serum (FBS)</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>F2442</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Endothelial Growth Medium-2 Microvascular (EGM-2MV)</td>
+      <td>Cell culture reagent</td>
+      <td>Lonza</td>
+      <td>CC-3202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TRI reagent</td>
+      <td>Reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>T9424</td>
+      <td>Replaces Invitrogen cat. no. 15596-018 (Trizol) used in original study</td>
+    </tr>
+    <tr>
+      <td>First-Strand cDNA Synthesis Kit</td>
+      <td>cDNA synthesis</td>
+      <td>GE Healthcare (Sigma-Aldrich)</td>
+      <td>GE27-9261-01</td>
+      <td>Replaces Invitrogen cat. no. 28025-013 used in original study</td>
+    </tr>
+    <tr>
+      <td>96-Well qPCR plates</td>
+      <td>qPCR</td>
+      <td colspan="3">Specific brand information will be left up to the discretion of the replicating laboratory and recorded later</td>
+    </tr>
+    <tr>
+      <td>TaqMan Gene Expression Master Mix</td>
+      <td>qPCR</td>
+      <td>Applied Biosystems</td>
+      <td>4369016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TaqMan Gene Expression Assay Hs00945155_m1</td>
+      <td>TaqMan probe</td>
+      <td>Applied Biosystems</td>
+      <td>4331182</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>18S rRNA Endogenous Control 4319413E</td>
+      <td>TaqMan probe</td>
+      <td>Applied Biosystems</td>
+      <td>4319413E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>StepOnePlus Real-Time PCR System</td>
+      <td>Equipment</td>
+      <td>Applied Biosystems</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+#### Procedure
 
 Note: All cell lines will be sent for STR profiling and mycoplasma testing.Culture GSC83 glioblastoma neurospheres, U87MG cells, and HMVEC cells in 25 cm2 tissue culture flasks at 37°C at 5% CO2.A. GSC83 cells should be plated at 20,000 cell/ml and subcultured once every 7 days at the same plating number. One week is sufficient time for two doublings to occur.i. Cells should be cultured in stem cell medium consisting of serum-free Dulbecco's Modified Eagle's Medium (DMEM)/F-12 containing:a. 20 ng/ml human recombinant epidermal growth factor (EGF).b. 10 ng/ml human recombinant basic fibroblast growth factor (FGF2).c. 2 mM glutamine.d. 0.6% glucose.e. 9.6 µg/ml putrescine.f. 6.3 ng/ml progesterone.g. 5.2 ng/ml sodium selenite.h. 0.025 mg/ml insulin.i. 0.1 mg/ml transferrin.B. U87MG cells should be cultured in 25 cm2 tissue culture flasks in DMEM with 10% FBS.i. Subculture cells at a ratio of 1:2 to 1:5; renew medium 2–3 times per week.C. HMVEC-d (normal human dermal microvascular endothelial cells) should be cultured in 25 cm2 tissue culture flasks in Endothelial Growth Medium-2 Microvascular (EGM-2MV).i. Subculture cells when they are 70–80% confluent; change growth media every other day.Split each cell line into three separate 25 cm2 flasks. These separate flasks constitute biological replicates for eventual downstream gene expression analysis.A. Allow cells to grow to log phase.Isolate total RNA from the cells in each 25 cm2 flask (nine flasks in total) according to the manufacturer's instructions for TRI reagent. For each sample, harvest the entire population of cells in the flask.A. Report total concentration and purity of isolated total RNA.Reverse transcribe mRNA to cDNA according to the manufacturer's protocol.A. Use 500 ng total RNA for each 20 µl reaction.B. Use oligo(dT)12–18 primer for first-strand synthesis.C. Add ribonuclease inhibitor at suggested step in the protocol.D. Perform RNase H digestion at suggested step in the protocol.Perform qPCR to assess Tie2 expression levels across cell types using a StepOnePlus Real-Time PCR System. Use 18S rRNA as an endogenous control. Perform duplicate technical replicates for each biological replicate (3 biological × 2 technical × 2 genes = 12 wells per cell line).A. Use 1 µl of undiluted cDNA mixture for each reaction.B. Use TaqMan probes for Tie2 and 18S rRNA (see reagent table).C. Use an initial denaturation at 95°C for 10 min, following by 40 cycles of 95°C for 15 s; 60°C for 1 min.Analyze and compute ΔΔCT values.
 
-## Deliverables
+#### Deliverables
 
 Data to be collected:A. Purity (A260/280 and A260/230 ratios) and concentration of isolated total RNA from cells.B. Raw qRT-PCR values, as well as analyzed ΔΔCT values and bar graph of Tie2 mRNA normalized to control mRNA levels for each condition (compare to Figure S11C).
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
 This replication attempt will perform the statistical analyses listed below, compute the effect sizes, compare them against the reported effect size in the original paper and use a meta-analytic approach to combine the original and replication effects, which will be presented as a Forest plot.Statistical analysis of the replication data:A. One-way ANOVA to analyze the means of GSC83, U87MG, and HMVEC.i. We will then perform a Fisher's LSD test to perform multiple pairwise comparisons:a. GSC83 compared to HMVEC.b. U87MG compared to HMVEC.c. GSC83 compared to U87MG (sensitivity).
 
-## Known differences from the original study
+#### Known differences from the original study
 
 In the original study, multiple human glioblastoma neurospheres were screened for Tie2 expression. The human glioblastoma cell lines U251 and T98G were also analyzed, as well as the human endothelial cell line HUVEC. This replication study will be using a single established glioblastoma neurosphere cell line (GSC83) provided by the authors. The authors will also provide their U87MG and HMVEC cell lines. All known differences in reagents and supplies are listed in the ‘Materials and reagents’ section above, with the originally used item listed in the ‘Comments’ section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The cell lines used in this experiment will undergo STR profiling to confirm their identity and will be sent for mycoplasma testing to ensure there is no contamination. The sample purity (A260/280 and A260/230 ratios) of the isolated RNA from each sample will be reported. All data obtained from the experiment—raw data, data analysis, control data, and quality control data—will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework project page for this study (https://osf.io/mpyvx/).
 
-## Protocol 2: Lentiviral infection of glioblastoma cells and stable cell generation
+### Protocol 2: Lentiviral infection of glioblastoma cells and stable cell generation
 
 This protocol describes the methods necessary to virally transduce GSC83 glioblastoma neurospheres, as well as U87MG cells, with thymidine kinase expression constructs. The protocol first details the production of three different lentivirus strains (PGK-tk, Tie2-tk, and an empty viral vector), and then explains the techniques necessary to transduce the two human glioblastoma cell lines. Finally, the protocol includes methodology associated with assessing the transduction efficiency of glioblastoma cell lines via flow cytometry analysis as a quality control check.
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #CommentsGenElute Endotoxin-free Plasmid Maxiprep KitReagentSigma–AldrichPLEX15-1KTOriginal brand not specifiedpCMV-dR8.74Viral packaging vectorN/AN/AReagent being provided by original authorspMD2GViral packaging vectorN/AN/AReagent being provided by original authorspRRLsin.Tie2p.TK.PGKp.GFP.spreDNA constructN/AN/AReagent being provided by original authorspRRLsin.PGKp.TK.PGKp.GFP.spreDNA constructN/AN/AReagent being provided by original authorspRRLsin.PGKp.GFP.spreDNA constructN/AN/AReagent being provided by original authorsBamHIRestriction enzymeSigma–AldrichR0260NdeIRestriction enzymeSigma–AldrichR5509SpeIRestriction enzymeSigma–AldrichR5257SmaIRestriction enzymePromegaR612175 cm2 tissue culture flaskLabwareCorning430641UOriginal brand not specifiedHEK293T cellsCell lineATCCCRL-3216Dulbecco's Modified Eagle's Medium (DMEM), high glucoseCell culture reagentSigma–AldrichD6429Original brand not specifiedFetal bovine serum (FBS)Cell culture reagentSigma–AldrichF2442Original brand not specifiedGSC culture mediaSee reagent list from Protocol 1 for a complete list of medium components2× HEPES buffered saline (HBS)ReagentSigma–Aldrich51558Replaces laboratory-made buffer used in original study. pH of substituted buffer is 7.2; pH of original buffer was 7.05Calcium chloride dihydrateReagentSigma–AldrichC7902Original brand not specifiedHexadimethrine bromide (polybrene)Cell culture reagentSigma–Aldrich107689Original brand not specified6-Well tissue culture platesLabwareCorning3516Original brand not specified7-Amino actinomycin D (7-AAD)Flow reagentLife TechnologiesA1310Original brand not specifiedTubes used for flow cytometrySpecific brand information will be left up to the discretion of the replicating laboratory and recorded laterFACSCalibur flow cytometry instrumentEquipmentBecton Dickinson
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GenElute Endotoxin-free Plasmid Maxiprep Kit</td>
+      <td>Reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>PLEX15-1KT</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>pCMV-dR8.74</td>
+      <td>Viral packaging vector</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>pMD2G</td>
+      <td>Viral packaging vector</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>pRRLsin.Tie2p.TK.PGKp.GFP.spre</td>
+      <td>DNA construct</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>pRRLsin.PGKp.TK.PGKp.GFP.spre</td>
+      <td>DNA construct</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>pRRLsin.PGKp.GFP.spre</td>
+      <td>DNA construct</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>BamHI</td>
+      <td>Restriction enzyme</td>
+      <td>Sigma–Aldrich</td>
+      <td>R0260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NdeI</td>
+      <td>Restriction enzyme</td>
+      <td>Sigma–Aldrich</td>
+      <td>R5509</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SpeI</td>
+      <td>Restriction enzyme</td>
+      <td>Sigma–Aldrich</td>
+      <td>R5257</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SmaI</td>
+      <td>Restriction enzyme</td>
+      <td>Promega</td>
+      <td>R6121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>75 cm2 tissue culture flask</td>
+      <td>Labware</td>
+      <td>Corning</td>
+      <td>430641U</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>HEK293T cells</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dulbecco's Modified Eagle's Medium (DMEM), high glucose</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>D6429</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Fetal bovine serum (FBS)</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>F2442</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>GSC culture media</td>
+      <td colspan="4">See reagent list from Protocol 1 for a complete list of medium components</td>
+    </tr>
+    <tr>
+      <td>2× HEPES buffered saline (HBS)</td>
+      <td>Reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>51558</td>
+      <td>Replaces laboratory-made buffer used in original study. pH of substituted buffer is 7.2; pH of original buffer was 7.05</td>
+    </tr>
+    <tr>
+      <td>Calcium chloride dihydrate</td>
+      <td>Reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>C7902</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Hexadimethrine bromide (polybrene)</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>107689</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>6-Well tissue culture plates</td>
+      <td>Labware</td>
+      <td>Corning</td>
+      <td>3516</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>7-Amino actinomycin D (7-AAD)</td>
+      <td>Flow reagent</td>
+      <td>Life Technologies</td>
+      <td>A1310</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Tubes used for flow cytometry</td>
+      <td colspan="4">Specific brand information will be left up to the discretion of the replicating laboratory and recorded later</td>
+    </tr>
+    <tr>
+      <td>FACSCalibur flow cytometry instrument</td>
+      <td>Equipment</td>
+      <td>Becton Dickinson</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-## Sampling
+#### Sampling
 
 Outline of experimental endpoints:A. At the end of this protocol, we will have generated GSC83 glioblastoma neurospheres and U87MG cells stably expressing:i. Empty vector.ii. PGK-tk transduced.iii. Tie2-tk transduced.B. Total: six stable cell lines.
 
-## Protocol
+#### Protocol
 
 Grow and prepare endotoxin-free plasmid constructs according to the manufacturer's protocol for the GenElute Endotoxin-free Plasmid Maxiprep Kit.A. Viral packaging vectors:i. pCMV-dR8.74 (∼50 µg DNA needed for production of three viruses).ii. pMD2G (∼30 µg DNA needed production of three viruses).B. DNA construct expression vectors:i. pRRLsin.Tie2p.TK.PGKp.GFP.spre (∼30 µg DNA needed for virus production).ii. pRRLsin.PGKp.TK.PGKp.GFP.spre (∼30 µg DNA needed for virus production).iii. pRRLsin.PGKp.GFP.spre (∼30 µg DNA needed for virus production).Perform restriction digestions on an aliquot of purified plasmid to check vector integrity for Tie2-tk and PGK-tk plasmids. Following digestion, run digested bands on an agarose gel to visualize band pattern.A. For Tie2-tk vector (12.13 kb), digest vector with NdeI, BamHI, and SmaI.i. NdeI + BamHI = 1.44 kb segment (identifies Tie2 promoter).ii. BamHI + SmaI = 1.62 kb segment (identifies TK insert).B. For PGK-tk vector (10.06 kb), digest vector with SpeI, BamHI, and SmaI.i. SpeI + BamHI = 257 bp segment (identifies PGK promoter).ii. BamHI + SmaI = 1.15 kb segment (identifies TK insert).On Day 1 of viral production, plate 1.2 × 106 HEK293T cells in a 75 cm2 tissue culture flask.A. HEK293T cells should be maintained in DMEM supplemented with 10% FBS at 37°C with 5% CO2.On Day 2, replace the cell medium with 18 ml of fresh medium. Prepare a transfection master mix for each of the DNA construct vectors.A. Assemble the following components in a 15 ml polypropylene tube in the following order:i. 20 µg of DNA construct expression vector.ii. 13 µg of pCMV-dR8.74 packaging vector.iii. 7 µg of pMD2G envelope vector.iv. 150 µl of 2M CaCl2.v. Bring volume to 1 ml with ddH2O.vi. Add 1 ml of 2× HEPES buffered saline (HBS) and aerate solution for 20–30 s with a 2 ml pipette.Immediately add the 2 ml transfection master mix directly to HEK293T cells by dropping slowly and evenly into the media, covering as much of the flask as possible.A. Do not mix.B. Place flasks in a 37°C incubator for 14–16 hr.Day 3: after 14–16 hr, change media to remove DNA precipitate.Day 4: 48 hr after transfection, collect viral supernatant, filter through a 0.45 µm syringe filter, and freeze in liquid nitrogen. Store at −80°C until use.Culture GSC83 glioblastoma neurospheres and U87MG cells as described in Protocol 1.A. Plate 150,000–200,000 cells in a 6-well plate.B. Cells should be exponentially growing at time of lentiviral infection.Infect GSC83 neurospheres and U87MG cells with lentivirus:A. Add viral supernatant (1 ml/50,000 cells) along with 4 µg/ml polybrene to each well.B. Spin plate of cells at 1800 rpm in centrifuge for 45 min.C. Incubate cells for 75 min in a 5% CO2/37°C incubator.D. Wash cells twice with culture medium, then add fresh serum-free media.E. Seed cells into a 25 cm2 tissue culture flask at 20,000 cells per ml.F. Allow cells to grow for 48 hr.Evaluate infection efficiency at 48 hr post infection by flow cytometry.A. Remove an aliquot of cells (20,000–50,000 cells) from each flask. Untransduced cells (both GSC83 and U87MG) should also be prepared for use as a negative control.i. Pull down the cells by centrifuging each flask at ≤1000 rpm.ii. Remove the supernatant, leaving approximately 150–200 µl of media in the flask.iii. Use a P200 pipette to gently dissociate the cells. Pipette up and down several times to obtain a single cell suspension.iv. Save an aliquot for flow analysis, and passage the remaining cells into a new flask to expand them for further experiments.B. Incubate the freshly dissociated cells for 5 min with 7-amino actinomycin D (7-AAD; final concentration 5 µg/ml).C. Analyze cells for GFP expression using a FACSCalibur instrument. Apply the following sequential gates to the dot plots to select viable cells:i. FSC area/SSC area.ii. SSC width/SSC area to exclude aggregates.iii. FSC area/7-AAD area to select viable cells.iv. Untransduced cells serve as a negative control.D. Plot fluorescent protein expression in gated cells using bivariate plots.Determine the percentage of transduced cells positive for GFP reporter expression in each population of cells.A. Exclusion criteria: Expression should be ≥80% positive in each transduced population in order for cells to be used for xenograft injection.Continue to expand and culture cells until ready for injection into immunocompromised mice.
 
-## Deliverables
+#### Deliverables
 
 Data to be collected:A. Purity (A260/280 and A260/230 ratios) and concentration of plasmid DNA.B. Agarose gel image of restriction-digested Tie2-tk and PGK-tk plasmids with molecular weight marker.C. FACS plots of virally-transduced GSC83 and U87MG cells.D. Achieved transduction efficiency (%GFP+ cells) for GSC83 and U87MG cells.Samples delivered for further analysis:A. Infected neurosphere and U87MG clones (see Protocol 3).
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
 Statistical analysis of the replication data:
 
 Not applicable.
 
-## Known differences from the original study
+#### Known differences from the original study
 
 All known differences in reagents and supplies are listed in the ‘Materials and reagents’ section above, with the originally used item listed in the ‘Comments’ section. All differences have the same capabilities as the original and are not predicted to alter experimental outcome.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 Endotoxin-free plasmid DNA for expression constructs will be analyzed for concentration and purity. In order to verify the construction of Tie2-tk and PGK-tk constructs, restriction digestion mapping will be performed. Banding pattern will be compared to expected band sizes based on plasmid maps received from the original authors. Flow cytometry data will be analyzed using the software package FlowJo and the achieved transduction efficiency (%GFP+ cells) will be calculated for each infected cell population. Untransduced, wild-type cells (both GSC83 and U87MG) will serve as a negative control for flow cytometry. 7-AAD will be used to exclude dead cells from flow analysis. All data obtained from the experiment—raw data, data analysis, control data, and quality control data—will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework project page for this study (https://osf.io/mpyvx/).
 
-## Protocol 3: Monitoring xenograft tumor size after selective targeting of cells with ganciclovir
+### Protocol 3: Monitoring xenograft tumor size after selective targeting of cells with ganciclovir
 
 This protocol is designed to test whether GSC-derived endothelial cells can contribute to tumor growth in vivo. Virally transduced glioblastoma neurospheres expressing the herpes simplex virus thymidine kinase gene (tk) under the control of the endothelial marker Tie2 are subcutaneously injected into immunocompromised mice. Following tumor formation, mice are treated with ganciclovir, which selectively kills any cells expressing tk. Negative controls include neurospheres transduced with an empty viral vector, as well as the differentiated glioblastoma cell line U87MG, which should not give rise to endothelial cells. Positive controls include neurospheres and U87MG cells transduced with a vector conferring constitutive expression of tk (PGK-tk), which should target all tumor cells. Selective targeting of tk-expressing tumor cells should result in tumor reduction and degeneration, indicating the functional relevance of the GSC-derived endothelial vessels (as shown in Figures 4B and S10B).
 
-## Sampling
+#### Sampling
 
 These experiments will utilize at least three mice per treatment group, for a minimum power of 80%.A. See ‘Power calculations’ section for details.B. As per Ricci-Vitiani et al., U87MG cells have a 100% tumor incidence rate, while GSC83 neurospheres have a ∼60% tumor incidence rate.i. To ensure that we have enough animals at the end of the study to accurately power the effects for the GSC83 mouse cohort, we are including two extra mice per group beyond the estimated sample size of our power calculations.Outline of experimental conditions:A. Mouse Cohort 1 (xenograft of GSC83 glioblastoma neurospheres).i. 28 female CD1 athymic nude mice, 5 weeks old.a. Seven mice injected with untransduced GSC83 cells.b. Seven mice injected with empty vector transduced GSC83 cells.c. Seven mice injected with PGK-tk transduced GSC83 cells.d. Seven mice injected with Tie2-tk transduced GSC83 cells.B. Mouse Cohort 2 (xenograft of U87MG cells).i. 12 female CD1 athymic nude mice, 5 weeks old.a. Three mice injected with untransduced U87MG cells.b. Three mice injected with empty vector transduced U87MG cells.c. Three mice injected with PGK-tk transduced U87MG cells.d. Three mice injected with Tie2-tk transduced U87MG cells.
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #Comments4–5 Week old female CD1 athymic nude miceMouse lineCharles River086GanciclovirDrugSigma–AldrichG2536Matrigel Matrix High Concentration (HC), phenol red-freeCell culture reagentCorning354262Original catalog number not specifiedDulbecco's phosphate buffered saline (PBS)ReagentSigma–AldrichD85371 ml insulin syringe with attached needle; 29G × 1/2 in.LabwareBD Biosciences329411Original brand not specifiedIsoFlo (isoflurane, USP)AnestheticAbbott Animal Health05260-05ParaformaldehydeReagentSigma–Aldrich158127Original brand not specifiedParaffinReagentSpecific brand information will be left up to the discretion of the replicating laboratory and recorded laterXyleneReagentEthanolReagentCarazzi's hematoxylinIHC stainEosinIHC stainPermountMounting medium
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4–5 Week old female CD1 athymic nude mice</td>
+      <td>Mouse line</td>
+      <td>Charles River</td>
+      <td>086</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ganciclovir</td>
+      <td>Drug</td>
+      <td>Sigma–Aldrich</td>
+      <td>G2536</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Matrigel Matrix High Concentration (HC), phenol red-free</td>
+      <td>Cell culture reagent</td>
+      <td>Corning</td>
+      <td>354262</td>
+      <td>Original catalog number not specified</td>
+    </tr>
+    <tr>
+      <td>Dulbecco's phosphate buffered saline (PBS)</td>
+      <td>Reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>D8537</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1 ml insulin syringe with attached needle; 29G × 1/2 in.</td>
+      <td>Labware</td>
+      <td>BD Biosciences</td>
+      <td>329411</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>IsoFlo (isoflurane, USP)</td>
+      <td>Anesthetic</td>
+      <td>Abbott Animal Health</td>
+      <td>05260-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Paraformaldehyde</td>
+      <td>Reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>158127</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Paraffin</td>
+      <td>Reagent</td>
+      <td rowspan="6" colspan="3">Specific brand information will be left up to the discretion of the replicating laboratory and recorded later</td>
+    </tr>
+    <tr>
+      <td>Xylene</td>
+      <td>Reagent</td>
+    </tr>
+    <tr>
+      <td>Ethanol</td>
+      <td>Reagent</td>
+    </tr>
+    <tr>
+      <td>Carazzi's hematoxylin</td>
+      <td>IHC stain</td>
+    </tr>
+    <tr>
+      <td>Eosin</td>
+      <td>IHC stain</td>
+    </tr>
+    <tr>
+      <td>Permount</td>
+      <td>Mounting medium</td>
+    </tr>
+  </tbody>
+</table>
 
-## Protocol
+#### Protocol
 
 Prepare virally transduced cells for injection into mice. Perform all steps under sterile conditions.A. Dissociate cells in flasks to form a single-cell suspension:i. Pull down the cells by centrifuging each flask at ≤1000 rpm.ii. Remove the supernatant, leaving approximately 150–200 µl of media in the flask.iii. Use a P200 pipette to gently dissociate the cells. Pipette up and down several times to obtain a single cell suspension.B. Resuspend 1 × 106 dissociated cells in 0.1 ml cold PBS, then mix with an equal volume of cold Matrigel. Total volume should be 0.2 ml.Subcutaneously inject 4–5 week old female athymic nude mice into the rear flank. Each mouse should receive a single injection.A. Mice should be microchipped prior to injection, so that they can be easily monitored throughout the duration of the study.B. For each cell type, inject the 0.2 ml cell/Matrigel mixture subcutaneously into the flanks of the mice using a 29G insulin syringe.Allow tumor nodules to form. The estimated time for tumor formation for U87MG cells is 3–4 weeks. The estimated time for tumor formation for GSC83 neurospheres is 4–6 months.A. Check for tumors weekly and measure diameter and volume.i. Calculate tumor volume as (length × width2)/2.B. Note time for tumor nodules to form as well as tumor diameter and volume.C. Once tumor size reaches ∼10 mm in diameter, proceed to ganciclovir treatment.Inject mice with 50 mg/kg of ganciclovir (GCV) per day for 5 days in total.A. Immediately prior to injection, record final tumor diameter and volume measurements. These data will serve as baseline controls for downstream analyses.B. Prepare a 5 mg/ml solution of GCV using sterile water under sterile conditions. Filter solution through a 0.2 µm sterile filter.C. Inject 0.2 ml of sterile solution (containing 1 mg of GCV) intraperitoneally (i.p.) into mice.i. This injection amount assumes an approximate mouse weight of 20 g. For mice that are larger or smaller, the injection volume should be adjusted accordingly.Measure tumor size twice weekly following GCV injection for 4 weeks using calipers.A. Record both tumor diameter and volume. Measure tumor in two directions with calipers. Calculate tumor volume as (length × width2)/2.Four weeks after last GCV injection, take final tumor measurements and euthanize mice. Harvest a random subset of tumors for histological analysis.A. Randomly choose one mouse from each treatment group to harvest tumor tissue (eight mice in total; four mice from each cohort).i. Prior to euthanasia, deeply anesthetize animals using isofluorane and transcardially perfuse mice with sterile saline, followed by 4% paraformaldehyde (PFA) in PBS.ii. Excise tumor nodules under an operating microscope.iii. Fix excised tumors in 4% PFA for 24 hr at 4°C.Process, embed, and mount tissues on slides.A. Dehydrate tissues through graded alcohols and clear in xylene.B. Infiltrate with, and then embed, tissues in paraffin and section into 3 µm sections.C. Mount sections onto positively charged glass slides.i. Mount a total of two sections for each tumor onto a single slide.Perform H&E staining by hand using the following procedure:A. Deparaffinize sections twice in xylene, then rehydrate through graded alcohols (95%, 70%, 50% ETOH) to water.B. Stain sections with Carazzi's hematoxylin, then rinse slides in water.C. Stain sections with eosin.D. Dehydrate sections through graded alcohols (50%, 70%, 90%), and then place in xylene.E. Apply coverslips to slides with Permount and store slides at room temperature.Blindly image stained sections and have images blindly analyzed by a board certified veterinary pathologist to verify the tumor composition of the tissue sections and analyze vascular structures for endothelial vacuolization and disruption.
 
-## Deliverables
+#### Deliverables
 
 Data to be collected:A. Xenograft transplant records (mouse health records [age, weight], injection location, time for nodules to form, etc.).B. Tumor size measurements (diameter and calculated volume) throughout course of study and prior to euthanasia (end-point).C. Graph of percent tumor diameter change for each condition (compare to Figure 4B and S10C).D. Images of H&E stained sections from a random selection of tumors (indicate neovessels and vascular degeneration) (compare to Figure S10B and S10D).E. Pathologist's report detailing the evaluation of the stained tumor sections.
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
 This replication attempt will perform the statistical analyses listed below, compute the effect sizes, compare them against the reported effect size in the original paper and use a meta-analytic approach to combine the original and replication effects, which will be presented as a Forest plot.Statistical analysis of the replication data:A. Comparison of percent diameter change in control versus tk-expressing tumors.i. The diameters of tumors directly before GCV treatment will serve as individual baselines for each mouse. Tumor measurements made 4 weeks after GCV treatment will be subtracted from the baseline measurements for each tumor, and a percent change in diameter will be calculated. The mean percent change in each mouse cohort will be analyzed with a one-way ANOVA.a. Following the one-way ANOVA, the following planned pairwise comparisons will be made using the Bonferroni correction to account for multiple comparisons:For mice implanted with GSC83 neurospheres:A. Tie2-tk versus PGK-tk.B. Tie2-tk versus empty vector.C. PGK-tk versus empty vector.D. Untransduced (wild-type) versus empty vector (sensitivity).b. Following the one-way ANOVA, the following planned pairwise comparisons will be made using the Bonferroni correction to account for multiple comparisons:For mice implanted with U87MG cells:A. Tie2-tk versus PGK-tk.B. Tie2-tk versus empty vector (sensitivity).C. PGK-tk versus empty vector.D. Untransduced (wild-type) versus empty vector (sensitivity).ii. The authors originally examined the percent changes in tumor diameter between mouse treatment groups using multiple uncorrected two-tailed t-tests. We will replicate their t-tests, but also use Bonferroni-corrected t-tests within the framework of the ANOVA.B. Comparison of percent volume change in control versus tk-expressing tumors.i. Differences in percent volume change of tumors before and after GCV treatment will be analyzed as described for percent diameter change above.C. Comparison of tumor growth rates.i. We will measure tumor growth rates across all mouse cohorts over the length of the study, both before and after GCV treatment. These data were not analyzed in the original study, so we consider them exploratory data. We will plot tumor growth curves for each animal and calculate the area under the curve (AUC) before and after GCV treatment. We will perform an ANCOVA on the different treatment groups to evaluate the AUC after GCV treatment, with the baseline (AUC before GCV treatment) included as the covariate. Further, we will perform Bonferroni corrected t-tests for pairwise comparisons between controls and tk-expressing tumors.
 
-## Known differences from the original study
+#### Known differences from the original study
 
 The methods section in the original paper stated that mice were dual-injected with both control and Tie2-tk expressing neurospheres into the right and left flanks, respectively, and bilateral tumors were allowed to form. However, subsequent dialogue with the authors clarified that mice actually only received a single injection, as dual injections often led to problematic differences in tumor growth rates. Therefore, we will be using a single-injection model, where mice will be either injected with tk vectors or controls, but not both simultaneously. We will only be comparing GSC83-derived cell lines and U87MG-derived cell lines, excluding the other GSC lines used in the original study. Along with measuring differences in tumor diameter, we will also be measuring tumor volume throughout the course of the study. In the original study, it was not specified how many tumors were harvested and histologically analyzed. We have elected to harvest a random subset of tumors that represent all treatment groups. All known differences in reagents and supplies are listed in the ‘Materials and reagents’ section above, with the originally used item listed in the ‘Comments’ section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The genetic integrity, mycoplasma-free and rodent pathogen-free purity, and efficient viral transduction of each cell line used in this experiment have been previously validated in Protocols 1 and 2. All mice will be handled and housed in accordance with the Institutional Animal Care and Use Committee (IACUC). All data obtained from the experiment—raw data, data analysis, control data, and quality control data—will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/mpyvx/).
 
-## Power calculations
+### Power calculations
 
 Unless otherwise stated, all data values are derived from the original paper, or were provided by the original authors.
 
-## Protocol 1
+### Protocol 1
 
-Summary of original data provided by Ricci-Vitiani et al.Normalized Tie2 expression across cell lines (Figure S11C)MeanSDnGSC830.0353620.0124552U87MG0.0184980.0103972HMVEC1.3176340.0212
+Summary of original data provided by Ricci-Vitiani et al.
 
-## Test family
+<table>
+  <thead>
+    <tr>
+      <th>Normalized Tie2 expression across cell lines (Figure S11C)</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GSC83</td>
+      <td>0.035362</td>
+      <td>0.012455</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>U87MG</td>
+      <td>0.018498</td>
+      <td>0.010397</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>HMVEC</td>
+      <td>1.317634</td>
+      <td>0.021</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Test family
 
 ANOVA: fixed effects, omnibus, one-way, with alpha error of 0.05.A. ANOVA F-test statistic (performed with GraphPad Prism, version 6.0).B. Partial η2 calculated from Lakens (2013).
 
-Power calculations (performed with G*Power software, version 3.1.7 [Faul et al., 2007])F (Dfn, Dfd)Partial η2Effect size fA priori powerTotal sample sizeF (2, 3) = 47320.99968356.1566999.9%6* (2 per group)*A minimum of three samples per group will be used, making the total sample size 9.
+Power calculations (performed with G*Power software, version 3.1.7 [Faul et al., 2007])
 
-## Test family
+<table>
+  <thead>
+    <tr>
+      <th>F (Dfn, Dfd)</th>
+      <th>Partial η2</th>
+      <th>Effect size f</th>
+      <th>A priori power</th>
+      <th>Total sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F (2, 3) = 4732</td>
+      <td>0.999683</td>
+      <td>56.15669</td>
+      <td>99.9%</td>
+      <td>6* (2 per group)</td>
+    </tr>
+  </tbody>
+</table>
 
-Two-tailed, unpaired t-test, with alpha error of 0.05 (Fisher's LSD).A. Power calculations (performed with G*Power software, version 3.1.7 [Faul et al., 2007])Group 1Group 2Effect size dA priori powerGroup 1 sample sizeGroup 2 sample sizeGSC83HMVEC83.68295>99.9%2*2*U87MGHMVEC84.78352>99.9%2*2*GSC83U87MG3.070892#80.0%33*A minimum of three samples per group will be used.#This is a sensitivity calculation. The original effect size is 1.100569.
+_*A minimum of three samples per group will be used, making the total sample size 9._
 
-## Protocol 2
+#### Test family
+
+Two-tailed, unpaired t-test, with alpha error of 0.05 (Fisher's LSD).A. Power calculations (performed with G*Power software, version 3.1.7 [Faul et al., 2007])
+
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GSC83</td>
+      <td>HMVEC</td>
+      <td>83.68295</td>
+      <td>&gt;99.9%</td>
+      <td>2*</td>
+      <td>2*</td>
+    </tr>
+    <tr>
+      <td>U87MG</td>
+      <td>HMVEC</td>
+      <td>84.78352</td>
+      <td>&gt;99.9%</td>
+      <td>2*</td>
+      <td>2*</td>
+    </tr>
+    <tr>
+      <td>GSC83</td>
+      <td>U87MG</td>
+      <td>3.070892#</td>
+      <td>80.0%</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+_*A minimum of three samples per group will be used.#This is a sensitivity calculation. The original effect size is 1.100569._
+
+### Protocol 2
 
 Not applicable. Power calculations are not necessary for this protocol.
 
-## Protocol 3
+### Protocol 3
 
-Summary of original data provided by Ricci-Vitiani et al.Impaired tumor growth of GSC83 xenograft following ganciclovir treatment (Figure 4B)Mean (% diameter change)SDnWild-type7.85.23Empty vector8.55.03Tie2-tk−13.25.93PGK-tk−28.73.44
+Summary of original data provided by Ricci-Vitiani et al.
 
-## Test family
+<table>
+  <thead>
+    <tr>
+      <th>Impaired tumor growth of GSC83 xenograft following ganciclovir treatment (Figure 4B)</th>
+      <th>Mean (% diameter change)</th>
+      <th>SD</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wild-type</td>
+      <td>7.8</td>
+      <td>5.2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Empty vector</td>
+      <td>8.5</td>
+      <td>5.0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Tie2-tk</td>
+      <td>−13.2</td>
+      <td>5.9</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>PGK-tk</td>
+      <td>−28.7</td>
+      <td>3.4</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
 
-ANOVA: fixed effects, omnibus, one-way, with alpha error of 0.05.A. ANOVA F-test statistic (performed with GraphPad Prism, version 6.0).B. Partial η2 calculated from Lakens (2013).C. Power calculations (performed with G*Power software, version 3.1.7 [Faul et al., 2007])F (Dfn, Dfd)Partial η2Effect size fA priori powerTotal sample sizeF (3, 9) = 48.380.9416124.01585699.9%8* (2 per group)*A total sample size of 20 will be used based on the planned comparisons.
+#### Test family
 
-## Test family
+ANOVA: fixed effects, omnibus, one-way, with alpha error of 0.05.A. ANOVA F-test statistic (performed with GraphPad Prism, version 6.0).B. Partial η2 calculated from Lakens (2013).C. Power calculations (performed with G*Power software, version 3.1.7 [Faul et al., 2007])
 
-Two-tailed, unpaired t-test, with alpha error of 0.0125 (Bonferroni's correction).A. Power calculations (performed with G*Power software, version 3.1.7 [Faul et al., 2007])Group 1Group 2Effect size dA priori powerGroup 1 sample sizeGroup 2 sample sizePGK-tkTie2-tk3.22148193.9%55Wild-typeEmpty vector2.640807*80.0%55Empty vectorTie2-tk4.51007498.1%#4#4#Empty vectorPGK-tk7.73155599.8%§3§3§*This is a sensitivity calculation. The original effect size is 0.1454863.#Five per group will be used based on the PGK-tk versus Tie2-tk comparisons making the power 99.9%.§Five per group will be used based on the PGK-tk versus Tie2-tk comparisons making the power 99.9%.
+<table>
+  <thead>
+    <tr>
+      <th>F (Dfn, Dfd)</th>
+      <th>Partial η2</th>
+      <th>Effect size f</th>
+      <th>A priori power</th>
+      <th>Total sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F (3, 9) = 48.38</td>
+      <td>0.941612</td>
+      <td>4.015856</td>
+      <td>99.9%</td>
+      <td>8* (2 per group)</td>
+    </tr>
+  </tbody>
+</table>
 
-## Summary of original data
+_*A total sample size of 20 will be used based on the planned comparisons._
 
-Values estimated from graph in Figure S10CImpaired tumor growth of U87MG xenograft following ganciclovir treatment (Figure S10C)Mean (% diameter change)SDnEmpty vector38.17.73Tie2-tk36.111.43PGK-tk−49.07.93
+#### Test family
+
+Two-tailed, unpaired t-test, with alpha error of 0.0125 (Bonferroni's correction).A. Power calculations (performed with G*Power software, version 3.1.7 [Faul et al., 2007])
+
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PGK-tk</td>
+      <td>Tie2-tk</td>
+      <td>3.221481</td>
+      <td>93.9%</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Wild-type</td>
+      <td>Empty vector</td>
+      <td>2.640807*</td>
+      <td>80.0%</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Empty vector</td>
+      <td>Tie2-tk</td>
+      <td>4.510074</td>
+      <td>98.1%#</td>
+      <td>4#</td>
+      <td>4#</td>
+    </tr>
+    <tr>
+      <td>Empty vector</td>
+      <td>PGK-tk</td>
+      <td>7.731555</td>
+      <td>99.8%§</td>
+      <td>3§</td>
+      <td>3§</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This is a sensitivity calculation. The original effect size is 0.1454863.#Five per group will be used based on the PGK-tk versus Tie2-tk comparisons making the power 99.9%.§Five per group will be used based on the PGK-tk versus Tie2-tk comparisons making the power 99.9%._
+
+#### Summary of original data
+
+Values estimated from graph in Figure S10C
+
+<table>
+  <thead>
+    <tr>
+      <th>Impaired tumor growth of U87MG xenograft following ganciclovir treatment (Figure S10C)</th>
+      <th>Mean (% diameter change)</th>
+      <th>SD</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Empty vector</td>
+      <td>38.1</td>
+      <td>7.7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Tie2-tk</td>
+      <td>36.1</td>
+      <td>11.4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>PGK-tk</td>
+      <td>−49.0</td>
+      <td>7.9</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
 Note: We are including an additional negative control in this experiment (wild-type untransduced cells). We performed these calculations with the assumption that wild-type untransduced cells will have similar values as empty vector control.
 
-## Test family
+#### Test family
 
-ANOVA: fixed effects, omnibus, one-way, with alpha error of 0.05.A. ANOVA F-test statistic partial η2 (performed with R software, version 3.1.2 [R Development Core Team, 2014]).B. Power calculations (performed with G*Power software, version 3.1.7 [Faul et al., 2007])F (Dfn, Dfd)Partial η2Effect size fA priori powerTotal sample sizeF (3, 8) = 72.1110.9643395.20017799.9%8* (2 per group)*A total sample size of 12 will be used based on the planned comparisons.
+ANOVA: fixed effects, omnibus, one-way, with alpha error of 0.05.A. ANOVA F-test statistic partial η2 (performed with R software, version 3.1.2 [R Development Core Team, 2014]).B. Power calculations (performed with G*Power software, version 3.1.7 [Faul et al., 2007])
 
-## Test family
+<table>
+  <thead>
+    <tr>
+      <th>F (Dfn, Dfd)</th>
+      <th>Partial η2</th>
+      <th>Effect size f</th>
+      <th>A priori power</th>
+      <th>Total sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F (3, 8) = 72.111</td>
+      <td>0.964339</td>
+      <td>5.200177</td>
+      <td>99.9%</td>
+      <td>8* (2 per group)</td>
+    </tr>
+  </tbody>
+</table>
 
-Two-tailed, unpaired t-test, with alpha error of 0.0125 (Bonferroni's correction).A. Power calculations (performed with G*Power software, version 3.1.7 [Faul et al., 2007])Group 1Group 2Effect size dA priori powerGroup 1 sample sizeGroup 2 sample sizePGK-tkTie2-tk9.65195799.9%33Wild-typeEmpty vector4.52198080.0%*33Empty vectorTie2-tk4.52198080.0%#33Empty vectorPGK-tk9.87879599.9%33*This is a sensitivity calculation. There is no original effect size.#This is a sensitivity calculation. The original effect size is 0.226838.
+_*A total sample size of 12 will be used based on the planned comparisons._
+
+#### Test family
+
+Two-tailed, unpaired t-test, with alpha error of 0.0125 (Bonferroni's correction).A. Power calculations (performed with G*Power software, version 3.1.7 [Faul et al., 2007])
+
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PGK-tk</td>
+      <td>Tie2-tk</td>
+      <td>9.651957</td>
+      <td>99.9%</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Wild-type</td>
+      <td>Empty vector</td>
+      <td>4.521980</td>
+      <td>80.0%*</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Empty vector</td>
+      <td>Tie2-tk</td>
+      <td>4.521980</td>
+      <td>80.0%#</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Empty vector</td>
+      <td>PGK-tk</td>
+      <td>9.878795</td>
+      <td>99.9%</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This is a sensitivity calculation. There is no original effect size.#This is a sensitivity calculation. The original effect size is 0.226838._

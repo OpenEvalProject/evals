@@ -26,7 +26,7 @@
 
 ## Abstract
 
-Identification of key regulators of energy homeostasis holds important therapeutic promise for metabolic disorders, such as obesity and diabetes. ACE2 cleaves angiotensin II (Ang II) to generate Ang-(1-7) which acts mainly through the Mas1 receptor. Here, we identify ACE2 pathway as a critical regulator in the maintenance of thermogenesis and energy expenditure. We found that ACE2 is highly expressed in brown adipose tissue (BAT) and that cold stimulation increases ACE2 and Ang-(1-7) levels in BAT and serum. Ace2 knockout mice ( Ace2 ) and -/y Mas1 knockout mice ( Mas1 ) displayed impaired thermogenesis. Mice transplanted with brown adipose tissue from -/- Mas1 -/- display metabolic abnormalities consistent with those seen in the Ace2 and Mas1 knockout mice. In contrast, impaired thermogenesis of Lepr obese diabetic mice and high-fat diet-induced obese mice were ameliorated by overexpression of db/db Ace2 or continuous infusion of Ang-(1-7). Activation of ACE2 pathway was associated with improvement of metabolic parameters, including blood glucose, lipids, and energy expenditure in multiple animal models. Consistently, ACE2 pathway remarkably enhanced the browning of white adipose tissue. Mechanistically, we showed that ACE2 pathway activated Akt/FoxO1 and PKA pathway, leading to induction of UCP1 and activation of mitochondrial function. Our data propose that adaptive thermogenesis requires regulation of ACE2 pathway and highlight novel potential therapeutic targets for the treatment of metabolic disorders.
+Identification of key regulators of energy homeostasis holds important therapeutic promise for metabolic disorders, such as obesity and diabetes. ACE2 cleaves angiotensin II (Ang II) to generate Ang-(1-7) which acts mainly through the Mas1 receptor. Here, we identify ACE2 pathway as a critical regulator in the maintenance of thermogenesis and energy expenditure. We found that ACE2 is highly expressed in brown adipose tissue (BAT) and that cold stimulation increases ACE2 and Ang-(1-7) levels in BAT and serum. Ace2 knockout mice (Ace2-/y) and Mas1 knockout mice (Mas1-/-) displayed impaired thermogenesis. Mice transplanted with brown adipose tissue from Mas1-/- display metabolic abnormalities consistent with those seen in the Ace2 and Mas1 knockout mice. In contrast, impaired thermogenesis of Leprdb/db obese diabetic mice and high-fat diet-induced obese mice were ameliorated by overexpression of Ace2 or continuous infusion of Ang-(1-7). Activation of ACE2 pathway was associated with improvement of metabolic parameters, including blood glucose, lipids, and energy expenditure in multiple animal models. Consistently, ACE2 pathway remarkably enhanced the browning of white adipose tissue. Mechanistically, we showed that ACE2 pathway activated Akt/FoxO1 and PKA pathway, leading to induction of UCP1 and activation of mitochondrial function. Our data propose that adaptive thermogenesis requires regulation of ACE2 pathway and highlight novel potential therapeutic targets for the treatment of metabolic disorders.
 
 ## Introduction
 
@@ -38,7 +38,7 @@ In this study, we reported the effects of ACE2 pathway on regulating thermogenes
 
 ## Results
 
-## Acute cold exposure increases components of ACE2 pathway
+### Acute cold exposure increases components of ACE2 pathway
 
 The major tissue of the body where energy is converted into the form of heat to maintain the body temperature is BAT. We found both mRNA level and protein level of Ace2 and Mas1 in BAT were obviously higher than the ones in subcutaneous white adipose tissue (scWAT) and epididymal white adipose tissue (eWAT) in mice (Figure 1A and B). Acute cold exposure caused a significant up-regulation of ACE2 protein expression in BAT (Figure 1C). Meanwhile, Ace2 mRNA levels in BAT, scWAT and eWAT, and Mas1 mRNA levels in BAT and eWAT were increased after exposed to 4 °C for 48 hr (Figure 1D and E). ACE2 and Ang-(1-7) were also marginally increased in serum upon cold challenge (Figure 1F and G). These results demonstrated a selective induction of ACE2 pathway in thermogenic adipose depots (BAT and scWAT) in response to cold environment.
 
@@ -46,9 +46,17 @@ The major tissue of the body where energy is converted into the form of heat to 
 
 **Figure 1.:** Eight-week-old male C57BL/6 J mice were housed at room temperature (RT) for 2 weeks before cold exposure at 4 °C for various time periods as indicated. (A) Levels of ACE2 and Mas1 protein from interscapular brown adipose tissue (BAT), subcutaneous and epididymal white adipose tissue (scWAT and eWAT) of C57BL/6 mice at room temperature (RT), as determined by Western blotting (n = 3/each group). (B) Levels of Ace2 and Mas1 mRNA from BAT, scWAT and eWAT of C57BL/6 mice at RT, as determined by qPCR (n = 3/each group). (C) Levels of ACE2 and Mas1 protein from interscapular BAT of C57BL/6 mice at RT or exposed to 4 °C for 6 hr, as determined by western blotting (n = 3/each group). (D, E) Levels of Ace2 and Mas1 mRNA from BAT, scWAT, eWAT and liver of C57BL/6 mice exposed to 4 °C for 24 hr, as determined by qPCR (n = 6/each group). (F, G) Serum levels of ACE2 (F) and Ang-(1-7) (G), as determined by ELISA (n = 4–6/each group). Data represent mean ± SEM. *p < 0.05, **p < 0.01 and ***p < 0.001 vs Control group by Student’s t-test, or one-way ANOVA.
 
-## ACE2 promotes thermogenesis and energy metabolism
+### ACE2 promotes thermogenesis and energy metabolism
 
 To explore the physiological roles of ACE2 in cold-induced adaptive thermogenesis, we used the HFD-induced Ace2-/y mice. ACE2 is essential for expression of neutral amino acid transporters in the gut (Hashimoto et al., 2012). This is consistent with our observation that Ace2-/y mice fed an HFD displayed significantly decreased weight compared to wild-type (WT) mice (Figure 2A). Serum Ang-(1-7) levels were decreased in the Ace2-/y mice (Figure 2B). Consistent with previous studies (Cao et al., 2014; Liu et al., 2012a; Niu et al., 2008; Shi et al., 2018; Zhang et al., 2016), Ace2-/y mice had an impaired glucose tolerance and abnormal lipid profiles (Figure 2—figure supplement 1A-C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/72266/elife-72266-fig2-v3.jpg)
+
+**Figure 2.:** Eight-week-old male Ace2-/y mice and their wild-type (WT) mice (controls) had a high-fat diet (HFD) for 8 weeks. (A) Body weight of Ace2-/y and WT mice fed a HFD for 8 weeks (n = 4–5/each group). (B) Serum levels of Ang-(1-7), as determined by ELISA (n = 4–6/each group). (C–E) Energy expenditure was evaluated by measurement of oxygen consumption (VO2) (C), carbon dioxide release (VCO2) (D) and energy expenditure (EE) (E) over a 24 hours period (n = 5/each group). (F) Core body temperature at 30 °C, 22°C and 4°C for 8 hr in Ace2-/y and WT mice (n = 5/each group). (G) Infrared thermal images at 22 °C in Ace2-/y and WT mice. (H) Representative tomography–computed tomography (PET-CT) image and standard uptake values (SUVs) (n = 4/each group). (I) Representative haematoxylin and eosin (H&E) staining and uncoupling protein-1 (UCP1) immunostaining from BAT sections of Ace2-/y and WT mice exposure at 4 °C (n = 5/each group). (J) Representative western blots showing the changes of key proteins of energy expenditure and thermogenesis in BAT of Ace2-/y and WT mice exposure at 4 °C (n = 3/each group). (K) Representative western blots showing the key protein changes in primary brown adipocytes from Ace2-/y and WT mice (n = 3/each group). (L) Representative immunofluorescent images of in vitro differentiated primary brown adipocytes of Ace2-/y and WT mice, primary brown adipocytes show staining for UCP1 (red), boron-dipyrromethene (BODIPY) (green; neutral lipid dye), and DAPI (blue; nuclei). (M) Continuous measurement of oxygen consumption rate (OCR) in primary brown adipocytes from Ace2-/y mice and WT littermates. Oxygen consumption was performed under basal conditions, following the addition of oligomycin (1 μM), the pharmacological uncoupler FCCP (1 μM) or the Complex III and I inhibitor antimycin A and rotenone (0.5 μM) (n = 4–5/each group). Data represent mean ± SEM. *p < 0.05, **p < 0.01 vs WT group by Student’s t-test, or ANCOVA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72266/elife-72266-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Eight-week-old male Ace2-/y mice and their WT (control) mice had an HFD for 8 weeks (Ace2-/y vs WT). (A–C) Intraperitoneal glucose tolerance test (IPGTT), serum triglyceride and cholesterol levels in Ace2-/y and WT mice (n = 5–6/each group). (D–F) 24 hr food intake, water intake and physical activity were measured in Ace2-/y and WT mice (n = 5/each group). (G) Core body temperature at 4 °C for the indicated lengths of time in Ace2-/y and WT mice (n = 4/each group). (H) Relative mRNA levels of mitochondrial related genes, fatty acid oxidation related genes and transcription factors in BAT of in Ace2-/y and WT mice exposure at 4 °C (n = 3/each group). (I) Relative mRNA levels of mitochondrial related genes, fatty acid oxidation related genes and transcription factors in primary brown adipocytes from Ace2-/y and WT mice (n = 3/each group). Data represent mean ± SEM. *p < 0.05, **p < 0.01 vs WT group by Student’s t-test.
 
 A key factor for controlling energy homoeostasis is the balance between caloric intake and energy expenditure. Thus, we measured energy expenditure using a comprehensive laboratory animal monitoring system (CLAMS). We observed a decreased oxygen consumption (VOR2R), carbon dioxide release (VCOR2) and energy expenditure (EE) in Ace2-/y mice (Figure 2C, D and E), without observable changes in food and/or water intake as well as physical activity, compared to the WT mice (Figure 2—figure supplement 1D-F).
 
@@ -62,15 +70,31 @@ To validate the above-mentioned change of thermogenesis of BAT was cell autonomo
 
 As a complementary approach to the KO mouse models, we carried out gain-of-function studies using Ace2 over expression in obese diabetic Leprdb/db mice. One week following adenovirus-induced Ace2 over-expression (Ad-Ace2) by tail vein injection in the Leprdb/db mice, both ACE2 (Figure 3—figure supplement 1A) in BAT and circulating Ang-(1-7) (Figure 3A) were increased. Consistent with our previous study, the Ad-Ace2-treated mice exhibited an improved metabolic profile as indicated by the significant alleviation of glucose intolerance (Figure 3—figure supplement 1B). Notably, although no observable change on the body weight was observed in the two groups (Figure 3B), serum triglyceride levels decreased in the Ad-Ace2-treated mice (Figure 3—figure supplement 1C), as well as a minor change in serum cholesterol levels (Figure 3—figure supplement 1D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/72266/elife-72266-fig3-v3.jpg)
+
+**Figure 3.:** Ace2 over-expression adenovirus (Ad-Ace2) and Ad-GFP (control) were introduced into the Leprdb/db obese mice by tail vein injection. The ad-Ace2 and Ad-GFP treated Leprdb/db mice were used at the 6th day post-virus injection. (A) Serum levels of Ang-(1-7), as determined by ELISA (n = 6–7/each group). (B) Body weight of ad-Ace2 and Ad-GFP treated Leprdb/db mice at the 6th day post-virus injection (n = 4–6/each group). (C–E) Energy expenditure was evaluated by measurement of oxygen consumption (VO2) (C), carbon dioxide release (VCO2) (D) and energy expenditure (EE) (E) over a 24-hr period (n = 4–6/each group). (F) Core body temperature at 30 °C, 22°C and 4°C for 8 hr (n = 5/each group). (G) Infrared thermal images at 22 °C in Leprdb/db+ Ace2 and Leprdb/db+ GFP mice (n = 4/each group). (H) Representative tomography–computed tomography (PET-CT) image and standard uptake values (SUVs) (n = 4/each group). (I) Representative H&E staining and UCP1 immunostaining from BAT sections of Leprdb/db+ Ace2 and Leprdb/db+ GFP mice exposure at 4 °C (n = 5/each group). (J) Representative western blots showing the changes of key proteins of energy expenditure and thermogenesis in BAT of Leprdb/db+ Ace2 and Leprdb/db+ GFP mice exposure at 4 °C (n = 3/each group). (K) Relative mRNA levels of mitochondrial related genes, fatty acid oxidation related genes and transcription factors in BAT of Leprdb/db+ Ace2 and Leprdb/db+ GFP mice exposure at 4 °C (n = 5–6/each group). Data represent mean ± SEM. *p < 0.05, **p < 0.01 vs Ad-GFP group by Student’s t-test, or ANCOVA.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72266/elife-72266-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** The ad-Ace2 and Ad-GFP-treated Leprdb/db mice were used at the 6th day post-virus injection (Leprdb/db+ Ace2 vs Leprdb/db+ GFP). (A) Ace2 overexpression was verified in BAT of Ad-Ace2-treated Leprdb/db mice by Western blotting (n = 3/each group). (B–D) Intraperitoneal glucose tolerance test (IPGTT), serum triglyceride and cholesterol levels in Leprdb/db+ Ace2 and Leprdb/db+ GFP mice (n = 3–5/each group). (E–G) 24 hr food intake, water intake and physical activity were measured in Leprdb/db+ Ace2 and Leprdb/db+ GFP mice (n = 4–6/each group).(H, I) Infrared thermal images at 22 °C and core body temperature at 4 °C for the indicated lengths of time in C57BL/6 and Leprdb/d mice (n = 5/each group). (J) Core body temperature at 4 °C for the indicated lengths of time in Leprdb/db+ Ace2 and Leprdb/d + GFP mice (n = 4–7/each group). (K) Core body temperature at 4 °C for the indicated lengths of time in HFD + Ace2 and HFD + GFP mice (n = 6–7/each group). Data represent mean ± SEM. *p < 0.05, **p < 0.01 vs WT/GFP group by Student’s t-test.
+
 Notably, the Ad-Ace2-treated Leprdb/db mice had increased energy expenditure (VOR2, VCOR2 and EE) (Figure 3C–E). There was no obvious change in food and/or water intake as well as physical activity (Figure 3—figure supplement 1E-G).
 
 We measured rectal temperature and infrared thermal imaging in the Leprdb/db mice that BAT activity was defective as same as the ones in previous observations (Trayhurn and Wusteman, 1990; Zhang et al., 2014). The results showed that the thermogenesis of the Leprdb/db mice was severely impaired (Figure 3—figure supplement 1H, I). As expected, the Ad-Ace2 treated Leprdb/db mice and HFD-induced obese mice exhibited better thermogenesis than the control mice in ambient temperature (22 °C) and acute cold (4 °C) conditions (Figure 3F and G, Figure 3—figure supplement 1J,K). Accordingly, PET-CT result showed that BAT was activated in the Ad-Ace2-treated Leprdb/db mice (Figure 3H). Moreover, BAT in the Ad-Ace2-treated Leprdb/db mice had smaller lipid droplets but increased multi-locular structures, and had increased UCP1 expression compared with the control group (Figure 3I).
 
 The protein levels of UCP1, ATP5A and UQCRC2 were significantly increased in the BAT from the Ad-Ace2 treated mice (Figure 3J). Consistently, the mRNA levels, including Ucp1, ATP synthase F1 subunit beta (Atp5b), Cox8b, Cox7a, fatty acid binding protein 4 (Fabp4), Cpt1a, Prdm16, Ppargc1a and Ppargc1b, were increased in the BAT from the Ad-Ace2-treated Leprdb/db mice (Figure 3K). Taken together, these results indicated that ACE2 effectively regulated the mitochondrial biogenesis and respiratory function in brown adipocytes.
 
-## Ang-(1-7) promotes thermogenesis and energy metabolism
+### Ang-(1-7) promotes thermogenesis and energy metabolism
 
 To explore the direct physiological roles of Ang-(1-7) in cold-induced adaptive thermogenesis, Ang-(1-7) administration by subcutaneous implantation of micro-osmotic pumps in the Leprdb/db and the HFD-induced obese mice were employed. Serum Ang-(1-7) was increased in Ang-(1-7)-treated mice (Figure 4—figure supplement 1A). There are no significant differences in body weight between the Ang-(1-7)-treated Leprdb/db mice and the Leprdb/db control mice (Figure 4A); however, Ang-(1-7)-treated Leprdb/db mice has an improved glucose tolerance ability (Figure 4—figure supplement 1B) and better lipid profiles (Figure 4—figure supplement 1C, D). The Ang-(1-7)-treated HFD-induced obese mice displayed a lower body weight compared to the control (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72266/elife-72266-fig4-v3.jpg)
+
+**Figure 4.:** Ang-(1-7) administration by subcutaneous implanted micro-osmotic pumps in the Leprdb/db obese mice and the high-fat diet (HFD)-induced obese mice were used. The Leprdb/db mice were treated with Ang-(1-7) by subcutaneous infusion of Ang-(1-7) or saline using osmotic mini-pumps for 4 weeks. Six-week-old male C57BL/6 J mice were used to develop obesity by HFD diet for 8 weeks, and the mice treated with Ang-(1-7), A779 (an Ang-(1-7) antagonist), or saline by osmotic mini-pumps at the 4th weeks post-HFD. (A) Body weight of Leprdb/db+ Ang-(1-7) and Leprdb/db+ Vehicle mice at the 4th week post micro-osmotic pumps implantation (n = 5–6/each group). (B) Body weight of HFD + Ang-(1-7), HFD + A779 and HFD + Vehicle mice at the 4th week post micro-osmotic pumps implantation (n = 4–7/each group). (C–E) Energy expenditure was evaluated by measurement of oxygen consumption (VO2) (C), of carbon dioxide release (VCO2) (D) and of energy expenditure (EE) (E) over a 24 hr period in Leprdb/db+ Ang-(1-7) and Leprdb/db+ Vehicle mice (n = 4–6/each group). (F) Core body temperature at 30 °C, 22°C and 4°C for 8 hr in Leprdb/db+ Ang-(1-7) and Leprdb/db-Vehicle mice (n = 5/each group). (G) Infrared thermal images at 22 °C in Leprdb/db+ Ang-(1-7) and Leprdb/db+ Vehicle mice. (H) Core body temperature at 4 °C for the indicated lengths of time in HFD + Ang-(1-7), HFD + A779 and HFD + Vehicle mice (n = 4–5/each group). (I) Representative H&E staining and UCP1 immunostaining from BAT sections of Leprdb/db+ Ang-(1-7) and Leprdb/db+ Vehicle mice exposure at 4 °C (n = 5/each group). (J) Representative Positron emission tomography–computed tomography (PET-CT) image and SUVs of Leprdb/db+ Ang-(1-7) and Leprdb/db+ Vehicle mice (n = 4/each group). (K) Representative PET-CT image and SUVs of HFD + Ang-(1-7), HFD + A779 and HFD + Vehicle mice (n = 3/each group). (L) Representative western blots showing the changes of key proteins of energy expenditure and thermogenesis in BAT of Leprdb/db+ Ang-(1-7) and Leprdb/db+ Vehicle mice exposure at 4 °C (n = 3/each group). (M) Representative western blots showing the changes of key proteins of energy expenditure and thermogenesis in BAT of HFD + Ang-(1-7), HFD + A779 and HFD + Vehicle mice exposure at 4 °C (n = 3/each group). Data represent mean ± SEM. *p < 0.05, **p < 0.01 vs Vehicle group by Student’s t-test, ANCOVA, or one-way ANOVA.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72266/elife-72266-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Leprdb/db mice were treated with Ang-(1-7) by subcutaneous infusion of Ang-(1-7) or saline using osmotic mini-pumps for 4 weeks (Leprdb/db+ Ang-(1-7) vs Leprdb/db+ Vehicle). (A) Serum levels of Ang-(1-7) as determined by ELISA in Leprdb/db+ Ang-(1-7) and Leprdb/db+ Vehicle mice (n = 6–8/each group). (B–D) Intraperitoneal glucose tolerance test (IPGTT), serum triglyceride and cholesterol levels in Leprdb/db+ Ang-(1-7) and Leprdb/db+ Vehicle mice (n = 4–5/each group). (E–G) 24 h food intake, water intake and physical activity were measured in Leprdb/db+ Ang-(1-7) and Leprdb/db+ Vehicle mice (n = 4–6/each group). (H) Core body temperature at 4 °C for the indicated lengths of time in Leprdb/db+ Ang-(1-7) and Leprdb/db+ Vehicle mice (n = 5–6/each group). (I) Relative mRNA levels of mitochondrial related genes, fatty acid oxidation related genes and transcription factors in BAT of in Leprdb/db+ Ang-(1-7) and Leprdb/db+ Vehicle mice exposure at 4 °C (n = 5–6/each group). Data represent mean ± SEM. *p< 0.05, **p < 0.01 vs Vehicle group by Student’s t-test.
 
 Notably, the Ang-(1-7) treated Leprdb/db mice had increased energy expenditure (VOR2, VCOR2, and EE) (Figure 4C–E) without any changes in food and/or water intake as well as physical activity (Figure 4—figure supplement 1E-G). Moreover, the Ang-(1-7) treated Leprdb/db and the HFD-induced obese mice were better able to defend their body temperature during environmental cold (22 °C) and acute cold stress (4 °C) compared to the control (Figure 4F–H, Figure 4—figure supplement 1H). Meanwhile, the Ang-(1-7)-treated Leprdb/db mice had increased multi-locular structures but smaller lipid droplets, and increased UCP1 expression comparing to the control group (Figure 4I). Accordingly, the Ang-(1-7)-treated Leprdb/db and the HFD-induced obese mice showed more 18F-FDG uptake in the BAT than the control mice recorded by PET-CT (Figure 4J and K).
 
@@ -78,9 +102,17 @@ The protein levels of UCP1 and PGC1α were significantly induced in the BAT from
 
 To sum up, our results suggested that the enhanced thermogenesis effect in the Ad-Ace2 and Ang-(1-7) treated mice is caused by the increment of Ang-(1-7) levels, which demonstrates that Ang-(1-7) is crucial to the maintenance of thermogenesis.
 
-## Ablation of Mas1 impairs thermogenesis in brown adipose tissue
+### Ablation of Mas1 impairs thermogenesis in brown adipose tissue
 
 Since the Ang-(1-7), produced by ACE2, realized the function through the Mas1 receptor, these results above prompted us to hypothesize that the Mas1 receptor determines the effect of Ang-(1-7) in brown adipose tissue. Firstly, the HFD-induced Mas1-/-mice (low Ang-(1-7) action model) were used to assess the therapeutic effects (interventional effects) of Mas1 on energy metabolism. Although serum Ang-(1-7) levels were increased, the Mas1-/-mice had an impaired glucose tolerance, abnormal lipid profiles (Figure 5A, Figure 5—figure supplement 1A-C), and significantly increased body weight compared to the WT mice (Figure 5B). Meanwhile, the Mas1-/- mice exhibited decreased oxygen consumption (VOR2) (Figure 5—figure supplement 1D) without any changes in food and/or water intake as well as physical activity (Figure 5—figure supplement 1E-G). Moreover, the Mas1-/- mice had lower thermogenesis than the WT mice in either 22 °C or 4 °C (Figure 5C, D and F). PET-CT analysis illustrated that the Mas1-/- mice has less 18F-FDG uptake in BAT than the WT mice (Figure 5E). Consistently, the Mas1-/- mice displayed larger lipid droplets and reduced multilocular structures, and had reduced UCP1 expression compared with the WT mice (Figure 5G). Nevertheless, deletion of Mas1 resulted in a striking repression of BAT thermogenic protein (UCP-1, UQCRC2, and SDHB) (Figure 5H) and genes (e.g. Ucp1, Prmd16, Ppargc1a, Ppargc1b, Atp5b, Cox7a, and Cpt1a) (Figure 5I).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/72266/elife-72266-fig5-v3.jpg)
+
+**Figure 5.:** (A–I) Eight-week-old male Mas1-/- mice and their WT (control) mice had a high-fat diet (HFD) for 8 weeks (Mas1-/- vs WT). (J–O) BAT of C57B/L6 recipient mice was removed from the interscapular region. Then, the BAT dissected from Mas1-/- donor mice, was subcutaneously transplanted into the dorsal interscapular region of C57B/L6 recipient mice (WT+ Mas1-/--BAT). C57B/L6 recipient mice transplanted with C57B/L6 BAT (WT+ WT BAT) and C57B/L6 epididymal white adipose tissue (eWAT) (WT+ WT eWAT) were used as control. The recipient mice were then fed an HFD immediately after the transplantation and continued for 10 weeks (WT+ Mas1-/--BAT vs WT+ WT BAT, WT+ WT eWAT). (A) Serum levels of Ang-(1-7) as determined by ELISA in Mas1-/- and WT mice (n = 3–5/each group). (B) Body weight in Mas1-/- and WT mice fed an HFD for 8 weeks (n = 4–5/each group). (C) Core body temperature at 30 °C, 22°C and 4°C for 8 hr in Mas1-/- and WT mice (n = 5/each group).(D) Infrared thermal images at 22 °C in Mas1-/- and WT mice. (E) Representative PET-CT image and SUVs of Mas1-/- and WT mice (n = 3/each group). (F) Core body temperature at 4 °C for the indicated lengths of time in Mas1-/- and WT mice (n = 4–5/each group). (G) Representative H&E staining and UCP1 immunostaining from BAT sections of Mas1-/- and WT mice exposure at 4 °C (n = 5/each group). (H) Representative western blots showing the changes of key proteins in BAT of Mas1-/- and WT mice exposure at 4 °C (n = 3/each group). (I) Relative mRNA levels of mitochondrial related genes, fatty acid oxidation related genes and transcription factors in BAT of in Mas1-/- and WT mice exposure at 4 °C (n = 5–6/each group). (J) Intraperitoneal glucose tolerance test (GTT) and the average area under the curve (AUC) in WT+ Mas1-/--BAT, WT+ WT BAT and WT+ WT eWAT mice fed an HFD for 8 weeks after transplantation (n = 6–7/each group). (K) Insulin tolerance test (ITT) and AUC in WT+ Mas1-/--BAT, WT+ WT BAT and WT+ WT eWAT mice fed an HFD for 8 weeks after transplantation (n = 5–6/each group). (L) Body weight time course in WT+ Mas1-/--BAT, WT+ WT BAT and WT+ WT eWAT mice fed an HFD over 10 weeks after transplantation (n = 10/each group). (M–O) Energy expenditure was evaluated by measurement of oxygen consumption (VO2) (M), of carbon dioxide release (VCO2) (N) and of energy expenditure (EE) (O) over a 24 hr period in WT+ Mas1-/--BAT, WT+ WT BAT and WT+ WT eWAT mice (n = 5/each group). Data represent mean ± SEM. *p < 0.05, **p < 0.01 vs WT/WT-BAT group by Student’s t-test, ANCOVA, or one-way ANOVA.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72266/elife-72266-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Eight-week-old male Mas1-/- mice and their WT (control) mice had a high-fat diet (HFD) for 8 weeks (Mas1-/- vs WT). (D–F) BAT of C57B/L6 recipient mice was removed from the interscapular region. Then, the BAT dissected from Mas1-/- donor mice, was subcutaneously transplanted into the dorsal interscapular region of C57B/L6 recipient mice (WT+ Mas1-/--BAT). C57B/L6 recipient mice transplanted with C57B/L6 BAT (WT+ WT BAT) and C57B/L6 epididymal white adipose tissue (eWAT) (WT+ WT eWAT) were used as control. The recipient mice were then fed an HFD immediately after the transplantation and continued for 10 weeks (WT+ Mas1-/--BAT vs WT+ WT BAT, WT+ WT eWAT). (A–C) Intraperitoneal glucose tolerance test (IPGTT), serum triglyceride and cholesterol levels in Mas1-/- and WT mice (n = 5–10/each group). (D) Energy expenditure was evaluated by measurement of oxygen consumption (VO2) over a 24 hr period in Mas1-/- and WT mice (n = 5/each group). (E–G) 24 hr food intake, water intake and physical activity were measured in Mas1-/- and WT mice (n = 5/each group). (H–J) 24 hr food intake, water intake and physical activity were measured in WT+ Mas1-/--BAT, WT+ WT BAT and WT+ WT eWAT mice fed an HFD for 8 weeks after transplantation (n = 4/each group). Data represent mean ± SEM. *p < 0.05, **p < 0.01 vs WT/WT-BAT group by Student’s t-test, or one-way ANOVA.
 
 To investigate the role of the Mas1 receptor in BAT, we generated BAT-specific Mas1 knockout mice (Mas1-/- BAT transplanted mice). According to the previous studies (Liu et al., 2013; Yuan et al., 2016), firstly, BAT of the C57B/L6 recipient mice was removed from the interscapular region. Then, the BAT, which dissected from strain-, sex-, and age-matched Mas1-/- donor mice, was subcutaneously transplanted into the dorsal interscapular region of the C57B/L6 recipient mice (WT + Mas1-/--BAT). As controls, C57B/L6-recipient mice transplanted with C57B/L6 BAT (WT + WT BAT) and C57B/L6 epididymal white adipose tissue (eWAT) (WT + WT eWAT) were used as positive control and negative control, respectively. After the transplantation, the recipient mice were fed by HFD for 10 weeks.
 
@@ -88,21 +120,33 @@ Interestingly, compared with the WT + WT BAT control mice, the WT + Mas1-/--BAT 
 
 More importantly, compared to the WT + WT BAT control mice, the WT + Mas1-/--BAT mice had decreased oxygen consumption (VOR2R), carbon dioxide release (VCOR2), and energy expenditure (EE) (Figure 5M–O), along with normal food and/or water intake as well as physical activity (Figure 5—figure supplement 1H-J). Taken together, these results demonstrate that the Mas1 receptor can directly induce thermogenic program in brown adipose tissues.
 
-## ACE2 pathway induces white fat browning and thermogenesis
+### ACE2 pathway induces white fat browning and thermogenesis
 
 Next, we investigated the impact of ACE2/Ang-(1-7) on the process of browning of WAT, a prominent feature in subcutaneous white adipose tissue (scWAT). Histological examination of scWAT from the Ad-Ace2-treated Leprdb/db obese mice showed a profound morphological transformation toward a BAT-like phenotype (smaller adipocytes with multiple lipid droplets) compared with the control (Figure 6A). Meanwhile, markers of brown adipocytes, such as Ucp1, were significantly increased in scWAT of the Ad-Ace2-treated Leprdb/db mice. A much greater induction of transcription factors, including Prmd16, Ppargc1a and Ppargc1b, occurred in the scWAT of the Ad-Ace2-treated group (Figure 6B). As expected, the Ang-(1-7) treated Leprdb/db mice had a similar browning effect as the Ad-Ace2-treated Leprdb/db mice in scWAT. Morphological brown-like adipocyte and thermogenic gene expression levels slight increasement were observed in the scWAT after Ang-(1-7) treatment (Figure 6C and D).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/72266/elife-72266-fig6-v3.jpg)
 
-**Figure 6.:** Lepr obese mice.db/db(A) Representative H&E staining from subcutaneous white adipose tissue (scWAT) sections of Lepr and db/db+ Ace2Lepr mice exposure at 4 °C (n = 6–7/each group). (db/db+ GFPB) Relative mRNA levels of mitochondrial related genes, fatty acid oxidation related genes and transcription factors in scWAT of Lepr and db/db+ Ace2Lepr mice exposure at 4 °C (n = 3–5/each group). (db/db+ GFPC) Representative H&E staining from scWAT sections of Lepr+ Ang-(1-7) and Leprdb/db + Vehicle mice exposure at 4 °C (n = 6–7/each group). (db/dbD) Relative mRNA levels of mitochondrial related genes, fatty acid oxidation related genes and transcription factors in scWAT of Lepr+ Ang-(1-7) and db/dbLepr+ Vehicle mice exposure at 4 °C (n = 4/each group). (db/dbE) Representative H&E staining from epididymal white adipose tissue (eWAT) sections of Lepr and db/db+ Ace2Lepr mice exposure at 4 °C (n = 6–7/each group). (db/db+ GFPF) Relative mRNA levels of mitochondrial related genes, fatty acid oxidation related genes, and transcription factors in eWAT of Lepr and db/db+ Ace2Lepr mice exposure at 4 °C (n = 4/each group). Data represent mean ± SEM. *p < 0.05, **p < 0.01 vs GFP/Vehicle group by Student’s db/db+ GFPt-test.
+**Figure 6.:** (A) Representative H&E staining from subcutaneous white adipose tissue (scWAT) sections of Leprdb/db+ Ace2 and Leprdb/db+ GFP mice exposure at 4 °C (n = 6–7/each group). (B) Relative mRNA levels of mitochondrial related genes, fatty acid oxidation related genes and transcription factors in scWAT of Leprdb/db+ Ace2 and Leprdb/db+ GFP mice exposure at 4 °C (n = 3–5/each group). (C) Representative H&E staining from scWAT sections of Leprdb/db+ Ang-(1-7) and Leprdb/db + Vehicle mice exposure at 4 °C (n = 6–7/each group). (D) Relative mRNA levels of mitochondrial related genes, fatty acid oxidation related genes and transcription factors in scWAT of Leprdb/db+ Ang-(1-7) and Leprdb/db+ Vehicle mice exposure at 4 °C (n = 4/each group). (E) Representative H&E staining from epididymal white adipose tissue (eWAT) sections of Leprdb/db+ Ace2 and Leprdb/db+ GFP mice exposure at 4 °C (n = 6–7/each group). (F) Relative mRNA levels of mitochondrial related genes, fatty acid oxidation related genes, and transcription factors in eWAT of Leprdb/db+ Ace2 and Leprdb/db+ GFP mice exposure at 4 °C (n = 4/each group). Data represent mean ± SEM. *p < 0.05, **p < 0.01 vs GFP/Vehicle group by Student’s t-test.
 
 These alterations were restricted to scWAT, but not to epididymal white adipose tissue (eWAT). As shown in Figure 6E, the morphology and size of eWAT in the Ad-Ace2-treated Leprdb/db mice are same compared to the control (Figure 6E). Meanwhile, no significant increase in the thermogenic gene expression levels in the eWAT of the Ad-Ace2-treated Leprdb/db mice was found (Figure 6F).
 
-## ACE2 pathway enhances thermogenesis via Akt and PKA signaling
+### ACE2 pathway enhances thermogenesis via Akt and PKA signaling
 
 We further investigated the molecular mechanisms through which ACE2 pathway regulates BAT. Firstly, we performed RNA-seq analysis on BAT isolated from the WT and the Ace2 KO mice. Notable differences between the two are displayed as 3D-PCA analysis and heat map (Figure 7—figure supplement 1A, B). Consistent with the RT-PCR results of BAT in the Ace2 KO mice, genetic deficiency of Ace2 significantly altered expression of genes involved in fatty acid biosynthesis, lipid catabolism, lipid biosynthesis, fatty acid beta-oxidation, and cholesterol biosynthesis in the BAT of the Ace2 KO mice (Figure 7—figure supplement 1C).
 
 Interestingly, we found that the expression level of Akt associated genes were significantly decreased in the Ace2 KO mice compared with the WT mice (Figure 7—figure supplement 1D). The phosphorylation levels of Akt at residues Thr308 was significantly inhibited in BAT of the Ace2 KO mice (Figure 7A). Furthermore, the phosphorylation levels of Akt were dramatically increased in BAT of the Ad-Ace2-treated mice (Figure 7B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/72266/elife-72266-fig7-v3.jpg)
+
+**Figure 7.:** Primary brown adipocytes were isolated, cultured, and treated with Ang-(1-7) (10–6 M) for 24 hr, Akt inhibitor MK2206 (20 μM) for 24 hr, PKA inhibitor H89 (30 μM) for 24 hr, or adenylylcyclase inhibitor SQ-22536 (10 μM) for 24 hours. (A, B) Representative western blots showing the changes of p-Akt308 and Akt in BAT of Ace2-/y (A) and Leprdb/db+ Ace2 mice (B) exposure at 4 °C (n = 3/each group). (C) Representative western blots showing the Akt, UCP1 and forkhead box protein O 1 (FoxO1) Changes (n = 3/each group). (D) Relative mRNA levels of thermogenic and mitochondrial genes (n = 4–6/each group). (E) Continuous measurement of oxygen consumption rate (OCR) in Ang-(1-7) and MK2206 treated primary brown adipocytes. Oxygen consumption was performed under basal conditions, following the addition of oligomycin (1 μM), the pharmacological uncoupler FCCP (1 μM) or the Complex III and I inhibitor antimycin A and rotenone (0.5 μM) (n = 3–4/each group). (F, G) Representative western blots showing the p-PKA and PKA changes in BAT of Ace2-/y (F) and Leprdb/db+ Ace2 mice (G) exposure at 4 °C (n = 3/each group). (H) Relative mRNA levels of thermogenic and mitochondrial genes (n = 4–6/each group). (I) Representative western blots showing the UCP1 and PGC1α changes (n = 3/each group). (J) Continuous measurement of OCR in Ang-(1-7) and H89-treated primary brown Adipocytes (n = 3–5/each group). Data represent mean ± SEM. *p< 0.05, **p < 0.01 vs GFP/WT group by Student’s t-test. *p < 0.05, **p < 0.01 vs control group, # p < 0.05, ## p < 0.01 vs Ang-(1-7) group by one-way ANOVA. (K) Mechanisms involved in ACE2 pathway activation-induced improvement of BAT function.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/72266/elife-72266-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) 3D-PCA analysis represent the deviation of 4 replication within Ace2-/y (Ace2 1–4) and WT mice (WT_BS 1–4). (B) Heat map representation of the differentially expressed genes in Ace2-/y and WT mice. Gene expression is coded in color scale (−2–2). Red or green indicates expression levels above or below the median, respectively. The magnitude of deviation from the median is represented by color saturation. (C) Heat map of selected genes associated with fatty acid biosynthetic, lipid catabolic, lipid biosynthetic, fatty acid beta-oxidation, and cholesterol biosynthetic, which derived from GO analysis results. (D) Table for the expression of Akt signal pathways related genes.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/72266/elife-72266-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** Primary brown adipocytes were isolated, cultured, infected with Ace2 adenovirus, treated with Ang-(1-7) (10–6 M) for 24 hr, Akt inhibitor MK2206 (20 μM) for 24 hr, PKA inhibitor H89 (30μ M) for 24 hr, or A779 (10–5 M) for 24 hr. (A) Representative western blots showing the Akt, UCP1, and FoxO1 changes in primary brown adipocytes overexpressing Ace2 at day 7 and treated with MK2206 (n = 3/each group). (B) Relative mRNA levels of thermogenic and mitochondrial genes. n = 3/each group. (C) Continuous measurement of OCR in primary brown adipocytes overexpressing Ace2 and treated with MK2206. Oxygen consumption was performed under basal conditions, following the addition of oligomycin (1 μM), the pharmacological uncoupler FCCP (1 μM) or the Complex III and I inhibitor antimycin A and rotenone (0.5 μM) (n = 3–9/each group). (D) Representative western blots showing the p-PKA and PKA changes in BAT of Mas1-/- mice exposure at 4 °C (n = 3/each group). (E) Representative western blots showing the p-PKA and PKA changes in Ang-(1-7) and H89-treated primary brown adipocytes (n = 3/each group). (F) Continuous measurement of OCR in primary brown adipocytes overexpressing Ace2 and treated with H89 (n = 3–9/each group). (G) Continuous measurement of OCR in primary brown adipocytes overexpressing Ace2 and treated with H89, MK2206, and H89+ MK2206 (n = 3–9/each group). (H) Continuous measurement of OCR in Ang-(1-7), Ang-(1-7)+ H89, Ang-(1-7)+ MK2206, and Ang-(1-7)+ A779 treated primary brown adipocytes (n = 3–15/each group). Data represent mean ± SEM. *p < 0.05, **p < 0.01 vs WT group by Student’s t-test. *p < 0.05, **p < 0.01 vs control group, # p < 0.05, ## p < 0.01 vs Ace2/Ang-(1-7) group by one-way ANOVA.
 
 These results prompted us to consider whether ACE2 pathway regulates the function of BAT via Akt signaling. Thus, we treated primary brown adipocytes which isolated from mice with Ang-(1-7). We found phosphorylation of Akt was activated by Ang-(1-7), accompanied by UCP1 up-regulation and forkhead box-containing protein O subfamily-1 (FoxO1) phosphorylation (Figure 7C). MK2206, an Akt inhibitor (Chorner and Moorehead, 2018; Matsuzaki et al., 2018), suppressed Ang-(1-7)-induced UCP1 up-regulation and FoxO1 phosphorylation (Figure 7C). Compared to Ang-(1-7)-treated primary brown adipocytes cells, MK2206 down-regulated the mRNA levels of Ucp1, Ppargc1a, Cidea, Atp5b, Fabp4, and Cpt1a genes (Figure 7D). More importantly, Ang-(1-7)-treated primary brown adipocytes exhibited higher OCR, and MK2206 inhibited OCR in the Ang-(1-7) treated primary brown adipocytes (Figure 7E). Accordingly, the Ace2-overexpressing primary brown adipocytes cells showed a similar result. MK2206 suppressed ACE2 induced up-regulation of protein (UCP1 and phosphorylated FoxO1) (Figure 7—figure supplement 2A) and mRNA (Ucp1 and Cpt1a) (Figure 7—figure supplement 2B), as well as action on OCR (Figure 7—figure supplement 2C). These results suggest that the Akt signaling are required for the thermogenic activity of ACE2 pathway.
 
@@ -132,7 +176,262 @@ Previously, we demonstrate that the ACE2 pathway is involved in the regulation o
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>WT C57BL/6 J</td>
+      <td>GemPharmatech. Co., Ltd</td>
+      <td>JAX 000664 RRID: IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>BKS-db (Leprdb/db)</td>
+      <td>GemPharmatech. Co., Ltd</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Ace2 KO</td>
+      <td>Institute of Laboratory Animal Science, Chinese Academy of Medical Sciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Mas1 KO</td>
+      <td>GemPharmatech. Co., Ltd</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>Ad-Ace2-eGFP</td>
+      <td>SinoGenoMax</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ang-(1-7)</td>
+      <td>MCE</td>
+      <td>51833-78-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>A779</td>
+      <td>Selleck</td>
+      <td>159432-28-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FCCP</td>
+      <td>Sigma-Aldrich</td>
+      <td>C2920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oligomycin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>75351–5 MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rotenone</td>
+      <td>Sigma-Aldrich</td>
+      <td>R8875-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MK2206</td>
+      <td>Selleck</td>
+      <td>1032350-13-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>H89</td>
+      <td>Selleck</td>
+      <td>130964-39-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SQ-22536</td>
+      <td>Selleck</td>
+      <td>17318-31-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Chow, 60% HFD</td>
+      <td>Research Diets</td>
+      <td>D12492</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-UCP1(rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>#10983 RRID: AB_2241462</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PGC1ɑ(rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>#54,481RRID: AB_881987</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-OXPHOS</td>
+      <td>Abcam</td>
+      <td>#110413 RRID: AB_2629281</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mas1(rabbit polyclonal)</td>
+      <td>Alomone</td>
+      <td>#AAR-013 RRID: AB_2039972</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Akt(rabbit polyclonal)</td>
+      <td>Cell signaling</td>
+      <td>#9272 RRID: AB_329827</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-Akt308 (rabbit monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>#13038 RRID: AB_2629447</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PKA(rabbit polyclonal)</td>
+      <td>Cell signaling</td>
+      <td>#4782 RRID: AB_2170170</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-PKA(rabbit polyclonal)</td>
+      <td>Cell signaling</td>
+      <td>#9,621RRID: AB_330304</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ACE2(rabbit monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>#92,485</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Actin(rabbit monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>#4,970RRID: AB_2223172</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cidea_F</td>
+      <td>Invitrogen</td>
+      <td>RT-qPCR primer</td>
+      <td>TCCTATGCTGCACAGATGACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cidea_R</td>
+      <td>This paper</td>
+      <td>RT-qPCR primer</td>
+      <td>TGCTCTTCTGTATCGCCCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ppargc1a_F</td>
+      <td>This paper</td>
+      <td>RT-qPCR primer</td>
+      <td>GCACCAGAAAACAGCTCCAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ppargc1a_R</td>
+      <td>This paper</td>
+      <td>RT-qPCR primer</td>
+      <td>CGTCAAACACAGCTTGACAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ucp1_F</td>
+      <td>This paper</td>
+      <td>RT-qPCR primer</td>
+      <td>TCTCAGCCGGCTTAATGACTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ucp1_R</td>
+      <td>This paper</td>
+      <td>RT-qPCR primer</td>
+      <td>GGCTTGCATTCTGACCTTCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Prdm16_F</td>
+      <td>This paper</td>
+      <td>RT-qPCR primer</td>
+      <td>ACACGCCAGTTCTCCAACCTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Prdm16_R</td>
+      <td>This paper</td>
+      <td>RT-qPCR primer</td>
+      <td>TGCTTGTTGAGGGAGGAGGTA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism Software</td>
+      <td>GraphPad Software,La Jolla, CA, USA</td>
+      <td>Version 8.0.0 for WindowsRRID: SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ANCOVA</td>
+      <td>PMID:30017358</td>
+      <td>https://calrapp.org/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Obese BKS-db (Leprdb/db) male mice, wild-type mice and Mas1 KO mice were purchased from Nanjing Biological Medicine Research Institute, Nanjing University, China. Male C57BL/6 J mice were purchased from Vital River Laboratory Animal Technology (Beijing, China). Ace2 KO mice have been previously described (Niu et al., 2008).
 
@@ -140,50 +439,50 @@ The obese diabetic Leprdb/db mice at 7–8 weeks of age were used. Adenovirus (5
 
 Six-week-old male C57BL/6 J mice were used to develop obesity by high-fat (HFD) diet (60 kcal% fat) (Research Diets, New Brunswick, NJ, USA) for 8 weeks, and the mice treated with Ang-(1-7) by osmotic mini-pumps at the 5th weeks post-HFD. Eight- to 10 weeks old male Ace2 KO mice and WT controls, Mas1 KO and WT controls were fed HFD diet for 8 weeks before experimental analysis. The mice were housed in a room at controlled temperature (23°C ± 1°C) with a 12-hr light-dark cycle. All animals were handled in accordance with the protocol approved by the Ethics Committee of Animal Research at Beijing Tongren Hospital, Capital Medical University, Beijing, China.
 
-## BAT transplantation
+### BAT transplantation
 
 According to the methods described previously (Liu et al., 2013; Yuan et al., 2016), BAT was removed from the interscapular region of 8 week old Mas1 KO mice or C57BL/6 mice donor mouse and implanted into the interscapular region of recipient mice. BAT of C57B/L6 recipient mice was removed from the interscapular region. After cervical dislocation of donor mice, the BAT or eWAT (also from the epididymal fat pad of 8-week-old C57BL/6 mice) was removed and peripheral white fat was excluded, and then the remaining BAT (0.2 g) or eWAT (0.2 g) was washed with sterile PBS and transplanted into the interscapular region of recipients as quickly as possible. Recipient mice were anesthetized by ip injection with 400 mg/kg body weight avertin, and then BAT or eWAT was transplanted underneath the skin. The recipient mice were then fed an HFD, which began immediately after the transplantation and continued for 10 weeks.
 
-## Adipocyte oxygen consumption rate (OCR) measurement
+### Adipocyte oxygen consumption rate (OCR) measurement
 
 Primary brown adipose cells were isolated and cultured for 3 days before plated in XF cell culture microplates (Seahorse Bioscience). Cells (10,000 cells) were seeded in each well and each sample has eight replicates. After 6 days of differentiation, cultured adipocytes were washed twice and pre-incubated in XF medium for 2 hr at room temperature. The oxygen consumption rate was measured by the XF extracellular flux analyzer (Seahorse Biosciences). The results were normalized to protein content in each well. The process was cycled three times for baseline and drug injection measurement. Each cycle consisted of 3 min of mix, 2 min of delay, and 3 min of measurement time. The concentrations of the injection compounds used were Oligomycin (1 μM), FCCP (1 μM), and Rotenone/antimycin A (0.5 μM).
 
-## Glucose tolerance test (GTT)
+### Glucose tolerance test (GTT)
 
 Mice were fasted for 16 hours (17:00–9:00) with free access to drinking water. Glucose (1.0 g/kg for the Leprdb/db mice and 2.0 g/kg for the HFD mice) was administered intraperitoneally (i.p.), and blood glucose levels were measured immediately 0, 15, 30, 60, and 120 min after glucose injection by using an Accu-Chek glucose monitor (Roche Diagnostics Corp).
 
-## Insulin tolerance test (ITT)
+### Insulin tolerance test (ITT)
 
 ITT was performed by injecting intraperitoneally 0.75 IU/kg of insulin at mice fasted for 1 hr and measured blood glucose levels at 0, 15, 30, 60, 90, and 120 min post injection by using an Accu-Chek glucose monitor (Roche Diagnostics Corp).
 
-## RNA extraction and quantitative real-time RT-PCR
+### RNA extraction and quantitative real-time RT-PCR
 
 Total RNA was isolated using TRIzol reagent (Invitrogen, Carlsbad, CA, USA) according to the manufacturer’s instructions. A total of 500 ng of RNA was used as the template for the first-strand cDNA synthesis using ReverTra Ace qPCR RT Kit (TOYOBO, Osaka, Japan) in accordance with the manufacturer’s protocol. The transcripts were quantified using Light Cycler 480 Real-Time PCR system (Roche, Basel, Switzerland). Primers were designed using Primer Quest (Integrated DNA Technologies, Inc).
 
-## Positron emission tomography–computed tomography (PET-CT)
+### Positron emission tomography–computed tomography (PET-CT)
 
 Siemens Inveon Dedicated PET (dPET) System and Inveon Multimodality (MM) System (CT/SPECT) (Siemens Preclinical Solutions) was used to detect PET-CT imaging at Chinese Academy of Medical Sciences. According to the previously studies (Liu et al., 2013; Yuan et al., 2016), mice were allowed to fast overnight and were lightly anesthetized with isoflurane, and then followed by a tail vein injection of 18F-FDG (500 mCi). Sixty minutes after the injection of the radiotracer, the mice were subjected to PET/CT analysis. A 10 min CT X-ray for attenuation correction was scanned before PET-CT scan. Static PET-CT scans were acquired for 10 min, and images were reconstructed by an OSEM3D algorithm followed by Maximization/Maximum a Posteriori (MAP) or Fast MAP provided by Inveon Acquisition Workplace (IAW) software. The 3D regions of interest (ROIs) were drawn over the guided CT images, and the tracer uptake was measured using Inveon Research Workplace (IRW) (Siemens) software. Individual quantification of the 18F-FDG uptake in each of the ROI was calculated. The data for the accumulation of 18F-FDG on micro-PET images were expressed as the standard uptake values (SUVs), which were determined by dividing the relevant ROI concentration by the ratio of the injected activity to the bodyweight.
 
-## Western blot analysis
+### Western blot analysis
 
 Tissues were dissolved in RIPA buffer (150 mM sodium chloride, 1.0% Triton X-100, 0.5% sodium deoxycholate, 0.1% SDS, 50 mM Tris, protease and phosphatase inhibitor mixture (Roche Diagnostics)). Protein concentrations were determined using a BCA assay kit (Pierce Diagnostics). Protein was separated by 10% (wt/vol) SDS/PAGE, transferred to a PVDF membrane (Millipore), blocked in 5% (wt/vol) skim milk in TBST (0.02 M Trisbase, 0.14 M Vehicle, 0.1% Tween 20, pH 7.4), and incubated with primary antibodies overnight at 4 °C and then incubated with secondary antibodies conjugated with HRP. The following primary antibodies were used: anti-UCP1 (ab10983, Abcam), anti-PGC1ɑ (ab54481, Abcam), anti-OXPHOS (ab110413, Abcam), anti-Mas1 (AAR-013, Alomone labs), anti-Akt (#9272, cell signaling technology), anti-p-Akt308 (#13038, cell signaling technology), anti-FoxO1 (#2880, cell signaling technology), anti-p-FoxO1 (#84192, cell signaling technology), anti-PKA (#4782, cell signaling technology), anti-p-PKA (#9621, cell signaling technology), anti-ACE2 (#92485, cell signaling technology), and actin (#4970, Cell Signaling Technology). Signals were detected with Super Signal West Pico Chemiluminescent Substrate (Pierce).
 
-## Histology and immunofluorescence analysis
+### Histology and immunofluorescence analysis
 
 Tissues fixed in 4% paraformaldehyde were sectioned after being paraffin embedded. Multiple sections were prepared and stained with hematoxylin and eosin for general morphological observations. Cells grown on poly-L-lysine (Sigma)-pretreated coverslips were fixed with 4% paraformaldehyde. Immunofluorescence staining was performed according to the standard protocol using the following antibodies and dilutions: UCP1 (1:100 dilution; Santa Cruz Biotechnologies), MitoTracker Red (1:1,000 dilution; Invitrogen). Incubations were performed overnight in a humidified chamber at 4 °C. 40, 6-diamidino-2-phenylindole staining was used to mark the cell nuclei. The images were acquired by microscope (DS-RI1; Nikon).
 
-## Metabolic rate and physical activity
+### Metabolic rate and physical activity
 
 Oxygen consumption and physical activity were determined with a TSE LabMaster, as previously described (Chi and Wang, 2011). Mice were acclimated to the system for 24 hr, and then VO2 and VCO2 were measured during the next 24 hr. Voluntary activity of each mouse was measured with an optical beam technique (Opto-M3, Columbus Instruments, Columbus, OH, USA) over 24 hr and expressed as 24 hr average activity. Energy expenditure and respiratory exchange ratio were then calculated (Liu et al., 2013).
 
-## RNA-Seq analysis
+### RNA-Seq analysis
 
 Total RNA was extracted from Ace2 KO or WT primary brown adipocytes by Trizol reagent (Invitrogen), respectively. Extracted RNA samples were sent to Novel Bioinformatics company (Shanghai, China) for RNA-seq. RNA with RIN >8.0 is right for cDNA library construction. The cDNA libraries were processed for the proton sequencing according to the commercially available protocols. Data were submitted to the GEO archive. Fisher’s exact test was calculated to select the significant pathway, and the threshold of significance was defined by p-value and false discovery rate (FDR) (Dupuy et al., 2007).
 
-## Infrared thermography and core temperature
+### Infrared thermography and core temperature
 
 Mice were exposed to a cold chamber (4 °C) with one mouse per cage for up to 6 hr, with free access to food and water. An infrared digital thermographic camera was used to taken images (E60: Compact Infrared Thermal Imaging Camera; FLIR). The images were analyzed by FLIR Quick Report software (FLIR ResearchIR Max 3.4; FLIR). A rectal probe connected to a digital thermometer was used to measure core body temperature (Yellow Spring Instruments).
 
-## Statistical analysis
+### Statistical analysis
 
 All of the data are presented as the mean ± SEM. The data were analyzed by Student’s t-test or one-way ANOVA (with Bonferroni post-hoc tests to compare replicate means) when appropriate. Statistical comparisons were performed using Prism5 (GraphPad Software, San Diego, CA). The CLAMS data were performed using ANCOVA on webtool (https://calrapp.org/) (Mina et al., 2018). p Values less than 0.05 were considered statistically significant. Representative results from at least three independent experiments are shown unless otherwise stated.

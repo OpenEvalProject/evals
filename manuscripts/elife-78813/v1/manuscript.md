@@ -7,16 +7,16 @@
 
 ### Affiliations
 
-1. https://ror.org/03zwxja46 Research Centre for Natural Sciences Budapest Hungary
-2. https://ror.org/01jsgmp44 Institute of Experimental Medicine Budapest Hungary
-3. https://ror.org/02w42ss30 Doctoral School of Psychology/Cognitive Science, Budapest University of Technology and Economics Budapest Hungary
-4. https://ror.org/03vayv672 Department of Anatomy and Histology, University of Veterinary Medicine Budapest Hungary
+1. Research Centre for Natural Sciences Budapest Hungary ([ROR:03zwxja46](https://ror.org/03zwxja46))
+2. Institute of Experimental Medicine Budapest Hungary ([ROR:01jsgmp44](https://ror.org/01jsgmp44))
+3. Doctoral School of Psychology/Cognitive Science, Budapest University of Technology and Economics Budapest Hungary ([ROR:02w42ss30](https://ror.org/02w42ss30))
+4. Department of Anatomy and Histology, University of Veterinary Medicine Budapest Hungary ([ROR:03vayv672](https://ror.org/03vayv672))
 
 † Corresponding author
 
 ## Abstract
 
-Prefrontal cortical influence over the mesolimbic system – including the nucleus accumbens (NAc) and the ventral tegmental area (VTA) – is implicated in various cognitive processes and behavioral malfunctions. The functional versatility of this system could be explained by an underlying anatomical complexity; however, the detailed characterization of the medial prefrontal cortical (mPFC) innervation of the NAc and VTA is still lacking. Therefore, combining classical retrograde and conditional viral tracing techniques with multiple fluorescent immunohistochemistry, we sought to deliver a precise, cell- and layer-specific anatomical description of the cortico-mesolimbic pathways in mice. We demonstrated that NAc- (mPFC NAc ) and VTA-projecting mPFC (mPFC VTA ) populations show different laminar distribution (layers 2/3–5a and 5b–6, respectively) and express different molecular markers. Specifically, calbindin and Ntsr1 are specific to mPFC NAc neurons, while mPFC VTA neurons express high levels of Ctip2 and FoxP2, indicating that these populations are mostly separated at the cellular level. We directly tested this with double retrograde tracing and Canine adenovirus type 2 -mediated viral labeling and found that there is indeed minimal overlap between the two populations. Furthermore, whole-brain analysis revealed that the projection pattern of these populations is also different throughout the brain. Taken together, we demonstrated that the NAc and the VTA are innervated by two, mostly nonoverlapping mPFC populations with different laminar distribution and molecular profile. These results can contribute to the advancement in our understanding of mesocorticolimbic functions and its disorders in future studies.
+Prefrontal cortical influence over the mesolimbic system – including the nucleus accumbens (NAc) and the ventral tegmental area (VTA) – is implicated in various cognitive processes and behavioral malfunctions. The functional versatility of this system could be explained by an underlying anatomical complexity; however, the detailed characterization of the medial prefrontal cortical (mPFC) innervation of the NAc and VTA is still lacking. Therefore, combining classical retrograde and conditional viral tracing techniques with multiple fluorescent immunohistochemistry, we sought to deliver a precise, cell- and layer-specific anatomical description of the cortico-mesolimbic pathways in mice. We demonstrated that NAc- (mPFCNAc) and VTA-projecting mPFC (mPFCVTA) populations show different laminar distribution (layers 2/3–5a and 5b–6, respectively) and express different molecular markers. Specifically, calbindin and Ntsr1 are specific to mPFCNAc neurons, while mPFCVTA neurons express high levels of Ctip2 and FoxP2, indicating that these populations are mostly separated at the cellular level. We directly tested this with double retrograde tracing and Canine adenovirus type 2-mediated viral labeling and found that there is indeed minimal overlap between the two populations. Furthermore, whole-brain analysis revealed that the projection pattern of these populations is also different throughout the brain. Taken together, we demonstrated that the NAc and the VTA are innervated by two, mostly nonoverlapping mPFC populations with different laminar distribution and molecular profile. These results can contribute to the advancement in our understanding of mesocorticolimbic functions and its disorders in future studies.
 
 ## Introduction
 
@@ -30,11 +30,135 @@ Therefore, we have begun to describe the prefrontal innervation of the NAc and V
 
 ## Results
 
-## Distribution and molecular characterization of NAc-projecting mPFC cells
+### Distribution and molecular characterization of NAc-projecting mPFC cells
 
 In order to investigate the mPFC-NAc connection, first, we injected retrograde tracers Cholera toxin B (CTB) subunit or Fluoro-Gold (FG) into the NAc (Figure 1A–C). Injection sites included both the core (NAcC) and shell (NAcSh) region (Figure 1C). Retrogradely labeled NAc-projecting mPFC cells (mPFCNAc) were present throughout the mPFC. To identify the exact subregional distribution of mPFCNAc neurons, we performed multiple fluorescent immunohistochemical (IHCFluo) staining for different molecular markers. As it was previously reported (Mátyás et al., 2014), parvalbumin (PV) staining delineates the dorsal and ventral borders of the prelimbic (PrL) subregion of the mPFC (Figure 1—figure supplement 1A, asterisk). Calbindin (Calb1) was used to define layer 2/3 (L2/3) (van Brederode et al., 1991; Sun et al., 2002) and the ventral border of the infralimbic cortex (IL), where the clearly visible L2/3 diminishes, as well as to visualize the thickening of L1, a characteristic of the deep peduncular cortex (DP) (Akhter et al., 2014; Figure 1—figure supplement 1B, number sign). COUP-TF-interacting protein 2 (Ctip2, also known as Bcl111b) was used to outline the L5b and L6 (Arlotta et al., 2005; Ueta et al., 2014; Kim et al., 2017; Figure 1—figure supplement 1C). Furthermore, forkhead box protein P2 (FoxP2) staining identifies the L6 (Ferland et al., 2003) and the gradual thinning and disappearance of a distinct L6 toward the ventralmost part of the mPFC (Figure 1—figure supplement 1D, cross).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/78813/elife-78813-fig1-v1.jpg)
+
+**Figure 1.:** (A) Experimental design. (B) A representative retrograde tracer (Fluoro-Gold [FG], green) injection site in the NAc. (C) Extent of injection sites in the NAc of three animals. Each case is represented with different color. (D) Plotted distribution of retrogradely labeled cells throughout the mPFC of the same animals as in C (same colors represent same animals). Each dot represents one labeled mPFCNAc cell. (E) Distribution of labeled mPFCNAc neurons in relation to parvalbumin (PV) (orange) immunofluorescent labeling outlining the PrL cortex (Figure 1—figure supplement 1). (F) Pooled anteroposterior distribution of mPFCNAc neurons for three animals. (G) Distribution of mPFCNAc cells in individual mPFC subregions. (H) Laminar distribution of mPFCNAc neurons in the mPFC. (I–K) Confocal images showing the distribution of FG-labeled cells (green) in the PrL at Br. + 1.98 mm (I1–K1) with the counterstaining of Calb1 (purple, I2), Ctip2 (gray scale, J2), and FoxP2 (red, K2) (Figure 1—figure supplement 1). Note that most labeled cells are localized in the L2/3 (Calb1) and L5a (Ctip2). (I3–K3) High-magnification confocal images showing the coexpression of FG and Calb1 (I3), Ctip2 (J3), or FoxP2 (K3). White arrowheads indicate colabeling, empty arrowheads indicate the lack of marker expression. (L–N) Bar graphs showing the proportion of Calb1- (L), Ctip2- (N), and FoxP2-expressing (M) mPFCNAc cells. All data are shown as mean ± standard deviation (SD), n = 3 mice. Numbers in the bars represent cell counts and circles represent individual animal data. For detailed quantitative data see Tables 1 and 2. Scale bars: (B, E, I1–K1, I2–K2) 200 µm; (I3–K3) 20 µm. aca, anterior commissure, anterior part; BNST, bed nucleus of the stria terminalis; CPu, caudate putamen; fmi, forceps minor of the corpus callosum; LS, lateral septum; LV, lateral ventricle; VDB, nucleus of the vertical limb of the diagonal band; VP, ventral pallidum.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78813/elife-78813-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The lack of PV + axonal and cellular immunolabeling (gray scale) in the L2/3 defines the territory of PrL (asterisk). (B) Calb1-expressing L2/3 (green) is clearly visible in most parts of the mPFC. A thickened L1 and a more compact L2/3 and L5 identify the deep peduncular cortex (DP) (number sign). (C) Ctip2 (magenta) is expressed in the L5b (bigger neurons) and L6 (smaller neurons). (D) FoxP2 (cyan) is expressed throughout the L6 of the mPFC. Narrowed L6 and the lack of FoxP2-expressing cells (cyan) in the L5 reveal DP (cross). (E) Schematic summary of PV, Calb1, FoxP2, and Ctip2 distribution in the mPFC. Scale bar: 200 µm.
+
 According to the obtained molecular-based mPFC map, most mPFCNAc neurons were found in the medial orbital (MO; 59.99 ± 7.57%; n = 3 animals; N = 612/1042 cells), PrL (29.31 ± 5.25%; N = 297/1042 cells), and IL (6.40 ± 2.33%; N = 59/1042 cells) subregions and, to a lower extent, in the cingulate area 1 (Cg1), DP, and dorsal tenia tecta (DTT, also known as anterior hippocampal continuation) with the highest number of cells (N = 513/1042 cells) between Bregma + 2.34 and +1.99 mm (Figure 1D–G; Table 1). A relatively low number of cells were found in the primary and secondary motor (M1–M2) and the adjacent orbital cortices (Figure 1D). At the laminar level, the vast majority of mPFCNAc cells were localized in the L5a (58.64 ± 16.39%; N = 571/1042 cells) and L2/3 (29.56 ± 7.84%; N = 324/1042 cells) (Figure 1H, I1-K1, I2-K2; Table 1).
+
+**Table 1.**
+ Anteroposterior, subregional, and laminar distribution of mPFCNAc and mPFCVTA neurons (n = 3–3 mice).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th>mPFCNAc</th>
+      <th>mPFCVTA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">Anteroposterior distribution (Bregma level)</td>
+      <td>&gt;2.80 mm</td>
+      <td>70.67%</td>
+      <td>231.22%</td>
+    </tr>
+    <tr>
+      <td>2.80–2.35 mm</td>
+      <td>27126.01%</td>
+      <td>22111.77%</td>
+    </tr>
+    <tr>
+      <td>2.34–1.99 mm</td>
+      <td>51349.23%</td>
+      <td>53028.22%</td>
+    </tr>
+    <tr>
+      <td>1.98–1.71 mm</td>
+      <td>23822.84%</td>
+      <td>86446.01%</td>
+    </tr>
+    <tr>
+      <td>1.70–1.42 mm</td>
+      <td>131.25%</td>
+      <td>1156.12%</td>
+    </tr>
+    <tr>
+      <td>&lt;1.42 mm</td>
+      <td>00.00%</td>
+      <td>1256.66%</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Subregional distribution</td>
+      <td>Cg2</td>
+      <td>0, 0, 00 ± 0%</td>
+      <td>26, 16, 223.88 ± 2.33%</td>
+    </tr>
+    <tr>
+      <td>Cg1</td>
+      <td>2, 26, 42.46 ± 1.38%</td>
+      <td>53, 42, 739.57 ± 3.71%</td>
+    </tr>
+    <tr>
+      <td>PrL</td>
+      <td>49, 194, 5429.31 ± 5.26%</td>
+      <td>95, 257, 15326.68 ± 8.63%</td>
+    </tr>
+    <tr>
+      <td>IL</td>
+      <td>10, 35, 146.40 ± 2.33%</td>
+      <td>20, 67, 888.63 ± 3.25%</td>
+    </tr>
+    <tr>
+      <td>MO</td>
+      <td>135, 404, 8259.99 ± 7.57%</td>
+      <td>71, 128, 19920.57 ± 4.46%</td>
+    </tr>
+    <tr>
+      <td>DP</td>
+      <td>2, 16, 01.11 ± 1.16%</td>
+      <td>68, 111, 13016.54 ± 0.75%</td>
+    </tr>
+    <tr>
+      <td>DTT</td>
+      <td>0, 15, 00.72 ± 1.26%</td>
+      <td>64, 86, 10914.12 ± 1.98%</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Laminar distribution</td>
+      <td>L1</td>
+      <td>1, 4, 10.58 ± 0.07%</td>
+      <td>1, 0, 00.08 ± 0.15%</td>
+    </tr>
+    <tr>
+      <td>L2/3</td>
+      <td>71, 221, 3229.55 ± 7.84%</td>
+      <td>30, 9, 93.33±3.66</td>
+    </tr>
+    <tr>
+      <td>L5a</td>
+      <td>92, 360, 11958.64 ± 16.39%</td>
+      <td>10, 7, 51.38 ± 1.00%</td>
+    </tr>
+    <tr>
+      <td>L5b</td>
+      <td>25, 83, 18.43 ± 6.75%</td>
+      <td>194, 434, 46656.82 ± 6.91%</td>
+    </tr>
+    <tr>
+      <td>L6</td>
+      <td>9, 22, 12.79 ± 1.98%</td>
+      <td>162, 257, 29438.38 ± 2.25%</td>
+    </tr>
+    <tr>
+      <td colspan="2">Total cell count</td>
+      <td>198, 690, 154</td>
+      <td>397, 707, 774</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note that anteroposterior data have been pooled in both groups._
 
 To characterize the molecular identity of mPFCNAc cells, we quantified their Calb1-, Ctip2-, and FoxP2-expression (Figure 1I–N). Our analysis revealed that about two-thirds (68.64 ± 2.62%, n = 3 animals, NCalb1+/FG+ = 197/289 cells; Figure 1I3, L, left bar; Table 2) of mPFCNAc neurons in the L2/3 expressed Calb1, while only a small proportion did so in the L5–6 (2.87 ± 1.15%, NCalb1+/FG+ = 18/655 cells; Figure 1L, middle bar; Table 2). Collectively, approximately one-fifth of all mPFCNAc neurons expressed Calb1 (22.78 ± 1.86%, NCalb1+/FG+ = 215/944 cells; Figure 2L, right bar; Table 2). Although most of the mPFCNAc cells were found in the Ctip2-negative L2/3 and 5a, some cells were found in the deeper layers as well. Confocal analysis revealed that only a small proportion of superficial (i.e., L2/3–5a) cells were Ctip2 positive (8.26 ± 2.6%, n = 3 animals, NCtip2+/FG+ = 45/767 cells; Figure 1J3, M, left bar; Table 2), while in the deeper layers (i.e., L5b–6), although relatively few in number, the majority of cells expressed Ctip2 (64.1 ± 4.76%, NCtip2+/FG+ = 130/204 cells; Figure 1M, middle bar; Table 2). Collectively, approximately one-fifth of all mPFCNAc cells expressed Ctip2 (20.8 ± 12.1%, NCtip2+/FG+ = 175/971 cells; Figure 1M, left bar; Table 2). Finally, only a negligible number of mPFCNAc cells expressed FoxP2 (2.11 ± 1.84%, n = 3 animals, NFoxP2+/FG+ = 22/862 cells, Figure 1K3, N; Table 2).
 
@@ -42,9 +166,110 @@ To characterize the molecular identity of mPFCNAc cells, we quantified their Cal
 
 **Figure 2.:** (A) Experimental design. (B) A representative retrograde tracer (Fluoro-Gold [FG], green) injection site in the VTA. (C) Full extent of the injection sites in the VTA in three animals. Each case is represented with different color. (D) Plotted distribution of retrogradely labeled neurons throughout the mPFC of the same animals as in (C) (same colors represent same animals). Each dot represents one labeled mPFCVTA cell. (E) Distribution of labeled neurons in the mPFC in relation to parvalbumin (PV) (orange) immunofluorescent labeling outlining the PrL cortex. (F) Pooled anteroposterior distribution of mPFCVTA neurons for three animals. (G) Distribution of mPFCVTA cells in individual mPFC subregions. (H) Laminar distribution of mPFCVTA neurons in the mPFC. (I–K) Confocal images showing the layer-specific distribution of FG-labeled cells (green) in the PrL (I1–K1) with counterstaining of Calb1 (purple, I2), Ctip2 (gray scale, J2), and FoxP2 (red, K2). Note that the labeled cells are almost exclusively localized in the L5b (Ctip2) and L6 (Ctip2 + FoxP2) layers. (I3–K3) High-magnification confocal images showing the coexpression of FG and Calb1 (I3), Ctip2 (J3), or FoxP2 (K3). White arrowheads indicate colabeling, empty arrowheads indicate the lack of marker expression. Bar graphs showing the proportion of Calb1- (L), Ctip2- (M), and FoxP2-expressing (N) mPFCVTA cells. All data are shown as mean ± standard deviation (SD), n = 3 mice. Numbers in the bars represent cell counts and circles represent individual animal data. For detailed quantitative data see Tables 1 and 3. Scale bars: (B, E, I1–K1, I2–K2) 200 µm; (I3–K3) 20 µm. aca, anterior commissure, anterior part; fmi, forceps minor of the corpus callosum; IPR, interpeduncular nucleus, rostral subnucleus; ml, medial lemniscus; RN, red nucleus; SN, substantia nigra; VO, ventral orbital cortex.
 
+**Table 2.**
+ Proportion of FoxP2-, Ctip2-, and Calb1-expressing neurons in the mPFCNAc population (n = 3 mice).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">mPFCNAc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Layers</td>
+      <td colspan="3">Calb1</td>
+    </tr>
+    <tr>
+      <td># FG+ /animal</td>
+      <td># Calb1+ /animal</td>
+      <td>% Calb1+ (AVG ± SD)</td>
+    </tr>
+    <tr>
+      <td>L2/3</td>
+      <td>128, 101, 60</td>
+      <td>84, 71, 42</td>
+      <td>68.6 ± 2.6%</td>
+    </tr>
+    <tr>
+      <td>L5a-5b-6</td>
+      <td>287, 200, 168</td>
+      <td>7, 4, 7</td>
+      <td>2.9 ± 1.1%</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>415, 301, 228</td>
+      <td>91, 75, 49</td>
+      <td>22.8 ± 1.9%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Layers</td>
+      <td>Ctip2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td># FG+ /animal</td>
+      <td># Ctip2+ /animal</td>
+      <td>% Ctip2+ (AVG ± SD)</td>
+    </tr>
+    <tr>
+      <td>L2/3-5a</td>
+      <td>62, 356, 349</td>
+      <td>9, 9, 27</td>
+      <td>8.26 ± 6.01%</td>
+    </tr>
+    <tr>
+      <td>L5b-6</td>
+      <td>37, 29, 138</td>
+      <td>22, 20, 88</td>
+      <td>64.1 ± 4.76%</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>99, 385, 487</td>
+      <td>31, 29, 115</td>
+      <td>20.8 ± 12.1%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Layers</td>
+      <td>FoxP2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td># FG+ /animal</td>
+      <td># FoxP2+ /animal</td>
+      <td>% FoxP2+ (AVG ± SD)</td>
+    </tr>
+    <tr>
+      <td>L2/3-5a-5b</td>
+      <td>288, 357, 173</td>
+      <td>5, 10, 0</td>
+      <td>1.5 ± 1.4%</td>
+    </tr>
+    <tr>
+      <td>L6</td>
+      <td>20, 24, 0</td>
+      <td>4, 3, 0</td>
+      <td>-*</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>308, 381, 173</td>
+      <td>9, 13, 0</td>
+      <td>2.1 ± 1.8%</td>
+    </tr>
+  </tbody>
+</table>
+
+_#, number of labeled cells.Calb1, Ctip2, and FoxP2-immunostainings were used to define the cortical layers in mPFC.*When total cell count was <10, percentage was not calculated._
+
 Altogether, retrograde tracing experiments revealed that mPFCNAc neurons were mostly localized in the L2/3 and 5a of the PrL, MO, and IL cortices. Approximately one-fifth of these cells express Calb1 – most of them are localized in the L2/3, where Calb1 expression is higher (~70%), and another one-fifth express Ctip2, mostly in the L5b–6.
 
-## Distribution and molecular characterization of VTA-projecting mPFC cells
+### Distribution and molecular characterization of VTA-projecting mPFC cells
 
 Next, we investigated the distribution of VTA-projecting neurons in the mPFC (mPFCVTA). We used the previously described retrograde tracing approach in the VTA (Figure 2A) identified with IHCFluo against tyrosine hydroxylase (TH; Figure 2B, C; Oades and Halliday, 1987; Morales and Margolis, 2017). Most mPFCVTA neurons were localized in the PrL (26.68 ± 8.63%; n = 3 animals; N = 505/1878 cells), MO (20.57 ± 4.46%; N = 398/1878 cells), DP (16.54 ± 0.75%; N = 309/1878 cells), DTT (14.12 ± 1.98%; N = 259/1878 cells), as well as in the Cg1 (9.57 ± 3.71%; N = 168/1878 cells), IL (8.63 ± 3.25%; N = 175/1878 cells), and Cg2 (3.88 ± 2.33%; N = 64/1878 cells) cortices, with the highest density (N = 864/1878 cells) between Bregma +1.98 and +1.71 mm (Figure 2D–G; Table 1). There were also several labeled cells in the adjacent orbital and motor cortices (Figure 2D).
 
@@ -52,11 +277,129 @@ Regarding their laminar distribution, we found that most of mPFCVTA cells formed
 
 Higher magnification confocal analysis revealed that only a marginal proportion (1.31 ± 0.5%, n = 3 animals, NCalb1+/FG+ = 15/1165 cells, Figure 2I3, L; Table 3) of all mPFCVTA cells expressed Calb1. We also quantified the Ctip2expression of mPFCVTA neurons and found that the vast majority of these cells express Ctip2 (95.07 ± 0.6%, n = 3 animals, NCtip2+/FG+ = 481/506 cells; Figure 2J3, M; Table 3). This finding is in accordance with previous results (Kim et al., 2017) showing CTIP2 gene enrichment in mPFCVTA neurons. Finally, most L6 mPFCVTA cells expressed FoxP2 (78.86 ± 8.79%, n = 3 animals, NFoxP2+/FG+ = 761/951 cells; Figure 2K3, N, middle bar; Table 3). On the other hand, in the superficial layers (L2/3–L5), only a small proportion (8.69 ± 2.13%, NFoxP2+/FG+ = 77/920 cells; Table 3) of mPFCVTA cells were FoxP2-positive (Figure 2N, left bar). In total, about half of all mPFCVTA neurons expressed FoxP2 (45.93 ± 17.15%, NFoxP2+/FG+ = 838/1871 cells; Figure 2N, right bar; Table 3).
 
+**Table 3.**
+ Proportion of FoxP2-, Ctip2-, and Calb1-expressing neurons in the mPFCVTA population (n = 3 mice).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>mPFCVTA</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Layers</td>
+      <td>Calb1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td># FG+ /animal</td>
+      <td># Calb1+ /animal</td>
+      <td>% Calb1+ (AVG ± SD)</td>
+    </tr>
+    <tr>
+      <td>L2/3</td>
+      <td>4, 2, 5</td>
+      <td>4, 2, 2</td>
+      <td>-*</td>
+    </tr>
+    <tr>
+      <td>L5a-5b-6</td>
+      <td>371, 452, 331</td>
+      <td>3, 2, 2</td>
+      <td>-*</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>375, 454, 336</td>
+      <td>7, 4, 4</td>
+      <td>1.3 ± 0.5%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Layers</td>
+      <td>Ctip2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td># FG+ /animal</td>
+      <td># Ctip2+ /animal</td>
+      <td>% Ctip2+ (AVG ± SD)</td>
+    </tr>
+    <tr>
+      <td>L2/3-5a</td>
+      <td>1, 2, 1</td>
+      <td>1, 0, 0</td>
+      <td>-*</td>
+    </tr>
+    <tr>
+      <td>L5b-6</td>
+      <td>152, 163, 187</td>
+      <td>144, 158, 178</td>
+      <td>95.6 ± 1.2%</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>153, 165, 188</td>
+      <td>145, 158, 178</td>
+      <td>95.1 ± 0.6%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Layers</td>
+      <td>FoxP2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td># FG+ /animal</td>
+      <td># FoxP2+ /animal</td>
+      <td>% FoxP2+ (AVG ± SD)</td>
+    </tr>
+    <tr>
+      <td>L2/3-5a-5b</td>
+      <td>162, 347, 411</td>
+      <td>17, 22, 38</td>
+      <td>8.7 ± 2.1%</td>
+    </tr>
+    <tr>
+      <td>L6</td>
+      <td>393, 283, 275</td>
+      <td>347, 219, 195</td>
+      <td>78.9 ± 8.8%</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>555, 630, 686</td>
+      <td>364, 241, 233</td>
+      <td>45.9 ± 17.2%</td>
+    </tr>
+  </tbody>
+</table>
+
+_#, number of labeled cells.Calb1, Ctip2, and FoxP2-immunostainings were used to define the cortical layers in mPFC.*When total cell count was <10, percentage was not calculated._
+
 Taken together, using retrograde tracing experiments we identified two major clusters of mPFCVTA neurons distributed throughout the mPFC: one FoxP2-, and most probably Ctip2-expressing population localized mostly in the L6 (approximately half of all neurons); and one, mostly FoxP2-negative, but Ctip2-positive population in the layer 5b.
 
-## Utility of Cre mouse lines to label mPFC neurons in a layer-selective manner
+### Utility of Cre mouse lines to label mPFC neurons in a layer-selective manner
 
 We found retrogradely labeled mPFCNAc and mPFCVTA neurons in all cellular layers of the mPFC in varying densities. Next, we sought to confirm the laminar organizations of the projecting cells using transgenic mice expressing Cre-recombinase enzyme in a layer-selective manner. We used the following layer-specific Cre-expressing mouse strains: Calb1- (L2/3), Retinol Binding Protein 4- (Rbp4; L5), Neurotensin Receptor 1 (Ntsr1; L6), and FoxP2-Cre (L6) (van Brederode et al., 1991; Hof et al., 1999; Sun et al., 2002; Ferland et al., 2003; Molyneaux et al., 2007; Harris et al., 2014; Harris et al., 2019; Sundberg et al., 2018; Callaway, 2021; Matho et al., 2021; Muñoz-Castañeda et al., 2021) in combination with Cre-dependent adeno-associated viral vectors (AAVs) (Figure 3A–D). Furthermore, we used a Thymocyte differentiation antigen 1 (Thy1)-Cre mouse line as control, in which Cre enzyme is expressed in all pyramidal neurons, regardless of their laminar localization (Figure 3E).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/78813/elife-78813-fig3-v1.jpg)
+
+**Figure 3.:** Delineation of AAV-DIO-mCherry/eYFP injection sites in the mPFC of the Calb1- (A), Rbp4- (B) Ntsr1- (C) FoxP2- (D), and Thy1-Cre (E) strains (n = 3 mice in each strain). Viral labeling was always analyzed after immunohistochemical enhancement (Figure 3—figure supplement 1). For higher magnification distribution of labeled cells in the mPFC and M1 see Figure 3—figure supplement 2. Confocal images showing virally labeled prefrontal axons (red) in the NAc of Calb1- (F), Rbp4- (G), Ntsr1- (H), FoxP2- (I) and Thy1-Cre (J) mouse strains. Calb1 (cyan) immunofluorescent staining was used to identify the NAc. (K–O) Distribution of labeled axons (red) from the same animals, respectively, in the VTA defined with TH staining (gray scale). Scale bars: 200 µm. aca, anterior commissure, anterior part; fmi, forceps minor of the corpus callosum; IPR, interpeduncular nucleus, rostral subnucleus; LS, lateral septum; LV, lateral ventricle; ml, medial lemniscus; Pir, piriform cortex; R, raphe; RN, red nucleus; SN, substantia nigra; VDB, nucleus of the vertical limb of the diagonal band; VP, ventral pallidum.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78813/elife-78813-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Confocal images showing the native mCherry signals in the somatodendritic (A1) and axonal compartments (B1) and after IHCFluo signal enhancement (A2, B2) of the same slice taken from the medial prefrontal cortex (mPFC) (A) (injection site) and from the nucleus accumbens (NAc) (B). Arrows indicate dendrites, arrowheads indicate neurons visible in both the native and IHCFluo-enhanced sample. White circles indicate neurons not visible in the native sample. (C, D) Brightfield images showing IHCDAB-Ni-enhanced samples taken from a neighboring slice. Scale bars: 100 µm. aca, anterior commissure, anterior part.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/78813/elife-78813-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A–E) Confocal images (left) and plots (right) showing the adeno-associated viral vector (AAV)-labeled cells in the mPFC in the same animals as in Figure 3, respectively. (F–J) Localization of labeled neurons in the M1 cortex in the same mouse strains. Note the different distribution of Rbp4- (B, G), Ntsr1- (C, H), and FoxP2-expressing (D, I) cells in the two cortical regions. Dashed lines indicate layer borders defined with IHCFluo against Calb1, Ctip2, or FoxP2 (Figure 1—figure supplement 1). Open circles in A, F represent putative GABAergic interneurons. Scale bars: 200 µm.
 
 Virally labeled cell bodies in all strains were primarily found in the PrL, IL, Cg1–2, MO, and, to a lower extent, in the DP, the ventromedial M2, the dorsal part of the DTT and the medial part of the VO cortex (Figure 3A–E) in good correspondence with the distribution of the retrogradely labeled mPFCNAc and mPFCVTA neurons (Figures 1 and 2). Note that viral expression was always analyzed after IHC enhancement of eYFP/mCherry, because this method revealed structures – mostly thin axon branches, but also some cell bodies – and fine details (e.g., dendritic spines) otherwise not detectable (see Methods) (Figure 3—figure supplement 1).
 
@@ -64,7 +407,7 @@ Since the majority of previous publications describing cortical layer-specific m
 
 Together, these results show that these mouse strains can be used to label and investigate distinct layers of prefrontal cell populations, confirming previous findings (van Brederode et al., 1991; Hof et al., 1999; Sun et al., 2002; Ferland et al., 2003; Molyneaux et al., 2007; Harris et al., 2014; Harris et al., 2019; Sundberg et al., 2018; Callaway, 2021; Matho et al., 2021; Muñoz-Castañeda et al., 2021). However, in some cases (Rbp4-, Ntsr1-, and FoxP2-Cre) the distribution of labeled neurons was somewhat different in the mPFC compared to M1.
 
-## Layer-selective prefrontal cortical innervation of the NAc and VTA
+### Layer-selective prefrontal cortical innervation of the NAc and VTA
 
 After validating the use of these Cre mouse strains and AAV vectors to label mPFC neuron populations in a layer-selective manner, we sought to explore their projection patterns in the NAc and VTA. In order to do this, we performed confocal microscopy combined with multiple IHCFluo in tissue samples taken from the mPFC animals described in the previous section.
 
@@ -72,7 +415,7 @@ In the Calb1-Cre strain – where viral transduced cells were confined to the L2
 
 Taken together, our classical retrograde and cell type-specific anterograde viral tracing experiments revealed that mPFCNAc and mPFCVTA neuron populations are mostly separated in the L2/3–5a and L5b–6, respectively, although this separation is not exclusive. Conversely, these populations seem to overlap in the L5, but it is not clear whether a single mPFC neuron projects to both targets simultaneously or shows target selectivity.
 
-## NAc- and VTA-projecting mPFC populations are mostly nonoverlapping
+### NAc- and VTA-projecting mPFC populations are mostly nonoverlapping
 
 Next, to answer the open question whether a single mPFC neuron can innervate the NAc and VTA simultaneously or not, we carried out two independent experiments to clarify this issue (Figures 4 and 5).
 
@@ -82,7 +425,41 @@ Next, to answer the open question whether a single mPFC neuron can innervate the
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/78813/elife-78813-fig5-v1.jpg)
 
-**Figure 5.:** (A) Experimental design of CAV2-Cre-mediated viral tracing experiments. BDA was used to visualize the exact location of injection sites. (B) Representative CAV2-Cre + 5% BDA (cyan) injection site (B1) in the NAc and AAV-DIO-mCherry (red) injection site (B2) in the mPFC of the same animal. (C) Representative CAV2-Cre + BDA (cyan) injection site (C1) in the VTA counterstained with TH (grayscale) and AAV-DIO-mCherry (red) injection site (C2) in the mPFC of the same animal. (D–G) High-magnification confocal images showing the distribution of mCherry (red)-labeled axons in the NAc (left) and the VTA (right) in a mPFCNAc (D), mPFCVTA (E), mPFCRbp4 (F); same animal as in Figure 3C, H, M and Figure 3—figure supplement 1B and mPFCThy1 (G); same animal as in Figure 3F, K, P and Figure 3—figure supplement 1E animal. (H) Quantification of relative axon density (RAD) in the mPFCNAc, mPFCVTA, mPFCRbp4, and mPFCThy1 animals F(3, 8) = 55.56; p = 0.000011; mPFCNAc vs. mPFCVTA, p = 0.0000026; mPFCNAc vs. mPFCRbp4, p = 0.028; mPFCNAc vs. mPFCThy1, p = 0.18; mPFCVTA vs. mPFCRbp4, p = 0.000018; mPFCVTA vs. mPFCThy1, p = 0.0000072; one-way analysis of variance (ANOVA), least significant difference (LSD) post hoc test; *p < 0.05; ***p < 0.001; n.s., not significant. All data are shown as mean ± standard deviation (SD), n = 3 mice in each group. For detailed quantitative data see Table 5 and Figure 5—source data 1. Scale bars: (B–C) 200 µm, (D–G) 20 µm. aca, anterior commissure, anterior part; BDA, biotinylated dextran amine; IPR, interpeduncular nucleus, rostral subnucleus; LV, lateral ventricle; ml, medial lemniscus; RN, red nucleus.Figure 5—source data 1.
+**Figure 5.:** (A) Experimental design of CAV2-Cre-mediated viral tracing experiments. BDA was used to visualize the exact location of injection sites. (B) Representative CAV2-Cre + 5% BDA (cyan) injection site (B1) in the NAc and AAV-DIO-mCherry (red) injection site (B2) in the mPFC of the same animal. (C) Representative CAV2-Cre + BDA (cyan) injection site (C1) in the VTA counterstained with TH (grayscale) and AAV-DIO-mCherry (red) injection site (C2) in the mPFC of the same animal. (D–G) High-magnification confocal images showing the distribution of mCherry (red)-labeled axons in the NAc (left) and the VTA (right) in a mPFCNAc (D), mPFCVTA (E), mPFCRbp4 (F); same animal as in Figure 3C, H, M and Figure 3—figure supplement 1B and mPFCThy1 (G); same animal as in Figure 3F, K, P and Figure 3—figure supplement 1E animal. (H) Quantification of relative axon density (RAD) in the mPFCNAc, mPFCVTA, mPFCRbp4, and mPFCThy1 animals F(3, 8) = 55.56; p = 0.000011; mPFCNAc vs. mPFCVTA, p = 0.0000026; mPFCNAc vs. mPFCRbp4, p = 0.028; mPFCNAc vs. mPFCThy1, p = 0.18; mPFCVTA vs. mPFCRbp4, p = 0.000018; mPFCVTA vs. mPFCThy1, p = 0.0000072; one-way analysis of variance (ANOVA), least significant difference (LSD) post hoc test; *p < 0.05; ***p < 0.001; n.s., not significant. All data are shown as mean ± standard deviation (SD), n = 3 mice in each group. For detailed quantitative data see Table 5 and Figure 5—source data 1. Scale bars: (B–C) 200 µm, (D–G) 20 µm. aca, anterior commissure, anterior part; BDA, biotinylated dextran amine; IPR, interpeduncular nucleus, rostral subnucleus; LV, lateral ventricle; ml, medial lemniscus; RN, red nucleus.
+
+**Table 4.**
+ Quantification of double retrograde tracing experiments (n = 3 mice).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>NAc*</th>
+      <th>VTA*</th>
+      <th>Total*</th>
+      <th>Double labeled</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td># /animal</td>
+      <td>269, 2995, 2621</td>
+      <td>111, 544, 840</td>
+      <td>380, 3374, 3251</td>
+      <td>0, 55, 70</td>
+    </tr>
+    <tr>
+      <td>% double labeled</td>
+      <td>1.5 ± 1.4%</td>
+      <td>6.8 ± 6.0%</td>
+      <td>1.3 ± 1.1%</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_#, number of labeled cells.*Including double-labeled cells._
 
 First, we performed double retrograde tracings with FG and CTB (interchangeably) from the NAc and the VTA (Figure 4A, B) and investigated the overlap of the labeled populations in the mPFC (Figure 4C). Our results showed that only a small proportion of all cells contained both tracers (NAc + VTA/VTA = 6.78 ± 5.97%, NAc + VTA/NAc = 1.54 ± 1.40%, NAc + VTA/total = 1.26 ± 1.12%; NNAc = 269, 2940, 2551 cells, NVTA = 111, 489, 770 cells, NVTA+NAc = 0, 55, 70 cells; n = 3 mice; Figure 4D; Table 4) and most of them were found in the L5.
 
@@ -90,15 +467,664 @@ Although these results indicate that mPFCNAc and mPFCVTA populations are mostly 
 
 To quantify these results, we applied high-magnification confocal imaging (×63) to measure and compare the relative axon densities (RADs) in the two target areas. This quantitative analysis showed that mPFCNAc neurons innervated the NAc almost tenfold stronger than the VTA (RAD(VTA/NAc) = 0.11 ± 0.06; n = 3 animals; Figure 5H; Table 5; Figure 5—source data 1). On the other hand, mPFCVTA cells innervated preferentially the VTA as opposed to the NAc (RAD(VTA/NAc) = 3.45 ± 0.41; n = 3 animals; Figure 5H; Table 5; Figure 5—source data 1).
 
+**Table 5.**
+ Quantification of axon length and density in the ventral tegmental area (VTA) and nucleus accumbens (NAc) in the mPFCNAc, mPFCVTA, mPFCRbp4, and mPFCThy1 animals (n = 3 mice in each group).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th>NAc</th>
+      <th>VTA</th>
+      <th colspan="2"></th>
+      <th>NAc</th>
+      <th>VTA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="12">mPFCNAc</td>
+      <td rowspan="3">Axon length (mm)</td>
+      <td>907.58</td>
+      <td>30.80</td>
+      <td rowspan="12">PFCRbp4</td>
+      <td rowspan="3">Axon length (mm)</td>
+      <td>597.27</td>
+      <td>299.93</td>
+    </tr>
+    <tr>
+      <td>1385.42</td>
+      <td>24.23</td>
+      <td>617.26</td>
+      <td>353.48</td>
+    </tr>
+    <tr>
+      <td>401.99</td>
+      <td>9.70</td>
+      <td>1323.86</td>
+      <td>99.42</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Volume (mm3)</td>
+      <td>0.0068</td>
+      <td>0.018</td>
+      <td rowspan="3">Volume (mm3)</td>
+      <td>0.0069</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>0.0060</td>
+      <td>0.020</td>
+      <td>0.0059</td>
+      <td>0.0089</td>
+    </tr>
+    <tr>
+      <td>0.0028</td>
+      <td>0.019</td>
+      <td>0.0032</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Density (mm/mm3)</td>
+      <td>49,215.43</td>
+      <td>4539.63</td>
+      <td rowspan="3">Density (mm/mm3)</td>
+      <td>31,674.39</td>
+      <td>43,542.44</td>
+    </tr>
+    <tr>
+      <td>69,073.73</td>
+      <td>4042.84</td>
+      <td>69,696.59</td>
+      <td>60,044.90</td>
+    </tr>
+    <tr>
+      <td>20,991.09</td>
+      <td>3519.42</td>
+      <td>80,501.53</td>
+      <td>31,307.55</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Relative density*</td>
+      <td colspan="2">0.092</td>
+      <td rowspan="3">Relative density*</td>
+      <td colspan="2">1.37</td>
+    </tr>
+    <tr>
+      <td colspan="2">0.059</td>
+      <td colspan="2">0.86</td>
+    </tr>
+    <tr>
+      <td colspan="2">0.17</td>
+      <td colspan="2">0.39</td>
+    </tr>
+    <tr>
+      <td rowspan="12">mPFCVTA</td>
+      <td rowspan="3">Axon length (mm)</td>
+      <td>130.72</td>
+      <td>196.69</td>
+      <td rowspan="12">mPFCThy1</td>
+      <td rowspan="3">Axon length (mm)</td>
+      <td>1708.58</td>
+      <td>517.52</td>
+    </tr>
+    <tr>
+      <td>129.94</td>
+      <td>161.77</td>
+      <td>2719.73</td>
+      <td>459.37</td>
+    </tr>
+    <tr>
+      <td>46.42</td>
+      <td>63.91</td>
+      <td>2807.45</td>
+      <td>398.95</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Volume (mm3)</td>
+      <td>0.0067</td>
+      <td>0.017</td>
+      <td rowspan="3">Volume (mm3)</td>
+      <td>0.0058</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>0.0061</td>
+      <td>0.016</td>
+      <td>0.0068</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>0.0064</td>
+      <td>0.014</td>
+      <td>0.0057</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Density (mm/mm3)</td>
+      <td>7578.49</td>
+      <td>29,542.50</td>
+      <td rowspan="3">Density (mm/mm3)</td>
+      <td>104,685.07</td>
+      <td>88,715.34</td>
+    </tr>
+    <tr>
+      <td>7954.40</td>
+      <td>26,648.57</td>
+      <td>166,781.92</td>
+      <td>67,511.08</td>
+    </tr>
+    <tr>
+      <td>3206.06</td>
+      <td>9953.67</td>
+      <td>210,241.59</td>
+      <td>69,900.41</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Relative density*</td>
+      <td colspan="2">3.90</td>
+      <td rowspan="3">Relative density*</td>
+      <td colspan="2">0.85</td>
+    </tr>
+    <tr>
+      <td colspan="2">3.35</td>
+      <td colspan="2">0.40</td>
+    </tr>
+    <tr>
+      <td colspan="2">3.10</td>
+      <td colspan="2">0.33</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Relative density = RADVTA/RADNAc._
+
 As controls, we used Rbp4- (mPFCRbp4) and Thy1-Cre (mPFCThy1) animals from the previous viral tracing experiments (Figure 3), since these two cell populations innervated both the NAc and VTA intensively (Figure 5F, G). Our analysis revealed that mPFCRbp4 cells innervated both regions similarly (RAD(VTA/NAc) = 0.88 ± 0.49; n = 3 animals; Figure 5F, H; Table 5; Figure 5—source data 1), while mPFCThy1 cells tended to innervate NAc slightly more intensively (RAD(VTA/NAc) = 0.53 ± 0.28; n = 3 animals; Figure 5G, H; Table 5; Figure 5—source data 1). These and the double retrograde tracing results indicate that mPFCNAc and mPFCVTA neurons are rather nonoverlapping, although there is a marginal population – in the L5 – that innervates both areas.
 
-## mPFCNAc and mPFCVTA populations have different efferent connections
+### mPFCNAc and mPFCVTA populations have different efferent connections
 
 After confirming that mPFCNAc and mPFCVTA neurons are mostly separated at the cellular level, we sought to investigate the projection pattern of these populations throughout the brain. Therefore, we used immunoperoxidase development with DAB-Ni as a chromogen (IHCDAB-Ni) (Figure 3—figure supplement 1) for the mPFCNAc (n = 3 mice) and mPFCVTA (n = 3 mice) brain samples of CAV2-Cre-mediated viral labeling. Semi-quantitative investigation of the samples revealed clear differences between the two populations (Figure 6; Table 6). Most notably, mPFCNAc neurons projected intensively to the ipsi- and contralateral striatum – including the NAc (Figure 6C, left) –, various cortical areas (Figure 6A–H, left), and the amygdala (Figure 6F, left). On the other hand, mPFCVTA innervation was strongest in the lateral (LS) and medial septum (MS; Figure 6C, right), the hypothalamus (HT), the bed nucleus of the stria terminalis (BNST; Figure 6D–F, right), the midline thalamic nuclei (Figure 6E, F), the zona incerta (ZI; Figure 6F, right) and various tectal (Figure 6G, H, right), tegmental – including the VTA – (Figure 6G–I, right) and pontine regions (Figure 6G–I, right). Taken together, our investigation revealed that mPFCNAc and mPFCVTA populations differ in their projection patterns not only in the NAc and VTA, but throughout the brain.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/78813/elife-78813-fig6-v1.jpg)
 
-**Figure 6.:** NAc and mPFCVTA neurons possess different efferent connections.(A–I) Brightfield images showing the distribution of CAV2-Cre-mediated AAV-DIO-mCherry-labeled axons visualized with IHCDAB-Ni at different AP levels. Arrows indicate adeno-associated viral vector (AAV) injection sites in the medial prefrontal cortex (mPFC) (B). Note the clear difference between the mPFCNAc (left column) and mPFCVTA (right column) populations, most prominently in the striatum (C), different cortical areas (A–H), the hypothalamus (D–F), and the brainstem (F–I) – including the ventral tegmental area (VTA) (G). Note the almost complete lack of contralateral cortical projection in mPFCVTA animals as opposed to mPFCNAc animals (A, B, asterisks). For experimental design see Figure 6A. (J) Summary table showing the innervation intensities of mPFCNAc (top row) and mPFCVTA (bottom row) populations (n = 3–3 mice) in different brain regions. Darker color indicates stronger innervation. For details see Table 6. Scale bars: 500 µm. 3V, 3rd ventricle; 4V, 4th ventricle; aca, anterior commissure, anterior part; AO, anterior olfactory nucleus; Astr, amygdalostriatal transition area; Aq, aqueduct; BA, basolateral amygdaloid nucleus; BNST, bed nucleus of the stria terminalis; BS, brainstem; cc, corpus callosum; CG, central gray; CPu, caudate putamen; CTX, cortex; D3V, dorsal 3rd ventricle; DM, dorsomedial hypothalamic nucleus; DR, dorsal raphe; Ect, ectorhinal cortex; Ent, entorhinal cortex; Hb, habenula; I, intercalated amygdalar nuclei; ic, internal capsule; Ins, insular cortex; LH, lateral hypothalamus; LC, locus coeruleus; LDTg, laterodorsal tegmental nucleus; LP, lateral posterior thalamic nucleus; LS, lateral septum; LV, lateral ventricle; MR, medial raphe; MS, medial septum; nRT, reticular thalamic nucleus; PVT, paraventricular thalamic nucleus; VDB, nucleus of the vertical limb of the diagonal band; VP, ventral pallidum; opt, optic tract; PAG, periaqueductal gray; PB, parabrachial nucleus; Pir, piriform cortex; PnO, pontine reticular nucleus, oral part; PO, preoptic area; PPTg, pedunculopontine tegmental nucleus; PRh, perirhinal cortex; Re, reuniens thalamic nucleus; rf, rhinal fissure; RS, retrosplenial cortex; RtTg, reticulotegmental nucleus of the pons; SC, superior colliculus; scp, superior cerebellar peduncle; STR, striatum; Sub, subiculum; TeA, termporal association cortex; TH, thalamus; Tu, olfactory tubercule; ZI, zona incerta.
+**Figure 6.:** (A–I) Brightfield images showing the distribution of CAV2-Cre-mediated AAV-DIO-mCherry-labeled axons visualized with IHCDAB-Ni at different AP levels. Arrows indicate adeno-associated viral vector (AAV) injection sites in the medial prefrontal cortex (mPFC) (B). Note the clear difference between the mPFCNAc (left column) and mPFCVTA (right column) populations, most prominently in the striatum (C), different cortical areas (A–H), the hypothalamus (D–F), and the brainstem (F–I) – including the ventral tegmental area (VTA) (G). Note the almost complete lack of contralateral cortical projection in mPFCVTA animals as opposed to mPFCNAc animals (A, B, asterisks). For experimental design see Figure 6A. (J) Summary table showing the innervation intensities of mPFCNAc (top row) and mPFCVTA (bottom row) populations (n = 3–3 mice) in different brain regions. Darker color indicates stronger innervation. For details see Table 6. Scale bars: 500 µm. 3V, 3rd ventricle; 4V, 4th ventricle; aca, anterior commissure, anterior part; AO, anterior olfactory nucleus; Astr, amygdalostriatal transition area; Aq, aqueduct; BA, basolateral amygdaloid nucleus; BNST, bed nucleus of the stria terminalis; BS, brainstem; cc, corpus callosum; CG, central gray; CPu, caudate putamen; CTX, cortex; D3V, dorsal 3rd ventricle; DM, dorsomedial hypothalamic nucleus; DR, dorsal raphe; Ect, ectorhinal cortex; Ent, entorhinal cortex; Hb, habenula; I, intercalated amygdalar nuclei; ic, internal capsule; Ins, insular cortex; LH, lateral hypothalamus; LC, locus coeruleus; LDTg, laterodorsal tegmental nucleus; LP, lateral posterior thalamic nucleus; LS, lateral septum; LV, lateral ventricle; MR, medial raphe; MS, medial septum; nRT, reticular thalamic nucleus; PVT, paraventricular thalamic nucleus; VDB, nucleus of the vertical limb of the diagonal band; VP, ventral pallidum; opt, optic tract; PAG, periaqueductal gray; PB, parabrachial nucleus; Pir, piriform cortex; PnO, pontine reticular nucleus, oral part; PO, preoptic area; PPTg, pedunculopontine tegmental nucleus; PRh, perirhinal cortex; Re, reuniens thalamic nucleus; rf, rhinal fissure; RS, retrosplenial cortex; RtTg, reticulotegmental nucleus of the pons; SC, superior colliculus; scp, superior cerebellar peduncle; STR, striatum; Sub, subiculum; TeA, termporal association cortex; TH, thalamus; Tu, olfactory tubercule; ZI, zona incerta.
+
+**Table 6.**
+ Whole-brain mapping data showing the axon densities in different brain regions in the mPFCNAc and mPFCVTA animals (n = 3–3 mice).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="3">mPFCVTA</th>
+      <th colspan="3">mPFCNAc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>mPFCVTA #1</td>
+      <td>mPFCVTA #2</td>
+      <td>mPFCVTA #3</td>
+      <td>mPFCNAc #1</td>
+      <td>mPFCNAc #2</td>
+      <td>mPFCNAc #3</td>
+    </tr>
+    <tr>
+      <td rowspan="8">CTX</td>
+      <td>Contralat. mPFC</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>++</td>
+      <td>+++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>Ins/Cl</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>RS</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>TeA</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>++</td>
+      <td>++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>Pir</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Ect</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>Sub</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>++</td>
+      <td>++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>Ent</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td rowspan="3">STR</td>
+      <td>NAc</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>CPu</td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>Tu</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td rowspan="6">TH</td>
+      <td>PVT</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Re</td>
+      <td>++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>LP</td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DLG</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PIL</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>nRT</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td rowspan="5">AMY</td>
+      <td>MeA</td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Astr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>++</td>
+      <td>++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>CeA</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>BA</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td rowspan="20">BS</td>
+      <td>pv</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>PAG</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>VTA</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>SC</td>
+      <td>+</td>
+      <td></td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SN</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DR</td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DpMe</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IC</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PPTg</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PnO</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RR</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RtTg</td>
+      <td>+</td>
+      <td>+</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>LDTg</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>PB</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CG</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>LC</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DMTg</td>
+      <td></td>
+      <td></td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pn</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SubB</td>
+      <td>+</td>
+      <td></td>
+      <td>++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="7">Others</td>
+      <td>VP</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>BNST</td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Septum</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>+++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>HT</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+++</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>NB/SI</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>Hb</td>
+      <td>+</td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ZI</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+++</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_AMY, amygdala; Astr, amygdalostriatal transition area; BA, basolateral amygdaloid nucleus; BNST, bed nucleus of the stria terminalis; BS, brainstem; CeA, central amygdaloid nucleus; CG, central gray; Cl, claustrum; CPu, caudate putamen; CTX, cortex; DLG, dorsal lateral geniculate nucleus; DMTg, dorsomedial tegmental area; DpMe, deep mesencephalic nucleus; DR, dorsal raphe; Ect, ectorhinal cortex; Ent, entorhinal cortex; Hb, habenula; HT, hypothalamus; I, intercalated amygdalar nuclei; IC, inferior colliculus; Ins, insular cortex; LC, locus coeruleus; LDTg, laterodorsal tegmental nucleus; LP, lateral posterior thalamic nucleus; MeA, medial amygdaloid nucleus; MR, medial raphe; NB, basal nucleus; nRT, reticular thalamic nucleus; PVT, paraventricular thalamic nucleus; VP, ventral pallidum; PAG, periaqueductal gray; PB, parabrachial nucleus; PIL, posterior intralaminar thalamic nucleus; Pir, piriform cortex; Pn, pontine nuclei; PnO, pontine reticular nucleus, oral part; PPTg, pedunculopontine tegmental nucleus; pv, periventricular fiber system; Re, reuniens thalamic nucleus; RR, retrorubral nucleus; RS, retrosplenial cortex; RtTg, reticulotegmental nucleus of the pons; SC, superior colliculus; SI, substantia innominata; STR, striatum; Sub, subiculum; SubB, subbrachial nucleus; TeA, termporal association cortex; TH, thalamus; Tu, olfactory tubercule; ZI, zona incerta._
 
 ## Discussion
 
@@ -126,7 +1152,7 @@ In general, mPFCNAc neurons participate in a range of reward-related tasks. For 
 
 Taken together, mPFCNAc and mPFCVTA populations are rather nonoverlapping and their afferent connectivity shows IT- and PT-like features, respectively. However, high CT marker (FoxP2) expression in mPFCVTA neurons, as well as PT (Ctip2) and CT (Ntsr1) marker expression in mPFCNAc neurons indicate that the traditional IT–PT–CT classes might have somewhat different molecular characteristics in mPFC compared to the well-studied primary cortical areas. In accordance, a recent publication also demonstrated high genetic diversity of mPFC neurons (Gao et al., 2022), even within projection neuron classes. Therefore, in the future, understanding the versatility of prefrontal cortical influence over mesocorticolimbic functions requires a combination of molecular-, cellular-, laminar-, and region-specific approaches.
 
-## Anatomical considerations
+### Anatomical considerations
 
 It is generally accepted that the rodent mPFC is anatomically homologous to the primate anterior cingulate cortex (Russo and Nestler, 2013; Vogt and Paxinos, 2014). However, there are notable nomenclatural inconsistencies (Laubach et al., 2018; Le Merre et al., 2021) in the rodent mPFC literature (Lodge, 2011; Bossert et al., 2012; Adhikari et al., 2015; Shrestha et al., 2015; Warren et al., 2019; Lichtenberg et al., 2021). For example, the exact definition of the PrL subregions greatly varies between publications, just like the distinction between dorsal and ventral mPFC. Such inaccuracies can contribute to the still abundant contradictions in the literature and complicate the proper interpretation of the results.
 
@@ -134,43 +1160,43 @@ To overcome these setbacks, we combined multiple IHCFluo against different molec
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Adult (3–5 months old, male and female; ntotal = 38) wild-type (n = 21; nmale = 9; nfemale = 12), Rbp4-Cre (Tg(Rbp4-cre)KL100Gsat, RRID: MMRRC_037128-UCD, gift from L. Acsády; n = 4; nfemale = 4), Thy1-Cre (FVB/N-Tg(Thy1-cre)1Vln/J, RRID: IMSR_JAX:006143; gift from B. Rózsa; n = 3; nmale = 1; nfemale = 2), Calb1-Cre (B6;129S-Calb1tm2.1(cre)Hze/J, RRID: IMSR_JAX:028532; n = 3; nmale = 2; nfemale = 1), Ntsr1-Cre (Tg(Ntsr1-cre)GN220Gsat, RRID: MMRRC_017266-UCD a gift from P. Barthó; n = 3; nmale = 3), and FoxP2-Cre mice (B6.Cg-Foxp2tm1.1(cre)Rpa/J, RRID: IMSR_JAX:030541; n = 3; nmale = 2; nfemale = 1) were used for the experiments. Animals were group housed in a humidity- and temperature-controlled environment. Animals were entrained to a 12 hr light/dark cycle (light phase from 07:00 AM) with food and water available ad libitum. All procedures were approved by the Regional and Institutional Committee of the Research Centre for Natural Sciences and the Institute of Experimental Medicine. The experiments were approved by the National Animal Research Authorities of Hungary (PEI/001/2290-11/2015).
 
-## Stereotactic surgeries
+### Stereotactic surgeries
 
-## Classical retrograde tracing
+#### Classical retrograde tracing
 
 All animals were anesthetized under ketamine–xylazine (5:1, 3× dilution, ketamine: 100 mg/kg; xylazine: 4 mg/kg) during all anatomical surgeries. Single and double retrograde tracing surgeries were carried out with 0.5% CTB subunit (List Biological Laboratories: 104) and/or 2% FG (Fluorochrome LLC) to reveal the prefrontal cortical source of NAc (AP/L/DV: +1.4/±0.8/3.9–4.2) and VTA (AP/L/DV: −3.3/±0.3/4.0–4.2) innervation. Tracers were iontophoretically injected (7–7 s on/off duty cycle, 3–5 µA, for 5–10 min) with IonFlow Bipolar electrophoretic equipment (Supertech Instruments Hungary). After all surgeries, animals received Rimadyl (Carprofen, 1.4 mg/kg).
 
 For anatomical analysis, after 7 days of survival time, mice were perfused transcardially first with saline (~50 ml), then, with ~150 ml of fixative solution containing 4% paraformaldehyde (Sigma-Aldrich, CAS No. 30525-89-4) in 0.1 M phosphate buffer (PB).
 
-## Exclusion criteria
+#### Exclusion criteria
 
 Animals in which the injections sites or tracer tracks reached regions that could affect labeling (e.g., caudate putamen, substantia nigra, ventral pallidum) were excluded from further analysis. A total of n = 8 animals were excluded.
 
-## Identification of different brain regions and cortical layers
+#### Identification of different brain regions and cortical layers
 
 We used different neurochemical markers to identify brain regions of interest and to separate cortical layers in the tissue samples labeled with fluorescent immunohistochemistry (IHCFluo). Calbindin (Calb1) staining (see below) was used to delineate the core (strong Calb1 expression) and shell (weak Calb1 expression) region of the NAc (Jongen-Rêlo et al., 1994), and TH staining for the VTA (Oades and Halliday, 1987; Morales and Margolis, 2017). Layer 2/3 (L2/3) of the cerebral cortex was identified using Calb1 staining (van Brederode et al., 1991; Sun et al., 2002), while L6 with forkhead box protein P2 (FoxP2) staining (Ferland et al., 2003). COUP-TF-interacting protein 2 (Ctip2) staining was used to label L5b and L6 (DeNardo et al., 2015; Figure 1—figure supplement 1).
 
 We used the 2nd Edition of the Mouse Brain is Stereotaxic Coordinates by Paxinos and Franklin, 2001 as a reference, because the vast majority of mPFC literature uses this nomenclature. In comparison with the newest, 5th edition (Franklin and Paxinos, 2019), the mPFC region we defined as prelimbic cortex (PrL) is approximately equivalent to the A32 area, the IL to the A25, and the rostral aspects of the cingulate cortex, area 1 and 2 (Cg1–2) to the A24b and A24a, respectively. The secondary motor (M2), MO, DP, and DTT regions have not changed significantly between the two editions.
 
-## Anterograde viral tracing
+#### Anterograde viral tracing
 
 For cell type-specific anterograde viral tracing AAV5.EF1a.DIO.eYFP.WPRE.hGH (30–100 nl; Penn Vector Core; #27056-AAV5; titer: 5 × 1012 GC/ml) or AAV5-EF1a-DIO-mCherry viruses (30–100 nl; UNC Vector Core; #50462; titer: 7 × 1012 GC/ml) were injected at a rate of 0.5–1 nl/s into mPFC (AP/L/DV: +1.7–1.9/±0.3/2.1–1.6 mm) and M1 (AP/L/DV: +1.4/±1.6/1.3–1.0 mm) using a Nanoliter Injector (World Precision Instruments, FL, USA).
 
 Animals were perfused (see above) after 4–6 weeks of survival time. Viral expression was always analyzed after IHCFluo enhancement (Figure 3—figure supplement 1; Falcy et al., 2020), even for eYFP (see below).
 
-## Intersectional retro-anterograde viral tracing
+#### Intersectional retro-anterograde viral tracing
 
 In order to selectively label NAc- (mPFCNAc) and VTA-projecting mPFC cells (mPFCVTA), we injected Canine adenovirus type 2 carrying Cre-recombinase gene (CAV2-Cre, CMV promoter, titer: 2.5 × 1010 pp/ml, Plateforme de Vectorologie de Montpellier, France; a gift from D. Zelena) into the NAc (n = 3 animals) or VTA (n = 3 animals) (see coordinates above) of wild-type animals, mixed with 5% biotinylated dextrane amine (BDA, MW: 10.000, Molecular Probes: D1956, RRID: AB_2307337; 1:1; 80–120 nl/animal; 1 nl/s). Note that BDA was used to locate the tip of the injecting pipette (Figure 5B1, C1), not the whole extent of viral diffusion. At the same time, the mPFC (see coordinates above) of the same animals was injected with AAV5-EF1a-DIO-mCherry (see details above). After 6 weeks of survival, animals were perfused, and their brains were processed for further analysis (see above).
 
-## Tissue processing and immunohistochemistry
+### Tissue processing and immunohistochemistry
 
 Tissue blocks were cut on a VT1200S Vibratome (Leica) into 50 µm coronal sections. Free-floating sections were intensively washed with 0.1 M PB. All antibodies were diluted in 0.1 M PB. For fluorescent labeling, sections were first treated with a blocking solution containing 10% normal donkey serum (NDS, Sigma-Aldrich: S30-M) or 10% normal goat serum (NGS, Vector: S-1000, RRID: AB_2336615) and 0.5% Triton-X (Sigma-Aldrich, CAS Number: 9036-19-5) in 0.1 M PB for 30 min at room temperature (RT).
 
-## Fluorescent immunohistochemistry
+#### Fluorescent immunohistochemistry
 
 Sections were incubated in primary antibody solution overnight at RT or for 2–3 days at 4°C. The following primary antibodies were used: green fluorescent protein (GFP, chicken, Life Technology: A10262, RRID: AB_2534023; 1:2000), mCherry (mCherry; rabbit, BioVision: 5993-100, RRID: AB_1975001; 1:2000), red fluorescent protein (RFP; rat, Chromotek: 5F8, RRID: AB_2336064; 1:2000), FoxP2 (mouse, Merck Millipore: MABE415, RRID: AB_2721039; 1:2000; Invitrogen: MA5-31419, RRID: AB_2787055; 1:2000; rabbit, Abcam: ab16046, RRID: AB_2107107; 1:500), Calb1 (rabbit, SWANT: CB38, RRID: AB_10000340; 1:2000; mouse, SWANT: 300, RRID: AB_10000347; 1:2000; chicken, Synaptic Systems: 214 006, RRID: AB_2619903; 1:2000), TH (mouse, Immunostar: 22941, RRID: AB_572268; 1:8000), FG (rabbit, FluoroChrome, 1:50.000; guinea pig, Protos Biotech: NM-101, RRID: AB_2314409; 1:5000), CTB (goat, List Biological Laboratories: 703; 1:20.000), PV (mouse, SWANT: PV 235, RRID: AB_10000343; 1:2000), and Ctip2 (rat, Abcam: ab18465, RRID: AB_2064130; 1:500).
 
@@ -178,33 +1204,33 @@ For IHCFluo staining, after primary antibody incubation, sections were treated w
 
 When necessary, staining was enhanced after primary antibody incubation with biotinylated secondary antibodies (biotinylated horse anti-goat IgG, Vector Laboratories: BA-9500, RRID: AB_2336123; 1:300; biotinylated goat anti-rabbit – bGAR, Vector Laboratories: BA-1000, RRID: AB_2313606; 1:300; biotinylated goat anti-guinea pig, Vector Laboratories: BA-7000, RRID: AB_2336132; 1:300; 1.5 hr, RT), Elite Avidin-Biotin Complex (eABC, 1:300, Vector Laboratories: PK-6100, RRID: AB_2336819; 1.5 hr, RT), and streptavidin-conjugated fluorescent antibodies (SA-A488, Jackson: 016-540-084, RRID: AB_2337249; 1:2000; SA-Cy3, Jackson: 016-160-084, RRID: AB_2337244; 1:2000; SA-A647, Jackson: 016-600-084, RRID: AB_2341101; 1:2000; 2 hr, RT). All fluorescent slices were mounted in Vectashield (Vector Laboratories: H-1000, RRID: AB_2336789). To reveal the CAV2-Cre/BDA injection site we used eABC (see above) and SA-A488 or SA-A647 (see above).
 
-## Immunoperoxidase staining
+#### Immunoperoxidase staining
 
 For the whole-brain projection pattern analysis of the CAV2-Cre animals, we also performed immunoperoxidase staining and used nickel-amplified 3-3′-diaminobenzidine (DAB; Sigma-Aldrich; CAS Number: 91-95-2) technique (DAB-Ni; IHCDAB-Ni). Every sixth section (thus, at 300 µm resolution, from Br. + 3.10 to −8.00 mm) was treated first with 1% H2O2 solution for 10 min, then, after intensive washing, in 10% NDS and 0.2% Triton-X solution as a blocking serum (30 min, RT). After primary antibody incubation (mCherry, see above), slices were incubated in biotinylated secondary antibody (bGAR) and eABC (see above). Then we developed DAB-Ni for 5 min. Sections were then dehydrated in xylol (2 × 10 min) and mounted in DePex (Serva, Heidelberg, Germany; Cat. No. 18243).
 
-## Viral signal amplification
+#### Viral signal amplification
 
 To compare native mCherry expression to IHCFluo and IHCDAB-Ni enhancement, we stained slices from the CAV2-Cre experiments with primary antibody against mCherry and DAR-A488 (see above) (Figure 3—figure supplement 1A, B). Then we captured confocal images (see below) from the same brain regions in two channels (i.e., A488 and mCherry). For better visualization, we recolorized the A488 channel at Figure 3—figure supplement 1A2, B2. Next, we stained the neighboring slices (i.e., 50 µm apart) with IHCDAB-Ni against mCherry (see above) and captured them with brightfield microscopy (see below) (Figure 3—figure supplement 1C, D).
 
-## Microscopy
+### Microscopy
 
 Fluorescent sections were first analyzed with epifluorescent microscope (Leica DM 2500, Leica Microsystems GmbH; Camera: Olympus DP73, CellSens Entry 1.16, Olympus Corporation) with low magnification (2.5× N PLAN 2.5×/0.07 ∞/-/OFN25, 5× HCX FL PLAN 5×/0.12 ∞/-/B) to find injection sites and labeled cells. Higher magnification (10× Plan Apochromat 10×/0.45 M27; 20× Plan Apochromat 20×/0.8 M27; 63× Plan Apochromat 63×/1.4 Oil DIC M27) images were taken with confocal microscope (Zeiss LSM 710; Zeiss ZEN 2010B SP1 Release version 6.0; Carl Zeiss Microimaging GmbH). Brightfield imaging and whole-brain projection analysis, as well as distribution analysis for retrogradely labeled neurons were completed with a PANORAMIC MIDI II (20× [NA 0.8]; 3DHistech, Hungary) device and the manufacturer’s official software (CaseViewer 2.4) for every sixth slice (i.e., at 300 µm resolution).
 
-## Distribution analysis
+#### Distribution analysis
 
 We used IHCFluo-labeled slices (between Br. + 3.10 to +1.10 mm) to analyze anteroposterior, subregional and laminar distribution of retrogradely labeled mPFCNAc and mPFCVTA neurons (n = 3–3 animals, 5–7 slices/animal). We captured whole slice images at ×20 magnification and manually counted cells using ImageJ (NIH). Note that we simultaneously registered anteroposterior, subregional, and laminar localization of each cell (NmPFCNAc = 1042 neurons; NmPFCVTA = 1878 neurons).
 
-## Colocalization
+#### Colocalization
 
 In order to reveal the proportion of FoxP2-, Ctip2-, and Calb1-positive cells among retrogradely (FG/CTB) labeled mPFCNAc and mPFCVTA cells, we captured ×20 magnification confocal Z-stack (step size: 5 µm) imaging of double-labeled fluorescent sections (3–4 slices/animal, n = 3–3 animals). Labeled cells were then manually analyzed with ImageJ (NIH). Only cells visible in two separate sections with a visible nucleus were analyzed. The same protocol was used to identify double-labeled cells in the double retrograde tracing experiments (n = 3 animals).
 
-## Axon density analysis
+#### Axon density analysis
 
 We sought to compare mPFC axon densities in the NAc and VTA in the CAV2-Cre injected mPFCNAc, mPFCVTA, and AAV5-EF1a-DIO-mCherry injected Rbp4- (mPFCRbp4) and Thy1-Cre (mPFCThy1) samples using high-magnification (×63) confocal Z-stacks (step size: 0.27 µm). In the VTA, we captured three stacks in each animal (n = 3 in each strain) at three different AP levels between Bregma −3.10 and −3.80 mm. In the NAc, we captured five–five stacks in the same animals as for the VTA at three different AP levels between Bregma +1.00 and 1.80 mm. We aimed to capture stacks where axon density was visibly the highest at each AP level in each region.
 
 We analyzed the confocal stacks using a custom made automatic ImageJ macro (Mátyás et al., 2018) (available at https://github.com/baabek/Axon-density-analyzer-ImageJ-script.git). The macro calculated the axon length for each stack and the total axon length was summated for each brain region in each animal (also see Figure 5—source data 1). Then, the total axon length was compared to the summated stack volume (ROI area * number of slices * step size = total volume) for each brain region to calculate the relative axon density (RAD = total axon length/total volume). Then, the ratio of RADVTA/RADNAc (RAD(VTA/NAc)) was calculated for each animal, where RAD(VTA/NAc) = 1 means that the two areas are equally innervated.
 
-## Statistical analysis
+### Statistical analysis
 
 Values are given as mean ± SD. n represents number of animals; N represents cell counts in all figures/tables and their legends. We used SPSS Statistics (ver. 27.0.1.0., IBM) to analyze the axon density data. We used one-way analysis of variance method with least significant difference post hoc test to compare RAD values after testing for the homogeneity of variances. The exact p values are indicated in the figure legends.
 

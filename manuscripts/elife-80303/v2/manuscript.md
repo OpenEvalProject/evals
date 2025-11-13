@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/026vcq606 Department of Applied Physics of Science for Life Laboratory, KTH Royal Institute of Technology Stockholm Sweden
-2. https://ror.org/05dk0ce17 Center for Investigation of Membrane Excitability Diseases, Department of Anesthesiology, Washington University School of Medicine Saint Louis United States
+1. Department of Applied Physics of Science for Life Laboratory, KTH Royal Institute of Technology Stockholm Sweden ([ROR:026vcq606](https://ror.org/026vcq606))
+2. Center for Investigation of Membrane Excitability Diseases, Department of Anesthesiology, Washington University School of Medicine Saint Louis United States ([ROR:05dk0ce17](https://ror.org/05dk0ce17))
 
 † Corresponding author
 
@@ -39,9 +39,17 @@ In this work, we use a stepwise approach to build an understanding of the electr
 
 ## Results
 
-## State-dependent interactions between VSD and pore domain in HCN1 models
+### State-dependent interactions between VSD and pore domain in HCN1 models
 
 In the current model for VSD activation in HCN channels, hyperpolarization triggers a downward motion of S4 coupled to a kinking of the helix at S272. This breaks S4 into two sub-helices with the lower segment becoming almost parallel to the membrane (Figure 1A and C). This non-canonical voltage sensing mechanism is supported by both experimental and computational studies combined with the cryoEM structure of the activated state stabilized by cysteine cross-linking (Lee and MacKinnon, 2017; Lee and MacKinnon, 2019; Vemana et al., 2004; Bell et al., 2004; Dai et al., 2019; Kasimova et al., 2019). An additional structure was resolved for the functionally locked-open Y289D mutant, in which the gating charges are in a resting state and the pore is closed, but the lower S5 helix swivels away from S6 relative to the position in the wild-type channel in a manner similar to the activated state structure (Figure 1B; Lee and MacKinnon, 2019). While the mechanism of VSD activation is well established, the mechanism by which this voltage sensor movement triggers pore opening remains poorly understood as the activated-open state of HCN has not been determined.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/80303/elife-80303-fig1-v2.jpg)
+
+**Figure 1.:** The three cryoEM structures of the resting (A; PDB ID 5U6P), intermediate (B; PDB ID 6UQG), and activated (C; PDB ID 6UQF) states of hHCN1, shown in blue, yellow, and red, respectively, were investigated by equilibrium molecular dynamics (MD) simulations. The position of W281 is highlighted in ball/stick, and transparent surface and surrounding residues are shown in ball and stick in the resting (D), intermediate (E), and activated (F) conformations. (G) Contact occurrence between W281 and nearby residues and lipid molecules along 1-μs-long MD simulations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80303/elife-80303-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Probability distributions of (A) the hydrophobic contact areas at the S4-S5 (A, top panel – measured between the innermost parts of S4 [residues 277–289] and S5 [residues 290–305]) and S4-S1 (A, bottom panel – measured between the bottom parts of S4 [res 277–279] and S1 [res 139–150]) interfaces and (B) the W281-N300 distances along the equilibrium simulations of the resting (blue), intermediate (yellow), and activated (red) states.
 
 The movement of the lower half of the S4 helix upon activation drastically alters the interaction networks between the VSD, N-terminal HCN domain, and pore (Figure 1A–C). To help understand which state-dependent interactions stabilize each of the conformations observed in cryoEM, we carried out 1-µs-MD simulations of the resting, activated, and Y289D mutant conformations under equilibrium conditions (0 mV).
 
@@ -53,11 +61,27 @@ The side-chain orientation and contacts formed by W281 in the Y289D mutant retai
 
 As a result of the mixed set of W281 contacts shared with the resting and activated states, the structure of the Y289D mutant can be described as an ‘intermediate state’ conformation for VSD activation. The rotation of W281 resembles the activated state, but the interactions with S1 retain the compact nature of the S1-S4-S5 region similar to the resting state. This configuration is quite interesting as the Y289D mutant retains many characteristics of the VSD-pore interactions of the activated state despite the fact that the gating charges are in their resting position and S4 does not adopt the characteristic bend associated with voltage sensor activation.
 
-## Dynamics of VSD-pore interactions upon voltage sensor activation
+### Dynamics of VSD-pore interactions upon voltage sensor activation
 
 The state-dependent VSD-pore interactions correlated with rotation of the C-terminus of S4 at W281 outlined above hint at a possible functional role in electromechanical coupling. To gain insight into the evolution of these state-dependent interactions over the course of channel activation, we simulated the resting state under a hyperpolarizing transmembrane potential. We used three new strategies in an attempt to further accelerate VSD activation compared to our previous study in hopes of driving the channel to the activated-open state. First, we started from the cAMP-bound configuration of the CNBD, which has previously been shown to allosterically promote both pore opening and VSD activation (Wu et al., 2011; Kusch et al., 2010). Next, we increased the magnitude of the membrane potential to –1 V (compared to –550 mV previously used). This should reduce the time constant for activation from 23 µs to 3 µs based on our previous kinetic analysis (Kasimova et al., 2019). Finally, we simulated an additional system lacking the HCN-domain (called hereafter HCND-less system), which has previously been suggested to inhibit VSD activation (Saponaro et al., 2021). This is consistent with our results above where the HCN domain acts as a lid enclosing W281 in a hydrophobic cavity in the resting state.
 
 In the intact system, full activation occurs in only one VSD as marked by movement of R267 past the charge transfer center (Figure 2A and B and Figure 2—figure supplement 1A). Partial activation as seen by movement of R270 past the charge transfer center occurs in one subunit while the remaining two VSDs show little to no displacement. In the subunits showing full or partial activation, S4 adopts the characteristic bend associated with channel activation observed in our previous simulations and the cryoEM structure of the cadmium-crosslinked activated state (Figure 2—figure supplement 1A). This suggests that the activation mechanism is preserved despite the high magnitude of transmembrane potential used. The incomplete activation of the voltage sensors in this system is not surprising given the length of the simulation (1 µs) compared to the predicted time constant for activation (3 µs).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/80303/elife-80303-fig2-v2.jpg)
+
+**Figure 2.:** (A, D) First and last snapshots of voltage-sensor domains (VSDs) extracted from activating simulations of intact (panel A, subunit D) or HCND-less system (panel D, subunit A). The gating charges and residues W281, Y277 (S4), N300 (S5), and F143 (S1) are highlighted using ball and stick representation. (B, E) Downward displacement of the gating charges with respect to the charge transfer center F186 during the activation of S4 in subunit D (panel B, intact HCN1 model) and subunit A (panel E, HCND-less HCN1 model) during activating simulations. (C, F) Correlation between the S4 bending angle and the rotation of W281 in subunit D (panel C, intact HCN1 model) and subunit A (panel F, HCND-less HCN1 model) during activating simulations. The time evolution is represented by a color gradient, from white/light pink to dark pink. (G) Evolution of the S4/S5 (brown) and S4/S1 (gray) hydrophobic interfaces (contact areas) along activating simulations of HCN1 in the presence (subunit D, top box) or absence (subunit A, bottom box) of the HCN domain. (H) Evolution of the number of lipid carbon atoms, N, in contact with hydrophobic residues from the lower S4/S5 interface along activating simulations of HCN1 in the presence and absence of HCN domain are shown for subunit D in light pink (top box) and for subunit A in dark pink (bottom box), respectively. N count values for the resting and activated states were averaged for the four subunits from the equilibrium simulations and are displayed as blue and red horizontal lines, respectively. (I) Contact area between lipid tails and residues on the lower S4/S5 interface, averaged over the four subunits and over the simulation time, in the resting (blue) and activated (red) states. Error bars are given as standard deviation calculated over the four subunits and over the simulation time.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80303/elife-80303-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** In both panels, the first two rows represent the gating charges (R267, R270, R273, and R276 colored from light gray to black) movement with respect to the charge transfer center (F186, z = 0) for the four protein chains (chains A, B, C, and D). The last rows show the evolution of the bending angle of S4 (defined as the angle between segments encompassing residues 252–272 and 272–289) and the rotation angle of W281 (right panel, defined as the angle between atoms Cɑ-V296 [on S5], Cɑ-W281 and CE2-W281 [on S4]). The four monomers, chains A, B, C, and D, are colored from light gray to black.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/80303/elife-80303-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Each column represents a different subunit. First row: last snapshot from Hyperpolarizing EF-simulation showing the position of W281 and Y277 with respect to F143 and N300. Second row: hydrophobic (gray) and electrostatic (green) contact areas measured between the innermost parts of S4 (residues 277–289) and S5 (residues 290–305) as a function of simulation time. Third row: hydrophobic (gray) and electrostatic (green) contact areas measured between the bottom parts of S4 (res 277–279) and S1 (res 139–150) as a function of simulation time.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/80303/elife-80303-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Average contact areas between each residue/subunit from the lower S4 (left) and S5 (right) and surrounding hydrophobic (light gray) and hydrophilic (spring green) protein residues, lipid tails (dark gray) and headgroups (light green), and water molecules (turquoise) in the resting (panel A) and activated (panel B) states equilibrium molecular dynamics (MD) simulations (1 µs). (C) Contact area between lower S4/S5 protein residues and lipid tails averaged over the four subunits and over the simulation time, in the resting (blue) and activated (red) states. Error bars are given as standard deviation calculated over the four subunits and over the simulation time.
 
 For the HCND-less system, one VSD undergoes full activation while the remaining three undergo partial activation over the course of a 750 ns simulation (Figure 2D and E and Figure 2—figure supplement 1B). This is consistent with an accelerated voltage sensor activation compared to the intact system expected by relieving inhibition of activation provided by the HCN domain. However, the wider distribution of bending angles in S4 for the system lacking the HCN domain indicates that the HCN domain may also contribute to stabilizing the activated state of S4 (Figure 2C and F).
 
@@ -69,9 +93,17 @@ The combined bending and rotation of the lower S4 accompanies the displacement o
 
 Despite the combination of three strategies to accelerate activation, the pore gate remained shut throughout these simulations. This is unsurprising given the slow intrinsic gating of the pore and the weak electromechanical coupling in the HCN family. Even in the presence of four activated voltage sensors, the closed to open pore transition for HCN1 has a time constant of ~100 ms based on allosteric models of channel gating (Altomare et al., 2001). Consequently, the pore opening process is far outside the current range of unbiased MD simulations for HCN1. We thus set out to further analyze state-dependent interactions in an attempt to pinpoint those that may help favor pore opening, to then be able to use them in enhanced sampling simulations.
 
-## Displacement of S5 during VSD activation alters interaction between S4-S5 linker and C-linker
+### Displacement of S5 during VSD activation alters interaction between S4-S5 linker and C-linker
 
 As a result of the bending and rotation of S4 during VSD activation, the N-terminal end of S5 is displaced relative to the resting state conformation in a movement that was previously observed in MD simulations and cryoEM structures. Interestingly, the N-terminus of S5 is similarly displaced in the Y289D mutant cryoEM structure despite lack of VSD activation in this channel (Figure 3A). These tilted conformations of the S5 helix are also observed in open-channel structures of related CNBD family channels like hERG and TAX-4 (Wang and MacKinnon, 2017; Zheng et al., 2020). Furthermore, this region of S5 directly contacts the S6 helix near the activation gate, thus the tilting movement of S5 following VSD activation was proposed as a critical step in the electromechanical coupling of HCN1 (Lee and MacKinnon, 2019; Kasimova et al., 2019) and experimentally shown in HCN4 (Saponaro et al., 2021).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/80303/elife-80303-fig3-v2.jpg)
+
+**Figure 3.:** (A) Structural comparison of the S4-S6 region of the resting (5U6P; blue), intermediate (6UQG; yellow), and activated (6UQF; red) states of hHCN1. Alignment was performed on the entire structure. (B) Structural comparison of the S4/S5 linker and C-linker regions of the resting, intermediate, and activated states of hHCN1. Residue K412 of the C-linker is shown as grey spheres. (C) D290-K412 distance distribution in simulations of the resting, intermediate, and activated states. Dashed lines represent distances in the starting cryoEM structures of the same color. (D) Peak tail current versus voltage plot for whole-cell recordings from HEK cells expressing HCN1 D290C/K412C with (red) or without (black) 100 uM CdCl2 in the patch pipette. Error bars represent SEM for n = 5 independent cells for each condition.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80303/elife-80303-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Comparison of the relative peak tail current versus voltage relationships for HCN1-EM with (pink) and without (gray) cadmium chloride and the D290C-K412C double mutant with (red) and without (black) cadmium chloride in the patch pipette. Error bars represent SEM for n = 5 independent cells for each condition. (B) Example of cesium blockage and residual leak current from cells expressing the D290C-K412C mutant. Currents are elicited from the same cell from test pulses to –140 mV with (red) and without (black) 1 mM CsCl present in the bath solution. (C) Same as (B) showing just the test pulse to highlight the lack of time-dependence to the ‘instantaneous’ current component (Iinstant).
 
 In our simulations of the resting, activated, and intermediate (Y289D) structures above, we noted that tilting of S5 also alters the interaction network between the S4-S5 linker and the C-linker of the channel (Figure 3B). The C-linker directly connects the CNBD to the S6 activation gate and has previously been identified to play a role in electromechanical coupling based on functional studies (Dai et al., 2021); therefore, we suspected these activation-induced interactions may help drive channel opening.
 
@@ -85,15 +117,35 @@ The HEK cells expressing D290C-K412C double mutant in the absence of cadmium con
 
 In HEK cells patched with 100 uM cadmium chloride in the pipette, the basal conductance increases substantially to 0.77 ± 0.7 compared to 0.44 ± 0.4 in the absence of cadmium (Figure 3D). Furthermore, the voltage dependence of activation shifts by 60 mV to more positive potentials (Figure 3D). This is not observed in the wild-type channel in the presence of cadmium, which only displays a minor rightward shift in the activation curve (Figure 3—figure supplement 1A). The combined increase in the basal current amplitude and rightward shift in the voltage-dependence of activation in the double cysteine mutant in the presence of cadmium strongly indicates that crossbridging these positions preferentially stabilizes the open state, in agreement with our hypothesis that the D290-K412 interaction promotes channel opening.
 
-## Driving electromechanical coupling in enhanced sampling simulations
+### Driving electromechanical coupling in enhanced sampling simulations
 
 In all of our simulations described above, the S6 activation gate remained tightly closed and dehydrated for the entirety of the simulation. To gain insights into gating transitions of the HCN1 pore, we turned to enhanced sampling simulations in which pore opening was encouraged by the application of biasing forces. In previous sections, we had identified several interactions that are likely involved in stabilizing the activated voltage sensor and/or open pore. The W281-N300 pair at the S4/S5 interface stabilizes the rotation of the C-terminus of S4 on activation. Interaction between D290-K412 on the S4-S5 linker and C-linker promotes the bending of S5 away from the resting conformation, loosening the packing against the closed state of S6. In addition, a structural comparison of pairs of closed and open structures of CNBD channels revealed that distances between V390 consistently increased upon pore opening in TAX-4; this distance increases from 10.6 to 17.2 Å (PDB IDs 6WEJ-6WEK), in CNGA1 from 9.6 to 16.4 Å (PDB IDs 7LFT-7LFW), in CNGA1/B1 from 9.8 to 15.1 Å (PDB IDs 7RH9-7RHH), in EAG/hERG from 10.7 to 17.3 Å (PDB IDs 5KL7L-5VA1), and in HCN4 from 10.5 to 15.0 Å (PDB IDs 7NP4-7NP3). Using these state-specific distances as collective variables (CVs) in enhanced sampling MD simulations (Figure 4A), we hypothesized that we could drive the electromechanical coupling process in a computationally accessible timescale.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/80303/elife-80303-fig4-v2.jpg)
+
+**Figure 4.:** (A) Residues and distances used as collective variables in adiabatic bias molecular dynamics (ABMD) simulations are highlighted by ball and stick and black double arrows, respectively. (B) Inter-subunit distances between opposite V390 residues are represented as a function of time in the resting (blue), activated (red), and ABMD (crimson) simulations starting from the closed activated (A1/A2 in light purple and light orchid) and resting (R1/R2 in dark purple and dark orchid) states. (C) Contact occurrences of R297, D401, and H392 in HCN1 are shown for the resting (blue), activated (red), and ABMD (crimson) simulations starting from the closed activated (A1/A2 in light purple and light orchid). (D) Lower S4/S5, S5/S6, S6/S6(bis) S4/CL(bis) interfaces/interactions. Important/interesting residues from these interfaces are highlighted in ball and stick.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80303/elife-80303-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Left and middle: Overlay of pore domains from the start (blue) and end (purple) for two ABMD replicates starting from the activated-closed state. Right: overlay of the closed (white) and open (gray) pores from HCN4. Spheres highlight the alpha carbon of G382 for HCN1 or G503 for HCN4. Sticks highlight V390 in HCN1 and the corresponding position I511 in HCN4. Only two opposing subunits are shown for clarity.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/80303/elife-80303-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Positions of potassium ions along the Z-axis of the simulation box, each shown in a different symbol and color, as a function of the simulation time. The membrane is located between Z = ~90 Å and Z = ~120 Å. Data from six simulations are shown: resting and activated/closed HCN1 structures equilibrium molecular dynamics (MD) simulations, and adiabatic bias molecular dynamics (ABMD) simulation of the transition toward open channel starting from resting/closed (R1 and R2) and activated/closed (A1 and A2) HCN1 structures.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/80303/elife-80303-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Contact occurrences of H279 and E282 from S4 and R404 and R405 from the C-linker in HCN1 are shown for the resting (blue), activated (red), and adiabatic bias molecular dynamics (ABMD) simulations starting from the closed activated (A1/A2 in light purple and light orchid). (B, C) Probability distributions of H392-Q398 (B) and R404-E282 distances (C) along the equilibrium simulations of the resting (blue), activated (red), and the ABMD simulations (A1 in purple and A2 in orchid).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/80303/elife-80303-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Time-averaged contact areas between intra-subunit lower S5 and S6 in each subunit in the resting (blue) and activated (red) equilibrium simulations and in the adiabatic bias molecular dynamics (ABMD) simulation (A1/A2 in purple and orchid) starting from the activated state. (B) Time-averaged contact areas between adjacent (inter-subunit) lower S6 helices in each subunit in the resting (blue) and activated (red) and in the ABMD simulation (A1/A2 in purple and orchid) starting from the activated state.
 
 Of the numerous available enhanced sampling techniques, we opted for adiabatic bias MD (ABMD) simulations given the gentle nature of the biasing potential applied (Hénin et al., 2022). ABMD simulations allow thermal fluctuations to carry the system forward over energy barriers while only applying biasing potentials dampening movement in the backward direction. We introduced these ratchet-like biases to encourage the formation of interactions between N300-W281 and D290-K412 and discourage interactions between V390-V390 cross- and neighboring pairs, in 1 µs ABMD simulations starting from the HCN1 resting/closed state (two replicates) and from the HCN1 activated/closed state (two replicates).
 
 During these simulations, we observed a splaying apart of the S6 helices, with a hinge forming around G382, and a rotation and slight deformation of the helix bringing V390 from a position facing the pore lumen to a position still lining the inner vestibule in the open state (Figure 4—figure supplement 1). This event is coupled to an increase in the pore radius at the V390 position (Figure 4B) and an increased hydration of the pore intracellular gate, enabling the conduction of several K+ ions (1–3 ion permeation events in each simulation, Figure 4—figure supplement 2). The rearrangement of S6 also induced the formation of other interactions between adjacent S6 helices: in particular, a contact between H392 and adjacent Q398 formed during the ABMD simulation initiated in the activated/closed state, even though the formation of these contacts was not explicitly encouraged in the biasing simulations (Figure 4C and D and Figure 4—figure supplement 3). The contact between positions N658-Q664 (equivalent to H392-Q398) is also present in the open state structure of hERG (Wang and MacKinnon, 2017). Our data also suggest that other contacts could be specifically formed in the open channel, like between E282 from S4 and R404 from the adjacent C-linker. Thus, we suggest that the H392-Q398 contact (and possibly of the other aforementioned contacts with E282 and R404) should be formed to induce pore widening and stabilize the open conformation in HCN1.
 
-## Energetic basis for electromechanical coupling
+### Energetic basis for electromechanical coupling
 
 Calculations of the intra-subunit contact areas between S6 (from residue 386–401) and S5 (lower segment) showed a slight reinforcement of the hydrophobic contact area in the open model and ABMD simulations of HCN1, indicating that closure/opening may be related to changes of interfaces between pore-forming helices (Figure 4—figure supplement 4A). By contrast, the adjacent S6-S6 hydrophobic interfaces are substantially weakened, suggesting that the enlargement of the pore radius requires an increased distance between S6 helices (Figure 4—figure supplement 4B). In addition, the formation of specific interactions between polar/charged residues at the S4/S5/S6 interface accompany pore opening, most notably between R297 (S5) and E282 (S4) and between R297 (S5) and H392 (S6), which is coupled to a loss of contact of interactions between R297 and lipid headgroups (Figure 4C and D). On top of this, a specific interaction between E282 (S4) and R404 (C-linker) appears important to stabilize the open state (Figure 4—figure supplement 3).
 
@@ -121,43 +173,125 @@ Based on their work with such split channels and extensive mutagenesis, Flynn an
 
 Past studies on the role of the C-terminus in voltage gating of the channel have yielded mixed results. Truncation studies show the C-linker and CNBD are not necessary for channel activation, but mutagenesis studies have highlighted numerous interactions between the S4-S5 linker and C-terminus critical for electromechanical coupling (Wainger et al., 2001; Decher et al., 2004; Kwan et al., 2012). While our model for electromechanical coupling is primarily driven by interactions in the TMD, this model also involves coupling interactions between the S4-S5 linker and C-linker. The Yellen group has used cysteine crosslinking to extensively probe state-dependent interactions between the S4-S5 and C-linkers (Kwan et al., 2012). Out of the 23 pairs of residues probed in this study, 8 pairs favor the open state, 9 pairs favor the closed state, and the remaining were unresponsive to cadmium. Highlighting these interaction pairs by their functional effect on channel gating in our ABMD open state models shows excellent overall agreement. The closest pairs of residues in our model correspond to the pairs identified to favor the open state while the more distant pairs favor the closed state or are not responsive to cadmium (Videos 1–6).
 
+![Video 1.](https://cdn.elifesciences.org/articles/80303/elife-80303-video1.mp4.jpg)
+
+**Video 1.:** ABMD1 open state model highlighting positions of cysteine mutations from Kwan et al., 2012 highlighted with their beta carbon as spheres. Y289 is colored in the same color as the model while the positions on the C-linker are colored according to their functional effect with applied cadmium. Green indicates lock-open effect, red indicates lock-closed effect, and gray indicates no effect. Only the pore domain and A′ helix of the C-linker are shown for clarity.
+
+![Video 2.](https://cdn.elifesciences.org/articles/80303/elife-80303-video2.mp4.jpg)
+
+**Video 2.:** ABMD2 open state model highlighting positions of cysteine mutations from Kwan et al., 2012 highlighted with their beta carbon as spheres. Y289 is colored in the same color as the model while the positions on the C-linker are colored according to their functional effect with applied cadmium. Green indicates lock-open effect, red indicates lock-closed effect, and gray indicates no effect. Only the pore domain and A′ helix of the C-linker are shown for clarity.
+
+![Video 3.](https://cdn.elifesciences.org/articles/80303/elife-80303-video3.mp4.jpg)
+
+**Video 3.:** ABMD1 open state model highlighting positions of cysteine mutations from Kwan et al., 2012 highlighted with their beta carbon as spheres. L291 is colored in the same color as the model while the positions on the C-linker are colored according to their functional effect with applied cadmium. Green indicates lock-open effect, red indicates lock-closed effect, and gray indicates no effect. Only the pore domain and A′ helix of the C-linker are shown for clarity.
+
+![Video 4.](https://cdn.elifesciences.org/articles/80303/elife-80303-video4.mp4.jpg)
+
+**Video 4.:** ABMD2 open state model highlighting positions of cysteine mutations from Kwan et al., 2012 highlighted with their beta carbon as spheres. L291 is colored in the same color as the model while the positions on the C-linker are colored according to their functional effect with applied cadmium. Green indicates lock-open effect, red indicates lock-closed effect, and gray indicates no effect. Only the pore domain and A′ helix of the C-linker are shown for clarity.
+
+![Video 5.](https://cdn.elifesciences.org/articles/80303/elife-80303-video5.mp4.jpg)
+
+**Video 5.:** ABMD1 open state model highlighting positions of cysteine mutations from Kwan et al., 2012 highlighted with their beta carbon as spheres. A294 is colored in the same color as the model while the positions on the C-linker are colored according to their functional effect with applied cadmium. Green indicates lock-open effect, red indicates lock-closed effect, and gray indicates no effect. Only the pore domain and A′ helix of the C-linker are shown for clarity.
+
+![Video 6.](https://cdn.elifesciences.org/articles/80303/elife-80303-video6.mp4.jpg)
+
+**Video 6.:** ABMD2 open state model highlighting positions of cysteine mutations from Kwan et al., 2012 highlighted with their beta carbon as spheres. A294 is colored in the same color as the model while the positions on the C-linker are colored according to their functional effect with applied cadmium. Green indicates lock-open effect, red indicates lock-closed effect, and gray indicates no effect. Only the pore domain and A′ helix of the C-linker are shown for clarity.
+
 The open state model resulting from our ABMD simulation protocol involves a dilation at position 390 coupled to a rotation of V390 away from the central pore axis, resulting from bending of S6 at the upper glycine G382. The degree of rotation is low enough that V390 still lines the inner vestibule in the open state, consistent with the observation that this position influences the apparent affinity of open pore blockers (Cheng et al., 2007). Pore opening is coupled to deformation of the S6 helix and the formation of a π helix in several subunits. Interestingly, hERG is the only channel of the CNBD family for which the transition to π helix occurs in S6. Other CNBD family members, such as CNG channels, TAX-4, and HCN4, open via a more canonical right-handed twist of S6 at glycine 399 (Zheng et al., 2020; Xue et al., 2021; Xue et al., 2022). HCN1 may thus feature an opening mechanism that combines features of the CNBD family and those specific to hERG opening. Notably, in the closest homolog of resolved open structure, HCN4, the equivalent of V390 (I511), is rotated slightly but does not induce formation of a π-helix (Figure 4—figure supplement 1). Although it is possible that the difference observed between the HCN4 cryoEM structure and our simulations of HCN1 represents differences between isoforms, we suggest that this difference may also stem from the different functional states these models represent. The HCN4 structure was solved in the resting VSD conformation, thus corresponding to the resting-open state or the ‘instantaneous’ open state of HCN channels. The instantaneous open state is pharmacologically distinguishable from the activated-open state suggesting structural differences in the pore (Proenza et al., 2002).
 
 The prevalence of state-dependent lipid interactions favoring the activated VSD and open pore highlights a potential role in electromechanical coupling. Saponaro et al. also report state-dependent lipid binding at the S4/S5/S6 interface in their closed and open structures of HCN4, though they observe lipid density only in the resting-closed state and not in the resting-open state (Saponaro et al., 2021). A similar lipid density was observed in the resting-closed structure of the hyperpolarization-activated plant channel KAT1 (Clark et al., 2020). Strikingly, a recent study reported recording from the related bacterial channel SthK in bilayers of controlled lipid composition and proposed a mechanism for the regulation of this channel by PA lipids (Schmidpeter et al., 2022). Indeed, cryoEM structures of this channel in different states where individual lipid molecules were resolved and showed lipid binding to a site containing residues corresponding to R297 and D401 engaged in a salt bridge interaction in the closed state of SthK (HCN1 numbering). This lipid is absent in the open state, and the aforementioned salt bridge is also broken, leading the authors to propose that PA acts in an activatory manner via an unlocking mechanism by binding in the closed state. Mutagenesis of the equivalent positions in HCN2 confirmed that this mechanism is likely conserved in HCN. Consistent with this model, our HCN1 opening simulations reveal reduced contacts between R297 and D401 and lipid headgroups in the activated/closed and in the activated/open state compared to the resting/closed state (Figure 5). Note, however, that our simulations, conducted in a simple model bilayer of POPC, do not permit to infer the role anionic lipids may play in regulating ion channel gating. Examining the state-dependence of lipid binding at the VSD-pore interface in more complex environments will be crucial for improving our understanding of lipid regulation of HCN channel function.
 
 ## Materials and methods
 
-## Protein models
+### Protein models
 
 CryoEM structures of the resting (5U6P), intermediate (mutant Y289D, 6UQG), and the activated (6UQF) states of HCN1 were used as initial snapshots for MD simulations (Lee and MacKinnon, 2019; Lee and MacKinnon, 2017). Cyclic nucleotides solved in these structures were kept within each CNBD. A WT-model without the HCN domain (without residues 94–139) was also built using the HCN1 resting state (5U6P) as a starting model.
 
-## System building
+### System building
 
 The different channel models were prepared using the CHARMM-GUI server (Jo et al., 2008; Lee et al., 2016). Each channel was embedded in a 1-palmytoyl-2-oleoyl-phosphatidyl- choline (POPC) bilayer (150 × 150 Å) and solvated in a 150 mM KCl solution. The CHARMM36 force field was used for the protein, lipids, and ions, and the TIP3P model for water (Klauda et al., 2010; Huang and MacKerell, 2013). The CgenFF module was used to parameterize cAMP molecules solved in HCN1 structures (Vanommeslaeghe et al., 2010).
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 Minimization, equilibration, and production steps were performed on the Beskow-SNIC/Piz-daint supercomputers using, respectively, Gromacs 2019.3 and 2020.3 (Abraham et al., 2015; Lindahl and Hess, 2021). The standard CHARMM-GUI inputs were used for the minimization and equilibration of the systems. During these steps, harmonic restraints were applied to the protein-heavy atoms and the lipid heads and were gradually released during 1.2 ns. The production dynamics was then performed in the NPT ensemble without any restraints. Hyperpolarized or depolarized conditions were applied by imposing, respectively, a positive or negative electric field in the form of an external force acting on all charged particles of the system. Nose–Hoover thermostat (Nosé, 1984) and Parrinello–Rahman barostat (Parrinello and Rahman, 1981) were used to keep the temperature and the pressure constant at 310 K and 1 bar. Periodic boundary conditions were used and the particle mesh Ewald algorithm (Darden et al., 1993) was applied to treat long-range electrostatic interactions. A switching function was applied between 10 and 12 Å for the non-bonded interactions. LINCS (Hess et al., 1997) was applied to constrain the bond lengths involving hydrogen atoms. The integration timestep was set to 2 fs, and the overall lengths of the trajectories was 1 μs.
 
 Longer simulations of equilibrium resting/closed HCN1 were performed using the Anton2 supercomputer Shaw et al., 2014. These simulations were performed using standard CHARMM36 parameters in the NVT ensemble to avoid altering the applied electric field. The temperature was kept at 310 K using the Nose–Hoover thermostat. The multigrator approach was used for temperature and semi-isotropic pressure coupling. Long-range electrostatic interactions were handled using the u-series algorithm implemented in Anton2 (Lippert et al., 2013). The timestep was kept to 2 fs. All simulated structures and simulation details are listed in Table 1.
 
-## Enhanced sampling MD simulations with ABMD
+**Table 1.**
+ Table summary of the molecular dynamics (MD) simulations carried out in this work.CryoEM structures (first column, PDB code in brackets) were simulated under different conditions (second column, including the presence/absence of specific domains/binding partners, under external electric field [EF] or not). The total simulation time is provided in the third column.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Structure</th>
+      <th>Conditions</th>
+      <th>Time (ns)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HCN1 resting with cAMP (5U6P)</td>
+      <td>No EF</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>HCN1 intermediate with cAMP (6UQG)</td>
+      <td>No EF</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>HCN1 activated closed with cAMP (6UQF)</td>
+      <td>No EF</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>HCN1 resting with cAMP (5U6P)</td>
+      <td>Without HCN domain + EF (–1 V)</td>
+      <td>750</td>
+    </tr>
+    <tr>
+      <td>HCN1 resting with cAMP (5U6P)</td>
+      <td>EF (–1 V)</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>HCN1 resting with cAMP (5U6P)</td>
+      <td>EF (–550 mV)</td>
+      <td>12,000</td>
+    </tr>
+    <tr>
+      <td>HCN1 resting with cAMP (5U6P)</td>
+      <td>ABMD + EF (-)</td>
+      <td>2 × 1000</td>
+    </tr>
+    <tr>
+      <td>HCN1 activated with cAMP (6UQF)</td>
+      <td>ABMD + EF (-)</td>
+      <td>2 × 1000</td>
+    </tr>
+  </tbody>
+</table>
+
+_ABMD, adiabatic bias molecular dynamics._
+
+### Enhanced sampling MD simulations with ABMD
 
 ABMD simulations were carried out using gromacs and the same simulation conditions described above (Marchi and Ballone, 1999). In this method, a ratchet-like biasing harmonic potential is added, encouraging further exploration of the CV space. In these simulations, Plumed2.5 (Tribello et al., 2014) was called along the MD production to apply a bias on three CVs, namely the distance between the center of mass of W281-N300, D290-K412, and pairs of opposite and adjacent V390. The bias was applied based on target distances that served as a threshold, where the bias between pairs was turned off if the distance evolved below (for W281-N300 and D290-K412) or above (V390) the target values. The distance target T0 was set to 6.0 Å for the W281-N300 and D290-K412 pairs and 11 Å and 16 Å for adjacent and opposite V390 pairs, respectively; and the bias force constant KAPPA equal to 4000.0 kJ/mol for each CV.
 
-## MD simulations analysis
+### MD simulations analysis
 
 The contacts between helices were analyzed by Voronoi Laguerre Delaunay for Macromolecules (VLDM) (Esque et al., 2010). VLDM relies on a tessellation method, that is, a partition of space into a collection of polyhedra filling space without overlaps or gaps. Delaunay tessellation and its Laguerre dual were performed using a set of heavy-atom Cartesian coordinates and a weight that depends on the van der Waals radius of the atom, determined using the CHARMM36 force field. A contact occurs whenever two atoms share a common face in the tessellation. The interface between molecular groups is quantified by their polygonal surface area. The type of contacts in the interface determines the nature of the interface: hydrophobic contacts correspond to contacts between carbon atoms exclusively while electrostatic contacts involve N, O, S, and P atoms; hydrogen bonds and salt bridges both belong to this category.
 
-## Visualization and analysis
+### Visualization and analysis
 
 Positions and distances were calculated using in-house tcl scripts for VMD. The S4 bending angle, which corresponds to the angle formed between the axis of upper S4 (254-272) and that of lower S4 (272-289), was calculated along MD trajectories using PLUMED v2.5. MD simulation trajectories were visualized using VMD (Humphrey et al., 1996) and PyMOL. Positions, distances, probability densities, angles, and contacts graphs were all generated using R v3.6.1 or gnuplot v5.0.
 
-## Cell culture and transient expression
+### Cell culture and transient expression
 
 293T (ATCC, CRL-3216) were cultured in DMEM (Gibco, 11965-084) supplemented with 10% FBS (Gibco, 26140-079) and 2 mM L-glutamine (Corning, 25005CI). The cells were kept at 37°C and 8% CO2 in a humidified incubator and were split every 3 d. For transfections, the cells were plated in a 12.5 cm2 dish and were transfected at 60% confluency with 0.8 µg DNA using TransIT-293 (Mirus, MIR2700). We used a GFP-tagged and C-terminally truncated human HCN1 construct which was cloned into a pEG plasmid as previously reported by Lee and MacKinnon, 2017. Herein, we refer to this construct as HCN1-EM. For the double cysteine mutant, residues D290 and K412 were substituted with a cysteine each. The sequence of the construct was confirmed by DNA-sequencing. HCN1-EM or D290C-K412C channels were expressed in 293T cells for 24 hr and were plated at low density onto poly-L-lysine-coated 35 mm dishes before electrophysiological evaluation.
 
-## Electrophysiology and data analysis
+### Electrophysiology and data analysis
 
 Macroscopic currents were recorded in whole-cell voltage-clamp configuration using an Axopatch 200b amplifier (Molecular Devices, USA). Signals were lowpass filtered at 2 kHz by a 4-pole Bessel filter and acquired at a sampling rate of 10 kHz using a Digidata 1440A (Molecular Devices). Data analysis was carried out in Clampfit 10 (Molecular Devices) and Origin (Origin Lab Corporation, USA). The bath solution contained 130 mM NaCl, 10 mM KCl, 1.8 mM CaCl2, 0.5 mM MgCl2, 5 mM HEPES, pH 7.4 NaOH. The pipette resistance was in the range of 1–2 MΩ, using a pipette solution consisting of 130 mM KCl, 10 mM NaCl, 0.5 mM MgCl2, 2 mM Mg-ATP, and 5 mM HEPES, pH 7.2 KOH. For the cysteine-crosslinking experiment, we added 100 µM cadmium to the pipette solution. To allow for equilibration of the cytosol with the pipette solution, we waited at least 2 min after breaking into the cells.
 

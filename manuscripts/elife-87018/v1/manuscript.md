@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05krs5044 Ecology & Evolutionary Biology, School of Biosciences, The University of Sheffield Sheffield United Kingdom
+1. Ecology & Evolutionary Biology, School of Biosciences, The University of Sheffield Sheffield United Kingdom ([ROR:05krs5044](https://ror.org/05krs5044))
 
 † Corresponding author
 
@@ -30,13 +30,110 @@ To predict the evolutionary consequences of the effect sizes that we estimated u
 
 The relationship between clutch size and survival was significantly different and opposite between observational and brood manipulation studies, irrespective of how clutch size was scaled (p<0.01, Figure 1, Table 1). Within natural variation (observational studies), parents with larger clutches showed increased survival (or parents with smaller clutches showed reduced survival). In contrast, when broods were experimentally manipulated, the opposite relationship was found; increasing brood sizes decreased survival. Although the difference in overall effect size between experimental and natural variation in clutch size was strongly significant in each comparison made, the individual overall effect sizes only became significantly different from zero when clutch size was expressed as a proportional increase. Expressing clutch size as a proportional increase corrects for the variation in average clutch size observed across the species included in this analysis, which ranged from 2 to 11. The parental effort required to raise two instead of one chick is potentially doubled, whereas one additional chick in a brood of 11 is likely to require only a marginal increase in effort. Indeed, also when using a between-species comparison, the effects of clutch size manipulation and quality were strongest in the species that laid the smallest clutches, suggesting that costs to survival were only observed when a species was pushed beyond its natural limits (Figure 2, Figure 2—figure supplement 1, Appendix 1—table 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87018/elife-87018-fig1-v1.jpg)
+
+**Figure 1.:** (A) Raw, (B) standardised, and (C) proportional clutch size. Coloured points are the combined effect sizes of the odds ratios with their 95% confidence intervals (n = 58 experimental and 20 observational). Points are coloured by whether they represent brood manipulation experiments (costs of reproduction) or they are observational (quality). Grey points are the odds ratios of each study, with their sizes weighted by the sampling variance.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87018/elife-87018-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The clutch size was measured in three ways; (A) raw clutch size, (B) standardised, and (C) proportional. Separate meta-analyses were run for observational (n = 11 [female], 7 [male], and 2 [mixed sex]) and brood manipulation (n = 30 [female], 20 [male], and 8 [mixed sex]) studies. Points are the combined effect size and whiskers are the 95% confidence intervals.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87018/elife-87018-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Brood manipulation and observational data are combined. Red points are for experimental studies and blue points are observational studies.
+
+**Table 1.**
+ Effect size estimates for the odds of survival with increasing clutch size (raw, standardised, and proportional clutch size).The p-values indicate the difference between brood manipulations and observational data, with the individual effect p-values (from zero) in parentheses. Values in bold show statistical significance of p < 0.05.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Parameter</th>
+      <th></th>
+      <th>Effect size</th>
+      <th>95% CI lower bounds</th>
+      <th>95% CI upper bounds</th>
+      <th>p Value</th>
+      <th>p Value (Individual)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Raw</td>
+      <td rowspan="2">Clutch size</td>
+      <td>Brood manipulation</td>
+      <td>–0.0522</td>
+      <td>–0.1406</td>
+      <td>0.0363</td>
+      <td>0.0007</td>
+      <td>(0.2477)</td>
+    </tr>
+    <tr>
+      <td>Observational</td>
+      <td>0.0747</td>
+      <td>0.1571</td>
+      <td>–0.0288</td>
+      <td></td>
+      <td>(0.1571)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Standardised</td>
+      <td rowspan="2">Clutch size</td>
+      <td>Brood manipulation</td>
+      <td>–0.0651</td>
+      <td>–0.1478</td>
+      <td>0.0177</td>
+      <td>0.0065</td>
+      <td>(0.1232)</td>
+    </tr>
+    <tr>
+      <td>Observational</td>
+      <td>0.1143</td>
+      <td>–0.0046</td>
+      <td>0.2333</td>
+      <td></td>
+      <td>(0.0595)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Proportional</td>
+      <td rowspan="2">Clutch size</td>
+      <td>Brood manipulation</td>
+      <td>–0.2703</td>
+      <td>–0.4984</td>
+      <td>–0.0423</td>
+      <td>0.0005</td>
+      <td>(0.0202)</td>
+    </tr>
+    <tr>
+      <td>Observational</td>
+      <td>0.3850</td>
+      <td>0.0583</td>
+      <td>0.7116</td>
+      <td></td>
+      <td>(0.0209)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Model = ~obervational_or_experimental, random = (species, phylogeny, study reference)._
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87018/elife-87018-fig2-v1.jpg)
+
+**Figure 2.:** Species with small clutch sizes showed stronger costs of reproduction and a stronger relationship with quality (Interaction between treatment and species clutch size effect size = –0.036, p=0.015). The points are the survival effect sizes (log odds ratio) per egg (as in Figure 1A) on parental survival in each study, with the point size reflecting the meta-analytic weight of that study (n = 58 experimental and 20 observational).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87018/elife-87018-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The percentage change in brood size of the maximum manipulation (regardless of whether the manipulation was an increase or reduction) in experimental studies given the species’ average brood size. (B) The brood size of each experimental study. Points indicate the species’ average brood size (i.e., before manipulation occurred), shaded bars indicate the natural standard deviation in clutch size observed in the species (i.e., without manipulation), and the whiskers represent the lower and upper clutch sizes after a manipulation occurred.
+
 Males and females did not differ in their survival response to changing clutch size (Appendix 1 - table 2, Figure 1—figure supplement 1, contrary to Santos and Nakagawa, 2012). The variance assigned to the random effects in the model was largely accounted for by study (Appendix 1—table 3). Species identity accounted for more variation than the phylogeny, indicating that species vary in the relationship between survival and reproductive effort, irrespective of their shared evolutionary ancestry. However, our dataset included few closely related species, which reduces our ability to estimate phylogenetic effects (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/87018/elife-87018-fig3-v1.jpg)
 
 **Figure 3.:** Numeric labels denote the node support (as a percentage). Coloured points indicate whether the species were included in the experimental or observational studies.
 
-## Projected fitness consequences of the costs of reproduction
+### Projected fitness consequences of the costs of reproduction
 
 From our meta-analysis, we now have a quantifiable and comparable effect size for the survival costs of reproduction that we can use to predict the evolutionary consequences of individuals in a given population increasing their clutch size across a range of life histories. To this end, we projected the fitness consequences of increased reproductive effort, starting with the average effect size estimate per egg (–0.05, Table 1) across a range of life histories, for a range of annual survival rates and clutch sizes (Figure 4). Overall, the effect size estimated in the meta-analysis (–0.05) resulted in a gain of fitness when reproductive output increased, especially in hypothetical species with low survival and small clutches. If we used a stronger effect size (–0.15, the lower confidence interval of our meta-analysis), this led to a reduction in fitness in almost all cases. Conversely, the benefit of higher reproductive output was largely offset by the cost of survival when a species’ survival rate and clutch size were high. When we increased the effect size up to fivefold, fitness costs of reproduction became more pronounced, but were still not present in species with small clutches and short lifespans.
 
@@ -64,17 +161,17 @@ Our fitness projections of the consequences of the costs of reproduction using t
 
 ## Methods
 
-## Study sourcing and inclusion criteria
+### Study sourcing and inclusion criteria
 
 We extracted studies of parental survival to the following year given clutch size raised using the following inclusion criteria similar to Santos and Nakagawa, 2012: the study must be on a wild population; the study must contain variation in the number of offspring produced/raised (hereafter referred to as clutch size for simplicity), the study must report variation in clutch size in relation to parental survival to the following year (including both experimental and observational studies) and must provide sample sizes. We did include studies where parental survival was reported for both parents combined as opposed to Santos and Nakagawa, 2012, who required male and female data to be reported separately. Excluded studies and the grounds for their removal are given in the supplementary information (Appendix 1—table 4). We started by, first, extracting data (clutch size raised after manipulation and associated parental survival to the next year) from the included brood manipulation studies from Santos and Nakagawa, 2012 and then searched the literature to include more recently published studies (Appendix 2), and in this search also added studies Santos and Nakagawa missed. In addition to brood manipulation studies, we extracted data from studies that correlated variation in parental survival with natural variation in clutch size (observational studies). For each species used in the brood manipulation studies, we aimed to find the same species for the observational studies to ensure that the effects of quality were estimated across a similar range of species. The reason for this is to ensure the experimental and observational datasets are comparable in terms of species, which could bias results if not considered, and so facilitate a more direct comparison between the quality effect (observational studies) and the trade-off (experimental studies). Where there was no equivalent study in the same species, we attempted to find a study of a congener. In most cases, observational data were obtained from either the same paper as the one describing brood manipulations (11 studies) or via searching for other papers by the same authors (2 studies). If this failed to produce observational data, a search was conducted following the same protocol as for the brood manipulation experiments, but also specifying species, genus, and/or common name in the search (seven studies). Of the 28 species used in the brood manipulation studies, we were able to find 10 of the same species in observational studies. We were able to find a further six species which were congeners for observational studies.
 
 From the literature search, 78 individual effect sizes from 30 species and 46 papers were used (20 observational and 58 experimental studies). While extracting these studies, we also made note of the average clutch size of the species and the within-species standard deviation in clutch size. We extracted this information from the paper containing the study, but if the information was missing, we searched other published literature with the aim to find the information from a similar population (i.e. at a similar latitude).
 
-## Extracting effect sizes
+### Extracting effect sizes
 
 We used the absolute value of offspring in the nest (for experimental studies, this is the number of offspring after the manipulation occurred) and associated parental survival to estimate an effect size by performing a logistic regression to obtain the log odds ratio for parental survival, given the clutch size (i.e. positive effect sizes indicate an increased chance of survival). For example, a bird who laid a clutch size of 5 but was manipulated to have –1 chick was recorded to have a clutch size of 4. If the manipulation was reported but absolute value of offspring produced was not, we used clutch size to be the species average ± the number of offspring added or removed. Parental survival was modelled as a binary response variable for the number of birds who survived and who died after raising a given clutch size. Clutch size was averaged (mean) if a single estimate of survival was reported for multiple clutch sizes. ‘Year’ was included as an explanatory variable to correct for between-year variation in adult survival, where data were presented for multiple years. We standardised the clutch size (by the mean of the species and by the within-species standard deviation in clutch size) and transformed clutch size to a proportion of the species mean. For species that have no within-species variance in clutch size, we used a value of 0.01 for the standard deviation in clutch size to prevent issues in calculations when using zero. We, therefore, expressed variation in clutch size in three ways: a raw increase in clutch size, a standardised clutch size, and a proportional clutch size.
 
-## Meta-analysis
+### Meta-analysis
 
 We ran a single model using the log odds ratio calculated for each clutch size transformation (i.e. raw, standardised, and proportional) to determine the effect of parental survival, given an increase in reproductive effort using the metafor package (Viechtbauer, 2010) in R 3.3.2 (R Development Core Team, 2009). From these models, we were also able to directly compare the effect size of brood manipulation studies and observational studies by including a categorical fixed effect for study type (i.e. experimental or observational). We included phylogeny as a correlation matrix in these meta-analytic models to correct for shared ancestry. The phylogeny was obtained using BEAST to measure a distribution of 1000 possible phylogenetic trees of the focal 30 species extracted from BirdTree (Rubolini et al., 2015). We also included species and each studies’ journal reference as random effects in the model. From these models, we calculated the proportion of variance explained by the phylogenetic effect (Nakagawa and Santos, 2012).
 
@@ -82,11 +179,11 @@ We then tested the effect of the species’ mean clutch size on the relationship
 
 The difference in survival for the different sexes was modelled for each clutch size measure. Brood manipulation studies and observational studies were analysed in separate models. Sex was modelled as a categorical moderator (41 female studies, 27 male studies, and 10 mixed studies). Species, phylogeny, and reference were included as random effects (Appendix 1—table 2 and Figure 1—figure supplement 1).
 
-## Publication bias
+### Publication bias
 
 Much of the data used in this analysis were taken from studies where these data were not the main focus of the study. This reduces the risk that our results are heavily influenced by a publication bias for positive results. A funnel plot for the survival against raw clutch size model is presented in supplementary information (Figure 1—figure supplement 2).
 
-## Fitness projections
+### Fitness projections
 
 We calculated various isoclines using the brood manipulation overall effect size (–0.05, based on raw clutch size) that we estimated. Here, an isocline is a trendline representing the change in fitness returns over an individual’s lifespan, given an increase in individual clutch size. An estimated ‘lifetime reproductive output’ was calculated for hypothetical control populations (starting with 100 individuals), where all individuals consistently reproduce at the level of a species mean and have a consistent annual survival rate. We calculated this ‘lifetime reproductive output’ (see Appendix 2 for equation details for calculating lifetime reproductive output) using combinations of a range of species’ average clutch sizes at 2, 4, 6, 8, and 10 and survival rates of 0.2, 0.3, 0.4, 0.5, 0.6, and 0.7, which reflected the range of clutch sizes and survival rates seen in the species in our meta-analysis. We started with a hypothetical population size of 100 and calculated the populations’ lifetime reproductive output rate that depends on how many offspring are produced in a clutch and how long individuals in the population live for. We could then use to model the effects of the costs of reproduction using the meta-analytic estimate of how brood size is associated with parental survival (through experimental studies).
 

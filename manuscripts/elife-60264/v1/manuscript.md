@@ -34,7 +34,7 @@ Proper condensate formation is essential for homeostasis as it provides cells wi
 
 This review summarizes our current understanding and recent findings regarding the formation, regulation, and function of biomolecular condensates and highlights their emerging roles in the pathogenesis of cancer.
 
-## Molecular features driving protein condensate formation
+### Molecular features driving protein condensate formation
 
 Recent work shows that phase separation requires the establishment of a network of interactions through multivalent protein molecules. These multivalent interactions are promoted by proteins containing multiple-folded modular domains or intrinsically disordered regions (IDRs) (Gomes and Shorter, 2019) or oligomerization domains (Dao et al., 2018; Figure 1). Another class of phase-separating proteins containing polymerizing domains such as the DIX domain, which assemble into filaments that are crosslinked into three-dimensional condensates (Bienz, 2020).
 
@@ -52,7 +52,7 @@ Finally, multivalent interactions can also arise from oligomerization of folded 
 
 One important question in the context of this review is whether proteins encoded by cancer-related genes (such as tumor-suppressors or oncogenes) can undergo the above-mentioned multivalent interactions and whether these interactions are perturbed in tumorigenesis. On the one hand, cancer-related mutations could disrupt the assembly of functional condensates by tumor-suppressors, thus contributing to the initiation of cancers. On the other hand, cancer-related mutations could promote the assembly of aberrant condensates by oncoproteins, which might stimulate tumorigenesis.
 
-## Regulation of condensate assembly
+### Regulation of condensate assembly
 
 Great advances have been made in our understanding of the regulation of condensate assembly. Accumulating evidence suggests that phase separation is often regulated by post-translational modifications (PTMs) (Figure 1). PTMs, including phosphorylation, acetylation, arginine methylation, and SUMOylation, have been implicated in the assembly and disassembly of condensates, as well as the regulation of their material properties (Hofweber and Dormann, 2019). For example, recent studies showed that lysine acetylation regulates phase separation of the microtubule-binding protein Tau (Carlomagno et al., 2017; Ferreon et al., 2018). Moreover, phosphorylation of serine residues or methylation of arginine residues can suppress phase separation of FUS (Hofweber et al., 2018; Monahan et al., 2017; Qamar et al., 2018). These PTMs may play an important role in the formation of pathological FUS aggregates, because many disease-associated mutations in FUS are adjacent to or directly affect amino acids that are modified by PTMs. Importantly, PTMs change not only the driving forces for condensate assembly, but also the selective partitioning of a protein into a condensate. For example, phosphorylation of the RNA polymerase II (Pol II) C-terminal domain prevents the partitioning of Pol II into transcription initiation condensates but it promotes partitioning into splicing condensates (Guo et al., 2019). SUMOylation is another additional PTM that promotes phase separation. For instance, sumoylation of SOP-2 results in an increase in both size and number of condensates in comparison to the unmodified protein (Qu et al., 2020). PTM could change the physicochemical properties of the modified amino acids, which could directly affect multivalent interactions. For instance, phosphorylation attaches a phosphate group to a hydroxyl group of an amino acid side chain, thus introducing a charge that may allow this amino acid to participate in long-range electrostatic interactions.
 
@@ -64,7 +64,7 @@ Another ligand that has been implicated in condensate regulation is polyADP ribo
 
 Studies have also implicated post-transcriptional modifications of RNAs in the regulation of phase separation (Figure 1). N6-methyladenosine (m6A) is one of the most prevalent types of mRNA modification in cells. Phase separation of the m6A-binding proteins YTHDF1, YTHDF2, and YTHDF3 was markedly enhanced by multiple m6A modifications on mRNA (Gao et al., 2019; Ries et al., 2019). Moreover, m6A modification of mRNA further enhances mRNA partitioning into different condensates. Emerging evidence also suggests that dysregulation of RNA modifications is closely associated with various human cancers (Huang et al., 2020). Notably, the expression of some oncogenic or tumor-suppressive transcripts is regulated by RNA modifications. One possibility emerging from these considerations is that these RNA modifications lead to aberrant condensate assembly and this could result in alterations of oncogene or tumor suppressor gene expression.
 
-## Functions of condensates
+### Functions of condensates
 
 Although the functional spectrum of phase separation has not been fully explored, several key functions of condensates have been revealed. For instance, it has been proposed that phase separation of proteins can be used to sense changes in the environment and that the formed condensates then mount adequate adaptive responses. Indeed, the phase behavior of many proteins is very sensitive to small changes in physical-chemical conditions. For example, phase separation of Pab1 has been observed in response to thermal stress and changes in cytosolic pH (Riback et al., 2017). In addition, condensation of Sup35 is induced by an energy depletion-induced acidification of the cytosol (Franzmann et al., 2018). Another example is the RNA-binding protein Pbp1, which senses the cellular redox state and forms condensates under reducing conditions (Kato et al., 2019). In all these cases, the formed condensates play important roles in cellular stress response and adaptation. For example, Pbp1 condensates are able to sequester and inactivate TORC1, thus coupling the metabolic redox state to TOR signaling (Kato et al., 2019).
 
@@ -76,11 +76,130 @@ Lastly, condensates may work as compartments for protein quality control. Under 
 
 In summary, phase separation appears to touch on almost any fundamental process in cells. However, whether and how condensates affect the onset, progression, metastasis and drug resistance of different cancers is still largely unclear. Given the importance of condensates for normal cellular physiology, it seems reasonable to assume that aberrant condensate assembly is a frequent occurrence in tumorigenesis.
 
-## Condensate assembly by cancer-related proteins
+### Condensate assembly by cancer-related proteins
 
 In recent years, some oncogenic processes have been linked to condensates formed by cancer-related proteins (Table 1). These cancer-related proteins are involved in the degradation of oncogenic substrates, maintenance of genomic stability, transcriptional regulation and oncogenic signaling pathways, protein quality control and degradation.
 
-## Speckle-type POZ protein (SPOP) condensates in degradation of oncogenic substrates
+**Table 1.**
+ Cancer-related proteins involved in formation and regulation of condensates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Biomolecular condensates</th>
+      <th>Cancer-related protein or RNA molecular</th>
+      <th>Verification of phase behavior</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SPOP/DAXX bodies</td>
+      <td>SPOP</td>
+      <td>Yes</td>
+      <td>Bouchard et al., 2018</td>
+    </tr>
+    <tr>
+      <td>DNA repair condensates</td>
+      <td>53BP1</td>
+      <td>Yes</td>
+      <td>Kilic et al., 2019</td>
+    </tr>
+    <tr>
+      <td>DNA damage condensates</td>
+      <td>PARP-1</td>
+      <td>Yes</td>
+      <td>Altmeyer et al., 2015; Patel et al., 2015</td>
+    </tr>
+    <tr>
+      <td>DNA damage condensates</td>
+      <td>FUS</td>
+      <td>Yes</td>
+      <td>Altmeyer et al., 2015; Patel et al., 2015</td>
+    </tr>
+    <tr>
+      <td>DNA damage condensates</td>
+      <td>EWS</td>
+      <td>Yes</td>
+      <td>Altmeyer et al., 2015; Patel et al., 2015</td>
+    </tr>
+    <tr>
+      <td>DNA damage condensates</td>
+      <td>TAF15</td>
+      <td>Yes</td>
+      <td>Altmeyer et al., 2015; Patel et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Transcriptional condensates</td>
+      <td>EWS-FLI1</td>
+      <td>Predicted</td>
+      <td>Boulay et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Transcriptional condensates</td>
+      <td>YAP</td>
+      <td>Yes</td>
+      <td>Cai et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Transcriptional condensates</td>
+      <td>TAZ</td>
+      <td>Yes</td>
+      <td>Lu et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PRC1 condensates</td>
+      <td>CBX2</td>
+      <td>Yes</td>
+      <td>Plys et al., 2019; Tatavosian et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Transcriptional condensates</td>
+      <td>β-catenin</td>
+      <td>Yes</td>
+      <td>Zamudio et al., 2019</td>
+    </tr>
+    <tr>
+      <td>p62 bodies</td>
+      <td>p62</td>
+      <td>Yes</td>
+      <td>Cloer et al., 2018; Sun et al., 2018; Zaffagnini et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Stress granules</td>
+      <td>KRAS</td>
+      <td>Unconfirmed</td>
+      <td>Grabocka and Bar-Sagi, 2016</td>
+    </tr>
+    <tr>
+      <td>Stress granules</td>
+      <td>DDX3X</td>
+      <td>Yes (only in vitro)</td>
+      <td>Hondele et al., 2019; Valentin-Vega et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Stress granules</td>
+      <td>YB-1</td>
+      <td>Unconfirmed</td>
+      <td>Somasekharan et al., 2015</td>
+    </tr>
+    <tr>
+      <td>PML NBs</td>
+      <td>PML/RARA</td>
+      <td>Unconfirmed</td>
+      <td>de Thé et al., 2017; Dos Santos et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Paraspeckles</td>
+      <td>NEAT1_2</td>
+      <td>Yes</td>
+      <td>Yamazaki et al., 2018</td>
+    </tr>
+  </tbody>
+</table>
+
+### Speckle-type POZ protein (SPOP) condensates in degradation of oncogenic substrates
 
 The tumor suppressor SPOP functions as a substrate adaptor of the cullin3 (CUL3)-RING ubiquitin ligase complex, which is frequently mutated in prostate cancer (Barbieri et al., 2012; Le Gallo et al., 2012). Tumor-associated missense mutations in the substrate recognition domain of SPOP disrupt substrate binding and ubiquitination, leading to the accumulation of oncogenic substrates, such as steroid receptor coactivator (SRC3), c-MYC (Geng et al., 2017) and death-domain-associated protein (DAXX) (Kwon et al., 2006). Bouchard et al. found that multivalent interactions between SPOP oligomers and motifs in oncogenic substrate proteins drive phase separation in vitro. The same multivalent interactions are required for SPOP co-localization with oncogenic substrates in nuclear condensates. Importantly, substrate proteins such as DAXX appear to be ubiquitylated inside the condensates in a CUL3-dependent manner. Consequently, cancer-associated SPOP mutations disrupt SPOP interaction with the substrates, causing a failure to form condensates, ubiquitylate the substrates and promote their degradation (Bouchard et al., 2018; Table 1 and Figure 2). These findings reveal a direct link between the aberrant phase behavior of a tumor suppressor protein and its downstream effects on oncogenic proteins.
 
@@ -88,7 +207,7 @@ The tumor suppressor SPOP functions as a substrate adaptor of the cullin3 (CUL3)
 
 **Figure 2.:** Cancer-related proteins may regulate condensate assembly and cancer-associated mutations may alter condensate assembly, thus driving aberrant cellular processes that promote tumorigenesis and cancer progression. Additionally, condensate dysfunction could also play important roles in the development of cancer. Potential links between aberrant condensates and hallmarks of cancer are indicated by arrows. The color of the box indicates the localization of condensates. Red means localize in the nuclear, blue means localize in the cytoplasm, and green means localize in both locations.
 
-## Condensates in the maintenance of genomic stability
+### Condensates in the maintenance of genomic stability
 
 Genomic instability usually arises from disruption of DNA repair and DNA damage response (DDR). Recent studies indicate that condensate assembly is linked to the maintenance of genomic stability. For instance, poly (ADP-ribose) polymerase 1 (PARP1) is one abundantly expressed member of the poly (ADP-ribose) polymerase (PARP) family. PARP1 synthesizes long PAR chains at DNA damage sites and plays a key role in DDR and PARP-1 has been ascribed diverse pro- or anti-tumorigenic roles (Weaver and Yang, 2013). The formation of PAR chains was shown to initiate the formation of DNA damage condensates via recruitment and assembly of FET proteins (FUS, EWS, and TAF15) (Altmeyer et al., 2015; Patel et al., 2015; Table 1; Figure 3).
 
@@ -102,7 +221,7 @@ Recently, 53BP1 was reported to drive the formation of a DNA damage repair compa
 
 Intriguingly, 53BP1 is excluded from above-mentioned DNA damage condensates (Altmeyer et al., 2015). Given that 53BP1 is recruited to DNA damage sites later (Aleksandrov et al., 2018), this suggests that cells can assemble DNA damage condensates with different compositions and presumably also functions (Altmeyer et al., 2015). These studies suggest that condensate assembly is intimately linked to the maintenance of genome stability. Indeed, cancer-associated translocations in FET proteins appear to impair the cellular ability to interact with PAR chains, which may affect the assembly of condensates at DNA damage sites and thus undermine genome integrity (Altmeyer et al., 2015).
 
-## Transcriptional condensates in regulation of oncogenic transcriptional programs
+### Transcriptional condensates in regulation of oncogenic transcriptional programs
 
 Transcriptional dysregulation is a key feature of cancer (Figure 2). Recent studies have implicated condensates in the regulation of oncogenic transcription programs.
 
@@ -120,7 +239,7 @@ Recent evidence shows that YAP and TAZ assemble into condensates in vitro and in
 
 Condensates have not only been implicated in transcription activation, but also in transcription repression via epigenetic changes of chromatin. Indeed, epigenetic alterations in chromatin are well known to drive tumorigenesis (Flavahan et al., 2017). The first condensates that have been linked to gene silencing by heterochromatin formation are assembled from heterochromatin protein 1α (HP1α) (Larson et al., 2017; Strom et al., 2017). Another set of factors that is essential for the establishment and maintenance of facultative heterochromatin are the polycomb repressive complexes (PRC) (Tatavosian et al., 2019). These complexes also have oncogenic functions or they act as tumor suppressors, depending on the specific cancer type (Koppens and van Lohuizen, 2016). Chromobox 2 (CBX2), one subunit of Polycomb repressive complex 1 (PRC1), was recently shown to assemble into condensates that recruited the core subunits of the CBX2-PRC1 complex and directed the condensation of DNA and nucleosomes (Plys et al., 2019; Tatavosian et al., 2019; Table 1). These studies suggest that PRC1 condensates contribute to chromatin compaction, thus repressing the expression of PRC1 target genes. It will be intriguing to determine whether other epigenetic regulatory factors control the formation of gene regulatory condensates and whether impairment of epigenetic condensate control results in disease.
 
-## Signaling condensates in the regulation of signaling transduction
+### Signaling condensates in the regulation of signaling transduction
 
 Signaling pathways play an essential role in regulating gene expression. Many membrane receptors and downstream signaling molecules assemble into two-dimensional (2D) clusters upon initiation of signaling (Bienz, 2014; Wu, 2013). Well-known examples are T cell receptor signaling clusters (Ditlev et al., 2019; Huang et al., 2019; Su et al., 2016) and clusters associated with adhesion receptors (Banjade and Rosen, 2014; Beutel et al., 2019; Case et al., 2019a; Li et al., 2012). The assembly of clusters on membranes is often important for the activation of downstream signaling effectors. For instance, phase separation of phosphorylated nephrin receptor together with its downstream effector molecules NCK and N-WASP promotes actin assembly. This enhancement of actin assembly was linked to the longer membrane dwell time of N-WASP in these clusters. More generally, the dwell time of cluster components was dependent on the composition of the cluster and the concentration of the cluster constituents (Case et al., 2019b), suggesting that there is an optimal condensate composition to reach full activation. Similarly, signaling condensates formed from the phosphorylated scaffold protein linker for activation of T cells (LAT) and its two adaptors growth factor receptor-bound protein 2 (GRB2) and Son of Sevenless homolog (SOS) promoted Ras activation by increasing membrane dwell time of SOS (Huang et al., 2019). Both cases suggest that increased dwell time of signaling effectors by condensation may be a general mechanism to fully activate a signaling pathway while at the same time ensuring signaling specificity.
 
@@ -136,13 +255,13 @@ Increasing evidence suggests that both the destruction complex and Wnt signaloso
 
 Recent work has implicated condensates in another aspect of the Wnt signaling pathway. In the presence of Wnt, β-catenin accumulates in the nucleus and activates the transcription of Wnt target genes (Gammons and Bienz, 2018). Reports showed that β-catenin uses its IDRs to selectively partition into transcriptional condensates at super-enhancers (Zamudio et al., 2019; Table 1). Some cancer-related mutations in β-catenin prevent phosphorylation-dependent ubiquitination of β-catenin, leading to accumulation of β-catenin in the nucleus (Kim and Jeong, 2019). This suggests that in cancer cells, β-catenin may form aberrant nuclear condensates because of elevated protein levels and that this may promote tumorigenesis through widespread changes in gene expression.
 
-## Protein condensates associated with protein quality control and degradation
+### Protein condensates associated with protein quality control and degradation
 
 The multi-domain adaptor protein p62/SQSTM1 (p62) is defined by its role in selective autophagy, a lysosomal degradation pathway that clears misfolded proteins and damaged organelles to maintain cellular homeostasis. The regulation of p62 is complex as p62 acts as a receptor targeting cargo for degradation but it is also itself degraded by autophagy (Sánchez-Martín et al., 2019). However, when autophagy is impaired, p62 accumulates and can activate downstream signaling pathways including mTORC1, NF-κB, and NRF2, influencing nutrient sensing, inflammation and the oxidative stress response, which may all affect tumorigenesis (Moscat et al., 2016; Sánchez-Martín et al., 2019). For instance, accumulation of p62 has been shown to accelerate the development of pancreatic cancer through activating NF-κB and NRF2 signaling (Duran et al., 2008; Ling et al., 2012; Todoric et al., 2017). Similarly, p62 accumulation in chronically damaged liver cells activates NRF2 and promotes the development of hepatocellular carcinoma (Nakagawa et al., 2014; Umemura et al., 2016).
 
 Although the mechanism of how p62 accumulates is not fully understood, p62 is often present in cellular inclusion bodies. Inclusion bodies in the brain include Lewy bodies, neurofibrillary tangles, and huntingtin aggregates; inclusion bodies in the liver include Mallory-Denk bodies, intracytoplasmic hyaline bodies, and α1 antitrypsin aggregates (Komatsu et al., 2007; Yamamoto and Simonsen, 2011). Intriguingly, recent studies have shown that p62 assembles together with ubiquitinated proteins into condensates (Table 1), and the formed condensates are subsequently engulfed by autophagosomes and degraded (Sun et al., 2018; Zaffagnini et al., 2018). Another study found that p62 assembles into condensates together with mutant KEAP1 proteins and the transcription factor NRF2, thereby affecting NRF2-driven transcription (Cloer et al., 2018). Although this remains to be determined, it is tempting to speculate that p62 condensates are involved in the formation and autophagy-mediated disposal of various cellular condensates that promote or inhibit tumorigenesis.
 
-## Dysregulation of membraneless compartments in cancer
+### Dysregulation of membraneless compartments in cancer
 
 Accumulating evidence suggests that aberrant assembly of condensates is associated with cancer. How aberrant assembly and dysregulation of well-known membraneless compartments that form through condensation may promote tumorigenesis will be discussed in this section (Figure 6).
 
@@ -150,7 +269,7 @@ Accumulating evidence suggests that aberrant assembly of condensates is associat
 
 **Figure 6.:** Aberrant assembly of SGs, PML bodies or paraspeckles may arise from dysregulation of or mutations in cancer-related proteins, thus promoting tumorigenesis. For instance, KRAS mutations promote SG hyper-assembly and this has been shown to confer a fitness advantage to cancer cells (Grabocka and Bar-Sagi, 2016). Likewise, mutations in DDX3X cause SG hyper-assembly and this has been shown to impair protein synthesis in medulloblastomas (Valentin-Vega et al., 2016). Moreover, YB-1 promotes SG assembly, which has been linked to increased invasion and metastasis (Somasekharan et al., 2015). The expression of PML/RARA leads to disruption of PML body assembly and deregulated transcriptional control of senescence and differentiation in acute promyelocytic leukemia (APL) (de Thé and Chen, 2010; Dos Santos et al., 2013). Furthermore, disruption of PML bodies contributes to APL pathogenesis by increasing genome instability (Voisset et al., 2018). Recombination-based alternative lengthening of telomeres (ALT) is a key mechanism for telomerase-negative cancer cells to maintain the telomere stability and the capability for unlimited proliferation (Bryan et al., 1997). ALT-associated PML bodies (APB) facilitate telomere maintenance and thus promote cancer cell immortality (Zhang et al., 2020). IL-6/STAT3 signaling promotes paraspeckles formation, which favors overactivation of STAT3 in human hepatocellular carcinoma (HCC) (Wang et al., 2018c). Paraspeckle assembly induced by p53 has been shown to inhibit cancer initiation in pancreatic cancer models (Mello et al., 2017). Finally, inhibition of amyloid body assembly has been shown to promote tumor tissue growth (Audas et al., 2016).
 
-## Stress granules
+### Stress granules
 
 SGs, a type of stress-induced membraneless compartment, promote cell survival during stress conditions and have been shown to be formed by phase separation (Guillén-Boixet et al., 2020; Molliex et al., 2015; Patel et al., 2015; Sanders et al., 2020; Yang et al., 2020). Due to the high metabolic demands of proliferation, cancer cells usually exist in a unique microenvironment characterized by hypoxia, high levels of reactive oxygen species, and nutrient starvation (Ackerman and Simon, 2014), conditions which activate the cellular stress response and trigger SG assembly. The assembly of SG promotes cancer cell adaption to adverse microenvironments and enhances cancer cell resistance to apoptosis by accumulating anti-apoptosis molecules (Arimoto et al., 2008; Thedieck et al., 2013).
 
@@ -160,7 +279,7 @@ Another class of proteins linked to cancer are confirmed regulators of SG assemb
 
 Another SG component that has been shown to facilitate SG assembly is Y-box binding protein 1 (YB-1). YB-1 is a member of a highly conserved cold shock domain (CSD) family and implicated in a wide variety of cellular function, such as translational regulation, DNA repair, and stress responses (Kohno et al., 2003). Increased protein levels of YB-1 are highly correlated with cancer progression and poor prognosis (Lasham et al., 2013). YB-1 was recently shown to promote SG assembly by translationally upregulating G3BP1 which is essential for SG assembly (Guillén-Boixet et al., 2020; Sanders et al., 2020; Somasekharan et al., 2015; Yang et al., 2020; Table 1 and Figure 6). Knockdown of G3BP1 severely impairs SG assembly and inhibits invasion and metastasis (Somasekharan et al., 2015). Thus, the role of YB-1 in cancer progression may be linked to SG assembly. However, how SG assembly promotes invasion and metastasis remains unclear and this aspect should be investigated by building on our improved understanding of condensate assembly.
 
-## PML bodies
+### PML bodies
 
 PML bodies are stress-sensitive nuclear condensates (Banani et al., 2016; Zhu and Brangwynne, 2015). They are involved in transcriptional regulation, protein modification, apoptosis, cellular senescence, cell cycle progression, angiogenesis, and protein quality control (Hsu and Kao, 2018; Mediani et al., 2019). The formation of the PML body is driven by PML:PML interactions (Huang et al., 2014) and SUMOylation of PML, which promotes the recruitment of proteins containing SUMO-interacting motifs (SIMs) to PML bodies (Banani et al., 2016). In addition to SUMOylation-related enzymes (UBC9, RNF4), PML bodies also contain many other enzymes, such as HIPK2 kinase, the CBP or MOZ acetyl transferases (Lallemand-Breitenbach and de Thé, 2018). Importantly, PML body formation regulates PTMs on p53, which are required for full p53 activity and oncogene-induced senescence (Ferbeyre et al., 2000; Pearson et al., 2000).
 
@@ -168,7 +287,7 @@ Dysregulation of PML bodies is associated with diverse cancers (Hsu and Kao, 201
 
 Telomere maintenance is critical for a cancer cell to achieve the ability to proliferate in an unlimited manner (Blasco, 2005). Telomerase-negative cancer cells employ a mechanism known as recombination-based alternative lengthening of telomeres (ALT) to maintain telomere length and stability (Bryan et al., 1997). In ALT cancer cells, PML bodies associate with telomeres, their protective sheltering proteins TRF1/2 and several DNA repair proteins to form ALT-associated PML bodies (APB) (Osterwald et al., 2015; Yeager et al., 1999). A recent study suggests that the formation of APBs is driven by phase separation, thus promoting the clustering of telomere repeats and telomere lengthening (Zhang et al., 2020; Figure 6). Consequently, knocking down the PML body component PML inhibited APB formation and caused telomere shortening (Draskovic et al., 2009; Loe et al., 2020; Osterwald et al., 2015). Together, this suggests that APBs facilitate ALT telomere maintenance, eventually allowing cancer cells to grow indefinitely and become immortal.
 
-## Paraspeckles
+### Paraspeckles
 
 Paraspeckles are nuclear bodies which regulate gene expression (Fox et al., 2018). The ncRNA scaffold NEAT1_2 drives the assembly of paraspeckles by interacting with essential paraspeckle proteins, such as NONO, SFP, FUS and RBM14 (Yamazaki et al., 2018; Table 1). Importantly, abnormal assembly of paraspeckles has been described in diverse cancers (Adriaens et al., 2016; Figure 2). In human hepatocellular carcinoma (HCC), inflammation-related IL-6 signaling increases paraspeckle formation by promoting the transcription of NEAT1_2, which is medicated by the transcription factor STAT3 and H3K4me3 histone modifications (Wang et al., 2018c; Figure 6). Increased paraspeckle formation promotes further STAT3 activation via sequestering negative regulators of STAT3 and tumor repressors, thus causing a vicious cycle that drives further paraspeckle assembly. Importantly, over-activation of STAT3 induces the transcription of various genes involved in cellular survival, inflammation, epithelial to mesenchymal transition, and cancer stem cell maintenance (Yu et al., 2014), all of which promote tumor progression.
 
@@ -178,11 +297,11 @@ In addition to STAT3 and p53, NEAT1 has been shown to be regulated by other canc
 
 Finally, NEAT1 has been reported to regulate many cancer-related microRNAs whose targets mRNAs are involved in cell proliferation, migration, invasion, metastasis, EMT, stem cell-like phenotype, chemoresistance and radioresistance (Dong et al., 2018). For instance, NEAT1 promotes metastasis by abolishing microRNA-382–3 p-mediated suppression of Rho Associated Coiled-Coil Containing Protein Kinase 1 (ROCK1) (Liu et al., 2018). However, it remains to elucidate how aberrant assembly of paraspeckles affects the activity of microRNAs.
 
-## Amyloid bodies
+### Amyloid bodies
 
 Amyloid bodies are stress-induced storage compartments in the nucleolus. The formation of amyloid bodies is seeded by non-coding RNA transcribed from loci of the rDNA intergenic spacer (rIGSRNA) and likely driven by complex coacervation of low-complexity rIGSRNA and short cationic domains in amyloid converting motif (ACM) (Wang et al., 2018b). Acidosis stress as found in tumor microenvironments was shown to induce the assembly of amyloid bodies, which involved the recruitment of many proteins involved in cell cycle regulation and DNA synthesis to amyloid bodies (Audas et al., 2016). It was postulated that amyloid body formation induces a protective state of cellular dormancy that may help cancer cells to adapt to the harsh tumor microenvironment (Wang et al., 2019). In agreement with this, inhibition of amyloid body formation by knockdown of rIGS28RNA prevented tumor dormancy and led to larger tumor sizes in cancer mouse models (Audas et al., 2016; Figure 6). However, how amyloid bodies promote tumorigenesis remains to be shown (Figure 2).
 
-## Conclusion and future perspectives
+### Conclusion and future perspectives
 
 Condensates have now been implicated in almost all fundamental processes in living cells. Given the importance of condensates for cellular physiology and our increasingly better understanding of condensate assembly and function, we expect that condensate research will make an important contribution to unraveling the complex biology of cancers in the coming years. One example of the increasingly important role of condensates is the demonstration that transcription is regulated by condensates. Numerous cancer-related proteins function as transcription factors and assembly of these transcription factors into aberrant condensates could drive various hallmarks of cancer cells, such as their ability to proliferate.
 

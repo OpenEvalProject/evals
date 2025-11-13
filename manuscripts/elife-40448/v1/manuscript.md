@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.40448.001 In Caenorhabditis elegans , RNA interference (RNAi) responses can transmit across generations via small RNAs. RNAi inheritance is associated with Histone-3-Lysine-9 tri-methylation (H3K9me3) of the targeted genes. In other organisms, maintenance of silencing requires a feed-forward loop between H3K9me3 and small RNAs. Here, we show that in C. elegans not only is H3K9me3 unnecessary for inheritance, the modification’s function depends on the identity of the RNAi-targeted gene. We found an asymmetry in the requirement for H3K9me3 and the main worm H3K9me3 methyltransferases, SET-25 and SET-32. Both methyltransferases promote heritable silencing of the foreign gene gfp , but are dispensable for silencing of the endogenous gene oma-1 . Genome-wide examination of heritable endogenous small interfering RNAs (endo-siRNAs) revealed that endo-siRNAs that depend on SET-25 and SET-32 target newly acquired and highly H3K9me3 marked genes. Thus, ‘repressive’ chromatin marks could be important specifically for heritable silencing of genes which are flagged as ‘foreign’, such as gfp . Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+In Caenorhabditis elegans, RNA interference (RNAi) responses can transmit across generations via small RNAs. RNAi inheritance is associated with Histone-3-Lysine-9 tri-methylation (H3K9me3) of the targeted genes. In other organisms, maintenance of silencing requires a feed-forward loop between H3K9me3 and small RNAs. Here, we show that in C. elegans not only is H3K9me3 unnecessary for inheritance, the modification’s function depends on the identity of the RNAi-targeted gene. We found an asymmetry in the requirement for H3K9me3 and the main worm H3K9me3 methyltransferases, SET-25 and SET-32. Both methyltransferases promote heritable silencing of the foreign gene gfp, but are dispensable for silencing of the endogenous gene oma-1. Genome-wide examination of heritable endogenous small interfering RNAs (endo-siRNAs) revealed that endo-siRNAs that depend on SET-25 and SET-32 target newly acquired and highly H3K9me3 marked genes. Thus, ‘repressive’ chromatin marks could be important specifically for heritable silencing of genes which are flagged as ‘foreign’, such as gfp.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -40,27 +40,55 @@ Recently Kalinava et al. examined the heritable RNAi responses against oma-1 als
 
 We successfully replicated the results of Kalinava et al., and came to the same conclusion, that the met-2;set-25;set-32 triple mutant worms inherit RNAi responses against the oma-1 gene, also when we used a different assay for inheritance (Figure 1A and Figure 1B, upper panel). Unlike Kalinava et al., which used qPCR to score for downregulation of oma-1 expression, we targeted a redundant, temperature-sensitive and dominant oma-1 allele, that in the restrictive temperatures does not allow the development of embryos unless silenced (as previously described [Alcazar et al., 2008]). Upon shifting to 20 degrees, only worms that silence the oma-1 gene in a heritable manner survive.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/40448/elife-40448-fig1-v1.jpg)
+
+**Figure 1.:** (A) Scheme depicting the different requirements for H3K9 methyltransferases in RNAi inheritance responses aimed at different genes. In the parental generation, worms are exposed to RNAi by growing on plates seeded with dsRNA-producing bacteria. Next, worms are transferred to plates seeded with control bacteria (that do not express dsRNA) to lay the eggs the next generation. (left) Only worms that inherit small RNAs that silence the temperature-sensitive dominant allele of oma-1 can hatch. Heritable RNAi responses aimed against the endogenous oma-1 gene do not require H3K9me3 methyltransferases. (right) Inheritance of anti-gfp small RNAs lead to heritable silencing of the gfp transgene (Pmex-5::gfp::h2b transgene). Heritable RNAi responses aimed against the foreign gfp gene strongly depends on H3K9me3 methyltransferases. (B) Inheritance of anti-oma-1 RNAi response in H3K9me3 methyltransferase mutants. The percentage of fertile worms per replicate and generation is presented (N = 12, three biological replicates). (upper panel) RNAi inheritance dynamics in met-2;set-25;set-32;oma-1 mutants compared to oma-1 mutants. (lower panel) RNAi inheritance dynamics in set-32;oma-1 mutants compared to oma-1 mutants. (C) Inheritance of anti-gfp RNAi response in H3K9me3 methyltransferase mutants. In each generation the percentage of worms silencing a germline expressed GFP transgene is presented (N > 60, five replicates). (upper panel) RNAi inheritance dynamics in met-2;set-25;set-32 triple mutants. (lower panel) RNAi inheritance dynamics in set-32 single mutants. Error bars represent standard error of mean. *p-value<0.05, **p-value<0.005, ***p-value<0.001, ****p-value<0.0001, Two-way ANOVA, Sidak's multiple comparisons test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40448/elife-40448-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Scatter column representation of the normalized GFP germline expression levels of RNAi treated animals across generations. The GFP expression levels were normalized to the expression levels of the corresponding (same generation and repeat) untreated control animals (three independent biological repeats). Each dot represent the normalized germline GFP expression level of a specific animal (dots representing different animals with similar expression levels may be visually indistinguishable). (A) Heritable anti-gfp silencing dynamics in met-2;set-25;set-32 triple mutants (Red) and wild type animals (Blue, in total, the germlines of 1350 worms were quantified). (B) Heritable anti-gfp silencing dynamics in set-32 mutants (Red) and wild type animals (Blue, in total, the germlines of 1480 worms were quantified). Error bars represent standard deviations.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40448/elife-40448-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Inheritance of anti-gfp RNAi response in set-32;met-2 double mutants and wild type is shown. In each generation, the percentage of worms silencing a germline expressed GFP transgene is presented (N > 60, three biological replicates). *p-value<0.05, **p-value<0.005, ***p-value<0.001, Two-way ANOVA, Sidak's multiple comparisons test. Error bars represent standard error of mean. (B) Table summarizing the genetic interaction between the H3K9 methyltransferases MET-2, SET-25 and SET-32 and their requirement for RNAi-induced H3K9me3 and heritable silencing of gfp.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/40448/elife-40448-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Inheritance of RNAi-induced silencing of sup-35. Silencing of the sup-35 gene by anti-sup-35 RNAi allows the temperature-sensitive pha-1 mutants to develop in restrictive temperatures. The number of developed progeny per worm is indicated (three biological repeats, N = 12). Error bars represent standard error of mean. (B) Inheritance of RNAi-induced silencing of fog-2. Silencing of the fog-2 gene depletes the worm of sperm, and causes stacking of unfertilized oocytes. The average percentage of worms lacking sperm is shown (three biological repeat, N > 30 per repeat). *p-value<0.05, Two-way ANOVA, Sidak's multiple comparisons test.
+
 In parallel we discovered, surprisingly, that in contrast to anti-oma-1 inheritance, heritable silencing of a gfp transgene was defective in the same triple mutants (Figure 1C, upper panel, p=0.0014, 2-way ANOVA). In addition, we also confirmed (Spracklin et al., 2017) that while set-32 single mutants are deficient in inheriting RNAi responses raised against the gfp transgene (Figure 1C, lower panel, p=0.0026, 2-way ANOVA), they are capable (Kalinava et al., 2017) of inheriting responses raised against oma-1 (Figure 1B, lower panel, p=0.8487, 2-way ANOVA). Previously we have shown that while set-25 mutants are defective in inheritance of anti-gfp RNAi, weak inheritance responses can still be observed (Lev et al., 2017). Similarly, we were able to detect weak inheritance responses that last at least until the F3 generation also in met-2;set-25;set-32 and set-32 mutants (Figure 1—figure supplement 1, p-value < 0.0001 for met-2;set-25;set-32 and set-32 in the F3 generation, Two-way ANOVA). Together with our previous data, which showed that set-25 is required for inheriting anti-gfp RNAi, but not anti-oma-1 RNAi (Lev et al., 2017), these results suggested that heritable RNAi requires H3K9 methyltransferases in a gene-specific manner.
 
-## The levels of RNAi-induced H3K9me3 do not explain the gene-specific requirements of methyltransferases for heritable RNAi
+### The levels of RNAi-induced H3K9me3 do not explain the gene-specific requirements of methyltransferases for heritable RNAi
 
 Histone methyltransferase mutants may affect RNAi-induced H3K9me3 levels in a gene-specific manner, thus leading to different inheritance dynamics for each gene. To test this possibility, we performed anti-H3K9me3 Chromatin Immunoprecipitation (ChIP) on F1 met-2;set-25;set-32 triple mutant progeny, that were derived from parents exposed to anti-oma-1 RNAi, anti-gfp RNAi, or untreated controls. Using qPCR we found, as was discovered before (Kalinava et al., 2017) that in met-2;set-25;set-32 triple mutants the RNAi-induced H3K9me3 signal was significantly reduced (p-value=0.0007 and 0.0009, Two-way ANOVA, for gfp and oma-1, respectively). Importantly, this was true for both the oma-1 and gfp loci (Figure 2A). Interestingly, in naive wild-type animals, that were not treated with RNAi, the levels of H3K9me3 on gfp were significantly higher than on oma-1 (Figure 2B, p-value = 0.0039, Two-Way ANOVA) and an additional germline-expressed gene dpy-28 (Figure 2B, p-value = 0.0176, student's t-test). We discuss the possible contribution of this RNAi-independent H3K9me3 signal below. Regardless, as no differences can be found in the RNAi-induced fold changes in H3K9me3 levels between gfp and oma-1 (Figure 2A), the levels of RNAi-induced H3K9me3 cannot explain the gene-specific requirements of methyltransferases for heritable RNAi.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/40448/elife-40448-fig2-v1.jpg)
 
-**Figure 2.:** oma-1 and gfp is comparable.(A) The RNAi-induced H3K9me3 footprint on the RNAi-targeted genes. The fold change in H3K9me3 levels in F1 progeny of animals exposed to RNAi versus untreated control animals. The H3K9me3 footprint levels were assessed using a qPCR quantification of ChIP experiments conducted with both wild type (left) and met-2;set-25;set-32 mutants (right). Filled or empty circles represent qPCR data obtained using two different primer sets that span different parts of the examined locus. (B) H3K9me3 levels on the gfp and oma-1 genes in naive untreated wild type animals. The deltaCt numbers used to obtain the fold change values were calculated using the eft-3 gene as an endogenous control. The presented data were obtained from three biological replicates. The levels of gfp and dpy-28 H3K9me3 signal in wild type animals are adapted from raw data from our previous publication (Lev et al., 2017). Two-way ANOVA, Sidak's multiple comparisons test. **p-value<0.005. Error bars represent standard deviations.
+**Figure 2.:** (A) The RNAi-induced H3K9me3 footprint on the RNAi-targeted genes. The fold change in H3K9me3 levels in F1 progeny of animals exposed to RNAi versus untreated control animals. The H3K9me3 footprint levels were assessed using a qPCR quantification of ChIP experiments conducted with both wild type (left) and met-2;set-25;set-32 mutants (right). Filled or empty circles represent qPCR data obtained using two different primer sets that span different parts of the examined locus. (B) H3K9me3 levels on the gfp and oma-1 genes in naive untreated wild type animals. The deltaCt numbers used to obtain the fold change values were calculated using the eft-3 gene as an endogenous control. The presented data were obtained from three biological replicates. The levels of gfp and dpy-28 H3K9me3 signal in wild type animals are adapted from raw data from our previous publication (Lev et al., 2017). Two-way ANOVA, Sidak's multiple comparisons test. **p-value<0.005. Error bars represent standard deviations.
 
-## SET-32 acts upstream to MET-2 and SET-25 to support RNAi inheritance
+### SET-32 acts upstream to MET-2 and SET-25 to support RNAi inheritance
 
 We previously found that in contrast to set-25 single mutants, which are deficient in RNAi-induced heritable H3K9me3 methylation (Lev et al., 2017; Mao et al., 2015), met-2;set-25 double mutants display a modest but robust H3K9me3 footprint following RNAi (Kalinava et al., 2017; Lev et al., 2017). We therefore hypothesized that in the met-2 background, an additional, perhaps otherwise inactive H3K9 methyltransferase, is expressed or activated, compensating for the absence of SET-25, to allow efficient heritable RNAi responses (see Figure 1—figure supplement 2 for summary). To test this hypothesis, we first examined whether met-2;set-32 double mutants can inherit RNAi responses raised against gfp. If SET-32 and SET-25 compensate for each other and are redundant, then met-2;set-32 double mutants are expected to strongly inherit RNAi responses, similar to met-2;set-25 double mutants (Lev et al., 2017). Our results show, that in contrast to met-2;set-25 double mutants, met-2;set-32 double mutants are defective in RNAi inheritance raised against gfp, since only a very weak response can be detected (Figure 1—figure supplement 2A). The potency of RNAi inheritance in met-2;set-32 double mutants is comparable to that of set-25 (Lev et al., 2017) and set-32 single mutants, or met-2;set-25;set-32 triple mutants (Figure 1C). These results suggest that SET-32 has a distinct role, and that it probably acts upstream to MET-2 and SET-25, in promoting RNAi inheritance. This conclusion is also consistent with the recent observation that SET-32, in contrast to MET-2 and SET-25, has an essential role in the establishment of RNAi-mediated nuclear silencing (Kalinava et al., 2018).
 
-## Unlike RNAi silencing of oma-1, silencing of sup-35 and fog-2 genes is not inherited transgenerationally
+### Unlike RNAi silencing of oma-1, silencing of sup-35 and fog-2 genes is not inherited transgenerationally
 
 Currently, the only gene that serves to study heritable transgenerational (more than two generations) RNAi of endogenous genes is oma-1. Transgenerational RNAi inheritance requires the target gene to be expressed in the germline, and many germline genes are essential or do not have a phenotype that can be scored over many generations. The oma-1 gene can serve as a tool for studying RNAi inheritance owing to the availability of a temperature-sensitive, dominant-lethal and redundant allele that can be rescued by RNAi (Alcazar et al., 2008). In search of other endogenous target genes whose heritable silencing could be studied, we examined the inheritance of RNAi against the non-essential germline genes sup-35 and fog-2. SUP-35 is a maternally deposited toxin, expressed in the mother’s germline, suppressed by PHA-1, a zygotically expressed anti-toxin (Ben-David et al., 2017). Consequently, temperature-sensitive pha-1(e2123) mutants develop when grown at 15 degrees but arrest their development when grown in restrictive temperatures, unless exposed to anti-sup-35 RNAi. As previously described (Ben-David et al., 2017), RNAi silencing of sup-35 allowes pha-1 mutants to develop. However, we found this response was not inherited beyond the F1 generation (Figure 1—figure supplement 3A). Expression of the germline gene fog-2 is required for hermaphrodite worms to produce sperm, but is dispensable for sperm production in males (Schedl and Kimble, 1988). Silencing of fog-2 by RNAi lead to depletion of sperm (as evident by stacked oocytes), and the worms were unable to reproduce unless crossed with a male. While we found that this response was inherited to the F1 progeny, it was not inherited transgenerationally (Figure 1—figure supplement 3B). In conclusion, we could not find additional endogenous gene targets that can be transgenerationally silenced upon RNAi. Conveniently, many endo-siRNAs that target various endogenous genes are inherited transgenerationally, and such inheritance can be studied using RNA sequencing.
 
-## H3K9me3 methyltransferases are required for the biogenesis of a specific class of endo-siRNAs
+### H3K9me3 methyltransferases are required for the biogenesis of a specific class of endo-siRNAs
 
 Certain germline small RNAs have evolved to confer immunity against foreign genetic elements, while sparing endogenous genes (Malone and Hannon, 2009). The different requirements for particular methyltransferases and H3K9me3 for heritable silencing of gfp and oma-1 may be connected to the fact that gfp is a ‘foreign’ gene, while oma-1 is an endogenous gene. We previously found that exogenous siRNAs that target gfp are lost in set-25 mutants, and hypothesized that endo-siRNAs that target other ‘foreign’ genes would be likewise affected. Therefore, we re-analyzed our previously published small RNA sequencing data, obtained from set-25 mutants (Lev et al., 2017). However, among the targets of these differentially expressed endo-siRNAs, we could not detect striking changes (fold change >1.2) in endo-siRNAs that target transposons and repetitive elements in set-25 mutants (Figure 3A, left panel). In contrast, a subset of endo-siRNAs that target 279 different protein-coding genes was found to exhibit significant changes in set-25 mutants (adj.p <0.1, DESeq2 Figure 3A, right panel). To understand why these small RNAs are uniquely affected by SET-25, we characterized this group and the endo-siRNAs that target them. To compare the endo-siRNA pools that depend on these two H3K9 tri-methyltrasferases, we re-analyzed the recently published small RNA-seq data obtained from set-32 mutants (Kalinava et al., 2018).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/40448/elife-40448-fig3-v1.jpg)
+
+**Figure 3.:** (A) An expression analysis of endo-siRNAs targeting transposons and repetitive elements classes (left panel) or protein-coding genes (right panel). Shown are the expression values as log2 of number of Reads per Million (RPM) in set-25 mutants (y-axis) compared to wild type animals (x-axis). Gene targets of endo-siRNAs, which display significant differential expression (analyzed with Deseq2, adjusted p-value<0.1) are marked in Red (B) An analysis of H3K9me3 signals (based on published data from McMurchy et al., 2017) on differet sets of gens: highly expressed genes (top 10%, Blue), lowly expressed genes (top 10%, Yellow) and gene targets of endo-siRNAs that depend on SET-25 (based on Lev et al., 2017, Red), SET-32 (based on Kalinava et al., 2018), Dark Red) or endo-siRNAs associated with WAGOs (HRDE-1,WAGO-1, and ERGO-1, Light Red). H3K9me3 signal is aligned according to gene's Transcription Start Sites (TSS), and the regions of 1000 base pairs upstream and downstream of the TSS are shown on the x axis. The y axis shows the averaged signal of the H3K9me3 modification as a function of distance from the TSS. For statistical analysis, control data sets (shown in Gray) were created by sampling the H3K9me3 levels of randomly selected gene sets of the same size as the examined gene list. (C and D) An enrichment analysis of genes with significantly lowered levels of endo-siRNAs targeting them in set-25 and set-32 mutants compared to wild type. Fold enrichment values (log2 scale) are color coded. (C) An enrichment analysis for expression in specific tissues. (D) An enrichment analysis for different small RNA pathways. The p-values were calculated using 10,000 random gene sets identical in their size to the examined endo-siRNA-target gene list. Asterisk denotes statistically significant enrichment values (p-value<0.05).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40448/elife-40448-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) An analysis of H3K9me3 signals (based on published data from McMurchy et al., 2017) on gene targets of endo-siRNAs up-regulated in set-25 mutants (based on Lev et al., 2017, left panel) and in set-32 mutants (based on Kalinava et al., 2018). All genes are aligned according to their Transcription Start Sites (TSS), and the regions of 1000 base pairs upstream and downstream of the TSS are shown on the x axis. The y axis shows the averaged signal of the H3K9me3 modification as a function of distance from the TSS. (B) An analysis of H3K9me3 signals (based on Kalinava et al., 2018) on gene targets of SET-32 dependent endo-siRNAs. Genes are aligned according to their TSS, and the regions of 1000 base pairs upstream and downstream of the TSS are shown on the x axis. The y axis shows the averaged signal of the H3K9me3 modification in wild type (Blue) and set-32 mutants (Red). For statistical analysis control data sets (Gray) were created by sampling the H3K9me3 levels of randomly selected gene sets of the same size as the examined gene list. (C) An enrichment analysis for expression in specific tissues or association with different small RNA pathways. Fold enrichment values are color coded. For statistical analysis, p-values were calculated using 10,000 random gene sets identical in their size to the examined gene set. Asterisk denotes statistically significant enrichment values (p-value<0.05).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/40448/elife-40448-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) A Venn diagram analysis of the overlap between gene targets of HRDE-1-bound endo-siRNAs (Buckley et al., 2012) and germline expressed genes (Ortiz et al., 2014). (B) A Venn diagram comparison of gene targets of endo-siRNAs that depend on either SET-25 or SET-32 and genes targeted by known endo-siRNA pathways: HRDE-1 (Buckley et al., 2012), Mutator pathway (Phillips et al., 2014), ERGO-1 dependent small RNA targets (Vasale et al., 2010) and endo-siRNAs dependent on either SET-25 (Lev et al., 2017) or SET-32 (Kalinava et al., 2018).
 
 Since in set-25 the loss of exogenous siRNAs coincided with the loss of heritable RNAi-induced H3K9me3 (Lev et al., 2017), we first tested whether genes that were differentially targeted by endo-siRNAs in set-25 mutants were also marked by H3K9me3. By examining publicly available H3K9me3 data (McMurchy et al., 2017), we found that the 151 genes that lost the endo-siRNAs that target them in set-25 mutants were robustly marked by H3K9me3 in wild type animals (Figure 3B). We also found that in contrast, the 128 genes that had increased endo-siRNA levels that target them in set-25 and mutants were not significantly marked by H3K9me3 (Figure 3—figure supplement 1A). By analyzing an available mRNA-seq dataset (Klosin et al., 2017), we also found a significant enrichment for genes that were upregulated (at the mRNA level) in set-25 mutants amongst the list of SET-25-dependent endo-siRNA targets (1.93-fold enrichment, 18/151 genes, p-value=0.006). This suggests that endo-siRNAs that depend on SET-25 silence targeted gene. Recently, Kalinava et al. sequenced endo-siRNAs from set-32 mutants (Kalinava et al., 2018). Our analysis show that the 337 genes that had reduced levels of endo-siRNAs (fold change >2) in set-32 mutants, were also significantly marked by H3K9me3 (Figure 3B). As expected, these genes showed lower levels of H3K9me3 in set-32 mutants (Figure 3—figure supplement 1B), and genes having increased levels of endo-siRNAs were not significantly marked by H3K9me3 (Figure 3—figure supplement 1A). Together, these results support the hypothesis that H3K9me3 methyltransferases directly support the biogenesis of silencing endo-siRNAs by tri-methylating the H3K9 histones of the endo-siRNAs targeted genes.
 
@@ -68,9 +96,25 @@ Next we examined whether genes that display altered endo-siRNAs levels in set-25
 
 To identify the small RNA pathways which are affected by set-25 and set-32, we tested whether the differentially expressed endo-siRNAs depend on particular argonautes, or associate with specific biosynthesis or functional pathways (Figure 3D). It was previously suggested that the CSR-1 argonaute carries heritable endo-siRNAs that mark endogenous genes (Claycomb et al., 2009), while the HRDE-1 argonaute carries heritable endo-siRNAs that silence foreign or aberrant elements, whose expression could be deleterious, such as transposons (Luteijn et al., 2012; Rechavi, 2014; Shirayama et al., 2012). A strong and significant enrichment (Figure 3D and Figure 3—figure supplement 1C) was found for endo-siRNAs which are carried in the germline by the argonautes WAGO-1 (Gu et al., 2009) and HRDE-1, which is required for inheritance of exogenous siRNAs (Buckley et al., 2012). Both argonautes were found to be involved in gene silencing (Buckley et al., 2012; Gu et al., 2009). Nevertheless, some of the targets of HRDE-1-bound endo-siRNAs are expressed in the germline (Figure 3—figure supplement 2A). This may explain the concurrent enrichment for both germline-expressed genes and targets of HRDE-1-bound endo-siRNAs amongst the gene targets of endo-siRNAs that depend on SET-25 or SET-32. A significant enrichment was also found for Mutator pathway small RNAs (Zhang et al., 2011), ERGO-1-dependent small RNAs, and putative piRNA targeted genes (Bagijn et al., 2012). On the contrary, a significant depletion was found for genes known to be targeted by CSR-1-carried small RNAs, a pathway that was suggested to support the expression of targeted genes (Claycomb et al., 2009; Shen et al., 2018). The helicase EMB-4 (Akay et al., 2017; Tyc et al., 2017) was shown to preferably bind introns of genes targeted by CSR-1; We could not detect a significant enrichment for genes whose introns are bound by EMB-4 (fold change = 1.07 and 0.79, p-value=0.26 and 0.002, for endo-siRNAs dependent on SET-25 or SET-32, respectively). All together, these results suggest that H3K9 methyltransferases are required for the maintenance of a specific sub-class of HRDE-1 and WAGO-1 small RNAs, that are associated with the Mutator and piRNA pathways, and that target protein-coding genes (Figure 3—figure supplement 2B).
 
-## Endo-siRNAs that depend on H3K9me3 methyltransferases target a distinctive subset of newly evolved genes
+### Endo-siRNAs that depend on H3K9me3 methyltransferases target a distinctive subset of newly evolved genes
 
 What distinguishes the target genes of endo-siRNAs that depend on SET-25 and SET-32 methyltransferases? It was recently found that periodic A/T (PATC) sequences can shield germline genes from piRNA-induced silencing and allow germline expression of genes in H3K9me3-rich genomic regions (Frøkjær-Jensen et al., 2016; Zhang et al., 2018). Fittingly, we found that genes targeted by SET-25-dependent and SET-32-dependent endo-siRNAs exhibit a moderate (~9–13% in median values) but significant reduction in PATC density compared to all protein coding genes (Figure 4A, p-value = 0.0026 and 0.0011 for SET-25 and SET-32, respectively). This feature is not general for genes targeted by WAGOs (Worm-specific Argonautes, HRDE-1, WAGO-1 and ERGO-1) associated endo-siRNAs, since these targeted genes have a higher PATC density (Figure 4A, 10% increase in average values, p-value=0.034). In addition, genes targeted by endo-siRNAs that are increased in set-25 or set-32 mutants exhibit significantly increased PATC density (Figure 4—figure supplement 1A). However, we posit that this feature is unlikely to be sufficient for distinguishing between oma-1 and gfp, since the oma-1 gene has a very low PATC density (Figure 4—figure supplement 1B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/40448/elife-40448-fig4-v1.jpg)
+
+**Figure 4.:** (A) A PATC density analysis for SET-25 and SET-32-dependent endo-siRNAs gene targets. The PATC density values (obtained from Frøkjær-Jensen et al., 2016) are presented for all protein-coding genes, gene targets of endo-siRNAs that depend on SET-25 or SET-32 and gene targets of endo-siRNAs associated with WAGO small RNA pathways (HRDE-1,WAGO-1 or ERGO-1). **p-value<0.005, *p-value<0.05, Wilcoxon rank sum test. For clarity of display, values are shown in log2 scale (after addition of 1). The median (black line) and average levels (numbers) of PATC density levels of each plot are indicated (log2 scale). (B) An enrichment analysis of genes conserved at different levels and duplicated genes amongst gene targets of SET-25- and SET-32-dependent endo-siRNAs. The gene sets were generated based on the homology field in WormBase that details the orthologs and paralogs of each nematode gene. We defined a duplicated gene as a gene that has a paralog in C. elegans. We define genes unique to C. elegans as genes that lack an ortholog amongst the nematode species we examined (see Materials and methods). For statistical analysis, control enrichment values were obtained from 10,000 random gene sets with the same size as the examined endo-siRNA-target gene list. ****p-value<0.0001,***p-value<0.001, *p-value<0.05 (C) An analysis of endo-siRNAs fold changes in rnp-2 mutants for genes targets of endo-siRNAs downregulated or upregulated in set-25 mutants or all genes. All p-values<0.001, Wilcoxon rank sum test. (D) An analysis of intron numbers of gene targets of SET-25- and SET-32-dependent endo-siRNAs and WAGO-associated endo-siRNAs compared to all protein-coding genes. In cases of genes that have more than one transcript, the average intron value is used. The median intron number of each plot is indicated (log2 scale). ***p-value<0.001,**p-value<0.005, Wilcoxon rank sum test. (E) An analysis of splicing motif divergence score (based on Newman et al., 2018) of gene targets of SET-25 and SET-32-dependent endo-siRNAs, WAGO associated endo-siRNAs and all protein-coding genes. The median score levels of each plot are indicated. p-value>0.05, Wilcoxon rank sum test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40448/elife-40448-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) A PATC density analysis for genes targeted by endo-siRNAs upregulated in set-25 and set-32 mutants. The PATC density values (obtained from Frøkjær-Jensen et al., 2016) are presented for all protein-coding genes, gene targets of endo-siRNAs that are upregulated in set-25 and set-32 mutants (log2 scale). ***p-value<0.001, **p-value<0.005, Wilcoxon rank sum test. (B) A histogram of PATC density of all of C. elegans genes (Blue) and the PATC density of the oma-1 gene (Red dot). The median PATC density of all genes is 11.00 (marked with black vertical line), 243 points counted in the rightmost bin have values greater than 178.47.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/40448/elife-40448-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) An analysis of endo-siRNAs fold changes in rnp-2 mutants for genes targets of endo-siRNAs downregulated or upregulated in set-32 mutants or all genes. ***p-values<0.001, Wilcoxon rank sum test. (B) The lower intron numbers found in genes targeted by SET-25 dependent endo-siRNAs are not explained by smaller coding sequence sizes. An analysis of coding sequence length of genes targeted by SET-25 dependent endo-siRNAs and all protein-coding genes. p-value=0.8673, Wilcoxon rank sum test. This figure relates to Figure 4D. (C and D) The proportion of genes with different ratios of small RNAs aligned to Intron-Exon-junction/Exon Exon-junction (based on Newman et al., 2018) are presented. For statistical analysis, control proportion values (Gray) were obtained from 10,000 random gene sets (each set was identical in size to the examined gene set), ****p-value<0.0001,*p-value<0.05. The proportion values of the examined gene set are shown (Red) for gene targets of SET-25 dependent endo-siRNAs (C) and SET-32 dependent endo-siRNAs (D). (E) An analysis of small RNAs aligned to the studied gfp construct. Shown are small RNAs aligned to the gfp construct used in this study in naive wild type animals (Lev et al., 2017). A scheme of the gfp transgene construct used in this study is also presented. The scheme denotes all the relevant endogenous and foreign elements included in the construct. Information regarding the PATC on the Pmex-5 promoter was obtained from Frøkjær-Jensen et al. (2016).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/40448/elife-40448-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) An analysis of H3K9me3 levels (based on published data from McMurchy et al., 2017) of newly acquired genes in C. elegans. The newly acquired gene set was generated based on the ‘Homology’ field of the C. elegans genes in WormBase. As a control, shown are the H3K9me3 signature of 500 random gene sets identical in size to the examined gene set. (B) An enrichment analysis for newly acquired genes, having no orthologues inother nematodes amongst different endo-siRNAs pathways. Fold enrichment values are color coded. Asterisk denotes statistically significant enrichment values (p-value<0.005). P-values were calculated using 10,000 random gene sets identical in their size to the examined gene set.
 
 The lists of genes which are targeted by SET-25- and SET-32-dependent endo-siRNAs were enriched for genes targeted by ERGO-1-dependent endo-siRNAs (Figure 3D). Many of the genes that are targeted by ERGO-1-bound endo-siRNAs are duplicated genes (Fischer et al., 2011; Vasale et al., 2010). Accordingly, we found an enrichment for duplicated genes amongst the genes that had reduced endo-siRNA levels targeting them in set-25 and set-32 mutants (Figure 4B). An additional characteristic of the set of genes targeted by ERGO-1 endo-siRNAs is an enrichment for poorly conserved genes, that have fewer introns, and possess splicing site sequences that diverge from the consensus sequence (Fischer et al., 2011; Newman et al., 2018). It was recently suggested that these poorly conserved genes are targeted for silencing because their aberrant or”non-self-like’ splicing signals are detected by the splicing machinery (Newman et al., 2018).
 
@@ -96,19 +140,162 @@ Future studies will hopefully reveal why some recently evolved genes, but not ot
 
 ## Materials and methods
 
-## Cultivation of the worms
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source of reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (E. coli)</td>
+      <td>OP50</td>
+      <td>(Brenner, 1974)</td>
+      <td>Op50 RRID:WB-STRAIN:OP50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (E. coli)</td>
+      <td>anti-gfp RNAI bacteria</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (E. coli)</td>
+      <td>anti-oma-1 RNAi bacteria</td>
+      <td>Ahringer RNAi library (Kamath and Ahringer, 2003)</td>
+      <td>4-4-3-C01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (E. coli)</td>
+      <td>anti-sup-35 RNAi bacteria</td>
+      <td>Vidal RNAi library (Rual et al., 2004)</td>
+      <td>11006-E2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (E. coli)</td>
+      <td>anti-fog-2 RNAi bacteria</td>
+      <td>Vidal RNAi library (Rual et al., 2004)</td>
+      <td>10011-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>N2</td>
+      <td>CGC</td>
+      <td>N2 RRID:WB-STRAIN:N2_(ancestral)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>set-32(ok1457) ; oma-1(zu405)</td>
+      <td>CGC</td>
+      <td>BFF25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>mjIs134[pmex-5::gfp::h2b::tbb-2]</td>
+      <td>Erik Miska's lab (Univeristy of Cambridge)</td>
+      <td>SX1263</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>oma-1(zu405)</td>
+      <td>CGC</td>
+      <td>TX20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>pha-1(e2123)</td>
+      <td>CGC</td>
+      <td>GE24</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>set-32(ok1457);mjIs134[pmex-5::gfp::h2b::tbb-2]</td>
+      <td>This study</td>
+      <td>BFF24</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>met-2(n4256);set-25(n5021);set-32(ok1457);mjIs134[pmex-5::gfp::h2b::tbb-2]</td>
+      <td>This study</td>
+      <td>BFF26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>met-2(n4256);set-25(n5021);set-32(ok1457);oma-1(zu405)</td>
+      <td>This study</td>
+      <td>BFF27</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>met-2(n4256);set-32(ok1457);mjIs134[pmex-5::gfp::h2b::tbb-2]</td>
+      <td>This study</td>
+      <td>BFF28</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K9me3</td>
+      <td>Abcam</td>
+      <td>RRID:AB_306848</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Image J</td>
+      <td>Opensource: https://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>MATLAB MathWorks</td>
+      <td>https://www.mathworks.com/</td>
+      <td>RRID:SCR_016651</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cultivation of the worms
 
 Standard culture techniques were used to maintain the nematodes on nematode growth medium (NGM) plates seeded with OP50 bacteria. Extreme care was taken to avoid contamination or starvation, and contaminated plates were discarded from the analysis.
 
-## RNAi bacteria
+### RNAi bacteria
 
 HT115 Escherichia coli strains expressing dsRNAs were used: anti-oma-1 RNAi bacteria were obtained from the Ahringer RNAi library (Kamath and Ahringer, 2003). Anti-fog-2 and anti-sup-35 RNAi were obtained from the Vidal RNAi library (Rual et al., 2004). For the sequence of the anti-gfp RNAi see supplemental data.
 
-## RNAi experiments
+### RNAi experiments
 
 RNAi HT115 E.coli bacteria were incubated in lysogeny broth (LB) containing Carbenicillin (25 μg/mL) at 37°C overnight with shaking. Bacterial cultures were seeded onto NGM plates containing isopropyl β-D-1-thiogalactopyranoside (IPTG; 1 mM) and Carbenicillin (25 μg/mL) and grown overnight in the dark at room temperature. Five L4 animals were placed on RNAi bacteria plates and control empty-vector bearing HT115 bacteria plates and maintained at 20°C for 2 days and then removed. The progeny hatching on these plates was termed the P0 generation. In the next generations the worms were grown on E.coli OP50 bacteria. For anti-gfp RNAi experiments, four L4 animals were placed on plates for two days to lay the next generation. In every generation approximately 60 one day adult worms were collected and photographed per condition (see below). For anti-oma-1 experiments, in each generation twelve individual L4 staged worms were placed in individual wells of a twelve well plate. Four days later the number of fertile worms was assessed (at least one progeny) and 12 individual L4 progeny worms were chosen from the most fertile well to continue to the next generation. For and anti-sup-35 RNAi experiments, in each generation 12 individual L4 staged worms were placed in individual wells of a 12-well plate. Two days later the adult worms were removed. Two days later the number of developing worms was counted and twelve individual L4 progeny worms were chosen from the well with the highest number of developing progeny to continue to the next generation. For and anti-fog-2 RNAi experiments, five L4 worms were crossed on RNAi bacteria for 24 hr. The crossed worms were transferred to fresh RNAi bacteria plates. In each generation, five resulting L4 progeny from the cross were crossed on control bacteria plates and ~40 L4 worms were picked to control bacteria plates and photographed a day later. The number of sterile worms with stacked oocytes was assayed.
 
-## Germline GFP expression analysis
+### Germline GFP expression analysis
 
 Percentage silencing analysis: for each condition, around 60 animals were mounted on 2% agarose slides and paralyzed in a drop of M9 with 0.01% levamisole/0.1% tricaine. The worms were photographed with 10x objective using a BX63 Olympus microscope (Exposure time of 200 ms, and gain of 2). The images were analyzed with ImageJ2 software, and the percentage of worms lacking any observable germline GFP signal was calculated.
 
@@ -116,11 +303,11 @@ GFP expression level analysis: for each condition, the GFP fluorescence level of
 
 CTCF value was calculated as follows: CTCF = Integrated density of selected object X – (area of selected object X * mean fluorescence of background readings). The obtained CTCF value was normalized to the average CTCF value obtained from photographs of control animals of the same genotype, generation and age which were fed on control plates.
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 Chromatin immunoprecipitation experiments were conducted as described in Lev et al. (2017). For anti-H3K9me3 ChIP experiments the abcam, ab8898 antibodies were used.
 
-## qPCR reactions
+### qPCR reactions
 
 All Real time PCR reactions were performed using the KAPA SYBR Fast qPCR and run in the Applied Biosystems 7300 Real Time PCR System.
 
@@ -152,34 +339,38 @@ eft-3 FOR: CCAACATGATTAGTCAGATGACC
 
 eft-3 REV: CTAGGAGTTAGATGTGCAGG.
 
-## Information on the sequencing libraries analyzed in this paper
+### Information on the sequencing libraries analyzed in this paper
 
 All the studied publicly available sequencing libraries were prepared from synchronized young adult worms grown at 20 degrees (Kalinava et al., 2018; Klosin et al., 2017; Lev et al., 2017; McMurchy et al., 2017). For more information see the original publications and GEO information: A. set-25 small RNAs (Rechavi and Lev, 2017; GEO accession: GSE94798), B. set-25 mRNA (Klosin et al., 2017; GEO accession: GSE83528), C. set-32 small RNAs (Kalinava et al., 2018; GEO accession: GSE117662, the set-32 (red11) allele data were used)., D. set-32 and wild type H3K9me3 ChIP-seq (Kalinava et al., 2018; GEO accession: GSE117662). E. wild type H3K9me3 ChIP-seq (McMurchy et al., 2017; GEO accession: GSE87524).
 
-## Bioinformatic genome-wide endo-siRNAs analysis
+### Bioinformatic genome-wide endo-siRNAs analysis
 
 Small RNA analysis was conducted as previously described (Lev et al., 2017). Briefly, adapters were cut from the reads using Cutadapt (Martin, 2011). Reads that were not cut or were less than 19 bp long, were removed. The quality of the libraries was assessed by FastQC (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/). Reads were mapped to the C. elegans genome (WS235) using Bowtie2 (Langmead and Salzberg, 2012). In total 31,053,062, 21,913,420 and 18,372,739 reads were mapped in the three wild type biological repeats and 21,258,241, 19,925,004 and 21,391,091 reads were mapped in the three set-25 biological repeats. The mapped reads were then counted using the python script HTseq_count (Langmead and Salzberg, 2012) using. gff feature file from wormbase.org (version WBcel235). Differential expression was analyzed using DESeq2 (Love et al., 2014). p-adjusted value <0.1 was regarded as statistically significant. The set-32 data from Kalinava et al (Kalinava et al., 2018) GEO was analyzed in a similar fashion. The reads the 5' barcode and 3' linker were trimmed using Cutadapt (Martin, 2011), in accordance the information supplied by Kalinava et al in GEO (accession number: GSE117662). Next, reads were filtered to lengths of 20–23 bp and aligned (not allowing mismatches) to the C. elegans genome (ce10) by Shortstack (Axtell, 2013). In total 1,342,884 and 1,006,568 reads were mapped in the wild type and set-32(red11) small RNA samples, respectively. The reads mapping to each genomic were counted by HTseq_count (Langmead and Salzberg, 2012). Since one biological sample was available, significantly altered small RNAs were defined as genes having fold change of larger than 2 (up-regulated) or smaller than 0.5 (downregulated).
 
-## Bioinformatic genome-wide analysis of H3K9me3 signal
+### Bioinformatic genome-wide analysis of H3K9me3 signal
 
 For analysis of H3K9me3 signal on different genes in wild type worms, the processed H3K9me3 data (aligned and normalized) from the McMurchy et al. study was used (McMurchy et al., 2017; GEO accession GSE87524). The shown H3K9me3 signal represents the averaged H3K9me3 signal in two replicates of young adults. For analysis of the H3K9me3 levels in wild type and set-32 mutants the raw data from the Kalinava et al. study was used (Kalinava et al., 2018; GEO accession: GSE117662). The raw data were analyzed in a similar fashion to the analysis conducted by McMurchy et al. Briefly, adaptors were trimmed using Cutadapt (Martin, 2011) and aligned using Bowtie2 (Langmead and Salzberg, 2012). H3K9me3-enriched regions were identified using MACS2 (Lupien et al., 2008) and the H3K9me3 signal was corrected for biases using BEADS (Cheung et al., 2011).
 
-## Bioinformatic mRNA expression analysis
+### Bioinformatic mRNA expression analysis
 
 Processed files with raw counts of reads mapping to each gene were downloaded from GEO (Klosin et al., 2017; GEO accession: GSE83528). Differential expressed genes were detected using DESeq2 (adjusted p-value<0.1).
 
-## Bioinformatic gene enrichment analysis
+### Bioinformatic gene enrichment analysis
 
 The enrichment values denote the ratio between (A) the observed representations of a specific gene set within a defined differentially expressed genes group, to (B) the expected one, that is the representation of the examined gene set among all protein-coding genes in C. elegans. The analysis was done for 15 gene sets: (1) 7727 genes enriched in oocytes gonads (Ortiz et al., 2014) and 9012 genes enriched in spermatogenic gonads (Ortiz et al., 2014); we excluded genes with expression lower than 1 RPKM(2) 11427 genes expressed in isolated neurons (Kaletsky et al., 2016). (3) 7176 genes expressed in intestine (Gerstein et al., 2010) (4) 2957 genes expressed in pharynx (Gerstein et al., 2010) (5) 2526 genes expressed in body muscle (Gerstein et al., 2010) (6) 4146 targets of CSR-1 (Claycomb et al., 2009) (7) 1478 targets of HRDE-1 (Buckley et al., 2012) (8) 87 targets of WAGO-1 (Gu et al., 2009) (9) 399 targets of ALG-3/4 class small RNAs (Conine et al., 2010) (10) 1823 targets of mutator class small RNAs (11) 721 EGO-1 dependent small RNA gene targets (Maniar and Fire, 2011), (12) 23 gene targets of small RNAs up-regulated in ego-1 mutants (Maniar and Fire, 2011), (13) 49 genes targeted by 26G-RNAs enriched in ERGO-IP (Vasale et al., 2010) (14) 77 genes depleted of 22G-RNAs in ergo-1 mutants (Vasale et al., 2010), and (15) 348 putative piRNA gene targets (Bagijn et al., 2012). The putative piRNA gene targets were defined as genes for which, in at least one transcript, the ratio of the # 22G-RNA reads at piRNA target sites between wild type to prg-1 is at least 2 (linear scale). Note that the indicated number above achieved after intersection between the various published data sources and the records appears in the *.gff file used by us.
 
-The enrichment value of a given gene set i in differentially expressed gene targeting small RNAs was calculated using the following formula:Enrichment=ObservedExpected=⟮fractionofgenesbelongtothei−thsetamongdifferentiallyexpressedSTGsfractionofgenesbelongtothei−thsetamongallthegenes⟯
+The enrichment value of a given gene set i in differentially expressed gene targeting small RNAs was calculated using the following formula:
+
+$$
+Enrichment=\frac{Observed}{Expected}=⟮\frac{fractionofgenesbelongtothei−thsetamongdifferentiallyexpressedSTGs}{fractionofgenesbelongtothei−thsetamongallthegenes}⟯
+$$
 
 Obtaining the observed-to-expected ratios, we then calculated the corresponding p-values using 10,000 random gene groups identical in size to that of the examined group of differentially expressed genes. Next, the enrichment values of the random sets are ranked and the p-value is determined by the ranking of the examined gene set amongst the ranking of all enrichment values of the random sets.
 
-## Gene sets by conservation
+### Gene sets by conservation
 
 The classification of gene sets by conservation was done by mining the ‘Homology’ field of all the C. elegans protein-coding genes in WormBase (www.wormbase.com). We defined the following three gene sets (Figure 4B):
 
-## Statistical analysis
+### Statistical analysis
 
 For RNAi experiments, Two-way ANOVA tests were used to compare the percentages of the RNAi-affected worms (GFP silencing or fertility for the oma-1 assay) between the tested genotypes. In cases of multiple comparisons between genotypes and across generations, Sidak multiple comparison tests were applied. For GFP fluorescence experiments, Two-way ANOVA tests were used to compare the normalized GFP expression levels between the genotypes and across the biological repeats. For H3K9me3 qPCR-ChIP experiments Two-way ANOVA tests were used to compare the delta-delta-Ct (or delta-Ct) values between the gfp and the oma-1 loci obtained using two different primer sets. In cases of comparisons between genotypes and loci the Sidak multiple comparison tests were applied. Biological replicates were performed using separate populations of animals. Statistical tests were performed using GraphPad Prism software (Graphpad Prism) version 6. The statistical analysis used for each of the bioinformatics analyses is listed under the corresponding bioinformatics methods.

@@ -19,13 +19,13 @@
 
 ### Affiliations
 
-1. https://ror.org/011ashp19 Department of Obstetrics/Gynecology, Key Laboratory of Obstetric, Gynecologic and Pediatric Diseases and Birth Defects of Ministry of Education, West China Second University Hospital, Sichuan University Chengdu China
-2. https://ror.org/011ashp19 NHC Key Laboratory of Chronobiology, Sichuan University Chengdu China
-3. https://ror.org/011ashp19 Reproduction Medical Center of West China Second University Hospital, Key Laboratory of Obstetric, Gynecologic and Pediatric Diseases and Birth Defects of Ministry of Education, Sichuan University Chengdu China
-4. https://ror.org/00726et14 Department of Pediatrics, West China Second University Hospital, Sichuan University Chengdu China
-5. https://ror.org/011ashp19 West China School of Medicine, Sichuan University Chengdu China
-6. https://ror.org/011ashp19 West China School of Basic Medicine and Forensic Medicine, Sichuan University Chengdu China
-7. https://ror.org/017z00e58 Chongqing Key Laboratory of Human Embryo Engineering, Center for Reproductive Medicine, Women and Children’s Hospital of Chongqing Medical University Chongqing China
+1. Department of Obstetrics/Gynecology, Key Laboratory of Obstetric, Gynecologic and Pediatric Diseases and Birth Defects of Ministry of Education, West China Second University Hospital, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+2. NHC Key Laboratory of Chronobiology, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+3. Reproduction Medical Center of West China Second University Hospital, Key Laboratory of Obstetric, Gynecologic and Pediatric Diseases and Birth Defects of Ministry of Education, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+4. Department of Pediatrics, West China Second University Hospital, Sichuan University Chengdu China ([ROR:00726et14](https://ror.org/00726et14))
+5. West China School of Medicine, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+6. West China School of Basic Medicine and Forensic Medicine, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+7. Chongqing Key Laboratory of Human Embryo Engineering, Center for Reproductive Medicine, Women and Children’s Hospital of Chongqing Medical University Chongqing China ([ROR:017z00e58](https://ror.org/017z00e58))
 8. Chongqing Clinical Research Center for Reproductive Medicine, Chongqing Health Center for Women and Children Chongqing China
 
 † Corresponding author
@@ -48,45 +48,623 @@ In the present study, we identified four biallelic variations in DNAH3 in four u
 
 ## Results
 
-## Identification of biallelic pathogenic variants of DNAH3 in four unrelated infertile men
+### Identification of biallelic pathogenic variants of DNAH3 in four unrelated infertile men
 
 In the present study, we employed whole-exome sequencing (WES) to identify potential candidate variants associated with primary asthenoteratozoospermia. After comprehensive filtering and screening, we identified 98, 101, 67, and 91 candidate variants for Patient 1, Patient 2, Patient 3, and Patient 4, respectively (Figure 1—source data 1). To refine these candidate variants, we excluded those whose corresponding genes were not expressed in the human or mouse testis, were associated with diseases unrelated to male infertility, or were monoallelic variants. Ultimately, only bi-allelic variants in DNAH3 (NG_052617.1, NM_017539.2, NP_060009.1) remained, suggesting as the pathogenic variants responsible for the infertility of the patients: a compound heterozygous mutation of c.3590C>T (p.Pro1197Leu) and c.3590C>G (p.Pro1197Arg) in Patient 1, a homozygous missense mutation of c.4837G>T (p.Ala1613Ser) in Patient 2, a compound heterozygous mutation of c.5587del (p.Leu1863*) and c.10355C>T (p.Ser3452Leu) in Patient 3, and a compound heterozygous mutation of c.2314C>T (p.Arg772Trp) and c.4045G>A (p.Asp1349Asn) in Patient 4 (Figure 1A). Importantly, routine semen analysis revealed that all patients showed extremely reduced sperm motility and a high proportion of sperm tail defects (Table 1). These variants either were not recorded or had an extremely low frequency in East Asian population in multiple public population databases, including the ExAC browser, GnomAD and the 1000 Genomes Project, and were predicted to be potentially deleterious by SIFT (https://sift.bii.a-star.edu.sg/), PolyPhen-2 (http://genetics.bwh.harvard.edu/pph2/), MutationTaster (https://www.mutationtaster.org/), and CADD (https://cadd.gs.washington.edu/; Table 2; Ng and Henikoff, 2003; Adzhubei et al., 2010; Schwarz et al., 2014; Rentzsch et al., 2019). Next, Sanger sequencing confirmed these variants in the probands, and their fertile parents carried the heterozygous variants (Figure 1A). Moreover, the variant sites are localized in several domains of the DNAH3 protein and are highly conserved across species (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig1-v2.jpg)
 
-**Figure 1.:** DNAH3 from four unrelated infertile families.(A) Pedigrees of four families affected by DNAH3 variants (M1–M7). Black arrows indicate the probands in these families. (B) Location of the variants and conservation of affected amino acids in DNAH3. Black arrows indicate the position of the variants. (C) Immunofluorescence staining of DNAH3 in sperm from the patients and normal control. Red, DNAH3; green, α-Tubulin; blue, DAPI; scale bars, 5 μm. (D) Western blotting analysis of DNAH3 expressed in spermatozoa from the patients and normal control.Figure 1—source data 1.Figure 1—source data 2.Figure 1—source data 3.Figure 1D.Figure 1—source data 4.Figure 1D.
+**Figure 1.:** (A) Pedigrees of four families affected by DNAH3 variants (M1–M7). Black arrows indicate the probands in these families. (B) Location of the variants and conservation of affected amino acids in DNAH3. Black arrows indicate the position of the variants. (C) Immunofluorescence staining of DNAH3 in sperm from the patients and normal control. Red, DNAH3; green, α-Tubulin; blue, DAPI; scale bars, 5 μm. (D) Western blotting analysis of DNAH3 expressed in spermatozoa from the patients and normal control.
+
+**Table 1.**
+ Semen analysis of the patients in the present study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Patient 1</th>
+      <th>Patient 2</th>
+      <th>Patient 3</th>
+      <th>Patient 4</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Semen parameters</td>
+      <td>Semen volume (ml)</td>
+      <td>4.3</td>
+      <td>3.3</td>
+      <td>0.8</td>
+      <td>4.6</td>
+      <td>≥1.5</td>
+    </tr>
+    <tr>
+      <td>Semen concentration (106 /ml)</td>
+      <td>2.0</td>
+      <td>0.5</td>
+      <td>11.0</td>
+      <td>21.0</td>
+      <td>≥15.0</td>
+    </tr>
+    <tr>
+      <td>Motility (%)</td>
+      <td>6.0</td>
+      <td>3.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>≥40.0</td>
+    </tr>
+    <tr>
+      <td>Progressive motility (%)</td>
+      <td>0</td>
+      <td>2.3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>≥32.0</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Sperm morphology</td>
+      <td>Normal (%)</td>
+      <td>1.3</td>
+      <td>1.1</td>
+      <td>1.8</td>
+      <td>1.2</td>
+      <td>≥4.0</td>
+    </tr>
+    <tr>
+      <td>Tail defects (%)</td>
+      <td>91.3</td>
+      <td>87.5</td>
+      <td>96.5</td>
+      <td>97.5</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_-,not applicable._
+
+**Table 2.**
+ Variants analysis of the patients in the present study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Patient 1</th>
+      <th>Patient 2</th>
+      <th colspan="2">Patient 3</th>
+      <th colspan="3">Patient 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Variant</td>
+      <td>cDNA mutation *</td>
+      <td>c.3590C&gt;T</td>
+      <td>c.3590C&gt;G</td>
+      <td>c.4837G&gt;T</td>
+      <td>c.5587del</td>
+      <td colspan="2">c.10355C&gt;T</td>
+      <td>c.2314C&gt;T</td>
+      <td>c.4045G&gt;A</td>
+    </tr>
+    <tr>
+      <td>Protein alteration</td>
+      <td>p.Pro1197Leu</td>
+      <td>p.Pro1197Arg</td>
+      <td>p.Ala1613Ser</td>
+      <td>p.Leu1863*</td>
+      <td colspan="2">p.Ser3452Leu</td>
+      <td>p.Arg772Trp</td>
+      <td>p.Asp1349Asn</td>
+    </tr>
+    <tr>
+      <td>Mutation type</td>
+      <td>Missense</td>
+      <td>Missense</td>
+      <td>Missense</td>
+      <td>Nonsense</td>
+      <td colspan="2">Missense</td>
+      <td>Missense</td>
+      <td>Missense</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Allele frequency</td>
+      <td>ExAC_EAS</td>
+      <td>0.0001</td>
+      <td>0</td>
+      <td>0.004165</td>
+      <td>0</td>
+      <td colspan="2">0.0006</td>
+      <td>0.0019</td>
+      <td>0.0065</td>
+    </tr>
+    <tr>
+      <td>GnomAD_EAS</td>
+      <td>0.00005016</td>
+      <td>0</td>
+      <td>0.00277415</td>
+      <td>0</td>
+      <td colspan="2">0.0008</td>
+      <td>0.002</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>1000 Genomes Project_EAS</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0050</td>
+      <td>0</td>
+      <td colspan="2">0</td>
+      <td>0.0040</td>
+      <td>0.0069</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Function prediction</td>
+      <td>SIFT</td>
+      <td>Deleterious</td>
+      <td>Deleterious</td>
+      <td>Deleterious</td>
+      <td>/</td>
+      <td colspan="2">Tolerated</td>
+      <td>Deleterious</td>
+      <td>Deleterious</td>
+    </tr>
+    <tr>
+      <td>Polyphen-2</td>
+      <td>Probably damaging</td>
+      <td>Probably damaging</td>
+      <td>Probably damaging</td>
+      <td>/</td>
+      <td colspan="2">Probably damaging</td>
+      <td>Probably damaging</td>
+      <td>Probably damaging</td>
+    </tr>
+    <tr>
+      <td>Mutation Taster</td>
+      <td>Disease causing</td>
+      <td>Disease causing</td>
+      <td>Disease causing</td>
+      <td>/</td>
+      <td colspan="2">Disease causing</td>
+      <td>Disease causing</td>
+      <td>Disease causing</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CADD †</td>
+      <td>33</td>
+      <td>29.5</td>
+      <td>27.5</td>
+      <td>/</td>
+      <td colspan="2">25.4</td>
+      <td>27.9</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_/,not applicable.*NM_017539.2.†score >4.0 is predicted to be damaging._
 
 Strikingly, immunofluorescence staining revealed that DNAH3 was exclusively resided in the tail and concentrated in the midpiece of control sperm. However, the fluorescence signal of DNAH3 was hardly detected in the patients’ spermatozoa (Figure 1C). Additionally, subsequent western blotting analysis yielded consistent results with immunofluorescence staining, indicating that these variants led to disrupted expression of DNAH3 (Figure 1D). These results suggested that biallelic variants in DNAH3 disrupted DNAH3 expression and might be responsible for the infertility of the four patients.
 
-## Asthenoteratozoospermia phenotype is observed in patients with DNAH3 variants
+### Asthenoteratozoospermia phenotype is observed in patients with DNAH3 variants
 
 We next investigated the aberrant sperm morphology of the patients using Papanicolaou staining and SEM analysis. Notably, the tails of sperm from the patients exhibited a typical phenotype associated with MMAF, including coiled, short, bent, irregular, and/or absent flagella (Figure 2A and B, Figure 2—figure supplement 1). In addition, a fraction of defects in the sperm head were also present in the patients’ sperm (Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig2-v2.jpg)
+
+**Figure 2.:** (A, B) Abnormal sperm morphology was observed through Papanicolaou staining (A), and SEM analysis (B) compared to normal control. Scale bars, 5 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig2-figsupp1-v2.jpg)
+
 TEM was employed to determine the ultrastructure of the sperm from the patients. Compared to the integrated and well-organized ‘9 + 2’ axonemal arrangement of the sperm flagella from the normal control, spermatozoa from the patients showed absent or disordered CPs, MTDs, and outer dense fibers (ODFs) in different regions of the flagella (Figure 3A, Figure 3—figure supplement 1). Interestingly, the IDAs of sperm flagella of the patients were hardly captured compared to the control (Figure 3A). Additionally, in the midpiece of sperm flagella of the patients, dissolved mitochondrial material was also observed evidently under TEM (Figure 3A). We next conducted immunofluorescence staining to label the mitochondria of patients’ sperm with TOM20, a subunit of the mitochondrial import receptor. Remarkably, in contrast to the robust TOM20 signals observed in the normal control, the TOM20 signals in the sperm from the patients were considerably diminished, indicating a disrupted mitochondrial function (Figure 3B). Together, these data suggested that DNAH3 may function in sperm flagellar development, and loss-of-function variants were associated with MMAF in humans.
 
-## DNAH3 is exclusively expressed in the sperm flagella of humans and mice
+![Figure 3.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig3-v2.jpg)
+
+**Figure 3.:** (A) TEM analysis of sperm obtained from a normal control and patients harboring DNAH3 variants. Cross-sections of the midpiece, principal piece and endpiece of sperm from normal control showed the typical ‘‘9+2’’ microtubule structure, and an IDA and an ODA were displayed on the A-tube of each microtubule doublet. Cross-sections of the midpiece, principal piece and endpiece of sperm from the patients displayed absent or disordered CPs, MTDs and ODFs, as well as an evident missing of the IDAs in different pieces of the flagella. M, mitochondria sheath; ODF, outer dense fiber; MTD, microtubule doublets; CP, central pair; IDA, inner dynein arms; ODA, outer dynein arms. Scale bars, 200 nm. (B) Immunofluorescence staining of TOM20 in sperm from the patients and normal control. Red, TOM20; green, α-Tubulin; blue, DAPI; scale bars, 5 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig3-figsupp1-v2.jpg)
+
+### DNAH3 is exclusively expressed in the sperm flagella of humans and mice
 
 To further understand the function of DNAH3 in male reproduction, we explored the expression pattern of DNAH3 in humans and mice. qPCR results revealed that Dnah3 was predominantly expressed in the mouse testis (Figure 4—figure supplement 1A). Moreover, when observing the expression of Dnah3 in testes from mice at different postnatal days, we found that Dnah3 expression was significantly elevated beginning on postnatal Day 22, peaked at postnatal Day 30, and maintained a stable expression level thereafter (Figure 4—figure supplement 1B). In addition, germ cells at different stages were isolated from the testes of humans and mice and were stained with anti-DNAH3 antibody. The results showed that DNAH3 was expressed in the cytoplasm of spermatocytes and spermatogonia and then obviously in the flagellum of early and late spermatids (Figure 4—figure supplement 2A, B). These expression data suggest that DNAH3 may play an important role in sperm flagellar development during spermatogenesis in humans and mice.
 
-## Deletion of Dnah3 causes male infertility in mice
+### Deletion of Dnah3 causes male infertility in mice
 
 Considering the absent expression of DNAH3 in the patient sperm, we generated Dnah3 KO mice using CRISPR‒Cas9 technology to further confirm the essential role of DNAH3 in spermatogenesis (Figure 4—figure supplement 3A). PCR, qPCR, and immunofluorescence staining were used to confirm that Dnah3 was null in KO mice (Figure 4—figure supplement 3B–E). The Dnah3 KO mice survived without any evident abnormalities in development and behavior. H&E staining further revealed that there were no histological differences in the lung, brain, eye, or oviduct between wild-type (WT) and Dnah3 KO mice (Figure 4—figure supplement 4A). In addition, no obvious abnormalities in ciliary development were observed in these organs in KO mice compared to WT mice (Figure 4—figure supplement 4B). The Dnah3 KO female mice were fertile with normal oocyte development (Figure 4—figure supplement 5A). However, the Dnah3 KO male mice were completely infertile (Figure 4A). We next examined the testis and epididymis of Dnah3 KO male mice to elucidate the etiology of infertility. There was no detectable difference in the testis/body weight ratio of Dnah3 KO mice when compared to WT mice (Figure 4—figure supplement 5B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig4-v2.jpg)
+
+**Figure 4.:** (A) Fertility of Dnah3 KO mice. The KO male mice were infertile (n=five biologically independent WT mice or KO mice; Student’s t test; *, p<0.05; NS, no significance; error bars, s.e.m.). (B) TEM analysis of the cross-sections of spermatozoa from Dnah3 KO mice revealed an obvious absence of IDAs in different pieces of the flagella compared to WT mice. M, mitochondrion sheath; ODF, outer dense fiber; MTD, microtubule doublet; CP, central pair; IDA, inner dynein arm; ODA, outer dynein arm. Scale bars, 200 nm. (C) Disrupted mitochondria were observed in spermatozoa tail from Dnah3 KO mice by TEM analysis. The yellow arrows indicate the normal mitochondria. The red arrowheads indicate the dilated intermembrane spaces and dissolved mitochondrial material. M, mitochondrion sheath. Scale bars, 200 nm. (D) Immunofluorescence staining of SLC25A4 indicated impaired mitochondrial formation in Dnah3 KO mice compared to WT mice. Red, SLC25A4; green, α-Tubulin; blue, DAPI; scale bars, 5 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) qPCR analysis revealed that Dnah3 was highly expressed in the mouse testis. (B) qPCR analysis showed that Dnah3 expression was significantly elevated beginning on postnatal Day 12, peaked at postnatal Day 30, and maintained a stable expression level thereafter.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Immunofluorescence staining of DNAH3 in isolated mouse germ cells. Pink, PNA; green, DNAH3; blue, DAPI; scale bars, 5 μm. (B) Immunofluorescence staining of DNAH3 in isolated human germ cells. Pink, PNA; green, DNAH3; blue, DAPI; scale bars, 5 μm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Schematic illustration of the strategy for the generation of Dnah3 KO mice. (B, C) PCR sequencing (B) and qPCR (C) were used to confirm the genotype and KO efficiency (n=three biologically independent WT mice or KO mice; Student’s t test; *, p<0.05; error bars, s.e.m.). (D) Immunofluorescence staining of DNAH3 in testis of Dnah3 KO mice and WT mice. Green, DNAH3; blue, DAPI; scale bars, 75 μm. (E) Immunofluorescence staining of DNAH3 in spermatozoa isolated from the cauda epididymis of Dnah3 KO mice and WT mice. Red, DNAH3; green, α-Tubulin; blue, DAPI; scale bars, 5 μm.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) H&E staining of lung, brain, eye, and oviduct from Dnah3 KO mice and WT mice. Scale bars, 100 μm. (B) Analysis of ciliary development in the lung, brain, eye, and oviduct from Dnah3 KO mice and WT mice by using immunofluorescence staining. Green, Ac-Tubulin; blue, DAPI; scale bars, 20 μm.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) H&E staining of ovary tissue sections from 8-week-old Dnah3 KO female mice and WT female mice. Scale bars, 75 μm (n=three biologically independent WT mice or KO mice). (B) Sizes of the testis and epididymis of the 8-week-old Dnah3 KO and WT mice (n=three biologically independent WT mice or KO mice; Student’s t test; NS, no significance; error bars, s.e.m.).
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** (A, B) Papanicolaou staining (A), and SEM analysis (B) revealed morphological defects in partial spermatozoa from Dnah3 KO mice compared to WT mice. Scale bars in (A), 5 μm; scale bars in (B), 2.5 μm. (n=three biologically independent WT mice or KO mice; Student’s t test; error bars, s.e.m.). (C) The percentage of aberrant axonemal arrangement in different cross-sections of sperm from WT mice and Dnah3 KO mice. (n=three biologically independent WT mice or KO mice; error bars, s.e.m.). (D) The percentage of microtubule doublets that presented IDAs in WT mice and Dnah3 KO mice. (n=three biologically independent WT mice or KO mice; Student’s t test; error bars, s.e.m.). (E) Statistics of malformed mitochondria in the midpiece of sperm from WT mice and Dnah3 KO mice. (n=three biologically independent WT mice or KO mice; Student’s t test; error bars, s.e.m.).
+
 Moreover, subsequent computer-assisted sperm analysis (CASA) also showed that sperm isolated from the cauda epididymis were slightly decreased, and nearly all sperm were completely immobile (Table 3, Figure 4—video 1 and Figure 4—video 2). Papanicolaou staining and SEM analysis revealed morphological defects in partial spermatozoa from Dnah3 KO mice, including coiled, bent, and irregular flagella, as well as aberrant heads and acephalic spermatozoa (Figure 4—figure supplement 6A, B).
+
+**Table 3.**
+ Semen analysis using CASA in the Dnah3 KO mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>WT</th>
+      <th>KO</th>
+      <th>p* value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Semen parameters</td>
+    </tr>
+    <tr>
+      <td>Sperm concentration (106/ml) †</td>
+      <td>112.32±18.26</td>
+      <td>105.17±11.15</td>
+      <td>0.059</td>
+    </tr>
+    <tr>
+      <td>Motility (%) *</td>
+      <td>71.56±3.97</td>
+      <td>4.37±1.15</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Progressive motility (%) *</td>
+      <td>60.36±4.32</td>
+      <td>4.37±1.15</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td colspan="4">Sperm locomotion parameters</td>
+    </tr>
+    <tr>
+      <td>Curvilinear velocity (VCL) (μm/s)*</td>
+      <td>67.54±6.79</td>
+      <td>9.07±1.22</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Straight-line velocity (VSL) (μm/s)*</td>
+      <td>28.91±4.86</td>
+      <td>2.68±0.52</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Average path velocity (VAP) (μm/s)*</td>
+      <td>39.02±5.31</td>
+      <td>3.85±0.82</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Amplitude of lateral head displacement (ALH) (μm)*</td>
+      <td>0.71±0.03</td>
+      <td>0.13±0.04</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Linearity (LIN)*</td>
+      <td>0.43±0.07</td>
+      <td>0.30±0.02</td>
+      <td>0.037</td>
+    </tr>
+    <tr>
+      <td>Wobble (WOB,=VAP/VCL)*</td>
+      <td>0.58±0.06</td>
+      <td>0.42±0.05</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <td>Straightness (STR,=VSL/VAP)</td>
+      <td>0.74±0.22</td>
+      <td>0.70±0.13</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>Beat-cross frequency (BCF) (Hz)*</td>
+      <td>4.86±0.12</td>
+      <td>0.73±0.08</td>
+      <td>&lt;0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+_*A significant difference, two-sided student’s t-test. n=3 biologically independent WT mice or KO mice.†Epididymides and vas deferens._
 
 TEM was further utilized to evaluate the sperm flagellar ultrastructure of Dnah3 KO mice. There were no obvious abnormalities of ‘9+2’ microtube arrangement in most sperm from the Dnah3 KO mice when compared to WT mice (Figure 4B, Figure 4—figure supplement 6C). However, in contrast to the clear display of an IDA and an ODA on the A-tube of each microtubule doublet in the sperm flagella of WT mice, the sperm flagella of Dnah3 KO mice exhibited an absence of almost all the IDAs (Figure 4B, Figure 4—figure supplement 6D). In addition, the disrupted mitochondria of spermatozoa from Dnah3 KO mice were also observed under TEM, as manifested by the dilated intermembrane spaces and dissolved mitochondrial material (Figure 4B and C, Figure 4—figure supplement 6E). We next performed immunofluorescence staining to label SLC25A4, which is responsible for the exchange of ATP and ADP across the mitochondrial inner membrane. Strikingly, compared to the bright fluorescence signals in the midpiece of WT sperm, the signals Dnah3 KO were significantly diminished (Figure 4D), indicating impaired mitochondrial function. Collectively, DNAH3 is essential for spermatogenesis, and its deficiency seriously damages the sperm motility and IDAs in both humans and mice.
 
-## DNAH3 deficiency impairs IDAs related to the reduction of IDA-associated proteins
+### DNAH3 deficiency impairs IDAs related to the reduction of IDA-associated proteins
 
 Considering the disrupted IDAs revealed by TEM analysis in both our patients and Dnah3 KO mice, we speculated whether the defective IDAs were attributed to the decreased expression of the key IDA-associated proteins. The immunofluorescence data showed that DNAH1/DNAH6 and DNALI1, corresponding to the heavy and light intermediate chains of the IDAs (Walton et al., 2023), respectively, were almost invisible along the sperm flagella of the patients when compared to control (Figure 5A–C). Consistent results were obtained in our subsequent western blotting analysis of sperm lysates from the patients (Figure 5D–F), indicating that DNAH3 may manipulate the assembly of IDA through regulating the expression of IDA-associated proteins. In contrast, DNAH8/DNAH17 and DNAI1, corresponding to the heavy and intermediate chains of ODAs (Whitfield et al., 2019), were readily detectable in the patients’ sperm flagella and were comparable to the control (Figure 5—figure supplement 1A–C), suggesting that DNAH3 may not regulate the expression of ODA-associated proteins. We also performed immunofluorescence staining and western blotting analysis of DNAH1, DNAH6, DNALI1, DNAH8, DNAH17 and DNAI1 on sperm from Dnah3 KO mice, and the results observed were consistent with those of the patients (Figure 6A–F, Figure 6—figure supplement 1A–C). These findings suggested that other IDA-associated proteins might be downstream effectors of DNAH3, which needs more future research.
 
-## ICSI treatment of humans with DNAH3 variants and Dnah3 KO mice
+![Figure 5.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig5-v2.jpg)
+
+**Figure 5.:** (A – C) Immunofluorescence staining of DNAH1 (A), DNAH6 (B) and DNALI1 (C) in spermatozoa from patients and normal controls. Red, DNAH1 in (A), DNAH6 in (B), DNALI1 in (C); green, α-Tubulin; blue, DAPI; scale bars, 5 μm. (D – F) Western blotting analysis of DNAH1(D), DNAH6 (E), DNALI1 (F) in sperm lysates from the patients and normal control.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A – C) The expression of DNAH8 (A), DNAH17 (B) and DNAI1 (C) in spermatozoa of the patients was comparable to that in normal controls. Red, DNAH8 in (A), DNAH17 in (B), DNAI1 in (C); green, α-Tubulin; blue, DAPI; scale bars, 5 μm.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig6-v2.jpg)
+
+**Figure 6.:** (A – C) Immunofluorescence staining of DNAH1 (A), DNAH6 (B) and DNALI1 (C) in spermatozoa from Dnah3 KO and WT mice. Red, DNAH1 in (A), DNAH6 in (B), DNALI1 in (C); green, α-Tubulin; blue, DAPI; scale bars, 5 μm. (D – F) Western blotting analysis of DNAH1(D), DNAH6 (E) and DNALI1 (F) in spermatozoa lysates from Dnah3 KO and WT mice.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A – C) The expression of DNAH8 (A), DNAH17 (B) and DNAI1 (C) in spermatozoa from Dnah3 KO mice was comparable to that in spermatozoa from WT mice. Red, DNAH8 in (A), DNAH17 in (B), DNAI1 in (C); green, α-Tubulin; blue, DAPI; scale bars, 5 μm.
+
+### ICSI treatment of humans with DNAH3 variants and Dnah3 KO mice
 
 ICSI treatment has been reported to be effective in asthenoteratozoospermia-associated infertility (Tsai et al., 2011; Colpi et al., 2018). ICSI cycles were attempted for the patients after written informed consent was obtained. The female partners all had normal basal hormone levels and underwent a long gonadotrophin-releasing hormone agonist protocol (Table 4). The wife of Patient 1 underwent one ICSI attempt. A total of 21 metaphase II (MII) oocytes were retrieved and microinjected, of which 17 oocytes were successfully fertilized (17/21, 80.95%) and cleaved (17/17, 100%). Thirteen Day 3 (D3) embryos were formed, six of which developed into blastocysts (8/13, 61.54%) after standard embryo culture. Two blastocysts were transferred, one of which was implanted. She eventually achieved clinical pregnancy, and the pregnancy is ongoing (Table 4). The partner of Patient 2 underwent two ICSI attempts. In her first ICSI attempt, six MII oocytes were retrieved, of which three were fertilized (3/6, 50%) and cleaved (3/3, 100%). After standard embryo culture, two D3 embryos were formed and transferred. However, this ICSI failed because no embryos were implanted. In her second ICSI attempt, all five MII oocytes were fertilized and cleaved (5/5, 100%). Five D3 embryos were obtained, of which two were transferred, but no embryos were implanted. The remaining three D3 embryos were cultured continuously, and two available blastocysts were formed and kept to be transferred in the future (Table 4). The partner of Patient 3 underwent one ICSI attempt. Of the 20 MII oocytes retrieved, 19 oocytes were fertilized (19/20, 95.0%) and cleaved (19/19, 100%). Fifteen D3 embryos were obtained, and 10 developed into available blastocysts (10/15, 66.7%). One blastocyst was transferred and implanted. She achieved clinical pregnancy, and the pregnancy is ongoing (Table 4). The wife of Patient 4 underwent four failed ICSI attempts. In her first two ICSI attempts, 13 and 12 MII oocytes were retrieved, of which five (5/12, 41.67%) and six (6/13, 46.15%), respectively, were fertilized and cleaved. Two available D3 embryos were obtained and transferred in both ICSI attempts, but no embryos were implanted. In her third ICSI attempt, of the eight MII oocytes retrieved, four (4/8, 50%) were fertilized and cleaved (4/4, 100%). However, no available D3 embryos were acquired. In her last ICSI attempt, seven MII oocytes were retrieved, of which three were fertilized (3/7, 42.68%) and two were cleaved (2/3, 66.7%), but no available D3 embryos were formed (Table 4). The vivid embryonic development of the partner of Patient 1 and Patient 3 after ICSI treatment was shown in Figure 7A.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/96755/elife-96755-fig7-v2.jpg)
 
-**Figure 7.:** DNAH3-deficient patients and Dnah3 KO mice.(A) The embryonic development of Patient 1 and Patient 3 after ICSI treatment. MII, metaphase II; PN, pronucleus; scale bars, 40 μm. (B) There was no difference in the fertilization rate or 2 cell and blastocyst embryo formation rates between the Dnah3 KO and WT groups (n=three biologically independent WT mice or KO mice; Student’s t test; NS, no significance; error bars, s.e.m.).
+**Figure 7.:** (A) The embryonic development of Patient 1 and Patient 3 after ICSI treatment. MII, metaphase II; PN, pronucleus; scale bars, 40 μm. (B) There was no difference in the fertilization rate or 2 cell and blastocyst embryo formation rates between the Dnah3 KO and WT groups (n=three biologically independent WT mice or KO mice; Student’s t test; NS, no significance; error bars, s.e.m.).
+
+**Table 4.**
+ Outcomes of ICSI treatment in the patients with DNAH3 mutations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Subjects</th>
+      <th>Patient</th>
+      <th>Patient 1</th>
+      <th colspan="2">Patient 2</th>
+      <th>Patient 3</th>
+      <th colspan="4">Patient 4</th>
+    </tr>
+    <tr>
+      <th>Female age (y)</th>
+      <th>24</th>
+      <th colspan="2">30</th>
+      <th>30</th>
+      <th colspan="4">36</th>
+    </tr>
+    <tr>
+      <th>Length of primary infertility history (y)</th>
+      <th>6</th>
+      <th colspan="2">1</th>
+      <th>3</th>
+      <th colspan="4">8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Basal hormones</td>
+      <td>FSH (IU/L)</td>
+      <td>7.1</td>
+      <td colspan="2">8.5</td>
+      <td>3.49</td>
+      <td colspan="4">4.3</td>
+    </tr>
+    <tr>
+      <td>LH (IU/L)</td>
+      <td>4.44</td>
+      <td colspan="2">2.5</td>
+      <td>4.2</td>
+      <td colspan="4">2.6</td>
+    </tr>
+    <tr>
+      <td>E2 (pg/mL)</td>
+      <td>83</td>
+      <td colspan="2">50</td>
+      <td>43.49</td>
+      <td colspan="4">68</td>
+    </tr>
+    <tr>
+      <td>Prog (ng/mL)</td>
+      <td>0.2</td>
+      <td colspan="2">0.6</td>
+      <td>0.3</td>
+      <td colspan="4">0.3</td>
+    </tr>
+    <tr>
+      <td rowspan="5">ICSI Cycles</td>
+      <td></td>
+      <td>Cycle 1</td>
+      <td>Cycle 1</td>
+      <td>Cycle 2</td>
+      <td>Cycle 1</td>
+      <td>Cycle 1</td>
+      <td>Cycle 2</td>
+      <td>Cycle 3</td>
+      <td>Cycle 4</td>
+    </tr>
+    <tr>
+      <td>E2 level on the trigger day (pg/ml)</td>
+      <td>3366</td>
+      <td>1519.6</td>
+      <td>1582.4</td>
+      <td>&gt;5,000</td>
+      <td>4440</td>
+      <td>5000</td>
+      <td>3152</td>
+      <td>2206</td>
+    </tr>
+    <tr>
+      <td>No. of follicles ≥14 mm on the trigger day</td>
+      <td>15</td>
+      <td>6</td>
+      <td>5</td>
+      <td>20</td>
+      <td>13</td>
+      <td>12</td>
+      <td>14</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>No. of follicles ≥18 mm on the trigger day</td>
+      <td>10</td>
+      <td>3</td>
+      <td>4</td>
+      <td>8</td>
+      <td>11</td>
+      <td>9</td>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>No. of oocytes retrieved</td>
+      <td>24</td>
+      <td>6</td>
+      <td>5</td>
+      <td>25</td>
+      <td>16</td>
+      <td>20</td>
+      <td>21</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td rowspan="5">ICSI progress</td>
+      <td>No. of MII oocytes</td>
+      <td>21</td>
+      <td>6</td>
+      <td>5</td>
+      <td>20</td>
+      <td>12</td>
+      <td>13</td>
+      <td>8</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Fertilization rate (%)</td>
+      <td>80.95 (17/21)</td>
+      <td>50 (3/6)</td>
+      <td>100 (5/5)</td>
+      <td>95 (19/20)</td>
+      <td>41.67 (5/12)</td>
+      <td>46.15 (6/13)</td>
+      <td>50 (4/8)</td>
+      <td>42.86 (3/7)</td>
+    </tr>
+    <tr>
+      <td>Cleavage Rate (%)</td>
+      <td>100 (17/17)</td>
+      <td>100 (2/2)</td>
+      <td>100 (5/5)</td>
+      <td>100 (19/19)</td>
+      <td>100 (5/5)</td>
+      <td>100 (6/6)</td>
+      <td>100 (4/4)</td>
+      <td>66.7 (2/3)</td>
+    </tr>
+    <tr>
+      <td>Available D3 embryos</td>
+      <td>13</td>
+      <td>2</td>
+      <td>5</td>
+      <td>15</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Blastocyst formation rate (%)</td>
+      <td>61.5 (8/13)</td>
+      <td>0</td>
+      <td>66.7 (2/3)</td>
+      <td>66.7 (10/15)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Clinical outcomes</td>
+      <td>No. of embryos transferred</td>
+      <td>2 blastocysts</td>
+      <td>0</td>
+      <td>2 D3</td>
+      <td>1 blastocyst</td>
+      <td>2 D3</td>
+      <td>2 D3</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Implantation rate (%)</td>
+      <td>50 (1/2)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100 (1/1)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Clinical pregnancy</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>No. of live birth</td>
+      <td>ngoing</td>
+      <td>-</td>
+      <td>-</td>
+      <td>ngoing</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_-,not applicable._
 
 We also carried out ICSI treatment on Dnah3 KO male mice. Strikingly, favorable outcomes of ICSI were obtained in Dnah3 KO male mice. After injection of spermatozoa from Dnah3 KO male mice, pronuclei were observed in most embryos in both the KO and WT groups, indicating a normal fertilization rate (Figure 7B). There was no difference in the percentage of 2 cell and blastocyst-stage embryos between the KO and WT groups (Figure 7B). Collectively, we observed successful ICSI outcomes in two out of four DNAH3-deficient patients and Dnah3 KO male mice and therefore suggested ICSI as an optional treatment for infertile men harboring biallelic pathogenic variants in DNAH3, and the additional female risk factors for infertility should not be excluded in the failed patients.
 
@@ -106,50 +684,193 @@ In conclusion, our study revealed an unexplored role of DNAH3 in male reproducti
 
 ## Materials and methods
 
-## Human subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DNAH1(Rabbit polyclonal)</td>
+      <td>Cusabio</td>
+      <td>CSB-PA878961LA01HU</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DNAH3(Rabbit polyclonal)</td>
+      <td>Cusabio</td>
+      <td>CSB-PA823461LA01HU</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DNAH3(Rabbit polyclonal)</td>
+      <td>Gift from Prof. Yueqiu Tan, Central South University, China.</td>
+      <td></td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DNAH6(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>18080–1-AP,RRID: AB_2878493</td>
+      <td>IF (1:50),WB (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DNAH8(Rabbit polyclonal)</td>
+      <td>Atlas</td>
+      <td>HPA028447,RRID: AB_10599600</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DNAH17(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>24488–1-AP,RRID: AB_2879568</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DNAI1(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>12756–1-AP,RRID: AB_10643244</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DNALI1(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>17601–1-AP,RRID: AB_2095372</td>
+      <td>IF (1:50),WB (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TOM20(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>11802–1-AP,RRID: AB_2207530</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SLC25A4(Rabbit polyclonal)</td>
+      <td>Signalway</td>
+      <td>32484,RRID: AB_2941094</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-alpha tubulin(Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab7291,RRID: AB_2241126</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-alpha tubulin(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>11224–1-AP,RRID: AB_2210206</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG,Alexa Fluor 488(Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A11008,RRID: AB_143165</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG,Alexa Fluor 594(Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A11005,RRID: AB_141372</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-acetylated alpha tubulin(Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab24610,RRID: AB_448182</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG,HRP-conjugated(Goat polyclonal)</td>
+      <td>Proteintech</td>
+      <td>SA00001-1,RRID: AB_2722565</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG,HRP-conjugated(Goat polyclonal)</td>
+      <td>Proteintech</td>
+      <td>SA00001-2,RRID: AB_2722564</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lectin PNA</td>
+      <td>Invitrogen</td>
+      <td>L-32460</td>
+      <td>IF (1:50)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human subjects
 
 Four unrelated Han Chinese infertile men and their family members were recruited from West China Second University Hospital of Sichuan University and Women and Children’s Hospital of Chongqing Medical University. All patients exhibited a normal karyotype (46 XY) without deletion of the azoospermia factor (AZF) region in the Y-chromosome. All of the participants were provided informed consent, and the study was approved by the ethics committee of West China Second University Hospital.
 
-## Genetic analysis
+### Genetic analysis
 
 Peripheral blood samples were obtained from the subjects to extract genomic DNA using a DNA purification kit (TIANGEN, DP304). For WES, 1 μg of genomic DNA was utilized for exon capture using the Agilent SureSelect Human All Exon V6 Kit and sequenced on the Illumina HiSeq X system (150 bp read length). The quality of WES, including clean reads, sequencing depth, sequencing coverage, and mapping quality are listed in Figure 1—source data 1. The variants identified through WES were annotated and filtered using Exomiser. Next, the variants were screened to obtain candidate variants based on the following criteria: (Cox et al., 2022) the allele frequency in the East Asian population was less than 1% in any database, including the ExAC Browser, gnomAD, and the 1000 Genomes Project; (Eisenberg et al., 2023) the variants affected coding exons or canonical splice sites; (Agarwal et al., 2015) the variants were predicted to be possibly pathogenic or damaging. The remain genes were then analyzed using the Human Protein Atlas (HPA) database (https://www.proteinatlas.org/) and Mouse Genome Informatics (MGI) database (https://informatics.jax.org/) to access their expression in human and mouse testis. Additionally, OMIM database (https://www.omim.org/) and relevant literature were used to understand their relationship with human infertility. Given the assumption of a recessive inheritance pattern, monoallelic variants were excluded from consideration. The remained candidate pathogenic variants were verified by Sanger sequencing on DNA from the patients' families.
 
-## Electron microscopy
+### Electron microscopy
 
 For scanning electron microscopy (SEM), sperm samples were fixed in glutaraldehyde (2.5%, w/v) and dehydrated using an ethanol gradient (30, 50, 75, 85, 95, and 100% ethanol). The samples were dried using a CO2 critical-point dryer (Eiko HCP-2, Hitachi) and observed under SEM (S-3400, Hitachi).
 
 For transmission electron microscopy (TEM), sperm samples were fixed in glutaraldehyde (3%, w/v) and osmium tetroxide (1%, w/v) and dehydrated with an ethanol gradient. The samples were embedded in Epon 812. Ultrathin sections were stained with uranyl acetate and lead citrate and analyzed under TEM (Tecnai G2 F20).
 
-## STA-PUT velocity sedimentation
+### STA-PUT velocity sedimentation
 
 Single testicular cells from obstructive azoospermia and 8-week-old C57BL male mice were obtained using the STA-PUT velocity sedimentation method as described previously (Liu et al., 2015; Chang et al., 2011). In brief, total spermatogenic cells were harvested by digesting seminiferous tubules with collagenase (Invitrogen, 17100017), trypsin (Sigma, T4799) and DNase (Promega, M6101) for 15 min each at 37 °C. Cells were diluted in bovine serum albumin (BSA, 3%, w/v) and filtered through an 80 mm mesh to remove fragments. Then, the cells were resuspended in BSA (3%, w/v) and loaded into an STA-PUT velocity sedimentation cell separator (ProScience) to obtain germ cells at different stages.
 
-## RNA isolation and quantitative PCR (qPCR)
+### RNA isolation and quantitative PCR (qPCR)
 
 Total RNA of mouse tissues was extracted using TRIzol reagent (Invitrogen,15596026,) and reverse-transcribed using the 1st Strand cDNA Synthesis Kit (Yeasen, HB210629) according to the manufacturer’s instructions. qPCR was carried out on an iCycler RT‒PCR Detection System (Bio-Rad Laboratories) using SYBR Green qPCR Master Mix (Bimake, B21202).
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Sperm samples were fixed in paraformaldehyde (4%, w/v), permeabilized with Triton X-100 (0.3% v/v) and blocked with BSA (3%, w/v) at room temperature. Samples were incubated with primary antibodies overnight at 4 °C. The next day, the samples were washed and incubated with the secondary antibody, and the nuclei were labeled with 4′,6-diamidino-2-phenylindole (DAPI, Sigma‒Aldrich, D9542). Image capture was performed by a laser scanning confocal microscope (Olympus, FV3000).
 
 For staining of mouse tissues, samples were first fixed in paraformaldehyde (4%, w/v) and dehydrated with an ethanol gradient. Then, the samples were embedded in paraffin and sliced into 5 μm sections. After deparaffinization and rehydration, sections were processed with 3% hydrogen peroxide and incubated in sodium citrate for antigen repair. Subsequently, sections were blocked with goat serum and incubated with primary antibodies at 4 °C overnight. The next day, the sections were incubated with the secondary antibody, followed by labeling the nuclei with DAPI. Image capture was performed using a fluorescence microscope (Zeiss, Ax10).
 
-## Western blotting
+### Western blotting
 
 Sperm samples were lysed in RIPA buffer (Beyotime, P0013B) to extract the total protein. For analysis of DNALI1, the protein samples were mixed with SDS loading buffer (P0015, Beyotime, China), boiled at 95 °C for 5 min, and separated by 12.5% SDS-PAGE. For analysis of DNAH1, DNAH3, DNAH6, the protein samples were mixed with NuPAGE LDS sample buffer (Invitrogen, NP0007), denatured at 70 °C for 10 min, and separated by 3–8% NuPAGE Tris-Acetate gels (EA0375BOX, Invitrogen). Then the resolved proteins were transferred to 0.45 μm PVDF membranes (Merck Millipore, IPVH00010). The membranes were blocked, incubated with primary antibodies at 4°C overnight. The following day, membranes were washed and incubated with HRP-conjugated secondary antibody. Protein bands were visualized using enhanced chemiluminescence reagents (Millipore, WBKLS0500).
 
-## Histology hematoxylin-eosin (H&E) staining
+### Histology hematoxylin-eosin (H&E) staining
 
 Tissue samples from mice were fixed with 4% paraformaldehyde (w/v) overnight. Following dehydration by ethanol, the samples were embedded in paraffin and sliced into 5 μm sections. The sections were stained with hematoxylin and eosin and observed under a microscope (Zeiss, Axio Imager 2).
 
-## Generation of the Dnah3 KO mouse model
+### Generation of the Dnah3 KO mouse model
 
 Animal experiments in this study were approved by the Experimental Animal Management and Ethics Committee of West China Second University Hospital, Sichuan University (No. 20230150), and complied with the Animal Care and Use Committee of Sichuan University. A Dnah3 knockout mouse model was generated by the CRISPR‒Cas9 system. Briefly, Cas9 and signal-guide RNAs (5’-GTATCAAGTGGATGTAAACC-3’) were transcribed using T7 RNA polymerase in vitro and comicroinjected into the cytoplasm of single-cell C57BL/6 J mouse embryos to generate frameshift mutations by nonhomologous recombination through introduction of a 1 bp insertion in exon 13. Then, the embryos were cultured and transferred into the oviducts of pseudopregnant female mice at 0.5 days post-coitum. A mutation of Dnah3 in the founder mouse and their offspring was confirmed using PCR and Sanger sequencing.
 
-## Intracytoplasmic sperm injection (ICSI)
+### Intracytoplasmic sperm injection (ICSI)
 
 ICSI was carried out using standard techniques. In brief, one-month-old female KM mice were injected with 5 IU of equine chorionic gonadotropin (eCG) (ProSpec, HOR-272) to induce superovulation. Metaphase II-arrested (MII) oocytes were acquired through another injection of 5 IU human chorionic gonadotropin after 48 hr. MII oocytes were incubated with Chatot-Ziomek-Bavister medium (Easycheck, M2750) at 37.5 °C and 5% CO2 until use. Mouse cauda epididymal spermatozoa were incubated in human tubal fluid (HTF) medium (Easycheck, M1150) and then frozen and thawed repeatedly to remove sperm tails. For ICSI, a single sperm head was microinjected into an MII oocyte by using a NIKON inverted microscope and a Piezo (PrimeTech, Osaka, Japan) in Whitten’s-HEPES medium containing 0.01% polyvinyl alcohol (Gibco,12360–038) and cytochalasin B (3.5 g/ml; Sigma‒Aldrich, C-6762). The successfully injected oocytes were transferred into G1-Plus medium (Vitrolife, 10132) and incubated at 37.5 °C and 5% CO2. The animal experiments were approved by the Experimental Animal Management and Ethics Committee of West China Second University Hospital, Sichuan University.
 
-## Statistical analysis
+### Statistical analysis
 
 Prism (version 8.4.0, GraphPad, Boston, MA, USA) and SPSS (version 18.0, IBM Corporation, Armonk, NY, USA) were used to perform statistical analyses. All data are presented as the means ± SEMs. Data from two groups were compared using an unpaired, parametric, two-sided Student’s t test, and a p value less than 0.05 was considered statistically significant.

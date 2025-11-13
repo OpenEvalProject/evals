@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/058xzat49 Max Planck Institute of Immunobiology and Epigenetics Freiburg Germany
+1. Max Planck Institute of Immunobiology and Epigenetics Freiburg Germany ([ROR:058xzat49](https://ror.org/058xzat49))
 2. International Max Planck Research School for Immunobiology, Epigenetics and Metabolism (IMPRS-IEM) Freiburg Germany
-3. https://ror.org/0245cg223 Faculty of Biology, University of Freiburg Freiburg Germany
+3. Faculty of Biology, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
 
 † Corresponding author
 
@@ -25,41 +25,129 @@ Cell shape and cell motility are determined by the balanced interplay of three c
 
 ## Results
 
-## Haptokinetic random motility of macrophages in 3D matrices
+### Haptokinetic random motility of macrophages in 3D matrices
 
 Macrophages distribute homogeneously as cellular networks in most mouse tissues, as exemplified by tissue-resident macrophages of the brain-surrounding dura mater (Figure 1A). Studying network dynamics and migration of slow-migrating macrophages by two-photon intravital microscopy (2P-IVM) is however challenging and often limited to only a few hours. To overcome this restriction, we established an in vitro platform for the microscopic observation of macrophage network dynamics over 24 hr and longer (Figure 1B and Figure 1—video 1). We used primary mouse bone marrow-derived macrophages (BMDMs) (Weischenfeldt and Porse, 2008; Zajd et al., 2020), which were embedded into 3D matrigel. By combining this system with video-based brightfield microscopy, we monitored migration dynamics in macrophage populations over 24–30 hr and found that individual cells moved with mesenchymal-like elongated shapes at average speeds of ~0.6 µm/min (Figure 1C–E). Treatment of BMDMs with the F-actin-disrupting drug cytochalasin D, the Rho-associated kinase (ROCK) inhibitor Y27632 or the non-muscle myosin II inhibitor blebbistatin revealed an essential requirement of actin dynamics and an important role of actomyosin contraction for macrophage random migration (Figure 1C–E, Figure 1—figure supplement 1). Treatment of BMDMs with the Arp2/3 complex inhibitor CK-666 caused cell rounding and loss of prominent mesenchymal protrusions in the majority of macrophages (Figure 1—video 2). This resulted in a significant reduction in the average speed, supporting an important role of dendritic actin filament networks for 3D macrophage random migration (Figure 1—figure supplement 1 and Figure 1—video 2). To address the functional role of integrin-mediated adhesion, the third component determining cell migration, for macrophage 3D motility, we used different mouse crosses to generate BMDMs without functional high-affinity integrins (Tln1−/−) or without cell surface integrin heterodimers of the β2 family (Itgb2−/−) or β1 family (Itgb1−/−) (Figure 1—figure supplements 2 and 3). Tln1−/− BMDMs, which are depleted of talin, a crucial interactor with integrin cytoplasmic domains for integrin activation (Calderwood and Ginsberg, 2003), showed roundish, amoeboid-like morphologies and severely impaired random migration (Figure 1F–I and Figure 1—video 2). Confocal fluorescence microscopy of Lifeact-GFP expressing BMDMs in 3D matrices clearly revealed that Tln1−/− cells were missing the prominent branched protrusions that gave WT macrophages their mesenchymal-like cell shape (Figure 1K). Itgb2−/− BMDMs lack β2 integrins on the cell surface, including the strongly expressed heterodimer αMβ2 (Mac-1), a characteristic macrophage cell surface protein with promiscuous binding properties to more than 30 non-protein and protein molecules, including several ECM components (Yakubenko et al., 2002; Figure 1—figure supplement 3). Surprisingly, ITGB2 deficiency did not result in cell shape changes or migration deficiencies (Figure 1F–I). However, Itgb1−/− BMDMs that lack the important ECM-binding heterodimers α5β1 and α6β1 on their cell surface, copied the morphology and migration phenotype of Tln1−/− BMDMs (Figure 1F–I; Figure 1—figure supplement 3). Thus, our results identify a crucial role of β1 integrins for the mesenchymal-like movement of macrophages, highlighting the substrate-dependent (haptokinetic) nature of 3D macrophage random migration. Loss of integrin functionality and the associated switch from mesenchymal-like to amoeboid morphology results in severely impaired 3D motility, which macrophages cannot compensate in contrast to many other immune cell types.
 
-## β1 integrins determine the mesenchymal-like shape of macrophages in mouse tissues
+![Figure 1.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative macrophage network in adult mouse tissue. Immunofluorescence staining of a dura mater whole mount preparation, showing macrophages (yellow) and blood vasculature (blue). COL4: collagen IV. (B) Scheme (left) and brightfield image (right) for studying macrophage network dynamics in 3D in vitro matrices. (C–E) Analysis of bone marrow-derived macrophage (BMDM) random motility in the presence of cytochalasin D (CytoD) or Y27632. (C) Representative cell morphologies (brightfield microscopy) and pseudo-colored tracks (displacement delta length: L(low) = 0, H(high) = 15) over 24 hr. (D) Individual cell speeds from one independent experiment (dots represent randomly chosen cells per condition, N = 25), and (E) mean speed values calculated from three biological replicates (n = 3). (F–H) Analysis of BMDM random motility upon genetic interference with integrin functionality, including (F) cell morphologies and tracks over 24 hr, (G) individual cell speeds from one independent experiment (N = 25), and (H) mean speed values calculated from three biological replicates (n = 3). (I) Graphical analysis of cell shape at 15 min time intervals over 24 hr for integrin-mutant BMDMs. Dots are mean values of N = 5 randomly chosen cells per genotype. A circularity value of 1 equals a perfectly circular cell. (K) Confocal live-cell microscopy of Lifeact-GFP expressing WT or Tln1−/− BMDMs in 3D matrigel. Bars in graphs: median (D, G), mean (E, H). Statistical tests: ***p ≤ 0.001, Dunn’s multiple comparison (post hoc Kruskal-Wallis test) (D, G); ***p ≤ 0.001, Dunnett’s multiple comparison (post hoc analysis of variance [ANOVA]) (E, H). Scale bars: 50 µm (A, B), 10 µm (K), 20 µm (C, F).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Analysis of bone marrow-derived macrophage (BMDM) random motility in the presence of blebbistatin in 3D matrigel. (A) Representative cell morphologies (brightfield microscopy), (B) individual cell speeds from one independent experiment (dots represent randomly chosen cells per condition, N = 25). Bars display the mean; ***p ≤ 0.001, t test. (C–E) Analysis of BMDM random motility in the presence of CK-666 in 3D matrigel. (C) Representative cell morphologies (brightfield microscopy), (D) graphical analysis of cell shape at 15 min time intervals over 24 hr. Dots are mean values of N = 5 randomly chosen cells per genotype. A circularity value of 1 equals a perfectly circular cell, (E) individual cell speeds from one independent experiment (dots represent randomly chosen cells per condition, N = 25). Bars display the median; ***p ≤ 0.001, U test. Scale bars: 20 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Scheme for the generation of BMDMs from conditional and constitutive knockout mouse models to obtain BMDMs depleted for talin-1 (Tln1−/−) or cell surface integrins from the β1 family (Itgb1−/−) orβ2 family (Itgb2−/−). (B) The efficiency of conditional talin-1 knockout was confirmed by immunoblot analysis (by using a pan-talin antibody recognizing talin-1 and talin-2). Cell lysates were generated from WT and Tln1−/− BMDMs. Actin was used as loading control.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Flow cytometry analysis of integrin subunits expressed on the surface of WT, Itgb1−/−, Itgb2−/−, and Tln1−/− BMDMs. β1 integrin depletion leads to loss of fibronectin-binding α5β1 and laminin-binding α6β1 integrins from the cell surface of Itgb1−/− macrophages. A pool of the α4 subunit remains retained on the cell surface in combination with an upregulation of the corresponding β7 subunit. This switch from α4β1 to α4β7 heterodimers is a well-documented phenomenon for Itgb1−/− leukocytes. β2 integrin deficiency leads to loss of the αM subunit (CD11b) and thus αMβ2 (Mac-1, CR3) from the macrophage surface. Talin depletion in BMDMs leaves the cell surface integrin expression profile unchanged.
+
+### β1 integrins determine the mesenchymal-like shape of macrophages in mouse tissues
 
 To corroborate the importance of our in vitro findings for living tissues, we investigated tissue-resident macrophages of mice with conditional Itgb1 deletion in hematopoietic cells. This genetic approach allowed the efficient depletion of ITGB1 in hematopoietic stem cells and thus targeted also endogenous macrophages of different organs and ontogeny. Other genetic strategies (e.g. Lyz2CRE, Cx3cr1CRE) resulted in partial targeting of macrophage subsets or incomplete protein depletion, which did not provide conclusive in vivo results (data not shown). When we analyzed endogenous macrophage networks in several ECM-rich tissues by immunofluorescence analysis, the comparison of Vav1-iCre Itgb1fl/fl mice with littermate controls provided a clear morphological phenotype. In agreement with our findings from 3D matrigels, ITGB1 depletion caused macrophages in the interstitial spaces of the skin dermis (Figure 2A), the splenic red pulp (Figure 2B), and in the sinusoidal spaces of the liver (Figure 2C) to adopt a roundish, amoeboid-like cell shape. In contrast, macrophages in tissues of Itgb2−/− mice retained their mesenchymal-like morphologies (Figure 2—figure supplement 1). Thus, our results confirm the crucial role of β1 integrins for defining the mesenchymal-like shape of endogenous macrophages in several mouse tissues.
 
-## Integrin-independent macrophage movement during chemotactic responses
+![Figure 2.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig2-v1.jpg)
+
+**Figure 2.:** (A–C) Comparative analysis of ear skin dermis (A), spleen (B) and liver (C) tissues of adult Vav1-iCre+/− Itgb1fl/fl mice and littermate controls. Endogenous macrophage subsets were detected with immuno-stainings against CD206 (A) and F4/80 (B, C) and fluorescence signal intensities displayed as glow heatmap color. Collagen IV (COL4)-expressing basement membrane (A, C) or reticular network (B) structures are also displayed (blue). All images are projections of several confocal z-planes. Scale bars: 50 µm (A), 30 µm (B, C).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) Immunofluorescence analysis of ear skin dermis (A), spleen (B) and liver (C) tissues of adult Itgb2−/− mice. Endogenous macrophage subsets were detected with immuno-stainings against CD206 (A) and F4/80 (B,C) and fluorescence signal intensities displayed as glow heatmap color. Collagen IV (COL4)-expressing basement membrane (A, C) or reticular network (B) structures are also displayed (blue). All images are projections of several confocal z-planes. Scale bars: 50 µm (A), 30 µm (B, C).
+
+### Integrin-independent macrophage movement during chemotactic responses
 
 As external guidance signals can induce cell polarization and directed migration, we next examined the chemotactic migration response of macrophages. We embedded BMDMs in 3D matrigel scaffolds and followed their directed migration along a gradient of the chemoattractant complement factor 5a (C5a) over 24 hr (Figure 3A). We then assessed the contribution of actin dynamics, actomyosin contraction, and integrin function to this process (Figure 3B and C; Figure 3—figure supplement 1). The effects of cytochalasin D and Y27632 treatment on chemotactic macrophage migration were comparable to our previous results on random motility (Figure 1C–E), showing an essential requirement for actin dynamics and an important role for actomyosin contraction (Figure 3B, D and E). CK-666 treatment did not impair BMDM chemotaxis in 3D matrigel (Figure 3—figure supplement 1), which is in agreement with previous studies showing that Arp2/3 complex blockade rather increases than decreases migration speed in several cell types (Asokan et al., 2014; Dimchev et al., 2021; Georgantzoglou et al., 2021; Leithner et al., 2016; Moreau et al., 2015; Rotty et al., 2017; Vargas et al., 2016; Wu et al., 2012). Strikingly, the dependency on integrin function was markedly different between random and chemotactic macrophage migration. In contrast to random motility, Tln1−/− and Itgb1−/− BMDMs, which had adopted more roundish and amoeboid-like shapes, moved at comparable average speeds to WT and Itgb2−/− BMDMs, which migrated with very elongated and mesenchymal-like morphologies along the C5a gradient (Figure 3C, F and G and Figure 3—video 1). Track straightness and cell surface expression of C5aR1 were comparable between all gene variants (Figure 3—figure supplement 2). Y27632 treatment impaired the chemotactic migration of Tln1−/− BMDMs, supporting an important role of actomyosin contractility as amoeboid protrusive force for integrin-independent macrophage migration (Figure 3—figure supplement 2). Thus, chemotactic guidance cues can overcome the migration deficit of adhesion-deficient macrophages and induce productive amoeboid-like, integrin-independent macrophage movement.
 
-## Amoeboid-like macrophages still perform chemotactic migration in mouse tissue
+![Figure 3.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig3-v1.jpg)
+
+**Figure 3.:** (A) Scheme for studying chemotactic macrophage migration toward C5a gradients in 3D in vitro matrices. (B, C) Representative cell morphologies (brightfield microscopy) and tracks over 24 hr of chemotaxing bone marrow-derived macrophages (BMDMs) (B) in the presence of cytochalasin D (CytoD) and Y27632, and (C) upon genetic interference with integrin functionality. Scale bars: 25 µm. (D–G) Analysis of BMDM chemotactic migration, including (D,F) individual cell speeds from one independent experiment (dots represent randomly chosen cells per condition, N = 25), and (F,G) mean speed values of three biological replicates (n = 3). Bars in graphs: median (D–F), mean (E–G). Statistical tests: ***p ≤ 0.001, Dunn’s multiple comparison (post hoc Kruskal-Wallis test) (D); ***p ≤ 0.001, Dunnett’s multiple comparison (post hoc analysis of variance [ANOVA]) (E–G).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative cell morphologies (brightfield microscopy) and tracks over 24 hr of bone marrow-derived macrophages (BMDMs) following a C5a gradient in matrigel in the presence of CK-666. Scale bar: 25 µm. (B) Analysis of BMDM chemotactic migration, individual cell speeds from one independent experiment (dots represent randomly chosen cells per condition, N = 25). Bars display the mean; ns: non-significant, t test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Analysis of track straightness during BMDM chemotactic migration toward C5a gradients. Mean speed values were calculated from three biological replicates (n = 3). In each biological replicate N = 25 cells were tracked and analyzed. Bars in graph display the mean; ns: non-significant, Dunnett’s multiple comparison (post hoc analysis of variance [ANOVA]). (B) Flow cytometry analysis of C5aR1 cell surface expression on WT, Itgb1−/−, Itgb2−/−, and Tln1−/− BMDMs. C5aR1 acts as the major chemotactic receptor for the chemoattractant C5a. (C) Analysis of Tln1−/− BMDM chemotactic migration toward a C5a gradient in three-dimensional (3D) matrigel in the presence of Y27632, individual cell speeds from one independent experiment (dots represent randomly chosen cells per condition, N = 25). Bars display the mean; ***p ≤ 0.001, t test.
+
+### Amoeboid-like macrophages still perform chemotactic migration in mouse tissue
 
 To confirm our findings in vivo, we chose to investigate the chemotactic response of tissue-resident macrophages to laser-induced wounds in the mouse dermis (Figure 4A). Previous intravital imaging studies in mice demonstrated wound attractants to induce chemotactic responses of several myeloid cell types, mostly neutrophils and tissue-resident macrophages (Lämmermann et al., 2013; Uderhardt et al., 2019). We crossed Vav1-iCre Itgb1fl/fl mice with lysozyme M-GFP (Lyz2GFP) knock-in reporter mice to visualize dermal myeloid cells by 2P-IVM. In agreement with our immunofluorescence analysis of ear skin whole mount tissues (Figure 2A), 2P-IVM of GFP-positive macrophages in the unchallenged ear dermis confirmed that most ITGB1-deficient macrophages lacked the typical multi-protrusive mesenchymal-like phenotype of WT macrophages (Figure 4—figure supplement 1). As neutrophils can influence macrophage dynamics at the wound site, we removed them from the blood circulation by administering Anti-Ly6G neutrophil-depleting antibodies. This experimental strategy allowed us to accurately analyze the functional contribution of β1 integrins in the chemotactic wound response of tissue-resident macrophages (Figure 4A). In contrast to our in vitro imaging over a whole day, 2P-IVM was limited to 90–120 min. Imaging WT macrophages at high magnification revealed that these cells quickly formed long protrusions toward the tissue lesion, while most cell bodies remained immotile during this short observation period (Figure 4B and Figure 4—video 1). Although most Itgb1−/− macrophages displayed rounded morphologies in unchallenged skin, these cells also formed directed protrusions toward the damage site at comparable speeds to WT cells (Figure 4C and D and Figure 4—video 1). We observed for Itgb1−/− macrophages a twofold increase in cell body displacement (53% of all analyzed Itgb1−/− cells, N = 55) in comparison to WT macrophages (24% of all analyzed WT cells, N = 34), which we interpret as a switch to a more amoeboid migration mode (Figure 4E; Figure 4—figure supplement 2 and Figure 4—video 1). Thus, our in vivo results confirm the dispensable role of integrins for the chemotactic response of macrophages. They also show that chemotactic cues are sufficient to polarize the macrophage cytoskeleton and support directed integrin-independent 3D protrusive movement. These findings expand our previous results on the chemotactic behavior of fast-migrating immune cells (dendritic cells, neutrophils, B cells) (Lämmermann et al., 2008) to a slower migrating tissue-resident immune cell type.
 
-## Two efficient surveillance strategies for macrophage networks
+![Figure 4.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig4-v1.jpg)
+
+**Figure 4.:** (A) Scheme for studying the chemotactic response of dermal macrophages to laser-induced tissue injury in mouse ear skin. Two-photon intravital microscopy (2P-IVM) was performed on Vav1-iCre Itgb1fl/fl Lyz2GFP/+ and littermate control mice. Mice were treated with Anti-Ly6G antibody to deplete neutrophils and avoid their presence in imaging field of views. (B, C) 2P-IVM images of GFP-expressing dermal macrophages in WT mice (B) and conditional Itgb1-deficient mice (C) at the onset of the wound response and 90 min later. GFP signal is displayed as glow heatmap color. Cell body displacements are shown as yellow tracks. Scale bars: 10 µm. (D) Velocity analysis of macrophage protrusions moving toward the tissue lesion. Each dot represents one protrusion (WT: N = 37; KO: N = 55). Values are pooled from n = 3 (WT) and n = 4 (KO) mice; ns: non-significant, U test. Bars are median. (E) Cell bodies of responding macrophages were tracked and categorized according to displacement (WT: N = 34; KO: N = 55). Values are pooled from n = 3 (WT) and n = 4 (KO) mice.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Two-photon intravital microscopy of the dermal compartment in unchallenged ear skin reveals mesenchymal shapes with multiple elongated protrusions in GFP-positive macrophages of WT Lyz2GFP/+ mice. In contrast, the majority of GFP-positive macrophages in the dermis of Vav1-iCre Itgb1fl/fl Lyz2GFP/+ mice showed more amoeboid-like morphologies and less pronounced cell protrusions. Scale bars: 50 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Close-up view and time sequence of an Itgb1-deficient macrophage that chemotactically responds to a laser-induced tissue lesion in the mouse dermis. Despite lack of β1 integrins and loss of mesenchymal cell shape, these cells form directed protrusions and displace their cell bodies toward the wound site. Scale bar: 5 µm.
+
+### Two efficient surveillance strategies for macrophage networks
 
 Next, we investigated how cell shape changes and motility modes of individual macrophages influence the surveillance behavior of a whole macrophage network. To address this question, we adapted our 3D in vitro platform and added fluorescent beads with attached phosphatidylserine (PS) to macrophage populations in matrigel (Figure 5A). PS on the bead surface acted as an ‘eat-me’ signal for macrophages (Segawa and Nagata, 2015), and a network of 400–500 macrophages was able to almost completely clear gels of a corresponding number of extracellular particles within 24 hr (Figure 5B). Several hours after ingestion by macrophages, bead fluorescence was quenched due to the acidic environment of the phagolysosomal system, which could be measured as overall reduction in fluorescence (Figure 5—figure supplement 1). Using this system, we set out to understand the cytoskeletal requirements of sampling macrophage populations. Cytochalasin D treatment served as negative control for our analysis, as the complete stalling of migration and protrusion formation inhibited macrophage space exploration and bead uptake over 24 hr (Figure 5C–E). In contrast, lowering actomyosin contractility by Y27632 treatment did not impact the sampling efficiency of a macrophage population (Figure 5C–E). Although individual BMDMs moved under these conditions at only ~30% of their normal speed (Figure 1D–E), their gain in single-cell protrusiveness compensated for this reduction in speed and allowed Y27632-treated macrophage populations equal space exploration and bead uptake as control populations (Figure 5C and F; Figure 5—figure supplement 2). Thus, macrophage networks can use two equally efficient surveillance strategies: (a) surveillance by migration (Figure 5G and Figure 3—video 1) and (b) surveillance by low-motile protrusion extension (Figure 5H and Figure 5—video 1). Considering the broad heterogeneity of macrophages in mammalian tissues (Blériot et al., 2020), this finding is very relevant and highlights that efficient tissue surveillance can be realized by macrophage subsets with migratory potential, but also by macrophage subsets with sessile, but protrusive behaviors.
 
-## Haptokinesis is required for optimal bead removal by macrophage networks
+![Figure 5.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig5-v1.jpg)
+
+**Figure 5.:** (A) Scheme for studying macrophage network surveillance in three-dimensional (3D) in vitro matrices. (B) Images of start (0 hr) and endpoint (24 hr) of bead removal by a population of WT bone marrow-derived macrophages (BMDMs) (unstained). Extracellular, fluorescent beads with surface-attached phosphatidylserine (red, 0 hr) were ingested by BMDMs over time. The image shows a quarter of the total imaging field of view. (C–E) Analysis of BMDM network sampling activity in the presence of cytochalasin D (CytoD) or Y27632, including (C) time projections of macrophage shapes over 24 hr, displayed as total area coverage (yellow) in relation to non-internalized beads (red). Bead sampling by macrophages was measured as mean fluorescence intensity (MFI) decline of bead fluorescence in 15 min intervals over time, presented as (D) time-course analysis from one independent experiment (dots in curves are mean values from N = 4–5 technical replicates (separate wells of matrigel)), and as (E) 24 hr-mean-values calculated from three biological replicates (n = 3 per genotype). (F) Cell protrusiveness of WT and Y27632-treated BMDMs was determined by Sholl analysis for N = 10 randomly chosen cells and presented as mean values at 15 min time intervals over 24 hr. (G, H) Time sequences of individual control (G) and Y27632-treated (Y27) (H) BMDMs, correlating bead sampling and migratory activity. Yellow arrows highlight bead uptake events. Cell tracks over 14 hr are pseudo-colored for instantaneous speed values. All bar graphs display the mean; ***p ≤ 0.001, ns: non-significant; Dunnett’s multiple comparison (post hoc analysis of variance [ANOVA]). Scale bars: 100 µm (B), 40 µm (C), 20 µm (G, H).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Live-cell imaging snapshots showing the start (0 hr) and endpoint (24 hr) of bead removal by a population of WT bone marrow-derived macrophages (BMDMs) (unstained). Fluorescent phosphatidylserine-attached beads were extracellular (red, 0 hr) and fluorescence signal displayed as purple-blue heatmap color. At the onset of the experiment, most beads were extracellular and showed high fluorescence signal. After 24 hr, the majority of beads was internalized by macrophages and showed low fluorescence signal. Scale bars: 100 µm. (B) Live-cell imaging and close-up view of an individual WT BMDM that takes up a fluorescent bead at 2 hr 30 min (yellow arrow). Approximately 12 hr later this internalized bead (light blue arrow) showed reduced signal due to fluorescence quenching in the acidic phagolysosomal compartment of the macrophage. In contrast, non-internalized beads (purple arrow) maintain the fluorescence signal over time. Scale bar: 20 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The center points of individual macrophages are overlaid with layers of concentric rings (Sholl cells) at 25 µm intervals. The number of occasions Sholl shells are intersected by cellular process gives a measure of branch-based and elongation-based protrusiveness for an individual cell at a given timepoint.
+
+### Haptokinesis is required for optimal bead removal by macrophage networks
 
 We then investigated how integrin-dependent haptokinesis influences the sampling efficiency of macrophage networks. We found that integrin-dependent deficits in macrophage random motility (Figure 1F–I) translated directly to impaired removal of extracellular particles in matrigel (Figure 6A–C). Although Tln1−/− and Itgb1−/− BMDMs had comparable phagocytic activity to WT controls when macrophages were kept as cell suspensions during the incubation with PS-attached beads (Figure 6—figure supplement 2), these mutant BMDMs showed clearly reduced bead internalization in the 3D matrix (Figure 6B and C; Figure 6—figure supplement 1). Impaired haptokinesis of amoeboid-shaped Tln1−/− and Itgb1−/− BMDMs impeded efficient space exploration and bead sampling, which was not observed for mesenchymal-like migrating Itgb2−/− BMDMs (Figure 6A–C; Figure 6—figure supplement 1). Live-cell imaging analysis revealed that the rudimentary movement of Itgb1−/− BMDMs was sufficient to sample beads in close vicinity to them, but the restricted movement radius prevented bead sampling of larger areas (Figure 6D and Figure 6—video 1). However, we could rescue this surveillance deficit of Itgb1−/− BMDM networks by doubling the cell number in the macrophage population (Figure 6E and F). This result appears particularly relevant for physiological mammalian tissues, where the additional recruitment of monocytic cells or macrophages might compensate for insufficient space exploration of a tissue-resident macrophage network.
 
-## Haptokinesis is required for optimal efferocytosis by macrophage networks
+![Figure 6.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig6-v1.jpg)
+
+**Figure 6.:** (A–C) Analysis of bone marrow-derived macrophage (BMDM) network sampling activity upon genetic interference with integrin functionality was performed as described in Figure 5A–E. (D) Time sequence of an individual Itgb1−/− macrophage is shown, correlating bead sampling and migratory activity as described in Figure 5G and H. (E, F) Analysis of Itgb1−/− BMDM network sampling activity upon doubling (2×) the cell number in the BMDM network. Analysis of network sampling as described in Figure 5C–E. All bar graphs display the mean; ***p ≤ 0.001, ns: non-significant; Dunnett’s multiple comparison (post hoc analysis of variance [ANOVA]). Scale bars: 40 µm (A), 20 µm (D).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Live-cell imaging snapshots showing the start (0 hr) and a late timepoint (23 hr) of bead removal by populations of WT, Itgb1−/−, Itgb2−/−, and Tln1−/− bone marrow-derived macrophages (BMDMs). WT and Itgb2−/− BMDMs move in 3D matrigel and reduce the number of extracellular beads, whereas migration-deficient Tln1−/− and Itgb1−/− BMDMs show impaired removal of extracellular beads. Extracellular, non-internalized fluorescent beads appear as bright red signal. Scale bars: 100 µm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Analysis of bead phagocytosis in cell suspensions. WT, Itgb1−/−, Itgb2−/−, and Tln1−/− bone marrow-derived macrophages (BMDMs) were kept in stirred cell suspensions with fluorescent beads for a 2 hr incubation time. Bead internalization by macrophages was quantified by flow cytometry analysis, using a combination of intrinsic bead fluorescence and an annexin V labelling of extracellular beads. Representative experiment with N = 3 technical replicates. Bars display the mean; ns: non-significant, **p ≤ 0.01, Dunnett’s multiple comparison (post hoc analysis of variance [ANOVA]).
+
+### Haptokinesis is required for optimal efferocytosis by macrophage networks
 
 The removal of dead cell material is best described as a sequential series of cell biological events divided into ‘find-me’, ‘eat-me’, and ‘digest-me’ phases (Lemke, 2019). To realize ‘eat-me’, individual macrophages are considered to chemotactically respond to ‘find-me’ signals released from dead cells, a process that involves the formation of directed protrusions and subsequent cell displacement. However, it still remains unresolved which mechanisms guide and coordinate the dynamics of individual cells in macrophage networks where many phagocytes act together, but also compete for dead cell material. Given our disparate findings on integrin-dependent random motility and integrin-independent chemotactic responses of macrophages, we were particularly interested how loss of integrin functionality influences the sampling dynamics of macrophage networks. To study the efferocytosis response of macrophage populations, we added aged, fluorescently labeled mouse neutrophils to BMDM networks (Figure 7A). Aged neutrophils underwent cell death over time, and we used pHrodo-Red as fluorescent dye to label them. Efferocytosis was extremely efficient and a network of 300–400 macrophages was able to remove 500–700 dead neutrophils within 24–30 hr (Figure 7B and Figure 7—video 1). We observed that pHrodo fluorescence after the reported increase shortly after ingestion vanished inside macrophages several hours after neutrophil uptake, probably due to digestion of the corpse. We used this to measure the efferocytosis efficiency of BMDM networks as fluorescence decline, which we quantified by using two independent analysis programs (Figure 7C; Figure 7—figure supplement 1). Microscopic observation of individual WT BMDMs revealed a spectrum of mesenchymal-like movement behaviors that supported efficient efferocytosis, including individual macrophages that sequentially ingested 8–14 cells over 24–30 hr (Figure 7—figure supplement 2 and ). Testing the efferocytic capacity of integrin-deficient BMDM networks, we made again the striking observation that β1 integrin-dependent haptokinesis was crucial for optimal surveillance. As observed for the sampling of PS-attached beads that do not release ‘find-me’ signals, networks of Tln1−/− and Itgb1−/− BMDMs were significantly impaired in the removal of dead neutrophils. The phenotype of Tln1−/− BMDMs was even more pronounced in comparison to Itgb1−/− BMDMs, probably due to migration-independent effects of talin on αv integrins, which contribute to dead cell recognition and uptake (Lemke, 2019). In contrast, Itgb2−/− BMDMs showed similar efferocytic activities as WT cells (Figure 7C and D; Figure 7—figure supplement 1). Haptokinetic movement of mesenchymal-shaped WT BMDMs at speeds of ~0.6 µm/min supported efficient sampling of corpses and surveillance of large areas (Figure 7E and ), whereas impaired haptokinesis of Itgb1−/− BMDMs restricted surveillance to smaller regions (Figure 7F and Figure 7—video 3). Although individual Itgb1−/− macrophages could ingest several dead neutrophils, the slow amoeboid-like movement limited their efferocytic sampling to only nearby corpses (Figure 7—figure supplement 3). Thus, our results show an important role for β1 integrins in controlling macrophage movement and protrusiveness, and further highlight haptokinetic sampling as a crucial process for efficient efferocytosis in macrophage networks.
 
-## β1 integrin-dependent surveillance by cortical macrophage networks in lymph nodes
+![Figure 7.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig7-v1.jpg)
+
+**Figure 7.:** (A) Scheme for studying the efferocytic response of macrophage networks in three-dimensional (3D) in vitro matrices. (B) Live-cell imaging snapshots showing the start (0 hr) and endpoint (24 hr) of dead cell clearance by a population of WT bone marrow-derived macrophages (BMDMs) (unstained). Extracellular, fluorescently pHrodo-labeled aged neutrophils (red, 0 hr) were engulfed and removed by BMDMs over time. The image shows a quarter of the total imaging field of view. Scale bar: 100 µm. (C, D) Analysis of dead neutrophil removal by BMDM networks upon genetic interference with integrin functionality. Neutrophil uptake and digestion by macrophages was measured as an object count decline of pHrodo in 15 min intervals over time, presented as (C) time-course analysis from one independent experiment (dots in curves are mean values from N = 2–5 technical replicates) (separate wells of matrigel), and as (D) 24 hr-mean-values calculated from three biological replicates (n = 3 per genotype). Bars display the mean; ***p ≤ 0.001, **p ≤ 0.01, ns: non-significant; Dunnett’s multiple comparison (post hoc analysis of variance [ANOVA]). (E, F) Correlation of efferocytic and migratory activity in populations of WT (E) and Itgb1−/− (F) BMDMs. Cell tracks over 24 hr are pseudo-colored for instantaneous speed values. Scale bars: 30 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Scheme for studying the efferocytic response of macrophage networks in three-dimensional (3D) in vitro matrices (same as in Figure 7A). (B) Analysis of dead neutrophil removal after 24 hr by bone marrow-derived macrophage (BMDM) networks upon genetic interference with integrin functionality. Validation of our analysis based on the integrated software of the Incucyte live-cell imaging system (see Figure 7D). Imaris software-based analysis determined only the fluorescence signals of extracellular, non-internalized neutrophils 24 hr after start of the experiment. Neutrophil uptake is measured as an object count and displayed as normalized values of the initial neutrophil numbers (0 hr) for three independent experiments (N = 2–5 technical replicates, which means imaging wells with BMDMs and matrigel). Bars are mean; ***p ≤ 0.001, **p ≤ 0.01, ns: non-significant; Dunnett’s multiple comparison (post hoc analysis of variance [ANOVA]). (C) Live-cell imaging snapshots showing the start (0 hr) and endpoint (24 hr) of dead neutrophil (red) removal by populations of WT, Itgb1−/−, Itgb2−/−, and Tln1−/− BMDMs. Non-internalized dead neutrophils show bright red signal. Scale bars: 100 µm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Live-cell imaging and close-up view of an individual WT bone marrow-derived macrophage (BMDM) that samples and ingests several pHrodo-Red-labeled dead neutrophils over 28 hr. Yellow numbers indicate individual engulfed cell corpses. The cell track over 28 hr is pseudo-colored for instantaneous speed values. Scale bar: 20 µm.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** Live-cell imaging and close-up view of an individual Itgb1−/− bone marrow-derived macrophage (BMDM) that samples and ingests several pHrodo-Red-labeled dead neutrophils over 29 hr. Yellow numbers indicate individual engulfed cell corpses. The cell track over 29 hr is pseudo-colored for instantaneous speed values. Scale bar: 20 µm.
+
+### β1 integrin-dependent surveillance by cortical macrophage networks in lymph nodes
 
 To show the relevance of our in vitro findings for mammalian tissues, we chose to study macrophages located in the T cell cortex of mouse lymph nodes (Figure 8A). These cortical macrophages sit on an ECM-rich reticular fiber scaffold, where they form dense cellular networks (Bellomo et al., 2018). Previous work has shown that this tissue-resident macrophage type acts as the only professional phagocyte that continuously clears apoptotic cells in the T cell zone of lymph nodes (Baratin et al., 2017). Confocal immunofluorescence analysis revealed dense networks of cortical macrophages with elongated protrusions and multi-branched, mesenchymal-like shapes in the T cell zones of WT mice (Figure 8B). In contrast, cortical macrophages in lymph nodes of conditional Itgb1 knockout mice were more roundish and showed amoeboid-like morphologies (Figure 8B). To evaluate the efferocytic efficiency of cortical macrophage networks, we used the TUNEL method to detect and quantify apoptotic cells in the T cell zones of lymph nodes. TUNEL-positive cells were mostly detected inside cortical macrophages, but were also observed at lower numbers outside the macrophage network (Figure 8C). Importantly, mice with Itgb1-deficient macrophages showed a significantly increased number of extracellular, non-internalized apoptotic cells in T cell zones in comparison to littermate control mice (Figure 8D). Thus, our results confirm the important role of β1 integrin-dependent mesenchymal-like cell shape and motility for efferocytic macrophage networks in vivo.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/75354/elife-75354-fig8-v1.jpg)
 
-**Figure 8.:** (A) Immunofluorescence staining of a mouse inguinal lymph node. T cell cortex (cyan outline) was defined as B220- and Lyve-1-negative tissue area. (B) Confocal immunofluorescence images of GFP-expressing cortical macrophages in WT and conditional Itgb1-deficient mice crossed to Lyz2 knock-in mice (left). Collagen IV (COL4) stainings display the cortical reticular fiber network. GFP-based surface representations of macrophage morphologies are shown (right). (GFP/+C) Detection of apoptotic cells by TUNEL method in T cell zones of immuno-stained lymph node sections. TUNEL-positive cells had altered nuclear DAPI stainings, and were found non-internalized (yellow arrow) or internalized by macrophages (stained by CD68). (D) Quantification of non-internalized TUNEL-positive cells in T cell cortices. Dots represent individual mice (n = 3 per genotype). Bars display the mean; **p ≤ 0.01, t test. Scale bars: 100 µm (A), 10 µm (B), 5 µm (C).Figure 8—source data 1.Figure 8D.
+**Figure 8.:** (A) Immunofluorescence staining of a mouse inguinal lymph node. T cell cortex (cyan outline) was defined as B220- and Lyve-1-negative tissue area. (B) Confocal immunofluorescence images of GFP-expressing cortical macrophages in WT and conditional Itgb1-deficient mice crossed to Lyz2GFP/+ knock-in mice (left). Collagen IV (COL4) stainings display the cortical reticular fiber network. GFP-based surface representations of macrophage morphologies are shown (right). (C) Detection of apoptotic cells by TUNEL method in T cell zones of immuno-stained lymph node sections. TUNEL-positive cells had altered nuclear DAPI stainings, and were found non-internalized (yellow arrow) or internalized by macrophages (stained by CD68). (D) Quantification of non-internalized TUNEL-positive cells in T cell cortices. Dots represent individual mice (n = 3 per genotype). Bars display the mean; **p ≤ 0.01, t test. Scale bars: 100 µm (A), 10 µm (B), 5 µm (C).
 
 ## Discussion
 
@@ -81,54 +169,596 @@ In summary, our study highlights macrophages as a tissue-resident immune cell ty
 
 ## Materials and methods
 
-## Experimental model
+**Key resources table**
 
-## Mouse models
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD61 PE(Armenian hamster monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553347;RRID:AB_394800</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD29 PE(Armenian Hamster monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 102208;RRID:AB_312885</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG Isotype Control PE(Armenian hamster monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 400907;RRID:AB_326593</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-goat Alexa Fluor 488(Donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A11055;RRID:AB_2534102</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa Fluor 568(Donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A10042;RRID:AB_2534017</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP Dylight 488(Goat polyclonal)</td>
+      <td>Rockland</td>
+      <td>Cat# 600-141-215; RRID:AB_1961516</td>
+      <td>IF(1:750, 1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa Fluor 405(Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-31556;RRID:AB_221605</td>
+      <td>IF(1:300, 1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa Fluor 700(Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A21038;RRID:AB_10373851</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-collagen IV(Goat polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Cat# AB769;RRID:AB_92262</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-talin(Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T3287;RRID:AB_477572</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit HRP(Pig polyclonal)</td>
+      <td>Agilent Dako</td>
+      <td>Cat# P0217;RRID: AB_2728719</td>
+      <td>WB(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-actin(Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A2066;RRID:AB_476693</td>
+      <td>WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-collagen IV(Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab19808;RRID:AB_445160</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Iba1(Rabbit polyclonal)</td>
+      <td>Wako</td>
+      <td>Cat# 019–19741;RRID:AB_839504</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LYVE1(Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# AB14917;RRID:AB_301509</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse HRP(Rabbit polyclonal)</td>
+      <td>Agilent Dako</td>
+      <td>Cat# P0161;RRID:AB_2687969</td>
+      <td>WB:(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11b PE(Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 557397;RRID:AB_396680</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD16/CD32 Antibody(Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553142;RRID:AB_394657</td>
+      <td>FACS(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD18 PE(Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553293;RRID:AB_394762</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD49d PE(Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12-0492-82;RRID:AB_465697</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD49e PE(Rat monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 557447;RRID:AB_396710</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD49f Alexa Fluor 488(Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 313608;RRID:AB_493635</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45R/B220 Brilliant violet 421(Rat monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 562922;RRID:AB_2737894</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD51 PE(Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 551187;RRID:AB_394088</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD68 Alexa Flour 488(Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#137011;RRID:AB_2074847</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD206 PE-Dazzle(Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#141731;RRID:AB_2565931</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80 Brilliant violet 421(Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 123137;RRID:AB_2563102</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80 PE(Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# MF48004;RRID:AB_10372666</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80 Alexa Flour 647(Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 50-4801-82;RRID:AB_11149361</td>
+      <td>FACS(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Integrin β7 Chain PE(Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 557498;RRID:AB_396735</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG1 kappa Isotype Control PE(Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12-4301-81;RRID:AB_470046</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG2a Isotype Control Alexa Fluor 488(Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# R2a20;RRID:AB_2556535</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG2a kappa Isotype Control PE(Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12-4321-80;RRID:AB_1834380</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG2b kappa Isotype Control PE(Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12-4031-82;RRID: AB_470042</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly6G(Rat monoclonal)</td>
+      <td>Bio X Cell</td>
+      <td>Cat# BE0075-1;RRID:AB_1107721</td>
+      <td>IP(200 µg)</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Annexin V PE</td>
+      <td>Biolegend</td>
+      <td>Cat# 640908</td>
+      <td>FACS(1:50)</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant Murine M-CSF</td>
+      <td>PeproTech</td>
+      <td>Cat# 315–02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>cOmplete, Protease Inhibitor Cocktail (PIC)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 11697498001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>Fluoromount G Mounting Medium</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 0100–01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>Matrigel Basement Membrane Matrix</td>
+      <td>Corning</td>
+      <td>Cat# 354234</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>Matrigel Growth Factor Reduced (GFR) Basement Membrane Matrix, Phenol Red-free</td>
+      <td>Corning</td>
+      <td>Cat# 356231</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>Cytochalasin D</td>
+      <td>Merck</td>
+      <td>Cat# 250255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>Y-27632</td>
+      <td>Merck</td>
+      <td>Cat# 688001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>CK-666</td>
+      <td>Merck</td>
+      <td>Cat# 182515</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>Blebbistatin</td>
+      <td>Merck</td>
+      <td>Cat# 203390</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>pHrodo Red SE</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# P36600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>PS Lipid Microparticles</td>
+      <td>Echelon Bioscience</td>
+      <td>Cat# P-B1PS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>Tissue Tek</td>
+      <td>Sakura</td>
+      <td>Cat# 4583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>DAPI</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D9542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Click-iT Plus TUNEL assay</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# C10618</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Dead Cell Removal Kit</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-090-101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Neutrophil Isolation Kit</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-097-658</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Clarity Western ECL Substrate</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 170–5060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Experimental model, mouse strain</td>
+      <td>Itgb1fl/fl</td>
+      <td>Potocnik et al., 2000, provided by R Fässler (MPI of Biochemistry, Martinsried)</td>
+      <td>MGI:1926498 (Itgb1tm1Ref)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Experimental model, mouse strain</td>
+      <td>Tln1fl/fl</td>
+      <td>Petrich et al., 2007, provided by S Monkley and D Critchley (University of Leicester)</td>
+      <td>MGI:3770513(Tln1tm4.1Crit)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Experimental model, mouse strain</td>
+      <td>Itgb2−/−</td>
+      <td>Scharffetter-Kochanek et al., 1998, provided by M Sixt (IST, Klosterneuburg)</td>
+      <td>MGI: 1861705JAX: 003329(Itgb2tm2Bay)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Experimental model, mouse strain</td>
+      <td>Vav1-iCre</td>
+      <td>de Boer et al., 2003, Jackson Laboratory</td>
+      <td>MGI: 2449949JAX: 008610(Commd10Tg(Vav1-iCre)A2Kio)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Experimental model, mouse strain</td>
+      <td>Cx3cr1CRE</td>
+      <td>Yona et al., 2013, Jackson Laboratory</td>
+      <td>MGI: 5467983JAX: 025524(Cx3cr1tm1.1(cre)Jung)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Experimental model, mouse strain</td>
+      <td>Lifeact-GFP</td>
+      <td>Riedl et al., 2010, provided by R Wedlich-Söldner (University of Münster)</td>
+      <td>MGI: 4831036(Tg(CAG-EGFP)#Rows)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Experimental model, mouse strain</td>
+      <td>Lyz2GFP</td>
+      <td>Faust et al., 2000, provided by T Graf (CRG, Barcelona)</td>
+      <td>MGI: 2654931(Lyz2tm1.1Graf)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Experimental model, mouse strain</td>
+      <td>Vav1-iCre+/- Itgb1fl/fl</td>
+      <td>In-house breeding(this paper)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Experimental model, mouse strain</td>
+      <td>Vav1-iCre+/- Itgb1fl/fl Lyz2GFP/+</td>
+      <td>In-house breeding(this paper)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Experimental model, mouse strain</td>
+      <td>Cx3cr1CRE/+ Tln1fl/fl</td>
+      <td>In-house breeding(this paper)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Experimental model, mouse strain</td>
+      <td>Cx3cr1CRE/+ Tln1fl/fl Lifeact-GFP +/−</td>
+      <td>In-house breeding(this paper)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator 2019</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BD FACSDiva v6</td>
+      <td>BD</td>
+      <td>https://www.bdbioscibdbio.com/en-us/instruments/researes-instruments/research-software/flow-cytometry-acquisition/facsdiva-software</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji, ImageJ2</td>
+      <td>Rueden et al., 2017; Schindelin et al., 2012</td>
+      <td>https://imagej.net</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo v10.8.0</td>
+      <td>BD</td>
+      <td>https://www.flowjo.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism Version 8</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Lab Software</td>
+      <td>Bio-Rad</td>
+      <td>https://www.bio-rad.com/de-at/product/image-lab-software</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris v9.5–9.7</td>
+      <td>Bitplane</td>
+      <td>https://imaris.oxinst.com/versions/9-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN 2012 SP5 FP3 (black)</td>
+      <td>ZEISS Microscopy</td>
+      <td>https://www.zeiss.com/microscopy/int/products/microscope-software/zen.html#modules</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Incucyte Base Software</td>
+      <td>Incucyte</td>
+      <td>https://www.sartorius.com/en/products/live-cell-imaging-analysis/live-cell-analysis-software/incucyte-base-software</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Incucyte Spheroid Analysis Software Module</td>
+      <td>Incucyte</td>
+      <td>https://www.sartorius.com/en/products/live-cell-imaging-analysis/live-cell-analysis-software/incucyte-base-software</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ibidi chemotaxis and migration tool</td>
+      <td>Ibidi</td>
+      <td>https://ibidi.com/chemotaxis-analysis/171-chemotaxis-and-migration-tool.html?gclid=EAIaIQobChMI2c2LtcbW8wIVgrh3Ch2B8wV9EAAYASAAEgLMbvD_BwE</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model
+
+#### Mouse models
 
 All used mouse strains and crosses were on a C57BL/6J background and are listed in the Key resources table. Itgb1fl/fl (Potocnik et al., 2000), Tln1fl/fl (Petrich et al., 2007), Itgb2−/− (Scharffetter-Kochanek et al., 1998), Commd10Tg(Vav1-icre) (de Boer et al., 2003), Cx3cr1CRE (Yona et al., 2013), Tg(Lifeact-GFP) (Riedl et al., 2010), and Lyz2GFP (Faust et al., 2000) mouse strains have been described elsewhere. Mice were maintained in a conventional animal facility at the Max Planck Institute of Immunobiology and Epigenetics according to local regulations. Animal breeding and husbandry were performed in accordance with the guidelines provided by the Federation of European Laboratory Animal Science Association and by German authorities and the Regional Council of Freiburg. All mouse strains in this study were without health burden. Mouse strains without fluorescent reporter lines and mouse crosses with Tg(Lifeact-GFP) were only used for organ removal after euthanasia by carbon dioxide exposure. Vav1-iCre Itgb1fl/fl Lyz2GFP/+ and WT Lyz2GFP/+ control mice were used for 2P-IVM. Adult mice (>8 weeks) were age- and sex-matched in all experiments, and littermate animals were used as controls in most experiments. For Cre-expressing mouse strains, Cre-expressing littermate control animals were preferred. A contribution of Cre expression to biological phenotypes was never observed and ruled out through control experiments. Intravital imaging experiments were performed according to study protocols approved by the German authorities and the Regional Council of Freiburg (35–9185.81/G-18/111).
 
-## Method details
+### Method details
 
-## Ear skin and dura mater whole mount staining
+#### Ear skin and dura mater whole mount staining
 
 Whole mounts of murine ear skin were prepared by splitting the ear in half and by separating the dermal tissue from the cartilage. Split ears were fixed in 1% PFA in PBS for 16 hr at 4°C. The tissue was then blocked and permeabilized by incubating it in wash/staining solution (0.2% Triton X-100, 1% bovine serum albumin [BSA; Sigma-Aldrich] in PBS) for 16 hr on a plate shaker. Primary antibody staining was performed for 16 hr shaking at 4°C. Subsequently, the tissue was washed three times for 15 min at room temperature in wash/staining solution. Samples were stained with secondary antibody solution for 16 hr shaking at 4°C, followed by an additional three washing steps. To isolate dura mater whole mounts, the cranium skull together with the dura mater were dissected and placed in 4% PFA for 4 hr at 4°C. The dura mater was then peeled away from the cranium skull bones and stained in the same manner as ear skin whole mounts. Antibodies used for labeling ear skin whole mounts were: anti-collagen IV (1:500, Abcam), anti-rabbit Alexa Fluor 405 (1:300, Thermo Fisher Scientific), and anti-CD206 (1:200, Biolegend). Antibodies used for labeling dura maters were: anti-Iba1 (1:200, Wako), anti-collagen IV (1:200, Merck Millipore), anti-goat Alexa Fluor 488 (1:300, Thermo Fisher Scientific) and anti-rabbit Alexa Fluor 568 (1:300, Thermo Fisher Scientific). The tissues were mounted on Superfrost glass slides (Thermo Fisher Scientific) with a coverglass and Fluoromount-G (SouthernBiotech). Image acquisition was performed using an LSM 780 microscope (Zeiss) with a Plan-Apochromat 20× M27 objective (Zeiss) as well as with a Plan-Apochromat 40×/1.4 Oil DIC M27 objective.
 
-## Mouse culture
+#### Mouse culture
 
 Mouse BMDMs were generated from bone marrow precursors by standard M-CSF culture. Os coxae, tibia, and femora were dissected from mice and the bone marrow flushed with RPMI. The resulting bone marrow suspension was passed through a 70 µm filter and pelleted in a centrifuge at 330× g for 5 min. Upon re-suspension cells were counted and re-suspended at 5 × 106 cells/ml in heat-inactivated fetal calf serum (FCS) with 10% DMSO and stored at −80°C until usage. For macrophage differentiation, frozen bone marrow cells were defrosted, washed once with 20 ml RPMI (37°C) at 330× g for 5 min and re-suspended in 10 ml of macrophage medium (RPMI, 10% FCS, 1% penicillin/streptomycin and 20 ng/ml M-CSF). The cell suspension was plated on a 10 cm Petri dish and incubated at 37°C, 5% CO2 (day 0). On days 3 and 5 of the culture, 5 ml of fresh macrophage medium was added on top of the pre-existing medium. Cells were harvested with 20 mM EDTA at day 6 of differentiation. Dead cells were removed using a dead cell removal kit (Miltenyi Biotec) prior to any experiment, in accordance with the manufacturer’s instructions.
 
-## Flow cytometry
+#### Flow cytometry
 
 BMDMs were harvested as described before and Fc receptors were blocked with an anti-mouse CD16/CD32 antibody (1:250, BD Biosciences) in FACS buffer (5% heat-inactivated FCS, 2 mM EDTA in PBS) for 10 min at room temperature. Cells were stained with the desired antibody cocktail for 30 min on ice, followed by three wash steps with FACS buffer (5 min at 300× g). Cells were re-suspended in DAPI solution (0.5 µg DAPI in FACS buffer) and incubated for 10 min at room temperature. The cells were then analyzed using an LSR III or LSRFortessa (BD Biosciences) flow cytometer. Data were processed with the FlowJo software (BD Bioscience), where the integrin expression of living (DAPI negative) F4/80-expressing cells (1:100, Invitrogen) was analyzed. Antibodies used were: PE-conjugated anti-CD29 (1:400, Biolegend), PE-conjugate anti-CD11b (1:400, BD Bioscience), Alexa Fluor 488-conjugated anti-CD49f (1:400, Biolegend), rat IgG2a kappa isotype control (1:400, Thermo Scientific), Armenian hamster IgG isotype control (1:400, Biolegend), rat IgG1 kappa isotype control (1:400, Thermo Fisher Scientific), anti-integrin β7 chain (1:400, BD Bioscience), rat IgG2a isotype control (1:400, Thermo Fisher Scientific), rat IgG2b kappa isotype control (1:400, Thermo Fisher Scientific), anti-CD18 (1:400, BD Bioscience), anti-CD49d (1:400, Thermo Scientific), anti-CD51 (1:400, BD Bioscience), anti-CD61 (1:400, BD Bioscience), anti-CD49e (1:400, BD Bioscience), and rat IgG1 kappa isotype control (1:400, Thermo Fisher Scientific). To assess phagocytosis of macrophages in suspension, a 2:1 ratio of fluorescent PS-attached beads and BMDMs suspended in macrophage medium were incubated for 2 hr on a shaker at 37°C and 700 rpm. Afterward cells were Fc blocked in annexin-binding buffer (135 mM NaCl, 5 mM KCl, 5.6 mM glucose, 1.8 mM CaCl2, 1 mM MgCl2, and 20 mM HEPES, pH 7.3) using CD16/32 blocking antibodies (1:250, BD Biosciences), which was followed by labeling in annexin-binding buffer with anti-F4/80 antibodies (1:100, Invitrogen) and annexin V (1:50, Biolegend) for 25 min at 4°C. Cells were then washed two times and re-suspended in annexin-binding buffer containing 0.5 µg/ml DAPI. Results were acquired by flow cytometry using an LSR III (BD Biosciences) and analyzed using FlowJo software (BD Bioscience). Since internalization of PS-attached beads by BMDMs would shield them from annexin V labeling, cells which had acquired a green bead florescence signal, but were still annexin V negative, were defined as having internalized beads.
 
-## Immunoblot analysis
+#### Immunoblot analysis
 
 For immunoblot analysis, 5 × 105 BMDMs were lysed in RIPA buffer (50 mM Tris-HCl, 150 mM NaCl, 0.5% (v:v) NP40, 1% (v:v) Triton X-100, 5 mM EGTA, 5 mM EDTA, 1× cOmplete protease inhibitor cocktail) for 15 min on ice with regular pipetting. Proteins were separated by SDS-PAGE (Bio-Rad) on a 12% polyacrylamide gel, followed by a semi-dry transfer onto a PVDF membrane (Millipore). Nonspecific binding sites were blocked with Tris-buffered saline (TBS) containing 5% BSA and 0.1% (v:v) Tween-20. The membrane was incubated with antibodies against pan-talin (1:1000, Sigma-Aldrich) or actin (1:2000, Sigma-Aldrich) in 0.1% Tween-20% and 5% BSA overnight at 4°C on a shaker. After three washes for 15 min in 0.7% Tween-20 in PBS, the membrane was incubated in secondary antibody solutions (TBS containing 0.1% Tween-20 and 5% BSA, HRP-conjugated secondary antibodies [1:5000, Dako]) at room temperature. Protein bands were visualized with Clarity Western ECL substrate (Bio-Rad), using a ChemiDoc Touch Gel Imaging System (Bio-Rad).
 
-## Mouse neutrophil preparation for efferocytosis assay
+#### Mouse neutrophil preparation for efferocytosis assay
 
 Neutrophils were purified from freshly isolated mouse bone marrow cell suspensions using an autoMACS pro-selector cell separator with a MACS neutrophil isolation kit for negative selection in accordance with the manufacturer’s instructions (Miltenyi Biotec). Neutrophils were aged overnight in serum-free medium at 3 × 106 cells/ml at 37°C and 5% CO2. Aged neutrophils were stained prior to use in the 3D efferocytosis assay with 1 ml of 10 µg/ml pHrodo Red SE in HBSS per 2 × 106 cells for 45 min at 37°C. Cells were then washed twice with RPMI.
 
-## Random migration, efferocytosis, and bead uptake in 3D matrigel
+#### Random migration, efferocytosis, and bead uptake in 3D matrigel
 
 For 3D random migration, efferocytosis, and bead uptake assays, BMDMs were seeded at a concentration of 2.4 × 105 cells/ml in 40% Matrigel supplemented with 20 ng/ml M-CSF in a 96-well Incucyte image lock plate on ice under sterile conditions. When required, inhibitors were added to the final Matrigel at given concentrations (30 µM Y27632, 2 µM cytochalasin D, 100 µM CK-666 or 60 µM blebbistatin). For 3D efferocytosis and bead uptake assays, aged fluorescent neutrophils or 3 µm sized PS-attached fluorescent beads (Echelon Biosciences) were added to the final Matrigel cell suspension at 4 × 105 neutrophils or 2–2.4 × 105 beads per ml, respectively. After adding Matrigel solution to wells of the ice-cold 96-well Incucyte image lock plates, the plates were centrifuged for 3 min at 75× g and 4°C to bring the macrophages into the same focal plane for imaging. This step was required because the Incucyte S3 live-cell analysis system operates with an autofocus mode. Plates were then transferred to a 37°C cell incubator to initiate the fast polymerization process of the Matrigel matrix and kept for 30 min to ensure complete polymerization of the gel. In this experimental setup the majority of macrophages moves over 24 hr primarily in the lower part of the gel, but cells also move vertically in the 3D gel and leave the autofocus plane. Samples were then left at room temperature for 10 min before 200 µl of macrophage medium, with or without the addition of inhibitors, were added on top of the Matrigel. Assays were acquired using an Incucyte S3 live-cell analysis system (Sartorius). Each well was imaged in 15 min intervals for 24–30 hr with the image lock module and the 20× objective. Fluorescent signals were acquired with the inbuilt dual color module 4614, with the visualization of PS-attached fluorescent beads in the green imaging channel or pHrodo Red SE labeled neutrophils in the red imaging channel. For cell morphology visualization during random migration, Lifeact-GFP expressing BMDMs were additionally acquired by fluorescent confocal microscopy after 24 hr in the gel. Here, 5 × 105 macrophages/ml in 20 ng/ml M-CSF-supplemented 40% Matrigel were seeded in µ angiogenesis slides (Ibidi). Image acquisition was performed on an LSM 780 microscope (Zeiss), fitted with a Plan-Apochromat 40×/1.4 Oil DIC M27 objective.
 
-## Macrophage chemotaxis in 3D matrigel
+#### Macrophage chemotaxis in 3D matrigel
 
 Ibidi µ chemotaxis slides were used for 3D chemotaxis assays. Ten µl of Matrigel macrophage suspensions (40% phenol red free growth factor reduced Matrigel, macrophages at 3 × 106 cells/ml and 20 ng/ml M-CSF) with or without inhibitors (30 µM Y27632, 2 µM cytochalasin D or 100 µM CK-666) were added to each center port of the chemotaxis slide. The slide was then left to rest at room temperature for 7 min, followed by an incubation of 7 min at 37°C and 5% CO2. The slide was finally left to settle for 5 min at room temperature. Peripheral ports on each side of the Matrigel were filled with 65 µl macrophage medium with or without the before-mentioned inhibitors. The slides were incubated for 1 hr at 37°C and 5% CO2. A C5a gradient was subsequently generated by adding 15 µl macrophage medium (with or without inhibitors) containing 60 nM C5a to both ports on one side of the Matrigel. On the opposite side, 15 µl macrophage medium were added to both ports (with or without inhibitors). The slide was then loaded into the Incucyte S3 live-cell analysis system (Sartorius) using a custom-made slide mount and cells were imaged using the spheroid module in 15 min intervals for 24–30 hr with the 20× objective.
 
-## Tissue processing and immunofluorescence staining
+#### Tissue processing and immunofluorescence staining
 
 Organs (spleen, liver, lymph nodes) were harvested and placed in 1% PFA at 4°C overnight. After incubation in a 30% sucrose solution for 8 hr, organs were embedded in molds with Tissue Tek and stored at −20°C. A Leica CM3050 S Cryostat was used to cut tissue into 20 µm thin tissue sections, which were mounted on Superfrost glass slides and stored at −20°C until further processing. For immunofluorescence stainings, samples were blocked in blocking/staining solution (0.1% Triton X-100, 1% BSA in PBS) for 2 hr at room temperature. The blocking buffer was removed and the tissue was stained overnight with primary antibodies in staining solution in a humidified chamber at 4°C. Slides were washed three times with PBS before being incubated for 4 hr in a humidified chamber with the secondary antibodies in staining solution. After staining, the slides were washed a further three times in PBS and mounted with a coverglass using Fluoromount-G (SouthernBiotech). Liver and spleen sections were stained with anti-collagen IV (1:500, Abcam), anti-rabbit Alexa Fluor 405 (1:200, Thermo Fisher Scientific) and PE-conjugated anti-F4/80 (1:100, Thermo Fisher Scientific) antibodies. In addition to staining with anti-collagen IV (1:500, Abcam) and anti-rabbit Alexa Fluor 405 (1:200, Thermo Fisher Scientific) antibodies, the endogenous GFP expression of lymph node sections from Lyz2GFP/+ containing mice were amplified using an anti-GFP Dylight 488 antibody (1:750, Rockland). TUNEL stainings of lymph node sections were carried out using the Click-iT Plus TUNEL assay kit (Invitrogen). Tissue sections were treated with 2% H2O2 in methanol for 20 min at room temperature, followed by two washes in PBS. Samples were permeabilized with 0.01% Triton X-100, 0.1% sodium citrate in deionized water. The tissue was then rinsed with deionized water and incubated for 10 min with terminal deoxynucleotidyl transferase (TdT) buffer at 37°C. The TdT buffer was replaced with the TdT reaction mix and samples were incubated for 60 min at 37°C. Tissue sections were rinsed again with deionized water and treated with 0.1% Triton X-100, 3% BSA in PBS for 5 min. Subsequently, samples were rinsed once with PBS and incubated with the TUNEL reaction cocktail for 30 min at 37°C. Finally, the tissue sections were washed once with 3% BSA in PBS followed by one rinse with PBS. Antibody staining was then performed on the tissue sections as mentioned above. Antibodies used were: anti-LYVE1 (1:200, Abcam), anti-CD68 (1:200, BioLegend), anti-B220 (1:200 BD Horizon), anti-GFP Dylight 488 (1:500, Rockland), anti-collagen IV (1:500, Abcam), anti-rabbit Alexa Fluor 405 (1:300, Thermo Fisher Scientific), and anti-F4/80 (1:100, Invitrogen). Images were acquired using an LSM 780 microscope (Zeiss) equipped with a Plan-Apochromat 20× M27 objective (Zeiss) or a Plan-Apochromat 40×/1.4 Oil DIC M27 objective.
 
-## Imaging analysis
+#### Imaging analysis
 
 Tracking analysis was performed with the manual tracking function of Imaris 9.5.1–9.7.1 (Bitplane). For the random 3D migration assays, viable cells in a randomly chosen region were manually tracked on a frame-by-frame basis. Cells that underwent cell division during the imaging period were excluded. For the 3D chemotaxis assays, BMDMs on the side of the gel facing the C5a gradient were tracked. In rare cases, biological replicates were excluded from analysis when macrophages did not respond to the attractant and only very few control cells performed directed migration. Track visualizations for random migration were generated using the Imaris spot module. Visualizations of macrophage chemotaxis tracks were generated by exporting track coordinates from Imaris and by importing them into the Ibidi chemotaxis and migration tool software. Static tissue images were visualized using the Imaris volume and surface features. Cell circularity was manually measured using ImageJ/Fiji and the freehand selection tool, drawing the outline of the cell for every frame. Macrophage scanning and area coverage was visualized by creating binary masks for each frame of the phase-contrast channel using the ImageJ MorphoLibJ plugin. Binary images of all timepoints were combined using the Time-Lapse Color Coder plugin. The time projection image was then merged with the phase-contrast and green fluorescence (beads) channel. The spot function of Imaris was used to generate spots for all green events. All spots that resided within macrophages (as defined by the phase-contrast channel) were manually removed, so that only extracellular (non-cleared beads) were visualized. For the 2P-IVM analysis of the dermal macrophage chemotactic response, cell bodies of dermal macrophages were manually tracked over 90 min. Cell protrusions were tracked from the onset of protrusion formation until protrusions reached their maximum extension. All protrusions from all biological replicates were tracked and the results statistically analyzed. Bead uptake and neutrophil efferocytosis analysis was performed with the in-built analysis software of the Incucyte S3 instrument. Optimal parameters were manually defined for an analysis batch. Following this, a mask of the fluorescent signal was generated for all wells and timepoints. Within these masks, object counts and florescence intensity were analyzed. For the neutrophil efferocytosis assays, the Incucyte analysis results were further validated using an Imaris spot function analysis. Here, start and endpoint neutrophil florescence signals were used to generate spots for each neutrophil, which were then manually assigned as being either inside or outside of a macrophage. Using these designations the percentage removal of neutrophils was calculated. Cell protrusiveness was analyzed using a modified timeseries-based Sholl analysis and performed by tracking 10 random cells per condition. This entailed overlaying each cells center points with a bull’s-eye containing concentric rings (Sholl shells) at 25 µm intervals. The number of occasions a Sholl shell was intersected by a cellular process was counted for all 15 min time intervals in a 24 hr timeframe. This type of analysis was able to capture both multiple branch-based and elongation-based protrusiveness (Figure 5—figure supplement 2). The TUNEL assay analysis was performed with ImageJ. T cell zones (B220- and LYVE1-negative regions) were marked as regions of interest (ROI). The number of TUNEL-positive events in the ROI, which did not overlap with a CD68+ macrophage stain, was quantified using the multi-point counter on a z-projection.
 
-## 2P-IVM of macrophage chemotaxis
+#### 2P-IVM of macrophage chemotaxis
 
 2P-IVM of directed macrophage migration toward a sterile laser-induced wound injury was performed in the absence of neutrophils. To avoid any contribution of neutrophils to this response, neutrophils were depleted by one intraperitoneal injection with 200 µg of anti-Ly6G antibody diluted in PBS the day before imaging. Macrophage populations were visualized by GFP fluorescence in Vav1-iCre Itgb1fl/fl Lyz2GFP/+ and WT Lyz2GFP/+ mice. For the experiment mice were anesthetized using isoflurane (cp-pharma; the isoflurane was vaporized in an oxygen-air mixture; 2% isoflurane was used for induction and 1–1.5% was used for maintenance). The anesthetized mouse was placed in a lateral recumbent position on a custom-made imaging platform, so that the ventral side of the ear pinna rested on a coverslip. The ear was immobilized with a strip of Hansaplast tape, which was lightly stretched over the ear and the imaging platform. 2P-IVM was performed using an LSM 780 NLO microscope (Zeiss) enclosed in a custom-built environmental chamber that was maintained at 32°C using heated air (Kienle et al., 2021). Anesthetized mice were kept in the heated environmental chamber for 15–30 min until the ear tissue had settled. Once the tissue was stable, a focal skin injury was induced by a focused 2P laser pulse at an approximate laser intensity of 80 mW. A circular ROI of 15–30 µm in diameter was defined in one focal plane of the collagenous ear dermis, followed by laser scanning at 920 nm wavelength until tissue coagulation started within 1–3 s. Image acquisition was started immediately after laser-induced tissue damage. A water immersion C-Apochromat 40×/1.2 with corrector M27 objective was used for image acquisition. The microscope system was fitted with four external non-descanned photomultiplier tube detectors in the reflected light path. Fluorescence excitation was provided by an Insight Ds + (Spectra Physics) tuned to 920 nm for GFP excitation and the generation of collagen second harmonic signal. Non-descanned detectors collected the emitted light. Images were mainly captured toward the anterior half of the ear pinna where hair follicles are sparse. For 4D data sets, 3D stacks were captured every 1 min. Raw imaging data were processed with Imaris software version 9.1.2 (Bitplane). All movies are displayed as 2D maximum-intensity projections of 10–15 µm thick z-stacks. As the laser ablation turns the circular injured tissue autofluorescent in several channels, we masked the GFP autofluorescence of this region with Imaris-based image processing for data presentation.
 
-## Statistical analyses
+### Statistical analyses
 
 Sample size was determined prior to experiment for all experiments used for hypothesis testing (i.e. data that include statistical inference). Technical replicates of one biological replicate were designated with ‘N’, biological replicates were designated with ‘n’. Sample sizes for technical replicates (i.e. the tracking of randomly chosen migrating cells) in one biological replicate were considered based on the mean and standard deviation of WT macrophage speed during migration. We defined a 30% reduction of mean speed at a power of 0.95 as biologically meaningful effect, determining a sample size of N = 25. Reproducibility of the experimental findings was verified using biological replicates, which were performed as independent experiments. Experimental groups were defined by inhibitor treatment or by the genotype. Sample sizes for biological replicates in cell culture experiments (i.e. BMDM cultures generated from different individual mice) aimed for a minimum of mouse donors to reduce the number of laboratory animals. Sample size for animal experimentation was determined according to animal welfare guidelines. Blinding was not relevant for experiments with genotyping groups because all experimental groups were treated the same. Unpaired two-tailed t tests and analysis of variance (ANOVA) were performed after data were confirmed to fulfill the criteria of normal distribution, otherwise two-tailed Mann-Whitney U tests or Kruskal-Wallis tests were applied. The D’Agostino & Pearson normality test was performed for group sizes over 10, for group sizes under 10 the Shapiro-Wilk normality test was performed. If overall ANOVA or Kruskal-Wallis tests were significant, we performed post hoc test with pair-wise comparisons (ANOVA: Dunnett, Kruskal-Wallis: Dunn). Analyses were performed with GraphPad Prism-software (version 8.3.1). Asterisks indicate significance (*p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001). NS indicates non-significant difference (p > 0.05). For further statistical details, see Supplementary file 1.

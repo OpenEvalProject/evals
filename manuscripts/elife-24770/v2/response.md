@@ -96,9 +96,7 @@ A variable jitter between two events is necessary in order to reliably estimate 
 
 We agree that the delay between stimulation and VAS is not ideal. However, in order to minimize the time for participants spend in the scanner we did not present a VAS after each trial. Instead, we asked after each trial whether the stimulus was perceived as painful or not (‘yes’ or ‘no’). In 94.3% of the trials, the percept matched the stimulus. Excluding the non-matching trials led to very similar response patterns in each brain region.
 
-Furthermore, the VAS ratings were stable across blocks. We now include more information on these validity checks in the manuscript.10.7554/eLife.24770.011Author response image 1.Intensity ratings after each fMRI block.DOI: http://dx.doi.org/10.7554/eLife.24770.011
-
-DOI: http://dx.doi.org/10.7554/eLife.24770.011
+Furthermore, the VAS ratings were stable across blocks. We now include more information on these validity checks in the manuscript.10.7554/eLife.24770.011Author response image 1.Intensity ratings after each fMRI block.
 
 9) The authors should justify their choice of using an MRI acquisition with a gap which could be problematic (especially in the brainstem).
 
@@ -108,9 +106,7 @@ The use of a small inter-slice gap is common in fMRI experiments to prevent side
 
 According to our experience, this amount of missing trials is within the expected range for an hour-long pain study when all blinks are being removed from the data (Geuter et al., 2014). Unfortunately, most studies measuring pupil dilation do not report the amount of discarded trials and it is thus difficult to compare this amount of missing data to other studies.
 
-Interpolating over all missing samples and plotting pupil responses for all trials revealed a very similar result to the original results (see Author response image 2). The pupil results are thus independent of the eye blinks and other artifacts.10.7554/eLife.24770.012Author response image 2.Pupil responses based on all trials (left panel) and after exclusion of trials with artifacts (right panel).DOI: http://dx.doi.org/10.7554/eLife.24770.012
-
-DOI: http://dx.doi.org/10.7554/eLife.24770.012
+Interpolating over all missing samples and plotting pupil responses for all trials revealed a very similar result to the original results (see Author response image 2). The pupil results are thus independent of the eye blinks and other artifacts.10.7554/eLife.24770.012Author response image 2.Pupil responses based on all trials (left panel) and after exclusion of trials with artifacts (right panel).
 
 11) The method for obtaining and analyzing pupil data is likely not known by most readers and so there could be more detail and previous papers should be cited to validate whether this is a standard method.
 
@@ -130,9 +126,7 @@ We defined our regions of interest based on the Harvard-Oxford Atlas (https://fs
 
 For the PAG mask, we used an approach similar to the one used by Stein et al. (2012). We first identified the central aqueduct on the mean anatomical image. We then manually marked the gray matter surrounding the aqueduct and validated the resulting mask using a brainstem atlas (Naidich et al., 2009). Please see the figure below for the PAG mask.
 
-We now describe the masks and the creation of the PAG mask in more detail in the manuscript.10.7554/eLife.24770.013Author response image 3.PAG mask overlaid on the group-mean structural image.DOI: http://dx.doi.org/10.7554/eLife.24770.013
-
-DOI: http://dx.doi.org/10.7554/eLife.24770.013
+We now describe the masks and the creation of the PAG mask in more detail in the manuscript.10.7554/eLife.24770.013Author response image 3.PAG mask overlaid on the group-mean structural image.
 
 Reviewer #2:
 
@@ -162,11 +156,9 @@ We now explain the rationale for this design in more detail in the revised Resul
 
 4) Warm sensitive primary afferents are extremely slowly conducting C fibers (0.5-2m/s). The stimulus-related regressor does not appear to be adjusted to take the conduction delay into account. Thus, warm stimulus-related activation is unlikely to be captured by the regressor.
 
-This is an important point. However, the BOLD signal is also relatively slow. We computed a peri-stimulus time histogram for the warm and painful stimuli from an 8mm sphere located in the posterior insula and parietal opercular region (see Author response image 4). There was no difference between the peak timing for both conditions.10.7554/eLife.24770.014Author response image 4.Evoked BOLD response in posterior insula for warm and painful stimuli.Responses from a sphere centered at MNI coordinates [40/-16/16] are aligned to cue onset at t=0.DOI: http://dx.doi.org/10.7554/eLife.24770.014
+This is an important point. However, the BOLD signal is also relatively slow. We computed a peri-stimulus time histogram for the warm and painful stimuli from an 8mm sphere located in the posterior insula and parietal opercular region (see Author response image 4). There was no difference between the peak timing for both conditions.10.7554/eLife.24770.014Author response image 4.Evoked BOLD response in posterior insula for warm and painful stimuli.Responses from a sphere centered at MNI coordinates [40/-16/16] are aligned to cue onset at t=0.
 
 Responses from a sphere centered at MNI coordinates [40/-16/16] are aligned to cue onset at t=0.
-
-DOI: http://dx.doi.org/10.7554/eLife.24770.014
 
 [Editors' note: the author responses to the re-review follow.]
 

@@ -40,11 +40,27 @@ Here, we have developed a purely in vitro system with purified VPS34 complexes I
 
 To assess how membrane properties modify the activities of VPS34 complexes, we have developed a quantitative confocal microscopy assay to measure the activity of the human Class III PI3K complexes on giant unilamellar vesicles (GUVs), which have a radius of ~ 1–30 µm. Purified, recombinant, monodisperse VPS34 complexes I or II (Figure 1A) were incubated with Lissamine-Rhodamine labelled GUVs containing PI and an AlexaFluor647-labelled PX domain, which specifically binds PI(3)P (Ellson et al., 2001; Figure 1B). By following the rate of recruitment of the PX domain to the GUVs, we can estimate the PI(3)P production and compare the relative activities of the complexes on a range of membrane types.
 
-## Human complex I is more active than complex II
+![Figure 1.](https://cdn.elifesciences.org/articles/58281/elife-58281-fig1-v1.jpg)
+
+**Figure 1.:** (A) SEC-MALS analysis of purified human Class III PI3K complex I (left panel) and complex II (right panel). The protein samples were run on a Superose 6 10/300 column. Insets: SDS-PAGE of starting material stained with Coomassie staining. Both complex I and complex II are monodisperse, with an average mass for complex I consistent with a 1:1:1:1 Beclin 1/VPS15/VPS34/ATG14L complex (370 kDa, theoretical mass: 363 kDa) and an average mass for complex II consistent with a 1:1:1:1 Beclin 1/VPS15/VPS34/UVRAG complex (384 kDa, theoretical mass: 386 kDa). (B) Assay design for activities of human complexes I and II on GUVs, using confocal microscopy and a labelled PI(3)P-binding p40-PX domain (AF647-PX). Fluorescence from the Lissamine-Rhodamine (Liss-Rhod GUV) channel delineates the membrane, while the AF647 is indicative of VPS34 activity on the membrane. Scale bar: 5 μm. (C) Complex I is more active than complex II on GUVs with ‘DO base’ lipids (18% mixed chain PI, 10% DOPS, 17% DOPE and 55% DOPC). In the lower panels, the initial rates after a lag phase (AF647-PX fluorescence change/min in arbitrary units, AU) and confocal images corresponding to the AF647-PX and Liss-Rhod channels at the end of the reaction are shown. For clarity, only mean values of measurements for each time point in the reaction progress curves are plotted here and throughout all figures. Plots with SDs for each time point are shown in Supplementary file 3. All scale bars: 5 μm. ***: p<0.001 (p<0.0001). Figure 1—figure supplement 2 illustrates some of the raw images that were used for quantification. Scale bars: 15 μm. (D) Membrane binding of complexes I and II using a lipid flotation assay. Large unilamellar vesicles (LUVs, 100 nm) and proteins were mixed and pipetted on a sucrose gradient. The gradient was then centrifuged, fractionated and analysed by SDS-PAGE. Fractions 1–3 are the least dense fractions of a sucrose gradient, containing floating vesicles and membrane-bound proteins. Fractions 5–6 are the highest density sucrose fractions, containing the pelleted proteins. The complexes alone sediment into the denser portion of the gradients (left), but the presence of LUVs cause the complexes to associate with LUVs floating on the top of the gradient (right). Gel quantification can be seen in Figure 1—figure supplement 3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58281/elife-58281-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Structures of 18:1-Sphingomyelin and Cholesterol. Lipid composition (left, bottom) used to examine the influence of 18:1-Sphingomyelin and Cholesterol on VPS34 activity. (B) Complex I is more active than complex II on GUVs made of DO+SM+Chol with 10% 18:1-SM and 10% cholesterol. For clarity, only mean values are plotted for each time point. Plots with SDs for each time point are in Supplementary file 3. Scale bars: 5 µm. ***: p<0.001, (B) p<0.0001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58281/elife-58281-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** This illustrates some of the raw images that were collected to obtain the reaction progress curves illustrated in Figure 1C. Five areas per well were randomly selected for imaging. For the time course, images were taken every 2 min for 120 min. Here, only images taken at 2, 20, 40, 60, 80, 100 and 120 min of the time course are depicted for simplicity. Scale bars: 15 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/58281/elife-58281-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The amount of VPS15 and VPS34 in the floating fractions 1–3 (light purple) is compared to the amount in the unbound fractions 4–6 (dark purple).
+
+### Human complex I is more active than complex II
 
 We first compared the activities of complexes I and II on membranes containing 18% PI (with a mixed chain distribution, purified from bovine liver, hereafter called mixed chain PI), 10% DOPS, 17% DOPE, and 55% DOPC (see Supplementary files 1 and 2). This lipid headgroup composition resembles the ER membrane and we will refer to it as the base lipid composition or ‘DO base’. On DO base lipids, human complex I showed higher activity than complex II. Complex I showed a 7-fold higher initial rate compared with complex II (Figure 1C). Next, we examined whether the difference in activity between complexes I and II could be because complex II, which is normally active on early endosomes, was not assayed on endosome-mimicking membranes. There is evidence that early endosomes are rich in cholesterol and sphingomyelin (Bissig and Gruenberg, 2013; Arumugam and Kaur, 2017; Kobayashi et al., 2002). Therefore, we measured the activity of complexes I and II in the presence of 10% cholesterol and 10% sphingomyelin (Figure 1—figure supplement 1). This showed that even with this membrane composition, complex I remained more active than complex II. In order to compare the ability of complexes I and II to bind membranes, we carried out a flotation assay (Figure 1D). This revealed that fractions 1–3, which contained floating liposomes, included much more complex I when compared to the same fractions with complex II (Figure 1D). The correlation of the activity assays with the membrane binding assay strongly suggests that complex I is more active than complex II because complex I binds membranes more tightly than complex II.
 
-## Both substrate and non-substrate lipid unsaturation as well as membrane curvature greatly increase VPS34 activities
+### Both substrate and non-substrate lipid unsaturation as well as membrane curvature greatly increase VPS34 activities
 
 We examined how lipid packing affects VPS34 activities by varying the saturation status of the acyl chains. For each complex, we compared VPS34 activity on GUVs composed of different percentages of phospholipids with either stearoyl (18:0) or oleoyl (18:1) acyl chains (Figure 2A). As stearoyl acyl chains are saturated, they cause a tighter lipid packing than the mono-unsaturated oleoyl chains. Whereas SO lipids are made with one stearoyl and one oleoyl acyl chain, DO lipids carry two oleoyl acyl chains. Three different lipid compositions were examined: 82% DO lipids (18:1-18:1), 82% SO lipids (18:0-18:1), and 55% SO with 27% DO lipids (55% SO+27% DO) (Figure 2B). In each case, we varied only the acyl chain saturation of the non-substrate lipids while we kept the source of the PI and the relative proportions of PI, PS, PE and PC the same. GUV assays revealed that complexes I and II were only active on 82% DO lipids and not on 55% SO+27% DO or 82% SO (Figure 2C and D), suggesting that loose lipid packing activates complexes I and II. However, Z-stack analysis of ten Z slices, which covers a range of vesicle sizes revealed some activity on smaller vesicles with 55% SO+27% DO, but not on vesicles with 82% SO (Figure 2E and F). To examine this further, the curvatures (1/radius) for each GUV mixture were plotted against their fluorescence intensities. GUVs with 55% SO+27% DO displayed a positive correlation between increasing membrane curvature and activity for both complexes I and II, but 82% SO GUVs did not exhibit this correlation (Figure 2G and H). This suggests that high membrane curvature can at least partially compensate for the negative effect of lipid saturation.
 
@@ -62,7 +78,7 @@ As a control, we tested whether lipid packing could affect binding of the AF647-
 
 Together, these results show that lipid packing affects the complexes I and II activities, with both complexes showing a dramatic preference for unsaturated lipids, in both the general background lipids of the membrane and in the PI substrate for the enzyme. They also show that the negative impact of tight lipid packing on activities of VPS34 complexes can be partially compensated by increased membrane curvature.
 
-## Increasing negative membrane charge activates complex I, complex II, and VPS34 alone
+### Increasing negative membrane charge activates complex I, complex II, and VPS34 alone
 
 In order to examine the effect of negative membrane charge on VPS34 activity, we made membranes with increasing proportions of the negatively charged lipid PS. We compared activities on GUVs with 10% PS (DO base lipids) and 25% PS (DO high PS lipids) (Figure 4A and B). Using VPS34 alone, we could see no activity on GUVs with 10% PS. However, on GUVs with 25% PS, VPS34 activity was clearly detectable (Figure 4C). Also, complexes I and II showed substantial activation on 25% PS compared with 10% PS GUVs (Figure 4D and E). As shown before, the activity of complex II on 10% PS (DO base lipids) was lower than that of complex I (Figures 1D and 4F). However, when the two complexes were compared on 25% PS (DO high PS), complexes I and II had nearly the same activity, suggesting a higher preference of complex II for negative charge (Figure 4G).
 
@@ -70,7 +86,7 @@ In order to examine the effect of negative membrane charge on VPS34 activity, we
 
 **Figure 4.:** (A) Structures of DO phospholipid backbone (top) and head group for PE, PC, and PS (bottom). (B) Lipid compositions used to examine the influence of additional PS on VPS34 activity. (C–E) Activities of VPS34 alone, complex I and complex II on GUVs containing 10% PS (DO base) and 25% PS (DO high PS). Images were obtained 60 min after adding enzyme. (C) Activity of VPS34 alone (20 nM) on GUVs with 10% PS (DO base) and 25% PS (DO high PS). (D) Activity of complex I (20 nM) on GUVs with 10% PS (DO base) and 25% PS (DO high PS). (E) Activity of complex II (100 nM) on GUVs with 10% PS (DO base) and 25% PS (DO high PS). (F) and (G) Comparison of complexes I and II (20 nM) on GUVs with 10% PS (DO base) (F), or on 25% PS (DO high PS) (G). (F) ***: p<0.001 (p<0.0001); (G) n.s.: not significant (p=0.9274). For clarity, only mean values are plotted for each time point. Plots with SDs for each time point are in Supplementary file 3. All scale bars: 5 μm.
 
-## Membranes influence structures and dynamics of the VPS34 complexes
+### Membranes influence structures and dynamics of the VPS34 complexes
 
 We used hydrogen-deuterium exchange mass-spectrometry (HDX-MS) to determine the regions in the complexes I and II involved in membrane interaction. The advantage of HDX-MS is that it can map direct interactions of the native, unlabelled protein with membranes as well as mapping conformational changes associated with membrane binding (Masson et al., 2016).
 
@@ -86,7 +102,7 @@ We also performed HDX-MS for complex II in the presence and absence of 100 nm LU
 
 **Figure 6.:** (A) Representative peptides in complex II that showed significant HDX changes in the presence of lipids. (B) Overview of HDX changes illustrated on a model of human complex II. The model was built using SWISSMODEL and the structure of yeast complex II (PDB ID: 5DFZ). Peptides showing changes in HDX upon membrane binding are indicated by arrows. The model is colored by differences in HDX between the absence and presence of membranes (right inset). The left inset shows a schematic of complex II identifying the subunits and domains. CC1: coiled-coil I; CC2: coiled-coil II; BARA: β-α-repeated, autophagy-specific domain; BARA2: BARA2 domain; C2: C2 domain; Helical: helical domain; Kinase: kinase domain; WD40: WD40 domain; C-term: UVRAG C-terminal extension.
 
-## The ATG14L BATS domain is critical for the activity of complex I on membranes
+### The ATG14L BATS domain is critical for the activity of complex I on membranes
 
 Although it has been shown that the BATS domain is important for membrane binding, it is not clear how membrane properties affect this interaction and complex I activity (Brier et al., 2019; Fan et al., 2011; Ma et al., 2017). Sequence analysis suggests that the BATS domain has an amphipathic α-helix referred to as the amphipathic lipid packing sensor (ALPS) (residues 471–492), and hydrophobic residues 484W, 485F, and 488Y within this motif are important for the binding of the BATS domain to SUVs and for the localization of ATG14L to autophagosomes (Fan et al., 2011). Using the GUV assay, we compared activities of complex I carrying a BATS mutation in which the ALPS motif was truncated (ΔALPS 471–492) with the wild-type complex I (WT) (Figure 7A). On DO base lipids (Figure 7B), the ΔALPS mutant showed no activity, suggesting that the motif is essential for the complex I activity on membranes. Even on GUVs made with DO high PS, the ΔALPS mutant of complex I showed hardly any detectable activity (Figure 7C). Surprisingly, complex I ΔALPS displayed significantly less activity than VPS34 alone on GUVs containing 25% PS (Figure 7C). This suggests that the non-catalytic subunits of complex I partially inhibit basal VPS34 activity in the absence of the ALPS motif. To determine whether the increase in activity conferred on complex I by the BATS domain is an intrinsic property of the domain, we fused the BATS domain to the C-terminus of the full-length UVRAG subunit and co-expressed it with other complex II subunits (Figure 7A). This fusion complex was shown previously to increase membrane binding of complex II (Ma et al., 2017). We found that the fusion complex II (UVRAG+BATS) showed increased activity, about 7-fold compared with the wild-type complex II (CII WT, Figure 7D). The human UVRAG has a 235 amino-acid long C-terminal extension compared to its yeast orthologue Vps38. When this UVRAG-specific extension was deleted and the BATS domain was fused to the truncated UVRAG, the resulting complex II variant (UVRAG ∆C+BATS, Figure 7A) showed an even higher activation of 11-fold over the WT complex II (Figure 7D). This suggests that the presence or absence of the UVRAG C-terminal region alters the orientation of the BATS domain with respect to the membrane. Interestingly, both UVRAG+BATS and UVRAG ∆C+BATS exhibited even higher activity than complex I WT (Figure 7D). Our activity results are consistent with the previous studies showing that the presence of the BATS domain increased membrane binding (Ma et al., 2017). Together with our HDX-MS results, this strongly indicates that the BATS domain activates complex I through a mechanism that involves an increase in membrane binding, and that the BATS domain can act as an autonomous membrane-interacting module that confers gain of function to VPS34 activity.
 
@@ -94,7 +110,7 @@ Although it has been shown that the BATS domain is important for membrane bindin
 
 **Figure 7.:** (A) Constructs used to examine the influence of the BATS domain on VPS34 activity in the contexts of complex I and a complex I/II chimera on GUVs. (B) The ALPS motif of the BATS domain is important for the activity of complex I. Upper: Activities of wild-type complex I (WT), and complex I with the ΔALPS mutations on GUVs with DO base lipids. Lower left: Initial rates. Lower right: Confocal micrographs of the GUV assay at 60 min after adding proteins. ***: p<0.001 (p<0.0001). (C) Activities of WT and ΔALPS complex I as well as the VPS34 kinase subunit on its own on GUVs with DO high PS. ***: p<0.001 (for all p<0.0001). (D) Activities on GUVs with DO base lipids for complex II and for fusions of the BATS domain to UVRAG C-terminus. U + BATS: UVRAG + BATS; UΔC + BATS: UVRAGΔC + BATS as illustrated in (A). ***: p<0.001 (for all p<0.0001); **: p<0.01 (CI WT vs CII U+BATS p=0.0059). For clarity, only mean values are plotted for each time point. Plots with SDs for each time point are in Supplementary file 3. All scale bars: 5 μm.
 
-## The Beclin 1 BARA domain is more important for the activity of complex II than complex I
+### The Beclin 1 BARA domain is more important for the activity of complex II than complex I
 
 Three motifs, aromatic finger 1 (AF1, 359-FFW-361), aromatic finger 2 (AF2, 418-QF-419), and the hydrophobic loop motif (HL, 293-LPSVPV-298) found in the BARA domain of Beclin 1 are part of the putative membrane interface (Figure 8A). HDX-MS showed that membrane binding decreased HDX for only AF1 in complex I, whereas HL, AF1 and AF2 had reduced HDX in complex II (Figure 8A). This suggests that the BARA domain might bind membranes differently in the context of complex I and complex II (Figure 8A, middle panel). We measured the activities of both complexes I and II when carrying mutations in these motifs (AFM1 = F359D F360D W360D, AFM2 = Q418D F419D, and HLM = L293D V296D) in order to examine their importance. This revealed that complex I carrying AFM1 or AFM1+HLM (both AFM1 and HLM) had reduced but still significant activities (Figure 8B), while AFM2 did not affect the complex I activity (Figure 8C). In contrast, complex II activity depended on all three motifs (Figure 8D). This suggests that complex I activity is more dependent on the BATS domain than the BARA domain, with HL and AF2 dispensable for complex I. On the other hand, complex II activity is critically dependent on the BARA domain, where AF1, AF2 and HL are all essential for full activity.
 
@@ -102,7 +118,7 @@ Three motifs, aromatic finger 1 (AF1, 359-FFW-361), aromatic finger 2 (AF2, 418-
 
 **Figure 8.:** (A) Summary of HDX changes for the Beclin 1 BARA domain of human complex I (left) and II (right) overlaid on a ribbon diagram of the structure of the domain (PDB ID 4DDP). In the middle panel, peptides are coloured by whether they are specifically protected in complex I (orange), complex II (green), or both complexes I and II (blue). Elements involved in HDX changes are AF1 (Aromatic finger motif 1; 359-FFW-361), AF2 (Aromatic finger motif 2; 418-QF-419), and HL (Hydrophobic loop; 293-LPSVPV-298). (B–D) Effects of mutations in the membrane-binding elements of complexes I and II on activities using GUVs with DO base lipids. Top: Reaction progress curves. Only mean values are plotted. Plots with SDs are in Supplementary file 3. Bottom: initial rates. (B) AFM1 and HL mutations in the BARA domain modestly affect the activity of complex I on GUVs. Beclin 1 constructs: wild-type (WT), aromatic finger one mutant (AFM1), and AFM1+ hydrophobic loop mutant (AFM1+HLM). ***: p<0.001 (p<0.0001); n.s.: not significant (p=0.4238). (C) AFM2 mutation has no influence on complex I activity. n.s.: not significant (p=0.5186). (D) All of the mutations have an effect on complex II activity. ***: p<0.001 (for all p<0.0001). For clarity, only mean values are plotted for each time point. Plots with SDs for each time point are in Supplementary file 3. ***: p<0.001; n.s.: not significant.
 
-## Phosphoinositides have modest effects on activities of complexes I and II
+### Phosphoinositides have modest effects on activities of complexes I and II
 
 Phosphoinositides (PIPs) represent about 10% of total phospholipids, and less than 1% of total lipids in biological membranes (De Craene et al., 2017; Payrastre et al., 2001). However, specific PIPs are enriched in distinct organelle membranes, and this helps to selectively recruit proteins. Since previous work established the importance of kinases that generate phosphatidylinositol 4-phosphate (PI(4)P) and phosphatidylinositol 4,5-bisphosphate (PI(4,5)P2) in autophagy (Wang et al., 2015; Tan et al., 2016), we examined the influence of PI(4)P and PI(4,5)P2 on complexes I and II. For this, we added either 5% DOPI(4)P or 5% DOPI(4,5)P2 in place of 5% DOPC to the DO base lipids (Figure 9A, B and C). We found that complex I was activated by PI(4)P (~1.8 fold) and by PI(4,5)P2 (~1.2 fold) compared to DO base lipids (Figure 9D and E). In contrast, complex II was also modestly activated by PI(4)P (~1.7 fold) (Figure 9F) but unaffected by PI(4,5)P2 (Figure 9G). The activation of complex I by PI(4,5)P2 is consistent with the observation that the isolated BATS domain of ATG14L has a binding preference for PI(4,5)P2, in addition to its ability to sense membrane curvature (Fan et al., 2011; Tan et al., 2016).
 
@@ -130,43 +146,326 @@ Overall, our results uncovered the importance of lipid packing dictated by acyl 
 
 ## Materials and methods
 
-## LUV generation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DOPC</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>850375C</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DOPE</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>850725C</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DOPS</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>840035C</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brain PC (Porcine)</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>840053C</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brain PE (Porcine)</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>840022C</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brain PS (Porcine)</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>840032C</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Liver PI (mixed chain PI, Bovine)</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>840042C</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSPE-PEG(2000) Biotin</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>880129C</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DO Liss Rhod PE</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>810150P</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SOPC</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>850467C</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SOPE</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>850758C</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SOPS</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>840039C</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSPI</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>850143P</td>
+      <td>Dissolved in chloroform:methanol:H2O = 20:9:1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SAPI</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>850144P</td>
+      <td>Dissolved in chloroform:methanol:H2O = 20:9:1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DOPI</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>850149P</td>
+      <td>Dissolved in chloroform:methanol:H2O = 20:9:1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DOPI(3)P</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>850150P</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DOPI(4)P</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>850151P</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DOPI(4,5)P2</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>850155P</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesterol</td>
+      <td>Sigma</td>
+      <td>C2044</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>18:1 Sphingomyelin</td>
+      <td>Avanti Polar Lipids, Inc</td>
+      <td>860587 c</td>
+      <td>Dissolved in chloroform</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HsVPS34 + HsVPS15-3xTEV-ZZ</td>
+      <td>(Ohashi et al., 2016)</td>
+      <td>pYO1025</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HsBeclin 1, untagged</td>
+      <td>This work</td>
+      <td>pYO1006</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ZZ-3XTEV-HsATG14L</td>
+      <td>This work</td>
+      <td>pYO1017</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ZZ-3XTEV-HsUVRAG</td>
+      <td>This work</td>
+      <td>pYO1018</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HsBeclin 1 + ZZ-3XTEV-UVRAG</td>
+      <td>This work</td>
+      <td>pYO1023</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HsBeclin 1 + HsUVRAG, both untagged</td>
+      <td>This work</td>
+      <td>pYO1031</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HsBeclin 1 AFM1 (FFW/DDD at 359–361), untagged + ZZ-3xTEV-HsATG14L</td>
+      <td>This work</td>
+      <td>pYO1051</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HsBeclin 1 AFM1 (FFW/DDD at 359–361), untagged + ZZ-3xTEV-HsUVRAG</td>
+      <td>This work</td>
+      <td>pYO1052</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ZZ_3xTEV-ATG14 delta ALPS (1-470)</td>
+      <td>This work</td>
+      <td>pYO1077</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HsBeclin 1 + HsATG14L, both untagged</td>
+      <td>This work</td>
+      <td>pYO1101</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HsBeclin 1 AFM2 (Q418D F419D), untagged + ZZ-3xTEV-HsATG14L</td>
+      <td>This work</td>
+      <td>pYO1118</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HsBeclin 1 AFM2 (Q418D F419D), untagged + ZZ-3xTEV-UVRAG</td>
+      <td>This work</td>
+      <td>pYO1120</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HsUVRAG + HsATG14L BATS domain(413-492) fusion, untagged</td>
+      <td>This work</td>
+      <td>pYO1123</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HsUVRAG delta Cter (1-464) + HsATG14L BATS domain(413-492) fusion, untagged</td>
+      <td>This work</td>
+      <td>pYO1124</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GST-TEV-Cys-PX (2-149)</td>
+      <td>This work</td>
+      <td>pYO1125</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HsBeclin 1 AFM1+HLM (FFW/DDD at 359–361 and L293A V296A), untagged + ZZ-HsATG14L</td>
+      <td>This work</td>
+      <td>pYO1134</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HsBeclin1 HLM+AFM2 (L293A V296A+ Q418D F419D)</td>
+      <td>This work</td>
+      <td>pYO1190</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-TEV-HsVPS34</td>
+      <td>This work</td>
+      <td>pSM41</td>
+      <td>See Supplementary file 6 for more details</td>
+    </tr>
+  </tbody>
+</table>
+
+### LUV generation
 
 The LUV mixtures were mixed according to Supplementary file 1 in a glass vial. The mixture was dried under a nitrogen gas, while rotating the tube so that a lipid film was formed on the vessel wall. The remaining solvent was evaporated by placing the glass vial in a desiccator for 60 min. The lipids were dissolved in lipid buffer (50 mM HEPES pH 8.0, 150 mM NaCl) and vortexed for 2 min. The solution was transferred to a 1.5 mL Eppendorf Tube and sonicated for 2 min in a bath sonicator, followed by 10 cycles of freeze/thaw in liquid nitrogen and a 43°C water bath. The lipid mixture was extruded 20 times through a 100 nm filter (Whatman Anotop 10 syringe filter 0.1 μm diameter, 10 mm Cat No 6809–1112). The lipid solution was then either used fresh or snap frozen in liquid nitrogen.
 
-## GUV generation
+### GUV generation
 
 An aliquot of 15 μL of a 1 mg/mL GUV lipid mixture in solvent was pipetted onto the Indium-Tin-Oxide (ITO)-coated side of an ITO slide (Nanion) then dried in a desiccator for 1 hr. GUVs were made in the presence of 220 μL of swelling solution (0.5 M glucose or sucrose), using a GUV maker (Vesicle Pro, Nanion) programmed for 10 Hz; 60°C; 1 Amp; 3 min rise; 68 min fall. After GUVs were generated, they were immediately removed from the ITO slide and transferred to a 1.5 mL tube, which had been incubated with 5 mg/mL BSA (Sigma A7030) for 1 hr then rinsed once with swelling solution.
 
-## GUV immobilization
+### GUV immobilization
 
 Wells of an eight well glass bottom chamber (Ibidi 80827) were treated with 100 μL of avidin solution (0.1 mg/mL avidin egg white, Life Technologies A2667 dissolved in PBS, and 1 mg/mL BSA) for 15 min then washed two times with observation buffer (25 mM HEPES pH 8.0 and 271.4 mM NaCl). An aliquot of 64 μL of observation buffer was added to the wells, followed by 48 μL GUVs then 20 μL of 0.1 mg/mL BSA-biotin (Scientific Laboratory Supplies A8549, dissolved in observation buffer). GUV immobilization was checked on the microscope, then 20 μL of 10x buffer (250 mM HEPES pH 8.0, 10 mM EGTA, 20 mM MnCl2, 10 mM TCEP, and 1 mM ATP pH8.0) was added.
 
-## Microscopy
+### Microscopy
 
 GUVs were observed with a 63x oil immersion objective (Plan-Apochromat 63x/1.40 Oil DIC, Zeiss) on an inverted confocal microscope (Zeiss 780), using ZEN software (Zeiss). The observation chamber was immobilized on a microscope stage holder using an adhesive (Blu-Tack, Bostik). In the ZEN software, Time Series and Positions were selected. The Lissamine-rhodamine channel for GUVs was exited with a Diode-pumped solid-state (DPSS) 561 nm laser and collected with a 566–629 nm band. The Alexa Fluor 647 channel for the PX domain was exited using a HeNe 633 nm laser and collected with a 638–756 nm band. Five to six areas per well were randomly selected so that at least 15 GUVs could be analyzed. After areas were selected, an aliquot of 48 µL of a solution containing the kinase complex and the PX domain in protein dilution buffer (25 mM HEPES pH8.0, 150 mM NaCl, 1 mM TCEP, and 0.5 mg/mL BSA) was added to each well. The final concentrations of complex I, complex II or VPS34 alone are described in figures and their legends. The PX domain was used at the final concentration of 7 μM. Images were obtained every 2–3 min for 60–120 min. For the Z-stack analysis, the Z-Stack option was ticked in the Zen software. For the Z-Stack, slices were kept, and the first and last positions were manually set and 10 slices were acquired.
 
-## Image analysis
+### Image analysis
 
 Images were opened with Fiji software using Bio-Formats importer plugin. For the time course analysis, partial or whole circles from GUV sections were selected using the ROI (region of interest) selection tool, and added to ROI manager. Fluorescence intensities were analyzed using a macro (GUV_intensity.ijm. See ‘Confocal microscopy macro’ section below). A baseline signal of the AF647 channel originating from unbound PX domain and small membrane particles or vesicles, was subtracted from all frames. To estimate this baseline, 10 regions without GUVs were selected and their intensity profile over time was obtained with the ImageJ command ‘Plot Z-axis Profile’. These 10 profiles were averaged together to obtain a single temporal baseline that was later subtracted from intensity measurement at the corresponding time points. Because this baseline signal appears earlier than the actual enzyme activity, negative values are typically generated in the lag phase just before the initial rate is achieved. In the case of the kinases with very weak or no activities (e.g., for the BATS domain mutant and for VPS34 alone), the signal from the baseline is stronger than the signal accumulated on the GUVs, thereby resulting in negative values after baseline subtraction. The initial rate was calculated by carrying out linear regression with Prism7 (GraphPad Software) using the points in the region of the AF647-PX signal reaction progress curve that showed a linear increase. This region was located manually and typically started after a lag phase and before the plateau of the AF647-PX signal. For the radius versus fluorescence intensity analysis (Figure 2), whole GUV circular sections were selected using Oval selection tool and added to ROI manager, and analyzed using a macro (GUV_intensity1dimension.ijm). Ten random areas for baseline subtraction were selected using the ROI selection tool, and the mean values were subtracted from the actual fluorescence intensities. Results were further analyzed using Microsoft Excel (Microsoft) and GraphPad Prism7 (GraphPad Software).
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 Expi293 suspension cells (ThermoFisher A14527) were grown at 37°C, 8% CO2, and 125 rpm shaking in Expi293 Expression Medium (ThermoFisher A1435102). Cells at a density of around 2.0 × 106 mL−1 were transfected with plasmids at 1.1 mg/L culture, using 3 mg/L of polyethylenimine (PEI) ‘MAX’ (Polysciences 24765, 1 mg/mL in PBS). Cells were grown at 37°C, 8% CO2, and 125 rpm shaking for 48 hr, then harvested at 3000 g for 20 min, flash frozen in liquid nitrogen, and stored at −80°C, until they were used.
 
-## Flotation assay
+### Flotation assay
 
 An aliquot of 20 μL of sample was prepared containing: 1.8 mM or 1.5 mg/mL LUVs, 2 μM VPS34 complex in buffer containing 25 mM HEPES pH 8.0, 150 mM NaCl, 1 mM TCEP. The LUVs and proteins were incubated on ice for 30 min. In the meantime, a sucrose gradient was prepared. Several sucrose solutions were layered from bottom to top in a Beckman centrifuge tube (343775 Thickwall Polycarbonate Tube): 40 μL 30% sucrose solution, 52 μL 25% sucrose solution, 52 μL 20% sucrose solution. Then 16 uL of the LUV/protein sample was carefully pipetted on top of the gradient without disturbing the layers. 2.5 μL of the remaining LUV/protein was kept as an input sample. The gradient was then centrifuged for 3 hr in a TLS-55 rotor (Beckman Coulter) at 55,000 rpm and 4°C. Afterwards, 6 fractions of 26 μL were carefully collected from the top of the gradient. The input and gradient fractions were then loaded on an SDS-PAGE gel.
 
-## Protein purification
+### Protein purification
 
 A protein purification method for human complex I was described previously (Ohashi et al., 2016). Human complex II was purified in the same way as the complex I, except that the NaCl concentration is at 300 mM throughout the procedures. All complex I and complex II mutants were purified in the same conditions as the wild-type complexes. For the purification of human VPS34 alone, a plasmid (pSM41) was transformed into E. coli C41(DE3) RIPL cells. The transformed bacteria were cultured in 2xTY medium containing 0.1 mg/mL ampicillin at 37°C to an OD 600 of 0.8–1.0 and induced with 0.3 mM IPTG at 12°C for 15.5 hr. For a 4 L scale purification, cell pellets were resuspended in 100 mL of sonication buffer (10 mM Tris-HCl pH 8.0, 100 mM NaCl, 10 mM imidazole, 1 Complete EDTA-free Protease Inhibitor Cocktail Tablet (Roche, 11873580001), 0.1 mg/mL DNaseI, and 50 mL BugBuster (Novogen 70584) and sonicated on ice for 3 min, which was repeated three times in total. Lysates were subjected to ultracentrifugation at 100,000 g for 40 min at 4°C. The supernatant was filtered through a 0.45 μm filter (Millipore, SE2M230I04), before being passed through two connected 5 mL Ni-NTA FF columns (GE Healthcare 17-5255-01). The bound protein was washed with 100 mL Ni A1 buffer (20 mM Tris pH 8.0, 300 mM NaCl, 10 mM imidazole, 2 mM β-mercaptoethanol), 100 mL Ni A2 buffer (20 mM Tris pH 8.0, 100 mM NaCl, 10 mM imidazole, 2 mM β-mercaptoethanol), and eluted with an imidazole gradient with about 80 mL of Ni B1 buffer (20 mM Tris pH 8.0, 100 mM NaCl, 300 mM imidazole, 2 mM β-mercaptoethanol). The N-terminal His6 tag was cleaved with TEV protease (made in house) and incubated overnight with gentle rocking at 4°C. On the next day, the protein was further purified on a 5 mL Heparin HP column (GE Healthcare 17040701) by first washing with 20 mL HA buffer (20 mM Tris pH 8.0, 100 mM NaCl, 2 mM DTT) and then eluting with 100 mL HB buffer (20 mM Tris pH 8.0, 2 mM DTT, 1 M NaCl). The heparin peak fractions were pooled and brought to 100 mM NaNO3 to prevent precipitation during concentration in a 30,000 MWCO Amicon Ultra15 concentrator (Millipore UFC903024). The final purification step was carried out on a Superdex 200 16/60 gel filtration column (GE Healthcare, 17-1069-01) that was pre-equilibrated with running buffer (20 mM Tris HCl pH 8.0, 100 mM NaCl, 2 mM DTT). The peak fractions were pooled and concentrated to 5.2 mg/mL (51 μM). For the purification of human phox 40 (construct GST-TEV cleavage site-Cys-PX), a plasmid (pYO1125) was transformed into E. coli C41(DE3) RIPL cells. The transformed bacteria were cultured in 2xTY medium containing 0.1 mg/mL ampicillin at 37°C to an OD 600 of 0.6 and induced with 0.3 mM IPTG at 30°C for 16 hr. 6 L of cells were pelleted by 20 min centrifugation at 4,000 g and the pellets were resuspended in 150 mL lysis buffer (20 mM HEPES pH 8.0, 200 mM NaCl, 1 mM TCEP, 0.05 μL/mL universal nuclease (ThermoFisher, 88702), 0.5 mg/mL lysozyme (MP Biomedicals, 195303)). The cells were sonicated 6 min on ice (10 s on/10 s off, 60% amplitude), and the lysates were spun at 30,000 g for 45 min at 4°C. The supernatant was filtered through a 0.45 μm filter (Millipore, SE2M230I04), and an aliquot of 2.5 mL of washed Glutathione Sepharose beads was added (Glutathione Sepharose 4B, GE Healthcare 17-0756-05). The lysate was incubated on the beads for 45 min with gentle rolling at 6 rpm at 4°C. The beads were then transferred to a gravity flow column (Bio-Rad, 731–1550) and washed with 100 mL lysis buffer, 100 mL wash buffer (20 mM HEPES pH 8.0, 300 mM NaCl, 1 mM TCEP) and 100 mL TEV buffer (20 mM HEPES pH 8.0, 200 mM NaCl, 1 mM TCEP). The N-terminal GST tag was cleaved with TEV protease and incubated overnight with gentle rocking at 4°C. Next day, elution fractions were collected and concentrated in a 10,000 MWCO Amicon Ultra15 concentrator (Millipore, UFC901024). The concentrated protein was loaded onto a Superdex 75 16/60 gel filtration column (GE Healthcare 17-1068-01) and gel filtration was carried out in a buffer containing 20 mM HEPES pH 8.0, 200 mM KCl, 1 mM TCEP. The peak fractions were pooled and concentrated to 23.5 mg/mL (1.35 mM).
 
-## Labelling of the PX domain
+### Labelling of the PX domain
 
 For the labeling of the PX, 1 mg of AF647 C2 Maleimide kit (Life Technologies, A20347) was dissolved in 100 μL DMSO (ThermoFischer, Catalog No. BP231-100) to final 7.7 mM. For the final labeling reaction 250 μM PX, 2.5 mM TCEP, 385 μM AF647 dye was mixed with labeling buffer (50 mM HEPES pH 7.0, 200 mM KCl) to a total volume of 1 mL, and the reaction was left for 2 hr at room temperature on a roller at 10 rpm. After the incubation, 1 mM of DTT was added and the protein was loaded on a 5 mL Heparin HP column (GE Healthcare 17040701). The column was first washed with HA buffer (50 mM HEPES PH 8.0, 100 mM KCl, 1 mM TCEP) and then eluted with HB buffer (50 mM HEPES PH 8.0, 1 M KCl, 1 mM TCEP). The peak fractions were pooled and concentrated to 6.7 mg/mL (384 μM) with ~ 20% labelling efficiency.
 
-## Hydrogen/deuterium exchange mass spectrometry (HDX-MS)
+### Hydrogen/deuterium exchange mass spectrometry (HDX-MS)
 
 A protein alone or a protein/lipid stock solution consisting of either 7.5 μM complex I or complex II with or without 2.2 mg/mL LUVs [18% Liver PI, 10% DOPS, 17% DOPE and 55% DOPC in LUV Buffer (25 mM HEPES pH 7.0, 100 mM NaCl and1 mM EGTA)] was incubated for 10 min at room temperature. An aliquot of 5 μL of this stock solution was mixed with 45 μL of D2O Buffer [consisting of 20 mM HEPES pH 8.0, 300 mM NaCl, 0.5 mM TCEP, 1 mg/mL LUVs (added from a 5 mg/mL LUV stock in LUV Buffer) and 74.6% D2O (Acros Organics)] for a defined period of time at 23°C. In the lipid-free experiments, the solution contained LUV Buffer instead of LUVs. The exchange reaction was quenched using 20 μL of ice cold 5 M guanidinium chloride and 8.4% Formic Acid, pH 1. The final pH of the sample was 2.2. Five time-points were produced (0.3/3/30/300/3000 s), with each exchange reaction executed in triplicate. The 0.3 s time point was obtained by carrying out an exchange for 3 s at 4°C, instead of 23°C. Each sample was immediately flash-frozen in liquid nitrogen and subsequently stored at −80°C until analysis.
 
@@ -174,20 +473,20 @@ Samples were thawed and manually injected on an M-Class Acquity UPLC with HDX Ma
 
 Peptide identification was conducted using the ProteinLynx Global Server (PLGS, Waters, U.K.). Peptides were identified from three non-deuterated samples for complex I and for complex II. Deuterated peptides were analysed using DynamX 3.0 software (Waters, U.K.). Peptide inclusion criteria was a minimum intensity of 5000, a minimum sequence length of 5 amino acids, a minimum of 0.1 products per amino acid, a maximum MH+ error of 5 ppm, and a positive identification meeting these criteria in at least 2 of the three non-deuterated files. An initial automated spectral processing step was conducted by DynamX followed by a manual inspection of individual peptides for sufficient quality. A table of all peptides included in the analysis and their quality assessment statistics are available in the Supplementary files 4 and 5. The HDX analysis in this manuscript complies with the community agreed guidelines (Masson et al., 2019).
 
-## SEC-MALS
+### SEC-MALS
 
 The molecular masses of human complexes I and II were determined in solution using size exclusion chromatography coupled to multi-angle light scattering (SEC-MALS). Measurements were performed using a Wyatt Heleos II 18 angle light scattering instrument coupled to a Wyatt Optilab rEX online refractive index detector. Samples for analysis (human complex I at 1 mg/mL) and complex II (0.8 mg/mL) were resolved on a Superose 6 10/300 analytical gel filtration column (GE Healthcare) coupled to an Agilent 1200 series LC system running at 0.5 mL/min before then passing through the light scattering and refractive index detectors in a standard SEC-MALS format. Protein concentration was determined from the excess differential refractive index based on 0.186 ∆RI for 1 g/mL or with the sequence based UV extinction coefficient determined in ProtParam. The measured protein concentration and scattering intensity were used to calculate molecular mass from the intercept of a Debye plot using Zimm’s model as implemented in the Wyatt ASTRA software.
 
 The experimental setup was verified using a BSA standard run with the same sample volume. The monomer peak was used to check mass determination and to evaluate interdetector delay volumes and band broadening parameters that were subsequently applied during analysis of complexes I and II.
 
-## Confocal microscopy macro
+### Confocal microscopy macro
 
 The mean intensity for each label on the GUVs' membranes was extracted using a custom ImageJ macro. The rings corresponding to the 2D section of the GUVs were segmented by applying a threshold to the response of a difference of a Gaussian filter applied for each channel and at each time point. The logical union of the masks of the two segmented channels was then computed in order to obtain a unique mask for each time point. After smoothing, the inner part of the rings was filled and an internal morphological gradient provided the contours of the GUVs with a calibrated thickness. Finally, the membrane of the GUVs are obtained as the intersection of these thick contours and the original segmentation, allowing to discard any potential spurious signal within the GUVs. Within a set of manually selected regions of interest, the mean intensities of the signal in the segmented membranes for each channels and time points were recorded and assigned to the corresponding region thus circumventing the problem of tracking possibly complex regions.
 
-## Lipid mixtures
+### Lipid mixtures
 
 All GUV and LUV lipid mixtures are described in Supplementary files 1 and 2.
 
-## Plasmids
+### Plasmids
 
 All plasmids are described in Supplementary file 6.

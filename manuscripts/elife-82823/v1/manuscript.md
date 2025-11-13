@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Wellcome Centre for Integrative Neuroimaging, Department of Psychiatry, University of Oxford, Oxford Centre for Human Brain Activity (OHBA) University Department of Psychiatry Warneford Hospital Oxford United Kingdom
-2. https://ror.org/052gg0110 Department of Experimental Psychology, University of Oxford, Anna Watts Building, Radcliffe Observatory Quarter Oxford United Kingdom
-3. https://ror.org/03angcq70 Centre for Human Brain Health, University of Birmingham Birmingham United Kingdom
+1. Wellcome Centre for Integrative Neuroimaging, Department of Psychiatry, University of Oxford, Oxford Centre for Human Brain Activity (OHBA) University Department of Psychiatry Warneford Hospital Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. Department of Experimental Psychology, University of Oxford, Anna Watts Building, Radcliffe Observatory Quarter Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+3. Centre for Human Brain Health, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
 
 † Corresponding author
 
@@ -34,13 +34,13 @@ We also show substantial between-subject variability in the decay time constant 
 
 ## Results
 
-## A novel task for exploring behavioural and EEG adaptations to the statistics of dynamic sensory environments
+### A novel task for exploring behavioural and EEG adaptations to the statistics of dynamic sensory environments
 
 To study evidence accumulation in a continuous setting, we designed a novel variant of the classic random dot kinematogram (RDK) paradigm (Britten et al., 1992; Donner et al., 2009; Kelly and O’Connell, 2013; Newsome and Paré, 1988). Subjects continuously monitored a stream of time-varying sensory evidence (hereafter referred to as ‘motion coherence’) for blocks of 5 min (Figure 1a). During extended ‘baseline periods’ (grey shaded area in Figure 1b), the average level of motion coherence (black line) in the stimulus was zero, whereas during shorter intermittent ‘response periods’ (green shaded area), the mean level of motion coherence became non-zero (either 30, 40, or 50% motion coherence). The participants’ task was to report whenever they detected such a period of coherent motion using a left or right buttonpress. Importantly, the onset of response periods was not explicitly signalled to the participant. If they responded accurately (during a response period or within 500 ms of it ending), they received a reward (+3 points); if they failed to report a response period (‘missed response period’), or they responded during a baseline period (‘false alarm’), they received a small punishment (–1.5 points). Participants also received a larger punishment (–3 points) if they reported the incorrect motion direction during a response period; in practice, such errors were very rare. Feedback was presented by changing the colour of the central fixation point for 500 ms (Figure 1a), and they were trained on the meaning of these colours as part of extensive pre-experiment training (see ‘Methods’). The accumulated total points were then converted into a monetary pay-out at the end of the task. Participants completed six runs, each consisting of four 5 min blocks; they were given a short break between each block and a longer break between runs.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/82823/elife-82823-fig1-v1.jpg)
 
-**Figure 1.:** (a) Task design. Participants continuously attend to a centrally presented RDK stimulus, for 5 min at a time. They aim to successfully report motion direction during ‘response periods’ (when coherent motion signal is on average non-zero) and withhold responding during ‘baseline periods’ (when signal is on average zero). (b) Task structure (example block; response periods are ‘rare’). During both baseline (grey) and response periods (green), the signal (black line) is corrupted with experimenter-controlled noise (grey line). The noise fluctuations that precede each response (arrows) can be averaged to obtain the evidence integration kernel. (c) The resulting evidence integration kernel for false alarms is well described by an exponential decay function, whose decay time constant in seconds is controlled by the free parameter . The equation for this kernel is in the main text, and details of kernel fitting are provided in ‘Methods’.τ
+**Figure 1.:** (a) Task design. Participants continuously attend to a centrally presented RDK stimulus, for 5 min at a time. They aim to successfully report motion direction during ‘response periods’ (when coherent motion signal is on average non-zero) and withhold responding during ‘baseline periods’ (when signal is on average zero). (b) Task structure (example block; response periods are ‘rare’). During both baseline (grey) and response periods (green), the signal (black line) is corrupted with experimenter-controlled noise (grey line). The noise fluctuations that precede each response (arrows) can be averaged to obtain the evidence integration kernel. (c) The resulting evidence integration kernel for false alarms is well described by an exponential decay function, whose decay time constant in seconds is controlled by the free parameter $\tau$. The equation for this kernel is in the main text, and details of kernel fitting are provided in ‘Methods’.
 
 Crucially, the net motion presented to the participant on each frame of the stimulus was not the average level of motion coherence (black line in Figure 1b), but instead was a noisy sample from a Gaussian distribution about this mean (grey line). This noisy sample was resampled on average every 280 ms (inter-sample interval drawn from an exponential distribution, truncated at 1000 ms). This ‘experimenter-controlled sensory noise’ confers several benefits.
 
@@ -50,13 +50,21 @@ Second, the noise fluctuations allow a ‘reverse correlation’ approach to stu
 
 Finally, and perhaps most importantly, the experimenter-controlled sensory noise allows us to characterise how continuous sensory evidence fluctuations cause changes in the simultaneously recorded continuous EEG signal. To study this, we used a deconvolutional general linear model (GLM) approach (Crosse et al., 2016; Ehinger and Dimigen, 2019; Gonçalves et al., 2014; Hassall et al., 2021) to estimate TRFs to various events relating to the time-varying sensory evidence. We describe this approach and the resulting TRFs in more detail below.
 
-## Behavioural adaptations to environments with different statistical properties
+### Behavioural adaptations to environments with different statistical properties
 
 We used this paradigm to investigate whether and how participants adapted their evidence integration behaviour to the overall statistics of the sensory environment. To test this, we manipulated both the duration and frequency of ‘response periods’ in the task. We hypothesised that this would affect the decay of past sensory evidence and/or the decision threshold used to commit to a response. Importantly for our subsequent analyses, we kept the generative statistics of the Gaussian noise during ‘baseline periods’ consistent across conditions. This allowed us to directly compare behavioural evidence integration kernels for false alarms and EEG TRFs across conditions without any potential confound from how the noise was structured.
 
 Within each 20 min run, participants completed four pseudorandomly ordered 5 min blocks drawn from a 2 * 2 factorial design (Figure 2a). Response periods were either LONG (5 s) or SHORT (3 s), and either FREQUENT (baseline periods between 3 and 8 s in duration) or RARE (baseline periods between 5 and 40 s). Participants were extensively trained on these trial statistics prior to completing the task and were then explicitly cued which environment they were currently in. As a consequence, participants neither had to learn nor infer the higher-order statistics of the sensory environment during the task; instead, they had to adapt their decision behaviour according to the pre-learnt statistics of the cued environment.
 
-## Response periods
+![Figure 2.](https://cdn.elifesciences.org/articles/82823/elife-82823-fig2-v1.jpg)
+
+**Figure 2.:** (a) Structure of response periods (signal only, before noise was added to the stimulus stream) across the different environments. This was manipulated in a 2 * 2 design, where response periods were either FREQUENT or RARE, and LONG or SHORT. Participants were extensively trained on these statistics prior to the task, and the current environment was explicitly cued to the participant. (b) Correct detection rate for all response periods. Participants successfully detected more response periods when they were LONG than SHORT (as would be expected, because the response period is longer), but also detected more when they were FREQUENT than RARE. (c) Median reaction time (time taken to respond after start of response period) for successfully reported response periods across the four conditions. Participants took longer in RARE versus FREQUENT conditions, and in LONG versus SHORT conditions. (d) Integration kernels for ‘response periods’ shows a main effect of FREQUENT versus RARE response periods, but unexpectedly no effect of LONG versus SHORT response periods. See main text for further discussion of this analysis. All plots in (b–d) show mean ± s.e. across 24 participants. Note that to make reaction times and integration kernels comparable between the four conditions, we only include those responses that were shorter than 3.5 s in analyses for (c) and (d) (i.e. the maximum response time in SHORT response periods).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82823/elife-82823-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The results indicate that both the mean motion coherence and variance of the motion coherence influenced participants’ choice, suggesting that participants used a strategy of detecting shifts in both mean and variance to detect response periods. * denotes p<0.05 significant effect across participants.
+
+#### Response periods
 
 We first tested whether participants adjusted their behaviour across the four conditions by analysing detection behaviour for response periods. We used a three-way repeated-measures ANOVA to test for effects of motion coherence, response period length, and response period frequency.
 
@@ -68,45 +76,73 @@ We also found that participants detected response periods more frequently when t
 
 We also considered an alternative stimulus detection strategy of changes in stimulus variance across time rather than changes in stimulus mean. This hypothesis relied upon the fact that response periods had smaller standard deviations in the Gaussian noise distribution than baseline periods – a stimulus feature that we introduced to avoid excessive samples of ‘maximal’ (100%) motion coherence when the mean was non-zero. To test whether the variance of the stimulus might also affect participants’ detection, we performed a logistic mixed effects model on participants’ responses (Figure 2—figure supplement 1). Detection probability was the dependent variable, and mean motion coherence, variance of motion coherence, response period frequency, and length were independent variables, along with interaction terms. We found that stimulus variance during response periods did indeed impact detection probability; response periods with a higher variance in motion coherence were less likely to be detected. Crucially, however, the main effects of mean motion coherence, trial frequency, and trial length (equivalent to the effects plotted in main Figure 2b) were left unaffected by the inclusion of this coregressor.
 
-## False alarms
+#### False alarms
 
 We then examined whether false alarms differed across conditions, testing for effects of response period frequency and length on false alarm rate using a two-way repeated-measures ANOVA. We found that despite the structure of the noise stream being identical across the four conditions, there was a lower overall frequency of false alarms in LONG versus SHORT conditions (Figure 3a; F(1,23) = 58.67, p=8.98 * 10–8). This provides further evidence that participants were overall more conservative in their responses in LONG conditions than SHORT. (In other words, for an equivalent level of sensory evidence, the participants were less likely to make a response.) There was no effect of response period frequency on false alarm rate (F(1,23) = 0.37, p=0.55).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/82823/elife-82823-fig3-v1.jpg)
+
+**Figure 3.:** (a) False alarm rates (responses during baseline periods) showed a main effect of response period duration – participants showed significantly lower false alarm rates when response periods were LONG versus SHORT (F(1,23) = 58.67, p=8.98 * 10–8). This is consistent with having a more cautious response threshold (also evidenced by longer reaction times during response periods, see Figure 2c), although it could also be interpreted as shorter response periods inducing more confusion between signal and noise. (b) Integration kernels calculated for false alarms across the four conditions. Lines show mean +/- s.e. across 24 participants. (c) Exponential decay model fitted to individual participants’ kernels during false alarms shows a significantly longer decay time constant when response periods were RARE versus FREQUENT. The data points show the time constant, $\tau$, for each participant after fitting a model of exponential decay to the integration kernel. The equation for this kernel is in the main text, and details of kernel fitting are provided in ‘Methods’.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82823/elife-82823-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Left panel: unlike for RARE versus FREQUENT (Figure 3c), there was no significant difference in decay time constant for integration kernels for LONG versus SHORT. Similarly, there was no difference in amplitude parameter A for either of these comparisons (middle/right panels). (b) Variability across individuals, and comparative consistency across conditions, of integration kernels. This figure shows integration kernels from three example subjects in the experiment across the four conditions. Although our experiment primarily aimed to test whether integration kernels would be adapted to different environmental statistics (columns of figure), we found (unexpectedly) that different individuals had very different integration kernels (rows); some would integrate evidence over longer durations (e.g. top row), and others over far shorter durations (e.g. bottom row). All analyses are from false alarm responses only.
+
 We then examined what caused participants to false alarm during baseline periods. Were participants still integrating evidence continuously during these periods of the task, or might false alarms be driven by other spurious factors, such as motor noise? We tested this by calculating integration kernels derived from these responses. We found the recovered evidence integration kernels showed exponential decay weighting, implying that participants were indeed performing continuous evidence integration throughout baseline periods as well as response periods, and that evidence accumulation was more temporally extended when response periods were RARE rather than FREQUENT (Figure 3b). The slight differences in integration kernels between Figure 3b and Figure 2d (shorter duration, and return to baseline close to the response) are due to the inclusion of the average motion signal in Figure 3b, rather than just the noise.
 
-## Between-participant variation in evidence integration
+#### Between-participant variation in evidence integration
 
-We then sought to characterise the time constant of leaky evidence integration within each individual participant. To do this, we fit an exponential decay model (Figure 1c) to the empirical integration kernel from false alarm responses: k(t)=Ae−tτ
+We then sought to characterise the time constant of leaky evidence integration within each individual participant. To do this, we fit an exponential decay model (Figure 1c) to the empirical integration kernel from false alarm responses:
 
-where k(t) is the height of the integration kernel t seconds before its peak; A is the peak amplitude of the integration kernel (in units that denote the fraction of dots moving towards the chosen response direction); and τ is the decay time constant (in units of seconds). We note that this exponential decay model is theoretically motivated by the leaky evidence accumulation model, which implies that past evidence will leak from the accumulator with an exponential decay (Bogacz et al., 2006).
+$$
+k(t)=Ae^{\frac{−t}{\tau}}
+$$
 
-Our exponential decay model provided a good fit to data at a single-subject level (median R2 = 0.82, 95% confidence intervals for R2 = [0.42,0.93]; see Figure 3—figure supplement 1 for example fits), as demonstrated by the strong reliability across conditions for both A and τ (Figure 3c, Figure 3—figure supplement 1a; Pearson’s correlation between SHORT and LONG conditions: τ: R(23) = 0.71; A: R(23) = 0.72; Pearson’s correlation between RARE and FREQUENT conditions: τ: R(23) = 0.87; A: R(23) = 0.81; all p<0.0001). Indeed, a striking feature of these integration kernels was that variation across individuals exceeded the variation observed across conditions (e.g. see Figure 3c).
+where k(t) is the height of the integration kernel t seconds before its peak; A is the peak amplitude of the integration kernel (in units that denote the fraction of dots moving towards the chosen response direction); and $\tau$ is the decay time constant (in units of seconds). We note that this exponential decay model is theoretically motivated by the leaky evidence accumulation model, which implies that past evidence will leak from the accumulator with an exponential decay (Bogacz et al., 2006).
 
-Consistent with our earlier analyses (Figu2,3res 2d and 3b), we found that by fitting this single-subject model, τ was significantly longer when response periods were RARE than FREQUENT (paired T(23) = 3.62, p=0.0014; Figure 3c) but A did not differ between these conditions (paired T(23) = 0.03, p=0.97; Figure 3—figure supplement 1a). Again consistent with our analyses of behaviour during response periods (Figure 2d), there was no difference between these parameters for LONG versus SHORT response periods (τ: paired T(23) = 0.82, p=0.42; A: paired T(23) = -0.97, p=0.34; Figure 3—figure supplement 1a).
+Our exponential decay model provided a good fit to data at a single-subject level (median R2 = 0.82, 95% confidence intervals for R2 = [0.42,0.93]; see Figure 3—figure supplement 1 for example fits), as demonstrated by the strong reliability across conditions for both A and $\tau$ (Figure 3c, Figure 3—figure supplement 1a; Pearson’s correlation between SHORT and LONG conditions: $\tau$: R(23) = 0.71; A: R(23) = 0.72; Pearson’s correlation between RARE and FREQUENT conditions: $\tau$: R(23) = 0.87; A: R(23) = 0.81; all p<0.0001). Indeed, a striking feature of these integration kernels was that variation across individuals exceeded the variation observed across conditions (e.g. see Figure 3c).
+
+Consistent with our earlier analyses (Figu2,3res 2d and 3b), we found that by fitting this single-subject model, $\tau$ was significantly longer when response periods were RARE than FREQUENT (paired T(23) = 3.62, p=0.0014; Figure 3c) but A did not differ between these conditions (paired T(23) = 0.03, p=0.97; Figure 3—figure supplement 1a). Again consistent with our analyses of behaviour during response periods (Figure 2d), there was no difference between these parameters for LONG versus SHORT response periods ($\tau$: paired T(23) = 0.82, p=0.42; A: paired T(23) = -0.97, p=0.34; Figure 3—figure supplement 1a).
 
 In summary, these results indicate that participants adapted to response periods being rarer by accumulating sensory evidence with a longer time constant of integration, but that there was also substantial between-subject variability in evidence accumulation across participants.
 
-## Computational modelling of leaky evidence accumulation
+### Computational modelling of leaky evidence accumulation
 
-We next considered what adjustments within a computational model of leaky evidence accumulation might account for the behavioural adaptation across different environments, and the variability across participants. We simulated a well-established model of leaky evidence accumulation, the Ornstein–Uhlenbeck process (Bogacz et al., 2006; Brunton et al., 2013; Ossmy et al., 2013). Here, evidence is accumulated over time according toXt=(1+λ)Xt−1+gMt+εt
+We next considered what adjustments within a computational model of leaky evidence accumulation might account for the behavioural adaptation across different environments, and the variability across participants. We simulated a well-established model of leaky evidence accumulation, the Ornstein–Uhlenbeck process (Bogacz et al., 2006; Brunton et al., 2013; Ossmy et al., 2013). Here, evidence is accumulated over time according to
 
-where is a parameter that (when constrained to be negative) determines the leak of past sensory evidence in the decision variable; g is a parameter that determines the gain applied to the momentary sensory evidence at each timepoint Mt ; and t denotes Gaussian-distributed white noise with mean 0 and variance σ. The model emits a response every time that a decision threshold ±θ is exceeded, at which point Xt+1 is reset to 0. Note that if were set to 0 rather than negative, this model would be equivalent to the widely used Drift Diffusion Model, in which previously accumulated evidence is perfectly retained in the decision variable Xt . Such a model would be inappropriate in the current paradigm as the structure of the task demands that past sensory evidence should gradually be discounted.
+$$
+X_{t}=(1+\lambda)X_{t−1}+gM_{t}+\epsilon_{t}
+$$
 
-We first considered what adjustments of the model parameters governing leak and decision threshold, and θ, would lead to optimal performance in terms of points gained across the entire block (Figure 4). We simulated model behaviour using a range of possible values of these parameters, while holding g constant and assuming σ is primarily a property of low-level sensory processing and so also remains constant. The optimal parameterisation of the Ornstein–Uhlenbeck process depended upon the number of correct responses/missed trials in response periods versus the number of false alarms during baseline periods (Figure 4—figure supplement 1). For example, setting the response threshold θ to a low value (e.g. <1 in Figure 4—figure supplement 1) leads to the model correctly detecting virtually all response periods, but also emitting so many false alarms that the total points obtained would be negative. By contrast, setting the threshold slightly higher still allows for correct responses, but they now outnumber false alarms, meaning that the model accumulates points across the block.
+where is a parameter that (when constrained to be negative) determines the leak of past sensory evidence in the decision variable; $g$ is a parameter that determines the gain applied to the momentary sensory evidence at each timepoint $M_{t}$ ; and $_{t}$ denotes Gaussian-distributed white noise with mean 0 and variance σ. The model emits a response every time that a decision threshold ±θ is exceeded, at which point $X_{t+1}$ is reset to 0. Note that if were set to 0 rather than negative, this model would be equivalent to the widely used Drift Diffusion Model, in which previously accumulated evidence is perfectly retained in the decision variable $X_{t}$ . Such a model would be inappropriate in the current paradigm as the structure of the task demands that past sensory evidence should gradually be discounted.
+
+We first considered what adjustments of the model parameters governing leak and decision threshold, and θ, would lead to optimal performance in terms of points gained across the entire block (Figure 4). We simulated model behaviour using a range of possible values of these parameters, while holding $g$ constant and assuming σ is primarily a property of low-level sensory processing and so also remains constant. The optimal parameterisation of the Ornstein–Uhlenbeck process depended upon the number of correct responses/missed trials in response periods versus the number of false alarms during baseline periods (Figure 4—figure supplement 1). For example, setting the response threshold θ to a low value (e.g. <1 in Figure 4—figure supplement 1) leads to the model correctly detecting virtually all response periods, but also emitting so many false alarms that the total points obtained would be negative. By contrast, setting the threshold slightly higher still allows for correct responses, but they now outnumber false alarms, meaning that the model accumulates points across the block.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82823/elife-82823-fig4-v1.jpg)
+
+**Figure 4.:** (a) We performed a grid search over the parameters and θ to evaluate the performance (points won) for different parameterisations (Figure 4—figure supplement 1). The shaded area denotes the areas of model performance that lay in the top 10% of all models considered. The optimal area differs across conditions, and the optimal setting for leak and threshold co-vary with one another. (b) We used the evidence stream presented to each participant (each dot = one 5 min block), to identify the model parameterisation that would maximise total reward gained for each subject in each condition (see also Figure 4—figure supplement 2).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82823/elife-82823-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** We considered a plausible range of settings for the leak and threshold parameters that might maximise the total points won (left-hand column; top 10% of models enclosed in black line; see also main Figure 4a). The optimal model parameterisation depended upon a trade-off between the frequency of correct responses during response periods (second column) against the number of false alarms (third column) and missed trials (fourth column). As in human behaviour, the total number of ‘incorrect responses’ made (i.e. wrong response emitted during response window) were negligible.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82823/elife-82823-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The four graphs show the optimal model parameterisations for each individual subjects’ sensory evidence stream, for each of the four conditions (i.e. each dot = one 5 min stream of evidence, Figure 4b). In all four conditions, a model that is ‘less leaky’ (i.e. is closer to 0) is typically compensated by setting the decision threshold θ to be higher to achieve optimal performance (as also seen in Figure 4—figure supplement 1).
 
 Figure 4a shows the area of model performance that performs in the top 10% of all parameterisations that we considered, and Figure 4b shows the best parameterisations for 30 streams of evidence that were presented to participants in the task. Notably, the optimal decision threshold θ was traded off against the optimal setting for leak (Figure 4a, Figure 4—figure supplement 2). In other words, a model in which past sensory evidence leaked more rapidly (i.e. was more negative) could be compensated by a decrease in θ, to retain a high level of overall points gained. This led to a ‘ridge’ in parameter space where a given set of values for and θ would provide high task performance. The location of this ridge differed across the four environments, implying that participants would indeed need to adapt these parameters across conditions.
 
 We confirmed the optimal settings for and θ by presenting the actual stimulus streams that were presented to our participants, and identifying the values of these two parameters that maximised total points won (Figure 4b). This demonstrated that when response periods were LONG rather than SHORT, the optimal adjustment was to reduce the amount of leak in the model, so that incoming sensory evidence persisted for longer within the decision variable. When response periods were RARE rather than FREQUENT, the model could be optimised by increasing the decision threshold. This, in turn, would make the model more conservative, consistent with the reduced detection rates and accuracy shown in Figure 2b and c. (We note, however, that this is slightly inconsistent with the pattern of behavioural false alarm rates shown in Figure 3a. We suggest that this may be under the control of further factors such as time-varying urgency [Geuzebroek et al., 2022], something we do not consider in the current model.)
 
-If changes in θ are primarily driven by the frequency of response periods, and changes in are primarily driven by their length, then how can we explain the fact that the decay time constant τ of integration kernels is affected by frequency but not length? To answer this, we performed an equivalent analysis of integration kernels on our model simulations. We epoched and averaged the sensory evidence that preceded each response made by the decision model and examined the effects of and θ on the recovered integration kernels (Figure 5). Surprisingly, we found that θ, not λ, was primarily responsible for the recovered decay time constant τ. At first sight, this appears counterintuitive because is directly responsible for the decay of past sensory evidence in the model of leaky accumulation. However, this is counteracted by the fact that the only data that enters this analysis is when the model has passed decision threshold, and a response is emitted – if the threshold is set higher, then a consistent stream of positive evidence is required before threshold will be reached, producing the effect shown in Figure 5. By contrast, we found that the amplitude of the integration kernel A was affected by manipulations of both θ and λ.
+If changes in θ are primarily driven by the frequency of response periods, and changes in are primarily driven by their length, then how can we explain the fact that the decay time constant $\tau$ of integration kernels is affected by frequency but not length? To answer this, we performed an equivalent analysis of integration kernels on our model simulations. We epoched and averaged the sensory evidence that preceded each response made by the decision model and examined the effects of and θ on the recovered integration kernels (Figure 5). Surprisingly, we found that θ, not λ, was primarily responsible for the recovered decay time constant $\tau$. At first sight, this appears counterintuitive because is directly responsible for the decay of past sensory evidence in the model of leaky accumulation. However, this is counteracted by the fact that the only data that enters this analysis is when the model has passed decision threshold, and a response is emitted – if the threshold is set higher, then a consistent stream of positive evidence is required before threshold will be reached, producing the effect shown in Figure 5. By contrast, we found that the amplitude of the integration kernel A was affected by manipulations of both θ and λ.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/82823/elife-82823-fig5-v1.jpg)
 
 **Figure 5.:** We performed an integration kernel analysis on false alarms emitted by the Ornstein–Uhlenbeck process with different settings for leak (λ, left column) and threshold (θ, right column) while holding the other parameter constant. Variation in θ would invariably affect the requirement for temporally sustained evidence to emit a false alarm (a higher threshold requiring sustained evidence); variation in primarily affect the amplitude of the eventual kernel.
 
-In summary, our conclusions from the computational modelling are threefold: (i) our manipulations of response period frequency and length elicited different settings for model threshold and leak respectively to maximise reward (Figure 4b); (ii) the ‘ridge’ in parameter space that performed well (top 10%) for each condition showed a trade-off between threshold and leak (Figure 4a, Figure 4—figure supplement 1), and may explain how different participants could show very different integration kernels (Figure 3—figure supplement 1) while still performing well on the task; and (iii) the between-condition and between-subject variation in integration kernel time constants τ is principally driven by variation in response threshold, θ (Figure 5).
+In summary, our conclusions from the computational modelling are threefold: (i) our manipulations of response period frequency and length elicited different settings for model threshold and leak respectively to maximise reward (Figure 4b); (ii) the ‘ridge’ in parameter space that performed well (top 10%) for each condition showed a trade-off between threshold and leak (Figure 4a, Figure 4—figure supplement 1), and may explain how different participants could show very different integration kernels (Figure 3—figure supplement 1) while still performing well on the task; and (iii) the between-condition and between-subject variation in integration kernel time constants $\tau$ is principally driven by variation in response threshold, θ (Figure 5).
 
-## EEG correlates of continuous sensory evidence integration
+### EEG correlates of continuous sensory evidence integration
 
 Having established behavioural differences in evidence integration across individuals and across environments with different statistical structures, we then examined how participants’ EEG responses reflected these differences. To test this, we examined the effects of the noise fluctuations on the EEG signal during baseline periods. We focussed on this time period for three reasons: (i) the generative statistics of the noise were identically matched across all four task conditions; (ii) behavioural evidence from ‘false alarms’ clearly indicated that participants were still integrating sensory evidence during baseline (Figure 3, Figure 3—figure supplement 1); and (iii) the large number of noise fluctuations embedded in the stimulus (>1000 per 5 min block) meant that we had many events of interest to recover EEG TRFs with a high signal-to-noise ratio (Gonçalves et al., 2014; Lalor et al., 2006).
 
@@ -118,11 +154,23 @@ We therefore built a deconvolutional GLM to estimate TRFs to various events rela
 
 Using this approach, we found a set of consistent TRFs that reliably reflected the continuous updates in the time-evolving sensory evidence during baseline (Figure 6). In particular, the two regressors that reflected changes in the sensory evidence (‘jump events’) and the magnitude of |Δevidence| both elicited positive-going scalp topographies over centroparietal electrodes, peaking ~300 ms after this change occurred (Figure 6a and b). This scalp topography, timecourse, and reporting of |Δevidence| are consistent with the P300 component (Donchin, 1981; Duncan-Johnson and Donchin, 1977; Mars et al., 2008; Squires et al., 1976). The scalp topography is also consistent with the CPP (Kelly and O’Connell, 2013; O’Connell et al., 2012; O’Connell and Kelly, 2021), whose ramp-to-threshold dynamics have been proposed to account for many established effects in the P300 literature (Twomey et al., 2015). In addition, the continuous |evidence| regressor elicited a triphasic potential over centroparietal electrodes (Figure 6c). This triphasic potential is notably similar to EEG potentials reflecting ‘decision update’ signals during trial-based tasks that require integration of multiple, discrete pieces of evidence (Wyart et al., 2012).
 
-## Increased CPP responses to Δevidence and response thresholds when response periods are rare
+### Increased CPP responses to Δevidence and response thresholds when response periods are rare
 
 We then examined whether these TRFs to noise fluctuations were adapting across the different sensory environments. Given our behavioural findings concerning integration kernels (Figures 2d and 3b), we reasoned that we would most likely identify differences as a function of response period frequency rather than length. Indeed, we found that the centroparietal response to the same change in sensory evidence was larger when response periods were RARE than when they were FREQUENT (Figure 7a, Figure 7—figure supplement 2; p=0.017, cluster-based permutation test). As large changes in mean evidence are less frequent in the RARE condition, the increased neural response to |Δevidence| may reflect the increased statistical surprise associated with the same magnitude of change in evidence in this condition. In addition, when making a correct response, preparatory motor activity over central electrodes reached a larger decision threshold for RARE versus FREQUENT response periods (Figure 7b; p=0.041, cluster-based permutation test). We found similar effects in beta-band desynchronisation prior, averaged over the same electrodes; beta desynchronisation was greater in RARE than FREQUENT response periods. As discussed in the computational modelling section above, this is consistent with the changes in integration kernels between these conditions as it may reflect a change in decision threshold. It is also consistent with the lower detection rates and slower reaction times when response periods are RARE (Figure 2b and c), which also imply a higher response threshold. By contrast, we found no statistically significant difference for either of these regressors between SHORT versus LONG response periods (Figure 7—figure supplements 1 and 2). We also found qualitatively similar results for false alarm responses.
 
-## Responses to |Δevidence| reflect decision-relevant, not decision-irrelevant, statistics of stimulus
+![Figure 7.](https://cdn.elifesciences.org/articles/82823/elife-82823-fig7-v1.jpg)
+
+**Figure 7.:** (a) Centroparietal electrodes (see triangles in scalp topography) showed a significantly greater response to Δevidence during ‘jump events’ in the noise stream when response periods were RARE than when they were FREQUENT. (b) Central and centroparietal electrodes showed a significantly greater negative-going potential immediately prior to a buttonpress during response periods. Lines and error bars show mean ± s.e.m. across 24 participants. * (solid black line at top of figure) denotes significant difference between FREQUENT and RARE (p<0.05, cluster corrected for multiple comparisons across time). Details of the permutation testing used for multiple-comparisons correction are provided in ‘Methods’.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/82823/elife-82823-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Panels arranged as in Figure 7; permutation tests were performed as in Figure 7 (and described in ‘Methods’).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/82823/elife-82823-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** The left-hand panel shows the individual effects for the Δevidence regressor over centroparietal electrodes (see triangles in Figure 7), averaged within-participant for both FREQUENT and RARE conditions (each dot = 1 participant). The plot shows the significantly increased response to this regressor in RARE versus FREQUENT (T(23) = 2.83, p=0.0095). No such difference is seen for the equivalent plot comparing SHORT and LONG conditions (right-hand panel).
+
+### Responses to |Δevidence| reflect decision-relevant, not decision-irrelevant, statistics of stimulus
 
 Given the potential role of |Δevidence| in surprise detection, we next asked whether the centroparietal response to |Δevidence| reflected low-level sensory properties of changes in the motion stimulus, or higher-level signals relevant to decision-making. To test this, we collected an additional control dataset where the stimulus contained both horizontal motion (decision-relevant) that subjects had to integrate, as in the main experiment, but also vertical motion (decision-irrelevant) that had the same low-level sensory statistics. As in the main experiment, we found that centroparietal responses reflected both ‘jump events’ and their associated |Δevidence| for decision-relevant motion, but these were substantially reduced for regressors that reflected changes in decision-irrelevant evidence (Figure 8). This implies that low-level sensory surprise alone does not account for the centroparietal responses to |Δevidence| in our continuous paradigm. Instead, the neural response is better described as reporting change detection that is relevant to signal detection and discrimination. It is possible that such change detection would be useful to indicate when a response period is more likely to arise in the task (Shinn et al., 2022).
 
@@ -130,15 +178,15 @@ Given the potential role of |Δevidence| in surprise detection, we next asked wh
 
 **Figure 8.:** Lines show mean +/- s.e.m. across 6 participants. * denotes timepoints where the response to |Δevidence| is significantly greater for decision-relevant motion than decision-irrelevant motion, while controlling for multiple-comparisons across time (see ‘Methods’).
 
-## Behavioural‐neural correlation between evidence integration kernels and TRFs to continuous sensory evidence
+### Behavioural‐neural correlation between evidence integration kernels and TRFs to continuous sensory evidence
 
-Finally, given the consistency and between-subject variability in integration time constants shown in Figure 3c and Figure 3—figure supplement 1, we explored whether any components relating to processing of sensory evidence might reflect cross-subject variation in evidence integration. We therefore performed a behavioural-neural correlation between participants’ integration time constants τ and their TRFs to sensory noise fluctuations. (Note that the integration time constants were fit using the equation described above, fit [using the approach described in ‘Methods’] separately to the empirical integration kernels from each of the four conditions.)
+Finally, given the consistency and between-subject variability in integration time constants shown in Figure 3c and Figure 3—figure supplement 1, we explored whether any components relating to processing of sensory evidence might reflect cross-subject variation in evidence integration. We therefore performed a behavioural-neural correlation between participants’ integration time constants $\tau$ and their TRFs to sensory noise fluctuations. (Note that the integration time constants were fit using the equation described above, fit [using the approach described in ‘Methods’] separately to the empirical integration kernels from each of the four conditions.)
 
-We found such a correlation for the triphasic potential elicited by the continuous ‘absoluted sensory evidence’ regressor (see Figure 6c). From approximately 420 ms onwards, the amplitude of the final, negative component of this component showed a negative correlation with τ across participants (Figure 9). In other words, this negative-going component was larger in amplitude (i.e. more negative) in participants who would integrate sensory evidence over longer durations (i.e. had a higher value of τ). We suggest that this may be consistent with variation in the encoding strength of previously studied correlates of continuous decision evidence. For example, Wyart et al. found a positive centroparietal potential 500 ms after decision information that positively encoded the current sample, but negatively encoded adjacent samples (Wyart et al., 2012); our finding extends this work to explore variation in the response across participants.
+We found such a correlation for the triphasic potential elicited by the continuous ‘absoluted sensory evidence’ regressor (see Figure 6c). From approximately 420 ms onwards, the amplitude of the final, negative component of this component showed a negative correlation with $\tau$ across participants (Figure 9). In other words, this negative-going component was larger in amplitude (i.e. more negative) in participants who would integrate sensory evidence over longer durations (i.e. had a higher value of $\tau$). We suggest that this may be consistent with variation in the encoding strength of previously studied correlates of continuous decision evidence. For example, Wyart et al. found a positive centroparietal potential 500 ms after decision information that positively encoded the current sample, but negatively encoded adjacent samples (Wyart et al., 2012); our finding extends this work to explore variation in the response across participants.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/82823/elife-82823-fig9-v1.jpg)
 
-**Figure 9.:** Figure 6c).Top panel shows Spearman’s rank correlation between the time-varying electroencephalographic (EEG) beta for absolute sensory evidence and individual subjects’  parameter, separately for each of the four conditions. The negative-going correlation found in all four conditions from ~420 ms onwards coincides with the third, negative-going limb of the triphasic response to absolute sensory evidence shown in τFigure 6c. Bottom panels show the correlation plotted separately for each of the four conditions. We plot the average EEG effect size against log() to allow for a straight-line fit (lines show mean ± 95% confidence intervals of a first-order polynomial fit between these two variables); we used Spearman’s rho to calculate the relationship, as it does not assume linearity.τ
+**Figure 9.:** Top panel shows Spearman’s rank correlation between the time-varying electroencephalographic (EEG) beta for absolute sensory evidence and individual subjects’ $\tau$ parameter, separately for each of the four conditions. The negative-going correlation found in all four conditions from ~420 ms onwards coincides with the third, negative-going limb of the triphasic response to absolute sensory evidence shown in Figure 6c. Bottom panels show the correlation plotted separately for each of the four conditions. We plot the average EEG effect size against log($\tau$) to allow for a straight-line fit (lines show mean ± 95% confidence intervals of a first-order polynomial fit between these two variables); we used Spearman’s rho to calculate the relationship, as it does not assume linearity.
 
 Although this across-subject correlation was discovered via exploratory analyses, it replicated across all four independent conditions, substantially increasing the likelihood of it being a true positive result (response periods FREQUENT and SHORT: Spearman’s ρ = –0.45, p=0.027; FREQUENT and LONG: ρ = –0.52, p=0.0099; RARE and SHORT: ρ = –0.53, p=0.0080; RARE and LONG: ρ = –0.46, p=0.025). By contrast, we found no evidence for an across-subject correlation between fitted integration decay time constants and EEG regressors encoding evidence updates at jump events (Δevidence), nor between fitted amplitude parameters (A) and any EEG regressors.
 
@@ -162,7 +210,7 @@ In conclusion, our work demonstrates that it is possible to accurately measure t
 
 ## Methods
 
-## Task design
+### Task design
 
 In the continuous task, participants observed a stream of randomly moving dots in a circular aperture (Figure 1). A fraction of these dots move coherently to the left or to the right; the motion coherence is the proportion of dots moving in the same direction, whereas the other dots move randomly. In this study, the coherence varied between –1 (all dots move to the left) and 1 (all dots move to the right). At 0 coherence, all dots move randomly.
 
@@ -172,21 +220,21 @@ Participants indicated their decision about the average motion direction by pres
 
 Participants were rewarded for correct responses but lost points for any other response. They received 3 points for correct responses, punished with –3 points for incorrect responses, and missed response periods or false alarms were both punished with –1.5 points. A reward bar was shown at the end of each 5 min block to indicate how many points participants have won in total (the reward bar was shown continuously onscreen during training, but not during task performance to avoid distraction). As participants won more points, their reward increased to the right until they hit the right border of the reward bar (equivalent to a net gain of 15 points), the bar was reset to the middle of the screen and they received £0.50 bonus to take at the end of the experiment. In rare cases where participants were performing poorly and losing points on average, they hit the left border of the reward bar (–15 points) and had £0.50 deducted from their take-home bonus.
 
-## Structure of the noise
+### Structure of the noise
 
 An essential feature of this task paradigm was the noise structure, which leads to continuously varying coherence levels. Notably, the noise was placed under experimental control rather than randomly generated, meaning that we could examine how fluctuations in the noise impact participants’ behavioural and neural data. More generally, the noise can be described as a series of short intervals that vary in duration and coherence (Figure 1b). The interval duration was sampled from an exponential distribution with a mean duration of 270 ms. This distribution was then truncated, with a minimum duration of 10 ms and a maximum duration of 1000 ms for each step. The level of motion coherence at each step was sampled randomly from a normal distribution. The mean of this normal distribution depends on whether the step occurred during baseline or a response period. During a baseline period, the mean of the normal distribution was 0. That means it was equally likely that negative or positive coherences were drawn. During response periods, the mean of the normal distribution was sampled uniformly from the set [-0.5, –0.4, –0.3, 0.3, 0.4, 0.5]. Any samples that exceeded 100% motion were set to be [+1, –1]. To limit the number of times this occurred, we set the standard deviation of the distribution to 0.3 for response periods and 0.5 for baseline periods. (We note that this could allow a strategy of tracking changes in the variance in the stimulus as well as the mean, something that we address in the supplementary note.).
 
-## Design of the random dot motion stimulus
+### Design of the random dot motion stimulus
 
 The task was coded in Psychtoolbox (Brainard, 1997; Kleiner et al., 2007; Pelli, 1997) and parameters were chosen similar to Shadlen and Newsome, 2001. Participants were seated 87 cm in front of the screen. Moving dots were displayed in a circular aperture subtending with a radius of 5 visual degrees on a Dell monitor with a refresh rate of 100 Hz. Dots had a size of 0.1 visual degrees and were displayed with a density of 2.5 dots per squared visual degree. The fixation point in the centre of the screen had a size of 0.3 visual degrees. All dots were black and displayed on a mid-grey background (rgb: 0.5, 0.5, 0.5).
 
 Dots were equally divided into three sets. These sets were shown sequentially, meaning only one set per frame was shown. Each time a set reappeared on the screen the coherence on that frame dictated, the likelihood of that dot either being displaced randomly or in the direction of the coherence. Randomly displayed dots moved like Brownian motion particles, with no particular speed. Dots that moved coherently were displaced according to a speed of 7° per second (Shadlen and Newsome, 2001). This approach means that subjects were forced to integrate across the entire field of moving dots to establish the motion direction; tracking a single dot is not reliable because it only reappears on every third frame and does not necessarily move coherently for more than two frames.
 
-## Conditions
+### Conditions
 
 To understand whether participants can flexibly adapt their integration kernel, we tested the continuous evidence integration task under different conditions following a within-subject 2 × 2 design. In different 5 min blocks, participants were told that they would either have long (5 s) or short (3 s) response periods, and either frequent (baseline period range 3–8 s) or rare (baseline period range 5–40 s) response periods. Subjects received extensive training (see below) so that these environmental statistics were well learnt prior to the experimental session. During the experiment, they were cued as to which condition they were currently in, by (i) displaying in text at the beginning of each block (e.g. ‘response periods are LONG and FREQUENT’); and (ii) having a different shape of fixation point (triangle, square, circle, star) for each of the four blocks. This meant that there was no inference nor memory required from the subjects to know which condition they were currently in.
 
-## Training
+### Training
 
 Our training protocol was designed to overtrain participants to reach a high level of performance on the task and to minimise learning effects during the main testing session. Our training taught participants about the structure of the long/short and rare/frequent trial periods, how to discriminate such trial periods from background noise fluctuations, and crucially incentivised participants to maximise their overall reward rate.
 
@@ -200,50 +248,191 @@ We progressed participants through the different versions of training by checkin
 
 After participants completed training successfully, they participated in the EEG testing session not more than 1 wk later. In this session, participants first performed a ‘reminder’ where they practised one run of the full task for 20 min (all four conditions, presented for 5 min each, in randomised order); this was performed while the experimenter put on the EEG cap. Then, while EEG data was collected, they completed 5–6 task ‘runs’, each lasting 20 min. Each run consisted of all four conditions in randomised order.
 
-## Data collection
+### Data collection
 
 We tested 33 participants (13 male). Of those, three were unable to learn the continuous task and did not progress beyond training. One participant was excluded for falling asleep during the EEG session. Another five were excluded from the analysis due to technical issues matching the continuous EEG with the stimulus stream and/or issues with EEG data quality after pre-processing. This means 24 subjects were included in the analysis. Each subject completed six runs, except for one subject who completed only five runs. For the control experiment with superimposed vertical motion (Figure 8), a further six participants were tested (four males). All participants were aged 18–40, had normal or corrected-to-normal vision, and gave written consent prior to taking part in the study. The study was approved by the University of Oxford local ethics committee (CUREC R60298).
 
-## Behavioural analysis
+### Behavioural analysis
 
-## Detection rate/reaction times
+#### Detection rate/reaction times
 
 We calculated correct detection rate (Figure 2b) as the proportion of response periods in which correct responses were made. We calculated this separately for each run within each level of motion coherence (collapsing across leftward/rightward correct responses), and then averaged across the six runs, to obtain three values (0.3, 0.4, and 0.5 motion coherence) for each of the four conditions per subject. We performed a similar analysis on reaction times for these correct responses (Figure 2c), but here we excluded responses in LONG conditions that exceeded 3.5 s, such that the average response time could be directly compared between LONG and SHORT conditions. (We note that due to noise and the associated uncertainty concerning response period onset, participants are incentivised to respond as quickly as possible whenever they thought they were in a response period, as delaying responses would lead to ‘missed trials’.) We analysed the effects of coherence, response period length and response period frequency on detection rate and reaction time across the 24 participants using a three-way repeated-measures ANOVA.
 
-## Integration kernels
+#### Integration kernels
 
 We calculated integration kernels by averaging the presented motion coherence for 5 s preceding every buttonpress (having first multiplied this by –1 for leftward buttonpresses, so that left and right responses can be averaged together). We did this separately for false alarms (Figure 3b) and for correct responses (Figure 2d). We excluded correct responses in LONG conditions that exceeded 3.5 s for similar reasons as outlined above. We also note that the integration kernel in this period includes a mixture of ‘signal’ (shift in mean coherence) plus noise, whereas the integration kernel from false alarms is driven by noise alone. This explains why the segment of the integration kernel that reflects non-decision time (i.e. immediately prior to buttonpress) returns close to 0 in Figure 3b but is closer to 0.5 in Figure 2c, and also why the false alarm integration kernel is more clearly an exponential decay function.
 
-We fit an exponential decay model to the empirical integration kernel from false alarm responses:kt=Ae-tτ
+We fit an exponential decay model to the empirical integration kernel from false alarm responses:
 
-where k(t) is the height of the integration kernel t seconds before its peak; A is the peak amplitude of the integration kernel (in units that denote the fraction of dots moving towards the chosen response direction), and τ is the decay time constant (in units of seconds). To fit the exponential decay function, we first found the peak of the empirical integration function (using max in MATLAB), and set this timepoint to t = 0 in the equation above. We then fit A and τ to the empirical integration kernel for all timepoints up to and including t = 0 using fminsearch in MATLAB using a least-squares cost function between the fitted model and data with an L2 regularisation term that penalised large values of either A or τ (λ = 0.01). To calculate the quality of the model fit, we calculated R2 for this function:R2=1-RSSTSS
+$$
+kt=Ae^{\frac{-t}{\tau}}
+$$
+
+where k(t) is the height of the integration kernel t seconds before its peak; A is the peak amplitude of the integration kernel (in units that denote the fraction of dots moving towards the chosen response direction), and $\tau$ is the decay time constant (in units of seconds). To fit the exponential decay function, we first found the peak of the empirical integration function (using max in MATLAB), and set this timepoint to t = 0 in the equation above. We then fit A and $\tau$ to the empirical integration kernel for all timepoints up to and including t = 0 using fminsearch in MATLAB using a least-squares cost function between the fitted model and data with an L2 regularisation term that penalised large values of either A or $\tau$ (λ = 0.01). To calculate the quality of the model fit, we calculated R2 for this function:
+
+$$
+R^{2}=1-\frac{RSS}{TSS}
+$$
 
 with RSS being the residual sum of squares after model fitting and TSS being the total sum of squares.
 
-## False alarm rates
+#### False alarm rates
 
 To calculate false alarm rates (Figure 3), we counted the total number of responses made during baseline periods and divided this by the total amount of time where subjects could possibly have made a false alarm (i.e. total time spent in baseline periods). We repeated this separately for each of the four conditions within each participant.
 
-## EEG acquisition
+### EEG acquisition
 
 EEG data was collected at a sampling rate of 1000 Hz with Synamps amplifiers and Neuroscan data acquisition software (Compumedics) and 61 scalp electrodes following the 10–20 layout. Additionally, bipolar electrodes were placed below and above the right eye and on the temples to measure eyeblinks as well as horizontal and vertical eye movements (HEOG and VEOG channels). A ground electrode was attached to the left elbow bone. The EEG signal was referenced to the left mastoid but later re-referenced to the average of left and right mastoids. Impedances of electrodes were kept below 15 kΩ.
 
-## EEG pre-processing
+### EEG pre-processing
 
 Data were pre-processed using spm12 (http://www.fil.ion.ucl.ac.uk/spm/; Litvak et al., 2011), the FieldTrip toolbox for EEG/MEG-analysis (http://fieldtriptoolbox.org; Oostenveld et al., 2011), and MATLAB (Version R2018b, The MathWorks, Inc, Natick, MA). Each session for each participant was pre-processed as continuous data. First, each session was downsampled to 100 Hz. Then, the data was rereferenced to the average of left and right mastoid electrodes and bandpass filtered the data between 0.1 Hz and 30 Hz using the function spm_eeg_filter with default settings (fifth-order Butterworth filter, passed in both directions). In a next step, we used signal space projection methods in SPM to perform eyeblink correction. The bipolarised VEOG channel was used to build a spatial confound topography of eye blinks to delineate ocular source components, Segments of 1000 ms around eye blink events in the VEOG channel were generated and averaged. Principal component analysis was then used to define the noise subspace of eyeblinks across all channels, and the first principal component was regressed out of the continuous EEG data (Berg and Scherg, 1994; Hunt et al., 2012). For each participant and session, the spatial confound map of the first component was visually checked to ensure it showed a typical eye blink topography before the regression was applied. The EEG data was further thresholded to remove artefacts that were ≥100 µV in a single channel by labelling a 500 ms window around the peak of the artefact, and removing these time windows when estimating the deconvolutional GLM.
 
-## Deconvolutional GLM analysis
+### Deconvolutional GLM analysis
 
 We used triggers sent to each jump in the noise stream to align the continuous EEG data with the continuous stream of sensory evidence (and other experimental events, such as buttonpresses). As the downsampled EEG was at the same sampling rate as the refresh rate as the display (100 Hz), we simply used the continuous stream of evidence presented on each frame of the experiment from then onwards. In addition to the five participants excluded due to technical issues with trigger recording and alignment (see ‘Data collection’ above), there was one further participant in our main EEG sample (n = 24) who had 3 out of 24 blocks missing due to technical issues; this participant was nevertheless taken forward into the main analysis with the remaining 21 recorded blocks.
 
-We then constructed a design matrix X for the continuous EEG data, with 11 regressors in total:EEG∼ jumpevent+jumplevel+jump|Δevidence|+continuous|evidence|+continuousevidence(signed)+responseperiodonsetevent+responseperiodonsetcoherence+buttonpresscorrect+buttonpressfalsealarm+(left−rightbuttonpress)correct+(left−rightbuttonpress)falsealarm
+We then constructed a design matrix X for the continuous EEG data, with 11 regressors in total:
 
-The ‘buttonpress’ regressors and the regressors with subscript ‘event’ are ‘stick functions’ (1 at the timepoint that they occurred, and 0 at all other timepoints). Other regressors are parametric modulators of these, except for the two continuous regressors which were valued at all timepoints of the experiment (reflecting the current motion onscreen, either absoluted [reported in the main text] or signed [not discussed]). In this article, we focus on responses to jumpevent (Figure 6a), jumpΔevidence (Figures 6b and 7a, Figure 7—figure supplement 1a, Figure 8), continuousevidence (Figures 6c and 9), and buttonpresscorrect (Figure 7b, Figure 7—figure supplement 1b). For all of these except for the buttonpresscorrect , we only estimate the EEG response during the baseline periods, when participants are still integrating evidence (as shown empirically in Figure 3), but the statistics of the stimulus stream across all four experimental conditions are matched. We calculated the correlation between the key regressors of interest (Table 1) to ensure that they were sufficiently decorrelated from one another to reliably obtain parameter estimates in the GLM.
+$$
+EEG∼ jump_{event}+jump_{level}+jump_{|Δevidence|}+continuous_{|evidence|}+continuous_{evidence(signed)}+responseperiodonset_{event}+responseperiodonset_{coherence}+buttonpress_{correct}+buttonpress_{falsealarm}+(left−rightbuttonpress)_{correct}+(left−rightbuttonpress)_{falsealarm}
+$$
+
+The ‘buttonpress’ regressors and the regressors with subscript ‘event’ are ‘stick functions’ (1 at the timepoint that they occurred, and 0 at all other timepoints). Other regressors are parametric modulators of these, except for the two continuous regressors which were valued at all timepoints of the experiment (reflecting the current motion onscreen, either absoluted [reported in the main text] or signed [not discussed]). In this article, we focus on responses to $jump_{event}$ (Figure 6a), $jump_{Δevidence}$ (Figures 6b and 7a, Figure 7—figure supplement 1a, Figure 8), $continuous_{evidence}$ (Figures 6c and 9), and $buttonpress_{correct}$ (Figure 7b, Figure 7—figure supplement 1b). For all of these except for the $buttonpress_{correct}$ , we only estimate the EEG response during the baseline periods, when participants are still integrating evidence (as shown empirically in Figure 3), but the statistics of the stimulus stream across all four experimental conditions are matched. We calculated the correlation between the key regressors of interest (Table 1) to ensure that they were sufficiently decorrelated from one another to reliably obtain parameter estimates in the GLM.
+
+**Table 1.**
+ (Average) explained variance between regressors of the convolutional general linear model (GLM) for baseline periods.Columns and rows are the different regressors used to investigate baseline periods. Between each pair of regressors for the key continuous variables, the explained variance (squared correlation coefficient) was calculated to ensure that these regressors were not correlated with each other prior to estimating the GLM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>R2</th>
+      <th>Jump</th>
+      <th>Jump level</th>
+      <th>Jump |Δevidence|</th>
+      <th>Continuous |evidence|</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jump</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.01</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jump level</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.18</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Jump |Δevidence|</td>
+      <td>0.01</td>
+      <td>0.18</td>
+      <td>1</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Continuous |evidence|</td>
+      <td>0</td>
+      <td>0.03</td>
+      <td>0.01</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 To obtain the deconvolved response to each of these regressors, we time-expanded the design matrix into a large design matrix Xdc (see Ehinger and Dimigen, 2019 for a recent review; Table 2). We used simple ‘staircasing’ of the regressors to create this design matrix (as illustrated in Figure 6), rather than a time-Fourier basis set (Litvak et al., 2013) or time-Spline basis set (Ehinger and Dimigen, 2019); any of these approaches might be suitable for future studies. The number of timepoints for each of the regressors varied slightly between different regressors (e.g. we were primarily interested in activity after stimulus changes but before buttonpresses; the number of pre- and post-event lags reflected this). We then estimated parameter estimates for the deconvolved regressor at each sensor for each subject with ordinary least squares (using the method of Courrieu, 2008 to facilitate fast computation of the pseudoinverse of the design matrix).
 
-## Permutation test for convolutional GLM analysis
+**Table 2.**
+ Design matrix.This table describes the size of the design matrix assuming a sampling frequency of the electroencephalographic (EEG) signals of 100 Hz. For each regressor the number of lags pre- and post event and the total number of rows this regressor covers in the design matrix are described. The same number of lags was applied to vertical motion regressors for the control study.
 
-To test for significant differences between deconvolved EEG responses for LONG versus SHORT response periods, and for RARE versus FREQUENT response periods, we performed a non-parametric paired t-test controlling for multiple comparisons across time, using the FieldTrip function ft_timelockstatistics (Maris and Oostenveld, 2007). We first selected electrodes and time windows of interest based upon the average response to the key regressors across all four conditions (see Figure 6); we note that because this selection vector is orthogonal to the difference between conditions (and the number of observations are matched between conditions), then it provides an unbiased method for selecting a window of interest (Kriegeskorte et al., 2009). In practice, this meant that the cluster-based permutation test was performed on an average of three centroparietal electrodes (CP1, CP2, CPz) and a time window from 0 to 800 ms post-event for jump-locked events (Figure 7a, Figure 7—figure supplement 1a, Figure 8), and an average of six centroparietal and central electrodes (C1, C2, Cz, CP1, CP2, CPz) and a time window from 2000 ms to 0 ms pre-event for buttonpress events (Figure 7b, Figure 7—figure supplement 1b). In total, 1000 permutations were generated with the Monte Carlo method, and clusters were selected based on a T-statistic threshold of 2.07 for initial cluster formation (except for | jumpDevidence, where a slightly lower threshold of T > 1.80 was used), and an alpha of 0.05 (two-tailed) was then used for significance detection of clusters, corrected for multiple comparisons across time.
 
-For the behavioural-neural correlations in Figure 9, we first temporally smoothed single subject betas with a Gaussian kernel with 75 ms FWHM (to further improve single subject SNR), and then calculated the Spearman’s correlation at each timepoint between the estimated betas for the continuousevidence regressor and the τ parameters fit to the empirical evidence integration kernels for false alarms. We did this separately for the four conditions, providing four separate tests of the same behavioural-neural correlation (we note that these tests are independent in the sense that they consist of separate data for each correlation, but not in the sense that different participants were used to generate the data). In Figure 9b, we report the behavioural-neural correlation for the time window 420–750 ms after the evidence.
+<table>
+  <thead>
+    <tr>
+      <th>Regressor</th>
+      <th>Pre-event time in time-expanded design matrix (ms)</th>
+      <th>Post-event time in time-expanded design matrix (ms)</th>
+      <th>Total rows in the time-expanded design matrix</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jump event (stick function)</td>
+      <td>1000</td>
+      <td>1500</td>
+      <td>251</td>
+    </tr>
+    <tr>
+      <td>Jump level (|evidence| at each jump event)</td>
+      <td>1000</td>
+      <td>1500</td>
+      <td>251</td>
+    </tr>
+    <tr>
+      <td>Jump |Δevidence| (at each jump event)</td>
+      <td>1500</td>
+      <td>1500</td>
+      <td>301</td>
+    </tr>
+    <tr>
+      <td>Continuous |evidence|</td>
+      <td>1500</td>
+      <td>1500</td>
+      <td>301</td>
+    </tr>
+    <tr>
+      <td>Continuous (signed) evidence</td>
+      <td>1500</td>
+      <td>1500</td>
+      <td>301</td>
+    </tr>
+    <tr>
+      <td>Correct buttonpresses (stick function)</td>
+      <td>5000</td>
+      <td>3500</td>
+      <td>851</td>
+    </tr>
+    <tr>
+      <td>Correct buttonpresses (+1 for right, –1 for left)</td>
+      <td>5000</td>
+      <td>3500</td>
+      <td>851</td>
+    </tr>
+    <tr>
+      <td>False alarm buttonpresses (stick function)</td>
+      <td>5000</td>
+      <td>3500</td>
+      <td>851</td>
+    </tr>
+    <tr>
+      <td>False alarm buttonpresses (+1 for right, –1 for left)</td>
+      <td>5000</td>
+      <td>3500</td>
+      <td>851</td>
+    </tr>
+    <tr>
+      <td>Onset of response period (stick function)</td>
+      <td>500</td>
+      <td>8000</td>
+      <td>851</td>
+    </tr>
+    <tr>
+      <td>Response period |coherence| of response period (stick function)</td>
+      <td>500</td>
+      <td>8000</td>
+      <td>851</td>
+    </tr>
+  </tbody>
+</table>
+
+### Permutation test for convolutional GLM analysis
+
+To test for significant differences between deconvolved EEG responses for LONG versus SHORT response periods, and for RARE versus FREQUENT response periods, we performed a non-parametric paired t-test controlling for multiple comparisons across time, using the FieldTrip function ft_timelockstatistics (Maris and Oostenveld, 2007). We first selected electrodes and time windows of interest based upon the average response to the key regressors across all four conditions (see Figure 6); we note that because this selection vector is orthogonal to the difference between conditions (and the number of observations are matched between conditions), then it provides an unbiased method for selecting a window of interest (Kriegeskorte et al., 2009). In practice, this meant that the cluster-based permutation test was performed on an average of three centroparietal electrodes (CP1, CP2, CPz) and a time window from 0 to 800 ms post-event for jump-locked events (Figure 7a, Figure 7—figure supplement 1a, Figure 8), and an average of six centroparietal and central electrodes (C1, C2, Cz, CP1, CP2, CPz) and a time window from 2000 ms to 0 ms pre-event for buttonpress events (Figure 7b, Figure 7—figure supplement 1b). In total, 1000 permutations were generated with the Monte Carlo method, and clusters were selected based on a T-statistic threshold of 2.07 for initial cluster formation (except for | $jump_{Devidence}$, where a slightly lower threshold of T > 1.80 was used), and an alpha of 0.05 (two-tailed) was then used for significance detection of clusters, corrected for multiple comparisons across time.
+
+For the behavioural-neural correlations in Figure 9, we first temporally smoothed single subject betas with a Gaussian kernel with 75 ms FWHM (to further improve single subject SNR), and then calculated the Spearman’s correlation at each timepoint between the estimated betas for the $continuous_{evidence}$ regressor and the $\tau$ parameters fit to the empirical evidence integration kernels for false alarms. We did this separately for the four conditions, providing four separate tests of the same behavioural-neural correlation (we note that these tests are independent in the sense that they consist of separate data for each correlation, but not in the sense that different participants were used to generate the data). In Figure 9b, we report the behavioural-neural correlation for the time window 420–750 ms after the evidence.

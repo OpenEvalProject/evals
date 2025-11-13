@@ -14,13 +14,13 @@
 
 ### Affiliations
 
-1. https://ror.org/046rm7j60 Department of Chemistry and Biochemistry, University of California, Los Angeles Los Angeles United States
-2. https://ror.org/046rm7j60 Department of Molecular, Cell, and Developmental Biology, University of California, Los Angeles Los Angeles United States
-3. https://ror.org/046rm7j60 Eli and Edythe Broad Center of Regenerative Medicine and Stem Cell Research, University of California, Los Angeles Los Angeles United States
-4. https://ror.org/046rm7j60 Department of Computational Medicine, University of California, Los Angeles Los Angeles United States
-5. https://ror.org/046rm7j60 Department of Medicine, Divison of Pulmonary and Critical Care Medicine, Geffen School of Medicine, University of California, Los Angeles Los Angeles United States
-6. https://ror.org/046rm7j60 Molecular Biology Institute, University of California, Los Angeles Los Angeles United States
-7. https://ror.org/039ygjf22 Department of Molecular Physiology, The Jikei University School of Medicine Tokyo Japan
+1. Department of Chemistry and Biochemistry, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+2. Department of Molecular, Cell, and Developmental Biology, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+3. Eli and Edythe Broad Center of Regenerative Medicine and Stem Cell Research, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+4. Department of Computational Medicine, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+5. Department of Medicine, Divison of Pulmonary and Critical Care Medicine, Geffen School of Medicine, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+6. Molecular Biology Institute, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+7. Department of Molecular Physiology, The Jikei University School of Medicine Tokyo Japan ([ROR:039ygjf22](https://ror.org/039ygjf22))
 
 † Corresponding author
 
@@ -36,6 +36,14 @@ Multiple classes of formins have been linked to sarcomere structure, including d
 
 There are four isoforms of FHOD3 reported in Uniprot. Major differences are due to alternative splicing in the N-terminal half. An eight-residue insert in the C-terminal half, an acidic sequence (T(D/E)5XE), is present only in Uniprot isoform 4, which is commonly referred to as FHOD3L (Iskratsch et al., 2010). In this paper, we adopt the commonly accepted nomenclature in which FHOD3S (short) indicates Uniprot isoform 1, and FHOD3L (long) indicates Uniprot isoform 4 (Figure 1). FHOD3L is predominantly expressed in striated muscle, whereas FHOD3S is more widely expressed (Iskratsch et al., 2010; Taniguchi et al., 2009). In cardiomyocytes, FHOD3L localizes to sarcomeres in a striated pattern (Iskratsch et al., 2010; Kan et al., 2012b; Taniguchi et al., 2009). Interestingly, FHOD3L does not localize at the barbed end of actin filaments within sarcomeres. Instead, a direct interaction between FHOD3L and cardiac myosin-binding protein C (cMyBP-C) drives localization of FHOD3L to the so-called C zone of sarcomeres (Matsuyama et al., 2018). In the absence of cMyBP-C, FHOD3L is diffuse and cardiac function is compromised, suggesting that the balance between these two proteins is critical for proper heart function in mice (Matsuyama et al., 2018).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig1-v1.jpg)
+
+**Figure 1.:** GBD = GTPase binding domain, DID = diaphanous inhibitory domain, CC = coiled coil (putative), FH = formin homology, DAD = diaphanous autoregulatory domain. Mutations tested in this study are indicated with black arrows. Numbers correspond to the FHOD3L sequence (Uniprot isoform 4). The FHOD3L-CT construct spans residues 963–1622, including the FH1 domain, FH2 domain, and tail. The FHOD3S-CT construct spans residues 771–1422 (Uniprot isoform 1 numbering). FHOD3L-specific exons are in gray. The eight-residue exon (T(D/E)5XE) that distinguishes FHOD3L-CT from FHOD3S-CT is circled in red.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Lower molecular weight contaminants were difficult to remove, were relatively consistent for each construct, and had no detectable impact on FHOD activity.
+
 Mutations in the FHOD3 gene are deemed causative in at least 1–2% of patients with hypertrophic cardiomyopathy (HCM), in addition to cases of left ventricular noncompaction, dilated cardiomyopathy, and progressive high-frequency hearing loss (Arimura et al., 2013; Boussaty et al., 2023; Myasnikov et al., 2022; Ochoa, 2018). Moreover, recent clinical studies show that HCM-linked FHOD3 mutations increase the risk of cardiovascular death and all-cause death, with the onset of the disease occurring as early as age 4 and as late as age 63 (Vodnjov et al., 2023; Wu et al., 2021).
 
 Despite its known physiological significance, we lack a mechanistic understanding of FHOD3L’s role in cardiac development and function. Early biochemical analysis suggested that FHOD-family formins were an atypical class of formins. Both purified mammalian isoforms (FHOD1 and FHOD3) were found to decelerate, rather than accelerate, actin assembly in vitro (Schönichen et al., 2013; Taniguchi et al., 2009). In addition, actin bundling was observed for FHOD1 (Schönichen et al., 2013). Consistently, FHOD1 mediates nuclear movement by bundling and anchoring actin filaments (Antoku et al., 2023). However, it fails to complete this function when a highly conserved isoleucine in the FH2 domain is mutated (hereafter, referred to as the IA mutation) (Kutscheidt et al., 2014). The IA mutation is known to disrupt both nucleation and elongation in most, if not all, formins, indicating that FHOD1 may enhance actin assembly in vivo (Patel et al., 2018; Xu et al., 2004). In addition, FHOD proteins are required to form new sarcomeres in rat cardiomyocytes, human induced cardiomyocytes, worms, and mice (Iskratsch et al., 2010; Kan et al., 2012a; Mi-Mi et al., 2012; Taniguchi et al., 2009). FHODs with the IA mutation do not support the formation of new sarcomeres, suggesting that actin assembly activity is required for this process, in conflict with the biochemical data (Kan et al., 2012a; Shwartz et al., 2016; Taniguchi et al., 2009; Xu et al., 2004). Most recently, in the worm, FHOD protein was shown to cooperate with profilin to build muscle, providing strong evidence that it functions by elongating actin filaments (Kimmich et al., 2024). Previously, we found that Drosophila Fhod is a potent actin nucleator that can accelerate actin elongation under certain conditions (Bremer et al., 2024; Patel et al., 2018). We also showed that human FHOD1 can nucleate actin, but its activity is sensitive to the actin isoform (Patel et al., 2018). We confirmed that both of these Fhod-family formins lose activity when the IA mutation is introduced (Patel et al., 2018). Based on these biochemical results and the data regarding Fhod-family formins in muscle of multiple species, we asked whether human FHOD3L can also nucleate.
@@ -44,9 +52,103 @@ Here, we show that purified FHOD3L can accelerate actin assembly by both nucleat
 
 ## Results
 
-## Biochemical characterization of human FHOD3
+### Biochemical characterization of human FHOD3
 
 We purified the C-terminal half of human FHOD3L (FHOD3L-CT), encompassing the FH1 domain, FH2 domain, and C-terminal tail, which is typically sufficient for actin assembly in vitro and in vivo (Figure 1, Figure 1—figure supplement 1; Courtemanche, 2018; Patel et al., 2018). In contrast to an earlier report, we found that FHOD3L-CT enhances rabbit skeletal muscle actin (RSA) assembly in bulk pyrene assays (Figure 2A and B, Table 1; Taniguchi et al., 2009). (Table 1 summarizes all biochemical measurements.) Consistent with nucleation activity, when we visualized the products of similar reactions, we observed many more filaments in the presence of FHOD3L-CT compared to actin alone (Figure 2—figure supplement 1A). We also asked if the shorter, alternatively spliced FHOD3 isoform, FHOD3S-CT, nucleates actin. FHOD3S-CT, which lacks eight acidic residues at the end of its FH2 domain compared to FHOD3L-CT, accelerates actin assembly (~30%) more potently than FHOD3L-CT (Figure 2B, Figure 2—figure supplement 2A). We quantified the activity of each construct by plotting the slope of the actin assembly curve shortly after the reaction is initiated (t1/8 = time until reaction has reached 1/8th completion) as a function of the FHOD3L-CT added. The slopes of these data points are then used to compare specific activity levels. In the cases of FHOD3L-CT vs FHOD3S-CT, the slopes are 0.32 ±0.04 vs 0.42 ± 0.04, respectively. Thus, we conclude that the C-terminal half of both FHOD3 isoforms (hereafter, FHOD3S/L-CT) is able to nucleate actin filaments.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig2-v1.jpg)
+
+**Figure 2.:** (A) Assembly of 4 µM actin (5% pyrene-labeled) and the indicated concentrations of FHOD3L-CT from a twofold dilution series. (Higher concentrations of FHOD3L-CT are darker shades of blue. Symbols reflect the highest, middle, and lowest concentrations tested. In this case, circle = 60 nM, square = 15 nM, and triangle = 3.75 nM FHOD3LT-CT.) The inset shows the first 200 s of data normalized to the plateau of actin alone. (B) Relative nucleation activities of FHOD3L-CT (n=5), FHOD3S-CT (n=4), FHOD3L-CT K1309A (n=3), and I1163A (n=3). Nucleation strength is described by the rate of assembly (i.e. slopes from traces like those in A), at an early timepoint, when nucleation dominates (t1/8), as a function of formin added. Data points are means, and error bars are standard deviations. Slopes reported are the average slopes of independent experiments. The asterisks indicate significance of difference from FHOD3L-CT (see below for details). (C) Barbed-end elongation assay. Final conditions were 0.25 µM F-actin seeds (~0.1 nM barbed ends), 0.5 µM actin (10% pyrene-labeled), and indicated concentrations of FHOD3L-CT. (D) Quantification of barbed-end affinity for FHOD3L-CT (from C), FHOD3S-CT (from Figure 2—figure supplement 2B), and FHOD3L-CT I1163A (see Figure 2—figure supplement 1C for extended axes). Raw data are shown, and lines are fit to all data points. The Kds reported are the averages of three independent trials (n=3, each; mean ± SD). (E) Barbed-end elongation assay with profilin. Final conditions as in (C) plus 1.5 µM Schizosaccharomyces pombe profilin. (F) Kymograph of a growing filament from a total internal reflection fluorescence (TIRF) assay with FHOD3L-CT. Conditions: 1 µM actin (10%-Alexa Fluor 488-labeled), 5 µM Hs profilin-1, and 0.1 nM FHOD3L-CT. The green lines indicate bright regions of growing filament. The yellow lines represent dim regions. The orange line is a pause. Rates calculated for each region are reported as subunits/s. (G) Kymograph of a growing filament from a TIRF assay without added FHOD3L-CT. Conditions: 1 µM actin (10%-Alexa Fluor 488-labeled), 5 µM Hs profilin-1. The green lines indicate bright regions of growing filament. The red lines represent dim regions. Rates calculated for each region are reported as subunits/s. (H) Elongation rates from TIRF assays. Average elongation rates (10–100 s of seconds) and elongation rates from brief (1–10 s) dim regions are shown separately (n=21, profilin-actin [avg]; n=27 profilin-actin [dim]; n=20, FHOD3L-CT [avg]; n=112, FHOD3L-CT [dim]; 3 channels for all samples; mean ± SD). (I) Coomassie-stained polyacrylamide gel of pellet fractions from low-speed bundling assays with 5 µM actin and 0–60 nM FHOD3L-CT. (J) Quantification of bundling from (I) via densitometry (n=3 each group; mean ± SD). *p<0.05, **p<0.001, ***p<0.0001. p-Values were determined by one-way ANOVA with post hoc Tukey test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Actin polymerized in the absence or presence of 12 nM FHOD3L-CT, stabilized with fluorescent phalloidin diluted to 5 nM (n=3, each; mean ± SD). Scale bars, 10 µm. (B) Pyrene fluorescence readings of 4 µM actin filaments (5% pyrene-labeled) incubated with different concentrations of FHOD3L-CT I1163A for 5 min (n=2; mean ± SD). (C) Quantification of barbed-end affinity (from Figure 2C and D) with axes extended. (D) Time-lapse images from total internal reflection fluorescence (TIRF) microscopy. Conditions: 1 µM actin (10%-Alexa Fluor 488-labeled), 5 µM Hs profilin-1 ±0.1 nM FHOD3L-CT. Yellow arrows indicate the beginning and end of the dim portion of the filament elongated by FHOD3L-CT. 2.5 s/frame. Scale bar, 10 µm. (E) Quantification of (dim) run lengths for FHOD3L-CT TIRF assays. (F) Duration of pauses observed before bursts in TIRF assays. (For E–F, n=112, FHOD3L-CT [dim]; 3 flow channels for all samples; mean ± SD.) (G) Comparison of dim event frequencies as a function of filament length. (H) Epifluorescence micrographs of phalloidin-stabilized filaments from low-speed bundling assays. Conditions: 5 µM actin without or with 15 nM FHOD3L-CT, diluted to 5 nM actin after centrifugation. Scale bars, 10 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Assembly of 4 µM actin (5% pyrene-labeled) and the indicated concentrations of FHOD3S from a twofold dilution series. (Higher concentrations of FHOD3L-CT are darker shades of blue. Symbol reflects the highest, middle, and lowest concentration tested. In this case, circle = 48 nM, square = 12 nM, and triangle = 3 nM FHOD3LT-CT.) (B) Barbed-end elongation assay. Final conditions: 0.25 µM F-actin seeds (~0.1 nM barbed ends), 0.5 µM G-actin (10% pyrene-labeled), and 312.5 pM-5 nM FHOD3S-CT. (C) Kymograph of a growing filament from a total internal reflection fluorescence (TIRF) assay with FHOD3S-CT. Conditions: 1 µM actin (10%-Alexa Fluor 488-labeled), 5 µM Hs profilin-1, and 1 nM FHOD3S-CT. The green lines indicate bright regions of growing filament. The yellow lines represent dim regions. The orange lines are pauses. Rates calculated for each region are reported as subunits/s. (D) Elongation rates from TIRF assays. Average elongation rates (over 10 s of seconds) and formin-mediated elongation rates (dim) are shown separately. Conditions: 1 µM actin (10%-Alexa Fluor 488-labeled), 5 µM Hs profilin-1 ±0.1 nM FHOD3L-CT or 1 nM FHOD3S-CT (n=21, profilin-actin; n=20, 3L [avg]; n=24, 3S [avg], n=112, 3L [dim], n=78, 3S [dim]; 4 flow channels for 3S, 3 flow channels for all others; mean ± SD, p-values by one-way ANOVA with post hoc Tukey test). (E) Comparison of dim event frequencies as a function of filament length. (F) Quantification of (dim) run lengths for FHOD3S/L-CT TIRF assays (n=97, FHOD3L-CT; n=73, FHOD3S-CT; 3 flow channels for 3L, 4 flow channels for 3S; mean ± SD, p-values by Mann-Whitney U test). (G) Duration of capping events, i.e., pauses before bursts, by FHOD3L-CT vs FHOD3S-CT observed by TIRF microscopy (n=97, FHOD3L-CT; n=73, FHOD3S-CT; 3 flow channels for 3L, 4 flow channels for 3S; mean ± SD, p>0.05 by Mann-Whitney U test). (H) Coomassie-stained polyacrylamide gel of pellet fractions from low-speed bundling assays with 5 µM actin and 0–60 nM FHOD3S-CT. (I) Comparison of bundling for FHOD3S/L-CT via densitometry (n=3 each group; mean ± SD). *p<0.05, ***p<0.0001.
+
+**Table 1.**
+ Summary of biochemical measurements for FHOD3L-CT and mutants.All data shown are means ± standard deviation, each from at least three independent experiments. n.d.=no data. Light gray columns are data acquired with bulk pyrene-actin-based assays without profilin added. Blue columns provide data from total internal reflection fluorescence (TIRF) analysis of individual filaments (profilin was present). The purple column reports data from the co-sedimentation assay.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Pyrene-actin-based assays</th>
+      <th colspan="3">TIRF-based assays</th>
+      <th>Co-sedimentation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Nucleation strength (a.u./s)</td>
+      <td>Barbed-end binding affinity (nM)</td>
+      <td>Elongation rate (subunits/s)</td>
+      <td>Run length (µm)</td>
+      <td>Capping duration (s)</td>
+      <td>Bundling (% actin pelleted at 60 nM)</td>
+    </tr>
+    <tr>
+      <td>FHOD3L-CT</td>
+      <td>0.32 ± 0.04</td>
+      <td>0.028 ± 0.005</td>
+      <td>39 ± 13</td>
+      <td>1.10 ± 0.49</td>
+      <td>11.8 ± 6.8</td>
+      <td>81.7 ± 2.9</td>
+    </tr>
+    <tr>
+      <td>FHOD3S-CT</td>
+      <td>0.42 ± 0.04*</td>
+      <td>0.750 ± 0.090*</td>
+      <td>33 ± 12</td>
+      <td>0.90 ± 0.33*</td>
+      <td>12.0 ± 7.8</td>
+      <td>56 ± 17</td>
+    </tr>
+    <tr>
+      <td>FHOD3L-CT I1163A</td>
+      <td>–0.081 ± 0.002*</td>
+      <td>4.9 ± 1.4*</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>FHOD3L-CT K1309A</td>
+      <td>0.04 ± 0.02*</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>FHOD3L-CT K1193L</td>
+      <td>0.10 ± 0.02*</td>
+      <td>0.470 ± 0.090*</td>
+      <td>38 ± 12</td>
+      <td>1.11 ± 0.42</td>
+      <td>12.7 ± 5.6</td>
+      <td>30.8 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>FHOD3L-CT GS-FH1</td>
+      <td>Nucleates similarly via TIRF nucleation assay</td>
+      <td>0.218 ± 0.016*</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>61.7 ± 0.7</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Statistically different from FHOD3L-CT. Analysis by ANOVA and Tukey post hoc tests, p<0.05. More details are in the figure legends._
 
 To further compare FHOD3L-CT to previously characterized formins, we introduced mutations at conserved residues of the FH2 domain, I1163A and K1309A (Xu et al., 2004). Like other formins, the I1163A mutant lacked nucleation activity, while the K1309A mutant reduced nucleation by ~85% (Figure 2B). We observed a reduction in the plateau of pyrene traces with wild-type FHOD3S/L-CT and the mutants. The decrease was more apparent at higher concentrations of the nucleator and seemed to be dose-dependent (Figure 2A, Figure 2—figure supplement 2A). Control experiments demonstrated that the fluorescence change does not reflect quenching due to side binding or bundling (Figure 2—figure supplement 1B). We, therefore, measured barbed-end binding. We asked whether FHOD3L-CT inhibits filament elongation by performing bulk seeded elongation assays. Indeed, we found that FHOD3L-CT potently slows barbed-end elongation (Kapp = 0.023 ±0.005 nM; Figure 2C and D). (The shapes of these traces reflect the presence of activity in addition to capping [perhaps nucleation or bundling], especially at high concentrations, which could affect our estimate of the binding affinity.) Barbed-end binding by FHOD3S-CT is over 30 times weaker (Kapp = 0.750 ±0.090 nM) (Figure 2D). The IA mutation is generally thought to disrupt binding to both actin monomers and filament barbed ends. However, FHOD3L-CT I1163A has an affinity of 4.9 ±1.4 nM for barbed ends of actin filaments (Figure 2D, Figure 2—figure supplement 2C). While the affinity is >200-fold weaker than FHOD3L-CT, it still binds barbed ends tightly. Therefore, we interpret the plateau decrease observed in bulk assembly assays as evidence of barbed-end capping.
 
@@ -58,31 +160,189 @@ Next, we investigated bundling by FHOD3L-CT. To do so, we visually examined the 
 
 Overall, FHOD3S/L-CT nucleates and elongates actin filaments. FHOD3S-CT is a more potent nucleator, a weaker barbed-end capper, and a slightly weaker bundler compared to FHOD3L-CT (Table 1). These data suggest that the acidic T(D/E)5XE insertion of FHOD3L interacts with different surfaces of the actin monomer depending on the biochemical activity. Perhaps the marked increase in capping by FHOD3L-CT is mediated by binding to a basic region exposed at the barbed end of filaments. Decreased activity levels of FHOD3L-CT, such as nucleation and bundling, may be due to the fact that most of the actin surface is acidic.
 
-## Biochemical validation of function-separating mutants
+### Biochemical validation of function-separating mutants
 
 We next designed FHOD3L-CT mutants to separate nucleation and elongation. We also assessed the impact of these mutations on capping and bundling. Previously, Baker et al. identified mutations in the FH2 domain of Bni1 that diminish nucleation while maintaining elongation activity (Baker et al., 2015). Based on sequence and structural alignments, FHOD3L K1193 approximates one of these, Bni1 K1467. FHOD3L-CT K1193L nucleated with less than 33% of the strength seen for wild-type (Figure 3A). The barbed-end affinity of FHOD3L-CT K1193L was 0.470 ±0.090 nM, ~12-fold weaker than wild-type (Figure 3B). Importantly, K1193L-mediated elongation of actin filaments was indistinguishable from wild-type (bursts were again evident, with no significant difference in elongation rate, run length, or capping duration) (Figure 3C, Figure 3—figure supplement 1). Low-speed bundling assays showed that K1193L bundling is ~2-fold weaker than wild-type (Figure 3D). Thus, elongation is maintained while nucleation and bundling are strongly reduced by the K1193L mutation.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig3-v1.jpg)
+
+**Figure 3.:** (A) Relative nucleation activity for FHOD3L-CT (n=5) and FHOD3L-CT K1193L (n=5). Data points are means, and error bars are standard deviations. Slopes reported are the average slopes of independent experiments. (B) Barbed-end affinity measurements for FHOD3L-CT, FHOD3L-CT GS-FH1, and FHOD3L-CT K1193L. Raw data are shown, and the line is a fit to all data points. The Kds reported are the average of three independent trials (n=3, each; mean ± SD). (C) Elongation rates from total internal reflection fluorescence (TIRF) assays. Conditions: 1 µM actin (10%-Alexa Fluor 488-labeled), 5 µM Hs profilin-1 ± 0.1 nM FHOD3L-CT or 1 nM FHOD3L-CT K1193L. Average elongation rates (over 10–100 s of seconds) and formin-mediated elongation rates (dim) are shown separately (n=19, FHOD3L-CT K1193L [avg]; n=67, FHOD3L-CT K1193L [dim]; 3 flow channels; mean ± SD, p-values by one-way ANOVA with post hoc Tukey test). (D) Quantification of bundling by FHOD3L-CT GS-FH1 and K1193L (n=3, each; mean ± SD). (E) Nucleation test. Quantification of the number of filaments per field of view (FOV) for FHOD3L-CT and FHOD3L-CT GS-FH1. Conditions: 4 µM actin with indicated construct. Reaction was diluted in Alexa Fluor 488 Phalloidin to 5 nM actin for visualization. Five images were taken per independent experiment (n=15 images, each; 3 biological replicates, each; mean ± SD, p-values by one-way ANOVA with post hoc Tukey test). Representative images are shown in Figure 3—figure supplement 2B. (F) Barbed-end elongation assay for FHOD3L-CT GS-FH1 in the presence of profilin. (Higher concentrations of FHOD3L-CT are darker shades of blue. Symbols highlight the highest, middle, and lowest concentrations tested. In this case, circle = 20 nM, square = 5 nM, and triangle = 1.25 nM FHOD3LT-CT.) Final conditions: 0.25 µM F-actin seeds (~0.1 nM barbed ends), 0.5 µM actin (10% pyrene-labeled), 1.5 µM S. pombe profilin, and 1.25 nM-20 nM FHOD3L-CT GS-FH1 (n=2; mean ± SD). **p<0.001, ***p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Kymograph of a growing filament from a total internal reflection fluorescence (TIRF) assay with FHOD3L-CT K1193L. Conditions: 1 µM actin (10%-Alexa Fluor 488-labeled), 5 µM Hs profilin-1, and 1 nM FHOD3L-CT K1193L. The green lines indicate bright regions of growing filament. The yellow lines represent dim regions. The orange line is a pause. Rates calculated for each region are given as subunits/s. (B) Quantification of run lengths for FHOD3L-CT and FHOD3L-CT K1193L (p>0.05 by Mann-Whitney U test). (C) Duration of capping events by FHOD3L-CT and FHOD3L-CT K1193L observed by TIRF microscopy (p>0.05 by Mann-Whitney U test).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Total internal reflection fluorescence (TIRF) micrographs from nucleation assays using 4 µM actin diluted to 5 nM actin in the presence or absence of 46 nM FHOD3L-CT GS-FH1. Aggregates are apparent in the presence of FHOD3L CT GS-FH1. (B) TIRF micrographs from nucleation assays using 4 µM actin and indicated concentration of FHOD3 construct. Samples were diluted to 5 nM actin in Alexa Fluor 488 Phalloidin for visualization. The number of aggregates was negligible at lower concentrations of FHOD3L-CT GS-FH1. Quantification is shown in Figure 3E. Scale bars, 10 µm.
 
 To remove FH1-mediated acceleration of elongation, we substituted glycine-serine linkers for the polyproline tracts in FHOD3L-CT (Zweifel and Courtemanche, 2020). (The FH2 domain alone was unstable in vitro.) Pyrene-based actin assembly assays were confounded by bundling/aggregation induced by this construct. Although low-speed co-sedimentation assays indicated that the bundling strength of FHOD3L-CT GS-FH1 is slightly weaker than that of wild-type, images show irregular shapes that may scatter light more, thereby disrupting the pyrene signal (Figure 3D, Figure 3—figure supplement 2A). Therefore, to compare the nucleation strength of FHOD3L-CT GS-FH1 with wild-type, we counted filaments using TIRF microscopy. We observed similar numbers of filaments generated in the presence of low concentrations (used to minimize bundling) of FHOD3L-CT wild-type or GS-FH1 (Figure 3E, Figure 3—figure supplement 2B). Barbed-end elongation assays in the absence of profilin demonstrated a weakened affinity of FHOD3L-CT GS-FH1 (Kapp = 0.218 ±0.016 nM) (Figure 3B). This finding suggests that the stiffness of the FH1 domain impacts barbed-end binding, but we cannot say whether the effect is direct or indirect. Interestingly, profilin did not decrease barbed-end binding of FHOD3L-CT GS-FH1 (Kapp = 0.21 ±0.13 nM; Figure 3F). Finally, and most importantly, only deceleration was observed in assays with profilin, confirming that elongation was not enhanced by FHOD3L-CT GS-FH1, at any concentration tested (Figure 3F). Thus, nucleation is maintained while acceleration of elongation is no longer detected.
 
 Together, these mutations provide a range of nucleation, elongation, capping, and bundling activities (Table 1). We, therefore, used them to assess the correlation of biochemical activities with sarcomere formation and function in cardiomyocytes.
 
-## FHOD3L rescues sarcomere organization and contractility in NRVMs
+### FHOD3L rescues sarcomere organization and contractility in NRVMs
 
 In order to perform structure-function analysis in a cellular context, we established methods to knock down and rescue FHOD3L in NRVMs (similar to Taniguchi et al., 2009; Figure 4A). Briefly, freshly isolated NRVMs were treated with small interfering RNA (siRNA) targeting FHOD3 using reverse transfection (see Materials and methods for details). Adenoviral infection, driving expression of rescue constructs, was initiated 2 days after siRNA treatment, and cells were examined (fixed or live) 2 days after infection (Figure 4A). The rescue constructs contained human FHOD3L, which is not targeted by the siRNA used to remove endogenous rat FHOD3. In all cases, cells were treated with siRNA and adenovirus. For negative controls, AllStars Negative Control siRNA and/or empty virus were substituted for the FHOD3-specific reagents. Thus, we refer to the negative control experiment as a mock knockdown and the knockdown alone as a mock rescue. During assay development, we found that knockdown reduced FHOD3 mRNA to ~35% of original levels after 4 days, with either of two commercially available oligos (Figure 4—figure supplement 1A). At this time point, we detected an ~80% reduction in endogenous FHOD3 protein via western blot (Figure 4B and C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig4-v1.jpg)
+
+**Figure 4.:** (A) Overview of the rescue-experiment protocol. Reverse transfection of small interfering RNA (siRNA) upon plating NRVMs followed by infection with adenovirus to drive exogenous expression. (B) Western blot showing depletion of endogenous FHOD3 after knockdown, and exogenous FHOD3L expression levels after rescue. GAPDH used as a loading control. (C) Quantification of western blot in (B) normalized to GAPDH for each lane and then normalized to endogenous levels in the mock knockdown (n=3, each; mean ± SD). (D) Sarcomere integrity indicated by immunofluorescent staining of α-actinin (green). Localization of exogenous HA-FHOD3L is shown in magenta. DAPI (blue) is included in the merged images. Wheat germ agglutinin (WGA) is not shown for clarity. (E) Quantification of sarcomere number per NRVM (n=160 cells, mock KD; n=334 cells, mock rescue; n=110 cells, FHOD3L rescue). (F) Average sarcomere lengths per NRVM (n=100 cells, mock KD; n=71 cells, mock rescue; n=92 cells, FHOD3L rescue). (G) Average sarcomere widths (Z-line lengths) per NRVM (n=100 cells, mock KD; n=71 cells, mock rescue; n=92 cells, FHOD3L rescue). (H) Epifluorescent micrographs showing mock knockdown and FHOD3L-rescued NRVMs stained, with phalloidin (green) to visualize thin filaments and anti-HA (magenta) to show expression of exogenous FHOD3L. (I) Quantification of thin filament lengths for mock knockdown and FHOD3L-rescued NRVMs (n=94 cells, mock KD; n=84 cells, wild-type [WT] rescue). For (E, F, G, I), data from three biological replicates for each condition are represented by different shades. Mean ± SD is shown. p-Values were calculated with Mann-Whitney U tests, *p<0.05; **p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Relative mRNA expression of FHOD3 in NRVMs after knockdown with two different small interfering RNA (siRNA) oligos compared to GAPDH mRNA expression (n=2 wells, 1 biological replicate; mean). (B) Typical image of CellPose segmentation of wild-type FHOD3L-rescued NRVMs, used for per cell quantification of sarcomeres, overlaid with the α-actinin channel. Regions of interest (ROIs) are numbered. Scale bar, 20 µm. (C) Pairwise correlation of normalized DsRed vs HA fluorescence intensity from FHOD3L rescue, plotted per NRVM area. Correlation is too weak to use DsRed as an expression level reporter (n=347 cells; 1 biological replicate). (D) Normalized and background-corrected 3xHA-FHOD3L fluorescence intensity per NRVM area from rescue experiments. Magenta line indicates the upper expression level cutoff (2700 a.u./µm2) used to select cells for further analysis (n=913 cells; 3 biological replicates; mean ± SD). (E) Normalized and background-corrected 3xHA-FHOD3L fluorescence intensity per NRVM area from the same three replicates as in (D). These cells were randomly selected for further analysis. (F) Pairwise correlation of HA fluorescence intensity vs sarcomere number, sarcomere length, or sarcomere width from FHOD3L rescue, plotted per NRVM area. No correlation is detected. (Dashed line shows trend when cells lacking sarcomeres [red] are excluded. Solid line shows the trend for all cells analyzed.)
 
 We analyzed sarcomere structure in fixed samples. To detect sarcomeres, we stained cells with anti-α-actinin antibodies (Figure 4D). To analyze on a per cell basis, we stained plasma membranes with wheat germ agglutinin (WGA) and segmented the NRVMs with CellPose (Stringer et al., 2021; Figure 4—figure supplement 1B). The DsRed reporter did not provide an accurate readout of exogenous 3xHA-FHOD3L (hereafter, FHOD3L) expression levels (Figure 4—figure supplement 1C). Therefore, we used anti-HA antibodies to quantify the expression of exogenous FHOD3 on a per cell basis. By western analysis, we found that average exogenous FHOD3L expression could be as high as ~190% above endogenous levels at the end of the rescue timeline (Figure 4B and C). We, therefore, examined the impact of FHOD3L expression level on sarcomere structure. We detected essentially no correlation (R2 ranges from 0.001 to 0.04) of sarcomere number, length, or width over a tenfold change in FHOD3L expression levels (Figure 4—figure supplement 1D–F). Despite the evidence that sarcomere structure was not a function of FHOD3 expression levels, we decided to exclude NRVMs that express very highly above endogenous FHOD3 levels. We set an upper cutoff for the normalized exogenous FHOD3L expression per cell area of 5% and applied that same intensity level as a cutoff for all other experiments (Figure 4—figure supplement 1D). We also set a lower cutoff slightly above background HA levels to exclude NRVMs not expressing exogenous FHOD3L.
 
 We confirmed that sarcomeres remained organized upon mock knockdown, counting 12 ± 13 sarcomeres per cell (Figure 4D and E, Table 2). (Measurements from NRVMs are summarized in Table 2.) Sarcomeres were largely absent in the mock rescue (3 ± 7) with α-actinin puncta and aggregates visible by immunofluorescence (IF) (Figure 4D and E). Expression of wild-type FHOD3L was sufficient to rescue the loss of sarcomeres, and anti-HA staining demonstrated that exogenous FHOD3L localized to sarcomeres, as expected (Figure 4D). In fact, FHOD3L-rescued NRVMs formed significantly more sarcomeres than the mock knockdown NRVMs (19 ±14 vs 12 ± 13; Figure 4E). We note that the sarcomere number measurement has a high standard deviation because some cells within the expression level cutoffs, including at relatively high levels of detected FHOD3L, lacked sarcomeres (Figure 4—figure supplement 1F). Such right-tailed distributions are consistent with other reports of sarcomere numbers per cardiomyocyte (Neininger-Castro et al., 2023).
 
+**Table 2.**
+ Summary of FHOD3L and mutant rescue experiments in neonatal rat ventricular myocytes (NRVMs).All data shown are means ± standard deviation, each from three independent experiments (except for GS-FH1 rescue: maximal contraction and relaxation velocity measurements and average % rhythmic contractions from two independent experiments due to one biological replicate not contracting). n.d.=no data. In the lightest columns, ‘–’ indicates treatment with negative control small interfering RNA (siRNA) or empty virus, ‘+’ indicates treatment with FHOD3 siRNA or corresponding FHOD3L adenovirus. Data in the orange columns were acquired from fixed and stained cells. Data in the red columns were acquired from live cells. Statistical analyses are described in the figure legends. ‘In the lightest columns’ should be ‘In the yellow columns’. Data in the ‘medium-colored columns’ should be ‘Data in the orange columns’. ‘Data in the darkest columns’ should be ‘Data in the red columns’.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Treatment</th>
+      <th colspan="4">Fixed samples</th>
+      <th colspan="4">Live samples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>FHOD3 KD?</td>
+      <td>FHOD3 AdV?</td>
+      <td>Avg sarcomere number per NRVM</td>
+      <td>Sarcomere length (µm)</td>
+      <td>Z-line length (µm)</td>
+      <td>Thin filament length (nm)</td>
+      <td>Maximal contraction velocity (µm/s)</td>
+      <td>Maximal relaxation velocity (µm/s)</td>
+      <td>Avg % rhythmic contractions</td>
+      <td>Avg % contracting NRCs in FOV</td>
+    </tr>
+    <tr>
+      <td>Mock knockdown</td>
+      <td>–</td>
+      <td>–</td>
+      <td>12 ± 13</td>
+      <td>1.71 ± 0.22</td>
+      <td>1.69 ± 0.43</td>
+      <td>925 ± 94</td>
+      <td>7.9 ± 1.6</td>
+      <td>6.0 ± 1.7</td>
+      <td>74 ± 9</td>
+      <td>98.2 ± 3.2</td>
+    </tr>
+    <tr>
+      <td>Mock rescue</td>
+      <td>+</td>
+      <td>–</td>
+      <td>3 ± 7*</td>
+      <td>1.46 ± 0.37*</td>
+      <td>1.38 ± 0.46*</td>
+      <td>n.d.</td>
+      <td>6.0 ± 1.7*</td>
+      <td>4.4 ± 1.5*</td>
+      <td>14 ± 12</td>
+      <td>89 ± 11</td>
+    </tr>
+    <tr>
+      <td>FHOD3L rescue</td>
+      <td>+</td>
+      <td>+</td>
+      <td>19 ±14*, †</td>
+      <td>1.72 ± 0.18†</td>
+      <td>1.71 ± 0.46†</td>
+      <td>739 ±81*, †</td>
+      <td>7.5 ± 1.5†</td>
+      <td>6.1 ± 1.5†</td>
+      <td>72 ± 20</td>
+      <td>97.2 ± 4.8</td>
+    </tr>
+    <tr>
+      <td>K1193L rescue</td>
+      <td>+</td>
+      <td>+</td>
+      <td>17 ± 17</td>
+      <td>1.69 ± 0.16</td>
+      <td>1.73 ± 0.41</td>
+      <td>792 ± 79 ‡</td>
+      <td>7.7 ± 1.6</td>
+      <td>5.9 ± 1.6</td>
+      <td>88 ± 21</td>
+      <td>98.2 ± 3.2</td>
+    </tr>
+    <tr>
+      <td>GS-FH1 rescue</td>
+      <td>+</td>
+      <td>+</td>
+      <td>2 ± 4 ‡</td>
+      <td>1.42 ± 0.35 ‡</td>
+      <td>1.23 ± 0.29‡</td>
+      <td>n.d.</td>
+      <td>5.6 ± 1.7‡</td>
+      <td>3.6 ± 1.2 ‡</td>
+      <td>3.7 ± 5.2</td>
+      <td>32 ± 32</td>
+    </tr>
+    <tr>
+      <td>FHOD3L overexpression</td>
+      <td>–</td>
+      <td>+</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>6.6 ± 1.6‡</td>
+      <td>5.5 ± 1.6 ‡</td>
+      <td>72 ± 21</td>
+      <td>76 ± 32</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Statistically different from mock KD (mock rescue and Fhod3L rescue).†Statistically different from mock rescue (FHOD3L and GS-FH1).‡Statistically different from FHOD3L rescue (all mutant rescues and overexpression)._
+
 To analyze sarcomere integrity more closely, we measured sarcomere lengths (Z-line to Z-line) and widths (Z-line lengths). In the mock rescue cells, the sarcomeres that remained were both shorter and narrower than those in the mock knockdown cells (Figure 4F and G). When rescued with FHOD3L, sarcomere lengths (1.72 ±0.18 µm) and sarcomere widths (1.70 ±0.46 µm) recovered to lengths comparable to the mock knockdown control (Figure 4F and G). To measure thin filament length, we stained NRVMs with phalloidin and anti-HA. We observed shorter thin filament lengths in FHOD3L-rescued NRVMs (739 ±81 nm) compared to mock knockdown NRVMs (925 ±94 nm) (Figure 4H and I). The difference in thin filament length could reflect the increased number of sarcomeres in the rescued cells and/or could indicate that the sarcomeres have not reached their final steady state after 2 days of FHOD3L expression. Overall, FHOD3L-rescued NRVMs form sarcomeres de novo that well approximate the sarcomeres in the negative control. We compared further experimental results to FHOD3L rescue cells, due to the slight differences.
 
 We next measured contractile function in FHOD3L-rescued NRVMs. To do so, we used a motionGUI MATLAB program that makes use of digital image correlation (DIC) to measure contractility (Huebsch et al., 2015; Nakano et al., 2017). Contraction and relaxation velocities inform us about systolic and diastolic function of the cardiomyocytes, respectively, and thus their ability to promote proper blood flow in organisms (Ferreira-Martins and Leite-Moreira, 2010). As expected, maximal contraction and relaxation velocities were both significantly decreased upon FHOD3 knockdown (Figure 5A, B, and D, Figure 5—figure supplement 1A). Both velocities recovered to mock knockdown levels by subsequent expression of FHOD3L (Figure 5A, C, and D, Figure 5—figure supplement 1A, Figure 5—video 1). We also examined the expression of FHOD3L in an otherwise untreated background (overexpression). Intensity of exogenous FHOD3L per NRVM was notably lower compared to the wild-type rescue despite infecting with the same titer, suggesting that NRVMs attempt to maintain FHOD3L levels below some maximum (Figure 5—figure supplement 2A). Consistent with this idea, contraction and relaxation velocities were reduced upon overexpression of FHOD3L (Figure 5—figure supplement 2B and C). These data further demonstrate that the expression levels in our rescue experiments, while higher on average than endogenous levels, are within an acceptable range.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig5-v1.jpg)
+
+**Figure 5.:** (A–C) Motion analysis by digital image correlation. Mock knockdown, mock rescue, and FHOD3L rescue beating patterns are shown. The first (•) and the second (▲) peak of each duplex represent the contraction and the relaxation, respectively. (D) Maximal contraction velocities quantified for mock knockdown, mock rescue, and FHOD3L wild-type rescue (n=82 regions of interest [ROIs], mock KD, n=81 ROIs, mock rescue, n=72, ROIs, FHOD3L rescue; 3 biological replicates, each; mean ± SD, p-values by Student’s two-sample, unpaired t-test). (E) Quantification of the percentage of analyzed ROIs from the videos that contained rhythmic contractions for mock knockdown, mock rescue, and FHOD3L wild-type rescue (n=3, each; mean ± SD). **p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Maximal relaxation velocities quantified for mock knockdown, mock rescue, and FHOD3L rescue (n=82 regions of interest [ROIs], mock KD; n=81 ROIs, mock rescue; n=72, ROIs, FHOD3L rescue; 3 biological replicates, each; mean ± SD, p-values by Student’s two-sample, unpaired t-test). (B) Estimate of the percentage of neonatal rat ventricular myocytes (NRVMs) contracting in each video for mock knockdown, mock rescue, and FHOD3L rescue (n=3, each; mean ± SD). *p<0.05, **p<0.001, ***p<0.0001.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Comparison of 3xHA-FHOD3L fluorescence intensity per neonatal rat ventricular myocyte (NRVM) area from rescue experiments and overexpression experiments. Data are normalized and background-corrected as in Figure 4—figure supplement 1D. (B) Maximal contraction velocities quantified for mock knockdown and FHOD3L overexpression NRVMs (n=82 regions of interest [ROIs], mock KD; n=79 ROIs, FHOD3L overexpression; 3 biological replicates, each; mean ± SD, p-value by Student’s two-sample, unpaired t-test). (C) Maximal relaxation velocities quantified for mock knockdown and FHOD3L overexpression NRVMs (n=82 ROIs, mock KD, n=79 ROIs, FHOD3L overexpression; 3 biological replicates, each; mean ± SD, p-value by Student’s two-sample, unpaired t-test). (D) Quantification of rhythmic contractions as in Figure 5E for mock knockdown and overexpression NRVMs (n=3, each; mean ± SD). (E) Estimate of the percentage of NRVMs contracting in each video for mock knockdown and overexpression NRVMs (n=3, each; mean ± SD). *p<0.05, **p<0.001, ***p<0.0001.
+
 To assess the impact of FHOD3L depletion on cardiac rhythm, we measured the percentage of beating area in each video that exhibited consistent, rhythmic contractions (defined as no more than 1 beat out of sync in a 10 s period). We observed rhythmic contractions for both the mock knockdown NRVMs and FHOD3L-rescued NRVMs for ~75% of the analyzed videos (Figure 5A, C, and E, Figure 5—video 1). In contrast, primarily arrhythmic contractions were detected in FHOD3-depleted NRVMs, with only ~15% of the videos showing rhythmic beating (Figure 5B and E, Figure 5—video 1). To assess whether some NRVMs in these conditions were not contracting at all, we estimated the proportion of NRVMs that were contracting per video and found contractions throughout ~95% of the field of view on average for both mock knockdown NRVMs and wild-type FHOD3L-rescued NRVMs (Figure 5—figure supplement 1B). For FHOD3-depleted NRVMs, we observed a reduction in contractile area to ~80% (Figure 5—figure supplement 1B). This value was higher than expected based on other metrics (Figure 5D and E). We attribute some of the movement to neighboring cells pulling each other. We also quantified contractility when we overexpressed FHOD3L. FHOD3L overexpression did not clearly impact the rhythmic contractions or the area of contraction, though variance increased (Figure 5—figure supplement 2D and E), consistent with the idea that, at high enough levels, FHOD3L activity can be detrimental in NRVMs.
 
-## Loss of nucleation, but not elongation, is tolerated for sarcomere formation and cardiac function
+### Loss of nucleation, but not elongation, is tolerated for sarcomere formation and cardiac function
 
 Once we established baseline levels of sarcomere structure and contractility in NRVMs with the wild-type FHOD3L rescue, we asked which actin organizing activities of FHOD3L are important for its cellular function. To this end, we performed rescue experiments with the nucleation-hindering mutant (K1193L) and the elongation-hindering mutant (GS-FH1). Expression of the K1193L mutant resulted in expression levels similar to wild-type (Figure 6—figure supplement 1A and B). Little to no correlation between FHOD3 expression level and sarcomere metrics was observed (R2 ranges from 0.003 to 0.2; Figure 6—figure supplement 1D). Overall, cells expressing FHOD3L K1193L were almost indistinguishable from those expressing FHOD3L. FHOD3L K1193L localization was striated (Figure 6A), and the number of sarcomeres per NRVM was rescued to wild-type levels (15 ± 16) (Figure 6B). Sarcomere lengths and widths were indistinguishable from wild-type (Figure 6C and D). The only statistically significant difference was thin filament length, which was ~7% longer in the K1193L-rescued NRVMs (792 ±79 nm) compared to those in FHOD3L-rescued NRVMs (739 ± 81) (Figure 6A’ and E, Figure 6—figure supplement 2A). In agreement with the well-organized, near wild-type appearance of sarcomeres, contraction and relaxation velocities, as well as the proportion of rhythmically contracting NRVMs, were indistinguishable from the FHOD3L rescue (Figure 6F and G, Figure 6—figure supplement 2B and C, Figure 6—video 1). Thus, ~70% loss of nucleation, ~20-fold weaker barbed-end capping, and loss of over 50% of bundling activity had no deleterious impact on FHOD3L’s ability to function in NRVMs.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig6-v1.jpg)
+
+**Figure 6.:** (A) Images of neonatal rat ventricular myocytes (NRVMs) rescued with K1193L or GS-FH1. Sarcomere integrity indicated by immunofluorescent staining of α-actinin (green). Localization of exogenous HA-FHOD3L is shown in magenta. DAPI (blue) is included in the merged images. Wheat germ agglutinin (WGA) is not shown for clarity. (B) Quantification of sarcomere number per NRVM in the FHOD3L, K1193L, and GS-FH1 rescues (n=148 cells, K1193L; n=259 cells GS-FH1; 3 biological replicates; mean ± SD, p-values by Mann-Whitney U test). (C) Average sarcomere lengths per NRVM in the FHOD3L, K1193L, and GS-FH1 rescues (n=95 cells, K1193L; n=73 cells, GS-FH1; 3 biological replicates; mean ± SD, p-value for FHOD3L comparison to GS-FH1 by Student’s two-sample, unpaired t-test, all other p-values by Mann-Whitney U test). (D) Average sarcomere widths (Z-line lengths) per NRVM in the FHOD3L, K1193L, and GS-FH1 rescues (n=95 cells, K1193L; n=73 cells, GS-FH1; 3 biological replicates; mean ± SD, p-values by Mann-Whitney U test). (E) Quantification of thin filament lengths for FHOD3L and K1193L-rescued NRVMs (n=99 cells, K1193L; 3 biological replicates, each; mean ± SD, p-value by Mann-Whitney U test). (F) Quantification of contracting NRVMs, as in Figure 5D, for FHOD3L, K1193L, and GS-FH1-rescued NRVMs (n=3, each; mean ± SD). (G) Quantification of rhythmic contractions, as in Figure 5E, for FHOD3L, K1193L, and GS-FH1-rescued NRVMs (n=3, FHOD3L and K1193L; n=2, GS-FH1; mean ± SD). **p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Normalized and background-corrected 3xHA-FHOD3L fluorescence intensity per neonatal rat ventricular myocyte (NRVM) area from the FHOD3L, K1193L, and GS-FH1 rescues (n=897 cells, K1193L, n=536 cells, GS-FH1; 3 biological replicates, each; mean ± SD). (B) Fluorescence distributions of the cells randomly selected for further analysis. (C–E) Analysis of correlation between HA intensity per cell and sarcomere number, length, and width for indicated rescue constructs.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Epifluorescent micrographs showing K1193L-rescued neonatal rat ventricular myocytes (NRVMs) stained with phalloidin (green) to visualize thin filaments and anti-HA (magenta) to show expression of exogenous FHOD3L. (A’) 3× zoom of indicated region in phalloidin image. (B) Phalloidin staining (green) reveals that cardiomyocytes expressing GS-FH1 have actin puncta that may be aligned. Stress fibers from a fibroblast are visible in the upper right-hand corner of the image. HA-FHOD3L (magenta) shows diffuse GS-FH1 protein. (B’) 3× zoom of indicated region in phalloidin image. (C) Striated HA-FHOD3L demonstrates that the GS-FH1 mutant can localize correctly if sarcomeres are present. Sarcomere integrity indicated by immunofluorescent staining of α-actinin (green). Localization of exogenous HA-FHOD3L is shown in magenta. DAPI (blue) is included in the merged images. Wheat germ agglutinin (WGA) is not shown for clarity. (D) Maximal relaxation velocities for FHOD3L, K1193L, and GS-FH1-rescued NRVMs (n=81 regions of interest [ROIs], K1193L; n=31 ROIs, GS-FH1; 3 biological replicates, wild-type [WT] and K1193L; 2 for GS-FH1; mean ± SD, p-values from Mann-Whitney U test). (E) Estimate of the percentage of NRVMs contracting in each video for FHOD3L, K1193L, and GS-FH1-rescued NRVMs (n=81 ROIs, K1193L; n=31 ROIs, GS-FH1; 3 biological replicates, WT and K1193L; 2 for GS-FH1; mean ± SD; p-values determined with Mann-Whitney U-test). **p<0.001.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/104048/elife-104048-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) HA intensity distributions from full complement of FHOD3L (wild-type [WT]) rescue experiments compared to those with HA intensity <720 a.u./μm2, those from the first biological replicate only, and with the GS-FH1 rescue dataset. (B) Comparison of sarcomere metrics for the four indicated distributions. aStatistically different from FHOD3L rescue. (C-E) Analysis of correlation between HA intensity per cell and sarcomere number, length, and width for the three indicated low-intensity populations.
 
 In contrast, the elongation-deficient mutant (GS-FH1) did not rescue FHOD3L loss in NRVMs. Based on total fluorescence per cell, we determined that GS-FH1 levels were lower than observed for wild-type or K1193L, despite infecting a similar proportion of NRVMs (Figure 6—figure supplement 1A). In most cells, the FHOD3L GS-FH1 localization was diffuse (Figure 6A, Figure 6—figure supplement 2B). In a few cells that probably escaped from RNAi knockdown, we observed striated doublets of FHOD3L GS-FH1 between Z-lines, demonstrating that the protein can fold and localize correctly if sarcomeres are intact (Figure 6—figure supplement 2C). The turnover rate of GS-FH1 may be higher than wild-type intrinsically or because there were few binding sites available, i.e., fewer sarcomeres to which GS-FH1 could bind. Phalloidin staining revealed actin puncta in most cells expressing GS-FH1 (Figure 6A’, Figure 6—figure supplement 2C). The puncta were smaller than expected for mature sarcomeres but were aligned in some cases, suggesting the possible formation of premyofibrils.
 
@@ -92,7 +352,7 @@ The sarcomere number per GS-FH1 rescue cell was only 2 ± 4, similar to the mock
 
 ## Discussion
 
-## FHOD3L elongation is necessary for sarcomeres in NRVMs
+### FHOD3L elongation is necessary for sarcomeres in NRVMs
 
 Published rates of nucleation and elongation by formins both vary by at least an order of magnitude. It is generally thought that the specific actin assembly properties of a given formin are set for its function, i.e., the structure this formin will build. To directly test this idea, Homa et al. replaced Cdc12p, the formin critical to S. pombe cytokinesis, with several chimeras of differing nucleation strength (Homa et al., 2021). Indeed, they found a strong positive correlation between formins with nucleation strength similar to Cdc12p and their ability to drive cytokinesis. In a computational model that recapitulates yeast cable structure, it was found that nucleation and/or elongation could be tuned to build the cables (McInally et al., 2021). Thus, how formins are used is likely to differ from case to case.
 
@@ -106,7 +366,7 @@ The FH1 domain strongly influences the elongation rate in vitro. In NRVMs, we fo
 
 Recent work in Caenorhabditis elegans is consistent with our findings. Kimmich et al. removed the endogenous coding region of the FH1 domain in worm Fhod-1 (the only worm Fhod gene) (Kimmich et al., 2024). Body wall muscle is severely impacted by this deletion. In addition, they found that profilin is required for Fhod-1 function. Together, these data strongly argue that elongation activity is important. Interestingly, the muscle phenotype is more severe in a strain predicted to delete part of the FH2 domain and the downstream sequence, but not the FH1 domain, fhod-1(tm2363) (Kimmich et al., 2024; Mi-Mi et al., 2012). Thus, nucleation activity may also be necessary in this animal. Ultimately, complete removal of any domain, as we do here with the GS-FH1 mutant, may be too blunt of an approach. We expect experiments with modified elongation (e.g. slower or more processive) to provide further insight.
 
-## Why does FHOD3L elongate in NRVMs?
+### Why does FHOD3L elongate in NRVMs?
 
 Given these new data, what could FHOD3L be doing in the cell? In multiple species, premyofibrils are built, but they fail to mature into wild-type myofibrils in the absence of FHOD (Kan et al., 2012a; Kimmich et al., 2024; Shwartz et al., 2016). It follows that FHOD3 is not required to build the earliest thin filaments in the sarcomere. Instead, FHOD3 could contribute new thin filaments to expanding, maturing sarcomeres. If this were the case, we might expect nucleation to be more important than our data indicate. Instead, FHOD3L could be responsible for elongating filaments that are nucleated by a different protein. For example, FHOD3L and DAAM could collaborate, or they could contribute to the apparent redundancy and robustness built into sarcomerogenesis (Szikora et al., 2022). DAAM knockout mice have overlapping cardiac phenotypes with those of the FHOD3 knockout (Kan et al., 2012a; Li et al., 2011). Furthermore, a lack of sarcomere thickening and loss of sarcomere organization are common phenotypes in Drosophila knockdowns of Daam1 and Fhod (Molnár et al., 2014; Shwartz et al., 2016). While FHOD3L and DAAM cannot compensate for the loss of one or the other, they might help when one is compromised.
 
@@ -114,7 +374,234 @@ Alternatively, FHOD3L could be reinforcing the Z-line structure to facilitate sa
 
 ## Materials and methods
 
-## Protein expression, purification, and labeling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Novagen/Sigma-Aldrich</td>
+      <td>69,450-MRRID:Ecoli_0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>Dr. Kohnosuke Mitani, UCLA</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct and biological sample (human)</td>
+      <td>pAdenoX-CMV-3xHA-FHOD3L-CMV-DsRed (plasmid and adenovirus)</td>
+      <td>Takara Bio; this paper</td>
+      <td>Cat. No. 632262</td>
+      <td>Adenoviral construct totransfect and purify the adenovirus to express FHOD3L wild-type in NRVMs.</td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>pAV-CMV-{3xHA-FHOD3L GS-FH1}:SV40 pA-CMV-mCherry (adenovirus)</td>
+      <td>VectorBuilder</td>
+      <td>Cat#AVS(VB230718-1114xtg)</td>
+      <td>Adenovirus totransfect and express FHOD3L GS-FH1 in NRVMs.</td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>pAV-CMV-{3xHA-FHOD3L K1193L}:SV40 pA-CMV-mCherry (adenovirus)</td>
+      <td>VectorBuilder</td>
+      <td>Cat#AVS(VB230528-1145fkg)</td>
+      <td>Adenovirus totransfect and express FHOD3L K1193L in NRVMs.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA against rat FHOD3</td>
+      <td>QIAGEN</td>
+      <td>Rn_LOC100360334_2 Flexitube siRNA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AllStars Negative Control siRNA</td>
+      <td>QIAGEN</td>
+      <td>Cat. No. 1027281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CCGCATCTTCTTGTGCAGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CGATACGGCCAAATCCGTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FHOD3_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CAGCCAATCACGGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FHOD3_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>TGCTGTCCTTGCCCTGA</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Rattus norvegicus)</td>
+      <td>Primary neonatal rat ventricular myocytes</td>
+      <td>UCLA Cardiovascular Research Theme Core</td>
+      <td></td>
+      <td>Freshly isolated from male and female Sprague-Dawley rats</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-actinin (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat. No. A7811, RRID:AB_476766</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. No. 3724S,RRID:AB_1549585</td>
+      <td>IF (1:500)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. No. sc-365062, RRID:AB_10847862</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FHOD3 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. No. ab224463</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit IgG 800CW</td>
+      <td>LiCor Biosciences</td>
+      <td>Cat. No. 926–32211,RRID:AB_621843</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse IgG 680RD</td>
+      <td>LiCor Biosciences</td>
+      <td>Cat. No. 926–68070,RRID:AB_10956588</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-mouse</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. No. A-11001,RRID:AB_2534069</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 goat anti-rabbit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. No. A-21244,RRID:AB_2535812</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-2-FHOD3LCT (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Original template, EGFP-FHOD3L, gifted by Thomas Iskratsch (Iskratsch et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vectashield Plus Antifade mounting media</td>
+      <td>Vector Laboratories</td>
+      <td>Cat. No. H-1900–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Prolong Glass Antifade mountant</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. No. P36980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 488 Phalloidin</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. No. A12379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Wheat Germ Agglutinin (WGA) TMR</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. No. W849</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Fisher Scientific</td>
+      <td>Cat. No. AC416780010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>NIH;Schindelin et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionGUI</td>
+      <td>MATLAB; denoviral infection, driving expression of rescue constructs,Huebsch et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellPose</td>
+      <td>Stringer et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Fisher Scientific</td>
+      <td>Cat. No. EN62248</td>
+      <td>(1 μg/ml)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression, purification, and labeling
 
 FHOD3L-CT (residues 963–1622) was cloned into pGEX-6P-2 with an N-terminal glutathione-S-transferase (GST) tag. The original template, EGFP-Fhod3L, was generously provided by T Iskratsch (Queen Mary University of London) (Iskratsch et al., 2010). Point mutations were generated by site-directed mutagenesis. Truncations were constructed using FastCloning (Liu and Naismith, 2008). pGEX-FHOD3L-CT GS-FH1, in which the polyproline tracts were replaced with GS linkers, was cloned via Gibson Assembly introducing a gBlock into pGEX-FHOD3L-CT (replacing the FH1 region).
 
@@ -130,17 +617,21 @@ Human profilin-1 and S. pombe profilin were expressed and purified as described 
 
 We used RSA throughout the paper, based on FHOD3L’s role in skeletal and cardiac muscle. Skeletal muscle actin was isolated from rabbit back muscle acetone powder (Pel-Freez) according to the method described by Spudich and Watt, followed by gel purification (Spudich and Watt, 1971). Skeletal muscle actin was labeled with pyrene iodoacetamide (Thermo Scientific) or Alexa Fluor 488 NHS-ester (Thermo Scientific) as described (Sun et al., 2018).
 
-## Pyrene assays
+### Pyrene assays
 
-Pyrene assays were performed essentially as described (Bor et al., 2012) on an Infinite 200 Pro plate reader (Tecan). FHOD3L-CT was diluted in buffer Z (2 mM Tris pH 8.0, 0.2 mM ATP, 0.1 mM CaCl2, 0.5 mM TCEP, 0.04% sodium azide) before addition to polymerization buffer (KMEH: 10 mM HEPES, pH 7, 1 mM EGTA, 50 mM KCl, 1 mM MgCl2). This mix was added to Mg2+-actin at a final concentration of 4 μM with 5% pyrene-labeled actin. For bulk assembly assays, nucleation strengths were calculated from the slope at t1/8. For seeded elongation assays, actin filaments were sheared by passing three times through a 24-gauge needle and then aliquoted into each well of a microplate. Proteins were added to the seeds and incubated for 2–4 min at room temperature. Seeds and additional proteins in KMEH were added to Mg2+-actin, at a final concentration of 0.5 μM actin with 10% pyrene-labeled actin, to initiate elongation. Elongation rates were determined by linear regression over the first 90 s and normalized against the rate of actin alone in each experiment. The affinity of FHOD3-CT for barbed ends was determined by fitting the data to the quadratic binding equationr=a+b∗(([barbedends]+[FHOD3-CT]+Kd)−([barbedends]+[FHOD3-CT]+Kd)2−4∗[barbedends]∗[FHOD3-CT]),\begin{document}$$\displaystyle \begin{array} {c}  r= a+b* \bigg( \left([\mathrm{barbed\, ends}]+[\text{FHOD3-CT}]+ \mathit {K}_d \right)- \\[0.25cm]  \sqrt{ \left([\mathrm{barbed\, ends}]+[\text{FHOD3-CT}]+K_d \right)^2 -4*[\mathrm{barbed\, ends}]*[\text{FHOD3-CT}]} \,\bigg), \end{array}$$\end{document}
+Pyrene assays were performed essentially as described (Bor et al., 2012) on an Infinite 200 Pro plate reader (Tecan). FHOD3L-CT was diluted in buffer Z (2 mM Tris pH 8.0, 0.2 mM ATP, 0.1 mM CaCl2, 0.5 mM TCEP, 0.04% sodium azide) before addition to polymerization buffer (KMEH: 10 mM HEPES, pH 7, 1 mM EGTA, 50 mM KCl, 1 mM MgCl2). This mix was added to Mg2+-actin at a final concentration of 4 μM with 5% pyrene-labeled actin. For bulk assembly assays, nucleation strengths were calculated from the slope at t1/8. For seeded elongation assays, actin filaments were sheared by passing three times through a 24-gauge needle and then aliquoted into each well of a microplate. Proteins were added to the seeds and incubated for 2–4 min at room temperature. Seeds and additional proteins in KMEH were added to Mg2+-actin, at a final concentration of 0.5 μM actin with 10% pyrene-labeled actin, to initiate elongation. Elongation rates were determined by linear regression over the first 90 s and normalized against the rate of actin alone in each experiment. The affinity of FHOD3-CT for barbed ends was determined by fitting the data to the quadratic binding equation
+
+$$
+r=a+b∗(([barbedends]+[FHOD3-CT]+K_{d})−\sqrt{([barbedends]+[FHOD3-CT]+K_{d})^{2}−4∗[barbedends]∗[FHOD3-CT]}),
+$$
 
 where r is the normalized elongation rate, and a and b are offset and scaling constants, respectively.
 
-## Low-speed bundling assays
+### Low-speed bundling assays
 
 10 μM actin was polymerized for 1 hr at room temperature and diluted to 5 μM with varying amounts of FHOD3-CT constructs in KMEH. Samples were incubated for 30 min at room temperature and then spun for 20 min, 14,000 × g to separate the pellet and supernatant. The supernatant samples were carefully transferred to new tubes, and the pellet samples were resuspended in an equal volume of 1× sample loading buffer for quantitative comparison. Samples were boiled in 1× sample loading buffer for 10 min and run on 10% SDS-PAGE gels. The percentage of actin pelleted was determined via densitometry with Fiji (Schindelin et al., 2012).
 
-## TIRF microscopy
+### TIRF microscopy
 
 TIRF microscopy was utilized to measure the elongation rates and run lengths of the FHOD3-CT constructs. Coverslips were rinsed three times in MilliQ water, placed in 2% Hellmanex (Hellma Analytics) at 60–65°C for 2 hr, rinsed another five times in MilliQ water, and allowed to dry.
 
@@ -148,7 +639,7 @@ Parallel flow chambers of ~15 μl were assembled on the slide using strips of do
 
 The videos and images were acquired using a Zeiss Axio Observer 7 Basic Marianas Microscope with Definite Focus 2 equipped with a 3i Vector TIRF System, an Alpha Plan-Apochromat ×63 (1.46 NA) Oil TIRF Objective, and an Andor iXon3 897 512×512 10 MHz EMCCD Camera, using Slidebook 6 software. Experiments were performed at room temperature. Images were captured at 2.5 s intervals for 10 min. Filament lengths were quantified with the JFilament plug-in in Fiji (Schindelin et al., 2012; Smith et al., 2010). Bright and dim filaments were distinguished manually. Due to the transient nature of the dim portions of filaments generated by FHOD3L constructs, pauses for actin elongation were first visually identified as portions of roughly 0 slope deviating away from the best fit line off the subunits added vs. time plots of elongation. The corresponding times for the duration of the pauses were then more carefully examined. Events were defined as lasting at least 5 s, with slopes within –10 and 5. These pauses almost always preceded a burst of elongation by either FHOD3S/L-CT WT or K1193. To estimate the elongation rate, the dim region growth was fit to a line. It was confirmed that the elongation rate reduced back to that of profilin-actin alone when the filament intensity increased. The R2 value of these bursts of elongation was all >0.5, but in most cases >0.8.
 
-## Adenoviral generation, purification, and infection
+### Adenoviral generation, purification, and infection
 
 We used HEK 293 cells solely for the production of adenoviral vectors. The HEK 293 cell line was obtained from the lab of Dr. Kohnosuke Mitani at UCLA. Dr. Mitani’s lab was one of the pioneering groups in the development of adenoviral vectors for gene therapy and maintained high standards of quality control for cell culture and maintenance. Because the success of adenoviral vector production heavily depends on the quality of HEK 293 cells, we relied on the robustness of the original cell source. Although we have not performed formal authentication of the cell line since the acquisition, we have strictly followed the protocols established by Dr. Mitani’s lab. This includes using cells with low passage numbers and closely monitoring cell morphology and functionality. The cells are cryopreserved in liquid nitrogen and maintained under controlled conditions.
 
@@ -160,23 +651,23 @@ Crude adenoviruses containing pAV-CMV-{3xHA-FHOD3L GS-FH1}:SV40 pA-CMV-mCherry a
 
 Particle titers of purified viruses were quantified by making three separate dilutions of each virus in 0.1% SDS (Thermo Fisher) and vortexing for 5 min, spinning down 13,000× rpm, 5 min, and then taking the average of the absorbance readings on the Nanophotometer N50-GO (Implen) to quantify particles/ml as per Maizel et al., 1968.
 
-## NRVM seeding, siRNA knockdown, and rescue
+### NRVM seeding, siRNA knockdown, and rescue
 
 NRVMs were isolated from postnatal P1- to P3-day-old Sprague-Dawley rat pups of mixed gender by UCLA Cardiovascular Research Theme Core services. The ethical approval for use was obtained from the Animal Research Committee (ARC) for protocol 2008-126. Eight-well chamber slides (Corning, Catalog No. 354118) were prepared by coating with 10 mg/ml fibronectin (Sigma, Catalog No. F1141) and 20 mg/ml poly-D-lysine hydrobromide (Sigma, Catalog No. P6407) in PBS overnight at 4°C. NRVMs were seeded at 175,000 NRVMs/well in a mixture of 75% DMEM (Thermo Fisher, Catalog No. 11965092), 15% Medium-199 (Thermo Fisher, Catalog No. 11150059) supplemented with 2 mM L-glutamine (Thermo Fisher, Catalog No. A2916801) and 10 mM HEPES (Thermo Fisher, Catalog No. 15630080). For reverse transfection, the cells were treated with siRNA targeting FHOD3 (QIAGEN, Rn_LOC100360334_2 Flexitube siRNA) or AllStars Negative Control siRNA (QIAGEN, 20 nmol), Lipofectamine RNAiMAX transfection reagent (Thermo Fisher, Catalog No. 13778075) and Opti-MEM I Reduced Serum Medium (Thermo Fisher, Catalog No. 31985062) to dilute the siRNA. Media was changed 24 hr later to one containing penicillin/streptomycin (Thermo Fisher, Catalog No. 15140122). NRVMs were infected with an optimal amount of adenovirus (determined experimentally to be particle titer MOI 350 to minimize excessive damage to NRVMs while maintaining sufficient expression) as above 48 hr after seeding, and media containing penicillin/streptomycin was added on top of the PBS+/+ at the end of the infection. Media was changed 24 hr later, and cells were examined 48 hr after infection.
 
-## Gene expression analysis by quantitative reverse-transcriptase PCR
+### Gene expression analysis by quantitative reverse-transcriptase PCR
 
 RNA was extracted from the NRVMs 4 days after reverse transfection of siRNA using the Direct-zol RNA mini prep kit (Zymo Research, Catalog No. R2050). RNA was reverse-transcribed into complementary DNA using the qScript cDNA synthesis kit (Quanta Biosciences, Catalog No. 95047-025). Quantitative reverse-transcriptase PCR was performed using PowerUp SYBR green master mix for qPCR (Applied Biosystems, Catalog No. A25742) on a Lightcycler 480 (Roche). Each qPCR was repeated three times. Forward and reverse primer sequences are as follows: GAPDH forward, CCGCATCTTCTTGTGCAGTG; GAPDH reverse, CGATACGGCCAAATCCGTTC; FHOD3 forward, CAGCCAATCACGGAG; FHOD3 reverse, TGCTGTCCTTGCCCTGA.
 
-## Western blots
+### Western blots
 
 NRVMs were lysed in 100 mM Tris pH 8, 150 mM NaCl, 0.5% Triton-X from eight-well chamber slides (Corning, Catalog No. 354118) after rescue experiments, and samples were vortexed for 1 min before centrifuging at 15,000 rpm, 4°C, for 10 min. The resulting supernatant was boiled in sample loading buffer at 100°C for 10 min and run on an SDS-PAGE gel. The gel was transferred to an Immobilon-FL polyvinylidene fluoride membrane (Millipore, IPFL00010) at 100 V for 90 min on ice. The membrane was blocked in 4% nonfat milk in low-salt TBST (20 mM Tris pH 7.6, 150 mM NaCl, 0.05% Tween-20, 0.01% sodium azide) for 30 min at room temperature. It was incubated, rotating at 4°C overnight, with Fhod3 polyclonal rabbit (Abcam, ab224463) or HA monoclonal rabbit (Cell Signaling Technologies, 3724S) and GAPDH monoclonal mouse (Santa Cruz Biotechnology, sc-365062) diluted 1:1000 in low-salt TBST. Membranes were washed three times for 5 min each the next day in high-salt TBST (20 mM Tris pH 7.6, 500 mM NaCl, 0.05% Tween-20, 0.01% sodium azide) and then incubated for 1 hr at room temperature, shaking, with 800CW goat anti-rabbit IgG secondary antibody (Li-Cor Biosciences, 926-32211) and 680RD goat anti-mouse IgG secondary antibody (Li-Cor Biosciences, 926-68070) diluted 1:10,000 in high-salt TBST. Membranes were washed three times for 10 min, each in high-salt TBST and then imaged on a Li-Cor Odyssey 9120 Infrared Imager (Li-Cor Biosciences).
 
-## In vitro contractility assay
+### In vitro contractility assay
 
 Contractility assessments were performed by utilizing a video-based technique with the UCSF Gladstone-developed MATLAB program MotionGUI (Huebsch et al., 2015). Videos for contractility analysis were acquired using MicroManager software on a Leica SD AF Spinning Disc system using an HC PL Fluotar 10× (0.3 NA) dry objective lens with an ORCA-Flash4.0 LT C11440 camera (Hamamatsu) at 30 fps with live NRVMs incubated at 37°C, 5% CO2 (Tokai Hit). The videos were converted from ome.tif to a tiff stack with Fiji for analysis with MotionGUI. A pixel size of 0.538 μm was obtained from the metadata. Eight-pixel macroblocks were used for all assessments. All parameters of the MotionGUI program not specified here were set to their respective default values. Motion vectors were calculated, and the data were evaluated upon completion. All videos were subjected to the same post-processing procedures to ensure consistency during comparative analysis. Each video sample was post-processed using neighbor-based cleaning with the vector-based cleaning criterion within the program. The threshold for this post-processing method was set to two for all samples and was adequate for improving the signal-to-noise ratio enough to identify peaks clearly corresponding to beating events in most samples.
 
-## IF and image analysis
+### IF and image analysis
 
 For sarcomere integrity analysis, NRVMs were stained before fixation with WGA TMR (Thermo Fisher, Catalog No. W849) for 10 min at 37°C with 5 μg/ml WGA, followed by two PBS washes. NRVMs were then fixed with 4% paraformaldehyde (Fisher Scientific, Catalog No. AC416780010) in PBS for 15 min at 37°C. Cells were washed three times in PBS for 5 min, each at room temperature. Cells were permeabilized and blocked with PBS/0.1% Triton-X/10% Goat Serum (Triton-X: Thermo Fisher, Catalog No. A16046.AP; Goat Serum: Sigma, Catalog No. S26-100ML) for 30 min at 37°C. Cells were incubated with primary antibodies overnight at 4°C. α-Actinin (mouse) primary antibody (Sigma, Catalog No. A7811) was diluted 1:250, and HA-tag (rabbit) primary antibody (Cell Signaling, Catalog No. 3724) was diluted 1:500 in PBS/0.1% Triton-X/5% Goat Serum. Cells were washed three times for 5 min, each with PBS/0.1% Triton-X/5% Goat Serum at room temperature. Incubation with secondary antibodies was for 1 hr at 37°C. Alexa Fluor 488 goat anti-mouse secondary (Thermo Fisher, Catalog No. A-11001) or Alexa Fluor 647 goat anti-rabbit secondary (Thermo Fisher, Catalog No. A-21244) was diluted 1:500 in PBS/0.1% Triton-X/5% Goat Serum. Cells were then washed twice in PBS/0.1% Triton-X/5% Goat Serum for 5 min each, followed by one PBS wash for 5 min before mounting in Vectashield Plus Antifade mounting media (Vector Laboratories, Catalog No. H-1900-10) with 1 μg/ml DAPI (Fisher Scientific, Catalog No. EN62248).
 
@@ -190,7 +681,7 @@ Cells were segmented using CellPose (Stringer et al., 2021). Two-color images of
 
 Sarcomere analysis was performed manually in a single-blind manner (for mock knockdown, mock rescue, wild-type rescue, and the K1193L rescue) using blindrename.pl (https://github.com/davalencia0914/sarcApp_Cellpose_Merge, copy archived at Valencia, 2025) to generate the filenames and a key filename csv file for decoding after analysis. We attempted to blind all other rescue conditions, but they were too easily identified based on expression level and localization differences. Linescans were generated along myofibrils, perpendicular to the Z-lines, to make sarcomere length measurements from Z-line peak to Z-line peak. Z-line lengths were measured by visual inspection of the α-actinin channel and measured on Fiji with the line tool. Three or more consecutive Z-lines, at least 0.70 µm long in a row, were analyzed as sarcomeres.
 
-## Statistical analysis
+### Statistical analysis
 
 To compare two or more groups for the rescue experiments in NRVMs, pair-wise comparisons were performed. In order to reduce the Type 1 error rate stemming from multiple comparisons, Bonferroni correction was applied to obtain a corrected alpha. Whether groups were normally distributed or not was determined by the Shapiro-Wilk test. To compare two normally distributed groups, Student’s two-sample, unpaired t-test was used. If either group was not normally distributed, the nonparametric Mann-Whitney U test was used. The same analysis was applied to analyze run lengths and capping duration from the TIRF seeded elongation assays.
 

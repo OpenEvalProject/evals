@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.35690.001 One manifestation of individualization is a progressively differential response of individuals to the non-shared components of the same environment. Individualization has practical implications in the clinical setting, where subtle differences between patients are often decisive for the success of an intervention, yet there has been no suitable animal model to study its underlying biological mechanisms. Here we show that enriched environment (ENR) can serve as a model of brain individualization. We kept 40 isogenic female C57BL/6JRj mice for 3 months in ENR and compared these mice to an equally sized group of standard-housed control animals, looking at the effects on a wide range of phenotypes in terms of both means and variances. Although ENR influenced multiple parameters and restructured correlation patterns between them, it only increased differences among individuals in traits related to brain and behavior (adult hippocampal neurogenesis, motor cortex thickness, open field and object exploration), in agreement with the hypothesis of a specific activity-dependent development of brain individuality.
+One manifestation of individualization is a progressively differential response of individuals to the non-shared components of the same environment. Individualization has practical implications in the clinical setting, where subtle differences between patients are often decisive for the success of an intervention, yet there has been no suitable animal model to study its underlying biological mechanisms. Here we show that enriched environment (ENR) can serve as a model of brain individualization. We kept 40 isogenic female C57BL/6JRj mice for 3 months in ENR and compared these mice to an equally sized group of standard-housed control animals, looking at the effects on a wide range of phenotypes in terms of both means and variances. Although ENR influenced multiple parameters and restructured correlation patterns between them, it only increased differences among individuals in traits related to brain and behavior (adult hippocampal neurogenesis, motor cortex thickness, open field and object exploration), in agreement with the hypothesis of a specific activity-dependent development of brain individuality.
 
 ## Introduction
 
@@ -38,7 +38,7 @@ To investigate whether long-term environmental enrichment triggers the specific 
 
 ## Results
 
-## ENR reduces mean body size, but does not affect its variance
+### ENR reduces mean body size, but does not affect its variance
 
 To determine the effects of the ENR on gross body morphology, we monitored the body weight of all animals over the 105 days of the study (Figure 2A). At the beginning of the experiment, no differences in weight existed between the two groups, confirming initial similarity between the randomized experimental mice. However, five weeks after the start of the experiment, ENR mice were significantly lighter than mice housed in control cages (CTRL). The difference in body weight remained constant throughout the experiment and indicated, together with the significantly shorter body length in ENR mice (Figure 2B), that housing of mice in ENR reduces body size. By contrast, no differences in brain weights were detected between ENR and CTRL mice (Figure 2C). The groups did not differ in the variances of body length, body weight and brain weight at any measured time point, suggesting that long-term ENR does not stimulate the development of inter-individual differences in gross body morphology.
 
@@ -46,15 +46,25 @@ To determine the effects of the ENR on gross body morphology, we monitored the�
 
 **Figure 2.:** (A) Longitudinal measurement of body weight. Presented are means ± standard deviations. (B) Body length and (C) brain weight were assessed at the end of the experiment. Box and whisker plot: center line, median; plus sign, mean; upper and lower hinges, first and third quartiles; whiskers, highest and lowest values within 1.5 times the interquartile range outside hinges; dots, individual data points. Asterisks indicate significant effects at 5% threshold in the indicated statistical tests. Full information on the statistical tests is available in Supplementary file 2. CTRL, control group; ENR, enriched group.
 
-## ENR increases inter-individual behavioral differences specifically in exploratory behavior
+### ENR increases inter-individual behavioral differences specifically in exploratory behavior
 
 To analyze whether ENR increased inter-individual variability in behavior, all mice were subjected to the open field (OF), novel object recognition (NOR) and rotarod tests (Figure 3A–B). ENR mice traveled longer distances during the first OF trial, but showed less locomotion in the second OF trial (Figure 3C) and throughout the NOR test (Figure 3D). No significant differences were found in the variance of locomotion in any of the OF or NOR trials. In our previous work, we introduced roaming entropy (RE) as a measure of the territorial coverage and exploratory activity of mice in order to introduce a qualitative aspect into activity measurements (Freund et al., 2013; Freund et al., 2015). To investigate the effects of ENR on spatial exploration, we computed RE for all mice in the OF arena (Figure 3E–F). On both days, ENR mice had significantly lower RE than CTRL animals. Moreover, on day 2, ENR mice showed a significantly greater variance in RE, suggesting a higher range of habituation to the OF among ENR mice. Indeed, both ENR and CTRL animals habituated to the OF arena, as indicated by a decrease in RE between the trials (Figure 3G). However, habituation was more pronounced and exhibited higher variance in ENR mice. In the NOR test, ENR mice showed a significantly higher variance in the duration of their exploration of the objects when compared to CTRL mice (Figure 3H), indicating that ENR increases the inter-individual variability in exploratory behavior. Although some individuals among ENR mice explored objects for much longer than any of the control animals, the median of the entire ENR group was not shifted compared to that of the CTRL group. Finally, to examine the effect of ENR on the recognition memory of individual mice, we analyzed the ability to discriminate a new object from an old one in the NOR test. A trend towards a preference for the new object was found only in the ENR mice and not in the CTRL group (Figure 3I).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/35690/elife-35690-fig3-v1.jpg)
+
+**Figure 3.:** (A) Timeline of behavioral testing. (B) Object placement in trials of the novel object recognition (NOR) task. (C) Total distance that control (CTRL, blue) and enriched animals (ENR, yellow) moved in the arena on the two days of open field (OF) testing. (D) Total distance that mice moved during each trial in the NOR test. (E) Representative heatmaps for two mice depicting the probabilities that each mouse was to be found at a specific location in the OF arena. Blue indicates lowest and red highest probabilities, respectively. The corner in which the light source was located is marked with a cross (+). (F) Roaming entropy in the OF arena describes spatial exploration. (G) Habituation to the OF expressed as a difference in roaming entropy between trials. (H) Object exploration in the NOR test. (I) Discrimination index indicating preference for the novel (+1) or the old (−1) object. (J) Duration that mice spent on the rotating rod during the individual trials of the rotarod task. Box and whisker plots, see Figure 2. Asterisks, significant effects at 5% threshold.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35690/elife-35690-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Trial 1 and 2; (B) trial 5. Markings with green tape provide additional spacial clues.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/35690/elife-35690-fig3-figsupp2-v1.jpg)
 
 The performance of ENR mice on the rotarod was superior to that of CTRL mice in all trials (Figure 3J), indicating that ENR stimulates motor coordination and, presumably, fitness. Initially, ENR mice also showed a greater variance in their performance compared to that of CTRL, but while both groups improved in the task, this difference gradually disappeared.
 
 Together, we conclude that ENR promotes the development of inter-individual differences in specific interactions with the environment, but not in pure locomotor activity.
 
-## ENR increases inter-individual variability in the survival of new-born neurons
+### ENR increases inter-individual variability in the survival of new-born neurons
 
 To assess whether the observed behavioral variability is reflected in differences in brain plasticity, we quantified the rates of adult neurogenesis in the dentate gyrus of the hippocampus. To estimate the proliferation of precursor cells, we stained mouse brain sections for the proliferation marker Ki67 (Figure 4A–B), whereas new-born cells that survived initial selection processes were identified by the presence of BrdU, which was injected 3 weeks before the end of the experiment (Figure 4C–E). No differences in the means or variances of the numbers of proliferating cells in the subgranular zone of the dentate gyrus were observed between ENR and CTRL mice (Figure 4F). By contrast, we found a significant increase in the means and variances of the numbers of BrdU-positive cells in animals housed in ENR (Figure 4G), highlighting the specific effect of ENR on the survival of new-born cells. Co-localization of BrdU-positive cells with the neuronal marker NeuN and the astrocytic marker S100β (Figure 4E) showed that the variances in the survival of both neurons and astrocytes were higher in the ENR group than in the CTRL animals (Figure 4H–I). An increase in the total number of cells was, however, only found in the neuronal cell population. These results indicate that ENR increases inter-individual variability in the survival of new-born neurons and astrocytes but not in the proliferation of precursor cells in the dentate gyrus.
 
@@ -62,7 +72,7 @@ To assess whether the observed behavioral variability is reflected in difference
 
 **Figure 4.:** (A, B) Representative images of Ki67 immunostaining, which marks proliferating cells in control (CTRL) and enriched (ENR) mice. (C, D) New-born cells were identified by BrdU immunoreactivity three weeks after the injection of BrdU. (E) The proportions of new-born neurons and astrocytes were determined by co-localization of BrdU (green) with NeuN (blue) and S100β (red), respectively. The image shows a single optical section. The arrowhead highlights a new-born neuron. (F) No difference in the number of proliferating cells can be observed between mice housed under CTRL and ENR conditions. (G–I) ENR mice have significantly higher means and variances in the numbers of new-born BrdU-positive cells (G) and new neurons (H), whereas only the variance of the number of new astrocytes was increased (I). Scale bars are as follows: (A–D) 100 µm; (E), 50 µm; (E inset), 10 µm. Box and whisker plots, see Figure 2. Asterisks indicate significant effects at a 5% threshold.
 
-## ENR does not elicit increases in variances of the hippocampus and cerebral cortex sizes
+### ENR does not elicit increases in variances of the hippocampus and cerebral cortex sizes
 
 ENR has been long known to induce broad changes in brain structure in rodents, such as thickening of the cerebral cortex (Diamond et al., 1966) and increases in the volume of the dentate gyrus (Kempermann et al., 1997). We also showed that the volume of the mossy fibers increases upon environmental stimulation concomitantly with adult neurogenesis in mice (Römer et al., 2011). To further assess whether ENR increases inter-individual variability in brain plasticity beyond adult neurogenesis, we estimated the volumes of the hippocampus and its substructures: the dentate gyrus, infra- and suprapyramidal mossy fiber tracts (IMF and SMF) and the hilus (Figure 5A–D). The volume of the entire hippocampus did not differ between ENR and CTRL mice (Figure 5H), but the volume of the dentate gyrus was significantly increased in ENR mice (Figure 5I). Furthermore, IMF (Figure 5J) and the hilus (Figure 5L), but not SMF (Figure 5K), were significantly larger in ENR animals than in CTRL mice. None of these parameters showed different variances depending on housing conditions. This suggests that ENR differentially influenced various aspects of hippocampal plasticity, while showing that the increased inter-individual variability that was triggered by ENR was specific to adult neurogenesis.
 
@@ -72,7 +82,7 @@ ENR has been long known to induce broad changes in brain structure in rodents, s
 
 Next, we measured the thickness of the entorhinal, cingulate and motor cortex (Figure 5E–G) as enrichment might specifically increase cortex thickness and structure in these areas (Diamond, 2001Diamond et al., 1964, Diamond, 2001). Although we did not detect differences in the thickness of any of these cortices between CTRL and ENR mice (Figure 5M–O), the motor cortex thickness showed a significantly higher variance in the ENR group (Figure 5O).
 
-## ENR reduces organ weights and cholesterol levels, but does not induce metabolic variability
+### ENR reduces organ weights and cholesterol levels, but does not induce metabolic variability
 
 Since ENR reportedly had beneficial effects on metabolism in outbred mice (Wei et al., 2015), we compared the weights of the liver and adrenal glands as organs playing a role in metabolic and hormonal regulation and analyzed basic blood biochemistry. In agreement with lower body weights, ENR animals had smaller adrenal glands and livers (Figure 6A–B). The levels of plasma corticosterone, which is synthesized in the adrenal gland and is used as an indicator of animal stress, did not differ between the groups (Figure 6C). Moreover, significantly lower plasma cholesterol levels (Figure 6D) in ENR mice but no differences in triglyceride and glucose levels were seen when comparing ENR and CTRL mice (Figure 6E–F). No variance differences between the two groups were detected in any of the measured metabolic parameters.
 
@@ -80,13 +90,13 @@ Since ENR reportedly had beneficial effects on metabolism in outbred mice (Wei e
 
 **Figure 6.:** (A, B) Environmental enrichment (ENR) mice have adrenal gland (A), and liver (B) weights that are lower than those of control (CTRL) animals. (C) Housing does not affect acute corticosterone levels. (D–F) Effects of ENR on plasma biomarkers: cholesterol (D), triglycerides (E) and glucose (F). Box and whisker plots, see Figure 2. Asterisks indicate significant effects at a 5% threshold.
 
-## ENR restructures relationships between phenotypes
+### ENR restructures relationships between phenotypes
 
 To analyze the impact of ENR on relationships between phenotypes, we calculated correlations separately for CTRL and ENR mice (Figure 7). Strong correlation between two traits would point towards shared regulatory mechanisms in the control of such parameters. We observed few significant correlations in either housing condition, which suggests that the majority of the traits were independent of each other. In both animal groups, we found significant positive correlations of roaming entropy and object exploration between trials of the OF and NOR tests, respectively (Figure 7A). These correlations indicate that the recorded behaviors were reliable and characteristic for each individual. ENR, however, weakened correlations between trials in NOR, as well as the negative association of object exploration to OF habituation, hinting towards more specific responses of animals to the environment (e.g. exposure to novel objects or their placement). Housing in ENR led to remodeling of the associations between the brain structures and behavior (Figure 7A). ENR uncoupled the negative correlations of object exploration in NOR test and of rotarod performance to the volume of the hippocampus. Similarly, habituation to the OF arena was negatively associated with the size of the IMF and positively correlated with the motor cortex thickness in CTRL mice, but not ENR mice. Hippocampal neurogenesis did not show significant correlation with any of the assayed phenotypes.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/35690/elife-35690-fig7-v1.jpg)
 
-**Figure 7.:** Heat maps show Spearman’s rank correlation coefficient between selected behavioral, morphometric and neurogenic (A) or metabolic traits (B) within the control (CTRL, left panels) and the enriched (ENR, right panels) groups. Rotarod performance was summarized as a mean of data from all individual trials for each animal. Phenotypes were ordered on the basis of hierarchical clustering in the ENR group. Significant correlations (p<0.05) are marked with asterisks. NOR, novel object recognition test; OF, open field test; T1–5, trials 1–5 of the NOR and OF tests; RE, roaming entropy; DG, dentate gyrus; DI, discrimination index. Source files listing the rho values are available in Figure 7—source data 1 (CTRL) and in Figure 7—source data 2 (ENR).10.7554/eLife.35690.012Figure 7—source data 1.Spearman’s correlation coefficients for correlations between phenotypes in CTRL mice. A tab-delimited text file.10.7554/eLife.35690.013Figure 7—source data 2.Spearman’s correlation coefficients for correlations between phenotypes in ENR mice. A tab-delimited text file.
+**Figure 7.:** Heat maps show Spearman’s rank correlation coefficient between selected behavioral, morphometric and neurogenic (A) or metabolic traits (B) within the control (CTRL, left panels) and the enriched (ENR, right panels) groups. Rotarod performance was summarized as a mean of data from all individual trials for each animal. Phenotypes were ordered on the basis of hierarchical clustering in the ENR group. Significant correlations (p<0.05) are marked with asterisks. NOR, novel object recognition test; OF, open field test; T1–5, trials 1–5 of the NOR and OF tests; RE, roaming entropy; DG, dentate gyrus; DI, discrimination index. Source files listing the rho values are available in Figure 7—source data 1 (CTRL) and in Figure 7—source data 2 (ENR).
 
 Metabolic phenotypes, namely plasma glucose, cholesterol and triglycerides were positively correlated in both housing conditions, but these relationships were weakened by ENR (Figure 7B). As expected, plasma triglycerides correlated positively to the liver size in both groups. Epidemiological studies in humans suggest that brain and cognition are linked to metabolism (Kapogiannis and Mattson, 2011; Panza et al., 2012). We observed few associations between the measured phenotypes in our mice (Figure 7B). ENR changed the sign of the correlations between object exploration in NOR test and plasma cholesterol from positive to negative. It also promoted negative correlation between plasma glucose and rotarod performance, suggesting that the fitness acquired by ENR mice has a metabolic component.
 
@@ -122,39 +132,181 @@ In conclusion, ENR does not generally increase variability across all domains. E
 
 ## Materials and methods
 
-## Animal husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6JRj</td>
+      <td>Janvier Labs</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (rabbit polyclonal)</td>
+      <td>Novocastra</td>
+      <td>Novocastra: NCL-Ki67p; RRID:AB_442102</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BrdU (rat monoclonal)</td>
+      <td>AbD Serotec</td>
+      <td>AbD Serotec: OBT0030; RRID:AB_609568</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-synaptoporin (rabbit polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Synaptic Systems:102002; RRID:AB_887841</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NeuN (mouse monoclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Merck: MAB377; RRID:AB_2298772</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-S100beta (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam: ab52642; RRID:AB_882426</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotin-conjugated secondary (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-, Cy5-, Cy3- secondaries (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vectastain ABC Elite kit</td>
+      <td>Vector Laboratories</td>
+      <td>Vector: PK-6100; RRID:AB_2336819</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Amplex Red Glucose/Glucose Oxidase Assay</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: A22189</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Amplex Red Cholesterol Assay</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: A12216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Triglyceride Assay</td>
+      <td>Abcam</td>
+      <td>Abcam: ab65336</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Corticosterone ELISA kit</td>
+      <td>Enzo</td>
+      <td>Enzo: ADI-901–097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Bromo-2'-deoxyuridine</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma: B5002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Stereoinvestigator7 software</td>
+      <td>MBF Bioscience</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ethovision</td>
+      <td>Noldus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN blue edition</td>
+      <td>Zeiss</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal husbandry
 
 80 female C57BL/6JRj mice were purchased from Janvier at the age of 4 weeks and housed in standard polycarbonate cages (Type III, Tecniplast) in groups of five until the start of the experiment (Figure 1A). At the age of 5 weeks, 40 mice were randomly selected and transferred into the enriched environment, where they stayed for three months (no restricted randomization). The number of animals used in each group was decided on the basis of the sample size used in the initial study conducted by Freund et al., 2013, which the present study builds on. The enriched environment consisted of four quadratic polycarbonate cages (0.74 × 0.74 m) that were assembled in a row and connected by two plastic tubes each. In total, the enriched environment covered an area of 2.19 m2 (Figure 1B). Food and water were provided in every compartment of the cage. To provide sensory stimulation, each compartment of the cage was equipped with plastic toys, tunnels and hideouts, which were cleaned and rearranged once each week. The bedding material was replaced on a weekly basis. Once a month, the entire enclosure was cleaned. Control animals were housed for the same period of time in standard polycarbonate cages (36.5 × 20.7×14 cm) connected to an individually ventilated cage system in groups of five. Control and enriched animals were receiving the same fortified chow (#V1534; Sniff, Germany) with 9% of energy from fat, 24% from protein and 67% from carbohydrates. All mice were maintained on a 12 hr light/12 hr dark cycle with humidity maintained at 55 ± 10% and food and water provided freely. The room was furnished with metal shelves containing laboratory equipment. Three weeks before sacrifice, the mice were injected intraperitoneally with bromodeoxyuridine (BrdU; 50 mg/kg body weight; dissolved in 0.9% NaCl). Injections were performed once per day for three consecutive days. All experiments were conducted in accordance with the applicable European and national regulations (Tierschutzgesetz) and were approved by the responsible authority (Landesdirektion Sachsen).
 
-## Behavioral tests
+### Behavioral tests
 
 Before starting the behavioral experiments, every mouse was visibly marked at the tail. To simplify handling, during the morning of every test session enriched animals were placed into standard cages in groups of five, which remained consistent throughout testing, and returned into the enriched environment cage in the evening. Mice were tested in the same order in all behavioral tasks. The sequence of the behavioral experiments is shown in Figure 3A.
 
-## Rotarod
+### Rotarod
 
 Mice were assessed for locomotor abilities using an Economex Rotarod from Columbus Instruments. The rotating cylinder started with a speed of 4 rpm and accelerated by 0.1 rpm. At a final speed of 34 rpm and a maximum time of five minutes, the test was stopped manually. The trial was completed when an animal fell off or reached the maximum duration. The mice were trained on three consecutive days with three trials per day. The rotarod was cleaned after every session.
 
-## Open field test
+### Open field test
 
-The open field (OF) enclosure consisted of a 120 × 120 cm square apparatus subdivided into four identical arenas of 60 × 60 cm, allowing for the simultaneous testing of four mice in the apparatus. The 40 cm high white plywood walls were marked with a green tape on the intersections to provide additional spatial clues. The only light source in the room, a 100 watts light bulb, was installed 1.5 m above the intersection of the middle walls, next to the camera (Logitech). Paths were recorded using EthoVision software (Noldus). Mice were placed in the middle of the empty arena and were allowed to explore the arena freely for 5 min in each trial. A total of two trials were performed on two consecutive days. Roaming entropy (RE), a measure of territorial coverage, was calculated according to Freund et al., 2013Freund et al., 2013. Each arena was divided into 10 × 10 subfields. The probability pi of a mouse being in a subfield i was estimated as a proportion of trial time spent in that subfield. Shannon entropy of the roaming distribution was then calculated as:RE=-∑i=1k(pilog⁡pi)/log⁡kwhere k is the number of subfields in the arena (k = 100). Dividing the entropy by the factor log(k) scales the RE to the range from zero to one. RE is minimal for the mice that stay in one place and maximal for the mice that spent equal amount of time in each subfield of the arena. Data from eight CTRL animals were lost in the second trial.
+The open field (OF) enclosure consisted of a 120 × 120 cm square apparatus subdivided into four identical arenas of 60 × 60 cm, allowing for the simultaneous testing of four mice in the apparatus. The 40 cm high white plywood walls were marked with a green tape on the intersections to provide additional spatial clues. The only light source in the room, a 100 watts light bulb, was installed 1.5 m above the intersection of the middle walls, next to the camera (Logitech). Paths were recorded using EthoVision software (Noldus). Mice were placed in the middle of the empty arena and were allowed to explore the arena freely for 5 min in each trial. A total of two trials were performed on two consecutive days. Roaming entropy (RE), a measure of territorial coverage, was calculated according to Freund et al., 2013Freund et al., 2013. Each arena was divided into 10 × 10 subfields. The probability pi of a mouse being in a subfield i was estimated as a proportion of trial time spent in that subfield. Shannon entropy of the roaming distribution was then calculated as:
 
-## Novel object recognition test
+$$
+RE=-\sumi=1k(p_{i}log⁡p_{i})/log⁡k
+$$
+
+where k is the number of subfields in the arena (k = 100). Dividing the entropy by the factor log(k) scales the RE to the range from zero to one. RE is minimal for the mice that stay in one place and maximal for the mice that spent equal amount of time in each subfield of the arena. Data from eight CTRL animals were lost in the second trial.
+
+### Novel object recognition test
 
 The two OF trials were considered to serve as habituation for the NOR task (Figure 3A). For this task, the same arenas were equipped with two of three different objects: object A was a 1.5 cm high blue cylinder with a diameter of 3.5 cm, object B was a black box of 8.5 × 9.5 × 2 cm, and object C was 4.5 cm long and transparent with a more complex geometric shape (Figure 3—figure supplement 1). All objects were made of plastic. For object placement in subsequent trials, see Figure 3B. On day 1, following the OF trial, mice were presented with objects A and B. On day 2, the animals were first exposed to the same objects and then in the following trial object A was replaced with object C. The same combination of objects was presented on day 3, followed by a trial in which object B was moved into the adjacent quarter of the arena. Each trial lasted 2 min. Discrimination index was calculated for trial 3 on the basis of the exploration time for the new and old object as follows: DI = (new object – old object)/(new object + old object), and ranged from −1 (preference for the old object) to 1 (preference for the new object), while 0 indicated no preference (Miyauchi et al., 2016). Eleven ENR and three CTRL mice that did not explore object A in any of the first two trials or that did not explore any object in trial 3 were excluded from the calculation of DI.
 
-## Tissue preparation
+### Tissue preparation
 
 Two days after the last behavioral experiment was performed, the mice were deeply anesthetized with a mixture of ketamine and xylazine and transcardially perfused with 0.9% NaCl. Directly after the perfusion, the liver, heart and adrenal glands were harvested and weighed. Brains were removed from the skull and postfixed in 4% paraformaldehyde overnight at 4°C and equilibrated with 30% sucrose in phosphate buffered saline (PBS). For immunohistochemistry, brains were cut into 40 µm coronal sections using a sliding microtome (Leica, SM2000R) and stored at 4°C in cryoprotectant solution (25% ethyleneglycol, 25% glycerol in 0.1 M phosphate buffer, pH 7.4).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 For detection of BrdU-, Ki67- and synaptoporin-positive cells, immunohistochemistry was performed using the peroxidase method as previously described (Steiner et al., 2008). Briefly, free-floating sections were incubated in 0.6% H2O2 for 30 min to inhibit endogenous peroxidase activity. After washing, non-specific antibody-binding sites were blocked using 10% donkey serum and 0.2% Triton-X100 in Tris buffered saline (TBS) for 1 hr at room temperature. For BrdU detection, prior to blocking, sections were incubated in pre-warmed 2.5 M HCl for 30 min at 37°C, followed by extensive washes. Primary antibodies were applied overnight at 4°C as follows: monoclonal rat anti-BrdU (1:500, Serotec), rabbit anti-Ki67 (Novocastra, 1:500), and rabbit anti-Synaptoporin (Synaptic Systems, 1:500). Sections were incubated with biotinylated secondary antibodies for 2 hr at room temperature (1:500, Dianova). Primary and secondary antibodies were diluted in TBS supplemented with 3% donkey serum and 0.2% Triton-X100. Detection was performed using the Vectastain ABC-Elite reagent (9 μg/ml of each component, Vector Laboratories, LINARIS) with diaminobenzidine (0.075 mg/ml; Sigma) and 0.04% nickel chloride as a chromogen. All washing steps were performed in TBS. BrdU- and Ki67-stained sections were mounted onto glass slides, cleared with Neo-Clear (Millipore) and cover-slipped using Neo-Mount (Millipore). BrdU- and Ki67-positive cells were counted, by applying the simplified version of the optical fractionator principle as previously described (Kempermann et al., 1997) on every sixth section along the entire rostro-caudal axis of the dentate gyrus, using a brightfield microscope (Leica DM 750). Synaptoporin-stained sections underwent a Nissl-staining before mounting them with Entellan (Merck). To prepare sections for Nissl staining, they were incubated for 20 min in each of the following solutions: staining buffer (4% sodium acetate, 0.96% acetic acid), followed by permeabilization solution (75% ethanol, 0.025% Triton-X100) and staining buffer. Staining solution (0.1% cresyl violet in staining buffer) was applied for 20 min followed by differentiation of sections in 95% ethanol for 30 s and dehydration with isopropanol and xylene for 10 min each.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Immunofluorescent staining was performed for co-labeling of BrdU-positive cells with NeuN and S100β as described (Steiner et al., 2008). Briefly, sections were treated with 2 M HCl, washed extensively with PBS and blocked in PBS supplemented with 10% donkey serum and 0.2% Triton-X100 for 1 hr at room temperature, followed by incubation with primary antibodies overnight at 4°C (rat anti-BrdU 1:500, Serotec; mouse anti-NeuN 1:100, Merck Millipore; and rabbit anti-S100β 1:200, Abcam). Secondary antibodies were incubated for 4 hr at room temperature (anti-rat Alexa 488 1:500; anti-mouse Cy5 1:500; and anti-rabbit Cy3 1:500; all from Jackson ImmunoResearch). Nuclei were counterstained using 4′,6-diamidino-2-phenylindole (DAPI; 3.3 µg/ml) for 10 min. All washing steps were performed in PBS. Sections were mounted onto glass slides and cover-slipped using Aqua-Poly/Mount (Polysciences, Inc.). Imaging was performed with the ZEISS Apotome and the Software AxioVision software with optical sectioning mode. To determine total numbers of new-born neurons and astrocytes, 100 randomly selected BrdU immuno-positive cells along the rostro-caudal axis of the dentate gyrus were investigated for co-expression with NeuN or S100β. The final numbers of surviving new neurons and astrocytes were obtained by multiplying the total number of BrdU-positive cells (as determined by peroxidase-based immunohistochemistry) by the ratio of NeuN/BrdU-positive cells and S100β/BrdU-positive cells.
 
-## Brain morphometry and volumetry
+### Brain morphometry and volumetry
 
 The mossy fiber (MF) projections are characterized by a high content of the presynaptic vesicle protein synaptoporin (Krebs et al., 2011; Singec et al., 2002), therefore the volumes of the MF projections were estimated on sections immunolabeled against synaptoporin and counterstained with Nissl for a better distinction between neuronal cell layers. Volumetric analysis was performed on every sixth section with a semiautomated morphometric system consisting of a CCD camera (Hitachi) connected to a light microscope (Leica DM-RXE) using a 10x objective and the Stereoinvestigator 7 software (MBF Bioscience). Structures were overlaid with the Cavalieri estimator probe grid of 25 µm and every grid point belonging to the particular structure of interest was selected. Volume estimates were calculated in the software taking into account the sampling interval (240 µm) and the section thickness (40 µm).
 
@@ -162,10 +314,10 @@ For the analysis of the cortex thickness, the areas of motor, entorhinal and cin
 
 Sections from several animals had to be excluded because of insufficient staining quality or damage to the tissue in the respective areas: hippocampus volumetry, 1 CTRL, 1 ENR mouse; motor cortex, 2 CTRL, 2 ENR mice; entorhinal cortex, 1 CTRL, 2 ENR mice; cingulate cortex, 3 CTRL mice.
 
-## Analysis of blood samples
+### Analysis of blood samples
 
 Blood was collected into EDTA-coated tubes (Sarstedt) from the abdominal cavity during the perfusion immediately after the right ventricle was opened. Blood samples were incubated for 1 to 2 hr at room temperature, and centrifuged at 2000 × g for 15 min at 4°C. Plasma was centrifuged a second time and stored at −80°C. Plasma samples were assayed for glucose (Amplex red glucose/glucose oxidase assay kit, Invitrogen), cholesterol (Amplex red cholesterol assay kit, Invitrogen), triglycerides (Triglycerides colorimetric quantification kit, Abcam) and corticosterone (Corticosterone ELISA kit, Enzo) following the manufacturers’ instructions. Log-logistic concentration curves were calculated from standards in R using the drm function from the drc package (Ritz et al., 2015). Corticosterone and triglyceride measures were log-transformed to normality.
 
-## Statistics
+### Statistics
 
 All experiments were carried out with the experimenter blind to the experimental group. The data from this study have been deposited at Dryad (Körholz et al., 2018). Statistical analyses were carried out using the statistical software R (R Core Team, 2014). Data were tested for normality using the Shapiro-Wilk-test. For normally distributed measures, we used Welch’s t-test to compare means and F-test to test for equality of variance between groups. For repeated measures (longitudinal data), a linear mixed regression was performed using the lmer function from the lme4 package (Bates et al., 2015), and p-values were obtained by the likelihood ratio test of the full model against the model without the analyzed effects. For non-normal data, we performed the Wilcoxon rank sum test using the function wilcox.test as a non-parametric equivalent for the t-test, or the Brown-Forsythe test using the leveneTest function from the car package with the parameter center set to median as a more robust form of Levene’s test to compare the variances between groups. Longitudinal non-normal or heteroscedastic data were analyzed using a rank-based non-parametric test using the nparLD function from the nparLD package, which reports a Wald-type test statistic for each of the effects and their interactions (Noguchi et al., 2012). All tests were two-tailed and differences were considered to be statistically significant at a p<0.05. Data were visualized using the ggplot2 package (Wickham, 2011). In the box-whisker plots, center line and plus sign mark the median and mean, respectively. Upper and lower hinges indicate first and third quartiles. The upper whisker extends from the hinge to the largest value no more than 1.5 times the interquartile range (IQR, a distance between the first and third quartiles); the lower whisker extends from the hinge to the smallest value at most 1.5 times IQR. Full results of statistical tests are available in Supplementary file 2.

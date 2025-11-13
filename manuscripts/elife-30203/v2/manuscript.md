@@ -33,7 +33,7 @@
 
 ## Abstract
 
-10.7554/eLife.30203.001 Phosphatidylinositol-4,5-bisphosphate [PI(4,5)P 2 ] is essential for exocytosis. Classical ways of manipulating PI(4,5)P 2 levels are slower than its metabolism, making it difficult to distinguish effects of PI(4,5)P 2 from those of its metabolites. We developed a membrane-permeant, photoactivatable PI(4,5)P 2 , which is loaded into cells in an inactive form and activated by light, allowing sub-second increases in PI(4,5)P 2 levels. By combining this compound with electrophysiological measurements in mouse adrenal chromaffin cells, we show that PI(4,5)P 2 uncaging potentiates exocytosis and identify synaptotagmin-1 (the Ca 2+ sensor for exocytosis) and Munc13-2 (a vesicle priming protein) as the relevant effector proteins. PI(4,5)P 2 activation of exocytosis did not depend on the PI(4,5)P 2 -binding CAPS-proteins, suggesting that PI(4,5)P 2 uncaging may bypass CAPS-function. Finally, PI(4,5)P 2 uncaging triggered the rapid fusion of a subset of readily-releasable vesicles, revealing a rapid role of PI(4,5)P 2 in fusion triggering. Thus, optical uncaging of signaling lipids can uncover their rapid effects on cellular processes and identify lipid effectors.
+Phosphatidylinositol-4,5-bisphosphate [PI(4,5)P2] is essential for exocytosis. Classical ways of manipulating PI(4,5)P2 levels are slower than its metabolism, making it difficult to distinguish effects of PI(4,5)P2 from those of its metabolites. We developed a membrane-permeant, photoactivatable PI(4,5)P2, which is loaded into cells in an inactive form and activated by light, allowing sub-second increases in PI(4,5)P2 levels. By combining this compound with electrophysiological measurements in mouse adrenal chromaffin cells, we show that PI(4,5)P2 uncaging potentiates exocytosis and identify synaptotagmin-1 (the Ca2+ sensor for exocytosis) and Munc13-2 (a vesicle priming protein) as the relevant effector proteins. PI(4,5)P2 activation of exocytosis did not depend on the PI(4,5)P2-binding CAPS-proteins, suggesting that PI(4,5)P2 uncaging may bypass CAPS-function. Finally, PI(4,5)P2 uncaging triggered the rapid fusion of a subset of readily-releasable vesicles, revealing a rapid role of PI(4,5)P2 in fusion triggering. Thus, optical uncaging of signaling lipids can uncover their rapid effects on cellular processes and identify lipid effectors.
 
 ## Introduction
 
@@ -53,9 +53,17 @@ To achieve fast elevation of PI(4,5)P2 levels on the relevant timescale for exo
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig1-v2.jpg)
 
-**Figure 1.:** 2 (cg-PI(4,5)P2).(a) Synthesis of PI(4,5)P2 derivatives 1a,b and 2a,b. Reagents and conditions: (a) CH2Cl2:HCO2H 4:1, room temperature (rt), 3 hr, 88%; (b) (FmO)2P-NiPr27, 1H-tetrazole, CH2Cl2, rt, 1 hr, then AcO2H, −80°C-rt, 1 hr, 83% over two steps; (c) (Coum)(FmO)P-NiPr28, 1H-tetrazole, CH2Cl2, rt, 1 hr, then AcO2H, −80°C-rt, 1 hr; (d) CH2Cl2:HCO2H 1:19, rt, 6 hr; (e) Pr-C(OMe)3, CH2Cl2, JandaJel pyridinium trifluoroacetate, rt, 23 hr, 38% based on 3. For 1a,b: (f) (dioctanoylglycerol)(OFm)P-NiPr211, 1H-tetrazole, CH2Cl2, rt, 1 hr, then AcO2H, −80°C-rt, 1 hr, 67% over two steps; (g) CH2Cl2, EtNMe2, rt, 30 min; (h) acetoxymethyl bromide, N,N-diisopropylethylamine, MeCN, rt, 22 hr, 65% over two steps. For 2a,b: f) (stearoyl-arachidonylglycerol)(OFm)P-NiPr214, 1H-tetrazole, CH2Cl2, rt, 1 hr, then AcO2H, −80°C-rt, 1 hr, 89% over two steps; (g) CH2Cl2, EtNMe2, rt, 30 min; (h) acetoxymethyl bromide, N,N-diisopropylethylamine, MeCN, rt, 22 hr, 43% over two steps. (b) Structure of the caged, membrane-permeant PI(4,5)P2 derivative 2b. (c) Structure of the de-esterified and uncaged, predominant naturally occurring PI(4,5)P2 variant. (left panel) Ac: acetyl; AM: acetoxymethyl; Bt: butyryl; Coum: 7-diethylamino-4-methyl-2-oxo-2H-chromenyl; Fm: 9-fluorenylmethyl.
+**Figure 1.:** (a) Synthesis of PI(4,5)P2 derivatives 1a,b and 2a,b. Reagents and conditions: (a) CH2Cl2:HCO2H 4:1, room temperature (rt), 3 hr, 88%; (b) (FmO)2P-NiPr27, 1H-tetrazole, CH2Cl2, rt, 1 hr, then AcO2H, −80°C-rt, 1 hr, 83% over two steps; (c) (Coum)(FmO)P-NiPr28, 1H-tetrazole, CH2Cl2, rt, 1 hr, then AcO2H, −80°C-rt, 1 hr; (d) CH2Cl2:HCO2H 1:19, rt, 6 hr; (e) Pr-C(OMe)3, CH2Cl2, JandaJel pyridinium trifluoroacetate, rt, 23 hr, 38% based on 3. For 1a,b: (f) (dioctanoylglycerol)(OFm)P-NiPr211, 1H-tetrazole, CH2Cl2, rt, 1 hr, then AcO2H, −80°C-rt, 1 hr, 67% over two steps; (g) CH2Cl2, EtNMe2, rt, 30 min; (h) acetoxymethyl bromide, N,N-diisopropylethylamine, MeCN, rt, 22 hr, 65% over two steps. For 2a,b: f) (stearoyl-arachidonylglycerol)(OFm)P-NiPr214, 1H-tetrazole, CH2Cl2, rt, 1 hr, then AcO2H, −80°C-rt, 1 hr, 89% over two steps; (g) CH2Cl2, EtNMe2, rt, 30 min; (h) acetoxymethyl bromide, N,N-diisopropylethylamine, MeCN, rt, 22 hr, 43% over two steps. (b) Structure of the caged, membrane-permeant PI(4,5)P2 derivative 2b. (c) Structure of the de-esterified and uncaged, predominant naturally occurring PI(4,5)P2 variant. (left panel) Ac: acetyl; AM: acetoxymethyl; Bt: butyryl; Coum: 7-diethylamino-4-methyl-2-oxo-2H-chromenyl; Fm: 9-fluorenylmethyl.
 
 We first validated that UV uncaging activated lipid-protein interactions with known PI(4,5)P2 binding domains. For this, we directly diluted our compound in an imaging buffer (to a final concentration of 20 µM) and made use of the fact that if the solution was not heavily mixed by vortexing, some of the lipid formed micelles clearly visible on the bottom of the coverslip in the light microscope. The solution furthermore contained a reconstituted fusion protein of the PI(4,5)P2-binding PH domain of PLC-δ1 linked to EGFP. Illumination in the TIRF field was used to limit light excitation to the surface of the glass coverslip. When EGFP was excited, the presence of PH-EGFP was visible as background in the solution of the TIRF field and some of the PH-EGFP was enriched on the micelles. Following UV-uncaging with a 405 nm laser in the TIRF field, the EGFP signal at these positions was greatly increased, indicative of PH-EGFP recruitment to the micelles from the surrounding solution (Figure 2a). To confirm that the micelles were indeed composed of cg-PI(4,5)P2, we investigated the images during the irradiation with 405 nm light, which revealed their fluorescence, confirming the presence of the coumarin group (Figure 2a). These results demonstrate that UV-cleavage of the coumarin cage activates the compound for interactions with proteins bearing PI(4,5)P2 binding motifs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig2-v2.jpg)
+
+**Figure 2.:** (a) Uncaging of cg-PI(4,5)P2 micelles on a glass coverslip results in the relocation of a high affinity PI(4,5)P2 sensor, PLCδ1-PH-EGFP, to micelles following UV light exposure, as seen by a local increase in 488 nm excited fluorescence using TIRF microscopy. The two images on the left show the EGFP fluorescence before and after UV uncaging (note the background fluorescence due to soluble PLCδ1-PH-EGFP). The region within the white square is one example of an analyzed micelle. Magnified views are shown on the right before (EGFP fluorescence), during (showing coumarin/cg-PI(4,5)P2-fluorescence) and after (EGFP fluorescence) UV (405 nm) light in the TIRF field. The quantification shows the analysis of the fluorescence of all 10 micelles seen in this image frame. (b) HEK cells were either loaded for 30 min at 37°C with 20 µM of cg-PI(4,5)P2 (+cg-PI(4,5)P2, top line), or not loaded (No cg-PI(4,5)P2, bottom line). All cells were treated with the vehicle DMSO (0.2%), Pluronic (0.02%), CellMask Deep Red plasma membrane stain and imaged on a spinning disc confocal microscope. Fluorescence line profiles were collected to investigate cellular uptake of cg-PI(4,5)P2. Profiles were aligned to the local intensity maxima of the CellMask fluorescence indicating the position of the plasma membrane and revealed intracellular coumarin/cg-PI(4,5)P2 (compare dark blue profiles with and without cg-PI(4,5)P2). After cells were exposed to UV (405 nm) illuminations, the intensity distribution of the coumarin fluorescence was altered (light blue profiles) and intensity at the position of the plasma membrane significantly reduced (bar graph in top line), indicating PI(4,5)P2 uncaging. (c) COS-7 cells expressing PLCδ1-PH-EGFP (top left panel) and a plasma membrane targeted, m-Cherry tagged inositol polyphosphate 5-phosphatase (mCh-INPP5E) (bottom left panel) were either loaded for 30 min at 37°C with 20 µM cg-PI(4,5)P2 (+cg-PI(4,5)P2) or not loaded (No cg-PI(4,5)P2) and imaged on a TIRF microscope. All cells were treated with the vehicle DMSO (0.2%) and Pluronic (0.02%). Center panel: average EGFP fluorescence of ROIs at the plasma membrane (example shown in the images on the left) imaged at 1 Hz in the TIRF field in both groups (+cg-PI(4,5)P2: green, No cg-PI(4,5)P2: black). Between the 10th and the 11th frame, UV-uncaging was performed. The image acquired during the UV-frame (showing coumarin/cg-PI(4,5)P2-fluorescence) is shown as an insert. Right panel: the fluorescence change following uncaging was calculated by dividing the per-ROI fluorescence values in the 11th frame by those in the 10th frame. In cells loaded with cg-PI(4,5)P2, PLCδ1-PH-EGFP fluorescence increased in the TIRF field after UV-uncaging. (d) tsA-201 cells overexpressing M1 muscarinic receptors and PLCδ1-PH-RFP were imaged on a laser scanning confocal microscope. Due to the high affinity of the probe, endogenous PI(4,5)P2 levels are already sufficient to localize the probe to the plasma membrane at the beginning of the experiment (top line). Application of 1 µM of the M1 receptor agonist oxotremorine-M (Oxo-M) resulted in the translocation of the sensor to the cell center indicative of plasmalemmal PI(4,5)P2 breakdown in cells loaded with cg-PI(4,5)P2, but not subjected to UV-uncaging (no uncaging, bottom left image, black bar graph). This response was nearly abolished in cells subjected to UV light (PI(4,5)P2 uncaging, bottom right image and red bar graph). F/F0 signifies the ratio of fluorescence values within the cytosol at the end of the experiment (F) (21–22 s after the uncaging and 20 s after the application of oxotremorine-M) by the fluorescence at the beginning of the experiment (F0). See Figure 2—figure supplement 1 for further details. Scale bars 5 µm. All values are mean ±SEM. *p<0.05; **p<0.01; ***p<0.001. In panels a and b, paired t-tests were used, in panels c and d, unpaired two-tailed t-tests were performed. Number of cells (n): panel b: n = 14 cells (+cg-PI(4,5)P2), n = 5 cells (No cg-PI(4,5)P2). Panel c: n = 15 cells (+cg-PI(4,5)P2), n = 15 cells (No cg-PI(4,5)P2). Panel d: n = 6 cells (no uncaging), n = 12 cells (PI(4,5)P2 uncaging).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Confocal imaging of elevated PI(4,5)P2 levels following uncaging of 1a,b. These tsA-201 cells overexpress M1 receptors and the PI(4,5)P2-fluorescence sensor PLCδ1-PH-RFP. Due to the high affinity of the probe, endogenous PI(4,5)P2 levels are already sufficient to localize the probe to the plasma membrane at the beginning of the experiment. Application of 1 μM of the M1 receptor agonist oxotremorine-M resulted in the translocation of the sensor to the cell center indicative of PI(4,5)P2 breakdown in cells loaded with 1a,b, but not subjected to UV-uncaging. The translocation was prevented in cells where 1a,b was uncaged by a UV-laser. (b) UV-uncaging does not interfere with PI(4,5)P2 metabolism. The M1 receptor activates PLC which metabolizes PI(4,5)P2 to DAG. To ensure that uncaging did not interfere with this metabolism we monitored DAG levels by the DAG sensor PKD-C1-GFP DAG. M1 receptor activation led to translocation of the DAG sensor to the plasma membrane indicative of DAG production (green) while PI(4,5)P2 levels remained high enough to maintain the PI(4,5)P2 sensor at the plasma membrane (red). (c) Quantification of the experiments depicted in (a) and (b). F/F0 signifies the ratio of fluorescence values within the cytosol at the end of the experiment (F) (21–22 s after the uncaging and 20 s after the application of oxotremorine-M) by the fluorescence at the beginning of the experiment (F0). Images in (a) and first two columns of the bar graph in (c) are reproduced from Figure 2d. Number of cells: No PI(4,5)P2-uncaging, n = 6; PI(4,5)P2-uncaging, n = 12; PI(4,5)P2-uncaging (+DAG probe), n = 7 *p<0.05.
 
 To verify that the protective groups synthesized on our compound enabled cellular uptake, we investigated its cellular distribution making use of the intrinsic fluorescence of the coumarin cage. Human Embryonic Kidney (HEK) cells were first loaded with a membrane labelling dye excitable with infrared light (CellMask). Cells were then loaded with caged (cg) PI(4,5)P2 by incubation for 30 min at 37°C with 20 µM of our compound (2a,b, diluted from a 20 mM DMSO-stock) in the presence of 0.02% Pluronic (prepared with heavy vortexing) to facilitate membrane passage. Cells receiving identical treatment but without the compound served as controls. To assess the localization of cg-PI(4,5)P2 quantitatively, cells were imaged on a spinning disc confocal microscope and fluorescence line profiles obtained from many cells that bordered open extracellular space (as opposed to ones in contact with other HEK cells). The line profiles were then aligned to local fluorescence maxima of the CellMask signal indicating the position of the plasma membrane. Subsequently, line profiles from all cells were averaged (Figure 2b). We saw that average coumarin fluorescence increased inside the plasma membrane, demonstrating cellular uptake. Moreover, coumarin fluorescence was clearly observed at the position of the plasma membrane; however, it was also present inside the cell, possibly on endosomes. This is not surprising, as the coumarin group is expected (and, indeed, intended) to block interactions with PI(4,5)P2-binding proteins. This includes those proteins that usually establish a strict pattern of phosphoinositide composition on distinct cellular organelles. Therefore, it is an unavoidable side effect of using caged lipids that their distribution will be broader than the native lipid. Inevitably, visualization of the coumarin fluorescence by its excitation leads to its uncaging. This could be shown by continuous imaging which significantly reduced the coumarin fluorescence at the location of the plasma membrane (bar graph Figure 2b). As expected, neither the fluorescence gradient across the membrane nor the decrease in intensity at the plasma membrane was observed in control cells (Figure 2b), indicating that our compound is taken up into cells, present at the plasma membrane and uncaged there.
 
@@ -67,15 +75,39 @@ To verify that UV-uncaging of our compound activated PI(4,5)P2-dependent cellula
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig3-v2.jpg)
 
-**Figure 3.:** 2 uncaging increases actin levels near the plasma membrane and recruits the low affinity PI(4,5)P2 sensor PLCδ4-PH-EGFP to plasma membranes of adrenal chromaffin cells.(a) TIRF imaging of HEK cell footprints transfected with lifeact-RFP to label actin. Cells were either loaded for 30 min at 37°C with 20 µM cg-PI(4,5)P2 (+cg-PI(4,5)P2, top) or not loaded (No cg-PI(4,5)P2, bottom). All cells were treated with the vehicle DMSO (0.2%) and Pluronic (0.02%). Five baseline images were acquired at 2 Hz in the RFP channel, before a 405 nm UV laser was used to uncage PI(4,5)P2 in the TIRF field. Imaging in the RFP channel was then resumed at 2 Hz. The second column depicts difference images of the frames immediately after and before UV exposure (only fluorescence increase is shown). To quantify fluorescence, regions of interests (ROIs) were placed on fluorescence-rich regions that appeared to be actin bundles (white circles in the left images). A background subtraction was performed in each frame (yellow ROI). Fluorescence values were averaged per cell, normalized to the values of the first frame and then averaged across cells. The right panel depicts the average normalized fluorescence per frame in both groups (+cg-PI(4,5)P2: red, No cg-PI(4,5)P2: black). The RFP fluorescence in the TIRF field increased in cells loaded with cg-PI(4,5)P2 after uncaging. (b) To verify PI(4,5)P2 uncaging in chromaffin cells, the low-affinity PI(4,5)P2-sensor PLCδ4-PH-EGFP was expressed and cells were imaged on a bright-field fluorescence microscope. Cells were either loaded for 30–45 min at 37°C with 25 µM cg-PI(4,5)P2 (+cg-PI(4,5)P2, top) or not loaded (No cg-PI(4,5)P2, bottom). After a single EGPF frame, a strong UV-flash was applied. Imaging was then resumed in the EGFP channel at 1 Hz. The second column depicts difference images of the frames immediately after and before UV-flash exposure (only fluorescence increase is shown). To quantify translocation of the PLCδ4-PH-EGFP probe, the ratio of EGFP fluorescence in the periphery (between the two yellow dotted circles) and the center of the cell (inner yellow dotted circle) was measured and normalized to pre-flash values. The right panel shows the frame-wise quantification of the average (cell wise) ratio in both groups (+cg-PI(4,5)P2: green, No cg-PI(4,5)P2: black). The fluorescence ratio increased in cells loaded with cg-PI(4,5)P2 after UV-uncaging, indicating release of PI(4,5)P2 in the plasma membrane. The fluorescence ratio relaxed to baseline with a mono-exponential time course (blue line). A second UV-flash applied 38.5 s after the first one also increased the ratio, but to a lesser degree. Scale bars 5 µm. All values are mean ±SEM. Mann-Whitney U-tests were used to calculate p-values. Number of cells (n): panel a: n = 6 cells (+cg-PI(4,5)P2), n = 5 cells (No cg-PI(4,5)P2). Panel b: n = 15 cells (+cg-PI(4,5)P2), n = 20 cells (No cg-PI(4,5)P2).
+**Figure 3.:** (a) TIRF imaging of HEK cell footprints transfected with lifeact-RFP to label actin. Cells were either loaded for 30 min at 37°C with 20 µM cg-PI(4,5)P2 (+cg-PI(4,5)P2, top) or not loaded (No cg-PI(4,5)P2, bottom). All cells were treated with the vehicle DMSO (0.2%) and Pluronic (0.02%). Five baseline images were acquired at 2 Hz in the RFP channel, before a 405 nm UV laser was used to uncage PI(4,5)P2 in the TIRF field. Imaging in the RFP channel was then resumed at 2 Hz. The second column depicts difference images of the frames immediately after and before UV exposure (only fluorescence increase is shown). To quantify fluorescence, regions of interests (ROIs) were placed on fluorescence-rich regions that appeared to be actin bundles (white circles in the left images). A background subtraction was performed in each frame (yellow ROI). Fluorescence values were averaged per cell, normalized to the values of the first frame and then averaged across cells. The right panel depicts the average normalized fluorescence per frame in both groups (+cg-PI(4,5)P2: red, No cg-PI(4,5)P2: black). The RFP fluorescence in the TIRF field increased in cells loaded with cg-PI(4,5)P2 after uncaging. (b) To verify PI(4,5)P2 uncaging in chromaffin cells, the low-affinity PI(4,5)P2-sensor PLCδ4-PH-EGFP was expressed and cells were imaged on a bright-field fluorescence microscope. Cells were either loaded for 30–45 min at 37°C with 25 µM cg-PI(4,5)P2 (+cg-PI(4,5)P2, top) or not loaded (No cg-PI(4,5)P2, bottom). After a single EGPF frame, a strong UV-flash was applied. Imaging was then resumed in the EGFP channel at 1 Hz. The second column depicts difference images of the frames immediately after and before UV-flash exposure (only fluorescence increase is shown). To quantify translocation of the PLCδ4-PH-EGFP probe, the ratio of EGFP fluorescence in the periphery (between the two yellow dotted circles) and the center of the cell (inner yellow dotted circle) was measured and normalized to pre-flash values. The right panel shows the frame-wise quantification of the average (cell wise) ratio in both groups (+cg-PI(4,5)P2: green, No cg-PI(4,5)P2: black). The fluorescence ratio increased in cells loaded with cg-PI(4,5)P2 after UV-uncaging, indicating release of PI(4,5)P2 in the plasma membrane. The fluorescence ratio relaxed to baseline with a mono-exponential time course (blue line). A second UV-flash applied 38.5 s after the first one also increased the ratio, but to a lesser degree. Scale bars 5 µm. All values are mean ±SEM. Mann-Whitney U-tests were used to calculate p-values. Number of cells (n): panel a: n = 6 cells (+cg-PI(4,5)P2), n = 5 cells (No cg-PI(4,5)P2). Panel b: n = 15 cells (+cg-PI(4,5)P2), n = 20 cells (No cg-PI(4,5)P2).
 
 Because we eventually wanted to investigate the physiological effects of PI(4,5)P2 in adrenal chromaffin cells, we next studied whether PI(4,5)P2 uncaging would also increase PI(4,5)P2 levels at their plasma membrane. As it is a distinct advantage of our compound that cellular PI(4,5)P2 can be rapidly and specifically increased by light without interfering with basic PI(4,5)P2 metabolism, we wanted to verify PI(4,5)P2 uncaging without the prior manipulation of its resting levels. For this we employed a different biosensor harboring the lower affinity PH-domain of PLCδ4 (Kabachinski et al., 2014; Lee et al., 2004). Chromaffin cells were infected with a virus expressing PLCδ4-PH-EGFP, and incubated with caged PI(4,5)P2 (2a,b). Experiments were performed on the same microscope setup later used for electrophysiological recordings. Uncaging cg-PI(4,5)P2 by a 1–2 ms light pulse from a Xenon flash bulb caused rapid translocation of the sensor towards the periphery of the cell, in line with PI(4,5)P2 release in the plasma membrane (Figure 3b). In cells not incubated with cg-PI(4,5)P2, no translocation was observed. Ongoing imaging of the PLCδ4-PH-EGFP allowed us to estimate the time constant of the [PI(4,5)P2] relaxation to ~25 s (Figure 3b). A second flash caused markedly less translocation, suggesting that most of the cg-PI(4,5)P2 had already been uncaged. In this experiment, the relatively modest recruitment amplitude of to the plasma membrane is probably affected by the widespread intracellular localization of cg-PI(4,5)P2 (Figure 2b), because uncaging likely also increases PI(4,5)P2 on intracellular membranes. However, the fact that PH-domains overall relocalize to the plasma membrane (Figures 2c and 3b) indicate that PI(4,5)P2 is uncaged there.
 
 The essential role of PI(4,5)P2 for exocytosis was realized more than 25 years ago, through experiments showing that PI(4,5)P2 depletion inhibits exocytosis from cracked-open adrenal chromaffin cells and PC12 cells (Eberhard et al., 1990; Hay et al., 1995). Later experiments showed that PI(4,5)P2 delivery to the intracellular compartment via the patch pipette increased the RRP (Milosevic et al., 2005). To investigate the physiological effects of PI(4,5)P2 uncaging, cg-PI(4,5)P2 was loaded into the cells (see Materials and methods) and exocytosis was induced with a depolarization protocol to allow Ca2+ influx (Voets et al., 1999). Exocytosis was monitored using patch-clamp capacitance measurements, which report on increased plasma membrane area upon vesicle fusion. After a pre-pulse, which elicited indistinguishable exocytosis in both groups (Figure 4a), cells were either subjected to UV-light flashes (PI(4,5)P2 uncaging group) or not (control group), and a second depolarization protocol was used to assess the effect of uncaging. PI(4,5)P2 uncaging significantly augmented exocytosis in wildtype cells (Figure 4b,ci). The overall level of exocytosis found in these experiments is similar to previous findings from wild type Bl6 mice (Voets et al., 2001a; Voets et al., 2001b). Note that in these experiments, to protect against any effect of the loading protocol or the cg-PI(4,5)P2 compound itself, both control and uncaging groups were loaded with the cg-PI(4,5)P2, but only the uncaging group was exposed to UV-light. Nevertheless, in separate experiments we compared cells loaded with cg-PI(4,5)P2 to cells exposed to the same loading protocol, but without cg-PI(4,5)P2, and found that without UV light cg-PI(4,5)P2 had no effect on depolarization induced exocytosis (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig4-v2.jpg)
+
+**Figure 4.:** (a) Physiological stimulation paradigm to investigate the effect of PI(4,5)P2 uncaging on exocytosis. Cells were loaded with compounds 1a,b or 2a,b prior to experiments. After a pre-pulse of depolarizing voltage steps, cells were either subjected to UV uncaging (PI(4,5)P2 uncaging group) or not (control group). The effect of PI(4,5)P2 uncaging was investigated in a subsequent test pulse. The pre-pulse and the test pulse consisted of six brief (10 ms) and four longer (100 ms) depolarizations to allow Ca2+ influx and induce exocytosis (Voets et al., 1999). (b,ci) Whole-cell membrane capacitance measurements during the pre- and the test pulse were performed to quantify exocytosis (average traces are shown). (b) Uncaging a PI(4,5)P2 variant featuring a non-natural short-chain fatty acid composition (1a,b in Figure 1a) increased exocytosis during the test pulse. (ci) Uncaging of PI(4,5)P2 with the natural fatty acid composition (SAG, compound 2a,b, Figure 1a,b) had similar effects. (cii) Depolarization-induced cumulative currents (charges, Q, which mostly originate from Ca2+-currents) were similar between both groups for all 10 depolarization steps of pre- and test pulse. Insert: average currents during the first 100 ms depolarization, dashed line indicates baseline. Scale bar in the insert: 0.5 nA and 50 ms. See Figure 4—figure supplement 2 for corresponding analysis of compound 1a,b. Number of cells (n): n = 27 (wild type control, loaded with 1a,b), n = 26 (wild type PI(4,5)P2 uncaging, loaded with 1a,b); n = 23 (wild type control, loaded with 2a,b), n = 23 (wild type PI(4,5)P2 uncaging, loaded with 2a,b).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Chromaffin cells were incubated with either 0.02% pluronic (Control) or 0.02% pluronic +25 µM cg-PI(4,5)P2 (+cg-PI(4,5)P2) for 30 min as described earlier. Reliable uptake of cg- PI(4,5)P2 was verified by the coumarin fluorescence at the end of the recording session (only for the +cg-PI(4,5)P2 group). (a) Average capacitance traces of exocytosis (left panel) elicited during the pre-pulse (a) and test pulse (b) stimulations of cells incubated with pluronic (Control) (dark red) or pluronic +cg-PI(4,5)P2 (light blue) and quantification (mean ±S.E.M) (right panel). The cells were not subjected to UV-light between the pre-pulse and test pulse. The release was identical from both groups during the pre-pulse and test pulse stimulation. Secretion from both groups recovered to comparable magnitudes during the test pulse as estimated by the CM (membrane capacitance) recovery (test pulse ΔCM_4 s/pre-pulse ΔCM_4 s) indicating that release was not influenced by the loading of cg-PI(4,5)P2. The calcium charges were calculated by integrating the currents during the depolarization pulses. Charges ratio were calculated by dividing the sum of charges in test pulse by the sum of charges in the pre-pulse. All the parameters were statistically tested using Student’s two-tailed t-test: pre-pulse: (IRP) p=0.9060, (RRP-IRP) p=0.9469, (total-RRP) p=0.4634, (calcium charges) p=0.8425; test pulse: (IRP) p=0.4078, (RRP-IRP) p=0.5360, (total-RRP) p=0.6249, (calcium charges) p=0.9344, (CM recovery) p=0.7082, (charges ratio) p=0.6618. Scale bars 25 fF/1 s. Number of cells (n) in electrophysiological recordings: n = 24 (Control), n = 21 (+cg-PI(4,5)P2).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Depolarization-induced cumulative currents (charges mostly originating from Ca2+-currents) corresponding to the capacitance traces depicted in Figure 4b during the pre-pulse (left) and the test pulse (right). Uncaging of the PI(4,5)P2 analog (compound 1a,b) did not lead to increased depolarization induced charges. Number of cells (n): n = 27 (wild type control, loaded with 1a,b), n = 26 (wild type PI(4,5)P2 uncaging, loaded with 1a,b).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** All cells were loaded with compound 2a,b, (Figure 1) and analyzed following a depolarization pre-pulse protocol as depicted in Figure 4a (not shown). (a) Measurements (once every second) of intracellular Ca2+ concentrations. A possible effect of PI(4,5)P2 uncaging was investigated. In the left panel no UV light for uncaging was applied (control, grey). Ca2+ levels are elevated due to the preceding pre-pulse and show relaxation behavior towards baseline levels. In the middle panel, a possible effect PI(4,5)P2 uncaging on intracellular Ca2+ concentration was investigated (PI(4,5)P2 uncaging group, blue). The timing of the flash is indicated by the vertical red dotted line. No increase of intracellular Ca2+ was observed upon uncaging. In the right panel, the ratios of the Ca2+ concentrations after uncaging divided by the Ca2+ levels prior to the flash were investigated in a cell-wise manner. No effect of PI(4,5)P2 uncaging was seen. (b) PI(4,5)P2 uncaging increases the rate of single vesicle fusion events monitored by amperometry, indicating an effect of PI(4,5)P2 uncaging on release in the absence of an effect on [Ca2+]. Amperometric current (continuous trace; left ordinate axis) to detect catecholamine release from single vesicle fusion events (spikes) and mean spike frequency (points with error bars depicting SEM; right ordinate axis) during a recording at a holding potential of Vm = −70 mV. In the left panel no UV light was applied (control, grey). In the middle panel PI(4,5)P2 was uncaged and the average frequency of vesicle fusion events was increased (PI(4,5)P2 uncaging group, blue). Please note that the transient coinciding with the uncaging flash is due to an artifact induced by the photoelectric effect when the light hits the amperometric fiber). The right panel depicts the ratio of single vesicle fusion frequencies in the 2.5 s bin after uncaging divided by the frequency in the 2.5 s bin preceding the flash. Opposite behaviors for both groups are seen. (c) Frequencies of single vesicle fusion events transiently increase following PI(4,5)P2 uncaging. Same data as in panel (b), but with extended view of event frequencies following the first two bins depicted above (note the extended time axis). The event frequency in both groups was investigated in 2.5 s long bins. The red vertical dashed line indicates the timing of the UV flash given in the uncaging group. All data are shown as mean ±SEM. Number of cells, n = 20 (control, loaded with cg-PI(4,5)P2 but not subjected to UV), n = 23 (PI(4,5)P2 uncaging). P values denote result of two-tailed Student’s t-test.
+
 We specifically investigated the role of the fatty acid tail in exocytosis using two different compounds, one containing a short DOG-analog (1a,b) and one containing the natural SAG-chain (2a,b). However, we found similar potentiation in both cases, showing that the inositol headgroup is responsible for the enhanced exocytosis (Figure 4b,ci). Importantly, the augmentation of exocytosis was not due to changes in Ca2+ influx during membrane depolarization, as revealed by similar Ca2+ currents during the depolarizations (Figure 4cii, Figure 4—figure supplement 2), and unchanged intracellular Ca2+ concentration immediately after PI(4,5)P2 uncaging (Figure 4—figure supplement 3a).
 
 Because the compounds 1a,b and 2a,b elicited similar effects, we pooled both datasets for further analysis. The depolarization protocol included steps of varying duration which can be used to quantify the release of different populations of vesicles undergoing fusion. The first six 10 ms depolarizations release vesicles positioned close to Ca2+ channels in the so-called Immediately Releasable Pool (IRP)(Voets et al., 1999), while the following two longer (100 ms) depolarizations (a total of four were given) are assumed to deplete the full Readily Releasable Pool (RRP; the IRP is part of the RRP [Voets et al., 1999]). We found that PI(4,5)P2 uncaging did not influence the release of the IRP. However, the RRP was approximately doubled by PI(4,5)P2 uncaging (Figure 5a,b), confirming that increasing PI(4,5)P2 enhances priming of vesicles into the RRP (Milosevic et al., 2005). In addition, secretion elicited by residual Ca2+ in-between depolarizations was enhanced (as seen by steeper slopes of the capacitance increase, Figure 5a, right-hand panels); this could be due to faster priming followed by fusion or increased fusion probability of the remaining vesicles.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig5-v2.jpg)
+
+**Figure 5.:** (a) Left panel: mean whole-cell capacitance responses during the test pulse of chromaffin cells loaded with cg-PI(4,5)P2 (data from compounds 1a,b and 2a,b pooled, uncaging group: blue, control group: grey). Different secretion phases are indicated. Right panel: cell-wise quantification. IRP = Immediately Releasable Pool; RRP = Readily Releasable Pool, slope = slope determined by linear fit of sliding capacitance. (b) Structure of caged DAG (cg-DAG). (c) Titration to determine the intracellular cg-PI(4,5)P2 concentration by comparison of coumarin fluorescence in cells loaded with known cg-DAG concentrations via the patch pipette, yielding [cg-PI(4,5)P2]=29 µM. (d) Left panel: depolarization-induced capacitance (average trace) elicited by the test pulse (same stimulation as in Figure 4a) in cells exposed to DAG uncaging (green), or not (grey, control). No augmentation was seen. Middle and right panel: quantification of IRP, RRP, total secretion and slope revealed no significant changes. Scale bars 20 fF/1 s. Statistical testing by unpaired Student’s t-test; **p<0.01; ***p<0.001. Number of cells (n): panel a: n = 50 (wild type control), n = 49 (wild type PI(4,5)P2 uncaging); panel c: n = 16 (cg-DAG 5 µM), n = 3 (cg-DAG 15 µM), n = 6 (cg-DAG 30 µM), n = 4 (cg-DAG 45 µM), n = 5 (cg-DAG 100 µM), n = 14 (cg-PI(4,5)P2), panel d: we used two different cg-DAG concentrations (cg-DAG, 45 µM = 6 cells and cg-DAG, 30 µM = 15 cells); pooled results are shown; n = 20 (wild type control), n = 21 (wild type DAG-uncaging).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** These experiments measure exocytosis (capacitance changes) induced by sudden intracellular Ca2+ elevations. (a) Ca2+ uncaging (at arrow) stimulates fast and slow components of exocytosis. The response to a second Ca2+ uncaging (Stimulation 2, 100 s after Stimulation 1) is smaller. We reasoned that Ca2+ not only triggers the release of secretory vesicles from chromaffin cells, but also activates PLC, leading to PI(4,5)P2 hydrolysis. To test whether the lack of full recovery after the first stimulation might be due to an induction of PLC activity, we blocked PLC pharmacologically. Top panel: intracellular [Ca2+] (mean) following uncaging (at 0.5 s, see arrow). Bottom panel: average capacitance traces. Black traces are the first stimulation, red traces a second stimulation delivered 100 s later. Shown are mean traces from all measured cells. The inactive analog U73343 of the PLC inhibitor was present in the pipette (concentration 10 μM). (b) Similar experiment, but including the active PLC inhibitor (U73122, 10 μM) in the patch-clamp pipette. (c) The preflash (before uncaging) [Ca2+] (mean ±SEM) was unchanged between experiments performed with the active and the inactive compound (blue and green bars, respectively, a two-tailed Student’s t-test was used to test for differences between means, Stimulation 1: p=0.733; Stimulation 2: p=0.936). (d) Kinetic analysis of capacitance traces was used to identify the Readily-Releasable Pool (RRP) and the Slowly-Releasable Pool (SRP). The fractional recovery of the RRP (mean ±SEM) was significantly augmented by the active PLC-inhibitor (tested by a Student’s t-test p=0.0379 for RRP and p=0.323 for SRP). Number of cells, n = 36 (U73343), n = 36 (U73122). *p<0.05.
 
 Augmentation of the RRP was noted before in adrenal chromaffin cells following longer-term elevation of PI(4,5)P2 (Milosevic et al., 2005), but those manipulations might also have elevated the levels of the downstream metabolite DAG. Indeed, Phorbol esters, which are assumed to act as DAG analogues, augment the RRP size in chromaffin cells (Smith et al., 1998). Therefore, we wanted to distinguish between PI(4,5)P2 vs. DAG requirements for rapid exocytosis augmentation in chromaffin cells. To this end we performed DAG uncaging. Coumarin-caged DAG (Nadler et al., 2013) (cg-DAG, Figure 5b) was infused into cells via the patch pipette. Because both cg-DAG and cg-PI(4,5)P2 bear the same fluorescent coumarin cage, titration of coumarin fluorescence at different (known) DAG concentrations in the patch pipette allowed us to estimate the cellular concentration of cg-PI(4,5)P2 in the experiments above. This concentration was not known, since AM-ester loading allows progressive accumulation in the cell with time. Based on comparable fluorescence values in the titration, we estimated that the final intracellular concentration of the caged PI(4,5)P2 corresponded to ~29 μM (Figure 5c) and therefore performed DAG uncaging using 30 or 45 μM DAG. However, UV-induced DAG uncaging (unlike PI(4,5)P2 uncaging) failed to potentiate secretion in adrenal chromaffin cells (Figure 5d).
 
@@ -83,7 +115,23 @@ Next, we sought an independent method to confirm that refilling of the primed ve
 
 We next sought to identify relevant PI(4,5)P2 effectors among the molecular release machinery. Syt-1, the Ca2+ sensor for rapid exocytosis in chromaffin cells (Voets et al., 2001a), was among the first PI(4,5)P2-binding presynaptic proteins to be identified (Schiavo et al., 1996; Honigmann et al., 2013; van den Bogaart et al., 2012; Bai et al., 2004). The relevance of PI(4,5)P2-binding was indicated by mutation, which increased the Ca2+ requirements for exocytosis. However, mutations can have other effects than those intended in the experiment. For instance, the same residues in the syt-1 C2B domain interacting with PI(4,5)P2 were also shown to interact with the neuronal SNARE complex (Zhou et al., 2015). Therefore, and to complement those experiments, we here uncaged PI(4,5)P2 in syt-1 knockout mice, and found that uncaging did not potentiate exocytosis (Figure 6a). Proper loading of the compound was ensured after the experiment by the intrinsic fluorescence of the coumarin group (Figure 6—figure supplement 1a). Exocytosis from syt-1 KO cells is reduced compared to wild type cells (Voets et al., 2001a), although sizable release – including a small RRP (Mohrmann et al., 2013) – remains. We asked whether the lack of PI(4,5)P2 augmentation was due to the smaller exocytosis amplitude, rather than the lack of syt-1. To this end, we reanalyzed data, identifying wild type cells with intrinsically low exocytosis amplitude, and syt-1 KO cells with high exocytosis amplitude. However, we still found significant potentiation in WT cells, but not in syt-1 KO cells (Figure 6—figure supplement 1d), suggesting a molecular requirement for syt-1. Neurosecretion is known to depend on the key vesicle priming factor Munc13, and the relevant isoform in chromaffin cells, Munc13-2, harbors a C2-domain (C2B), which displays a strong PI(4,5)P2-dependence (Shin et al., 2010; Kabachinski et al., 2014). Adrenal chromaffin cells isolated from Munc13-2 knockout mice lacked the capacity of PI(4,5)P2 uncaging to potentiate exocytosis (Figure 6b). Thus, PI(4,5)P2 potentiation in chromaffin cells occurs via specific activation of the vesicular release machinery and requires syt-1 and Munc13-2. To identify additional molecular targets, we repeated experiments in knockout mouse cells for the major PI(4,5)P2 binding proteins CAPS1 and −2. CAPS interacts with PI(4,5)P2 via a pleckstrin homology domain and loss of this interaction impedes vesicle exocytosis by reducing the number of releasable vesicles (Nguyen Truong et al., 2014). However, uncaging PI(4,5)P2 in CAPS1 and −2 double knockout mice revealed a similar enhancement of release upon PI(4,5)P2 uncaging as in wild type cells (Figure 6c), arguing that augmentation of exocytosis observed here occurs independently of CAPS, or bypasses CAPS (see Discussion). Surprisingly, the IRP size was actually reduced by PI(4,5)P2-uncaging in the Munc13-1 KO, whereas it was (nonsignificantly, p<0.08) increased in the CAPS-1/2 DKO (Figure 6). The implication of this finding is unclear, but Munc13 and CAPS-proteins play distinct roles during priming (Kabachinski et al., 2014; Liu et al., 2010), and if they are both required for the formation of the IRP-vesicles, then the elimination of one or the other might create IRPs with distinct properties, including PI(4,5)P2-dependence. We conclude that PI(4,5)P2-dependent activation of exocytosis operates via Munc13-2 and syt-1 to potentiate RRP size.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig6-v2.jpg)
+
+**Figure 6.:** (a–c) All cells were loaded with cg-PI(4,5)P2 prior to experiments and subjected to the stimulation paradigm shown in Figure 4a. Average whole-cell capacitance responses during the test pulse are shown and the secretion phases analyzed by cell-wise statistics (for secretion during the pre-pulse and further quantification see Figure 6—figure supplement 1). Cells were either subjected to UV uncaging (PI(4,5)P2 uncaging group) or not (control group). In Syt1-KO (a, red) and Munc13-2 KO (b, magenta) cells, exocytosis was not enhanced by PI(4,5)P2 uncaging. (c) In contrast, average exocytosis in CAPS 1/2 double knockout (DKO) cells (yellow) was increased. Scale bar 20 fF/1 s. Statistical testing by unpaired Student’s t-test; #p<0.08; *p<0.05. Number of cells (n): n = 33 (syt-1 KO control), n = 36 (syt-1 KO PI(4,5)P2 uncaging), n = 32 (Munc13-2 KO control), n = 37 (Munc13-2 KO PI(4,5)P2 uncaging), n = 21 (CAPS1/−2 DKO control), n = 20 (CAPS1/−2 DKO PI(4,5)P2 uncaging).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Supplementary data figure of electrophysiological experiments depicted in Figures 5 and 6. (a) Loading protocol. Cells were incubated with cg-PI(4,5)P2 for 30 min leading to reliable uptake of cg-PI(4,5)P2 as indicated by the coumarin fluorescence (bright field and fluorescence images of a wildtype cell inserted, histogram shows mean intensity ± SEM, differences between means were tested by a Student’s two tailed t-test: p=0.533). (b) Physiological paradigm to investigate the effect of PI(4,5)P2 uncaging on exocytosis. (c) Average capacitance traces of exocytosis elicited during the pre-uncaging depolarization train (pre-pulse, left) and during the identical test pulse (right). The average exocytosis of wild type (light blue), Munc13-2 KO (magenta), CAPS1/−2 DKO (yellow) and syt-1 KO (red) which were subjected to UV uncaging in-between the pre- and the test pulse are shown together with their respective controls (grey, no uncaging). As expected, exocytosis in response to the pre-pulse was identical between cells in the uncaging group compared to their controls (due to identical treatment at this stage, the distinction in terms of light treatment occurs later). (d) Quantification (mean ±SEM) of data in (c), performed as outlined in Figure 5a for all genotypes. To investigate whether the magnitude of exocytosis influenced the PI(4,5)P2-sensitivity, we analyzed subsets of wild type cells with intrinsically low exocytosis (wild type low exo, with suitable maximal thresholds (0 < IRP < 20 fF, 0<(RRP-IRP)<80 fF, 0<(total-RRP)<65 fF) during pre-pulse) and of syt-1 KO cells with intrinsically higher exocytosis (syt-1 KO high exo, with suitable minimal thresholds (3 fF <IRP, 12 fF<(RRP-IRP), 8 fF<(total-RRP)) during pre-pulse). While release could still be augmented in wild type cells with low release, PI(4,5)P2 uncaging was without effect in syt-1 KO cells with high release. These data argue that the absence of potentiation by PI(4,5)P2 uncaging in syt-1 KO cells is not caused by the lower total exocytosis in these cells, which is in line with the augmenting effect observed in CAPS1/−2 DKO cells, which also have reduced exocytosis. Statistically significant differences between the means were tested using Student’s two-tailed t-test: pre-pulse wild type: (IRP) p=0.0439, (RRP-IRP) p=0.686, (total-RRP) p=0.857, (slope) p=0.868; test-pulse wild type (IRP) p=0.896, (RRP-IRP) p=0.000999, (total-RRP) p=0.256, (slope) p=0.00601; pre-pulse Munc13-2KO: (IRP) p=0.210, (RRP-IRP) p=0.183, (total-RRP) p=0.691, (slope) p=0.311; test-pulse Munc13-2KO (IRP) p=0.0391, (RRP-IRP) p=0.431, (total-RRP) p=0.999, (slope) p=0.650; pre-pulse CAPS DKO: (IRP) p=0.466, (RRP-IRP) p=0.840, (total-RRP) p=0.487, (slope) p=0.989; test-pulse CAPS DKO (IRP) p=0.0762, (RRP-IRP) p=0.0778, (total-RRP) p=0.0449, (slope) p=0.0200; pre-pulse Syt-1KO: (IRP) p=0.813, (RRP-IRP) p=0.149, (total-RRP) p=0.823, (slope) p=0.212; test-pulse Syt-1 KO (IRP) p=0.645, (RRP-IRP) p=0.537, (total-RRP) p=0.607, (slope) p=0.258; pre-pulse wild type low exo: (IRP) p=0.286, (RRP-IRP) p=0.930, (total-RRP) p=0.708; test-pulse wild type low exo (IRP) p=0.448, (RRP-IRP) p=0.00725, (total-RRP) p=0.356; pre-pulse Syt-1 KO high exo: (IRP) p=0.954, (RRP-IRP) p=0.593, (total-RRP) p=0.447; test-pulse Syt-1KO high exo (IRP) p=0.590, (RRP-IRP) p=0.417, (total-RRP) p=0.147. #p<0.08; *p<0.05, ***p<0.001. Scale bars 20 fF/1 s. n.d.: not determined. Number of cells (n) in electrophysiological recordings: n = 50 (wild type control), n = 49 (wild type PI(4,5)P2 uncaging), n = 21 (CAPS1/−2 DKO control), n = 20 (CAPS1/−2 DKO PI(4,5)P2 uncaging), n = 32 (Munc13-2 KO control), n = 37 (Munc13-2 KO PI(4,5)P2 uncaging), n = 33 (syt-1 KO control), n = 36 (syt-1 KO PI(4,5)P2 uncaging).
+
 Use of cg-PI(4,5)P2 for the first time allowed investigating the consequences of an abrupt increase in PI(4,5)P2 abundance on a subsecond timescale. When inspecting the capacitance trace around the first uncaging flash (see Figure 4a for stimulation protocol), we found an abrupt jump in the capacitance, indicating fast fusion of a few (5-10) vesicles (Figure 7a). This jump was observed only with the first uncaging flash, indicating that it is unlikely to be a photo-artifact (Figure 7—figure supplement 1). The release appears specific, because the size of the response strongly correlated with the RRP sizes in these cells (Figure 7b). Furthermore, uncaging of the PI(4,5)P2 downstream metabolite DAG, bearing the same photolysable coumarin group as PI(4,5)P2 did not induce any capacitance increase (Figure 7a–c). Finally, the jump was reduced in size – or absent – in cells from Munc13-2, CAPS-1/2 and syt-1 knockout mice, which all have smaller RRP sizes (Liu et al., 2008; Mohrmann et al., 2013; Man et al., 2015) (Figures 5, 6 and 7b). Thus, rapidly increasing PI(4,5)P2 levels can fuse vesicles. The release of a fraction of the RRP is consistent with the stimulation of some vesicles close to fusion threshold (Yang et al., 2002) whose Ca2+-sensitivity may increase further due to the interaction of syt-1 with PI(4,5)P2 (van den Bogaart et al., 2012;Li et al., 2006 ), leading to increased release probability.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig7-v2.jpg)
+
+**Figure 7.:** (a) PI(4,5)P2 uncaging rapidly increased membrane capacitance measured during the first uncaging flash (stimulation protocol: see Figure 4a), indicative of fast vesicle fusion. Averaged capacitance traces during the first uncaging flash are shown for wild type (WT, light blue), Syt-1 KO (red), Munc13-2 KO (magenta) and CAPS1/−2 DKO (yellow) and together with their respective controls (no UV light, grey). Note that the uncaging event follows the first depolarization train, and in the syt-1 KO there is still some ongoing, delayed secretion, as indicated by the upward ‘sloping’ control trace. (b) In wild type cells, the size of the capacitance step was highly correlated to the size of the readily releasable pool (RRP; assayed during the pre-pulse – see Figure 4a). Data are median values ± SEM of cells sorted by their RRP size and binned. The correlation (corr. R²-value: 0.97) indicates that the capacitance step is likely caused by rapid fusion of RRP vesicles. (c) Quantification of traces depicted in (a). Shown is the average capacitance increase (from the first to the last value shown in (a)) in control (no UV light, grey) and uncaging groups. Statistical testing by unpaired Student’s t-test; *p<0.05; **p<0.01; ***p<0.001. Number of cells (n): n = 50 (wild type, control, data of the compounds 1a,b and 2a,b were pooled), n = 49 (wild type, PI(4,5)P2 uncaging, data of the compounds 1a,b and 2a,b were pooled), n = 21 (CAPS1/−2 DKO control), n = 20 (CAPS1/−2 DKO PI(4,5)P2 uncaging), n = 32 (Munc13-2 KO control), n = 37 (Munc13-2 KO PI(4,5)P2 uncaging), n = 33 (Syt-1 KO control), n = 36 (syt-1 KO PI(4,5)P2 uncaging).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Our uncaging protocol in chromaffin cells included four sequential uncaging pulses every 15 s. Figure 7 shows only the average capacitance traces during the first uncaging. Here, the membrane capacitance traces (means of all cells loaded with 1a,b) around the time of all four uncaging pulses (lasting 1–2 ms, see Methods) are shown. Light blue traces: wild type cells that were exposed to uncaging flashes; grey traces: wild type cells not exposed to uncaging flashes (same cells as in Figures 4 and 5). The uncaging flash was delivered in the middle of the trace (at 0.5 s). Note that the ‘spike’ in the blue trace is an electrical interference artifact due to the discharge of the flash lamp. At the time of the first flash, the capacitance jumped by ~5 fF, which corresponds to the fast fusion of ~5 vesicles. In subsequent flashes, no capacitance jumps were detected, indicating that the discharge of the flash lamp itself does not cause a capacitance jump. These data are consistent with fast fusion of vesicles triggered by PI(4,5)P2 uncaging.
 
 ## Discussion
 
@@ -93,7 +141,7 @@ PI(4,5)P2 uncaging specifically potentiated RRP size, but not the size of the IR
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig8-v2.jpg)
 
-**Figure 8.:** 2 distinguishes mechanism of lipid-binding.Two different roles of lipid-binding proteins can be distinguished by lipid uncaging: protein A (e.g. CAPS) binds to PI(4,5)P2 in order to bring it to the vesicle and fusion machinery (localization role); protein B (e.g. synaptotagmin-1) binds to PI(4,5)P2 as an obligatory part of its mechanism (stoichiometric role). (a) In the control situation, protein A colocalizes PI(4,5)P2 with protein B, leading to fusion. (b). Upon deletion of protein A, protein B is unable to interact with PI(4,5)P2. Uncaging uncovers PI(4,5)P2 underneath the vesicle, allowing protein B to interact and support secretion. Thus, the defect (lack of protein A) is bypassed by PI(4,5)P2 uncaging. (c) Upon deletion of protein B, protein A still co-localizes PI(4,5)P2 with the vesicle, but protein B is missing and PI(4,5)P2 uncaging does not overcome the defect.
+**Figure 8.:** Two different roles of lipid-binding proteins can be distinguished by lipid uncaging: protein A (e.g. CAPS) binds to PI(4,5)P2 in order to bring it to the vesicle and fusion machinery (localization role); protein B (e.g. synaptotagmin-1) binds to PI(4,5)P2 as an obligatory part of its mechanism (stoichiometric role). (a) In the control situation, protein A colocalizes PI(4,5)P2 with protein B, leading to fusion. (b). Upon deletion of protein A, protein B is unable to interact with PI(4,5)P2. Uncaging uncovers PI(4,5)P2 underneath the vesicle, allowing protein B to interact and support secretion. Thus, the defect (lack of protein A) is bypassed by PI(4,5)P2 uncaging. (c) Upon deletion of protein B, protein A still co-localizes PI(4,5)P2 with the vesicle, but protein B is missing and PI(4,5)P2 uncaging does not overcome the defect.
 
 The use of uncaging made it possible for the first time to investigate the consequences of an acute, millisecond, increase in PI(4,5)P2 and DAG abundance. We found that PI(4,5)P2, but not DAG, uncaging caused the rapid fusion of vesicles (Figure 7a,c). The amount of fusion correlated with the RRP size, and this correlation extended to the knockouts tested (Figure 7b). Thus, the acutely fusing vesicles probably constitute a fraction of the RRP. The fact that rapid fusion was only seen when uncaging PI(4,5)P2, but not DAG, argue that PI(4,5)P2 is more directly linked to exocytosis triggering in adrenal chromaffin cells, possibly because PI(4,5)P2 binding to the C2-domains in Munc13-2 and syt-1 directly change the Ca2+ affinities of those domains. The fusing vesicles might be members of the ‘Highly Calcium Sensitive Pool’ (HCSP), which fuse at lower Ca2+ concentrations than the rest of the RRP vesicles (Yang et al., 2002). Since these vesicles are close to fusion threshold, rapid binding of PI(4,5)P2 might increase the Ca2+-affinity of syt-1 enough that the vesicles fuse due to a rapid increase in Ca2+-affinity rather than a rapid increase in Ca2+ concentration as would normally be the case.
 
@@ -103,11 +151,441 @@ Collectively, our data demonstrate the power of caged phospholipids to dissect p
 
 ## Materials and methods
 
-## Chemical synthesis
+**Key resources table**
 
-## Synthesis of caged PI(4,5)P2/AM 1a,b and 2a,b
 
-## General procedures
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (Mus.musculus)</td>
+      <td>CD1</td>
+      <td>Department of Experimental Medicine, Faculty of Health and Medical Sciences, Unviersity of Copenhagen.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (M.musculus)</td>
+      <td>Syt-1 nul allele (gene symbol: syt1)</td>
+      <td>Geppert et al., 1994</td>
+      <td>PMID: 18308932</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (M.musculus)</td>
+      <td>Munc13-2 null allele (gene symbol: Unc13b)</td>
+      <td>Varoqueaux et al., 2002</td>
+      <td>PMID: 12070347</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (M.musculus)</td>
+      <td>CAPS1 null allele (gene symbol: Cadps)</td>
+      <td>Speidel et al., 2005</td>
+      <td>PMID: 15820695</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (M.musculus)</td>
+      <td>CAPS2 null allele (gene symbol: Cadps2)</td>
+      <td>Jockusch et al., 2007</td>
+      <td>PMID: 18022372</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (HEK 293T)</td>
+      <td>HEK 293T</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td>Experiments in Figure 2b</td>
+    </tr>
+    <tr>
+      <td>cell line (HEK 293T)</td>
+      <td>HEK 293T</td>
+      <td>A gift from Dr. Theres Schaub and Prof Victor Tarabykin, Institute of Cell Biology and Cell Biology, Charité Berlin</td>
+      <td></td>
+      <td>Experiments Figure 3a</td>
+    </tr>
+    <tr>
+      <td>cell line (COS-7)</td>
+      <td>COS-7</td>
+      <td>ATCC</td>
+      <td>CRL-1651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (tsA201)</td>
+      <td>tsA201</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: 96121229</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected lentiviral construct (p156rrl-pCMV- PLCδ4PH-EGFP)</td>
+      <td>PLCδ4-PH-GFP</td>
+      <td>This paper</td>
+      <td>Local reference: 131</td>
+      <td>plasmid with PLCδ4 received from Thomas F. J. Martin (Department of Biochemistry, University of Wisconsin)</td>
+    </tr>
+    <tr>
+      <td>transfected construct (pCMV-PLCδ1-PH-EGFP)</td>
+      <td>PLCδ1-PH-GFP</td>
+      <td>Michael Krauss (Leibniz- Forschungsinstitut für Molekulare Pharmakologie, Berlin, Germany).</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (pCMV-PLCδ1-PH-RFP)</td>
+      <td>PLCδ1-PH-RFP</td>
+      <td>Ken Mackie (The Gill Center for Biomolecular Science, Bloomington, Indiana)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (pCMV-mcherry-INPP5E)</td>
+      <td>mCh-INPP5E</td>
+      <td>Posor et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (pCMV-mRFPruby- N1*Lifeact)</td>
+      <td>lifeact-RFP</td>
+      <td>Geerd van den Bogaart (Radboud University Medical Center, Nijmegen, The Netherlands)</td>
+      <td>PMID: 18536722</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>QIAprep Spin Miniprep Kit</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>QIAquick Gel Extraction Kit</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>QIAquick PCR Purification Kit</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: D8418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Ascorbic aci</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: A5960</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>CaCl2</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: 499609</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>CellMask</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: C10046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>CsOH</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich 516988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>DMEM</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>Gibco/Thermo Fisher: 31966047</td>
+      <td>Experiments in Figure 3a</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>DMEM</td>
+      <td>Lonza</td>
+      <td>Lonza: BE12-741F</td>
+      <td>Experiments in Figure 2b,c</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HBSS</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>14025–050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>caged DOG-PI(4,5)P2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>European Molecular Biology Laboratory (EMBL), Cell Biology and Biophysics Unit, Meyerhofstr. 1, 69117 Heidelberg, Germany. Att: Carsten Schultz (schultz@embl.de)</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>EDTA</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: E5134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Fetal Bovine Serum (FBS)</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>Thermo Fisher/Gibco: 16140063</td>
+      <td>Experiments in Figure 3a</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Fetal Bovine Serum (FBS)</td>
+      <td>Gibco/Thermo Fisher</td>
+      <td>Thermo Fisher/Gibco: 10270–106</td>
+      <td>Experiments in Figure 2b,c</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Fura-4F</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: F14174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Furaptra</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: M1290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Glucose</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: G8270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: H3375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Insulin-transferrin- selenium-X</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: 51500056</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>KCl</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: P5405</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>L-Cysteine</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: C7352</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>L-Glutamic acid</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: G1251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Lipofectamin 2000</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher: 11668027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Lipofectamin LTX</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher: 15338100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Opti-MEM I Reduced Serum Medium</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher: 31985070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Dulbecco's Modified Eagle Medium</td>
+      <td>Thermo Fisher</td>
+      <td>ThermoFirsher: 31966021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Mg-ATP</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: A9187</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>MgCl2</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: 449172</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: S9888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Na-GTP</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: G8877</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>NaH2PO4</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: S8282</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>NPE</td>
+      <td>Synaptic Systems</td>
+      <td>SySy: 510 006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Papain</td>
+      <td>Worthington Biochemical</td>
+      <td>Worthington Biochemical: LS003126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Penicillin/ streptomycin</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: 15140122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Pluronic F-127</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher: P3000MP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>cg-DAG</td>
+      <td>Nadler et al., 2013</td>
+      <td>PMID: 23720390</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>caged SAG-PI(4,5)P2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>European Molecular Biology Laboratory (EMBL), Cell Biology and Biophysics Unit, Meyerhofstr. 1, 69117 Heidelberg, Germany. Att: Carsten Schultz (schultz@embl.de)</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>trypsin-inhibitor</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: T9253</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>U73122</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: U6756</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>U73343</td>
+      <td>Sigma-aldrich</td>
+      <td>Sigma-aldrich: U6881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Igor Pro</td>
+      <td>Wavemetrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ImageJ version 1.50b</td>
+      <td>Waybe Rasband, National Institute of Health, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SigmaPlot v. 12.3</td>
+      <td>Systat Software Inc.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Matlab</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemical synthesis
+
+#### Synthesis of caged PI(4,5)P2/AM 1a,b and 2a,b
+
+##### General procedures
 
 All chemicals from commercial sources (Acros, Sigma, Aldrich, VWR) were used as received without further purification. Dried solvents were also used as delivered. 3,6-Di-O-butyryl-1:2,5:6-di-O-isopropylidene-myo-inositol was obtained from SiChem GmbH, Bremen, Germany.
 
@@ -121,13 +599,13 @@ Mass spectra (ESI) were recorded using a Waters Micromass ZQ mass spectrometer. 
 
 Melting points were determined on a Buechi B-540 and are uncorrected.
 
-## Synthesis of head group 10a,b
+#### Synthesis of head group 10a,b
 
 ![Chemical structure 1.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig9-v2.jpg)
 
 Reagents and conditions: (a) CH2Cl2:HCO2H 4:1, rt, 3 hr, 88%; (b) (FmO)2P-NiPr2 7 (Mentel et al., 2011), 1H-tetrazole, CH2Cl2, rt, 1 hr, then AcO2H, −80°C-rt, 1 hr, 83% over two steps; (c) (Coum)(FmO)P-NiPr2 8 (Subramanian et al., 2010), 1H-tetrazole, CH2Cl2, rt, 1 hr, then AcO2H, −80°C-rt, 1 hr, 79%; (d) CH2Cl2:HCO2H 1:19, rt, 6 hr; (e) Pr-C(OMe)3, CH2Cl2, JandaJel pyridinium trifluoroacetate, rt, 23 hr, 37.5% over five steps based on 3.
 
-## 3,6-Di-O-butyryl-1,2-O-isopropylidene-myo-inositol 5
+#### 3,6-Di-O-butyryl-1,2-O-isopropylidene-myo-inositol 5
 
 3,6-Di-O-butyryl-1,2:4,5-di-O-isopropylidene-myo-inositol 3 (801 mg, 2 mmol) was dissolved in dichloromethane:formic acid (4:1, 16 mL) at 25°C with stirring. After 4 hr, the solution was diluted with dichloromethane (100 mL) and washed with phosphate buffer (pH 7, 150 mL). The pH of the aqueous phase was adjusted to 6–7 by the careful addition of saturated sodium bicarbonate solution (~95 mL). The aqueous layer was extracted twice with dichloromethane (2 × 100 mL), the pooled organic phases were dried (Na2SO4), filtrated and evaporated under reduced pressure. The solid residue obtained was dried at 0.2 mbar to give the title compound (633 mg, 87.8%) as a white solid.
 
@@ -141,7 +619,7 @@ Mp108–110°C.
 
 HR-MS (ESI positive) calculated C17H29O8 m/z 361.18569, found 361.18588 [M + H]+.Rosahl
 
-## 3,6-Di-O-butyryl-4(5)-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1,2-O-isopropylidene-myo-inositol (mixture of 4-O- and 5-O- isomers with respect to the position of the caged phosphate) 6a,b
+#### 3,6-Di-O-butyryl-4(5)-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1,2-O-isopropylidene-myo-inositol (mixture of 4-O- and 5-O- isomers with respect to the position of the caged phosphate) 6a,b
 
 3,6-Di-O-butyryl-1,2-O-isopropylidene-myo-inositol 5 (900 mg, 2.5 mmol) is subsequently evaporated with acetonitrile (5 mL) and 1H-tetrazole solution in acetonitrile (11 mL, 5 mmol,~0.45 M). The remaining solids were suspended in anhydrous dichloromethane (15 mL) and a solution of bis-(9H-fluoren-9-ylmethyl)-N,N-diisopropylphosphoramidite 7 (1.25 g, 2.4 mmol) in dichloromethane (5 mL) was added. The mixture was stirred for 1 hr at 24°C. After cooling to −80°C (acetone/liquid nitrogen), peracetic acid solution (610 µL, 3.6 mmol, 39% in 45% acetic acid) was added. The cooling bath was removed and stirring continued for 1 hr. The solution was diluted with dichloromethane (50 mL) and poured into stirring phosphate buffer (pH 7, 200 mL). The pH was adjusted to neutral by the careful addition of saturated sodium bicarbonate solution. The organic layer was separated, washed with phosphate buffer (pH 7, 100 mL), dried (Na2SO4), filtrated and concentrated under reduced pressure to give 1.84 g of a white foam. The crude product was purified by chromatography on a column of silica gel 60 (20 × 3 cm) with 1. dichloromethane:cyclohexane 1:5 (300 mL), 2. 1:3 (100 mL), 3. 1:1, four ethyl acetate:methanol 9:1 (400 mL). A second chromatography with 1. dichloromethane:methanol 1:0 (1 L), 2. 98:2 (100 mL), 3. 96:4 (100 mL), 94:6 (100 mL), 92:8 (100 mL) afforded the title compound as white foam (1.58 g, 82.7%).
 
@@ -151,7 +629,7 @@ TR100% methanol = 3.7 min.
 
 31P NMR (162 MHz, CDCl3) δ = −0.49,–0.51.
 
-## 3,6-Di-O-butyryl-4(5)-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosporyl-5(4)-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1,2-O-isopropylidene-myo-inositol (mixture of 4-O- and 5-O- isomers with respect to the position of the caged phosphate) 9a,b
+#### 3,6-Di-O-butyryl-4(5)-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosporyl-5(4)-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1,2-O-isopropylidene-myo-inositol (mixture of 4-O- and 5-O- isomers with respect to the position of the caged phosphate) 9a,b
 
 Inositol 6a,b (1.52 g, 1.91 mmol) is evaporated with 1H-tetrazole solution in acetonitrile (12.54 mL, 5.73 mmol,~0.45 M). The solids were then evaporated two times with acetonitrile (2 × 2 mL). Anhydrous dichloromethane (8 mL) and a solution of (7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-9-ylmethyl)-N,N-diisopropylaminophosphoramidite 8 (1.51 g, 2.6 mmol) in dichloromethane (15 mL) were subsequently added. The mixture was stirred for 2.5 hr, diluted with dichloromethane (20 mL) and cooled to −80°C. With stirring peracetic acid solution (727 µL, 4.29 mmol, 39% in 45% acetic acid) was added. The cooling bath is removed and the slightly yellow mixture was stirred for 1 hr. The reaction was then poured into phosphate buffer (200 mL, pH 7) and the pH was adjusted to neutral by the careful addition of saturated sodium bicarbonate solution. The organic layer was separated and the aqueous phase extracted two times with dichloromethane (2 × 50 mL). The combined extracts were dried (Na2SO4), filtrated and evaporated under reduced pressure to afford a slightly colored foam (2.8 g) that was purified by chromatography on column of silica gel 60 (120 mL, 18 × 4 cm) with 1. dichloromethane (200 mL), 2. ethyl acetate:cyclohexane 3:1 (200 mL), 3. ethyl acetate:cyclohexane 4:1 (300 mL) to afford the title compound as a light yellow foam (2.5 g).
 
@@ -165,7 +643,7 @@ Part of the compound (100 mg) was further purified by semi-preparative HPLC (97.
 
 HR-MS (ESI positive) calculated C73H75KNO16P2 m/z 1322.41927, found 1322.42088 [M + K]+.
 
-## 3,6-Di-O-butyryl-4(5)-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosphoryl-5(4)-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-myo-inositol (mixture of 4-O- and 5-O-isomers) 4a,b
+#### 3,6-Di-O-butyryl-4(5)-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosphoryl-5(4)-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-myo-inositol (mixture of 4-O- and 5-O-isomers) 4a,b
 
 Ketal 9a,b (2.5 g, 1.95 mmol) is treated with dichloromethane (750 µL) and formic acid (16 mL, 424 mmol). The yellow solution is stirred at 25°C for 6 hr. The reaction was then poured into phosphate buffer (from 300 mL buffer pH 7 and 200 mL 1 M K2HPO4 solution) and extracted with ethyl acetate (3 × 100 mL). The combined extracts were dried (Na2SO4), filtrated and evaporated under reduced pressure to afford a yellow foam (2.2 g). The crude compound is dried overnight at 0.2 mbar.
 
@@ -175,7 +653,7 @@ Ketal 9a,b (2.5 g, 1.95 mmol) is treated with dichloromethane (750 µL) and form
 
 HR-MS (ESI positive) calculated C70H71NNaO16P2 m/z 1266.41403, found 1266.41571 [M + Na]+.
 
-## 2,3,6-Tri-O-butyryl-4(5)-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosphoryl-5(4)-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-myo-inositol (mixture of 4-O- and 5-O- isomers with respect to the position of the caged phosphate) 10a,b
+#### 2,3,6-Tri-O-butyryl-4(5)-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosphoryl-5(4)-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-myo-inositol (mixture of 4-O- and 5-O- isomers with respect to the position of the caged phosphate) 10a,b
 
 1H NMR (400 MHz, CDCl3) δ = 7.80–7.03 (m, 24H), 7.0–6.85 (m, 1H, coum H-5), 6.53–6.24 (m, 2H, coum H-8, H-6), 5.99–5.93 (0.6H, 4-cage, dia-1/2), 5.97 (s, coum H-3, dia-2, 4-cage), 5,96 (s, coum H-3, dia-1, 4-cage), 5.86 (s, 0.4H, coum H-3, 5-cage), 5.63–5.50 (m, 1H, ins H-2), 5.46–5.23 (m, 1H, ins H-6,), 5.09–4.93 (m, 1H, ins H-3), 4.92–4.66 (m, 4.8H, ins H-4), 4.65–4.22 (m, 6.2H, ins H-5), 4.22–3.88 (m, 6H, ins H-5, dia-1), 3.87–3.78 (m, 0.4H, ins H-1, dia-2), 3.78–3.69 (m, 0.6H, ins H-1, dia-1), 3.43–3.26 (m, 4H, 2xNCH2), 2.49–2.02 (m, 6H, 3xα-CH2), 1.73–1.33 (m, 6H, 3xβ-CH2), 1.21–1.07 (m, 6H, 2xNCH2CH3), 0.97 (t, J = 7.6, 1H, CH3, 5-cage), 0.94–0.84 (m, 2H, CH3, 4-cage, dia-1/2), 0.84–0.74 (m, 6H, 2xCH3).
 
@@ -185,13 +663,13 @@ HR-MS (ESI positive) calculated C70H71NNaO16P2 m/z 1266.41403, found 1266.41571 
 
 HR-MS (ESI positive) calculated C74H77NNaO17P2 m/z 1336.45589, found 1336.45569 [M + Na]+.
 
-## Synthesis of 1a,b
+#### Synthesis of 1a,b
 
 ![Chemical structure 2.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig10-v2.jpg)
 
 Reagents and conditions: (f) (dioctanoylglycerol)(OFm)P-NiPr2 11(Subramanian et al., 2010), 1H-tetrazole, CH2Cl2, rt, 1 hr, then AcO2H, −80°C-rt, 1 hr, 67% over two steps; (g) CH2Cl2, EtNMe2, rt, 30 min; (h) acetoxymethyl bromide, N,N-diisopropylethylamine, acetonitrile, rt, 22 hr, 65% over two steps;
 
-## 2,3,6-Tri-O-butyryl-4(5)-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosphoryl-5(4)-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1-O-(9H-fluoren-9-ylmethyl)-(1’,2’-di-O-octanoyl-sn-glycero)phosphoryl-myo-inositol (mixture of 4-O- and 5-O- isomers with respect to the position of the caged phosphate) 12a,b
+#### 2,3,6-Tri-O-butyryl-4(5)-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosphoryl-5(4)-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1-O-(9H-fluoren-9-ylmethyl)-(1’,2’-di-O-octanoyl-sn-glycero)phosphoryl-myo-inositol (mixture of 4-O- and 5-O- isomers with respect to the position of the caged phosphate) 12a,b
 
 Mono alcohol 10a,b (445 mg, 0.34 mmol) in 1H-tetrazole solution in acetonitrile (~0.45 M, 3 mL, 1.37 mmol) was evaporated under reduced pressure. The solid obtained was again evaporated with acetonitrile (2 mL) to dryness. The residue was suspended in anhydrous dichloromethane (5 mL) and neat 3-O-(9H-fluoren-4-ylmethyl)−1,2-di-O-octanoyl-sn-glycero-N,N-diisopropylphosphoramidite 11 (450 µL,~0.67 mmol) was added. After stirring for 1 hr at 20°C the mixture was cooled in a liquid N2/acetone bath. Peracetic acid solution (39% in 45% acetic acid, 240 µL, 1.4 mmol,) was added and the cooling bath was removed. After 1 hr the solution was concentrated under reduced pressure. The residue obtained was twice evaporated with toluene (2 × 20 mL), washed two times with water (2 × 20 mL) and dried in high vacuum for 2 hr.
 
@@ -209,7 +687,7 @@ Rf cyclohexane:ethyl acetate 1:1 = 0.57.
 
 HR-MS (ESI positive) calculated C107H122NNaO24P3 m/z 1920.74618, found 1920.74599 [M + Na]+.
 
-## 2,3,6-Tri-O-butyryl-4(5)-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)phosphoryl-5(4)-O-phosphoryl-1-O-(1’,2’-di-O-octanoyl-sn-glycero)phosphoryl-myo-inositol tetrakis(acetoxymethyl) ester (mixture of 4-O- and 5-O- isomers with respect to the position of the caged phosphate) 1a,b
+#### 2,3,6-Tri-O-butyryl-4(5)-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)phosphoryl-5(4)-O-phosphoryl-1-O-(1’,2’-di-O-octanoyl-sn-glycero)phosphoryl-myo-inositol tetrakis(acetoxymethyl) ester (mixture of 4-O- and 5-O- isomers with respect to the position of the caged phosphate) 1a,b
 
 Purified 12a,b (66 mg, 35 µmol) was dissolved in acetonitrile (2 mL) and dimethylethylamine (1 mL, 9.2 mmol) under argon. After 30 min of stirring at 20°C all volatiles were removed at 0.3 mbar for 1 hr. Under argon atmosphere, anhydrous acetonitrile (1 mL), N,N-diisopropylethylamine (145 µL, 834 µmol) and acetoxymethyl bromide (54.5 µL, 556 µmol) were subsequently added. The flask was tightly sealed and the mixture was stirred overnight at 20°C protected from light. After 22 hr all volatiles were removed at 0.3 mbar. The residue was twice evaporated with toluene (2 × 3 mL) and subjected to semi-preparative HPLC using 92% methanol as eluent. The last peak (tR = 12 min) was collected and the solvent was evaporated under reduced pressure. The residue (39.1 mg) was extracted three times with water (3 × 1 mL). The remaining oil was dried at 0.3 mbar to yield caged PI(4,5)P2/AM 1a,b as a yellow oil (33.2 mg, 64.8%).
 
@@ -219,13 +697,13 @@ TR90% methanol = 13 min.
 
 HR-MS (ESI positive) calculated C63H98NNaO32P3 m/z 1496.51770, found 1496.51780 [M + Na]+.
 
-## Synthesis of 2a,b
+#### Synthesis of 2a,b
 
 ![Chemical structure 3.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig11-v2.jpg)
 
 Reagents and conditions, A: (f) (2-O-arachidonyl-1-O-stearoylglycerol)(OFm)P-NiPr214, 1H-tetrazole, CH2Cl2, rt, 1 hr, then AcO2H, −80°C-rt, 1 hr, 89%; (g) CH2Cl2, EtNMe2, rt, 30 min; (h) acetoxymethyl bromide, N,N-diisopropylethylamine, MeCN, rt, 22 hr, 43% over two steps; for 19 30% over two steps; B: (i) 2-arachidonyl-3-stearoylglycerol 16 (Nadler et al., 2013), 1H-tetrazole, CH2Cl2, 2 hr, 0–21°C, 94%.
 
-## 3-O-(9H-Fluoren-9-ylmethyl)-1-O-stearoyl-2-O-arachidonyl-sn-glycero-N,N-diisopropylphosphoramidite 14
+#### 3-O-(9H-Fluoren-9-ylmethyl)-1-O-stearoyl-2-O-arachidonyl-sn-glycero-N,N-diisopropylphosphoramidite 14
 
 2-O-Arachidonyl-1-O-stearoyl-sn-glycerol 16 (415 mg, 0.64 mmol) and 1H-tetrazole solution in acetonitrile (~0.45 M, 1.43 mL, 0.64 mmol) were evaporated at 0.4 mbar for 1 hr. Under argon atmosphere a solution of phosphoramidite 13 (275 mg, 0.64 mmol) in anhydrous dichloromethane (5 mL) was added. The suspension was cooled in an ice bath. After 30 min the cooling bath was removed and stirring was continued at 20°C. After 2 hr the mixture was diluted with cyclohexane (10 mL) and concentrated under reduced pressure. The residue was purified by chromatography on column of silica gel 60 (100 mL, 9 × 4 cm) with cyclohexane:ethyl acetate:triethylamine 92:7:1. Individual fractions we analyzed by TLC (deactivated silica).
 
@@ -241,7 +719,7 @@ Purity: ~96% (NMR).
 
 HR-MS (ESI positive) calculated C61H96NNaO7P m/z 1008.68224, found 1008.68592 [M + Na + O]+.
 
-## 2,3,6-Tri-O-butyryl-4(5)-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosphoryl-5(4)-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1-O-(9H-fluoren-9-ylmethyl)-(1’-O-stearoyl-2’-O-arachidonyl-sn-glycero)phosphoryl-myo-inositol (mixture of 4-O- and 5-O- isomers with respect to the position of the caged phosphate) 15a,b
+#### 2,3,6-Tri-O-butyryl-4(5)-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosphoryl-5(4)-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1-O-(9H-fluoren-9-ylmethyl)-(1’-O-stearoyl-2’-O-arachidonyl-sn-glycero)phosphoryl-myo-inositol (mixture of 4-O- and 5-O- isomers with respect to the position of the caged phosphate) 15a,b
 
 Head group 10a,b (198 mg, 151 µmol) was evaporated with 1H-tetrazole in acetonitrile solution (1.5 mL, 675 µmol) to dryness at <0.3 mbar. Under argon atmosphere, anhydrous dichloromethane (5 mL) and neat phosphoramidite 14 (152 mg, 157 µmol) were added with stirring at 21°C. After 2 hr the mixture was diluted with dichloromethane (15 mL), cooled in a dry ice/acetone bath and peracetic acid solution (39% in 45% acetic acid, 35 µL, 206 µmol) was added. The cooling bath was removed and the mixture was allowed to come to room temperature. After 45 min the oxidation was quenched by stirring with aqueous ascorbic acid solution (0.2 M, 0.5 mL) and phosphate buffer (pH 7, 50 mL). The organic phase was separated, washed with water (50 mL), dried (Na2SO4), filtered and evaporated under reduced pressure. The remaining oil (350 mg) was purified by chromatography on a column of LiChroprep RP18 (14 × 3 cm) with methanol (1.500 mL). The yellow band on top of the column was eluted with dichloromethane (200 mL). The solvent was removed under reduced pressure to afford the compound.
 
@@ -255,7 +733,7 @@ Yield: 295 mg (89.1%) yellow oil.
 
 HR-MS (ESI positive) calculated C129H159NNO24P3 m/z 2199.04594, found 2199.04847 [M + H]+.
 
-## 2,3,6-Tri-O-butyryl-4(5)-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)phosphoryl-5(4)-O-phosphoryl-1-O-(1’-O-stearoyl-2’-O-arachidonyl-sn-glycero)phosphoryl-myo-inositol tetrakis(acetoxymethyl) ester (mixture of 4-O- and 5-O- isomers with respect to the position of the caged phosphate) 2a,b
+#### 2,3,6-Tri-O-butyryl-4(5)-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)phosphoryl-5(4)-O-phosphoryl-1-O-(1’-O-stearoyl-2’-O-arachidonyl-sn-glycero)phosphoryl-myo-inositol tetrakis(acetoxymethyl) ester (mixture of 4-O- and 5-O- isomers with respect to the position of the caged phosphate) 2a,b
 
 In a 50 mL pear shaped flask 15a,b (160 mg, 72.7 µmol) was treated with acetonitrile (3 mL) and dimethylethylamine (3 mL, 27.7 mmol). After 30 min volatiles were removed under reduced pressure. The slightly colored oil obtained was dried at 0.3 mbar for 1 hr. Anhydorous acetonitrile (2 mL), diisopropylethylamine (442 µL, 2.52 mmol) and acetoxymethyl bromide (165 µL, 1.68 mmol) were subsequently added under argon atmosphere. The flask was sealed and the mixture was stirred in the dark at 21°C for 22 hr. The mixture was diluted with acetonitrile (10 mL) and evaporated under reduced pressure. The yellow residue obtained was suspended in acetonitrile, filtrated, concentrated under reduced pressure and purified by preparative HPLC (100% methanol).
 
@@ -281,13 +759,13 @@ Yield: 35 mg (29.7%) colorless oil, tR (100% methanol)=11 min
 
 HR-MS (ESI positive) calculated C74H123NaO32P3 m/z 1639.71025, found 1639.71082 [M + Na]+.
 
-## Structure determination of 4- and 5-isomers
+#### Structure determination of 4- and 5-isomers
 
 ![Chemical structure 4.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig12-v2.jpg)
 
 Reagents and conditions: (a) (FmO)2P-NiPr2 7, 1H-tetrazole, CH2Cl2, rt, 1 hr; then AcO2H, −80°C–rt, 1 hr, separation of isomers; (b) (CoumO)(FmO)P-NiPr2 8, 1H-tetrazole, CH2Cl2, rt, 1 hr, then AcO2H, −80°C-rt, 1 hr, 75.2% over two steps; (c) CH2Cl2:HCO2H 1:16, rt, 0.5 hr, 85.5%; (d) CH2Cl2:HCO2H 1:19, rt, 2 hr, 89.6%; (e) poly(4-vinylpyridine)/TFA, molecular sieve 4 Å, CH2CH2, n-PrC(OMe)3, rt, 23 hr.
 
-## 3,6-Di-O-butyryl-4-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1,2-O-isopropylidene-myo-inositol 6a
+#### 3,6-Di-O-butyryl-4-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1,2-O-isopropylidene-myo-inositol 6a
 
 Crude 6a,b (1.3 g, mixture of 4- and 5-phosphorylated isomers, prepared as above from 668 mg, 1.85 mmol diol 5) was purified by four runs on a column of silica gel 60 (4 × 26 cm) using ethyl acetate:cyclohexane (32:68) as eluent. Fraction containing the pure 4-isomer (Rf = 0.23, eluent) were pooled and evaporated under reduced pressure to give the title compound (200 mg, 13.5%).
 
@@ -299,7 +777,7 @@ Crude 6a,b (1.3 g, mixture of 4- and 5-phosphorylated isomers, prepared as above
 
 TR (Nucleodur 100–5 C18ec, 90% methanol) = 8.4 min.
 
-## 3,6-Di-O-butyryl-5-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1,2-O-isopropylidene-myo-inositol 6b
+#### 3,6-Di-O-butyryl-5-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1,2-O-isopropylidene-myo-inositol 6b
 
 From above purification, the 5-phosphorylated isomer (420 mg, 28.4.5%, Rf = 0.29) was also isolated.
 
@@ -315,7 +793,7 @@ Mp. 161–162°C.
 
 HR-MS (ESI positive) calculated C45H49NaO11P m/z 819.29047, found 819.29095 [M + Na]+.
 
-## 3,6-Di-O-butyryl-4,5-di-O,O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1,2-O-isopropylidene-myo-inositol 15
+#### 3,6-Di-O-butyryl-4,5-di-O,O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1,2-O-isopropylidene-myo-inositol 15
 
 From above purification, the 4,5-diphosphorylated derivative 15 (60 mg) was also isolated.
 
@@ -329,7 +807,7 @@ TR100% methanol = 5.0 min.
 
 HR-MS (ESI positive) calculated C73H70NNaO14P2 m/z 1255.41330, found 1255.41416 [M + Na]+.
 
-## 3,6-Di-O-butyryl-4-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosporyl-5-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1,2-O-isopropylidene-myo-inositol 9b
+#### 3,6-Di-O-butyryl-4-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosporyl-5-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-1,2-O-isopropylidene-myo-inositol 9b
 
 Monophosphate 6b (350 mg, 0.44 mmol) and 1H-tetrazole solution in acetonitrile (0.45 M, 3.6 mL) was evaporated at 0.3 mbar. To the solid obtained was added a solution of phosphoramidite 8 in dichloromethane (12 mL) under an argon atmosphere with stirring at 21°C. After 1 hr the reaction was cooled in a dry ice/acetone bath and peracetic acid solution (39%, 170 µL, 1.0 mmol) was added. The cooling bath was removed and stirring continued at room temperature for 1 hr. The mixture was washed twice with phosphate buffer (pH7, 2 × 200 mL), and water (100 mL), dried (Na2SO4), filtrated and evaporated under reduced pressure to afford a yellow foam (641 mg). The crude compound was subjected to chromatography on a LiChroprep RP18 column (98 g) with a stepwise gradient of methanol:water 9:1 (2 L), 94:6 (0.5 L) and 96:4 (0.5 L).
 
@@ -345,7 +823,7 @@ TR (Nucleodur 100–5 C18ec, 100% MeOH)=3.4 min.
 
 HR-MS (ESI positive) calculated C73H75NNaO16P2 m/z 1306.44533, found 1306.44675 [M + Na]+.
 
-## 3,6-Di-O-butyryl-4-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosphoryl-5-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-myo-inositol 4b
+#### 3,6-Di-O-butyryl-4-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosphoryl-5-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-myo-inositol 4b
 
 A solution of 9b (340 mg, 0.26 mmol) in dichloromethane (1 mL) and formic acid (16 mL, 424 mmol) was stirred at 21°C. After 2 hr the solution is poured into a stirring mixture of phosphate buffer (pH 7, 200 mL) and ethyl acetate (50 mL). The yellow organic phase was separated, washed twice with phosphate buffer (2 × 200 mL), dried (Na2SO4), filtrated and evaporated under reduced pressure.
 
@@ -361,7 +839,7 @@ TR (Nucleodur 100–5 C18ec, 100% methanol)=2.6 min.
 
 HR-MS (ESI positive) calculated C70H71NNaO16P2 m/z 1266.41403, found 1266.41622 [M + Na]+.
 
-## 3,6-Di-O-butyryl-5-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-myo-inositol 17b
+#### 3,6-Di-O-butyryl-5-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-myo-inositol 17b
 
 To a solution of 6b (16.9 mg, 26.2 µmol) in dichloromethane (0.75 mL) formic acid (12 mL, 318 mmol) was added with stirring. After 10 min analytical HPLC indicated almost complete reaction. After 0.5 hr the solution is poured into a stirring mixture of phosphate buffer (pH 7, 200 mL) and ethyl acetate (50 mL). The organic phase was separated, washed with phosphate buffer (200 mL), dried (Na2SO4), filtrated and evaporated under reduced pressure. The crude compound was purified by semi-preparative HPLC in four runs.
 
@@ -379,7 +857,7 @@ Mp 165–169°C.
 
 HR-MS (ESI positive) calculated C42H45NaO11P m/z 779.25917, found 779.25958 [M + Na]+.
 
-## 2,3,6-Tri-O-butyryl-4-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosphoryl-5-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-myo-inositol 10b
+#### 2,3,6-Tri-O-butyryl-4-O-(7-diethylamino-2-oxo-2H-chromen-4-ylmethyl)-(9H-fluoren-4-ylmethyl)phosphoryl-5-O-bis(9H-fluoren-9-ylmethyl)phosphoryl-myo-inositol 10b
 
 The residue was subjected to chromatography on a column of LiChrospher 100 RP18 (98 g) with 1. 84% (1 L), 86% (2 L), and 90% methanol (2 L).
 
@@ -407,13 +885,13 @@ HR-MS (ESI positive) calculated C74H77NNaO17P2 m/z 1336.45589, found 1336.45664 
 
 Mp. 103–105°C.
 
-## Synthesis of 7-diethylamino-4-hydroxymethyl-2-oxo-2H-chromen 20
+### Synthesis of 7-diethylamino-4-hydroxymethyl-2-oxo-2H-chromen 20
 
 ![Chemical structure 5.](https://cdn.elifesciences.org/articles/30203/elife-30203-fig13-v2.jpg)
 
 Conditions: (a) DMF-DMA, 140°C, 22 hr, 70%; (b) NaIO4, THF:H2O 1:1, 25°C, 2 hr, 97%; (c) NaBH4, MeOH, 25°C, 60%. Abbreviations: DMF N,N-dimethylformamide, DMF-DMA dimethylformamide dimethylacetal, THF tetrahydrofuran, MeOH methanol, R 7-diethylamino-2-oxo-2H-chromen-4-yl.
 
-## 7-Diethylamino-4-(2-dimethylamino-1-E-ethen-1-yl)−2-oxo-2H-chromen 18
+#### 7-Diethylamino-4-(2-dimethylamino-1-E-ethen-1-yl)−2-oxo-2H-chromen 18
 
 7-Diethylamino-4-methyl-2-oxo-2H-chromen (11.56 g, 50 mmol) and N,N-dimethylformamide dimethylacetal (10 mL, 75 mmol) in anhydrous N,N-dimethylformamide (20 mL) were stirred at 140°C for 22 hr under argon atmosphere. After allowing to cool to room temperature, volatiles were removed under reduced pressure. The residue was triturated with cyclohexane (20 mL) and filtrated. The filter cake was suspended in acetone (50 mL), filtrated and washed with two portions of acetone (2 × 25 mL). The compound 18 was obtained as a yellow solid (10 g, 34.9 mmol, 69.8%).
 
@@ -427,7 +905,7 @@ Mp 175–177.5°C
 
 HR-MS (ESI positive) calculated C17H23N2O2 m/z 287.17540, found 287.17557 [M + H]+.
 
-## 7-Diethylamino-4-formyl-2-oxo-2H-chromen 19
+#### 7-Diethylamino-4-formyl-2-oxo-2H-chromen 19
 
 Sodium (meta)periodate (22.4 g, 105 mmol) was added to a stirring suspension of 18 (10 g, 35 mmol) in tetrahydrofuran:water (1:1, 500 mL). After 2 hr, solids were removed by filtration and washed with ethylacetate (300 mL). The organic layer was separated, washed twice with saturated sodium bicarbonate solution (2 × 200 mL), dried (Na2SO4), filtrated and evaporated under reduced pressure. The black residue obtained was dissolved in dichloromethane and dried under high vacuum to afford compound 19 (8.3 g, 33.8 mmol, 96.9%).
 
@@ -437,7 +915,7 @@ Sodium (meta)periodate (22.4 g, 105 mmol) was added to a stirring suspension of 
 
 TR70% methanol = 3.7 min.
 
-## 7-Diethylamino-4-hydroxymethyl-2-oxo-2H-chromen 20
+#### 7-Diethylamino-4-hydroxymethyl-2-oxo-2H-chromen 20
 
 Sodium borohydride (5.55 g, 146.7 mmol) was added portion wise to a stirring solution of 19 in methanol (400 mL) over the course of 45 min. After 1.5 hr, 1 N HCl (150 mL) was added with stirring and the solution was concentrated under reduced pressure. The mixture was made alkaline by addition of saturated sodium bicarbonate solution (~50 mL) and extracted three times with ethyl acetate (3 × 100 mL). The combined organic layers were dried (Na2SO4), filtrated and evaporated under reduced pressure. The dark tar obtained was purified by chromatography on a column of Poligoprep 60–80 RP18 (100 g) to give the pure compound as a tan solid (5 g, 20.3 mmol, 60%).
 
@@ -451,15 +929,15 @@ Rf cyclohexane:acetone 3:1 = 0.22.
 
 Mp 143–144°C (literature mp (Eckardt et al., 2002) 175–185°C).
 
-## Plasmids
+### Plasmids
 
 The following plasmids were generously given to us: Human mRFP-PH(PLCδ1) from Ken Mackie (The Gill Center for Biomolecular Science, Bloomington, Indiana); GFP-PKD-C1ab from Tamas Balla (National Institutes of Health, Bethesda, MD), M1R from Neil Nathanson (University of Washington, Seattle, WA), Lifeact-RFP (pmRFPruby-N1*Lifeact (GB lab plasmid nr 28) in pmRFPruby-N1) from Geerd van den Gogaard (Radboud University Medical Center, Nijmegen, the Netherlands), and the PLCδ4-PH-mKate2 plasmid from Thomas F. J. Martin (Department of Biochemistry, University of Wisconsin) and the EGFP-PH-PH (PLCδ1) plasmid from Michael Krauss (Leibniz-Forschungsinstitut für Molekulare Pharmakologie, Berlin, Germany). The PLCδ4-PH was fused to an EGFP lentiviral plasmid under the control of CMV promotor and lentiviral particles were produced following standard protocols. HEK and COS-7 cells were transfected using Lipofectamine 2000 (Life Technologies) or Lipofectamine LTX (in the case of Lifeact-RFP, Thermo Fisher) according to manufacturer’s protocol using a total amount of 1.8 µg of DNA per well (6-well plate) for HEK cells and 2 µg EGFP-PH-PH together with 1 µg mCherry-INPP5E-CAAX for COS-7 cells.
 
-## PI(4,5)P2 uncaging in vitro
+### PI(4,5)P2 uncaging in vitro
 
 For imaging of PI(4,5)P2 on glass, cg-PI(4,5)P2 was added to imaging buffer (HBSS with 5% FCS) to a final concentration of 20 µM. The high-affinity PI(4,5)P2-sensor PLCδ1-PH-GFP was stored in a 1.8 mg/ml PBS/20% Glycerol stock. This was added 1:20 to the cg-PI(4,5)P2 solution (e.g. 5 µl in 100 µl). The solution was pipetted onto a glass coverslip and imaged using a TIRF microscope (Nikon Ti Eclipse), equipped with an incubation chamber (37°C), a x60 TIRF objective (Apo TIRF 1.49NA, Nikon), a sCMOS camera (Neo, Andor), four excitation laser lines: (405,488 nm, 568 nm, 647 nm) an appropriate dicroic mirror (Di01-R405/488/561/635),filter (FF01-446/523/600/677). The TIRF microscope was operated by open-source ImageJ-based micromanager software (https://micro-manager.org/). Images were captured at 1 s intervals using a 488 nm laser (200 ms exposure) at 50% power (30 MW). Image analysis was performed with Fiji (ImageJ). Each 488 nm excitation frame was immediately followed by an uncaging frame, performed using a 405 nm laser (200 ms exposure) at 100% power (60 MW). ROIs of cg-PI(4,5)P2 on glass were selected in the 405 nm channel and the fluorescence intensities of the PLCδ1-PH-EGFP sensor in the same ROIs in response to uncaging over time measured in the 488 nm channel
 
-## Imaging of cellular cg-PI(4,5)P2 uptake and uncaging (Figure 2b and c)
+### Imaging of cellular cg-PI(4,5)P2 uptake and uncaging (Figure 2b and c)
 
 HEK 293T and COS-7 cells used for experiments depicted in Figure 2b and c were purchased from ATCC (https://www.lgcstandards-atcc.org); the identity of the cells has been confirmed by STR profiling performed by ATCC. Cell lines were tested for mycoplasma contaminations on a monthly basis. Cells were cultured in DMEM medium (Lonza) supplied with 10% fetal bovine serum (FBS, Gibco 10270–106) and 1% penicillin/streptomycin. Cells were not used beyond passage 30 from original. Preparation of cg-PI(4,5)P2 was performed in the dark under red light. Loading solution was prepared by adding cg-PI(4,5)P2 to imaging buffer (HBSS with 5% FCS) to a final concentration of 20 µM (from a 20 mM DMSO-stock). An equal volume of Pluronic F-127 (Thermo Fisher Scientific, 20% in DMSO) was added (final concentration: 0.02% Pluronic F-127). The final DMSO concentration was 0.2%. The loading solution was thoroughly vortexed for 3 min. Cell medium was removed from the cells and cg-PI(4,5)P2 loading solution was pipetted gently in at the edge of the well. Cells were incubated with the loading solution for 30 min in a CO2-incubator at 37°C. Loading solution was removed and cells were gently washed twice with imaging buffer. Control loading solutions contained DMSO in place of cg-PI(4,5)P2. CellMask Deep Red plasma membrane stain was stored in the dark at room temperature in a 5 mg/ml stock in DMSO (Thermo Fisher Scientific) was applied to HEK 293 T cells after loading with cg-PI(4,5)P2. Cells were incubated in CellMask (1:1000 dilution of stock in imaging buffer) for 5 min. Cells were washed twice in imaging buffer and imaged immediately.
 
@@ -467,17 +945,17 @@ The experiments depicted in Figure 2b were performed on a Spinning Disk Confocal
 
 For experiments depicted in Figure 2c, COS-7 cells were transfected with EGFP-PH-PH (PLCδ1) and mChINPP5E-CAAX (Posor et al., 2013). Cells were loaded with cg-PI(4,5)P2 and Pluronic F-127 as described above and imaged on the TIRF setup as described for the in vitro imaging. Images were captured at 1 s intervals with 200 ms exposure using a 488 nm laser at 50% power (30 MW), immediately followed by a 561 nm laser at 100% power (50 MW). Between the 10th and 11th loop (10–11 s), UV uncaging was performed with a single 400 ms exposure frame using a 405 nm laser at 100% power (60 MW). COS-7 cells expressing the constitutive phosphatase and lipid sensor were analysed by selecting circular ROIs of plasma membrane in the 488 nm channel only and measuring mean intensities over time. A ratio of fluorescence intensity in these ROIs was calculating by dividing intensities after the UV uncaging frame by the corresponding intensities prior to the UV uncaging frame.
 
-## tsA201 cell culture and microscopy
+### tsA201 cell culture and microscopy
 
 tsA201 cells were purchased from Sigma-Adrich (St. Louis, MO, USA), and the identity of the cells has been confirmed by STR profiling performed by Sigma-Aldrich. The cells have been eradicated from mycoplasma at the European Collection of Cell Cultures (ECACC). Cells were cultured at 37°C and 5% CO2 in DMEM-medium (Invitrogen Inc, Carlsbad, USA) supplemented with 10% FBS (PAA, Pasching, Austria) and 0.2% penicillin/streptomycin (Invitrogen Inc., USA). Transfection was performed with Lipofectamine 2000 (Invitrogen Inc., USA) according to the manufacturer’s specifications. Cells were plated onto poly-D-lysine coated glass chips 16–20 hr before experiments. The tsA201 cell experiments were carried out at room temperature on a Zeiss LSM710 laser confocal microscope (Zeiss LLC, Thornwood, NY). Cells were superfused with Ringer’s solution (160 mM NaCl, 2.5 mM KCl, 2 mM CaCl2, 1 mM MgCl2, 8 mM glucose, and 10 mM HEPES at pH 7.4) throughout the experiments. Uncaging of PI(4,5)P2 was achieved on the microscope by a combined 5 s light pulse of both a 405 nm diode and a 451 nm laser line at 50% intensity of the light sources.
 
-## Lifeact-RFP imaging (Figure 3a)
+### Lifeact-RFP imaging (Figure 3a)
 
 The Lifeact-RFP experiments depicted in Figure 3a were performed in HEK 293T cells provided by Dr Therese Schaub and Victor Tarabykin (Institute of Cell Biology and Neurobiology, Charité Berlin). These were cultured in DMEM GlutaMAX (Thermo Fisher/Gibco) supplied with 10% fetal bovine serum (FBS, Gibco 16140063) and 1% penicillin/streptomycin at 37°C in a humidified atmosphere (5% CO2). Cells were not used beyond passage 40 from original. This cell line was not tested for mycoplasm contaminations. The cells density was between 0,25–1 × 106 plated on 24 mm glass coverslips. 18–24 hr following transfection with Lifeact-RFP, loading solution was prepared by adding cg-PI(4,5)P2. to culture medium removed from cells, to a final concentration of 20 µM (from a 20 mM DMSO-stock). An equal volume of Pluronic F-127 (Thermo Fisher Scientific, 20% in DMSO) was added (final concentration: 0.02% Pluronic F-127). The final DMSO concentration was 0.2%. The loading solution was thoroughly vortexed for 3 min. Loading was performed as described above (37°C, 30 min). Cells were washed twice and imaged in a solution containing (in mM) 145 NaCl, 3 KCl, 10 HEPES, 1 CaCl2, 1 MgCl2 and 6 Glucose at pH 7.4 and osmolarity, 290 mOsm/l.
 
 Imaging was performed on a Nikon Ti eclipse TIRF microscope equipped with an incubation chamber (37°C), a x100 objective (Apo TIRF 1.49NA, Nikon), an EMCCD camera (iXon 888 Andor, EM gain set to 300), and suitable filtersets. Image acquisition was controlled by the Nikon NIS-Elements AR Software (vers. 4.51.01). Frames were collected at 2 Hz, images in the RFP channel were acquired by excitation with a 561 nm laser (2% intensity) and an exposure time of 100–200 ms. Following the acquisition of five frames in the RFP-channel, three consecutive UV frames were acquired at 2 Hz by excitation with a 405 nm laser at 25% laser intensity. Images during UV light were captured on the same camera with an exposure time of 100 ms. Imaging was then immediately resumed at 2 Hz in the RFP channel with the laser and camera settings mentioned above. Image analysis was performed offline in Fiji (ImageJ 1.50 g). Several equally sized circular ROIs were placed in the RFP images on filamentous structures presumed to be actin bundles (white circles in the left-hand images depicted in Figure 3a). The mean intensity value per ROI was calculated and corrected for background signal by subtraction of the mean intensity within one equally sized ROI placed in a background region outside the cell (yellow circle in the left-hand images depicted in Figure 3b). Background subtraction was performed in each frame. The intensity values of all ROIs within one cell were then averaged frame-wise and normalized by dividing the mean intensity values of all frames by that of the first frame. These normalized intensities were then averaged frame-wise across all investigated cells.
 
-## Chromaffin cell culture and electrophysiology
+### Chromaffin cell culture and electrophysiology
 
 Wildtype chromaffin cells were prepared as described previously (Sørensen et al., 2003) and used for experiments after 3–5 days. Cells were loaded with AM-ester coupled caged lipid compounds for varying durations. All lipid compounds were kept in 20–25 mM stock solutions in DMSO and stored at −20°C. Stock solutions were diluted in the cellular medium and Pluronic was added to facilitate uptake of the compound. The solution was heavily vortexed to avoid the generation of micelles before placing it onto the cells at a final lipid concentration of 20 µM with 0.02% Pluronic. Cells were kept in a CO2-incubator at 37°C for 30 to 45 min. In order to document successful loading of the caged compounds, cells were checked after recordings for fluorescence levels.
 
@@ -489,7 +967,7 @@ To quantify the IRP size, the cellular capacitance 2 s into the recording (after
 
 In experiments where Ca2+ was uncaged the patch pipette solution contained the following (in mM) 100 Cs-glutamate, 8 NaCl, 4 CaCl2, 32 HEPES, 2 Mg-ATP, 0.3 NaGTP, five nitrophenyl-EGTA, one ascorbic acid (to prevent photo damage to the Ca2+-dyes), 0.4 fura-4f (Invitrogen), 0.4 furaptra (Invitrogen), adjusted to pH 7.2 with CsOH. Ca2+ uncaging experiments and Ca2 +microfluorimetry were performed as described previously(Walter et al., 2014).
 
-## Fluorescence quantification and live imaging in chromaffin cells
+### Fluorescence quantification and live imaging in chromaffin cells
 
 Loading of the caged compound was evaluated semi quantitatively, using the fluorescence of the compound. To quantify the fluorescence, cells were imaged on a Zeiss Axiovert 200 equipped with a TILL Monochromator V and a 25X/N.A. 0.8 LD LCI Plan-Apo oil/water/air objective with 405 nm excitation light and an EM-CCD camera (Andor 885, gain 1). Images were exposed for 500 ms. Fluorescence intensities were quantified using Image J software (version 1.46 r) by integrating the fluorescence in a square region (61 × 61 pixel) containing the cell, subtracted by the integrated intensity of the same size of background.
 
@@ -497,6 +975,6 @@ For live-cell imaging using lentivirally encoded low-affinity PI(4,5)P2-sensor E
 
 To quantify the redistribution of PLCδ4PH-EGFP the fluorescence background was removed from images by subtracting the mean intensity of the background. Unusually bright spots on the PM, visible on some of the images, were cut out and excluded from analysis. Integrated fluorescence density of a circular region of interest (ROI1) containing the entire cell was calculated. For each cell another, smaller, ROI – ROI2 – was defined as the interior of the cell, excluding the periphery. The content of the inner ROI was subtracted from the other ROI to isolate the intensity of the periphery of the cell (which includes the plasma membrane), and the ratio of periphery to inner ROI was calculated, i.e. (ROI1-ROI2)/ROI2. This ratio was calculated as a function of time and normalized to the pre-flash ratio. These normalized values were then plotted as a function of time.
 
-## Statistics
+### Statistics
 
 Results are shown as average ±s.e.m. unless otherwise indicated, with n referring to the number of cells for each group. Two-tailed paired or unpaired t-tests or Mann-Whitney U-test (if data were heteroscedastic) were used to compare between two groups, as indicated in figure legends. Significance was assumed when p<0.05. Statistical testing was performed using SigmaPlot 12.3 (Systat Software Inc). In figures, the significance levels are indicated by asterisks; *p<0.05; **p<0.01; ***p<0.001.

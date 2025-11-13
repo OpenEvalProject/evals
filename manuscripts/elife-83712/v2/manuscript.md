@@ -14,8 +14,8 @@
 
 ### Affiliations
 
-1. https://ror.org/054225q67 CRUK Scotland Institute, Switchback Road, Bearsden Glasgow United Kingdom
-2. https://ror.org/00vtgdb53 Institute of Cancer Sciences, University of Glasgow Glasgow United Kingdom
+1. CRUK Scotland Institute, Switchback Road, Bearsden Glasgow United Kingdom ([ROR:054225q67](https://ror.org/054225q67))
+2. Institute of Cancer Sciences, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
 
 † Corresponding author
 
@@ -35,53 +35,109 @@ Recently, the CYRI-B protein (Cyfip-related RAC1-interacting protein B, formerly
 
 ## Results
 
-## CYRI-B expression increases in precancerous lesions and PDAC
+### CYRI-B expression increases in precancerous lesions and PDAC
 
 The Cyrib gene resides on human chromosome 8q24, near c-Myc, and is frequently amplified in many types of cancer, including pancreatic cancer (Nikolaou and Machesky, 2020). High expression of CYRI-B correlates with poor outcome in many cancers (Li et al., 2021; Xu et al., 2022a), including in human pancreatic cancer. To further investigate a potential role for Cyrib in pancreatic cancer, we first assessed the expression of CYRI-B in the KPC mouse model of metastatic PDAC (Hingorani et al., 2005). In this model, PanIN develops by around 10 weeks and progresses to later stages towards 15 weeks, with full-blown PDAC appearing at this stage and mice reaching end-point with a half time of median 150–200 days. As we do not currently have a reliable antibody to detect CYRI-B protein in tissue samples, tissue samples from 6-, 10-, 15-week-old KPC mice were processed for RNA in situ hybridisation (ISH). At 6 weeks, before appearance of PanIN, Cyrib was not detected in the pancreas (Figure 1). Cyrib expression was detectable by 10 weeks, especially around PanIN lesions, which remained stable until 15 weeks of age (Figure 1). End-point tumours showed a significant increase in the levels of Cyrib (Figure 1), suggesting that the KPC model was a good model for exploring the role of Cyrib expression during PDAC progression.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig1-v2.jpg)
 
-**Figure 1.:** (A) Representative images of Cyrib RNAScope in situ hybridisation from 6-, 10-, 15-week-old and end-point KPC mouse tissues. RNA probes are visualised as brown dots. Haematoxylin was also used to stain the nuclei. Scale bars, 50 μm. Yellow boxes show the region of interest for magnified images (inset). Red arrows denote positive RNA probes. Scale bars, 5 µm. (B) Quantification of the CYRI-B RNA probes per μm2 from (A). Mean ± SD; one-way ANOVA with Tukey’s test was performed in n≥3 mice. *p<0.01, **p<0.001.Figure 1—source data 1.Cyrib RNA probes detected per µm2 in KPC mouse pancreatic tissues at 6, 10, 15 weeks and end-point tumours.Excel data and Prism analysis to support Figure 1B.
+**Figure 1.:** (A) Representative images of Cyrib RNAScope in situ hybridisation from 6-, 10-, 15-week-old and end-point KPC mouse tissues. RNA probes are visualised as brown dots. Haematoxylin was also used to stain the nuclei. Scale bars, 50 μm. Yellow boxes show the region of interest for magnified images (inset). Red arrows denote positive RNA probes. Scale bars, 5 µm. (B) Quantification of the CYRI-B RNA probes per μm2 from (A). Mean ± SD; one-way ANOVA with Tukey’s test was performed in n≥3 mice. *p<0.01, **p<0.001.
 
-## CYRI-B deletion accelerates PDAC development, reducing the survival of mice
+### CYRI-B deletion accelerates PDAC development, reducing the survival of mice
 
 To further probe the mechanism by which CYRI-B might influence PDAC progression, we crossed Cyrib floxed mice with KPC mice. We refer to these mice and cell lines derived from them as CKPC (Figure 2A). ISH of end-point tumours confirmed no detectable Cyrib mRNA in CKPC tumours in comparison with KPC (Figure 2B and C). Western blotting also confirmed absence of CYRI-B protein in cell lines derived from end-point CKPC mouse tumours (CKPC-1 and CKPC-2) compared with a cell line from a KPC mouse tumour (KPC-1) (Figure 2D). KPC and CKPC end-point tumours showed no difference in the proliferation (Ki-67) or death (cleaved caspase-3, CC-3) of tumour cells (Figure 2—figure supplement 1A–D). CKPC tumours also did not show any significant change in the CD31 vessel density (Figure 2—figure supplement 1E and F) or necrosis (Figure 2—figure supplement 1G and H). However, there was a significant decrease in the median survival to end-point of CKPC mice (118 days) in comparison with the KPC mice (187 days) (Figure 2E) without affecting the tumour weight to body mass ratio at end-point (Figure 2F). Thus, loss of Cyrib in the pancreas accelerates progression to end-point of KRASG12D, p53R172H-driven PDAC in the KPC model, but does not grossly alter levels of cell growth/death or histological appearance of end-point tumours.
 
-## CYRI-B deletion accelerates PanIN formation
+![Figure 2.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic representation of the CKPC mouse model. (B) Representative images for Cyrib RNAScope staining of end-point tumours from KPC and CKPC mice. Scale bars, 50 µm. Inset panels are magnified from the black dashed box. Scale bars, 10 µm. Red arrows indicate the positive Cyrib RNA. (C) Histograms showing the Cyrib RNA probes per μm2 at end-point tumours in KPC and CKPC mice. Mean ± SD; unpaired t-test, n=4 KPC and 4 CKPC mice. (D) Representative western blot images of CYRI-B in cell lines established from one KPC (KPC-1) and two CKPC (CKPC-1 and CKPC-2) tumours. Membranes were also probed for anti-p53 and anti-PDX1 to validate the CKPC cells. α-Tubulin and vinculin were used as loading controls. Molecular weights as indicated on the side. (E) Survival (to end-point) curve (n=21 KPC, 21 CKPC independent mice). Log-rank (Mantel Cox) test used for comparing the KPC with CKPC survival curves. p-Value as indicated. (F) Histogram showing tumour to body mass ratios at sacrifice. Mean ± SD; unpaired t-test was performed in n=21 KPC and 21 CKPC mice. p-Value: not significant (ns).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative images of pancreatic ductal adenocarcinoma (PDAC) sections in KPC and CKPC end-point mice, stained for Ki-67 (proliferation). Scale bars, 100 µm. Red arrows indicate the positive cells. (B) Quantification of Ki-67 positive nuclei per area from (A). Mean ± SD; unpaired t-test was performed in n=12 KPC and 12 CKPC independent mice. p-Value: not significant (ns). (C) Representative images of PDAC sections in KPC and CKPC end-point mice, stained for cleaved caspase 3 (CC-3, apoptosis). Scale bars, 100 µm. Red arrows indicate the positive cells. (D) Quantification of CC-3 positive cells per area from (C). Mean ± SD; unpaired t-test was performed in n=12 KPC and 12 CKPC independent mice. p-Value: ns. (E) Representative images of PDAC sections in KPC and CKPC end-point mice, stained for CD31 (endothelial marker). Scale bars, 100 µm. Red arrows indicate the positive area for CD31. (F) Quantification of CD31 positive area per tumour area from (E). Mean ± SD; Mann-Whitney test was performed in n=12 KPC and 12 CKPC independent mice. p-Value: ns. (G) Representative images of PDAC section in KPC and CKPC end-point mice, stained for haematoxylin and eosin (H&E) to identify necrotic areas. Scale bar, 500 µm. Red arrows indicate the positive area for necrosis. ×20 objective used to show the fragmented nuclei within the necrotic areas (red arrows). Scale bar, 100 µm. (H) Quantification of necrotic area per tumour area from (G). Mean ± SD; Mann-Whitney test was performed in n=12 KPC and 12 CKPC independent mice. p-Value: ns.
+
+### CYRI-B deletion accelerates PanIN formation
 
 RAC1 is an important cancer driver downstream of KRAS and its ablation in mouse models delayed the onset of precancerous lesions (Heid et al., 2011) and led to an inability to sustain precancer progression to PDAC (Wu et al., 2014). Therefore, we asked whether loss of the RAC1 interactor Cyrib affected the onset and progression between stages of PanIN1–3 (Figure 3A and B). Pancreatic samples from KPC or CKPC mice revealed no differences at 10 weeks, but more PanIN2 and -3 lesions were present in 15-week-old CKPC mice over KPC controls (Figure 3C and Figure 3—figure supplement 1), indicating an acceleration of early progression.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative haematoxylin and eosin (H&E) images from KPC mice of normal pancreatic ducts, PanIN1, -2, -3 and pancreatic ductal adenocarcinoma (PDAC) lesions. Scale bars, 100 µm. (B) Number of ducts present in pancreas from 15-week-old KPC and CKPC mice (n≥6 mice). Mean ± SD; unpaired t-test was performed. p-Value as indicated. (C) Classification and scoring of pancreatic ducts in pancreas from 15-week-old KPC and CKPC mice (n≥6 mice). Mean ± SD; unpaired t-test was performed. ns = not significant, p-value as indicated. (D) Representative images of pancreata from 15-week-old mice stained with pERK and haematoxylin (nuclei). Red arrows indicate the positive pERK staining. Scale bars, 100 µm. (E) pERK positive area from the total quantified area from (D). Mean ± SD; unpaired t-test was performed in n=7 KPC and CKPC independent mice. p-Value as indicated. (F) Representative images of pancreata from 15-week-old-mice stained with pJNK and haematoxylin (nuclei). Red arrows indicate the positive pJNK staining. Scale bars, 100 µm. (G) pJNK positive area from the total quantified area from (F). Mean ± SD; unpaired t-test was performed in n=7 KPC and CKPC independent mice. p-Value as indicated. (H) Representative images of pancreatic tissue from 15-week-old KPC and CKPC mice stained for BrdU (proliferation) and haematoxylin. Red arrows show the BrdU positive nuclei. Scale bars, 100 µm. (I) Quantification of BrdU positive nuclei from KPC and CKPC 15-week-old pancreatic tissues. Mean ± SD; unpaired t-test was performed in n=6 KPC and 5 CKPC independent mice. p-Value as indicated. (J) Quantification of the pancreas to body mass ratio at 10 weeks (n=6 mice in each mouse model) and 15 weeks (n=7 in each mouse model) in KPC and CKPC mice. Mean ± SD; unpaired t-test was performed. ns = not significant, p-value as indicated.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Quantification of the number of ducts present in 10-week-old pancreas in KPC and CKPC mice (n≥5 mice). Mean ± SD; unpaired t-test was performed. ns = not significant. (B) Classification and scoring of pancreatic ducts in pancreas from 10-week-old KPC and CKPC mice (n≥5 mice). Mean ± SD; unpaired t-test was performed. ns = not significant.
+
 To further probe the role of Cyrib in lesion formation, we sought to understand the potential downstream signalling pathways that might be involved. RAC1 can drive cell proliferation through activation of both JNK and ERK downstream signalling pathways (Bagrodia et al., 1995; Coso et al., 1995; Rul et al., 2002; Wang et al., 2019). Therefore, we probed histological sections of pancreatic tissues from 15-week-old KPC and CKPC mice for pJNK and pERK. Consistent with enhanced RAC1 signalling, we observed a significant increase in the percentage pERK area and pJNK area from pancreata of CKPC mice vs KPC (Figure 3D–G). We next investigated proliferation using BrdU injections at 15 weeks and found increased BrdU positive nuclei in the CKPC tissues in comparison with the KPC, suggesting enhanced proliferation in the abnormal ductal structures (Figure 3H and I). Indeed, CKPC mice presented with increased pancreatic weight to body mass ratio at 15 weeks, in agreement with increased proliferation of preneoplastic and neoplastic cells, whereas at 10 weeks of age there was no difference (Figure 3J). Thus, loss of Cyrib in the KPC model accelerates PanIN formation and progression, likely due to loss of CYRI-B’s capacity to buffer RAC1 activation downstream of active KRAS leading to abnormal architecture, combined with hyperactivation of ERK and JNK to drive proliferation.
 
-## CYRI-B regulates metastatic potential
+### CYRI-B regulates metastatic potential
 
 The KPC mouse model is characterised by high metastatic rates to clinically relevant organs such as liver, diaphragm, and bowel (Hingorani et al., 2005). Since CYRI-B regulates cell migration and chemotaxis (Fort et al., 2018), we asked whether deletion of CYRI-B can affect the metastatic potential of cancer cells in the CKPC mouse model. Analysis of mice at end-point from KPC and CKPC cohorts revealed similar infrequent metastasis to the diaphragm in both cohorts, but a significant reduction in metastasis to both the liver and bowel of CKPC mice (Figure 4A and B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig4-v2.jpg)
+
+**Figure 4.:** (A) Incidence of KPC or CKPC mice presenting with metastasis in liver, diaphragm, and bowel. Numbers above the bars show the fraction of mice with metastasis to the indicated site. Chi-square test was performed in n=21 KPC and CKPC mice. p-Value as indicated. (B) Representative haematoxylin and eosin (H&E) images of metastasis in the liver (scale bar, 50 µm) and diaphragm (scale bar, 100 µm). Black arrowheads denote metastatic lesions. (C) Histogram showing pancreas to body mass ratios at sacrifice. Mean ± SD; Mann-Whitney test was performed in n=5 for KPC control and n=6 mice for KPC Cyrib knockout (KO) cells. p-Value: not significant (ns). (D) Representative images of the mesenteric tumour foci from the in vivo transplantation assay. The metastatic foci were stained for H&E, Ki-67 (proliferation), p53, and PDX1 (for control). Scale bars, 100 µm. (E) Histogram of the number of metastatic foci at mesentery for KPC control and KPC Cyrib KO mice. Mean ± SD; Mann-Whitney test was performed in n≥5 mice for either control or Cyrib KO KPC injected cells. p-Value as indicated. (F) Quantification of the Ki-67 positive cells in the metastatic tumour foci. Mean ± SD; Mann-Whitney test was performed in n=4 for KPC control and n=5 mice for Cyrib KO KPC cells. p-Value: not significant (ns). (G) Incidence of mice presenting ascites (n≥5). (H) Incidence of mice presenting jaundice (n≥5). (I) Representative spider plots from n=3 independent chemotaxis assays of CKPC Cyrib KO and rescued cells. A chemotactic gradient of 10% foetal bovine serum (FBS) was established and cells were imaged for 16 hr (1 frame/15 min). Cells were also treated with either DMSO or the LPAR1/3 inhibitor KI16425 (10 mM) for 1 hr prior to imaging. Each cell trajectory is displayed with a different colour and the displacement of each cell is reported in the x- and y-axis. Orange gradient above shows the FBS gradient. Rose plot data are displayed for each condition below. Red dashed lines show the 95% confidence interval for the mean direction in the rose plots. The numbers represent degrees of the angle of migration relative to the chemoattractant gradient, with zero (red) denoting the direction of the chemoattractant gradient. (J) Quantification of the results in (I) showing the cos(θ) data (chemotactic index). Mean ± SEM from the average cos(θ) data of every repeat; one-way ANOVA followed by Tukey’s multiple comparisons test was performed. p-Values as indicated on the graph, ns = not significant.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative western blot from KPC-1 cells for CYRI-B knockout (KO). Empty vector was used as control. For Cyrib KO, Ex3 and Ex4 sequences were used. Alpha-tubulin was used as loading control. Molecular weights as indicated on the side. (B) Proliferation assay of control or Cyrib KO KPC-1 cells from (A). 104 cells were seeded on day 1 and manually counted every day. Error bars represent mean ± SEM from n=3 independent repeats.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Western blot images of CKPC-1 cells stably expressing CYRI-B-p17-GFP or GFP. KPC-1 and KPC-2 cell lines were used as control. Untransfected CKPC cells were also used as a control. Membranes were probed for anti-GFP (bottom blot) and anti-CYRI-B (top blot). GAPDH was used as loading control. Molecular weights are displayed on the side. (B) Representative immunofluorescence images of CKPC Cyrib knockout (KO) and rescued cells. Cells were seeded on fibronectin-coated coverslips, fixed and stained for F-actin (magenta), ArpC2 (cyan), and DAPI for nuclei (yellow). Scale bars, 20 μm. Yellow dotted boxes show the sites for the magnified images. Red arrows show the positive area for ArpC2 staining at the leading edge. Scale bars, 5 μm. Graph shows manual quantification of the number of cells presenting with lamellipodia (purple) or other protrusions (green) from (B). Mean ± S.D; paired t-test was performed in n=4. p-Value as indicated. (C) Quantification of cell area per cell from (B) based on the F-actin staining. Scatter plot here is presented as super plot and every independent biological repeat is coloured differently. Mean ± SEM; paired t-test was performed in n=4. p-Value as indicated. (D) Manual quantification of the length of the cell periphery showing strong ArpC2 accumulation, normalised to the total cell periphery. Scatter plot here is presented as a super plot and every independent biological repeat is coloured differently. Mean ± SEM; unpaired t-test was performed in n=3 (from a total of 30 cells). p-Value as indicated. (E) Manual quantification of the relative intensity of ArpC2 on the plasma membrane to cytoplasmic average intensity. Scatter plot here is presented as a super plot and every independent biological repeat is coloured differently. Mean ± SEM; unpaired t-test was performed in n=3. p-Value as indicated.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Representative spider plots from n=3 independent chemotaxis assays of KPC-1 control or Cyrib knockout (KO) (EX3 and EX4) cells. Cells were seeded on fibronectin-coated coverslips and the ‘Insall’ chamber was assembled. A chemotactic gradient of 10% foetal bovine serum (FBS) was established and cells were imaged for 16 hr (1 frame/15 min). Every cell trajectory is displayed with a different colour and the displacement of each cell is reported in the x- and y-axis. Orange gradient above shows the FBS gradient. Rose plot data are displayed for each condition below. Red dashed lines show the 95% confidence interval for the mean direction in the rose plots. The numbers represent degrees of the angle of migration relative to the chemoattractant, with zero (red) denoting the direction of the chemoattractant gradient. (B) Quantification of the results in (A) showing the cos(θ) data (chemotactic index). Mean ± SEM from the average cos(θ) data of every repeat; one-way ANOVA followed by Tukey’s multiple comparisons test was performed. Red dashed lines were indicated and show the 95% confidence interval for the mean direction in the rose plots. p-Values as indicated on the graph.
+
 To explore mechanisms behind the reduced metastasis of CKPC mice, we used an in vivo transplantation assay to test the metastatic seeding in the peritoneal cavity. This assay also allows us to rule out whether reduced metastasis was just due to the earlier progression to end-point in CKPC mice. Cyrib CRISPR (knockout of cyri-b, Ex 3) and control KPC-1 cells (Figure 4—figure supplement 1A), which show similar levels of proliferation (Figure 4—figure supplement 1B), were injected in the peritoneal cavity of nude mice and metastatic seeding was quantified. Although the pancreas weight to body mass ratio did not change (Figure 4C), there was a significant reduction in the formation of small metastatic buds on mesentery in the mice injected with Cyrib CRISPR KPC-1 cells (Figure 4D and E). No differences in proliferation were observed by Ki67 staining of tumours (Figure 4F). This mouse model also displays jaundice and ascites fluid, two symptoms which are very common in pancreatic cancer patients. There was a reduction in the number of mice with ascites fluid in mice bearing Cyrib CRISPR KPC-1 cells (Figure 4G). We did not observe any difference in the number of mice presenting with jaundice (Figure 4H), possibly because jaundice is caused by blockage of the bile duct, which could be a stochastic process, dependent on tumour position and other factors. In summary, CYRI-B is required for efficient metastatic seeding of KPC cells.
 
-## CYRI-B deletion reduces chemotactic potential
+### CYRI-B deletion reduces chemotactic potential
 
 Since we found that CYRI-B can influence the metastatic seeding of KPC cells, we sought to investigate whether CYRI-B can affect their chemotactic potential. Chemotaxis is a major driver of metastasis away from the primary tumour and towards sites rich in attractants, such as blood vessels. It was previously shown that the signalling lipid, LPA, which is found in blood serum, is an important chemoattractant driving melanoma and PDAC metastasis (Juin et al., 2019; Muinonen-Martin et al., 2010). LPA drives chemotaxis of KPC cells and can be sensed by the LPA receptor 1 (LPAR1), present at the plasma membrane of PDAC cells (Juin et al., 2019). We generated an independent CKPC cell line, CKPC-1, derived directly from CKPC tumours and rescued with CYRI-B-p17-GFP or GFP (Figure 4—figure supplement 2A). To confirm the phenotype, CKPC-1 GFP or rescued cells were seeded on fibronectin-coated glass and stained for ArpC2 to assess the localisation of the Arp2/3 complex at the leading edge (Figure 4—figure supplement 2B). CKPC-1 GFP cells presented with more lamellipodia, larger area, and increased ArpC2 recruitment to the leading edge in comparison with the rescued cells (Figure 4—figure supplement 2B–E) in line with previous results for other cell types (Fort et al., 2018).
 
 Using Insall chemotaxis chambers (Muinonen-Martin et al., 2010), we investigated whether CKPC-1 cells can migrate up fetal bovine serum (FBS) gradients, which are a rich source of LPA. Both spider plots and rose plots showing the paths of individual cells and the mean resultant vector of migration, respectively, revealed that CKPC-1 cells (expressing GFP as a control) have dramatically reduced chemotactic potential towards FBS (Figure 4I and J). On the contrary, re-expressing GFP-tagged CYRI-B in CKPC-1 cells fully restored chemotaxis and directed migration towards FBS (Figure 4I and J). CKPC-1 rescued with GFP-tagged CYRI-B were also treated with LPA antagonist KI16425 (Ohta et al., 2003) showing that inhibition of LPAR1 and -3 by KI16425 abolished chemotactic steering, consistent with LPA being the major attractant in these conditions (Figure 4I and J). We have focussed on LPAR1 because we previously found that LPAR1 and not LPAR3 was the major chemotactic receptor expressed in PDAC cells (Juin et al., 2019). To further confirm that CYRI-B affects the chemotactic potential of PDAC cells, KPC control and Cyrib CRISPR cells were also assessed for their chemotactic ability towards serum (10% FBS) using Insall chambers. Deletion of Cyrib (Ex3 and Ex4) did not change the proliferation rate of cells (Figure 4—figure supplement 1), but reduced chemotactic migration in comparison with control cells (Figure 4—figure supplement 3). Therefore, CYRI-B is required for chemotactic migration towards serum LPA in PDAC cells.
 
-## CYRI-B localises on macropinocytic cups and vesicles
+### CYRI-B localises on macropinocytic cups and vesicles
 
 Having shown that CYRI-B can influence the metastatic seeding of KPC tumours in vivo by regulating chemotactic migration, we further probed the role CYRI-B in chemotaxis. We first examined dynamic localisation of CYRI-B, using GFP-labelled CYRI-B (CYRI-B-p17-GFP) and live-cell imaging of both COS-7 cells and CKPC cells. Interestingly, CYRI-B was present on internal vesicles and tubules that connect with the vesicles (Figure 5A and Figure 5—video 1). The lifetime of vesicular CYRI-B containing structures was around 40s (Figure 5B), with an average diameter of about 1 μm (Figure 5C), whereas the tubule length ranged up to 17 μm (Figure 5D). Additionally, we noticed CYRI-B localising at membrane cups (Figure 5E and Figure 5—video 2). CYRI-B positive pseudopods extend nascent cups, fuse together, and they slowly move inside the cells with a mean lifetime of about 19s (Figure 5E). Thus, CYRI-B localised on structures resembling macropinocytic cups, vesicles, and associated tubules, similar to what we previously described for CYRI-A (Le et al., 2021).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig5-v2.jpg)
+
+**Figure 5.:** (A) Still image from live-cell videos of COS-7 Cyrib knockout (KO) cells transfected with CYRI-B-p17-GFP (cyan) - see Figure 5—video 1. Scale bar, 5 μm. Yellow box denotes magnified area. Magenta and orange arrows show the quantification area. Scale bar, 1 μm. Right panels show the quantifications of the relative intensity of the vesicles/cups and tubules. Image and quantification are representative of n=25 vesicles from a total of 10 cells, over 3 independent biological repeats. (B) Scatter plot of the lifetime of vesicles from (A). Error bars show the mean ± SD. (C) Scatter plot of the size (diameter) of CYRI-B positive vesicles from (A). Error bars show the mean ± SD. (D) Scatter plot of the length of CYRI-B tubules from (A). Error bars show the mean ± SD. (E) Still image from live-cell videos of COS-7 CYRI-B KO cells transfected with CYRI-B-p17-GFP (cyan), showing a macropinocytic cup - see Figure 5—video 2. Scale bar, 5 μm. Yellow box denotes magnified area. Magenta arrows show the quantification area. Scale bar, 1 μm. Scatter plot on the right panel shows the lifetime of the CYRI-B cups. Error bars show the mean ± SD. Orange dotted box shows the montage of the CYRI-B cup over time (s). Scale bar, 1 μm. Magenta arrows show the area of interest. Image and quantification are representative of n=9 events from a total of 4 cells.
+
 The CYRI-B positive cups and vesicles were in the size range of macropinosomes (0.2–5 μm), rather than other endocytic vesicles and cups, which are typically less than 0.2 μm (Canton, 2018). To test the role of CYRI-B in macropinocytosis, we added large molecular weight fluorescently labelled dextran (70 kDa) which can only enter by macropinocytosis (Commisso et al., 2013). It was important to test whether this occurred in PDAC cells, since previous work was done in other cell types (Le et al., 2021). CYRI-B stable CKPC-1 PDAC cell line ought to show enhanced macropinocytosis due to the active KRAS (Commisso et al., 2013; Kamphorst et al., 2015; Palm et al., 2017). In agreement with this, PDAC cells showed CYRI-B positive finger-like protrusions extending from the plasma membrane, until they fuse together engulfing extracellular dextran (Figure 6A and Figure 6—video 1). Live-cell imaging of COS-7 cells transfected with CYRI-B-p17-GFP also showed that CYRI-B positive pseudopods arising from the membrane enclose dextran, fuse together, and internalise (Figure 6—figure supplement 1A and Figure 6—video 1). The CYRI-B positive macropinosomes were then internalised and travelled inside the cells until they disappeared. Quantification of the lifetime of CYRI-B macropinosomes showed similar results between the two cell lines (Figure 5B and Figure 6A). Live-cell imaging of AsPC-1 human pancreatic cancer cells transfected with CYRI-B-p17-GFP and mScarlet-Lck, a marker of the plasma membrane, showed that CYRI-B and Lck co-localised at the finger-like protrusions, cups, and internalised vesicles, confirming the localisation of CYRI-B on macropinosomes (Figure 7B, Figure 6—figure supplement 1, and Figure 6—video 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig6-v2.jpg)
+
+**Figure 6.:** Still image from live-cell imaging of CKPC-CYRI-B-GFP stable cell lines (cyan) - see Figure 6—video 1. 70 kDa Dextran was added to the medium to visualise macropinocytic events (magenta). Scale bar, 10 μm. Yellow box shows the magnified area of interest, showing the macropinocytic cups. Scale bar, 5 μm. Scatter plot represents the lifetime of CYRI-B+ macropinosomes once internalised. Mean ± SD. Orange box shows a representative montage of CYRI-B internalisation via macropinocytosis. Scale bar, 1 μm. White arrows show CYRI-B localisation at the cups and the macropinosomes once internalised. n=21 events from a total of 6 cells.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Still image from live-cell imaging of COS-7 Cyrib knockout (KO) cells transfected with CYRI-B-p17-GFP (cyan) (see also Figure 6—video 1). 70 kDa Dextran was added to the medium to visualise the macropinocytic events (magenta). Scale bar, 5 μm. Yellow box shows the magnified area of interest, showing the macropinocytic cups. Scale bar, 5 μm. Scatter plot represents the lifetime of CYRI-B+ macropinosomes once internalised. Mean ± SD. Orange box shows a representative montage of CYRI-B internalisation via macropinocytosis. n=15 events from a total of 6 cells. (B) Representative confocal images of AsPC1 cells transiently transfected with a combination of CYRI-B-p17-GFP (cyan) and mScarlet-Lck (top panel), LPAR1-mCherry (middle panel), or Rab5a-mCherry (bottom panel) (magenta) (see also Figure 6—video 2). Scale bar, 5 μm. Yellow boxes show the magnified area of interest, showing the co-localisation between CYRI-B and mScarlet-Lck, LPAR1-mCherry, or Rab5a-mCherry at macropinosomes. Scale bar, 5 μm except for Rab5a-mCherry. Scale bar, 2.5 μm.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig7-v2.jpg)
+
+**Figure 7.:** (A) Still image from live-cell imaging of AsPC1 cells transiently transfected with CYRI-B-p17-GFP (cyan) and Rab5-mCherry (magenta) - see Figure 7—video 1. Scale bar, 5 μm. Yellow box shows the magnified area of interest, showing the macropinocytic cups. Scale bar, 5 μm. Yellow arrows show macropinosome. (B) Still image from live-cell imaging of COS-7 Cyrib knockout (KO) cells transfected with CYRI-B-p17-GFP (cyan) and mRFP-Rab5 (magenta) - see Figure 7—video 2. Scale bar, 10 μm. Yellow box show the magnified area of interest, showing the macropinocytic cups. Scale bar, 5 μm. Orange boxes show a representative montage of CYRI-B internalisation and the recruitment of Rab5 at the nascent macropinosomes. Scale bar, 5 μm. Scatter plots represent the lifetime of CYRI-B+ macropinosomes once internalised before and after Rab5 recruitment. Error bars show the mean ± SD; n=10 events from a total of 6 cells.
 
 Thus, CYRI-B localises on macropinosomes in pancreatic cancer cell lines, suggesting a possible mechanism for how CYRI-B loss could affect tumour progression.
 
 One of the first proteins to be recruited to macropinosomes, once they internalise, is Rab5, which is present on vesicles that move from the periphery of the cells towards the perinuclear region (Bucci et al., 1994; Buckley and King, 2017; de Hoop et al., 1994). Live-cell imaging of human AsPC-1 cells transfected with both CYRI-B-p17-GFP and Rab5a-mCherry showed that Rab5 is localised on macropinosomes (Figure 7A, Figure 6—figure supplement 1, and Figure 7—video 1). We found previously that CYRI-A showed a transient recruitment to macropinocytic cups and was largely absent from macropinosomes that had internalised, as marked by recruitment of the early endosome component Rab5 (Puccini et al., 2022). Therefore, we examined the localisation of CYRI-B relative to the early endosome component Rab5. Live-cell imaging of COS-7 cells transfected with both CYRI-B-p17-GFP and Rab5-mcherry showed that Rab5 is recruited after CYRI-B macropinosome internalisation. First CYRI-B positive pseudopods extend and fuse together to form the nascent macropinosome which is then internalised (Figure 7B and Figure 7—video 2). After ~50 s of internalisation, Rab5 is recruited to the macropinosomes (Figure 7B and Figure 7—video 2), suggesting that CYRI-B is present prior to and also during early macropinosome formation as marked with Rab5.
 
-## LPAR1 internalises via CYRI-B positive macropinosomes
+### LPAR1 internalises via CYRI-B positive macropinosomes
 
 An important but often overlooked role of macropinocytosis is the maintenance of cell surface receptors (Buckley and King, 2017). Chemotaxis towards LPA requires the fine coordination of multiple proteins at the cell leading edge in order to sense LPA, internalise the LPAR1 receptor, and recycle it back to the plasma membrane (Juin et al., 2019; Muinonen-Martin et al., 2010). Having optimal amounts and dynamics of LPAR receptors at the leading edge is critical for a coordinated movement of cells towards the chemoattractant (Juin et al., 2019). In particular, we previously showed that LPAR1 is important for chemotaxis of pancreatic cancer cells (Juin et al., 2019). Therefore, we hypothesised that CYRI-B might influence the internalisation of LPAR1 at the leading edge. 70 kDa TRITC dextran was added to the medium and cells were imaged using live time lapse microscopy to visualise the macropinosomes in COS-7 cells transfected with LPAR-1 GFP. We observed that LPAR1-positive vesicles incorporated dextran and after some time they disappeared, with a mean lifetime of ~58 s (Figure 8A, Figure 8—video 1). Thus, LPAR1 is taken up from the cell surface by macropinocytosis.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig8-v2.jpg)
+
+**Figure 8.:** (A) Still images from live-cell imaging of COS-7 cells transfected with LPAR1-GFP (cyan) - see Figure 8—video 1. 70 kDa Dextran was added to the medium to visualise the macropinosomes (magenta). Scale bar, 10 μm. Yellow box shows the magnified area of interest, showing the LPAR1+ macropinocytic vesicles/cups. White arrows denote structures of interest. Scale bar, 1 μm. Scatter plot represents the lifetime of LPAR1+ vesicles once internalised. Mean ± SD. Orange box shows a representative montage of LPAR1 internalisation via macropinocytosis. Scale bar, 1 μm. White arrows show the vesicle of interest. n=12 events from a total of 3 cells. (B) Still image from live-cell imaging of CKPC-1 cells transfected with CYRI-B-p17-GFP (cyan) and LPAR1-mCherry (magenta) - see Figure 8—video 2. Scale bar, 20 μm. Yellow box shows the magnified area of interest, showing the LPAR1 co-localisation with CYRI-B+ macropinosomes. White arrows show the vesicle of interest. Scale bar, 1 µm. Scatter plot represents the lifetime of LPAR1 and CYRI-B vesicles once internalised. Mean ± SD. Orange box shows a representative montage of LPAR1 and CYRI-B internalisation. Red and yellow arrows show the vesicles of interest. n=14 events from a total of 4 cells.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Quantitative polymerase chain reaction (qPCR) analysis for endogenous gene expression of LPAR1 and LPAR3 in CKPC-1 stable cells either transfected with GFP or CYRI-B-GFP. The histogram shows the relative mRNA expression from rescued CYRI-B-GFP and normalised from GAPDH expression. Error bars show the mean ± SD; unpaired t-test was performed in n=5 independent repeats. p-Value as indicated. (B) Representative immunofluorescence images of CKPC-1 Cyrib knockout (KO) and rescued cells. Cells were transfected with LPAR1-HA, then seeded on fibronectin-coated coverslips, fixed and stained for F-actin (magenta), anti-HA (cyan), and DAPI for nuclei (yellow). Scale bars, 10 μm. Orange dotted boxes show the sites for the magnified images (inset). Red arrows show the positive area for LPAR1 staining at the leading edge. Scale bars, 1 μm. (C) Representative immunofluorescence images from (B) as an example of how analysis was performed. Yellow dotted lines show the LPAR1-positive area at the periphery of the cells. Right panel shows the manual quantification of the length of LPAR1 in the periphery of the cells, normalised to the total cell length. Scatter plot here is presented as super plots and every independent biological repeat is coloured differently. Mean ± SEM; unpaired t-test was performed in n=3 (from a total of 28 cells). p-Value as indicated. Scale bars, 10 μm.
+
 To ask whether the LPAR1-positive macropinocytic structures also contained CYRI-B, we transfected CYRI-B-GFP stable CKPC-1 cells with LPAR1-mCherry and performed live-cell imaging. Indeed, upon CYRI-B internalisation, LPAR1 is also internalised with a lifetime of ~58 s, consistent with LPAR-1 trafficking via CYRI-B positive macropinocytic events in PDAC cells (Figure 8B, Figure 8—video 2). AsPC-1 cells transiently transfected with CYRI-B-GFP and LPAR1-mCherry also showed a co-localisation of CYRI-B-GFP and LPAR1 on macropinosomes (Figure 6—figure supplement 1B). Thus, LPAR1 is at least partially internalised via CYRI-B-mediated macropinocytosis. While it would be desirable to demonstrate the presence of endogenous LPAR-1 in macropinocytic cups, we are at present unable to localise endogenous LPAR1 with any available antibodies (see also Juin et al., 2019).
 
-## CYRI-B controls chemotactic migration via macropinocytic LPAR-1 internalisation and membrane localisation
+### CYRI-B controls chemotactic migration via macropinocytic LPAR-1 internalisation and membrane localisation
 
 Having found that CYRI-B co-localises with LPAR1 and deletion of CYRI-B affects the chemotactic ability of PDAC cells to migrate in vitro and in vivo, we investigated whether CYRI-B could influence the trafficking of LPAR-1. Initial work showed that CKPC-1 cells expressing either GFP or CYRI-B-p17-GFP following stable transfection did not alter mRNA levels of LPAR1 or LPAR3 (Figure 8—figure supplement 1A), suggesting that changes in the chemotactic ability of the cells is not likely due to alterations in the expression level of the LPARs. Since CYRI-B alters the shape of CKPC cells, we also checked whether the localisation of LPAR is changed. CKPC-1 cells (with stable expression of GFP or CYRI-B-p17-GFP) were transfected with HA-LPAR1 and fixed for immunofluorescence. Cells displayed localisation of HA-LPAR1 at the plasma membrane and internal vesicles, as expected from previous reports (Juin et al., 2019). Cyrib knockout cells (expressing GFP-only) showed high levels of leading edge membrane localisation of LPAR1 in comparison with the CYRI-B-p17-GFP rescued cells (Figure 8—figure supplement 1B and C).
 
@@ -89,7 +145,7 @@ The combined evidence of the role of CYRI-B on macropinocytic uptake, the co-int
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/83712/elife-83712-fig9-v2.jpg)
 
-**Figure 9.:** (A) Immunofluorescence images of CKPC-1 stable cells transfected with GFP or CYRI-B-p17-GFP. Cells were transfected with LPAR1-mCherry and seeded on fibronectin-coated coverslips. Cells were starved overnight and the next day 10% foetal bovine serum (FBS) was used to stimulate the uptake of LPAR1. Vesicles (marked by LPAR1-mCherry) are shown as black dots, DAPI (yellow) was used to visualise the nuclei. Scale bars, 10 µm. Magenta dotted boxes show the magnified area of interest and cyan arrows show the internalised vesicles. Scale bars, 5 µm. (B) Quantification of the number of LPAR1-positive vesicles in each condition. Scatter plot is presented as super plots and every independent biological repeat is coloured differently. Mean ± SEM; one-way ANOVA followed by Tukey’s multiple comparisons test was performed, n=4 (from a total of ≥35 cells for each condition). p-Value as indicated, ns = not significant.Figure 9—source data 1.Figure 9B.
+**Figure 9.:** (A) Immunofluorescence images of CKPC-1 stable cells transfected with GFP or CYRI-B-p17-GFP. Cells were transfected with LPAR1-mCherry and seeded on fibronectin-coated coverslips. Cells were starved overnight and the next day 10% foetal bovine serum (FBS) was used to stimulate the uptake of LPAR1. Vesicles (marked by LPAR1-mCherry) are shown as black dots, DAPI (yellow) was used to visualise the nuclei. Scale bars, 10 µm. Magenta dotted boxes show the magnified area of interest and cyan arrows show the internalised vesicles. Scale bars, 5 µm. (B) Quantification of the number of LPAR1-positive vesicles in each condition. Scatter plot is presented as super plots and every independent biological repeat is coloured differently. Mean ± SEM; one-way ANOVA followed by Tukey’s multiple comparisons test was performed, n=4 (from a total of ≥35 cells for each condition). p-Value as indicated, ns = not significant.
 
 ## Discussion
 
@@ -113,71 +169,564 @@ Interestingly, a major mechanism for internalisation of LPAR1 appears to be via 
 
 ## Materials and methods
 
-## Mouse model
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: Pdx-1::Cre;KrasG12D;p53R172H (KPC) mice</td>
+      <td>Hingorani et al., 2003</td>
+      <td></td>
+      <td>Can be obtained from CRUK Scotland Institute, Glasgow, UK</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: Fam49bfl/fl</td>
+      <td>This study</td>
+      <td></td>
+      <td>Can be obtained from CRUK Scotland Institute, Glasgow, UK</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>CD-1 Nude Mice</td>
+      <td>Charles River</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>COS-7 cells</td>
+      <td>ATCC</td>
+      <td>CRL-1651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>AsPC-1</td>
+      <td>ATCC</td>
+      <td>CRL-1682</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>CYRI-B-p17-GFP</td>
+      <td>Le et al., 2021</td>
+      <td></td>
+      <td>Can be obtained from Machesky Lab, Cambridge</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pEGFP-N1</td>
+      <td>Clontech- discontinued</td>
+      <td></td>
+      <td>Can be obtained from Novopro, Catalogue number V012021 or Machesky Lab, Cambridge</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>LPAR1-mCherry</td>
+      <td>Juin et al., 2019</td>
+      <td></td>
+      <td>Can be obtained from Machesky Lab, Cambridge</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>LPAR1-GFP</td>
+      <td>Juin et al., 2019</td>
+      <td></td>
+      <td>Can be obtained from Machesky Lab, Cambridge</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>HA-LPAR1</td>
+      <td>Kind gift from Dr. Heidi Welch</td>
+      <td></td>
+      <td>Can be obtained from Machesky Lab, Cambridge</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Rab5a-mCherry</td>
+      <td>Addgene</td>
+      <td>#55126, RRID Addgene 55126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>mScarlet-Lck</td>
+      <td>Le et al., 2021</td>
+      <td></td>
+      <td>Can be obtained from Machesky Lab, Cambridge</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>empty lentiCRISPRv1-puro</td>
+      <td>Addgene</td>
+      <td>#49535</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Mouse KPC-1 cells (pdx-1::Cre;KrasG12D;p53R172)</td>
+      <td>Kind gift from Prof. J Morton</td>
+      <td></td>
+      <td>Freshly isolated from KPC Mus musculus, see Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Mouse CKPC-1 and CKPC-2 PDAC cells (from BSNA9.4a male mouse)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Freshly isolated from CKPC Mus musculus, see Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Mouse CKPC-2 PDAC cells (BSNA15.1a female mouse)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Freshly isolated from CKPC Mus musculus, see Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-tubulin (DM1A) (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT. #T6199</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA tag (C29F4) (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>CAT. #3724S</td>
+      <td>IF: 1:800</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Fam49B (Rabbit polyclonal)</td>
+      <td>ProteinTech</td>
+      <td>CAT. #20127–1-AP</td>
+      <td>WB: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>CAT. #MAB374</td>
+      <td>WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (4B10) (Mouse monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>CAT. #2955</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p53 antibody [PAb 240] (Mouse polyclonal)</td>
+      <td>Abcam</td>
+      <td>CAT. #Ab26</td>
+      <td>WB: 2.5 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pdx1 (D59H3) XP (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>CAT. #5679</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ArpC2 (EPR8533) (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>CAT. #133315</td>
+      <td>IF: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BrdU (B44) (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>CAT. #347580RRID: AB_400326</td>
+      <td>IHC: 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Caspase 3 (ASP-175) (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>CAT. #9661</td>
+      <td>IHC: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (D3B5) (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>#12202</td>
+      <td>IHC: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- p44/42 MAPK (ERK1/2) (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>#9101</td>
+      <td>IHC: 1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pdx (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>#ab47267</td>
+      <td>IHC: 1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pSapk/Jnk Thr183/Thr185 (81E11) (Rabbit Monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>#4668</td>
+      <td>IHC: 1:20</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit 680 nm stain (Donkey)</td>
+      <td>Invitrogen</td>
+      <td>CAT. #A21206</td>
+      <td>IF: 1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse 680 nm stain (Donkey)</td>
+      <td>Invitrogen</td>
+      <td>CAT. #A10038</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit 594 nm (Donkey)</td>
+      <td>Invitrogen</td>
+      <td>CAT. #A21207</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse 800 nm (Goat)</td>
+      <td>Thermo Scientific</td>
+      <td>CAT. #SA5-35521</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit 800 nm (Goat)</td>
+      <td>Thermo Scientific</td>
+      <td>CAT. #SA5-35571</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse 594 nm (Donkey)</td>
+      <td>Invitrogen</td>
+      <td>CAT. #A31203</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNAs Mouse Cyri-b exon3</td>
+      <td>This paper</td>
+      <td>DNA primer encoding sgRNA</td>
+      <td>CACCGGGTGCAGTCGTGCCACTAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNAs Mouse Cyri-b exon4</td>
+      <td>This paper</td>
+      <td>DNA primer encoding sgRNA</td>
+      <td>CACCGCGAGTATGGCGTACTAGTCA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Intense R Kit</td>
+      <td>Leica</td>
+      <td>DS9263</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Rat ImmPRESS kit</td>
+      <td>Vector Labs</td>
+      <td>#MP-7404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAScope 2.5 LS (Brown) detection kit</td>
+      <td>Advanced Cell Diagnostics, Hayward, CA, USA</td>
+      <td>#322100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AMAXA-V kit</td>
+      <td>Lonza</td>
+      <td>VCA-1003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CRISPR-Cas9 calcium phosphate transfection</td>
+      <td>Invitrogen</td>
+      <td>CAT. #K2780-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>CAT. #74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DyNAmo HS SYBR Green qPCR kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>CAT. #F410L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Enzyme pre-treatment kit</td>
+      <td>Leica</td>
+      <td>CAT. #AR9551</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KI16425 inhibitor</td>
+      <td>Cayman Chemicals</td>
+      <td>#10012659</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran, tetramethylrhodamine, 70,000 MW, lysine fixable (25MG)</td>
+      <td>Thermo Fisher</td>
+      <td>CAT. #D1818</td>
+      <td>50 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran, Fluorescein, 70,000 MW, Anionic, Lysine fixable</td>
+      <td>Thermo Fisher</td>
+      <td>CAT. #D1818</td>
+      <td>50 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Phalloidin 647 nm stain</td>
+      <td>Thermo Fisher</td>
+      <td>CAT. #A22287</td>
+      <td>IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Phalloidin 594 nm stain</td>
+      <td>Thermo Fisher</td>
+      <td>CAT. #A12382</td>
+      <td>IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Flex Wash buffer</td>
+      <td>Agilent</td>
+      <td>CAT. #K8007</td>
+      <td>Use as per manufacturer's instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>High pH Target Retrieval Solution (TRS)</td>
+      <td>Agilent</td>
+      <td>CAT. #K8004</td>
+      <td>Use as per manufacturer's instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Liquid DAB</td>
+      <td>Agilent</td>
+      <td>CAT. #K3468</td>
+      <td>Use as per manufacturer's instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Low pH Target Retrieval Solution (TRS)</td>
+      <td>Agilent</td>
+      <td>CAT. #K8005</td>
+      <td>Use as per manufacturer's instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Mouse EnVision</td>
+      <td>Agilent</td>
+      <td>CAT. #4001</td>
+      <td>Use as per manufacturer's instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Peroxidase block</td>
+      <td>Agilent</td>
+      <td>CAT. #S2023</td>
+      <td>Use as per manufacturer's instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Rabbit EnVision</td>
+      <td>Agilent</td>
+      <td>CAT. #K4003</td>
+      <td>Use as per manufacturer's instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Rabbit signal boost (HRP)</td>
+      <td>Cell Signaling</td>
+      <td>CAT. #8114</td>
+      <td>Use as per manufacturer's instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Bond Wash</td>
+      <td>Leica</td>
+      <td>CAT. #AR9590</td>
+      <td>Use as per manufacturer's instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Epitope Retrieval Solution 1 (ER1)</td>
+      <td>Leica</td>
+      <td>CAT. #AR9551</td>
+      <td>Use as per manufacturer's instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Epitope Retrieval Solution 2 (ER2)</td>
+      <td>Leica</td>
+      <td>CAT. #AR9640</td>
+      <td>Use as per manufacturer's instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Mouse Ig Blocking reagent</td>
+      <td>Vector Labs</td>
+      <td>CAT. #MKB-2213</td>
+      <td>Use as per manufacturer's instructions</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Fluoromount-G</td>
+      <td>Southern Biotech</td>
+      <td>CAT. #0100-01</td>
+      <td>Use as per manufacturer's instructions</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji software</td>
+      <td></td>
+      <td>RRID: SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HALO software</td>
+      <td>Indica Labs</td>
+      <td>RRID:SCR_018350</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Algorithm using R software</td>
+      <td>Fort et al., 2018</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse model
 
 The mice were maintained by the Biological Services Unit staff according to the UK home office regulations and instructions. The experiments were approved by the local Animal Welfare and Ethical Review Body (AWERB) of the University of Glasgow and performed under UK Home office licence PE494BE48 to LMM. Data for cohorts is included in Supplementary file 1. The genotyping was performed by ear notch and the samples were sent to TransnetYX. To generate the Cyrib floxed (Cyribfl/fl) mouse, frozen sperm was obtained from the Canadian Mouse Mutant Repository (Fam49b_tm1c_C08). The mouse strain was generated by IVF (Takeo and Nakagata, 2011; Takeo and Nakagata, 2015) using C57BL/6J mice as embryo donors, and the resulting two-cell embryos transferred to pseudopregnant recipients using standard protocols. The CKPC mouse model was generated by crossing KRAS LSL-G12D, Tp53 LSL-R172H, Pdx1-CRE (KPC) mice (Hingorani et al., 2003) with Cyrib floxed (Cyribfl/fl) mice. Mice that died from causes other than pancreatic cancer were removed from the study.
 
-## CKPC cell lines generation
+### CKPC cell lines generation
 
 CKPC cell lines (CKPC-1 and -2) were first generated by taking about 1/3 of the tumours from two different end-point mice. The tumours were washed three times with 5% penicillin/streptomycin (#15140122; Life Technologies) in PBS and cut into small pieces (<3 mm). The tumour pieces were then washed with PBS, centrifuged for 5 min at 1200 rpm, and transferred to 10 cm plates using full DMEM media supplemented with primocin (1:1000). The plates were left overnight in humidified incubator at 37°C supplied with 5% CO2 until confluent. After about five to seven passages, cells were checked for Pdx-1, Tp53, and CYRI-B protein staining.
 
-## Mammalian cell culture
+### Mammalian cell culture
 
 COS-7 and HEK293T cell lines were cultured with Dulbecco’s Modified Eagle’s Medium (DMEM) (#21969-035; Gibco) growth medium supplemented with 10% FBS (#10270-106; Gibco) and 2 mM L-glutamine (#25030-032; Gibco). AsPC-1 cell line was cultured in RPMI medium 1640 (#31870-025; Gibco). COS-7 and HEK293T cell lines were split roughly every 2 days, AsPC-1 cells every 4 days, and maintained at 37°C humidified incubator and perfused with 5% CO2.
 
 For the proliferation assays, approximately 104 KPC CRISPR or control cells were seeded on six-well plates and were manually counted every day for 4 days. Cells were tested regularly for mycoplasma and found to be negative. KPC cells were generated from pancreatic tumours of mice in our laboratory and verified by testing for expression of Pdx-1 pancreatic marker and TP53 (Figure 2D). Other cell lines (COS-7, HEK293T, and AsPC-1) were obtained from the ATCC https://www.atccc.org and were independently authenticated by short tandem repeat analysis.
 
-## Cell transfection
+### Cell transfection
 
 About 1×106 COS-7 cells were transfected with Lipofectamine 2000 (#11668019, Invitrogen) according to the manufacturer’s instructions. AsPC-1 cells were transfected with Lipofectamine 3000 (Invitrogen). Following the manufacturer’s instructions, 2×105 cells were transfected with 5 µg of a combination of the following plasmids: Rab5a-mCherry or mScarlet-Lck. For KPC-1 and CKPC-1 cell lines, the AMAXA-V kit (VCA-1003, Lonza) was used according to the manufacturer’s protocol. About 2×106 cells were electroporated using P-031 program from the AMAXA electroporator. The transfected cells were left overnight in full media in a humidified incubator at 37°C supplied with 5% CO2.
 
 For CYRI-B rescued stable cell line creation, cells were transfected with CYRI-B-p17-GFP along with a puromicin resistant plasmid using AMAXA-V kit according to the manufacturer’s instructions. For control purposes the same CKPC cell line was also transfected with the empty GFP backbone. Cells were selected using 1 mg/ml puromicin and FACS sorted. Low-medium intensity GFP positive cells were selected to ensure that CYRI-B is not overexpressed. Cells were checked for CYRI-B expression and kept for maximum of three to four passages.
 
-## sgRNAs and KPC CRISPR cell line generation
+### sgRNAs and KPC CRISPR cell line generation
 
 sgRNAs for CRISPR were designed using the Zhang laboratory website (https://zlab.bio/guide-design-resources). Mouse Cyri-b exon3 (CACCGGGTGCAGTCGTGCCACTAGT) and exon4 (CACCGCGAGTATGGCGTACTAGTCA) were used for CrispR cell line generation and transfected into lentiCRISPRv1-puro.
 
 To generate Cyrib knockout stable cell lines, CRISPR-Cas9 genome editing technology was performed, using the calcium phosphate transfection kit (#K2780-01, Invitrogen). To generate the virus which infected the recipient cells (KPC or CKPC cells) the HEK293T cell line was used. First, about 2×106 HEK293T cells per 10 cm dish were seeded and let overnight to grow. Next day the transfection master mix which contained 10 µg of CRISPR construct containing sgRNA targeting the gene of interest (or empty lentiCRISPRv1-puro, #49535, Addgene), 7.5 µg of pSPAX2 (#12260, Addgene), and 4 µg of pVSVG packaging plasmid (#8454, Addgene) was prepared according to the manufacturer’s instructions. The following day the medium was removed and replaced with the same medium composition (DMEM) with 20% FBS, for virus production. The cells were left overnight and in the meantime recipient cells were prepared for virus infection by seeding 1×106 cells per plate. The next day the medium from the HEK293T cells was removed and mixed with 2.5 μl hexadimethrine bromide (10 mg/ml) (#H9268, Sigma), filtered using a 0.45 μm pore membrane to remove any cell debris. The medium was then added to the recipient cells and left overnight. The next day the same procedure was repeated to achieve better infection with the virus. Transduced cells were selected using puromycin (2 μg/ml) (#ant-pr-1; InvivoGen).
 
-## Chemotaxis assay
+### Chemotaxis assay
 
 Chemotaxis assay was performed as previously described in Muinonen-Martin et al., 2014. About 2×105 cells were seeded on coverslips. Following attachment, the medium was replaced with SFM DMEM to starve the cells and left overnight. Next day the ‘Insall’ chemotaxis chambers were prepared. In the middle chamber, serum starvation medium was added. The coverslip was then carefully placed cell-side down onto the chamber. To create a chemoattractant gradient, full DMEM medium with 10% FBS was added on the sides of the Insall chambers (about 120 μl). The bridges containing the cells were then visualised every 15 min using a Nikon Ti long-term time-lapse microscope at 37°C with a ×10 objective for 48 hr. For LPAR1/3 inhibitor treatment with KI16425 antagonist (Cayman Chemicals, #10012659), cells were incubated for 1 hr in serum-free medium in 1:1000 dilution prior preparation and assembly of the ‘Insall’ chambers. DMSO (#15572393, Fisher Chemical) was used as a vehicle control. The cells were manually tracked using the mTrackJ plugin of Fiji software. From each condition, at least two random bridges where selected and at least 25 cells from each bridge were manually tracked. Only cells present at the first frame of the video were counted in the tracking, whereas when the cells were moving outside the bridge the tracking was stopped. The Excel spreadsheets with all the cell tracks from each bridge were extracted in order to create rose plots, individual cell-track graphs, and cosθ data using an algorithm in R software which was previously designed and published in our lab (Fort et al., 2018).
 
-## Western blotting
+### Western blotting
 
 Protein extraction from cultured cells was performed using ice-cold RIPA (150 mM NaCl, 10 mM Tris-HCl pH 7.5, 1 mM EDTA, 1% Triton X-100, 0.1% SDS buffer) supplemented with 1× phosphatase and 1× protease inhibitors (#78427, #78438; Thermo Fisher Scientific). Cell lysates were centrifuged at 13,000 rpm at 4°C for 10 min and the supernatant was collected. Protein was quantified using the Precision Red (#ADV02; Cytoskeleton) advanced protein assay and 10–20 μg was used. The lysates were mixed with 1× NuPAGE LDS sample buffer (#NP0007, Invitrogen) and 1× NuPAGE reducing agent (#NP0004, Invitrogen), boiled for 5 min at 100°C and loaded on Novex 4–12% Bis-Tris acrylamide pre-cast gels (#NP0321; Thermo Fisher Scientific) at 170 V for about 1 hr. The proteins were transferred onto a 0.45 μm nitrocellulose blotting membrane (#10600002; GE Healthcare) using wet electrotransfer for 1 hr at 110 V. The membranes were blocked with 5% (wt/vol) BSA diluted in 1× TBS-T (10 mM Tris pH 8.0, 150 mM NaCl, 0.5% Tween-20) for 30 min at room temperature on a shaker. Primary antibodies were incubated in buffer with 5% (wt/vol) BSA and 1× TBS-T overnight at 4°C on a roller. Membranes were washed three times and incubated with Alexa Fluor-conjugated secondary antibodies (#A21206 and #A10038, Thermo Fisher Scientific) diluted in 5% (wt/vol) BSA and 1× TBS-T, for 1 hr at room temperature on a roller. The membranes were then washed three times and visualised using the Li-Cor Odyssey CLx scanner with the auto intensity scanning mode.
 
-## Immunofluorescence assay
+### Immunofluorescence assay
 
 CKPC cells were plated onto sterile 13 mm glass coverslips that had been previously coated with 1 mg/ml fibronectin (#F1141; Sigma-Aldrich). Coverslips were fixed using 4% PFA (#15710, Electron Microscopy Sciences) in PBS for 10 min at room temperature. The coverslips were then washed three times with PBS and permeabilised with permeabilisation buffer for 5 min at room temperature. The coverslips were washed again three times with PBS and blocked with blocking buffer for about 30 min at room temperature. Primary antibodies were diluted in blocking buffer in the appropriate dilution and incubated for 1 hr at room temperature. Coverslips were washed three times with blocking buffer and secondary antibodies were then added in the appropriate dilution in blocking buffer and incubated for 1 hr at room temperature. Finally, the coverslips were washed three times with PBS and mounted on microscopy slides using Fluoromount-G solution containing DAPI (Southern Biotech; 0100-01). Slides were imaged using a Zeiss 880 LSM with Airyscan microscope.
 
-## Macropinocytosis assays
+### Macropinocytosis assays
 
 Cells were seeded on fibronectin-coated coverslips and incubated for 2–4 hr. The culture medium was replaced with serum-free DMEM and left overnight in a 37°C in a humidified incubator perfused with 5% CO2. The next day 10% FBS was added to the existing media and 0.2 mg/ml fluorescein-labelled dextran (70 kDa, D1822; Thermo Fisher Scientific) was added. The cells were either imaged live or incubated for 30 min, washed once with ice-cold PBS and immediately fixed with 4% PFA and stained for 30 min with DAPI. The coverslips were then washed thrice with PBS and mounted on microscopy slides.
 
-## Live-cell imaging
+### Live-cell imaging
 
 For live-cell imaging cells were seeded on glass-bottom plates which were previously coated with either 1 mg/ml fibronectin (CKPC cells) or 10 μg/ml laminin (COS-7 cells, #L2020, Sigma). The cells were imaged using a Zeiss 880 LSM with Airyscan microscope which has a 37°C humidified incubator and perfused with 5% CO2.
 
-## Image-based LPAR1 internalisation assay
+### Image-based LPAR1 internalisation assay
 
 CKPC-1 stable cell lines were first transfected with LPAR1-mCherry construct. The cells were then seeded on fibronectin-coated coverslips and once adhered the media was replaced with serum-free DMEM overnight. The following day 10% FBS was added to the pre-existing medium and incubated for 15 min for the internalisation to occur. The media was aspirated and immediately fixed using 4% PFA. The cells were then mounted on microscopy slides and visualised using a Zeiss 880 LSM with Airyscan microscope (×63, oil, 1.4NA objective). Images were analysed by thresholding the LPAR1-mCherry channel and analysing the objects which were 0.1 μm or above in Fiji software.
 
-## Reverse transcription quantitative polymerase chain reaction
+### Reverse transcription quantitative polymerase chain reaction
 
 RNA was first isolated from the cells using the RNeasy Mini Kit (#74104, QIAGEN) according to the manufacturer’s instructions. The cDNA was then synthesised using the SuperScript III Reverse Transcriptase protocol and measured using NanoDrop2000c. 1 μg of cDNA was mixed along with a primer master mix previously made. The quantitative polymerase chain reaction (qPCR) was performed according to the manufacturer’s instructions and the DyNAmo HS SYBR Green qPCR kit (#F410L; Thermo Fisher Scientific) reaction was set up as follows using the C1000 Thermal Cycler (CFX96 Real time system, Bio-Rad): 3 min at 95°C, 20 s at 95°C, 30 s at 57°C, 30 s at 72°C, repeat steps 2–4 for 40 cycles and 5 min at 72°C. Each condition had three technical replicates and GAPDH was used as a housekeeping gene (Fw - CATGGCCTACATGGCCTCCA, Rv - TGGGATAGGGCCTCTCTTGC, Thermo Fisher). The mRNA fold change was calculated using the ΔΔCt method. The LPAR1 and LPAR3 Quantitec primers were purchased from QIAGEN (#QT00264320, #QT00107709).
 
-## In vivo transplantation assay
+### In vivo transplantation assay
 
 For the in vivo transplantation assay KPC-1 CYRI-B CRISPR cell lines were used. The cells were grown in full media as normal until 24 hr before transplant, when fresh media was added without any antibiotics. About 2×106 cells per mouse were used for the experiment. Cells were injected into the intraperitoneal cavity of 10-week-old female CD-1 mice (Charles Rivers). Once injected, the mice were monitored every day and at day 14 mice were sacrificed. The weight of the mice and pancreata were taken at end-point.
 
-## Immunohistochemistry, in situ hybridisation detection (RNAScope) assays, and quantification
+### Immunohistochemistry, in situ hybridisation detection (RNAScope) assays, and quantification
 
 Tissues were fixed in 10% formalin and next day transferred to 70% ethanol. The tissues were then embedded into paraffin blocks. For immunohistochemistry, the staining was performed on 4 µm sections which had previously been ovened at 60°C for 2 hr, using standard protocols. The detection for mouse Cyrib mRNA was performed using RNAScope 2.5 LS (Brown) detection kit (#322100; Advanced Cell Diagnostics, Hayward, CA, USA) on a Leica Bond Rx autostainer strictly according to the manufacturer’s instructions. Slides were imaged using the Leica SCN 400f scanner.
 
 To quantify the histology slides, the HALO software was used. About eight different areas (>350,000 µm2 each area) within the pancreatic tumours were used to quantify the different stains. Necrotic areas were quantified manually from the whole pancreatic tumour using haematoxylin and eosin (H&E) staining. Areas with fragmented nuclei were considered as positive for necrosis. For tissues from 15-week-old mice, both neoplastic lesions and tumour areas were quantified (pJNK, pERK, BrdU stains). For the RNAScope experiments, the algorithm was set up to recognise the individual dots. PanIN lesion quantification was performed manually according to the following website: https://pathology.jhu.edu/pancreas/medical-professionals/duct-lesions using H&E slides.
 
-## Statistical analysis
+### Statistical analysis
 
 Data and statistics were analysed using the Prism software. All of the cell biology experiments, unless otherwise stated in the figure legends, were performed three times on separate occasions with separate cell passages. For all the mouse experiments and histology quantifications for end-point mice between KPC and CKPC mouse models, similar ages of mice were chosen. Unless otherwise stated, all the cell biology experiments were plotted as super plots (Lord et al., 2020) and each biological replicate was coloured differently. The quantified numbers of individual cells from the repeats are shown as individual points in the background.
 

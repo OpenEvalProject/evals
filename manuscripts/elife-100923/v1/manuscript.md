@@ -12,11 +12,11 @@
 
 ### Affiliations
 
-1. https://ror.org/02drdmm93 Department of Ultrasound, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Beijing China
-2. https://ror.org/013xs5b60 Department of Ultrasound, Beijing Hospital of Traditional Chinese Medicine, Capital Medical University Beijing China
-3. https://ror.org/043ek5g31 Department of Ultrasound, Affiliated Cancer Hospital of Zhengzhou University Zhengzhou China
-4. https://ror.org/014gmtw23 Key Laboratory of Cancer and Microbiome, State Key Laboratory of Molecular Oncology, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Beijing China
-5. https://ror.org/04ddfwm68 Department of Ultrasound, The First Affiliated Hospital of China Medical University, Shenyang Shenyang China
+1. Department of Ultrasound, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Beijing China ([ROR:02drdmm93](https://ror.org/02drdmm93))
+2. Department of Ultrasound, Beijing Hospital of Traditional Chinese Medicine, Capital Medical University Beijing China ([ROR:013xs5b60](https://ror.org/013xs5b60))
+3. Department of Ultrasound, Affiliated Cancer Hospital of Zhengzhou University Zhengzhou China ([ROR:043ek5g31](https://ror.org/043ek5g31))
+4. Key Laboratory of Cancer and Microbiome, State Key Laboratory of Molecular Oncology, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Beijing China ([ROR:014gmtw23](https://ror.org/014gmtw23))
+5. Department of Ultrasound, The First Affiliated Hospital of China Medical University, Shenyang Shenyang China ([ROR:04ddfwm68](https://ror.org/04ddfwm68))
 
 † Corresponding author
 
@@ -36,57 +36,77 @@ RNA sequencing (RNA-seq) technology is a gene expression analysis method that ca
 
 ## Results
 
-## The single-cell landscape of TNBC samples
+### The single-cell landscape of TNBC samples
 
 In this study, a total of nine TNBC single-cell samples were included. After quality control (QC), 38,985 genes from 29,733 cells per sample were finally selected for subsequent analysis (Figure 1—figure supplement 1). Based on original annotations of data, these cells were divided into 9 major cell clusters and 29 minor cell clusters (Figure 1a–c). Major cell clusters include B-cells, cancer-associated fibroblasts (CAFs), cancer epithelial, endothelial, myeloid, normal epithelial, plasmablasts, perivascular-like cells (PVL), T-cells. Of these, myeloid cluster is further divided into cycling_myeloid, dendritic cells (DCs), macrophage, and monocyte clusters. As shown in Figure 1c, the immune microenvironment of TNBC is characterized by a high proportion of T cells and macrophages. On this basis, ligand–receptor interactions between different major cell clusters are frequent (Figure 1d).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/100923/elife-100923-fig1-v1.jpg)
+
+**Figure 1.:** (a) t-SNE plot of the nine major cell clusters. (b) t-SNE plot of the 29 minor cell clusters. (c) t-SNE plot of the 12 major cell clusters. (d) The number of ligand–receptor interactions of different major cell clusters in cellcell communication network, different colors represent different cell clusters, and arrows represent ligandreceptor orientation. (e) Heat map showing the average expression of ferroptosis-related genes in different clinicopathological classifications. (f) Heat map showing the average expression of ferroptosis-related genes in different major cell clusters.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100923/elife-100923-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Correlation analysis between the number of genes detected per cell and the total RNA molecule count, as well as the proportion of mitochondrial gene expression. (b) Violin plots visualizing statistical distributions of gene counts, total RNA molecule counts, mitochondrial gene proportion, and hemoglobin gene proportion across triple-negative breast cancer samples. (c) t-SNE plot of samples after batch effect correction.
+
 Of the 471 ferroptosis-related genes from the FerrDb website, 391 were present in the single-cell expression matrix of TNBC. We found that there were significant differences in the average expression of these genes in different clinicopathological classifications, as shown in Figure 1e. Moreover, there were significant differences in the expression of ferroptosis-related genes in 12 major cell clusters of TNBC (Figure 1f).
 
-## Ferroptosis-related subpopulations of T cells in the TNBC
+### Ferroptosis-related subpopulations of T cells in the TNBC
 
 A total of 11,784T cells in the scRNA-seq data of this study, including cycling T cells, NK cells, NKT cells, T cells CD4+, and T cells CD8+, identified clusters (Figure 2a). Based on the non-negative matrix factorization (NMF) algorithm (rank = 3), each T cell cluster was further categorized into three ferroptosis-related subpopulations (T_C1, T_C2, T_C3). Figure 2b shows that differentially expressed top 50 ferroptosis-related genes differed significantly among these three subpopulations. Among them, the proportion of NK cells in the T_C2 subpopulation was significantly more than the other two subpopulations (Figure 2c). According to pseudotime trajectories, we found that all three T cell subpopulations were involved at different periods of differentiation (Figure 2d–f). Further, Figure 2g shows the average expression of signature genes associated with 8 functions in 15 subpopulations of T-cells, and we found that gene expression was significantly higher in the cycling T-cells. Moreover, different T-cell subpopulations play an important role in the antitumor process (Figure 2h).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/100923/elife-100923-fig2-v1.jpg)
 
-**Figure 2.:** (a) t-SNE plot of the five identified clusters of T cells. (b) Heat map showing the expression of ferroptosis-related genes (top 50) in three subpopulations of T cells. (c) Demonstration of the proportion of clusters of T cells in ferroptosis-related subpopulations. (d) Pseudotime trajectories showing the developmental time course of T cells. (e) Pseudotime trajectories of the five identified clusters of T cells. (f) Pseudotime trajectories of ferroptosis-related subpopulations of T cells. (g) Heat map showing the average expression of signature genes associated with 8 functions in 15 subpopulations of T-cells. (h) Network diagram of the cell–cell communication between cancer epithelial cells and T cells. (i) Heat map for differential analysis of transcription factors activity.Figure 2—source code 1.
+**Figure 2.:** (a) t-SNE plot of the five identified clusters of T cells. (b) Heat map showing the expression of ferroptosis-related genes (top 50) in three subpopulations of T cells. (c) Demonstration of the proportion of clusters of T cells in ferroptosis-related subpopulations. (d) Pseudotime trajectories showing the developmental time course of T cells. (e) Pseudotime trajectories of the five identified clusters of T cells. (f) Pseudotime trajectories of ferroptosis-related subpopulations of T cells. (g) Heat map showing the average expression of signature genes associated with 8 functions in 15 subpopulations of T-cells. (h) Network diagram of the cell–cell communication between cancer epithelial cells and T cells. (i) Heat map for differential analysis of transcription factors activity.
 
 Transcription factors (TFs) are key regulators in cellular signal transduction (Gong et al., 2022b). As a result, RFX5, EOMES, TBX21, CEBPB, RUNX3, and IKZF3 showed higher activities in NKT cells. Besides, IRF, NFATC2, STAT, and PRDM1 showed higher activities in CD8+ T cells (Figure 2i). The HALLMARK analysis results revealed a prominent enrichment in pathways such as pathways in DNA−Repair and adipogenesis in cycling T cells, whereas in other clusters of T cells, pathways such as epithelial–mesenchymal transition and KRAS signaling had higher enrichment. However, the difference in enrichment scores between ferroptosis-related subpopulations of T cells was not significant.
 
-## Ferroptosis-related subpopulations of macrophages in the TNBC
+### Ferroptosis-related subpopulations of macrophages in the TNBC
 
 A total of 3671 macrophages in the scRNA-seq data of this study. Based on the NMF algorithm (rank = 4), two ferroptosis-related subpopulations of macrophages (M_C1, M_C2) were finally obtained after clustering cell clusters with similar markers, and the t-distributed stochastic neighbor embedding (t-SNE) plot is shown in Figure 3a. The pseudotime trajectories showed that M_C2 cells belong to the early stage of macrophages and then gradually develop into M_C1 cells (Figure 3b and c). Figure 3d shows that differentially expressed top 50 ferroptosis-related genes differed significantly among subpopulations.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/100923/elife-100923-fig3-v1.jpg)
+
+**Figure 3.:** (a) t-SNE plot of two ferroptosis-related subpopulations of macrophages. (b) Pseudotime trajectories showing the developmental time course of macrophages. (c) Pseudotime trajectories of two ferroptosis-related subpopulations of macrophages. (d) Heat map showing the average expression of ferroptosis-related genes in two subpopulations of macrophages. (e) t-SNE plot showing the expression patterns of marker genes in M_C2. (f) t-SNE plot showing the expression patterns of marker genes in M_C1. (g) t-SNE plot showing the enrichment score of the TREM2 + MAC in each cell. (h) t-SNE plot showing the enrichment score of the FOLR2 + MAC in each cell. (i) Bubble plot showing the correlation of enrichment score between TREM2 + MAC and FOLR2 + MAC. (j) Network diagram of the cell-cell communication between cancer epithelial cells and ferroptosis-related subpopulations of macrophages.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100923/elife-100923-fig3-figsupp1-v1.jpg)
+
 Further, we found that FOLR2, SEPP1, MRC1, LYVE1, SLC40A1, and CD163 were highly expressed in M_C1 cells and named M_C1 as FOLR2 + MAC. whereas TREM2, FN1, CXCR4, C3, S100A8, IFI6, and SPP1 were highly expressed in M_C2 and named M_C2 as TREM2 + MAC. Figure 3e and f shows the marker genes in each subpopulation of macrophages. Enrichment scores of the two subpopulations in each cell are shown by t-SNE plots (Figure 3g and h). Moreover, the enrichment score of TREM2 + MAC and FOLR2 + MAC were significantly negatively correlated (r=−0.779) (Figure 3i). Communication between these two subpopulations and cancer epithelial cells is vigorous (Figure 3j). In addition, detection of TFs activity in each macrophage cell revealed that most of TFs had higher activity in FOLR2 + MAC cells (Figure 3—figure supplement 1).
 
-## Construction and validation of predictive survival models based on ferroptosis-related genes
+### Construction and validation of predictive survival models based on ferroptosis-related genes
 
 Based on the recurrence-free survival (RFS) data of TNBC in the GSE25066 database, univariate Cox regression analysis was performed on 8371 specific markers of ferroptosis-related subpopulations, and 41 genes significantly associated with RFS were screened (p<0.01) (Supplementary file 1, Figure 4—figure supplement 1). These genes were further analyzed by Least Absolute Shrinkage and Selection Operator (LASSO) regression, and 23 genes were finally selected for the construction of the risk model. We calculate the risk score using the following formula: risk score = TMEM160 * (–0.4689) + EWSR1 * (–0.4237) + BCAT2 * (–0.2346) + PNKP * (–0.1592) + MLEC * (–0.1567) + SAP30BP * (–0.1469) + TBL1XR1 * (–0.0894) + STAG1 * (–0.0695) + NR4A1 * (–0.0630) + TNFRSF9 + (–0.0503) + PSD3 * (–0.0153) + BAD * (–0.0094) + MIIP * 0.0104 + HIST3H2A * 0.0294 + CDC25B * 0.0528 + TCEB1 * 0.0670 + HMGCS1 * 0.0988 + SPC25 * 0.1317 + TKT * 0.2234 + PTTG1 * 0.2960 + ADA * 0.3097 + AK1 * 0.4003 + AIMP2 * 0.4081 (Figure 4a–c). All patients were categorized into low- and high-risk groups according to the median value of the risk score (Figure 4d–f). Survival curves showed that patients in the high-risk group had a shorter RFS compared to patients in the low-risk group (p<0.05, Figure 4g). In addition, the risk score had an excellent predictive effect in predicting RFS in TNBC patients, its area under the receiver operating characteristic curves (AUCs) for 3, 4, and 5 years RFS were 0.87, 0.88, and 0.88 (Figure 4h).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/100923/elife-100923-fig4-v1.jpg)
+
+**Figure 4.:** (a) Least Absolute Shrinkage and Selection Operator (LASSO) regression of 23 ferroptosis-related genes. (b) Cross-validation for optimizing the parameter in LASSO regression. (c) Demonstration of regression coefficients corresponding to 23 genes. (d) Graph showing risk scores for all samples. (e) Scatterplot showing recurrence-free survival for all samples. (f) Heat map showing the average expression of 23 genes in the low- and high-risk groups. (g) Kaplan–Meier curves of survival analysis in the low- and high-risk groups. (h) Receiver operating characteristic curves for predicting the recurrence-free survival at 3, 4, and 5 years in training set. (i) Receiver operating characteristic curves for predicting the recurrence-free survival at 3, 4 and 5 years in external validation set.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100923/elife-100923-fig4-figsupp1-v1.jpg)
+
 In external validation set (GSE86166), patients in the high-risk group also had a shorter RFS compared to patients in the low-risk group (p<0.05). This risk model also performed well in predicting RFS in TNBC patients, its AUCs for 3-, 4-, and 5-year RFS were 0.65, 0.67, and 0.71 (Figure 4i).
 
-## Analysis of independent prognostic factors
+### Analysis of independent prognostic factors
 
 Further, we performed univariate and multivariate Cox analyses to determine whether the risk score could serve as an independent prognostic factor for TNBC patients compared to other common clinicopathologic factors. In the GSE25066 database, Figure 5a shows that both the risk factor and stage were significantly associated with TNBC patients' RFS and were independent prognostic factors (p<0.05). In the external validation set, Figure 5b shows that only the risk factor can be considered as independent prognostic factor in TNBC patients (p<0.05).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/100923/elife-100923-fig5-v1.jpg)
 
-**Figure 5.:** (a) The forest plot showing the results of univariate and multivariate COX regression analysis of risk score, age, grade, and stage in the GSE25066 database. (b) The forest plot showing the results of univariate and multivariate COX regression analysis of risk score, grade, and stage in the GSE86166 database.Figure 5—source code 1.
+**Figure 5.:** (a) The forest plot showing the results of univariate and multivariate COX regression analysis of risk score, age, grade, and stage in the GSE25066 database. (b) The forest plot showing the results of univariate and multivariate COX regression analysis of risk score, grade, and stage in the GSE86166 database.
 
-## Correlation of the risk score with immune microenvironment
+### Correlation of the risk score with immune microenvironment
 
 Next, we calculated the ImmuneScore, StromalScore, ESTIMATEScore, and TumorPurity for samples in the low- and high-risk groups and compared the differences in scores between the two groups. The results showed that these scores did not differ significantly between the low- and high-risk groups (Figure 6a–f). Then, based on the CIBERSORT algorithm, we found that T cells CD4 memory activated, NK cells resting, and monocytes had significantly higher proportions in the high-risk group, and the NK cells activated, and mast cells resting had significantly higher proportions in the low-risk group (Figure 6g). Infiltration of these immune cells may play an important role in the clinical course of TNBC patients.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/100923/elife-100923-fig6-v1.jpg)
 
-**Figure 6.:** (a–d) Correlation of the risk score with the ImmuneScore, StromalScore, ESTIMATEScore, and TumorPurity. (e) Difference of ImmuneScore, StromalScore, and ESTIMATEScore in low- and high-risk groups. (f) Difference of TumorPurity in low- and high-risk groups. (g) Difference of immune infiltration score between low- and high-risk groups calculated by CIBERSORT. *p<0.05, **p<0.01, ns: p>0.05.Figure 6—source code 1.
+**Figure 6.:** (a–d) Correlation of the risk score with the ImmuneScore, StromalScore, ESTIMATEScore, and TumorPurity. (e) Difference of ImmuneScore, StromalScore, and ESTIMATEScore in low- and high-risk groups. (f) Difference of TumorPurity in low- and high-risk groups. (g) Difference of immune infiltration score between low- and high-risk groups calculated by CIBERSORT. *p<0.05, **p<0.01, ns: p>0.05.
 
-## Analysis of clinical response to drugs with the risk score
+### Analysis of clinical response to drugs with the risk score
 
 Based on the ‘pRRophetic’ R package, we explored the relationship between the risk score and clinical response to 138 drugs and calculated the 50% inhibitory concentration (IC50). As a result, 16 of 50 drugs whose clinical response was significantly associated with the risk score were positively associated with the risk score, and the remaining 34 were negatively associated with the risk score. Further, we found that 27 of drugs negatively associated with the risk score had significantly lower IC50 in the high-risk group, suggesting that patients in the high-risk group may be more sensitive to these drugs, favoring the choice of clinical medication (Figure 7a). Thirteen drugs positively associated with the risk score had significantly higher IC50 in the high-risk group than in the low-risk group, suggesting that patients in the high-risk group may be less sensitive to these drugs (Figure 7b).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/100923/elife-100923-fig7-v1.jpg)
 
-**Figure 7.:** (a) Box plot showing differences of IC50 for drugs negatively associated with risk scores in different groups. (b) Box plot showing differences of IC50 for drugs positively associated with risk scores in different groups. (c) Box plot showing differences of TIDE scores in different groups. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, ns: p>0.05.Figure 7—source code 1.
+**Figure 7.:** (a) Box plot showing differences of IC50 for drugs negatively associated with risk scores in different groups. (b) Box plot showing differences of IC50 for drugs positively associated with risk scores in different groups. (c) Box plot showing differences of TIDE scores in different groups. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, ns: p>0.05.
 
 Finally, we calculated the tumor immune dysfunction and exclusion (TIDE) scores of patients in the low- and high-risk groups; unfortunately, the TIDE scores were not significantly different between the two groups (Figure 7c).
 
@@ -108,50 +128,168 @@ In conclusion, this study revealed the TNBC ferroptosis-mediated tumor immune ce
 
 ## Materials and methods
 
-## Patient data collection and processing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package Seurat</td>
+      <td>Microsoft</td>
+      <td>N/A</td>
+      <td>Version 4.1.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Patient data collection and processing
 
 The data used in this study were collected from public datasets. Nine single-cell RNA-seq TNBC samples were obtained from the Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi) under the accession number GSE176078 (Wu et al., 2021; Table 1).
 
+**Table 1.**
+ Sample information for triple-negative breast cancer in GSE176078.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Case ID</th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>T_Stage</th>
+      <th colspan="2">Subtype by IHC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3946</td>
+      <td>Female</td>
+      <td>52</td>
+      <td colspan="2">T2</td>
+      <td>TNBC</td>
+    </tr>
+    <tr>
+      <td>44041</td>
+      <td>Female</td>
+      <td>35</td>
+      <td colspan="2">T2</td>
+      <td>TNBC</td>
+    </tr>
+    <tr>
+      <td>4465</td>
+      <td>Female</td>
+      <td>54</td>
+      <td colspan="2">T2</td>
+      <td>TNBC</td>
+    </tr>
+    <tr>
+      <td>4495</td>
+      <td>Female</td>
+      <td>63</td>
+      <td colspan="2">T1</td>
+      <td>TNBC</td>
+    </tr>
+    <tr>
+      <td>44971</td>
+      <td>Female</td>
+      <td>49</td>
+      <td colspan="2">T2</td>
+      <td>TNBC</td>
+    </tr>
+    <tr>
+      <td>44991</td>
+      <td>Female</td>
+      <td>47</td>
+      <td colspan="2">NA</td>
+      <td>TNBC</td>
+    </tr>
+    <tr>
+      <td>4513</td>
+      <td>Female</td>
+      <td>73</td>
+      <td colspan="2">T3</td>
+      <td>TNBC</td>
+    </tr>
+    <tr>
+      <td>4515</td>
+      <td>Female</td>
+      <td>67</td>
+      <td colspan="2">T1</td>
+      <td>TNBC</td>
+    </tr>
+    <tr>
+      <td>4523</td>
+      <td>Female</td>
+      <td>52</td>
+      <td colspan="2">T2</td>
+      <td>TNBC</td>
+    </tr>
+    <tr>
+      <td colspan="6"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_IHC, immunohistochemistry; TNBC, triple-negative breast cancer._
+
 To construct the model to predict prognosis and immunotherapy efficacy, bulk RNA-seq datasets and clinicopathological information of TNBC were obtained from the GEO database under the accession number GSE25066 (Hatzis et al., 2011). The data for external validation were obtained from the GEO database under the accession number GSE86166 (Prabhakaran et al., 2017).
 
-## Single-cell RNA-seq data processing
+### Single-cell RNA-seq data processing
 
 Data were processed using the R package Seurat (v. 4.1.1) for QC. Based on QC metrics suggested in Scanpy tutorial, outlier cells were removed based on relevant feature data (nFeature_RNA, nCount_RNA, percent.mt), that is, cells with less than 200 genes expressed or more than 20% mitochondrial genes counts were filtered out. After quality control, the expression data of each cell was normalized separately using the NormalizeData function and the top 2000 highly variable genes (HVGs) of each cell were identified using the FindVariableFeatures function. To remove batch effects among different samples, we utilized the FindIntegrationAnchors function to find anchor genes and then the reclassified datasets were integrated utilized the IntegrateData function. Data normalization was performed using the ScaleData function in Seurat. The RunPCA function was utilized to reduce the dimension of principal component analysis (PCA) for the first 2000 HVGs screened above.
 
-## Genes associated with ferroptosis acquiring
+### Genes associated with ferroptosis acquiring
 
 The data of 471 genes (Supplementary file 2) associated with ferroptosis were collected from the FerrDb website (http://www.zhounan.org/ferrdb/current/). Then, from the above genes, screened for genes with expression information in the single-cell matrix of TNBC patients. Firstly, based on the clinical data of the samples, the expression values of ferroptosis-related genes in the same type of samples were averaged and presented in a heatmap. Afterward, the expression values of ferroptosis-related genes were averaged across different cell types and also presented in a heatmap.
 
-## Cell subtype identification associated with ferroptosis
+### Cell subtype identification associated with ferroptosis
 
 Because information of cell type annotation was listed in the original literature of the GSE176078 dataset, the metadata of the original literature was used directly for the next analyses. The R package Seurat (v. 4.1.1) was used to identify cell types and presented results via t-SNE. The NMF is an algorithm based on high-throughput data to identify and cluster out different molecular functional patterns (Ding et al., 2023). In this work, subtypes of macrophages and T cells based on genes associated with ferroptosis using the ‘NMF’ R package (v 0.26).
 
-## Cell–cell communication analysis
+### Cell–cell communication analysis
 
 Cell–cell communication mediated by ligand–receptor complexes plays an important role in multiple biological processes (Efremova et al., 2020). In this study, the ‘iTALK’ R package was utilized to construct the cellular communication network. First, use the rawParse function to identify the top 50% highly expressed genes for each cell type based on their expression means. Then utilize the FindLR function to identify ligands and receptors among the highly expressed genes. Finally, construct an interaction network based on all the interaction relationships.
 
-## Pseudotime analysis
+### Pseudotime analysis
 
 Pseudotime analysis of scRNA-seq snapshot data helps provide an approximate landscape of gene expression dynamics (Sugihara et al., 2022). The ‘Monocle’R package (v. 2.28.0) was applied for pseudotime analysis to conduct cellular trajectory. The reduceDimensio function based on the DDRTree algorithm is used to reduce the dimensions of the data. Based on the Progenitor Cell Biology Consortium database (https://www.synapse.org), the stemness signature was identified via the one-class logistic regression algorithm, then the stemness index of each TNBC cell was calculated by scaling the Spearman correlation coefficients to be between 0 and 1. Eventually, the order Cells function was utilized to sort cells and complete construction of trajectory.
 
-## Transcriptional factor analysis
+### Transcriptional factor analysis
 
 The Single-cell rEgulatory Network Inference and Clustering (SCENIC) tool enables simultaneous gene regulatory network reconstruction and cell-state identification from scRNA-seq data (Aibar et al., 2017; Van de Sande et al., 2020). We utilized the ‘SCENIC’ R package (v.1.3.1) to establish the TFs regulatory network. Specifically, first, co-expression modules are inferred using the ‘GENIE3/GRNBOOST’ function to identify gene set with co-expressed TFs. Next, the indirect targets are pruned from these modules using cis-regulatory motif discovery (cisTarget). Finally, the AUCell algorithm was utilized to evaluate the activity of regulons.
 
-## Hallmarks gene set enrichment analysis
+### Hallmarks gene set enrichment analysis
 
 Hallmarks gene set enrichment analysis was utilized the ‘irGSEA’ R package (v2.1.5). The ssGSEA algorithm was utilized to conduct differential pathway score between ferroptosis-related immune cell subtypes.
 
-## Construction and validation of the prognostic model
+### Construction and validation of the prognostic model
 
 First, based on the RFS data of 178 TNBC patients in the GSE25066 database, this study utilized the ‘survival’ (v.3.2–7) and ‘survminer’ (v0.4.8) R package to perform univariate Cox proportional hazards regression analyses on ferroptosis-related genes signature of different immune cell subtypes.
 
 The genes screened for significant association with RFS in the regression analysis (p<0.01) were utilized to construct a risk factor-based model by the LASSO method implemented in the ‘glmnet’ R package (v.4.0–2). TNBC patients were divided into low- and high-risk groups according to the median risk score, and Kaplan–Meier survival curves were utilized to compare the RFS rates between the two groups, p-value<0.05 was considered to be of significance. To validate the performance of the model, receiver operating characteristic curves were demonstrated and the AUC values were calculated for evaluating 3-, 4-, and 5-year RFS rates of TNBC patients in GSE25066 database. In addition, the GSE86166 was utilized as external validation sets to further verify the robustness of the performance of the constructed model in this study.
 
-## Immune cells infiltration and drug sensitivity analysis
+### Immune cells infiltration and drug sensitivity analysis
 
 Immune cells infiltration is important to the antitumor response, and these cells are diverse among patients (Iglesias-Escudero et al., 2023; Pérez-Romero et al., 2020). The ‘CIBERSORT’, ‘GSVA’, and ‘TIMER’ R package was utilized to determine the distribution of different immune cell types between low- and high-risk groups. Next, the IC50 of 138 chemotherapeutic drugs was calculated for each patient using the ‘pRRophetic’ R package (v. 0.5), and drugs significantly associated with the risk score were screened. Finally, we calculated the TIDE score (http://tide.dfci.harvard.edu.) for each patient and thus analyzed its difference between low- and high-risk groups.
 
-## Statistical analysis
+### Statistical analysis
 
 The R software (v. 4.1.3) was utilized for all data analysis. Wilcoxon rank-sum test was utilized to analyze associations of continuous variables. Log-rank test was utilized to analyze differences in survival curves between groups. p value <0.05 was considered statistically significant.

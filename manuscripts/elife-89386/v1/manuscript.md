@@ -8,11 +8,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Biophysics Program, Stanford University Stanford United States
-2. https://ror.org/00f54p054 Department of Computer Science, Stanford University Stanford United States
-3. https://ror.org/00f54p054 Department of Molecular and Cellular Physiology, Stanford University School of Medicine Stanford United States
-4. https://ror.org/00f54p054 Department of Structural Biology, Stanford University School of Medicine Stanford United States
-5. https://ror.org/00f54p054 Institute for Computational and Mathematical Engineering, Stanford University Stanford United States
+1. Biophysics Program, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+2. Department of Computer Science, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+3. Department of Molecular and Cellular Physiology, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+4. Department of Structural Biology, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+5. Institute for Computational and Mathematical Engineering, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
@@ -36,7 +36,7 @@ Our results reveal both strengths and weaknesses of AF2 models. The structural a
 
 ## Results
 
-## Selection of proteins and models to ensure a fair comparison
+### Selection of proteins and models to ensure a fair comparison
 
 Evaluating the accuracy of predicted ligand-binding poses requires that we examine protein–ligand complexes whose structures have been determined experimentally. We wish to ensure, however, that the predicted structures of a given protein are not informed by experimentally determined structures of that same protein.
 
@@ -44,7 +44,7 @@ AF2 and other recent neural-network-based protein structure prediction methods u
 
 We selected all proteins, ligands, and structural models used in this study in a systematic manner (see Methods). We focused on one class of drug targets—G-protein-coupled receptors (GPCRs)—for three reasons. First, GPCRs represent the largest class of drug targets by a substantial margin, with 35% of FDA-approved drugs targeting a GPCR (Sriram and Insel, 2018). Second, GCPR-binding pockets are very diverse, reflecting the fact that GPCRs have evolved to bind very different ligands with high specificity (Venkatakrishnan et al., 2013). Third, the GPCRdb project maintains a historical database of template-based models of GPCRs (Pándy-Szekeres et al., 2018). By selecting the template-based models listed in GPCRdb in April 2018, we ensured that these models were not informed by any structures that became available after April 30, 2018.
 
-## Binding pocket structures are much more accurate in AF2 models than traditional models
+### Binding pocket structures are much more accurate in AF2 models than traditional models
 
 Because proteins are flexible, each protein can adopt multiple structures. In particular, the structure of a protein—especially the structure of the binding pocket—depends on which ligand is bound. To quantify this natural variation, we compared all pairs of experimentally determined structures of the same protein to one another, using root mean squared deviation (RMSD) as a metric (see Methods).
 
@@ -56,9 +56,33 @@ Next, we turn our attention to the orthosteric binding pocket of each protein—
 
 In fact, the binding pocket RMSD between an AF2 model and an experimentally determined structure is typically nearly as low as the RMSD between two experimentally determined structures of the same protein with different ligands bound (Figure 1). In contrast, binding pockets in the traditional template-based models are much less accurate, with a median RMSD of 3.3 Å for traditional models vs. 1.3 Å for AF2 models. We note that the binding pockets of a few AF2 models are highly inaccurate (approximately 5 Å RMSD), as is the case for several of the traditional models.
 
-## Binding pose prediction using AF2 models or traditional models yields similar accuracy
+![Figure 1.](https://cdn.elifesciences.org/articles/89386/elife-89386-fig1-v1.jpg)
+
+**Figure 1.:** Binding pockets are defined to include all amino acid residues with any atom within 5 Å of the ligand in an experimentally determined structure. We compute all-atom binding pocket root mean squared deviations (RMSDs) between each modeled structure and all experimentally determined structures of the same protein. For comparison, we also compute binding pocket RMSDs between all pairs of experimentally determined structures of the same protein with different ligands bound. The middle line of each box in the plot is the median RMSD, with the box extending from the first to the third quartile and defining the ‘interquartile range’. Whiskers extend to last data points that are within 150% of the interquartile range, and outlier data points beyond those are shown individually. The plotted data is based on 150 RMSD values (comparisons) for experimentally determined structures with different ligands bound, 52 for AlphaFold 2 models, and 78 for traditional models.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89386/elife-89386-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** We compute an all-atom root mean squared deviation (RMSD) between each modeled structure and all experimentally determined structures of the same protein. We also compute an all-atom RMSD between each pair of experimentally determined structures of the same protein with different ligands bound. The middle line of each box in the plot is the median RMSD, with the box extending from the first to the third quartile and defining the ‘interquartile range’. Whiskers extend to last data points that are within 150% of the interquartile range, and outlier data points beyond those are shown individually.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/89386/elife-89386-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** This figure is similar to Figure 1 but includes an additional bar for the case where each ligand is docked only to protein structures determined experimentally in complex with a ligand very different from the one being docked. Very different ligands are defined as ligand pairs in which the atom count of the maximal common substructure that is less than half the atom count of the smaller molecule.
+
+### Binding pose prediction using AF2 models or traditional models yields similar accuracy
 
 Next, we assess the accuracy of ligand-binding poses predicted by computational docking to AF2 models and traditional template-based models. For each ligand we consider, the binding pose to a target protein is known based on an experimentally determined structure of the ligand bound to the protein, which we call the reference structure. Using industry-standard software, we docked each ligand to both AF2 and GPCRdb models of the protein. A predicted pose is considered correct if its RMSD from the experimentally determined pose is ≤2.0 Å (Figure 2), a widely used criterion for correct pose prediction (Erickson et al., 2004; Gohlke et al., 2000; Paggi et al., 2021).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/89386/elife-89386-fig2-v1.jpg)
+
+**Figure 2.:** We plot the fraction of docked ligands whose pose is predicted correctly (see Methods). Error bars are 90% confidence intervals calculated via bootstrapping. *** for p-values <0.001, ns for p-values >0.05. 40 - 54 ligands were evaluated for each set of structures or models.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89386/elife-89386-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** This figure is identical to Figure 2 apart from the addition of two bars: (1) The red bar (docked to reference structure) is for the case where one docks the ligand from an experimentally determined structure back into the same structure (self-docking); (2) the light blue bar is for the case where each ligand is docked only to protein structures determined experimentally in complex with a ligand very different from the one being docked. Very different ligands are defined as ligand pairs in which the atom count of the maximal common substructure that is less than half the atom count of the smaller molecule. Error bars are 90% confidence intervals calculated via bootstrapping. *** for p-values <0.001, ** for p-values <0.01, ns for p-values >0.05.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89386/elife-89386-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** These plots are similar to those of Figure 2 and Figure 2—figure supplement 1, except that docking is performance with (A) Glide Dock XP and (B) Rosetta docking. Error bars are 90% confidence intervals calculated via bootstrapping (see Methods). *** for p-values <0.001, ** for p-values <0.01, ns for p-values >0.05.
 
 For comparison, we also dock each ligand to structures of the same protein determined experimentally with other ligands bound (cross-docking). Note that when calculating pose prediction accuracy (Figure 2), we exclude cases where the ligand is docked back to the reference structure; such ‘self-docking’ yields much higher accuracy (Figure 2—figure supplement 1) but is of little practical utility, because in practice one wishes to predict binding poses that have not already been determined experimentally.
 
@@ -66,15 +90,31 @@ Strikingly, binding pose prediction accuracy was similar when using AF2 models o
 
 The docked poses analyzed above were determined with the widely used commercial docking software package Glide, run in SP mode (for ‘standard precision’) (Friesner et al., 2004). To verify the robustness of our results, we repeated all docking experiments using a completely different docking software package—Rosetta docking (Park et al., 2021)—as well as with Glide run in XP mode (for ‘extra precision’) (Friesner et al., 2006). In both cases, we again found that, when used for ligand-binding pose prediction, AF2 models substantially underperformed experimentally determined structures and did not significantly outperform traditional models (Figure 2—figure supplement 2). In fact, the difference in binding pose prediction accuracy between AF2 models and traditional models was even smaller when using Rosetta docking or Glide XP than when using Glide SP.
 
-## Closer look at discrepancy between structural accuracy and pose prediction accuracy
+### Closer look at discrepancy between structural accuracy and pose prediction accuracy
 
 The results of the previous two sections contrast sharply with one another. AF2 models nearly match experimentally determined structures—and are much better than traditional template-based models—in binding pocket accuracy, as measured by a standard structural metric. Yet AF2 models fare much worse than experimentally determined structures—do not significantly outperform traditional models—when used to predict ligand-binding poses. Figures 3 and 4 provide illustrative examples.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/89386/elife-89386-fig3-v1.jpg)
+
+**Figure 3.:** We predict the binding pose of the drug aprepitant to its target, the neurokinin-1 receptor (NK1R) given either the AF2 model (orange) of NK1R or the experimentally determined structure (blue, PDB entry 6E59) of NK1R bound to a different ligand, L760735. (A, B) The binding pocket of the AF2 model is more similar (lower root mean squared deviation [RMSD]) than the binding pocket of the L760735-bound structure to the binding pocket of the aprepitant-bound structure (the ‘reference structure’, white, PDB entry 6J20). Amino acid residues whose positions differ most from the reference structure are shown in sticks (see Methods). (C, D) The aprepitant binding pose predicted by docking is much less accurate (higher RMSD) when using the AF2 model than when using the L760735-bound structure. Ligand L76035 shares a scaffold with aprepitant; for completeness, we include another example with highly dissimilar ligands in Figure 3—figure supplement 1. We note that the experimentally determined L760735-bound structure is a low-resolution structure with suboptimal goodness of fit to experimental data; despite this, docking aprepipant to this structure yields an accurate pose.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89386/elife-89386-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** We predict the binding pose of the drug-like ligand A-77636 to the D1 dopamine receptor (DRD1) given either the AF2 model (orange) of DRD1 or the experimentally determined structure (blue, PDB entry: 7CKY) of DRD1 bound to a different ligand, Razpipadon. (A, B) The binding pocket of the AF2 model is more similar (lower root mean squared deviation [RMSD]) than the binding pocket of the Razpipadon-bound structure to the binding pocket of the A-77636-bound structure (the ‘reference structure’, white, PDB entry: 7CKX). Amino acid residues whose positions differ most from the reference structure are shown in sticks. (C, D) The A-77636-binding pose predicted by docking is much less accurate (higher RMSD) when using the AF2 model than when using the Razpipadon-bound structure.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/89386/elife-89386-fig4-v1.jpg)
 
 **Figure 4.:** We predict the binding pose of the psychedelic LSD to its primary target, the serotonin 2A receptor (5HT2A) given either the AF2 model (orange) or a traditional model (green) of 5HT2A. (A, B) The binding pocket of the AF2 model is more similar (lower root mean squared deviation [RMSD]) than that of the traditional model to the binding pocket of the experimentally determined LSD-bound structure (the ‘reference structure’, white, PDB entry 6WGT). Amino acid residues that differ most from the reference structure are shown in sticks. (C, D) The LSD-binding pose predicted by docking is less accurate (higher RMSD) when using the AF2 model than when using the traditional model.
 
 To further quantify these results, we compare pose prediction accuracy for structures and models with similar binding pocket accuracy. In particular, we calculate pose prediction accuracy as a function of binding pocket accuracy (RMSD) for both experimentally determined structures and models. As expected, we find that average pose prediction accuracy increases as binding pocket accuracy increases (i.e., RMSD to reference structure decreases). This trend holds for experimentally determined structures, AF2 models, and traditional template-based models (Figure 5 and Figure 5—figure supplement 1). Yet for the same binding pocket accuracy (RMSD from the reference structure), AF2 models yield lower average pose prediction accuracy than experimentally determined structures (Figure 3). In contrast, in cases where traditional models and experimentally determined structures have similar binding pocket accuracies, they yield similar pose prediction accuracies (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/89386/elife-89386-fig5-v1.jpg)
+
+**Figure 5.:** Docking to an experimentally determined structure generally leads to more accurate pose prediction than docking to an AF2 model with the same binding pocket root mean squared deviation (RMSD). The difference between the two curves is statistically significant for all binding pocket RMSD values below 1.1 Å (see Methods). See Figure 5—figure supplement 1 for additional data, including results for traditional models and for various docking methods.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89386/elife-89386-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Using our docking data, we estimate how the pose prediction accuracy of ligand docking varies with the binding pocket all-atom root mean squared deviation (RMSD) of the structure being docked into (see Methods). In (A) We show calculated p values for the range across binding pocket RMSD. Differences between docking to AF2 and docking to experimentally determined structures are significant for all RMSD values less than 1.1. In (B–F), the shaded regions indicate 90% confidence intervals assigned by bootstrapping (see Methods). (B) We show the same Glide SP results as in Figure 5 but with confidence bounds. In (C), we show what this would look like as we examine backbone binding pocket RMSD instead of all-atom pocket RMSD. In (D–F), we additionally include a curve for docking accuracy with template-based models, (D) with Glide SP, (E) with Glide XP, and (F) with Rosetta. We consistently see that average pose prediction accuracy using AF2 models is lower than when using experimentally determined structures.
 
 We also considered the possibility that the improved performance of experimentally determined structures relative to AF2 models might be because, in some cases, the structure used for docking was determined with a bound ligand similar (though not identical) to the ligand being docked. Eliminating such cases from consideration does lead to decreases in both aggregate binding pocket accuracy and pose prediction accuracy of experimentally determined structures, but experimentally determined structures continue to yield significantly more accurate pose predictions than AF2 models (p < 0.01) (Figure 1—figure supplement 1 and Figure 2—figure supplements 1 and 2).
 
@@ -96,43 +136,43 @@ Our results also point to opportunities for developing improved computational mo
 
 ## Methods
 
-## Protein and ligand selection
+### Protein and ligand selection
 
 We selected structures from the aggregated list of all experimentally determined human GPCR structures from GPCRdb (Isberg et al., 2014). We removed all proteins for which a structure was published in the PDB before April 30, 2018, including two Class C GPCRs for which structures of the extracellular domain (to which ligands bind) had been published before that date. We also removed proteins for which structures were available in complex with fewer than two unique orthosteric ligands. This left us with 54 experimentally determined structures of 18 GPCRs (17 class A, 1 class B). The full list of proteins and structures is in Supplementary file 1.
 
-## Obtaining structural models
+### Obtaining structural models
 
-## AlphaFold 2
+#### AlphaFold 2
 
 For each protein, we took the full protein sequence from Uniprot (UniProt Consortium, 2023) to generate five AF2 models, as was done for CASP (Jumper et al., 2021), and picked the top-scoring prediction as our model. We set the template cutoff date to 2018-04-30.
 
-## GPCRdb
+#### GPCRdb
 
 We downloaded template-based models from the GPCRdb archive dated 2018-04-06. We used all the inactive- and active-state models available, and averaged results as described in Statistical tools. We excluded models for which the minimum sequence identity of the templates was below 40%, as such template-based models are typically not used for drug-binding predictions.
 
 This led to exclusion of models for four GPCRs (AGRG3, TA2R, PE2R2, and PE2R4). GPCRdb did not include models for two of the GPCRs (GPBAR and PE2R3).
 
-## Ligand preparation
+### Ligand preparation
 
 Ligands were extracted from PDB structures using the Schrödinger Python API and then manually inspected to make sure we had chosen the ligand at the orthosteric site. With the same API, ligands were converted to SMILES strings. Ligands were then prepared with Schrödinger’s LigPrep with default command line parameters (Schrödinger LLC, 2021).
 
 Ligand similarity was defined as a ratio of the size of the maximum common substructure to the size of the smaller molecule. Ligand pairs for which this ratio was less than 0.5 were deemed very different ligands.
 
-## Protein preparation
+### Protein preparation
 
 Experimentally determined structures were downloaded from the PDB. Only a single chain containing the ligand was kept, and all waters were removed. All structures and models were prepared with Schrödinger Protein Preparation Wizard (Schrödinger LLC, 2021 ) following the same protocols as Paggi et al., 2021, including energy minimization. All the experimentally determined structures were determined with a ligand bound, and we retained this ligand during minimization. Computationally predicted models did not include a ligand.
 
-## Glide docking
+### Glide docking
 
 For Glide XP and Glide SP docking, we follow the docking protocol described in Paggi et al., 2021. The grid is centered at the geometric centroid of the ligand and is defined with an inner box with 15 Å sides and outer box with 30 Å sides. For predicted structural models the center of the box is determined by aligning the model to an experimentally determined structure of that protein and using the centroid of its ligand. For this alignment, we pick the structure with the alphabetically first PDB entry ID.
 
-## Rosetta docking
+### Rosetta docking
 
 For Rosetta docking, we used the GALigandDock protocol (Park et al., 2021). To prepare the proteins, PyMol (Schrödinger, 2015) was used to remove heteroatoms and all alternative locations for each atom. CONECT information was included. UCSF Chimera v1.16 (Pettersen et al., 2004) was used to initially remove all hydrogens, followed by their Dock Prep software to prepare the structure for docking.
 
 For ligands, Open Babel v2.4.0 (O’Boyle et al., 2011) was used to generate 3D structures from ligand SMILES and add hydrogens at a pH of 7 (O’Boyle et al., 2011). Ambertools v22.0 (Case et al., 2023) was used to add AM1-BCC partial charges. The ligand was translated such that the center of mass of the ligand was positioned at center of the binding pocket of the prepared structure. The center of the binding pocket was defined as the center of mass of the ligand in the experimentally determined structure. Models were aligned to the experimentally determined structure of the protein which had the alphabetically first PDB entry ID. This structure’s ligand center of mass was used to define the model’s binding pocket.
 
-## Structural comparisons
+### Structural comparisons
 
 To calculate ligand pose RMSD, structures were first aligned on amino acid residues within 15 Å of bound orthosteric ligands, using Schrödinger’s structalign tool (Schrödinger LLC, 2021). This alignment was used to calculate the RMSD of each docked ligand pose from the reference ligand pose.
 
@@ -142,7 +182,7 @@ We computed full-structure RMSDs with a similar PyMOL script, but taking into ac
 
 In Figure 3, Figure 4, and Figure 3—figure supplement 1, we highlight residues in the binding pocket whose positions differ most from the reference structure. To identify these residues, we aligned to the reference structure the structure and model (or the two models) being docked to. For each structure/model, we computed the RMSD for each residue within 5 Å of the ligand, and then for each residue determined the maximum RMSD across the two structures/models. We selected the residues with the largest maximum RMSDs.
 
-## Statistical tools
+### Statistical tools
 
 p values were computed with two sided paired t-tests, using SciPy (Virtanen et al., 2020). Bootstrapping 90% confidence intervals were computed with the default 9999 resamples, also using SciPy.
 

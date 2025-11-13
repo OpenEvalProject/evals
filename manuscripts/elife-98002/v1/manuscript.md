@@ -22,10 +22,10 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Department of Physiology, Anatomy, and Genetics, University of Oxford Oxford United Kingdom
+1. Department of Physiology, Anatomy, and Genetics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 2. Kavli Institute for Systems Neuroscience, Centre for Neural Computation, Norwegian University of Science and Technology Trondheim Canada
-3. https://ror.org/052gg0110 Nuffield Department of Clinical Neurosciences, Sir Jules Thorn Sleep and Circadian Neuroscience Institute (SCNi), University of Oxford Oxford United Kingdom
-4. https://ror.org/052gg0110 Department of Experimental Psychology, University of Oxford Oxford United Kingdom
+3. Nuffield Department of Clinical Neurosciences, Sir Jules Thorn Sleep and Circadian Neuroscience Institute (SCNi), University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+4. Department of Experimental Psychology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
@@ -43,15 +43,47 @@ Here, we employed a retrograde labeling strategy to unequivocally identify a spe
 
 ## Results
 
-## Anatomical delineation of CLA in mice via retrograde tracing
+### Anatomical delineation of CLA in mice via retrograde tracing
 
 We first sought to define a specific subset of CLA neurons based on their efferent connectivity. To label CLA neurons in the adult mouse, we used a retrograde tracing strategy by injecting fluorescently labeled cholera toxin subunit B (CTB) into the retrosplenial cortex (RSP), which receives input specifically from the CLA and no CLA-adjacent structures (Zingg et al., 2018; Marriott et al., 2021). To understand how CLA neurons differentially innervate RSP, we injected CTB488 (green), CTB555 (red), CTB647 (blue) into three separate rostrocaudal locations along the RSP (n=3 mice, Figure 1A). Confocal microscopy imaging of 100 μm-thick coronal sections revealed that each injection labeled spatially overlapping populations of CLA neurons, distinct from the surrounding, unlabeled tissue (Figure 1B, C, Figure 1—figure supplement 1). A comparison between injection sites of CTB labeling in CLA across mice showed that the caudal injection site reliably labeled the most cells overall, especially in caudal regions of CLA (Figure 1—figure supplement 1). Further, this strategy consistently demonstrated that CLARSP neurons could be found along the whole CLA length, as defined by other sources (Franklin and Paxinos, 2008; Wang et al., 2017; Wang et al., 2020; Grimstvedt et al., 2023), irrespective of RSP injection location. Moreover, the level of overlap between CLA neurons projecting to different regions of RSP varied depending on the injection site (Figure 1—figure supplement 1). We chose the caudal-most RSP injection site for the remainder of the study due to the dense and highly specific labeling of CLARSP neurons.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the injection strategy. Three different CTB-AlexFluor conjugates were injected into separate rostrocaudal regions of RSP. (B) Representative 100 μm sections spanning the rostrocaudal axis of the brain in which the CLA can be seen retro-labeled by CTB from rostral (blue), intermediate (red), and caudal (green) injections into RSP (n=3 mice). Scale bar = 1 mm. (C) Insets of B in which CLA neurons are labeled with CTB. Scale bar = 200 μm. (D, top to bottom) Intrinsic electrophysiological profiles, expanded spike waveforms (from top inset), proportion of neurons found to be CTB +during experiments (cells for which CTB status was known), and example morphological reconstructions for each electrophysiological cell type. Scale bars (top to bottom): 20 mV/100ms, 300 pA, 20 mV/10ms, 100 μm. Dashed border around morphologies represents the average CLARSP area across slices from Figure 1—figure supplement 2. Somas aligned to their approximate location in this region during patching.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, left) Representative sections spanning the rostrocaudal axis of the brain in which CLA neurons were retrogradely labeled with CTB from three different injection locations along the RSP (blue: rostral RSP, red: intermediate RSP, green: caudal RSP). (A, right) Insets of CLA from sections in A, left, at 10 X magnification. (B) Percent of counted neurons that project to different regions of RSP per section from experiments in (A). (C) Venn diagram demonstrating the overlap between CLA cells projecting to various RSP locations. (D) Overall, caudal RSP injections yielded a higher penetrance of CLA neurons on a per slice basis. (E) Immunohistochemistry of a representative CLA section (AP = 0.0 mm bregma) against PV (magenta) and MBP (cyan) with CLARSP retro-labeled CLA neurons (green). Regional labels: CPu = caudoputamen, ec = external capsule, dCLA = dorsal CLA, vCLA = ventral CLA, DEn = dorsal endopiriform. Scale bar = 200 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Summary of processing steps for confocal images of the CLA (n=3 mice). Slice images across mice were centroid-aligned and averaged for each matched slice. Active contours were initialized using an ellipse about the centroid and computed for each image. (B) 3D representation of contours of CLARSP neurons, rostral at left, colored by contour area. CLA contours are center-aligned and do not match anatomical position. (C) Probability density distributions of the Euclidean distance between CLARSP neurons across the coronal axis in 50 μm sections across the rostrocaudal axis, colored by the cross-sectional area of CLARSP neurons. (D) Number of cells counted in the sections from C (n=3 mice).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic of injection and patching strategy in the CLA. Both CTB +and CTB- neurons were patched while gathering intrinsic electrophysiological profiles. (B) 40 X transmitted light (top) and CTB (bottom) example images of a neuron during patching. Scale bar = 100 μm (C) Confocal microscopic images of a filled neuron post-patching. Scale bar = 50 μm. (D) Example standardized intrinsic electrophysiological trace overlaid with sections from which quality criteria values (right) are computed.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A, left, center) K-means clustering and silhouette analysis of the dimensionally reduced excitatory neuron dataset. (A, right) Silhouette analysis found that two clusters best separated the data (k=2, avg. silhouette score = 0.61). (B, left) Probability density of ADP voltage above spike offset for excitatory cell types. Inset shows example traces from cells with and without an ADP. (B, center) E2 cells displayed lower fAHP and higher ADP than E1 cells. (B, right) Spike amplitude for the first ten spikes, normalized to the first, for both excitatory cell types. Shaded areas represent the 95% confidence interval. ADP, fAHP, and spike amplitude adaptation reliably distinguished excitatory cell types. (C, left, center) K-means clustering and silhouette analysis of the dimensionally reduced inhibitory neuron dataset. (C, right) Silhouette analysis found that four clusters best separated the data (k=4, avg. silhouette score = 0.85). (D) Comparison of separating features between interneuron types. (E) UMAP dimensionality reduction of all cells. (F) Proportion of all patched neurons of each putative cell type (n=540).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A, top) Raw confocal images of filled spiny, sparsely spiny, and aspiny neurons used for morphological reconstruction and analysis. Scale bars = 50 μm. (A, bottom) Insets of A (top) showing the presence/absence of dendritic spines (red arrows). Scale bars = 10 μm. (B) Percent of spiny (spiny +sparsely spiny) vs. aspiny neurons in the morphological dataset for which image quality was sufficient to count spines (72/134 morphologies). (C) Percent of spiny vs. aspiny neurons sorted by electrophysiological type. (D) Number of dendritic spines counted per 100 μm of dendrite across cell types. (E, left) UMAP dimensionality reduction of the morphological dataset alone, overlaid with electrophysiological cell type labels. (E, right) UMAP on the combined electrophysiological and morphological datasets. (F) Average polar histograms of CLA neurons by type centered on the soma.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** In two experiments, we recorded from Nkx2.1-Cre;Ai9 +animals, finding two CTB +FS interneurons co-labeled with tdTomato.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** (A) Schematic of retrograde labeling and immunohistochemistry strategy to identify projection inhibitory neurons. Mice (n=4) were injected with either retroAAV-Cre or CTB, and fixed slices were stained against Cre and GABA. (B) Immunohistochemistry of GABA against retro-Cre and CTB retrograde markers of CLA. (C) Quantification of neurons labeled by GABA in each experiment that were co-labeled with one of the two retrograde markers (n=4 mice, 175 counted cells, p=0.0004 Fischer Exact Test).
 
 We next compared known markers of the CLA against the labeling of CLARSP neurons using immunohistochemistry to obtain a better understanding of the intraclaustral localization of CLARSP neurons Wang et al., 2023; Grimstvedt et al., 2023; Druga et al., 1993; Real et al., 2003; Real et al., 2006; Shaker et al., 2024 (n=3 mice, Figure 1—figure supplement 1, for further analyses, see also Grimstvedt et al., 2023). CLARSP neurons were aligned with the parvalbumin (PV) neuropil-rich CLA ‘core’ and a paucity of myelinated axons in the same region, as shown by myelin basic protein (MBP). MBP also labeled densities of myelinated axons above and below the PV plexus, indicating dorsal and ventral aspects of the CLA. Therefore, CLARSP neurons were taken to represent an efferent-defined subpopulation of CLA neurons.
 
 Analysis of thin (50 μm), sequential coronal sections demonstrated that the density of CLARSP neurons varied along the rostrocaudal axis (n=3 mice, Figure 1—figure supplement 2) with the highest number of CLARSP neurons found around 1 mm rostral to bregma (1070±261 cells/animal, 27±11 cells/section; Figure 1—figure supplement 2). The rostral and caudal poles of CLA differed in that rostrally-located CLARSP neurons were found at low density, that is showing a dispersed distribution, whereas neurons found 1 mm caudal to bregma were densely packed in a relatively small cross-section of tissue. Together, these anatomical experiments enabled us to define and target a specific group of CLARSP neurons in subsequent electrophysiological investigations.
 
-## Intrinsic electrophysiological characterization of CLA neurons reveals distinct subpopulations
+### Intrinsic electrophysiological characterization of CLA neurons reveals distinct subpopulations
 
 To extend and better understand the specificity of the putative CLARSP module, we repeated our retrograde labeling strategy, but this time in conjunction with acute in vitro whole-cell patch-clamp electrophysiology to explore heterogeneity in CLARSP neurons and non-CLARSP within the claustrum (Figure 1D, Figure 1—figure supplements 3–4, see Materials and methods). Recovered morphologies were matched with intrinsic electrophysiological profiles using a standardized, quality-controlled protocol for a final dataset of 540 neurons (Figure 1—figure supplement 3). We identified several subtypes of both putative excitatory (total number of cells recovered: n=434) and inhibitory (n=106) neurons based on intrinsic electrophysiological properties (Figure 1D).
 
@@ -61,23 +93,155 @@ Interneurons, by contrast, were readily categorized into four groups (high rheob
 
 We reconstructed 134 recovered morphologies (Figure 1—figure supplement 5) and found the majority of E1 and E2 subtypes had spiny dendrites, consistent with them being excitatory neurons (Figure 1—figure supplement 5). FS, HR, LT, and IR types were either aspiny or sparsely spiny in line with cortical GABAergic interneurons. This distinction aside, classical morphological analyses alone did not adequately define CLA cell types, again highlighting the need for connectivity- and function-defined approaches (Figure 1—figure supplement 5, Supplementary file 2). Overall, our patch-clamp recorded neurons expand on previous knowledge of CLA neuron diversity Graf et al., 2020; Qadir et al., 2022, revealing a mix of excitatory and inhibitory neurons within this nucleus. No neuronal subtype was found to be exclusive to the CLARSP module, suggesting that efferent connectivity is not subtype specific.
 
-## Intraclaustral projections favor a cross-modular arrangement
+### Intraclaustral projections favor a cross-modular arrangement
 
 Given that CLARSP versus non-CLARSP neurons are indistinguishable based on intrinsic parameters, we next explored if excitatory synaptic connections exist amongst these neurons in the CLARSP-defined region, as previous studies - employing a variety of approaches - have failed to reach consensus on this issue Zingg et al., 2018; Kim et al., 2016; Orman, 2015; Smith and Alloway, 2014. We used a dual retrograde Cre (retroAAV-Cre) and CTB injection strategy in the RSP combined with conditional viral expression of AAV-FLEX-ChrimsonR-tdTomato in CLA (Figure 2A). We then photostimulated ChrimsonR +presynaptic axon terminals throughout the rostrocaudal length of CLA while recording from either CTB + or CTB- CLA neurons (Figure 2B and C) and restricted analysis to monosynaptic connections with latencies of 3–12ms to remove CLA neurons directly expressing opsin from the dataset (Figure 2—figure supplement 1, see Materials and methods), as reported by studies of opsin kinetics Li et al., 2017; Melzer et al., 2012; Petreanu et al., 2007. We found that we could evoke short-latency, putative monosynaptic excitatory postsynaptic potentials (EPSPs) in the majority (69.5%; n=32/46) of recorded CLA neurons, although only a small subset of these were CLARSP neurons (n=4/11 CTB + cells responsive; Figure 2D, Figure 2—figure supplement 1). In addition, we found that both excitatory and inhibitory neuronal subtypes exhibited EPSPs in response to CLARSP optogenetic stimulation (Figure 2E, bottom right), although there were some differences between subtypes. Of the excitatory cell subtypes, E1 (75.0%) was more likely to receive local CLARSP input than E2 neurons (59.1%), despite the latter group being the predominant subtype in the CLA (Figure 2E, top). Among inhibitory subtypes, FS neurons (100%) exhibited the highest probability of receiving CLARSP input, while LT neurons (66.7%) received CLARSP input with probabilities comparable to that of excitatory types. Despite variability in these response probabilities, we found no statistically significant differences between cell types in the likelihood of responding to intraclaustral input (P>0.05, Fisher Exact test between all types, Bonferroni corrected). These data suggest – with implications for information transfer within the CLA – that the primary factor underpinning the organization of intraclaustral connectivity is projection target, that is CLA neurons that project to areas outside of RSP are more likely to receive local input from those that do (CLARSP).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of injection and patching strategy in the CLA. (B) Transmitted light images taken during patching. Magenta arrows indicate ChrimsonR-tdTomato-expressing neurons while green arrows indicate CTB-labeled neurons. Note that these populations only partially overlap. Scale bar = 50 μm. (C) Expression of AAV-FLEX-ChrimsonR-tdTomato and CTB in the CLA along the rostrocaudal axis. Notice the lack of tdTomato + cell bodies in the far rostral and far caudal sections beyond the spread of the virus. Scale bar = 200 μm. (D) CLA neurons frequently displayed EPSPs in response to presynaptic CLA neuron photostimulation with 595 nm light (top). CLA neurons not labeled with CTB were found to be proportionally the most likely to respond to presynaptic photostimulation (n=28/46 neurons, bottom). (E, top) Most electrophysiological types were represented among neurons responsive to CLA input (n is the number of neurons recorded in each group, total n=32 responsive/46 neurons). No significant difference in response probability was found between excitatory and inhibitory cell types (p=0.29, Fisher exact test), while a significant difference in responsivity was found between CTB + and CTB- neurons (p=0.009, Fisher Exact Test) (bottom). (F) Schematic of injection and patching strategy in the CLA. (G) Confocal image of CTB and ChrimsonR-tdTomato expression in the CLA from separate injections into PL and RSP. Scale bar = 200 μm. (H) Quantification of responses from experiments in (F). CLA neurons that were labeled with CTB from PL were more likely to respond to CLARSP input than those that weren’t, but not by a significant margin (I, p=0.19, Fisher Exact Test). (J) Model of the circuit investigated, showing that CLARSP neurons are more likely to form active synapses with non-CLARSP neurons.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Normalized EPSP magnitude and onset latency for intraclaustral-responsive neurons. Neurons directly expressing opsin had larger light-driven responses compared to monosynaptically connected neurons. Shaded region indicates the window of monosynaptic latencies. (B) Example stimulus-evoked responses from neurons corresponding to the datapoints highlighted with dashed boxes in (A). (C) Among responsive neurons of all types, CTB +neurons made up a small proportion. (D) Response probability for n=46 neurons based on their dorsoventral location relative to CLARSP during patching. Neurons were less likely to respond if they occupied the CLARSP core.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic of VSDI experiments in horizontal sections of a rat brain. (B) Nissl stained horizontal section containing the CLA demonstrating the region of stimulation in (C). (C) Voltage indicator images of the CLA in response to electrical stimulation of the rostral CLA 0, 5, 10, and 15ms after stimulation onset. Colored arrows indicate locations used for analysis in D. (D) Traces from the pixels in (c) demonstrating the delay in time to peak from rostral to caudal regions of the CLA (top). DNQX +APV application to slices during experiments extinguished this response (bottom). (E) Quantification of the time to peak signal for each pixel in (c and D) (top). Caudal pixels show a significant delay in ACSF experiments but no response when glutamatergic signaling is blocked in DNQX +APV experiments. (F) Voltage indicator images of the CLA in response to electrical stimulation of the caudal CLA 0, 5, 10, and 15 ms after stimulation onset. Colored arrows indicate locations used for analysis in G. (G) Traces from pixels in (F) demonstrating the delay in time to peak from caudal to rostral regions of the CLA. (H) Quantification of the time to peak signal for each pixel in (F and G) (top). Scale bars = 100 μm.
 
 To further examine this, we turned to a different CLA circuit (Figure 2F) that involved both prelimbic-projecting CLA neurons (CLAPL) and CLARSP. Qualitatively, CLAPL neurons occupied a larger area of the CLA and made up a larger share of CLA neurons overall compared to CLARSP (Figure 2G and H). While fewer CLAPL neurons were CLARSP-responsive than CLARSP-unresponsive (presumably because some of these were also CLARSP but not expressing opsin), they were not significantly more likely to be CLARSP-responsive than non-CLAPL neurons (Figure 2I). Taken together, these experiments point toward a complex intraclaustral circuitry that is predisposed toward inter-module connectivity, for example that CLA neurons receiving input from a given cortical area preferentially target CLA neurons projecting to a different area (Figure 2J). How this circuit logic influences intraclaustral computations has critical implications for the signals the CLA transmits downstream.
 
 To address whether such connectivity exists in the rostrocaudal plane, we next turned to a horizontal slice preparation using fluorescent voltage-sensitive dye (VSD RH-795; Figure 2—figure supplement 2, n=13 animals, 28 recordings) to examine potential l connectivity in vitro. Electrical stimulation of the rostral pole of the CLA resulted in a traveling wave of increased voltage that spread to caudal CLA over a period of 10–15ms. Blocking glutamate receptors by bath application of DNQX and APV abolished these responses, supporting a role for glutamatergic transmission within and along the rodent CLA. This transmission was bidirectional as electrical stimulation of caudal CLA elicited a wave of depolarization toward the rostral pole with similar temporal properties. These experiments collectively point to extensive and bidirectional intraclaustral connectivity, engaging both excitatory and inhibitory neurons in a manner defined more by efferent target than electrophysiological type per se. This further supports the idea that CLA contains the necessary circuitry to join extraclaustral inputs with a complex and cross-modular internal CLA network.
 
-## Corticoclaustral inputs define a modular spatial organization
+### Corticoclaustral inputs define a modular spatial organization
 
 Multiple lines of evidence indicate that the CLA contains topographic zones of input and output in mice, yet it remains uncertain how these zones are organized Atlan et al., 2017; Wang et al., 2017; Wang et al., 2022. To resolve this, we again used a retrograde labeling method to distinguish CLARSP, now in tandem with the anterograde viral expression of tdTomato (AAV-ChrismonR-tdTomato) in one of several afferent neocortical areas: frontal (orbitofrontal [ORB], prelimbic [PL], anterior cingulate–anterior part [ACAa], and posterior part [ACAp]), primary motor (MOp), sensory (anteromedial visual cortex [VISam], dorsal auditory area [AUDd]) and parahippocampal (ENTI) cortices (n=3 mice/injection site, n=24 mice in total; Figure 3A, Figure 3—figure supplement 1 see Table 1). Coronal sections revealed variation in neocortical axon innervation relative to the CLARSP region along the dorsal-ventral axis, which was reflected in the likelihood of observing post-synaptic responses to cortical input along this axis (Figure 2—figure supplement 1). Several cortical areas, including ACAa and ORB, projected axons medially and laterally to CLARSP in addition to dorsally or ventrally (Figure 3C and D, Figure 3—figure supplements 1–2) akin to previously reported domains seen in output neurons of CLA (Marriott et al., 2021; Figure 3E and F). The distinct dorsoventral patterns of innervation are best exemplified by the complementary projections from ORB, PL, and MOp, which target the ventral, central, and dorsal CLA, respectively (Figure 3E and F).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of injection sites in the cortex. Individual Chrimson-tdTom (magenta) injection sites were combined with an injection of CTB (green) into the RSP. (B) Coronal sections of example injection sites. Scale bars = 1 mm. (C) Schematics of a representative section of the CLA at 1 mm rostral to bregma. (D) Histological sections from the representative section in C and each input cortical area in B. Scale bar = 200 μm. (E) Example image of CLARSP neurons overlaid with the average contour representing the CLARSP core from all mice (n=21 mice). (F) Heatmaps of normalized fluorescence of corticoclaustral axons in the CLA. Scale bar = 200 μm, 15 μm/pixel. (G) Schematic of the patching strategy used to investigate single-cortex innervation of the CLA. (H) Individual response and CTB proportions of CLA neurons to each cortex investigated in these experiments. CLARSP neurons were found to be the most responsive to frontal-cortical input and less responsive to inputs from other regions, with the exception of VISam.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Overlay of image masks (dorsal, core, ventral) used in subsequent analysis. Scale bar = 200 μm. (B–I, top) Average heat maps and histograms of fluorescence normalized to maximum signal along the dorsoventral and mediolateral axes for each injected cortical region (n=3 mice per cortical area; dashed line is the average contour of CLARSP neurons from all experiments). (B–I, middle) Comparison of fluorescence in each mask region for each cortical area. (B–I, bottom) Response probabilities of CLA neurons to input from cortical axons after a brief (4ms) photostimulation of presynaptic terminals, split by soma location relative to CLARSP during patching. (J) On the basis that a cortical area primarily displayed fluorescence in one masked CLA region, ‘core’ and ‘shell’ labels were applied to areas that projected to the core and dorsal/ventral CLA, respectively. Heat maps from within-label areas were then averaged and subtracted from heat maps from the other label. Displayed here is an index of similarity of pixels in the CLA to the ‘core’ or ‘shell’.
+
+**Table 1.**
+ Stereotaxic targets and coordinates.DV coordinates measured as depth from pia.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Target Area</th>
+      <th>Abbreviation</th>
+      <th>AP (mm)</th>
+      <th>ML (mm)</th>
+      <th>DV (mm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CLA</td>
+      <td>CLA</td>
+      <td>1.0</td>
+      <td>3.4</td>
+      <td>–2.7</td>
+    </tr>
+    <tr>
+      <td>Anterior Retrosplenial Cortex</td>
+      <td>RSPr</td>
+      <td>–1.50</td>
+      <td>0.50</td>
+      <td>–0.75</td>
+    </tr>
+    <tr>
+      <td>Intermediate Retrosplenial Cortex</td>
+      <td>RSPi</td>
+      <td>–2.25</td>
+      <td>0.50</td>
+      <td>–0.75</td>
+    </tr>
+    <tr>
+      <td>Posterior Retrosplenial Cortex</td>
+      <td>RSPc</td>
+      <td>–3.00</td>
+      <td>0.50</td>
+      <td>–1.00</td>
+    </tr>
+    <tr>
+      <td>Anterior Anterior Cingulate Cortex</td>
+      <td>ACAa</td>
+      <td>1.34</td>
+      <td>0.30</td>
+      <td>–1.25</td>
+    </tr>
+    <tr>
+      <td>Posterior Anterior Cingulate Cortex</td>
+      <td>ACAp</td>
+      <td>–0.11</td>
+      <td>0.25</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>Medial Prefrontal Cortex</td>
+      <td>PL</td>
+      <td>1.50</td>
+      <td>0.60</td>
+      <td>–1.80</td>
+    </tr>
+    <tr>
+      <td>Orbitofrontal Cortex</td>
+      <td>ORB</td>
+      <td>2.50</td>
+      <td>1.20</td>
+      <td>–1.80</td>
+    </tr>
+    <tr>
+      <td>Primary Motor Cortex</td>
+      <td>MOp</td>
+      <td>0.60</td>
+      <td>1.50</td>
+      <td>–0.75</td>
+    </tr>
+    <tr>
+      <td>Dorsolateral Entorhinal Cortex</td>
+      <td>ENTI</td>
+      <td>–4.30</td>
+      <td>3.50</td>
+      <td>–2.25</td>
+    </tr>
+    <tr>
+      <td>Secondary Visual Cortex</td>
+      <td>VISam</td>
+      <td>–2.70</td>
+      <td>1.50</td>
+      <td>–0.50</td>
+    </tr>
+    <tr>
+      <td>Dorsal Secondary Auditory Cortex</td>
+      <td>AUDd</td>
+      <td>–2.12</td>
+      <td>3.75</td>
+      <td>–0.50</td>
+    </tr>
+  </tbody>
+</table>
+
 We then investigated the physiological significance of this innervation by optogenetically stimulating presynaptic cortical axon terminals while recording from post-synaptic CLA neurons in vitro (Figure 3G and H). We observed short-latency EPSPs in CLA neurons in response to optogenetic stimulation of axons arising from every neocortical injection site (n=266 cells, 93 animals). However, there was variation in the percentage of responsive CLA neurons with stimulation of axons from frontal cortical areas – PL and ACAa having the highest probability of evoking a response in both CLARSP and non-CLARSP neurons. Stimulation of axons arising from sensorimotor areas such as AUDd and MOp had the lowest probability of evoking an EPSP with the notable exception of VISam. Further, CLA neurons were more likely to receive input from frontal cortical regions if they projected onward to RSP, that is were CTB+. This relationship was weaker or absent in areas, such as MOp and AUDd, suggesting differences in the input-output routes of these CLA neurons. Results from these experiments confirm the modularity of CLA inputs and how those inputs map onto its outputs but also raise questions regarding how the inputs may be combined onto single CLA neurons.
 
-## Dual-color optogenetic mapping reveals integration of cortical inputs
+### Dual-color optogenetic mapping reveals integration of cortical inputs
 
 One of the posited functions of CLA is to affect sensorimotor ‘binding’ or information integration Crick and Koch, 2005; Edelstein and Denaro, 2004, defined here as single-cell responsiveness to more than one input pathway, for example being capable of combining and therefore integrating these inputs. Given the distinct topography of input axons (Figure 3) and spatial organization of projection targets Marriott et al., 2021 of the CLA, we next set out to test if single CLA neurons in mice are responsive to more than one cortical region and, therefore, may support established models of CLA function. We combined retrograde tracer injections into the RSP with a dual-color optogenetic strategy, injecting AAV-Chronos-GFP and AAV-ChrimsonR-tdTomato into combinations of the neocortical regions (Figure 4A) previously characterized (Figure 3). Opsin-fluorophore expression was evident in axons localized in and around the region of CLARSP neurons during in vitro whole-cell patch-clamp recordings and post hoc histology (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of injection and patching strategy in the CLA. (B) Confocal images of AAV-Chrimson-tdTomato and AAV-Chronos-GFP expression in cortical axons in the CLA. Scale bars = 500 μm, 100 μm. (C) Example traces of different response outcomes for CLA neurons after sequential cortical axon photostimulation. From top to bottom: integrating responses indicated that a neuron was responsive to both input cortices, Chrimson-responsive indicated a neuron responsive to only one cortex while Chronos-responsive indicated a neuron responsive to the other cortex. Finally, no response indicated no detectable synaptic connection. (D) Dual-color optogenetics response and CTB proportions for cortices examined in Figure 3 using the strategy in (C). (E) Expected vs. measured response probabilities for neurons in each dual-color optogenetics combination. All cortical combinations displayed a slightly higher response probability than expected by chance. (F) River plot displaying the proportion of neurons projected to by each cortical area, categorized by cell type. (G) Proportion of integrating cells within each electrophysiological cell type.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematics of control experiments of single-opsin injections into PL (n=6 mice total, three each of Chrimson and Chronos injections). (B) Example traces of CLA neuron responses to cortical axon stimulation (C) Magnitude pre/post-stim comparisons of CLA EPSPs during sequential stimulation. Cross-talk in Chrimson-only experiments was effectively eliminated by extended exposure to 500ms of 595 nm light. Responses to blue light photostimulation in Chronos-only experiments did not show cross-talk. (D) Magnitude responses to 470 nm and 595 nm light for all recorded cells (n=259). Integrators displayed responses to both wavelengths (595: p=6.1e-9, 470: p=1.7e-10, Mann Whitney U test). (E) Latency of ESPS in integrating postsynaptic neurons was within the typical monosynaptic range. Onset of Chronos EPSPs was typically faster than Chrimson.
 
 Drawing from previously reported methodology Bauer et al., 2021; Hooks et al., 2015 of dual-color optogenetic stimulation, we used prolonged orange light (595 nm, 500ms) to desensitize ChrimsonR opsins and reveal independent blue light-sensitive (470 nm, 4ms) Chronos-expressing input (Figure 4C, Figure 4—figure supplement 1). Control experiments using one opsin confirmed the viability of this approach (n=6 mice, 21 cells; Figure 3—figure supplement 1A–C). Although simultaneous optogenetic stimulation using blue and orange light was possible in these experiments, we did not analyze these data due to the photosensitivity of ChrimsonR to blue light potentially confounding interpretations of EPSP magnitude Klapoetke et al., 2014. We found that a subset of CLA neurons receives inputs from more than one cortical area (66/259 of all tested cells, 42/174 for CLARSP neurons). Similar to our single opsin observations, CLARSP neurons were more likely to be responsive to inputs from frontal areas than they were from other areas, although at least some neurons were found to respond to both inputs in all examined pairs (Figure 4D). Integration was most common between ACAa and ORB (60.7%) and lowest between VISam and AUDd (16.7%). Less integration was observed when only one or neither of the input cortices was located in the frontal cortex. The measured probability of integration, however, was slightly higher than expected (ratio of measured:expected = 1.26 +- 0.12) based on the probability of receiving inputs from each cortical area individually, indicating that integration among single CLA neurons in these experiments occurred at a likelihood greater than response probabilities to individual cortical inputs would imply (Figure 4E).
 
@@ -85,7 +249,7 @@ Concerning the electrophysiological identities of CLA neurons themselves, only E
 
 Integration of cortical inputs was more prevalent in certain cell types as well (Figure 4G). 30.1% of E2 neurons and 47.6% of all recorded FS interneurons were found to integrate cortical input, irrespective of the combination of cortical input regions, congruent with their response probabilities to individual cortices (Figure 4F). A large proportion (20.8%) of LT neurons were also found to integrate despite making up less than 10% of all neurons recorded. E1, HR, and IR types showed little to no propensity for more than one cortical input. We find that E2 neurons and FS interneurons are the most likely to integrate information from the cortex, while other excitatory and inhibitory cell types may participate in different circuits or have a dedicated and unitary region of input.
 
-## Claustrocortical outputs differentially innervate cortical layers in downstream targets
+### Claustrocortical outputs differentially innervate cortical layers in downstream targets
 
 To explore how CLA influences the neocortex, we returned to our retro-Cre conditional expression of opsin in CLARSP neurons (Figure 5A), focusing on outputs to ACA and RSP as CLA connectivity with these areas is particularly strong (Figure 5B). Axonal fluorescence from CLA neurons varied by cortical layer in these regions (Figure 5C). Cells in ACA or RSP were filled with biocytin during recording for post hoc analysis of their location within the cortical laminae (Figure 5D). Optogenetic stimulation of CLA axons evoked both inhibitory postsynaptic currents (IPSCs) and excitatory postsynaptic currents (EPSCs) in cortical neurons during voltage-clamp at holding potentials of 0 mV and –70 mV, respectively (Figure 5E). Similarly to other experiments, we considered monosynaptic excitatory connections to be those with latencies of 3–12ms, here confirmed with pharmacological controls (Figure 5F–J, n=9 cells). The longer latency to onset of IPSCs (7–15ms) suggests recruitment of feed-forward inhibition by CLA neurons in both cortical areas, although some short-latency IPSCs could be due to direct long-range inhibitory projections (Figure 1D, Figure 1—figure supplements 6 and 7). However, no direct IPSCs were found after application of TTX and 4AP in control experiments (Figure 5G and H). PSCs could be evoked relatively evenly across most cortical layers of ACA (n=49 cells, Figure 5K, top). In RSP, we observed the highest response probability in L5, but responses in deep layers overall were reduced compared to ACA (n=43 cells, Figure 5K, bottom). Finally, we found that excitation and inhibition latencies were statistically different in ACA but not RSP (ACA p=0.0003, RSP p=0.057, Cochran–Mantel–Haenszel test). These experiments point to a complex interaction with target cortical areas that are both cortical area and layer-dependent.
 
@@ -93,9 +257,25 @@ To explore how CLA influences the neocortex, we returned to our retro-Cre condit
 
 **Figure 5.:** (A, top) Schematic of injection and patching strategy for assessing cortex responses to photostimulation of CLA axons. (B, left) Representative images of opsin expression in CLA cell bodies. Scale bars = 1 mm (top), 200 μm (bottom). (B, right) Opsin expression in CLA axons innervating ACA (top) and RSP (bottom). Scale bars = 200 μm. (C) Normalized CLA axonal fluorescence in ACA and RSP. (D) Example image of biocytin-filled neurons in ACA. Scale bar = 200 μm. (E) Example average traces of IPSC (0 mV, blue trace) and EPSC (–70 mV, red trace) responses from a single neuron in both the ACA and RSP, aligned to light onset. (F) Pharmacological investigations of EPSC and IPSC responses to photo stimulation in normal ACSF (top) and during bath application of TTX and 4AP (middle) or TTX, 4AP, DNQX, and APV (bottom; n=9 cells, 3 mice). (G) Quantification of normalized PSC magnitude and latency in pharmacological experiments. (H) Same as in (G) with neurons recorded solely in ACSF (n=92 cells, 10 mice). (I) Expanded visualizations of currents in E demonstrating the differences in EPSC and IPSC latency in both ACA and RSP. (J) Quantification of EPSC and IPSC latency in ACA and RSP (ACA p=0.0003, RSP p=0.057, Cochran–Mantel–Haenszel test). (K) PSC probability in cortical neurons sorted by the layer in which neurons were patched.
 
-## CLA axons respond to unimodal and multimodal stimuli during in vivo calcium imaging
+### CLA axons respond to unimodal and multimodal stimuli during in vivo calcium imaging
 
 The sum of our in vitro experiments points to CLA having a role in responding to and potentially combining inputs from higher order association areas rather than direct sensory binding. To explore the latter further, we next sought to understand if CLA signals sensory information to the cortex in vivo. We injected mice with a retro-Cre virus in ACA and RSP to maximize CLA labeling and a Cre-dependent calcium indicator (AAV-FLEX-GCaMP7b) in the CLA. Mice were subsequently implanted with cranial windows centered above bregma to capture midline-traveling CLA axons for observation during two-photon calcium imaging (78 recordings from 4 animals including 1364 axon segments; Figure 6A, left). Congruent with previous experiments, the expression of GCaMP7b was restricted to CLA neurons, and axons from these neurons were visible in the cortex (Figure 6B, Figure 6—figure supplement 1). GCaMP7b-labeled axons were recorded throughout the cranial window in the hemisphere ipsilateral to the injection.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig6-v1.jpg)
+
+**Figure 6.:** (A, left) Schematic of injection strategy and window placement over bregma. (A, right) Schematic of in vivo recording strategy with symbols for stimuli (upper left: complex tone, upper right: white LED light, lower right: whisker stimulator). (B) Example FOV with CLA axons expressing GCaMP7b. Highlighted area and arrowhead indicate the axon from which the trace below was recorded. Scale bar = 50 μm, 10 seconds. Inset: GCaMP7b expression in CLA from approximately 0.0 mm bregma. Inset scale bar = 200 μm. (C) Passive stimulation protocol using three stimulus modalities. Stimuli and combinations thereof were presented 8–11 s apart (randomized) with a “blank” period where no stimulus was presented every ~8 trials. (D) Average dF/F traces for each stimulus and combination across all axons responsive to that modality. Black line indicates the population mean, grey shaded regions indicate the 95% CI. (E, top left) Proportion of all recorded axons displaying significant responses to one or more trial types (n=4 mice, 1364 axons, 78 recordings). (E, top right) Proportion of all responsive axons displaying a uni- or multisensory response pattern. (E, bottom) Some axons were modulated only by multimodal trial types (left), both unimodal and multimodal trial types (center), or only unimodal trial types (right). (F) Dots represent the probability of observing a sensory evoked response to any trial type averaged across all axons, FOVs, and mice in an imaging session. Pearson’s r (0.21) indicates that response probability was not strongly correlated with experimental session. (G) Violin plots displaying the trial-by-trial response probability of axons to different trial types. (H) Violin plots displaying the trial-by-trial response magnitude of axons to different trial types.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative high and low magnification (inset) images of sections spanning the rostrocaudal axis of the brain from mice (M1–9) used for calcium imaging. Sections were stained for parvalbumin (magenta) and GFP (yellow). Red rectangle indicates animals excluded from further analysis. Scale bars 200 um. (B) Percentage of all recorded axons from each mouse in the unimodal data set displaying significant responses to one or more of the stimuli. (c) Percentage of all significantly activated axons from each mouse in the unimodal data set responsive to each stimulus type. (D) Percentage of all recorded axons from each mouse in the multimodal data set displaying significant responses to one or more of the stimuli. (E) Percentage of all significantly activated axons from each mouse in the multimodal data set responsive to each stimulus type. (F) Percentage of responsive axons from each mouse in the multimodal data set tuned to multimodal stimuli only, multi- or unimodal stimuli, and unimodal stimuli only.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Passive stimulation protocol using three stimulus modalities. Stimuli were presented 8–11 s apart (randomized) with a ‘blank’ period where no stimulus was presented every ~4 trials. (B) Average dF/F traces for each stimulus across all axons responsive to that modality. (C) Percentage of all recorded axons displaying significant responses to one or more of the stimuli (n=4 mice, 1342 axons, 117 recordings). (D, left) Percentage of all significantly activated axons responsive to each stimulus type in the unimodal stimulus condition. (D, right) Percentage of all significantly activated axons responsive to each stimulus type in the multimodal stimulus condition. Light gray bars show the percentage exclusively responsive to each stimulus type. (E) Axonal response probability across sessions for all mice.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Trial-averaged fluorescence changes across axons for all stimuli and the inter-stimulus ‘blank’ period. (B) Raster plots demonstrating single-axon responses to all stimuli.
 
 To test our in vitro results demonstrating at least some sensory responsiveness in single CLA neurons, mice were exposed to stimuli intended to evoke responses in different sensory modalities: a flash of light, stimulation of the whisker pad via a piezo-controlled paddle, and/or a complex auditory tone (Figure 6A, right). We investigated sensory responses here to account for the discrepancy in our results - which found strong frontal integration but relatively weak sensory integration despite strong visual input, with other reports of direct sensory responses in the CLA Remedios et al., 2010; Olson and Graybiel, 1980; Sherk and LeVay, 1981; Alloway et al., 2009. Therefore, we determined that it was necessary to investigate sensory-related activity in the CLA as a basis for modality-dependent integration.
 
@@ -105,9 +285,33 @@ To understand the trial-to-trial diversity of axonal responses, we examined the 
 
 These data are consistent with our in vitro recordings that suggested frontal cortical input integration among CLA neurons was a common occurrence and/or that CLA neurons receive input from a cortical region that contains neurons of mixed selectivity (Figure 4). We also find that CLA axonal responses to passive sensory stimulation are durable across recording sessions and between stimulus modalities. The results above collectively indicate that CLA outputs to the cortex convey higher order information that likely arises from integration of either weak and direct sensory input from primary cortices or elicited indirectly via integration of input from frontal association cortices.
 
-## CLA silencing reduces sensitivity to multimodal stimuli
+### CLA silencing reduces sensitivity to multimodal stimuli
 
 After observing the multimodal properties of the CLARSP both in vitro and in vivo, we next sought to examine the functional relevance of the CLARSP. To understand the contribution of CLARSP to behavior, we chronically silenced CLARSP output to the cortex using virally expressed Tetanus Toxin Light Chain (TetTox). We first validated the effectiveness of TetTox-based CLARSP silencing using an optogenetic approach in acute in vitro slices of cortex (Figure 7A). Patch-clamp recordings of RSP neurons revealed that TetTox reduced the frequency and magnitude of light-evoked currents in downstream cells, effectively silencing CLARSP output (p=0.0003, Figure 7B and C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schematic of retrograde injection and patching strategy for assessing silencing of CLARSP terminals in cortex. (B) Example average voltage clamp electrophysiology from RSP neurons in mice injected with PBS and AAV-ChrimsonR-tdTomato (top, n=33 cells) or AAV-FLEX-TetTox and ChrimsonR (bottom, n=16 cells, 2 mice), aligned to light onset. (C, left) Quantification of normalized PSC magnitude in RSP neurons in Tet+ (red) and PBS (gray) conditions. (Right) Percent of neurons in each injection condition showing EPSCs in response to CLARSP axon photostimulation. (D) Experimental pipeline for behavioral experiments, beginning with injection and finishing with histological verification. Plots shaded blue correspond to the reversal learning task, while plots shaded orange correspond to the multimodal conditioning task. (E) Average probability of poking the high reward probability port in the trials before and after the transition to a new block (trial 0). Dashed lines indicate chance performance and block transition (two-way repeated measures ANOVA, effect of group F(1,25) = 0.413, p=0.526). (F) Loading of logistic regression predictors based on data from the final five sessions (Welch’s t-test for previous choice p=0.482, previous outcome p=0.539, and interaction p=0.581). In the multimodal conditioning task, two-way repeated measures ANOVA was used to compare the latency from stimulus onset until the first poke, regardless of which port was poked, on hit (G; F(1,26) = 6.252, p=0.019) and miss (H; F(1,26) = 3.527, p=0.072) trials. (I) Percentage of trials classified as hits for each trial type (two-way repeated measures ANOVA, effect of group F(1,26) = 0.056, p=0.814). Dashed line indicates chance performance of 33%. (J) d' values calculated separately for each stimulus type. Multimodal conditioning plots include data from experienced mice only (training sessions after day 3). Data from sham mice (n=12) are plotted in black, and TetTox mice (n=16) are plotted in red. Error bars show the standard error of the mean. Symbols indicate an effect of treatment where p≤0.1 (#), p≤0.05 (*), or p≤0.001 (***).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Staining shows the full slice (A), a zoomed-in view of the CLA (B), and a zoomed-in view of the dorsal cortex (C). Scale bars are 1 mm, 250 um and 100 um.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (C) Graph showing CLA GFAP fluorescence intensity normalized against whole slice fluorescence intensity for TetTox and PBS injected brain tissue.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** Two-way repeated measures ANOVAs were used to test for a main effect or interaction of treatment group and time. (A top) Daily distance traveled in the light phase (left; effect of group F(1,10) = 0.759, p=0.404) and dark phase (right; effect of group F(1,10) = 0.352, p=0.587). (A bottom) Animal activity index in the light phase (left; effect of group F(1,10) = 0.045, p=0.835) and dark phase (right; effect of group F(1,10) = 1.215, p=0.296). (B) Frequency-weighted histograms showing the distribution of activity bouts by duration (seconds) in the light cycle (left) and dark cycle (right) during the baseline (top) and expression periods (bottom). Two-way repeated measures ANOVA of the baseline-subtracted distribution (not shown) found no effect of group in the light cycle (F(1, 10)=0.901, p=0.365) or dark cycle (F(1, 10)=0.030, p=0.866) (C) Mean duration of activity bouts recorded in the light (left; effect of group F(1, 10)=1.027, p=0.335) and dark cycles (right; effect of group F(1, 10)=0.367, p=0.558). (D) Mean number of activity bouts recorded in the light (left; effect of group F(1, 10)=0.533, p=0.482) and dark cycles (right; effect of group F(1, 10)=0.292, p=0.601). (E) RDI from the light (left; effect of group F(1, 10)=0.018, p=0.896) and dark cycles (right; effect of group F(1, 10)=0.380, p=0.552). Mean inter-daily stability (ISm; F; effect of group F(1,10) = 1.064, p=0.327), mean intra-daily variability (IVm; G; effect of group F(1,10) = 0.161, p=0.697) and relative amplitude (RA; H; effect of group F(1,10) = 3.601, p=0.087). Welch’s t-tests were used to compare the time spent in the open arms of the elevated plus maze (I; P=0.216), time spent in the center zone during the open field test (J; p=0.640), and in the light chamber during the light-dark box test (K; p=0.143). Except in panel B, data from the baseline period is plotted with open bars, and data from the expression time period is plotted with shaded bars. Yellow and blue backgrounds indicate data collected in the light and dark cycles. Data points for animals in the TetTox group are plotted in red while data points for animals in the sham group are plotted in black. Error bars show the standard error of the mean (n=6 per group).
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** Two-way repeated measures ANOVAs were used to test for a main effect or interaction of treatment group and training day. Mean number of trials completed (A; effect of group F(1,25) = 0.007, p=0.936), rewards earned (B; effect of group F(1,25) = 0.001, p=0.981) and blocks completed (C; effect of group F(1,25) = 0.201, p=0.658) per day of the reversal learning task. Mean latency from trial onset until mouse poked a choice port (D; effect of group F(1,25) = 0.002, p=0.962) and from poking a choice port until poking the reward port (E; effect of group F(1,25) = 0.309, p=0.583). Insets show a zoomed-in version of the latency data from day 4 onwards. Mean length of a block in trials (F; effect of group (mixed effects model) F(1, 25)=0.163, p=0.689). Mean probability of choosing the same port after a rewarded trial (G; effect of group F(1,25) = 0.360, p=0.554) or an unrewarded trial (H; effect of group F(1,25) = 0.975, p=0.333). Data from sham mice (n=12) are plotted in black, and TetTox mice (n=15) are plotted in red. Error bars show the standard error of the mean.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/98002/elife-98002-fig7-figsupp5-v1.jpg)
+
+**Figure 7—figure supplement 5.:** Two-way repeated measures ANOVAs were used to compare the number of trials with each outcome across all trial types (A; effect of group F(1,26) = 1.926, p=0.177), audio trials only (B; effect of group F(1,26) = 0.373, p=0.547), visual trials only (C; effect of group F(1,26) = 0.805, p=0.377), and audiovisual trials only (D; effect of group F(1,26) = 1.692, p=0.205). The number of audiovisual miss trials on which the animal chose the auditory and visual ports (E; effect of group F(1,26) = 2.145, p=0.155). Tendency to choose the auditory port (positive values) or the visual port (negative values) on audiovisual miss trials (F; Welch’s t-test p=0.812). Absolute value of the bias in (F) showing the strength of bias regardless of the preferred unimodal port (G; Welch’s t-test p=0.951). Two-way repeated measures ANOVAs were used to compare the frequency of different outcomes incorporated into the d' for audio (H; F(1,26) = 1.351, p=0.256), visual (I), and audiovisual stimuli (J). Boxes show the quartiles while the whiskers show the full range of the data. Note, the effect of treatment is consistent across (H, I, and J). Plots include data from experienced mice only (training sessions after day 3). Data from sham mice (n=12) are plotted in black, and TetTox mice (n=16) are plotted in red. Error bars show the standard error of the mean.
 
 We assessed the effect of CLARSP silencing across an array of behavioral assays (Figure 7D, Figure 7—figure supplements 1–3, see Methods). First, we compared animals injected bilaterally with AAV-retro-iCre-mCherry in RSP and AAV-FLEX-TetTox in CLA (TetTox group) with animals injected with equal volumes of PBS (sham group) during 24/7 home cage recordings using measures of activity, circadian behavior, and tests for anxiety. We found that silencing CLARSP output did not significantly alter the behavior of TetTox animals compared to the sham group. Post hoc histology from these groups revealed increased expression of glial fibrillary acidic protein (GFAP) in the CLA and reduced mCherry expression, strongly suggesting full ablation of CLARSP neurons in these experiments.
 
@@ -147,17 +351,17 @@ The possible functions of CLA activity presented above point directly to and dra
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Animal procedures were subject to local ethical approval under PPL #PE5B24716 and adhered to the United Kingdom Home Office (Scientific Procedures) Act of 1986. Male and female C57BL/6 J or Nkx2.1Cre;Ai9 mice were used in these experiments. Mice were between 3 and 11 weeks of age when surgery was performed. Long-Evans rats were used in experiments conducted at the Kavli Institute for Systems Neuroscience at the Norwegian University of Science and Technology (NTNU), Trondheim. These experiments were approved by the Federation of European Laboratory Animal Science Association (FELASA) and local authorities at NTNU.
 
-## Stereotaxic surgery
+### Stereotaxic surgery
 
 Cortical and claustral injections of viruses and/or retrograde tracers were performed in mice aged p22–40. Briefly, mice were anesthetized under 5% isoflurane and placed in a stereotaxic frame before intraperitoneal injection of 5 mg/kg meloxicam and 0.1 mg/kg buprenorphine. Animals were then maintained on 1.5% isoflurane and warmed on a heating pad at 37 °C for the duration of the procedure. The scalp was sterilized with chlorhexidine gluconate and isopropyl alcohol (ChloraPrep). Local anesthetic (bupivacaine) was applied under the scalp two minutes before making the initial incision. The scalp was then incised along the midline and retracted to expose the skull, which was then manually leveled between bregma and lambda. Target regions were found using coordinates derived from the Paxinos & Franklin Mouse Brain Atlas (3rd ed.) and marked onto the skull manually (see Table 1 for coordinates). Craniotomies were performed using a dental drill (500 μm tip) at 1–3 sites above the cortex. Craniotomies were made exclusively in the right hemisphere unless otherwise noted. Pulled injection pipettes were beveled and back-filled with mineral oil before being loaded with one or more of the following: AAV1-Syn-ChrimsonR-tdTomato (Chrimson, 2.10e+13 gc/mL, 250 nL, Addgene #59171-AAV1), AAV5-Syn-FLEX-rc [ChrimsonR-tdTomato] (FLEX-Chrimson, 1.20e+13 gc/mL, 250 nL, Addgene #62723-AAV5), AAVrg-hSyn-Cre-WPRE-hGH (retro-Cre, 2.10e+13 gc/mL, 80 nL, Addgene #105553-AAVrg), AAV1-Syn-Chronos-GFP (Chronos, 2.90e+13 gc/mL, 250 nL, Addgene #59170-AAV1), AAV-syn-FLEX-jGCaMP7b-WPRE (FLEX-GCaMP7b, 1.90e+13 gc/mL, 250 nl, Addgene #104493-AAV1), ssAAV-retro/2-hSyn1-mCherry_iCre-WPRE-hGHp(A) (retro-iCre-mCherry, 5.00e+12 gc/mL, 80 nL, ETH Zurich VVF v230-retro 20740), ssAAV-DJ/2-hEF1a-dlox-FLAG_TeTxLC(rev)-dlox-WPRE-hGHp(A)(FLEX-TetTox, 6.810e+12 gc/mL, 500 nl, ETH Zurich VVF v63-DJ 20570), Cholera Toxin Subunit B (Recombinant) Alexa Fluor 488/555/647 Conjugate (CTB-488/555/647, 0.1% wt/vol, 80 nL, Thermo Fisher C34775/C34776/C34778, injected specifically into rostral, middle, and caudal RSP). Pipettes were lowered to the surface of the pia at the center of the craniotomy and zeroed before being lowered into the brain. In the case of injections into the CLA, specifically, the coordinates (Table 1) were intentionally offset in order to avoid the risk of damaging cells in that region with the pipette or by the injection of substances. The pipette was allowed to rest for 2 min before injection of substances, at which point injection took place at 5–10 nl/s. Pipettes were allowed to rest for ten minutes after injection. The incision was sutured with Vicryl sutures and sealed with Vetbond (3 M) after all craniotomies and injections had been made. Mice were then transferred to a fresh cage and allowed to recover. Mice were supplied with edible meloxicam jelly during post-op recovery for additional analgesia.
 
 Mice to be implanted with cranial windows first received intracranial injections as described above. Once fully recovered from the injection surgery, mice were re-anesthetized for window implantation. Surgical preparation, anesthesia, analgesia, and recovery procedures were the same as for intracranial injection surgeries. Following sterilization of the scalp, a section was removed. The skull was then cleaned to remove the periosteum. An aluminum headplate with an imaging well centered on bregma was then secured in place with dental cement (Super-Bond C&B, Sun-Medical). A 4 mm circular craniotomy centered on bregma was then drilled. After soaking in saline, the skull within the craniotomy was removed. The craniectomy was then flushed with sterile saline to clean any bleeding. A durotomy was then performed over the right hemisphere. A cranial window composed of a 4 mm circular coverslip glued to a 5 mm circular coverslip was pressed into the craniotomy and sealed with cyanoacrylate (VetBond) and dental cement. Mice were then allowed to recover fully before any further experimental procedures.
 
-## In vitro slice preparation
+### In vitro slice preparation
 
 Acute coronal brain slices (300 μm thick) were prepared from tracer- and/or virus-injected mice (average age at time of experimentation = p52). Slices from virus-injected mice were prepared exclusively 3–5 weeks post-injection. Mice were deeply anesthetized with 5% isoflurane and transcardially perfused with ice-cold NMDG ACSF of the following composition: 92 mM N-Methyl-D-Glucamine (NMDG), 2.5 mM KCl, 1.25 mM NaH2PO4, 30 mM NaHCO3, 20 mM HEPES, 25 mM glucose, 2 mM thiourea, 5 mM Na-ascorbate, 3 mM Na-pyruvate, 0.5 mM CaCl2·4H2O and 10 mM MgSO4·7H2O, 12 mM N-acetyl-cysteine (NAC), titrated pH to 7.3–7.4 with concentrated hydrochloric acid, 300–310 mOsm. The brain was then extracted, mounted, and sliced in ice-cold NMDG ACSF on a Leica VT1200s vibratome or a Vibratome 3000 vibratome. Slices were incubated in NMDG solution at 34 °C for 12–15 min before being transferred to room temperature HEPES holding ACSF of the following composition for 45–60 min before experimentation began: 92 mM NaCl, 2.5 mM KCl, 1.25 mM NaH2PO4, 30 mM NaHCO3, 20 mM HEPES, 25 mM glucose, 2 mM thiourea, 5 mM Na-ascorbate, 3 mM Na-pyruvate, 2 mM CaCl2·4H2O and 2 mM MgSO4·7H2O, 12 mM NAC, titrated pH to 7.3–7.4 with concentrated hydrochloric acid, 300–310 mOsm. All solutions were continuously perfused with 5% CO2/95% O2 for 20 min before use.
 
@@ -165,7 +369,7 @@ For VSDI experiments, slices (400 μm thickness) were prepared from n=13 Long–
 
 Slices were then moved to a fine-mesh membrane filter (Omni pore membrane filter, JHWP01300, Millipore) held in place by a thin Plexiglas ring (11 mm inner diameter; 15 mm outer diameter; 1–2 mm thickness) and kept in a moist interface chamber, containing previously used ACSF and continuously supplied with a mixture of 95% O2 and 5% CO2 gas. Additionally, the slices were kept moist from gas being led through ACSF before entering the chamber. The ACSF was kept at 32 °C. Slices were allowed to rest for at least 1 hr before use, one by one in the recording chamber superfused with ACSF.
 
-## Cell identification and electrophysiological recording
+### Cell identification and electrophysiological recording
 
 Individual slices were transferred to a submersion chamber continuously superfused with bath ACSF of the following composition: 119 mM NaCl, 2.5 mM KCl, 1.25 mM NaH2PO4, 24 mM NaHCO3, 12.5 mM glucose, 2 mM CaCl2·4H2O and 2 mM MgSO4·7H2O, titrated pH to 7.3–7.4 with concentrated hydrochloric acid, 300–310 mOsm, held at 32 °C, and perfused with 5% CO2/95% O2 for 20 mins before use. Neurons were visualized with a digital camera (Hammamatsu ORCA-Flash4.0 V3 C13440) and imaged under an upright microscope (Sutter Instruments) using 10 X (0.3 NA, Olympus) and 40 X (0.8 NA, Zeiss) objective lenses with transmitted infrared light or epifluorescence in various wavelengths.
 
@@ -181,7 +385,7 @@ For pharmacological control experiments, neurons were patched in voltage clamp m
 
 In most cases, only one CLA neuron was patched per slice to prevent ambiguity during morphological reconstruction. Once recordings were complete, neurons were allowed to fill with biocytin for up to 30 min, after which the pipette was withdrawn from the tissue, and slices were transferred to 4% paraformaldehyde (PFA).
 
-## Photostimulation of chrimsonR and chronos
+### Photostimulation of chrimsonR and chronos
 
 In experiments where opsin-expressing viruses were injected into either the cortex or CLA, several different optogenetic photostimulation protocols were used. Briefly, 470/595 nm LEDs were used to deliver light pulses (4ms or 500ms) through a 40 X objective lens. LED power on the sample was titrated to the minimum power required to elicit a response in each cell. 470 nm LED power under the objective lens ranged between 0.069 mW and 3.99 mW and was typically 0.6 mW. 595 nm LED power under the objective lens ranged between 0.61 mW and 4.4 mW and was typically 1.22 mW. Except for dual-color sequential stimulation, all light pulses were separated by 10 s to allow sufficient time for opsins to resensitize.
 
@@ -189,15 +393,15 @@ For dual-color sequential photostimulation, contributions of each cortical presy
 
 For experiments in which FLEX-Chrimson was expressed directly in CLA neurons via retro-Cre injection into RSP, non-expressing CLA neurons were patched and stimulated using 595 nm light (4ms) at 0.1 Hz. 595 nm light was typically set at 1.22 mW power on sample. The same protocol was used during the voltage-clamp recording of cortical neurons in response to CLA axon stimulation.
 
-## Morphological recovery
+### Morphological recovery
 
 Patched tissue was fixed in 4% PFA for 2 hr or overnight as described above. Sections were then removed from PFA and washed 3x5 min in 0.01 M phosphate-buffered saline (PBS). Sections were then transferred to 0.01 M PBS and 0.25% TritonX (PBST) and allowed to incubate in streptavidin for at least 3 days (1:500 Streptavidin, Alexa Fluor 488/647 conjugate, Thermo Fisher S11223/S21374). The tissue was then washed 3x5 min in 0.01 M PBS, mounted, coverslipped, and imaged as described below.
 
-## Perfusion and tissue sectioning
+### Perfusion and tissue sectioning
 
 Mice were deeply anesthetized with 5% isoflurane before receiving an overdose of pentobarbital via intraperitoneal injection. Mice were then transcardially perfused with 0.01 M PBS, followed by 4% PFA. The brain was then extracted and allowed to fix in 4% PFA overnight. Brains were then moved to 0.01 M PBS and mounted for sectioning on a Leica VT1000s vibratome. Slices were sectioned coronally to 50 μm or 100 μm thickness and placed in 0.01 M PBS before immunohistochemistry and mounting or stored in tissue freezing solution (45% 0.01 M PBS, 30% ethylene glycol, 25% glycerol) at –20 °C for up to 3 years.
 
-## Immunohistochemistry and imaging
+### Immunohistochemistry and imaging
 
 Mice were perfused and sections were collected as above. Sections were first washed 3x5 min 0.01 M PBS before permeabilization in 0.5% PBST for 2x10 min. Sections were then blocked for 90 min in PBST and 5% normal goat or donkey serum at room temperature, after which they were incubated in primary antibody (mouse anti-MBP 1:500, Merck NE1019, RRID:AB_604550; rat anti-MBP 1:500, Abcam ab7349, RRID:AB_305869; rabbit anti-FLAG 1:500, Cell Signaling Technology 14793, RRID:AB_2572291; mouse anti-FLAG 1:500, Cell Signaling Technology 8146, RRID:AB_10950495; rabbit anti-GFAP 1:500, Merck G9269, RRID:AB_477035; rabbit anti-PV 1:400–500, Swant PV27a, RRID:AB_2631173; chicken anti-GFP 1:2500, AVES GFP-1020, RRID:AB_10000240) for at least 48 hr at 4 °C. The slices were then washed 3x5 min in 0.5% PBST followed by incubation in secondary antibodies (goat anti-mouse Alexa Fluor 405 1:500, Invitrogen A31553, RRID:AB_221604; goat anti-rabbit Alexa Fluor 488 1:500, Invitrogen A11034, RRID:AB_2576217; donkey anti-rabbit Alexa Fluor 594 1:500, Jackson ImmunoResearch 711-585-152, RRID:AB_2340621; Donkey anti-chicken Alexa Fluor 488 1:500, Jackson ImmunoResearch 703-545-155, RRID:AB_2340375) for 3 hr. Finally, the tissue was washed in 0.01 M PBS for 3x5 min, then mounted and coverslipped.
 
@@ -207,7 +411,7 @@ Once dry, whole-slice and CLA images were taken at ×4 and ×10 magnification (U
 
 GFAP expression was quantified using FIJI (ImageJ). First, ovoid ROIs were drawn surrounding the left and right ventral claustrum of each section. The ROI was drawn by hand using only the MBP image and without reference to the GFAP channel. Next, an ROI for the entire slice was drawn using the default algorithm of the thresholding tool. The mean fluorescence intensity was then recorded for all ROIs. The GFAP fluorescence was then averaged across the two claustrum ROIs on each slice and normalized against the fluorescence of the entire slice.
 
-## Voltage-sensitive dye imaging
+### Voltage-sensitive dye imaging
 
 Slices were stained for 3 min with VSD RH-795 (R649, Invitrogen, 0.5% in ACSF) and imaged in a recording chamber positioned beneath a fluorescence microscope (Axio Examiner, Zeiss). The slices were excited with 535±25 nm light (bandpass), reflected by a dichroic mirror (half reflectance wavelength of 580 nm), and epifluorescence was detected using a long-wavelength pass filter (50% transmittance at 590 nm) with a CMOS camera (MiCAM Ultima, BrainVision, Japan; 100_100 pixel array). An electronically controlled shutter built into the light source (HL-151, Brain Vision) was set to open for 500ms before the optical recording was triggered, as a way of avoiding mechanical disturbance caused by the shutter system and rapid bleaching of the dye.
 
@@ -215,15 +419,15 @@ The optical baseline was allowed to stabilize for 50ms before the delivery of an
 
 A total of 28 recordings were used in these experiments. Stimulations were either elicited at a rostral position of the CL with the signal propagating in the caudal direction or at a caudal position with the signal propagating in the rostral direction. In cases where a single pulse did not elicit measurable activation in the CLA, four or five repetitive stimulations (0.1–0.3 mA, 300 μs, 40 Hz) were used. At least five stimulation cycles were repeated for all experiments to assess if activation had occurred. Latency was measured from the beginning of the stimulus artifact to the onset of the response in the CLA. In some experiments, the recording ACSF for VSD imaging contained a low dose of 25 µM DNQX and 50 µM APV. Electrodes and parameters, as well as analyses, were based on prior studies. Following the VSD experiments, slices were postfixed in 4% PFA for up to 1 week, before being transferred to a PBS solution with 30% sucrose. Then after at least 10 hr they were cut at 40–50 μm thickness using a freezing microtome. Sections were then mounted and Nissl-stained with Cresyl Violet before coverslipping with Entellan. Images of the sections were combined with the optical imaging data to identify the ROIs from the recordings.
 
-## Optical system for in vitro visualization/photostimulation
+### Optical system for in vitro visualization/photostimulation
 
 The optical system used for in vitro visualization and photostimulation combined blue (Thorlabs M470L4), orange (Thorlabs M595L3), and far-red (Thorlabs M625L3) LED paths. Briefly, orange and far-red LED paths were combined via a 50/50 beamsplitter (Thorlabs BSW10R), then passed through a blue/red combining dichroic mirror (Thorlabs DMLP505R). Light was then passed down onto the sample through either an RGB dichroic mirror (Laser2000 FF409/493/573/652-Di02−25x36) for epifluorescence visualization or a ‘cold’ mirror (Thorlabs FM03R) for photostimulation. Tissue was visualized via 850 nm light transmitted through a condenser mounted beneath the slice chamber (Thorlabs M850L3). Incident and reflected light passed through excitation (Semrock FF01-378/474/554/635-25) and emission (Semrock FF01-432/515/595/730-25) filters while in RGB visualization mode.
 
-## Optical system for in vivo visualization of CLA axons
+#### Optical system for in vivo visualization of CLA axons
 
 All two-photon imaging was performed using a Bruker Ultima 2P+two-photon microscope controlled by Prairie View software, and a femtosecond-pulsed, dispersion-corrected laser (Chameleon, Coherent). Imaging was performed using a Nikon 16X0.8 NA water immersion lens. The lens was insulated from external light using a custom 3D printed cone connected to a flexible rubber sleeve. A wavelength of 920 nm and 50 mW power on the sample was used for visualizing GCaMP7b. An imaging rate of 30 Hz and a 512x512 pixel square field of view (FOV) were used for all recordings. FOVs were selected across the right side of the cranial window. The approximate coordinates of the center of the FOV relative to bregma ranged from: AP –1.2 to +1.3; ML +0.3 to+1.5; DV –0.03 to –0.3.
 
-## In vivo sensory stimulation
+### In vivo sensory stimulation
 
 Once mice had completely recovered from surgery, and after allowing sufficient time for viral expression (>3 weeks), mice were assessed for GCaMP7b labeled axons in the cortex. Animals were first acclimated to head fixation under the microscope. Next, GCaMP7b expression levels were assessed by eye. Animals in which no GCaMP7b-labeled axons could be found in the cranial window were excluded from future experiments. Animals with GCaMP7b-labeled axons in the cortex were then used for multimodal stimulation experiments.
 
@@ -233,55 +437,55 @@ During each experiment, mice were first head-fixed under the microscope. Imaging
 
 The first round of unimodal data collection involved five mice (Figure 6—figure supplement 1 M1–4), of which one was excluded due to unrecoverable histology (not shown). The second round of data collection involved seven mice (Figure 6—figure supplement 1 M4–9), of which one was excluded due to unrecoverable histology (not shown), and two were excluded due to off-target expression in cortex (Figure 6—figure supplement 1 M8–9). Two animals were used in both data sets (Figure 6—figure supplement 1 M4), of which one was excluded due to unrecoverable histology (not shown).
 
-## Behavioral testing
+### Behavioral testing
 
 The behavioral effects of CLA silencing were investigated in two experiments. In the first experiment, animals with sham and active CLA silencing were compared using 24/7 home cage activity monitoring. In the second experiment, animals with sham and active CLA silencing were compared using two reward-motivated tasks.
 
-## Home cage activity monitoring
+#### Home cage activity monitoring
 
 Animals aged p41–p53 were single housed in activity tracking cages. After a two-week acclimation period, animals were returned to standard cages for 5–8 days to receive bilateral intracranial injections of either retro-Cre in RSP and FLEX-TetTox in CLA (TetTox; n=6) or equivalent volumes of PBS (Sham; n=6). Mice were then returned to the activity tracking cages for a further six weeks of monitoring. Finally, mice were tested on a series of ethologically motivated tests for anxiety-like behavior (elevated plus maze, aversive open field, and light-dark box). Given the sex-specific effects of social isolation, only male mice were used in this experiment (Oliver et al., 2020).
 
-## Activity tracking cages
+#### Activity tracking cages
 
 During the study, mice were housed in Digital Ventilated Cages (DVC; Techniplast). DVCs resembled standard individually ventilated cages, but cage racks included capacitive sensors which permitted continuous, passive, and non-disruptive behavioral monitoring. The sensor consisted of 12 capacitive plates arrayed underneath each cage. Readouts from each of the 12 sensors were recorded every 250ms and enabled tracking of both general locomotor activity as well as distance traveled. Further details about the DVC system and data analysis can be found below as well as in Pernold et al., 2021 and Iannello, 2019 Iannello, 2019; Pernold et al., 2021.
 
-## Elevated plus maze
+#### Elevated plus maze
 
 The apparatus consisted of four 34x7 cm arms joined together at a central square. Two opposing arms were enclosed by 20 cm walls while the other arms were left exposed. The apparatus was raised 50 cm above the ground. Mice were placed at the end of one of the enclosed arms and allowed to explore freely for 5 min.
 
-## Aversive open field
+#### Aversive open field
 
 The apparatus consisted of a brightly illuminated 60 cm diameter circular arena. Mice were placed into the arena and allowed to explore for 10 min. The apparatus was divided into three zones: center, intermediate, and outer. The center zone was defined as a circle in the middle of the arena with a 5 cm radius. The outer zone was defined as a 5 cm band running around the extreme outside of the arena. Finally, the intermediate zone consisted of the area between the outer and center zones. The mouse’s location within the arena was tracked throughout the test to measure its preference for the center, intermediate, and outer zones.
 
-## Light dark box
+#### Light dark box
 
 The apparatus consisted of a 27x27 cm box split into two chambers connected through a small doorway. One chamber was open and brightly lit while the other was covered and dark. Mice were placed initially into the dark box and allowed to explore for 5 min. The time spent in the light box was recorded to determine animals’ preference for the light or dark areas.
 
-## Reward-motivated behavioral tasks
+#### Reward-motivated behavioral tasks
 
 Figure 7D provides a schematic outline of the experimental structure. Briefly, animals aged p44–p48 received bilateral intracranial injections of either retro-iCre-mCherry in RSP and FLEX-TetTox in CLA (TetTox; n=16) or equivalent volumes of PBS (Sham; n=12). Animals were then given four weeks for recovery and viral expression. Mice were then water-restricted and trained on a multimodal conditioning task before a 1-week break from water restriction. Next, mice were again water-restricted for 2 days before being trained on a reversal learning task. Finally, mice were sacrificed, and brains were extracted for post-hoc histology. Both groups contained equal numbers of male and female mice.
 
 Water restriction was used to provide task motivation. Mice were weighed twice daily during water restriction (before and after training) to ensure that their weight remained above 85% of baseline. On the first and second days of water regulation, mice were given access to their water bottle for 1 hr each day. Training commenced on the third day, after which most mice received all their water during the behavioral task. Mice who did not receive sufficient water during their training sessions or whose weight dropped below 85% of baseline were given additional water outside of training to maintain their body weight.
 
-## Behavioral training setup
+#### Behavioral training setup
 
 Training took place in 12x12 cm plastic boxes with nine nose-poke ports on the back wall arranged in a diamond shape (see https://github.com/pyControl/hardware/tree/master/Behaviour_box_small; Akam, 2021). Removable plastic panels could be attached to the back wall to cover various combinations of nose poke ports. Each port contained an infrared beam to detect nose pokes. Solenoid valves could be used to deliver calibrated water rewards to each port. Each box was housed in a separate sound and light attenuating chamber. A speaker located above the nose poke ports was used to deliver auditory stimuli. Each port could be illuminated individually, and the entire chamber could be illuminated with an LED located above each box. Operant boxes were controlled and programmed using pyControl (Akam et al., 2022).
 
-## Multimodal conditioning
+#### Multimodal conditioning
 
 Water-restricted mice were trained to associate uni- and multimodal sensory stimuli with water rewards. Mice were trained in two sessions per day for 11 days with only one session on the last day. Each session included 30 trials and lasted for ~50 min. Trials were separated by a random 1–2 min inter-trial interval. During each trial, mice were presented with either an auditory stimulus (A), a visual stimulus (V), or both stimuli at the same time (AV). Each stimulus was presented for 10 s. The A consisted of a stepped sine wave rising from 5 to 15 kHz. The frequency was increased in 20 steps, and the steps were cycled at 50 Hz, meaning that each step was played for 20ms. The V consisted of turning on the house lights in the behavior box. The AV consisted of the A and V presented simultaneously. Each stimulus was associated with reward availability at a different port, with the A stimulus indicating reward availability at the left port, the V at the right port, and the AV at the center port. Rewards were delivered following the first poke to the correct port following stimulus onset, regardless of whether the subject initially poked an incorrect port. Rewards available in a given port were not cumulative, that is subjects did not receive two rewards if they failed to collect the reward before the next presentation of the same stimulus type. Each water reward was 15 uµl. This was decreased to 12 µl for mice whose weight remained at or above 100% of baseline for two consecutive sessions.
 
-## Reversal learning
+#### Reversal learning
 
 Water-restricted mice learned to flexibly track probabilistic associations between action and reward across reversals in reward probability. Mice were trained in 2 sessions per day for 10 days. Each session lasted 45 min, during which time mice could complete trials to earn rewards.
 
 Training took place in the same boxes as the multimodal conditioning. All poke ports used in the previous paradigm were covered, and an upside-down triangle of poke ports was uncovered. At the start of the training session, the house light was illuminated and remained illuminated throughout training. Trials were separated by a 1 s inter-trial interval. At the end of the inter-trial interval, the two top poke ports were illuminated. Mice could then make a choice by poking either the left- or right-hand poke port. A click was played after poking either port. After making a choice, the top two port lights were turned off and the bottom port was illuminated. Mice could then poke the bottom port for a chance to receive a water reward. Reward volumes were gradually decreased over the course of training to maintain motivation. At the start of the first session, the choice ports were randomly assigned as either the good or bad port. Poking the good port led to an 85% chance of receiving water from the reward port, while poking the bad port led to a 15% chance of receiving a reward. Each mouse’s performance was tracked throughout the session using an exponential moving average (tau = 12). A reversal in reward probabilities was triggered 5–10 trials after mice crossed a threshold of >80% correct. The reward probabilities at the end of a session were used at the start of the next session. The number of trials and blocks completed and the number of rewards obtained in each session were therefore dependent on each mouse’s individual performance.
 
-## Data analysis and availability
+### Data analysis and availability
 
 All analyses were performed with custom routines using Python 3.7.9 or open source packages unless otherwise stated. Processed data and the functions used to generate the figure panels in this study are available at https://github.com/AMShelton/claustrum-integration (copy archived at Shelton, 2025).
 
-## Electrophysiological analysis
+#### Electrophysiological analysis
 
 Intrinsic electrophysiological recordings taken in current-clamp mode were passed through a series of automated quality controls (see Figure 1—figure supplement 3) before features were calculated and stored for later cell-typing analysis. These included: access resistance less than 35 MΩ or less than 20% of measured input resistance, membrane voltage (Vm) less than –50 mV, Vm drift less than 10 mV, threshold action potential amplitude greater than 50 mV from spike onset, and an absolute holding current of less than 30 pA. Measured access resistance across cell types was found to be similar (see Supplementary file 1). All extracted feature data is publicly available (see Data Availability Statement).
 
@@ -291,19 +495,27 @@ Due to poor separation among subclasses of excitatory neurons using the above me
 
 For in vitro optogenetic mapping experiments, ten trials for each cell were taken and averaged. Response magnitudes relative to baseline were calculated as the difference in the integral of the post-stimulus (30ms after stimulus offset) and pre-stimulus (30ms before stimulus onset) periods. Significant responses in current-clamp and voltage-clamp modes were taken as those exceeding three and five standard deviations from the average baseline period, respectively, and validated manually and by Mann-Whitney U tests that were corrected for multiple comparisons via Benjamini-Hochberg false discovery rate analysis with an alpha of 10%. Latencies for significant and non-significant responses were found manually. Neurons with evoked spike latencies shorter than 3ms were taken to be directly expressing opsin and were removed from analysis (Figure 2—figure supplement 1).
 
-To determine the expected probability of integration against what was observed, we found the probability of the linear combination of response probabilities to each cortex, assuming the independence of each input. The expected probability of integration was defined as:p(expected)=p(input1+input(1+2))∗p(input2+input(1+2))\begin{document}$$\displaystyle p\left (expected\right)=p\left (input1+input\left (1+2\right)\right)\ast p\left (input2+input\left (1+2\right)\right)$$\end{document}
+To determine the expected probability of integration against what was observed, we found the probability of the linear combination of response probabilities to each cortex, assuming the independence of each input. The expected probability of integration was defined as:
+
+$$
+p(expected)=p(input1+input(1+2))∗p(input2+input(1+2))
+$$
 
 Where input1 and input2 are the occurrences of a post-synaptic response to a given cortex (e.g. cortex1 and cortex2) and input(1+2) is the occurrence of responses to both tested cortices in the same cell.
 
-## Morphological reconstruction analysis
+#### Morphological reconstruction analysis
 
 Images of filled neurons were processed using ImageJ (v1.8.0_172), then uploaded to the software Neurolucida 360 (MBF) and used as a template for semi-automated, user-guided reconstruction in three dimensions. Neurolucida Explorer (MBF Bioscience) was used to extract a range of dendritic, somatic, and axonal properties from neuronal reconstructions. Dendritic spines were counted only on neurons with fills of sufficient quality. Spine quantification proceeded by manually counting the number of spines within a 100 μm section along three primary and three secondary dendrites, the averaging. Spiny and sparsely spiny neurons were categorized together as ‘spiny.’ All cell data was compiled into a morphological dataset that is publicly available (see Data Availability Statement).
 
-## 2-photon calcium imaging analysis
+#### 2-photon calcium imaging analysis
 
-Calcium imaging data were preprocessed using Suite2P to remove motion artifacts (Pachitariu et al., 2016). For the unimodal cohort, axonal ROIs were selected by hand using ImageJ. For the uni- and multimodal cohort, axonal ROIs were automatically selected using Suite2P. Automatically generated ROIs were then curated manually. ROIs were selected based on their morphology and activity traces. We computed ∆F/F for each axon using the equation:ΔF/F=(F−F)/F\begin{document}$$\displaystyle \Delta F/F= (F-F)/F$$\end{document}
+Calcium imaging data were preprocessed using Suite2P to remove motion artifacts (Pachitariu et al., 2016). For the unimodal cohort, axonal ROIs were selected by hand using ImageJ. For the uni- and multimodal cohort, axonal ROIs were automatically selected using Suite2P. Automatically generated ROIs were then curated manually. ROIs were selected based on their morphology and activity traces. We computed ∆F/F for each axon using the equation:
 
-where F\begin{document}${F}$\end{document} represents the mean of F\begin{document}$F$\end{document} across time through the entire session. For axonal ROIs selected by suite2P, F\begin{document}$F$\end{document} was first corrected for neuropil fluorescence by subtracting 0.7*FNeu.
+$$
+ΔF/F=(F−F)/F
+$$
+
+where $F$ represents the mean of $F$ across time through the entire session. For axonal ROIs selected by suite2P, $F$ was first corrected for neuropil fluorescence by subtracting 0.7*FNeu.
 
 After calcium traces were exported from Suite2P, all analyses were carried out using custom MATLAB code. Calcium traces were plotted using the Gramm software package (Morel, 2018).
 
@@ -313,7 +525,7 @@ Responsive axons were classified as either uni- or multisensory based on the tri
 
 To understand the trial-to-trial diversity of axonal responses, we calculated the AUC for the dF/F in the second after stimulus onset for each axon. To measure the reliability of responses, we computed the response probability for each axon number of stimulus presentations evoking a response/total number of stimulus presentations. Stimulus presentations were deemed to evoke a response if the AUC was >1 standard deviation above the mean AUC for all axons, baselined on a trial-by-trial basis to the second before stimulus onset. A non-parametric Kruskal Wallis test was used to assess the impact of trial type and/or session on axonal response probability and magnitude.
 
-## Confocal image analysis
+#### Confocal image analysis
 
 All images used for quantitative analysis in this study were imaged on a confocal microscope at ×10 magnification (see Immunohistochemistry and imaging section above for details). Cell counts and cell coordinates were collected and analyzed using ImageJ and custom JavaScript macros. Inter-cell distances were calculated as the smallest Euclidean distance between cell somas. Comparisons between cell counts from injection sites were done using Mann-Whitney U tests, corrected for multiple comparisons by Bonferroni correction.
 
@@ -323,38 +535,46 @@ Confocal images of cortical axons innervating the CLA were prepared as above and
 
 To determine the amount of dorsal/core/ventral fluorescence within the CLA of each injection experiment, the CLA contour at the AP position of the analyzed image was used as a mask for the core. Dorsal and ventral masks were taken as the regions in the image above and below the core, including medial and lateral regions above and below ½ the core height. Image masks were multiplied to each processed and normalized image within an injection experiment set, and fluorescence from that region was averaged pixel-wise. Regional fluorescence was then averaged across mice to obtain a comparison of dorsal, core, and ventral axon fluorescence in the CLA from each cortical area. Values for each region were compared using independent t-test. Multiple comparisons correction was performed using the Benjamini-Hochberg false discovery rate analysis with an alpha of 10%.
 
-## Home cage activity tracking
+#### Home cage activity tracking
 
 The home cage monitoring study was divided into baseline and expression periods. To allow mice to acclimatize to their new environment, data for the baseline period was collected starting one week after mice were placed in the activity monitoring cages until they were removed for surgery. To balance the baseline period and allow adequate time for viral expression, data for the expression period was collected for 1 week starting 3 weeks after the last mouse in each group received their intracranial injections.
 
-## Home cage activity
+#### Home cage activity
 
 Activity tracking data from the DVC system were preprocessed using the DVC Analytics platform (Techniplast) to extract locomotor activity data. Briefly, readouts from the capacitive plates are affected by the local electromagnetic environment. The presence of water-rich bodies — such as a mouse — near the sensor alters its readout. Alterations to the capacitive readings across the 12 sensors can be used to identify the location of a mouse within the cage. By tracking the change in the location of the mouse across readings, the system can track the distance traveled by the mouse within a given time window.
 
 While the distance traveled metric reveals an important aspect of home cage behavior, it is insufficient to distinguish between a truly immobile mouse (ex. during sleep) and a mouse which is stationary but active (ex. grooming, nest building). To provide a more detailed picture of activity, the DVC platform also calculates an Animal Activity Index. Activity is detected by computing the change in electrode capacitance between adjacent readings. An electrode is considered activated if the difference between the readings is greater than a threshold chosen by the software to separate activity from noise. This measurement is therefore insensitive to long-term changes in capacitance (ex. due to the moisture level of the bedding) while providing a short-term readout of local activity. The density of activation across the electrode array over time can then be used as a general indicator of the animals’ activity level. The so-called Animal Activity Index calculated by the DVC analytics platform is expressed in arbitrary units.
 
-## Circadian parameters
+#### Circadian parameters
 
-Python, the pyActigraphy package, and the DVC analytics platform were used to compute circadian metrics from the DVC data. While the pyActigraphy toolbox was written to analyze data collected using devices such as smart watches, it was adapted here to import data produced by the DVC analytics platform. The pyActigraphy toolbox was then used to analyze animals’ mean inter-daily stability (ISm) and mean intra-daily variability (IVm). The DVC data were further analyzed using custom Python code to calculate the relative amplitude (RA) of animals’ daily activity. RA was calculated using the following formula:RA+AID−AILAID+AIL\begin{document}$$\displaystyle RA+\frac{AI_{D}- AI_{L}}{AI_{D}+AI_{L}}$$\end{document}
+Python, the pyActigraphy package, and the DVC analytics platform were used to compute circadian metrics from the DVC data. While the pyActigraphy toolbox was written to analyze data collected using devices such as smart watches, it was adapted here to import data produced by the DVC analytics platform. The pyActigraphy toolbox was then used to analyze animals’ mean inter-daily stability (ISm) and mean intra-daily variability (IVm). The DVC data were further analyzed using custom Python code to calculate the relative amplitude (RA) of animals’ daily activity. RA was calculated using the following formula:
+
+$$
+RA+\frac{AI_{D}−AI_{L}}{AI_{D}+AI_{L}}
+$$
 
 where AID refers to animals’ mean activity index during their dark cycle and AIL refers to their mean activity in the light cycle. These metrics were calculated using the Animal Activity Index.
 
 Finally, the DVC analytics platform was used to calculate the regularity disruption index (RDI) for all mice at baseline and after claustrum silencing. RDI is a novel biomarker based on sample entropy. It was developed for the DVC system to quantify irregularities in activity patterns. A highly regular pattern of activity would yield an RDI near zero, while highly disrupted activity would yield a high RDI. Notably, RDI values reflect the regularity of activity regardless of its magnitude. RDI was calculated separately for the light and dark cycle to delineate activity patterns in different behavioral states. Details on the above metrics can be found in Brown et al., 2019; Golini et al., 2020; Gonçalves et al., 2014; Hammad et al., 2021. Statistical tests were performed using Python and GraphPad Prism 9.
 
-## Activity bouts
+#### Activity bouts
 
 Actigraphy data can be used to calculate the number and duration of periods of rest and activity. Activity bouts are usually defined as periods of time when activity never falls below a specified threshold. However, there is variation between studies in the required length and threshold. The parameters of this analysis were selected to maximize the number of bouts detected. Bouts were detected using MATLAB code to identify periods where the Animal Locomotor Index did not fall below a threshold of 0.2 arbitrary units. Bouts had a minimum duration of 1 min with a minimum inter-bout interval of 1 min. Statistical tests were performed using GraphPad Prism 9.
 
-## Anxiety tests
+#### Anxiety tests
 
 Video recordings of the elevated plus maze and aversive open field tests were analyzed by a blinded observer using Anymaze 7.3 (Stoelting) to extract the mouse’s location and movement within the behavioral apparatus. The mouse was deemed to be inside a given region when 85% of its body crossed into the zone. Video recordings of the light-dark box test were analyzed manually by a blinded observer to record time spent in the light zone of the apparatus. Statistical tests were performed using GraphPad Prism 9.
 
-## Multimodal conditioning and reversal learning
+#### Multimodal conditioning and reversal learning
 
 Statistical tests were performed using Python and GraphPad Prism 9.
 
 In the multimodal conditioning task, a d-prime (d') was calculated for each stimulus in an effort to compare animals’ sensitivity to the different stimuli. To calculate each d', all trials had to be classified according to one of four outcomes: hit, miss, correct rejection, or false alarm. Classically, a hit is defined as a trial in which both the stimulus and response are present, while a miss is a trial where the stimulus is present, but the response is absent. A correct rejection is a trial in which both the stimulus and response are absent, while a false alarm is a trial in which the stimulus is absent, but the response is present. For this calculation, the response was defined as poking the correct port first, and within 10 s of stimulus onset. Using the auditory d' as an example, a hit would be a trial where a sound was present, and the mouse poked the auditory port first. A miss would be a trial where the auditory stimulus was present, but the mouse poked a non-auditory port first. An auditory false alarm would be a non-auditory trial (i.e. visual or audiovisual) where the mouse poked the auditory port first. Finally, a correct rejection would be a non-auditory trial (i.e. visual or audiovisual) where the mouse did not poke the auditory port first. In this way, each d' included the outcome for every trial of all stimulus types. The redundancy inherent in these outcomes is essential for assessing how animals behave when each stimulus was present and when it was absent.
 
-Once all trials had been assigned an outcome, they were used to calculate a hit rate and a false alarm rate for each stimulus. These were calculated according to the following formulae: False Alarm Rate = ((# False Alarm) / (# False Alarm + # Correct Rejection)) and Hit Rate = ((# Hit) / (# Hit + # Miss)). The hit and false alarm rates could then be combined according to the formula:d`=Z(HR)−Z{FR)\begin{document}$$\displaystyle d'=Z\left (HR\right)- Z\left \{FR\right)$$\end{document}
+Once all trials had been assigned an outcome, they were used to calculate a hit rate and a false alarm rate for each stimulus. These were calculated according to the following formulae: False Alarm Rate = ((# False Alarm) / (# False Alarm + # Correct Rejection)) and Hit Rate = ((# Hit) / (# Hit + # Miss)). The hit and false alarm rates could then be combined according to the formula:
+
+$$
+d`=Z(HR)−Z{FR)
+$$
 
 where Z is the normal inverse cumulative distribution function, HR is the hit rate, and FR is the false-alarm rate.

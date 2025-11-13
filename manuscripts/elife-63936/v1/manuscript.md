@@ -17,7 +17,7 @@
 
 ## Abstract
 
-The canonical chemotaxis network modulates the bias for a particular direction of rotation in the bacterial flagellar motor to help the cell migrate toward favorable chemical environments. How the chemotaxis network in Helicobacter pylori modulates flagellar functions is unknown, which limits our understanding of chemotaxis in this species. Here, we determined that H. pylori swim faster (slower) whenever their flagella rotate counterclockwise (clockwise) by analyzing their hydrodynamic interactions with bounding surfaces. This asymmetry in swimming helped quantify the rotational bias. Upon exposure to a chemo-attractant, the bias decreased and the cells tended to swim exclusively in the faster mode. In the absence of a key chemotaxis protein, CheY, the bias was zero. The relationship between the reversal frequency and the rotational bias was unimodal. Thus, H. pylori ’s chemotaxis network appears to modulate the probability of clockwise rotation in otherwise counterclockwise-rotating flagella, similar to the canonical network.
+The canonical chemotaxis network modulates the bias for a particular direction of rotation in the bacterial flagellar motor to help the cell migrate toward favorable chemical environments. How the chemotaxis network in Helicobacter pylori modulates flagellar functions is unknown, which limits our understanding of chemotaxis in this species. Here, we determined that H. pylori swim faster (slower) whenever their flagella rotate counterclockwise (clockwise) by analyzing their hydrodynamic interactions with bounding surfaces. This asymmetry in swimming helped quantify the rotational bias. Upon exposure to a chemo-attractant, the bias decreased and the cells tended to swim exclusively in the faster mode. In the absence of a key chemotaxis protein, CheY, the bias was zero. The relationship between the reversal frequency and the rotational bias was unimodal. Thus, H. pylori’s chemotaxis network appears to modulate the probability of clockwise rotation in otherwise counterclockwise-rotating flagella, similar to the canonical network.
 
 ## Introduction
 
@@ -31,61 +31,67 @@ Here, we report a novel approach to measure the CWbias based on differences in t
 
 ## Results
 
-## Swimming speeds are asymmetric
+### Swimming speeds are asymmetric
 
-To determine the behavior of flagellar motors in H. pylori, we tracked cell motility in the bulk fluid with a phase contrast microscope. The positions of single cells were quantitatively determined from digital videos with the aid of particle tracking (see Materials and methods). Owing to the use of low magnification microscopy, we were able to observe several cells exhibiting reversals in the field of view. A representative cell trajectory at 37°C is shown in Figure 1A (see another example in Video 1). With each reversal, the cell appeared to change from one mode of swimming to the other, although the modes could not be identified (as puller or pusher) because the flagella were not visible. Changes in the swimming modes were distinguished from rotational turns of the cell body – where the swimming mode remains unchanged – by visually inspecting each reversal for each cell. The turn angle between the original direction just before and the new direction just after a reversal (∅) followed an exponential distribution with a peak ~180° (Figure 1B), indicating that cells simply retraced their paths for brief durations following each reversal. The flick of the flagellum that causes turn angles to be distributed ~90° in another run-reversing species Vibrio alginolyticus (Stocker, 2011), is unlikely to occur in H. pylori. The distance traveled between any two reversals was identified as a segment and numbered (Figure 1A). The swimming speeds over six consecutive segments are indicated in Figure 1C. The speeds were binned as per the segments, yielding n+1 bins for n reversals. The mean speed from each bin was plotted for all the n+1 bins (Figure 1D). Mean speeds in alternate bins were anti-correlated: each reversal either decreased or increased the speed. This suggested that the speeds in the two modes were unequal. Such anti-correlation was consistently observed in a large population of cells (n = 250). The distribution of the ratio of their mean speeds in the fast and slow modes is shown in Figure 1E. The speed in the fast mode was ~1.5 times the speed in the slow mode.
+To determine the behavior of flagellar motors in H. pylori, we tracked cell motility in the bulk fluid with a phase contrast microscope. The positions of single cells were quantitatively determined from digital videos with the aid of particle tracking (see Materials and methods). Owing to the use of low magnification microscopy, we were able to observe several cells exhibiting reversals in the field of view. A representative cell trajectory at 37°C is shown in Figure 1A (see another example in Video 1). With each reversal, the cell appeared to change from one mode of swimming to the other, although the modes could not be identified (as puller or pusher) because the flagella were not visible. Changes in the swimming modes were distinguished from rotational turns of the cell body – where the swimming mode remains unchanged – by visually inspecting each reversal for each cell. The turn angle between the original direction just before and the new direction just after a reversal ($∅$) followed an exponential distribution with a peak ~180° (Figure 1B), indicating that cells simply retraced their paths for brief durations following each reversal. The flick of the flagellum that causes turn angles to be distributed ~90° in another run-reversing species Vibrio alginolyticus (Stocker, 2011), is unlikely to occur in H. pylori. The distance traveled between any two reversals was identified as a segment and numbered (Figure 1A). The swimming speeds over six consecutive segments are indicated in Figure 1C. The speeds were binned as per the segments, yielding n+1 bins for n reversals. The mean speed from each bin was plotted for all the n+1 bins (Figure 1D). Mean speeds in alternate bins were anti-correlated: each reversal either decreased or increased the speed. This suggested that the speeds in the two modes were unequal. Such anti-correlation was consistently observed in a large population of cells (n = 250). The distribution of the ratio of their mean speeds in the fast and slow modes is shown in Figure 1E. The speed in the fast mode was ~1.5 times the speed in the slow mode.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/63936/elife-63936-fig1-v1.jpg)
 
-**Figure 1.:** H. pylori swim forward and backward at different speeds.(A) Representative swimming trace of a single bacterium. Each reversal is represented by a filled circle. The beginning of the trajectory is denoted by an open circle. Uninterrupted swimming between two reversals was labeled as a segment and the segments were numbered chronologically. (B) The turn angles were exponentially distributed (n = 1653 samples); reversals mostly caused the cells to retrace their movements. (C) The swimming speed for a single cell over 1.5 s is indicated. The speeds alternated between high and low values with each reversal. Raw data is indicated in gray; filtered data is indicated in black. (D) The mean speed for each segment is indicated chronologically. Standard deviations are indicated. (E) The mean speed for the high (low) mode for each cell was calculated by averaging over all its high- (low-) speed segments. The distribution of the ratios of the high and low mean speeds for each cell is indicated. The mean ratio was 1.5 ± 0.4 (n = 250 cells).Figure 1—source data 1.
+**Figure 1.:** (A) Representative swimming trace of a single bacterium. Each reversal is represented by a filled circle. The beginning of the trajectory is denoted by an open circle. Uninterrupted swimming between two reversals was labeled as a segment and the segments were numbered chronologically. (B) The turn angles were exponentially distributed (n = 1653 samples); reversals mostly caused the cells to retrace their movements. (C) The swimming speed for a single cell over 1.5 s is indicated. The speeds alternated between high and low values with each reversal. Raw data is indicated in gray; filtered data is indicated in black. (D) The mean speed for each segment is indicated chronologically. Standard deviations are indicated. (E) The mean speed for the high (low) mode for each cell was calculated by averaging over all its high- (low-) speed segments. The distribution of the ratios of the high and low mean speeds for each cell is indicated. The mean ratio was 1.5 ± 0.4 (n = 250 cells).
 
-## Cell swims faster in the pusher mode
+![Video 1.](https://cdn.elifesciences.org/articles/63936/elife-63936-video1.mp4.jpg)
+
+### Cell swims faster in the pusher mode
 
 A recent study attempted to visualize the flagella in H. pylori with high-magnification microscopy, and suggested that the cells swim faster in the pusher mode. However, the sample sizes were severely limited by the difficulties in visualizing flagella on the swimmers (Constantino et al., 2016). To conclusively determine the faster mode in H. pylori, we exploited the hydrodynamic coupling between swimmers and glass boundaries. Cells that swim very close to an underlying solid boundary exhibit circular trajectories owing to the increased viscous drag on the bottom of the cell and the flagellar filaments. CCW rotation of the left-handed helical filament causes the pusher to experience a lateral force that promotes CW circular tracks (Figure 2A, DiLuzio et al., 2005; Lauga et al., 2006). The situation is reversed when the filaments rotate CW. Thus, it is possible to discriminate between the two modes when a bacterium swims near a surface. We analyzed each cell that swam in circular trajectories near the surface and determined the mean speeds for the two directions. The cells were viewed from the bulk fluid, as indicated in Figure 2A (right panel). Four sample trajectories are shown in Figure 2B. For each cell, the CW trajectories were always faster relative to the CCW trajectories, indicating that the pusher mode was the faster mode (Figure 2C). This was confirmed over n = 116 cells; the mean ratio of the speeds of the CW trajectories to that of the respective CCW trajectories was ~1.6 ± 0.5 (Figure 2D).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/63936/elife-63936-fig2-v1.jpg)
 
-**Figure 2.:** (A) The viscous drag on the bottom of the cell body and the flagellar filament is higher near an underlying surface (indicated by the blue line in the left panel). The drag is lower on the top half of the body and filament. This difference in drag causes a lateral thrust on the cell, giving rise to circular trajectories: CW trajectory in the pusher mode and CCW trajectory in the puller mode (right panel). (B) Top row: Blue segments indicate CW trajectories; red segments indicate CCW trajectories. Filled circles indicate reversals; open circle indicates the beginning of the trajectory. Bottom row: The corresponding mean speeds and standard deviations are indicated for the two trajectories: CW tracks were always faster than CCW tracks. (C) The distribution of the ratio of the speeds along the pusher and puller modes is indicated (n = 116 cells). The mean ratio = 1.6 ± 0.5.Figure 2—source data 1.
+**Figure 2.:** (A) The viscous drag on the bottom of the cell body and the flagellar filament is higher near an underlying surface (indicated by the blue line in the left panel). The drag is lower on the top half of the body and filament. This difference in drag causes a lateral thrust on the cell, giving rise to circular trajectories: CW trajectory in the pusher mode and CCW trajectory in the puller mode (right panel). (B) Top row: Blue segments indicate CW trajectories; red segments indicate CCW trajectories. Filled circles indicate reversals; open circle indicates the beginning of the trajectory. Bottom row: The corresponding mean speeds and standard deviations are indicated for the two trajectories: CW tracks were always faster than CCW tracks. (C) The distribution of the ratio of the speeds along the pusher and puller modes is indicated (n = 116 cells). The mean ratio = 1.6 ± 0.5.
 
-## Partitioning of swimming speeds enables estimation of chemotaxis response to attractants
+### Partitioning of swimming speeds enables estimation of chemotaxis response to attractants
 
 As H. pylori rotate their flagella CW in the puller mode, the CWbias could be calculated from the fraction of the time that the cells swam slower (see Materials and methods). This method worked for all the cells that reversed at least once in the field of view: the faster and slower modes could be discriminated from each other based on comparisons between the mean speeds before and after a reversal (as shown in Figure 1D). These cells consisted ~81% of the total data. The remaining cells did not reverse under observation; they persisted in a particular direction before exiting the field of view. Hence, these cells were termed as single-mode swimmers. As the mode of swimming could not be readily determined for these cells, those data were grouped into cells that swam near the surface for at least some time and those that did not. In the former group of cells, the majority was identified as pushers based on the direction of their circular trajectories near surfaces, as discussed in Figure 2. About 8% of the cells could not be identified and were excluded from the analysis. The distribution of the bias is shown in Figure 3A. The bias was similar to that observed in E. coli (Block et al., 1983; Segall et al., 1986; Ford et al., 2018; Sagawa et al., 2014; Block et al., 1982; Stock et al., 1985), suggesting that the basal chemotactic output in the two species is similar. As evident, most cells tended to rotate their motors CCW for a higher fraction of time.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/63936/elife-63936-fig3-v1.jpg)
 
-**Figure 3.:** (A) CWbias was determined at 37°C in the absence of chemical stimulants. Cell trajectories with durations of 1 s or more were considered for calculation. The distribution was obtained from n = 240 cells. A Gaussian fit to the switching population (n = 212 cells) yielded CWbias = 0.35 ± 0.23 (mean ± standard deviation). (B) Single-cell trajectories of a ΔcheY mutant are indicated. Cells swam in CW-only trajectories, which indicate CCW flagellar rotation. Open green circles denote the start of a trajectory; filled red circles denote the end. The trajectories were spatially displaced to group them for the purpose of illustration and truncated to show the direction of rotation. Full trajectories and additional cells are included in Appendix 1—figure 1. (C) The post-stimulus CWbias was monitored for ~30–60 s immediately following exposure to 20 mM urea (n = 20 cells); 14 cells swam exclusively in the pusher mode during the period of observation and displayed CW-only trajectories near surfaces. In the control case, cells were exposed to the buffer-only. The average post-stimulus CWbias was 0.31 ± 0.04 (mean ± standard error, n = 20 cells). The difference in the mean bias for the attractant and the control cases was significant (p-value<0.001). (D) The post-stimulus reversal frequency for cells treated with urea was 0.23 ± 0.09; those treated with the buffer had an average reversal frequency of 1.4 ± 0.04. The difference in the mean frequency for the attractant and the control cases was significant (p-value<0.001).Figure 3—source data 1.
+**Figure 3.:** (A) CWbias was determined at 37°C in the absence of chemical stimulants. Cell trajectories with durations of 1 s or more were considered for calculation. The distribution was obtained from n = 240 cells. A Gaussian fit to the switching population (n = 212 cells) yielded CWbias = 0.35 ± 0.23 (mean ± standard deviation). (B) Single-cell trajectories of a ΔcheY mutant are indicated. Cells swam in CW-only trajectories, which indicate CCW flagellar rotation. Open green circles denote the start of a trajectory; filled red circles denote the end. The trajectories were spatially displaced to group them for the purpose of illustration and truncated to show the direction of rotation. Full trajectories and additional cells are included in Appendix 1—figure 1. (C) The post-stimulus CWbias was monitored for ~30–60 s immediately following exposure to 20 mM urea (n = 20 cells); 14 cells swam exclusively in the pusher mode during the period of observation and displayed CW-only trajectories near surfaces. In the control case, cells were exposed to the buffer-only. The average post-stimulus CWbias was 0.31 ± 0.04 (mean ± standard error, n = 20 cells). The difference in the mean bias for the attractant and the control cases was significant (p-value<0.001). (D) The post-stimulus reversal frequency for cells treated with urea was 0.23 ± 0.09; those treated with the buffer had an average reversal frequency of 1.4 ± 0.04. The difference in the mean frequency for the attractant and the control cases was significant (p-value<0.001).
 
 Next, we imaged swimmers belonging to a cheY-deleted strain and observed that the trajectories of cells near a surface were exclusively CW circles. More than 150 cells were observed near surfaces and they exhibited CW trajectories. A fraction of the data is shown in Figure 3B and in Appendix 1—figure 1. This suggested that the default direction of flagellar rotation is CCW, similar to E. coli (Ford et al., 2018; Liu et al., 2020). Considering that the bias is zero in the absence and ~0.35 in the presence of CheY, CheY-P binding likely promotes CW rotation in an otherwise CCW rotating motor in H. pylori.
 
 To test the idea that the chemotaxis network modulates the rotational bias, we employed our technique to quantify changes in the CWbias in swimmers when stimulated by a chemical attractant. We stimulated cells by adding them to a bath of urea (20 mM in motility buffer-MB, see Materials and methods), which is a potent chemoattractant for H. pylori (Huang et al., 2015). Following exposure to the attractant, the majority of the cells swam exclusively in the pusher mode – their post-stimulus CWbias was ~0 (Figure 3C). The reversal frequency also decreased in response to the chemo-attractant (Figure 3D), which is in agreement with previous reports (Machuca et al., 2017; Perkins et al., 2019). In comparison, the post-stimulus CWbias in swimmers exposed to MB-only (control case) did not change significantly and continued to exhibit both modes of motility (Figure 3C,D). These observations are consistent with the notion that a reduction in the kinase activity upon the sensing of chemo-attractants inhibits the rotational bias of flagellar motors, similar to how the chemotaxis network modulates the response of E. coli to attractants (Block et al., 1983).
 
-## Effect of thermal stimuli on chemotactic output
+### Effect of thermal stimuli on chemotactic output
 
 Several studies have characterized motility and chemotaxis in H. pylori at room temperatures (Constantino et al., 2016; Howitt et al., 2011; Martínez et al., 2016). Here, we explored how changes in the surrounding temperatures modulated the﻿ flagellar output in H. pylori. We recorded cell motility at different temperatures. The recording began ~5–10 min after each temperature change to provide adequate time for transient processes to stabilize (see Materials and methods for additional information). The mean pusher and puller speeds trended upwards with the temperature (Figure 4A, left panel), presumably through modulation of proton translocation kinetics that power the motor (Yuan and Berg, 2010). The ratio of the speeds in the two modes appeared to be independent of the temperature (Figure 4A, right panel). These responses are consistent with experiments in E. coli that show a strong influence of temperatures on the rotational speeds of the flagellar motor (Yuan and Berg, 2010; Turner et al., 1996; Turner et al., 1999).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63936/elife-63936-fig4-v1.jpg)
 
-**Figure 4.:** (A) Left: Swimming speeds for each mode are plotted (mean ± standard deviation) for different temperatures. The speeds increased with temperature till 37°C, after which they plateaued. The shaded regions indicate standard deviation. Right: The ratios of the pusher and puller speeds are independent of the temperatures, as indicated. A red horizontal line indicates the median ratio at each temperature, and the bottom and top borders of the encompassing box indicate the 25th and 75th percentiles. The extended lines span 99.3% of the data and the dots indicate outliers. (B) Mean CWbias (open squares) and mean reversal frequencies (filled circles) are plotted over a range of temperatures. The switching frequency was at a maximum at the physiological temperature (37°C) and decreased at higher and lower temperatures. The CWbias increased with the temperature and plateaued above 30°C. The mean values are indicated with standard error. Each data-point was averaged over n ≥ 80 cells. (C) The relationship between reversal frequency and CWbias is indicated. The values were obtained from the combined datasets over the entire range of temperatures that we studied (n = 972 cells). The CWbias was binned (bin size = 0.05), and the mean reversal frequency for each bin was estimated. The mean and standard errors are indicated in grey. The black curve is a guide to the eye. (D) The estimated ratio of the CheY-P dissociation constant () and the intracellular CheY-P concentrations (K) is indicated as a function of the temperature. The ratios were calculated from the data in (CB) following a previous approach (Turner et al., 1999). The number of binding sites for CheY-P in H. pylori ~ 43 was estimated from the relative sizes of the flagellar C-ring (see Appendix 2 and Qin et al., 2017). The ratio of the dissociation constants for the CCW and the CW motor conformations was assumed to be similar to that in E. coli (~ 4.7 from Fukuoka et al., 2014).Figure 4—source data 1.
+**Figure 4.:** (A) Left: Swimming speeds for each mode are plotted (mean ± standard deviation) for different temperatures. The speeds increased with temperature till 37°C, after which they plateaued. The shaded regions indicate standard deviation. Right: The ratios of the pusher and puller speeds are independent of the temperatures, as indicated. A red horizontal line indicates the median ratio at each temperature, and the bottom and top borders of the encompassing box indicate the 25th and 75th percentiles. The extended lines span 99.3% of the data and the dots indicate outliers. (B) Mean CWbias (open squares) and mean reversal frequencies (filled circles) are plotted over a range of temperatures. The switching frequency was at a maximum at the physiological temperature (37°C) and decreased at higher and lower temperatures. The CWbias increased with the temperature and plateaued above 30°C. The mean values are indicated with standard error. Each data-point was averaged over n ≥ 80 cells. (C) The relationship between reversal frequency and CWbias is indicated. The values were obtained from the combined datasets over the entire range of temperatures that we studied (n = 972 cells). The CWbias was binned (bin size = 0.05), and the mean reversal frequency for each bin was estimated. The mean and standard errors are indicated in grey. The black curve is a guide to the eye. (D) The estimated ratio of the CheY-P dissociation constant ($K$) and the intracellular CheY-P concentrations ($C$) is indicated as a function of the temperature. The ratios were calculated from the data in (B) following a previous approach (Turner et al., 1999). The number of binding sites for CheY-P in H. pylori ~ 43 was estimated from the relative sizes of the flagellar C-ring (see Appendix 2 and Qin et al., 2017). The ratio of the dissociation constants for the CCW and the CW motor conformations was assumed to be similar to that in E. coli (~ 4.7 from Fukuoka et al., 2014).
 
 The frequency of reversals increased steadily with temperature up to 37°C, whereas the steady-state CWbias varied weakly with temperature (Figure 4B). At room temperatures, the CWbias was the lowest, indicating that the cells mostly prefer to swim in the pusher mode. Next, we combined our data over the entire range of temperatures (25–43°C) and for each cell, plotted the reversal frequency against its CWbias. The reversal frequency was maximum at ~0.4﻿ CWbias and decreased on either side (Figure 4C); also see Appendix 3—figure 1. As our results suggest that CheY-P binding increases the CWbias (Figure 3B,C), this also means that the reversal frequency has a similar unimodal dependence on CheY-P levels. Hence, we propose that changes in the reversal frequency in H. pylori cannot provide accurate information about the effect of stimulants on the kinase activity (i.e. whether a stimulant increases or decreases the activity). On the other hand, the rotational bias is likely a better measure of the kinase activity, similar to that in E. coli.
 
 In E. coli, flagellar switching has been well described by a two-state model, where the binding of phosphorylated CheY (CheY-P) to the flagellar switch stabilizes the CW conformation (Turner et al., 1999). In the absence of CheY-P, the probability of observing CW rotation in an otherwise CCW-rotating motor decreases with increasing temperatures (Turner et al., 1996). The chemotaxis network itself adapts such that the steady-state levels of CheY-P are independent of the temperatures (Paulick et al., 2017). Assuming that CheY-P levels are also independent of the temperature in H. pylori, the relative insensitivity of the rotational bias in Figure 4B suggested that the dissociation constant for CheY-P/switch interactions likely decreased with rising temperatures. Following the thermodynamic analysis of Turner and co-workers for a two-state flagellar switch (Turner et al., 1999), we calculated the dissociation constant normalized by CheY-P levels, as shown in Figure 4D (see Appendix 2 for details). Assuming that the CheY-P levels are ~3 μM (Cluzel et al., 2000), we estimate the dissociation constant to be ~9 μM at 37°C.
 
-## Speed asymmetry promotes diffusion
+### Speed asymmetry promotes diffusion
 
 Even without chemotaxis, motility enhances the spread of bacteria, lending a significant advantage over immotile bacteria in exploring three-dimensional spaces (Josenhans and Suerbaum, 2002). Bacterial motion becomes uncorrelated over long times and large length-scales in the absence of a signal. Several previous works have modeled the diffusion of motile bacteria by assuming that the reversal wait-times are exponentially distributed (Berg, 1993; Lovely and Dahlquist, 1975; Lauga, 2016; Theves et al., 2013). The wait-time refers to the time between two consecutive reversals. In some bacterial species that exhibit runs and reversals, the wait-time is Gamma distributed (Theves et al., 2013; Morse et al., 2016; Xie et al., 2011). The assumption of exponentially distributed wait-times leads to inaccurate predictions in such species (Theves et al., 2013).
 
-Our cell-tracking analysis revealed that the reversal wait-times were Gamma distributed in H. pylori (Figure 5A, also see separate distributions for the two swimming modes in Appendix 3—figure 2). When calculating the wait-times, we excluded the beginning of each cell-trajectory just before the first reversal and the end of each cell-trajectory just after the final reversal. To derive an explicit expression for the diffusivity of asymmetric run-reversers that exhibit Gamma distributed reversal intervals, we preferred to modify a previous approach developed for symmetric run-reversers (Großmann et al., 2016) rather than a more general model (Detcheverry, 2017) – see Appendix 4 for details. Briefly, the velocities of a bacterium that swims at v0 μm/s in its slower mode was expressed as: vt=v0 ht 1+aHhet. The direction of swimming was described by the function h(t), which alternated between +1 and −1 with each reversal (Figure 5B). A Heaviside function, H(h) and the asymmetry parameter, a, characterized the magnitudes of the speeds in the two directions: v0 and a. The CWbias was assumed to be constant (= 0.5) for simplicity.
+Our cell-tracking analysis revealed that the reversal wait-times were Gamma distributed in H. pylori (Figure 5A, also see separate distributions for the two swimming modes in Appendix 3—figure 2). When calculating the wait-times, we excluded the beginning of each cell-trajectory just before the first reversal and the end of each cell-trajectory just after the final reversal. To derive an explicit expression for the diffusivity of asymmetric run-reversers that exhibit Gamma distributed reversal intervals, we preferred to modify a previous approach developed for symmetric run-reversers (Großmann et al., 2016) rather than a more general model (Detcheverry, 2017) – see Appendix 4 for details. Briefly, the velocities of a bacterium that swims at $v_{0}$ μm/s in its slower mode was expressed as: $vt=v_{0}ht1+aHhet$. The direction of swimming was described by the function $h(t)$, which alternated between +1 and −1 with each reversal (Figure 5B). A Heaviside function, $H(h)$ and the asymmetry parameter, $a$, characterized the magnitudes of the speeds in the two directions: $v_{0}$ and $a$. The CWbias was assumed to be constant (= 0.5) for simplicity.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/63936/elife-63936-fig5-v1.jpg)
 
-**Figure 5.:** (A) Experimentally observed wait-time intervals for runs and reversals obey a Gamma distribution (n = 515 samples): the shape and scale parameters were k = 2.92 ± 0.06 and θ = 0.11 ± 0.00, respectively. (B) Cell swims at  μm/s in the puller (slower) mode, and at v0 μm/s in the pusher (faster) mode. The symmetric case is described by v0(1+a)a = 0, where the run and reverse speeds are equal. Cell alignment is described by the unit vector e. (C) The diffusion coefficients predicted from equation 1 are indicated as a function of the asymmetry in speeds (blue curve). An alternate model that assumes exponentially distributed wait-time intervals in asymmetric swimmers under predicted the diffusivity, as shown by the dotted curve (Theves et al., 2013). Symbols indicate coefficients calculated from simulation runs (see Appendix 5). The parameters were based on experimental measurements: mean wait-time = 0.3 s, α = 0.86, and  25 μm/s. v0= = 0.02 sDθ−1 from (Großmann et al., 2016). Diffusion coefficients have been non-dimensionalized with  ( D0=v02/3ωpLovely and Dahlquist, 1975), where  is the mean reversal frequency at the physiological temperature (ωpFigure 4B). (D) Diffusion coefficients were calculated from simulations of cell motility in the absence of a stimulus over a range of a and CWbias values (see Appendix 5 for details). The diffusion coefficients were normalized with . The sum of the mean wait-times (CW and CCW) was fixed at 0.35 s. (D0E) Predicted diffusivity is indicated over a range of typical reversal frequencies. Here, α = 0.86 and  = 0.02 sDθ−1.Figure 5—source data 1.
+**Figure 5.:** (A) Experimentally observed wait-time intervals for runs and reversals obey a Gamma distribution (n = 515 samples): the shape and scale parameters were k = 2.92 ± 0.06 and θ = 0.11 ± 0.00, respectively. (B) Cell swims at $v_{0}$ μm/s in the puller (slower) mode, and at $v_{0}(1+a)$ μm/s in the pusher (faster) mode. The symmetric case is described by a = 0, where the run and reverse speeds are equal. Cell alignment is described by the unit vector e. (C) The diffusion coefficients predicted from equation 1 are indicated as a function of the asymmetry in speeds (blue curve). An alternate model that assumes exponentially distributed wait-time intervals in asymmetric swimmers under predicted the diffusivity, as shown by the dotted curve (Theves et al., 2013). Symbols indicate coefficients calculated from simulation runs (see Appendix 5). The parameters were based on experimental measurements: mean wait-time = 0.3 s, α = 0.86, and $v_{0}=$ 25 μm/s. $D_{\theta}$ = 0.02 s−1 from (Großmann et al., 2016). Diffusion coefficients have been non-dimensionalized with $D_{0}=v_{0}^{2}/3\omega_{p}$ ( Lovely and Dahlquist, 1975), where $\omega_{p}$ is the mean reversal frequency at the physiological temperature (Figure 4B). (D) Diffusion coefficients were calculated from simulations of cell motility in the absence of a stimulus over a range of a and CWbias values (see Appendix 5 for details). The diffusion coefficients were normalized with $D_{0}$. The sum of the mean wait-times (CW and CCW) was fixed at 0.35 s. (E) Predicted diffusivity is indicated over a range of typical reversal frequencies. Here, α = 0.86 and $D_{\theta}$ = 0.02 s−1.
 
-The deviation of the cell from a straight line during a run (or reversal) occurred due to rotational diffusion, described by dθdt=2Dθξ(t). White noise characteristics were ξ(t)=0, and ξ(t)ξ(t+τ)=δ(τ), where Dθ is the rotational diffusion coefficient. Another randomizer of the bacterial walk is the turn angle, ∅, which is the angle between the original direction just before and the new direction just after a reversal. The turn angle is likely influenced by kinematic properties: cell shape, filament bundling dynamics, and the flexibility of the flagellar hook. After taking into account the specific form of the reversal wait-time distribution for H. pylori (Figure 5A), we obtained the following expression for the asymptotic diffusion coefficient from the velocity correlation over long-times:(1)D=v022Dθ[(1+a)2+12 ⋅{1−ωDθ(1−(3ω)3(3ω+Dθ)3)+|⟨cos∅⟩|2ωDθ⋅(3ω)3(3ω+Dθ)3⋅((3ω+Dθ)3−(3ω)3)2(3ω+Dθ)6−|⟨cos∅⟩|2(3ω)6}−(1+a){|⟨cos∅⟩|⋅ωDθ⋅((3ω+Dθ)3−(3ω)3)2(3ω+Dθ)6−|⟨cos∅⟩|2(3ω)6}]
+The deviation of the cell from a straight line during a run (or reversal) occurred due to rotational diffusion, described by $\frac{d\theta}{dt}=\sqrt{2D_{\theta}}ξ(t)$. White noise characteristics were $ξ(t)=0$, and $ξ(t)ξ(t+\tau)=\delta(\tau)$, where $D_{\theta}$ is the rotational diffusion coefficient. Another randomizer of the bacterial walk is the turn angle, $∅$, which is the angle between the original direction just before and the new direction just after a reversal. The turn angle is likely influenced by kinematic properties: cell shape, filament bundling dynamics, and the flexibility of the flagellar hook. After taking into account the specific form of the reversal wait-time distribution for H. pylori (Figure 5A), we obtained the following expression for the asymptotic diffusion coefficient from the velocity correlation over long-times:
 
-The reversal frequency is indicated by ω. The expression correctly reduces to that for the symmetric swimmer (Großmann et al., 2016), for α (=|cos∅|) = 1, and a = 0.
+$$
+D=\frac{v_{0}^{2}}{2D_{\theta}}[\frac{(1+a)^{2}+1}{2} ⋅{1−\frac{\omega}{D_{\theta}}(1−\frac{(3\omega)^{3}}{(3\omega+D_{\theta})^{3}})+\frac{|⟨cos∅⟩|^{2}\omega}{D_{\theta}}⋅\frac{(3\omega)^{3}}{(3\omega+D_{\theta})^{3}}⋅\frac{((3\omega+D_{\theta})^{3}−(3\omega)^{3})^{2}}{(3\omega+D_{\theta})^{6}−|⟨cos∅⟩|^{2}(3\omega)^{6}}}−(1+a){\frac{|⟨cos∅⟩|⋅\omega}{D_{\theta}}⋅\frac{((3\omega+D_{\theta})^{3}−(3\omega)^{3})^{2}}{(3\omega+D_{\theta})^{6}−|⟨cos∅⟩|^{2}(3\omega)^{6}}}]
+$$
 
-As shown in Figure 5C, the diffusion coefficients increased with the asymmetry-parameter, a. As per the predictions, asymmetric run-reversers (a ≠ 0) spread faster than symmetric run-reversers (a = 0). Next, we carried out stochastic simulations of 1000 cells that underwent asymmetric run-reversals with Gamma distributed intervals (see Appendix 5). The diffusion coefficients from the simulations matched predictions from our model that incorporated Gamma distributed wait-times. Having validated our simulations, we estimated the diffusion coefficients for arbitrary CWbias values over varying a. As shown in Figure 5D, the simulated diffuse spread was low when cells covered similar distances in the forward and backward directions, thereby minimizing net displacement. This tended to occur for swimmers with low a values that swam for equal durations in the two directions (CWbias ~ 0.5). For any given a, the diffuse spread increased with the net displacement during a run-reversal, for example, when the swimmer preferred the slower mode much more than the faster mode. The net displacement, and hence, the spread tended to be the highest when the cells spent a greater fraction of the time swimming in the faster mode compared to the slower mode. Thus, in H. pylori, the tendency to spend more time in the faster pusher mode (basal CWbias ~ 0.35, Figure 3A) is advantageous (Figure 5D). This advantage is amplified by increasing pusher speeds relative to the puller speeds. However, a very low basal value of the CWbias is disadvantageous from a chemotaxis perspective. H. pylori appear to respond to attractants by reducing their CWbias (Figure 3C). They would lose their ability to respond to attractants if the pre-stimulus (basal) bias was close to its minimum value (=0). It is possible, therefore, that the basal activity of the chemotaxis network is optimized in asymmetrically run-reversing bacteria to promote higher diffusive spread while retaining the ability to respond to chemical stimuli.
+The reversal frequency is indicated by ω. The expression correctly reduces to that for the symmetric swimmer (Großmann et al., 2016), for α ($=|cos∅|$) = 1, and $a$ = 0.
+
+As shown in Figure 5C, the diffusion coefficients increased with the asymmetry-parameter, $a$. As per the predictions, asymmetric run-reversers ($a$ ≠ 0) spread faster than symmetric run-reversers ($a$ = 0). Next, we carried out stochastic simulations of 1000 cells that underwent asymmetric run-reversals with Gamma distributed intervals (see Appendix 5). The diffusion coefficients from the simulations matched predictions from our model that incorporated Gamma distributed wait-times. Having validated our simulations, we estimated the diffusion coefficients for arbitrary CWbias values over varying $a$. As shown in Figure 5D, the simulated diffuse spread was low when cells covered similar distances in the forward and backward directions, thereby minimizing net displacement. This tended to occur for swimmers with low $a$ values that swam for equal durations in the two directions (CWbias ~ 0.5). For any given $a$, the diffuse spread increased with the net displacement during a run-reversal, for example, when the swimmer preferred the slower mode much more than the faster mode. The net displacement, and hence, the spread tended to be the highest when the cells spent a greater fraction of the time swimming in the faster mode compared to the slower mode. Thus, in H. pylori, the tendency to spend more time in the faster pusher mode (basal CWbias ~ 0.35, Figure 3A) is advantageous (Figure 5D). This advantage is amplified by increasing pusher speeds relative to the puller speeds. However, a very low basal value of the CWbias is disadvantageous from a chemotaxis perspective. H. pylori appear to respond to attractants by reducing their CWbias (Figure 3C). They would lose their ability to respond to attractants if the pre-stimulus (basal) bias was close to its minimum value (=0). It is possible, therefore, that the basal activity of the chemotaxis network is optimized in asymmetrically run-reversing bacteria to promote higher diffusive spread while retaining the ability to respond to chemical stimuli.
 
 Finally, longer durations of runs and reversals helped cells cover larger distances. Thus, the diffusion coefficient was inversely dependent on the run-reversal frequency (Figure 5E). As the reversal frequencies reach a maximum at 37°C (Figure 4B), it is possible that cells at physiological temperatures spread slower in a niche over long times, providing more time for cells to adhere to surfaces.
 
@@ -97,7 +103,7 @@ Earlier works focused exclusively on the effect of chemoeffectors on steady-stat
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/63936/elife-63936-fig6-v1.jpg)
 
-**Figure 6.:** bias and CheY-P.(A) The dependence of motor reversal frequencies in E. coli on the CWbias is unimodal (Montrone et al., 1998), similar to H. pylori (Figure 4B). The symbols indicate experimental data from Montrone et al., 1998. The black curve is a guide to eye. The blue and red arrows indicate the effect of attractants and repellents on the CWbias, respectively. The corresponding changes in the reversal frequency are similar (Δωatt ~ Δωrep). (B) The dependence of switching frequency on CheY-P levels is also unimodal in E. coli (Cluzel et al., 2000). Thus, an attractant as well as a repellent can induce a drop in the frequency.
+**Figure 6.:** (A) The dependence of motor reversal frequencies in E. coli on the CWbias is unimodal (Montrone et al., 1998), similar to H. pylori (Figure 4B). The symbols indicate experimental data from Montrone et al., 1998. The black curve is a guide to eye. The blue and red arrows indicate the effect of attractants and repellents on the CWbias, respectively. The corresponding changes in the reversal frequency are similar (Δωatt ~ Δωrep). (B) The dependence of switching frequency on CheY-P levels is also unimodal in E. coli (Cluzel et al., 2000). Thus, an attractant as well as a repellent can induce a drop in the frequency.
 
 Our model for diffusive spread of motile bacteria indicated that run-reversing bacteria that undergo asymmetric random walks diffuse faster than symmetric run-reversers (Figure 5C). This is expected, as symmetric run-reversals tend to minimize net displacements. Simulations of bacterial diffusion in the absence of stimulants indicated that the diffusive spread is higher in asymmetric run-reversers when the cells spend a greater fraction of the time swimming in the faster mode compared to the slower mode. Thus, the preference for the faster pusher mode (lower CWbias) in H. pylori is advantageous as it helps them spread faster (Figure 5D). However, H. pylori appear to respond to attractants by reducing their CWbias (Figure 3C). A very low value of the basal bias would inhibit the ability to respond to attractants entirely. Hence, we propose that the basal activity of the chemotaxis network is probably tuned to promote higher diffusive spread while optimizing chemotaxis performance. In general, asymmetry in swimming – differences in swimming speeds or differences in the amount of time spent in any one mode or both – may provide evolutionary benefits to run-reversing bacteria by enhancing their spread.
 
@@ -107,38 +113,185 @@ To prevent the cell from tumbling during a reversal, all the flagellar motors in
 
 In V. alginolyticus, asymmetry in swimming speeds has been observed only near bounding surfaces but not in the bulk fluid (Magariyama et al., 2005). A limitation of our method is that it is unsuitable for tracking chemotaxis response dynamics in such species, as the asymmetry is lost whenever the cells migrate away from surfaces. In H. pylori, although, we observed asymmetric speeds in some cells even at a separation of ~200 μm from any bounding surfaces (see Appendix 6), similar to Pseudomonas putida (Theves et al., 2013). Therefore, the asymmetry is unlikely to be a surface-effect in H. pylori. The effect could be due to differences in the flagellar shape and forms (Kinosita et al., 2018) or the swimming gait in the pusher and puller modes (Lele et al., 2016; Liu et al., 2014). It is more likely that the asymmetry in speeds arises due to the differences in the CW and CCW flagellar rotational speeds, as is the case with E. coli – which run and tumble – and Caulobacter cresecentus (Yuan et al., 2010; Lele et al., 2016) – which exhibit symmetric swimming speeds in the pusher and puller modes (Table 1). Such differences in the speeds at which motors rotate CW and CCW depend on the external viscous loads (Yuan et al., 2010; Lele et al., 2016). It is possible therefore, that the asymmetry in H. pylori is also load-dependent; vanishing for longer filament lengths in highly viscous microenvironments or for very short filaments. The asymmetry is further expected to depend sensitively on the expression of the flagellar genes, which is modulated by environmental conditions (Spohn and Scarlato, 1999). The asymmetry was prominently observable in our work with a careful control of experimental conditions (Materials and methods).
 
+**Table 1.**
+ Speed asymmetry across different bacterial species.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Swimming Speed Ratio</th>
+      <th>Motor Speed Ratio</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H. pylori</td>
+      <td>1.5</td>
+      <td>-</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>P. putida</td>
+      <td>2</td>
+      <td>-</td>
+      <td>Theves et al., 2013</td>
+    </tr>
+    <tr>
+      <td>V. alginolyticus</td>
+      <td>1.5</td>
+      <td>-</td>
+      <td>Magariyama et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Burkholderia spp.</td>
+      <td>3.9</td>
+      <td>-</td>
+      <td>Kinosita et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Vibrio fischeri</td>
+      <td>3.4</td>
+      <td>-</td>
+      <td>Kinosita et al., 2018</td>
+    </tr>
+    <tr>
+      <td>C. crescentus</td>
+      <td>1</td>
+      <td>~2</td>
+      <td>Lele et al., 2016; Liu et al., 2014</td>
+    </tr>
+    <tr>
+      <td>E. coli</td>
+      <td>~1.3</td>
+      <td>1.3</td>
+      <td>Yuan et al., 2010; Lele and Berg, 2015</td>
+    </tr>
+  </tbody>
+</table>
+
 The flagellar motors in H. pylori and E. coli share structural similarities and have several orthologous components. The core chemotaxis network in the two species is also similar with the exception of a few enzymes (Lertsethtakarn et al., 2011; Howitt et al., 2011; Lertsethtakarn et al., 2015; Jiménez-Pearson et al., 2005). CheY, in its phosphorylated form, modulates flagellar functions in both species by interacting with components of the flagellar switch (Lertsethtakarn et al., 2011; Lowenthal et al., 2009a; Qin et al., 2017; Lam et al., 2010). Our results suggest that the regulatory function of CheY-P is also similar in the two species, that is, CheY-P binding to the motor increases the probability of CW rotation. If so, then the implications of this finding are significant. Because H. pylori can retrace their paths upon a reversal unlike E. coli, modulation of the rotational bias is bound to undermine chemotaxis when the cell enters the puller mode. Then, the cell would likely need a mechanism to rectify its movements with respect to the source or some type of feedback between the motors and the receptors to successfully migrate in response to chemical gradients. We anticipate that the approaches described in this work will help uncover these mechanisms and identify unknown protein functions. Our approach is extensible to any run-reversing species that exhibit asymmetric swimming speeds, paving the way to study signaling dynamics in other run-reversing bacterial species.
 
 ## Materials and methods
 
-## Strains and cell culturing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. pylori)</td>
+      <td>PMSS1</td>
+      <td>Ottemann Lab</td>
+      <td></td>
+      <td>Arnold et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brucella Broth</td>
+      <td>Millipore Sigma</td>
+      <td>B3051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Columbia agar</td>
+      <td>Thermo Scientific Oxoid</td>
+      <td>CM0331</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Defibrinated Horse Blood</td>
+      <td>Hemostat Laboratories</td>
+      <td>DHB100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal Bovine Serum</td>
+      <td>Gibco</td>
+      <td>10438</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polymixin-B sulfate</td>
+      <td>Alfa Aesar</td>
+      <td>J6307403</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vancomycin hydrochloride</td>
+      <td>Sigma Aldrich</td>
+      <td>V1130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-Cyclodextrin</td>
+      <td>Sigma Aldrich</td>
+      <td>C4767</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urea</td>
+      <td>Fisher Scientific</td>
+      <td>BP169</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and cell culturing
 
 All the work was done with H. pylori PMSS1. Cultures of microaerophilic H. pylori were grown in an incubator with controlled temperature and CO2 environment (Benchmark Incu-Shaker Mini CO2). The incubator was maintained at 10% CO2, 37°C. Fresh colonies were streaked out before each experiment on Columbia agar plates supplemented with 2.5 units/mL Polymixin-B, 10 μg/mL Vancomycin, 2 mg/mL β-cyclodextrin, and 5% v/v defibrinated horse blood. Colonies appeared on the horse-blood agar plates within 3–4 days and were picked with the aid of sterilized cotton-tipped applicators. The cells were then inoculated in 5 mL of BB10 (90% Brucella Broth + 10% Fetal Bovine Serum) to grow overnight cultures. No antibiotics were added to the liquid cultures as per previous protocols (Machuca et al., 2017; Huang et al., 2017). Overnight cultures were grown for ~16 hr to an OD600∼0.25–0.5 and diluted to OD600∼0.1 in fresh BB10. The day cultures were grown to an OD600∼0.125–0.15 in the shaker incubator set at 170 rpm under 10% CO2 and at 37°C. Prior to imaging, the cells were diluted in a motility buffer (MB- 0.01 M phosphate buffer, 0.067 M NaCl, and 0.1 mM EDTA, pH∼7.0) at ~6–7% v/v (BB10/MB).
 
-## Motility assays
+### Motility assays
 
 Cells were imaged in a culture-dish (Delta T system, Bioptechs Inc) on a phase-contrast microscope (Nikon Optiphot) equipped with a 10X phase objective. The dish was kept covered with a lid that was not airtight and that allowed a part of the top liquid surface to be exposed to air. Videos were recorded with a CCD camera (IDS model UI-3240LE) at 45 frames per second. Unless otherwise specified, the objective was focused ~5–20 μm away from the bottom surface of the culture-dish. All experiments were performed at 37°C unless otherwise noted.
 
-## Temperature control
+### Temperature control
 
 The microscope was housed inside a temperature control chamber (ETS Model 5472, Electro-Tech Systems, Inc), which enabled precise control over the temperature during the experiments. The grown cultures were stored in flasks within the chamber. Prior to each measurement, ~50 μL of cells were diluted in ~1.3–1.5 mL of MB. The entire mixture was then transferred to the culture dish and covered with the lid. As the cell density was low (~4 × 106 cells/mL) and as the liquid surface was exposed to air, oxygen gradients were minimized; the cells remained motile in MB for over an hour.
 
 In the case of the temperature variation experiments, the cells were visualized in the dish ~5–10 min after each change in the temperature. Once recording was completed, the contents of the culture dish were emptied. The dish was then flushed with ethanol followed by copious amounts of DI water outside the chamber. The dish was then reused for further experiments. The whole cycle was repeated each time the temperature was changed.
 
-## Chemoattractant response
+### Chemoattractant response
 
 We filled the culture dish with 20 mM urea (Fisher Chemical) in MB at 37°C, which served as an attractant. In the control case, no urea was added to the MB in the dish. We pipetted 50 μL of the cell culture into the dish prior to imaging. Videos were recorded and analysis was performed on the videos once the hydrodynamic flows visually subsided (~30 s).
 
-## Data analysis
+### Data analysis
 
 The low cell density enabled us to employ particle-tracking methods to record the swimming trajectory of each cell (Ford et al., 2017). All the videos were analyzed with custom-written MATLAB codes based on centroid-detection-based particle-tracking routines (Crocker and Grier, 1996). The experimental data shown in Figure 3C,D and Figure 4 were obtained from two biological and multiple technical replicates. All other data were collected from five or more biological and multiple technical replicates.
 
-## CWbias calculations
+### CWbias calculations
 
 Recorded videos were visually scanned with ImageJ (NIH) to confirm the number of reversals for each cell. The distance traveled between any two reversals was identified as a segment and numbered (see Figure 1A). The speeds were binned as per the segments, yielding n+1 bins for n reversals. A reversal changes the mode of motility between the pusher and the puller mode. On the other hand, a 180° turn by the cell maintains the same mode. Each reversal was therefore confirmed visually to distinguish between reversals; 180° turns were rarely observed. In cells that swam near surfaces, the pusher and puller modes were readily determined as described in Figure 2. In cells that did not swim near surfaces, we compared the mean speeds, which alternated as shown in Figure 1D. All the alternating fast speed-bins were labeled as pushers; alternating low speed-bins were labeled as pullers. The video frames corresponding to the puller bins were labeled as puller frames.
 
-To determine the CWbias, cells that were observed for at least 0.5 s were retained for analysis. CWbias was calculated as the fraction of the time that a cell swam in the puller (slower) mode, which corresponds to CW rotation of the filament. To do this, the number of frames in which the ith cell swam in the puller mode (i.e. puller frames), NiCW, was divided by the total frames over which the cell was observed, Ni, to yield:CWbias,i=NiCWNi
+To determine the CWbias, cells that were observed for at least 0.5 s were retained for analysis. CWbias was calculated as the fraction of the time that a cell swam in the puller (slower) mode, which corresponds to CW rotation of the filament. To do this, the number of frames in which the ith cell swam in the puller mode (i.e. puller frames), $N_{i}^{CW}$, was divided by the total frames over which the cell was observed, $N_{i}$, to yield:
 
-The error associated with the calculation of CWbias,i values decreases with increasing Ni. But, different cells were observed for different durations; hence the CWbias,i values were allocated weights that corresponded to their respective durations: W˙i= Ni∑ Ni. Mean bias was determined as:CWbias=∑ W˙iCWbias,i
+$$
+CW_{bias,i}=\frac{N_{i}^{CW}}{N_{i}}
+$$
+
+The error associated with the calculation of $CW_{bias,i}$ values decreases with increasing $N_{i}$. But, different cells were observed for different durations; hence the $CW_{bias,i}$ values were allocated weights that corresponded to their respective durations: $W˙_{i}=\frac{N_{i}}{\sumN_{i}}$. Mean bias was determined as:
+
+$$
+CW_{bias}=\sumW˙_{i}CW_{bias,i}
+$$
 
 Reversal frequency was determined in a similar manner.

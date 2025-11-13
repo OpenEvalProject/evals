@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.27793.001 MKLP2, a kinesin-6, has critical roles during the metaphase-anaphase transition and cytokinesis. Its motor domain contains conserved nucleotide binding motifs, but is divergent in sequence (~35% identity) and size (~40% larger) compared to other kinesins. Using cryo-electron microscopy and biophysical assays, we have undertaken a mechanochemical dissection of the microtubule-bound MKLP2 motor domain during its ATPase cycle, and show that many facets of its mechanism are distinct from other kinesins. While the MKLP2 neck-linker is directed towards the microtubule plus-end in an ATP-like state, it does not fully dock along the motor domain. Furthermore, the footprint of the MKLP2 motor domain on the MT surface is altered compared to motile kinesins, and enhanced by kinesin-6-specific sequences. The conformation of the highly extended loop6 insertion characteristic of kinesin-6s is nucleotide-independent and does not contact the MT surface. Our results emphasize the role of family-specific insertions in modulating kinesin motor function.
+MKLP2, a kinesin-6, has critical roles during the metaphase-anaphase transition and cytokinesis. Its motor domain contains conserved nucleotide binding motifs, but is divergent in sequence (~35% identity) and size (~40% larger) compared to other kinesins. Using cryo-electron microscopy and biophysical assays, we have undertaken a mechanochemical dissection of the microtubule-bound MKLP2 motor domain during its ATPase cycle, and show that many facets of its mechanism are distinct from other kinesins. While the MKLP2 neck-linker is directed towards the microtubule plus-end in an ATP-like state, it does not fully dock along the motor domain. Furthermore, the footprint of the MKLP2 motor domain on the MT surface is altered compared to motile kinesins, and enhanced by kinesin-6-specific sequences. The conformation of the highly extended loop6 insertion characteristic of kinesin-6s is nucleotide-independent and does not contact the MT surface. Our results emphasize the role of family-specific insertions in modulating kinesin motor function.
 
 ## Introduction
 
@@ -34,27 +34,250 @@ The success of mitosis depends on the intricate timing, precise localisation and
 
 Little is known about the molecular and mechanistic properties of MKLP2. A related kinesin family member, the kinesin-6 MKLP1 - part of the centralspindlin complex that is also essential for cytokinesis - is a plus-end directed motor (Nislow et al., 1992), as is Kif20B, another kinesin-6 (Abaza et al., 2003). The centralspindlin holocomplex has anti-parallel microtubule (MT) bundling capability (Davies et al., 2015) consistent with its localisation and function in the spindle midzone. Functional diversification within the kinesin superfamily is derived in part from variation within kinesin motor domain itself. Kinesin-6s are particularly intriguing in this context because they are up to ~40% larger than the canonical Kin1 motor domain (Figure 1A) due to a number of unique loop insertions. Within the mammalian MKLP2 motor domain sequence, these unique features include a ~ 60 residue N-terminal extension, insertions in loop 2 (18 aa), loop 6 (99 aa), loop 8 (5 aa) and loop 12 (6 aa), along with an extended non-canonical neck-linker; there is also a ~ 40 aa insert between this neck linker region and MKLP2’s coiled coil. However, the effects of these modifications on motor structure and function are unknown.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig1-v3.jpg)
+
+**Figure 1.:** (A). Domain organisation of MKLP2 and Kif5b (Kin1). Residues at domain boundaries are shown; the construct characterised in this study is indicated by red numbers. The motor domains are coloured in dark blue and green for MKLP2 and Kin1, respectively, and this colour scheme is used throughout. (B) MT-activated steady state ATPase velocity plotted as a function of [tubulin] for MKLP2 1–520 (grey) or 25–520 (blue). Data were fit to a Michaelis Menten kinetic (dashed grey, solid blue curves) yielding values for kcat and K0.5,MT shown (inset). (C) Kinetics of binding of 2’ deoxy 3’ mant ATP (2’dmT) to MKLP2-MD (25-520). The fluorescence increase consists of a fast (solid circles) and slow (open circles) phase. The rate constants for the two phases for a complex of MKLP2 with MTs (blue) showed a dependence on [2’dmT] that is very similar to those in the absence of MTs (grey). In both the presence/absence of MTs, the rate constant for the faster phase varied linearly with [2’dmT], defining apparent second order rate constants and y intercepts that are very similar to each other. (D) Kinetics of binding of 2’ deoxy mant ADP (2’dmD) to MKLP2-MD (25-520). As in panel C, nucleotide free MKLP2 (grey) and nucleotide free MKLP2:MT (blue) were mixed with 2’dmD. (E) MT binding affinities of MKLP2-MD with different nucleotides. Kds were determined by fitting to a quadratic equation. Two technical replicates for 7 data points of the NN- and ADP- states were performed. Where technical replicates were performed, the average and SEM are plotted, otherwise individual data points are shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Fluorescence transient for the release of 2’ deoxy mant ADP (2’dmD) from MKLP2-MD in the presence of high concentrations of unlabelled ADP in the absence of MTs. The data are plotted in blue with the fit to a single exponential decay shown in yellow. The inset depicts a similar experiment on a 20-fold longer time scale, demonstrating that larger, slower kinetic components are not present in these data.
+
 Visualisation of the kinesin-MT interaction and its sensitivity to nucleotide provides a structural framework for understanding motor functional output. Cryo-EM is an essential structural method for characterising kinesin-MT complexes and has, to date, revealed a mechanistic consensus for plus-end directed kinesins (Atherton et al., 2014; Shang et al., 2014; Goulet et al., 2014). To address the deficit in molecular understanding of the MKLP2 mechanism, we have determined cryo-EM reconstructions and calculated atomic models of MT-bound MKLP2 in different nucleotide states. These structures provide a visualisation of the conformations that functional MKLP2 undergoes, and which are blocked by small molecule inhibitors (Tcherniuk et al., 2010; Labrière et al., 2016). These structures, supported by biochemical and biophysical characterisations, reveal many atypical properties and behaviours of the MKLP2 motor domain. Strikingly, these noncanonical properties are superimposed on more generally conserved ATP-dependent subdomain movements within the motor domain. MKLP2 motor domain binding on the MT surface is shifted compared with other kinesins, and additional contacts between the MT and MKLP2 insertions in loops 2, 8 and 12 are formed. Additionally, while the MKLP2 neck-linker is directed towards the MT plus end in an ATP-like state enabling formation of the cover-neck bundle, the neck-linker does not fully dock against the motor core and exhibits more flexibility than is seen in transport motors such as Kin1 and kinesin-3 (Kin3). Moreover, the characteristic kinesin-6 large insertion in loop6 forms a discrete additional subdomain protruding from the MKLP2 motor core and away from the MT. Our characterisation provides a context in which the functional contribution of this motor in mitosis can be evaluated and offers a mechanistic framework in which other atypical members of the kinesin superfamily can be considered.
 
 ## Results
 
-## The biochemical properties of the MKLP2 motor domain differ from those of other kinesins
+### The biochemical properties of the MKLP2 motor domain differ from those of other kinesins
 
 We expressed monomeric mammalian MKLP2 motor domain constructs 1–520 and 25–520 and measured their steady-state MT-stimulated ATPase activity (Figure 1B). Fits of the data to a Michaelis Menten function reveal values of kcat = 4.34 ± 0.14 s−1 and K0.5,MT = 0.93 ± 0.12μM for 1–520 and kcat = 4.38 ± 0.20 s−1 and K0.5,MT = 1.07 ± 0.18μM for 25–520, showing that the presence or absence of the extended MKLP2 N-terminus does not affect steady state ATPase parameters. MT binding stimulates kcat >1000 fold (Woehlke et al., 1997; Hackney, 1988; Gilbert et al., 1995) to levels similar to the mitotic kinesin-5 (Kin5) and about 10-fold slower than the transport kinesins Kin1 or Kin3 (Cochran et al., 2004) (Table 1). Since the residues 1–25 are intrinsically disordered we used the 25–520 construct - which has a better yield during recombinant protein expression - for all subsequent assays. We refer to this 25–520 construct as MKLP2-MD.
+
+**Table 1.**
+ Kinetic and affinity data of monomeric Kinesin-1,–3, and −5 compared to MKLP2-MD.A summary of steady state ATPase activities and MT affinities of monomeric Kin1 (Atherton et al., 2014; Woehlke et al., 1997; Hackney, 1988; Gilbert et al., 1995; Ma and Taylor, 1995; Rosenfeld et al., 1996; Nitta et al., 2004; Gigant et al., 2013), whose structures were used to compared with MKLP2, as well as Kin3 (Nitta et al., 2004). Kin5’s MT-stimulated ATPase activity has similar values as MKLP2 (Cochran et al., 2004; Cochran et al., 2006).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Monomeric motor</th>
+      <th colspan="2">MT-stimulated ATPase</th>
+      <th colspan="4">MT affinity; Kd (μM)</th>
+    </tr>
+    <tr>
+      <th>K0.5, MT (μM)</th>
+      <th>kcat (S−1)</th>
+      <th>ADP</th>
+      <th>NN</th>
+      <th>ADP.AlFx</th>
+      <th>AMPPNP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MKLP2-MD</td>
+      <td>1.07 ± 0.18</td>
+      <td>4.38 ± 0.20</td>
+      <td>0.363 ± 0.057</td>
+      <td>0.043 ± 0.002</td>
+      <td>0.355 ± 0.073</td>
+      <td>0.043 ± 0.035</td>
+    </tr>
+    <tr>
+      <td>Kin1 (Kif5a/b)</td>
+      <td>12.7 ± 4.0 (Atherton et al., 2014) 26.0 ± 5.8 (Rosenfeld et al., 1996)</td>
+      <td>34.2 ± 5.7 (Atherton et al., 2014) 43.6 ± 7.8 (Rosenfeld et al., 1996) 50.3 ± 1.6 (26)</td>
+      <td>20.8 ± 2.4 (Rosenfeld et al., 1996) 2.0 ± 0.3 (Gigant et al., 2013)</td>
+      <td>n.a.</td>
+      <td>1.4 ± 0.2 (Rosenfeld et al., 1996) 0.3 ± 0.006 (Gigant et al., 2013)</td>
+      <td>1.1 ± 0.1 (Rosenfeld et al., 1996) 0.045 ± 0.012 (Gigant et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>Kin3 (Kif1a)</td>
+      <td>0.0537 ± 0.0057 (Atherton et al., 2014)</td>
+      <td>43.4 ± 1.0 (Atherton et al., 2014)</td>
+      <td>0.0068 ± 0.0025 (Nitta et al., 2004)</td>
+      <td>n.a.</td>
+      <td>0.0059 ± 0.0015 (Nitta et al., 2004)</td>
+      <td>0.0042 ± 0.0013 (Nitta et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>Kin5 (Eg5)</td>
+      <td>4.5 (Cochran et al., 2004) 0.29 ± 0.02 (Cochran et al., 2006)</td>
+      <td>2.9 (Cochran et al., 2004) 5.5 ± 0.1 (Cochran et al., 2006)</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+    </tr>
+  </tbody>
+</table>
+
+_n.a.: not available._
 
 To further dissect the MKLP2-MD ATPase cycle and its dependence on MTs, the dynamic interaction between MKLP2-MD and either 2’deoxy 3’mant ATP (2’dmT) or 2’deoxy 3’mant ADP (2’dmD) in the presence and absence of MT was measured (Figure 1C,D). In each case, the nucleotide binding transients consisted of fast and slow phases. The faster phase varies linearly with [nucleotide], implying that this is a readout of the initial binding of nucleotide to the active site; the slower phase shows little dependence on [nucleotide], implying that it measures a subsequent isomerization step. For 2’dmT (Figure 1C), rates in the presence and absence of MT are nearly identical (including Y intercept), implying that – unlike e.g. Kin-1 or Kin-5 – the kinetics of binding 2’dmT to MKLP2-MD are essentially independent of MTs. Binding of 2’dmD produces similar behaviour (Figure 1D), with an approximately two-fold increase in the apparent second order rate constant for 2’dmD binding. Extrapolation of the linear fit to the origin defines an apparent 2’dmD dissociation rate constant, and in other kinesins, such plots typically go through the origin in the absence of MTs, implying tight ADP binding within the error of the measurement (Hackney, 1988; Gilbert et al., 1995; Cochran et al., 2004; Ma and Taylor, 1995). However, as is evident from Figure 1D, the corresponding plot for MKLP2-MD intercepts the y axis well above the origin. Although this is an indirect way of calculating the ADP dissociation rate constant, it implies that the interaction of ADP with MKLP2 is unlike that of other kinesins. In order to directly examine the kinetics of ADP release from MKLP2-MD in the absence of MTs, we formed a complex of MKLP2-MD:2’dmD and mixed it in the stopped flow with a large excess of unlabelled ADP. Figure 1—figure supplement1 shows that the resulting fluorescence decrease, which reflects 2’dmD dissociation, fits a single exponential process with rate constant of 51.9 ± 0.1 s−1, i.e. the rate of ADP release from MKLP2-MD in the absence of MTs is unusually high. Taken together, these data suggest that there is a relative uncoupling of allosteric communication between the MT binding and catalytic sites in MKLP2-MD compared to other kinesins that have been described (Cochran et al., 2004; Ma and Taylor, 1995).
 
 The binding affinity of MKLP2-MD to MTs was measured as a function of nucleotide state by a co-sedimentation assay, using a fixed [MKLP2-MD] and a range of [MT]. Plots of fraction of bound MKLP2-MD versus [MT] are depicted in Figure 1E. These were fit to a quadratic function assuming a 1:1 motor:tubulin dimer stoichiometry to yield apparent dissociation constants (Figure 1E; Table 1). Like other kinesin family members (Table 1) (Atherton et al., 2014; Cochran et al., 2004; Rosenfeld et al., 1996; Nitta et al., 2004; Gigant et al., 2013; Cochran et al., 2006), MT affinity of MKLP2-MD is modulated by the state of the catalytic site, with binding in the absence of nucleotide (NN) or presence of AMPPNP demonstrating a higher affinity than that with ADP or ADP.AlFx (Table 1). In marked contrast to other kinesins, however, the ADP state of MKLP2-MD - which usually represents the kinesin weak binding state (Rosenfeld et al., 1996; Gigant et al., 2013; Crevel et al., 1996) – demonstrates a relatively high affinity. Thus, the difference in affinity between nucleotide states that in other kinesins are ‘strong’ binding (NN, AMPPNP) and ‘weak’ binding (ADP) is only about 8.5-fold. Overall, MKLP2-MD associates with MTs relatively strongly throughout its ATPase cycle. Together, these results provide additional evidence of the non-canonical properties of the MKLP2-MD mechanism.
 
-## Conserved nucleotide-dependent subdomain rearrangements provides a structural framework for MKLP2 divergence
+### Conserved nucleotide-dependent subdomain rearrangements provides a structural framework for MKLP2 divergence
 
 To visualise the MKLP2-MD (Figure 2A) and provide insight into these unusual biochemical properties, we calculated MT-bound MKLP2-MD reconstructions with different nucleotides bound: (1) ADP; (2) no nucleotide (NN) using apyrase treatment; (3, 4) ATP-like analogues (AMPPNP and ADP.AlFx) (Figure 2—figure supplement 1). Our ability to determine an ADP-bound structure highlights the tighter association of this motor with MTs throughout its ATPase cycle and is consistent with the biochemical data (Figure 1E). The asymmetric unit of all these reconstructions is the MKLP2 motor domain bound to an αβ-tubulin dimer within the MT (Figure 2B), which shows a resolution gradient between the MT and bound MKLP2 (Figure 2—figure supplement 1; Figure 2—figure supplement 2); for interpretation of MKLP2-MD mechanochemistry, reconstructions were filtered according to the local resolution of the motor domain. To facilitate interpretation of the cryo-EM density, we calculated comparative models for each nucleotide state and docked them into the density using flexible fitting (Table 2, Figure 2—figure supplement 3, Figure 2—figure supplement 4). In addition, multiple loop conformations were generated and clustered to represent loops with ambiguous fit. This yielded a set of models (Table 2; Figure 2—figure supplement 4) that show nucleotide-dependent conformational changes of MT-bound MKLP2 including the conformation and variation of the MKLP2-specific inserts (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig2-v3.jpg)
+
+**Figure 2.:** (A). The MKLP2-MD has multiple loop inserts compared to Kin1. The Kin1 MD-ADP.AlFx structure (PDB: 4HNA) is shown on the left. Our MKLP2-MD-ADP.AlFx model is shown on the right, with its specific loop inserts coloured and labelled in pink. The 25–520 construct contains 31 extra residues at its N-terminus compared to Kin1, while its C-terminus ends at an equivalent length. (B) The asymmetric unit of the MKLP2-MD-ADP.AlFx MT-bound cryo-EM reconstruction (grey transparent density) with docked MKLP2-MD model in blue, α-tubulin model in light grey and β-tubulin model in dark grey. MKLP2-MD and tubulin secondary structure elements at the interface are labelled. (C and D) Subdomain rearrangements in Kin1 crystal structures (C) and MKLP2-MD (D) viewed towards the MT plus end. Subdomains for kinesin-1 and MKLP2-MD are assigned and coloured based on Cao et al (Cao et al., 2014). (C) Kinesin-1: left, ADP (PDB: 1BG2); middle, NN + tubulin (PDB: 4LNU); right ADP.AlFx +tubulin (PDB: 4HNA). (D) The MKLP2-MD models are shown within cryo-EM density also coloured by subdomain. For each nucleotide-dependent transition, subdomain rotations for the P-loop and SwitchI/II subdomains are shown in degrees relative to the tubulin binding subdomain, which remains static in all states. Subdomain movements between Kin1 ADP and NN states (indicated in light text) are not directly comparable to their MKLP2-MD counterparts, because the Kin1-ADP structure is not tubulin-bound and has an atypical tubulin-binding subdomain conformation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A-D) Overall resolutions of each reconstruction were estimated from 0.143 criteria of the FSCtrue curves calculated according to the gold-standard noise-substitution method (Chen et al., 2013); (A) MKLP2-MD-ADP-MT, (B) MKLP2-MD-NN-MT, (C) MKLP2-MD-ADP.AlFx-MT D) MKLP2-MD-AMPPNP-MT. (E–H) Local resolutions in the asymmetric unit of each reconstruction were estimated using the blocres program implemented in Bsoft (Cardone et al., 2013), and are depicted as slices through the reconstruction with the comparative models docked. These show generally higher resolutions for tubulin and regions of the MKLP2-MD proximal to tubulin; (E) MKLP2-MD-ADP-MT, (F) MKLP2-MD-NN-MT, (G) MKLP2-MD-ADP.AlFx-MT, (H) MKLP2-MD-AMPPNP-MT. Each reconstruction is coloured using the most individually informative color range. (I–L) Zoomed in view of the nucleotide pocket in I) MKLP2-MD-ADP, (J) MKLP2-MD-NN, (K) MKLP2-MD-ADP.AlFx, (L) MKLP2-MD-AMPPNP reconstructions. Density, represented as mesh, <8 Å away from the model’s nucleotide is shown and density <5 Å away is coloured in green. In the case of the MKLP2-MD-NN, the ADP of the MKLP2-MD-ADP model is shown as translucent sticks after the two models were superimposed, reflecting the absence of density for nucleotide in the MKLP2-MD-NN reconstruction consistent with our sample preparation procedures.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Cryo-EM density for the central region of α-tubulin in the MKLP2-MD ADP.AlFx reconstruction after a B-factor of −200 is applied to 4.2 Å to reflect local resolution estimates (as shown in Figure 2—figure supplement 1). Beta-strand separation and helical pitch are resolved, consistent with a resolution in this region of <4.5 Å.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** The first step was a data preparation stage, involving generation and selection of MKLP2-MD homology models (described in detail in methods), and appropriate segmentation of the maps to avoid model biases. Second, a pre-flexible fitting refinement stage was used to identify poor fitting loops using local cross-correlation calculations (Figure 2—figure supplement 4), and to generate and select better fitting loops. In the third stage, flexible fitting was performed in a hybrid manner, combining results from Flex-EM and iMODFIT as guided by local cross-correlation calculations for secondary structure elements. Finally, docking was used to predict the MKLP2-MD-tubulin interface, and multiple loop conformations were calculated to represent regions of ambiguous density.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** Local cross-correlation scores were calculated for (A) MKLP2-MD-ADP (B) MKLP2-MD-NN (C) MKLP2-MD-ADP.AlFx (D) MKLP2-MD-AMPPNP models using SMOC scoring in TEMPy. SMOC scores were sequentially calculated for homology models (light grey), loop refined models (dark grey), and the final flexibly fitted models (blue) to represent progression in model fitting. Exemplar SCCC scores for flexible fits of SSEs in MKLP2 as shown in cut-away views of the E) MKLP2-MD-ADP, (F) MKLP2-MD-NN, (G) MKLP-MD-ADP.AlFx, (H) MKLP2-MD-AMPPNP reconstructions, with density in mesh and the corresponding fitted models colored according to normalised SCCC score as a measure of local fit quality for individual secondary structural elements. Secondary structural elements with poor density at density at conservative thresholds, such as loop12 shown for the AMPPNP model, are represented where possible with clusters of multiple solutions to reflect the uncertainty in their conformational modelling or are removed where this is not possible.
+
+**Table 2.**
+ MKLP2 Homology modelling and validation.Columns 2–3 show the list of PDB IDs that were used as templates for specific structural regions of each MKLP2 nucleotide state (4LNU (Cao et al., 2014), 4HNA (Gigant et al., 2013), 4OZQ (Arora et al., 2014), 1VFV (Nitta et al., 2004), 3GBJ and 4Y05 are structures from the Structural Genomics Consortium). Columns 4–5 show the overall QMEAN scores calculated before, and after refinement and show that model quality is maintained following refinement. Columns 6–7 show the global cross-correlation scores before and after refinement.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Nucleotide state</th>
+      <th colspan="2">Templates used for homology modelling</th>
+      <th colspan="2">QMEAN scores</th>
+      <th colspan="2">Global Cross-correlation scores</th>
+    </tr>
+    <tr>
+      <th>MKLP2 Structure</th>
+      <th>Template</th>
+      <th>Homology Model</th>
+      <th>Refined Model</th>
+      <th>Homology Model</th>
+      <th>Refined Model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">ADP</td>
+      <td>Main template</td>
+      <td>3GBJ</td>
+      <td rowspan="4">0.636</td>
+      <td rowspan="4">0.623</td>
+      <td rowspan="4">0.908</td>
+      <td rowspan="4">0.931</td>
+    </tr>
+    <tr>
+      <td>Helix α4, helix α5, loop 8</td>
+      <td>4LNU</td>
+    </tr>
+    <tr>
+      <td>Helix α4/loop 12</td>
+      <td>4OZQ</td>
+    </tr>
+    <tr>
+      <td>Loop 2</td>
+      <td>4Y05</td>
+    </tr>
+    <tr>
+      <td rowspan="4">NN</td>
+      <td>Main template</td>
+      <td>4LNU</td>
+      <td rowspan="4">0.669</td>
+      <td rowspan="4">0.663</td>
+      <td rowspan="4">0.913</td>
+      <td rowspan="4">0.930</td>
+    </tr>
+    <tr>
+      <td>Helix α4/loop 12</td>
+      <td>4OZQ</td>
+    </tr>
+    <tr>
+      <td>Loop 2</td>
+      <td>4Y05</td>
+    </tr>
+    <tr>
+      <td>Loop 5</td>
+      <td>3GBJ</td>
+    </tr>
+    <tr>
+      <td rowspan="4">ADP.AlFx</td>
+      <td>Main template</td>
+      <td>4HNA</td>
+      <td rowspan="4">0.671</td>
+      <td rowspan="4">0.689</td>
+      <td rowspan="4">0.860</td>
+      <td rowspan="4">0.890</td>
+    </tr>
+    <tr>
+      <td>Helix α4/loop 12</td>
+      <td>4OZQ</td>
+    </tr>
+    <tr>
+      <td>Loop 2</td>
+      <td>4Y05</td>
+    </tr>
+    <tr>
+      <td>Loop 5</td>
+      <td>3GBJ</td>
+    </tr>
+    <tr>
+      <td rowspan="4">AMPPNP</td>
+      <td>Main template</td>
+      <td>1VFV</td>
+      <td rowspan="4">0.658</td>
+      <td rowspan="4">0.679</td>
+      <td rowspan="4">0.925</td>
+      <td rowspan="4">0.943</td>
+    </tr>
+    <tr>
+      <td>Helix α4, helix α5, loop 8</td>
+      <td>4LNU</td>
+    </tr>
+    <tr>
+      <td>Helix α4/loop 12</td>
+      <td>4OZQ</td>
+    </tr>
+    <tr>
+      <td>Loop 2</td>
+      <td>4Y05</td>
+    </tr>
+  </tbody>
+</table>
+
 These structures show that the overall organisation of MKLP2-MD is similar compared to other kinesins, with the major contact site between motor and MT being centred over the tubulin intradimer interface (Figure 2B). The coordinated conformational changes that occur in Kin1 in response to MT and nucleotide binding have been described in terms of three independently articulated subdomains that move with respect to each other during the MT-bound ATPase cycle (Shang et al., 2014; Cao et al., 2014): the tubulin-binding subdomain, the Switch I/II subdomain and the P-loop subdomain (Figure 2C). This structural simplification is useful in describing global rearrangements in the motor domain. Our reconstructions demonstrate that the overall features of nucleotide-dependent subdomain movement described for Kin1 also apply to MKLP2 (Figure 2D; Video 1), albeit the comparison is incomplete given the lack of a tubulin/MT-bound Kin1 ADP structure. In the transition from ADP-bound to NN structures (Figure 2D, left to middle), the MKLP2 Switch I/II and P-loop subdomains both rotate away from each other slightly and relative to the static tubulin-binding domain. In the transition from the NN to ADP.AlFx conformations (Figure 2D, middle to right), both domains rotate towards the catalytic site, with the rotation of the P-loop subdomain being greater than the Switch I/II subdomain. This supports the idea that these subdomain movements are a conserved facet of kinesin mechanochemistry even amongst motors with highly distinct functions. To determine how MKLP2’s divergent mechanochemistry functionally harnesses these subdomain movements, and to further characterise MKLP2’s differences compared to other kinesins, we examined the response of different regions of the MT-bound MKLP2-MD in different nucleotide states.
 
-## Atypical response of MKLP2 catalytic site to nucleotide
+![Video 1.](https://cdn.elifesciences.org/articles/27793/elife-27793-video1.mp4.jpg)
+
+**Video 1.:** The organisation of kinesin subdomains is illustrated within the MKLP2-MD-ADP.AlFx model, with cryo-EM density shown as colored mesh and the model as colored ribbon (Switch I/II subdomain, blue, P-loop subdomain, orange, Tubulin-binding subdomain magenta, α-tubulin, light grey and β-tubulin, dark grey). ADP.AlFx nucleotide is shown as yellow ball-and-stick representation; nucleotides and paclitaxel have been removed from the tubulin model for clarity. Also for clarity, density mesh for loop6 is not colored. A clipping plane is moved though the MD to show the boundaries of the subdomains, the model is rotated, and the cryo-EM density and the tubulin model are removed for a clearer view of the tubulin-binding subdomain. Finally, the colour scheme is changed to that used in the majority of figures; the MKLP2-MD-ADP.AlFx model is in navy blue except for the colored key structural elements.
+
+### Atypical response of MKLP2 catalytic site to nucleotide
 
 At the MKLP2-MD catalytic site, the nucleotide-dependent movement of three conserved, mobile elements that lie at the junction of the three subdomains can be tracked: (1) the P-loop (brown); (2) loop9 (yellow, contains Switch I); (3) loop 11 (red, contains Switch II) (Figure 3, Video 2). The N-terminal half of helix-α4 lies at the back of the nucleotide-binding site and provides a structural link to the MT binding interface. These elements are sensors of the nucleotide present in the active site and also participate in the conformational response of the motor domain to nucleotide.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig3-v3.jpg)
+
+**Figure 3.:** View of the MKLP2-MD nucleotide binding pocket showing nucleotide-dependent transitions in helix-α4, P-loop (brown), loop9 (yellow) and loop11 (red). In the ADP state (left), density corresponding to ADP is visible and connected to the P-loop, while in the NN state (middle), density for nucleotide is no longer present (arrowhead). In the ADP.AlFx state, a hydrolysis-competent ‘closed’ nucleotide pocket conformation is observed, loop11 becomes fully ordered with a single helical turn contacting α–tubulin H3’ (arrow), and loop9 forms an ordered β-hairpin which contacts the nucleotide (arrowhead).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Sequence alignment of important regions at the nucleotide pocket for kinesin-6 MKLP2 and representative members from other Kin1/3/4/5 for which X-ray structures are available. Residue letters are coloured according to their properties according to the Clustal X scheme (Larkin et al., 2007). Information on consensus, conservation and secondary structure is shown above the alignments. Sequence numberings for Kif5B (Kin1, green) and MKLP2 (kinesin-6, blue) are shown adjacent to the secondary structure schematics. Highly conserved/similar kinesin residues are boxed in light blue, whereas highly conserved kinesin residues which have diverged are boxed in black. The signature kinesin switch I and II sequences are indicated. (B) The nucleotide pocket of the X-ray structure of tubulin-bound Kin1 in the presence of ADP.AlFx (PDB 4HNA, [Gigant et al., 2013]). The position of the switch I/II sequences are annotated in cyan, whilst those that have diverged in MKLP2 are shown in sticks and annotated in black, in format Kin1 amino-acid, Kin1 amino-acid number, mouse MKLP2 amino-acid. (C–E) The nucleotide binding regions in the NN states of (C) kinesin-6 MKLP2, (D) Kin1 Kif5a and (E) Kin3 Kif1A (Atherton et al., 2014) are shown in their corresponding experimental densities (grey density for MKLP2-MD, green densities for Kin1 and Kin3). Arrows indicate full extension of helix-α4’s N-terminus in this state and arrowheads indicate formation of a single-turn helix in loop11 for Kin3 and Kin1 that contacts the MT, in contrast to MKLP2 where these regions are less ordered.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A). The NC and PC in Kin1 ADP (PDB: 1BG2), NN (PDB: 4LNU) and ADP.AlFx crystal structures (PDB: 4HNA). With ADP, the NC is closed (loop11 contacts the P-loop) while the PC is open (loop11 does not contact helix-α4). In the NN state, the NC opens (loop11 releases its contact with the P-loop and instead associates with helix-α4) and the PC closes. In the ADP.AlFx state the PC remains closed and the NC closes as loop11 contacts both the P-loop and helix-α4. The position of N255, which reorientates upon nucleotide release to contact loop11 and close the polymer cleft is shown (Shang et al., 2014). (B) MKLP2 follows the same state-dependent sequence of changes at the NC and PC clefts as Kin1. MKLP2-MD cryo-EM density is shown in transparent grey with the same views shown as for Kin1 in panel A. The predicted position of N430 (corresponding to kinesin-1’s N255) in the models is indicated.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Side profile of the asymmetric unit of the MKLP2-MD-AMPPNP reconstruction, showing MT binding site similar to that seen in other nucleotide states. The fitted MKLP2-MD-AMPPNP model is in blue, the α-tubulin model is in light grey and the β-tubulin model is in dark grey. (B) View, similar to Figure 3C, of the nucleotide-binding site of the MKLP2-MD-AMPPNP reconstruction.
+
+![Video 2.](https://cdn.elifesciences.org/articles/27793/elife-27793-video2.mp4.jpg)
+
+**Video 2.:** Nucleotide-state transitions are represented by morphing cryo-EM density between MKLP2-MD-ADP and MKLP2-MD-NN reconstructions then MKLP2-MD-NN and MKLP2-MD-ADP.AlFx reconstructions using Chimera’s (Goddard et al., 2007) ‘Morph Map’ tool (with the option of adjusting threshold for a constant volume). The MKLP2-MD-ADP fitted model is shown first and substituted for the MKLP2-MD-NN fitted model halfway through the ADP to NN density morph. The MKLP2-MD-NN fitted model is then substituted for the MKLP2-MD-ADP.AlFx fitted model halfway through the ADP to NN density morph.
 
 The conformation(s) of MT-bound kinesins in the presence of ADP are still relatively poorly described (Atherton et al., 2014) especially at high resolution, and depend on the MT affinity and kinetic behaviour of individual proteins. The properties of MKLP2-MD are such that an MT-bound MKLP2-MD-ADP structure could be captured, in which density corresponding to ADP is coordinated primarily via the P-loop with some connectivity to Switch II/loop11 (Figure 3, left; Figure 2—figure supplement 1). A portion of loop11 is visible near the P-loop and the N-terminus of helix-α6, while most is not visible. This flexibility in loop11 is also seen in Kin1-ADP (Kull et al., 1996) and MT-bound Kin3-ADP (Atherton et al., 2014). However, in MT-bound MKLP2-MD-ADP, loop9 as well as the N-terminus of helix-α4 are more flexible compared to these other kinesin-ADP conformations, reflecting distinct properties of MKLP2-MD.
 
@@ -64,9 +287,21 @@ Transition to the MKLP2-MD-ADP.AlFx structure causes substantial local rearrange
 
 However, the MKLP2-MD-AMPPNP reconstruction illustrates another interesting divergence of MKLP2-MD mechanochemistry compared to Kin1/3 (Figure 3—figure supplement 3). In Kin1 and Kin3, the motor conformation in the presence of AMPPNP and ADP.AlFx are essentially indistinguishable (Atherton et al., 2014; Gigant et al., 2013). However, in MKLP2-MD, while density corresponding to bound AMPPNP is observed (Figure 2—figure supplement 1), none of the characteristic features in the motor observed for the catalytically competent ADP.AlFx conformation are seen upon AMPPNP binding. Instead, this reconstruction exhibits a similar conformation to the MKLP2-ADP and –NN reconstructions, such that at the nucleotide binding site, helix-α4 shows a partially extended conformation and only some density corresponding to loop9 and loop11 is visible (Figure 3—figure supplement 3B). This reconstruction thereby illustrates the large difference in structural response of MKLP2-MD to different ATP-like analogues - AMPPNP compared to ADP.AlFx – and is a further readout of the divergent properties of MKLP2.
 
-## MKLP2 has a non-canonical MT binding interface and footprint on the MT surface
+### MKLP2 has a non-canonical MT binding interface and footprint on the MT surface
 
 The divergent properties of MKLP2-MD are further emphasised in its interaction with the MT surface. The MKLP2-MD interface with the MT is composed of nucleotide-invariant and nucleotide-sensitive elements. The nucleotide-invariant elements are formed by the tubulin-binding subdomain (Figure 2C,D). In this subdomain of MKLP2-MD, a 5 aa insertion (Figure 2A) both contributes an additional helical turn to the C-terminus of helix-α4 and adds length to loop12 compared to Kin1 (Figure 4A); however this insert does not contact the MT. This C-terminus extension of helix-α4 is nucleotide-insensitive (Figure 4—figure supplement 1A,D) and thus is structurally similar to the helix-α4 extension formed by part of Kin3’s loop12 insert (Atherton et al., 2014), although these insertions have no sequence homology.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig4-v3.jpg)
+
+**Figure 4.:** (A). Loop12 insertion (pink) partially contributes to the C-terminal extension of helix-α4 (extra length indicated by arrows) but does not contact the MT. This extension is present in all nucleotide states; shown here for MKLP2-MD-ADP.AlFx. (B) In MKLP2-MD-ADP.AlFx the loop8 insertion (pink) reaches across to β-tubulin in the adjacent protofilament (pf, demarcated by a red dashed line). Tubulin density <7 Å away from the insertion is coloured in pink. (C) In MKLP2-MD-ADP.AlFx the loop2 insertion (pink) reaches towards the MT minus end contacting α-tubulin. Tubulin density <7 Å away from the insertion is coloured in pink. (D) Overlay of asymmetric unit MKLP2-MD-ADP.AlFx MT-bound model (blue pipes and planks) and Kin1 (green pipes and planks) MT-bound model (Atherton et al., 2014) when the tubulin dimers are superimposed. The density and model of tubulin in the MKLP2-MD-ADP.AlFx model is shown (transparent grey density). When their tubulins are aligned, a global shift (orange arrow indicates shift direction) and rotation (on the axis shown in red) of the MKLP2-MD on the MT surface is observed compared to Kin1. (E) This relative shift and rotation moves MKLP2-MD’s (blue model) loop7 closer to β-tubulin. (F) MKLP2-MD Loop11 is further from α-tubulin H12 and closer to H3 in comparison to Kin1 (green transparent model). Density for MKLP2-MD-ADP.AlFx-MT (grey mesh).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Views of (A) loop12, (B) loop8 and C) loop2 as in Figure 4A,B and C respectively for the MKLP-MD-ADP reconstruction. Views of D) loop12, (E) loop8 and F) loop2 as in Figure 4A,B and C respectively for the MKLP-MD-NN reconstruction. Loop12 density was not clear in the ADP and NN states at the thresholds used in Figure 4A for the MKLP2-MD-ADP.AlFx reconstruction, suggesting higher flexibility; although there was some density at less conservative thresholds (not shown) allowing modelling of conformers. Densities for loop8 and loop2 in the ADP and NN states were absent except at much less conservative thresholds and therefore were not modelled.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Overlay of asymmetric unit MKLP2-MD-NN MT-bound model (blue pipes and planks) and kinesin-1 (green pipes and planks) MT-bound model (Atherton et al., 2014) when the tubulin dimers are superimposed. The density and model of tubulin in the MKLP2-MD-NN model is shown (transparent grey density). When their tubulins are aligned, a global shift (orange arrow indicates shift direction) and rotation (on the axis shown in red) of the MKLP2-MD on the MT surface is observed with respect to Kin1.
 
 MKLP2-MD subdomain rearrangement in response to nucleotide (Figure 2D) causes nucleotide-dependent conformational changes in other elements at the MT binding interface. This includes movement of loop7 in the Switch I/II subdomain closer to the MT in the ATP-like state (Figure 4B, Figure 4—figure supplement 1B,E), and movement of helix-α6 in the P-loop subdomain relative to the MT surface (Figure 2D). As described above, however, in the vicinity of the nucleotide binding site, MKLP2-MD loop11 and helix-α4’s N-terminus are less ordered than in Kin1 in the absence of nucleotide (Figure 3, Figure 3—figure supplement 1C,D,E).
 
@@ -76,17 +311,49 @@ Compared to Kin1, not only does the MKLP2-MD contain extra sequences that contac
 
 Altogether, both kinesin-conserved and MKLP2-MD-specific elements contribute to the motor’s interaction with the MT, several of which are nucleotide sensitive. The collective effect of MKLP2-specific modifications leads to the shift and rotation of the MKLP2-MD on the MT surface. The differences in MKLP-MD compared to Kin1 also modify its footprint on the MT surface, leading to MKLP2-MD contacting a greater MT surface area in all states (Figure 5; Figure 5—figure supplement 1). The enhancing effect of the shift and rotation (Figure 4D) is most clearly seen in the increased footprint of loop7 and α4 (in both NN and ADP.AlFx states), and loop11 in the ADP.AlFx state (Figure 5, Figure 5—figure supplement 1). The transition from NN to ADP.AlFx states and further rotation of the Switch I/II subdomain brings loop7 and loop8 into even more extensive contact with β-tubulin’s H4, while full ordering of helix-α4 and loop11 adjacent to the active site leads to additional contacts with α-tubulin. Moreover, ordering of MKLP2-specfic insertions that are present in the ADP.AlFx reconstruction produce a further enhancement of the MKLP2-MD footprint (Figure 5). In addition to the enlarged footprint of MKLP2-MD on the negatively charged MT surface (Woehlke et al., 1997), the electrostatic surface of MKLP2-MD shows a more pronounced positive interaction surface compared to kinesin-1, especially around the C-terminal end of helix-α4, a region that is nucleotide invariant. Thus, through its ATPase cycle, the footprint of MKLP2-MD on the MT is altered and is most different in its ATP-like state.
 
-## Divergence of MKLP2 motor domain structural response to nucleotide: neck-linker and N-terminus
+![Figure 5.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig5-v3.jpg)
+
+**Figure 5.:** The binding interface of (A) MKLP2-MD-ADP.AlFx compared to (B) Kin1-MD-ADP.AlFx. (i) The binding surface of MKLP2-MD and Kin1 coloured according to the electrostatic potential. (ii) The binding surface of MKLP2-MD and Kin1 coloured according to α- or β-tubulin contacts. (iii) MT footprint of MKLP2-MD (top) compared to Kin1 (bottom). Coloured labels and dashed lines indicate contacting secondary structure elements in each motor. Tubulin density <7 Å distance from the bound motors is coloured. In MKLP2-MD-ADP.AlFx, loop2 is ordered and contacts α-tubulin (pink density) while the ordered loop8 contacts the neighbouring tubulin asymmetric unit (pink asterisk).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** The MT binding surface of (A) MKLP2-MD-ADP, (B) MKLP-MD-NN compared to (C) Kin1-NN. Secondary structure elements at the binding interface are annotated. A single tubulin dimer is shown where black labels indicate tubulin secondary structure elements on α-tubulin (light grey model) and β-tubulin (dark grey model). Colored labels and dashed lines indicate respective contacting secondary structure elements of MKLP2-MD or kinesin-1. Tubulin density <7 Å distance from the bound motors is coloured.
+
+### Divergence of MKLP2 motor domain structural response to nucleotide: neck-linker and N-terminus
 
 Nucleotide-dependent subdomain rearrangements in MKLP2-MD yield conformational changes at both termini of the motor. This includes opening of the cleft between the P-loop and tubulin-binding subdomains that can accommodate neck-linker reorientation and docking upon ATP binding (Figure 6). With ADP bound, as for other kinesins, the C-terminal helix-α6 lies close to the motor-MT interface and terminates adjacent to the C-terminus of helix-α4 (Figure 6A, arrow). The density for helix-α6 is less well-defined, with a length of three helical turns at most and is thus shorter than typically seen in other kinesins (Figure 6A, arrowhead; [Atherton et al., 2014; Shang et al., 2014]). In this configuration, extension of helix-α6, docking of the neck-linker and formation of the cover-neck bundle (CNB) are all prevented. Strong density corresponding to only a few residues of each of the N- and C-termini is observed, although additional density alongside β-sheet1 is visible suggesting partial occupancy of neck-linker conformers directed towards the MT minus end (Figure 6A, dotted line). In the NN reconstruction, the overall organisation of this region is very similar to that in the ADP state (Figure 6B) (and of the AMPPNP state, Figure 6—figure supplement 1), although density corresponding to helix-α6 is better defined in the NN compared to the ADP structure.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig6-v3.jpg)
+
+**Figure 6.:** (A) MKLP2-MD-ADP has a short helix-α6 leaving a gap between its terminus and helix-α4 (arrow), showing the cleft for the neck linker is closed and the CNB is not formed. Helix-α6 has relatively poor density, suggesting it may be partially disordered at its C-terminus (arrowhead). Density that could flexibly accommodate part of the neck linker is present connected to β-sheet1 (blue dotted line). (B) MKLP2-MD-NN also has a short helix-α6 leaving a gap between its terminus and helix-α4 (arrow). (C) MKLP2-MD-ADP.AlFx has an extended helix-α6, the initial portion of the neck-linker (magenta) inserts between the N-terminus (orange) and helix-α4 forming the CNB (arrowhead). The remaining portion of the neck-linker is flexible. (D) Sequence alignments of representative members (in brackets) of the Kin1/3/4/5/6 families for the neck-linker and its contact regions. Residue colouring using the Clustal X scheme (Larkin et al., 2007). Sequence numberings for Kif5b (Kin1, green) and MKLP2 (kinesin-6, blue) are shown adjacent to the secondary structure schematics. Well conserved residues in MKLP2 are boxed in light blue, whereas otherwise well conserved residues which have diverged in MKLP2 are boxed in black (see also Figure 6—figure supplement 2). Asterisks indicate conserved hydrophobic residues participating in CNB formation. Regions of the neck-linker involved in CNB formation or core docking are indicated by dashed lines in orange and magenta, respectively. (E) Time-resolved fluorescence anisotropy of FlAsH labeled MKLP2-MD: (1) NN + MT, light blue; (2) ADP.AlFx –MT, grey and (3) ADP.AlFx +MT, dark blue. Data shown in the table below are representative of 5 replicate samples. (F) MKLP2-MD-ADP.AlFx neck-linker in magenta (disordered region, dashed line). Kin1 helix-α6 and neck-linker (dark green) has been superimposed on helix-α6 of MKLP2-MD, showing the expected position of the neck-linker. There is no density corresponding to a docked neck-linker (arrows) suggesting it is mainly disordered. A small amount of density close to helix-α5 (arrowhead) likely indicates that alternative conformations are flexibly explored.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) View, similar to Figure 6A–C, of the N-terminus, helix-α6 and neck-linker of the MKLP2-MD-AMPPNP reconstruction. The arrow indicates a gap between helix-α6 and helix-α4, suggesting a shortened helix-α6, a closed docking cleft and therefore no CNB formation or neck-linker docking. The fitted MKLP2-MD-AMPPNP model is in blue and the α-tubulin model is in light grey.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Sequence alignment of the mouse MKLP2 neck-linker sequence with the two other mouse kinesin-6s MKLP1 and MPP1 and MKLP2 from selected animal species. Species abbreviations are; Mm, Mus musculus, Hs, Homo sapiens, Gg, Gallus gallus, Xl, Xenopus laevis, Dr, Danio rerio. Residue letters are coloured according to their properties according to the Clustal X scheme (Larkin et al., 2007). Information on consensus, conservation and secondary structure is shown above the alignments. Sequence numberings for Kif5B (Kin1, green) and mouse MKLP2 (kinesin-6, blue) are shown adjacent to the secondary structure schematics. Highly conserved residues in plus end kinesins which remain conserved or have similar properties in kinesin-6s are boxed in light blue, whereas highly conserved kinesin residues which have diverged are boxed in black (see also Figure 6D). Conserved hydrophobic residues participating in forming the CNB are marked by asterisks. Regions of the neck-linker involved in CNB formation or core-docking are indicated by dashed lines in orange and magenta, respectively. (B) The cover-neck bundle (CNB) and docked-neck linker in the x-ray structure of tubulin-bound Kin1 Kif5b (PDB: 4HNA). Side chains are shown for conserved kinesin residues involved in CNB formation (region within the orange-dashed circle) and neck-linker docking (region within the magenta-dashed circle). Highly conserved residues that remain conserved or highly similar are annotated in cyan, whilst those that have diverged are annotated in black, in format Kin1 amino-acid, Kin1 amino-acid number, mouse MKLP2 amino-acid. (C) Full neck-linker docking is observed in all structures with an ATP analogue and a ‘closed’ hydrolysis-competent nucleotide pocket apart from kinesin-6 MKLP2; Kin1 Kif5b (PDB: 4HNA, [Gigant et al., 2013]), Kin3 Kif1a (PDB: 4UXR, [Atherton et al., 2014]), Kin4 Kif4 (PDB: 3ZFD, [Chang et al., 2013]), Kin5 Kif11 (PDB: 3HQD, [Parke et al., 2010]). For MKLP2, a dashed magenta line is used to represent neck-linker flexibility.
 
 Following the subdomain rearrangement accompanying the NN/ADP.AlFx transition, the neck-linker cleft opens. Helix-α6 of MKLP2-MD extends beneath the core β-sheet, thereby directing the neck-linker towards the MT plus end (Figure 6C). This is consistent with the presence of a conserved cluster of hydrophobic residues in helix-α4, helix-α6 and the N-terminus that form a structural pocket that accommodates the helix-α6 extension and neck-linker reorientation (Figure 6D). This is also consistent with orientation of the N-terminus towards the MT plus end and formation of the CNB. The density of these N-terminal residues corresponds to S61-V64 and for the neck-linker corresponds to Q505-H508. In support of partial docking and reorientation of the neck-linker, anisotropy decay curves show that the MKLP2-MD neck-linker becomes more ordered in the presence of ADP.AlFx - as shown by the increase in rotational correlation time - compared to the absence of nucleotide, and depends on MT binding (Figure 6E).
 
 Strikingly, however, density corresponding to C-terminal residues extending from around H508, which would correspond to a docked neck-linker conformation, is not visible in the ADP.AlFx density map (Figure 6F). Residues of the MKLP2-MD extended N-terminus prior to S61 are also not visible. Consistent with a non-canonical neck-linker conformation, the neck-linker sequence itself differs markedly from other plus-end kinesins (Figure 6D). Most plus-end directed kinesins have a conserved sequence in which two Asn residues make hydrogen bonds against the core, stabilizing neck-linker docking (Gigant et al., 2013) (Figure 6D, Figure 6—figure supplement 2). In MKLP2, these two Asn residues have been substituted for basic His residues, which would be predicted to preclude neck-linker docking. In addition, conserved core residues contacting this region of the neck-linker in plus-end directed kinesins are not fully conserved in MKLP2; for example Kin1-Y77→MKLP2- Q151 (Figure 6D). Thus, although subdomain rearrangement results in reorientation of the MKLP2-MD neck-linker towards the MT plus end – as with other plus end kinesins – the docking of the neck linker that is typically seen does not occur in MKLP2-MD.
 
-## MKLP2 loop6 forms a distinct subdomain
+### MKLP2 loop6 forms a distinct subdomain
 
 Loop6 is the largest MKLP2-specific insertion (99 aa) and density corresponding to it is present in all nucleotide states (Figure 7, Figure 7—figure supplement 1). The higher resolution of the ADP.AlFx reconstruction facilitates the characterisation of density corresponding to loop6 (Figure 7A,B, Video 3), which emerges from the side of the motor domain facing the MT plus end. Given its position, connectivity and its apparent movement in the NN/ADP.AlFx transition, it is effectively part of the SwI/II subdomain (Figure 7C). Loop6 forms density that spreads across the MT-facing surface of the central β-sheet. This density also connects the MT facing surface of the core β-sheet with β-sheet-5a/b of the tubulin-binding subdomain that connects to the MT surface (Figure 7B). However, loop6 itself does not appear to contact the MT surface. Creating a full model of loop6 was not possible, but secondary structure prediction of loop6 converged on the presence of a 4-turn helical region towards its N-terminus (Figure 7—figure supplement 1E). Density that corresponds to a helical structure was observed lying close to helix-α3 and we modelled an α-helix within it (Figure 7A,B). However, the rest of loop6 has no predicted secondary structure and may be intrinsically disordered (Seeger and Rice, 2013). As displayed in Figure 7A,B, loop6 is incompletely visualised, partly due to the lack of discrete secondary structural elements and also presumably due to flexibility in this region of the motor. This conclusion is reinforced when, with coarser (low-pass) filtering of the EM reconstruction, a large and lower resolution cloud of density is revealed (Figure 7D), consistent with what was previously described from a 2.5 nm resolution reconstruction of the C. elegans kinesin-6, MKLP1 (Zen4) (Hizlan et al., 2006). This density is unconnected to other regions of the motor domain, and does not contact adjacent motor domains or the MT, but likely corresponds to multiple flexible conformations of the remaining loop6 residues.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig7-v3.jpg)
+
+**Figure 7.:** (A,B). MKLP2-MD-ADP.AlFx model (dark blue) within the cryo-EM density (grey) with ordered loop6 density (pink). A model of the predicted α-helix at the loop6 N-terminus fits well into a ‘sausage’ of loop6 density (pink helix). The termini of loop6 in the model are indicated (arrowheads). (B) View from the MT proximal side of the MKLP2-MD. Loop6 density (pink) connects the core β-sheet and β5a/b of the tubulin-binding subdomain (asterisk). (C) Movement of loop6 in NN (medium blue) to ADPAlFx (navy blue) transition, with the loop6 helices shown as white or pink ribbons respectively. The MKLP2-MD-ADP.AlFx motor core density is shown as transparent grey solid, MKLP2-MD-ADP.AlFx loop6 density is shown as pink transparent solid and MKLP2-MD-NN loop6 density is shown as pink mesh. (D) View of ~4 asymmetric units with the MT plus end towards the top of the panel. Mesh shows density for the MKLP2-MD-ADP.AlFx reconstruction when low pass filtered to ~15 Å. The MKLP2-MD-ADP.AlFx model is docked in one asymmetric unit. After low pass filtering, additional less ordered density attributable to loop6 was observed to the top left of the motor domain (indicated within pink dashed ring). Ordered loop6 density as in the previous panels is shown in pink (and arrowhead).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/27793/elife-27793-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** Views of loop6 density for the (A) MKLP2-MD-ADP or (B) MKLP2-MD-NN (as in Figure 7A), and (C) MKLP2-MD-ADP or the (D) MKLP2-MD-NN reconstructions (as in Figure 7B). The MKLP2-MD atomic models are shown within cryo-EM density (blue for NN or light blue for ADP). A model of the predicted α-helix at the loop6 N-terminus fits well into a ‘sausage’ of loop6 density (pink helix). The termini of loop6 in the model are indicated (arrowheads). Loop6 density (pink) connects the core β-sheet and β5a/b of the tubulin-binding subdomain (asterisk). (E) Sequence alignment of loop6 in MKLP2 from various animal species and the chanoflagellate Monosiga brevcollis. Species abbreviations are; Mm, Mus musculus, Hs, Homo sapiens, Xl, Xenopus laevis, Pb, Python bivittatus, Ss, Salmo Salar, Hv, Hydra Vulgaris, Gg, Gallus gallus, Cg, Crassostrea gigas, Mb, Monosiga brevcollis, Bi, Bombus impatiens, Dm, Drosophila melanogaster. Residue letters are coloured according to their properties as in Clustal X scheme (Larkin et al., 2007). Information on consensus, conservation and secondary structure, including prediction of SSEs in loop6 (see Materials and methods) is shown above the alignments. Sequence numberings for Kif5b (Kin1, green) and mouse MKLP2 (kinesin-6, blue) are shown adjacent to the secondary structure schematics.
+
+![Video 3.](https://cdn.elifesciences.org/articles/27793/elife-27793-video3.mp4.jpg)
+
+**Video 3.:** Cryo-EM density for the MD core and tubulin are shown in transparent grey solid, whilst additional density attributable to loop6 is shown as transparent pink solid. An α-helix at the N-terminus of loop6, suggested by secondary structure prediction (see Materials and methods and Figure 7—figure supplement 1E), which when modelled (pink helix) fits well into a ‘sausage’ of density attributable to a portion of loop6, is introduced. All density apart from loop6 density is then removed for clarity.
 
 ## Discussion
 
@@ -116,39 +383,43 @@ Our structural and biophysical characterisations of the MKLP2 motor domain sugge
 
 ## Materials and methods
 
-## Protein expression, purification, and labelling
+### Protein expression, purification, and labelling
 
 The MKLP2 constructs were cloned into a pET28 vector with C-terminal 6His tag and expressed in BL21 Gold (DE3) E. coli cells by induction with 0.2 mM IPTG at 20°C overnight. Cells were harvested by centrifugation at 4500 × g for 10 min and lysed by sonication in lysis buffer (50 mM HEPES, pH 7; 500 mM NaCl, 40 mM Imidazole, 1 mM TCEP, 0.5 mM PMSF, 0.1 mM ADP, 5 mM MgCl2). The lysate was clarified at 20,000 × g for 45 min at 4°C; and the protein was purified by HisTrap column (GE Healthcare Life Science, Pittsburgh, PA). Further purification was achieved by size exclusion chromatography in buffer containing 20 mM HEPES pH 7, 100 mM NaCl, 1 mM TCEP, 5 mM MgCl2, and 0.1 mM ADP. Fractions containing purified MKLP2 protein were pooled and concentrated to ~10 mg/ml, flash-frozen in liquid nitrogen and stored in −80°C until usage. For anisotropy decay studies, the 25–520 MKLP2-MD construct was modified by inserting the sequence CCPGCC at its C-terminus before the His tag sequence. The construct was expressed and purified as above. It was labelled with the fluorescein derivative FlAsH (Molecular Probes, Eugene, OR) by incubation of a 10-fold molar excess of label over protein in 25 mM HEPES, 50 mM KAc, 5 mM MgAc, pH 7.5 for 12 hr followed by removal of unbound label over prepoured Sephadex G25 columns (GE Healthcare). The stoichiometry of labelling was typically 0.8–0.9 FlAsH:MKLP2-MD.
 
-## Steady state ATPase, transient kinetic methodologies
+### Steady state ATPase, transient kinetic methodologies
 
 MKLP2 construct ATPase activities were determined, in duplicate, in a buffer containing 50 mM KAc, 25 mM HEPES, 5 mM MgAc, and 1 mM EGTA, pH 7.5 (RT) by measuring released phosphate using a commercial kit (EnzChek Phosphate Assay, Molecular Probes). Binding of the fluorescent nucleotide analogues 2’dmT (in duplicate) and 2’dmD (once) to 4:1 complexes of MTs:MD were measured by mixing with an excess of fluorescent nucleotide in the stopped flow at 20°C. Samples were rendered nucleotide free prior to mixing by incubating for 20 min with 0.2 U/ml apyrase (Type VII, Sigma Aldrich, St Louis, MO). Fluorescence enhancement of the mant fluorophor was monitored by energy transfer from vicinal tryptophans by exciting at 295 nm and monitoring 90o from the incident beam through a 450 nm broad bandpass filter (Omega Optical, Brattleboro, VT). Data were subjected to linear least squares fitting. Dissociation of 2’dmD from MKLP2-MD was measured by adding a 10-fold molar excess of 2’dmD to MKLP2-MD in ATPase buffer and mixing with 2 mM MgADP. The resulting fluorescence decrease was monitored by energy transfer from vicinal tryptophans by exciting at 295 nm and monitoring 90° from the incident beam through a 450 nm broad bandpass filter (Omega Optical).
 
-## MT co-sedimentation assay
+### MT co-sedimentation assay
 
-Tubulin (Cytoskeleton Inc, Denver, CO) was resuspended in BRB80 (80 mM PIPES, 2 mM MgCl2, 1 mM EGTA, 1 mM DTT) to 50 μM. Polymerization of tubulin into MTs was carried out by addition of 1 mM GTP and incubated at 37°C for 1 hr, followed by addition of 200 μM paclitaxel (Cytoskeleton) and additional incubation for 1 hr at 37°C. Paciltaxel-stabilized MTs were kept at room temperature for >24 hr, centrifuged at 15,000 × g for 30 min, and resuspended to 100 μM with BRB80 buffer plus 200 μM paclitaxel. Equilibrium binding experiments were performed at 25°C in BRB80 buffer plus 25 mM NaCl (all concentrations reported as final values after mixing). MKLP2-MD was incubated with ADP or ADP.AlFx for 30 min. For NN sample, MKLP2-MD was first treated with apyrase to remove all bound nucleotides. 2.5 μM MKLP2-MD in different nucleotide state was incubated with paclitaxel-stabilized MTs (0–10 μM polymerized tubulin; 20 μM paclitaxel) in a 100 μl reaction with 1 mM corresponding nucleotide. The mixture was incubated for 30 min and centrifuged at 100,000 × g for 30 min at 25°C. The supernatant was removed and the pellet was gently rinse with warm BRB80 buffer plus 20 μM paclitaxel. The pellet was resuspended in cold BRB80 buffer plus 10 mM CaCl2. The supernatant and pellet from each sample were analysed on SDS-PAGE gels. The concentrations of MKLP2-MD in the supernatant and pellet were quantified using Image J software. GraphPad Prism was used for curve fitting using a quadratic function that assumes 1:1 MD:tubulin binding stoichiometry:MDbound=(MTtotal+MDtotal+KD)−(MTtotal+MDtotal+KD)2−4(MTtotal)(MDtotal)2
+Tubulin (Cytoskeleton Inc, Denver, CO) was resuspended in BRB80 (80 mM PIPES, 2 mM MgCl2, 1 mM EGTA, 1 mM DTT) to 50 μM. Polymerization of tubulin into MTs was carried out by addition of 1 mM GTP and incubated at 37°C for 1 hr, followed by addition of 200 μM paclitaxel (Cytoskeleton) and additional incubation for 1 hr at 37°C. Paciltaxel-stabilized MTs were kept at room temperature for >24 hr, centrifuged at 15,000 × g for 30 min, and resuspended to 100 μM with BRB80 buffer plus 200 μM paclitaxel. Equilibrium binding experiments were performed at 25°C in BRB80 buffer plus 25 mM NaCl (all concentrations reported as final values after mixing). MKLP2-MD was incubated with ADP or ADP.AlFx for 30 min. For NN sample, MKLP2-MD was first treated with apyrase to remove all bound nucleotides. 2.5 μM MKLP2-MD in different nucleotide state was incubated with paclitaxel-stabilized MTs (0–10 μM polymerized tubulin; 20 μM paclitaxel) in a 100 μl reaction with 1 mM corresponding nucleotide. The mixture was incubated for 30 min and centrifuged at 100,000 × g for 30 min at 25°C. The supernatant was removed and the pellet was gently rinse with warm BRB80 buffer plus 20 μM paclitaxel. The pellet was resuspended in cold BRB80 buffer plus 10 mM CaCl2. The supernatant and pellet from each sample were analysed on SDS-PAGE gels. The concentrations of MKLP2-MD in the supernatant and pellet were quantified using Image J software. GraphPad Prism was used for curve fitting using a quadratic function that assumes 1:1 MD:tubulin binding stoichiometry:
+
+$$
+MD_{bound}=\frac{(MT_{total}+MD_{total}+K_{D})−\sqrt{(MT_{total}+MD_{total}+K_{D})^{2}−4(MT_{total})(MD_{total})}}{2}
+$$
 
 where MDbound is [MKLP2-MD] bound to MTs, MDtotal is total MKLP2-MD in the assay, MTtotal is total MT content in the assay, and KD is the dissociation constant for binding.
 
-## Time-resolved fluorescence anisotropy
+### Time-resolved fluorescence anisotropy
 
 Time-resolved fluorescence anisotropy (TFA) data were acquired as described previously (Muretta et al., 2013) using 9 μM FlAsH labeled MKLP2-MD (85% labeled) in the presence or absence of 15 μM MT. Single exponential functions to the nanosecond FlAsH anisotropy decays of labelled MKLP2-MD were fitted for: (i) bound to MTs in the absence of nucleotide, (ii) in the presence of ADP.AlFx in solution or (iii) bound to MTs in the presence of ADP.AlFx. The buffer used was 25 mM HEPES, 50 mM KAc, 5 mM MgAc, pH 7.5. Anisotropy decays were acquired from two independent preparations of protein. For each biochemical condition assayed, a minimum of 5 independent samples were acquired. Data were subjected to non-linear optimization to determine best fitting single exponential decay parameters. Data reported represent the mean of parameters from fits of replicate data ± the standard error for the fit parameter.
 
-## Cryo-EM sample preparation
+### Cryo-EM sample preparation
 
 MTs for MKLP2-MD ADP.AlFx, AMPPNP and no nucleotide data sets were polymerized by incubating 50 μM bovine tubulin (Cytoskeleton Inc, Denver, CO) in MES polymerization buffer (100 mM MES, pH 6.5, 1 mM MgCl2, 1 mM EGTA, 1 mM DTT, 5 mM GTP) for 1 hr at 37°C. GMPCPP MTs used for the MKLP2-MD ADP dataset were double-cycled by polymerizing 20 μM bovine tubulin in BRB80 buffer with 1 mM GMPCPP for 45 mins at 37°C, depolymerizing on ice and repolymerizing for a further 45 mins with an additional 2 mM GMPCPP. 1 mM paclitaxel was then added to all MT preps, incubated for a further 1 hr at 37°C, and left at room temperature for 24–48 hr before use. MTs were diluted to a final concentration of 2.5 μM in BRB80 buffer. MKLP2-MD was buffer exchanged into BRB20 (20 mM PIPES, 2 mM MgCl2, 1 mM EGTA, 1 mM DTT) containing either 2 mM of AMPPNP, ADP, ADP +AlF4, or apyrase (10 units/ml), diluted to a final concentration of 60 μM MKLP2-MD and left for 15 min at room temperature before use. MT and MKLP2-MD samples were added in a sequential fashion as 4 μl droplets to glow-discharged C-flatTM holey carbon EM grids (Protochips, Morrisville, NC) before blotting and plunge-freezing in liquid ethane using a Vitrobot (FEI Co., Hillsboro, OR).
 
-## Cryo-EM data collection and data processing
+### Cryo-EM data collection and data processing
 
 Images of MKLP2-MD ADP, ADP.AlFx and NN states were collected on a FEI Tecnai G2 Polara operating in low dose mode at 300 kV, using a DE20 direct electron detector (Direct Electron, San Diego, CA) with a final sampling of 1.53 Å/pixel. A total electron dose of ~50e-/Å2 over a 1.5 s exposure at 15 frames/s gave a total of 22 frames, at ~2.2e-/Å2 per frame. Images of the MKLP2-MD-AMPPNP state were collected on a FEI Tecnai F20 operating in low dose mode at 200 kV using a DE20 direct electron detector (Direct Electron) with a final sampling of 1.54 Å/pixel. A total electron dose of ~40e-/Å2 over a 1 s exposure at 25 frames/s gave a total of 25 frames, at ~1.6e-/Å2 per frame.
 
 To correct for sample drift and local beam induced movement respectively, individual frames were globally aligned using IMOD (RRID:SCR_003297) scripts, then locally aligned using the Optical Flow approach implemented in Xmipp (de la Rosa-Trevín et al., 2013). The full dose was used for particle picking and CTF determination using CTFFIND3 (Mindell and Grigorieff, 2003), while 25e-/Å2 or 20e-/Å2 were used for particle alignment, angular assignment and 3D reconstruction on data collected at 300 kV or 200 kV respectively. MT segments selected in Eman boxer served as input to a set of custom-designed semi-automated single-particle processing scripts utilizing Spider and Frealign as described previously, with minor modifications (Atherton et al., 2014; Shang et al., 2014; Sindelar and Downing, 2010). Poorly aligned particles were excluded from final reconstructions according to Frealign’s reported phase-residual values. The final dataset size (in asymmetric units) are: MKLP2-MD-ADP – 137,788; MKLP2-MD-NN – 120,341; MKLP2-MD-ADP.AlFx – 276,111; MKLP2-MD-AMPPNP – 141,154. The resolutions of symmetrized reconstructions are shown in Figure 2—figure supplement 1A–D. The binding surfaces of kinesin/MTs in these final structures were coloured according to the electrostatic potential as calculated with pdb2pqr (Dolinsky et al., 2007) and APBS (Baker et al., 2001).
 
-## Sequence analysis and modelling of MKLP2-MD
+### Sequence analysis and modelling of MKLP2-MD
 
 As shown in Figure 2—figure supplements 3, 100 homology models for each nucleotide state were generated with MODELLER v9.15 (RRID:SCR_008395) (Sali and Blundell, 1993) using multiple templates (Table 2). Templates were selected based on sequence identity and structural identity (inferred from secondary structure predictions made using Psipred (RRID:SCR_010246), Jpred, and RaptorX, [Drozdetskiy et al., 2015; McGuffin et al., 2000; Källberg et al., 2012]). In addition, the two crystal structures of kinesin-1-α/βtubulin complexes in ADP.AlFx (Gigant et al., 2013) or no nucleotide states (Cao et al., 2014) were selected as templates to capture the nucleotide/tubulin-dependent conformations of the motor domain; and were verified as a suitable templates by rigid fitting into MKLP2-MD densities. Given the low sequence identity of MKLP2-MD to the identified templates (28–34%), sequence alignment was initially performed in MUSCLE (RRID:SCR_011812) (Edgar, 2004), then manually adjusted, based on conserved motor domain residues identified in the Pfam database (version 29.0) (Bateman et al., 2004). For each nucleotide state, the 10 best models from MODELLER were selected using SOAP scoring (Dong et al., 2013), and QMEAN (Benkert et al., 2009) was then used to determine the top model. Global QMEAN scores indicated the models were of good quality (Table 2).
 
-## Flexible fitting of models in cryo-EM reconstructions
+### Flexible fitting of models in cryo-EM reconstructions
 
 The fitted MKLP2-MD models were first refined without tubulin (tubulin density was removed using Segger (Pintilie et al., 2010) in Chimera (RRID:SCR_004097) (Pettersen et al., 2004). Owing to the size and likely disordered nature of the most of loop6, we did not model it. To avoid loop6 density biasing modelling, the difference mapping function in the TEMPy software package (Joseph et al., 2016; Farabella et al., 2015) was used to remove the density.
 

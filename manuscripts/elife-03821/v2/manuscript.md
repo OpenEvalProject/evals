@@ -41,7 +41,7 @@
 
 ## Abstract
 
-10.7554/eLife.03821.001 In HIV-1 infection, a population of latently infected cells facilitates viral persistence despite antiretroviral therapy (ART). With the aim of identifying individuals in whom ART might induce a period of viraemic control on stopping therapy, we hypothesised that quantification of the pool of latently infected cells in primary HIV-1 infection (PHI) would predict clinical progression and viral replication following ART. We measured HIV-1 DNA in a highly characterised randomised population of individuals with PHI. We explored associations between HIV-1 DNA and immunological and virological markers of clinical progression, including viral rebound in those interrupting therapy. In multivariable analyses, HIV-1 DNA was more predictive of disease progression than plasma viral load and, at treatment interruption, predicted time to plasma virus rebound. HIV-1 DNA may help identify individuals who could safely interrupt ART in future HIV-1 eradication trials. Clinical trial registration: ISRCTN76742797 and EudraCT2004-000446-20 DOI: http://dx.doi.org/10.7554/eLife.03821.001
+In HIV-1 infection, a population of latently infected cells facilitates viral persistence despite antiretroviral therapy (ART). With the aim of identifying individuals in whom ART might induce a period of viraemic control on stopping therapy, we hypothesised that quantification of the pool of latently infected cells in primary HIV-1 infection (PHI) would predict clinical progression and viral replication following ART. We measured HIV-1 DNA in a highly characterised randomised population of individuals with PHI. We explored associations between HIV-1 DNA and immunological and virological markers of clinical progression, including viral rebound in those interrupting therapy. In multivariable analyses, HIV-1 DNA was more predictive of disease progression than plasma viral load and, at treatment interruption, predicted time to plasma virus rebound. HIV-1 DNA may help identify individuals who could safely interrupt ART in future HIV-1 eradication trials.Clinical trial registration: ISRCTN76742797 and EudraCT2004-000446-20
 
 ## Introduction
 
@@ -55,81 +55,207 @@ We measured both Total and Integrated HIV DNA levels in peripheral blood CD4 T c
 
 ## Results
 
-## SPARTAC trial participant characteristics
+### SPARTAC trial participant characteristics
 
-154 participants across all the SPARTAC trial arms were studied based on infection with subtype B HIV-1 and sample availability. All 154 patients were sampled at the pre-therapy baseline at trial enrolment. The demographics of the 154 participants are shown in Table 1. Participants who were randomised to receive no therapy or 48 weeks of ART and for whom samples were available (n = 51 and n = 47, respectively; Supplementary file 1) were studied in separate analyses described below. Assays of both Total and Integrated HIV-1 DNA were conducted at pre-therapy ‘baseline’ (trial week 0) and then at weeks 12, 48, 52, 60 and 108, where samples permitted. As detailed in Supplementary file 2, not all patients were assayed at all time-points, dependent on the analyses being conducted and sample availability.10.7554/eLife.03821.003Table 1.Patient demographicsDOI: http://dx.doi.org/10.7554/eLife.03821.003Total participants available for analysis*Number154Patients with a Total HIV-1 DNA test154 (100%)Patients with an Integrated HIV-1 test111 (72%)Log10 baseline Total HIV-1 DNA copies/ml3.88 (3.42–4.24)Log10 baseline Integrated HIV-1 DNA copies/ml3.6 (3.26–3.79)Time since seroconversion (days)73.82 (49.2–95.8)Log10 Baseline Viral Load copies/ml4.62 (3.95–5.25)Baseline CD4 Cell count (cells/μl)558 (428–680.9)Country of recruitment Australia21 (13.6%) Italy18 (12%) Brazil13 (8.4%) UK102 (66.2%)Viral Subtype (%)B (100%)Sex Female4 (3%) Male150 (97%)Data shown are values (% of non-missing values) for categorical data or medians and interquartile ranges in brackets for continuous variables.*At the week 0 ‘baseline’ timepoint’. A subset of these patients (Supplementary files 1 and 2) was used for analyses at later time-points.
+154 participants across all the SPARTAC trial arms were studied based on infection with subtype B HIV-1 and sample availability. All 154 patients were sampled at the pre-therapy baseline at trial enrolment. The demographics of the 154 participants are shown in Table 1. Participants who were randomised to receive no therapy or 48 weeks of ART and for whom samples were available (n = 51 and n = 47, respectively; Supplementary file 1) were studied in separate analyses described below. Assays of both Total and Integrated HIV-1 DNA were conducted at pre-therapy ‘baseline’ (trial week 0) and then at weeks 12, 48, 52, 60 and 108, where samples permitted. As detailed in Supplementary file 2, not all patients were assayed at all time-points, dependent on the analyses being conducted and sample availability.
 
-## Pre-ART HIV-1 DNA associates with surrogate markers of disease progression
+**Table 1.**
+ Patient demographics
 
-Traditionally, plasma viral load (VL) (
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Total participants available for analysis*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number</td>
+      <td>154</td>
+    </tr>
+    <tr>
+      <td>Patients with a Total HIV-1 DNA test</td>
+      <td>154 (100%)</td>
+    </tr>
+    <tr>
+      <td>Patients with an Integrated HIV-1 test</td>
+      <td>111 (72%)</td>
+    </tr>
+    <tr>
+      <td>Log10 baseline Total HIV-1 DNA copies/ml</td>
+      <td>3.88 (3.42–4.24)</td>
+    </tr>
+    <tr>
+      <td>Log10 baseline Integrated HIV-1 DNA copies/ml</td>
+      <td>3.6 (3.26–3.79)</td>
+    </tr>
+    <tr>
+      <td>Time since seroconversion (days)</td>
+      <td>73.82 (49.2–95.8)</td>
+    </tr>
+    <tr>
+      <td>Log10 Baseline Viral Load copies/ml</td>
+      <td>4.62 (3.95–5.25)</td>
+    </tr>
+    <tr>
+      <td>Baseline CD4 Cell count (cells/μl)</td>
+      <td>558 (428–680.9)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Country of recruitment</td>
+    </tr>
+    <tr>
+      <td>Australia</td>
+      <td>21 (13.6%)</td>
+    </tr>
+    <tr>
+      <td>Italy</td>
+      <td>18 (12%)</td>
+    </tr>
+    <tr>
+      <td>Brazil</td>
+      <td>13 (8.4%)</td>
+    </tr>
+    <tr>
+      <td>UK</td>
+      <td>102 (66.2%)</td>
+    </tr>
+    <tr>
+      <td>Viral Subtype (%)</td>
+      <td>B (100%)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Sex</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>4 (3%)</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>150 (97%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data shown are values (% of non-missing values) for categorical data or medians and interquartile ranges in brackets for continuous variables.*At the week 0 ‘baseline’ timepoint’. A subset of these patients (Supplementary files 1 and 2) was used for analyses at later time-points._
+
+### Pre-ART HIV-1 DNA associates with surrogate markers of disease progression
+
+Traditionally, plasma viral load (VL) (Mellors et al., 1996) and CD4 cell count (Frater et al., 2014) are the only validated surrogate markers of progression used in the HIV-1 clinic. We therefore measured these biomarkers as well as HIV-1 DNA in 154 SPARTAC participants at enrolment to the trial and prior to any ART being given. The median (interquartile range) values of Total and Integrated HIV-1 DNA values in PHI (Figure 1—figure supplement 1) were 7707 (2477–18187) and 3830 (1563–6325) copies of HIV-1 DNA per million CD4 T cells, respectively. Total and Integrated HIV-1 DNA levels were closely associated (p < 0.0001; r2 = 0.72; Pearson correlation) (Figure 1—figure supplement 2) in these pre-therapy samples. Total and Integrated HIV-1 DNA were significantly associated with plasma viral load (both p < 0.001; r2 = 0.48 and 0.64, respectively; linear regression) (Figure 1A), and inversely with CD4 T cell count (both p < 0.001; r2 = 0.20 and 0.27, respectively; linear regression) (Figure 1B). Interestingly, the estimated time since seroconversion at recruitment did not correlate with HIV-1 DNA (both Integrated and Total) (Figure 1—figure supplement 3).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03821/elife-03821-fig1-v2.jpg)
 
-**Figure 1.:** Pre-therapy ‘baseline’ Total HIV-1 DNA (black points and line) (n = 154) and Integrated HIV-1 DNA (n = 111) (red points and line) correlated with log10 plasma HIV-1 RNA (A) and CD4 cell count (B).DOI: http://dx.doi.org/10.7554/eLife.03821.004
+**Figure 1.:** Pre-therapy ‘baseline’ Total HIV-1 DNA (black points and line) (n = 154) and Integrated HIV-1 DNA (n = 111) (red points and line) correlated with log10 plasma HIV-1 RNA (A) and CD4 cell count (B).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/03821/elife-03821-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Kernel density plot to show distribution of Total (blue) and Integrated (red) HIV-1-DNA at baseline.DOI: http://dx.doi.org/10.7554/eLife.03821.005
+**Figure 1—figure supplement 1.:** Kernel density plot to show distribution of Total (blue) and Integrated (red) HIV-1-DNA at baseline.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/03821/elife-03821-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** DOI: http://dx.doi.org/10.7554/eLife.03821.006
-
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/03821/elife-03821-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** Linear regression of HIV-1 DNA levels (Total in black; Integrated in Red) vs the estimated time since seroconversion (weeks) (total n = 154, integrated n = 109).DOI: http://dx.doi.org/10.7554/eLife.03821.007
+**Figure 1—figure supplement 3.:** Linear regression of HIV-1 DNA levels (Total in black; Integrated in Red) vs the estimated time since seroconversion (weeks) (total n = 154, integrated n = 109).
 
-## HIV-1 DNA in untreated patients predicts disease progression
+### HIV-1 DNA in untreated patients predicts disease progression
 
-For this analysis, disease progression was defined according to the primary end-point of the SPARTAC trial, that is, a composite end-point of either a CD4 T cell count of 350 cells/µl or the commencement of long-term ART (for any clinical determined decision) (
+For this analysis, disease progression was defined according to the primary end-point of the SPARTAC trial, that is, a composite end-point of either a CD4 T cell count of 350 cells/µl or the commencement of long-term ART (for any clinical determined decision) (SPARTAC Trial Investigators et al., 2013). We carried out Kaplan–Meier survival analyses with patients randomised to receive no ART, and stratified according to median HIV-1 DNA level at time of recruitment (n = 51 for Total HIV-1 DNA, and n = 38 for Integrated [due to limited sample availability]) (patient demographics detailed in Supplementary file 1). There was a significant delay in clinical progression in those with lower Total and Integrated HIV-1 DNA at baseline (p = 0.0016 and 0.0022, respectively; log-rank test) (Figure 2). The median time from randomization to primary endpoint stratified by low and high Total HIV-1 DNA levels was 187.0 (IQR 127.0–222.0) and 77.9 (IQR 35.0–172.8) weeks, respectively, and for low and high Integrated levels was 187.7 (IQR 132.7–214.9) and 52.0 (IQR 32.4–161.3) weeks, respectively.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03821/elife-03821-fig2-v2.jpg)
 
-**Figure 2.:** Kaplan–Meier survival analyses for (A) Total (n = 51) and (B) Integrated (n = 38) HIV-1 DNA and clinical progression, based on time from randomization to the SPARTAC trial primary endpoint of a CD4 T cell count of 350 cells/μl or starting long-term ART. HIV-1 DNA data was divided into two ‘high’ and ‘low’ at the median level, which was 4.02 and 3.61 copies HIV-1 DNA per million CD4 T cells for Total and Integrated, respectively. Significance was determined by log rank test.DOI: http://dx.doi.org/10.7554/eLife.03821.008
+**Figure 2.:** Kaplan–Meier survival analyses for (A) Total (n = 51) and (B) Integrated (n = 38) HIV-1 DNA and clinical progression, based on time from randomization to the SPARTAC trial primary endpoint of a CD4 T cell count of 350 cells/μl or starting long-term ART. HIV-1 DNA data was divided into two ‘high’ and ‘low’ at the median level, which was 4.02 and 3.61 copies HIV-1 DNA per million CD4 T cells for Total and Integrated, respectively. Significance was determined by log rank test.
 
-Univariable Cox analyses showed Total HIV-1 DNA (HR 4.16 per log10 increase [CI 2.10–8.26]; p < 0.0001), Integrated HIV-1 DNA (HR 5.41 per log10 increase (CI 1.65–18.04); p = 0.006) and plasma viral load (HR 1.74 per log10 increase (CI 1.13–2.68) p = 0.011) predicted the trial primary endpoint (Table 2). Multivariable analyses were carried out with the baseline covariates, Total HIV-1 DNA, viral load, and CD4 T cell count. Here, Total HIV-1 DNA (HR = 3.57 (1.58–8.08); p = 0.002) and CD4 count (HR = 0.67 (0.53–0.84); p < 0.001), but not plasma viral load (HR = 1.25 (0.80–1.95); p = 0.33) predicted time to primary endpoint (Table 2). In a similar multivariable analysis, Integrated DNA did not associate significantly with the trial endpoint.10.7554/eLife.03821.009Table 2.Cox regression models for variables associated with clinical progression in untreated individuals followed up from PHIDOI: http://dx.doi.org/10.7554/eLife.03821.009Univariable unadjustedMultivariable adjustedCovariateHR (95% CI)p ValueHR (95% CI)p ValueTotal DNA (log10 DNA copies)4.16 (2.1–8.26)<0.0013.57 (1.58–8.08)0.002Viral load (log10 RNA copies)1.74 (1.14–2.67)0.0111.25 (0.80–1.95)0.33CD4+ T cell count/100 cells0.66 (0.53–0.82)<0.0010.67 (0.53–0.84)<0.001Univariable and multivariable cox regression models were used to determine predictors of clinical progression in untreated individuals followed up from Primary HIV-1 Infection. Progression was determined according to reaching the SPARTAC trial primary endpoint (Chun et al., 2010). Co-variables analysed were baseline (i.e. first pre-therapy trial sample) Total HIV-1 DNA, baseline plasma viral load and baseline CD4+ T cell count.
+Univariable Cox analyses showed Total HIV-1 DNA (HR 4.16 per log10 increase [CI 2.10–8.26]; p < 0.0001), Integrated HIV-1 DNA (HR 5.41 per log10 increase (CI 1.65–18.04); p = 0.006) and plasma viral load (HR 1.74 per log10 increase (CI 1.13–2.68) p = 0.011) predicted the trial primary endpoint (Table 2). Multivariable analyses were carried out with the baseline covariates, Total HIV-1 DNA, viral load, and CD4 T cell count. Here, Total HIV-1 DNA (HR = 3.57 (1.58–8.08); p = 0.002) and CD4 count (HR = 0.67 (0.53–0.84); p < 0.001), but not plasma viral load (HR = 1.25 (0.80–1.95); p = 0.33) predicted time to primary endpoint (Table 2). In a similar multivariable analysis, Integrated DNA did not associate significantly with the trial endpoint.
 
-## HIV-1 DNA decline on ART
+**Table 2.**
+ Cox regression models for variables associated with clinical progression in untreated individuals followed up from PHI
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Univariable unadjusted</th>
+      <th colspan="2">Multivariable adjusted</th>
+    </tr>
+    <tr>
+      <th>Covariate</th>
+      <th>HR (95% CI)</th>
+      <th>p Value</th>
+      <th>HR (95% CI)</th>
+      <th>p Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total DNA (log10 DNA copies)</td>
+      <td>4.16 (2.1–8.26)</td>
+      <td>&lt;0.001</td>
+      <td>3.57 (1.58–8.08)</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Viral load (log10 RNA copies)</td>
+      <td>1.74 (1.14–2.67)</td>
+      <td>0.011</td>
+      <td>1.25 (0.80–1.95)</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td>CD4+ T cell count/100 cells</td>
+      <td>0.66 (0.53–0.82)</td>
+      <td>&lt;0.001</td>
+      <td>0.67 (0.53–0.84)</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_Univariable and multivariable cox regression models were used to determine predictors of clinical progression in untreated individuals followed up from Primary HIV-1 Infection. Progression was determined according to reaching the SPARTAC trial primary endpoint (Chun et al., 2010). Co-variables analysed were baseline (i.e. first pre-therapy trial sample) Total HIV-1 DNA, baseline plasma viral load and baseline CD4+ T cell count._
+
+### HIV-1 DNA decline on ART
 
 One third of the participants recruited to SPARTAC were randomised according to the trial protocol to receive 48 weeks of ART before undertaking a treatment interruption (SPARTAC Trial Investigators et al., 2013). This allowed us not only to study the impact of ART on HIV-1 DNA levels in this cohort (which has been reported in different cohorts [Siliciano et al., 2003; Chun et al., 2007]), but also to characterise what happens on stopping therapy after treatment initiated during PHI.
 
-Prior to starting ART, Total and Integrated HIV-1 DNA levels were significantly different (p < 0.0001; Students
+Prior to starting ART, Total and Integrated HIV-1 DNA levels were significantly different (p < 0.0001; Students t test) (Figure 3), most likely explained by the presence of unintegrated circular and linear DNA forms. As expected, HIV-1 DNA levels after 48 weeks of ART were significantly lower than those measured at baseline (p < 0.0001 for all comparisons; Students t test) by 0.63 log copies/million CD4 cells for Total, and 0.59 log copies/million CD4 cells for Integrated (Figure 3). After 48 weeks of ART, Total DNA levels remained significantly greater than Integrated levels in patients despite undetectable viraemia (0.027; paired t test) (Figure 3). This is consistent with other reports of residual unintegrated HIV-1 DNA up to a year after ART initiation (Agosto et al., 2011).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03821/elife-03821-fig3-v2.jpg)
 
-**Figure 3.:** Total and Integrated HIV-1 DNA levels and plasma viral load (HIV-1 RNA) were measured at Week 0 ‘baseline’ (in participants from all three trial arms prior to any therapy) and also in those receiving 48 weeks of ART (weeks 48, 52, 60 and 108 after baseline). DNA levels (log10 copies/million CD4 T cells) and viral load (log10 copies/ml plasma) were measured at all time-points, but not all participants were sampled at all time-points dependent on sample availability. Significance was determined by unpaired Students t Tests or paired t test (marker with *) when samples at the two time-points being compared were matched.DOI: http://dx.doi.org/10.7554/eLife.03821.010
+**Figure 3.:** Total and Integrated HIV-1 DNA levels and plasma viral load (HIV-1 RNA) were measured at Week 0 ‘baseline’ (in participants from all three trial arms prior to any therapy) and also in those receiving 48 weeks of ART (weeks 48, 52, 60 and 108 after baseline). DNA levels (log10 copies/million CD4 T cells) and viral load (log10 copies/ml plasma) were measured at all time-points, but not all participants were sampled at all time-points dependent on sample availability. Significance was determined by unpaired Students t Tests or paired t test (marker with *) when samples at the two time-points being compared were matched.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/03821/elife-03821-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Total HIV-1 DNA levels were calculated in 15 patients on ART before TI (pre-TI) These patients subsequently started long-term ART (ltx). DNA was sampled at least 6 months post ltx start date. Significance was established using a paired students t test.DOI: http://dx.doi.org/10.7554/eLife.03821.011
+**Figure 3—figure supplement 1.:** Total HIV-1 DNA levels were calculated in 15 patients on ART before TI (pre-TI) These patients subsequently started long-term ART (ltx). DNA was sampled at least 6 months post ltx start date. Significance was established using a paired students t test.
 
 Having ascertained that in untreated individuals HIV-1 DNA was a predictor of progression, we now asked whether the lower HIV-1 DNA levels following ART would predict progression if therapy was stopped. This has potentially greater utility, as the majority of individuals on successful ART will have undetectable plasma viraemia using standard assays.
 
-## HIV-1 DNA at the point of stopping ART predicts clinical progression
+### HIV-1 DNA at the point of stopping ART predicts clinical progression
 
-We measured DNA levels in participants who received a median of 48 (IQR 47.7–48.7) weeks of ART with successfully suppressed viraemia (VL < 50 copies/ml plasma), immediately prior to treatment interruption. The demographics of the subset of individuals (n = 47) studied in this analysis are detailed in
+We measured DNA levels in participants who received a median of 48 (IQR 47.7–48.7) weeks of ART with successfully suppressed viraemia (VL < 50 copies/ml plasma), immediately prior to treatment interruption. The demographics of the subset of individuals (n = 47) studied in this analysis are detailed in Supplementary file 1. Kaplan–Meier survival analyses were undertaken in which participants were again divided into two groups (low and high) based on median HIV-1 DNA levels at TI. Both low Total and Integrated HIV-1 DNA levels associated with a longer time to trial endpoint (p = 0.039 and 0.031, respectively; log-rank test) (Figure 4). The median time from TI to primary endpoint stratified by low and high Total HIV-1 DNA levels was 159.2 (IQR 111.9–200.6) and 117.8 (IQR 67.8–173.8) weeks, respectively, and by low and high Integrated levels was 166 (IQR 124.9–200.6) and 101.1 (IQR 65.5–156.8) weeks, respectively.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03821/elife-03821-fig4-v2.jpg)
 
-**Figure 4.:** Kaplan–Meier survival analyses for (A) Total (n = 47) and (B) Integrated (n = 47) HIV-1 DNA and clinical progression, based on time to the SPARTAC trial primary endpoint of a CD4 T cell count of 350 cells/μl or starting back on long-term ART. HIV-1 DNA data was divided into ‘high’ and ‘low’ at the median. Significance was determined by log rank test. Participants had received a median of 48 weeks of ART and then undertook a treatment interruption. DNA levels were measured at week 48, at the point of stopping ART. Time from TI to primary endpoint is plotted on the x-axis.DOI: http://dx.doi.org/10.7554/eLife.03821.012
+**Figure 4.:** Kaplan–Meier survival analyses for (A) Total (n = 47) and (B) Integrated (n = 47) HIV-1 DNA and clinical progression, based on time to the SPARTAC trial primary endpoint of a CD4 T cell count of 350 cells/μl or starting back on long-term ART. HIV-1 DNA data was divided into ‘high’ and ‘low’ at the median. Significance was determined by log rank test. Participants had received a median of 48 weeks of ART and then undertook a treatment interruption. DNA levels were measured at week 48, at the point of stopping ART. Time from TI to primary endpoint is plotted on the x-axis.
 
 In univariable Cox regression analyses, Total and Integrated HIV-1 DNA both predicted clinical progression from TI, determined by time to reaching the trial primary endpoint (Total HR 3.52 [1.32–9.37]; p = 0.012; Integrated HR 3.01 (1.13–7.95); p = 0.027). Multivariable cox regression models were constructed with HIV-1 DNA and CD4 cell count at TI. Viral load was not included as it was undetectable at TI. Both Integrated (HR 2.81 CI (1.05–7.55) p = 0.04) and Total (HR 3.42 CI (1.29–9.05) p = 0.013) HIV-1 DNA retained significance, and in both cases CD4 T cell count at TI was not a significant predictor (HR 1.04 CI (0.83–1.11) p = 0.58 and HR 0.94 CI 0.825–1.08 p = 0.4). At TI, HIV-1 DNA was the only predictor of the primary end point.
 
-## HIV-1 DNA increases on stopping ART
+### HIV-1 DNA increases on stopping ART
 
 One of the concerns around the viral rebound following a TI is the risk of ‘re-seeding’ the reservoir in individuals who might have extremely low HIV-1 DNA levels, and who might be candidates for ‘post-treatment control’ of viraemia (Hocqueloux et al., 2010). We therefore measured HIV-1 DNA in those participants who had received 48 weeks of ART at the point of TI and then again 4, 12 and 60 weeks post TI, where samples were available. Total and Integrated HIV-1 DNA levels were not significantly greater than at the time of ART cessation for up to 12 weeks post TI, although had significantly increased 60 weeks after TI (p < 0.0001 for Total and Integrated DNA; Students t test), returning approximately to the Week 0 pre-therapy levels (Figure 3). The increase in Total and Integrated HIV-1 DNA 4 weeks after TI was not significant (p = 0.30), in contrast to the rebound in plasma viraemia (p < 0.001), which may be re-assuring for those implementing a TI strategy in which ART would be re-introduced when plasma VL became detectable.
 
 Of note, in an analysis of those individuals who subsequently restarted ART after the TI–and for whom we had samples (n = 15)–there was no significant difference between the HIV-1 reservoir size pre-TI and at least 6 months after re-starting ART (p = 0.58; paired students t test; Figure 3—figure supplement 1), suggesting that any increase in HIV-1 DNA on stopping ART may be reversible if therapy is re-commenced. However, larger studies will be needed to confirm these data.
 
-## HIV-1 DNA at ART cessation predicts time to plasma viral load rebound
+### HIV-1 DNA at ART cessation predicts time to plasma viral load rebound
 
 Although almost all participants in SPARTAC experienced VL rebound on stopping ART, we have previously shown that of those who received >12 weeks of therapy, 14% still had undetectable viraemia 12 months later (Stohr et al., 2013). We therefore wished to establish—albeit in this different, although overlapping, sub-group of SPARTAC participants—whether HIV-1 DNA predicted the return of plasma viraemia post-TI. As our previous findings included participants in centres using both 50 and 400 copies/ml as the lower limit of detection for plasma viral load assays, we studied both cut-offs for the HIV-1 DNA analyses.
 
-No patients were censored before viral rebound was detected and all were aviraemic (<50 copies/ml plasma) at the point of stopping ART. Levels of Total (but not Integrated) HIV-1 DNA at TI predicted time to viral rebound to 400 copies/ml by univariable Cox regression analysis (HR 2.43 (1.23–4.79) p = 0.010). CD4 T cell count at TI was not predictive (HR 0.92 (0.78–1.08) p = 0.32) (
+No patients were censored before viral rebound was detected and all were aviraemic (<50 copies/ml plasma) at the point of stopping ART. Levels of Total (but not Integrated) HIV-1 DNA at TI predicted time to viral rebound to 400 copies/ml by univariable Cox regression analysis (HR 2.43 (1.23–4.79) p = 0.010). CD4 T cell count at TI was not predictive (HR 0.92 (0.78–1.08) p = 0.32) (Supplementary file 3). In a multivariable Cox regression model including Total HIV-1 DNA and CD4 count, both sampled at the point of TI, only Total HIV-1 DNA significantly predicted time to viral rebound to 400 copies (HR 2.68 [1.31–5.48] p = 0.0069) (Supplementary file 3). When using values from pre-therapy baseline rather than at the time of TI in the model, neither plasma viral load nor CD4 T cell count predicted time to viral rebound (>400 copies/ml) from TI (HR 1.38 [0.96–1.99] p = 0.080) and (HR 1.03 [0.92-1.12] p = 0.60), respectively. Kaplan–Meier survival analyses showed similar results, with a low Total HIV-1 DNA (based on stratification around the median level) associated with a slower time to a viral rebound of 400 copies/ml (p = 0.0038; log-rank test) but not to 50 copies per ml (p = 0.18) (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/03821/elife-03821-fig5-v2.jpg)
 
-**Figure 5.:** Survival analyses of time to viral rebound (weeks) in participants undertaking TI after 48 weeks of ART. HIV-1 DNA levels are presented divided at the median level into high (red) and low (black). Rebound to 400 HIV-1 RNA copies (n = 46) is presented for Total (A) and Integrated (B) HIV-1 DNA. Rebound to 50 HIV-1 RNA copies (n = 45) is presented for Total (C) and Integrated (D) HIV-1 DNA. Significance was determined by log rank test.DOI: http://dx.doi.org/10.7554/eLife.03821.013
+**Figure 5.:** Survival analyses of time to viral rebound (weeks) in participants undertaking TI after 48 weeks of ART. HIV-1 DNA levels are presented divided at the median level into high (red) and low (black). Rebound to 400 HIV-1 RNA copies (n = 46) is presented for Total (A) and Integrated (B) HIV-1 DNA. Rebound to 50 HIV-1 RNA copies (n = 45) is presented for Total (C) and Integrated (D) HIV-1 DNA. Significance was determined by log rank test.
 
 It was unclear why Total HIV-1 DNA should predict rebound to 400 copies but not to 50. In an attempt to explain this we studied those individuals with data available at both cut-offs. In this small post-hoc analysis (n = 45), we found that rebound varied according to the HIV-1 DNA level at the time of TI. Patients with high Total HIV-1 DNA levels were more likely to have a first detectable VL greater than 400 copies/ml, whereas those with lower HIV-1 DNA levels were more likely initially to rebound below 400 but above 50 copies/ml (p = 0.0074; Fisher's exact test) (Supplementary file 4). In summary, we find evidence that HIV-1 DNA is a significant predictor of the duration of viral remission and magnitude of the initial rebound following TI. This, if confirmed in larger studies, would have implications for those designing protocols for ART-reintroduction following viral rebound in TI studies.
 
@@ -155,13 +281,13 @@ In light of observational cohorts such as VISCONTI (Saez-Cirion et al., 2013) wh
 
 ## Materials and methods
 
-## Participants and trial design
+### Participants and trial design
 
 The design of the SPARTAC trial is reported elsewhere (SPARTAC Trial Investigators et al., 2013). In brief, SPARTAC was an international open Randomised Controlled Trial enrolling adults with PHI within 6 months of a last negative, equivocal or incident HIV-1 test. All participants gave written informed consent. Research ethics committees in each country approved the trial. Time of seroconversion was estimated as the midpoint of last negative/equivocal and first positive tests, or date of incident test. Participants were randomised to receive ART for 48 weeks (ART-48), 12 weeks (ART-12) or no therapy (standard of care, SOC). The primary endpoint was a composite of two events: if participants either reached a CD4 count of <350 cells/mm3 (>3 months after randomization and confirmed within 4 weeks) or initiated long-term ART. This provided an immunological surrogate of clinical progression, but also allowed inclusion of those participants who commenced ART at CD4 cell counts greater than 350 cells/mm3. Time to virological failure of participants randomized to ART-48 (two analyses using both 50 and 400 HIV-1 RNA copies/ml as the cut-off [two consecutive readings]) was a secondary endpoint.
 
 Participants for this sub-study of SPARTAC were those infected with subtype B HIV-1 and for whom adequate samples were available. For those in the analysis of progression and viral rebound at TI, we only selected participants who had viral load suppression (<50 copies/ml; Chiron bDNA) at point of stopping ART (Table 1 and Supplementary file 1). CD4 T cells isolated from peripheral blood mononuclear cells (PBMC) were sampled for HIV-1 DNA in all participants at baseline, regardless of trial arm. Participants randomised to the ART-48 arm were sampled at week 48 at the point of stopping ART and at a further 4, 12 and 60 weeks post ART interruption (52, 60 and 108 weeks post-ART initiation). Participants who were viraemic using the Chiron bDNA, (Bayer, Leverkusen, Germany) (LLD 50 copies/ml) at the point of TI were excluded.
 
-## Measurement of HIV-1 DNA
+### Measurement of HIV-1 DNA
 
 CD4 T cells were enriched from frozen PBMC samples by negative selection (Dynabeads, Invitrogen, Carlsbad, CA) to a purity of >97%. CD4 T cell DNA was extracted (Qiagen, Venlo, Netherlands) and used as input DNA for PCR. Cell copy number and total HIV-1 DNA levels were quantified both in triplicate using previously published assays (Duncan et al., 2013; Jones et al., 2014).
 
@@ -169,7 +295,7 @@ Integrated HIV-1 was measured using an assay based on that previously published 
 
 To quantify patient samples, one standard curve was generated by plotting the average cycle threshold (Ct) values for all integration signals at each Integration Standard (IS) dilution (70–0.2 copies of IS standard per well, diluted in 2 µg/ml PBMC DNA), so long as at least one integration signal was significantly different (two standard deviations) to the average gag-only background signal. The IS was a kind gift from Una O’Doherty. Ln(Copy number) was plotted vs Ln(average Ct) and each point on the standard curve was repeated in duplicate. The standard curve fitted extremely well to a line of best fit (r2 = 0.987), which was then used to calculate copy numbers in patient samples. Each patient sample replicate was quantified individually using the standard curve to generate error. Plate to plate variation was assessed using quadruplicate replicates of 8e5 cells, which have one copy of HIV-1 per cell, diluted to 100 copies per well as a first round PCR DNA input. The average coefficient of variance was 8.31%.
 
-## Statistical analysis
+### Statistical analysis
 
 HIV-1 DNA (Total and Integrated) distributed normally following log10 transformation. The association between Total and Integrated HIV-1 DNA levels was tested using Pearson correlations. Linear regression was used to examine the association between continuous clinical baseline covariates and HIV-1 DNA. Tests between grouped variables and DNA levels were tested with Mann–Whitney, Kruskal–Wallis and t tests where appropriate.
 

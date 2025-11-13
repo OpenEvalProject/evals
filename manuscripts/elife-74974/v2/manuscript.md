@@ -15,8 +15,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04cvxnb49 Institute of Pharmaceutical Biology/DCAL, Goethe-University of Frankfurt Frankfurt am Main Germany
-2. https://ror.org/032000t02 Department of Gene Therapy, Ulm University Ulm Germany
+1. Institute of Pharmaceutical Biology/DCAL, Goethe-University of Frankfurt Frankfurt am Main Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
+2. Department of Gene Therapy, Ulm University Ulm Germany ([ROR:032000t02](https://ror.org/032000t02))
 
 † Corresponding author
 
@@ -32,6 +32,129 @@ While vaccination with BioNTech and Moderna mostly causes only mild and typical 
 
 The latest data from the security surveillance of the Paul-Ehrlich-Institute in Germany (report dated from December 23, 2021; https://www.pei.de/DE/newsroom/dossier/coronavirus/sicherheitsbericht-covid-19-impfstoffe-aktuell.html) revealed still a significant risk increase for the AstraZeneca vaccine compared to the other vaccines (see Table 1). Thrombocytopenia and immunothrombocytopenia (ITP) have been observed in 314 cases after 96.6 Mio vaccination doses with Comirnaty (3.3 cases per Mio injections), in 28 cases with Spikevax after 10.5 Mio vaccination doses with Comirnaty (2.6 cases per Mio injections), in 269 with Vaxzevria after 12.7 Mio vaccination doses cases (21.2 cases per Mio injections), and in 23 cases with Ad26.COV2.S after 3.4 Mio vaccination doses cases (6.6 cases per Mio injections). Thrombosis-related death cases for these four vaccines were 74, 6, 81, and 12, respectively. This indicates that thromboembolic events associated with case mortality were in the range of 21.4–52% (see Table 1).
 
+**Table 1.**
+ Safety data from the German Paul-Ehrlich Institute (PEI), dated from December 23, 2021.All data for all four vaccines were directly retrieved from the security report. Data for number of all vaccinations, total cases with complications, anaphyllaxie cases, myo/pericarditis cases, cases with thromboses associated with thrombocytopenia (TTS), cases with thromboses combined with immunothrombocytopenia (ITP), and cases with Guillain-Barré syndrome (GBS) were listed. In addition, for each category the case numbers per 1 million (Mio) injections are given (e.g. the absolute risk for the development of myo/pericarditis after a Biontech vaccination is 12.9 cases per Mio injections). All red numbers differ significantly from the numbers of the other vaccines.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Biontech/Pfizer</th>
+      <th>Moderna</th>
+      <th>Oxford/AZ</th>
+      <th>Janssen/J&amp;J</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>#Vaccinations</td>
+      <td>96.606.131</td>
+      <td>10.576–131</td>
+      <td>12.703.030</td>
+      <td>3.462.557</td>
+    </tr>
+    <tr>
+      <td>#Complications</td>
+      <td>113.792</td>
+      <td>28.289</td>
+      <td>46.325</td>
+      <td>7.758</td>
+    </tr>
+    <tr>
+      <td>Cases per Mio inj.</td>
+      <td>1.178</td>
+      <td>2.675</td>
+      <td>3.647</td>
+      <td>2.241</td>
+    </tr>
+    <tr>
+      <td>Anaphyllaxie</td>
+      <td>550</td>
+      <td>55</td>
+      <td>101</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Cases per Mio inj.</td>
+      <td>5,7</td>
+      <td>5.2</td>
+      <td>8.0</td>
+      <td>2,9</td>
+    </tr>
+    <tr>
+      <td>Myo/pericarditis</td>
+      <td>1245</td>
+      <td>309</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cases per Mio inj.</td>
+      <td>12.9</td>
+      <td>29.2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TTS</td>
+      <td>36</td>
+      <td>5</td>
+      <td>200</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Cases per Mio inj.</td>
+      <td>0.4</td>
+      <td>0.5</td>
+      <td>15.7</td>
+      <td>6.9</td>
+    </tr>
+    <tr>
+      <td>ITP</td>
+      <td>314</td>
+      <td>28</td>
+      <td>269</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Cases per Mio inj.</td>
+      <td>3.3</td>
+      <td>2.6</td>
+      <td>21.2</td>
+      <td>6.6</td>
+    </tr>
+    <tr>
+      <td>GBS</td>
+      <td>140</td>
+      <td>14</td>
+      <td>112</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>Cases per Mio inj.</td>
+      <td>1.4</td>
+      <td>1.3</td>
+      <td>8.8</td>
+      <td>13.9</td>
+    </tr>
+    <tr>
+      <td>Death cases</td>
+      <td>295</td>
+      <td>20</td>
+      <td>201</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Cases per Mio inj.</td>
+      <td>3.1</td>
+      <td>1.9</td>
+      <td>15.8</td>
+      <td>6.1</td>
+    </tr>
+  </tbody>
+</table>
+
 TTS has been observed for these four vaccines in 36, 5, 200, and 24 patients, indicating a relative risk of 0.4, 0.5, 15.7, and 6.9 cases per Mio injections. These thromboembolic events in combination with thrombocytopenia share similarities with another condition, ‘heparin-induced thrombocytopenia’ (HIT). The term ‘vaccine-induced immune thrombotic thrombocytopenia’ (VITT) was coined for this vaccine-induced condition, after finding out that autoantibodies against the platelet factor 4 (PF4) could be causally linked to it (Greinacher et al., 2021b; Greinacher et al., 2021a). However, despite intensive research activities by many laboratories, the underlying initiating mechanisms for the observed side events were not yet fully understood.
 
 At the molecular delivery mechanism of the approved vaccines, there are fundamental differences between mRNA- and adenoviral vector-based vaccines. The mRNA vaccines encode, as the naming implies, the Spike sequence as a modified RNA sequence encapsulated in lipid nanoparticles. Upon intramuscular injection, the nanoparticles are taken up by the cells, where the mRNA cargo is released into the cytosol. Since both mRNA vaccines encode a signal peptide, the process of protein translation occurs at the rough endoplasmatic reticulum (ER) and results in membrane-anchored Spike proteins. Further post-translational modifications occur in the ER and Golgi apparatus (glycosylation) from where the Spike protein trimer is transported in vesicles to the outer cell membrane.
@@ -46,7 +169,7 @@ To address this question of cryptic splicing, we analyzed nuclearly transcribed 
 
 ## Results
 
-## In silico analyses reveal potential splice sites in adenoviral vector-encoded Spike sequences
+### In silico analyses reveal potential splice sites in adenoviral vector-encoded Spike sequences
 
 The Spike open reading frame of the Wuhan SARS-CoV-2 isolate was tested for potential splice sites by using the available SpliceRover online tool (Zuallaert et al., 2018). In addition, we used the online Alternative Splice Site Predictor (ASSP) tool to confirm the predicted splice sites (data not shown). Both servers identified several dozens of potential splice sites in the 3822 nucleotide long open reading frame of the Spike gene. Therefore, we decided to filter these hits by their individual scores to identify those, which were used with a higher likelihood (wildtype Spike gene: six splice donor [SD] sites, five splice acceptor [SA] sites, see Figure 1 and Table 2A).
 
@@ -54,9 +177,299 @@ The Spike open reading frame of the Wuhan SARS-CoV-2 isolate was tested for pote
 
 **Figure 1.:** Splice site prediction was carried out by using SpliceRover. Splice donor sites are given in red, splice acceptor sites in green. SpliceRover calculates splice sites with a score between 0 and 1, but only splice sites with >0.15 were displayed. Sites were displayed in four colors as indicated. Splice sites were numbered with ‘0’, ‘+1’, or ‘+2’, to indicate how the open reading frame is disrupted. Therefore, all splice events between splice sites with identical numbers will be in-frame, while all splice reactions between unequal numbers will result in out-of-frame fusions. Below, the protein domain structure of Spike is displayed to explain, which domains are being deleted by splice events (NTD: N-terminal domain, RBD: (ACE2) receptor-binding domain, RRAR: furin cleavage site, HR1: heptad repeat1, CH: central helix, CD: connector domain, TM: transmembrane domain). White asterisks mark three splice donor sites that are present in the codon-optimized Spike reading frame of the Vaxzevria but not of the Janssen vaccine.
 
+**Table 2.**
+ Splice donor site prediction.The open reading frame of the SARS-CoV-2 Spike protein was analyzed by the Splice Site Predictor online tool SpliceRover (http://bioit2.irc.ugent.be/rover/splicerover). This online tool allows prediction of splice donor and splice acceptor sites. Predicted splice donor sites are provided in Table 1 for the SARS-CoV-2 wildtype Spike gene (A), for the codon-optimized Spike genes derived from the experimental Ad5.S vector, and the FDA/EMA-approved vector-based vaccines from AstraZeneca (Vaxzevria, ChAdOx1-S) and Janssen/J&J (Ad26.COV2.S), respectively. The amino acid coordinates of Spike protein domains S1, S2, and the minimal ACE2-binding domain are indicated.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Position</th>
+      <th>Potential splice donor sites</th>
+      <th>Score</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">A: Splice donor site prediction in wildtype Spike ORF</td>
+    </tr>
+    <tr>
+      <td>454–473</td>
+      <td>TGGATGGAAA•GTGAGTTCAG</td>
+      <td>0.187</td>
+      <td>+1</td>
+    </tr>
+    <tr>
+      <td>541–560</td>
+      <td>GGAAAACAGG•GTAATTTCAA</td>
+      <td>0.151</td>
+      <td>+1</td>
+    </tr>
+    <tr>
+      <td>894–911</td>
+      <td>GAAACAAAGT•GTACGTTGAA</td>
+      <td>0.565</td>
+      <td>+1</td>
+    </tr>
+    <tr>
+      <td>1323–1342</td>
+      <td>TGATTCTAAG•GTTGGTGGTA</td>
+      <td>0.357</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1906–1925</td>
+      <td>TATTCTACAG•GTTCTATTFT</td>
+      <td>0.274</td>
+      <td>+1</td>
+    </tr>
+    <tr>
+      <td>1996–2015</td>
+      <td>ATTGGTGCAG•GTATATGCGC</td>
+      <td>0.707</td>
+      <td>+1</td>
+    </tr>
+    <tr>
+      <td>3296–3317</td>
+      <td>GCACACACTG•GTTTGTAACA</td>
+      <td>0.160</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>MAG•GTNNGTG</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">B: Splice donor site prediction in codon-optimized Spike ORF of Ad5</td>
+    </tr>
+    <tr>
+      <td>497–516</td>
+      <td>GCACCTTCGA•GTACGTGTCC</td>
+      <td>0.987</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>1175–1194</td>
+      <td>TCACAAACGT•GTACGCCGAC</td>
+      <td>0.187</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>1209–1228</td>
+      <td>GGGAGATGAA•GTGCGGCAGA</td>
+      <td>0.162</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1812–1831</td>
+      <td>CTCCAACCAG•GTGGCCGTGC</td>
+      <td>0.540</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2331–2350</td>
+      <td>CACCCAAGAG•GTGTTCGCCC</td>
+      <td>0.204</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2949–2968</td>
+      <td>ACTGGACAAG•GTGGAAGCCG</td>
+      <td>0.318</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2961–2980</td>
+      <td>GGAAGCCGAG•GTGCAGATCG</td>
+      <td>0.151</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3083–3102</td>
+      <td>AGATGTCTGA•GTGTGTGCTG</td>
+      <td>0.318</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>3296–3315</td>
+      <td>GCACCCATTG•GTTCGTGACC</td>
+      <td>0.388</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>3452–3471</td>
+      <td>AACTGGATAA•GTACTTTAAG</td>
+      <td>0.443</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>3555–3574</td>
+      <td>GCTGAACGAG•GTGGCCAAGA</td>
+      <td>0.217</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3605–3624</td>
+      <td>AACTGGGGAA•GTACGAGCAG</td>
+      <td>0.800</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td colspan="4">C: Splice donor site prediction in codon-optimized Spike ORF of ChAdOx1-S</td>
+    </tr>
+    <tr>
+      <td>497–516</td>
+      <td>GCACCTTCGA•GTACGTGTCC</td>
+      <td>0.986</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>1012–1030</td>
+      <td>TTCGGCGAG• GTGTTCAATG</td>
+      <td>0.266</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1175–1194</td>
+      <td>TCACAAACGT•GTACGCCGAC</td>
+      <td>0.177</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>1209–1228</td>
+      <td>GGGAGATGAA•GTGCGGCAGA</td>
+      <td>0.188</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1812–1831</td>
+      <td>CTCCAACCAG•GTGGCCGTGC</td>
+      <td>0.541</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2331–2350</td>
+      <td>CACCCAAGAG•GTGTTCGCCC</td>
+      <td>0.215</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2949–2968</td>
+      <td>ACTGGACAAG•GTGGAAGCCG</td>
+      <td>0.398</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2961–2980</td>
+      <td>GGAAGCCGAG•GTGCAGATCG</td>
+      <td>0.273</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3083–3102</td>
+      <td>AGATGTCTGA•GTGTGTGCTG</td>
+      <td>0.503</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>3296–3315</td>
+      <td>GCACCCATTG•GTTCGTGACC</td>
+      <td>0.381</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>3452–3471</td>
+      <td>AACTGGATAA•GTACTTTAAG</td>
+      <td>0.245</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>3555–3574</td>
+      <td>GCTGAACGAG•GTGGCCAAGA</td>
+      <td>0.310</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3605–3624</td>
+      <td>AACTGGGGAA•GTACGAGCAG</td>
+      <td>0.686</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td colspan="4">D: Splice donor site prediction in codon-optimized Spike ORF of Ad26.COV2.S</td>
+    </tr>
+    <tr>
+      <td>563–582</td>
+      <td>ACCTGCGCGA•GTTCGTGTTC</td>
+      <td>0.150</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>1175–1194</td>
+      <td>TCACAAACGT•GTACGCCGAC</td>
+      <td>0.180</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>1209–1228</td>
+      <td>GGGAGATGAA•GTGCGGCAGA</td>
+      <td>0.207</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1812–1831</td>
+      <td>CAGCAATCAG•GTGGCAGTGC</td>
+      <td>0.547</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2331–2350</td>
+      <td>CACCCAAGAG•GTGTTCGCCC</td>
+      <td>0.202</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2961–2980</td>
+      <td>TGAGGCCGAG•GTGCAGATCG</td>
+      <td>0.194</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3083–3102</td>
+      <td>AGATGTCTGA•GTGTGTGCTG</td>
+      <td>0.495</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>3296–3315</td>
+      <td>GCACCCATTG•GTTCGTGACA</td>
+      <td>0.392</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td>3452–3471</td>
+      <td>AACTGGACAA•GTACTTTAAG</td>
+      <td>0.436</td>
+      <td>+2</td>
+    </tr>
+    <tr>
+      <td colspan="4">S1 ectodomain: encoded by nucleotides 1–2049 (aa 1–683)</td>
+    </tr>
+    <tr>
+      <td colspan="4">S2 domain: encoded by nucleotides 2050–3822 (aa 684–1273)</td>
+    </tr>
+    <tr>
+      <td colspan="4">ACE2-binding domain: encoded by nucleotides 998–1720 (aa 319–551)</td>
+    </tr>
+  </tbody>
+</table>
+
 Similarly, we performed the same in silico analysis also for codon-optimized Spike open reading frames in three different adenovirus vector systems. First, these were an experimental and codon-optimized variant of the original Wuhan sequence, cloned into a human adenovirus type five vector backbone (Ad5.S). Second, the Spike sequence of ChAdOx1-S was derived by sequencing of adenoviral DNA isolated from Vaxzevria, while, third, the Spike sequence of Ad26.COV2.S was obtained directly from Janssen (kindly provided by Roland Zahn). Analyses revealed that codon optimization resulted in an increased number of potential splice sites in all three adenoviral-encoded Spike sequences (Ad5.S: 12 SD sites, 10 SA sites; ChAdOx1-S: 13 SD and 5 SA sites, Ad26.COV2.S: 9 SD and 10 SA sites, see Table 2B–D) compared to the open reading frame of the wildtype Wuhan SARS-CoV-2 Spike sequence.
 
-## Significant splicing of codon-optimized Spike sequences
+### Significant splicing of codon-optimized Spike sequences
 
 First, we analyzed potential splice events within the open reading frame of wildtype Spike, which contains, according to our prediction, six potential SD sites. Since these splice signal sequences do not occur like in normal genes where every SD site is located upstream of a SA site, both flanking an intronic sequence such SD sites are ‘unsaturated’ and usually give rise to cryptic splice reactions in cis or in trans to potential SA (Kowarz et al., 2011). To this end, we generated three splice traps in which the Spike sequence was inserted upstream of a perfect SA site, which again was fused in three different reading frames (0, +1, +2) to a full-length Luciferase gene without start codon. In this system Luciferase activity is only detected if splicing occurs. Respective constructs were cloned into a sleeping beauty transposon vector (pSBbi::Spike-Luc-0/+1/+2 GP) and used for stable transfection of HEK293T cells.
 
@@ -74,7 +487,7 @@ We also performed Western blot experiments to determine steady-state levels of i
 
 **Figure 3.:** Spike and Spike-fusion proteins were concentrated with the help of immunoprecipitation beads from all cell lysates and supernatants of HEK293T cells stably transfected with the splice trap constructs encoding the codon-optimized Spike sequences derived from the adenoviral vectors Ad5.S, ChAdOx1-S, or Ad26.COV2.S. Proteins bound to these beads were used to perform Western blot experiments, which are displayed. Bead eluates were separated by SDS-PAGE, blotted, and proteins were detected with anti-Spike or anti-Luciferase antibodies.
 
-## Verification of various splice products derived from wildtype and codon-optimized Spike open reading frames
+### Verification of various splice products derived from wildtype and codon-optimized Spike open reading frames
 
 To validate these findings at the molecular level, we analyzed RNA from cell lines transfected with the three wildtype Spike-encoding splice trap constructs. Potential splice events were visualized by RT-PCR experiments using a set of four Spike primers pointing 3’-prime against one Luciferase primer pointing 5’-prime. All deviating PCR bands were analyzed by Sanger sequencing (see Figure 4, agarose gels). As shown in Figure 4, we observed several splice reactions from predicted splice sites (e.g. SD1-3), but also internal splice reactions that lead to frame-shift events. We also found two splice events downstream of the ACE2-binding domain resulting again in a fusion between Spike and Luciferase.
 
@@ -96,7 +509,7 @@ To exclude that observed occurring splicing of the Spike mRNA was an artifact du
 
 **Figure 7.:** HeLa or HepG2 cells were transduced with the adenoviral vectors Ad5.S and RNA was isolated 48 hr post transduction. Three universal primers binding at three different locations within the Spike genes and one universal reverse primer binding to the adenoviral pIX that is located directly adjacent to the Spike gene sequence were used to investigate splicing events. The resulting DNA fragments are shown in the agarose gel on the left. Appropriate PCR bands were excised from the gel and either directly sequenced or cloned for sequencing. The predominately detected splice events are displayed on the right.
 
-## Predominant and cell type-dependent prevalence of ChAdOx1-S Spike RNA splicing
+### Predominant and cell type-dependent prevalence of ChAdOx1-S Spike RNA splicing
 
 To validate the previous analyses of observed splicing between the adenoviral vector-encoded Spike and adjacent adenoviral protein pIX transcripts, we performed additional PCR on cDNA samples of HeLa cells transduced with equal efficiencies (Figures 8 and 9) with Ad5.S, ChAdOx1-S, and Ad26.COV2.S vectors. Using forward primers that bind to the Spike sequence and reverse primers that bind to the pIX sequences revealed for all three vectors read-through events with DNA fragment lengths of 1802, 2037, and 1865 bp for Ad5.S, ChAdOx1-S, and Ad26.COV2.S, respectively (Figure 9, green arrows). While in Ad26.COV2.S-transduced HeLa cells no truncated cDNA fragments were detected, PCR amplification of Ad5.S- and ChAdOx1-S-transduced HeLa cells samples showed additional DNA bands of shorter lengths, confirming splicing at different positions within the read-through sequences. Interestingly, sequencing of the shortest DNA fragment of Ad5.S-transduced samples (Figure 9, red arrow) revealed that splicing occurred in-frame from the predicted SD site upstream of the TM domain of the Spike protein to the SA site upstream of the pIX start codon (Figure 5, splice site at nt 3610), resulting in a potentially secreted fusion protein. Similar results were obtained from sequencing of the shortest DNA fragment of ChAdOx1-S-transduced samples (Figure 9A: blue arrow): splicing took place between the predicted SD site upstream of the TM of the Spike protein (Figure 6, splice site at nt 3610) to the SA site upstream of the pIX start codon (Figure 9F). However, this splicing event resulted in the generation of a stop codon, thus no fusion but though secreted, truncated proteins would be translated due to the lacking TM domain. Sequencing of the most abundant DNA fragment in ChAdOx1-S samples (Figure 9, white arrow) revealed splicing from the predicted SD site within the BGH poly(A) tail to the SA site upstream of the pIX start codon (Figure 6, splice site at nt –298).
 
@@ -112,7 +525,7 @@ Comparing the total amount of PCR-generated DNA indicates significant higher Spi
 
 Interestingly, the use of cells of other tissue origin, in particular the human hepatocyte cell line HepG2 and the murine C2C12 myocytes, demonstrated that the abundance of splicing events has been cell type-dependent. In cDNA samples of Ad5.S-transduced C2C12 cells, only the full-length read-through fragment was detected – indicating no splicing at all (Figure 9C: green arrow). In contrast, for ChAdOx1-S-transduced C2C12 cells almost exclusively the BGH-pIX splice product was detected (Figure 9C: white arrow and Figure 9E). Moreover, in hepatocytes the ratio between full-length and spliced products was again different for Ad5.S- or ChAdOx1-S-transduced cells (Figure 9B). While PCR patterns of Ad5.S-transduced HepG2 cells looked the same as with HeLa cells, in ChAdOx1-S-transduced HepG2 cells the Spike-pIX splice product was the predominantly detected fragment (Figure 9B: blue arrow and Figure 9F). Since these splice products lack the TM-coding sequence, the resulting protein will likely be secreted.
 
-## Significant amounts of splice events detected in genome-wide RNA-Seq data of ChAdOx1-transduced cells
+### Significant amounts of splice events detected in genome-wide RNA-Seq data of ChAdOx1-transduced cells
 
 To broaden our perspective regarding the occurrence of splicing upon cell transduction by ChAdOx1 from a pIX-focused to a genome-wide level, we also analyzed publicly available RNA-Seq data sets of ChAdOx1-S-transduced MRC-5 cells (Almuqrin et al., 2021). These data sets were based on nanopore sequencing data, which by nature are rather error-prone and thus analysis is complicated. Therefore, we first filtered the data sets for reads containing the ChAdOx1-S Spike gene. In a second step, we both looked for the presence of pIX sequences and blasted all Spike sequence reads against the human genome. The result of such an exemplary data mining experiment is shown in Figure 10, where the analysis of the data set derived from MRC-5 cells at day 72 after transduction with ChAdOx1-S is displayed. Out of millions of reads, 9632 reads could be attributed to the codon-optimized Spike gene. As schematically depicted in Figure 10, the Spike open reading frame is flanked at the 5’-end by the CMV promoter with a small intron and at the 3’-end by the BGH poly(A) signal and the pIX gene, respectively. A 93 nucleic acid sequence coding for the signal sequence of the tissue plasminogen activator (tPA) protein replaces the original start codon of the Spike gene. In this analysis, we identified, within the 9632 reads containing Spike nucleotide sequences, a total of 120 trans-spliced mRNAs, containing either host cell gene exons (fusing a total of 1 until 18 exons) fused to either the genuine SA of the CMV promoter (n = 8) or the internal Spike SA sites (n = 47). Similarly, we found Spike sequences fused to exons of host cell genes (between 1 and 28 exons). These trans-splicing events occurred either from the Spike open reading frame (n = 32, 32 different SD sites) or from the identified BGH SD sites (n = 33, 1 SD site). Exemplarily, we have identified the following genes: RSP, MSPG2, GPN2, CCN1, MRPL9, SORT1, UROS, TMEM35B, PRDX, ADAR, IFITM1, MMP1, DUD, PKM, ALDOA, MT2A, DDX42, etc. A total of 50 Spike-pIX fusions were found as well (eight SD sites), while 79 reads were found from the BGH SD to the SA upstream of the pIX-coding sequence as it has been observed with HeLa, HepG2, and C2C12 cells. Although the frequency of these splicing event was rather low compared to normal Spike reads (1.24–1.33% vs. 97.41%), their identification was unexpected. For comparison, we also determined the number of reads for two housekeeping genes, ABL1 and GAPDH, respectively: ABL1 reads were only 44, while GAPDH reads were 4586. Thus, the amount of 249 reads that displayed aberrant forms of Spike should be considered as significant.
 
@@ -146,6 +559,67 @@ Recently the VITT syndrome has been described, suggesting a complex inflammatory
 
 The distinguishing features of the three different adenovirus vectors Ad5.S, ChAdOx1-S, and Ad26.COV2.S have been summarized in Table 3. Based on the analysis of the design of the vaccines and their splice behavior of the encoded transcripts as described in this report, we have identified several aspects that should be considered for future adenovirus vaccine design and development.
 
+**Table 3.**
+ Comparison of all three adenoviral vector-based constructs.Based on our analysis of three different adenoviral vectors, there were differences between the vaccines. The displayed table analyzes the use of promoter, the different poly(A) elements, and changes inside the sequences of Spike, for example, additional sequences, presence or deletion of the furin cleavage sequence, the addition of two prolines to stabilize of the prefusion configuration of Spike, and site-directed mutations that should avoid splicing.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Vector</th>
+      <th>Promotor</th>
+      <th>Additional sequences</th>
+      <th>Terminator</th>
+      <th>RRAR</th>
+      <th>PP</th>
+      <th>Splicing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ad5.S</td>
+      <td>HAd5</td>
+      <td>CMV with Intron</td>
+      <td>–</td>
+      <td>SV40</td>
+      <td>Present</td>
+      <td>No</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>ChAdOx1-S</td>
+      <td>ChAd</td>
+      <td>CMV with Intron</td>
+      <td>+ tPA (31aa)</td>
+      <td>BGH</td>
+      <td>Present</td>
+      <td>No</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Ad26.COV2.S</td>
+      <td>HAd26</td>
+      <td>CMV w/o Intron</td>
+      <td>–</td>
+      <td>SV40</td>
+      <td>Deleted</td>
+      <td>Present</td>
+      <td>Splice sites partially deleted</td>
+    </tr>
+    <tr>
+      <td>Comment</td>
+      <td></td>
+      <td></td>
+      <td>Upstream ATG</td>
+      <td></td>
+      <td>pos 682–685</td>
+      <td>pos 986/987</td>
+      <td>AZ &gt;&gt; J</td>
+    </tr>
+  </tbody>
+</table>
+
 We have two different data sets. One data set has been created by large-scale sequencing of splice events of all three adenoviral vector systems after transduction in HeLa and HepG2 cell lines (Figures 5—7), where the different splice events of all three vectors have been investigated by simply analyzing a large number of PCR fragments through direct sequencing or subcloning and sequencing. The second data set is based on experiments, where all three adenoviral vectors were analyzed for their splice activity after adjusting the MOIs in the HeLa, HepG2, and C2C12 cell lines (Figure 8). In the latter, read-through transcripts have been investigated for the activity of the different poly(A) signal sequences (BGH vs. SV40), but also for the amount of splice events in that particular transcript (Figure 9). Transcriptional read-through obviously is a precondition for the generation of splice events between the Spike-coding sequence and the pIX gene encoded by the adenoviral vector genome. Very little transcriptional read-through was observed with ChAdOx1-S that can be linked to the BGH poly(A) signal used in this construct. Apparently, the SV40 poly(A) signal is not as efficient in termination of the transcript as we observed with Ad5.S. In these cases, differences were observed for splice events which may point to the fact that tissue-specific splicing may account as well as for some differences in the creation of soluble Spike protein variants.
 
 Based on our findings, we suggest that the Spike open reading frames – wildtype or codon-optimized for expression – in DNA-based vaccines should always be analyzed for the presence of strong SD sites. If possible, strong SD should be avoided to prevent unintended splice. We note that the Janssen Ad26.COV2.S vaccine has been modified to reduce the number of strong SDs, while the Ad5.S and ChAdOx1-S vectors still contain strong SDs, which is reflected in a large number of detectable splicing events, while only very few splicing events were detected in the Ad26.COV2.S vaccine.
@@ -158,55 +632,55 @@ We strongly emphasize the consideration of these aspects for the rational design
 
 ## Materials and methods
 
-## Splice site prediction
+### Splice site prediction
 
 The SARS-CoV-2 Spike nucleic acid sequences of of the Wuhan SARS-CoV-2 strain (NC_045512.2) and codon-optimized Spike sequences encoded by the three investigated adenoviral vectors Ad5.S, ChAdOx1-S, and Ad26.COV2.S were analyzed for the presence of SD and SA sites using the state-of-the-art SpliceRover online tool (bioit2.irc.ugent.be/rover/splicerover). Sites with a score below 0.15 were excluded from further analysis (Zuallaert et al., 2018). The ASSP online tool was used as second algorithm for potential splice site identification (Wang and Marín, 2006).
 
 Cloning of the open reading frame of SARS-CoV-2 Spike protein cDNA prepared from the RNA of the Wuhan SARS-CoV-2 strain (NC_045512.2) was kindly provided by Tuna Toptan and Marek Widera (Institute of Medical Virology, University Hospital Frankfurt am Main, Goethe-University, Frankfurt am Main, Germany). The cDNA was used for PCR experiments and for cloning of the open reading frame of the Spike gene following amplification using the following primers: CoV-2_S.Flag.Sfi.F 5'-aGGCCTCTGAGGCCaccatggattacaaggatgacgacgataagatgtttgtttttcttgttttattgccactagtctct-3', CoV-2_S.Sfi.R 5'-aGGCCTGACAGGCCttatgtgtaatgtaatttgactcctttgagcac-3'. Resulting amplimers were cloned into the Topo II vector system and appropriate clones were validated by sequence analyses. The final clone was digested with Sfi1 and cloned into the Sleeping Beauty transposon vector system pSBTet-GP (GFP/Puromycin; Kowarz et al., 2015). The recombinant Spike was N-terminally modified with a FLAG-tag.
 
-## Development of a Spike/splice reporter system
+### Development of a Spike/splice reporter system
 
 The cloned wildtype Spike open reading frame was used to establish an additional splice reporter system. The Spike/splice reporter system consists of the full-length Spike gene including the stop codon, followed by an intronic sequence that contains the necessary branch-A nucleotide, as well as a perfect SA site fused in three different reading frames (0, +1, +2) to a full-length Luciferase gene (without start codon). In this system Luciferase activity is only detected if splicing occurs. Thus, three independent Spike/splice reporter constructs (pSBbi::Spike-Luc-0/+1/+2 GP) were cloned into the integrating Sleeping Beauty transposon vector pSBbi-GP (Kowarz et al., 2015). Additionally, isolated adenoviral DNAs of Ad5.S, ChAdOx1-S, and Ad26.COV2.S were used as templates to PCR-amplify the 3822 bp codon-optimized open reading frames of the Spike sequences. These PCR fragments were also cloned into the three Luciferase reporter gene constructs pSBbi::LUC-0/+1/+2 GP. The resulting Sleeping Beauty transposon vectors were sequence-validated and subsequently stably integrated into the genome of HEK293T cells for RT-PCR and Luciferase reporter experiments. The ChAdOx1-S Spike sequence constructs were cloned without the tPA leader sequence (+31aa) in order to make all three different constructs (Ad5.S, ChAdOX1-S, Ad26.COV2.S) equal in length. The AGA codon at position 94–96 of the original AZ vector was thus converted into an ATG start codon. This way, all tested construct had an open reading frame of 3822 nucleotides.
 
-## Stable transfection experiments
+### Stable transfection experiments
 
 All splice reporter constructs were stably transfected into HEK293T cells and selected for 3–5 days with 2 µg/ml Puromycin. Cells were used for Luciferase experiments or for the isolation of total RNA (Qiagen) in order to investigate potential splice events by RT-PCR.
 
-## Adenoviral vectors
+### Adenoviral vectors
 
 Ad5.S particles produced in N52.E6 cells (Kowarz et al., 2015) had a physical titer of 3.35 × 108 VP/μl and were dissolved in 50 mM HEPES, 150 mM NaCl, 10% glycerol, pH 7.4. According to the manufacturer, the ChAdOx1-S vaccine from AstraZeneca (lot number ABV9317) had a physical titer of 1 × 108 VP/μl and particles were dissolved in 10 mM histidine, 7.5% sucrose (w/v), 35 mM NaCl, 1 mM MgCl2, 0.1% polysorbate 80 (w/v), 0.1 mM EDTA, and 0.5% EtOH (w/v). According to the manufacturer, Ad26.COV2.S vaccine from Janssen (lot number XD955 and 21C10-01) had a titer of 1 × 108 VP/µl and particles were dissolved in citric acid monohydrate (0.14 mg), trisodium citrate dihydrate (2.02 mg), ethanol (2.04 mg), 2-hydroxypropyl-β-cyclodextrin (25.50 mg), polysorbate-80 (0.16 mg), sodium chloride (2.19 mg).
 
-## Production and purification of Ad5.S vectors
+### Production and purification of Ad5.S vectors
 
 Ad5.S vector particles used in this study are E1- and E3-deleted replication-incompetent vector particles based on human adenovirus species C type 5 (based on GenBank AY339865.1, Δ441–3,522, and Δ28123–30813). The CMV promoter-controlled SARS-CoV2 Spike expression cassette with a SV40 poly(A) signal is based on the GenBank sequence YP_009724390.1, codon-optimized for Homo sapiens and was inserted in the E1 region. Particles were produced in E1-complementing N52.E6 cells (Schiedner et al., 2000) and purified by CsCl gradient ultracentrifugation as described earlier (Krutzke et al., 2020). In brief: 4 × 108 cells were transduced with MOI 300 from stock solution; 48 hr post transduction cells were harvested, resuspended in 3 ml 150 mM NaCl, 50 mM HEPES, pH 7.4, and lysed by freeze/thaw cycles. Cell debris was separated by centrifugation at 2000× g for 10 min, and supernatants were layered on a CsCl step gradient (density bottom: 1.41 g/ml; density top: 1.27 g/ml, 50 mM HEPES, 150 mM NaCl, pH 7.4) and centrifuged at 176,000× g for 2 hr at 4°C. Vector particles were aspirated and further purified by a consecutive continuous CsCl gradient (density: 1.34 g/ml, 50 mM HEPES, 150 mM NaCl, pH 7.4) and centrifuged at 176,000× g for 20 hr at 4°C. Vector particles were aspirated and desalted by size exclusion chromatography using PD10 columns (GE Healthcare). Physical vector titers were determined by optical density measurement at 260 nm (Mittereder et al., 1996).
 
-## Isolation of adenoviral DNA from vector stock solution
+### Isolation of adenoviral DNA from vector stock solution
 
 Adenoviral DNA was isolated from 200 µl vector stock solutions of Ad5.S, ChAdOx1-S, and Ad26.COV2.S using the QIAamp DNA Mini Kit (250). Eluted DNA was precipitated with EtOH and pellets resuspended in 10 µl 10 mM Tris buffer, pH 8.0.
 
-## Cell lines
+### Cell lines
 
 HEK293T cells were maintained in DMEM Low Glucose medium mixed with 10% (v/v) FBS, and supplemented with 2 mM L-glutamine, 100 U/ml penicillin, and 100 μg/ml streptomycin. HeLa (human cervical cancer), HepG2 (human hepatocyte carcinoma), and C2C12 (murine muscle myoblast) were cultivated in MEM, alphaMEM, or DMEM medium, respectively, all of which were supplemented with 10% FBS and 1% antibiotics. Cells were grown at 37°C in 5% CO2 and a relative humidity of 95%. Cells were passaged twice a week except for C2C12, which were passaged three times a week. For HeLa and HepG2 cells adenoviral vector transduction was done 24 hr after cell seeding, whereas C2C12 cells were incubated for 72 hr after seeding to let them grow dense and start differentiation into myocytes. Cell lines were obtained from ATCC (HEK293T) or DMSZ (HeLa, HepG2, C2C12) and are tested for their cell identity by STR profiling as provided by company. In addition, these cell stocks were tested for mycoplasma infections (as not already done by the company), before being expanded in cell culture for 14 days and subsequently frozen as cell stocks in liquid nitrogen. For all cell culture experiment, such cell stocks were thawed and used in cell culture for a maximum of several weeks.
 
-## Cellular uptake assays with different adenoviral vectors
+### Cellular uptake assays with different adenoviral vectors
 
 1 × 105 HeLa, HepG2, and C2C12 cells were transduced with indicated physical MOI of Ad5.S, ChAdOx1-S, or Ad26.COV2.S. Cells were incubated with the vectors for 2 hr at 37°C before cells were harvested and total DNA was isolated using GenElute Mammalian Genomic DNA Miniprep Kit (Sigma) according to the manufacturer’s instructions. DNA concentrations were determined by optical density measurement at 260 nm. Intracellular adenoviral genome copy numbers in 20 ng total DNA were analyzed by quantitative real-time PCR. Primers used for Ad5.S and ChAdOx1-S samples: fw.: 5’-TAGACGATCCCTACTGTACG-3’; rv.: 5’-GGAAATATGACTACGTCCGG-3’. Primers used for Ad5.S and Ad26.COV2.S samples: fw.: 5’-CAGGACGCCTCGGAGTACCTGAG-3’; rv.: 5’ GGGGCCACCGTGGGGTT-3’. DNA was dissolved in 2 µl and mixed with 10 μl SYBR Green (Kapa Biosystems), 0.4 μl 10 pmol/μl of each forward and reverse primer in a total volume of 20 μl. Thermocycles: first cycle: 10 min at 95°C; 40 cycles: 30 s 95°C, 30 s 60°C, 8 s 72°C; followed by a final cycle of 10 min at 72°C. Assays were performed in biological and technical triplicates.
 
-## Analysis of SARS-CoV-2 Spike RNA splicing after adenovirus vector-mediated cell transduction
+### Analysis of SARS-CoV-2 Spike RNA splicing after adenovirus vector-mediated cell transduction
 
 Adenoviral cell transduction assays were performed using HeLa, HepG2, and C2C12 cells. To achieve equivalent cell transduction efficiencies with adenovirus vectors of different strains, HeLa cells were transduced with MOI 1000 for Ad5.S, MOI 3000 ChAdOx1-S, and MOI 6000 for Ad26.COV2-S. HepG2 cells were transduced with MOI 1000 for Ad5.S, MOI 3000 for ChAdOx1-S, and MOI 10,000 for Ad26.COV2.S. C2C12 cells were transduced with MOI 1000 for both Ad5.S and ChAdOx1-S (see Figure 8). Cells were incubated with the vectors for 48 hr at 37°C, before RNA was isolated using RNeasy Plus Mini Kit (Qiagen) followed by cDNA generation using Maxima H Minus cDNA Synthesis (ThermoScientific) according to the manufacturer’s instructions. cDNA was used for RT-PCR (see section RT-PCR experiments) or 2 µl cDNA was used for Taq polymerase PCR in a total volume of 25 µl. Forward primer binding to the Spike sequence: 5’-CAAGGACTTCGGCGGCTTCAA-3’, used for all three vectors. Reverse primer sequences binding to the adenoviral pIX sequence: 5’-CCCATCACATTCTGACGCAC-3’ for Ad5.S and ChAdOx1-S; 5’-TGCTGTCGAGCGACGAGTTC-3’ for Ad26.COV2.S. Thermocycles: 3 min at 95°C; 40 cycles: 30 s 95°C, 30 s 55°C, 2 min 68°C; 8 µl of Ad5.S and 20 µl of ChAdOx1-S and Ad26.COV2.S PCR products were separated on agarose gels, DNA bands were excised, purified with gel extraction kit (Qiagen), cloned using the pCR 2.1-TOPO TA cloning kit (ThermoScientific) and sequenced using primers 5’-CAGGAAACAGCTATGAC-3’ and 5’-GTAAAACGACGGCCAG-3’. Assays were performed in biological triplicates.
 
-## RT-PCR experiments
+### RT-PCR experiments
 
 For RT-PCR experiments a series of primers were used. To test for splice events in the three reporter cell lines, we used the following primer sequences: S.0233.F 5'-GGTTTGATAACCCTGTCCTACCA-3', S.1027.F 5'-AACGCCACCAGATTTGCATC-3', S.1712.F 5'-ACACTACTGATGCTGTCCGTG-3', S.2482.F 5'-CTTGCAGATGCTGGCTTCAT-3', and the reverse primer Luc4008.R 5’-GTCCACCTCGATATGTGCGTC-3’. RT-PCR experiments were carried out under stringent conditions, and PCR fragments deviating from expected PCR bands were analyzed by Sanger sequencing.
 
 For the analysis of RNA derived from adenoviral vector transduced HeLa and HepG2 cells, we developed a series of universal primers. These were the following primers: 506univ.F 5’-GCGAGTTCCAGTTCTGCAACG-3’, 1,810univ.F 5’-CAGACACTGGAAATCCTGGACATCAC-3’, 3610 .F 5’-GCGCCATCAGCTCTGTGCTG-3’, and the reverse primer pIXuniv.R 5’-CGTCAGAATGTGATGGGATCGACG-3’. RT-PCR experiments were carried out under stringent conditions, and PCR fragments deviating from expected PCR bands were analyzed by Sanger sequencing. Thermocycles: first cycle: 2 min at 94°C; 35 cycles: 20 s 95°C, 30 s 60°C, 40 s 72°C; followed by a final cycle of 3 min at 72°C.
 
-## Luciferase assays
+### Luciferase assays
 
 Luciferase assays were performed using HEK293T cells that were stably transfected with the Sleeping Beauty Luciferase reporter gene constructs that exhibit a constitutive GFP expression cassette; 5000 cells per well were seeded in black glass bottom 96-well plates (Greiner BioOne). After 2 days, GFP fluorescence (RFU) was measured with the Varioskan Flash Plate-reader (Thermo Fisher Scientific). Subsequently, D-luciferin (final concentration of 187.5 µg/ml) was added with the automatic dispense system, and Luciferase activity was determined (RLU). A normalization procedure was used to express the RLU/RFU ratio to account for intercellular differences. All measurements were carried out with n = 6, while Luciferase activity in medium was measured once at two different time points (t = 0 and t = 48 hr). For this purpose, 200 µl medium was centrifugated for 5 min at 800× g and 100 µl supernatant was used to determine Luciferase activity.
 
-## Immunoprecipitation and Western blot analyses
+### Immunoprecipitation and Western blot analyses
 
 Cells were lysed using immunoprecipitation buffer (150 mM NaCl, 10 mM Tris, 1 mM EDTA, 1 mM EGTA, 1% Triton-X-100, 0.5% NP-40, protease inhibitor cocktail [Roche Diagnostics]) for 30 min under constant agitation at 4°C. Cell lysates were separated from cell debris by centrifugation for 5 min at 2000 rpm (376× g) and 4°C. Lysates were quantified using Pierce BCA Protein Assay Kit (Thermo Scientific) according to the manufacturer’s protocol and adjusted to 40 µg/µl.
 

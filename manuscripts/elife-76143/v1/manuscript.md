@@ -9,11 +9,11 @@
 
 ### Affiliations
 
-1. https://ror.org/0384j8v12 School of Biomedical Engineering, Faculty of Engineering, The University of Sydney Sydney Australia
-2. https://ror.org/0384j8v12 Brain and Mind Centre, The University of Sydney Sydney Australia
-3. https://ror.org/0384j8v12 School of Psychology, Faculty of Science, The University of Sydney Sydney Australia
-4. https://ror.org/0384j8v12 Faculty of Medicine and Health Translational Research Collective, The University of Sydney Sydney Australia
-5. https://ror.org/0384j8v12 Sydney Imaging, University of Sydney Sydney Australia
+1. School of Biomedical Engineering, Faculty of Engineering, The University of Sydney Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
+2. Brain and Mind Centre, The University of Sydney Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
+3. School of Psychology, Faculty of Science, The University of Sydney Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
+4. Faculty of Medicine and Health Translational Research Collective, The University of Sydney Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
+5. Sydney Imaging, University of Sydney Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
 
 † Corresponding author
 
@@ -43,13 +43,184 @@ Our results represent a major advance in (i) our ability to map the anatomical c
 
 We first characterised SC between the whole hippocampus and all cortical areas of the HCP Multi-Modal Parcellation (HCPMMP) (Glasser et al., 2016). The primary focus of this study was SC between the hippocampus and non-MTL cortical areas. We therefore focus on cortical areas outside of the MTL (information relating to MTL cortices is presented in Appendix 1, Figure 1—figure supplement 1, Figure 2—figure supplement 1, and Supplementary files 1 and 2).
 
-## Which specific cortical areas most strongly connect with the whole hippocampus?
+### Which specific cortical areas most strongly connect with the whole hippocampus?
 
 For brevity, we present results relating to the 20 cortical areas with the highest degree of SC with the whole hippocampus. Abbreviations for all cortical areas are defined in Supplementary file 3. The location of the most highly connected cortical areas are displayed in Figure 2—figure supplements 2–4. For the location of all other cortical areas, we refer the reader to the labelled Human Connectome Project Multi-modal Parcellation of Human Cerebral Cortex, which can be found at https://balsa.wustl.edu/sceneFile/Zvk4.
 
 The hippocampus displayed the highest degree of SC with discrete cortical areas in temporopolar (areas TGv, TGd), inferolateral temporal (areas TF, TE2a, TE2p), medial parietal (areas RSC, ProS, POS1, POS2, DVT) dorsal and ventral stream visual (areas V3A, V6, FFC, VVC, VMV1, VMV2), and early visual (occipital) cortices (areas V1, V2, V3, V4). Results are summarised in Figure 1A, and Table 1 lists each cortical area and their associated strength of connectivity with the whole hippocampus. A full list of all cortical areas of the HCPMMP and their associated strengths of connectivity is provided in Supplementary file 1 .
 
-## Do cortical areas display preferential connectivity along the anterior–posterior axis of the hippocampus?
+![Figure 1.](https://cdn.elifesciences.org/articles/76143/elife-76143-fig1-v1.jpg)
+
+**Figure 1.:** (A) Histogram plotting the mean structural connectivity (n=10; given by the sum of SIFT2-weighted values) associated with the 20 cortical areas most strongly connected with the whole hippocampus (excluding medial temporal lobe [MTL] areas; see Figure 1—figure supplement 1 for MTL values). Error bars represent the standard error of the mean. (B) Histogram plotting the corresponding mean SIFT2-weighted values associated with anterior (yellow), body (red), and tail (blue) portions of the hippocampus for the 20 most strongly connected cortical areas presented in (A). Errors bars represent the standard error of the mean.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76143/elife-76143-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Histogram plotting the mean structural connectivity (n=10; given by the sum of SIFT2-weighted values) associated with MTL cortical areas connected with the whole hippocampus. Error bars represent the standard error of the mean. (B) Histogram plotting the corresponding mean SIFT2-weighted values associated with anterior (yellow), body (red), and tail (blue) portions of the hippocampus for MTL cortical areas presented in (A). Errors bars represent the standard error of the mean.
+
+**Table 1.**
+ Twenty cortical brain areas (excluding medial temporal lobe) with the highest degree of anatomical connectivity with the whole hippocampus.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Cortical area</th>
+      <th rowspan="2">Location of area</th>
+      <th colspan="3">Whole hippocampus</th>
+    </tr>
+    <tr>
+      <th>Mean SIFT2-weighted value(connectivity strength; n=10)</th>
+      <th>Standard error of mean</th>
+      <th>Percent of all cortical connections accounted for by area(percent of cortical connections excluding MTL areas)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TF</td>
+      <td>Lateral temporal cortex</td>
+      <td>7673</td>
+      <td>886</td>
+      <td>5.10 (10.61)</td>
+    </tr>
+    <tr>
+      <td>ProS</td>
+      <td>Medial parietal cortex (including posterior cingulate)</td>
+      <td>5483</td>
+      <td>784</td>
+      <td>3.64 (7.58)</td>
+    </tr>
+    <tr>
+      <td>V1</td>
+      <td>Early visual cortex (occipital)</td>
+      <td>5385</td>
+      <td>579</td>
+      <td>3.58 (7.45)</td>
+    </tr>
+    <tr>
+      <td>V2</td>
+      <td>Early visual cortex (occipital)</td>
+      <td>3840</td>
+      <td>462</td>
+      <td>2.55 (5.31)</td>
+    </tr>
+    <tr>
+      <td>POS1</td>
+      <td>Medial parietal cortex (including posterior cingulate)</td>
+      <td>3712</td>
+      <td>424</td>
+      <td>2.47 (5.13)</td>
+    </tr>
+    <tr>
+      <td>TGd</td>
+      <td>Temporal pole</td>
+      <td>3465</td>
+      <td>288</td>
+      <td>2.30 (4.79)</td>
+    </tr>
+    <tr>
+      <td>TGv</td>
+      <td>Temporal pole</td>
+      <td>3337</td>
+      <td>313</td>
+      <td>2.22 (4.61)</td>
+    </tr>
+    <tr>
+      <td>V3</td>
+      <td>Early visual cortex (occipital)</td>
+      <td>3079</td>
+      <td>450</td>
+      <td>2.05 (4.26)</td>
+    </tr>
+    <tr>
+      <td>TE2a</td>
+      <td>Lateral temporal cortex</td>
+      <td>2214</td>
+      <td>288</td>
+      <td>1.47 (3.06)</td>
+    </tr>
+    <tr>
+      <td>VMV2</td>
+      <td>Ventral stream visual cortex</td>
+      <td>2105</td>
+      <td>247</td>
+      <td>1.40 (2.91)</td>
+    </tr>
+    <tr>
+      <td>RSC</td>
+      <td>Medial parietal cortex (including posterior cingulate)</td>
+      <td>2063</td>
+      <td>121</td>
+      <td>1.37 (2.85)</td>
+    </tr>
+    <tr>
+      <td>VVC</td>
+      <td>Ventral stream visual cortex</td>
+      <td>1956</td>
+      <td>220</td>
+      <td>1.30 (2.71)</td>
+    </tr>
+    <tr>
+      <td>DVT</td>
+      <td>Medial parietal cortex (including posterior cingulate)</td>
+      <td>1939</td>
+      <td>335</td>
+      <td>1.29 (2.68)</td>
+    </tr>
+    <tr>
+      <td>POS2</td>
+      <td>Medial parietal cortex (including posterior cingulate)</td>
+      <td>1802</td>
+      <td>248</td>
+      <td>1.20 (2.49)</td>
+    </tr>
+    <tr>
+      <td>VMV1</td>
+      <td>Ventral stream visual cortex</td>
+      <td>1788</td>
+      <td>248</td>
+      <td>1.19 (2.47)</td>
+    </tr>
+    <tr>
+      <td>FFC</td>
+      <td>Ventral stream visual cortex</td>
+      <td>1670</td>
+      <td>172</td>
+      <td>1.11 (2.31)</td>
+    </tr>
+    <tr>
+      <td>V4</td>
+      <td>Early visual cortex (occipital)</td>
+      <td>1601</td>
+      <td>127</td>
+      <td>1.06 (2.21)</td>
+    </tr>
+    <tr>
+      <td>TE2p</td>
+      <td>Lateral temporal cortex</td>
+      <td>1288</td>
+      <td>198</td>
+      <td>0.86 (1.78)</td>
+    </tr>
+    <tr>
+      <td>V6</td>
+      <td>Dorsal stream visual cortex</td>
+      <td>1050</td>
+      <td>195</td>
+      <td>0.70 (1.45)</td>
+    </tr>
+    <tr>
+      <td>V3A</td>
+      <td>Dorsal stream visual cortex</td>
+      <td>1029</td>
+      <td>197</td>
+      <td>0.68 (1.42)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Column 1 displays cortical areas as defined by the Human Connectome Project Multi-Modal Parcellation (HCPMMP) scheme and ordered by strength of connectivity with the whole hippocampus (abbreviations for all cortical areas are defined in Supplementary file 3). Column 2 indicates the broader brain region within which each cortical area is located. Column 3 displays the mean SIFT2-weighted value (connectivity strength) associated with each brain area. Column 4 displays the standard error of the mean. Column 5 displays the percent of all cortical connections accounted for by each area. Values in brackets indicate the percent of cortical connections accounted for by each area when excluding medial temporal lobe (MTL) areas._
+
+### Do cortical areas display preferential connectivity along the anterior–posterior axis of the hippocampus?
 
 Next, we conducted a more detailed characterisation of SC between each cortical area and the head, body, and tail portions of the hippocampus. For brevity, we present results relating to the 20 most highly connected cortical areas described above. Results are summarised in Figure 1B and Supplementary file 4, which lists each cortical area, their associated strength of connectivity with the head, body, and tail portions of the hippocampus, and the results of statistical analyses (Bonferroni-corrected paired-samples t-tests; see ‘Materials and methods’). A full list of all cortical areas and their associated strengths of connectivity with the head, body, and tail portions of the hippocampus are provided in Supplementary file 2.
 
@@ -65,11 +236,31 @@ Four areas had greater connectivity with the body of the hippocampus. These area
 
 To summarise, our results detail the degree to which specific cortical areas preferentially connect along the anterior–posterior axis of the hippocampus. While some cortical areas displayed gradients of connectivity strength along the anterior–posterior axis of the hippocampus, others displayed preferential connectivity with specific portions of the hippocampus.
 
-## Do cortical areas display unique distributions of endpoint density within the hippocampus?
+### Do cortical areas display unique distributions of endpoint density within the hippocampus?
 
 Our tractography pipeline was specifically tailored to allow streamlines to enter/leave the hippocampus and quantitatively measure the location and density of streamline endpoints within the hippocampus using TDI. We created endpoint density maps (EDMs) that allowed us to visualise the spatial distribution of hippocampal endpoint density associated with each cortical area (described in ‘Materials and methods’). While it is not feasible to present the results for all cortical areas of the HCPMMP, we describe results for the 20 most highly connected cortical areas described above. In relation to nomenclature, our use of the term ‘medial’ hippocampus refers to inferior portions of the hippocampus aligning with the distal subiculum, presubiculum, and parasubiculum. Our use of the term ‘lateral’ hippocampus refers to inferior portions of the hippocampus aligning with the proximal subiculum and CA1. In instances that we refer to portions of the hippocampus that align with the DG/CA4 or CA3/2, we state these regions explicitly by name.
 
 The results of group-level analyses confirmed that specific cortical areas preferentially connect with different regions within the human hippocampus. For example, areas in the medial parietal cortex (ProS, POS1, RSC, DVT, POS2) displayed high endpoint density primarily in medial portions of the posterior hippocampus (see yellow arrows in Figure 2A for a representative example of endpoint densities associated with RSC; see Figure 2—figure supplement 2 for other areas). In contrast, areas in temporopolar and inferolateral temporal cortex (TF, TGd, TGv, TE2a, TE2p) displayed high endpoint density primarily along the lateral aspect of the anterior 2/3 of the hippocampus and in a circumscribed region of the anterior medial hippocampus (see blue and white arrows, respectively, in Figure 2B for a representative example of endpoint densities associated with TGv; see Figure 2—figure supplement 3 for other areas). Similar to areas in the medial parietal cortex, areas in the occipital cortices (V1–4, V6, V3a) displayed high endpoint density primarily in the posterior medial hippocampus and, to a lesser degree, in a circumscribed region of the anterior medial hippocampus (see yellow and white arrows, respectively, in Figure 2C for endpoint densities associated with V1; see Figure 2—figure supplement 4 for other areas).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/76143/elife-76143-fig2-v1.jpg)
+
+**Figure 2.:** Representative examples of the location of endpoint densities associated with RSC in the medial parietal lobe (A), TGv in the temporal pole (B), and V1 in the occipital lobe (C). In each panel, the location of the relevant brain area is indicated in red on the brain map (left); a 3D-rendered representation of the bilateral group-level hippocampus mask is presented (middle; transparent grey) overlaid with the endpoint density map associated with each brain area (green); representative slices of the head, body, and tail of the hippocampus are displayed in the coronal plane (right; grey) and overlaid with endpoint density maps (white). Note that the spatial distribution of endpoint density within the hippocampus associated with each brain area differs along both the anterior–posterior and medial–lateral axes of the hippocampus. RSC and V1 displayed greatest endpoint density in the posterior medial hippocampus (yellow arrows in A, C). In contrast, TGv displayed greatest endpoint density in the anterior lateral hippocampus and in a circumscribed region in the anterior medial hippocampus (blue and white arrows, respectively, in B). Area V1 also expressed endpoint density in a circumscribed region in the anterior medial hippocampus (white arrows in C). A, anterior; P, posterior; M, medial; L, lateral.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76143/elife-76143-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Representative examples of the location of endpoint densities associated with EC (A), PeEc (B), PHA1 (C), PHA2 (D), and PHA3 (E). In each panel, the location of the relevant brain area is indicated in red on the brain map (top); a 3D-rendered representation of the bilateral group-level hippocampus mask (middle; transparent grey) is presented overlaid with the endpoint density map associated with each brain area (green); representative slices of the head, body, and tail of the hippocampus are displayed in the coronal plane (bottom; grey) and overlaid with endpoint density maps (white). Note that, as expected, the spatial distribution of endpoint density associated with MTL cortical areas is denser than that observed for non-MTL cortical areas (compare with Figure 2—figure supplements 2–4). EC displayed high endpoint density throughout the hippocampus (A). PeEc (B) and PHA3 (E) displayed the greatest endpoint density along the anterior–posterior extent of the lateral hippocampus (blue arrows) and in a circumscribed region in the anterior medial hippocampus (white arrows). PeEc and PHA3 showed little endpoint density in the posterior medial hippocampus. PHA1 (C) and PHA2 (D) displayed high endpoint density along the anterior–posterior extent of the lateral hippocampus (blue arrows), in the anterior medial hippocampus (white arrows) and, in contrast to PeEc and PHA3, in the posterior medial hippocampus (yellow arrows). A, anterior; P, posterior; M, medial; L, lateral.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/76143/elife-76143-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Representative examples of the location of endpoint densities associated with ProS (A), POS1 (B), RSC (C), DVT (D), and POS2 (E). In each panel, the location of the relevant brain area is indicated in red on the brain map (top); a 3D-rendered representation of the bilateral group-level hippocampus mask (middle; transparent grey) is presented overlaid with the endpoint density map associated with each brain area (green); representative slices of the head, body, and tail of the hippocampus are displayed in the coronal plane (bottom; grey) and overlaid with endpoint density maps (white). Note that the spatial distribution of endpoint density within the hippocampus associated with each of these medial parietal brain areas is primarily localised to the posterior medial hippocampus (yellow arrows in panels A–E). ProS and POS1 also display clusters of endpoint density in a circumscribed region in the anterior medial hippocampus (white arrows in panels A and B). A, anterior; P, posterior; M, medial; L, lateral.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/76143/elife-76143-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Representative examples of the location of endpoint densities associated with TF (A), Gd (B), TGv (C), TE2a (D), and TE2p (E). In each panel, the location of the relevant brain area is indicated in red on the brain map (top); a 3D-rendered representation of the bilateral group-level hippocampus mask (middle; transparent grey) is presented overlaid with the endpoint density map associated with each brain area (green); representative slices of the head, body, and tail of the hippocampus are displayed in the coronal plane (bottom; grey) and overlaid with endpoint density maps (white). Note that the spatial distribution of endpoint density within the hippocampus associated with each of these temporal brain areas is primarily localised to portions of the lateral hippocampal head and body (blue arrows in panels A–E) and a circumscribed region in the anterior medial hippocampus (white arrows in panels A–D). A, anterior; P, posterior; M, medial; L, lateral.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/76143/elife-76143-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Representative examples of the location of endpoint densities associated with V1 (A), V2 (B), V3 (C), V4 (D), and V6 (E). In each panel, the location of the relevant brain area is indicated in red on the brain map (top); a 3D- rendered representation of the bilateral group-level hippocampus mask (middle; transparent grey) is presented overlaid with the endpoint density map associated with each brain area (green); representative slices of the head, body, and tail of the hippocampus are displayed in the coronal plane (bottom; grey) and overlaid with endpoint density maps (white). Note that the spatial distribution of endpoint density within the hippocampus associated with each of these occipital brain areas is primarily localised to the posterior medial hippocampus (yellow arrows in panels A–E). V1 and V2 also display clusters of endpoint density in a circumscribed region in the anterior medial hippocampus (white arrows in panels A and B). A, anterior; P, posterior; M, medial; L, lateral.
 
 In parallel with these differences, specific regions within the hippocampus displayed high endpoint density for multiple cortical areas. For example, several medial parietal and occipital cortical areas displayed high endpoint density in the posterior medial hippocampus (yellow arrows in Figure 2—figure supplements 2 and 4). In contrast, several cortical areas in the temporal pole and inferolateral temporal lobe displayed high endpoint density in the anterior lateral hippocampus (blue arrows in Figure 2—figure supplement 3). Another cluster of high endpoint density in the anterior medial hippocampus (at the level of the uncal apex) was more broadly associated with specific areas in temporal, medial parietal, and occipital cortices (white arrows in Figure 2—figure supplements 2–4).
 
@@ -81,19 +272,27 @@ To further probe hippocampal endpoint density common to these cortical regions, 
 
 In addition, our novel method allowed us to isolate and visualise streamlines between specific cortical areas and the hippocampus and map the spatial distribution of hippocampal endpoint density at the single-participant level. Representative examples are presented in Figure 4. Figure 4B displays isolated streamlines associated with areas TF and V1 in a single participant. Figure 4D displays the hippocampal EDMs associated with each of these cortical areas in the same participant. When overlaid on the T1-weighted image, EDMs resemble histological staining of postmortem tissue, albeit in vivo and at a coarser level of detail (see bottom panels of Figure 4D). For example, for area TF, in a coronal slice taken at the uncal apex (red line) endpoint density was primarily localised to specific areas in the medial hippocampus (red panel). For area V1, in a coronal slice taken at the hippocampal tail (turquoise line) endpoint density was also localised to the medial hippocampus (turquoise panel). When compared with equivalent sections of histologically stained tissue, the location of these clusters of endpoint density roughly aligns with the location of the distal subiculum/proximal presubiculum for both TF and V1 (indicated by black arrows; see also Figure 5A). The location of endpoint density associated with each cortical area was broadly consistent across participants (evidenced by the results of our group-level analyses).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/76143/elife-76143-fig4-v1.jpg)
+
+**Figure 4.:** (A) 3D rendering of the hippocampus tractogram for a single participant showing isolated tracks with an endpoint in the hippocampus viewed in the sagittal plane (displayed with transparency; high intensity represents high density of tracks). (B) 3D-rendered left hippocampus masks (transparent grey) for the same participant overlaid with isolated streamlines associated with the left hemisphere areas TF (red) and V1 (turquoise). The location of areas TF and V1 is indicated on the brain maps (top). (C) 3D-rendered bilateral hippocampus mask for the same participant (transparent grey) overlaid with isolated streamlines and endpoint density maps associated with the left hemisphere areas TF (red) and V1 (turquoise). Note that, while streamlines associated with areas TF and V1 are primarily ipsilateral in nature, streamlines associated with V1 also project to the contralateral hippocampus. (D) 3D-rendered left hippocampus masks (transparent grey) for the same participant overlaid with endpoint density maps associated with areas TF (red) and V1 (turquoise). For TF and V1, we present a coronal section of the T1-weighted structural image overlaid with the endpoint density maps and a corresponding slice of postmortem hippocampal tissue (from a different subject) for anatomical comparison (bottom). For both TF (red border; level of the uncal apex) and V1 (turquoise border; level of the hippocampal tail), endpoint density is primarily localised to a circumscribed region in the medial hippocampus aligning with the location of the distal subiculum/proximal presubiculum (black arrows; also see Figure 5A). A, anterior; P, posterior; M, medial; L, lateral.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76143/elife-76143-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Group-level analysis revealed that specific cortical areas (e.g. V1 and V2) showed preferential connectivity with overlapping regions within the hippocampus (e.g. within the posterior medial hippocampus; see Figure 2—figure supplement 4 for an example). However, at the single-participant level, individual endpoints associated with each of these areas display both overlapping and spatially unique patterns (compare the spatial distribution of streamline endpoints associated with V1 [cyan] and V2 [red] in the posterior medial hippocampus). This suggests that, while different cortical areas display overlapping patterns of connectivity within specific regions of the hippocampus, subtle differences in how each cortical region connects within these areas of overlap likely exist.
+
 Finally, while we observed clear overlaps in the group-averaged EDMs associated with specific cortical areas, a closer inspection of individual endpoints at the single-participant level revealed that endpoints associated with different cortical areas displayed both overlapping and spatially unique characteristics within these areas of overlap. For example, at the group level, areas V1 and V2 showed preferential connectivity with overlapping regions of the posterior medial hippocampus (see Figure 2—figure supplement 4) while, at the single-participant level, individual endpoints associated with each of these areas display both overlapping and spatially unique patterns (see Figure 4—figure supplement 1). This suggests that, while specific cortical areas display overlapping patterns of connectivity with specific regions of the hippocampus, subtle differences in how these cortical regions connect within these areas of overlap likely exist. A detailed examination of individual variability in these patterns, however, was beyond the scope of the current investigation and will be addressed in future studies.
 
 ## Discussion
 
 This study represents a comprehensive in vivo characterisation of SC between cortical brain areas and the human hippocampus. We identified cortical areas with the highest degree of SC with the whole hippocampus, measured the degree to which these cortical areas preferentially connect along the anterior–posterior axis of the hippocampus, and deployed a tailored method to characterise where, within the hippocampus, each cortical area preferentially connects. Our results reveal how specific cortical areas preferentially connect with circumscribed regions along the anterior–posterior and medial–lateral axes of the hippocampus. Our results broadly reflect observations from the non-human primate literature (discussed below) and contribute new neuroanatomical insights to inform debates on human hippocampal function as it relates to its anterior–posterior axis. This work represents an important advance in our understanding of the neural architecture that underpins hippocampal-dependent memory systems in the human brain. In addition, our method represents a novel approach to conduct detailed in vivo investigations of the anatomical connectivity of the human hippocampus with implications for basic and clinical neuroscience.
 
-## Preliminary whole-hippocampus and anterior–posterior axis analyses
+### Preliminary whole-hippocampus and anterior–posterior axis analyses
 
 First, we consider the preliminary whole-hippocampus analysis. Aligning with our predictions, the hippocampus was most strongly connected with the EC and highly connected with surrounding MTL structures (see ‘Supplementary materials’ for further information relating to MTL structures). Beyond the MTL, specific cortical areas in temporopolar, inferotemporal, medial parietal, and occipital cortices displayed the highest degree of SC with the hippocampus. These results broadly align with recent DWI investigations that reported SC between the whole hippocampus and these cortical regions in the human brain (Maller et al., 2019). Our anterior–posterior axis analyses provided a more detailed quantitative characterisation of cortico-hippocampal SC by measuring the degree to which specific cortical areas preferentially connect along the anterior–posterior axis of the hippocampus. In brief, specific areas within temporopolar and inferolateral temporal cortices displayed preferential SC with the head and/or body of the hippocampus. In contrast, medial parietal and occipital cortical areas displayed a posterior hippocampal connectivity bias most strongly with the hippocampal tail. These patterns of SC mirror commonly observed functional links between the anterior hippocampus and temporal regions and between the posterior hippocampus and parietal/occipital regions (Dalton et al., 2019b; Tang et al., 2020; Poppenk and Moscovitch, 2011; Adnan et al., 2016; Barnett et al., 2021). Our results provide new insights into the neuroanatomical architecture of these functional associations in the human brain. Further interpretation of these observations are facilitated by the results of our more detailed endpoint density analyses and are discussed below.
 
 While many of our observed anatomical connections dovetail nicely with known functional associations, patterns of anatomical connectivity strength did not always mirror well-characterised functional associations between the hippocampus and cortical areas. For example, a surprising observation from our study was that only weak patterns of anatomical connectivity were observed between the hippocampus and the ventromedial prefrontal cortex (vmPFC) and other frontal cortical areas. This lies in contrast to well-documented functional associations between these regions (Adnan et al., 2016; Barnett et al., 2021; Monk et al., 2021). Our observation, however, supports a growing body of evidence that direct anatomical connectivity between the hippocampus and areas of the PFC may be surprisingly sparse in the human brain. For example, Rosen and Halgren, 2022 recently reported that long-range connections between the hippocampus and functionally related frontal cortical areas may constitute fewer than 10 axons/mm2 and more broadly observed that axon density between spatially distant but functionally associated brain areas may be much lower than previously thought. Our observation of sparse anatomical connectivity between the hippocampus and PFC mirrors this recent work and suggests a potential differentiation between structural and functional networks as they relate to the hippocampus. It remains possible, however, that methodological factors may contribute to these differences. We return to this point later in the discussion. A future dedicated study aimed at assessing whether the well-characterised functional associations between the hippocampus and vmPFC are driven by sparse direct connections or primarily by intermediary structures is necessary to address this issue in an appropriate level of detail.
 
-## Endpoint density mapping of human cortico-hippocampal connectivity
+### Endpoint density mapping of human cortico-hippocampal connectivity
 
 To date, our knowledge of human cortico-hippocampal anatomical connectivity is largely inferred from the results of tract-tracing studies conducted in non-human primates and rodents. We know much less about these patterns in the human brain. To address this gap, we adapted a tractography pipeline to track streamlines entering/leaving the hippocampus, identify the location of their ‘endpoints’, and create spatial distribution maps of endpoint density within the hippocampus associated with each cortical area. The resulting EDMs allowed us to quantitatively assess and visualise where, within the hippocampus, different cortical areas preferentially ‘connect’. To our knowledge, this is the first time such a specific approach has been used to map anatomical connectivity of the human hippocampus in vivo.
 
@@ -103,11 +302,11 @@ We observed striking differences in the location of endpoint density along both 
 
 **Figure 5.:** (A) Representative slices of the head (left), body (middle), and tail (right) of the hippocampus displayed in the coronal plane (grey) and overlaid with group-level endpoint density maps associated with areas TF (head and body; white) and V1 (tail; white). Schematic representations of roughly equivalent slices of the hippocampus showing hippocampal subfields are displayed below each slice. Schematic representations were taken from the Allen Adult Human Brain Atlas website (https://atlas.brain-map.org/; Ding et al., 2016; Allen Institute for Brain Science, 2004). The vestigial hippocampal sulcus (black line) is overlaid on the hippocampus masks and schematic diagrams to aid comparison. Note that the endpoint density in the lateral hippocampus (blue ellipsoids) aligns with the location of the distal CA1/proximal subiculum. Endpoint density in the medial hippocampus (brown ellipsoids) aligns with the location of distal subiculum/proximal presubiculum. (B–D) 3D-rendered representations of the group-level hippocampus mask (left; transparent grey) are overlaid with endpoint density maps (green) associated with RSC (B), PeEc (C), and TE2a (D). Schematic representations of the macaque hippocampus (right; images reproduced with permission from Insausti and Muñoz, 2001) show the location of labelled cells following retrograde tracer injection into the RSC (B; red), PeEc (C; black points), and TE2a (D; black points) (Insausti and Muñoz, 2001). The right panel of (C) and (D) displays slices of the macaque hippocampus in the coronal plane displaying the location of labelled cells (black points) and roughly equivalent slices of human hippocampus in the coronal plane (grey) overlaid with endpoint density maps (white). Note that labelled cells and endpoint density in the macaque and human respectively are localised to similar regions along the anterior–posterior and medial (brown ellipsoids) – lateral (blue ellipsoids) axes of the hippocampus. However, areas of difference also exist (D; red ellipsoid). M, medial; L, lateral; A, anterior; P, posterior.
 
-## Comparison to tract-tracing data in non-human primates
+### Comparison to tract-tracing data in non-human primates
 
 The results of our endpoint density analyses broadly overlap with observations from the non-human primate literature. For simplicity, we demonstrate this by comparing the results for three cortical areas with equivalent observations from the series of tract-tracing investigations of the macaque hippocampus described by Insausti and Muñoz, 2001. In the macaque, retrograde tracer injection into the RSC results in localised labelling of cells in the posterior presubiculum. Our results revealed high endpoint densities associated with the RSC were primarily localised to a homologous region in the posterior medial hippocampus (distal subiculum/proximal presubiculum; brown ellipsoids in Figure 5B). In the macaque, retrograde tracer injection into the PeEc results in dense labelling of cells along the anterior–posterior axis of the hippocampus primarily localised to the CA1/subiculum transition area and the presubiculum. Our results mirrored this pattern. We observed areas of high endpoint density along the lateral hippocampus (blue ellipsoids in Figure 5C; distal CA1/proximal subiculum) and along the medial hippocampus (brown ellipsoids in Figure 5C; distal subiculum/proximal presubiculum). In the macaque, labelling associated with area TE is scarce compared to that of the PeEc with labelled cells localised to the posterior CA1/subiculum transition area and the posterior presubiculum. Again, our results broadly aligned with this pattern. Compared with PeEc, we observed less endpoint density associated with TE2a (roughly corresponding to the injection site described by Insausti and Muñoz), which was primarily localised to the lateral (blue ellipsoids in Figure 5D; distal CA1/proximal subiculum) and medial (brown ellipsoids in Figure 5D; distal subiculum/proximal presubiculum) hippocampus. In contrast to the macaque, however, endpoint density was most strongly expressed in the lateral aspect of the anterior hippocampus (red ellipsoid in Figure 5D). We discuss potential interpretations for this and other differences later in the discussion. Overall, our results broadly aligned with patterns observed in the non-human primate brain and provide new and detailed insights regarding where specific cortical areas preferentially connect within the human hippocampus.
 
-## New evidence for hubs of anatomical connectivity in the human hippocampus?
+### New evidence for hubs of anatomical connectivity in the human hippocampus?
 
 High endpoint density within the hippocampus was restricted to areas that aligned with the location of CA1, subiculum and the pre- and parasubiculum and was notably absent from areas aligning with DG/CA4 (hilus), CA3, and CA2. These observations mirror reports in the rodent and non-human primate literature where non-EC cortical areas predominantly connect with subicular cortices and the CA1/subiculum transition area (Aggleton and Christiansen, 2015; Insausti and Muñoz, 2001). Indeed, in non-human primates, the CA1/subiculum transition area and the presubiculum appear to be ‘hotspots’ of anatomical connectivity for multiple cortical areas (Insausti and Muñoz, 2001; Kravitz et al., 2011). In accordance with this, we observed that these specific regions within the human hippocampus displayed high endpoint density for multiple cortical areas. For example, the anterior lateral hippocampus (aligning with the distal CA1/proximal subiculum) displayed high endpoint density for multiple temporal cortical areas (Figure 3A) and the posterior medial hippocampus (aligning with the distal subiculum/proximal presubiculum) displayed high endpoint density for multiple areas of the medial parietal and occipital cortices (Figure 3B and C, respectively). Another cluster of high endpoint density in the anterior medial hippocampus (aligning with the distal subiculum/proximal presubiculum) was more broadly associated with temporal, medial parietal, and occipital areas (Figure 3A–D). Taken together, these observations provide evidence that discrete hubs of dense anatomical connectivity may exist along the anterior–posterior axis of the human hippocampus and that these hubs align with the location of the CA1/subiculum transition area and the distal subiculum/proximal presubiculum.
 
@@ -123,11 +322,23 @@ In addition, our results provide new anatomical insights to inform current debat
 
 Our results also have implications for the use of existing hippocampal subfield segmentation protocols as they relate to the anatomical connectivity of the human hippocampus. The patterns of anatomical connectivity we observed in this study may not map well to classical definitions of subfield boundaries currently used in MRI investigations of human hippocampal subfields (Dalton et al., 2017; Berron et al., 2017; Iglesias et al., 2015). For example, the anterior medial clusters of high endpoint density observed in this study appear to extend across the distal subiculum and proximal presubiculum and lateral clusters appear to extend across the proximal subiculum and distal CA1. This mirrors recent observations in the functional literature that suggest functional clusters also extend across classically defined subfield boundaries (Dalton et al., 2019a; Grande et al., 2022). Indeed, more fine-grained segmentation can reveal that results, initially attributed to a specific subfield, may actually be driven by a specific subportion within that subfield (Dalton et al., 2019a). Results of this study provide a neuroanatomical rationale for these observations and further support the notion that, in some contexts, it may be advantageous to eschew classical concepts of hippocampal subfields. Future studies will aim to assess how patterns of SC relate to patterns of functional connectivity within the hippocampus and, subsequently, inform decisions of how we structurally and functionally define hippocampal subfields in human MRI studies.
 
-## Are there human-specific patterns of cortico-hippocampal connectivity?
+### Are there human-specific patterns of cortico-hippocampal connectivity?
 
 Despite areas of concordance with the non-human primate literature noted above, we also observed important differences. As noted earlier, we observed broader patterns of endpoint density for area TE2a than we expected based on the non-human primate literature. Also, non-human primate studies have found direct and substantial connectivity between the hippocampus and orbitofrontal and superior temporal cortices (Insausti and Muñoz, 2001). We found only weak patterns of connectivity between the hippocampus and these regions. Also of note, we found denser patterns of anatomical connectivity between the posterior medial hippocampus and early visual processing areas in the occipital lobe than would be expected based on observations from the non-human primate literature. However, this observation supports recent reports of similar patterns of anatomical connectivity as measured by DWI in the human brain (Maller et al., 2019) and functional associations between these areas (Tang et al., 2020; Dugré et al., 2021). Collectively, these findings are potentially of great conceptual importance for how we think about the hippocampus and its connectivity with early sensory cortices in the human brain and open new avenues to probe the degree to which these regions may interact to support visuospatial cognitive functions such as episodic memory, mental imagery, and imagination and perhaps even more abstract cognitive functions relating to creativity. It is important to note that our methods differ significantly from the carefully controlled injection of tracer into circumscribed portions of the brain. MRI investigations of SC are inherently less precise, and methodological limitations likely explain some of our observed differences. It is equally important to note, however, that while we expect to see evolutionarily conserved overlaps in SC between macaque and human brains, we should not expect exactly the same patterns of connectivity. Since splitting from a common ancestor, macaques and humans have likely evolved species-specific patterns of cortico-hippocampal connectivity to support species-specific cognitive functions. Whether differences observed in this study reflect methodological limitations, species differences or perhaps most likely, a mix of both, require further investigation.
 
 To our knowledge, only one prior study has attempted to characterise the broader hippocampal ‘connectome’ in the healthy human brain (Maller et al., 2019). Our study differs from this recent report in several important technical aspects. We analysed connectivity profiles of the head, body, and tail portions of the hippocampus separately in addition to the whole hippocampus. We manually delineated the hippocampus for each participant to ensure full coverage of the hippocampus and minimise the hippocampus mask ‘spilling’ into adjacent white matter (a common occurrence with automated segmentation methods; see Figure 7). We used the HCPMMP scheme, which provides more detailed subdivisions of cortical grey matter (Glasser et al., 2016). We also included SIFT2 (Smith et al., 2015a) in our analysis pipeline to increase biological accuracy of quantitative connectivity estimates. Finally, we used a carefully adapted tractography method that incorporates anatomical constraints and allowed streamlines to enter/leave the hippocampus, which provided us with a means to determine the location and topography of streamline ‘endpoints’, and therefore their distribution within the hippocampus (see ‘Materials and methods’ for detail relating to each of these points).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/76143/elife-76143-fig7-v1.jpg)
+
+**Figure 7.:** Representative examples of the automated hippocampus mask derived from the Human Connectome Project Multi-Modal Parcellation (HCPMMP) and the manually segmented hippocampus mask. We display examples from anterior (A) to posterior (D) portions of the hippocampal head. In each panel, we present a coronal slice of the T1-weighted image focused on the right temporal lobe for a single participant (left; hippocampus indicated by *), the same image overlaid with the automated hippocampus mask derived from the HCPMMP (middle; white) and the same image overlaid with both the automated HCPMMP hippocampus mask (right; white) and the manually segmented hippocampus mask (transparent red). Note that in the anterior-most slices (A, B) the automated mask does not cover the entire extent of the hippocampus (indicated by red arrows) and in more posterior slices (C, D) the automated mask often overextends across the lateral ventricle superior to the hippocampus and into the adjacent white matter (indicated by black arrows). Streamlines making contact with these erroneous portions of the automated hippocampus mask may lead to results that are biologically implausible.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/76143/elife-76143-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) T1-weighted structural MRI scan showing the right medial temporal lobe (left; hippocampus indicated by *) in the coronal plane for a single participant and the manually segmented hippocampus mask (red) overlaid on the T1-weighted image (right). (B) Left: the gmwmi (white line) showing the right medial temporal lobe in the coronal plane; middle: the manually segmented hippocampus mask (red) overlaid on the gmwmi. Note: portions of detected gmwmi immediately inferior to the hippocampus lie outside of the hippocampus mask (indicated by red arrow). If left unchanged, the anatomically informed tractography algorithm used in this study would terminate tracks as they reach this band, thus creating an erroneous band of track endpoints in this region, introducing misleading results. Right: the hippocampus mask (transparent red) and extended hippocampus mask (blue) overlaid on the gmwmi. Note: the extended hippocampus mask encompasses the gmwmi immediately inferior to the hippocampus. This allows streamlines to enter/leave the hippocampus here rather than terminate at the gmwmi (see ‘Materials and methods’ for detail).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/76143/elife-76143-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Block diagram of the workflow. Green blocks indicate procedures that involved manual segmentation, red blocks indicate connectivity vectors/matrices from which connectivity measurements were obtained, and blue blocks indicate intermediate images. (B) Sagittal view of ‘modified 5TT’ image containing the manually segmented hippocampus labelled as ‘5th tissue type’ (i.e. no anatomical prior for tracking) shown in white. (C) Sagittal view of modified parcellation image containing the whole-hippocampus mask (shown in orange). (D) Sagittal view of modified parcellation image containing the regional hippocampus masks (head, body, and tail shown in yellow, red, and blue, respectively).
 
 In conclusion, this study represents a first attempt to apply this method and has some limitations. Specifically, our method relies on several manual steps to delineate the hippocampus and amend the gmwmi that abuts the inferior portion of the hippocampus (described in ‘Materials and methods’). This can be time consuming and requires expertise to accurately identify the hippocampus along its entire anterior–posterior extent on structural MRI scans. However, considering automated methods of hippocampal segmentation are sometimes not sufficiently accurate, particularly in the anterior and posterior most extents of the hippocampus (see Figure 7 for representative examples), manual delineation is the gold standard and ensures the best results. We restricted our analysis to a limited number of subjects under the age of 35 and selected participants whose hippocampus was clearly visible along its entire anterior–posterior axis on T1-weighted structural scans. While this ensured we used the best data quality available, further work should explore how these results may differ in the context of healthy ageing and in diseases that affect the hippocampus such as Alzheimer’s disease, epilepsy, and schizophrenia. How reliable our pipeline is in data acquired with more traditional clinical protocols remains to be explored and was beyond the scope of this study. Fibre-tracking results are known to be greatly influenced by the particular algorithm implementation. To ensure the robustness of our results, we used state-of-the-art methods, which included a diffusion model that is robust to crossing fibres and presence of partial volume effect (Jeurissen et al., 2014), an advanced probabilistic tractography algorithm that incorporates anatomical priors (Smith et al., 2012), and a streamline to fibre density matching to improve its quantitative properties (Smith et al., 2015a). The interested reader is referred to a recent review article where these and other key issues of ensuring the reliability of fibre tracking are discussed (Calamante, 2019). Despite these advances and the high-quality HCP data used in this study, limitations in spatial resolution likely restrict our ability to track particularly convoluted white matter pathways within the hippocampus and our results should be interpreted with this in mind. Indeed, this may explain the surprising lack of endpoint density observed in the DG/CA4-CA3 regions of the hippocampus where we would expect to see high endpoint density associated with, for example, the EC, which is known to project to these regions. Future dedicated studies using higher resolution data are needed to assess these pathways in greater detail. Also, we cannot rule out that some connections observed in this study may result from limitations inherent to current probabilistic fibre-tracking methods whereby tracks can mistakenly ‘jump’ between fibre bundles (e.g. for connections between the posterior medial hippocampus and area V1 due to the proximity to the optic radiation), especially in ‘bottleneck’ areas. Again, future work using higher resolution data may allow more targeted investigations necessary to confirm or refute the patterns we observed here. These limitations notwithstanding, our results provide new detailed insights into anatomical connectivity of the human hippocampus, can inform theoretical models of human hippocampal function as they relate to the long axis of the hippocampus, and can help fine-tune network connectivity models.
 
@@ -137,23 +348,23 @@ From a clinical perspective, the hippocampus is central to several neurodegenera
 
 ## Materials and methods
 
-## Participant details
+### Participant details
 
 Ten subjects (seven females) were selected from the minimally processed HCP 100 unrelated subject database (<35 years old). Subjects were selected based on the scan quality and visibility of the outer boundaries of the hippocampus on each participant’s T1-weighted structural MRI scan. This was done in order to increase the anatomical accuracy of our hippocampal segmentations (described below).
 
-## Image acquisition
+### Image acquisition
 
 The HCP diffusion protocol consisted of three diffusion-weighted shells (b-values: 1000, 2000, and 3000 s/mm2, with 90 diffusion weighting directions in each shell) plus 18 reference volumes (b = 0 s/mm2). Each diffusion-weighted image was acquired twice, with opposite phase-encoded direction to correct for image distortion (Andersson et al., 2003). The diffusion image matrix was 145 × 145 with 174 slices and an isotropic voxel size of 1.25 mm. The TR and TE were 5520 and 89.5 ms, respectively. Each subject also included a high-resolution T1-weighted dataset, which was acquired with an isotropic voxel size of 0.7  mm, TR/TE  = 2400/2.14 ms, and flip angle  = 8°.
 
-## Manual segmentation of the hippocampus
+### Manual segmentation of the hippocampus
 
 The whole hippocampus was manually segmented for each participant on coronal slices of the T1-weighted image using ITK-SNAP (Yushkevich et al., 2006). Although automated methods of hippocampal segmentation are available, they are sometimes not sufficiently accurate particularly in the anterior and posterior-most extents of the hippocampus (see Figure 7 for representative examples). Although labour intensive, manual segmentation by an expert in hippocampal anatomy remains the gold standard for detailed and accurate investigation of the human hippocampus. We adapted the manual segmentation protocol outlined by Dalton et al., 2017. While this protocol details a method for segmenting hippocampal subfields, we followed guidelines as they relate to the outer boundaries of the hippocampus. This ensured that the whole-hippocampus mask for each participant contained all hippocampal subfields (DG, CA4-1, subiculum, presubiculum, and parasubiculum) and encompassed the entire anterior–posterior extent of the hippocampus (see Dalton et al., 2017 for details). Representative examples of the hippocampus mask are presented in Figure 7 and Figure 7—figure supplement 1. Manual segmentations were conducted by an expert in human hippocampal anatomy and MRI investigation of the human hippocampus (MAD) with 14 years experience including histological (Valenzuela et al., 2012) and MRI investigations (Dalton et al., 2018; Dalton et al., 2019b; Dalton et al., 2019a; Dalton et al., 2017). We took particular care to ensure that all boundaries of the hippocampus mask (including inferior, superior, medial, and lateral aspects) did not encroach into adjacent white or grey matter structures (e.g. amygdala, thalamic nuclei). This minimised the potential fusion of white matter tracts associated with other areas with our hippocampus mask. For the anterior–posterior axis analysis, we split each participant’s whole-hippocampus mask into thirds corresponding with the head, body, and tail of the hippocampus. This was done in accordance with commonly used anatomical landmark-based methods. In brief, the demarcation point between the head and body of the hippocampus was the uncal apex (Poppenk et al., 2013; Zeidman et al., 2015a), and the demarcation point between the body and tail of the hippocampus was the anterior-most slice in which the crus of the fornix was fully visible (Kulaga-Yoskovitz et al., 2015; Bernasconi et al., 2003). Although these landmarks are commonly used to divide the long axis of the hippocampus, it should be noted that these are somewhat arbitrary divisions based on gross anatomical landmarks and do not reflect specific anatomical, functional, or genetic boundaries within the hippocampus (Strange et al., 2014).
 
-## Image preprocessing and whole-brain tractography
+### Image preprocessing and whole-brain tractography
 
 Besides the steps carried out by the HCP team as part of the minimally processed datasets, the additional image processing pipeline included in our analysis is summarised in Figure 7—figure supplement 2A. Processing was performed using the MRtrix software package (http://www.mrtrix.org) (Tournier et al., 2019; Tournier et al., 2012). Additional processing steps were implemented in accordance with previous work (Civier et al., 2019) and included bias-field correction (Tustison et al., 2010) as well as multi-shell multi-tissue constrained spherical deconvolution to generate a fibre orientation distribution (FOD) image (Jeurissen et al., 2014; Tournier et al., 2004; Tournier et al., 2007). The T1 image was used to generate a ‘five-tissue-type’ (5TT) image using FSL (Smith et al., 2012; Smith, 2002; Zhang et al., 2001; Patenaude et al., 2011; Smith et al., 2004); tissue 1 = cortical grey matter, tissue 2 = sub-cortical grey matter, tissue 3 = white matter, tissue 4 = CSF, and tissue 5 = pathological tissue. The FOD image and the 5TT image were used to generate 70 million anatomically constrained tracks (Smith et al., 2012) using dynamic seeding (Smith et al., 2015a) and the second-order Integration over Fibre Orientation Distributions (iFOD2; Tournier et al., 2010) probabilistic fibre-tracking algorithm. The relevant parameters included 70 million tracks, dynamic seeding, backtracking option specified, FOD cutoff 0.06, minimum track length 5 mm, maximum track length 300 mm, and maximum of 1000 attempts per seed.
 
-## Hippocampus tractography
+### Hippocampus tractography
 
 We developed a tailored pipeline to track streamlines into the hippocampus. To do this, we first amended the gmwmi immediately inferior to the hippocampus. This was necessary because the manually segmented hippocampus mask lay slightly superior to the automatically generated gmwmi (see Figure 7—figure supplement 1B; middle image). Pilot testing showed that streamlines terminated when reaching this portion of the gmwmi, thereby impeding streamlines from traversing the inferior border of the hippocampus. This was a problem because white matter fibres innervate the hippocampus primarily through this region (and also via the fimbria/fornix; Duvernoy, 2005). It was, therefore, important to ensure that streamlines could cross the inferior border of the hippocampus mask in a biologically plausible manner. To facilitate this, we created an additional hippocampus mask for each participant that extended inferiorly to encompass portions of the gmwmi that lay immediately inferior to the hippocampus (see Figure 7—figure supplement 1; right image). This amended hippocampus mask was labelled as white matter in the modified 5TT image (referred to as m5TT). This served to remove the portion of the gmwmi immediately inferior to the hippocampus and ensured that streamlines could enter/leave the hippocampus in a biologically plausible manner. Additionally, the original whole-hippocampus segmentation was assigned as fifth tissue type in the m5TT image (i.e. where no anatomical priors are applied within the ACT framework in MRtrix; Figure 7—figure supplement 2B). This allowed streamlines to move within the hippocampus.
 
@@ -161,18 +372,18 @@ In summary, amending the erroneous gmwmi allowed streamlines to traverse hippoca
 
 Next, the FOD image was used with the m5TT image to generate an additional 10 million tracks. This set of anatomically constrained tracks (Smith et al., 2012) was seeded from the manually segmented hippocampus, and iFOD2 was used for fibre tracking (Tournier et al., 2010). The 70 million whole-brain tracks and the 10 million hippocampus tracks were combined, and spherical-deconvolution informed filtering of tractograms 2 (SIFT2; Smith et al., 2015a) was used on the combined 80 million track file, thereby assigning a weight to each track and providing biological credence to the connectivity measurements (Smith et al., 2015b). Within the SIFT2 framework, connectivity is then computed not by counting the number of tracks but by the sum of its SIFT2 weights. Tracks (and SIFT2 weights) that had an endpoint in the hippocampus were extracted (referred to here as the ‘hippocampus tractogram’) and used in both the whole-hippocampus and anterior–posterior axis analyses.
 
-## Whole hippocampus connectivity
+### Whole hippocampus connectivity
 
 FreeSurfer (Fischl, 2012) was used to further process the T1-weighted image. The HCPMMP 1.0 (Glasser et al., 2016) was mapped to each subject in accordance with previous work (Tahedl, 2020). The parcellation divided the cerebral cortex into 360 parcels (180 per hemisphere). Importantly, we replaced the automated hippocampus and presubiculum parcels with the manually segmented hippocampus (which included the presubiculum) for greater anatomical accuracy (referred to as ‘modified HCPMMP’; Figure 7—figure supplement 2C). The SC of tracks between the hippocampus and the other parcels was obtained using tracks (and SIFT2 weights) from the hippocampus and the modified HCPMMP (containing the whole-hippocampus segmentation). The strength of connectivity between the hippocampus and every other parcel of the HCPMMP was measured by the sum of the SIFT2-weighted connectivity values (Smith et al., 2015a). For each parcel (cortical area), we combined left and right hemisphere values (i.e. left and right RSC) and report bilateral results.
 
-## Anterior–posterior axis connectivity
+### Anterior–posterior axis connectivity
 
 As described in the manual segmentation section, the whole hippocampus was subsequently divided into thirds (head, body, and tail, as shown in Figure 7—figure supplement 2D). For the anterior–posterior axis analyses, each of these three regions were added to the HCPMMP as their own unique parcel. In a similar manner to the whole-hippocampus connectivity analysis, the strength of connectivity between each hippocampal region (head, body, and tail) and each parcel of the modified HCPMMP was measured by the sum of the SIFT2-weighted connectivity values. To assess whether connectivity values for each of the top 20 most highly connected cortical brain areas significantly differed between the head, body, and tail portions of the hippocampus, we conducted Bonferroni-corrected paired-samples t-tests for each area. We conducted three tests for each cortical brain area; head vs. body; body vs. tail; and head vs. tail. These are reported in the main text when significant at an adjusted p-value of <0.016.
 
-## TDI mapping of tracks between the whole hippocampus and the other parcels and endpoint creation
+### TDI mapping of tracks between the whole hippocampus and the other parcels and endpoint creation
 
 The extracted hippocampus tractogram was used to isolate tracks (and weights) between the whole-hippocampus parcel and every other parcel in the modified HCPMMP file. Two different TDI maps (Calamante et al., 2012; Calamante et al., 2010) were computed for each parcel; a TDI of the hippocampus tractogram and a TDI map showing only the endpoints of this tractogram. Both TDI maps were constructed at 0.2 mm isotropic resolution. These TDI endpoint maps were used in the group-level analysis described below. Note that we refer to these TDI endpoint maps as ‘endpoint density maps’ (EDMs) in the main text.
 
-## Group-level analysis - group-level hippocampus template and TDI endpoint map registration
+### Group-level analysis - group-level hippocampus template and TDI endpoint map registration
 
 We employed the symmetric group-wise normalization method (SyGN) (Avants et al., 2010) implemented in the ANTs toolbox (http://stnava.github.io/ANTs/; Cook, 2022) to build a population-specific hippocampus template (Lv et al., 2022). Specifically, the cross-correlation metric was used to optimise the boundary agreement among the hippocampi masks of each participant. Then, each individual hippocampus mask was registered to the generated population template with the combined linear and non-linear transformation. For each participant, the transformation parameters were recorded and applied to the TDI endpoint maps which were warped into the template space at a resolution of 0.7 mm isotropic. The group average was then calculated by providing a group-level distribution map of endpoint density within the hippocampus for each parcel of interest. EDMs were visualised in mrview (the MRtrix image viewer). Representative images displayed in our figures were visualised with the minimum and maximum intensity scale set at 0 and 0.05, respectively, and a minimum and maximum threshold set at 0.02 and 0.5, respectively.

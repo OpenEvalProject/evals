@@ -51,6 +51,40 @@ Institutions have responded to the problem of multiple job designations for post
 
 In 2004, the Biological Sciences Division at the University of Chicago created two positions for postdocs, Fellows and Scholars, and established policies to ensure equivalent experiences for each (see Table 1). Fellows are paid from grants and fellowships that they themselves bring to the institution, whereas Scholars are paid from funding granted to the institution. Prior to these changes, Fellows were not entitled to benefits from the institution but were required to receive career development training by the terms of their fellowships, whereas Scholars received benefits from the institution but not career development training. As a result of the change in policy, scientists now have equivalent experiences and compensation regardless of their classification as Fellows or Scholars.
 
+**Table 1.**
+ Restructured postdoc designations at the University of Chicago. Postdocs are defined as “Fellows” or “Scholars” depending on the source of their stipend. The appointment process is initiated by the department, but it is then reviewed in the Provost’s Office, the Office of Academic Affairs and the Office of Postdoctoral Affairs to ensure that the terms of the appointment provide appropriate benefits and equitable opportunities for career development. All postdocs are evaluated annually for reappointment to the position, and these requests are reviewed and approved through the same process.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">University of Chicago – two postdoc designations – one common experience</th>
+    </tr>
+    <tr>
+      <th>Position</th>
+      <th>POSTDOCTORAL FELLOW</th>
+      <th>POSTDOCTORAL SCHOLAR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stipend</td>
+      <td>Extramural, e.g. fellowship</td>
+      <td>Institutional (including from grants)</td>
+    </tr>
+    <tr>
+      <td>Benefits</td>
+      <td>“Supplemental stipend” from institution to provide benefits equivalent to Postdoctoral Scholar</td>
+      <td>“Special employee” receives benefits from institution</td>
+    </tr>
+    <tr>
+      <td>Career Development</td>
+      <td>Follow criteria outlined in terms of the fellowship</td>
+      <td>Institutionally mandated to provide similar career development experience</td>
+    </tr>
+  </tbody>
+</table>
+
 An alternative strategy is to consolidate the different titles into a single designation. In 2016, Boston University charged a task force with streamlining and standardizing all non-faculty research positions, including postdocs. Prior to this effort, positions were classified using a complex job matrix of 12 titles that were applied inconsistently across the campus. The final report recommended consolidating these titles into four distinct non-faculty research positions (see Figure 1). Recommendations for classification were based on degree and experience requirements for the position and whether there was a training component. Boston University is currently in the process of implementing these recommendations.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/32437/elife-32437-fig1-v1.jpg)

@@ -11,16 +11,16 @@
 ### Affiliations
 
 1. MWSchmid GmbH Glarus Switzerland
-2. https://ror.org/02crff812 Department of Plant and Microbial Biology, University of Zurich Zurich Switzerland
-3. https://ror.org/02crff812 Zurich-Basel Plant Science Center, University of Zurich, ETH Zurich, University of Basel Zurich Switzerland
-4. https://ror.org/02crff812 Department of Evolutionary Biology and Environmental Studies, University of Zurich Zurich Switzerland
-5. https://ror.org/02crff812 Department of Geography, University of Zurich Zurich Switzerland
+2. Department of Plant and Microbial Biology, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+3. Zurich-Basel Plant Science Center, University of Zurich, ETH Zurich, University of Basel Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+4. Department of Evolutionary Biology and Environmental Studies, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+5. Department of Geography, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
 
 † Corresponding author
 
 ## Abstract
 
-In plants, transgenerational inheritance of certain epialleles has been observed but experimental evidence for selection of epigenetic variation independent of genetic variation is scarce. We extended an experiment simulating selection in response to herbivory in Arabidopsis thaliana to assess a potential contribution of epigenetic variation to the selected phenotypes within three accessions. To minimize maternal effects, we grew offspring from replicate populations and their ancestors for two generations in a common environment and assessed the phenotypes in the second generation. We found weak evidence for the selection of epigenetic variation: bolting time differed significantly in one accession. Significant differences between maternal lines suggested random residual or novel genetic and/or epigenetic variation. Our results are in conflict with those of a recent study reporting that environment-induced heritable variation is common in Arabidopsis . Reanalyzing the data from that study showed that the reported findings resulted from a mix-up of accessions and, thus, reflected genetic rather than epigenetic variation between accessions. To avoid future misinterpretations of studies investigating epigenetic inheritance, we provide guidelines to design experiments that clearly differentiate between epigenetic and genetic variation and distinguish standing variation from de novo variation acquired during an experiment.
+In plants, transgenerational inheritance of certain epialleles has been observed but experimental evidence for selection of epigenetic variation independent of genetic variation is scarce. We extended an experiment simulating selection in response to herbivory in Arabidopsis thaliana to assess a potential contribution of epigenetic variation to the selected phenotypes within three accessions. To minimize maternal effects, we grew offspring from replicate populations and their ancestors for two generations in a common environment and assessed the phenotypes in the second generation. We found weak evidence for the selection of epigenetic variation: bolting time differed significantly in one accession. Significant differences between maternal lines suggested random residual or novel genetic and/or epigenetic variation. Our results are in conflict with those of a recent study reporting that environment-induced heritable variation is common in Arabidopsis. Reanalyzing the data from that study showed that the reported findings resulted from a mix-up of accessions and, thus, reflected genetic rather than epigenetic variation between accessions. To avoid future misinterpretations of studies investigating epigenetic inheritance, we provide guidelines to design experiments that clearly differentiate between epigenetic and genetic variation and distinguish standing variation from de novo variation acquired during an experiment.
 
 ## Introduction
 
@@ -42,9 +42,430 @@ In summary, while epialleles can be subject to selection and contribute to adapt
 
 ## Results
 
-## Impact of selection treatments on phenotypic traits
+### Impact of selection treatments on phenotypic traits
 
 As described above, mixtures of genetically uniform Arabidopsis accessions were grown for five generations, either under control conditions or inoculated with different aphid species (Züst et al., 2012). Thereafter, the populations were dominated by the three accessions Ma-0, Wei-0, and Wil-3. Phenotypic differences within uniform genetic backgrounds that were subjected to different treatments would indicate the selection of epigenetic variation (Figure 1). Thus, to investigate whether the treatments led to phenotypic differences within the three dominant accessions, we tested whether the selection treatments had an impact on the time to bolting, the rosette diameter at bolting, the number of rosette leaves at bolting, the leaf blade area, and the trichome density (Tables 1 and 2; Figures 2 and 3). Besides the selection treatment and its contrasts, the model also included the experimental blocks (n=5), the accessions (n=3), the populations (n=18 + 3 ancestrals), and maternal lines (‘mother’, n=261), along with interactions of the selection treatment contrasts with accessions. Additionally, we conducted analyses without the Wil-3 accession because this accession had low replication at the level of maternal lines. We also ran separate analyses for each accession. Additional models and power estimations can be found in Supplementary files 1 and 2.
+
+**Table 1.**
+ Percent sum of squares explained by model terms and p-values using all three accessions.Contrasts of a term are marked with indents. Complete output and further results for individual accessions are given in Supplementary files 1 and 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Blade area</th>
+      <th colspan="2">Time to bolting</th>
+      <th colspan="2">Rosette diameter</th>
+      <th colspan="2">Number of rosette leaves</th>
+    </tr>
+    <tr>
+      <th>Model term</th>
+      <th>% SS</th>
+      <th>p-value</th>
+      <th>% SS</th>
+      <th>p-value</th>
+      <th>% SS</th>
+      <th>p-value</th>
+      <th>% SS</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Blocks</td>
+      <td>46.97</td>
+      <td>&lt;0.001</td>
+      <td>6.55</td>
+      <td>&lt;0.001</td>
+      <td>43.23</td>
+      <td>&lt;0.001</td>
+      <td>27.1</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>&gt;Blocks 1–3 vs. blocks 4–5 (EX)</td>
+      <td>41.85</td>
+      <td>&lt;0.001</td>
+      <td>0.51</td>
+      <td>&lt;0.001</td>
+      <td>39.62</td>
+      <td>&lt;0.001</td>
+      <td>26.42</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>&gt;Remaining blocks</td>
+      <td>5.12</td>
+      <td>&lt;0.001</td>
+      <td>6.04</td>
+      <td>&lt;0.001</td>
+      <td>3.61</td>
+      <td>&lt;0.001</td>
+      <td>0.68</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Selection treatments (ST)</td>
+      <td>0.1</td>
+      <td>0.887</td>
+      <td>0.24</td>
+      <td>0.925</td>
+      <td>0.76</td>
+      <td>0.033</td>
+      <td>0.5</td>
+      <td>0.782</td>
+    </tr>
+    <tr>
+      <td>&gt;Ancestral vs. rest (AN)</td>
+      <td>0.02</td>
+      <td>0.742</td>
+      <td>0.06</td>
+      <td>0.735</td>
+      <td>0.11</td>
+      <td>0.222</td>
+      <td>0.24</td>
+      <td>0.484</td>
+    </tr>
+    <tr>
+      <td>&gt;Control vs. treated (CO)</td>
+      <td>0.07</td>
+      <td>0.495</td>
+      <td>0.05</td>
+      <td>0.757</td>
+      <td>0.33</td>
+      <td>0.043</td>
+      <td>0.21</td>
+      <td>0.506</td>
+    </tr>
+    <tr>
+      <td>&gt;B. brassicae vs. L. erysimi (SE)</td>
+      <td>0.01</td>
+      <td>0.852</td>
+      <td>0.13</td>
+      <td>0.624</td>
+      <td>0.32</td>
+      <td>0.047</td>
+      <td>0.05</td>
+      <td>0.746</td>
+    </tr>
+    <tr>
+      <td>Original replicate population (LI)</td>
+      <td>2.38</td>
+      <td>&lt;0.001</td>
+      <td>8.82</td>
+      <td>&lt;0.001</td>
+      <td>1.18</td>
+      <td>&lt;0.001</td>
+      <td>7.88</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Accession (ET)</td>
+      <td>8.16</td>
+      <td>&lt;0.001</td>
+      <td>23.23</td>
+      <td>&lt;0.001</td>
+      <td>2.2</td>
+      <td>&lt;0.001</td>
+      <td>14.7</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>ET:ST</td>
+      <td>0.42</td>
+      <td>0.026</td>
+      <td>0.34</td>
+      <td>0.41</td>
+      <td>0.62</td>
+      <td>0.002</td>
+      <td>0.16</td>
+      <td>0.655</td>
+    </tr>
+    <tr>
+      <td>&gt;ET:AN</td>
+      <td>0.05</td>
+      <td>0.315</td>
+      <td>0.09</td>
+      <td>0.427</td>
+      <td>0.35</td>
+      <td>0.001</td>
+      <td>0.12</td>
+      <td>0.238</td>
+    </tr>
+    <tr>
+      <td>&gt;ET:CO</td>
+      <td>0.06</td>
+      <td>0.288</td>
+      <td>0.22</td>
+      <td>0.153</td>
+      <td>0.01</td>
+      <td>0.84</td>
+      <td>0.01</td>
+      <td>0.843</td>
+    </tr>
+    <tr>
+      <td>&gt;ET:SE</td>
+      <td>0.31</td>
+      <td>0.005</td>
+      <td>0.03</td>
+      <td>0.776</td>
+      <td>0.26</td>
+      <td>0.005</td>
+      <td>0.03</td>
+      <td>0.707</td>
+    </tr>
+    <tr>
+      <td>ET:LI</td>
+      <td>0.37</td>
+      <td>0.443</td>
+      <td>0.88</td>
+      <td>0.076</td>
+      <td>0.3</td>
+      <td>0.864</td>
+      <td>0.66</td>
+      <td>0.175</td>
+    </tr>
+    <tr>
+      <td>Mothers</td>
+      <td>6.07</td>
+      <td>0.007</td>
+      <td>8.11</td>
+      <td>0.216</td>
+      <td>7.38</td>
+      <td>0.024</td>
+      <td>6.81</td>
+      <td>0.342</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Percent sum of squares explained by model terms and p-values using only accessions Ma-0 and Wei-0.Contrasts of a term are marked with indents. Complete output and further results for individual accessions are given in Supplementary files 1 and 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Blade area</th>
+      <th colspan="2">Time to bolting</th>
+      <th colspan="2">Rosette diameter</th>
+      <th colspan="2">Number of rosette leaves</th>
+      <th colspan="2">Trichome density</th>
+    </tr>
+    <tr>
+      <th>Model term</th>
+      <th>% SS</th>
+      <th>p-value</th>
+      <th>% SS</th>
+      <th>p-value</th>
+      <th>% SS</th>
+      <th>p-value</th>
+      <th>% SS</th>
+      <th>p-value</th>
+      <th>% SS</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Blocks</td>
+      <td>48.54</td>
+      <td>&lt;0.001</td>
+      <td>5.91</td>
+      <td>&lt;0.001</td>
+      <td>42.45</td>
+      <td>&lt;0.001</td>
+      <td>29.24</td>
+      <td>&lt;0.001</td>
+      <td>28.97</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>&gt;Blocks 1–3 vs. blocks 4–5 (EX)</td>
+      <td>43.45</td>
+      <td>&lt;0.001</td>
+      <td>0.28</td>
+      <td>0.026</td>
+      <td>38.73</td>
+      <td>&lt;0.001</td>
+      <td>27.94</td>
+      <td>&lt;0.001</td>
+      <td>25.28</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>&gt;Remaining blocks</td>
+      <td>5.09</td>
+      <td>&lt;0.001</td>
+      <td>5.63</td>
+      <td>&lt;0.001</td>
+      <td>3.72</td>
+      <td>&lt;0.001</td>
+      <td>1.3</td>
+      <td>&lt;0.001</td>
+      <td>3.69</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Selection treatments (ST)</td>
+      <td>0.06</td>
+      <td>0.926</td>
+      <td>0.53</td>
+      <td>0.827</td>
+      <td>0.19</td>
+      <td>0.613</td>
+      <td>0.19</td>
+      <td>0.941</td>
+      <td>0.18</td>
+      <td>0.901</td>
+    </tr>
+    <tr>
+      <td>&gt;Ancestral vs. rest (AN)</td>
+      <td>0</td>
+      <td>0.955</td>
+      <td>0.17</td>
+      <td>0.597</td>
+      <td>0</td>
+      <td>0.888</td>
+      <td>0.11</td>
+      <td>0.641</td>
+      <td>0</td>
+      <td>0.936</td>
+    </tr>
+    <tr>
+      <td>&gt;Control vs. treated (CO)</td>
+      <td>0</td>
+      <td>0.908</td>
+      <td>0.21</td>
+      <td>0.561</td>
+      <td>0.1</td>
+      <td>0.338</td>
+      <td>0.07</td>
+      <td>0.715</td>
+      <td>0.02</td>
+      <td>0.801</td>
+    </tr>
+    <tr>
+      <td>&gt;B. brassicae vs. L. erysimi (SE)</td>
+      <td>0.06</td>
+      <td>0.515</td>
+      <td>0.15</td>
+      <td>0.628</td>
+      <td>0.09</td>
+      <td>0.367</td>
+      <td>0.01</td>
+      <td>0.874</td>
+      <td>0.16</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>Original replicate population (LI)</td>
+      <td>2.16</td>
+      <td>&lt;0.001</td>
+      <td>9.5</td>
+      <td>&lt;0.001</td>
+      <td>1.67</td>
+      <td>0.002</td>
+      <td>7.96</td>
+      <td>&lt;0.001</td>
+      <td>4.99</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Accession (ET)</td>
+      <td>5.78</td>
+      <td>&lt;0.001</td>
+      <td>18.5</td>
+      <td>&lt;0.001</td>
+      <td>2.46</td>
+      <td>&lt;0.001</td>
+      <td>11.78</td>
+      <td>&lt;0.001</td>
+      <td>13.98</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>ET:ST</td>
+      <td>0.12</td>
+      <td>0.424</td>
+      <td>0.42</td>
+      <td>0.349</td>
+      <td>0.38</td>
+      <td>0.036</td>
+      <td>0.04</td>
+      <td>0.799</td>
+      <td>0.07</td>
+      <td>0.572</td>
+    </tr>
+    <tr>
+      <td>&gt;ET:AN</td>
+      <td>0.02</td>
+      <td>0.471</td>
+      <td>0.19</td>
+      <td>0.225</td>
+      <td>0.13</td>
+      <td>0.06</td>
+      <td>0.02</td>
+      <td>0.51</td>
+      <td>0.04</td>
+      <td>0.304</td>
+    </tr>
+    <tr>
+      <td>&gt;ET:CO</td>
+      <td>0.03</td>
+      <td>0.394</td>
+      <td>0.18</td>
+      <td>0.241</td>
+      <td>0.01</td>
+      <td>0.588</td>
+      <td>0.02</td>
+      <td>0.522</td>
+      <td>0.02</td>
+      <td>0.422</td>
+    </tr>
+    <tr>
+      <td>&gt;ET:SE</td>
+      <td>0.07</td>
+      <td>0.222</td>
+      <td>0.05</td>
+      <td>0.515</td>
+      <td>0.24</td>
+      <td>0.017</td>
+      <td>0</td>
+      <td>0.775</td>
+      <td>0.01</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>ET:LI</td>
+      <td>0.34</td>
+      <td>0.241</td>
+      <td>0.89</td>
+      <td>0.048</td>
+      <td>0.21</td>
+      <td>0.775</td>
+      <td>0.3</td>
+      <td>0.609</td>
+      <td>0.28</td>
+      <td>0.597</td>
+    </tr>
+    <tr>
+      <td>Mothers</td>
+      <td>7.69</td>
+      <td>0.023</td>
+      <td>11.27</td>
+      <td>0.319</td>
+      <td>9.16</td>
+      <td>0.2</td>
+      <td>10.2</td>
+      <td>0.106</td>
+      <td>8.25</td>
+      <td>0.46</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/106930/elife-106930-fig2-v1.jpg)
 
@@ -56,7 +477,7 @@ As described above, mixtures of genetically uniform Arabidopsis accessions were 
 
 The term ‘block’, especially the comparison between blocks 1–3 and blocks 4–5, was highly significant in all analyses and generally explained most of the total phenotypic variation (up to nearly 50% for leaf blade area, Table 2). The time to bolting was an exception because here the term ‘accession’ explained most of the variation (23.2%), followed by ‘population’ (8.8%), ‘mother’ (8.1%), and ‘block’ (6.5%). The terms ‘accession’ and ‘population’ were also consistently significant and explained a large fraction of phenotypic variation. Effects of ‘population’ were likely due to differences in composition because accessions were not balanced between populations. Accordingly, the interaction between ‘accession’ and ‘population’, which would indicate differences between populations within accessions, was rarely significant and explained less than 1% of all variance. Additionally, the term ‘mother’ was occasionally significant, accounting for 5–10% of the total phenotypic variance (Tables 1 and 2). Compared with these previous terms indicating environmental and genetic influences, the selection treatment and its contrasts – as well as their interactions with the previous terms – were rarely significant and explained less than 1% of the total phenotypic variation (Tables 1 and 2, Figures 2 and 3). Furthermore, the significant differences in rosette diameter between the control and aphid treatments and between the two aphid treatments (Table 1) disappeared when we excluded the accession Wil-3 (with low replication at the level of maternal lines) from the analysis (Table 2). In this case, only the interaction between the two aphid treatments and the two accessions Ma-0 and Wei-0 remained significant (Table 2). Separate analyses for each accession revealed significant differences in bolting time between the control and the aphid treatments in Ma-0 (Figures 2 and 3). We also observed a significant difference in trichome densities between the two aphid treatments in accession Wei-0; however, these were driven by some extreme values (Figure 3). We found several significant differences between selection treatments in accession Wil-3 (Figures 2 and 3) but, again, considering the low level of replication at the level of maternal lines in this accession, these differences should be treated with caution.
 
-## Limited impact of aphid treatments on DNA methylation patterns and epigenetic variation
+### Limited impact of aphid treatments on DNA methylation patterns and epigenetic variation
 
 To more directly assess whether epigenetic variation could be responsible for the phenotypic differences observed between ancestral and selection treatments, we characterized changes in the genome-wide methylomes, taking DNA methylation as a proxy for epigenetic variation. We investigated the methylome of a subset of Wei-0 maternal lines from generation G6 (n=34), providing a more direct readout of the aphid treatment than would be obtained with plants from generation G7. We assessed the DNA methylation patterns of these plants by whole-genome bisulfite sequencing. In total, we tested 3,573,936 cytosines for differential methylation between ancestrals and the two aphid-selection treatments. The number of significantly differentially methylated cytosines was similar in all comparisons: it ranged from 101, when the two aphid treatments were compared, to 131, when the L. erysimi treatment was compared with the ancestrals. Overall, about 0.009% of all tested cytosines showed significant differences, and they were dispersed across the entire genome (Figure 4a). We also tested whether the variation of DNA methylation, that is the extent of epigenetic variation, was reduced by the selection treatments, an effect of selection that we had previously observed in a similar experiment (Schmid et al., 2018b). However, we did not find any evidence for a reduction nor an expansion of variation in DNA methylation between ancestrals and the two aphid-selection treatments in any of the three contexts of DNA methylation: CG, CHG (H being A, T, or C), and CHH (Figure 4b).
 
@@ -66,7 +487,116 @@ To more directly assess whether epigenetic variation could be responsible for th
 
 To understand the potential effects of differential cytosine methylation, we characterized all 308 differentially methylated cytosines (DMCs) with respect to sequence context and position relative to genes. The majority of DMCs was in the CG context (87.6%), and only a few were found in the CHG and CHH contexts (6.2% each). Considering all cytosines of the Arabidopsis genome, about 13%, 15%, and 72% are found in the CG, CHG, and CHH contexts, respectively (Schmid et al., 2018b). Thus, there was a clear enrichment of DMCs in the CG context, similar to our finding in the previous selection experiment (Schmid et al., 2018b) and consistent with the fact that methylation in the CG context shows the highest variability (Kartal et al., 2020). Almost all DMCs were located within or less than 2 kb away from genes (87.3%) or genes and transposable elements (98.1%). Together with the clear enrichment of the CG context, this suggests that most DMCs were related to differences in gene body methylation (gbM; Bewick and Schmitz, 2017, Muyle et al., 2022). We tested whether genes with certain functions were enriched for DMCs using gene ontology (GO) enrichment analysis (Table 3). There was an enrichment of several terms related to epigenetic regulation: ‘histone methylation’, ‘DNA methylation’, and ‘chromatin silencing’. The remaining terms could be associated with transport and growth in general, for example, ‘positive regulation of cell proliferation’, ‘secondary cell wall biogenesis’, and ‘organic substance transport’. In conclusion, although we identified only a few DMCs, they were preferentially found in genes associated with epigenetic regulation and transport and growth processes. However, the overall limited differentiation and the absence of reduced variation in DNA methylation suggest that there was only weak selection of specific DNA methylation sites.
 
-## The large effects observed by Lin et al., 2024 are not due to environment-induced heritable variation but due to differences in genotype
+**Table 3.**
+ Gene Ontology (GO) enrichment among genes mapped by differentially methylated cytosines (DMCs).‘Found’ indicates the number of different genes with the term that were mapped by DMCs. ‘Expected’ refers to the number of genes that were expected to be mapped by DMCs if six DMCs were randomly distributed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GO.ID</th>
+      <th>Term</th>
+      <th>Found</th>
+      <th>Expected</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GO:0070646</td>
+      <td>Protein modification by small protein removal</td>
+      <td>7</td>
+      <td>1.53</td>
+      <td>0.00083</td>
+    </tr>
+    <tr>
+      <td>GO:0016571</td>
+      <td>Histone methylation</td>
+      <td>10</td>
+      <td>3.07</td>
+      <td>0.00101</td>
+    </tr>
+    <tr>
+      <td>GO:0008284</td>
+      <td>Positive regulation of cell proliferation</td>
+      <td>5</td>
+      <td>0.8</td>
+      <td>0.00119</td>
+    </tr>
+    <tr>
+      <td>GO:0042732</td>
+      <td>D-xylose metabolic process</td>
+      <td>3</td>
+      <td>0.3</td>
+      <td>0.00321</td>
+    </tr>
+    <tr>
+      <td>GO:0006487</td>
+      <td>Protein N-linked glycosylation</td>
+      <td>5</td>
+      <td>1.03</td>
+      <td>0.0036</td>
+    </tr>
+    <tr>
+      <td>GO:0071702</td>
+      <td>Organic substance transport</td>
+      <td>25</td>
+      <td>11.89</td>
+      <td>0.00423</td>
+    </tr>
+    <tr>
+      <td>GO:0015691</td>
+      <td>Cadmium ion transport</td>
+      <td>2</td>
+      <td>0.11</td>
+      <td>0.00455</td>
+    </tr>
+    <tr>
+      <td>GO:0009834</td>
+      <td>Plant-type secondary cell wall biogenesis</td>
+      <td>3</td>
+      <td>0.35</td>
+      <td>0.00482</td>
+    </tr>
+    <tr>
+      <td>GO:0006306</td>
+      <td>DNA methylation</td>
+      <td>7</td>
+      <td>2.09</td>
+      <td>0.00492</td>
+    </tr>
+    <tr>
+      <td>GO:0006342</td>
+      <td>Chromatin silencing</td>
+      <td>8</td>
+      <td>2.86</td>
+      <td>0.00794</td>
+    </tr>
+    <tr>
+      <td>GO:0071705</td>
+      <td>Nitrogen compound transport</td>
+      <td>23</td>
+      <td>11.74</td>
+      <td>0.00931</td>
+    </tr>
+    <tr>
+      <td>GO:0050665</td>
+      <td>Hydrogen peroxide biosynthetic process</td>
+      <td>4</td>
+      <td>0.83</td>
+      <td>0.00945</td>
+    </tr>
+    <tr>
+      <td>GO:1905039</td>
+      <td>Carboxylic acid transmembrane transport</td>
+      <td>2</td>
+      <td>0.15</td>
+      <td>0.00945</td>
+    </tr>
+  </tbody>
+</table>
+
+### The large effects observed by Lin et al., 2024 are not due to environment-induced heritable variation but due to differences in genotype
 
 Compared with our study, which provided weak evidence for the selection of epigenetic variation, a recent report claimed that environment-induced heritable variation is common in Arabidopsis (Lin et al., 2024). We were surprised by this difference in the outcomes of the two experiments, which both aimed at investigating the potential role of epigenetic variation in adaptation in this model species. Our aphid treatments strongly impacted plant fitness (Züst et al., 2012), indicating that an induction of heritable epigenetic variation within genetically uniform Arabidopsis populations, as suggested by Lin et al., 2024, was possible.
 
@@ -74,7 +604,7 @@ We wondered if issues with the experimental design may have led to the strong ef
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/106930/elife-106930-fig5-v1.jpg)
 
-**Figure 5.:** Lin et al., 2024.(a) Genetic distances between the 190 RNA-seq samples from Lin et al., 2024. The two genetic clusters diverging from the rest of their accession group are highlighted. (b) Within accession-label genetic distances, drawn to scale. Maximal distance given below the label, colored according to treatment and generation. The two treatments that have been assigned the wrong accessions are highlighted. (c) Pairwise genetic distances within lines (plants of the same lineage, i.e., single-seed descendants), within accessions, and between accessions using either the original accession labels from Lin et al., 2024 (left; 26) or the accessions assigned based on genetic similarity to the data available at 1001genomes.org (right). The red line demarcates the distance equal to the average of within-line distances plus three standard deviations. Boxplots were drawn with the function graphics::boxplot() in R. The box extends from the 25th to the 75th percentile. The wiskers extend to the most extreme data point which is no more than 1.5 times the interquartile range from the box.
+**Figure 5.:** (a) Genetic distances between the 190 RNA-seq samples from Lin et al., 2024. The two genetic clusters diverging from the rest of their accession group are highlighted. (b) Within accession-label genetic distances, drawn to scale. Maximal distance given below the label, colored according to treatment and generation. The two treatments that have been assigned the wrong accessions are highlighted. (c) Pairwise genetic distances within lines (plants of the same lineage, i.e., single-seed descendants), within accessions, and between accessions using either the original accession labels from Lin et al., 2024 (left; 26) or the accessions assigned based on genetic similarity to the data available at 1001genomes.org (right). The red line demarcates the distance equal to the average of within-line distances plus three standard deviations. Boxplots were drawn with the function graphics::boxplot() in R. The box extends from the 25th to the 75th percentile. The wiskers extend to the most extreme data point which is no more than 1.5 times the interquartile range from the box.
 
 To confirm our finding of a potential mix-up leading to treatment–accession confounding, we used either the original or the newly assigned accession labels to split the pairwise distances between experimental plants into three classes: (i) within lineage (i.e., [grand]-parent-to-offspring), (ii) within accessions, and (iii) between accessions. The former two should both yield values close to zero as plants within lineages and within accessions should be genetically (nearly) identical to each other, whereas distances between accessions can be substantial (Figure 5c). These expectations were not met with the original accession labels; instead, we found large distances in all three classes. In contrast, the same evaluation with the re-assigned accession labels Ws-2 (for Abd-0 in high Cd treatment) and Fei-0 (for TRE-1 in drought treatment) confirmed the expectations of close to zero distances in classes (i) and (ii), and large distances in class (iii). Thus, it appears that Lin et al., 2024 inadvertently had mixed up accessions when assigning plants to the two mentioned treatments.
 
@@ -96,27 +626,27 @@ We found weaker evidence for selection of epigenetic variation in this Arabidops
 
 ## Materials and methods
 
-## Experimental background and material from a multigenerational selection experiment
+### Experimental background and material from a multigenerational selection experiment
 
 The selection experiment from which the plants used in this study were derived was fully described by Züst et al., 2012. In brief, the experiment began with a collection of 27 Arabidopsis accessions. Seeds obtained from NASC were expected to represent genetically uniform accessions and were propagated for one generation. For the selection treatment, experimental populations with 20 seeds from each accession were planted in cages. 17 days after sowing, different aphid species or a mixture were released into the cages (none as a control). After 60 days, all plants in a cage were harvested and a population of 800 seeds was sown representing the next generation. Each population was maintained over five generations of selection, with six replicate populations per selection treatment. At the end of the selection experiment, the genetic composition of the populations was assessed (Züst et al., 2012).
 
-## Experimental design
+### Experimental design
 
 For the study in a common environment, we focused on three well-surviving accessions from the selection experiment: Ma-0, Wei-0, and Wil-3. The accessions Ma-0 and Wei-0 were chosen because they were the most frequent after the aphid selection treatments. Wil-3 was chosen because it is a trichome-less accession that persisted across all treatments. We further focused on three selection treatments: the two single-aphid treatments with Bravicoryne brassicae (BB) and Liphaphis erysimi (LE), and the control without aphid treatment. Additionally, we included offspring from the plants that were used to set up the original selection experiment, here referred to as ‘ancestrals’. All selected plants were grown together for one generation to minimize confounding maternal effects. For each treatment and accession, we planned to use five mother plants from each of the six populations per selection treatment. However, due to the rarity of some accessions in certain populations, we supplemented with mothers from other populations of the same selection treatment to fill up missing plants (360 maternal seed families were planned but ultimately only 261 were used). We accounted for this in our analysis by using population identity (n=6 replicates × 3 selection treatments + ancestrals = 19) and maternal plant identity (n=261 < 5 mothers × 3 accessions × 18 populations for control and selection-treatment plants + 30 mothers × 3 accessions for ancestrals = 360) as random terms. The ancestrals did not stem from multiple populations, but we planned to use an equal amount of mother plants per accession (n=30). After the first generation of the present experiment (the sixth generation [G6] in reference to the selection experiment), between 5 (planned) and 150 (if there was only a single mother available) offspring of each mother were grown and phenotyped in the second (G7) generation (n=1,800). Both generations were grown in a common environment in a fully randomized block design. Hence, if there were differences between selection treatments, they would have been maintained for two generations in the absence of selection by aphids.
 
-## G6: Genotyping of offspring from the selection experiment
+### G6: Genotyping of offspring from the selection experiment
 
 In the selection experiment, seeds were collected from all plants per cage (=population) at once. Thus, the accessions were mixed within populations. To identify the desired accessions, 2,000 seeds were sterilized and sown on Murashige and Skoog (MS) agar plates and stratified for 3 days at 4°C. Plates were transferred to an incubator with a day/night cycle of 18 h/6 h at a constant temperature of 22°C. Seven days after germination, we harvested leaves from seedlings resembling the Ma-0, Wei-0, or Wil-3 accession. Seedlings were genotyped as described previously (Züst et al., 2012). Genotyped seedlings were transplanted onto soil 14 days after germination and were grown in a controlled climate chamber at 18°C under a day/night cycle of 16 h/8 h. Seeds of plants from this G6 generation were collected from each plant separately to start the G7 generation with one seed per plant (n=1800; 1759 surviving).
 
-## G7: Genotyping and phenotyping
+### G7: Genotyping and phenotyping
 
 The plants of the G7 generation were arranged in a randomized layout on MS agar plates and later in trays (24 plants per tray). We changed from square plates to circular plates after the first three blocks. This caused a change in the thickness of the MS agar on the plates and subsequently to slower growth in blocks 4 and 5 than in blocks 1–3. We accounted for these differences during statistical analyses by using a corresponding contrast term within the term blocks. Plants were transplanted onto soil 14 days after germination and grown in a controlled climate chamber at 18°C under a day/night cycle of 16 h/8 h. Plants were grown in five randomized blocks of 360 plants with offspring of each mother present in each block. Plants were not switched between blocks when transferred from agar to soil. The remaining seedling DNA, which was not used for genotyping, was stored at –20°C for later sequencing experiments.
 
 Several traits were measured during the G7 generation (cf. Schmid et al., 2018b). The days to bolting were measured as an indication for flowering time. The number of rosette leaves and the rosette diameter (longest distance) were both assessed at the day of bolting. 21 days after germination, the fifth true leaf was removed and stuck onto a foil for trichome number counts and leaf blade area measurements. To count trichomes, leaves were imaged on a Leica DMR bright-field microscope. Leaf area was measured by scanning the foil with an office scanner and extracting the leaf area with the ImageJ plugin LeafJ (Maloof et al., 2013).
 
-## Statistical analyses
+### Statistical analyses
 
-## Statistical models
+#### Statistical models
 
 All analyses were carried out in R version 3.6.1. Raw data are available (Supplementary file 4). The design comprised the following factorial terms that were not of interest per se: accession (ET, 3 levels), block (BL, 5 levels with a fixed-effect contrast EX comparing blocks 1–3 with blocks 4–5), tray (TR, 75 levels), population identity (LI, 18 levels +1 ancestral per accession), mother plant identity (MO, <120 levels per accession, 261 in total). The factorial term of interest was the selection treatment (Selection, 4 levels), which we split into three orthogonal one-degree of freedom contrasts to compare (i) ancestral plants with plants from the selection experiment (AN), (ii) the control treatment with the two selection treatments (CO), and (iii) the two selection treatments with each other (SE). We used both the regular lm() function with specifying the appropriate statistical tests manually and lmer() that handles linear mixed models with random terms (Schmid et al., 2017). With the regular lm(), we used the following two formulae for the explanatory terms:
 
@@ -126,17 +656,17 @@ The two approaches yielded practically identical results, and we refer to the re
 
 We ran the models for all phenotypic traits separately. We transformed all traits using the logarithm and the square root and tested whether the transformations improved the normality assumption for the residuals using a Shapiro–Wilk test (Shapiro and Wilk, 1965). In general, transformations did not improve the normality assumption except for trichome density, which was then transformed using the logarithm. We further assessed the effects of outliers by removing potential outliers with the ROUT method using the accession and the selection treatment for grouping (Motulsky and Brown, 2006). Accession Wil-3 had only one LE and three BB mothers, meaning that the two selection treatments were poorly replicated for this accession. As Wil-3 lacks trichomes, it was excluded from the trichome density analysis. We also ran all the models without Wil-3. To demonstrate that we tested exhaustively, we report all our results.
 
-## Power estimations
+#### Power estimations
 
 To estimate the statistical power to detect selection effects within genotypes (i.e., accessions), we employed the same models as described above and simulated data using the same data structure as in the real data. We simulated five different settings with effect sizes ranging from 1% to 20%: (i) differences between all four groups with step sizes of 1%, 5%, 10%, 15%, and 20% between each group (with the level following AN<CO< BB<LE, note that the largest difference here is 60%); (ii) only different in ancestors; (iii) only different in controls; (iv) different in both selection treatments; and (v) different in only one selection treatment. For each setting, we generated 1,000 data sets and employed the models as described above. We then summarized the percentage of significant outcomes for the different settings (Supplementary file 2). In brief, we could detect effect sizes of 10% in more than 80% of the simulated data sets. An exception was trichome density, for which the effect size had to be 20% for a robust detection. Note that an effect size of 20% is generally considered small (Cohen, 1988).
 
-## DNA methylation
+### DNA methylation
 
-## Library preparation
+#### Library preparation
 
 We selected 7, 12, and 15 mother plants from the ancestral, BB, and LE treatments (accession Wei-0). Libraries for whole-genome bisulfite sequencing were prepared as previously described (Schmid et al., 2018b), using the DNA extracted for genotyping of the plants in the G6 generation and sequenced on an Illumina HiSeq 2500 (250 bp paired-end). In total, we obtained 293,022,365 read pairs. On average, samples had about 8.6 mio reads. The lowest were 3.8, 6.4, and 6.5 mio, the highest were 11.7, 12.8, and 13.8 mio reads. Mapping efficiencies were generally similar (between 37.8% and 48.2%) but two samples had clearly lower mapping efficiencies (6.0% and 13.4%). These two samples were removed from the analysis (A18 and B26).
 
-## Data processing
+#### Data processing
 
 Short reads were (quality) trimmed with fastp (version 0.20.0 with the options --trim_front1 6 --trim_tail1 6 --trim_front2 6 --trim_tail2 6; Chen et al., 2018) and aligned to the reference genome with Bowtie2 (version 2.3.5.1, Langmead and Salzberg, 2012) in combination with Bismark (version 0.22.3 with the option --dovetail, Krueger and Andrews, 2011). The reference genome for accession Wei-0 was obtained from 1001genomes.org (GMI-MPI release v3.1, pseudogenomes, pseudo6979.fasta.gz) and plastid sequences were added from the Col-0 reference genome (TAIR10). Alignments were deduplicated with Bismark and methylation tables were extracted with MethylDackel (version 0.5.0, github.com/dpryan79/MethylDackel, RRID:SCR_025850). Files were merged and only cytosines with a coverage between 5 and 100 within at least two samples per group were kept (434,671; 479,201; and 2,669,064 in the CG, CHG, and CHH context, respectively; in total about 8.5% of all available cytosines). The three experimental groups (ancestrals and B. brassicae or L. erysimi aphid treatments) were compared to each other with the R package DSS (version 2.32.0, Park and Wu, 2016), using the functions DMLfit.multiFactor(), DMLtest.multiFactor(), and callDMR(). The p-value threshold for the DMR calling was set to 0.01. Finally, all p-values were corrected for multiple testing and thereby converted to FDRs (Benjamini and Hochberg, 1995).
 
@@ -144,6 +674,6 @@ To test whether the extent of epigenetic variation changed during the experiment
 
 To functionally characterize the genes associated with DMCs, we tested for enrichment of GO terms using topGO 2.20 (Alexa et al., 2006) in conjunction with the GO annotation available through biomaRt (Durinck et al., 2009). Analysis was based on gene counts (genes with DMCs within 2 kb compared to all genes with one or more tested cytosines that had an average of at least 10% methylation, i.e., potential gbM genes) using the ‘weight’ algorithm with Fisher’s exact test (both implemented in topGO). A term was identified as significant within a given parameter combination if the p-value was below 0.01.
 
-## Analysis of genetic variation in the subset of 190 plants studied by Lin et al., 2024
+### Analysis of genetic variation in the subset of 190 plants studied by Lin et al., 2024
 
 To assess whether there was any genetic variation associated with the treatments in the experiment described by Lin et al., 2024, we used their RNA-seq data (PRJNA997595) on a subset of 190 plants that supposedly included four accessions. To obtain DNA sequence variant data from RNA-seq data, we followed, as far as possible (i.e., base recalibration required known sites that were not available), the GATK-guidelines. In brief, short reads were (quality) trimmed with fastp (version 0.23.4; Chen et al., 2018) and aligned to the reference genome with STAR (version 2.7.11a with the options --alignIntronMax 10000 --alignMatesGapMax 10000 --outSAMstrandField intronMotif and supplying the sample ID as read-group information; Dobin et al., 2013). Only unique alignments with a quality of at least 250 were kept. Read duplicates were marked with Picard tools (version 2.18.25; broadinstitute.github.io/picard; RRID:SCR_006525) and spliced reads were split with GATK SplitNCigarReads. Bam files were merged into a single file to reduce running time while calling variants. Data were subset to 10,000 randomly chosen genes. Variants were finally called with GATK HaplotypeCaller (with the options --dont-use-soft-clipped-bases --standard-min-confidence-threshold-for-calling 20.0) and filtered with GATK VariantFiltration (with the options --window 35 --cluster 3 --filter-name "FS"--filter "FS>30.0" --filter-name "QD" --filter "QD<2.0"). The resulting VCF file was then filtered for variants with a coverage between 10 and 1,000 within at least four plants per accession and treatment. Variants with a minor allele frequency below 5% were removed. 13,418 variants passed this filter. We did not filter accessions separately when plotting them individually to maintain the distance values. Genetic pairwise distances were calculated as the fraction of alleles that differed between two individuals (Schmid et al., 2024). We visualized the distances as previously described (Schmid et al., 2024). When we observed that some plants within two of the accessions were clearly distinct from each other, we used the data on more than 1000 Arabidopsis accessions available from 1001genomes.org (https://1001genomes.org/data/GMI-MPI/releases/v3.1/1001genomes_snp-short-indel_only_ACGTN.vcf.gz). We intersected the two data sets (12,686 variants remained) and calculated all pairwise distances between the experimental plants and the publicly available accessions. Experimental plants were then assigned to the accession that was closest to it (Supplementary file 3).

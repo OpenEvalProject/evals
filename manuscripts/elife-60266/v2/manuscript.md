@@ -20,6 +20,14 @@ The placenta is the interface between mother and fetus in all eutherian species.
 
 The placenta links maternal tissues and the embryo, providing necessary support and instructing the development of the embryo. The placenta performs many essential functions including transport of nutrients and exchange of gases and waste between maternal and fetal blood, production and uptake of hormones, and regulation of the maternal immune system (Maltepe and Fisher, 2015; Woods et al., 2018). The mouse placenta is separated into three main regions – the decidua, the junctional zone (JZ), and the labyrinth. Select fetal trophoblast invade into the maternal decidua and remodel and line maternal arteries, facilitating maternal blood to flow into the fetal portion of the placenta (Adamson et al., 2002; Maltepe and Fisher, 2015). The JZ lies directly beneath the decidua and consists of parietal trophoblast giant cells, spongiotrophoblast, and glycogen cells that largely function in hormone secretion and metabolism (Simmons et al., 2007; Woods et al., 2018). Beneath the JZ, closest to the embryo, is the labyrinth, which is specially designed to maximize surface area for gas and nutrient exchange between maternal and fetal blood (Figure 1A; Simmons et al., 2008a; Soncin et al., 2015; Woods et al., 2018).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic showing the main regions of the placenta – Labyrinth, Junctional Zone, Parietal TGC, and Decidua. Removal of the decidual stroma and the allantois is marked by scissors and cut lines. Sections of placentas at E9.5–14.5 stained with DAPI to label nuclei and reveal tissue architecture. The dotted line is drawn at the interface between the junctional zone (left of the line) and the maternal decidual stroma (right) to demonstrate the growth occurring during this time span. (B) Schematic outlining nuclei isolation from tissue, purification using FACS, transcriptome capture, and downstream analysis. (C) Number of nuclei collected at each gestational age and in total. (D) Visualization of the 27,326 nuclei included in the analysis plotted in two dimensions by transcriptome similarity using uniform manifold approximation and projection (UMAP). Each dot represents one nucleus colored according to assignment by clustering analysis (see Materials and methods). Dotted lines encircle clusters with common properties. (E) Expression of Xist in each sample. Female placenta samples express Xist in all nuclei. Male placental samples express Xist only in maternally derived nuclei. The main cell type groupings from D are outlined here also.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) UMAP projection of all nuclei color coded by timepoint from which they were collected. (B) The number of transcripts identified per nucleus (left) and the number of unique genes identified (right) per cell projected in UMAP space. (C) Violin plots showing the number of unique genes (left), number of transcripts (middle), and the percent of reads mapping to mitochondrial genes (right) for each cluster identified in Figure 1D. (D) Dot plot showing the average expression per cluster and percent of nuclei in each cluster expressing select marker genes. Genes are listed on the x-axis and clusters on the y-axis. (E) Immunofluorescence staining of PDPN and PECAM1 at E10.5 showing PDPN+ c mesenchymal cells and contacts with fetal PECAM+ endothelial cells (Scale Bar – 20 µm; FV – Fetal Vessel).
+
 The development of the labyrinth structure begins with fusion of the allantois with the chorion at E8.5 (Cross et al., 2003). This begins a process of invasion and branching morphogenesis resulting in an expansive surface area for gas and nutrient exchange by E10.5 (Soncin et al., 2015). The gas exchange interface in the mouse contains three layers of differentiated trophoblast separating maternal blood from the endothelial cells of the fetal vasculature (Simmons et al., 2008a; Maltepe and Fisher, 2015; Coan et al., 2005). Sinusoidal trophoblast giant cells (S-TGC) reside in the maternal blood space, have demonstrated exocrine functions, and are a source of placental lactogens (Simmons et al., 2008b). S-TGC are attached to the outermost syncytiotrophoblast layer (SynTI) but are perforated allowing maternal blood to contact SynTI (Coan et al., 2005; Woods et al., 2018). Next, are the two SynT layers which together transport gasses and nutrients from the maternal blood to the fetal vasculature (Georgiades et al., 2002; Woods et al., 2018). SynTI is the outer layer in direct contact with maternal blood forming the barrier between maternal blood and fetal tissue. Beneath, is SynTII which functions as an intermediary between SynTI on its apical membrane and the fetal endothelium on its basal side. Proper patterning of each cell type ensures efficient transport of nutrients and waste between maternal and fetal blood, and is necessary for embryonic growth, development, and viability.
 
 Investigating the cells of the placental labyrinth is difficult due to their size and an expansion in the number or ploidy of nuclei. SynT cells are multinucleate and are not amenable to standard dissociation and isolation procedures. As a reference, human SynT are 80–200 µM in diameter and contain 5–15 nuclei meaning their size and fragility do not allow for profiling by FACS or passage through microfluidic channels for droplet-based single-cell RNA sequencing (Liu et al., 2018). Therefore, questions remain about how each cell type is specified, how essential placental functions are distributed between cell types, and how each cell type changes throughout developmental time.
@@ -30,7 +38,7 @@ In this study, we used snRNA-seq to profile the murine placental development at 
 
 ## Results
 
-## Nuclear isolation and snRNA-seq of mouse placental cells (E9.5-E14.5)
+### Nuclear isolation and snRNA-seq of mouse placental cells (E9.5-E14.5)
 
 To gain a better understanding of the constitution of cell types and developmental trajectories in the mouse placenta, we performed single nuclei droplet-based sequencing of their transcriptomes at four embryonic time points: E9.5, E10.5, E12.5, and E14.5. Given the largely syncytial nature of the placenta, we reasoned that sequencing of nuclei would bypass the problems inherent in using a single-cell RNA-sequencing approach. To decrease contribution from maternal tissues, the placenta was carefully dissected at the boundary between the fetal junctional zone and the maternal decidua (Figure 1A). On the labyrinth side of the placenta, the placenta was separated from embryo proper at the point of attachment with the allantois on the basal side (embryo facing). Nuclei were isolated and sorted for DNA content by FACS enabling the removal of doublets and contaminating cytoplasmic RNA (Figure 1B). Isolated nuclei were subjected to droplet-based sequencing using the 10x Genomics platform.
 
@@ -38,9 +46,25 @@ A total of 27,326 nuclei passed quality control (between 500 and 4000 unique gen
 
 The maternal decidual stroma was identified by the absence of Xist expression in male embryonic tissue (Figure 1E). Marker genes further subdivided the five broad groups into subgroups (Figure 1—figure supplement 1D, Figure 1—source data 1, Supplementary file 2). The fetal mesenchyme group consisted of two distinct subgroups. One (clusters 6, 10, and 24) expressed markers of pericytes (e.g. Acta2) and several growth factors including Wnt5b and Pdgfrb that are critical for development and maintenance of vascular populations (Eaton et al., 2020). The other (clusters 15 and 19) expressed Gata4, Kit, and Pdpn. The nature of the cells in this subgroup is unclear, but immunofluorescence for PDPN showed the cells to be interstitial with long projections that appear to make contact with PECAM positive fetal endothelial cells (Figure 1—figure supplement 1E). The endothelial group consisted of cells expressing markers of vascular endothelium (Cluster 3 - Pecam1, Kdr, Tek), lymphatic endothelium (cluster 26 - Flt4/Vegfr3), and pro-angiogenic and lymphogenic lineages (Clusters 20 and 25 - Vegfc and Igf1, respectively) (Cao et al., 1998; Björndahl et al., 2005). The identification of cells expressing lymphatic markers is intriguing because the placenta is not thought to contain lymphatics. However, lymphatic endothelium has been discovered in human and it is possible a similar cell type exists in mouse (Pique-Regi et al., 2019). The blood cell group consisted of putative erythrocytes (Cluster 13 - Hbb-y, Hba-x), macrophages (Cluster 17 - Mrc1+; Martinez and Gordon, 2014), B-cells (Cluster 21 - Bank1, Btla; Aiba et al., 2006), T-cells (Cluster 22 – Gzmc, Slamf1, Cd84; Griewank et al., 2007, Veillette, 2006), and natural killer cells (Cluster 23 Cd244; Lee et al., 2004). Together, these data show that snRNA-seq has the sensitivity and specificity to identify the multitude of cell types in the developing placenta.
 
-## Sub-clustering identifies the trophoblast subpopulations of the labyrinth and junctional zone
+### Sub-clustering identifies the trophoblast subpopulations of the labyrinth and junctional zone
 
 Trophoblast cells are unique to the placenta and perform the majority of its specialized functions. Unsurprisingly, they also make up the largest of the five broad groups of nuclei (Figure 1D). To gain a deeper understanding of the trophoblast populations, we used Seurat to cluster only trophoblast nuclei. Nuclei collected at each individual timepoint were analyzed separately and those assigned a trophoblast identity were then integrated and visualized on a single UMAP. This analysis resulted in 13 clusters consisting of 16,386 nuclei, with clusters ranging in size from 159 to 2906 nuclei (Figure 2A, Figure 2—figure supplement 1A). The clusters formed five appendages arising from a central body.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig2-v2.jpg)
+
+**Figure 2.:** (A) UMAP showing the 16,836 nuclei included in the trophoblast subset, clustered and plotted according to transcriptome similarity. Clusters were annotated according to canonical marker genes and named below. Inset shows the number of nuclei collected at each gestational age. (B) Dot plot showing average expression and percent of nuclei in each cluster expressing canonical and novel marker genes identified for each cluster. Genes listed on the x-axis and clusters on the y-axis. (C–E) Nuclei along the differentiation from LaTP to SynTII, SynTI, and S-TGC were ordered by pseudotime using Slingshot. The nuclei included along each pseudotime axis shown at top. The expression of select genes (y-axis) representing each differentiation are shown in each heatmap. Each column represents a nucleus organized in pseudotime proceeding from left to right along the x-axis. (F) Expression of genes unique to several trophoblast populations projected in UMAP space (top) and localization of corresponding protein in E12.5 mouse placenta sections by immunofluorescence staining (Middle – 20x, Scale Bar = 200 µM; Bottom – high magnification inset area shown by white dashed line). Separation of labyrinth (La) and junctional zone (JZ) shown by the orange dashed line.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Violin plots showing the number of unique genes (left), number of transcripts (middle), and the percent of reads mapping to mitochondrial genes (right) for each cluster identified in the trophoblast dataset in Figure 2A. (B) Scatter plot of expression of Egfr and Met in LaTP and LaTP2 clusters showing Egfr expression to be highly enriched in LaTP2. (C) Expression of Epcam RNA projected in trophoblast nuclei. LaTP and LaTP two clusters are outlined by the dotted line. (D) Immunofluorescence staining of EPCAM and EGFR (top two rows) or EPCAM and MET (bottom two row). White dashed lines outline EPCAM expression as a marker of canonical LaTPs. MET expression colocalizes with EPCAM and represent the LaTP cluster. EGFR and EPCAM domains are largely non-overlapping, with EGFR expressing cells representing the distinct LaTP2 cluster. EGFR is also expressed in mature SynTII. (E) Immunofluorescence staining of EPCAM and EGFR or EPCAM and MET at E8.5. Arrows denote the allantois (Al) and the chorion (Ch). The white box denotes the inset at right.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Nuclei along the differentiation from JZP1 to GCs were ordered by pseudotime using Slingshot. The nuclei included along each pseudotime axis shown at left. The expression of select genes (y-axis) representing differentiation is shown in heatmap (right). Each column represents a nucleus organized in pseudotime proceeding from left to right along the x-axis. (B) Immunofluorescence staining of sections from E12.5 placentas for Ncam1 (Purple) and Slco2a1 (Yellow). Dashed lines separate boundaries between placental regions (Labyrinth, JZ – Junctional Zone, and Decidua). (C) Immunofluorescence staining of sections from E12.5 placentas for Pcdh12 (Green) and Ncam1 (D) DAPI staining in E12.5 placental sections. Dashed box outlines the magnified region shown at left.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Table of prolactin gene expression in either spongiotrophoblast or glycogen cells from Simmons et al., 2008a and their expression in the snRNA-seq data. (B) Violin plots showing the expression of the prolactin genes in (A). (C) Violin plots showing the expression of additional canonical markers Pcdh12, Tpbpa, Ascl2, Gjb2, and Igf2r.
 
 The central body consisted of 4 clusters. One of these clusters highly expressed the receptor tyrosine kinase Met (Figure 2B), which was previously described as a marker of labyrinth trophoblast progenitor (LaTP) cells with trilineage potential: SynTI, SynTII, and S-TGC (Ueno et al., 2013). The snRNA-seq data places these cells as most closely related to SynTII. Notably, the LaTP shared expression of the Wnt signaling pathway members Ror2, Lgr5, and Tcf7l1 with presumptive SynTII precursors. Interestingly, the clustering identified a second subpopulation of cells in the central body that shared relatively high expression of Tcf7l1 and the long non-coding RNA Pvt1 with LaTPs, but expressed low levels of Met, Ror2, and Lgr5 and high levels of Egfr (Figure 2B). These cells were more closely related to SynTI and S-TGC. We designated this subpopulation as LaTP2. Correlative analysis of RNA levels for Met and Egfr in individual cells confirmed that for the most part these markers were uniquely expressed in LaTP and LaTP2 cells, respectively (Figure 2—figure supplement 1B). Previously described LaTPs were also shown to express high levels of the adhesion protein EPCAM (Ueno et al., 2013). EPCAM mRNA and protein was mostly limited to the MET+ LaTP cells, although rare EPCAM/EGFR double positive cells were also present (Figure 2—figure supplement 1C–D). Positionally, MET expressing LaTP cells were more basal than the EGFR expressing LaTP2 cells, suggesting that LaTP may be giving rise to LaTP2 (Figure 2—figure supplement 1D). Consistent with this interpretation, immunofluorescence staining of E8.5 embryos identified a large number of EPCAM/MET double positive cells, but few EGFR positive cells in the developing chorion plate (Figure 2—figure supplement 1E). Together, these data show that LaTPs can be separated into two populations based both on mRNA and protein expression. The developmental relationship between these two populations will require future lineage tracing.
 
@@ -52,9 +76,17 @@ We further probed the transition from multipotent LaTP through precursors to eac
 
 As described above, the remaining two arms were consistent with differentiation of the JZ populations: SpT and GC cells. Immunofluorescence of the representative markers NCAM1 and SLCO2A1 confirmed their expression in the JZ (Figure 2F). Furthermore, staining of juxtaposed sections confirmed their mutually exclusive expression (Figure 2—figure supplement 2B). Co-staining with the known GC marker PCDH12 (Rampon et al., 2005), verified the GC identity of the NCAM1+ cells (Figure 2—figure supplement 2C). Previous work has identified differential expression of prolactin genes between GC and SpT (Simmons et al., 2008a). Therefore, we analyzed the expression of these genes in our dataset. Expression analysis of prolactin genes showed both distinct and overlapping expression of this large gene family between the SpT and GC cells, and confirmed the identities of these clusters (Figure 2—figure supplement 3A and B). Of important note, parietal TGC nuclei were not identified in our snRNA-seq data, likely due to their very large size precluding their passage through the FACS pre-filter, which removes nuclei greater than 35 microns (Figure 2—figure supplement 2D). Our data also did not identify invasive trophoblast giant cells (spiral artery and canal TGCs) that invade the decidua, which was dissected away. Still, this analysis of the trophoblast snRNA-seq was able to clarify the cell types and their relationships for a predominance of the lineages of the mouse placenta identifying novel intermediate states and markers of the different cell populations.
 
-## Developmental time course and trajectory inference reveal details of lineage dynamics and commitment
+### Developmental time course and trajectory inference reveal details of lineage dynamics and commitment
 
 Next, we asked how the trophoblast cell populations changed over developmental time by separating the conglomerate data into its individual timepoints (Figure 3A). This visualization clearly showed the rapid diminishment of the LaTP populations over time, resulting in few progenitors remaining by E14.5 (Figure 3A and B, Supplementary file 3). The precursor populations also decreased over time, presumably maturing into terminally differentiated cells, which dramatically increased during the time course (Figure 3A and B). To determine which populations were primarily responsible for the expansion of the number of cells in the placenta, we evaluated expression of the cell cycle marker Mki67 which is lost when cells exit the cell cycle (Gerdes et al., 1984). The majority of Mki67 expressing nuclei were among the progenitor and precursor cell populations (Figure 3—figure supplement 1A). However, at E9.5 and E10.5, a substantial number of nuclei at the distal tips of each arm also expressed Mki67, suggesting ongoing proliferation even after cells have transitioned to a more mature-like expression state. Very few nuclei expressed Mki67 at E14.5 consistent with the expansion in placental cell number happening prior to E14.5, with later growth occurring through cellular hypertrophy rather than cell division (Ueno et al., 2013; Paikari et al., 2017).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig3-v2.jpg)
+
+**Figure 3.:** (A) UMAP projection of all nuclei captured at each gestational age. (B) Quantification of the proportion of each cluster captured at each developmental time point. (C) RNA velocity vectors of the trophoblast nuclei at each time point. Arrows show the estimated magnitude and direction of each nucleus in pseudotime. (D) The magnitude of velocity vectors shown in D summarized as violin plots, with nuclei split by cluster identity and developmental time point. (E) Violin plots showing the log2 fold change of differentially expressed genes between nuclei from S-TGC at E9.5 vs. each other timepoint. (F) Immunofluorescence staining of LEPR (top) and PODXL (bottom) in the placental labyrinth at each developmental timepoint at 63x. Insets, magnification of area surrounding a S-TGC indicated by dotted line, DAPI stain removed to highlight protein expression.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Expression of Mki67 projected in UMAP space at each time point (left). The dotted line outlines the progenitor populations LaTP, LaTP2, SynTI Precursor, SynTII Precursor, and JZP 1/2. Quantification, shown as a dot blot representing percent cells expressing (increasing with dot size) and average expression (increasing with red color) of Mki67 in each cell population combined across all timepoints (right). (B) Scatter plot of differential expression (log2 fold change) in S-TGC nuclei comparing expression at E9.5 on the x-axis with E10.5 (left), E12.5 (middle), and E14.5 (right). Each dot represents a gene and significantly differentially expressed genes are colored blue (adj. p-value<0.05, 100 permutations). The top 10 differentially expressed genes by log2FC in either direction are labeled. (C) Gene Ontology (Biological Process) of genes upregulated at E14.5 vs E9.5 (left) and genes upregulated at E9.5 vs E14.5 (right) (adj. p-value<0.05, logFC >0.5). GeneRatio is the of the number of genes in the given ontology divided by the number of genes found in any ontology (Yu, 2018) . (D–F) Expression of Ctsq (D), Lepr (E), Podxl (F) across trophoblast cells represented on UMAP plot at each developmental time point. The S-TGC population is circled by a solid line. (G) The number of differentially expressed genes (y-axis) between each timepoint for each cluster (with greater than 50 nuclei captured at each timepoint).
 
 Cellular dynamics can be tracked not only by collecting samples at different developmental time points, but also by leveraging splicing information inferred through comparisons of intron vs. exonic reads of genes within individual cells, termed RNA velocity. We performed RNA velocity using the scVelo package to produce vectors representing both the direction and speed of cellular maturation (Bergen et al., 2019). In the scVelo visualization, each nucleus is identified by an arrow representing the inferred direction and rate of cellular change projected in UMAP space. The data was visualized separately for each different developmental timepoint to discern the dynamics of cell transitions and how these dynamics change over time (Figure 3C). In addition, the velocity magnitude was summarized for each cell population at each developmental timepoint (Figure 3D, Figure 3—source data 1).
 
@@ -62,9 +94,17 @@ These analyses uncovered a number of interesting properties associated with plac
 
 Gene ontology analysis showed that genes up at E9.5 were highly enriched for ontology groups concerning cell division, while those at E14.5 were enriched for Ras GTPase signaling and various developmental processes (Figure 3—figure supplement 1C, Figure 3—figure supplement 1—source data 1). Examples of genes that increased over developmental time include Ctsq, the Cathepsins (Ctsj, Ctsr, Ctsm, Cts3, and Cts6), and several genes involved in hormone signaling and response (Lepr, Tsc22d3, and Ghrh) (Figure 3—figure supplement 1B,D,E,F). In contrast, Podxl is expressed from the very early stages of S-TGC specification through E14.5. Podxl is a highly charged membrane protein which, in a different context, has been implicated in luminogenesis in early embryos (Shahbazi et al., 2017). While the formation of maternal blood spaces in the placental is distinct from the early embryo, the early expression of Podxl in S-TGCs might function in maintaining open maternal blood spaces within the placental labyrinth. The differential dynamics of PODXL and LEPR in S-TGCs was confirmed by immunohistochemistry (Figure 3F). Similar ongoing maturation processes were seen in the SynTII, SynTI, GC, and SpT populations (Figure 3—figure supplement 1G). Together these data support a model of early expansion by self-renewing progenitor cells and committed precursors followed by ongoing maturation of all five differentiated cell types of the placenta proper.
 
-## Defining distinct roles of the trophoblast subtypes at the gas exchange interface
+### Defining distinct roles of the trophoblast subtypes at the gas exchange interface
 
 The labyrinth is the site of transport between fetal and maternal blood in the mouse placenta. Fetal and maternal blood are separated by a thin membrane consisting of four cell layers starting with the fetal endothelial cells, then SynTII, followed by SynTI, and finally S-TGCs (Simmons et al., 2008a; Figure 4A). A basal lamina separates the fetal endothelial cells from SynTII cells. The expression programs and functions of the three trophoblast cell layers have been difficult to dissect due to the syncytial nature of the SynTI and SynTII cells. Isolation of nuclei followed by snRNA-seq overcomes this barrier enabling the determination of the unique expression programs of each trophoblast layer. Immunohistochemistry for the marker genes PECAM1, IGF1R, STRA6, and PODXL demonstrate each cluster corresponds to endothelial, SynTII, SynTI, and S-TGC populations respectively in vivo (Figure 4A). Each layer could be distinguished by high- resolution image analysis with nucleated erythrocytes residing in the PECAM1+ fetal vessels and large polyploid S-TGC residing in the maternal blood sinuses. PODXL+ cytoplasmic extensions of the S-TGCs spread over the perimeter of the maternal blood space forming a permeable lining (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic showing the relative location of the cell types at the gas and nutrient exchange interface of the labyrinth – S-TGC, SynTI, SynTII, (sometimes referred to as trophoblast layer I, II, and III, respectively) and the fetal endothelium (top). Immunofluorescence staining resolving expression in each pair of neighboring cell types – Endothelial/SynTII, SynTII/SynTI, and SynTI/S-TGC in E12.5 mouse placenta sections. (B) Heatmap of all differentially expressed genes by log fold change in SynTI, SynTII, and S-TGC clusters. (C–E) Network diagrams showing the top 5 Gene Ontology (Biological Process) enriched in marker genes (adj. p-value<0.05, logFC >0.5) in each cluster (Yu G. 2018). Gene ontology categories are nodes and associated marker genes are annotated. Adjusted p-values for enrichment are listed in the table insets.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Significantly differentially expressed genes are defined by adj. p-value<0.05 and logFC >0.5. GeneRatio is the of the number of genes found the given ontology divided by the number of genes found in any ontology category. (B) Heatmap of scaled expression all solute transporters showing differential expression (adj. p-value<0.05) in SynTI, SynTII, S-TGC compared to all other trophoblast clusters. Genes are organized and annotated by class of transporter. (C) Heatmap of scaled expression of select genes involved in vitamin and cholesterol transport.
 
 SynTII, SynTI, and S-TGCs were distinguished from one another based on their transcript profiles (Figure 4B, Figure 4—source data 1). Furthermore, gene ontology analysis of differentially expressed genes between populations suggested highly distinct functions (Figure 4C–E and Figure 4—figure supplement 1, Figure 4—source data 2). SynTII differentially expressed genes were highly enriched for cell–cell and cell–matrix interactions such as those encoding cell junction and cell adherens proteins consistent with a role as a basal permeability barrier between maternal and fetal blood. SynTII also expressed collagens and laminin subunits (Figure 4E), which likely form the basal lamina separating SynTII from the fetal endothelium. Also identified in SynTII differentially expressed genes was the stem cell population maintenance GO category, which included several genes known to be important for placental function though not specific to stem cells (Bcl9, Gata2, and Tbx3).
 
@@ -74,21 +114,41 @@ Although more generally understood as an exocrine cell type, the S-TGC were enri
 
 Given that the labyrinth represents the site of exchange of nutrients, minerals, metabolites, ions, gases, and regulatory factors, between the mother and fetus, we next wanted to better understand how these functions are distributed across the different trophoblast layers. We focused on two large functional categories: solute transporter and cholesterol/vitamin transport. All genes in these categories that were found to be differentially expressed between one of the interface populations (SynTI, SynTII, S-TGC) compared to all other trophoblast populations were included in this analysis. The results suggested a striking separation of functions between the layers (Figure 4—figure supplement 1B and C). For example, genes responsible for carboxylate transport were highly enriched in SynTII, while organic anion transporters were enriched in SynTI. Even within specific transport pathways, functions were often separated; for example, factors important in Zinc transport were distributed across, yet distinctly expressed between the populations. Cholesterol transporters are enriched in SynTII (Scarb1, Vldlr) and S-TGC (Hdlbp, Ldlr), while Folate receptors (Folr1, Folr2) are uniquely expressed in SynTI. Together, these data show a highly evolved separation of functions between the three trophoblast layers that separate maternal from fetal blood.
 
-## Predicting cell signaling within the placental labyrinth
+### Predicting cell signaling within the placental labyrinth
 
 Single-cell RNA-seq has been used to predict signaling between different cell types of a tissue or organ (Efremova et al., 2020; Vento-Tormo et al., 2018). Here, we asked whether we could do the same with snRNA-seq to provide insight into the developmental signals driving mouse placental development. We used the package CellPhoneDB (Efremova et al., 2020) which applies a data base of annotated receptor-ligand pairs to the single-cell expression data evaluating all possible combinations of cell types (i.e. identified clusters). We focused our analysis on the populations of the developing labyrinth (LaTP, LaTP2, SynTI Precursor, SynTI, SynTII, S-TGC Precursor, S-TGC, and fetal endothelium). Given that CellPhoneDB receptor-ligand database was developed for human cells, we only included orthologous genes from our mouse snRNA-seq data. The results are summarized as a heatmap of the predicted strength (average log 2 expression of ligand-receptor pair) in Figure 5—figure supplement 1 with receptor–ligand interactions shown on the rows and each cluster pair shown as columns (full data in Figure 5—figure supplement 1—source data 1). A total of 139 unique ligand–receptor interactions reaching significance (adj. p-value<0.05) were uncovered.
 
 CellPhoneDB predicted an interaction between Rspo3 in the endothelium with Lgr5 in the LaTP/SynTII lineage (Figure 5A). Rspo3 is required in vivo for the maintenance of Gcm1 expression (Kazanskaya et al., 2008; Aoki et al., 2007) and canonical Wnt signaling is essential for differentiation of SynTII (Zhu et al., 2017; Matsuura et al., 2011). Predicted signaling in the opposite direction included Vegfa secreted by SynTII to the receptors Kdr, Flt1, Nrp1, Nrp2 located only on endothelial cells. Immunostaining confirmed SynTII and SynTI as the sources of VEGFA in the labyrinth (Figure 5B, Figure 5—figure supplement 5–S2A). These data suggest a feedback loop where Rspo3-Lgr5 supports SynTII differentiation and function, while Vegfa-Kdr/Flt1 drives vascular maintenance and remodeling, thereby coordinating lineage differentiation with development of tissue structure.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig5-v2.jpg)
+
+**Figure 5.:** (A) Heatmap showing all Wnt signaling interactions (top) and Vegf signaling (bottom) between the endothelium and labyrinth trophoblast populations. Left: schematics summarizing signaling interactions. (B) Immunofluorescence staining for VEGFA and IGF1R demonstrating colocalization in SynTII in E12.5 mouse placenta sections (63x). Fetal Vessels are outlined in yellow dashed line. (C) Heatmap showing all Egfr signaling interactions between labyrinth populations. Schematic showing secretion of Egf ligands Hbegf, Tgfa, and Nrg1 from SynTI to Egfr expressed on SynTII, LaTP, and S-TGC. (D) Immunofluorescence staining for HBEGF and EGFR demonstrating colocalization of the ligand and receptor SynTII, but only HBEGF expression in SynTI (E12.5 mouse placenta sections - 63x) (E) Heatmap showing signaling interactions of Bmp8a (top) and Bmp7 (bottom), secreted by the LaTP and SynTII or LaTP only, respectively. (F) Heatmap showing predicted signaling interactions between Bmp6 secreted by the endothelium to receptors on LaTP, SynTI, SynTII and S-TGC. (G) Transcript expression for the Smad TFs which are differentially regulated (Smad1/3/5/6).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heatmap of 139 ligand–receptor interactions predicted by CellPhoneDB (p-value<0.05 permutation test). The rows are ligand–receptor pairs and columns are cell–cell pairings. Strength of interaction is shown by coloration. All interactions not reaching significance have a strength of zero (blue).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–C) Immunofluorescence staining of sections from E12.5 placentas of (A) IGF1R (Purple) and VEGFA (Green); (B) STRA6 (Yellow) and HBEGF (Red); HBEGF (Red) and EGFR (Green). The white- dashed line in (A) and (B) outline the magnified areas shown in Figure 5B and Figure 5D, respectively. Fetal vessels are outlined by the yellow dashed lines. (D) Violin plots summarizing expression of Smad2/4/7/9 in each trophoblast cluster.
+
 Analysis of marker genes suggested Egf signaling as a regulator of LaTP differentiation to SynTI (Figure 2D). CellPhoneDB analysis was consistent with that interpretation as it predicted an interaction between the EGFR ligands Tgfa, Hbegf, and Nrg1 produced by SynTI with Egfr on both LaTP2 and SynTI precursor populations. However, it also predicted an interaction with Egfr on LaTP, SynTII, and S-TGCs (Figure 5C). We confirmed protein expression HBEGF alone in SynTI, and colocalization of HBEGF and EGFR in SynTII (Figure 5D; Figure 5—figure supplement 2B and C). Therefore, SynTI appears to be a hub of EGF signaling that impacts the majority of the cell populations in the labyrinth. Loss of Egfr in vivo results in decreased placental size, disorganized labyrinth, and a reduction in the SpT layer (Du et al., 2004; Miettinen et al., 1995; Strunk et al., 2004). Depletion of Egf ligands yields a variety of phenotypes (Liu et al., 2019; Luetteke et al., 1993). Taken together, these data suggest a complex regulation of Egfr signaling being coordinated by SynTI that is critical for proper development of the labyrinth.
 
 Numerous ligand–receptor interactions between Bmp8a and several receptors, including Acvr1, Bmpr1, and Bmpr2 were predicted in the labyrinth. The source of Bmp8a is LaTP and SynTII and the receptors are located on all labyrinth populations, including LaTP and SynTII (Figure 5E). Additional Bmp 60A subfamily members, Bmp6 and Bmp7, were highly secreted. Bmp7 is secreted by LaTP and Bmp6 by the endothelium (Figure 5E and F). In addition to BMP ligand and receptors, the pathway’s downstream effectors, the Smad TFs, also showed striking differential expression between the cell types of the labyrinth. Smad2/4/7 were relatively uniformly expressed in trophoblasts, while Smad1/3/5/6 displayed varied levels of expression across trophoblast populations (Figure 5G and Figure 5—figure supplement 2D). Previous work has shown that while Bmp8a is largely redundant with Bmp8b, loss of Smad1, and combined knockout of Bmp5/7 exhibit severe placental defects (Zhao and Hogan, 1996; Tremblay et al., 2001; Solloway and Robertson, 1999). Cell-type-specific perturbation of elements of the Bmp pathway has not been performed; however, ligand–receptor modeling with CellPhoneDB combined with snRNA-seq expression data provides insight into how the pathway likely functions in vivo.
 
-## Modeling transcription factor regulon activity identifies new candidate regulators of SynTII
+### Modeling transcription factor regulon activity identifies new candidate regulators of SynTII
 
 Transcription factors (TFs) are the most direct regulators of cell fate and can be used to reprogram cells to new cell fates (Kubaczka et al., 2015). Our snRNA-seq data contained many well-studied TFs, but expression alone is not necessarily a good indicator of function. TFs typically act cooperatively with other TFs and numerous factors influence their activity. Therefore, we sought to identify active TFs based on both expression of the TF and its downstream targets within the same cells. To do so, we used the SCENIC package (Aibar et al., 2017) which uses a database of TFs and their annotated motifs to identify enrichment of a TF motif within or near the promoter regions of co-expressed genes within each cell to define ‘regulon activity’. As such SCENIC infers activity of a transcriptional network rather than considering expression of the TF alone.
 
 Application of SCENIC to the trophoblast dataset recovered 200 transcription factor regulons with activity in at least one cluster (Figure 6—source data 1). To ensure that the regulon activity data maintained the variation of the transcript expression data, we projected the nuclei in UMAP space using regulon activity transcript expression as the underlying variable. The resulting plot was color coded based on a cluster identity as defined by Seurat analysis of transcript expression (Figure 6A). There was overall strong agreement in the two approaches to separate nuclei by cell type both in UMAP space and hierarchical clustering of Pearson correlations between populations (Figure 2A vs. Figure 6A, Figure 6—figure supplement 1A). These data show that TF regulon activity provides an alternative means to identify the different cell types of the placenta.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig6-v2.jpg)
+
+**Figure 6.:** (A) UMAP projection derived from regulon activity predicted by SCENIC. The clusters are colored according to Seurat clustering of transcript data. The cluster identities of each of the five arms of the UMAP are annotated. (B) Heatmap of the scaled regulon activity for select regulons expressed in each trophoblast population. The number of genes predicted to be regulated by each transcription factor is included in parenthesis. (C) Comparison of transcript expression of the TF (left) and the regulon activity for that TF (right) at the single-cell resolution projected in UMAP space for Gcm1, Pax8, Ets2, and Esrrg. The number of genes predicted to be regulated by each transcription factor is denoted in parentheses. (D) Quantification of the number active regulons with a lethal phenotype in mouse according to the Jackson Laboratory MGI (Embryonic/Prenatal - 78, Perinatal/Neonatal - 24, Postnatal - 11, Pre-weaning - 9, lethality at weaning - 2, no developmental lethality - 76) and the number with known placental phenotypes in vivo (n = 17). (E) Heatmap showing expression of a network of regulons enriched for expression in SynTII (left). Gene regulatory network of high confidence predicted interactions from GRNboost2 (right). Unidirectional regulation denoted by blue arrows and bidirectional regulation by yellow. Predicted targets of Gata1 and Tcf7l2 expressed in SynTII and important in SynTII differentiation or function are annotated. (F) Immunofluorescence staining for GATA1 and IGF1R showing GATA1 expressing nuclei in IGF1R SynTII cells (E12.5 mouse placenta sections - 63x). GATA1+ SynTII nuclei – white arrowheads, GATA1- putative SynTI nucleus – yellow arrowhead.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60266/elife-60266-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Heatmaps showing the Pearson correlation values between cluster averages of transcript expression (left) and SCENIC regulon activity (right). Clusters are ordered by hierarchical clustering with complete linkage. (B) Dot plot showing the average expression and percent of the nuclei in each cluster of all subviable genes with placental phenotypes from Perez-Garcia et al., 2018 in the trophoblast clusters from Figure 2. (C) Dot plot showing the average expression and percent of the nuclei in each cluster of all subviable genes with placental phenotypes from Perez-Garcia et al., 2018 in the conglomerate dataset clusters from Figure 1. (D) Additional immunofluorescence staining of GATA1 and Igfr1 in SynTII at E12.5.
 
 The identified regulons with differential activity across the populations included both known and unknown TF regulators of placental development. Known factors include Gcm1 in SynTII specification, Grhl2 in S-TGC, and Ets2 in JZ development (Figure 6B; Anson-Cartwright et al., 2000; Walentin et al., 2015; Yamamoto et al., 1998). Examples of the many unknowns include Tbx15 in LaTP, Gata1 in SynTII, Pax2 in SynTI, and Meis1 in S-TGC. The power of the regulon approach is further supported by comparing the distribution of TF expression alone versus that of their regulon (Figure 6C). While expression of Gcm1 and Pax8 correlated the distribution of their regulon activity, Ets2 and Esrrg did not. Ets2 was broadly expressed, yet its regulon activity was highly enriched among differentiating S-TGCs and GCs. Esrrg, on the other hand, was lowly expressed throughout, yet showed strong regulon active among SpT cells. Esrrg is not well studied in the mouse placenta, but has known roles in steroid hormone production and metabolism in human trophoblast, functions also important in the mouse placenta (Poidatz et al., 2012; Luo et al., 2014).
 
@@ -120,48 +180,254 @@ In summary, this study represents a compendium of mouse placental labyrinth deve
 
 ## Materials and methods
 
-## Animal husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>C57BL/6J Mice</td>
+      <td>https://www.jax.org/strain/000664</td>
+      <td>000664</td>
+      <td>6–12 weeks old</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nuclei isolation Kit: Nuclei EZ Prep</td>
+      <td>Sigma-Aldrich</td>
+      <td>NUC101-1KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>E-cadherin Monoclonal antibody (ECCD-2)</td>
+      <td>Thermofisher Scientific</td>
+      <td>13–1900</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human/mouse NCAM-1/CD56 Polyclonal antibody</td>
+      <td>R and D Systems</td>
+      <td>AF2408-SP</td>
+      <td>IF (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EpCAM Polyclonal antibody</td>
+      <td>Abcam</td>
+      <td>ab71916</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Stra6 Polyclonal antibody</td>
+      <td>Sigma-Aldrich</td>
+      <td>ABN1662</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Igf1r Polyclonal antibody</td>
+      <td>R and D Systems</td>
+      <td>AF305</td>
+      <td>IF (1:50 w/ antigen retrieval)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Slco2a1 Polyclonal antibody</td>
+      <td>Atlas Antibodies</td>
+      <td>HPA013742</td>
+      <td>IF (1:25 w/ antigen retrieval)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Lepr Polyclonal antibody</td>
+      <td>R and D Systems</td>
+      <td>AF497</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pcdh12 Polyclonal antibody</td>
+      <td>Abcam</td>
+      <td>ab113720</td>
+      <td>IF (1:25 w/ antigen retrieval)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Podxl Polyclonal antibody</td>
+      <td>R and D Systems</td>
+      <td>AF1556</td>
+      <td>IF (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pecam1 Polyclonal antibody</td>
+      <td>Abcam</td>
+      <td>ab23864</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vegfa Polyclonal antibody</td>
+      <td>Abcam</td>
+      <td>ab51745</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Met Polyclonal antibody</td>
+      <td>R and D Systems</td>
+      <td>AF276</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Egfr Polyclonal antibody</td>
+      <td>R and D Systems</td>
+      <td>AF1280</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Gata1 Monoclonal antibody</td>
+      <td>Cell Signaling</td>
+      <td>3535</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Hbegf Polyclonal antibody</td>
+      <td>R and D Systems</td>
+      <td>AF8239</td>
+      <td>IF (1:20)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat (3.1.3)</td>
+      <td>https://satijalab.org/seurat/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cellranger (3.0.2)</td>
+      <td>https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/feature-bc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellPhoneDB</td>
+      <td>https://www.cellphonedb.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SCENIC</td>
+      <td>https://github.com/aertslab/SCENIC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ClusterProfiler</td>
+      <td>https://guangchuangyu.github.io/software/clusterProfiler/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Slingshot</td>
+      <td>https://github.com/kstreet13/slingshot</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scVelo</td>
+      <td>https://github.com/theislab/scvelo</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>https://www.flowjo.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal husbandry
 
 All mice were maintained according to the UCSF guidelines and the Laboratory Animal Resource Center standards. All experiments were reviewed and approved by the UCSF Institutional Animal Care and Use Committee. To generate all placentas C57Bl/6J males between 3 and 6 months of age were bred to C57Bl/6J females between 6 and 12 weeks of age (Jackson Laboratory, Bar Harbor, ME). Developmental staging was assessed by days post coitum (dpc) and confirmed by embryo morphology.
 
-## Placental dissection
+### Placental dissection
 
 Each placenta sample was dissected in 1x PBS at 4°C. The yolk sac and allantois were removed from the basal chorionic plate using forceps. The outermost layers of the decidua were also removed, taking care to not disrupt the cells of the labyrinth or junctional zone of the fetal placenta. Sample passing these criteria were used in nuclei isolation below.
 
-## Nuclei isolation
+### Nuclei isolation
 
 Whole dissected placental samples were placed in a 40 mm plastic dish with 1 mL of Nuclei EZ lysis buffer (Sigma-Aldrich, St.Louis, MO - NUC-101) and reduced to small pieces of tissues (<1 mm) using a razor blade. The solution containing the tissue was then transferred to a dounce homogenizer and 1 mL of Nuclei EZ lysis buffer added. The nuclei were lysed into solution by 10 strokes of the loose pestle (A) and 10 strokes of the tight pestle (B). Using a wide bore pipette the solution was transferred to a 15 mL falcon tube, 2 mL of Nuclei EZ lysis buffer added, and incubated on wet ice for 5 min with gentle mixing with a pipette. The solution was then passed through a 35 µM filter and centrifuged at 500 g for 5 min at 4°C. The resulting supernatant was removed, the pellet gently resuspended in 1.5 mL of Nuclei EZ lysis buffer and incubated on ice for 5 min, then centrifuged at 500 g for 5 min at 4°C. The supernatant was removed and 1 mL of Nuclei Wash and Resuspension Buffer (1x PBS, 1.0% BSA, 0.2 U/μL RNase Inhibitor) added without mixing or resuspension and incubated on ice for 5 min. After the incubation an additional 1 mL of Nuclei Wash and Resuspension Buffer was added and the pellet gently resuspended. The solution was then centrifuged at 500 g for 5 min at 4°C (in a swinging bucket rotor to prevent nuclei adhering to the sides of the tube), the supernatant discarded, and the nuclei resuspended in 1 mL of Nuclei Wash and Resuspension Buffer. This final nuclei solution was passed through a 35 µM filter and nuclei visually inspected on a hemocytometer to assess, morphology, damage, and aggregation. Finally, 1 μL of DAPI stock solution (10 μg/mL) was added to the nuclei solution in preparation for FACS.
 
-## FAC-sorting of nuclei into 10x genomic reagents for transcriptome capture
+### FAC-sorting of nuclei into 10x genomic reagents for transcriptome capture
 
 All cell sorting was performed on a FACS Aria II (BD Biosciences, San Jose, CA) using a 70 µM nozzle. Nuclei sorting was performed according to steps outlined here - https://www.protocols.io/view/frankenstein-protocol-for-nuclei-isolation-from-f-3fkgjkw/abstract.
 
 Nuclei were sorted in the nuclei wash and Resuspension Buffer (described above) plus DAPI. 17,500 nuclei yielding a strong DAPI signal and DNA content profile were sorted into one well of a 96-well plate containing 10x Genomics V3 GEM mastermix without RT Enzyme C (20.0 μL RT Reagent Mix, 3.1 μL Template Switch Oligo, 2.0 μL Reducing Agent B, 27.1 μL nuclease free H2O). The volume of 17,500 sorted nuclei was previously established to be 19.5 μL. Immediately post sorting 8.3 μL of RT Enzyme C (10x Genomics, Pleasanton, CA) was added to the sample, and transcriptome collection on the 10x Chromium V3 platform performed.
 
-## Single-cell RNA sequencing and analysis
+### Single-cell RNA sequencing and analysis
 
 To capture the transcriptome of individual nuclei we used the Chromium Single Cell 3' Reagent V3 Kit from 10X Genomics. For all samples 17,500 nuclei were loaded into one well of a Chip B kit for GEM generation. Library preparation including, reverse transcription, barcoding, cDNA amplification, and purification was performed according to Chromium 10x V3 protocols. Each sample was sequenced on a NovaSeq 6000 S4 to a depth of approximately 20,000–30,000 reads per nucleus. The gene expression matrices for each dataset was generated using the CellRanger software (v3.0.2 - 10x Genomics). A custom premRNA GTF was generated to create an intron–exon reference according to 10x Genomics recommendations and all reads aligned to mm10 using STAR. (https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references). The counts matrix was thresholded and analyzed in the package Seurat (v3.1.3). Nuclei with fewer than 500 or greater than 4000 unique genes, as well as all nuclei with greater than 0.25 percent mitochondrial counts, were excluded from all subsequent analyses. For each sample, counts were scaled and normalized using ScaleData and NormalizeData, respectively, with default settings and FindVariableFeatures used to identify the 2000 most variable genes as input for all future analyses. PCA was performed using RunPCA and significant PCs assessed using ElbowPlot and DimHeatmap. For individual analysis of each sample the number of PCs and the resolution parameter of FindClusters can be found in Supplementary file 1. Dimensionality reduction and visualization using UMAP was performed by RunUMAP. Differentially expressed genes were identified using FindAllMarkers. Integration of each timepoint into one dataset was performed using FindIntegrationAnchors and IntegrateData, both using 20 dimensions (after filtering each dataset for number of genes, mitochondrial counts, and normalizing as described above). Data scaling, PCA, selection of PCs, clustering and visualization proceeded as described above using 20 PCs and a resolution of 0.6. Each cluster was analyzed and clusters containing abnormal UMI and co-expression of multiple cell-type-specific genes were determined to be enriched for doublets and removed from downstream analysis. The number of nuclei excluded represented an estimated doublet rate of ~3.9%. To generate the trophoblast only dataset, data from each timepoint was subset for only trophoblast clusters using the function SubsetData based upon annotations from marker genes identified by FindAllMarkers. Integration of the trophoblast only dataset was performed using the same integration methods above (using 20 dimensions for FindIntegrationAnchors and IntegrateData, and 20 PCs and a resolution of 0.6 for FindClusters and RunUMAP). Differentially expressed genes for each integrated dataset were identified using FindAllMarkers.
 
-## Slingshot
+### Slingshot
 
 We used the Slingshot package to order cells for each SynTI, SynTII, and S-TGC lineage in pseudotime. Each lineage was subset and the 1000 most variable genes identified and used as input into the generalized linear model (GAM package). Expression is plotted for the top 200 most variable genes along each lineage and included in Supplementary data.
 
-## scVelo
+### scVelo
 
 RNA velocity analysis was applied to the entire conglomerate dataset using Velocyto to generate spliced and unspliced reads for all cells. This dataset was then subset for the trophoblast dataset introduced in Figure 2. The scVelo stochastic model was run with default settings and subset by each timepoint. The magnitudes were calculated from the UMAP cell embeddings.
 
-## Differential expression between timepoints
+### Differential expression between timepoints
 
 To account for the different number of nuclei recovered within a cluster at each timepoint, we downsampled to the least number of cells collected and performed differential expression using FindMarkers function and repeated this for 100 random permutations of nuclei. Only genes found to be significant (adj. p-value<0.05) in all 100 permutations were retained in the final list of differentially expressed genes. To retain the power in the larger clusters we did not downsample all clusters to the same size. Therefore the number of differentially expressed genes between timepoints cannot be compared between clusters.
 
-## Gene ontology analysis
+### Gene ontology analysis
 
 Gene Onotology analysis was performed with clusterProfiler enrichGO function. The simplify function within this package was used to consolidate hierarchically related terms using a cutoff of 0.5. Terms were considered significantly enriched with an adjusted P-value of less than 0.05.
 
-## CellPhoneDB
+### CellPhoneDB
 
 Cluster annotations and counts data were used as input for CellPhoneDB with default settings (minimum of 10% of nuclei in a cluster expressing a gene, a p-value cutoff of 0.05, and 10 permutations). The databases of receptor–ligand interactions were generated for human proteins, not for mouse. As such, we performed this analysis using orthogonal genes between species (a total of 724 genes in the CellPhoneDB receptor–ligand databases). However, this does not account for differences in receptor–ligand interactions that may be different between mouse and human. Raw data were analyzed and heatmaps generated in R using modified scripts from CellPhoneDB. For heatmaps, the mean values of each significant receptor–ligand pair are shown, and we do not consider non-significant interactions, these have been given the mean value of zero.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Placentas for cryosectioning were fixed in 4% PFA at 4°C for 8 hr, washed in 1x PBS, then submerged in 30% sucrose overnight at 4°C prior to embedding in OCT medium. Placentas were sectioned at 10 µM for all conditions. In brief, slides were washed in 1x PBST (1x PBS, 0.05% Tween-20), blocked for 1 hr (1x PBS 5% donkey serum + 0.3% TritonX), incubated in primary antibody diluted for 3 hr at room temperature (or overnight at 4°C), washed in 1x PBST, incubated in secondary antibody (Alexafluor 488, 594, and 680) for 1 hr at room temperature, incubated in DAPI for 10 min at room temp, washed in 1x PBST, and mounted and sealed for imaging. Any antigen retrieval was performed prior to the blocking step by heating the slides in a 1x citrate buffer with 0.05% Tween-20 at 95C for 30 min. All antibodies and the dilutions are listed in the key resources table. All immunofluorescence staining was performed in n = 3 biological replicates (three distinct placentas) and representative image is shown.

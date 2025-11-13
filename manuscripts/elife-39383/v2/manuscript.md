@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.39383.001 Fast inhibitory neurotransmission in the mammalian nervous system is largely mediated by GABA A receptors, chloride-selective members of the superfamily of pentameric Cys-loop receptors. Native GABA A receptors are heteromeric assemblies sensitive to many important drugs, from sedatives to anesthetics and anticonvulsant agents, with mutant forms of GABA A receptors implicated in multiple neurological diseases. Despite the profound importance of heteromeric GABA A receptors in neuroscience and medicine, they have proven recalcitrant to structure determination. Here we present the structure of a tri-heteromeric α1β1γ2S EM GABA A receptor in complex with GABA, determined by single particle cryo-EM at 3.1–3.8 Å resolution, elucidating molecular principles of receptor assembly and agonist binding. Remarkable N-linked glycosylation on the α1 subunit occludes the extracellular vestibule of the ion channel and is poised to modulate receptor assembly and perhaps ion channel gating. Our work provides a pathway to structural studies of heteromeric GABA A receptors and a framework for rational design of novel therapeutic agents.
+Fast inhibitory neurotransmission in the mammalian nervous system is largely mediated by GABAA receptors, chloride-selective members of the superfamily of pentameric Cys-loop receptors. Native GABAA receptors are heteromeric assemblies sensitive to many important drugs, from sedatives to anesthetics and anticonvulsant agents, with mutant forms of GABAA receptors implicated in multiple neurological diseases. Despite the profound importance of heteromeric GABAA receptors in neuroscience and medicine, they have proven recalcitrant to structure determination. Here we present the structure of a tri-heteromeric α1β1γ2SEM GABAA receptor in complex with GABA, determined by single particle cryo-EM at 3.1–3.8 Å resolution, elucidating molecular principles of receptor assembly and agonist binding. Remarkable N-linked glycosylation on the α1 subunit occludes the extracellular vestibule of the ion channel and is poised to modulate receptor assembly and perhaps ion channel gating. Our work provides a pathway to structural studies of heteromeric GABAA receptors and a framework for rational design of novel therapeutic agents.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ These studies, together with a large number of biochemical and biophysical exper
 
 ## Results
 
-## Receptor expression and structure elucidation
+### Receptor expression and structure elucidation
 
 To enhance receptor expression we employed the M3/M4 loop deletion constructs of the α1 and β1 subunits analogous to the functional M3/M4 loop deletion constructs of GluCl (Hibbs and Gouaux, 2011) and GlyR (Du et al., 2015), together with a full-length construct of the γ2S (short splice variant) subunit (Figure 1—figure supplement 1), yielding the α1β1γ2SEM construct (Claxton and Gouaux, 2018). Optimization of receptor expression constructs and conditions were monitored by fluorescence-detection, size-exclusion chromatography (FSEC) (Kawate and Gouaux, 2006). We included a 1D4 affinity tag (MacKenzie et al., 1984) on the γ2 subunit to selectively isolate the heteromeric complex from baculovirus-transduced mammalian cells (Goehring et al., 2014). For ensuing cryo-EM studies, we developed an α1 subunit-specific monoclonal antibody, 8E3, with the aim of using the Fab to identify the α1 subunit in the pseudo-symmetric receptor complex (Figure 1—figure supplement 2). The resulting purified α1β1γ2SEM receptor, in the presence of the 8E3 Fab, binds muscimol, a high affinity agonist, and flunitrazepam, a benzodiazepine, with affinities similar to the full-length receptor (Figure 1—figure supplement 3) (Hauser et al., 1997; Johnston, 2014).
 
@@ -41,11 +41,43 @@ Moreover, the α1β1γ2SEM receptor also exhibits ion channel gating properties 
 
 Structure elucidation was carried out using the α1β1γ2SEM receptor solubilized in β-dodecyl-maltoside (C12M) and cholesterol hemisuccinate (CHS) in the presence of 1.5 mM GABA. To enhance particle density on the cryo-EM grids in light of modest levels of receptor expression, we employed grids coated with graphene oxide. We proceeded to collect micrographs using a Titan Krios microscope and a Falcon three camera as described in the Materials and methods. Subsequent selection of particles and calculation of 2D class averages yielded projections that were readily identified as a pentameric Cys-loop receptor bound by 2 Fabs (Figure 1 and Figure 1—figure supplement 4). Three dimensional reconstruction, combined with judicious masking of either the Fab constant domains or, alternatively, the receptor transmembrane domain (TMD), allowed for reconstructions at ~3.8 and ~3.1 Å resolution, respectively, based on Fourier shell correlation (FSC) analysis (Figure 1—figure supplement 5 and Supplementary file 1). We note that there is substantial preferred orientation in the particle distribution and, despite substantial efforts in exploring a wide spectrum of conditions, we were unable to obtain grids that yielded more well distributed particle orientations. Inspection of the resulting density maps were consistent with these resolution estimations, and in the case of the density in the extracellular domain (ECD), the quality of the density map is excellent, allowing for visualization of medium and large side chains, as well as glycosylation of Asn side chains (Figure 1—figure supplement 6). By contrast, the density for the TMD is not as well defined. While the M1, M2 and M3 helices of all subunits show strong density, with density for some residues with large side chains, the M4 helices of the two α1 subunits and the γ2S subunit have weak density and thus we have not attempted to include them in the structure. To build a molecular structure into the cryo-EM density maps, we first generated homology models of the α1, β1 and γ2S subunits using the human β3 GABAA receptor (PDB code: 4COF) (Miller and Aricescu, 2014) as a template and we then manually fit the models to the density and carried out iterative cycles of manual fitting and computational refinement, which together resulted in a structural model that fits well to the density and that has good stereochemistry (Supplementary file 1).
 
-## Tri-heteromeric GABAA receptor subunit arrangement
+![Figure 1.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-v2.jpg)
+
+**Figure 1.:** (a) 2D class averages. Red arrows indicate 8E3 Fab bound to α subunits. (b) The cryo-EM map of the entire receptor viewed parallel to membrane plane. The α, β and γ subunits are colored by lime, salmon and marine, respectively. (c) Cartoon representation of the receptor viewed parallel to the membrane plane. The extracellular domain (ECD) and transmembrane domain (TMD) are indicated. (d) Cartoon representation of an α subunit. (e) Schematic representation of subunit arrangement, viewed from the extracellular side of the membrane.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Cells expressing various subunit combinations of subunits (a) α1β1, (b) α1β1γ2S, (c) α1β2, (d) α1β2γ2S, and (e) α6β2γ2S were solubilized and analyzed by fluorescence-detection-size-exclusion chromatography (FSEC) either alone (black trace) or with 8E3 Fab (red trace). The α subunit in each case is GFP tagged within the M3/M4 loop. Excitation and emission wavelengths were 480 and 510 nm respectively. Shifts in FSEC traces confirm that the presence of the α1 subunit is required for 8E3 binding.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Representative whole-cell patch-clamp recording from TSA-201 cells expressing α1β1EM/γ2S-FR receptors activated by 5 μM GABA in the presence or absence of 1 μM Diazepam. (b) Summary of electrophysiology data representing potentiation by 1 μM Diazepam in the presence or absence of 25 nM Fab; n = 6 cells for both experiments. Unpaired t-test with Welch’s correction, p=0.0040% and 95% confidence interval (CI) = −4.861 to −1.466. Midline and error bars represent mean and SEM, respectively. (c) Dose-response data for GABA from TSA-201 cells expressing α1β1EM/γ2S-FR receptors. EC50 = 28.68 μM (95% CI = 21.38–38.49 μM) or 22.51 μM (95% CI = 12.69–39.93 μM) GABA in the presence or absence of 25 nM Fab, respectively. Error bars represent SEM and n = 6 cells for both experiments. (d) and (e), Saturation binding curve of [Methyl-3H]flunitrazepam (d) and [3H]muscimol (e) to α1β1γ2SEM receptor Fab complexes; the plotted result is from a representative experiment. Kd = 5.49 nM (95% CI = 4.25–7.05 nM) or 109.3 nM (95% CI = 91.76–129.7 nM) for [Methyl-3H]flunitrazepam and [3H]muscimol, respectively. Error bars represent SEM.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp4-v2.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (a) Typical micrograph of tri-heteromeric GABAA receptor. (b) FSC curves for the whole map and ECD map. The resolution is determined using the gold standard FSC standard. FSC 0.5 is also labeled. Purple and red curves represent whole map and ECD map curve, respectively. The resolution for the whole map and the ECD map is 3.8 and 3.1 Å, respectively. (c) and (d) The particle angular distribution for the whole map and the ECD map, respectively. (e) and (f) The local resolution map for the whole map and the ECD map, respectively.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (a) Glycosylation densities located on the α and α* subunits, derived from modification of Asn 110 and protruding into the extracellular vestibule of the channel of the receptor are shown. The glycosylation densities on the exterior surface of the receptor and located on the β (Asn 149) and β* (Asn 80) subunit are depicted, contoured at 5.5 σ. These densities are from the ECD map. (b) Representative densities from the α, β and γ subunits from the ECD map, contoured at 11 σ. (c) Illustrative densities from the α, β and γ subunits from the whole map, contoured at 5.5 σ. (d) M3 and M4 densities for the α, β and γ subunits from the whole map, contoured at 4.5 σ.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** The glycosylation sites are marked with a red arrow, the corresponding position is boxed and the glycosylated residue is shown in a red background; the antibody binding sites (based on analysis of buried surface area) are indicated with a black arrow and represent antibody binding in the α subunit. Numbering for the α1, β1, γ2S subunits is maintained as per the mature peptide.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** The 8E3 fab binds specifically on the α subunit to residues located on the β-sheets 1, 8, 9 and 10. Analysis for the buried surface area was done by placing a model of Fab in the ECD electron density map and analyzing the resulting model on the PDBePISA web server. Interface residues are shown as sticks (a) and surface representation (b).
+
+### Tri-heteromeric GABAA receptor subunit arrangement
 
 The α1β1γ2SEM receptor hews to the classic architecture of Cys-loop receptors, first established by cryo-EM studies of the nicotinic receptor (Toyoshima and Unwin, 1988; Unwin, 1993; Unwin, 2005), with a clockwise subunit arrangement of α1-β1*-γ2S-α1*-β1 when viewed from the extracellular side of the membrane. Here we label the α1* and β1* subunits that are adjacent to the unique γ2S subunit with asterisks in order to distinguish them from their chemically equivalent yet spatially distinct α1 and β1 partners. The arrangement of subunits in this heteromeric complex, as mapped out by the α1-specific Fab fragments, is in agreement with previous biochemical studies (Figure 1—figure supplement 2) (Baur et al., 2006). The subunit identity is further verified by prominent N-linked glycosylation sites that are unique to each subunit. The epitope of the Fab resides entirely on the periphery of the α1 ECDs and the Fab buries approximately 760 Å2 of surface area in the interface with the receptor. Most of the receptor residues that interact with the Fab are located on the β8, β9 and β10 elements of secondary structure (Figure 1—figure supplements 7 and 8). While the Fab binding site is near the crucial C-loop, we note that it does not overlap with it and thus the Fab is unlikely to directly influence agonist binding, in agreement with the agonist binding experiments (Figure 1—figure supplement 3).
 
-## Subunit interfaces
+### Subunit interfaces
 
 Subunit-subunit interactions within the extracellular domain play a major role in pLGIC function (Jones and Henderson, 2007) and in GABAA receptor assembly. Here, we estimate that within the ECD each subunit buries as much as 1150–1600 Å2 of solvent accessible surface area within each subunit interface (Supplementary file 2). There are five unique subunit interfaces in the tri-heteromeric receptor and, while we observed a similar arrangement of the ECDs at each interface, we also found subtle differences due to variations in amino acid sequences and in local protein structure. There are solvent accessible fenestrations at subunit interfaces in the ECD that ‘connect’ the extracellular solution with the extracellular vestibule, possibly providing an alternative pathway for ions to access the ion channel (Figure 2A). When comparing the various subunit interfaces one can readily identify specific interactions of amino acids that are common to all interfaces (Figure 2). As examples, at the α(+)/β(-) interface (Figure 2B), there is a conserved interaction between Tyr209 at the beginning of β10 from the α subunit at the (+) face to Arg117 at β5 in (–) face, as well as a hydrogen bond between Tyr206 from the α subunit and Gln64 from the β subunit. At the β(+)/α*(-) interface (Figure 2C), a similar interaction is observed between Tyr205 at the beginning of β10 from the β subunit of the (+) subunit and Arg117 at β5 in the (–) subunit. Furthermore, a hydrogen bond between Thr202 from the β subunit and Arg66 from the β subunit is observed even though, in comparison to the α(+)/β(-) interface, the Gln is replaced by Arg. At the α*(+)/γ(-) interface (Figure 2D), the distance between Tyr209 from the α and Arg132 from the γ subunit is similar to that observed at the α(+)/β(-) interface. The hydrogen bond observed in α(+)/β(-), β(+)/α*(-), β*(+)/α(-) (Figure 2B,C and F) between a Thr from the (+) face and Arg/Gln at the (-) face is lost because Ala79 occupies the position corresponding to the Arg/Gln residues. At the γ(+)/β*(-) interface, Tyr220 from the γ subunit is within hydrogen bonding distance to Arg117 from the β subunit. Interestingly, with the other set of interactions seen in the α(+)/β(-), β(+)/α*(-) and β*(+)/α(-) interfaces (Figure 2B,C and F) between a Thr from the (+) face and a Arg/Gln at the (–) face, the Thr is replaced by a Ser and forms a hydrogen bond with the Tyr220 from the γ subunit rather than interacting with the Gln64 from the β subunit. The β*(-)/α(-) interface closely resembles the spatially distinct β(+)/α*(-) interface (Figure 2F,C), with both of the interactions preserved.
 
@@ -57,9 +89,29 @@ To investigate the overall conformation of the extracellular domain, we compared
 
 We observe that the ECDs in all the homomeric structures are located at similar distances as in our current structure. Nevertheless, if we compare the pentagon formed by joining a line through the center of mass of these individual ECDs, we observe that these are rotated in comparison to our current structure and that our current structure most resembles the conformation of glycine/ivermectin-bound GlyR. Thus, we propose that the conformation of the ECD represents an agonist/allosteric modulator bound, activated-like state.
 
-## Neurotransmitter binding sites
+### Neurotransmitter binding sites
 
 To illuminate the molecular basis for GABA binding, we determined the structure of the α1β1γ2SEM receptor in the presence of saturating GABA (Sigel and Steinmann, 2012). Neurotransmitter binding sites in Cys-loop receptors are located at the interface of two adjacent subunits and are composed of the three loops from the principle (+) face and β-strands from the complementary (-) face (Nys et al., 2013). There are three substantive densities within the neurotransmitter binding sites, at the interface between the β*(+)/α(-), the α(+)/β(-) and the β(+)/α*(-) subunits, an observation that diverges from previous studies suggesting that there are only two canonical GABA binding sites located at the β*(+)/α(-) and β(+)/α*(-) interfaces (Figure 3A and Figure 3—figure supplement 2) (Chua and Chebib, 2017). Nevertheless, other studies have pointed out that GABA may bind to interfacial binding sites in addition to the two canonical sites (Chua and Chebib, 2017). The oval-like densities in the two canonical sites are well fit by the chemical structure of GABA, although the density feature at the β(+)/α*(-) interface is weaker than that at the β*(+)/α(-) site (Figure 3—figure supplement 2). Interestingly, the third feature at the α(+)/β(-) interface, with a sausage-like shape, has the strongest density (Figure 3—figure supplement 2). Because GABA is the only small molecule present in the sample buffer that has a size and shape similar to the density feature, we speculate that the density belongs to a GABA molecule. Nevertheless, it is possible that the density at the α(+)/β(-) interface belongs to an unidentified small molecule that co-purified with the receptor. Alternatively, the density feature could be due to several ordered water molecules. Given the continuous nature of the density, however, we favor the notion that the density is attributable to non-water, small molecule. Further studies will be required to experimentally determine GABA binding stoichiometry, and higher resolution cryo-EM studies will be needed to more thoroughly define the density features.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig3-v2.jpg)
+
+**Figure 3.:** (a) Top down view of the receptor looking from the extracellular side. The α and α* subunits are colored in salmon, β and β* are colored in lime, and γ is colored in marine. GABA molecules are shown in sphere representation. (b) View of the binding site between the β*(+)/α(-) subunits viewed parallel to the membrane. Dashed lines indicate hydrogen bonds, cation-π interactions and salt bridges. The β*(+) and α(-) subunits are colored in salmon and lime, respectively. The residues in the β*(+) and α(-) subunits and GABA are depicted in salmon, lime and yellow sticks, respectively. (c) View of the binding site between the α(+)/β(-) subunits viewed parallel to the membrane. Subunits and residues are depicted in the same color code as in (b). The residues differing from the corresponding residues in the β*(+)/α(-) binding site are indicated with red stars. (d) View of the binding site between the γ (+)/β*(-) subunits looking parallel to the membrane. Residues in the γ(+) and β*(-) binding site are shown in marine and salmon sticks, respectively. The residues differing from the corresponding residues in the β*(+)/α(-) binding site are indicated with red stars. (e) View of the binding site between the α*(+)/γ(-) binding site viewed parallel to the membrane. Residues in the α*(+) and γ(-) binding site are shown in lime and marine sticks, respectively. The residues differing from the corresponding residues in β*(+)/α(-) are indicated with red stars. (f) Similar view of the diazepam binding site as in panel (e).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The Cα traces from chain A are used to do the alignment. (a) The distances between the nearby centers of mass, together with the angles of the pentagon of centers of mass, are shown. (b) The ECD structure is in lime and 4PIR is in marine. Lime and marine balls indicate the centers of mass of one subunit for the ECD structure and 4PIR, respectively. The distances between the two nearby centers of mass are labeled. The distances related to the ECD are labeled outside of the pentagon and the distances labeled inside the pentagon are for 4PIR. The angle indicates the approximate rotation of the pentagon formed by the five centers of mass between the ECD and 4PIR. (c), (d), (e) and (f) similar to (a), the distances between the nearby two centers of mass are shown overlapping with the ECD structure.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Three non-protein densities were found between the interfaces of subunits, (a) for the β*(+)/α(-) interface, (b) for the α(+)/β(-) interface and (c) for the β(+)/α*(-). GABA molecules were placed in these densities colored with yellow bonds, blue nitrogen and red oxygen. To fit the GABA molecules to their respective density features we utilized the shapes of the density features and the surrounding chemical environments. The resulting structural models resulted in a good fit of GABA to the density and chemically reasonable ligand-protein interactions.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** α, β and γ subunits are colored in salmon, lime and marine, respectively. The ligand binding site is indicated with a black dash frame.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (a) Overall comparison of ECD of β*/ α subunits with the human β3 GABAA, GlyR-open and GlyR-closed. β*(+) and α(-) are colored in salmon and lime. Human-β3, GlyR-open and GlyR-closed are colored in cyan, yellow and gray, respectively. Loop C was highlighted with a black frame. The enlarged view of loop C is shown in (b), (c) and (d).
 
 In the canonical binding sites, GABA is wedged between the β*(+) and α(-) subunits with extensive interactions with residues from loop C, loop B, loop A, β2 strand and β6 strand. The amino group of GABA likely forms hydrogen bonds with the backbone carbonyl oxygen of Tyr157 (loop B), Glu155 (loop B) and Tyr 97 (loop A) and a cation-π interaction with Tyr205, while the carboxylate group forms possible hydrogen bonds with Thr129 (β6 strand) and Thr202 (loop C) and a salt bridge with Arg66 (β2 strand). In addition, sandwiching of the amino group of GABA between Tyr205 (loop C) and Tyr157 further increases the number of interactions between agonist and receptor (Figure 3B). Notably, Tyr97, Glu155 and Arg66 are unique in the β subunit compared to the corresponding residues in the α and γ subunits and are crucial for substrate binding, as reported in previous studies demonstrating that Tyr97 and Arg66 play an important role in the binding pocket (Newell et al., 2004; Sander et al., 2011; Smith and Olsen, 1995). Experiments employing non native amino acids suggest that Tyr 97 forms a cation-π interaction with GABA instead of Tyr 205 (Padgett et al., 2007). We note, however, that the aromatic ring of Tyr 97 is sandwiched between Arg 131 of the adjacent α subunit and Glu 155 of β and thus, in this structure, it is not well positioned to form a cation-π interaction with GABA. Nevertheless, we cannot exclude the possibility that there are changes in the conformation of the binding pocket that allow for cation-π interactions between GABA and Tyr 97. Mutation of Tyr157, a highly conserved residue in the α, β and γ subunits, significantly reduces the binding affinity for agonist and antagonist (Lummis, 2009). Similar neurotransmitter binding interactions have previously been reported in the other Cys-loop members, including GluCl and GlyR (Du et al., 2015; Hibbs and Gouaux, 2011). Superposing this canonical binding site with the putative third ‘GABA’ binding site at the interface of the α(+)/β(-) site shows that there are fewer interactions between ‘GABA’ and the surrounding residues, such as the cation-π interactions with Tyr209 and contacts with Thr206 and the carbonyl oxygen of Tyr159 (Figure 3C). We thus emphasize that, while the density feature is unambiguous, the identification of this site as a bona fide GABA binding site will require additional investigation.
 
@@ -67,9 +119,17 @@ We also superposed the canonical GABA binding site at the β*(+)/α(-) interface
 
 Agonist binding has been proposed to induce loop C closure in the open, ion conducting state and antagonist binding to stabilize an ‘open’ configuration of loop C in the closed, non-conducting state of the ion channel (Du et al., 2015; Mukhtasimova et al., 2005; Purohit and Auerbach, 2013). To probe the relationship between agonist binding and the position of loop C, we superposed the β* subunit with GABA bound onto the α* and γ subunits and found that loop C in the β* subunit is in an ‘open’ conformation relative to that in the α* and γ subunits (Figure 3—figure supplement 3). Additionally, superposition of the ECD of the β*/α subunit with the human β3 GABAA, GlyR-open and GlyR-closed structures suggests that the position of loop C in the β* subunit closely approximates that in the GlyR-closed non-conducting state, while loop C in the human β3 GABAA is in a more ‘open’ configuration (Figure 3—figure supplement 4). However, this interpretation is subject to caveats because it is derived from the comparison of different subunits and different receptors. It would be more persuasive to define the relationship between loop C and the functional state of the receptor using the same receptor in different ligand bound/functional states, as well as in the absence of bound Fab.
 
-## Glycosylation within the extracellular vestibule
+### Glycosylation within the extracellular vestibule
 
 There is a well-defined glycosylation site at Asn110 of the α subunit, within the extracellular vestibule of the receptor, at a site of post-translational modification that is distinct from the other GABAA receptor subunits (Figure 4A) and not observed before in any Cys-loop receptor (Figure 1—figure supplement 8, Figure 4—figure supplement 1). This site is predicted to be glycosylated based on sequence analysis (Blom et al., 2004; Julenius et al., 2005; Miller and Aricescu, 2014), and the quality of the cryo-EM map allows us to confidently locate sugar residues involved in glycosylation (Figure 4B and C). For the α subunit at Asn110 we have built a carbohydrate chain with seven sugar residues and, for the α* subunit at Asn 110, we have built a carbohydrate chain with four sugar groups (Figure 4C and D). These two carbohydrate chains are remarkably well ordered, a feature that is likely due to the fact that the chains are contained within the extracellular vestibule and are in direct contact with numerous protein side chains (Figures 4A and 5). Additional glycosylation sites found in the β subunit have been previously observed in the β3 crystal structure (Miller and Aricescu, 2014) and are located on the external surface of the receptor, pointing away from the receptor (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig4-v2.jpg)
+
+**Figure 4.:** (a) Schematic of the sugar chain chemical structure for the Asn110 modification. The amino acids interacting with the sugar chains are also shown. The names of the carbohydrates are given at the bottom of the panel (Gamian, 1992). (b) Top down view of ECD map. The α, β and γ subunits are colored by light green, salmon and blue, respectively. The glycosylation densities are colored by purple. The related Asn residue numbers are labeled. (c) Two views of the density of the glycosylation from the α* subunit, isolated and fitted with four sugar molecules. Asn110 and the name of sugars are labeled. (d) Similar panel to (c), showing the density of the glycosylation on the α subunit fit with a carbohydrate chain containing seven sugar residues.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Sequences were downloaded from swiss-prot with the following identifiers: P14867, P47869, P34903, P48169, P31644, Q16445, P18505, P47870, P28472, Q8N1C3, P18507, Q99928, O14764, P78334, Q9UN88, O00591, P24046, P28476, A8MPY1, P23415, P23416, O75311, P48167, P46098, O95264, Q8WXA8, Q70Z44, A5X5Y0, P02708, Q15822, P32297, P43681, P30532, Q15825, P36544, Q9UGM1, Q9GZZ6, P11230, P17787, Q05901, P30926, P07510, Q07001. Fully conserved positions are shaded black and partially conserved positions are shaded gray. Numbering shown is based on the swiss-prot record and represents the numbering for the nascent peptide. The unique α-specific glycosylation site is colored in red.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/39383/elife-39383-fig5-v2.jpg)
 
@@ -79,7 +139,7 @@ The glycosylation at the α subunit is well supported by the density to the exte
 
 We propose that the glycosylation at Asn110 of the α subunits is important for subunit assembly, effectively blocking the formation of pentamers with more than two α subunits, due to the fact that more than two carbohydrate chains would engage in sterically prohibitive van der Waals clashes. Moreover, we speculate that the contacts between the carbohydrate at position Asn110 of the α subunit and, for example, the Trp123 of the γ2S subunit, favor the inclusion of the γsubunit as the last subunit in the formation of the heteropentamer. This is consistent with prior studies which showed that glycosylation of the α subunit is essential for proper receptor assembly in mammalian cells (Buller et al., 1994), as well as the important role of tryptophan residues in interacting with carbohydrates in general (Maenaka et al., 1994; Stewart et al., 2008). We further suggest that these carbohydrate chains within the extracellular vestibule may also modulate receptor gating and, perhaps, ion channel block by large ion channel blockers. Indeed, it is intriguing that a post-translational modification such as N-linked glycosylation occupies such an important and ‘internal’ site in a neurotransmitter-gated ion channel.
 
-## Conformation and asymmetry of the TMD
+### Conformation and asymmetry of the TMD
 
 In the GABAA structure, the intrinsic flexibility of the TMD or the presence of the detergent micelle prevents us from accurately placing residues in each TM helix, especially in the M4 helices. Nevertheless, the density of the M1, M2 and M3 helices is well defined, allowing us to reliably position the helices. We note that in this receptor composed of α, β and γ subunits there is a breakdown in 5-fold symmetry observed in the homomeric or di-heteromeric Cys-loop receptors (Figure 6) (Miller and Aricescu, 2014; Nys et al., 2013). While the distances between the center of mass (COM) of two adjacent subunits are similar, where the COMs were calculated using the M1, M2 and M3 helices of each subunit, varying from 17.6 Å to 19 Å, the angles in the pentagon range from 94° to 124° (Figure 6A). Looking at the top-down views of five central M2 helices, the two α M2 helices are located away from the other three TM helices. Superposition of the two β subunits with the human β3 GABAA receptor shows that there are rotations of each TM helix in the α1β1γ2SEM receptor structure relative to corresponding TM helices in the human β3 GABAA receptor, further demonstrating the asymmetric structure of the TMD (Figure 6B).
 
@@ -101,35 +161,178 @@ Investigation of the GABA binding site identified subunit-specific interactions.
 
 ## Materials and methods
 
-## Construct description
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>GBRB1_RAT</td>
+      <td>Synthetic</td>
+      <td>UniProtKB - P15431</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>GBRA1_RAT</td>
+      <td>Gift from Dr. David S. Weiss</td>
+      <td>UniProtKB - P62813, Gene ID 29705</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>GBRG2_RAT</td>
+      <td>Gift from Dr. David S. Weiss</td>
+      <td>UniProtKB - P18508, Gene ID 29709</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo Sapiens)</td>
+      <td>TSA201</td>
+      <td>ATCC</td>
+      <td>ATCC Cat# CRL-11268, RRID:CVCL_1926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>8E3</td>
+      <td>OHSU VGTI, Monoclonal Antibody Core</td>
+      <td></td>
+      <td>Isotype: IgG2b, kappa</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEG BacMam</td>
+      <td>doi: 10.1038/nprot.2014.173</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GABA</td>
+      <td>Sigma</td>
+      <td>CAT NO. A5835</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relion-2.1</td>
+      <td>doi: 10.1016/j.jsb.2012.09.006</td>
+      <td>RRID:SCR_016274</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>doi:10.1038/nmeth.4193</td>
+      <td></td>
+      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>PyMOL Molecular Graphics System, Schrödinger, LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td>http://www.pymol.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>doi:10.1002/jcc.20084</td>
+      <td>RRID:SCR_004097</td>
+      <td>http://plato.cgl.ucsf.edu/chimera/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bsoft</td>
+      <td>doi:10.1006/jsbi.2001.4339</td>
+      <td></td>
+      <td>https://lsbr.niams.nih.gov/bsoft/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Localscale</td>
+      <td>doi:10.7554/eLife.27131</td>
+      <td></td>
+      <td>https://git.embl.de/jakobi/LocScale</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>doi:10.1107/S2059798318006551</td>
+      <td>RRID:SCR_014224</td>
+      <td>https://www.phenix-online.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Molprobity</td>
+      <td>doi:10.1107/S0907444909042073</td>
+      <td>RRID:SCR_014226</td>
+      <td>http://molprobity.biochem.duke.edu</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSparc</td>
+      <td>doi:10.1038/nmeth.4169</td>
+      <td></td>
+      <td>https://cryosparc.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gctf</td>
+      <td>doi:10.1016/j.jsb.2015.11.003</td>
+      <td></td>
+      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/Gctf/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DoG picker</td>
+      <td>doi: 10.1016/j.jsb.2009.01.004</td>
+      <td></td>
+      <td>https://omictools.com/dog-picker-tool</td>
+    </tr>
+  </tbody>
+</table>
+
+### Construct description
 
 The full-length rat GABAA receptor subunit isoforms α1 (Gene ID 29705) and γ2S (Gene ID 29709) with the native signal sequence were a gift from Dr. David S. Weiss. The α1-LT construct was generated by replacing a portion of the M3/M4 cytoplasmic loop from 313 to 381 by a Gly-Thr linker and adding a thrombin site and a His8 tag to the C-terminus. The β1-LT subunit (Gene ID 25450) was synthesized and cloned into pEG BacMam by Bio Basic Inc. with residues K309-K414 replaced with a Gly-Thr linker, along with a thrombin site and a His8 tag at the C-terminus. A bicistronic construct called α1β1EM containing α1-LT and β1-LT, in the context of the pEG BacMam vector, was used for large scale expression. The γ2SEM subunit construct has a three-residue (Gly-Arg-Ala) insertion between Asp374 and Cys375 along with a thrombin site, a His8 tag and a 1D4 tag at the C-terminus. For electrophysiology experiments the FusionRed fluorophore was inserted in the γ2S subunit within the M3/M4 loop using an AscI restriction site; this construct is called γ2S-FR. A cartoon depiction of the constructs is provided in Figure 1—figure supplement 1.
 
-## Preparation of an α subunit-specific Fab
+### Preparation of an α subunit-specific Fab
 
 The purified α1β1EM receptor complex in lauryl maltose neopentyl glycol was used for immunization. Initial screening returned a large number (>200) of IgG positive mAb candidates. ELISA screening was used to determine the highest binding antibodies against receptor in the native and denatured states at a 1:300 dilution. Those that selectively bound to the native state were chosen for further characterization. Subsequent ELISA binding results at a 1:3000 dilution further filtered the candidate pool to 40 supernatants which were examined by western dot blot. Subsequent FSEC analysis identified 8E3 as a α1 specific antibody (Figure 1—figure supplement 2). Isolated mAb at 0.5 mg/ml in 50 mM NaPO4 pH 7 buffer containing 10 mM EDTA, 10 mM L-Cys, 1:100 papain (w/w) was digested for 2 hr at 37°C. The reaction was quenched by adding 30 mM Idoacetamide and placing on ice for 20 mins in the dark. After verification of the digestion by SDS page, the Fc portion was separated using Protein A resin and the flow through containing Fab was collected and concentrated for further use.
 
-## Expression and purification
+### Expression and purification
 
 P1 virus for the α1β1EM and the γ2SEM was generated and amplified using standard procedures to obtain P2 virus. Viruses were stored at 4°C in the dark and supplemented with 1% FBS. Virus titer was determined using flow cytometry in a ViroCyt Virus Counter 2100 Ferris et al., 2011Ferris et al., 2011Ferris et al., 2011Ferris et al., 2011(Ferris et al., 2011). The tri-heteromer (α1β1γ2SEM) was expressed in TSA201 suspension cells. Infection was performed at a cell density of 1.5−3 × 106 cells/mL in Gibco Freestyle 293 Expression medium supplemented with 1% FBS and placed in a humidity- and CO2-controlled incubator. The total volume of virus added was less than 10% of the culture volume in all cases. Cells were infected with an MOI of 2 for both the viruses. After 24 hr of infection at 30°C, sodium butyrate and picrotoxinin were added at final concentrations of 10 mM and 12.5 μM, respectively, and the flasks were shifted to 27°C for another 24 hr. All procedures thereafter were done either on ice or in a cold room. Cells were harvested by centrifugation and the pellets were washed with TBS pH 8 containing 25 mM MgCl2 and 5 mM CaCl2. The pellets were re-suspended in 30 mL/L of culture volume in wash buffer with 1 mM PMSF, protease inhibitors (2 μg/ml leupeptin, 2.0 μM pepstatin and 0.8 μM aprotinin), 1.5 mM GABA, 20 μM ivermectin, and 25 μg/mL DNAse I. Cells were then sonicated for a 3:30 min cycle (15 s on/off) while stirring. Cell debris was removed by centrifugation at 7500 g for 20 mins, followed by centrifugation at 125,000 g for 1.5 hr, to pellet the cellular membranes. Membranes were re-suspended (~7 ml/lit culture) in 20 mM NaPO4 pH 8, 200 mM NaCl, 1 mM MgCl2, 1 mM CaCl2, 5 μg/mL DNAse I, 0.3 mM PMSF, 1.5 mM GABA and 10 μM ivermectin and mechanically homogenized. Membranes were solubilized by adding 2% (w/v) C12M and 1 mM CHS for 1 hr at 4°C. Solubilized membranes were centrifuged for 50 min at 125,000 g. The supernatant was then mixed with 1D4 affinity resin equilibrated in 20 mM NaPO4 pH 8, 200 mM NaCl, and 1 mM C12M for 3–4 hr at 4°C with gentle mixing. The resin was washed with 100 column volumes of the equilibration buffer; elution was achieved using a buffer supplemented with 0.2 mM 1D4 peptide. The eluted protein was concentrated by ultrafiltration, followed by the addition of 2.1 molar fold excess of 8E3 Fab. The concentrated sample was loaded onto a Superose 6 increase 10/300 GL column equilibrated with 20 mM HEPES pH 7.3, 200 mM NaCl, 1 mM C12M and 1.5 mM GABA. The flow rate was kept at 0.5 mL/min.
 
-## Radio ligand binding assay
+### Radio ligand binding assay
 
 Binding assays were performed with the 10 nM α1β1γ2SEM receptor-Fab complex using either 0.75–500 nM [3H]-muscimol or 1–1000 nM [3H]-flunitrazepam in a buffer containing 20 mM Tris pH 7.4, 150 mM NaCl, 1 mM C12M, 20 μg/ml BSA and 1 mg/ml YiSi Copper HIS TAG scintillation proximity assay beads (Perkin Elmer, MA). Flunitrazepam binding was measured in the presence of 1.5 mM GABA. Non-specific signal was determined in the presence of 1 mM GABA for the muscimol and 1 mM diazepam for flunitrazepam. Experiments were performed using triplicate measurements. Data was analyzed using Prism 7.02 software (GraphPad, CA) using a one site binding model.
 
-## Electrophysiology
+### Electrophysiology
 
 TSA-201 cells grown at 30°C in suspension were transfected with plasmid DNA encoding the bicistronic α1β1EM construct and the monocistronic γ2S-FR construct using Lipofectamine 2000. Cells were plated on glass coverslips 2 hr prior to recording, and all recordings were conducted 18–36 hr after transfection.
 
 Pipettes were pulled and polished to 2–4 MΩ resistance and filled with internal solution containing (in mM) 140 CsCl, 4 NaCl, 4 MgCl2, 0.5 CaCl2, 5 EGTA, 10 HEPES pH 7.4. Unless otherwise noted, external solutions contained (in mM) 140 NaCl, 5 KCl, 1 MgCl2, 2 CaCl2, 10 Glucose, 10 HEPES pH 7.4. For all electrophysiology experiments requiring Fab, 25 nM Fab was maintained in all bath and perfusion solutions. For potentiation experiments, currents were elicited via step from bath solution to solution supplemented with either 5 μM GABA or 5 μM GABA + 1 μM Diazepam. An unpaired t-test with Welch’s correction was used to analyze changes in potentiation with or without Fab. External solution exchange was accomplished using the RSC-160 rapid solution changer (Bio-Logic). Membrane potential was clamped at −60 mV and the Axopatch 200B amplifier was used for data acquisition. All traces were recorded and analyzed using the pClamp 10 software suite.
 
-## Cryo-EM data collection
+### Cryo-EM data collection
 
 Gold 200 mesh quantifoil 1.2/1.3 grids were covered with a fresh layer of 2 nm carbon using a Leica EM ACE600 coater. The grids were glow discharged at 15 mA for 30 s using Pelco easiGlow followed by the application of 4 μL 1 mg/mL PEI (MAX Linear Mw 40 k from Polysciences) dissolved in 25 mM HEPES pH 7.9. After 2 min, PEI was removed using filter paper immediately followed by two washes with water. The grids were dried at room temperature for 15 mins. Graphene oxide (Sigma) at 0.4 mg/mL was centrifuged at 1000 g for 1 min and applied to the grids for 2 mins. Excess graphene oxide was blotted away followed by two water washes. The grids were dried once again for 15 mins at room temperature before use. 2.5 μL of 0.15 mg/mL α1β1γ2SEM receptor sample was applied to the grids with blot-force of 1 for 2 s using FEI Vitrobot in 100% humidity.
 
 Grids were loaded into a Titan Krios microscope operated at 300 kV. Images were acquired on a Falcon three direct-detector using counting mode at a nominal magnification of 120,000, corresponding to a pixel size of 0.649 Å, and at a defocus range between −1.2 to −2.5 µm. Each micrograph was recorded over 200 frames at a dose rate of ~0.6 e−/pixel/s and a total exposure time of 40 s, resulting in a total dose of ~37 e−/Å2.
 
-## Cryo-EM data analysis
+### Cryo-EM data analysis
 
 A total of 1391 movie stacks were collected and correction for beam-induced motion was carried out using MotionCor2 (Zheng et al., 2017) (Figure 1—figure supplement 4). The dose weighted micrographs were used for determination of defocus values by Gctf (Zhang, 2016). Micrographs with large areas of ice contamination, multiple layers of graphene oxide, defocus values larger than −2.5 μm or defocus values smaller than −1.2 μm were deleted. Thus 1097 ‘good’ micrographs were retained for the following image analysis. A total of 183,040 particles were automatically picked by DoG-picker (Voss et al., 2009), binned by 2x, and imported into cryosparc (Punjani et al., 2017) for 2D classification. In order to populate the particle stack with receptor-Fab complexes, only classes with clear features and clear background were chosen. A total of 34,911 particles were retained and used to generate an initial model, which was then subjected to homogenous refinement using cryosparc. The stack of 34,911 particles and the model were employed for further processing using Relion (Scheres, 2012).
 
@@ -139,7 +342,7 @@ The combined, 2x binned particles were then used for 3D refinement in RELION by 
 
 Overall estimations of the resolutions of the reconstructions were carried out by Fourier Shell Correlation (FSC) = 0.143 criterion analysis (Scheres and Chen, 2012). The local resolution for the whole map varies about from 3.5 Å to 7 Å (Figure 1—figure supplement 5) where the low resolution areas are in the flexible or disordered regions of the TMD and constant domains of the Fabs. The local resolution for ECD map varies from about 3 to 4 Å.
 
-## Model building
+### Model building
 
 Homology models for the α1, β1 and γ2S subunit were generated using SWISS-MODEL (Biasini et al., 2014). The ‘initial model’ for the pentamer was generated via rigid body fitting of the subunit models to the density map using UCSF Chimera (Pettersen et al., 2004). The high quality of ECD map facilitated building of the ECD structure by way of iterative cycles of manual adjustment in Coot (Emsley and Cowtan, 2004) and refinement using phenix (Afonine et al., 2018). After phenix refinement, the map correlation coefficient (CC) between the map and the ECD model was 0.80, indicative of a good fit between the ECD model and the ECD map.
 

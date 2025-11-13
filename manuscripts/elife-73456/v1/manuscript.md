@@ -29,31 +29,31 @@ In this paper, we assessed the levels of iron in different tissues and cellular 
 
 ## Results
 
-## Iron is increased in the brain cortex with aging
+### Iron is increased in the brain cortex with aging
 
 To determine whether iron accumulates in tissues with aging, we measured heme and non-heme iron levels in the mitochondria and cytoplasm of liver, skeletal muscle, and brain tissues. These organs were selected since liver is the main iron storage organ, while skeletal muscle is a major iron-consuming organ. Additionally, brain iron accumulation is reported with neurodegenerative diseases. We chose two time points for our studies: 4 months for young mice and 22 months for old mice. The almost 2 years age of the old mice is considered sufficient to result in senescence of some organs (Flurkey et al., 2007). Our data demonstrated that cytosolic non-heme iron in the liver was increased with age, whereas liver iron contents in the mitochondria, where iron accumulation is associated with cell dysfunction and cell death, were unchanged with age for both heme and non-heme forms (Figure 1A and B). Similarly, we observed an increase in the cytosolic, but not mitochondrial, non-heme iron in the gastrocnemius muscle. We also did not see a change in the cytosolic heme iron; however, we were not able to detect heme iron in the mitochondria of skeletal muscle tissue, possibly due to technical limitations associated with the isolation of intact mitochondria from skeletal muscle tissue (Figure 1C and D).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/73456/elife-73456-fig1-v1.jpg)
 
-**Figure 1.:** Liver non-heme (A) and heme (B) iron in young (4 months old) and old (22 months old) mice from the cytosol and mitochondria (n=6). Gastrocnemius non-heme (C) and heme (D) iron in young and old mice from the cytosol and mitochondria (n=6). Outliers in non-heme iron in the cytosol (n=1) and in the mitochondria (n=2) were excluded. Mitochondrial heme iron in gastrocnemius muscle was not detectable in our studies. Brain non-heme (E) and heme (F) iron in young and old mice from the cytosol and mitochondria (n=6). (G) Immunoblots of mitochondrial and cytosolic markers, confirming the purity of mitochondrial isolation in the brain cortex tissue. W = whole cell lysate, Cyt = cytosolic fraction, Mit = mitochondrial fraction, SDHA = Succinate Dehydrogenase Complex Flavoprotein Subunit A, HPRT = hypoxanthine phosphoribosyltransferase. (H) Immunoblots of FTN and IRP2 in the brain of young and aged mice (n=4). FTN = ferritin, IRP2 = iron regulatory protein 2, H = heavy chain, L = light chain. Densitometric quantification of light and heavy chain FTN (I) and IRP2 (J) in the brain of young and aged mice. * p<0.05.Figure 1—source data 1.Figure 1.Figure 1—source data 2.Figure 1.Figure 1—source data 3.Figure 1.
+**Figure 1.:** Liver non-heme (A) and heme (B) iron in young (4 months old) and old (22 months old) mice from the cytosol and mitochondria (n=6). Gastrocnemius non-heme (C) and heme (D) iron in young and old mice from the cytosol and mitochondria (n=6). Outliers in non-heme iron in the cytosol (n=1) and in the mitochondria (n=2) were excluded. Mitochondrial heme iron in gastrocnemius muscle was not detectable in our studies. Brain non-heme (E) and heme (F) iron in young and old mice from the cytosol and mitochondria (n=6). (G) Immunoblots of mitochondrial and cytosolic markers, confirming the purity of mitochondrial isolation in the brain cortex tissue. W = whole cell lysate, Cyt = cytosolic fraction, Mit = mitochondrial fraction, SDHA = Succinate Dehydrogenase Complex Flavoprotein Subunit A, HPRT = hypoxanthine phosphoribosyltransferase. (H) Immunoblots of FTN and IRP2 in the brain of young and aged mice (n=4). FTN = ferritin, IRP2 = iron regulatory protein 2, H = heavy chain, L = light chain. Densitometric quantification of light and heavy chain FTN (I) and IRP2 (J) in the brain of young and aged mice. * p<0.05.
 
 We then studied iron levels in the brain mitochondrial and cytosolic fractions, and noted a significant increase in non-heme iron in both the mitochondria and cytoplasm of dissected brain cortex in older mice (Figure 1E). However, there was no increase in heme iron levels in the either compartment in the brain cortex (Figure 1F). The purity of the mitochondrial fraction in the brain cortex tissue was confirmed by immunoblotting (Figure 1G). Consistent with increased non-heme iron levels, we also observed increased protein levels of ferritin light and heavy chains (Figure 1H and I). This increase may be a cellular protective mechanism because free or loosely bound iron in the form of non-heme iron is detrimental to the cells, and iron stored in ferritin is considered redox-inert. Additionally, an elevated level of cellular iron leads to the degradation of IRP2 protein (Wang et al., 2004). We therefore measured IRP2 protein levels in the brain cortex and observed a decrease in IRP2 protein levels in the brain cortex of aged mice (Figure 1H and J), consistent with an increase in iron levels with aging.
 
-## Hepcidin levels are increased in the brain with aging
+### Hepcidin levels are increased in the brain with aging
 
 Since non-heme iron is increased in both the cytosolic and mitochondrial compartments of the brain cortex and previous reports suggest a potential role for iron in neurodegenerative diseases associated with aging such as Alzheimer’s and Parkinson’s disease (Berg et al., 2001; Smith et al., 1997), we then focused our studies on the mechanism for the increase in iron in the brain tissue. We measured the mRNA levels of all proteins involved in cellular iron homeostasis. We conducted these studies both in the tissues of liver and brain cortex. In the liver, we noted a significant increase in the mRNA levels of Fpn1, heme oxygenase 1 (Hmox1), ALA dehydrogenase (Alad), and bone morphogenetic protein 6 (Bmp6), and a significant decrease in the mRNA level of Metalloreductase Six-Transmembrane Epithelial Antigen of Prostate-3 (Steap3) (Figure 2A). In contrast, we noted a significant increase in the mRNA levels of TfR2, mitoferrin 2 (Mfrn2), tristetraprolin (Ttp), Hmox1, Alad, and hepcidin (Hamp1) in the brain cortex of aged mice (Figure 2B). TfR2 does not play a meaningful role in iron uptake compared to transferrin-receptor protein (TfRC), since it has a much lower affinity for transferrin (Kawabata et al., 1999). Instead, it acts as a signaling molecule to regulate Hamp1 transcription through SMAD signaling (Silvestri et al., 2014). Since both Tfr2 and Hamp1 are increased in the brain cortex with aging, we then focused our studies on the cellular hepcidin pathway. To confirm that the increase in Hamp1 mRNA with aging is associated with an increase in its protein, we measured HAMP1 protein in the tissues of brain cortex in young and aged mice and noted a significant increase in its protein levels (Figure 2C and D). Finally, we performed immunohistochemistry on the brain frontal cortex of aged mice and confirmed that HAMP1 protein levels are significantly increased with aging (Figure 2E).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/73456/elife-73456-fig2-v1.jpg)
 
-**Figure 2.:** mRNA levels of proteins involved in iron regulation in the liver (A) and brain (B) in young (4 months old) and old (22 months old) mice (n=10/group). Means and SEM are indicated as horizontal and vertical bars, respectively. An undetected measurement (n=1) in the brain Fech and undetected measurements (n=2) and an outlier (n=1) in the brain Hamp1 were excluded. Tfr1 = transferrin receptor 1, Tfr2 = transferrin receptor 2, Dmt1 = divalent metal transporter 1, Fpn1 = ferroportin 1, Pcbp1 = Poly(RC) Binding Protein 1, Steap3 = Metalloreductase Six-Transmembrane Epithelial Antigen Of Prostate 3, Sec15l1 = exocyst complex component 6, Mfrn2 = mitoferrin 2, Abcb7 = ATP-binding cassette sub-family B member 7, Abcb8 = ATP-binding cassette sub-family B member 8, Alr1 = augmenter of liver regeneration, Cp = ceruloplasmin, Fxn = frataxin, Ttp = tristetraprolin, Lias = tristetraprolin, Hmox1 = heme oxygenase 1, Hmox2 = heme oxygenase 2, Alas1 = 5′-aminolevulinate synthase 1, Alas2 = 5′-aminolevulinate synthase 2, Fech = ferrochelatase, Alad = aminolevulinate dehydratase, Pbgd = porphobilinogen deaminase, Uros = uroporphyrinogen III synthase, Urod = uroporphyrinogen decarboxylase, Ppox = protoporphyrinogen oxidase, Abcb10 = ATP-binding cassette, sub-family B member 10, Hamp1 = hepcidin1, Bmp6 = bone morphogenetic protein 6, Hfe = homeostatic iron regulator, Ftmt = mitochondrial ferritin. (C) Representative immunoblot for hepcidin1 in the brain (n=6). (D) Summary of densitometry analysis of panel (C). (E) Representative immunohistochemistry of hepcidin1 (Red = anti-hepcidin1, blue = DAPI) in the brain frontal cortex of young and aged mice. Scale bar=200 µm. * p<0.05.Figure 2—source data 1.Figure 2.Figure 2—source data 2.Figure 2.Figure 2—source data 3.Figure 2.Figure 2—source data 4.Figure 2.
+**Figure 2.:** mRNA levels of proteins involved in iron regulation in the liver (A) and brain (B) in young (4 months old) and old (22 months old) mice (n=10/group). Means and SEM are indicated as horizontal and vertical bars, respectively. An undetected measurement (n=1) in the brain Fech and undetected measurements (n=2) and an outlier (n=1) in the brain Hamp1 were excluded. Tfr1 = transferrin receptor 1, Tfr2 = transferrin receptor 2, Dmt1 = divalent metal transporter 1, Fpn1 = ferroportin 1, Pcbp1 = Poly(RC) Binding Protein 1, Steap3 = Metalloreductase Six-Transmembrane Epithelial Antigen Of Prostate 3, Sec15l1 = exocyst complex component 6, Mfrn2 = mitoferrin 2, Abcb7 = ATP-binding cassette sub-family B member 7, Abcb8 = ATP-binding cassette sub-family B member 8, Alr1 = augmenter of liver regeneration, Cp = ceruloplasmin, Fxn = frataxin, Ttp = tristetraprolin, Lias = tristetraprolin, Hmox1 = heme oxygenase 1, Hmox2 = heme oxygenase 2, Alas1 = 5′-aminolevulinate synthase 1, Alas2 = 5′-aminolevulinate synthase 2, Fech = ferrochelatase, Alad = aminolevulinate dehydratase, Pbgd = porphobilinogen deaminase, Uros = uroporphyrinogen III synthase, Urod = uroporphyrinogen decarboxylase, Ppox = protoporphyrinogen oxidase, Abcb10 = ATP-binding cassette, sub-family B member 10, Hamp1 = hepcidin1, Bmp6 = bone morphogenetic protein 6, Hfe = homeostatic iron regulator, Ftmt = mitochondrial ferritin. (C) Representative immunoblot for hepcidin1 in the brain (n=6). (D) Summary of densitometry analysis of panel (C). (E) Representative immunohistochemistry of hepcidin1 (Red = anti-hepcidin1, blue = DAPI) in the brain frontal cortex of young and aged mice. Scale bar=200 µm. * p<0.05.
 
-## Aging is associated with decreased FPN1 protein levels through its ubiquitination
+### Aging is associated with decreased FPN1 protein levels through its ubiquitination
 
 The major effect of hepcidin protein on iron regulation is through ubiquitination and subsequent degradation of FPN1, resulting in a decrease in cellular iron export (Qiao et al., 2012). This mechanism of hepcidin effect generally occurs in intestinal cells and macrophages, which leads to decreased iron export from these cells. Since HAMP1 protein levels are increased in the brain cortex of aged mice, we hypothesized that FPN1 levels would be decreased in the brains of these mice. FPN1 protein levels are significantly decreased in the brain cortex tissue of aged mice, while TfR1 levels are unchanged (Figure 3A and B). Since mRNA levels of FPN1 are not significantly changed in the brain cortex, we hypothesized that the decrease in FPN1 protein might be due to its degradation by hepcidin. We therefore measured FPN1 protein ubiquitination in the brains of aged mice, and showed a significant increase in its ubiquitination (Figure 3C and D). These results indicate that FPN1 protein is ubiquitinated and decreased with aging, perhaps as a consequence of the higher levels of hepcidin.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/73456/elife-73456-fig3-v1.jpg)
 
-**Figure 3.:** (A) Immunoblots of iron transporting proteins TfR1 and FPN1 in the brain cortex of young and aged mice (n=3). (B) Summary of densitometric analysis of panel (A). (C) Poly-ubiquitination levels of FPN1, as assessed by immunoprecipitation, in the brain cortex of young and aged mice (n=3). (D) Summary of the densitometric analysis of panel (C). (E) Fe-S cluster containing aconitase enzyme activity, a marker of cellular oxidative stress, in the brain cortex of young and aged mice (n=4). c-aconitase = cytosolic aconitase (ACO1), m-aconitase = mitochondrial aconitase (ACO2). * p<0.05.Figure 3—source data 1.Figure 3.Figure 3—source data 2.Figure 3.Figure 3—source data 3.Figure 3.
+**Figure 3.:** (A) Immunoblots of iron transporting proteins TfR1 and FPN1 in the brain cortex of young and aged mice (n=3). (B) Summary of densitometric analysis of panel (A). (C) Poly-ubiquitination levels of FPN1, as assessed by immunoprecipitation, in the brain cortex of young and aged mice (n=3). (D) Summary of the densitometric analysis of panel (C). (E) Fe-S cluster containing aconitase enzyme activity, a marker of cellular oxidative stress, in the brain cortex of young and aged mice (n=4). c-aconitase = cytosolic aconitase (ACO1), m-aconitase = mitochondrial aconitase (ACO2). * p<0.05.
 
 We then assessed whether the increase in iron in the brain cortex of aged mice is associated with increased oxidative stress. Aconitase is a Fe/S-containing protein that is highly sensitive to oxidative stress (Noster et al., 2019). Our results demonstrated a decrease in both cytosolic and mitochondrial aconitase activity in the brain cortex of aged mice (Figure 3E), being consistent with the notion that oxidative stress is increased in the aged brain (Kandlur et al., 2020).
 
@@ -75,40 +75,474 @@ Our studies have clinical implications for neurodegenerative diseases associated
 
 ## Materials and methods
 
-## Primer sequences
+**Key resources table**
 
-## Tissues from young and aged mice
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background(Mus musculus, female, C57BL/6)</td>
+      <td>UM-HET3</td>
+      <td>Dr. Miller lab</td>
+      <td></td>
+      <td>Harrison et al., 2021 (cited in the paper)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(M. musculus, female, C57BL/6)</td>
+      <td>Wild type</td>
+      <td>Jackson Laboratories</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-HPRT antibody</td>
+      <td>ProteinTech</td>
+      <td>150-59-1-AP</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-SDHA antibody</td>
+      <td>Invitrogen</td>
+      <td>45-920-0</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-FTN antibody</td>
+      <td>Sigma-Ardrich</td>
+      <td>F5012</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-IRP2 antibody</td>
+      <td>Sigma-Ardrich</td>
+      <td>SAB2101174</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-TFR1 antibody</td>
+      <td>ProteinTech</td>
+      <td>100-84-2-AP</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-FPN1 antibody</td>
+      <td>Novus Biologicals</td>
+      <td>NBP1-21502</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Hepcidin antibody</td>
+      <td>Abcam</td>
+      <td>190775</td>
+      <td>WB (1:200)IH (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse polyclonal anti-ubiquitin antibody</td>
+      <td>Cell Signaling Technologies</td>
+      <td>3933S</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GAPDH antibody</td>
+      <td>ProteinTech</td>
+      <td>60004-1-Ig</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-α-Tubulin antibody</td>
+      <td>ProteinTech</td>
+      <td>66031-1-Ig</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated donkey polyclonal anti-rabbit IgG antibody</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>711-035-152</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated donkey polyclonal anti-mouse IgG antibody</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>715-035-150</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 goat polyclonal anti-rabbit IgG</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>111-585-144</td>
+      <td>IH (1:200)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-(2-Pyridyl)–5,6-di(2-furyl)–1,2,4-triazine-5′,5″-disulfonic acid disodium salt(Ferrozine)</td>
+      <td>Sigma-Aldrich</td>
+      <td>82940</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trichloroacetic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>T6399</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thioglycolic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>T3758</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hemin</td>
+      <td>Sigma-Aldrich</td>
+      <td>H9039</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNA-STAT60</td>
+      <td>Teltest</td>
+      <td>Cs-502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycogen</td>
+      <td>Life Technologies</td>
+      <td>AM9510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>AC416780250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RIPA Buffer</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>89901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ProteaseArrest Protease Inhibitor</td>
+      <td>G-Biosciences</td>
+      <td>786-437</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>qScript cDNA Synthesis Kit</td>
+      <td>Quanta</td>
+      <td>95047-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PerfeCTa SYBR Green FastMix</td>
+      <td>Quanta</td>
+      <td>95074-05K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Pico PLUS Chemiluminescent Substrate</td>
+      <td>Pierce</td>
+      <td>34579</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads Protein G for Immunoprecipitation</td>
+      <td>Invitrogen</td>
+      <td>10003D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA Protein Assay Kit</td>
+      <td>Pierce</td>
+      <td>23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mitochondria Isolation Kit for Tissue</td>
+      <td>Pierce</td>
+      <td>89801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Aconitase Activity Assay Kit</td>
+      <td>Abcam</td>
+      <td>Ab109712</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>OTC compound</td>
+      <td>Sakura Finetek</td>
+      <td>4583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers for qRT-PCR</td>
+      <td>This manuscript</td>
+      <td>N/A</td>
+      <td>Included in the next table</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>Version 9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>1.53c</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Primer sequences
+
+<table>
+  <thead>
+    <tr>
+      <th>Genes</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Actb</td>
+      <td>CCGTGAAAAGATGACCCAGAT</td>
+      <td>GTACATGGCTGGGGTGTTG</td>
+    </tr>
+    <tr>
+      <td>Hprt1</td>
+      <td>CTGGAAAGAATGTCTTGATTGTTG</td>
+      <td>TGCATTGTTTTACCAGTGTCAA</td>
+    </tr>
+    <tr>
+      <td>Tfr1</td>
+      <td>GCATTGCGGACTGTAGAGG</td>
+      <td>GCTTGATCCATCATTCTCAGC</td>
+    </tr>
+    <tr>
+      <td>Tfr2</td>
+      <td>AGCCCATCAGTGCTGACATT</td>
+      <td>AGGAGAGCCTGAGAGGTGAC</td>
+    </tr>
+    <tr>
+      <td>Dmt1</td>
+      <td>GGCGTGTGTGGAGGTGGCGG</td>
+      <td>TGGTCCCCAGAAGCGCCATCG</td>
+    </tr>
+    <tr>
+      <td>Fpn1</td>
+      <td>TGGCCACTCTCTCTCCACTT</td>
+      <td>ACACTGCAAAGTGCCACATC</td>
+    </tr>
+    <tr>
+      <td>Pcbp1</td>
+      <td>AGATCAAAATTGCCAACCCG</td>
+      <td>AGCCAGTAATAGTGACCTGC</td>
+    </tr>
+    <tr>
+      <td>Steap3</td>
+      <td>AGGAGTTCAGCTTCGTGCAG</td>
+      <td>GAGGGCTAGACAAGATGCGTA</td>
+    </tr>
+    <tr>
+      <td>Sec15l1</td>
+      <td>CCACCCTCCGATCTGTGTAT</td>
+      <td>AAACTTCTTGTGTGCGTTTGG</td>
+    </tr>
+    <tr>
+      <td>Mfrn2</td>
+      <td>AGTGACGTAATCCACCCAGGGGGC</td>
+      <td>CTCTGCTTGACGACTTCCGCTGG</td>
+    </tr>
+    <tr>
+      <td>Abcb7</td>
+      <td>GGAGGAGGACTCCACACAGA</td>
+      <td>ATGGCAACTCTGGCTCGTAG</td>
+    </tr>
+    <tr>
+      <td>Abcb8</td>
+      <td>GGGCAACAGGTGTAGCAGAT</td>
+      <td>TGCTTGATAGCGTTCCTCCT</td>
+    </tr>
+    <tr>
+      <td>Alr1</td>
+      <td>CCCTGCGAGGAATGTGCGGAA</td>
+      <td>TCACCTCATTGTGCAGGCGGC</td>
+    </tr>
+    <tr>
+      <td>Cp</td>
+      <td>TGCTCCTTCTGGGACGGACATCTTC</td>
+      <td>GCCACCAATTCTTGTGGCACCTTGC</td>
+    </tr>
+    <tr>
+      <td>Fxn</td>
+      <td>CAGACAAGCCCTATACCCTG</td>
+      <td>AGCCAGATTTGCTTGTTTGG</td>
+    </tr>
+    <tr>
+      <td>Ttp</td>
+      <td>CCATCTACGAGAGCCTCCAG</td>
+      <td>CGTGGTCGGATGACAGGT</td>
+    </tr>
+    <tr>
+      <td>Lias</td>
+      <td>AGGAAACTTAAAGCGCCAGA</td>
+      <td>GCCATGGAGGTAGTCTTAGCC</td>
+    </tr>
+    <tr>
+      <td>Hmox1</td>
+      <td>AGGCTTTAAGCTGGTGATGG</td>
+      <td>CTTCCAGGGCCGTGTAGATA</td>
+    </tr>
+    <tr>
+      <td>Hmox2</td>
+      <td>TGGCACCAGAAAAGGAAAAC</td>
+      <td>CTTCCTTGGTCCCTTCCTTC</td>
+    </tr>
+    <tr>
+      <td>Alas1</td>
+      <td>TGGGGCCAAGCCAGCTCCTC</td>
+      <td>AGGAGCCTGCTGGACTGCGG</td>
+    </tr>
+    <tr>
+      <td>Alas2</td>
+      <td>TTGGTTCGTCCTCAGTGCAGGG</td>
+      <td>GCCACCATCCTGAGCCCAAAGTC</td>
+    </tr>
+    <tr>
+      <td>Fech</td>
+      <td>CCGGAAATGCTTTCGGCCAGCG</td>
+      <td>ACAGGCCCTTGAGCTGCCGTG</td>
+    </tr>
+    <tr>
+      <td>Alad</td>
+      <td>CGCTTTTAGAGCGGGAGAGC</td>
+      <td>AGAGAAGTCTGCTGGATGGAG</td>
+    </tr>
+    <tr>
+      <td>Pbgd</td>
+      <td>AGCTACAGAGAAAGTTCCCC</td>
+      <td>ACTGAATTCCTGCAGCTCAT</td>
+    </tr>
+    <tr>
+      <td>Uros</td>
+      <td>GAGGACTCATTTTCACCAGC</td>
+      <td>GACTTGGCATTCCATCTGTC</td>
+    </tr>
+    <tr>
+      <td>Urod</td>
+      <td>TTACTGTTTACCATGGAGGC</td>
+      <td>AGGAACGTGTCATTCTTCAG</td>
+    </tr>
+    <tr>
+      <td>Ppox</td>
+      <td>ACCTAGCAAGTAAAGGGGTC</td>
+      <td>CTTATAATGTGGTCAGCCTCC</td>
+    </tr>
+    <tr>
+      <td>Abcb10</td>
+      <td>ACCGGTGTGCGAGACCTTGGG</td>
+      <td>TGGACACAGCCAGAAACCCAACTGC</td>
+    </tr>
+    <tr>
+      <td>Hamp1</td>
+      <td>TTTGCACGGGGAAGAAAGCA</td>
+      <td>GTGGCTCTAGGCTATGTTTTGC</td>
+    </tr>
+    <tr>
+      <td>Bmp6</td>
+      <td>GCTTTGTGAACCTGGTGGAG</td>
+      <td>GTCGTTGATGTGGGGAGAAC</td>
+    </tr>
+    <tr>
+      <td>Hfe</td>
+      <td>CCTCCACGTTTCCAGATCCT</td>
+      <td>CTCTGAGGCACCCATGAAGAG</td>
+    </tr>
+    <tr>
+      <td>Ftmt</td>
+      <td>ATTTCCCCAGCCTGAAAGAT</td>
+      <td>TCCCATCCCTGTCATACCAT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Tissues from young and aged mice
 
 Tissues of liver, gastrocnemius muscle, and dissected brain cortex from young (4 months old) and aged (22 months old) female UM-HET3 mice, which is a genetically heterogeneous mouse model that is the first-generation offspring of a CByB6F1 × C3D2F1 cross to produce a diverse heterogeneous population in the Interventions Testing Program (ITP; https://www.nia.nih.gov/research/dab/interventions-testing-program-itp) (Harrison et al., 2021), were used in the present study. Mice were given diet Purina 5LG6 containing 345 ppm iron, which is similar to the published normal iron diet (Gutschow et al., 2015). For hepcidin immunohistological analysis, young (4 months old) and aged (22 months old) female C57BL/6 mice were used. This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. Our research was approved by the University of Michigan’s Institutional Animal Care and Use Committee. The approval number currently associated with this activity is PRO00009981.
 
-## Cytosolic and mitochondrial fractioning
+### Cytosolic and mitochondrial fractioning
 
 Cytosolic and Mitochondrial fractions from tissues were isolated using Mitochondrial Isolation Kit for Tissues (Pierce) according to the manufacturer’s protocol.
 
-## Non-heme and heme iron measurement
+### Non-heme and heme iron measurement
 
 Iron contents in the cytosolic and mitochondrial fractions of the tissues were measured as previously described (Bayeva et al., 2012; Sato et al., 2018). Briefly, for the non-heme iron measurements, equal amounts of protein were mixed with protein precipitation solution (1:1 1 N HCl and 10% trichloroacetic acid) and heated at 95°C for 1 hr to release iron. The precipitated proteins were removed by centrifugation at 16,000×g for 10 min at 4°C, the supernatant was mixed with the equal volume of chromogenic solution (0.5 mM ferrozine, 1.5 M sodium acetate, 0.1% [v/v] thioglycolic acid), and the absorbance was measured at 562 nm. For the heme iron measurements, equal amounts of protein were mixed with 2.0 M oxalic acid and were heated at 95°C for 1 hr to release iron from heme and generate protoporphyrin IX. Samples were then centrifuged at 1000×g for 10 minat 4°C and the fluorescence of the supernatant was assessed at 405 nm/600 nm.
 
-## Reverse transcription and quantitative real-time PCR
+### Reverse transcription and quantitative real-time PCR
 
 RNA was isolated from tissues using RNA-STAT60 (Teltest). Reverse transcribed with qScript Reverse Transcription Kit (Quanta) according to the manufacturers’ instruction, and as described previously (Chang et al., 2021). The resulting cDNA was amplified quantitatively using PerfeCTa SYBR Green Mix (Quanta) on a 7500 Fast Real-Time PCR System (Applied Biosystems). The relative gene expression was determined using differences in Ct values between gene of interest and housekeeping control genes β-actin and hypoxanthine phosphoribosyltransferase-1 (Hprt1).
 
-## Immunoblotting
+### Immunoblotting
 
 Tissues were lysed in radioimmunoprecipitation assay (RIPA) buffer supplemented with protease inhibitor (Thermo Fisher Scientific). Protein concentration in lysates was determined using BCA Protein Quantification Kit (Pierce) and as described previously (Sawicki et al., 2018). Equal amounts of proteins were resolved on 4–12% Novex Bis-Tris poly-acrylamide gel (Invitrogen) and blotted onto nitrocellulose membrane (Invitrogen). After blocking with tris-buffered saline containing 0.05% Tween 20 (Thermo Fisher Scientific) and 5% milk, the membrane was incubated overnight at 4°C in primary antibody against HPRT (ProteinTech), succinate dehydrogenase complex flavoprotein subunit A (SDHA, Invitrogen), FTN (Sigma-Aldrich), IRP2 (Novus Biologicals), TfR1 (Invitrogen), FPN1 (Novus Biologicals), Hepcidin (Abcam), Ubiquitin (Cell Signaling Technology), GAPDH (ProteinTech), and α-Tubulin (ProteinTech). The following day, membranes were incubated with HRP-conjugated anti-mouse or anti-rabbit secondary antibodies (Jackson ImmunoResearch) for 1 hr and proteins were visualized using Super Surgical Western Pico ECL substrate (Pierce). Quantification of immunoblotting image was done using ImageJ (NIH).
 
-## Immunoprecipitation of FPN1
+### Immunoprecipitation of FPN1
 
 Tissues were lysed in IP buffer containing 25 mM Tris-HCl (pH 7.5), 150 mM NaCl, 1 mM EDTA, 0.1% NP-40 with protease inhibitor cocktail (G-Biosciences). 400 μg of protein was pre-incubated with 40 μl of protein G magnetic beads (Invitrogen) for 1 hr at 4°C. After the beads had been discarded, the supernatant was incubated with FPN antibody (Novus Biologicals) or IgG at a rotator overnight at 4°C. The mixture was then incubated with 40 μl of fresh beads for 1 hr at 4°C. A magnetic field was applied to this mixture, and the supernatant was removed. The magnetic beads were washed three times with 400 μl of IP buffer, re-suspended in 40 μl of SDS sample buffer, and incubated for 10 min at 70°C. Finally, 20 μl of the supernatant was collected after applying a magnetic field to the mixture and was used for immunoblotting.
 
-## Immunohistochemistry of hepcidin
+### Immunohistochemistry of hepcidin
 
 Mice were anesthetized with an intraperitoneal injection of 250 mg/kg dose of freshly prepared Tribromoethanol (Avertin). They were then transcardially perfused with ice-cold phosphate-buffered saline (PBS) to wash out the blood, and following the discoloration of liver, the buffer was replaced to freshly prepared ice-cold 4% paraformaldehyde (PFA) with the assistance of circulating pump to supply sufficient perfusion pressure. After 20 min perfusion, the brain tissue was extracted from the skull and was fixed overnight in 4% PFA. The fixed brain tissue was placed in 30% sucrose for 48 hr at 4°C. Brain tissue was then submerged into OTC compound (Sakura Finetek, Torrance, CA) and frozen in liquid nitrogen. 30 µm coronal sections were cut using a cryotome (Leica) and mounted on Fisherbrand Superfrost Plus Microscope Slides. Sections were permeabilized using 0.25% Triton-x100 in PBS for 30 min, washed three times in PBS, and incubated with primary antibody against hepcidin overnight at 4°C. Sections were then washed three times in PBS and incubated with Alexa Fluor594 Goat Anti-Rabbit IgG at 1:200 (Jackson ImmunoResearch) for 2 hr at room temperature. Nuclei were counterstained with DAPI containing ProLong Gold Antifade mounting media (Invitrogen) and images of frontal cortex were acquired using a Zeiss Axio Observer.Z1 fluorescence microscope.
 
-## Aconitase activity measurements
+### Aconitase activity measurements
 
 Aconitase activities in cytosolic and mitochondrial fraction of the brain cortex lysates were measured using Aconitase Enzyme Activity Microplate Assay Kit (Abcam) according to the manufacturer’s instructions.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as mean ± SEM. There was no randomization of the samples, but the investigator performing the measurements was blinded to the group assignment. For sample size estimation, our previous study (Chang et al., 2016) indicated that changes in mitochondrial non-heme iron contents of about 20% can affect iron-dependent cytotoxicity in the mouse heart. Given an estimated standard deviation of iron of 15% in each group, we estimated that six samples would be needed to detect a 20% difference in change of iron contents. For other experiments, power analysis was not performed a priori because we could use sufficient numbers of stored tissue samples that had already been cryopreserved and there was no risk of wasting unnecessary animals. We determined n=10 for the RNA levels and n=3–6 for the immunoblots and enzyme activities for our analysis. This was based on our prior experience performing similar experiments. Unpaired two-tailed Student’s t-tests were used to determine statistical significance. p<0.05 was considered to be statistically significant, as indicated by an asterisk. Analysis was performed using Graphpad Prism 9.

@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.38790.001 Individuals must predict future events to proactively guide their behavior. Predicting when events will occur is a critical component of these expectations. Temporal expectations are often generated based on individual cue-duration relationships. However, the durations associated with different environmental cues will often co-vary due to a common cause. We show that timing behavior may be calibrated based on this expected covariance, which we refer to as the ‘common cause hypothesis’. In five experiments using rats, we found that when the duration associated with one temporal cue changes, timed-responding to other cues shift in the same direction. Furthermore, training subjects that expecting covariance is not appropriate in a given situation blocks this effect. Finally, we confirmed that this transfer is context-dependent. These results reveal a novel principle that modulates timing behavior, which we predict will apply across a variety of magnitude-expectations.
+Individuals must predict future events to proactively guide their behavior. Predicting when events will occur is a critical component of these expectations. Temporal expectations are often generated based on individual cue-duration relationships. However, the durations associated with different environmental cues will often co-vary due to a common cause. We show that timing behavior may be calibrated based on this expected covariance, which we refer to as the ‘common cause hypothesis’. In five experiments using rats, we found that when the duration associated with one temporal cue changes, timed-responding to other cues shift in the same direction. Furthermore, training subjects that expecting covariance is not appropriate in a given situation blocks this effect. Finally, we confirmed that this transfer is context-dependent. These results reveal a novel principle that modulates timing behavior, which we predict will apply across a variety of magnitude-expectations.
 
 ## Introduction
 
@@ -34,11 +34,27 @@ The essential point proposed in the above example is that, in the environment, t
 
 ## Results
 
-## Experiment 1: changes in temporal expectations transfer across cues
+### Experiment 1: changes in temporal expectations transfer across cues
 
 The underlying premise of the common cause hypothesis is that common causal factors can often produce covariance among the durations associated with distinct temporal cues. According to this hypothesis, observers can benefit from this statistical property by anticipating that, when the duration associated with one temporal cue changes, the durations associated with other cues will have changed in the same direction.
 
 We tested this hypothesis using the ‘peak-interval’ procedure. In this task, trials begin with the presentation of a cue that indicates reward can be earned for responding after a specified duration elapses (e.g. responding at a nosepoke after 16 s have passed). Probe trials are also included in which the cue remains on for much longer than normal (e.g. 48 –64 s) and no reward is provided. When averaged across trials, probe trial responding resembles a Gaussian curve with a peak (i.e. peak time) centered over the trained time of reward, providing an estimate of the temporal expectation associated with the cue in question (for examples see Figure 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/38790/elife-38790-fig1-v2.jpg)
+
+**Figure 1.:** (B) and (E) show average normalized response rate during probe trials during initial training and testing for the 8-to-4 and 16-to-32 groups, respectively. For presentation, each curve was normalized by the maximum value and smoothed over a 6-bin window. (C) and (F) show percent-change in peak time during testing (±SEM), relative to initial training for the 8-to-4 and 16-to-32 groups, respectively. Stars indicate significance (p<0.05).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38790/elife-38790-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** A shows responding in the 8-to-4 (left) and 16-to-32 (right) groups of Experiment 1. B shows responding in the no-change control group of Experiment 1. (C) shows responding in the 8-to-12 group of Experiment 2. (D) shows responding for the change (left) and no-change (right) groups of Experiment 3. (E) shows responding in the correlated (left) and uncorrelated (right) groups of Experiment 4a. (F) shows the same for Experiment 4b. (G) shows responding during testing in the no-change (left) and change (right) contexts of Experiment 5.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38790/elife-38790-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (C) shows the same for the no-change control group.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/38790/elife-38790-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Three rats in Experiment 5 did not show any trials that met our criteria for being included in the single trial analysis (>2 responses and a start and stop time that occurred before and after the peak time, respectively). In those cases, they were omitted when computing the averages and statistics.
 
 Using this task, we trained rats to associate two cues (tone and light) with either an 8 or 16 s delay to reward availability (e.g. tone-8 seconds/light-16 seconds; counterbalanced). Then, during a ‘change phase’, we altered the duration of one of the cues, hereafter, referred to as the ‘changed cue’. Specifically, for one group, we decreased the short, 8 s cue’s duration to 4 s (8-to-4 group). Conversely, for the other group, we increased the long, 16 s cue’s duration to 32 s (16-to-32 group). Importantly, we did not present the other, ‘unchanged cue’ until testing, which occurred after rats had adapted to the changed cue’s new duration (see Figure 1A,D for design schematics).
 
@@ -52,13 +68,13 @@ We also ran a control group, in which we replicated the design used for the 8-to
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/38790/elife-38790-fig2-v2.jpg)
 
-**Figure 2.:** n = 10).(B) shows normalized response rate during training and testing. (C) shows percent change in peak times during testing (±SEM), relative to initial training.10.7554/eLife.38790.012Figure 2—source data 1.Figure 2.
+**Figure 2.:** (B) shows normalized response rate during training and testing. (C) shows percent change in peak times during testing (±SEM), relative to initial training.
 
 Consistent with our hypothesis, we did not find reliable transfer to the long (unexposed) cue in this group. Specifically, peak times did not change reliably and, if anything, shifted slightly rightward [M = 6% + /- 5% SEM, t(9) =.86, p>0.05]. Furthermore, long-cue shifts were larger in the 8-to-4 group than the control group [ANOVA: Phase X Group, F(1,16) = 16.24, p<.005]. Correspondingly, no CV changes were observed for the unchanged cue during testing [M = 4% + /- 8% SEM, t(9) =.46, p<0.05]. We also ran two Bayesian analyses (see methods) to assess evidence in favor of the null hypothesis that peak times did not shift during testing in the control group. The first used an uninformative prior (i.e. assessing evidence for a non-specific peak time shift). As expected, this showed substantial evidence in favor of the null [Bayes Factor = 3.34]. Critically, using an alternative prior that tested the specific hypothesis that the peak times shifted to the same degree as the 8-to-4 group showed decisive evidence in favor of the null [Bayes Factor = 2875.88]. Finally, neither start nor stop times reliably shifted in the no-change group [Start, M = 17% + /- 11% SEM, t(9) = 1.55, p>0.05; Stop, M = 3% + /- 5% SEM, t(9) =.61, p>0.05].
 
 Together, these results provide support for the common cause hypothesis. When the duration associated with one cue changed, responding to the other cue changed in the same direction, as if rats expected that a common cause shifted the durations associated with both cues in a correlated manner.
 
-## Experiment 2: cross-cue transfer does not result from regression to the mean
+### Experiment 2: cross-cue transfer does not result from regression to the mean
 
 We propose that, in Experiment 1, the transfer to the unchanged cue occurred because subjects expected the durations associated with both cues would co-vary due to a common cause. For example, in the 8-to-4 group, responses to the long, unchanged cue shifted leftward because the short cue’s duration shifted leftward.
 
@@ -70,11 +86,11 @@ This ‘regression to the mean’ account and the common cause hypothesis make i
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/38790/elife-38790-fig3-v2.jpg)
 
-**Figure 3.:** n = 10).(B) shows normalized responding during training and the test phases. (C) shows percent change in peak time for each cue during testing (±SEM), relative to initial training. Stars indicate significance.10.7554/eLife.38790.014Figure 3—source data 1.Figure 3.
+**Figure 3.:** (B) shows normalized responding during training and the test phases. (C) shows percent change in peak time for each cue during testing (±SEM), relative to initial training. Stars indicate significance.
 
 As depicted in Figure 3B and C, peak times for the unchanged, 16 s cue shifted rightward, consistent with the common cause hypothesis [M = 13% + /- 5% SEM, t(9) = 2.34, p<0.05]. As before, there were no reliable CV changes [M = 13% + /- 7% SEM, t(9) = 1.35, p>0.05]. Finally, there was a marginally significant rightward shift in start times and a reliable rightward shift in stop times [Start, M = 18% + /- 10% SEM, t(9) = 2.02, p=0.075; Stop, M = 9% + /- 3% SEM, t(9) = 2.91, p<0.05].
 
-## Experiment 3: cue-duration change effects supersede reward structure change effects on transfer
+### Experiment 3: cue-duration change effects supersede reward structure change effects on transfer
 
 In our previous experiments, altering the changed cue’s duration constituted a shift in the local cue-duration relationship. However, it also altered the reward-structure of the overall task itself. Using the 8-to-4 group of Experiment 1 as an example, decreasing the 8 s cue’s duration to 4 s caused a global decrease in the intervals being produced during the task. Furthermore, it introduced a novel duration that was earlier than the intervals the rats had learned up to that point. These non-cue-specific changes to the overall task could produce the pattern of transfer we observed.
 
@@ -84,15 +100,31 @@ Another possibility is that introducing a novel duration that was earlier or lat
 
 While these results weaken a reward-structure account, we directly addressed this concern in Experiment 3 (see Figure 4A and B). First, we trained rats to associate two cues with an 8- and 16 s duration, respectively. Then, we instituted a change phase, in which we stopped presenting the 16 s cue. In one ‘no-change group’, we kept presenting the 8 s cue, maintaining its duration. Critically, we also introduced a novel cue that predicted reward availability at 4 s. This changed the reward structure, without introducing a cue-duration relationship change. In contrast, in the ‘change group’, we decreased the 8 s cue’s duration to 4 s and associated the novel cue with an 8 s duration. With this design, the overall reward structure of the task (i.e. cues, durations, etc.) was identical between the two groups. However, only the ‘change’ group experienced a cue-duration relationship change. Consequently, any between-group differences in unchanged-cue responding could only be driven by the cue-duration change.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/38790/elife-38790-fig4-v2.jpg)
+
+**Figure 4.:** Mean normalized response rate for the critical, long cue during initial training and testing are plotted in the corresponding bottom panels. (C) shows percent change in peak times for the short and long cues in each group during testing (±SEM).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38790/elife-38790-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** C shows percent change in peak time at test (±SEM) for both groups, relative to initial training.
+
 Consistent with the common cause hypothesis, the magnitude of the long-cue peak time shift was far larger in the change-group than the no-change group [Figure 4C; Change group: M = −47% ± 4% SEM; t(8) = −7.89, p<0.05; No-change group: M = −13% ± 8% SEM, t(8) = −2.14, p>0.05; ANOVA: Phase X Group, F(1,8) = 16.57, p<0.005; Phase, F(1,8) = 50.33, p<0.001]. While the average response rate curve does suggest some degree of a shift occurred in the no-change group, a Bayesian analysis assessing evidence for a non-specific peak time shift in the no-change group revealed some evidence in favor of the null [Bayes Factor = 2.05]. Critically, the Bayesian analysis assessing evidence that the no-change group shift was equivalent to the change-group shift revealed decisive evidence in favor of the null [Bayes Factor = 1099.13]. As in the previous experiments, we did not observe CV changes in either group [Change-group, M = −14% ± 15% SEM, t(8) = −1.64, p>0.05; No-change group, M = 3% + /- 9% SEM, t(8) =.12, p>0.05].
 
 Single-trial analyses revealed similar patterns, with a significant leftward shift in change-group start times and no reliable shift in the no-change group, although the difference between groups was only marginally significant in this case [Change group: M = −33% ± 5% SEM, t(8) = −3.27, p<0.05; No-change group: M = −4% ± 11% SEM, t(8) = −0.34, p>0.05; Change vs. No-change group, t(8) = −1.90, p=0.094]. Stop times were reliably shifted in both groups, suggesting reward structure changes alone may have some impact on timed responding [Change group, M = −46% ± 4% SEM, t(8) = −10.14, p<0.001; No-change group, M = −19% ± 5% SEM, t(8) = −4.12, p<.005]. Importantly, the magnitude of the stop time shift was reliably larger in the change group than the no-change group [t(8)=−2.44, p<0.05].
 
 Collectively, these results provide strong support for the proposal that cue-duration changes produce transfer, even when reward structure is controlled for. However, given the stop-time effect in the no-change group, we cannot rule-out that changes in overall reward structure can contribute to some degree of the shift in responding.
 
-## Experiment 4a: violating the purported ‘covariance assumption’ blocks cross-cue transfer
+### Experiment 4a: violating the purported ‘covariance assumption’ blocks cross-cue transfer
 
 According to the common cause hypothesis, observers rely on a ‘covariance assumption’ that the durations associated with different cues will change in the same direction. Therefore, if this expectation were explicitly violated (i.e. observers learn that the covariance assumption is not appropriate), the transfer should be attenuated or blocked. We tested this hypothesis next (see Figure 5A and B). First, we trained two groups of rats to associate 3 cues with a 4, 8, or 16 s duration, respectively. Then, in both groups, we increased the 16 s cue’s duration to 32 s.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/38790/elife-38790-fig5-v2.jpg)
+
+**Figure 5.:** Mean normalized response rate for the critical, medium cue during initial training and testing are plotted in the corresponding bottom panels. (C) shows percent change in peak times for all cues in each group during testing (±SEM).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38790/elife-38790-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (C) shows percent change in peak time at test (±SEM) for both groups and all cues, relative to initial training.
 
 Importantly, in the ‘correlated group’, we also increased the 4 s cue’s duration to 8 s. As both the 4- and 16 s cues’ durations changed in the same direction, the covariance assumption should be upheld. Critically, in the other, ‘uncorrelated’ group, we held the 4 s cue’s duration constant. This should violate the covariance assumption, as the 4- and 16 s cues did not change in the same direction. In both groups, we did not present the 8 s (i.e. unchanged) cue during this phase.
 
@@ -102,7 +134,7 @@ Consistent with our prediction, transfer to the 8 s cue was observed in the corr
 
 Collectively, these results indicate that violating the purported covariance assumption blocks directional transfer to the unchanged cue.
 
-## Experiment 4b: assessing within-mode generalization on transfer
+### Experiment 4b: assessing within-mode generalization on transfer
 
 While these data support the common cause hypothesis, there was one peculiarity in the results. Specifically, the magnitude of the shift seen in the correlated group of Experiment 4a (M = 13%) appears to be weaker than that seen in the 16-to-32 group of Experiment 1 (M = 59%). Given that the covariance assumption was explicitly confirmed in the correlated group, but not in the 16-to-32 group of Experiment 1, one would expect that the transfer would be magnified in the correlated group or, at the very least, on-par with the 16-to-32 group.
 
@@ -110,11 +142,19 @@ We hypothesized that a seemingly mundane aspect of the design used in Experiment
 
 To assess this possibility, we ran a follow-up, which was essentially a counter-balanced version of the prior experiment. We used the same experimental design as Experiment 4a (see Figure 6), but the short and long cues were visual and auditory stimuli, respectively, and the medium cue was auditory. We reasoned that, for the correlated group, having the two shifted cues be presented through distinct modes (visual and auditory) would eliminate any within-mode categorization and, thereby, boost the transfer to the medium cue.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/38790/elife-38790-fig6-v2.jpg)
+
+**Figure 6.:** Mean normalized response rate for the critical, medium cue during initial training and testing are plotted in the corresponding bottom panels. (C) shows percent change in peak times for all cues in each group during testing (±SEM).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38790/elife-38790-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (C) shows percent change in peak time at test (±SEM) for both groups and all cues, relative to initial training.
+
 Replicating our prior effect, medium cue peak time shifts were reliable in the correlated group and unreliable in the uncorrelated group [Figure 6C; Figure 6—figure supplement 1; Correlated group 8 s cue shift, M = 53% + /- 22% SEM, t(8) = 3.5, p<0.05; Uncorrelated group 8 s cue shift, M = 5% + /- 3% SEM, t(8) =.56, p >. 05; ANOVA: Phase X Group, F(1,8) = 6.16, p<0.05]. The Bayesian analysis assessing whether a non-specific shift occurred in the uncorrelated group showed strong evidence in favor of the null [Bayes factor = 11.18]. Furthermore, we found strong evidence that peak times did not shift in the uncorrelated group, relative to the alternative that the peak-time shifts were equivalent to the correlated group [Bayes factor = 40.97]. We found no CV changes during testing [Correlated, M = 2% + /- 7% SEM, t(8) =.12; p>0.05; Uncorrelated, M = 16% + /- 8% SEM, t(8) = 2.07, p>0.05]. Finally, single-trial analyses agreed with the peak time patterns, with rightward shifts in start and stop times being significant in the correlated group [Start, M = 63% + /- 30% SEM; Stop, M = 47% + /- 19% SEM; ts(8) > 3.5, ps <0.01] and unreliable in the uncorrelated group [Start, M = 6% + /- 4% SEM; Stop, M = 15% + /- 7% SEM; ts(8) <.4, ps >0.05].
 
 Importantly, the magnitude of the peak-time shift in the correlated group was roughly four times larger in this experiment (M = 53%), compared to the prior experiment (M = 13%), and more in line with the shift observed in the 16-to-32 group of Experiment 1 (M = 59%).
 
-## Experiment 5: cross-cue transfer is context-dependent
+### Experiment 5: cross-cue transfer is context-dependent
 
 We hold that the mechanism mediating the transfer evolved to allow individuals to benefit from the frequently co-varying causal contributions of the environment. We tested a final prediction based on the purported functional purpose of this mechanism.
 
@@ -126,7 +166,7 @@ The essential point posed in this example is that, in the environment, common ca
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/38790/elife-38790-fig7-v2.jpg)
 
-**Figure 7.:** n = 20).Panels below each schematic show corresponding normalized response rates during training and during testing in either context. (C) shows percent change in peak time in either context during testing, relative to initial training (±SEM). Stars indicate significance.10.7554/eLife.38790.028Figure 7—source data 1.Figure 7.
+**Figure 7.:** Panels below each schematic show corresponding normalized response rates during training and during testing in either context. (C) shows percent change in peak time in either context during testing, relative to initial training (±SEM). Stars indicate significance.
 
 This hypothesis was confirmed, as shown in Figure 7, which compares responding during initial training to testing in the original training (i.e. no-change) context or the novel (i.e. change) context (Figure 7A and B, bottom panels, respectively). Figure 7C shows percent change in peak times in both contexts during testing, relative to initial training. Short, unchanged cue responding shifted in both contexts. Critically, this transfer was attenuated during testing in the no-change context [No-change context shift, M = 19% + /- 6% SEM, t(19) = 3.01, p<0.01; Change-context shift, M = 46% + /- 12% SEM, t(19) = 4.20, p<.005; No-change context shift vs. Change context shift, t(19) = −2.70, p<0.05; ANOVA: Phase X Test Context, F(2,32) = 11.16, p<0.001; Phase, F(2,32) = 65.25, p<0.001; Cue, F(1,16) = 392.28, p<0.001; Phase X Cue, F(2,32) = 37.33, p<0.001]. Moreover, responding to the long, changed cue also shifted leftward in the no-change context relative to the peak-times in the change context [M = 84% + /- 11% SEM vs. 127% ± 8% SEM from training, respectively; t(19) = −3.31, p<.005], supporting the notion that the temporal expectations for both cues change in a correlated manner.
 
@@ -138,11 +178,11 @@ Start and stop times for the long cue followed a similar pattern. Specifically, 
 
 ## Discussion
 
-## Summary
+### Summary
 
 We proposed and tested predictions made by the common cause hypothesis. This account emphasizes that, in a real-world setting, the durations associated with distinct temporal cues will often covary due to a common underlying cause. We evaluated whether a mechanism has evolved that allows observers to utilize this statistical property in order to adaptively recalibrate expectations. Consistent with this, we found that, when the duration associated with one temporal cue changes, the temporal expectations associated with other cues shift in the same direction (Experiments 1–3). Furthermore, in Experiment 4, we found that, when the durations associated with multiple temporal cues do not covary, the transfer is absent. Finally, in Experiment 5, we confirmed that this transfer is context-dependent. These results have important implications within and beyond the field of timing.
 
-## Model-free vs. Model-based mechanisms?
+### Model-free vs. Model-based mechanisms?
 
 The common cause hypothesis focuses on the function that the transfer we document here serves to the organism in question. However, it does not propose a theoretical mechanism by which the transfer occurs. A variety of mechanisms can potentially account for our results. The topic can broadly be framed in terms of the contrast between ‘model-free’ and ‘model-based’ behavior (Daw et al., 2005; Doll et al., 2012; Gläscher et al., 2010; Petter et al., 2018).
 
@@ -152,13 +192,13 @@ However, dissociating whether rats truly engage in causal and/or statistical inf
 
 Specifically, in our tasks, changing a cue’s duration entailed extinguishing responses emitted at the old reinforced time and reinforcing responses emitted at the new time. If these response-level extinction and reinforcement processes carried over to unchanged cue trials, responding would shift in the direction of the changed cue’s new duration. To assess this, we recommend using a design in which each cue is associated with a different action-outcome contingency (e.g., Cue 1: 8 s/nosepoke; Cue 2: 16 s/lever press). During the change phase, model-free processes would operate on different actions. Therefore, under this account, one would not expect the transfer to occur.
 
-## Implications for theories of timing
+### Implications for theories of timing
 
 As far as we are aware, no traditional timing theory can readily (i.e. without modification) account for our findings. For example, established models of timing at both the cognitive (Gibbon et al., 1984; Killeen and Fetterman, 1988; Kirkpatrick, 2002; Machado et al., 2009) and neural level (Matell and Meck, 2004; Simen et al., 2011) typically assume that the temporal expectations associated with different cues are independent of one another. That is, a change in one cue-duration relationship should have no impact on performance for the others an observer has learned. Our results clearly challenge this assumption.
 
 This is not to say that timing models could not be modified to account for our findings. Our primary point is that the information that guides responding to a temporal signal may be far more complex than often assumed, being guided by a host of variables that go beyond a given cue-duration relationship. This has been proposed previously and is supported by work showing that rodents take non-temporal factors into account when guiding responses in time, such as the probability of receiving reward after a given duration (Balci et al., 2009; De Corte and Matell, 2016a; Gür and Balcı, 2017). Furthermore, during Pavlovian conditioning, the learning-rate for a cue is determined by the relative relationship between the duration separating cue-onset and reward-delivery and the interval separating successive rewards, rather than the cue-reward interval alone (Balsam and Gallistel, 2009; Gallistel and Balsam, 2014; Gallistel and Gibbon, 2000).
 
-## ACT-R pooled memory model
+### ACT-R pooled memory model
 
 There is one model that is important to discuss, as it was able to predict aspects of the data where traditional models failed. Specifically, Taatgen and van Rijn (2011) recently proposed a modified clock-memory model based on the well-established ACT-R cognitive architecture, a theory that has enjoyed wide success at explaining cognitive phenomena across a variety of domains (Anderson, 1996). In their model, the ‘temporal memory’ associated with a cue is determined by a pool of recently experienced intervals. Importantly, this pool consists of intervals associated with all cues an observer has experienced in the recent past. When a cue is presented, the observer retrieves a blend of the durations contained in this pool. More weight is given to the intervals associated with the cue in question, causing the final estimate to fall close to its true duration. However, the intervals associated with other cues also bias the retrieved estimate, due to memory interference. In support of this, they documented cross-cue transfer in humans, similar to the transfer we observed.
 
@@ -168,7 +208,7 @@ Finally, there is a conceptual problem with applying this theory to our data. Sp
 
 Exploring these modifications could potentially provide a bridge between the timing field and research in other cognitive domains in which ACT-R is more often utilized. Importantly, the theory could provide an avenue for mathematically formalizing the common cause hypothesis, which, at present, can only predict whether or in what direction transfer will occur.
 
-## Future directions and beyond timing
+### Future directions and beyond timing
 
 This work opens several avenues for future research on the effects documented here. For example, an important question is whether the predictions of the common cause hypothesis will extend beyond the domain of time alone. We feel that this is highly likely within the context of both prior work and the assumptions of the common cause hypothesis.
 
@@ -184,73 +224,73 @@ Finally, an important question is whether the transfer follows an optimal policy
 
 We begin with a concise overview of our procedures and analyses. We then give more in-depth methods for each experiment and analysis in the ‘detailed experimental procedures’ section below. Datasets and all functions used for analysis are available as source files associated with the manuscript, both in a compiled (i.e. data/code for all experiments) and figure-specific manner.
 
-## Ethics statement
+### Ethics statement
 
 All procedures accorded with Villanova University’s Animal Care and Use Committee guidelines (IACUC, protocol 1880) and the Declaration of Helsinki.
 
-## General method
+### General method
 
 All rats were initially trained on the peak interval procedure under modest food deprivation (85 – 90% of free-feed weight) and in standard operant conditioning chambers, described previously (De Corte and Matell, 2016b). Training progressed through three phases. During an initial ‘training phase’, trials began with the presentation of a cue that predicted reward availability after a certain duration elapsed. Different cues were used, each associated with a different delay to reward (e.g. tone-8s/light-16s). Rats were free to respond at any point when the cue was presented. However, reward was only delivered for a response after the cue’s duration had passed. When a rewarded response occurred, the cue terminated and reward was delivered. Probe trials (30% of trials within a session for each cue) were also included in which the cue was presented for much longer than normal (3–4 times the length of the longest duration in effect), and no reward was provided. Once trained, a ‘change phase’ was implemented. During this phase, the duration associated with one of the cues was changed (i.e. changed cue), and one of the cues was no longer presented (i.e. unchanged cue). Exceptions include the control group of Experiment 1 in which we presented one cue without altering its duration (i.e. ‘exposed’ cue), yet still omitted the other cue (i.e. ‘unexposed’ cue). In Experiment 3’s change phase, the short cue’s duration in the ‘change group’ was shifted to 4 s, whereas in the no-change group, the cue’s duration remained at 8 s. Additionally, a novel cue was added during this phase, signaling reward availability at 8 s (change group) or 4 s (no-change group). In Experiment 4a and 4b, we either changed two cues’ durations (correlated group) or one cue’s duration and left another unchanged (uncorrelated group). Finally, in all experiments, a ‘test phase’ was instituted. This was identical to the change phase. However, we reintroduced the cue that was omitted in the previous phase (20% of trials within a session). No feedback was given during unchanged cue trials. Furthermore, in Experiment 5, all trials were probes, as evaluating shifts in responding for both cues were relevant in that case.
 
-## Data analysis
+### Data analysis
 
 We grouped each rat’s responses into 1 s bins. Then, for each cue, we computed average response rate as a function of time within a trial. These ‘peak functions’ were fit (Matlab curve fitting package, Cambridge, MA) using a five-parameter Gaussian function: Y = B + S * exp((−1/2) * (abs(T - PT)/SP)^K) (Matell et al., 2016; Swanton et al., 2009). B represents the baseline, S is a scale parameter, T is time, PT is the mean, SP is the spread, and K allows the function to fit peaks with varying degrees of kurtosis. The mode of the distribution was taken as the peak time. We also computed start and stop times during single trials as described previously (Church et al., 1994; Gibbon and Church, 1992). Briefly, we fit three flat lines to the rate of responding during individual trials (first low, second high, third low). The left and right sides of the higher line were taken as the start and stop time, respectively.
 
 We compared data from initial training and the test phase with mixed-model ANOVAs. Cue, Phase (training vs. test), and Context (i.e. for Experiment 5; change-context vs. no-change context) served as within-subjects factors. Group and, where applicable, Modality-Duration subgroup (e.g. tone-short/light long vs. tone-long/light short) were used as between-subjects factors. The Modality-Duration relationship did not exert reliable effects in cases where these factors were counterbalanced within an experiment (the four groups in Experiments 1–2). To simplify statistical reporting, these results are not detailed. Planned comparisons were conducted using paired and independent samples t-tests. Critical interactions were evaluated with simple effects. To clearly demarcate planned comparisons from ANOVA statistics, these results are reported using t-values (i.e. taking the square root of the F-statistic and listing the corresponding degrees of freedom). In some cases, we were interested in whether transfer occurred in one group, but not in another (Experiments 1, 3, and 4). To assess evidence in favor of the null hypothesis for the latter case, we used two Bayesian analyses. One utilized an ‘uninformative’ or ‘incremental’ alternative prior (Gallistel, 2009) and provided evidence regarding whether a shift in peak times occurred, per se. The null prior was the marginal likelihood distribution of peak times from the group in question, linearly shifted to have a mean of zero. The second analysis was more specific and compared data from the group that was expected to show a shift to the one that was not. The null prior was the same as described above. However, the alternative prior was the marginal likelihood function of peak times from the group that was expected to show a shift.
 
-## Detailed experimental procedures
+### Detailed experimental procedures
 
-## Subjects and apparatus
+#### Subjects and apparatus
 
 100 naïve, male, Sprague-Dawley rats, who were 2 – 3 months of age at the start of each experiment were used as subjects. Rats were housed in pairs, given free access to water, but food restricted to 85 – 90% of their free-feed weights, adjusted for growth. Colony room lights were set to a 12 hr light-dark cycle. Rats were randomly assigned to experimental groups, and sample sizes for each experiment (10 at a minimum, with a minimum of 5 rats per subgroup) were determined based on prior studies in which a reliable peak time shift of at least 10–20% was assessed (De Corte and Matell, 2016a; Gooch et al., 2007; Matell and Meck, 2004; Matell et al., 2006). Rats in Experiments 1, 2, and 5 were run in 2 hr sessions during the light cycle, while rats in Experiment 3 – 4 were run for 12 hr sessions during their dark cycle to accelerate completion of the experiment, due to the increased complexity of training (see below). Subjects were trained and tested in standard operant conditioning chambers (30.5 × 25.4×30.5 cm; Coulbourn Instruments, Allentown, PA). The chambers’ left and right walls consisted of ventilated Plexiglas. The front, back, and top sides of the chambers were composed of aluminum. Floors consisted of an array of stainless steel bars. Three nosepoke apertures, equipped with photobeam detection circuits, were located on the back wall. An 11 lux houselight and seven-tone audio generator, set to produce 90 dB tones, were located along the back wall of the chambers as well. A pellet dispenser on the front wall was used to deliver 45 mg grain pellets into a food magazine (Bio-Serv, Flemington, NJ). A fan (60 dB) provided ventilation. Stimulus control and data acquisition were accomplished using a standard operant-conditioning control program (Graphic State 4, Coulbourn Instruments, Allentown, PA), with a temporal resolution of 1 ms. Prior to behavioral training, rats were given approximately twenty 45 mg grain pellets in their home cage to acclimate them to the reward used in the chambers.
 
-## Procedure
+#### Procedure
 
 All experiments progressed through five stages: nosepoke training, fixed-interval training, peak-interval training, a ‘change-phase’, and a ‘test-phase’. Each experiment was performed only once.
 
-## Nosepoke training
+#### Nosepoke training
 
 During nosepoke training, rats were trained to insert their snouts into the center nosepoke in order to earn reward. Each response (snout insertion) resulted in reward delivery. To prevent multiple, rapid responses from potentially jamming the pellet dispenser, reward delivery was followed by a 1 s timeout, during which further responses did not activate the feeder. Training continued until rats received 60 rewards for two consecutive sessions.
 
-## Fixed-interval training
+#### Fixed-interval training
 
 During fixed-interval training, trials began with the onset of an individual cue (randomly determined on each trial; specific cues used detailed in individual experiment description). Each cue was associated with a distinct delay to reward availability (e.g. tone-8s/light-16). During all trials, the cue remained on until the first nosepoke response following the passage of the corresponding fixed interval, at which point reinforcement was delivered. There was no programmed consequence for responding before the fixed interval had elapsed. Once a reinforced response occurred, the cue terminated and a uniform, 60 – 80 s inter-trial interval commenced.
 
-## Initial peak-interval training phase
+#### Initial peak-interval training phase
 
 Peak-interval training was identical to FI training with one exception. In addition to fixed-interval trials in which reward was delivered, probe trials (30% of trials for each cue) were introduced, in which reward was omitted and the stimulus was presented for 3 – 4 times the longest duration in effect (e.g. 48 – 64 s if the longest duration was 16 s). Unlike rewarded trials, probe trials terminated independently of responding.
 
-## Change-phase
+#### Change-phase
 
 The change phase was similar to peak-interval training. However, one of the cues was omitted, and the durations associated with the other cue(s) were either altered or left unchanged. The specific manipulations are specified in the individual experiments’ procedural descriptions below.
 
-## Test-phase
+#### Test-phase
 
 The test-phase was identical to the change-phase except we introduced probe trials (20% of all trials within a session) in which the cue that was omitted during the change phase was reintroduced. As ‘unchanged-cue’ trials were always probes, rats were never given feedback about when to respond. The critical question was whether the time of responding for the ‘unchanged cue’ shifted between the peak-interval (i.e., training) phase and the test phase and, if so, in what direction.
 
-## Individual experiment descriptions
+#### Individual experiment descriptions
 
-## Experiment 1
+##### Experiment 1
 
 Rats (n = 30) were trained that a 1 kHz tone and the houselight were associated with 8 s and 16 s durations until availability of reinforcement. During the change phase, the interval associated with one of the cues was changed, and the other cue was not presented. For half the shift rats (n = 10), the interval associated with the short, 8 s cue was changed to 4 s. For the other half of the shift rats (n = 10), the interval associated with the long, 16 s cue was changed to 32 s. In the 16-to-32 group, probe trials were extended to 96–128 s to provide sufficient time to assess peak responding. Control rats (n = 10) were trained and tested identically to those in the 8-to-4 group above. However, during what would have been the change phase, the short cue’s duration was not altered (i.e. remained at 8 s). The modality-duration relationship was counterbalanced in all groups. As discussed further below, response rates during extinction trials were low and more variable than normal during testing. This was particularly problematic in the 8-to-4 group, with some rats showing a brief burst of responding late into a probe trial, presumably in anticipation of trial end. To prevent these trials from interfering with our measures of peak responding, we excluded trials for this group in which the first response did not occur before 32 s had elapsed (i.e. twice the length of the longest duration in effect). This restriction is highly conservative, relative to other methods used to filter non-timed responses from probe trial data (e.g. Church et al., 1994; De Corte and Matell, 2016a).
 
-## Experiment 2
+#### Experiment 2
 
 Rats (n = 10) were trained identically to Experiment 1. However, during the change phase, the short cue’s interval was lengthened to 12 s. The modality-duration relationship was counterbalanced.
 
-## Experiment 3
+#### Experiment 3
 
 Rats (n = 10) were initially trained to associate a continuous, 1 kHz tone with an 8 s (short) fixed interval schedule and a beeping (10 Hz - 50 ms on, 50 ms off) 4 kHz tone signaled a 16 s (long) fixed-interval schedule. During the change phase, rats were split into two groups (n = 5 each). In the first ‘change’ group, the 8 s cue’s duration was decreased to 4 s. We also introduced a novel houselight cue that was associated with an 8 s fixed-interval schedule. In the second ‘no-change’ group, the 8 s cue’s duration was held constant, whereas the novel houselight cue was associated with a 4 s duration.
 
-## Experiment 4
+#### Experiment 4
 
 In Experiment 4a, rats (n = 10) were trained with three cue-interval relationships. A continuous 1 kHz tone signaled a 4 s (short) fixed interval schedule, the houselight signaled an 8 s (medium) fixed-interval schedule, and a beeping (10 Hz - 50 ms on, 50 ms off) 4 kHz tone signaled a 16 s (long) fixed-interval schedule. As in previous experiments, 70% of all trials for each cue were reinforced, and the remaining 30% were non-reinforced. During the change phase, all rats were retrained that the long (beeping tone) cue was lengthened from 16 s to 32 s. Half of the rats were also retrained that the short cue (continuous tone) was lengthened from 4 s to 8 s (correlated group; n = 5), whereas in the other half of the rats, the short cue’s duration was maintained at 4 s (uncorrelated group; n = 5). During the test phase, we presented the two auditory cues as described above, and presented the medium cue (i.e. houselight) as probe trials only (20% of trials during a session). Experiment 4b was identical. However, the short and long cues were the continuous tone and light, respectively, and the medium cue was the beeping tone. There was a further minor difference due to a procedural error. Specifically, probe trials during the training phase were initially 48 – 64 s and then extended to 96 – 128 s during the change phase, whereas in Experiment 4a, probe trials were 96 – 128 s throughout the experiment.
 
-## Experiment 5
+#### Experiment 5
 
 Rats (n = 20) were trained identically to Experiment 1, except that rats were trained in two different contexts. In addition, the probe lengths for all trials were 96 – 128 s. While the composition of the operant chambers were identical for all rats, half the rats (n = 10) were trained in a lab room on the 4th floor, with clay based cat litter (Arm and Hammer Double Duty) serving as ‘bedding’ underneath the metal bars of the operant chamber floor (Context A). These rats were moved via a wheeled cart down a hallway to and from a 4th floor colony room to the testing room on each session. The other half of the rats (n = 10) were housed in a colony room on the 3rd floor, and testing occurred in an adjacent room with wood shaving underneath the chamber floor (Context B). During the change phase, the location of all rats was switched (i.e. rats trained in Context A were retrained in Context B and vice-versa). Furthermore, all rats were presented with only the long cue, and the interval until reinforcement availability was lengthened to 32 s. The test phase was two sessions long. One session took place in the rats’ original training context, whereas the other session took place in the novel context in which rats had learned the long cue’s new duration. During both sessions, rats were presented with both the short and long cues as probe trials only, and each cue was presented with an equal probability. The training/novel context testing order was counter-balanced.
 
-## Parametric analyses
+### Parametric analyses
 
 Each rat’s responses were grouped into 1 s bins and mean response rate as a function of time within a trial was computed. These ‘peak functions’ were fit (Matlab curve fitting package, Cambridge, MA) using a five-parameter Gaussian function: Y = B + S * exp((−1/2) * (abs(T - PT)/SP)^K), as used previously (De Corte and Matell, 2016b; Swanton et al., 2009). B represents the baseline rate of responding, S is a scale parameter, T is time, PT is the mean, SP is the spread, and K allows the function to fit peaks with varying degrees of kurtosis. The mode of the distribution was taken as the peak time.
 
@@ -258,7 +298,7 @@ We also computed start and stop times during single trials as described previous
 
 We compared peak, start, and stop times from initial peak-interval training and the test phase with a mixed-model Analysis of Variance (ANOVA) implemented in SPSS. We matched the number of training and test sessions for data analysis. Cue (short vs. long), Phase (initial peak-interval training vs. test-phase), and Context (Experiment 5; no-change vs. change) served as within-subjects factors. Where applicable, Group (e.g., correlated vs. uncorrelated groups of Experiment 4a/b) and the modality-duration subgroup (e.g., 8-to-4, 16-to-32, 8-to-8 groups of Experiment 1 and the 8-to-12 group of Experiment 2) served as between-subjects factors. We did not observe effects related to Modality-Duration subgroups, in cases where this variable was counterbalanced (Experiments 1 – 2). We used paired and independent samples t-tests for within- and between-group planned comparisons, respectively. Simple effects were used to probe cross-group interactions, which are reported using t-values. An alpha level of. 05 was used across all analyses.
 
-## Bayesian analyses
+### Bayesian analyses
 
 In some cases, we were interested in whether the predicted pattern of transfer was absent in a group of interest. To assess this, we ran two Bayesian analyses to quantify evidence for the null hypothesis (transfer absent) over the alternative hypothesis (transfer occurred). Our procedures follow closely from those described by Gallistel and colleagues (Gallistel, 2009; Kheifets et al., 2017) which we highly recommend for interested readers.
 
@@ -266,17 +306,41 @@ To illustrate our approach, we will describe the methodology used for Experiment
 
 As a control, we also ran a ‘no-change’ group that received identical conditions. However, the short cue’s duration was left at 8 s throughout. This allowed us to assess whether any variables other than shifting the short cue’s duration (e.g. over-exposure to the short cue) could produce an equivalent leftward shift to that seen in the 8-to-4 group.
 
-To assess this, we first computed the marginal likelihood function for the percent change in peak times from training to testing in the no-change group, denoted as:L(θ|D)
+To assess this, we first computed the marginal likelihood function for the percent change in peak times from training to testing in the no-change group, denoted as:
 
-For each rat, we estimated the likelihood of obtaining the observed percent change in peak time if it had been drawn from a normal distribution with a mean θ and a standard deviation equivalent to that seen across rats in the 8-to-4 and no-change groups. Then, we took the log of each rat’s likelihood functions, summed across the corresponding values of θ for each subject, reverted back to a linear scale, and normalized the resulting vector by its sum, such that it integrated to 1. This gave a single, unimodal distribution that gives the estimate of the true posterior distribution from which the data were drawn.
+$$
+L(\theta|D)
+$$
 
-Our null hypothesis was that this distribution had a mean of zero (i.e. no transfer occurred). Therefore, we developed a null prior by following the same procedure described above, yet linearly shifting the data to have mean of zero (i.e. subtracting each value by the sample mean). This distribution is denoted as:π(θ|H~S)where H~S stands for the hypothesis that no shift occurred. The primary question was how much this null distribution overlapped with the group likelihood function, relative to an ‘alternative’ prior distribution, which was constructed based on the assumption that a shift in responding had indeed occurred during testing.
+For each rat, we estimated the likelihood of obtaining the observed percent change in peak time if it had been drawn from a normal distribution with a mean $\theta$ and a standard deviation equivalent to that seen across rats in the 8-to-4 and no-change groups. Then, we took the log of each rat’s likelihood functions, summed across the corresponding values of $\theta$ for each subject, reverted back to a linear scale, and normalized the resulting vector by its sum, such that it integrated to 1. This gave a single, unimodal distribution that gives the estimate of the true posterior distribution from which the data were drawn.
 
-Our two analyses only differed with respect to how this alternative distribution was constructed. In our ‘non-specific shift’ analysis, we tested whether any change in peak time occurred, regardless of whether the shift went in the predicted direction (i.e. leftward) or not. Therefore, we used what is often referred to as an ‘incremental’ alternative prior, denoted as:π(θ|HS)where HS stands for the hypothesis that a shift had occurred. In essence, this is a uniform distribution that was centered around the null prior, yet spread out on either side according to the largest shift seen in the 8-to-4 group and then convolved with the null distribution. Consequently, the distribution assigns a higher prior probability to values that, under the null prior, would be considered unlikely to occur. Therefore, a leftward or rightward peak time shift would cause the alternative distribution to have higher overlap with the group likelihood function, relative to the null prior.
+Our null hypothesis was that this distribution had a mean of zero (i.e. no transfer occurred). Therefore, we developed a null prior by following the same procedure described above, yet linearly shifting the data to have mean of zero (i.e. subtracting each value by the sample mean). This distribution is denoted as:
 
-To quantify the degree of evidence in favor of either hypothesis, we first computed a Bayesian posterior between each prior and the group likelihood function:LθD,H~S/S= L(θ|D)π(θ|H)
+$$
+\pi(\theta|H_{~S})
+$$
 
-This gives the marginal likelihood of each hypothesis, given the data (i.e. L(H|D)). The ratio of the areas for either distribution gives the odds in favor of one hypothesis over another. For simplicity, we computed this as:BF=LH~SDLHSD
+where $H_{~S}$ stands for the hypothesis that no shift occurred. The primary question was how much this null distribution overlapped with the group likelihood function, relative to an ‘alternative’ prior distribution, which was constructed based on the assumption that a shift in responding had indeed occurred during testing.
+
+Our two analyses only differed with respect to how this alternative distribution was constructed. In our ‘non-specific shift’ analysis, we tested whether any change in peak time occurred, regardless of whether the shift went in the predicted direction (i.e. leftward) or not. Therefore, we used what is often referred to as an ‘incremental’ alternative prior, denoted as:
+
+$$
+\pi(\theta|H_{S})
+$$
+
+where $H_{S}$ stands for the hypothesis that a shift had occurred. In essence, this is a uniform distribution that was centered around the null prior, yet spread out on either side according to the largest shift seen in the 8-to-4 group and then convolved with the null distribution. Consequently, the distribution assigns a higher prior probability to values that, under the null prior, would be considered unlikely to occur. Therefore, a leftward or rightward peak time shift would cause the alternative distribution to have higher overlap with the group likelihood function, relative to the null prior.
+
+To quantify the degree of evidence in favor of either hypothesis, we first computed a Bayesian posterior between each prior and the group likelihood function:
+
+$$
+L\thetaD,H_{~S/S}=L(\theta|D)\pi(\theta|H)
+$$
+
+This gives the marginal likelihood of each hypothesis, given the data (i.e. $L(H|D)$). The ratio of the areas for either distribution gives the odds in favor of one hypothesis over another. For simplicity, we computed this as:
+
+$$
+BF=\frac{LH_{~S}D}{LH_{S}D}
+$$
 
 The higher the evidence in favor of the null hypothesis, the higher the Bayes factor.
 

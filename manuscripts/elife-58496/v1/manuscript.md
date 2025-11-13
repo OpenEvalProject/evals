@@ -25,33 +25,139 @@ Academic publishing has grappled for decades with hard-to-quantify concerns abou
 
 ## Results
 
-## Country level bioRxiv participation over time
+### Country level bioRxiv participation over time
 
 We retrieved author data for 67,885 preprints for which the most recent version was posted before 2020. First, we attributed each preprint to a single country, using the affiliation of the last individual in the author list, considered by convention in the life sciences to be the ‘senior author’ who supervised the work (see Methods). North America, Europe and Australia dominate the top spots (Figure 1a): 26,598 manuscripts (39.2%) have a last author from the United States (US), followed by 7151 manuscripts (10.5%) from the United Kingdom (UK; Figure 1b), though China (4.1%), Japan (1.9%) and India (1.8%) are the sources of more than 1200 preprints each (Table 1). Brazil, with 704 manuscripts, has the 15th-most preprints and is the first South American country on the list, followed by Argentina (163 preprints) in 32nd place. South Africa (182 preprints) is the first African country on the list, in 29th place, followed by Ethiopia (57 preprints) in 42nd place (Figure 1—source data 1). It is noticeable that South Africa and Ethiopia both have high opt-in rates for a program operated by PLOS journals that enabled submissions to be sent directly to bioRxiv (PLOS, 2019). We found similar results when we looked at which countries were most highly represented based on authorship at any position (Table 1). Overall, US authors appear on the most bioRxiv preprints – 34,676 manuscripts (51.1%) include at least one US author (Figure 1c).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58496/elife-58496-fig1-v1.jpg)
+
+**Figure 1.:** (a) A heat map indicating the number of preprints per country, based on the institutional affiliation of the senior author. The color coding uses a log scale. (b) The total preprints attributed to the seven most prolific countries. The x-axis indicates total preprints listing a senior author from a country; the y-axis indicates the country. The ‘Other’ category includes preprints from all countries not listed in the plot. (c) Similar to panel b, but showing the total preprints listing at least one author from the country in any position, not just the senior position. (d) Proportion of total senior-author preprints from each country (y-axis) over time (x-axis), starting in November 2013 and continuing through December 2019. Each colored segment indicates the proportion of total preprints attributed to a single country (using same color scheme as panels (b and c), as of the end of the month indicated on the x-axis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58496/elife-58496-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) shows the average number of authors per paper over time. The x-axis indicates the year; the y-axis indicates the harmonic mean authors per preprint. Each point indicates the average of papers posted in a single month; the blue line indicates the six-month moving average. (b) illustrates the number of countries per preprint, over time. The x-axis indicates time; the y-axis indicates the arithmetic mean countries per preprint. Each point indicates the average unique countries found in all preprints posted in a single month. The blue line indicates the six-month moving average.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58496/elife-58496-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** This bar plot compares the observed prevalence of preprints from countries split in two groups: the 27 most prolific countries, and the remaining 148 countries for which at least one bioRxiv author was observed. The red bars indicate the proportion of preprints from countries in each group, out of all preprints with a country assignment. The blue bars indicate the proportion of preprints from countries in each group, out of a random sample of 325 preprints with no country assignment. The error bars indicate the margin of error at a 95% confidence interval.
+
+**Table 1.**
+ Preprints per country.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Preprints, senior author (proportion)</th>
+      <th>Preprints, any author (proportion)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>United States</td>
+      <td>26,598 (39.2%)</td>
+      <td>34,676 (51.1%)</td>
+    </tr>
+    <tr>
+      <td>United Kingdom</td>
+      <td>7151 (10.5%)</td>
+      <td>11,578 (17.1%)</td>
+    </tr>
+    <tr>
+      <td>(Unknown)</td>
+      <td>4985 (7.3%)</td>
+      <td>17,635 (26.0%)</td>
+    </tr>
+    <tr>
+      <td>Germany</td>
+      <td>3668 (7.3%)</td>
+      <td>7157 (10.5%)</td>
+    </tr>
+    <tr>
+      <td>France</td>
+      <td>2863 (4.2%)</td>
+      <td>5218 (7.7%)</td>
+    </tr>
+    <tr>
+      <td>China</td>
+      <td>2778 (4.1%)</td>
+      <td>4609 (6.8%)</td>
+    </tr>
+    <tr>
+      <td>Canada</td>
+      <td>2380 (3.5%)</td>
+      <td>4409 (6.5%)</td>
+    </tr>
+    <tr>
+      <td>Australia</td>
+      <td>1755 (2.6%)</td>
+      <td>3260 (4.8%)</td>
+    </tr>
+    <tr>
+      <td>Switzerland</td>
+      <td>1364 (2.0%)</td>
+      <td>2779 (4.1%)</td>
+    </tr>
+    <tr>
+      <td>Netherlands</td>
+      <td>1291 (1.9%)</td>
+      <td>2764 (4.1%)</td>
+    </tr>
+    <tr>
+      <td>Japan</td>
+      <td>1263 (1.9%)</td>
+      <td>2287 (3.4%)</td>
+    </tr>
+    <tr>
+      <td>India</td>
+      <td>1212 (1.8%)</td>
+      <td>1769 (2.6%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_All 11 countries with more than 1000 preprints attributed to a senior author affiliated with that country. The percentages in the ‘Preprints, any author’ column sum to more than 100% because preprints may be counted for more than one country. A full list of countries is provided in Figure 1—source data 1._
+
 Over time, the country-level proportions on bioRxiv have remained remarkably stable (Figure 1d), even as the number of preprints grew exponentially. For example, at the end of 2015 Germany accounted for 4.7% of bioRxiv’s 2460 manuscripts, and at the end of 2019 it was responsible for 5.4% of 67,885 preprints. However, the proportion of preprints from countries outside the top seven contributing countries is growing slowly (Figure 1d): from 19.4% at the end of 2015 to 23.1% at the end of 2019, by which time bioRxiv was hosting preprints from senior authors affiliated with 136 countries.
 
-## Preprint adoption relative to overall scientific output
+### Preprint adoption relative to overall scientific output
 
 We noted that some patterns may be obscured by countries that had hundreds or thousands of times as many preprints as other countries, so we re-evaluated these ranks after adjusting for overall scientific output (Figure 2a). The corrected measurement, which we call ‘bioRxiv adoption,’ is the proportion of preprints from each country divided by the proportion of worldwide research outputs from that country (see Methods). The US posted 26,598 preprints and published about 3.5 million citable documents, for a bioRxiv adoption score of 2.31 (Figure 2b). Nine of the 12 countries with adoption scores above 1.0 were from North America and Europe, but Israel has the third-highest score (1.67) based on its 640 preprints. Ethiopia has the 10th-highest bioRxiv adoption (1.08): though only 57 preprints list a senior author with an affiliation in Ethiopia, the country had a total of 15,820 citable documents published between 2014 and 2019 (Figure 2—source data 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/58496/elife-58496-fig2-v1.jpg)
 
-**Figure 2.:** (a) Correlation between two scientific output metrics. Each point is a country; the x-axis (log scale) indicates the total citable documents attributed to that country from 2014 to 2019, and the y-axis (also log scale) indicates total senior-author preprints attributed to that country overall. The red line demarcates a ‘bioRxiv adoption’ score of 1.0, which indicates that a country’s share of bioRxiv preprints is identical to its share of general scholarly outputs. Countries to the left of this line have a bioRxiv adoption score greater than 1.0. A score of 2.0 would indicate that its share of preprints is twice as high as its share of other scholarly outputs (See Discussion for more about this measurement.) (b) The countries with the 10 highest and 10 lowest bioRxiv adoption scores. The x-axis indicates each country’s adoption score, and the y-axis lists each country in order. All panels include only countries with at least 50 preprints.Figure 2—source data 1.Each row represents a single country, sorted in descending order by the ‘citable_total’ and ‘senior_author_preprints’ columns. The ‘alpha2’ column indicates the two-letter country code defined in ISO 3166–1. ‘country’ indicates the country name as recorded in the SCImago dataset. The ‘y2014’ through ‘y2018’ columns list the total number of citable documents attributed to that country in the SCImago dataset for the year specified. ‘citable_total’ indicates the sum of all citable documents from that country from 2014 through 2018. ‘senior_author_preprints’ lists the number of senior-author preprints attributed to that country from 2013 through 2019.
+**Figure 2.:** (a) Correlation between two scientific output metrics. Each point is a country; the x-axis (log scale) indicates the total citable documents attributed to that country from 2014 to 2019, and the y-axis (also log scale) indicates total senior-author preprints attributed to that country overall. The red line demarcates a ‘bioRxiv adoption’ score of 1.0, which indicates that a country’s share of bioRxiv preprints is identical to its share of general scholarly outputs. Countries to the left of this line have a bioRxiv adoption score greater than 1.0. A score of 2.0 would indicate that its share of preprints is twice as high as its share of other scholarly outputs (See Discussion for more about this measurement.) (b) The countries with the 10 highest and 10 lowest bioRxiv adoption scores. The x-axis indicates each country’s adoption score, and the y-axis lists each country in order. All panels include only countries with at least 50 preprints.
 
 By comparison, some countries are present on bioRxiv at much lower frequencies than would be expected, given their overall participation in scientific publishing (Figure 2b): Turkey published 249,086 citable documents from 2014 through 2019 but was the senior author on only 80 preprints, for a bioRxiv adoption score of 0.10. Russia (283 preprints), Iran (123 preprints) and Malaysia (78 preprints) all have adoption scores below 0.18. The largest country with a low adoption score is China (3,176,571 citable documents; 2778 preprints; bioRxiv adoption = 0.26), which published more than 15% of the world’s citable documents (according to SCImago) but was the source of only 4.1% of preprints (Figure 2a).
 
-## Patterns and imbalances in international collaboration
+### Patterns and imbalances in international collaboration
 
 After analyzing preprints using senior authorship, we also evaluated interactions within manuscripts to better understand collaborative patterns found on bioRxiv. We found the number of authors per paper increased from 3.08 in 2014 to 4.56 in 2019 (Figure 1—figure supplement 1). The monthly average authors per preprint has increased linearly with time (Pearson’s r = 0.949, p=8.73 × 10−38), a pattern that has also been observed, at a less dramatic rate, in published literature (Adams et al., 2005; Wuchty et al., 2007; Bordons et al., 2013). Examining the number of countries represented in each preprint (Figure 1—figure supplement 1), we found that 24,927 preprints (36.7%) included authors from two or more countries; 3041 preprints (4.5%) were from four or more countries, and one preprint, ‘Fine-mapping of 150 breast cancer risk regions identifies 178 high confidence target genes,’ listed 343 authors from 38 countries, the most countries listed on any single preprint. The mean number of countries represented per preprint is 1.612, which has remained fairly stable since 2014 despite steadily growing author lists overall (Figure 1—figure supplement 1).
 
 We then looked at countries appearing on at least 50 international preprints to examine basic patterns in international collaboration. We found that a number of countries with comparatively low output contributed almost exclusively to international collaborations: for example, of the 76 preprints that had an author with an affiliation in Vietnam, 73 (96%) had an author from another country. Upon closer examination, we found these countries were part of a larger group, which we call ‘contributor countries,’ that (1) appear mostly on preprints with authors from other countries, but (2) seldom as the senior author. For this analysis, we defined a contributor country as one that has contributed to at least 50 international preprints but appears in the senior author position of less than 20% of them. (We excluded countries with less than 50 preprints to minimize the effect of dynamics that could be explained by countries with just one or two labs that frequently worked with international collaborators.) 17 countries met these criteria (Figure 3—figure supplement 1): for example, of the 84 international preprints that had an author with an affiliation in Uganda, only 5 (6%) had an author from Uganda in the senior author position. This figure was also less than 12% for Vietnam, Tanzania, Slovakia and Indonesia: by comparison, the figure for the US was 48.7% (Figure 3a).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/58496/elife-58496-fig3-v1.jpg)
+
+**Figure 3.:** (a) Bar plot indicating the international senior author rate (y-axis) by country (x-axis) – that is, of all international preprints with a contributor from that country, the percentage of them that include a senior author from that country. All 17 contributor countries are listed in red, with the five countries with the highest senior-author rates (in grey) for comparison. (b) A bar plot with the same y-axis as panel (a). The x-axis indicates the international collaboration rate, or the proportion of preprints with a contributor from that country that also include at least one author from another country. (c) is a bar plot indicating the total international preprints featuring at least one author from that country (the median value per country is 19). (d) On the left are the 17 contributor countries. On the right are the countries that appear in the senior author position of preprints that were co-authored with contributor countries. (Supervising countries with 25 or fewer preprints with contributor countries were excluded from the figure.) The width of the ribbons connecting contributor countries to senior-author countries indicates the number of preprints supervised by the senior-author country that included at least one author from the contributor country. Statistically significant links were found between four combinations of supervising countries and contributors: Australia and Bangladesh (Fisher’s exact test, q = 1.01 × 10−11); the UK and Thailand (q = 9.54 × 10−4); the UK and Greece (q = 6.85 × 10−3); and Australia and Vietnam (q = 0.049). All p-values reflect multiple-test correction using the Benjamini–Hochberg procedure.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58496/elife-58496-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** World map indicating (in red) the location of contributor countries, defined as all countries listed on at least 50 international preprints, but as senior author on less than 20% of them.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/58496/elife-58496-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Each point represents a country; the red points indicate those in the ‘contributor country’ category. Blue lines indicate lines of best fit for each plot, though they are unrelated to the Spearman correlations reported for these relationships. (a) A scatter plot showing the relationship (Spearman’s ρ = 0.781, p=1.09 × 10−14) between a country’s total international preprints (x-axis; log scale) and the proportion of those preprints for which they are the senior author (y-axis). (b) A scatter plot showing the relationship (Spearman’s ρ = −0.578, p=3.68 × 10−7) between a country’s total international preprints (x-axis; log scale) and the proportion of preprints with a contributor from that country that also include at least one contributor from another country (y-axis). (c) A scatter plot showing the relationship (Spearman’s ρ = −0.572, p=5.32 × 10−7) between the proportion of preprints with a contributor from that country that also include at least one contributor from another country (x-axis) and the proportion of those preprints for which that country appears in the senior author position (y-axis).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/58496/elife-58496-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** This figure is an alternative presentation of the same data as the three panels in Figure 3—figure supplement 2. Each point represents a country, and the size of the point indicates the total international preprints associated with that country. The x-axis indicates the proportion of preprints with a contributor from that country that also include at least one contributor from another country. The y-axis indicates the proportion of those preprints for which that country appears in the senior author position.
+
 In addition to a high percentage of international collaborations and a low percentage of senior-author preprints, another characteristic of contributor countries is a comparatively low number of preprints overall. To define this subset of countries more clearly, we examined whether there was a relationship between any of the three factors we identified across all countries with at least 50 international preprints. We found consistent patterns for all three (see Methods). First, countries with fewer international collaborations also tend to appear as senior author on a smaller proportion of those preprints (Figure 3—figure supplement 2a). Second, we also observed a negative correlation between total international collaborations and international collaboration rate – that is, the proportion of preprints a country contributes to that include at least one contributor from another country (Figure 3—figure supplement 2b). This indicates that countries with mostly international preprints (Figure 3b) also tended to have fewer international collaborations (Figure 3c) than other countries. Third, we found a negative correlation between international collaboration rate and the proportion of international preprints for which a country appears as senior author (Figure 3—figure supplement 2c), demonstrating that countries that appear mostly on international preprints (Figure 3b) are less likely to appear as senior author of those preprints (Figure 3). Similar patterns have been observed in previous studies: González-Alcaide et al., 2017 found countries ranked lower on the Human Development Index participated more frequently in international collaborations, and a review of oncology papers found that researchers from low- and middle-income countries collaborated on randomized control trials, but rarely as senior author (Wong et al., 2014).
 
 After generating a list of preprints with authors from contributor countries, we examined which countries appeared most frequently in the senior author position of those preprints (Figure 3d). Among the 2133 preprints with an author from a contributor country, 494 (23.2%) had a senior author listing an affiliation in the US (Figure 3—source data 1). The UK was listed as senior author on the next-most preprints with contributor countries, at 318 (14.9%), followed by Germany (4.2%) and France (3.1%). Given the large differences in preprint authorship between countries, we tested which of these senior-author relationships was disproportionately large. Using Fisher’s exact test (see Methods), we found four links between contributor countries and senior-author countries that were significant (Figure 3—source data 2). The strongest link is between Bangladesh and Australia: of the 82 international preprints with an author from Bangladesh, 22 list a senior author with an affiliation in Australia. Authors in Vietnam appear with disproportionate frequency on preprints with a senior author in Australia as well (9 of 67 preprints). The other two links are to senior authors in the UK, with contributing authors from Thailand (50 of 187 preprints) and Greece (41 of 155 preprints).
 
-## Differences in preprint downloads and publication rates
+### Differences in preprint downloads and publication rates
 
 After quantifying which countries were posting preprints, we also examined whether there were differences in preprint outcomes between countries. We obtained monthly download counts for all preprints, as well as publication status, the publishing journal, and date of publication for all preprints flagged as ‘published’ on bioRxiv (see Methods). We then evaluated country-level patterns for the 36 countries with at least 100 senior-author preprints.
 
@@ -59,17 +165,17 @@ When evaluating downloads per preprint, we used only download numbers from each 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/58496/elife-58496-fig4-v1.jpg)
 
-**Figure 4.:** All panels include countries with at least 100 senior-author preprints. (a) A box plot indicating the number of downloads per preprint for each country. The dark line in the middle of the box indicates the median, and the ends of each box indicate the first and third quartiles, respectively. ‘Whiskers’ and outliers were omitted from this plot for clarity. The red line indicates the overall median. (b) A plot showing the relationship (Spearman’s ρ = 0.485, p=0.00274) between total preprints and downloads. Each point represents a single country. The x-axis indicates the total number of senior-author preprints attributed to the country. The y-axis indicates the median number of downloads for those preprints. (c) A plot showing the relationship (Spearman’s ρ = 0.777, p=2.442 × 10−8) between downloads and publication rate. Each point represents a single country. The x-axis indicates the median number of downloads for all preprints listing a senior author affiliated with that country. The y-axis indicates the proportion of preprints posted before 2019 that have been published. (d) A bar plot indicating the proportion of preprints posted before 2019 that are now flagged as ‘published’ on the bioRxiv website. The x-axis (and color scale) indicates the proportion, and the y-axis lists each country. The red line indicates the overall publication rate.Figure 4—source data 1.Each row represents a country, sorted in descending order by the ‘published’ and ‘total’ columns. The ‘country’ column indicates the country name as recorded in the ROR dataset. ‘total’ lists the number of preprints last updated prior to 2019 that list a senior author who declared an affiliation in the specified country. ‘published’ lists, of the preprints counted in the ‘total’ column, the number that are listed as published on the bioRxiv website.Figure 4—source data 2.Each row represents a country, sorted alphabetically. The ‘doi_rate’ field lists the percentage of published papers from that country issued a Digital Object Identifier (DOI), according to Boudry and Chartron, 2017. The ‘pub_rate’ field lists the proportion of preprints from that country posted before 2019 that have been published.
+**Figure 4.:** All panels include countries with at least 100 senior-author preprints. (a) A box plot indicating the number of downloads per preprint for each country. The dark line in the middle of the box indicates the median, and the ends of each box indicate the first and third quartiles, respectively. ‘Whiskers’ and outliers were omitted from this plot for clarity. The red line indicates the overall median. (b) A plot showing the relationship (Spearman’s ρ = 0.485, p=0.00274) between total preprints and downloads. Each point represents a single country. The x-axis indicates the total number of senior-author preprints attributed to the country. The y-axis indicates the median number of downloads for those preprints. (c) A plot showing the relationship (Spearman’s ρ = 0.777, p=2.442 × 10−8) between downloads and publication rate. Each point represents a single country. The x-axis indicates the median number of downloads for all preprints listing a senior author affiliated with that country. The y-axis indicates the proportion of preprints posted before 2019 that have been published. (d) A bar plot indicating the proportion of preprints posted before 2019 that are now flagged as ‘published’ on the bioRxiv website. The x-axis (and color scale) indicates the proportion, and the y-axis lists each country. The red line indicates the overall publication rate.
 
 Next, we examined country-level publication rates by assigning preprints posted prior to 2019 to countries using the affiliation of the senior author, then measuring the proportion of those preprints flagged as ‘published’ on the bioRxiv website. Overall, 62.6% of pre-2019 preprints were published (Figure 4—source data 1). Ireland had the highest publication rate (49/67 = 73.1%; Figure 4d), followed by New Zealand (100/142; 70.4%) and Switzerland (505/724; 69.8%). China (588/1355, 43.4%) had the lowest publication rate, with Iran and Taiwan also in the bottom three.
 
-## Preprint publication patterns between countries and journals
+### Preprint publication patterns between countries and journals
 
 After evaluating the country-level publication rates, we examined which journals were publishing these preprints and whether there were any meaningful country-level patterns (Figure 5). We quantified how many senior-author preprints from each country were published in each journal and used the χ² test (with Yates’s correction for continuity) to examine whether a journal published a disproportionate number of preprints from a given country, based on how many preprints from that country were published overall. To minimize the effect of journals with differing review times, we limited the analysis to preprints posted before 2019, resulting in a total of 23,102 published preprints.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/58496/elife-58496-fig5-v1.jpg)
 
-**Figure 5.:** (a) A heat map indicating all disproportionately strong (q < 0.05) links between countries and journals, for journals that have published at least 15 preprints from that country. Columns each represent a single country, and rows each represent a single journal. Colors indicate the raw number of preprints published, and the size of each square indicates the statistical significance of that link—larger squares represent smaller q-values. See Figure 5—source data 1 for the results of each statistical test. (b) A bar plot indicating the degree to which US preprints are over- or under-represented in a journal’s published bioRxiv preprints. The y-axis lists all the journals that published at least 15 preprints with a US senior author. The x-axis indicates the overrepresentation of US preprints compared to the expected number: for example, a value of ‘0%’ would indicate the journal published the same proportion of US preprints as all journals combined. A value of ‘100%’ would indicate the journal published twice as many U. preprints as expected, based on the overall representation of the US among published preprints. Journals for which the difference in representation was less than 15% in either direction are not displayed. The red bars indicate which of these relationships were significant using the Benjamini–Hochberg-adjusted results from χ² tests shown in panel A.Figure 5—source data 1.Each row represents a combination of country and journal, sorted in ascending order using the ‘padj’ column, then descending order using the ‘preprints’ column. ‘country’ indicates the name of a country as recorded in the ROR dataset. ‘journal’ indicates the name of a journal that has published preprints from the specified country. ‘preprints’ indicates the number of preprints last updated prior to 2019 that were published by the specified journal that list a senior author affiliated with the specified country. ‘expected’ indicates the number of preprints we would expect the specified journal to have published from the specified country, if the country and journal both published the same number of papers, but the journal’s publications mirrored the country-level proportions observed in published bioRxiv preprints overall. ‘p’ indicates the p-value of a chi-squared test as described in the ‘Methods’ section. ‘padj’ lists the p-value from the ‘p’ column, adjusted to control the false-discovery rate using the Benjamini–Hochberg procedure. ‘journaltotal’ lists the total preprints published by the specified journal that were last updated on bioRxiv prior to 2019. ‘countrytotal’ lists the total preprints posted to bioRxiv prior to 2019 that list a senior author affiliated with the specified country.
+**Figure 5.:** (a) A heat map indicating all disproportionately strong (q < 0.05) links between countries and journals, for journals that have published at least 15 preprints from that country. Columns each represent a single country, and rows each represent a single journal. Colors indicate the raw number of preprints published, and the size of each square indicates the statistical significance of that link—larger squares represent smaller q-values. See Figure 5—source data 1 for the results of each statistical test. (b) A bar plot indicating the degree to which US preprints are over- or under-represented in a journal’s published bioRxiv preprints. The y-axis lists all the journals that published at least 15 preprints with a US senior author. The x-axis indicates the overrepresentation of US preprints compared to the expected number: for example, a value of ‘0%’ would indicate the journal published the same proportion of US preprints as all journals combined. A value of ‘100%’ would indicate the journal published twice as many U. preprints as expected, based on the overall representation of the US among published preprints. Journals for which the difference in representation was less than 15% in either direction are not displayed. The red bars indicate which of these relationships were significant using the Benjamini–Hochberg-adjusted results from χ² tests shown in panel A.
 
 After controlling the false-discovery rate using the Benjamini–Hochberg procedure, we found 63 significant links between journals and countries, of journal–country links with at least 15 preprints (Figure 5a). 11 countries had links to journals that published a disproportionate number of their preprints, but the US had more links than any other country. 33 of the 63 significant links were between a journal and the US: the US is listed as the senior author on 41.7% of published preprints, but accounts for 74.5% of all bioRxiv preprints published in Cell, 72.7% of preprints published in Science, and 61.0% of those published in Proceedings of the National Academy of Sciences (PNAS) (Figure 5b).
 
@@ -91,11 +197,11 @@ In summary, we find country-level participation on bioRxiv differs significantly
 
 ## Methods
 
-## Ethical statement
+### Ethical statement
 
 This study was submitted to the University of Minnesota Institutional Review Board (study #00008793), which determined the work did not qualify as human subjects research and did not require IRB oversight.
 
-## Preprint metadata
+### Preprint metadata
 
 We used existing data from the Rxivist web crawler (Abdill and Blekhman, 2019c) to build a list of URLs for every preprint on bioRxiv.org. We then used this list as the input for a new tool that collects author data: we recorded a separate entry for each author of each preprint, and stored name, email address, affiliation, ORCID identifier, and the date of the most recent version of the preprint that has been indexed in the Rxivist database. While the original web crawler performs author consolidation during the paper index process (i.e. ‘Does this new paper have any authors we already recognize?’), this new tool creates a new entry for each preprint; we make no connections for authors across preprints in this analysis, and infer author country separately for every author of every paper. It is also important to note that for longitudinal analyses of preprint trends, each preprint is associated with the date on its most recent version, which means a paper first posted in 2015, but then revised in 2017, would be listed in 2017. The final version of the preprint metadata was collected in the final weeks of January 2020—because preprints were filtered using the most recent known date, those posted before 2020, but revised in the first month of 2020, were not included in the analysis. In addition, 95 preprints were excluded because the bioRxiv website repeatedly returned errors when we tried to collect the metadata, leaving a total of 67,885 preprints in the analysis. Of these, there were 2409 manuscripts (3.6%) for which we were unable to scrape affiliation data for at least one author, including 137 preprints with no affiliation information for any author.
 
@@ -103,7 +209,7 @@ bioRxiv maintains an application programmatic interface (API) that provides mach
 
 All data on published preprints was pulled directly from bioRxiv. However, it is also possible, if not likely, that the publication of many preprints goes undetected by its system. Fraser et al., 2020 developed a method of searching for published preprints in Scopus and Crossref databases and found most had already been picked up by bioRxiv’s detection process, though bioRxiv states that preprints published with new titles or authors can go undetected (https://www.biorxiv.org/about-biorxiv), and preliminary data suggests this may affect thousands of preprints (Abdill and Blekhman, 2019b). How these effects differ by country of origin remains unclear—perhaps authors from some countries are more likely to have their titles changed by journal editors, for example—but bias at the country level may also be more pronounced for other reasons. The assignment of Digital Object Identifiers (DOIs) to papers provides a useful proxy for participation in the ‘western’ publishing system. Each published bioRxiv preprint is listed with the DOI of its published version, but DOI assignment is not yet universally adopted. Boudry and Chartron, 2017 examined papers from 2015 indexed by PubMed and found DOI assignment varied widely based on the country of the publisher. 96% of publications in Germany had a DOI, for example, plus 98% of UK publications and more than 99% of Brazilian publications. However, only 31% of papers published in China had DOIs, and just 2% (33 out of 1582) of papers published in Russia. There are 45 countries that overlap between our analysis and that of Boudry and Chartron, 2017. Of these, we found a modest correlation (Spearman's rho = 0.295, p=0.0489) between a country’s preprint publication rate and the rate at which publishers in that country assigned DOIs (Figure 4—source data 2). This indicates that countries with higher rates of DOI issuance (for publications dating back to 1955) also tend to have higher observed rates of preprint publication.
 
-## Attribution of preprints
+### Attribution of preprints
 
 Throughout the analysis, we define the ‘senior author’ for each preprint as the author appearing last in the author list, a longstanding practice in biomedical literature (Riesenberg, 1990; Buehring et al., 2007) corroborated by a 2003 study, which found that 91% of publications indicated a corresponding author that was in the first- or last-author position (Mattsson et al., 2011). Among the 59,562 preprints for which the country was known for the first and last author, 7965 (13.4%) preprints included a first author associated with a different country than the senior author.
 
@@ -111,29 +217,29 @@ When examining international collaboration, we also considered whether more nuan
 
 When computing the average authors per paper, the harmonic mean is used to capture the average ‘contribution’ of an author, as in Glänzel and Schubert, 2005—in short, this shows that authors were responsible for about one-third of a preprint in 2014, but less than one-fourth of a preprint as of 2019.
 
-## Data collection and management
+### Data collection and management
 
 All bioRxiv metadata was collected in a relational PostgreSQL database (https://www.postgresql.org). The main table, ‘article_authors,’ recorded one entry for each author of each preprint, with the author-level metadata described above. Another table associated each unique affiliation string with an inferred institution (see Institutional affiliation assignment below), with other tables linking institutions to countries and preprints to publications. (See the repository storing the database snapshot for a full description of the database schema.) Analysis was performed by querying the database for different combinations of data and outputting them into CSV files for analysis in R (R Core Team, 2019). For example, data on ‘authors per preprint’ was collected by associating all the unique preprints in the ‘article_authors’ table with a count of the number of entries in the table for that preprint. Similar consolidation was done at many other levels as well—for example, since each author is associated with an affiliation string, and each affiliation string is associated with an institution, and each institution is associated with a country, we can build queries to evaluate properties of preprints grouped by country.
 
-## Contributor countries
+### Contributor countries
 
 The analysis described in the ‘Collaboration’ section measured correlations between three country-level descriptors, calculated for all countries that contributed to more than 50 international preprints:
 
 We examined disproportionate links between contributor countries and senior-author countries by performing one-tailed Fisher’s exact tests between each contributor country and each senior-author country, to test the null hypothesis that there is no association between the classifications ‘preprints with an author from the contributor country’ and preprints with a senior author from the senior-author country.’ To minimize the effect of partnerships between individual researchers affecting country-level analysis, the senior-author country list included only countries with at least 25 senior-author preprints that include a contributor country, and we only evaluated links between contributor countries and senior-author countries that included at least five preprints. We determined significance by adjusting p-values using the Benjamini–Hochberg procedure.
 
-## BioRxiv adoption
+### BioRxiv adoption
 
 When evaluating bioRxiv participation, we corrected for overall research output, as documented by SCImago Journal and Country Rank portal, which counts articles, conference papers, and reviews in Scopus-indexed journals (https://www.scimagojr.com; https://www.scimagojr.com/help.php). We added the totals of these ‘citable documents’ from 2014 through 2019 for each countries with at least 3000 citable documents and 50 preprints. We used these totals to generate a productivity-adjusted score, termed ‘bioRxiv adoption,’ by taking the proportion of preprints with a senior author from that country and dividing it by that country’s proportion of citable documents from 2014 to 2019. While SCImago is not specific to life sciences research, it was chosen over alternatives because it had consistent data for all countries in our dataset. A shortcoming of combining data SCImago and the Research Organization Registry (see below) is that they use different criteria for the inclusion of separate states. In most cases, SCImago provides more specific distinctions than ROR: for example, Puerto Rico is listed separately from the US in the SCImago dataset, but not in the ROR dataset. We did not alter these distinctions—as a result, nations with disputed or complex borders may have slightly inflated bioRxiv adoption scores. For example, preprints attributed to institutions in Hong Kong are counted in the total for China, but the 108,197 citable documents from Hong Kong in the SCImago dataset are not included in the China total.
 
-## Visualization
+### Visualization
 
 All figures were made with R and the ggplot2 package (Wickham, 2016), with colors from the RcolorBrewer package (Neuwirth, 2014; Woodruff and Brewer, 2017). World maps were generated using the Equal Earth projection (Šavrič et al., 2019) and the rnaturalearth R package (South, 2017), following the procedure described in Le et al., 2020. Code to reproduce all figures is available on GitHub (Abdill, 2020; https://github.com/blekhmanlab/biorxiv_countries; copy archived at https://github.com/elifesciences-publications/biorxiv_countries).
 
-## Institutional affiliation assignment
+### Institutional affiliation assignment
 
 We used the Research Organization Registry (ROR) API to translate bioRxiv affiliation strings into canonical institution identities (Research Organization Registry, 2019). We launched a local copy of the database using their included Docker configuration and linked it to our web crawler’s container, to allow the two applications to communicate. We then pulled a list of every unique affiliation string observed on bioRxiv and submitted them to the ROR API. We used the response’s ‘chosen’ field, indicating the ROR application’s confidence in the assignment, to dictate whether the assignment was recorded. Any affiliation strings that did not have an assigned result were put into a separate ‘unknown’ category. As with any study of this kind, we are limited by the quality of available metadata. Though we are able to efficiently scrape data from bioRxiv, data provided by authors can be unreliable or ambiguous. There are 465 preprints, for example, in which multiple or all authors on a paper are listed with the same ORCID, ostensibly a unique personal identifier, and there are hundreds of preprints for which authors do not specify any affiliation information at all, including in the PDF manuscript itself. We are also limited by the content of the ROR system (https://ror.org/about/): Though there are tens of thousands of institutions in the dataset and its basis, the Global Research Identifier Database (https://www.grid.ac/stats), has extensive coverage around the world, the translation of affiliation strings is likely more effective for regions that have more extensive coverage.
 
-## Country level accuracy of ROR assignments
+### Country level accuracy of ROR assignments
 
 Across 67,885 total preprints, we indexed 488,660 total author entries, one for each author of each preprint. These entries each included one of 136,456 distinct affiliation strings, which we processed using the ROR API before making manual corrections.
 

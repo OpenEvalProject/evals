@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01k97gp34 Department of Chemistry and Chemical Biology, TU Dortmund University Dortmund Germany
-2. https://ror.org/05b8d3w18 Max-Planck Institute of Molecular Cell Biology and Genetics Dresden Germany
+1. Department of Chemistry and Chemical Biology, TU Dortmund University Dortmund Germany ([ROR:01k97gp34](https://ror.org/01k97gp34))
+2. Max-Planck Institute of Molecular Cell Biology and Genetics Dresden Germany ([ROR:05b8d3w18](https://ror.org/05b8d3w18))
 
 † Corresponding author
 
@@ -33,6 +33,30 @@ In this work, we demonstrate that coacervate microdroplets formed from a ligase 
 
 To investigate the effect of ribozyme activity on coacervate behaviour, we initially sought to design a ribozyme system capable of increasing RNA chain length via concatenation. Although several examples of RNA ligase ribozymes have previously been reported (Paul and Joyce, 2002; Ekland et al., 1995; Hayden et al., 2005), these typically catalyse the ligation of a single junction, which results in only a modest overall increase in average RNA chain length. To achieve greater product lengths, we harnessed the catalytic core of the R3C ligase ribozyme (ER), whose RNA ligation activity is based on 5′-triphosphate activated substrates (Paul and Joyce, 2002). This system has recently been shown to be active in the presence of poly(L-lysine) under certain conditions, and so was a promising starting point when considering compatibility with coacervate systems (Iglesias-Artola et al., 2022). We previously redesigned the ribozyme–substrate complex to iteratively produce long RNA concatemers from short oligonucleotides (Matreux et al., 2021). In our final design, the ribozyme (EL) catalyses concatenation of a 31 nt substrate (Figure 1a). Screening of reaction conditions established that strong activity was observed at pH 8.6 in the presence of 10 mM MgCl2 at a range of temperatures (30, 37, and 45°C) (Figure 1—figure supplement 1). The strongest activity was observed with a 1:1 monomer concentration ratio of substrate:ribozyme, while excess substrate inhibited the formation of longer length products at lower temperatures, most likely because the ribozyme has a higher probability of binding unligated substrates than already growing chains. In order to reduce hydrolytic degradation of RNA, we chose to maximise activity at 30°C with a 1:1 substrate:ribozyme ratio in all subsequent experiments.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig1-v2.jpg)
+
+**Figure 1.:** (a) The secondary structure of the ladder ribozyme and a schematic showing its function. The ribozyme is shown in red, whilst the substrate strands are shown in black. (b) A representative 8% urea PAGE stained with SYBR Gold showing the products of the R3C ladder system in solution and varying ratios of (Lys)19-72 to R3C RNA (total monomer concentration = 1 mM, 10.5 µM substrate, 10.5 µM ribozyme) after a 2 hr reaction at 30°C in 50 mM Tris-HCl pH 8.6 and 10 mM MgCl2. The integrated lane profiles of the solution and 0.75:1 (Lys)19-72:RNA conditions are shown in blue and red, respectively (c) Variation in absorbance at 500 nm as a measure of coacervate formation upon addition of varying ratios of (Lys)19-72 to the EL RNA after ligation for 3 hr at 30°C. Data points are an average of n = 3 independent replicates assembled from the same stock solutions. Error bars are standard deviations. (d) Example fluorescence microscopy image of (Lys)19-72:RNA condensates at a ratio of 0.75:1 (Lys)19-72:RNA, imaged using 10% Cy5-tagged substrate strand. Scale bar = 20  μm. (e) Kinetics of chain elongation in solution (blue, first-order model), and with 0.75:1 (Lys)19-72:RNA (red, second-order model) at 30°C, pH 8.6, and 10 mM MgCl2. A total RNA monomer concentration of 1 mM was achieved by combining 9.5 µM substrate, 1 µM Cy5-tagged substrate and 10.5 µM ribozyme. Data points are an average of n = 3 independent replicates assembled from the same stock solutions. Error bars are standard deviations. (f) Chain extension rate constants for the R3C ladder ribozyme in solution (blue, first-order model) and in the presence of 0.75:1 (Lys)19-72:RNA (red, second-order model). Error bars are the standard errors for each parameter computed during non-linear regression. Equivalent data for condensates formed from the shorter (Lys)5-24 peptide is shown in Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The concatenation activity of the ribozyme was determined by reaction at 30, 37, or 45°C and with either equimolar (10.5 µM), twofold (8 µM ribozyme and 16 µM substrate) or fourfold (5 µM ribozyme and 20 µM substrate) substrate concentration relative to the ribozyme. The reaction buffer contained 10 mM MgCl2 and 50 mM Tris-HCl pH 8.6, and the reaction was stopped after 2 hr. Excess substrate was found to inhibit the formation of long substrate concatenates at lower temperatures.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) A representative 8% urea PAGE gel stained with SYBR gold showing the products of the R3C ladder system in solution and varying ratios of (Lys)5-24 to R3C RNA (total monomer concentration = 1 mM) after a 2 hr reaction at 30°C in 50 mM Tris-HCl pH 8.6 and 10 mM MgCl2. The integrated lane profiles of the solution and 1.5:1 (Lys)5-24:RNA conditions are shown in blue and red, respectively. (b) Variation in absorbance at 500 nm as a proxy for coacervate formation upon addition of varying ratios of (Lys)5-24 to the EL RNA after ligation for 3 hr at 30°C. Data points are an average of n = 3 independent replicates assembled from the same stock solutions with error bars reporting standard deviations. (c) Example fluorescence microscopy image of (Lys)5-24:RNA condensates at a ratio of 3:1 (Lys)5-24:RNA, imaged using 10% Cy5-tagged substrate strand. Scale bar = 20 μm. (d) Kinetics of chain elongation in solution (blue, first-order model), and with 3:1 (Lys)5-24:RNA (red, second-order model) at 30°C, pH 8.6, and 10 mM MgCl2. Data points are an average of n = 3 independent replicates assembled from the same stock solutions. Error bars represent standard deviations (e) Chain extension rate constants for the R3C ladder ribozyme in solution (blue, first-order model) and in the presence of 3:1 (Lys)5-24:RNA (red, second-order model). Error bars are the standard errors for each parameter computed during non-linear regression. Poor sample recovery led to an artificially reduced average substrate length at the t = 30 and t = 60 min time points for the reaction in the presence of (Lys)5-24. These points were therefore excluded when fitting data.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Experiments were performed in solution at 30°C in 50 mM Tris-HCl pH 8.6, 10 mM MgCl2, and with the addition of either 1.5:1 (Lys)5-24:RNA or 0.75:1 (Lys)19-72:RNA. The reaction run using 10% Cy5-tagged substrate strand, and the reaction product were visualised on an 8% urea PAGE. The displayed gels correspond to the kinetic plots shown in Figure 1d and Figure 1—figure supplement 2d.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) The effect of total RNA concentration on ribozyme activity. Reactions were performed at pH 8.6 and 10 mM MgCl2.The total concentration of RNA was either 5.25 µM (0.5×), 10.5 µM (1×), or 21 µM (2×). (b) The effect of increasing Mg2+ concentrations on ribozyme activity. Reactions were performed at pH 8.6 and 10.5 µM (1×) total RNA concentration. (c) The effect of increasing PEG concentration on ribozyme activity. Reactions were performed at pH 8.6, 10 mM MgCl2, and 10.5 µM (1×) total RNA concentration with between 0 and 20% PEG 8000. (d) The effect of PEG and increased Mg2+ concentration on ribozyme activity. All reactions were performed at pH 8.6 and 10.5 µM (1×) total RNA concentration with between 25 and 75 mM Mg2+ and either 10 or 20% PEG 8000. Reactions containing 3:1 (Lys)5-24:RNA and 0.75:1 (Lys)19-72:RNA performed at pH 8.6 and 10 mM MgCl2 are shown for reference (red). All reactions were run for 10 min at 30°C before being quenched and separated on an 8% urea PAGE. The reaction products were visualised using the Cy5-tagged substrate included in the reaction mixture. Data points in all panels are averages of n = 3 independent replicates assembled from the same stock solutions. Error bars represent standard deviations.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Ribozyme assays were performed at 45 °C in solution and in the presence of poly(L-lysine) (0.75:1 Lys19-72:RNA or 3:1 Lys5-24:RNA). The ribozyme reaction buffer contained 10 mM MgCl2 and 50 mM Tris-HCl pH 8.6. The reaction was stopped after 3 hr and the extracted RNA was digested with RNase R, leaving only circular products. Circular bands are marked with an asterisk. The formation of circular products is observed in solution but is suppressed in the presence of poly(L-lysine).
+
 The phase separation behaviour of the ribozyme system in the presence of poly(L-lysine) was initially investigated by titrating increasing amounts of (Lys)19-72 into a fixed concentration of RNA (total monomer concentration = 1 mM) and measuring endpoint activity. The reaction products were separated by urea PAGE and stained using SYBR Gold to visualise all reaction components. The activity of the ribozyme was inhibited in the presence of excess peptide ((Lys)19-72:RNA > 1) (Figure 1b), but yields of extended products at the endpoint of the reaction (2 hr) were enhanced above the solution reaction at lower ratios (lane profiles, Figure 1b). The reported concentration ratios are calculated from RNA and peptide monomer unit concentrations, and as such are also equivalent to charge ratios. The addition of (Lys)19-72 led to a gradual increase in turbidity due to phase separation above the critical coacervation concentration of CCC19-72 ≈ 0.14:1 (Lys)19-72:RNA (Figure 1c). These experiments were repeated with a shorter peptide ((Lys)5-24) (Figure 1—figure supplement 2), for which the onset of coacervation occurred at higher peptide:RNA ratios (CCC5-24 ≈ 0.93:1 (Lys)5-24:RNA), corroborating previous observations with poly(L-lysine) and the hairpin ribozyme (HPz) (Le Vay et al., 2021). In this case, the activity of the ribozyme was not inhibited in the presence of excess peptide, and again yields of extended products were enhanced above the solution condition (lane profiles, Figure 1—figure supplement 2a). For further experimentation, we selected specific peptide:RNA ratios of 0.75:1 (Lys)19-72:RNA and 3:1 (Lys)5-24:RNA, both of which supported coacervation and ribozyme catalysis. Different concentration ratios are required to produce similar droplets for each peptide due to their differing critical coacervation concentrations. Both selected concentration ratios corresponded to points immediately before the plateau in the respective peptide titration turbidity curves and allowed the formation of liquid coacervate droplets without suppression of ribozyme activity. (Figure 1c and Figure 1—figure supplement 2b). Fluorescence imaging of samples at these ratios confirmed the formation of phase-separated coacervate droplets that strongly partitioned the Cy5-labelled RNA substrate (Figure 1d and Figure 1—figure supplement 2c).
 
 To investigate the kinetics of chain elongation and quantify the final product length, we conducted experiments using a 5′-fluorescently labelled substrate to visualise ligation products. At the chosen ratios, ligation rate and product length were greatly enhanced in the coacervate phase compared to solution (Figure 1e and f and Figure 1—figure supplement 3). The kinetic analyses show that the addition of either (Lys)n peptide resulted in an approximately 50-fold increase in the rate of concatenation and led to the formation of substrate chains with an average length approximately 30 nt greater than those produced in solution (Figure 1e). In solution, the kinetics of chain elongation were best approximated using a first order model (k = 1.5 × 10–2 ± 1.0 × 10–3 min–1), and a final average product length (n) of 52.2 ± 0.5 nt was observed (Figure 1e). In the (Lys)19-72 coacervate phase, the ribozyme kinetics were best described by a two-phase model (kfast = 7.7 × 10–1 ± 0.7 × 10–1 min–1, kslow = 6.6 × 10–2 ± 1.3 × 10–2 min–1), with a final product length of n = 77.8 ± 0.4 nt for (Lys)19-72. Similar values were obtained for the short peptide (Figure 1—figure supplement 2e, Source data in Figure 1—figure supplement 2—source data 4). We have previously observed a coacervation-induced shift from monophasic to biphasic kinetic behaviour for the hammerhead ribozyme, albeit without an associated increase in rate (Drobot et al., 2018). High local RNA and Mg2+ concentrations may lead to enhanced activity by promoting folding and increasing substrate and Mg2+ cofactor abundance within the RNA–peptide coacervates (Iglesias-Artola et al., 2022; Frankel et al., 2016). To clarify origin of the enhancement reported here, we performed reactions at varying total RNA concentrations, varying MgCl2 concentrations and in the presence of crowding agents (Figure 1—figure supplement 4). Briefly, doubling the current total RNA concentration increased product yields, but not to the level observed in the presence of poly(L-lysine), whilst halving the current total RNA concentration reduced product yields (Figure 1—figure supplement 4a). The addition of either PEG or increased MgCl2 concentrations to the reaction mixture increased reaction yields relative to solution (Figure 1—figure supplement 4b and c), although again not to the same extent as phase separation with poly(L-lysine). We then tested the effect of combinations of PEG and Mg2+ on activity (Figure 1—figure supplement 4d) and found that under certain conditions the presence of the crowding agent and additional Mg2+ resulted in ligation yields similar to those observed in the RNA-peptide coacervates. These results suggest that multiple factors, including increased concentrations of both RNA and Mg2+, are required for enhanced activity in the RNA-peptide coacervates.
@@ -41,6 +65,114 @@ In solution, the EL ribozyme produced both linear and circular concatenates, the
 
 Having demonstrated that the EL ribozyme is capable of substrate concatenation in both solution and in (Lys)n coacervate droplets, and that its activity is enhanced within the coacervate environment, we aimed to determine whether the elongation of the RNA component would lead to differences in droplet properties, thus altering phenotype. To identify changes due solely to chain concatenation, we developed an inactive mutant of the ribozyme by introducing several point mutations (‘Methods’, Table 1 and Table 2), without altering the substrate binding region. Ribozyme activity assays revealed that the mutant was completely inactive in solution and in the presence of both (Lys)n peptides at the previously specified charge ratios (Figure 2—figure supplement 1). Populations of droplets containing either the active or inactive ribozyme were loaded into a passivated well plate and imaged over the course of 24 hr. In these experiments, (Lys)n was added to the RNA reaction mixture immediately, so that all ligation activity would occur in the presence of the peptide. In all cases, phase-separated droplets were observed which persisted over the course of the experiment (Figure 2a and c and Figure 2—figure supplement 2a and c). Whilst many droplets remained static, some coarsening to form larger droplets was observed, particularly in the droplet populations containing the inactive ribozyme. To fully quantify these observations, a segmentation algorithm was used to identify droplets and thereby measure their size and population density (Stringer et al., 2021). Droplets which contained active ribozyme maintained a constant average area over the 24 hr period, whilst droplets containing inactive ribozyme grew, in some cases reaching a final area more than twice that of the active system (Figure 2e and Figure 2—figure supplements 2 and 3). As the average droplet area increased for the inactive droplets, there was a concomitant decrease in droplet population density (the average number of droplets per 100 µm2), indicating that the growth was at least, in part, due to coalescence events between the droplets (Figure 2f). A minimal decrease in droplet population density was observed for active droplets, suggesting that lack of coalescence prevented growth. Similar behaviour was observed for both the long and short peptide (Figure 2—figure supplements 2 and 3), although for the short peptide system, the number of both active and inactive droplets decreased similarly over the course of the experiment, indicating that coalescence was not completely supressed in the active droplets. Intriguingly, some particles formed from the short peptide and active ribozyme system initially adopted a non-spherical morphology and relaxed to form round droplets over the course of the experiment (Figure 2—figure supplement 4), similar to morphological changes induced by the extension of UDP in spermine-based coacervates (Spoelstra et al., 2020). This indicates that the material properties of the droplets change over time.
 
+**Table 1.**
+ Sequences of DNA oligomers used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Length</th>
+      <th>Sequence (5' to 3')</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Substrate</td>
+      <td>53</td>
+      <td>ATACTTCCAACAGCAGTTAAGTTGCGGTCTCTATAGTGAGTCGTATTAATTTC</td>
+    </tr>
+    <tr>
+      <td>Active ribozyme</td>
+      <td>87</td>
+      <td>AACTGCCGTTATCATACTTCAACCCATCCAAAGTGTTACTTACGTAACAAGTGATAACAACTTCCTATAGTGAGTCGTATTAATTTC</td>
+    </tr>
+    <tr>
+      <td>Inactive ribozyme</td>
+      <td>87</td>
+      <td>AACTGCCGTTAAAATACAAAAACCCATCCACGCTGTTACGGACGTAACAGGTGATAACAACTTCCTATAGTGAGTCGTATTAATTTC</td>
+    </tr>
+    <tr>
+      <td>T7 promoter PFWD</td>
+      <td>23</td>
+      <td>GAAATTAATACGACTCACTATAG</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Sequences of RNA oligomers used in thisstudy.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Length</th>
+      <th>5' end</th>
+      <th>Sequence (5' to 3')</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Substrate</td>
+      <td>31</td>
+      <td>Triphosphate</td>
+      <td>GAGACCGCAACUUAACUGCUGUUGGAAGUAU</td>
+      <td>IVT</td>
+    </tr>
+    <tr>
+      <td>Fluorescent sub</td>
+      <td>31</td>
+      <td>FAM or Cy5</td>
+      <td>GAGACCGCAACUUAACUGCUGUUGGAAGUAU</td>
+      <td>IDT</td>
+    </tr>
+    <tr>
+      <td>Active ribozyme</td>
+      <td>65</td>
+      <td>-</td>
+      <td>GGAAGUUGUUAUCACUUGUUACGUAAGUAACACUUUGGAUGGGUUGAAGUAUGAUAACGGCAGUU</td>
+      <td>IVT/IDT</td>
+    </tr>
+    <tr>
+      <td>Inactive ribozyme</td>
+      <td>65</td>
+      <td>-</td>
+      <td>GGAAGUUGUUAUCACCUGUUACGUCCGUAACAGCGUGGAUGGGUUUUUGUAUUUUAACGGCAGUU</td>
+      <td>IVT/IDT</td>
+    </tr>
+  </tbody>
+</table>
+
+_Red bases represent inactivating mutations.IVT: in vitro transcription._
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig2-v2.jpg)
+
+**Figure 2.:** Representative images of coacervate droplets prepared with active (a, e) or inactive ribozyme (b, f) and 0.75:1 (Lys)19-72:RNA in passivated (a, b) and unpassivated (e, f,) environments. Scale bars = 10 μm. Average particle areas and population density over time for the passivated environment are shown in (c) and (d), respectively. Equivalent data for the unpassivated environment are shown in (g) and (h). All experiments were performed with 1 mM total RNA monomer concentration, a 0.75:1 ratio of (Lys)19-72:RNA monomers, and at 30°C, pH 8.6, and 10 mM MgCl2. The RNA reaction mixture contained 10% Cy5-labelled substrate for fluorescence imaging. Particles were measured from at least nine separate images, except for unpassivated samples for which a single image was captured. Error bars are standard errors. Data from active populations are shown in red, while data from inactive populations are shown in black. The number of droplets analysed was n=1702 - 5272 for the passivated environment and n = 199 - 518 for the unpassivated environment. Droplet areas and particle counts were measured using the CellPose segmentation algorithm (Stringer et al., 2021). Data for condensates formed from the shorter (Lys)5-24 peptide are shown in Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The activity of the active and inactive ligase ribozyme variants was tested in solution and in the presence of poly(L-lysine) (0.75:1 Lys19-72:RNA or 3:1 Lys5-24:RNA). The ribozyme reaction buffer contained 10 mM MgCl2 and 50 mM Tris-HCl pH 8.6. The reaction was stopped after 2 hr. No ligation activity was detected in the presence of the inactive ribozyme in all conditions tested.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Representative images of coacervate droplets prepared with active (a, e) or inactive ribozyme (b, f) and 3:1 (Lys)5-24:RNA in passivated (a, b) and unpassivated (e, f) environments. Scale bars = 10 μm. For the passivated environment, plots of average particle areas and number of particles per unit area over time are shown in (c) and (d) respectively. For the unpassivated environment, these plots are shown in (g and h) respectively. All experiments were performed with 1 mM total RNA monomer concentration and a 3:1 ratio of (Lys)5-24:RNA. All reactions were performed at 30°C, pH 8.6, and 10 mM MgCl2. Particles were measured from at least nine separate images, except for unpassivated samples, for which a single image was captured. Data from active populations are shown in red, while data from inactive populations are shown in black. The number of droplets analysed was n = 1921- 3217 for the passivated environment and n = 16 - 359 for the unpassivated environment. Error bars are standard errors. The RNA reaction mixture contained 10% Cy5-labelled substrate for fluorescence imaging. Droplet areas and particle counts were measured using the CellPose segmentation algorithm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Droplets were from either 0.75:1 (Lys)19-72:RNA (left) or 3:1 (Lys)5-24:RNA (right) and contained active (red) or inactive (black) ribozyme.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Droplets were from either 0.75:1 (Lys)19-72:RNA (left, n = 1702 - 5272) or 3:1 (Lys)5-24:RNA (right, n = 1921- 3217) and contained active (red) or inactive (black) ribozyme. Error bars are standard deviations.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** RNA and substrate were incubated for 2 hr at 30°C with 10 mM MgCl2. (Lys)n was added, then the samples were incubated for 24 hr at 30°C. Images were captured 1 hr and 24 hr after mixing.
+
 Whilst surface passivation is used as standard in the imaging of coacervate systems to prevent wetting and adhesion effects, surface interactions can affect droplet formation and morphology, and therefore may also influence the observed protocellular phenotype. Consequently, we repeated the previous experiment on an unpassivated polystyrene surface (Greiner µclear microplate, medium binding). The coacervate droplets containing the active ribozyme behaved as previously observed, with discrete round morphologies (Figure 2b) and little change in both average droplet area and population density over the course of the experiment (Figure 2g and h). These droplets exhibited greater average areas than those in the passivated environment, likely due to wetting onto the surface. In contrast, droplets containing the inactive ribozyme wet the surface and rapidly spread, eventually merging to form a film of the condensed coacervate phase on the bottom of the well (Figure 2d). The measured average particle area therefore increased greatly over the course of the experiment, whilst the number of particles decreased (Figure 2g and h).
 
 These differences in behaviour indicate that the generation of longer RNA within the coacervate environment imparts altered physical properties on the droplets, despite maintaining a spherical morphology typical of a liquid system. To further investigate this phenomenon, we added the (Lys)5-24 and (Lys)19-72 peptides to pre-reacted RNA mixtures. Here, we observed that mixtures containing the active ribozyme and therefore pre-concatenated RNA initially formed non-spherical gel-like condensates with both peptides, which relaxed to form spherical droplets over the course of 24 hr, whilst mixtures with inactive ribozyme yielded spherical droplets from the outset (Figure 2—figure supplement 5). This suggests that large morphological differences between active and inactive systems are not observed when peptide is added to ribozyme and substrate mixtures without pre-reaction because the average RNA length is initially identical. As the reaction proceeds in the active systems, a transition to a more viscous or gel-like state may occur whilst maintaining the initially formed spherical morphology.
@@ -48,6 +180,22 @@ These differences in behaviour indicate that the generation of longer RNA within
 Given the effect of RNA concatenation on the coacervate droplets, we asked whether the activity of the EL ribozyme could affect the interactions between different populations of droplets. Using the previously established conditions and concentration ratios, we mixed populations of droplets containing either a Cy5- or FAM-tagged substrate (10% total substrate concentration) and monitored mixing and content exchange over the course of 24 hr. These effects can be quantified by the calculation of a Pearson correlation coefficient (PCC), which measures the correlation of pixel intensities between the two fluorescence channels (Dunn et al., 2011). Two coefficients were calculated: PCCdroplet, which measures the degree to which fluorophores mix within individual fused droplets, and PCCpop, which is calculated on a population level and measures the degree of mixing between the two populations. Positive values indicate spatial colocalisation of fluorophores, whilst negative values indicate spatial separation of fluorophores and therefore the presence of discrete regions or populations.
 
 Shortly following mixing, discrete populations of Cy5- and FAM-labelled droplets are clearly visible (Figure 3a and b and Figure 3—figure supplement 1). Fused and unevenly mixed droplets containing both fluorophores are visible, providing evidence that coalescence is the mechanism of droplet growth in this system. After 24 hr, visual inspection of the images reveals that discrete populations of Cy5- and FAM-labelled droplets only persist in droplets containing the active ribozyme (Figure 3a and Figure 3—figure supplement 1a). In the inactive droplets, both fluorophores appear evenly distributed throughout the population (Figure 3b and Figure 3—figure supplement 1b). In all cases, the PCCdroplet increased over time, tending towards unity, indicating that labelled RNA was able to equilibrate within the droplets via diffusion (Figure 3c and Figure 3—figure supplement 1c). However, it is notable that the rate and magnitude of increase in PCCdroplet was greater in droplets containing the inactive ribozyme (Figure 3—figure supplement 2), indicating greater RNA mobility. For active and inactive (Lys)19-72 droplets, PCCpop was initially negative, implying discrete and distinct populations (Figure 3d). Over the course of the experiment, the active system maintained this separation, whilst the PCCpop of the inactive system tended towards unity. These trends are further confirmed by scatter plots of normalised FAM and Cy5 fluorescence intensity in individual droplets (Figure 3—figure supplement 3), which show the clearly separated populations of active systems and mixing in inactive systems. As observed in our previous experiments, mixtures of the active ribozyme and peptide produced smaller droplets which did not grow over the course of the experiment compared to inactive populations, suggesting that droplets with inactive ribozyme are more prone to coalesce and therefore mixing than droplets containing the active ribozyme (Figure 3e and f).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig3-v2.jpg)
+
+**Figure 3.:** (a, b) Example images of mixtures of orthogonally labelled coacervate droplets prepared with 0.75:1 (Lys)19-72:RNA containing either active (a) or inactive (b) ribozyme. Each population in the set contained either 10% FAM- or 10% Cy5-tagged substrate (green and blue, respectively). The two populations in each set were mixed shortly after preparation and then imaged over 24 hr in a passivated environment. All experiments were performed at 30°C, pH 8.6, and 10 mM MgCl2 with a 1 mM total RNA monomer concentration and a 0.75:1 ratio of (Lys)19-72:RNA. The colocalisation of the two fluorophores within single droplets is measured by the droplet Pearson coefficient (PCCdroplet) (c), whilst the colocalisation of fluorophores in the overall population of droplets is measured by the population Pearson coefficient (PCCpop) (d). The average particle area and number of particles per unit area over time are shown in (e) and (f) respectively. Particles were measured from at least six separate images. Data from active populations are shown in red, while data from inactive populations are shown in black. The number of droplets analysed was n = 1350 - 3174. Error bars are standard errors. Scale bars = 10 μm. Data for condensates formed from the shorter (Lys)5-24 peptide are shown in Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a, b) Example images of mixtures of orthogonally labelled coacervate droplets prepared with 3:1 (Lys)5-24:RNA containing either active (a) or inactive (b) ribozyme. Each population in the set contained either 10% FAM- or 10% Cy5-tagged substrate (green and blue, respectively). The two populations in each set were mixed shortly after preparation and then imaged over 24 hr in a passivated environment. All experiments were performed at 30°C, pH 8.6, and 10 mM MgCl2 with a 1 mM total RNA monomer concentration and a 3:1 ratio of (Lys)19-72:RNA. The colocalisation of the two fluorophores within single droplets is measured by the droplet Pearson coefficient (PCPdroplet) (c), whilst the colocalisation of fluorophores in the overall population of droplets is measured by the population Pearson coefficient (PCCpop) (d). The average particle area and number of particles per unit area over time are shown in (e) and (f), respectively. Particles were measured from at least six separate images. Data from active populations are shown in red, while data from inactive populations are shown in black. The number of droplets analysed was n = 1143 - 2921. Error bars are standard errors. Scale bars = 10 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The plot displays a comparison between fluorophore colocalisation over time in long (0.75:1 (Lys)19-72:RNA, solid lines) and short (3:1 (Lys)5-24:RNA) coacervate systems that contain either active (red) or inactive (black). All data are fitted with a single exponential. Error bars are standard errors.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/83543/elife-83543-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Normalised Cy5 intensity is plotted on the X axis, whilst normalised FAM intensity is plotted on the Y axis. Each data point represents a single coacervate droplet. Droplets were from either 0.75:1 (Lys)19-72:RNA (left) or 3:1 (Lys)5-24:RNA (right) and contained active (red) or inactive (black) ribozyme. Data correspond to results reported in Figure 3 and Figure 3—figure supplement 1 .
 
 A similar yet weaker trend was observed with short (Lys)5-24 peptide droplets, which exhibited greater content exchange overall between both active and inactive droplets (Figure 3—figure supplements 1–3). Here, the presence of the active ribozyme slowed the rate of coalescence and therefore content exchange rather than completely suppressing it, but still allowed active populations to maintain a limited degree of identity over the course of the experiment.
 
@@ -67,7 +215,7 @@ Taken together, the results reported here describe a range of altered droplet be
 
 The reciprocal modulation of ribozyme activity and coacervate properties reported here furthers the argument for the early coevolution of RNA and peptides (Frenkel-Pinter et al., 2020; Tagami et al., 2017; Seal et al., 2022; Ghosh et al., 2021a; Le Vay and Mutschler, 2019). However, further development is required to move towards more realistic model systems. A key limitation is that the droplets presented in this work contain a large proportion or pure ribozyme and substrate, which would presumably be less abundant in a more plausible scenario. The R3C ligase is a highly optimised system developed by in vitro selection and offers little potential for further enhancement of catalytic activity, but similar material changes with less ribozyme might be achieved by optimising the substrate binding arms and conditions for multiturnover reaction, or tuning substrate length to produce greater overall changes with fewer ligations. We have previously demonstrated substrate strand release in hairpin ribozyme-(Lys)n condensates (Le Vay et al., 2021), so it may be possible to engineer similar behaviour in the R3C system, perhaps at the cost of reaction rate. In addition, the simple lysine polypeptides used here are a very basic model system, but additional variation in droplet properties may be achieved in future by varying peptide sequence. Droplet populations formed from different peptides could exhibit varying degrees of ribozyme enhancement or fundamentally different physical properties that allow selection based on peptide identity as well as RNA sequence and activity. Although the magnitude of behavioural change was greater for coacervate populations formed with the longer peptide, clear phenotypic differences were nonetheless also present in the (Lys)5-24 system. This short peptide, predominantly composed of n = 3–9 residue oligomers, is of a length that could be produced by prebiotically plausible processes such as wet–dry cycling (Forsythe et al., 2015; Rodriguez-Garcia et al., 2015).
 
-## Materials
+### Materials
 
 Trizma base (Tris; Thermo Fisher Scientific, Waltham, MA), sodium hexametaphosphate ((NaPO3)6, 611.77 g/mol; Sigma-Aldrich, St. Louis, MI), formamide (CH3NO, 45.04 g/mol; Sigma-Aldrich), ethylenediaminetetracetic acid disodium salt dihydrate (EDTA, C10H14N2Na2O8·2H2O, 372.24 g/mol; Sigma-Aldrich), magnesium chloride hexahydrate (MgCl2·6H2O, 203.30 g/mol; (Merck, Darmstadt, Germany)), sodium hydroxide (NaOH, 39.997 g/mol; VWR, Radnor, PA), sodium chloride (NaCl, 58.44 g/mol; Sigma-Aldrich), urea (CH4N2O, 60.06 g/mol; Carl Roth, Karlsruhe, Germany), hydrochloric acid (HCl, 37%, 36.46 g/mol) (VWR), boric acid (H3BO3, 61.83 g/mol; Merck), ammonium persulfate (APS, (NH4)2S2O8, 228.20 g/mol) (VWR), acrylamide (19:1 bisacrylamide; Thermo Fisher Scientific), tetramethylethylendiamine (TEMED, C6H16N2, 116.21 g/mol; Carl Roth), SYBR gold stain (Thermo Fisher Scientific), RNA oligomer length standard (low-range ssRNA ladder) (NEBm Ipswich, MA).
 
@@ -75,50 +223,64 @@ All peptides were purchased from Sigma-Aldrich and used without further purifica
 
 ## Methods
 
-## Preparation of RNA
+### Preparation of RNA
 
 RNA was ordered from IDT or transcribed in-house from DNA templates. DNA sequences containing a T7 promoter upstream of the RNA sequence of interest were ordered from IDT. The DNA templates were prepared by annealing a complementary oligo to the T7 promoter region by heating equimolar mixture of the oligos at 85°C then cooling on ice. The resulting partially double-stranded DNA was used as DNA template for transcriptions. Large-scale in vitro transcription (IVT) reactions were adopted to produce enough RNA for downstream applications. The transcription reaction volume varied from 400 µL to 4 mL and contained the following: 1 µM partially double-stranded DNA template, 30 mM Tris-HCl pH 7.8, 30 mM MgCl2, 10 mM DTT, 2 mM spermidine, 5 mM of each NTP, 1 U/mL inorganic pyrophosphatase, and 0.5 µM T7 RNA polymerase (purified from a recombinant source in-house). The reaction proceeded for 4–6 hr at 37°C, after which the volume was concentrated by spinning at 15,000 × g, 4°C in Amicon ultrafiltration columns (Merck) with 3 kDa molecular weight cut-off regenerated cellulose filters. Following concentration, the RNA was purified with the Monarch RNA cleanup kit (NEB) following the manufacturer’s instructions, eluted twice in water, and quantified on the NanoDrop OneC (Thermo Fisher Scientific). The resulting ribozymes were gel purified using 12% urea PAGE, whereas the substrate was purified using 20% PAGE. The amount of RNA loaded per well was 5–8 µg mm–2 of the surface area of the bottom of the well. After PAGE, the gel was wrapped in plastic foil and the band of interest was identified by UV shadowing (254 nm, <30 s) on an autofluorescent background. The gel slice was excised, crushed, weighed, and soaked in 2 µL of 0.3 M sodium acetate (pH 5.2) per mg of gel at 4°C overnight. Following elution, the gel debris was removed using Costar Spin-X columns (Corning Inc, Corning, NY) with 0.45 µM cellulose acetate filters. Next, 20 µg RNA -grade Glycogen (Invitrogen, Waltham, MA) and 1.2 volumes of cold isopropanol were added to the solution. The mixture was cooled for 1 hr at –20°C to promote precipitation, and then centrifuged for an additional hour at 21,000 × g, 4°C. The supernatant was removed, and the pellet washed twice with 0.5 volumes of cold 80% ethanol. After washing, the supernatant was completely removed, and the pellet was dried for a few minutes under vacuum and resuspended in ultrapure water. RNA was aliquoted and stored at –80°C.
 
-## Urea polyacrylamide gel electrophoresis (PAGE)
+### Urea polyacrylamide gel electrophoresis (PAGE)
 
 Rotiphorese Gel 40 (19:1) was used to prepare 20% polyacrylamide gel stocks containing 8 M urea and 1× TBE (89 mM Tris, 89 mM boric acid, 2 mM EDTA, pH 8). A 0% gel stock was prepared using the same volumes with water replacing acrylamide. The two stocks were mixed at different ratios to obtain the final desired acrylamide concentration. Polymerisation was initiated by adding 0.01 volumes of 10% APS and 0.001 volumes of TEMED. The gel was cast in an EasyPhor PAGE Maxi Wave (20 cm × 20 cm) (Biozym, Hessisch Oldendorf) and allowed to polymerise at room temperature for >2 hr, then pre-run at a constant power of 20 W for 45 min. The gel thickness was 2 mm and 1 mm for preparative and analytical gels, respectively. The quenched samples were loaded, and the gel was run for 90 min at 20 W constant power in 1× TBE running buffer. When necessary, the gel was removed from the glass plates and stained with SYBR Gold (Invitrogen) nucleic acid staining dye for 10 min in 1× TBE and 1× SYBR Gold, then washed twice for 5 min in de-ionised water to decrease background fluorescence. Images were acquired using and Azure Sapphire RGB gel scanner (λex = 520 nm for SYBR Gold, 658 nm for Cy5) and analysed with the AzureSpot software (Azure Biosystems, Dublin, CA). The images were background subtracted using the built-in rolling ball function set to a diameter of 1000.
 
-## Poly(L-lysine) titration PAGE
+### Poly(L-lysine) titration PAGE
 
-Ribozyme assays were carried out with a 10 µL total reaction volume and the following components: 50 mM Tris-HCl pH 8.6, 10.5 µM ribozyme, 10.5 µM substrate, 10 mM MgCl2, and varying concentrations of poly(L-lysine). Ratios of RNA to (Lys)n were based on a fixed charge concentration of the RNA (1 mM total monomer charge), calculated with the following equation:Total Negative Charge=(cribozyme×lribozyme)+(csubstrate×lsubstrate)
+Ribozyme assays were carried out with a 10 µL total reaction volume and the following components: 50 mM Tris-HCl pH 8.6, 10.5 µM ribozyme, 10.5 µM substrate, 10 mM MgCl2, and varying concentrations of poly(L-lysine). Ratios of RNA to (Lys)n were based on a fixed charge concentration of the RNA (1 mM total monomer charge), calculated with the following equation:
+
+$$
+Total Negative Charge=(c_{ribozyme}\timesl_{ribozyme})+(c_{substrate}\timesl_{substrate})
+$$
 
 Positive charge concentrations were calculated based on the lysine hydrobromide monomer repeat molecular weight (209 g/mol) and mass of poly(L-lysine), considering a single positive charge for each residue. Reactions were set up at room temperature by first adding the all the components except the RNA to allow equilibration of poly(L-lysine) in the buffer. The reaction was then started by adding a mixture of ribozyme and substrate and incubated in a thermocycler at 30°C for 2 hr. Reactions were stopped by adding 1 volume of 5 M NaCl, 1 volume of 1.25 M hexametaphosphate (HMP), and 12 volumes of RNA loading buffer containing 10 mM EDTA, 0.05% bromophenol blue, 95% formamide. The resulting samples were briefly vortexed, denatured for 5 min at 85°C, cooled quickly on ice, and centrifuged for 5 min at 2000 × g (Color Sprout Plus, Biozym). PAGE analysis proceeded as described above.
 
-## OD measurements
+### OD measurements
 
 Measurements were performed using a NanoDrop OneC (Thermo Fisher Scientific) by measuring absorbance at 500 nm as a proxy for coacervate formation. The RNAs were pre-reacted at 2× concentration (21 µM each) in 1× buffer (50 mM Tris-HCl pH 8.6, 10 mM MgCl2) for 3 hr at 30°C. Varying concentrations of poly(L-lysine) in 1× buffer were then added to the reacted RNA. For every poly(L-lysine) concentration tested, 2 µL of pre-reacted RNA was added to 2 µL of poly(L-lysine) and mixed by pipetting 10 times. The resulting solution was incubated for 5 min, after which absorbance was measured. At least three biological replicates were measured for each concentration. From these data, we selected specific peptide:RNA ratios for both peptides for further experimentation (0.75:1 (Lys)19-72):RNA and (3:1 (Lys)5-24:RNA). The criterion for this selection was the formation of liquid coacervate droplets (determined by turbidity measurements and microscopy) at a peptide:RNA ratio that did not supress ribozyme activity (determined by PAGE analysis of lysine titration). Both concentrations occur shortly before the respective turbidity maxima in the peptide titration turbidity curve.
 
-## Ribozyme kinetics
+### Ribozyme kinetics
 
-Time-dependent assays were performed using individual aliquots for each time point to mitigate the effects of coacervate adhesion to the PCR tube walls over time. The reaction mixture contained 50 mM Tris-HCl pH 8.6, 10 mM MgCl2, 1 mM RNA charge concentration (9.5 µM substrate, 1 µM Cy5-tagged substrate, 10.5 µM ribozyme), and either 3 mM (Lys)5-24 or 0.75 mM (Lys)19-72 charge concentration. Aliquoted reactions were quenched by the addition of 2 µL 5 M NaCl, 2 µL 1.25 M HMP, and 34 µL RNA loading buffer (10 mM ETDA, 0.05% bromophenol blue, 95% formamide) at designated time points (t = 0, 2, 5, 10, 20, 30, 60, 120, 180, and 240 min). Sample preparation and PAGE were performed as described above. The average substrate length and relative band percentages were calculated as follows:average substrate length (nt)= ∑product length×relative abundancerelative abundance= intensity of bandtotal intensity of lane×100
+Time-dependent assays were performed using individual aliquots for each time point to mitigate the effects of coacervate adhesion to the PCR tube walls over time. The reaction mixture contained 50 mM Tris-HCl pH 8.6, 10 mM MgCl2, 1 mM RNA charge concentration (9.5 µM substrate, 1 µM Cy5-tagged substrate, 10.5 µM ribozyme), and either 3 mM (Lys)5-24 or 0.75 mM (Lys)19-72 charge concentration. Aliquoted reactions were quenched by the addition of 2 µL 5 M NaCl, 2 µL 1.25 M HMP, and 34 µL RNA loading buffer (10 mM ETDA, 0.05% bromophenol blue, 95% formamide) at designated time points (t = 0, 2, 5, 10, 20, 30, 60, 120, 180, and 240 min). Sample preparation and PAGE were performed as described above. The average substrate length and relative band percentages were calculated as follows:
+
+$$
+average substrate length (nt)= \sumproduct length\timesrelative abundance
+$$
+
+
+
+$$
+relative abundance= \frac{intensity of band}{total intensity of lane}\times100
+$$
 
 The data were fitted in GraphPad Prism using both a first-order (‘one-phase association’) and second-order (‘two-phase association’) kinetic model. First- and second-order kinetics were discriminated between using the extra sum-of-squares F test for nested models. The simpler first-order model was rejected when p<0.05.
 
-## Temperature and ratio screen
+### Temperature and ratio screen
 
 Reactions were carried out with varying ribozyme to substrate ratios, maintaining a total negative charge of 1 mM. Reactions with component ratios of 1:1, 1:2, and 1:4 contained ribozyme:substrate concentrations 10.5:10.5 µM, 8:16 µM, and 5:20 µM, respectively. Buffer conditions were 50 mM Tris-HCl, pH 8.6, and 10 mM MgCl2. The reactions were incubated for 2 hr at 30, 37, and 45°C, then quenched by the addition of nine volumes of RNA loading buffer (10 mM EDTA, 0.05% bromophenol blue, 95% formamide). They were resolved on an 8% urea PAGE and stained and imaged as described previously.
 
-## RNase R digestion
+### RNase R digestion
 
 The reaction products from 10 µL reactions containing 1:1 ribozyme:substrate with either no poly(L-lysine), 0.75:1 (Lys)19-72-15 or 3:1 (Lys)5-24 and incubated for 3 hr at 45°C were recovered using a 50 µg Monarch RNA cleanup kit (NEB) and eluted in 12 µL ultrapure water. RNase R (Applied Biological Materials, Richmond, Canada) was used to digest a portion of the purified reaction products. The digest reaction mixture (20 µL) contained 1 µg of RNA, 1× RNase R buffer, and 30 U of RNase R, and was incubated for 3.5 hr at 37°C. The digested RNA was recovered with the 10 µg Monarch RNA cleanup kit (NEB), eluted in 6 µL of ultrapure water and mixed with 6 µL of RNA loading buffer. 1.5 µL of the undigested RNA and 5 µL of the digested RNA were resolved on an 8% PAGE, stained, and imaged as described above.
 
-## PEG 8000 and magnesium chloride screens
+### PEG 8000 and magnesium chloride screens
 
 Reactions were carries out in the standard buffer system (50 mM Tris-HCl pH 8.6 and 10 mM MgCl2), and were supplemented with either PEG 8000 alone, MgCl2 alone, or both in combination. All reactions comprised a 1:1 ribozyme to substrate ratio and final positive charge concentration of 1 mM (10.5 µM final concentration of each RNA with 10% Cy5-tagged substrate). The reactions were set up on ice, started by adding the RNAs and incubated at 30°C for 10 min. After incubation, the reactions containing either PEG 8000 or MgCl2 were quenched with 20 volumes of RNA loading buffer (10 mM EDTA in formamide). For the conditions that combine PEG 8000 and MgCl2 a positive control with added (Lys)n was performed. Consequently, these reactions were quenched by the addition of 1 volume of 5 M NaCl, followed by 1 volume of 1.25 M hexametaphosphate and 18 volumes of RNA loading buffer. All samples were heat denatured for 5 min at 85°C and subsequently resolved on an 8% urea PAGE and imaged as described above.
 
-## RNA concentration screen
+### RNA concentration screen
 
 Reactions were carried out in the standard buffer system (50 mM Tris-HCl pH 8.6 and 10 mM MgCl2) with different concentrations of total RNA but maintaining the same 1:1 ratio of ribozyme to substrate. The concentration of each RNA was either 5.25 µM designated as 0.5×, 10.5 µM designated as 1×, or 21 µM designated as 2×. All reactions had 10% Cy5-tagged substrate included. The reactions were set up on ice followed by a 10 min incubation period at 30°C. The reactions were quenched with different volumes of RNA loading buffer such that the final concentration of labelled species is the same in the quenched sample buffer (half the volume of leading buffer for the 0.5× and twice the volume of loading buffer for the 2×). The 1× reaction was quenched with four volumes of RNA loading buffer. All samples were heat denatured for 5 min at 85°C and subsequently resolved on an 8% urea PAGE and imaged as described above.
 
-## Microscopy
+### Microscopy
 
 Microscopy was performed on a Leica Thunder inverted widefield microscope equipped with a sCMOS camera Leica DFC9000 GTC using a ×63/NA 1.47 objective. Fluorescence channels were λEx = 484–496 nm/λEm = 507–543 nm for FAM, and λEx 629–645 nm/λEm 669–741 nm for Cy5. The sample stage was warmed to 30°C. Samples were loaded into clear-bottomed 384-well plates (Greiner µclear, medium binding). Coacervate droplets were formed by combining a solution of RNA with a solution containing poly(L-lysine), buffer and magnesium chloride and mixing using a pipette in a PCR tube. The mixture was incubated on ice for 5 min, then 5 µL was loaded into the well plate. Individual wells were sealed with a drop of silicon oil to prevent evaporation. After loading, plates were immediately incubated at 30°C. Imaging was performed as soon as the coacervate suspension had settled, typically first at 30 min after mixing. A 3 × 3 image grid, centred at the middle of the well, was captured for each sample at various time points. In most cases multiwell plates were passivated using Pluronic F-68 to prevent droplet wetting and adhesion.
 
-## Image processing and analysis
+### Image processing and analysis
 
 Following data collection, grid tiles were inspected, and out-of-focus images were discarded. Only images that remained in focus for all time points in a given sample were carried forward for analysis. Image masks were produced by segmentation in the brightfield channel using the CellPose algorithm (cyto2 model, average cytoplasm diameter = 30–100 pixels, flow threshold = 0.4, cell probability threshold = 0) (Stringer et al., 2021). A rolling ball background was subtracted in all fluorescence channels (radius = 100 pixels). Masks and images were then used to measure the number of particles per image, particle area, and volume corrected fluorescence intensity. Both inter- and intra-particle PCCs were calculated for samples containing two populations of droplets with orthogonal labels. For figure preparation, time-course images were aligned using HyperStackReg (v.5.6, translation transformation) and displayed without background subtraction (Sharma, 2018).

@@ -49,17 +49,45 @@ Here, we present evidence that expression of (G4C2)36 in adult Drosophila neuron
 
 ## Results
 
-## Insulin signalling is down-regulated in flies expressing expanded C9orf72 repeats
+### Insulin signalling is down-regulated in flies expressing expanded C9orf72 repeats
 
 To identify disease-specific gene expression patterns associated with poly-GR, we performed RNA-seq on heads of adult flies expressing ATG-driven GR100 specifically in neurons, using the Elav-GS RU486-inducible driver. RNA-seq was performed three days after induction of GR100 expression, in order to identify early changes prior to overt neurodegeneration. These flies showed strong alterations in their transcriptome when compared with the control line. We identified 2754 genes significantly differentially regulated (adjusted p<0.05) (Figure 1—figure supplement 1A and GEO: GSE151826). To gain insight into the potential function of the differentially expressed genes, we performed gene ontology (GO) enrichment analysis using TopGO on the 2754 up- and down-regulated genes (Figure 1A). Flies expressing poly-GR100 showed altered expression of genes involved in pathways previously implicated in C9orf72 pathology, including translation, DNA damage and repair, proteasome, and RNA metabolism (Figure 1A and Figure 1—figure supplement 1B). Interestingly, neuropeptide hormone activity was the most enriched category of down-regulated genes (Figure 1A). Among these neuropeptides, Drosophila insulin-like peptides (dilps) 2, 3, and 5 were highly down-regulated (3.7-, 9.5-, and 3.2-fold change, respectively), adjusted p value<0.05 – Figure 1—figure supplement 1A. RT-PCR analysis of brains of flies expressing poly-GR confirmed the lowered expression of dilp 2, 3, and 5 (Figure 1B). To test whether these dilps were also down-regulated in a GGGGCC repeat model that generates poly-GR via RAN translation, we performed RT-PCR in flies expressing (G4C2)36. Lower expression of dilps was also observed in this model, although the expression change in the dilp5 gene did not reach statistical significance (Figure 1—figure supplement 2).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58565/elife-58565-fig1-v2.jpg)
+
+**Figure 1.:** (A) Gene ontology enrichment of genes with altered expression when GR100 was expressed in neurons. In the top graph, bars represent enrichment of up- and down-regulated genes. In the bottom graph, upper bars represent only up-regulated genes, lower bars represent only down-regulated genes. Lengths of bars represent negative log-transformed, adjusted p-values for Fisher’s exact enrichment test. Bar colour indicates log2-fold changes between GR100 and control per gene. Neuropeptide/hormone activity genes were down-regulated. (B) Quantitative RT-PCR analysis of dilp 2, 3, and 5 normalized against tubulin in fly heads expressing GR100 in neurons. Data was assessed by t-test and presented as mean ± SD, n = 3; dilp2: p=0.0004; dilp3: p<0.0001, dilp5: p<0.0001. Genotypes: (A) w; UAS-GR100/+; ElavGS/+ (GR100), w; +; ElavGS/+ (ctrl) and (B) w; UAS-GR100/+; ElavGS/+.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58565/elife-58565-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) MA-plot of DESeq2 output indicating genes that were significantly differentially expressed (red dots), non-significantly differentially expressed (grey circles), and significantly expressed outside the 4 to −4 log-fold change limit (red triangles) in GR100 over-expression flies relative to control flies. Dilp2, 3, and 5 are annotated (blue circles). (B) Graphs display the relative expression of all genes associated with the identified GO-term categories with altered expression. Log2-fold change of the genes in GO categories: DNA repair, proteasome complex, spliceosome complex, RISC complex, and small and large ribosomal subunits. (A and B) Genotypes: w; UAS-GR100/+; ElavGS/+ (GR100) and w; +; ElavGS/+ (ctrl).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58565/elife-58565-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Quantitative RT-PCR analysis of dilp 2, 3, and 5 normalized against tubulin in fly heads expressing (G4C2)36 in neurons. Blue circles show data obtained from uninduced flies, red squares data obtained from induced flies. Data was assessed by t-test and presented as mean ± SD, n = 3, *p=0.017, **p=0.008, ns p=0.0620. Genotype: w; UAS-(G4C2)36 /+; ElavGS/+.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/58565/elife-58565-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative confocal images of dilp2 immunostaining (green) in the IPCs of adult female flies expressing neuronal GR100 (induced) or not (non-induced). (B) Quantified IPC number present in brains of non-induced and induced flies expressing GR100. No significant difference (p=0.694) was found. Data was assessed by t-test and presented as mean ± SD, n = 5. (C) Quantified dilp2 mean immunofluorescence intensities in IPCs. Flies expressing GR100 had significantly reduced dilp2 levels (Mann-Witney test, ***p<0.0001). Data are presented as mean ± SD, n = 24. (D) IPC immunostaining with anti-GR (red) and anti-GFP (green) antibodies. Local expression of poly-GR repeats in IPCs using dilp3-Gal4 driver showed that the IPCs were still able to produce GR100 (red). Flies expressing GFP in IPCs were used as control. Genotypes (A), (B), and (C) w; UAS-GR100/+; ElavGS/+. (D) w; UAS-GR100 /dilp3-Gal4 and w; UAS-mcd8-GFP /dilp3-Gal4.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/58565/elife-58565-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Insulin signalling pathway. Insulin binds to insulin receptor, activating insulin receptor substrates and subsequently PI3K-Akt-mTOR pathway. SF1670 is a PTEN inhibitor and MK2206 is a pan-Akt inhibitor. (B) Western blot analysis of the phosphorylated and non-phosphorylated 4E-BP1. Flies expressing (G4C2)36 had a significantly decreased ratio of phosphorylated 4E-BP1 to the non-phosphorylated form compared with flies expressing both (G4C2)36 and InRActive (*p=0.03, unpaired t-test). Data are presented as mean ± SD, n = 3. Genotype (B) w; UAS-(G4C2)36/+; ElavGS/+ and w; UAS-(G4C2)36 /UAS-InRActive; ElavGS/+.
 
 Dilps 2, 3, and 5 are neuropeptides secreted by insulin-producing cells (IPCs) in the Drosophila brain (Brogiolo et al., 2001; Ikeya et al., 2002). To investigate whether reduced expression of dilps was simply due to the death of IPCs, we imaged brains of flies expressing poly-GR in all neurons. Dilp2 immunostaining showed no alteration in the number of IPCs (Figure 1—figure supplement 3A and B). However, consistent with our RNA-seq data, Dilp2 protein levels were reduced in IPCs expressing poly-GR (Figure 1—figure supplement 3C). In addition, expression of poly-GR specifically in IPCs using the dilp3-Gal4 driver was not sufficient to induce neuronal cell death (Figure 1—figure supplement 3D). Reduction of dilp2, dilp3, and dilp5 expression in GR100 flies was therefore not due to loss of IPCs.
 
 Dilps signal via a single insulin/IGF receptor (InR), through which they regulate the main signalling pathways that modulate 4E-BP1 phosphorylation (Figure 1—figure supplement 4A), a well-described read-out of insulin signalling in Drosophila (Bhandari et al., 2001; Wang et al., 2003; Blancquaert et al., 2010). To assess insulin/IGF pathway activity, we measured the phosphorylation state of 4E-BP1 in (G4C2)36 flies, and found that they had significantly decreased ratio of phosphorylated 4E-BP1 to the non-phosphorylated form, indicative of reduced insulin signalling (Figure 1—figure supplement 4B). Co-expressing a constitutively active insulin receptor (InRActive) significantly increased this ratio, indicating a rescue of insulin/IGF signalling immediately downstream of the dilps (Figure 1—figure supplement 4B). Taken together, these data indicate a reduction in insulin/IGF pathway activity in flies expressing either G4C2 repeats or poly-GR as a result of a reduction in expression of the dilps.
 
-## Activation of insulin signalling reduces G4C2 repeat toxicity in vivo
+### Activation of insulin signalling reduces G4C2 repeat toxicity in vivo
 
 We next asked whether restoring insulin signalling in neurons could ameliorate G4C2 repeat toxicity. To assess this, we monitored the survival of flies co-expressing (G4C2)36 and InRActive, specifically in neurons, and found that their lifespan was significantly extended (p<0.001) (Figure 2A). In contrast, reducing insulin signalling through the expression of dominant-negative InR (InRDN) significantly reduced lifespan (p=0.027) (Figure 2A). Activating insulin signalling in neurons reduced lifespan of wild-type flies (InRActivep<0.0001), as previously reported (Ismail et al., 2015), whilst its reduction led to increased lifespan (p=0.035) (Figure 2B), again as previously reported (Augustin et al., 2018). These observations indicate that increasing insulin/IGF signalling specifically suppresses C9orf72 repeat toxicity.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58565/elife-58565-fig2-v2.jpg)
+
+**Figure 2.:** (A) Lifespan of flies (n = 150) expressing (G4C2)36 or co-expressing InR constructs (InRActive, InRDN) in neurons. Lifespan was significantly extended in (G4C2)36 disease flies co-expressing InRActive compared with (G4C2)36 expressing flies (***p=2.8×10−21 – log-rank test) and decreased when co-expressed with InRDN (*p=0.027). (B) Lifespan of wild-type flies (n = 150) expressing InRActive or InRDN in neurons. Lifespan was significantly reduced in flies expressing InRActive compared with control flies (***p=2.64×10−6 – log-rank test) and increased in flies expressing InRDN (**p=0.0035). (C) Total activity of flies expressing (G4C2)36 in neurons was significantly reduced compared with uninduced control flies (***p=0.0003). (G4C2)36 flies co-expressing InRActive showed increased activity (*p=0.018) compared with flies expressing (G4C2)36 alone (two-away ANOVA followed by Holm-Sidak’s comparison test). Data are presented as mean with SD (n = 30 per genotype). (D) Flies expressing (G4C2)36 alone had significantly increased levels of p53 compared with flies expressing InRactive (**p=0.0014, t-test). Data are presented as mean ±95% confidence intervals, n = 3. Genotypes (A) w; UAS-(G4C2)36/+; ElavGS/+, w; UAS-(G4C2)36/UAS-InRActive; ElavGS/+, w; UAS-(G4C2)36/UAS-InRDN; ElavGS/+. (B) w; ElavGS/+, w; +/UAS-InRActive; ElavGS/+, w; +/UAS-InRDN; ElavGS/+. (C and D) w; UAS-(G4C2)36/+; ElavGS/+, w; UAS-(G4C2)36/UAS-InRActive; ElavGS/+.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58565/elife-58565-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) There were no significant differences in food intake between flies expressing (G4C2 alone or co-expressing InR constructs, or between flies induced or uninduced with RU486, one-way ANOVA, followed by Tukey’s multiple comparisons test). Data is presented as mean with standard errors of the mean. (B) Dot blot analysis of (G4C2)36 transcript levels in flies ubiquitously expressing (G4C2)36 repeats alone or co-expressing InRActive and InRDN transgenes showed no significant differences across the genotypes (one-way ANOVA, followed by Dunnett’s multiple comparisons test). (C) GFP expression levels in UAS-GFP; ElavGS flies co-expressing InRActive or InRDN determined by western blot analysis. There were no significant differences (p=0.4) in GFP levels between genotypes (one-way ANOVA, followed by Tukey’s multiple comparisons test). Data is presented as mean with ±95% confidence intervals, n = 3. (D) Expression of (G4C2)36 in neurons increased day sleep of flies (***p<0.0001, two-away ANOVA followed by Holm-Sidak’s comparison test), while this was abolished when (G4C2)36 was co-expressed with InRActive (ns; p=0.87). Data are mean ± SD (n = 32 per genotype). (E) Expression of (G4C2)36 in neurons increased night sleep of flies (**p=0.0007, two-away ANOVA followed by Holm-Sidak’s comparison test), while co-expression of InRActive abolished this phenotype (ns; p=0.81). Data are mean ± SD (n = 32 per genotype). Genotype (A) w; UAS-(G4C2)36/+; ElavGS/+, w; UAS-(G4C2)36/UAS-InRActive; ElavGS/+ and w; UAS-(G4C2)36 /UAS-InRDN; ElavGS/+. (B) w; da-GS, UAS-(G4C2)36/+, w; da-GS, UAS-(G4C2)36/UAS-InRActive and w; da-GS, UAS-(G4C2)36/UAS-InRDN. (C) w; UAS-GFP/+; ElavGS/+, w; UAS-GFP/UAS-InRActive; ElavGS/+ and w; UAS-GFP/UAS-InRDN; ElavGS/+. (D and E) w; UAS-(G4C2)36/+; ElavGS/+, w; UAS-(G4C2)36/UAS-InRActive; ElavGS/+.
 
 Induction of the neuron-specific driver requires flies to ingest RU486. To exclude the possibility that the rescue effect was a consequence of decreased fly feeding, and therefore reduced induction of the (G4C2)36 transgene, we measured food intake. There was no significant difference between the amount ingested across the different experimental groups (Figure 2—figure supplement 1A). To rule out the possibility that expression of either InRActive or InRDN had a direct effect on the transcription of the G4C2 transgene, we measured the transcript repeat levels by RNA dot blot analysis in flies ubiquitously expressing the two constructs. Neither expression of InRActive or InRDN altered the G4C2 transcript levels (Figure 2—figure supplement 1B). To further investigate whether expression of InRActive or InRDN indirectly affected the inducible protein expression system, we measured levels of GFP driven by the Elav-GS RU486-inducible driver and found that they were unaltered in neuronal cells expressing InRActive or InRDN (Figure 2—figure supplement 1C). Activation of insulin/IGF signalling therefore ameliorated C9orf72 repeat toxicity, rather than simply reducing expression of the (G4C2)36 transgene.
 
@@ -67,7 +95,7 @@ To confirm that increasing insulin signalling could also ameliorate a second, di
 
 We next determined whether activation of insulin/IGF signalling also rescued a molecular signature of (G4C2)36 toxicity. Increased levels of p53 have been observed in C9orf72 patient iPSC-neurons and fly models, and have been suggested to be a downstream marker of repeat-induced toxicity (Lopez-Gonzalez et al., 2016; Lopez-Gonzalez et al., 2019). We therefore tested if co-expression of InRactive in (G4C2)36 flies was associated with decreased levels of p53 and found that it led to a significant reduction (Figure 2D), whereas no difference was observed in uninduced flies (Figure 2D). These results show that increased insulin/IGF signalling can ameliorate multiple read-outs of G4C2 repeat-induced toxicity.
 
-## Activation of insulin/IGF signalling reduces poly-GR toxicity in vivo via InR/PI3K/Akt
+### Activation of insulin/IGF signalling reduces poly-GR toxicity in vivo via InR/PI3K/Akt
 
 As toxicity in the (G4C2)36 flies is mediated by poly-GR (Mizielinska et al., 2014), and increased p53 has been suggested to be driven by poly-GR (Lopez-Gonzalez et al., 2016Lopez-Gonzalez et al., 2019), we next assessed whether increased insulin/IGF signalling could specifically rescue poly-GR toxicity.
 
@@ -75,29 +103,37 @@ We took advantage of the rough eye phenotype and degeneration of eye tissue caus
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/58565/elife-58565-fig3-v2.jpg)
 
-**Figure 3.:** (A) Stereomicroscopy images of representative 2-day-old adult Drosophila eyes expressing InRActive or InRDN using the GMR-GAL4 driver (bottom panel) or co-expressing both GR36 and InR constructs (top panel). (B) Eye size of flies (n = 10 per genotype) normalized to the mean of the control eye size. Expression of InRActive in a wild-type background with GMR driver caused eye overgrowth, while InRDN decreased eye size (p<0.001). Co-expression of the GR36 with InRDN greatly decreased eye size (***p<0.0001), while with InRActive substantially increased it (two-way ANOVA followed by Holm-Sidak’s multiple comparison test). Two-way ANOVA showed a significant interaction between InR genotype and expression of the repeats (p<0.0001). Data is presented as mean ± 95% confidence intervals. (C) Eye size (n = 20) of 2-day-old adult Drosophila eyes expressing dilp2, PI3KCA, or AktCA using the GMR-GAL4 driver. Co-expression of PI3KCA or AktCA with GR36 repeats yielded a partial rescue of the size of the eye (***p<0.0001 and *p=0.036 respectively, two-way ANOVA, followed by Holm-Sidak’s multiple comparison test). Data are presented as mean ± SD. Genotypes: (A and B) w; GMR-Gal4/+, w; GMR-GAL4/UAS-InRActive, w; GMR-GAL4/UAS-InRDN, w; GMR-Gal4, UAS-GR36/+, w; GMR-Gal4, UAS-GR36/UAS-InRActive, w; GMR-Gal4, UAS-GR36/UAS-InRDN. (C) w; GMR-Gal4, UAS-GR36/+, w; GMR-Gal4, UAS-GR36/+;UAS-dilp2/+, w/PI3KCA; GMR-Gal4, UAS-GR36/+, w; GMR-Gal4, UAS-GR36/AktCA, w; GMR-Gal4/+, w; GMR-Gal4/+; UAS-dilp2/+, w/PI3KCA; GMR-Gal4/+, w; GMR-Gal4/AktCA.Figure 3—source data 1.Figure 3B.Figure 3—source data 2.Figure 3C.
+**Figure 3.:** (A) Stereomicroscopy images of representative 2-day-old adult Drosophila eyes expressing InRActive or InRDN using the GMR-GAL4 driver (bottom panel) or co-expressing both GR36 and InR constructs (top panel). (B) Eye size of flies (n = 10 per genotype) normalized to the mean of the control eye size. Expression of InRActive in a wild-type background with GMR driver caused eye overgrowth, while InRDN decreased eye size (p<0.001). Co-expression of the GR36 with InRDN greatly decreased eye size (***p<0.0001), while with InRActive substantially increased it (two-way ANOVA followed by Holm-Sidak’s multiple comparison test). Two-way ANOVA showed a significant interaction between InR genotype and expression of the repeats (p<0.0001). Data is presented as mean ± 95% confidence intervals. (C) Eye size (n = 20) of 2-day-old adult Drosophila eyes expressing dilp2, PI3KCA, or AktCA using the GMR-GAL4 driver. Co-expression of PI3KCA or AktCA with GR36 repeats yielded a partial rescue of the size of the eye (***p<0.0001 and *p=0.036 respectively, two-way ANOVA, followed by Holm-Sidak’s multiple comparison test). Data are presented as mean ± SD. Genotypes: (A and B) w; GMR-Gal4/+, w; GMR-GAL4/UAS-InRActive, w; GMR-GAL4/UAS-InRDN, w; GMR-Gal4, UAS-GR36/+, w; GMR-Gal4, UAS-GR36/UAS-InRActive, w; GMR-Gal4, UAS-GR36/UAS-InRDN. (C) w; GMR-Gal4, UAS-GR36/+, w; GMR-Gal4, UAS-GR36/+;UAS-dilp2/+, w/PI3KCA; GMR-Gal4, UAS-GR36/+, w; GMR-Gal4, UAS-GR36/AktCA, w; GMR-Gal4/+, w; GMR-Gal4/+; UAS-dilp2/+, w/PI3KCA; GMR-Gal4/+, w; GMR-Gal4/AktCA.
 
-## Activation of insulin signalling can reduce poly-GR levels in flies
+### Activation of insulin signalling can reduce poly-GR levels in flies
 
 We next investigated the mechanism by which increased insulin signalling reduced C9orf72 repeat toxicity. We tested whether activation of insulin signalling could alter the level of poly-GR present in the heads of flies expressing (G4C2)36. Using a quantitative Meso Scale Discovery (MSD) immunoassay, we found that expression of InRActive significantly decreased poly-GR levels (Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/58565/elife-58565-fig4-v2.jpg)
 
-**Figure 4.:** (A) GR dipeptide levels determined by Meso Scale Discovery (MSD) immunoassay were reduced in (G4C2)36 flies expressing InRActive compared to (G4C2)36 alone flies (***p=0.0001, one-way ANOVA, followed by Tukey’s multiple comparisons test). Levels of GR were normalized to the mean GR levels of control (G4C2)36 flies. Data is presented as mean ± SD, n = 8. (B) Expression of poly-GR determined by MSD immunoassay was also reduced in flies expressing both GR100 and InRActive compared to flies expressing GR100 alone (**p=0.0025, one-way ANOVA followed by Tukey’s multiple comparison test). Co-expression of InRDN slightly reduced poly-GR levels (*p=0.044). Levels of GR were normalized to the mean GR levels of control (G4C2)36. Data are presented as mean ± SD, n = 5. (C) Lifespan was significantly extended in flies (expressing ATG driven GR100 with over-expression of InRActive compared to flies only expressing GR100; ***p=1.62×10−11 – log rank test). Genotypes (A) w; UAS-(G4C2)36/+; ElavGS/+, w; UAS-(G4C2)36/UAS-InRActive; ElavGS/+, w; UAS-(G4C2)36/UAS-InRDN; ElavGS/+. (B, C) w; UAS-GR100/+; ElavGS/+, w; UAS-GR100/UAS-InRActive; ElavGS/+, w; UAS-GR100/UAS-InRDN; ElavGS/+.Figure 4—source data 1.Figure 4A.Figure 4—source data 2.Figure 4B.Figure 4—source data 3.Figure 4C.
+**Figure 4.:** (A) GR dipeptide levels determined by Meso Scale Discovery (MSD) immunoassay were reduced in (G4C2)36 flies expressing InRActive compared to (G4C2)36 alone flies (***p=0.0001, one-way ANOVA, followed by Tukey’s multiple comparisons test). Levels of GR were normalized to the mean GR levels of control (G4C2)36 flies. Data is presented as mean ± SD, n = 8. (B) Expression of poly-GR determined by MSD immunoassay was also reduced in flies expressing both GR100 and InRActive compared to flies expressing GR100 alone (**p=0.0025, one-way ANOVA followed by Tukey’s multiple comparison test). Co-expression of InRDN slightly reduced poly-GR levels (*p=0.044). Levels of GR were normalized to the mean GR levels of control (G4C2)36. Data are presented as mean ± SD, n = 5. (C) Lifespan was significantly extended in flies (expressing ATG driven GR100 with over-expression of InRActive compared to flies only expressing GR100; ***p=1.62×10−11 – log rank test). Genotypes (A) w; UAS-(G4C2)36/+; ElavGS/+, w; UAS-(G4C2)36/UAS-InRActive; ElavGS/+, w; UAS-(G4C2)36/UAS-InRDN; ElavGS/+. (B, C) w; UAS-GR100/+; ElavGS/+, w; UAS-GR100/UAS-InRActive; ElavGS/+, w; UAS-GR100/UAS-InRDN; ElavGS/+.
 
 In order to investigate whether the effect of InRActive on poly-GR levels occurs at the level of RAN translation, we investigated whether InRActive could reduce poly-GR levels in GR100 expressing flies, which generate poly-GR but do not undergo RAN translation. Neuronal expression of InRActive in GR100-expressing flies reduced poly-GR levels (Figure 4B), with a concomitant extension of lifespan (Figure 4C), further confirming the protective effect of increased insulin signalling. This indicates that InRActive is acting downstream of RAN translation to reduce poly-GR levels, and suggests that insulin/IGF signalling activation ameliorates toxicity by decreasing poly-GR levels.
 
-## The PI3K/Akt pathway regulates DPR levels in a mammalian cell model
+### The PI3K/Akt pathway regulates DPR levels in a mammalian cell model
 
 In order to determine whether the insulin-PI3K/AKT signalling pathway regulates DPR levels in mammalian cells, we utilized a nanoluciferase (NLuc) reporter which contains 92 seamless G4C2 repeats, which are preceded by 120 nucleotides of the endogenous human upstream sequence and followed by NLuc, lacking a start codon, in frame with poly-GR, termed 92R-NL. Thus the NLuc signal reports on RAN translated poly-GR levels. 92R-NL was co-transfected into HEK293T cells with a control plasmid expressing an ATG-driven firefly luciferase (FLuc) as a transfection efficiency and cell number control. To modulate the insulin-PI3K/Akt pathway, cells were treated for 2 days with either the pan-Akt inhibitor MK2206 (Hirai et al., 2010) or the PTEN inhibitor SF1670 (Rosivatz et al., 2006); insulin leads to the phosphorylation and activation of Akt, thus inhibiting Akt negates the effects of insulin on the PI3K/Akt pathway (Figure 1—figure supplement 4A). PTEN inhibition facilitates the phosphorylation and activation of Akt, thus activating the pathway (Figure 1—figure supplement 4A). MK2206 increased NLuc/polyGR levels (1.77-fold ± 0.54 SD, p=0.0168) (Figure 5A), while SF1670 decreased NLuc/polyGR levels (0.24-fold ± 0.09 SD, p=0.041) (Figure 5B). Therefore, consistent with our data in flies, increasing insulin signalling via Akt decreased poly-GR levels, while inhibiting the pathway increased poly-GR.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/58565/elife-58565-fig5-v2.jpg)
 
-**Figure 5.:** Poly-GR levels were measured using a NLuc reporter assay following a 48 hr treatment with either 1 µM MK2206 (AKT inhibitor) or SF1670 (PTEN inhibitor). (A) MK2206 significantly increases poly-GR levels (*p=0.0168). (B) SF1670 significantly decreases poly-GR levels (*p=0.0401). Each NLuc reading was normalized to FLuc for each well and further normalized to DMSO control treatment. Data given as mean ± SD of 4 biological replicates with 3–4 technical replicates per biological replicate. Data analyzed via two-tailed, unpaired Student’s t-test on the mean of each biological repeat.Figure 5—source data 1.Figure 5A and B.
+**Figure 5.:** Poly-GR levels were measured using a NLuc reporter assay following a 48 hr treatment with either 1 µM MK2206 (AKT inhibitor) or SF1670 (PTEN inhibitor). (A) MK2206 significantly increases poly-GR levels (*p=0.0168). (B) SF1670 significantly decreases poly-GR levels (*p=0.0401). Each NLuc reading was normalized to FLuc for each well and further normalized to DMSO control treatment. Data given as mean ± SD of 4 biological replicates with 3–4 technical replicates per biological replicate. Data analyzed via two-tailed, unpaired Student’s t-test on the mean of each biological repeat.
 
-## Insulin treatment increases survival of G4C2 repeat expressing flies
+### Insulin treatment increases survival of G4C2 repeat expressing flies
 
 Finally, we tested if treatment with insulin itself could also mitigate toxicity in flies. We injected 0.03 mg/ml insulin into fly haemolymph, equivalent to blood, at the second and seventh day post-induction of (G4C2)36 expression, and determined the effect on fly survival. Insulin treatment significantly extended lifespan in three independent cohorts of flies (Figure 6 and Figure 6—figure supplement 1A and B), while modestly reducing lifespan in control, uninduced flies, again indicating a beneficial effect of insulin signalling specific to C9orf72 repeat toxicity. Higher concentrations of insulin became toxic (Figure 6—figure supplement 1A), indicating there is a therapeutic window within which insulin treatment is beneficial.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/58565/elife-58565-fig6-v2.jpg)
+
+**Figure 6.:** Injection of 0.03 mg/ml insulin (INS) significantly extended lifespan of flies (n = 120) expressing (G4C2)36 when compared with flies injected with PBS (**p=0.00034, log-rank test), while it slightly shortened lifespan in non-induced flies (*p=0.043). Genotype: w; UAS-(G4C2)36 /+; ElavGS/+.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/58565/elife-58565-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Injection of different concentrations of insulin 0.03, 0.3, and 3 mg/ml into (G4C2)36 flies haemolymph (n = 120). Injection of 3 mg/ml insulin into (G4C2)36-induced flies greatly shortened their lifespan (p<0.0001, log-rank test), while 0.3 mg/ml had no significant effect (p=0.083), and 0.03 mg/ml modestly increased lifespan (p=0.038, log-rank test, PBS induced vs. 0.03 mg/ml INS induced). In uninduced (G4C2)36 flies, injection of insulin at 0.3 or 0.03 mg/ml shortened lifespan (p<0.0001, log-rank test, PBS uninduced flies vs. 0.3 mg/ml INS uninduced; p=0.039, log-rank test, PBS uninduced flies vs 0.03 mg/ml INS uninduced). (B) Injection of insulin (INS) at 0.03 mg/ml significantly extended lifespan of flies (n = 80) expressing (G4C2)36 when compared with flies injected with PBS (*p=0.037, log-rank test) in induced flies, while it shortened lifespan in non-induced flies (*p=0.007). Genotype (A, B) w; UAS-(G4C2)36/+; ElavGS/+.
 
 ## Discussion
 
@@ -117,58 +153,320 @@ Overall, our study suggests that modulation of the insulin/IGF signalling pathwa
 
 ## Materials and methods
 
-## Drosophila stocks and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Elav-GS</td>
+      <td>Osterwalder et al., 2001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Da-GS</td>
+      <td>Tricoire et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GMR-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL#9146 RRID:BDSC_9146</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dilp3-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL#52660 RRID:BDSC_52660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-(G4C2)36</td>
+      <td>Mizielinska et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GR100</td>
+      <td>Mizielinska et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-InRActive</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL#8263 RRID:BDSC_8263</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-InRDN</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL#8252 RRID:BDSC_8252</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-PI3KCA</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL#25908 RRID:BDSC_25908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-AktCA</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL#8194 RRID:BDSC_8194</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCD8::GFP</td>
+      <td>Lee and Luo, 1999</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T cells</td>
+      <td>UCL Drug Discovery Institute</td>
+      <td></td>
+      <td>Mycoplasma negative HEK cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGL4.53[luc2/PGK] Vector</td>
+      <td>Promega</td>
+      <td>#E5011</td>
+      <td>Firefly luciferase reporter plasmid</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>92 repeat G4C2nanoluciferase reporter</td>
+      <td>UCL Dementia Research Institute</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (mouse, mix of two monoclonals)</td>
+      <td>Merck</td>
+      <td>Cat#11814460001 RRID:AB_390913</td>
+      <td>WB (1:10.000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GR (rabbit)</td>
+      <td>Moens et al., 2018</td>
+      <td></td>
+      <td>MSD Capture: 2 µg/ml Detection: 12 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GR (rat, monoclonal)</td>
+      <td>Mori et al., 2013</td>
+      <td>5H9</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-dilp2 (rabbit, polyclonal)</td>
+      <td>Okamoto et al., 2012</td>
+      <td></td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-non-P 4E-BP1(rabbit monoclonal)</td>
+      <td>Cell Signalling</td>
+      <td>Cat#4923: RRID:AB_659944</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P 4E-BP1 (rabbit monoclonal)</td>
+      <td>Cell Signalling</td>
+      <td>Cat#2855 RRID:AB_560835</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p53 (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Dmp53-H3 RRID:AB_10804170</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-actin (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#Ab8224 RRID:AB_449644</td>
+      <td>WB (1:10.0000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tubulin (mouse monoclonal)</td>
+      <td>Sigma- Aldrich</td>
+      <td>Cat#T6199 RRID:AB_477583</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat IgG-Alexa fluor 647 (goat polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>Cat#A21247 RRID:AB_141778</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG-Alexa fluor 488 (goat polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>Cat#A32731 RRID:AB_2633280</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-mouse (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#Ab6789 RRID:AB_955439</td>
+      <td>WB (1:10.000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-rabbit (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#Ab6721 RRID:AB_955447</td>
+      <td>WB (1:10.000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dilp2_forward</td>
+      <td>Broughton et al., 2008</td>
+      <td>PCR primers</td>
+      <td>ATGAGCAAGCCTTTGTCCTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dilp2_reverse</td>
+      <td>Broughton et al., 2008</td>
+      <td>PCR primers</td>
+      <td>GACCACGGAGCAGTACTCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dilp3_forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>AGAGAACTTTGGACCCCGTGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dilp3_reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>TGAACCGAACTATCACTCAACAGTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dilp5_forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>GAGGCACCTTGGGCCTATTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dilp5_reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CATGTGGTGAGATTCGGAGCTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tubulin_forward</td>
+      <td>Moens et al., 2019</td>
+      <td>PCR primers</td>
+      <td>TGGGCCCGTCTGGACCACAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tubulin_reverse</td>
+      <td>Moens et al., 2019</td>
+      <td>PCR primers</td>
+      <td>TCGCCGTCACCGGAGTCCAT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila stocks and maintenance
 
 Drosophila stocks were maintained on SYA food (15 g/L agar, 50 g/L sugar, 100 g/L autolysed yeast, 30 ml/L nipagin [10% in ethanol], and 3 ml/L propionic acid) at 25°C in a 12 hr light/dark cycle with constant humidity. The Elav-GS stock was generously provided by Herve Tricoire (Paris Diderot University). The dilp3-Gal4 (#52660) driver and the over-expression InR constructs lines (UAS-InRDN #8252; UAS-InRActive #8263), PI3KCA and AktCA (UAS-PI3KCA #25908; AktCA #8194) were obtained from the Bloomington Drosophila Stock Centre. The GMR-Gal4 and UAS-(G4C2)36, UAS-GR100, and flies have been previously described in Mizielinska et al., 2014. The da-GS was kindly provided by Veronique Monnier (Tricoire et al., 2009), and the UAS-mCD8::GFP was a kind donation from Dr. Luo (Lee and Luo, 1999).
 
-## Drosophila lifespan assays
+### Drosophila lifespan assays
 
 The parental generation of the genotype used in each lifespan assay was allowed to lay for 24 hr on grape agar plates supplemented with yeast. Eggs were placed at a standard density into bottles containing SYA medium. Adult experimental flies were allowed to emerge and mate for 2 days before being lightly anaesthetised with CO2, and females randomly allocated onto SYA containing RU486 (200 μM) at a standard density per vial (n = 15), with a minimum 150 flies per condition. Flies were tipped onto fresh food every two days and dead flies counted. Escaping flies were censored from the data.
 
-## RNA sequencing of neuronal poly-GR100 over-expression flies
+### RNA sequencing of neuronal poly-GR100 over-expression flies
 
 To detect differential gene expression upon adult-onset, neuron-specific over-expression of poly-GR100, flies carrying the UAS-GR100 transgene were crossed with Elav-GS driver flies. As a control, Elav-GS driver flies were crossed with wild-type flies. Experimental flies were generated as described above. Female flies were fed for three days with 200 µM RU486, and subsequently snap frozen. Total RNA was isolated from 25 fly heads using Trizol and treated with DNase. For sequencing total RNA was depleted of ribosomal RNA and libraries were generated at the Max Planck Genome Centre Cologne (Germany). This experiment was performed in triplicate. RNA sequencing was performed with an Illumina Hi-Seq2500 and 35 million single-end reads/sample and 100 bp read length at the Max-Planck Genome Centre Cologne. Raw sequence reads were quality-trimmed using Trim Galore! (v0.3.7) and aligned using Tophat2 (Kim et al., 2013) (v2.0.14) against the Dm6 reference genome. Multi-mapped reads were filtered using SAMtools (Li et al., 2009). Data visualization and analysis was performed using SeqMonk, and the following Bioconductor packages: Deseq2 (Love et al., 2014), topGO and org.Dm.eg.db. For visualization of functional enrichment analysis results, we further used the CellPlot package. Genes were considered to be significantly differentially expressed with an adjusted p value<0.05 and no cut-off for fold change was used. Unless stated otherwise, the set of expressed genes was used as background for all functional enrichment analyses involving expression data. The data have been deposited in NCBI's Gene Expression Omnibus (GEO) (Edgar et al., 2002) under the accession number GSE151826.
 
-## RT-PCR analysis
+### RT-PCR analysis
 
 Adult female flies were induced on SYA medium containing 200 μM R4486 for 7 days before being flash-frozen in liquid nitrogen. RNA from 12 to 15 heads per replicate was extracted using TRIzol reagent (Thermo Fisher Scientific) following the manufacturer’s protocol. Approximately 1 μg of RNA per sample was treated with TURBO DNase (Thermo Fisher Scientific), followed by reverse transcription using the SuperScript II system (Invitrogen) with random hexamers (Thermo Fisher Scientific). Quantitative RT-PCR was conducted on a QuantStudio 6 Flex Real-Time PCR System (Applied Biosystems) using SYBR Green Master Mix (Applied Biosystems). Relative mRNA levels were calculated relative to alphaTub84B expression by the comparative Ct method. Primer sequences used are described in key resource table.
 
-## Brain immunostainings
+### Brain immunostainings
 
 Brains from 4-day-old female flies were dissected in PBS and immediately fixed in 4% PFA in /PBS at 4°C for 2 hr and washed for 4 × 30 min in PBST (0.5% Triton X-100 in PBS). Fly brains were then blocked in PBST + 5% fetal bovine serum (FBS; Sigma #F524) for 1 hr at RT and incubated with 5H9 rat anti-poly GR (1:50) (Mori et al., 2013) or rabbit anti-dilp2 (Okamoto et al., 2012) in blocking buffer for 48 hr at 4°C. The tissues were washed 4× 30 min in PBST at RT and incubated with anti-rat IgG-Alexa Fluor 647 (ThermoFischer, catalog #A-21247) or anti-rabbit IgG-Alexa Fluor 488 (ThermoFischer, catalog #A-32731), diluted 1:1000 in blocking solution for 2 hr at RT, and washed 4× 30 min with PBST. The brains were then incubated 50% glycerol-PBS and mounted in Vectashield mounting medium (Vectorlabs, catalog #H-1200), and confocal stacks were taken with a 2 µm step size using a Leica SP8X confocal and a dry 20× (for whole brains) or a glycerol IMM 60× (for IPC zooms) objectives. The mean dilp2 immunofluorescence within each cluster of brain IPCs was calculated using the FIJI package (2.0.0-rc-43/1.51 p; NIH) software. Z projections (SUM projection) of image stacks were created. The mean fluorescence within a region adjacent to the IPCs served as background and was subtracted from the mean dilp2 fluorescence within the IPCs. Finally, a mean value representing each genotype/condition was calculated. Total numbers of IPCs were counted from each Z brain projection.
 
-## Dot blot analysis
+### Dot blot analysis
 
 Total RNA of 25 female flies per genotype was extracted using Trizol and the Qiagen RNeasy Mini kit. For the dot blot analysis, 5 µg of RNA per sample were spotted onto a positively charged nylon membrane (GE Healthcare). The membrane was briefly washed with 10× SSC and RNA was then cross-linked to the membrane surface using a UVC 500 crosslinker (Amersham Biosciences). A (GGCCCC)5 oligonucleotide probe was 5' labelled with γ[32P]-ATP using polynucleotide kinase to detect sense repeats. The membrane was prehybridized with ULTRAhyb-Oligo hybridization buffer (Thermo Fisher Scientific) for 1 hr at 42°C before adding the oligonucleotide probe. Hybridisation was carried out over night at 42°C. The membrane was washed twice for 30 min in 2× SSC/0.1% SDS and then exposed to X-ray films. After autoradiography the membrane was stripped by boiling in 0.1% SDS for 30 min. For normalization the blot was re-hybridized with a probe detecting ribosomal protein RpL32 transcripts. Dot intensities were quantified in Fiji.
 
-## Assessment of eye phenotypes
+### Assessment of eye phenotypes
 
 Flies carrying UAS-InR constructs, UAS-PI3KCA and UAS-AktCA were crossed to the GMR-GAL4; UAS-(G4C2)36 driver line. The progeny were allowed to develop and eclose at 25°C; female eyes were imaged 2 days after emergence. All eye images were obtained under the same magnification; eye area was calculated from each image using ImageJ (Schneider et al., 2012).
 
-## Activity and sleep analysis
+### Activity and sleep analysis
 
 Two-day-old mated female flies (n = 32) developed and eclosed under 12 hr:12 hr light:dark cycle conditions (12L:12D) were fed with food containing either 200 µM RU486 or ethanol vehicle for 12 days. After transferring into tubes, locomotor activity and sleep behaviour were recorded over 4 days in 12L:12D using the Drosophila Activity Monitor (DAM, TriKinetics Inc, MA) system within the experimental incubator (Percival), set at 25°C and 65% humidity. Fly activity is measured by infra-red beam crosses in the DAM tube. After 2 days of acclimatisation, data were acquired from a 24 hr period on the third day (beginning at the onset of lights-on). A custom Microsoft Excel workbook (Chen et al., 2019) was used to calculate total activity counts per fly in the day and night periods, and to calculate sleep minutes during the day period (continuous periods of fly inactivity lasting 5 min or longer were classified as sleep). Flies with more than 12 hr of continuous inactivity at the end of the experiment were excluded as potentially dead.
 
-## Drosophila poly-GR MSD immunoassay
+### Drosophila poly-GR MSD immunoassay
 
 Heads from female flies (n = 15) induced on SYA medium containing 200 μM RU486 for 7 days were collected and processed as described previously to measure poly-GR levels (Moens et al., 2018).
 
-## Fly protein extraction and western blot
+### Fly protein extraction and western blot
 
 Heads from female flies (n = 15) induced with 200 μM RU486 for 7 days were collected and processed as previously described (Mizielinska et al., 2014). Membranes were incubated overnight at 4°C with primary antibodies: mouse anti-GFP (Ab#11814460001; MilliporeSigma) (1:10.000 in TBS-T); mouse anti-actin antibody (ab8224, Abcam – 1:10.000 in TBS-T); mouse anti-tubulin (T6199, Sigma-Aldrich – 1:2000); mouse anti-p53 (dmp53-H3, DSHB – 1:200); rabbit anti-non-P 4E-BP1 (4923, Cell Signaling – 1:1000); and rabbit anti-P 4E-BP1 (2855, Cell Signaling – 1:1000). HRP-conjugated anti-mouse and anti-rabbit secondary antibodies (ab6789 and ab6721, Abcam – 1:10.000) were used for 1 hr at room temperature.
 
-## Insulin treatment
+### Insulin treatment
 
 Injections were performed twice, on the second day of repeat induction and 5 days later, by anesthetising the flies with CO2. For each experiment, adult female flies (n = 80) were injected into the thorax with 32 nl of insulin (0.03 mg/ml) in PBS (pH 7.5) using a nanoinjector (Nanoject III; Drummond Scientific). Injection of the same volume of PBS acted as a control. Injected flies were then maintained at 25°C and transferred to fresh vials every third day throughout the experiment. They were collected at the indicated time points and directly processed for western blot analysis.
 
-## Food intake – CAFE assay
+### Food intake – CAFE assay
 
 In the capillary feeder assay (CAFE), a single female fly was presented with liquid food using one 10 µl calibrated capillary per chamber (n = 15 per condition). Changes in liquid meniscus height were measured over 3 days at each capillary change. Feeding volume was calculated after background subtraction of measurements from control chambers without flies.
 
-## Nanoluciferase assay of poly-GR levels
+### Nanoluciferase assay of poly-GR levels
 
 For dual-luciferase assays, mycoplasma-free HEK293T cells were used and maintained in DMEM media supplemented with 10% FBS, 4.5 g/L glucose, 110 mg/L sodium pyruvate, and 1× GlutaMAX and kept at 37°C with 5% CO2. HEK293T cells were plated at a density of 30,000 cells per well in a 96-well plate. The following day, the cells were transiently transfected with 12.5 ng of firefly luciferase expression plasmid, and 2.5 ng of RAN translated poly-GR nanoluciferase reporter plasmid (92R-NL) using Lipofectamine 2000 according to manufacturer’s instructions. One hour post-transfection, cells were treated with 1 µM of either MK2206 (Cayman Chemicals, #11593), SF1670 (Merck, # SML0684), or a DMSO control. Each experiment consists of three technical replicate wells per condition, with experiments repeated three times independently. 48 hr post-transfection both firefly and nanoluciferase signals were measured using the Nano-Glo Dual Luciferase Assay according to manufacturer’s instructions, on the FLUOstar Omega (BMG Labtech) with a threshold of 80% and a gain of 2000 for both readings. The nanoluciferase reading was normalised to the firefly luciferase reading for each well to control for variable transfection efficiencies and this normalised value was further normalized to the control DMSO treatment.
 
-## Experimental design and statistical analysis
+### Experimental design and statistical analysis
 
 Statistical analyses were performed with Prism6 (GraphPad Software). Normality of data was tested using the D’Agostino-Pearson omnibus normality test. When data were normally distributed, a Student’s t-test, one-way ANOVA, or two-way ANOVA was performed followed by multiple comparison test. For all data figures, the n values can be found in the figure legends and correspond to the number of biological repeats used in the analysis. Results were presented as mean ± 95% confidence intervals unless stated otherwise. Statistical differences were considered significant at p<0.05. Log-rank test on lifespan data were performed in Microsoft Excel (template available at http://piperlab.org/resources/) and data was plotted using Prism6.

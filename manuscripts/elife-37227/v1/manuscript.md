@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.37227.001 A key question in neuroscience is how cortical organisation relates to experience. Previously we showed that amputees experiencing highly vivid phantom sensations maintain cortical representation of their missing hand (Kikkert et al., 2016). Here, we examined the role of sensory hand experience on persistent hand representation by studying individuals with acquired and congenital hand loss. We used representational similarity analysis in primary somatosensory and motor cortex during missing and intact hand movements. We found that key aspects of acquired amputees’ missing hand representation persisted, despite varying vividness of phantom sensations. In contrast, missing hand representation of congenital one-handers, who do not experience phantom sensations, was significantly reduced. Across acquired amputees, individuals’ reported motor control over their phantom hand positively correlated with the extent to which their somatosensory hand representation was normally organised. We conclude that once cortical organisation is formed, it is remarkably persistent, despite long-term attenuation of peripheral signals.
+A key question in neuroscience is how cortical organisation relates to experience. Previously we showed that amputees experiencing highly vivid phantom sensations maintain cortical representation of their missing hand (Kikkert et al., 2016). Here, we examined the role of sensory hand experience on persistent hand representation by studying individuals with acquired and congenital hand loss. We used representational similarity analysis in primary somatosensory and motor cortex during missing and intact hand movements. We found that key aspects of acquired amputees’ missing hand representation persisted, despite varying vividness of phantom sensations. In contrast, missing hand representation of congenital one-handers, who do not experience phantom sensations, was significantly reduced. Across acquired amputees, individuals’ reported motor control over their phantom hand positively correlated with the extent to which their somatosensory hand representation was normally organised. We conclude that once cortical organisation is formed, it is remarkably persistent, despite long-term attenuation of peripheral signals.
 
 ## Introduction
 
@@ -37,9 +37,17 @@ Our previous findings demonstrate the stability of SI hand organisation despite 
 
 ## Results
 
-## Phantom hand movements elicit typical hand representation in the missing hand area of acquired amputees
+### Phantom hand movements elicit typical hand representation in the missing hand area of acquired amputees
 
 We first focused our analysis on the representation of the missing hand, as revealed by instructing individuals to move individual digits of their missing hand (or nondominant hand in controls). We interrogated fMRI activity in the SI hand area contralateral to the missing/nondominant hand (see Materials and methods for regions of interest (ROI) definition). We examined univariate task-related activity, as quantified by averaging the BOLD response across all the digit conditions within the missing hand ROIs (Figure 1A, see Figure 1—figure supplement 1 for M1 ROI results). Overall, all participants, including congenital one-handers, were able to engage the missing/nondominant hand area to some degree. Although activity was reduced in SI for the congenital one-handers’ missing hand compared to controls (t(23)=3.5, p=0.002), activity was significantly greater than baseline (t(12)=2.6, p=0.02).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/37227/elife-37227-fig1-v1.jpg)
+
+**Figure 1.:** (A) Activity (averaged digit movement versus rest) in SI for amputees (n = 18), two-handed controls (n = 12), and congenital one-handers (n = 13). (B–C) Mean dissimilarity and typicality of the representational structure of contralateral SI activity for the three groups. (D) Representational dissimilarity matrices for the three groups. D1-D5 correspond to the five digits (thumb-little finger). (E) Two-dimensional projection of the representational structure (D) (using multi-dimensional scaling; note that this is included for visualisation purposes only and was not used for statistical analysis). Dissimilarity is reflected by distance in the two dimensions; individual digits are reflected by different colours (see colour key, bottom right); and ellipses reflect the between-subject standard error after Procrustes alignment. Please note the different scale for one-handers compared to amputees and controls. Abbreviations: a.u.: arbitrary unit; *: significant difference, after accounting for multiple comparisons.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37227/elife-37227-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** All annotations are detailed in main text Figure 1.
 
 To investigate digit discriminability in the hand area, we next estimated the dissimilarity between activity patterns for individual digit movements, measured using the cross-validated Mahalanobis distance (Nili et al., 2014). By comparing all possible pairs of digit-specific activity patterns, we obtained the representational structure (Figure 1D–E). The resulting inter-digit dissimilarity values were averaged across digit pairs and participants within each group (Figure 1B). Small inter-digit dissimilarity indicates that voxels in the hand area are similarly activated across individual digits; larger dissimilarity implies individuated digit representation. In amputees, mean dissimilarity was slightly, though inconclusively, reduced compared to controls (t(28)=1.13, p=0.27, BF = 0.772), but significantly greater than in congenital one-handers (t(29)=3.54, p=0.001). Congenital one-handers showed no differentiation between digits of their missing hand (mean dissimilarity not different from 0; t(12)=.73, p=0.48) and dissimilarity was significantly reduced compared to controls (t(23)=4.86, p<0.001).
 
@@ -49,7 +57,7 @@ The results in M1 were generally in line with our findings in SI, but, as expect
 
 Although the inter-digit representational structure of congenital one-handers is atypical with respect to canonical hand representation, it is possible that it is still consistent within participants. To explore this idea, we split individual participants’ data to odd and even scans. For each participant, we calculated an RDM in the missing/nondominant hand area using the odd and even runs, and correlated the two RDMs. The correlation between odd and even RDMs was significantly lower in congenital one-handers (rho = -.02) compared to both amputees (rho = 0.41; p1H-AMP=.001) and controls (rho = 0.52; p1H-CTR=.001). We note that by splitting the data we are reducing the effectiveness of our analysis. Nevertheless, the relative reduction in split-half consistency indicates that there is no strongly consistent digit information in the missing hand area of congenital one-handers during this task.
 
-## Missing hand representation in acquired amputees is persistent even after phantom sensations have diminished
+### Missing hand representation in acquired amputees is persistent even after phantom sensations have diminished
 
 Next, we evaluated whether the consistency of hand representation in SI during missing hand movements correlates with amputees’ subjective reports of phantom sensations. We first carried out an exploratory forward stepwise regression with typicality as the dependent variable. The following factors were tested as independent variables: kinaesthesia of phantom sensations - the number of phantom digits perceived as independently moving during the phantom movement task; vividness of nonpainful phantom sensations as experienced both during the study and chronically; intensity of phantom limb pain, as experienced both acutely during the study and chronically; time since amputation; age at amputation, and; typicality of the intact hand (calculated from the intact hand SI area). The final model (F = 19.9, p<0.001, adjusted R2 = 0.645 included only kinaesthesia of phantom sensations (β = 0.07, t = 4.46, p<0.001) and the intercept (β = 0.52, t = 8.89, p<0.001). This regression was submitted to a bootstrapping analysis, allowing us to estimate the consistency of the final model (see Materials and methods). This bootstrapping analysis returned kinaesthesia as the final variable in 96.3% of the iterations (final model fit: median adjusted R2 = 0.645; 95% CI: 30-99%). The proportion of the other included factors in the final model was: typicality of the intact hand (7.0%); time since amputation (9.5%); age at amputation (9.6%); vividness of nonpainful phantom sensations (acute: 12.2%; chronic: 20.8%); phantom limb pain, acute: 22.7%; chronic: 10.1%).
 
@@ -63,7 +71,7 @@ Further analysis confirmed that the correlation between kinaesthesia and typical
 
 Regardless of the positive relationship between kinaesthesia and typicality, amputees with little to no kinaesthetic sensations still showed missing hand representation. As stated above, the regression line between kinaesthesia and typicality had an intercept of βintercept=.52. This was also the case when phantom vividness was the (non-significant) dependent variable (F = 0.021, p=0.89, Adjusted R2 = -.061; βintercept=.75, p<0.001). These results predict that even amputees who do not experience any phantom sensations will retain some typical missing hand representation. To test this prediction directly, we examined the three amputees in our dataset showing weak to no chronic phantom vividness (below 10/100). Despite not being able to experience clearly their phantom hand when performing the phantom movements task, these individuals showed high typicality (average typicality (rho) = 0.83). Moreover, when comparing their typicality to that found in the congenital one-handers (who were arguably better matched to this sub-group in terms of task demands), the amputees with diminished phantom sensations showed significantly stronger correlations with the canonical hand structure (Mann-Whitney U = 38, p=0.007). Typicality was not different between these three amputees and controls (Mann-Whitney U = 29, p=0.52, BF = 0.089). Together, these additional analyses confirm that the representational structures’ typicality in SI of amputees is still present in those with little to no phantom or kinaesthetic sensations.
 
-## Diminished missing hand representation in congenital one-handers even when task performance is matched
+### Diminished missing hand representation in congenital one-handers even when task performance is matched
 
 While the task involving phantom hand movements was suitable to test the persistence of missing hand representation in individuals with phantom sensations, it was not designed to rule out the existence of missing hand representation in congenital one-handers. Indeed, it is possible that congenital one-handers have typical sensorimotor representation of their missing hand, but they did not access it due to unnatural task demands (see Striem-Amit et al., 2015 for analogous results regarding visual cortex organisation in congenitally blind individuals).
 
@@ -93,21 +101,21 @@ To conclude, here we show that once sensorimotor hand-representation is formed, 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We tested 18 acquired amputees with an average of 18 years since amputation (mean age: 50 ± 12; eight left-handed; four female), 13 congenital one-handers (mean age: 46 ± 10; four left-handers; six female), and 12 two-handed control participants (mean age: 45 ± 15; five left-handers; five female). All amputees reported experiencing phantom sensations after amputation, but vividness of these sensations varied across participants at the time of the study (mean chronic vividness score 58 ± 38 on a 0–100 scale, as assessed using questionnaires [Makin et al., 2013b; Makin et al., 2015; Makin et al., 2013a; see Table 1 and Questionnaires section below for further details]). Three participants in the amputees group tested here also took part in our previous study (Kikkert et al., 2016). The congenital one-handers had never experienced any phantom sensations. In addition, we also recruited and excluded a further congenital one-hander (due to technical difficulties during data pre-processing) and two control participants (due to incomplete data collection and due to abnormal digit selectivity, i.e. more than three standard deviations from the mean).
 
 Recruitment was carried out in accordance with the University of Oxford’s Medical Sciences inter-divisional research ethics committee (MS-IDREC-C2-2015-012). Informed consent and consent to publish was obtained in accordance with ethical standards set out by the Declaration of Helsinki. Control participants were recruited as to match the other two groups in term of age, gender and handedness (with respect to the intact hand). When possible, control participants were friends and family of the one-handed participants. All participants were compatible with local magnetic resonance imaging (MRI) safety guidelines.
 
-## Experimental procedures
+### Experimental procedures
 
 The experimental procedures described in this manuscript were run as part of a larger study (the full study protocol can be found on https://osf.io/gmvua/). Here we focus on procedures related to the representation of the missing hand in amputees and congenital one-handers.
 
-## Questionnaires
+### Questionnaires
 
 To measure phantom sensations, as well as other demographic and clinical details of potential relevance to the missing hand representation, amputees and congenital one-handers completed a range of questionnaires (as summarised in Table 1). Amputees rated intensities of phantom sensations, using a 0–100 scale, as experienced during the last week (or in a typical week involving such sensations). Chronic phantom sensation was calculated by dividing intensity by sensations frequency (1- all the time; 2- daily; 3- weekly; 4- several times per month; and 5- once or less per month), as previously implemented (Makin et al., 2013b; Makin et al., 2015). Having used this measure in multiple studies with partly overlapping participant pools (Makin et al., 2013b; Kikkert et al., 2016; van den Heiligenberg et al., 2017) we can assess the consistency of this measure within participants and across studies (i.e. measure reliability). We found excellent inter-study consistency (intra-class correlation coefficient: 0.79, 95% CI: .48-.93, F(13,13)=8.46, p<0.001), when considering all amputees that participated in at least one other study (n = 14, earlier questionnaire taken 1–4 years before current study). In addition, participants reported the number of phantom digits that afford kinaesthetic sensations during volitional control of movements (kinaesthesia). This report was further validated by a demonstration of afforded phantom movements during the study’s main task with the intact hand, as detailed below.
 
-## MRI tasks
+### MRI tasks
 
 All participants underwent one experimental session with four fMRI runs, using a block-design. The task involved individual digit-movement blocks for each of the five digits (12 s blocks) of either hand, as well as no movement (rest) blocks. Each condition was repeated three times in a semi-counterbalanced order within each run. Each run comprised a different block order.
 
@@ -117,25 +125,25 @@ On ‘missing hand blocks’, participants were instructed to perform individual
 
 On ‘intact hand blocks’, all participants performed a comparable task with their intact/dominant hand by exerting force on a button box. Participants received real-time visual feedback of how much force each digit exerted by means of moving vertical bars on ‘intact hand blocks’, but not on ‘missing hand blocks’. The dominant hand of controls was paired up with the intact hand because, through intensive use, amputees’ and congenital one-handers’ intact hand becomes their de facto dominant hand (Philip and Frey, 2014). All groups were able to carry this task equally well, as verified in post-hoc analysis: each trial was assigned to the digit whose force output correlated most strongly with the instructed time course and the percentage of correctly performed trials, that is trials that were assigned to the instructed digit, was not different between congenital one-handers and amputees (74.2%, t(29)=1.13, p=0.266), or between congenital one-handers (81.1%) and controls (75.3%; t(23)=.93, p=0.362). This behaviour brought forth high representational typicality in intact SI for all three groups (controls: rho = 0.85; amputees: rho = 0.81; and congenital one-handers: rho = 0.89; group comparisons all p’s > 0.11).
 
-## MRI acquisition
+### MRI acquisition
 
 MRI images were acquired using a 3T MAGNETON Prisma MRI scanner (Siemens, Erlangen, Germany) with a 32-channel head coil. Functional images were collected using a multiband T2*-weighted pulse sequence with a between-slice acceleration factor of 4 and no in-slice acceleration. This provided the opportunity to acquire data with high spatial (2 mm isotropic) and temporal (TR: 1500 ms) resolution, covering the entire brain. The following acquisition parameters were used: TE: 32.40 ms; flip angle: 75°, 72 transversal slices. Field maps were acquired for field unwarping. A T1-weighted sequence was used to acquire an anatomical image (TR: 1900 ms, TE: 3.97 ms, flip angle: 8°, spatial resolution: 1 mm isotropic).
 
-## MRI analysis
+### MRI analysis
 
 MRI analysis was implemented using tools from FSL, SPM and Connectome Workbench software (Smith et al., 2004; Jenkinson et al., 2012, https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/, https://www.fil.ion.ucl.ac.uk/spm/, humanconnectome.org) in combination with other Matlab scripts (version R2016a), both developed in-house (Wesselink and Maimon-Mor, 2017) and as part of the RSA Toolbox (Nili et al., 2014). Cortical surface reconstructions were produced using FreeSurfer (Dale et al., 1999; Fischl et al., 2001, freesurfer.net).
 
-## fMRI pre-processing
+#### fMRI pre-processing
 
 Functional data was first pre-processed in FSL 5.0. The following steps were included: Motion correction using MCFLIRT (Jenkinson et al., 2002), brain extraction using BET (Smith, 2002), and high pass temporal filtering with a cut-off of 100 s. Co-registration to each individual anatomical T1 scan was accomplished using FLIRT and, where needed, manual adjustments were performed to ensure precise co-registration around the hand knob of the central sulcus.
 
 Anatomical T1 images were used to reconstruct the pial and white-grey matter surfaces using Freesurfer. Surface co-registration across hemispheres and participants was done using spherical alignment. Individual surfaces were nonlinearly fitted to a template surface, first in terms of the sulcal depth map, and then in terms of the local curvature, resulting in a nearly perfect overlap of the fundus of the central sulcus across participants (Fischl et al., 2008).
 
-## Regions of Interest (ROI) definition
+#### Regions of Interest (ROI) definition
 
 Since the focus of the study was on persistent sensory representation, our main analysis was restricted to the individualised hand-selective ROIs in SI. Further analysis was focused on the M1 hand areas. The ROIs were always in the hemisphere contralateral to the missing/nondominant hand. The anatomical ROIs were defined on the group surface using probabilistic cytotectonic maps aligned to the average surface (see Wiestler and Diedrichsen, 2013). These regions were then projected into the individual brains via the reconstructed individual anatomical surfaces. For the hand area of SI, we selected all surface nodes with the highest probability for any of BA3a, 3b, 1, and 2, surrounding the anatomical hand knob (Yousry et al., 1997). The hand area of M1 was selected similarly using BA 4. We note that given the probabilistic nature of these masks, the dissociation between SI and M1 is only an estimate. For one acquired amputee, surface alignment failed; for this subject, the ROIs were drawn manually within the surface ribbon using the above anatomical definitions. The ROIs were not significantly different in size across groups (one-way ANOVA on area volume: SI: F = 1.27, p=0.29; M1: F = 1.37, p=0.27). In addition, for control purposes, we also used an ROI of visual area V5 which we defined anatomically, based on the parameters previously published by Wiestler and Diedrichsen (2013). The ROI was constructed bilaterally and RSA outcome measures were averaged across both hemispheres.
 
-## fMRI analysis
+#### fMRI analysis
 
 Voxel-wise General Linear Model (GLM) analysis was carried out, as implemented in SPM12. In brief, each of the experimental conditions was modelled for each run separately against rest. Regressors were created by convolving stimulus presentation (as a boxcar function) with a double-gamma hemodynamic response function (HRF). In the GLM estimation, the functional data was weighted using the robust Weighted Least Squares approach (Diedrichsen and Shadmehr, 2005), which estimates the heteroscedasticity of the time series and then ‘soft’-excludes noisy image volumes (e.g. due to movement). Task-related activity was quantified by averaging the BOLD response, averaged across all digits, versus baseline within each ROI. The voxel-wise parameter estimates (hereafter: activity patterns) and residuals from this analysis were also used to calculate the dissimilarity, as detailed below.
 
@@ -147,10 +155,544 @@ As an aid to visualise the RDMs, we also used classical multidimensional scaling
 
 As mentioned above, to determine typicality we correlated RDM from the current study with the average representational structure of the dominant hand of two-handed controls, in an independently acquired cohort of participants. The full details of the acquisition parameters are described in Wesselink and Maimon-Mor, 2017. In short, eight two-handed participants performed an active digit tapping task using a button box (four repetitions per digit of 8 s blocks of 1 Hz single-digit presses), without online visual feedback. The data was acquired at 7T (TR: 2000 ms, TE: 25 ms, voxel size: 1 × 1×1 mm). The ROI was defined similarly to the SI ROI used in the current study.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistics were calculated using Matlab R2016a. Subsequent to normality validation (using the Shapiro-Wilk test), we used paired/independent-sample two-tailed Student’s t-tests to compare activity levels and distance measures within/between groups, and one-sample t-tests to compare group measures to zero. Correlations were calculated as Spearman’s rho. Partial correlation effects were calculated using linear regression. For the main analysis concerning RSA, within each ROI, group t-tests were adjusted to three comparisons, using the Bonferroni correction (α = 0.05/3), to account for the three inter-group comparisons. Post-hoc correlations between SI typicality and key clinical measurements (phantom sensations, phantom kinaesthesia and time since amputation) were also corrected for three comparisons (α = 0.05/3). One post-hoc comparison involving a small subset of amputees was done using a Mann-Whitney U test (see Results - section 2). For a control analysis, involving visual and somatosensory ROIs, we also used a mixed-design analysis of variance (ANOVA) to identify interactions across groups and ROIs.
 
 In order to assess whether any aspect of the representational structure in the amputees was not different from that in controls, we used Bayesian statistics as implemented in Javascript (Dienes, 2014; Singh, 2018). Our alternative hypothesis is that amputees have no preserved hand representation. To construct our prior (i.e. to quantify the effect of having hand representation) we calculated the effect size of controls’ nondominant hand representation vs. congenital one-handers missing hand representation. We then compared the effect size of amputees’ missing hand representation (compared to controls) against that prior. More specifically, our alternative hypothesis assumes an effect size following a one-tailed t-distribution centred at 0 and a width of the difference between congenital one-handers and controls. The measured difference between amputees and controls (also modelled as a t-distribution) are tested against this hypothesis. Support for the null hypothesis was interpreted as supporting preserved hand representation. While it is generally agreed that it is difficult to establish a cut-off for what consists sufficient evidence, we used the threshold of BF<1/3 as positive evidence in support of the null, consistent with others in the field regarding this threshold as providing substantial evidence (Wetzels et al., 2011; Dienes, 2014). Note, however, that this threshold is not considered as providing strong evidence by all accounts (Kass and Raftery, 1995).
 
 In order to gauge which aspects of phantom sensation and key demographics may relate to the amputees’ representational structure’s typicality, we performed an exploratory forward stepwise regression. The dependent variable was SI typicality in amputees. The following factors were used as independent variables (see also Table 1): typicality of the intact hand (rho; calculated from the intact hand SI area; time since amputation (in years); age at amputation (in years); vividness of nonpainful phantom sensations, as experienced during the study (on a 0–100 scale) and chronically (accounting for both intensity and frequency; Makin et al., 2013b); intensity of phantom limb pain, as experienced acutely during the study, and chronically (as detailed for nonpainful sensations). Only linear factors were considered, that is no interaction terms, and the criterion for inclusion was an increase in R2 >0.1. As a large number of predictor variables were included in the model and stepwise regression is generally only recommended for exploratory analysis, we aimed to establish internal replicability using bootstrap resampling (e.g. Thompson, 1995). In particular, we randomly sampled (with replacement) the full data matrix and repeated the stepwise regression 1000 times. We subsequently computed the proportion of bootstrap samples in which each factor was included in the final model, as well as confidence bounds on the model’s adjusted R2. We interpreted high proportion of inclusion (p>0.75) as evidence for internal replicability (Thompson, 1995).
+
+**Table 1.**
+ Summary demographic details and phantom sensations.Data is shown for amputees (AMP), controls (CTR) and congenital one-handers (1H). Congenital one-handers did not feel any phantom limb sensations. All controls have full kinaesthetic sensations. F: female, M: male. Side: side of missing hand; L: left, R: right. Amputation level: 1: shoulder, 2: above elbow; 3: at elbow; 4: below elbow; 5: at wrist. Kin: Phantom limb kinaesthesia (number of independent controllable parts of the hand), Viv: Chronic phantom limb vividness (0: no sensation, 100: intact hand’s vividness), Pain: Chronic phantom limb pain (0: no pain, 100: worst pain imaginable), AViv/APain: Acute Viv/Pain (on the scanning day), Std: standard deviation, ND: nondominant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">AMP</th>
+      <th rowspan="2">Age (years)</th>
+      <th rowspan="2">Sex</th>
+      <th colspan="4">Amputation</th>
+      <th colspan="5">Phantom sensations</th>
+    </tr>
+    <tr>
+      <th>Side</th>
+      <th>Years since</th>
+      <th>Age at (years)</th>
+      <th>Level</th>
+      <th>Kin (0-5)</th>
+      <th>Viv (0-100)</th>
+      <th>Pain (0-100)</th>
+      <th>AViv (0-100)</th>
+      <th>APain (0-100)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mean</td>
+      <td>50.4</td>
+      <td></td>
+      <td></td>
+      <td>17.6</td>
+      <td>32.9</td>
+      <td></td>
+      <td>3</td>
+      <td>58</td>
+      <td>46</td>
+      <td>65</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>St. dev.</td>
+      <td>12.1</td>
+      <td></td>
+      <td></td>
+      <td>10.4</td>
+      <td>11.8</td>
+      <td></td>
+      <td>2</td>
+      <td>38</td>
+      <td>37</td>
+      <td>30</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>A01</td>
+      <td>44</td>
+      <td>M</td>
+      <td>R</td>
+      <td>15</td>
+      <td>29</td>
+      <td>2</td>
+      <td>5</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>A02</td>
+      <td>53</td>
+      <td>M</td>
+      <td>L</td>
+      <td>32</td>
+      <td>21</td>
+      <td>2</td>
+      <td>5</td>
+      <td>50</td>
+      <td>100</td>
+      <td>60</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>A03</td>
+      <td>40</td>
+      <td>M</td>
+      <td>L</td>
+      <td>11</td>
+      <td>29</td>
+      <td>2</td>
+      <td>4</td>
+      <td>100</td>
+      <td>50</td>
+      <td>100</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>A04</td>
+      <td>51</td>
+      <td>M</td>
+      <td>L</td>
+      <td>32</td>
+      <td>19</td>
+      <td>2</td>
+      <td>5</td>
+      <td>100</td>
+      <td>0</td>
+      <td>100</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A05</td>
+      <td>27</td>
+      <td>F</td>
+      <td>R</td>
+      <td>7</td>
+      <td>20</td>
+      <td>4</td>
+      <td>2</td>
+      <td>50</td>
+      <td>40</td>
+      <td>60</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A06</td>
+      <td>71</td>
+      <td>M</td>
+      <td>R</td>
+      <td>16</td>
+      <td>55</td>
+      <td>2</td>
+      <td>1</td>
+      <td>20</td>
+      <td>85</td>
+      <td>60</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>A07</td>
+      <td>46</td>
+      <td>M</td>
+      <td>R</td>
+      <td>18</td>
+      <td>28</td>
+      <td>2</td>
+      <td>3</td>
+      <td>70</td>
+      <td>90</td>
+      <td>70</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>A08</td>
+      <td>56</td>
+      <td>M</td>
+      <td>L</td>
+      <td>26</td>
+      <td>30</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>40</td>
+      <td>10</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A09</td>
+      <td>64</td>
+      <td>M</td>
+      <td>L</td>
+      <td>31</td>
+      <td>33</td>
+      <td>2</td>
+      <td>4</td>
+      <td>100</td>
+      <td>40</td>
+      <td>100</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>A10</td>
+      <td>58</td>
+      <td>M</td>
+      <td>L</td>
+      <td>2</td>
+      <td>56</td>
+      <td>2</td>
+      <td>3</td>
+      <td>90</td>
+      <td>0</td>
+      <td>80</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A11</td>
+      <td>28</td>
+      <td>M</td>
+      <td>L</td>
+      <td>8</td>
+      <td>20</td>
+      <td>5</td>
+      <td>4</td>
+      <td>40</td>
+      <td>40</td>
+      <td>20</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A12</td>
+      <td>57</td>
+      <td>M</td>
+      <td>R</td>
+      <td>29</td>
+      <td>28</td>
+      <td>2</td>
+      <td>1</td>
+      <td>80</td>
+      <td>90</td>
+      <td>80</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>A13</td>
+      <td>50</td>
+      <td>F</td>
+      <td>L</td>
+      <td>1</td>
+      <td>49</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A14</td>
+      <td>52</td>
+      <td>M</td>
+      <td>R</td>
+      <td>27</td>
+      <td>25</td>
+      <td>2</td>
+      <td>5</td>
+      <td>100</td>
+      <td>80</td>
+      <td>80</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>A15</td>
+      <td>68</td>
+      <td>M</td>
+      <td>R</td>
+      <td>26</td>
+      <td>42</td>
+      <td>4</td>
+      <td>1</td>
+      <td>16</td>
+      <td>0</td>
+      <td>80</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A16</td>
+      <td>39</td>
+      <td>F</td>
+      <td>R</td>
+      <td>9</td>
+      <td>30</td>
+      <td>3</td>
+      <td>4</td>
+      <td>35</td>
+      <td>40</td>
+      <td>50</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>A17</td>
+      <td>58</td>
+      <td>M</td>
+      <td>L</td>
+      <td>12</td>
+      <td>46</td>
+      <td>4</td>
+      <td>5</td>
+      <td>2</td>
+      <td>0</td>
+      <td>65</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A18</td>
+      <td>46</td>
+      <td>F</td>
+      <td>L</td>
+      <td>14</td>
+      <td>32</td>
+      <td>4</td>
+      <td>3</td>
+      <td>80</td>
+      <td>30</td>
+      <td>50</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td rowspan="2">CTR</td>
+      <td rowspan="2">Age (years)</td>
+      <td rowspan="2">Sex</td>
+      <td>ND hand</td>
+      <td rowspan="2"></td>
+      <td rowspan="2">1H</td>
+      <td rowspan="2">Age (years)</td>
+      <td rowspan="2">Sex</td>
+      <td colspan="2">Missing hand</td>
+      <td rowspan="2" colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Side</td>
+      <td>Side</td>
+      <td>Level</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>45.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Mean</td>
+      <td>45.7</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>St. dev.</td>
+      <td>14.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>St. dev.</td>
+      <td>10.4</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C01</td>
+      <td>29</td>
+      <td>M</td>
+      <td>R</td>
+      <td></td>
+      <td>H01</td>
+      <td>41</td>
+      <td>M</td>
+      <td>L</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C02</td>
+      <td>24</td>
+      <td>F</td>
+      <td>L</td>
+      <td></td>
+      <td>H02</td>
+      <td>37</td>
+      <td>M</td>
+      <td>R</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C03</td>
+      <td>47</td>
+      <td>F</td>
+      <td>L</td>
+      <td></td>
+      <td>H03</td>
+      <td>31</td>
+      <td>F</td>
+      <td>L</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C04</td>
+      <td>39</td>
+      <td>M</td>
+      <td>L</td>
+      <td></td>
+      <td>H04</td>
+      <td>60</td>
+      <td>M</td>
+      <td>L</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C05</td>
+      <td>32</td>
+      <td>M</td>
+      <td>R</td>
+      <td></td>
+      <td>H05</td>
+      <td>39</td>
+      <td>F</td>
+      <td>L</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C06</td>
+      <td>53</td>
+      <td>F</td>
+      <td>R</td>
+      <td></td>
+      <td>H06</td>
+      <td>54</td>
+      <td>F</td>
+      <td>L</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C07</td>
+      <td>38</td>
+      <td>F</td>
+      <td>R</td>
+      <td></td>
+      <td>H07</td>
+      <td>34</td>
+      <td>M</td>
+      <td>L</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C08</td>
+      <td>67</td>
+      <td>M</td>
+      <td>R</td>
+      <td></td>
+      <td>H08</td>
+      <td>63</td>
+      <td>M</td>
+      <td>L</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C09</td>
+      <td>42</td>
+      <td>M</td>
+      <td>R</td>
+      <td></td>
+      <td>H09</td>
+      <td>44</td>
+      <td>F</td>
+      <td>R</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C10</td>
+      <td>41</td>
+      <td>M</td>
+      <td>R</td>
+      <td></td>
+      <td>H10</td>
+      <td>55</td>
+      <td>F</td>
+      <td>L</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C11</td>
+      <td>69</td>
+      <td>M</td>
+      <td>L</td>
+      <td></td>
+      <td>H11</td>
+      <td>46</td>
+      <td>M</td>
+      <td>R</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C12</td>
+      <td>63</td>
+      <td>F</td>
+      <td>L</td>
+      <td></td>
+      <td>H12</td>
+      <td>37</td>
+      <td>M</td>
+      <td>R</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>H13</td>
+      <td>53</td>
+      <td>F</td>
+      <td>L</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

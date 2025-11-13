@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.34292.001 Under hypoxic conditions, some organisms use an electron transport chain consisting of only complex I and II (CII) to generate the proton gradient essential for ATP production. In these cases, CII functions as a fumarate reductase that accepts electrons from a low electron potential quinol, rhodoquinol (RQ). To clarify the origins of RQ-mediated fumarate reduction in eukaryotes, we investigated the origin and function of rquA , a gene encoding an RQ biosynthetic enzyme. RquA is very patchily distributed across eukaryotes and bacteria adapted to hypoxia. Phylogenetic analyses suggest lateral gene transfer (LGT) of rquA from bacteria to eukaryotes occurred at least twice and the gene was transferred multiple times amongst protists. We demonstrate that RquA functions in the mitochondrion-related organelles of the anaerobic protist Pygsuia and is correlated with the presence of RQ. These analyses reveal the role of gene transfer in the evolutionary remodeling of mitochondria in adaptation to hypoxia.
+Under hypoxic conditions, some organisms use an electron transport chain consisting of only complex I and II (CII) to generate the proton gradient essential for ATP production. In these cases, CII functions as a fumarate reductase that accepts electrons from a low electron potential quinol, rhodoquinol (RQ). To clarify the origins of RQ-mediated fumarate reduction in eukaryotes, we investigated the origin and function of rquA, a gene encoding an RQ biosynthetic enzyme. RquA is very patchily distributed across eukaryotes and bacteria adapted to hypoxia. Phylogenetic analyses suggest lateral gene transfer (LGT) of rquA from bacteria to eukaryotes occurred at least twice and the gene was transferred multiple times amongst protists. We demonstrate that RquA functions in the mitochondrion-related organelles of the anaerobic protist Pygsuia and is correlated with the presence of RQ. These analyses reveal the role of gene transfer in the evolutionary remodeling of mitochondria in adaptation to hypoxia.
 
 ## Introduction
 
@@ -39,13 +39,13 @@ Mitochondrion-related organelles (MROs) are specialized mitochondria found in an
 
 ## Results
 
-## The phylogenetic distribution of rquA
+### The phylogenetic distribution of rquA
 
 RquA homologs were retrieved from various publicly available databases using the Rhodospirillum rubrum sequence as the query in sequence similarity searches. We retrieved a total of 182 sequences from unique taxonomic units (i.e., NCBI taxonomy ID) and reduced this dataset to 166 sequences based on a sequence identity cutoff of less than 90%. The rquA gene is extremely rare in bacteria and eukaryotes, and we could not identify homologs in any publicly available archaeal genomes. RquA genes are found among sparse representatives of only seven different orders of alpha-, beta- and gammaproteobacteria (Burkholderiales, Magnetococcales, Neisseriales, Rhizobiales, Rhodobacteriales, Rhodocyclales and Rhodospirillales). To investigate the phyletic distribution of rquA in alphaproteobacteria specifically, we performed a phylogenomic analysis of rquA-containing genomes and their rquA-lacking relatives (discussed below).
 
 Within eukaryotes, we identified rquA homologs in 24 representatives of four of the five super-groups of eukaryotes (Obazoa, Amoebozoa, Sar, and Excavata; Supplementary file 1). The gene could not be found in the vast majority of eukaryotic genomes and transcriptome surveys available on Genbank (summarized in Supplementary file 1). Note that the absence of rquA in some of these data (particularly the transcriptomes) may be due to a lack of depth of sequence sampling. Within breviates, we identified rquA in Pygsuia biforma, but not in its close relatives, Breviata anathema and Lenisia limosa, despite the ample genomic and transcriptomic data available for the latter (Hamann et al., 2016). We identified spliceosomal introns in the rquA genes in eukaryotic taxa for which genomic records were available (i.e., Proteromonas lacertae, Mastigamoeba balamuthi, Brevimastigomonas motovehiculus, Reticulomyxa filosa, and all the Blastocystis subtype genomes) indicating that these are in fact eukaryotic sequences and not prokaryotic contaminants (Figure 2—figure supplement 1). The Proteromonas and Blastocystis rquA gene sequences showed conservation of intron position and size. But none of the other eukaryotic rquA gene sequences (for which genomic sequence was available) shared intron positions. We did identify a potential contaminating sequence in the mollusk Aplysia (Bioproject:PRJNA77701, Accession number:GBCZ01101516). This homolog was 89% identical to the Neoparamoeba amino acid sequence and could derive from a Neoparamoeba-related parasite present in the Aplysia tissue. Indeed, we were able to identify small subunit sequence (GBCZ01078303.1) that is 93% identical to Neoparamoeba aestuarina in this sequencing project. For this reason, we excluded the latter from all subsequent analyses. Despite the presence of RQ in some animals (e.g., A. suum and C. elegans) we were unable to detect homologues of rquA in these genomes.
 
-## Phylogenetic analysis of bacterial and eukaryotic RquA homologs
+### Phylogenetic analysis of bacterial and eukaryotic RquA homologs
 
 Preliminary phylogenetic analyses showed that prokaryotic and eukaryotic RquA homologs formed a maximally supported clade that emerged from within a group of bacterial ubiquinone/menaquinone biosynthesis C-methyltransferase proteins (Supplementary file 2, tree 1). To explore the evolutionary history of this protein, the dataset was reduced to include only the RquA sequences for subsequent analyses (Figure 2, Supplementary file 2, tree 2). The deepest split in the RquA clade as shown is between two distinct groups of homologs (here referred to as Group A and B) composed of prokaryotic and eukaryotic sequences of mixed taxonomic affinities (Figure 2, Supplementary file 2, tree 2). This split receives maximal support in both ML and Bayesian analyses in the unrooted RquA tree (Figure 2, Supplementary file 2, tree 2), as well as the larger analysis (Supplementary file 2, tree 1).
 
@@ -53,23 +53,221 @@ The Group A clade comprises sequences from alphaproteobacteria, betaproteobacter
 
 In Group A, Blastocystis + Proteromonas (gut stramenopile protists) grouped strongly with the parasitic amoebozoan Neoparamoeba + Paramoeba clade and the euglenids, despite the fact that none of these lineages are closely related in the tree of eukaryotes (i.e. they branch from within the three fundamental eukaryotic ‘mega-groups’ of Diaphoretickes, Amorphea and Excavata respectively). A weakly supported sister group to this eukaryotic subtree was formed by a clade of homologs from six metagenome assembled genomes (MAGs) from a human gut metagenome study (Nielsen et al., 2014). These appear to be a subgroup of the Rhodospirillales alphaproteobacteria (see below and Figure 2—figure supplement 2), that we henceforth refer to as ‘MAG Azo/Aceto’ alphaproteobacteria. All other eukaryotes in Group A branch in distinct positions in the A-subtree, with very poor support in the backbone of the tree. The breviate Pygsuia, the rhizarian Brevimastigamonas and the amoebozoans Mastigamoeba and Copromyxa were also weakly excluded from the above eukaryote + ‘MAG Azo/Aceto’ alphaproteobacteria grouping; each of these instead branched independently amongst bacterial groups in Group A. Group B was similarly poorly resolved, although a number of branches separating the eukaryote groups from each other did receive ultrafast bootstrap support of >90% (Figure 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/34292/elife-34292-fig2-v3.jpg)
+
+**Figure 2.:** Eukaryotic proteins are coloured based on their phylogenetic affiliations: Obazoa (purple), Stramenopiles-Alveolata (orange), Excavata (green), Amoebozoa (magenta) and Rhizaria (blue). Hexagons represent taxa where RQ has been detected experimentally. Proteobacterial designations (α,β,γ) are indicated in the grey squares. Genetic linkage of rquA and genes related to respiratory function (complex I-IV, cytochrome c metabolism, or heme metabolism) are shown with chain-links and detailed in Supplementary file 1. When these indications are in a collapsed node, the number of genomes showing linkage are shown in brackets. Bootstrap values (or posterior probability) greater than 70 (0.7) and 90 (0.9) are shown with open circles (squares) or closed circles (squares) respectively. The presence of spliceosomal introns in the eukaryotic sequences are indicated with ‘i' in a box. Dashed branches were made shorter by 50% to facilitate visualization.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34292/elife-34292-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Nucleotide from both transcriptome and genomic sequencing projects (when available) were aligned using Sequencher (Gene Codes v 5.4.6) and introns were manually inspected for position, length and phase. The phase indicates the position of the intron relative to the codon where phase 0, 1 and 2 begin before the codon, in between position 1 and 2, or in between position 2 and 3 respectively. All introns were major spliceosomal introns with GT-AG boundaries. In general, intron positions and lengths were not conserved in distantly related species.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/34292/elife-34292-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Maximum likelihood analysis of a 200 phylum-specific phylogenetic marker genes representing 54,400 sites from 210 representative alphaproteobacteria under the LG + C60 + F (PMSF)+ Γ4 model of evolution implemented in IQ-TREE. Tree was rooted using an outgroup of other proteobacteria. Nodes with maximal support are unlabeled, while those with support values between 95–99 are labeled with squares. RQUA-containing taxa are coloured in purple or orange representing Group A and Group B type RQUA respectively. Orders of alphaproteobacteria are indicated on the right of the tree with a summary of the number of alphaproteobacterial genomes interrogated for RQUA presence/absence in Genbank (green box).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/34292/elife-34292-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Conserved residues known to interact with the carbonyl group of SAM are shown with black triangles. A substitution from aspartate to glutamine was obversed in all bacterial (represented here by Rhodospirillum rubrum) and eukaryotic RquA demonstrated with a open circle. Taxa are coloured with super-Group Affiliation as in Figure 2. Motif features: [VILFG]-[LIVCS]-[DENLV]-[VALMIT]-[GLYCFA]-[CSTAYFPAG]-[GA]-[PTSGNKRMV]-[GD]).
+
 We tested if several phylogenetic hypotheses could be significantly rejected by the data using approximately unbiased (AU) topology tests (Shimodaira, 2002) (Table 1, Supplementary file 2, trees 3–21). The first set of tests focused on the separate branching positions of eukaryotes in the overall RquA tree. A topology in which Group A and B eukaryotes were constrained to form a single clade in the tree to the exclusion of the bacterial sequences was strongly rejected (p-value = 3×10−37, Table 1, Supplementary file 2, tree 2). We further tested topologies constraining the monophyly of each of the major lineages of eukaryotes coloured in Figure 2 including: stramenopiles + alveolates (SA), stramenopiles + alveolates + rhizarians (SAR), opisthokonts + breviates, amoebozoans, Amorphea, Rhizaria, and Diaphoretickes. All topologies, except monophyletic amoebozoans (found only in Group A) were rejected with p-values < 0.05 (Table 1, Supplementary file 2 trees 2–15). Tests of relationships within Group A or within Group B separately revealed that monophyletic eukaryotes in each subtree could not be rejected if each were constrained one at a time (p-value = 0.253 for Group A eukaryote monophyly and p-value = 0.179 for Group B eukaryote monophyly).
+
+**Table 1.**
+ Approximate unbiased topology tests for RquA analyses.Table 1—source data 1.Topology test output from CONSEL.Trees 1-20 represent trees 2-21 from Supplementary file 2; trees 21-120 represent 100 bootstrap trees from the maximum likelihood analysis. Relevant column headers: Obs, observed log-likelihood value; au, topology test p-value; np, bootstrap probability. Details on the column headers can be found at http://stat.sys.i.kyoto-u.ac.jp/prog/consel/quick.htmlTable 1—source data 2.Topology test output from CONSEL.Trees 1-6 represent trees1-6 from Supplementary file 3; trees 7-106 represent 100 bootstrap trees from the maximum likelihood analysis. Relevant column headers: Obs, observed log-likelihood value; au, topology test p-value; np, bootstrap probability. Details on the column headers can be found at http://stat.sys.i.kyoto-u.ac.jp/prog/consel/quick.htmlTable 1—source data 3.Topology test output from CONSEL.Trees 1-5 represent trees 1-5 from Supplementary file 4; trees 6-105 represent 100 bootstrap trees from the maximum likelihood analysis. Relevant column headers: Obs, observed log-likelihood value; au, topology test p-value; np, bootstrap probability. Details on the column headers can be found at http://stat.sys.i.kyoto-u.ac.jp/prog/consel/quick.html
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Monophyly Tested</th>
+      <th>Tree file</th>
+      <th>CONSEL p-AUa</th>
+    </tr>
+    <tr>
+      <th colspan="3">Group A and Group B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Maximum likelihood tree</td>
+      <td>Figure 2; Supplementary file 2 - tree 2</td>
+      <td>0.743</td>
+    </tr>
+    <tr>
+      <td>Group A eukaryotes + Group B eukaryotes</td>
+      <td>Supplementary file 2 - tree 3</td>
+      <td>3.00E-37***</td>
+    </tr>
+    <tr>
+      <td>Group A1 eukaryotes: Blastocystis, Proteromonas, Neoparamoebids, Euglenids, Pygsuia</td>
+      <td>Supplementary file 2 - tree 4</td>
+      <td>0.622</td>
+    </tr>
+    <tr>
+      <td>Group A1 eukaryotes + Brevimastigamonas</td>
+      <td>Supplementary file 2 - tree 5</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <td>Group A1 eukaryotes + Brevimastigamonas + Mastigamoeba</td>
+      <td>Supplementary file 2 - tree 6</td>
+      <td>0.294</td>
+    </tr>
+    <tr>
+      <td>Group A eukaryotes</td>
+      <td>Supplementary file 2 - tree 7</td>
+      <td>0.253</td>
+    </tr>
+    <tr>
+      <td>Group B eukaryotes</td>
+      <td>Supplementary file 2 - tree 8</td>
+      <td>0.179</td>
+    </tr>
+    <tr>
+      <td>Obazoa (Pygsuia + Monosiga)</td>
+      <td>Supplementary file 2 - tree 9</td>
+      <td>0.002**</td>
+    </tr>
+    <tr>
+      <td>Amoerphea (Obazoa + Amoebozoa)</td>
+      <td>Supplementary file 2 - tree 10</td>
+      <td>1.00E-32***</td>
+    </tr>
+    <tr>
+      <td>Amoebozoa</td>
+      <td>Supplementary file 2 - tree 11</td>
+      <td>0.206</td>
+    </tr>
+    <tr>
+      <td>Stramenopiles + Alveolates</td>
+      <td>Supplementary file 2 - tree 12</td>
+      <td>0.004**</td>
+    </tr>
+    <tr>
+      <td>Stramenopiles + Alveolates + Rhizaria (SAR)</td>
+      <td>Supplementary file 2 - tree 13</td>
+      <td>0.034*</td>
+    </tr>
+    <tr>
+      <td>Diaphoretickes (SAR + Euglenids)</td>
+      <td>Supplementary file 2 - tree 14</td>
+      <td>0.018*</td>
+    </tr>
+    <tr>
+      <td>Rhizaria</td>
+      <td>Supplementary file 2 - tree 15</td>
+      <td>1.00E-60***</td>
+    </tr>
+    <tr>
+      <td>Eukaryotes + MAG alphaproteobacteria</td>
+      <td>Supplementary file 2 - tree 16</td>
+      <td>2.00E-41***</td>
+    </tr>
+    <tr>
+      <td>Group A eukaryotes + MAG alphaproteobacteria</td>
+      <td>Supplementary file 2 - tree 17</td>
+      <td>0.227</td>
+    </tr>
+    <tr>
+      <td>Alphaproteobacteria</td>
+      <td>Supplementary file 2 - tree 18</td>
+      <td>5.00E-34***</td>
+    </tr>
+    <tr>
+      <td>Eukaryotes + alphaproteobacteria</td>
+      <td>Supplementary file 2 - tree 19</td>
+      <td>8.00E-43***</td>
+    </tr>
+    <tr>
+      <td>Group A eukaryotes + Group A alphaproteobacteria</td>
+      <td>Supplementary file 2 - tree 20</td>
+      <td>3.00E-31***</td>
+    </tr>
+    <tr>
+      <td>Group B eukaryotes + Group B alphaproteobacteria</td>
+      <td>Supplementary file 2 - tree 21</td>
+      <td>4.00E-05***</td>
+    </tr>
+    <tr>
+      <td colspan="3">Group A</td>
+    </tr>
+    <tr>
+      <td>Maximum likelihood tree</td>
+      <td>Supplementary file 3 - tree 1</td>
+      <td>0.892</td>
+    </tr>
+    <tr>
+      <td>Eukaryotes</td>
+      <td>Supplementary file 3 - tree 2</td>
+      <td>0.225</td>
+    </tr>
+    <tr>
+      <td>Amoebozoa</td>
+      <td>Supplementary file 3 - tree 3</td>
+      <td>0.315</td>
+    </tr>
+    <tr>
+      <td>Pygsuia + Amoebozoa (Amorphea)</td>
+      <td>Supplementary file 3 - tree 4</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>Eukaryotes + alphaproteobacteria</td>
+      <td>Supplementary file 3 - tree 5</td>
+      <td>3.00E-59***</td>
+    </tr>
+    <tr>
+      <td>Eukaryotes + MAG alphaproteobacteria</td>
+      <td>Supplementary file 3 - tree 6</td>
+      <td>0.226</td>
+    </tr>
+    <tr>
+      <td colspan="3">Group B</td>
+    </tr>
+    <tr>
+      <td>Maximum likelihood tree</td>
+      <td>Supplementary file 4 - tree 1</td>
+      <td>0.827</td>
+    </tr>
+    <tr>
+      <td>Eukaryotes</td>
+      <td>Supplementary file 4 - tree 2</td>
+      <td>0.081</td>
+    </tr>
+    <tr>
+      <td>Stramenopiles + Alveolates</td>
+      <td>Supplementary file 4 - tree 3</td>
+      <td>0.287</td>
+    </tr>
+    <tr>
+      <td>SAR</td>
+      <td>Supplementary file 4 - tree 4</td>
+      <td>0.281</td>
+    </tr>
+    <tr>
+      <td>Eukaryotes + alphaproteobacteria</td>
+      <td>Supplementary file 4 - tree 5</td>
+      <td>2.00E-75***</td>
+    </tr>
+  </tbody>
+</table>
+
+_aitalicized values indicate topologies that could not be rejected (p<0.05).* 0.05 > p > 0.01** 0.01 > p > 0.001*** p < 0.001_
 
 Given that rquA is found in many different alphaproteobacteria, one possible explanation for the origin of these genes in these protists is that they were introduced into eukaryotes by the endosymbiotic alphaproteobacterial progenitor of mitochondria. A number topology tests were conducted to address this possibility. We first tested the monophyly of alphaproteobacteria as a whole (Supplementary file 2, tree 18) and found this was firmly rejected (p-value = 5×10−34), confirming our observation that alphaproteobacteria were phylogenetically interspersed throughout the RquA tree. We then tested: (i) the monophyly of eukaryotes + all alphaproteobacteria, (ii) the monophyly of all Group A eukaryotes + all Group A alphaproteobacteria, and the monophyly of all Group B eukaryotes + all Group B alphaproteobacteria. All of these topologies were rejected with p-values < 0.01 (Supplementary file 2, trees 18–21). However, a topology containing a clade of all Group A eukaryotes + ‘MAG Azo/Aceto’ alphaproteobacteria was not rejected (p-value = 0.227; Supplementary file 2, tree 17).
 
 To improve resolution of the RquA phylogeny by including more aligned sites, we analyzed Groups A and B independently (Supplementary file 3, Tree 1; Supplementary file 4, Tree 1). As in the full dataset analysis, all eukaryote lineages in each of Group A and B did not form single monophyletic groups and showed similar branching patterns to the full analysis. However, tests did not reject topologies constraining eukaryotes to form higher-order clades within each group (Table 1). Like in the full data set analysis, the Group A eukaryotes + ‘MAG Azo/Aceto’ alphaproteobacteria topology was not rejected, but the Group A eukaryotes + all Group A alphaproteobacteria (including the MAGs) topology was strongly rejected (p-value = 3×10−59). For Group B there were no alphaproteobacterial lineages particularly close to the eukaryotes in the phylogeny; eukaryotes tend to group with disparate betaproteobacteria in different parts of Group B). The test of a topology containing a clade of Group B eukaryotes + all Group B alphaproteobacteria resulted in strong rejection (p-value = 2×10−75).
 
-## The distribution of rquA amongst alphaproteobacteria
+### The distribution of rquA amongst alphaproteobacteria
 
 To further investigate whether Group A or Group B eukaryotic rquA homologs originated from the alphaproteobacterial mitochondrial endosymbiont, we investigated the representation and phylogenetic distribution of available rquA-containing alphaproteobacterial genomes. We assembled a phylogenomic matrix of 200 conserved ‘core’ proteins from the alphaproteobacteria (Wang and Wu, 2013) to place the rquA-containing alphaproteobacterial taxa from our analyses within the context of a representative alphaproteobacterial species tree. Note that the matrix was assembled in such a way to always represent rquA-containing taxa, with the remainder of alphaproteobacterial taxa sub-selected from available genomes to maximize diversity. A maximum likelihood phylogeny estimated from this matrix shows that rquA-encoding alphaproteobacterial genomes are patchily distributed, emerging as numerous isolated groups within several orders of the alphaproteobacteria (Figure 2—figure supplement 2). Group A- and Group B-containing taxa are interspersed. Genomes encoding the gene are extremely rare within the alphaproteobacterial orders. Five alphaproteobacterial orders (Rickettsiales, Holosporales, Pelagibacterales, Sphingomonadales, and Caulobacterales) had no rquA-containing taxa (out of a total of 455 genomes examined). The remaining three orders had rquA-containing taxa in 7 out of 514 (Rhizobiales), 6 out of 513 (Rhodobacterales) and 21 out of 217 (Rhodospirillales). The rquA-encoding ‘MAG Azo/Aceto’ alphaproteobacteria branch from within the Rhodospirillales as sister to another rquA-containing group. It is notable that these latter taxa branch separately the RquA phylogeny (Figure 2).
 
-## Genomic context and primary sequence analysis of RquA
+### Genomic context and primary sequence analysis of RquA
 
 To determine if rquA is genetically linked to other potential RQ biosynthesis genes, the genomic context of rquA in the various bacterial genomes was investigated (chain link icons in Figure 2, Supplementary file 1). RquA genes do not appear to be located near genes encoding other hypothetical proteins or candidate quinone biosynthesis enzymes. However, in many of the bacterial genomes, rquA is encoded close (i.e., within 15 genes) to the genes encoding respiratory complexes (e.g., complex I, II, or III), respiration-associated functions (e.g., cytochrome, ubiquinone, and heme biosynthesis) (Figure 2, Supplementary file 1), and/or anaerobiosis-associated proteins (e.g., [NiFe]-hydrogenase, nitrate reductase, [FeFe]-hydrogenase). The genetic proximity we observed between rquA and genes encoding CII and other respiratory subunits suggests they could be transcriptionally linked in an operon in these bacteria. Furthermore, in 12 of these bacteria, there is second frd/sdh operon located elsewhere in the genome suggesting that a different complex might be expressed under low versus high oxygen conditions, as was shown for E. coli (Jones and Gunsalus, 1985) and Ascaris suum (Iwata et al., 2008).
 
 Examination of the primary sequence of the bacterial and eukaryotic RquA homologs suggest that these proteins belong to a family of Class I S-adenosyl methionine (SAM) methyltransferases, which includes the UQ methyltransferases UbiE (pfam08241). A survey of methyltransferases identified four distinct motifs common to most class I SAM methyltransferases (motif I, motif post-I, motif II and motif post-II) that are crucial for protein folding and SAM binding (Petrossian and Clarke, 2009). While three of these motifs are conserved in RquA sequences, the SAM-binding motif I is different when compared to other Class I SAM-methyltransferases (Figure 2—figure supplement 3). Like the bacterial RquA sequences discussed by Lonjers and colleagues (Lonjers et al., 2012), the eukaryotic RquA sequences have substitutions in key SAM binding sites (Figure 2—figure supplement 3).
 
-## The distribution of quinone-utilizing enzymes in eukaryotes
+### The distribution of quinone-utilizing enzymes in eukaryotes
 
 RQ is known to function as an electron carrier between complex I, complex II and other UQ-utilizing enzymes such as electron transferring flavoprotein dehydrogenase (Ma et al., 1993). If RquA is in fact synthesizing RQ in the eukaryotes presented here, then these organisms must encode at least two types of RQ-utilizing enzymes: those that reduce RQ and others that reoxidize it. To test this hypothesis, we searched for genes encoding the following quinone-utilizing enzymes that could possibly interact with RQ in the rquA-containing eukaryotic genomes and transcriptomes: the respiratory complexes (CI, CIII); quinone biosynthesis enzymes, COQ1-7; alternative oxidase (AOX); dihydroorotate dehydrogenase (DHOD); electron transferring flavoprotein system (ETF) (made up of ETFα and β; ETF dehydrogenase, ETFDH); glycerol-3-phosphate dehydrogenase (G3PDH); and sulfide:quinone oxidoreductase (SQO). All rquA-containing eukaryotes including the MRO-containing protists (e.g., Pygsuia, Mastigamoeba and Blastocystis) possess at least CII and ETF as well as up to four other quinone-utilizing complexes (Figure 3; Supplementary file 1). Whereas most aerobic model system eukaryotes possess the majority of these Q-utilizing systems in their mitochondria (Marreiros et al., 2016), the anaerobic protists that completely lack them, such as Giardia intestinalis, Trichomonas vaginalis and Entamoeba histolytica, also lack rquA (Figure 3).
 
@@ -77,31 +275,45 @@ RQ is known to function as an electron carrier between complex I, complex II and
 
 **Figure 3.:** Eukaryotic genomes and transcriptomes were surveyed for homologs of respiratory chain components (Complexes I-V, CI-CV), alternative oxidase (AOX), dihydroorotate dehydrogenase (DHOH), electron-transferring flavoprotein system (ETF), glycerol-3-phosphate dehydrogenase (G3P), sulfite:quinone oxidoreductase (SQO), RquA, and one or more anaerobiosis-associated protein (AAP; detailed in Supplementary file 1). Grey and white circles indicate that homologs were not detected in transcriptome and genome sequence data respectively. Half circle in CI for Pygsuia biforma and Trichomonas vaginalis indicates only two subunits (NUOE and NUOF) were identified. ‘ψ ‘indicates pseudogenes.
 
-## Subcellular localization of RquA and RQ production in Pygsuia biforma
+### Subcellular localization of RquA and RQ production in Pygsuia biforma
 
 In many eukaryotes, UQ biosynthesis occurs in the mitochondrion (Tran and Clarke, 2007), and since UQ is a known precursor to RQ in R. rubrum (Brajcich et al., 2010) it is possible that RQ biosynthesis (and therefore RquA) would also be localized to mitochondria (or MROs). To test if eukaryotic RquA homologs could function in mitochondria, we evaluated the presence of N-terminal mitochondrial targeting signals (MTS) using publically available software tools (Claros and Vincens, 1996; Emanuelsson et al., 2000; Fukasawa et al., 2015). Each eukaryotic sequence that was full-length had a predicted MTS by at least two of these predictors (Supplementary file 1). To experimentally test these predictions, we used spinning-disk confocal microscopy to localize RquA by indirect immunofluorescence microscopy in the anaerobic protist Pygsuia biforma. The immunofluorescence detection of RquA using antibodies raised against Pygsuia RquA produced puncta that co-localized with the mitochondrion-reactive stain MitoTracker in Pygsuia (Figure 4, Figure 4—figure supplement 1), which indicates this protein functions in the MROs of this organism.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/34292/elife-34292-fig4-v3.jpg)
+
+**Figure 4.:** (A) Antibodies raised against RquA (green) colocalized with MitoTracker (red). Confocal slices (0.3 μm) were deconvoluted (using a constrained interative algorithm) and combined to render a 3D image. DAPI stained nuclei (blue) were volume rendered in Imaris for clarity. (B) Lipid extracts were separated by liquid chromatography and analyzed with selected-reaction monitoring mass spectrometry. Rhodoquinone species eluted from the column in roughly 3 min intervals as chain length increases (RQ8-10). Diagnostic product ions corresponding to the rhodoquinone head group (182.1 m/z) following fragmentation of parent ions were detected.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/34292/elife-34292-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Proteins isolated from whole cell extracts of E. coli induced to express pGEX4T-1 (1) and pGEX- Pb-rquA (2) and glutathione-S-transferase(GST)-Pb-rquA purified with glutathione magnetic beads (3) were resolved by SDS-PAGE and probed by immunoblotting using anti- PbRquA. The estimated molecular weight of the GST-PbRquA is 56 kDa (i.e., 26 kDa GST and 30 kDa for PbRquA). The antibody interacted with an endogenous E. coli protein (1 and 2, lower signal) and this signal was mostly reduced upon purification of the protein (3).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/34292/elife-34292-fig4-figsupp2-v3.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/34292/elife-34292-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** Spectra represent the elution times of detection of the rhodoquinone head group (182.1 m/z; left) and ubiquinone head group (197.1 m/z) following fragmentation of parent ions of different isoprenyl chain lengths as indicated.
 
 To test whether the presence of rquA in Pygsuia correlates with the production of RQ, we examined its quinone content by selected-reaction monitoring (SRM) mass spectrometry. We first determined the high-performance liquid chromatography retention times and fragmentation patterns of different isoprenylated states of rhodoquinone and ubiquinone (e.g., RQ3, RQ8-10, and UQ8-10; Figure 4, Figure 4—figure supplement 2). With these parameters determined, we investigated the lipid components of Pygsuia biforma (grown with a mixed culture of prokaryotes) and the prokaryote community (grown without Pygsuia). In the first community, but not the second, we observed three species that correlated with the retention times and fragmentation profiles of RQ8-10 (Figure 4, Figure 4—figure supplement 3) suggesting that Pygsuia biforma synthesizes RQ.
 
 ## Discussion
 
-## Origin of RquA and rhodoquinone biosynthesis
+### Origin of RquA and rhodoquinone biosynthesis
 
 The ability to produce RQ and use fumarate as a terminal electron acceptor in the mitochondrial ETC appears to be an adaptation to low-oxygen conditions that is present in many independent eukaryote lineages. Our examinations of publicly available genome and transcriptome sequence data, revealed genes encoding the RQ biosynthesis protein RquA in multiple, and yet sparsely distributed, lineages of eukaryotes and bacteria. Our preliminary phylogenetic analysis revealed that all RquA homologs evolved from within a larger clade of proteobacterial Class I SAM-dependent methyltransferases. The closest homologs of RquA are, in fact, members of the UQ biosynthesis pathway. Interestingly, previous reports have demonstrated that RQ is synthesized from UQ, and not a precursor of UQ in R. rubrum (Brajcich et al., 2010). Therefore, it seems plausible that RquA originally evolved from a family of proteins already capable of binding UQ or similar molecules and eventually gained a new enzymatic activity to function in RQ biosynthesis.
 
 Within the eukaryote domain, interactions between redox proteins and RQ have only been investigated in detail in Ascaris suum, Caenorhabditis elegans, and Euglena gracilis (Kita et al., 1988; Takamiya et al., 1999; Hoffmeister et al., 2004; Castro-Guerrero et al., 2005). While rquA is found in the transcriptome of E. gracilis, we could not detect homologs in the genomes of A. suum, C. elegans or closely related helminths and nematodes. This suggests that the RQ biosynthesis pathway of these metazoans may not be related to the RquA-based system and that these organisms have convergently evolved the capacity to synthesize and utilize RQ in adaptation to hypoxia.
 
-## Eukaryotic RquA likely functions in mitochondria
+### Eukaryotic RquA likely functions in mitochondria
 
 The terminal steps of UQ biosynthesis typically occur in mitochondria (Tran and Clarke, 2007). Assuming that UQ is a precursor of RQ (Brajcich et al., 2010), RQ biosynthesis could also occur in the mitochondrion or MROs of eukaryotes. However, not all of the eukaryotes shown to have rquA have the genetic repertoire necessary for endogenous UQ biosynthesis (Supplementary file 1). While the exact mechanisms of how exogenous UQ is transported into model eukaryotic cells is unknown (Padilla-López et al., 2009), studies have demonstrated that mouse cells preferentially incorporate exogenously supplied UQ into mitochondrial membranes (Lapointe et al., 2012). We propose that these heterotrophic protists obtain UQ from their bacterial prey, and convert this UQ to RQ by RquA in their MROs.
 
 All of the eukaryotic homologs of RquA with complete N-termini have predicted mitochondrial targeting signals suggesting mitochondrial localization (Supplementary file 1). These predictions were experimentally validated for Pygsuia biforma using immunofluorescence microscopy; RquA localizes to the MRO in these cells (Figure 4). In model organisms, most of the enzymes that use UQ as an electron carrier are also found in mitochondria, such as CI, CII, alternative oxidase, and the electron transferring flavoprotein/dehydrogenase system (Wang and Hekimi, 2016). Interestingly, every eukaryotic organism that encodes RquA (including anaerobes with a reduced electron transport chain) also encodes CII and at least one other UQ-utilizing enzyme (minimally CII and ETF; Figure 3, Supplementary file 1). Since some of these proteins have been shown to interact with RQ in Ascaris suum (Ma et al., 1993; Iwata et al., 2008), it seems likely that the UQ-utilizing complexes of RquA-containing eukaryotes, are also capable of using RQ as a cofactor under certain conditions (i.e., anoxia).
 
-## The evolutionary history of RquA in bacteria
+### The evolutionary history of RquA in bacteria
 
 Our detailed analyses of the RquA phylogeny revealed that the relationships between sequences is incongruent with expected organismal relationships for both the eukaryotes and bacteria. RquA is extremely rare and patchily distributed over the backbone phylogeny of the groups of organisms in which it is found. Amongst bacteria, rquA is found in only 36 genomes of 2040 alphaproteobacteria, 59 out of 946 genomes of betaproteobacteria, and 2 out of 2493 genomes of gammaproteobacteria present in Genbank (September 2017). If one were to explain the bacterial rquA distribution by vertical inheritance alone, the gene would have had to have been present in the common ancestor of alpha-, beta- and gammaproteobacteria, and been lost potentially hundreds of times independently in the various members of the phyla that do not encode rquA. Our investigation of the phylogenetic distribution of rquA amongst alphaproteobacterial genomes specifically confirms this interpretation; the gene is extremely patchily distributed amongst orders of alphaproteobacteria and is completely absent from five of these orders. This is consistent with the rejection of alphaproteobacterial monophyly in the RquA phylogeny (Table 1). It is therefore extremely difficult to determine in which group of bacteria rquA might have originated. The ‘scrambled’ phylogenetic affinities amongst bacterial rquA homologs is a relatively common phenomenon for genes encoding enzymes in bacteria because of the high rate of LGT in prokaryotic genome evolution (Eisen, 2000; Ochman et al., 2000; Kunin and Ouzounis, 2003).
 
-## The evolutionary history of RquA in eukaryotes
+### The evolutionary history of RquA in eukaryotes
 
 The non-monophyly of all eukaryote RquA homologs coupled with the rarity and patchy distribution of the gene amongst eukaryotes (Figure 2) argues against a simple vertical inheritance explanation. Our topology tests clearly indicate that a single global eukaryotic rquA clade and any higher-order grouping of Group A and B eukaryote sequences are strongly rejected by the data. However, within Group A and Group B, the monophyly of eukaryotic homologs cannot be rejected. Therefore, at the very least, Group A and Group B rquAs were introduced as different genes into eukaryotic genomes. The presence of rquA in some alphaproteobacterial genomes makes an endosymbiotic origin of eukaryote rquA an attractive hypothesis. If both A- and B-types of rquA had an endosymbiotic origin and were strictly vertically inherited within eukaryotes, then the endosymbiotic progenitor of mitochondria must have encoded both types. This is improbable given that no bacterium or eukaryote currently known (out of 182 organisms possessing the gene) encodes both types. However, it is also possible that either Group A or Group B rquAs in eukaryotes had an endosymbiotic origin and the other type was later re-acquired by bacteria-to-eukaryote LGT after loss of the ancestral endosymbiotic type. Of the two types, Group A rquA seems to be a more likely candidate for a mitochondrial origin since a Group A eukaryotes + ‘MAG Azo/Aceto’ alphaproteobacteria clade is not rejected in RquA topology tests. However, there are several problems with this scenario. First, ‘MAG Azo/Aceto’ alphaproteobacteria are a subgroup emerging from within the Rhodospirillales alphaproteobacteria (Figure 2—figure supplement 2) and are not recovered as the sister group of mitochondria in recent phylogenomic analyses. Such analyses suggest that mitochondria are either related to the Rickettsiales (Wang and Wu, 2015) and/or Pelagibacteriales (Thrash et al., 2011), or emerge as an independent deep branch within alphaproteobacteria (Martijn et al., 2018 ). Since rquA is completely absent from Rickettsiales and Pelagibacteriales, and is very unlikely to be ancestral to alphaproteobacteria as a whole (Figure 2—figure supplement 2), a mitochondrial origin for eukaryotic homologs seems unlikely.
 
@@ -111,7 +323,7 @@ Collectively these lines of evidence suggest that neither A- nor B-types of rquA
 
 In any case, after the initial lateral transfer of A- and B-type genes into recipient eukaryotes, the rquA sequences must then have acquired mitochondrial targeting sequences (MTS). The subsequent transfers of MTS-containing rquA genes between different eukaryotes could then have allowed them to adapt their mitochondrial ETCs to low-oxygen conditions. Additional data from more eukaryotic and prokaryotic taxa harbouring rquA (perhaps from metagenomic investigations of low-oxygen environments) should improve the resolution of the phylogeny and will allow the relative merits of the various evolutionary origin scenarios to be re-assessed in future.
 
-## RquA function and the ‘transferability’ of RQ biosynthesis between organisms
+### RquA function and the ‘transferability’ of RQ biosynthesis between organisms
 
 The role and enzymatic activity of RquA in this reaction is currently unclear. Lonjers et al. (2012) outline three hypotheses for the role of RquA in RQ biosynthesis. The first hypothesis is that RquA could serve a regulatory role in the expression of currently unknown RQ biosynthesis proteins. Since the vast majority of mitochondrial proteins (and all of those involved in quinone biosynthesis) are encoded by nuclear genes and we have shown that RquA functions in mitochondria, it is unlikely that RquA has a role in regulating the expression of such genes in the nucleus (although it could participate in post-transcriptional, or post-translational regulation).
 
@@ -119,7 +331,7 @@ A second hypothesis is that UQ and RQ are synthesized by different multi-enzyme 
 
 The final hypothesis is that RquA is directly involved in catalyzing the conversion of UQ to RQ. Since RquA is related to the quinone biosynthesis enzyme UbiE/Coq5 (Supplementary file 2, tree 1), RquA very likely can bind to UQ-like molecules. Although it is tempting to suggest that RquA directly converts UQ to RQ in one step, no enzyme is known that catalyzes a one-step amino-transfer reaction with a methoxy leaving group. It seems more plausible that either: (i) RquA alone catalyzes a multi-step reaction sequence, or, (ii) is one enzyme in a multi-step pathway involving at least a demethylation step followed by an amino-transfer reaction. We were unable to find any other enzyme with the same restricted phylogenetic distribution as rquA amongst bacterial or eukaryotic homologs using phylogenetic profiling (i.e., assessing co-presence of genes within rquA-containing but not rquA-lacking organisms). Therefore, it seems likely that, if option (ii) were correct, another broadly-conserved enzyme with a different main biochemical function in bacteria and in mitochondria could, as a moonlighting side-reaction, catalyze a step of RQ biosynthesis. Under either of these scenarios, then, the lateral transfer of the rquA gene could, in principle, confer on the recipient the ability to convert UQ to RQ. Clearly, further experimental work will be needed to test these hypotheses.
 
-## Remodeling of the electron tansport chain
+### Remodeling of the electron tansport chain
 
 Some of us have previously advanced a hypothetical scenario that proposes evolutionary steps by which the diverse types of anaerobic mitochondrion-related organelles might have evolved in protistan lineages adapted to transient or permanent hypoxia from predominantly aerobic ancestors (Stairs et al., 2015). The acquisition of rquA by LGT as described herein, was a key early step in these transitions; the selective benefit of this acquisition seems relatively clear. For example, assuming that the ancestral mitochondrial metabolism of many aerobic protistan groups resembled that of modern model system eukaryotes (Figure 5, ‘aerobic mitochondria’), it is likely that they would occasionally encounter transient low-oxygen conditions regardless of whether they are in marine, freshwater, or terrestrial environments. During transient exposure to anoxia, it is known from model systems that CIII and CIV fail to function efficiently and are downregulated (Vijayasarathy et al., 2003; Fukuda et al., 2007). Furthermore, under hypoxic conditions (e.g., in ischemia-reperfusion injury or solid tumours), shifts in mitochondrial metabolism occur: reduced UQ (UQH2) builds up because of the lack of CIII/CIV activity, the NADH/NAD + ratios increase as CI throughput is repressed, and part of the TCA cycle reverses (Tomitsuka et al., 2010; Chouchani et al., 2014). Under these conditions, malate is imported from the cytosol (or produced in mitochondria) and is converted to fumarate by fumarase. At sufficiently high UQH2 and fumarate concentrations, CII will function in fumarate reduction to regenerate UQ (Ackrell et al., 1993) and succinate. This ‘NADH:fumarate reductase system’ allows CI to continue to function to pump protons and oxidize NADH (Tomitsuka et al., 2010). Under these conditions, however, it is known that CI and CII produce high levels of toxic reactive oxygen species (ROS) Tomitsuka et al., 2010; Chouchani et al., 2014. Thus, if an organism frequently encountering these low-oxygen conditions were to acquire rquA by LGT and express the gene, the organism would able to synthesize and utilize low electron potential RQ as an electron carrier. RQ would greatly enhance the efficiency of the LGT recipient’s NADH:fumarate reductase system leading to an increase in proton pumping of CI, restoration of ATP synthesis and decreased ROS production.
 
@@ -129,25 +341,25 @@ Some of us have previously advanced a hypothetical scenario that proposes evolut
 
 The foregoing scenario is likely why rquA was retained after acquisition by protists with canonical mitochondria that can function aerobically and anaerobically such as Euglena (Hoffmeister et al., 2004; Castro-Guerrero et al., 2005) and a number of the ciliates (Figure 2). We propose that the acquisition of rquA is likely one of the first steps in the evolution of anaerobic MROs found in protists such as Brevimastigamonas, Blastocystis, Mastigamoeba, and Pygsuia. In these lineages, there has been further reductive evolution in their ETC, as they have adapted to thrive predominantly in hypoxic environments. For example, CIII and CIV of the electron transport chain of the recently described rhizarian anaerobe Brevimastigamonas motovehiculus appears to be degenerating with components missing or becoming pseudogenes (Gawryluk et al., 2016). The parasites Blastocystis spp. have gone further in this reduction; they completely lack CIII-CV (Lantsman et al., 2008; Stechmann et al., 2008; Gentekaki et al., 2017) and therefore none of their ATP is produced by oxidative phosphorylation. The most reduced ETCs amongst organisms with RquA occur in Pygsuia biforma and Mastigmoeba balamuthi (Figure 5), as both completely lack CI, CIII, CIV and CV. In the absence of CI, it is unclear how these two organisms can be reducing the oxidized RQ produced by CII. Most of their quinone-binding proteins typically catalyze redox reactions with reduction potentials far greater than RQ reduction and thus would be expected to oxidize RQH2 rather than do the opposite. One possibility is that the electron transferring flavoprotein (ETF)/ETF-dehydrogenase (ETF-DH) systems of these organisms (which usually function in fatty acid oxidation) are able to gain electrons by oxidizing reduced NADH. This could occur by electron bifurcation with butyryl-CoA dehydrogenase, as is known to occur in some bacteria (Chowdhury et al., 2014; Chowdhury et al., 2015). These bacterial ETF alpha and beta subunits can coordinate two FAD cofactors (instead of one as in mitochondrial ETF), allowing for electron bifurcation (Roberts et al., 1996; Chowdhury et al., 2015). An alternative possibility in Pygsuia is that NADH oxidation could be achieved by two remaining conserved subunits of CI, NuoE and NuoF (Stairs et al., 2015), working together with ETF/ETF-DH system. NuoE and F are thought to be involved in oxidation of NADH and ferredoxin in conjunction with [FeFe]-hydrogenase in many anaerobic protists to produce molecular hydrogen (Stairs et al., 2015; Hamann et al., 2016). In any case, if ETF could oxidize a low redox potential cofactor (e.g., NADH and/or ferredoxin), it could pass the electrons on ETF-DH (present in both Pygsuia and Mastigameoba) that could replenish the RQH2 pool in these organisms (shown by arrows in Figure 5). Biochemical studies of the ETCs in these anaerobic protists will be critical to test these hypotheses.
 
-## Conclusions
+### Conclusions
 
 The gene encoding RquA, an enzyme required to synthesize RQ, was likely transferred from bacteria to various eukaryote lineages by multiple independent events of LGT, well after the establishment of mitochondria within eukaryotes. RquA was then subsequently transferred between some eukaryotes via LGT, although the directions of these transfers cannot be easily discerned. Regardless, these LGTs likely conferred the ability to biosynthesize RQ in mitochondria, making it possible for complex II to efficiently reduce fumarate to succinate, allowing the recipient eukaryotes to respire in the absence of oxygen. This is a stark example of how laterally acquired enzymes can interface with ancestral pathways in mitochondria to rapidly adapt these organelles to low oxygen conditions (Stairs et al., 2014; Nývltová et al., 2015).
 
 ## Materials and methods
 
-## Culturing and microscopy
+### Culturing and microscopy
 
 Cultures of Pygsuia biforma were maintained in American Type Culture Collection medium 802 prepared in natural seawater as described previously (Brown et al., 2013; Stairs et al., 2014). Cells were grown in 15 mL culture tubes filled with media and supplemented with Klebsiella pneumonia. The protein sequence of Pygsuia RquA was provided to Genscript for antigen design and the most antigenic peptide sequence (CGGKAVFIDYGRPST) was selected for optimal for immunization. Antibodies were generated in rabbits and affinity purified by Genscript. A dilution of 1:200 as used for immunofluorescence on Pygsuia cells as described previously (Stairs et al., 2014) . Fluorescence micrographs were deconvolved using a constrained interative algorithm in Slidebook 6 (Intelligent Imaging Innovations, Boulder, CO) and 3D images was rendered using Imaris 7.1 software (Bitplane Inc. South Windsor, CT).
 
-## Molecular biology
+### Molecular biology
 
 The Pygsuia rquA gene was amplified from cDNA using primers designed with BamHI restriction enzyme recognition sites near their 5’-ends (Pb-rquA-forward CCGGATCCATGAATTCTTTAAGAATTAC and Pb-rquA-reverse CCCGGATCCTGCAATGCGGTGTGCAACAACC; restriction enzyme recognition sites are underlined). The amplicons were purified and cloned into the sequencing vector pCR4 (Life Technologies, Carlsbad, California) by TA-cloning. Plasmids (pCR4-Pb-rquA) were purified from transformed E. coli using the Nucleospin plasmid purification kit (Machery Nagel, Germany) and screened for correct sequence (Genewiz, South Plainfield, New Jersey). Destination plasmid pGEX-4T-1 (GE healthcare, Chicago, Illinois ) and pCR4-Pb-rquA were digested with BamHI (ThermoFisher, Waltham, Massachusetts). Fragments were purified using the Extract II kit (Machery Nagel) and cloned by standard protocols to generate pGEX-Pb-rquA.
 
-## Heterologous expression of proteins in E. coli and immunoblotting
+### Heterologous expression of proteins in E. coli and immunoblotting
 
 Plasmids (pGEX-Pb-rquA) were transformed into E. coli (strain BL21) for protein expression. Protein expression was induced by the addition of 1 mM isopropyl β-D-1-thiogalactopyranoside (Sigma, Saint Louis, Missouri) to the culture medium of exponentially growing cells and allowed to grow for an additional 4–6 hr. Proteins were isolated from E. coli cells: (i) induced to express the Pygsuia protein (GST-RquA) or (ii) induced to express only the GST protein or (iii) that were not induced to express protein. After protein expression, E. coli cells were collected by centrifugation (4000 x g, 5 min, 4°C) and lysed by French press (7000 psi). Unbroken cells and debris were removed by centrifugation (4000 x g, 5 min, 4°C). The resulting supernatant was saved for subsequent analysis and recombinant protein was isolated using glutathione-magnetic beads (ThermoFisher; GST-tag) according to the protocol of the manufacturer. Crude cell lysates and purified RquA were denatured in sample loading buffer (Sigma), boiled for 5 min, and resolved by SDS-PAGE (12%). Proteins were transferred to PVDF membranes (Turbo Blot membranes, Biorad, Hercules, California) that were then incubated in blocking buffer (5% skim milk powder, TBS, 0.5% Tween 20) for 1 hr. Anti-Pygsuia RquA antibodies were diluted in blocking buffer (1:500) and incubated with membranes overnight. Following three washes in TBS-tween (TBS, 0.5% Tween 20), membranes were incubated with horseradish peroxidase-conjugated goat anti-rabbit secondary antibodies in blocking buffer (1:50000, Sigma), washed in TBS-tween and incubated with enhanced chemiluminesence substrate (GE Healthcare) and visualized using a charge-coupled-device chemiluminescence detector (Protein Simple, San Jose, California).
 
-## Phylogenetic dataset construction and sequence analysis
+### Phylogenetic dataset construction and sequence analysis
 
 For the phylogenomic analysis of alphaproteobacteria, predicted proteomes were downloaded from National Centre for Biotechnology and Information (http://www.ncbi.nlm.nih.gov/) protein database. Gene markers were identified using the Phyla-AMPHORA pipeline (Wang and Wu, 2013). Phya-AMPHORA identified 200 'phylum-specific' gene markers in the phylum-level bacterial phylogenetic marker database that are phylogenetically congruent for the Alphaproteobacteria.
 
@@ -155,7 +367,7 @@ For evolutionary analyses of RquA, eukaryotic and prokaryotic homologs of RquA, 
 
 Mitochondrial targeting sequences were predicted for each sequence using MitoProt, TargetP v1.1, and MitoFates v1 (Claros and Vincens, 1996; Emanuelsson et al., 2000; Fukasawa et al., 2015). Sequences were tentatively annotated as ‘mitochondrial’ if two or more software programs predicted mitochondrial localization scores greater than 0.5. The gene context of rquA in bacterial genomes was determined by manual investigation of the relevant genome sequences deposited in GenBank (Supplementary file 1).
 
-## Phylogenetic analyses
+### Phylogenetic analyses
 
 Alphaproteobacterial proteins were aligned based on their HMM profiles in the Phyla-AMPHORA database and ambiguously aligned regions removed using Zorro as implemented in Phyla-AMPHORA (Wang and Wu, 2013). Initial single gene trees were constructed using the LG4X model implemented in IQ-TREE 1.5.5 and manually inspected for in-paralogues. These 200 marker genes were concatenated to generate a supermatrix of 54 400 sites and 210 taxa. An initial phylogenetic inference was performed with IQ-TREE v1.5.5 under the LG4X model, followed by reanalysis with the using the model LG + C60 + F (PMSF)+ Γ4 and using a guide tree inferred with the LG4X model (Minh et al., 2013; Nguyen et al., 2015; Wang et al., 20172018). Datasets are available at on dryad at DOI: https://doi.org/10.5061/dryad.qp745/4.
 
@@ -165,15 +377,15 @@ Previous reports hypothesized that RquA evolved from a methyltransferase (UBIE) 
 
 We tested multiple topologies for the full RquA, Group A and Group B datasets (Supplementary files 2–4) using IQ-TREE and CONSEL. Briefly, maximum likelihood trees for various topologies were generated in IQTREE. Using the ML tree, the constrained trees, and 100 ultrafast bootstrap trees, we computed the site log likelihood values with IQ-TREE (-wsl option) and performed the approximate unbiased test using CONSEL (Shimodaira and Hasegawa, 2001). Topologies with an AU p-value less than 0.05 were rejected. Datasets are available at on dryad at DOI: https://doi.org/10.5061/dryad.qp745/4.
 
-## Identification of quinone-utilizing enzymes in eukaryotes
+### Identification of quinone-utilizing enzymes in eukaryotes
 
 Sequences from respiratory chain complexes (CI, CIII, CIV), quinone biosynthesis enzymes (COQ1-10), alternative oxidase (AOX), dihydroorotate dehydrogenase, sulfite:quinone reductase, electron transferring flavoprotein, (ETFα and β) and ETF dehydrogenase (ETFDH) were manually retrieved from Arabidopsis thaliana, Dictyostelium discodeum, Saccharomyces cerevisiae and Escherichia coli the Kyoto Encyclopedia of Genes and Genomes. These Q-utilizing enzyme sequences were used as queries to search each eukaryotic genome or transcriptome than also encoded rquA using BLAST or TBLASTN. We tried to identify additional genes that could be linked to rquA function using phylogenomic profiling methods. We looked for genes shared with different combinations of rquA-containing organisms that are not found in rquA-deficient organisms (e.g. E. coli, yeast) using the phylogenomic profiling toolkit at the Joint Genome Institute (https://img.jgi.doe.gov/cgi-bin/m/main.cgi?section=PhylogenProfiler&page=phyloProfileForm).
 
-## Genetic linkage in bacteria
+### Genetic linkage in bacteria
 
 When possible, the genomic record for each bacterial genome was retrieved from GenBank via the e-utilities toolkit (https://www.ncbi.nlm.nih.gov/books/NBK25501/) in GTF format using an in-house python script. Accession numbers for the 15 neighbouring genes upstream and downstream of rquA were used to retrieve the protein sequences of each of these genes. PFAM domains were assigned to each of these proteins using hmmscan in the hmmer3 (http://hmmer.org) (Eddy, 1998). Neighbouring genes were manually examined and genes related to respiration (e.g., electron transport complexes) or associated proteins (e.g., cytochrome, heme and ubiquinone metabolism) were annotated in Supplementary file 3).
 
-## Lipid extraction and mass spectrometry
+### Lipid extraction and mass spectrometry
 
 Pygsuia biforma cells or bacterial (Pygsuia’s bacterial prey or Rhodospirillum rubrum) were collected by centrifugation at 500 x g for 10 min, or 14 000 x g for 5 min, respectively at 4°C. Cell pellets were resuspended in 2 mL of methanol before adding 2 mL of petroleum ether (with 10 μM butylated hydroxytoluene, Sigma), vortexed vigorously, and separated by centrifugation at 1000 x g for 5 min. Etherial layers were collected and a second extraction with 2 mL of petroleum ether was performed. The ether extracts were combined and evaporated under N2. The resulting extract was resuspended in 100 μL of ethanol and filtered using a spin column equipped with a 100,000 MWCO filter (Millipore).
 

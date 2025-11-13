@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.26607.001 In bacteria various tactic responses are mediated by the same cellular pathway, but sensing of physical stimuli remains poorly understood. Here, we combine an in-vivo analysis of the pathway activity with a microfluidic taxis assay and mathematical modeling to investigate the thermotactic response of Escherichia coli . We show that in the absence of chemical attractants E. coli exhibits a steady thermophilic response, the magnitude of which decreases at higher temperatures. Adaptation of wild-type cells to high levels of chemoattractants sensed by only one of the major chemoreceptors leads to inversion of the thermotactic response at intermediate temperatures and bidirectional cell accumulation in a thermal gradient. A mathematical model can explain this behavior based on the saturation-dependent kinetics of adaptive receptor methylation. Lastly, we find that the preferred accumulation temperature corresponds to optimal growth in the presence of the chemoattractant serine, pointing to a physiological relevance of the observed thermotactic behavior.
+In bacteria various tactic responses are mediated by the same cellular pathway, but sensing of physical stimuli remains poorly understood. Here, we combine an in-vivo analysis of the pathway activity with a microfluidic taxis assay and mathematical modeling to investigate the thermotactic response of Escherichia coli. We show that in the absence of chemical attractants E. coli exhibits a steady thermophilic response, the magnitude of which decreases at higher temperatures. Adaptation of wild-type cells to high levels of chemoattractants sensed by only one of the major chemoreceptors leads to inversion of the thermotactic response at intermediate temperatures and bidirectional cell accumulation in a thermal gradient. A mathematical model can explain this behavior based on the saturation-dependent kinetics of adaptive receptor methylation. Lastly, we find that the preferred accumulation temperature corresponds to optimal growth in the presence of the chemoattractant serine, pointing to a physiological relevance of the observed thermotactic behavior.
 
 ## Introduction
 
@@ -43,47 +43,119 @@ In this study we investigated the thermotactic response of E. coli at the level 
 
 ## Results
 
-## Thermotactic response of E. coli depends on ambient temperature
+### Thermotactic response of E. coli depends on ambient temperature
 
 To investigate the thermotactic response of E. coli at the level of the pathway activity, we utilized an in-vivo assay based on Förster (fluorescence) resonance energy transfer (FRET) (Neumann et al., 2012; Sourjik and Berg, 2002a; Sourjik et al., 2007) (Figure 1—figure supplement 1A). The FRET assay relies on phosphorylation-dependent interactions between CheY and CheZ, which are fused to yellow and cyan fluorescent proteins, respectively. The formation of the CheY-YFP/CheZ-CFP complex, which is proportional to the kinase activity of CheA, leads to an increase in the ratio of YFP to CFP fluorescence due to energy transfer from CFP to YFP. In our FRET experiments, ΔcheY-cheZ cells expressing the CheY-YFP/CheZ-CFP FRET pair were exposed to rapid stepwise changes in temperature while under a constant flow of buffer (Figure 1—figure supplement 1A). Note that to facilitate the measurements we used a strain deleted for flgM, the negative regulator of flagellar and chemotaxis gene expression, that elevates in proper proportion the levels of chemotaxis proteins and thereby enhances the chemotactic response (Kollmann et al., 2005; Steuer et al., 2011). Similar to the response observed upon stimulation with a chemical attractant in the same setup (Figure 1—figure supplement 1C), the FRET response to an increase in temperature revealed a rapid transient decrease of the YFP/CFP ratio, reflecting a decrease in the kinase activity, that is a thermophilic response (Figure 1A and Figure 1—figure supplement 1D). This transient response was specific because it was not observed in a ΔcheA strain (Figure 1—figure supplement 1E). A decrease in temperature resulted in an opposite response, that is, a transient increase in FRET, similar to the removal of attractant (Figure 1A and Figure 1—figure supplement 1C) or the addition of repellent. The time course of subsequent adaptation in the presence of persistent stimulation was also similar for thermal and chemical stimuli, indicating that the adaptation to temperature similarly relies on the CheR/CheB receptor methylation system. This was directly confirmed by measuring the methylation profile of Tsr and Tar, both of which shifted towards higher-methylated states at higher temperature (Figure 1—figure supplement 2). The only major noticeable difference between thermal and chemical stimulation in the FRET experiments was an increase in the basal YFP/CFP ratio at higher temperature, which was also seen in the ΔcheA strain and is caused by temperature dependence of YFP and CFP fluorescence (Figure 1—figure supplement 1E) (Kumar and Sourjik, 2012; Oleksiuk et al., 2011).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig1-v2.jpg)
+
+**Figure 1.:** (A,B) The intracellular kinase activity of CheA was measured using an in-vivo CheY phosphorylation assay based on fluorescence resonance energy transfer (FRET) between CheY-YFP and CheZ-CFP (see Materials and methods). (A) A typical FRET measurement, where the YFP/CFP ratio reflects decrease of CFP fluorescence and increase of YFP fluorescence due to energy transfer within a complex formed by phosphorylated CheY-YFP and CheZ-CFP, with complex formation proportional to the activity of CheA. The initial response of wild-type cells adapted in buffer to a temperature increase of 9°C (red arrow) is an attractant-like response (i.e., decrease in CheA activity), while the subsequent decrease of temperature (blue arrow) elicits a repellent-like response (i.e., increase in CheA activity). CheA activity is subsequently restored to the basal level by CheR and CheB-dependent methylation (light grey area) and demethylation (dark grey area). Note the general increase in the basal YFP/CFP ratio with temperature is due to its differential effect on YFP and CFP fluorescence. (B) The amplitude of the initial response (grey arrow in A) was used to quantify the pathway response of buffer-adapted cells to a 3°C stepwise increment of temperature in wild-type and ΔcheA cells as indicated. The response was normalized to the maximal response obtained upon stimulation with saturating concentration (1 mM) of the chemical attractant MeAsp at 21°C. For data points in all figures of this type, thermophilic responses (downregulation of the YFP/CFP ratio) are highlighted in red, cryophilic responses (upregulation of the YFP/CFP ratio) are highlighted in blue, and no significant response is indicated in white. Means of at least three independent experiments and the corresponding standard errors are shown as a function of initial temperature for each step. Inset: An example of the FRET response to an increase of temperature from 24° to 27°C (blue) and from 36° to 39°C (red). Here, for convenience the mean initial YFP/CFP ratio was normalized to one for both measurements. (C) Quantification of the thermotactic response of buffer-adapted cells in a microfluidics device with indicated temperature gradients, with lower temperature at the left channel wall. As a control (white circles) no gradient was applied. Cell counts at different positions of the microfluidic channel were determined and the data were normalized as described in Materials and methods. The inset shows the thermal migration coefficient (TMC) that characterizes drift in the temperature gradient, calculated from three independent experiments (such as that shown in the main panel). Positive values of TMC correspond to thermophilic response, whereas negative values of TMC correspond to cryophilic response.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A,B) Schematic representations of the FRET microscopy (A) and microfluidics (B) setups used in temperature stimulation experiments. Lower right graph in (B) shows typical trajectories for cells swimming in the channel, where the distance to the cold channel wall (X-position) was used for calculating the TMC (see Materials and methods). (C–E) Examples of FRET measurements of response of wild-type cells to chemical attractants (C) and to temperature (D), with temperature response of ΔcheA shown as a negative control (E). Upper panels show fluorescence of individual YFP and CFP channels, while lower panels show the normalized YFP/CFP ratio. Arrows highlight 3°C stepwise increase to the indicated temperatures in FRET experiments. Insets in (E) for ΔcheA illustrate the direct effect of temperature on fluorescence of YFP and CFP and on the YFP/CFP ratio, respectively.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Distribution of methylation states of Tar and Tsr in wild-type cells adapted to different temperatures, determined by receptor mobility on the SDS-PAGE gel (see Materials and methods). Mobility of Tar and Tsr in defined modification states (with indicated numbers of glutamine/glutamate substitutions) is indicated. Additional peaks correspond to receptors with different sites of the modified residues. (B) Corresponding lane intensity profiles, quantified as described in Materials and methods.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Calibration of temperature gradient along the microfluidic channel. Measurement was done as described in Materials and methods in the channel area used for cell tracking. One pixel correspond to 0.3 µm. Red line indicates linear fit to the data used for calibration.
 
 We subsequently used FRET to measure the response to 3°C incremental steps of temperature in the range from 21°C to 42°C (Figure 1B). We observed that the thermophilic response of wild-type cells persisted at a similar level up to 30°C, but decreased rapidly at higher ambient temperatures. Nevertheless, even at the highest tested temperature (jump from 39°C to 42°C), the response remained weakly thermophilic. Hence, for cells that were adapted in the buffer (in the absence of chemoattractants) we did not observe any inversion of the pathway response to temperature.
 
 These results were generally consistent with the behavioral response of motile cells in a thermal gradient established across a microfluidic channel (Figure 1C and Figure 1—figure supplement 1B and Figure 1—figure supplement 3). The design of the experiment was such that cells in the sample volume experienced only a brief exposure to a temperature gradient, thus minimizing secondary effects of temperature that might have complicated the interpretation of previous studies. Here, when adapted in the buffer, cells accumulated towards the warmer side of the gradient in the channel, consistent with thermophilic behavior (Figure 1C). We quantified this behavior using a thermal migration coefficient (TMC) (Figure 1C Inset, see Materials and methods for details). In line with the FRET-based pathway-activity analysis, this thermophilic behavior weakened in the range of higher temperatures but never inverted. Thus, the results of both FRET and microfluidics assays clearly show that in the absence of chemotactic stimuli, E. coli has an exclusively thermophilic response that decreases at high ambient temperatures, but it does not actively avoid high temperature.
 
-## Asymmetric chemotactic stimulation leads to accumulation temperature in wild-type cells
+### Asymmetric chemotactic stimulation leads to accumulation temperature in wild-type cells
 
 We next systematically investigated previously reported inversion of the thermotactic response from thermophilic to cryophilic upon adaptation to high concentrations of serine and aspartate (or the non-metabolizable analogue of aspartate, MeAsp) (Imae et al., 1984; Paster and Ryu, 2008). Firstly, we measured the pathway response to temperature changes in cells that were stimulated with a combination of MeAsp and serine (Figure 2A). These two attractants were kept at a fixed ratio of 10:1, which reflects an approximately tenfold lower chemoattractant efficiency of MeAsp compared to serine (Neumann et al., 2010). Indeed, steady pre-stimulation with high levels of both attractants inverted the response to cryophilic over the entire range of temperatures, with the response again becoming weaker at high temperatures. At low concentrations of attractants the response remained thermophilic and no avoidance of high temperature was observed but the response amplitude was reduced compared to buffer-adapted cells. Adaptation to intermediate levels of serine and MeAsp completely abolished the thermotactic response over the entire range of tested temperatures, meaning that the pathway becomes temperature-insensitive when both major chemoreceptors are stimulated at an approximately equal intermediate level.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) FRET measurements of the pathway response to 3°C steps of temperature after adaptation to a combination of indicated concentrations (in µM) of MeAsp and serine (A); only to MeAsp (B); or only to serine (C). At a 10:1 ratio of MeAsp:serine in (A) both receptors are stimulated approximately equally. Insets: Examples of individual measurements for indicated temperature steps and attractant concentrations. Thermophilic and cryophilic responses are indicated by red and blue symbols, respectively. Absence of response is indicated in white. Data are means of at least three independent experiments and the respective standard errors are displayed. (D,E) Thermotactic responses in a microfluidics device, measured as in Figure 1C for wild-type cells adapted to indicated levels of serine and or MeAsp in a 34.5° to 38.1°C temperature gradient (D) or adapted to 10 µM serine in a 23.5° to 41.5°C temperature gradient (E). Dashed line in (E) indicates cells’ accumulation point in the gradient.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) Thermotactic behavior of wild-type cells adapted to the indicated serine concentrations in a gradient from 23.2 to 25.9 C (A) or 34.5°C to 3.18°C (B) or to the indicated MeAsp concentrations in a gradient from 23.2°C to 25.9°C (C) or 34.5°C to 38.1°C (D). Measurements were done as in Figure 1C.(E) TMC calculated from cell distribution in thermal gradients at indicated concentrations of serine and MeAsp and temperature gradients. Negative TMC indicates cryophilic response; positive TMC indicates thermophilic response.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Thermotactic behavior of wild-type cells adapted to buffer (A), 1 µM (B), or 10 µM serine (C) in a temperature gradient from 25.1°C to 34.1°C. Measurements were done as in Figure 1C.
 
 As a next step, we investigated the effects of adaptation to different levels of either MeAsp or serine alone. In contrast to previous reports (Imae et al., 1984; Salman and Libchaber, 2007; Yoney and Salman, 2015), we observed that adaptation to MeAsp (Figure 2B) or serine (Figure 2C) had nearly identical effect on the thermotactic response. As in the case of stimulation with a mixture of serine and MeAsp, we observed that adaptation to either attractant weakened the thermophilic response in a dose-dependent manner and could eventually invert it to cryophilic. However, the pattern of this inversion by individual attractants was clearly different. Whereas combined stimulation either inverted or abolished the thermotactic response over the entire temperature range (Figure 2A), cells adapted to individual attractants showed cryophilic response at high temperature but retained thermophilic response at low temperatures (Figure 2B,C). Such an inversion (‘cross-over’) temperature, where the FRET response changes from thermophilic to cryophilic, implies that E. coli can indeed bidirectionally accumulate towards a preferred temperature using the chemotaxis pathway. However, the inversion and accumulation temperatures may not be exactly identical due to weak direct effects of temperature on E. coli motility (Oleksiuk et al., 2011).
 
 These conclusions were confirmed by microfluidic experiments, where a combination of serine and MeAsp changed the response to cryophilic (Figure 2D) and where, in the presence of individual attractants, the response turned from thermophilic at low temperatures to cryophilic at high temperatures (Figure 2—figure supplement 1). This latter inversion of the thermotactic response dependent on the ambient temperature implies that in a thermal gradient and in presence of either one of the major chemoattractants cells should accumulate at some transition temperature (which is expected to be close to the inversion temperature in the FRET assay), being attracted to it from both lower and higher temperatures. Such accumulation was indeed observed in the presence of serine in a gradient that spanned a range of temperatures with both thermophilic and cryophilic responses (Figure 2E and Figure 2—figure supplement 2). Notably, no cell accumulation was observed in the same thermal gradient in the absence of attractant stimulation (Figure 2—figure supplement 2A), meaning that it is not simply due to the wider temperature range used in these experiments.
 
-## Thermosensing properties of Tar and Tsr are similar
+### Thermosensing properties of Tar and Tsr are similar
 
 Our observation that chemotactic stimulation of Tar or Tsr individually – but not together – creates an accumulation temperature indicates that the effect might be related to the interplay between the two receptors. To test this conclusion, we investigated the thermosensing properties of cells that express only one type of receptor, either Tar (Figure 3A) or Tsr (Figure 3B) using the FRET assay. Similar to wild-type cells, in the absence of chemoattractants both Tar- and Tsr-only cells exhibited thermophilic responses that decreased with ambient temperature. Adaptation to their respective attractants also decreased and inverted the thermophilic response in a dose-dependent manner, which was again similar for both receptors. Notably, the inversion to cryophilic response occurred over the entire temperature range and no significant cross-over from thermophilic to cryophilic response occurred with the change of temperature at any given concentration of serine or MeAsp. The responses of the Tar and Tsr-only cells were thus similar to the response of wild-type cells adapted to combinations of serine and MeAsp (Figure 2A), but different from adaptation to only one of these chemoattractants (Figure 2B,C). These observations confirm that chemotactic stimulation of Tar or Tsr can either inhibit or invert their thermosensing properties. The results also clearly demonstrate that in the presence of only one receptor type there is no temperature-dependent response inversion at any given level of chemotactic stimulation, and thus no accumulation temperature.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig3-v2.jpg)
+
+**Figure 3.:** (A,B) FRET measurements of the pathway response in receptorless E. coli strains expressing Tar (A) or Tsr (B) as the sole receptor from a plasmid. Cells were adapted to the depicted concentrations of MeAsp (A) or serine (B). Thermophilic, cryophilic or no responses are highlighted in red, blue and white, respectively. Data are means of at least three independent experiments and the standard error is displayed. (C) Methylation levels of Tar in Tar-only cells adapted to buffer or indicated levels of MeAsp at the depicted temperatures. Methylation was determined according to receptor mobility in SDS-PAGE and quantified as the ratio of high to low states of methylation (see Figure 3—figure supplement 1). Data points are mean values from three independent experiments, with error bars representing standard errors.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Methylation was analyzed as in Figure 1—figure supplement 2 at the indicated temperatures and levels of MeAsp stimulation.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–C) Response to stepwise changes in temperature was measured using FRET for Tsr-only cells adapted to 100 µM (A), 1 mM (B), or 30 mM glycine (C). Because, in comparison to serine, glycine is a weak attractant for Tsr, glycine only weakens or abolishes the temperature response of Tsr at low concentrations (A and B) and leads to a very weak cryophilic response at high concentration (C).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** The serine concentration in M9CG medium and in M9CG medium incubated with E. coli cells for 40 min, analyzed by LC-MS/MS (see Supplementary material).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A–B) Thermotactic response was measured using FRET in wild-type cells grown to different optical densities and adapted to 100 µM serine (A) or 1 mM MeAsp (B). Note that the ratio of Tar to Tsr depends on the growth stage and is highest at low optical densities. Arrows indicate stepwise increase in temperature. Circles highlight the response to the same increase in temperature, from 27°C to 30°C (green) and from 33°C to 36°C (red). ΔcheA strain was used as a negative control (A).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A–C) Response to stepwise changes in temperature was measured for cells adapted to 100 µM maltose (A), 100 µM galactose (B), or 1 µM dipeptide Pro-Leu (C).
 
 The observed dependence of the thermotactic response on ambient temperature and chemotactic stimulation is likely to be explained by the known effects of methylation on receptor thermosensing (Imae et al., 1984; Nara et al., 1996; Nishiyama et al., 1997; Paster and Ryu, 2008; Salman and Libchaber, 2007). Our results are consistent with a previous observation suggesting that the interplay between methylation and thermosensing is similar for Tar and Tsr (Oleksiuk et al., 2011), which both mediate thermophilic response in low-methylation states but cryophilic response in high-methylation states. For the buffer adapted cells, where the level of receptor modification is low (Endres et al., 2008), the response of both receptors is thus thermophilic. However, because adaptation to positive (attractant-like) temperature stimuli is mediated by increased methylation of receptors (Figure 3C, Figure 1—figure supplement 2 and Figure 3—figure supplement 1), the thermophilic response becomes weaker at higher temperature. In contrast, for cells of single-receptor strains adapted at high concentration of the respective chemoattractant, the methylation level is high and the response is thus cryophilic. Adaptation to this repellent-like response leads to increased demethylation of receptors at higher temperature (Figure 3C), thus weakening the cryophilic response. At intermediate levels of chemotactic stimulation that correspond to zero thermotactic response, there are no associated changes in receptor methylation and therefore no switch from thermophilic to cryophilic behavior.
 
 As mentioned above, our results for Tsr are apparently in contrast with some previous studies. Specifically, Yoney and Salman (Yoney and Salman, 2015) reported gradual dose-dependent inhibition of the thermophilic response but no response inversion to cryophilic response when cells that express Tsr as the only major receptor were stimulated with glycine, a Tsr-specific attractant. This discrepancy can be explained by the much lower apparent affinity of glycine to Tsr compared to serine (Yang et al., 2015). Indeed, in FRET experiments we found that at glycine concentrations of up to 1 mM, the temperature response of the Tsr-only strain is either thermophilic or non-detectable (Figure 3—figure supplement 2A,B). The response of the Tsr-only strain became weakly cryophilic only when the concentration of glycine was increased to a very high level of 30 mM (Figure 3—figure supplement 2C). Moreover, Yoney and Salman reported accumulation of the wild-type E. coli cells in a thermal gradient that was established in a complex medium that contained a mixture serine and aspartate (Yoney and Salman, 2015). Notably, in these experiments the exposure of bacterial culture to a thermal gradient was preceded by a prolonged incubation, which most likely resulted in substantial depletion of serine from the medium as it is rapidly consumed by E. coli (Yang et al., 2015). Such depletion could indeed be confirmed (Figure 3—figure supplement 3 and Supplementary material), suggesting that during the thermotaxis assays, cells were primarily stimulated by only one major chemoattractant, aspartate. The observed behavior is thus consistent with our conclusion that asymmetric stimulation of either Tsr or Tar is required for E. coli accumulation at an intermediate temperature.
 
-## Ratio between Tar and Tsr affects response inversion
+### Ratio between Tar and Tsr affects response inversion
 
 Our results strongly suggest that an accumulation temperature arises from the interplay between Tar and Tsr when only one type is strongly stimulated by its ligand. This suggests that the level of chemotactic stimulation that leads to the response inversion as well as the accumulation temperature might be affected by the relative expression levels of Tar and Tsr. Because these levels are known to vary with the growth phase of an E. coli culture, with Tsr being more abundant during the early to mid-exponential phase (Kalinin et al., 2010; Yang and Sourjik, 2012), we tested the thermotactic response in cultures grown to different optical densities (Figure 3—figure supplement 4). Indeed, we observed that cells adapted to high concentrations of serine showed earlier response inversion (i.e., inverted at lower temperature) when grown to low optical density, and did not invert at all when grown to high optical density. This observation may explain why no inversion of the thermal response upon adaptation to serine was observed in a previous study (Imae et al., 1984) hat used E. coli culture grown to high density. The opposite dependence on the growth phase was observed for MeAsp-stimulated cells, which inverted at higher temperature when grown to low optical density.
 
 Here we only considered the interplay between Tar and Tsr in defining the overall thermotactic response of wild-type cells. While other receptors might also be temperature sensitive (Nara et al., 1991; Nishiyama et al., 2010), their low abundance in E. coli as compared to the abundances of Tar and Tsr (Li and Hazelbauer, 2004) makes it unlikely that they significantly contribute to the thermotactic response of wild-type cells. Indeed, adaptation to the ligands of Trg (glucose, galactose) or Tap (dipeptides) had no noticeable effect on the thermotactic response (Figure 3—figure supplement 5).
 
-## Mathematical model of accumulation in a thermal gradient
+### Mathematical model of accumulation in a thermal gradient
 
 How can we understand the experimental observation of an accumulation temperature? As mentioned above, the standard model of the chemotactic network cannot explain the observed accumulation of E. coli towards a specific temperature when both Tsr and Tar receptors are present with one type stimulated by attractant. To explain this accumulation, we therefore developed a minimal model for the activity of chemotaxis receptors, based on the one detailed in Meir et al. (Meir et al., 2010) (see Source code file 1 - Modelling). The aim of the model is to provide insight into the origin of an accumulation temperature, not to quantitatively account for the experimental data which depends on many unknown temperature-dependent parameters. The basic elements of the model are (i) a free-energy model for the probability that a team of chemoreceptors will be active, depending on the methylation level of the receptors and the concentration of ligand and (ii) a kinetic model for the rate of change of the receptor methylation level due to the enzymes CheR and CheB. Importantly, this model incorporates the failure of precise adaptation when the number of available methylation or demethylation sites becomes small (Meir et al., 2010), which we believe is essential to explain the accumulation temperature. Some indication of the importance of imprecise adaptation is already apparent for the single-receptor cells (Figure 3A,B) – the response in the presence of high ligand concentration is flatter as a function of temperature, consistent with the assumption of slowing down of methylation near saturation. Consistent with our experimental results and with previous work (Oleksiuk et al., 2011), we assume for simplicity identical behavior of Tar and Tsr, except for their different ligand specificities.
 
 To most simply illustrate the physical origin of the accumulation temperature for wild-type cells, we chose the basic signaling unit (team) of allosterically interacting receptors to be a trimer, where Tar and Tsr are randomly mixed so that each of the three receptors can be either Tsr or Tar with probability reflecting relative expression level (Ames et al., 2002; Hansen et al., 2010) (see Materials and methods). As clear from the comparison of the data (Figure 2B,C and Figure 3A) to the results of the mathematical model, the model captures correctly the complete inversion of the thermal response form thermophilic to cryophilic with methylation level or ligand concentration (Figure 4A) for a single type of receptor, as well as cross-over (i.e., temperature-dependent inversion) of the response for mixed receptors (Figure 4B). Within the model, these qualitative features can be understood as follows (for a more detailed discussion see Supplementary material): As discussed above, for a single receptor type the thermal response has either one sign or the other over all temperatures, with the sign determined by methylation level (which depends on the attractant concentration). Changes of temperature alone can never change the sign of the thermal response because if the thermal response approaches zero, as necessary for a sign change, so necessarily does the adaptive change in methylation. Since methylation level determines the sign of the thermal response, no change in methylation means no change in the sign of the thermal response, and thus no inversion of the response at a certain temperature (Figure 4A and Figure 4—figure supplement 1A). This conclusion also holds for a mixture of different receptors provided adaptation is perfect and thermosensing properties of receptors are identical; as the net thermal response approaches zero, so does the net change in methylation level. Even if one type of receptor becomes more methylated, in the standard model this is exactly compensated by the other type becoming less methylated, and as a consequence the response remains either thermophilic or cryophilic over the entire temperature range (Figure 4—figure supplement 2). However, an inversion of the response at a certain temperature becomes possible if changes of temperature lead to a net change in receptor methylation. This is exactly what happens in our mathematical model: when receptors of one type are near the saturation level of their methylation, they cannot adapt perfectly, that is their methylation level changes only weakly upon temperature stimulation, and thus cannot compensate for the response of receptor of the other type, which undergo an opposite and larger change in their methylation level (Figure 4—figure supplement 1B,C). The resulting net change in total methylation of the receptor system can readily produce a change in the sign of the overall thermal response, leading to an inversion of the response at a certain temperature. The actual value of the inversion temperature depends on receptor methylation levels and is thus a function of attractant concentrations. Note that our model for the inversion temperature relies on exactly the same slowing of methylation rates near saturation previously introduced to explain the failure of precise adaptation in chemotaxis (Meir et al., 2010), and it requires no further ad-hoc assumptions about differences between thermosensing properties of Tar and Tsr or asymmetry between thermophilic and cryophilic responses. This contrasts with the model of Jiang et al. (Jiang et al., 2009), which attributes an accumulation temperature to temperature-dependent adapted activity, but which does not explain why an inversion temperature only occurs when both Tar and Tsr are present and then in the presence of ligand for only one of the two receptor types.
 
-## Accumulation temperature correlates with optimal growth
+![Figure 4.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig4-v2.jpg)
+
+**Figure 4.:** (A) Thermotactic response of the chemosensory complexes was simulated for a single type of receptor (Tar) using a mathematical model described in Materials and methods. Compare to experimental data in Figure 3A. The thermotactic response is shown as a function of temperature. Simulations were performed in the absence of attractant (MeAsp) or in the presence of low, intermediate, or saturating concentrations of MeAsp, as indicated by different colors. (B) Simulated response for randomly mixed complexes of two receptor types (Tar and Tsr), with only Tar being stimulated by attractant. Compare to experimental data in Figure 2B. Simulations were performed as in (A) at varying levels of stimulation with MeAsp and assuming random mixing of equal amounts of Tar and Tsr within receptor trimers. The MeAsp concentration determines the values of the free-energy parameter $f_{0}$ for Tar, which are (0, 0.5, 1.5, 2.5), respectively (see Materials and methods) in (A), and (0, 1, 1.5, 15) in (B). The value of $f_{0}$ for Tsr in (B) is 0, independent of MeAsp concentration; other parameters are as specified in Materials and methods. Sidebar indicates regions corresponding to thermophilic or cryophilic responses. Note that the response inversion from thermophilic to cryophilic at saturating MeAsp stimulation in (B) is due to imperfect adaptation; no inversion is observed in case of perfect adaptation (see Figure 4—figure supplement 2).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Modeled adapted methylation levels of trimers of a single receptor type (Tar). Modeling was done using the same parameters as in Figure 4A, in the absence of attractant or at low, intermediate, and saturating attractant (MeAsp) concentrations, as indicated. As temperature increases, for all attractant concentrations, the per-receptor methylation level approaches the same asymptotic value, never crossing it. Thus the sign of the thermal response remains constant, implying the cell is either always cold seeking or always heat seeking, depending on the initial value of methylation. (B) Modeled methylation levels of different mixed-receptor trimers present in cells that display an accumulation temperature. With imperfect adaptation, the thermal response of mixed-receptor cells may change sign with temperature, giving rise to an accumulation temperature (dark green curve in Figure 4B). We plot the methylation levels of the four possible trimers (each consisting of 3 receptors): Tsr-only (green), 1Tar:2Tsr (yellow), 2Tar:1Tsr (red), and Tar-only (dashed black). Here Tar is stimulated with saturating level of MeAsp while Tsr remains unstimulated, with the same parameters as for the dark green curve in Figure 4B. At low temperature, the response is dominated by the heat-seeking Tsr-only trimer. As temperature is increased, its methylation level approaches the asymptotic high-temperature methylation level, and its response become weaker. On the other hand, the responses of the trimers that include stimulated Tar receptors only change slightly, as their methylation levels remain close to saturation, due to the slowing down of methylation in that regime. Eventually the response of these cold-seeking trimers overcomes that of the Tsr-only trimer, and the thermotactic response changes sign. (C) Schematic illustration of the change in methylation of Tar and Tsr dimers due to increase in temperature, in the presence of a high concentration of MeAsp. The methylated sites are highlighted as red circles. When methylation of Tar is close to saturation, Tar cannot adapt perfectly, meaning that upon temperature stimulation the methylation level of Tar changes less than the opposite methylation of Tsr (illustrated as different numbers of added/removed CH3 groups). This difference allows a net change in total receptor methylation and thus the change in the sign of the overall thermotactic response.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Simulations of the thermotactic response of mixed-receptor cells assuming perfect adaptation, were performed in the absence of attractant (MeAsp) or at low, intermediate and saturating attractant concentrations as indicated; characterized in the model by the parameter $f_{0}$. The four curves, from the top down, correspond to $f_{0}$ = 0, 0.75, 1.75, 2.5, respectively, for one type of receptor, while $f_{0}$ = 0 for the other type of receptor. For the case of perfect adaptation, the thermotactic response does not change sign, but only decreases in magnitude with increasing temperature, similar to the behavior for a single receptor type. Sidebar indicates regions corresponding to thermophilic or cryophilic responses, respectively.
+
+### Accumulation temperature correlates with optimal growth
 
 What is the physiological significance of the accumulation temperature observed upon stimulation with amino acid attractants? A previous study proposed that a cryophilic response in the presence of amino acids might be a form of quorum sensing behavior, whereby amino acid secretion at high density would cause cell accumulation at lower temperatures thus slowing metabolism (Salman and Libchaber, 2007). However, the benefit of such behavior is not obvious and under normal growth conditions E. coli does not secrete chemoattractive amino acids – instead these amino acids are the first to be consumed from the medium (Prüss et al., 1994; Selvarasu et al., 2009; Yang et al., 2015).
 
 At the same time, high concentrations of several amino acids, most notably of serine, were shown to have a growth-inhibitory effect (Amos and Cohen, 1954; Neumann et al., 2014; Rowley, 1953; Yang et al., 2015). We thus investigated this toxicity of serine for E. coli MG1655 in M9 glycerol minimal medium as a function of growth temperature. We observed that the effect of serine on E. coli growth was indeed temperature-dependent: whereas at low temperature (24°C) serine is growth-promoting (Figure 5A), it becomes inhibitory at high temperature (39°C) (Figure 5B). This temperature dependence could be seen both for the growth delay (Figure 5C), where the addition of serine led to a prolonged phase of slower growth at higher temperature, and for the maximal growth rate (Figure 5—figure supplement 1). By comparison, the effect of aspartate on growth was much weaker. Interestingly, the observed delay in growth in the presence of serine was minimal at 30°C (Figure 5C). These results indicate that at least for cells adapted in the presence of serine, the emergence of an accumulation temperature might have a simple physiological meaning, being an adaptive mechanism that enables E. coli to optimize its growth in the presence of this amino acid.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig5-v2.jpg)
+
+**Figure 5.:** (A,B) Growth curves of E. coli MG1655 cells grown at 24°C (A) and 39°C (B) in M9 minimal medium supplemented with glycerol (0.2%) or with glycerol and 1 mM serine or aspartate, as indicated. Optical density was measured at 600 nm in the plate reader as described in Materials and methods. (C) Time until maximal growth rate achieved (highlighted by the grey arrow in (B)) was used to measure the delay in growth at indicated temperatures and amino acid concentrations. Data are means of at least six independent experiments and the respective standard error is displayed.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/26607/elife-26607-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** MG1655 cells were grown at indicated temperatures as in Figure 5, in M9 supplemented with (○) 0.2% glycerol, (Δ) 0.2% glycerol and 100 µM serine, (◊) 0.2% glycerol and 1 mM serine, and (□) 0.2% glycerol and 1 mM aspartate. Maximal growth rate [1/min] was determined by a peak finding algorithm (see Materials and methods). Data were averaged for at least six independent experiments. The respective standard error is displayed.
 
 ## Discussion
 
@@ -101,53 +173,227 @@ The mechanism of bidirectional thermotaxis described here for E. coli is likely 
 
 ## Materials and methods
 
-## Strains and plasmids
+### Strains and plasmids
 
 All Escherichia coli K12 strains and plasmids used in this study are listed in Table 1 and Table 2, respectively. Strains used for FRET analyses were derived from RP437 (Parkinson and Houts, 1982). VS223 (ΔcheY-cheZ, ΔflgM), in this study referred to as wildtype, was transformed with pVS88 (cheZ-ecfp/cheYeyfp) - coexpressing cheZ-ecfp/cheYeyfp from a bicistronic mRNA; VS181 (Δ(cheY cheZ) Δtsr Δ(tar tap) Δtrg Δaer) transformed with pVS88 and pVS121 (tar[EEEE]) or pVS362 (tsr[EEEE]) for receptor production and referred to as Tar-only and Tsr-only strain, respectively. Alternatively, for protein quantification VH1 (Δ(cheR cheB cheY cheZ) Δtsr Δ(tar tap) Δtrg Δaer) was transformed with pVS88 and receptors in different modification states (see Table 1). For behavioral analysis E. coli AW405 (HCB1) (Armstrong et al., 1967) was transformed with pCMW1 (Girgis et al., 2007) for gfp expression. Growth analysis was performed using E. coli MG1655.
 
-## Growth conditions
+**Table 1.**
+ Strains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strains</th>
+      <th>Relevant genotype or phenotype</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RP437</td>
+      <td>Escherichia coli K12 derivative; wild type for chemotaxis</td>
+      <td>(Parkinson and Houts, 1982)</td>
+    </tr>
+    <tr>
+      <td>AW405</td>
+      <td>Escherichia coli K12 derivative; wild type for chemotaxis</td>
+      <td>(Armstrong et al., 1967)</td>
+    </tr>
+    <tr>
+      <td>MG1655</td>
+      <td>Escherichia coli K12</td>
+      <td>(Blattner et al., 1997)</td>
+    </tr>
+    <tr>
+      <td>VH1</td>
+      <td>Δ(cheR cheB cheY cheZ) Δtsr Δ(tar tap) Δtrg Δaer</td>
+      <td>(Endres et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>VS181</td>
+      <td>Δ(cheY cheZ) Δtsr Δ(tar tap) Δtrg Δaer</td>
+      <td>(Sourjik and Berg, 2002b)</td>
+    </tr>
+    <tr>
+      <td>VS168</td>
+      <td>ΔcheA Δ(cheY cheZ)</td>
+      <td>(Sourjik and Berg, 2002a)</td>
+    </tr>
+    <tr>
+      <td>VS223</td>
+      <td>ΔcheY-cheZ, ΔflgM</td>
+      <td>this work</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Plasmids used for FRET analyses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmids</th>
+      <th>Relevant genotype</th>
+      <th>Resistance</th>
+      <th>Replication origin</th>
+      <th>Induction</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pVS88</td>
+      <td>cheZ-ecfp/cheYeyfp</td>
+      <td>ampicillin</td>
+      <td>pBR</td>
+      <td>50 μM IPTG</td>
+      <td>(Sourjik and Berg, 2004)</td>
+    </tr>
+    <tr>
+      <td>pVS120</td>
+      <td>tar [QEEE]</td>
+      <td>chloramphenicol</td>
+      <td>pACYC</td>
+      <td>2 μM sodium salicylate</td>
+      <td>(Sourjik and Berg, 2004)</td>
+    </tr>
+    <tr>
+      <td>pVS121</td>
+      <td>tar [EEEE]</td>
+      <td>chloramphenicol</td>
+      <td>pACYC</td>
+      <td>1 μM sodium salicylate</td>
+      <td>(Sourjik and Berg, 2004)</td>
+    </tr>
+    <tr>
+      <td>pVS122</td>
+      <td>tar [QEQQ]</td>
+      <td>chloramphenicol</td>
+      <td>pACYC</td>
+      <td>2 μM sodium salicylate</td>
+      <td>(Sourjik and Berg, 2004)</td>
+    </tr>
+    <tr>
+      <td>pVS123</td>
+      <td>tar [QEQE]</td>
+      <td>chloramphenicol</td>
+      <td>pACYC</td>
+      <td>2 μM sodium salicylate</td>
+      <td>(Sourjik and Berg, 2004)</td>
+    </tr>
+    <tr>
+      <td>pVS415</td>
+      <td>tar [QQQQ]</td>
+      <td>chloramphenicol</td>
+      <td>pACYC</td>
+      <td>2 μM sodium salicylate</td>
+      <td>(Endres et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>pVS 160</td>
+      <td>tsr [QEQE]</td>
+      <td>chloramphenicol</td>
+      <td>pACYC</td>
+      <td>2 μM sodium salicylate</td>
+      <td>(Oleksiuk et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>pVS 356</td>
+      <td>tsr [QEEE]</td>
+      <td>chloramphenicol</td>
+      <td>pACYC</td>
+      <td>2 μM sodium salicylate</td>
+      <td>(Oleksiuk et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>pVS 357</td>
+      <td>tsr [QEQQ]</td>
+      <td>chloramphenicol</td>
+      <td>pACYC</td>
+      <td>2 μM sodium salicylate</td>
+      <td>(Oleksiuk et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>pVS361</td>
+      <td>tsr [QQQE]</td>
+      <td>chloramphenicol</td>
+      <td>pACYC</td>
+      <td>2 μM sodium salicylate</td>
+      <td>(Oleksiuk et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>pVS362</td>
+      <td>tsr [EEEE]</td>
+      <td>chloramphenicol</td>
+      <td>pACYC</td>
+      <td>0.6 μM sodium salicylate</td>
+      <td>(Oleksiuk et al., 2011)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Growth conditions
 
 All strains used for FRET and microfluidics were grown aerobically in tryptone broth (TB; 1% tryptone, 0.5% NaCl, pH 7.0) at 275 rpm at 34°C as described previously (Neumann et al., 2010). Briefly, cells diluted 1:100 in TB from an overnight culture, supplemented with appropriate antibiotics (100 µg/ml ampicillin, 17 µg/ml chloramphenicol or 50 µg/ml kanamycin) and inducers (isopropyl β-D-thiogalactoside (IPTG) or sodium salicylate; see Table 2) were grown to an optical density OD600 of 0.6 for FRET and protein quantification or OD600 of 0.35 for microfluidics, unless indicated otherwise. For analysis of growth at different temperatures, an overnight culture grown at the respective temperatures in M9 minimal medium (47 mM Na2HPO4, 22 mM KH2PO4, 8 mM NaCl2, 2 mM MgSO4, 100 μM CaCl2, 1x trace metals (TEKnova, Hollister, CA) and 0.2% glycerol, pH7) was diluted 1:200 and incubated with shaking at 217 rpm in a total volume of 110 µl in a 96-well plate (Greiner Bio-One, Frickenhausen, Germany) and OD600 was measured using a plate reader (M200 Absorbance, Tecan, Männedorf, Switzerland). Where indicated, M9 medium was supplemented with amino acids. Growth was analyzed calculating the growth delay (time from inoculation to the half-maximal OD600) or the growth rate using a custom-written MATLAB (MathWorks, Natick, MA) script (see Source code file 3- Growth).
 
-## FRET experiments
+### FRET experiments
 
 Cell preparation and FRET measurements were done as prescribed previously for chemotactic stimulation (Neumann et al., 2010; Sourjik and Berg, 2002a; Sourjik et al., 2007). Briefly, cells harvested at mid-exponential growth phase were washed with tethering buffer (10 mM KPO4, 0.1 mM EDTA, 1 μM methionine, 10 mM lactic acid, pH 7) and stored at 4°C for 20 min to inhibit protein synthesis. Cells were 100-fold concentrated, attached to a polylysine-coated coverslip and placed in a flow chamber under constant flow (500 µl/min) for the entire experiment. Temperature in the flow cell was controlled using a Peltier element (Figure 1—figure supplement 1A) (Oleksiuk et al., 2011). Cells were adapted in tethering buffer (with or without attractants) for at least 25 min at a constant flow and at 21°C before stimulation with indicated steps of temperature. The rate of temperature change could be readily monitored due to the direct and immediate effect of temperature on the fluorescence of CFP and YFP (Figure 1—figure supplement 1E Inset). Fluorescence of 300–500 cells was continuously recorded in the yellow (HQ535/30) and cyan (D485/40) channels using photon counters (Hamamatsu, Hamamatsu City, Japan) with 1.0 s integration time, using a custom-modified Zeiss Axio Imager.Z1 fluorescence microscope. FRET response was measured as the change in the ratio of yellow to cyan fluorescence due to energy transfer and normalized to the response of buffer-adapted cells to saturating stimulation with chemical attractant, either α-methyl-DL-aspartate (MeAsp; Sigma Aldrich, Taufkirchen, Germany) or L-serine (Acros Organics – Thermo Fisher Scienitifc, Nidderau, Germany), at 21°C.
 
-## Microfluidics
+### Microfluidics
 
 Cell preparation was done using a filtration method as described previously by Berg and Turner at room temperature (Berg and Turner, 1990). Cells were washed in tethering buffer and within 30 min of cell harvesting a diluted cell suspension (OD600 = 0.002) was loaded into the microfluidics device made of polydimethylsiloxane (PDMS). The device consists of a central assay channel with a width of 500 µm, flanked on either side by water circulation channels, with cold water circulated through the channel on the left side and the warm circulated through the channel on the right side (Figure 1—figure supplement 1B), resulting in a near-linear temperature gradient between these last two channels (Figure 1—figure supplement 3). Prior to loading with washed cells, the channel of the device was flushed with 0.1% BSA (BioLabs B9001S, New England BioLabs, Ipswitch, MA) and EtOH for one hour, followed by tethering buffer for 4 hr. For adaptation MeAsp and L-serine were added to the buffer as stated in the text. The profile of the thermal gradient was measured and calibrated as a function of the spectral shifts of 50 µM pH-sensitive 2′,7′ bis (two carboxyethyl) 5 (and 6) carboxyfluorescein (BCECF) and 50 mM Tris buffer (pH 7.1). To that end fluorescence intensities were measured at two excitation wavelengths, 490 nm, and 440 nm, with fixed emission at 535 nm. The ratio of these two fluorescent intensities was used for calibration.
 
-## Cell tracking
+### Cell tracking
 
 Cells were imaged ~500 µm from the end of the assay channel and, 15 µm above the cover slip, at a flow rate of 30 µm/second. Time-lapsed images were taken at 12 frames/second for 30 min using an inverted microscope (Nikon Eclipse Ti-U, 20x objective, EGFP/mRFP-1 filter cube, EXFO X-Cite 120Q lamp) coupled with a CCD camera (Stingray F145B), and custom software written in LabVIEW (National Instruments, Austin, TX). Under used settings, each pixel of the movie corresponds to 0.3 µm.
 
 Data analysis was performed using custom scripts written in MATLAB (see Source code file 2 – Microfluidics). Cells were identified using standard machines vision techniques, first by image thresholding for particle identification and then by filtering out particles less than five pixels, or with an eccentricity greater than 0.95. Trajectories of cells were compiled from their 2D centroid position using nearest neighbor criteria to concatenate these positions. To remove trajectories from non-motile cells, we filtered them based on their ratio of standard deviation in the X and Y directions, since non-motile cells moved very little in the X direction. Cells below the empirical threshold std(Y)/std(X) of 18 were defined as motile. Furthermore, all trajectories with a path length shorter than 10 pixels were eliminated from further analysis. Examples for typical trajectories are shown in Figure 1—figure supplement 1B. The X-positions from all viable trajectories were binned and normalized by the number of measurements to produce the thermotaxis histograms. This plot shows the relative frequency of occurrence of various X-positions of swimming cells at the downstream end of the microfluidic channel.
 
-The thermotaxis migration coefficient (TMC) was used as a metric of cell tendency to migrate toward the warm (+1) or cold (−1) side of the microfluidics channel. TMC was defined asTMC=−2*[(mean(X)−Xmin)/(Xmax−Xmin)− 0.5]
+The thermotaxis migration coefficient (TMC) was used as a metric of cell tendency to migrate toward the warm (+1) or cold (−1) side of the microfluidics channel. TMC was defined as
+
+$$
+TMC=−2*[(mean(X)−X_{min})/(X_{max}−X_{min})− 0.5]
+$$
 
 where X is the array of all X-positions of viable paths, Xmin is left-side cutoff in the microfluidics channel (expressed in pixels), and Xmax is the right-side cutoff.
 
-## Analysis of receptor modification
+### Analysis of receptor modification
 
 The extent of receptor methylation was determined using quantitative immune blotting as described in (Neumann et al., 2010). Cells were treated as described above for FRET and concentrated to OD600 of approx. 13, adapted for 30 min with or without attractant at 21°C, and subsequently incubated for 20 min at indicated temperature. The reaction was stopped by addition of 4 × 95°C Laemmli buffer, samples were boiled and separated using 40 cm long 8% SDS-PAGE. Proteins were transferred to a 0.2 mm Hybond ECL nitrocellulose membrane by tank blotting and detected using an α-Tar antibody as primary antibody and a IRDyes 800-conjugated secondary antibody (Rockland, Limerick, PA) using an Odyssey Imager (LI-COR, Bad Homburg, Germany). Protein bands were quantified using the line-scan tool in ImageJ (http://rsbweb.nih.gov/ij).
 
-## Mathematical modeling
+### Mathematical modeling
 
-In the free-energy model for receptor activity, the probability A that a team of receptors will be active is A=1/(1+eF), where F=∑ifi is the sum of free-energy differences between active and inactive states of each of the receptors participating in the team, expressed in units of the thermal energy kBT. Following Jiang et al. (Jiang et al., 2009) and Oleksiuk et al. (Oleksiuk et al., 2011), the free-energy difference for a receptor is given by(1)fi=f0([L])+(T−T0)f1−[g0+(T−T0)g1]m,
+In the free-energy model for receptor activity, the probability $A$ that a team of receptors will be active is $A=1/(1+e^{F})$, where $F=\sumif_{i}$ is the sum of free-energy differences between active and inactive states of each of the receptors participating in the team, expressed in units of the thermal energy $k_{B}T$. Following Jiang et al. (Jiang et al., 2009) and Oleksiuk et al. (Oleksiuk et al., 2011), the free-energy difference for a receptor is given by
 
-where fi has been expanded to first order in the temperature difference from a reference temperature T0 (with the index i suppressed on the RHS) (Jiang et al., 2009; Oleksiuk et al., 2011). Here, f0([ L ])=f0(0)+log[ (1+[ L ]Koff)/(1+[ L ]Kon) ],  where f0(0)is the free-energy difference in the absence of ligand, [ L ] is the ligand concentration specific to the receptor type, and Kon/off are the receptor-ligand dissociation constants in the active (on) and inactive (off) states. For a chemoattractant, Koff< Kon. For simplicity, the free-energy difference is assumed to depend linearly on the methylation level of the receptor dimer, m=0,…mtot(=8), with a coefficient g=[ g0+(T−T0)g1 ]>0 (Endres et al., 2007; Shimizu et al., 2010). In principle, all these parameters could be different between the Tar and Tsr receptors, but here we take them to be identical, except for the fact that the free energy of the Tar receptor is only affected by the presence of MeAsp, while that of Tsr is affected only by serine. For simplicity, we assumed the basic allosteric signaling unit to be a trimer of receptors with randomly mixed Tar and Tsr (Ames et al., 2002; Hansen et al., 2010). In such a trimer, each of the three receptors can be either Tsr or Tar with probability reflecting their relative expression levels (1:1 in our case).
+$$
+f_{i}=f_{0}([L])+(T−T_{0})f_{1}−[g_{0}+(T−T_{0})g_{1}]m,
+$$
 
-Following the model of Meir et al. (Meir et al., 2010) for slowing down of methylation due to the scarcity of methylation sites, the kinetics of methylation is determined by(2)dm(t)dt=γRmtot−m(t)mtot−m(t)+N0[1−A(t)]−γBm(t)m(t)+N0A(t),
+where $f_{i}$ has been expanded to first order in the temperature difference from a reference temperature $T_{0}$ (with the index $i$ suppressed on the RHS) (Jiang et al., 2009; Oleksiuk et al., 2011). Here, $f_{0}([L])=f_{0}^{(0)}+log[(1+\frac{[L]}{K_{off}})/(1+\frac{[L]}{K_{on}})], $ where $f_{0}^{(0)}$is the free-energy difference in the absence of ligand, $[L]$ is the ligand concentration specific to the receptor type, and $K_{on/off}$ are the receptor-ligand dissociation constants in the active (on) and inactive (off) states. For a chemoattractant, $K_{off}< K_{on}$. For simplicity, the free-energy difference is assumed to depend linearly on the methylation level of the receptor dimer, $m=0,…m_{tot}(=8)$, with a coefficient $g=[g_{0}+(T−T_{0})g_{1}]>0 $(Endres et al., 2007; Shimizu et al., 2010). In principle, all these parameters could be different between the Tar and Tsr receptors, but here we take them to be identical, except for the fact that the free energy of the Tar receptor is only affected by the presence of MeAsp, while that of Tsr is affected only by serine. For simplicity, we assumed the basic allosteric signaling unit to be a trimer of receptors with randomly mixed Tar and Tsr (Ames et al., 2002; Hansen et al., 2010). In such a trimer, each of the three receptors can be either Tsr or Tar with probability reflecting their relative expression levels (1:1 in our case).
 
-where N0 is the parameter that determines how abruptly methylation and demethylation slow down as the receptors approach the saturated limits m=8 and m=0, respectively. The adapted steady-state methylation level mss obeys(3)mtot−mssmtot−mss+N0 1−A1−A0=mssmss+N0AA0
+Following the model of Meir et al. (Meir et al., 2010) for slowing down of methylation due to the scarcity of methylation sites, the kinetics of methylation is determined by
 
-where A0 is the adapted activity in the absence of slowing down of methylation/demethylation (N0=0, 0≤m≤8). Here we assume that all receptor dimers in the trimer have the same adapted methylation level m, which is obtained by solving Equation (3) for a given ligand concentration and a given temperature, in view of the above dependence of the probability A on m, [ L ], and T. The average activity A¯ is given by averaging this probability over all trimers. For the case of mixed receptors, we assume equal fractions of Tar and Tsr with trimer probabilities reflecting random mixing. Unless indicated otherwise, the parameters used for simulations were A0=1/3 (a typical wild-type adapted activity; (Neumann et al., 2012; Sourjik and Berg, 2002b; Sourjik et al., 2007), N0=2 (which corresponds to the saturation parameter previously obtained in Meir et al. (Meir et al., 2010) for T = 34°C in the current model), T0 = 24°C (which is a convenient arbitrary reference temperature),  f1=1.2, g0=0, and g1=0.2 (where these f and g parameters are chosen to yield an accumulation temperature near the range observed experimentally). For additional model details see Supplementary material. The thermotactic response at temperature T is given by [ A¯(T+3)−A¯(T) ]/ΔA¯, where the response, as in the experiment, is normalized by the change of activity ΔA at the lowest temperature upon saturation by ligand.
+$$
+\frac{dm(t)}{dt}=\gammaR\frac{m_{tot}−m(t)}{m_{tot}−m(t)+N_{0}}[1−A(t)]−\gammaB\frac{m(t)}{m(t)+N_{0}}A(t),
+$$
 
-## Supplementary material
+where $N_{0}$ is the parameter that determines how abruptly methylation and demethylation slow down as the receptors approach the saturated limits $m=8$ and $m=0$, respectively. The adapted steady-state methylation level $m_{ss} $obeys
 
-## Mathematical modeling
+$$
+\frac{m_{tot}−m_{ss}}{m_{tot}−m_{ss}+N_{0}} \frac{1−A}{1−A_{0}}=\frac{m_{ss}}{m_{ss}+N_{0}}\frac{A}{A_{0}}
+$$
 
-According to Equation 1, the change in the free-energy difference of a single receptor in response to a temperature change is proportional to f1−mg1, where m is the methylation level. For a team of identical heat-seeking receptors, as temperature increases, approaches from below its asymptotic high-temperature value, f1/g1, and the response to a temperature change vanishes. Similarly, for a team of identical cold-seeking receptors, as temperature increases m approaches this same asymptotic value from above. This implies that there is no accumulation temperature for teams of identical receptors, but rather a gradual decrease of thermal response with increasing temperature, with methylation m approaching f1/g1. For example, Figure 4 – Figure Supplement 1A depicts the modeled average per-receptor methylation level of Tar-only teams, whose modeled activity is depicted in Figure 4A.
+where $A_{0}$ is the adapted activity in the absence of slowing down of methylation/demethylation $(N_{0}=0, 0\leqm\leq8)$. Here we assume that all receptor dimers in the trimer have the same adapted methylation level m, which is obtained by solving Equation (3) for a given ligand concentration and a given temperature, in view of the above dependence of the probability$ A$ on $m$, $[L],$ and $T$. The average activity $A¯ $is given by averaging this probability over all trimers. For the case of mixed receptors, we assume equal fractions of Tar and Tsr with trimer probabilities reflecting random mixing. Unless indicated otherwise, the parameters used for simulations were $A_{0}$=1/3 (a typical wild-type adapted activity; (Neumann et al., 2012; Sourjik and Berg, 2002b; Sourjik et al., 2007), $N_{0}$=2 (which corresponds to the saturation parameter previously obtained in Meir et al. (Meir et al., 2010) for T = 34°C in the current model), T0 = 24°C (which is a convenient arbitrary reference temperature), $ f_{1}$=1.2, $g_{0}$=0, and $g_{1}$=0.2 (where these f and g parameters are chosen to yield an accumulation temperature near the range observed experimentally). For additional model details see Supplementary material. The thermotactic response at temperature T is given by $[A¯(T+3)−A¯(T)]/ΔA¯$, where the response, as in the experiment, is normalized by the change of activity $ΔA$ at the lowest temperature upon saturation by ligand.
+
+### Supplementary material
+
+#### Mathematical modeling
+
+According to Equation 1, the change in the free-energy difference of a single receptor in response to a temperature change is proportional to $f_{1}−mg_{1}$, where $m$ is the methylation level. For a team of identical heat-seeking receptors, as temperature increases, approaches from below its asymptotic high-temperature value, $f_{1}/g_{1}$, and the response to a temperature change vanishes. Similarly, for a team of identical cold-seeking receptors, as temperature increases $m$ approaches this same asymptotic value from above. This implies that there is no accumulation temperature for teams of identical receptors, but rather a gradual decrease of thermal response with increasing temperature, with methylation $m$ approaching $f_{1}/g_{1}$. For example, Figure 4 – Figure Supplement 1A depicts the modeled average per-receptor methylation level of Tar-only teams, whose modeled activity is depicted in Figure 4A.
 
 As can be seen in Figure 4 – Figure Supplement 1A, at a given temperature the adapted methylation increases with ligand concentration, while as temperature increases the adapted methylation approaches its asymptotic value. Note that the highly methylated receptors adapt more weakly in response to temperature changes, because of the invoked slowing down of methylation near saturation.
 
@@ -157,6 +403,6 @@ On the other hand, if one invokes slowing down of methylation near saturation, t
 
 As can be seen in Figure 4 – Figure Supplement 1B, the Tsr-only trimer is not affected by the large amount of MeAsp, and its methylation level remains very low, while the methylation levels of the Tar-containing trimers are close to saturation due to failure of precise adaptation. At low temperatures, the thermal response is dominated by the Tsr-only trimers, and the cell is heat seeking. However, as temperature increases, the methylation of the Tsr-only trimer approaches the asymptotic methylation and its temperature response decreases. On the other hand, because of the slowing down of methylation near saturation, the methylation levels of the Tar-containing trimers hardly change, and consequently their temperature response remains practically constant, thus eventually dominating the response, which leads to a change of sign of the thermal response, with the cell becoming cold seeking. This mechanism of response inversion is schematically illustrated in Figure 4 – Figure Supplement 1C.
 
-## Analysis of amino acid composition
+#### Analysis of amino acid composition
 
 E. coli cells were grown in M9CG media (M9 media supplemented with casamino acids, 1 g/L) and glucose (4 g/L)) as described in Yoney and Salman (Yoney and Salman, 2015). Briefly, cells from an overnight culture (30°C in M9CG) were diluted 1:50 in 10 mL M9CG, and the culture was grown to OD of 0.6 at 30°C. Cells were then harvested by centrifugation, resuspended in fresh M9CG at OD of 0.3 and incubated for 40 min. To extract metabolites cultures were vacuum-filtered through a 0.45 µm pore size filter and 100 µL of extract was transferred into 400 µL 50:50 acetonitrile/methanol cooled to −20°C and centrifuged at 13,000 rpm for 10 min and the supernatant was directly used for LC-MS/MS. Data were scored using the correlation between the 12C and the 13C channel and normalized to internal standards of amino acids as described previously (Guder et al., 2017).

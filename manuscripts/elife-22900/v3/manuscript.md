@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.22900.001 XRCC4 and DNA Ligase 4 (LIG4) form a tight complex that provides DNA ligase activity for classical non-homologous end joining (the predominant DNA double-strand break repair pathway in higher eukaryotes) and is stimulated by XLF. Independently of LIG4, XLF also associates with XRCC4 to form filaments that bridge DNA. These XRCC4/XLF complexes rapidly load and connect broken DNA, thereby stimulating intermolecular ligation. XRCC4 and XLF both include disordered C-terminal tails that are functionally dispensable in isolation but are phosphorylated in response to DNA damage by DNA-PK and/or ATM. Here we concomitantly modify the tails of XRCC4 and XLF by substituting fourteen previously identified phosphorylation sites with either alanine or aspartate residues. These phospho-blocking and -mimicking mutations impact both the stability and DNA bridging capacity of XRCC4/XLF complexes, but without affecting their ability to stimulate LIG4 activity. Implicit in this finding is that phosphorylation may regulate DNA bridging by XRCC4/XLF filaments. DOI: http://dx.doi.org/10.7554/eLife.22900.001
+XRCC4 and DNA Ligase 4 (LIG4) form a tight complex that provides DNA ligase activity for classical non-homologous end joining (the predominant DNA double-strand break repair pathway in higher eukaryotes) and is stimulated by XLF. Independently of LIG4, XLF also associates with XRCC4 to form filaments that bridge DNA. These XRCC4/XLF complexes rapidly load and connect broken DNA, thereby stimulating intermolecular ligation. XRCC4 and XLF both include disordered C-terminal tails that are functionally dispensable in isolation but are phosphorylated in response to DNA damage by DNA-PK and/or ATM. Here we concomitantly modify the tails of XRCC4 and XLF by substituting fourteen previously identified phosphorylation sites with either alanine or aspartate residues. These phospho-blocking and -mimicking mutations impact both the stability and DNA bridging capacity of XRCC4/XLF complexes, but without affecting their ability to stimulate LIG4 activity. Implicit in this finding is that phosphorylation may regulate DNA bridging by XRCC4/XLF filaments.
 
 ## Introduction
 
@@ -31,123 +31,463 @@ Here we focus on understanding the functional contribution of the XRCC4 and XLF 
 
 ## Results
 
-## The C-terminal tails of XRCC4 and XLF are important to form super-complexes in vitro that bridge DNA favoring molecular collision rates that enhance DNA ligation
+### The C-terminal tails of XRCC4 and XLF are important to form super-complexes in vitro that bridge DNA favoring molecular collision rates that enhance DNA ligation
 
-The phosphorylation of XRCC4 and XLF has been addressed by several investigators. Briefly, we identified nine phosphorylation sites in XRCC4 (
+The phosphorylation of XRCC4 and XLF has been addressed by several investigators. Briefly, we identified nine phosphorylation sites in XRCC4 (Yu et al., 2003); Lees-Miller and colleagues identified six sites in XLF (Yu et al., 2008). Studies using phospho-specific antibodies and numerous phospho-proteome reports have confirmed that eight of the nine sites (residues S193, S260, S304, S315, S320, T323, S327, and S328 – using UniProt Q13426 isoform 1 as reference) in XRCC4 and minimally four of the six sites (residues S132, S203, S245 and S251 – using UniProt Q9H9Q4 isoform 1 as reference) in XLF are phosphorylated in vivo (http://www.phosphosite.org). Remarkably, all the above-mentioned phosphorylation sites are located in the C-terminal tails of XRCC4 and XLF (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig1-v3.jpg)
 
-**Figure 1.:** (A) Structure of XRCC4 homodimer based on PDB 3II6, including residues 1–203 of XRCC4 and a schematic representation of the C-terminal disordered tails. In the bottom panel, also residues 654–911 of LIG4 are shown (green). (B) Structure of XLF homodimer based on PDB 2R9A, including residues 1–224 and a schematic representation of the C-terminal tails. Purple stars indicate the residues modified for phospho-mimicking or -blocking, and all were mutated, respectively, to Asp or Ala in this study. Residues are numbered using as reference Uniprot Q13426 isoform 1 and Q9H9Q4 isoform 1 for XRCC4 and XFF, respectively.DOI: http://dx.doi.org/10.7554/eLife.22900.003
+**Figure 1.:** (A) Structure of XRCC4 homodimer based on PDB 3II6, including residues 1–203 of XRCC4 and a schematic representation of the C-terminal disordered tails. In the bottom panel, also residues 654–911 of LIG4 are shown (green). (B) Structure of XLF homodimer based on PDB 2R9A, including residues 1–224 and a schematic representation of the C-terminal tails. Purple stars indicate the residues modified for phospho-mimicking or -blocking, and all were mutated, respectively, to Asp or Ala in this study. Residues are numbered using as reference Uniprot Q13426 isoform 1 and Q9H9Q4 isoform 1 for XRCC4 and XFF, respectively.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig1-figsupp1-v3.jpg)
 
-**Figure 1—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.22900.004
-
-To test whether the disordered C-terminal tails of XRCC4 and XLF are implicated in regulation of the DNA interaction dynamics of XRCC4-XLF complexes, phospho-mimetic (Asp) and phospho-ablating (Ala) variants of XRCC4 and XLF targeting the multiple DNA-PK or ATM dependent phosphorylation sites were designed and generated (
+To test whether the disordered C-terminal tails of XRCC4 and XLF are implicated in regulation of the DNA interaction dynamics of XRCC4-XLF complexes, phospho-mimetic (Asp) and phospho-ablating (Ala) variants of XRCC4 and XLF targeting the multiple DNA-PK or ATM dependent phosphorylation sites were designed and generated (Figure 1—figure supplement 1). To study the impact of these modifications, several different activity assays were optimized and validated using wild-type (WT) XRCC4 and XLF proteins (Figure 2). These assays include electrophoretic-mobility shift assays (EMSAs, Figure 2A and B), phage T4 DNA ligase assays (as a way to indirectly measure DNA bridging activity, Figure 2C,D and E), and protein-mediated DNA pull-down assays to directly measure DNA bridging activity (Figure 2F and G). Overall, analyses of the activity of the WT proteins confirmed that XRCC4 and XLF cooperatively form super-complexes detectable by EMSA (Figure 2A and B) that strongly promote intermolecular DNA cohesive and blunt end ligation (Figure 2C,D and E), by favoring molecular collision rates during ligation through a robust DNA bridging activity as can be seen in Figure 2F and G. In the latter experiment, it can be also observed that XLF has an intrinsic DNA bridging activity that depends on the presence of its C-terminal tail (Figure 2G, lanes 3 and 5, XLF (1-224) lacks the 75 C-terminal residues). This intrinsic XLF DNA bridging activity is strongly stimulated by XRCC4 (Figure 2G, lanes 3 and 7) in a manner that depends on physical interaction between XLF and XRCC4, as tested using an XLF mutant (L115D) described previously that does not interact with XRCC4 but has an intact C-terminal tail (Figure 2G, lanes 4 and 8, Malivert et al., 2010; Roy et al., 2015). Furthermore, as seen in Figure 2—figure supplement 1, the importance of the XRCC4 and XLF C-terminal tails, and especially XLF’s tails in promoting DNA bridging and increasing the rate of molecular collision during ligation in vitro, is demonstrated using the truncated tail-less XRCC4(1–157) and XLF(1-224) variants.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig2-v3.jpg)
 
-**Figure 2.:** (A) EMSA using a 2.7 kb DNA fragment with protruding ends and the indicated proteins resolved by agarose gel electrophoresis and DNA detected by ethidium bromide staining. (B) EMSA using a blunt-ended 2.7 kb DNA fragment and the indicated proteins resolved by agarose gel electrophoresis and DNA detected by ethidium bromide staining. (C) (D) (E) T4 DNA ligase assay using a 2.7 kb DNA fragment with cohesive (left) or blunt ends (right) and the indicated proteins. Ligation products were deproteinized and resolved by agarose gel electrophoresis followed by detection by ethidium bromide staining. NC = nicked circle, CCC = covalently closed circle. (F) Schematic of the DNA pull-down/bridging assay. A one-end biotinylated 1 kb DNA fragment is first attached to streptavidin-coated magnetic beads and then incubated with a blunt-ended 2.7 kb DNA fragment in the presence of the proteins of interest. (G) Bridging assays for the indicated proteins resolved by agarose gel electrophoresis after deproteinization followed by DNA detection by ethidium bromide staining.DOI: http://dx.doi.org/10.7554/eLife.22900.005
+**Figure 2.:** (A) EMSA using a 2.7 kb DNA fragment with protruding ends and the indicated proteins resolved by agarose gel electrophoresis and DNA detected by ethidium bromide staining. (B) EMSA using a blunt-ended 2.7 kb DNA fragment and the indicated proteins resolved by agarose gel electrophoresis and DNA detected by ethidium bromide staining. (C) (D) (E) T4 DNA ligase assay using a 2.7 kb DNA fragment with cohesive (left) or blunt ends (right) and the indicated proteins. Ligation products were deproteinized and resolved by agarose gel electrophoresis followed by detection by ethidium bromide staining. NC = nicked circle, CCC = covalently closed circle. (F) Schematic of the DNA pull-down/bridging assay. A one-end biotinylated 1 kb DNA fragment is first attached to streptavidin-coated magnetic beads and then incubated with a blunt-ended 2.7 kb DNA fragment in the presence of the proteins of interest. (G) Bridging assays for the indicated proteins resolved by agarose gel electrophoresis after deproteinization followed by DNA detection by ethidium bromide staining.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig2-figsupp1-v3.jpg)
 
-**Figure 2—figure supplement 1.:** (A) 2 μM each, (B) 1 μM each, and (C) 0.5 μM each. Ligation products were deproteinized and resolved by agarose gel electrophoresis followed by DNA detection by ethidium bromide staining. NC = nicked circle, CCC = covalently closed circle.DOI: http://dx.doi.org/10.7554/eLife.22900.006
+**Figure 2—figure supplement 1.:** (A) 2 μM each, (B) 1 μM each, and (C) 0.5 μM each. Ligation products were deproteinized and resolved by agarose gel electrophoresis followed by DNA detection by ethidium bromide staining. NC = nicked circle, CCC = covalently closed circle.
 
-## Phospho-mimicking XRCC4 disrupts XRCC4 DNA binding, but formation of DNA/XRCC4/XLF super-complexes is not disrupted by phospho-mimicking modifications in the C-terminal disordered tails of either XRCC4 or XLF
+### Phospho-mimicking XRCC4 disrupts XRCC4 DNA binding, but formation of DNA/XRCC4/XLF super-complexes is not disrupted by phospho-mimicking modifications in the C-terminal disordered tails of either XRCC4 or XLF
 
-We first analyzed XRCC4 and XLF phosphorylation site mutants for DNA binding by EMSA (
+We first analyzed XRCC4 and XLF phosphorylation site mutants for DNA binding by EMSA (Figure 3). Neither the intrinsic DNA binding of XRCC4 nor its ability to form super-complexes with XLF-WT is affected by phospho-blocking eight sites in XRCC4 (Figure 3A, XRCC4-Ala). In contrast, phospho-mimicking these eight sites in XRCC4 strongly reduces XRCC4’s intrinsic DNA binding and modestly reduces cooperative DNA binding with XLF-WT (Figure 3A, XRCC4-Asp). Neither phospho-blocking nor phospho-mimicking six sites in XLF alters either the intrinsic DNA binding activity of XLF or its ability to cooperatively form super-complexes with XRCC4-WT (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig3-v3.jpg)
 
-**Figure 3.:** (A) EMSAs showing DNA binding of XRCC4 variants in isolation (top panel) and cooperatively with XLF-WT (bottom panel) resolved by agarose gel electrophoresis and detected by ethidium bromide staining. (B) EMSAs showing DNA binding of XLF variants in isolation (top panel) and cooperatively with XRCC4-WT (bottom panel) resolved by agarose gel electrophoresis and detected by ethidium bromide staining.DOI: http://dx.doi.org/10.7554/eLife.22900.007
+**Figure 3.:** (A) EMSAs showing DNA binding of XRCC4 variants in isolation (top panel) and cooperatively with XLF-WT (bottom panel) resolved by agarose gel electrophoresis and detected by ethidium bromide staining. (B) EMSAs showing DNA binding of XLF variants in isolation (top panel) and cooperatively with XRCC4-WT (bottom panel) resolved by agarose gel electrophoresis and detected by ethidium bromide staining.
 
-Protein-protein cross-linking experiments in the absence of DNA suggest that the XRCC4 and XLF variants interact at the protein-protein level similarly to WT XRCC4 and XLF (
+Protein-protein cross-linking experiments in the absence of DNA suggest that the XRCC4 and XLF variants interact at the protein-protein level similarly to WT XRCC4 and XLF (Figure 4). To further investigate these interactions, we used Isothermal Titration micro-Calorimetry (ITC) to quantify the thermodynamic parameters of the XRCC4-XLF protein-protein interaction in the absence of DNA. Experiments were performed at 37°C (after optimization tests at 10, 25, and 37°C) because this condition provided the highest heat signature and optimal signal to noise ratio (Figure 5 and Figure 5—figure supplement 1). Two experimental replicas were performed in duplicate using two protein concentrations (Table 1). The dissociation constant values (Kd) obtained for the three different combinations (WT-WT, Ala-Ala, and Asp-Asp) are equal within the experimental errors, and are approximately 2 μM (Figure 5D, top panel, and Table 1). Nevertheless, the XRCC4 and XLF variants have different enthalpic (ΔH0, dark grey bars) and entropic (-TΔS0, light grey bars) contributions (Figure 5D, bottom panel, and Table 1) that compensate one another resulting in similar free energies (ΔG0, black bars). We conclude that although the phospho-blocking and -mimicking mutations in the disordered tails do not affect the overall equilibrium of the XRCC4-XLF interaction, these mutations affect the thermodynamics of the interaction. Moreover, the disordered tails may contribute to stabilizing the XRCC4-XLF interaction. In fact, the Kd measured with full-length (WT) proteins is about half of that measured for XRCC4 and XLF truncations missing the disordered tails (Malivert et al., 2010). Also, ITC experiments showed that for all variants (and conditions) the stoichiometry of the XRCC4 and XLF interaction is 1:1 (Table 1). In sum, ITC experiments confirm that, in the absence of DNA, the Ala and Asp variants interact in solution with similar affinity than WT XRCC4 and XLF, despite the fact that the underlying molecular interactions have different thermodynamic contributions. We suggest that this may indicate phosphorylation induced conformational changes (see Discussion).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig4-v3.jpg)
 
-**Figure 4.:** XRCC4 and XLF were cross-linked in isolation or in equimolar combination with BS3. Cross-linked species were resolved by reducing and denaturing SDS-PAGE and detected by Coomassie staining. (A) XRCC4 and XLF WT-WT combination (left panel) and XRCC4-WT combined with XLF-L115A, that has a point mutation that diminished affinity for XRCC4 (right panel). (B) XRCC4-WT (left panel), XRCC4-Ala (middle panel) and XRCC4-Asp (right panel) respectively cross-linked to all the XLF variants. M = protein molecular weight size ladder.DOI: http://dx.doi.org/10.7554/eLife.22900.008
+**Figure 4.:** XRCC4 and XLF were cross-linked in isolation or in equimolar combination with BS3. Cross-linked species were resolved by reducing and denaturing SDS-PAGE and detected by Coomassie staining. (A) XRCC4 and XLF WT-WT combination (left panel) and XRCC4-WT combined with XLF-L115A, that has a point mutation that diminished affinity for XRCC4 (right panel). (B) XRCC4-WT (left panel), XRCC4-Ala (middle panel) and XRCC4-Asp (right panel) respectively cross-linked to all the XLF variants. M = protein molecular weight size ladder.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig5-v3.jpg)
 
-**Figure 5.:** Isothermal titration micro-calorimetry data obtained at 37°C injecting (A) XLF-WT (154 μM) into XRCC4-WT (12 μM), (B) XLF-Ala (250 μM) into XRCC4-Ala (19 μM), (C) XLF-Asp (250 μM) into XRCC4-Asp (19 μM). Top panels display the thermogram of the heat exchanged as a function of time after baseline (red lines) subtraction. Bottom panels show the result of the (numerical) integration of the peaks as a function of the molar ratio between the titrant (XLF) and the analyte (XRCC4); black lines are non-linear least squares fits of the data. Data are representative results out of two experimental replicas each composed of a technical duplicate (see Table 1 for details). Source data are included in Table 1—source data 1. (D) Equilibrium constant (Kd) (top) and thermodynamic parameters (free energy ΔG0, black bars; enthalpy ΔH0, dark grey bars; and entropy –TΔS0, light grey bars) (bottom) obtained from sigmoidal fit (black lines in bottom panels of (A, B, C) of ITC curves. Bars show mean values and error bars represent the standard error of the mean (SEM) of the four experimental runs performed per each condition. Thermodynamic parameter values are reported in Table 1.DOI: http://dx.doi.org/10.7554/eLife.22900.009
+**Figure 5.:** Isothermal titration micro-calorimetry data obtained at 37°C injecting (A) XLF-WT (154 μM) into XRCC4-WT (12 μM), (B) XLF-Ala (250 μM) into XRCC4-Ala (19 μM), (C) XLF-Asp (250 μM) into XRCC4-Asp (19 μM). Top panels display the thermogram of the heat exchanged as a function of time after baseline (red lines) subtraction. Bottom panels show the result of the (numerical) integration of the peaks as a function of the molar ratio between the titrant (XLF) and the analyte (XRCC4); black lines are non-linear least squares fits of the data. Data are representative results out of two experimental replicas each composed of a technical duplicate (see Table 1 for details). Source data are included in Table 1—source data 1. (D) Equilibrium constant (Kd) (top) and thermodynamic parameters (free energy ΔG0, black bars; enthalpy ΔH0, dark grey bars; and entropy –TΔS0, light grey bars) (bottom) obtained from sigmoidal fit (black lines in bottom panels of (A, B, C) of ITC curves. Bars show mean values and error bars represent the standard error of the mean (SEM) of the four experimental runs performed per each condition. Thermodynamic parameter values are reported in Table 1.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig5-figsupp1-v3.jpg)
 
-**Figure 5—figure supplement 1.:** Top panels display the heat exchanged as a function of time, after baseline (red lines) subtraction. Bottom panels show the result of the (numerical) integration of the peaks as a function of the molar ratio between the titrant (XLF) and the analyte (XRCC4). Thermograms have been obtained (A) at 10°C injecting XLF-WT (168 μM) into XRCC4-WT (17 μM) and at 25°C injecting (B) XLF-WT (330 μM) into XRCC4-WT (25 μM), (C) XLF-Ala (330 μM) into XRCC4-Ala (25 μM), and (D) XLF-Asp (330 μM) into XRCC4-Asp (25 μM). Control isothermal titration micro-calorimetry thermograms obtained at 37°C injecting (E) buffer into XRCC4-WT (12 μM) and (F) XLF-WT (154 μM) into buffer (the first large peak might represent XLF homodimer dissociation heat due to XLF dilution). Source data are included in Table 1—source data 1 (panels A–D) and reported in Figure 5—figure supplement 1—source data 1 (panels E and F).DOI: http://dx.doi.org/10.7554/eLife.22900.01010.7554/eLife.22900.011Figure 5—figure supplement 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.22900.011
+**Figure 5—figure supplement 1.:** Top panels display the heat exchanged as a function of time, after baseline (red lines) subtraction. Bottom panels show the result of the (numerical) integration of the peaks as a function of the molar ratio between the titrant (XLF) and the analyte (XRCC4). Thermograms have been obtained (A) at 10°C injecting XLF-WT (168 μM) into XRCC4-WT (17 μM) and at 25°C injecting (B) XLF-WT (330 μM) into XRCC4-WT (25 μM), (C) XLF-Ala (330 μM) into XRCC4-Ala (25 μM), and (D) XLF-Asp (330 μM) into XRCC4-Asp (25 μM). Control isothermal titration micro-calorimetry thermograms obtained at 37°C injecting (E) buffer into XRCC4-WT (12 μM) and (F) XLF-WT (154 μM) into buffer (the first large peak might represent XLF homodimer dissociation heat due to XLF dilution). Source data are included in Table 1—source data 1 (panels A–D) and reported in Figure 5—figure supplement 1—source data 1 (panels E and F).
 
-## Aspartate substitutions ablate DNA bridging
+**Table 1.**
+ Impact of phospho-mimicking or phospho-blocking mutations on the thermodynamics parameters of XRCC4-XLF protein-protein interaction by micro-calorimetry.Table 1—source data 1.Thermograms of XRCC4-XLF WT-WT, Ala-Ala, and Asp-Asp experiments.
 
-To assess the role of the XRCC4 and XLF C-terminal tails, we first used T4 ligase assays to indirectly infer DNA bridging by XRCC4-XLF complexes. The XRCC4-Ala variants combined with either XLF-WT or XLF-Ala variants modestly enhanced ligation as compared to the WT counterpart (
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">T (°C)</th>
+      <th rowspan="2">2-Me (mM)</th>
+      <th>[XRCC4] (μM)</th>
+      <th>[XLF] (μM)</th>
+      <th rowspan="2">Ratio</th>
+      <th rowspan="2">N</th>
+      <th rowspan="2">Ka (M−1)</th>
+      <th rowspan="2">ΔH0 (kcal/mol)</th>
+      <th rowspan="2">Kd (μM)</th>
+      <th rowspan="2">−ΔG0 (kcal/mol)</th>
+      <th rowspan="2">−TΔS0 (kcal/mol)</th>
+      <th rowspan="2">Thermogram shown in</th>
+      <th rowspan="2">Source data</th>
+      <th rowspan="2">&lt;Kd&gt; (μM)</th>
+      <th rowspan="2">&lt;ΔH0&gt; (kcal/mol)</th>
+      <th rowspan="2">&lt;-ΔG0&gt; (kcal/mol)</th>
+      <th rowspan="2">&lt;-TΔS0&gt; (kcal/mol)</th>
+    </tr>
+    <tr>
+      <th>ITC cell</th>
+      <th>ITC syringe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">XRCC4-WT XLF-WT</td>
+      <td>10</td>
+      <td>10</td>
+      <td>17</td>
+      <td>168</td>
+      <td>10</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>Figure 5—figure supplement 1A</td>
+      <td>A</td>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>10</td>
+      <td>17</td>
+      <td>168</td>
+      <td>10</td>
+      <td>0.97</td>
+      <td>536000</td>
+      <td>−1.7</td>
+      <td>1.8</td>
+      <td>−7.8</td>
+      <td>−6.1</td>
+      <td>--</td>
+      <td>B</td>
+      <td rowspan="3">3.2 ± 0.8</td>
+      <td rowspan="3">−2.4 ± 0.4</td>
+      <td rowspan="3">−7.5 ± 0.2</td>
+      <td rowspan="3">−5.2 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>10</td>
+      <td>33</td>
+      <td>330</td>
+      <td>10</td>
+      <td>0.91</td>
+      <td>306000</td>
+      <td>−2.9</td>
+      <td>3.2</td>
+      <td>−7.5</td>
+      <td>−4.6</td>
+      <td>Figure 5—figure supplement 1B</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>10</td>
+      <td>25</td>
+      <td>330</td>
+      <td>13</td>
+      <td>0.84</td>
+      <td>222000</td>
+      <td>−2.6</td>
+      <td>4.5</td>
+      <td>−7.3</td>
+      <td>−4.7</td>
+      <td>--</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>0</td>
+      <td>23</td>
+      <td>300</td>
+      <td>13</td>
+      <td>0.85</td>
+      <td>273000</td>
+      <td>−6.0</td>
+      <td>3.7</td>
+      <td>−7.7</td>
+      <td>−1.7</td>
+      <td>--</td>
+      <td>E</td>
+      <td rowspan="4">2.4 ± 0.7</td>
+      <td rowspan="4">−7.1 ± 1</td>
+      <td rowspan="4">−8.0 ± 0.2</td>
+      <td rowspan="4">−1.0 ± 0.8</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>0</td>
+      <td>23</td>
+      <td>300</td>
+      <td>13</td>
+      <td>0.89</td>
+      <td>278000</td>
+      <td>−4.9</td>
+      <td>3.6</td>
+      <td>−7.7</td>
+      <td>−2.9</td>
+      <td>--</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>0</td>
+      <td>12</td>
+      <td>154</td>
+      <td>13</td>
+      <td>0.92</td>
+      <td>848000</td>
+      <td>−8.6</td>
+      <td>1.2</td>
+      <td>−8.4</td>
+      <td>0.2</td>
+      <td>Figure 5A</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>0</td>
+      <td>12</td>
+      <td>154</td>
+      <td>13</td>
+      <td>0.84</td>
+      <td>760000</td>
+      <td>−8.8</td>
+      <td>1.3</td>
+      <td>−8.3</td>
+      <td>0.4</td>
+      <td>--</td>
+      <td>H</td>
+    </tr>
+    <tr>
+      <td rowspan="5">XRCC4-Ala XLF-Ala</td>
+      <td>25</td>
+      <td>10</td>
+      <td>25</td>
+      <td>330</td>
+      <td>13</td>
+      <td>1.21</td>
+      <td>300000</td>
+      <td>−1.7</td>
+      <td>3.3</td>
+      <td>−7.5</td>
+      <td>−5.8</td>
+      <td>Figure 5—figure supplement 1C</td>
+      <td>I</td>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>0</td>
+      <td>25</td>
+      <td>325</td>
+      <td>13</td>
+      <td>1.07</td>
+      <td>637000</td>
+      <td>−3.1</td>
+      <td>1.6</td>
+      <td>−8.2</td>
+      <td>−5.1</td>
+      <td>--</td>
+      <td>J</td>
+      <td rowspan="4">2.3 ± 0.4</td>
+      <td rowspan="4">−5.8 ± 1.4</td>
+      <td rowspan="4">−8.0 ± 0.1</td>
+      <td rowspan="4">−2.2 ± 1.4</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>0</td>
+      <td>25</td>
+      <td>325</td>
+      <td>13</td>
+      <td>1</td>
+      <td>343000</td>
+      <td>−3.7</td>
+      <td>2.9</td>
+      <td>−7.8</td>
+      <td>−4.1</td>
+      <td>--</td>
+      <td>K</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>0</td>
+      <td>19</td>
+      <td>250</td>
+      <td>13</td>
+      <td>0.92</td>
+      <td>345000</td>
+      <td>−8.4</td>
+      <td>2.9</td>
+      <td>−7.8</td>
+      <td>0.6</td>
+      <td>--</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>0</td>
+      <td>19</td>
+      <td>250</td>
+      <td>13</td>
+      <td>0.92</td>
+      <td>582000</td>
+      <td>−8.1</td>
+      <td>1.7</td>
+      <td>−8.2</td>
+      <td>−0.1</td>
+      <td>Figure 5B</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td rowspan="6">XRCC4-Asp XLF-Asp</td>
+      <td>25</td>
+      <td>10</td>
+      <td>35</td>
+      <td>350</td>
+      <td>10</td>
+      <td>1.27</td>
+      <td>672000</td>
+      <td>−0.9</td>
+      <td>1.5</td>
+      <td>−7.9</td>
+      <td>−7.0</td>
+      <td>--</td>
+      <td>N</td>
+      <td rowspan="2" colspan="4"></td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>10</td>
+      <td>25</td>
+      <td>330</td>
+      <td>13</td>
+      <td>0.82</td>
+      <td>263000</td>
+      <td>−1.2</td>
+      <td>3.8</td>
+      <td>−7.4</td>
+      <td>−6.2</td>
+      <td>Figure 5—figure supplement 1D</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>0</td>
+      <td>32</td>
+      <td>416</td>
+      <td>13</td>
+      <td>1.06</td>
+      <td>289000</td>
+      <td>−2.4</td>
+      <td>3.4</td>
+      <td>−7.8</td>
+      <td>−5.4</td>
+      <td>--</td>
+      <td>P</td>
+      <td rowspan="4">2.4 ± 0.4</td>
+      <td rowspan="4">−3.7 ± 0.8</td>
+      <td rowspan="4">−8.0 ± 0.1</td>
+      <td rowspan="4">−4.3 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>0</td>
+      <td>32</td>
+      <td>416</td>
+      <td>13</td>
+      <td>0.95</td>
+      <td>425000</td>
+      <td>−2.3</td>
+      <td>2.4</td>
+      <td>−8.0</td>
+      <td>−5.7</td>
+      <td>--</td>
+      <td>Q</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>0</td>
+      <td>19</td>
+      <td>250</td>
+      <td>13</td>
+      <td>0.88</td>
+      <td>566000</td>
+      <td>−4.7</td>
+      <td>1.8</td>
+      <td>−8.2</td>
+      <td>−3.5</td>
+      <td>Figure 5C</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>0</td>
+      <td>17</td>
+      <td>220</td>
+      <td>13</td>
+      <td>0.85</td>
+      <td>538000</td>
+      <td>−5.5</td>
+      <td>1.8</td>
+      <td>−8.1</td>
+      <td>−2.6</td>
+      <td>--</td>
+      <td>S</td>
+    </tr>
+  </tbody>
+</table>
+
+_2-Me stands for 2-MercaptoethanolRatio indicates the titrant over analyte concentration ([XLF]/[XRCC4])Source data specifies the column corresponding to each thermogram in Table 1—source data 1.Last four columns report mean values ± Standard Error of the Mean (SEM) from four experimental runs at 37°C (grey cells) and 3 runs at 25°C (white cells)n.d. denotes no detectable heat transfer (at 10°C)_
+
+### Aspartate substitutions ablate DNA bridging
+
+To assess the role of the XRCC4 and XLF C-terminal tails, we first used T4 ligase assays to indirectly infer DNA bridging by XRCC4-XLF complexes. The XRCC4-Ala variants combined with either XLF-WT or XLF-Ala variants modestly enhanced ligation as compared to the WT counterpart (Figure 6, lanes 5, 6, 8, and 9) suggesting more stable DNA-protein complexes. In contrast, stimulation of T4 ligase activity is minimal with the Asp mutants; this is most dramatic when aspartate mutants of both XRCC4 and XLF are utilized concomitantly (Figure 6, lanes 13). The DNA bridging activity of XRCC4 and XLF variants was also investigated via a protein-mediated DNA pull-down assay (Figure 7). When both XRCC4-Asp and XLF-Asp variants are combined, DNA bridging activity is severely impaired (Figure 7, lanes 18). Of note, the ability of the XLF-Asp variant to bridge long DNA on its own is also strongly reduced (Figure 7B, lane 8) although its ability to bind to DNA is not affected when tested by EMSA (Figure 3B). From these data, we conclude that XRCC4-Asp and XLF-Asp variants are defective in cooperative DNA bridging, even though the proteins interact with one another analogously (i.e. with similar Kd) to WT XRCC4 and XLF. We therefore hypothesized that XRCC4 and XLF with aspartate substitutions in the C terminal tails might generate complexes that dissociate faster from DNA as compared to WT XRCC4-XLF complexes.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig6-v3.jpg)
 
-**Figure 6.:** All combinations of XRCC4 variants with XLF variants tested in ability to stimulate T4 DNA ligase cohesive end ligation (A) or blunt end ligation (B). Ligation products were deproteinized and resolved by agarose gel electrophoresis followed by detection by ethidium bromide staining.DOI: http://dx.doi.org/10.7554/eLife.22900.014
+**Figure 6.:** All combinations of XRCC4 variants with XLF variants tested in ability to stimulate T4 DNA ligase cohesive end ligation (A) or blunt end ligation (B). Ligation products were deproteinized and resolved by agarose gel electrophoresis followed by detection by ethidium bromide staining.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig7-v3.jpg)
 
-**Figure 7.:** DNA bridging assays using a short blunt ended 0.5 kb DNA (A) or a long blunt ended 2.7 kb DNA (B) and the indicated proteins. Samples were deproteinized and resolved by agarose gel electrophoresis followed by detection by ethidium bromide staining.DOI: http://dx.doi.org/10.7554/eLife.22900.015
+**Figure 7.:** DNA bridging assays using a short blunt ended 0.5 kb DNA (A) or a long blunt ended 2.7 kb DNA (B) and the indicated proteins. Samples were deproteinized and resolved by agarose gel electrophoresis followed by detection by ethidium bromide staining.
 
-## Aspartate substitutions in the disordered C-terminal tails of XRCC4 and XLF accelerate dissociation of XRCC4-XLF complexes from DNA
+### Aspartate substitutions in the disordered C-terminal tails of XRCC4 and XLF accelerate dissociation of XRCC4-XLF complexes from DNA
 
-To assess dissociation rates of XRCC4-XLF complexes from DNA, a Surface Plasmon Resonance (SPR) assay was established. One-ended biotinylated 400 bp-long dsDNA molecules were captured on streptavidin-coated chips; protein/DNA association and dissociation was monitored using a Biacore instrument (
+To assess dissociation rates of XRCC4-XLF complexes from DNA, a Surface Plasmon Resonance (SPR) assay was established. One-ended biotinylated 400 bp-long dsDNA molecules were captured on streptavidin-coated chips; protein/DNA association and dissociation was monitored using a Biacore instrument (Figure 8A). WT proteins were first characterized in isolation and at equi-molar concentrations (Figure 8B). We observed that XRCC4-WT efficiently binds DNA only when flushed at high concentrations, but once bound, the protein remains stably attached to DNA (Figure 8B, left panel). As compared to XRCC4, XLF’s association with DNA is much faster, but XLF also dissociates faster from DNA than XRCC4 (Figure 8B, middle panel). When WT XRCC4 and XLF are mixed together in solution, at an equimolar ratio, and flushed, a strong enhancement of DNA association was observed followed by dissociation with comparable kinetics to XLF alone (Figure 8B, right panel). Probably as a consequence of polymerization of the filamentous structures formed by XRCC4 and XLF on the DNA, the SPR association and dissociation curves could not be perfectly fitted with a simple 1:1 Langmuir model to compute first order association and dissociation rate constants (kon and koff, respectively). Nevertheless, we estimate that XRCC4-WT’s association rate is at least 10-times slower than that of XLF-WT alone or that of the XRCC4-WT + XLF-WT combination. Moreover, also XRCC4’s dissociation rate is at least 10-times slower than that of XLF-WT alone or in combination with XRCC4-WT. When the XRCC4 and XLF Asp and Ala variants were analyzed in isolation at a fixed concentration (1 μM), association and dissociation kinetics were strongly affected for XRCC4-Ala, XRCC4-Asp and XLF-Asp but just minority for XLF-Ala (Figure 8—figure supplement 1A). Next, given the above-mentioned limits in correctly quantifying the association and dissociation rate constants, we decided to systematically analyze all the possible combinations of the different variants at a fixed concentration ([C] = 1 μM each, Figure 8C). To inspect and compare the behavior of the different combinations during the association phase, we considered the equilibrium affinity (defined as the response unit values averaged over 5 s taken 3 s before the start of the dissociation phase, gray band in Figure 8C), which reports on the ratio: [C]·kon / koff. The XRCC4-Ala and XLF-Ala variants together, or in combination with the WT variant, exhibited equilibrium affinities similar to the WT-WT combination (Figure 8D). The XRCC4-Asp and XLF-Asp variants combined with the WT and Ala variants also showed modest deviations from the WT-WT combination. In contrast, the combination of the two Asp variants resulted in a 4-fold drop in the equilibrium affinity as compared to the WT-WT combination. To understand the observed drop for the XRCC4-Asp + XLF-Asp complexes, we analyzed the dissociation phase. The dissociation curves of all combinations have a biphasic character, with an initial rapid dissociation followed by a slower dissociation phase (Figure 8—figure supplement 1B). The slower dissociation kinetic component (koff_slow) was similar for all combinations of XRCC4 and XLF variants, but, interestingly, the initial rapid dissociation phase (koff_fast) was accelerated 4-fold in the case of the XRCC4-Asp + XLF-Asp complexes as compared to the WT-WT complexes (Figure 8E). Thus, the decrease in equilibrium affinity detected for the XRCC4-Asp + XLF-Asp complexes can be explained by the increase in the rate of dissociation without a major change in the rate of association of XRCC4-Asp + XLF-Asp complexes. Taken together, these analyses indicate that simultaneous aspartate substitutions within the C-terminal tails of both XRCC4 and XLF results in a shifted DNA binding equilibrium, such that complexes bind to DNA similarly to WT XRCC4/XLF complexes, but detach much faster. This likely explains the impairment in DNA bridging, as assessed by pull-down and T4 DNA end ligation assays. Lastly, SPR experiments using C-terminal tail-less variants XRCC4(1–157) and XLF(1-224) confirmed that C-terminal tails are required (and especially those of XLF) for stable DNA binding (Figure 8—figure supplement 1C and D), consistently with DNA bridging results obtained with the T4 DNA ligation assays (Figure 2—figure supplement 1).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig8-v3.jpg)
 
-**Figure 8.:** (A) Scheme of the SPR assay with 400 bp blunt end DNA anchored to the streptavidin coated chip via biotin-streptavidin linkage. (B) From left to right, sensorgrams of XRCC4-WT, XLF-WT, and equi-molar mix of XRCC4-WT and XLF-WT at the indicated concentrations. Source data are provided in Figure 8—source data 1, 2 and 3, respectively. (C) Sensorgrams of all XRCC4 and XLF variant combinations each at 1 μM concentration. Source data are provided in Figure 8—source data 4. (D) Equilibrium affinity of the different combinations of XRCC4 and XLF variants. Source data are provided in Figure 8—source data 5. (E) Dissociation rates for the different combinations of XRCC4 and XLF variants. koff_fast (dark grey symbols) and koff_slow (light grey symbols) correspond, respectively, to the initial (fast) and late (slow) phase in the biphasic dissociation curves. Error bars fall within symbol dimension. Source data are provided in Figure 8—source data 5.DOI: http://dx.doi.org/10.7554/eLife.22900.01610.7554/eLife.22900.017Figure 8—source data 1.DOI: http://dx.doi.org/10.7554/eLife.22900.01710.7554/eLife.22900.018Figure 8—source data 2.DOI: http://dx.doi.org/10.7554/eLife.22900.01810.7554/eLife.22900.019Figure 8—source data 3.DOI: http://dx.doi.org/10.7554/eLife.22900.01910.7554/eLife.22900.020Figure 8—source data 4.DOI: http://dx.doi.org/10.7554/eLife.22900.02010.7554/eLife.22900.021Figure 8—source data 5.DOI: http://dx.doi.org/10.7554/eLife.22900.021
+**Figure 8.:** (A) Scheme of the SPR assay with 400 bp blunt end DNA anchored to the streptavidin coated chip via biotin-streptavidin linkage. (B) From left to right, sensorgrams of XRCC4-WT, XLF-WT, and equi-molar mix of XRCC4-WT and XLF-WT at the indicated concentrations. Source data are provided in Figure 8—source data 1, 2 and 3, respectively. (C) Sensorgrams of all XRCC4 and XLF variant combinations each at 1 μM concentration. Source data are provided in Figure 8—source data 4. (D) Equilibrium affinity of the different combinations of XRCC4 and XLF variants. Source data are provided in Figure 8—source data 5. (E) Dissociation rates for the different combinations of XRCC4 and XLF variants. koff_fast (dark grey symbols) and koff_slow (light grey symbols) correspond, respectively, to the initial (fast) and late (slow) phase in the biphasic dissociation curves. Error bars fall within symbol dimension. Source data are provided in Figure 8—source data 5.
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig8-figsupp1-v3.jpg)
 
-**Figure 8—figure supplement 1.:** (A) Sensorgrams of XRCC4 variants (left) or XLF variants (right) at 1 μM concentration in isolation. Source data are provided in Figure 8—figure supplement 1—source data 1. (B) Sensorgrams comparison between XRCC4 and XLF WT-WT (black, left scale) and Asp-Asp (red, right scale) at equimolar concentration (1 μM each) showing the faster dissociation of the Asp-Asp combination and the deviation in both cases from a single exponential decay (dashed lines) and the biphasic behavior (solid lines). Source data are provided in Figure 8—figure supplement 1—source data 2. (C) Sensorgrams of XRCC4-WT and truncation XRCC4(1–157) lacking the C-terminal tail at 1 μM concentration in isolation (left); and sensorgrams of XLF-WT and truncation XLF(1-224) lacking the C-terminal tails at 1 μM concentrations in isolation (right). Source data are provided in Figure 8—figure supplement 1—source data 3. (D) Sensorgrams of equimolar combinations (1 μM each) of the WT and truncated XRCC4 and XLF proteins as indicated. Source data are provided in Figure 8—figure supplement 1—source data 3.DOI: http://dx.doi.org/10.7554/eLife.22900.02210.7554/eLife.22900.023Figure 8—figure supplement 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.22900.02310.7554/eLife.22900.024Figure 8—figure supplement 1—source data 2.DOI: http://dx.doi.org/10.7554/eLife.22900.02410.7554/eLife.22900.025Figure 8—figure supplement 1—source data 3.DOI: http://dx.doi.org/10.7554/eLife.22900.025
+**Figure 8—figure supplement 1.:** (A) Sensorgrams of XRCC4 variants (left) or XLF variants (right) at 1 μM concentration in isolation. Source data are provided in Figure 8—figure supplement 1—source data 1. (B) Sensorgrams comparison between XRCC4 and XLF WT-WT (black, left scale) and Asp-Asp (red, right scale) at equimolar concentration (1 μM each) showing the faster dissociation of the Asp-Asp combination and the deviation in both cases from a single exponential decay (dashed lines) and the biphasic behavior (solid lines). Source data are provided in Figure 8—figure supplement 1—source data 2. (C) Sensorgrams of XRCC4-WT and truncation XRCC4(1–157) lacking the C-terminal tail at 1 μM concentration in isolation (left); and sensorgrams of XLF-WT and truncation XLF(1-224) lacking the C-terminal tails at 1 μM concentrations in isolation (right). Source data are provided in Figure 8—figure supplement 1—source data 3. (D) Sensorgrams of equimolar combinations (1 μM each) of the WT and truncated XRCC4 and XLF proteins as indicated. Source data are provided in Figure 8—figure supplement 1—source data 3.
 
-## XRCC4 and XLF phospho-mimetics do not bridge DNA but are sufficient in stimulating LIG4-XRCC4 activity
+### XRCC4 and XLF phospho-mimetics do not bridge DNA but are sufficient in stimulating LIG4-XRCC4 activity
 
-XRCC4 is in large excess over LIG4 (
+XRCC4 is in large excess over LIG4 (Mani et al., 2010). On the one hand XRCC4 associates with XLF to form complexes that bridge broken DNA during c-NHEJ (Brouwer et al., 2016), and on the other hand, as a separate function, it associates with LIG4 to form a 2:1 XRCC4/LIG4 complex that performs the ligation step of c-NHEJ, which is further stimulated by XLF (Lu et al., 2007; Tsai et al., 2007). Therefore, to assess the role of the XRCC4 and XLF C-terminal tails in this distinct function of XRCC4, we next considered whether the XRCC4 and XLF Ala and Asp phosphorylation site mutants could support LIG4 function. Recombinant LIG4-XRCC4 complexes were produced incorporating XRCC4-WT, XRCC4-Ala or XRCC4-Asp (Figure 9—figure supplement 1); and these complexes were systematically analyzed for cohesive end ligation activity in combination with XLF-WT, XLF-Ala, or XLF-Asp (Figure 9A,B and C). As can be seen, alanine or aspartate modifications have no major impact on LIG4 activity, even when LIG4-XRCC4-Asp was combined with XLF-Asp. These data suggest that the disordered C-terminal tails of XRCC4 and XLF regulate the DNA bridging activity of XRCC4-XLF complexes, but do not directly affect the ability of XLF to stimulate the XRCC4/LIG4 complex.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig9-v3.jpg)
 
-**Figure 9.:** Stimulation of LIG4/XRCC4-WT, LIG4/XRCC4-WT-eGFP, LIG4/XRCC4-Ala-eGFP or LIG4/XRCC4-Asp-eGFP cohesive end ligation by XLF-WT (A), XLF-Ala (B) or XLF-Asp (C). Ligation products were deproteinized and resolved by agarose gel electrophoresis followed by detection by ethidium bromide staining.DOI: http://dx.doi.org/10.7554/eLife.22900.026
+**Figure 9.:** Stimulation of LIG4/XRCC4-WT, LIG4/XRCC4-WT-eGFP, LIG4/XRCC4-Ala-eGFP or LIG4/XRCC4-Asp-eGFP cohesive end ligation by XLF-WT (A), XLF-Ala (B) or XLF-Asp (C). Ligation products were deproteinized and resolved by agarose gel electrophoresis followed by detection by ethidium bromide staining.
 
 ![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig9-figsupp1-v3.jpg)
 
-**Figure 9—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.22900.027
-
-## XRCC4 and XLF phosphorylation site mutations do not affect end joining of episomal substrates
+### XRCC4 and XLF phosphorylation site mutations do not affect end joining of episomal substrates
 
 Our biochemical analyses suggest that XRCC4 and XLF C-terminal tails may be redundant with one another. For example, the Asp variants of either XRCC4 or XLF paired with WT (and Ala) partners bind and dissociate from DNA analogously to the WT-WT combinations (Figure 8), but when the Asp variants are combined together, DNA dissociation is markedly more rapid. Thus, any functional impact of the C-terminal tails in living cells might be masked by this redundancy when XRCC4 or XLF are studied individually. To facilitate functional analyses of XRCC4 and XLF C-terminal disordered tails in concert in living cells, we used 293 T cells where genes encoding both proteins were disrupted using CRISPR/Cas9 (Neal et al., 2016). To co-express WT or mutant forms of XRCC4 and XLF, expression constructs were prepared so that C-terminal myc-tagged XRCC4 and XLF (interrupted by an IRES sequence) are expressed from the same promoter. Constructs were prepared encoding XRCC4 alone, or XRCC4 and XLF together, with all 14 DNA-PK/ATM phosphorylation sites intact, or with all sites substituted to Ala or Asp.
 
-We have recently described a panel of episomal substrates (
+We have recently described a panel of episomal substrates (Neal et al., 2016) in which two pairs of V(D)J recombination signal sequences (RSS) or I-Sce1 sites are separated by the red fluorescent protein (RFP) coding sequence (Figure 10, top panels). These substrates provide an internal control (RFP expression) for plasmid uptake and nuclear localization in the transfected cells. Additionally, they include the SV40 origin of replication, and are thus efficiently replicated episomally in 293 T cells. If recombination occurs, the RFP gene is deleted, juxtaposing the CFP gene with the promoter allowing CFP expression as a reporter of end joining activity that can be quantified by flow cytometry.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig10-v3.jpg)
 
-**Figure 10.:** Fluorescent substrates (depicted in top panels) were utilized to detect V(D)J coding and signal joints in XRCC4/XLF-deficient 293 T cells transiently expressing full-length RAG1, RAG2, and WT, Ala, or Asp mutants of XRCC4 and XLF (A), or joining of I-Sce1 induced DSBs (B). Bottom panels show percent recombination of episomal fluorescent substrates. Error bars indicate SEM from five independent experiments.DOI: http://dx.doi.org/10.7554/eLife.22900.028
+**Figure 10.:** Fluorescent substrates (depicted in top panels) were utilized to detect V(D)J coding and signal joints in XRCC4/XLF-deficient 293 T cells transiently expressing full-length RAG1, RAG2, and WT, Ala, or Asp mutants of XRCC4 and XLF (A), or joining of I-Sce1 induced DSBs (B). Bottom panels show percent recombination of episomal fluorescent substrates. Error bars indicate SEM from five independent experiments.
 
 Although XLF is dispensable for V(D)J recombination in murine lymphocytes, XLF is required for V(D)J recombination in human lymphocytes, and patients with mutations in XLF exhibit a SCID phenotype (Buck et al., 2006; Woodbine et al., 2014). Thus, in 293 T cells lacking both XRCC4 and XLF, transfection of the XRCC4 only encoding construct does not reconstitute either coding or signal joining; in contrast, substantial complementation is observed for both coding and signal end joining when both XRCC4 and XLF are expressed (Figure 10A). As can be seen, the expression constructs encoding XRCC4-XLF with 14 phosphorylation sites substituted to either Ala or Asp fully reconstitute both V(D)J coding and signal end joining. We conclude that phospho-mimetic or -blocking mutations in the disordered C-terminal tails of XRCC4 and XLF do not affect joining of RAG-induced DSBs of episomal substrates.
 
 In contrast to RAG induced DSBs that are exclusively dependent on c-NHEJ for repair, DSBs introduced by restriction enzymes can be repaired by a-NHEJ, although this repair is slower, less efficient, and requires terminal short sequence homology (Deriano and Roth, 2013). As can be seen in Figure 10B, some end joining is observed in cells lacking both XRCC4 and XLF, or in cells complemented with only XRCC4; this reflects a-NHEJ activity. However, end joining is much more efficient when both XRCC4 and XLF are expressed. This is true whether I-Sce1 alone initiates the DSBs, or whether a fusion protein of I-Sce1 and the trex exonuclease is used to initiate DSBs. As with RAG-induced DSBs, blocking or phospho-mimicking the 14 sites does not affect the efficiency of end joining. All together from these data, we conclude that stable XRCC4/XLF DNA bridging is not required for efficient end joining of proximal I-Sce1 or RAG induced DSBs on episomal substrates.
 
-## XRCC4 and XLF complexes do not promote a-NHEJ
+### XRCC4 and XLF complexes do not promote a-NHEJ
 
-XRCC4 is required not only to stimulate LIG4, but is also required for LIG4 stability. An additional construct was prepared in which three point mutations were introduced into XRCC4 that disrupt XRCC4's interaction with LIG4 [F180D +I181D+A183V] (
+XRCC4 is required not only to stimulate LIG4, but is also required for LIG4 stability. An additional construct was prepared in which three point mutations were introduced into XRCC4 that disrupt XRCC4's interaction with LIG4 [F180D +I181D+A183V] (Modesti et al., 2003). XRCC4-XLF expressed from this construct should be capable of forming complexes, but would not stabilize or stimulate LIG4. This construct was tested for its ability to promote end joining of the I-Sce1 substrate. As can be seen (Figure 11), the LIG4 mutant XRCC4-XLF construct does not enhance end joining. These data suggest that DNA bridging by XRCC4-XLF complexes does not promote a-NHEJ.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig11-v3.jpg)
 
-**Figure 11.:** The fluorescent substrate (depicted in the top panel) was utilized to detect joining of I-Sce1 induced DSBs. Bottom panel shows percent recombination of episomal fluorescent I-Sce1 end joining substrate in XRCC4/XLF-deficient 293 T cells transiently expressing I-Sce1, XRCC4 alone, WT XRCC4 and XLF, or an XRCC4 mutant that is defective in LIG4 interaction and WT XLF as indicated. Error bars indicate SEM from three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.22900.029
+**Figure 11.:** The fluorescent substrate (depicted in the top panel) was utilized to detect joining of I-Sce1 induced DSBs. Bottom panel shows percent recombination of episomal fluorescent I-Sce1 end joining substrate in XRCC4/XLF-deficient 293 T cells transiently expressing I-Sce1, XRCC4 alone, WT XRCC4 and XLF, or an XRCC4 mutant that is defective in LIG4 interaction and WT XLF as indicated. Error bars indicate SEM from three independent experiments.
 
-## XRCC4 and XLF phosphorylation site mutants do not fully reverse sensitivity to radiomimetic drugs
+### XRCC4 and XLF phosphorylation site mutants do not fully reverse sensitivity to radiomimetic drugs
 
-To further assess the concomitant role of XRCC4 and XLF C-terminal disordered tails in the response to radiomimetic drugs, we generated stable 293 T cell clones expressing WT, Ala, Asp, or vector control by integrating the IRES co-expression constructs described above. Two clones of each construct were analyzed, but only one clone presented. As can be seen, stably reconstituted XRCC4/XLF -/- cells express levels of XRCC4 and XLF (WT and variants) similar to endogenous levels (
+To further assess the concomitant role of XRCC4 and XLF C-terminal disordered tails in the response to radiomimetic drugs, we generated stable 293 T cell clones expressing WT, Ala, Asp, or vector control by integrating the IRES co-expression constructs described above. Two clones of each construct were analyzed, but only one clone presented. As can be seen, stably reconstituted XRCC4/XLF -/- cells express levels of XRCC4 and XLF (WT and variants) similar to endogenous levels (Figure 12A). The complemented XRCC4 and XLF proteins have slightly slower electrophoretic mobility because of their C-terminal myc tags. The Asp mutant has an even more substantial change in electrophoretic mobility because of the charge difference that results from S/T to Asp substitution
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig12-v3.jpg)
 
-**Figure 12.:** (A) Immunoblots of stable expression of WT, Ala, or Asp mutants of XRCC4 and XLF in 293 T cells that lack both XRCC4 and XLF. * non-specific species. (B) 293 T cells expressing WT, Ala, Asp, or no XRCC4 or XLF were exposed to Zeocin (500 μg/ml for 1 hr) or not and analyzed after 1 hr or 24 hr by immunoblotting for XRCC4, β-actin, or γ-H2AX as indicated. Zeocin (C) and Neocarzinostatin (D) sensitivity of 293T XRCC4/XLF double deficient cell strains complemented by stable expression of equivalent levels of WT, Ala, or Asp mutants of XRCC4 and XLF. Error bars indicate SEM from at least three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.22900.030
+**Figure 12.:** (A) Immunoblots of stable expression of WT, Ala, or Asp mutants of XRCC4 and XLF in 293 T cells that lack both XRCC4 and XLF. * non-specific species. (B) 293 T cells expressing WT, Ala, Asp, or no XRCC4 or XLF were exposed to Zeocin (500 μg/ml for 1 hr) or not and analyzed after 1 hr or 24 hr by immunoblotting for XRCC4, β-actin, or γ-H2AX as indicated. Zeocin (C) and Neocarzinostatin (D) sensitivity of 293T XRCC4/XLF double deficient cell strains complemented by stable expression of equivalent levels of WT, Ala, or Asp mutants of XRCC4 and XLF. Error bars indicate SEM from at least three independent experiments.
 
 ![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig12-figsupp1-v3.jpg)
 
-**Figure 12—figure supplement 1.:** (Left) Immunoblot showing comparable to endogenous, stable expression of WT, Ala, or Asp mutants of XRCC4 and XLF in previously described XRCC4 deficient HCT116 cells that were deleted for XLF. Parental cell strains, as well as XLF deficient cells that were generated by AAV targeting are also depicted. (Right) Neocarzinostatin sensitivity of the indicated cell strains stably expressing WT, Ala, or Asp mutants of XRCC4 and XLF. Error bars indicate SEM from at least three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.22900.031
+**Figure 12—figure supplement 1.:** (Left) Immunoblot showing comparable to endogenous, stable expression of WT, Ala, or Asp mutants of XRCC4 and XLF in previously described XRCC4 deficient HCT116 cells that were deleted for XLF. Parental cell strains, as well as XLF deficient cells that were generated by AAV targeting are also depicted. (Right) Neocarzinostatin sensitivity of the indicated cell strains stably expressing WT, Ala, or Asp mutants of XRCC4 and XLF. Error bars indicate SEM from at least three independent experiments.
 
 ![Figure 12—figure supplement 2.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig12-figsupp2-v3.jpg)
 
-**Figure 12—figure supplement 2.:** (Left) Immunoblot showing comparable to endogenous, stable expression of WT, Ala, or Asp mutants of XRCC4 and XLF in XRCC4-deficient hamster XR-1 cells deleted for XLF. (Right) Neocarzinostatin sensitivity of the indicated cell strains stably expressing WT, Ala, or Asp mutants of XRCC4 and XLF. Error bars indicate SEM from at least three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.22900.032
+**Figure 12—figure supplement 2.:** (Left) Immunoblot showing comparable to endogenous, stable expression of WT, Ala, or Asp mutants of XRCC4 and XLF in XRCC4-deficient hamster XR-1 cells deleted for XLF. (Right) Neocarzinostatin sensitivity of the indicated cell strains stably expressing WT, Ala, or Asp mutants of XRCC4 and XLF. Error bars indicate SEM from at least three independent experiments.
 
 The substantial phosphorylation of XRCC4 induced by DNA damage results in a dramatic change in electrophoretic mobility. To determine whether the phospho-blocking mutant substantially blocks damage-induced phosphorylation, XRCC4 phosphorylation was assessed by immunoblotting. As can be seen (Figure 12B), a marked shift in XRCC4's electrophoretic mobility is induced by zeocin (at 1 or 24 hr post treatment) in cells expressing WT but not Ala XRCC4 and XLF. The shift is equivalent to the change in mobility observed in the XRCC4 Asp mutant.
 
@@ -155,29 +495,29 @@ The radiomimetic antibiotics zeocin (a bleomycin analog) and neocarzinostatin in
 
 To further extend our analysis in other cell lines, we used CRISPR/Cas9 to disrupt XLF in XRCC4 deficient HCT116 cells (Figure 12—figure supplement 1, left panel) that were generated by AAV gene targeting (Fattah et al., 2014). In HCT116 cells, both the Ala and Asp variants fully reconstitute zeocin resistance (not shown). In contrast, cells expressing either Asp or Ala mutants are more sensitive to neocarzinostatin (the drug inducing more dramatic end aberrations) than WT controls (Figure 12—figure supplement 1, right panel). Thus, as we and others have shown previously (Li et al., 2008; Roy et al., 2015), different organisms, and different cell types have variable dependence on XLF. To corroborate these findings, we used again CRISPR/Cas9 to disrupt XLF in the XRCC4 deficient CHO cell strain XR-1 (Figure 12—figure supplement 2, left panel). XR-1 XRCC4/XLF double deficient cells were transfected with the XRCC4-XLF expression constructs. Similar, to 293 T cells, whereas WT XRCC4 and XLF substantially reverse neocarzinostatin hypersensitivity, complementation is progressively less substantial with the Ala and Asp variant constructs (Figure 12—figure supplement 2, right panel).
 
-## Phospho-mimicking XRCC4/XLF alters repair of chromosomal DNA DSBs
+### Phospho-mimicking XRCC4/XLF alters repair of chromosomal DNA DSBs
 
 The in vitro analyses of XRCC4/XLF phospho-mimetic complexes reported above demonstrated that phospho-mimicking ablates DNA bridging but does not alter XRCC4/XLF’s ability to promote LIG4 activity. We have also shown previously (Roy et al., 2015) that a separation of function XLF mutant, proficient in stimulating LIG4 but deficient in DNA bridging, is functional in supporting episomal V(D)J joining, consistently with the phospho-mimetic mutants presented here, which are also proficient in stimulating LIG4 but deficient in DNA bridging. We next addressed whether joining of chromosomal DSBs is affected by disrupting XRCC4/XLF mediated DNA bridging.
 
-To assess chromosomal end joining in isogenic cell strains expressing WT, Ala, or Asp versions of XRCC4 and XLF, we exploited CRISPR/Cas9 targeting of the FANCG gene on chromosome 9, which we found to be remarkably efficient in 293 T cells. We reasoned that DNA bridging might be required specially to join distant DSBs, and targeting reagents for three sites within ~4 kb on chromosome nine were prepared (
+To assess chromosomal end joining in isogenic cell strains expressing WT, Ala, or Asp versions of XRCC4 and XLF, we exploited CRISPR/Cas9 targeting of the FANCG gene on chromosome 9, which we found to be remarkably efficient in 293 T cells. We reasoned that DNA bridging might be required specially to join distant DSBs, and targeting reagents for three sites within ~4 kb on chromosome nine were prepared (Figure 13A). Joining of two separate deletions was assessed, one that results in ~300 bp deletion, and one that results in ~4 kb deletion. Although this strategy does not allow quantification of joining, the quality of joining can be assessed by sequencing. 293 T cells expressing WT XRCC4 and XLF, 14 X Ala, 14 X Asp, or no XRCC4/XLF were transfected with various combinations of gRNA/Cas9 plasmids. Cells were harvested and DNA prepared 72 hr later and PCR performed to detect chromosomal deletions. As can be seen, chromosomal deletions are readily detected with both gRNA pairs in cells that have been reconstituted with XRCC4 and XLF. Although no joints are observed in the vector control cell strain with one gRNA pair, deletional joints are observed with the other suggesting that certain DSBs may be more readily joined by a-NHEJ than other DSBs. By electrophoretic mobility, the deletional joints using gRNAs 2 and 3 (that induce the small 300 bp deletion) appear remarkably similar in cells expressing WT, Ala, and Asp versions of XRCC4 and XLF (Figure 13B). Indeed, sequence analysis revealed no significant differences (data not shown). In contrast, the 4 kb deletions generated in the four cell strains appear much more heterogeneous. By sequence analyses, joints recovered from cells expressing WT or alanine substituted XRCC4 and XLF are very similar. As expected, joints recovered from cells lacking XRCC4 and XLF display increased nucleotide loss. Although joints from all four cell strains predominately occur at regions of short end terminal homology (SSH), the length of SSH is increased in cells lacking XRCC4 and XLF (Figure 13C). Joints recovered from cells expressing aspartate substituted XRCC4 and XLF show an intermediate increase in nucleotide loss, and moderate increase in the length of SSH utilized in joining (Figure 13D). We conclude that DNA bridging facilitates accurate repair of certain chromosomal DNA DSBs.
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/22900/elife-22900-fig13-v3.jpg)
 
-**Figure 13.:** (A) Diagram of region on chromosome nine targeted by three different gRNAs and position of primers utilized to detect chromosomal deletions induced by Cas9 and indicated gRNAs. (B) Ethidium bromide staining of PCR amplifications of DNA isolated from cells expressing WT, Ala, Asp, or no XRCC4 and XLF and transfected with the different combinations of gRNAs as indicated. A no gRNA control DNA of parental 293 T cells is also included to help define products induced by Cas9 induced deletions. (C) Summary of sequenced joints utilizing gRNAs 1 and 3 that result in a 4 kb chromosomal deletion. (D) Graphs represent the percentage of joints deleting increasing numbers of nucleotides from predicted double strand break site.DOI: http://dx.doi.org/10.7554/eLife.22900.033
+**Figure 13.:** (A) Diagram of region on chromosome nine targeted by three different gRNAs and position of primers utilized to detect chromosomal deletions induced by Cas9 and indicated gRNAs. (B) Ethidium bromide staining of PCR amplifications of DNA isolated from cells expressing WT, Ala, Asp, or no XRCC4 and XLF and transfected with the different combinations of gRNAs as indicated. A no gRNA control DNA of parental 293 T cells is also included to help define products induced by Cas9 induced deletions. (C) Summary of sequenced joints utilizing gRNAs 1 and 3 that result in a 4 kb chromosomal deletion. (D) Graphs represent the percentage of joints deleting increasing numbers of nucleotides from predicted double strand break site.
 
 ## Discussion
 
 Here we report that blocking or mimicking DNA-PK/ATM phosphorylated residues in the disordered C-terminal tails of XRCC4 and XLF impacts on the stability of XRCC4/XLF complexes, which are readily dismantled from DNA when DNA-PK/ATM sites are phospho-mimicked. We propose that ATM/DNA-PK phosphorylation of XRCC4/XLF filaments facilitates their dissociation from DNA.
 
-## Role of the disordered XRCC4 and XLF C-terminal tails in modulating the dynamics of XRCC4-XLF complexes
+### Role of the disordered XRCC4 and XLF C-terminal tails in modulating the dynamics of XRCC4-XLF complexes
 
 How could the disordered C-terminal tails of XRCC4 and XLF affect the behavior of XRCC4-XLF complexes at the molecular level? Structural and docking studies have revealed that XRCC4 and XLF can form alternating filamentous structures that can further assemble into bundles with a central channel (Andres et al., 2012; Hammel et al., 2011; Ropars et al., 2011; Wu et al., 2011). One model proposes that when interacting with DNA, XRCC4-XLF complexes would wrap around DNA, trapping it in the central channel forming a tube-like structure that can diffuse along the DNA with very little friction (Brouwer et al., 2016). DNA tethering by these bundles would be promoted by the ability of XRCC4 dimers to tetramerize by interdigitation of their α-helical stalks (Andres et al., 2012). However, this model doesn’t take into account the positions of the disordered C-terminal tails of XRCC4 and XLF because the crystal structures were obtained with truncated forms of XRCC4 and XLF lacking the C-terminal regions. Yet, building upon this model and others (Hammel et al., 2011; Ropars et al., 2011; Wu et al., 2011), there are several potential mechanisms by which the disordered C-terminal tails of XRCC4 and XLF could stabilize the proteins/DNA interaction. First, the tails could promote stabilization of the XRCC4-XLF homodimer-homodimer interactions during filament assembly and concurrently favor DNA binding since the DNA binding domain of XLF resides at the extreme C-terminus (Figure 1B, Andres et al., 2007). Second, the tails could be involved in stabilization of filament bundles (Andres et al., 2012; Wu et al., 2011) that could correspond to the sleeve-like structure sliding on DNA that were observed at the single molecule level (Brouwer et al., 2016). Finally, the tails could also contribute to the robust DNA tethering observed for XRCC4-XLF complexes (Brouwer et al., 2016). Of note, in ITC experiments the thermodynamic parameters that contribute to the free energy of the XRCC4-XLF interaction (enthalpy and entropy) are distributed differently for the XRCC4-Asp-XLF-Asp complex as compared to either the WT-WT and Ala-Ala combinations. These data suggest that the tails may adopt a variety of conformations; deciphering these will require additional experimental strategies [nuclear magnetic resonance spectroscopy, electron paramagnetic resonance, FRET, and molecular dynamics simulations].
 
-## Intrinsic XLF DNA binding and bridging activities
+### Intrinsic XLF DNA binding and bridging activities
 
 In vitro, XRCC4 and XLF independently bind to DNA with greater stability as the DNA substrate increases in size (Hentges et al., 2006; Lu et al., 2007; Modesti et al., 1999). Clearly, XRCC4-XLF complexes bind to and bridge DNA with much higher affinity as compared to that of either homodimer alone (Andres et al., 2012). Here, we find that XLF alone is able to bridge DNA when the size of the DNA molecule is increased (2.7 kb instead of 0.5 kb, Figure 7). Given that XLF is a dimer where each monomer has a single DNA binding domain located within the very last ~20 residues of the C-terminus (Andres et al., 2007), we propose that a single XLF dimer interacts with, thus bridges, two independent DNA molecules. The XLF DNA binding domain is akin to the ‘AT-hook’ DNA binding motifs present in High Mobility Group A proteins; these AT-hook motifs are all similar to XLF’s C-terminal tail in that they are intrinsically disordered DNA binding protein domains (Aravind and Landsman, 1998; Fonfría-Subirós et al., 2012). The AT-hook motif is a weak DNA binding module interacting with the minor groove of DNA preferentially with AT rich regions. If XLF shares this mode of DNA binding, this would provide a good explanation for the observed concentration and DNA size dependence that is requisite for stable DNA binding and bridging by XLF. In addition, we find the XLF-Asp phospho-mimetic variant, in which all the ‘phosphorylated’ residues are located in the disordered tails but away from the very C-terminal DNA binding domain, exhibits normal DNA binding by EMSA but has a reduced ability to bridge DNA (Figures 3 and 7). A possible explanation for this behavior is that one of the two XLF ‘phosphorylated’ tails in a homodimer masks the DNA binding domain of the other tail in the XLF dimer with sufficient affinity to confer, DNA binding, but not to facilitate bridging. Alternatively, they could attach and detach fast from DNA so that, overall, they are bound to DNA but not stably enough to bridge two DNA molecules.
 
-## Inferences on the regulation of XRCC4 and XLF by phosphorylation
+### Inferences on the regulation of XRCC4 and XLF by phosphorylation
 
 Several levels of phosphorylation-dependent regulation of XRCC4 and XLF have been reported that affect function. Phosphorylation of XRCC4 on T233 by CDK2 has been implicated in recruitment of PNK, Aprataxin, and APLF through interaction with the FHA domain present in these DNA processing enzymes, thus affecting the scaffold function of XRCC4 (Cherry et al., 2015; Clements et al., 2004; Iles et al., 2007; Koch et al., 2004; Macrae et al., 2008). Phosphorylation of XLF by Akt on T181 triggers its dissociation from the LIG4/XRCC4 complex and its sequestration in the cytoplasm (Liu et al., 2015). However, a functional impact for either of these phosphorylations on the actual efficacy of c-NHEJ has not been reported.
 
@@ -187,45 +527,61 @@ Moreover, co-expression of XRCC4 and XLF phospho-blocking mutants in XRCC4/XLF d
 
 ## Materials and methods
 
-## Recombinant protein expression constructs and purification
+### Recombinant protein expression constructs and purification
 
 Expression plasmids and purification procedures for XRCC4-WT, XRCC4(1–157), XLF-WT, XLF(1-224), XLF-L115A, XLF-L115D have been described (Andres et al., 2012, 2007). The expression constructs for the XRCC4 and XLF Ala and Asp variants were generated by site-directed mutagenesis of the vectors expressing the WT proteins as indicated in Figure 1, and purified by the methods indicated above. The LIG4/XRCC4 complex was produced as described (Cottarel et al., 2013). The LIG4/XRCC4-eGFP variants were produced by co-transformation of pCDFduet-1-LIG4-His6 and pRSFduet-1-XRCC4-eGFP (WT, Ala or Asp variants) in Rosetta 2 pLysS cells (Novagen), expressed and purified as indicated above for the LIG4/XRCC4 complex. All proteins batches were dialyzed against 150 mM KCl, 20 HEPES pH8, 1 mM EDTA, 2 mM DTT and 10% (v/v) glycerol, flash frozen in liquid nitrogen and stored at −80°C. T4 DNA ligase was obtained from New England Biolabs.
 
-## EMSA
+### EMSA
 
 Binding reactions (10 μl) contained 200 ng of linearized pUC19 plasmid DNA, 10 mM HEPES pH 8, 0.5 mM EDTA, 0.5 mM DTT, 5% (v/v) glycerol, and 75 mM KCl after addition of proteins at the indicated concentrations. Reactions were incubated at room temperature for 30 min and directly resolved by 0.6% agarose gel eletrophoresis in standard Tris-Borate-EDTA buffer. Gels were stained in Tris-Borate-EDTA buffer supplemented with 0.5 μg/mL ethidium bromide, destained in deionized water and documented using a UV light trans-illuminator and a CCD camera.
 
-## Ligation
+### Ligation
 
 DNA ligation assays were performed in a volume of 10 μL containing 200 ng of linearized pUC19 plasmid DNA (XbaI for cohesive ends and SmaI for blunt ended ends), 1 mM ATP, 2 mM MgCl2, 10 mM HEPES pH 8, 0.5 mM EDTA, 1 mM DTT, 5% (v/v) glycerol, and 75 mM KCl after addition of proteins at the indicated concentrations. Reactions were incubated at room temperature for 15 min at room temperature before addition of 40 cohesive end units of T4 DNA ligase, or LIG4/XRCC4 (and XLF) at the indicated concentrations and further incubated for 30 min at room temperature. At the end of the incubation Sarkosyl (Sigma-Aldrich) and Pronase (Roche) were added at, respectively, 2% (w/v) and 1 mg/mL final concentrations and incubated for 30 min at 55°C. Samples were next supplemented with 1/5 vol of a solution containing 50 mM EDTA, 50 mM Tris pH 7.5, 60% (v/v) glycerol and tracking dyes, and resolved by 0.8% agarose gel electrophoresis in standard Tris-Borate-EDTA buffer. Gels were stained in Tris-Borate-EDTA buffer supplemented with 0.5 μg/mL ethidium bromide, destained in deionized water, and documented using a UV light trans-illuminator and a CCD camera.
 
-## Bridging assay
+### Bridging assay
 
 The one-end biotinylated 1000 bp DNA substrate was prepared by PCR using Phire Hot Start DNA Polymerase (New England Biolabs), primers 5’-Biotin-GAGTTTTATCGCTTCCATGACG and 5’-AATTTATCCTCAAGTAAGGGGC and ϕX174 DNA as template. The blunt ended 500 bp DNA fragment was similarly prepared but using primers 5’-GAGTTTTATCGCTTCCATGACG and 5’-CAGAAAATCGAAATCATCTTCG. The blunt ended 2.7 kb DNA substrate was prepared by digesting of pUC19 DNA with SmaI, gel purified, and stored in 10 mM Tris pH 8, 1 mM EDTA. For the DNA bridging assay, 20 μL of streptavidin-coated bead suspension (Dynabeads M-280 Streptavidin, Invitrogen) were washed twice with 100 μL of DNA binding buffer (DBB) containing 150 mM KCl, 20 mM HEPES pH 8, 1 mM EDTA, 1 mM DTT, 10% (v/v) glycerol, 0.5 mg/mL of Acetylated BSA (Ambion) and 0.2% (v/v) TWEEN 20. Beads were resuspended in 20 μl DBB containing 1 μg of 1000 bp biotin-labeled DNA and incubated 10 min at 4°C to allow attachment. After washing twice with 100 μL DBB, beads were resuspended in 40 μL of DBB containing 1 μg of 500 bp (or 2.7 kb) DNA and the proteins at the indicated concentrations and incubated for 15 min at RT. Beads were next washed twice with 100 μL DBB and resuspended in 20 μL DBB without BSA but containing pronase at 1 mg/mL and 2% (w/v) Sarkosyl, and incubated at 55°C for 30 min. The samples were fractionated by 0.8% agarose gel electrophoresis in standard Tris-Borate-EDTA buffer. Gels were stained in Tris-Borate-EDTA buffer supplemented with 0.5 μg/mL ethidium bromide, destained in deionized water, and documented using a UV light trans-illuminator and a CCD camera.
 
-## Protein crosslinking
+### Protein crosslinking
 
 XRCC4 and XLF were mixed each at 20 μM in 20 μL of 150 mM KCl, 20 HEPES pH 8, 1 mM EDTA, 2 mM DTT and 10% (v/v) glycerol incubated for 20 min at 4°C before addition of 20 μL of a stock of BS3 at 12.5 mM in water (ThermoFisher Scientific). Reactions were incubated at room temperature for 1 hr and terminated by addition of 8 μL of 10% (w/v) SDS, 10 mM 2-mercaptoethanol, 20% (v/v) glycerol, 0.2 M Tris pH 6.8% and 0.05% (w/v) bromophenol blue. Samples were boiled for 3 min, fractionated by denaturing SDS polyacrylamide gel electrophoresis and the gels stained with Coomassie Brilliant Blue R250 before image capture.
 
-## Isothermal titration micro-Calorimetry
+### Isothermal titration micro-Calorimetry
 
-Purified XRCC4 and XLF (WT, Ala and Asp variants) were dialysed overnight and diluted in a buffer consisting of 20 mM Tris pH 8 and 150 mM NaCl. Titration experiments were carried out on a MicroCal ITC200 micro-calorimeter (GE Healthcare, Piscataway, NJ). Experiments consisted of 13 injections of 3 μl of the titrant (XLF) into the analyte (XRCC4), using a titrant concentration set to be in the order of 10 or 13 times the analyte concentration. A first small injection (0.4 μl) was included in the titration protocol in order to remove air bubbles trapped in the syringe prior to the titration. Raw data were adjusted setting the zero to the titration saturation heat value. Integrated raw ITC data were fitted using a one site non-linear least squares fit model using the MicroCal plugin as available in Origin 9.1 (OriginLab Corp., RRID:SCR_002815). Kd, ΔG0, and –TΔS0 values were calculated from the fitted ΔH0 and Ka values using the relations:Kd=1/KaΔG0=−R⋅T⋅ln⁡(Ka)ΔG0=ΔH0−TΔS0
+Purified XRCC4 and XLF (WT, Ala and Asp variants) were dialysed overnight and diluted in a buffer consisting of 20 mM Tris pH 8 and 150 mM NaCl. Titration experiments were carried out on a MicroCal ITC200 micro-calorimeter (GE Healthcare, Piscataway, NJ). Experiments consisted of 13 injections of 3 μl of the titrant (XLF) into the analyte (XRCC4), using a titrant concentration set to be in the order of 10 or 13 times the analyte concentration. A first small injection (0.4 μl) was included in the titration protocol in order to remove air bubbles trapped in the syringe prior to the titration. Raw data were adjusted setting the zero to the titration saturation heat value. Integrated raw ITC data were fitted using a one site non-linear least squares fit model using the MicroCal plugin as available in Origin 9.1 (OriginLab Corp., RRID:SCR_002815). Kd, ΔG0, and –TΔS0 values were calculated from the fitted ΔH0 and Ka values using the relations:
+
+$$
+K_{d}=1/K_{a}
+$$
+
+
+
+$$
+ΔG^{0}=−R⋅T⋅ln⁡(K_{a})
+$$
+
+
+
+$$
+ΔG^{0}=ΔH^{0}−TΔS^{0}
+$$
 
 where R is the ideal gas constant (1.987 cal · K−1 · mol−1) and T the absolute temperature
 
-## Surface plasmon resonance
+### Surface plasmon resonance
 
 Surface Plasmon Resonance experiments have been conducted on a Biacore T200 instrument (GE Healthcare) using a four channels streptavidin-coated sensor chip (BR-1005–31, GE Healthcare). The chip was activated before DNA capture by a rapid wash with 1 M NaCl and 50 mM NaOH in MilliQ water and then in 50% (v/v) Isopropanol. The 400 bp-long dsDNA molecules have been generated by PCR using ϕX174 DNA as template and primers 5’-Biotin-GAGTTTTATCGCTTCCATGACG and 5’-ACTTGACTCATGATTTCTTACC, gel purified, diluted to a concentration of 22.5 ng/mL in 10 mM Tris pH 8, 100 mM KCl, and 1 mM EDTA, and flushed in channels 2, 3, and four until the instrument response reached respectively 258 RU, 252 RU, and 511 RU. Channel one was not flushed with the DNA and used as reference channel during data analysis. All proteins (WT and variants) have been diluted in 75 mM KCl, 20 mM HEPES pH 8, 10% (v/v) glycerol, 1 mM DTT, 1 mM EDTA to the desired final concentrations. The same buffer with the addition of 0.05% (v/v) TWEEN 20 was used as running buffer during experiments. Protein concentration was adjusted at about 10 μM, re-inspected by NanoDrop to double check the initial concentration, and finally diluted to the desired final concentration. In kinetics experiments requiring protein titrations, subsequent dilutions were done using the same pipetting volume and a single pipette tip for each different protein dilution serie. Protein samples were injected in the chip channels and let interact with the DNA on the surface typically for 240 or 300 s. Dissociation was observed during 480 s before the channels were washed and the chip regenerated with a 30 s-long flush of a 2 M KCl aqueous solution. A SDS-PAGE gel of the protein samples used for SPR experiments is shown in Figure 1—figure supplement 1. In all cases with the exception of XRCC4 alone, a simple kinetics model of first order reactions failed to properly describe the data. We thus used equilibrium affinity and biphasic dissociation rates to quantify and compare the results.
 
-## Cell lines
+### Cell lines
 
 293 T cells (RRID:CVCL_0063) were the generous gift of Dr. Kefei Yu who purchased the cell strain from ATCC. XR-1 cells (RRID:CVCL_K253) were the generous gift of Dr. Tom Stamato. HCT116 cells (RRID:CVCL_0291) and the single XRCC4 (RRID:CVCL_HE00) and XLF (RRID: CVCL_HD86) knockout cells were the generous gift of Dr. Eric Hendrickson. Cells were regularly checked for mycoplasma contamination using the Mycoplasma Plus PCR primer set (Stratagene Cat# 302008).
 
-## Antibodies
+### Antibodies
 
 Antibodies used are mouse monoclonal anti-β-actin (sigma A5441, RRID:AB_476744); mouse monoclonal anti-γ-H2AX (Millipore 05–636 RRID:AB_309864); rabbit polyclonal anti-XLF (Abcam ab33499, RRID:AB_778945); rabbit polyclonal anti-XRCC4 (Serotec AHP387, RRID:AB_2218607).
 
-## Cas9-mediated gene disruption
+### Cas9-mediated gene disruption
 
 Cas9-targeted gene disruption was performed using methods similar to those reported by (Mali et al., 2013). Briefly, gRNAs specific for XLF, XRCC4 or ATM were synthesized as 455 bp fragments (Integrated DNA Technologies). The synthesized fragments were cloned into pCR2.1 using a TOPO TA cloning kit according to the manufacturers’ instructions (Life Technologies). Cells were transfected with 1 µg gRNA plasmid and 1 µg Cas9 expression plasmid (Addgene, RRID:SCR_002037). In some cases, cells were co-transfected with 0.2 µg of pcDNA6 (Life Technologies) or pSuper-Puro to confer blasticidin or puromycin resistance. With the two human cell strains, western blotting was used to identify clones with deletions in each of these factors; in all cases, deletion was also confirmed by PCR amplification that revealed deletions at the target site. PCR amplification of the hamster XLF gene was used to define frameshift mutations in the XR-1 cell strain. The 19-mers specific for each factor synthesized into the 455 bp fragments are as follows:
 
@@ -235,15 +591,15 @@ XRCC4: CCTGCAGAAAGAAAATGAA
 
 XLF: GGCCTGTTGATGCAGCCAT.
 
-## Plasmid constructs for cellular assays
+### Plasmid constructs for cellular assays
 
 The expression constructs providing for co-expression of WT, Ala, and Asp XRCC4 and XLF were sequentially assembled into pMSCV-puro (Clontech), adding C-terminal Myc tags to each protein, and an IRES sequence between XRCC4 and XLF. Phosphorylation site substitutions are indicated in Figure 1. RAG1 and RAG2 expression plasmids were a gift from Dr. David Roth. Construction of the I-SceI expression plasmid was described (Neal et al., 2016). The I-Sce1-trex2 fusion expression plasmid was obtained from Dr. Jeremy Stark. Fluorescent V(D)J substrate plasmids have been described (Neal et al., 2016). Briefly, the RFP coding sequence was inserted between the 12RSS and 23RSS, replacing the oop transcription terminator in both pJH290 and pJH289. The recombination cassette was cloned upstream of the CFP coding sequence in peCFP-N1 (which includes the SV40 origin of replication).
 
-## Episomal end joining assays
+### Episomal end joining assays
 
 The fluorescent V(D)J substrates (diagramed in Figure 10, top panels) and V(D)J assays have recently been described (Neal et al., 2016). These substrates (derived from pECFP-N1, Clontech) contain the SV40 origin of replication, and are thus efficiently replicated episomally in all primate cell strains. Briefly, extrachromosomal fluorescent V(D)J assays were performed on cells plated at 20–40% confluency into 24-well plates in complete medium. Cells were transfected with 0.125 µg substrate, 0.25 µg RAG1 and 0.25 µg RAG2 per well using polyethylenimine (PEI, Polysciences) using 2 µL of PEI at 1 μg/mL per 1 µg of DNA. In experiments with additional expression plasmids, 0.25 µg of the expression plasmid or vector control was included. Cells were harvested 72 hr after transfection and analyzed for CFP and RFP expression by flow cytometry. The percentage of recombination was calculated as the percentage of cells expressing CFP divided by the percentage expressing RFP. Data presented represent at least three independent experiments, which each includes triplicate transfections.
 
-## Chromosomal end joining assays
+### Chromosomal end joining assays
 
 For chromosomal joining assays, the plasmid pSpCas9(BB)−2A-Puro (Addgene, RRID:SCR_002037) which provides co-expression of a gRNA, Cas9, and the puromycin resistance gene was utilized. The target region 20-mers specific for three sites on chromosome nine are as follows:
 
@@ -261,7 +617,7 @@ Primer 2: CCCAAGATGTCCCGGCTGTGGG
 
 Primer 3: CCATGGGCCTCTCTGTCCTTGCAC.
 
-## Clonogenic survival assays
+### Clonogenic survival assays
 
 Clonogenic survival assays were performed for HCT116 cells and XR-1 cells. Briefly, a hundred cells were plated for each transfection into complete medium containing the indicated dose of zeocin or neocarzinostatin in 60 mm diameter tissue culture dishes. After 7 to 10 days, cell colonies were stained with 1% (w/v) crystal violet in ethanol to measure relative survival.
 

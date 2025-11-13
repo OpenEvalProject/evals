@@ -40,6 +40,14 @@ Here, we demonstrate that an Mtb nanocompartment containing DyP is crucial for r
 
 The Mtb genome encodes the predicted encapsulin gene Rv0798c/Cfp29 (Contreras et al., 2014) in a two-gene operon with Rv0799c, the dye-decolorizing peroxidase DyP (Figure 1A). Overexpression of the predicted Mtb encapsulin gene in Escherichia coli was previously shown to result in the formation of nanocompartment-like structures (Contreras et al., 2014). Three potential cargo proteins for the nanocompartment were proposed based on a putative shared encapsulation targeting sequence: DyP, FolB, and BrfB. In E. coli, overexpression of each protein with Cfp29 resulted in encapsulation. However, this study did not address whether Mtb produces endogenous nanocompartments or identify the specific function of these compartments in Mtb biology. A transposon screen has identified Cfp29 as a gene required for growth in mice (Zhang et al., 2013) and Cfp29 has long been known as an immunodominant T cell antigen in both mice and human TB patients (Weldingh and Andersen, 1999). Taken together, these results suggest that Mtb may produce an encapsulin nanocompartment that is important for pathogenesis.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/74358/elife-74358-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the nanocompartment operon in Mtb that encodes the encapsulin shell protein (Cfp29) and the dye-decoloring peroxidase cargo protein (DyP). (B) Transmission electron microscopy (TEM) of Cfp29 encapsulin proteins purified following heterologous expression of the Mtb nanocompartment operon in E. coli. (C) Size distribution of Cfp29 protomers purified from E. coli. (D) Peptide counts from mass spectrometry analysis of endogenous nanocompartments purified from Mtb. (E) TEM of endogenous nanocompartments purified from Mtb. Peroxidase activity of (F) unencapsulated and (G) encapsulated DyP (5 nM) using ABTS (480 nM) as a substrate in the presence of H2O2 (480 nM) at varying pH levels (4.0–6.0) as reported by a change in the absorbance at 420 nm. neg, no added enzyme.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74358/elife-74358-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Coomassie-stained SDS-PAGE of fractions collected during purification of nanocompartments heterologously expressed in E. coli: (1) ultracentrifugation pellet post-CellLytic B solubilization, (2) size-exclusion chromatography input, (3) lane 1 diluted, (4) lane 2 diluted, and (5) encapsulin fraction from size exclusion. (B) Coomassie-stained SDS-PAGE of sucrose fractions collected during purification of nanocompartments from wild-type Mtb lysates: (1) fraction containing assembled encapsulin nanocompartment complexes, (5) ladder (6), lane 1 boiled in SDS for 30 min to dissociate encapsulin nanocompartment into monomers. (C) DyP samples with or without addition of hemin were analyzed by SDS-PAGE. Samples were loaded either in their unboiled native state (left half) or heat-denatured by boiling at 95°C for 15 min. Addition of hemin yields a tetrameric DyP at 144 kDa. (D) Western blot for Cfp29 (arrow) and Ag85A control (star) from wild-type Mtb (lane 1) and Δoperon mutant (lane 2) lysates. (E) Complementation strategy schematic for DyP::Tn mutants (top). DyP::Tn mutants were transformed with ATc-inducible complementation constructs encoding the unencapsulated cargo protein (DyP), the encapsulin shell protein (Cfp29), or the nanocompartment operon (Operon). Lysates from each strain were used for nanocompartment purification. Sucrose fractions containing high molecular weight Cfp29 protomers were identified in complemented strains expressing the encapsulin shell and the operon (middle) and were analyzed using TEM (bottom).
+
 To confirm the previous finding that heterologous expression of Rv0798c and Rv0799c in a host species results in the assembly of an encapsulin system, we expressed these genes in E. coli and isolated nanocompartments. Clarified protein lysates from E. coli were purified by ultracentrifugation and size-exclusion chromatography. Assembled encapsulin nanocompartments are distinguishable by their high molecular weight (Nichols et al., 2017). Indeed, a fraction from the purification contained a high molecular weight species > 260 kDa observable on an SDS-PAGE gel (Figure 1—figure supplement 1A). Fractions containing putative nanocompartments were pooled and imaged using transmission electron microscopy, which revealed the presence of icosahedral structures with the expected diameter of ~25 nm (Figure 1B and C).
 
 To determine whether Mtb produces nanocompartments under normal laboratory growth conditions, we performed an ultracentrifugation-based nanocompartment isolation strategy using wild-type H37Rv strain bacteria grown to mid-log phase (Figure 1—figure supplement 1B). Mass spectrometry analysis of the nanocompartment fraction identified both the encapsulin protein Cfp29 and the peroxidase DyP (Figure 1D). TEM analysis confirmed the presence of nanocompartment particles ~25 nm in diameter (Figure 1E). Interestingly, Rv1762c, a protein of unknown function, was consistently identified in purified nanocompartment preparations from Mtb (Figure 1D). We were unable to identify either FolB or BrfB in nanocompartments from Mtb, suggesting that these proteins are not endogenous substrates for encapsulation under normal laboratory growth conditions for Mtb.
@@ -94,62 +102,233 @@ In summary, we have demonstrated that Mtb produces a functional nanocompartment 
 
 ## Materials and methods
 
-## M. tuberculosis bacterial strains and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mycobacterium tuberculosis)</td>
+      <td>Dyp</td>
+      <td>GenBank</td>
+      <td>Gene ID: 885388, Rv0799c</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (My. tuberculosis)</td>
+      <td>Cfp29</td>
+      <td>GenBank</td>
+      <td>Gene ID: 885460, Rv0798c</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>BALB/C</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock no: 000651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. tuberculosis)</td>
+      <td>H37Rv</td>
+      <td>Eric Rubin Lab, Harvard School of Public Health</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 (DE3) LOBSTR</td>
+      <td>kerafast</td>
+      <td>Cat# EC1002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. tuberculosis)</td>
+      <td>DyP::Tn</td>
+      <td>Broad Institute, Hung Lab</td>
+      <td>Rv0799c::Tn</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. tuberculosis)</td>
+      <td>Δoperon</td>
+      <td>This study</td>
+      <td>ΔRv0799c-Rv0798c</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. tuberculosis)</td>
+      <td>ΔCfp29</td>
+      <td>This study</td>
+      <td>ΔRv0798c</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. tuberculosis)</td>
+      <td>ΔDyP</td>
+      <td>This study</td>
+      <td>ΔRv0799c</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Pet14b</td>
+      <td>Novagen</td>
+      <td>Cat# 69660-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUV15tetORm</td>
+      <td>Addgene</td>
+      <td>Cat# 17975</td>
+      <td>AHT-inducible construct for all complementation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKL4</td>
+      <td>This study</td>
+      <td></td>
+      <td>Rv0798c cloned into pUV15tetORm (with KanR)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKL5</td>
+      <td>This study</td>
+      <td></td>
+      <td>Rv0799c cloned into pUV15tetORm (with KanR)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKL6</td>
+      <td>This study</td>
+      <td></td>
+      <td>Operon cloned into pUV15tetORm (with KanR)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKL14</td>
+      <td>This study</td>
+      <td></td>
+      <td>Operon cloned into pUV15tetORm (with HygR)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKL15</td>
+      <td>This study</td>
+      <td></td>
+      <td>Rv0798c cloned into pUV15tetORm (with HygR)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKL16</td>
+      <td>This study</td>
+      <td></td>
+      <td>Rv0799c cloned into pUV15tetORm (with HygR)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUV15 pHGFP HygR:</td>
+      <td>Addgene</td>
+      <td>Cat# 70045</td>
+      <td>Rv0799c cloned into pUV15tetORm (with HygR)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMV762-mrx1-roGFP2</td>
+      <td>Amit Singh, ICGEB, India</td>
+      <td></td>
+      <td>PMC3907381</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mtb Cfp29</td>
+      <td>Rabbit polyclonal</td>
+      <td>Produced by GenScript USA, see Materials and methods</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP</td>
+      <td>Goat anti-rabbit polyclonal</td>
+      <td>Santa Cruz Biotechnology sc-2030</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-Ethylbenzothiazoline-6-sulfonic acid</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# 10102946001</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### M. tuberculosis bacterial strains and plasmids
 
 The Mtb strain H37Rv was used for all experiments. The transposon mutants DyP::Tn and Rv1762c::Tn were picked from an arrayed transposon mutant library generated at the Broad Institute. The ΔOperon and ΔCfp29 strains were made by homologous recombination using the pMSG361 vector (Rosenberg et al., 2015). For genetic complementation studies, the region encoding GFP and KanR in pUV15tetORm (Ehrt et al., 2005) was substituted via GoldenGate cloning with open reading frames for Rv0798c, Rv0799c, or the whole nanocompartment operon (Rv0798-99c). Expression of the complementation constructs was induced with anhydrotetracycline (200 ng/mL). Dyp::Tn mutants were complemented with pKL14, 15, and 16; clean deletions (ΔOperon and ΔCfp29) were complemented with pKL4, 5, and 6. To measure redox homeostasis, strains were transformed with pMV762-mrx1-roGFP2 (Bhaskar et al., 2014). To measure intrabacterial pH, strains were transformed with pUV15-pHGFP (Addgene). The transposon mutant library for Tn-seq was generated in Mtb using the ΦMycoMarT7 transposon donor plasmid.
 
-## M. tuberculosis bacterial cell culture
+### M. tuberculosis bacterial cell culture
 
 For infections, Mtb was grown to mid-log phase (OD600 = 0.5–1.0) in Middlebrook 7H9 liquid medium supplemented with 10% albumin-dextrose-saline, 0.4% glycerol, and 0.05% Tween-80 or on solid 7H10 agar plates supplemented with Middlebrook OADC (BD Biosciences) and 0.4% glycerol. When specified, Tween-80 was substituted with 0.05% tyloxapol, and 10% albumin-dextrose-saline was prepared with fatty acid-free BSA (Sigma-Aldrich). Sauton’s media was prepared with tyloxapol as previously specified (Larsen et al., 2007).
 
-## DyP activity assays
+### DyP activity assays
 
 Activity of the encapsulated and unencapsulated DyP was performed using methods adapted from Contreras et al., 2014. Briefly, DyP concentration for the encapsulated and unencapsulated DyP was determined by absorbance of the heme prosthetic group at 411 nm. Reactions were performed using 5 nM DyP, 480 nM H2O2, and 480 nM 2,2'-azino-bis (3-ethylbenzothiazoline-6-sulfonic acid) (ABTS) in 100 mM sodium citrate buffer pH 4–6. Product formation was monitored over 20 min via absorbance at 420 nm using a Varian Cary 50 UV-Vis Spectrophotometer (Agilent).
 
-## Nanocompartment purification from Mtb
+### Nanocompartment purification from Mtb
 
 For each purification, 1.5 L of Mtb was grown to mid-log phase in standard 7H9 and washed with PBS. Bacteria were pelleted and lysed in buffer by bead beating (for 50 mL of buffer, PBS with 1 mM phenylmethylsulfonyl fluoride (PMSF) was supplemented with 50 mg lysozyme, 20 U DNaseI, and 100 μg RNase A). Lysates were passaged twice through 0.2 μm filters before removal from the BSL3. Clarified lysates were prepared by centrifugation at 20,000 × g for 20 min in a JA-20 rotor. Following clarification, 4–5 mL of lysate was layered onto top of 16 mL of 38% sucrose and centrifuged for 18 hr at 100,000 × g in a type 50.2 Ti rotor. The supernatant was discarded and the pellet was resuspended in 200 µL of PBS. Resuspended pellets were layered on top of a 10–50% discontinuous sucrose gradient and centrifuged for 21 hr at 100,000 × g in a SW 41 Ti rotor. The gradient was fractionated and aliquots from each fraction were analyzed by SDS-PAGE for the presence of Cfp29.
 
-## Expression of holo-nanocompartment and naked DyP in E. coli
+### Expression of holo-nanocompartment and naked DyP in E. coli
 
 Plasmids for the expression of the holo-nanocompartment (DyP-loaded) and naked DyP constructs were designing using Gibson Assembly (NEB). Each construct was cloned into a pET-14-based destination vector containing a T7 promoter. The naked DyP construct contained an N-terminal poly-histidine tag for affinity purification. These constructs were transformed into E. coli BL21 (DE3) LOBSTR cells for protein overexpression. Cells were grown in LB media containing 60 μg/mL kanamycin at 37°C with shaking at 250 rpm until cultures reached an optical density (OD600 = 0.5–0.6). Samples were then induced with 0.5 mM IPTG and grown overnight at 18°C. Liquid cultures were harvested by centrifugation at 5000 × g for 20 min at 4°C, flash frozen in liquid nitrogen, and then stored at –80°C for future use.
 
-## Purification of holo-nanocompartment complex from E. coli
+### Purification of holo-nanocompartment complex from E. coli
 
 Cell pellets (5 g dry cell mass) were thawed at room temperature and resuspended in 50 mL of lysis buffer (20 mM Tris-HCl pH 8, 150 mM NH4Cl, 20 mM MgCl2) supplemented with 50 mg lysozyme, 20 U DNaseI, 100 μg RNase A. Samples were lysed by three passages through an Avestin EmulsiFlex-C3 homogenizer and clarified via centrifugation (15,000 × g, 30 min, 4°C). The clarified lysate was then spun at 110,000 × g for 3 hr at 4°C. The supernatant was discarded and the resulting pellet was resuspended with wash buffer (20 mM Tris pH 8, 150 mM NH4Cl, 20 mM MgCl2) supplemented with 1X Cell Lytic B (Sigma-Aldrich). The sample was then spun at 4000 × g at 4°C for 10 min followed by removing the supernatant and resuspension of the pellet in 4 mL of 50 mM Tris-HCl pH 8, 300 mM NaCl. The sample was then incubated at room temperature for 10 min to allow for solubilization and then centrifuged at 4000 × g at 4°C for 10 min to remove insoluble material. The resulting supernatant was then concentrated using Vivaspin 6 100000 MWCO concentrator columns (Sartorius). The sample was then purified via size-exclusion chromatography using a Superose 6 Increase column (GE Life Sciences), and fractions were analyzed by SDS-PAGE using 4–20% Criterion polyacrylamide gels (Bio-Rad) and visualized with GelCode Blue stain (Thermo Fisher).
 
-## Purification of unencapsulated DyP from E. coli
+### Purification of unencapsulated DyP from E. coli
 
 Cell pellets (5 g dry cell mass) were thawed at room temperature and resuspended in 50 mL of buffer A (25 mM Tris HCl pH 7.5, 150 mM NaCl, 20 mM imidazole) supplemented with 50 mg lysozyme, 20 U DNaseI, 100 μg RNase A. Samples were lysed by three passages through an Avestin EmulsiFlex-C3 homogenizer and clarified via centrifugation (15,000 × g, 30 min, 4°C). The resulting supernatant was then bound to HisPur Ni-NTA resin (Thermo Fisher Scientific) for 90 min at 4°C and then applied to a gravity column. The nickel resin was then washed with 30 resin volumes of buffer B (25 mM Tris-HCl pH 7.5, 150 mM NaCl, 40 mM imidazole) prior to eluting with buffer C (25 mM Tris-HCl pH 7.5, 150 mM NaCl, 350 mM imidazole). The eluate was then concentrated using Vivaspin 20 10000 MWCO concentrator columns (Sartorius) and desalted into 25 mM Tris pH 8, 300 mM NaCl using Econo-Pac10DG desalting columns (Bio-Rad). The SUMO tag was removed upon addition of SUMO protease at a 1:300 (SUMO protease:DyP) molar ratio and incubating overnight at 4°C. Purification was finished by size-exclusion chromatography with a Superose 6 Increase column (GE Life Sciences).
 
-## Negative stain transmission electron microscopy
+### Negative stain transmission electron microscopy
 
 Nanocompartment samples were diluted to 50 nM and applied to Formvar/carbon-coated copper grids. The grids were then washed with MilliQ water three times followed by staining with 2% (w/v) uranyl acetate. Grids were examined using the FEI Tecnai 12, 120 kV transmission electron microscope, and images were captured with a charge-coupled device (CCD) camera.
 
-## Exposure to oxidative and pH stress
+### Exposure to oxidative and pH stress
 
 Mtb was grown to mid-log phase in 7H9 media. Bacteria were diluted to OD600 = 0.1 in 10 mL of specified media at pH 4.5–6.5 and H2O2 was added to bacterial cultures at specified concentrations. Bacteria were incubated with stressors for 24 or 72 hr. CFUs were enumerated by diluting bacteria in PBS with 0.05% Tween-80 and plating serial dilutions on 7H10 agar.
 
-## Measurement of redox homeostasis
+### Measurement of redox homeostasis
 
 Mtb strains were transformed with a plasmid expressing mrx1-roGFP2 and grown to mid-log phase in 7H9. Bacteria were diluted to OD600 = 0.25 in 200 μL of specified media and added to 96-well plates. Upon addition of H2O2 (5 mM), fluorescent emissions were recorded at 510 nm after excitation at 390 nm and 490 nm using a Spectramax M3 spectrophotometer. Values reported are emissions ratios (390 nm/490 nm) and were measured 60 min following addition of H2O2.
 
-## Measurement of intrabacterial pH
+### Measurement of intrabacterial pH
 
 Mtb strains were transformed with a plasmid expressing pHGFP and grown to mid-log phase in 7H9. To prepare standards, 1.5 × 108 bacterial cells were pelleted and resuspended in 400 μL lysis buffer (50 mM Tris-HCl pH 7.5, 5 mM EDTA, 0.6% sodium dodecyl sulfate (SDS), 1 mM PMSF) before bead beating. Cell debris were pelleted and clarified lysates were kept at 4°C until use, at which point 10 μL of clarified lysate were added to 200 μL of medium with varying pH levels (4.5–8.0). To prepare samples, 1.5 × 108 bacterial cells were pelleted and washed with PBS twice before being resuspended in specified media and diluted to OD600 = 0.5 in 200 μL of medium and added to 96-well plates. Upon addition of H2O2 (5 mM), fluorescent emissions were recorded at 510 nm following excitation at 395 nm and 475 nm. Values reported were interpolated from 395/475 ratios obtained from the standard curve.
 
-## Western blot analysis of Cfp29 expression
+### Western blot analysis of Cfp29 expression
 
 Mtb strains were grown to mid-log phase in 7H9 medium. Bacteria were pelleted and washed twice with PBS prior to resuspension in lysis buffer (50 mM Tris-HCl pH 7.5, 5 mM EDTA, 0.6% SDS, 1 mM PMSF). Samples were lysed using a bead-beater, and cell debris were pelleted. Clarified lysates were heat-sterilized at 100°C for 15 min and frozen prior to use. Total protein lysates were analyzed by SDS-PAGE using precast Tris-HCl 4–20% criterion gels (Bio-Rad). Primary polyclonal antibodies for Cfp29 were generated by GenScript USA Inc via immunization of rabbits with three peptides from the protein sequence. HRP-conjugated goat anti-rabbit IgG secondary antibodies were used (sc-2030; Santa Cruz Biotechnology). Western Lightning Plus-ECL chemiluminescence substrate (Perkin Elmer) was used, and blots were developed using a ChemiDoc MP System (Bio-Rad).
 
-## Infection of murine macrophages
+### Infection of murine macrophages
 
 Macrophages were derived from bone marrow of C57BL/6 mice by flushing cells from femurs. Cells were cultured in Dulbecco’s Modified Eagle Medium (DMEM) supplemented with 10% fetal bovine serum (FBS) and 10% supernatant from 3T3-M-CSF cells for 6 days, with feeding on day 3. After differentiation, bone marrow-derived macrophages (BMDMs) continued to be cultured in BMDM media containing M-CSF. For infection, BMDMs were seeded at a density of 5 × 104 cells per well in a 96-well dish. BMDMs were allowed to adhere overnight and then infected with DMEM supplemented with 5% FBS and 5% horse serum at a multiplicity of infection (MOI) of 1. Following a 4 hr phagocytosis period, infection medium was removed and cells were washed with room temperature PBS before fresh medium was added. For CFU enumeration, medium was removed and cells were lysed in water with 0.5% Triton-X and incubated at 37°C for 10 min. Following the incubation, lysed cells were resuspended and serially diluted in PBS with 0.05% Tween-80. Dilutions were plated on 7H10 plates.
 
-## Infection of mice
+### Infection of mice
 
 BALB/C mice were obtained from the Jackson Laboratory, Bar Harbor, ME. Mice were infected at 6 weeks of age with 250 CFUs of Mtb strains by the aerosol route using a Glas-Col (Brazil, IN) full-body inhalation exposure system. Infections were allowed to proceed for 35 days at which time mice were euthanized and CFU from the lungs enumerated by plating on 7H10 plates. PZA treatment began 14 days after infection. PZA (Acros Organics) was formulated in water and administered 5 days per week, once per day, at 150 mg/kg, by oral gavage. We used G*power to calculate the needed number of animals to power the mouse study and used five mice per group.
 
-## Transposon-sequencing screen
+### Transposon-sequencing screen
 
 A transposon mutant library in H37Rv was grown to mid-log phase in 7H9. Bacteria were diluted to OD600 = 0.1 in 10 mL 7H9 at pH 4.5 with 2.5 mM H2O2. Mutants were exposed to these stressors for 72 hr and then diluted to 15,000 CFU/mL in PBS with 0.05% Tween-80. Approximately 30,000 bacteria were plated onto six 245 mm × 245 mm 7H10 plates supplemented with 0.05% Tween-80 and kanamycin (50 μg/mL). Control libraries were not exposed to low pH or H2O2 and were plated onto 7H10 plates. Colonies grew for 21 days and were collected for genomic DNA isolation. Samples for sequencing were prepared by the University of California, Davis Genome Center DNA Technologies Core, by following the protocol outlined by Long et al., 2015. PE100 reads were run on an Illumina HiSeq with ~20 million reads per sample. Sample alignment and TRANSIT preprocessing were performed by the University of California, Davis Bioinformatics Group, as previously outlined (DeJesus et al., 2015). TRANSIT analysis was performed as specified by DeJesus et al., 2015. Resampling analysis was performed using the reference genome H37RvBD_prot and the following parameters: for global options, 0% of the N- and C- terminus were ignored; for resampling options, 10,000 samples were taken and normalized using the TTR function. Correction for genome positional bias was performed. Statistical significance was determined by p-value ≤ 0.05 and log2 fold change ≤–1 or by p-adjusted value ≤0.05.

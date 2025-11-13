@@ -18,7 +18,7 @@
 
 ## Abstract
 
-The resurgent component of the voltage-gated sodium current (I NaR ) is a depolarizing conductance, revealed on membrane hyperpolarizations following brief depolarizing voltage steps, which has been shown to contribute to regulating the firing properties of numerous neuronal cell types throughout the central and peripheral nervous systems. Although mediated by the same voltage-gated sodium (Nav) channels that underlie the transient and persistent Nav current components, the gating mechanisms that contribute to the generation of I NaR remain unclear. Here, we characterized Nav currents in mouse cerebellar Purkinje neurons, and used tailored voltage-clamp protocols to define how the voltage and the duration of the initial membrane depolarization affect the amplitudes and kinetics of I NaR . Using the acquired voltage-clamp data, we developed a novel Markov kinetic state model with parallel (fast and slow) inactivation pathways and, we show that this model reproduces the properties of the resurgent, as well as the transient and persistent, Nav currents recorded in (mouse) cerebellar Purkinje neurons. Based on the acquired experimental data and the simulations, we propose that resurgent Na + influx occurs as a result of fast inactivating Nav channels transitioning into an open/conducting state on membrane hyperpolarization, and that the decay of I NaR reflects the slow accumulation of recovered/opened Nav channels into a second, alternative and more slowly populated, inactivated state. Additional simulations reveal that extrinsic factors that affect the kinetics of fast or slow Nav channel inactivation and/or impact the relative distribution of Nav channels in the fast- and slow-inactivated states, such as the accessory Navβ4 channel subunit, can modulate the amplitude of I NaR .
+The resurgent component of the voltage-gated sodium current (INaR) is a depolarizing conductance, revealed on membrane hyperpolarizations following brief depolarizing voltage steps, which has been shown to contribute to regulating the firing properties of numerous neuronal cell types throughout the central and peripheral nervous systems. Although mediated by the same voltage-gated sodium (Nav) channels that underlie the transient and persistent Nav current components, the gating mechanisms that contribute to the generation of INaR remain unclear. Here, we characterized Nav currents in mouse cerebellar Purkinje neurons, and used tailored voltage-clamp protocols to define how the voltage and the duration of the initial membrane depolarization affect the amplitudes and kinetics of INaR. Using the acquired voltage-clamp data, we developed a novel Markov kinetic state model with parallel (fast and slow) inactivation pathways and, we show that this model reproduces the properties of the resurgent, as well as the transient and persistent, Nav currents recorded in (mouse) cerebellar Purkinje neurons. Based on the acquired experimental data and the simulations, we propose that resurgent Na+ influx occurs as a result of fast inactivating Nav channels transitioning into an open/conducting state on membrane hyperpolarization, and that the decay of INaR reflects the slow accumulation of recovered/opened Nav channels into a second, alternative and more slowly populated, inactivated state. Additional simulations reveal that extrinsic factors that affect the kinetics of fast or slow Nav channel inactivation and/or impact the relative distribution of Nav channels in the fast- and slow-inactivated states, such as the accessory Navβ4 channel subunit, can modulate the amplitude of INaR.
 
 ## Introduction
 
@@ -32,7 +32,7 @@ In experiments designed to test directly the hypothesis that Navβ4 is required 
 
 ## Results
 
-## The amplitude of INaR depends on the duration, but not the voltage, of the prior membrane depolarization
+### The amplitude of INaR depends on the duration, but not the voltage, of the prior membrane depolarization
 
 In isolated neonatal (P12–P16) mouse cerebellar Purkinje neurons, the fast transient (INaT), persistent (INaP), and resurgent (INaR) Nav current components can be distinguished using voltage-clamp protocols that take advantage of the unique time- and voltage-dependent properties of the three current components (Figure 1A). On membrane depolarization, for example, INaT activates fast and subsequently decays rapidly to a steady-state (persistent) level of inward current, INaP (Figure 1A). INaR , in contrast, is revealed on membrane hyperpolarizations from the depolarized membrane potentials that evoke INaT (Figure 1A). In addition, the time courses of INaR activation and decay are much slower than INaT activation and decay (Figure 1A). Additional experiments revealed that, in response to membrane hyperpolarizations following brief (5 ms) depolarizing steps (to 0 mV), the amplitude of INaR varies as a function of the membrane potential of the hyperpolarizing voltage step (Figure 1B). The maximal amplitude of INaR is observed at approximately –45 mV (Figure 1C).
 
@@ -44,13 +44,13 @@ To determine how the duration and the voltage of the depolarizing voltage step (
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/70173/elife-70173-fig2-v2.jpg)
 
-**Figure 2.:** NaR) is determined by the duration of the prior membrane depolarization.(A) In a neonatal mouse cerebellar Purkinje neuron, INaR was revealed on membrane hyperpolarizations following depolarizing voltage steps to +20 mV of varying durations; the voltage-clamp paradigm is shown below the current records. (B) Peak INaR amplitudes, evoked at –45 mV following each depolarizing voltage step to +20 mV, were measured and normalized to the maximal peak INaR (measured in the same cell). The mean ± SEM (n = 12) normalized peak INaR amplitudes are plotted as a function of the duration of the depolarizing voltage step. The attenuation of peak INaR as a function of the duration of the depolarizing voltage step was well described by a single exponential with a mean ± SEM time constant of 15.5 ± 0.5 ms (n = 12). (C) The dependence of INaR on the duration of the depolarizing voltage step was also measured with reduced (50 mM) extracellular and increased intracellular (15 mM) sodium, resulting in a Na+ reversal potential of +30 mV. Under these conditions, depolarizing voltage steps to +46 mV evoked outward INaT. Peak INaR amplitudes, revealed during hyperpolarizing voltage steps to –45 mV, however, were also found to vary as a function of the duration of the depolarizing voltage step, revealing that INaR and the time-dependent attenuation of INaR are not affected by the direction (inward versus outward) of Na+ flux during the depolarizing voltage step. The peak amplitudes of INaR, evoked at –45 mV following each depolarizing voltage step, were measured in each cell and normalized to the maximal INaR amplitude (in the same cell). As is evident from the representative records and the plot of normalized peak INaR amplitudes (on the right), the attenuation of INaR as a function of the duration of the depolarizing voltage steps to +46 mV is also well described by a single exponential with a mean ± SEM time constant of 13.8 ± 1.1 ms (n = 6), a value similar to that observed when INaT was inward (B). (D) Representative INaR waveforms, recorded directly on repolarizations to –45 mv following 5 ms depolarizations to various membrane potentials from a –90 mV HP, are shown; the voltage-clamp protocol is shown below the current records. (E) The mean ± SEM (n = 6) normalized peak INaR amplitudes are plotted as a function of potential of the depolarizing voltage step. (F) Representative voltage-clamp recordings of Nav currents evoked (in the same cell) on direct depolarization to –40 mV from an HP of –90 mV (red) and on hyperpolarization to –40 mV following a 5 ms depolarizing voltage step to +10 mV (black) from the same HP; the voltage-clamp protocols are shown above the current records and the currents are shown on an expanded scale on the right. In panels A, C, D, and F, the currents in red were recorded during the voltage-clamp paradigms (shown below or above) depicted in red.
+**Figure 2.:** (A) In a neonatal mouse cerebellar Purkinje neuron, INaR was revealed on membrane hyperpolarizations following depolarizing voltage steps to +20 mV of varying durations; the voltage-clamp paradigm is shown below the current records. (B) Peak INaR amplitudes, evoked at –45 mV following each depolarizing voltage step to +20 mV, were measured and normalized to the maximal peak INaR (measured in the same cell). The mean ± SEM (n = 12) normalized peak INaR amplitudes are plotted as a function of the duration of the depolarizing voltage step. The attenuation of peak INaR as a function of the duration of the depolarizing voltage step was well described by a single exponential with a mean ± SEM time constant of 15.5 ± 0.5 ms (n = 12). (C) The dependence of INaR on the duration of the depolarizing voltage step was also measured with reduced (50 mM) extracellular and increased intracellular (15 mM) sodium, resulting in a Na+ reversal potential of +30 mV. Under these conditions, depolarizing voltage steps to +46 mV evoked outward INaT. Peak INaR amplitudes, revealed during hyperpolarizing voltage steps to –45 mV, however, were also found to vary as a function of the duration of the depolarizing voltage step, revealing that INaR and the time-dependent attenuation of INaR are not affected by the direction (inward versus outward) of Na+ flux during the depolarizing voltage step. The peak amplitudes of INaR, evoked at –45 mV following each depolarizing voltage step, were measured in each cell and normalized to the maximal INaR amplitude (in the same cell). As is evident from the representative records and the plot of normalized peak INaR amplitudes (on the right), the attenuation of INaR as a function of the duration of the depolarizing voltage steps to +46 mV is also well described by a single exponential with a mean ± SEM time constant of 13.8 ± 1.1 ms (n = 6), a value similar to that observed when INaT was inward (B). (D) Representative INaR waveforms, recorded directly on repolarizations to –45 mv following 5 ms depolarizations to various membrane potentials from a –90 mV HP, are shown; the voltage-clamp protocol is shown below the current records. (E) The mean ± SEM (n = 6) normalized peak INaR amplitudes are plotted as a function of potential of the depolarizing voltage step. (F) Representative voltage-clamp recordings of Nav currents evoked (in the same cell) on direct depolarization to –40 mV from an HP of –90 mV (red) and on hyperpolarization to –40 mV following a 5 ms depolarizing voltage step to +10 mV (black) from the same HP; the voltage-clamp protocols are shown above the current records and the currents are shown on an expanded scale on the right. In panels A, C, D, and F, the currents in red were recorded during the voltage-clamp paradigms (shown below or above) depicted in red.
 
 Subsequent experiments explored the effect of the driving force on Na+ on the time-dependent attenuation of INaR. In these experiments, the extracellular Na+ was reduced to 50 mM and the Na+ concentration in the internal solution was increased to 15 mM, resulting in a Na+ reversal potential of approximately +30 mV. Under these recording conditions, depolarizations to +46 mV resulted in outward INaT (Figure 2C). Similar to the results obtained with inward INaT (Figure 2A and B), prolonging the depolarizing (+46 mV) voltage step when INaT is outward results in the rapid attenuation of the amplitudes of INaR evoked during the subsequent hyperpolarizations to –45 mV (Figure 2C). Under these conditions (outward INaT), the time course of the attenuation of INaR was also well described by a single exponential with a mean ± SEM (n = 6) time constant of 13.8 ± 1.1 ms (Figure 2C), a value that is very similar to that observed when INaT is inward (Figure 2B). Taken together, these combined results demonstrate that, following brief depolarizations, there is a time-dependent accumulation of Nav channels (which underlie INaR) in a non-conducting state, and that this accumulation occurs independent of the direction of the movement of permeating Na+ ions.
 
 To determine how the voltage of the depolarizing step affects the amplitudes and kinetics of INaR, the currents recorded at –45 mV after 5 ms depolarizing steps to various membrane potentials (Figure 2D) were measured. These experiments revealed that hyperpolarizations to –45 mV following brief (5 ms) depolarizations to various membrane potentials (ranging from –45 to +10 mV) resulted in identical INaR amplitudes (Figure 2E). Additionally, varying the voltage of the depolarizing step did not affect the kinetics of the decay of INaR (Figure 2D). This is clearly illustrated in Figure 2F, in which Nav currents recorded (in the same cell) at –40 mV during a sustained voltage step (red) and following a 5 ms depolarizing voltage step to +10 mV are superimposed. The opening of Nav channels that conduct INaR, therefore, is not affected by the voltage of the prior membrane depolarization. Taken together, these observations suggest that there are two parallel, and kinetically distinct, Nav channel inactivation pathways: a fast inactivating pathway that is responsible for INaT; and, a second, slower inactivation pathway that underlies INaR.
 
-## A novel Markov model, with parallel inactivation pathways, for Nav channel gating in Purkinje neurons
+### A novel Markov model, with parallel inactivation pathways, for Nav channel gating in Purkinje neurons
 
 The results of the voltage-clamp experiments described above suggest that there are (at least) two distinct inactivation pathways that contribute to the gating of the Nav channels expressed in mouse cerebellar Purkinje neurons, that is, one that is populated quickly on channel opening and inactivates rapidly (fast inactivation), and a second that is populated and decays much more slowly (slow inactivation). To explore this hypothesis, we developed a Markov kinetic state model that, after numerical optimization (see Materials and methods), recapitulates the range of time- and voltage-dependent properties observed experimentally for the Nav currents in mouse cerebellar Purkinje neurons. The optimized Markov model (Figure 3A) includes parallel fast (IF1, IF2) and slow inactivation (IS) pathways to reconcile the experimental findings (Figure 2) that the duration of the depolarizing voltage step that underlie Nav channel activation, and not the potential of the depolarizing voltage step or the direction (i.e., inward or outward) of the Na+ flux through open channels, determines the amplitudes of INaR recorded during subsequent membrane hyperpolarizations. The model was constrained to fit the experimental data derived from multiple voltage-clamp protocols designed to detail the properties of INaT, including those to determine the voltage dependence of INaT activation and steady-state inactivation, the time course of INaT recovery from inactivation (Figure 3B–D), and the time constant (tau) of decay of the peak INaT. The model was further constrained by the experimental data obtained using protocols designed to detail the properties of INaR, including the voltage dependence of the ratio of the amplitudes of INaR and INaT (INaR:INaT), the time-dependent attenuation of INaR amplitudes, observed as a function of the duration of the depolarizing voltage step (Figure 2A and B), and the time constants (tau) of INaR decay determined for the currents recorded during hyperpolarizing voltage steps to various membrane potentials (Figure 3E–G). Consistent with the experimental results presented in Figure 2, simulations using this gating model reveal that the amplitude of INaR is dependent on the duration, but not on the potential, of the depolarizing voltage step that evokes INaT (Figure 3H,I).
 
@@ -60,23 +60,31 @@ The results of the voltage-clamp experiments described above suggest that there 
 
 One potential benefit of computational modeling is the ability to dissect out possible mechanisms of channel gating by examining the occupancy of the individual channel states as a function of voltage and time. Taking advantage of this benefit, we examined the proportion of Nav channels populating each gating state during a simulated voltage-clamp protocol that evoked INaR at –45 mV after a 5 ms depolarizing voltage step to 0 mV (Figure 4). As illustrated, fast inactivation of INaT (during the 0 mV step) reflects (simulated) channels exiting the open state and accumulating into the IF1/IF2 states. The activation of INaR (at –45 mV) reflects channel transitioning from IF1/IF2 back into the open state, and the decay of INaR during the –45 mV step reflects the time-dependent accumulation of (simulated) Nav channels in the secondary, slow-inactivated state, IS (see Figures 3A and 4A). The distinct pathways of inactivation are separated in time, but are not distinguished by differing voltage dependences. Additionally, Figure 4—figure supplement 1 shows that simulated channels follow a similar inactivation pathway during a sustained depolarization to 0 mV, with an initial accumulation in the IF1/IF2 states and subsequent accumulation in the IS state, a property of the model that reveals why INaR amplitudes are reduced as the duration of the depolarizing voltage step (that evokes INaT) is increased (Figure 3F and H).
 
-## INaT and INaR are differentially sensitive to entry into the slow-inactivated state
+![Figure 4.](https://cdn.elifesciences.org/articles/70173/elife-70173-fig4-v2.jpg)
+
+**Figure 4.:** There are two parallel pathways of voltage-gated sodium (Nav) channel inactivation (IF1/IF2 and IS) in the novel Markov kinetic state model developed here (Figure 3). The occupancies of these states and of the other (i.e., closed, open, etc.) channel gating states during a simulated voltage-clamp protocol, in which INaR is revealed on membrane hyperpolarization to –45 mV following a brief (5 ms) depolarizing voltage step to 0 mV from a holding potential of –90 mV, are plotted as a function of time in (A). The simulated voltage-clamp records and the experimental paradigm are illustrated below the gating state occupancy plot. Expanded (in time) views of the gating state occupancies and the simulated Nav currents are presented in (B). In the gating state occupancy plots, black represents the closed state, blue represents the open state, green represents the IC1+ IC2 states, aqua represents the IF2 state, orange represents the IF1 state, and purple represents the IS state.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70173/elife-70173-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Using the novel Markov model developed here (Figure 3A), a prolonged depolarizing voltage step to 0 mV produces a rapidly activating Nav current with two kinetically distinct inactivating components (A). The gating state occupancy plot (B) reveals that Nav channels transition first into the IF2 state (aqua) and subsequently into the IS state (orange).
+
+### INaT and INaR are differentially sensitive to entry into the slow-inactivated state
 
 The simulations (Figure 4) indicate the fast decay of INaT and the much slower decay of INaR reflect separate, that is, fast and slow, pathways of Nav channel inactivation and, in addition, that the decay of INaR reflects Nav channels accumulating in an absorbing, slow-inactivated state (i.e., the IS state in Figure 3), suggesting there may be discrete Nav channel populations that accumulate in the ‘IS’ state during prolonged depolarizations. To test this hypothesis directly, we measured peak INaT and INaR amplitudes, recorded at 0 and –45 mV, respectively, during sequential voltage-clamp protocols separated by a brief (20 ms) interval at –90 mV; the paradigm is illustrated in Figure 5A below the current records. The 20 ms interval at –90 mV between the sequential protocols was determined to be sufficient for the near complete recovery of INaT from fast inactivation (Ransdell et al., 2017; Aman and Raman, 2007). However, if the channels that underlie INaR have accumulated in the second, slow-inactivated (IS) state during the first –45 mV voltage step and recovery from this state is also slow, one would expect to see differential effects on peak INaT and peak INaR amplitudes when the time interval at –90 mV is sufficient to allow complete recovery of INaT, but too short to allow the complete recovery of INaR. As illustrated in the representative records shown in Figure 5A, this voltage-clamp paradigm revealed that, when the time interval at –90 mV was reduced to 20 ms, the amplitude of INaR was indeed reduced to a greater extent than the amplitude of INaT. Recordings from five additional Purkinje neurons using this voltage-clamp paradigm yielded similar results. Plotting the relative peak amplitudes of INaT and INaR measured during the second protocol, compared with the first, reveals that the 20 ms hyperpolarizing voltage step to –90 mV was sufficient to provide nearly complete (0.95 ± 0.01; n = 6) recovery of INaT (Figure 5B), whereas there was a marked reduction in the amplitude of INaR (0.63 ± 0.05; n = 6), measured during the second, compared with the first, protocol (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/70173/elife-70173-fig5-v2.jpg)
 
-**Figure 5.:** NaR and INaT display distinct rates of recovery from inactivation.(A) Representative voltage-gated sodium (Nav) currents recorded in a mouse cerebellar Purkinje neuron during a voltage-clamp paradigm designed to determine if the relative rates of recovery from inactivation of INaT and INaR are distinct. Inward Nav currents were recorded during sequential and identical voltage-clamp steps (to 0 mV for 5 ms and to –45 mV for 100 ms), separated by a brief (20 ms) hyperpolarizing step to –90 mV; the voltage-clamp paradigm is shown below the current records. As is evident, the amplitude of INaR (at –45 mV) during the second voltage-clamp step to –45 mV was attenuated more than INaT (during the second step to 0 mV). Similar results were obtained in five additional Purkinje neurons using the voltage-clamp paradigm shown. (B) Plot of the relative peak INaT (circles) and peak INaR (squares) amplitudes measured during the second voltage-clamp steps (to 0 and –45 mV), compared with the first. As is evident, the relative amplitude of INaR is reduced (0.63 ± .05; n = 6) to a greater extent (paired Student’s t-test; p = .00039) than INaT (0.95 ± 0.01; n = 6). The mean ± SEM (n = 6) relative INaT and INaR amplitudes are also indicated.
+**Figure 5.:** (A) Representative voltage-gated sodium (Nav) currents recorded in a mouse cerebellar Purkinje neuron during a voltage-clamp paradigm designed to determine if the relative rates of recovery from inactivation of INaT and INaR are distinct. Inward Nav currents were recorded during sequential and identical voltage-clamp steps (to 0 mV for 5 ms and to –45 mV for 100 ms), separated by a brief (20 ms) hyperpolarizing step to –90 mV; the voltage-clamp paradigm is shown below the current records. As is evident, the amplitude of INaR (at –45 mV) during the second voltage-clamp step to –45 mV was attenuated more than INaT (during the second step to 0 mV). Similar results were obtained in five additional Purkinje neurons using the voltage-clamp paradigm shown. (B) Plot of the relative peak INaT (circles) and peak INaR (squares) amplitudes measured during the second voltage-clamp steps (to 0 and –45 mV), compared with the first. As is evident, the relative amplitude of INaR is reduced (0.63 ± .05; n = 6) to a greater extent (paired Student’s t-test; p = .00039) than INaT (0.95 ± 0.01; n = 6). The mean ± SEM (n = 6) relative INaT and INaR amplitudes are also indicated.
 
-## INaR reflects the transitioning of fast-inactivated Nav channels into an open conducting state
+### INaR reflects the transitioning of fast-inactivated Nav channels into an open conducting state
 
 The results presented in Figure 5 indicate that Nav channels open during membrane hyperpolarizations from depolarized potentials and that these (open) channels recover from inactivation at a rate that is distinct from the complement of Nav channels responsible for INaT. To determine the relationship between INaR and the channels that give rise to the persistent component of the sodium current, INaP, we used two voltage-clamp protocols, designed to allow direct measurements of INaP alone or INaP plus INaR. In the first protocol, a slow (dV/dt = 0.12 mV/ms) depolarizing voltage ramp (from –100 to 0 mV) was presented and inward currents, reflecting only INaP, were recorded (Figure 6A, blue). In the same cell, we also recorded Nav currents evoked during a slow (dV/dt = 0.12 mV/ms) hyperpolarizing (from 0 to –100 mV) voltage ramp (Figure 6A, red). In the latter case, the measured inward currents reflect both INaP and INaR, that is, channels capable of recovering from a fast-inactivated state into an open (conducting) state on membrane repolarization. It should be noted that INaR decays (see Figure 2B) during the hyperpolarizing voltage-ramp and that the relative amplitudes of INaR and INaP to the measured currents vary as function of time during the ramp. In addition, we recorded the currents evoked during depolarizing voltage steps to various test potentials between –75 and +10 mV from a holding potential of –100 mV, and we measured the amplitudes of INaP directly, at 25 ms after the onset of each depolarizing voltage step (Figure 6A, green). The current-voltage plots, derived from the data obtained in these experiments, are presented in Figure 6B; the colors correspond to those used to illustrate the current records presented in Figure 6A. As is evident, the voltage dependences and the magnitudes of the Nav currents recorded using the three voltage-clamp protocols (in the same cell) are indeed indistinguishable. Similar results were obtained in recordings from four additional Purkinje neurons (see Discussion).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/70173/elife-70173-fig6-v2.jpg)
 
-**Figure 6.:** NaR and INaP are indistinguishable.(A) To test the hypothesis that non-inactivating voltage-gated sodium (Nav) channels underlie INaR, a depolarizing voltage ramp (blue) protocol (from –100 to 0 mV at 0.12 mV/ms) and a steady-state voltage step (green) protocol (with depolarizations from a holding potential of –100 mV to test potentials ranging from –75 to 10 mV in 5 mV increments) were used to reveal the magnitude and voltage-dependent properties of the non-inactivating (persistent) component of the Nav current, INaP. In addition, a hyperpolarizing voltage ramp (from 0 to –100 mV at 0.12 mV/ms or dV/dt) was used to reveal both INaR and INaP. Note that as INaR decays (see Figure 2B) during the hyperpolarizing voltage-ramp, the relative amplitudes of INaR and INaP vary during the ramp; the sum of the two current components, not the amplitudes of the individual components, therefore, are measured. The three representative records shown were obtained from the same Purkinje neuron. (B) The current-voltage relationships, derived from the records presented in (A) are plotted (in the corresponding color). From the records shown in the lowest panel of (A), the amplitudes of the steady-state inward currents at 25 ms at each test potential are plotted as points (green); the current amplitudes determined (at 2 ms intervals) from the ramp protocols (red and blue traces) are also plotted. As is evident, the current-voltage relations of the Nav currents recorded using the three different voltage-clamp protocols overlap; the magnitudes of the inward Nav currents are also indistinguishable. Similar results were obtained in four additional Purkinje neurons.
+**Figure 6.:** (A) To test the hypothesis that non-inactivating voltage-gated sodium (Nav) channels underlie INaR, a depolarizing voltage ramp (blue) protocol (from –100 to 0 mV at 0.12 mV/ms) and a steady-state voltage step (green) protocol (with depolarizations from a holding potential of –100 mV to test potentials ranging from –75 to 10 mV in 5 mV increments) were used to reveal the magnitude and voltage-dependent properties of the non-inactivating (persistent) component of the Nav current, INaP. In addition, a hyperpolarizing voltage ramp (from 0 to –100 mV at 0.12 mV/ms or dV/dt) was used to reveal both INaR and INaP. Note that as INaR decays (see Figure 2B) during the hyperpolarizing voltage-ramp, the relative amplitudes of INaR and INaP vary during the ramp; the sum of the two current components, not the amplitudes of the individual components, therefore, are measured. The three representative records shown were obtained from the same Purkinje neuron. (B) The current-voltage relationships, derived from the records presented in (A) are plotted (in the corresponding color). From the records shown in the lowest panel of (A), the amplitudes of the steady-state inward currents at 25 ms at each test potential are plotted as points (green); the current amplitudes determined (at 2 ms intervals) from the ramp protocols (red and blue traces) are also plotted. As is evident, the current-voltage relations of the Nav currents recorded using the three different voltage-clamp protocols overlap; the magnitudes of the inward Nav currents are also indistinguishable. Similar results were obtained in four additional Purkinje neurons.
 
-## Nav channel gating model with an OB state does not reproduce the voltage-clamp data
+### Nav channel gating model with an OB state does not reproduce the voltage-clamp data
 
 The novel Markov model developed here (Figure 3A) is quite different from the previously proposed model of Nav channel gating in mouse cerebellar Purkinje neurons (Raman and Bean, 2001). In this earlier model (illustrated in Figure 7A), there are two distinct competing pathways that depopulate the open state, one of which involves fast Nav channel inactivation and results in the population of the I6 state (Figure 7A) and the other, competing, pathway involves the blockade of open Nav channels and the generation of the OB state (Figure 7A). The isolation of the OB state from all of the other kinetic states except the open state is a distinctive feature in the model of Raman and Bean (Figure 7A). This configuration means that channels that have entered the OB state can only exit this state (i.e., become unblocked) by transitioning into the open/conducting state to generate resurgent Na+ influx, that is, INaR (Raman and Bean, 2001). Although it was suggested that the blocking particle responsible for producing the OB state was a protein, specifically the Nav channel accessory subunit Navβ4 (Grieco et al., 2002; Grieco et al., 2005; Bant and Raman, 2010), it was subsequently demonstrated that INaR is reduced, but is not eliminated, in cerebellar Purkinje neurons in (Scn4b-/-) mice lacking Navβ4 (Ransdell et al., 2017; White et al., 2019) (see Discussion).
 
@@ -88,19 +96,27 @@ Subsequent efforts here were focused on determining directly whether the Nav cha
 
 In the open-channel block model of INaR gating (Figure 7A), more positive depolarizing voltage steps promote entry into the OB state, whereas channels are favored to undergo fast (conventional) inactivation at more hyperpolarized membrane potentials (Raman and Bean, 2001; Lewis and Raman, 2014). When the voltage-clamp protocols used to generate the data presented in Figure 2 were used in simulations with the open-channel block model (Figure 7A), however, substantial differences between the predictions of this model and our experimental data were revealed. In contrast to what is observed experimentally (Figure 2), for example, increasing the duration of the brief (5 ms) depolarizing voltage step (to 0 mV) in the open channel block model resulted in very little time-dependent attenuation of the amplitude of INaR recorded on membrane hyperpolarization to –45 mV (Figure 7G and H). In addition, the time course of the decay of the resurgent currents predicted by the open channel block model (Figure 7A) are slower than we observed experimentally for INaR in mouse cerebellar Purkinje neurons (Figure 7I).
 
-## The fast- and slow-inactivated Nav channel states are populated separately and at different rates
+### The fast- and slow-inactivated Nav channel states are populated separately and at different rates
 
 The experimental data and the simulations using the novel Nav channel gating model developed here (Figure 3A) suggest that INaR is mediated by Nav channels transiting from a fast-inactivated state (IF1) into the open state, and subsequently accumulating in an absorbing, slow-inactivated state (IS). It is also possible, however, that the absorbing slow-inactivated state that underlies INaR decay reflects Nav channels accumulating into a long-term inactivated state, that is, a state in which channels are non-conducting for hundreds of ms, for example, by a blocking particle(s) that competes on a time scale similar to conventional fast inactivation (Dover et al., 2010; Venkatesan et al., 2014). To test this possibility directly, a voltage-clamp protocol was developed to allow direct comparison in the same cell of INaR recorded during a single (80 ms) hyperpolarizing voltage step to –45 mV, presented following a brief (5 ms) depolarization to 0 mV, with INaR recorded at –45 mV during successive brief (2 ms) hyperpolarizing voltage steps interspersed with brief (5 ms) depolarizations to 0 mV (Figure 8A). If a competing extrinsic blocking particle has fast-onset, competes with conventional inactivation and is absorbing, one would expect to see reductions in the amplitudes of INaR recorded during each successive hyperpolarizing voltage step to –45 mV compared with INaR recorded during a sustained hyperpolarizing voltage step to –45 mV. As is evident in the experimental records shown in Figure 8A, however, INaR waveforms evoked (in the same cell) using these two voltage-clamp protocols were quite similar.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/70173/elife-70173-fig8-v2.jpg)
+
+**Figure 8.:** To determine if two competing inactivation states underlie the observed differences in INaT and INaR recovery from inactivation (illustrated in Figure 5), a protocol was developed to allow direct comparison of INaR recorded during a single (80 ms) hyperpolarizing voltage step to –45 mV (red), presented following a brief (5 ms) depolarization to 0 mV, with INaR recorded (in the same cell) at –45 mV during successive brief (2 ms) hyperpolarizing voltage steps interspersed with brief (5 ms) depolarizations to 0 mV (black). Representative records are shown in (A); the voltage-clamp paradigms are illustrated below the current records. Similar results were obtained in four additional Purkinje neurons. As is evident (A), the envelope of the currents generated using these two protocols superimpose, suggesting that the inactivation pathway responsible for INaR decay does not compete with fast inactivation. (B) Simulated current waveforms, generated using the same two voltage-clamp protocols illustrated in (A) with the novel kinetic state model presented in Figure 3A, are shown. (C) Gating state occupancies for simulated current traces are shown with black representing the closed state, blue representing the open state, green representing the IC1+ IC2 states, aqua representing the IF2 state, orange representing the IF1 state, and purple representing the IS state. For direct comparison of the results of the simulations using the voltage-clamp protocols illustrated in (A) with the Raman-Bean gating model (2001), see Figure 8—figure supplement 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/70173/elife-70173-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** The Raman-Bean model (presented in Figure 7A) does not reproduce the Nav currents recorded from a Purkinje neuron that is depolarized (to 0 mV) and repolarized (to –45 mV) repeatedly (see Figure 8A); the voltage-clamp protocol and the simulated currents produced are shown in (A) as solid black lines. Nav current waveforms, simulated using the Raman-Bean model, in response to a sustained hyperpolarization to –45 mV following a brief (5 ms) depolarizing voltage step to 0 mV are also shown; the voltage-clamp protocol and the simulated currents are shown in (A) as dashed red lines. The gating state occupancy plot (B), presented on the same time scale as the voltage-clamp records, is shown; colors denote the various kinetic states with black representing the closed state, blue representing the open state, red representing the open-blocked (OB) state, and green representing the inactivated (I1–I6) states. The dashed lines are the gating state transitions associated with the dashed (red) current records in (A), and the solid lines are the gating state transitions associated with the solid (black) current records in (A).
+
 The representative traces presented in Figure 8A were recapitulated in simulations (Figure 8B) using the novel gating state model (Figure 3A) developed here. The current waveforms generated by the model are indistinguishable from the experimental results (compare Figure 8A and B). In addition, and without tuning any of the model parameters, the kinetic state occupancy plots generated using the two voltage-clamp protocols were also very similar (Figure 8C). This voltage-clamp protocol was also applied in simulations using the previously described (Figure 7A) open channel block model (Raman and Bean, 2001). In this case, in marked contrast with the results presented in Figure 8, the model does not reproduce the experimental data (Figure 8—figure supplement 1A). The simulations revealed that, in this model, channels did not maximally enter into the OB state on depolarizations to 0 mV and the 2 ms hyperpolarizations were not sufficient to fully activate INaR (Figure 8—figure supplement 1B). Additionally, in this model, during each of the successive depolarizations (to 0 mV), transient Nav currents were revealed (Figure 8—figure supplement 1A), reflecting channels exiting the OB state on membrane hyperpolarization and re-entering the OB state on membrane depolarization.
 
-## Simulating INaR in Scn4b-/- cerebellar Purkinje neurons
+### Simulating INaR in Scn4b-/- cerebellar Purkinje neurons
 
 We previously reported that the targeted deletion of Scn4b in mice results in a marked (~50%) reduction in INaR amplitudes in cerebellar Purkinje neurons (Figure 9A) without measurable effects on INaR kinetics or voltage dependence (Ransdell et al., 2017). In subsequent studies conducted using a different Scn4b-/- mouse line, it was reported that the targeted deletion of Scn4b had no effects on INaR kinetics, voltage dependences, or amplitudes (relative to INaT) (White et al., 2019; Ransdell et al., 2017). To explore the ability of the novel model of Nav gating, developed and presented here (Figure 3A), to scale the amplitude of INaR while leaving the time- and voltage-dependent properties of the currents unaffected, we optimized the parameters of the model (see Materials and methods) to reproduce the experimentally determined reduction in INaR amplitudes with the loss of Navβ4 (Ransdell et al., 2017; White et al., 2019). As illustrated in Figure 9B, although reduced in amplitude, the voltage dependence of INaR generated by the Scn4b-/- Nav channel gating model is very similar to wild type INaR. In Figure 9C, representative INaR waveforms generated by the gating models of wild type and Scn4b-/- Nav currents are superimposed; the time courses of wild type and Scn4b-/- INaR are indistinguishable. Time-locked with the wild type and Scn4b-/- Nav current traces are plots of the Nav channel gating state occupancies as a function of time (Figure 9D) in the wild type (solid lines) and the Scn4b-/- (dashed lines) INaR models. The gating state occupancy plots (Figure 9D) reveal that the attenuation of the amplitude of INaR in the Scn4b-/- model is the result of the reduced accumulation of channels in the IF2 state during the initial depolarization and increased occupancy in the IS state. Together, these data suggest that Navβ4 delays entry into the slow-inactivated state (IS), allowing for greater recovery from conventional inactivation and thus, larger INaR amplitudes (see Discussion).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/70173/elife-70173-fig9-v2.jpg)
 
-**Figure 9.:** NaR) amplitudes.(A) Mean ± SEM peak INaR amplitudes, measured on membrane hyperpolarizations following brief depolarizing voltage steps to +10 mV, in wild type (black) and Scn4b (-/-red) mouse cerebellar Purkinje neurons are plotted as a function of membrane voltage are shown (data were reproduced with permission from Ransdell et al., 2017). Peak INaR amplitudes in individual wild type and Scn4b cells were also normalized to peak I-/-NaT measured (at 0 mV) in the same cell, and the mean INaR as a percentage of peak INaT in wild type (black) and Scn4b (-/-red) cells are plotted (as points) in (B); the solid line is the normalized relative INaR/INaT generated by the Scn4b model. (-/-C) Consistent with the experimental data, the kinetics of INaR are not affected measurably by the loss of Scn4b (Navβ4) in the model, whereas INaR amplitudes are reduced to ~50% of wild type INaR levels (C). A time-locked plot of the gating state transitions (D) indicates that INaR amplitudes are reduced in the Scn4b model (dashed lines) due to a decrease in IF2 occupancy and an increase in IS occupancy. In this gating state occupancy plot, -/-black represents the closed state, blue represents the open state, green represents the IC1+ IC2 states, aqua represents the IF2 state, orange represents the IF1 state, and purple represents the IS state.
+**Figure 9.:** (A) Mean ± SEM peak INaR amplitudes, measured on membrane hyperpolarizations following brief depolarizing voltage steps to +10 mV, in wild type (black) and Scn4b-/- (red) mouse cerebellar Purkinje neurons are plotted as a function of membrane voltage are shown (data were reproduced with permission from Ransdell et al., 2017). Peak INaR amplitudes in individual wild type and Scn4b-/- cells were also normalized to peak INaT measured (at 0 mV) in the same cell, and the mean INaR as a percentage of peak INaT in wild type (black) and Scn4b-/- (red) cells are plotted (as points) in (B); the solid line is the normalized relative INaR/INaT generated by the Scn4b-/- model. (C) Consistent with the experimental data, the kinetics of INaR are not affected measurably by the loss of Scn4b (Navβ4) in the model, whereas INaR amplitudes are reduced to ~50% of wild type INaR levels (C). A time-locked plot of the gating state transitions (D) indicates that INaR amplitudes are reduced in the Scn4b-/- model (dashed lines) due to a decrease in IF2 occupancy and an increase in IS occupancy. In this gating state occupancy plot, black represents the closed state, blue represents the open state, green represents the IC1+ IC2 states, aqua represents the IF2 state, orange represents the IF1 state, and purple represents the IS state.
 
 ## Discussion
 
@@ -108,7 +124,7 @@ Using a combined experimental and modeling approach, we describe here a novel me
 
 The model developed here (Figure 3A) is distinct from a previously proposed model (Figure 7A) of Nav channel gating in mouse cerebellar Purkinje neurons (Raman and Bean, 2001) that involves two competing pathways out of the open state, that is, channels transitioning into either an OB state or an inactivated state. In this earlier model (Figure 7A) of INaR gating, a blocking particle occludes the Nav channel pore that is opened on membrane depolarization, functionally competing with conventional, fast inactivation, and, in addition, the OB state is isolated off the open/conducting state (Raman and Bean, 2001). In this model, entry into the OB state is promoted by membrane depolarizations to positive potentials and, on subsequent membrane hyperpolarization, the blocking particle is expelled by the Na+ driven through the unblocked Nav channel pore (Aman and Raman, 2010). In addition, the larger the driving force on Na+, the more rapidly the blocker is displaced (Aman and Raman, 2010). This process, while intrinsically voltage-independent, therefore, is tied to the driving force on Na+, consistent with the experimental observation that the peak amplitude of INaR is observed at relatively hyperpolarized (−45 to –30 mV) membrane potentials (Aman and Raman, 2010; Lewis and Raman, 2014). At more negative membrane potentials, closed state inactivation begins to dominate, and INaR is reduced (Raman and Bean, 2001; Lewis and Raman, 2014). The experimental results presented here, however, reveal that the peak amplitude of INaR is not affected by the voltage of the initial membrane depolarization (Figure 2D), but rather is affected by the duration of the prior depolarizing voltage step (Figure 2A and B). The finding that the magnitude of INaR is substantially reduced when the initial depolarizing voltage step is increased in duration was previously reported (Raman and Bean, 2001). In addition, experimental results presented here demonstrate that the time-dependent accumulation of Nav channels into the slow-inactivated state occurs independent of the direction of the movement of permeating Na+ ions.
 
-## Recovery from conventional Nav channel inactivation into an open/conducting state
+### Recovery from conventional Nav channel inactivation into an open/conducting state
 
 The experiments and the simulations presented here suggest that INaR reflects the transitioning of Nav channels that have undergone conventional fast inactivation, into an open/conducting state on membrane hyperpolarizations. Consistent with the slow decay of INaR, the model includes two parallel, but distinct, inactivation pathways: the fast (i.e., IF1 and IF2) inactivation pathway and the slow (i.e., IS) inactivation pathway, which satisfies the key experimental finding that the amplitude of INaR is insensitive to the voltage of the initial depolarization (Figure 2). Although it was previously reported that the slower component of the biexponential decay of INaT (measured at –30 mV) in Purkinje neurons is identical to the decay rate of INaR (also measured at –30 mV), this observation was interpreted as suggesting that all Nav channels initially undergo open channel block (Raman and Bean, 2001). The results of the experiments here involving prolonged depolarizations (Figure 2A–C), however, are not consistent with this model. In the experiments here, we found that there is still a time-dependent attenuation of INaR amplitudes on membrane hyperpolarizations following depolarizations to positive membrane potentials, with little or no inward driving force on Na+. These findings are inconsistent with the open-channel block hypothesis, in which positive membrane potentials are thought to promote and stabilize open-channel block (Raman and Bean, 2001; Aman and Raman, 2010; Lewis and Raman, 2014).
 
@@ -120,7 +136,7 @@ In developing the model (Figure 3A), we found that two fast-inactivated states, 
 
 It is important to note that we appreciate that our model topology and rate constants, while reliably recapitulating the time- and voltage-dependent properties of the currents determined experimentally, are not necessarily ‘unique’ or potentially the ‘most simple’. Indeed, in using Markov kinetic state modeling, it is not possible to tell the uniqueness or the ambiguity of the model (both with regard to the parameters and the model topology). Following the approach of Menon et al., 2009, using a state mutating genetic algorithm to vary topologies in a Markov model, Mangold et al., 2021, recently reported the development of an algorithm to enumerate all possible model structures distinctly using rooted graph theory (e.g., all possible combinations of models, rooted around a single open state). These efforts revealed that there are many model structures and parameter sets that can adequately fit some experimental datasets.
 
-## Molecular determinants of INaR
+### Molecular determinants of INaR
 
 Soon after the discovery of INaR, it was reported that the targeted deletion of Scn8a (which encodes the Nav1.6 α subunit) in mouse cerebellar Purkinje neurons resulted in a 90% reduction in the amplitude of INaR, suggesting that, of the α subunits (Nav1.1 and Nav1.6) expressed in Purkinje neurons (Vega-Saenz de Miera et al., 1997; Xiao et al., 2013), Nav channels formed by Nav1.6 are the major contributors to INaR (Raman et al., 1997). However, it was later reported that the targeted deletion of Scn1a (which encodes the Nav1.1 α subunit) also results in ~65% reduction in INaR, suggesting that multiple Nav α subunits contribute to INaR in cerebellar Purkinje neurons and, in addition, that the contributions are non-linear. To date, all but one (Nav1.3) of the nine Nav channel α subunits have been shown to mediate, or can be induced to mediate, INaR in native or heterologous cells (Lewis and Raman, 2014; Jarecki et al., 2010, Do and Bean, 2004; Tan et al., 2014). It is unclear whether Nav1.3-encoded Nav channels also generate INaR, as it appears that voltage-clamp studies focused on exploring this possibility have not been conducted to date.
 
@@ -128,21 +144,21 @@ In the model proposed here, the amplitude of INaR is dependent on, and ultimatel
 
 There are a number of additional factors, intrinsic and extrinsic, to Nav α subunits, as well as additional pre- and post-translational mechanisms, that regulate persistent Nav currents (Aman et al., 2009; Hammarstrom and Gage, 1998; Paul et al., 2016; Lin and Baines, 2015) and slow inactivation (Chen et al., 2008; Silva, 2014; Chen et al., 2006; Carr et al., 2003). In the model developed and presented here, the combined effects of these factors/mechanisms will regulate/modulate the amplitudes and the time- and voltage-dependent properties of INaR. In this context, it is interesting to note that the experiments presented in Figure 5 indicate that the Nav channels underlying INaR, compared to the sum of the Nav channels underlying INaT, are differentially sensitive to slow inactivation. This observation clearly suggests that there is functional (and perhaps molecular) heterogeneity in the population of Nav channels underlying the Nav currents in mouse cerebellar Purkinje neurons, with channels underlying INaR having properties distinct from at least a portion of the Nav channels that participate in the generation of INaT, but that do not produce INaR. This possibility is consistent with results presented by White et al., 2019, in which INaR was found to have a greater sensitivity to tetrodotoxin block than INaT in mouse cerebellar Purkinje neurons. It should also be noted that the Markov model developed here was created to reflect a single channel population, that is, Nav channels capable of generating both INaT and INaR. As such, the developed Markov model does not reproduce the differential recovery from inactivation presented in Figure 5.
 
-## Functional implications
+### Functional implications
 
 Based on the experimental data and the computational modeling presented here, we propose a novel, blocking particle-independent, gating mechanism for the generation of INaR that involves two, kinetically distinct inactivation pathways. The modeling results suggest that two parameters are critical in determining the magnitude and the time- and voltage-dependent properties of INaR: (1) the relative amplitude of the persistent Nav current, INaP, component; and, (2) the proportion of the persistent Nav channels (channels that fail to undergo fast inactivation) that undergo slow inactivation. Interestingly, INaR has now been identified in over 20 types of neurons, many of which do not display the high rates of repetitive firing that are characteristics of cerebellar Purkinje neurons, suggesting that the role(s) of INaR in the regulation of membrane excitability are diverse, and likely distinct, in different neuronal cell types (Lewis and Raman, 2014). Recent studies conducted on serotonergic raphe neurons, for example, suggest that the accumulation of Nav channels in a slow-inactivated state functions as a homeostatic brake on repetitive firing (Navarro et al., 2020). In addition, INaR has been implicated in several inherited and acquired neurological diseases (Lewis and Raman, 2014), including paroxysmal extreme pain disorder, paramyotonia congenita (Jarecki et al., 2010), and chemotherapy-induced neuropathy (Lewis and Raman, 2014; Sittl et al., 2012), as well as epilepsy (Hargus et al., 2013). Given the implications of these findings, it will be of considerable interest to detail the properties of INaR in different types of neurons and to explore directly the hypothesis that the rate of decay of INaR on membrane repolarization plays a role in determining how much persistent sodium current is available to contribute to repetitive firing, as well as to define the molecular mechanisms that control INaR amplitudes, kinetics, and functioning in diverse neuronal cell types.
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All animal experiments were performed in accordance with the guidelines published in the National Institutes of Health Guide for the Care and Use of Laboratory Animals. Protocols were approved by the Washington University Institutional Animal Care and Use Committee (IACUC). Postnatal day 12–16 (P12–P16) male and female C57BL6/J (Jackson laboratories) mice were used in the experiments reported here.
 
-## Isolation of neonatal cerebellar Purkinje neurons
+### Isolation of neonatal cerebellar Purkinje neurons
 
 For the preparation of isolated cerebellar Purkinje neurons, postnatal day 12–16 (P12–P16) animals were anesthetized with 1.25% Avertin and brains were rapidly removed and placed in ice-cold isolation medium containing (in mM): 82 Na2SO4, 30 K2SO4, 5 MgCl2, 10 HEPES, 10 glucose, and 0.001% phenol red (at pH 7.4). Using a scalpel, the cerebellum was removed, minced into small chunks and incubated in isolation medium containing 3 mg/ml protease XXIV at 33°C for 10–15 min. Following this incubation period, the tissue pieces were washed with enzyme-free isolation medium containing 1 mg/ml bovine serum albumin and 1 mg/ml trypsin inhibitor. The tissue pieces were transferred to artificial cerebral spinal fluid (ACSF) that was continuously bubbled with 95% oxygen/5% carbon dioxide and contained (in mM): 125 NaCl, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 2 CaCl2, 1 MgCl2, and 25 dextrose (310 mosmol/l) at 22–23°C. Tissue pieces were triturated with a fire-polished glass pipette. An aliquot of the cell suspension was placed on a coverslip in the recording chamber and superfused with fresh ACSF (at a rate of 0.5 ml/min), saturated with 95% O2/5% CO2, for 25 min before beginning electrophysiological experiments.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Whole-cell voltage-clamp recordings were obtained at room temperature from visually identified cerebellar Purkinje neurons using differential interference contrast optics. Data were collected using a Multiclamp 700B patch clamp amplifier interfaced to a Dell PC with a Digidata 1332 and pCLAMP 10 software (Axon Instruments, Union City, CA). In all recordings, tip potentials were zeroed prior to forming a giga-ohm membrane–pipette seal. Pipette capacitances were compensated using the pCLAMP software. Signals were acquired at 50–100 kHz and filtered at 10 kHz prior to digitization and storage.
 
@@ -150,13 +166,21 @@ In the experiments here, INaR was routinely recorded in ACSF (containing ~151 mM
 
 Membrane capacitances were determined by analyzing the decays of capacitive currents elicited by short (25 ms) voltage steps (±10 mV) from the holding potential (−70 mV). Whole-cell membrane capacitances (Cm) were calculated for each cell by dividing the integrated capacitive transients by the voltage. Consistent with the short time in culture and lack of extensive processes, the capacitive transients of recorded cells had single-exponential decay phases. Input resistances were calculated from the steady-state currents elicited by the same ±10 mV steps (from the holding potential). For each cell, the series resistance was calculated by dividing the time constant of the decay of the capacitive transient (fit by a single exponential) by the Cm. Series resistances were routinely compensated ≥80%. Voltage errors resulting from the uncompensated series resistance were always ≤4 mV and were not corrected. Only data obtained from cells with input resistances >50 MΩ and capacitive transients well described by single exponentials were included in the cumulative data analyses presented.
 
-## Measurements of INaT, INaR, and INaP
+### Measurements of INaT, INaR, and INaP
 
-In the standard voltage-clamp studies, involving step depolarizations, peak transient Nav conductances (in each cell at each test potential) were calculated (using Ereversal = +75 mV) from measurements of peak INaT following digital subtraction of the non-inactivating, persistent Nav current component (INaP), measured during the same voltage step. These peak transient Nav conductances were then normalized to the maximal peak transient Nav conductance determined in the same cell. Mean ± SEM normalized peak transient Nav conductances were then determined, plotted as a function of the test potential, and fitted with a single (Equation 1) Boltzmann function:(1)GNa/GNA,max=1/(1+e[(Vh−Vm)k])
+In the standard voltage-clamp studies, involving step depolarizations, peak transient Nav conductances (in each cell at each test potential) were calculated (using Ereversal = +75 mV) from measurements of peak INaT following digital subtraction of the non-inactivating, persistent Nav current component (INaP), measured during the same voltage step. These peak transient Nav conductances were then normalized to the maximal peak transient Nav conductance determined in the same cell. Mean ± SEM normalized peak transient Nav conductances were then determined, plotted as a function of the test potential, and fitted with a single (Equation 1) Boltzmann function:
+
+$$
+G_{Na}/G_{NA,max}=1/(1+e[(V_{h}−V_{m})k])
+$$
 
 where Vh is the membrane potential of half-maximal activation and k is the slope factor.
 
-To determine the voltage dependence of steady-state inactivation of INaT, a two-step voltage-clamp protocol was used. From a holding potential of –70 mV, brief (20 ms) voltage steps to various conditioning voltages, between –120 and –35 mV, were presented prior to depolarizations to 0 mV to evoke INaT. Peak INaT amplitudes at 0 mV, evoked from each conditioning potential in each cell, were measured following digital subtraction of INaP, measured during the same voltage step, and subsequently normalized to the peak INaT amplitude evoked (at 0 mV) from the –120 mV conditioning step in the same cell. Mean ± SEM normalized peak INaT amplitudes were plotted as a function of the conditioning voltage and fitted with a single (Equation 2) Boltzmann function:(2)INa/INa,max=1/(1+e[(Vh−Vm)/k])
+To determine the voltage dependence of steady-state inactivation of INaT, a two-step voltage-clamp protocol was used. From a holding potential of –70 mV, brief (20 ms) voltage steps to various conditioning voltages, between –120 and –35 mV, were presented prior to depolarizations to 0 mV to evoke INaT. Peak INaT amplitudes at 0 mV, evoked from each conditioning potential in each cell, were measured following digital subtraction of INaP, measured during the same voltage step, and subsequently normalized to the peak INaT amplitude evoked (at 0 mV) from the –120 mV conditioning step in the same cell. Mean ± SEM normalized peak INaT amplitudes were plotted as a function of the conditioning voltage and fitted with a single (Equation 2) Boltzmann function:
+
+$$
+I_{Na}/I_{Na,max}=1/(1+e[(V_{h}−V_{m})/k])
+$$
 
 where Vh is the membrane potential of half-maximal inactivation and k is the slope factor.
 
@@ -168,26 +192,183 @@ Sample sizes were determined based on mean data (and associated standard deviati
 
 Data were analyzed using ClampFit (Molecular Devices), MATLAB (Mathworks), Microsoft Excel, and Prism (GraphPad Software Inc).
 
-## Simulations using the Raman-Bean model
+### Simulations using the Raman-Bean model
 
 The Raman-Bean model of Nav channel gating (Raman and Bean, 2001) was coded in MATLAB using the equations and schematic of the Markov model structure presented in Figure 7 of Raman and Bean, 2001; no changes were made to the published model or parameters (Raman and Bean, 2001). The model simulations were run as described below using the matrix exponential technique (Teed and Silva, 2016).
 
-## Development of a computational model of Nav channel gating
+### Development of a computational model of Nav channel gating
 
 A Markov kinetic state model of Nav channel gating in mouse cerebellar Purkinje neurons was formulated based on our acquired experimental data that led to a hypothesized structure of channel gating states (see: Figure 3A). The rate constants in the model were all single exponentials derived from the acquired experimental data and were optimized numerically using described methods (Moreno et al., 2016; Teed and Silva, 2016). All simulations, numerical optimization, and data visualization were done in MATLAB 2017B. Detailed methods are below. Model definition files and MATLAB scripts used for the simulations are available at https://github.com/morenomdphd/Resurgent_INa; Moreno, 2022. The equations were verified by one of the authors (DB) who was not involved in the creation of the model.
 
 The Nav channel gating model developed (see Figure 3) consists of nine states: three closed states (C1, C2, C3), a single open state (O), two closed-inactivated states (IC1, IC2), two inactivated states, resulting from fast channel inactivation (IF1, IF2), and an additional, slowly populated inactivated state (IS). The model accurately simulates the experimentally observed kinetics and voltage dependences of Nav channel gating, including activation, inactivation (closed and open state), deactivation, recovery from fast inactivation, as well as the voltage dependence of activation and the proportion (relative to INaT) of INaR.
 
-## Numerical optimization procedure
+### Numerical optimization procedure
 
 All computations were done in MATLAB 2017B. We coded all voltage protocols and used the matrix exponential technique, which is described in Teed and Silva, 2016, for simulations. A modified Nelder-Mead simplex method that allows for constrained optimization (only positive rate constants) was used for simultaneous optimization of the protocols listed below. A cost function for each protocol was defined as the sum of squared differences between the experiments and the simulations. The total cost function (sum of the individual protocol errors) was then minimized and converged when a tolerance of 0.01 for the change of the cost function and 0.01 for the change in parameters was achieved. For further details about this numerical optimization method, see Moreno et al., 2016.
 
 The protocols were as follows:
 
-## Optimization of the Scn4b-/- Nav current model
+### Optimization of the Scn4b-/- Nav current model
 
 To develop the model for Nav channels lacking Scn4b, the optimization routine was restarted from the optimized wild type rate constants (initial conditions). The ‘Voltage dependence of the ratio of the peak resurgent to peak transient Nav current amplitude’ protocol described above was fitted to the experimental data acquired from isolated cerebellar Purkinje neurons from (Scn4b-/-) animals harboring a targeted disruption in the Scn4b locus (Ransdell et al., 2017); the data are presented in Figure 9A. All of the other protocols used in the optimization procedure for Scn4b-/- were the same as those described above for the wild type Nav channel to ensure no other changes to the model.
 
-## Model parameters
+### Model parameters
+
+<table>
+  <thead>
+    <tr>
+      <th>Rate Parameter</th>
+      <th>Optimized Rate (WT)</th>
+      <th>Optimized rate (Scn4b-/-)</th>
+      <th>Rate Equations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a11_variable1</td>
+      <td>2.3989e-02;</td>
+      <td>2.0761e-02;</td>
+      <td>Where the transition rates are of the form:</td>
+    </tr>
+    <tr>
+      <td>a11_variable2</td>
+      <td>9.6108e + 02;</td>
+      <td>9.7685e + 02;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a12</td>
+      <td>8.5613e + 02;</td>
+      <td>8.3340e + 02;</td>
+      <td>a11= Tfactor*1/(Input(1)*exp(-V/Input(2)));</td>
+    </tr>
+    <tr>
+      <td>a13</td>
+      <td>7.2682e + 01;</td>
+      <td>6.1087e + 01;</td>
+      <td>a12= Input(3)*a11;</td>
+    </tr>
+    <tr>
+      <td>b11_variable1</td>
+      <td>1.7233e-01;</td>
+      <td>1.6995e-01;</td>
+      <td>a13= Input(4)*a11;</td>
+    </tr>
+    <tr>
+      <td>b11_variable2</td>
+      <td>1.9691e + 01;</td>
+      <td>1.8560e + 01;</td>
+      <td>b11= Tfactor*1/(Input(5)*exp(V/Input(6)));</td>
+    </tr>
+    <tr>
+      <td>b12</td>
+      <td>8.8549e + 01;</td>
+      <td>9.3042e + 01;</td>
+      <td>b12= Input(7)*b11;</td>
+    </tr>
+    <tr>
+      <td>b13</td>
+      <td>1.4841e + 02;</td>
+      <td>1.7914e + 02;</td>
+      <td>b13= Input(8)*b11;</td>
+    </tr>
+    <tr>
+      <td>a3_variable1</td>
+      <td>3.6734e-01;</td>
+      <td>3.9273e-01;</td>
+      <td>a3= Tfactor*Input(9)*exp(-V/Input(10));</td>
+    </tr>
+    <tr>
+      <td>a3_variable2</td>
+      <td>9.8034e + 02;</td>
+      <td>9.8807e + 02;</td>
+      <td>b3= Tfactor*Input(11)*exp((V)/Input(12));</td>
+    </tr>
+    <tr>
+      <td>b3_variable1</td>
+      <td>5.3241e + 01;</td>
+      <td>4.7402e + 01;</td>
+      <td>a2= Tfactor*(Input(13)*exp(V/Input(14)));</td>
+    </tr>
+    <tr>
+      <td>b3_variable2</td>
+      <td>1.4204e + 01;</td>
+      <td>1.3469e + 01;</td>
+      <td>b2= ((a13*a2*a3)/(b13*b3));</td>
+    </tr>
+    <tr>
+      <td>a2_variable1</td>
+      <td>8.7852e + 01;</td>
+      <td>8.1085e + 01;</td>
+      <td>a6= Tfactor*(Input(15)*exp(V/Input(16)));</td>
+    </tr>
+    <tr>
+      <td>a2_variable2</td>
+      <td>9.9972e + 02;</td>
+      <td>9.9984e + 02;</td>
+      <td>b6= Tfactor*Input(17)*exp(-V/Input(18));</td>
+    </tr>
+    <tr>
+      <td>a6_variable1</td>
+      <td>6.0921e + 02;</td>
+      <td>6.0756e + 02;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a6_variable2</td>
+      <td>8.6490e + 01;</td>
+      <td>7.8591e + 01;</td>
+      <td>a2s = Tfactor*(Input(19)*exp(V/Input(20)));</td>
+    </tr>
+    <tr>
+      <td>b6_variable1</td>
+      <td>1.5645e + 02;</td>
+      <td>1.6214e + 02;</td>
+      <td>b2s = Tfactor*(Input(21)*exp(-V/Input(22)));</td>
+    </tr>
+    <tr>
+      <td>b6_variable2</td>
+      <td>3.0317e + 01;</td>
+      <td>4.3656e + 01;</td>
+      <td>a3s = Tfactor*Input(23)*exp(-V/Input(24));</td>
+    </tr>
+    <tr>
+      <td>a2s_variable1</td>
+      <td>1.5817e + 01;</td>
+      <td>2.3130e + 01;</td>
+      <td>b3s = (a2s*a3s*a13)/(b2s*b13);</td>
+    </tr>
+    <tr>
+      <td>a2s_variable2</td>
+      <td>9.9982e + 02;</td>
+      <td>9.9969e + 02;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>b2s_variable1</td>
+      <td>1.0010e-03;</td>
+      <td>1.0208e-03;</td>
+      <td>Q10 = 3; T = 295;</td>
+    </tr>
+    <tr>
+      <td>b2s_variable2</td>
+      <td>1.1963e + 01;</td>
+      <td>1.1383e + 01;</td>
+      <td>Tfactor  = 1.0/(Q10^((37.0-(T-273))/10.0));</td>
+    </tr>
+    <tr>
+      <td>a3s_variable1</td>
+      <td>4.4773e-03;</td>
+      <td>2.8677e-03;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a3s_variable2</td>
+      <td>9.9993e + 02;</td>
+      <td>9.8330e + 02;</td>
+      <td>Note: b2, b3s are constrained by microscopic reversibility.</td>
+    </tr>
+  </tbody>
+</table>
 
 Of note, in the MATLAB script, the Nav channel model developed here contains 24 parameters; these are inputted as a matrix ‘Input’. For example, Input(1) corresponds to a11_variable1, and Input(2) corresponds to a11_variable2, Input(3) corresponds to a12, and Input(4) corresponds to a13, etc. The transition rate constants are of the form denoted in the right-hand column of the table above.

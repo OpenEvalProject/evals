@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.44838.001 Risk derives from the variation of rewards and governs economic decisions, yet how the brain calculates risk from the frequency of experienced events, rather than from explicit risk-descriptive cues, remains unclear. Here, we investigated whether neurons in dorsolateral prefrontal cortex process risk derived from reward experience. Monkeys performed in a probabilistic choice task in which the statistical variance of experienced rewards evolved continually. During these choices, prefrontal neurons signaled the reward-variance associated with specific objects (‘object risk’) or actions (‘action risk’). Crucially, risk was not derived from explicit, risk-descriptive cues but calculated internally from the variance of recently experienced rewards. Support-vector-machine decoding demonstrated accurate neuronal risk discrimination. Within trials, neuronal signals transitioned from experienced reward to risk (risk updating) and from risk to upcoming choice (choice computation). Thus, prefrontal neurons encode the statistical variance of recently experienced rewards, complying with formal decision variables of object risk and action risk.
+Risk derives from the variation of rewards and governs economic decisions, yet how the brain calculates risk from the frequency of experienced events, rather than from explicit risk-descriptive cues, remains unclear. Here, we investigated whether neurons in dorsolateral prefrontal cortex process risk derived from reward experience. Monkeys performed in a probabilistic choice task in which the statistical variance of experienced rewards evolved continually. During these choices, prefrontal neurons signaled the reward-variance associated with specific objects (‘object risk’) or actions (‘action risk’). Crucially, risk was not derived from explicit, risk-descriptive cues but calculated internally from the variance of recently experienced rewards. Support-vector-machine decoding demonstrated accurate neuronal risk discrimination. Within trials, neuronal signals transitioned from experienced reward to risk (risk updating) and from risk to upcoming choice (choice computation). Thus, prefrontal neurons encode the statistical variance of recently experienced rewards, complying with formal decision variables of object risk and action risk.
 
 ## Introduction
 
@@ -23,7 +23,7 @@ Rewards vary intrinsically. The variation can be characterized by a probability 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/44838/elife-44838-fig1-v1.jpg)
 
-**Figure 1.:** (A) Relationship between risk measured as reward variance and reward probability. (B) Choice task. The animal made a saccade-choice between two visual stimuli (fractals, ‘objects’) associated with specific base reward probabilities. Object reward probabilities varied predictably trial-by-trial according to a typical schedule for eliciting matching behavior and unpredictably block-wise due to base-probability changes. Probabilities were uncued, requiring animals to derive reward risk internally from the variance of recently experienced rewards. Left-right object positions varied pseudorandomly. (C) Matching behavior shown in log ratios of rewards and choices. Relationship between log-transformed choice and reward ratio averaged across sessions and animals (N = 16,346 trials; linear regression; equally populated bins of reward ratios; standard errors of the mean (s.e.m.) were smaller than symbols). (D) Cumulative object choices in an example session. The choice ratio in each trial block (given by the slope of the dark blue line) matched the corresponding reward ratio (light blue). (E) Adaptation to block-wise reward-probability changes. Matching coefficient (correlation between choice and reward ratio) calculated using seven-trial sliding window around base probability changes (data across sessions, asterisks indicate significant correlation, p<0.05).10.7554/eLife.44838.003Figure 1—source data 1.
+**Figure 1.:** (A) Relationship between risk measured as reward variance and reward probability. (B) Choice task. The animal made a saccade-choice between two visual stimuli (fractals, ‘objects’) associated with specific base reward probabilities. Object reward probabilities varied predictably trial-by-trial according to a typical schedule for eliciting matching behavior and unpredictably block-wise due to base-probability changes. Probabilities were uncued, requiring animals to derive reward risk internally from the variance of recently experienced rewards. Left-right object positions varied pseudorandomly. (C) Matching behavior shown in log ratios of rewards and choices. Relationship between log-transformed choice and reward ratio averaged across sessions and animals (N = 16,346 trials; linear regression; equally populated bins of reward ratios; standard errors of the mean (s.e.m.) were smaller than symbols). (D) Cumulative object choices in an example session. The choice ratio in each trial block (given by the slope of the dark blue line) matched the corresponding reward ratio (light blue). (E) Adaptation to block-wise reward-probability changes. Matching coefficient (correlation between choice and reward ratio) calculated using seven-trial sliding window around base probability changes (data across sessions, asterisks indicate significant correlation, p<0.05).
 
 Existing neurophysiological studies on risk have used explicit, well-established informative cues indicating specific levels of risk in an unequivocal manner (Fiorillo et al., 2003; Lak et al., 2014; Ledbetter et al., 2016; McCoy and Platt, 2005; Monosov, 2017; Monosov and Hikosaka, 2013; O'Neill and Schultz, 2010; O'Neill and Schultz, 2013; Raghuraman and Padoa-Schioppa, 2014; Stauffer et al., 2014; White and Monosov, 2016). However, in daily life, outside of testing laboratories, animals are confronted with risky rewards without being over-trained on explicit, risk-descriptive cues; they need to estimate themselves the risk from the experienced rewards in order to make economic decisions. Thus, the more natural way to address the inherently risky nature of rewards is to sample the occurrence of reward from experience in a continuous manner, integrate it over time, and compute risk estimates from that information.
 
@@ -31,7 +31,7 @@ The current study aimed to obtain a more representative view on neuronal risk pr
 
 ## Results
 
-## Choice task and behavior
+### Choice task and behavior
 
 Two monkeys performed in a probabilistic choice task (Figure 1B) in which they repeatedly chose between two visual objects (A and B) to obtain liquid rewards (Tsutsui et al., 2016). The matching behavior in this task has previously been reported (Tsutsui et al., 2016). Here, we briefly show the basic pattern of matching behavior across animals before addressing the novel question of how risk influenced behavior and neuronal activity. In the task, both options had the same, constant reward amount but specific, independently set base probabilities during blocks of typically 50–150 trials. Despite the set base probability, each object’s instantaneous reward probability increased in each trial in which the object was not chosen but fell back to its base probability after the object had been chosen (Equation 1). Importantly, once reward probability had reached p=1.0, the reward remained available until the animal chose the object. Thus, reward probabilities changed depending on the animal’s choice, and the current, instantaneous level of reward probability was not explicitly cued. Accordingly, to maintain an estimate of reward probability, the animal would need to track internally its own choices and experienced rewards.
 
@@ -39,11 +39,11 @@ Under these conditions, an efficient strategy consists of repeatedly choosing th
 
 Thus, the animals’ behavior in the choice task corresponded well to the theoretical assumptions (Herrnstein, 1961; Houston and McNamara, 1981) and suggested that they estimated well the current reward probabilities of the choice options. On the basis of these choices, we derived specific risk measures that we used as regressors for neuronal responses in DLPFC.
 
-## Definition of risk measures
+### Definition of risk measures
 
 We used two measures of variance risk. The first, objective risk measure linked our study to previous work and provided a foundation for investigating subjective risk. In the choice task, the objective reward probability evolved continually from the animal’s choices (Equation 1). This characteristic allowed us to calculate objective risk in each trial as statistical variance derived only from the objective reward probability (Equation 2) (reward amount was constant and identical for each option). The second, subjective measure of risk addressed the origin of the neuronal risk information in the absence of informative risk cues. Here, risk was derived directly and subjectively from the evolving statistical variance of recently experienced reward outcomes resulting from specific choices (Equation 5-8). We then investigated whether responses in DLPFC neurons associated these two different risk estimates with choice objects (‘object risk’) or with actions required for choosing these objects (‘action risk’), irrespective of the animal’s choice.
 
-## Neuronal coding of objective risk
+### Neuronal coding of objective risk
 
 The first, most basic risk measure derived risk as variance in each trial and for each choice object directly from the ‘inverted-U’ function (Figure 1A) of the true, objective, ‘physical’ reward probability (which depended in each trial on the animal’s previous choices) (Equation 2). This risk measure derived from the programmed binary probability (Bernoulli) distribution on each trial that governed actual reward delivery and assumed no temporal decay in subjective perception, attention or memory of reward occurrence and risk. Risk as variance defined in this way increased between p=0.0 and p=0.5 and decreased thereafter, following an inverted-U function (Figure 1A). Thus, probability and risk were not one and the same measure; they correlated positively for the lower half of the probability range (p=0.0 to p=0.5) and inversely for the upper half of the probability range (p=0.5 to p=1.0); higher probability did not necessarily mean higher risk.
 
@@ -51,15 +51,23 @@ Among 205 task-related DLPFC neurons, 102 neurons had activity related to the ob
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/44838/elife-44838-fig2-v1.jpg)
 
-**Figure 2.:** (A) Activity from a single DLPFC neuron in fixation period related to the true risk associated with object B, derived from reward probability. Top: peri-event time histogram of impulse rate, aligned to fixation spot onset, sorted into object-risk terciles. Bottom: raster display: ticks indicate impulses, rows indicate trials; gray dots indicate event markers. Yellow shaded zone (500 ms after fixation cue onset) indicates analysis period. (B) Beta coefficients (standardized slopes ± s.e.m) from multiple linear regression. Only the object-B risk beta coefficient was significant (p=0.0172, t-test; all other coefficients: p>0.25). (C) Categorization of coding risk for object A or B or relative risk (risk difference or risk sum) based on the angle of regression coefficients across neurons. Each symbol represents a neuronal response by its normalized risk slopes for objects A and B; different symbols indicate differently classified neuronal responses as follows. Yellow circles: responses classified as coding object risk; red circle: position of object-B risk response of the neuron shown in A and B; black crosses: responses classified as coding relative risk. (D) Percentages of object risk responses for all task epochs (multiple linear regression; 1222 task-related responses from 205 neurons). (E) Activity of a single DLPFC neuron related to the true risk for leftward saccades (left action risk) in cue period (pFix: onset of peripheral fixation spot confirming choice).10.7554/eLife.44838.005Figure 2—source data 1.
+**Figure 2.:** (A) Activity from a single DLPFC neuron in fixation period related to the true risk associated with object B, derived from reward probability. Top: peri-event time histogram of impulse rate, aligned to fixation spot onset, sorted into object-risk terciles. Bottom: raster display: ticks indicate impulses, rows indicate trials; gray dots indicate event markers. Yellow shaded zone (500 ms after fixation cue onset) indicates analysis period. (B) Beta coefficients (standardized slopes ± s.e.m) from multiple linear regression. Only the object-B risk beta coefficient was significant (p=0.0172, t-test; all other coefficients: p>0.25). (C) Categorization of coding risk for object A or B or relative risk (risk difference or risk sum) based on the angle of regression coefficients across neurons. Each symbol represents a neuronal response by its normalized risk slopes for objects A and B; different symbols indicate differently classified neuronal responses as follows. Yellow circles: responses classified as coding object risk; red circle: position of object-B risk response of the neuron shown in A and B; black crosses: responses classified as coding relative risk. (D) Percentages of object risk responses for all task epochs (multiple linear regression; 1222 task-related responses from 205 neurons). (E) Activity of a single DLPFC neuron related to the true risk for leftward saccades (left action risk) in cue period (pFix: onset of peripheral fixation spot confirming choice).
 
 We also tested for neuronal coding of objective action risk. Once the left-right position of the risky choice objects was revealed on each trial, the animals could assess the risk associated with leftward or rightward saccade actions. A total of 57 DLPFC neurons coded action risk in cue or post-cue task periods (p<0.05; multiple linear regression, Equation 4, action risk regressors). During the choice cue phase, the activity of the neuron in Figure 2E reflected the action risk for leftward saccades (p=0.041, multiple linear regression, Equation 4), whereas the coefficient for rightward saccade risk was non-significant (p=0.78). The signal reflected the variance risk associated with left actions but neither reflected reward probability for left or right actions (both p>0.44), nor the actual choice or left-right action (both p>0.34) but reflected additionally the left-right cue position (p=0.0277).
 
 Taken together, a significant number of DLPFC neurons showed activity related to the true, objective risk associated with specific objects or actions. Although this basic risk measure accounted for the continually evolving risk levels in the choice task, it did not reflect the assumption that the animals’ risk estimates were likely subjective, owing to imperfect knowledge and memory of the true reward probabilities. Accordingly, we next defined a subjective risk measure, validated its relevance to the animals’ behavior, and tested its coding by DLPFC neurons.
 
-## Subjective risk: definition and behavior
+### Subjective risk: definition and behavior
 
 Whereas our first, objective risk measure concerned the variance derived from objective (true, programmed) reward probability, our second risk measure assumed imperfect, temporally degrading assessment of recently experienced rewards. To obtain this measure, we established subjective weights for recently experienced rewards using logistic regression on the animal’s reward and choice history (Equation 5), following standard procedures for analyzing subjective decision variables in similar choice tasks (Corrado et al., 2005; Lau and Glimcher, 2005). These weights (Figure 3A,B) revealed declining influences of past rewards and past choices on the animal’s current-trial choice, in line with previous matching studies (Corrado et al., 2005; Lau and Glimcher, 2005). On the basis of this result, the assessment of subjective variance risk in each trial considered only data from the preceding 10 trials.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/44838/elife-44838-fig3-v1.jpg)
+
+**Figure 3.:** (A) Subjective weights of influence of recent rewards on object choice, as derived from logistic regression. Filled symbols indicate significance (p<0.005, t-test; pooled across animals). (B) Subjective weights of influence of recent choice on object choice, as derived from logistic regression. (C) Approach for deriving subjective risk from the variance of recent reward history. Upper panel: vertical black bars represent rewarded choices for object A. Middle/lower panels: trial-by-trial estimates of value (middle) and risk (lower) calculated, respectively, as mean and variance of reward history over last 10 trials (using weights shown in A). The dashed magenta line indicates the subjective risk estimate used for neuronal and behavioral analysis. Heavy lines: running average of weighted estimates. Thin solid lines: unweighted, objective value/risk. Value from reward history was highest in the high-probability block, whereas risk was highest in medium-probability block (inverted U-shaped relationship, see Figure 1A). All units were normalized to allow for visual comparisons. (D) Positive influence of subjective risk on choice (risk-seeking attitude) and separate value and risk influences on choice. Object-choice probability increased with risk difference between objects (ΔRisk, sorted by median split; ‘high’ indicates higher risk with object A compared to object B; p<0.002 for all pair-wise choice probability comparisons between adjacent relative-risk levels, χ2-tests; N = 16,346 trials). The risk effect added monotonically and consistently to the increase of choice probability with object value difference (ΔValue). (E) Logistic regression. Coefficients (β) for relative value (ΔValue, p=4.4 × 10−39), relative risk (ΔRisk. p=2.8 × 10−4) and left-right bias (Bias, p=0.698) across sessions (t-tests, random-effects analysis). The constant (bias) was not significant, suggesting negligible side bias. The inset shows coefficients for a subset of trials where value difference was minimized (10% of trials); only risk difference was significantly related to choice (p=0.0072) but not value difference (p=0.182), data pooled across animals. (F) Psychometric functions relating relative value and risk to choice probability (across animals and sessions).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44838/elife-44838-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Standardized regression coefficients from multiple regression of saccadic reaction times on different task-related variables. Data pooled across animals; reaction times were z-standardized within each testing session. |Val diff|: unsigned difference in object value between choice objects; Val sum: sum of object values; |Risk diff|: unsigned difference in object risk between choice objects; Risk sum: sum of object risks; Animal: dummy variable denoting animal identity. Asterisks indicate statistical significance (p<0.01, t-test on regression coefficients).
 
 For behavioral and neuronal comparisons between subjective risk and value, we first defined ‘object value’ as the recency-weighted reward value for a specific choice object (Tsutsui et al., 2016). We followed previous studies of matching behavior (Lau and Glimcher, 2005) that distinguished two influences on value: the history of recent rewards and the history of recent choices. The first value component related to reward history can be estimated by the mean of subjectively weighted reward history over the past ten trials (Figure 3C, dashed blue curve, Equation 6) and provided a useful comparison for our subjective risk measure, which also derived from reward history (described in the next paragraph). To estimate a comprehensive measure of object value for behavioral and neuronal analysis, we incorporated the additional effect of choice history on value, which is distinct from reward history as shown in previous studies of matching behavior (Lau and Glimcher, 2005). Thus, we estimated object value based on both subjectively weighted reward history and subjectively weighted choice history (Equation 7); this constituted our main value measure for behavioral and neuronal analyses. (We consider distinctions between reward and choice history and their potential influence on risk in the Discussion).
 
@@ -67,17 +75,175 @@ We next calculated for each trial the subjective measure of ‘object risk’ as
 
 We next assessed the animals’ risk attitude by testing the influence of subjective risk on the animals’ choices. Choice probability increased monotonically with increasing difference in object value (Figure 3D, ΔValue, derived from the sum of weighted reward and choice histories, Equation 7). Importantly, risk had an additional influence on object choice: with increasing risk difference between objects (ΔRisk, Equation 8), choice probability consistently increased for the higher-risk object even with constant value-difference level (Figure 3D, yellow and orange bars). The more frequent choice of the riskier object at same value level indicated risk-seeking. A specific logistic regression (Equation 9, different from the logistic regression estimating the subjective weights for past trials) confirmed the risk-seeking attitude by a significant positive weight (i.e. beta) of risk on the animals’ choices, independent of value (Figure 3E,F). When using a subset of trials with minimal value difference for this logistic regression, we again found a significant influence of risk on choices (Figure 3E, inset). Formal comparisons favored this choice model based on subjective object value (derived from both weighted reward history and choice history) and subjective object risk over several alternatives, including models without risk, models with different value definitions, models based on objective (true) reward probabilities and risks, and variants of reinforcement learning models (see Table 1). Our subjective risk measure also showed specific relationships to saccadic reaction times, alongside value influences on reaction times (Figure 3—figure supplement 1). These data confirmed the previously observed positive attitudes of macaques towards objective risk (Genest et al., 2016; Lak et al., 2014; McCoy and Platt, 2005; O'Neill and Schultz, 2010; Stauffer et al., 2014) and validated our subjective, experience-based object-risk measure as regressor for neuronal activity.
 
-## Neuronal coding of subjective risk associated with choice objects
+**Table 1.**
+ Comparison of different models fitted to the animals’ choices.Best fitting model indicated in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model</th>
+      <th rowspan="2">Description</th>
+      <th colspan="2">Both animals</th>
+      <th colspan="2">Animal A</th>
+      <th colspan="2">Animal B</th>
+    </tr>
+    <tr>
+      <th>AIC</th>
+      <th>BIC</th>
+      <th>AIC</th>
+      <th>BIC</th>
+      <th>AIC</th>
+      <th>BIC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(1)</td>
+      <td>Value from reward history1</td>
+      <td>2.2482</td>
+      <td>2.2490</td>
+      <td>1.5077</td>
+      <td>1.5084</td>
+      <td>7.3571</td>
+      <td>7.3636</td>
+    </tr>
+    <tr>
+      <td>(2)</td>
+      <td>Value from reward history and risk2</td>
+      <td>2.2477</td>
+      <td>2.2492</td>
+      <td>1.5077</td>
+      <td>1.5092</td>
+      <td>7.3522</td>
+      <td>7.3653</td>
+    </tr>
+    <tr>
+      <td>(3)</td>
+      <td>Value from choice history3</td>
+      <td>2.1614</td>
+      <td>2.1622</td>
+      <td>1.4900</td>
+      <td>1.4907</td>
+      <td>6.5043</td>
+      <td>6.5109</td>
+    </tr>
+    <tr>
+      <td>(4)</td>
+      <td>Value from choice history and risk</td>
+      <td>2.0385</td>
+      <td>2.0400</td>
+      <td>1.4023</td>
+      <td>1.4037</td>
+      <td>7.3528</td>
+      <td>7.3660</td>
+    </tr>
+    <tr>
+      <td>(5)</td>
+      <td>Value from reward and choice history4</td>
+      <td>2.0089</td>
+      <td>2.0097</td>
+      <td>1.3914</td>
+      <td>1.3922</td>
+      <td>6.0880</td>
+      <td>6.0945</td>
+    </tr>
+    <tr>
+      <td>(6)</td>
+      <td>Value from reward and choice history and risk</td>
+      <td>2.0073</td>
+      <td>2.0088</td>
+      <td>1.3899</td>
+      <td>1.3914</td>
+      <td>6.0747</td>
+      <td>6.0878</td>
+    </tr>
+    <tr>
+      <td>(7)</td>
+      <td>Objective reward probabilities5</td>
+      <td>2.1213</td>
+      <td>2.1220</td>
+      <td>1.4615</td>
+      <td>1.4622</td>
+      <td>6.4972</td>
+      <td>6.5037</td>
+    </tr>
+    <tr>
+      <td>(8)</td>
+      <td>Objective reward probabilities and objective risk6</td>
+      <td>2.1210</td>
+      <td>2.1225</td>
+      <td>1.4616</td>
+      <td>1.4631</td>
+      <td>6.4982</td>
+      <td>6.5114</td>
+    </tr>
+    <tr>
+      <td>(9)</td>
+      <td>Reinforcement learning (RL) model7</td>
+      <td>2.0763</td>
+      <td>2.0779</td>
+      <td>1.4376</td>
+      <td>1.4391</td>
+      <td>6.2161</td>
+      <td>6.2293</td>
+    </tr>
+    <tr>
+      <td>(10)</td>
+      <td>RL learning, stack parameter (Huh et al., 2009)8</td>
+      <td>2.0810</td>
+      <td>2.0826</td>
+      <td>1.4374</td>
+      <td>1.4389</td>
+      <td>6.3198</td>
+      <td>6.3330</td>
+    </tr>
+    <tr>
+      <td>(11)</td>
+      <td>RL, reversal-learning variant9</td>
+      <td>2.2614</td>
+      <td>2.2630</td>
+      <td>1.5330</td>
+      <td>1.5344</td>
+      <td>7.2808</td>
+      <td>7.2939</td>
+    </tr>
+  </tbody>
+</table>
+
+_1:Value defined according to Equation 6; 2: Risk defined according to Equation 8; 3: Value defined as sum of weighted choice history derived from Equation 5; 4: Value defined according to Equation 7; 5: Objective reward probabilities defined according to Equation 1; 6: Objective reward risk defined according to Equation 2; 7: Standard Rescorla-Wagner RL model updating value of chosen option based on last outcome; 8: Modified RL model incorporating choice-dependency; 9: Modified RL model updating value of chosen and unchosen option based on last outcome._
+
+### Neuronal coding of subjective risk associated with choice objects
 
 The subjective variance-risk for specific choice objects, derived from reward history, was coded in 95 of the 205 task-related DLPFC neurons (46%; p<0.05 for object-risk regressors, multiple linear regression, Equation 10). These 95 neurons showed 153 object-risk-related responses (among 1222 task-related responses, 13%; 28 of the 153 responses coded risk for both objects, and 125 responses only for one object). Importantly, object-risk coding in these neurons was not explained by object value, which was included as covariate in the regression (shared variance between risk and value regressors: R2 = 0.148 across sessions). A distinct object-choice regressor significantly improved the regression for only 12 responses (p<0.05, partial F-test, Equation 10), suggesting most object-risk responses (141/153, 92%) were choice-independent (p=1.8 × 10−25, z-test). A subset of 66 of 153 risk responses (43%) fulfilled our strictest criteria for coding object risk: they coded risk before choice, only for one object, and irrespective of the actual choice, thus complying with requirements for coding a decision variable analogous to object value.
 
 The activity of the neuron in Figure 4A–B illustrates the response pattern of an object-risk neuron. During fixation, the activity of the neuron in Figure 4A reflected the current risk estimate for object A (p=0.0316, multiple linear regression, Equation 10), but was not significant for object-B risk (p=0.69), nor for object values (both p>0.22). True to the concept of a decision input, the risk signal occurred well before the monkey made its choice (in time to inform decision-making) and it was not explained by current-trial choice, cue position, or action (all p>0.46). Classification based on the angle of regression coefficients confirmed coding of object risk, rather than relative risk (Figure 4C). Thus, the neuron’s activity signaled the continually evolving subjective risk estimate for a specific choice object and may constitute a suitable input for decision mechanisms under risk.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/44838/elife-44838-fig4-v1.jpg)
+
+**Figure 4.:** (A) Activity from a single DLPFC neuron coding subjective risk associated with object A before choice (fixation period). Object risk was derived from the variance of recently experienced rewards associated with a specific object. (B) Beta coefficients (standardized slopes) from a multiple linear regression of the neuron’s fixation impulse rate showed significant coding only for object-A risk (p=0.0316, t-test; all other coefficients: p>0.22). (C) Categorization of coding risk for object A or B, risk difference or risk sum based on the angle of coefficients. Red circle: position of object-A risk response of the neuron shown in A and B. (D) Percentages of object-risk responses for all task epochs (multiple regression, 1222 task-related responses from 205 neurons). (E) Population activity of object-risk neurons as a function of object value. Activity conformed to the characteristic inverted U-shaped relationship between reward-variance risk and reward probability (see Figure 1A). Error bars were smaller than symbols. (F) Neuronal risk-updating following reward. Population activity of object-risk neurons at the time of choice (cue period), shown separately for trials in which object risk on the current trial increased (top) or decreased (bottom) following reward on the previous trial. When a reward increased object risk (by increasing reward variance), cue-activity on the following trial (N, magenta) was significantly higher compared to that on the previous trial (N-1, blue; p<0.001, Wilcoxon test), reflecting the updated object risk. Conversely, when a reward decreased object risk (by decreasing reward variance), activity on the following trial (green) decreased correspondingly (p<0.001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44838/elife-44838-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Anterior-posterior position was defined with respect to inter-aural line. Orange crosses indicate locations for all recorded neurons. PS, approximate position of principal sulcus. Lower right anatomical schematic outlines recording locations in upper and lower banks of principal sulcus. Numbers indicate anterior-posterior distance from inter-aural line. .
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/44838/elife-44838-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Activity of a single DLPFC neuron reflecting the non-linear interaction between rewards in the previous two consecutive trials. The neuron showed stronger activity in the fixation period on the current trial (N) when reward had been received on the previous trial (N-1). By contrast, current-trial activity was stronger when no reward had been received two trials ago (N-2). (B) Percentage of object-risk neurons identified in a supplementary regression (Equation 12) that included additional covariates for reward, choice and reward × choice history for the preceding two consecutive trials (N-1 and N-2). Inclusion of these control covariates had only a minor effect on the percentage of identified object-risk neurons compared to our main regression (Equation 10). Compared to robust object-risk signals across task periods (magenta), responses explicitly reflecting consecutive reward history (purple) across the two preceding trials, or consecutive reward × choice history (green) or choice history (orange) were rare, likely because these effects were better accounted for by object-value and object-risk regressors.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/44838/elife-44838-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Results from supplementary analyses in which neuronal activity was regressed on object-risk measures derived using different exponential weighting functions for past rewards. Numbers next to the color code in the legend state the number of identified object-risk neurons for each color-coded weighting function. The main analysis using empirically derived weighting function from the each animals’ choices identified 95 object-risk neurons. (B) Histograms of partial-R2 values (quantifying explained variance in neuronal activity) for neuronal responses with significant coefficient for subjective risk (upper histogram) and significant coefficient for objective risk (lower histogram). Red lines indicate distribution means. The distributions were significantly different (p=0.0015, Kolmogorov-Smirnov test) with higher distribution mean for subjective risk (p=0.04, Wilcoxon test). (C) Results from stepwise multiple regressions. Shown are the fractions of neurons (from 205 recorded DLPFC neurons, pooled across all task periods) with significant effects for the different variables when both objective and subjective value and risk variables were included in the starting set of regressors (upper panel) and when both object risk and action risk variables were included in the starting set (lower panel). These results and those in the main text show that significant numbers of neurons coded object risk across analysis approaches.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/44838/elife-44838-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** The alternative definitions were used for calculating the object risk regressors in our main neuronal regression model (Equation 10).
+
 Classification of neuronal responses based on the angle of regression coefficients (Equation 4) showed 159 significant risk responses in 80 neurons (p<0.05, F-test), of which 83 responses (52%, 53 neurons, Figure 4C) coded object risk rather than risk difference or risk sum. This result confirmed that a substantial number of neurons encoded risk for specific objects; in addition, other neurons encoded risk signals related to both objects as risk difference or risk sum, similar to encoding of value difference and value sum in previous studies (Cai et al., 2011; Tsutsui et al., 2016; Wang et al., 2013). Object risk signals occurred with high prevalence in early trial epochs, timed to potentially inform decision-making (Figure 4D). They were recorded in upper and lower principal sulcus banks, confirmed by histology (Figure 4—figure supplement 1).
 
 Activity of these object-risk neurons conformed to key patterns that distinguish risk-coding from value-coding. Their population activity followed the typical inverted-U relationship with reward value (cf. Figure 1A) by increasing as a function of value within the low-value range and decreasing with value within the high-value range (Figure 4E). Accordingly, reward outcomes should increase or decrease risk-related activity depending on whether the additional reward increased or decreased the variance of recent rewards. This feature of reward-variance risk was implicit in the formulation of our risk regressor (Figure 3C, magenta curve) and is also illustrated in the population activity in Figure 4F. Following reward receipt on trial N-1 (blue curves), activity of risk-neurons on the subsequent trial increased only when the reward led to an increase in reward variance (Figure 4F magenta curve, cf. Equation 8; ascending slope in Figure 4E). By contrast, when reward receipt led to decreased reward variance, neuronal activity on the subsequent trial also decreased (Figure 4F green curve; descending slope in Figure 4E). Thus, activity of risk neurons followed the evolving statistical variance of rewards, rather than reward probability.
 
-## Control analyses for subjective object-risk coding
+### Control analyses for subjective object-risk coding
 
 Further controls confirmed subjective object-risk coding in DLPFC. Sliding-window regression without pre-selecting responses for task-relatedness identified similar numbers of object-risk neurons as our main fixed-window analysis (82/205 neurons, 40%; Equation 11). This sliding-window regression also confirmed that object-risk signals were not explained by past-trial reward, choice, or reward ×choice history, which were regression covariates.
 
@@ -93,7 +259,7 @@ Finally, we examined effects of potential non-stationarity of neuronal activity 
 
 Taken together, object-risk signals reflecting our subjective risk measure occurred in significant numbers of DLPFC neurons and were robust to variation in statistical modeling.
 
-## Neuronal coding of subjective risk associated with actions
+### Neuronal coding of subjective risk associated with actions
 
 Neurons in DLPFC process reward values not only for objects (Tsutsui et al., 2016) but also for actions (Khamassi et al., 2015; Seo et al., 2012). Accordingly, we derived subjective action risk from the experienced variance of recent rewards related to specific actions. As our task varied reward probability for particular objects independently of reward probability for particular actions, object risk and action risk showed only low intercorrelation (R2 = 0.153). Among 205 task-related neurons, 90 (44%) coded action risk (148 of 1222 task-related responses, 12%; Equation 14). A subset of 77 of 148 action-risk signals (52%) fulfilled our strictest criteria for action risk: they coded risk before the saccadic choice, only for one action, and irrespective of the actual choice, thus complying with requirements for coding a decision variable analogous to action value.
 
@@ -101,13 +267,13 @@ The fixation-period activity of the neuron in Figure 5A signaled the risk associ
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/44838/elife-44838-fig5-v1.jpg)
 
-**Figure 5.:** (A) Activity from a single DLPFC neuron coding subjective risk associated with rightward saccades (action R) during fixation. Action risk was derived from the variance of recently experienced rewards associated with a specific action. (B) Beta coefficients (standardized slopes) from a multiple linear regression of the neuron’s fixation impulse rate showed significant coding only for action risk associated with rightward saccades (p=0.0233, t-test; all other coefficients: p>0.11). (C) Categorization of coding risk for action L or R, risk difference or risk sum based on the angle of coefficients. Red circle: position of action-R risk response of the neuron shown in A and B. (D) Percentages of action-risk responses for all task epochs (multiple regression, 1222 task-related responses from 205 neurons). (E) Population activity of action-risk neurons as a function of reward value. Activity conformed to the characteristic inverted U-shaped relationship between reward-variance risk and reward probability (see Figure 1A). Error bars were smaller than symbols. (F) Neuronal risk-updating following reward. Population activity of action-risk neurons at the time of choice (cue period), shown separately for trials in which reward on the previous trial increased (top) or decreased (bottom) action risk. When a reward increased action risk (by increasing reward variance), cue-activity on the following trial (N, magenta) was significantly higher compared to that on the previous trial (N-1, blue; p<0.001, Wilcoxon test), reflecting the updated action risk. Conversely, when a reward decreased action risk (by decreasing reward variance), activity on the following trial (green) decreased correspondingly (p<0.001).10.7554/eLife.44838.021Figure 5—source data 1.
+**Figure 5.:** (A) Activity from a single DLPFC neuron coding subjective risk associated with rightward saccades (action R) during fixation. Action risk was derived from the variance of recently experienced rewards associated with a specific action. (B) Beta coefficients (standardized slopes) from a multiple linear regression of the neuron’s fixation impulse rate showed significant coding only for action risk associated with rightward saccades (p=0.0233, t-test; all other coefficients: p>0.11). (C) Categorization of coding risk for action L or R, risk difference or risk sum based on the angle of coefficients. Red circle: position of action-R risk response of the neuron shown in A and B. (D) Percentages of action-risk responses for all task epochs (multiple regression, 1222 task-related responses from 205 neurons). (E) Population activity of action-risk neurons as a function of reward value. Activity conformed to the characteristic inverted U-shaped relationship between reward-variance risk and reward probability (see Figure 1A). Error bars were smaller than symbols. (F) Neuronal risk-updating following reward. Population activity of action-risk neurons at the time of choice (cue period), shown separately for trials in which reward on the previous trial increased (top) or decreased (bottom) action risk. When a reward increased action risk (by increasing reward variance), cue-activity on the following trial (N, magenta) was significantly higher compared to that on the previous trial (N-1, blue; p<0.001, Wilcoxon test), reflecting the updated action risk. Conversely, when a reward decreased action risk (by decreasing reward variance), activity on the following trial (green) decreased correspondingly (p<0.001).
 
 Classification of responses based on the angle of regression coefficients (Equation 4) showed 149 significant risk responses in 90 neurons (p<0.05, F-test), of which 71 responses (48%, 56 neurons) coded action risk rather than risk difference or risk sum (Figure 5C). This result confirmed that a substantial number of neurons encoded risk for specific actions, in addition to neurons encoding risk sum or difference. Action-risk signals occurred throughout all trial periods (Figure 5D). Adding an action-choice regressor improved the regression model in only 15 of 148 risk responses (p<0.05, partial F-test). Thus, most responses (133/148, 90%) coded action-risk without additional action-choice coding (p=3.2 × 10−22, z-test for dependent samples). Activity of action-risk neurons followed the typical inverted-U relationship with reward value (Figure 5E). Reward increased the activity of these risk-neurons only when the reward increased current reward variance, but decreased neuronal activity when it led to decreased reward variance (Figure 5F). Thus, activity of action-risk neurons followed the evolving statistical variance of rewards.
 
 Object risk and action risk were often coded by distinct neurons. Separate multiple regression analyses (Equations 10 and 14) revealed that 43 of the 205 task-related neurons (21%) encoded object risk but not action risk, and 38 of the 205 task-related neurons (19%) encoded action risk but not object risk. A stepwise regression on both object risk and action risk (Equation 15) resulted in 55 neurons encoding object risk but not action risk (27%) and 38 neurons encoding action risk but not object risk (19%, Figure 4—figure supplement 3C). Controlling for non-stationarity of neuronal responses, we identified 83 action-risk neurons when including a first-order autoregressive term and 56 neurons when subtracting neuronal activity at trial start. Neurons encoding object risk and action risk were intermingled without apparent anatomical clustering in DLPFC (Figure 4—figure supplement 1), similar to previous studies that failed to detect clustering of object-selective and location-selective neurons (Everling et al., 2006).
 
-## Population decoding of object risk and action risk
+### Population decoding of object risk and action risk
 
 To quantify the precision with which downstream neurons could read risk information from DLPFC neurons, we used previously validated population-decoding techniques, including nearest-neighbor and linear support-vector-machine classifiers (Grabenhorst et al., 2012; Tsutsui et al., 2016). We subjected the total of 205 DLPFC neurons to this analysis and did not pre-select risk-neurons for these analyses (‘unselected neurons’). We grouped trials according to terciles of object risk and action risk and performed classification based on low vs. high terciles (see Materials and methods).
 
@@ -115,15 +281,27 @@ We successfully decoded object risk and action risk from the population of 205 D
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/44838/elife-44838-fig6-v1.jpg)
 
-**Figure 6.:** (A) Leave-one-out cross-validated decoding accuracy (% correct classification) of a linear support-vector-machine classifier decoding object risk and action risk in pre-cue period. Decoding performance increased with the number of neurons. Analysis was based on normalized single-trial activity of neurons that met decoding criteria without pre-selection for risk-coding. Data for each neuron number show mean (± s.e.m) over 100 iterations of randomly selected neurons. Each neuron entered the decoder twice, to decode risk for object A and B (or action L and R). (B) Decoding for object risk and action was significantly above chance (gray line, decoding from shuffled data) in all task epochs (p<0.0001, Wilcoxon test). Object-risk decoding was significantly better than action-risk decoding in specific trial periods (Asterisks: p<0.005, Wilcoxon test). (C) Object-risk and action-risk decoding depended on individual neurons’ sensitivities for object risk and action risk. Linear regressions of decoding performance in pre-cue period from 5000 subsets of 20 randomly selected neurons on each subset’s mean single-neuron regression betas for object risk. (D) Decoding accuracy for specific subsets of neurons in pre-cue period. All: entire population of neurons. OR sig: significant object-risk neurons (N = 12). AR sig: significant action-risk neurons (N = 9). Rand: randomly selected neurons (mean ± s.e.m over 5000 randomly selected subsets of N = 20 neurons). (E) Decoding accuracy for object-risk decoding from trial subsets in which control variables were held constant. Left to right: decoding object-risk with constant object choice, action and cue position. Decoding was significant for all control variables and all task epochs (p<0.005, Wilcoxon test).10.7554/eLife.44838.023Figure 6—source data 1.
+**Figure 6.:** (A) Leave-one-out cross-validated decoding accuracy (% correct classification) of a linear support-vector-machine classifier decoding object risk and action risk in pre-cue period. Decoding performance increased with the number of neurons. Analysis was based on normalized single-trial activity of neurons that met decoding criteria without pre-selection for risk-coding. Data for each neuron number show mean (± s.e.m) over 100 iterations of randomly selected neurons. Each neuron entered the decoder twice, to decode risk for object A and B (or action L and R). (B) Decoding for object risk and action was significantly above chance (gray line, decoding from shuffled data) in all task epochs (p<0.0001, Wilcoxon test). Object-risk decoding was significantly better than action-risk decoding in specific trial periods (Asterisks: p<0.005, Wilcoxon test). (C) Object-risk and action-risk decoding depended on individual neurons’ sensitivities for object risk and action risk. Linear regressions of decoding performance in pre-cue period from 5000 subsets of 20 randomly selected neurons on each subset’s mean single-neuron regression betas for object risk. (D) Decoding accuracy for specific subsets of neurons in pre-cue period. All: entire population of neurons. OR sig: significant object-risk neurons (N = 12). AR sig: significant action-risk neurons (N = 9). Rand: randomly selected neurons (mean ± s.e.m over 5000 randomly selected subsets of N = 20 neurons). (E) Decoding accuracy for object-risk decoding from trial subsets in which control variables were held constant. Left to right: decoding object-risk with constant object choice, action and cue position. Decoding was significant for all control variables and all task epochs (p<0.005, Wilcoxon test).
 
 Taken together, unselected population activity carried accurate codes for object risk and action risk. These neuronal population codes depended on population size and individual neurons’ risk sensitivities.
 
-## Dynamic integration of risk with reward history, value and choice in single neurons
+### Dynamic integration of risk with reward history, value and choice in single neurons
 
 Neurons often signaled object risk irrespective of other factors. However, over the course of a trial, many neurons dynamically integrated risk with behaviorally important variables in specific ways that were predicted on theoretical grounds. We assessed these coding dynamics with a sliding-window regression (Equation 11), which also served to confirm the robustness of our main fixed-window analysis reported above.
 
 Our main, subjective risk measure derived from the history of recently received rewards (Equation 8). Following this concept, neurons often combined object-risk signals with information about rewards or choices from previous trials (‘history’ variables). Early on in trials, the neuron in Figure 7A signaled whether or not reward had been received on the last trial, following the choice of a particular object. This signal was immediately followed by an explicit object-risk signal, reflecting the updated, current-trial risk level given the outcome of the preceding trial. In total, 44 neurons showed such joint coding of reward-choice history variables and explicit object risk (54% of 82 risk-coding neurons from sliding-window regression, 21% of 205 recorded neurons; Equation 11; Figure 7B). By dynamically coding information about recent rewards alongside explicit object-risk signals, these DLPFC neurons seemed suited to contribute to internal risk calculation from experience.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/44838/elife-44838-fig7-v1.jpg)
+
+**Figure 7.:** (A) Neuronal reward history-to-risk transition. A single DLPFC neuron with fixation-period activity that initially reflected whether reward was received from a particular choice on the last trial (‘Last reward × choice’) before reflecting current-trial object risk. Coefficients of partial determination (partial R2) obtained from sliding-window multiple regression analysis. The observed single-neuron transition from recent reward history to current object risk is consistent with the behavioral model in Figure 3C which constructs and updates object-risk estimates from reward experience. (B) Numbers of neurons with joint and separate coding of object risk and history variables that were relevant for risk updating (including last-trial reward, last-trial choice, last-trial reward × last trial choice). Numbers derived from sliding window analyses focused on early trial periods relevant to decision-making (trial start until 500 ms post-cue). (C) Neuronal value-to-risk integration. A single DLPFC neuron with fixation-period activity encoding both object risk and object value, compatible with the notion of integrating risk and object value into economic utility. (D) Number of neurons with joint and separate coding of risk and value. (E) Neuronal risk-to-choice transition. A single DLPFC neuron with activity encoding object risk before coding object choice, consistent with decision-making informed by risk. (F) Numbers of neurons with joint and separate coding of object risk and object choice. (G) Cumulative coding latencies of history variables, object risk, object value, and object choice. Latencies derived from sliding-window regression (first sliding window for which criterion for statistical significance was achieved, see Materials and methods; cumulative proportion of significant neurons normalized to maximum value for each variable). (H) Regression coefficients for neurons with joint risk coding and choice coding (left) and joint risk coding and value coding (right). (I) Proportion of neurons with joint coding and pure coding of specific task-related variables (left) and proportion of neurons coding different numbers of additional variables (right).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/44838/elife-44838-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Numbers of neurons with joint and separate coding of object risk and left-right cue position. Numbers derived from sliding window analyses (Equation 11). (B) Numbers of neurons with joint and separate coding of object value and left-right cue position. (C) Numbers of neurons with joint and separate coding of object risk and left-right action. (D) Numbers of neurons with joint and separate coding of object value and left-right action. (E) Single neuron transitioning from pre-cue object-risk coding to cue-position coding. (F) Single neuron transitioning from pre-cue object-risk coding to action coding. (G) Single neuron transitioning from pre-cue object-value coding to action coding.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/44838/elife-44838-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) A single DLPFC neuron encoding the utility associated with object A at the time of choice (cue period). Utility was defined as the weighted linear combination of object value (based on reward history) and object risk, with weighting coefficients derived from individual animals’ choices (Figure 3E). (B) In a multiple regression, utility for object A explained a significant proportion of variance in impulse rate (p=0.025, t-test). (C) Categorization of coding utility for objects A or B, utility difference or utility sum based on the angle of coefficients. Red circle: neuron from A and B. (D) Percentages of utility-coding neuronal responses across all task epochs (based on multiple regression), calculated with respect to 1222 task-related responses from 205 neurons. (E) Population decoding of utility from unselected neurons. Decoding accuracy (% correct classification) for utility based on a linear support-vector-machine classifier (N = 161 neurons). Leave-one-out cross-validated decoding for utility was significantly above chance (gray line, decoding from shuffled data) in all task epochs (p<0.0001; Wilcoxon test). (F) Decoding performance increased with the number of neurons, late fixation period. Data for each neuron number show mean (± s.e.m) over 100 iterations of randomly selected neurons. (G) Relationship between neuronal utility decoding and individual neuron’s utility sensitivities. Linear regression of decoding performance from 5000 subsets of 20 randomly selected neurons on average utility sensitivity (single-neuron utility regression slope).
 
 According to the mean-variance approach of finance theory (D'Acremont and Bossaerts, 2008; Markowitz, 1952), the integration of expected value and risk into utility is thought to underlie behavioral preferences. In agreement with this basic concept, some DLPFC neurons dynamically combined object-risk signals with object-value signals (34 neurons, 41% of 82 risk-coding neurons, 17% of 205 neurons; Equation 11; Figure 7C,D). The neuron in Figure 7C showed overlapping object-value and object-risk signals early in trials during the fixation period, in time to inform object choice on the current trial. This result is potentially consistent with the integration of risk and value into utility. Supplementary analyses (Figure 7—figure supplement 2, described below) provided further evidence that some individual neurons integrated risk and value into utility-like signals (although formal confirmation of utility coding would require additional behavioral testing).
 
@@ -135,7 +313,7 @@ Overall, the majority of DLPFC neurons coded task-related variables in combinati
 
 Thus, in addition to pure risk coding, DLPFC neurons frequently combined object risk with other reward and decision parameters on individual trials. These neurons provide a suitable basis for internal risk calculation and for the influence of risk on economic choices.
 
-## Utility control
+### Utility control
 
 According to approaches in finance theory, risk is integrated with expected value into utility (D'Acremont and Bossaerts, 2008; Markowitz, 1952). We tested whether neuronal risk responses were accounted for by subjective integration of value (derived from the mean of the recent reward and choice histories) and risk (derived from the variance of the recent reward history). We calculated this mean-variance utility as a weighted sum of object value and risk with the weights for value and risk derived from logistic regression (Equation 9).
 
@@ -173,25 +351,37 @@ In summary, these results show that prefrontal neurons tracked the evolving stat
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All animal procedures conformed to US National Institutes of Health Guidelines and were approved by the Home Office of the United Kingdom (Home Office Project Licenses PPL 80/2416, PPL 70/8295, PPL 80/1958, PPL 80/1513). The work has been regulated, ethically reviewed and supervised by the following UK and University of Cambridge (UCam) institutions and individuals: UK Home Office, implementing the Animals (Scientific Procedures) Act 1986, Amendment Regulations 2012, and represented by the local UK Home Office Inspector; UK Animals in Science Committee; UCam Animal Welfare and Ethical Review Body (AWERB); UK National Centre for Replacement, Refinement and Reduction of Animal Experiments (NC3Rs); UCam Biomedical Service (UBS) Certificate Holder; UCam Welfare Officer; UCam Governance and Strategy Committee; UCam Named Veterinary Surgeon (NVS); UCam Named Animal Care and Welfare Officer (NACWO).
 
 Two adult male macaque monkeys (Macaca mulatta) weighing 5.5–6.5 kg served for the experiments. The animals had no history of participation in previous experiments. The number of animals used and the number of neurons recorded for the experiment is typical for studies in this field of research; we did not perform explicit power analysis. A head holder and recording chamber were fixed to the skull under general anaesthesia and aseptic conditions. We used standard electrophysiological techniques for extracellular recordings from single neurons in the sulcus principalis area of the frontal cortex via stereotaxically oriented vertical tracks, as confirmed by histological reconstruction. After completion of data collection, recording sites were marked with small electrolytic lesions (15–20 µA, 20–60 s). The animals received an overdose of pentobarbital sodium (90 mg/kg iv) and were perfused with 4% paraformaldehyde in 0.1 M phosphate buffer through the left ventricle of the heart. Recording positions were reconstructed from 50-µm-thick, stereotaxically oriented coronal brain sections stained with cresyl violet.
 
-## Behavioral task
+### Behavioral task
 
 The animals performed an oculomotor free-choice task involving choices between two visual objects to each of which reward was independently and stochastically assigned. Trials started with presentation of a red fixation spot (diameter: 0.6°) in the center of a computer monitor (viewing distance: 41 cm; Figure 1B). The animal was required to fixate the spot and contact a touch sensitive, immobile resting key. An infrared eye tracking system continuously monitored eye positions (ISCAN, Cambridge, MA). During the fixation period at 1.0–2.0 s after eye fixation and key touch, an alert cue covering the fixation spot appeared for 0.7–1.0 s. At 1.4–2.0 s following offset of the alert cue, two different visual fractal objects (A, B; square, 5° visual angle) appeared simultaneously as ocular choice targets on each side of the fixation spot at 10° lateral to the center of the monitor. Left and right positions of objects A and B alternated pseudorandomly across trials. The animal was required to make a saccadic eye movement to its target of choice within a time window of 0.25–0.75 s. A red peripheral fixation spot replaced the target after 1.0–2.0 s of target fixation. This fixation spot turned to green after 0.5–1.0 s, and the monkey released the touch key immediately after color change. Rewarded trials ended with a fixed quantity of 0.7 ml juice delivered immediately upon key release. A computer-controlled solenoid valve delivered juice reward from a spout in front of the animal's mouth. Unrewarded trials ended at key release and without further stimuli. The fixation requirements restricted eye movements from trial start to cue appearance and, following the animals’ saccade choice, from choice acquisition to reward delivery. This ensured that neuronal activity was minimally influenced by oculomotor activity, especially in our main periods of interest before cue appearance.
 
-Reward probabilities of object A and B were independently calculated in every trial, depending on the numbers of consecutive unchosen trials (Equation 1):(1)P=1-(1-P0)n+1with P as instantaneous reward probability, P0 as experimentally imposed, base probability setting, and n as the number of trials that the object had been consecutively unchosen. This equation describes the probabilistic reward schedule of the Matching Law (Herrnstein, 1961) in defining how the likelihood of being rewarded on a target increased with the number of trials after the object was last chosen but stayed at base probability while the object was repeatedly chosen (irrespective of whether that choice was rewarded or not). Reward was thus probabilistically assigned to the object in every trial, and once a reward was assigned, it remained available until the associated object was chosen.
+Reward probabilities of object A and B were independently calculated in every trial, depending on the numbers of consecutive unchosen trials (Equation 1):
+
+$$
+P=1-(1-P_{0})^{n+1}
+$$
+
+with P as instantaneous reward probability, P0 as experimentally imposed, base probability setting, and n as the number of trials that the object had been consecutively unchosen. This equation describes the probabilistic reward schedule of the Matching Law (Herrnstein, 1961) in defining how the likelihood of being rewarded on a target increased with the number of trials after the object was last chosen but stayed at base probability while the object was repeatedly chosen (irrespective of whether that choice was rewarded or not). Reward was thus probabilistically assigned to the object in every trial, and once a reward was assigned, it remained available until the associated object was chosen.
 
 We varied the base reward probability in blocks of typically 50–150 trials (chosen randomly) without signaling these changes to the animal. We used different base probabilities from the range of p=0.05 to p=0.55, which we chose randomly for each block. The sum of base reward probabilities for objects A and B was held constant so that only relative reward probability varied. The trial-by-trial reward probabilities for objects A and B, calculated according to Equation 1 varied within the range of p=0.05 to p=0.99.
 
-## Calculation of objective risk
+### Calculation of objective risk
 
-A most basic, assumption-free definition of objective risk derives risk directly from the variance of the true, specifically set (i.e. programmed) reward probabilities that changed on each trial depending on the animal’s matching behavior (Equation 1). Accordingly, we used the conventional definition of variance to calculate risk in each trial from the programmed, binary probability distribution (Bernoulli distribution) that governed actual reward delivery in each trial (Equation 2):(2)var= ∑k[pkmk × (mk -EV)2]with p as the trial-specific probability derived from Equation 1, m as reward magnitude (0.7 ml for reward, 0 for no-reward outcome), k as outcome (0 ml or set ml of reward) and EV as expected value (defined as the sum of probability-weighted reward amounts). In our task, reward magnitude on rewarded trials was held constant at 0.7 ml; the definition generalizes to situations with different magnitudes. With magnitude m held constant, variance risk follows an inverted-U function of probability (Figure 1A). The risk for objects A and B, calculated as variance according to Equation 2 varied within the range of var = 0.0003 to var = 0.1225.
+A most basic, assumption-free definition of objective risk derives risk directly from the variance of the true, specifically set (i.e. programmed) reward probabilities that changed on each trial depending on the animal’s matching behavior (Equation 1). Accordingly, we used the conventional definition of variance to calculate risk in each trial from the programmed, binary probability distribution (Bernoulli distribution) that governed actual reward delivery in each trial (Equation 2):
 
-## Objective risk: analysis of neuronal data
+$$
+var=\sumk[p_{k}m_{k}\times(m_{k}-EV)^{2}]
+$$
+
+with p as the trial-specific probability derived from Equation 1, m as reward magnitude (0.7 ml for reward, 0 for no-reward outcome), k as outcome (0 ml or set ml of reward) and EV as expected value (defined as the sum of probability-weighted reward amounts). In our task, reward magnitude on rewarded trials was held constant at 0.7 ml; the definition generalizes to situations with different magnitudes. With magnitude m held constant, variance risk follows an inverted-U function of probability (Figure 1A). The risk for objects A and B, calculated as variance according to Equation 2 varied within the range of var = 0.0003 to var = 0.1225.
+
+### Objective risk: analysis of neuronal data
 
 We counted neuronal impulses in each neuron on correct trials relative to different task events with 500 ms time windows that were fixed across neurons: before fixation spot (Pre-fix, starting 500 ms before fixation onset), early fixation (Fix, following fixation onset), late fixation (Fix2, starting 500 ms after fixation spot onset), pre-cue (Pre-cue, starting 500 ms before cue onset), cue (Cue, following cue onset), post-fixation (Post-fix, following fixation offset), before cue offset (Pre-cue off, starting 500 ms before cue offset), after cue offset (Post-cue off, following cue offset), pre-outcome (Pre-outc, starting 500 ms before reinforcer delivery), outcome (Outc, starting at outcome delivery), late outcome (Outc2, starting 500 ms after outcome onset).
 
@@ -199,73 +389,141 @@ We first identified task-related responses in individual neurons and then used m
 
 We used multiple regression analysis to assess relationships between neuronal activity and task-related variables. Statistical significance of regression coefficients was determined using t-test with p<0.05 as criterion. Our analysis followed established approaches previously used to test for value coding in different brain structures (Lau and Glimcher, 2008; Samejima et al., 2005). All tests performed were two-sided.
 
-Each neuronal response was tested with the following multiple regression model to identify responses related to objective, true risk derived from reward probability (Equation 3):(3)y= β0+ β1ObjectChoice + β2CuePosition + β3Action + β4TrueProbA+ β5TrueProbB +β6TrueRiskA + β7TrueRiskB + εwith y as trial-by-trial neuronal impulse rate, ObjectChoice as current-trial object choice (0 for A, one for B), CuePosition as current-trial spatial cue position (0 for object A on the left, one for object A on the right), Action as current-trial action (0 for left, one for right), TrueProbA as the true current-trial reward probability of object A calculated from Equation 1, TrueProbB as the true current-trial reward probability of object B calculated from Equation 1, TrueRiskA as the true current-trial risk of object A calculated from TrueProbA according to Equation 2, TrueRiskB as the true current-trial risk of object B calculated from TrueProbB according to Equation 2, β1 to β7 as corresponding regression coefficients, β0 as constant, ε as residual. A neuronal response was classified as coding object risk if it had a significant coefficient for TrueRiskA or TrueRiskB.
+Each neuronal response was tested with the following multiple regression model to identify responses related to objective, true risk derived from reward probability (Equation 3):
+
+$$
+y= \beta_{0}+ \beta_{1}ObjectChoice + \beta_{2}CuePosition + \beta_{3}Action + \beta_{4}TrueProbA+ \beta_{5}TrueProbB +\beta_{6}TrueRiskA + \beta_{7}TrueRiskB + \epsilon
+$$
+
+with y as trial-by-trial neuronal impulse rate, ObjectChoice as current-trial object choice (0 for A, one for B), CuePosition as current-trial spatial cue position (0 for object A on the left, one for object A on the right), Action as current-trial action (0 for left, one for right), TrueProbA as the true current-trial reward probability of object A calculated from Equation 1, TrueProbB as the true current-trial reward probability of object B calculated from Equation 1, TrueRiskA as the true current-trial risk of object A calculated from TrueProbA according to Equation 2, TrueRiskB as the true current-trial risk of object B calculated from TrueProbB according to Equation 2, β1 to β7 as corresponding regression coefficients, β0 as constant, ε as residual. A neuronal response was classified as coding object risk if it had a significant coefficient for TrueRiskA or TrueRiskB.
 
 We used the same model to test for neuronal coding of objective action risk by substituting the object-risk regressors with action-specific risk regressors (defined by the left-right object arrangement on each trial; thus, if object A appeared on the left side on a given trial, the action L risk regressor would be determined by the object A risk regressor for that trial).
 
-An alternative method for classification of neuronal risk responses used the angle of regression coefficients (Tsutsui et al., 2016; Wang et al., 2013). This classification method is ‘axis-invariant’ as it is independent on the axis choice for the regression model, that is whether the model includes separate variables for object risk or separate variables for risk sum and difference (Wang et al., 2013). However, the regression in this form omits relevant variables coded by DLPFC neurons (choice, cue position, action); accordingly, we use this approach as additional confirmation for our main regression above. We fitted the following regression model (Equation 4):(4)y= β0+ β1ObjectRiskA + β2ObjectRiskB+ ε
+An alternative method for classification of neuronal risk responses used the angle of regression coefficients (Tsutsui et al., 2016; Wang et al., 2013). This classification method is ‘axis-invariant’ as it is independent on the axis choice for the regression model, that is whether the model includes separate variables for object risk or separate variables for risk sum and difference (Wang et al., 2013). However, the regression in this form omits relevant variables coded by DLPFC neurons (choice, cue position, action); accordingly, we use this approach as additional confirmation for our main regression above. We fitted the following regression model (Equation 4):
+
+$$
+y=\beta_{0}+\beta_{1}ObjectRiskA+\beta_{2}ObjectRiskB+\epsilon
+$$
 
 Using this method, a neuronal response was categorized as risk-related if it showed a significant overall model fit (p<0.05, F-test), rather than testing the significance of individual regressors. For responses with significant overall model fit, we plotted the magnitude of the beta coefficients (slopes) of the two object-risk regressors on an x-y plane (Figure 2C). We followed a previous study (Wang et al., 2013) and divided the coefficient space into eight equally spaced segments of 45° to categorize neuronal responses based on the polar angle. We classified responses as coding object risk (‘absolute risk’) if their coefficients fell in the segments pointing toward 0° or 180° (object risk A) or toward 90° or 270° (object risk B). We used an analogous procedure for action risk classification. We classified responses as coding risk difference if their coefficients fell in the segments pointing toward 135° or 315° and as coding risk sum if their coefficients fell in the segments pointing toward 45° or 225°.
 
-## Logistic regression for defining the weight of past reward
+### Logistic regression for defining the weight of past reward
 
-The animal may have paid more attention to immediately past rewards compared to earlier, more remote rewards. To establish a potential subjective reward value weighing, we used a logistic regression to model subjective reward value from the animals’ past rewards and choices, similar to comparable previous behavioral and neurophysiological macaque studies (Corrado et al., 2005; Lau and Glimcher, 2005; Sugrue et al., 2004). As our task involved tracking changing values of objects (one fractal image for each of the two choice options), we formulated the model in terms of object choices rather than action choices. We fitted a logistic regression to the animal’s trial-by-trial choice data to estimate beta coefficients for the recent history of received rewards and recently made choices. Note that in choice tasks such as the one used here, choices and reward outcomes depend not only on reward history but also on choice history (Lau and Glimcher, 2005). Thus, rewards and choices were both included into the logistic regression to avoid an omitted variable bias and provide a more accurate estimation of the weighting coefficients. The resulting coefficients quantified the extent to which the animals based their choices on recently received rewards and recently made choices for a given option; thus, the coefficients effectively weighed past trials with respect to their importance for the animal’s behavior. We used the following logistic regression to determine the weighting coefficients for reward history (βjr) and choice history (βjc) (Equation 5):(5)log⁡pAipBi= ∑j=1NβjrRAi-j-RBi-j+ ∑j=1NβjcCAi-j-CBi-j+β0 with pAi [or pBi] as the probability of choosing object A (or B) on the ith current trial, RA[or RB] as reward delivery after choice of object A [or B] on the ith trial, j is the past trial relative to the ith trial, CA[or CB] as choice of object A [or B] on the ith trial, N denoting the number of past trials included in the model (N = 10), and β0 as bias term. Exploratory analysis had shown that the beta coefficients did not differ significantly from 0 for more than (N = 10) past trials. Thus, Equation 5 modeled the dependence of the monkeys’ choices on recent rewards and recent choices for specific objects; by fitting the model we estimated the subjective weights (i.e. betas) that animals placed on recent rewards and choices. Thus, the crucial weighting coefficients reflecting the subjective influence of past rewards and choices were βjr and βjc. As described below, the βjr coefficients were also used for calculating the variance that served as the subjective risk measure of our study. The logistic regression was estimated by fitting regressors to a binary indicator function (dummy variable), setting the variable to 0 for the choice of one object and to 1 for the choice of the alternative object, using a binomial distribution with logit link function. The coefficients for reward and choice history from this analysis are plotted in Figure 3A and B as reward and choice weights.
+The animal may have paid more attention to immediately past rewards compared to earlier, more remote rewards. To establish a potential subjective reward value weighing, we used a logistic regression to model subjective reward value from the animals’ past rewards and choices, similar to comparable previous behavioral and neurophysiological macaque studies (Corrado et al., 2005; Lau and Glimcher, 2005; Sugrue et al., 2004). As our task involved tracking changing values of objects (one fractal image for each of the two choice options), we formulated the model in terms of object choices rather than action choices. We fitted a logistic regression to the animal’s trial-by-trial choice data to estimate beta coefficients for the recent history of received rewards and recently made choices. Note that in choice tasks such as the one used here, choices and reward outcomes depend not only on reward history but also on choice history (Lau and Glimcher, 2005). Thus, rewards and choices were both included into the logistic regression to avoid an omitted variable bias and provide a more accurate estimation of the weighting coefficients. The resulting coefficients quantified the extent to which the animals based their choices on recently received rewards and recently made choices for a given option; thus, the coefficients effectively weighed past trials with respect to their importance for the animal’s behavior. We used the following logistic regression to determine the weighting coefficients for reward history ($\beta_{j}^{r}$) and choice history ($\beta_{j}^{c}$) (Equation 5):
 
-## Calculation of weighted, subjective value
+$$
+log⁡\frac{p_{A}i}{p_{B}i}=\sumj=1N\beta_{j}^{r}R_{A}i-j-R_{B}i-j+\sumj=1N\beta_{j}^{c}C_{A}i-j-C_{B}i-j+\beta_{0}
+$$
 
-To calculate the subjective value of each reward object from the animal’s experience, we used the weights estimated from the logistic regression (Equation 5). We followed previous studies of matching behavior (Lau and Glimcher, 2005) that distinguished two influences on value: the history of recent rewards and the history of recent choices. The first object-value component related to reward history, OVAr, can be estimated by the mean of subjectively weighted reward history over the past 10 trials (Equation 6):(6)OVAr= ∑j=1NβjrRAi-j Nwith RA again as reward delivery after choice of object A on the ith trial, j as the past trial relative to the ith trial, N the number of past trials included in the model (N = 10), βjr as regression coefficient for the weight of past rewards (estimated by Equation 5).
+with $p_{A}i$ [or$p_{B}i$] as the probability of choosing object A (or B) on the ith current trial, $R_{A}[orR_{B}]$ as reward delivery after choice of object A [or B] on the ith trial, j is the past trial relative to the ith trial, $C_{A}[orC_{B}]$ as choice of object A [or B] on the ith trial, N denoting the number of past trials included in the model (N = 10), and $\beta_{0}$ as bias term. Exploratory analysis had shown that the beta coefficients did not differ significantly from 0 for more than (N = 10) past trials. Thus, Equation 5 modeled the dependence of the monkeys’ choices on recent rewards and recent choices for specific objects; by fitting the model we estimated the subjective weights (i.e. betas) that animals placed on recent rewards and choices. Thus, the crucial weighting coefficients reflecting the subjective influence of past rewards and choices were $\beta_{j}^{r}$ and $\beta_{j}^{c}.$ As described below, the $\beta_{j}^{r}$ coefficients were also used for calculating the variance that served as the subjective risk measure of our study. The logistic regression was estimated by fitting regressors to a binary indicator function (dummy variable), setting the variable to 0 for the choice of one object and to 1 for the choice of the alternative object, using a binomial distribution with logit link function. The coefficients for reward and choice history from this analysis are plotted in Figure 3A and B as reward and choice weights.
 
-In tasks used to study matching behavior, such as the present one, it has been shown that choice history has an additional influence on behavior and that this influence can be estimated using logistic regression (Lau and Glimcher, 2005). To account for this second object-value component related to choice history, we estimated a subjective measure of object value that incorporated both a dependence on weighted reward history and a dependence on weighted choice history (Equation 7):(7)OVAr,c= ∑j=1NβjrRAi-j+∑j=1NβjcCAi-j  Nwith RA as reward delivery after choice of object A on the ith trial, CA[or CB] as choice of object A [or B] on the ith trial, j as the past trial relative to the ith trial, N the number of past trials included in the model (N = 10), βjr as regression coefficient for the weight of past rewards and βjc as regression coefficient for the weight of past choice (estimated by Equation 5). This measure of subjective object value (Equation 7) based on both weighted reward and choice history, OVAr,c, constituted our main value measure for behavioral and neuronal analyses.
+### Calculation of weighted, subjective value
 
-## Calculation of subjective risk
+To calculate the subjective value of each reward object from the animal’s experience, we used the weights estimated from the logistic regression (Equation 5). We followed previous studies of matching behavior (Lau and Glimcher, 2005) that distinguished two influences on value: the history of recent rewards and the history of recent choices. The first object-value component related to reward history, $OV_{A}^{r}$, can be estimated by the mean of subjectively weighted reward history over the past 10 trials (Equation 6):
 
-Our aim was to construct a subjective risk measure that derived risk from the variance of recent reward experiences and that incorporated the typically observed decreasing influence of past trials on the animal’s behavior. We used the following definition as our main measure of subjective object risk (Equation 8):(8)varA= ∑j=1Nβjr(RA(i−j)− (∑j=1N(RA(i−j))) /N)2N−1with βjr representing the weighting coefficients for past rewards (derived from Equation 5), RA as reward delivery after choice of object A, j as index for past trials relative to the current ith trial, and N as the number of past trials included in the model (N = 10); the term (∑j=1N(RA(i−j))) /N represents the mean reward over the last ten trials. Thus, the equation derives subjective object risk from the summed, subjectively weighted, squared deviation of reward amounts in the last ten trials from the mean reward over the last ten trials. By defining risk in this manner, we followed the common economic definition of risk as the mean squared deviation from expected outcome and in addition accounted for each animal’s subjective weighting of past trials. This definition (Equation 8) constituted our main subjective object risk measure for behavioral and neuronal analyses.
+$$
+OV_{A}^{r}=\frac{\sumj=1N\beta_{j}^{r}R_{A}i-j}{N}
+$$
+
+with $R_{A}$ again as reward delivery after choice of object A on the ith trial, j as the past trial relative to the ith trial, N the number of past trials included in the model (N = 10), $\beta_{j}^{r}$ as regression coefficient for the weight of past rewards (estimated by Equation 5).
+
+In tasks used to study matching behavior, such as the present one, it has been shown that choice history has an additional influence on behavior and that this influence can be estimated using logistic regression (Lau and Glimcher, 2005). To account for this second object-value component related to choice history, we estimated a subjective measure of object value that incorporated both a dependence on weighted reward history and a dependence on weighted choice history (Equation 7):
+
+$$
+OV_{A}^{r,c}=\frac{\sumj=1N\beta_{j}^{r}R_{A}i-j+\sumj=1N\beta_{j}^{c}C_{A}i-j}{N}
+$$
+
+with $R_{A}$ as reward delivery after choice of object A on the ith trial, $C_{A}[orC_{B}]$ as choice of object A [or B] on the ith trial, j as the past trial relative to the ith trial, N the number of past trials included in the model (N = 10), $\beta_{j}^{r}$ as regression coefficient for the weight of past rewards and $\beta_{j}^{c}$ as regression coefficient for the weight of past choice (estimated by Equation 5). This measure of subjective object value (Equation 7) based on both weighted reward and choice history, $OV_{A}^{r,c}$, constituted our main value measure for behavioral and neuronal analyses.
+
+### Calculation of subjective risk
+
+Our aim was to construct a subjective risk measure that derived risk from the variance of recent reward experiences and that incorporated the typically observed decreasing influence of past trials on the animal’s behavior. We used the following definition as our main measure of subjective object risk (Equation 8):
+
+$$
+var_{A}= \frac{\sumj=1N\beta_{j}^{r}(R_{A}(i−j)− (\sumj=1N(R_{A}(i−j))) /N)^{2}}{N−1}
+$$
+
+with $\beta_{j}^{r}$ representing the weighting coefficients for past rewards (derived from Equation 5), $R_{A}$ as reward delivery after choice of object A, j as index for past trials relative to the current ith trial, and N as the number of past trials included in the model (N = 10); the term $(\sumj=1N(R_{A}(i−j))) /N$ represents the mean reward over the last ten trials. Thus, the equation derives subjective object risk from the summed, subjectively weighted, squared deviation of reward amounts in the last ten trials from the mean reward over the last ten trials. By defining risk in this manner, we followed the common economic definition of risk as the mean squared deviation from expected outcome and in addition accounted for each animal’s subjective weighting of past trials. This definition (Equation 8) constituted our main subjective object risk measure for behavioral and neuronal analyses.
 
 Alternative, more complex definitions of subjective risk in our task could incorporate the weighting of past trials in the calculation of the mean reward (the subtrahend in the numerator of Equation 8) or incorporate both weighted reward history and weighted choice history in this calculation. We explore these possibilities in a supplementary analysis (Figure 4—figure supplement 4). In our main risk definition, we also assumed that the animals used a common reward weighting function for value and risk. As described in the Results, for neuronal analysis we also explored alternative past-trial weighting functions for the risk calculation (Figure 4—figure supplement 3). The alternative weights identified similar although slightly lower numbers of risk neurons compared to those obtained with the weights defined by Equation 5.
 
-## Testing the influence of subjective object risk on choices
+### Testing the influence of subjective object risk on choices
 
-For out-of-sample validation, we used one half of the behavioral data within each animal to derive weighting coefficients (Equation 5) and subsequently used the remaining half for testing the behavioral relevance of object-risk and object-value variables. To do so, we used logistic regression to relate each animal’s choices to the subjective object values and object variance-risks, according to the following equation (Equation 9):(9)log⁡(pL(i)pR(i))= β0+ β1(ObjectValueLeft−ObjectValueRight)+β2(ObjectRiskLeft− ObjectRiskRight) +εwith pLi [or pRi] as the probability of choosing left or right on the ith trial, ObjectValueLeft as current-trial value of the left object (derived from OVAr,c, Equation 7), ObjectValueRight as current-trial value of the right object (Equation 7), ObjectRiskLeft as current-trial risk of the left object (Equation 8), ObjectRiskRight as current-trial risk of the right object (Equation 8), β1 to β2 as corresponding regression coefficients, β0 as constant, ε as residual. The resulting regression coefficients are shown in Figure 3E. Thus, object choice was modeled as a function of relative object value and relative object risk.
+For out-of-sample validation, we used one half of the behavioral data within each animal to derive weighting coefficients (Equation 5) and subsequently used the remaining half for testing the behavioral relevance of object-risk and object-value variables. To do so, we used logistic regression to relate each animal’s choices to the subjective object values and object variance-risks, according to the following equation (Equation 9):
+
+$$
+log⁡(\frac{p_{L}(i)}{p_{R}(i)})= \beta_{0}+ \beta_{1}(ObjectValueLeft−ObjectValueRight)+\beta_{2}(ObjectRiskLeft− ObjectRiskRight) +\epsilon
+$$
+
+with $p_{L}i$ [or$p_{R}i$] as the probability of choosing left or right on the ith trial, ObjectValueLeft as current-trial value of the left object (derived from $OV_{A}^{r,c}$, Equation 7), ObjectValueRight as current-trial value of the right object (Equation 7), ObjectRiskLeft as current-trial risk of the left object (Equation 8), ObjectRiskRight as current-trial risk of the right object (Equation 8), β1 to β2 as corresponding regression coefficients, β0 as constant, ε as residual. The resulting regression coefficients are shown in Figure 3E. Thus, object choice was modeled as a function of relative object value and relative object risk.
 
 We compared this model to several alternative behavioral models using Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC; Table 1). The alternative models included variations of the above model (described in the legend to Table 1), a model based on objective (true) reward probabilities and risks, a standard reinforcement learning model that updated the object-value estimate of the chosen option based on the obtained outcome (Sutton and Barto, 1998), a reinforcement learning model that updated object-value estimates of both chosen and unchosen option, and a modified reinforcement learning model that captured time-dependent increases in reward probability in tasks used to study matching behavior (Huh et al., 2009).
 
-## Subjective risk: analysis of neuronal data
+### Subjective risk: analysis of neuronal data
 
-## Subjective risk for objects
+#### Subjective risk for objects
 
-Each neuronal response was tested with the following multiple regression model to identify responses related to subjective risk derived from weighted reward history (Equation 10):(10)y= β0+ β1ObjectChoice + β2CuePosition + β3Action + β4ObjectValueA+ β5ObjectValueB +β6ObjectRiskA + β7ObjectRiskB + εwith y as trial-by-trial neuronal impulse rate, ObjectChoice as current-trial object choice (0 for A, one for B), CuePosition as current-trial spatial cue position (0 for object A on the left, one for object A on the right), Action as current-trial action (0 for left, one for right), ObjectValueA as current-trial value of object A (Equation 7), ObjectValueB as current-trial value of object B (Equation 7), ObjectRiskA as current-trial risk of object A (Equation 8), ObjectRiskB as current-trial risk of object B (Equation 8), β1 to β7 as corresponding regression coefficients, β0 as constant, ε as residual. This equation differs from Equation 3 as it replaced the regressors for true risk and true probability with regressors for subjective risk and subjective value. A neuronal response was classified coding object risk if it had a significant coefficient for ObjectRiskA or ObjectRiskB.
+Each neuronal response was tested with the following multiple regression model to identify responses related to subjective risk derived from weighted reward history (Equation 10):
 
-## Regression including last-trial history variables
+$$
+y= \beta_{0}+ \beta_{1}ObjectChoice + \beta_{2}CuePosition + \beta_{3}Action + \beta_{4}ObjectValueA+ \beta_{5}ObjectValueB +\beta_{6}ObjectRiskA + \beta_{7}ObjectRiskB + \epsilon
+$$
 
-Object risk was calculated based on reward received in previous trials. Accordingly, we used an additional regression to test whether these variables were directly encoded by DLPFC neurons, and whether object-risk responses were better explained in terms of these history variables. To test for encoding of object risk alongside explicit regressors for last-trial reward, last-trial choice, and last-trial choice × reward, we used the following regression model (Equation 11):(11)y= β0+ β1ObjectChoice + β2CuePosition + β3Action + β4ObjectValueA+ β5ObjectValueB +β6ObjectRiskA + β7ObjectRiskB + β8LastReward + β9LastChoice +β10LastReward × LastChoice+ ε
+with y as trial-by-trial neuronal impulse rate, ObjectChoice as current-trial object choice (0 for A, one for B), CuePosition as current-trial spatial cue position (0 for object A on the left, one for object A on the right), Action as current-trial action (0 for left, one for right), ObjectValueA as current-trial value of object A (Equation 7), ObjectValueB as current-trial value of object B (Equation 7), ObjectRiskA as current-trial risk of object A (Equation 8), ObjectRiskB as current-trial risk of object B (Equation 8), β1 to β7 as corresponding regression coefficients, β0 as constant, ε as residual. This equation differs from Equation 3 as it replaced the regressors for true risk and true probability with regressors for subjective risk and subjective value. A neuronal response was classified coding object risk if it had a significant coefficient for ObjectRiskA or ObjectRiskB.
 
-To test whether inclusion of additional regressors for the past two trials affected our main results (Figure 4—figure supplement 2), we used the following regression model (Equation 12) that included regressors for rewards, choices, and their interactions on the last two trials:(12)y= β0+ β1ObjectChoice + β2CuePosition + β3Action + β4ObjectValueA + β5ObjectValueB +β6ObjectRiskA + β7ObjectRiskB + β8LastReward + β9LastChoice +β10LastReward × LastChoice+ β11LastReward2 + β12LastChoice2 +β13LastReward2 × LastChoice2+ ε
+#### Regression including last-trial history variables
 
-## Step-wise regression model for testing coding of objective and subjective object risk
+Object risk was calculated based on reward received in previous trials. Accordingly, we used an additional regression to test whether these variables were directly encoded by DLPFC neurons, and whether object-risk responses were better explained in terms of these history variables. To test for encoding of object risk alongside explicit regressors for last-trial reward, last-trial choice, and last-trial choice × reward, we used the following regression model (Equation 11):
 
-We used this stepwise regression as an additional analysis to test for object-risk coding and action-risk coding when these variables directly competed to explain variance in neuronal responses. Note that the objective, true probabilities used for the analysis were not the base probabilities but the trial-specific probabilities that evolved trial-by-trial from the baseline probabilities according to Equation 1. The following variables were included as regressors in the starting set (Equation 13):(13)y= β0+ β1ObjectChoice + β2CuePosition + β3Action + β4ObjectValueA + β5ObjectValueB +β6ObjectRiskA + β7ObjectRiskB + β8TrueProbA + β9TrueProbB +β10TrueRiskA + β11TrueRiskB + ε
+$$
+y= \beta_{0}+ \beta_{1}ObjectChoice + \beta_{2}CuePosition + \beta_{3}Action + \beta_{4}ObjectValueA+ \beta_{5}ObjectValueB +\beta_{6}ObjectRiskA + \beta_{7}ObjectRiskB + \beta_{8}LastReward + \beta_{9}LastChoice +\beta_{10}LastReward \times LastChoice+ \epsilon
+$$
 
-## Subjective risk for actions
+To test whether inclusion of additional regressors for the past two trials affected our main results (Figure 4—figure supplement 2), we used the following regression model (Equation 12) that included regressors for rewards, choices, and their interactions on the last two trials:
 
-To test for encoding of action risk, we used the following multiple regression model (Equation 14):(14)y= β0+ β1ObjectChoice + β2CuePosition+ β3Action+ β4ActionValueL+ β5ActionValueR +β6ActionRiskL + β7ActionRiskR+ εwith y as trial-by-trial neuronal impulse rate, ActionValueL as current-trial value of a leftward saccade, ActionValueR as current-trial value of a rightward saccade, ActionRiskL as current-trial risk of a leftward saccade, ActionRiskR as current-trial risk of a rightward saccade (all other variables as defined above). Note that subjective action values and action risks were not simply spatially referenced object values and object risks but were estimated separately, based on object reward histories and action reward histories. Specifically, regressors for action value and action risk were estimated analogously to those for object value and object risk as described in Equation 7 and Equation 8, based on filter weights derived from fitting the model in Equation 5 for action choice rather than object choice. Thus, for defining action risk, we calculated the variance of rewards that resulted from rightward and leftward saccades within the last ten trials, with coefficients from Equation 5 (calculated for actions) determining how strongly each trial was weighted in the variance calculation. A neuronal response was classified as coding action risk if it had a significant regressor for ActionRiskL or ActionRiskR.
+$$
+y= \beta_{0}+ \beta_{1}ObjectChoice + \beta_{2}CuePosition + \beta_{3}Action + \beta_{4}ObjectValueA + \beta_{5}ObjectValueB +\beta_{6}ObjectRiskA + \beta_{7}ObjectRiskB + \beta_{8}LastReward + \beta_{9}LastChoice +\beta_{10}LastReward \times LastChoice+ \beta_{11}LastReward2 + \beta_{12}LastChoice2 +\beta_{13}LastReward2 \times LastChoice2+ \epsilon
+$$
 
-## Step-wise regression model for testing coding of object risk and action risk
+#### Step-wise regression model for testing coding of objective and subjective object risk
 
-We used this stepwise regression as an addition analysis to test for object-risk coding and action-risk coding when these variables directly competed to explain variance in neuronal responses. The following variables were included as regressors in the starting set (Equation 15):(15)y= β0+ β1ObjectChoice + β2CuePosition + β3Action + β4ObjectValueA + β5ObjectValueB +β6ObjectRiskA + β7ObjectRiskB + β8ActionValueL + β9ActionValueR +β10ActionRiskL + β11ActionRiskR+ ε
+We used this stepwise regression as an additional analysis to test for object-risk coding and action-risk coding when these variables directly competed to explain variance in neuronal responses. Note that the objective, true probabilities used for the analysis were not the base probabilities but the trial-specific probabilities that evolved trial-by-trial from the baseline probabilities according to Equation 1. The following variables were included as regressors in the starting set (Equation 13):
 
-## Sliding window regression analysis
+$$
+y= \beta_{0}+ \beta_{1}ObjectChoice + \beta_{2}CuePosition + \beta_{3}Action + \beta_{4}ObjectValueA + \beta_{5}ObjectValueB +\beta_{6}ObjectRiskA + \beta_{7}ObjectRiskB + \beta_{8}TrueProbA + \beta_{9}TrueProbB +\beta_{10}TrueRiskA + \beta_{11}TrueRiskB + \epsilon
+$$
+
+#### Subjective risk for actions
+
+To test for encoding of action risk, we used the following multiple regression model (Equation 14):
+
+$$
+y= \beta_{0}+ \beta_{1}ObjectChoice + \beta_{2}CuePosition+ \beta_{3}Action+ \beta_{4}ActionValueL+ \beta_{5}ActionValueR +\beta_{6}ActionRiskL + \beta_{7}ActionRiskR+ \epsilon
+$$
+
+with y as trial-by-trial neuronal impulse rate, ActionValueL as current-trial value of a leftward saccade, ActionValueR as current-trial value of a rightward saccade, ActionRiskL as current-trial risk of a leftward saccade, ActionRiskR as current-trial risk of a rightward saccade (all other variables as defined above). Note that subjective action values and action risks were not simply spatially referenced object values and object risks but were estimated separately, based on object reward histories and action reward histories. Specifically, regressors for action value and action risk were estimated analogously to those for object value and object risk as described in Equation 7 and Equation 8, based on filter weights derived from fitting the model in Equation 5 for action choice rather than object choice. Thus, for defining action risk, we calculated the variance of rewards that resulted from rightward and leftward saccades within the last ten trials, with coefficients from Equation 5 (calculated for actions) determining how strongly each trial was weighted in the variance calculation. A neuronal response was classified as coding action risk if it had a significant regressor for ActionRiskL or ActionRiskR.
+
+#### Step-wise regression model for testing coding of object risk and action risk
+
+We used this stepwise regression as an addition analysis to test for object-risk coding and action-risk coding when these variables directly competed to explain variance in neuronal responses. The following variables were included as regressors in the starting set (Equation 15):
+
+$$
+y= \beta_{0}+ \beta_{1}ObjectChoice + \beta_{2}CuePosition + \beta_{3}Action + \beta_{4}ObjectValueA + \beta_{5}ObjectValueB +\beta_{6}ObjectRiskA + \beta_{7}ObjectRiskB + \beta_{8}ActionValueL + \beta_{9}ActionValueR +\beta_{10}ActionRiskL + \beta_{11}ActionRiskR+ \epsilon
+$$
+
+#### Sliding window regression analysis
 
 We used additional sliding window multiple regression analyses (using the regression model in Equation 11) with a 200 ms window that we moved in steps of 25 ms across each trial. To determine whether neuronal activity was significantly related to a given variable we used a bootstrap approach based on shuffled data as follows. For each neuron, we performed the sliding window regression 1000 times on trial-shuffled data and determined a false positive rate by counting the number of consecutive windows in which a regression was significant with p<0.05. We found that less than five per cent of neurons with trial-shuffled data showed more than six consecutive significant analysis windows. In other words, we used the shuffled data to obtain the percentage of neurons with at least one case of six consecutively significant windows. Therefore, we counted a sliding window analysis as significant if a neuron showed a significant (p<0.05) effect for more than six consecutive windows.
 
-## Normalization of population activity
+#### Normalization of population activity
 
 We subtracted from the measured impulse rate in a given task period the mean impulse rate of the control period and divided by the standard deviation of the control period (z-score normalization). Next, we distinguished neurons that showed a positive relationship to object value and those with a negative relationship, based on the sign of the regression coefficient, and sign-corrected responses with a negative relationship. Normalized activity was used for all population decoding analyses and for Figure 4E,F and Figure 5E,F.
 
-## Normalization of regression coefficients
+#### Normalization of regression coefficients
 
 Standardized regression coefficients were defined as xi(si/sy), xi being the raw slope coefficient for regressor i, and si and sy the standard deviations of independent variable i and the dependent variable, respectively. These coefficients were used for Figure 2B,C, Figure 3E, Figure 4B,C, Figure 5B,C, Figure 6C, Figure 7H, Figure 7—figure supplement 2B,C.
 
-## Population decoding
+#### Population decoding
 
 We used support vector machine (SVM) and nearest-neighbor (NN) classifiers to quantify the information contained in DLPFC population activity in defined task periods. This method determines how accurately our main variables object risk and action risk were encoded by groups of DLPFC neurons. The SVM classifier was trained on a set of training data to find a linear hyperplane that provides the best separation between two patterns of neuronal population activity defined by a grouping variable (e.g. high vs. low object risk). Decoding was typically not improved by non-linear (e.g. quadratic) kernels. Both SVM and NN classification are biologically plausible in that a downstream neuron could perform similar classification by comparing the input on a given trial with a stored vector of synaptic weights. Both classifiers performed qualitatively similar, although SVM decoding was typically more accurate. We therefore focused our main results on SVM decoding.
 

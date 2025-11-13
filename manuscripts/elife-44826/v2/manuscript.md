@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.44826.001 Starting a new research campus is a leap of faith. Only later, in the full measure of time, is it possible to take stock of what has worked and what could have been done better or differently. The Janelia Research Campus opened its doors 12 years ago. What has it achieved? What has it taught us? And where does Janelia go from here?
+Starting a new research campus is a leap of faith. Only later, in the full measure of time, is it possible to take stock of what has worked and what could have been done better or differently. The Janelia Research Campus opened its doors 12 years ago. What has it achieved? What has it taught us? And where does Janelia go from here?
 
 ## Looking back
 
@@ -32,7 +32,7 @@ Only after these core cultural characteristics were firmly embedded in the plan 
 
 Of course, the fields of neuroscience and microscopy were around long before Janelia opened its doors. Yet, over 12 years, Janelia has created new opportunities and research directions in both of these areas. We believe this success stems not only from our choice of research problems, but also from the creation of a unique scientific culture that rewards interdisciplinary and collaborative work, and is supported by talent development and appointment structures different from those found in academic research programs.
 
-## Janelia’s scientific culture
+### Janelia’s scientific culture
 
 We see the following operational and philosophical features as central to Janelia’s scientific culture and, collectively, they distinguish Janelia from other research institutions:
 
@@ -52,7 +52,7 @@ vii) Forming project teams – groups of dedicated scientists that take researc
 
 viii) Insulating Janelia from the dominant academic culture through geographical separation, while mitigating the negative affects of isolation through conference and visitor programs.
 
-## Janelia’s talent development and appointment structures
+### Janelia’s talent development and appointment structures
 
 The group leader position at Janelia was envisioned as a distinct alternative to an academic faculty position. From its inception, Janelia sought to recruit both early career scientists under a term-limited contract and more senior investigators with renewable positions. We knew that Janelia’s operational philosophy, career structure, and chosen research foci might only appeal to a small subset of scientists. But we were pleasantly surprised by the strength of its appeal to that subset.
 
@@ -62,7 +62,7 @@ Of the 190 individuals who currently work in the 41 laboratories headed by group
 
 Janelia has placed an emphasis on establishing a highly supportive environment for work-life balance for early career scientists. We provide on-site child and infant care (with no wait-list), a range of on-campus housing, and release from grant writing, teaching, and committee work. Highly efficient administrative and operational support serves to minimize other time sinks.
 
-## Lessons learned
+### Lessons learned
 
 We learned that granting tenure is not required to recruit excellent scientists; many of our recruits gave up academic tenure to join us. It was also possible to identify individuals for whom postdoctoral training was not required for success in leading a research effort. However, our experience was that such individuals rarely self-nominate, so it required proactive recruiting to identify them.
 
@@ -76,7 +76,7 @@ And has Janelia provided a good return on investment? From the perspective of HH
 
 Based on what we have learned over the past 12 years, we are making three major changes to help Janelia remain a vibrant, distinctive force for scientific progress. First, we are introducing defined 15-year terms for areas of research focus. To allow the scheduled introduction of a new research area every five years, we plan to expand the size of Janelia’s research program to add a third research area. Second, we will choose future research areas by open competition to allow broad input from the scientific community. Third, we will place a greater emphasis on hiring group leaders at a very early career stage to empower the next generation of scientific leaders. These changes are described in more detail below.
 
-## A defined term for research areas
+### A defined term for research areas
 
 The path of least resistance for Janelia would be simply to seek to maintain our established leadership position in our two original research areas of circuit neuroscience and imaging. But we believe this would not be ambitious enough to justify HHMI’s continued investment in Janelia. Rather, we believe Janelia’s greatest opportunity for future impact will come from supporting the early development of new emerging fields. Therefore, we are seeking to identify high impact research areas that are difficult to pursue in other environments, much as circuit neuroscience and optical imaging were when we selected them in 2004.
 
@@ -92,7 +92,7 @@ The first of the new areas, Mechanistic Cognitive Neuroscience, is being establi
 
 **Figure 2.:** The first new research area, Mechanistic Cognitive Neuroscience, will address the question "How does the brain enable cognition?" The scientists establishing this area have been selected from current Janelia group leaders working on several model organisms. Additional group leaders are now being recruited. The second research area will be selected after an open, international competition in 2019/2020. We expect a third research area to be selected similarly in 2024/2025. Thus, at steady state, Janelia will have three research areas, with one turning over every five years. The addition of a third research area would represent an expansion of Janelia’s current size and increase the number of group leaders from roughly 45 to 60.
 
-## Modeling an alternative career path for early career scientists
+### Modeling an alternative career path for early career scientists
 
 Janelia seeks to catapult the careers of scientists. Going forward, we anticipate placing an even greater emphasis on identifying, recruiting and supporting group leaders who have the intellect, scientific creativity, and maturity to flourish independently without the need for traditional, lengthy postdoctoral training. The terms and conditions of group leader positions are aligned with these objectives (Figure 3). It is our hope that these scientists will provide an inspirational presence at Janelia, shaping the culture and progress of science in unique ways through a combination of confidence, willingness to take risks, and disinterest in traditional disciplinary boundaries. We are encouraged by the success of the 20% of group leaders who were recruited by Janelia directly after graduate training. We are also optimistic that proactively identifying individuals earlier in their careers, before many women and other underrepresented groups have abandoned careers in research, will help us tap into a more diverse applicant pool. In addition, Janelia has hired individuals from industry as well as "brilliant misfits" – scientists with non-traditional backgrounds who would be unlikely to thrive as university faculty – and seen them flourish at Janelia; we will continue to welcome such unusual individuals and provide them with an opportunity to contribute to the basic research enterprise.
 
@@ -106,7 +106,7 @@ To address these issues, Janelia has sought to align individual and institutiona
 
 Janelia also provides well-compensated, long-term career research positions for individuals who are not group leaders; however, no HHMI position at any level is permanent or tenured. It has been widely noted (see, for example, Alberts et al., 2014) that the number of faculty positions available is insufficient to provide meaningful careers in basic research for the large number of talented individuals in training. Nor do all trainees wish to take on the non-research duties required of principal investigators. The number of such career staff scientist positions at Janelia far exceeds the number of group leaders – three-quarters of those involved in research with six-figure salaries are not group leaders – and these individuals provide important expertise and continuity in our laboratories, project teams and shared resources. Moreover, their career structure rewards them for participating in collaborative, high-risk, and long-term projects that are less suited for graduate students and postdoctoral fellows.
 
-## Continued support for tool-builders and theorists
+### Continued support for tool-builders and theorists
 
 The other major areas of scientific activity at Janelia are, and will continue to be, tool-building (https://www.janelia.org/news/tools-of-the-trade-q-and-a-with-luke-lavis) and computation and theory (https://www.janelia.org/news/digging-into-data-qa-with-kristin-branson). We expect these activities to evolve on a less defined timeline than the problem-focused research areas. Janelia’s distinctive support of independent, expert tool-builders has allowed the development of broadly useful tools applicable to nearly any research area we might target (new light and electron microscopic imaging technologies; computational methods in machine learning, data analysis, and modeling; and new chemical and biological reagents). For example, the new microscopes, fluorescent dyes, and sensors developed at Janelia are now used in thousands of laboratories worldwide, not only to conduct research in neurobiology, but also in developmental biology, cancer, infectious disease, immunology, and cell biology.
 

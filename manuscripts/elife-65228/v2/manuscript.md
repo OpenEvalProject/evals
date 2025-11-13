@@ -31,31 +31,83 @@ Taking an unbiased approach to the identification of the cellular and molecular 
 
 ## Results
 
-## Characterization of transcriptional dynamics in the reward circuitry during the development of behavioral sensitization to cocaine
+### Characterization of transcriptional dynamics in the reward circuitry during the development of behavioral sensitization to cocaine
 
 In order to characterize brain-wide gene expression programs corresponding to the development of psychostimulant sensitization, we exposed mice to cocaine (20 mg/kg, i.p.) acutely, or repeatedly (five daily exposures), as well as to a cocaine challenge (acute exposure following 21 days of abstinence from repeated exposure to cocaine) (Figure 1A). We then profiled transcription (applying 3′-RNA-seq) within key brain structures of the reward circuitry (limbic cortex = LCtx, nucleus accumbens = NAc, dorsal striatum = DS, amygdala = Amy, lateral hypothalamus = LH; see Figure 1—figure supplement 1 for the delineation of brain tissue dissected; Supplementary file 1 and Figure 1—figure supplement 2 for a description of the samples sequenced) at 0 (not exposed to cocaine on day of sample collection), 1, 2 or 4 hr post-cocaine exposure (Figure 1A). Mice exhibited increased locomotion upon acute exposure to cocaine, further increasing following repeated exposure and maintained after abstinence and challenge re-exposure, typical of locomotor sensitization to this intermediate cocaine dose (Figure 1B, F8,312 = 178.9, p<0.0001, ANOVA).
 
-## Repeated cocaine administration and abstinence induce prominent transcriptional shifts across multiple brain regions
+![Figure 1.](https://cdn.elifesciences.org/articles/65228/elife-65228-fig1-v2.jpg)
+
+**Figure 1.:** (A) Scheme describing the cocaine sensitization paradigm and time points (0, 1, 2, 4 hr) at which samples were obtained for analysis of gene expression following acute (0 = cocaine naïve); repeated (fifth exposure to cocaine; 0 = 24 hr following fourth exposure); and challenge exposures (acute exposure following 21 days of abstinence from repeated exposure; 0 = abstinent mice). (B) Locomotor sensitization to cocaine (20 mg/kg i.p.; days 1–3 n = 58; days 4 n = 51; day 8 n = 30; day 29 n = 15) of mice included in this study. (C) Baseline shifts in expression of genes associated with categories of neuroplasticity following repeated cocaine exposure and abstinence (see Figure 1—figure supplements 1 and 2 for description of sectioned regions and RNA-seq QC). Heatmap depicting fold change of differentially expressed genes (normalized to cocaine naive samples and Z-scored per gene), with rows corresponding to individual genes, clustered according to annotation of biological function on Gene Ontology (p<0.05 FDR corrected). Columns correspond to individual mice – naïve (=azure); repeated (=blue); challenge (=navy) cocaine; n = 6–8 samples in each group across brain structures (LCtx = limbic cortex, NAc = nucleus accumbens, DS = dorsal striatum, Amy = amygdala and LH = lateral hypothalamus). Genes were selected from analysis of a subset of samples which were sequenced together (Figure 1—figure supplement 3A) and plotted here across all available samples (for gene identity, see Figure 1—figure supplement 4). (D) Heatmaps depicting expression of inducible genes. Data was normalized to 0 hr of relevant cocaine experience, log-transformed, and clustered by peak expression (selected by FC > 1.2 and FDR corrected p<0.05, linear model followed by LRT, see Materials and methods). Columns correspond to individual mice (0, 1, 2, 4 hr following acute, repeated vs challenge cocaine; see adjacent key for color coding) across LCtx, NAc, DS and Amy. n = 2–4 samples for individual time points of a cocaine experience within a brain nucleus. (E) Dot plots represent the peak induction magnitude of genes induced in the LCtx, NAc, DS, and Amy following acute, repeated, and challenge cocaine. (F) Heatmap addressing the conservation of gene identity and peak induction time. Induced genes are color coded by their time point of peak induction (NI = not induced). (G) Venn diagrams represent overlap of the genes induced in each brain nuclei following different cocaine experiences (all: 1 and 2 and 4 hr; early: 1 hr; late: 2 hr and 4 hr time points). (H) DEGs induced within the DS are enriched for GO terms associated with signaling and transcription at 1 hr, diversifying to regulators of cellular function and plasticity at later times. Heatmap represents significantly enriched GO terms (p < 0.05, Bonferoni corrected), graded according to p-value.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65228/elife-65228-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Illustration of the brain tissue collected for RNA extraction and sequencing analysis. Red shaded boxes represent the area dissected from 400-micron coronal sections at specific rostral (+) or caudal (−) distances from Bregma (marked by the number). Left to right, brain regions include limbic cortex (medial prefrontal and cingulate cortex), nucleus accumbens, dorsal striatum, amygdala, and lateral hypothalamus.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65228/elife-65228-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Histograms of mean usable read depth of 3′-RNA-seq libraries. n = 194 libraries. (B) Principal component analysis (PCA) demonstrates clustering of RNA-seq libraries according to brain region, consistent with brain nuclei expressing distinct transcriptional profiles (Hawrylycz et al., 2012; Kang et al., 2011; Ortiz et al., 2020). Each dot represents individual libraries color coded by brain structure. n = 194 samples. (C) PCA of genes differentially expressed in the DS following acute, repeated, and challenge cocaine reveals clustering according to the time point of gene expression. Libraries of 1 hr time point are most distinct from the relevant control (0 hr) groups. Each dot represents a sample color coded according to its time point. n = 16 samples for each cocaine experience. These analyses indicate the robustness of transcriptional dynamics induced by cocaine and also provide an indication for the reproducibility of the experimental samples and the quality of the sequencing.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/65228/elife-65228-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Gene expression profiles of repeated cocaine treated and abstinent mice within different brain regions. Heatmaps reflect log2 (fold change) of genes demonstrating differential expression between 0 hr of acute (cocaine naïve), repeated, and challenge cocaine in different brain regions. Columns represent individual samples sorted by the cocaine experience and brain nuclei. Expression is graded according to the color bar. Differentially expressed genes (DEGs) were assayed from samples that were included in the same sequencing run in order to avoid the introduction of batch effects. n = 2 samples in each condition. (FC >1.2; FDR corrected p<0.05 in at least one of the conditions, Wald test – see Materials and methods) (B) Dot plots demonstrate the magnitude and direction of DEG expression shifts in different brain nuclei. Each dot represents a DEG. LCtx: limbic cortex, NAc: nucleus accumbens, DS: dorsal striatum, Amy: amygdala, LH: lateral hypothalamus. (C) The number of genes that exhibit shift in their baseline expression following repeated cocaine and abstinence. Bar graphs color coded by brain structure depict the number of DEGs in each structure. (D) KEGG pathway annotation of gene clusters whose expression is modulated by repeated drug exposure and abstinence. Heat map showing enriched pathways consisting of at least 6 DEGs in different brain nuclei. Color represents p-value.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/65228/elife-65228-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Heatmaps depict the expression levels of genes which are modulated between naïve mice and mice following repeated cocaine or abstinence in different brain regions clustered according to GO terms related to neuroplasticity (from Figure 1C). Columns represent individual mice. Expression is graded according to the color bar (Z-scored per gene). Cocaine experiences are color coded according to the key. LCtx = limbic cortex, NAc = nucleus accumbens, DS = dorsal striatum, Amy = amygdala, LH = lateral hypothalamus.
+
+### Repeated cocaine administration and abstinence induce prominent transcriptional shifts across multiple brain regions
 
 Experience impacts gene transcription at multiple timescales (Clayton et al., 2020; Mukherjee et al., 2018; Nestler and Lüscher, 2019; Rittschof and Hughes, 2018; Sinha et al., 2020; Yap and Greenberg, 2018). Whereas the expression of inducible genes peak and decay on a time scale of minutes-to-hours following stimulation, baseline shifts in brain-wide gene expression programs are also observed following more prolonged periods (days to weeks) (Clayton et al., 2020), presumably implementing, supporting, and maintaining the modified behavioral output (Sinha et al., 2020). We initially focused on baseline shifts in gene expression, comparing naïve mice (never exposed to cocaine) to mice exposed repeatedly to cocaine, as well as to mice following 21 days of abstinence from repeated cocaine exposure (Figure 1C; Figure 1—figure supplement 3A; refer to Supplementary file 2 for list of differentially expressed genes and normalized counts). Differentially expressed genes (DEGs) included both upregulated and downregulated genes across all brain regions analyzed, with prolonged abstinence driving the most extreme shifts in expression (Figure 1—figure supplement 3B,C). While gene-expression shifts following repeated exposure to cocaine were prominent in the DS, abstinence-induced changes were more prominent in the NAc and LCtx (Figure 1—figure supplement 3C). KEGG analysis demonstrated that DEGs were enriched for synaptic genes and disease pathways (Figure 1—figure supplement 3D). To provide insight into the cellular mechanisms affected by repeated drug exposure and abstinence, we implemented Gene Ontology (GO term) enrichment analysis (Figure 1C, Figure 1—figure supplement 4, see Supplementary file 3 for definition of clusters and DEGs included within them). Gene clusters associated with synaptic plasticity, myelin, and proteostasis demonstrated shifts in expression across multiple brain structures, whereas a cluster of genes associated with structural plasticity appeared more specific to striatal structures (DS and NAc). Noteworthy gene clusters that displayed modified expression were involved in cell–cell communication; glutamate-induced plasticity; synaptic vesicle formation, transport, and fusion; actin filament components; and projection morphogenesis. Notably, the expression of protein folding genes was coordinately upregulated across structures, while myelin components were coordinately downregulated (Figure 1—figure supplement 4). These results exemplify the dramatic shifts of transcription occurring in the brain in response to repeated cocaine exposure, potentially supporting maladaptive neuroplasticity driving drug addiction (Bannon et al., 2014; Lull et al., 2008).
 
-## Transcriptional profiling illustrates dynamic recruitment of the striatum during the development of behavioral sensitization to cocaine
+### Transcriptional profiling illustrates dynamic recruitment of the striatum during the development of behavioral sensitization to cocaine
 
 Inducible transcription supports the development of plastic changes following psychostimulant experience (Alberini, 2009; Han et al., 2019; McClung and Nestler, 2008; Nestler and Lüscher, 2019). We therefore assessed the inducible transcription response at 1, 2, or 4 hr following acute, repeated, or challenge cocaine exposure, observing robust IEG induction across all brain structures studied (Figure 1D). The largest number of induced genes, as well as the highest fold induction levels, were found in the DS (Figure 1D,E; refer to Supplementary file 4 for the identities of genes induced in each structure and cocaine condition).
 
 To what extent do the transcription programs induced in the different structures share common attributes? To query the overlap in the identity of genes induced and their temporal induction patterns following the different schedules of cocaine exposure, we graphed the induced genes, color coding them according to their time of peak induction (1, 2, or 4 hr following cocaine) (Figure 1F). Thus, for example, if a gene was commonly induced across structures with a peak at 1 hr across cocaine regimens, this would be evident as a contiguous vertical green line. This graph reveals aspects of the logic of these inducible transcription programs, whereby (1) genes induced following the different cocaine schedules largely maintain the same temporal structure, i.e., if the peak induction of a given gene was observed at a defined time point in one program, its peak induction time was maintained across other programs; (2) following repeated cocaine exposure, we observe a substantial dampening of the transcriptional response in the DS, which recovers following cocaine challenge, recapitulating a significant proportion of the acute cocaine gene program; (3) all gene programs largely represent subcomponents of the program induced by acute cocaine in the DS. We further visualized the overlap in the identity of genes induced in the different structures using Venn diagrams (Figure 1G), illustrating that the overlap stems principally from the immediate component of the transcriptional program (peaking at 1 hr following cocaine), while transcripts induced at 2 or 4 hr following cocaine diverged between structures. Focusing on the most robust programs, induced in the DS, we found that gene clusters enriched at the 1 hr time points are related primarily to transcriptional regulation and synapse-to-nucleus signal transduction, while clusters related to modification of neural morphology and function were enriched at later time points (Figure 1H; refer to Supplementary file 5). Taken together, these results highlight robust transcriptional adaptations in the DS, positioning it as a major hub of cocaine-induced plasticity. Furthermore, our results illustrate the utilization of a conserved set of genes during the early wave of transcription following experience, followed by divergence of subsequent transcription, possibly to support region-specific mechanisms of plasticity (Hrvatin et al., 2018; Walker et al., 2018).
 
-## IEG induction in subdomains of the DS is influenced by the history of cocaine exposure
+### IEG induction in subdomains of the DS is influenced by the history of cocaine exposure
 
 Our observation of dynamic transcriptional responses to repeated cocaine exposure in the DS (Figure 1) motivated us to address the cellular and spatial distribution of this transcriptional plasticity. Recently, using single-molecule fluorescence in-situ hybridization (smFISH), we reported region-specific rules governing the recruitment of striatal assemblies following a single acute exposure to cocaine (Gonzales et al., 2020). We now revisited this spatial analysis, applying smFISH to expand the investigation of the striatal distribution of the IEGs Arc, Egr2, Fos, and Nr4a1 throughout the development of cocaine sensitization (Figure 2; Figure 2—figure supplements 1 and 2; results from Gonzales et al., 2020 serve as a reference for the effects of acute cocaine exposure).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65228/elife-65228-fig2-v2.jpg)
+
+**Figure 2.:** (A) Scheme of a coronal section of the dorsal striatum (DS) (+0.52 ± 0.1 mm from Bregma) corresponding to the region assayed by multicolor smFISH for cocaine-induced IEG expression. (B) Representative images of multicolor smFISH analysis of Arc, Egr2, Nr4a1, and Fos expression following acute, repeated and challenge cocaine exposures (40× magnification). (C) Spatial IEG expression patterns in the DS. Representative images of multicolor smFISH analysis of Arc, Egr2, Nr4a1, and Fos expression. (D) Cocaine experiences induce distinct spatial patterns of IEG expression. Two-dimensional kernel density estimation was used to demarcate the regions with maximal density of high expressing cells for each IEG. Color code for probes: Arc – yellow, Egr2 – red, Nr4a1 – green, Fos – blue. The opacity of the demarcated areas corresponds to the mean puncta/cell expression. (E, F) Dot plots depicting the proportion of cells suprathreshold for Egr2+ and Fos+ (fraction; E), as well as cellular expression (puncta/cell; F) of Egr2+ and Fos+ in the ventrolateral (VLS) and medial (MS) striatum following acute, repeated, and challenge cocaine. *p<0.05, **p<0.005, ***p<0.0001, two-way ANOVA with post hoc Tukey’s test. Refer to Supplementary file 7 for cell numbers. See Figure 2—figure supplement 1 for corresponding analysis of Arc and Nr4a1. See Figure 2—figure supplement 2 for correlation in expression of Egr2, Arc, and Nr4a1, as well as Egr2 and Fos. Images relating to acute cocaine (in B, C, and D) were replicated from Gonzales et al., 2020, with permission.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65228/elife-65228-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Dot plot of the fraction of cells positive for expression of Arc and Nr4a1 in the VLS and MS (threshold: Arc = 11, Nr4a1 = 12 puncta/cell) following acute, repeated, and challenge cocaine exposures. n = 3 sections from three mice (8823–12,246 cells). ANOVA with post hoc Tukey; *p<0.05, **p<0.005. (B) Dot plot of the puncta/cell for Arc and Nr4a1 following acute, repeated, and challenge cocaine exposures. n = 3 sections from three mice (8823–12,246 cells). ANOVA with post hoc Tukey; *p<0.05, **p<0.005, ***p<0.005.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65228/elife-65228-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Arc, Egr2, and Nr4a1 are coherently induced in cells of the VLS and MS. Coherence refers to the correlated co-expression of multiple IEGs within individual cells. Each dot depicts the expression [log2 (puncta per cell + 1)] of Arc, Egr2, and Nr4a1 within a single cell. The plots are color coded by Egr2 expression according to the color bar. Data summarized from n = 3 animals in each condition. Analysis using a linear model with Egr2 expression as the dependent variable and Arc and Nr4a1 expression as the independent variables demonstrated significant correlation between the genes (p<0.0001 for all conditions; 6850–16,952 cells). (B) Egr2 and Fos expression are strongly and positively correlated in the VLS and MS. Individual dots depict pairwise correlations of Egr2 and Fos within single cells. n = 6 sections from three mice in each condition (Pearson correlation, p<0.0001 for all conditions; 17,734–33,195 cells).
+
 Addressing an overview of induced expression of these IEGs, we observed robust induction of Arc, Egr2, Nr4a1, and Fos following acute cocaine exposure, which was dampened following repeated exposure to cocaine and reinstated following a challenge dose of cocaine, in-line with the results described in Figure 1 (Figure 2A–C). To visualize the subdomains defined by IEG expressing cells, we applied 2D kernel density estimation on striatal sections following repeated and challenge cocaine and compared resulting patterns to those previously described following acute cocaine exposure (Gonzales et al., 2020). The prominent recruitment of IEG expression in the VLS observed following acute cocaine exposure was dampened drastically after repeated cocaine exposure, and re-emerged upon cocaine challenge. In contrast to the findings in the VLS, dampening of IEG induction in the MS, while evident, was more modest (Figure 2D). These results are quantified in Figure 2E,F. In the VLS, the fraction of robustly expressing cells of Egr2 increased to 46 ± 10% after acute cocaine, decreased to 21 ± 4% following repeated cocaine, and subsequently increased to 40 ± 11% upon cocaine challenge. Similar dynamics were observed for Fos, where the fractions of suprathreshold cells were observed to be 37 ± 10%, 21 ± 4%, and 34 ± 7% following acute, repeated, and challenge cocaine, respectively. In contrast, in the MS, the fraction of cells expressing Egr2 and Fos increased to 42 ± 8% and 40 ± 7% after acute cocaine, modestly decreased to 33 ± 3% and 35 ± 3% after repeated cocaine, and regained elevated induction of 43 ± 4% and 40 ± 4% following challenge cocaine (Figure 2E [mean ± SD]; Egr2 VLS F2,66 = 21.4, p<0.0001; Fos VLS F2,30 = 4.9964, p=0.01; Egr2 MS F2,66 = 6.4, p=0.002; Fos MS F2,30 = 3.1, p=0.06; ANOVA followed by Tukey’s test; for detailed statistics refer to Supplementary file 6). With reference to expression levels, acute, repeated, and challenge cocaine-mediated puncta/cell expression in the VLS was observed to be 11.9 ± 3.8, 3.9 ± 0.8, 9.5 ± 3.4 for Egr2 and 6.8 ± 2.3, 3.5 ± 0.5, 5.9 ± 1.6 for Fos, respectively. Comparing these to the MS, the expression levels were observed to be 9.2 ± 2.2, 6.5 ± 1.0, and 9.5 ± 1.2 for Egr2 and 7.4 ± 1.5, 6 ± 0.8, and 7.5 ± 1.3 for Fos after acute, repeated, and challenge, respectively (Figure 2F) (mean ± SD; Egr2 VLS F2,66 = 21.7, p<0.0001; Fos VLS F2,30 = 4.9, p=0.01; Egr2 MS F2,66 = 9.01, p=0.0003; Fos MS F2,30 = 3.4, p=0.04; ANOVA followed by Tukey’s test; for detailed statistics refer to Supplementary file 6). A similar trend was evident for the expression of Arc and Nr4a1 in the VLS vs. the MS (Figure 2—figure supplement 1A,B). Notably, the expression of different IEGs was highly correlated within individual cells, defining overlapping populations of neurons responsive to the cocaine experiences studied. Once recruited by cocaine, neurons committed to co-expression of multiple IEGs to virtually identical levels (Figure 2—figure supplement 2; for detailed statistics, see Supplementary file 6). These data demonstrate the coherent co-expression of multiple IEGs within striatal assemblies during the development of behavioral sensitization to cocaine, likely to support mechanisms of long-term plasticity within these ensembles. In sum, the history of cocaine experience is reflected in the differential transcriptional recruitment of striatal subdomains, dampening drastically in the VLS following repeated exposure.
 
-## The IEG response is selectively dampened in VLS Drd1+ SPNs following repeated cocaine
+### The IEG response is selectively dampened in VLS Drd1+ SPNs following repeated cocaine
 
 Striatal Drd1+-neurons are implicated in promoting actions, while Drd2+-neurons are implicated in the tempering and refinement of action selection (Bariselli et al., 2019). Differential IEG induction in Drd1+ vs Drd2+ expressing SPN ensembles is expected to shed light on the relative contribution of plasticity within each cell type to the development of cocaine behaviors. We have previously reported that acute exposure to cocaine induces Egr2 expression in both Drd1+ and Drd2+ neurons in the MS, while more selectively inducing Egr2 expression in Drd1+-neurons in the VLS (Gonzales et al., 2020). Extending this analysis to repeated and challenge cocaine exposures and with additional IEGs, we observed robust dampening of the induction of Egr2 and Fos in VLS Drd1+ neurons following repeated exposure to cocaine, while upon cocaine challenge, prominent induction was again evident, especially in Drd1 SPNs. (Figure 3A–C, Figure 3—figure supplement 1). In contrast, in the MS, subtle dampening was observed and Egr2 and Fos expression maintained consistent correlation to Drd1 and Drd2 expression throughout acute, repeated, and challenge cocaine exposures (Figure 3C, Figure 3—figure supplement 1; for reference of Drd1 and Drd2 levels in MS and VLS, see Figure 3—figure supplement 2, Supplementary file 6 for statistics). Thus, the observed attenuated transcriptional recruitment in the DS can be attributed to selective dampening of IEG induction, primarily within VLS Drd1+ neurons. This specialization in transcriptional plasticity likely underlies differential roles of the striatal subregions and cells within them in supporting behavioral modification induced by cocaine experience.
 
-## Implication of VLS Egr2 transcriptional activity in the development of cocaine-seeking behavior
+![Figure 3.](https://cdn.elifesciences.org/articles/65228/elife-65228-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative 40× images showing Egr2 expression within Drd1+ and Drd2+ SPNs in the VLS (left) and MS (right) following acute, repeated, and challenge cocaine exposures compared to controls. (B, C) The Drd1+ enriched IEG response in the VLS is dampened following repeated exposure to cocaine. (B) Scatter plots show cellular Egr2 expression with Drd1 or Drd2 expression (puncta/cell) within individual cells. n = 6 sections from three mice for each condition (gray – 0 hr for either Drd1 or Drd2 combination, and blue or red – for Drd1 or Drd2 combination, respectively, 1 hr following cocaine experience). (Drd1-Egr2: acute control, slope = 0.028, r2 = 0.038; acute cocaine, slope = 0.65, r2 = 0.50; repeated control, slope = 0.019, r2 = 0.02; repeated cocaine, slope = 0.11, r2 = 0.1; challenge control, slope = 0.048, r2 = 0.05; challenge cocaine, slope = 0.51, r2 = 0.4. Drd2-Egr2: acute control, slope = 0.029, r2 = 0.040; acute cocaine, slope = −0.036, r2 = 0.0017; repeated control, slope = 0.03, r2 = 0.069; repeated cocaine, slope = 0.06, r2 = 0.03; challenge control, slope = 0.07, r2 = 0.1; challenge cocaine, slope = −0.048, r2 = 0.004. Pearson correlation, p<0.0001 for all conditions; refer to Supplementary file 6 for detailed statistics). (C) Spearman correlation plots showing acute induction of Egr2 is correlated with Drd1 expression in the VLS, dampened following repeated exposure and re-emerges following challenge exposure. In the MS, Egr2 expression is consistently correlated to both Drd1 and Drd2 expression following acute, repeated, and challenge exposures. Refer to Figure 3—figure supplement 1 for additional correlations and Figure 3—figure supplement 2 for reference to Drd1 and Drd2 expression levels throughout the study. (D) Scheme of experimental paradigms for testing conditioned-place preference (CPP) for cocaine. Mice were tested (cyan) for initial preference (‘Tini’) followed by either three interleaved pairs of conditioning (yellow) – test days (‘Design 1’, relevant for panel E) – or three consecutive conditioning days and then a final preference test (‘Design 2’, relevant for F–I). (E) Chemogenetic inhibition of VLS-Egr2 expressing neurons impairs cocaine CPP. Egr2-CRE animals were transduced with AAV-DIO-hM4Di-mCherry and, following 3 weeks of recovery, subjected to a paradigm of cocaine CPP in which the preference of mice was tested repeatedly following individual training days (‘Design 1’; conditioning – days 2, 4, 6; tests – days 1, 3, 4, 7). The control group of mice was exposed to saline while experimental mice received CNO (5 mg/kg) 30 min prior to cocaine conditioning. Left – Line graphs representing % time spent on the cocaine paired side in individual preference test session (T1, T2, T3) compared to the initial preference (initial preference test; Tini). n = 6 mice in each group. *p<0.05, **p<0.01, ***p<0.005; paired t-test. Right – Bar graphs displaying the mean preference score (time spent on the drug paired side for relevant test session – initial test day). Significant difference in preference score is observed after three rounds of conditioning with cocaine n = 6 mice in each group. *p<0.05, **p<0.01, ***p<0.005; paired t-test. Data represented as mean ± sem. (F) Summary of expression domains of AAV-DIO-h4MDi in Egr2-CRE mice. (G) Chemogenetic inhibition of VLS-Egr2 expressing neurons during conditioning attenuates the development of cocaine CPP. Egr2-CRE animals were stereotactically transduced with AAV-DIO-mCherry (VLS-Egr2mCherry) or AAV-DIO-hM4Di-mCherry (VLS-Egr2hM4Di), and following recovery, all mice were subjected to cocaine CPP conditioning 30 min following exposure to CNO (10 mg/kg). Left panel represents change in % time spent on the cocaine paired side before and after conditioning for individual animals and the mean (paired t-test), while right panel (bar graphs) displays the mean preference score (time spent on the drug paired side of the final – first test day; unpaired t-test). Both groups developed CPP (paired t-test), while VLS-Egr2hM4Di mice displayed a lower preference score compared to VLS-Egr2mCherry controls (unpaired t-test). n = 7 mice in each group. *p<0.05, **p<0.01, ***p<0.005. For further documentation of expression domains and locomotion, see Figure 3—figure supplement 3. (H) Summary of expression domains of AAV-DN-Egr2. (I) Disruption of Egr2 function in the VLS inhibits the development of cocaine place preference. Left panel represents change in % time spent on the cocaine paired side before and after conditioning for individual animals and the mean, while bar graphs (right panel) display the mean preference score. Both groups developed CPP (paired t-test), while mice expressing AAV-DNEgr2 displayed a lower preference score compared to AAV-GFP controls (unpaired t-test). n = 8 mice in each group. *p<0.05, **p<0.01, ***p<0.005. For further documentation of expression domains, locomotion, and gene expression, see Figure 3—figure supplement 4. Images relating to acute cocaine (in A) were replicated from Gonzales et al., 2020, with permission.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65228/elife-65228-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Egr2 induction in the MS does not exhibit prominent cell-type bias and is modestly affected by the history of cocaine experience. Scatter plots show cellular Egr2 expression with Drd1 or Drd2 expression (puncta/cell) within individual cells. n = 6 sections from three mice for each condition (gray dots represent cells from 0 hr for either Drd1 or Drd2 combination, and blue or red dots for Drd1 or Drd2 combination, respectively, 1 hr following cocaine experience). Egr2-D1: acute control, slope = 0.09, r2 = 0.069; acute cocaine, slope = 0.41, r2 = 0.24; repeated control, slope = 0.04, r2 = 0.03; repeated cocaine, slope = 0.19, r2 = 0.1; hallenge control, slope = 0.05, r2 = 0.045; hallenge cocaine, slope = 0.42, r2 = 0.2. Egr2-D2: acute control, slope = 0.08, r2 = 0.05; acute cocaine, slope = 0.19, r2 = 0.052; repeated control, slope = 0.06, r2 = 0.09; repeated cocaine, slope = 0.19, r2 = 0.10; challenge control, slope = 0.07, r2 = 0.076; challenge cocaine, slope = 0.18, r2 = 0.046. Linear model, p<0.0001 for conditions, refer to Supplementary file 6 for detailed statistics. (B) Scatter plots of cellular expression (puncta/cell) of Fos with Drd1 or Drd2 in the VLS and MS. VLS-Fos induction following acute and challenge cocaine is biased to Drd1+ neurons. In the MS, irrespective of the cocaine experience, Fos induction is correlated with a similar degree with both Drd1+ and Drd2+. Each dot represents a cell color coded similar to (A). n = 6 sections from three mice for each condition. Fos-D1 in VLS: acute control, slope = 0.03, r2 = 0.02; acute cocaine, slope = 0.33, r2 = 0.32; repeated control, slope = 0.02, r2 = 0.03; repeated cocaine, slope = 0.09, r2 = 0.06; challenge control, slope = 0.05, r2 = 0.07; challenge cocaine, slope = 0.42, r2 = 0.2. Fos-D2 in the VLS: acute control, slope = 0.03, r2 = 0.02; acute cocaine, slope = −0.03, r2 = 0; repeated control, slope = 0.02, r2 = 0.02; repeated cocaine, slope = 0.02, r2 = 0; challenge control, slope = 0.03, r2 = 0.05; challenge cocaine, slope = −0.03, r2 = 0. Fos-D1 in the MS: acute control, slope = 0.09, r2 = 0.03; acute cocaine, slope = 0.23, r2 = 0.11; repeated control, slope = 0.03, r2 = 0.02; repeated cocaine, slope = 0.16, r2 = 0.08; challenge control, slope = 0.04, r2 = 0.03; challenge cocaine, slope = 0.26, r2 = 0.13. Fos-D2 in the MS: acute control, slope = 0.08, r2 = 0.03; acute cocaine, slope = 0.12, r2 = 0.03; repeated control, slope = 0.04, r2 = 0.04; repeated cocaine, slope = 0.09, r2 = 0.03; challenge control, slope = 0.04, r2 = 0.04; challenge cocaine, slope = 0.12, r2 = 0.03. Linear model, p<0.0001 for conditions, refer to Supplementary file 6 for detailed statistics. (C) Line graphs depicting spearman correlation show specific and dramatic improvement of Fos correlation with Drd1 and not Drd2 expression upon acute cocaine exposure in the VLS, dampened following repeated exposure and re-emerging upon cocaine challenge. In the MS, Fos expression is consistently correlated to both Drd1 and Drd2 expression irrespective of the cocaine experience, with a modest bias towards Drd1+ neurons. (D) Cumulative bar graphs illustrating the % of Drd1+/Drd2+/Drd1+Drd2+ neurons expressing Egr2+ at different time points during the development of behavioral sensitization to cocaine.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65228/elife-65228-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Dot plots depicting the fraction of Drd1 vs Drd2 expressing cells in the VLS and MS in control (gray) and cocaine (red) conditions following distinct cocaine experiences. n = 6 sections from three mice in each condition. (B) Dot plots depicting puncta/cell expression of Drd1 and Drd2 following distinct cocaine experiences. Color code as in (A). n = 6 sections from three mice in each condition.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/65228/elife-65228-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A, B) Verification of AAV transduction in the VLS of transgenic Egr2-CRE mice tested in experiment depicted in Figure 3F-G. Example of AAV-DIO-hM4Di-mcherry infections in the VLS (A) and summary of AAV-DIO-mCherry and AAV-DIO-hM4Di-mcherry infections (B). Span of viral transduction in individual mice was manually overlaid on corresponding coronal sections from the mouse brain atlas. n = 7 mice in each group. (C) Expression of AAV-DIO-hM4Di does not affect locomotor behavior (p=0.93, ANOVA for interaction day with group, see Supplementary file 6 for stats). Bar graphs compare the locomotion of VLS-Egr2mCherry and VLS-Egr2hM4Di mice in the CPP chambers on pre-test, conditioning session with cocaine, and post-test days. CNO (10 mg/kg, i.p.) was administered to both groups 30 min prior to cocaine conditioning. n = 7 mice in each group. Data represented as mean ± sem.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/65228/elife-65228-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A, B) Verification of AAV-GFP and AAV-DNEgr2 infection in the VLS. Example of AAV-DNEgr2 infection in the VLS (A). (B) Summary of infection from individual mice of VLSDNEgr2 and VLSGFP groups manually overlaid onto corresponding coronal sections from the mouse brain atlas. n = 8 mice in each group. (C) DN-Egr2 expression does not affect locomotor behavior (p=0.7, ANOVA for interaction day with group, see Supplementary file 6). Bar graphs compare the average locomotion of VLSGFP and VLSDNEgr2 mice in the CPP chambers on pretest, conditioning session with cocaine, and post-test days. n = 8 mice in each group. Data represented as mean ± sem. (D-G) Comparison of gene expression in mice injected with AAV-GFP (gray) or AAV-DN-Egr2 (orange) 24 hr after the final CPP test. (D, E) AAV-DN-Egr2 inhibits Nr4a1 and Arc expression in the VLS (D), but not in the MS (E). (F, G) Viral transduction of AAV-DNEgr2 in the VLS does not impact gene transcription in LCtx (F) and NAc (G). Bar graphs represent expression of Arc, Nr4a1, and Egr2 in LCtx and NAc of VLSGFP (gray) and VLSDNEgr2 (orange) mice. n = 3 mice in each group. Data represented as mean ± sem. *p<0.05, **p<0.005 unpaired t-test, n = 3 mice in each group.
+
+### Implication of VLS Egr2 transcriptional activity in the development of cocaine-seeking behavior
 
 The greater enrichment of Egr2 induction within VLS neurons suggests a causal role for this neuronal population in supporting cocaine conditioned behaviors. To address the role of VLS Egr2+ neurons in cocaine seeking, we bilaterally injected Cre-dependent inhibitory hM4Di DREADD (VLS-Egr2hM4Di), targeting the VLS of Egr2-Cre knock-in mice. In these mice, an Egr2 allele is substituted for Cre (Voiculescu et al., 2000), supporting the expression of Cre recombinase in neurons expressing Egr2. DREADD hM4Di-mediated selective inhibition of the VLS Egr2-expressing neuronal ensembles was achieved by administration of clozapine-N-oxide (CNO) (Atlan et al., 2018; Terem et al., 2020). Control mice were either transduced with viruses expressing hM4Di, similar to the experimental group, and exposed to saline (Figure 3E) or transduced with viruses conditionally expressing mCherry and exposed to CNO (Figure 3G, for expression domains, see Figure 3F, Figure 3—figure supplement 3A,B).
 
@@ -85,79 +137,536 @@ In conclusion, our study provides (1) a comprehensive description of brain-wide 
 
 ## Materials and methods
 
-## Lead contact and materials availability
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Wild-type C57BL/6OLAHSD mice</td>
+      <td>The Harlan Laboratory</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Egr2-Cre knock in mice</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# 025744 RRID: IMSR_JAX:025744</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-hSyn-DIO-hM4d(Gi)- mCherry</td>
+      <td>Addgene</td>
+      <td>Cat# 44362-AAV2 RRID: Addgene_44362</td>
+      <td>1.15 dilution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-hSyn-DIO-mCherry</td>
+      <td>UNC vector core facility</td>
+      <td>N/A</td>
+      <td>1.15 dilution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAVdj-CMV-eGFP</td>
+      <td>ELSC vector core facility</td>
+      <td>N/A</td>
+      <td>1.15 dilution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAVdj-CAG-DNEgr2-IRES-GFP</td>
+      <td>ELSC vector core facility</td>
+      <td>N/A</td>
+      <td>1.15 dilution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid with dominant negative mutant Egr2 (S382R,D383Y)</td>
+      <td>Jeffrey Milbrant, Washington University</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine-N-oxide (CNO)</td>
+      <td>Sigma–Aldrich</td>
+      <td>Cat # C0832-5MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cocaine</td>
+      <td>Hadassah Hospital Pharmacy</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Fluorescent Multiplex Reagent Kit</td>
+      <td>Advanced Cell Diagnostics RNAscope</td>
+      <td>Cat # 320850</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NEBNext Ultra II Non-Directional RNA Second-Strand Synthesis Module</td>
+      <td>New England Biolabs</td>
+      <td>Cat # E6111L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>KAPA Hifi Hotstart ReadyMix</td>
+      <td>Roche</td>
+      <td>Cat # KK-KK2601-2 07958927001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>MinElute Gel Extraction Kit</td>
+      <td>Qiagen</td>
+      <td>Cat # 28604</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NEBNext Library Quant Kit for Illumina</td>
+      <td>New England Biolabs</td>
+      <td>Cat # E7630L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>High-sensitivity DNA kit</td>
+      <td>Agilent Technologies</td>
+      <td>Cat # 5067–4626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NextSeq 500 High Output V2 kits</td>
+      <td>Illumina</td>
+      <td>Cat # FC-404–2005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SMARTScribe Reverse Transcriptase</td>
+      <td>Takara</td>
+      <td>Cat # 639536</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (smFISH)</td>
+      <td>Probe-Mm-Drd1a-C2</td>
+      <td>Advanced Cell Diagnostics RNAscope</td>
+      <td>Cat # 406491-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (smFISH)</td>
+      <td>Probe-Mm-Drd1a-C3</td>
+      <td>Advanced Cell Diagnostics RNAscope</td>
+      <td>Cat # 406491-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (smFISH)</td>
+      <td>Probe-Mm-Drd2-C2</td>
+      <td>Advanced Cell Diagnostics RNAscope</td>
+      <td>Cat # 406501-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (smFISH)</td>
+      <td>Probe-Mm-Egr2</td>
+      <td>Advanced Cell Diagnostics RNAscope</td>
+      <td>Cat # 407871</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (smFISH)</td>
+      <td>Probe-Mm-Fos-C3</td>
+      <td>Advanced Cell Diagnostics RNAscope</td>
+      <td>Cat # 316921-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (smFISH)</td>
+      <td>Probe-Mm-Arc-C3</td>
+      <td>Advanced Cell Diagnostics RNAscope</td>
+      <td>Cat # 316911-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (smFISH)</td>
+      <td>Probe-Mm-Nr4a1-C2</td>
+      <td>Advanced Cell Diagnostics RNAscope</td>
+      <td>Cat # 423341-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (RNA-seq)</td>
+      <td>Primers for first-strand synthesis</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>CGATTGAGGCCGGTAATACGACTCACTATAGGGGCGACGTGTGCTCTTCCGATCTNNNNNNNNNNNNNNNTTTTTTTTTTTTTTTTTTTTN</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (RNA-seq)</td>
+      <td>Forward primer with P5-Read1 sequence</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>AATGATACGGCGACCACCGAGATCTACACTAGATCGCTCGTCGGCAGCGTCAGATGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (RNA-seq)</td>
+      <td>Reverse primer with P7-Read2 sequence</td>
+      <td>This paper</td>
+      <td>NA</td>
+      <td>CAAGCAGAAGACGGCATACGAGATGTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R studio</td>
+      <td>https://rstudio.com/products/rstudio/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Institutes of Health</td>
+      <td>https://imagej.nih.gov/ij/ RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellProfiler</td>
+      <td>Broad Institute</td>
+      <td>https://cellprofiler.org/ RRID:SCR_007358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism7</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ethovision XT</td>
+      <td>Noldus</td>
+      <td>https://www.noldus.com/ethovision-xt RRID:SCR_000441</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop and Illustrator</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com/in/creativecloud/catalog/desktop.html?promoid=PTYTQ77P&amp;mv=other</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>0.9% Nacl</td>
+      <td></td>
+      <td>Cat # 3642828</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Isoflurane</td>
+      <td>Piramal Critical Care</td>
+      <td>Cat # AWN34014604</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Microtome (7000 smz2)</td>
+      <td>Camden Instruments</td>
+      <td>https://www.emsdiasum.com/microscopy/products/equipment/vibrating_microtome.aspx</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Stereoscope</td>
+      <td>Olympus</td>
+      <td>Cat # N1197800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TissueLyser LT</td>
+      <td>Qiagen</td>
+      <td>Cat # 69980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superfrost Plus slides</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat # J1800AMNZ</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hermes high-definition cell-imaging system</td>
+      <td>Wiscan</td>
+      <td>https://idea-bio.com/products/wiscan-hermes/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SomnoSuite Low-Flow Anesthesia System</td>
+      <td>Kent Scientific Corporation</td>
+      <td>https://www.kentscientific.com/products/somnosuite/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fine drill burr</td>
+      <td>RWD Life Science</td>
+      <td>Cat # 78001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Microsyringe (33G)</td>
+      <td>Hamilton</td>
+      <td>Cat # 65460–05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3M Vetbond tissue Adhesive</td>
+      <td>3M (Ebay)</td>
+      <td>Cat # 8017242664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Isoflurane</td>
+      <td>Piramal Critical Care</td>
+      <td>Cat # AWN34014604</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tri-Reagent</td>
+      <td>Sigma–Aldrich</td>
+      <td>Cat # T9424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>OCT embedding medium</td>
+      <td>Scigen Scientific Gardena</td>
+      <td>Cat # 23-730-625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ACD RNAscope fresh frozen tissue pretreatment</td>
+      <td>Advanced Cell Diagnostics RNAscope</td>
+      <td>Cat # 320513</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Sigma–Aldrich</td>
+      <td>Cat # 10236276001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lab Vision PermaFluor Aqueous Mounting Medium</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat # TA-030-FM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>dNTPs</td>
+      <td>New England Biolabs</td>
+      <td>Cat # N0447s</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MnCl2</td>
+      <td>Sigma–Aldrich</td>
+      <td>Cat # 244589–10G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SPRI magnetic beads</td>
+      <td>Beckman Coulter</td>
+      <td>Cat # A63881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1 M Tris–HCI, pH 8.0</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat # 15568025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SDS Solution (10%)</td>
+      <td>Biological Industries</td>
+      <td>Cat # 01-890-1B</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Lead contact and materials availability
 
 Further information and requests for resources should be directed to and will be fulfilled by the Lead Contact, Ami Citri (ami.citri@mail.huji.ac.il). This study did not generate new unique reagents.
 
-## Experimental models and subject details
+#### Experimental models and subject details
 
 Male C57BL/6OLAHSD mice used for RNA-sequencing and single-molecule FISH analysis following cocaine sensitization were obtained from Harlan Laboratories, Jerusalem, Israel. Transgenic Egr2-Cre knock-in mice were obtained from Jackson Laboratories. All animals were bred at Hebrew University, Givat Ram campus, by crossing positive males with C57BL/6OLAHSD female mice obtained from Harlan Laboratories. All animals (wild types and transgenic littermates of same sex) were group housed both before and during the experiments. They were maintained under standard environmental conditions – temperature (20–22°C), humidity (55 ± 10%), and 12–12 hr light/dark cycle (7 am on and 7 pm off), with ad libitum access to water and food. Behavioral assays were performed during the light phase of the circadian cycle. All animal protocols (# NS-13-13660-3; NS-13-13895-3; NS-15-14326-3; NS-16-14644-2; NS-14667–3; NS-16-14856-3; NS-19-15753-3) were approved by the Institutional Animal Care and Use Committees at the Hebrew University of Jerusalem and were in accordance with the National Institutes of Health Guide for the Care and Use of Laboratory Animals. Animals were randomly assigned to individual experimental groups, with some exceptions, such as in case of conditioned-place preference experiments (elaborated later). Experimenters were blinded regarding experimental manipulations wherever possible. While all experiments were performed in male mice, we do not anticipate that the results would differ between males and females, as similar gene programs are recruited in both (Savell et al., 2020).
 
-AnimalsSexAge (weeks)Wild-type C57BL/6 miceMale6–7Egr2-Cre knock in miceMale10–30
+<table>
+  <thead>
+    <tr>
+      <th>Animals</th>
+      <th>Sex</th>
+      <th>Age (weeks)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wild-type C57BL/6 mice</td>
+      <td>Male</td>
+      <td>6–7</td>
+    </tr>
+    <tr>
+      <td>Egr2-Cre knock in mice</td>
+      <td>Male</td>
+      <td>10–30</td>
+    </tr>
+  </tbody>
+</table>
 
-## Detailed methods
+### Detailed methods
 
-## Behavioral assays
+#### Behavioral assays
 
-## Cocaine sensitization
+##### Cocaine sensitization
 
 Six to seven week old C57BL/6OLAHSD mice, after arriving from Harlan Laboratories, were first allowed to acclimate to the SPF facility for a period of 5–7 days. Animals were then briefly handled once or twice daily for 2–3 days. During the handling sessions, animals were allowed to freely move around on the experimenter’s palm for 1–2 min either alone or in pairs. On the following three consecutive days, mice were subjected to once daily intraperitoneal (IP) saline injections (250 µl) and immediately transferred to a clear Plexiglas box (30 × 30 × 30 cm) within a sound- and light-attenuated chamber fitted with an overhead camera, for ~20 min, and then returned to their home cage. After this habituation phase, animals were subjected to one daily IP cocaine injection (20 mg/kg; Stock solution: 2 mg/ml dissolved in 0.9% saline and injected at 10 ml/kg volume), according to the following groups: (1) acute cocaine group received a single dose of IP cocaine, (2) repeated cocaine group was administered cocaine once daily for five consecutive days, and (3) challenge cocaine group of animals was treated similarly to the repeated cocaine group for the first 5 days, subjected to abstinence (no drug treatment) for 21 days, and then re-exposed to a single dose of cocaine. Animals sacrificed directly from the home cage without any treatment were regarded as controls in the experiment (0 hr) and interleaved with the other groups corresponding to the relevant cocaine regiment (acute, chronic, and challenge cocaine). Transcription was analyzed at 1, 2, and 4 hr following the cocaine injection for the RNA-seq experiments. In smFISH experiments, animals were sacrificed for brain collection 1 hr after the cocaine injection, while control animals were treated as described earlier. Locomotor activity was measured as distance traveled in the open field arena for a period of 15 min, following either saline/cocaine injections, on each day was quantified by Ethovision (Noldus) software.
 
-## Conditioned-place preference
+##### Conditioned-place preference
 
 Conditioned-place preference was assessed in a custom-fitted arena (Plexiglass box [30 × 30 × 30 cm]) designed in-house and placed in individual light- and sound-attenuated chambers as in Terem et al., 2020. On the preference test days, the arena was divided into two compartments of equal dimensions. One compartment was fitted with rough floor (‘crushed ice’ textured Plexiglas) and black (on white) dotted wallpaper, while the other was fitted with smooth floor with black (on white) striped wallpaper. On the conditioning days, animals were presented with only one context in each training session, such that the entire box had rough flooring and dotted wallpaper or smooth flooring with striped wallpaper. Animals were placed in the center of the arena, and free behavior was recorded for 20 min. General activity and position/location of the mice in the arena were monitored by video recording using an overhead camera. Baseline preference was measured using the Ethovision XT software by analyzing the time spent in each chamber during the 20 min session. Mice were randomly assigned a conditioning compartment in order to approximately balance any initial bias in preference toward a specific chamber. Procedure: All experiments were performed using an unbiased design and consisted of the following phases: Handling: Two to three days performed twice daily and involved free exploration on the palms of the experimenter for 2–3 min. Pre-test: Single 20 min session (performed around noon), during which animals explored the arena which was divided into two compartments. Conditioning: Three days of two counterbalanced 20 min sessions per day separated by at least 4 hr. Mice were randomly assigned to a context (combination of a single floor-type and wallpaper patterns, as described above), which was paired with IP injections of saline (250 µl), and a separate context, which was paired with IP cocaine (10 mg/kg; Stock solution: 1 mg/ml dissolved in 0.9% saline and injected at 10 ml/kg volume). Post-conditioning final preference test was performed as in the pre-test.
 
 For chemogenetic experiments, CNO (10 mg dissolved in 500 μl DMSO and then mixed into 9.5 ml 0.9% saline, to a total of 10 ml CNO solution at a concentration of 1 mg/ml) was injected at a dose of 5 or 10 mg/kg 30 min before cocaine conditioning sessions.
 
-## Tissue dissections and RNA extraction
+##### Tissue dissections and RNA extraction
 
 Collection of tissue samples (Figure 3—figure supplement 1) and RNA extraction were performed as described previously (Mukherjee et al., 2018; Turm et al., 2014), with few modifications. Briefly animals were anesthetized in isoflurane (Piramal Critical Care), euthanized by cervical dislocation, and the brains quickly transferred to ice-cold artificial cerebrospinal fluid (ACSF) solution. Coronal slices of 400 µm were subsequently made on a vibrating microtome (7000 smz2; Camden Instruments) and relevant brain areas dissected under a stereoscope (Olympus). Tissue pieces were collected in PBS, snap-frozen in dry-ice, and on the same day transferred to Tri-Reagent (Sigma–Aldrich). The tissue was stored at −80°C until being processed for RNA extraction. For RNA extraction, the stored tissue was thawed at 37°C using a drybath and then immediately homogenized using TissueLyser LT (Qiagen). RNA extraction was performed according to the manufacturer’s guidelines. All steps were performed in cold conditions.
 
-## RNA-seq library preparation
+##### RNA-seq library preparation
 
 One hundred nanogram of RNA was used for first-strand cDNA preparation as follows: The RNA was mixed with RT primers containing barcodes (seven bps) and unique molecular identifiers (UMIs; eight bps) for subsequent de-multiplexing and correction for amplification biases, respectively. The mixture was denatured in a Thermocycler (Bio-Rad) at 72°C for 3 min and transferred immediately to ice. An RT reaction cocktail containing 5× SmartScribe buffer, SmartScribe reverse transcriptase (Takara), 25 mM dNTP mix (NEB), and 100 mM MnCl2 (Sigma) was added to the RNA and primer mix and incubated at 42°C for 1 hr followed by 70°C for 15 min. The cDNA from all samples were pooled, cleaned with 1.2× AMPURE magnetic beads (Beckman Coulter), and eluted with 10 mM Tris of pH 8 (ThermoFisher Scientific). The eluted cDNA was further processed for double-stranded DNA synthesis with the NEBNext Ultra II Non-Directional RNA Second-Strand Synthesis Module (NEB), followed by another round of clean-up with 1.4× SPRI magnetic beads. The resultant double-stranded cDNA was then incubated with Tn5 tagmentase enzyme and a 21 bp oligo (TCGTCGGCAGCGTCAGATGTG sequence) at 55°C for 8 min. The reaction was stopped by denaturing the enzyme with 0.2% SDS (Biological Industries), followed by another round of cleaning with 2× SPRI magnetic beads. The elute was amplified using the KAPA Hifi Hotstart ReadyMix (Kapa Biosystems along with forward primer that contains Illumina P5-Read1 sequence) and reverse primer containing the P7-Read2 sequence. The resultant libraries were loaded on 4% agarose gel (Invitrogen) for size selection (250–700 bp) and cleaned with Mini Elute Gel Extraction kit (Qiagen). Library concentration and molecular size were determined with NEBNext Library Quant Kit for Illumina (NEB) according to manufacturer’s guidelines, as well as Bioanalyzer using High-Sensitivity DNA kit (Agilent Technologies). The libraries were run on the Illumina platform using NextSeq 500 High Output V2 kits (Illumina).
 
-## Single-molecule fluorescence in-situ hybridization
+##### Single-molecule fluorescence in-situ hybridization
 
 A detailed protocol is available in Gonzales et al., 2020. Briefly, smFISH protocol was performed on 14 µm tissue sections using the RNAscope Multiplex Fluorescent Reagent kit (Advanced Cell Diagnostics) according to the RNAscope Sample Preparation and Pretreatment Guide for Fresh Frozen Tissue and the RNAscope Fluorescent Multiplex Kit User Manual (Advanced Cell Diagnostics). Image acquisition was performed using a Hermes high-definition cell-imaging system with 10 × 0.4 NA and 40 × 0.75 NA objectives. Five Z-stack images were captured for each of four channels – 475/28 nm (FITC), 549/15 nm (TRITC), 648/20 nm (Cy5), and 390/18 nm (DAPI). Image processing was performed using ImageJ software. Maximum-intensity images for each channel were obtained using Maximum Intensity Z-projection. All channels were subsequently merged, and the dorsal striatum region was manually cropped from these merged images according to the Franklin and Paxinos Mouse brain atlas, Third edition. Quantification of RNA expression from images was done using the CellProfiler (McQuin et al., 2018) speckle counting pipeline.
 
-## Stereotactic surgeries
+##### Stereotactic surgeries
 
 Induction and maintenance of anesthesia during surgery were achieved using SomnoSuite Low-Flow Anesthesia System (Kent Scientific Corporation). Following induction of anesthesia, animals were quickly secured to the stereotaxic apparatus (David KOPF instruments). The skin was cleaned with Betadine (Dr. Fischer Medical), and Lidocaine (Rafa Laboratories) was applied to minimize pain. An incision was made to expose the skull, which was immediately cleaned with hydrogen peroxide (GADOT), and a small hole was drilled using a fine drill burr (RWD Life Science). Using a microsyringe (33G; Hamilton) connected to an UltraMicroPump (World Precision Instruments), virus was subsequently injected at a flow rate of 100 nl/min. Upon completion of virus delivery, the microsyringe was left in the tissue for up to 5 min and then slowly withdrawn. The skin incision was closed using a Vetbond bioadhesive (3M), the animals were removed from the stereotaxic apparatus, injected with saline and pain-killer Rimadyl (Norbrook), and allowed to recover under gentle heating. Coordinates of the stereotactic injection were determined using the Paxinos and Franklin mouse brain atlas. Every virus used in the study was titrated appropriately to ensure localized infections. All injections were performed bilaterally and observed to be symmetric.
 
-## Coordinates of the stereotactic injection
+#### Coordinates of the stereotactic injection
 
-## Quantification and statistical analysis
+<table>
+  <thead>
+    <tr>
+      <th>Experiment ID</th>
+      <th>Viruses</th>
+      <th>Coordinates</th>
+      <th>Strain</th>
+      <th>Virus expression time (days)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemogenetic inhibition (Figure 3E)</td>
+      <td>AAV2-hSyn-DIO-hM4d(Gi)-mCherry (n = 6; received saline) AAV2-hSyn-DIO-hM4d(Gi)-mCherry (n = 6, received CNO at 5 mg/kg)</td>
+      <td>AP: 0.9; ML: ±2.6; DV: 3.6</td>
+      <td>Egr2-Cre</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Chemogenetic inhibition (Figure 3F–G, Figure 3—figure supplement 3)</td>
+      <td>AAV2-hSyn-DIO-hM4d(Gi)-mCherry (n = 8; all received CNO at 10 mg/kg) AAV2-hSyn-DIO- mCherry (n = 8, all received CNO at 10 mg/kg)</td>
+      <td>AP: 0.9; ML: ±2.6; DV: 3.6</td>
+      <td>Egr2-Cre</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>DN-Egr2 (Figure 3H,I, Figure 3—figure supplement 4)</td>
+      <td>AAVdj-CMV-eGFP (n = 8) AAVdj-CAG-DNEgr2-IRES-GFP (n = 8)</td>
+      <td>AP: 0.9; ML: ±2.65; DV: 3.6</td>
+      <td>WT</td>
+      <td>21</td>
+    </tr>
+  </tbody>
+</table>
 
-## Statistical analysis and data visualization
+### Quantification and statistical analysis
+
+#### Statistical analysis and data visualization
 
 R version 3.4.4 was used for all statistical analysis and graphical representations. Venn diagrams were generated with ‘eulerr’ package. Three-dimensional plots were generated with ‘plot3D’ package. Heatmaps were generated with ‘Heatmap.2’ function form ‘gplots’ package. All other figures were generated using ‘ggplot2’. Details of the statistics applied in analysis of smFISH and behavioral experiments are summarized in Supplementary file 6.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
-## Alignment and QC
+#### Alignment and QC
 
 RNA-seq read quality was evaluated using FastQC. PCR duplicates were removed using unique molecular identifiers (UMIs), and polyA tail, if existing, was trimmed from the 3' end of the reads. Reads were aligned to the mouse genome (GRCm38) using STAR, and HTseq was used to count the number of reads for each gene. Samples with less than 1 million usable reads were removed from the analysis. Samples with more than 8 million reads were down-sampled to 50% (using R package ‘subSeq’). The list of the samples analyzed in this paper and the distribution of library size are presented in Supplementary file 1 and Figure 1—figure supplement 2. All raw sequencing data is available on NCBI GEO: GSE158588.
 
-## Analysis of shifts in baseline transcription
+#### Analysis of shifts in baseline transcription
 
 In order to compare baseline shifts in gene expression following repeated cocaine administration, we compared gene expression within the samples obtained at time 0 (not exposed to cocaine on day of sample collection) in each one of the conditions – acute, repeated, and challenge cocaine (Figure 1—figure supplement 3A – heatmap of all genes exhibiting change). This analysis was performed with ‘DEseq2’ package in R. We used the Wald test in the DEseq function and compared gene expression in cocaine naïve mice vs. mice exposed to repeated cocaine, as well as comparing to abstinent mice following repeated cocaine. List of detected genes, normalized counts, and p-values (FDR corrected) are presented in Supplementary file 2. We observed that in a few samples, an apparent sequencing batch effect was detected, likely related to the library preparation and/or to the association of samples with different sequencing runs. Therefore, we performed the final analysis on only a subset of the samples, which did not exhibit a batch effect. While gene selection was performed on the subset of samples, the data portrayed in Figure 1C depicts all samples from the relevant time points – demonstrating that the genes identified from the subset of samples are consistently modified across all samples. Therefore, our gene list likely provides a conservative estimate of the true magnitude of shifts in gene expression.
 
-## Analysis of inducible transcription
+#### Analysis of inducible transcription
 
 Detection of the induced genes following cocaine administration was performed with the ‘DEseq2’ package in R. Each structure was analyzed separately. The model included time (0, 1, 2, 4 hr after cocaine administration) and the experiment (acute, repeated, and challenge), as well as the interaction time × experiment. We used a likelihood ratio test (LRT) and selected genes changing over time in at least one of the experiments (eliminating genes that are changing only between experiments, but not in time). Next, to evaluate the effect of time in each specific experiment, we used the selected gene list and fitted a generalized linear model with a negative binomial distribution followed by LRT for each experiment separately. Genes with p<0.05 (corrected) and fold change > 1.2 were considered significant. List of the detected genes, normalized counts, and p-values (FDR corrected) is presented in Supplementary file 4.
 
-## Gene annotation and functional analysis
+#### Gene annotation and functional analysis
 
 KEGG pathway analysis was performed using the ‘SPIA’ package (Signaling Pathway Impact Analysis) in R. Pathways with p<0.05 and at least eight differentially expressed genes were considered significant. GO term enrichment analysis was performed using the ‘clusterProfiler’ package in R. Molecular function (MF) sub-ontologies were included in the analysis. The results of the inducible transcription analysis (p<0.05, FDR corrected) are included in Supplementary file 5 (complete list of enriched GO terms and genes) and in Figure 1H (representative GO term list). In the analysis of baseline transcription, we perform a second step of clustering in order to remove redundancy and identify global patterns across structures. After selecting the significantly enriched GO terms (p<0.05, FDR corrected), we grouped together all GO terms that shared at least 50% identity of the differentially expressed genes in any of the structures (Supplementary file 3). As described in the Results section, few clusters were selected for presentation, and the expression levels of genes included in these clusters – across all time points and all structures – are presented as a heatmap in Figure 1C, Figure 1—figure supplement 4.
 
-## smFISH analysis
+#### smFISH analysis
 
 For the IEG probes, selection for ‘robust-expressing’ cells was done as follows: We used the cocaine-naïve control data and after removing the non-expressing cells (cells expressing 0–1 puncta), the remaining cells were binned equally into three groups based on the per-cell expression levels, and the top 33% cells were defined ‘robust expressors’ or ‘suprathreshold cells’. Thus, cells qualified as ‘robust expressors’ for a given IEG if they expressed at least the following number of puncta per cell: Arc – 11, Egr2 – 6, Nr4a1 – 12, Fos – 5. For Drd1 and Drd2 expression, a threshold of 8 puncta/cell was implemented (Gonzales et al., 2020).
 
 In order to identify the area with the highest density of IEG expressing cells in the striatum, we performed two-dimensional kernel density estimation using the function ‘geom_density_2d’ in R as in Gonzales et al., 2020. This function estimates two-dimensional kernel density with an axis-aligned bivariate normal kernel, evaluated on a square grid, while displaying the result with contours. The regions of highest density, within which at least 20% of the cells are found, were selected. This process was performed independently for each one of the replicas and the selected contours plotted. A list of the samples and number of cells included in the analysis is found in Supplementary file 7. Details of statistical analysis and results for smFISH data are summarized in Supplementary file 6. Raw data (puncta per cell) is available on Mendeley Data (http://dx.doi.org/10.17632/p5tsv2wpmg.1).
 
-## Re-used data
+#### Re-used data
 
 Image reproduction: In the current study, we perform a comparison of the expression patterns and spatial distribution of IEGs following behavioral sensitization to cocaine. To this end, we compare the response to repeated and challenge cocaine exposures (novel data) to the response to acute cocaine, which was previously published (Gonzales et al., 2020). The reproduced images are the panels labeled ‘acute’ in Figures 2B–D and 3A–C.
 

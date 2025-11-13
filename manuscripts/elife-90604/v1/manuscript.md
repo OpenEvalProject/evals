@@ -14,15 +14,15 @@
 
 ### Affiliations
 
-1. https://ror.org/05rrcem69 Department of Physiology & Membrane Biology, University of California, Davis Davis United States
-2. https://ror.org/05rrcem69 Department of Mathematics, University of California, Davis Davis United States
-3. https://ror.org/05rrcem69 Center for Precision Medicine and Data Sciences, University of California, Davis Davis United States
+1. Department of Physiology & Membrane Biology, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+2. Department of Mathematics, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+3. Center for Precision Medicine and Data Sciences, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
 
 † Corresponding author
 
 ## Abstract
 
-The function of the smooth muscle cells lining the walls of mammalian systemic arteries and arterioles is to regulate the diameter of the vessels to control blood flow and blood pressure. Here, we describe an in silico model, which we call the ‘Hernandez–Hernandez model’, of electrical and Ca 2+ signaling in arterial myocytes based on new experimental data indicating sex-specific differences in male and female arterial myocytes from murine resistance arteries. The model suggests the fundamental ionic mechanisms underlying membrane potential and intracellular Ca 2+ signaling during the development of myogenic tone in arterial blood vessels. Although experimental data suggest that K V 1.5 channel currents have similar amplitudes, kinetics, and voltage dependencies in male and female myocytes, simulations suggest that the K V 1.5 current is the dominant current regulating membrane potential in male myocytes. In female cells, which have larger K V 2.1 channel expression and longer time constants for activation than male myocytes, predictions from simulated female myocytes suggest that K V 2.1 plays a primary role in the control of membrane potential. Over the physiological range of membrane potentials, the gating of a small number of voltage-gated K + channels and L-type Ca 2+ channels are predicted to drive sex-specific differences in intracellular Ca 2+ and excitability. We also show that in an idealized computational model of a vessel, female arterial smooth muscle exhibits heightened sensitivity to commonly used Ca 2+ channel blockers compared to male. In summary, we present a new model framework to investigate the potential sex-specific impact of antihypertensive drugs.
+The function of the smooth muscle cells lining the walls of mammalian systemic arteries and arterioles is to regulate the diameter of the vessels to control blood flow and blood pressure. Here, we describe an in silico model, which we call the ‘Hernandez–Hernandez model’, of electrical and Ca2+ signaling in arterial myocytes based on new experimental data indicating sex-specific differences in male and female arterial myocytes from murine resistance arteries. The model suggests the fundamental ionic mechanisms underlying membrane potential and intracellular Ca2+ signaling during the development of myogenic tone in arterial blood vessels. Although experimental data suggest that KV1.5 channel currents have similar amplitudes, kinetics, and voltage dependencies in male and female myocytes, simulations suggest that the KV1.5 current is the dominant current regulating membrane potential in male myocytes. In female cells, which have larger KV2.1 channel expression and longer time constants for activation than male myocytes, predictions from simulated female myocytes suggest that KV2.1 plays a primary role in the control of membrane potential. Over the physiological range of membrane potentials, the gating of a small number of voltage-gated K+ channels and L-type Ca2+ channels are predicted to drive sex-specific differences in intracellular Ca2+ and excitability. We also show that in an idealized computational model of a vessel, female arterial smooth muscle exhibits heightened sensitivity to commonly used Ca2+ channel blockers compared to male. In summary, we present a new model framework to investigate the potential sex-specific impact of antihypertensive drugs.
 
 ## Introduction
 
@@ -52,11 +52,15 @@ In constructing the model, we first set out to measure the kinetics of the volta
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/90604/elife-90604-fig2-v1.jpg)
 
-**Figure 2.:** Ca) from male and female vascular smooth muscle (VSM) cells.Properties of ICa are derived from measurements in male and female VSM cells isolated from the mouse mesenteric arteries following voltage-clamp steps from –60 to 60 mV in 10 mV steps from a –80 mV holding potential. Experimental data is shown in black circles for male (n=10) and blue squares for female (n=12). Model fits to experimental data are shown with black solid lines for male and blue solid lines for female. (A) Male and female time constants of ICa activation. (B) Male and female time constants of ICa inactivation. (C) Male and female voltage-dependent steady-state activation and inactivation of ICa. (D) Current–voltage (I–V) relationship of ICa from male and female VSM myocytes. *p<0.05, **p<0.01, ***p<0.001. Error bars indicate mean ± SEM.
+**Figure 2.:** Properties of ICa are derived from measurements in male and female VSM cells isolated from the mouse mesenteric arteries following voltage-clamp steps from –60 to 60 mV in 10 mV steps from a –80 mV holding potential. Experimental data is shown in black circles for male (n=10) and blue squares for female (n=12). Model fits to experimental data are shown with black solid lines for male and blue solid lines for female. (A) Male and female time constants of ICa activation. (B) Male and female time constants of ICa inactivation. (C) Male and female voltage-dependent steady-state activation and inactivation of ICa. (D) Current–voltage (I–V) relationship of ICa from male and female VSM myocytes. *p<0.05, **p<0.01, ***p<0.001. Error bars indicate mean ± SEM.
 
 We next used the experimental measurements to build and optimize a Hodgkin–Huxley model based on the data described above. The model includes voltage-dependent activation and inactivation gating variables, dL and dF, respectively. We modeled both gates following the approach by Kernik et al., 2019. It is important to note that smooth muscle cells operate within a voltage regime defined by the window current, which ranges between –45 mV and –20 mV. Under these conditions, [Ca2+]i remains below 1 μM. Therefore, we did not consider the Ca2+-dependent inactivation gating mode of the channel (Kapela et al., 2008; Fleischmann et al., 1994).
 
-The model of ICa is described by:(1)ICa=PCa∗dL∗dF∗zCa2F2VRT([Ca]iezcaFVRT−[Ca]outezcaFVRT−1)
+The model of ICa is described by:
+
+$$
+I_{Ca}=P_{Ca}∗dL∗dF∗\frac{z_{Ca}^{2}F^{2}V}{RT}(\frac{[Ca]_{i}e^{\frac{z_{ca}FV}{RT}}−[Ca]_{out}}{e^{\frac{z_{ca}FV}{RT}}−1})
+$$
 
 where PCa is the ion permeability, R is the gas constant, F is the Faraday’s constant, and zCa is the valence of the Ca2+ ion. Parameters were optimized to male and female experimental data as shown for activation time constants (τactivation) and inactivation time constants (τinactivation) as solid lines in Figure 2A, B, respectively. Model optimization to male and female activation and inactivation curves are shown in Figure 2C. The model was also optimized to the ICa current–voltage (I–V) relationships shown as solid lines in Figure 2D.
 
@@ -66,39 +70,141 @@ Having isolated IKV, KV2.1 currents were identified using the application of the
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/90604/elife-90604-fig3-v1.jpg)
 
-**Figure 3.:** KvTOT) from male and female vascular smooth muscle cells.The properties of IKv1.5 and IKv2.1 from experimental measurements in male and female vascular smooth muscle cells isolated from the mouse mesenteric arteries were recorded in response to voltage-clamp from –60 to 40 mV in 10 mV steps (holding potential –80 mV). Experimental data is shown as black circles for male and blue squares for female. Model fits to experimental data are shown with black solid lines for male and blue solid lines for female. (A) Male (n=7) and female (n=10) voltage-dependent steady-state activation of IKv2.1. (B) Male (n=7) and female (n=10) time constants of IKv2.1 activation. (C) Current–voltage (I–V) relationship of IKv2.1 from male (n=10) and female (n=20) myocytes. (D) Male (n=6) and female (n=10) voltage-dependent steady-state activation of IKv1.5. (E) Current–voltage (I–V) relationship of IKv1.5 from male (n=7) and female (n=10) myocytes. (F) Male (n=7) and female (n=10) total voltage-gated potassium current IKvTOT = IKv1.5 + IKv2.1. (G) Predicted male and female time constants of the IKv1.5 activation gate. (H) Table showing sex-specific differences in conductance and steady-state total potassium current–voltage dependence. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Data points without asterisks are not significant. Error bars indicate mean ± SEM.
+**Figure 3.:** The properties of IKv1.5 and IKv2.1 from experimental measurements in male and female vascular smooth muscle cells isolated from the mouse mesenteric arteries were recorded in response to voltage-clamp from –60 to 40 mV in 10 mV steps (holding potential –80 mV). Experimental data is shown as black circles for male and blue squares for female. Model fits to experimental data are shown with black solid lines for male and blue solid lines for female. (A) Male (n=7) and female (n=10) voltage-dependent steady-state activation of IKv2.1. (B) Male (n=7) and female (n=10) time constants of IKv2.1 activation. (C) Current–voltage (I–V) relationship of IKv2.1 from male (n=10) and female (n=20) myocytes. (D) Male (n=6) and female (n=10) voltage-dependent steady-state activation of IKv1.5. (E) Current–voltage (I–V) relationship of IKv1.5 from male (n=7) and female (n=10) myocytes. (F) Male (n=7) and female (n=10) total voltage-gated potassium current IKvTOT = IKv1.5 + IKv2.1. (G) Predicted male and female time constants of the IKv1.5 activation gate. (H) Table showing sex-specific differences in conductance and steady-state total potassium current–voltage dependence. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Data points without asterisks are not significant. Error bars indicate mean ± SEM.
 
-To understand the contribution of each K+ current to the total voltage-gated current (IKVTOT) in mesenteric vascular smooth muscle cells, we built and optimized a Hodgkin–Huxley model to the data described above. First, we developed a model to describe the KV2.1 current. The optimized model to KV2.1 experimental data contains only a voltage-dependent activation gating variable (X2.1act). Since inactivation time is slow and is well estimated by steady-state (Yang et al., 2003), we did not consider its effects in our model. The model of IKv2.1 is described by(2)IKv2.1=GKv2.1∗XKv2.1act∗(V−EK)
+To understand the contribution of each K+ current to the total voltage-gated current (IKVTOT) in mesenteric vascular smooth muscle cells, we built and optimized a Hodgkin–Huxley model to the data described above. First, we developed a model to describe the KV2.1 current. The optimized model to KV2.1 experimental data contains only a voltage-dependent activation gating variable (X2.1act). Since inactivation time is slow and is well estimated by steady-state (Yang et al., 2003), we did not consider its effects in our model. The model of IKv2.1 is described by
 
-where GK2.1 is the maximal conductance of KV2.1 channels and EK is the Nernst potential for potassium. Parameters were optimized to male and female experimental data as shown for activation curves in Figure 3A. Model optimization to male and female time constants of activation (KV2.1 τActivation) is shown as solid lines in Figure 3B. The model was also optimized to the IKv2.1 current–voltage (I–V) relationships shown as solid lines in Figure 3C.
+$$
+I_{Kv2.1}=G_{Kv2.1}∗X_{Kv2.1act}∗(V−E_{K})
+$$
 
-Similarly, we developed a model for KV1.5. The model was optimized to the KV1.5 experimental data and contains only a voltage-dependent activation gating variable (XKv1.5act). The model of IKv1.5 is described by(3)IKV1.5=GKv1.5∗XKv1.5act∗(V−EK)
+where $G_{K2.1}$ is the maximal conductance of KV2.1 channels and EK is the Nernst potential for potassium. Parameters were optimized to male and female experimental data as shown for activation curves in Figure 3A. Model optimization to male and female time constants of activation (KV2.1 τActivation) is shown as solid lines in Figure 3B. The model was also optimized to the IKv2.1 current–voltage (I–V) relationships shown as solid lines in Figure 3C.
 
-where GK1.5 is the maximal conductance of KV1.5 channels and EK is the Nernst potential for potassium. Parameters were optimized to male and female experimental data as shown for activation curves in Figure 3D. The model was also optimized to the IKv1.5 current–voltage (I–V) relationships shown as solid lines in Figure 3E. From experiments, we optimized the model to reproduce the overall time traces of KV currents. The model predicted that male and female myocytes have comparable time constants of activation in IKv1.5 as shown in Figure 3G. Finally, the optimized model of the total voltage-gated current (IKVTOT) is shown in Figure 3F. The total voltage-gated K+ current (IKvTOT) is the sum of IKV1.5 and IKv2.1 mathematically described as(4)IKvTOT=IKv2.1+IKv1.5
+Similarly, we developed a model for KV1.5. The model was optimized to the KV1.5 experimental data and contains only a voltage-dependent activation gating variable (XKv1.5act). The model of IKv1.5 is described by
+
+$$
+I_{KV1.5}=G_{Kv1.5}∗X_{Kv1.5act}∗(V−E_{K})
+$$
+
+where $G_{K1.5}$ is the maximal conductance of KV1.5 channels and EK is the Nernst potential for potassium. Parameters were optimized to male and female experimental data as shown for activation curves in Figure 3D. The model was also optimized to the IKv1.5 current–voltage (I–V) relationships shown as solid lines in Figure 3E. From experiments, we optimized the model to reproduce the overall time traces of KV currents. The model predicted that male and female myocytes have comparable time constants of activation in IKv1.5 as shown in Figure 3G. Finally, the optimized model of the total voltage-gated current (IKVTOT) is shown in Figure 3F. The total voltage-gated K+ current (IKvTOT) is the sum of IKV1.5 and IKv2.1 mathematically described as
+
+$$
+I_{KvTOT}=I_{Kv2.1}+I_{Kv1.5}
+$$
 
 Notably, the main specific sex-specific differences observed in the total voltage-gated K+ current (IKvTOT) is attributable to the sex-specific differences in the current produced by KV2.1 channels.
 
 We next analyzed the contribution of large-conductance calcium-activated potassium (BKCa) channels to vascular smooth muscle cell electrophysiology. BKCa channels are activated by membrane depolarization or increased [Ca2+]i and are expressed in the membrane of vascular smooth muscle cells with α and β1 subunits (Nelson et al., 1995; Bao and Cox, 2005; Brenner et al., 2000). In smooth muscle cells, Ca2+ sparks are the physiological activators of BKCa channels. We relied on the assumption by Tong et al., 2011 that BKCa currents (IBKCa) are produced by two current subtypes, one consisting of α subunits (IBKα) and the other consisting of α and β1 subunits (IBKαβ1). Experimental evidence indicates that BKCa channels with αβ1 subunits form clusters in the plasma membrane in specialized junctional domains formed by the SR and the sarcolemma. BKCa channels with αβ1 subunits colocalize with ryanodine receptors (RyRs) to in the junctional domains. During a Ca2+ spark, [Ca2+]i elevations ranging from 10 to 100 μM activate BKCa channels (Pérez et al., 1999; Kaßmann et al., 2019; Hill-Eubanks et al., 2011; Jaggar et al., 2000; Zhuge et al., 2002). In our model, Ca2+ sparks are the physiological activators of BKCa channels.
 
-The mathematical formulation of the BKCa with αβ1 current (IBKαβ1) was optimized to fit the experimental whole-cell electrophysiological data from Bao and Cox, 2005 obtained at room temperature with a BKCa channel α subunit clone from mSlo-mbr5 and a β1 subunit clone from bovine expressed in Xenopus laevis oocytes (Bao and Cox, 2005). Experimental data for steady-state activation and time constants of activation are shown in Figure 4A and B, respectively. The activation gating variable (Xab) depends on both voltage and junctional calcium ([Ca2+]Jun). The activation gate was adapted from the Tong–Taggart model (Tong et al., 2011). The model of IBKαβ1 is described by(5)IBKαβ1=PBKca∗Xab(V,[Ca]Jun)∗zK2F2VRT([K]inezKFVRT−[K]outezKFVRT−1)
+The mathematical formulation of the BKCa with αβ1 current (IBKαβ1) was optimized to fit the experimental whole-cell electrophysiological data from Bao and Cox, 2005 obtained at room temperature with a BKCa channel α subunit clone from mSlo-mbr5 and a β1 subunit clone from bovine expressed in Xenopus laevis oocytes (Bao and Cox, 2005). Experimental data for steady-state activation and time constants of activation are shown in Figure 4A and B, respectively. The activation gating variable ($X_{ab}$) depends on both voltage and junctional calcium ([Ca2+]Jun). The activation gate was adapted from the Tong–Taggart model (Tong et al., 2011). The model of IBKαβ1 is described by
+
+$$
+I_{BK\alpha\beta1}=P_{BKca}∗X_{ab}(V,[Ca]_{Jun})∗\frac{z_{K}^{2}F^{2}V}{RT}(\frac{[K]_{in}e^{\frac{z_{K}FV}{RT}}−[K]_{out}}{e^{\frac{z_{K}FV}{RT}}−1})
+$$
 
 where PBKCa is the BKCa ion permeability, R is the gas constant, F is Faraday’s constant, and zK is the valance of the potassium ions. Model optimization to activation curves is shown with solid lines in Figure 4A at three different [Ca2+]Jun concentrations: 1 μM, 10 μM, and 100 μM. The results from the steady-state activation measurements at 10 μM are also in agreement with the experimental data in vascular myocytes in Bufo marinus (Zhuge et al., 2002) (green symbols), which suggests that BKCa channels are exposed to a mean junctional Ca2+ concentration ([Ca2+]Jun) of 10 μM. Time constants of activation were measured experimentally at [Ca2+]Jun = 0.003 μM, and our model was optimized and fit under the same conditions shown in Figure 4B as solid lines. Notably when the model was run under predicted [Ca2+]Jun = 10 μM conditions as shown in Figure 4B, dashed lines, there was no effect of the change in [Ca2+]Jun on the time constant. The predicted current–voltage (I–V) relationships of IBKαβ1 are shown in Figure 4C using three different [Ca2+]Jun concentrations: 1 μM, 10 μM, and 100 μM. We observed that the I–V curves are similar at [Ca2+]Jun concentrations of 10 μM (black trace) and 100 μM (orange trace) but markedly reduced when [Ca2+]Jun = 1 μM (blue trace). As expected, the amplitude of the current shown in the I–V curves in Figure 4D is sensitively dependent on the number of BKCa channels as shown, and we set [Ca2+]Jun = 10 μM and simulated the I–V curves using a BKCa cluster size of 4, 6, 8 and 10 channels.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/90604/elife-90604-fig4-v1.jpg)
 
-**Figure 4.:** 2+-activated K+ currents (IBKαβ1).The model was optimized to data from Bao and Cox, 2005. (A) Voltage-dependent activation of IBKαβ1 from experiments performed with three different [Ca]Jun concentrations (1 μM, 10 μM, and 100 μM) shown in green circles is the data from Zhuge et al., 2002. (B) Voltage-dependent activation time constants with [Ca]Jun = 0.003 μM and simulations [Ca]Jun = 10 μM. (C) Simulated I–V curve at different peak levels of [Ca]Jun levels. (D) Simulated I–V curve with different BKca average cluster sizes (N = 4,6, 8, and 10).
+**Figure 4.:** The model was optimized to data from Bao and Cox, 2005. (A) Voltage-dependent activation of IBKαβ1 from experiments performed with three different [Ca]Jun concentrations (1 μM, 10 μM, and 100 μM) shown in green circles is the data from Zhuge et al., 2002. (B) Voltage-dependent activation time constants with [Ca]Jun = 0.003 μM and simulations [Ca]Jun = 10 μM. (C) Simulated I–V curve at different peak levels of [Ca]Jun levels. (D) Simulated I–V curve with different BKca average cluster sizes (N = 4,6, 8, and 10).
 
-In vascular smooth muscle cells, the membrane potential over the physiological range of intravascular pressures is less negative than the equilibrium potential of potassium (EK = –84 mV), suggesting active participation of inward currents regulated by sodium conductance (Nelson et al., 1990; Dwyer et al., 2011; Setoguchi et al., 1997). It has been postulated that basally activating TRP channels generate nonselective cations currents (INSC) that depolarize the membrane potential. We built a model for INSC as linear and time-independent cation current permeable to K+ and Na+ with permeability ratios PNa:PK = 0.9:1.3 adapted from Tong–Taggart model with a reversal potential (ENSC) described by:(6)ENSC=R*TF*logPK*Kout+PNa*NaoutPK*Kin+PNa*Nain;
+In vascular smooth muscle cells, the membrane potential over the physiological range of intravascular pressures is less negative than the equilibrium potential of potassium (EK = –84 mV), suggesting active participation of inward currents regulated by sodium conductance (Nelson et al., 1990; Dwyer et al., 2011; Setoguchi et al., 1997). It has been postulated that basally activating TRP channels generate nonselective cations currents (INSC) that depolarize the membrane potential. We built a model for INSC as linear and time-independent cation current permeable to K+ and Na+ with permeability ratios PNa:PK = 0.9:1.3 adapted from Tong–Taggart model with a reversal potential (ENSC) described by:
 
-where R is the gas constant, F is the Faraday’s constant, T is the temperature, and Nain and Kin are the intracellular sodium and potassium intracellular concentrations. Similarly, Naout and Naout are the extracellular sodium and potassium concentrations. The model of INSC is described by(7)INSC=INaNSC+IKNSC(8)INaNSC=GNaNSC∗(V−ENSC)(9)IKNSC=GKNSC∗(V−ENSC)
+$$
+E_{NSC}=R*\frac{T}{F}*log\frac{P_{K}*K_{out}+P_{Na}*Na_{out}}{P_{K}*K_{in}+P_{Na}*Na_{in}};
+$$
 
-where INaNSC represents sodium current contribution, IKNSC represents potassium current contribution, and GNaNSC and GKNSC are the maximal conductances of the contributing sodium and potassium currents. In addition, we also included models for leak currents of ion i calculated as(10)Ii,b=Gi,b(V−Ei)
+where R is the gas constant, F is the Faraday’s constant, T is the temperature, and Nain and Kin are the intracellular sodium and potassium intracellular concentrations. Similarly, Naout and Naout are the extracellular sodium and potassium concentrations. The model of INSC is described by
 
-where the Nernst potential of ion i with valance zi is given by(11)Ei=RT/ziFln([i]out/[i]in),i=Na+,K+andCa2+
+$$
+I_{NSC}=I_{NaNSC}+I_{KNSC}
+$$
+
+
+
+$$
+I_{NaNSC}=G_{NaNSC}∗(V−E_{NSC})
+$$
+
+
+
+$$
+I_{KNSC}=G_{KNSC}∗(V−E_{NSC})
+$$
+
+where INaNSC represents sodium current contribution, IKNSC represents potassium current contribution, and GNaNSC and GKNSC are the maximal conductances of the contributing sodium and potassium currents. In addition, we also included models for leak currents of ion i calculated as
+
+$$
+I_{i,b}=G_{i,b}(V−E_{i})
+$$
+
+where the Nernst potential of ion i with valance zi is given by
+
+$$
+E_{i}=RT/z_{i}Fln([i]_{out}/[i]_{in}),i=Na^{+},K^{+}andCa^{2+}
+$$
 
 where R is the gas constant, F is the Faraday’s constant, T is the temperature, and [i]out denotes the extracellular concentration of ion i.
 
-The remaining ionic currents, pumps, and transporters were optimized to data available in the experimental literature and/or taken from computational models of vascular smooth muscle and cardiac cells. The sodium–potassium pump (INaK) current was modeled using data from smooth muscle cells from mesenteric resistance arteries of the guinea pig (Tong et al., 2011; Nakamura et al., 1999) and the voltage dependency was adapted from the Luo–Rudy II model (Luo and Rudy, 1994). The sodium–calcium exchanger current (INCX) was adapted from the formulation in the ten Tusscher model (ten Tusscher et al., 2004) and the Luo–Rudy II model (Luo and Rudy, 1994). Finally, the sarcolemma calcium pump (IPMCA) current was adapted from the Kargacin model (Kargacin, 1994).(12)Npow=(Q10T−309.210);(13)N1=(Kout1.1)Kout1.1+KmNaKK1.1;(14)N2=(Nain1.7)Nain1.7+KmNaKNa1.7; (15)N0=1.01+(0.1245∗exp(−0.1∗V∗FR∗T))+(2.19e−3∗(e(Naout49.71))∗e(−1.9∗V∗FR∗T)); (16)INaK=INaKmax∗N1∗N2∗N0∗Npow (17)phiF=exp(gammax∗V∗FR∗T)(18)phiR=exp((gammax−1)∗V∗FR∗T)(19)XNCX=(Nain3)∗Caout∗phiF−(Naout3)∗Cai∗phiR1+0.0003∗((Naout3)Cain+(Nain3)∗Caout);(20)INCX=PNCX∗XNCX(21)IPMCA=IPMCAbar∗Cai2Cai2+KmPMCA2
+The remaining ionic currents, pumps, and transporters were optimized to data available in the experimental literature and/or taken from computational models of vascular smooth muscle and cardiac cells. The sodium–potassium pump (INaK) current was modeled using data from smooth muscle cells from mesenteric resistance arteries of the guinea pig (Tong et al., 2011; Nakamura et al., 1999) and the voltage dependency was adapted from the Luo–Rudy II model (Luo and Rudy, 1994). The sodium–calcium exchanger current (INCX) was adapted from the formulation in the ten Tusscher model (ten Tusscher et al., 2004) and the Luo–Rudy II model (Luo and Rudy, 1994). Finally, the sarcolemma calcium pump (IPMCA) current was adapted from the Kargacin model (Kargacin, 1994).
+
+$$
+N_{pow}=(Q10^{\frac{T−309.2}{10}});
+$$
+
+
+
+$$
+N_{1}=\frac{(K_{out}^{1.1})}{K_{out}^{1.1}+KmNaK_{K}^{1.1}};
+$$
+
+
+
+$$
+N_{2}=\frac{(Na_{in}^{1.7})}{Na_{in}^{1.7}+KmNaK_{Na}^{1.7}};
+$$
+
+
+
+$$
+N_{0}=\frac{1.0}{1+(0.1245∗exp(−0.1∗V∗\frac{F}{R∗T}))+(2.19e−3∗(e^{(\frac{Na_{out}}{49.71})})∗e^{(−1.9∗V∗\frac{F}{R∗T})})};
+$$
+
+
+
+$$
+I_{NaK}=I_{NaK_{max}}∗N_{1}∗N_{2}∗N_{0}∗N_{pow}
+$$
+
+
+
+$$
+phi_{F}=exp(gammax∗V∗\frac{F}{R∗T})
+$$
+
+
+
+$$
+phi_{R}=exp((gammax−1)∗V∗\frac{F}{R∗T})
+$$
+
+
+
+$$
+X_{NCX}=\frac{(Na_{in}^{3})∗Ca_{out}∗phi_{F}−(Na_{out}^{3})∗Ca_{i}∗phi_{R}}{1+0.0003∗((Na_{out}^{3})Ca_{in}+(Na_{in}^{3})∗Ca_{out})};
+$$
+
+
+
+$$
+I_{NCX}=P_{NCX}∗X_{NCX}
+$$
+
+
+
+$$
+I_{PMCA}=I_{PMCAbar}∗\frac{Ca_{i}^{2}}{Ca_{i}^{2}+K_{mPMCA}^{2}}
+$$
 
 We next set out to connect the ionic models and models of Ca2+ handling to make predictions in the whole cell. In Figure 5, experimental data indicate that the electrical activity of isolated mesenteric smooth muscle cells in male and female myocytes recorded in current-clamp mode is characterized by an oscillating membrane potential under physiological conditions. The membrane potential is marked by repetitive spontaneous transient hyperpolarization (TH), a ubiquitous feature of vascular smooth muscle cells (Jaggar et al., 2000; Désilets et al., 1989; Bychkov et al., 1997; Bae et al., 1999) as shown in Figure 5A. Both male (black trace) and female (blue trace) myocytes exhibited membrane hyperpolarizing transients in the potential range of –50 to –20 mV. Notably, we observed that female myocytes always maintained a higher depolarizing state between the hyperpolarization events compared to male myocytes.
 
@@ -116,13 +222,13 @@ Next, using the whole-cell vascular smooth muscle myocyte computational model, w
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/90604/elife-90604-fig6-v1.jpg)
 
-**Figure 6.:** KVTOT) block in male and female myocytes.(A) Simulated time course of male IKv2.1 (top panel, solid traces) and IKv1.5 (lower panel, dashed traces) at three different baseline membrane potentials (–45 mV green, –40 mV blue, and –35 mV black). (B) Simulated time course of female IKv2.1 (top panel solid traces) and IKv1.5 (lower panel, dashed traces) at three different baseline membrane potentials (–45 mV light blue, –40 mV purple, and –35 mV red). Current contribution to IKVTOT from KV1.5 (indicated by asterisks) and KV2.1 in male and female myocytes at a baseline membrane potential of –45 mV (C), –40 mV (D), and –35 mV (E).
+**Figure 6.:** (A) Simulated time course of male IKv2.1 (top panel, solid traces) and IKv1.5 (lower panel, dashed traces) at three different baseline membrane potentials (–45 mV green, –40 mV blue, and –35 mV black). (B) Simulated time course of female IKv2.1 (top panel solid traces) and IKv1.5 (lower panel, dashed traces) at three different baseline membrane potentials (–45 mV light blue, –40 mV purple, and –35 mV red). Current contribution to IKVTOT from KV1.5 (indicated by asterisks) and KV2.1 in male and female myocytes at a baseline membrane potential of –45 mV (C), –40 mV (D), and –35 mV (E).
 
 Having explored the regulation of graded membrane potential by the activation of IKVTOT to counterbalance the nonselective cations currents (INSC), we next explored the effects of steady membrane depolarization in the in silico vascular smooth muscle cell myocyte model on ICa in male and female myocytes. We predicted ICa in our male and female simulations at steady-state membrane depolarization after simulation for 500 s. We observed that as the membrane depolarizes from –55 to –35 mV, ICa in male myocytes increased from 0 to 1.0 pA while in female myocytes ICa increased from 0 to 1.5 pA as shown in Figure 7A, suggesting that ICa is larger in female compared to those of male myocytes. We recorded the predicted [Ca2+]i and observed that ICa led to a higher calcium influx in female compared to male simulations as shown in Figure 7B. To illustrate in detail, we show in Figure 7C and D time traces of in silico predictions of membrane voltage at –40 mV (top panel), ICa (middle panel), and [Ca2+]i (lower panel) corresponding to the male and female data points indicated by black and blue arrows, respectively, shown in Figure 7A and B. In the male case (Figure 7C), at a steady membrane potential of –40 mV, L-type calcium CaV1.2 channels produced a current of 0.5 pA. However, in female simulations (Figure 7D), we observed that at a steady membrane potential of –40 mV, L-type calcium CaV1.2 channels produced a current of 0.65 pA. We calculated that at –40 mV, two CaV1.2 channels are needed to sustain 0.5 pA of current in male myocytes while three CaV1.2 channels are needed to sustain 0.65 pA of current in female myocytes. Although the sex-specific differences in male and female simulations at –40 mV are small, a 15 nM difference in the overall response of [Ca2+]i can have a profound effect on the constriction state of the myocytes. The predictions from the Hernandez–Hernandez model provide a comprehensive picture of physiological conditions and support the idea that a small number of CaV1.2 channels supply the steady Ca2+ influx needed to support a maintained constricted state in small arteries and arterioles (Fleischmann et al., 1994; Rubart et al., 1996). The differences between males and females are notable in the context of observations indicating varied sex-based responses to antihypertensive agents that target the Ca2+ handling system in vascular smooth muscle cells.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/90604/elife-90604-fig7-v1.jpg)
 
-**Figure 7.:** Ca) and calcium influx in male and female vascular smooth muscle cells.(A) Male and female whole-cell ICa membrane potential relationship. (B) Male and female intracellular calcium concentration in the cytosolic compartment at indicated membrane potential. (C) Time course of membrane potential in male vascular smooth muscle cells before (black) and after (gray) simulated nifedipine application (top panel). Corresponding time course of L-type calcium current ICa before (black) and after (gray) simulated nifedipine application (middle panel) and intracellular calcium [Ca2+]i concentration before (black) and after (gray) simulated nifedipine application (lower panel). (D) Time course of membrane potential in female vascular smooth muscle cells before (blue) and after (pink) simulated nifedipine application (top panel). Corresponding time course of L-type calcium current ICa before (blue) and after (pink) simulated nifedipine application (middle panel) and intracellular calcium [Ca2+]i concentration before (blue) and after (pink) simulated nifedipine application (lower panel).
+**Figure 7.:** (A) Male and female whole-cell ICa membrane potential relationship. (B) Male and female intracellular calcium concentration in the cytosolic compartment at indicated membrane potential. (C) Time course of membrane potential in male vascular smooth muscle cells before (black) and after (gray) simulated nifedipine application (top panel). Corresponding time course of L-type calcium current ICa before (black) and after (gray) simulated nifedipine application (middle panel) and intracellular calcium [Ca2+]i concentration before (black) and after (gray) simulated nifedipine application (lower panel). (D) Time course of membrane potential in female vascular smooth muscle cells before (blue) and after (pink) simulated nifedipine application (top panel). Corresponding time course of L-type calcium current ICa before (blue) and after (pink) simulated nifedipine application (middle panel) and intracellular calcium [Ca2+]i concentration before (blue) and after (pink) simulated nifedipine application (lower panel).
 
 Next, we simulated the effects of calcium channel blocker nifedipine on ICa at a steady membrane potential of –40 mV in male and female simulations. Briefly, previous studies Davis et al., 1992 have shown that at the therapeutic dose of nifedipine (i.e., about 0.1 μM) L-type Cav1.2 channel currents are reduced by about 60–70%. Accordingly, we decreased ICa in our mathematical simulations by the same extent. In Figure 7C and D, we show the predicted male (gray) and female (pink) time course of membrane voltage at –40 mV (top panel), ICa (middle panel), and [Ca2+]i (lower panel). First, we observed that in both male and females 0.1 μM nifedipine modifies the frequency of oscillation in the membrane potential by causing a reduction in oscillation frequency. Second, both male and female simulations (middle panels) show that 0.1 μM nifedipine caused a reduction of ICa to levels that are very similar in male and female myocytes following treatment. Consequently, the reduction of ICa causes both male and female simulations to reach a very similar baseline [Ca2+]i of about 85 nM (lower panels). As a result, simulations provide evidence supporting the idea that CaV1.2 channels are the predominant regulators of intracellular [Ca2+] entry in the physiological range from –40 mV to –20 mV. Importantly, these predictions also suggest that clinically relevant concentrations of nifedipine cause larger overall reductions in Ca2+ influx in female than in male arterial myocytes.
 
@@ -142,7 +248,7 @@ Our simulations (lines) are well validated by experimental recordings (symbols) 
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/90604/elife-90604-fig9-v1.jpg)
 
-**Figure 9.:** i in male and female vessels and response to clinically used L-type Ca2+ channel blocker.(A) Intracellular calcium [Ca]i in female (blue symbols, n=3) and male (black symbols, n=5) arteries at intravascular pressures ranging from 20 to 120 mmHg. Simulations showing [Ca]i in the idealized female and male vessels are shown with blue and black solid lines, respectively. Simulated [Ca]i after the application of clinically used L-type Ca2+ channel blocker nifedipine is shown with dashed lines for male (black) and female (blue). (B) Comparison of the percentage change of [Ca]i in male (black) and female (blue) after the application L-type Ca2+ channel blocker nifedipine at 80 mmHg and 120 mmHg. *p<0.05, **p<0.01.
+**Figure 9.:** (A) Intracellular calcium [Ca]i in female (blue symbols, n=3) and male (black symbols, n=5) arteries at intravascular pressures ranging from 20 to 120 mmHg. Simulations showing [Ca]i in the idealized female and male vessels are shown with blue and black solid lines, respectively. Simulated [Ca]i after the application of clinically used L-type Ca2+ channel blocker nifedipine is shown with dashed lines for male (black) and female (blue). (B) Comparison of the percentage change of [Ca]i in male (black) and female (blue) after the application L-type Ca2+ channel blocker nifedipine at 80 mmHg and 120 mmHg. *p<0.05, **p<0.01.
 
 Finally, in our simulations, we computed the effects of [Ca2+]i after the application of clinically relevant calcium channel blocker nifedipine. We observed a substantial reduction of [Ca2+]i in both male (Figure 9A, dashed black line) and female (Figure 9A, dashed blue line). Significant differences were found in the physiological range of intravascular pressure from 40 to 120 mmHg. In the summary data (Figure 9B), we quantified the relative change of [Ca2+]i in male (black) and female (blue) after the application of 0.1 μM L-type Ca2+ channel blocker nifedipine at 80 mmHg and 120 mmHg. Our results show that nifedipine, when applied to male vessels, decreases [Ca2+]i by 22 and 25% at 80 mmHg and 120 mmHg, respectively. However, the same dose of nifedipine when applied to female vessels decreases [Ca2+]i by 38 and 45% at 80 mmHg and 120 mmHg. The results suggest that female arterial smooth muscle is more sensitive to clinically used Ca2+ channel blockers than male smooth muscle.
 
@@ -180,7 +286,7 @@ Regarding CaV1.2 channels, simulations forecast the clinically relevant concentr
 
 The model predictions are aligned with documented sex-specific differences in antihypertensive drug responses (Ueno and Sato, 2012; Kloner et al., 1996). Previous studies, notably by Kloner et al., have illustrated this point quantitatively, highlighting a more pronounced diastolic BP response in women (91.4%) compared to men (83%) when treated with dihydropyridine-type channel blockers, such as amlodipine. Importantly, this distinction persisted even after adjusting for confounding factors such as baseline BP, age, weight, and dosage per kilogram (Kloner et al., 1996). Another interesting observation from Kajiwara et al. emphasizes that vasodilation-related adverse symptoms occur more frequently in younger women (<50 y) compared to their male counterparts, again suggesting a heightened sensitivity to dihydropyridine-type calcium channel blockers (Kajiwara et al., 2014).
 
-## Limitations
+### Limitations
 
 The model presented here describes the necessary and sufficient ion channels, pumps, and transporters to describe the electrical activity and Ca2+ signaling of an isolated mesenteric smooth muscle cell in the absence of complex signaling pathways. Such an approach enabled us to perform a component dissection to analyze the sex-specific differences observed in the fundamental electrophysiology of male and female myocytes. However, it is well known that vascular smooth muscle cells are subject to a plethora of stimuli from endothelial cells, neurotransmitters, endocrine, and paracrine signals (Karlin, 2015). The next phase of the project includes an expansion of the model to incorporate receptor-mediated signaling pathways that are essential for blood pressure control.
 
@@ -188,23 +294,23 @@ Excitation–contraction coupling refers to an electrical stimulus that drives t
 
 To conclude, we developed and present the Hernandez–Hernandez model of male and female isolated mesenteric vascular myocytes. An additional limitation of our study is the reliance on predominantly murine data. Although mouse arteries do present numerous parallels with human arteries, including analogous intravascular pressure-myogenic tone relationships, resting membrane potentials, and the expression of typical ionic channels like CaV1.2, BKCa channels, and RyRs (Yang et al., 2013; Nystoriak et al., 2017; Nieves-Cintrón et al., 2017). Future research should assess the direct applicability and implication of our findings in human subjects.
 
-## Conclusions
+### Conclusions
 
 The Hernandez–Hernandez model of the isolated mesenteric vascular myocyte was informed and validated with experimental data from male and female vascular myocytes. We then used the model to reveal sex-specific mechanisms of KV2.1 and CaV1.2 channels in controlling membrane potential and Ca2+ dynamics. In doing so, we predicted that very few channels are needed to contribute to and sustain the oscillatory behavior of the membrane potential and calcium signaling. We expanded our computational framework to include a 1D tissue representation, providing a basis for simulating the effect of drug effects within a vessel. The model predictions suggested differences in the response of male and female myocytes to drugs and the underlying mechanisms for those differences. These predictions may constitute the first step toward better hypertensive therapy for males and females.
 
 ## Materials and methods
 
-## Experimental
+### Experimental
 
-## Animals
+#### Animals
 
 This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All of the animals were handled according to approved institutional animal care and use committee (IACUC) protocols of the University of California Davis. IACUC protocol number is 22503. In this study, 8- to 12-week-old male and female mice C57BL/6J (The Jackson Laboratory, Sacramento, CA) were used. Animals were housed under standard light-dark cycles and allowed to feed and drink ad libitum. Animals were euthanized with a single lethal dose of sodium pentobarbital (250 mg/kg) intraperitoneally. All experiments were conducted in accordance with the University of California Institutional Animal Care and Use Committee guidelines.
 
-## Isolation of arterial myocytes from systemic resistance arterioles
+#### Isolation of arterial myocytes from systemic resistance arterioles
 
 Third- and fourth-order mesenteric arteries were carefully cleaned of surrounding adipose and connective tissues, dissected, and held in ice-cold dissecting solution (Mg2+-PSS; 5 mM KCl, 140 mM NaCl, 2 mM MgCl2, 10 mM glucose, and 10 mM HEPES adjusted to pH 7.4 with NaOH). Arteries were first placed in dissecting solution supplemented with 1.23 mg/ml papain (Worthington Biochemical, Lakewood, NJ) and 1 mg/ml DTT for 14 min at 37°C. This was followed by a second 5 min incubation in dissecting solution supplemented with 1.6 mg/ml collagenase H (Sigma-Aldrich, St. Louis, MO), 0.5 mg/ml elastase (Worthington Biochemical), and 1 mg/ml trypsin inhibitor from Glycine max (Sigma-Aldrich) at 37°C. Arteries were rinsed three times with dissection solution and single cells were obtained by gentle trituration with a wide-bore glass pipette. Myocytes were maintained at 4°C in dissecting solution until used.
 
-## Patch-clamp electrophysiology
+#### Patch-clamp electrophysiology
 
 All electrophysiological recordings were acquired at room temperature (22–25°C) with an Axopatch 200B amplifier and Digidata 1440 digitizer (Molecular Devices, Sunnyvale, CA). Borosilicate patch pipettes were pulled and polished to resistances of 3–6 MΩ for all experiments using a micropipette puller (model P-97, Sutter Instruments, Novato, CA).
 
@@ -216,70 +322,134 @@ BKca-mediated STOCs and membrane potential were recorded using the perforated wh
 
 STOCs were recorded using the perforated whole-cell configuration. The composition of the external bath solution consisted of 134 mM NaCl, 6 mM KCl, 1 mM MgCl2,2 mM CaCl2, 10 mM glucose, and 10 mM HEPES adjusted to a pH of 7.4 using NaOH. Pipettes were filled with an internal solution of 110 mM K-aspartate, 10 mM NaCL, 30 mM KCl, 1 mM MgCl2, 160 μg/ml amphotericin B, and 10 mM HEPES using NaOH to adjust to pH to 7.2. Myocytes were sustained at a holding potential of –70 mV before being exposed to a 400 ms ramp protocol from –140 to +60 mV. A voltage error of 12.8 mV resulting from the liquid junction potential was corrected for offline. Kir channels were blocked using 100 µM Ba2+.
 
-## Statistics
+#### Statistics
 
 Data are expressed as mean ± SEM. All data sets were tested for normality. Normally distributed data were analyzed using t-tests or ANOVA. ANOVAs were followed by multiple comparison tests (i.e., Tukey). p<0.05 was considered statistically significant.
 
-## Computational modeling and simulation
+### Computational modeling and simulation
 
-## Cell size and structure
+#### Cell size and structure
 
 The mean capacitance of the cells was experimentally calculated to be 16 ± 3 pF based on all the male and female WT mesenteric C57BL/6J cells utilized in the experiments (N = 45). Assuming the cells are roughly cylindrical in shape, the expected radius should be 2.485 μM and a length of 100 μM, leading to a surface area of 1.6 × 10–5 cm2 and a total volume of approximately 1.94 × 10–12 l. The cell capacitance of excitable membranes is assumed to be 1.0 × 10–6 F/cm2; with the calculated surface area, the estimated total cell capacitance is Cm = 16 pF.
 
 Because the total cell volume is roughly 2 × 10–12 l, it is assumed that 50% of the total cell volume is occupied by organelles. There are three main compartments in vascular myocytes important to the regulation of membrane potential and calcium signaling: the cytosol, SR, and specialized junctional domains formed by the SR and the plasma membrane. The cytosol occupies approximately 50% of total cell volume (Vcyt = 1.0 × 10–12 l). The SR occupies approximately 5% of cell cytosolic volume (VSR = 5.0 × 10–14 l), and the junctional domain volume is approximately 1% of the cytosol volume (VJun = 0.5 × 10–14 l) (Nelson et al., 1995; Pérez et al., 2001; Pérez et al., 1999; Kaßmann et al., 2019).
 
-## Model development
+#### Model development
 
-The male and female in silico models are single whole-cell models based on the electrophysiology of isolated mesenteric vascular smooth muscle myocytes. A schematic of the proposed model is shown in Figure 1. The membrane electrophysiology can be described by the differential equation(22)dVdt=−IionCm
+The male and female in silico models are single whole-cell models based on the electrophysiology of isolated mesenteric vascular smooth muscle myocytes. A schematic of the proposed model is shown in Figure 1. The membrane electrophysiology can be described by the differential equation
 
-where V is voltage, t is time, Cm is membrane capacitance, and Iion is the sum of transmembrane currents. The contribution of each transmembrane current to the total transmembrane ionic current can be described by the following equation:(23)Iion=(IKv1.5+IKv2.1+IBKCa+IK,b+ICav1.2+IPMCA+ICa,b+INCX+INSC+INaK+INa,b)
+$$
+\frac{dV}{dt}=\frac{−I_{ion}}{C_{m}}
+$$
+
+where V is voltage, t is time, Cm is membrane capacitance, and Iion is the sum of transmembrane currents. The contribution of each transmembrane current to the total transmembrane ionic current can be described by the following equation:
+
+$$
+I_{ion}=(I_{Kv1.5}+I_{Kv2.1}+I_{BKCa}+I_{K,b}+I_{Cav1.2}+I_{PMCA}+I_{Ca,b}+I_{NCX}+I_{NSC}+I_{NaK}+I_{Na,b})
+$$
 
 The 11 transmembrane currents are generated by ion channels, pumps, and transporters. Currents from ion channels include the voltage-gated L-type calcium current (ICa), the nonselective cation current (INSC), voltage-gated potassium currents (IKv1.5 and IKv2.1), and the large-conductance Ca2+-sensitive potassium current (IBKCa). Additionally, there are three background or leak currents (IK,b, ICa,b, and INa,b). Currents from pumps and transporters include the sodium–potassium pump current (INaK), plasma membrane Ca-ATPase transport current (IPMCA), and sodium–calcium exchanger current (INCX).
 
-Cytosolic concentrations of sodium and potassium as a function of time are determined by considering the sum of their respective fluxes into the cytosol.(24)d[K+]cytdt=−(IKv2.1+IKv1.5+IBKca+IK,b−2INaK+INSC−K)zKVolcytF(25)d[Na+]cytdt=−(3INCX+3INaK+ INa,b+INSC−Na)zNaVolcytF
+Cytosolic concentrations of sodium and potassium as a function of time are determined by considering the sum of their respective fluxes into the cytosol.
 
-where F is the Faraday’s constant, Volcyt is the cytoplasmic volume, and zK and zNa are the valence of potassium and sodium ions, respectively.
+$$
+\frac{d[K^{+}]_{cyt}}{dt}=−\frac{(I_{Kv2.1}+I_{Kv1.5}+I_{BKca}+I_{K,b}−2I_{NaK}+I_{NSC−K})}{z_{K}Vol_{cyt}F}
+$$
+
+
+
+$$
+\frac{d[Na^{+}]_{cyt}}{dt}=−\frac{(3I_{NCX}+3I_{NaK}+ I_{Na,b}+I_{NSC−Na})}{z_{Na}Vol_{cyt}F}
+$$
+
+where F is the Faraday’s constant, Volcyt is the cytoplasmic volume, and $z_{K}$ and $z_{Na}$ are the valence of potassium and sodium ions, respectively.
 
 The calcium dynamics is compartmentalized into three distinct regions: cytosol [Ca2+]i, the SR [Ca2+]SR, and the junctional region [Ca2+]jun. The cytosol includes a calcium buffer, which we assume can be described as a first-order dynamics process.
 
-## Cytosolic calcium region ([Ca2+]i)
+##### Cytosolic calcium region ([Ca2+]i)
 
-Calcium concentration in this region varies between 100 and 300 nM (Moosmang et al., 2003) and is mainly influenced by the following fluxes: transmembrane pumps and transporters, the SR Ca-ATPase (JSERCA), diffusion from the junctional domain region (JJun-Cyt) and the calcium buffer calmodulin (BUFCAM).(26)d[Ca2+]idt=−(INCX+ICav1.2+ICa,b−2IPMCA)zCaFVCyt−JSERCA+Jjun−cyt−(kBUFon∗Cai∗(BUFT−BUFCAM)−kBUFoff∗BUFCAM)
+Calcium concentration in this region varies between 100 and 300 nM (Moosmang et al., 2003) and is mainly influenced by the following fluxes: transmembrane pumps and transporters, the SR Ca-ATPase (JSERCA), diffusion from the junctional domain region (JJun-Cyt) and the calcium buffer calmodulin (BUFCAM).
 
-## Sarcoplasmic reticulum region ([Ca2+]SR)
+$$
+\frac{d[Ca^{2+}]_{i}}{dt}=−\frac{(I_{NCX}+I_{Cav1.2}+I_{Ca,b}−2I_{PMCA})}{z_{Ca}FV_{Cyt}}−J_{SERCA}+J_{jun−cyt}−(k_{BUF_{on}}∗Ca_{i}∗(BUF_{T}−BUF_{CAM})−k_{BUF_{off}}∗BUF_{CAM})
+$$
 
-Calcium concentration in this region varies between 100 and 150 μM (ZhuGe et al., 1999) and is mainly influenced by the SR Ca-ATPase (JSERCA) and the flux from the ryanodine receptors (JRyR).(27)d[Ca]SRdt=[VolCytVolSR]JSERCA−[VolCytVolSR][JRyr]
+##### Sarcoplasmic reticulum region ([Ca2+]SR)
 
-## Junctional region ([Ca2+]jun)
+Calcium concentration in this region varies between 100 and 150 μM (ZhuGe et al., 1999) and is mainly influenced by the SR Ca-ATPase (JSERCA) and the flux from the ryanodine receptors (JRyR).
 
-Calcium concentration in this region varies between 10 and 100 μM (Pérez et al., 2001; Pérez et al., 1999) and is mainly influenced by the flux from the ryanodine receptors (JRyR) and the diffusion from the junctional region to the cytoplasm (JJun-Cyt)(28)d[Ca]jundt=[VolCytVoljun]JRyr−[VolCytVoljun]Jjun−cyt
+$$
+\frac{d[Ca]_{SR}}{dt}=[\frac{Vol_{Cyt}}{Vol_{SR}}]J_{SERCA}−[\frac{Vol_{Cyt}}{Vol_{SR}}][J_{Ryr}]
+$$
+
+##### Junctional region ([Ca2+]jun)
+
+Calcium concentration in this region varies between 10 and 100 μM (Pérez et al., 2001; Pérez et al., 1999) and is mainly influenced by the flux from the ryanodine receptors (JRyR) and the diffusion from the junctional region to the cytoplasm (JJun-Cyt)
+
+$$
+\frac{d[Ca]_{jun}}{dt}=[\frac{Vol_{Cyt}}{Vol_{jun}}]J_{Ryr}−[\frac{Vol_{Cyt}}{Vol_{jun}}]J_{jun−cyt}
+$$
 
 In the model, the flux of JSERCA was adapted from the Luo–Rudy II model (Luo and Rudy, 1994), and the flux of JRyR was adapted from previous models of ryanodine receptors activation, originally introduced in the field of cardiac electrophysiology (Hernandez-Hernandez et al., 2015; Greene and Shiferaw, 2021; Shiferaw et al., 2003).
 
-## Parameter optimization and reformulation of the gating ion channel models
+### Parameter optimization and reformulation of the gating ion channel models
 
-The ionic current models of ICa, IKv2.1, and IKv1.5 were optimized using the approach employed by Kernik et al., 2019. Here, the open probability Po of each voltage-dependent gating variable ‘n’ was defined by opening- and closing-rate voltage-dependent functions αn and βn, respectively, and was modeled by simple exponentials of the form:(29)αn(V)=x1e(Vx2)(30)βn(V)=x3e(Vx4)(31)τn(V)=1αn(V)+βn(V)+x5
+The ionic current models of ICa, IKv2.1, and IKv1.5 were optimized using the approach employed by Kernik et al., 2019. Here, the open probability Po of each voltage-dependent gating variable ‘n’ was defined by opening- and closing-rate voltage-dependent functions αn and βn, respectively, and was modeled by simple exponentials of the form:
+
+$$
+\alpha_{n}(V)=x_{1}e^{(\frac{V}{x_{2}})}
+$$
+
+
+
+$$
+\beta_{n}(V)=x_{3}e^{(\frac{V}{x_{4}})}
+$$
+
+
+
+$$
+\tau_{n}(V)=\frac{1}{\alpha_{n}(V)+\beta_{n}(V)}+x_{5}
+$$
 
 The steady-state availability remains the same as the classical Hodgkin–Huxley formulations, and the time constant values follow a modified version formulation by accommodating an extra parameter x5 in Equation 31. (x1, x2, x3, x4, x5) are parameters to be optimized using experimental data. We used the parameter optimization employed by Kernik et al., 2019, which minimizes the error between model and experimental data using the Nelder–Mead minimization of the error function. Random small perturbations (<10%) were applied to find local minima to improve data fit. The parameter fit with the minimal error function value after 1000–10,000 perturbations was used as the optimal model fit to the data.
 
-## Cellular simulations with noise
+### Cellular simulations with noise
 
-The simulations encapsulate the cumulative effect of stochastic ion channel activity on cell voltage dynamics through the fluctuating current term, ξ(t), into the membrane potential (dV/dt) equation (Goldwyn and Shea-Brown, 2011), as shown in Equation 32. Here it is assumed ξ(t) is only a function of time and is implemented as Gaussian white noise (Tanskanen and Alvarez, 2007).(32)dVdt=−Itotal(V)Cm+σξ(t)
+The simulations encapsulate the cumulative effect of stochastic ion channel activity on cell voltage dynamics through the fluctuating current term, ξ(t), into the membrane potential (dV/dt) equation (Goldwyn and Shea-Brown, 2011), as shown in Equation 32. Here it is assumed ξ(t) is only a function of time and is implemented as Gaussian white noise (Tanskanen and Alvarez, 2007).
 
-We use the Euler–Maruyama numerical method for updating Equations 33 and 34 as follows:(33)V(t+Δt)=V(t)−I(V(t))CmΔt+σ∗randN∗Δt(34)d[Ca]SRdt=[VolCytVolSR]JSERCA−[VolCytVolSR][JRyr]+σ∗randN∗Δt
+$$
+\frac{dV}{dt}=−\frac{I_{total}(V)}{C_{m}}+\sigmaξ(t)
+$$
+
+We use the Euler–Maruyama numerical method for updating Equations 33 and 34 as follows:
+
+$$
+V(t+Δt)=V(t)−\frac{I(V(t))}{C_{m}}Δt+\sigma∗randN∗\sqrt{Δt}
+$$
+
+
+
+$$
+\frac{d[Ca]_{SR}}{dt}=[\frac{Vol_{Cyt}}{Vol_{SR}}]J_{SERCA}−[\frac{Vol_{Cyt}}{Vol_{SR}}][J_{Ryr}]+\sigma∗randN∗\sqrt{Δt}
+$$
 
 where randN is a random number from a normal distribution (N(0,1)) with mean 0 and variance 1. Δt is the time step and σ is the ‘diffusion coefficient’, which represents the amplitude of the noise. The numerical method for updating the voltage was forward Euler.
 
-## 1D simulations
+### 1D simulations
 
-The idealized 1D representation of a vessel was developed by connecting 400 Hernandez–Hernandez model cells in series via simulated resistances to represent gap junctions. For each cell in the cable, the Hernandez–Hernandez model was used to compute ionic currents and concentration changes. The temporal transmembrane fluxes of the Hernandez–Hernandez model are related to the spatial or current flow by a finite difference approximation of the cable equation (Shaw and Rudy, 1997; Jack et al., 1975; Hodgkin et al., 1946)(35)[Cm(Vi(t+1)−VitΔt)+Iion+Istim]=a4(Rmyo+RgΔx)(Vi−1t−2Vi−1t+Vi−1t)ΔxΔx
+The idealized 1D representation of a vessel was developed by connecting 400 Hernandez–Hernandez model cells in series via simulated resistances to represent gap junctions. For each cell in the cable, the Hernandez–Hernandez model was used to compute ionic currents and concentration changes. The temporal transmembrane fluxes of the Hernandez–Hernandez model are related to the spatial or current flow by a finite difference approximation of the cable equation (Shaw and Rudy, 1997; Jack et al., 1975; Hodgkin et al., 1946)
+
+$$
+[C_{m}(\frac{V_{i}^{(t+1)}−V_{i}^{t}}{Δt})+I_{ion}+I_{stim}]=\frac{a}{4(R_{myo}+\frac{R_{g}}{Δx})}\frac{(V_{i−1}^{t}−2V_{i−1}^{t}+V_{i−1}^{t})}{ΔxΔx}
+$$
 
 where Iion represents the individual membrane ionic current densities (pA/pF) of the Hernandez–Hernandez model, Istim is the stimulus current density (pA/pF) set to zero in our simulation, a is the radius of the fiber (5 μM), Cm is the membrane capacity (pA/pF), Vit is membrane potential at segment i and time t, Δx is the discretization element (100 μM = 0.01 cm). Where Rmyo is the myoplasmic resistance (Rmyo = 150 Ω cm) and Rg is the gap junction resistance (Rg = 71.4 Ω cm2).
 
-## Sensitivity analysis
+### Sensitivity analysis
 
 The baseline models in male and female vascular smooth muscle cells were analyzed through a parameter sensitivity assessment using multivariable linear regression, following the methodology introduced by Sobie, 2009. The scope of the sensitivity analysis encompassed variations in the maximal conductance and maximal ion transport rates of the transmembrane currents, including IKv1.5, IKv2.1, IBKCa, IK,b, ICav1.2, IPMCA, ICa,b, INCX, INSC, INaK, and INa,b. All other parameters, notably those defining model kinetics, remained constant at the values established by the foundational model. Scaling factors were randomly selected from a log-normal distribution characterized by a median value of 1 and a standard deviation of 0.1 (Kernik et al., 2019).
 
-## Simulation protocols
+### Simulation protocols
 
 Code for simulations and analysis was written in C++ and MATLAB 2018a. The single vascular smooth muscle code was run on an Apple Mac Pro machine with two 2.7 GHz 12-Core Intel Xeon processors and an HP ProLiant DL585 G7 server with a 2.7 GHz 28-core AMD Opteron processor. Vessel simulations were implemented in C++ and parallelized using OpenMP. The C++ code was compiled with the Intel ICC compiler, version 18.0.3. Numerical results were visualized using MATLAB R2018a by The MathWorks, Inc. All codes and detailed model equations are available on GitHub (copy archived at ClancyLabUCD, 2023).

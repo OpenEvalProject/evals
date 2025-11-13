@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02k7v4d05 Institute of Plant Sciences, University of Bern Bern Switzerland
-2. https://ror.org/00vasag41 Neuchâtel Platform of Analytical Chemistry, Faculty of Science, University of Neuchâtel Neuchâtel Switzerland
+1. Institute of Plant Sciences, University of Bern Bern Switzerland ([ROR:02k7v4d05](https://ror.org/02k7v4d05))
+2. Neuchâtel Platform of Analytical Chemistry, Faculty of Science, University of Neuchâtel Neuchâtel Switzerland ([ROR:00vasag41](https://ror.org/00vasag41))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ In order to understand the kinetics of information transfer between plants and t
 
 ## Results
 
-## Delayed burst in induced volatile emissions in plants exposed to volatiles of a herbivore-attacked neighbor
+### Delayed burst in induced volatile emissions in plants exposed to volatiles of a herbivore-attacked neighbor
 
 When maize plants are exposed to volatiles from herbivore-attacked neighbors, they start to release terpenes (Hu et al., 2019; Ruther and Fürstenau, 2005). To understand the temporal dynamics of this phenomenon, we conducted a detailed time-course analysis of terpene release by receiver plants exposed to volatiles from sender plants under attack by Spodoptera exigua caterpillars (Figure 1). Herbivore feeding began around 12:00 and within 3 hr, we detected a small induction of sesquiterpenes [C15H25+, m/z=205.20], monoterpenes [C10H17+, m/z=137.13], 4,8-dimethylnona-1,3,7-triene (DMNT) [C11H19+, m/z=151.15], and 4,8,12-trimethyltrideca-1,3,7,11-tetraene (TMTT) [C16H27+, m/z=219.21] in undamaged receiver plants. Volatile emission was severely impaired during the night, regardless of treatment. Interestingly, as soon as the light was restored, we observed a strong burst of terpene release from receiver plants, which was two to five times higher than the release the day before (Figure 1). Thus, exposure to volatiles from a herbivore-attacked plant triggers a delayed burst in terpene emission in neighboring plants.
 
@@ -39,7 +39,7 @@ When maize plants are exposed to volatiles from herbivore-attacked neighbors, th
 
 **Figure 1.:** Emission kinetics of herbivore-induced plant volatile (HIPV)-induced terpenes in undamaged receiver plants are shown. Dark green points represent mean emission of herbivore-damaged sender plants connected to undamaged receiver plants, with the emissions from damaged sender plants only subtracted. Black points represent undamaged sender plants connected to undamaged receiver plants, with the emissions from undamaged sender plants only subtracted. Blue rectangles represent the night (dark phase). Abbreviations: DMNT, 4,8-dimethylnona-1,3,7-triene; TMTT, 4,8,12-trimethyltrideca-1,3,7,11-tetraene. Error bars = SE. n=8–10. Compounds were identified based on their molecular weight+1, as all compounds were protonated. Sesquiterpenes: m/z=205.20; monoterpenes: m/z=137.13; DMNT: m/z=151.15; TMTT: m/z=219.21.
 
-## The delayed burst in terpene emission is not explained by overaccumulation during the night
+### The delayed burst in terpene emission is not explained by overaccumulation during the night
 
 Why do receiver plants show a delayed burst in volatile-induced terpenoid release? During the night, plants close their stomata to limit water loss (Caird et al., 2007), which may also impair terpene release, thus leading to an accumulation of terpenes in the leaves and a burst once stomata open again (Seidl-Adams et al., 2015; Loughrin et al., 1994). To determine if terpenes accumulate above daytime levels in maize leaves of HIPV-exposed plants during the night, we measured internal foliar pools of the sesquiterpenes, β-caryophyllene, β-farnesene, and α-bergamotene, as well as the homoterpene, TMTT, over time. Internal pools of β-caryophyllene, β-farnesene, and TMTT were marginally induced after 3 hr, but only became significantly induced after 8 hr of exposure to HIPVs (Figure 2A, B, and D, Table 1). For all three, accumulation remained higher during the night (16.75 hr) as well as the following day. α-Bergamotene only began accumulating in leaves on the second day (Figure 2C, Table 1). Thus, internal terpene pools remain comparable between night and day, suggesting that terpenes do not continue accumulating during the night and that, even when terpenes are emitted in large amounts on day 2, internal pools do not drop below nighttime levels. Nevertheless, the volatiles that are present during the night may be released suddenly the second day. Some control plants accumulated measurable amounts of β-caryophyllene at night, likely due to biological and experimental variation. This type of variation was not visible in total sesquiterpene emissions measured by proton transfer reaction time-of-flight mass spectrometry (PTR-ToF-MS) (Figure 1), likely because β-caryophyllene is a minor sesquiterpene in B73 (Block et al., 2018) and closed stomata block sesquiterpene emission at night (Seidl-Adams et al., 2015). To get insight into terpene biosynthesis we measured the expression of terpene synthases in receiver plants. In maize, farnesene pyrophosphate synthase 3 (FPPS3), terpene synthase 2 and 10 (TPS2 and TPS10, respectively), as well as dimethylnonatriene/trimethyltetradecatetraene synthase (CYP92C5) are rate limiting for terpene production (Block et al., 2019; Richter et al., 2015; Richter et al., 2016). All genes were induced by HIPV exposure during daytime, but not during the night. FPPS3 was slightly induced after 3 hr and significantly induced after 8 hr of HIPV exposure (Figure 2E, Table 1). TPS2 was slightly induced 3, 8, and 22 hr after the onset of HIPV exposure (Figure 2F, Table 1). TPS10 was significantly induced after 3 and 22 hr of HIPV exposure (Figure 2G, Table 1). CYP92C5 was only significantly induced after 3 hr of HIPV exposure (Figure 2H, Table 1). The patterns of volatile terpene biosynthesis do not support a scenario where the terpene burst on the second day is due to continued biosynthesis but lack of emission during the night.
 
@@ -47,7 +47,254 @@ Why do receiver plants show a delayed burst in volatile-induced terpenoid releas
 
 **Figure 2.:** Accumulation of terpenes and induction of terpene biosynthesis genes in receiver plants was measured over time. (A–D) Internal foliar pools of terpenes in receiver plants. (E–H) Expression of terpene biosynthesis genes in receiver plants. Dark green bars represent receiver plants exposed to herbivore-induced plant volatiles (HIPVs) and light gray bars represent receiver plants connected to undamaged sender plants. Blue rectangles represent the night (dark phase). Abbreviations: TMTT, 4,8,12-trimethyltrideca-1,3,7,11-tetraene; FPPS3, farnesene pyrophosphate synthase 3; TPS2, terpene synthase 2; TPS10, terpene synthase 10; CYP92C5, dimethylnonatriene/trimethyltetradecatetraene synthase. = p<0.1, *=p<0.05, **=p<0.01, ***=p<0.001 as determined by a Welch’s two-sample t-test. Bars = mean ± SE. n=4–6.
 
-## The delayed burst in terpenoid emission is associated with clocked jasmonate production
+**Table 1.**
+ Welch’s two-sample t-test results comparing foliar terpene pools, biosynthesis genes, and phytohormone levels between herbivore-induced plant volatile (HIPV)-exposed and control receiver plants.Bold values: p<0.05, underlined values: p<0.1. Abbreviations: β-car, β-caryophyllene; β-farn, β-farnesene; α-berg, α-bergamotene; TMTT, 4,8,12-trimethyltrideca-1,3,7,11-tetraene; FPPS3, farnesene pyrophosphate synthase 3; TPS2, terpene synthase 2; TPS10, terpene synthase 10; CYP92C5, dimethylnonatriene/trimethyltetradecatetraene synthase; OPDA, 12-oxophytodienoic acid; JA, jasmonic acid; JA-Ile, jasmonic acid-isoleucine; OPR7, oxo-phytodienoate reductase 7.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="12">Time</th>
+    </tr>
+    <tr>
+      <th>Response</th>
+      <th colspan="3">3 hr</th>
+      <th colspan="3">8 hr</th>
+      <th colspan="3">16.75 hr</th>
+      <th colspan="3">22 hr</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>t</th>
+      <th>p</th>
+      <th>df</th>
+      <th>t</th>
+      <th>p</th>
+      <th>df</th>
+      <th>t</th>
+      <th>p</th>
+      <th>df</th>
+      <th>t</th>
+      <th>p</th>
+      <th>df</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>β-car</td>
+      <td>–2.20</td>
+      <td>0.08</td>
+      <td>5</td>
+      <td>–2.65</td>
+      <td>0.03</td>
+      <td>9</td>
+      <td>–3.00</td>
+      <td>0.03</td>
+      <td>6</td>
+      <td>–14.05</td>
+      <td>&lt;0.001</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>β-farn</td>
+      <td>–2.08</td>
+      <td>0.07</td>
+      <td>8</td>
+      <td>–2.60</td>
+      <td>0.03</td>
+      <td>9</td>
+      <td>–4.47</td>
+      <td>0.002</td>
+      <td>9</td>
+      <td>–11.38</td>
+      <td>&lt;0.001</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>α-berg</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>–5.56</td>
+      <td>0.003</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>TMTT</td>
+      <td>–1.80</td>
+      <td>0.13</td>
+      <td>5</td>
+      <td>–2.68</td>
+      <td>0.03</td>
+      <td>7</td>
+      <td>–9.18</td>
+      <td>&lt;0.001</td>
+      <td>4</td>
+      <td>–5.23</td>
+      <td>0.003</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FPPS3</td>
+      <td>–2.31</td>
+      <td>0.05</td>
+      <td>8</td>
+      <td>–2.62</td>
+      <td>0.03</td>
+      <td>9</td>
+      <td>–0.82</td>
+      <td>0.44</td>
+      <td>7</td>
+      <td>–0.28</td>
+      <td>0.78</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>TPS2</td>
+      <td>–2.39</td>
+      <td>0.05</td>
+      <td>6</td>
+      <td>–2.19</td>
+      <td>0.09</td>
+      <td>4</td>
+      <td>–0.62</td>
+      <td>0.55</td>
+      <td>8</td>
+      <td>–2.24</td>
+      <td>0.07</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>TPS10</td>
+      <td>–2.65</td>
+      <td>0.05</td>
+      <td>5</td>
+      <td>–1.97</td>
+      <td>0.12</td>
+      <td>4</td>
+      <td>–1.34</td>
+      <td>0.25</td>
+      <td>4</td>
+      <td>–3.50</td>
+      <td>0.02</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>CYP92C5</td>
+      <td>–3.62</td>
+      <td>0.01</td>
+      <td>6</td>
+      <td>–1.11</td>
+      <td>0.30</td>
+      <td>8</td>
+      <td>–1.94</td>
+      <td>0.11</td>
+      <td>5</td>
+      <td>–1.38</td>
+      <td>0.22</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OPDA</td>
+      <td>–0.26</td>
+      <td>0.80</td>
+      <td>4</td>
+      <td>0.07</td>
+      <td>0.95</td>
+      <td>5</td>
+      <td>0.65</td>
+      <td>0.55</td>
+      <td>4</td>
+      <td>–4.18</td>
+      <td>0.008</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>JA</td>
+      <td>0.32</td>
+      <td>0.78</td>
+      <td>2</td>
+      <td>1.22</td>
+      <td>0.31</td>
+      <td>3</td>
+      <td>0.91</td>
+      <td>0.41</td>
+      <td>4</td>
+      <td>–1.40</td>
+      <td>0.22</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>JA-Ile</td>
+      <td>–0.48</td>
+      <td>0.68</td>
+      <td>2</td>
+      <td>1.21</td>
+      <td>0.31</td>
+      <td>3</td>
+      <td>0.24</td>
+      <td>0.82</td>
+      <td>5</td>
+      <td>–2.98</td>
+      <td>0.04</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>OPR7</td>
+      <td>–5.70</td>
+      <td>0.002</td>
+      <td>5</td>
+      <td>–2.36</td>
+      <td>0.05</td>
+      <td>7</td>
+      <td>1.32</td>
+      <td>0.22</td>
+      <td>10</td>
+      <td>–3.01</td>
+      <td>0.02</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+
+### The delayed burst in terpenoid emission is associated with clocked jasmonate production
 
 Volatile release in maize is regulated by jasmonates (Martin et al., 2003; Ament et al., 2004). To understand whether the delayed terpene burst is associated with jasmonate signaling, we measured the levels of 12-oxo-phytodienoic acid (OPDA), jasmonic acid (JA), and jasmonic acid-isoleucine (JA-Ile), as well as the expression of oxo-phytodienoate reductase 7 (OPR7), which is critical for JA biosynthesis (Yan et al., 2012). We found a significant induction of OPDA and JA-Ile production as well as OPR7 expression at the beginning of the second day, 22 hr after the onset of volatile exposure (Figure 3, Table 1). Thus, jasmonate production is temporally aligned with the delayed terpene burst at the onset of the second day.
 
@@ -55,25 +302,568 @@ Volatile release in maize is regulated by jasmonates (Martin et al., 2003; Ament
 
 **Figure 3.:** Foliar jasmonate concentrations (A–C) and jasmonate biosynthesis (OPR7; D) in receiver plants over time are shown. Dark green bars represent receiver plants exposed to herbivore-induced plant volatiles (HIPVs) and light gray bars represent receiver plants connected to undamaged sender plants. Blue rectangles represent the night (dark phase). Abbreviations: OPDA, 12-oxophytodienoic acid; JA, jasmonic acid; JA-Ile, jasmonic acid-isoleucine; OPR7, oxo-phytodienoate reductase 7. = p<0.1, *=p<0.05, **=p<0.01, ***=p<0.001 as determined by a Welch’s two-sample t-test. Bars = mean ± SE. n=3–6.
 
-## The delayed volatile burst is conserved under continuous light
+### The delayed volatile burst is conserved under continuous light
 
 To test whether the delayed burst in terpene volatiles is linked to light:dark transitions, we exposed maize plants to HIPVs under continuous light. Similar to exposure during a normal light regime, the largest burst of terpene emission occurred ca. 12–18 hr after the onset of volatile exposure (Figure 4), suggesting that the temporal delay in volatile emission in receiver plants is not dependent on light fluctuations, but is otherwise clocked. In order to control for potential differences in induction capacity at different times of day, we designed a second continuous light experiment. However, instead of starting the herbivory treatment at ca. 12:00 hr, we started it around 20:00 hr. Similarly, we observed an initial bump in terpene emission followed by a larger burst 10–12 hr after HIPV exposure (Figure 4—figure supplement 1). In both continuous light experiments the ‘second day’ burst occurred somewhat earlier than under normal light conditions. It is possible that stomata, which are closed in the dark, delay the onset of the terpene burst under dark:light transitions.
 
-## The delayed volatile burst cannot be fully explained by the emission kinetics of bioactive herbivory-induced volatiles
+![Figure 4.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig4-v1.jpg)
+
+**Figure 4.:** Emission kinetics of herbivore-induced plant volatile (HIPV)-induced terpenes in undamaged receiver plants under continuous light are shown. Plants were grown under normal light conditions. Lights were left on continuously following the start of the treatment. Dark green points represent the mean emission of herbivore damaged sender plants connected to undamaged receiver plants with the emissions from damaged sender plants only subtracted. Black points represent undamaged sender plants connected to undamaged receiver plants, with the emissions from undamaged sender plants only subtracted. Yellow rectangles represent when the lights would typically be turned off. Abbreviations: DMNT, 4,8-dimethylnona-1,3,7-triene; TMTT, 4,8,12-trimethyltrideca-1,3,7,11-tetraene. Error bars = SE. n=8–10. Compounds were identified based on their molecular weight+1, as all compounds were protonated. Sesquiterpenes: m/z=205.20; monoterpenes: m/z=137.13; DMNT: m/z=151.15; TMTT: m/z=219.21.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Emission kinetics of herbivore-induced plant volatile (HIPV)-induced terpenes in undamaged receiver plants under continuous light are shown. Herbivory on sender plants ca. 1 hr before lights would typically be turned off (around 20:00 hr). Plants were grown under normal light conditions. Lights were left on continuously following the start of the treatment. Dark green points represent the mean emission of herbivore damaged sender plants connected to undamaged receiver plants with the emissions from damaged sender plants only subtracted. Black points represent undamaged sender plants connected to undamaged receiver plants, with the emissions from undamaged sender plants only subtracted. Yellow rectangles represent when the lights would typically be turned off. Abbreviations: DMNT, 4,8-dimethylnona-1,3,7-triene; TMTT, 4,8,12-trimethyltrideca-1,3,7,11-tetraene. Error bars = SE. n=6. Compounds were identified based on their molecular weight+1, as all compounds were protonated. Sesquiterpenes: m/z=205.20; monoterpenes: m/z=137.13; DMNT: m/z=151.15; TMTT: m/z=219.21.
+
+### The delayed volatile burst cannot be fully explained by the emission kinetics of bioactive herbivory-induced volatiles
 
 A simple explanation for the delayed volatile burst may be that the bioactive volatiles are more strongly emitted from sender plants at the onset of day 2, thus triggering a stronger volatile response in the receiver plants at this time. To test this hypothesis, we analyzed volatile emission kinetics of S. exigua-infested plants over time. We focused our analysis on GLVs and indole, which are known to induce and/or prime volatile release in neighboring maize plants (Hu et al., 2019; Engelberth et al., 2004; Wang et al., 2023; Ruther and Fürstenau, 2005). Terpenes are not known to prime or induce volatile release in maize, and were thus not included in the sender plant analysis (Ruther and Fürstenau, 2005). We analyzed GLV and indole emission data of the sender plants from the experiments depicted in Figure 1 and Figure 4, Figure 5, and then correlated their emission with the induction of terpenes in receiver plants (Figure 6). We found strong positive correlations between hexenyl acetate, hexenal, hexen-1-ol, and indole emissions in sender plants and terpene responses in receiver plants when plants had a dark period (Figure 6). Interestingly, this was not the case under continuous light, where the apex of bioactive volatile emission in sender plants was not temporally aligned with the apex of terpene responses in receiver plants (Figure 6). Sender plant emissions even showed slight negative correlations with terpene induction in receiver plants under continuous light. Thus, the emission kinetics of bioactive volatiles from sender plants cannot fully explain the delayed terpene burst.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig5-v1.jpg)
 
-**Figure 5.:** S. exigua-damaged plants.Pink points represent the mean emission of herbivore-damaged sender plants. Gray points represent mean emissions of undamaged sender plants. Blue rectangles represent the night (dark phase). Yellow rectangles represent when the lights would typically be turned off. Continuous light-exposed plants were grown under normal light conditions, however lights were left on continuously following the start of the treatment. Error bars = SE. n=8–10. Compounds were identified based on their molecular weight+1, as all compounds were protonated. Sesquiterpenes: m/z=205.20; monoterpenes: m/z=137.13; DMNT: m/z=151.15; TMTT: m/z=219.21.
+**Figure 5.:** Pink points represent the mean emission of herbivore-damaged sender plants. Gray points represent mean emissions of undamaged sender plants. Blue rectangles represent the night (dark phase). Yellow rectangles represent when the lights would typically be turned off. Continuous light-exposed plants were grown under normal light conditions, however lights were left on continuously following the start of the treatment. Error bars = SE. n=8–10. Compounds were identified based on their molecular weight+1, as all compounds were protonated. Sesquiterpenes: m/z=205.20; monoterpenes: m/z=137.13; DMNT: m/z=151.15; TMTT: m/z=219.21.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig6-v1.jpg)
 
 **Figure 6.:** The left panels depict scatter plot correlation matrices of bioactive volatile emissions from damaged sender plants and terpene emissions from herbivore-induced plant volatile (HIPV)-exposed receiver plants. Only data from the first measurement following the addition of herbivores to sender plants are included. Upper scatter plot (blue box) shows correlations under normal light conditions and lower scatter plot (yellow box) depicts correlations under continuous light. For continuous light-exposed plants, lights were left on continuously following the start of the treatment. Each black point represents the mean value of all individuals at a given time point after herbivory began. Regression curves are only shown for significant relationships (p<0.05). Panels on the right-hand side depict heat maps based on the value of Pearson’s correlation coefficient between two given compounds. Numbers in the center of each square are Pearson’s correlation coefficient. Correlation coefficients contained in a pink rectangles indicate a significant correlation (p<0.05). (Z)-3-hexenyl acetate (HAC), hexenal (Hexa), hexen-1-ol (Hexo), and indole (Ind) were from sender plants, and sesquiterpenes (SQT), monoterpenes (MNT), 4,8-dimethylnona-1,3,7-triene (DMNT), and 4,8,12-trimethyltrideca-1,3,7,11-tetraene (TMTT) were from receiver plants.
 
-## The combination of direct induction and priming can explain the delayed terpene burst in receiver plants
+### The combination of direct induction and priming can explain the delayed terpene burst in receiver plants
 
 Based on the above observations, we reasoned that, under natural conditions, the strong delayed volatile burst may be due to the interaction of an initial volatile burst that primes plants for higher volatile release at the onset of the second day, and a secondary trigger in the form of bioactive volatiles released from sender plants at the onset of the second day. To test this hypothesis, we exposed receiver plants to volatiles from control plants or volatiles from herbivory-induced plants for 1.25 hr. We then disconnected the receiver plants and exposed them to clean air for 17 hr, until the beginning of the next day. Half of the plants were then exposed to HAC as a secondary trigger. HAC was selected as an inducer as it showed the strongest correlation with all measured terpenes (Figure 6). Following the short exposure to HIPVs, we detected a generally small, but significant, induction of sesquiterpenes, monoterpenes, DMNT, and TMTT emissions in receiver plants (Figure 7, Table 2). During the night, no differences between treatments were detected any more. At the beginning of the next day, we found a slight induction in terpene emissions, most apparent for sesquiterpenes and TMTT, in plants that had been exposed to herbivory-induced volatiles 18 hr prior (Figure 7, Table 2). HAC exposure at the beginning of the next day also induced terpene emissions. Furthermore, HAC induced a stronger release of all terpenes in plants that had been exposed to HIPVs the previous day. In an independent experiment, we also tested whether HAC sensitivity per se may be higher at the start of the light period. We exposed maize seedlings to HAC dispensers either 30 min or 4 hr 30 min after lights came on. We found induction in terpene emission to be similar regardless of when induction began (Figure 7—figure supplement 1). Thus, exposure to HIPVs prompts maize plants to release more terpenes the next day and also primes maize plants to respond more strongly to a secondary HIPV trigger. Together, these two phenomena result in a pronounced terpene burst.
+
+**Table 2.**
+ Aligned rank transformed nonparametric factorial repeated measures ANOVA results from data presented in Figure 7.Bold values: p<0.05 and underlined values: p<0.1. Abbreviations: HAC, (Z)-3-hexenyl acetate; SQT, sesquiterpenes; MNT, monoterpenes; DMNT, 4,8-dimethylnona-1,3,7-triene; TMTT, 4,8,12-trimethyltrideca-1,3,7,11-tetraene.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Herb</th>
+      <th colspan="3">HAC</th>
+      <th colspan="3">Time</th>
+      <th colspan="3">Herb × HAC</th>
+      <th colspan="3">Herb × Time</th>
+      <th colspan="3">HAC × Time</th>
+      <th colspan="3">Herb × HAC × Time</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>F</th>
+      <th>p</th>
+      <th>df</th>
+      <th>F</th>
+      <th>p</th>
+      <th>df</th>
+      <th>F</th>
+      <th>p</th>
+      <th>df</th>
+      <th>F</th>
+      <th>p</th>
+      <th>df</th>
+      <th>F</th>
+      <th>p</th>
+      <th>df</th>
+      <th>F</th>
+      <th>p</th>
+      <th>df</th>
+      <th>F</th>
+      <th>p</th>
+      <th>df</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SQT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Base</td>
+      <td>0.22</td>
+      <td>0.64</td>
+      <td>1,54</td>
+      <td>0.23</td>
+      <td>0.62</td>
+      <td>1,54</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0.05</td>
+      <td>0.82</td>
+      <td>1,54</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>D1</td>
+      <td>13.8</td>
+      <td>&lt;0.001</td>
+      <td>1,54</td>
+      <td>0.40</td>
+      <td>0.53</td>
+      <td>1,54</td>
+      <td>8.03</td>
+      <td>&lt;0.001</td>
+      <td>4,216</td>
+      <td>0.30</td>
+      <td>0.59</td>
+      <td>1,54</td>
+      <td>1.85</td>
+      <td>0.12</td>
+      <td>4,216</td>
+      <td>0.10</td>
+      <td>0.98</td>
+      <td>4,216</td>
+      <td>0.23</td>
+      <td>0.92</td>
+      <td>4,216</td>
+    </tr>
+    <tr>
+      <td>Dark</td>
+      <td>2.15</td>
+      <td>0.15</td>
+      <td>1,54</td>
+      <td>0.17</td>
+      <td>0.69</td>
+      <td>1,54</td>
+      <td>118</td>
+      <td>&lt;0.001</td>
+      <td>6,324</td>
+      <td>0.28</td>
+      <td>0.60</td>
+      <td>1,54</td>
+      <td>1.65</td>
+      <td>0.13</td>
+      <td>6,324</td>
+      <td>1.06</td>
+      <td>0.39</td>
+      <td>6,324</td>
+      <td>0.83</td>
+      <td>0.55</td>
+      <td>6,324</td>
+    </tr>
+    <tr>
+      <td>D2</td>
+      <td>8.39</td>
+      <td>0.005</td>
+      <td>1,54</td>
+      <td>8.69</td>
+      <td>0.005</td>
+      <td>1,54</td>
+      <td>12.8</td>
+      <td>&lt;0.001</td>
+      <td>5,270</td>
+      <td>0.002</td>
+      <td>0.97</td>
+      <td>1,54</td>
+      <td>1.22</td>
+      <td>0.30</td>
+      <td>5,270</td>
+      <td>23.9</td>
+      <td>&lt;0.001</td>
+      <td>5,270</td>
+      <td>0.93</td>
+      <td>0.46</td>
+      <td>2,570</td>
+    </tr>
+    <tr>
+      <td>MNT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Base</td>
+      <td>0.05</td>
+      <td>0.82</td>
+      <td>1,54</td>
+      <td>0.01</td>
+      <td>0.94</td>
+      <td>1,54</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>1.33</td>
+      <td>0.25</td>
+      <td>1,54</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>D1</td>
+      <td>7.84</td>
+      <td>0.007</td>
+      <td>1,54</td>
+      <td>0.02</td>
+      <td>0.88</td>
+      <td>1,54</td>
+      <td>36.5</td>
+      <td>&lt;0.001</td>
+      <td>4,216</td>
+      <td>2.03</td>
+      <td>0.16</td>
+      <td>1,54</td>
+      <td>1.17</td>
+      <td>0.32</td>
+      <td>4,216</td>
+      <td>0.47</td>
+      <td>0.76</td>
+      <td>4,216</td>
+      <td>0.83</td>
+      <td>0.51</td>
+      <td>4,216</td>
+    </tr>
+    <tr>
+      <td>Dark</td>
+      <td>2.75</td>
+      <td>0.10</td>
+      <td>1,54</td>
+      <td>1.41</td>
+      <td>0.24</td>
+      <td>1,54</td>
+      <td>28.1</td>
+      <td>&lt;0.001</td>
+      <td>6,324</td>
+      <td>2.62</td>
+      <td>0.11</td>
+      <td>1,54</td>
+      <td>1.04</td>
+      <td>0.40</td>
+      <td>6,324</td>
+      <td>1.04</td>
+      <td>0.40</td>
+      <td>6,324</td>
+      <td>1.02</td>
+      <td>0.41</td>
+      <td>6,324</td>
+    </tr>
+    <tr>
+      <td>D2</td>
+      <td>4.82</td>
+      <td>0.03</td>
+      <td>1,54</td>
+      <td>5.73</td>
+      <td>0.02</td>
+      <td>1,54</td>
+      <td>197</td>
+      <td>&lt;0.001</td>
+      <td>5,270</td>
+      <td>1.68</td>
+      <td>0.20</td>
+      <td>1,54</td>
+      <td>2.57</td>
+      <td>0.03</td>
+      <td>5,270</td>
+      <td>9.90</td>
+      <td>&lt;0.001</td>
+      <td>5,270</td>
+      <td>2.82</td>
+      <td>0.02</td>
+      <td>5,270</td>
+    </tr>
+    <tr>
+      <td>DMNT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Base</td>
+      <td>0.60</td>
+      <td>0.44</td>
+      <td>1,54</td>
+      <td>0.91</td>
+      <td>0.34</td>
+      <td>1,54</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>3.52</td>
+      <td>0.07</td>
+      <td>1,54</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>D1</td>
+      <td>66.3</td>
+      <td>&lt;0.001</td>
+      <td>1,54</td>
+      <td>2.55</td>
+      <td>0.12</td>
+      <td>1,54</td>
+      <td>81.4</td>
+      <td>&lt;0.001</td>
+      <td>4,216</td>
+      <td>0.69</td>
+      <td>0.41</td>
+      <td>1,54</td>
+      <td>65.1</td>
+      <td>&lt;0.001</td>
+      <td>4,216</td>
+      <td>0.62</td>
+      <td>0.65</td>
+      <td>4,216</td>
+      <td>1.10</td>
+      <td>0.36</td>
+      <td>4,216</td>
+    </tr>
+    <tr>
+      <td>Dark</td>
+      <td>2.34</td>
+      <td>0.13</td>
+      <td>1,54</td>
+      <td>0.45</td>
+      <td>0.50</td>
+      <td>1,54</td>
+      <td>10.7</td>
+      <td>&lt;0.001</td>
+      <td>6,324</td>
+      <td>0.51</td>
+      <td>0.48</td>
+      <td>1,54</td>
+      <td>1.05</td>
+      <td>0.40</td>
+      <td>6,324</td>
+      <td>0.20</td>
+      <td>0.98</td>
+      <td>6,324</td>
+      <td>0.30</td>
+      <td>0.94</td>
+      <td>6,324</td>
+    </tr>
+    <tr>
+      <td>D2</td>
+      <td>7.01</td>
+      <td>0.01</td>
+      <td>1,54</td>
+      <td>155</td>
+      <td>&lt;0.001</td>
+      <td>1,54</td>
+      <td>52.4</td>
+      <td>&lt;0.001</td>
+      <td>5,270</td>
+      <td>3.67</td>
+      <td>0.06</td>
+      <td>1,54</td>
+      <td>1.74</td>
+      <td>0.13</td>
+      <td>5,270</td>
+      <td>54.6</td>
+      <td>&lt;0.001</td>
+      <td>5,270</td>
+      <td>2.09</td>
+      <td>0.07</td>
+      <td>5,270</td>
+    </tr>
+    <tr>
+      <td>TMTT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Base</td>
+      <td>0.12</td>
+      <td>0.73</td>
+      <td>1,54</td>
+      <td>0</td>
+      <td>0.99</td>
+      <td>1,54</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>2.23</td>
+      <td>0.14</td>
+      <td>1,54</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>D1</td>
+      <td>8.91</td>
+      <td>0.004</td>
+      <td>1,54</td>
+      <td>0.67</td>
+      <td>0.42</td>
+      <td>1,54</td>
+      <td>3.05</td>
+      <td>0.02</td>
+      <td>4,216</td>
+      <td>0.01</td>
+      <td>0.92</td>
+      <td>1,54</td>
+      <td>1.43</td>
+      <td>0.23</td>
+      <td>4,216</td>
+      <td>0.58</td>
+      <td>0.68</td>
+      <td>4,216</td>
+      <td>0.43</td>
+      <td>0.79</td>
+      <td>4,216</td>
+    </tr>
+    <tr>
+      <td>Dark</td>
+      <td>2.68</td>
+      <td>0.11</td>
+      <td>1,54</td>
+      <td>0.33</td>
+      <td>0.57</td>
+      <td>1,54</td>
+      <td>7.67</td>
+      <td>&lt;0.001</td>
+      <td>6,324</td>
+      <td>1.43</td>
+      <td>0.24</td>
+      <td>1,54</td>
+      <td>1.22</td>
+      <td>0.30</td>
+      <td>6,324</td>
+      <td>0.46</td>
+      <td>0.84</td>
+      <td>6,324</td>
+      <td>2.00</td>
+      <td>0.07</td>
+      <td>6,324</td>
+    </tr>
+    <tr>
+      <td>D2</td>
+      <td>5.83</td>
+      <td>0.02</td>
+      <td>1,54</td>
+      <td>15.2</td>
+      <td>&lt;0.001</td>
+      <td>1,54</td>
+      <td>5.28</td>
+      <td>&lt;0.001</td>
+      <td>5,270</td>
+      <td>0.01</td>
+      <td>0.93</td>
+      <td>1,54</td>
+      <td>0.35</td>
+      <td>0.88</td>
+      <td>5,270</td>
+      <td>1.69</td>
+      <td>0.14</td>
+      <td>5,270</td>
+      <td>1.03</td>
+      <td>0.40</td>
+      <td>5,270</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 7.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig7-v1.jpg)
+
+**Figure 7.:** Sender plants were connected to receiver plants 30 min prior to herbivore exposure on sender plants and left connected for 1.25 hr following exposure (time between perforated vertical lines). After 1.25 hr, chambers were disconnected and measurements were collected from receiver plant chambers only. The following day, after light was restored, plants were treated with (Z)-3-hexenyl acetate (HAC) dispensers to simulate bioactive signals (indicated by red solid vertical line). Blue rectangles represent the night (dark phase). *=p<0.05, **=p<0.01, ***=p<0.001 as determined by aligned rank transformed nonparametric factorial repeated measures ANOVA. Abbreviations: HIPV, herbivore-induced plant volatile; DMNT, 4,8-dimethylnona-1,3,7-triene; TMTT, 4,8,12-trimethyltrideca-1,3,7,11-tetraene. Colored points represent mean emissions standardized by fresh weight (fw). Error bars = SE. n=12–16. Compounds were identified based on their molecular weight+1, as all compounds were protonated. Sesquiterpenes: m/z=205.20; monoterpenes: m/z=137.13; DMNT: m/z=151.15; TMTT: m/z=219.21.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig7-figsupp1-v1.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Representative GLV emissions from a single attacked plant on the second day of herbivory (18–24 hr of exposure to herbivore-induced plant volatiles [HIPVs]) are shown in black. The perforated red horizontal line represents the average across all time points presented. Compounds were identified based on their molecular weight+1, as all compounds were protonated. Sesquiterpenes: m/z=205.20; monoterpenes: m/z=137.13; DMNT: m/z=151.15; TMTT: m/z=219.21.
 
 ## Discussion
 
@@ -89,40 +879,40 @@ Airborne information transfer has the potential to play a major role in plant co
 
 ## Materials and methods
 
-## Plant and insect growth
+### Plant and insect growth
 
 V2-stage Zea mays (maize, B73) was used throughout this study. At this stage, maize has four leaves: two are fully developed, one is expanding and one is emerging. Maize plants were grown in commercial potting soil (Selmaterra, BiglerSamen, Switzerland) in 180 ml pots. Plants were grown in a greenhouse supplemented with artificial lights (ca. 300 µmol m–2 s–1). Between light and dark phases, plants were supplemented with lower light (ca. 60 µmol m–2 s–1) for 15 min to more accurately simulate day:night transitions. The greenhouse was maintained at 22 ± 2°C, 40–60% relative humidity, with a 14 hr:10 hr, light:dark cycle. S. exigua (Frontier Agricultural Sciences, USA) were reared from eggs on artificial diet (Maag et al., 2014) and used for experiments when they reached the fourth instar stage.
 
-## Herbivore treatment and experimental setup
+### Herbivore treatment and experimental setup
 
 The herbivore treatment consisted of adding 3 fourth instar larvae onto plants (sender plants). For controls, sender plants were left undamaged. Two principal experimental setups were used to determine the kinetics of HIPV emissions in both sender plants (damaged by herbivores) and receiver plants (exposed to HIPVs from sender plants).
 
-## Setup 1
+#### Setup 1
 
 Single plants (senders) in transparent glass chambers (Ø×H 12×45 cm) were connected with PTFE tubing to a second transparent glass chamber that was either left empty or filled with a second plant (receiver). Chambers were sealed other than an airflow inlet on the first chamber and an air outlet on the second chamber, allowing HIPVs from sender plants to pass through the second chamber. Cumulative HIPV emissions from senders and receivers were measured as described in the section ‘Volatile sampling’. In order to determine emissions from receiver plants alone, HIPV emissions from sender plants connected to an empty chamber were subtracted from sender plants connected to receiver plants (Figure 8).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/89855/elife-89855-fig8-v1.jpg)
 
-## Setup 2
+#### Setup 2
 
 To isolate emissions solely from receiver plants, chambers containing sender and receiver plants were initially kept separate for basal HIPV emission profiling. Chambers were then connected as in setup 1 for 30 min before herbivore treatment. After herbivores were added to sender plants, chambers remained connected for 1.25 hr, after which time sender and receiver plants were once again disconnected and rearranged so that receiver plants had both clean air flowing through the inlet and an outlet for volatile collection and profiling (Figure 8).
 
-## Preparation of HAC dispensers
+### Preparation of HAC dispensers
 
 HAC dispensers were prepared as previously described with modifications (Hu et al., 2019; Wang et al., 2023). In brief, 1.5 ml glass vials (Ø×H 11.6×32 mm) containing ca. 100 mg glass wool were filled with 200 µl HAC (>98%; Sigma-Aldrich, Buchs, Switzerland) diluted 50-fold in EtOH and sealed with screw caps containing a rubber septum. The caps were pierced with a 1 µl glass capillary and sealed with PTFE tape. Vials were then covered with aluminum foil and equilibrated for at least 5 days before use. The (Z)-3 isomers of all GLVs measured in this study (hexenyl acetate, hexenal, and hexen-1-ol) are known to be bioactive (Engelberth et al., 2004; Matsui et al., 2012) and interconvertible, with hexenal and hexenyl acetate for instance being transformed into hexen-1-ol. As such, we designed the dispensers to emit a molar concentration of HAC comparable to the molar concentration of all (Z)-3 GLVs emitted by herbivore-infested plants. HAC dispensers emitted HAC at a rate of 4.68 (±0.40 SD) nmol hr–1 and maize seedlings infested with 3 fourth instar S. exigua larvae emitted all GLVs at a rate of 1.94 nmol hr–1 (±0.25 SD). Of note, GLV emissions induced by caterpillars vary over time, and can be more than twofold higher than the average during times of strong active feeding (Figure 7—figure supplement 2). Thus, the release rate of the dispensers is within the plant’s physiological range.
 
-## Volatile sampling
+### Volatile sampling
 
 Volatile emissions were sampled using setups 1 and 2. Volatile profiling was measured with a high-throughput platform comprised of a PTR-ToF-MS (Tofwerk, Switzerland) and an automated headspace sampling system (Abon Life Sciences, Switzerland) supplied with clean airflow (0.8 l min–1). An outlet on receiver plants was accessible to the autosampler/PTR-ToF-MS system. The PTR-ToF-MS system drew air at 0.1 l min–1. Between samples, a zero gas measurement was performed for 3 s to avoid contamination. At each time point volatiles were continuously measured for 15–25 s and averaged to a single mean per sample. Complete mass spectra (0–500 m/z) were recorded in positive mode at ca. 10 Hz. The PTR was operated at 100°C and an E/N of approximately 120 Td. The volatile data extraction and processing were conducted using Tofware software package v3.2.2 (Tofwerk, Switzerland). Protonated compounds were identified based on their molecular weight+1. During volatile collection LED lights (DYNA, heliospectra) were placed ca. 80 cm above the glass cylinders and provided light at ca. 300 μmol m–2 s –1. Identical light:dark cycle timing as in the greenhouse for plant growth was used. In order to quantify GLVs emitted from herbivore-infested plants and HAC dispensers, we collected total volatile emissions for 1 hr using an identical volatile collection and analysis method described in Erb et al., 2015. In brief, volatiles were collected in Super-Q adsorbent traps, which were then eluted in dichloromethane and injected into a GC-MS (Agilent, USA). Compound identities were confirmed with mass spectroscopy analysis and similarity to library matches (NIST search 2.2 Mass Spectral Library, USA). Emission rates of the Z-3 isomers of GLVs were quantified using a standard curve with synthetic compounds.
 
-## Foliar terpene pools and gene expression
+### Foliar terpene pools and gene expression
 
 Setup 1 was used to determine terpene pools and gene expression. After 3, 8, 16.75, and 22 hr of exposure to HIPVs, the oldest developing leaf of receiver plants was harvested and flash-frozen on liquid nitrogen. The oldest developing leaf was chosen as it is the largest and highly responsive to bioactive HIPVs (Wang et al., 2023). A new set of plants was used for each time point. Analysis of foliar terpene pools was conducted using slightly modified, previously described, methods (Escobar-Bravo et al., 2022). In brief, ca. 15 mg of ground fresh frozen leaf tissue was added to a 20 ml precision thread headspace glass vial sealed with a magnetic screw cap fitted with a silicone/PTFE septum (Gertel GmbH & Co. KG, Germany). Immediately after a vial was prepared, an SPME fiber (100 μm polydimethylsiloxane coating; Supelco, USA) was inserted into the vial and volatiles were collected for 40 min at 50°C. After collection, volatiles were thermally desorbed for 3 min at 220°C and analyzed using GC-MS (Agilent, USA). Helium was used as the carrier gas at a flow-rate of 1 ml min–1 with a temperature gradient of 5 °C min–1 from 60°C (1 min hold) to 250°C. Compound identification was based on similarity to library matches (NIST search 2.2 Mass Spectral Library, USA). For quantification of gene expression, total RNA was extracted and purified from ca. 80 mg ground fresh frozen tissue using the GeneJET plant RNA extraction kit following the manufacturer’s instructions. Genomic DNA was removed from 1 μg purified RNA using gDNA Eraser (PrimeScript RT Reagent Kit, Perfect Real Time) following the manufacturer’s instructions (Takara Bio Inc, Kusatsu, Japan). Reverse transcription and cDNA was synthesized using PrimeScript Reverse Transcriptase (TaKaRa Bio). Gene expression was determined with quantitative reverse transcription polymerase chain reaction using ORA SEE qPCR Mix (highQu GmbH, Germany) on an Applied Biosystems QuantStudio 5 Real-Time PCR system. The normalized expression (NE) values were calculated as: NE=(1/(PEtargetCttarget))/(1/(PEreferenceCtreference)) where PE = primer efficiency and Ct = cycle threshold (Alba et al., 2015). Ubiquitin (UBI1) was used as the reference gene. Gene identifiers and primer sequences are listed in Supplementary file 1.
 
-## Phytohormone quantification
+### Phytohormone quantification
 
 Plant treatments and tissue collection for phytohormone were identical to foliar terpene and gene expression analysis. The phytohormones JA, JA-Ile, and OPDA were extracted, analyzed, and quantified using a slightly modified version of the method detailed in Glauser et al., 2014. In brief, ca. 80 mg of finely ground fresh frozen leaf tissue was extracted with 1 ml ethylacetate:formic acid (99.5:0.5, vol/vol) spiked with isotopically labeled forms of the abovementioned phytohormones. d5-JA was acquired from CDN Isotopes (Canada), d5-OPDA was acquired from OLChemIm (Czechia), and 13C6-JA-Ile was synthesized at the University of Neuchâtel according to a previously described method (Kramell et al., 1997). Extracts were dried and re-suspended in 200 μl 50% MeOH using a sonicating bath for 30 min. Phytohormones were analyzed using UPLC-MS-MS fitted with an Acuity BEH C18 column (Waters, USA) using a flow-rate of 400 μl/min and an injection volume of 2 μl. The two mobile phases used were 0.05% formic acid in water (A) and 0.05% formic acid in acetonitrile (B) with the following gradient conditions: 5–50% B over 5 min, 60–100% B over 3 min, 100% B for 4 min, and a final re-equilibration at 5% B for 4 min.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed in R version 4.2.2 (R Core Team, 2022). Volatile emissions were analyzed by aligned rank transformed nonparametric factorial repeated measures ANOVA using the package ARTool, as individual plant emission kinetics were measured repeatedly over time (Wobbrock et al., 2011). Internal terpene pools, gene expression, and phytohormone levels were analyzed using Welch’s t-tests between control and HIPV-exposed receiver plants within each time point.

@@ -16,19 +16,19 @@
 
 ### Affiliations
 
-1. https://ror.org/012a77v79 Molecular Reproductive Medicine, Department of Translational Medicine, Lund University Malmo Sweden
-2. https://ror.org/012a77v79 Section for Clinical Chemistry, Department of Translational Medicine, Lund University, Skåne University Hospital Malmö Lund Sweden
-3. https://ror.org/012a77v79 Clinical Protein Science & Imaging, Biomedical Centre, Department of Biomedical Engineering, Lund University Lund Sweden
-4. https://ror.org/05srvzs48 Department of Experimental Design and Bioinformatics, Faculty of Agriculture and Biology, Warsaw University of Life Sciences SGGW Warszawa Poland
-5. https://ror.org/00t9vx427 Department of Molecular Biology, University of Texas Southwestern Medical Center Dallas United States
-6. https://ror.org/012a77v79 Molecular Genetic Reproductive Medicine, Department of Translational Medicine, Lund University Lund Sweden
-7. https://ror.org/00k5j5c86 First Department of Surgery, Tokyo Medical University Nishishinjiku Shinjiku-ku Japan
+1. Molecular Reproductive Medicine, Department of Translational Medicine, Lund University Malmo Sweden ([ROR:012a77v79](https://ror.org/012a77v79))
+2. Section for Clinical Chemistry, Department of Translational Medicine, Lund University, Skåne University Hospital Malmö Lund Sweden ([ROR:012a77v79](https://ror.org/012a77v79))
+3. Clinical Protein Science & Imaging, Biomedical Centre, Department of Biomedical Engineering, Lund University Lund Sweden ([ROR:012a77v79](https://ror.org/012a77v79))
+4. Department of Experimental Design and Bioinformatics, Faculty of Agriculture and Biology, Warsaw University of Life Sciences SGGW Warszawa Poland ([ROR:05srvzs48](https://ror.org/05srvzs48))
+5. Department of Molecular Biology, University of Texas Southwestern Medical Center Dallas United States ([ROR:00t9vx427](https://ror.org/00t9vx427))
+6. Molecular Genetic Reproductive Medicine, Department of Translational Medicine, Lund University Lund Sweden ([ROR:012a77v79](https://ror.org/012a77v79))
+7. First Department of Surgery, Tokyo Medical University Nishishinjiku Shinjiku-ku Japan ([ROR:00k5j5c86](https://ror.org/00k5j5c86))
 
 † Corresponding author
 
 ## Abstract
 
-Reliable biomarkers of androgen activity in humans are lacking. The aim of this study was, therefore, to identify new protein markers of biological androgen activity and test their predictive value in relation to low vs normal testosterone values and some androgen deficiency linked pathologies. Blood samples from 30 healthy GnRH antagonist treated males were collected at three time points: (1) before GnRH antagonist administration; (2) 3 weeks later, just before testosterone undecanoate injection, and (3) after additional 2 weeks. Subsequently, they were analyzed by mass spectrometry to identify potential protein biomarkers of testosterone activity. Levels of proteins most significantly associated with testosterone fluctuations were further tested in a cohort of 75 hypo- and eugonadal males suffering from infertility. Associations between levels of those markers and cardiometabolic parameters, bone mineral density as well as androgen receptor (AR) CAG repeat lengths, were explored. Using receiver operating characteristic analysis, 4-hydroxyphenylpyruvate dioxygenase (4HPPD), insulin-like growth factor-binding protein 6 (IGFBP6), and fructose-bisphosphate aldolase (ALDOB), as well as a Multi Marker Algorithm, based on levels of 4HPPD and IGFBP6, were shown to be best predictors of low (<8 nmol/l) vs normal (>12 nmol/l) testosterone. They were also more strongly associated with metabolic syndrome and diabetes than testosterone levels. Levels of ALDOB and 4HPPD also showed association with AR CAG repeat lengths. We identified potential new protein biomarkers of testosterone action. Further investigations to elucidate their clinical potential are warranted. The work was supported by ReproUnion2.0 (grant no. 20201846), which is funded by the Interreg V EU program.
+Background:Reliable biomarkers of androgen activity in humans are lacking. The aim of this study was, therefore, to identify new protein markers of biological androgen activity and test their predictive value in relation to low vs normal testosterone values and some androgen deficiency linked pathologies.Methods:Blood samples from 30 healthy GnRH antagonist treated males were collected at three time points: (1) before GnRH antagonist administration; (2) 3 weeks later, just before testosterone undecanoate injection, and (3) after additional 2 weeks. Subsequently, they were analyzed by mass spectrometry to identify potential protein biomarkers of testosterone activity. Levels of proteins most significantly associated with testosterone fluctuations were further tested in a cohort of 75 hypo- and eugonadal males suffering from infertility. Associations between levels of those markers and cardiometabolic parameters, bone mineral density as well as androgen receptor (AR) CAG repeat lengths, were explored.Results:Using receiver operating characteristic analysis, 4-hydroxyphenylpyruvate dioxygenase (4HPPD), insulin-like growth factor-binding protein 6 (IGFBP6), and fructose-bisphosphate aldolase (ALDOB), as well as a Multi Marker Algorithm, based on levels of 4HPPD and IGFBP6, were shown to be best predictors of low (<8 nmol/l) vs normal (>12 nmol/l) testosterone. They were also more strongly associated with metabolic syndrome and diabetes than testosterone levels. Levels of ALDOB and 4HPPD also showed association with AR CAG repeat lengths.Conclusions:We identified potential new protein biomarkers of testosterone action. Further investigations to elucidate their clinical potential are warranted.Funding:The work was supported by ReproUnion2.0 (grant no. 20201846), which is funded by the Interreg V EU program.
 
 ## Introduction
 
@@ -46,11 +46,11 @@ Proteomics is a technique aimed to study biological systems based on qualitative
 
 ## Materials and methods
 
-## Study outline
+### Study outline
 
 The study was set up to (1) identify new protein markers of BAA in healthy subjects; (2) test the markers’ predictive values in relation to biochemically diagnosed hypogonadism, metabolic syndrome (MetS), cardiovascular risk lipid profile (CVRLP), diabetes mellitus II (DM), and low bone density (LBD) in infertile men; (3) analyze androgen dependence of the identified proteinsby assessing how their levels associate with AR gene CAG repeat length.
 
-## Subjects
+### Subjects
 
 All subjects were enrolled with informed written consent. The two studies from which they were recruited were approved by the Swedish Ethical Review Authority (approval number: DNR 2014/311, date of approval May 8, 2014; DNR 2011/1, date of approval January 11, 2011).
 
@@ -62,17 +62,151 @@ The first part of the study includes plasma samples obtained from 30 healthy men
 
 To test the clinical predictive value of the proteins identified in the castrated men, we used a cohort of 75 serum samples from 75 men (biological replication, subject age 32–43 years) previously recruited for a study on hypogonadism among men from infertile couples (Bobjer et al., 2016). Eighty-five patients were randomly selected from 213 infertile men and 223 age-matched controls. The selected patients for the present study had the span of subnormal to upper normal range of T. Out of the 85 patients, 10 patients were excluded; 7 due to Klinefelter syndrome, 1 due to missing value of T, and the last 2 were statistical outliers, which were removed after considering the possible causes. One patient had a high level of T (41.6 nmol/l) without androgen replacement therapy and the other because he was the only one diagnosed with obstructive azoospermia. Background characteristics of these patients can be found in Table 1a, b.
 
+**Table 1.**
+ Background characteristics of the infertile patients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">a. Background characteristics of infertile patients.</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Mean (SD)</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age at inclusion (years)</td>
+      <td>37.8 (5.5)</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>27.2 (4.3)</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>Total testosterone (nmol/l)</td>
+      <td>12.8 (6.8)</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>FSH (IU/l)</td>
+      <td>15.8 (14.3)</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>LH (IU/l)</td>
+      <td>7.5 (5.7)</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>SHBG (nmol/l)</td>
+      <td>24.0 (4.5–84.5)*</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>Estradiol (pmol/L)</td>
+      <td>96 (36–321)*</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>Calculated free testosterone (pmol/l)</td>
+      <td>260 (50–1360)*</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>ApoB/ApoA1</td>
+      <td>0.7 (0.2)</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>HOMA-IR</td>
+      <td>1.6 (0.4–13.9)*</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>DEXA score (lumbar z-score)</td>
+      <td>−0.5 (1.3)</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <td>CAG (repeated length)</td>
+      <td>22 (14–31)*</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <td colspan="3">b. Characteristics of the cohort of infertile patients</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>n (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Smoker</td>
+      <td>9 (12.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Current diseases</td>
+      <td>36 (48.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Insulin medication</td>
+      <td>1 (1.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Current ART</td>
+      <td>8 (10.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CVRLP</td>
+      <td>20 (27.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Insulin resistance</td>
+      <td>20 (27.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Diabetes mellitus 2</td>
+      <td>4 (5.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Metabolic syndrome (MetS)</td>
+      <td>14 (20.9)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Low bone density</td>
+      <td>23 (30.6)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Characteristics values are expressed as mean (SD), except for those that did not follow a normal distribution (non-Gaussian) and which are shown as median (min–max)._
+
 The following comorbidities in the cohort of infertile patients were defined MetS, IR, CVRLP, DM, and LBD. MetS was determined according to the criteria defined at the National Cholesterol Education Program Adult Treatment Panel III 2002 (in Table S1 available here). Homeostatic Model Assessment of Insulin Resistance (HOMA-IR) was calculated as (glucose × insulin)/22.5 and IR was defined as HOMA-IR >2.5 (Wickramasinghe et al., 2017). CVRLP was defined as the ratio apolipoprotein B/apolipoprotein A1 >0.9 (Walldius and Jungner I, 2004). DM was set at fasting blood glucose >7 mmol/l (American Diabetes Association, 2010). LBD was determined based on the DEXA lumbar z-score with the cutoff at <−1 (Isaksson et al., 2017). The methods for laboratory tests (Bobjer et al., 2016), CAG repeat length (Lundin et al., 2003), and proteomics (Smith et al., 1985; MacLean et al., 2010) are described in the supplementary Appendix 1.
 
-## Statistical analysis
+### Statistical analysis
 
 We briefly describe the statistical analyses performed. A full description of the statistical analysis is available in Appendix 1 – Supplementary Statistical analyses. Proteomics data preprocessing was done using Perseus v1.6.7.0 (Tyanova et al., 2016) software and unless other software is specified, the statistical analyses were performed using R software (RStudio Team, 2016; R Development Core Team, 2016).
 
-## Healthy human model
+#### Healthy human model
 
 Protein intensities were Log2 transformed and standardized by Subtract Median normalization. Differentially expressed proteins were determined by one-way repeated measures ANOVA followed by a pairwise t-test (two tails and paired). Adjusted p values <0.05 were considered sf were considered candidate biomarker. These candidates were include significant. The power of the candidate biomarkers to discriminate between normal and low T was evaluated by doing receiver operating characteristic (ROC) analysis. Significant proteins (between A and B with significant recovery in B and C) with (1) area under the curve (AUC) >0.80 or (2) AUC between 0.75 and 0.80 (Marshall et al., 2010; Bowers and Zhou, 2019; Simundić, 2009) and highly enriched in liver tissues Human Proteome Map (Kim et al., 2014) and (Kampf et al., 2014; Kholodenko and Yarygin, 2017; Schmucker and Sanchez, 2011) were considered candidate biomarker. These candidates were included as predictors in a stepwise regression (method: backward) to select the best combination of markers that predict the odds of being low T. Bootstrap resampling with replacement method was applied to assess consistency. A new variable called Multi Marker Algorithm (MMA) was derived from the predicted log-odds (of being low T) obtained from a binomial logistic regression analysis (see Appendix 1 – Supplementary Statistical analyses) and it was evaluated together with marker candidates proteins.
 
-## Infertile cohort of patients
+#### Infertile cohort of patients
 
 The normal distribution of the variables that describe background characteristics of the infertile cohort of patients (Table 1) was evaluated by Kolmogorov–Smirnov test. The intensities of the candidate biomarkers were Log2 transformed to achieve normal distributions. In this cohort, MMA variable was created to predict the odds of suffering low T or other medical conditions associated with low T levels.
 
@@ -84,11 +218,11 @@ In order to strengthen the evidence of androgenic dependence of the candidate bi
 
 ## Results
 
-## Proteins differentially expressed in chemically castrated men
+### Proteins differentially expressed in chemically castrated men
 
 In total, in the healthy men, the expression level of 31 out of 676 proteins was statistically significantly associated with T concentration (in Table S2 available here). The levels of 23 proteins changed in the same direction as T, whereas, the remaining eight markers changed in an opposite way. LH and FSH changed significantly in A and B but not in B and C. The protein changes visualized as boxplots can be found in Figure 2—figure supplement 1 available at https://doi.org/10.6084/m9.figshare.14876562.
 
-## Proteins capable to distinguish between low and normal testosterone
+### Proteins capable to distinguish between low and normal testosterone
 
 Based on p values for AUC in the ROC analysis, among healthy young men, 90% of the 31 proteins distinguished the low T time point (B) from the normal ones (A and C) with statistical significance(in Table S3 available here, Figure 2a). ROC–AUC values greater than 0.80 were obtained for the proteins 4-hydroxyphenylpyruvate dioxygenase (4HPPD) and insulin-like growth factor-binding protein 6 (IGFBP6). Additionally, fructose-bisphosphate aldolase (ALDOB) was the only protein enriched in liver tissue with ROC–AUC between 0.75 and 0.80.
 
@@ -98,15 +232,162 @@ Based on p values for AUC in the ROC analysis, among healthy young men, 90% of t
 
 The stepwise regression method selected 4HPPD and IGFBP6 as the best markers to be combined to predict the odds of being low T, and thus, they were the basis for the new variable MMA (see Material and methods). MMA together with 4HPPD, ALDOB, and IGFBP6 was selected as potential candidate markers for the diagnosis of BAA (Figure 2b, c). The expression of the 4HPPD and ALDOB proteins was significantly increasedat low T (p < 0.001; p < 0.001) and remediated in response to the T treatment, whereas IGFBP6 expression was significantly decreased (p < 0.001) by castration.
 
-## Testing of the candidate biomarkers in infertile men
+### Testing of the candidate biomarkers in infertile men
 
 The three proteins and MMA showed statistically significant differences (4HPPD: p < 0.001, ALDOB: p = 0.003, IGFBP6: p = 0.016, MMA: p < 0.001, Figure 3a) between the three groups defined according to the total T levels (in Table S2 available here). 4HPPD, ALDOB, and MMA showed a negative association with T changes, while IGFBP6 displayed a positive association. The three proteins and MMA significantly distinguished the patients with LT from BL_T/NT (4HPPD: AUC = 0.75, p = 0.001; ALDOB: AUC = 0.70, p = 0.008; IGFBP6: AUC = 0.69, p = 0.01; MMA: AUC = 0.79, p < 0.001) (Figure 3b). Additionally, the power to discern low T values improved for all the biomarkers tested when the patients with BL_T were excluded (Table 2). Similar results were obtained for discrimination between low and normal FT (Figure 3d, e; Table 2).
 
+**Table 2.**
+ Comparison of receiver operating characteristic (ROC)–areas under the curve for testosterone and the candidate biomarkers in relation to the prediction of hypogonadism and its sequelae in patients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Analyte</th>
+      <th colspan="2">Low T</th>
+      <th colspan="2">Low T*</th>
+      <th colspan="2">Low cFT</th>
+      <th colspan="2">IR</th>
+      <th colspan="2">DM</th>
+      <th colspan="2">LBD</th>
+      <th colspan="2">CVRLP</th>
+      <th colspan="2">MetS</th>
+    </tr>
+    <tr>
+      <th colspan="2">(T ≤ 8 nmol/l)</th>
+      <th colspan="2">(T ≤ 8 nmol/l)</th>
+      <th colspan="2">(cFT &lt;220 pmol/l)</th>
+      <th colspan="2">(HOMA-IR &gt;2.5)</th>
+      <th colspan="2">-</th>
+      <th colspan="2">(z-score &lt;−1)</th>
+      <th colspan="2">(ApoB/ApoA1 ≥0.9)</th>
+      <th colspan="2"></th>
+    </tr>
+    <tr>
+      <th>AUC (Sp,Se)</th>
+      <th>p</th>
+      <th>AUC (Sp,Se)</th>
+      <th>p</th>
+      <th>AUC (Sp,Se)</th>
+      <th>p</th>
+      <th>AUC (Sp,Se)</th>
+      <th>p</th>
+      <th>AUC (Sp,Se)</th>
+      <th>p</th>
+      <th>AUC (Sp,Se)</th>
+      <th>p</th>
+      <th>AUC (Sp,Se)</th>
+      <th>p</th>
+      <th>AUC (Sp,Se)</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4HPPD</td>
+      <td>0.75(85,59)</td>
+      <td>8.38E−04</td>
+      <td>0.77(86,59)</td>
+      <td>2.66E−04</td>
+      <td>0.69(83,57)</td>
+      <td>5.14E−03</td>
+      <td>0.79(84,70)</td>
+      <td>1.20E−04</td>
+      <td>0.89(93,75)</td>
+      <td>9.00E−03</td>
+      <td>0.64(76,61)</td>
+      <td>2.24E−02</td>
+      <td>0.74(46,90)</td>
+      <td>5.79E−03</td>
+      <td>0.74(95,50)</td>
+      <td>5.31E−03</td>
+    </tr>
+    <tr>
+      <td>ALDOB</td>
+      <td>0.69(68,73)</td>
+      <td>8.25E−03</td>
+      <td>0.70(67,73)</td>
+      <td>5.39E−03</td>
+      <td>0.66(67,71)</td>
+      <td>1.56E−02</td>
+      <td>0.73(71,75)</td>
+      <td>2.85E−03</td>
+      <td>0.85(63,100)</td>
+      <td>1.80E−02</td>
+      <td>0.57(98,27)</td>
+      <td>1.93E−01</td>
+      <td>0.71(83,55)</td>
+      <td>4.64E−02</td>
+      <td>0.74(82,64)</td>
+      <td>6.02E−03</td>
+    </tr>
+    <tr>
+      <td>IGFBP6</td>
+      <td>0.69(77,59)</td>
+      <td>1.05E−02</td>
+      <td>0.70(81,59)</td>
+      <td>4.89E−03</td>
+      <td>0.63(44,81)</td>
+      <td>7.24E−02</td>
+      <td>0.57(42,80)</td>
+      <td>3.50E−01</td>
+      <td>0.59(39,100)</td>
+      <td>5.40E−01</td>
+      <td>0.63(43,78)</td>
+      <td>2.75E−01</td>
+      <td>0.59(48,80)</td>
+      <td>1.87E−01</td>
+      <td>0.65(45,93)</td>
+      <td>8.45E−02</td>
+    </tr>
+    <tr>
+      <td>Testosterone</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.71(76,70)</td>
+      <td>4.96E−03</td>
+      <td>0.55(32,100)</td>
+      <td>7.24E−01</td>
+      <td>0.75(74,74)</td>
+      <td>5.12E−04</td>
+      <td>0.66(65,85)</td>
+      <td>6.55E−03</td>
+      <td>0.56(72,57)</td>
+      <td>5.08E−01</td>
+    </tr>
+    <tr>
+      <td>MMA</td>
+      <td>0.79(74,82)</td>
+      <td>9.23E−05</td>
+      <td>0.80(72,86)</td>
+      <td>3.86E−05</td>
+      <td>0.70(69,71)</td>
+      <td>3.90E−03</td>
+      <td>0.79(82,70)</td>
+      <td>1.46E−04</td>
+      <td>0.92(84,100)</td>
+      <td>5.00E−03</td>
+      <td>0.78(82,65)</td>
+      <td>1.40E−02</td>
+      <td>0.75(73,75)</td>
+      <td>3.65E−03</td>
+      <td>0.78(63,86)</td>
+      <td>1.57E−03</td>
+    </tr>
+  </tbody>
+</table>
+
+_Significant p values are highlighted in bold and underlined. *Excluding patients with testosterone values from the borderline low testosterone (8 < BL_T ≤ 12).cFT: calculated free testosterone; IR: insulin resistance; DM: diabetes mellitus type 2; LBD: low bone density; CVRLP: cardiovascular risk lipid profile ;MetS: metabolic syndrome; AUC:area under the curve; Spe: specificity in %; Se: sensitivity in %._
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/74638/elife-74638-fig3-v2.jpg)
 
-**Figure 3.:** n = 75).(a) Patients grouped by three levels of total testosterone: low testosterone (LT) ≤8 nmol/l (n = 22), borderline testosterone (BL_T) between 8 and 12 nmol/l (n = 17) and normal testosterone (HT) >12 nmol/l (n = 36). Each group is represented by the mean and its 95% CI. Horizontal lines indicate significant differences between groups and the adjusted p values are specified on top of these lines (in Table S5 available here). (b) Receiver operating characteristic (ROC) analysis to discriminate patients with LT in the entire cohort and (c) in a cohort that excluded patients with borderline testosterone levels (LT_B). Multi Marker Algorithm (MMA) is based on is the combination of levels of the proteins 4-hydroxyphenylpyruvate dioxygenase (4HPPD) and insulin-like growth factor-binding protein 6 (IGFBP6). (d) As (a), but grouped according to the levels of calculated free testosterone (cFT): low (L_cFT) (n = 21) − < 220 pmol/l and normal (N_cFT) (n = 54) add symbol 220 pmol/l. (e) As (b) and (c) but for discrimination of L_cFT and N_cFT.
+**Figure 3.:** (a) Patients grouped by three levels of total testosterone: low testosterone (LT) ≤8 nmol/l (n = 22), borderline testosterone (BL_T) between 8 and 12 nmol/l (n = 17) and normal testosterone (HT) >12 nmol/l (n = 36). Each group is represented by the mean and its 95% CI. Horizontal lines indicate significant differences between groups and the adjusted p values are specified on top of these lines (in Table S5 available here). (b) Receiver operating characteristic (ROC) analysis to discriminate patients with LT in the entire cohort and (c) in a cohort that excluded patients with borderline testosterone levels (LT_B). Multi Marker Algorithm (MMA) is based on is the combination of levels of the proteins 4-hydroxyphenylpyruvate dioxygenase (4HPPD) and insulin-like growth factor-binding protein 6 (IGFBP6). (d) As (a), but grouped according to the levels of calculated free testosterone (cFT): low (L_cFT) (n = 21) − < 220 pmol/l and normal (N_cFT) (n = 54) add symbol 220 pmol/l. (e) As (b) and (c) but for discrimination of L_cFT and N_cFT.
 
-## Ability to distinguish men with abnormal metabolic comorbidities or reduced bone mineral density
+### Ability to distinguish men with abnormal metabolic comorbidities or reduced bone mineral density
 
 The AUCs for 4HPPD, ALDOB, and MMA in relation to risk of DM and MetS were statistically significant whereas for T the p value for AUC was 0.72. The AUCs for 4HPPD, ALDOB, and MMA were also statistically significantly larger than this for T (DM: 4HPPD [p = 0.005], ALDOB [p = 0.009], MMA [p = 0.002]; MetS: 4HPPD [p = 0.032], ALDOB [p = 0.030], MMA [p = 0.002]; Table 2). Additionally, the AUC values in relation toCVRLP and IR were numerically higher for 4HPPD, ALDOB, and MMA than for T, however, the differences between the AUC values were not statistically significant (CVRLP marker vs T: 4HPPD [p = 0.97], ALDOB [p = 0.61], MMA [p = 0.87]; IR marker vs T: 4HPPD vs T [p = 0.30], ALDOB vs T [p = 0.88], MMA [p = 0.31]). 4HPPD and MMA statistically significantly distinguished between patients with normal bone density and LBD. The same was true for T, the differences between the AUC for T and those for 4HPPD and MMA not being statistically significant (LBD vs T: 4HPPD [p = 0.28], MMA [p = 0.30]). No statistical significance, in relation to prediction of LBD was found for IGFBP6 (Figure 4).
 
@@ -114,13 +395,52 @@ The AUCs for 4HPPD, ALDOB, and MMA in relation to risk of DM and MetS were stati
 
 **Figure 4.:** Analytes included in the analysis are 4-hydroxyphenylpyruvate dioxygenase (4HPPD), insulin-like growth factor-binding protein 6 (IGFBP6), fructose-bisphosphate aldolase (ALDOB), and Multi Marker Algorithm (MMA; combination of 4HPPD and IGFBP6). Area under the curve (AUC), p values can be found in Table 2. IR: insulin resistance; DM: type 2 diabetes mellitus; LBD: low bone density; CVRLP: cardiovascular risk lipid profile; MetS: metabolic syndrome.
 
-## Association of the candidate biomarkers with AR CAG repeat length
+### Association of the candidate biomarkers with AR CAG repeat length
 
 Statistically significant inter-CAG-group overall differences were observed for 4HPPD (p = 0.012) and ALDOB (p = 0.008) (Figure 5). Additionally, the protein expressions were significantly higher in the groups with <21 and >22 CAG repeat length as compared with the reference (Figure 5, Table 3). However, we did not observe any statistically significant association between CAG number and expression of IGFBP6.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/74638/elife-74638-fig5-v2.jpg)
 
-**Figure 5.:** n = 26) and CAG <22 (n = 30) and 4-hydroxyphenylpyruvate dioxygenase (4HPPD) and fructose-bisphosphate aldolase (ALDOB), respectively, with CAG = 21 and 22 (n = 18) set as reference.
+**Table 3.**
+ Ratio between mean concentrations of 4-hydroxyphenylpyruvate dioxygenase (4HPPD) and fructose-bisphosphate aldolase (ALDOB) in men with CAG repeat length <21 or > 22 as compared to the reference group.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Proteins</th>
+      <th rowspan="2">Overall p value</th>
+      <th colspan="2">&lt;21 vs reference</th>
+      <th colspan="2">&gt;22 vs reference</th>
+    </tr>
+    <tr>
+      <th>Ratio (95% CI)</th>
+      <th>p value*</th>
+      <th>Ratio (95% CI)</th>
+      <th>p value*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4HPPD</td>
+      <td>0.012</td>
+      <td>1.34 (1.02–1.76)</td>
+      <td>0.032</td>
+      <td>1.62 (1.23–2.13)</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>ALDOB</td>
+      <td>0.008</td>
+      <td>1.35 (1.03–1.78)</td>
+      <td>0.029</td>
+      <td>1.72 (1.29–2.32)</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p value of the post hoc constrain between groups.Ratio: ratio between mean concentration in <21 or >22 groups divided by the reference group (21 and 22)._
 
 ## Discussion
 
@@ -150,6 +470,6 @@ For this study, the z-score was employed because of the relatively young age of 
 
 In conclusion, we have identified three new potential biomarkers of BAA. Those proteins – alone or in combination – are promising as useful parameters in the clinical diagnosis of male hypogonadism and in the prediction of its long-term sequelae, as well as in studying the biology of androgen action. More extensive testing is vital to elucidate their BAA potential, not only in men but also in women and in prepubertal boys.
 
-## Data availability
+### Data availability
 
 The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2019) partner repository with the dataset identifier PXD024448. Supplementary tables (datasets) https://doi.org/10.6084/m9.figshare.14875431 Source data of the Figures can be found on: https://doi.org/10/6084/m9.figshare.14875431 Supplementary Figure S1 (Figure2-figure supplement 1): https://doi.org/10.6084/m9.figshare.14876562. R code: https://github.com/indirapla/TP1_proteins_marker_of_androgen_activity, (copy archived at swh:1:rev:2613c2709a14dec63c727d01edefb5a5f1f1fdc5; Parada, 2022).

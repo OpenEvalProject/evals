@@ -17,15 +17,15 @@
 
 ### Affiliations
 
-1. https://ror.org/02s376052 Laboratory of Integrative Systems Physiology, Institute of Bioengineering, École Polytechnique Fédérale de Lausanne Lausanne Switzerland
-2. https://ror.org/036x5ad56 Luxembourg Centre for Systems Biomedicine, University of Luxembourg Esch-sur-Alzette Luxembourg
-3. https://ror.org/02s376052 Laboratory of Metabolic Signaling, Institute of Bioengineering, École Polytechnique Fédérale de Lausanne Lausanne Switzerland
+1. Laboratory of Integrative Systems Physiology, Institute of Bioengineering, École Polytechnique Fédérale de Lausanne Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
+2. Luxembourg Centre for Systems Biomedicine, University of Luxembourg Esch-sur-Alzette Luxembourg ([ROR:036x5ad56](https://ror.org/036x5ad56))
+3. Laboratory of Metabolic Signaling, Institute of Bioengineering, École Polytechnique Fédérale de Lausanne Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
 
 † Corresponding author
 
 ## Abstract
 
-Inflammatory gut disorders, including inflammatory bowel disease (IBD), can be impacted by dietary, environmental, and genetic factors. While the incidence of IBD is increasing worldwide, we still lack a complete understanding of the gene-by-environment interactions underlying inflammation and IBD. Here, we profiled the colon transcriptome of 52 BXD mouse strains fed with a chow or high-fat diet (HFD) and identified a subset of BXD strains that exhibit an IBD-like transcriptome signature on HFD, indicating that an interplay of genetics and diet can significantly affect intestinal inflammation. Using gene co-expression analyses, we identified modules that are enriched for IBD-dysregulated genes and found that these IBD-related modules share cis -regulatory elements that are responsive to the STAT2, SMAD3 , and REL transcription factors. We used module quantitative trait locus analyses to identify genetic loci associated with the expression of these modules. Through a prioritization scheme involving systems genetics in the mouse and integration with external human datasets, we identified Muc4 and Epha6 as the top candidates mediating differences in HFD-driven intestinal inflammation. This work provides insights into the contribution of genetics and diet to IBD risk and identifies two candidate genes, MUC4 and EPHA6 , that may mediate IBD susceptibility in humans.
+Inflammatory gut disorders, including inflammatory bowel disease (IBD), can be impacted by dietary, environmental, and genetic factors. While the incidence of IBD is increasing worldwide, we still lack a complete understanding of the gene-by-environment interactions underlying inflammation and IBD. Here, we profiled the colon transcriptome of 52 BXD mouse strains fed with a chow or high-fat diet (HFD) and identified a subset of BXD strains that exhibit an IBD-like transcriptome signature on HFD, indicating that an interplay of genetics and diet can significantly affect intestinal inflammation. Using gene co-expression analyses, we identified modules that are enriched for IBD-dysregulated genes and found that these IBD-related modules share cis-regulatory elements that are responsive to the STAT2, SMAD3, and REL transcription factors. We used module quantitative trait locus analyses to identify genetic loci associated with the expression of these modules. Through a prioritization scheme involving systems genetics in the mouse and integration with external human datasets, we identified Muc4 and Epha6 as the top candidates mediating differences in HFD-driven intestinal inflammation. This work provides insights into the contribution of genetics and diet to IBD risk and identifies two candidate genes, MUC4 and EPHA6, that may mediate IBD susceptibility in humans.
 
 ## Introduction
 
@@ -37,13 +37,21 @@ In order to decipher the genetic and environmental contributions to the developm
 
 ## Results
 
-## HFD feeding leads to highly variable transcriptomic adaptations in the colon of BXD strains
+### HFD feeding leads to highly variable transcriptomic adaptations in the colon of BXD strains
 
 For this study, we used an extensively characterized BXD mouse panel of 52 BXD strains fed with a CD or HFD from 8 to 29 wk of age (Williams et al., 2016; Jha et al., 2018a; Jha et al., 2018b), in which we mapped genetic determinants of metabolic traits in the liver (Williams et al., 2016; Jha et al., 2018a) and plasma (Jha et al., 2018b). These mice underwent metabolic phenotyping, with many metabolic traits being altered by HFD (Figure 1A), and multiple organs were harvested and flash-frozen for future use (Williams et al., 2016). Here, we focused on proximal colon samples from this population and performed microarray-based transcriptome analysis of this tissue (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87569/elife-87569-fig1-v1.jpg)
+
+**Figure 1.:** (A) Graphical representation of a pipeline of a previously described BXD mouse study (Williams et al., 2016). Mice were fed HFD or chow diet (CD) starting from 8 wk of age, and metabolic phenotyping was performed as indicated. Mice were sacrificed at 29 wk of age, and multiple organs were collected and frozen for further analyses. BXD colon transcriptomes were analyzed in this study. CD is indicated in blue, and HFD is indicated in red. p-Values were calculated by two-tailed Student’s t-test and indicated as follows: *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. (B) Volcano plot showing the HFD effect on BXD colon transcriptomes compared to CD and the up- and downregulated differentially expressed genes (DEGs, absolute log2(fold change) > 0.5 and Benjamini–Hochberg [BH]-adjusted p-value (adj. p<0.05)) are highlighted in red and blue, respectively. (C) Gene set enrichment analysis showing the effect of HFD on gene expression in BXD colons. Gene sets were grouped into five categories: translation, inflammation, mitochondria, stress, and intermediate filament. Normalized enrichment scores (NES) are represented by color, and -Log10 (BH-adj. P) are represented by dot size and indicated as follows: *adjusted p-value<0.05; **adjusted p-value<0.01; ***adjusted p-value<0.001. (D) Enrichment analysis of molecular signatures of mouse and human inflammatory bowel disease (IBD) on the transcriptome of BXD colons. UC: ulcerative colitis; CDs: Crohn’s disease.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87569/elife-87569-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Principal component analysis (PCA) of the microarray profiles of BXD colons under high-fat (HFD, indicated in red) or chow diet (CD, represented in blue). (B) Bar plot showing the primary principle (PC1) calculated by PCA of the colon transcriptomes in each BXD strain fed with CD (blue) or HFD (red). BXD strains highlighted in bold mean they are more resistant to dietary challenges. (C) Heatmap showing unsupervised hierarchical clustering of colon transcriptome in both the CD and HFD-fed BXDs. (D) Enrichment analysis of inflammation-related genesets showing the effect of HFD on gene expression in individual BXD colon. Normalized enrichment scores (NES) are represented by color, and -Log10(BH-adjusted p-values) are represented by dot size and indicated as follows: *adjusted p-value<0.05; **adjusted p-value<0.01; ***adjusted p-value<0.001. BXD strains highlighted in red represent the three most susceptible strains to gut inflammation upon HFD. BXD strains colored in green show no significant enrichment in gut inflammation.
+
 Principal component analysis (PCA) of all transcriptomes (Figure 1—figure supplement 1A) showed the first principal component (PC1) separated mice by diet, indicative of a global diet effect in the population. Nevertheless, transcriptomes of several strains (such as BXD12, BXD84, and BXD81) on HFD had very similar PC1 values to their CD counterparts (Figure 1—figure supplement 1B), suggesting that they were resistant to dietary changes. Similarly, BXD strains did not cluster completely by diet based on hierarchical clustering analysis indicating that the genetic differences can override the impact of diet on the transcriptome in the colon (Figure 1—figure supplement 1C). To obtain a global, strain-independent, view of the HFD effect, we performed a differential expression analysis and identified 115 up- and 295 downregulated differentially expressed genes (DEGs, absolute log2(fold change) > 0.5 and Benjamini–Hochberg [BH]-adjusted p-value<0.05, Figure 1B). Of note, Cldn4, one of claudins implicated in intestinal permeability (Ahmad et al., 2017), was significantly downregulated and serum amyloid A (Saa1 and Saa3), which have been involved in the inflammatory response (Ye and Sun, 2015; Tannock et al., 2018), were upregulated upon HFD (Figure 1B). Furthermore, gene set enrichment analysis (GSEA) showed an upregulation of inflammation, cell proliferation and translation, mitochondrial respiration, and stress response-related pathways upon HFD, while genes involved in the intermediate filament – that contribute to maintaining intestinal barriers (Misiorek et al., 2016; Mun et al., 2022) – were downregulated (Figure 1C). All in all, the transcriptome data are consistent with an HFD-induced downregulation of components of the intestinal barrier, enhanced permeability, induction of the unfolded protein response (UPR) and increased inflammation in BXD colons, much like HFD does in humans (Bischoff et al., 2014). However, as in humans, not every strain exhibited the same response to dietary challenges. GSEA applied individually to the diet effect in each strain showed a high degree of diversity in the inflammatory response (Figure 1—figure supplement 1D). For example, BXD44, 45, and 55, highlighted in red, were the three most susceptible strains to gut inflammation upon HFD, whereas BXD1, 67, and 85, colored in green, showed no significant enrichment in gut inflammation. This diversity in responses provided the basis for a systems genetics investigation of HFD-driven gut inflammation determinants in the BXD.
 
-## The transcriptomic response to HFD of a subset of BXD strains resembles DSS-induced UC
+### The transcriptomic response to HFD of a subset of BXD strains resembles DSS-induced UC
 
 IBD is characterized by increasing inflammation in the gastrointestinal tract (Adolph et al., 2022). To investigate the disease relevance of the chronic inflammation seen in BXD colons upon HFD, we extracted the transcriptomic signatures from DSS-induced mouse UC models (Czarnewski et al., 2019) and two IBD human studies (GSE16879 [Arijs et al., 2009] and GSE83687 [Peters et al., 2017], ‘Materials and methods’) and used these signatures as custom gene sets in GSEA on the global HFD effect. DSS is widely used to induce UC in mouse models and disease severity increases over time (Czarnewski et al., 2019). GSEA showed that DSS-induced genes from days 4 (early inflammatory phase), 6 and 7 (acute inflammatory phase) were significantly enriched in genes upregulated by HFD, especially the dysregulated genes in the later stage of DSS-induced UC (Figure 1D, bottom panel). Similarly, genes involved in human IBD (UC and CDs) were also enriched in those same genes (Figure 1D, top panel). The same trend was observed for downregulated genes in mouse and human IBD, which were negatively enriched (Figure 1D), illustrating that HFD induced an IBD-like transcriptomic signature in BXD colons.
 
@@ -55,15 +63,23 @@ While the average response across all BXDs shared features of mouse and human IB
 
 To establish the functional relevance of this transcriptome-based classification on systemic inflammation, we compared plasma cytokine levels of these three groups under HFD (Williams et al., 2016). Interestingly, the susceptible group has significantly lower levels of the anti-inflammatory cytokine–interleukin (IL)-10 (Figure 2B, two-tailed t-test p<0.01) and increased the proinflammatory cytokine–IL-15 (Figure 2C, two-tailed t-test p<0.0001) compared to the resistant strains. IL10 itself has been identified as an IBD-related candidate gene using GWAS in humans (Franke et al., 2008) and IL-10-deficient mice are also well-known mouse model for IBD research (Keubler et al., 2015). IL-15 is another important cytokine involved in intestinal inflammation and is elevated in the human guts with IBD (Liu et al., 2000). IL-15 knockout mice are also reported to have less severe symptoms, such as weight loss and histological scores, following DSS administration (Yoshihara et al., 2006). In summary, susceptibility to HFD-induced IBD-like inflammation in the colon, as assessed by changes in levels of genes associated with IBD, correlates with markers of the general inflammatory status of mice.
 
-## Identifying IBD-related gene modules in BXD colons
+### Identifying IBD-related gene modules in BXD colons
 
 Since different BXD strains seem to exhibit different susceptibility to IBD, we set out to explore gene expression signatures underlying these differences. For that, we used Weighted Gene Co-expression Analysis (WGCNA) to construct CD- and HFD-specific gene co-expression networks to identify modules of co-expressed genes (Figure 3A, Supplementary file 1). Disease-associated modules were then defined as modules under HFD are significantly enriched in mouse DSS-induced UC signatures by an over-representation analysis (ORA, BH-adjusted p-value<0.05 and number of enriched genes >5, Figure 3A). The HFD co-expression network consisted of 39 modules ranging in size from 34 to 1853 genes and containing a total of 14,723 genes (Supplementary file 1). We visualized this network using Uniform Manifold Approximation and Projection (UMAP) (Figure 3B), reflecting that the majority modules were closely connected in the co-expression network.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/87569/elife-87569-fig3-v1.jpg)
+
+**Figure 3.:** (A) Pipeline for exploring the IBD-associated gene modules. A co-expression gene network was constructed based on the transcriptome of BXD colons under high-fat diet (HFD). IBD-associated modules were then defined as gene modules under HFD that are significantly clustered in mouse dextran sulfate sodium (DSS)-induced ulcerative colitis (UC) signatures. (B) Uniform Manifold Approximation and Projection (UMAP) representation of the co-expression gene network under HFD. Thirty-nine co-expression modules are represented in the corresponding color, and the correlated modules (Spearman correlation coefficient between the eigengene of modules >0.7) are linked by a gray line. (C) Heatmap showing the enrichment of co-expression modules in mouse and human IBD gene signatures, and the number and percentage of enriched genes are labeled. The number of enriched genes divided by the number of genes involved in the respective module is defined as the percentage of enriched genes. Signed –Log10(adj. p) indicates Benjamini–Hochberg (BH)-adjusted p-value and the enriched gene set. Enriched modules of up- and downregulated genes upon disease are highlighted in red and blue, respectively. CDs: Crohn’s disease.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87569/elife-87569-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Heatmap showing modules enriched in mouse IBD gene signatures, and the number and percentage of enriched genes are labeled. The number of enriched genes divided by the number of genes involved in the respective module is defined as the percentage of enriched genes. Signed –Log10(adj. p) indicates Benjamini–Hochberg (BH)-adjusted p-value and the enriched gene set. Enriched modules of up- and downregulated genes upon disease are highlighted in red and blue, respectively. (B) Heatmap showing the similarity of co-expression modules identified under CD or high-fat diet (HFD). The number and percentage of overlapped genes are labeled. The number of overlapped genes divided by the number of genes involved in the respective module in HFD is defined as the percentage of overlapped genes. Adjusted p-values calculated by BH are indicated by color. (C) Heatmap showing the modules under CD enriched in human IBD gene signatures, and the number and percentage of enriched genes are labeled. UC: ulcerative colitis; CDs: Crohn’s disease.
 
 Enrichment analyses indicated that modules HFD_M9 (484 genes), HFD_M16 (328 genes), and HFD_M28 (123 genes) were enriched with genes that are upregulated by DSS-induced colitis, while HFD_M15 (368 genes), HFD_M24 (159 genes), and HFD_M26 (135 genes) were significantly enriched with downregulated genes (Figure 3C). Of note, more than 20% of the genes involved in HFD_M9 and HFD_M28 were part of the dysregulated genes of the acute phase of mouse UC (days 6 and 7) (Figure 3C). Interestingly, genes perturbed during IBD pathogenesis in humans were also enriched in HFD_M9 and HFD_M28 (Figure 3C).
 
 While IBD-related genes were predominantly found in HFD modules, we also found that two modules, CD_M28 (185 genes) and CD_M32 (142 genes), in CD-fed mouse colons were associated with IBD (Figure 3—figure supplement 1A). These two modules significantly overlapped with the IBD-related HFD_M9 and HFD_M28 modules, respectively (BH-adjusted p-value<0.05) (Figure 3—figure supplement 1B). Moreover, the molecular signatures underlying human UC and CDs were also clustered in these two modules (CD_M28 and CD_M32) under CD (Figure 3—figure supplement 1C). Collectively, the co-expression and enrichment analyses identify HFD_M9 and HFD_M28 as IBD-related modules on which we focus our subsequent investigation.
 
-## Identifying biological roles and transcriptional regulation of the IBD-related modules
+### Identifying biological roles and transcriptional regulation of the IBD-related modules
 
 To identify the biological function of the IBD-related modules, we performed enrichment analyses using the Hallmark database and the cell-type gene signatures (Kong et al., 2023; ‘Materials and methods’). Genes in HFD_M9 were enriched in KRAS signaling and inflammation-related pathways, while HFD_M28 was enriched in IFN-α/γ responses (BH-adjusted p-value<0.05) (Figure 4A). Both modules were enriched in IFN-γ response genes (Figure 4A). IFN-γ is an essential cytokine for innate and adaptive intestinal immune responses (Brasseit et al., 2018). It has been reported to play a key role in mouse (Ito et al., 2006) and human (Tilg et al., 2002) IBD pathogenesis, and was identified as a potential therapeutic target to alleviate inflammatory response in IBD (Li et al., 2021). In addition, genes that are dysregulated in immune cells of CDs patients (macrophages, B cell, and immune cycling cells) were enriched in HFD_M9 (Figure 4B). In contrast, genes of HFD_M28 were not only enriched for genes that are dysregulated in immune cells, but also in intestinal epithelial cells of diseased individuals, such as Goblet and stem cells (Figure 4B). Overall, HFD_M9 and HFD_M28 are both involved in inflammatory response, while genes involved in HFD_M28 also potentially influence intestinal epithelial barrier.
 
@@ -73,9 +89,17 @@ To identify the biological function of the IBD-related modules, we performed enr
 
 To identify transcriptional drivers of the two IBD-related modules, we performed a transcription factor (TF) enrichment analysis (‘Materials and methods’) and found that ZIC2, SMAD3, REL, FOSL1, and BATF are the top enriched TFs for the genes in HFD_M9 (Figure 4C), while the expression of genes in module HFD_M28 may be regulated by interferon regulatory factors (IRFs, IRF1, IRF2, IRF7, and IRF9) and the signal transducer and activator of transcription families (STAT, STAT2) (Figure 4D). In fact, most of these TFs have been reported to be involved in gut inflammation. For example, Smad3 mutant mice were more susceptible to intestinal inflammation (Yang et al., 1999). Moreover, the IFN-STAT axis is essential to initiate the type I IFN induction that is critical for human immune defense, such as IBD diseases (Stolzer et al., 2021) and primary immunodeficiency diseases (Mogensen, 2018), as well as for disease tolerance (Mottis et al., 2022). Collectively, we have identified TFs that likely control the expression of the two IBD-related modules to play an essential role in gut inflammation regulation.
 
-## Identifying ModQTLs for IBD-related modules and filtering of candidate genes
+### Identifying ModQTLs for IBD-related modules and filtering of candidate genes
 
 To analyze how the genotype impacts the IBD-like inflammatory response associated to HFD, we performed ModQTL mapping analysis for both IBD-related modules (HFD_M9 and HFD_28) (Figure 5A). We found a suggestive QTL for HFD_M28 (p-value<0.1) on chromosome 16 containing 552 protein-coding genes (Figure 5A, Supplementary file 2). The ModQTL analysis was also performed on the modules that are significantly enriched in IBD-downregulated genes (HFD_M15, HFD_M24, and HFD_M26), but no significant or suggestive QTLs were detected. Therefore, we focused on the QTL for IBD-induced genes in HFD_M28 and annotated its candidate genes based on three criteria (Figure 5B): (1) presence of high-impact genetic variants (such as missense and frameshift variants) in BXDs, (2) association with inflammation based on literature mining (‘Materials and methods’), and (3) presence of cis-expression QTLs (eQTLs), that is, whether the expression of the gene is controlled by the QTL. The 27 genes satisfying at least two of the above criteria were considered as candidate genes driving the expression of module HFD_M28 (Figure 5C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87569/elife-87569-fig5-v1.jpg)
+
+**Figure 5.:** (A) Manhattan plot showing the ModQTL mapping result for disease-related modules HFD_M9 and HFD_M28. ModQTL maps of HFD_M9 and HFD_M28 are indicated in orange and purple, respectively. The threshold calculated by permutation test (p<0.1) for HFD_M28 is represented by a purple dashed line. (B) The filtering criteria for selecting candidate genes under the ModQTL peak for HFD_M28. Genes with two of the described criteria are considered as candidate genes. (C) The most significant associations between 27 candidate genes under the ModQTL peak and Crohn’s disease or ulcerative colitis (UC) identified through genome-wide association studies (GWAS) according to whole-genome sequence in the human UK Biobank (UKBB) are shown in the scatter plot (top panel). Crohn’s disease and UC are indicated by pink circle and green triangle, respectively. The threshold (-Log10 p-value=5) is represented by a red dashed line. Heatmap showing the identified 27 candidate genes of module HFD_M28 (bottom panel). Variants colored in blue indicate genes with high-impact genetic variants in BXD mice (including missense, frameshift, initiator codon, splice donor, splice acceptor, in-frame deletion, in-frame insertion, stop lost, stop gained). Inflammation is indicated in red and represents genes associated with inflammation based on literature mining. Cis-eQTL colored in purple indicates genes with Cis-eQTLs. Tissue specificity colored in orange means genes that are highly expressed in human intestine (data were downloaded from human protein atlas, https://www.proteinatlas.org/humanproteome/tissue/intestine [Uhlén et al., 2015]). GWAS result of UC in UKBB colored in green indicates that genes are significantly associated with human UC. (D, E) Manhattan plots showing the associated gene expression modules of Epha6 in mouse gastrointestinal tract (D) and that of MUC4 in human gastrointestinal tract (E) (data from https://systems-genetics.org/gmad [Li et al., 2019]). The threshold is represented by the red dashed line (absolute Gene-Module Association Score [GMAS] ≥ 0.268). Terms above the threshold are identified as the significant associated terms. GO terms or gene modules are ranked by similarity. Known associated terms are shown as red dots, and new significant associated terms are colored in black. (F) Dot plot showing that the expression of MUC4 was higher in four cell types of human inflamed colon with Crohn’s disease.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87569/elife-87569-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Lollipop plots showing UC- or CDs-associated genetic variants of EPHA6 (A) and MUC4 (B) based on UK Biobank (UKBB) whole-genome sequence data. Variants effect were predicted and their classification are represented by color. VEP: variant effect prediction.
 
 To further prioritize candidate genes regulating module HFD_M28, we applied GWAS to detect CDs- and UC-associated genetic variants using whole-genome sequence (WGS) dataset in UKBB (Figure 5C, ‘Materials and methods’). Interestingly, the genetic variants of two genes under the QTL peak, that is, ephrin type A receptor 6 (EPHA6, p-value=2.3E-06) (Figure 5C, Figure 5—figure supplement 1A, Supplementary file 3) and Mucin 4 (MUC4, p-value=1.2E-06) (Figure 5C, Figure 5—figure supplement 1B, Supplementary file 4) were also associated with UC in humans. EPHA6 belongs to Eph/Ephrin Signaling, and this pathway has been associated with gut inflammation (Coulthard et al., 2012) and proposed as a potential target to alleviate the inflammatory response in IBD (Grandi et al., 2019), but the association between EPHA6 and IBD is not explored yet. The Gene-Module Association Determination (G-MAD) (Li et al., 2019; https://systems-genetics.org/gmad) also revealed that expression of Epha6 in mouse gastrointestinal tract correlates with genes involved in inflammation-related pathways, such as IL-6 production and regulation of inflammatory response (Figure 5D, Supplementary file 5). MUC4 is a transmembrane mucin (Gao et al., 2021) and highly expressed in gastrointestinal tract according to the human protein atlas (Uhlén et al., 2015; https://www.proteinatlas.org/humanproteome/tissue/intestine; Figure 5C). The expression of MUC4 in the human gastrointestinal tract correlates with genes that are enriched for CRC and O-linked glycosylation based on G-MAD (Li et al., 2019; Figure 5E, Supplementary file 5). O-linked glycans are expressed by the intestinal epithelium to maintain barrier function, especially mucin type O-glycans, and gut disorders can be affected by dysfunction of O-linked glycosylation (Brazil and Parkos, 2022). Moreover, MUC4 is upregulated in enterocytes and Goblet cells in colons of CDs patients (Figure 5F). MUC4 hence is a strong candidate because of its role in maintaining the intestinal epithelium and controlling the gut inflammatory response (McGuckin et al., 2011) and EPHA6 might be a novel candidate gene to impact gut inflammation. Based on the results of our QTL mapping, human GWAS in UKBB, and existing literature, we hypothesize that MUC4 and EPHA6 impact on colon integrity and inflammation and may be important players in gut inflammation or IBD triggered by an unhealthy, lipid-rich diet.
 
@@ -97,51 +121,104 @@ In conclusion, our systems genetics investigation of the colon in a controlled G
 
 ## Materials and methods
 
-## Population handling
+### Population handling
 
 Mice were studied as previously described (Williams et al., 2016) and multiple organs were harvested for further analysis. Briefly, in groups of 3–5 animals from the same strain and diet, in isolator cages with individual air filtration (500 cm2, GM500, Tecniplast) and provided water ad libitum. Mice were fed CD ad libitum until 8 wk of age. From 8 wk to 29 wk, half of the cohort was fed ad libitum HFD and the rest continued to be fed a CD (Figure 1A). CD composition: 18% kcal fat, 24% kcal protein, and 58% kcal of carbohydrates (Teklad Global 18% Protein Rodent Diet 2018 chow diet, Envigo, Indianapolis, USA). HFD composition: 60.3% kcal fat, 18.4% kcal protein, and 27.3% kcal of carbohydrates (Teklad Custom Diet TD.06414, Envigo). All mice were fasted overnight (from 6 pm to 9 am) prior to euthanasia. All procedures were approved by the veterinary office of canton Vaud under animal experimentation license number VD2257. In this work, proximal colons were extracted from the bio-banked samples and we did not use any new animals.
 
-## Transcriptome of the proximal colon in BXDs
+### Transcriptome of the proximal colon in BXDs
 
 An ~1 cm portion of the proximal half part of the colon was excised following euthanasia, washed in PBS, and immediately stored in liquid nitrogen. Approximately five animals of the same strain fed the same diet were pooled at equal mass concentration for further RNA extraction. Total RNA was extracted using Direct­zol (Zymo Research) including the DNase digestion step. Then, 100 ng of total RNA was amplified using the Ambion WT Expression Kit from Life Technologies (part number 4411974) and 5500 ng of cDNA was fragmented and labeled using the Affymetrix WT terminal labeling kit (part number 900671) all following the manufacturer’s protocols. Labeled cDNA was hybridized on an Affymetrix Clariom S Assay microarray platform (GPL23038) in ~16 hr of incubation, then washed and stained using an Affymetrix 450 Fluidics Station according to Affymetrix protocols. Finally, arrays were scanned on Affymetrix GSC3000 7G Scanner. Microarray data preprocessing was performed using apt-probeset-summarize from the Array Power Tool (APT) suite (v2.11.3) with the gc-sst-rma-sketch standard method, and the resulting expression values were log-transformed. Microarray probes targeting polymorphic regions in the BXD population were ignored in the process. For probesets targeting a same transcript, only the probeset with the highest value was considered.
 
-## Differential gene expression analysis
+### Differential gene expression analysis
 
 General differences in mRNA expression profiles between diets were assessed using PCA. Differential expression of individual transcripts between diets was assessed using the limma R Bioconductor package (version 3.48.3) (Ritchie et al., 2015). Briefly, statistical significance was assessed using an empirical Bayes method (eBayes function) with an additive linear model accounting for diet and strain effect and adjusted p-values were calculated by the BH approach. Transcripts showing BH-adjusted p-value<0.05 and absolute log2 (fold change) > 0.5 were considered significantly associated with the effect of the diet.
 
-## GSEA and ORA
+### GSEA and ORA
 
 Gene sets used in GSEA and ORA consisted of two parts: (1) the gene sets from the GO, KEGG, Hallmark, and Reactome databases were retrieved through the msigdbr R package (version 7.2.1) (Liberzon et al., 2011). (2) The gene signatures of mouse and human IBD were used as custom gene sets (Table 1).
+
+**Table 1.**
+ Gene signatures of mouse and human IBDs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Disease</th>
+      <th>Source</th>
+      <th>DEGs</th>
+      <th>Thresholds</th>
+      <th>Species</th>
+      <th>Tissues</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DSS-induced UC</td>
+      <td>GSE131032;Czarnewski et al., 2019</td>
+      <td>Author-provided DEGs</td>
+      <td>Absolute log2 FC &gt; 1 and BH-adjusted p-value&lt;0.05</td>
+      <td>Mouse</td>
+      <td>Colon</td>
+    </tr>
+    <tr>
+      <td>Crohn’s disease and UC</td>
+      <td>GSE16879;Arijs et al., 2009; Li et al., 2019</td>
+      <td>Author-provided DEGs</td>
+      <td>Absolute FC &gt; 1 and BH-adjusted p-value&lt;0.01</td>
+      <td>Human</td>
+      <td>Colon</td>
+    </tr>
+    <tr>
+      <td>Crohn’s disease and UC</td>
+      <td>GSE83687;Peters et al., 2017</td>
+      <td>DEGs computed by limma package;Ritchie et al., 2015</td>
+      <td>Absolute log2 FC &gt; 1 and BH-adjusted p-value&lt;0.001</td>
+      <td>Human</td>
+      <td>Colon</td>
+    </tr>
+    <tr>
+      <td>Crohn’s disease</td>
+      <td>SCP1884;Kong et al., 2023</td>
+      <td>Author-provided DEGs</td>
+      <td>DE coefficient &gt; 1 and BH-adjusted p-value&lt;0.05</td>
+      <td>Human</td>
+      <td>Colon</td>
+    </tr>
+  </tbody>
+</table>
+
+_BH, Benjamini–Hochberg; DEGs, differentially expressed genes; DSS, dextran sulfate sodium; FC, fold change; IBD, inflammatory bowel diseases; UC, ulcerative colitis._
 
 GSEA was performed using clusterProfiler R package (version 3.10.1) (Yu et al., 2012) based on the log2(fold change) ranking using parameters (nPerm = 100000, minGSSize = 30, maxGSSize = 5000, pvalueCutoff = 1). The gene sets with absolute NES > 1 and BH-adjusted p-value<0.05 were identified as the significantly enriched gene sets.
 
 ORA was also performed using clusterProfiler R package (version 3.10.1) (Yu et al., 2012) using parameters (minGSSize = 30, maxGSSize = 800). The gene sets with adjusted p-value calculated by BH < 0.05 were identified as the significantly enriched gene sets.
 
-## Weighted gene correlation network analysis (WGCNA)
+### Weighted gene correlation network analysis (WGCNA)
 
 We used WGCNA R package (version 1.51) (Langfelder and Horvath, 2008) to construct co-expression networks under CD and HFD, respectively. Firstly, the correlations between all pairs of gene across all BXDs fed with CD or HFD were calculated by Pearson correlation. Then, a best soft-thresholding power of 4 and 3 was chosen using pickSoftThreshold function with parameters (networkType = ‘signed hybrid,’ blockSize = 25,000, corFnc = ‘bicor’) for CD and HFD datasets in BXD colons separately. According to the calculated correlation coefficients, a network was constructed using parameters (networkType = ‘signed hybrid,’ minModuleSize = 30, reassignThreshold = 1e-6, mergeCutHeight = 0.15, maxBlockSize = 25,000). The constructed co-expression gene modules were assigned color names, and the module eigengenes were also identified for further analyses. To detect the preserved CD-modules in the co-expression modules under HFD, we defined gene modules under CD as custom genesets and performed ORA on each HFD modules.
 
-## TF enrichment analysis
+### TF enrichment analysis
 
 We first constructed a lognormal background distribution using the sequences of +5 kb region around the transcription starting site (TSS) of all genes and then downloaded the mouse HOCOMOCO-v10 (Kulakovskiy et al., 2018) motifs from R package motifDB to perform TF enrichment analyses using R package PWMenrich. The significantly enriched motifs (p-value<0.001) were selected and then ranked based on the percentage of enriched promoters.
 
-## ModQTL mapping in the BXDs
+### ModQTL mapping in the BXDs
 
 We first downloaded genotype information of each BXD mice from GeneNetwork (see here) and generated the kinship matrix of BXD mice using the leave-one-chromosome-out (LOCO) method. We then used the eigengenes of each module as phenotype input to perform ModQTL with the R package qtl2 (version 0.28) (Broman et al., 2019), and the threshold of each QTL mapping analysis was obtained from a permutation test with 10,000 repeats. The peaks of QTL were calculated by find_peaks function with parameter: prob = 0.95.
 
 The same methods were also applied to gene expression QTL mapping (eQTL), and the significance threshold of each gene was obtained from a permutation test with 1000 repeats. The significant peaks overlapped with the location of their corresponding gene were identified as cis-eQTL.
 
-## Literature mining
+### Literature mining
 
 To explore the inflammation-related genes, we first used candidate gene names and keywords (‘IBD,’ ‘inflammatory bowel disease,’ ‘Ulcerative colitis,’ ‘Inflammation,’ ‘Inflammatory,’ ‘Crohn’s disease’) to search the title or abstract of associated literature using R package easyPubMed (version 2.13). Then, the genes involved in inflammation were confirmed by manual curation.
 
-## GWAS in UKBB
+### GWAS in UKBB
 
 We are allowed to use the UK Biobank Resource under Application Number 48020. The phenotype data of inflamed UC (Data-Field 131629, n = 6459) and CDs (Data-Field 131627, n = 3358) were firstly downloaded from UKBB (Bycroft et al., 2018). A total of 200,030 individuals with WGS (Halldorsson et al., 2022) in UK Biobank were selected and then the population of European descent (including with 1173 patients with CDs and 2295 patients with UC) was extracted for further GWAS analyses. Control individuals (n = 143,194) were included based on the following criteria: (1) individuals without noninflamed colitis (Data-Field 131631), CDs, and UC. (2) Individuals not taking any IBD-related medicine (Supplementary file 7).
 
 WGS data provided by UK Biobank and used for GWAS were processed starting from pVCF files. We used REGENIE step1 to estimate population structure and then REGENIE step2 were applied to test associations between phenotypes and genetic variants and also included the following covariates in our model: the first 10 genetic PCs, age, sex, age:sex interaction, body mass index (BMI), and smoking status. All data preparation and GWAS steps were run on DNAnexus.
 
-## Mendelian randomization (MR) analysis
+### Mendelian randomization (MR) analysis
 
 eQTLs in sigmoid colon and transverse colon were selected in and their effect sizes obtained from the GTEx Portal on March 28, 2023 (v8, https://www.gtexportal.org/home/datasets, dbGaP Accession phs000424.v8.p2) (Lonsdale et al., 2013). No eQTLs were found for EPHA6 but 147 and 87 eQTLs were found for MUC4 in the sigmoid colon and transverse colon, respectively.
 

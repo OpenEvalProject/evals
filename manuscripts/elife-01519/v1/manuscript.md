@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.01519.001 The biological macromolecular world is homochiral and effective enforcement and perpetuation of this homochirality is essential for cell survival. In this study, we present the mechanistic basis of a configuration-specific enzyme that selectively removes D-amino acids erroneously coupled to tRNAs. The crystal structure of dimeric D-aminoacyl-tRNA deacylase (DTD) from Plasmodium falciparum in complex with a substrate-mimicking analog shows how it uses an invariant ‘cross-subunit’ Gly- cis Pro dipeptide to capture the chiral centre of incoming D-aminoacyl-tRNA. While no protein residues are directly involved in catalysis, the unique side chain-independent mode of substrate recognition provides a clear explanation for DTD’s ability to act on multiple D-amino acids. The strict chiral specificity elegantly explains how the enriched cellular pool of L-aminoacyl-tRNAs escapes this proofreading step. The study thus provides insights into a fundamental enantioselection process and elucidates a chiral enforcement mechanism with a crucial role in preventing D-amino acid infiltration during the evolution of translational apparatus. DOI: http://dx.doi.org/10.7554/eLife.01519.001
+The biological macromolecular world is homochiral and effective enforcement and perpetuation of this homochirality is essential for cell survival. In this study, we present the mechanistic basis of a configuration-specific enzyme that selectively removes D-amino acids erroneously coupled to tRNAs. The crystal structure of dimeric D-aminoacyl-tRNA deacylase (DTD) from Plasmodium falciparum in complex with a substrate-mimicking analog shows how it uses an invariant ‘cross-subunit’ Gly-cisPro dipeptide to capture the chiral centre of incoming D-aminoacyl-tRNA. While no protein residues are directly involved in catalysis, the unique side chain-independent mode of substrate recognition provides a clear explanation for DTD’s ability to act on multiple D-amino acids. The strict chiral specificity elegantly explains how the enriched cellular pool of L-aminoacyl-tRNAs escapes this proofreading step. The study thus provides insights into a fundamental enantioselection process and elucidates a chiral enforcement mechanism with a crucial role in preventing D-amino acid infiltration during the evolution of translational apparatus.
 
 ## Introduction
 
@@ -36,63 +36,251 @@ The first crystal structure of DTD from E. coli (EcDTD) was solved in the apo fo
 
 ## Results
 
-## Co-crystal structure of PfDTD with D-Tyr3AA
+### Co-crystal structure of PfDTD with D-Tyr3AA
+
+PfDTD was co-crystallized with a post-transfer substrate analog D-Tyr3AA, which mimics D-tyrosine attached to the 3′-OH of the terminal adenosine (A76) of tRNA (Figure 1). The ester linkage between amino acid and adenosine is replaced by an amide linkage to make it non-hydrolyzable. Similar post-transfer substrate analogs have been used extensively to study proofreading mechanisms in atomic details for both Class I-specific CP1 editing domains and Class II-specific editing domains (Lincecum et al., 2003; Dock-Bregeon et al., 2004; Fukunaga and Yokoyama, 2006; Hussain et al., 2006, 2010).The crystal structure of PfDTD in complex with D-Tyr3AA has been solved in two different crystal forms: crystal form I at a resolution of 1.86 Å in C2 space group and crystal form II at a resolution of 2.2 Å in P21 space group (Table 1). Crystal forms I and II have two and eight copies per asymmetric unit, respectively. This provides us with 10 independent observations of the ligand in the active site (Figure 2—figure supplement 1). Since all copies present a similar picture, the higher resolution crystal form I is discussed here unless otherwise mentioned (Figure 2A). The enzyme is a symmetric dimer with two active sites per dimer that are located at the dimeric interface (Figure 2B,C). The residues defining the active site pocket span the conserved –SQFTL– motif from one monomer and the –NXGP(V/F)T– motif from the other. The D-Tyr3AA-bound structure superimposes on the apo structure (PDB id: 3KNF) with an r.m.s.d. of 0.41 Å for 260 Cα atoms (Figure 2—figure supplement 2). However, there are subtle rearrangements of the active site region upon ligand binding, indicating the plasticity associated with the active site (Figure 2D). The most noticeable movements occur in Phe89, Phe137 and Gly138 upon accommodation of D-Tyr3AA making the active site more compatible for substrate binding (Figure 2D).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig1-v1.jpg)
 
-**Figure 1.:** () The 5′-OH is linked to tRNA in the actual substrate, whereas it is free in D-Tyr3AA. () The ester bond in the real substrate is replaced by an amide bond in the analog D-Tyr3AA to make it non-hydrolyzable.DOI: http://dx.doi.org/10.7554/eLife.01519.003
+**Figure 1.:** () The 5′-OH is linked to tRNA in the actual substrate, whereas it is free in D-Tyr3AA. () The ester bond in the real substrate is replaced by an amide bond in the analog D-Tyr3AA to make it non-hydrolyzable.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Comparison of the docked substrate (Lim et al., 2003) with D-Tyr3AA captured in the co-crystal structure. In their study, Lim et al. have docked the entire substrate that is D-Tyr-tRNA onto Haemophilus influenzae DTD but here only the terminal adenosine is shown for the sake of comparison. To prepare the figure, the ligand has been placed based on the stereoscopic image provided by Lim et al. (2003). The docked substrate complex does not match with the D-Tyr3AA as found in the experimental structure presented here. (B) The position of ADP (Bhatt et al., 2010) is actually completely outside the pocket when compared to D-Tyr3AA complex. (C) The positions and orientations of various D-amino acids captured (Bhatt et al., 2010) with respect to the cognate substrate analog D-Tyr3AA. None of the D-amino acids is found to be located in the position where the chiral discrimination occurs (the distance between Cα of the D-amino acids and Cα of D-Tyr3AA ranges from 3.39 Å to 13.94 Å). The site of binding as well as the orientation of D-amino acids with respect to the enzyme is highly variable. In some cases, the carboxylate group points towards the enzyme, whereas in some cases it projects outward. Considering that in the actual substrate, the D-amino acid would be linked to the tRNA, a multiple binding mode is highly improbable as the orientation and position of the D-amino acid would be fixed by the binding of terminal adenosine.DOI: http://dx.doi.org/10.7554/eLife.01519.004
+**Figure 1—figure supplement 1.:** (A) Comparison of the docked substrate (Lim et al., 2003) with D-Tyr3AA captured in the co-crystal structure. In their study, Lim et al. have docked the entire substrate that is D-Tyr-tRNA onto Haemophilus influenzae DTD but here only the terminal adenosine is shown for the sake of comparison. To prepare the figure, the ligand has been placed based on the stereoscopic image provided by Lim et al. (2003). The docked substrate complex does not match with the D-Tyr3AA as found in the experimental structure presented here. (B) The position of ADP (Bhatt et al., 2010) is actually completely outside the pocket when compared to D-Tyr3AA complex. (C) The positions and orientations of various D-amino acids captured (Bhatt et al., 2010) with respect to the cognate substrate analog D-Tyr3AA. None of the D-amino acids is found to be located in the position where the chiral discrimination occurs (the distance between Cα of the D-amino acids and Cα of D-Tyr3AA ranges from 3.39 Å to 13.94 Å). The site of binding as well as the orientation of D-amino acids with respect to the enzyme is highly variable. In some cases, the carboxylate group points towards the enzyme, whereas in some cases it projects outward. Considering that in the actual substrate, the D-amino acid would be linked to the tRNA, a multiple binding mode is highly improbable as the orientation and position of the D-amino acid would be fixed by the binding of terminal adenosine.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** The substrate analog-bound structures that represent the biologically relevant complexes of proofreading domains invariably occupy the deepest available pocket having a striking surface complementarity. This can be clearly seen in the well-studied cases of Class I-specific CP1 domains, Class II-specific editing domain of E. coli ThrRS and Pab-NTD. The D-Tyr3AA complex presented in this study also shows these features evidently. However, the ADP complex (Bhatt et al., 2010) shows ADP clinging onto the surface, leaving the deepest pocket unoccupied. It may also be noted here that ADP is not a substrate for this enzyme.DOI: http://dx.doi.org/10.7554/eLife.01519.005
+**Figure 1—figure supplement 2.:** The substrate analog-bound structures that represent the biologically relevant complexes of proofreading domains invariably occupy the deepest available pocket having a striking surface complementarity. This can be clearly seen in the well-studied cases of Class I-specific CP1 domains, Class II-specific editing domain of E. coli ThrRS and Pab-NTD. The D-Tyr3AA complex presented in this study also shows these features evidently. However, the ADP complex (Bhatt et al., 2010) shows ADP clinging onto the surface, leaving the deepest pocket unoccupied. It may also be noted here that ADP is not a substrate for this enzyme.
+
+**Table 1.**
+ Crystallographic data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3"></th>
+      <th>PfDTD+D-Tyr3AA</th>
+      <th>PfDTD+D-Tyr3AA</th>
+    </tr>
+    <tr>
+      <th>Crystal I</th>
+      <th>Crystal II</th>
+    </tr>
+    <tr>
+      <th>(PDB id: 4NBI)</th>
+      <th>(PDB id: 4NBJ)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C2</td>
+      <td>P21</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions:</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a (Å)</td>
+      <td>82.13</td>
+      <td>90.90</td>
+    </tr>
+    <tr>
+      <td>b (Å)</td>
+      <td>65.74</td>
+      <td>79.91</td>
+    </tr>
+    <tr>
+      <td>c (Å)</td>
+      <td>56.92</td>
+      <td>95.02</td>
+    </tr>
+    <tr>
+      <td>β (°)</td>
+      <td>93.30</td>
+      <td>93.51</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)*</td>
+      <td>25.0–1.86 (1.93–1.86)</td>
+      <td>25.0–2.20 (2.28–2.20)</td>
+    </tr>
+    <tr>
+      <td>Total Observations</td>
+      <td>178996</td>
+      <td>449245</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>25156 (2283)</td>
+      <td>69275 (6911)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>98.3 (89.3)</td>
+      <td>100 (99.9)</td>
+    </tr>
+    <tr>
+      <td>Rmerge (%)</td>
+      <td>7.5 (28.3)</td>
+      <td>11.8 (59.3)</td>
+    </tr>
+    <tr>
+      <td>&lt;I/(σ)I&gt;</td>
+      <td>29.4 (5.5)</td>
+      <td>17.7 (2.8)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>7.1 (6.4)</td>
+      <td>6.5 (5.9)</td>
+    </tr>
+    <tr>
+      <td>Data refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>1.86</td>
+      <td>2.20</td>
+    </tr>
+    <tr>
+      <td>No. of reflections</td>
+      <td>23878</td>
+      <td>65743</td>
+    </tr>
+    <tr>
+      <td>R (%)</td>
+      <td>16.77</td>
+      <td>19.46</td>
+    </tr>
+    <tr>
+      <td>Rfree (%)†</td>
+      <td>19.25</td>
+      <td>25.35</td>
+    </tr>
+    <tr>
+      <td>Monomers/a.u.</td>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>No. of residues</td>
+      <td>323</td>
+      <td>1289</td>
+    </tr>
+    <tr>
+      <td>No. of atoms</td>
+      <td>2917</td>
+      <td>10727</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>2595</td>
+      <td>10104</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>72</td>
+      <td>248</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>250</td>
+      <td>375</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.007</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.093</td>
+      <td>1.436</td>
+    </tr>
+    <tr>
+      <td>Mean B value (Å2)</td>
+      <td>30.33</td>
+      <td>48.11</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>29.09</td>
+      <td>47.69</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>43.94</td>
+      <td>53.30</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>41.29</td>
+      <td>57.16</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for the highest resolution shell.†Throughout the refinement, 5% of the total reflections were held aside for Rfree._
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig2-v1.jpg)
 
-**Figure 2.:** (A) A (2Fo–Fc) map contoured at 1.2σ clearly showing unambiguous density for the ligand D-Tyr3AA from crystal form I solved at 1.86 Å resolution. (B) Dimeric DTD with the two monomers shown in green and cyan. The conserved–SQFTL–and–NXGP(V/F)T–motifs are depicted in violet and orange respectively. The ligand binds in the two active sites located at the dimer interface. The two tRNAs have been schematically represented. (C) Surface representation showing D-Tyr3AA in the pocket. Inset is a magnified image showing the side chain of D-tyrosine protruding out of the pocket. The ligand has been colored according to the B-factors. (D) Structural rearrangements in the substrate pocket upon D-Tyr3AA binding highlighting the plasticity of the active site. The apo is shown in green and the complex is shown in purple. The ligand has been made transparent for clarity. (E) Stereoscopic representation showing the interactions between the ligand and the active site residues (* indicates residues from the other monomer).DOI: http://dx.doi.org/10.7554/eLife.01519.007
+**Figure 2.:** (A) A (2Fo–Fc) map contoured at 1.2σ clearly showing unambiguous density for the ligand D-Tyr3AA from crystal form I solved at 1.86 Å resolution. (B) Dimeric DTD with the two monomers shown in green and cyan. The conserved–SQFTL–and–NXGP(V/F)T–motifs are depicted in violet and orange respectively. The ligand binds in the two active sites located at the dimer interface. The two tRNAs have been schematically represented. (C) Surface representation showing D-Tyr3AA in the pocket. Inset is a magnified image showing the side chain of D-tyrosine protruding out of the pocket. The ligand has been colored according to the B-factors. (D) Structural rearrangements in the substrate pocket upon D-Tyr3AA binding highlighting the plasticity of the active site. The apo is shown in green and the complex is shown in purple. The ligand has been made transparent for clarity. (E) Stereoscopic representation showing the interactions between the ligand and the active site residues (* indicates residues from the other monomer).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** (2Fo–Fc) maps contoured at 1.2σ for all monomers from crystal forms I and II showing clear unambiguous densities for the ligand D-Tyr3AA.DOI: http://dx.doi.org/10.7554/eLife.01519.008
+**Figure 2—figure supplement 1.:** (2Fo–Fc) maps contoured at 1.2σ for all monomers from crystal forms I and II showing clear unambiguous densities for the ligand D-Tyr3AA.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** PfDTD (pink) on the apo structure (green).The complex structure overlaps with the apo structure with an r.m.s.d. of 0.41 Å over 260 Cα atoms.DOI: http://dx.doi.org/10.7554/eLife.01519.009
+**Figure 2—figure supplement 2.:** The complex structure overlaps with the apo structure with an r.m.s.d. of 0.41 Å over 260 Cα atoms.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** PfDTD on Pab-NTD.PfDTD has been shown in blue and Pab-NTD is depicted in pink. The two structures overlap with an r.m.s.d. of 1.65 Å over 118 Cα atoms.DOI: http://dx.doi.org/10.7554/eLife.01519.010
+**Figure 2—figure supplement 3.:** PfDTD has been shown in blue and Pab-NTD is depicted in pink. The two structures overlap with an r.m.s.d. of 1.65 Å over 118 Cα atoms.
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig2-figsupp4-v1.jpg)
 
-**Figure 2—figure supplement 4.:** PfDTD and Pab-NTD.The adenine is recognized by a conserved set of interactions in both PfDTD and Pab-NTD, including an invariant Phe residue which stacks with the adenine base.DOI: http://dx.doi.org/10.7554/eLife.01519.011
+**Figure 2—figure supplement 4.:** The adenine is recognized by a conserved set of interactions in both PfDTD and Pab-NTD, including an invariant Phe residue which stacks with the adenine base.
 
 ![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig2-figsupp5-v1.jpg)
 
-**Figure 2—figure supplement 5.:** The atomic B-factor is given by the equation: Bi = 8π2Ui2 (where Ui is the mean square displacement of atom i). It is a measure of atomic displacement. High B-factors indicate flexibility while ordered regions have low B-factors. A sharp rise in the B-factors can be observed in the amino acid moiety beyond the Cβ atom. Another peak is observed around the C5′ and 5′-OH of ribose since it is placed out of the pocket. A dip at the carbonyl oxygen of the amino acid highlights the strong recognition of this atom in the active site pocket.DOI: http://dx.doi.org/10.7554/eLife.01519.012
+**Figure 2—figure supplement 5.:** The atomic B-factor is given by the equation: Bi = 8π2Ui2 (where Ui is the mean square displacement of atom i). It is a measure of atomic displacement. High B-factors indicate flexibility while ordered regions have low B-factors. A sharp rise in the B-factors can be observed in the amino acid moiety beyond the Cβ atom. Another peak is observed around the C5′ and 5′-OH of ribose since it is placed out of the pocket. A dip at the carbonyl oxygen of the amino acid highlights the strong recognition of this atom in the active site pocket.
 
 ![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig2-figsupp6-v1.jpg)
 
-**Figure 2—figure supplement 6.:** The adenine and ribose superimpose on top of each other very well. However, the amino acid moiety shows significant deviations. The maximum variation is observed beyond the Cβ atom of the substrate.DOI: http://dx.doi.org/10.7554/eLife.01519.013
+**Figure 2—figure supplement 6.:** The adenine and ribose superimpose on top of each other very well. However, the amino acid moiety shows significant deviations. The maximum variation is observed beyond the Cβ atom of the substrate.
 
-## Adenosine binding and catalytic mechanism
+### Adenosine binding and catalytic mechanism
 
-The active site of DTD uses, in a major way, the main chain atoms to interact with the substrate (
+The active site of DTD uses, in a major way, the main chain atoms to interact with the substrate (Figure 2E). The main chain atoms of Lys107 and Ile43 have direct and water-mediated interactions with the adenine moiety. An invariant Phe137 provides base-stacking interaction to the adenine ring. The main chain nitrogen of Gly138 along with the side chain hydroxyl of Ser87 holds the 2′-OH. The 5′-OH projects outwards as should be expected since it would be attached to the preceding nucleotide (C75) in the actual substrate, which is D-aa-tRNA. Considering that Pab-NTD, which is a structural homolog of DTD (Figure 2—figure supplement 3), also interacts with the substrate mostly through main chain atoms, it appears to be a conserved feature of this fold to employ main chain atoms extensively for ligand binding (Figure 2—figure supplement 4) (Hussain et al., 2006, 2010). Moreover, the adenosine-binding pocket is highly conserved in this DTD-like fold with an invariant Phe providing base-stacking interaction (Phe117 in Pab-NTD and Phe137 in PfDTD) as shown in Figure 2—figure supplement 4. To prove that the ligand complex we have obtained is a biologically relevant one, we disrupted the adenine-binding pocket with the help of mutations and showed that it leads to complete loss of activity. As shown in Figure 3A, Phe137 that stacks with the adenine base was mutated to Ala. In another mutant, we blocked the adenine pocket by mutating a conserved Ala112 to a bulkier Phe (Figure 3A). Both F137A and A112F mutations resulted in a complete loss of activity, confirming that the adenosine-binding pocket identified here indeed represents the bona fide functional site (Figure 3B). The corresponding mutations F125A and A102F in EcDTD were also tested for their activity against D-Tyr-tRNATyr. These mutants in EcDTD also showed a complete loss of activity (Figure 3—figure supplement 1B), further substantiating the biological relevance of the substrate-binding pocket identified here.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig3-v1.jpg)
 
-**Figure 3.:** (A) Stereoscopic depiction showing mutations generated in the adenine-binding pocket: Stick representation is used for wild-type residues while mutants are depicted in spheres. Phe137 was mutated to Ala and Ala112 was mutated to Phe. (B) Deacylation of D-Tyr-tRNATyr by buffer (), wild-type PfDTD (), F137A (), A112F (), S87A (), S87P (), Q88A () and T90A (). 500 pM enzyme concentration was used for the assays. (C) Stereoscopic image showing all the protein side chains within 6 Å of the susceptible bond of the substrate. A water molecule has been modeled based on Pab-NTD complex structure. The water is positioned at a distance of 2.61 Å from the 2′-OH and 2.79 Å from the scissile bond of D-Tyr3AA. In the absence of any protein side chain playing a role in catalysis, a substrate-assisted mechanism is proposed involving the role of 2′-OH of tRNA in activating a water molecule as suggested in case of Pab-NTD.DOI: http://dx.doi.org/10.7554/eLife.01519.014
+**Figure 3.:** (A) Stereoscopic depiction showing mutations generated in the adenine-binding pocket: Stick representation is used for wild-type residues while mutants are depicted in spheres. Phe137 was mutated to Ala and Ala112 was mutated to Phe. (B) Deacylation of D-Tyr-tRNATyr by buffer (), wild-type PfDTD (), F137A (), A112F (), S87A (), S87P (), Q88A () and T90A (). 500 pM enzyme concentration was used for the assays. (C) Stereoscopic image showing all the protein side chains within 6 Å of the susceptible bond of the substrate. A water molecule has been modeled based on Pab-NTD complex structure. The water is positioned at a distance of 2.61 Å from the 2′-OH and 2.79 Å from the scissile bond of D-Tyr3AA. In the absence of any protein side chain playing a role in catalysis, a substrate-assisted mechanism is proposed involving the role of 2′-OH of tRNA in activating a water molecule as suggested in case of Pab-NTD.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** PfDTD and EcDTD.(A) Deacylation of D-Tyr-tRNATyr by buffer (), wild type PfDTD (), Q88E (), Q88N (), T90S (). 500 pM enzyme concentration was used for all assays. (B) Deacylation of D-Tyr-tRNATyr by buffer (), wild-type EcDTD (), F125A (), A102F (), S77A (), S77P (), Q78A (), T80A (). 50 nM enzyme concentration was used for all assays.DOI: http://dx.doi.org/10.7554/eLife.01519.015
+**Figure 3—figure supplement 1.:** (A) Deacylation of D-Tyr-tRNATyr by buffer (), wild type PfDTD (), Q88E (), Q88N (), T90S (). 500 pM enzyme concentration was used for all assays. (B) Deacylation of D-Tyr-tRNATyr by buffer (), wild-type EcDTD (), F125A (), A102F (), S77A (), S77P (), Q78A (), T80A (). 50 nM enzyme concentration was used for all assays.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** (A) The ADP-bound structure as reported earlier shows only one conserved interaction where the adenine base stacks with Phe89 while the phosphate tail hangs out (PDB id: 3KO5). (B) Thr90 that was earlier proposed to be the catalytic residue has its γ-hydroxyl group oriented away from the point of attack and is tightly held by highly conserved interactions with Thr152 main chain atoms from the other monomer. (C) Deacylation of D-Tyr-tRNATyr by buffer (), wild type PfDTD (), F89A () and T90A (). 500 pM of enzyme was used for each assay. Although T90A deacylation curve has been shown in Figure 3B, it is shown again here for immediate reference. (D) Deacylation of D-Tyr-tRNATyr by buffer (), wild type EcDTD (), F79A () and T80A (). 50 nM of enzyme was used for each assay. Although T80A deacylation curve has been shown in Figure 3—figure supplement 1B, it is shown again here for immediate reference.DOI: http://dx.doi.org/10.7554/eLife.01519.016
+**Figure 3—figure supplement 2.:** (A) The ADP-bound structure as reported earlier shows only one conserved interaction where the adenine base stacks with Phe89 while the phosphate tail hangs out (PDB id: 3KO5). (B) Thr90 that was earlier proposed to be the catalytic residue has its γ-hydroxyl group oriented away from the point of attack and is tightly held by highly conserved interactions with Thr152 main chain atoms from the other monomer. (C) Deacylation of D-Tyr-tRNATyr by buffer (), wild type PfDTD (), F89A () and T90A (). 500 pM of enzyme was used for each assay. Although T90A deacylation curve has been shown in Figure 3B, it is shown again here for immediate reference. (D) Deacylation of D-Tyr-tRNATyr by buffer (), wild type EcDTD (), F79A () and T80A (). 50 nM of enzyme was used for each assay. Although T80A deacylation curve has been shown in Figure 3—figure supplement 1B, it is shown again here for immediate reference.
 
 To delineate the catalytic mechanism, we looked for all the amino acid side chains located within a distance of 6 Å from the susceptible bond of the substrate, that is the bond between adenosine and the carbonyl group of D-tyrosine. These residues include Ser87, Gln88, Phe89, Thr90, Met141, and Pro150. Out of these, the residues that can chemically contribute to catalysis are Ser87, Gln88, and Thr90, which are positioned at a distance of 5.71 Å, 3.56 Å, and 5.72 Å respectively from the carbonyl carbon of the substrate (Figure 3C).
 
@@ -100,67 +288,65 @@ To probe the role played by these residues in catalysis, we generated mutants S8
 
 Our earlier structural studies on Pab-NTD have suggested an RNA-assisted catalytic mechanism implicating the role of 2′-OH in activating a water molecule for catalysis (Hussain et al., 2006, 2010). Subsequently, the catalytic role of RNA in proofreading has also been experimentally shown in the case of phenylalanyl-tRNA synthetase (PheRS) (Ling et al., 2007). Unlike in the case of PheRS, the catalytic role of RNA in DTD could not be directly probed with a modified tRNA having a terminal 2′-deoxyadenosine since tyrosyl-tRNA synthetase (TyrRS) attaches the amino acid on 2′-OH of the ribose, which is then transesterified to 3′-OH for proofreading reaction. As we show later, this transesterification is required for DTD to act since it is expected to recognize aminoacyl moiety only when it is attached to the 3′-OH. A comparison of non-cognate and cognate substrate analog-bound structures of Pab-NTD had revealed that the space available in the reaction zone is crucial for catalysis. It was shown that upon cognate substrate binding this space is constricted due to a subtle movement of a crucial Lys side chain (Hussain et al., 2010). This limited space, therefore, does not allow the putative catalytic water molecule to be accommodated in that site as it would have serious short contacts, and hence no deacylation. Although we do not observe a water molecule in that region in DTD, there is enough space available for a water molecule to be positioned without any clashes. Furthermore, it is worth noting here that the site of catalysis in DTD is much more accessible to the external bulk solvent as compared to Pab-NTD and could be a plausible reason as to why we do not observe the water molecule crystallographically. Therefore, considering the structural similarity and conservation of substrate-binding modes between DTD and Pab-NTD along with the experimental evidence showing the absence of any direct role of protein side chains in the catalytic mechanism, we propose a similar RNA-assisted catalysis in DTD also (Figure 3C). The 2′-OH of the terminal ribose would activate a water molecule, which in turn makes a nucleophilic attack on the carbonyl carbon of the substrate. The resultant tetrahedral transition state would be stabilized by the oxyanion hole formed by main chain nitrogen atoms of Phe89 and Thr90 situated at a distance 3.03 Å and 4.05 Å respectively from the carbonyl oxygen of the substrate. It would then result in the subsequent cleavage of the ester bond between the D-aa and the tRNA. Therefore, taken together with studies on Pab-NTD and the primordial nature of its fold and function, the above data indicate that the DTD fold is an RNA-based catalyst in the proofreading reaction.
 
-## Enantioselection mechanism
+### Enantioselection mechanism
 
 A striking feature of the amino acid recognition site is the capture of all the atoms attached to the chiral centre Cα and the role of cross-subunit interactions, particularly a Gly-cisPro motif from both monomers inserted into the active site of the dimeric counterpart that plays a central role in the recognition mechanism, as described in ‘Mechanism of L-amino acid rejection from the active site’. The aminoacyl moiety has interactions with residues from both monomers. The carbonyl oxygen interacts with the main chain nitrogen of Phe89 and the side chain amide of Gln88. Both the residues belong to the –SQFTL– motif. The α-amino group of D-tyrosine has an interaction with carbonyl oxygen of Gly149 from the cross-subunit Gly-cisPro motif. Such a capture of the carbonyl oxygen and the amino group of the incoming D-aa, automatically positions the Cβ in such a way that it makes favorable C-H…O hydrogen bond with the carbonyl oxygen of Pro150, again from the cross-subunit Gly-cisPro motif. In addition, the Cα also makes a weak C-H…N bond with the Gln88 side chain amide nitrogen. The interaction distances of the aminoacyl moiety have been summarized in Supplementary file 1A. With this mode of recognition of the configuration, the side chain of D-tyrosine is positioned in such a way that it projects out of the binding pocket and has no interaction beyond the Cβ atom as seen in Figure 2C. The atomic B-factors of the ligand clearly show a sharp rise in the side chain atoms beyond the Cβ (Figure 2C, Figure 2—figure supplement 5, Supplementary file 1B). The superimposition of all the copies of ligand from both the crystal forms I and II shows considerable deviations in only the side chain atoms beyond Cβ (Figure 2—figure supplement 6). The lack of recognition of side chain atoms indicates that residues with different side chain chemistries and sizes are treated alike. Such a side chain-free recognition mechanism provides the basis for how nature has designed a single deacylase to deal with any D-aa-tRNA and reveals the crucial role played by weak hydrogen bonds in D-chirality selection.
 
-## Mechanism of L-amino acid rejection from the active site
+### Mechanism of L-amino acid rejection from the active site
 
-If an L-aa was to bind in this pocket, it would have to do so in one of the three theoretically possible conformations shown in
+If an L-aa was to bind in this pocket, it would have to do so in one of the three theoretically possible conformations shown in Figure 4. In conformation I, where the side chain swaps positions with Hα, it would result in serious clashes with several atoms in the binding pocket (Figure 4C). Even the Cβ of L-Tyr would have short contacts of 3.08 Å with the Cδ and 2.69 Å with the carbonyl oxygen of Pro150. In conformation II, the side chain would occupy the place of the amino group (Figure 4D). In this position it would be placed adjacent to 5′-OH and would therefore have short contacts with the preceding nucleotide (C75). In fact, the Cβ itself would have a short contact (2.56 Å) with the amide nitrogen of the substrate (ester oxygen in the real substrate). It should be highlighted here that the side chain rejection in both positions occurs at the Cβ level itself, which implies that an amino acid with even a minimal side chain like L-Ala will be rejected from occupying these two positions. In the third possibility of conformation III, the amino group would swap its position with Hα (Figure 4E). In this case, in addition to losing its hydrogen bonding interaction with Gly149 carbonyl oxygen, the amino group would be placed also in an unfavorable environment at a distance of 3.07 Å from the Cδ atom of the non-polar side chain of Pro150 (Figure 4E). This provides an elegant mechanistic design for L-chirality rejection from this pocket irrespective of the conformation and side chain chemistry of the incoming substrate. The rejection mechanism also rules out any other possible mode of D-aa binding than the one observed where the side chain is kept protruding out (Figure 4—figure supplement 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig4-v1.jpg)
 
-**Figure 4.:** The cross-subunit Gly-cisPro motif is shown in brown. (A) Stereoscopic representation showing the conformation of D-amino acid observed in the pocket. (B) The adenosine moiety and the carbonyl oxygen are tightly fixed. The only allowed flexibility would be the torsion around Cα-C′ bond. This rotation gives rise to three theoretical possibilities of binding an L-amino acid. (C) Conformation I: the side chain swaps positions with Hα, severe short contacts of the side chain atoms including Cβ with active site residues can be seen. (D) Conformation II: the side chain swaps positions with NH2 group, short contact of side chain with C75 of tRNA, also Cβ is 2.56 Å from amide nitrogen (N8) of the substrate. (E) Conformation III: the NH2 group swaps positions with Hα, non-polar side chain of Pro150 provides unfavorable environment for NH2 group.DOI: http://dx.doi.org/10.7554/eLife.01519.017
+**Figure 4.:** The cross-subunit Gly-cisPro motif is shown in brown. (A) Stereoscopic representation showing the conformation of D-amino acid observed in the pocket. (B) The adenosine moiety and the carbonyl oxygen are tightly fixed. The only allowed flexibility would be the torsion around Cα-C′ bond. This rotation gives rise to three theoretical possibilities of binding an L-amino acid. (C) Conformation I: the side chain swaps positions with Hα, severe short contacts of the side chain atoms including Cβ with active site residues can be seen. (D) Conformation II: the side chain swaps positions with NH2 group, short contact of side chain with C75 of tRNA, also Cβ is 2.56 Å from amide nitrogen (N8) of the substrate. (E) Conformation III: the NH2 group swaps positions with Hα, non-polar side chain of Pro150 provides unfavorable environment for NH2 group.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** The cross-subunit Gly-cisPro motif is shown in brown. (A) The conformation of D-amino acid observed in the pocket; all the groups on the chiral Cα are captured. (B) Possibility 2: side chain occupies the position of Hα, severe short contacts of the side chain atoms including Cβ with active site residues can be seen. (C) Possibility 3: side chain occupies the position of NH2, the side chain would have short contacts with C75 of tRNA, Cβ would have short contacts with N8 and polar NH2 would be close to the non-polar Pro150 side chain.DOI: http://dx.doi.org/10.7554/eLife.01519.018
+**Figure 4—figure supplement 1.:** The cross-subunit Gly-cisPro motif is shown in brown. (A) The conformation of D-amino acid observed in the pocket; all the groups on the chiral Cα are captured. (B) Possibility 2: side chain occupies the position of Hα, severe short contacts of the side chain atoms including Cβ with active site residues can be seen. (C) Possibility 3: side chain occupies the position of NH2, the side chain would have short contacts with C75 of tRNA, Cβ would have short contacts with N8 and polar NH2 would be close to the non-polar Pro150 side chain.
 
-The ‘cross-subunit’ Gly-
+The ‘cross-subunit’ Gly-cisPro motif plays a central role in the rejection of L-aas from binding in the pocket. The cis conformation of Pro150 is the key to ensuring that it cradles the chiral centre thus preventing both the amino group and the Cβ from occupying the position of Hα (Figure 5A). To facilitate this rejection mechanism, Pro150 side chain is positioned rigidly in cis conformation by a conserved hydrophobic base formed by Phe40, Val86, Ile143, and the DTD-specific invariant Met141 (Figure 5—figure supplement 1). The Gly149 and Pro150 carbonyl oxygens make H-bond interactions with the α-amino group and the Cβ of the substrate respectively, thereby reinforcing the binding of D-aa in the pocket. Both the carbonyl oxygens are also positioned tightly by cross-subunit interactions with Met141 main chain nitrogen and Gln88 side chain nitrogen, respectively (Figure 5A). The structure, therefore, suggests a strict rejection of L-aas from the pocket, enabling DTD to specifically remove only D-aas coupled to tRNAs.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig5-v1.jpg)
 
-**Figure 5.:** (A) The Gly-cisPro motif from one monomer protrudes into the active site of the other monomer and cradles the chiral center of the substrate and provides basis for configuration selection. The carbonyl oxygens are tightly positioned by cross-subunit interactions. (B) Deacylation of L-Tyr-tRNATyr by buffer (), 500 pM (), 5 nM (), 50 nM (), 500 nM () PfDTD and D-Tyr-tRNATyr deacylation by 500 pM PfDTD (). (C) L-Tyr-tRNATyr deacylation by buffer (), 50 nM (), 500 nM (), 5 μM () EcDTD and D-Tyr-tRNATyr deacylation by 50 nM EcDTD (). (D) Excerpts of overlay of 2D 15N-1H TROSY obtained with 0.2 mM PfDTD (black) and upon addition of 1 mM (red), 2 mM (blue), 3 mM (green) D-Tyr3AA and L-Tyr3AA.DOI: http://dx.doi.org/10.7554/eLife.01519.019
+**Figure 5.:** (A) The Gly-cisPro motif from one monomer protrudes into the active site of the other monomer and cradles the chiral center of the substrate and provides basis for configuration selection. The carbonyl oxygens are tightly positioned by cross-subunit interactions. (B) Deacylation of L-Tyr-tRNATyr by buffer (), 500 pM (), 5 nM (), 50 nM (), 500 nM () PfDTD and D-Tyr-tRNATyr deacylation by 500 pM PfDTD (). (C) L-Tyr-tRNATyr deacylation by buffer (), 50 nM (), 500 nM (), 5 μM () EcDTD and D-Tyr-tRNATyr deacylation by 50 nM EcDTD (). (D) Excerpts of overlay of 2D 15N-1H TROSY obtained with 0.2 mM PfDTD (black) and upon addition of 1 mM (red), 2 mM (blue), 3 mM (green) D-Tyr3AA and L-Tyr3AA.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** The Pro150 side chain is supported by a hydrophobic base comprising of Phe40, Val86, Met141, and Ile143 side chains from the other monomer.DOI: http://dx.doi.org/10.7554/eLife.01519.020
+**Figure 5—figure supplement 1.:** The Pro150 side chain is supported by a hydrophobic base comprising of Phe40, Val86, Met141, and Ile143 side chains from the other monomer.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** 15N-1H TROSY of PfDTD with D-Tyr3AA and L-Tyr3AA.Overlay of 2D 15N-1H TROSY obtained with 0.2 mMPfDTD (black) and upon addition of 1 mM (red), 2 mM (blue), 3 mM (green) D-Tyr3AA and L-Tyr3AA.DOI: http://dx.doi.org/10.7554/eLife.01519.021
+**Figure 5—figure supplement 2.:** Overlay of 2D 15N-1H TROSY obtained with 0.2 mMPfDTD (black) and upon addition of 1 mM (red), 2 mM (blue), 3 mM (green) D-Tyr3AA and L-Tyr3AA.
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig5-figsupp3-v1.jpg)
 
-**Figure 5—figure supplement 3.:** PfDTD wild type against D-Tyr-tRNATyr and L-Tyr-tRNATyr.The resultant aminoacyl-AMP and AMP from S1 nuclease digestion, run as distinct spots on TLC.DOI: http://dx.doi.org/10.7554/eLife.01519.022
+**Figure 5—figure supplement 3.:** The resultant aminoacyl-AMP and AMP from S1 nuclease digestion, run as distinct spots on TLC.
 
-## Conservation of the strict configuration specificity across species
+### Conservation of the strict configuration specificity across species
 
 In order to prove the strict rejection of L-aa by the active site of DTD, biochemical analyses with PfDTD were performed. Although significant deacylation activity against D-Tyr-tRNATyr was observed at 500 pM PfDTD, no L-Tyr-tRNATyr deacylation was found even with 1000-fold higher enzyme concentration at 500 nM (Figure 5B). Furthermore, to rule out the possibility of any Plasmodium-specific phenomenon and to test the universal nature of the rejection mechanism, we carried out deacylation experiments with EcDTD as well. Similar to PfDTD, EcDTD showed significant deacylation of D-Tyr-tRNATyr with 50 nM enzyme, whereas no detectable L-Tyr-tRNATyr deacylation was seen even at 5 μM (Figure 5C). Biochemical studies with both enzymes not only confirm the stringent chiral specificity of this key process but also suggest conservation of the mechanism across species.
 
-## Strict rejection of L-aa-tRNA as seen with NMR-based binding studies
+### Strict rejection of L-aa-tRNA as seen with NMR-based binding studies
 
 We further probed the enantiomeric rejection mechanism in solution using NMR-based 2D 15N-1H Transverse Relaxation Optimized Spectroscopy (TROSY) experiments with a nonhydrolyzable analog mimicking L-Tyr attached to tRNATyr, L-Tyr3AA, and compared it with D-Tyr3AA. Titration of 15N-PfDTD with D-Tyr3AA at molar ratios of 1:0, 1:5, 1:10, and 1:15 led to chemical shift perturbations in a number of resonances and showed saturation around 1:15, thereby clearly indicating a specific binding to PfDTD (Figure 5D, Figure 5—figure supplement 2). On the other hand, L-Tyr3AA titration did not cause any change in the amide resonances of 15N-PfDTD even up to 1:15 molar ratio, highlighting a complete lack of specific binding (Figure 5D, Figure 5—figure supplement 2). Thus, the 2D 15N-1H TROSY studies further confirmed the strict rejection of L-aa from the active site of DTD.
 
-## 2′-vs 3′- deacylase
+### 2′-vs 3′- deacylase
 
-Another important mechanistic aspect that is clearly evident from this structure is that DTD acts exclusively on D-aas charged on 3′-OH of the terminal adenosine. aaRSs aminoacylate tRNAs at either 2′-OH or 3′-OH in a class-dependent way (
+Another important mechanistic aspect that is clearly evident from this structure is that DTD acts exclusively on D-aas charged on 3′-OH of the terminal adenosine. aaRSs aminoacylate tRNAs at either 2′-OH or 3′-OH in a class-dependent way (Eriani et al., 1990). Biochemical studies have revealed deacylation mechanism of DTD against aa–tRNA pairs belonging to both classes of aaRS. However, it was not clear whether DTDs would act on D-aas linked to 2′-OH or 3′-OH or both. The structure shows that the 2′-OH is positioned in a confined area with the help of tight interactions with Gly138 main chain nitrogen and Ser87 side chain hydroxyl group. Modeling even the simplest of amino acids on the 2′-OH shows severe steric clashes irrespective of the ribose pucker (Figure 6A–C). We have further confirmed this mechanistic proposal using 2D 15N-1H TROSY experiments. Titration of 15N-PfDTD with D-Tyr3AA showed chemical shift perturbations for a number of resonances (Figure 5D, Figure 5—figure supplement 2). On the other hand, titration with D-Tyr2AA (analog of D-tyrosine bound to 2′-OH of adenosine) resulted in no observable chemical shift perturbations (Figure 6D,E). This confirms that the enzyme acts on tRNAs only when the amino acid is either attached to 3′-OH or transferred to 3′-OH from 2′-OH through rapid transesterification. A similar mechanistic mode of operation of Pab-NTD delineates this DTD-like fold as a 3′-specific deacylase enzyme (Hussain et al., 2006, 2010).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig6-v1.jpg)
 
-**Figure 6.:** (A) Ribose moiety of D-Tyr3AA adopts C3′-endo pucker in the structure. Modeling the aminoacyl group on the 2′-OH shows serious steric clashes in (B) C3′-endo as well as (C) C2′-endo puckers. (D) Overlay of 2D 15N-1H TROSY obtained with 0.2 mM PfDTD (black) and upon addition of 1 mM (red), 2 mM (blue), 3 mM (green) D-Tyr2AA. (E) Excerpt of the overlay for clarity.DOI: http://dx.doi.org/10.7554/eLife.01519.023
+**Figure 6.:** (A) Ribose moiety of D-Tyr3AA adopts C3′-endo pucker in the structure. Modeling the aminoacyl group on the 2′-OH shows serious steric clashes in (B) C3′-endo as well as (C) C2′-endo puckers. (D) Overlay of 2D 15N-1H TROSY obtained with 0.2 mM PfDTD (black) and upon addition of 1 mM (red), 2 mM (blue), 3 mM (green) D-Tyr2AA. (E) Excerpt of the overlay for clarity.
 
-## Gly-cisPro motif is essential for function
+### Gly-cisPro motif is essential for function
 
-The mechanistic understanding based on the cognate substrate analog-bound structure suggests a crucial role for the cross-subunit Gly-
+The mechanistic understanding based on the cognate substrate analog-bound structure suggests a crucial role for the cross-subunit Gly-cisPro motif in enantioselectivity and rejection of L-aas from the pocket. To experimentally demonstrate the crucial role of this unique motif for DTD function, we carried out deacylation assays with PfDTD by mutating these two critical residues. A complete loss of activity was observed for both G149A and P150A mutants (Figure 7A). We also carried out deacylation assay with G149A/P150A double mutant and similar to both single mutants, it showed a total loss of activity (Figure 7A). The biochemical studies, thus clearly, show that Gly-cisPro motif is essential for DTD function. We further wanted to ensure that the observation is not Plasmodium-specific. Therefore, we performed the same biochemical study with the mutants of EcDTD to ensure that the critical role of the Gly-cisPro motif is universal. Similar to PfDTD, both G137A and P138A mutants of EcDTD showed a complete loss of deacylation function (Figure 7B). We also tested G137A/P138A double mutant for deacylation function and it also showed no activity like the individual point mutants (Figure 7B). The biochemical analyses with the mutants of both PfDTD and EcDTD prove the critical role played by the unique Gly-cisPro motif in DTD function and also suggests the universality of its crucial role irrespective of the organism.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig7-v1.jpg)
 
-**Figure 7.:** cisPro motif for DTD function.(A) Deacylation of D-Tyr-tRNATyr by buffer (), PfDTD wild type (), G149A (), P150A () and G149A/P150A double mutant (). 500 pM enzyme concentration was used for all reactions. (B) D-Tyr-tRNATyr deacylation by buffer (), EcDTD wild type (), G137A (), P138A (), and G137A/P138A double mutant (). 50 nM enzyme concentration was used for all reactions.DOI: http://dx.doi.org/10.7554/eLife.01519.024
+**Figure 7.:** (A) Deacylation of D-Tyr-tRNATyr by buffer (), PfDTD wild type (), G149A (), P150A () and G149A/P150A double mutant (). 500 pM enzyme concentration was used for all reactions. (B) D-Tyr-tRNATyr deacylation by buffer (), EcDTD wild type (), G137A (), P138A (), and G137A/P138A double mutant (). 50 nM enzyme concentration was used for all reactions.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig7-figsupp1-v1.jpg)
-
-**Figure 7—figure supplement 1.:** EcDTD mutants with the wild type.DOI: http://dx.doi.org/10.7554/eLife.01519.025
 
 ## Discussion
 
@@ -168,32 +354,32 @@ The study provides insights into a fundamental enantioselective mechanism involv
 
 An analysis of all known structures of proofreading domains in complex with post-transfer substrate analogs helped us to define certain parameters such as percentage buried surface area of the ligand, number of interactions, conservation of interacting residues etc that can be used to assess the binding characteristics of ligand complexes (Figure 1—figure supplement 2, Supplementary file 1C). Comparison of these parameters from all known complex structures of proofreading domains with the structure presented in the current study places our structure in the same bracket as the other well-studied proofreading domains (Supplementary file 1C). We have mutated Phe89 that has been shown to stack with adenine in ADP-complex (Bhatt et al., 2010), to Ala and show that the mutant is as active as the wild-type PfDTD (Figure 3—figure supplement 2A,C). The corresponding mutant F79A in EcDTD was also completely active suggesting that the Phe has no significant role in binding the adenine (Figure 3—figure supplement 2D). Furthermore, the earlier work had implicated a conserved Thr90 as the catalytic residue that was proposed to mount a nucleophilic attack on the carbonyl carbon of the substrate (Lim et al., 2003; Bhatt et al., 2010). However, our analysis clearly shows that not only the distance (5.72 Å) of γ-hydroxyl group of Thr90 from the carbonyl carbon is unfavorable for any nucleophilic attack but also it is oriented away from the point of attack where it is strongly tethered to Thr152 main chain atoms through a highly conserved cross-subunit interaction (Figure 3—figure supplement 2B). To experimentally demonstrate that Thr90 is not the catalytic residue as had been proposed earlier, we mutated this residue to Ala in both PfDTD and EcDTD, and showed that they still efficiently deacylated D-Tyr-tRNATyr (Figure 3—figure supplement 2C,D). These data, therefore, rule out the earlier propositions not only with respect to the adenosine-binding site but also the catalytic mechanism.
 
-More importantly, the current study identifies the key role of an invariant cross-subunit Gly-
+More importantly, the current study identifies the key role of an invariant cross-subunit Gly-cisPro motif in solving a fundamental problem of absolute configuration-based selectivity. The most striking feature of the Gly-cisPro motif is the near-parallel fixation of the two carbonyl groups at an angle of ∼20°, a highly conserved structural feature in DTDs irrespective of the presence or absence of ligand as seen in 72 different observations (including 10 from this study) from five different organisms (Figure 8A). The Ramachandran dihedral angles of both residues remarkably illustrate a striking conservation, which allows DTD to selectively recognize the chiral centre. It also provides a structural explanation for having an invariant Gly in that position as no other residue can normally lie in that region of Ramachandran map (Figure 8B,C). Since the cellular milieu will be in abundance with L-aa-tRNAs, when compared to D-aa-tRNAs, such a positioning of the critical enantioselective components, as seen here, prevents even a promiscuous deacylation of L-aa-tRNAs leading to their depletion from the pool, as shown by the biochemical studies with 1000-fold excess of DTD in two different systems. The essential role of Gly-cisPro motif in chiral discrimination is also strongly indicated by its absolute invariance in all DTD sequences from eubacteria to higher eukaryotes (Figure 8C). Previous work has shown the ability of L-proline to catalyze asymmetric synthesis of simple sugars leading to their enantioenrichment (Breslow and Cheng, 2010; Hein and Blackmond, 2012). Based on the work, there has been a proposal of a role of L-proline in symmetry-breaking during the prebiotic era. In the present work also, we show the critical role of a proline residue as a part of a motif in a process involved in enforcement of homochirality.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/01519/elife-01519-fig8-v1.jpg)
 
-**Figure 8.:** cisPro motif in DTDs.(A) The structural superimposition of –NXGP(V/F)T– motif from 72 different monomers of DTD (10 from this study and 62 from PDB including DTDs from E. coli, H. influenzae, Plasmodium falciparum, Aquifex aeolicus, and H. sapiens) shows that the rigid fixation of Gly149 and Pro150 carbonyl groups is structurally conserved in all DTDs. (B) Ramachandran map for residues from –NXGP(V/F)T– motif from all DTD structures shows that glycine invariably occupies the lower right quadrant. (C) Both Gly and Pro are invariant in all DTD sequences.DOI: http://dx.doi.org/10.7554/eLife.01519.026
+**Figure 8.:** (A) The structural superimposition of –NXGP(V/F)T– motif from 72 different monomers of DTD (10 from this study and 62 from PDB including DTDs from E. coli, H. influenzae, Plasmodium falciparum, Aquifex aeolicus, and H. sapiens) shows that the rigid fixation of Gly149 and Pro150 carbonyl groups is structurally conserved in all DTDs. (B) Ramachandran map for residues from –NXGP(V/F)T– motif from all DTD structures shows that glycine invariably occupies the lower right quadrant. (C) Both Gly and Pro are invariant in all DTD sequences.
 
 Overall, the work has unveiled a fundamental cellular mechanism that is responsible for enforcing and perpetuating L-aa homochirality in proteins. A mechanistically unique solution to the problem of enantioselectivity employing two carbonyl oxygens from a ‘cross-subunit’ Gly-cisPro dipeptide has been shown to be responsible for D-chirality selection and strict L-chirality rejection from the active site of DTD. The conserved and indispensable nature of the motif in DTD argues strongly for its crucial role in solving this key chiral discrimination problem in biology. The presence of DTD-fold and function in all kingdoms of life suggests an important role such systems have played in enforcing homochirality during early evolution of the translational apparatus, and high levels of expression in neuronal cells indicate a crucial role of DTD in higher organisms, which still needs to be explored.
 
 ## Materials and methods
 
-## Cloning, expression and protein purification
+### Cloning, expression and protein purification
 
 The gene encoding DTD was PCR amplified from P. falciparum genomic DNA and inserted between NdeI and XhoI sites of pET-21b vector (Novagen, Billerica, MA). For untagged construct, a stop codon was incorporated in the reverse primer whereas in case of C-terminal 6X His-tagged (C-His) construct, there was no stop codon in the reverse primer. Untagged protein was used for crystallization and biochemical analysis, while NMR experiments were performed with C-His protein. The recombinant plasmid containing our gene of interest was transformed in E. coli BL21 (DE3) cells for overexpression. The untagged protein was purified by a two-step protocol including cation exchange chromatography (CEC) followed by gel filtration chromatography (GFC). In CEC, the induced cell lysate was loaded onto Sulfopropyl-Sepharose column (Amersham Pharmacia, UK) pre-equilibrated with 50 mM BisTris pH 6.5, 20 mM NaCl and then eluted in a linear gradient of NaCl from 20 mM to 500 mM. The eluted protein was further purified to homogeneity by GFC using a Superdex-75 column (Amersham Pharmacia). The final protein was concentrated to 10 mg/ml. EcDTD was purified as mentioned previously (Hussain et al., 2006). All proteins were expressed normally except for G137A and double mutant G137A/P138A of EcDTD, which were purified from inclusion bodies using the following procedure. After lysis, the inclusion bodies were washed thoroughly with buffer containing 1% Triton X-100, followed by 1% sodium deoxycholate wash and finally incubated overnight in unfolding buffer containing 6M guanidinium hydrochloride (GdmHCl). The unfolded protein was then loaded onto Ni-NTA column (Amersham Pharmacia) pre-equilibrated with unfolding buffer and subsequently washed with 1% Triton X-100, followed by 0.1% β-cyclodextrin wash. This was followed by 30 mM imidazole wash to get rid of any contaminant proteins. The protein was finally eluted with 250 mM imidazole and immediately diluted in refolding buffer containing 400 mM L-Arg. The protein was further purified to homogeneity using GFC. Circular Dichroism analysis was performed to ensure that the proteins were properly folded (Figure 7—figure supplement 1).
 
-## Co-crystallization with substrate-mimicking analog D-Tyr3AA
+### Co-crystallization with substrate-mimicking analog D-Tyr3AA
 
 Co-crystallization was attempted with a number of constructs of DTD from E. coli, Mycobacterium tuberculosis, Vibrio cholera, Leishmania major but none of them yielded a ligand-bound structure. Successful co-crystallization was achieved only with PfDTD. The nonhydrolyzable analogs D-Tyr3AA, L-Tyr3AA, and D-Tyr2AA were obtained after custom synthesis from Jena Biosciences, Germany. The pure protein sample was mixed with the ligand in a molar ratio of 1:20 and the premix was incubated at 4°C overnight. Initial crystallization conditions were screened at 4°C and 20°C with Index and Crystal screen 1 and 2 (Hampton Research, Aliso Viejo, CA) and JBS classic (Jena Biosciences) in sitting drop setups using 96-well plates from MRC. The experiments were set up by mixing 1 μl of protein:ligand premix with 1 μl of reservoir buffer with the help of Mosquito crystallization robot (TTP LabTech, UK). The hits obtained were further optimized in a hanging drop vapor diffusion setup using 24-well Iwaki plates. PfDTD+D-Tyr3AA crystal I was obtained in 0.1M HEPES pH 7.0, 0.6M NaCl, 32% PEG3350, while crystal II of the same was obtained in 0.1M BisTris pH 6.0, 0.4 M NaCl, 28% PEG3350.
 
-## X-ray diffraction data collection and structure determination
+### X-ray diffraction data collection and structure determination
 
 The diffraction data were collected at the in-house X-ray facility after screening several hundreds of ligand complex crystals to get high resolution datasets. The dataset for PfDTD+D-Tyr3AA crystal I was collected using RigakuMicromax007 HF rotating-anode generator that produces CuKα X-rays of wavelength 1.54 Å and MAR345dtb image-plate detector from MAR Research. The crystal was mounted on a nylon loop and flash-cooled directly without the use of any cryoprotectant solution in a nitrogen-gas stream at 100 K using Oxford Cryostreamcooler (Oxford Cryosystems, UK). The dataset for PfDTD+D-Tyr3AA crystal II was collected using FR-E+ SuperBright X-ray generator from Rigaku equipped with VariMax HF optic and R-AXIS IV++ image plate detector. The data were processed using HKL2000 (Otwinowski and Minor, 1997) and the structure was solved by molecular replacement using MOLREP-AUTO MR from the CCP4 suite (CCP4, 1994) with PfDTD apo structure (PDB id: 3KNF) as the search model. The structure was refined with the help of CNS (Brunger et al., 1998) and REFMAC (Murshudov et al., 1997), while COOT (Emsley and Cowtan, 2004) was used for model building. The restraints for refinement of ligand molecules were obtained from PRODRG server (Schuttelkopf and van Aalten, 2004). The structure was validated using PROCHECK (Laskowski et al., 1993) and the figures were generated with the help of PyMOL (Schrodinger, 2010).
 
-## Biochemical assays
+### Biochemical assays
 
 The mutants for biochemical assays were generated using QuickChange XL site-directed kit (Stratagene, La Jolla, CA) and the proteins were purified by the same protocol as for the wild type. E. coli tRNATyr was transcribed in vitro using MEGAshortscript (Ambion, Austin, TX) and 3’ end-labeled using standard protocol by incubating the tRNA with CCA-adding enzyme in presence of [α-32P]-ATP (Ledoux and Uhlenbeck, 2008). D-Tyr-tRNATyr and L-Tyr-tRNATyr were generated by incubating 20 mM Tris pH 7.8, 7 mM MgCl2, 5 mM Dithiothreitol (DTT), 2 mM ATP, 0.2 mM amino acid (D-Tyr or L-Tyr), 0.5 μM labeled tRNATyr, 1 U/ml pyrophosphatase with 2 μM purified E. coli TyrRS at 37°C for 15 min. Aminoacylation reaction was followed by phenol extraction and ethanol precipitation of aminoacylated tRNA, which was finally resuspended in 5 mM sodium acetate pH 4.6. Deacylation assays were performed by incubating 20 mM Tris pH 7.2, 5 mM MgCl2, 5 mM DTT, 0.2 mg/ml bovine serum albumin (BSA), 0.2 μM labeled D-Tyr-tRNATyr or L-Tyr-tRNATyr at 30°C with 500 pM of PfDTD and 50 nM of EcDTD or the mutants enzyme as the case may be. Reaction mix at various time points were subjected to S1 nuclease digestion for 30 min at 22°C and analyzed by thin-layer chromatography (TLC) by spotting 1 μl on PEI cellulose sheet (Merck KGaA, Germany). An example of a TLC run has been shown in Figure 5—figure supplement 3. The mobile phase for TLC was composed of 100 mM ammonium chloride and 5% glacial acetic acid. TLC sheets were exposed to imaging plate from Fujifilm, Japan. Phosphor imaging was done using Typhoon Trio Variable Mode Imager (Amersham Biosciences, Piscataway, NJ) and Image Gauge V4.0 software was used for quantification. Each experiment was carried out in triplicates.
 
-## Transverse relaxation optimized NMR spectroscopy
+### Transverse relaxation optimized NMR spectroscopy
 
 2D 15N-1H TROSY experiments were performed on a Bruker 600 MHz NMR spectrometer equipped with triple resonance cryoprobe (Bruker, Billerica, MA). C-His construct of PfDTD was expressed in minimal media with 15NH4Cl as the sole nitrogen source in order to achieve uniform labeling. The protein was purified by affinity chromatography using Ni-NTA column in batch mode. For binding studies, 200 μM U-15N-PfDTD in 50 mM HEPES pH 7.0, 50 mM NaCl was titrated with substrate analogs. Chemical shift perturbations in PfDTD upon titration were monitored by a series of 2D 15N-1H TROSY spectra collected with increasing concentrations of ligand. Four datasets were recorded for each ligand at protein:ligand molar ratios of 1:0, 1:5, 1:10, and 1:15. The experiments were repeated twice with two different batches of protein. The data processing and figure preparation were done using Sparky.

@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Cardiovascular Research Institute, University of California, San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Department of Pharmaceutical Chemistry, University of California, San Francisco San Francisco United States
-3. https://ror.org/043mz5j54 Department of Physiology, University of California, San Francisco San Francisco United States
+1. Cardiovascular Research Institute, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Department of Pharmaceutical Chemistry, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Department of Physiology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
@@ -33,13 +33,21 @@ After our initial discovery, we aimed to understand the mechanism of emerin’s 
 
 **Figure 1.:** (A) U2OS cells expressing mouse EMD-GFP and ΔLEM-GFP were induced with 1 µg/mL doxycycline for 24 hr, treated with 100 nM lysosome blocking agent bafilomycin A1 (BafA1) overnight, and fixed and stained for lysosome marker Lamp1. Scale bar, 10 µm. (B) Summary of EMD domains and truncation mutants. (C) EMD enriches at the inner nuclear membrane (INM) by binding to the nuclear lamina or exits the endoplasmic reticulum (ER) into the secretory pathway. Before reaching the lysosome, EMD transiently accesses the cell surface where lumenal GFP is exposed to anti-GFP antibody. (D) Example FACS plot of mouse WT vs ΔLEM surface labeling; fluorescent anti-IgG secondary antibody included as background control. Antibody signal is divided by total GFP+ signal to yield histograms on the right. (E) Quantification of the antibody:GFP ratio from 4 independent experiments, with error bars representing SD. * indicates adjusted p-value=0.0451 by one-way ANOVA with Šídák’s multiple comparisons test. (F) U2OS cells expressing mouse TMD-GFP (lumenal tag) or GFP-TMD (cytosolic tag) were treated overnight with BafA1, then fixed and stained with an anti-GFP antibody. (G) Example surface labeling FACS histogram of U2OS cells expressing WT, LEM-TMD-GFP, or TMD-GFP.
 
-## Emerin’s hydrophobic TMD is necessary and sufficient for trafficking of EMD-GFP
+### Emerin’s hydrophobic TMD is necessary and sufficient for trafficking of EMD-GFP
 
 We further leveraged this U2OS system to examine how emerin’s protein sequence facilitates trafficking. Emerin contains three major domains: an N-terminal LEM domain that interacts with the chromatin cross-linker BANF1/BAF, an intrinsically disordered region that binds the nuclear lamina, and a C-terminal TMD (Lee et al., 2001; Figure 1B). We tested each domain’s ability to traffic through the secretory pathway with a series of domain truncation experiments. Having established that removing the LEM domain abolished emerin’s ability to traffic, we next deleted the disordered region between the LEM domain and the TMD. This construct (termed LEM-TMD) accumulated at the PM 10-fold more than the WT protein, indicating that the TMD, LEM domain, or both together are sufficient for trafficking (Figure 1F). To distinguish between these possibilities, we tested whether emerin’s TMD alone can travel to the PM. We removed all but the TMD alpha helix and its surrounding 26 residues (mEMD 212–259), which we found to be required for membrane insertion of the truncated construct (not shown), and appended this TMD-only construct to either the C- or N-terminus of eGFP. Both TMD-GFP and GFP-TMD localized prominently to the ER and PM, and both were evident in the lysosome after BafA1 treatment (Figure 1F and G). These experiments reveal that emerin’s TMD alone can traffic to the lysosome, regardless of GFP tag orientation.
 
 We wondered what properties of emerin’s TMD mediate its secretion. Tail-anchored proteins can sort via their TMDs along the secretory pathway (Ronchi et al., 2008; Borgese, 2016; Bulbarelli et al., 2002); long and hydrophobic sequences partition to the thicker, more hydrophobic membranes of the late secretory organelles (Sharpe et al., 2010; Figure 2—figure supplement 1B and C), while tail-anchored proteins with shorter, less hydrophobic TMDs preferentially remain in the ER. We noticed that emerin’s TMD is particularly hydrophobic among other NE/ER TMDs (Figure 2—figure supplement 1A and B), which led us to predict that emerin’s TMD is required for its exit from the ER. To test this, we replaced emerin’s TMD with that of cytochrome B5, a model ER protein with a modestly hydrophobic TMD (Pedrazzini et al., 2000). This substitution ablated trafficking through the secretory pathway (Figure 2A and B), indicating that emerin’s TMD is indeed necessary for trafficking. We tested whether this depended on the hydrophobic content of the alpha helix by sequentially mutating its aromatic residues to alanine. We divided the TMD into N- and C-terminal halves, mutating three aromatic amino acids in each half (Figure 2C). The N-terminal TMD mutant was slightly less hydrophobic and had a greater effect on secretory trafficking than the C-terminal mutant (Figure 2D and E). Combining the N- and C-terminal mutations additively reduced the surface ratio of EMD-GFP. While these mutations decreased the overall protein expression (Figure 2—figure supplement 1E), they did not affect the protein’s topology (Figure 2—figure supplement 1F), confirming that the observed loss of surface exposure was due to diminished secretory trafficking and not to defects in membrane insertion. These experiments indicate that manipulating the hydrophobicity and/or aromaticity of the TMD influences EMD-GFP’s transit to the cell surface.
 
-## Emerin contains a conserved ER retention signal
+![Figure 2.](https://cdn.elifesciences.org/articles/105937/elife-105937-fig2-v1.jpg)
+
+**Figure 2.:** (A) Surface anti-GFP antibody:GFP histogram of human WT EMD, ΔLEM, and EMD with mouse cytochrome B5 TMD (EMDCyb5 TMD) chimera. (B) U2OS cells expressing mouse EMD-GFP and EMDCyb5 TMD-GFP were induced with 1 µg/mL doxycycline for 24 hr, treated with 100 nM lysosome blocking drug bafilomycin A1 (BafA1) overnight, and fixed and stained for lysosome marker Lamp1. Scale bars, 10 µm. (C) TMD mutation strategy. The TM alpha helix of human EMD was divided into N-terminal and C-terminal halves, and the aromatic residues in each half were mutated to alanine to generate mutants with similar ΔG-insertion values. For the full TMD mutant, all aromatic residues were mutated to alanine, yielding a predicted ΔG-insertion of –2.299. (D) Surface antibody:GFP FACS histogram and (E) quantification of the mutants diagrammed in (C). N=4 independent experiments. (F) Surface antibody:GFP FACS histogram and (G) quantification of mouse WT EMD, RA, ΔLEM, and ΔLEMΔQRRR truncation surface expression. N=4 independent experiments. (H) Summary of emerin constructs that do or do not traffic. (I) Western blot analysis of emerin constructs induced with 2 µg/mL doxycycline for 48 hr, then washed and incubated for an 18 hr chase. (J) Quantification of western blot band intensity from (I). GFP antibody signal after washout was divided by the respective unwashed condition to yield the fraction GFP remaining after doxycycline washout across three independent replicates. For all panels: *** indicates adjusted p-value<0.0005, * indicates p=0.0104. All p-values were obtained by one-way ANOVA with Šídák’s or Tukey’s multiple comparisons tests.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105937/elife-105937-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Lengths and predicted ΔG-insertion values of endoplasmic reticulum (ER) protein cytochrome B5, plasma membrane (PM) protein syntaxin 3, and emerin inner nuclear membrane (INM) proteins emerin and Lap2β. (B) Single-pass human transmembrane proteins from Membranome database plotted by free energy of transfer into a lipid bilayer. Lines represent median; **** indicates p<0.0001 by one-way ANOVA with Tukey’s multiple comparisons test. (C) Transmembrane domain (TMD) length (by amino acid count) of the proteins in (B). ** indicates p=0.0028; **** indicates p<0.0001. (D) Protein sequence alignment of emerin’s LEM domain across species. Conserved LEM domain amino acid class indicated in blue. QRRR motif is conserved in mammals and is exposed in the ΔLEM construct. (E) FACS plots of WT EMD-GFP and TMD mutant expression upon dox induction. Fewer cells express C-TMDm and full TMDm, though topology of constructs that are expressed is not altered (see F). (F) Antibody accessibility upon differential permeabilization of U2OS cells expressing full TMDm. Cells were incubated with digitonin to permeabilize the plasma membrane, Triton X-100 to permeabilize all internal membranes, or left unpermeabilized, then stained with antibodies against emerin (cytosolic epitope) and GFP (lumenal epitope).
+
+### Emerin contains a conserved ER retention signal
 
 The autonomous trafficking of emerin’s TMD challenged our initial hypothesis that emerin’s localization relies on the LEM domain. Because EMD ΔLEM-GFP cannot traffic despite containing the TMD, we wondered whether a sequence within the ΔLEM construct inhibits trafficking. We noted that removing the LEM domain exposed a highly charged and conserved motTif (QRRR) on the N-terminus of the construct (Figure 2—figure supplement 1D). Poly-arginine (RXR) motifs are known negative regulators of ER-to-Golgi transit (Michelsen et al., 2005) we therefore tested whether this unprotected RXR could explain the ER-restricted localization of ΔLEM-GFP. Indeed, further truncating the ΔLEM construct by deleting the QRRR (ΔLEMΔQRRR) freed the protein from the ER (Figure 2F–H).
 
@@ -47,13 +55,29 @@ To test whether the RXR motif limits the trafficking of full-length EMD-GFP, we 
 
 We next investigated the interplay between emerin’s pro-trafficking TMD and its anti-trafficking RXR motif by cloning the RA mutation into our TMD mutant constructs (see Figure 2C–E). The RA mutation generally increased the surface expression of the TMD mutants except for the construct with the lowest hydrophobicity score (TMDm), which was not significantly altered by the RA mutation (Figure 3A and B). We infer from this that the TMD acts upstream of the RXR motif in emerin’s secretory trafficking, fitting with the hypothesis that low TMD hydrophobicity suffices to stably retain proteins in the ER (Ronchi et al., 2008).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/105937/elife-105937-fig3-v1.jpg)
+
+**Figure 3.:** (A) Surface anti-GFP:GFP histogram and (B) quantification of indicated RA+ TMD mutant combinations. ** indicates p=0.0021. N=3 independent experiments. (C) Diagram of LAP2β domain structure and position of RXR motifs. APEX2 fusion contains no RXR motifs. (D) Antibody:GFP histogram and (E) quantification of the highest 25% GFP-expressing cells diagrammed in (C). RXRmut: LAP2β RXR1 mutated to AAA. * indicates p=0.0173; ** indicates p=0.0072. (F) Spectral counts of COPI proteins immunoprecipitated by WT FLAG-EMD normalized to negative control IP. Spectral counts of the mouse EMD bait and common contaminant filamin A (FLNA) plotted for comparison. N=2 independent experiments. (G) Spectral counts of proteins immunoprecipitated by FLAG-WT and FLAG-RA mouse EMD normalized to each respective bait. Dotted line represents equal co-immunoprecipitation with the two constructs. COPI proteins and endogenous human EMD highlighted in yellow and green, respectively. All p-values were obtained by one-way ANOVA with Šídák’s or Tukey’s multiple comparisons tests.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/105937/elife-105937-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) GFP vs surface anti-GFP FACS plots of negative control anti-IgG, WT LAP2β/RXR1mut, and WT EMD/LAP2β APEX2-TMD. (B) Median anti-GFP antibody:GFP ratio of the highest 25% GFP-expressing cells in (A). (C) Western blot analysis of anti-FLAG immunoprecipitations. U2OS cells expressing no FLAG construct (neg), FLAG-WT mouse EMD, and FLAG-RA mutant were lysed and incubated with anti-FLAG magnetic beads. Equal volume equivalents were separated by SDS-PAGE and blotted with an anti-EMD antibody to visualize tagged and untagged EMD. (D) U2OS cells expressing FLAG-EMD were incubated with lysosome blocker bafilomycin A1 (BafA1) overnight, then fixed and permeabilized with 0.1% Triton X-100, 0.02% SDS, 10 mg/mL BSA in PBS. Cells were stained with anti-FLAG antibody to visualize relocalization during BafA1 treatment. Scale bars, 20 µm.
+
 Emerin is not the only tail-anchored INM protein with a particularly hydrophobic TMD. Another such protein is LAP2β (Lomize et al., 2017), which shares several sequence features with emerin (Berk et al., 2013; Figure 2—figure supplement 1A, Figure 3C). We identified three RXR motifs within the LAP2β N-terminal domain, one of which (designated RXR1) is just downstream of the LEM-like fold – a striking similarity to emerin’s RXR motif (Figure 3C). To test whether the same localization mechanisms govern LAP2β, we tagged its C-terminus with GFP and expressed it in U2OS cells. LAP2β-GFP was detected at the cell surface, albeit at much lower levels than EMD-GFP (Figure 3D and E, Figure 3—figure supplement 1A and B). Interestingly, replacing most of the LAP2β N-terminal domain with the soybean ascorbate peroxidase (APEX2) enzyme caused a 20-fold increase in PM expression (Figure 3D, Figure 3—figure supplement 1B), suggesting that the LAP2β TMD has a similar proclivity for secretory trafficking. Finally, mutating the LAP2β RXR1 to AAA led to a 70% increase in PM accumulation (Figure 3D), mirroring the effect of the EMD RA mutation. Together, these data indicate that the emerin and LAP2β TMDs are insufficient for NE/ER targeting and that both proteins contain retention sequences which counteract TMD-dependent secretion.
 
 RXR motifs are thought to bind COPI subunits to return escaped proteins to the ER (Michelsen et al., 2005; Michelsen et al., 2007), though this mechanism is not understood. To test whether the increased trafficking of the RA mutant results from reduced COPI interaction, we immunoprecipitated N-terminally FLAG-tagged mouse emerin constructs from U2OS cells (Figure 3—figure supplement 1C). Mass spectrometry revealed a robust interaction between emerin and the COPI coat, with several COPI subunits ranking among the top hits (Figure 3F). Surprisingly, however, this interaction was not weakened by the RXR mutation (Figure 3G). We noted that the mouse EMD bait also co-immunoprecipitated endogenous human EMD (Figure 3G), opening the possibility that COPI might indirectly interact with both FLAG constructs via endogenous emerin. Alternatively, the RXR motif’s function could depend on protein topology. Importantly, while we were able to detect FLAG-EMD in the lysosome by immunofluorescence (IF) (Figure 3—figure supplement 1D), FLAG-RA construct was not poorly expressed relative to FLAG-WT (Figure 3—figure supplement 1C) in contrast to RA-GFP compared to WT-GFP (Figure 2I). We also noted that the lysosomal accumulation of N-terminally FLAG-tagged emerin was more subtle than the C-terminally GFP-tagged version (Figures 1A and 2B), indicating that epitope tagging and/or tag orientation influences the extent of emerin protein turnover.
 
-## C-terminal tagging destabilizes emerin via secretory trafficking
+### C-terminal tagging destabilizes emerin via secretory trafficking
 
 To determine whether tagging and/or overexpression increase the extent of emerin trafficking, we needed a system to better control emerin expression. To this end, we generated a human iPSC line with a dual integrase cassette exchange (DICE) landing pad (Zhu et al., 2014) in the AAVS1 safe harbor locus (Figure 4A), then knocked emerin out of these cells with CRISPR/Cas9 (Figure 4B). Integrating GFP-tagged constructs into the parental and EMD knockout (KO) DICE landing pads enabled us to measure EMD-GFP trafficking in the presence or absence of the endogenous copy, respectively (Figure 4C). We included an mCherry-P2A upstream of the EMD-GFP to control for minor differences in construct expression (Figure 4A). The GFP-tagged emerin constructs mirrored the trafficking pattern we observed in U2OS cells; the EMD RA-GFP construct accumulated more at the PM, while the TMD mutant did not traffic (Figure 4D and E). The steady-state abundance reflected these trafficking patterns. The GFP fluorescence of the TMD mutant accumulated to higher levels, indicating that it was stabilized by its inability to traffic. In contrast, the RA mutant fluorescence was slightly lower, indicating that it was modestly less stable than the WT protein, although this difference is not statistically significant (Figure 4F and G). There was no difference in total or surface expression between integrants in the EMD KO and WT DICE backgrounds, suggesting that the trafficking of EMD-GFP is comparable both when moderately overexpressed and when expressed at endogenous levels (Figure 4D and E).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/105937/elife-105937-fig4-v1.jpg)
+
+**Figure 4.:** (A) Diagram of emerin integration into the AAVS1 locus. Landing pad BFP is exchanged for mCherry-P2A-emerin±GFP via Bxb1 and PhiC31 integrases. Integrases irreversibly recombine landing pad attP and donor attB sites into attR and attL sites. (B) Strategy to compare overexpressed emerin to knockout (KO) rescue. (C) Western blot analysis of WT and EMD KO dual integrase cassette exchange (DICE) hiPSCs expressing N- and C-terminally GFP-tagged emerin. Untagged endogenous EMD and GFP-tagged EMD are detected by the same anti-EMD antibody. (D) Anti-GFP surface labeling histogram and (E) quantification of C-terminally tagged emerin integrants from (B–C). Statistical significance was determined using one-way ANOVA with Šídák’s multiple comparisons test. N=3 independent experiments. (F) FACS plot and (G) quantification of steady-state GFP abundance. Data were normalized to the GFP-EMD signal in the EMD WT background. N=3 independent experiments. ** indicates p=0.0079 by two-way ANOVA with Tukey’s multiple comparisons test. (H) DICE landing pad WT, EMD KO, and KO re-integrated with untagged constructs were lifted, fixed, and stained with anti-EMD antibody. Fluorescence was quantified by flow cytometry and normalized to the WT DICE integrant. MFI, median fluorescence intensity of antibody signal. N=5 replicates over 4 independent experiments. **** indicates p<0.0001 by mixed effects analysis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/105937/elife-105937-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) EMD knockout (KO) dual integrase cassette exchange (DICE) hiPSCs were integrated with GFP-tagged EMD constructs. Cells were treated with vehicle or lysosome blocker bafilomycin A1 (BafA1) overnight, then fixed and stained with anti-LAMP1 antibody. (B) U2OS cells expressing indicated constructs were induced with doxycycline for 4 hr (bottom panels) or left uninduced (top panels). Cells were then shifted to 10°C or continued incubation at 37°C for 2 hr. Cells were then fixed and stained for endogenous emerin (top panel) and Sec31a to mark ERES. (C) Pearson correlation coefficient was calculated between endogenous emerin or EMD-GFP and Sec31a. N=31–54 cells over 3 independent experiments. *** indicates p=0.0006 by one-way ANOVA with Tukey’s multiple comparisons test. (D) EMD KO DICE hiPSCs were integrated with untagged EMD WT, TMD mutant, or RA mutant. Cells were treated overnight with BafA1, then fixed and stained with anti-EMD antibody. Scale bars, 20 µm. (E) We mined a dataset of matched RNAseq and quantitative protein abundances across 29 human tissues to evaluate EMD transcript and protein abundances. EMD protein and transcript abundance are largely uncorrelated (R2~0), while, for comparison, the enzyme spleen tyrosine kinase (SYK) has well-correlated protein and RNA levels (R2=0.89).
 
 Tracking tail-anchored (i.e. untagged/N-terminally tagged) emerin through the secretory pathway is challenging because it lacks a lumenal domain amenable to surface labeling. However, after discovering ways to limit lysosomal flux (via the TMD) or accelerate it (via the RXR motif), we reasoned that the trafficking patterns of tail-anchored mutants could be inferred from their steady-state abundance when expressed from the DICE landing pad. To test whether the GFP tag orientation affects protein expression, we compared the steady-state fluorescence of N- and C-terminally tagged mutants. Surprisingly, the N-terminally tagged (tail-anchored) GFP fusions were four to five times more abundant than the C-terminally tagged (single pass) fusions (Figure 4F and G). C-terminal fusions were also more completely relocalized to the lysosome after BafA1 than N-terminal fusions, where NE/ER EMD signal was still apparent (Figure 4—figure supplement 1A). Unlike the C-terminal fusions, the N-terminally tagged TMD mutant did not accumulate more than the N-terminally tagged WT protein, suggesting that N-terminally tagged emerin is not destabilized by trafficking. We interpret this finding with caution, as we observed a slight decrease in the level of the N-terminally tagged TMD mutant compared to WT (Figure 4G). Since the insertion of tail-anchored proteins relies on TMD hydrophobicity (Rapaport and Herrmann, 2023; Shao and Hegde, 2011), improper targeting to the ER membrane due to TMD mutation would confound our conclusion that N-terminally tagged constructs undergo similarly low levels of trafficking. Interestingly, upon treatment with BafA1, the N-terminally tagged WT and RA constructs formed GFP+ lysosomal puncta, while the N-terminally tagged TMD mutant did not (Figure 4—figure supplement 1A). This suggests that N-terminally tagged emerin does undergo some level of TMD-dependent trafficking. Further, the N-terminal RA fusion was slightly less fluorescent at steady state than WT (Figure 4G), indicating that the RXR motif also stabilizes tail-anchored GFP-EMD.
 
@@ -75,17 +99,108 @@ Our previous work identified EMD as an unstable protein subject to significant l
 
 ## Methods
 
-## Cell culture and cell line generation
+### Cell culture and cell line generation
 
 U2OS cells were obtained from and verified by the UCSF Cell and Genome Engineering Core. Cells were cultured in McCoy’s 5A medium supplemented with 10% FBS and penicillin/streptomycin. To generate EMD-GFP cell lines, U2OS were seeded into six-well plates at a density of 300,000 cells per well. The next day, a transfection mix of 0.5 µg EMD-GFP donor plasmid, 0.25 µg PB200A-1 PiggyBac Transposase plasmid, 3.5 µL Lipofectamine 2000, and 300 µL Opti-MEM was added to each well. After 24 hr, cells were split 1:2 and selected in 5 µg/mL blasticidin for 1 week, then maintained in 5 µg/mL blasticidin thereafter. Prior to an experiment, cells were split into media without blasticidin and induced with 1 µg/mL doxycycline for 24–48 hr. To generate FLAG-EMD cell lines, 2 µg CMV-FLAG-EMD plasmid was transfected without PiggyBac Transposase. Cells were selected with 400 µg/mL G418 for 1 week, then maintained in 200 µg/mL G418.
 
 WTC-11 hiPSCs were obtained from and verified by the Berkeley Stem Cell Center. Cells were maintained on Matrigel-coated vessels in mTeSR+ without penicillin/streptomycin. Cells were passaged as clumps (using ReLeSR) for routine culture and as single cells (using Accutase) for counting and electroporating. Cells were plated in ROCK inhibitor Y-27632, then changed to fresh mTeSR+ after 24 hr. CRISPR editing was performed by electroporating 12.5 pmol pure Cas9-NLS and 12.5 pmol sgRNA into 1 million cells using a 100 µL Neon electroporator set to 1300 V, 30 ms, and 1 pulse. For DICE landing pad installation, we included 2 µg cassette-containing HDR template plasmid in the transfection mix. Landing pad cells were selected in 0.25 µg/mL puromycin for 3 days. Single clones were isolated by limiting dilution in 96-well plates, then expanded and genotyped for heterozygous insertion using primers spanning the AAVS1 homology arms. Emerin KOs were generated from one landing pad clone using two sgRNAs targeting the start and end of the coding sequence. Clones were genotyped by PCR to verify the entire region was deleted, then by western blot to confirm the loss of protein. To integrate emerin constructs into the DICE landing pad, we electroporated 1 million cells with 2 µg attB-containing donor plasmid and 500 ng BxbI-P2A-PhiC31 integrase plasmid. After letting cells recover, we isolated landing pad BFP–/donor+ cells using a SONY SH800 cell sorter. Cells were checked for mycoplasma every 3–4 months and were found to be negative.
 
-## Plasmid cloning
+### Plasmid cloning
 
 All U2OS constructs except FLAG-EMD were expressed in the XLone all-in-one Tet-ON Piggybac plasmid (Randolph et al., 2017). Mouse emerin sequences were cloned into XLone from plasmids used in our previous study. Human emerin and LAP2β were amplified from Hek293T and WTC-11 cDNA using primers with overhangs to XLone. Mouse cytochrome B5 was amplified from E14 mESC cDNA. cDNA was synthesized using NEB MMLV reverse transcriptase. FLAG-EMD constructs were expressed from the CMV promoter in a Neo/Kan-resistant vector.
 
-## Emerin constructs
+### Emerin constructs
+
+<table>
+  <thead>
+    <tr>
+      <th>Designation</th>
+      <th>Gene</th>
+      <th>Species</th>
+      <th>Uniprot ID</th>
+      <th>Mutation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LAP2β RXR1</td>
+      <td>LAP2β</td>
+      <td>Human</td>
+      <td>P42167</td>
+      <td>48–50 →AAA</td>
+    </tr>
+    <tr>
+      <td>LAP2β APEX2-TMD</td>
+      <td>LAP2β</td>
+      <td>Human</td>
+      <td>P42167</td>
+      <td>1–280 →APEX2</td>
+    </tr>
+    <tr>
+      <td>hEMD RA</td>
+      <td>EMD</td>
+      <td>Human</td>
+      <td>P50402</td>
+      <td>44–47 →AAAA</td>
+    </tr>
+    <tr>
+      <td>hEMD ΔLEM</td>
+      <td></td>
+      <td>HumanMouse</td>
+      <td>P50402O08579</td>
+      <td>D1–43</td>
+    </tr>
+    <tr>
+      <td>hEMD ΔLEM ΔQRRR</td>
+      <td>EMD</td>
+      <td>HumanMouse</td>
+      <td>P50402O08579</td>
+      <td>D1–47</td>
+    </tr>
+    <tr>
+      <td>hEMD Cyb5 TM</td>
+      <td>EMD</td>
+      <td>Human</td>
+      <td>P50402 (EMD)P56395 (Cyb5)</td>
+      <td>EMD 1–224+mouse cyb5a 95–134</td>
+    </tr>
+    <tr>
+      <td>mEMD Cyb5 TM</td>
+      <td>EMD</td>
+      <td>Mouse</td>
+      <td>O08579 (EMD)P56395 (Cyb5)</td>
+      <td>EMD 1–225+mouse Cyb5a 95–134</td>
+    </tr>
+    <tr>
+      <td>TMD-GFP</td>
+      <td>EMD</td>
+      <td>Mouse</td>
+      <td>O08579</td>
+      <td>212–259</td>
+    </tr>
+    <tr>
+      <td>N-TMDm</td>
+      <td>EMD</td>
+      <td>Human</td>
+      <td>P50402</td>
+      <td>W226A, F232A, F235A</td>
+    </tr>
+    <tr>
+      <td>C-TMDm</td>
+      <td>EMD</td>
+      <td>Human</td>
+      <td>P50402</td>
+      <td>F240A, F241A, Y243A</td>
+    </tr>
+    <tr>
+      <td>Full TMDm</td>
+      <td>EMD</td>
+      <td>Human</td>
+      <td>P50402</td>
+      <td>W226A,F232A, F235A, F240A, F241A, Y243A</td>
+    </tr>
+  </tbody>
+</table>
 
 Small emerin mutations were generated using the NEB site-directed mutagenesis kit, while larger fusions were assembled using the NEB HiFi Assembly kit.
 
@@ -93,11 +208,11 @@ The DICE landing pad cassette contained a PGK promoter driving HSV thymidine kin
 
 Plasmids were prepped using the ZymoPURE II midiprep kit. All plasmids were verified by Sanger or whole plasmid nanopore sequencing before transfection.
 
-## TMD hydrophobicity calculations
+### TMD hydrophobicity calculations
 
 Transmembrane segments were obtained for EMD, LAP2β, STX3, and CYB5 from Uniprot annotations. DG-ins was calculated using the DGprediction algorithm (Hessa et al., 2007). Median DG-transfer and TM length values for secretory membranes were obtained from the human Membranome database (Lomize et al., 2017; Lomize et al., 2018). Data obtained from the Membranome database were plotted in GraphPad Prism.
 
-## Surface labeling and flow cytometry
+### Surface labeling and flow cytometry
 
 The surface staining assay was adapted from Welch et al., 2021. Briefly, cells were washed with PBS, lifted for 3–5 min with accutase, then quenched with cold complete media. Cells were transferred to microfuge tubes and placed on ice for the duration of staining and washing. Cells were pelleted 800×g for 3 min at 4°C, then washed once in 2% FBS/PBS. Cells were stained in 80 µL anti-GFP 647 (1:20 in 2% FBS/PBS) or anti-rabbit IgG Alexa Fluor 647 secondary antibody (1:200 in 2% FBS/PBS) as a negative control. The cells used for the anti-IgG controls were WT EMD-GFP (for all EMD comparisons) or WT LAP2β-GFP (for LAP2β comparisons). After staining for 30 min, cells were diluted with 200 µL 2% FBS/PBS, pelleted and washed twice with 400 µL 2% FBS/PBS, and then optionally fixed in 4% paraformaldehyde (PFA/PBS) for 10 min at room temperature. Fixed cells were washed twice and then stored at 4°C until being resuspended in PBS and strained into round-bottom FACS tubes before analysis.
 
@@ -105,7 +220,7 @@ For flow analysis of antibody-stained proteins, cells were lifted with accutase,
 
 Cells were analyzed on a BD FACSVerse or a Thermo Fisher Attune NxT. At least 50,000 cells were analyzed per sample. Flow cytometry data were analyzed in FlowJo. Surface antibody:GFP ratio was obtained using the ‘derive parameters’ function and applied to the GFP+ populations. Histograms are normalized to the mode of each sample for visualization.
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 Cells were seeded in Ibidi culture chambers (Matrigel-coated for hiPSCs) prior to an IF experiment. For lysosome co-localization analysis, cells were treated with 100 nM bafilomycin A1 for 16–18 hr. Cells were washed in PBS, then fixed in 4% PFA in PBS for 5 min at room temperature. For LAMP1 staining, cells were permeabilized in 0.1% digitonin/PBS at 4°C for 10 min, then blocked in 2% FBS/PBS. LAMP1 antibody was diluted 1:200 in 2% FBS/PBS. For emerin and FLAG immunostaining, fixed cells were permeabilized in IF buffer for 30 min, then incubated in primary antibodies (diluted 1:250 and 1:1000 in IF buffer, respectively) for 1 hr at room temperature. After washing, cells were incubated with Alexa Fluor-conjugated secondary antibodies and Hoechst 33342 (both 1:1000) for 30 min at room temperature. Emerin/FLAG staining is incompatible with LAMP1 staining because of differential permeabilization requirements. In these cases, we had to rely on the formation of EMD+ puncta after bafilomycin treatment to infer lysosome localization.
 
@@ -115,15 +230,15 @@ For ERES co-localization, EMD-GFP U2OS cells were induced with doxycycline for 4
 
 Images were acquired using a Nikon CSU-X1 spinning disk confocal microscope with ×40/1.3 NA or ×60/1.4 NA oil objectives. 20–30 Z-slices were imaged per cell with a step size of 0.3 µm. 16-bit images were saved as ND2 files using the Nikon Elements 5.02 build 1266 software. Representative slices were selected and cropped in Fiji. Pearson correlation was calculated using the Fiji PSC co-localization plug-in.
 
-## Protein stability measurement and western blotting
+### Protein stability measurement and western blotting
 
 For doxycycline washout experiments, 300,000 U2OS cells were seeded in 12-well plates with 2 µg/mL doxycycline. After 48 hr, half the wells were washed twice with PBS and incubated in fresh medium without doxycycline for 18 hr. Cells were washed twice with PBS and lysed in the wells by scraping in 80 µL RIPA buffer (50 mM Tris, 150 mM NaCl, 1% Triton X-100, 0.5% deoxycholate, 0.1% SDS) plus protease inhibitors and benzonase. Lysates were spun 17,000×g at 4°C for 10 min, then supernatants were mixed with sample buffer and boiled for 10 min. 12 µL of each sample was loaded onto homemade 10% SDS-PAGE gels, then transferred onto nitrocellulose membranes. Blots were incubated at 4°C overnight in primary antibody diluted with 5% milk/TBST, then washed and incubated in HRP-conjugated secondary antibodies for 1 hr at room temperature. Blots were developed using Pierce ECL Western Blotting Substrate and imaged using the GelDoc Imaging System. Band intensity was quantified using Fiji.
 
-## FLAG-EMD immunoprecipitation and mass spectrometry
+### FLAG-EMD immunoprecipitation and mass spectrometry
 
 FLAG-EMD, FLAG-RA, and parental U2OS (non-expressing negative control) cells were grown to confluence in three 10 cm plates per cell line, then harvested by scraping and transferring to a microfuge tube. Cells were pelleted and lysed in 1 mL lysis buffer (50 mM Tris-HCl pH 7.4, 150 mM NaCl, 0.3% Triton X-100, 1 mM DTT, 2 mM EDTA, 5 mM MgCl2, 1x protease inhibitor cocktail, 1x PhosSTOP, benzonase), then incubated for 30 min end over end at 4°C. Lysates were probe-sonicated in six rounds of 10 s pulses at 20% power, then spun 17,000×g at 4°C for 25 min. The supernatant was added to 40 µL FLAG M2 magnetic beads which had been calibrated in 500 µL lysis buffer and separated on a magnetic stand. Samples were incubated end over end at room temperature for 1 hr, then magnetically separated and washed three times with 1 mL wash buffer (100 mM HEPES-KOH pH 7.5, 100 mM KCl, 5% glycerol, 0.1% NP-40, protease inhibitors). After the final wash, the supernatant was discarded, and the beads were resuspended in 200 µL elution buffer (100 µg/mL 3× FLAG peptide in wash buffer) and eluted for 1 hr at room temperature. Eluates were precipitated with four volumes of ice-cold acetone overnight at –20°C, spun at maximum speed for 5 min, then air-dried. Pellets were processed for mass spectrometry using a PreOmics iST kit according to the manufacturer’s instructions.
 
-## Mass spectrometry and analysis
+### Mass spectrometry and analysis
 
 A nanoElute was attached in line to a timsTOF Pro equipped with a CaptiveSpray Source (Bruker, Hamburg, Germany). Chromatography was conducted at 40°C through a 25 cm reversed-phase C18 column (PepSep) at a constant flow rate of 0.5 μL/min. Mobile phase A was 98/2/0.1% water/MeCN/formic acid (vol/vol/vol) and phase B was MeCN with 0.1% formic acid (vol/vol). During a 108 min method, peptides were separated by a three-step linear gradient (5–30% B over 90 min, 30–35% B over 10 min, 35–95% B over 4 min) followed by a 4 min isocratic flush at 95% for 4 min before washing and a return to low organic conditions. Experiments were run as data-dependent acquisitions with ion mobility activated in PASEF mode. MS and MS/MS spectra were collected with m/z 100–1700 and ions with z = +1 were excluded. Raw data files are available on the Mass Spectrometry Interactive Virtual Environment (MassIVE), a full member of the Proteome Xchange consortium under the identifier: MSV000096858.
 

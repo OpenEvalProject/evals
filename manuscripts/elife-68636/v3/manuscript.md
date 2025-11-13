@@ -20,7 +20,7 @@
 
 ## Abstract
 
-Progenitors of the thoracic tracheal system of adult Drosophila (tracheoblasts) arrest in G2 during larval life and rekindle a mitotic program subsequently. G2 arrest is dependent on ataxia telangiectasia mutated and rad3-related kinase (ATR)-dependent phosphorylation of checkpoint kinase 1 (Chk1) that is actuated in the absence of detectable DNA damage. We are interested in the mechanisms that activate ATR/Chk1 (Kizhedathu et al., 2018; Kizhedathu et al., 2020). Here we report that levels of reactive oxygen species (ROS) are high in arrested tracheoblasts and decrease upon mitotic re-entry. High ROS is dependent on expression of Duox, an H 2 O 2 generating dual oxidase. ROS quenching by overexpression of superoxide dismutase 1, or by knockdown of Duox, abolishes Chk1 phosphorylation and results in precocious proliferation. Tracheae deficient in Duox, or deficient in both Duox and regulators of DNA damage-dependent ATR/Chk1 activation (ATRIP/TOPBP1/claspin), can induce phosphorylation of Chk1 in response to micromolar concentrations of H 2 O 2 in minutes. The findings presented reveal that H 2 O 2 activates ATR/Chk1 in tracheoblasts by a non-canonical, potentially direct, mechanism.
+Progenitors of the thoracic tracheal system of adult Drosophila (tracheoblasts) arrest in G2 during larval life and rekindle a mitotic program subsequently. G2 arrest is dependent on ataxia telangiectasia mutated and rad3-related kinase (ATR)-dependent phosphorylation of checkpoint kinase 1 (Chk1) that is actuated in the absence of detectable DNA damage. We are interested in the mechanisms that activate ATR/Chk1 (Kizhedathu et al., 2018; Kizhedathu et al., 2020). Here we report that levels of reactive oxygen species (ROS) are high in arrested tracheoblasts and decrease upon mitotic re-entry. High ROS is dependent on expression of Duox, an H2O2 generating dual oxidase. ROS quenching by overexpression of superoxide dismutase 1, or by knockdown of Duox, abolishes Chk1 phosphorylation and results in precocious proliferation. Tracheae deficient in Duox, or deficient in both Duox and regulators of DNA damage-dependent ATR/Chk1 activation (ATRIP/TOPBP1/claspin), can induce phosphorylation of Chk1 in response to micromolar concentrations of H2O2 in minutes. The findings presented reveal that H2O2 activates ATR/Chk1 in tracheoblasts by a non-canonical, potentially direct, mechanism.
 
 ## Introduction
 
@@ -36,9 +36,21 @@ Our interest in the mechanism for activation of ATR/Chk1 led us to probe the rol
 
 ## Results
 
-## High ROS is required for G2 arrest in larval tracheoblasts
+### High ROS is required for G2 arrest in larval tracheoblasts
 
 The cells that comprise the tracheal branches of the second thoracic metamere (Tr2) of the larvae are differentiated adult progenitors that contribute to the development of pupal and adult tracheal structures (Djabrayan et al., 2014; Guha et al., 2008; Guha and Kornberg, 2005). The cells that make up the dorsal trunk (DT) in Tr2, hereafter referred to as tracheoblasts, are the focus of our studies. Tracheoblasts remain arrested in the G2 phase of the cell cycle during larval life and initiate mitosis thereafter. Analysis of the cell cycle phasing of tracheoblasts using the fluorescent ubiquitination-based cell cycle indicator (FUCCI) system (Zielke et al., 2014) has shown that the cells are in the G1 phase at the time the embryo hatches into a larva and that the cells transition from G1 to S to G2 in the first larval instar (L1). Tracheoblasts remain in G2 from the second larval instar (L2) till mid third larval instar (L3) (32–40 hr L3, ~56 hr) and divide rapidly thereafter (Kizhedathu et al., 2018; Kizhedathu et al., 2020, Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/68636/elife-68636-fig1-v3.jpg)
+
+**Figure 1.:** (A) A diagram of the third instar larva showing the dorsal trunk (DT) of the second thoracic metamere (Tr2, colored in green and marked by dashed line). The diagram also shows the timecourse of G2 arrest and cell division in Tr2. The cells in Tr2 DT remain geographically isolated from tracheal cells in other branches during larval life. (B–E) Levels of the ROS reporter 2',7'-dichlorodihydrofluorescein diacetate (H2DCFDA) in Tr2 DT during larval stages. Shown in the figures are H2DCFDA staining in L2 (B), 0–8 hr L3 (C), 16–24 hr L3 (D), and 32–40 hr L3 (E) in wild type (btl-Gal4) animals. (F–I) Levels of the ROS reporter dihydroethidium (DHE) in Tr2 DT during larval stages. Shown in the figures are DHE staining in L2 (F), 0–8 hr L3 (G), 16–24 hr L3 (H), and 32–40 hr L3 (I) in wild type (btl-Gal4) animals. (J, K) Effect of btl-Gal4-dependent overexpression of superoxide dismutase 1 (SOD1) on levels of ROS reporters in Tr2 DT. (J) H2DCFDA staining in btl-SOD1 (btl-GAL4/UAS-SOD1)-expressing larvae (n ≥ 6 tracheae per condition per timepoint). (K) DHE staining in btl-SOD1 larvae (n ≥ 6 tracheae per condition per timepoint). (L) Effect of SOD1 overexpression on cell numbers in Tr2 DT at different larval stages. Graph shows numbers of Tr2 tracheoblasts in wild type (btl-Gal4), btl-SOD1 (btl-GAL4/UAS-SOD1), and btl-Chk1RNAi (btl-GAL4/UAS-Chk1RNAi) larvae at L2, 0–8 hr L3, 16–24 hr L3, 32–40 hr L3, and wandering L3 (WL3) (n ≥ 7 tracheae per condition per timepoint). (M) Effect of SOD1 overexpression on mitotic indices in Tr2 DT (see text). Graph shows mitotic indices in Tr2 DT in wild type and btl-SOD1 (btl-GAL4/UAS-SOD1)-expressing larvae at L2, 0–8 hr L3 and 16–24 hr L3 (mean values ± standard deviation, n ≥ 7 tracheae per condition per timepoint). (N) Effect of SOD1 overexpression on Chk1 phosphorylation in Tr2 tracheoblasts. Shown in the figure is phosphorylated Chk1 (pChk1, phospho-Chk1Ser345) immunostaining (red) in Tr2 DT in wild type (btl-GAL4) and btl-SOD1 (btl-GAL4/UAS-SOD1) larvae at L2. Scale bars = 10 µm. Dashed lines outline the cuticular lumen of the tracheal tube here and elsewhere and are shifted outward to include the epithelial lining when they overlap with the signal. Student’s t-test: *p<0.00001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68636/elife-68636-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A–F) Quantification of fluorescence intensities of redox-sensitive fluorescent dyes 2',7'-dichlorodihydrofluorescein diacetate (H2DCFDA) and dihydroethidium (DHE) in Tr2 tracheoblasts. (A) Quantification of fluorescence intensities of H2DCFDA at L2, 0–8 hr L3, 16–24 hr L3, and 32–40 hr L3 in wild type (btl-Gal4) larvae. (B) Quantification of fluorescence intensities of DHE at L2, 0–8 hr L3, 16–24 hr L3, and 32–40 hr L3 in wild type (btl-Gal4) larvae. (C) Quantification of fluorescence intensities of H2DCFDA in wild type (btl-Gal4) and btl-Sod1(btl-GAL4/UAS-Sod1)-expressing tracheae at L2. (D) Quantification of fluorescence intensities of DHE in wild type (btl-Gal4) and btl-Sod1(btl-GAL4/UAS-Sod1)-expressing tracheae at L2. (E) Quantification of fluorescence intensities of H2DCFDA in wild type (btl-Gal4) and btl-DuoxRNAi (btl-GAL4/+; UAS-DuoxRNAi (32903)/+) and (btl-GAL4/+; UAS-DuoxRNAi (33975)/+)--expressing tracheae at L2. (F) Quantification of fluorescence intensities of DHE in wild type (btl-Gal4) and btl-DuoxRNAi (btl-GAL4/+; UAS-DuoxRNAi (32903)/+) and (btl-GAL4/+; UAS-DuoxRNAi (33975)/+)-expressing tracheae at L2. (mean values ± standard deviation, n = 5 tracheae per condition per timepoint). A.U: arbitrary units. Note that L2 tracheae were used as controls in all experiments and representative images have been quantified here (H2DCFDA n=8, DHE n=9): H2DCFDA Intensity value: 20266.0747 ±1199.05881 A.U. and DHE Intensity value 20006.8505±1023.51711 A.U. A.U: arbitrary units. Student’s t-test: *p<0.00001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68636/elife-68636-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A–C) Quantification of fluorescence intensities after pChk1 immunostaining and tyramide-based amplification. (A) Quantification of fluorescence intensities after pChk1 immunostaining in Tr2 tracheoblasts in wild type (btl-Gal4) and btl-Sod1 (btl-GAL4/UAS-Sod1)-expressing animals at L2. (B) Quantification of fluorescence intensities after pChk1 immunostaining in Tr2 tracheoblasts in wild type (btl-Gal4) and btl-DuoxRNAi (btl-GAL4/+; UAS-DuoxRNAi (32903)/+)-expressing animals at L2. (C) Quantification of fluorescence intensities after pChk1 immunostaining in wild type (btl-Gal4), btl-DuoxRNAi(btl-GAL4/+; UAS-DuoxRNAi(32903)/+) and btl-DuoxRNAi(btl-GAL4/+; UAS-DuoxRNAi(32903)/+) animals treated with 100 µM H2O2 for 30 min, 5 min, and 2 min, btl-ATRRNAi(btl-GAL4/UAS-ATRRNAi) animals treated with 100 µM H2O2 for 30 min and btl-DuoxRNAi, ATRIPRNAi(btl-GAL4/UAS-ATRIPRNAi; UAS-DuoxRNAi(32903)/+),btl-DuoxRNAi, TOPBP1RNAi(btl-GAL4/+; UAS-DuoxRNAi(32903)/UAS-TOPBP1RNAi), btl-DuoxRNAi, ClaspinRNAi(btl-GAL4/+; UAS-DuoxRNAi(32903)/UAS-ClaspinRNAi) animals treated with 100 µM H2O2 for 2 min at L2. (mean values ± standard deviation, n = 5 tracheae per condition per timepoint). Note that L2 tracheae were used as controls in all experiments and representative images have been quantified here (n=9, pChk1 intensity value 29441.4784 ±6706.78889 A.U. ). A.U: arbitrary units. Student’s t-test: *p<0.00001.
 
 To probe the role of ROS in the regulation of G2 arrest in tracheoblasts, we assessed the levels of cytoplasmic ROS in tracheoblasts at L2, 0-8 hr L3, 16-24 hr L3 and 32–40 hr L3 using two well-established, redox-sensitive dyes: 2′,7′-dichlorodihydrofluorescein diacetate (H2DCFDA) and dihydroethidium (DHE). Both H2DCFDA and DHE are cell-permeable molecules that alter light emission upon oxidation (Yang et al., 2014). Analysis of H2DCFDA and DHE staining in tracheoblasts at various stages revealed that levels of both reporters are readily detectable at L2 (Figure 1B and F, Figure 1—figure supplement 1A and B, n ≥ 6 tracheae per condition per experiment, n = 3), 0–8 hr L3 (Figure 1C and G, Figure 1—figure supplement 1A and B, n ≥ 6 tracheae per condition per experiment, n = 3), 16–24 hr L3 (Figure 1D and H, Figure 1—figure supplement 1A, B, n ≥ 6 tracheae per condition per experiment, n = 3), and nearly undetectable at 32–40 hr L3 in wild type (btl-Gal4) animals (Figure 1E, I, Figure 1—figure supplement 1A and B, n ≥ 6 tracheae per condition per experiment, n = 3). Taken together, the analysis of ROS reporters (Figure 1) showed that cytoplasmic ROS is high in arrested cells and low in mitotically active cells.
 
@@ -46,25 +58,25 @@ Next, we asked whether changes in ROS levels had any bearing on the cell cycle p
 
 The findings above led us to investigate the levels of phosphorylated (activated) Chk1 in tracheoblasts in wild type and btl-SOD1 animals. As reported previously, pChk1 levels are high in L2 and early L3 and diminished at 32–40 hr L3. pChk1 immunostaining in btl-SOD1-expressing tracheae in L2 and early L3 showed that pChk1 levels were reduced in comparison to wild type at these respective stages (Figure 1N, Figure 1—figure supplement 2A, n ≥ 6 tracheae per condition per experiment, n = 3). We inferred that high ROS levels are necessary for G2 arrest and that high ROS contributes in some manner to high levels of pChk1.
 
-## High ROS in G2-arrested tracheoblasts is dependent on Duox
+### High ROS in G2-arrested tracheoblasts is dependent on Duox
 
 The identification of ROS as regulator of G2 arrest in tracheoblasts raises two questions. First, how are ROS levels regulated in the tracheoblasts? Second, how does high ROS translate into high levels of pChk1? As mentioned previously, the H2O2-generating enzyme Duox is expressed at high levels in larval tracheae (Robinson et al., 2013). To probe the role of Duox in the generation of ROS in tracheoblasts, we first examined Duox expression in tracheoblasts at different larval stages using quantitative RT-PCR (qPCR). We isolated mRNA from micro-dissected fragments of Tr2 DT at different timepoints and utilized these samples to query Duox expression. Our analysis showed that Duox mRNA levels are higher at L2, 0–8 hr L3, and 16–24 hr L3 than at 32–40 hr L3 (Figure 2A, n ≥ 15 tracheal fragments per timepoint per experiment, n = 3 experiments). We concluded that the timecourse of Duox mRNA expression correlates with the timecourse of ROS accumulation in the tracheae.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/68636/elife-68636-fig2-v3.jpg)
 
-**Figure 2.:** Duox expression.(A) Quantitative PCR analysis of Duox mRNA levels in micro-dissected Tr2 dorsal trunk (DT) fragments at different stages. Graph shows fold change in Duox mRNA in Tr2 DT fragments from wild type (btl-GAL4) larvae at L2, 0–8 hr L3, 16–24 hr L3, and 32–40 hr L3. Fold change has been represented with respect to L2 (n = 3 experiments, n ≥ 15 Tr2 DT fragments/stage/experiment, mean ± standard deviation, p<0.0001). (B–E) Effect of the knockdown of Duox expression on the levels of ROS reporters in Tr2 DT in L2. Shown here are the results of the expression of two different Duox RNAi lines (32903 and 33975). (B, D) 2',7'-Dichlorodihydrofluorescein diacetate (H2DCFDA) staining and (C, E) dihydroethidium (DHE) staining in Tr2 DT in btl-Duox. (RNAi[B, C] btl-GAL4/+; UAS-Duox and RNAi (32903)/+[D, E] btl-GAL4/+; UAS-Duox) larvae (n ≥ 6 tracheae per condition per timepoint). (RNAi (33975)/+F) Effect of reduction of Duox expression on levels of phosphorylated checkpoint kinase 1 (pChk1) in Tr2 DT in L2. pChk1 immunostaining (red) in Tr2 DT in wild type (btl-Gal4) and btl-Duox) larvae. (RNAi (btl-GAL4/+; UAS- DuoxRNAi (32903)/+G) Effect of the knockdown of Duox expression on cell numbers in Tr2 DT at different larval stages. Graph shows cell numbers of Tr2 tracheoblasts in wild type (btl-Gal4) and btl-Duox and RNAi (btl-GAL4/+; UAS-DuoxRNAi (32903)/+btl-GAL4/+; UAS-Duox) larvae at L2, 0–8 hr L3, 16–24 hr L3, 32–40 hr L3, and WL3 (n ≥ 7 tracheae per condition per timepoint). (RNAi (33975)/+H) Effect of the knockdown of Duox expression on mitotic indices in Tr2 DT. Graph shows mitotic indices in Tr2 DT in wild type (btl-Gal4) and btl-Duox and RNAi (btl-GAL4/+; UAS-DuoxRNAi (32903)/+btl-GAL4/+; UAS-Duox) larvae at L2, 0–8 hr L3 and 16–24 hr L3 (mean values ± standard deviation, n ≥ 7 tracheae per condition per timepoint). Scale bars = 10 µm. Student’s t-test: *p<0.0001RNAi (33975)/+Figure 2—source data 1.RNAi expressing animals.Figure 2—source data 2.RNAi expressing animals.
+**Figure 2.:** (A) Quantitative PCR analysis of Duox mRNA levels in micro-dissected Tr2 dorsal trunk (DT) fragments at different stages. Graph shows fold change in Duox mRNA in Tr2 DT fragments from wild type (btl-GAL4) larvae at L2, 0–8 hr L3, 16–24 hr L3, and 32–40 hr L3. Fold change has been represented with respect to L2 (n = 3 experiments, n ≥ 15 Tr2 DT fragments/stage/experiment, mean ± standard deviation, p<0.0001). (B–E) Effect of the knockdown of Duox expression on the levels of ROS reporters in Tr2 DT in L2. Shown here are the results of the expression of two different Duox RNAi lines (32903 and 33975). (B, D) 2',7'-Dichlorodihydrofluorescein diacetate (H2DCFDA) staining and (C, E) dihydroethidium (DHE) staining in Tr2 DT in btl-DuoxRNAi. ([B, C] btl-GAL4/+; UAS-DuoxRNAi (32903)/+ and [D, E] btl-GAL4/+; UAS-DuoxRNAi (33975)/+) larvae (n ≥ 6 tracheae per condition per timepoint). (F) Effect of reduction of Duox expression on levels of phosphorylated checkpoint kinase 1 (pChk1) in Tr2 DT in L2. pChk1 immunostaining (red) in Tr2 DT in wild type (btl-Gal4) and btl-DuoxRNAi (btl-GAL4/+; UAS- DuoxRNAi (32903)/+) larvae. (G) Effect of the knockdown of Duox expression on cell numbers in Tr2 DT at different larval stages. Graph shows cell numbers of Tr2 tracheoblasts in wild type (btl-Gal4) and btl-DuoxRNAi (btl-GAL4/+; UAS-DuoxRNAi (32903)/+ and btl-GAL4/+; UAS-DuoxRNAi (33975)/+) larvae at L2, 0–8 hr L3, 16–24 hr L3, 32–40 hr L3, and WL3 (n ≥ 7 tracheae per condition per timepoint). (H) Effect of the knockdown of Duox expression on mitotic indices in Tr2 DT. Graph shows mitotic indices in Tr2 DT in wild type (btl-Gal4) and btl-DuoxRNAi (btl-GAL4/+; UAS-DuoxRNAi (32903)/+ and btl-GAL4/+; UAS-DuoxRNAi (33975)/+) larvae at L2, 0–8 hr L3 and 16–24 hr L3 (mean values ± standard deviation, n ≥ 7 tracheae per condition per timepoint). Scale bars = 10 µm. Student’s t-test: *p<0.0001
 
 To probe whether Duox is the driver of ROS accumulation, we knocked down the levels of Duox in the tracheal system by RNA interference and examined its impact on the levels of ROS reporters. The reduction in the levels of Duox using two different RNAi lines (BDSC-32903, BDSC-33975, btl-GAL4/+; UAS-DuoxRNAi/+ (btl-DuoxRNAi)) followed by H2DCFDA and DHE staining showed that the reduction of Duox leads to a dramatic decrease in levels of both the reporters (Figure 2B–E, Figure 1—figure supplement 1E and F, compare with Figure 1B and E, n ≥ 6 tracheae per condition per experiment, n = 3). Based on these data, we inferred that the high levels of ROS in arrested tracheoblasts are dependent on Duox expression.
 
 Next, we examined how the knockdown of Duox impacted Chk1 phosphorylation and the program of cell division. Consistent with the previous findings with SOD1 overexpression, we observed that the knockdown of Duox resulted in the loss of pChk1 (Figure 2F, Figure 1—figure supplement 2B, n ≥ 6 tracheae per condition per experiment, n = 3). We counted the number of cells of tracheoblasts at L2, 0–8 hr L3, 16–24 hr L3, 32–40 hr L3, and WL3 and quantified the frequencies of pH3+ nuclei in Tr2 DT at L2, 0–8 hr L3, and 16–24 hr L3. We found that btl-DuoxRNAi-expressing animals rekindle cell divisions sooner than their wild type counterparts. Interestingly, btl-DuoxRNAi-expressing animals also showed no obvious slowdown in cell division rate after mitotic re-entry (Figure 2G and H, n ≥ 7 tracheae per timepoint, Figure 2—source data 1, Figure 2—source data 2).
 
-## ROS dependence reveals a novel mode of ATR/Chk1 regulation
+### ROS dependence reveals a novel mode of ATR/Chk1 regulation
 
 Having identified the source for high ROS in arrested tracheoblasts, we turned our attention to addressing how ROS is coordinating G2 arrest. Our previous studies have shown that Wnt-dependent transcriptional upregulation of Chk1 is essential for G2 arrest. Wnt signaling in the trachea is mediated by four Wnt ligands – Wg, Wnt5, Wnt6, and Wnt10 – that are expressed by the tracheoblasts (Figure 3A). All ligands are expressed at high levels in arrested cells and downregulated post-mitotic entry. We have also shown that the four Wnts act synergistically to upregulate Chk1 expression but are redundant for expression of other Wnt targets like Fz3.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/68636/elife-68636-fig3-v3.jpg)
 
-**Figure 3.:** (A) Model for G2 arrest mechanism in Tr2 tracheoblasts based on previous studies. Earlier work has shown that four Wnt ligands (Wg, Wnt5, Wnt6, Wnt10) act synergistically to upregulate Chk1 mRNA levels in arrested tracheoblasts. High levels of Chk1 expression are necessary for G2 arrest and Chk1 overexpression can rescue defects in Wnt signaling (Kizhedathu et al., 2020). (B, C) Effect of superoxide dismutase 1 (SOD1) overexpression and Dual oxidase (Duox) knockdown on expression of Wnts and Wnt-target genes. Quantitative PCR analysis of levels of Wg, Wnt5, Wnt6, Wnt10, Fz3, Chk1, and ATR mRNA in micro-dissected Tr2 DT fragments at L2. Graph shows fold change in Wg, Wnt5, Wnt6, Wnt10, Fz3, Chk1, and ATR mRNA levels in Tr2 dorsal trunk (DT) fragments expressing (B) btl-SOD1 (btl-GAL4/UAS-SOD1) and (C) btl-Duox). Fold change has been represented with respect to wild type (RNAi (btl-GAL4/+; UAS-DuoxRNAi (32903)/+btl-Gal4, shown by dashed red line, n = 3 experiments, n ≥ 15 Tr2 DT fragments/stage/experiment, mean ± standard deviation). (D) Effect of overexpression of a phosphomimic variant of Chk1 in btl-Duox larvae at 16–24 hr L3. Graph shows numbers of Tr2 tracheoblasts in wild type (RNAibtl-Gal4), btl-Duox), RNAi (btl-GAL4/+; UAS-DuoxRNAi (32903)/+btl-Duox (RNAi, Chk1btl-GAL4/+; UAS-Duox) and RNAi (32903)/ UAS-Chk1), btl-DuoxRNAi, ATR (btl-GAL4/+; UAS-DuoxRNAi (32903)/ UAS-ATRbtl-Duox (RNAi, Chk1S373Dbtl-GAL4/+; UAS-Duox) larvae at 16–24 hr L3 (n ≥ 7 tracheae per condition per timepoint). Student’s t-test: *p<0.00001.RNAi (32903)/ UAS-Chk1S373DFigure 3—source data 1.
+**Figure 3.:** (A) Model for G2 arrest mechanism in Tr2 tracheoblasts based on previous studies. Earlier work has shown that four Wnt ligands (Wg, Wnt5, Wnt6, Wnt10) act synergistically to upregulate Chk1 mRNA levels in arrested tracheoblasts. High levels of Chk1 expression are necessary for G2 arrest and Chk1 overexpression can rescue defects in Wnt signaling (Kizhedathu et al., 2020). (B, C) Effect of superoxide dismutase 1 (SOD1) overexpression and Dual oxidase (Duox) knockdown on expression of Wnts and Wnt-target genes. Quantitative PCR analysis of levels of Wg, Wnt5, Wnt6, Wnt10, Fz3, Chk1, and ATR mRNA in micro-dissected Tr2 DT fragments at L2. Graph shows fold change in Wg, Wnt5, Wnt6, Wnt10, Fz3, Chk1, and ATR mRNA levels in Tr2 dorsal trunk (DT) fragments expressing (B) btl-SOD1 (btl-GAL4/UAS-SOD1) and (C) btl-DuoxRNAi (btl-GAL4/+; UAS-DuoxRNAi (32903)/+). Fold change has been represented with respect to wild type (btl-Gal4, shown by dashed red line, n = 3 experiments, n ≥ 15 Tr2 DT fragments/stage/experiment, mean ± standard deviation). (D) Effect of overexpression of a phosphomimic variant of Chk1 in btl-DuoxRNAi larvae at 16–24 hr L3. Graph shows numbers of Tr2 tracheoblasts in wild type (btl-Gal4), btl-DuoxRNAi (btl-GAL4/+; UAS-DuoxRNAi (32903)/+), btl-DuoxRNAi, Chk1 (btl-GAL4/+; UAS-DuoxRNAi (32903)/ UAS-Chk1), btl-DuoxRNAi, ATR (btl-GAL4/+; UAS-DuoxRNAi (32903)/ UAS-ATR) and btl-DuoxRNAi, Chk1S373D (btl-GAL4/+; UAS-DuoxRNAi (32903)/ UAS-Chk1S373D) larvae at 16–24 hr L3 (n ≥ 7 tracheae per condition per timepoint). Student’s t-test: *p<0.00001.
 
 Our first step toward characterizing the role of ROS in G2 arrest was to analyze how ROS levels impacted Wnt signaling and the expression of Wnt target genes, particularly Chk1. We micro-dissected Tr2 fragments from btl-SOD1 and btl-DuoxRNAi animals at L2, extracted mRNA, and analyzed expression of Wnts and Wnt target genes by qPCR. We found that the expression of all Wnt ligands, Fz3 and Chk1, was comparable in wild type, btl-SOD1 and btl-DuoxRNAi-expressing animals (Figure 3B and C, red dashed line marks wild type levels, n ≥ 15 tracheal fragments per timepoint per experiment, n = 3 experiments). This showed that perturbations in ROS levels in the trachea do not impact Wnt signaling nor expression of Wnt targets like Chk1. We also assayed the levels of ATR in btl-SOD1 and btl-DuoxRNAi-expressing animals by qPCR and found no change in ATR transcript levels compared to control (Figure 3B and C, red dashed line marks wild type levels). Together, the qPCR data suggested that ROS did not regulate the abundance of either Chk1 or ATR transcripts.
 
@@ -72,11 +84,23 @@ We have shown previously that precocious mitotic re-entry observed in Wnt signal
 
 In light of the findings that ROS depletion does not perturb Chk1 expression but does perturb Chk1 phosphorylation and function, we hypothesized that ROS may regulate Chk1 phosphorylation in some manner. The ATR-dependent phosphorylation of Chk1 at serine 373 is thought to be necessary for its activation (Liu et al., 2000; Patil et al., 2013; Bayer et al., 2018). Our immunohistochemical analyses are consistent with these findings. To probe the possibility that ROS facilitates Chk1 phosphorylation, we tested whether a phosphomimic variant of Chk1, in which the serine at the position 373 has been replaced by aspartic acid (Chk1S373D), could rescue the Duox phenotype. We overexpressed Chk1S373D in btl-DuoxRNAi animals and counted cell numbers in Tr2 at 16–24 hr L3. We found that Tr2 cell numbers in these animals were now comparable to wild type (and lower than in btl-DuoxRNAi animals, Figure 3D, n ≥ 7 tracheae, Figure 3—source data 1). The rescue of the Duox mutant phenotype by the phosphomimic variant of Chk1 suggested that ROS is required for ATR-dependent phosphorylation and activation of Chk1.
 
-## ROS-dependent activation of ATR/Chk1 does not require ATRIP/TOPBP1/claspin
+### ROS-dependent activation of ATR/Chk1 does not require ATRIP/TOPBP1/claspin
 
 The coincidence of high ROS levels and activated Chk1 in cells would typically implicate ROS-dependent genotoxic stress as the driver of Chk1 activation. However, our analysis of DNA damage in tracheoblasts, using the well-characterized marker for double-strand DNA breaks (γ-H2AX), found no detectable DNA damage in arrested cells (Kizhedathu et al., 2018). In light of the findings with respect to ROS, we decided to probe more rigorously the incidence of genotoxic stress in tracheoblasts and the role of the DNA damage response in Chk1 activation.
 
 We re-evaluated the levels of DNA damage in tracheoblasts using two assays. First, we examined the accumulation of 8-oxo-2'-deoxyguanosine (8-oxo-dG), a marker for nucleotide oxidation. Second, we scored the frequencies of nuclear foci of RPA70, a protein that binds single-strand DNA breaks. To validate nuclear 8-oxodG as a marker of oxidative damage in tracheoblasts, tracheae from L2 larvae were dissected and treated ex vivo with different concentrations of H2O2 (100 μM, 500 μM, and 1 mM) for 30 min and stained with an antibody against 8-oxodG. Robust staining was detected in trachea at 1 mM H2O2(Figure 4A, n ≥ 6 tracheae per condition per experiment, n = 2), but no signal was detected at lower concentrations or in untreated tracheae. This showed that although 8-oxodG accumulation is responsive to oxidative stress, there is no 8-oxodG accumulation in G2-arrested tracheoblasts under normal conditions. An aspect of the 8-oxodG staining in tracheal cells merits mention here. The accumulation of 8-oxodG in Tr2 tracheoblasts was cytoplasmic unlike the tracheal cells in other metameres, where 8-oxodG was observed in both cytoplasm and nucleus (Figure 4B, n ≥ 6 tracheae per condition per experiment, n = 2). One reason for this difference could be that Tr2 DT are arrested in G2 and not engaged in DNA synthesis while cells in other metameres are actively endocycling and replicating DNA.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68636/elife-68636-fig4-v3.jpg)
+
+**Figure 4.:** (A–D) Detailed analysis of DNA damage in Tr2 dorsal trunk (DT). Shown here are findings from three different reporters of genotoxic stress. (A) 8-Oxo-2'-deoxyguanosine (8-Oxo-dG) immunostaining in wild type (btl-GAL4) Tr2 DT in untreated tracheae (left panel) and tracheae exposed to 1 mM H2O2 for 30 min ex vivo (right panel) at L2. (B) 8-Oxo-dG immunostaining in wild type (btl-GAL4) endocycling cells of the tracheae exposed to 1 mM H2O2 for 30 min ex vivo at L2. (C) GFP immunostaining in non-irradiated and γ-irradiated larvae expressing RPA70-GFP. Shown in the figure are GFP immunostaining in non-irradiated larvae (top panel) and larvae exposed to 50 Gy of γ-radiation (bottom panel) at L2. (D) γ-H2AXSer139 immunostaining in Tr2 DT in wild type (btl-GAL4) non-irradiated larvae (top panel) and larvae irradiated with 50 Gy of γ-radiation (bottom panel) at L2. (E–H) Analysis of the contribution of components of the DNA damage-dependent activation of ATR/Chk1 to Chk1 activation in Tr2 DT. Effects of the knockdown of ATR, ATRIP, TOPBP1, and Claspin on phosphorylated checkpoint kinase 1 (pChk1) levels in Tr2 DT at L2. pChk1 immunostaining (red) in Tr2 DT in (E) btl-ATRRNAi (btl-GAL4/UAS-ATRRNAi), (F) btl-ATRIPRNAi (btl-GAL4/UAS-ATRIPRNAi), (G) btl-TOPBP1RNAi (btl-GAL4/+; UAS-TOPBP1RNAi/+), and (H) btl-ClaspinRNAi (btl-GAL4/+; UAS-ClaspinRNAi/+) larvae at L2. (I) Effects of knockdown of ATR, ATRIP, TOPBP1, and Claspin on cell numbers in Tr2 DT. Graph shows numbers of Tr2 tracheoblasts in wild type (btl-Gal4), btl-ATRRNAi (btl-GAL4/UAS-ATRRNAi), btl-ATRIPRNAi (btl-GAL4/UAS-ATRIPRNAi), btl-TOPBP1RNAi (btl-GAL4/+; UAS-TOPBP1RNAi/+), and btl-ClaspinRNAi (btl-GAL4/+; UAS-ClaspinRNAi/+) at L2 and 16–24 hr L3 (mean values ± standard deviation, n ≥ 7 tracheae per condition per timepoint). Scale bars = 5 µm (A–D), 10 µm (E–H). Student’s t-test: *p<0.00001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68636/elife-68636-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Effect of knockdown of Duox and ATRIP or TOPBP1 or Claspin on phosphorylated checkpoint kinase 1 (pChk1) levels in Tr2 dorsal trunk (DT) in larvae exposed to 50 Gy of γ-radiation at L2. (A) Schematic describing the protocol for exposure to γ-radiation and immunostaining. (B–D) pChk1 immunostaining in Tr2 DT in (B) btl-DuoxRNAi, ATRIPRNAi (btl-GAL4/UAS-ATRIPRNAi; UAS-DuoxRNAi (32903)/+), (C) btl-DuoxRNAi, TOPBP1RNAi (btl-GAL4/+; UAS-DuoxRNAi(32903)/UAS-TOPBP1RNAi), and (D) btl-DuoxRNAi, ClaspinRNAi (btl-GAL4/+; UAS-DuoxRNAi(32903)/UAS-ClaspinRNAi) larvae at 1 hr post exposure to 50 Gy of γ-radiation at L2 (n ≥ 6 tracheae per condition). Scale bars = 10 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68636/elife-68636-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** Effect of reduction of ATRIP, TOPBP1, or Claspin on cell numbers in Tr2 dorsal trunk (DT) at WL3. Graph shows cell numbers at WL3 in control (btl-GAL4), btl-ATRIPRNAi (btl-GAL4/UAS-ATRIPRNAi), btl-TOPBP1RNAi (btl-GAL4/+; UAS-TOPBP1RNAi/+), and btl-ClaspinRNAi (btl-GAL4/+; UAS-ClaspinRNAi/+) (mean values ± standard deviation, n ≥ 7 tracheae).
 
 Next we probed the incidence of single-stranded DNA breaks in tracheoblasts with the help of a strain that ubiquitously expresses RPA70-GFP (Blythe and Wieschaus, 2015). RPA 70 has been shown to be uniformly distributed in the nucleus under normal conditions and to form focal nuclear aggregates at sites of single-strand DNA breaks (Blythe and Wieschaus, 2015). To validate RPA70-GFP as a marker for genotoxic stress in the tracheal system, L2 animals were exposed to either 0 (control) or 50 Gy of γ-irradiation and immunostained for GFP. Foci of GFP could be observed in the nuclei of tracheoblasts exposed to 50 Gy γ-irradiation (Figure 4C, n ≥ 6 tracheae per condition per experiment, n = 3) but no foci were detected in untreated tracheae at the same stage. In a parallel set of experiments, we also examined levels of γ-H2AX in L2 animals under these conditions. We observed foci of nuclear γ-H2AX staining in tracheoblasts exposed to 50 Gy of γ-irradiation (Figure 4D, n ≥ 6 tracheae per condition per experiment, n = 3) but not in untreated tracheae at the same stage. Taken together, our analysis of 8-oxodG, RPA70-GFP, and γ-H2AX further confirmed that there is no detectable DNA damage in arrested tracheoblasts.
 
@@ -88,9 +112,17 @@ To determine if any of the components of DNA damage-dependent ATR activation are
 
 Collectively, these experiments lend support to the idea that the ROS-dependent Chk1 activation in tracheoblasts does not involve the DNA damage response pathway.
 
-## H2O2 can rescue pChk1 levels in Duox-deficient tracheoblasts
+### H2O2 can rescue pChk1 levels in Duox-deficient tracheoblasts
 
 The next obvious question was to ask if Chk1 phosphorylation can be induced in Duox mutants by the addition of H2O2. To investigate this possibility, we examined levels of pChk1 in btl-DuoxRNAi tracheae after exposure to different concentrations of H2O2 for different periods of time. Tracheae from L2 animals were exposed to PBS or H2O2 (PBS) ex vivo and immunostained for pChk1 (Figure 5A). We detected no pChk1 staining in tracheae exposed to buffer alone and robust pChk1 staining in tracheae incubated with H2O2 (Figure 5B–E, Figure 1—figure supplement 2C, n ≥ 6 tracheae per condition per experiment, n = 3). Interestingly, we noted that exposure to H2O2 for periods as short as 2 min was sufficient to restore levels of pChk1 in btl-DuoxRNAi tracheae (Figure 5E). We also probed pChk1 levels in btl-ATRRNAi (btl-GAL4/UAS-ATRRNAi) tracheae post H2O2 treatment and found that there was no pChk1 accumulation (Figure 5G, Figure 1—figure supplement 2C, n ≥ 6 tracheae per condition per experiment, n = 3). Together, these data show that H2O2 treatment is sufficient to induce Chk1 phosphorylation in an ATR-dependent manner and that H2O2 can induce pChk1 in minutes.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68636/elife-68636-fig5-v3.jpg)
+
+**Figure 5.:** (A–E) Kinetics of Chk1 phosphorylation upon exposure to H2O2 ex vivo. (A) Regimen for H2O2 treatment and analysis of pChk1 in Tr2 dorsal trunk (DT) in L2. pChk1 immunostaining (red) in Tr2 DT in (B) untreated btl-DuoxRNAi (btl-GAL4/+; UAS-DuoxRNAi (32903)/+)-expressing tracheae and treated with 100 µM H2O2 for (C) 30 min, (D) 5 min, and (E) 2 min. (F) Effect of knockdown of ATR on Chk1 activation in Tr2 DT upon exposure to H2O2 ex vivo. pChk1 immunostaining (red) in Tr2 DT in btl-ATRRNAi (btl-GAL4/UAS-ATRRNAi) tracheae treated with 100 µM H2O2 for 30 min. (G–I) Effect of knockdown of Duox and ATRIP or TOPBP1 or Claspin on pChk1 levels in Tr2 DT in tracheae exposed to 100 µM H2O2 at L2. pChk1 immunostaining (red) in Tr2 DT in (G) btl-DuoxRNAi, ATRIPRNAi (btl-GAL4/ UAS-ATRIPRNAi; UAS-DuoxRNAi (32903)/+), (H) btl-DuoxRNAi, TOPBP1RNAi (btl-GAL4/+; UAS-DuoxRNAi(32903)/UAS-TOPBP1RNAi) and (I) btl-DuoxRNAi, ClaspinRNAi (btl-GAL4/+; UAS-DuoxRNAi(32903)/UAS-ClaspinRNAi) tracheae treated with 100 µM H2O2 for 2 min at L2. (J) Model for the regulation of ATR/Chk1 activation in Tr2 DT. We propose that H2O2 can induce ATR-dependent phosphorylation and activation of Chk1 in the absence of detectable DNA damage, leading to G2 arrest in Tr2 tracheoblasts. Scale bars = 10 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68636/elife-68636-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A–E) Kinetics of Chk1 phosphorylation on exposure to γ-radiation. (A) Regimen for γ-irradiation and analysis of pChk1. pChk1 immunostaining (red) in Tr2 dorsal trunk (DT) in btl-DuoxRNAi (btl-GAL4/+; UAS-DuoxRNAi (32903/+)) in non-irradiated larvae (B) and larvae exposed to with 50 Gy of γ-radiation after (C) 1 hr, (D) 30 min, and (E) 2 min post irradiation at L2. (F) Effect of knockdown of ATR on Chk1 activation in Tr2 DT in larvae exposed to γ-radiation. pChk1 immunostaining (red) in Tr2 DT in btl-ATRRNAi (btl-GAL4/UAS-ATRRNAi) larvae exposed to 50 Gy of γ-radiation at 1 hr post exposure at L2 (n ≥ 6 tracheae per condition) Scale bars = 10 µm.
 
 In an independent set of experiments, we examined the kinetics of DNA damage-dependent activation of Chk1 in tracheoblasts. As described earlier, we exposed L2 larvae to 50 Gy of γ-radiation and performed pChk1 immunostaining at different timepoints post irradiation (Figure 5—figure supplement 1A). We could detect pChk1 1 hr post irradiation (Figure 5—figure supplement 1C, n ≥ 6 tracheae per condition per experiment, n = 2) but not earlier (Figure 5—figure supplement 1D and E, n ≥ 6 tracheae per condition per experiment, n = 2). Here again, pChk1 induction in response to γ-radiation was dependent on ATR as pChk1 was not detected in tracheoblasts expressing btl-ATRRNAi (Figure 5—figure supplement 1F, n ≥ 6 tracheae per condition per experiment, n = 2). These experiments suggest that the kinetics of Chk1 phosphorylation in response to H2O2 could be significantly faster than in response to γ-radiation.
 
@@ -110,42 +142,220 @@ The possibility that ROS can activate ATR/Chk1 without inducing DNA damage may b
 
 ## Materials and methods
 
-## Fly strains and handling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type(species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>btl-GAL4</td>
+      <td>Shiga et al., 1996</td>
+      <td>FLYB: FBtp0001208</td>
+      <td>This line was a gift from Dr. Shigeo Hayashi</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Chk1RNAi</td>
+      <td>VDRC</td>
+      <td>110076</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Chk1S373D</td>
+      <td>This study</td>
+      <td></td>
+      <td>Please see Materials and methods for a detailed description. (Can be obtained through NCBS Fly Facility: https://bangalorefly.ncbs.res.in/)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>RPA-70GFP</td>
+      <td>Blythe and Wieschaus, 2015</td>
+      <td></td>
+      <td>This line was a gift from Dr. Eric F Wieschaus</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DuoxRNAi</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_33975 and RRID:BDSC_32903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-ATR</td>
+      <td>Bayer et al., 2018</td>
+      <td></td>
+      <td>This line was a gift from Dr. Anja C Nagel</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-Chk1 (Ser345) (rabbit monoclonal) antibody</td>
+      <td>CST</td>
+      <td>Cat #2348 (RRID:AB_331212)</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-8-hydroxy-2’-deoxyguanosine antibody (mouse monoclonal) antibody</td>
+      <td>Abcam</td>
+      <td>Cat #ab48508 (RRID:AB_867461)</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tyramide signal amplification system</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #B40912</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains and handling
 
 The following strains were obtained from repositories: UAS-Sod1 (RRID:BDSC_24754), UAS-DuoxRNAi (RRID:BDSC_32903, RRID:BDSC_33975), UAS-ATRIPRNAi (RRID:BDSC_61355), UAS-TOPBP1RNAi (RRID:BDSC_43244), UAS-ClaspinRNAi (RRID:BDSC_32974) (Bloomington Drosophila Stock Center), UAS-Chk1RNAi (RRID:FlyBase_FBst0473748), and UAS-ATRRNAi (RRID:FlyBase_FBst0475838; Vienna Drosophila Resource Center). UAS-Chk1 was generated in the in-house fly facility. The following strains were received as gifts: btl-GAL4, UAS-ATR, and RPA70-GFP. Strains were raised on a diet of cornmeal-agar and maintained at 25°C. All experiments were performed on animals raised at 25°C unless otherwise indicated.
 
-## Cloning of pUAST-Chk1S373D and generation of transgenic flies
+### Cloning of pUAST-Chk1S373D and generation of transgenic flies
 
 Drosophila Chk1 cDNA clone was ordered from DGRC in pOT2 vector. Serine at 373 (TCG) position was mutated to aspartic acid (GAT) using the primers Chk1_S373D_Forward and Chk1_S373D_Reverse. The complete plasmid was amplified by polymerase chain reaction (PCR) using Phusion polymerase. The PCR product was then digested with Dpn1 enzyme and further transformed into XL10 cells. The plasmid was isolated from a few colonies and sent for sequencing. The positive clone with the mutation (TCG to GAT) was then subcloned into the vector pUAST. Mutant Chk1 (Chk1 S373D) was amplified using the primers pUAST_Chk1_Ecor1_Forward and pUAST_Chk1_Kpn1_Reverse. The PCR fragment and the empty vector were then double digested using enzymes EcoR1 and Kpn1 at 37°C for 1 hr. The vector was purified using gel extraction and the PCR fragment was purified using the PCR clean-up kit (Qiagen). The digested vector and insert were mixed in the ratio 1:3 and ligated using T4 DNA ligase (NEB) at 16°C overnight. The ligation mixture was transformed into XL10 cells. Plasmid isolation was performed on the positive clones and sent for sequencing for further confirmation. The clone with the correct mutation pUAST-Chk1S373D was used to establish five independent transgenic fly lines by P-element mediated germline transformation by the in-house fly facility.
 
 The following primer sets were used for generating and cloning Chk1S373D:
 
-## Larval staging
+<table>
+  <tbody>
+    <tr>
+      <td>Chk1_S373D_Forward</td>
+      <td>5′ CAGTTACTCCTTCGATCAACCAGCTTTGCTTGATG 3′</td>
+    </tr>
+    <tr>
+      <td>Chk1_S373D_Reverse</td>
+      <td>5′ ATCGAAGGAGTAACTGAGCCGAGCCTCCTG 3′</td>
+    </tr>
+    <tr>
+      <td>pUAST_Chk1_EcoR1_Forward</td>
+      <td>5′ AGAGAATTCATGGCTGCAACGCTG 3′</td>
+    </tr>
+    <tr>
+      <td>pUAST_Chk1_Kpn1_Reverse</td>
+      <td>5′ AGAGGTACCCTAAGGCACCGAATTTG 3′</td>
+    </tr>
+  </tbody>
+</table>
+
+### Larval staging
 
 Larval staging was performed as previously described (Guha and Kornberg, 2005) based on the morphology of the anterior spiracles. L2 larvae were collected and examined to identify animals that had undergone the L2-L3 molt in 8 hr intervals (0–8 hr L3). 0–8 hr L3 cohorts collected in this method were staged for subsequent timepoints.
 
-## Immunostaining and imaging
+### Immunostaining and imaging
 
 Animals were dissected in PBS and fixed for 30 min with 4% (w/v) paraformaldehyde (PFA) in PBS. The following antisera were used for immunohistochemical analysis: chicken anti-GFP (Aves, 1:500, RRID:AB_10000240), rabbit anti-phospho Chk1 (CST, 1:200, RRID:AB_331212), rabbit anti-pH3 (Millipore, 1:500, RRID:AB_310177), mouse anti-8-hydroxy-2′-deoxyguanosine (Abcam, 1:200, RRID:AB_867461), and Alexa 488/568-conjugated donkey anti-chicken/rabbit/mouse secondary antibodies (Invitrogen, 1:200). Tyramide signal amplification was performed as per the manufacturer’s recommendations for pChk1 detection. The following reagents were used as part of this protocol: tyramide amplification buffer and tyramide reagent (Thermo Fisher), vectastain A and B (Vector Labs), and biotinylated donkey anti-rabbit IgG (Jackson ImmunoResearch, 1:200, RRID:AB_2340593). Tracheal preparations were flat-mounted in ProLong Diamond Antifade Mountant with DAPI (Molecular Probes) and imaged on Zeiss LSM-780 laser-scanning confocal microscopes. All images were taken by adjusting the parameters (gain and laser power) such that there is no saturation in the positive control images. All images from the same experiment were acquired at the same settings. Images were processed using ImageJ (RRID:SCR_003070). For quantification of cell number, fixed specimens were mounted in ProLong Diamond Antifade Mountant with DAPI and the number of nuclei was counted from images collected with an Olympus BX 53 microscope. The DT of the second thoracic metamere was identified morphologically based on the cuticular banding pattern at anterior and posterior junctions.
 
-## ROS detection
+### ROS detection
 
 Larvae of indicated stages were dissected in PBS, flipped inside out to expose the trachea, and incubated in 100 μM H2DCFDA (Thermo Fisher) for 30 min or 10 μM DHE (Thermo Fisher) for 5 min at room temperature. The larvae were then washed in PBS and fixed mildly in 4% PFA for 5 min. Tracheae were flat mounted in ProLong Diamond and imaged immediately.
 
-## Fluorescence intensity quantification
+### Fluorescence intensity quantification
 
 Fluorescence intensities were quantified by doing a maximum intensity projection followed by background subtraction. In each image, three square regions of interest (ROIs) were selected at random within the tracheal boundaries. The intensity density values obtained from these ROIs were averaged and then divided by 1000 to obtain arbitrary unit values (AU). Fluorescence intensities of all the samples for H2DCFDA, DHE staining, and pChk1 immunostaining were calculated in the same manner. ImageJ software was used to perform all the above operations.
 
-## RNA isolation and quantitative PCR
+### RNA isolation and quantitative PCR
 
 RNA extraction and qPCR were performed as described in Kizhedathu et al., 2018. Primer sequences for Chk1, Fz3, Wg, Wnt5, Wnt6, Wnt10, ATR, Duox, and GAPDH (internal control) are provided below. Relative mRNA levels were quantified using the formula RE = 2- ∆∆Ct method.
 
 The following primer sets were used:
 
-## γ-Irradiation of larvae
+<table>
+  <tbody>
+    <tr>
+      <td>GAPDH forward</td>
+      <td>5' CGTTCATGCCACCACCGCTA 3'</td>
+    </tr>
+    <tr>
+      <td>GAPDH reverse</td>
+      <td>5' CACGTCCATCACGCCACAA 3'</td>
+    </tr>
+    <tr>
+      <td>Chk1 forward</td>
+      <td>5' AACAACAGTAAAACGCGCTGG 3'</td>
+    </tr>
+    <tr>
+      <td>Chk1 reverse</td>
+      <td>5' TGCATATCTTTCGGCAGCTC 3'</td>
+    </tr>
+    <tr>
+      <td>Wg forward</td>
+      <td>5' AAATCGTTGATCGAGGCTGC 3'</td>
+    </tr>
+    <tr>
+      <td>Wg reverse</td>
+      <td>5' GGTGCAGGACTCTATCGTTCC 3'</td>
+    </tr>
+    <tr>
+      <td>Wnt5 forward</td>
+      <td>5' AGGATAACGTGCAAGTGCCA 3'</td>
+    </tr>
+    <tr>
+      <td>Wnt5 Reverse</td>
+      <td>5’ ACTTCTCGCGCAGATAGTCG 3’</td>
+    </tr>
+    <tr>
+      <td>Wnt6 Forward</td>
+      <td>5’ AGTTTCAATTCCGCAACCGC 3’</td>
+    </tr>
+    <tr>
+      <td>Wnt6 Reverse</td>
+      <td>5’ TCGGGAATCGCGCATTAAGA 3’</td>
+    </tr>
+    <tr>
+      <td>Wnt10 Forward</td>
+      <td>5’ CACGAATGGCCCGAAAACTG 3’</td>
+    </tr>
+    <tr>
+      <td>Wnt10 Reverse</td>
+      <td>5’ CCCACGGTGCCCTGTATATC 3’</td>
+    </tr>
+    <tr>
+      <td>Fz3 Forward</td>
+      <td>5’ ATGAATGTCGTTCAAAGTGG 3’</td>
+    </tr>
+    <tr>
+      <td>Fz3 Reverse</td>
+      <td>5’ TATAGTAAATGGGGCTTGCG 3’</td>
+    </tr>
+    <tr>
+      <td>ATR Forward</td>
+      <td>5' CCAGATAGCAGCGAGTGCAT 3'</td>
+    </tr>
+    <tr>
+      <td>ATR Reverse</td>
+      <td>5' CGAGGTCCAGGGAACTTAGC 3'</td>
+    </tr>
+    <tr>
+      <td>Duox Forward</td>
+      <td>5’ ATCTACACGGTGGATAGGAA 3’</td>
+    </tr>
+    <tr>
+      <td>Duox Reverse</td>
+      <td>5’ CAGCAGGATGTAAGGTTTCT 3’</td>
+    </tr>
+  </tbody>
+</table>
+
+### γ-Irradiation of larvae
 
 Second instar larvae were exposed to 50 Gy of γ-radiation at the rate of 2.56 Gy/min using Blood Irradiator 2000 (Board of Radiation and Isotope Technology, DAE, Mumbai). After irradiation, the larvae were transferred into media vials, maintained at 25°C for 3 hr (detection of RPA-70GFP and γ−H2AX) or indicated timepoints (detection of pChk1), after which they were sacrificed.
 
-## Hydrogen peroxide treatment
+### Hydrogen peroxide treatment
 
 Animals were dissected in PBS and flipped inside out to expose the tracheae. They were then incubated with specific concentrations of H2O2 in PBS at room temperature. For detection of 8-oxo-dG, the larvae were immediately washed in PBS and fixed with 4% PFA and immunostaining was performed as described above. For detection of pChk1, the specimens were washed in PBS immediately and ice-cold PFA was added. The samples were fixed overnight at 4°C. Immunostaining was then performed as indicated above.

@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/002epp671 Systems Biophysics, Physics department, Center for NanoScience, Ludwig-Maximilians-Universität München Munich Germany
+1. Systems Biophysics, Physics department, Center for NanoScience, Ludwig-Maximilians-Universität München Munich Germany ([ROR:002epp671](https://ror.org/002epp671))
 
 † Corresponding author
 
@@ -39,9 +39,57 @@ The above scenarios require temperature gradients or thermal cycling. This creat
 
 We created an experimental model of such an evaporation pore, shown in Figure 1, and studied how combined gas and water fluxes can lead to early replication of nucleic acids. We first analyzed accumulation flow speeds at the interface in Figure 2, then monitored cyclic strand separation dynamics in Figure 3, and finally showed how both drive DNA-based replication under isothermal conditions in Figure 4.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/100152/elife-100152-fig2-v1.jpg)
+
+**Figure 2.:** (a) Imaging of fluorescent beads (0.5 µm) reveals a flow vortex right below the air-water interface, induced by the air flux across the interface (left panel). The bead movements were traced (middle panel), and the measured velocities were confirmed by a detailed finite element simulation (right panel). The PTFE chip cutout in the top left corner shows the ROI used for the micrographs. The color scale is equal for both simulation and experiment, and channel dimensions are 4x1.5 x 0.25 mm as indicated. Dotted lines visualize the location of the channel walls. (b) The accumulation of fluorescently labeled 63mer DNA was imaged and confirmed our understanding of the environment based on a diffusion model. Concentration reaches up to 30 times relative to the start c0. The accumulation profile of the experiment (middle panel) and simulation (right panel) match well, showcased by overlaying the simulated flowlines. Blue colorscale represents DNA accumulation for experiment and simulation, while grey color scale shows the relative vapor concentration in the simulation. Arrows (right panel) proportionally show the evaporation speed along the interface. (c) The simulated and experimentally measured distribution of flow velocities of dissolved beads plotted in a histogram, showing a similar profile. Color scale is equal to (a). (d) The maximum relative concentration of DNA increased within an hour to ≈30 X the initial concentration, with the trend following the simulation. Error bars are the standard deviation from four independent measurements.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100152/elife-100152-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Between a steel frame front and an aluminium back attached to the waterbath attachment, a sapphire doublet sandwiches the teflon cutout. The 250-µm-thick cutout is connected to airflow and water flow through holes in the back sapphire. More detailed information can be found in Appendix 3.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/100152/elife-100152-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** A series of microscopy images are loaded, and beads are located and positional changes between images are traced. Statistics of particle speeds spanning hundreds of images are calculated using imaging framerate and previously measured length/pixel values. A 2D map of the obtained traces converted to the corresponding speed is generated as well. More detailed information can be found in Appendix 4.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/100152/elife-100152-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (a) The geometry as it is used for the simulation. (b) The geometry of the system after it has been meshed. (c) Tangential velocity directly at the interface. x-axis goes from the left-most point of the interface (see (a)) to the right-most. The velocity is induced by the momentum transfer of the gas brushing across the interface (boundary condition Equation 4). (d) Evaporation speed along the interface. (e) Parabolic flow profile at the inlet of the chamber in (a). (f) Parabolic flow profile of the gas flow measured at the inlet. More detailed information can be found in Appendix 5.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/100152/elife-100152-fig3-v1.jpg)
+
+**Figure 3.:** Fluorescence resonance energy transfer measurements revealed cycles of strand separation. (a) Micrographs of 24 bp DNA FRET pair in the chamber at 45 C. 1 µl sample (5 µM DNA, 10 mM TRIS pH7, 50 µM MgCl2, 3.9 mM NaCl) was subjected to a 3 nl/s diluting upflow of pure water and a gas flow of 230 ml/min across. The induced vortex, shown by the simulated flow lines (left panel), overlays with regions of high FRET indicative of double-stranded DNA. The vortex flow was expected to enable replication reactions by (1+2) strand replication in the high-salt region and (3) strand separation of template and replicate in the low-salt region. Fluctuations in interface position can dry and redissolve DNA, repeatedly (see ‘Dried DNA’ in right panel). (b) FRET signals confirmed strand separation in low-salt regions and strand annealing in high-salt regions in (a). After about 10 min, DNA and salt accumulated at the interface ,forming stable and clearly separated regions of low – where the influx from below reaches the interface – and high – located at the vortex – FRET signals. (c) Comsol simulation of Mg2+ ions D=705 $\mum^{2}/s$ in the chamber agreed with the FRET signal and showed up to ninefold salt accumulation at the interface. The path of a 61mer DNA molecule from a random walk model is shown by the green lines, and the white flowlines are taken from the simulation. (d) Concentrations along the DNA molecule path in (c) show oscillations relative to the initial concentration of up to threefold for Mg2+ and fourfold for 61mer DNA. This could enable replication cycles, as the vortex provides high salt concentrations for replication, while drops in salt and template concentrations regularly trigger strand separation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100152/elife-100152-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Sketch of setup A and B used for all fluorescence imaging. Setup A was used for fluorescence measurements containing only fluorescent beads, DNA with a FAM/Cy5 label, and for those containing SYBR Green I. Setup B was used for FRET measurements using the FAM/ROX FRET pair. More detailed information can be found in Appendix 2.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/100152/elife-100152-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** More detailed information can be found in Appendix 6.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/100152/elife-100152-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Raw data of the melting curves of different MgCl2 concentrations with 𝛼 and 𝛽 already applied for normalization. (b) Data from a displayed as a heatmap. The white areas display a fraction bound of 0.5 corresponding to the melting temperature T𝑚. Note that small oscillations in Mg2+ strongly influence the melting temperature, which can enable strand separation at isothermal settings. (c) Raw data of the melting curves of different NaCl concentrations with 𝛼 and 𝛽 already applied for normalization. (d) Data from c displayed as a heatmap. The white areas display a fraction bound of 0.5 corresponding to the melting temperature T𝑚. More detailed information can be found in Appendix 6.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/100152/elife-100152-fig4-v1.jpg)
+
+**Figure 4.:** (a) Fluorescence micrographs of the PCR reaction in the chamber. At isothermal 68 °C, 10 µl of reaction sample was subjected to a constant 5 nl/s pure water flow toward the interface where a 250 ml/min gas flowed perpendicularly. The initial state on the left shows the background fluorescence. Fluorescence increased under flux (middle, after 3:20 hr), while without flux, the fluorescence signal remained minimal (right). The reaction sample consisted of 0.25 µM primers, 5 nM template, 200 µM dNTPs, 0.5 X PCR buffer, 2.5 U Taq polymerase, 2 X SYBR Green I. Scale bar is 250 µm. (b) 15% Polyacrylamide Gel Electrophoresis of the reactions and neg. controls. After 4 hr in the reaction chamber with air and water flux ON, the 61mer product was formed under primer consumption (2), unlike in the equivalent experiment with the fluxes turned OFF (3). At the beginning of the experiment (1) or in the absence of template (4), no replicated DNA was detected. The reaction mixture was tested by thermal cycling in a test tube (5-7). As expected, replicated DNA was detected only with the addition of template: (7) shows the sample after 11 replication cycles. The sample was also incubated for 4 hr at the chamber temperature (68 °C), yielding no product (6). Primer band intensity variations are caused by material loss during extraction from the microfluidic chamber. (c) SYBR Green I fluorescence increased when gas and water flow were turned on, but remained at background levels without flow. Fluorescence was averaged over time from the green and red regions of interest shown in (a). Dotted lines show the data from independent repeats. Air bubbles formed through degassing can momentarily disrupt the reaction. SYBR Green I fluorescence indicates replication, as formed products are able to hybridize.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100152/elife-100152-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The 30mer reverse primer binds to the 51mer template. The 5-A overhang remains unbound. (B) Taq polymerase adds nucleotides from 3’ to 5’, and a complete double strand is formed, now containing 56 base pairs. (C) After strand separation, the newly formed 56mer intermediate product with a 5-A overhang at the 5’ end and the intermediate 56mer template with a 5-T overhang at the 3’ end are bound by the primers. (D) In one case, Taq elongates the forward primer bound to the intermediate product and proceeds to step E. In the other case, elongation of the reverse primer bound to the intermediate template leads back to step B. (E) The result of the extension is a new product and a new template of 61 bases each. From here, the cycle enters the ‘reduced scheme’. The newly formed products, together with the original primers, now replicate exponentially: (F) The double strand formed in E can now be considered as product and template for the reduced scheme. (G) After de-hybridization, both primers can anneal to template and product. (H) Taq extends again from 3’ to 5’, forming two new double strands of template and product, doubling their amount and completing one cycle of exponential amplification.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/100152/elife-100152-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Sample composition used for the PCR reaction. The sample is either placed in a test tube (Eppendorf tube) and the temperature is controlled in a thermocycler (red text), or 10 µl of the sample is loaded into the microfluidic chamber prior to dilution water inflow (green text). (b) Temperature protocol for the two individual experiments. In the thermocycler (red line), the sample undergoes a heat activation step at 95°C, followed by an annealing step at 52°C for 15s, then a replication step at 68°C for 10s. This is repeated 40 times before the sample is extracted and stored at -20°C prior to loading on a gel. Chamber experiments are performed at isothermal 68°C after the same heat activation step and extracted after 4 hr. (c) PAGE images for the test tube samples. ‘Full sample isothermal 1 and 2’ samples have the same temperature protocol as the chamber samples. A slight band may be visible around 51 nt caused by the 5nM of the 51 mer template. The numbers indicate the nth replicate of the experiment. (d) PAGE image of the chamber control experiments. Primer fluorescence varies between samples, which is caused by variability during sample extraction or primer consumption by Taq (in the case of ‘Full Sample’).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/100152/elife-100152-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Full Sample (10µL of 2.5U of AllTaq polymerase, 2XSYBR GreenI, 5nM template, 0.25µM of each primer, 200 µM of each dNTP and 0.5X PCR buffer) were subjected to various amounts of temperature cycles, as displayed in Figure 4—figure supplement 2b. The more cycles are performed, the more primers are consumed to form the product strand. The three experiments performed in the chamber show a generally lower gel intensity, which is due to losses during sample extraction from the microfluidic chamber. (b) Comparison of Product/Primer intensity ratio of the test-tube sample to the extracted chamber samples. This reveals that in the 4 hr chamber experiment about 10-11 cycles were performed. Error bar of the experiment data point is the standard deviation of the three chamber samples in b.
+
 ## Results and discussion
 
-## Molecule accumulation at the gas-water interface
+### Molecule accumulation at the gas-water interface
 
 We started off by constructing a laboratory model of the rock pore shown in Figure 1. Here, we focused on the key properties of the system: An upward water flux evaporating at the intersection with the perpendicular gas flux. This leads to an accumulation of dissolved molecules at the interface since they cannot evaporate. Simultaneously, the momentum transfer of the gas flux induces circular currents in water, forcing molecules back into the bulk.
 
@@ -63,7 +111,7 @@ As these fluctuations are difficult to simulate, we decided to stick with one in
 
 5 min after starting the experiment, the maximum DNA accumulation was threefold, while after one hour of evaporation, around 30-fold accumulation was observed. Due to molecules residing in very shallow volumes when directly at the interface, the fluorescence signal can vary drastically compared to measurements deeper in the bulk. This can be seen in the fluctuations between independent measurements (Figure 2—video 3, Figure 2—video 4, Figure 2—video 5), especially around 0.5 hr shown in Figure 2d. The simulated maximum accumulation followed the experimental results and started saturating after about 1 hr (Figure 2d).
 
-## Strand separation dynamics
+### Strand separation dynamics
 
 As discussed earlier, strand separation is essential for the replication of nucleic acids. Only then can replication become exponential and compete with naturally exponential degradation kinetics. Usually, an elevation of temperature can separate strands but is accompanied by a higher risk for hydrolysis. The chosen isothermal setting requires changes in salt concentration for this process. More specifically, the circular fluid flow at the interface provided by the gas flux, together with Brownian motion, was expected to drive cyclic strand separation by forcing nucleic acid strands through areas of varying salt concentrations.
 
@@ -77,7 +125,7 @@ In the experimental conditions used here, RNA would also not readily degrade, ev
 
 When plotting the simulated steady-state concentration of other dissolved – complementary – 61mer DNA molecules along its path, we observed even stronger oscillations of up to 4 X the initial concentration. Together with significant drops in Mg2+ concentration, this suggests the possibility of exponential replication by strand separation cycles.
 
-## Isothermal replication with PCR
+### Isothermal replication with PCR
 
 We saw that nucleic acids and salts accumulated near the interface, but far from the interface, in the bulk below, the concentrations remained vanishingly low due to the diluting inflow of pure water. The air flux induced an accumulation pattern of vortices in which molecules were trapped. The salt and DNA concentration changed cyclically, resulting in periodic strand separation of nucleic acids. Motivated by the above results, we used a model system to test whether nucleic acid replication could actually be implemented in this environment.
 
@@ -87,7 +135,7 @@ Through the oscillations in salts and DNA observed along the random walk, we exp
 
 Replication was confirmed under flux with the 61mer product being visible in gel electrophoresis with depleted primers (Figure 4b). With both gas flow and water influx turned off, no product band was found. We verified the replication reaction by repeating the experiments without the addition of the template, primer, or DNA in the chamber as well as in a test tube. Figure 4—figure supplement 2 shows all independent repeats of the corresponding experiments. No product was detected in any of these cases, ruling out reaction limitations such as primer dimer formation. Primer dimers would form even in the absence of a template strand and would be identifiable through gel electrophoresis. As Taq polymerase requires a significant overlap between the two dimers to bind, this would result in a shorter product compared to the 61mer used here. We also compared the chamber experiment with a regular, temperature cycling-based, PCR reaction in a test tube, revealing that in the chamber, about 10–11 cycles of PCR were finished after the 4 hr of experiment (Appendix 9). The findings above confirm that the gas flow at the simulated rock opening was necessary for nucleic acid replication.
 
-## Conclusion
+### Conclusion
 
 In this work, we investigated a prebiotically plausible and abundant geological environment to support the replication of nucleic acids. We considered an isothermal setting of gas flowing over an open rock pore filled with water. Previously, thermal gradients have been used to separate the strands of nucleic acids, risking their degradation. Now, the combined gas and water flow at an open pore triggers salt oscillations. We found that this condition supports oligonucleotide replication. We began by probing the system with fluorescent bead and DNA measurements, finding our results to agree with fluid dynamics theory using finite element simulations.
 

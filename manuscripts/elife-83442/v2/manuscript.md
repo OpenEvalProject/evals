@@ -14,21 +14,21 @@
 
 ### Affiliations
 
-1. https://ror.org/03vek6s52 Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States
-2. https://ror.org/03vek6s52 Department of Physics, Harvard University Cambridge United States
+1. Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+2. Department of Physics, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 3. Biological and Biomedical Sciences, Harvard Medical School Boston United States
-4. https://ror.org/007ps6h72 Basic Sciences Division and Computational Biology Program, Fred Hutchinson Cancer Research Center Seattle United States
-5. https://ror.org/00cvxb145 Department of Genome Sciences, University of Washington Seattle United States
-6. https://ror.org/00cvxb145 Medical Scientist Training Program, University of Washington Seattle United States
-7. https://ror.org/006w34k90 Howard Hughes Medical Institute Seattle United States
-8. https://ror.org/03vek6s52 NSF-Simons Center for Mathematical and Statistical Analysis of Biology, Harvard University Cambridge United States
-9. https://ror.org/03vek6s52 Quantitative Biology Initiative, Harvard University Cambridge United States
+4. Basic Sciences Division and Computational Biology Program, Fred Hutchinson Cancer Research Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+5. Department of Genome Sciences, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+6. Medical Scientist Training Program, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+7. Howard Hughes Medical Institute Seattle United States ([ROR:006w34k90](https://ror.org/006w34k90))
+8. NSF-Simons Center for Mathematical and Statistical Analysis of Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+9. Quantitative Biology Initiative, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 
 ## Abstract
 
-The Omicron BA.1 variant of SARS-CoV-2 escapes convalescent sera and monoclonal antibodies that are effective against earlier strains of the virus. This immune evasion is largely a consequence of mutations in the BA.1 receptor binding domain (RBD), the major antigenic target of SARS-CoV-2. Previous studies have identified several key RBD mutations leading to escape from most antibodies. However, little is known about how these escape mutations interact with each other and with other mutations in the RBD. Here, we systematically map these interactions by measuring the binding affinity of all possible combinations of these 15 RBD mutations (2 15 =32,768 genotypes) to 4 monoclonal antibodies (LY-CoV016, LY-CoV555, REGN10987, and S309) with distinct epitopes. We find that BA.1 can lose affinity to diverse antibodies by acquiring a few large-effect mutations and can reduce affinity to others through several small-effect mutations. However, our results also reveal alternative pathways to antibody escape that does not include every large-effect mutation. Moreover, epistatic interactions are shown to constrain affinity decline in S309 but only modestly shape the affinity landscapes of other antibodies. Together with previous work on the ACE2 affinity landscape, our results suggest that the escape of each antibody is mediated by distinct groups of mutations, whose deleterious effects on ACE2 affinity are compensated by another distinct group of mutations (most notably Q498R and N501Y).
+The Omicron BA.1 variant of SARS-CoV-2 escapes convalescent sera and monoclonal antibodies that are effective against earlier strains of the virus. This immune evasion is largely a consequence of mutations in the BA.1 receptor binding domain (RBD), the major antigenic target of SARS-CoV-2. Previous studies have identified several key RBD mutations leading to escape from most antibodies. However, little is known about how these escape mutations interact with each other and with other mutations in the RBD. Here, we systematically map these interactions by measuring the binding affinity of all possible combinations of these 15 RBD mutations (215=32,768 genotypes) to 4 monoclonal antibodies (LY-CoV016, LY-CoV555, REGN10987, and S309) with distinct epitopes. We find that BA.1 can lose affinity to diverse antibodies by acquiring a few large-effect mutations and can reduce affinity to others through several small-effect mutations. However, our results also reveal alternative pathways to antibody escape that does not include every large-effect mutation. Moreover, epistatic interactions are shown to constrain affinity decline in S309 but only modestly shape the affinity landscapes of other antibodies. Together with previous work on the ACE2 affinity landscape, our results suggest that the escape of each antibody is mediated by distinct groups of mutations, whose deleterious effects on ACE2 affinity are compensated by another distinct group of mutations (most notably Q498R and N501Y).
 
 ## Introduction
 
@@ -46,11 +46,23 @@ In previous work, we generated a combinatorically complete library comprising al
 
 Of the 32,768 variants in our library, we obtain KD, app for at least ~30,000 variants to each of the mAbs (32,603 for LY-CoV016, 31479 for REGN10987, 27485 for LY-CoV555, and 32650 for S309) after removing variants with poor titration curves (r2<0.8 or σ>1; see Methods). These KD,app range from 0.1 nM to 1 μM (which is our limit of detection and likely corresponds to non-specific binding), with 51% of the variants fully escaping LY-CoV016 (defined as having KD,app above the limit of detection), 65% fully escaping LY-CoV555, 36% fully escaping REGN10897, and no variants fully escaping S309 (Figure 1A; see https://desai-lab.github.io/wuhan_to_omicron/ (Johnson and Dupic, 2022) for an interactive data browser). Escape from LY-CoV016, LY-CoV555, and REGN10897 is mediated by one or a few strong-effect mutations, with other mutations more subtly impacting affinity (Figure 1B). In general, strong-effect mutations make substantial contact with the corresponding antibody. Consistent with previous studies (Greaney et al., 2021a; Cameroni et al., 2022; Starr et al., 2021b; Windsor et al., 2022), these strong-effect mutations are largely distinct for each antibody, which presumably reflects their non-overlapping footprints on the RBD (Figure 1C) and suggests that evolution of escape from each antibody can be, to some extent, orthogonal.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83442/elife-83442-fig1-v2.jpg)
+
+**Figure 1.:** (A) Binding affinities to one antibody from each class (LY-CoV016, LY-CoV555, REGN10987, and S309, from classes 1–4, respectively) across all N=32,768 receptor binding domain (RBD) genotypes tested. Binding affinities are shown as −logKD,app; vertical blue and red dashed lines indicate the −logKD,app for Wuhan Hu-1 and Omicron BA.1, respectively. ‘NB’ denotes non-binding (escape). (B) Mean effect of each mutation on antibody and ACE2 affinity (defined as the change in −logKD,app resulting from mutation averaged across all backgrounds at the other loci) plotted with contact surface area between each residue and each antibody. Mutations are colored by footprint highlighted in (C). (C) Structure of SARS-CoV-2 BA.1 RBD with each antibody footprint annotated (PDB ID 7 KMG, 6WPT, 7C01, and 6XDG). Residues with overlapping footprints are colored and labeled accordingly. (D–G) Distribution of binding affinities to different antibodies grouped by number of Omicron BA.1 mutations. Binding affinity of the Wuhan Hu-1 variant is indicated by horizontal dashed lines. Variants with antibody escape mutations of interest are colored as noted in each key. NB denotes non-binding (escape). In all figures, the boxplots boxes show the spread between the 25th and 75th percentiles, with the median indicated by a horizontal line.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83442/elife-83442-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The plasmid library containing receptor binding domain (RBD) sequences is transformed into a standard yeast display strain AWY101. The library is then incubated with soluble, fluorescent monoclonal antibody (mAb; either one of the four mAbs used in the study) and sorted by flow cytometry into bins based on mAb fluorescence. Deep sequencing of each bin results in the mean bin (Bavg) estimate of each RBD variant across varying mAb concentrations to produce a titration curve. Apparent equilibrium dissociation constants are then inferred by fitting Bavg to the mAb concentration. (B) Correlation of −log(KD,app) between the first and second biological replicates, (sample size = 32768).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83442/elife-83442-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** To determine whether a genotype is a non-binder, the maximum difference of log fluorescence across concentrations of the genotype is computed. The dashed line represents the threshold below which a genotype with a certain maximum difference is considered non-binding.
+
 The picture is more complex for S309, where BA.1 has reduced affinity relative to Wuhan Hu-1, but ~17% of variants have lower affinity than BA.1. These differences are not attributable to one or two strong effect mutations (Figure 1A–B). In addition, although most mutations reduce affinity, three mutations have small positive effects (on average across all backgrounds at the other loci): S375F for LY-CoV016 and E484A and N501Y for REGN10987 (Figure 1B). Intriguingly, each of these mutations reduces affinity to at least one of the other antibodies, and N501Y significantly improves binding to ACE2, suggesting a potential role for trade-offs (and/or epistasis that mitigates these effects on specific backgrounds).
 
 For each antibody, binding affinities generally decrease as the number of mutations increase (Figure 1D–G). For LY-CoV016, LY-CoV555, and REGN10897, this trend is observed amongst variants with and without the large-effect escape mutations (Figure 1D–F). For LY-CoV016, K417N is sufficient for escape (Figure 1D, green), whereas both LY-CoV555 and REGN10987 require at least two mutations for complete escape. For LY-CoV555, both E484A and Q493R decrease affinity drastically (1000- and 100-fold, respectively), but only the combination of both mutations lead to complete escape. Complete escape from REGN10987 also requires two mutations (N440K and G446S), but the individual effects of these mutations are more subtle (reducing affinity by 5- and 10-fold, respectively). For S309, affinity declines after a few mutations and in some backgrounds increases upon further mutation, suggesting that interactions between these mutations are important in determining affinity (Figure 1G).
 
-## Mostly orthogonal large-effect mutations
+### Mostly orthogonal large-effect mutations
 
 We first focused on analyzing how mutations and combinations of mutations lead to complete escape (defined as KD,app above our limit of detection) for specific sets of antibodies. To do so, we analyze the enrichment of specific mutations among non-binders (Figure 2A). We find a largely orthogonal set of one or two mutations are enriched among variants that do not bind each antibody: almost all variants that do not bind LY-CoV016 contain K417N, almost all variants that do not bind REGN10987 contain G446S, and many also contain N440K, and E484A and Q493R are highly enriched among variants that do not bind LY-CoV555. These escape mutations were already identified on the Wuhan background (Tada et al., 2022; Starr et al., 2021c; Zhou et al., 2022). The fact that different sites are involved for each antibody suggests that the RBD can evolve to independently escape antibodies with each distinct epitope, and mutations can to some extent act independently on binding to each antibody.
 
@@ -64,9 +76,17 @@ However, we note that this orthogonality is not complete. For example, G446S is 
 
 To summarize how these different mutations can act individually or in combination to lead to antibody escape, we inferred a decision tree to classify variants as binders or non-binders. To do so, for each antibody, we calculate the mutation that maximally partitions the variants into binders or non-binders. If this partitioning is not perfect, we then calculate the second mutation that maximally partitions the variants conditional on each possible state of the first site. We then proceed to further partition variants based on additional mutations in the same way until the variants are perfectly partitioned or no further mutations can significantly improve the partitioning (see Methods). We show the corresponding decision trees for LY-CoV016, REGN10987, and LY-CoV555 in Figure 2C, D and E, respectively. As expected, the tree associated with LY-CoV016 is very simple: the mutation K417N perfectly partitions the variants into binders and non-binders. In contrast, the trees for REGN10987 and LY-CoV555 have more complex structures, reflecting the fact that it is possible to abrogate affinity to these antibodies via multiple distinct combinations of mutations. For example, variants can escape REGN10987 by acquiring G446S and N440K (100%), or alternatively, with S375F and G446S (89%, as additional mutations may also be required). For LY-CoV555, different sets of mutations can lead to escape (e.g. Q493R and G446S or E484A and S375F). Some of these mutations partially overlap with those for REGN10987 (i.e. they are not fully orthogonal), suggesting that selection pressure from one antibody could promote subsequent escape of another.
 
-## Inference of epistatic affinity landscapes
+### Inference of epistatic affinity landscapes
 
 In addition to large-effect mutations which lead to complete escape of specific antibodies, a variety of other sites contribute to more subtle but potentially important changes in binding affinities. To analyze these subtle effects as well as the large-effect mutations leading to escape, we defined a linear model for −log(KD, app) as the sum of single (additive) mutational effects plus interaction terms up to a specified order (note that because −log[KD, app] is proportional to the free energy of binding, we expect it to behave additively in the absence of epistatic interactions). Because non-binding variants have −log(KD, app) beyond our limit of detection, we fit a Tobit model (a class of regression model capable of handling truncated measurements; see Methods for details) using maximum likelihood with an L2-norm Lasso regularization. Specifically, we partition our data into training (90%) and test (10%) sets and use the training dataset to fit epistatic coefficients to a linear model truncated at each order (e.g. truncating to first-order yields additive mutational effects, second-order includes both additive effects and pairwise terms, etc.). We then evaluate performance (as the coefficient of variation) of each model on the held-out test dataset and compare the model performance using −log(KD, app) for each of the antibodies and ACE2 (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83442/elife-83442-fig3-v2.jpg)
+
+**Figure 3.:** (A) Correlation coefficients between the measured values of −log(KD,app) and the model estimate for various orders of epistatic models. Correlations are computed on the hold-out subset averaged over 10-folds of cross-validation. Zoomed-in version for orders 3–6 (sample size n=10) (B) Binding affinities predicted by complete coefficients from the optimum epistasis model are compared to the measured binding affinities for each antibody. Points are colored by mutations present in the genotypes, ‘N’ corresponds to non-binding genotypes. The accuracy measures the quality of the binary classification between binders and non-binders, and the coefficient of determination R² refers to the correlation between inferred and measured binding affinities, excluding non-binders. (C) Effects of mutations G339D, S371L, S373P, and S375F on S309 affinity grouped by the presence of each mutation. Each violin color corresponds to the number of mutations considered. Dashed line color denotes the average effect for each group represented by the violin color. The gray and orange lines indicate cases where the addition of mutation S371L has a positive (+) or negative (−) effect depending on the background (sample size n=2048).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83442/elife-83442-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) First-order effects in fourth order epistatic interaction models. (B) For each antibody, higher-order interaction coefficient of a mutation (shown at bottom of heat map plot) is calculated by summing over all third- and fourth-order interaction coefficients involving the mutation.
 
 We find that adding epistatic interactions improves the predictive power of the model for all four antibodies as well as for binding to ACE2, though the optimal order varies (Figure 3A). This indicates that epistasis does play a significant role in all cases (up to second order for REGN10987, to third order for LY-CoV555, and to fourth or higher order for LY-CoV016, S309, and ACE2). The additive, pairwise, and higher-order coefficients resulting from these models are summarized in Figure 3—figure supplement 1. In general, we find many strong interactions across several positions in each antibody, involving both the sites that strongly determine escape variants for that antibody (e.g. between N440K and G446S for REGN10987) as well as others.
 
@@ -74,7 +94,7 @@ Notably, we find that the higher-order epistasis plays a much stronger role in d
 
 High-order epistatic interactions are also important in determining affinity to S309. In Figure 3C, we highlight four neighboring mutations (G339D, S371L, S373P, and S375F) which interact non-additively to produce the reduction in affinity observed in BA.1 relative to Wuhan Hu-1. Each of these mutations weakly reduces affinity on their own, and specific combinations of these mutations can reduce affinity by up to two orders of magnitude, but the reduction in affinity resulting from all four mutations is less than some sets of three mutations. These patterns emerge from a complex set of high-order epistatic interactions among the mutations. For example, S371L reduces affinity on the Wuhan Hu-1 background but increases affinity on the background containing G339D, S373P, and S375F (and without G339D, S371L increases affinity in the presence of S373P if S375F is absent but not if it is present). Thus, some variants lacking S371L evade S309 more effectively than BA.1, and interestingly we note that this mutation is absent in BA.2 and BA.3 and replaced instead by S371F.
 
-## Tradeoffs between antibody and ACE2 affinities
+### Tradeoffs between antibody and ACE2 affinities
 
 In previous work, we found that antibody escape mutations (as defined in earlier studies) typically reduce ACE2 affinity, suggesting that viral evolution is constrained by a tradeoff between immune evasion and the ability to enter host cells. Consistent with this, we find here that variants that escape one or more antibodies (as defined by the data reported in this work) but have few additional mutations have reduced ACE2 affinity relative to Wuhan Hu-1. However, as additional BA.1 mutations are accumulated, the ACE2 binding affinity tends to increase until it exceeds the Wuhan Hu-1 value even in the presence of multiple antibody escape mutations (Figure 4A). This suggests that the evolution of the BA.1 variant is driven both by immune escape and the need for compensatory mutations that mitigate the negative effects of the escape mutations on ACE2 binding.
 
@@ -106,11 +126,11 @@ Predicting the future evolution of the Omicron lineage will also require determi
 
 ## Methods
 
-## Yeast display plasmid, strains, and library production
+### Yeast display plasmid, strains, and library production
 
 We used the same library and strains as produced in Rotem et al., 2018. In brief, to generate clonal yeast strains for the Wuhan Hu-1 and Omicron BA.1 variants, we cloned the corresponding RBD gblock into a pETcon vector via Gibson Assembly. We then extracted and transformed Sanger-verified plasmids into the AWY101 yeast strain (kind gift from Dr. Eric Shusta; Wentz and Shusta, 2007) as described in Gietz and Schiestl, 2007. To produce the RBD variant library, we employed a Golden Gate combinatorial assembly strategy. We constructed full RBD sequences from five sets of dsDNA fragments of roughly equal size. Each set contains versions of the fragments that differ by the mutations included. Following bacterial transformation of this Golden Gate assembly product, we extracted and transformed the library into AWY101 yeast strain, from which we inoculated and froze a library containing obtained ∼1.2 million colonies.
 
-## High-throughput binding affinity assay (Tite-seq)
+### High-throughput binding affinity assay (Tite-seq)
 
 We performed Tite-seq assay as previously described (Starr et al., 2020; Moulana et al., 2022; Adams et al., 2016; Phillips et al., 2021), with two replicates for each antibody (LY-CoV016, LY-CoV555, REGN10987, and S309 [Genscript, Gene-to-Antibody service]) assay on different days, for a total of eight assays.
 
@@ -120,72 +140,108 @@ Following overnight induction, we pelleted, washed (with PBS + 0.01% BSA [VWR #4
 
 Sorting, recovery, and sequencing library preparation followed Moulana et al., 2022; Phillips et al., 2021; Gietz and Schiestl, 2007. In short, we sorted ~1.2 million yeast cells per concentration, gated by FSC vs. SSC (forward vs. side scatter) and then by expression (FITC) and/or binding fluorescence (PE) on a BD FACS Aria Illu. The machine was equipped with 405 nm, 440 nm, 488 nm, 561 nm, and 635 nm lasers and an 85 micron fixed nozzle. Sorted cells were then pelleted, resuspended in SDCAA, and rotated at 30°C until late-log phase (OD600=0.9–1.4). The cultures were then pelleted and stored at –20°C for at least 6 hr prior to extraction using Zymo Yeast Plasmid Miniprep II (Zymo Research # D2004), following the manufacturer’s protocol. The sequencing amplicon libraries were then prepared by a two-step PCR as previously described (Moulana et al., 2022; Phillips et al., 2021; Nguyen Ba et al., 2019). In brief, we added to the amplicon unique molecular identifies (UMIs), inline indices, and partial Illumina adapters through a seven-cycle PCR which amplifies the RBD sequence in the plasmid. We then used the cleaned product from the first PCR in the second PCR to append Illumina i5 and i7 indices accordingly (see https://github.com/desai-lab/compensatory_epistasis_omicron/tree/main/Supplementary_Files for primer sequences). The products were then cleaned using 0.85× Aline beads, verified using 1% agarose gel, quantified on Spectramax i3, pooled, and verified on Tapestation 5000HS and 1000HS. Final library was quantitated by Qubit fluorometer and sequenced on Illumina Novaseq SP, supplemented with 10% PhiX.
 
-## Sequence data processing
+### Sequence data processing
 
 Following Moulana et al., 2022, we processed raw demultiplexed sequencing reads to identify and extract the indexes and mutational sites. Briefly, for each antibody, we utilized a snakemake pipeline (https://github.com/desai-lab/omicron_ab_landscape; Moulana, 2022) to parse through all fastq files and group the reads according to inline indices, UMIs, and sequence reads. We accepted sequences based on criteria previously determined (10% bp mismatches) and converted accepted sequences into binary genotypes (‘0’ for Wuhan Hu-1 allele or ‘1’ for Omicron BA.1 allele at each mutation position). Reads containing errors at mutation sites were removed. Finally, the pipeline collated genotype counts based on distinct UMIs from all samples into a single table.
 
-We fit the binding dissociation constants KD,app for each genotype as previously described (Nguyen Ba et al., 2019). Briefly, using sequencing and flow cytometry data, we calculated the mean log-fluorescence of each genotype s at each concentration c, as follows:F̄s,c = ∑bFb,c pb,s|c
+We fit the binding dissociation constants KD,app for each genotype as previously described (Nguyen Ba et al., 2019). Briefly, using sequencing and flow cytometry data, we calculated the mean log-fluorescence of each genotype $s$ at each concentration $c$, as follows:
 
-where, Fb,c is the mean log-fluorescence of bin b at concentration c, and pb,s|c is the inferred proportion of cells from genotype s that are sorted into bin b at concentration c, which is estimated from the read counts as:pb,s|c=Rb,s,c∑sRb,s,cCb,c∑b(Rb,s,c∑sRb,s,cCb,c)
+$$
+F̄_{s,c} = \sum_{b}F_{b,c} p_{b,s|c}
+$$
 
-Here, Rb,s,c represents the number of reads from genotype s that are found in bin b at concentration c, and Cb,c refers to the number of cells sorted into bin b at concentration c.
+where, $F_{b,c}$ is the mean log-fluorescence of bin $b$ at concentration $c$, and $p_{b,s|c}$ is the inferred proportion of cells from genotype s that are sorted into bin $b$ at concentration $c$, which is estimated from the read counts as:
 
-We then computed the uncertainty for the mean log-fluorescence:δF̄s,c =∑b( δFb,c2 pb,s|c2+ Fb,c2δpb,s|c2)
+$$
+p_{b,s|c}=\frac{\frac{R_{b,s,c}}{\sum_{s}R_{b,s,c}}C_{b,c}}{\sum_{b}(\frac{R_{b,s,c}}{\sum_{s}R_{b,s,c}}C_{b,c})}
+$$
 
-where, δFb,c is the spread of the log fluorescence of cells sorted into bin b at concentration c. The error in pb,s|c emerges from the sampling error, which can be approximated as a Poisson process, such that:δpb,s|c=pb,s|cRb,s,c
+Here, $R_{b,s,c}$ represents the number of reads from genotype s that are found in bin $b$ at concentration $c$, and $C_{b,c}$ refers to the number of cells sorted into bin $b$ at concentration $c$.
 
-Finally, we inferred the binding dissociation constant (KD,s) for each variant by fitting the logarithm of Hill function to the mean log-fluorescence  F̄s,c , as a function of concentrations c:F̄s,c=log10(cc+KD,sAs+Bs)
+We then computed the uncertainty for the mean log-fluorescence:
 
-where, As is the increase in fluorescence at antibody saturation, and Bs is the background fluorescence level. The fit was performed using the curve_fit function in the Python package scipy.optimize. Across all genotypes, we imposed bounds on the values of As to be 10²–10⁶, Bs to be 1–10⁵, and KD,s to be 10−14–10−5. We then averaged the inferred KD,s values across the two replicates for each antibody after removing values with poor fit (r2<0.8 or SE>1). Variants were defined as non-binders if the difference between the maximum and the minimum of their estimated log-fluorescence over all concentrations was lower than 1 (in log-fluorescence units). This value was set by measuring the distribution for known non-binders (see Figure 1—figure supplement 1).
+$$
+\deltaF̄_{s,c} =\sqrt{\sum_{b}( \deltaF_{b,c}^{2} p_{b,s|c}^{2}+ F_{b,c}^{2}\deltap_{b,s|c}^{2})}
+$$
 
-## Isogenic measurements for validation
+where, $\deltaF_{b,c}$ is the spread of the log fluorescence of cells sorted into bin $b$ at concentration $c$. The error in $p_{b,s|c}$ emerges from the sampling error, which can be approximated as a Poisson process, such that:
+
+$$
+\deltap_{b,s|c}=\frac{p_{b,s|c}}{\sqrt{R_{b,s,c}}}
+$$
+
+Finally, we inferred the binding dissociation constant (KD,s) for each variant by fitting the logarithm of Hill function to the mean log-fluorescence $ F̄_{s,c}$ , as a function of concentrations $c$:
+
+$$
+F̄_{s,c}=log_{10}(\frac{c}{c+K_{D,s}}A_{s}+B_{s})
+$$
+
+where, $A_{s}$ is the increase in fluorescence at antibody saturation, and $B_{s}$ is the background fluorescence level. The fit was performed using the curve_fit function in the Python package scipy.optimize. Across all genotypes, we imposed bounds on the values of $A_{s}$ to be 10²–10⁶, $B_{s}$ to be 1–10⁵, and KD,s to be 10−14–10−5. We then averaged the inferred KD,s values across the two replicates for each antibody after removing values with poor fit ($r^{2}<0.8$ or SE>1). Variants were defined as non-binders if the difference between the maximum and the minimum of their estimated log-fluorescence over all concentrations was lower than 1 (in log-fluorescence units). This value was set by measuring the distribution for known non-binders (see Figure 1—figure supplement 1).
+
+### Isogenic measurements for validation
 
 We validated our high-throughput binding affinity method by measuring the binding affinities for the Wuhan Hu-1 and Omicron BA.1 RBD variants. For each isogenic titration curve, we followed the same labeling strategy as in Tite-seq, titrating each antibody at concentrations ranging from 10−12-10−7 M (with increments of 0.5 for the first replicate and 1 for the second one) for isogenic yeast strains that display only the sequence of interest. The mean log fluorescence was measured using a BD LSR Fortessa cell analyzer. We directly computed the mean and variances of these distributions for each concentration and used them to infer the value of KD,app using the formula shown above.
 
-## Decision trees on loss-of-binding mutations
+### Decision trees on loss-of-binding mutations
 
 To summarize mutations that drive the loss of binding (escape) for each antibody, we constructed a decision tree using package rpart in R (Therneau et al., 2013) with its default parameters. In brief, for each antibody (except for S309 where every sequence binds the antibody), we first categorized each genotype into a binary parameter with values ‘binding’ or ‘non-binding’. Then, the function rpart splits the tree based on any one of the 15 mutations by minimizing the Gini impurity for the binding parameter. The method continues to partition the tree if the cost complexity parameter of the split does not drop below 0.01. This parameter is the sum of all misclassifications (binding vs. non-binding) at every terminal node (analogous to residual sum of squares in regression), added by the product between the number of splits (analogous to degree of freedom) and a penalty term inferred through cross-validation performed by the rpart algorithm. The tree is then presented in Figure 2 using ‘ggparty’ package (Borkovec, 2019).
 
-## Epistasis analysis
+### Epistasis analysis
 
-We used a linear model where the effects of combinations of mutations sum to the phenotype of a sequence. The logarithm of the binding affinity log⁡KD,app is proportional to change in free energy. Thus, without epistatic interactions, the effects of mutations are expected to combine additively (Wells, 1990; Olson et al., 2014). We describe here our analysis of epistatic effects that lead to departures from this additive expectation.
+We used a linear model where the effects of combinations of mutations sum to the phenotype of a sequence. The logarithm of the binding affinity $log⁡K_{D,app}$ is proportional to change in free energy. Thus, without epistatic interactions, the effects of mutations are expected to combine additively (Wells, 1990; Olson et al., 2014). We describe here our analysis of epistatic effects that lead to departures from this additive expectation.
 
 We could naively infer all 215 epistatic coefficients (corresponding to each subset of mutations, including all possible orders of epistasis) since we have measured binding affinities for all possible combinations of the 15 RBD mutations. However, this approach is inherently unstable: such inference will tend to identify spurious and insignificant higher-order epistatic terms to compensate for measurement errors. To avoid this problem, we truncated our model at an optimal order. That is, we neglected all epistasis terms involving more than a certain number of mutations, as is common in other analyses of epistasis (Moulana et al., 2022; Phillips et al., 2021; Otwinowski et al., 2018). To determine which order is optimal, we used a 10-fold cross-validation strategy by training each model on 90% of the dataset and examining its performance on the remaining 10%, as shown in Figure 3A.
 
-Some phenotypic variables log⁡KD,app are unavailable in our dataset due to the upper limit of the assay concentration: we are unable to precisely infer KD,app for the low-affinity (or non-binding) variants, particularly when the true −log⁡KD,app<6 (the highest concentration used). To address this issue, we augmented our linear model with a lower boundary, following a Tobit left-censored model (Tobin, 1958). In this model, the sampling probability of −log⁡KD,app<6 is modeled using a cumulative distribution which contributes to the maximum-likelihood. Thus, the full K-order model can be written as:-log⁡KD,s*= β0+∑i=1K∑c∈Ci βcxc,s+ϵs
+Some phenotypic variables $log⁡K_{D,app}$ are unavailable in our dataset due to the upper limit of the assay concentration: we are unable to precisely infer $K_{D,app}$ for the low-affinity (or non-binding) variants, particularly when the true −$log⁡K_{D,app}<6$ (the highest concentration used). To address this issue, we augmented our linear model with a lower boundary, following a Tobit left-censored model (Tobin, 1958). In this model, the sampling probability of −$log⁡K_{D,app}<6$ is modeled using a cumulative distribution which contributes to the maximum-likelihood. Thus, the full K-order model can be written as:
 
-where  Ci contains all Li combinations of size i of the mutations and xc,s equal to 1 if the sequence s contains all the mutations in c and to 0 otherwise. Here, -log⁡KD,s=-log⁡KD,s* if −log⁡KD,s∗>6 and -log⁡KD,s=6 if -log⁡KD,s*≤6. Then, following the Tobit model approach, we compute the likelihood function to infer coefficient parameters β^MLE , given by:L(β,σ)= ∏j=1N1σφyj-(β0+∑i=1K∑c∈Ci βcxc,s)σI(yj)1-Φ(β0+∑i=1K∑c∈Ci βcxc,s)-6σ1-I(yj)
+$$
+-log⁡K_{D,s}^{*}= \beta_{0}+\sumi=1K\sumc\inC_{i} \beta_{c}x_{c,s}+ϵ_{s} 
+$$
 
-where, yj=-log⁡KD,app,j , and φ and Φ denote the standard normal cumulative distribution function and probability density function, respectively. Moreover, note that I(y)={0 if y≤61 otherwise. This optimization problem would include coefficients that are associated with the loss-of-binding phenotypes. Consequently, by the model, these coefficients do not have lower bounds, and the optimization would have resulted in deflated coefficients offset by inflated higher-order coefficients, or vice-versa. To resolve this problem, we add a lasso regularization term in the form of ϵ ∑|βc| to the likelihood, with ϵ=0.01. This term is small enough to reduce the magnitude of constrained coefficients but act as intended on the non-constrained ones. In particular, we do not use the correction to make any strong assumption on the sparsity of the epistatic coefficients but to reduce instability caused by the Tobit model inference. To maximize the log-likelihood function, which is a concave function, we used the optimize module in the scipy package, with the BFGS (Broyden–Fletcher–Goldfarb–Shanno) gradient-descent method.
+where  $C_{i}$ contains all $\frac{L}{i}$ combinations of size $i$ of the mutations and $x_{c,s}$ equal to 1 if the sequence $s$ contains all the mutations in $c$ and to 0 otherwise. Here, $-log⁡K_{D,s}=-log⁡K_{D,s}^{*}$ if $−log⁡K_{D,s}^{∗}>6$ and $-log⁡K_{D,s}=6$ if $-log⁡K_{D,s}^{*}\leq6$. Then, following the Tobit model approach, we compute the likelihood function to infer coefficient parameters $\beta^_{MLE}$ , given by:
+
+$$
+L(\beta,\sigma)= \prodj=1N\frac{1}{\sigma}\phi\frac{y_{j}-(\beta_{0}+\sumi=1K\sumc\inC_{i} \beta_{c}x_{c,s)}}{\sigma}^{I(y_{j})}1-Φ\frac{(\beta_{0}+\sumi=1K\sumc\inC_{i} \beta_{c}x_{c,s)}-6}{\sigma}^{1-I(y_{j})} 
+$$
+
+where, $y_{j}=-log⁡K_{D,app,j}$ , and $\phi$ and $Φ$ denote the standard normal cumulative distribution function and probability density function, respectively. Moreover, note that $I(y)={0 if y\leq61 otherwise$. This optimization problem would include coefficients that are associated with the loss-of-binding phenotypes. Consequently, by the model, these coefficients do not have lower bounds, and the optimization would have resulted in deflated coefficients offset by inflated higher-order coefficients, or vice-versa. To resolve this problem, we add a lasso regularization term in the form of $ϵ \sum|\beta_{c}|$ to the likelihood, with $ϵ=0.01$. This term is small enough to reduce the magnitude of constrained coefficients but act as intended on the non-constrained ones. In particular, we do not use the correction to make any strong assumption on the sparsity of the epistatic coefficients but to reduce instability caused by the Tobit model inference. To maximize the log-likelihood function, which is a concave function, we used the optimize module in the scipy package, with the BFGS (Broyden–Fletcher–Goldfarb–Shanno) gradient-descent method.
 
 Although we have focused our analyses on idiosyncratic epistasis, we could also consider models of global epistasis. The significance of global epistasis in the context of protein binding is still disputed. However, global epistasis, as described by Sailer and Harms, 2017, might arise from changes in conformation or stability, leading the measured phenotypes to be a non-linear function of a simpler underlying linear phenotype. We have made use of this concepts and inferred global epistatic terms in previous other recent related work (Sailer and Harms, 2017). However, in this study, due to potential confounding effects arising from the non-binding variants (and corresponding lower boundary of detection), we chose not to perform such inference on this dataset. Moreover, we do not have any evidence that there are any changes in conformation or stability of the protein that could potentially lead to global epistatic effects in our data.
 
-## Structural analysis
+### Structural analysis
 
 We used the reference structure of a 2.79 Å cryo-electron microscopy structure of Omicron BA.1 complexed with ACE2 (PDB ID: 7WPB). The contact surface area is determined by using ChimeraX (Pettersen et al., 2021) to measure the buried surface area between ACE2 and each mutated residue in the RBD (measure buriedarea function, default probe radius of 1.4 Å), whereas distance between α-carbons is measured using PyMol (Schrodinger LLC, 2015).
 
-## Force directed layout
+### Force directed layout
 
-The high-dimensional binding affinity landscape can be projected in two dimensions with a force-directed graph layout approach (see https://desai-lab.github.io/wuhan_to_omicron/). Each node corresponds to each sequence in the library, connected by edges to a neighbor that differs in one single site. For each antibody, an edge between two sequences s and t is given the weight:ws,t=10.01+|log⁡KD,s-log⁡KD,t|
+The high-dimensional binding affinity landscape can be projected in two dimensions with a force-directed graph layout approach (see https://desai-lab.github.io/wuhan_to_omicron/). Each node corresponds to each sequence in the library, connected by edges to a neighbor that differs in one single site. For each antibody, an edge between two sequences $s$ and $t$ is given the weight:
 
-Additionally, we also constructed a different layout that includes affinities to all antibodies, where the weight between two sequences depends on the sum over the antibodies of the difference between their affinities:ws,t=10.01+∑a∈A|log⁡KD,a,s-log⁡KD,a,t|
+$$
+w_{s,t}=\frac{1}{0.01+|log⁡K_{D,s}-log⁡K_{D,t}|}
+$$
 
-where, A is the set of antibodies we used. In a force-directed representation, the edges pull together the nodes they are attached to proportional to the weight given to each edge. In our scenario, this means that nodes with a similar genotype (a few mutations apart) and a similar phenotype (binding affinity or total binding affinity) will be close to each other in two dimensions.
+Additionally, we also constructed a different layout that includes affinities to all antibodies, where the weight between two sequences depends on the sum over the antibodies of the difference between their affinities:
+
+$$
+w_{s,t}=\frac{1}{0.01+\suma\inA|log⁡K_{D,a,s}-log⁡K_{D,a,t}|}
+$$
+
+where, $A$ is the set of antibodies we used. In a force-directed representation, the edges pull together the nodes they are attached to proportional to the weight given to each edge. In our scenario, this means that nodes with a similar genotype (a few mutations apart) and a similar phenotype (binding affinity or total binding affinity) will be close to each other in two dimensions.
 
 Importantly this is not a ‘landscape’ representation: the distance between two points is unrelated to how easy it is to reach one genotype from another in a particular selection model. Practically, after assigning all edge weights, we use the layout function layout_drl from the Python package iGraph, with default settings, to obtain the layout coordinates for each variant.
 
-## Genomic data
+### Genomic data
 
 To analyze SARS-CoV-2 phylogeny, we used all complete RBD sequences from all SARS-CoV-2 genomes deposited in the Global Initiative on Sharing All Influenza Data (GISAID) repository (Khare et al., 2021; Elbe and Buckland-Merrett, 2017; Shu and McCauley, 2017) with the GISAID Audacity global phylogeny (EPI_SET ID: EPI_SET_20220615uq, available on GISAID up to June 15, 2022, and accessible at https://doi.org/10.55876/gis8.220615uq). We pruned the tree to remove all sequences with RBD not matching any of the possible intermediates between Wuhan Hu-1 and Omicron BA.1 and analyzed this tree using the python toolkit ete3 (Huerta-Cepas et al., 2016). We measured the frequency of each mutation by counting how many times it emerges in the tree, normalized by the total occurrences of other mutations. For frequency with Q498R and N501Y, we counted the occurrence of each mutation only on branches that already contains Q498R and N501Y and normalized similarly.
 
-## Statistical analyses and visualization
+### Statistical analyses and visualization
 
 All data processing and statistical analyses were performed using R v4.1.0 (R Development Core Team, 2017) and python 3.10.0 (Van Rossum and Drake, 2009). All figures were generated using ggplot2 (Wickham, 2016) and matplotlib (Hunter, 2007).
 
-## Materials and correspondence
+### Materials and correspondence
 
 Correspondence and requests for materials should be addressed to M.M.D. (mdesai@oeb.harvard.edu).
 
-## Data and code availability statement
+### Data and code availability statement
 
 Raw sequencing reads have been deposited in the NCBI BioProject database under accession number PRJNA877045. All associated metadata are available at https://github.com/desai-lab/omicron_ab_landscape, (copy archived at swh:1:rev:9ab630decfa835b2551430ed693796ef366b1aff; Moulana, 2022).

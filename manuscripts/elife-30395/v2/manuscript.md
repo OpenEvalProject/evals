@@ -45,7 +45,7 @@
 
 ## Abstract
 
-10.7554/eLife.30395.001 General transcription factor TFIID is a key component of RNA polymerase II transcription initiation. Human TFIID is a megadalton-sized complex comprising TATA-binding protein (TBP) and 13 TBP-associated factors (TAFs). TBP binds to core promoter DNA, recognizing the TATA-box. We identified a ternary complex formed by TBP and the histone fold (HF) domain-containing TFIID subunits TAF11 and TAF13. We demonstrate that TAF11/TAF13 competes for TBP binding with TATA-box DNA, and also with the N-terminal domain of TAF1 previously implicated in TATA-box mimicry. In an integrative approach combining crystal coordinates, biochemical analyses and data from cross-linking mass-spectrometry (CLMS), we determine the architecture of the TAF11/TAF13/TBP complex, revealing TAF11/TAF13 interaction with the DNA binding surface of TBP. We identify a highly conserved C-terminal TBP-interaction domain (CTID) in TAF13, which is essential for supporting cell growth. Our results thus have implications for cellular TFIID assembly and suggest a novel regulatory state for TFIID function.
+General transcription factor TFIID is a key component of RNA polymerase II transcription initiation. Human TFIID is a megadalton-sized complex comprising TATA-binding protein (TBP) and 13 TBP-associated factors (TAFs). TBP binds to core promoter DNA, recognizing the TATA-box. We identified a ternary complex formed by TBP and the histone fold (HF) domain-containing TFIID subunits TAF11 and TAF13. We demonstrate that TAF11/TAF13 competes for TBP binding with TATA-box DNA, and also with the N-terminal domain of TAF1 previously implicated in TATA-box mimicry. In an integrative approach combining crystal coordinates, biochemical analyses and data from cross-linking mass-spectrometry (CLMS), we determine the architecture of the TAF11/TAF13/TBP complex, revealing TAF11/TAF13 interaction with the DNA binding surface of TBP. We identify a highly conserved C-terminal TBP-interaction domain (CTID) in TAF13, which is essential for supporting cell growth. Our results thus have implications for cellular TFIID assembly and suggest a novel regulatory state for TFIID function.
 
 ## Introduction
 
@@ -61,41 +61,819 @@ Genetic and biochemical experiments suggested that the TFIIA/TBP/DNA complex is 
 
 ## Results
 
-## Identification of a novel TAF11/TAF13/TBP ternary complex
+### Identification of a novel TAF11/TAF13/TBP ternary complex
 
 We set out to analyze the structure of a putative pentameric TAF11/TAF13/TFIIA/TBP/DNA complex (Kraemer et al., 2001; Lavigne et al., 1999; Robinson et al., 2005), with the objective to better understand the possible roles of TAF11/TAF13 in TFIID function. First, we purified human TAF11/TAF13 complex and TBP to homogeneity (Figure 1A). TFIIA in human cells is made from two precursor polypeptides, TFIIAαβ and TFIIAγ, with TFIIAαβ processed in vivo into two separate polypeptides, α and β, by proteolytic cleavage mediated by the protease Taspase1 (Høiby et al., 2007). Recombinant human TFIIA is typically produced in E. coli by refolding from three separate polypeptides expressed in inclusion bodies, which correspond to the native α, β and γ chains (Bleichenbacher et al., 2003). To facilitate recombinant human TFIIA production, we designed a single-chain construct (TFIIAs-c) by connecting α, β and γ by flexible linkers, based on atomic coordinates taken from the crystal structure of human TFIIA/TBP/DNA complex (Bleichenbacher et al., 2003). TFIIAs-c could be produced in high amounts in soluble form in E. coli and purified to homogeneity without any need for refolding steps (see Materials and methods section). We stored highly purified TFIIAs-c at 4⁰C, and observed the formation of needle-shaped crystals in the storage buffer after several weeks. We improved the crystals manually and determined the 2.4 Å crystal structure of TFIIAs-c (Figure 1B, Figure 1—figure supplement 1, Table 1). The crystal structure revealed a virtually identical conformation of unliganded TFIIAs-c as compared to TFIIA in the TFIIA/TBP/DNA complex. Moreover, the crystal structure highlighted the importance of the connecting loops we had introduced in stabilizing the three-dimensional crystal lattice (Figure 1—figure supplement 1). TFIIAs-c was active in a band-shift assay with TBP and adenovirus major late promoter (AdMLP) TATA-DNA (Figure 1C) similar to purified TFIIA using the classical refolding protocol (Bleichenbacher et al., 2003).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig1-v2.jpg)
+
+**Figure 1.:** (A) Human TAF11/TAF13 complex, TBP full-length (TBPfl) and core (TBPc), and a single-chain version of TFIIA (TFIIAs-c) were purified to homogeneity as shown by SDS-PAGE. (B) TFIIA subunits α(ΑΑ2–59), β(ΑΑ302–376) and γ(ΑΑ2–110)(Bleichenbacher et al., 2003) were connected with linkers L1(-DGKNTANSANTNTV-) and L2(-SRAVDGELFDT-) as indicated (top). TFIIAs-c crystallized during purification (Figure 1—figure supplement 1). The 2.4 Å X-ray structure is shown in a cartoon representation with a section of electron density at 1σ(bottom). (C) TFIIAs-c was assayed by band-shift for activity. DNA, Adenovirus major late promoter (AdMLP) DNA. (D) Probing formation of putative pentameric TAF11/TAF13/TBPTFIIA/DNA complex by band-shift assay (Kraemer et al., 2001; Robinson et al., 2005). TAF11/TAF13 titration to the TFIIA/TBP/DNA complex results in DNA release. (E) SEC analysis reveals a stable TAF11/TAF13/TBP ternary complex. Elution fractions (1-7) were analyzed by SDS-PAGE (inset). IN, equimolar mixture of TAF11/TAF13 and TBP. No interactions were found between TAF11/TAF13/TBP complex and TFIIA (Figure 1—figure supplement 2). (F) TAF11/TAF13 competes with DNA for TBP binding, evidenced by SEC. Elution fractions (1-6, 11-16) were analyzed by SDS-PAGE and ethidium-bromide stained agarose gel (inset). IN, preformed TAF11/TAF13/TBP complex; DNA, AdMLP DNA; M, protein molecular weight marker and DNA ladder, respectively. (G) Immobilized human TAF1 N-terminal domain (TAF1-TAND) (Anandapadamanaban et al., 2013) efficiently depletes TBP from preformed TAF11/TAF13/TBP complex. RSIN, amylose resin with MBP-tagged TAF1-TAND bound; IN, preformed TAF11/TAF13/TBP; M: protein marker; FT, flow-through fraction; W, wash fraction; E, maltose elution fraction.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Superimposition of human TFIIA from a TFIIA/TBP/DNA ternary complex (green, PDB ID: 1NVP) and uncomplexed TFIIAs-c in our crystal (blue) is shown in a cartoon representation in a stereo view. The structures are virtually identical (rms deviation 0.753 Å). C, N are C- and N-terminal end of single-chain; L1, L2 are Linker regions. (B) Crystal packing of TFIIAs-c, highlighting the critical role of engineered linkers (yellow spheres) in mediating the majority of crystal contacts. The unit cell is indicated (grey lines). (C) A close up highlights the interactions mediated by the linker region between symmetry related molecules in the crystal lattice. Symmetry related molecules are colored in grey or green, respectively. Hydrogen bonds (distance cut-off 3.7 Å) are shown as black dashed lines. Amino acid residue numbers are indicated. A section of the 2Fo-Fc electron density map contoured at 1σ is shown (grey mesh). Crystal statistics are provided in Table 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Interaction analysis of TAF11/TAF13/TBP complex with TFIIAs-c by SEC. Preformed TAF11/TAF13/TBP complex and TFIIAs-c were combined and injected on a Superdex S200 10/300 column (left). Peak elution fractions were further analyzed by SDS-PAGE (right). TAF11/TAF13/TBP complex and TFIIAs-c eluted in separate peaks indicating a lack of interaction at the conditions studied. IN, Input sample; M, BioRad prestained marker (MW of marker bands are indicated). Elution fractions are numbered 1 to 11.
+
+**Table 1.**
+ X-ray data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>TFIIAs-c</th>
+    </tr>
+    <tr>
+      <th>Data collection</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space group</td>
+      <td>P65</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>123.3, 123.3, 34.8</td>
+    </tr>
+    <tr>
+      <td>a, b, g (°)</td>
+      <td>90, 90, 120</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>53.4–2.4</td>
+    </tr>
+    <tr>
+      <td>Last resolution bin (Å)</td>
+      <td>2.52–2.38</td>
+    </tr>
+    <tr>
+      <td>Rmeasure (%)</td>
+      <td>12.9 (64.8)</td>
+    </tr>
+    <tr>
+      <td>I / σI</td>
+      <td>11.5 (2.72)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.8 (99.9)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>6.7 (6.8)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>40.36–2.38 (2.44–2.38)</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Work set</td>
+      <td>11859</td>
+    </tr>
+    <tr>
+      <td>Free set</td>
+      <td>601</td>
+    </tr>
+    <tr>
+      <td>Rwork</td>
+      <td>0.18 (0.27)</td>
+    </tr>
+    <tr>
+      <td>Rfree</td>
+      <td>0.24 (0.36)</td>
+    </tr>
+    <tr>
+      <td>No. of atoms</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>1689</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>r.m.s deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.0223</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>2.088</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for highest resolution shell._
+
 Next, we attempted to reconstitute the TAF11/TAF13/TFIIA/TBP/DNA complex following published procedures (Kraemer et al., 2001; Robinson et al., 2005). Titrating TAF11/TAF13 dimer to a preformed TFIIA/TBP/DNA complex had been reported to stabilize TFIIA/TBP/DNA in band-shift assays using AdMLP TATA-DNA (Robinson et al., 2005). Surprisingly, in our titration experiments, TAF11/TAF13 did not stabilize the preformed TFIIA/TBP/DNA complex but, in marked contrast, resulted in TAF11/TAF13-dependent release of free promoter-containing DNA in band-shift assays (Figure 1D). We analyzed the possible underlying intermolecular interactions that may be formed between the individual components TAF11/TAF13, TFIIAs-c, TBP and AdMLP TATA-DNA. We observed that TFIIAs-c and TAF11/TAF13 did not interact in our experiments (Figure 1—figure supplement 2). Combining the TAF11/TAF13 dimer with TBP, in contrast, revealed a novel TAF11/TAF13/TBP complex that was stable in size exclusion experiments (Figure 1E). We concluded that human TAF11/TAF13 did not further stabilize the preformed TFIIA/TBP/DNA complex, but rather sequestered TBP from this complex giving rise to a novel assembly comprising TAF11, TAF13 and TBP.
 
-## TATA-DNA and TAF1-TAND compete with TAF11/TAF13 for TBP binding
+### TATA-DNA and TAF1-TAND compete with TAF11/TAF13 for TBP binding
 
 We tested competition between TAF11/TAF13/TBP formation and TBP binding to AdMLP DNA and showed that the ternary TAF11/TAF13/TBP complex remained stable in the presence of excess AdMLP DNA (Figure 1F). Thus, our results indicate that TAF11/TAF13 and TATA-DNA compete for at least parts of the same binding interface within TBP, and that once TAF11/TAF13 is bound to TBP, TATA-DNA binding is precluded.
 
 TAF1 had been shown previously to bind to the DNA-binding surface of TBP via its TAND domain (Anandapadamanaban et al., 2013; Burley and Roeder, 1998; Liu et al., 1998). We produced human TAF1-TAND fused to maltose-binding protein (MBP) and immobilized highly purified fusion protein to an amylose column (Materials and methods). We added preformed, purified TAF11/TAF13/TBP complex in a pull-down assay using immobilized TAF1-TAND. We found that TAF1-TAND effectively sequestered TBP from the TAF11/TAF13/TBP complex, evidenced by TAF11/TAF13 eluting in the flow-through fraction. Elution by maltose, in contrast, revealed a TAF1-TAND/TBP complex (Figure 1G). Together, these findings substantiate our view that TAF11/TAF13, TAF1-TAND and AdMLP TATA-DNA all interact with the concave DNA-binding surface of TBP, and that the interactions are mutually exclusive.
 
-## TAF11, TAF13, TBP form a 1:1:1 complex
+### TAF11, TAF13, TBP form a 1:1:1 complex
 
 Next, we set out to determine the subunit stoichiometry within the TAF11/TAF13/TBP complex, by using two complementary methods, analytical ultra-centrifugation (AUC) and native mass-spectrometry (native MS). Both methods were consistent in revealing a 1:1:1 complex (Figure 2A,B; Figure 2—figure supplement 1). Collision-induced dissociation (CID) in native MS, evidenced a TBP monomer and a TAF11/TAF13 dimer (Figure 2B). Of note, our control experiment using highly purified TBP evidenced a dimer in the native MS (Figure 2—figure supplement 1). In aggregate, our results are consistent with a ternary assembly which accommodates one copy each of TAF11, TAF13 and TBP in the complex.
 
-## TAF11/TAF13 interacts with the concave DNA-binding surface of TBP
+![Figure 2.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig2-v2.jpg)
+
+**Figure 2.:** (A) Sedimentation velocity analytical ultracentrifugation (AUC) experiments reveal a major peak consistent with a 1:1:1 TAF11/TAF13/TBP ternary complex. The second, smaller peak corresponds to excess TAF11/TAF13. (B) Native mass spectrometry of the TAF11/TAF13/TBP complex confirms 1:1:1 stoichiometry. Collision induced dissociation (CID) results in TBP monomer and TAF11/TAF13. Experimental masses are provided (inset). Calculated masses: 20659 Da (TBP); 40691 Da (TAF11/TAF13); 61351 Da (TAF11/TAF13/TBP). Mass spectra of the TAF11/TAF13/TBP complex and TBP dimer are shown in Figure 2—figure supplement 1. (C) TAF11/TAF13/TBP and TAF11/TAF13 were analyzed by hydrogen-deuterium exchange/mass spectrometry (HDX-MS) (Rajabi et al., 2015). Changes in the deuteration level of selected peptides in TAF11, TAF13 or TBP are depicted in diagrams (top row). Peptides protected upon ternary complex formation are coloured in red in cartoon representations of TAF11/TAF13 and TBP (bottom row). One peptide in TBP (grey, far right) becomes more accessible, hinting at disassembly of a TBP dimer when TAF11/TAF13 binds (Figure 2—figure supplement 1). All peptides implicated in TAF11/TAF13-binding map to the concave DNA-binding surface of TBP. (N) and (C) indicate N- and C-terminal TBP stirrups, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Mass spectrum of the TAF11/TAF13/TBP complex recorded from a buffer solution containing 150 mM ammonium acetate (pH7.5). Two charge state series are observed corresponding to complex with (circles filled in purple) and without (circles filled in orange) an oligo-histidine affinity purification tag, respectively. Calculated masses: 20659 Da (TBP); 22765 Da (TBP with His-tag); 45531 Da (TBP dimer); 40691 Da (TAF11/TAF13). The inset shows the native MS spectrum recorded for separately purified TBP alone, evidencing a TBP dimer.
+
+### TAF11/TAF13 interacts with the concave DNA-binding surface of TBP
 
 With the objective to elucidate the nature of the TAF11/TAF13 interaction with TBP, and to provide direct evidence that TAF11/TAF13 indeed engages the DNA-binding concave surface of TBP, we performed hydrogen-deuterium exchange/mass spectrometry (HDX-MS) (Rajabi et al., 2015) experiments (Figure 2C, Table 2). We analyzed unbound TAF11/TAF13 and TAF11/TAF13/TBP, and compared changes in the deuteration levels in proteolytic peptides by MS indicating the level of protection of the respective regions in TAF11, TAF13 or TBP, respectively, upon ternary complex formation. The HDX-MS results underscored that the DNA-binding surface of TBP was recognized by TAF11/TAF13, evidenced by decrease in deuteration levels which corresponds to increased protection from the solvent of peptides located in the concave surface of TBP upon TAF11/TAF13 binding. The extent of protection within TBP further indicates that the binding of TAF11/TAF13 engages both symmetric pseudo-repeats in TBP, thus spanning the entire concave interface (Figure 2C). Interestingly, we identified one peptide (AA residues 157–167) in TBP which evidenced an increased level of deuteration upon TAF11/TAF13/TBP complex formation in the HDX-MS experiments (Figure 2C). This peptide is located at the dyad relating the two pseudo-symmetric repeats in TBP. We interpret this result as an indication, that this particular region within TBP is more protected in a presumed TBP dimer which dissociates when TAF11/TAF13 is binding and the 1:1:1 complex is formed. Our HDX-MS experiments provide direct evidence that TAF11/TAF13 engage the concave DNA-binding surface of TBP, in excellent agreement with our above described biochemical experiments involving TAF11/TAF13, TBP, AdMLP DNA and TAF1-TAND.
 
-## Architecture of the TAF11/TAF13/TBP complex
+**Table 2.**
+ Peptide deuteration level changes upon complex formation in HDX-MS
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">TAF11</th>
+    </tr>
+    <tr>
+      <th>Residues numbers</th>
+      <th>Sequence</th>
+      <th>Δ%D (15 s)†</th>
+      <th>Δ%D (120 s)†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>93–96</td>
+      <td>EKKQ</td>
+      <td>−8.465</td>
+      <td>−7.309</td>
+    </tr>
+    <tr>
+      <td>105–109</td>
+      <td>KMQIL</td>
+      <td>−7.014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>150–153</td>
+      <td>VVIA</td>
+      <td></td>
+      <td>−7.295</td>
+    </tr>
+    <tr>
+      <td colspan="4">TAF13</td>
+    </tr>
+    <tr>
+      <td>Residues numbers</td>
+      <td>Sequence</td>
+      <td>Δ%D (15 s)†</td>
+      <td>Δ%D (120 s)†</td>
+    </tr>
+    <tr>
+      <td>14–31</td>
+      <td>NEEIGGGAEGGQGKRKRL</td>
+      <td>−7.507</td>
+      <td>−7.192</td>
+    </tr>
+    <tr>
+      <td>32–35</td>
+      <td>FSKE</td>
+      <td>−8.794</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>36–40</td>
+      <td>LRCMM</td>
+      <td>−7.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>86–88</td>
+      <td>IVF</td>
+      <td>−8.598</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>86–89</td>
+      <td>IVFL</td>
+      <td>−10.366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>97–104</td>
+      <td>FARVKDLL</td>
+      <td></td>
+      <td>−7.223</td>
+    </tr>
+    <tr>
+      <td>116–124</td>
+      <td>AFDEANYGS</td>
+      <td>10.89</td>
+      <td>8.721</td>
+    </tr>
+    <tr>
+      <td colspan="4">TBP</td>
+    </tr>
+    <tr>
+      <td>Residues numbers</td>
+      <td>Sequence</td>
+      <td>Δ%D (15 s)†</td>
+      <td>Δ%D (120 s)†</td>
+    </tr>
+    <tr>
+      <td>157–167*</td>
+      <td>IVPQLQNIVST</td>
+      <td></td>
+      <td>9.038</td>
+    </tr>
+    <tr>
+      <td>167–174</td>
+      <td>TVNLGCKL</td>
+      <td>−9.675</td>
+      <td>−10.171</td>
+    </tr>
+    <tr>
+      <td>193–197</td>
+      <td>FAAVI</td>
+      <td>−14.068</td>
+      <td>−12.267</td>
+    </tr>
+    <tr>
+      <td>197–208</td>
+      <td>IMRIREPRTTAL</td>
+      <td>−7.785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>199–208</td>
+      <td>RIREPRTTAL</td>
+      <td>−9.661</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>209–215</td>
+      <td>IFSSGKM</td>
+      <td>−8.655</td>
+      <td>−8.75</td>
+    </tr>
+    <tr>
+      <td>232–244</td>
+      <td>KYARVVQKLGFPA</td>
+      <td>−21.337</td>
+      <td>−18.382</td>
+    </tr>
+    <tr>
+      <td>233–242</td>
+      <td>YARVVQKLGF</td>
+      <td>−7.128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>247–252</td>
+      <td>LDFKIQ</td>
+      <td></td>
+      <td>−7.271</td>
+    </tr>
+    <tr>
+      <td>250–256</td>
+      <td>KIQNMVG</td>
+      <td>−8.913</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>259–266</td>
+      <td>DVKFPIRL</td>
+      <td>−11.932</td>
+      <td>−10.109</td>
+    </tr>
+    <tr>
+      <td>259–268</td>
+      <td>DVKFPIRLEG</td>
+      <td>−13.79</td>
+      <td>−11.479</td>
+    </tr>
+    <tr>
+      <td>260–266</td>
+      <td>VKFPIRL</td>
+      <td>−10.393</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>260–268</td>
+      <td>VKFPIRLEG</td>
+      <td>−16.066</td>
+      <td>−13.002</td>
+    </tr>
+    <tr>
+      <td>281–287</td>
+      <td>PELFPGL</td>
+      <td></td>
+      <td>−7.811</td>
+    </tr>
+    <tr>
+      <td>285–289</td>
+      <td>PGLIY</td>
+      <td>−8.061</td>
+      <td>−7.339</td>
+    </tr>
+    <tr>
+      <td>326–335</td>
+      <td>PILKGFRKTT</td>
+      <td>−7.077</td>
+      <td>−7.902</td>
+    </tr>
+  </tbody>
+</table>
+
+_*TBP peptide with increasing deuteration level upon complex formation.†Peptides exhibiting changes in deuteration level ≥7% are shown._
+
+### Architecture of the TAF11/TAF13/TBP complex
 
 We proceeded to determine the architecture of the TAF11/TAF13/TBP complex by using a comprehensive, integrative multi-parameter approach. We utilized the available crystal structure of TBP (Nikolov et al., 1992) as well as the crystal structure of the globular histone-fold containing domains of the TAF11/TAF13 dimer (Birck et al., 1998) and combined these atomic coordinates with our results from biochemical and biophysical experiments, including small angle X-ray scattering (SAXS) experiments (Figure 3—figure supplement 1, Table 3). We acquired distance constraints to define our structural model by carrying out cross-linking/mass-spectrometry (CLMS) experiments using two different approaches. We first carried out a series of CLMS experiments using the cross-linker bis(sulfosuccinimidyl)-suberate (BS3) (Figure 3—figure supplement 2; Table 4). BS3 cross-links primary amines on the side chain of lysine residues and the N-terminus of polypeptide chains. Inclusion of the BS3 CLMS derived distance constraints into our calculation already evidenced that the TAF11/TAF13 engaged the concave DNA-binding surface of TBP. In addition, we carried out site-specific UV-induced CLMS experiments utilizing MultiBacTAG (Koehler et al., 2016), a method we recently developed to unlock protein complex chemical space (Figure 3—figure supplement 3). MultiBacTAG relies on genetic code expansion (GCE) and employs a modified MultiBac baculoviral genome into which we engineered expression cassettes encoding for the orthogonal pyrolysine tRNA (tRNAPyl)/tRNA synthetase (PylRS) pair from Methanosarcina mazei. Infection of insect cell cultures with a MultiBacTAG virus containing TAF11/TAF13 mutants harboring an AMBER stop codon resulted in efficient incorporation of the UV-activatable amino acid diazirin lysine (DiAzK) provided in the culture medium, leading to site-specific cross-links upon UV irradiation of the reconstituted complex (Koehler et al., 2016) (Figure 3—figure supplement 3).
 
+**Table 3.**
+ Data collection and refinement statistics SAXS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>TAF11/TAF13/TBP</th>
+      <th>TAF11/TAF13</th>
+    </tr>
+    <tr>
+      <th>Data collection parameters</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beamline</td>
+      <td>ESRF-BM29</td>
+      <td>ESRF-BM29</td>
+    </tr>
+    <tr>
+      <td>Beam size at sample</td>
+      <td>~700 µm x 700 µm</td>
+      <td>~700 µm x 700 µm</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.931</td>
+      <td>0.931</td>
+    </tr>
+    <tr>
+      <td>S range (Å−1)</td>
+      <td>0.003–0.497</td>
+      <td>0.003–0.497</td>
+    </tr>
+    <tr>
+      <td>Concentration range (mg ml-1)</td>
+      <td>0.3–7.11</td>
+      <td>0.53–7.48</td>
+    </tr>
+    <tr>
+      <td>Temperature (°C)</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Beamline</td>
+      <td>ESRF-BM29</td>
+      <td>ESRF-BM29</td>
+    </tr>
+    <tr>
+      <td>Beam size at sample</td>
+      <td>~700 µm x 700 µm</td>
+      <td>~700 µm x 700 µm</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.931</td>
+      <td>0.931</td>
+    </tr>
+    <tr>
+      <td>Structural parameters*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I(0) (arbitrary units) [from P(r)]</td>
+      <td>49.63</td>
+      <td>43.65</td>
+    </tr>
+    <tr>
+      <td>Rg (Å) [from P(r)]</td>
+      <td>41</td>
+      <td>41.2</td>
+    </tr>
+    <tr>
+      <td>I(0) (arbitrary units) (from Guinier)</td>
+      <td>50.21 ± 0.33</td>
+      <td>44.15 ± 0.08</td>
+    </tr>
+    <tr>
+      <td>Rg (Å) (from Guinier)</td>
+      <td>40.9 ± 0.6</td>
+      <td>40.3 ± 3.6</td>
+    </tr>
+    <tr>
+      <td>Dmax (Å)</td>
+      <td>160</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <td>Porod volume estimate (Å3)</td>
+      <td>120110</td>
+      <td>89850</td>
+    </tr>
+    <tr>
+      <td>Molecular mass Mr [from porod volume]</td>
+      <td>70.65 kDa</td>
+      <td>52.91 kDa</td>
+    </tr>
+    <tr>
+      <td>I(0) (arbitrary units) [from P(r)]</td>
+      <td>49.63</td>
+      <td>43.65</td>
+    </tr>
+    <tr>
+      <td>Rg (Å) [from P(r)]</td>
+      <td>41</td>
+      <td>41.2</td>
+    </tr>
+    <tr>
+      <td>I(0) (arbitrary units) (from Guinier)</td>
+      <td>50.21 ± 0.33</td>
+      <td>44.15 ± 0.08</td>
+    </tr>
+    <tr>
+      <td>Rg (Å) (from Guinier)</td>
+      <td>40.9 ± 0.6</td>
+      <td>40.3 ± 3.6</td>
+    </tr>
+    <tr>
+      <td>Dmax (Å)</td>
+      <td>160</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <td>Porod volume estimate (Å3)</td>
+      <td>120110</td>
+      <td>89850</td>
+    </tr>
+    <tr>
+      <td>Molecular mass Mr [from porod volume]</td>
+      <td>70.65 kDa</td>
+      <td>52.91 kDa</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Reported for experimental merged data._
+
+**Table 4.**
+ Cross-links observed by BS3 CLMS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">TAF11-TBP</th>
+    </tr>
+    <tr>
+      <th>TAF11 residue</th>
+      <th>TBP residue</th>
+      <th>No. of matches</th>
+      <th>Highest score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>K97</td>
+      <td>K293</td>
+      <td>5</td>
+      <td>9.416</td>
+    </tr>
+    <tr>
+      <td>K85</td>
+      <td>K293</td>
+      <td>2</td>
+      <td>8.818</td>
+    </tr>
+    <tr>
+      <td>K82</td>
+      <td>K239</td>
+      <td>2</td>
+      <td>8.314</td>
+    </tr>
+    <tr>
+      <td>K135</td>
+      <td>K191</td>
+      <td>1</td>
+      <td>8.085</td>
+    </tr>
+    <tr>
+      <td>K82</td>
+      <td>K293</td>
+      <td>2</td>
+      <td>7.926</td>
+    </tr>
+    <tr>
+      <td>K82</td>
+      <td>K191</td>
+      <td>1</td>
+      <td>7.684</td>
+    </tr>
+    <tr>
+      <td>K131</td>
+      <td>K293</td>
+      <td>1</td>
+      <td>6.928</td>
+    </tr>
+    <tr>
+      <td>K83</td>
+      <td>K232</td>
+      <td>1</td>
+      <td>6.124</td>
+    </tr>
+    <tr>
+      <td>K95</td>
+      <td>K293</td>
+      <td>1</td>
+      <td>4.145</td>
+    </tr>
+    <tr>
+      <td>(9 unique links)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">TAF13-TBP</td>
+    </tr>
+    <tr>
+      <td>TAF13 residue</td>
+      <td>TBP residue</td>
+      <td>No. of matches</td>
+      <td>Highest score</td>
+    </tr>
+    <tr>
+      <td>K34</td>
+      <td>K177</td>
+      <td>1</td>
+      <td>10.578</td>
+    </tr>
+    <tr>
+      <td>K34</td>
+      <td>K191</td>
+      <td>1</td>
+      <td>7.856</td>
+    </tr>
+    <tr>
+      <td>K101</td>
+      <td>K232</td>
+      <td>1</td>
+      <td>7.584</td>
+    </tr>
+    <tr>
+      <td>K115</td>
+      <td>K191</td>
+      <td>1</td>
+      <td>7.519</td>
+    </tr>
+    <tr>
+      <td>K115</td>
+      <td>K177</td>
+      <td>1</td>
+      <td>5.742</td>
+    </tr>
+    <tr>
+      <td>(5 unique links)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">TAF11-TAF13</td>
+    </tr>
+    <tr>
+      <td>TAF11 residue</td>
+      <td>TAF13 residue</td>
+      <td>No. of matches</td>
+      <td>Highest score</td>
+    </tr>
+    <tr>
+      <td>K195</td>
+      <td>K96</td>
+      <td>2</td>
+      <td>12.795</td>
+    </tr>
+    <tr>
+      <td>K85</td>
+      <td>K101</td>
+      <td>2</td>
+      <td>12.014</td>
+    </tr>
+    <tr>
+      <td>K204</td>
+      <td>K96</td>
+      <td>3</td>
+      <td>11.053</td>
+    </tr>
+    <tr>
+      <td>K89</td>
+      <td>K101</td>
+      <td>5</td>
+      <td>10.98</td>
+    </tr>
+    <tr>
+      <td>K204</td>
+      <td>K101</td>
+      <td>6</td>
+      <td>10.909</td>
+    </tr>
+    <tr>
+      <td>K131</td>
+      <td>K34</td>
+      <td>3</td>
+      <td>9.627</td>
+    </tr>
+    <tr>
+      <td>K82</td>
+      <td>K92</td>
+      <td>2</td>
+      <td>9.321</td>
+    </tr>
+    <tr>
+      <td>K197</td>
+      <td>K96</td>
+      <td>2</td>
+      <td>9.308</td>
+    </tr>
+    <tr>
+      <td>K131</td>
+      <td>K111</td>
+      <td>10</td>
+      <td>9.226</td>
+    </tr>
+    <tr>
+      <td>K135</td>
+      <td>K111</td>
+      <td>2</td>
+      <td>8.371</td>
+    </tr>
+    <tr>
+      <td>K131</td>
+      <td>K115</td>
+      <td>1</td>
+      <td>8.326</td>
+    </tr>
+    <tr>
+      <td>K207</td>
+      <td>K92</td>
+      <td>1</td>
+      <td>8.292</td>
+    </tr>
+    <tr>
+      <td>K82</td>
+      <td>K96</td>
+      <td>1</td>
+      <td>7.981</td>
+    </tr>
+    <tr>
+      <td>K85</td>
+      <td>K115</td>
+      <td>1</td>
+      <td>7.943</td>
+    </tr>
+    <tr>
+      <td>K94</td>
+      <td>K101</td>
+      <td>2</td>
+      <td>7.934</td>
+    </tr>
+    <tr>
+      <td>K97</td>
+      <td>K101</td>
+      <td>1</td>
+      <td>7.867</td>
+    </tr>
+    <tr>
+      <td>K204</td>
+      <td>K92</td>
+      <td>4</td>
+      <td>6.872</td>
+    </tr>
+    <tr>
+      <td>K85</td>
+      <td>K92</td>
+      <td>1</td>
+      <td>6.817</td>
+    </tr>
+    <tr>
+      <td>K82</td>
+      <td>K101</td>
+      <td>1</td>
+      <td>6.437</td>
+    </tr>
+    <tr>
+      <td>K206</td>
+      <td>K92</td>
+      <td>1</td>
+      <td>5.77</td>
+    </tr>
+    <tr>
+      <td>K204</td>
+      <td>S74</td>
+      <td>1</td>
+      <td>3.42</td>
+    </tr>
+    <tr>
+      <td>K206</td>
+      <td>S74</td>
+      <td>1</td>
+      <td>3.42</td>
+    </tr>
+    <tr>
+      <td>(22 unique links)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Our final three-dimensional TAF11/TAF13/TBP ternary complex model accommodated more than 90% of all experimental constraints and evidenced a tight association of the TAF11/TAF13 histone-fold regions with the concave surface of TBP, giving rise to a compact structure (Figure 3, Figure 3—figure supplement 4). To validate our approach, we carried out calculations using alternative starting models. For instance, we rotated TBP by 180⁰ around its axes to artificially expose the convex surface to TAF11/TAF13, or, alternatively, to reverse the location of the N- and C-terminal stir-ups of TBP (data now shown). These alternative calculations were far inferior in accommodating experimental spatial and distance restraints, in addition to being inconsistent with our biochemical data, thus substantiating our TAF11/TAF13/TBP structural model.
 
-## A highly conserved domain within TAF13 is required for TAF11/TAF13 interaction with TBP and for supporting cell growth
+![Figure 3.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig3-v2.jpg)
+
+**Figure 3.:** TAF11/TAF13/TBP complex architecture was determined by using an integrative multi-parameter approach. We utilized the crystal structure of TBP (Nikolov et al., 1996) as well as the crystal structure of the TAF11/TAF13 dimer (Birck et al., 1998) combined with our native MS, SAXS, AUC and HDX-MS results as well as distance constraints from CLMS experiments (Figure 3—figure supplements 1–3). The structure of the TAF11/TAF13/TBP ternary complex is shown in a cartoon representation in stereo (top) and as a space filling model (devoid of unstructured regions) in three views (bottom). Three axes (x, y, z, drawn as arrows) illustrate the spatial relation between the views. TAF11 is colored in blue, TAF13 in magenta and TBP in green. This model satisfies >90% of the experimental constrains (Figure 3—figure supplement 4, Tables 2 and 4).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Small-angle X-ray scattering (SAXS) data of TAF11/TAF13/TBP and TAF11/TAF13. Fit of experimental scattering (dots) and scattering calculated from ab initio models (solid lines) is provided in a log plot (left). SAXS envelopes of TAF11/TAF13 (yellow), TAF11/TAF13/TBP (grey) and an overlay are shown (right). (B) Kratky plots for TAF11/TAF13/TBP (light gray) and TAF11/TAF13 (light orange). (C) Guinier plots for TAF11/TAF13/TBP (left) and TAF11/TAF13 (right) are shown; Rg values are indicated. Residuals of the linear fit are represented as green lines. (D) Distance distribution analysis for TAF11/TAF13/TBP (left) and TAF11/TAF13 (right). SAXS statistics are provided in Table 3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** TAF11/TAF13/TBP complex and TAF11/TAF13 complex were cross-linked separately using bissulfosuccinimidyl suberate (BS3) and then further purified by SEC using a Superdex 200 10/300 column. Cross-linked and purified TAF11/TAF13/TBP complex (lane 1) and TAF11/TAF13/TBP complex (lane 2) were analyzed by SDS-PAGE (left). The top band corresponds to cross-linked TAF11/TAF13/TBP, the middle band to TAF11/TAF13; the band on the bottom to uncross-linked TAF11. Cross-linked TAF11/TAF13 is present also in the cross-linked TAF11/TAF13/TBP sample. Bands were excised, reduced, alkylated, trypsin digested and desalted followed by mass spectrometric analysis. Cross-links were identified between TAF11 and TAF13, TAF11 and TBP as well as TAF13 and TBP. Cross-links between TAF11-TAF13, TAF11-TBP and TAF13-TBP are shown using 5% FDR cutoff data (right). The N-terminal region of TAF11 is lacking amino acids R and K, and consequently, no cross-links were observed with BS3. Observed cross-links are listed in Table 4.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** The UV-activatable amino acid DiAzKs (Diazirine-Lysine) was introduced at position K34 in TAF13 by genetic code expansion (MultiBacTAG) (Koehler et al., 2016). Thus, labeled TAF11/TAF13 complex and TBP were reconstituted into TAF11/TAF13/TBP complex, which was then exposed to UV light. A cartoon representation of TAF/TAF13/TBP is shown (left) with a zoom-in on the site of ncAA introduction (right). K34 of TAF13 was chosen as it appears to be located at/near the interfaces between TAF13, TAF11 and TBP in our model of the ternary complex. Cross-linked sample then was separated by SDS-PAGE, excised from gel, reduced, alkylated, trypsin digested and desalted followed by mass spectrometry analysis. Specific cross-linking patterns were obtained upon TAF11/TAF13 complex formation with TBP. Example of mass spectrum for a cross-linked peptide is shown below.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Cross-links identified by BS3 CLMS mapped on the TAF11/TAF13/TBP ternary complex. The current model satisfies >90% of all observed cross-links. Cross-linking sites are depicted as red balls. (B) Regions on TBP exhibiting changes in deuteration levels upon complex formation with TAF11/TAF13 are highlighted in red.
+
+### A highly conserved domain within TAF13 is required for TAF11/TAF13 interaction with TBP and for supporting cell growth
 
 In our TAF11/TAF13/TBP complex, the HF domains of TAF11 and TAF13 invade the concave DNA-binding surface of TBP. Moreover, the structural model conveys that the C-terminal extension abutting the histone fold domain of TAF13 may play a prominent role in stabilizing the interaction with TBP. We analyzed TAF13 primary sequences from yeast to human (Figure 4). Sequence alignments revealed a very high degree of sequence conservation in this C-terminal TAF13 domain, with key residues virtually identical in all TAF13 proteins analyzed (Figure 4A). Based on our observation, we mutated these signature residues in the human TAF13 C-terminal region and analyzed the effect of the mutations on TAF11/TAF13/TBP complex formation. In particular, we analyzed two TAF13 mutants, A and B (Figure 4). In Mutant A, we substituted with alanine conserved residues located in the center of the TAF11/TAF13/TBP interface, while in Mutant B we changed conserved amino acid residues located more to the periphery (Figure 4—figure supplement 1A). Both TAF13 mutants readily formed dimers with TAF11. SEC experiments evidenced impairment of TBP interaction with both mutants, but with notable differences. In case of Mutant A, TBP interaction was completely abolished and the TAF11/TAF13/TBP complex was not detected. In case of Mutant B, on the other hand, TBP interaction was likewise diminished, however, residual TAF11/TAF13/TBP complex formation was clearly observed (Figure 4B). Based on this, we generated Saccharomyces cerevisiae (sc) Taf13 mutants containing identical mutations in their CTID as the corresponding human TAF13 Mutant A and Mutant B proteins, respectively. With plasmids expressing these scTaf13 mutants (scMutant A and scMutant B), we carried out in vivo rescue experiments in yeast, using previously described temperature-sensitive Taf13 mutant strains (Shen et al., 2003; Lemaire and Collart, 2000). While plasmids expressing either wild-type (WT) or Mutant B Taf13 proteins supported growth at the non-permissive temperature (both on solid media and in suspension cell culture at close to wild-type levels), Mutant A did not rescue the lethal phenotype at 37°C, evidencing that the conserved mutations in this mutant effectively arrested cell growth (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig4-v2.jpg)
+
+**Figure 4.:** (A) Sequence alignments reveal a highly conserved C-terminal TBP interaction domain (CTID) in TAF13 comprising virtually identical signature residues in TAF13 from yeast to humans. Residues that were mutated in the CTID of TAF13 are indicated by arrows, giving rise to two mutant TAF13 proteins (Mutant A, B). The locations of the mutated residues in TAF11/TAF13/TBP are illustrated in Figure 4—figure supplement 1A. (B) SEC analysis demonstrates complete abolition of the TBP binding by TAF11/TAF13 in case of Mutant A. In case of Mutant B, residual interaction with TBP is observed (marked by red box). Elution fractions (1-8) were analyzed by SDS-PAGE (inset). IN, equimolar mixture of TAF11/TAF13 and TBP. (C) Cell growth experiments in yeast containing temperature-sensitive (ts) Taf13 on solid media plates at permissive (30○C) and non-permissive (37○C) temperatures are shown on the left. EV, empty vector; WT, wild-type Taf13; MutA, MutB, Taf13 mutants A and B; TSA797, TSA636, yeast strains harboring distinct temperature-sensitive Taf13 mutants (Shen et al., 2003; Lemaire and Collart, 2000). Corresponding absorbance plots displaying growth curves of temperature-sensitive strains in liquid media at the non-permissive temperature (37°C) are provided on the right. Polynomial fits are shown as dotted lines. Standard errors of mean (SEM) are shown as bars. The corresponding growth curves for strain BY4741 used as a control, are shown in Figure 4—figure supplement 1B. (D) Cell growth experiments in yeast containing Taf13 fused to an auxin-inducible degron tag (AID) are shown in spot assays on solid media plates (YPD, -LEU) on the left, in presence or absence of indole-3-acetic acid (IAA) which activates Taf13-AID depletion. 13-AID, Taf13 degron-tag fusion (Warfield et al., 2017); YPD, yeast total media; -LEU, synthetic drop-out media. Corresponding absorbance plots displaying growth curves in presence of IAA are shown on the right. Absorbance plots in absence of IAA are provided in Figure 4—figure supplement 1C. (E) Western blots from co-immunoprecipitations (co-IPs) from yeast are shown of HA-tagged wild-type and mutant Taf13 proteins, probed with specific antibodies against Taf5, Taf6, Taf8, Taf11, TBP and the HA tag on Taf13. Purified yeast holo-TFIID (marked as TFIID) and extract from yeast transformed with untagged wild-type Taf13 (marked Taf13) were used as controls. All TFIID subunits probed are equally present in all HA co-IPs.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Location of amino acid residues mutated in TAF11 Mutant A and Mutant B, respectively, mapped on the TAF11/TAF13/TBP architecture. Mutated amino acids are drawn in van-der-Waals representation. TAF11 and TAF13 are shown as ribbons colored in blue and magenta, respectively. TBP is shown in surface representation colored in green. Amino acids mutated in Mutant A are at the center of the TAF11/TAF13 interaction surface with TBP, while amino acids mutated in Mutant B are more in the periphery of the interaction. (B) Growth curves for the wild-type strain, BY4741, are shown. BY4741 was transformed with empty vector (EV), vector containing the gene for wild-type TAF13 (WT) and the two mutants (A, B), respectively, and grown at 37°C. Polynomial fits for each growth curve are shown as dotted lines. Standard errors of mean (SEM) calculated from three independent experiments are shown as bars. (C) Growth curves for the Taf13 degron strain in absence of IAA are shown. Yeast containing the Taf13-degron fusion was transformed with empty vector (EV), vector containing the gene for wild-type TAF13 (WT) and the two mutants (A, B), respectively, and grown at 37°C. Polynomial fits for each growth curve are shown as dotted lines. Standard errors of mean (SEM) calculated from three independent experiments are shown as bars.
 
 We corroborated our results by means of a novel Taf13 degron yeast strain (Warfield et al., 2017). In this strain, endogenous Taf13 is fused to an auxin-inducible degron (AID) tag resulting in Taf13-AID depletion upon addition of a chemical, indole-3-acetic acid (IAA). The plasmids expressing wild-type or Mutant B Taf13 supported growth after IAA addition, while expression of Mutant A lead to cell growth arrest (Figure 4D).
 
 Next, we investigated whether the effects we observed could be related to compromised TFIID integrity which may have lost the mutated proteins. We performed co-immunoprecipitations (co-IPs) of hemagglutinin (HA)-tagged wild-type and mutant Taf13 proteins, and used specific antibodies to probe for the presence of Tafs and TBP in our co-IP experiments (Figure 4E). All TFIID subunits tested were equally present in co-IPs of HA tagged wild-type Taf13, as well as Mutant A and Mutant B. We conclude that the mutations we introduced did not cause noticeable dissociation of Taf13 from TFIID. Taken together, our observations consistently suggest that the amino acids in TAF13 CTID, which when mutated abolish TAF11/TAF13 interactions with TBP, are required for a functional TFIID complex in vivo.
 
-## Co-immunoprecipitation experiments reveal cytoplasmic TAF11/TAF13 and TBP dynamics in nuclear holo-TFIID
+### Co-immunoprecipitation experiments reveal cytoplasmic TAF11/TAF13 and TBP dynamics in nuclear holo-TFIID
 
 We recently demonstrated that human TFIID assembly involves preformed cytosolic and nuclear submodules (Trowitzsch et al., 2015), and we now asked whether the human TAF11/TAF13/TBP complex would likewise represent such a sub-assembly. To this end, we performed co-immunoprecipitations (co-IPs) from HeLa cell cytosolic and nuclear extracts using an anti-TAF11 antibody (Figure 5). We found dimeric TAF11/TAF13 complex in the cytosol representing the complete HF pair. We could not detect TBP in cytosolic co-IPs, however, our experiments evidenced TAF7 association with cytoplasmic TAF11/TAF13. The anti-TAF11 co-IP from nuclear extract, in contrast, contained all TFIID components. Surprisingly, normalized spectral abundance factor (NSAF) (Zybailov et al., 2007) analyses of several distinct anti-TFIID IPs (i.e. anti-TAF1 and anti-TAF7) from NE indicate that less than half of the nuclear TFIID specimens appear to contain stably bound TBP, implying considerable dynamics in TBP association with TFIID in the nucleus, possibly regulated by TBP containing TFIID submodules such as TAF11/TAF13/TBP.
 
@@ -107,11 +885,60 @@ We recently demonstrated that human TFIID assembly involves preformed cytosolic 
 
 Given the central role of TBP in eukaryotic transcription, it is not surprising that the activity of TBP is highly regulated, both positively and negatively, by GTFs, cofactors and gene-specific activators. In addition to TFIIA, numerous protein factors were identified to regulate the DNA-binding capability of TBP. Several of these factors interact directly with the concave DNA-binding surface and are capable of displacing TATA-box containing promoter DNA. The structures of the TAF1 N-terminal domains from Drosophila and yeast were determined, exhibiting TATA-box mimicry when bound to TBP (Figure 6, Figure 6—figure supplement 1). TBP and BTAF1 in mammals, or TBP and Mot1p in yeast, form a heterodimeric complex called B-TFIID (Auble and Hahn, 1993). Mot1p was shown to utilize a flexible loop to target the DNA-binding surface of TBP thus precluding TATA-DNA binding (Wollmann et al., 2011). In our present study, we analyzed the interactions amongst TAF11/TAF13, TBP, TFIIA and TATA-box containing promoter DNA. TAF11 and TAF13 form a tight dimeric complex held together by pairing of the histone fold domains contained within these TAFs (Birck et al., 1998). Existing data conveyed a putative TAF11/TAF13/TFIIA/TBP/DNA complex which may represent a molecular building block in early stage preinitiation complex formation. In marked contrast to previous reports, our careful and well-calibrated titration of TAF11/TAF13 to preformed TFIIA/TBP/DNA did not result in a stabilization of the TFIIA/TBP/DNA complex. Rather, we observed that titration of TAF11/TAF13 resulted in the binding of TAF11/TAF13 to TBP and the release of free promoter DNA. Dissection of the underlying molecular interactions revealed a stable ternary complex comprising the TAF11/TAF13 HF pair and TBP. Our comprehensive multi-parameter approach revealed a compact 3-D structure in which TAF11/TAF13 bound tightly to the concave DNA-binding surface of TBP, fully consistent with our observations that TAF11/TAF13 could displace TATA-box containing DNA from a TBP/DNA complex. In addition, we identified in our experiments a novel C-terminal domain within TAF13 that is essential for binding to TBP, and moreover markedly conserved throughout evolution. We generated TAF13 mutants and could demonstrate that mutations of key residues within this highly conserved domain, while not perturbing either TAF13/TAF11 interactions, or holo-TFIID integrity in our experiments, had a profound effect on TBP binding in vitro and cell growth in vivo, effectively resulting in cell growth arrest. Taken together, our results indicate that the interaction of TAF11/TAF13 with TBP supports viability. Furthermore, we also demonstrated that TAF1-TAND and TAF11/TAF13 can compete for TBP binding. In summary, we provide compelling evidence that TAF11/TAF13, TATA-box DNA and TAF1-TAND share the same interaction interface in TBP. Careful inspection of the molecular modes by which different interactors engage the concave DNA-binding surface of TBP reveals that TAF11/TAF13 is unique in spanning the entire concave groove including the stir-ups of the saddle-shape adopted by TBP, with a solvent-excluded surface comparable to TATA-box DNA binding to TBP (Figure 6, Table 5).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig6-v2.jpg)
+
+**Figure 6.:** The interaction interfaces of TBP binders are shown in a cartoon representation (top). Interactors shown are TATA-box DNA and protein interactors including the TAF11/TAF13 dimer. The binding modes are further illustrated using space-filling models depicting the corresponding electrostatic surface potentials (bottom). The interacting region representing the concave DNA-binding surface of TBP is delimited by dashed lines. Structures shown are TBP on one hand, as well as TATA-DNA (PDB ID 1CDW), a second copy of TBP from the crystal structure of unliganded TBP (PDB ID 1TBP), TAF1-TAND (PDB ID 1TBA), Mot1 (PDB ID 3OC3) and TAF11/TAF13, respectively, on the other. (N) and (C) indicate N- and C-terminal TBP. The ‘TATA-box mimicry’ by TAF1-TAND in shape and charge distribution is evident. TAF11/TAF13 engage the entire concave DNA-binding surface of TBP including the stir-ups.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Cartoon representation (top row) and electrostatic surface potential (bottom row) of TBP (left, PDB ID: 1TBP), TATA-DNA (PDB ID: 1CDW), and TAF1-TAND from Drosophila (PDB ID: 1TBA) and Yeast (PDB ID: 4B0A). The DNA-binding surface of TBP is shown (left), as well as the corresponding complementary surfaces of the interactors (right). Red indicates regions with negative charge, blue indicates regions with positive charge. The shape and surface charge similarity between Drosophila TAF1-TAND and TATA-DNA is evident (‘TATA-box mimicry’) but is less pronounced in TAF1-TAND from yeast. Yeast TAF1-TAND binding is more extensive involving also the convex surface of TBP (Table 5).
+
+**Table 5.**
+ Interaction surfaces in TBP complexes
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Interactor</th>
+      <th>Interface (Å2)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TBP dimer</td>
+      <td>3010.2</td>
+    </tr>
+    <tr>
+      <td>DNA</td>
+      <td>4020.1</td>
+    </tr>
+    <tr>
+      <td>TAF1-TAND (D. melanogaster)</td>
+      <td>3287.8</td>
+    </tr>
+    <tr>
+      <td>TAF1-TAND (Yeast)</td>
+      <td>7483.1*</td>
+    </tr>
+    <tr>
+      <td>Mot1 (E. cuniculi)</td>
+      <td>4300.0</td>
+    </tr>
+    <tr>
+      <td>TAF11/TAF13</td>
+      <td>3305.2</td>
+    </tr>
+  </tbody>
+</table>
+
+_Calculated with PyMol v1.8.2.0 (www.pymol.org).*Includes TAND1 and TAND2._
+
 Holo-TFIID is thought to exist in distinct structural states, based on cryo-EM analyses (Cianfrocco et al., 2013; Louder et al., 2016). In the canonical state, TAF1 is proposed to associate via its TAND domain to the DNA-binding surface of TBP thereby inhibiting TBP/TFIID binding to TATA-box containing core promoter DNA. In the activated state, TFIID was proposed to undergo major conformational rearrangements, likely involving interactions with transcriptional activators, thus unmasking TBP to promote DNA binding stabilized by TFIIA initiating transcription. Our results suggest that, in TFIID, several distinct TBP/TAF interactions exist, which are formed to forestall unwanted TFIID/DNA interactions which could otherwise lead for instance to cryptic transcription initiation on genomic regions that do not contain promoter elements. In addition to the TAF1-dependent inhibited canonical state, we propose an alternative inhibitory TFIID state in which the TAF11/TAF13 HF pair blocks TBP from binding TATA-box containing promoter DNA (Figure 7). This alternative inhibited state may serve as a further point of transcriptional control, possibly depending on promoter context or additional gene regulatory factors bound. Our results imply that, in a given TFIID complex, the TAF1-dependent and the TAF11/TAF13 HF pair-dependent TBP-blocking activities are mutually exclusive, but they may compete with each other to ascertain full blocking activity. Interestingly, however, it appears that this TAF11/TAF13 HF pair-dependent TBP binding/blocking activity is essential/required for normal TFIID function, because when we interfered in the TBP binding through mutating the CTID, yeast growth was compromised at the non-permissive conditions. At the same time, TFIID integrity was not compromised by the mutations. It is not clear at the moment whether or not the TAF1-dependent and the TAF11/TAF13 HF pair-dependent TBP blocking activities are really competing with each other, or would be simply part of a step-wise TFIID conformational change, or ‘activation’, process that would allow TFIID to bind to DNA only when open promoter structures would become available. Further experiments will be needed to answer these exciting questions. Transcription activators and chromatin remodeling factors may direct inhibited TFIID to specific promoters, which could be poised to be transcribed by histone H3K4 trimethylation, and alleviate the TBP-blocking through TAF-interactions or by TAF-chromatin mark interactions. Alternatively, it is conceivable that once TFIID is brought to a promoter by interactions with transcription activators and positive chromatin marks (i.e. histone H3K4me3), DNA and TFIIA together may synergize to liberate the TATA-box-binding surface of TBP from the inhibitory TAF-interactions.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/30395/elife-30395-fig7-v2.jpg)
 
-**Figure 7.:** . TFIID is thought to exist in an inhibited ‘canonical’ state with TAF1-TAND bound to TBP’s DNA binding surface (bottom left). Activated states of TFIID (right) bind promoter DNA stabilized by TFIIA (Cianfrocco et al., 2013; Louder et al., 2016; Papai et al., 2010). Our results suggest a novel, alternative TFIID inhibited state comprising TAF11/TAF13/TBP (top left). TFIID is shown in a cartoon representation based on previous EM studies (Cianfrocco et al., 2013; Louder et al., 2016; Papai et al., 2010). TFIID lobes A, B and C are indicated. TAF11/TAF13 are placed in lobe A as suggested by immune-labeling analysis (Leurent et al., 2002). Promoter DNA is colored in grey.
+**Figure 7.:** TFIID is thought to exist in an inhibited ‘canonical’ state with TAF1-TAND bound to TBP’s DNA binding surface (bottom left). Activated states of TFIID (right) bind promoter DNA stabilized by TFIIA (Cianfrocco et al., 2013; Louder et al., 2016; Papai et al., 2010). Our results suggest a novel, alternative TFIID inhibited state comprising TAF11/TAF13/TBP (top left). TFIID is shown in a cartoon representation based on previous EM studies (Cianfrocco et al., 2013; Louder et al., 2016; Papai et al., 2010). TFIID lobes A, B and C are indicated. TAF11/TAF13 are placed in lobe A as suggested by immune-labeling analysis (Leurent et al., 2002). Promoter DNA is colored in grey.
 
 The general roles of individual TAFs and the holo-TFIID complex are increasingly better understood, the mechanisms by which the cell assembles this essential multiprotein complex, however, remains largely enigmatic. The existence of discrete TFIID subassemblies containing a subset of TAFs, such as nuclear core-TFIID and the TAF2/TAF8/TAF10 complex present in the cytoplasm, provides evidence that holo-TFIID may be assembled in a regulated manner in the nucleus from preformed submodules (Bieniossek et al., 2013; Gupta et al., 2016; Trowitzsch et al., 2015). We analyzed TAF11-containing complexes by co-IP experiments from the cytoplasm and the nucleus of HeLa cells. In cytosolic co-IPs, we identified the TAF11/TAF13 histone fold pair, suggesting that this TFIID submodule may also be preformed in the cytoplasm (Figure 5). Note, however, that this cytoplasmic TAF11/TAF13 building block did not contain detectable amounts of TBP in our experiments, suggesting that trimeric TAF11/TAF13/TBP, within TFIID or as a discrete TFIID submodule, would be formed in the nucleus. Interestingly, we also identified TAF7 associated with TAF11/TAF13 in the cytoplasm, hinting at putative novel interactions between TAF11/TAF13 and TAF7. TAF1 forms stable complexes with both TAF7 and TBP (Gupta et al., 2016). We speculate that cytoplasmic TAF7/TAF11/TAF13 may represent an assembly intermediate toward a TAF1/TAF7/TAF11/TAF13/TBP module, which may integrate into a core-TFIID and TAF2/TAF8/TAF10 containing ‘8TAF’ assembly (Trowitzsch et al., 2015) in the formation pathway to the complete nuclear holo-TFIID complex. In this TAF1/TAF7/TAF11/TAF13/TBP module, TBP would be tightly bound to either TAF1 or TAF11/TAF13, which could serve to ascertain that this putative TFIID submodule is efficiently blocked from any potentially detrimental interactions with DNA until holo-TFIID formation is completed.
 
@@ -119,7 +946,255 @@ In the nuclei of human cells, IPs utilizing antibodies against several different
 
 ## Materials and methods
 
-## DNA constructs
+**Key resource table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Homo Sapiens TAF11)</td>
+      <td>TAF11</td>
+      <td>This paper</td>
+      <td>TAF11_uniprot:Q15544</td>
+      <td>Synthesized by Genescript and cloned with his-tag as described in methods.</td>
+    </tr>
+    <tr>
+      <td>gene (Homo Sapiens TAF13)</td>
+      <td>Taf13 (WT; Mutant A; Mutant B)</td>
+      <td>This paper</td>
+      <td>TAF13_uniprot:Q15543</td>
+      <td>Synthesized by Genescript and cloned with hisTag as described in methods.</td>
+    </tr>
+    <tr>
+      <td>gene (Homo Sapiens TBP)</td>
+      <td>TBP;TBPc</td>
+      <td>This paper</td>
+      <td>TBP_uniprot:P20226</td>
+      <td>Synthesized by Genescript and cloned with hisTag as described in methods.</td>
+    </tr>
+    <tr>
+      <td>gene (Homo Sapiens TAF1)</td>
+      <td>TAF1; TAF1_TAND</td>
+      <td>This paper</td>
+      <td>TAF1_uniprot:P21675</td>
+      <td>Synthesized by Genescript and cloned with MBP tag as described in methods.</td>
+    </tr>
+    <tr>
+      <td>gene (Homo Sapie TFIIAαβ)</td>
+      <td>TFIIA; TFIIAαβ</td>
+      <td>This paper</td>
+      <td>TFIIAαβ_unirprot: P52655</td>
+      <td>Synthesized by Genescript and cloned with his tag as described in methods.</td>
+    </tr>
+    <tr>
+      <td>gene (Homo Sapiens TFIIAγ)</td>
+      <td>TFIIA; TFIIAγ</td>
+      <td>This paper</td>
+      <td>TFIIAγ_uniprot: P52657</td>
+      <td>Synthesized by Genescript and cloned with his tag as described in methods.</td>
+    </tr>
+    <tr>
+      <td>gene (Saccharomyces cerevisiae Taf13)</td>
+      <td>Taf13 (WT; Mutant A; Mutant B)</td>
+      <td>This paper</td>
+      <td>TAF13_uniprot:P11747</td>
+      <td>Synthesized by Genescript and cloned with hisTag as described in methods.</td>
+    </tr>
+    <tr>
+      <td>strain, strain background is BY4741</td>
+      <td>TSA797</td>
+      <td>EuroSCARF SRD GmbH, Germany</td>
+      <td>Y41183</td>
+      <td>Tested for growth at permissive and non-permissive temperatures exhibiting expected phenotype.</td>
+    </tr>
+    <tr>
+      <td>strain, strain background is BY4741</td>
+      <td>TSA636</td>
+      <td>EuroSCARF SRD GmbH</td>
+      <td>Y41075</td>
+      <td>Tested for growth at permissive and non-permissive temperatures exhibiting expected phenotype.</td>
+    </tr>
+    <tr>
+      <td>strain, strain background</td>
+      <td>Taf13-AID auxin- inducible degron strain</td>
+      <td>Warfield et al., 2017</td>
+      <td></td>
+      <td>Prof. Steven Hahn Lab (http://research.fhcrc.org/hahn/en.html)</td>
+    </tr>
+    <tr>
+      <td>cell line (Spodoptera frugiperda 21)</td>
+      <td>Sf21</td>
+      <td>Invitrogen, Carlsbad, CA, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Henrietta Lachs)</td>
+      <td>HeLa</td>
+      <td>Mycoplasma-free HeLa cells obtained from Betty Heller, IGBMC cell line resource www.igbmc.fr</td>
+      <td></td>
+      <td>The cell line used was Hela WS, also called HeLa S3 or HeLa CCL-2.2 (RRID:CVCL_0058). The STR Profile report (SOH32553) stated that the "submitted sample (STRA0021) is an exact match to ATCC cell line HeLa CCL- 2.2. The mycoplasma contamination of this cell line is regularly tested using the VenorTMGeM Mycoplasma Detection Kit (from Sigma Aldrich,Catalog Number MP0025). The used cells were mycoplasma free.</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-HA antibody</td>
+      <td>Sigma Aldrich</td>
+      <td>H6908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-Taf5</td>
+      <td>From Prof Tony Weil, Vanderbuilt University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-Taf6</td>
+      <td>From Prof Tony Weil, Vanderbuilt University</td>
+      <td></td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-Taf8</td>
+      <td>From Prof Tony Weil, Vanderbuilt University_</td>
+      <td></td>
+      <td>Dilution 1:2000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-Taf11</td>
+      <td>From Prof Tony Weil, Vanderbuilt University</td>
+      <td></td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-TBP</td>
+      <td>From Prof Tony Weil, Vanderbuilt University_</td>
+      <td></td>
+      <td>Dilution 1:2000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Goat anti-rabbit HRP</td>
+      <td>Thermo Fisher Scientific Inc.</td>
+      <td>31463</td>
+      <td>Dilution 1:10000</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>MultiBac system</td>
+      <td>Berger et al. (2004)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>MutiBacTAG system</td>
+      <td>Koehler et al. (2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>DiAzKs</td>
+      <td>Koehler et al. (2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>XDS</td>
+      <td>Kabsch, 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>PHASER</td>
+      <td>McCoy (2007)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>CCP4 suite</td>
+      <td>Winn et al. (2011)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>ATSAS</td>
+      <td>Petoukhov et al. (2012)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MSCovert</td>
+      <td>Kessner et al. (2008)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Xi software</td>
+      <td>ERI Edinburgh</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>HADDOCK</td>
+      <td>de Vries et al. (2010)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MassLynx</td>
+      <td>Waters</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Mass Hunter</td>
+      <td>Agilent Technologies Inc.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>HD Examiner</td>
+      <td>Sierra Analytics Inc.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DNA for EMSA</td>
+      <td>AdMLP TATA-DNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Synthesized by BioSpring GmbH</td>
+    </tr>
+  </tbody>
+</table>
+
+### DNA constructs
 
 TAF11, TAF13 and TAF1-TAND were cloned in MultiBac baculovirus/insect cell transfer plasmids (Berger et al., 2004; Fitzgerald et al., 2006) and TBPfl, TBPc and TFIIAs-c expression constructs were cloned in E. coli expression plasmids. Constructs for genetic code expansion using the MultiBacTAG system were generated by PCR as described (Koehler et al., 2016). All constructs were verified by DNA sequencing.
 
@@ -131,53 +1206,53 @@ TBP full-length (UniProt accession number P20226) was synthesized (Genscript, Ne
 
 The TAF1-TAND coding sequence (AA 26–168; UniProt accession number P21675) was cloned into a modified pUCDM vector coding for an engineered N-terminal TEV-cleavable maltose-binding protein (MBP) tag using sequence and ligation-independent cloning (SLIC) (Li and Elledge, 2007).
 
-## Preparation of TAF11/TAF13 complex
+### Preparation of TAF11/TAF13 complex
 
 The human TAF11/TAF13 complex was co-expressed in Sf21 insect cells using the MultiBac system (Berger et al., 2004). DNA encoding for an N-terminal hexa-histidine tag and a protease cleavage site for tobacco etch virus (TEV) NIa protease was added to the 5’ end of the TAF11 open-reading frame and cloned into pFL plasmid (Berger et al., 2004). Cells were resuspended in Talon Buffer A (25 mM Tris pH 8.0, 150 mM NaCl, 5 mM imidazole with complete protease inhibitor (Roche Molecular Biochemicals). Cells were lysed by freeze-thawing (three times), followed by centrifugation at 40,000 g in Ti70 rotor for 60 min to clear the lysate. TAF11/TAF13 complex was first bound to talon resin, pre-equilibrated with Talon Buffer A, followed by washes with Talon Buffer A, then Talon Buffer HS (25 mM Tris pH 8.0, 1M NaCl, 5 mM imidazole and complete protease inhibitor) and then again Talon Buffer A. TAF11/TAF13 complex was eluted using Talon Buffer B (25 mM Tris pH 8.0, 150 mM NaCl, 200 mM imidazole and complete protease inhibitor). Fractions containing the TAF11/TAF13 complex were dialyzed overnight against HiTrapQ Buffer A (50 mM Tris pH 8.0, 150 mM NaCl, 5 mM β-ME and complete protease inhibitor). Complex was further purified using ion exchange chromatography (IEX) with a HiTrapQ column pre-equilibrated with HiTrapQ Buffer A. After binding, column was washed with HiTrapQ Buffer A and TAF11/TAF13 eluted using a continuous gradient of HiTrapQ Buffer B (50 mM Tris pH 8.0, 1M NaCl, 5 mM β-ME and complete protease inhibitor) from 0% to 50%, followed by a step gradient to 100%. The complex was further purified by size exclusion chromatography (SEC) with a SuperdexS75 10/300 column in SEC buffer (25 mM Tris pH 7.5, 300 mM NaCl, 1 mM EDTA, 1 mM DTT and complete protease inhibitor). Mutants of TAF13 were generated by self-SLIC reaction (Haffke et al., 2013) and complexes expressed and purified as wild-type.
 
-## Preparation of TBP
+### Preparation of TBP
 
 Full-length human TBP with an N-terminal oligo-histidine tag was expressed in E. coli BL21 (DE3) STAR cells at 30°C. Cells were lysed in Talon Buffer A by using a French press. Lysate was cleared by centrifugation at 40,000 g for 60 min. TBPfl was eluted from TALON resin with Talon Buffer B using a continuous gradient. The tag was removed by TEV protease cleavage during dialysis overnight into Dialysis Buffer (25 mM Tris pH 8.0, 300 mM NaCl, 5 mM β-ME) and a reverse IMAC step was used to remove uncleaved protein. TBPfl was polished using a SuperdexS75 16/60 equilibrated in SEC Buffer. The conserved TBP core (TBPc) was expressed in E. coli Rosetta (DE3) cells at 18°C and purified as described for TBPfl.
 
-## Preparation of double-stranded TATA-box containing promoter DNA substrate
+### Preparation of double-stranded TATA-box containing promoter DNA substrate
 
 AdMLP) TATA-DNA was prepared from synthetic olgonucleotides d(ctgctataaaaggctg) and d(cagccttttatagcag) (BioSpring GmbH) by mixing the complementary strands in equimolar amounts in Annealing Buffer (10 mM Tris pH 8.0, 50 mM KCl, 5 mM MgCl2), heating to 96°C for 2 min and slow-cooling to room temperature.
 
-## Design and production of TFIIAs-c
+### Design and production of TFIIAs-c
 
 A construct encoding human TFIIA was prepared by structure-based design starting from the TFIIA/TBP/DNA structure (PDB ID 1NVP) by introducing a linker (L1) with sequence DGKNTANSANTNTVP between the TFIIA γ chain and the α chain. Similarly, a second linker (L2) with sequence SRAVDGELFDT was introduced connecting the α chain with the β chain giving rise to a single-chain TFIIAs-c construct γ-L1-α-L2-βencompassing 240 amino acid residues in total. The gene encoding for TFIIAs-c was cloned in a pET28a plasmid resulting in frame with a C-terminal hexa-histidine tag. TFIIAs-c was expressed in E. coli BL21 (DE3) cells at 18°C. Cells were lysed using a French press in Binding Buffer (20 mM TrispH 7.4, 150 mM NaCl and complete protease inhibitor). The lysate was cleared by centrifugation at 40,000 g for 45 min, and loaded on a Talon affinity column. After 10 column volumes of washing with Binding Buffer, TFIIAs-c was eluted using Elution Buffer (20 mM Tris pH 7.4, 150 mM NaCl and 250 mM imidazole). Eluted protein was dialyzed overnight in 20 mM Tris pH 7.4, 150 mM NaCl, 0.5 mM EDTA and 1 mM DTT and loaded onto a Heparin column. TFIIAs-c was eluted with HS Buffer (20 mM Tris pH 7.4, 1M NaCl, 0.5 mM EDTA and 1 mM DTT) applying a gradient, and polished by SEC with a Superdex75 column equilibrated in SEC Buffer 2 (20mM Tris pH 7.4, 150 mM NaCl, 0.5 mM EDTA and 1 mM DTT). Purified TFIIAs-c protein was aliquoted and stored in Storage Buffer (20 mM Tris pH 8.0, 1 mM DTT, 0.5 mM EDTA and 150 mM NaCl) at −80°C.
 
-## X-ray crystallography
+### X-ray crystallography
 
 Large crystals of TFIIAs-c were obtained by vapor diffusion at room temperature from a protein solution concentrated to 15 mg/ml in Storage Buffer and equilibrated against 20 mM Tris pH 8.0 with 25 mM NaCl in the reservoir. Best crystals were obtained by streak-seeding with the TFIIAs-c crystals spontaneously formed in the Eppendorf tube used for storing the protein. Crystals were harvested and mounted using perfluoropolyether (PFO-X175/08) as cryo-protectant. X-ray diffraction data were collected using a Pilatus 6M detector at beamline ID29 at the European Synchrotron Radiation Facility (ESRF). TFIIAs-c crystals diffracted to 2.4 Å resolution. Data were processed using XDS (Kabsch, 2010). The structure was determined by molecular replacement (MR) utilizing software PHASER (McCoy, 2007), with the TFIIA crystal coordinates from the human TBP/TFIIA/TATA-DNA structure (Bleichenbacher et al., 2003) used as a search model. Iterative cycles of refinement and model building were performed using REFMAC5 and COOT from the CCP4 suite (Winn et al., 2011). Residues 2–210 could be modeled unambiguously in the electron density maps. Refinement converged at R and Rfree values of 0.18 and 0.24, respectively. Refinement statistics are provided in Table 1. TFIIAs-c coordinates and structure factors were submitted to the PDB (5M4S).
 
-## Band shift assay
+### Band shift assay
 
 Samples for electrophoretic mobility shift assay were prepared by mixing annealed dsDNA (2 μM) with TBPc (4 μM) or TBPfl (4 μM), respectively, and TFIIAs-c (6 μM) in EMSA Reaction Buffer (10 mM Tris pH 8.0, 60 mM KCl, 10 mM MgCl2, 10% glycerol, 2.5 mM DTT). Purified TAF11/TAF13 was added to aliquots of this mix at increasing concentrations (2μM to 64μM) followed by 1.5 hr incubation on ice. Samples were analyzed by non-denaturing 5% polyacryl-amide gel electrophoresis (PAGE) using EMSA Running Buffer (25 mM Tris, 190 mM Glycine, 5 mM Mg Acetate, pH 8.0). Gels were stained with ethidium bromide (EtBr).
 
-## Preparation of TAF11/TAF13/TBP complex
+### Preparation of TAF11/TAF13/TBP complex
 
 TAF11/TAF13 (wild-type and mutants) was mixed with TBP in a 1:1.1 molar ratio (40 µM total protein) in Complex Reaction Buffer (25 mM Tris pH 8.0, 300 mM NaCl, 1 mM EDTA, 1 mM DTT, Leupeptin, Pepstatin and complete protease inhibitor) and incubated on ice for 90 min, followed by SEC with a SuperdexS200 10/300 column pre-equilibrated in Reaction Buffer.
 
-## Analytical ultracentrifugation
+### Analytical ultracentrifugation
 
 Purified TAF11/TAF13/TBP complex was analyzed by analytical ultracentrifugation (AUC) in an An-60Ti rotor in a Beckman XL-I analytical ultracentrifuge (Beckman Coulter, Brea, CA) at 42,000 rpm at 10°C for 16 hr. Data were analyzed with software Sedfit (Schuck, 2000).
 
-## Native mass spectrometry
+### Native mass spectrometry
 
 Proteins and complexes were buffer exchanged into 150 mM ammonium acetate pH7.5 before MS analysis using Vivaspin 10 kDa MWCO (Sartorius, Goettingen, Germany). 2 ul of the protein solution was then nano-electrosprayed from a gold-coated borosilicate glass capillaries made in the Robinson lab (Hernández and Robinson, 2007). All mass spectrometry measurements were performed on a QToF instrument optimized for high mass measurements in positive ion mode. MS spectra were recorded at capillary and cone voltages of 1.7 kV and 80 V, respectively. Other instrument parameters were ToF pressure 1.76 × 106 mbar and analyser pressure of 2 × 104 mbar. For the collision-induced dissociation the collision energy was increased up to 100 V to induce dissociation. All mass spectra were calibrated using an aqueous solution of caesium iodide and data were processed using MassLynx software V4.1.
 
-## TAF1-TAND production and competition assay
+### TAF1-TAND production and competition assay
 
 Human TAF1-TAND (Liu et al., 1998; Mal et al., 2004) containing an N-terminal maltose-binding protein (MBP) tag was expressed in Sf21 insect cells using MultiBac (Berger et al., 2004). Cells were lysed in MBP Binding Buffer (20 mM Tris pH 8.0, 300 mM NaCl, 1 mM EDTA, 1 mM DTT, complete protease inhibitor) by freeze-thawing, followed by centrifugation at 20,000 rpm in a JA25.5 rotor for 45 min. MBPTAF1-TAND was bound to amylose resin pre-equilibrated in MBP Binding Buffer, followed by extensive washing (20 column volumes). MBPTAF1-TAND loaded resin was incubated with an excess of preformed TAF11/TAF13/TBP complex for 60 min at 4°C. The column was washed and flow-through as well as wash fractions were collected. Bound protein(s) were eluted using MBP Elution buffer (20 mM Tris pH 8.0, 300 mM NaCl, 1 mM EDTA, 1 mM DTT, 10 mM Maltose, complete protease inhibitor). Samples were analyzed by SDS-PAGE followed by staining with Coomassie Brilliant Blue (Sigma Aldrich).
 
-## Small-angle X-ray scattering experiments
+### Small-angle X-ray scattering experiments
 
 Small-angle X-ray scattering (SAXS) experiments were carried out at the ESRF BioSAXS beamline BM29 (Pernot et al., 2013). 30 μl of each of purified TAF11/TAF13/TBP, TAF11/TAF13 and TBP at a range of concentrations (Table 3) and SAXS Sample Buffer (25 mM Tris pH 8.0, 300 mM NaCl, 1 mM EDTA, 1 mM DTT and complete protease inhibitor) were exposed to X-rays and scattering data collected using the robotic sample handling available at the beamline. Ten individual frames were collected for every exposure, each 2 s in duration, using the Pilatus 1M detector (Dectris AG). Data were processed with the ATSAS software package (Petoukhov et al., 2012). Individual frames were processed automatically and independently within the EDNA framework (Incardona et al., 2009), yielding individual radially averaged curves of normalized intensity versus scattering angle S = 4πSinθ/λ. Additional data reduction within EDNA utilized the automatic data processing tools of ATSAS software package, to combine timeframes, excluding any data points affected by aggregation induced by radiation damage, yielding the average scattering curve for each exposure series. Matched buffer measurements taken before and after every sample were averaged and used for background subtraction. Merging of separate concentrations and further analysis steps were performed manually using PRIMUS (Petoukhov et al., 2012). Forward scattering (I(0)) and radius of gyration (Rg) were calculated from the Guinier approximation, to compute the hydrated particle volume using the Porod invariant and to determine the maximum particle size (Dmax) from the pair distribution function computed by GNOM (Petoukhov et al., 2012). 40 ab initio models were calculated for each sample, using DAMMIF (Petoukhov et al., 2012), and then aligned, compared and averaged (evidencing minimal variation) using DAMAVER (Petoukhov et al., 2012). The most representative model for TAF11/TAF13/TBP and TAF11/TAF13 selected by DAMAVER were compared to each other as well as the known structure of TBP, with overlays of the resulting models generated in PyMOL. The fits to the experimental data of the models and the theoretical scattering of the calculated structures were generated with CRYSOL (Petoukhov et al., 2012).
 
-## Cross-linking/mass spectrometry (CLMS) experiments
+### Cross-linking/mass spectrometry (CLMS) experiments
 
-## BS3 cross-linking
+#### BS3 cross-linking
 
 Purified TAF11/TAF13/TBP and TAF11/TAF13 complexes were cross-linked separately by BS3 at complex/BS3 ratio of 1:25 [w/w] in Cross-linking Buffer (25 mM HEPES, pH 8.0, 300 mM NaCl, 1 mM DTT, 1 mM EDTA and complete protease inhibitor) for 2 hr on ice. The reaction was quenched by adding saturated ammonium bicarbonate solution followed by incubation on ice (45 min). Cross-linked samples were then further purified by injecting on a SuperdexS200 10/300 column. Peak fractions containing purified cross-linked samples were concentrated using pin concentrators (Amicon) and separated by SDS-PAGE using a NuPAGE 4–12% bis-Tris gel (Thermo Fisher Scientific).
 
@@ -185,35 +1260,35 @@ The gel bands corresponding to cross-linked complexes were reduced, alkylated an
 
 Peptides were analyzed using a high/high strategy (Chen et al., 2010): both MS spectra and MS2 spectra were acquired in the Orbitrap. FTMS full scan spectra were recorded at 100,000 resolution. The eight highest intensity peaks with a charge state of three or higher were selected in each cycle for fragmentation. The fragments were produced using CID with 35% normalized collision energy and detected by the Orbitrap at 7500 resolution. Dynamic exclusion was set to 90 s and repeat count was 1. Peak lists were generated by MSCovert (ProteoWizard version 3.0.6618) (Kessner et al., 2008).
 
-## DiAzKs cross-linking
+### DiAzKs cross-linking
 
 An unnatural amino acid, DiAzKs, was introduced at K34 position of TAF13 using genetic code expansion (GCE) we implemented recently in our baculovirus/insect cell system (MultiBacTAG) (Koehler et al., 2016). TAF11/TAF13-K34DiAzKs was purified similarly as wild type. Briefly, TAF11/TAF13-K34DiAzKs (as well as wild type) and TBP were mixed in 1:1.25 molar ratio in Incubation Buffer (25 mM Tris, pH 8.0, 300 mM NaCl, 1 mM DTT, 1 mM EDTA and complete protease inhibitor) and incubated on ice for 2 hr. Reactions were then split into two aliquots. One aliquot was UV irradiated for 15 min on ice using a 345 nm filter with an approximately 40 cm distance to the 1000 W lamp. Cross-linked samples were then separated on SDS-PAGE using a NuPAGE 4–12% bis-Tris gel (Thermo Fisher Scientific). Gel bands were processed as above for BS3 CLMS.
 
 Peptides were analyzed on an Orbitrap Fusion Lumos Tribrid mass Spectrometer (Thermo Fisher Scientific) coupled to a Dionex UltiMate 3000 RSLC nano HPLC system using a 75 µmx50cm PepMap EASY-Spray column (Thermo Fisher Scientific). Eluted peptides were directly sprayed into the mass spectrometer through EASY-Spray source (Thermo Fisher Scientific) and analyzed using a high/high strategy (Chen et al., 2010): both MS spectra and MS2 spectra were acquired in the Orbitrap. MS1 spectra were recorded at 120,000 resolution and peptides with charge state of 3 to 8 were selected for fragmentation at top speed setting. The fragments were produced using HCD with 30% normalized collision energy and detected by the Orbitrap at 15000 resolution. Dynamic exclusion was set to 60 s and repeat count was 1. Peak lists were generated by MaxQuant (version 1.5.3.30) (Cox and Mann, 2008) at default parameters except for ‘top MS/MS peaks per 100 Da’ being set to 100. Cross-linked peptides were matched to spectra using Xi software (ERI, Edinburgh).
 
-## Hydrogen-deuterium exchange/mass spectrometry
+### Hydrogen-deuterium exchange/mass spectrometry
 
 Hydrogen-deuterium exchange/mass spectrometry (HDX-MS) experiments were fully automated using a PAL autosampler (CTC Analytics). This controlled the start of the exchange and quench reactions, the proteolysis temperature (4°C), the injection of the deuterated peptides, as well as management of the injection and washing valves; it also triggered the acquisition of the mass spectrometer and HPLC and UPLC pumps. A Peltier-cooled box (4°C) contained two Rheodyne automated valves, a desalting cartridge (Trap Acquity UPLC Protein BEH C18 2.1 × 5 mm,Waters) and a UPLC column (Acquity UPLC BEH C18 1.7 µm 1 × 100 mm, Waters). HDX-MS reactions were carried out using either TAF11/TAF13 or TBP alone or in complex at a concentration of 20 μM. Deuteration was initiated by a 5-fold dilution of the protein samples (10 μl) with the same buffer in D2O (40 μl). The proteins were deuterated for 15 s or 2 min at 4°C. The exchange was quenched using 50 μl of 200 mM glycine-HCl, pH 2.5 at 4°C. The proteins or complexes were digested online with immobilized porcine pepsin (Sigma) and recombinant nepenthesin-1. The peptides were desalted for 6 min using a HPLC pump (Agilent Technologies) with 0.1% formic acid in water, at a flow rate of 100 μl/min. Desalted peptides were separated using a UPLC pump (Agilent Technologies) at 50 μl/min for 10 min with 15–70% gradient B (Buffer A: 0.1% formic acid in water; Buffer B: 0.1% formic acid in 95% acetonitrile), followed by 1 min at 100% B. The peptide masses were measured using an electrospray-TOF mass spectrometer (Agilent 6210) in the 300–1300 m/z range. Each deuteration experiment was conducted in triplicate. The Mass Hunter (Agilent Technologies) software was used for data acquisition. The HD Examiner software (Sierra Analytics) was used for HDX-MS data processing. Identification of peptides generated by the digestion was done as described previously (Giladi et al., 2016). Different proteases (pepsin, nepenthesin-1, nepenthesin-2, rhizopuspepsin) or their combinations were tested for protein digestion with pepsin-nepenthesin-1 pair providing the best digestion parameters and sequence coverage.
 
-## Integrative multiparameter-based model building and refinement
+### Integrative multiparameter-based model building and refinement
 
 Initial models of the two component structures (TAF11/TAF13, TBP) were taken from the PDB (1BH8 and 1CDW) (Birck et al., 1998; Nikolov et al., 1996). 1BH8 was extended to include a helix structure missing from the complete histone-fold domain as described before (Birck et al., 1998). The structure of the complex was constructed in a two-stage workflow. Initially, a model of the structured core of the complex was constructed by rigid body docking using the HADDOCK webserver (de Vries et al., 2010). The resulting complex structures and their scores were visually analyzed against the SAXS data to select the highest scoring structure that fit within the SAXS envelopes.
 
 The selected complex with the highest scores was then refined integrating the cross-linking data. The HADDOCK complex was used as an input to MODELLER 9.14 (Webb and Sali, 2014) with the complete sequences (including loop structures). Observed cross-links were included as restraints in the refinement with a mean distance of 11.4 Å. Refinement was performed iteratively until more than 90% of all distance constraints could be accommodated while maintaining the fit to the SAXS envelope.
 
-## Cell growth experiments
+### Cell growth experiments
 
 Yeast Taf13 wild-type (WT), as well as Mutant A and Mutant B, were cloned along with native promoters into the LEU2 (auxotrophic marker) containing plasmid pRS415 (Genscript Corp., Piscataway, NJ) by using the BamHI and NotI restriction enzyme sites. Constructs thus generated were transformed into yeast strain BY4741 (comprising endogenous wild-type Taf13) as well as the temperature-sensitive (ts) yeast strains TSA797 (ts taf13) and TSA636 (ts taf13) (EuroSCARF, SRD GmbH, Germany). Transformed yeast containing the plasmids were restreaked onto selective media and grown at permissive (30°C) or non-permissive (37°C) temperatures, and plates imaged. To determine growth rates, ts strains transformed with empty vector or Taf13 expression plasmids were grown in liquid media at 37°C. In a separate experiment, the above constructs were transformed into a Taf13-AID auxin-inducible degron strain (Warfield et al., 2017), and grown at 30°C in liquid media supplemented with 500 μM indole-3-acetic acid (IAA) or an equivalent volume of DMSO (used to prepare IAA stocks). Empty degron strain was used as a negative control. Absorbance at 600 nm was measured every hour for all cell growth experiments. Three (ts strains) or two (degron strain) independent experiments were performed and data were normalized against the first time point taken. Average absorbance was plotted against time, standard errors of mean (SEM) were calculated over each data point.
 
 For spot assays, overnight cultures of empty degron strain as well as degron strain transformed with Taf13 wild-type and mutant expression plasmids were washed and resuspended in milli-Q water to obtain identical densities. Serial 10-fold dilutions were spotted on solid media (YPD, or synthetic drop-out media -LEU) supplemented with 500 μM IAA or DMSO, and incubated at 30°C for 48–72 hr.
 
-## TFIID immunoprecipitation experiments
+### TFIID immunoprecipitation experiments
 
-## Yeast TFIID
+#### Yeast TFIID
 
 Yeast Taf13 wild-type (WT) as well as Mutant A and Mutant B, along with native promoters and a hemagglutinin (HA) tag at the C-terminus, were cloned into the LEU2 (auxotrophic marker) containing plasmid pRS415 (Genscript Corp., Piscataway, NJ). Constructs were transformed into yeast strain BY4741 (comprising endogenous wild-type Taf13). Yeast cells were grown in suspension culture at 30°C and harvested in mid log phase by centrifugation. The cells were then lysed in ice cold co-IP buffer (20 mM HEPES pH7.9, 200 mM Potassium Acetate, 10% glycerol, 0.1% NP40, 1 mM DTT and complete protease inhibitor) using glass bead beating at 4°C. The lysate was centrifuged at 13,000 for 15 min at 4°C. Samples were pre-cleared by mixing with protein A-Sepharose beads (Generone) for 60 min. Pre-cleared samples were then mixed with 2 μl of rabbit anti-HA antibody (1 mg/ml; Sigma) for 2 hr at 4°C. Next, 30 μl of protein A- Sepharose beads were used to capture protein complexes from each sample by mixing for 60 min at 4°C. Captured protein complexes on beads were washed 4 times with 1 ml ice cold co-IP buffer. Then, protein gel loading buffer was added to the beads followed by heating at 98°C for 5 min. Proteins were separated by SDS-PAGE (NuPAGE 4–12% bis-Tris gel, Thermo Fisher Scientific) and then transferred to PVDF membranes. Membranes were then used for Western Blot (WB) with polyclonal anti-Taf, anti-TBP and anti-HA antibodies. Goat anti-rabbit antibody conjugated to HRP substrate (Thermo Fisher Scientific) was used as secondary antibody. The membranes were developed with ECL WB detection reagent (Thermo Fisher Scientific).
 
-## Human TFIID
+#### Human TFIID
 
 HeLa cells were grown in suspension culture. 1011 cells were harvested by centrifugation and a nuclear extract was prepared according to a modified protocol (Dignam et al., 1983). Briefly, nuclei were prepared by resuspending the pellets in four packed cell volume (PCV) of 50 mM Tris, pH 7.9; 1 mM EDTA; 1 mM DTT and proteinase inhibitors and opening the cells with a Dounce-homogenizer. Nuclei were collected by centrifugation and lysed in 4 PCV of 50 mM Tris, pH 7.9; 25% glycerol; 500 mM NaCl; 0.5 mM EDTA; 1 mM DTT and protease inhibitors by powerful strokes. The lysate was centrifuged at 50,000 g for 20 min. The supernatant was filtered and proteins precipitating in 30% (w/v) (NH4)2SO4 were pelleted. They were resuspended in 50 mM Tris, pH 7.9; 20% glycerol; 100 mM KCl; 5 mM MgCl2; 1 mM DTT and dialyzed against the same buffer.
 
@@ -221,6 +1296,6 @@ For immunopreciptation. 200 µl protein G-Sepharose (Pharmacia) was incubated wi
 
 For analysis by mass spectrometry, samples were reduced, alkylated and digested with LysC and trypsin at 37°C overnight. They were then analyzed using an Ultimate 3000 nano-RSLC (Thermo Fischer Scientific) coupled in line with an Orbitrap ELITE (Thermo Fisher Scientific). Briefly, peptides were separated on a C18 nano-column with a linear gradient of acetonitrile and analyzed in a Top 20 CID (Collision Induced Dissociation) data-dependent mass spectrometry. Data were processed by database searching using SequestHT (Thermo Fisher Scientific) with Proteome Discoverer 1.4 software (Thermo Fisher Scientific) against the Human Swissprot database (Release 2013_04, 20225 entries). Precursor and fragment mass tolerance were set at 7 ppm and 0.5 Da, respectively. Trypsin was set as enzyme, and up to two missed cleavages were allowed. Oxidation (M) was set as variable modification, and Carbamidomethylation (C) as fixed modification. Peptides were filtered with a 5% FDR (false discovery rate) and rank 1. Proteins were identified with one peptide.
 
-## Accession codes
+### Accession codes
 
 Atomic coordinates and structure factors have been deposited in the Protein Data Bank (Source code 1, PDB ID 5M4S). Proteomics data have been submitted to PRIDE (Accession number PXD005676)

@@ -21,24 +21,24 @@
 
 ### Affiliations
 
-1. https://ror.org/00a2xv884 Institute of Immunology and Bone Marrow Transplantation Center, The First Affiliated Hospital, Zhejiang University School of Medicine Hangzhou China
-2. https://ror.org/00a2xv884 Zhejiang University School of Medicine Hangzhou China
-3. https://ror.org/00a2xv884 Liangzhu Laboratory, Zhejiang University Medical Center Hangzhou China
-4. https://ror.org/03rc6as71 Department of Hematology, Tongji Hospital, School of Medicine, Tongji University Shanghai China
-5. https://ror.org/03rc6as71 Shanghai Key Laboratory of Signaling and Disease Research, Frontier Science Center of Stem Cell Research, National Stem Cell Translational Resource Center, School of Life Sciences and Technology, Tongji University Shanghai China
-6. https://ror.org/00a2xv884 Laboratory Animal Center, Zhejiang University Hangzhou China
-7. https://ror.org/00a2xv884 Co-Facility Center, Zhejiang University School of Medicine Hangzhou China
-8. https://ror.org/059cjpv64 Department of Gastrointestinal Surgery, The Second Affiliated Hospital, Zhejiang University School of Medicine Hangzhou China
-9. https://ror.org/05gpas306 School of Basic Medical Sciences and Forensic Medicine, Hangzhou Medical College Hangzhou China
-10. https://ror.org/00a2xv884 MOE Key Laboratory of Biosystems Homeostasis & Protection and Zhejiang Provincial Key Laboratory for Cancer Molecular Cell Biology, Life Sciences Institute, Zhejiang University Hangzhou China
-11. https://ror.org/00a2xv884 Department of Orthopedics Surgery, The Second Affiliated Hospital, School of Medicine, Zhejiang University Hangzhou China
-12. https://ror.org/00a2xv884 Future Health Laboratory, Innovation Center of Yangtze River Delta, Zhejiang University Jiaxing China
+1. Institute of Immunology and Bone Marrow Transplantation Center, The First Affiliated Hospital, Zhejiang University School of Medicine Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+2. Zhejiang University School of Medicine Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+3. Liangzhu Laboratory, Zhejiang University Medical Center Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+4. Department of Hematology, Tongji Hospital, School of Medicine, Tongji University Shanghai China ([ROR:03rc6as71](https://ror.org/03rc6as71))
+5. Shanghai Key Laboratory of Signaling and Disease Research, Frontier Science Center of Stem Cell Research, National Stem Cell Translational Resource Center, School of Life Sciences and Technology, Tongji University Shanghai China ([ROR:03rc6as71](https://ror.org/03rc6as71))
+6. Laboratory Animal Center, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+7. Co-Facility Center, Zhejiang University School of Medicine Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+8. Department of Gastrointestinal Surgery, The Second Affiliated Hospital, Zhejiang University School of Medicine Hangzhou China ([ROR:059cjpv64](https://ror.org/059cjpv64))
+9. School of Basic Medical Sciences and Forensic Medicine, Hangzhou Medical College Hangzhou China ([ROR:05gpas306](https://ror.org/05gpas306))
+10. MOE Key Laboratory of Biosystems Homeostasis & Protection and Zhejiang Provincial Key Laboratory for Cancer Molecular Cell Biology, Life Sciences Institute, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+11. Department of Orthopedics Surgery, The Second Affiliated Hospital, School of Medicine, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+12. Future Health Laboratory, Innovation Center of Yangtze River Delta, Zhejiang University Jiaxing China ([ROR:00a2xv884](https://ror.org/00a2xv884))
 
 † Corresponding author
 
 ## Abstract
 
-FOXP3-expressing regulatory T (T reg ) cells play a pivotal role in maintaining immune homeostasis and tolerance, with their activation being crucial for preventing various inflammatory responses. However, the mechanisms governing the epigenetic program in T reg cells during their dynamic activation remain unclear. In this study, we demonstrate that CXXC-finger protein 1 (CXXC1) interacts with the transcription factor FOXP3 and facilitates the regulation of target genes by modulating H3K4me3 deposition. Cxxc1 deletion in T reg cells leads to severe inflammatory disease and spontaneous T cell activation, with impaired immunosuppressive function. As a transcriptional regulator, CXXC1 promotes the expression of key T reg functional markers under steady-state conditions, which are essential for the maintenance of T reg cell homeostasis and their suppressive functions. Epigenetically, CXXC1 binds to the genomic regulatory regions of T reg program genes in mouse T reg cells, overlapping with FOXP3-binding sites. Given its critical role in T reg cell homeostasis, CXXC1 presents itself as a promising therapeutic target for autoimmune diseases.
+FOXP3-expressing regulatory T (Treg) cells play a pivotal role in maintaining immune homeostasis and tolerance, with their activation being crucial for preventing various inflammatory responses. However, the mechanisms governing the epigenetic program in Treg cells during their dynamic activation remain unclear. In this study, we demonstrate that CXXC-finger protein 1 (CXXC1) interacts with the transcription factor FOXP3 and facilitates the regulation of target genes by modulating H3K4me3 deposition. Cxxc1 deletion in Treg cells leads to severe inflammatory disease and spontaneous T cell activation, with impaired immunosuppressive function. As a transcriptional regulator, CXXC1 promotes the expression of key Treg functional markers under steady-state conditions, which are essential for the maintenance of Treg cell homeostasis and their suppressive functions. Epigenetically, CXXC1 binds to the genomic regulatory regions of Treg program genes in mouse Treg cells, overlapping with FOXP3-binding sites. Given its critical role in Treg cell homeostasis, CXXC1 presents itself as a promising therapeutic target for autoimmune diseases.
 
 ## Introduction
 
@@ -52,41 +52,101 @@ Here, we demonstrate that CXXC1 interacts with FOXP3 and enhances the expression
 
 ## Results
 
-## FOXP3 binds regulatory loci primed for activation and repression in Treg cells
+### FOXP3 binds regulatory loci primed for activation and repression in Treg cells
 
 FOXP3-mediated gene expression is well recognized, with several studies highlighting its dual role as both a transcriptional activator and repressor (Fu et al., 2012; Marson et al., 2007; Ohkura et al., 2012; Ono et al., 2007; Zheng et al., 2007). However, the mechanisms by which FOXP3 regulates Treg-specific gene transcription via epigenetic modifications remain incompletely understood. To investigate these mechanisms, we employed CUT&Tag to generate genome-wide H3K4me3 maps in Treg cells. To complement this, we compared our data with an H3K27me3 ChIP-seq dataset from Wei et al., 2009 focusing on previously identified FOXP3-bound loci (Konopacki et al., 2019). This integrative analysis allowed us to identify FOXP3-dependent genes associated with either H3K4me3 (indicative of transcriptional activation) or H3K27me3 (indicative of repression) deposition. These findings provide insight into how FOXP3 modulates Treg cell function through epigenetic modifications.
 
 As expected, H3K4me3 was enriched at gene promoters (Figure 1—figure supplement 1A, B). A Venn diagram revealed overlap between FOXP3-binding sites and H3K4me3 peaks, with minimal overlap with H3K27me3 peaks (Figure 1A, B). The overlapping regions between FOXP3-binding sites and H3K4me3 or H3K27me3 peaks were predominantly located at promoters (Figure 1A, B). To elucidate FOXP3’s potential role as an epigenetic regulator, we compared H3K4me3 levels between FOXP3-positive Treg cells and FOXP3-negative conventional T cells (Tconv). Consistent with our hypothesis, H3K4me3 abundance was higher at Treg-specific gene loci (e.g., Tnfrsf18, Ctla4, Il2ra, and Nt5e) in Treg cells compared to Tconv cells (Figure 1C, Figure 1—figure supplement 1C). Notably, the selection of these loci was guided by prior studies identifying genes specifically associated with Treg cell function (Hill et al., 2007). This pattern of epigenetic remodeling robustly supports a model in which FOXP3 orchestrates Treg-specific transcriptional programs by selectively recruiting H3K4 trimethylation machinery to key regulatory gene promoters.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig1-v1.jpg)
+
+**Figure 1.:** (A) Venn diagram showing overlap of H3K4me3-enriched regions (this study) and FOXP3-binding sites Konopacki et al., 2019 in sorted CD4+YFP+Treg cells (left). Genomic distribution of overlapped peaks (right). Note that the overlapped peaks are predominantly enriched at promoters. (B) Venn diagram showing overlap of H3K27me3-enriched regions (Wei et al., 2009) and FOXP3-binding sites in Treg cells (left). Genomic distribution of overlapped peaks (right). Note that the overlapped peaks are predominantly enriched at promoters. (C) Representative genome browser view showing the enrichments of H3K4me3 and FOXP3 in Tconv or Treg cells. (D) Heatmap showing enrichment of H3K27me3, H3K4me3, and FOXP3 surrounding the transcription start site (TSS). Unsupervised k-means clustering was conducted on H3K27me3 and H3K4me3 signals. (E) Heatmap showing gene expression levels in Treg cells (RNA-sequencing [RNA-seq] data was obtained from Oh et al., 2017). The clusters were consistent as in C. (F) Gene Ontology (GO) pathway analysis of different clusters.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Genomic distribution of random and H3k4me3-enriched peaks in Treg cells. (B) Heatmap showing enrichment of H3K4me3 surrounding the transcription start site (TSS). The top panel of the profile plots shows the average CUT&Tag signals. (C) Heatmap showing H3K4me3 enrichment at Treg-specific gene promoter in Tconv and Treg cells. The top panel of the profile plots shows the average CUT&Tag signals. (D) Representative Genome Browser view showing RNA-sequencing (RNA-seq), FOXP3 binding, and H3K4me3/H3K27me3 enrichment in Treg cells.
+
 To further characterize these modifications, we clustered promoters into four groups based on the enrichment of H3K4me3 and H3K27me3. Clusters 1 and 3 showed strong enrichment of H3K4me3; Cluster 2 was enriched with H3K27me3; and Cluster 4 showed weak enrichment of both modifications. FOXP3 preferentially bound to the promoters of Clusters 1 and 3, which displayed high H3K4me3 levels (Figure 1D). Correspondingly, genes in these clusters exhibited high transcription levels, as shown by the reanalysis of previously published RNA-sequencing (RNA-seq) data (Oh et al., 2017; Figure 1E). In contrast, genes with H3K27me3 enrichment at their promoters were transcribed at low levels.
 
 Gene Ontology (GO) analysis of these four clusters revealed distinct functional roles. Cluster 1 was enriched in genes involved in mRNA processing, covalent chromatin modification, and histone modification, while Cluster 3 was enriched in genes related to DNA repair and mitochondrion organization (Figure 1F). Cluster 2, enriched with H3K27me3, was associated with the pattern specification process, whereas Cluster 4 showed no correlation with Treg cells. Notably, signature Treg cell genes such as Tnfrsf18, Nrp1, Stat5a, Lag3, Icos, and Pdcd1 were enriched in Clusters 1 and 3, showing strong H3K4me3 marks (Figure 1—figure supplement 1D). Conversely, genes like Hic1, Trp73, and Rnf157, associated with inflammatory responses, were enriched for H3K27me3 in Cluster 2 (Figure 1—figure supplement 1D). These findings collectively support the conclusion that FOXP3 contributes to transcriptional activation in Treg cells by promoting H3K4me3 deposition at target loci, while also regulating gene expression directly or indirectly through other epigenetic modifications.
 
-## CXXC1 interacts with FOXP3 and binds H3K4me3-enriched sites in Treg cells
+### CXXC1 interacts with FOXP3 and binds H3K4me3-enriched sites in Treg cells
 
 We conducted an enrichment analysis of known motifs at the overlapping peaks of FOXP3 ChIP-seq and H3K4me3 CUT&Tag in Treg cells to identify epigenetic factors that directly interact with FOXP3 to mediate chromatin remodeling and transcriptional reprogramming. Motif analysis of the overlapping peaks between FOXP3-binding sites and regions enriched in H3K4me3 revealed that, in addition to transcription factors, the most abundant motif associated with H3K4me3 was the epigenetic factor CXXC1 (Figure 2—figure supplement 1A). To investigate this further, we performed CUT&Tag for endogenous CXXC1 in Treg cells to examine the genome-wide co-occupancy of CXXC1 and FOXP3. Over half of these CXXC1-binding sites were located at promoter regions (Figure 2—figure supplement 1B). Additionally, CXXC1 exhibited strong binding at TSS and CGIs (Figure 2A, Figure 2—figure supplement 1C). As illustrated by the Venn diagram (Figure 2B), more than half of the FOXP3-bound genes and H3K4me3-enriched genes were also bound by CXXC1. Similarly, more than half of CXXC1 peaks were overlapped with FOXP3 peaks (Figure 2—figure supplement 1D). Furthermore, the CXXC1- and FOXP3-specific binding sites also demonstrated modest binding of FOXP3 and CXXC1, respectively (Figure 2C). These findings indicate that FOXP3 and CXXC1 share a substantial number of target genes in Treg cells. To confirm this interaction, we further validated the reciprocal immunoprecipitation of both endogenous and exogenous CXXC1 and FOXP3 (Figure 2D, Figure 2—figure supplement 1E). An immunofluorescence assay revealed predominant colocalization of CXXC1 with FOXP3 in the nucleus (Figure 2E). Overall, these results suggest that CXXC1 primarily functions as a coactivator of FOXP3-driven transcription in Treg cells.
 
-## Complete ablation of Cxxc1 in Treg cells leads to a fatal autoimmune disease
+![Figure 2.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig2-v1.jpg)
+
+**Figure 2.:** (A) Average CXXC1 CUT&Tag signals around genes in Treg cells. IgG was used as the control. (B) Venn diagrams showing the overlap of FOXP3-binding genes, CXXC1-binding genes, and H3K4me3-enriched genes in Treg cells. Genes covered by FOXP3-binding sites, CXXC1-binding sites, or exhibited high H3K4me3 levels at promoters were defined as FOXP3-bound genes, CXXC1-bound genes, or H3K4me3-enriched genes. (C) Heatmaps showing FOXP3 ChIP-seq and CXXC1 CUT&Tag signals at indicated regions. (D) Interaction between FOXP3 and CXXC1 was assessed by co-IP (forward and reverse) using Treg cell lysates. (E) Immunofluorescence for FOXP3 and CXXC1 colocalization in Treg cells. Scale bars, 2 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Motif enrichment analysis of overlapped peaks in H3K4me3-enriched regions and FOXP3-binding sites. (B) Genomic distribution of control and CXXC1-binding sites in Treg cells. (C) Average CXXC1 CUT&Tag signals around CpG island in Treg cells. IgG was used as the control. (D) Venn diagrams showing the overlap of FOXP3- and CXXC1-binding sites in Treg cells. (E) Physical interaction between CXXC1 and FOXP3 in HEK 293T cells transiently transfected with expression constructs. IP, immunoprecipitation.
+
+### Complete ablation of Cxxc1 in Treg cells leads to a fatal autoimmune disease
 
 To investigate the role of CXXC1 in Treg cell homeostasis and function, we generated Foxp3YFP-CreCxxc1fl/fl mice (conditional knockout [cKO] mice) by crossing Cxxc1fl/fl with Foxp3YFP-Cre (Rubtsov et al., 2008) mice, thereby specifically deleting Cxxc1 in Treg cells. The effective depletion of Cxxc1 in Treg cells was confirmed through quantitative PCR (qPCR) and western blotting (Figure 3—figure supplement 1A). Notably, cKO mice appeared normal at birth but later exhibited spontaneous mortality starting around 3 weeks of age (Figure 3A). Deletion of Cxxc1 in Treg cells led to the development of severe inflammatory disease, characterized by reduced body size, stooped posture, crusting of the eyelids, ears, and tail, and skin ulceration, particularly on the head and upper back (Figure 3B, C). Additionally, cKO mice developed extensive splenomegaly and lymphadenopathy (Figure 3D). Foxp3YFP-CreCxxc1fl/fl mice exhibited elevated serum levels of anti-dsDNA autoantibodies and IgG, along with a modest increase in IgE concentration (Figure 3E, Figure 3—figure supplement 1B). Histopathological analysis revealed massive lymphocyte and myeloid cell infiltration in the skin, lungs, liver sinusoids, and colon mucosa (Figure 3F). In full agreement with the aforementioned severe autoimmune diseases, Foxp3YFP-CreCxxc1fl/fl mice had decreased percentages and numbers of CD4+ Foxp3+ Treg cells in small intestine lamina propria (LPL), liver, and lung (Figure 3G, Figure 3—figure supplement 1C). Moreover, cKO mice displayed an increase in CD8+ T cell percentages (Figure 3—figure supplement 1D), along with a marked rise in cells exhibiting an effector/memory phenotype (CD44hi CD62Llo) (Figure 3H). Furthermore, T cells from cKO mice produced elevated levels of IFN-γ, IL-17, and IL-4 in CD4+ YFP− T cells, as well as increased IFN-γ production in CD8+ T cells (Figure 3I, Figure 3—figure supplement 1E, F). These phenotypes closely resembled those observed in Foxp3-deficient mice (Fontenot et al., 2003) or mice with depleted Treg cells (Kim et al., 2007), suggesting a deficiency in immune suppression.
 
-## CXXC1 is necessary for the maintenance of Treg cell suppressive activity
+![Figure 3.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig3-v1.jpg)
+
+**Figure 3.:** (A) Survival curves of Foxp3YFP-Cre (black line) and Foxp3YFP-Cre Cxxc1fl/fl (red line) mice (n = 20). (B) Gross body weight of Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice (n = 6). (C) A representative image of Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice. (D) Representative images showing the spleen and peripheral lymph nodes from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice. (E) ELISA quantification of anti-dsDNA IgG in the serum of Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice (n = 4). (F) Hematoxylin and eosin staining of the skin, lung, liver, and colon from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice (scale bar, 100  μm). (G) Representative flow cytometry plots of CD4+ Foxp3+ Treg cells isolated from the small intestinal lamina propria (LPL), liver, and lung of Foxp3YFP-Cre and Foxp3YFP-Cre Cxxc1fl/fl mice. (H) Flow cytometry analysis of CD62L and CD44 expression on peripheral lymph node CD4+YFP− and CD8+T cells from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice (left). Right, frequency of CD44lowCD62Lhi and CD44hiCD62Llow population in CD4+YFP− or CD8+ T cells (n = 6). (I) Lymph node cells from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice were stimulated ex vivo with PMA + ionomycin for 4 hr and analyzed for IFN-γ expressing in CD4+ YFP− or CD8+ T cells using flow cytometry (left). Right, percentages of IFN-γ+CD4+ YFP− or IFN-γ+CD8+ T cells in the lymph nodes of Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice (n = 6). All mice analyzed were 18–20 days old unless otherwise specified. Error bars show mean ± SD. The log-rank survival curve was used for survival analysis in A, and unpaired t-test or multiple unpaired t-test were used for statistical analyses in B, E, G– I (**p < 0.01, ***p < 0.001, ****p < 0.0001). The flow cytometry results are representative of three independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Analysis of Cxxc1 mRNA (left; Foxp3YFP-Cre, n = 3, Foxp3YFP-CreCxxc1fl/fl, n = 4) and protein (right) expression in CD4+YFP+ Treg cells from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice. (B) Quantification of serum IgG and IgE from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice (n = 4). (C) Quantification of the frequencies and absolute numbers of CD4+ Foxp3+ Treg cells in the small intestinal lamina propria (LPL), liver, and lung of Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice (n = 6). (D) Flow cytometry analysis of CD4 and CD8 expression in peripheral lymph nodes from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice. Absolute cell counts of Total T, CD4+, and CD8+ T cell subsets are shown (n = 6). (E, F) Lymph node cells from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice were stimulated ex vivo with PMA + ionomycin for 4 hr and analyzed for IL-17A+ and IL-4+ CD4+YFP− T cells by flow cytometry. Percentages of IL-17A+ and IL-4+ CD4+ T cells in lymph nodes from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice (n = 6). Error bars show mean ± SD. p values are determined by an unpaired t-test or multiple unpaired t-test (A–F) (**p < 0.01, ***p < 0.001, ****p < 0.0001). The flow cytometry and western blot results represent at least three independent experiments.
+
+### CXXC1 is necessary for the maintenance of Treg cell suppressive activity
 
 Despite the development of severe autoimmune disease, we observed an increase in both the absolute number and percentage of FOXP3+ Treg cells in the lymph nodes (Figure 4—figure supplement 1A). The expression level of the FOXP3 protein was only slightly altered in Cxxc1-deficient Treg cells (Figure 4—figure supplement 1B). In an in vitro suppression assay, Treg cells from Foxp3YFP-CreCxxc1fl/fl and WT mice exhibited similar suppressive effects on naive T (Tn) cell proliferation (Figure 4—figure supplement 1C). The expression of the hallmark Treg cell marker CTLA-4 showed a modest increase in Cxxc1-deficient Treg cells compared to WT Treg cells, while the expression of GITR remained unchanged (Figure 4—figure supplement 1D). To further assess the suppressive capacity of Cxxc1-deficient Treg cells in vivo, we employed the experimental autoimmune encephalomyelitis (EAE) model. Naive CD4+ T cells from 2D2 mice were co-transferred with Treg cells from either Foxp3YFP-Cre or Foxp3YFP-CreCxxc1fl/fl mice into Rag1−/− recipients, and EAE was induced in these recipient mice. Mice that received only naive CD4+ T cells from 2D2 mice developed more severe EAE symptoms (Figure 4A). The addition of WT Treg cells from Foxp3YFP-Cre mice slightly mitigated EAE progression and reduced Th17 cells in the spinal cord (Figure 4A–D). In contrast, Foxp3YFP-CreCxxc1fl/fl Treg cells failed to suppress EAE (Figure 4A–D), and the cKO mice showed a reduction in Treg cell frequency in central nervous system (CNS) tissues (Figure 4E). Finally, we examined the role of CXXC1 in Treg cell-mediated suppression using T cell transfer-induced colitis, in which naive T cells were transferred to Rag1−/− recipients either alone or together with WT or Foxp3YFP-CreCxxc1fl/fl Treg cells. The transfer of naive T cells led to weight loss and intestinal pathology in recipient mice (Figure 4F, G). Mice receiving WT Treg cells continued to gain weight (Figure 4F), whereas those that received Treg cells from cKO mice were unable to prevent colitis and exhibited a reduced percentage of Treg cells (Figure 4F–H). These findings underscore the critical role of CXXC1 in maintaining Treg cell function in vivo.
 
-## Treg cell lineage homeostasis and proliferation depend upon CXXC1
+![Figure 4.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig4-v1.jpg)
+
+**Figure 4.:** (A) Mean clinical scores for EAE in Rag1−/− recipients of 2D2 CD4+ T cells, either alone or in combination with Foxp3YFP-Cre or Foxp3YFP-CreCxxc1fl/fl mice after immunization with MOG35–55, complete Freund’s adjuvant (CFA), and pertussis toxin (n = 5). (B, C) Representative histology of the spinal cord of Rag1−/− mice after EAE induction. Hematoxylin and eosin (H&E) staining (upper), Luxol fast blue (F&B) staining (lower). Scale bars, 50 μm (×400) and 200 μm (×100). (D) Representative flow cytometry plots and quantification of the percentages of IFNγ+ or IL-17A+ CD4+Vβ11+ T cells (n = 5). (E) Statistical analysis of the percentage CD4+ FOXP3+ Treg cell in central nervous system (CNS) tissues 14 days after EAE induction (n = 5). (F) Changes in body weight of Rag1−/− mice after colitis induction (n = 6). (G) H&E staining of colons from T cell-induced colitis mice 6 weeks after T cell transfer. Scale bars, 50 μm (×400) and 200 μm (×100). (H) Statistical analysis of the percentage CD4+ FOXP3+ Treg cell in the spleen, mesenteric lymph nodes, and colon 6 weeks after colitis induction (n = 5). Error bars show mean ± SD. p values are determined by a unpaired t-test or two-way ANOVA and Holm–Sidak post hoc test (A, D, E, F, H) (*p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Flow cytometry analysis of CD4+FOXP3+ Treg cells in lymph nodes of Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice. On the right, the proportion and number of Treg cells are shown (n = 6). (B) Representative figure showing FOXP3 protein expression in CD4+ T cells from the lymph nodes (n = 6). (C) Suppression of CFSE-labeled Tn cell proliferation by different ratios of CD4+YFP+ Treg cells from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice. On the right, the percentage of proliferated responding T cells is presented (n = 3). (D) Expression of Treg signature molecules in Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice (n = 6). Error bars show mean ± SD. p values are determined by an unpaired t-test or multiple unpaired t-tests (A–D) (ns, not significant. **p < 0.01, ****p < 0.0001). The flow cytometry results are representative of three independent experiments.
+
+### Treg cell lineage homeostasis and proliferation depend upon CXXC1
 
 Treg cells harbor a diverse T cell receptor (TCR) repertoire, which likely plays a critical role in their immune suppression function (Dikiy and Rudensky, 2023; Shevyrev and Tereshchenko, 2019; Zagorulya et al., 2023). To explore the role of CXXC1 in Treg-mediated suppression, we performed single-cell RNA sequencing (scRNA-seq) combined with TCR sequencing (TCR-seq) on CD4+YFP+ Treg cells isolated from mouse lymph nodes. After quality control and removal of doublets, 18,577 cells were retained for further analysis. Through unsupervised clustering and uniform manifold approximation and projection (UMAP) analysis, we identified eight distinct Treg cell clusters based on the expression of well-characterized markers, with a particular focus on two clusters of activated Treg cells that exhibited higher expression of markers and gene sets relative to naive Treg cells (Figure 5A, Figure 5—figure supplement 1A–C). A comparison between Cxxc1-deficient and WT Treg cells within each cluster revealed a reduction in Cxxc1-deficient cells in the naive subsets, while an increase was observed in the Gzmb+ and H2-Eb1+ subsets (Figure 5B). To further elucidate the transition of Treg cells along a dynamic biological timeline, we constructed pseudo-time trajectories using Slingshot (Street et al., 2018). The pseudo-time gradient depicted a progression from quiescent to activated Treg cells, ultimately encompassing the Gzmb+ and H2-Eb1+ subsets (Figure 5C). Given the antigen-specific suppression capabilities of Treg cells (Hori et al., 2002; Tarbell et al., 2004), we examined their clonal expansion. The analysis revealed that expanded WT TCR clonotypes (n ≥ 2) were predominantly distributed among the Nt5e+ subsets, while Cxxc1-deficient Treg cells showed expanded clonotypes primarily within the Gzmb+ and H2-Eb1+ subsets (Figure 5D, Figure 5—figure supplement 1D). TCR sharing analysis indicated clonotype sharing among various clusters of WT Treg cells, suggesting a degree of homogeneity. However, the reduced TCR sharing in Cxxc1-deficient Treg cells implies that decreased TCR diversity may impair the suppressive activity of Treg cells (Figure 5E; Dikiy and Rudensky, 2023). Furthermore, the Cxxc1-deficient group exhibited lower expression of several Treg-specific genes associated with suppressive functions, such as Nt5e, Il10, Pdcd1, Klrg1, as well as genes that inhibit effector T cell differentiation, including Sell and Tcf7 (Figure 5F, Figure 5—figure supplement 1E). Conversely, Cxxc1-deficient Treg cells demonstrated elevated expression of Gzmb, Il2ra, and Cd69 compared to WT, reflecting a profile indicative of increased activation (Figure 5F, G). Additionally, we observed increased expression of genes linked to Th1-type inflammation, such as Ifng, Tbx21, and Hif1a, in Cxxc1-deficient Treg cells, likely due to extreme inflammatory conditions (Figure 5F–H). The proportion of FOXP3+Ki67+ Treg cells was lower in cKO mice compared to WT mice (Figure 5I). These findings underscore the crucial role of CXXC1 in maintaining Treg cell function and homeostasis.
 
-## Intrinsic Cxxc1 deficiency impairs Treg cell suppression function, proliferation, and molecular programs
+![Figure 5.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig5-v1.jpg)
+
+**Figure 5.:** (A) Uniform manifold approximation and projection (UMAP) plot showing clusters identified based on variable gene expression of sorted CD4+YFP+ Treg cells. Each dot represents a cell, and each color corresponds to a different population of cell types. Clustering analysis revealed eight distinct Treg cell populations. (B) Mean fold changes in cluster abundance between Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice. (C) Pseudotime trajectories of Treg cells based on Slingshot, color-coded by Treg cell subpopulations. (D) Visualization of density and clonotype richness across Treg clusters from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice. (E) T cell receptor (TCR) sharing of expanded clonotypes across all possible combinations of Treg cells from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice. (F) Heatmap showing Z scores for the average expression of Treg-specific genes in each cluster between Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice. Representative flow cytometry plots and quantification of (G) expression of CD25, CD69, ICOS, T-bet, and (H) IFN-γ in CD4+YFP+ Treg cells from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice (n = 5 CD25, n = 10 CD69, n = 5 ICOS, n = 6 T-bet, n = 5 IFN-γ). (I) Ki-67 expression (left) and frequency (right) in CD4+FOXP3+ Treg cells from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice (n = 6). Error bars show mean ± SD. p values are determined by a unpaired t-test (G–I) (**p < 0.01, ***p < 0.001, ****p < 0.0001). The flow cytometry results are representative of three independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heatmap displaying the Z scores for the average expression of Treg-specific genes across each cluster. (B) Uniform manifold approximation and projection (UMAP) plot showing clusters identified by variable gene expression in sorted CD4+YFP+ Treg cells from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice. (C) Relative proportions of Treg cell subpopulations in Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl, revealing heterogeneity. (D) Density and clonotype richness across Treg cell clusters, with colors indicating clone size. (E) Representative flow plots and quantified expression of KLRG1, CD62L, CD73, and PD-1 in CD4+YFP+ Treg cells from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice (n = 6 KLRG1, n = 6 CD62L, n = 6 CD73, n = 8 PD-1). Error bars show mean ± SD. p values are determined by an unpaired t-test (E) (****p < 0.0001).
+
+### Intrinsic Cxxc1 deficiency impairs Treg cell suppression function, proliferation, and molecular programs
 
 To confirm that the deficiency in Treg cell function in Treg-specific Cxxc1-deficient animals is due to intrinsic defects caused by Cxxc1 deficiency, rather than severe autoimmune inflammation in Foxp3YFP-CreCxxc1fl/fl mice, we examined Cxxc1-sufficient and Cxxc1-deficient Treg cell subsets in heterozygous Foxp3YFP-Cre/+ Cxxc1fl/fl (designated as ‘het-KO’) and littermate Foxp3YFP-Cre/+ Cxxc1fl/+ (designated as ‘het-WT’) female mice (Figure 6A). Notably, het-KO female mice did not exhibit overt signs of autoimmunity, as random X-chromosome inactivation led to the coexistence of both Cxxc1-cKO and Cxxc1-WT Treg cells. However, both the frequency and absolute numbers of FOXP3+YFP+ Treg cells within the total Treg population were reduced in het-KO mice compared to their counterparts in het-WT littermates, indicating that Cxxc1 deficiency imposes a competitive disadvantage on Treg cells (Figure 6B). Additionally, Cxxc1-deficient YFP+ Treg cells failed to upregulate the proliferation marker Ki-67 (Figure 6C). Moreover, YFP+ Treg cells in het-KO female mice showed reduced expression of key genes essential for suppressive function, including ICOS, CD25, CTLA4, and GITR, compared to YFP-Treg cells from the same mice (Figure 6D). Consistently, we confirmed the impaired suppressive function of Treg cells from heterozygous Foxp3YFP-Cre/+ Cxxc1fl/fl mice in vitro and in vivo (Figure 6E, Figure 6—figure supplement 1A–E). To investigate the molecular program affected by the deletion of Cxxc1 in Treg cells, we performed RNA-seq analysis on CD4+YFP+ Treg cells isolated from het-WT and het-KO mice. We then conducted a differential gene expression (DGE) analysis based on the RNA-seq data. Among all expressed genes, 865 were upregulated and 761 were downregulated in CD4+YFP+ Treg cells from het-KO mice compared to het-WT mice (Figure 6—figure supplement 1F). GO enrichment analysis revealed that the downregulated genes in Cxxc1-deficient Treg cells were predominantly enriched in pathways related to the negative regulation of immune system process and regulation of cell−cell adhesion (Figure 6—figure supplement 1G). The Cxxc1-deficient Treg cells also showed reduced expression of several genes associated with Treg cell suppressive function, including Il10, Tigit, Lag3, Icos, Nt5e(encoding CD73) and Itgae (encoding CD103) (Figure 6—figure supplement 1H). Thus, while YFP⁻ WT Treg cells effectively prevent autoimmunity in het-KO mice, the absence of Cxxc1 in YFP+ Treg cells disrupts key Treg cell marker expression and impairs their suppressive function under steady-state conditions.
 
-## The FOXP3–CXXC1 complex regulates the expression of key factors in Treg cells that are associated with the breadth of H3K4me3
+![Figure 6.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic representation of wild-type and Cre-positive Treg cells in female Foxp3YFP-Cre/+ mice.(B) Flow cytometry analysis of the YFP-FOXP3+ (WT) and YFP+FOXP3+ (KO) Treg cells in Foxp3YFP-Cre/+ Cxxc1fl/+ (het-WT) and Foxp3YFP-Cre /+ Cxxc1fl/fl (het-KO) female mice (left), along with the frequency and absolute numbers of YFP+ cells within the total Treg population (right) (n = 5). (C) Flow cytometry analysis of Ki-67expression (left) and MFI (right) in YFP− and YFP+ cells within the CD4+FOXP3+ Treg cells from 6- to 8-week-old het-KO female mice (n = 4). (D) Representative flow cytometry plots and quantification of ICOS, CD25, CTLA4, and GITR expression in YFP− and YFP+ cells within CD4+FOXP3+ Treg cells from het-KO female mice (n = 5). (E) Suppression of CFSE-labeled Tn cell proliferation by different ratios of CD4+YFP+ Treg cells from Foxp3YFP-Cre/+ Cxxc1fl/+ and Foxp3YFP-Cre/+ Cxxc1fl/fl female mice. On the right, the percentage of proliferated responding T cells is presented (n = 5). Error bars show mean ± SD. p values are determined by a unpaired t-test or multiple unpaired t-test (B–E) (ns, not significant. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001). The flow cytometry results are representative of three independent experiments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Mean clinical scores for EAE in Rag1−/− recipients of 2D2 CD4+ T cells, either alone or in combination with Foxp3YFP-Cre/+ Cxxc1fl/+ or Foxp3YFP-Cre/+ Cxxc1fl/fl female mice after immunization with MOG35–55, complete Freund’s adjuvant (CFA), and pertussis toxin (n = 6). (B, C) Representative histology of the spinal cord of Rag1−/− mice after EAE induction. Hematoxylin and eosin (H&E) staining (upper), Luxol fast blue (F&B) staining (lower). Scale bars, 50 μm (×400) and 200 μm (×100). (D) Representative flow cytometry plots and quantification of the percentages of IFNγ+ or IL-17A+ CD4+Vβ11+ T cells. (E) Statistical analysis of the percentage CD4+ FOXP3+ Treg cell in central nervous system (CNS) tissues 14 days after EAE induction (2D2 only n = 3, 2D2+het-WT Treg n = 5, 2D2+het-KO Treg n = 5). (F) Volcano plot showing the expression of genes in CD4+YFP+ Treg cells from het-KO versus het-WT. The significantly up- and downregulated genes were identified as genes with p-value <0.05, fold change greater than 1.5 and less than 0.66, respectively. (G) Gene Ontology (GO) pathway analysis of downregulated genes in het-KO CD4+YFP+ Treg cells. (H) Heatmap showing the expression levels of Treg cell signature genes implicated in suppressive function. Error bars show mean ± SD. p values are determined by an unpaired t-test or two-way ANOVA and Holm–Sidak post hoc test (A, D, E) (*p < 0.05, ***p < 0.001, ****p < 0.0001).
+
+### The FOXP3–CXXC1 complex regulates the expression of key factors in Treg cells that are associated with the breadth of H3K4me3
 
 CXXC1 binds to unmethylated CpG DNA via its N-terminal CXXC-finger domain, facilitating its interaction with DNA methyltransferase 1 (DNMT1). This binding stabilizes the DNMT1 protein, thereby regulating DNA methylation (Butler et al., 2008; Butler et al., 2009). To investigate whether CXXC1 depletion affects DNA methylation in Treg cells, we performed whole genome bisulfite sequencing (WGBS) on Treg cells isolated from both WT and cKO mice. On average, Cxxc1-deficient Treg cells exhibited no changes in DNA methylation at gene loci or across genome-wide CpG sites, irrespective of chromosomal region (Figure 7—figure supplement 1A–C). Furthermore, Cxxc1 knockout Treg cells did not show an increase in DNA methylation at key Treg signature gene loci (Figure 7—figure supplement 1D). Given the pivotal role of MLL4-mediated H3K4me1 in establishing the enhancer landscape and facilitating long-range chromatin interactions during Treg cell development (Placek et al., 2017), we performed CUT&Tag to assess changes in H3K4me1 levels in Cxxc1-deficient Treg cells. This analysis revealed that H3K4me1 levels were similar in both WT and Cxxc1-deficient Treg cells (Figure 7—figure supplement 1E–G).
 
 While H3K4me3 modifications typically form sharp 1- to 2-kb peaks around promoters, some genes exhibit broader H3K4me3 regions, referred to as broad H3K4me3 domains (H3K4me3-BDs), which can extend to cover part or all of the gene’s coding sequences (up to 20 kb) (Benayoun et al., 2014; Zacarías-Cabeza et al., 2015). Broad H3K4me3 domains are preferentially associated with genes essential for the identity or function of specific cell types (Benayoun et al., 2014; Chen et al., 2015) and have been implicated in enhancing transcriptional elongation and increasing enhancer activity (Chen et al., 2015). To further explore the relationship between broad H3K4me3 domains and the expression of immune-regulatory genes, we analyzed genes enriched with broad H3K4me3 regions. We classified the H3K4me3 domains surrounding TSSs into three categories: broad (more than 5 kb), medium (between 1 and 5 kb), and narrow (less than 1 kb) (Figure 7A). Notably, Cxxc1-deficient Treg cells exhibited weaker H3K4me3 signals compared to WT cells within the broad H3K4me3 domains where CXXC1 binding is prominent (Figure 7A, B). Using the criteria established by Benayoun et al., 2014, which defines the top 5% of the widest H3K4me3 domains as BDs, we observed similar enrichment results (Figure 7—figure supplement 1H, I). We then compared three groups of genes: BD-associated genes with reduced H3K4me3 levels following Cxxc1 deletion, genes with direct CXXC1 binding, and genes with direct FOXP3 binding. The Venn diagram revealed that the majority of genes (283 out of 294, 96%) with CXXC1 binding and reduced H3K4me3 levels overlap with FOXP3-bound genes, suggesting that CXXC1 is functionally associated with FOXP3-regulated loci within broad H3K4me3 domains (Figure 7C). Furthermore, GO term analysis indicated that BD-associated genes are enriched in biological processes related to the negative regulation of immune system processes (Figure 7D). Genome browser views displayed the enrichments of FOXP3, CXXC1, and H3K4me3 at key signature genes in Treg cells, such as Ctla4, Il2ra, Icos, and Tnfrsf18, with lower H3K4me3 densities observed at these loci in Cxxc1-deficient Treg cells (Figure 7E). Similar patterns were observed at core genes involved in Treg homeostasis and suppressive function (e.g., Lag3, Nt5e, Ikzf4, and Cd28) (Figure 7—figure supplement 1J; Gokhale et al., 2019; Zhang et al., 2013). These findings suggest that CXXC1 and FOXP3 collaboratively promote sustained Treg cell homeostasis and function by preserving the H3K4me3 modification at key Treg cell genes.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig7-v1.jpg)
+
+**Figure 7.:** Heatmaps showing H3K4me3 (A) and CXXC1 (B) signals centered on narrow, medium, and broad domains. The top panel shows the average CUT&Tag signals around indicated domains. (C) Venn diagrams showing the overlap of FOXP3-binding genes, CXXC1-binding genes, and H3K4me3-BD-associated genes with decreased H3K4me3 levels after Cxxc1 depletion in Treg cells. (D) Gene Ontology (GO) pathway analysis of the overlapped genes in C. (E) Representative genome browser view showing the enrichments of FOXP3, CXXC1, and H3K4me3 in Treg cells.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Average CpG methylation in CD4+YFP+ cells from 3-week-old Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl surrounding the transcription start site (TSS) and transcriptional terminal site (TES). (B) Scatter plot showing methylation levels at 5-kb bins in wild-type (WT) and Cxxc1-deficient Treg cells. (C) A violin plot showing the methylation levels at different genomic regions in WT and Cxxc1-deficient Treg cells. (D) Genome browser view showing DNA methylation levels in WT and Cxxc1-deficient Treg cells. (E) Venn diagrams showing the overlap of H3K4me1 peaks in WT and Cxxc1-null Treg cells. (F) Genomic distribution of H3K4me1 peaks in WT and Cxxc1-null Treg cells. (G) Heatmap showing H3K4me1 enrichment in WT and Cxxc1-null Treg cells. The top panel of the profile plots shows the average CUT&Tag signals. Heatmaps showing H3K4me3 (H) and CXXC1 (I) signals centered on TSS covered by H3K4me3 broad domains. The top panel shows the average CUT&Tag signals around indicated domains. (J) Representative genome browser view showing the enrichments of FOXP3, CXXC1, and H3K4me3 in Treg cells.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/103417/elife-103417-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Heatmap showing FOXP3 CUT&Tag signals in WT and Cxxc1-null Treg cells. The top panel of the profile plots shows the average CUT&Tag signals. (B) Representative genome browser views showing enrichment of FOXP3 in WT and Cxxc1-null Treg cells.
 
 We previously demonstrated that the FOXP3–CXXC1 complex plays a key role in modulating H3K4me3 deposition at Treg-specific gene loci. To further clarify whether Cxxc1 deletion affects FOXP3 binding to its target genes, we performed CUT&Tag experiments to compare FOXP3-binding profiles between WT and Cxxc1 KO Treg cells. The results revealed that most FOXP3-bound regions in WT Treg cells were similarly enriched in KO Treg cells, indicating that Cxxc1 deletion does not impair FOXP3’s DNA-binding ability (Figure 7—figure supplement 2A, B). Together, these findings suggest that the regulatory role of CXXC1 in Treg cells is mediated through its effect on H3K4me3 deposition rather than altering FOXP3’s binding to DNA.
 
@@ -104,27 +164,555 @@ Our findings provide novel insights into the suppressive functions, heterogeneit
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Foxp3YFP-Cre mice</td>
+      <td>Gifted from Prof. Bin Li</td>
+      <td>Shanghai Jiao Tong University</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Cxxc1fl/fl mice</td>
+      <td>The Shanghai Research Center for Model Organisms</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6JGpt-Rag1em1Cd3259/Gpt, Rag1−/− mice</td>
+      <td>GemPharmatech</td>
+      <td>Cat# T004753;RRID:IMSR_GPT:T004753</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>2D2 mice</td>
+      <td>Gifted from Prof. Linrong Lu</td>
+      <td>Zhejiang University</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Thymus, lymph node, lung, liver, small intestine lamina propria lymphocytes</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Freshly isolated tissue</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus, mouse)</td>
+      <td>HEK 293T</td>
+      <td>ATCC</td>
+      <td>Cat# ACS-4500;RRID:CVCL_4V93</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus, mouse)</td>
+      <td>Plat E</td>
+      <td>Gifted from Prof. Xiaolong Liu</td>
+      <td>Shanghai Institutes for Biological Sciences</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse CD16/32 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 101320;RRID:AB_1574975</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Cyanine7 anti-TCR-β (hamster monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 109222;RRID:AB_893625</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Cyanine7 anti-KLRG1(hamster monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 138416;RRID:AB_2561736</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-eFluo 780 anti-CD4 (rat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 47-0042-82; RRID:AB_1272183</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-CD152 (CTLA4) (hamster monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 106306;RRID:AB_313255</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-CD278 (ICOS) (hamster monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 107706;RRID:AB_313335</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-CD357 (GITR) (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 126310;RRID:AB_1089132</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-CD69 (hamster monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 12-0691-83; RRID:AB_ 465733</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-CD25 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 102008;RRID:AB_312856</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Brilliant Violet 650 anti-mouse CD8a (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100742;RRID:AB_2563056</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-TCR V beta 11 (rat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 17-5827-82; RRID:AB_2573226</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC/Cyanine7 anti-CD44 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 103028;RRID:AB_830785</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-CD62L (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 104412;RRID:AB_313099</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-Foxp3 (rat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 17-5773-82; RRID:AB_469457</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Pacific Blue anti-IFN-γ (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 505818;RRID:AB_893526</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-IL-4 (rat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 12-7041-82; RRID:AB_466156</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cyanine7 anti-IL-17A (rat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 25-7177-82; RRID:AB_10732356</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti- T-bet (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 12-5825-82; RRID:AB_925761</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421 anti-PD-1 (hamster monoclonal)</td>
+      <td>BD</td>
+      <td>Cat# 562584;RRID:AB_2737668</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-CD45RB (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 103319;RRID:AB_2565228</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-CD73 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 127205;RRID:AB_ 2154094</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCPCy5.5 anti-Ki-67(mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat# 561284;RRID:AB_10611574</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cxxc1 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab198977RRID:AB_3101764</td>
+      <td>WB (1:1000), IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Foxp3 (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 14-4774-82; RRID:AB_467552</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 14793;RRID:AB_2572291</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 3724SRRID:AB_1549585</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3K4me3 (RabbitPolyclonal)</td>
+      <td>Active Motif</td>
+      <td>Cat# 39016RRID:AB_2687512</td>
+      <td>CUT&amp;Tag(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FOXP3 (RabbitPolyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab150743</td>
+      <td>CUT&amp;Tag (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Normal Rabbit IgG (RabbitPolyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 2729RRID:AB_1031062</td>
+      <td>CUT&amp;Tag (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-mouse IgG</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1033-05RRID:AB_2737432</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-mouse IgE</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1110-05RRID:AB_2794604</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mo CD3e (hamster monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 16-0031-85; RRID:AB_468848</td>
+      <td>2 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mo CD28 (hamster monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 16-0281-85; RRID:AB_468922</td>
+      <td>3 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IFN-γ (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 505847;RRID:AB_2616675</td>
+      <td>10 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IL-12 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 505309;RRID:AB_2783330</td>
+      <td>10 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IL-4 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 504135;RRID:AB_2750404</td>
+      <td>10 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cxxc1 genotyping Forward</td>
+      <td>This paper</td>
+      <td>Genotyping PCR primer</td>
+      <td>CGAGAGATGAAGAGGAGCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cxxc1 genotyping Reverse</td>
+      <td>This paper</td>
+      <td>Genotyping PCR primer</td>
+      <td>CACAAAGATAGGCTCCATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Foxp3YFP-Cre WT genotyping Forward</td>
+      <td>This paper</td>
+      <td>Genotyping PCR primer</td>
+      <td>CTATGGAAACCGGGCGATGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Foxp3YFP-Cre WT genotyping Reverse</td>
+      <td>This paper</td>
+      <td>Genotyping PCR primer</td>
+      <td>AGTGGCAAGTGAGACGTGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Foxp3YFP-Cre genotyping Forward</td>
+      <td>This paper</td>
+      <td>Genotyping PCR primer</td>
+      <td>AGGATGTGAGGGACTACCTCCTGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Foxp3YFP-Cre genotyping Reverse</td>
+      <td>This paper</td>
+      <td>Genotyping PCR primer</td>
+      <td>TCCTTCACTCTGATTCTGGCAATTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actb qPCR Forward</td>
+      <td>This paper</td>
+      <td>qRT-PCR primer</td>
+      <td>CTGTCCCTGTATGCCTCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actb qPCR Reverse</td>
+      <td>This paper</td>
+      <td>qRT-PCR primer</td>
+      <td>ATGTCACGCACGATTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cxxc1 qPCR Forward</td>
+      <td>This paper</td>
+      <td>qRT-PCR primer</td>
+      <td>CTGTGGAGAAGATTTGTGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cxxc1 qPCR Reverse</td>
+      <td>This paper</td>
+      <td>qRT-PCR primer</td>
+      <td>TCTTGTTGTCTAGAGTGGCGATCT</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-C-HA plasmid</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p3×Flag-CMV7.1 plasmid</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MojoSort Mouse CD4 T Cell Isolation Kit</td>
+      <td>BioLegend</td>
+      <td>Cat# 480005</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MojoSort Mouse CD4 Naive T Cell Isolation Kit</td>
+      <td>BioLegend</td>
+      <td>Cat# 480039</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 74134</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruePrep DNA Library Prep Kit V2 for Illumina</td>
+      <td>Vazyme</td>
+      <td>Cat# TD501</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Hyperactive In-Situ ChiP Library Prep Kit for Illumina</td>
+      <td>Vazyme</td>
+      <td>Cat# TD901</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ClonExpress II One Step Cloning Kit</td>
+      <td>Vazyme</td>
+      <td>Cat# C112-01</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>E.Z.N.A. Endo-free Plasmid Mini Kit II</td>
+      <td>Omega</td>
+      <td>Cat# D6950-02</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BD Mouse Immune Single-Cell Multiplexing Kit</td>
+      <td>BD</td>
+      <td>Cat# 633793</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BD Mouse Immune Single-Cell Multiplexing Kit</td>
+      <td>BD</td>
+      <td>Cat# 633801</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>IL-2</td>
+      <td>Peprotech</td>
+      <td>Cat# AF-212-12-20ug</td>
+      <td>50 U/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>TGF-β</td>
+      <td>Peprotech</td>
+      <td>Cat# 100-21C-250ug</td>
+      <td>5 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PMA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P1585</td>
+      <td>50 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# I3909</td>
+      <td>1 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>MOG35-55</td>
+      <td>ChinaPeptides</td>
+      <td>N/A</td>
+      <td>2 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism v8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo v10</td>
+      <td>TreeStar</td>
+      <td>RRID:SCR_008520</td>
+      <td>https://www.flowjo.com/flowjo/overview</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R version v4.0.2</td>
+      <td>R Core</td>
+      <td>RRID:SCR_001905</td>
+      <td>http://www.r-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td>https://www.adobe.com/products/illustrator.html</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All mice used in this study were bred for a minimum of seven generations on a C57BL/6 background. Mouse experiments, or cells from mice of the same genotype, compared littermates or age-matched control animals. The Cxxc1fl/fl mouse strain has been previously described (Cao et al., 2016). The Foxp3YFP-Cre mice (JAX,016959) were generously provided by Bin Li (Shanghai Jiao Tong University School of Medicine, Shanghai, China). CD45.1 (NM-KI-210226) mice were purchased from the Nanjing Biomedical Research Institute of Nanjing University. Rag1−/− mice (stock# T004753) were purchased from GemPharmatech. 2D2 (MOG35-55-specific TCR transgenic) mice were graciously supplied by Prof. Linrong Lu (Zhejiang University School of Medicine, Hangzhou, Zhejiang, China). In our study, Foxp3YFP-Cre (WT) and Foxp3YFP-CreCxxc1fl/fl (cKO) mice, which were sex matched, were used at 3 weeks of age unless otherwise specified. The numbers of mice per experimental group are indicated in the figure legends. All mice were housed in the Zhejiang University Laboratory Animal Center under specific pathogen-free conditions, and all animal experimental procedures were approved by the Zhejiang University Animal Care and Use Committee (approval no.ZJU20230246).
 
-## Cell culture
+### Cell culture
 
 HEK 293T cells (ACS-4500) were obtained from ATCC, and Plat E cells were kindly provided by Prof. Xiaolong Liu (Shanghai Institutes for Biological Sciences). Their identity has been authenticated by the supplier and regular mycoplasma checks were performed. Both cell lines were cultured in Dulbecco-modified Eagle medium (DMEM) containing 10% (vol/vol) fetal bovine serum (FBS), supplemented with 1% penicillin/streptomycin.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 As previously described (Zhou et al., 2023), coverslips were treated with a 0.01% poly-L-lysine solution (P4707; Sigma) for 10 min, air-dried, and then coated with CD4+ YFP+ Treg cells. The cells were then fixed in 4% formaldehyde for 15 min at room temperature, permeabilized with 0.2% Triton X-100, and blocked with 1% BSA. Antibodies against CXXC1 (ab198977; Abcam) and FOXP3 (17-5773-82; Invitrogen) were diluted in Image iT FX signal enhancer (I3693; Invitrogen) and incubated with cells overnight at 4°C. After washing with phosphate-buffered saline (PBS), the cells were incubated with a goat anti-rabbit antibody Alexa Fluor 594 (1:250;10015289; Invitrogen) secondary antibody and stained with DAPI (200 ng/ml; D523; Dojindo). Slides were washed with PBS and sealed with an antifade solution (P36934; Invitrogen) before imaging with an Olympus FV3000 fluorescence microscope. The images were visualized using the FV31-SW software.
 
-## Co-immunoprecipitation and western blot
+### Co-immunoprecipitation and western blot
 
 Harvest the appropriate transfected cell lines and primary cells from culture and wash them with ice-cold PBS. Lyse the cells in NETN300 buffer (300 mM NaCl, 0.5 mM EDTA, 0.5% (vol/vol) NP-40, 20  mM Tris-HCl pH 8.0) supplemented with a protease inhibitor (1:100, P8340, Sigma-Aldrich) and PMSF (1 mM) on ice for 10 min. Take a small portion of the whole-cell lysate as input, and incubate the remaining lysate with either Anti-FLAG M2 Beads (M8823; Sigma) or Anti-HA Beads (HY-K0201; MCE) on a rotator at 4°C overnight. For the endogenous Co-IP assay targeting CXXC1 and FOXP3, incubate the cell lysate with protein G magnetic beads along with anti-CXXC1 (ab198977; Abcam) or anti-FOXP3 (14-4774-82; Invitrogen) antibodies on a rotator at 4°C overnight. Wash the beads three times with IP buffer (100  mM NaCl, 0.5  mM EDTA, 0.5% (vol/vol) NP-40, 20  mM Tris-HCl pH 8.0) to remove non-specific binding. Boil the washed beads with 1× Laemmli sample buffer (1610747; Bio-Rad) to elute the bound proteins. Separate the denatured proteins by SDS–PAGE. Transfer the separated proteins onto PVDF membranes (Millipore) for immunoblotting.Immunoblot the PVDF membranes (IPVH00010) with the following antibodies: anti-CXXC1 (1:1000; ab198977; Abcam), anti-FOXP3 (1:500; 14-7979-80; Invitrogen), anti-FlAG (1:1000; 14793; Cell Signaling Technology), anti-HA (1:1000; 3724S; Cell Signaling Technology). Detect the immunoblotted proteins using a secondary HRP-conjugated goat anti-rabbit antibody (1:1000; HA1001-100; Huabio) and visualize the bands using an appropriate detection method.
 
-## ELISA
+### ELISA
 
 Serum samples from 3-week-old WT and KO mice were analyzed for total IgG and IgE concentrations using ELISA kits (88-50630-88; eBioscience) according to the manufacturer’s instructions. Half-area ELISA plates were coated with Coating Buffer and incubated overnight at 4°C. After washing with PBST (PBS, 1 mM EDTA, 0.05% Tween-20), the plates were blocked with 5% BSA in PBS for 30 min at room temperature. Serum was diluted to the appropriate concentration with blocking buffer and incubated overnight at 4°C. After washing with PBST, the plates were incubated with HRP-conjugated anti-mouse IgG (1033-05; SouthernBiotech) and IgE (1110-05; SouthernBiotech) antibodies (1:2000 in 1% BSA/PBST) at 37°C for 1 hr. Following washing, TMB substrate was added, and the reaction was stopped with 2 M H2SO4 after sufficient color development (1–15 min). Absorbance at 450 nm was measured within 30 min.
 
-## Lymphocyte isolation and flow cytometry
+### Lymphocyte isolation and flow cytometry
 
 Cells from lymphoid organs were prepared by mechanical disruption between frosted slides, while non-lymphoid organs were processed enzymatically. For lung tissue, minced samples were digested in RPMI containing 100 μg/ml DNase I (9003-98-9; Sigma-Aldrich) and 2 mg/ml Collagenase D (LS004188; Worthington Biochemical) at 37°C for 1.5 hr. Liver tissue was minced and digested in RPMI supplemented with 100 μg/ml DNase I and 1 mg/ml Collagenase D at 37°C for 30 min, with lymphocytes isolated using a 40–70% Percoll (GE Healthcare) gradient. For intestinal tissue, the samples were first incubated in DMEM containing 3% FBS, 0.2% HEPES, 0.5 M EDTA, and 0.145 mg/ml dithiothreitol for 10 min. This was followed by digestion with 50 mg/ml DNase I and 145 mg/ml Collagenase II (Worthington Biochemical) in DMEM at 37°C for 5 min. Lymphocytes were then isolated using an 80% and 40% Percoll gradient.
 
@@ -132,66 +720,66 @@ For surface marker analysis, cells were incubated for 15 min with purified anti-
 
 The following antibodies were purchased from Invitrogen or BioLegend: Zombie Violet fixable viability (423113), Zombie NIR fixable (423105), CD25 (PC61), CD8α (53-6.7), CD62L (MEL-14), PD-1 (J43), CD44 (IM7), IL-17A (TC1118H10), KL-RG1 (2F1), CD4 (GK1.5), TCRβ (H57-597), IFN-γ (XMG1.2), FOXP3 (FJK-16s), CTLA-4 (UC10-4B9), ICOS (15F9), GITR (DTA-1), TCRVβ11 (RR3-15), CD45RB (C363-16A) CD69 (H1.2F3), T-bet (eBio4B10), IL-4 (11B11), and CD73 (TY/11.8).
 
-## Real-time PCR
+### Real-time PCR
 
 Total RNA was extracted from Treg cells using the RNAAiso Plus (9109; Takara) reagent according to the manufacturer’s instructions, and cDNA synthesis was performed using the Prime Script RT Reagent Kit (Takara). TB Green Premix Ex Taq (RR420A; Takara) was used for quantitative real-time PCR (qPCR). The expression levels of target mRNA were normalized to the level of Actb expression. The primers for qPCR are as follows:
 
-## CD4+T and YFP+ Treg cells adoptive transfer in EAE
+### CD4+T and YFP+ Treg cells adoptive transfer in EAE
 
 CD4+YFP+ Treg cells from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice were enriched using the Mouse CD4 T Cell Isolation Kit (480005; BioLegend) and then sorted using the BD Aria II flow cytometer. Naive CD4+T cells from 2D2 (MOG35-55-specific TCR transgenic) mice were isolated using the Mouse CD4 Naive T cell Isolation Kit480039 (480039; BioLegend). As previously described (Chou et al., 2021), 2D2 naive CD4+ T cells alone (5 × 105 per mouse), or 2D2 naive CD4+ T cells (5 × 105 per mouse) together with WT or Foxp3YFP-CreCxxc1fl/fl Treg cells (2 × 105 per mouse), were transferred into Rag1−/− mice via the tail vein. One day after cell transfer, the recipient mice were inoculated subcutaneously (s.c.) with 200 μg MOG35-55 peptide (MEVGWYRSPFSRVVHLYRNGK; GenemeSynthesis) emulsified in complete Freund’s adjuvant (F5506; Sigma). Intravenous administration of 200 ng of Pertussis toxin (181; List Biological Laboratories) was performed on days 0 and 2 after peptide inoculation. The severity of EAE was monitored and blindly graded using a clinical score from 0 to 5: 0, no clinical signs; 1, limp tail; 2, paraparesis (weakness, incomplete paralysis of one or two hind limbs); 3, paraplegia (complete paralysis of two hind limbs); 4, paraplegia with forelimb weakness or paralysis; 5, dying or death.
 
-## Isolation lymphocytes from the CNS
+### Isolation lymphocytes from the CNS
 
 On day 14 after EAE induction, mice were perfused with transcardially administered PBS to eliminate contaminating blood cells in the CNS. The forebrain and cerebellum were dissected to expose the spinal cord, which was then carefully removed from the spinal canal. The fresh spinal cord was harvested and cut into 2 mm pieces. The CNS tissue pieces were homogenized using a syringe and passed through a 70-µM cell strainer to obtain a single-cell suspension. The single-cell suspension was digested with collagenase D (2 μg/ml; 11088858001; Roche) and deoxyribonuclease I (DNase I; 1 μg/ml; DN25; Sigma-Aldrich) at 37°C for 20 min under rotation. After digestion, the cell suspension was centrifuged to pellet the cells. The cell pellets were resuspended in 40% Percoll and layered onto a discontinuous Percoll gradient. Centrifugation at 80% Percoll allowed for the separation of cells at the 40–80% Percoll interface, which were collected as CNS mononuclear cells. The collected CNS mononuclear cells were washed with PBS to remove any remaining Percoll. CNS mononuclear cells were stimulated for 4 hr with PMA and ionomycin in the presence of Brefeldin A to induce cytokine production. After stimulation, cells were fixed, rendered permeable, and stained with appropriate antibodies for intracellular cytokine detection.
 
-## Histological analyses
+### Histological analyses
 
 The lungs, skin, liver, and colon were excised from 3-week-old mice. Prior to histological analysis, the samples were fixed in formalin, embedded in paraffin, and stained with hematoxylin and eosin (H&E). For CNS histology, spinal cords were fixed in 4% paraformaldehyde, paraffin-embedded, sectioned, and stained with Luxol Fast Blue and H&E. To examine colon histology, colons from Rag1−/− hosts were similarly processed and stained with H&E.
 
-## Adoptive transfer colitis model
+### Adoptive transfer colitis model
 
 Colitis was induced following the protocol described (Zeng et al., 2013). In brief, CD4+ YFP+ Treg cells were isolated from 3-week-old CD45.2+ Foxp3YFP-CreCxxc1fl/fl and CD45.2+ Foxp3YFP-Cre mice. A total of 2 × 105 Treg cells from each group were mixed with 4 × 105 Teff cells (CD45.1+CD4+CD45RBhi) sorted from CD45.1+ mice and transferred into the Rag1−/− mice via intraperitoneal injection. Teff cells alone were transferred as a control group. Mouse body weight was measured weekly post-adoptive transfer. The percentage change in body weight was calculated by comparing the current weight with the initial weight on day 0. Mice were euthanized when any had reached 80% of their initial body weight. The large intestines were sectioned into 4 μm thick slices and stained with hematoxylin.
 
-## In vitro Treg suppression assay
+### In vitro Treg suppression assay
 
 Naive CD4+ T cells isolated from WT mice were labeled with CFSE (C34554; Invitrogen). CD4+YFP+ Treg cells from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl mice were cultured with naive CD4+ T cells (1 × 105 cells) at various ratios in the presence of 2 μg/ml anti-CD3 (16-0031-85; Invitrogen) and 3 μg/ml anti-CD28 (16-0281-85; Invitrogen). On day 3, cells were analyzed by flow cytometry.
 
-## CUT&Tag
+### CUT&Tag
 
 CUT&Tag assays of CD4+YFP+ Treg cells were conducted as previously described (Dan et al., 2020). Briefly, approximately 1 × 105 single cells were carefully pipetted into wash buffer twice. The pelleted cells were resuspended in wash buffer, activated concanavalin (BP531; Bangs Laboratories), and incubated for 15 min at room temperature. Cells bound to the beads were resuspended in Dig-Wash Buffer and incubated with a 1:50 dilution of primary antibodies (rabbit anti-H3K4me3, Active Motif,39016; rabbit anti-CXXC1, abcam, ab198977; rabbit anti-FOXP3, abcam, ab 150743;normal IgG, Cell Signaling, 2729) at 4°C overnight. The beads were incubated with a secondary antibody (goat anti-rabbit IgG; SAB3700883; Sigma-Aldrish) diluted 1:100 in Dig-Wash buffer for 60 min at room temperature. Cells were treated with Hyperactive pG-Tn5 Transposase (S602; Vazyme) diluted in Dig-300 Buffer for 1 hr at room temperature. The cells were subsequently resuspended in Tagmentation buffer (10 mM MgCl2 in Dig-300 Buffer) and incubated at 37°C for 1 hr. To halt tagmentation, 10 μl was spiked with 0.5 M EDTA, 3 μl with 10% SDS, and 3 μl with 20 mg/ml Proteinase K and incubated at 55°C for 1 hr. DNA library amplification was performed according to the manufacturer’s instructions and purified using VAHTS DNA Clean Beads (N411; Vazyme). Libraries were sequenced on the Illumina NovaSeq platform (Annoroad Gene Technology).
 
-## CUT&Tag and ChIP-seq data analysis
+### CUT&Tag and ChIP-seq data analysis
 
 FOXP3 ChIP-seq data was obtained from GSE121279. H3K27me3 ChIP-seq data was obtained from GSE14254. CUT&Tag and ChIP-seq reads were trimmed to 50 bp and aligned against the mouse genome build mm9 using Bowtie2 (v2.3.4.1) with default parameters. All PCR duplicates and unmapped reads were removed. Peak calling was performed using MACS2 (v2.1.1.20160309) and signal tracks for each sample were generated using the ‘wigToBigWig’ utility of UCSC. We classified the H3k4me3 peaks around TSSs into three groups: broad (>5 kb), medium (1–5 kb), and narrow (<1 kb). The top 5% of the widest peaks were considered as broad peaks. The average intensity profiles were generated using deepTools (v2.5.4). Motif analysis was performed using the ‘findmotifsGenome.pl’ command inHomer2 package. Epigenetic factors were identified using the Epigenetic Factor Database (https://epifactors.autosome.org/) and then screened for those that exclusively regulate the expression of their target genes by modulating the deposition of H3K4me3. Genomic distribution was analyzed using the ‘genomation’ R package. GO pathway analysis was performed using the ‘clusterProfiler’ R package. The sequencing information of CUT&Tag data generated in this study is summarized in Supplementary file 1a.
 
-## Clustering analysis
+### Clustering analysis
 
 Promoters were defined as ±2 kb regions flanking the annotated TSS. Reads in promoters were counted using the ‘coverage’ command in bedtools (v2.26.0) and further normalized to RPKM. The k-means clustering of H3K4me3 and H3K27me3 enrichment at promoters was conducted using the ‘kmeans’ function in R.
 
-## RNA-seq and data analysis
+### RNA-seq and data analysis
 
 Total RNA was extracted from sorted CD4+YFP+ Treg cells isolated from both het-WT and het-KO mice using the RNeasy Plus Mini Kit (QIAGEN, #74134), following the manufacturer’s protocol. RNA-seq libraries were constructed and sequenced by Haplox (Nanchang, China), using an Illumina platform with paired-end reads of 150 bp. RNA-seq data of WT Treg cells was obtained from GSE82076. Raw reads were trimmed to 50 bp and mapped to the mouse genome (mm9) using TopHat (v2.1.1) with default parameters. Only uniquely mapped reads were kept for downstream analysis. The RNA abundance of each gene was quantified using Cufflinks (v2.2.1). For het-WT and het-KO RNA-seq data, gene counts were generated using HTSeq-count. For each sample, the gene count matrices were merged together and then the ‘Trimmed Mean of M values’ normalization (TMM) method was used to calculate the normalized expression. p values were generated using ‘edgeR’ R package. RNA-seq data generated in this study is summarized in Supplementary file 1b.
 
-## Single-cell RNA-sequencing
+### Single-cell RNA-sequencing
 
 A total of 300,000 sort-purified CD4+YFP+ Treg cells from Foxp3YFP-Cre and Foxp3YFP-CreCxxc1fl/fl were resuspended in BD Pharmingen Stain Buffer (FBS) (554656; BD). Single cells were isolated using a chromium controller (BD platform, BD Bioscience) according to the manufacturer’s instructions, as previously described (Chen et al., 2023). The single cells were labeled with sample tags using the BD Mouse Immune Single-Cell Multiplexing Kit (633793; BD). Following standard protocols, cDNA amplification and library construction were performed to generate scRNA-seq libraries.
 
-## Targeted scRNA-seq data processing
+### Targeted scRNA-seq data processing
 
 The raw FASTQ files were processed by BD Rhapsody using the Targeted analysis pipeline. After alignment and filtering, the distribution-based error correction-adjusted molecules were loaded into R Studio (version 4.3.2). All subsequent analyses were performed using the package Seurat (version 4.4.0) with default parameters. Specifically, the scRNA-seq data counts were log-normalized. All targeted genes were scaled and then were used for principal components analysis. The batch effects were removed by the HarmonyMatrix function in the Harmony package (version 1.1.0). The first 20 principal components were used to calculate nonlinear dimensionality reduction using RunUMAP. DGEs between clusters was assessed using the FindAllMarkers function. The clusters were then annotated based on DGEs. Barplots were generated using ggplot2 (version 3.4.4). Heatmaps were generated using pheatmap (version 1.0.12).
 
-## Analysis of the single-cell TCR-seq repertoire
+### Analysis of the single-cell TCR-seq repertoire
 
 Raw V(D)J fastq reads were processed using BD Rhapsody Pipeline and then were analyzed using scRepertoire (version 1.12.0). The TCR clonotype was called using the nucleotide sequence of the CDR3 region for both TCR alpha and beta chains. For cells with multiple chains, the top two clonotypes with the highest expression were selected for downstream analysis. Clonal overlap between different cell types was calculated using the clonalOverlap function of scRepertoire. A clonotype was defined as expansion if it could be detected in at least two cells.
 
-## scRNA-seq trajectory analysis
+### scRNA-seq trajectory analysis
 
 UMAP embeddings obtained from the Seurat package were projected into the Slingshot (version 2.10.0) package to construct pseudotime Trajectories for Treg cells. Naive subsets were set as the root state.
 
-## WGBS and data analysis
+### WGBS and data analysis
 
 Sorted CD4+YFP+ Treg cells (3 × 106) were lysed in cell lysis buffer to release DNA. The bisulfite-treated DNA was used to prepare the sequencing library. DNA libraries were transferred to the Illumina Platform for sequencing using 150 bp paired-end reads. Raw reads were trimmed using TrimGalore (v0.4.4) with default parameters. Subsequently, the reads were mapped against the mm9 reference genome using Bismark v0.19.0 with parameters ‘--bowtie2’. PCR duplicates were removed and the methylation levels were calculated using ‘bismark_methylation_extractor’. We calculated the mean CpG methylation levels of various genome elements: promoter, 5′-UTR, exon, intron, 3′-UTR, genebody, intergenic, CGIs, and repeats using in-house scripts. The sequencing information of WGBS data generated in this study is summarized in Supplementary file 1c.
 
-## Statistical analysis
+### Statistical analysis
 
 The statistical significance analysis was performed using Prism 8.0 (GraphPad). Error bars are presented as mean ± SD. p values of <0.05 were deemed statistically significant (*p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001). Statistical analyses were performed with an unpaired t-test, multiple unpaired t-tests, or two-way ANOVA and Holm–Sidak post hoc test.

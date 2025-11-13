@@ -28,7 +28,7 @@
 
 ## Abstract
 
-Excessive alcohol consumption is associated with damage to various organs, but its multi-organ effects have not been characterised across the usual range of alcohol drinking in a large general population sample. We assessed global effect sizes of alcohol consumption on quantitative magnetic resonance imaging phenotypic measures of the brain, heart, aorta, and liver of UK Biobank participants who reported drinking alcohol. We found a monotonic association of higher alcohol consumption with lower normalised brain volume across the range of alcohol intakes (–1.7 × 10 −3 ± 0.76 × 10 −3 per doubling of alcohol consumption, p=3.0 × 10 −14 ). Alcohol consumption was also associated directly with measures of left ventricular mass index and left ventricular and atrial volume indices. Liver fat increased by a mean of 0.15% per doubling of alcohol consumption. Our results imply that there is not a ‘safe threshold’ below which there are no toxic effects of alcohol. Current public health guidelines concerning alcohol consumption may need to be revisited. See acknowledgements.
+Background:Excessive alcohol consumption is associated with damage to various organs, but its multi-organ effects have not been characterised across the usual range of alcohol drinking in a large general population sample.Methods:We assessed global effect sizes of alcohol consumption on quantitative magnetic resonance imaging phenotypic measures of the brain, heart, aorta, and liver of UK Biobank participants who reported drinking alcohol.Results:We found a monotonic association of higher alcohol consumption with lower normalised brain volume across the range of alcohol intakes (–1.7 × 10−3 ± 0.76 × 10−3 per doubling of alcohol consumption, p=3.0 × 10−14). Alcohol consumption was also associated directly with measures of left ventricular mass index and left ventricular and atrial volume indices. Liver fat increased by a mean of 0.15% per doubling of alcohol consumption.Conclusions:Our results imply that there is not a ‘safe threshold’ below which there are no toxic effects of alcohol. Current public health guidelines concerning alcohol consumption may need to be revisited.Funding:See acknowledgements.
 
 ## Introduction
 
@@ -40,21 +40,128 @@ Here, for the first time, we report associations across the range of population 
 
 ## Materials and methods
 
-## Study participants
+### Study participants
 
 UK Biobank is a prospective, observational study of ~500,000 people across the United Kingdom, aged 40–69 years at recruitment (2007–2010) (Sudlow et al., 2015; Bycroft et al., 2018). Here we used a subset of the UK Biobank data from participants whose brain, cardiac and/or aortic, and liver MRI images and image-derived phenotypes (IDPs) were available. Non-drinkers and those with self-reported brain, cardiac, and/or aortic diseases were excluded. IDPs of participants were included based on availability of measures after the application of exclusion criteria (brain grey matter [N = 10,143], brain white matter [N = 9053], heart [N = 11,821], aortic [N = 12,376], and liver [N = 3649]) (Figure 1). Table 1 describes characteristics of the population included in the analyses. The study is reported following the Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) guideline.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/65325/elife-65325-fig1-v2.jpg)
 
-## Baseline characteristics
+**Table 1.**
+ Participant characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Brain grey matter</th>
+      <th>Brain white matter</th>
+      <th>Heart</th>
+      <th>Aorta</th>
+      <th>Liver</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>10,143</td>
+      <td>9053</td>
+      <td>11,821</td>
+      <td>12,376</td>
+      <td>3649</td>
+    </tr>
+    <tr>
+      <td>Baseline characteristics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age (years) (mean ± SD)</td>
+      <td>62.9 ± 7.4</td>
+      <td>62.9 ± 7.4</td>
+      <td>62.8 ± 7.4</td>
+      <td>63.0 ± 7.4</td>
+      <td>55.7 ± 7.5</td>
+    </tr>
+    <tr>
+      <td>Male (%)</td>
+      <td>49.8</td>
+      <td>49.4</td>
+      <td>49.9</td>
+      <td>50.2</td>
+      <td>50.5</td>
+    </tr>
+    <tr>
+      <td>Caucasian (%)</td>
+      <td>99.8</td>
+      <td>99.8</td>
+      <td>99.8</td>
+      <td>99.8</td>
+      <td>93.2</td>
+    </tr>
+    <tr>
+      <td>Educational attainment (%)</td>
+      <td>53.2</td>
+      <td>53.5</td>
+      <td>53.5</td>
+      <td>52.9</td>
+      <td>53.1</td>
+    </tr>
+    <tr>
+      <td>Body mass index (mean ± SD)</td>
+      <td>26.7 ± 4.4</td>
+      <td>26.6 ± 4.3</td>
+      <td>26.5 ± 4.3</td>
+      <td>26.5 ± 4.2</td>
+      <td>26.5 ± 4.1</td>
+    </tr>
+    <tr>
+      <td>Hypertension (%)</td>
+      <td>39.6</td>
+      <td>39.3</td>
+      <td>39.0</td>
+      <td>39.1</td>
+      <td>46.5</td>
+    </tr>
+    <tr>
+      <td>Diabetes (%)</td>
+      <td>5.2</td>
+      <td>5.0</td>
+      <td>4.7</td>
+      <td>4.9</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>Smoking history (%)</td>
+      <td>39.7</td>
+      <td>39.4</td>
+      <td>38.6</td>
+      <td>39.1</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>Alcohol consumption (g/d) (median–IQR)</td>
+      <td>14.29 (6.46–26.78)</td>
+      <td>14.29 (6.26–26.79)</td>
+      <td>14.29 (6.70–26.79)</td>
+      <td>14.29 (6.69–26.79)</td>
+      <td>16.61 (8.93–28.86)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Baseline characteristics
 
 Information on age, sex, ethnicity, college degree education, body mass index (BMI), hypertension, diabetes, and history of smoking and cardiac, brain, and/or aortic diseases were reported at the imaging assessment. We defined participants as hypertensive if they had systolic blood pressure ≥ 140 mmHg or diastolic blood pressure ≥ 90 mmHg or were receiving antihypertensive medication (Suzuki et al., 2017). We recorded self-reported diabetes, smoking history, and college degree education.
 
-## Alcohol consumption
+### Alcohol consumption
 
 We calculated alcohol intake as grams of alcohol per day (g/d) among drinkers based on self-reported alcohol drinking from a touch-screen questionnaire described previously (Evangelou et al., 2019). Briefly, the quantity of each type of drink was multiplied by its standard drink size and reference alcohol content. Drink-specific intake during the reported drinking period was summed and converted to g/d alcohol intake for each participant with completed responses to the quantitative drinking questions. The alcohol intake for participants with incomplete responses was imputed by bootstrap resampling from the completed responses, stratified by drinking frequency and sex. Alcohol intake was log2-transformed, as it has a skewed distribution. Using this transformation, a log2 change of 1 unit translates to a doubling of alcohol consumption, e.g., from 10 g/d to 20 g/d.
 
-## Brain MRI acquisition and pre-processing
+### Brain MRI acquisition and pre-processing
 
 Details of the image acquisition are available online (Miller et al., 2016). Briefly, the T1-weighted (3D MPRAGE, 1 × 1 × 1 mm3 resolution, field of view [FOV]/matrix = 208 × 256×256, TR [repetition time] = 2000 ms, TI [inversion time] = 880 ms) brain images used here were acquired using a Siemens Skyra 3T running VD13A SP4 (Siemens Healthcare, Erlangen, Germany) with a Siemens 32-channel RF receive head coil used for structural analyses. Before analyses, the images were registered in the standard Montreal Neurological Institute (MNI) space using DARTEL tools in SPM12 (https://www.fil.ion.ucl.ac.uk/spm/software/spm12/).
 
@@ -62,31 +169,116 @@ After separate segmentation of grey and white matter and cerebrospinal fluid, ea
 
 Brain diffusion MRI images were acquired using a Stejskal-Tanner pulse sequence (Elliott et al., 2018). Our analyses used the white matter microstructural IDPs for fractional anisotropy and orientation dispersion (the extent of directional complexity of diffusion) (Zhang et al., 2012; Wood et al., 2018) for 27 probabilistically defined (Suzuki et al., 2017) white matter tracts described and made available in the UK Biobank Data Showcase (UK Biobank, 2021). The white matter microstructure measures were then expressed as mean z-scores (referenced to the mean values for the full study population) in our analyses.
 
-## Cardiac and aortic MRI acquisition and pre-processing
+### Cardiac and aortic MRI acquisition and pre-processing
 
 Details of the cardiac and aortic image acquisitions were reported previously (Petersen et al., 2016). Briefly, the cardiac and aortic MRI were acquired using a clinical wide bore 1.5T scanner (MAGNETOM Aera, Syngo Platform VD13A, Siemens Healthcare, Erlangen, Germany) with 48 receiver channels, a 45 mT/m and 200 T/m/s gradient system, and an 18-channel anterior body surface coil used in combination with 12 elements of an integrated 32 element spine coil and electrocardiographic gating for synchronisation with the cardiac cycle. The acquired images were segmented to derive IDPs using a fully convolutional network (CNN) (Bai et al., 2018; Wenjia Bai et al., 2018).
 
 The ventricular CNN image segmentation provided measures that, with adjustments for body surface area, were used as IDPs for the left ventricular mass, left ventricular end-diastolic (LVEDVI) and left ventricular end-systolic volume (LVESVI), and right ventricular end-diastolic (RVEDVI) and right ventricular end-systolic volume (RVESVI) indices. Left and right ventricular ejection fraction IDPs were derived from integrations of the primary indices as (LVEDVI – LVESVI)/LVEDVI × 100 and (RVEDVI – RVESVI)/RVEDVI × 100, respectively. The atrial image segmentation provided left and right atrial volume indices after adjustment for body surface area. The aortic image segmentation provided maximal ascending (AAoAI) and descending (DAoAI) aortic area indices and minimal ascending (AAoAImin) and descending (DAoAImin) aortic area indices after adjustment for body surface area. Ascending and descending aortic distensibilities were derived as (AAoAI – AAoAImin)/AAoAImin/(systolic – diastolic blood pressure) and (DAoAI – DAoAImin)/AAoAImin/(systolic – diastolic blood pressure), respectively (Petersen et al., 2016).
 
-## Liver fat MRI acquisition and pre-processing
+### Liver fat MRI acquisition and pre-processing
 
 Abdominal images for assessments of liver fat were acquired using a Siemens 1.5T MAGNETOM Aera. Details of the MRI acquisition and pre-processing protocol are provided elsewhere (Wilman et al., 2017). Briefly, a dual-echo Dixon Vibe protocol, which can be used to generate images distinguishing water and fat, from which liver fat could be determined, was performed (2.2 × 1.2 × 10 mm3 resolution, TR = 3.23 ms, TE = 1.44 ms). The liver MRI proton density fat fraction % derived is available to researchers through the UK Biobank Data Showcase (UK Biobank, 2021).
 
-## Statistical analysis
+### Statistical analysis
 
 We estimated the age-related differences in the brain normalised volume, cardiac, and liver fat IDPs by their regression onto age adjusted for sex, ethnicity, educational level, BMI, hypertension, diabetes, and smoking history. We then examined the magnitudes of differences in organ morphology or functional IDPs with alcohol consumption. Each IDP was regressed onto log2-transformed alcohol consumption adjusted for age, sex, ethnicity, educational level, BMI, hypertension, diabetes, and smoking history; raw coefficients are used for all measures except brain white matter diffusion measures, for which standardised coefficients are reported. Normality of the IDPs was tested using a Shapiro–Wilks test. We used partial residual plots to assess any deviation from the fitted model. Additionally, a voxel-wise parametric analysis (Fernández-Solà, 2015; McEvoy et al., 2018), which used each voxel of the grey matter maps as dependent variable and log2-transformed alcohol consumption as independent variable adjusted for intracranial volume and the same covariates as above, was conducted for mapping grey matter regions associated with alcohol consumption. In secondary analysis of brain, cardiac, and liver phenotypes, an interaction term for age and log2 alcohol consumption was included in the regression models. To correct for multiple comparisons, the significance level was set to p<0.017 and p<4.5 × 10−3 for brain and heart/aorta imaging IDPs, respectively, whereas for liver fat at p<0.05. For the voxel-wise analysis, a family-wise error-corrected threshold of p<0.05 was used for grey matter analysis. All statistical analyses were carried out using STATA 14.
 
-## Patient involvement
+### Patient involvement
 
 The performed analyses are based on existing data from a population-based cohort in the United Kingdom (UK Biobank). No patients were explicitly engaged in designing the present research question or the outcome measures, nor were they involved in developing plans for recruitment, design, or implementation of the study. No patients were asked to advise on interpretation or writing up of results. Results from UK Biobank are routinely disseminated to study participants via the study website and social media outlets.
 
 ## Results
 
-## Participant characteristics and imaging phenotypes
+### Participant characteristics and imaging phenotypes
 
 Baseline characteristics of the participants included in this study and summary IDPs are shown in Tables 1 and 2. For the five subsets in our analysis, median alcohol intakes among these drinkers were similar: ~20.9 g/d (i.e., just over two 10 g drinking units, where 125 ml of 12.5% wine is 1.25 drinking units) for men and ~10.7 g/d for women with 25th and 75th centiles ~10.3 g/d and 35.8 g/d for men and ~3.6 g/d and 17.9 g/d for women (Supplementary file 1).
 
-## Associations of alcohol consumption with brain structure
+**Table 2.**
+ Structural imaging phenotypes for brain (N = 10,143), heart (N = 11,821), and aorta (N = 12,376) in the UK Biobank.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Imaging-derived phenotypes</th>
+      <th>Mean ± SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Brain</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Normalised brain volume</td>
+      <td>0.72 ± 0.045</td>
+    </tr>
+    <tr>
+      <td>Normalised grey matter volume</td>
+      <td>0.43 ± 0.034</td>
+    </tr>
+    <tr>
+      <td>Normalised white matter volume</td>
+      <td>0.29 ± 0.020</td>
+    </tr>
+    <tr>
+      <td>Heart</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left ventricular mass index (g/m2)</td>
+      <td>46.2 ± 8.5</td>
+    </tr>
+    <tr>
+      <td>Left ventricular end-diastolic volume index (ml/m2)</td>
+      <td>80.0 ± 13.7</td>
+    </tr>
+    <tr>
+      <td>Left ventricular ejection fraction (%)</td>
+      <td>59.6 ± 5.9</td>
+    </tr>
+    <tr>
+      <td>Left atrial volume index (ml/m2)</td>
+      <td>38.8 ± 10.7</td>
+    </tr>
+    <tr>
+      <td>Right ventricular end-diastolic volume index (ml/m2)</td>
+      <td>84.5 ± 15.4</td>
+    </tr>
+    <tr>
+      <td>Right ventricular ejection fraction (%)</td>
+      <td>57.3 ± 6.0</td>
+    </tr>
+    <tr>
+      <td>Right atrial volume index (ml/m2)</td>
+      <td>46.1 ± 13.1</td>
+    </tr>
+    <tr>
+      <td>Aorta</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ascending aortic area index (mm2/m2)</td>
+      <td>455.3 ± 91.9</td>
+    </tr>
+    <tr>
+      <td>Ascending aortic distensibility (10−3mmHg−1)</td>
+      <td>1.98 ± 1.17</td>
+    </tr>
+    <tr>
+      <td>Descending aortic area index (mm2/m2)</td>
+      <td>254.1 ± 43.3</td>
+    </tr>
+    <tr>
+      <td>Descending aortic distensibility (10−3mmHg−1)</td>
+      <td>2.64 ± 1.25</td>
+    </tr>
+  </tbody>
+</table>
+
+_SD: standard deviation._
+
+### Associations of alcohol consumption with brain structure
 
 Age-related differences in normalised brain volumes (NBV) in the population, adjusted for alcohol consumption, were about 0.3% lower/year (mean ± standard error: −3.0 × 10−3 ± 0.05 × 10−5/year, p<1.0 × 10−300), consistent with previous studies (Enzinger et al., 2005). The contribution of alcohol to the observed brain volume differences was about 0.17% lower NBV per doubling of alcohol consumption (–1.7 × 10−3 ± 2.3 × 10−4, p=3.0 × 10−14). Lower volumes per doubling of alcohol consumption of both total grey (–1.2 × 10−3 ± 1.7 × 10−4, p=1.9 × 10−12) and white (–5.1 × 10−4 ± 1.2 × 10−4, p=2.1 × 10−5) matter jointly account for the lower brain volumes associated with greater alcohol intake. Partial residual plots confirmed the observed relationship without any deviations from the fitted model (Figure 2a–c).
 
@@ -102,9 +294,120 @@ Exploration of voxel-wise parametric associations of the log2-transformed g/d al
 
 Finally, given the associations of greater alcohol intake with lower white matter volumes, we explored alcohol-associated differences in fractional anisotropy, a measure of white matter microstructure, across 27 major white matter tract IDPs. The bilateral corticospinal tracts showed increased fractional anisotropy with greater alcohol intake (standardised coefficient, left, 0.013 ± 0.003 per doubling of alcohol consumption, p=1.0 × 10−4; right, 0.011 ± 0.003, p=4.20 × 10−4). This was associated with lower orientation dispersion (standardised coefficient, left, –0.013 ± 0.003, p=8.1 × 10−4; right, –0.013 ± 0.003, p=1.4 × 10−3), suggesting greater fibre coherence or a relatively reduced density of orthogonally crossing white matter tracts (Zhang et al., 2012; Mollink et al., 2017).
 
-## Associations of alcohol consumption with heart and aorta
+### Associations of alcohol consumption with heart and aorta
 
 We first tested for age-related differences in cardiac and aortic IDPs adjusted for alcohol consumption in the population. Left ventricular mass index and the left atrial and left and right ventricular end diastolic volume indices were lower with greater age. Right and left ventricular ejection fractions both were modestly greater with age. There was also a small relative increase in the right atrial volume index with age (Table 3).
+
+**Table 3.**
+ Associations of age and alcohol consumption with cardiac (N = 11,821) and aortic (N = 12,376) imaging phenotypes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Aging/year, estimate* ± SE</th>
+      <th>p-value</th>
+      <th>Alcohol, estimate* ± SE</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Heart</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Left ventricular mass index</td>
+      <td>−0.10 ± 0.01</td>
+      <td>1.3 × 10−31</td>
+      <td>0.36 ± 0.04</td>
+      <td>8.5 × 10−22</td>
+    </tr>
+    <tr>
+      <td>Left ventricular end-diastolic volume index</td>
+      <td>−0.33 ± 0.02</td>
+      <td>6.0 × 10−90</td>
+      <td>0.61 ± 0.07</td>
+      <td>4.1 × 10−17</td>
+    </tr>
+    <tr>
+      <td>Left ventricular ejection fraction (%)</td>
+      <td>0.04 ± 0.01</td>
+      <td>6.3 × 10−7</td>
+      <td>0.05 ± 0.03</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Left atrial volume index (ml/m2)</td>
+      <td>−0.12 ± 0.01</td>
+      <td>8.9 × 10−17</td>
+      <td>0.43 ± 0.06</td>
+      <td>6.0 × 10−12</td>
+    </tr>
+    <tr>
+      <td>Right ventricular end-diastolic volume index (ml/m2)</td>
+      <td>−0.33 ± 0.02</td>
+      <td>5.6 × 10−80</td>
+      <td>0.57 ± 0.08</td>
+      <td>2.5 × 10−13</td>
+    </tr>
+    <tr>
+      <td>Right ventricular ejection fraction (%)</td>
+      <td>0.04 ± 0.01</td>
+      <td>1.6 × 10−8</td>
+      <td>0.05 ± 0.03</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Right atrial volume index (ml/m2)</td>
+      <td>0.04 ± 0.02</td>
+      <td>6.9 × 10−3</td>
+      <td>0.26 ± 0.07</td>
+      <td>3.0 × 10−4</td>
+    </tr>
+    <tr>
+      <td>Aorta</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ascending aortic area index (mm2/m2)</td>
+      <td>2.75 ± 0.11</td>
+      <td>4.0 × 10−130</td>
+      <td>2.64 ± 0.50</td>
+      <td>1.5 × 10−7</td>
+    </tr>
+    <tr>
+      <td>Ascending aortic distensibility (10−3mmHg−1)</td>
+      <td>−0.09 ± 0.001</td>
+      <td>&lt;1 × 10−300</td>
+      <td>−0.006 ± 0.005</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>Descending aortic area index (mm2/m2)</td>
+      <td>1.86 ± 0.05</td>
+      <td>2.0 × 10−291</td>
+      <td>1.34 ± 0.22</td>
+      <td>2.1 × 10−9</td>
+    </tr>
+    <tr>
+      <td>Descending aortic distensibility (10−3mmHg−1)</td>
+      <td>−0.09 ± 0.001</td>
+      <td>&lt;1 × 10−300</td>
+      <td>–0.02 ± 0.005</td>
+      <td>7.5 × 10−4</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Estimates ± SE define coefficients for cardiac and aortic imaging phenotype changes per year age or per doubling of alcohol consumption (g/d) with their standard errors. The aging model was adjusted for sex, ethnicity, body mass index, and prevalence of college degree education, hypertension, diabetes, and smoking history. The alcohol consumption model was adjusted for age, sex, ethnicity, body mass index, and prevalence of college degree education, hypertension, diabetes, and smoking history. SE, standard error._
 
 Log2-transformed alcohol consumption was associated directly with measures of left ventricular and atrial mass and volume. The effects of alcohol on the cardiac IDPs were largely in opposite direction to those for age (Table 3).
 
@@ -112,7 +415,7 @@ Ascending and descending aortic area indices increased with age, while distensib
 
 The associations with alcohol appeared linear-log with no deviation as indicated by the partial residual plots (Figure 2d–n). We also explored interactions between age and log2 alcohol consumption, which were most evident for the left ventricular mass index and aortic distensibility IDPs (Supplementary file 2). There was no evidence for U-shaped associations, i.e., higher values at both the lower and higher ends of the alcohol intake distribution, for any of the aortic or cardiac IDPs.
 
-## Association of alcohol consumption with liver fat
+### Association of alcohol consumption with liver fat
 
 We did not observe age-related differences in liver fat after adjusting for alcohol consumption and other relevant variables (0.015 ± 0.01, p=0.14). There was an increase of liver fat per doubling of alcohol consumption (0.15 ± 0.06, p=0.006), with no deviation from linear-log association observed (Figure 2o).
 

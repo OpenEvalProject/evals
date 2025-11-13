@@ -28,27 +28,27 @@ The NIH appointed a Biomedical Workforce Task Force to propose how to deal with 
 
 So what do the stakeholders in biomedical research in the US need to do? In my opinion they must unite to craft strategies that nourish the best young scientists, to prune less creative projects, and to make biomedical research able to sustain itself. Achieving this will require the stakeholders to answer a number of difficult questions. Below I list six of these questions, along with my answers to them.
 
-## How can we reduce the growing reliance on soft-money PI salaries?
+### How can we reduce the growing reliance on soft-money PI salaries?
 
 Medical schools and research institutes routinely rely on NIH research project grants to pay large proportions of PI salaries—a practice that is also beginning to afflict research universities. Soft money salaries weaken collegial bonds among scholars, make researchers less willing to teach, undermine loyalties of faculty and institutions to one another, and discourage innovation by PIs. The faintest whisper of curtailing soft-money salaries strikes terror into financially threatened academic institutions, but they would be well advised to put more of their own skin into the research game. Institutions should join PIs and the NIH to schedule gradual but substantial change. At first, perhaps, no faculty investigator should receive more than 90% of their salary from research project grants; if the bar were raised 10% every five years thereafter, within 20 years no PI would receive more than 50% of their salary from grants.
 
-## How can we revise federal ‘indirect cost’ rules that reward behaviour that is not sustainable?
+### How can we revise federal ‘indirect cost’ rules that reward behaviour that is not sustainable?
 
 Innovative research depends more on good ideas, which generally come from PIs, than on laboratory bricks and mortar. However, the rules on reclaiming indirect costs on grants from the NIH and other federal agencies reward institutions for diverting funds that could be used to pay PI salaries into building new laboratories instead. The diversion reflects two problems (Alberts, 2010): (i) when an institution uses its own money to pay the salary of a PI, this is not counted as a ‘direct’ cost of research, so the institution can claim less for indirect costs from the NIH than they can when the salary of the PI is paid from the grant; (ii) institutions can reclaim certain indirect costs related to the construction of new buildings and laboratories. Until these rules are changed, research institutions would be crazy not to invest scarce funds in buildings rather than people.
 
-## How can we stop paying PhD trainees from research project grants?
+### How can we stop paying PhD trainees from research project grants?
 
 Institutions and PIs are recruiting more and more young PhD trainees as cheap labour for their labs, and paying their stipends from research project grants rather than training grants. This has three adverse consequences: first, floods of newly minted PhDs apply for postdoctoral positions and jobs in industry, in numbers that drive down their salaries in whatever job they can get; second, institutions track trainees paid from training grants, but they do a terrible job of tracking the very large number of trainees paid from research project grants, making it impossible to know their numbers and eventual fates (knowledge that is essential for regulating the numbers of PhDs and postdocs); third, although trained to a very high level in laboratory research, too many PhD graduates settle for jobs that do not involve research and may not even relate to science, thereby wasting trainee positions and research dollars (Biomedical Workforce Task Force, 2012). The NIH focuses on the third of these issues, but it appears to ignore the obvious remedy for all three: to support all PhD trainees on training grants, not research project grants. Making this change in a gradual manner would be possible, but not easy, if PIs and institutions cooperated with the NIH.
 
-## How can we create a sustainable laboratory workforce?
+### How can we create a sustainable laboratory workforce?
 
 The dangers of excessive competition among PIs and institutions, as described above, will intensify as long as training for young scientists (both graduate students and postdocs) is driven by the demand for cheap lab workers, rather than by sustainable increases in positions for new PIs. Thus it is crucial for labs to hire more staff scientists and fewer junior faculty supported primarily on grants, while maintaining a reduced but still substantial number of postdocs and young scientists in training positions. To promote such changes in laboratory personnel, PIs and institutions must work with the NIH to define both the roles and support mechanisms for staff scientists.
 
-## How can we shrink the postdoc ‘holding-tank’?
+### How can we shrink the postdoc ‘holding-tank’?
 
 This goal will also require concerted efforts of both institutes and the NIH to shorten postdoctoral service to a maximum of five years, to eliminate quasi-faculty slots that lack all institutional salary support, and to impose more stringent quality controls on entry of both US and foreign PhDs into the ‘tank’.
 
-## How can we ensure the appropriate balance between investigator-driven research into fundamental biological mechanisms, ‘big science’ and translational projects?
+### How can we ensure the appropriate balance between investigator-driven research into fundamental biological mechanisms, ‘big science’ and translational projects?
 
 The size and complexity of the NIH make it difficult to even identify and quantify how much is spent on these three areas, and it is even harder to compare them in terms of ‘bangs for your buck’. There is a vast literature on this topic but, so far as I can see, very little meaningful data. Along with many colleagues, however, I strongly suspect that current trends at NIH dangerously limit its investment in research aimed at explaining fundamental biological mechanisms. All stakeholders in biomedical research must work together to resolve these issues, relying less on pontification (by me and everyone else, whatever their opinions) and more on data and critical analysis.
 

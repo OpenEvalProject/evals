@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.25062.001 Background: Exercise-induced cognitive improvements have traditionally been observed following aerobic exercise interventions; that is, sustained sessions of moderate intensity. Here, we tested the effect of a 6 week high-intensity training (HIT) regimen on measures of cognitive control and working memory in a multicenter, randomized (1:1 allocation), placebo-controlled trial. Methods: 318 children aged 7-13 years were randomly assigned to a HIT or an active control group matched for enjoyment and motivation. In the primary analysis, we compared improvements on six cognitive tasks representing two cognitive constructs ( N = 305). Secondary outcomes included genetic data and physiological measurements. Results: The 6-week HIT regimen resulted in improvements on measures of cognitive control [BF M = 3.38, g = 0.31 (0.09, 0.54)] and working memory [BF M = 5233.68, g = 0.54 (0.31, 0.77)], moderated by BDNF genotype, with met 66 carriers showing larger gains post-exercise than val 66 homozygotes. Conclusion: This study suggests a promising alternative to enhance cognition, via short and potent exercise regimens. Clinical Trial Registration: Protocol #015078, University of Auckland. Funding: Centre for Brain Research: David Moreau and Karen E Waldie (9133-3706255). DOI: http://dx.doi.org/10.7554/eLife.25062.001
+Background: Exercise-induced cognitive improvements have traditionally been observed following aerobic exercise interventions; that is, sustained sessions of moderate intensity. Here, we tested the effect of a 6 week high-intensity training (HIT) regimen on measures of cognitive control and working memory in a multicenter, randomized (1:1 allocation), placebo-controlled trial. Methods: 318 children aged 7-13 years were randomly assigned to a HIT or an active control group matched for enjoyment and motivation. In the primary analysis, we compared improvements on six cognitive tasks representing two cognitive constructs (N = 305). Secondary outcomes included genetic data and physiological measurements. Results: The 6-week HIT regimen resulted in improvements on measures of cognitive control [BFM = 3.38, g = 0.31 (0.09, 0.54)] and working memory [BFM = 5233.68, g = 0.54 (0.31, 0.77)], moderated by BDNF genotype, with met66 carriers showing larger gains post-exercise than val66 homozygotes. Conclusion: This study suggests a promising alternative to enhance cognition, via short and potent exercise regimens. Clinical Trial Registration: Protocol #015078, University of Auckland. Funding: Centre for Brain Research: David Moreau and Karen E Waldie (9133-3706255).
 
 ## Introduction
 
@@ -46,77 +46,421 @@ In this section, we report Bayesian model comparisons, to allow quantifying the 
 
 Normality of distribution was examined for all continuous variables. If distributions were skewed, we compared results using non-corrected vs. log-transformed data, and looked for discrepancies. Although the analyses we present below are fairly robust to outliers, as priors can be adapted to reflect deviations from normality, we systematically checked consistency using standard approaches to outlier exclusion, to facilitate direct comparisons with frequentist tests. We defined outliers as values more than 3/2 times the upper quartile or less than 3/2 times the lower quartile of a given distribution, and systematically checked consistency of our results with and without inclusion.
 
-## Physiological improvements
+### Physiological improvements
 
-Participants in the exercise group saw a greater decrease in resting heart rate than controls, as demonstrated by a Bayesian ANCOVA with
+Participants in the exercise group saw a greater decrease in resting heart rate than controls, as demonstrated by a Bayesian ANCOVA with Condition (HIT vs. Control) as a fixed factor and baseline heart rate as a covariate. The full model was preferred to the model with baseline resting heart rate only: BFM = 40.45, and was the most likely given our data: P(M | Data)=0.93, assessed from equal prior probabilities (Figure 1A). In-depth analyses focused on individuals with elevated resting heart rate at baseline allowed further insights into the potency of our exercise intervention. Specifically, a Bayesian t-test on resting heart rate change showed a sizeable difference between the two groups, with larger gains for the HIT group (BF10 = 3.47, with Mgain = 6.11, SDgain = 11.64 and Mgain = 1.89, SDgain = 8.63, for HIT and Control, respectively; Hedges’ g = 0.41 (0.09, 0.73). Test-retest reliability—assessed via a comparison between pretest and posttest resting heart rate for controls only—was acceptable (r = 0.77, BF10 = 1.75 e+51).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/25062/elife-25062-fig1-v1.jpg)
 
-**Figure 1.:** (A) Violin and box plots showing change in resting heart rate (in BPM) between pretest and posttest sessions, for HIT and control groups. The dashed line shows the point of perfect equivalence between pretest and posttest measurements; values below the line indicate heart rate decreases. (B) Targeted range accuracy, defined as the ratio of maximum measured heart rate per participant (in BPM) to targeted heart rate (expected), averaged across sessions. Dark dots show accuracy based on pretest resting heart rate, whereas light dots show accuracy based on posttest resting heart rate. The blue dashed line represents the point of perfect agreement between individual targeted heart rate and maximum measured heart rate. Values above the line represent higher measured heart rate than expected from baseline. (C) Time series of the maximum heart rate (in BPM) measured for a single workout, averaged over participants, plotted across sessions. Smoothing is modeled via a non-parametric locally weighted regression using a nearest neighbor approach (i.e. local polynomial regression fitting). (D) Time series of the total number of steps for a single workout, averaged over participants, shown across sessions. Smoothing is modeled via a non-parametric locally weighted regression using a nearest neighbor approach (i.e. local polynomial regression fitting).DOI: http://dx.doi.org/10.7554/eLife.25062.003
+**Figure 1.:** (A) Violin and box plots showing change in resting heart rate (in BPM) between pretest and posttest sessions, for HIT and control groups. The dashed line shows the point of perfect equivalence between pretest and posttest measurements; values below the line indicate heart rate decreases. (B) Targeted range accuracy, defined as the ratio of maximum measured heart rate per participant (in BPM) to targeted heart rate (expected), averaged across sessions. Dark dots show accuracy based on pretest resting heart rate, whereas light dots show accuracy based on posttest resting heart rate. The blue dashed line represents the point of perfect agreement between individual targeted heart rate and maximum measured heart rate. Values above the line represent higher measured heart rate than expected from baseline. (C) Time series of the maximum heart rate (in BPM) measured for a single workout, averaged over participants, plotted across sessions. Smoothing is modeled via a non-parametric locally weighted regression using a nearest neighbor approach (i.e. local polynomial regression fitting). (D) Time series of the total number of steps for a single workout, averaged over participants, shown across sessions. Smoothing is modeled via a non-parametric locally weighted regression using a nearest neighbor approach (i.e. local polynomial regression fitting).
 
-Physiological data also provided important indications about workout intensity idiosyncrasies. We used resting heart rate at pretest to determine target intensities for each individual, such that:(1)HRTarget=HRReset+δ(HRMax−HRRest)
+Physiological data also provided important indications about workout intensity idiosyncrasies. We used resting heart rate at pretest to determine target intensities for each individual, such that:
+
+$$
+HR_{Target}=HR_{Reset}+\delta(HR_{Max}−HR_{Rest})
+$$
 
 where HRMax = 220 Age, and δ is set to. 80. This yielded an individual target range (HRTarget or above) while exercising. We then compared this range with the maximum intensity measured during each workout, to obtain an index of accuracy, or agreement, between target zone and actual effort. Results showed that participants did exercise at a suitable intensity overall, as expressed by the deviation from individual target heart rate values (MDev = 1.65, SDDev = 5.87; Figure 1B). Importantly, effort intensity was maintained stable across time, as demonstrated by moderate evidence favoring the null model over an alternate model that included time as a predictor of maximum heart rate in a Bayesian linear regression analysis [BFM = 2.87, P(M | Data)=0.74, Figure 1C]. Because individual resting heart rates tended to decrease throughout the intervention, sustained effort indicates that individuals incrementally increased workout volume, which was confirmed by additional measures such as step count [BFM = 2.979e + 10, P(M | Data) ≈ 1, for the model that included Session as a covariate, Figure 1D]. Together, these results support the notion that the intervention was adaptive, allowing workout intensities tailored to each individual.
 
 Physiological improvements are informative in two key aspects: they provide corroborating evidence for the hypothesized changes associated with exercise, and they allow identifying idiosyncratic parameters often characteristic of training interventions. However, the main goal of a cognitive intervention is to elicit cognitive gains, which were the primary outcomes of the present intervention. In the following sections, we first identify latent constructs from cognitive assessments, before discussing the impact of the intervention on these two constructs.
 
-## Exploratory factor analysis
+### Exploratory factor analysis
 
-An exploratory factor analysis using principal component extraction and promax rotation was performed on all six cognitive measures at pretest. Although less common than orthogonal rotations, oblique rotations such as promax allow factors to correlate; this property is especially appropriate when the factors extracted are assumed to be correlated to some degree−a reasonable assumption given our design. The corresponding scree plot and eigenvalues (i.e. the variance in all variables accounted for by each factor) suggested a two-component solution (see factor loadings in Table 1 and Table 1—source data 1 and 2). Subsequent test of the two-factor model confirmed that the number of factors was sufficient (χ2 (4)=0.59, p=0.96; Bayesian Information Criterion, BIC = −22.05). We refer to these two components hereafter as Cognitive Control and Working Memory. The correlation between the two factors was r = 0.32. Uniqueness values indicated that the tasks spanned an adequate range within the sample space of each construct (Table 1).10.7554/eLife.25062.004Table 1.Exploratory factor analysis for cognitive measurements at baseline. F1 (Cognitive Control) and F2 (Working Memory) refer to the factor loadings of each measure from an exploratory factor analysis with promax rotation (N = 287). Uniqueness represents the variance of each item not accounted for by the two factors.DOI: http://dx.doi.org/10.7554/eLife.25062.00410.7554/eLife.25062.005Table 1—source data 1.Scree plot for the exploratory factor analysis on all cognitive measures.The plot shows the eigenvalues associated with each factor plotted against each factor, and supports the decision to retain two factors.DOI: http://dx.doi.org/10.7554/eLife.25062.00510.7554/eLife.25062.006Table 1—source data 2.Path diagram for the exploratory factor analysis on all cognitive measures.F1 (Cognitive Control) and F2 (Working Memory) refer to the factors extracted from an exploratory factor analysis on all six cognitive measures, with promax rotation (N = 287).DOI: http://dx.doi.org/10.7554/eLife.25062.006MeasureCCWMUniquenessFlanker0.890.21Go/no-go0.710.48Stroop0.550.71Backward digit span0.700.51Backward Corsi blocks0.270.91Visual 2-back0.330.90Note: Only factor loadings greater than. 25 are included in the table.
+An exploratory factor analysis using principal component extraction and promax rotation was performed on all six cognitive measures at pretest. Although less common than orthogonal rotations, oblique rotations such as promax allow factors to correlate; this property is especially appropriate when the factors extracted are assumed to be correlated to some degree−a reasonable assumption given our design. The corresponding scree plot and eigenvalues (i.e. the variance in all variables accounted for by each factor) suggested a two-component solution (see factor loadings in Table 1 and Table 1—source data 1 and 2). Subsequent test of the two-factor model confirmed that the number of factors was sufficient (χ2 (4)=0.59, p=0.96; Bayesian Information Criterion, BIC = −22.05). We refer to these two components hereafter as Cognitive Control and Working Memory. The correlation between the two factors was r = 0.32. Uniqueness values indicated that the tasks spanned an adequate range within the sample space of each construct (Table 1).
 
-## Cognitive improvements
+**Table 1.**
+ Exploratory factor analysis for cognitive measurements at baseline. F1 (Cognitive Control) and F2 (Working Memory) refer to the factor loadings of each measure from an exploratory factor analysis with promax rotation (N = 287). Uniqueness represents the variance of each item not accounted for by the two factors.Table 1—source data 1.Scree plot for the exploratory factor analysis on all cognitive measures.The plot shows the eigenvalues associated with each factor plotted against each factor, and supports the decision to retain two factors.Table 1—source data 2.Path diagram for the exploratory factor analysis on all cognitive measures.F1 (Cognitive Control) and F2 (Working Memory) refer to the factors extracted from an exploratory factor analysis on all six cognitive measures, with promax rotation (N = 287).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>CC</th>
+      <th>WM</th>
+      <th>Uniqueness</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Flanker</td>
+      <td>0.89</td>
+      <td></td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Go/no-go</td>
+      <td>0.71</td>
+      <td></td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>Stroop</td>
+      <td>0.55</td>
+      <td></td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <td>Backward digit span</td>
+      <td></td>
+      <td>0.70</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>Backward Corsi blocks</td>
+      <td></td>
+      <td>0.27</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>Visual 2-back</td>
+      <td></td>
+      <td>0.33</td>
+      <td>0.90</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Only factor loadings greater than. 25 are included in the table._
+
+### Cognitive improvements
 
 Here, we report cognitive improvements broken down by constructs, defined based on the factors extracted from the exploratory factor analysis.
 
-A Bayesian repeated measures ANOVA on
+A Bayesian repeated measures ANOVA on Cognitive Control scores, with Session (pretest vs. posttest) as a within factor and Condition (HIT vs. Control) as a between factor, showed moderate evidence for the interaction model over the main effect model [BFM = 3.38, p(M | Data)=0.46; Table 2]. Participants in the HIT group showed larger improvements than controls from pretest to posttest (Mgain = 0.25, SDgain = 0.6 and Mgain = 0.08, SDgain = 0.47, respectively, Hedges’ g = 0.31 [0.09, 0.54]; Figure 2A, see also Figures 4–6). A Bayesian repeated measures ANOVA on Working Memory scores, with Session (pretest vs. posttest) as a within factor and Condition (HIT vs. Control) as a between factor showed strong evidence for the interaction model over the main effect model [BFM = 5233.68, p(M | Data) ≈1; Table 3]. Participants in the HIT group showed larger improvements than controls from pretest to posttest (Mgain = 0.48, SDgain = 0.83 and Mgain = 0.12, SDgain = 0.44, respectively, Hedges’ g = 0.54 [0.31, 0.77]; Figure 2B).
+
+**Table 2.**
+ Model comparisons for the Cognitive Control construct (CC) with condition as a fixed factor. The table shows the probability of each model given the data P(M | Data), the corresponding Bayes Factor, BF10 and the percentage of error. The unconditional probability for each model is 0.2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Models</th>
+      <th>P(M | Data)</th>
+      <th>BFM</th>
+      <th>BF10</th>
+      <th>Error (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Null</td>
+      <td>1.01e −5</td>
+      <td>4.05e −5</td>
+      <td>1</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Session</td>
+      <td>0.43</td>
+      <td>3.06</td>
+      <td>43120.06</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td>Condition</td>
+      <td>2.32e −6</td>
+      <td>9.28e −6</td>
+      <td>0.23</td>
+      <td>3.93</td>
+    </tr>
+    <tr>
+      <td>Main effects</td>
+      <td>0.11</td>
+      <td>0.49</td>
+      <td>11143.87</td>
+      <td>4.52</td>
+    </tr>
+    <tr>
+      <td>Interaction</td>
+      <td>0.46</td>
+      <td>3.38</td>
+      <td>43792.87</td>
+      <td>5.52</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Model comparisons for the Working Memory construct (WM) with condition as a fixed factor. The table shows the probability of each model given the data P(M | Data), the corresponding Bayes Factor, BF10 and the percentage of error. The unconditional probability for each model is 0.2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Models</th>
+      <th>P(M | Data)</th>
+      <th>BFM</th>
+      <th>BF10</th>
+      <th>Error (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Null</td>
+      <td>2.92e −13</td>
+      <td>1.17e −12</td>
+      <td>1</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Session</td>
+      <td>4.49e −4</td>
+      <td>0</td>
+      <td>1.54e + 9</td>
+      <td>1.23</td>
+    </tr>
+    <tr>
+      <td>Condition</td>
+      <td>1.84e −13</td>
+      <td>17349e −13</td>
+      <td>0.63</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>Main effects</td>
+      <td>3.15e −4</td>
+      <td>0</td>
+      <td>1.08e + 9</td>
+      <td>3.13</td>
+    </tr>
+    <tr>
+      <td>Interaction</td>
+      <td>1</td>
+      <td>5232.68</td>
+      <td>3.42e + 12</td>
+      <td>2.91</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/25062/elife-25062-fig2-v1.jpg)
 
-**Figure 2.:** Violin and box plots showing gains in Cognitive Control (A) and Working Memory (B) between pretest and posttest sessions, for HIT and control groups.DOI: http://dx.doi.org/10.7554/eLife.25062.009
+**Figure 2.:** Violin and box plots showing gains in Cognitive Control (A) and Working Memory (B) between pretest and posttest sessions, for HIT and control groups.
 
 Because the cognitive improvements we reported are presumably based on physiological changes, we directly tested the relationship between the two types of variables. A Bayesian regression analysis showed that change in resting heart rate was a reliable predictor of cognitive gains in the HIT group, with respect to Cognitive Control (BF10 = 6.34, p(M | Data)=0.86). This was not the case in the Control group (BF10 = 0.20, p(M | Data)=0.16). The contrast was weaker when comparing Working Memory gains in the HIT group (BF10 = 0.56, p(M | Data)=0.36) with those of the Control group (BF10 = 0.18, p(M | Data)=0.15). Additional Bayesian regression analyses showed that lower resting heart rate at pretest did not predict improvements in either Cognitive Control or Working Memory in the HIT group (BF10 = 0.41, p(M | Data)=0.29. and BF10 = 0.18, p(M | Data)=0.15, respectively). This was also the case when the analyses were restricted to the. 75 quantile of individuals with the lowest resting heart rate at baseline (BF10 = 0.34, p(M | Data)=0.25. and BF10 = 0.62, p(M | Data)=0.38, respectively). Overall, baseline resting heart rate was a fairly noisy measure (M = 85.2, SD = 14.77, over the entire sample) and this might have contributed to the lack of clear impact of resting heart rate change on cognitive function.
 
-## Effect of BDNF genotype
+### Effect of BDNF genotype
 
-A subsample of our data allowed for a better understanding of individual differences in exercise-induced cognitive improvements. Specifically, we looked at the effect of variations in the
+A subsample of our data allowed for a better understanding of individual differences in exercise-induced cognitive improvements. Specifically, we looked at the effect of variations in the BDNF polymorphism on cognitive gains in the HIT group, via a comparison between met66 carriers (i.e. met66/ met66 or val66/ met66) and non-carriers (val66 homozygotes). Separate Bayesian repeated measures ANOVAs on Cognitive Control and Working Memory scores, with Session (pretest vs. posttest) as a within factor and BDNF polymorphism (val66 homozygotes vs. met66 carriers) as a between factor showed strong evidence for the interaction model in both cases [BFM = 31.17, p(M | Data)=0.89, and BFM = 675.92, p(M | Data)=0.99, for Cognitive Control and Working Memory, respectively, see Table 4 and Table 5]. These findings suggest that met66 carriers benefited to a greater extent than non-carriers from the exercise intervention (Cognitive Control: Mgain = 0.93, SDgain = 1.20 and Mgain = 0.05, SDgain = 0.13, Hedges’ g = 1.36 [0.52, 2.2]; Working Memory, Mgain = 0.87, SDgain = 0.64 and Mgain = 0.14, SDgain = 0.24, Hedges’ g = 1.83 [0.94, 2.72]; Figure 3). Unequal baseline scores cannot fully account for this effect since evidence for differences in Cognitive Control was limited at pretest (BF10 = 4.03, Error (%)=1.55 e −6 from a Bayesian independent samples t-test) and more substantial, but unable to account for the full effect, for Working Memory (BF10 = 17.47, Error (%)=1.22 e −6 from a Bayesian independent samples t-test). Together, these findings indicate that although genetic variations in the BDNF polymorphism are associated with cognitive differences, the latter are malleable and can be reduced with physical exercise.
+
+**Table 4.**
+ Model comparisons for the Cognitive Control construct (CC) with BDNF polymorphism as a fixed factor. The table shows the probability of each model given the data P(M | Data), the corresponding Bayes Factor, BF10 and the percentage of error. The unconditional probability for each model is 0.2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Models</th>
+      <th>P(M | Data)</th>
+      <th>BFM</th>
+      <th>BF10</th>
+      <th>Error (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Null</td>
+      <td>0.01</td>
+      <td>0.06</td>
+      <td>1</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Session</td>
+      <td>0.03</td>
+      <td>0.12</td>
+      <td>1.94</td>
+      <td>1.45</td>
+    </tr>
+    <tr>
+      <td>Condition</td>
+      <td>0.02</td>
+      <td>0.10</td>
+      <td>1.65</td>
+      <td>2.60</td>
+    </tr>
+    <tr>
+      <td>Main effects</td>
+      <td>0.04</td>
+      <td>0.19</td>
+      <td>3.05</td>
+      <td>1.71</td>
+    </tr>
+    <tr>
+      <td>Interaction</td>
+      <td>0.89</td>
+      <td>31.17</td>
+      <td>59.49</td>
+      <td>24.61</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Model comparisons for the Working Memory construct (WM) with BDNF polymorphism as a fixed factor. The table shows the probability of each model given the data P(M | Data), the corresponding Bayes Factor, BF10 and the percentage of error. The unconditional probability for each model is 0.2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Models</th>
+      <th>P(M | Data)</th>
+      <th>BFM</th>
+      <th>BF10</th>
+      <th>Error (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Null</td>
+      <td>2.47e −5</td>
+      <td>9.90e −5</td>
+      <td>1</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Session</td>
+      <td>0</td>
+      <td>0.01</td>
+      <td>79.86</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>Condition</td>
+      <td>3.52e −5</td>
+      <td>1.41e −4</td>
+      <td>1.42</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>Main effects</td>
+      <td>0</td>
+      <td>0.01</td>
+      <td>155.37</td>
+      <td>5.84</td>
+    </tr>
+    <tr>
+      <td>Interaction</td>
+      <td>0.99</td>
+      <td>675.92</td>
+      <td>40159.39</td>
+      <td>3.51</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/25062/elife-25062-fig3-v1.jpg)
 
-**Figure 3.:** BDNF allele on cognitive improvements.μ and σ parameter estimates from the posterior distribution for the difference between 2BDNF met carriers and non-carriers (met66 – val66 homozygotes) in cognitive gains. Estimates were generated from 10,000 iterations, in one chain, with thinning interval of one (no data point discarded). (A) Trace of μ for Cognitive Control. (B) σ estimate for Cognitive Control. (2C) Trace of μ for Working Memory. (D) σ estimate for Working Memory.2DOI: http://dx.doi.org/10.7554/eLife.25062.012
+**Figure 3.:** μ and σ2 parameter estimates from the posterior distribution for the difference between BDNF met carriers and non-carriers (met66 – val66 homozygotes) in cognitive gains. Estimates were generated from 10,000 iterations, in one chain, with thinning interval of one (no data point discarded). (A) Trace of μ for Cognitive Control. (B) σ2 estimate for Cognitive Control. (C) Trace of μ for Working Memory. (D) σ2 estimate for Working Memory.
 
-## Priors and robustness
+### Priors and robustness
 
 All priors used in the reported analyses are default prior scales (Morey and Rouder, 2015). For Bayesian repeated measures ANOVA and ANCOVA, the prior scale on fixed effects is set to 0.5, the prior scale on random effects to 1, and the prior scale on the covariate to 0.354. The latter is also used in Bayesian Linear Regression. The Bayesian t-test uses a Cauchy prior with a width of √2/2 (~0.707), that is half of parameter values lies within the interquartile range [−0.707; 0.707].
 
-It is worth pointing out that the Bayesian repeated measures ANOVA that showed only moderate evidence for the effect of our HIT intervention on Cognitive Control shows stronger evidence with a slight variation on the prior scale. Although this variation in priors is consistent with our data and provides stronger evidence for our claim, we chose to report analyses with default prior scales, as these were the intended parameters
+It is worth pointing out that the Bayesian repeated measures ANOVA that showed only moderate evidence for the effect of our HIT intervention on Cognitive Control shows stronger evidence with a slight variation on the prior scale. Although this variation in priors is consistent with our data and provides stronger evidence for our claim, we chose to report analyses with default prior scales, as these were the intended parameters a priori. For transparency, we plotted below the prior and posterior distribution for the comparison between Conditions (HIT vs. Control) for Cognitive Control (Figure 4), as well as the Bayes Factor robustness check (Figure 5). Both indicate that our findings are robust and supported by a wide range of priors, as corroborated by a sequential analysis (Figure 6).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/25062/elife-25062-fig4-v1.jpg)
 
-**Figure 4.:** Conditions (HIT vs. Control) for Cognitive Control.The graph shows the density of each distribution as a function of effect size, with the prior centered on the null effect.DOI: http://dx.doi.org/10.7554/eLife.25062.013
+**Figure 4.:** The graph shows the density of each distribution as a function of effect size, with the prior centered on the null effect.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/25062/elife-25062-fig5-v1.jpg)
 
-**Figure 5.:** Conditions (HIT vs. Control) for Cognitive Control.The figure shows our default prior, as well as wide and ultrawide priors. Importantly, the curve shows stronger evidence for our hypothesis with narrower priors, indicating that our conclusions are not based on a restricted range of priors.DOI: http://dx.doi.org/10.7554/eLife.25062.014
+**Figure 5.:** The figure shows our default prior, as well as wide and ultrawide priors. Importantly, the curve shows stronger evidence for our hypothesis with narrower priors, indicating that our conclusions are not based on a restricted range of priors.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/25062/elife-25062-fig6-v1.jpg)
 
-**Figure 6.:** The graph shows the strength of evidence (as expressed by BF10) as N increases.DOI: http://dx.doi.org/10.7554/eLife.25062.015
+**Figure 6.:** The graph shows the strength of evidence (as expressed by BF10) as N increases.
 
-## Markov chain Monte Carlo (MCMC) Parameters
+### Markov chain Monte Carlo (MCMC) Parameters
 
-Broadly speaking, MCMC methods approximate the true posterior density p(θ | y) by constructing a Markov chain on the state space θ ∈ Θ. The probability of the subsequent state in a given chain can be defined as:(2)P(Xn+1=in+1|Xn=In),  I ∈ θ
+Broadly speaking, MCMC methods approximate the true posterior density p(θ | y) by constructing a Markov chain on the state space θ ∈ Θ. The probability of the subsequent state in a given chain can be defined as:
 
-where {X0, X1,..} is a sequence of random variables and θ is the state space. Accordingly, the state at time step n + 1 is dependent only on the state at time n. This process is best represented with a random walk where each vertex is defined by θ, and weighted by the transition probabilities:(3)pij=P(Xn+1=j|Xn=i),  i,j∈θ
+$$
+P(X_{n+1}=i_{n+1}|X_{n}=I_{n}),  I \in \theta
+$$
+
+where {X0, X1,..} is a sequence of random variables and θ is the state space. Accordingly, the state at time step n + 1 is dependent only on the state at time n. This process is best represented with a random walk where each vertex is defined by θ, and weighted by the transition probabilities:
+
+$$
+p_{ij}=P(X_{n+1}=j|X_{n}=i),  i,j\in\theta
+$$
 
 In the analyses reported in the paper, MCMC was used to generate posterior samples via the Metropolis-Hastings algorithm (see for details Rubinstein and Kroese, 2011). All analyses were set at 10,000 iterations, with diagnostic checks for convergence. One chain per analysis was used for all analyses reported in the paper, with a thinning interval of 1 (i.e., no iteration was discarded).
 
-## Frequentist analyses
+### Frequentist analyses
 
 We reported Bayesian analyses throughout the paper. Because we understand that some readers may wish to compare these results with the equivalent frequentist analyses, we are providing all of these herein, in the order of presentation in the paper. Note that an a priori power analysis based on previous studies (Erickson et al., 2013; Moreau et al., 2015) indicated the need for a minimum N of 129 participants per group to detect an effect of d = 0.35 on the primary outcome measures, with 1 – β = 0.80 and α = 0.05. The actual sample size of the present study (N = 152 and N = 153, for HIT and control groups, respectively) allowed an a priori power of. 86, given d and α constant.
 
 We present below analyses for each cognitive tasks included in this study. Descriptive statistics are reported in Table 6.
 
-## Additional analyses
+**Table 6.**
+ Mean cognitive scores (SDs) for the two conditions at pretest and posttest. Scores are scaled and centered for each task (z-transformed by row).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">HIT</th>
+      <th colspan="2">Control</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Pretest</th>
+      <th>Posttest</th>
+      <th>Pretest</th>
+      <th>Posttest</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Flanker</td>
+      <td>−0.14 (1.20)</td>
+      <td>0.16 (0.66)</td>
+      <td>−0.06 (1.18)</td>
+      <td>0.04 (0.85)</td>
+    </tr>
+    <tr>
+      <td>Go/no-go</td>
+      <td>−0.09 (1.11)</td>
+      <td>0.08 (0.96)</td>
+      <td>0.01 (1.04)</td>
+      <td>0.01 (0.88)</td>
+    </tr>
+    <tr>
+      <td>Stroop</td>
+      <td>−0.11 (1.19)</td>
+      <td>0.16 (0.38)</td>
+      <td>−0.09 (1.31)</td>
+      <td>0.04 (0.83)</td>
+    </tr>
+    <tr>
+      <td>Backward digit span</td>
+      <td>−0.14 (1.07)</td>
+      <td>0.25 (0.55)</td>
+      <td>−0.13 (1.34)</td>
+      <td>0.02 (0.82)</td>
+    </tr>
+    <tr>
+      <td>Backward Corsi blocks</td>
+      <td>−0.13 (1.55)</td>
+      <td>0.31 (0.35)</td>
+      <td>−0.17 (0.92)</td>
+      <td>0.00 (0.73)</td>
+    </tr>
+    <tr>
+      <td>Visual 2-back</td>
+      <td>−0.24 (1.62)</td>
+      <td>0.33 (0.51)</td>
+      <td>−0.06 (0.74)</td>
+      <td>−0.03 (0.69)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Additional analyses
 
 Here, we report analyses for which our a priori hypotheses were null effects. These variables were collected either to control for potential confounds, or for exploratory purposes.
 
@@ -154,47 +498,47 @@ Finally, it is important to acknowledge that physical exercise, regardless of th
 
 We report here a multicenter, randomized (1:1 allocation), placebo-controlled trial. Design and reporting are consistent with CONSORT guidelines (http://www.consort-statement.org/). Participants, parents and school principals gave their informed consent for inclusion in this study, and the Ethics Committee at the University of Auckland approved all procedures. The full protocol and statistical analysis plan are available online at https://github.com/davidmoreau/2017_eLife.
 
-## Participants
+### Participants
 
 A total of 318 children participated in this study. Thirteen participants were not included in the analyses because of dropouts (N = 7), extensive missing data (N = 4) or problems in data collection (N = 2, see CONSORT flow diagram for details). Our final sample consisted of 305 children (Mage = 9.9 (7–13), SDage = 1.74, 187 female, MBMI = 18.3, SDBMI = 6.26). They were recruited from six schools across New Zealand, providing a sample of various socioeconomic deciles (three public institutions, three private), locations (three urban institutions, three rural), and ethnic backgrounds representative for the country (70% New Zealand European, 20% Pacific, 7% Asian, 3% Other). The number of students involved per school ranged from 5 to 83 (M = 50.8, SD = 31). All participants reported no history of brain trauma or epilepsy, and all had self-reported normal or corrected-to-normal vision. A subset of 22 children reported a learning disability diagnosis (dyslexia: 14, ADHD: 3, Autism spectrum disorder: 3, mild developmental delay: 2, Irlen syndrome: 2, dyscalculia: 1, dyspraxia: 1). Respective subsets of 284, 99 and 32 participants underwent all assessments, measurements and genotyping described below. All the variables measured in the experiment are reported hereafter.
 
-## Cognitive assessments
+### Cognitive assessments
 
 Testing was conducted on school premises. All cognitive assessments were computer-based, administered in groups of a maximum of 15 students. This limit on the number of participants tested at a given time was implemented to minimize potential averse effects of group testing. These assessments have shown to be adequate measures of both cognitive control and working memory (Anderson-Hanley et al., 2012; Aron and Poldrack, 2005; Kane et al., 2004; Nee et al., 2007; Pajonk et al., 2010; Rudebeck et al., 2012; Unsworth and Engle, 2007). For each task, we measured accuracy and response time. Different stochastic variations of all tasks were used at pretest and posttest. Unless specified otherwise, the number of trials varied based on individual performance to allow reaching asymptotes, with a minimum and a maximum specified for each task. The reliability of this method for each task was assessed from a separate sample (N = 34, Mage = 10.3 (8–12), 15 females), and deemed acceptable (all ρs > 0.65) based on Spearman-Brown prophecy formula (Brown, 1910; Spearman, 1910). Specifically, reliability was calculated by comparing test scores on the asymptotic version vs, the maximal-length version, for each task (see trial length details below and online repository for source code data). The order below was the order of presentation for every participant at both pretest and posttest (i.e., Flanker – Go/no-go – Stroop – Backward digit span – Backward Corsi blocks – Visual 2-back). Both testing sessions were scheduled at the same time of the day, and lasted approximately one hour.
 
-## Flanker
+#### Flanker
 
 Participants viewed a series of arrows, either pointing to the left of the right of the screen. They were instructed to ignore all stimuli but the arrow at the center of the screen (target), and respond by pressing the left or right key when presented with arrows pointing left or right, respectively. For any given trial, the number of arrows displayed ranged from three to 25, with equal probability for congruent and incongruent trials. All sessions included 20 trials. We recorded accuracy and response time for both congruent and incongruent trials.
 
-## Go/no-go
+#### Go/no-go
 
 Participants were presented with a series of circles, either uniform or patterned. The uniform circle required a key response (‘go’) whereas the other required no response (‘no-go’). If response was required, the stimulus remained visible indefinitely, until a response was made. When the stimulus required no response, it disappeared after 2000 ms. A self-paced button press triggered the start of the next trial. The interval from the button press to the presentation of the stimulus ranged from 500 ms to 2000 ms (randomly jittered). A session included between 12 and 40 trials.
 
-## Stroop
+#### Stroop
 
 Participants were presented with a series of color words, in a colored font either congruent or incongruent, drawn with equal probability. They were instructed to attend to the color of the font, and to respond by pressing the key corresponding to the appropriate color on the keyboard. Stimuli remained visible until a response was made. A session included between 20 and 50 trials. We recorded accuracy and response time for both congruent and incongruent trials.
 
-## Backward digit span
+#### Backward digit span
 
 Participants viewed a series of digits from 1 to 9 presented sequentially for 1000 ms, with 500 ms intertrial intervals. They were instructed to respond by entering the corresponding digits on the keyboard at the end of each trial. Hierarchical item randomization allowed the presentation of a maximum of two identical digits consecutively. For each trial, answers could be corrected until submitted. A self-paced button press triggered the start of the next trial. A session included 12 to 40 trials.
 
-## Backward Corsi blocks
+#### Backward Corsi blocks
 
 Participants were presented with a series of locations on a block, sequentially for 1000 ms, with 500 ms intertrial intervals. They were instructed to respond by clicking on the corresponding locations at the end of each trial. Hierarchical item randomization did not allow presentation of identical locations consecutively. For each trial, no correction was allowed once submitted. A self-paced button press triggered the start of the next trial. A session included 12 to 40 trials.
 
-## Visual 2-back
+#### Visual 2-back
 
 Participants viewed a series of pictures presented sequentially for 2000 ms, with 500 ms intertrial intervals. They were instructed to press a key to signal a match, that is, two identical pictures interleaved with one stimulus in between (i.e., 2-back). No action was required in the absence of match. The number of matches ranged from 20 to 35 per session, randomized. A session included 40 to 70 trials.
 
-## Physiological measurements
+### Physiological measurements
 
 Physiological measures were collected using FitbitChargeHRTM, powered by the MEMS tri-axial accelerometer. This multisensory wristband has shown adequate accuracy and reliability in previous studies for the measures of interest in the present study (e.g., de Zambotti et al., 2016). Measures included minutes of activity, calories burned, intensity, intensity range (sedentary, lightly active, fairly active, very active), steps and heart rate (measured by changes in blood volume using PurePulseTM LED lights).
 
-## Questionnaire
+### Questionnaire
 
 Participants provided information about the following: ethnic background, age, gender, handedness, height, weight, diagnosis of learning disorder, brain trauma or epileptic seizures, current or past enrolment in a remediation or a cognitive training program, and whether English was their first language. In addition, self-reported information was gathered to quantify videogaming and physical exercise habits (4-point Likert scale in both cases), as well as to evaluate overall health, happiness, sleep quality, and mindset (6-point Likert scale for each item). The latter was intended to capture beliefs about the malleability of cognitive ability in the context of schoolwork, that is, the extent to which students perceive academic achievement in a predominantly fixed or malleable manner (see for example Paunesku et al., 2015). All measures were collected prior to the intervention, but variables susceptible to change over time were reassessed post-intervention.
 
-## Genotyping
+### Genotyping
 
 DNA collection was performed using Oragene-DNA Self-Collection kits, in a manner consistent with the manufacturer's instructions. DNA was subsequently extracted from all saliva samples according to a standardized procedure (Nishita et al., 2009). All resultant DNA samples were resuspended in Tris-EDTA buffer and were quantified used Nanodrop ND-1000 1-position spectrophotometer (Thermo Scientific, Waltham, MA, USA).
 
@@ -202,9 +546,92 @@ DNA samples were diluted to 50 ng/μL. A modified version of the method describe
 
 PCR product (6.5 μL) was incubated with Pm1l at 37°C overnight. The digestion products were analyzed using a high-resolution agarose gel (4%) with a Quick Load 100 bp ladder (BioLabs) and a GelPilot Loading Dye (QIAGEN). After immersion in an ethidium bromide solution for 10 min, DNA was visualized under ultraviolet light. Enzyme digestion resulted in a 113 bp fragment for the BDNF met66 allele, and 78 and 35 bp fragments for the val66 allele. This procedure is consistent with the one described by Erickson et al. (2008).
 
-## Intervention
+### Intervention
 
-Participants were randomly assigned to either an exercise group (N = 152) or a control (N = 153) group (see Table 7). Randomization was computer-based, generated in R (Core Team R, 2016) by one of the authors (D.M.). Group allocation was performed at the individual level. Testers were blind to group allocation.10.7554/eLife.25062.017Table 7.Demographics and sample characteristics at baseline.DOI: http://dx.doi.org/10.7554/eLife.25062.017HITControlsTotalSample (N) Gender152 90 f./62 m.153 97 f./56 m.305 187 f./118 m.Age9.87 (1.81)9.96 (1.68)9.91 (1.74)Handedness (LH/Ambid.)18/314/332/6BMI 18.1 (3.92)18.51 (7.89)18.31 (6.25)LD diagnosis131629Previous remediation81422Videogaming2.32 (0.95)2.43 (0.96)2.38 (0.97)Physical exercise3.06 (0.8)2.95 (0.78)3.03 (0.81)Happiness4.53 (1.25)4.61 (1.22)4.55 (1.27)Sleep quality4.07 (1.36)4.11 (1.39)4.11 (1.41)General health4.88 (1.05)4.84 (1.01)4.82 (1.06)
+Participants were randomly assigned to either an exercise group (N = 152) or a control (N = 153) group (see Table 7). Randomization was computer-based, generated in R (Core Team R, 2016) by one of the authors (D.M.). Group allocation was performed at the individual level. Testers were blind to group allocation.
+
+**Table 7.**
+ Demographics and sample characteristics at baseline.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>HIT</th>
+      <th>Controls</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sample (N) Gender</td>
+      <td>152 90 f./62 m.</td>
+      <td>153 97 f./56 m.</td>
+      <td>305 187 f./118 m.</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>9.87 (1.81)</td>
+      <td>9.96 (1.68)</td>
+      <td>9.91 (1.74)</td>
+    </tr>
+    <tr>
+      <td>Handedness (LH/Ambid.)</td>
+      <td>18/3</td>
+      <td>14/3</td>
+      <td>32/6</td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>18.1 (3.92)</td>
+      <td>18.51 (7.89)</td>
+      <td>18.31 (6.25)</td>
+    </tr>
+    <tr>
+      <td>LD diagnosis</td>
+      <td>13</td>
+      <td>16</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>Previous remediation</td>
+      <td>8</td>
+      <td>14</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Videogaming</td>
+      <td>2.32 (0.95)</td>
+      <td>2.43 (0.96)</td>
+      <td>2.38 (0.97)</td>
+    </tr>
+    <tr>
+      <td>Physical exercise</td>
+      <td>3.06 (0.8)</td>
+      <td>2.95 (0.78)</td>
+      <td>3.03 (0.81)</td>
+    </tr>
+    <tr>
+      <td>Happiness</td>
+      <td>4.53 (1.25)</td>
+      <td>4.61 (1.22)</td>
+      <td>4.55 (1.27)</td>
+    </tr>
+    <tr>
+      <td>Sleep quality</td>
+      <td>4.07 (1.36)</td>
+      <td>4.11 (1.39)</td>
+      <td>4.11 (1.41)</td>
+    </tr>
+    <tr>
+      <td>General health</td>
+      <td>4.88 (1.05)</td>
+      <td>4.84 (1.01)</td>
+      <td>4.82 (1.06)</td>
+    </tr>
+  </tbody>
+</table>
 
 The exercise intervention consisted of a high-intensity workout including the following: warm-up (2 min), short bursts (5 × 20 s, interleaved with incremental breaks (30 s, 40 s, 50 s, 60 s, and a shorter 20 s break after the last workout period), and stretching (2 min). The video-based workout did not require previous experience or knowledge, as it included basic fitness movements. All movements were designed so that participants could maintain their gaze fixed on the screen at all times. All instructions were provided both verbally (audio recording) and visually (on-screen captions). Complete details and script can be found in the online repository. A complete session lasted 10 min, and was scheduled every morning on weekdays. The control condition consisted of a blend of board games, computer games, and trivia quizzes, consistent with current recommendations regarding active control groups (Boot et al., 2013) and findings showing that aerobic exercise interventions typically do not differ from other regimens with respect to participants’ expectations (Stothart et al., 2014). Consistent with this assumption, self-reported feedback indicated no difference in enjoyment or motivation between conditions, and no difference in mindsets regarding cognitive malleability (Paunesku et al., 2015).
 

@@ -13,17 +13,17 @@
 ### Affiliations
 
 1. Department of Immunobiology, The University of Arizona College of Medicine Tucson United States
-2. https://ror.org/03m2x1q45 School of Animal and Comparative Biomedical Sciences, University of Arizona Tucson United States
-3. https://ror.org/03m2x1q45 Cancer Biology Graduate Interdisciplinary Program and Genetics Graduate Interdisciplinary Program, The University of Arizona Tucson United States
-4. https://ror.org/03m2x1q45 The BIO-5 Institute, The University of Arizona Tucson United States
-5. https://ror.org/03m2x1q45 The University of Arizona Cancer Center Tucson United States
-6. https://ror.org/03m2x1q45 The Arizona Center on Aging, The University of Arizona College of Medicine Tucson United States
+2. School of Animal and Comparative Biomedical Sciences, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+3. Cancer Biology Graduate Interdisciplinary Program and Genetics Graduate Interdisciplinary Program, The University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+4. The BIO-5 Institute, The University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+5. The University of Arizona Cancer Center Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+6. The Arizona Center on Aging, The University of Arizona College of Medicine Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
 
 † Corresponding author
 
 ## Abstract
 
-CD4 + T cells use T cell receptor (TCR)–CD3 complexes, and CD4, to respond to peptide antigens within MHCII molecules (pMHCII). We report here that, through ~435 million years of evolution in jawed vertebrates, purifying selection has shaped motifs in the extracellular, transmembrane, and intracellular domains of eutherian CD4 that enhance pMHCII responses, and covary with residues in an intracellular motif that inhibits responses. Importantly, while CD4 interactions with the Src kinase, Lck, are viewed as key to pMHCII responses, our data indicate that CD4–Lck interactions derive their importance from the counterbalancing activity of the inhibitory motif, as well as motifs that direct CD4–Lck pairs to specific membrane compartments. These results have implications for the evolution and function of complex transmembrane receptors and for biomimetic engineering.
+CD4+ T cells use T cell receptor (TCR)–CD3 complexes, and CD4, to respond to peptide antigens within MHCII molecules (pMHCII). We report here that, through ~435 million years of evolution in jawed vertebrates, purifying selection has shaped motifs in the extracellular, transmembrane, and intracellular domains of eutherian CD4 that enhance pMHCII responses, and covary with residues in an intracellular motif that inhibits responses. Importantly, while CD4 interactions with the Src kinase, Lck, are viewed as key to pMHCII responses, our data indicate that CD4–Lck interactions derive their importance from the counterbalancing activity of the inhibitory motif, as well as motifs that direct CD4–Lck pairs to specific membrane compartments. These results have implications for the evolution and function of complex transmembrane receptors and for biomimetic engineering.
 
 ## Introduction
 
@@ -39,13 +39,21 @@ Accordingly, we reconstructed the evolutionary history of extant CD4 homologs fr
 
 ## Results
 
-## Evolutionary analysis of CD4
+### Evolutionary analysis of CD4
 
 We performed multiple analyses of available vertebrate CD4 ortholog sequences (n = 99 distinct sequences), representing ~435 million years of evolution, to understand how ancient and ongoing environmental challenges have influenced CD4. The analyzed sequences represent fish, reptiles (including birds), marsupials, and placental mammals. Details related to ortholog selection are outlined in Materials and methods. All sequences and files are available through the DataDryad repository associated with this manuscript. We used mouse CD4 (numbering by UniProt convention) as a reference to facilitate comparisons between evolutionary analyses and experimental studies.
 
 Analysis of sequence conservation between the full set of extant CD4 molecules, or mammalian CD4 molecules only, showed particular conservation in the ICD (Figure 1—figure supplement 1A, B). To investigate the type of evolutionary selection shaping CD4 evolution, we determined nonsynonymous (dN) and synonymous (dS) substitution rates. Codons under diversifying selection have a dN:dS ratio >1 and those under purifying selection have a dN:dS ratio <1 (Figure 1—figure supplement 1C, D). The codon-specific dN:dS ratios were calculated using a fixed effects likelihood (FEL) method on both the full and mammalian only datasets (Kosakovsky Pond and Frost, 2005). Of the 17 codons under diversifying selection, 16 (94.1%) are distributed across the CD4 ectodomain while only one is found in the TMD. Of the 126 residues under purifying selection, 98 are distributed across the CD4 ectodomain (24.8% of all codons in the ECD). In contrast, 45.5% of TMD codons (10 of 22) and 45% (18 of 40) within the ICD are under purifying selection. These data suggest that mutating putative linear motifs within the ICD is selected against, arguing that more than just the CQC clasp is important for CD4 function (Babu et al., 2011; Capra and Singh, 2007; Dyson and Wright, 2005; Gibson, 2009; Kim et al., 2003; Tompa, 2011).
 
 To further characterize the evolution of these motifs, we generated a maximum likelihood phylogenetic tree and predicted most recent common ancestor sequences at each node (Figure 1A and Figure 1—figure supplement 1E; Hochberg and Thornton, 2017). The conservation of specific residues in eutherian CD4 proteins is visualized using logo plot analysis to better consider positional variability of residues within this clade. Additionally, we provide a more complete picture of the pressures shaping CD4 molecules by associating the evolutionary selection signature (i.e., dN:dS ratio) with specific codons using both the mammalian only dataset, as well as all extant CD4 molecules (Figure 1B and Figure 1—figure supplement 1E). Particular attention was given to mouse and human CD4 due to their experimental and human health relevance.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig1-v2.jpg)
+
+**Figure 1.:** (A) Reduced representation maximum likelihood phylogenetic tree clusters of CD4 sequences are shown with mouse CD4 numbering (uniprot) used as a reference. Residues are colored based on sidechain polarity. Dashes (-) indicate an evolutionary insertion or deletion event. Predicted most recent common ancestor (MRCA) sequences are shown at each node in the tree (Node 1-4). Logo plots of extant eutherian CD4 sequences are aligned at the bottom of the tree. Each stack of letters represents the sequence conservation at that position in the alignment. The height of symbols indicates the relative frequency of each amino acid at that specific position.(B) Synonymous (dS, red bars) and nonsynonymous (dN, blue bars) substitution rates within the CD4 coding sequence are shown as calculated for all CD4 orthologs included in the initial phylogenetic analysis using the Fixed Effects Likelihood (FEL) method. Only bars for which the likelihood ratio test indicated statistical significance (alpha = 0.1) are shown. Black circles show the ratio of both these values. Codons under diversifying selection have a dN:dS ratio >1. Those under purifying selection have a dN:dS ratio <1.(C) A theoretical structural model to show the relative location of the motifs discussed here. The surface rendered ECD of human CD4 (pdb 1WIQ) was joined with a connecting peptide and TMD (built using the PyMol Molecular Graphics system), and ICD (pdb 1Q68). Note here that mouse residue numbering (uniport) is used in this model for consistency with panels A–C.(D) Covarying residues were calculated using MISTIC2. Residues that covary are indicated with a black dot and connected with a solid line. Motifs identified in this study are indicated. The logo plot represents eutherian sequences. The complete MISTIC2 results matrix is available on Dryad (https://doi.org/10.5061/dryad.59zw3r26z). Boxes are used to highlight motifs discussed in this study, while the grey shading indicates the helix-turn region within the ICD. Key: MRCA = Most Recent Common Ancestor; FEL = Fixed Effects Likelihood; dS = Synonymous; dN = nonsynonymous; ECD = Extracellular Domain; TMD = Transmembrane Domain; ICD = Intracellular Domain.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) CD4 signal for each sucrose gradient fraction is shown as a percent of the total CD4 signal detected in all fractions (left). The area under the curve (AUC) is presented for the normalized CD4 signal in the detergent resistant membrane (DRM) fractions (center) and detergent soluble membrane (DSM) fractions (right).(B) Cholera toxin subunit B (CTxB) signal is shown for each sucrose fraction normalized to the CD4 signal detected in the corresponding fraction (left). The AUC is shown for the normalized CTxB signal in the DRM (center) and DSM (right) fractions.(C) Lck signal is shown for each sucrose fraction normalized to the CD4 signal detected in the corresponding fraction (left). The AUC is shown for the normalized Lck signal in the DRM (center) and DSM (right) fractions. (D) IL-2 production is shown in response to a titration of MCC peptide (left). AUC analysis for the dose response is shown as a measure of the response magnitude (center). The average response to a low dose (41nM) of peptide is shown as a measure of sensitivity (right). For (A–C) each data point represents the mean ± SEM for the same three independent experiments (biological replicates). For (D), the dose response represents one of three experiments showing the mean ± SEM of triplicate wells (technical replicates). the magnitude and sensitivity data represents the mean ± of three independent experiments (biological replicates). One-way ANOVA with a Dunnet's posttest for comparisons with WT samples, or a Sidak's posttest for comparisons between selected samples, were performed. Key: AUC = Area Under the Curve; DRM = Detergent Resistant Membrane; DSM = Detergent Soluble Membrane; CTxB = Cholera Toxin subunit B.
 
 First, we asked if our analyses would highlight residues that we know to be important for CD4 function by focusing on the evolutionary history of residues in the D3 domain of the CD4 ectodomain that form a solvent-exposed nonpolar patch in 3D space, stabilize TCR–CD3–pMHCII–CD4 assemblies, and increase pMHCII-specific responses (P228, F231, and P281) (Figure 1C; Glassman et al., 2018; Wu et al., 1997). The predicted most recent common ancestor of all amniotes contains a PLXF motif (mouse 228–231) in the D3 domain that is maintained in mammals (Figure 1A, node 1). P281 is not found in the predicted amniote most recent common ancestor but is in the mammalian most recent common ancestor, and extant mammals, suggesting that it arose after mammals diverged from reptiles. Importantly, P228, L229, F231, and P281 have small dN:dS values that are primarily driven by low dN rates, indicating that changing these residues likely affects fitness. Structural analysis indicates that L229 is buried in the hydrophobic core of the D3 domain as is L282 adjacent to P281, while the solvent-exposed P228, F231, and P281 impact CD4 function (Glassman et al., 2018; Wu et al., 1997). These analyses show that our approach identified D3 residues of known functional importance.
 
@@ -59,13 +67,13 @@ Further downstream, NMR has shown that the ICD of human CD4 contains a helix-tur
 
 Finally, C-terminal to the CQC clasp, mammalian CD4 contains a consensus HRΦQK motif (mouse 448–452 in which Φ represents a large hydrophobic residue; Figure 1A). This putative motif is not present in extant fish, reptiles, birds, or even the marsupial CD4 orthologs sequenced to date. Yet, within the mammalian dataset, the codons for H448 and R449 were found to be under purifying selection (Figure 1B). The NMR solution structure of the CD4 ICD indicates that this region is unstructured within human CD4 (Kim et al., 2003). Given the above analyses, we propose that these residues are likely to be of functional importance.
 
-## Covariation analyses suggest coevolution of motifs in the ECD and ICD
+### Covariation analyses suggest coevolution of motifs in the ECD and ICD
 
 Because some of the motifs considered above co-arose in mammals or eutherians, we explored if residues in these regions showed evidence of covariation. Constraints on protein function can lead to correlated mutations between residues in a protein that provide further evidence of their functional importance and can highlight networks of functional residues within a protein (Lockless and Ranganathan, 1999). We therefore used MISTIC2 to calculate the covariation between residues of CD4 (Colell et al., 2018; Kowarsch et al., 2010). MISTIC2 quantifies correlations using mutual information as a measure for how much information one random variable provides about another, allowing for detection of covarying relationships between residues that are spatially distant and not just those that are proximal. The exact mechanisms that lead to residue covariation are poorly understood. However, it is widely assumed that the excess of correlated changes in pairs of residues across an evolutionary tree result from molecular coevolution (Brown and Brown, 2010; Capra et al., 2010; Dunn et al., 2008; Hopf et al., 2015; Larson et al., 2000; Marks et al., 2011; Martin et al., 2005; Reynolds et al., 2011).
 
 By analyzing the full dataset we identified five pairs of covarying residues within the ICD helix-turn region (S432–I434; S432–S439; I434–K441; L437–S439; L437–K442), which may be relevant to the structure of this region, its function, or both (Figure 1D). Interestingly, G402 covaries with L438, suggesting covariation between the TMD and ICD. Furthermore, H423 covaries with I434 and S439, and R426 covaries with S439. We also found that P228 and P281 of the nonpolar patch in the D3 domain of the ECD show strong covariation with residues in the ICD helix. Specifically, our data suggest that P228 covaried with S432, I434, S439, and K441, while P281 covaried with S432, L438, and K442. Given that these covarying residues reside in distinct regions that either preclude direct interactions (e.g., ECD, TMD, and ICD), or show no evidence of direct interactions in existing structures (Kim et al., 2003), one interpretation of these results is that the covarying residues represent a network of functional motifs that regulate CD4 activity either through the additive impact of their individual functions and/or through allosteric means.
 
-## Functional analysis of motifs
+### Functional analysis of motifs
 
 The results above suggest a fitness cost for eutherians if mutations are acquired at residues in the described motifs. Seminal structure–function analyses of CD4 in 58α−β− T cell hybridomas established a link between CD4–Lck interactions via the CQC clasp and IL-2 production (Glaichenhaus et al., 1991). We therefore performed similar analyses to ask if there is a functional interplay between the transmembrane GGXXG and juxtamembrane CV +C motifs that co-arose in eutherians and may be part of a larger, more continuous functional unit. We also analyzed the IKRLL motif, S432, and S439 residue of the intracellular helix as prior work and our covariation analysis suggested that the intracellular helix may be a multifunctional hub (Kim et al., 2003; Sleckman et al., 1992).
 
@@ -77,11 +85,150 @@ To study the impact of the mutations on membrane localization, Triton X-100 lysa
 
 Finally, to study the impact of the mutations on signaling we cocultured the 58α−β− cells with I-Ek+ M12 cells and a MCC peptide titration to measure IL-2 production as an endpoint readout of signaling. AUC analysis of IL-2 production allowed us to compare response magnitude between samples while responses at the lowest peptide dose (41 nM) reported sensitivity. We also analyzed CD4 and TCR endocytosis which are thought to be linked and serve as measures of pMHCII engagement, although the motifs studied here could impact CD4 endocytosis (Balagopalan et al., 2009; Sleckman et al., 1992). Additionally, we asked if differences in IL-2 production could be linked to differences in proximal pMHCII-specific signaling events by analyzing phosphorylation of key TCR proximal signaling intermediates by flow cytometry (pCD3ζ, pZap70, and pPlcγ1).
 
-## The GGXXG and CV +C motifs influence CD4 membrane localization and function
+### The GGXXG and CV +C motifs influence CD4 membrane localization and function
 
 First, we asked if the GGXXG and CV +C motifs together influence membrane domain localization and function. We included the CQC clasp motif in this analysis because Lck has myristylation and palmitoylation sites that could influence membrane domain localization of CD4 when associated via the clasp (Ladygina et al., 2011). Accordingly, we generated 5 c.c7+ 58α−β− cells expressing either WT CD4 or the following mutants: TMD, Palm, Clasp, TMD + Palm (TP), TMD + Palm + Clasp (TPC) (Table 1 and Figure 2—figure supplement 1).
 
+**Table 1.**
+ Motifs and mutants analyzed in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Motif location/known function</th>
+      <th>Mutant names</th>
+      <th>Mutated motif</th>
+      <th>Residue mutations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TMD/protein or cholesterol interactions</td>
+      <td>TMD</td>
+      <td>GGxxG</td>
+      <td>G403V, G406L</td>
+    </tr>
+    <tr>
+      <td>Juxtamembrane/palmitoylation</td>
+      <td>Palm</td>
+      <td>CV +C</td>
+      <td>C418S, C421S</td>
+    </tr>
+    <tr>
+      <td>TMD + palm/raft localization</td>
+      <td>TP</td>
+      <td>GGxxG, CV +C</td>
+      <td>G403V, G406L, C418S, C421S</td>
+    </tr>
+    <tr>
+      <td>ICD clasp/interact with Lck, Lat</td>
+      <td>Clasp</td>
+      <td>CQC</td>
+      <td>C444S, C446S</td>
+    </tr>
+    <tr>
+      <td>TMD + palm + clasp/raft, Lck, Lat interaction</td>
+      <td>TPC</td>
+      <td>GGxxG, CV +C, CQC</td>
+      <td>See TMD + palm + clasp above</td>
+    </tr>
+    <tr>
+      <td>Total ICD helix</td>
+      <td>H</td>
+      <td>Total helix mutation</td>
+      <td>aa430–442 (to NGPGGNPGGNAGG)</td>
+    </tr>
+    <tr>
+      <td>Total helix + clasp</td>
+      <td>HC</td>
+      <td>Total helix + CQC</td>
+      <td>aa430–442, C444S, C446S</td>
+    </tr>
+    <tr>
+      <td>Helix IKRLL only</td>
+      <td>LL</td>
+      <td>IKRLL</td>
+      <td>L437A, L438L</td>
+    </tr>
+    <tr>
+      <td>Helix serines only</td>
+      <td>SS</td>
+      <td>RMSQIKRLLSEKK</td>
+      <td>S432A, S439A</td>
+    </tr>
+    <tr>
+      <td>Phosphomimetic helix serines</td>
+      <td>pSS</td>
+      <td>RMSQIKRLLSEKK</td>
+      <td>S432D, S439D</td>
+    </tr>
+    <tr>
+      <td>Helix IKRLL + serines (does not express)</td>
+      <td>LL +SS</td>
+      <td>See LL and SS</td>
+      <td>L437A, L438L, S432A, S439A</td>
+    </tr>
+    <tr>
+      <td>Helix IKRLL + phosphomimetic serines</td>
+      <td>LL + pSS</td>
+      <td>See LL and pSS</td>
+      <td>L437A, L438L, S432D, S439D</td>
+    </tr>
+    <tr>
+      <td>C-terminally truncated CD4</td>
+      <td>CD4-T1</td>
+      <td>Ends at R422</td>
+      <td>R422 is the last residue</td>
+    </tr>
+    <tr>
+      <td>Extracellular D3 domain nonpolar patch</td>
+      <td>D3Patch</td>
+      <td>PXLF</td>
+      <td>P228E, F231E</td>
+    </tr>
+    <tr>
+      <td>Extracellular D1 C″-strand (binds pMHCII)</td>
+      <td>Δbind</td>
+      <td>GKGVLIR</td>
+      <td>K68D, V70D, L71S, I72D, R73S</td>
+    </tr>
+    <tr>
+      <td>IKRLL + D3 nonpolar patch</td>
+      <td>LL + D3Patch</td>
+      <td>IKRLL +PXLF</td>
+      <td>L437A, L438L + P228E, F231E</td>
+    </tr>
+    <tr>
+      <td>IKRLL + Δbind</td>
+      <td>LL+ Δbind</td>
+      <td>See LL + Δbind</td>
+      <td>L437A, L438L + K68D, V70D, L71S, I72D, R73S</td>
+    </tr>
+  </tbody>
+</table>
+
 To analyze membrane domain localization, we first focused on the percent of CD4 signal in each sucrose gradient fraction, relative to the total, to account for any differences in the amount of CD4 between samples and independent experiments (Figure 2A and Figure 2—figure supplement 2A). AUC analysis showed that the Palm and Clasp mutants trended lower than WT for DRM localization in our sample size, consistent with prior work (Fragoso et al., 2003), while the TP and TPC mutants were significantly reduced. The TP and TPC mutants trended slightly higher in DSMs. These data indicate that the GGXXG plus CV +C motifs together mediate CD4 localization to DRMs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig2-v2.jpg)
+
+**Figure 2.:** (A) CD4 signal for each sucrose gradient fraction is shown as a percent of the total CD4 signal detected in all fractions (left). The area under the curve (AUC) is presented for the normalized CD4 signal in the detergent resistant membrane (DRM) fractions (center) and detergent soluble membrane (DSM) fractions (right). (B) Cholera toxin subunit B (CTxB) signal is shown for each sucrose fraction normalized to the CD4 signal detected in the corresponding fraction (left). The AUC is shown for the normalized CTxB signal in the DRM (center) and DSM (right) fractions. (C) Lck signal is shown for each sucrose fraction normalized to the CD4 signal detected in the corresponding fraction (left). The AUC is shown for the normalized Lck signal in the DRM (center) and DSM (right) fractions. (D) IL-2 production is shown in response to a titration of MCC peptide (left). AUC analysis for the dose response is shown as a measure of the response magnitude (center). The average response to a low dose (41nM) of peptide is shown as a measure of sensitivity (right).For (A-C) each data point represents the mean ± SEM for the same three independent experiments (biological replicates). For (D), the dose response represents one of three experiments showing the mean ± SEM of triplicate wells (technical replicates). the magnitude and sensitivity data represents the mean ± of three independent experiments (biological replicates). One-way ANOVA with a Dunnet's posttest for comparisons with WT samples, or a Sidak's posttest for comparisons between selected samples, were performed. Key: AUC = Area Under the Curve; DRM = Detergent Resistant Membrane; DSM = Detergent Soluble Membrane; CTxB = Cholera Toxin subunit B.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Flow cytometry analysis of CD4 (left) and TCR (right) expression on 58α-β- cells. Parental 58α-β- cells served as negative control for surface expression (open black histogram trace).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Raw CD4 signal data is shown for each sucrose fraction (left). AUC is shown for the DRM (center) and DSM fractions (right). (B) Raw cholera toxin subunit B (CTxB) signal data is shown for each sucrose fraction (left). AUC is shown for the DRM (center) and DSM fractions (right). (C) Raw Lck signal data is shown for each sucrose fraction (left). AUC is shown for the DRM (center) and DSM fractions (right). For (A–C) each data point represents the mean ± SEM for the same three independent experiments (biological replicates). One-way ANOVA was performed with a Dunnett’s posttest for comparison with WT samples, and a Sidak’s posttest for comparisons between selected samples. Key: AUC = Area Under the Curve; DRM = Detergent Resistant Membrane; DSM = Detergent Soluble Membrane; CTxB = Cholera Toxin subunit B.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The change in TCR and CD4 gMFI, as measured by flow cytometry, is shown for each cell line relative to an equivalent sample cultured with APCs in the absence of MCC peptide. Each data point represents the mean ± SEM for three independent experiments (biological replicates). For endocytosis measurements were performed in triplicate (technical replicates) for each experiment. One-way ANOVA was performed with a Dunnett’s posttest for comparisons with WT samples, and a Sidak’s posttest for comparisons between selected samples. Key: APC = Antigen Presenting Cell; gMFI = geometric Mean Fluorescence Intensity.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Total Lck signal normalized to CD4 signal data is shown for the indicated cell lines. Each data point represents the mean ± SEM for the same three independent experiments (biological replicates) as in Figure 2. One-way ANOVA was performed with a Dunnett’s posttest for comparison with WT samples, and a Sidak’s posttest for comparisons between selected samples.
 
 We next normalized the cholera toxin subunit B (CTxB) signal in each fraction to the CD4 signal in that fraction to assess the amount of GM1 that co-IP’d with CD4 per fraction (Figure 2B and Figure 2—figure supplement 2B). We did this because membrane rafts are heterogenous in protein and lipid composition, and reasoned that CTxB staining would help us evaluate if our mutations allowed CD4 to remain in membrane rafts, as defined by the DRM fraction, but inhabit different subdomains with different compositions within the DRM fraction (Pike, 2006). AUC analysis revealed that the Clasp and TPC mutants within DRMs had reduced CTxB staining, and the TP mutant had lower CTxB staining than the Palm mutant. There were no noteworthy differences in the DSM fractions. For CD4 molecules within DRMs, the clasp therefore influences CD4 association with GM1-containing membrane subdomains while the GGXXG and CV +C motifs together have a greater influence on subdomain localization than the CV +C motif alone.
 
@@ -89,15 +236,63 @@ We also normalized the Lck signal in each fraction to the CD4 signal detected in
 
 To determine how these motifs influence pMHCII responses we measured IL-2 production in response to a titration of MCC peptide. If the frequency of CD4–Lck interactions is the chief determinant for pMHCII responses, then only the Clasp and TPC mutants should reduce IL-2 production as the Palm and TP mutants interacted with Lck in the DSM (Glaichenhaus et al., 1991; Stepanek et al., 2014). But, if CD4 association with Lck in the DRMs is important, then the Palm and TP mutants would be expected to have reduced IL-2 production. We observed a hierarchy of IL-2 production of WT > TMD > Palm > Clasp ≥ TP ≥ TPC in response to a titration of MCC (Figure 2D) that was reflected in AUC analysis. Also, the TP mutant produced less IL-2 than the Palm mutant. The same hierarchy of IL-2 production was observed in response to the lowest dose of MCC tested (41 nM). Of note, only the TPC mutant impacted TCR endocytosis, which is typically a measure of triggered TCRs, while CD4 endocytosis inversely mirrored the normalized CD4–Lck signal in DRMs which either suggests that the CQC motif and GGXXG together with CV +C motif directly impact CD4 endocytosis upon triggering, or that positioning of CD4 in DRMs is important for cointernalization with the TCR (Figure 2—figure supplement 3). Overall, the data suggest that the CV +C and GGXXG motifs together enhance pMHCII responses by impacting CD4 membrane domain localization rather than CD4–Lck association. Indeed, we found higher overall CD4–Lck association in the TP cells than the WT (Figure 2—figure supplement 4 and Supplementary file 1), supporting the conclusion that the frequency of CD4–Lck pairs is not the chief determinant of IL-2 responses to agonist pMHCII in this system.
 
-## The intracellular helix interacts with Lck and attenuates pMHCII responses
+### The intracellular helix interacts with Lck and attenuates pMHCII responses
 
 To study the intracellular helix-turn structure we first replaced residues 430–442 with NGPGGNPGGNAGG to disrupt the chemical and structural nature of the helix-turn region but maintain its length (Table 1). We also combined this helix (H) mutant with the clasp mutant (HC) to explore how they work together (Figure 3—figure supplement 1). Both mutants localized in DRMs and DSMs similar to the WT, both reduced CD4–Lck interactions as expected from prior work, and yet, unexpectedly, both showed a higher magnitude and sensitivity of IL-2 responses to agonist pMHCII than the WT (Figure 3 and Figure 3—figure supplements 2 and 3; Kim et al., 2003; Sleckman et al., 1992). We also observed more TCR endocytosis for the H mutant than the WT or HC mutant, indicating that the increased IL-2 output by the H mutant might reflect more triggered TCRs over the course of 16 hr. Finally, because CD4 can increase TCR dwell time on pMHCII, the failure of the H and HC mutant CD4 molecules to endocytose over the course of 16 hr of 58α−β− cell co-culture with antigen-presenting cells (APCs) could result in more sustained signaling in that time period and partially explain the increased IL-2 (Figure 3—figure supplement 4; Glassman et al., 2018; Sleckman et al., 1992).
 
-## The IKRLL motif and flanking serines regulate pMHCII responses
+![Figure 3.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig3-v2.jpg)
+
+**Figure 3.:** (A) CD4 signal for each sucrose gradient fraction is shown as a percent of the total CD4 signal detected in all fractions (left). The area under the curve (AUC) is presented for the normalized CD4 signal in the detergent resistant membrane (DRM) fractions (center) and detergent soluble membrane (DSM) fractions (right). (B) Lck signal is shown for each sucrose fraction normalized to the CD4 signal detected in the corresponding fraction (left). The AUC is shown for the normalized Lck signal in the DRM (center) and DSM (right) fractions. (C) IL-2 production is shown in response to a titration of MCC peptide (left). AUC analysis for the dose response is shown as a measure of the response magnitude (center). The average response to a low dose (41nM) of peptide is shown as a measure of sensitivity (right). For (A–C) The data are presented as in Figure 2. Key: AUC = Area Under the Curve; DRM = Detergent Resistant Membrane; DSM = Detergent Soluble Membrane.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Flow cytometry analysis of CD4 (left) and TCR (right) expression on 58α-β- cells. Parental 58α-β- cells served as negative control for surface expression (open black histogram trace).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Raw CD4 signal is shown for each sucrose fraction (left). AUC is shown for the DRM (center) and DSM fractions (right). (B) Raw Lck signal is shown for each sucrose fraction (left). AUC is shown for the DRM (center) and DSM fractions (right). For (A–B) each data point represents the mean ± SEM for the same three independent experiments (biological replicates). One-way ANOVA was performed with a Dunnett’s posttest for comparison with WT samples, and a Sidak’s posttest for comparisons between selected samples. Key: AUC = Area Under the Curve; DRM = Detergent Resistant Membrane; DSM = Detergent Soluble Membrane.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Total Lck signal normalized to CD4 signal data is shown for the indicated cell lines. Each data point represents the mean ± SEM for three independent experiments (biological replicates). One-way ANOVA was performed with a Dunnett’s posttest for comparison with WT samples, and a Sidak’s posttest for comparisons between selected samples.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** TCR (left) and CD4 (right) endocytosis after pMHCII engagement is shown for the indicated cell lines after 16 hours coculture with APCs in the presence of 10μM MCC peptide. The change in TCR and CD4 gMFI, as measured by flow cytometry, is shown for each cell line relative to an equivalent sample cultured with APCs in the absence of MCC peptide. Each data point represents the mean ± SEM for three independent experiments (biological replicates). For endocytosis, measurements were performed in triplicate (technical replicates) for each experiment. One-way ANOVA was performed with a Dunnett’s posttest for comparisons with WT samples, and a Sidak’s posttest for comparisons between selected samples. Key: APC = Antigen Presenting Cell; gMFI = geometric Mean Fluorescence Intensity.
+
+### The IKRLL motif and flanking serines regulate pMHCII responses
 
 To determine if mutating specific residues within the helix would mimic the loss of the helix (H mutant) we mutated the dileucine repeat (L437A + L438A = LL mutant) within the IKRLL motif of the ICD helix (Table 1 and Figure 1C). I/LXXLL motifs and dileucine repeats are known protein interaction mediators, and structural data indicate that they contribute to CD4 ICD helix interaction with Lck and AP-2 (Kelly et al., 2008; Kim et al., 2003). We also mutated the intracellular helix serines because (de)phosphorylation at one or both residues may regulate function (Sleckman et al., 1992). Our SS mutant (S432A.S439A) was designed to prevent phosphorylation or any interactions involving the hydroxyl groups, while the negatively charged pSS mutant (S432D.S439D) was used to mimic phosphorylation at these residues. We also combined mutations (LL + SS and LL + pSS) to infer how these residues may work together within the helix given their covariation over evolutionary time (Figure 1D). Of note, the LL + SS mutant did not express on the cell surface and thus was not analyzed further. The SS mutant had lower surface expression than the WT and the LL + pSS expression was slightly reduced (Figure 4—figure supplement 1).
 
 For these lines, the SS and LL + pSS showed a decreased percent of CD4 localized in DRMs compared with the WT, yet none of the mutations significantly changed the percent of CD4 signal localized to DSMs. Furthermore, none of the mutations impacted CD4-associated CTxB signal in DRMs, although the LL + pSS trended lower, and only the pSS and LL + pSS mutants reduced the amount of CTxB signal associated with CD4 in DSMs (Figure 4A, B and Figure 4—figure supplement 2A and B). These data suggest that the IKRLL motif alone does not influence membrane domain localization, but that the hydroxyl group on the serine residues and a negative charge at these positions can influence membrane domain localization.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig4-v2.jpg)
+
+**Figure 4.:** (A) CD4 signal normalized as a percent of the total is shown for each sucrose gradient fraction (left) along with the AUC analysis for the DRM (center) and DSM (right) fractions. (B) Cholera toxin subunit B (CTxB) signal normalized to CD4 signal detected is shown for each sucrose fraction (left) along with the AUC analysis for the DRM (center) and DSM fractions (right). (C) Lck signal normalized to CD4 signal is shown for each sucrose fractions (left) along with the AUC analysis for the DRM (center) and DSM (right) fractions. (D) IL-2 dose response to MCC peptide (left). AUC analysis as a measure of the response magnitude (center), and the average response to a low dose (41nM) of MCC as a measure of sensitivity (right) are shown. For (A–D), the data are presented as in Figure 2. Key: AUC = Area Under the Curve; DRM = Detergent Resistant Membrane; DSM = Detergent Soluble Membrane; CTxB = Cholera Toxin subunit B.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Flow cytometry analysis of CD4 (left) and TCR (right) expression on 58α-β- cells. Parental 58α-β- cells served as negative control for surface expression (open black histogram trace).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Raw CD4 signal data is shown for each sucrose fraction (left). AUC is shown for the DRM (center) and DSM fractions (right). (B) Raw cholera toxin subunit B (CTxB) signal data is shown for each sucrose fraction (left). AUC is shown for the DRM (center) and DSM fractions (right). (C) Raw Lck signal data is shown for each sucrose fraction (left). AUC is shown for the DRM (center) and DSM fractions (right). For (A–C) each data point represents the mean ± SEM for three independent experiments (biological replicates). One-way ANOVA was performed with a Dunnett’s posttest for comparison with WT samples, and a Sidak’s posttest for comparisons between selected samples. Key: AUC = Area Under the Curve; DRM = Detergent Resistant Membrane; DSM = Detergent Soluble Membrane; CTxB = Cholera Toxin subunit B.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Total Lck signal normalized to CD4 signal data is shown for the indicated cell lines Each data point represents the mean ± SEM for three independent experiments (biological replicates). One-way ANOVA was performed with a Dunnett’s posttest for comparison with WT samples, and a Sidak’s posttest for comparisons between selected samples.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** TCR (left) and CD4 (right) endocytosis after pMHCII engagement is shown for the indicated cell lines after 16 hours coculture with APCs in the presence of 10μM MCC peptide. The change in TCR and CD4 gMFI, as measured by flow cytometry, is shown for each cell line relative to an equivalent sample cultured with APCs in the absence of MCC peptide. Each data point represents the mean ± SEM for three independent experiments (biological replicates). For endocytosis measurements were performed in triplicate (technical replicates) for each experiment. One-way ANOVA was performed with a Dunnett’s posttest for comparisons with WT samples, and a Sidak’s posttest for comparisons between selected samples. Key: APC = Antigen Presenting Cell; gMFI = geometric Mean Fluorescence Intensity.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Flow cytometry analysis of CD4 (left) and TCR (right) expression on 58α-β- cells. Parental 58α-β- cells served as negative control for surface expression (Open black histogram trace). (B) TCR (left) and CD4 (right) endocytosis after pMHCII engagement is shown for the indicated cell lines after 16 hours coculture with APCs in the presence of 10μM MCC peptide. The change in TCR and CD4 gMFI, as measured by flow cytometry, is shown for each cell line relative to an equivalent sample cultured with APCs in the absence of MCC peptide. Each data point represents the mean ± SEM for three independent experiments (biological replicates). For endocytosis measurements were performed in triplicate (technical replicates) for each experiment. One-way ANOVA was performed with a Dunnett’s posttest for comparisons with WT samples, and a Sidak’s posttest for comparisons between selected samples. (C) IL-2 production is shown in response to a titration of MCC peptide (left). AUC analysis for the dose response is shown as a measure of the response magnitude (center). The average response to a low dose (41nM) of peptide is shown as a measure of sensitivity (right). For (C), the dose response represents one of three experiments showing the ± SEM of triplicate wells (technical replicates). The magnitude and sensitivity data represents the mean +/- SEM of three independent experiments (biological replicates). One-way ANOVA with a Dunnett’s posttest for comparisons with WT samples. Key: APC = Antigen Presenting Cell, MCC = Moth Cytochrome C (88-103); gMFI = geometric Mean Fluorescence Intensity; AUC = Area Under the Curve.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** (A) ELISpot data is shown for 1.25X103 58α-β- cells expressing WT CD4 or the LL mutant (Line 1) after 16hrs coculture with 1X105 M12 cells expressing tethered MCC:I-Ek molecules. Graphs of spot counts (right) and average intensity per spot (left) ± SEM are shown for an independent cell line. (B) ELISpot data is shown as in (A) for Line 2. Student's t Test were performed for statistical comparisons.
 
 Regarding CD4–Lck association, we found that the Lck signal associated with the LL mutant was reduced in the DRM fraction (Figure 4C and Figure 4—figure supplement 2C). Interestingly, CD4–Lck association trended lower for the pSS mutant than the WT and was lower than the SS mutant in DRMs. Within DSMs, the LL trended lower than the WT, the SS mutant was greatly increased over the WT, and the pSS mutant was equivalent to the WT. These data extend prior work indicating that the IKRLL motif of the ICD helix mediates CD4–Lck interactions while S432 and/or S439, which do not contact Lck directly in the NMR structure, play a role in regulating CD4–Lck association at the helix (Kim et al., 2003; Sleckman et al., 1992).
 
@@ -107,19 +302,47 @@ We also evaluated if differences in IL-2 output by these mutant cells could be c
 
 Finally, we performed ELISpot to ask if the difference in IL-2 production between the WT and LL mutant cells was due to an increased frequency of responders making IL-2. We observed more responders for the LL mutant cells than the WT for two independently generated lines (Figure 4—figure supplement 6). The average spot intensity was also higher for the LL mutant in one of the two lines tested, and trended higher for the other, which suggest each cell made more IL-2 within the assay period. The simplest interpretation of these data, when considered with the increased sensitivity and response magnitude measured by ELISA, is that the LL mutation lowers the signaling threshold that must be overcome for IL-2 production.
 
-## Evidence for counterbalancing functions between CD4 motifs
+### Evidence for counterbalancing functions between CD4 motifs
 
 The data in Figure 4D corroborated the functional link between S432 and/or S439 and the IKRLL motif predicted by our covariation analysis (Figure 1C), which also predicted a link between the intracellular helix and the ectodomain D3 nonpolar patch that arose in the predicted mammalian most recent common ancestor (Figure 1—figure supplement 1E). We hypothesized that the advantage gained from the ability of CD4 to stabilize TCR–CD3–pMHCII interactions and increase signal strength necessitated the coevolution of elements with the ability to regulate the enhanced signaling capacity. Alternatively, the inhibitory function of the helix allowed for the evolution of the nonpolar patch. Regardless, these data suggest a functional counterbalancing action between both motifs. Accordingly, we combined an ELXE mutant (P228E + F231E) of the PLXF motif in the D3 domain, which reduces 58α−β− IL-2 responses (Glassman et al., 2018), with the LL mutation (Figure 5—figure supplement 1) to ask if the ICD helix regulates the increased signaling afforded by the nonpolar patch. As a control we combined a GKGVLIR to GDGDSDS mutant in the D1 domain (CD4Δbind, Figure 1C and Table 1), which kills CD4 binding to pMHCII (Glassman et al., 2016; Parrish et al., 2015), to confirm that the LL mutant phenotype is dependent on CD4–pMHCII interactions. We found that the LL + ELXE double mutant drove similar IL-2 response magnitude and sensitivity to agonist pMHCII as the WT, while the LL + Δbind double mutant completely impaired responses (Figure 5A, B). Therefore, the intracellular helix and IKRLL motif therein do not regulate pMHCII-independent activity of CD4 in our system; rather, they counterbalance the formation of a stable TCR–CD3–pMHCII–CD4 assembly mediated by the ectodomain nonpolar patch.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig5-v2.jpg)
+
+**Figure 5.:** (A) AUC analysis of IL-2 dose response to MCC peptide are shown as a measure of the response magnitude for the indicated samples. (B) The average IL-2 response to a low dose (41nM) of MCC is shown as a measure of sensitivity for the indicated samples. For (A and B) the magnitude and sensitivity data represent the mean ± SEM of three independent experiments (biological replicates) for which triplicate measurements were performed (technical replicates). One-way ANOVA was performed with a Dunnett's posttest for comparisons with WT samples, and a Sidak's posttest for comparisons between selected samples. Individual graphs indicate experiments that were performed with cell lines generated at the same time. Key: AUC = Area Under the Curve.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) IL-2 production is shown in response to a titration of MCC peptide (left). Flow cytometry analysis of CD4 (center) and TCR (right) expression on 58α-β- cells. Parental 58α-β- cells served as negative control for surface expression (open black histogram trace). (B) IL-2 production is shown in response to a titration of MCC peptide (left). Flow cytometry analysis of CD4 (center) and TCR (right) expression on 58α-β- cells. Parental 58α-β- cells served as negative control for surface expression (open black histogram trace). For (A-B), the dose response represents one of three experiments showing the ± SEM of triplicate wells (technical replicates).
+
 Our covariation analysis also suggested a functional link between the GGXXG motif in the TMD with the intracellular helix. Because the TP mutant severely reduced the magnitude and sensitivity of IL-2, we combined it with the LL mutation (LL + TP) to ask if these mutations counterbalance each other. We found that cells expressing the double mutant had similar IL-2 responses to the WT, which were lower than the LL cells only, indicating that motifs within the TMD and ectodomain can exert counterbalancing activities on pMHCII responses (Figure 5A, B). As the GGXXG and CV +C motifs co-arose in eutherians after the intracellular helix and nonpolar patch, these data points to additional pressure to evolve motifs with the capacity to regulate CD4 function by regulating its contribution to pMHCII-specific signaling.
 
-## Distinct CD4 motifs differentially impact TCR–CD3 signal transduction
+### Distinct CD4 motifs differentially impact TCR–CD3 signal transduction
 
 Because IL-2 production is an endpoint readout for signaling, we also asked if the IL-2 phenotypes of the Clasp, TP, and LL mutants could be attributed to defects in proximal signaling events. Accordingly, we analyzed phosphorylation of CD3ζ and Zap70, both Lck substrates, as well as Plcγ1 which is phosphorylated by ITK after it is activated by Lck (Figure 2—figure supplement 4 and Figure 4—figure supplement 3; Courtney et al., 2018; Gaud et al., 2018). If the abundance of CD4–Lck pairs is directly related to the magnitude of these signaling steps, then the Clasp and the LL mutants should have lower pCD3ζ, pZap70, and pPlcγ1 levels compared to the WT because the mutations reduced total CD4–Lck abundance by ~31% and ~49% of WT levels, respectively, while the TP mutant should have increased levels of pCD3ζ, pZap70, and pPlcγ1 because this mutant increased total CD4–Lck abundance to 123% of the WT (Supplementary file 1; Glaichenhaus et al., 1991; Rudd, 2021; Stepanek et al., 2014). Alternatively, if CD4 sequesters Lck away from TCR–CD3 until pMHCII engagement to prevent signal initiation by free Lck, and free Lck is more active than CD4-associated Lck, then the Clasp and LL mutants should have equivalent or higher pCD3ζ, pZap70, and pPlcγ1 levels than the WT due to free Lck while the TP mutant should have either equivalent or reduced levels due to higher CD4–Lck interactions and sequestration (Van Laethem et al., 2007; Wei et al., 2020).
 
 To test these predictions, we analyzed pCD3ζ, pZap70, and pPlcγ1 levels by flow cytometry for TCR+ CD4+ 58α−β− cells coupled to APCs expressing either the null peptide hemoglobin 64–76 (Hb) tethered to I-Ek (Hb:I-Ek) or the agonist MCC peptide tethered to I-Ek (MCC:I-Ek) (Figure 6—figure supplement 1A–C). This approach allowed us to evaluate the impact of the CD4 motifs studied here on proximal signaling initiated by engagement of cognate ligand, which cannot be achieved with conventional anti-CD3 antibody crosslinking approaches, while the high ligand density of tethered MCC:I-Ek allowed for rapid synchronous engagement of TCRs to monitor proximal signaling events similar to conventional antibody-induced signaling (i.e., the TCRs did not have to find agonist peptide among irrelevant pMHCII on peptide-pulsed APCs). One caveat to this approach is that the high density of MCC:I-Ek might mask CD4 contributions that we and others have reported to be more apparent for responses to low densities of agonist pMHCII (Glassman et al., 2018; Irvine et al., 2002). However, this concern is somewhat mitigated by prior work showing that IL-2 production with this experimental setup is CD4 dependent (Parrish et al., 2016). Moreover, we found that TCR+ CD4+ 58α−β− cells bearing the Clasp and TP mutants made less IL-2 than those bearing the WT in response to APCs expressing tethered MCC:I-Ek, while cells bearing the LL mutant made more IL-2 than the WT (Figure 6—figure supplement 2). These data suggest that the Clasp, TP, and LL mutations similarly impact the signaling pathways that lead to IL-2 production, be it in response to low or high densities of agonist pMHCII.
 
 For the paired WT and Clasp, WT and TP, and WT and LL cell lines in Figure 6 marked by solid symbols we performed three independent experiments, collecting 10,000 coupled cells per experiment, and concatenated the flow cytometry data prior to further analysis. For those paired WT and LL mutant cells marked by open symbols, we performed the experiment once each. For data processing, we subtracted the MCC:I-Ek phospho-protein intensity from the Hb:I-Ek intensity to determine the percent of coupled cells that responded to agonist pMHCII. We then compared the mean fluorescence intensity (MFI) of the WT responders to the mutants to evaluate differences in the intensity of the response. We also compared the frequency of couples, which was unaffected by the mutations (Figure 6—figure supplement 3).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig6-v2.jpg)
+
+**Figure 6.:** (A) Phosphorylation intensity for CD3ζ (left), Zap70 (center), and Plcγ1 (right) are shown for paired (connecting line) WT and Clasp mutant cell lines. Four independently generated cell lines were tested. (B) Phosphorylation intensity for CD3ζ (left), Zap70 (center), and Plcγ1 (right) are shown for paired (connecting line) WT and TP mutant cell lines. Three independently generated cell lines were tested. (C) Phosphorylation of CD3ζ (left), Zap70 (center), and Plcγ1 (right) are shown for paired (connecting line) WT and LL mutant cell lines. Five independently generated cell lines were tested. For (A–C), filled symbols represents the mean ± SEM of concatenated data for coupled cells from three independent experiments. 10,000 coupled cells were collected per experiment (technical replicates), resulting in the concatenation of 30,000 coupled cells total from the 3 independent biological replicates. For (C), the open symbols represent the mean and ± SEM for one single experiment (10,000 coupled cells analyzed). One-way ANOVA was performed with a Dunnett's posttest when the experiments involved multiple comparisons. Student's t-test were performed for when only WT and mutant pairs were analyzed in an experiment. The derived p values for each independent cell line comparing the mutant CD4 to its paired WT is shown. Next to each symbol the number of cells determined to have responded to stimuli are shown with the percentage of responding cells.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Example of intracellular signaling analysis workflow. (A) Flow cytometry analysis of 58α-β-:M12 cell couples. Representative dot plots are shown for TCRβGFP+ CD4+ 58α-β- cells coupled to Tag-it Violet-labeled M12 cells expressing the indicated tethered pMCHII: Hb:I-Ek (left) and MCC:I-Ek (center). Representative histograms of 58α-β- cells coupled to M12 cells expressing the indicated tethered pMHCII is shown for pCD3ζ intensity. (B) A representative smoothed overlapping histogram of pCD3ζ intensity is shown for 58α-β- cells coupled to Hb:I-Ek (cyan) or MCC:I-Ek (black) expressing M12 cells. Histogram of pCD3ζ intensity for 58α-β-:MCC:I-Ek M12 cell couples subtracted from Hb:I-Ek M12 cell couples show the difference in pCD3ζ intensity on a bin-by-bin basis after stimulation with agonist MCC:I-Ek compared with null Hb:I-Ek for WT (left) and Clasp mutant (center) cells. Overlapping pCD3ζ histogram (right) of cells responding to MCC:I-Ek after Hb:I-Ek subtraction shows the responding populations for the WT and Clasp mutant cell lines. (C) Concatenated pCD3ζ average intensity ± SEM of WT and Clasp mutant cells (left) and the percent of responding WT and Clasp mutant cells (right).For pCD3ζ intensity in (C), one-way ANOVA was performed with a Dunnett’s posttest for comparison with the WT sample because other mutants were simultaneously analyzed in this experiment but are not shown.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** IL-2 production is shown for cocultures of 5X104 58α-β- hybridomas expressing the CD4 WT or CD4 mutants of Clasp, TP, and LL with the 5c.c7 TCR and with 1X105 M12 cells expressing agonist pMHCII, MCC:I-Ek for 16 hours. One-way ANOVA was performed with a Dunnett's posttest for comparison with WT samples because other mutants were simultaneously analyzed in this experiment but are not shown. Data are mean ± SEM of triplicate wells and representative of three experiments (biological replicates). Key: APC = Antigen Presenting Cell.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Coupling frequencies are shown for the WT and mutant cells lines shown in Figure 6.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/79508/elife-79508-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Phosphorylation intensity for CD3ζ (left), Zap70 (center), and Plcγ1 (right) are shown for paired (connecting line) WT and Clasp mutant cell lines. Four independently generated cell lines were tested when engaged with T102S:IEk expressing M12 cells. (B) IL-2 production is shown for cocultures of 5X104 58α-β- hybridomas expressing the CD4 WT or Clasp with the with 1X105 M12 cells expressing agonist pMHCII, T102S:I-Ek for 16 hours. Paired Student's t Test were performed for statistical comparisons. Key: APC = Antigen Presenting Cell.
 
 For the Clasp mutation, we found no difference in the pCD3ζ MFI compared to the WT for two independently generated cell lines, for a third line the pCD3ζ MFI was reduced to ~83% of WT, and for a fourth line we saw a small but statistically significant reduction to ~92% of WT (Figure 6A). There was no obvious impact on the percent of responders. Interestingly, pZap70 and pPlcγ1 MFI were significantly lower for all four Clasp lines compared to their respective WTs, despite no clear difference in percent responders. The most parsimonious interpretation of these data is that, as tested, reducing CD4–Lck interactions by mutating the CQC clasp does not prevent, or consistently reduce, pCD3ζ phosphorylation but does reduce the phosphorylation of other Lck substrates. The Clasp mutation therefore did not impact pCD3ζ levels in response to agonist pMHCII as predicted by the TCR signaling paradigm.
 
@@ -149,7 +372,7 @@ In closing, our multidisciplinary results highlight a network of function-regula
 
 ## Materials and methods
 
-## Evolutionary analyses
+### Evolutionary analyses
 
 Available CD4 orthologs were identified through reciprocal blast-based searches and downloaded from GenBank. BLAST may not only identify orthologs, so additional criteria were used to include putative orthologous CD4 sequences in our analyses: the presence of a domain structure consisting of four extracellular Ig domains followed by a TMD and a C-terminal ICD, including the presence of the Lck binding clasp (CxC). Sequences that were shorter, contained frameshift mutations, or displayed high sequence variability were excluded from the analysis. For the current study, teleost fish were considered to be the oldest living species that contain a CD4 molecule given that a CD4 ortholog was not reported in the elephant shark (Callorhinchus milii), although future analyses of other cartilaginous fishes might yield more distant orthologs (Venkatesh et al., 2014). The final dataset contained 99 unique CD4 orthologs, ranging from teleost fish to human. These (putative) coding sequences were translated to amino acids and aligned using MAFFT (Katoh et al., 2002). For codon-based analyses, the aligned amino acid sequences were back translated to nucleotides to maintain codons. The multiple sequence alignments were further processed to remove all insertions (indels) relative to the mouse CD4 sequence (NM_013488.3) to maintain consistent numbering of sites. The 5′ and 3′ regions of the CD4 molecules were not consistently aligned due to different start codon usage or extensions of the ICD, respectively. The alignment was edited to start at the codon (AAG) coding for K48 within mouse CD4. The alignment that includes all 99 CD4 sequences ends at the last cysteine residue that makes up the CQC clasp. For the mammalian only dataset, the alignment terminates at the mouse CD4 stop codon.
 
@@ -163,7 +386,7 @@ Covariation between protein residues was calculated using the MISTIC2 server. We
 
 Raw data, including alignments and phylogenetic trees, associated with Figure 1, Supplementary file 1 are available on Dryad (https://doi.org/10.5061/dryad.59zw3r26z).
 
-## Cell lines
+### Cell lines
 
 58α−β− T cell hybridoma lines were generated from Kuhns Lab stocks of parental 58α−β− T cell hybridoma cells (obtained from Y.H. Chien at Stanford University) by retroviral transduction and maintained in culture by standard techniques as previously described (Glassman et al., 2018; Letourneur and Malissen, 1989). 58α−β− T cell hybridomas lack expression of endogenous TCRα and TCRβ chains, are CD4 negative, make IL-2 in response to TCR signaling, and are variant of the DO-11.10.7 mouse T cell hybridoma (Balb/c T cell fused to BW5147 thymoma) (Letourneur and Malissen, 1989). We validate the cells lines by these characteristics as well as expression of H2-Dd to validate Balb/c origin. In brief, 1 day after transduction the cells were cultured in 5 μg/ml puromycin(Invivogen) and 5 μg/ml zeocin (Thermo Fisher Scientific) in RPMI 1640 (Gibco) supplemented with 5% fetal bovine serum (FBS) (Atlanta Biologicals or Omega Scientific), penicillin–streptomycin–glutamine (Cytiva), 10 µg/ml Ciprofloxacin (Sigma), and 50 µM beta-2-mercaptoethanol (Thermo Fisher Scientific). The next day drug concentrations were increased to 10 μg/ml puromycin (Invivogen) and 100 μg/ml zeocin (Thermo Fisher Scientific) in 10 ml in a T25 flask. Aliquot of 1 × 107 cells were frozen at days 5, 7, and 9. Cells were thawed from the day 5 freeze and cultured for 3 days in 10 μg/ml puromycin and 100 μg/ml zeocin, and maintained below 1 × 106 cells/ml to use in the functional assays. Cells used in the functional assays were grown to 0.8 × 106 cells/ml density and replicates of three functional assays were performed every other day. If cells exceeded 1 × 106 cells/ml at any point in the process they were discarded as they lose reactivity at high cell densities and a new set of vials was thawed. Typically, two independent WT and mutant pairs were generated for any given mutant and tested for IL-2 to gain further confidence in a response phenotype. When cells lines are presented together in a graph, that indicates that the cell lines (WT and mutants sets) were generated at the same time from the same parental cell stock.
 
@@ -177,13 +400,110 @@ Parental 58α−β− T cell hybridoma and M12 cells are periodically treated wi
 
 For retroviral production we used Phoenix-eco cells from the Nolan Lab (ATCC CRL-3214).
 
-## Antibodies
+### Antibodies
 
-## Flow cytometry
+<table>
+  <thead>
+    <tr>
+      <th>Antibodies</th>
+      <th>Vendor</th>
+      <th>Catalog number</th>
+      <th>RRID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>anti-mouse CD4 eFlour 450, clone GK1.5</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>48-0041-82</td>
+      <td>AB_10718983</td>
+    </tr>
+    <tr>
+      <td>anti-mouse TCRα APC, clone RR8-1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>17-5800-82</td>
+      <td>AB_19853170</td>
+    </tr>
+    <tr>
+      <td>anti-mouse CD3ε PE-Cy7, clone 145–2 C11</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>25-0031-82</td>
+      <td>AB_469572</td>
+    </tr>
+    <tr>
+      <td>anti-mouse IL-2, clone JES6-1A12</td>
+      <td>BioLegend</td>
+      <td>503,702</td>
+      <td>AB_315292</td>
+    </tr>
+    <tr>
+      <td>biotin anti-mouse IL-2, clone JES6-5H4</td>
+      <td>BioLegend</td>
+      <td>503,804</td>
+      <td>AB_315298</td>
+    </tr>
+    <tr>
+      <td>Streptavidin HRP</td>
+      <td>BioLegend</td>
+      <td>405,210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>anti-mouse TCRβ PE, clone KJ25</td>
+      <td>BD Pharmingen</td>
+      <td>553,209</td>
+      <td>AB_394709</td>
+    </tr>
+    <tr>
+      <td>biotin anti-mouse CD4 (Clone RM4-4)</td>
+      <td>BioLegend</td>
+      <td>116,010</td>
+      <td>AB_2561504</td>
+    </tr>
+    <tr>
+      <td>anti-mouse CD4 APC, clone GK1.5</td>
+      <td>BioLegend</td>
+      <td>100,412</td>
+      <td>AB_312697</td>
+    </tr>
+    <tr>
+      <td>anti-mouse Lck PE, clone 3A5</td>
+      <td>Santa Cruz</td>
+      <td>sc-433</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cholera Toxin Subunit B Alexa Fluor 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C22841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>anti-mouse pCD3ζ Alexa Flour 647, clone K25-407.69</td>
+      <td>BD Phosflow</td>
+      <td>558,489</td>
+      <td>AB_647152</td>
+    </tr>
+    <tr>
+      <td>anti-mouse pZap70 APC, clone n3kobu5</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>17-9006-42</td>
+      <td>AB_2573268</td>
+    </tr>
+    <tr>
+      <td>anti-mouse pPlcγ1 PE, clone A17025A</td>
+      <td>BioLegend</td>
+      <td>612,404</td>
+      <td>AB_2801120</td>
+    </tr>
+  </tbody>
+</table>
+
+### Flow cytometry
 
 Cell surface expression of CD4 and TCR–CD3 complexes was measured by flow cytometry. In brief, cells were stained for 30 min at 4°C in Fluorescence-Activated Cell Sorting (FACS) buffer (phosphate-buffered saline [PBS], 2% FBS, and 0.02% sodium azide) using anti-CD4 (clone GK1.5, eFluor 450 conjugate, Thermo Fisher Scientific), anti-TCRα (anti-Vα11, clone RR8-1, APC conjugate, Thermo Fisher Scientific), anti-CD3ε (145-2C11, Thermo Fisher Scientific), and GFP was detected as a measure of the TCRβ-GFP subunit. Analysis was performed on a Canto II or LSRII (BD Biosciences) at the Flow Cytometry Shared Resource at the University of Arizona. Flow cytometry data were analyzed with FlowJo Version 9 software (Becton, Dickinson & Company).
 
-## Functional assays
+### Functional assays
 
 IL-2 production was measured to quantify pMHCII responses. 5 × 104 transduced 58α−β− T cell hybridomas were cocultured with 1 × 105 transduced I-Ek+ M12 cells in triplicate in a 96 well round bottom plate in RPMI with 5% FBS (Omega Scientific), Pen-Strep + L-glutamine (Cytiva), 10 ng/ml ciprofloxacin (Sigma), and 50 μM beta-2-mercaptoethanol (Fisher) in the presence of titrating amounts of MCC 88–103 peptide (purchased from 21st Century Biochemicals at >95% purity) starting at 30 μM MCC and a 1:3 titration (Glassman et al., 2018). For experiments with APCs expressing tethered pMHCII, 5 × 104 58α−β− T cell hybridomas were cultured with 1 × 105 MCC:I-Ek+ or T102S:I-Ek+ M12 cells in triplicate in a 96-well round bottom plate using the same culture conditions as above. The supernatants were collected and assayed for IL-2 concentration by ELISA after 16 hr of co-culture at 37°C. Anti-mouse IL-2 (clone JES6-1A12, BioLegend) antibody was used to capture IL-2 from the supernatants, and biotin anti-mouse IL-2 (clone JES6-5H4, BioLegend) antibody was used as the secondary antibody. Streptavidin–Horse Radish Peroxidase (HRP) (BioLegend) and 3,3′,5,5′-Tetramethylbenzidine (TMB) substrate (BioLegend) were also used.
 
@@ -191,7 +511,7 @@ To assess engagement-induced endocytosis, CD4 surface levels were measured by fl
 
 For ELISpot analysis, 1.25 × 103 transduced 58α−β− T cell hybridomas were mixed with 1.5 × 105 M12 cells that expressed MCC peptide tethered to I-Ek in triplicate wells on a mixed cellulose ester membrane plate (Merck Millipore) coated with 10 μg/ml anti-mouse IL-2 (clone JES6-1A12, BioLegend) antibody. Cells were co-cultured for 16 hr at 37°C in culture media as listed above. Plates were washed, probed with biotin anti-mouse IL-2 (clone JES6-5H4, BioLegend), washed, and probed with streptavidin–HRP (BioLegend). KPL TrueBlue Peroxidase Substrate (Sera Care) were used to identify spots according to the manufacturer’s instructions. Spots and spot intensity were enumerated from triplicate wells on a ImmunoSpot counter from Cellular Technologies Limited using the ImmunoSpot 7.0.13.0 software.
 
-## Sucrose gradient analysis
+### Sucrose gradient analysis
 
 Membrane fractionation by sucrose gradient was performed similar to previously described methods (Hur et al., 2003; Parrish et al., 2016). For cell lysis, 6 × 107 58α−β− T cell hybridomas were harvested and washed 2× using TNE buffer (25 mM Tris, 150 mM NaCl, 5 mM Ethylenediaminetetraacetic acid (EDTA)). Cells were lysed on ice in 1% Triton-X detergent in TNE in a total volume of 1 ml for 10 min and then dounce homogenized 10×. The homogenized lysate was transferred to 14 × 95 mm Ultraclear Ultra Centrifuge tubes (Beckman). The dounce homogenizer was rinsed with 1.6 ml of the 1% lysis buffer, which was then was added to the Ultracentrifuge tube. 2.5 ml of 80% sucrose was added to the centrifuge tube with lysate and mixed well. Gently, 5 ml of 30% sucrose was added to the centrifuge tubes, creating a 30% sucrose layer above the ~40% sucrose/lysate mixture. Then, 3 ml of 5% sucrose was added gently to the centrifuge tube, creating another layer. The centrifuge tubes were spun 18 hr at 4°C in a SW40Ti rotor at 36,000 rpm.
 
@@ -201,7 +521,7 @@ Following the immunoprecipitation, FACS tubes were washed 3× using 0.1% Triton-
 
 For FFLISA analysis, raw gMFI values for fraction 1 were subtracted from the rest of the fractions to account for background, such that the gMFI of fraction 1 is 0. To normalize the data, the percentage of CD4 within any given fraction (fx) relative to the total CD4 gMFI (CD4 signal % of total) was calculated by dividing the gMFI signal in a given fraction (fx) by the sum of the total CD4 gMFI signal [sum(f1:f10)CD4 gMFI] and multiplying by 100 [e.g., fx % of total = fxCD4 gMFI/Sum(f1:f10)CD4 gMFI × 100]. To normalize the CTxB and Lck signal in any given fraction relative to the CD4 signal in that same fraction (CTxB or Lck normalized to CD4) the gMFI of CTxB or Lck in fx was divided by the CD4 gMFI of that fx and then multiplied by the percentage of CD4 within fx (e.g., Normalized fx Lck = fx Lck gMFI/fx CD4 gMFI × fx CD4% of total CD4 gMFI). AUC analysis was performed with GraphPad Prism 9 for fractions 1–6 to determine the AUC for the DRM domains due to their floating phenotypes, and for fractions 6–10 to determine the AUC for the DSM domains.
 
-## Intracellular signaling analysis
+### Intracellular signaling analysis
 
 M12 cells expressing Hb:I-Ek (null) or MCC:I-Ek (cognate) tethered pMHCII complexes were labeled with Tag-it Violet according to the manufacturer’s instructions (BioLegend). M12 cells and 58α−β− cells were then chilled on ice for 30 min, 5 × 105 of each cell type were mixed together in 1.5 ml snap cap tubes, and the cells were pelleted at 2000 rpm for 30 s at 4°C to force interactions. The supernatant was removed and the tubes were transferred to a 37°C water bath for 2 min to enable signaling. Fixation Buffer (BioLegend Inc) was then added for 15 min at 37°C. Cells were washed twice with FACs buffer, pelleted at 350 × g for 5 min at room temperature, resuspended in 1 ml True-Phos Perm Buffer (BioLegend Inc), and incubated at −20°C for 16 hr.
 
@@ -209,10 +529,10 @@ Cells were blocked with anti-mouse FcRII mAb clone 2.4G2 hybridoma supernatants 
 
 Flow cytometry data were analyzed with FlowJo Verison 10 software (Becton, Dickinson & Company) by gating on 58α−β− and M12 cell couples, as described previously (Glassman et al., 2018). Histograms of the pCD3ζ, pZap70, or pPlcγ1 intensity for the gated population were then generated and data expressing the gated populations as numbers of cells within intensity bins was exported from FlowJo into Microsoft Excel where the number of cells for each bin intensity value for MCC:I-Ek stimulated cells was subtracted from Hb:I-Ek stimulated cells on a bin-by-bin basis. This allowed us to enumerate the intensity differences per bin upon stimulation with the agonist pMHCII over background. Mean intensity and standard error of the mean were calculated based on the background subtracted (MCC:I-Ek-Hb:I-Ek) data. The data were then transferred to Prism 9 where we performed smoothing analysis with 500 nearest neighbors to smooth the line profile for graphing purposes. Those intensity bins with positive values were considered to contain cells that had responded to the MCC:I-Ek stimuli above background.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses of sucrose gradient and functional assays were performed with GraphPad Prism 9 software as indicated in the figure legends. For each functional assay (IL-2 production and CD4 endocytosis), each individual experiment (biological replicate) was performed with triplicate analysis (technical replicates) and each experiment was repeated three times (three biological replicates). For sucrose gradient analysis, 104 beads were collected by flow cytometry in each experiment (technical replicates) and each experiment was performed three times (biological replicates). Three biological replicates were chosen for each analysis as per convention, and no power calculations were determined. One-way analysis of variance was performed with a Dunnett’s posttest when all mutants tested in an experiment were compared to a control sample (e.g., WT). Sidak’s posttest were applied when comparing between two specific samples. These posttests were chosen based on Prism recommendations. Student’s unpaired t-tests (two-tailed) were performed when comparing WT and LL mutant samples only for phosphorylation analysis.
 
-## Materials availability statement
+### Materials availability statement
 
 Raw data, including alignments and phylogenetic trees, associated with Figure 1, Supplementary file 1 are available on Dryad (https://doi.org/10.5061/dryad.59zw3r26z). Cell lines and constructs are available upon request.

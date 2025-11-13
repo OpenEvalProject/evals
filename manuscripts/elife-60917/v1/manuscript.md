@@ -22,7 +22,7 @@
 
 ## Abstract
 
-In fluctuating environments, switching between different growth strategies, such as those affecting cell size and proliferation, can be advantageous to an organism. Trade-offs arise, however. Mechanisms that aberrantly increase cell size or proliferation—such as mutations or chemicals that interfere with growth regulatory pathways—can also shorten lifespan. Here we report a natural example of how the interplay between growth and lifespan can be epigenetically controlled. We find that a highly conserved RNA-modifying enzyme, the pseudouridine synthase Pus4/TruB, can act as a prion, endowing yeast with greater proliferation rates at the cost of a shortened lifespan. Cells harboring the prion grow larger and exhibit altered protein synthesis. This epigenetic state, [ BIG + ] ( b etter i n rowth), allows cells to heritably yet reversibly alter their translational program, leading to the differential synthesis of dozens of proteins, including many that regulate proliferation and aging. Our data reveal a new role for prion-based control of an RNA-modifying enzyme in driving heritable epigenetic states that transform cell growth and survival. g
+In fluctuating environments, switching between different growth strategies, such as those affecting cell size and proliferation, can be advantageous to an organism. Trade-offs arise, however. Mechanisms that aberrantly increase cell size or proliferation—such as mutations or chemicals that interfere with growth regulatory pathways—can also shorten lifespan. Here we report a natural example of how the interplay between growth and lifespan can be epigenetically controlled. We find that a highly conserved RNA-modifying enzyme, the pseudouridine synthase Pus4/TruB, can act as a prion, endowing yeast with greater proliferation rates at the cost of a shortened lifespan. Cells harboring the prion grow larger and exhibit altered protein synthesis. This epigenetic state, [BIG+] (better in growth), allows cells to heritably yet reversibly alter their translational program, leading to the differential synthesis of dozens of proteins, including many that regulate proliferation and aging. Our data reveal a new role for prion-based control of an RNA-modifying enzyme in driving heritable epigenetic states that transform cell growth and survival.
 
 ## Introduction
 
@@ -36,9 +36,17 @@ Here we investigate the inheritance of a prion-based epigenetic state that alter
 
 ## Results
 
-## Cells bearing a prion-like epigenetic element live fast and die young
+### Cells bearing a prion-like epigenetic element live fast and die young
 
 We recently discovered more than 40 protein-based epigenetic elements in Saccharomyces cerevisiae that are both heritable and reversible upon transient perturbation of protein chaperone function (Chakrabortee et al., 2016a). Many of the proteins that underlie this behavior have the potential to regulate growth. One of these epigenetic states was induced by transient overexpression of the highly conserved pseudouridine synthase PUS4/TRUB, which catalyzes the formation of a ubiquitous pseudouridine on U55 in tRNAs in bacteria, yeast, and humans (Becker et al., 1997; Gutgsell et al., 2000; Zucchini et al., 2003). Mutation of U55 leads to large fitness deficits, second only to mutations in the tRNA anticodon loop, highlighting the functional importance of this nucleotide (Li et al., 2016). Mutation of U55 is also linked to deafness and diabetes in humans (Wang et al., 2016). We originally discovered this epigenetic state because transient overexpression of PUS4 led to an enduring and heritable growth improvement in medium containing zinc sulfate (Chakrabortee et al., 2016a). This phenotype could possibly be explained by the strong genetic interaction between PUS4 and the zinc homeostasis regulator ZRC1—among all genes, ZRC1 is the second strongest genetic interactor with PUS4 (Koh et al., 2010). Upon closer examination, we noticed that cells harboring the Pus4-induced element also achieved an ~60% faster maximal proliferation rate than naïve cells in the absence of zinc stress in standard rich medium (YPD; Figure 1A, p=0.0095, unpaired t-test). We therefore initially named this mitotically heritable element ‘Big+’ for better in growth.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig1-v1.jpg)
+
+**Figure 1.:** (A) Big+ cells proliferate faster than naïve cells. Bars represent the mean of four replicates of maximum growth rate in YPD medium (measured by the peak of the derivative of the growth data), error bars are standard deviation, p=0.0095, unpaired t-test. (B) In a direct growth competition, Big+ cells outcompete naïve cells. Raw data with standard error bars; trend line is dashed line showing shaded standard error; four replicates were performed for each competition. (C) Big+ cells have a reduced chronological lifespan (CLS). Cells were grown to saturation in rich medium and then transferred to nutrient-poor medium and allowed to age for up to 80 days. Periodically samples were replated onto rich medium to measure remaining viability via colony-forming units (CFUs). Thin lines are the average value from eight biological replicates with standard error represented by shading. (D) Big+ cells have a reduced replicative lifespan (RLS). Starting with virgin mother cells, at each cell division, daughter cells were separated, and the total number yielded was counted for each replicate. n = 280 per strain, combined from three independent experiments. p-value<0.0001, by Gehan–Breslow–Wilcoxon test. Median survival: naïve = 30 generations, Big+ = 23 generations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Experimental scheme for growth competition experiment associated with Figure 1B. (B) Experimental scheme for chronological and replicative lifespan (RLS) measurements associated with Figure 1C and D. (C) Results from three independent RLS experiments, as combined into Figure 1D. Experiment 1: n = 80 per strain, p-value=0.0021, by Gehan–Breslow–Wilcoxon test. Median survival: naïve = 30.5 generations, Big+ = 24 generations. Experiment 2: n = 80 per strain, p-value<0.0001, by Gehan–Breslow–Wilcoxon test. Median survival: naïve = 31 generations, Big+ = 23 generations. Experiment 3: n = 120 per strain, p-value<0.0001, by Gehan–Breslow–Wilcoxon test. Median survival: naïve = 29 generations, Big+ = 22 generations.
 
 We next tested whether this growth advantage from the Big+ epigenetic element was more pronounced during direct competition and oscillating nutrient availability—as a single-celled organism such as yeast often faces in nature. To do so, we performed a competition experiment that encompassed periods of abundant nutrient availability followed by starvation. Using resistance to canavanine as a marker to distinguish naïve and Big+ strains, we mixed equal numbers of cells from each strain. We propagated the mixed culture for approximately 100 generations, diluting into fresh medium and measuring the fraction of the population that harbored the canavanine resistance marker every 10 generations (Figure 1—figure supplement 1A). In these experiments, cells harboring Big+ invariably outcompeted the genetically identical naïve cells that lacked it—they live fast—with a selection coefficient of nearly 1% (Figure 1B). Competitions using reciprocally marked strains produced equivalent results. As a frame of reference, the fitness advantage that we measured for Big+ is larger than those conferred by >30% of non-essential genes (Breslow et al., 2008), and the vast majority of natural genetic variants that have been quantified (Jakobson and Jarosz, 2019; Jakobson et al., 2019; Sharon et al., 2018; She and Jarosz, 2018).
 
@@ -46,9 +54,17 @@ Given the close link between proliferation and aging in many organisms (Bitto et
 
 RLS measures the number of cell divisions that yeast can undergo before death (Figure 1—figure supplement 1B). These experiments revealed a significant difference in replicative potential between Big+ and naïve cells—the median survival rate is reduced by seven generations (Figure 1D, p<0.0001, Gehan–Breslow–Wilcoxon test, and Figure 1—figure supplement 1C). This degree of shortening is comparable to that of classic lifespan-altering mutants: yeast lacking SIR3 or SIR4 have reductions of ~3–4 generations, and yeast lacking SIR2 by ~10–11 generations (Kaeberlein et al., 2005; Kaeberlein et al., 1999). Thus, Big+ cells harboring this Pus4-induced element exhibit both a significantly decreased chronological lifespan and RLS: they die young.
 
-## Modeling trade-offs between proliferation and lifespan
+### Modeling trade-offs between proliferation and lifespan
 
 We next investigated the adaptive value of the Big+ phenotype by quantitatively modeling its fitness consequences in fluctuating environments, where committing to a single strategy can impose limits on the long-term fitness of a population. For example, when nutrient-rich periods tend to greatly exceed starvation periods, the rapid growth of the Big+ phenotype might be favored, despite its die-young phenotype (Figure 2A). However, this same decision could be maladaptive if growth conditions skewed towards frequent and more extended periods of nutrient scarcity—where cells that grow slower and die older would instead have an advantage (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig2-v1.jpg)
+
+**Figure 2.:** (A) A live fast–die young epigenetic element is beneficial for survival in environments with regular, extended nutrient-rich periods. (B) A live slow–die old growth state is beneficial for survival during conditions of repeated and extended starvation. (C) Simulated final population fraction (ratio of live-fast-die-young [LF-DY] to live-slow-die-old [LS-DO]) after 30 cycles of nutrient repletion and starvation, assuming a 1% growth advantage, a 1% higher death rate, and equal starting population sizes. Note log scale. (D) Monte Carlo sampling of exponential decay constant and (E) exponential growth constant distributions used to generate the ensemble of simulations shown in (F). (F) Monte Carlo simulation (dashed lines) of growth competition between LF-DY to LS-DO cells under parameters sampled from experimental growth and lifespan measurements of the Big+ element (Figure 2D and E). 95% confidence interval indicated by shaded areas. Shown in solid lines are the results of competitive growth between Big+ and naïve cells as shown in Figure 1B (mean: bold line; n = 4 biological replicates: thin lines).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Time-resolved simulations when (A) the period of starvation is 10 times the period of nutrient repletion; (B) the period of nutrient repletion is 10 times the period of starvation; and (C) the two nutrient regimes are of equal length. (D). Phase space representations of the simulated final population fraction (ratio of live-fast-die-young [LF-DY] to live-slow-die-old [LS-DO]) after 30 cycles of nutrient repletion and starvation, as in Figure 2C. Indicated on the ordinate and abscissa of each panel are the parameters that were varied to generate each phase space. Parameters were varied over two orders of magnitude, as indicated. All other parameters were set to the baseline values as shown in Supplementary file 1. (E) Schematic of parameters needed to model competitive growth experiment. During τlag, we assume that there is no change in population ratio. During τnutrient, we require the exponential growth constants, and during τstarvation, we require the exponential decay constants (assuming cell death is a first-order process).
 
 To quantify these trade-offs, we considered a population in which individuals heritably adopted one of these two strategies (live-fast-die-young, LF-DY, like Big+ cells; or live-slow-die-old, LS-DO, like naïve cells), modeling their fates in alternating nutrient environments (Figure 2C). These simulations suggested that LS-DO cells should outcompete LF-DY cells when the periods of starvation are much longer than periods of nutrient abundance (Figure 2—figure supplement 1A). By contrast, LF-DY cells come to dominate the simulated culture when periods of nutrient abundance are much longer than periods of starvation (Figure 2—figure supplement 1B). When periods of starvation and nutrient repletion are of equal duration, both populations are equally fit (Figure 2—figure supplement 1C). When we varied the growth advantage and lifespan cost of the LF-DY sub-population and the periods of nutrient availability and starvation, we noted that each phase space contained regimes in which either strategy could be advantageous (Figure 2C and Figure 2—figure supplement 1D).
 
@@ -56,31 +72,47 @@ Regimes in which either the LF-DY or LS-DO strategies would be strongly adaptive
 
 Notably, the growth advantages we observed in our competition experiment were quantitatively consistent with Monte Carlo simulations sampled from our experimental measurements of the death rates (from chronological lifespan measurements, Figure 2D) and growth rates (from proliferation rate measurements, Figure 2E) of individual cultures in nutrient-starved and replete conditions, respectively (Figure 2—figure supplement 1E). That is, the adaptive advantages that we measured in competition were equivalent to those that we predicted for a hypothetical LF-DY population after dozens of generations (Figure 2F). Thus, selection on these properties could be alone sufficient to favor maintenance of the Big+ state under the conditions we examined.
 
-## Big+ cells are large
+### Big+ cells are large
 
 Positive correlations between growth rate and cell size have long been noted (Johnston et al., 1977; Schaechter et al., 1958; Su and O’Farrell, 1998; Turner et al., 2012). To determine if the faster-growing Big+ cells were also larger, we examined them microscopically, employing a widely used image masking pipeline (Carpenter et al., 2006). This approach allowed us to measure the sizes of thousands of cells from multiple biological replicates and define size distributions for both naïve and Big+ populations.
 
 During exponential growth, populations of Big+ cells had a similar size distribution to naïve control cells. However, as the cultures became denser, naïve control cells remained the same size whereas isogenic haploid Big+ cells became larger (Figure 3A and Figure 3—figure supplement 1A). To simplify these comparisons, we scored distributions by the fraction of very large cells that we observed (one standard deviation or larger than the mean naïve size; Figure 3B, n = 4678 and 5501 cells shown for naïve and Big+, respectively). This increase in mean area from 22.01 µm2 to 25.36 µm2 corresponds to a 23% larger volume (approximating the yeast cell as a sphere, naïve cell mean radius = 2.65 µm, Big+ cell mean radius = 2.84 µm). In Big+ cultures 33.1% ± 2.8% of cells exceeded this threshold, whereas 16.5% ± 1.8% did in naïve cultures (p=0.0011 by unpaired t-test; Figure 3C). We note that this difference is not as large as that between haploid and diploid yeast; the naïve diploid mean area is 36.88 µm2. Moreover, in mRNA-sequencing—discussed in more detail below—we observed expression profiles in Big+ cells consistent with being haploid and mating type Mat a (like their naïve counterparts) (Figure 3—figure supplement 1B and C). We therefore conclude that the Big+ state does not represent a simple autodiploidization.
 
-## [BIG+] is a prion transmitted through mating and meiosis
+![Figure 3.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig3-v1.jpg)
+
+**Figure 3.:** (A) Micrographs of naïve and Big+ haploid yeast cells. (B) Cell size distributions for thousands of naïve and Big+ haploid cells (100% of distribution is shown, n = 4678 for naïve, n = 5501 for Big+, dotted line indicates naïve mean). Large cell threshold begins at one standard deviation above the naïve mean. (C) The frequency of haploid cells above the large cell threshold. Bars represent the mean of three replicate strains, for which thousands of cells are measured for each strain, error bars are standard deviation. p=0.0011, unpaired t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The large phenotype of Big+ cells was stronger after 3 days of growth than after 2 days of growth (4 days of growth yielded similar differences in cell size as for 3 days of growth, data not shown). The phenotype was not observed 1 day (24 hr) after inoculation or during the exponential growth phase (5 hr after inoculation). Bars represent the mean of three replicate strains—for which thousands of cells are measured for each—of the frequency of cells above the large cell threshold, error bars are standard deviation. Exponential growth (5 hr) p=0.4373, 24 hr p=0.1812, 48 hr p=0.0172, 72 hr p=0.0011; unpaired t-test for all. (B) Expression levels of MATa-specific (left panel) or MATalpha-specific (right panel) genes in naïve and Big+ cells, determined by mRNA sequencing. Values shown are the mean log10 of transcripts per kilobase million (TPM) from four biological replicates for each strain. Data show that Big+ cells are, like naïve cells, MATa haploids. Neither strain expresses genes associated with MATalpha-specific genes. (C) Expression levels of haploid-specific genes in naïve and Big+ cells, determined by mRNA sequencing. Values shown are the mean log10 of TPM from four biological replicates for each strain. Data show that Big+ cells are, like naïve cells, haploids and not diploids.
+
+### [BIG+] is a prion transmitted through mating and meiosis
 
 Big+ was initially induced by transient PUS4 overexpression in a screen to identify prion-like epigenetic elements (Chakrabortee et al., 2016a). We therefore tested whether the increased cell size associated with this state was transmitted through genetic crosses with the unusual patterns of inheritance that characterize prion-based phenotypes (Brown and Lindquist, 2009; Cox, 1965; Wickner, 1994). We began by mating the large haploid Big+ cells to naïve haploids of the opposite mating type, selecting diploid cells, and measuring their size. The resulting diploids were significantly larger than those derived from control crosses with two naïve parents (Figure 4A and B), establishing that the trait is dominant.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig4-v1.jpg)
+
+**Figure 4.:** (A) Micrographs of diploid yeast cells resulting from crosses of naïve and naïve parents, or naïve and [BIG+] parents. (B) The frequency of diploid cells above the large cell threshold. Bars represent the mean of three replicate strains, for which thousands of cells were measured for each strain, error bars are standard deviation. p=0.0029, unpaired t-test. (C) Inheritance of large cell frequency to all meiotic spores. Bars represent the mean frequency of cells above the large cell threshold from three replicates, for which thousands of cells were measured for each replicate, error bars are standard deviation. Difference between the means of four tetrad spores between naïve and [BIG+], p<0.0001, unpaired t-test. (D) Transient inhibition of Hsp104 chaperone activity using guanidinium hydrochloride (GdnHCl) does not heritably alter the cell size trait. Bars represent the mean frequency of cells above the large cell threshold from three replicates, for which thousands of cells were measured for each replicate, error bars are standard deviation. Control samples (left bars of each pair) were propagated in parallel on nutrient-matched agar plates not containing GdnHCl. Post-inhibition represents strains subjected to GdnHCl treatment followed by recovery prior to cell size measurements (Materials and methods). Naïve p=0.9690, [BIG+] p=0.6674; unpaired t-test for both. (E) Transient inhibition of Hsp90 chaperone activity using radicicol does not heritably alter the cell size trait. Bars represent the mean frequency of cells above the large cell threshold from three replicates, for which thousands of cells were measured for each replicate, error bars are standard deviation. Control samples (left bars of each pair) were propagated in parallel on nutrient-matched agar plates not containing radicicol. Post-inhibition represents strains subjected to radicicol treatment followed by recovery prior to cell size measurements (Materials and methods). Naïve p=0.9220, [BIG+] p=0.3925; unpaired t-test for both. (F) Transient inhibition of Hsp70 chaperone activity by expression of a dominant-negative allele of SSA1 permanently eliminates the [BIG+] cell size trait. Bars represent the mean frequency of cells above the large cell threshold from three replicates, for which thousands of cells were measured for each replicate, error bars are standard deviation. Control samples (left bars of each pair) did not contain the SSA1K69M constitutive expression plasmid but were propagated in parallel on non-dropout but otherwise nutrient-matched agar plates. Post-inhibition represents strains subjected to plasmid expression followed by plasmid removal and recovery prior to cell size measurements (Materials and methods). Naïve p=0.4712, [BIG+] p=0.0424; unpaired t-test for both. (G) The expression pattern of Pus4 is altered in [BIG+] cells. (H) [BIG+] can be transmitted via cytoduction into a wild-type recipient cell, consistent with a prion-based mechanism. Each bar represents the mean frequency of cells above the large cell threshold from three biological replicates, for which thousands of cells were measured for each replicate, error bars are standard deviation. Bars for three independent cytoductants are shown for each donor strain. Difference between the means of the three cytoductants between naïve and [BIG+] donors: p<0.0001, unpaired t-test. (I) [BIG+] is not transmitted via cytoduction into a pus4∆ recipient cell, indicating that prion transmission depends on continuous endogenous expression of Pus4. Each bar represents the mean frequency of cells above the large cell threshold from three biological replicates, for which thousands of cells were measured for each replicate, error bars are standard deviation. Bars for three independent cytoductants are shown for each donor strain. Difference between the means of the three cytoductants between naïve and [BIG+] donors: p=0.1166, unpaired t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) In contrast to mutations, which when arising from one parent are inherited in half of the meiotic progeny, prion-based traits can be inherited in all meiotic progeny. (B) Additional biological replicate pairs of tetrads are shown for naïve and [BIG+] crosses. Bars represent the mean frequency of cells above the large cell threshold from three replicates, for which thousands of cells were measured for each replicate, error bars are standard deviation. Difference between the means of four tetrad spores between naïve and [BIG+], p<0.0001, unpaired t-test. (C) Experimental scheme to test the role of three different protein chaperones in the propagation of [BIG+]. Cells were exposed to various chaperone inhibitors, then propagated without inhibition to allow cells to recover, and then tested for retention of the large cell phenotype that existed prior to inhibition. (See Materials and methods.) (D) Pus4p is expressed at similar levels in naïve and [BIG+] cells. Naïve or [BIG+] haploid cells were crossed to a strain containing a seamlessly N-terminally 3xFLAG-tagged PUS4 gene, and total protein lysate was harvested, of which 15 µg was loaded onto a PAGE gel for each sample, and then probed with anti-FLAG, or anti-PGK1 loading control antibodies. The negative control lane (untagged strain) is from the same blot. (E) Prion-based traits can be passed through cytoduction that exchanges cytoplasmic material without exchange of nuclear material. (F) Transient deletion of PUS4 blocks inheritance of the large cell trait from [BIG+] cells. Bars represent the mean frequency of cells above the large cell threshold from three replicates, for which thousands of cells were measured for each replicate, error bars are standard deviation. Differences between mean large cell frequencies of wild-type naïve and [BIG+] cells prior to deletion, p=0.0011; after deletion of PUS4, p=0.4302; after re-introduction of PUS4, p=0.8487; unpaired t-test for all.
 
 We next investigated the meiotic inheritance of the large cell size trait. Because prions are not driven by changes in nucleic acid sequence, they have unusual patterns of inheritance that defy Mendel’s laws. In addition to dominance in genetic crosses, prion-based traits can be passed to all progeny of meiosis, in contrast to DNA-based traits, which are inherited by half (Figure 4—figure supplement 1A; Garcia and Jarosz, 2014; Li and Kowal, 2012; Liebman and Chernoff, 2012; Wickner, 2016). We first mated control naïve cells to naïve cells of the opposite mating type, sporulated the resulting diploids, and dissected their meiotic progeny. We then grew clonal cultures of these haploid meiotic progeny and examined their size distributions, which were indistinguishable from their haploid-naïve parents (Figure 4C).
 
 In contrast, all cultures derived from the meiotic progeny of Big+× naïve crosses were large (Figure 4C and Figure 4—figure supplement 1B). This non-Mendelian pattern of inheritance differs strongly from the expected behavior for genetic mutants or chromatin-based epigenetic elements but is consistent with a prion-based mechanism of transmission. We therefore term this state ‘[BIG+]’ (with capital letters indicating dominance and brackets denoting its non-Mendelian pattern of segregation).
 
-## [BIG+] propagation requires the Hsp70 chaperone
+### [BIG+] propagation requires the Hsp70 chaperone
 
 In contrast to those driven by genetic mutations, the inheritance of prion-based phenotypes is strongly dependent upon the protein homeostasis network (Garcia and Jarosz, 2014; Harvey et al., 2018; Liebman and Chernoff, 2012; Shorter and Lindquist, 2005). As a consequence, transient inhibition of molecular chaperones can lead to the permanent elimination of prion-based traits. We therefore examined whether the large size of [BIG+] cells also depended on protein chaperone activity (Figure 4—figure supplement 1C). Transient inhibition of the Hsp104 disaggregase, which regulates the inheritance of many amyloid prions (Chernoff et al., 1995; Eaglestone et al., 2000; Halfmann et al., 2012; Shorter and Lindquist, 2004), did not affect cell size in either naïve or [BIG+] cells (Figure 4D). Transient inhibition of the Hsp90 foldase, which regulates the transmission of a different subset of prions (Chakrabortee et al., 2016a), also had no impact on [BIG+] transmission (Figure 4E). By contrast, transient inhibition of Hsp70 via expression of a dominant-negative SSA1K69M allele (Chakrabortee et al., 2016a; Jarosz et al., 2014; Lagaudriere-Gesbert et al., 2002) caused [BIG+] cells to lose their large size phenotype permanently (Figure 4F). Thus like other prions (Brown and Lindquist, 2009; Chakrabortee et al., 2016a; Chakravarty et al., 2020), and unlike genetic mutations, propagation of [BIG+] is dependent on the activity of this ubiquitous molecular chaperone.
 
 We note that Hsp70 expression drops dramatically as yeast reach saturation and begin to starve (Werner-Washburne et al., 1989; Werner-Washburne and Craig, 1989) and also decreases as cells age (Janssens et al., 2015). These are two scenarios in which [BIG+] is disadvantageous. Therefore, environmental conditions that favor growth, during which Hsp70 is abundant, also favor prion propagation. By contrast, conditions known to reduce Hsp70 expression and thereby increase prion elimination are also those in which prion loss would be favored.
 
-## Pus4 protein has a different expression pattern in [BIG+] cells
+### Pus4 protein has a different expression pattern in [BIG+] cells
 
 Prion states often impact the localization of the proteins that encode them. To visualize endogenous levels of Pus4 expression in naïve and [BIG+] cells, we employed a strain in which an N-terminal GFP tag was appended at the endogenous PUS4 locus, and therefore subject to endogenous regulation (i.e., not overexpressed; Weill et al., 2018; Yofe et al., 2016). We did not observe large fluorescent foci typical of amyloid prions (Alberti et al., 2009), as might be expected given that Pus4 is not enriched in glutamine and asparagine residues typically abundant in amyloid prion proteins (Chakrabortee et al., 2016a). We did, however, observe altered localization of Pus4. In naïve cells, Pus4 consistently localized to the nucleolus, as has been previously reported (Huh et al., 2003). In [BIG+] cells, the Pus4 protein was also present in the nucleolus, but we also observed substantial fluorescence in a fragmented network throughout the cytoplasm (Figure 4G). Although a high-resolution structure awaits determination, our data are consistent with an altered state of Pus4 in [BIG+] cells.
 
-## Endogenous Pus4 is required for propagation of [BIG+]
+### Endogenous Pus4 is required for propagation of [BIG+]
 
 Although [BIG+] was induced by a transient increase in Pus4 abundance and was stable after eliminating the inducing plasmid, we wanted to exclude the possibility that this prior overexpression event might have established a positive feedback loop leading to an enduring increase in Pus4 levels. We therefore constructed naïve and [BIG+] strains with a seamless N-terminal 3X-FLAG tag endogenously encoded at the PUS4 locus. Using immunoblots to detect the FLAG epitope in naïve and [BIG+] cells, we observed equivalent Pus4 levels, indicating that the phenotypes we observed in [BIG+] cells were not simply due to increased expression of this RNA-modifying enzyme (Figure 4—figure supplement 1D).
 
@@ -90,27 +122,43 @@ It remained formally possible that a multi-protein prion state could be maintain
 
 These various lines of evidence—transmission to all meiotic progeny, dependence on molecular chaperones, altered protein localization, and requirement for continuous expression of the protein that initiated the epigenetic trait—lead us to propose that [BIG+] is a protein-based element of inheritance, a prion, formed by the Pus4 pseudouridine synthase.
 
-## Pus4-dependent pseudouridylation of tRNAs is maintained in [BIG+] cells
+### Pus4-dependent pseudouridylation of tRNAs is maintained in [BIG+] cells
 
 Because loss of PUS4 did not phenocopy [BIG+] but did block propagation of the prion, we wondered whether the catalytic activity of Pus4 was maintained in [BIG+] cells. To measure pseudouridylation in naïve and [BIG+] cells, we employed a qPCR-based method that capitalizes on the enhanced susceptibility of pseudouridine to reacting with CMC (1-cyclohexyl-(2-morpholinoethyl)carbodiimide metho-p-toluene sulfonate); Figure 5A; Lei and Yi, 2017. When pseudouridines are ‘labeled’ by CMC, and these RNAs are used as templates for replication by reverse transcriptase, the enzyme generates nucleotide deletions and other mutations at CMC-labeled sites that can be detected by differences in the melting temperature of the derived nucleic acid duplexes (as compared to non-pseudouridylated or unlabeled controls). Using this approach, we examined the pseudouridylation of an archetypical Pus4 substrate, tRNAAGC (Ala). When a pseudouridine is present and CMC is added, the melting curve shifts relative to an unlabeled control (no CMC). We observed a similar leftward shift in melting curves for both naïve and [BIG+] cells (Figure 5B–D).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig5-v1.jpg)
+
+**Figure 5.:** (A) Radiolabeling-free, qPCR-based method for locus-specific pseudouridine detection. Illustration is adapted from Scheme 1 of Lei and Yi, 2017. (B) High-resolution melting curve analysis demonstrates that Pus4-dependent pseudouridylation of tRNAAGC (Ala) is maintained in [BIG+] cells but not in cells that do not contain Pus4p. Top panel: naïve samples CMC-labeled (dark blue) or -unlabeled (light blue). Middle panel: [BIG+] samples CMC-labeled (dark blue) or -unlabeled (red). Bottom panel: pus4∆ samples CMC-labeled (dark blue) or -unlabeled (turquoise). Solid lines representing melting curves are the mean of four replicates, with shaded areas representing the standard error of the mean. Dots mark the geometric center of four replicates, bisected by a dashed line with a shaded area representing the standard error of the mean. The melting temperature (Tm) of this point is also displayed. The leftward shift of +CMC curves in naïve and [BIG+] but not pus4∆ samples indicates Pus4-dependent pseudouridylation of U55. (C) The difference in melting temperature behavior (dF/dT) between CMC-labeled and CMC-unlabeled tRNAAGC (Ala) amplicons is similar between [BIG+] cells and naïve cells, suggesting that Pus4-dependent Ψ is present at position 55 in tRNAAGC (Ala) in [BIG+] cells. Solid line represents the mean of four replicates, with shaded areas showing standard error of the mean. (D) The difference in area between the melting curves of CMC-labeled and CMC-unlabeled tRNAAGC (Ala) amplicons is similar between [BIG+] cells and naïve cells, suggesting that Pus4-dependent Ψ is present in [BIG+] cells. Bars represent the mean of four replicates, error bars indicate standard deviation, p=0.5531, unpaired t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) In the TΨC loop of tRNAAGC (Ala), mutations resulting from reverse transcription of CMC-treated samples were only observed originating from position 55 (Ψ). Sanger sequencing profiles from nucleotides 49–62 (black or red) are shown in (B): control and CMC-labeled tRNA from naïve, [BIG+], and pus4Δ cells. Naïve and [BIG+] samples show a characteristic mutation in the +CMC-labeled molecules at position 55, the site of Pus4-dependent pseudouridylation, while pus4∆ cells do not. Asterisks highlight positions of CMC-induced mutations. (C) Plots comparing actual vs. expected read counts for ERCC spike-in controls in mRNA sequencing for each biological replicate of naïve (top row) and [BIG+] (bottom row). Data indicate robust quantitative scaling in gene expression measurements. (D) Total tRNA levels are not different in [BIG+] cells compared to naïve cells when normalized to non-Pus4 target 5.8 S rRNA (158 nt). Measurements represent the mean of three replicates with standard deviation shown, p=0.8708.
+
 In contrast, control cells lacking the Pus4 protein, and therefore lacking pseudouridylation at U55, did not produce this shift (Figure 5B–D). Because tRNAs bear pseudouridines at other positions—catalyzed by different pseudouridine synthase enzymes—which could potentially interfere with our analysis of Pus4 activity, we also directly examined the U55 position. We cloned the PCR products into plasmids and then used Sanger sequencing to identify positions with mutations indicating a CMC adduct. Within the T-arm stem-loop of tRNAAGC (Figure 5—figure supplement 1A), we saw mutations originating at U55 in CMC-labeled samples from both naïve and [BIG+] cells, but not in unlabeled samples or pus4Δ samples (Figure 5—figure supplement 1B). These data establish that Pus4-dependent modification of tRNAs at U55 is maintained in [BIG+] cells.
 
-## Relative RNA levels are nearly unchanged in [BIG+] cells
+### Relative RNA levels are nearly unchanged in [BIG+] cells
 
 In addition to its ubiquitous pseudouridylation activity on all tRNAs, Pus4 also modifies some mRNAs (Carlile et al., 2014; Lovejoy et al., 2014; Schwartz et al., 2014), which may impact mRNA stability (Zhao et al., 2017). We performed mRNA sequencing to discern whether the phenotypes of [BIG+] cells might be due to relative changes in mRNA levels. We grew naïve and [BIG+] cultures in YPD medium until late exponential phase, extracted total RNA, and enriched these samples for polyadenylated RNAs. Comparing four replicates each of naïve and [BIG+], the expression levels of only 47 genes changed significantly (28 decreased in expression and 19 increased as estimated using Kallisto and Sleuth; Bray et al., 2016; Pimentel et al., 2017; Benjamini–Hochberg-corrected q-value < 0.05 from the likelihood ratio test and |log2 fold-change| > 1) (Supplementary file 2). Spike-in controls demonstrated quantitative scaling in our estimates of gene expression across a broad range of transcript abundance (Figure 5—figure supplement 1C). The upregulated genes in [BIG+] exhibited only a modest enrichment for water transport (two aquaporin genes), while the downregulated genes were enriched for cell wall and plasma membrane components (Supplementary file 2; Szklarczyk et al., 2019), perhaps because larger [BIG+] cells have less surface area per unit volume. We conclude that the major effects of [BIG+] during exponential growth (e.g., on growth rate and RLS) likely do not occur via changes to steady-state mRNA levels.
 
 To investigate whether the relative abundance of tRNAs is perturbed in [BIG+] cells, we ran total RNA from naïve and [BIG+] cells (grown to late-exponential phase) on a nucleic acid fragment analyzer and quantified tRNA levels relative to a similarly abundant RNA that is not a target of Pus4, 5.8 S rRNA (158 nt) (Figure 5—figure supplement 1D). We observed no significant differences. While we cannot exclude other effects on tRNA function or the relative abundance of particular tRNAs, our data show that bulk tRNA abundance differences are likely also not responsible for the phenotypes of actively growing cells containing [BIG+].
 
-## [BIG+] cells are resistant to inhibition of protein synthesis
+### [BIG+] cells are resistant to inhibition of protein synthesis
 
 Because the increased cell size and proliferation and reduced lifespan of [BIG+] cells occur in the absence of major alterations to relative abundances of mRNA or tRNA, we wondered whether a change in protein synthesis might be responsible. To test this, we employed two inhibitors: (1) cycloheximide, an inhibitor of translational elongation (Baliga et al., 1969; McKeehan and Hardesty, 1969), and (2) rapamycin, a natural product macrolide that inhibits the TOR kinase, blocking a conserved signaling cascade that promotes protein synthesis (Beretta et al., 1996; Chung et al., 1992; Kuo et al., 1992; Price et al., 1992; Urban et al., 2007).
 
 [BIG+] cells grew nearly twofold better than naïve cells in a sub-inhibitory concentration of cycloheximide that was sufficient to impair proliferation (0.01 µg/mL, in which naïve cells needed 23.6 hours to reach their maximum proliferaton rate vs. 21.3 hours in YPD; for comparison, 100 µg/mL is typically used for experiments that rapidly and completely arrest translation; Figure 6A). [BIG+] cells also proliferated faster in a concentration of rapamycin (10 µM) that inhibited growth (Figure 6B), suggesting that the pathway may be more active in cells harboring the prion. We found additional evidence in support of this hypothesis by examining the localization of Par32 (phosphorylated after rapamycin 32); the higher ratio of membrane-localized Par32 that we observed in [BIG+] cells is consistent with a more active TOR pathway (Figure 6—figure supplement 1A; Varlakhanova et al., 2018). These latter observations also provide a potential explanation for the decreased longevity of [BIG+] cells: loss of TOR pathway function is associated with extended lifespan in yeast (Dikicioglu et al., 2018; Fabrizio et al., 2001; Powers et al., 2006) and many other organisms including nematodes, fruit flies, and mice (Bjedov et al., 2010; Harrison et al., 2009; Robida-Stubbs et al., 2012).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig6-v1.jpg)
+
+**Figure 6.:** (A) [BIG+] cells are resistant to translation elongation inhibitor cycloheximide. Bars represent the mean of the maximum growth rate in YPD + cycloheximide (measured by the peak of the derivative of the growth data) of four replicates, error bars are standard deviation, p=0.0087, unpaired t-test. (B) [BIG+] cells are resistant to TOR inhibitor rapamycin. Bars represent the mean of the maximum growth rate in YPD + rapamycin (measured by the peak of the derivative of the growth data) of three replicates, error bars are standard deviation, p=0.0018, unpaired t-test. (C) [BIG+] cells grown in cycloheximide (0.05 µg/mL) are not larger than naïve cells. However, after recovery, they regain this phenotype. After treatment, cells were sub-cultured in YPD for ~75 generations before re-measuring the size in the absence of stress (see Materials and methods). Bars represent the mean frequency of cells above the large cell threshold from three replicates, for which thousands of cells were measured for each replicate, error bars are standard deviation. Difference between the means of naïve and [BIG+]: YPD control p=0.0004; YPD + cycloheximide p=0.7135; YPD after recovery p=0.0009; unpaired t-test for all. (D) [BIG+] cells grown in rapamycin are not larger than naïve cells. However, after recovery they regain this phenotype. After treatment, cells were subcultured in YPD for ~75 generations before re-measuring the size in the absence of stress (see Materials and methods). Bars represent the mean frequency of cells above the large cell threshold from three replicates, for which thousands of cells were measured for each replicate, error bars are standard deviation. Difference between the means of naïve and [BIG+]: YPD control p=0.0004 (same data presented in Figure 6C as experiments were done in parallel); YPD + rapamycin p=0.1188; YPD after recovery p=0.0345; unpaired t-test for all. (E) [BIG+] meiotic progeny translate more of a firefly luciferase reporter containing rare codons than naïve meiotic progeny do. This effect is not seen in an mRNA variant that encodes an identical protein but contains codons more frequently used in yeast. For each variant, normalized luciferase values in naïve cells are set to 1.0 to make presentation straightforward; however, the normal codon variant of firefly produces approximately five times more luciferase activity than the rare codon variant (data not shown; Chu et al., 2014). Bars represent mean normalized luciferase values (an invariable Renilla luciferase gene is co-expressed from the same plasmid) from eight replicates: rare codons p<0.0001, normal codons p=0.2711, unpaired t-tests for both. (F) [BIG+] cells have more polysomes than naïve cells, as measured by polysome profiling. Lines for two technical replicates for each sample are shown, with the area between them shaded. Ratios (average of two technical replicates) were calculated by taking the lowest point between the monosome and disome peak as zero, and then calculating the ratios of the areas under the sum of the polysome peaks to that under the monosome peaks. (G) Using [35S]-methionine pulse labeling, [BIG+] cells have an increased rate of translation relative to naïve cells (slope line fit: p=0.0011). Lines for three biological replicates for each sample are shown, with the area between them shaded. Timepoints were taken at 1, 15, 30, 45, and 60 min. (H) Separation of total protein by 2-D gel electrophoresis from cells pulse-labeled for 1 hr with [35S]-methionine demonstrates that many proteins are synthesized at a faster rate in [BIG+] cells, few at a slower rate, and some at an indistinguishably different rate, constituting an altered program of protein synthesis. For each gel, a Coomassie stain showing total protein and an autoradiography exposure newly synthesized protein are shown with a sampling of 13 distinguishable proteins labeled. Letters colored green or violet mark proteins whose expression was increased or decreased >1.25-fold, respectively, in the analysis presented in the next panel. (I) Relative protein levels measured by dot intensities from autoradiographs shown in Figure 6H. Shown are the values for 13 proteins quantified in both naïve and [BIG+] [35S]-methionine pulse-labeled samples. (J) Plot showing proteome-wide GFP::protein fusion expression in [BIG+] cells compared to naïve cells, highlighting ~130 proteins whose levels change. Each dot represents the mean of quadruplicate measurements of a single protein in naïve or [BIG+] cells: black dots are proteins that did not change significantly as measured by Z-score change of less than 1.0 (σZ<1); green dots are protein fusions with higher fluorescence in [BIG+] cells; violet dots are protein fusions with lower fluorescence in [BIG+] cells. For colored dots, the standard error of the mean is shown for both measurements from four biological replicates each. Pearson correlation of naïve and [BIG+] cells, r = 0.76, and p<10–16 indicates that most proteins have correlated expression levels. OD600 was adjusted based on known blank wells, and the GFP/OD600 measurements were normalized by Z-score ([xi-µ]/σ) within the naïve and [BIG+] populations independently. (K) Plot showing the protein residue number vs. the mean codon adaptation index (CAI) for all measured GFP-tagged proteins (gray line) and proteins whose levels were increased (green line) or decreased (violet line) in [BIG+] relative to naïve cells in the proteome-wide screen. Proteins whose levels were elevated in [BIG+] relative to naïve cells have a lower mean CAI in the 5′ ends of their mRNAs.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Fraction of GFP-Par32 signal localized to the plasma membrane in naïve vs. [BIG+] cells measured using fluorescence microscopy. Shown are box-and-whisker plots with horizontal black lines in the center of each box showing the mean value and the error bars showing the complete range of values measured (72 and 86 cells from naïve and [BIG+] strains, respectively). A higher fraction of membrane Par32 signal is consistent with higher TOR activity. p<0.0001, Kolmogorov–Smirnov test. (B) [BIG+] cells do not exhibit enhanced proliferation in SD-CSM, a less nutrient-rich medium than YPD (Figure 1A). Bars represent the mean of four replicates of maximum growth rate (measured by the peak of the derivative of the growth data), error bars are standard deviation, p=0.2675, unpaired t-test. (C) Original [BIG+] isolates translate more of a firefly luciferase reporter containing rare codons than naïve cells do. This effect is not seen in an mRNA variant that encodes an identical protein but contains codons more frequently used in yeast. Bars represent mean normalized luciferase values (an invariable Renilla luciferase gene is co-expressed from the same plasmid) from four replicates: rare codons p=0.0409, normal codons p=0.2591, unpaired t-tests for both. (D) [BIG+] cells produce more total protein per cell number than naïve cells, as measured by bicinchoninic acid (BCA) Assay. Bars represent the mean of six replicates, p=0.0340, unpaired t-test. (E) Coomassie stain of 15 µg whole-cell protein lysate from each strain suggests there are no major differences in the relative expression of the most abundant proteins in [BIG+] cells compared to naïve cells. (F) The ratio of unbudded cells (G1 phase of the cell cycle) to budded cells (G2 and S phases) is reduced in [BIG+]. Bars represent the mean of three replicates, error bars are standard deviation, p=0.0017, unpaired t-test. (G) Network representation of proteins whose levels change in [BIG+] vs. naïve cells in GFP fusion screen (Figure 6J and Supplementary file 3), generated from STRING (string-db.org). Solid lines link proteins with genetic and/or physical interactions. The largest cluster—upper left—contains proteins involved in ribosome assembly and translation.
+
 We next investigated whether these inhibitors impacted the size of [BIG+] cells. When grown in cycloheximide or rapamycin to saturation, [BIG+] cells were no longer large compared to naïve controls (Figure 6C and D). Thus, unperturbed translation is necessary for the increased size of [BIG+] cells. These data could be explained by the inhibitors masking expression of the large cell trait or by reversion of the [BIG+] prion. To distinguish between these possibilities, we sub-cultured cells that had been treated with cycloheximide or rapamycin and allowed them to recover in rich medium for several dozen generations. We then examined their size distributions. Populations derived from [BIG+] ancestors were once again significantly larger than naïve controls that we subjected to the same propagation regime (Figure 6C and D). We conclude that [BIG+] depends on protein synthesis to augment cell size but that the prion is stable to transient perturbations in translation.
 
-## [BIG+] cells have altered protein synthesis
+### [BIG+] cells have altered protein synthesis
 
 Translation is rate-limiting for growth in nutrient-rich conditions (Kafri et al., 2016). We observed enhanced growth of [BIG+] cells in rich YPD medium (Figure 1A and B). However, in synthetic defined medium with identical carbon source abundance (2% glucose) but fewer amino acids, nucleosides, and other nutrients for optimum growth (SD-CSM), [BIG+] cells did not grow faster than naïve controls (Figure 6—figure supplement 1B). These data, combined with the resistance of [PRION+] cells to cycloheximide and rapamycin, suggested that protein synthesis might be enhanced in [BIG+].
 
@@ -122,11 +170,11 @@ We next performed polysome gradient analysis to assess ribosome density on mRNAs
 
 To further investigate translation in [BIG+] cells, we performed a pulse-labeling experiment to measure the rate of newly synthesized protein. We grew naïve and [BIG+] cells in medium containing [35S]-methionine and harvested protein lysates every 15 min for 1 hr, and then measured the extent of radiolabel incorporation by scintillation counting. These experiments established that the rate of newly synthesized total protein was higher in [BIG+] cells (10,179 cpm/min) compared to naïve cells (8812 cpm/min) (Figure 6G; p<0.0011, unpaired t-test). In summary, we found that [BIG+] cells have a higher translation rate, which can increase total protein output, including the levels of some proteins translated from mRNAs enriched with codons generally associated with lower translation efficiency.
 
-## [BIG+] reduces time spent in the G1 phase of the cell cycle
+### [BIG+] reduces time spent in the G1 phase of the cell cycle
 
 Conditions that enhance protein synthesis also tend to reduce the fraction of time that cells spend in the G1 stage of the cell cycle (Jorgensen and Tyers, 2004). This is because commitment to S phase entry—budding of a daughter yeast cell—depends on sufficient production of proteins needed to replicate the genome and essential cellular structures. Accelerating the production of these factors can thus shorten this period. We measured the fraction of naïve and [BIG+] cells in the G1 phase of the cell cycle by counting the fraction of unbudded cells (i.e., cells in G1). For naïve cells, 36.2% were in G1, whereas only 27.2% of [BIG+] cells were in G1, a ~25% reduction (Figure 6—figure supplement 1F, p=0.0017, unpaired t-test). These data suggest that the cell cycle checkpoint for progression to S phase remains intact, and that a shortened G1 stage in [BIG+] cells is consistent with their increased protein synthesis. [BIG+] cells are not larger during exponential phase growth (Figure 3—figure supplement 1A), suggesting that their cell size checkpoint remains intact. By contrast, cells in stationary phase, which do not have the nutrient content needed to progress to S phase, may continue to accumulate mass at a faster rate, contributing to their larger size.
 
-## [BIG+] cells enact an altered translational program
+### [BIG+] cells enact an altered translational program
 
 Because relative mRNA expression levels were only subtly altered in [BIG+] cells during exponential growth phase, but multiple measures of translation were altered, we considered the possibility that the phenotypes of the prion might be due to changes in protein levels of particular open reading frames. We tested this idea using two methods: (1) 2-D gel electrophoresis on pulse-labeled, newly synthesized proteins, and (2) a screen for differential expression of over 5000 GFP-tagged proteins.
 
@@ -138,17 +186,33 @@ Of the 4233 fusions whose abundance could be robustly quantified across the four
 
 Many hits were logically connected to the enhanced translation, increased size, and shortened lifespan of [BIG+] cells. The 81 upregulated proteins included multiple ORFs whose deletions are associated with decreased cell size (such as PHO5, MRPS28, KAP122, and SWE1; Harvey and Kellogg, 2003; Jorgensen et al., 2002), increased chronological lifespan (DIG2 and UBX6; Garay et al., 2014), and extended RLS (ENO1, MUB1, PHO87, PGM2, and YRO2; McCormick et al., 2015). Conversely, the 46 downregulated proteins included ORFs whose deletions are associated with increased cell size (RNR4 and RPL15B; Jorgensen et al., 2002; Perlstein et al., 2005) and decreased chronological lifespan (including BUD23, SMI1, MHP1, and CLG1; Garay et al., 2014; Marek and Korona, 2013). Several proteins directly involved in translation control and ribosome biogenesis were also increased in [BIG+] cells, including FHL1, MRPS28, MRPS16, RPL24B, RPS7A, and UTP10 (Figure 6—figure supplement 1G). The [BIG+]-regulated proteins also included 29 ORFs associated with differential sensitivity to rapamycin (including SAS4, SNF1, and HCA4; Butcher et al., 2006; Dudley et al., 2005; Kapitzky et al., 2010) and 14 ORFs that are known genetic or physical interactors with TOR1 (including GCD14 and PAR32; Krogan et al., 2006; Varlakhanova et al., 2018). The functional breadth of these effects on the proteome and their logical connection to factors involved in the control of proliferation, cell size, and lifespan suggest that the phenotypes of [BIG+] are likely derived from an altered translational regulation program that favors increased cell size and proliferation at the expense of lifespan.
 
-## Pus4-dependent pseudouridylation of mRNAs in [BIG+] cells
+### Pus4-dependent pseudouridylation of mRNAs in [BIG+] cells
 
 Our finding that pseudouridylation on tRNA was maintained at similar levels in [BIG+] cells (Figure 5B–D) led us to wonder whether mRNA substrates of Pus4 were similarly modified. The best-documented mRNA target of Pus4 is the translation elongation factor TEF1/TEF2—whose position U239 is robustly pseudouridylated in a Pus4-dependent manner (Carlile et al., 2014; Lovejoy et al., 2014; Schwartz et al., 2014). These paralogous genes encode identical copies of the eEF-1alpha translation elongation factor, which binds to aminoacylated tRNAs—specifically the T arm stem-loop that is pseudouridylated by Pus4 (Dreher et al., 1999)—and delivers them to the A-site of the ribosome during translation elongation (Schirmaier and Philippsen, 1984). We used three different methods to measure pseudouridylation of U239 in TEF1/TEF2 from naïve, [BIG+], and pus4Δ cells. Sanger sequencing verified that the modified position was identical to that previously annotated in the literature (Figure 7—figure supplement 1A). Next, we used a quantitative RT-PCR-based method, known as CMC-RT and ligation-assisted PCR analysis of Ψ modification (CLAP) (Figure 7A; Zhang et al., 2019). We observed TEF1/TEF2 U239 pseudouridylation in both naïve and [BIG+] cells, in contrast to very low/background levels in pus4Δ cells (Figure 7B). Finally, using the aforementioned qPCR-based method for detecting pseudouridylation (Figure 5A), we found additional evidence that TEF1/TEF2 was pseudouridylated in our wild-type cells (both naïve and [BIG+]) in a Pus4-dependent manner (Figure 7C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig7-v1.jpg)
+
+**Figure 7.:** (A) CMC-RT and ligation-assisted PCR analysis of Ψ modification (CLAP) (Zhang et al., 2019). (B) Native PAGE showing the CLAP result for TEF1/TEF2 mRNA from multiple replicates of naïve (3), [BIG+] (3), or pus4∆ (2). Shorter bands indicating pseudouridylation that appear in CMC-unlabeled or pus4∆ samples may reflect either background signal from spontaneous cleavage near target site or Pus4p-independent modification of this site. (C) High-resolution melting curve analysis shows that U239 is pseudouridylated in TEF1/TEF2 mRNA in both naïve and [BIG+] cells but not in cells that do not contain Pus4p. Left panel: naïve samples CMC-labeled (dark blue) or -unlabeled (light blue). Middle panel: [BIG+] samples CMC-labeled (dark blue) or -unlabeled (red). Right panel: pus4∆ samples CMC-labeled (dark blue) or -unlabeled (turquoise). Dots mark the geometric center of four replicates, bisected by a dashed line with shaded area representing the standard error of the mean. The melting temperature (Tm) of this point is also displayed. Solid lines representing melting curves are the mean of four replicates, with shaded areas representing the standard error of the mean. (D) The difference in melting temperature behavior (df/dT) between CMC-labeled and CMC-unlabeled TEF1/TEF2 mRNA amplicons is larger in [BIG+] cells than in naïve cells, suggesting higher levels of pseudouridylation of U239 in [BIG+] cells. Solid line represents the mean of four replicates, with shaded areas showing standard error of the mean. (E) The difference in area between the melting curves of CMC-labeled and CMC-unlabeled TEF1/TEF2 mRNA amplicons is greater in [BIG+] cells than in naïve cells, suggesting higher levels of pseudouridylation of U239 in [BIG+] cells. Bars represent the mean of four replicates, error bars indicate standard deviation, p=0.0326, unpaired t-test.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Sanger sequencing profiles from control and CMC-labeled RNA from naïve, [BIG+], and pus4Δ cells. Naïve and [BIG+] samples show characteristic mixed nucleotide assignments at previously annotated pseudouridylated position U239 in TEF1/TEF2 mRNA, as well as more variable assignments 3′ or this position, indicating the presence of a mixed population of amplicons containing CMC-pseudouridine induced mutations and deletions. (B) The difference in Tm between the curves of CMC-labeled and CMC-unlabeled TEF1/TEF2 mRNA amplicons is greater in [BIG+] cells than in naïve cells, suggesting higher levels of pseudouridylation of U239 in [BIG+] cells. Each bar represents the mean of four technical replicates of the change in the centroid Tm, or the center of the distribution in both the x and y dimensions. Error bars are standard deviations. Difference between naïve and [BIG+], p=0.0395, unpaired t-test.
 
 Most studies of yeast prions have characterized them as decreasing or eliminating activity (Garcia and Jarosz, 2014). However, we recently discovered one notable exception in which the [SMAUG+] prion can increase the activity of the protein that encodes it, Vts1 (Chakravarty et al., 2020). We thus examined if there was an altered level of pseudouridylation of TEF1/TEF2 mRNA. If altered levels affected protein activity, this could be one possible mechanism linked to the altered translation program we found in [BIG+] cells. By quantifying differences in the melt curve shift after CMC labeling—an analysis made simpler for TEF1/TEF2 than for tRNAs by the absence of other pseudouridylated positions flanking U239—we observed an increase in the signal of pseudouridylation in [BIG+] cells relative to naïve (Figure 7D and E and Figure 7—figure supplement 1B).
 
 Together these data demonstrate that the catalytic function of Pus4 is retained in [BIG+] cells and may be enhanced for specific substrates, contrasting with the classical view of prions as being loss-of-function protein conformations. They also provide a novel example of how RNA modification can be epigenetically controlled.
 
-## Epigenetic control of [BIG+]-like phenotypes in wild yeast
+### Epigenetic control of [BIG+]-like phenotypes in wild yeast
 
 Finally, we tested whether protein-based epigenetic control of cell size, protein synthesis, or localization is present in wild yeast populations. Protein chaperones are essential regulators of prion propagation in wild strains, just as they are in laboratory strains (Halfmann et al., 2012; Jarosz et al., 2014). To block the passage of prions in wild yeasts, we transiently expressed a dominant-negative variant (SSA1K69M) of Hsp70—the chaperone that is essential for [BIG+] propagation (Figure 4F)—in 20 wild S. cerevisiae strains isolated from various environments around the world (Cubillos et al., 2009; Itakura et al., 2020). We measured the size of cells before and after this chaperone curing and found that 20% (four isolates out of twenty)—'273614N’ (clinical, Newcastle, UK); ‘L-1528’ (fermentation, Cauquenes, Chile); ‘DBVPG1373’ (soil, Netherlands); ‘BC187’ (barrel fermentation, Napa Valley, California)—became smaller after curing (Figure 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig8-v1.jpg)
+
+**Figure 8.:** (A) Transient inhibition of Hsp70 in diploid wild yeast strains from different niches around the globe leads to a permanent reduction in cell size. Violin plots show all data from thousands of cells from three biological replicates of each strain, light blue are cells before Hsp70 inhibition (‘pre-’), dark blue are cells after transient Hsp70 inhibition and recovery (‘post-’). The solid white line bisecting each distribution indicates mean; dotted lines indicate upper and lower quartiles. 273614N: clinical isolate from the United Kingdom, pre- vs. post- p<0.0001. L-1528: wine isolate from Chile, pre- vs. post- p<0.0001. DBVPG 1373: soil isolate from the Netherlands, pre- vs. post- p<0.0001. BC187: wine isolate from California, pre- vs. post- p<0.0001. Kolmogorov–Smirnov test for all. (B) Transient inhibition of Hsp70 in wild yeast strains leads to permanent changes in protein synthesis capacity. Firefly reporter contains the ‘normal’ suite of codons, which is normalized to internal control Renilla luciferase. Bars represent the mean of normalized luciferase values for six biological replicates, error bars are standard deviation. Light blue ‘pre-’ are cells prior to Hsp70 inhibition, dark blue ‘post-’ are cells after transient Hsp70 inhibition and recovery. A value above 1.0 for the dark blue bars indicates that the normalized translation capacity has increased after prion curing, a value below 1.0 indicates that capacity has decreased. 273614N p=0.0134, L-1528 p=0.1397, DBVPG 1373 p=0.7428, BC187 p=0.0125, unpaired t-test for all. (C) Transient inhibition of Hsp70 in BC187 wine isolate leads to permanent changes in Pus4p expression pattern, suggesting that its conformation may also be epigenetically regulated in wild strains. Prior to inhibition (top), cells show a distinct fragmented network of Pus4 expression; after transient inhibition and recovery (bottom), the expression pattern becomes much more diffuse. (D) Transient inhibition of Hsp70 in haploid wild BC187 yeast strains leads to a permanent reduction in cell size. After this regime, if Pus4p alone is transiently overexpressed, cells then permanently regain their original larger cell size. Violin plots show all data from thousands of cells from three biological replicates of each strain. The solid white line bisecting each distribution indicates mean; dotted lines indicate upper and lower quartiles. Kolmogorov–Smirnov tests.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/60917/elife-60917-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Violin plots show all data from thousands of cells from three biological replicates of each strain. The solid white line bisecting each distribution indicates mean; dotted lines indicate upper and lower quartiles.
 
 Given the wide array of genetic, epigenetic, and ecological diversity harbored in this collection, we also tested for three additional features associated with [BIG+] in laboratory strains: (1) increased protein synthesis, (2) differences in Pus4 localization between cured and uncured variants, and (3) a Pus4-dependent change in cell size.
 
@@ -178,39 +242,247 @@ Our data from wild yeast isolates demonstrates that cell size and protein synthe
 
 ## Materials and methods
 
-## Model formulation
+**Key resources table**
 
-To model the fitness of an epigenetic element for which growth in nutrient-replete conditions is improved and survival in starvation conditions is worsened, we define the following growth equations in nutrient-replete conditions:x0=x00eμ0tx1=x10eμ1t
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2 mouse monoclonal antibody</td>
+      <td>Sigma</td>
+      <td>RRID:AB_262044</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG peroxidase</td>
+      <td>Sigma</td>
+      <td>RRID:AB_257993</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-PGK1 monoclonal antibody</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_2532235</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Luciferase Reporter Assay</td>
+      <td>Promega</td>
+      <td>Catalog# E1910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ERCC ExFold RNA Spike-In Mixes</td>
+      <td>Invitrogen</td>
+      <td>Catalog# 4456739</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Sigma</td>
+      <td>Catalog# C1988</td>
+      <td>CAS# 66-81-9</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Radicicol</td>
+      <td>Research Products International</td>
+      <td>Catalog#R20020-0.001</td>
+      <td>CAS# 12772-57-5</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>LC Laboratories</td>
+      <td>Catalog# R-5000</td>
+      <td>CAS# 53123-88-9</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Canavanine</td>
+      <td>Sigma</td>
+      <td>Catalog# C9758</td>
+      <td>CAS# 2219-31-0</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Fluoroorotic acid monohydrate (5-FOA)</td>
+      <td>GoldBio</td>
+      <td>Catalog# F-230–2.5</td>
+      <td>CAS# 220141-70-8</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Guanidine hydrochloride</td>
+      <td>Sigma</td>
+      <td>Catalog# G3272</td>
+      <td>CAS# 50-01-1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[35S]-methionine</td>
+      <td>Perkin Elmer</td>
+      <td>Catalog# NEG709A500UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Cyclohexyl-N′-(2-morpholinoethyl)carbodiimide methyl-p-toluenesulfonate (CMC)</td>
+      <td>Sigma</td>
+      <td>Catalog# C106402</td>
+      <td>CAS# 2491-17-0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Model</td>
+      <td>https://github.com/cjakobson/liveFastDieYoung</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Model formulation
+
+To model the fitness of an epigenetic element for which growth in nutrient-replete conditions is improved and survival in starvation conditions is worsened, we define the following growth equations in nutrient-replete conditions:
+
+$$
+x_{0}=x_{00}e^{\mu_{0}t}
+$$
+
+
+
+$$
+x_{1}=x_{10}e^{\mu_{1}t}
+$$
 
 where x0 represents the population of naïve cells and x1 represents the population of [BIG+] cells. μ0 and μ1 are the growth rates of naïve and [BIG+] cells, respectively. We neglect the lag and stationary phases of growth, as the ratio between populations does not change during this time.
 
-Likewise, in starvation,x0=x00e-δ0tx1=x10e-δ1t
+Likewise, in starvation,
+
+$$
+x_{0}=x_{00}e^{-\delta_{0}t}
+$$
+
+
+
+$$
+x_{1}=x_{10}e^{-\delta_{1}t}
+$$
 
 where δ0 and δ1 are the death rates of naïve and [BIG+] cells, respectively.
 
-We can furthermore define the times of nutrient repletion and starvation as τ1 and τ2, respectively. Thus, for each cycle of nutrient/starvation, we can define the following recursion relations:x0,i+1=x0,ieμ0τ1x1,i+1=x1,ieμ1τ1x0,i+2=x0,i+1e-δ0τ2x1,i+2=x1,i+1e-δ1τ2
+We can furthermore define the times of nutrient repletion and starvation as τ1 and τ2, respectively. Thus, for each cycle of nutrient/starvation, we can define the following recursion relations:
 
-And we can write an analytical expression for the ratio of populations after one repletion/starvation cycle:x0t+τ1+τ2=x0teμ0τ1-δ0τ2x1t+τ1+τ2=x1teμ1τ1-δ1τ2x1x0t+τ1+τ2=x1tx0teμ1τ1-δ1τ2-μ0τ1-δ0τ2
+$$
+x_{0,i+1}=x_{0,i}e^{\mu_{0}\tau_{1}}
+$$
+
+
+
+$$
+x_{1,i+1}=x_{1,i}e^{\mu_{1}\tau_{1}}
+$$
+
+
+
+$$
+x_{0,i+2}=x_{0,i+1}e^{-\delta_{0}\tau_{2}}
+$$
+
+
+
+$$
+x_{1,i+2}=x_{1,i+1}e^{-\delta_{1}\tau_{2}}
+$$
+
+And we can write an analytical expression for the ratio of populations after one repletion/starvation cycle:
+
+$$
+x_{0}t+\tau_{1}+\tau_{2}=x_{0}te^{\mu_{0}\tau_{1}-\delta_{0}\tau_{2}}
+$$
+
+
+
+$$
+x_{1}t+\tau_{1}+\tau_{2}=x_{1}te^{\mu_{1}\tau_{1}-\delta_{1}\tau_{2}}
+$$
+
+
+
+$$
+\frac{x_{1}}{x_{0}}t+\tau_{1}+\tau_{2}=\frac{x_{1}t}{x_{0}t}e^{\mu_{1}\tau_{1}-\delta_{1}\tau_{2}-\mu_{0}\tau_{1}-\delta_{0}\tau_{2}}
+$$
 
 For the purposes of the model, we consider only the ratio between populations in the two epigenetic states (neglecting the total carrying capacity of the environment). The above defines a recursion relation from which we can predict the ratio of naïve and [BIG+] cells after N cycles of nutrient repletion and starvation.
 
-## Parameter estimation and prediction of competitive fitness
+### Parameter estimation and prediction of competitive fitness
 
 The free parameters defining the growth advantage and starvation disadvantage attributable to the epigenetic element in the model above (μ0 and μ1; δ0 and δ1) were determined by Monte Carlo sampling of independent measurements of the growth and death rates (Figure 2D and E). To generate the ensemble of competitive fitness predictions shown in Figure 2C, we randomly sampled growth and death rates for naïve and [BIG+] cells according to their experimentally determined distributions. The sampling was conducted 1000 times, and the prediction shown in Figure 2F is the median and 95% confidence interval of the resulting ensemble of model predictions.
 
-## Code and data availability
+### Code and data availability
 
 All MATLAB code and data required to generate the model predictions are available at http://github.com/cjakobson/liveFastDieYoung (copy archieved at swh:1:rev:d86455c2e53f50644862690e22bfdcd080abdf63, Jakobson, 2021). Code to generate the figures is available upon reasonable request to jarosz@stanford.edu.
 
-## Bacterial strain growth
+### Bacterial strain growth
 
 Bacteria strains (for plasmid propagation) were cultured on LB agar or liquid (Research Products International (RPI), Mount Prospect, IL).
 
-## Yeast strains
+### Yeast strains
 
 Yeast strains were cultured on either YPD agar or liquid (RPI) or SD-Ura (Sunrise Scientific, Knoxville, TN) unless otherwise indicated. Strains were stored as glycerol stocks (25% glycerol [Amersco, Solon, OH] in appropriate media) at –80°C and revived on YPD or amino acid dropout media before testing. Yeast were grown in YPD at 30°C on a TC-7 roller drum wheel (New Brunswick) unless indicated otherwise. Yeast transformations were performed with a standard lithium–acetate protocol (Gietz et al., 1992). The pus4∆ strain was sourced from the BY4741 MATa haploid knockout library (GE Dharmacon, Lafayette, CO).
 
-## Strain constructions
+### Strain constructions
 
 Most diploids were constructed by crossing indicated BY4741 haploids to the BY4742 parental strain (ATCC, Manassas, VA) by mixing a bead of cells of each strain (from a single colony) together on a YPD plate and growing overnight at 30°C. A small globule of this cell mixture was then restreaked to single colonies on SD-Lys-Met agar plates to select for diploids.
 
@@ -226,19 +498,19 @@ Transient PUS4 deletion experiment strains were made by the Delitto Perfetto met
 
 Transient overexpression of Pus4 in haploid BC187 yeast was performed using PDJ541 (CEN URA3 GAL::PUS4) (Supplementary file 4). Three independent transformants of BC187 (previously cured by transient Hsp70 inhibition) bearing this plasmid were grown in SGalactose-Ura for 48 hr at 30°C. Overexpression was stopped by outgrowth in non-selective YPD medium for 48 hr. Strains lacking the overexpression plasmid were isolated by plating to single colonies on media containing 5-FOA. Uracil auxotrophy was confirmed before subsequent measurements of cell size.
 
-## Growth assays
+### Growth assays
 
 Biological replicates of each yeast strain were pre-grown in rich media (YPD). We then diluted these saturated cultures 1:20 in sterile water and then inoculated 3 µL into 96-well humidified plates (Nunc Edge Plates [Thermo Scientific, Waltham, MA]) with 150 µL of YPD or SD-CSM per well. Cycloheximide (Sigma) was added to growth media at either 0.01 µg/mL or 0.05 µg/mL, as indicated. Rapamycin (LC Laboratories, Woburn, MA) was added to growth media at 10 µM. Cell growth was monitored with continuous measurements of OD600 (approximately every 10 min) at 30°C over 96 hr using BioTek Eon or Synergy H1 microplate readers (Winooski, VT). Timepoints plotted in bar graphs correspond to the maximum proliferation rates calculated from growth data.
 
-## Measurement of chronological lifespan
+### Measurement of chronological lifespan
 
 For each strain, four single colonies were picked from freshly streaked YPD plate and grown in 5 mL of pre-sporulation media for 3 days on a roller drum wheel (New Brunswick Scientific, Edison, NJ) at 30°C. Cultures were then pelleted and washed once with SPO media, and resuspended in 5 mL of SPO media, and placed back on the roller drum wheel at 30°C. On days indicated, a dilution was made of each replicate to achieve dozens to hundreds of colonies on a YPD plate, which were then counted using a colony counter (Synbiosos Acolyte, Frederick, MD). Dilution was ~100,000× at early stages of the experiment and was later empirically determined due to significant cell death. We note that aging the cells in SPO did not lead to significant acidification (pH of old cultures was found to be >5), as has been reported for cells aged in YPD, which contains high levels of glucose that upon metabolism leads to the secretion of organic acids (Murakami et al., 2011).
 
-## Measurement of replicative lifespan
+### Measurement of replicative lifespan
 
 RLS was assessed using the standard method of isolating virgin cells on agar YPD (2% glucose) plates, and then separating their daughter cells at each cell division by micromanipulation and counting the total number of daughters produced by each mother cell (Steffen et al., 2009; Wasko et al., 2013). Strains were streaked from glycerol stocks onto YPD plates and allowed to grow at 30°C until individual colonies could be selected for each strain. Colonies were lightly patched onto fresh YPD overnight and 20 cells were isolated by microdissection from each patch. These cells were incubated at 30°C for ~2 hr until they had formed daughter cells, at which time individual virgin daughter cells were selected and arrayed as previously described (Steffen et al., 2009) for lifespan analysis. From these, daughter cells were removed by microdissection and counted approximately every 2 hr during the day. Plates were maintained at 30°C during the day and placed at 4°C overnight. At least four independent replicates (arising from different colonies) of 20 individual mother cells each were measured for each strain.
 
-## Curing
+### Curing
 
 Three regimes of chaperone inhibition were tested: (1) transient exposure to a dominant-negative version of Hsp70 (Ssa1) to inhibit its activity (Chakrabortee et al., 2016a; Jarosz et al., 2014); (2) transient exposure to radicicol (RPI) to inhibit Hsp90 activity (Chakrabortee et al., 2016a); and (3) transient exposure to guanidinium hydrochloride (Sigma) to inhibit Hsp104 activity (Ferreira et al., 2001).
 
@@ -250,11 +522,11 @@ Regime 3 was performed like regime 2 but with SD-CSM plates containing 0.5 g/L g
 
 Wild yeast strains were cured by transforming a uracil-selectable 2micron plasmid (PDJ1222) encoding the aforementioned dominant-negative version of Hsp70 (Ssa1), under control of a constitutive promoter (pGPD). Transformants were passaged on selective media five times to allow the growth of single colonies. Transformants were then passaged three times on non-selective media (YPD) to permit plasmid loss, which was confirmed by the lack of growth on selective media (SD-Ura).
 
-## Strain competitions
+### Strain competitions
 
 Single colonies were used to inoculate 5 mL YPD cultures that were grown for 3 days on a roller drum wheel at 30°C. Cells were diluted 1000-fold and then mixed in equal volumes to form 50:50 mixtures of either of the following: naïve CanS and [BIG+] CanR; or naïve CanR and [BIG+] CanS. Before mixing cells, saturated cultures were measured to have near equal cell densities, and ‘time zero’ measurement was made by plating the initial cell mixture and counting the number of canavanine-resistant colony-forming units (CFUs) relative to total CFUs. These initial strain mixtures were then grown for 2 days on a roller drum wheel at 30°C, after which cells were diluted 50,000-fold or 25,000-fold and plated on YPD or canavanine plates, respectively. These plates were grown at 30°C for 2 days before counting colonies. The liquid cultures were diluted 1:1000 in 5 mL of fresh YPD, and this process was repeated nine more times. Swapping of canavanine resistance between naïve and [BIG+] was done to correct for the potential of canavanine resistance to influence cell growth. However, in our experiments the differences were negligible. The numbers of canavanine-resistant and total colonies were compared relative to a number of cells plated to determine the number of naïve or [BIG+] colonies arising at each timepoint.
 
-## Microscopy and cell size measurements
+### Microscopy and cell size measurements
 
 Most microscopy was performed using a Leica inverted epifluorescence microscope (DMI6000B) with a Hamamatsu Orca 4.0 camera. Cells were imaged after 3 days of growth in 5 mL YPD at 30°C. Saturated cultures were diluted 10-fold with 1X PBS and briefly sonicated to break up cell clumps. Differential interference contrast (DIC) images were taken at 20 ms exposure time using a 63×/1.40 oil objective. Cell area was calculated using CellProfiler (3.1.5) image analysis software (http://www.cellprofiler.org; Carpenter et al., 2006). The large cell threshold was set at one standard deviation above the cell area mean of the naïve cells.
 
@@ -266,7 +538,7 @@ Data presented in Figure 6—figure supplement 1A were grown and imaged similarl
 
 Cell size experiments using protein synthesis inhibitors (Figure 6A–D): conditions were the same as above, with the following differences. Single colonies were inoculated into YPD, YPD + cycloheximide (0.05 µg/mL), or YPD + rapamycin (10 µM) and grown for 4 days before imaging. (Very similar results were observed after 3 days of growth.) The following day, cultures were diluted into liquid YPD and grown for 3 days, after which they were restreaked once onto YPD agar. Single colonies were then used to inoculate liquid YPD cultures, grown for 3 days before imaging to test for the reappearance of the large cell size phenotype.
 
-## Microscopy image processing
+### Microscopy image processing
 
 ImageJ version 2.0.0-rc-69/1.52 p, Build 269a0ad53f.
 
@@ -274,7 +546,7 @@ For GFP-Pus4 in laboratory S. cerevisiae and wild S. cerevisiae isolate BC187 (F
 
 For GFP-Par32 microscopy (Figure 6—figure supplement 1A), analysis was performed using ImageJ (imagej.nih.gov). All images were adjusted to a uniform contrast and illumination corrected using standard tools in ImageJ. The background was calculated using a morphological opening with a disc of radius 75 pixels, such that the structuring element was larger than cells in the foreground. In these background-corrected images, we quantified the ratio of membrane to cytoplasmic Par32-GFP within each cell by measuring the average intensity for a region at the plasma membrane and the average intensity for an equivalently sized region approximately 0.2 μm from the plasma membrane. For each cell, the ‘Fraction membrane Par32 signal’ was calculated by dividing the average Par32-GFP intensity in the membrane region by the average Par32 intensity in the cytoplasmic region.
 
-## Luciferase assays
+### Luciferase assays
 
 Strains were transformed with PDJ512 and PDJ513. To maintain the plasmids, we grew these cells in a synthetic complete medium containing nutrient levels between those in SD and YPD formulations. Four independent transformants for each sample were grown for 1 day in 150 µL SC-Ura (Sunrise Scientific) per well in 96-well plates at 30°C. Saturated cultures were then diluted 15× into fresh media in a new 96-well plate and grown until cultures reach OD600 0.6, as determined by a BioTek Eon plate reader. 20 µL of each culture was added using a multichannel pipette into a white flat-bottom 96-well microplate (E&K Scientific, Santa Clara, CA) already containing 20 µL of room temperature 1X Passive Lysis Buffer from the Dual-Luciferase Reporter Assay System (Promega, Madison, WI). Cultures were then lysed by shaking at 300 rpm for 25 min at room temperature. Renilla and firefly luciferase activity was measured using 75 µL injection volumes and otherwise default settings on a Veritas luminometer (Turner Biosystems). pTH726-CEN-RLuc/minCFLuc (PDJ512) and pTH727-CEN-RLuc/staCFLuc (PDJ513) were gifts from Tobias von der Haar (University of Kent; Addgene plasmids #38210 and #38211; Chu et al., 2014).
 
@@ -282,70 +554,70 @@ Final luciferase values were normalized to OD600 measurements of cultures to acc
 
 For wild strains, we considered the possibility that curing could reverse multiple epigenetic elements affecting plasmid copy number, transcription, or other elements of gene expression apart from protein synthesis. Indeed, after normalizing Renilla or firefly luciferase values to cell density, some strains have several-fold differences after curing, although they were closely correlated irrespective of which firefly codon variant was compared. Therefore, as for data presented in Figure 6E, for Figure 8B we also normalized firefly luciferase values to Renilla luciferase, which is expressed from the same plasmid. This normalization procedure thus tests for differences in protein synthesis that are codon-frequency dependent, that is, a measure of translational efficiency.
 
-## Polysome profiling
+### Polysome profiling
 
 Single colonies from two biological replicates per sample were used to inoculate 5 mL YPD cultures that were grown on a roller drum wheel at 30°C overnight. Saturated cultures were added to 95 mL of YPD in 500 mL flasks and shaken at 225 rpm at 30°C until cultures reached OD600 1.0. Five minutes prior to harvesting cells, we added cycloheximide (Sigma) to a final concentration of 100 µg/mL to arrest translation, by adding 1 mL of a 10 mg/mL stock solution (in ethanol) per culture, then immediately swirling flask and putting back on a shaker for 5 min 225 rpm 30°C to permit the chemical to enter cells and arrest protein synthesis. Cultures were pelleted in 50 mL conical tubes for 3 min at 5000 rpm. After decanting the supernatant, pellets were quickly resuspended in ice-cold Polysome Lysis Buffer (PLB; Jan et al., 2014) (20 mM Tris pH 8.0, 140 mM KCl, 1.5 mM MgCl2, 100 µg/mL cycloheximide, 1% Triton X-100, RNase-free reagents), 250 µL total PLB per sample. Resuspended pellets were then flash-frozen in liquid nitrogen. Pellets were weighed to ensure their weights were near equal and then thawed on ice. 250 µL of additional ice-cold PLB was added per sample, making slightly over 0.5 mL per sample. Samples were then flash-frozen in tiny pellets (‘yeast dippin’ dots’) by pipetting directly into a small dewar filled with liquid nitrogen and a wire mesh basket nested inside. Tiny pellets were then stored at –80°C until lysis. Samples were lysed using a Retsch Cryomill (Haan, Germany) with 25 mL canisters and the following program: pre-cool, then 12 cycles of 15 Hz × 3 min. Smears of lysate were stained with Trypan blue and imaged under a microscope to verify efficient lysis. (We suspect with larger sample volume:canister volume ratios, fewer cycles would be necessary.)
 
 Lysates were loaded onto 10–50% sucrose gradients pre-poured on a BioComp Gradient Master 108 (Fredericton, ND, Canada). Lysates generally contained RNA concentrations around 12–18 µg/µL. 30 µL of lysate was carefully pipetted onto the top of the sucrose gradient, and samples were spun in a Beckman SW41 Ti Rotor for 2.5 hr at 4°C at 40,000 rpm. Gradients were analyzed on a Brandel fractionator (Gaithersburg, MD). Technical replicates (same lysate independently loaded onto separate gradients) showed a very high degree of similarity, as did biological replicates.
 
-## [35S]-Methionine pulse labeling
+### [35S]-Methionine pulse labeling
 
 Adapted from Esposito and Kinzy, 2014. Single colonies were inoculated into 5 mL complete media lacking methionine and grown overnight at 30°C. The saturated starter culture was then inoculated into 75 mL of complete media lacking methionine to an OD600 of 0.1 in a 250 mL flask. Flasks were grown at 30°C shaking at 225 rpm until an OD600 of 0.5–0.7 was reached at which point 37.5 µL of 100 mM (cold) methionine (Sigma) and 7.32 µL of 10.25 mCi/mL [35S]-methionine (PerkinElmer) was added for a final concentration of 50 µM methionine and 1 µCi/mL [35S]-methionine. At 15 min intervals from the time of methionine addition, OD600 was determined by cuvette and 1 mL aliquots were obtained for scintillation counting. To the 1 mL aliquot, 200 µL 50% TCA (Sigma) was added and incubated on ice for 10 min. The samples were then incubated at 70°C for 20 min and briefly spun down. In a 1225 Sampling Manifold (MilliporeSigma XX2702550), 25 mm glass microfiber filters (GE Healthcare Life Sciences) were arranged and pre-wetted with 5% TCA. Samples were then applied to the glass fiber filters under vacuum. Filters were then washed twice with 5 mL 5% TCA and once with 95% ethanol. Filters were then removed from the manifold, air-dried on Whatman paper, placed in scintillation vials with 5 mL ScintiSafe Econo 1 scintillation cocktail solution (Fisher Scientific SX20-5), and underwent six rounds of technical replicated counting on a Beckman LS 600SCS. Scintillation counts were then normalized to OD600.
 
-## 2-D gel electrophoresis
+### 2-D gel electrophoresis
 
 Following 1 hr of pulse labeling with [35S]-methionine, 10 mL of cells were collected and centrifuged at 16k × g at 4°C for 10 min. The supernatant was removed and 300 µL of TCA buffer was added (10 mM Tris-HCl pH 8.0; 10% TCA; 25 mM NH4OAc; 1 mM Na2EDTA) along with glass beads. Samples were then vortexed for 1 min bursts with 5 min rests for five times at 4°C. The slurry was transferred away from the glass beads to a fresh tube. 200 µL of fresh TCA buffer was added to beads to pick up residue. Samples were then split, one half destined for resuspension in SDS for protein quantification and the other in CHAPS for the 2-D gel. Samples were centrifuged at 16k × g at 4°C for 10 min. The supernatant was then removed from the resulting pellets and washed twice with 1 mL acetone. The samples were then resuspended in SDS Resuspension Solution (0.1 M Tris-HCl pH 11.0; 3% SDS) or CHAPS Resuspension Buffer (8 M urea; 4% CHAPS; 2% IPG Buffer 3–10; 40 mM DTT). CHAPS samples were then adjusted to 1 µg/µL. First-dimension resolution was conducted with 250 µg with 13 cm 3–10 NL Immobiline DryStrip gels (Cytiva). Rehydration protocol started with 12 hr rehydration followed by 500 V for 0.5 kVh, 1000 V for 1.0 kVh, 16,000 V for 14.5 kVh. First dimension strips were then trimmed to fit the second-dimension gel and equilibrated in Equilibration Buffer (6 M urea; 30% glycerol; 2% SDS, 50 mM Tris-HCl pH 8.8; 0.002% bromophenol blue; 65 mM DTT) for 30 min. Strips were rinsed with MOPS running buffer and loaded onto 11 cm 4–12% Bis-Tris Criterion XT gels (Bio-Rad). Strips were sealed in place with an agarose plug (0.5% agarose; 0.0002% bromophenol blue) and ran at 200 V for 1 hr. Second-dimension gels were then stained in Coomassie and dried in a cellulose sandwich consisting of a plastic wrap on one side of the gel to facilitate the removal of one of the cellulose layers for autoradiography. X-ray film was then exposed for 9 days. Autoradiography spots were quantified in ImageJ by tracing out the spot and quantifying the integrated density of the signal. Densities of prion cells were then normalized to the naïve sample, as reported in Figure 6I.
 
-## GFP-fusion measurements
+### GFP-fusion measurements
 
 Naïve or [BIG+] cells were mated to the SWAT seamless-GFP library (Weill et al., 2018; Yofe et al., 2016) on solid YPD agar plates in 384-spot format for 24 hr at room temperature. Diploids were selected on media lacking both lysine and methionine (SD-Lys-Met) and propagated for 48 hr at room temperature. Diploids were inoculated into 60 µL of liquid media lacking both lysine and methionine (SD-Lys-Met) in 384-well plates. All library manipulations were carried out using a Singer ROTOR HDA robotic pinning instrument. Cells were propagated in liquid medium for 24 hr at 30°C (OD600 ~ 1), at which time OD600 and green fluorescence were measured using a BioTek Synergy H1 plate reader. OD600 was adjusted based on known blank wells, and the GFP/OD600 measurements were normalized by Z-score ([xi – µ]/σ) within the naïve and [BIG+] populations independently.
 
-## Settings used for PWScan for predicted Pus4 target sites in silico
+### Settings used for PWScan for predicted Pus4 target sites in silico
 
-## Western blots
+### Western blots
 
 For SDS-PAGE, immunoblots, and protein yield measurements, cells were lysed using a Retsch Cryomill using the following program: six 3 min cycles at 15 Hz with 2 min cooling cycles in between. Cell lysates were loaded onto GenScript ExpressPlus SDS-PAGE 4–20% gels (Piscataway, NJ) and stained using Coomassie blue. For western blots, anti-FLAG M2 monoclonal antibody (Sigma) was used to detect 3XFLAG-Pus4, and anti-PGK1 monoclonal antibody (Invitrogen) was used to detect the loading control.
 
-## RNA sequencing
+### RNA sequencing
 
 Four independent colonies of naïve and [BIG+] cells were grown in 5 mL liquid YPD cultures on a culture roller drum wheel overnight at 30°C. Saturated cultures were diluted 1:1000 in new 5 mL YPD cultures and grown until OD600 1.0 (exponentially growing). Cultures were pelleted in a table-top centrifuge with the swing-bucket rotor at 4300 × g at 4°C for 5 min, washing once with ice-cold 1X PBS. RNA isolation, poly-A selection, the addition of ERCC spike-in controls, and sequencing were performed by the Beijing Genomics Institute. Analysis was performed using Kallisto (Bray et al., 2016) and Sleuth (Pimentel et al., 2017). Transcripts Benjamini–Hochberg-corrected q-value <0.05 and |log2 fold-change| > 1 were considered differentially expressed. Raw data and other experimental information are available on the Gene Expression Omnibus (Barrett et al., 2013), accession: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176577.
 
-## tRNA/rRNA quantification
+### tRNA/rRNA quantification
 
 Strains were grown up in 5 mL of YPD overnight at 30°C. Saturated cultures were then diluted 15× into fresh media and grown to an OD600 0.8. Cells were then pelleted, and total RNA was extracted by phenol-chloroform extraction. RNA concentration for each sample was then analyzed by Nanodrop and diluted to equal concentrations in RNase-free water. The extracted RNA was then run on a nucleic acid fragment analyzer, and total tRNA abundance was quantified relative to the abundance of 5.8 S rRNA.
 
-## Pseudouridine measurements: high-resolution melt curve analysis
+#### Pseudouridine measurements: high-resolution melt curve analysis
 
 Protocol adapted from Lei and Yi, 2017. For each sample, 40 µg of total RNA was fragmented in RNA fragmentation buffer (New England Bio Labs, Ipswich, MA) at 94°C for 3 min. Following ethanol precipitation, fragmented RNA was resuspended in 80 µL of 5 mM EDTA, denatured at 80°C for 5 min, and then immediately chilled on ice. Each sample was then split into two 40 µL samples for a CMC-labeled and non-labeled control. The 40 µL RNA sample destined for CMC-labeling was added to 400 µL BEU + CMC buffer (50 mM bicine, pH 8.5; 4 mM EDTA; 7 M urea; 200 mM CMC [Sigma]). The non-labeled 40 µL RNA sample was added to 400 µL BEu buffer (50 mM bicine, pH 8.5; 4 mM EDTA; 7 M urea). Both samples were incubated at 37°C for 20 min to carry out the CMC-Ψ reaction, followed by ethanol precipitation. Each sample was then resuspended in 200 µL Na2CO3 buffer (50 mM Na2CO3, pH 10.4; 2 mM EDTA) and incubated at 37°C for 6 hr. Following incubation, RNA was ethanol precipitated and resuspended in 40 µL H2O. RNA was annealed to primers by the addition of 4 µL 100 µM Random Hexamer Primers (TaKaRa, Mountain View, CA) and incubation at 65°C for 5 min. Samples were chilled on ice afterward. To perform the reverse transcription, 32 µL RT Buffer (125 mM Tris, pH 8.0; 15 mM MnCl2; 187.5 mM KCl; 1.25 mM dNTPs; 25 mM DTT) was added to each sample. Samples were then incubated at 25°C for 2 min. After, 0.5 µL SuperScript II reverse transcriptase (SSII, Invitrogen, Waltham, MA) was added to each sample followed by incubation at 25°C for 10 min, 42°C for 3 hr, and 70°C for 15 min. To perform qPCR analysis, 2 µL of the sample was mixed with 10 µL 2X SYBR Mix (Kapa Biosystems, Wilmington, MA), 0.4 µL of each 10 µM primer (IDT, Coralville, IA), and 7.2 µL H2O for a total of 20 µL for each reaction. qPCR was performed in a Bio-Rad CFX Connect Real-Time System (Bio-Rad, Hercules, CA) using the following protocol: initial incubation at 95°C for 5 min, followed by 45 cycles of 95°C for 0.5 min and 60°C for 1 min. Following amplification, the reaction was brought down to 54°C and held for 5 s, increasing in temperature by 0.1°C increments until 95°C is reached to obtain melt curve data.
 
-## Pseudouridine measurements: Sanger sequencing
+#### Pseudouridine measurements: Sanger sequencing
 
 Templates were TEF1/TEF2 amplicons from the qPCR step above. Due to the short length of tRNA amplicons, the qPCR product was re-amplified with primers containing the restriction sites NcoI and HindIII and ligated into a pETm11 vector to allow for sequencing from the T7 promoter.
 
-## Pseudouridine measurements: CLAP
+### Pseudouridine measurements: CLAP
 
 Adapted from Zhang et al., 2019.
 
-## CMC treatment of RNA
+#### CMC treatment of RNA
 
 20 µg of total RNA in 12 µL of water was mixed with 24 µL of 1× TEU buffer (50 mM Tris-HCl pH 8.0, 4 mM EDTA, 7 M urea). Next, 1 M CMC was prepared fresh in TEU buffer, and 4 µL was added to +CMC samples while 4 µL of TEU buffer was added to –CMC samples for a total volume of 40 µL. To incorporate CMC, the samples were incubated at 30°C for 16 hr. Following incubation, excess CMC was removed by the addition of 160 µL of 50 mM KOAc pH 5.5, 200 mM KCl, 3 µL 5 µg/µL GlycoBlue (Thermo Fisher, AM9515), and 550 µL of EtOH. The samples were incubated for 2 hr at –80°C then centrifuged at 13 krpm at 4°C for 35 min. The supernatant was removed and 500 µL of 75% EtOH was added. The samples were incubated at –80°C for 2 hr and centrifuged in the same manner as before. The EtOH precipitation and wash steps were repeated an additional time. After the second wash step, the samples were left at –80°C overnight. The following day the samples were centrifuged again at 13 krpm at 4°C for 35 min, and the supernatant was removed. To reverse the CMC-U/CMC-G adducts, the RNA pellet was mixed with 40 µL of 50 mM Na2CO3, 2 mM EDTA, and incubated at 37°C for 6 hr. An additional 160 µL of 50 mM KOAc (pH 5.5), 200 mM KCl was added after incubation followed by ethanol precipitation.
 
-## RNA 5′ phosphorylation and RNA-5 blocking oligo ligation
+#### RNA 5′ phosphorylation and RNA-5 blocking oligo ligation
 
 Performed similarly to Zhang et al., 2019. To reduce the signal derived from random RNA fragmentation during the CMC reaction, ±CMC-treated RNA in 6.5 µL H2O was mixed with 0.5 µL RNase inhibitor (NEB, M0307L), 1 µL of 10× T4 PNK reaction buffer, 1 µL of 1 mM ATP, 1 µL of T4 polynucleotide kinase (PNK), and then incubated at 37°C for 30 min. The RNA-5 oligo (/5AmMC6/rArCrCrCrA; Integrated DNA Technologies) was ligated by addition of 1 µL of 10× T4 RNA Ligase Reaction Buffer, 1 µL of 100 µM RNA-5 oligo, 1 µL of 1 mM ATP, 1 µL of RNase inhibitor, 3 µL of DMSO, 2 µL of H2O, and 1 µL of T4 RNA ligase I (NEB, M0437M), and incubated at 16°C for 16 hr. The reaction was terminated by addition of 1.2 µL of 200 mM EDTA.
 
-## Reverse transcription and splint ligation
+#### Reverse transcription and splint ligation
 
 Performed similarly to Zhang et al., 2019. Reverse transcription was carried out using 3 µL of the above ligation mixture (∼1 µg RNA) using AMV reverse transcriptase (NEB, M0277L) and target-specific primers. To anneal the primer, 1 µL of 10× annealing buffer (250 mM Tris-HCl [pH 7.4], 480 mM KCl) and 1 µL of 0.5 µM target-specific RT primer were added, and the mixture was incubated at 93°C for 2 min. The RT reaction was performed by mixing 5 µL of 2× AMV RT reaction mixture to make 0.6 U/µL AMV RT, 1× AMV RT buffer, and 0.5 mM of each dNTP. The RT reaction was run at 42°C for 1 hr. RT enzyme was inactivated by incubation at 85°C for 5 min, and then 1 µL of 5 U/µL RNase H (NEB, M0297L) was added and the mixture incubated at 37°C for 20 min to digest the RNA. RNase H was inactivated by incubating the mixture at 85°C for 5 min.
 
 To anneal the adaptor, 1 µL of the adaptor/splint oligos mixture (1.5 µM each) was added to the above RT mixture, and then incubated at 75°C for 3 min. To ligate the adaptor, 4 µL of 4× ligation mixture was added for a final concentration of 10 U/µL of T4 DNA ligase (NEB, M0202L), 1× T4 DNA ligase reaction buffer, and 12.5% DMSO. The ligation was performed at 16°C for 16 hr. DNA ligase was inactivated by incubating the mixture at 65°C for 10 min.
 
-## PCR amplification and gel electrophoresis
+#### PCR amplification and gel electrophoresis
 
 To perform PCR, 2 µL of the above ligation mixture was mixed with various components for a final condition of 1× Q5 reaction buffer, 1× Q5 high GC enhancer, 200 µM of each dNTP, 0.5 µM forward and reverse primers, and 0.02 U/µL Q5 high-fidelity DNA polymerase (NEB, M0491L); the final PCR reaction volume was 35 µL. PCR was done for 35 cycles. A PCR cleanup was performed, and 22 µL of water was used to elute the final product.
 
 About half of the PCR product, 9 µL, was mixed with 7 µL of water and 4 µL of 6× TriTrack DNA Loading Dye (Thermo Fisher, R1161). The entire mixture was loaded on a prerun 10% nondenaturing gel containing 1× TBE, together with Ultra Low Range DNA ladder (NEB, N0558S). The gel was stained with SYBR gold nucleic acid gel stain (Thermo Fisher, S11494) for 10 min. Product bands were visualized using the Amersham Typhoon imaging system and the bands quantified using ImageQuant TL.
 
-## Data display
+### Data display
 
 Plots/graphs were made using PRISM 7/8/9 software (GraphPad, San Diego, CA).

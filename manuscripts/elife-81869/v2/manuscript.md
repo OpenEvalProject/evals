@@ -23,23 +23,23 @@
 
 ### Affiliations
 
-1. https://ror.org/01yc7t268 Department of Neurology, Washington University in St. Louis St Louis United States
-2. https://ror.org/01yc7t268 Department of Radiology, Washington University in St. Louis St Louis United States
-3. https://ror.org/01yc7t268 Department of Neurosurgery, Washington University in St. Louis St Louis United States
-4. https://ror.org/01yc7t268 Department of Psychiatry, Washington University in St. Louis St Louis United States
-5. https://ror.org/01yc7t268 Department of Pathology and Immunology, Washington University in St. Louis St Louis United States
-6. https://ror.org/0145s0423 Department of Cognitive Neurology, Institute for Neurological Research (FLENI) Buenos Aires Argentina
+1. Department of Neurology, Washington University in St. Louis St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+2. Department of Radiology, Washington University in St. Louis St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+3. Department of Neurosurgery, Washington University in St. Louis St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+4. Department of Psychiatry, Washington University in St. Louis St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+5. Department of Pathology and Immunology, Washington University in St. Louis St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+6. Department of Cognitive Neurology, Institute for Neurological Research (FLENI) Buenos Aires Argentina ([ROR:0145s0423](https://ror.org/0145s0423))
 7. Department of Neurology, Mayo Clinic Florida Jacksonville United States
-8. https://ror.org/01kg8sb98 Department of Neurology, Indiana University School of Medicine Indianapolis United States
-9. https://ror.org/01hvx5h04 Department of Clinical Neuroscience, Osaka Metropolitan University Medical School, Nagaoka Sutoku University Osaka Japan
-10. https://ror.org/05591te55 Department of Neurology, Ludwig-Maximilians University Munich Germany
-11. https://ror.org/043j0f473 German Center for Neurodegenerative Diseases Munich Germany
+8. Department of Neurology, Indiana University School of Medicine Indianapolis United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))
+9. Department of Clinical Neuroscience, Osaka Metropolitan University Medical School, Nagaoka Sutoku University Osaka Japan ([ROR:01hvx5h04](https://ror.org/01hvx5h04))
+10. Department of Neurology, Ludwig-Maximilians University Munich Germany ([ROR:05591te55](https://ror.org/05591te55))
+11. German Center for Neurodegenerative Diseases Munich Germany ([ROR:043j0f473](https://ror.org/043j0f473))
 
 † Corresponding author
 
 ## Abstract
 
-Estimates of ‘brain-predicted age’ quantify apparent brain age compared to normative trajectories of neuroimaging features. The brain age gap (BAG) between predicted and chronological age is elevated in symptomatic Alzheimer disease (AD) but has not been well explored in presymptomatic AD. Prior studies have typically modeled BAG with structural MRI, but more recently other modalities, including functional connectivity (FC) and multimodal MRI, have been explored. We trained three models to predict age from FC, structural (S), or multimodal MRI (S+FC) in 390 amyloid-negative cognitively normal (CN/A−) participants (18–89 years old). In independent samples of 144 CN/A−, 154 CN/A+, and 154 cognitively impaired (CI; CDR > 0) participants, we tested relationships between BAG and AD biomarkers of amyloid and tau, as well as a global cognitive composite. All models predicted age in the control training set, with the multimodal model outperforming the unimodal models. All three BAG estimates were significantly elevated in CI compared to controls. FC-BAG was significantly reduced in CN/A+ participants compared to CN/A−. In CI participants only, elevated S-BAG and S+FC BAG were associated with more advanced AD pathology and lower cognitive performance. Both FC-BAG and S-BAG are elevated in CI participants. However, FC and structural MRI also capture complementary signals. Specifically, FC-BAG may capture a unique biphasic response to presymptomatic AD pathology, while S-BAG may capture pathological progression and cognitive decline in the symptomatic stage. A multimodal age-prediction model improves sensitivity to healthy age differences. This work was supported by the National Institutes of Health (P01-AG026276, P01- AG03991, P30-AG066444, 5-R01-AG052550, 5-R01-AG057680, 1-R01-AG067505, 1S10RR022984-01A1, and U19-AG032438), the BrightFocus Foundation (A2022014F), and the Alzheimer’s Association (SG-20-690363-DIAN).
+Background:Estimates of ‘brain-predicted age’ quantify apparent brain age compared to normative trajectories of neuroimaging features. The brain age gap (BAG) between predicted and chronological age is elevated in symptomatic Alzheimer disease (AD) but has not been well explored in presymptomatic AD. Prior studies have typically modeled BAG with structural MRI, but more recently other modalities, including functional connectivity (FC) and multimodal MRI, have been explored.Methods:We trained three models to predict age from FC, structural (S), or multimodal MRI (S+FC) in 390 amyloid-negative cognitively normal (CN/A−) participants (18–89 years old). In independent samples of 144 CN/A−, 154 CN/A+, and 154 cognitively impaired (CI; CDR > 0) participants, we tested relationships between BAG and AD biomarkers of amyloid and tau, as well as a global cognitive composite.Results:All models predicted age in the control training set, with the multimodal model outperforming the unimodal models. All three BAG estimates were significantly elevated in CI compared to controls. FC-BAG was significantly reduced in CN/A+ participants compared to CN/A−. In CI participants only, elevated S-BAG and S+FC BAG were associated with more advanced AD pathology and lower cognitive performance.Conclusions:Both FC-BAG and S-BAG are elevated in CI participants. However, FC and structural MRI also capture complementary signals. Specifically, FC-BAG may capture a unique biphasic response to presymptomatic AD pathology, while S-BAG may capture pathological progression and cognitive decline in the symptomatic stage. A multimodal age-prediction model improves sensitivity to healthy age differences.Funding:This work was supported by the National Institutes of Health (P01-AG026276, P01- AG03991, P30-AG066444, 5-R01-AG052550, 5-R01-AG057680, 1-R01-AG067505, 1S10RR022984-01A1, and U19-AG032438), the BrightFocus Foundation (A2022014F), and the Alzheimer’s Association (SG-20-690363-DIAN).
 
 ## Introduction
 
@@ -53,13 +53,247 @@ This project aimed to develop multimodal models of brain-predicted age, incorpor
 
 ## Methods
 
-## Participants
+### Participants
 
 We formed a training sample of healthy controls spanning the adult lifespan by combining structural and FC-MRI data from three sources, as described previously (Millar et al., 2022): the Charles F. and Joanne Knight AD Research Center (ADRC) at Washington University in St. Louis (WUSTL), healthy controls from studies in the Ances lab at WUSTL (Thomas et al., 2013; Petersen et al., 2021), and mutation-negative controls from the Dominantly Inherited Alzheimer Network (DIAN) study of autosomal dominant AD at multiple international sites including WUSTL (McKay et al., 2022). To minimize the likelihood of undetected AD pathology in our training set, participants over the age of 50 were only included in the training set if they were cognitively normal, as assessed by the Clinical Dementia Rating (CDR 0; Morris, 1993), and had at least one biomarker indicating the absence of amyloid pathology (CN/A−, see below). We excluded 59 participants who did not have available CDR or biomarker measures (see Figure 1—figure supplement 1). As CDR and amyloid biomarkers were not available in the Ances lab controls, we included only participants at or below age 50 from this cohort in the training set. These healthy control participants were randomly divided into a training set (~80%; N=390) and a held-out test set (~20%; N=97), which did not significantly differ in age, sex, education, or race, see Table 1.
 
+**Table 1.**
+ Demographic information of the combined samples.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Measure</th>
+      <th colspan="3">Training sets (total N=390)</th>
+      <th colspan="3">Test sets (total N=97) §</th>
+      <th colspan="3">Analysis sets (total N=452)</th>
+    </tr>
+    <tr>
+      <th>Ances Controls(CN/&lt;50)</th>
+      <th>DIAN Controls(CN/A−)</th>
+      <th>Knight ADRC Controls(CN/A−)</th>
+      <th>Ances Controls(CN/&lt;50)</th>
+      <th>DIAN Controls(CN/A−)</th>
+      <th>Knight ADRC Controls(CN/A−)</th>
+      <th>CN/A−</th>
+      <th>CN/A+</th>
+      <th>CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>136</td>
+      <td>120</td>
+      <td>134</td>
+      <td>38</td>
+      <td>26</td>
+      <td>33</td>
+      <td>144</td>
+      <td>154</td>
+      <td>154</td>
+    </tr>
+    <tr>
+      <td>Age (mean, SD)</td>
+      <td>29.92 (9.92)</td>
+      <td>40.02 (10.26)</td>
+      <td>64.97 (10.57)</td>
+      <td>26.68 (7.11)</td>
+      <td>41.46 (12.34)</td>
+      <td>64.73 (10.57)</td>
+      <td>66.93 (8.53)</td>
+      <td>72.56 (7.15)‡</td>
+      <td>75.67 (6.86) ‡</td>
+    </tr>
+    <tr>
+      <td>CDR (N 0 / N 0.5 / N 1.0 / N 2.0)</td>
+      <td>NA</td>
+      <td>120 / 0 / 0 / 0</td>
+      <td>134 / 0 / 0 / 0</td>
+      <td>NA</td>
+      <td>26 / 0 / 0 / 0</td>
+      <td>33 / 0 / 0 / 0</td>
+      <td>144 / 0 / 0 / 0</td>
+      <td>154 / 0 / 0 / 0</td>
+      <td>0 / 119 / 35 / 2</td>
+    </tr>
+    <tr>
+      <td>Amyloid status (N + / N -)</td>
+      <td>NA</td>
+      <td>120 / 0</td>
+      <td>134 / 0</td>
+      <td>NA</td>
+      <td>26 / 0</td>
+      <td>33 / 0</td>
+      <td>144 / 0</td>
+      <td>0 / 154</td>
+      <td>0 / 57</td>
+    </tr>
+    <tr>
+      <td>Biomarkers available (N PET / CSF / both)</td>
+      <td>NA</td>
+      <td>30 / 6 / 79</td>
+      <td>11 / 22 / 91</td>
+      <td>NA</td>
+      <td>3 / 1 / 21</td>
+      <td>5 / 0 / 28</td>
+      <td>24 / 0 / 120</td>
+      <td>17 / 0 / 137</td>
+      <td>14 / 0 / 43</td>
+    </tr>
+    <tr>
+      <td>APOE ε4 carrier status (N + / N -)</td>
+      <td>NA</td>
+      <td>76 / 44</td>
+      <td>99 / 34</td>
+      <td>NA</td>
+      <td>19 / 7</td>
+      <td>28 / 5</td>
+      <td>115 / 29</td>
+      <td>71 / 83 ‡</td>
+      <td>55 / 98 ‡</td>
+    </tr>
+    <tr>
+      <td>MMSE (mean, SD)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>29.26 (1.05)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>29.45 (0.94)</td>
+      <td>29.13 (1.17)</td>
+      <td>28.97 (1.33)</td>
+      <td>25.37 (3.55) ‡</td>
+    </tr>
+    <tr>
+      <td>Sex (N female / N male)</td>
+      <td>70 / 64</td>
+      <td>85 / 35</td>
+      <td>84 / 50</td>
+      <td>19 / 18</td>
+      <td>16 / 10</td>
+      <td>22 / 11</td>
+      <td>89 / 55</td>
+      <td>91 / 63</td>
+      <td>68 / 86†</td>
+    </tr>
+    <tr>
+      <td>Years of education (mean, SD)</td>
+      <td>13.68 (2.16)</td>
+      <td>14.78 (3.04)</td>
+      <td>16.16 (2.43)</td>
+      <td>13.95 (1.99)</td>
+      <td>14.92 (2.83)</td>
+      <td>16.48 (2.43)</td>
+      <td>15.71 (2.65)</td>
+      <td>15.90 (2.64)</td>
+      <td>15.05 (2.97)*</td>
+    </tr>
+    <tr>
+      <td>Race (N American Indian or Alaska Native)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Race (N Asian)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Race (N Black)</td>
+      <td>67</td>
+      <td>0</td>
+      <td>20</td>
+      <td>17</td>
+      <td>0</td>
+      <td>7</td>
+      <td>17</td>
+      <td>16</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Race (N Native Hawaiian or Other Pacifc Islander)</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Race (N White)</td>
+      <td>57</td>
+      <td>118</td>
+      <td>112</td>
+      <td>17</td>
+      <td>26</td>
+      <td>26</td>
+      <td>127</td>
+      <td>137</td>
+      <td>134</td>
+    </tr>
+    <tr>
+      <td>Site</td>
+      <td>WUSTL</td>
+      <td>Multiple sites</td>
+      <td>WUSTL</td>
+      <td>WUSTL</td>
+      <td>Multiple sites</td>
+      <td>WUSTL</td>
+      <td>WUSTL</td>
+      <td>WUSTL</td>
+      <td>WUSTL</td>
+    </tr>
+    <tr>
+      <td>Scanner</td>
+      <td>Siemens Trio</td>
+      <td>Siemens Trio / Verio</td>
+      <td>Siemens Trio / Biograph</td>
+      <td>Siemens Trio</td>
+      <td>Siemens Trio / Verio</td>
+      <td>Siemens Trio / Biograph</td>
+      <td>Siemens Trio / Biograph</td>
+      <td>Siemens Trio / Biograph</td>
+      <td>Siemens Trio / Biograph</td>
+    </tr>
+    <tr>
+      <td>Field strength</td>
+      <td>3T</td>
+      <td>3T</td>
+      <td>3T</td>
+      <td>3T</td>
+      <td>3T</td>
+      <td>3T</td>
+      <td>3T</td>
+      <td>3T</td>
+      <td>3T</td>
+    </tr>
+  </tbody>
+</table>
+
+_CN = Cognitively Normal, <50 = less than age 50, A− = amyloid negative, A+ = amyloid positive, CI = cognitively Impaired, DIAN = Dominantly Inherited Alzheimer Network, ADRC = Alzheimer Disease Research Center, AD = Alzheimer disease, CDR = Clinical Dementia Rating, MMSE = Mini Mental State Examination, WUSTL = Washington University in St. Louis, T = Tesla. Group differences from the CN/A− analysis set were tested with t tests for continuous variables and χ2 tests for categorical variables.*p < 0.05, ^ p < 0.10.†p < 0.01.‡p < 0.001.§Test sets include randomly-selected, non-overlapping subsets of participants drawn from the same studies as the training sets._
+
 Finally, independent samples for hypothesis testing included three groups from the Knight ADRC: a randomly selected sample of 144 CN/A− controls who did not overlap with the training or testing sets, 154 CN/A+ participants, and 154 cognitively impaired (CI) participants (CDR > 0 with a biomarker measure consistent with amyloid pathology [see below] and/or a primary diagnosis of AD or uncertain dementia [McKhann et al., 2011]). See Table 1 for demographic details of each sample. All participants provided written informed consent in accordance with the Declaration of Helsinki and their local institutional review board. All procedures were approved by the Human Research Protection Office at WUSTL (IRB ID # 201204041).
 
-## PET and CSF biomarkers
+### PET and CSF biomarkers
 
 Amyloid burden was imaged with PET using (11 C)-Pittsburgh Compound B (PIB; Klunk et al., 2004) or (18 F)-Florbetapir (AV45; Wong et al., 2010). Regional standard uptake ratios (SUVRs) were modeled from 30 to 60 min after injection for PIB and from 50 to 70 min for AV45, using cerebellar gray as the reference region (Su et al., 2013). Regions of interest were segmented automatically using FreeSurfer 5.3 (Fischl, 2012). Global amyloid burden was defined as the mean of partial-volume-corrected (PVC) SUVRs from bilateral precuneus, superior and rostral middle frontal, lateral and medial orbitofrontal, and superior and middle temporal regions (Su et al., 2013). Amyloid summary SUVRs were harmonized across tracers using a centiloid conversion (Su et al., 2018).
 
@@ -69,15 +303,15 @@ CSF was collected via lumbar puncture using methods described previously (Fagan 
 
 Amyloid positivity was defined using previously published cutoffs for PIB (SUVR > 1.42; Vlassenko et al., 2016) or AV45 (SUVR > 1.19; Su et al., 2019). Additionally, the CSF Aβ42/Aβ40 ratio has been shown to be highly concordant with amyloid PET (positivity cutoff < 0.0673; Schindler et al., 2018; Volluz et al., 2021). Thus, participants were defined as amyloid-positive (for CN/A+ and CI groups) if they had either a PIB, AV45, or CSF Aβ42/Aβ40 ratio measure in the positive range. Participants with discordant positivity between PET and CSF estimates were defined as amyloid-positive.
 
-## Cognitive battery
+### Cognitive battery
 
 Knight ADRC participants completed a 2 hr battery of cognitive tests. We examined global cognition by forming a composite of tasks across cognitive domains, including processing speed (Trail Making A; Schindler et al., 2018), executive function (Trail Making B; Schindler et al., 2018), semantic fluency (Animal Naming; Armitage, 1946), and episodic memory (Free and Cued Selective Reminding Test free recall score; Goodglass and Kaplan, 1983; Grober et al., 1988). This composite has recently been used to study individual differences in cognition in relation the preclinical AD biomarkers and structural MRI (Aschenbrenner et al., 2018), as well as functional MRI measures (Millar et al., 2021).
 
-## MRI acquisition
+### MRI acquisition
 
 All MRI data were obtained using a Siemens 3T scanner, although there was a variety of specific models within and across studies. As described previously (Millar et al., 2022), participants in the Knight ADRC and Ances lab studies completed one of two comparable structural MRI protocols, varying by scanner (sagittal T1-weighted magnetization-prepared rapid gradient echo sequence [MPRAGE] with repetition time [TR] = 2400 or 2300 ms, echo time [TE] = 3.16 or 2.95 ms, flip angle = 8 or 9°, frames = 176, field of view = sagittal 256×256 or 240×256 mm, 1 mm isotropic or 1×1×1.2 mm voxels; oblique T2-weighted fast spin echo sequence [FSE] with TR = 3200 ms, TE = 455 ms, 256×256 acquisition matrix, 1 mm isotropic voxels) and an identical resting-state fMRI protocol (interleaved whole-brain echo planar imaging sequence [EPI] with TR = 2200 ms, TE = 27 ms, flip angle = 90°, field of view = 256 mm, 4 mm isotropic voxels for two 6 min runs [164 volumes each] of eyes open fixation). DIAN participants completed a similar MPRAGE protocol (TR = 2300ms, TE = 2.95ms, flip angle = 9°, field of view = 270 mm, 1.1×1.1×1.2 mm voxels; McKay et al., 2022). Resting-state EPI sequence parameters for the DIAN participants differed across sites and scanners with the most notable difference being shorter resting-state runs (one 5 min run of 120 volumes; see Supplementary file 1 for summary of structural and functional MRI parameters; McKay et al., 2022).
 
-## FC preprocessing and features
+### FC preprocessing and features
 
 All MRI data were processed using common pipelines. Initial fMRI preprocessing followed conventional methods, as described previously (Shulman et al., 2010; Millar et al., 2022), including frame alignment, debanding, rigid body transformation, bias field correction, and normalization of within-run intensity values to a whole-brain mode of 1000 (Power et al., 2012). Transformation to an age-appropriate in-house atlas template (based on independent samples of either younger adults or CN older adults) was performed using a composition of affine transforms connecting the functional volumes with the T2-weighted and MPRAGE images. Frame alignment was included in a single resampling that generated a volumetric time series of the concatenated runs in isotropic 3 mm atlas space.
 
@@ -85,11 +319,11 @@ As described previously (Fox et al., 2009; Millar et al., 2022), additional proc
 
 Final BOLD time series data were averaged across voxels within a set of 300 spherical regions of interest (ROIs) in cortical, subcortical, and cerebellar areas (Seitzman et al., 2020). For each scan, we calculated the 300×300 Fisher-transformed Pearson correlation matrix of the final averaged BOLD time series between all ROIs. We then used the vectorized upper triangle of each correlation matrix (excluding auto-correlations; 44,850 total correlations) as input features for predicting age. Since site and/or scanner differences between samples might confound neuroimaging estimates, we harmonized FC matrices using an empirical Bayes modeling approach (ComBat; Johnson et al., 2007; Fortin et al., 2017), which has previously been applied to FC data (Yu et al., 2018).
 
-## Structural MRI processing and features
+### Structural MRI processing and features
 
 All T1-weighted images underwent cortical reconstruction and structural segmentation through a common pipeline with FreeSurfer 5.3 (Fischl et al., 2002; Fischl, 2012). Structural processing included segmentation of subcortical white matter and deep gray matter, intensity normalization, registration to a spherical atlas, and parcellation of the cerebral cortex based on the Desikan atlas (Desikan et al., 2006). Inclusion and exclusion errors of parcellation and segmentation were identified and edited by a centralized team of trained research technicians according to standardized criteria (Su et al., 2013). We then used the FreeSurfer-defined thickness estimates from 68 cortical regions (Desikan et al., 2006), along with volume estimates from 33 subcortical regions (Fischl et al., 2002) as input features for predicting age. We harmonized structural features across sites and scanners using the same ComBat approach (Johnson et al., 2007; Fortin et al., 2017), which has also been applied to structural MRI data (Fortin et al., 2018).
 
-## Gaussian process regression
+### Gaussian process regression
 
 As described previously (Millar et al., 2022), machine-learning analyses were conducted using the Regression Learner application in Matlab (MathWorks, 2021). We trained two Gaussian process regression (GPR; Rasmussen et al., 2004) models, each with a rational quadratic kernel function to predict chronological age using fully-processed, harmonized MRI features (FC or structural) in the training set. The σ hyperparameter was tuned within each model by searching a range of values from 10–4 to 10*SDage using Bayesian optimization across 100 training evaluations. The optimal value of σ for each model was found (see Figure 1—figure supplement 2) and was applied for all subsequent applications of that model. All other hyperparameters were set to default values (basis function = constant and standardize = true).
 
@@ -97,59 +331,251 @@ Model performance in the training set was assessed using 10-fold cross validatio
 
 For each participant, we calculated model-specific BAG estimates as the difference between chronological age and age predictions from the unimodal FC model (FC-BAG), structural model (S-BAG), and multimodal model (S+FC BAG). To correct for regression dilution commonly observed in similar models (Le et al., 2018; Smith et al., 2019; Liang et al., 2019), we included chronological age as a covariate in all statistical tests of BAG (Cole et al., 2017a; Le et al., 2018). However, to avoid inflating estimates of prediction accuracy (Butler et al., 2021), only uncorrected age prediction values were used for evaluating model performance in the training and test sets.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were conducted in R 4.0.2 (R Development Core Team, 2020). Demographic differences in the AD samples were tested with independent-samples t tests for continuous variables and χ2 tests for categorical variables, using CN/A− controls as a reference group. Differences in brain age model performance were tested using Williams’s test of difference between dependent correlations sharing one variable, i.e., Pearson’s r between age and each model prediction of age. To correct for age-related bias in BAG (Le et al., 2018; as previously mentioned), we controlled for age as a covariate during all statistical tests. Group differences in each BAG estimate were tested using an omnibus ANOVA test with follow-up pairwise t tests on age-residualized BAG estimates, using a false discovery rate (FDR) correction for multiple comparisons. Assumptions of normality were tested by visual inspection of quantile-quantile plots. Assumptions of equality of variance were tested with Levene’s test. Linear regression models tested the effects of cognitive impairment (CDR > 0 vs. CDR 0) and amyloid positivity (A− vs. A+) on BAG estimates from each model, controlling for true age (as noted above), sex, and years of education. Given the potential confounding influence of head motion on FC-derived measures (Power et al., 2012; Van Dijk et al., 2012; Satterthwaite et al., 2012), we also included mean FD as an additional covariate of non-interest in the FC and S+FC models. We tested continuous relationships with AD biomarkers and cognitive estimates using linear regression models, including the same demographic and motion covariates. Since the range of amyloid biomarkers was drastically reduced in the CN/A− sample, we excluded these participants from models testing continuous amyloid relationships. Effect sizes were computed as partial η2 (ηp2).
 
 ## Results
 
-## Sample description and demographics
+### Sample description and demographics
 
 Demographic characteristics of the training sets, test sets, and analysis sets are reported in Table 1. CN/A+ participants were older (t = 6.15, p < 0.001) and more likely to be APOE ε4 carriers (χ2 = 34.73, p < 0.001) than amyloid-negative controls. Furthermore, CI participants were older (t = 9.71, p < 0.001), more likely male (χ2 = 8.60, p = 0.003), more likely to be APOE ε4 carriers (χ2 = 56.67, p < 0.001), and had fewer years of education (t = 2.03, p < 0.043), and lower MMSE scores (t = 12.46, p < 0.001) than amyloid-negative controls.
 
-## Comparison of model performance
+### Comparison of model performance
 
 All models accurately predicted chronological age in the training sets, as assessed using 10-fold cross validation, as well as in the held-out test sets. Overall, prediction accuracy was lowest in the FC model (MAEFC/Train = 8.67 years, R2FC/Train = 0.68, MAEFC/Test = 8.25 years, R2FC/Test = 0.73; see Figure 1A & B). The structural MRI model (MAES/Train = 5.97 years, R2S/Train = 0.81, MAES/Test = 6.26 years, R2S/Test = 0.82; see Figure 1C & D) significantly outperformed the FC model in age prediction accuracy, Williams’s tS vs. FC = 5.39, p < 0.001. There was a significant, but modestly sized, positive correlation between FC-BAG and S-BAG in the adult lifespan CN/A− training and testing sets (r = 0.095, p = 0.036; see Figure 1—figure supplement 3A), as well as the AD analysis sets (r = 0.134, p = 0.004; see Figure 1—figure supplement 3B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81869/elife-81869-fig1-v2.jpg)
+
+**Figure 1.:** Age predicted by each model (y axis) is plotted against true age (x axis). Colored lines and shaded areas represent regression lines and 95% confidence regions. Dashed black lines represent perfect prediction. Model performance is evaluated by Pearson’s r, proportion of variance explained (R2), mean absolute error (MAE), and root-mean-square error (RMSE).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81869/elife-81869-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81869/elife-81869-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/81869/elife-81869-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Both BAG estimates are residualized for age. Dotted black lines represent no difference between predicted and chronological age for each model. Colored lines and shaded areas represent group-specific regression lines and 95% confidence regions. Dashed black lines represent main effect regression lines across all groups.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/81869/elife-81869-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Most bootstrapped stacked models perform about as well or worse than the unimodal structural MRI model (R2S, black dashed line). The fully-trained stacked multimodal model (R2S+FC, red solid line) outperforms all bootstrapped models, suggesting that the modest increase in model performance observed in the multimodal model over the unimodal structural model is due to meaningful age-related FC signal, rather than capitalizing on noise in a larger feature set.
+
 Finally, the multimodal model (MAES+FC/Train = 5.34 years, R2S+FC/Train = 0.86, MAES+FC/Test = 5.25 years, R2S+FC/Test = 0.87; see Figure 1E & F) significantly outperformed both the FC model (Williams’s tS+FC vs. FC = 11.20, p < 0.001) and the structural MRI model (Williams’s tS+FC vs. S = 5.67, p < 0.001). It is possible that the modest increase in the multimodal model was due to capitalizing on noise, simply by adding more features to the structural model. Hence, we also compared the observed R2S+FC to a bootstrapped distribution of R2 performance estimates from 1000 resamples using a model in which the original structural MRI model was stacked with a model trained on randomly reshuffled FC features. Thus, this distribution represents the expected improvements in model performance from simply adding new features to the structural MRI model with the stacked approach. The observed R2S+FC outperformed all R2 estimates from this bootstrapped distribution (p < 0.001; see Figure 1—figure supplement 4), suggesting that the modest increase in model performance observed in the stacked multimodal (S+FC) model over the unimodal structural model is due to meaningful age-related FC signal, rather than capitalizing on noise in a larger feature set.
 
-## BAG differences in cognitive impairment and amyloid positivity
+### BAG differences in cognitive impairment and amyloid positivity
 
 Residual FC-BAG was normally distributed (see Figure 2—figure supplement 1), and variance in FC-BAG did not significantly differ between the analysis sets, Levene’s statistic = 0.01, p = 0.988. An omnibus ANOVA revealed significant differences in residual FC-BAG across the three groups, F(2,449) = 9.80, p < 0.001. FC-BAG was 2.17 years older in CI participants compared to CN controls (β = 2.17, p = 0.030, ηp2 = 0.01; see Figure 2A&B, Table 2A). Follow-up t tests revealed that residual FC-BAG was significantly elevated in CI relative to CN/A+participants (pFDR < 0.001). FC-BAG was also 1.64 years lower in A+ participants compared to A− (β = –1.64, p = 0.035, ηp2 = 0.01), controlling for global CDR and the other covariates. Follow-up t tests revealed that residual FC-BAG was significantly lower in CN/A+ participants compared to CN/A− controls (pFDR = 0.002).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81869/elife-81869-fig2-v2.jpg)
+
+**Figure 2.:** Comparisons are presented between cognitively normal (Clinical Dementia Rating [CDR] = 0) biomarker-negative controls (CN/A−; blue) vs. CN/A+ (green) vs. cognitively impaired participants (CI, red). Scatterplots (A, C, and E) show predicted vs. true age for each group. Colored lines and shaded areas represent group-specific regression lines and 95% confidence regions. Dashed black lines represent perfect prediction. Violin plots (B, D, and F) show residual FC-brain age gap (BAG; controlling for true age) in each group. p values are reported from pairwise independent-samples t tests.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81869/elife-81869-fig2-figsupp1-v2.jpg)
+
+**Table 2.**
+ Linear regression models predicting functional connectivity (FC)-brain age gap (BAG) (A), S-BAG (B), and FC + S BAG (C).CDR = Clinical Dementia Rating. FD = framewise displacement.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">A. FC-BAG (df = 348)</th>
+      <th colspan="5">B. S-BAG (df = 349)</th>
+      <th colspan="4">C. S+FC BAG (df = 348)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Estimate</td>
+      <td>SE</td>
+      <td>p value</td>
+      <td>ηp2</td>
+      <td>Estimate</td>
+      <td>SE</td>
+      <td>p value</td>
+      <td>ηp2</td>
+      <td colspan="2">Estimate</td>
+      <td>SE</td>
+      <td>p value</td>
+      <td colspan="2">ηp2</td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>30.903</td>
+      <td>3.809</td>
+      <td>0.000</td>
+      <td></td>
+      <td>5.830</td>
+      <td>4.899</td>
+      <td>0.235</td>
+      <td></td>
+      <td colspan="2">11.755</td>
+      <td>4.197</td>
+      <td>0.005</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>CDR &gt; 0</td>
+      <td>2.169</td>
+      <td>0.997</td>
+      <td>0.030</td>
+      <td>0.013</td>
+      <td>5.105</td>
+      <td>1.287</td>
+      <td>0.000</td>
+      <td>0.043</td>
+      <td colspan="2">4.305</td>
+      <td>1.099</td>
+      <td>0.000</td>
+      <td colspan="2">0.042</td>
+    </tr>
+    <tr>
+      <td>Amyloid+</td>
+      <td>–1.640</td>
+      <td>0.776</td>
+      <td>0.035</td>
+      <td>0.013</td>
+      <td>0.900</td>
+      <td>1.002</td>
+      <td>0.369</td>
+      <td>0.002</td>
+      <td colspan="2">0.060</td>
+      <td>0.855</td>
+      <td>0.944</td>
+      <td colspan="2">0.000</td>
+    </tr>
+    <tr>
+      <td>Age (y)</td>
+      <td>–0.586</td>
+      <td>0.044</td>
+      <td>0.000</td>
+      <td>0.335</td>
+      <td>–0.151</td>
+      <td>0.057</td>
+      <td>0.008</td>
+      <td>0.020</td>
+      <td colspan="2">–0.201</td>
+      <td>0.049</td>
+      <td>0.000</td>
+      <td colspan="2">0.047</td>
+    </tr>
+    <tr>
+      <td>Sex = female</td>
+      <td>–1.174</td>
+      <td>0.700</td>
+      <td>0.094</td>
+      <td>0.008</td>
+      <td>1.792</td>
+      <td>0.904</td>
+      <td>0.048</td>
+      <td>0.011</td>
+      <td colspan="2">0.691</td>
+      <td>0.771</td>
+      <td>0.371</td>
+      <td colspan="2">0.002</td>
+    </tr>
+    <tr>
+      <td>Education (y)</td>
+      <td>–0.006</td>
+      <td>0.127</td>
+      <td>0.964</td>
+      <td>0.000</td>
+      <td>–0.155</td>
+      <td>0.164</td>
+      <td>0.345</td>
+      <td>0.003</td>
+      <td colspan="2">–0.152</td>
+      <td>0.140</td>
+      <td>0.276</td>
+      <td colspan="2">0.003</td>
+    </tr>
+    <tr>
+      <td>Mean FD</td>
+      <td>5.528</td>
+      <td>5.467</td>
+      <td>0.313</td>
+      <td>0.003</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td colspan="2">4.893</td>
+      <td>6.024</td>
+      <td>0.417</td>
+      <td colspan="2">0.002</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Residual S-BAG was also normally distributed (see Figure 2—figure supplement 1), and variance in S-BAG did not significantly differ between the analysis sets, Levene’s statistic = 0.10, p = 0.902. An omnibus ANOVA revealed significant differences in residual S-BAG across the three groups, F(2,449) = 20.64, p < 0.001. S-BAG was 5.10 years older in CI participants compared to CN controls (β = 5.10, p < 0.001, ηp2 = 0.04; see Figure 2C&D, Table 2B). Follow-up t tests revealed that residual S-BAG was significantly elevated in CI participants relative to CN/A− and CN/A+ participants (pFDR’s < 0.001). S-BAG did not significantly differ as a function of amyloid positivity, controlling for CDR and the other covariates.
 
 Residual S+FC-BAG was also normally distributed (see Figure 2—figure supplement 1), and variance in S+FC-BAG did not significantly differ between the analysis sets, Levene’s statistic = 0.89, p = 0.412. An omnibus ANOVA revealed significant differences in residual S+FC-BAG across the three groups, F(2,449) = 21.84, p < 0.001. S+FC-BAG was 4.31 years older in CI participants compared to CN controls (β = 4.1, p < 0.001, ηp2 = 0.04; see Figure 2E, F, Table 2C). Follow-up t tests revealed that residual FC-BAG was significantly elevated in CI participants relative to CN/A− and CN/A+ participants (pFDR’s < 0.001). S+FC-BAG did not significantly differ as a function of amyloid positivity, controlling for CDR and the other covariates.
 
-## Relationships with amyloid markers
+### Relationships with amyloid markers
 
 355 participants (144 CN/A−, 154 CN/A+, 57 CI) had an available amyloid PET scan, and 300 (120 CN/A−, 137 CN/A+, 43 CI) had an available CSF estimate of Aβ42/40. In the FC model, FC-BAG was not significantly related with amyloid PET nor was there an interactive relationship with amyloid PET between groups (see Figure 3A). There were also no significant main effects or interactions between FC-BAG, S-BAG, or S+FC BAG and CSF Aβ42/40 (See Figure 3B, D and F).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/81869/elife-81869-fig3-v2.jpg)
 
-**Figure 3.:** A and B), structural (S-BAG; C and D), and multimodal (S+FC BAG; E and F) BAG in the analysis sets.Scatterplots show amyloid PET (A, C, and E) and CSF AB42/40 (B, D, and F) as a function of residual BAG (controlling for true age) in each group. Colored lines and shaded areas represent group-specific regression lines and 95% confidence regions. Dashed black lines represent main effect regression lines across all groups.
+**Figure 3.:** Scatterplots show amyloid PET (A, C, and E) and CSF AB42/40 (B, D, and F) as a function of residual BAG (controlling for true age) in each group. Colored lines and shaded areas represent group-specific regression lines and 95% confidence regions. Dashed black lines represent main effect regression lines across all groups.
 
 In the structural and multimodal models, there were significant main effects, such that greater S-BAG (β = 0.79, p = 0.004, ηp2 = 0.041; see Figure 3C) and greater S+FC BAG (β = 0.81, p = 0.015, ηp2 = 0.029; see Figure 3E) were both associated with greater amyloid PET. In the multimodal model only, this relationship was further characterized by a non-significant interaction (β = 1.16, p = 0.087, ηp2 = 0.014), such that the association was significantly positive in CI participants interaction (β = 1.53, p = 0.029, ηp2 = 0.092) but not in CN/A+ (β = –0.05, p = 0.881, ηp2 = 0.001).
 
-## Relationships with tau markers
+### Relationships with tau markers
 
 99 participants (42 CN/A–, 40 CN/A+, 17 CI) had an available tau PET scan, and 300 (120 CN/A–, 137 CN/A+, 43 CI) had an available CSF estimate of pTau-181/Aβ40. In the FC model, FC-BAG was not significantly related with tau PET or CSF pTau-181/Aβ40 (see Figure 4A and B). However, there was a non-significant interaction, suggesting a more positive association between CSF pTau-181/Aβ40 and FC-BAG in CI participants but not in CN controls (β = 0.02, p = 0.059, ηp2 = 0.016).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/81869/elife-81869-fig4-v2.jpg)
 
-**Figure 4.:** A and B), structural (S-BAG; C and D), and multimodal (S+FC BAG; E and F) BAG in the analysis sets.Scatterplots show Tau PET summary (A, C, and E) and log-transformed CSF pTau/Aβ40 (B, D, and F) as a function of residual BAG (controlling for true age) in each group. Colored lines and shaded areas represent group-specific regression lines and 95% confidence regions. Dashed black lines represent main effect regression lines across all groups.
+**Figure 4.:** Scatterplots show Tau PET summary (A, C, and E) and log-transformed CSF pTau/Aβ40 (B, D, and F) as a function of residual BAG (controlling for true age) in each group. Colored lines and shaded areas represent group-specific regression lines and 95% confidence regions. Dashed black lines represent main effect regression lines across all groups.
 
 In the structural and multimodal models, there were significant main effects, such that greater S-BAG (β = 0.02, p < 0.001, ηp2 = 0.141; see Figure 4C) and greater S+FC BAG (β = 0.02, p = 0.001, ηp2 = 0.110; see Figure 4E) were both associated with greater tau PET. These main effects were further characterized by significant interactions (S-BAG: β = 0.04, p < 0.001, ηp2 = 0.176; S+FC-BAG: β = 0.07, p < 0.001, ηp2 = 0.250), such that the positive association was only observed in CI participants, but not in the other groups.
 
 Consistent with tau PET, CSF pTau/Aβ40 demonstrated similar interactive relationships, such that greater S-BAG (β = 0.02, p < 0.001, ηp2 = 0.052; see Figure 4D) and greater S+FC BAG (β = 0.04, p < 0.001, ηp2 = 0.075; see Figure 4F) were both associated with greater CSF pTau/Aβ40 in the CI participants, but not in the other groups.
 
-## Relationships with cognition
+### Relationships with cognition
 
 445 participants (144 CN/A−, 153 CN/A+, 148 CI) had available performance measures from the cognitive composite tasks. In the FC model, there was a significant main effect, such that across all groups, greater FC-BAG was associated with lower cognitive composite score (β = –0.01, p = 0.006, ηp2 = 0.017; see Figure 5A). However, this effect was driven by group differences in both variables, as there were neither relationships between FC-BAG and cognition within any of the groups nor were there any significant interactions.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/81869/elife-81869-fig5-v2.jpg)
 
-**Figure 5.:** A), structural (S-BAG; B), and multimodal (S+FC BAG; C) in the analysis sets.Scatterplots show global cognition as a function of residual BAG (controlling for true age) in each group. Colored lines and shaded areas represent group-specific regression lines and 95% confidence regions. Dashed black lines represent main effect regression lines across all groups.
+**Figure 5.:** Scatterplots show global cognition as a function of residual BAG (controlling for true age) in each group. Colored lines and shaded areas represent group-specific regression lines and 95% confidence regions. Dashed black lines represent main effect regression lines across all groups.
 
 In the structural model and multimodal models, there were significant main effects, such that greater S-BAG (β = –0.03, p < 0.001, ηp2 = 0.104; see Figure 5B) and greater S+FC BAG (β = –0.03, p < 0.001, ηp2 = 0.096; see Figure 5C) were both associated with lower cognitive composite scores. Both effects were further characterized by significant interactions such that the negative associations were observed in the CI participants, but not in the other groups (S-BAG: β = –0.03, p < 0.001, ηp2 = 0.045; S+FC-BAG: β = –0.04, p < 0.001, ηp2 = 0.047).
 
@@ -157,19 +583,19 @@ In the structural model and multimodal models, there were significant main effec
 
 We first found that machine-learning models successfully predicted age when trained on FC, structural MRI, and multimodal datasets. As expected, the structural model predicted age with greater accuracy than the FC model, but the multimodal model outperformed both unimodal models. Second, BAG estimates from all models were significantly elevated in CI participants compared to CN controls. BAG estimates in the FC model were significantly reduced in cognitively normal participants with elevated amyloid, but no structural group differences were observed in presymptomatic stages. Third, interactive relationships were observed, such that greater BAG was associated with greater continuous AD biomarker load in CI, but not in CN, participants. Specifically, in the FC model, such a pattern only appeared in a non-significant interaction predicting CSF pTau/Aβ40. However, in the structural model, these interactions were significantly observed in relation to CSF pTau/Aβ40 and tau PET. In the multimodal model, these same interactions were also observed in addition to a non-significant interaction with amyloid PET. Finally, regarding cognitive relationships, similar interactive patterns were observed, such that in CI participants, greater BAG estimates from structural and multimodal models were associated with lower cognitive performance; however, this relationship was not observed in the FC model.
 
-## Predicting brain age with multiple modalities
+### Predicting brain age with multiple modalities
 
 We found that a GPR model trained on structural MRI features predicted chronological age in a cognitively normal, amyloid-negative adult sample with an R2 of 0.81. This level of performance is comparable to other structural models, which have reported R2s ranging from 0.80 to 0.95 (Cole and Franke, 2017b; Liem et al., 2017; Eavani et al., 2018; Wang et al., 2019; Bashyam et al., 2020; Ly et al., 2020; Gong et al., 2021; Lee et al., 2022). As previously reported (Millar et al., 2022), the FC-trained model predicted age with an R2 of 0.68, again consistent with previous FC models, which have achieved R2s from 0.53 to 0.80 (Liem et al., 2017; Eavani et al., 2018; Gonneaud et al., 2021). Our observation that structural MRI outperformed FC in age prediction is also consistent with previous direct comparisons between modalities (Liem et al., 2017; Eavani et al., 2018; Dunås et al., 2021).
 
 Importantly, however, there was only a modest positive correlation between FC and structural BAG estimates, after correcting for age-related biases, suggesting that functional and structural MRI capture distinct age-related signals. Indeed, the multimodal model outperformed both unimodal models by integrating these complementary signals. These observations, again, are consistent with other recent reports of multimodal age prediction models (Liem et al., 2017; Eavani et al., 2018; Engemann et al., 2020; Dunås et al., 2021). Future models may improve age prediction accuracy by combining data from structural, FC, and/or other neuroimaging modalities, several of which may be available in typical MRI sessions of multiple sequences.
 
-## BAG as a marker of cognitive impairment
+### BAG as a marker of cognitive impairment
 
 Structural BAG was elevated by 5.10 years in CI participants compared to CN controls. This effect is comparable to previous structural age prediction models, demonstrating elevations in AD and MCI samples between 5 and 10 years (Cole and Franke, 2017b; Franke and Gaser, 2019). As previously reported, FC BAG was also elevated in CI participants, but to a relatively smaller extent, i.e., 2.17 years (Millar et al., 2022). The multimodal BAG was similarly elevated in CI participants by 5.10 years. Thus, each model is clearly sensitive to group differences in AD status at the symptomatic stage.
 
 Consistent with one previous report (Lee et al., 2022), we demonstrated that within the CI participants, BAG estimates were related to individual differences in AD biomarkers and cognitive function. These effects were most pronounced in the structural model, which showed relationships with tau biomarkers and cognition in the CI participants, and the multimodal model, which showed relationships with tau, cognition, and amyloid PET. Thus, age prediction models that include structural MRI (including unimodal and multimodal approaches) may be useful in tracking AD pathological progression and cognitive decline within the symptomatic stage of the disease.
 
-## BAG as a marker of presymptomatic AD
+### BAG as a marker of presymptomatic AD
 
 We found that structural and multimodal BAG did not differ between cognitively normal participants with and without amyloid pathology. In cognitively normal participants, structural BAG estimates did not significantly associate with individual differences in any AD biomarkers. Overall, although structural and multimodal BAG estimates track well with some biomarkers of AD pathophysiology, as previously reported (Lee et al., 2022), our novel results suggest that these relationships are not observed until the symptomatic stage of the disease, at which point structural changes become more apparent.
 
@@ -179,11 +605,11 @@ Interpretation of this biphasic pattern is still unclear, although the present r
 
 Alternatively, pathological AD-related FC disruptions may be orthogonal to healthy age-related FC differences, as supported by our previous observation that age and AD are predicted by mostly non-overlapping FC networks (Millar et al., 2022). For instance, the ‘younger’ FC pattern in CN/A+ participants may be driven by hyper-excitability in the preclinical stage (Harris et al., 2020; Ranasinghe et al., 2022). It is also worth considering that patterns of younger FC-BAG in CN/A+ participants may somehow correspond to a recent observation that patterns of youthful-appearing aerobic glycolysis are relatively preserved in the presymptomatic stage of AD (Goyal et al., 2022). Finally, this effect may simply be spuriously driven by poor performance of the FC brain age model, sample-specific noise, and/or statistical artifacts related to regression dilution and its correction (Butler et al., 2021). Hence, future studies should attempt to replicate these results in independent samples and further test potential theoretical interpretations.
 
-## BAG as a marker of cognition
+### BAG as a marker of cognition
 
 Although FC-BAG was not associated with individual differences in a global cognitive composite within any of our analysis samples, greater structural and multimodal BAG estimates were associated with lower cognitive performance within the CI participants. Hence, these estimates may be sensitive markers of cognitive decline in the symptomatic stage. This finding is consistent with previous reports that other structural brain age estimates are associated with cognitive performance in AD (Eavani et al., 2018), Down syndrome (Cole et al., 2017a), HIV (Petersen et al., 2021; Petersen et al., 2022), as well as cognitively normal controls (Richard et al., 2018).
 
-## Limitations and future directions
+### Limitations and future directions
 
 The training sets included MRI scans from a range of sites, scanners, and acquisition sequence parameters, which may introduce noise and/or confounding variance into MRI features. We attempted to mitigate this problem by: (1) including only data from Siemens 3T scanners with similar protocols; (2) processing all MRI data through common pipelines and quality assessments; and (3) harmonizing across sites and scanners with ComBat (Fortin et al., 2017).
 
@@ -199,6 +625,6 @@ Moreover, estimates of BAG likely capture variance in early-life factors, which 
 
 Finally, although the Ances lab controls were relatively diverse, participants in other samples were mostly white and highly educated. Hence, these models may not be generalizable to broader samples. Future models would benefit by using more representative training samples.
 
-## Conclusions
+### Conclusions
 
 We compared three MRI-based machine-learning models in their ability to predict age, as well as their sensitivity to early-stage AD, AD biomarkers, and cognition. Although FC and structural MRI models were both successful in detecting differences related to healthy aging and cognitive impairment, we note clear evidence that these modalities capture complementary signals. Specifically, FC-BAG was uniquely reduced in cognitively normal participants with elevated amyloid, although the interpretation of this finding still warrants further investigation. In contrast, structural BAG was uniquely associated with biomarkers of AD pathology and cognitive function within the CI participants. Finally, the multimodal age prediction model, which combined FC and structural MRI, further improved the prediction of healthy age differences and also was related to biomarkers and cognition in CI participants. Thus, multimodal brain age models may be useful maximizing sensitivity to AD across the spectrum of disease progression.

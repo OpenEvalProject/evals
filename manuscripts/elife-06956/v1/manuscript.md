@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.06956.001 A better understanding of the natural history of model organisms will increase their value as model systems and also keep them at the forefront of research. DOI: http://dx.doi.org/10.7554/eLife.06956.001
+A better understanding of the natural history of model organisms will increase their value as model systems and also keep them at the forefront of research.
 
 ## Introduction
 
@@ -28,11 +28,9 @@ By providing a natural history context to these much loved, but decontextualized
 
 Just as the supermodels of the fashion world do not represent the average Homo sapiens, some ‘supermodel organisms’ do not represent their nearest relatives or even their own species. Moreover, some of these supermodel organisms have never lived in the wild. The crop plant maize is one such example, and the conversion of the wild grass teosinte into maize some 7–10,000 years ago is perhaps the first example of biotechnological innovation by humans. The domestication of the yeast S. cerevisiae for brewing and baking happened around the same period. House mice and the nematode, C. elegans, also share a long evolutionary history with humans, becoming human commensals when our houses and orchards became their habitats, but they do not owe their existence to humans. The relationship of other model organisms with humans is more recent. For example, humans distribute the marine model organism Ciona intestinalis—an organism that is of increasing interest to evolutionary biologists because it occupies a key branch point in the evolution of chordates—around the world's oceans via ships.
 
-In many cases, model organisms differ from their closest non-model relatives by possessing particular traits that have facilitated their domestication and adaptation to the laboratory environment, and over time this process has accentuated the differences between model organisms and their wild relatives. However, some model organisms, such as
+In many cases, model organisms differ from their closest non-model relatives by possessing particular traits that have facilitated their domestication and adaptation to the laboratory environment, and over time this process has accentuated the differences between model organisms and their wild relatives. However, some model organisms, such as C. intestinalis, have not (as yet) been adapted to breed in the laboratory. While this raises certain challenges (data generated from locally collected specimens, for example, might differ significantly from that stored in community databases), it also offers opportunities to study important evolutionary processes, such as adaptation and variation.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/06956/elife-06956-fig1-v1.jpg)
-
-**Figure 1.:** Arabidopsis thaliana and the zebrafish, but there is still a lot to learn about their life and biology in the wild, including the way that their behaviours are shaped by habitat, their predator-prey relationships, their ability to adapt to different environmental conditions, and the genetic basis for this adaptability.DOI: http://dx.doi.org/10.7554/eLife.06956.002
 
 As these articles highlight, many model organisms have a boom-and-bust lifestyle: C. elegans and D. melanogaster, for example, both colonize rotting food sources in the wild, reproducing rapidly when food is available. As a result, they have rapid life cycles while food is abundant, making generation times short, which is an ideal attribute for studying heritable traits and for generating experimental populations. In the wild, A. thaliana is highly successful at reproducing rapidly in poor habitats when environmental conditions are good. Its resulting short generation time, combined with its ability to self fertilize and its small condensed genome, make it an ideal plant for research purposes.
 

@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Far-red absorbing chlorophylls are constitutively present as chlorophyll (Chl) d in the cyanobacterium Acaryochloris marina , or dynamically expressed by synthesis of Chl f , red-shifted phycobiliproteins and minor amounts of Chl d via far-red light photoacclimation in a range of cyanobacteria, which enables them to use near-infrared-radiation (NIR) for oxygenic photosynthesis. While the biochemistry and molecular physiology of Chl f -containing cyanobacteria has been unraveled in culture studies, their ecological significance remains unexplored and no data on their in situ activity exist. With a novel combination of hyperspectral imaging, confocal laser scanning microscopy, and nanoparticle-based O 2 imaging, we demonstrate substantial NIR-driven oxygenic photosynthesis by endolithic, Chl f -containing cyanobacteria within natural beachrock biofilms that are widespread on (sub)tropical coastlines. This indicates an important role of NIR-driven oxygenic photosynthesis in primary production of endolithic and other shaded habitats.
+Far-red absorbing chlorophylls are constitutively present as chlorophyll (Chl) d in the cyanobacterium Acaryochloris marina, or dynamically expressed by synthesis of Chl f, red-shifted phycobiliproteins and minor amounts of Chl d via far-red light photoacclimation in a range of cyanobacteria, which enables them to use near-infrared-radiation (NIR) for oxygenic photosynthesis. While the biochemistry and molecular physiology of Chl f-containing cyanobacteria has been unraveled in culture studies, their ecological significance remains unexplored and no data on their in situ activity exist. With a novel combination of hyperspectral imaging, confocal laser scanning microscopy, and nanoparticle-based O2 imaging, we demonstrate substantial NIR-driven oxygenic photosynthesis by endolithic, Chl f-containing cyanobacteria within natural beachrock biofilms that are widespread on (sub)tropical coastlines. This indicates an important role of NIR-driven oxygenic photosynthesis in primary production of endolithic and other shaded habitats.
 
 ## Introduction
 
@@ -39,6 +39,42 @@ Beachrock is a widespread sedimentary rock formation on (sub)tropical, intertida
 
 Hyperspectral reflectance imaging on vertical cross-sections of beachrock submerged in seawater (23°C and salinity = 35) revealed the presence of a dense ~1 mm thick surface biofilm with high amounts of Chl a, while a more patchy zone containing Chl f, and less Chl a was found below the surface biofilm of the beachrock (Figure 1A,B), exhibiting localized hot spots of Chl f concentration (Figure 1C). Representative reflectance spectra from these regions carrying spectral signatures of maximal Chl a and Chl f absorption at 670–680 nm and 715–725 nm, respectively, are presented in the Supplementary Materials (Figure 1—figure supplement 1) along with additional examples of hyperspectral imaging of beachrock cross-sections (Figure 1—figure supplement 2). The presence of Chl f (and absence of microalgal Chl b and c) in our samples was confirmed by HPLC analysis of beachrock pigment extracts (see Materials and methods), both in a ~ 0–2 mm thick black beachrock sample, and in a more distinct green endolithic layer (~2–5 mm below the beachrock surface) (Figure 1—figure supplement 3). The amount of Chl f relative to Chl a in these samples ranged from 3.5% in the mixed layer to 6% in the green layer, while Trampe and Kühl (2016) reported Chl f amounts ranging from 0.5% to 5% of Chl a in beachrock.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50871/elife-50871-fig1-v1.jpg)
+
+**Figure 1.:** (A) RGB image composite, constructed from the hyperspectral image stack (R = 650 nm, G = 550 nm, B = 450 nm), showing ‘true’ colors of beachrock material and the biofilm community in a cross-section of the top layer. (B) False color coded image of the same hyperspectral image stack as in panel A mapping pixels with Chl a absorption (670–680 nm) in green, and Chl f absorption (718–722 nm) in red. Representative reflectance spectra of the two regions are given in Figure 1—figure supplement 1. (C) Overlay of beachrock structure obtained in panel A and the Chl a signature from panel B with map of the relative abundance of Chl f obtained from the amplitude of Chl f absorption (color coded between 0 and 1), as acquired from hyperspectral image analysis. (D) Distribution of O2 concentration (color coded in units of % air saturation) in the beachrock under illumination of 740 nm light (half-bandwidth = 25 nm; photon irradiance = 28 µmol photons m−2 s−1) when immersed in anoxic seawater, as imaged with the beachrock section covered with a thin paint of agarose containing O2–sensitive nanoparticles. The O2 concentration image was superimposed onto the structural image of the beachrock cross section. The insert is a digital zoom corresponding to the insert in panel C. Additional data on two other beachrock sections are available in the Suppl. Materials (Figure 1—figure supplements 2 and 6).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50871/elife-50871-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Representative reflectance spectra of beachrock zones with Chl a only (green zones in Figure 1B, C) and zones with Chl a and Chl f (orange zones in Figure 1B, C). The range of Chl a and Chl f absorption are indicated with shaded areas.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50871/elife-50871-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Spatial distribution of photopigments as mapped with hyperspectral reflectance imaging in beachrock from the black-colored (A–D) and brown-colored (E–F) zone on the beachrock platform on Heron Island. Left side panels; A, C, E, G are RGB composite images, constructed from the hyperspectral image stacks (R = 650 nm, G = 550 nm, B = 450 nm), showing ‘true’ colors of beachrock material and the biofilm community in a cross-section of the top layer. The right side panels (B, D, F, and H) map pixels with Chl a absorption (675–680 nm, green), and Chl f absorption (718–722 nm, red). Representative reflectance spectra of the two regions are shown in Figure 1—figure supplement 1C). Dashed boxes illustrate magnified parts displayed in the corresponding image directly below.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/50871/elife-50871-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** HPLC chromatograms (A, C) of pigment extracts from the upper 0–2 mm of the black beachrock biofilm (A) and an underlying green endolithic zone (C) 2–5 mm below the beachrock surface, and the corresponding absorbance spectra (B, D) of the Chl f – fraction.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/50871/elife-50871-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Hyperspectral RGB image, and (B) color-coded image showing Chl a (green) and Chl f (red) distribution over the same beachrock cross-section as in Figure 1. Dotted boxes in panel A and B outline the area scanned with CLSM. Maximum projection image of pigment fluorescence over beachrock cross-sections imaged at 200x magnification for five focal planes (at 5 µm interval) highlighting areas with spectral fluorescence signatures of Chl a (C; 690–700 nm), phycobiliproteins (D: 650–660 nm), Chl f (E; 740–750 nm), and the Chl a/Chl f ratio (F).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/50871/elife-50871-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A–C) CLSM scans of beachrock cross-section (marked with a dotted box in Figure 1—figure supplement 3A, (B) recorded at 600x magnification. (D) False color coding of CLSM images were done based on spectral fluorescence characteristics of cells with Chl a (690–700 nm, green), phycobiliproteins (650–660 nm, cyan), and Chl f (740–750 nm, red) in regions of interest (ROI) highlighted by circles in panel B and C. (E, F) Brightfield microscopy image of patches of green cell aggregates attached to beachrock (E) and a single-cell aggregate of pleurocapsalean cyanobacteria retrieved from a ROI exhibiting characteristic Chl f fluorescence and absorption features (F).
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/50871/elife-50871-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** Vertical cross-sections of beachrock (left panel) were painted with an agarose paint containing O2-sensitive luminescent nanoparticles. The beachrock was coated homogenously with a thin (<1 mm) layer of luminescent paint (right panel) that was mechanically stable after solidification of the agar. This enabled ratiometric imaging of the O2 dependent luminescence over the beachrock cross-section (see Materials and methods).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/50871/elife-50871-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** Cross-sections of two beachrock samples (A, D) were painted with agarose paint containing O2 sensitive nanoparticles (see Figure 1—figure supplement 5) and incubated in anoxic seawater for 30 min under a photon irradiance (740 nm, half-bandwidth 25 nm) of 28 µmol photons m−2 s−1. The resulting O2 concentration (false-color coded in units of % air saturation) was mapped via ratiometric luminescence imaging (B, E) and overlaid on top of the structural image of the beachrock cross-section (C, F).
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/50871/elife-50871-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** (A) Ratio (R) of the red channel and the green channel in RGB images plotted vs. the measured O2 concentration in % air-saturation. (B) Calibration curve of the sensor particle based sensor paint calculated as ΔR (=Ranoxic - R) plotted vs. the measured O2 concentration in % air-saturation. Data points with error bars represent means of the entire sensing area with the corresponding standard deviation; the dotted lines represent exponential fits (R2 >0.99).
+
 To further describe the microscale distribution of cells with different photo-pigmentation, we employed hyperspectral fluorescence imaging with confocal laser scanning microscopy (CLSM; 488 nm excitation) on beachrock cross-sections (Figure 1—figure supplements 4 and 5). The CLSM data confirmed the occurrence of patches of filamentous and unicellular Chl f-containing cyanobacteria with a characteristic fluorescence peak around 740–750 nm (cf. Majumder et al., 2017) in deeper endolithic zones (Figure 1—figure supplements 4C and 5A–D). Besides filamentous morphotypes, brightfield microscopy of Chl f hot spots revealed the presence of larger round cell aggregates (Figure 1—figure supplement 5E,F) typical of pleurocapsalean cyanobacteria (Waterbury and Stanier, 1978).
 
 In order to confirm the apparent dominance of cyanobacteria over microalgal oxygenic phototrophs, we employed 16S rRNA gene amplicon sequencing on black beachrock samples taken from the same area as the samples used for hyperspectral and O2 imaging. Among ~39,000 cyanobacterial-like sequences obtained from the black beachrock, none were classified as chloroplasts. In contrast, among ~17,000 cyanobacterial-like sequences obtained from two samples of seawater, 18% were classified as chloroplasts (Supplementary file 2). Microalgae are thus likely to be completely absent from the black beachrock, where the oxygenic phototrophic community consists exclusively of cyanobacteria.
@@ -50,6 +86,10 @@ By coating beachrock cross-sections with a thin (<1 mm) layer of an O2-sensitive
 ![Figure 2.](https://cdn.elifesciences.org/articles/50871/elife-50871-fig2-v1.jpg)
 
 **Figure 2.:** Cross-sectional images of initial O2 consumption after onset of darkness (A) and maximum net photosynthetic O2 production (B) after onset of actinic NIR illumination (740 nm, 28 µmol photons m−2 s−1) of the beachrock cross-section shown in Figure 1. (C) The NIR-driven gross photosynthesis was estimated by summing the absolute rates of net photosynthesis under NIR and O2 consumption in the dark. (D) Overlay of gross photosynthesis distribution over a structural image of the beachrock cross-section. (E) Data for O2 consumption, and NIR-driven net and gross photosynthesis were extracted for 11 regions of interest (ROI) in panel C and are presented as means ± standard deviation within the ROI.
+
+![Video 1.](https://cdn.elifesciences.org/articles/50871/elife-50871-video1.mp4.jpg)
+
+**Video 1.:** The movie sequence shows the decline in O2 concentration (recorded at 5 min interval) starting from steady-state conditions under a NIR irradiance (740 nm; 25 nm HBW) of 28 µmol photons m−2 s−1 approaching steady-state dark conditions after 35 min, followed by the rise in O2 concentration over 25 min after switching the NIR irradiation on again. The colored scale bar relates the colors to O2 concentrations.
 
 The Chl f-driven oxygenic photosynthesis by endolithic cyanobacteria thus seems very efficient given the low actinic NIR level applied. High photosynthetic efficiency of Chl f-containing cyanobacteria under NIR has been shown in previous ex situ studies on cultivated strains and enrichments. Gan et al. (2014) thus found that Leptolyngbya strain JSC-1 cells showed a 40% higher O2 production rate with NIR after undergoing FaRLiP relative to cells grown under red light (Gan et al., 2014), and a similar high photosynthetic efficiency was found in a Chroococcidiopsis strain (Nürnberg et al., 2018). Using similar NIR levels as used in the present study, Behrendt et al. (2015) showed rapid saturation of NIR-driven oxygenic photosynthesis already at 25–30 µmol photons m−2 s−1 (740 nm) in a cell enrichment with Chl f-containing, Aphanocapsa-like cyanobacteria from a cavernous biofilm.
 
@@ -63,31 +103,181 @@ The present study and the few other studies of natural habitats (Supplementary f
 
 ## Materials and methods
 
-## Field site and beachrock sampling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agarose</td>
+      <td>Thermo Fisher</td>
+      <td>16520100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PtTFPP</td>
+      <td>Frontier Scientific www.frontiersci.com/</td>
+      <td>PtT975</td>
+      <td>O2-sensitive dye in the O2 sensor nanoparticles (Koren et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Macrolex fluorescent yellow</td>
+      <td>Kremer Pigments www.kremer-pigmente.com/en/</td>
+      <td></td>
+      <td>Reference dye in the O2 sensor nanoparticles (Koren et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PSMA (XIRAN)</td>
+      <td>Polyscope www.polyscope.eu/</td>
+      <td></td>
+      <td>Polymer used in the O2 sensor nanoparticles (Koren et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>http://rsb.info.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+      <td>Used for calculations of O2concentration images and visualization of hyperspectral images, structure and O2concentration</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ratio Plus Image J plugin</td>
+      <td>http://rsb.info.nih.gov/ij/plugins/ratio-plus.html</td>
+      <td></td>
+      <td>Used for calculations of image ratios</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>look@RGB</td>
+      <td>http://imaging.fish-n-chips.de</td>
+      <td></td>
+      <td>Used for camera and LED control during image acquisition (Larsen et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Hyperspectral Imager V. 4.2</td>
+      <td>PhiLumina, LLC, Gulfport, MS, USA www.philumina.com/</td>
+      <td></td>
+      <td>Used for hyperspectral image stack acquisition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ENVI</td>
+      <td>L3 Harris Geospatial, Brromfield, CO, USA www.harrisgeospatial.com/</td>
+      <td></td>
+      <td>Used for hyperspectral image stack conversion</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Look@MOSI</td>
+      <td>www.microsenwiki.net/doku.php/hsimaging:hs_iman_howto</td>
+      <td></td>
+      <td>Used for hyperspectral image analysis</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetone Methanol Ammonium acetate Acetonitrile Ethylacetate</td>
+      <td>Sigma Aldrich</td>
+      <td>650501 34860 543834 114291 103649</td>
+      <td>Solvents used in HPLC analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OpenLAB CDS ChemStation Edition</td>
+      <td>Agilent Technologies</td>
+      <td></td>
+      <td>Used for HPLC analysis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Supor-200 polyethersulfone membrane disc filters (47 mm diameter, 0.2 µm pore size)</td>
+      <td>PALL</td>
+      <td>63025</td>
+      <td>Filters for seawater filtration</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy PowerLyzer PowerSoil kit</td>
+      <td>QIAGEN</td>
+      <td>12855</td>
+      <td>Extraction of DNA from beachrock</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy PowerWater kit</td>
+      <td>QIAGEN</td>
+      <td>14900</td>
+      <td>Extraction of DNA from seawater</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PCR reaction</td>
+      <td>PCRBIO</td>
+      <td>PB10.41–02</td>
+      <td>Amplification of 16S rRNA gene</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>V3</td>
+      <td>Eurofins</td>
+      <td>5’-CCTAYGGGRBGCASCAG-3’</td>
+      <td>PCR primer for 16S rRNA gene</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>V4</td>
+      <td>Eurofins</td>
+      <td>5’-GGACTACHVGGGTWTCTAAT-3’</td>
+      <td>PCR primer for 16S rRNA gene</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BLAST</td>
+      <td>NCBI http://blast.ncbi.nlm.nih.gov/Blast.cgi</td>
+      <td>RRID:SCR_004870</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Field site and beachrock sampling
 
 Beachrock fragments (5–10 cm) from the upper black-brown zone of the intertidal beachrock platform on Heron Island (Great Barrier Reef, Queensland, Australia; 23°26.5540S, 151°54.7420E); the field site is described in detail elsewhere (Cribb, 1966; Díez et al., 2007; Trampe and Kühl, 2016). Beachrock was sampled at low tide and cut into smaller subsamples with smooth vertical cross sections (ca. 2 × 2 × 1 cm3) using a seawater-flushed stone saw under dim light. These samples were subsequently stored and transported dry and dark prior to the imaging experiments at University of Technology Sydney, which commenced within a few days after sampling. Other black beachrock samples were either processed at the Heron Island Research Station for DNA extraction, or were frozen in liquid N2 on site and shipped on dry ice to Denmark for subsequent pigment extraction and HPLC analysis.
 
-## Hyperspectral imaging
+### Hyperspectral imaging
 
-## Imaging setup
+#### Imaging setup
 
 Hyperspectral reflectance imaging was done on vertical cross-sections of beachrock as previously described Trampe and Kühl (2016). The samples were submerged in seawater (23°C and salinity = 35) with the cross-section facing the objective of a dissection zoom microscope (Leica, Germany) with a hyperspectral camera system (100T‐VNIR; Themis Vision Systems, St. Louis, MO) (Kühl and Polerecky, 2008) connected via the C-mount video adapter. A fiber‐optic halogen lamp with an annular ring‐light (KL‐2500 and Annular Ring‐light; Schott AG, Mainz, Germany) mounted on the objective of the dissection microscope was used as a light source for the hyperspectral image acquisition. Additional hyperspectral measurements of reflected light were performed (at similar distance and microscope settings as used for the beachrock samples) on a calibrated 20% reflectance standard (Spectralon SRM‐20; LabSphere Inc, North Sutton, NH, USA).
 
-## Hyperspectral image analysis
+#### Hyperspectral image analysis
 
 Using the manufacturers software, (PhiLumina Hyperspectral Imager V. 4.2; PhiLumina, LLC, Gulfport, MS), dark-corrected, hyperspectral image stacks of beachrock reflection were converted to hyperspectral reflectance images (in units of % reflectance) by normalization to dark-corrected reflection stacks recorded using the reflectance standard. Subsequent file format conversion, and image cropping were performed in ENVI (Exelis Visual Information Solutions, Boulder, CO), before further image processing with the software Look@MOSI (freeware available at www.microsen-wiki.net/doku.php/hsimaging:hs_iman_howto).
 
 RGB images were constructed from the reflectance measurements at 650 nm (Red), 550 nm (Green), and 450 nm (Blue), as extracted from the calibrated hyperspectral image stacks. The fourth derivative of the hyperspectral reflectance stacks was calculated using the Look@MOSI software, yielding the relative extent of light attenuation at wavelengths representative for Chl a (670–680 nm) and Chl f (718–722 nm) absorption. The resulting grayscale images were then used for construction of false‐color-coded images, showing the spatial coverage of the two defined spectral signatures. The extraction of spectral information from areas of interest (covering hotspots of Chl f) was performed as previously described (Polerecky et al., 2009). The resulting images were first cropped to be of computational sizes for the Look@MOSI software, and were stitched back together in Photoshop CC 2015.1.2 (Adobe Systems Incorporated, San Jose, CA) after computation. The relative absorbance/abundance of Chl f was quantified by scaling of the relative extent of light attenuation as calculated above for Chl f. Pixel intensity values from the earlier calculated gray scale images were assigned a scale ranging from 0 to 1, and were finally displayed using a color scaled lookup table in ImageJ (http://rsbweb.nih.gov/ij/). This yielded false-color coded images with values between 0 and 1, displaying a relative measure of Chl f abundance according to the amount of light attenuation obtained from Chl f absorption.
 
-## Pigment analysis
+### Pigment analysis
 
 Two vertically separated layers from the black beachrock zone were analyzed for composition of photopigments, that is in the top layer (0–2 mm) and in a more distinct green deeper layer (2–5 mm). Samples from the two layers were kept at −80°C until further analysis by high-pressure liquid chromatography (HPLC) as described in detail elsewhere (Trampe and Kühl, 2016). Homogenized beachrock samples were transferred to 1.5 mL Eppendorf tubes for pigment extraction. The pigments were extracted by adding 0.8 mL acetone:methanol (7:2 vol:vol) to each tube, which was brieﬂy vortexed, and then kept on ice for a 2 min extraction time in darkness. Subsequently, samples were sonicated in an ice-cooled high-power ultrasonicating bath (Misonix 4000; Qsonica LLC., Newtown, CT) in darkness for 10 s consisting of 10 pulses of 1 s ON and 1 s OFF (with an amplitude setting of 100%), and were then centrifuged at ~12,000 g for 1 min in a mini centrifuge (MiniSpin, Eppendorf AG, Hamburg, Germany). The supernatant was ﬁltered through a 0.45 µm pore size syringe ﬁlter (Satorius Minisart SRP 4 ﬁlter; Sartorius AG, Goettingen, Germany), and 200 µL filtrate was then mixed with 15 µL ammonium acetate (1 M) in 0.3 mL HPLC vials. 100 µL of the extract was then immediately injected into the HPLC. Pigment extracts were separated and analyzed in the HPLC by a diode array detector (HPLC-DAD and Agilent 1260 Infinity; Agilent Technologies, Santa Clara, CA) fitted with Ascentis C18 column (25 cm × 4.6 mm, Sigma-Aldrich cat. no. 581325 U), detecting specific absorption wavelengths of compounds. The extracts were run at a constant column temperature of 30°C for 69 min., and a flow-rate of 1.0 mL min−1 in a changing gradient of solvent A (methanol:acetonitrile:water, 42:33:25, vol/vol/vol), and solvent B (methanol:acetonitrile:ethylacetate, 50:20:30, vol/vol/vol), where the mobile phase changed linearly from 30% solvent B at the time of injection to 100% at 52 min, staying at 100% for15 min before returning to 30% within 2 min. Spectral comparisons from Chen and Blankenship (2011), and Trampe and Kühl (2016) were used for identification of Chl a, Chl d, and Chl f from the HPLC chromatograms. Elution profiles from the absorbance detector signal at 430 nm were used to calculate pigment ratios from the derived integrated peak areas for each of the identified pigments of interest, using the manufacturer’s software (OpenLAB CDS ChemStation Edition; Agilent Technologies).
 
-## Amplicon sequencing
+### Amplicon sequencing
 
 A survey of the microbial communities in the beachrock was performed based on high-throughput sequencing of the 16S rRNA community gene pool, of which details will be published elsewhere. In brief, genomic DNA was isolated from portions (0.1–0.4 g) of freshly sampled black beachrock using the DNeasy PowerLyzer PowerSoil kit (QIAGEN, Germany). Costal seawater was sampled by filtration of 2.3 L seawater onto Supor-200 polyethersulfone membrane disc filters (47 mm diameter, 0.2 µm pore size; PALL cat. no. 63025) and genomic DNA was isolated using the DNeasy PowerWater kit (QIAGEN, Germany). This genomic DNA was used as template for PCR amplification with primers targeting the V3 and V4 regions of the bacterial/chloroplast 16S rRNA gene. The PCR products were sequenced with the Illumina MiSeq platform and the sequence data analyzed with the Qiime2 pipeline at the Section for Microbiology, Department of Biology, University of Copenhagen.
 
-## Experimental setup for O2 imaging
+### Experimental setup for O2 imaging
 
 The experiments were performed in a small glass aquarium (15 × 10 × 15 cm3) filled with filtered seawater (salinity 35). A lid with two inlets was placed on the aquarium. One inlet was used as a gas inlet, the second inlet was used to insert a robust fiber-optic O2 sensor (OXR430 connected to FireSting GO2 meter; PyroScience GmbH, Aachen, Germany) for monitoring the O2 concentration in the bulk seawater. The beachrock sample was mounted with a smooth vertical cross-section parallel to the aquarium glass wall. The camera used for O2 imaging and the excitation LED were placed perpendicular to the sample cross-section. Actinic NIR illumination was provided by a 740 nm LED (LZ4-40R300; LED Engin, Inc, San Jose, CA; HBW 25 nm) providing a NIR photon irradiance (integrated over 715–765 nm) of 28 µmol photons m−2 s−1, as measured with a calibrated spectroradiometer (MSC15, GigaHertz-Optik GmbH, Germany).
 
@@ -95,27 +285,27 @@ A beachrock sample painted on one side with the O2 sensor nanoparticle paint (se
 
 It should be noted that the O2 measurements were done over minute intervals in the thin agar layer with O2-sensitive nanoparticles coating the beachrock with the photosynthetic cells, where the observed O2 levels are affected both by cell activity and diffusional exchange with the surroundings. This leads to some diffusive smearing, and the observed dynamics in O2 and thus the derived reaction rates likely represent an underestimate of ‘true’ reaction rates (Santner et al., 2015).
 
-## Chemical imaging of O2
+### Chemical imaging of O2
 
-## Imaging system and application of O2 sensor nanoparticles
+#### Imaging system and application of O2 sensor nanoparticles
 
 We used recently published protocols for imaging O2 concentration over complex bioactive surfaces by coating beachrock cross-sections with O2-sensitive luminescent sensor nanoparticles (Koren et al., 2015; Koren et al., 2016) followed by ratiometric luminescence imaging of the coated surface with a DSLR camera (without NIR filter and with a 530 nm long pass filter mounted on the camera objective) during brief excitation with blue LED light (445 nm). Details of the imaging system and image acquisition software (Larsen et al., 2011), nanoparticle fabrication (Koren et al., 2015; Moßhammer et al., 2019) and biocompatibility (Trampe et al., 2018) are given elsewhere.
 
-## Optical O2 sensor nanoparticle paint
+#### Optical O2 sensor nanoparticle paint
 
 First, we attempted to spray-paint beachrock sections with sensor nanoparticles using a paintbrush according to Koren et al. (2016), but the porous structure of the beachrock prevented saturation and a homogenous coating of cross-sections. Instead, we coated beachrock cross-sections (as well as glass slides used for calibration) with a thin (<1 mm thick) layer of agarose containing O2 sensor nanoparticles, inspired by earlier work on seagrass rhizosphere O2 imaging (Koren et al., 2015). For this, 40 mg of UltraPure Low Melting Point Agarose (16520100; https://www.thermofisher.com/) was melted in 2 mL filtered seawater, which was then kept at ~35°C and mixed with 2 mL of a pre-warmed (~35°C) O2 sensor nanoparticle solution (2.5 mg mL−1). This ‘sensor paint’ was then applied on a vertical cross-section of a beachrock sample (or a glass microscope slide) using a small paint brush. After solidification of the sensor paint, the coated beachrock was transferred into the aquarium and left there prior to experiments to allow acclimatization. Throughout sample preparation, exposure to high light levels was avoided. This procedure produced a stable homogenous coating of beachrock cross-sections (Figure 1—figure supplement 6) with an O2 sensing layer that could be easily peeled off, enabling the same sample to be used for subsequent CLSM or hyperspectral imaging.
 
-## Imaging and image analysis
+#### Imaging and image analysis
 
 The O2-dependend red emission, and the constant green reference emission from the sensor nanoparticles in the paint during brief excitation pulses from a blue LED (445 nm) were recorded in RGB pictures with a DSLR camera system (Larsen et al., 2011) imaging coated beachrock sections or coated microscope glass slides. Mapping of NIR-driven oxygenic photosynthesis was done by O2-imaging of beachrock biofilm cross-sections immersed in anoxic (N2 flushed) seawater under illumination with a NIR LED. Acquired RGB images were split into red, green, and blue channels and analyzed using the freely available software ImageJ (http://rsbweb.nih.gov/ij/; RRID:SCR_003070). First, the red channel images (recording the O2-sensitive emission of the sensor nanoparticles) and the green channel images (recording the constant emission of a reference dye in the nanoparticles) were divided using the ImageJ plugin Ratio Plus (http://rsb.info.nih.gov/ij/plugins/ratio-plus.html) in order to get ratio images, R (=red channel/green channel).
 
 Background fluorescence from Chl a (at >680 nm) excited by the excitation light (445 nm) during O2 imaging can potentially overlap with the red channel. Furthermore, such Chl a-based photosynthesis may also generate a small amount of O2 during the brief excitation pulse. To account for such potential artefacts, and as we aimed to visualize changes in O2 concentration (ΔO2) attributed to Chl f-based photosynthesis, all ratio images were subtracted from ratio images recorded after 45 min in the dark in anoxic water, Rdark, (ΔR = Rdark R). Further, to avoid any cross-talk of NIR into the red channel, O2 images were always recorded during a brief (<1 s) darkening during image acquisition.
 
-## Calibration
+#### Calibration
 
 For calibration, a glass slide was coated with a thin layer of the O2 sensor nanoparticle paint. The coated slide was placed in the experimental setup with aerated seawater and imaged at identical camera settings as used for beachrock sample imaging. Subsequently, the O2 content of the seawater was decreased by flushing it intermittently with N2 gas under constant monitoring by a fiber-optic O2 microsensor (OXR430 connected to FireSting GO2 meter; PyroScience GmbH, Aachen, Germany). Calibration curves were obtained from RGB images of the calibration target recorded under a series of known seawater O2 concentrations (ranging from 100% air saturation to anoxia) using a ROI covering the whole field of view. Plotting R versus O2 showed an exponential decay with increasing O2 concentration (Figure 1—figure supplement 8), as commonly observed for optical O2-sensing materials (Koren and Kühl, 2018; Moßhammer et al., 2019). To enable calibration of background corrected experimental ratio images (see above), we generated a calibration curve by plotting ΔR (=Ranoxic R) versus O2 concentration (Figure 1—figure supplement 8B), which was fitted with an exponential function in Image J. The ΔR images from the experiments were then calibrated in Image J using the exponential fit in the calibration function.
 
-## Confocal laser scanning microscopy
+### Confocal laser scanning microscopy
 
 After the O2-imaging, the nanoparticle paint was peeled off the beachrock sections, and a smaller subsection of the flat beachrock cross section (previously used for hyperspectral or chemical imaging) was imaged at 200x and 400x magnification on an inverted confocal laser scanning microscope (Nikon A1R, Japan) with the beachrock cross section facing downwards in a 35 mm coverslip glass bottom petri dish (World Precision Instruments). Care was taken to keep the beachrock cross sections intact and oriented to enable identification and alignment of CLSM data to areas of interest exhibiting NIR-driven O2 production.
 

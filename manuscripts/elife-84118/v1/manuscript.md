@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04gyf1771 Department of Developmental and Cell Biology, University of California, Irvine Irvine United States
-2. https://ror.org/02t0qr014 Department of Biology and Marine Biology, University of North Carolina Wilmington United States
+1. Department of Developmental and Cell Biology, University of California, Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))
+2. Department of Biology and Marine Biology, University of North Carolina Wilmington United States ([ROR:02t0qr014](https://ror.org/02t0qr014))
 
 † Corresponding author
 

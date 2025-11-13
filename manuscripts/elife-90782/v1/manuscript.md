@@ -24,10 +24,10 @@
 
 ### Affiliations
 
-1. https://ror.org/04hbttm44 VIB-UGent Center for Medical Biotechnology Ghent Belgium
-2. https://ror.org/00cv9y106 Department of Biochemistry and Microbiology, Ghent University Ghent Belgium
+1. VIB-UGent Center for Medical Biotechnology Ghent Belgium ([ROR:04hbttm44](https://ror.org/04hbttm44))
+2. Department of Biochemistry and Microbiology, Ghent University Ghent Belgium ([ROR:00cv9y106](https://ror.org/00cv9y106))
 3. Gnomixx Melle Belgium
-4. https://ror.org/03xrhmk39 VIB Bioinformatics Core Ghent Belgium
+4. VIB Bioinformatics Core Ghent Belgium ([ROR:03xrhmk39](https://ror.org/03xrhmk39))
 5. Sanofi, Research North America Cambridge United States
 
 † Corresponding author
@@ -48,7 +48,7 @@ Here, we determined the antigenic landscape of N2 NAs derived from human H3N2 st
 
 ## Results
 
-## Generation of H3N2-derived NA immune sera in ferrets and mice
+### Generation of H3N2-derived NA immune sera in ferrets and mice
 
 Our aim was to determine the antigenic relationship between NAs derived from human H3N2 viruses that circulated during nearly one decade. We first selected 43 H3N2 NA protein sequences obtained via GISAID, derived from viruses that were isolated between 2009 and 2017 (Elbe and Buckland-Merrett, 2017). Hierarchical clustering with minimax linkage was employed to ensure the set was representative of overall protein sequence diversity (Bien and Tibshirani, 2011). Next, 43 recombinant H1N2 viruses were generated that carried the internal and HA genes from PR8 virus and the NA genes of the selected H3N2 viruses. In addition, the corresponding tetrabrachion-stabilised recombinant N2 NA proteins were produced in Chinese hamster ovary (CHO) cells and purified, and are referred to as NACHOs (Catani et al., 2022). All purified NACHOs were tetrameric based on SEC-MALS analysis. The enzymatic activity of the NACHOs was determined based on the hydrolysis of the fluorogenic small molecule substrate 4-methylumbelliferyl-N-acetylneuraminic acid (MUNANA). The NACHOs were active with a specific activity ranging from 0.27 to 27.48 nmole/min/µg, indicating correct folding and assembly of the NA head domains (Supplementary file 1).
 
@@ -56,15 +56,43 @@ Immune sera against all 43 H3N2-derived NAs were generated in pairs of ferrets b
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig1-v1.jpg)
 
-**Figure 1.:** (a) 43 Ferret immunisation and blood sampling scheme. The second immunisation on day 28 was performed with homologous NACHO except for the ferrets that had been primed with H1N2A/Estonia/91621/2015 or H1N2A/Stockholm/15/2014, which were infected again on day 28 post prime with the same H1N2 viruses. (b) Homologous NACHO ELISA titer of ferret sera sampled on day 14 after inoculation with H1N2 virus and 2 weeks after the boost with recombinant neuraminidase (NA) or by re-inoculation with H1N2A/Estonia/91621/2015 or H1N2A/Stockholm/15/2014 (indicated by arrows on the x-axis). (c) 43 BALB/c mouse immunisation and blood sampling scheme. (d) Homologous NACHO serum IgG titers in pooled sera from mice that were immunised twice with recombinant NA. Mouse and ferrets representations were created with BioRender.com, and published using a CC BY-NC-ND license with permission.Figure 1—source data 1.
+**Figure 1.:** (a) 43 Ferret immunisation and blood sampling scheme. The second immunisation on day 28 was performed with homologous NACHO except for the ferrets that had been primed with H1N2A/Estonia/91621/2015 or H1N2A/Stockholm/15/2014, which were infected again on day 28 post prime with the same H1N2 viruses. (b) Homologous NACHO ELISA titer of ferret sera sampled on day 14 after inoculation with H1N2 virus and 2 weeks after the boost with recombinant neuraminidase (NA) or by re-inoculation with H1N2A/Estonia/91621/2015 or H1N2A/Stockholm/15/2014 (indicated by arrows on the x-axis). (c) 43 BALB/c mouse immunisation and blood sampling scheme. (d) Homologous NACHO serum IgG titers in pooled sera from mice that were immunised twice with recombinant NA. Mouse and ferrets representations were created with BioRender.com, and published using a CC BY-NC-ND license with permission.
 
 We also generated NA immune sera in BALB/c mice. Groups of five mice were immunised two times, with a 2-week interval, by intramuscular injection with 1 µg of the respective 43 NACHOs adjuvanted with AF03. Blood was collected from the immunised mice and serum prepared on day 28 after the prime immunisation (Figure 1c). NACHO-specific IgG titers in the mouse immune sera, pooled from each group, ranged from 1:8100 to 1:72,900 (Figure 1d).
 
-## The antigenic profile of N2 NA
+### The antigenic profile of N2 NA
 
 Next, NAI titers were determined in the ferret sera using a panel of H6N2 reassortant viruses in an enzyme-linked lectin assay (ELLA), avoiding interference by anti-H1 HA antibodies. We generated 27 H6N2 influenza viruses with H6 HA derived from A/mallard/Sweden/2002 and NA derived from a subset of the 43 H3N2 viruses, thereby retaining NA sequence diversity and year of H3N2 virus isolation (Supplementary file 2).
 
 The 43 NAs used as antigens and 27 NAs as source of NA could be classified into four groups when ordered according to the phylogenetic relatedness of their NA sequence (Figure 2; Figure 2—source data 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig2-v1.jpg)
+
+**Figure 2.:** 43 Phylogenetic tree based on the N2 NA head domain amino acid sequences and heatmap representing the average of normalised NA inhibition (NAI) per H6N2 [log2 max (NAI/ELISA homologous titer)/(NAI/homologous ELISA titer)] determined in ferret sera after the boost (listed vertically). The red-to-blue scale indicates high-to-low NAI observed in enzyme-linked lectin assay (ELLA) against the H6N2 reassortants (listed at the bottom). Unweighted pair group method with arithmetic mean (UPGMA) clustering of H6N2s inhibition profiles are shown on top of the heatmap and coloured according to the phylogenetic groups.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) KM was determined for each H6N2 reassortant virus using the fluorogenic substrate 4-methylumbelliferyl-N-acetylneuraminic acid (MUNANA). N2 NAs are coloured according to the phylogenetic groups. Global test comparing the four groups was done using ANOVA (p=2.4e-05) and pairwise comparison performed using Wilcoxon, ***p<0.001, **p<0.01, *p<0.05. (b) Scatter plot and correlation between the KM values and dilutions required to obtain 70% max activity in enzyme-linked lectin assay (ELLA).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Hierarchical clustering based on multisampling and multiscale bootstrap resampling. Approximately unbiased p-values (AU) are shown in red, bootstrap values in green, and edge values in grey. The red brackets represent the clusters with AU >95%. (b) k-Means clustering represented using principal component analysis (k=4).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Antigen and sera distances are represented in the graph and coloured according to distinct phylogenetic groups. The spacing between grid lines is 1 unit of antigenic distance corresponding to a twofold dilution of immune serum in the NA inhibition (NAI) assay.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The scatter plots show the phylogenetic distances (y-axis) and normalised NAI as fold reduction relative to the maximal inhibition [log2 (max NAI/NAI)] (x-axis). Each graph represents one of the 27 H6N2s that were tested.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** 43 Heatmap representing the average of normalised neuraminidase inhibition per H6N2 [log2 (max NAI/NAI)] determined in ferret sera 2 weeks after infection. The red-to-blue scale indicates the fold reduction compared to the max NAI observed in enzyme-linked lectin assay (ELLA) against the H6N2 reassortants (listed at the bottom). Unweighted pair group method with arithmetic mean (UPGMA) clustering of H6N2 inhibition profiles are shown on top of the heatmap and coloured according to the phylogenetic groups.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** 43 Heatmap representing the average of normalised neuraminidase inhibition per H6N2 [log2 (max NAI/NAI)] determined in mice sera after the boost (listed on the right). The red-to-blue scale indicates low-to-high NAI observed in enzyme-linked lectin assay (ELLA) against the H6N2 reassortants (listed at the bottom). Unweighted pair group method with arithmetic mean (UPGMA) clustering of H6N2 inhibition profiles are shown on top of the heatmap and coloured according to the phylogenetic groups. (b) Correlation of NAI between mice and ferrets. Scatter plot shows the normalised NAI as fold reduction from maximal inhibition [log2 (max NAI/NAI)] from ferrets (y-axis) versus mice (x-axis). The 7 H6N2s tested are indicated in the graphs. NAI, neuraminidase inhibition.
 
 The conversion rate of MUNANA into 4-methylumbelliferyl and acetylneuraminic acid by these H6N2 viruses revealed a KM that ranged from 20.7 to 144.8 µM as determined by the Michaelis-Menten equation (Figure 2—figure supplement 1a and Supplementary file 2). Interestingly, the KM differs between the distinct phylogenetic groups (Figure 2—figure supplement 1a). There was a negative correlation between the KM values and the dilution of the H6N2 viruses required to set the 70% maximal NA activity in ELLA (Figure 2—figure supplement 1b).
 
@@ -82,25 +110,49 @@ We further tested the NAI activity of ferrets’ sera obtained 2 weeks after the
 
 The NAI titers were also determined in the sera obtained from the 43 groups of NACHO-immunised mice against 7 of the H6N2 viruses (Figure 2—figure supplement 6a; Figure 2—source data 2). These H6N2 viruses were selected as described above with the addition of HK14 and Swi13 H6N2s, both belonging to antigenic cluster 1. Serum NAI IC50 values against a given H6N2 virus were normalised against the IC50 of the mouse serum that had the highest NAI titers against the tested H6N2 virus. UPGMA-based clustering showed that the mouse NACHO immune sera displayed a similar recognition pattern as the ferret immune sera that had been generated by H1N2 priming followed by a NACHO boost (Figure 2). For example, HK14 H6N2 NA activity is strongly inhibited by sera from group 1, is poorly inhibited by most of the sera from group 2, and is hardly inhibited by group 3 and 4 sera from both ferrets and mice. Ind11 H6N2 NA activity, on the other hand, was inhibited by group 1 and 4, and hardly by group 2 and 3 immune sera. Overall, the normalised NAI IC50 values of the ferret and mouse immune sera correlated very well with coefficients values ranging from 0.33 to 0.78 (Figure 2—figure supplement 6b).
 
-## Association analysis reveals amino acid residue substitutions that strongly impact NAI
+### Association analysis reveals amino acid residue substitutions that strongly impact NAI
 
 NA of human influenza viruses is subject to antigenic drift, predominantly driven by the NAI activity that is detectable in the host serum (Air et al., 1985; Yasuhara et al., 2019). There are a total of 102 amino acid differences between the head domains of the NAs that were used to generate the 43 ferret immune sera (Figure 3—figure supplements 1 and 2).
 
 To try to identify which of these amino acid substitutions have a significant impact on NAI, we performed an association analysis for each of the tested H6N2 viruses. For this analysis, the NAI IC50 value was compared between groups of N2 sera according to the presence or absence of a substitution of any of the 102 amino acid position that are different between the panel of 43 tested N2s against which sera had been raised in ferrets. As a result, a p-value is obtained for each position that reflects its possible impact on NAI (Figure 3a). The significance values higher than 1.3 (p<0.05) of representative strains of the four antigenic groups were represented on the surface of N2 (Figure 3b). No obvious antigenic patches, however, could be distinguished on the N2 NA surface.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig3-v1.jpg)
+
+**Figure 3.:** (a) Association study performed for each H6N2 virus (listed at the bottom) to determine the probability of each variable amino acid (listed on the right) present in the panel of 43 NAs to impact the NAI. The red-to-blue scale represents significance values (S=-log10p) associated with each amino acid substitution. The dark red in the colour scale represent all values that are equal or higher than 3 (corresponding to p-values ≤ 0.001). The colour shades on the bottom side indicate the distinct phylogenetic groups. (b) The significant values (p<0.05) were represented on the surface of N2 tetramer (PDB accession number 4H53) for one representative strain of each phylogenetic group with a yellow to red scale of significance (-log10p).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The sequence of recombinant neuraminidase (NA) that was used for boosting ferrets or to prime/boost BALB/c mice was aligned starting from the His-tag, tetrabrachion, and followed by NA head domain, as depicted on top of the sequences.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The surface and ribbon representations indicate the geometrical distribution of the amino acid substitutions that are present in the panel of 43 N2 neuraminidases (NAs) used as immunogens in the study. Substitutions are highlighted in red on the model structure of N2 from H2N2 (A/RI/5+/1957, PBD 4H53).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Association study performed for each H6N2 virus (listed at the bottom) to determine the probability of each variable amino acid (listed on the right) present in the panel of 43 neuraminidases (NAs) to impact NA inhibition (NAI). The red-to-blue scale represents significance values (-log10p) associated with each variable amino acid.
+
 A similar association analysis was performed using the NAI values obtained with the mouse NACHO immune sera. The calculated p-values obtained from the mouse and ferret NAI data were in line with each other (Figure 3—figure supplement 3).
 
-## Residues close to the catalytic pocket are more likely to impact NAI
+### Residues close to the catalytic pocket are more likely to impact NAI
 
 We next calculated the distance between the Cα atom of each amino acid present in the N2 structure (PDB: 6BR6, from A/Perth/16/2009 NA) to each Cα of the variable amino acids present in the panel. We then determined the correlation of those distances with the p-values that were previously determined in the association analysis. The resulting correlation coefficients (Tau values) indicate a similar pattern among all 27 tested H6N2s (Figure 4a). When visualised on the N2 surface structure, the Tau values revealed a geometrical distribution with the negative correlations being in closer proximity to the catalytic pocket (Figure 4b). Similar data was obtained when mice sera were analysed this way (Figure 4—figure supplement 1).
 
-## Prediction of the N2 antigenicity based on a machine learning method
+![Figure 4.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig4-v1.jpg)
+
+**Figure 4.:** (a) Significance values (102 variable amino acids) obtained from the association study were correlated to the distance between every amino acid and each of the variable amino acids in the NA structure. The red-to-blue scale represents the Tau values obtained in the Kendall correlation. Amino acids 83–469 are shown from top to bottom in the heatmap. The H6N2s used in the NAI panel are listed at the bottom. The grey column indicates the residues that are part of the catalytic pocket (CP) that directly interact with the substrate (R118, D151, R152, R224, E276, R292, R371, and Y406) and the residues that play a key role in stabilising the catalytic site (E119, R156, W178, S179, D198, I222, E227, H274, E277, N294, and E425). (b) Tau values obtained from Tex12 H6N2 correlation are represented on the surface of the N2 structure of A/RI/5+/1957 (PBD 4H53), the arrow indicates the catalytic pocket in one NA protomer.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Significance values (102 variable amino acids) obtained from the association study were correlated to the distance between every amino acid and each of the variable amino acids in the neuraminidase (NA) structure. The red-to-blue scale represents the Tau values obtained in the Kendall correlation. Amino acids 83–469 are shown from top to bottom of the heatmap. The H6N2s used in the NA inhibition (NAI) panel are listed at the bottom.
+
+### Prediction of the N2 antigenicity based on a machine learning method
 
 The antigenic drift of human H3 HA has been extensively studied and modelled (Meyer and Wilke, 2015; Smith et al., 2004; Westgeest et al., 2012; Wu et al., 2020). To model the NA drift observed in our panel of N2 NAs, we first calculated the antigenic distances between the distinct NA sera, using a similar approach as has been used to visualise the HA antigenic map (Cai et al., 2012). Then, using the antigenic distances and a random forest (RF) method, a model was built based on amino acid sequence information. A similar model has been used by Yao et al. to predict the antigenicity of H3 HA (Yao et al., 2017). Here, the optimised model was built using a combination of 25 randomly sampled features in 1500 decision trees. The resulting model generates predictive antigenic distances that strongly correlate with the observed values (Figure 5a), with a root-mean-square error (RMSE)/mean = 0.207. The RF also enables scoring of amino acid residues according to their importance in the decision trees. One measure of importance can be defined as how early a change in a position is placed in the generated decision trees (mean minimal depth). Another measure of importance is how much the standard error mean increases when a variable is permuted. Finally, the prevalence of a variable amino acid in nodes of the decision tree can also indicate its importance. Those importance scores were represented in a multi-way plot (Figure 5b). The importance scores highlighted similar positions as previously determined in the association study. Finally, we used NA sequences of recent seasonal influenza vaccine recommended H3N2 strains to predict their antigenic distance relative to our panel of N2s, including three recent N2 NA components (from A/HongKong/45/2019, A/Tasmania/503/2020, and A/Darwin/6/2021) that were not present in our dataset. The predicted antigenic distances were plotted in the heatmap in a red-to-blue scale, indicating high to low antigenic distance, respectively (Figure 5c). The RF clearly reproduced the drift observed in AC2 versus AC1. The modelling also indicates that the antigenic distance of the three recent N2s to their corresponding group 2 NAs is increasing (represented by the dark blue turning light blue, from the A/Singapore/infimh-16-0019/2016 towards the A/Darwin/6/2021 in G2) whereas their distance to group 4 NAs is decreasing (dark red becoming yellow from the A/Singapore/infimh-16-0019/2016 towards the A/Darwin/6/2021 in G4).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/90782/elife-90782-fig5-v1.jpg)
 
-**Figure 5.:** (a) Predicted vs observed normalised neuraminidase inhibitions (NAIs) are shown. (b) Multi-way importance plot indicating the increase in mean standard error, the mean depth, and number of nodes. The top 10 most important amino acid changes are highlighted in blue and annotated with their position in the NA sequence. (c) 43 Heatmap indicates the predicted antigenic distances of N2s from recent H3N2 isolates (at the bottom of the heatmap) relative to the N2s that were used in the NAI breadth panel (listed vertically). The antigenic distances were calculated based on NA protein sequence.Figure 5—source code 1.
+**Figure 5.:** (a) Predicted vs observed normalised neuraminidase inhibitions (NAIs) are shown. (b) Multi-way importance plot indicating the increase in mean standard error, the mean depth, and number of nodes. The top 10 most important amino acid changes are highlighted in blue and annotated with their position in the NA sequence. (c) 43 Heatmap indicates the predicted antigenic distances of N2s from recent H3N2 isolates (at the bottom of the heatmap) relative to the N2s that were used in the NAI breadth panel (listed vertically). The antigenic distances were calculated based on NA protein sequence.
 
 ## Discussion
 
@@ -126,15 +178,417 @@ In summary, our study shows that immunisation with recombinant N2 NA immunogen c
 
 ## Materials and methods
 
-## Rescue of H1N2 and H6N2 reassortants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI232655</td>
+      <td>A/PERTH/16/2009</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI543762</td>
+      <td>A/SWITZERLAND/9715293/2013</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI993642</td>
+      <td>A/TENNESSEE/18/2017</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI715819</td>
+      <td>A/ANKARA/2396/2015</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI574238</td>
+      <td>A/PARIS/2379/2014</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI369152</td>
+      <td>A/STOCKHOLM/14/2012</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI892776</td>
+      <td>A/BRISBANE/273/2016</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI1013098</td>
+      <td>A/HATAY/4990/2016</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI1015697</td>
+      <td>A/CATALONIA/9503S/2017</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI531449</td>
+      <td>A/STOCKHOLM/15/2014</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI679413</td>
+      <td>A/ALASKA/251/2015</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI630701</td>
+      <td>A/ESTONIA/91621/2015</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI394905</td>
+      <td>A/OHIO/62/2012</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI446773</td>
+      <td>A/TEHRAN/996/2012</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI831629</td>
+      <td>A/NEWCASTLE/67/2016</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI831647</td>
+      <td>A/NEWCALEDONIA/23/2016</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI935704</td>
+      <td>A/WISCONSIN/16/2015</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI981927</td>
+      <td>A/INDIANA/18/2017</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI1055123</td>
+      <td>A/NAGANO/2153/2017</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI408590</td>
+      <td>A/XINJIANGTIANSHAN/1411/2012</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI330528</td>
+      <td>A/HEILONGJIANGXIANGYANG/1134/2011</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI316206</td>
+      <td>A/UTAH/11/2011</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI536339</td>
+      <td>A/GAMBIA/G0071436/2012</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI1036140</td>
+      <td>A/POLAND/19B/2017</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI675974</td>
+      <td>A/TASMANIA/1018/2015</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI539797</td>
+      <td>A/DAKAR/14/2014</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI340631</td>
+      <td>A/HOKKAIDO/10H079/2011</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI465399</td>
+      <td>A/MINNESOTA/11/2010</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI956450</td>
+      <td>A/HANOI/ELI15597/2015</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI869121</td>
+      <td>A/ONTARIO/RV3236/2016</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI344404</td>
+      <td>A/INDIANA/08/2011</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI558926</td>
+      <td>A/STOCKHOLM/32/2014</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI104388</td>
+      <td>A/HONGKONG/3089/2017</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI1056652</td>
+      <td>A/OHIO/13/2017</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI489603</td>
+      <td>A/HELSINKI/941/2013</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI489571</td>
+      <td>A/HELSINKI/823/2013</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI1050862</td>
+      <td>A/MORAMANGA/1907/2017</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI996522</td>
+      <td>A/PORTOALEGRE/LACENRS2376/2014</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI945994</td>
+      <td>A/SWEDEN/3/2017</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI1047603</td>
+      <td>A/SINGAPORE/INFIMH160019/2016</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI377498</td>
+      <td>A/TEXAS/50/2012</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI1026710</td>
+      <td>A/HONGKONG/4801/2014</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>NA</td>
+      <td>GISAID</td>
+      <td>EPI551805</td>
+      <td>A/VICTORIA/361/2011</td>
+    </tr>
+    <tr>
+      <td>Gene (influenza A)</td>
+      <td>HA</td>
+      <td>GISAID</td>
+      <td>EPI251808</td>
+      <td>A/mallard/Sweden/81/2002</td>
+    </tr>
+    <tr>
+      <td>Cell line (Canis lupus)</td>
+      <td>MDCK</td>
+      <td>ATCC</td>
+      <td>CCL-34</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293FT</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>R70007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Sera</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Harvested from immunised mice</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mustela furo)</td>
+      <td>Sera</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Harvested from infected/immunised ferrets</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG-HRP (Goat polyclonal)</td>
+      <td>GE Healthcare</td>
+      <td>NA931-1ml</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ferret IgG-HRP (Goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>112770</td>
+      <td>(1:100,000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3,3’,5,5’-Tetramethylbenzidine</td>
+      <td>BD</td>
+      <td>555214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetuin</td>
+      <td>Sigma</td>
+      <td>F3385</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PNA-HRP</td>
+      <td>Sigma</td>
+      <td>L61135-1MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Methylumbelliferyl-α-d-N-acetylneuraminic acid</td>
+      <td>Sigma</td>
+      <td>M8639</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pierce nickel-coated plates</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>15442</td>
+      <td>See Materials and methods: ELISA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Rescue of H1N2 and H6N2 reassortants
 
 All reassortant H1N2 and H6N2 viruses included in the study were generated by reverse genetics, with each reassortant expressing the targeted NA antigen, internal genes from A/Puerto Rico/8/1934 H1N1 (PR8), and the HA from PR8 H1N1 or A/mallard/Sweden/81/2002 H6N1, respectively. Briefly, HA and NA segments including non-coding regions were generated by custom gene synthesis (Geneart AG), while PR8 internal segments were derived from a viral isolate as previously published (Marsh and Tannock, 2005). All segments were cloned into a bidirectional transcription plasmid derived from pUC57 (Genscript) including polymerase (Pol) I and Pol II promoters, as previously described (Hoffmann et al., 2000), and the entire set of eight plasmids was used to transfect 293FT cells (Thermo Fisher Scientific) using Lipofectamine 2000 CD (Thermo Fisher Scientific). Twenty-four hours after transfection, Madin-Darby Canine Kidney Cells (MDCK-) ATL cells (ATCC) were added to the transfected cells in the presence of TPCK-treated trypsin (Sigma) to allow influenza virus propagation. Cell culture supernatants containing influenza virus were harvested 7 days post MDCK addition and blindly passaged in 8- to 10-day-old embryonated chicken eggs (Charles River Laboratories, Inc). Inoculated eggs were incubated at 37°C for 48 hr, then cooled to 4°C for 12 hr, prior to allantoic fluid harvest and clarification by low-speed centrifugation (3000 rpm, 20 min). For H6N2 viruses only, high-yield stocks were generated by an additional passage in eggs as described above. Virus titers were determined by plaque assay on MDCK cells.
 
-## Design and production of recombinant proteins
+### Design and production of recombinant proteins
 
 The coding information of the NACHO proteins was cloned under the transcriptional control of the CMV promoter in the pCDNA3.4 plasmid with a CD5 secretion signal, an amino-terminal His-tag and the thrombin cleavage signal followed by tetrabrachion-NA. NACHOs were expressed in a mammalian cell culture system as previously described with modifications (Catani et al., 2022).
 
-## Animal experiments
+### Animal experiments
 
 The ferret immunisation experiment was conducted at Bioqual, Inc, MD (USA). The experiments were approved by the Institutional Animal Care and Use Committee of the Bioqual (reference number 17-021.6). Outbred 18- to 22-week-old naïve male and female Fitch ferrets were obtained from Triple F, PA (USA) and housed under specified pathogen-free conditions with food and water ad libitum. Ferrets were primed on day 0 by intranasal challenge with influenza H1N2 reassortant virus (1000 µl/dose, split evenly between nostrils). Four weeks after initial infection (day 28), ferrets were immunised with 45 μg of NACHO (500 µl/dose, intramuscularly, split evenly between hind thighs) corresponding to homologous NA used in day 0 prime. Alternatively, and due to low yield of selected recombinant NACHOs, ferrets were boosted on day 28 with 15 μg of homologous NACHO (A/Perth/16/2009nib-64, A/Tasmania/1018/2015, A/Utah/11/2011, and A/West Virginia/17/2012) or were inoculated with the same H1N2 reassortant virus used in the prime (A/Estonia/91621/2015 and A/Stockholm/15/2014). Sera from bleeds 2 weeks after the prime (day 14) and booster vaccination (day 42) were tested for immunogenicity and seroconversion in serological assays.
 
@@ -142,39 +596,43 @@ The mouse immunisation experiments were conducted according to the Belgian legis
 
 Two or three weeks after the boost immunisation, mice were humanely sacrificed with an anaesthetic overdose of Nembutal (6 mg per mouse) and bled retro-orbitally. The obtained blood samples were incubated for 30 min at 37°C to allow clotting, which was followed by centrifugation at 10,500×g for 5 min. The supernatant (the serum) was recovered and submitted to a second centrifugation at 10,500×g for 5 min. Cleared sera were stored at –20°C before use in serological assays.
 
-## ELISA
+### ELISA
 
 Anti-tetNA IgG levels in mouse and ferret sera were determined by capture ELISA using tetNAs in Pierce nickel-coated plates (cat. # 15442). Recombinant proteins were diluted in DPBS (Life Technologies cat. # 14040-182) (tetNA was diluted to 0.5 µg/ml). Then, 50 µl of the coating antigen solutions was added to each well and the plate was incubated at room temperature for 1 hr on a shaking platform. The wells of the plates were then washed three times with PBS-T (Sigma cat. # P3563-10PAK) and blocked for 1 hr with 1% BSA (for the mouse sera) or 10% milk (for the ferret sera) in DPBS. After blocking, the wells of the plates were washed once with PBS-T and incubated with a threefold serial dilution, starting at a 1/100 dilution, of serum in DPBS, 0.5% BSA, 0.05% Tween-20 for 2 hr at room temperature on a shaking platform. The wells of the plates were then washed five times with PBS-T and incubated with a 1:5000 dilution of anti-mouse IgG-HRP (GE Healthcare cat. # NA931-1ml), or with a 1:100,000 dilution of anti-ferret IgG-HRP (Abcam cat. # 112770) in DPBS, 0.5% BSA, 0.05% Tween-20. The 3,3’,5,5’-tetramethylbenzidine (TMB) substrate (BD cat. # 555214) was added after three washes with PBS-T and the reaction was stopped after 5 min by addition of 50 µl of 1 M H2SO4. The optical density (OD) in each well was determined at 450 nm and, as a reference, 655 nm using an iMark Microplate Absorbance Reader (Bio-Rad). The end point titer was determined for each serum sample by scoring the dilution that resulted in an OD that was equal to or two times higher than the background OD obtained from pre-immune control sera dilution series.
 
-## ELLA to determine NAI titers
+### ELLA to determine NAI titers
 
 Fetuin (Sigma cat. # F3385) was diluted into coating buffer (KPL cat. # 50-84-01) to a concentration of 25 µg/ml and 50 µl was added to the wells of Nunc MaxiSorp plates (Thermo Fisher cat. # 44-2404-21), which were incubated overnight at 4°C. The coated plates were then washed three times with PBS-T (Sigma cat. # P3563-10PAK) and incubated overnight with 60 μl of a dilution of H6N2 and 60 µl of twofold serial dilution of serum, starting at a 1/20 dilution, in sample buffer (1× MES VWR cat. # AAJ61979-AP: 20 mM CaCl2, 1% BSA, 0.5% Tween-20). These dilutions of the H6Nx viruses correspond to the 70% maximum activity of NA from the respective viruses as determined in the ELLA. Fetuin-coated plates were then washed three times with PBS-T and incubated for 1 hr with a solution of PNA-HRP (cat. # L6135-1MG, Sigma) at 5 μg/ml in conjugate diluent (MES pH 6.5, 20 mM CaCl2, 1% BSA). The plates were washed three times with PBS-T, TMB substrate was added, and then the plates were incubated for 5 min before the reaction was stopped by the addition of 50 µl of 1 M H2SO4. The optical density was measured at 450 nm and, as a reference, 655 nm in an iMark Microplate Absorbance Reader (Bio-Rad). Half maximum inhibitory concentrations (IC50) values were determined by non-linear regression analysis (GraphPad Prism software).
 
-## NA enzyme kinetics assay
+### NA enzyme kinetics assay
 
 The enzymatic activity of NACHOs and H6N2s was determined with the fluorogenic small substrate MUNANA as previously described (Marathe et al., 2013). First H6N2 dilutions were tested to ensure that MUNANA conversion into 4-methylumbelliferone (4-MU) generated fluorescence over time at a linear ratio. Ten microliters of 1  mM of MUNANA (Sigma cat. # M8639) in 200 mM sodium acetate buffer (pH 6.5) containing 2 mM CaCl2 and 1% butanol were incubated with 40 µl of PBS solution containing viral dilution. Conversion to 4-MU was monitored every 2 min for 1 hr using a BMG Fluostar OPTIMA reader (excitation at 365  nm and emission determined at 450 nm). Second, using the selected dilution of virus, the assay was repeated with dilutions of MUNANA ranging from 2.5 to 100 µM. A standard curve with 800 to 25 pmoles/well of 4-MU (Sigma cat. # M1508) was used to extrapolate the molar conversion of MUNANA. KM was calculated using GraphPad Prism version 8.4.3.
 
-## Antigenic cartography
+### Antigenic cartography
 
 Antigenic cartography was performed as described by Smith et al., 2004, using the R CRAN package (https://CRAN.R-project.org/package=Racmacs). The antigenic map was optimised 5000 times and the best optimisation was kept (stress value = 1366.47). Uncertainty was measured by bootstrapping 1000 repeats with 100 optimisations per repeat.
 
-## Association study
+### Association study
 
 For the association analysis, under the assumption of homogeneous genetic relatedness among the selected H3N2 virus strains, a simple linear regression model for mutation-trait association analysis was fitted to the data for each H6N2 separately. The significance values were calculated by comparing IC50 values of sera that were classified into two groups according to the presence or absence of variation in the amino acid of reference Tex12 sequence.
 
-## Correlations with distances from the NA catalytic pocket
+### Correlations with distances from the NA catalytic pocket
 
 Tau values were determined by correlating distances with significance values obtained from the association analysis or the importance scores obtained from machine learning. A similar method was described by Meyer and Wilke to define geometrical constraints of HA evolution (Meyer and Wilke, 2015). Briefly, the relative distances of each amino acids to the 98 variable residues present in our N2 pnael were calculated based on the structure of A/Perth/2009 (H3N2) NA (PDB: 6BR6) (Hadházi et al., 2018). The distances were then correlated with the significance values that were obtained in the association analysis, or the importance scores obtained in the machine learning. Correlation coefficients were visualised on the structure of N2 NA derived from pandemic A/RI/5+/1957 H2N2 virus (PDB: 4H53) (Vavricka et al., 2013) using Chimera 1.14.
 
-## RF algorithm
+### RF algorithm
 
-The RF algorithm was adapted from Yao et al., 2017. Briefly, the non-conserved positions in the multiple sequence alignment of N2 head domain amino acid sequences of all tested N2s were selected. The feature matrix (X) was created by assessing matches/mismatches on each non-conserved position for each pair of N2 head domain amino acid sequences as:X=X1X2…XmV1V201…1⋮⋮⋮…⋮V1Vn10…1⋮⋮⋮…⋮Vn−1Vn10…1
+The RF algorithm was adapted from Yao et al., 2017. Briefly, the non-conserved positions in the multiple sequence alignment of N2 head domain amino acid sequences of all tested N2s were selected. The feature matrix (X) was created by assessing matches/mismatches on each non-conserved position for each pair of N2 head domain amino acid sequences as:
 
-where Xi represents the non-conserved positions in the multiple sequence alignment, m is the number of non-conserved positions (102 in total), Vi represents the N2 head domain sequence for each tested NA n is the number of tested sera (43 in total), 0 represents a match, 1 represents a mismatch in the alignment.
+$$
+X=X_{1}X_{2}…X_{m}V_{1}V_{2}01…1⋮⋮⋮…⋮V_{1}V_{n}10…1⋮⋮⋮…⋮V_{n−1}V_{n}10…1
+$$
 
-The response vector (Y) is composed of the antigenic distances for each pair of tested sera. These antigenic distances were determined based on NAI, similar to the method used to determine HI-based immunogenic distances that was described by Cai et al. In summary, the distances between sera were calculated as 1n∑t=1nǀdt,i-di,tǀ , which represent average distances between two serum samples among all tested H6N2s (Cai et al., 2012). We applied the RF function from the randomForest package in R to construct the model. We set the bootstrapping (tree) number to 1500 and the number of features to 25 for each tree. Accuracy was determined as the RMSE, calculated using the RMSE function from the yardstick package in R.
+where $X_{i}$ represents the non-conserved positions in the multiple sequence alignment, m is the number of non-conserved positions (102 in total), Vi represents the N2 head domain sequence for each tested NA n is the number of tested sera (43 in total), 0 represents a match, 1 represents a mismatch in the alignment.
 
-Additionally, predicted antigenic distances of the out-of-bag samples were compared to the observed distances by fitting a linear model and calculating the R2 value. To calculate the importance of each feature (Xi), the following metrics were calculated using the measure importance function of the randomForestExplainer package in R:
+The response vector (Y) is composed of the antigenic distances for each pair of tested sera. These antigenic distances were determined based on NAI, similar to the method used to determine HI-based immunogenic distances that was described by Cai et al. In summary, the distances between sera were calculated as $\frac{1}{n}\sum_{t=1}^{n}ǀdt,i-di,tǀ$ , which represent average distances between two serum samples among all tested H6N2s (Cai et al., 2012). We applied the RF function from the randomForest package in R to construct the model. We set the bootstrapping (tree) number to 1500 and the number of features to 25 for each tree. Accuracy was determined as the RMSE, calculated using the RMSE function from the yardstick package in R.
+
+Additionally, predicted antigenic distances of the out-of-bag samples were compared to the observed distances by fitting a linear model and calculating the $R^{2}$ value. To calculate the importance of each feature ($X_{i}$), the following metrics were calculated using the measure importance function of the randomForestExplainer package in R:
 
 The data and code used for the generation of the RF model is available at https://github.com/SaelensLAB/RF, copy archived at SaelensLAB, 2024.
 

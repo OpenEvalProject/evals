@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.37412.001 The loss of previously adaptive traits is typically linked to relaxation in selection, yet the molecular steps leading to such repeated losses are rarely known. Molecular studies of loss have tended to focus on gene sequences alone, but overlooking other aspects of protein expression might underestimate phenotypic diversity. Insights based almost solely on opsin gene evolution, for instance, have made mammalian color vision a textbook example of phenotypic loss. We address this gap by investigating retention and loss of opsin genes, transcripts, and proteins across ecologically diverse noctilionoid bats. We find multiple, independent losses of short-wave-sensitive opsins. Mismatches between putatively functional DNA sequences, mRNA transcripts, and proteins implicate transcriptional and post-transcriptional processes in the ongoing loss of S-opsins in some noctilionoid bats. Our results provide a snapshot of evolution in progress during phenotypic trait loss, and suggest vertebrate visual phenotypes cannot always be predicted from genotypes alone.
+The loss of previously adaptive traits is typically linked to relaxation in selection, yet the molecular steps leading to such repeated losses are rarely known. Molecular studies of loss have tended to focus on gene sequences alone, but overlooking other aspects of protein expression might underestimate phenotypic diversity. Insights based almost solely on opsin gene evolution, for instance, have made mammalian color vision a textbook example of phenotypic loss. We address this gap by investigating retention and loss of opsin genes, transcripts, and proteins across ecologically diverse noctilionoid bats. We find multiple, independent losses of short-wave-sensitive opsins. Mismatches between putatively functional DNA sequences, mRNA transcripts, and proteins implicate transcriptional and post-transcriptional processes in the ongoing loss of S-opsins in some noctilionoid bats. Our results provide a snapshot of evolution in progress during phenotypic trait loss, and suggest vertebrate visual phenotypes cannot always be predicted from genotypes alone.
 
 ## Introduction
 
@@ -50,9 +50,33 @@ To determine whether patterns of adaptations and loss in cone opsins (OPN1SW and
 
 Our comprehensive analyses of visual opsins that combined information from DNA, mRNA transcripts, and proteins across noctilionoid bats revealed unexpected variation, as well as evidence of extensive parallel losses in S-opsins that have arisen from failures at multiple stages of protein synthesis. First, we used immunohistochemistry to characterize and quantify S- and L-opsin proteins in the retinas of adult bats. Second, for a subset of these taxa, we performed RNA-Seq to assess the presence or absence of transcripts for OPN1SW, OPN1LW, and RHO, and estimated the mode and the strength of selection in coding sequences. Finally, we modeled the presence or absence of S-opsin intact ORF, mRNA or protein presence, as a function of dietary and roosting ecology.
 
-## Pervasive parallel losses of shortwave opsin pigments in neotropical bats
+### Pervasive parallel losses of shortwave opsin pigments in neotropical bats
 
 To assess the presence or absence of OPN1SW and OPN1LW proteins we applied immunohistochemistry (IHC) to whole, flat-mounted retinas of adult bats (neyes = 218, nindividuals = 187, nspecies = 56). While the presence of a given protein does not guarantee its functionality, here we interpret the detection of protein as indicating a functional cone in the absence of contradictory evidence. Since the absence of protein is difficult to assess, we applied quality control (see Materials and methods for the criteria to accept or reject a retina based on its condition or number of replicates). Surprisingly, OPN1SW was only detected in just over half of the species assayed (n = 32), including all members of the primarily frugivorous subfamily Stenodermatinae, which invariably retain their S-cones (Figure 1 and Figure 1—figure supplements 1 and 2). In contrast, OPN1SW was found to be absent in approximately one third of species assayed (n = 18), including representative species from five bat families. Thus, we not only find evidence of widespread loss of S-opsins within the noctilionoids but also find the first evidence of S-opsin loss in non-noctilionoid Yangochiroptera (Chilonatalus micropus, Eptesicus fuscus and Molossus molossus).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/37412/elife-37412-fig1-v2.jpg)
+
+**Figure 1.:** The composition of species diet follows Rojas et al. (2018), dietary types are indicated with the following symbols: invertebrates – moth, vertebrates – frog, fruit – fruit and nectar/pollen – flower. The species phylogeny follows Rojas et al. (2016) and Shi and Rabosky (2015). Vertical black bars, from left to right, indicate: (1) Noctilionoidea, (2) Phyllostomidae, (3) and Stenodermatinae. RNA-Seq data was generated to both infer the presence of an intact ORF (in combination with genomic and PCR sequence data) and to determine the presence of an expressed mRNA transcript. The presence of an intact ORF and mRNA transcript for RHO was verified across all transcriptomes. The presence/absence of a protein product for S- and L-opsins was assayed by IHC on flat mounted retinas. The presence of an intact ORF, mRNA, and protein are indicated by a filled color marker (OPN1SW – purple, OPN1LW – green and RHO – blue), and its absence by a white marker. Missing data (i.e. species for which we were unable to obtain tissue) are indicated with a grey marker with grey outline. Mismatches between intact ORFs and transcripts, or between transcripts and protein data are indicated by an inequality symbol. Note: OPN1SW protein assays for P. quadridens revealed polymorphisms within the sample, and we recorded positive OPN1SW assays in some P. poeyi individuals despite an apparent disrupted ORF. Finally, a grey marker with no outline indicates the failure of protein assay for some species represented by museum specimens (Tadarida brasiliensis, Phyllostomus hastatus, Sturnira tildae, Sturnira ludovici, Platyrrhinus dorsalis and Chiroderma villosum).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37412/elife-37412-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** L- and S-opsin presence was assayed by IHC on field samples for 26 species with antibodies recognizing each of L- and S-opsin. For each species, L- and S-cone labeling are shown. For species with both L- and S-cones, the merged column is the result of the merged images of L- and S-cones from the same individual. No evidence of dual cones was found. Scale bar: 100 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/37412/elife-37412-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** L- and S-opsin presence was assayed by IHC on museum samples for 29 species with antibodies recognizing each of L- and S-opsin. For each species, L- and S-cone labeling are shown. For species with both L- and S-cones, the merged column is the result of the merged images of L- and S-cones from the same individual. No evidence of dual cones was found. Scale bar: 100 μm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/37412/elife-37412-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** For OPN1SW, the putative alternative start codon is indicated by the square box. Missing data is indicated by ‘X’. conserved amino acids by ‘.’, and the terminal STOP codon by ‘*’.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/37412/elife-37412-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Missing data is indicated by ‘X’. conserved amino acids by ‘.’, and the terminal STOP codon by ‘*’.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/37412/elife-37412-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** For some of these samples, some fresh specimens that have been assayed are shown, demonstrating the consistency of the staining between field and museum specimens. For each species, L- and S-cone labeling are represented by the following colors: L-opsins – green and S-opsins – purple. Scale bar: 100 μm.
 
 To test whether a lack of signal corresponds to a loss of opsin, we aligned the opsin gene sequences among species and confirmed that the epitope-binding site was relatively conserved and showed no correspondence with loss (Figure 1—figure supplement 3, Figure 1—figure supplement 4). For immunohistochemistry, five bat species had replicates that were both wild-caught and from museum collections and exhibited the same phenotype, highlighting the robustness of the experiments (Figure 1—figure supplement 5). We also verified absences using multiple replicates of slides from the same individuals, and, when available, from multiple individuals from the same species (with a minimum of two individuals; see Supplementary file 1). In one species, P. quadridens, we detected evidence of polymorphism in the presence of S-opsin cones among fresh specimens, with three of the 17 specimens lacking S-cones. Samples derived from museum specimens of six species had low signal-to-background ratios in OPN1SW protein labeling (e.g. opsin-specific staining was seemingly detected, but non-specific background staining was high, making specific staining difficult to distinguish from background), generating inconclusive results, and these specimens were therefore excluded from our models. In contrast to our OPN1SW results, we detected OPN1LW protein in all species examined (Figure 1 and Figure 1—figure supplements 1 and 2).
 
@@ -62,11 +86,11 @@ We then analyzed patterns of OPN1SW and OPN1LW protein localization among cells.
 
 **Figure 2.:** Density maps of L and S opsin cone topography in 14 noctilionoid bat species. For each species, a representative dissected flat-mounted retina is shown. Insets are representative IHC magnifications of flat mounted retinas immune-stained for either L- or S-opsins in the highlighted region. Dietary types are indicated with the following symbols: invertebrates – moth, vertebrates – frog, fruit – fruit and nectar/pollen – flower. Measured opsin densities (0–8000 cones/mm2) are represented by the following color scales: L-opsins – green and S-opsins – purple.
 
-## Multiple parallel losses in transcripts across taxa
+### Multiple parallel losses in transcripts across taxa
 
 To investigate the underlying molecular causes of the above-detected losses of OPN1SW, we began by sequencing total mRNA isolated from the eye tissue of 39 species, assembled the short-read data and used a BLAST approach to annotate visual pigments. We found evidence of at least partial OPN1SW mRNA transcripts in a total of 34 bat species; thus, expression was only absent in five of the species assayed. Absences of OPN1SW transcripts were phylogenetically widespread, and included divergent species from three families (Natalidae: Chilonatalus micropus; Mormoopidae: Mormoops blainvillei and Phyllostomidae: Macrotus waterhousii, Brachyphylla (nana) pumila and Lionycteris spurrelli) (see Figure 1 and Supplementary file 1). In addition to losses observed in C. micropus and M. blainvillei, the three phyllostomid species each belong to separate subfamilies, and therefore, likely represent independent losses of OPN1SW expression. In comparison, we were able to recover the complete RHO and OPN1LW transcript from all taxa assessed (n = 39; Figure 1).
 
-## Mismatches in opsin transcript and protein suggest alternate parallel failures of translation
+### Mismatches in opsin transcript and protein suggest alternate parallel failures of translation
 
 While IHC revealed pervasive loss of S-cones across our study sample, we only detected loss of the OPN1SW transcript in a few species. Comparison of our OPN1SW transcript and protein data revealed numerous conflicts in species-specific absences, with a total of nine lineages found to possess OPN1SW transcripts but lack OPN1SW protein (see Figures 1, 3 and 4). These species included Molossus molossus, Pteronotus parnellii, Desmodus rotundus, Trachops cirrhosus, Tonatia saurophila, Gardnerycteris crenulatum, Monophyllus redmani, Erophylla bombifrons, and Carollia brevicauda. This may also be the case in additional species, for example Tadarida brasiliensis, Eptesicus fuscus, Pteronotus davyi and Diaemus youngi, but we currently lack the complementary data to confirm this.
 
@@ -88,21 +112,120 @@ Among the four species lacking the OPN1SW transcript and protein, we found the O
 
 In the 17 species for which the S-opsin protein was detected and for which we were also able to test the presence of the transcript, we found a 1-to-1 correspondence in all but one case. The exception was Phyllonycteris poeyi, for which data from four individuals showed S-cone presence, yet the transcript of one other individual was inferred to be non-functional based on a four base-pair insertion (confirmed via PCR). We also note that within the OPN1SW sequences of most species examined, the ATG start codon was found to be three codons downstream relative to that of the human orthologue (Figure 1—figure supplement 2). In contrast to the mismatches between OPN1SW mRNA and OPN1SW protein, we found complete correlation between the presence of the transcript and protein for OPN1LW in these species.
 
-## Molecular evolution of opsin genes
+### Molecular evolution of opsin genes
 
 To gain further insights into the molecular evolution of opsins, we performed tests of divergent selection in alignments for each of the three opsin genes (OPN1SW, OPN1LW and RHO) among three types of lineages: (1) those with S-cones; (2) those without S-cones but with OPN1SW transcripts and an intact OPN1SW ORF; and (3) those without either S-cones or OPN1SW transcripts (see Figure 5—figure supplement 1). We found a significantly higher ω in lineages with a pseudogenized OPN1SW in both the OPN1SW gene (ωbackground = 0.13; ωOPN1SW.intact=0.24; ωOPN1SW.pseudo=0.78; χ2(2)=70.99, p=3.84e-16), and the OPN1LW gene (ωbackground = 0.08; ωOPN1SW1.intact=0.08; ωOPN1SW.pseudo=0.19; χ2(2)=9.18, p=0.01). In contrast, we found no differences in ω across the different lineages for RHO, indicating strong and negative selection in this gene (Table S2 in Supplementary file 2). To test the influence of diet on rates of molecular evolution, we compared ω for all three opsin genes between frugivorous and non-frugivorous lineages. We found no differences in rates for OPN1SW or OPN1LW, however background branches (non-frugivorous) had a significant and slightly higher ω for RHO (ωbackground = 0.04; ωfugivory= 0.01; χ2(1)=13.77, p=2.07e-4; Table S3 in Supplementary file 2).
 
-## Ecological correlates of opsin presence and density
+### Ecological correlates of opsin presence and density
 
 We compared the locations and densities of long-wavelength-sensitive cones (or L-cones expressing OPN1LW protein) and short-wavelength-sensitive (or S-cones expressing OPN1SW protein) in the whole, flat-mounted retinas of adult bats for 14 species for which we had sufficient specimen replicates (Table S4 in Supplementary file 2). We found photoreceptor density varied among examined species (Figure 2, Table S4 in Supplementary file 2), with mean cone densities ranging from 2500 to 7500 cones/mm2 for L-cones, and 327 to 5747 cones/mm2 for S-cones (Figure 2, Table S4 in Supplementary file 2). In every case, the density of S-cones was lower than that of L-cones. Densities of both cone types tended to be highest near the center of the retina in all species. Bat species with S-cones had significantly higher densities of L-cones, with the presence of S-cones increasing the ln-transformed density of L-cones by 43%, explaining on average ~24% of the variance in density between species (Table 1).
 
+**Table 1.**
+ Summary of Bayesian regression models of the presence of S-cones or the ln-transformed density of L-cones as a function of predictor variables.R2, variance explained by sample-wide factors; Σ, species-specific phylogenetic effect for species.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Formula</th>
+      <th>R2</th>
+      <th>Parameter</th>
+      <th>Median</th>
+      <th>2.5%</th>
+      <th>97.5%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Presencei ~ a +  b. fruit_prevalenti + Σ</td>
+      <td>0.503</td>
+      <td>intercept (a)</td>
+      <td>−1.10</td>
+      <td>−3.19</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>b</td>
+      <td>3.66</td>
+      <td>1.85</td>
+      <td>6.76</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Σ</td>
+      <td>1.94</td>
+      <td>0.02</td>
+      <td>8.64</td>
+    </tr>
+    <tr>
+      <td>ln(density)i ~ a +  b. fruit_prevalentj + Σj</td>
+      <td>0.000</td>
+      <td>intercept (a)</td>
+      <td>8.42</td>
+      <td>8.00</td>
+      <td>8.84</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>b</td>
+      <td>0.22</td>
+      <td>−0.21</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Σj</td>
+      <td>0.14</td>
+      <td>0.04</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <td>ln(density)i ~ a +  b. S-cones_presentj + Σj</td>
+      <td>0.240</td>
+      <td>intercept (a)</td>
+      <td>8.28</td>
+      <td>7.95</td>
+      <td>8.63</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>b</td>
+      <td>0.43</td>
+      <td>0.09</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Σj</td>
+      <td>0.07</td>
+      <td>0.000</td>
+      <td>0.51</td>
+    </tr>
+  </tbody>
+</table>
+
 We tested the influence of ecology on the presence of the OPN1SW ORF, mRNA, or S-cones using Bayesian hierarchical models in which the observations corresponded to species (OPN1SW ORF nspecies = nobservations = 45, mRNA nspecies = 39, nspecies = 50), and a phylogenetic structure of the data was included as a species-specific effect. Two types of predictor variables were analyzed: three variables for diet and one for roosting. Comparisons of the coefficients, which are all at the same scale because they are multipliers of the presence of a particular ecology, showed frugivory was the best factor for explaining the presence of S-cones (Figure 5, Tables S5-S7 in Supplementary file 2). The predominance of fruit in the diet increases the odds of having S-cones roughly 39 times, and explains about 50% of the between-species variance in the presence of the S-cone (Table S7 in Supplementary file 2, Figure 5).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/37412/elife-37412-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative IHC magnifications of flat mounted retinas immune-stained for both L and S opsin for four species representatives of the diversity of phenotypes observed. Fruit-based diet: Artibeus jamaicensis, pollen/nectar-based diet: Monophyllus redmani, and insect-based diet: Mormoops blainvillei and Pteronotus quadridens. (B) Violin-plots of the posterior estimates of the coefficients for the presence of an OPN1SW ORF, mRNA, or cone as a function of ecological covariates. The gray horizontal lines indicate a coefficient of 0, or no effect of the covariate on the response. The high-probability density estimates for all coefficients are given in Tables S5-S7, and for fruit in Table 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37412/elife-37412-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Tests for S-cone variation and diet were run for all three genes. The * indicates lineages absent from the OPNSW1 alignment. (A) Branch coding for species with variations S-cone presence. In the two-branch class test, black branches (S-cone present) were compared against teal branches (S-cone absent). In the three-branch class test, teal branches were subdivided between lineages in which OPN1SW is intact (solid teal branch) and lineages in which OPN1SW is a pseudogene or the mRNA was absent (dashed teal branch). (B) Branch coding for frugivorous (purple) v. non-frugivorous lineages and background branches (black).
 
 ## Discussion
 
 By studying opsin gene sequences, transcripts and proteins across a radiation of neotropical bats (suborder Yangochiroptera, superfamily Noctilionoidea), we discovered remarkable diversity in visual genotypes and phenotypes, including parallel loss of function in OPN1SW and the associated S-cones. Although parallel losses have been reported before, the multiple steps involved in functional loss were hitherto unsuspected. We evaluate both the diversity of paths to acquiring a similar phenotype, and the ecological covariates that may explain evolution in this system.
 
-## Complex independent routes of phenotypic loss
+### Complex independent routes of phenotypic loss
 
 Across our study taxa, we documented molecular signatures consistent with as many as 17 instances of parallel loss in S-opsins, and equated these with a minimum of three putative routes leading to the failure of the formation of the S-opsin cones (Figures 1, 3 and 4). First, we found evidence of multiple independent instances of pseudogenization, associated with either absent or fragmentary mRNA transcripts. Second, we found evidence of an apparently intact gene sequence that did not result in a mRNA transcript. Finally, we recovered putatively intact OPN1SW transcripts that did not result in the corresponding S-cone protein, which in some species appears to arise from aberrant isoforms.
 
@@ -114,13 +237,13 @@ The most widely detected form of parallel loss of S-opsins, seen in six species,
 
 Although the causal mutations or mechanisms underpinning losses of function in OPN1SW are currently not known, the observed absence of expression with putatively intact ORFs in some species, alongside the converse condition in D. rotundus, strongly indicates independent routes. Similar diversity is seen in the Mormoopidae in which we detected a disrupted ORF and no OPN1SW mRNA expression in the Mormoops lineage, but an intact ORF and mRNA expression in the Pteronotus lineages, as well as evidence of S-cones in some Pteronotus species. Given that the Mormoops and Pteronotus lineages diverged ~30 million years ago, and the taxa sampled within the Pteronotus lineages diverged ~16 million years ago (Pavan and Marroig, 2017), these patterns do not support a disruption in the common ancestor of Mormoopidae as this would have to be followed by different trajectories that led to complete gene loss in one lineage, and partial retained function in the other. The alternative scenario in which each of these cases of loss involved the same mechanism seems highly unlikely given that it would have had to have taken place independently at least four times within the family, with each of the sampled taxa from our study being at a different stage of the gene loss process.
 
-## Differing degree of retention of opsins
+### Differing degree of retention of opsins
 
 In strong contrast to the results from OPN1SW, data from proteins and transcripts revealed complete retention of OPN1LW across our study species. Such extreme differences in the conservation of color vision genes have previously been reported in other vertebrates (e.g. Zhao et al., 2009a and Zhao et al., 2009b). Our IHC assays also revealed little evidence of co-localization of both proteins, which is consistent with cone-specific roles. This contrasts with a previous study of two noctilionoid bat species that found that almost all L-cones expressed some S-opsin (Müller et al., 2009), although this discrepancy could have arisen from methodological differences. To document fluorescence, the previous study used epifluorescence microscopy, while our study used confocal microscopy. Through its generation of serial optical sections, confocal microscopy typically provides better resolution for co-localization studies. We also found that bat species with S-opsin cones tend to have more L-opsin cones, consistent with both types of cones serving a common functional role.
 
 We also found that S-cone retention varied among conspecifics. In Pteronotus quadridens, three of 17 individuals were found to lack S-cones. This heterogeneity could indicate the ongoing degradation of protein synthesis. Indeed, allelic variation has been reported to contribute to opsin variation in diurnal lemurs (Jacobs et al., 2017) and has previously been detected in OPN1SW in Pteronotus mesoamericanus (Wu et al., 2018).
 
-## Ecological determinants and agents of selection
+### Ecological determinants and agents of selection
 
 Alongside parallel losses of shortwave-sensitive opsins in some noctilionoids lineages, we found strong conservation of S-cones, OPN1SW transcription, and protein-coding sequences in around 20 of the species studied. Thus, S-cones appear to still play an important function in these bats. Although the pseudogenization of OPN1SW, or loss of transcription had both been previously explained by the use of caves as roosts (Gutierrez et al., 2018; Wu et al., 2018), our phylogenetic regressions estimated the coefficient for this factor to include 0 (Figure 5). Instead, we identified the predominance of fruit consumption as the single most powerful explanatory factor explaining the variation in S-cone presence across the clade, with a similarly positive but not statistically significant effect for OPN1SW transcription and protein-coding sequences. Surprisingly, the result for plant-visiting (which includes flower-visiting bats) was not similarly strong and no such result was found for insectivory or cave-roosting. Diet therefore appears to be the primary selective agent for maintaining S-opsin function. We also found that while some predominantly nectarivorous species from both independent nectar-feeding lineages, have lost their S-cones, others have retained them (e.g. Anoura geoffroyi). While the loss of S-opsins in flower visiting bats may seem maladaptive, behavioral assays have previously been used to infer that some nectarivorous phyllostomid species appear to be color blind, and thus may be able to utilize UV reflectance to locate flowers via an alternative rod-based mechanism (Winter et al., 2003). This suggests that either more than one strategy to locating flowers has evolved among New World leaf-nosed bats, or other non-visual cues are used (e.g. Gonzalez-Terrazas et al., 2016).
 
@@ -130,7 +253,7 @@ As expected once pseudogenization has occurred, the main difference in molecular
 
 Recent studies of color vision evolution in New World leaf nosed bats have begun to explore the complex picture of opsin gene loss in the context of selection and ecological factors (Gutierrez et al., 2018; Kries et al., 2018; Li et al., 2018; Wu et al., 2018). The detected pseudogenization of OPN1SW in infrared sensing vampire bats and in high-duty cycle (HDC) echolocating bats such as Pteronotus mesoamericanus (formerly P. parnellii mesoamericanus) have led researchers to invoke evolutionary sensory trade-offs as one factor behind the loss of color vision (Kries et al., 2018; Li et al., 2018; Wu et al., 2018). An additional loss was detected in Lonchophylla mordax (Kries et al., 2018), a nectar bat that roosts in caves, with the roosting preference taken to be driver of color vision loss in this species. In cases in which either no S-opsin losses were inferred in Yangochiroptera, or selection analyses were performed across both Old and New World species simultaneously (Gutierrez et al., 2018), it is not possible to interpret the results solely in the context of noctilionoids. Sensory trade-offs, foraging strategy and obligate cave roosting are hypotheses that have previously been applied to loss of S-opsins in Old World bat lineages (e.g. Zhao et al., 2009a), however these traits often co-vary within species so the signal may be difficult to disentangle. By allowing us to detect previously ‘hidden’ opsin phenotypes across noctilionoid species, our approach has allowed us to identify previously undetected ecological factors, that is, fruit consumption, as an explanatory variable of S-opsin retention. Furthermore, the discovery of loss of gene function in non-HDC Mormoopidae, e.g. Mormoops blainvillei and Pteronotus davyi, also call into question the sensory trade-off hypothesis within this family.
 
-## Study limitations and alternative interpretations
+### Study limitations and alternative interpretations
 
 The surprising diversity in S-opsin retention recorded in this study was seen across divergent species, congeners, and even conspecifics. Although such patterns could also arise from methodological issues, some of our findings appear consistent with emerging trends. For example, within Pteronotus and the Mormoopidae family as a whole, there is increasing evidence to support an extremely complex evolutionary history of S-opsins (Gutierrez et al., 2018; Simões et al., 2018; Wu et al., 2018). In comparison, methodological artifacts are less easy to rule out as causes of variation among Carollia spp. given that S-cone presence in two species was inferred from either recently collected field specimens, or a mixture of both field and museum specimens, while S-cone absence in a third species was based on museum specimens collected in 1968 and 1972.
 
@@ -140,7 +263,7 @@ We must also consider whether our results might arise from methodological artifa
 
 For several species, our transcriptomic analysis detected multiple OPN1SW mRNA transcripts variants, characterized by retained introns and missing exons. We are able to confirm the species-specific intronic sequences of several of the species due to recently available genomes and gDNA PCRs (Kries et al., 2018; Li et al., 2018; Tsagkogeorga et al., 2013; Wu et al., 2018). The observed retention of introns in OPN1SW mRNA as well as the expression of pseudogenized opsin mRNA are both supported by earlier studies (David-Gray et al., 2002; Schweikert et al., 2016); however, alternative scenarios for these findings could include gDNA contamination, sequencing of immature mRNA or low-level cross contamination resulting in the assembly of highly divergent transcripts. Finally, for most species our mRNA evidence is based on one individual. However, the lack of a clear relationship between RIN score or sequencing depth and presence of OPN1SW mRNA (data not shown), together with the presence of the two other visual opsins in all samples, suggests this should be sufficient.
 
-## Other studies of parallel loss and associated mechanisms
+### Other studies of parallel loss and associated mechanisms
 
 Our findings provide important insights into how parallel losses occur in response to diverse ecological demands, as well as how several alternative molecular routes may lead to the same phenotype. There are other examples of parallel loss from pelvic reduction in sticklebacks (via repeated changes in a Pitx1 enhancer), color and vision in Astyanax cavefish (via loss of function of Oca2), trichomes in Drosophila spp., and floral pigments in Iochrominae (Chan et al., 2010; Larter et al., 2018; McGregor et al., 2007; Protas et al., 2006), but few of these have examined as many species across as many steps of phenotype production. Our data and those from other recent studies on bat opsins associate independent losses of S-cones with diverse adaptations (e.g. shifts in diet, roosting ecology and sensory traits), and are therefore consistent with multiple, distinct ecological demands leading to the same phenotype. Hence, our findings are also consistent with the hypothesis that UV vision represents a genetic ‘hot spot’ of evolution (Hoekstra and Coyne, 2007; Martin and Orgogozo, 2013; Stern and Orgogozo, 2008), along an evolutionary line of least resistance (Schluter, 1996). Therefore, by documenting a range of molecular routes to functional degradation, this study supports the hypothesis that vision is a highly evolvable trait that repeatedly and rapidly changes in response to diverse selective demands.
 
@@ -148,11 +271,77 @@ In conclusion, our findings reveal that assessments of visual perception based p
 
 ## Materials and methods
 
-## Species sampling and tissue preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>sc-14363, goat anti-OPN1SW</td>
+      <td>Santa-Cruz Biotechnologies</td>
+      <td>RRID: AB_2158332</td>
+      <td>(1∶1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ab5405, rabbit anti-opsin red/green</td>
+      <td>Millipore Ibérica, Madrid</td>
+      <td>RRID: AB_177456</td>
+      <td>(1∶750)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-goat Alexa Fluor 568</td>
+      <td>Thermofisher</td>
+      <td>RRID:AB_2534104</td>
+      <td>(1∶500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-rabbit Alexa Fluor 647</td>
+      <td>Thermofisher</td>
+      <td>RRID: AB_10891079</td>
+      <td>(1∶500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>https://fiji.sc/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini kits</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qiagen DNeasy Blood and Tissue Kit</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Species sampling and tissue preparation
 
 We obtained eye tissue from 59 New World bat species, of which 49 were collected from the wild and 34 from the American Museum of Natural History (AMNH), with 24 species common to both sources (Supplementary file 1). Our sampling was designed to maximize taxonomic coverage and include as many replicates as possible within ethical and regulatory limits. Unlike lab animals such as mice or rats, most bat species have just one offspring per year (Wilkinson and South, 2002), limiting the rate of recovery from adult mortality. All wild bats were captured with traps set in forests and/or at cave entrances, were handled, and then euthanized by isoflurane overdose, under appropriate research and ethical permits (see Appendix 1).
 
-## RNA sequence analysis
+### RNA sequence analysis
 
 Intact eyes were placed in RNAlater and incubated at 4°C overnight and then frozen. Total RNA was isolated using Qiagen RNeasy Mini kits with the addition of DTT and homogenization using a Qiagen TissueLyser. Following QC, total RNA from each individual was used to construct a cDNA library using the Illumina TruSeq RNA v2 kit. Pooled libraries were sequenced (NextSeq 500). Eye transcriptomes were generated for 46 individuals (39 species) including biological replicates of Pteronotus parnellii (n = 4), Artibeus jamaicensis (n = 4) and Phyllops falcatus (n = 2). Raw reads were trimmed, and clean reads were assembled with Trinity v.2.2.0 (Grabherr et al., 2011) (see Appendix 1).
 
@@ -160,28 +349,28 @@ We tested for the presence of the three focal gene transcripts (RHO, OPN1SW and 
 
 Additionally, for each individual RNA dataset we manually aligned all assembled transcripts, that passed the tblastn step of the reciprocal blast for OPN1SW, together with individual exons and introns obtained from the Myotis lucifugus structural annotation downloaded from Ensembl. Finally, we obtained all OPN1SW DNA and mRNA sequences currently available for our study species from GenBank, produced by recently published studies or genomes (Gutierrez et al., 2018; Kries et al., 2018; Li et al., 2018; Wu et al., 2018; Zepeda Mendoza et al., 2018). This data was used to confirm either our mRNA assemblies or the intronic sequences, and also to infer ORF status for species in which we had protein data for but were not able to obtain tissue for RNA-seq (e.g. Eptesicus fuscus, Pteronotus davyi, Diaemus youngi, Phyllostomus discolor, Sturnira lilium)
 
-## Immunohistochemistry (IHC) and photoreceptor quantification
+### Immunohistochemistry (IHC) and photoreceptor quantification
 
-## IHC assays
+#### IHC assays
 
 Specimens for IHC were obtained from the wild (fresh) and from collections of the AMNH (preserved). Given the variability of the age of the preserved museum specimens, the initial fixation method is not always known. However, it is most likely they would have been initially fixed with formaldehyde/formalin and then stored in 70% ethanol. Fresh eyes were fixed overnight at 4°C in 4% paraformaldehyde (PFA) in phosphate-buffered saline (PBS), transferred into 1X PBS, and then stored in 1% PFA in 1X PBS at 4°C until further processing. Preserved eyes had been collected previously and stored in 70% ethanol at room temperature for varying lengths of time (see Supplementary file 1). Preserved eyes were rehydrated through an ethanol series (70% 20 min, 50% 20 min, 20% 20 min) in 1X PBS and then stored in 1% PFA at 4°C in 1X PBS. Prior to processing, retinas were dissected from eyeballs and flattened by making three or four radial incisions from the outside of the retina inwards, with the deepest cut in the nasal pole. Immunodetection was carried out following standard procedures described in Ortín-Martínez et al., 2014. Briefly, retinas were permeated with two washes in PBS 0.5% Triton X-100 (Tx) and frozen for 15 min at −70°C in 100% methanol. Retinas were then thawed at room temperature, rinsed twice in PBS-0.5%Tx and incubated overnight at 4°C in the appropriate mixture of primary antibodies diluted in blocking buffer (PBS, 2% normal donkey serum, 2%Tx). The next day, retinas were washed four times in PBS-0.5Tx and incubated for 2 hr at room temperature in secondary antibodies diluted in PBS-2%Tx. Finally, retinas were thoroughly washed four times in PBS-0.5%Tx and, after a last rinse in PBS, mounted scleral side up on slides in anti-fading solution (Prolong Gold Antifade, Thermofisher). For each species, IHC was performed on at least three retinas from two individuals (for details see Supplementary file 1).
 
-## IHC - antibodies and working dilutions
+### IHC - antibodies and working dilutions
 
 The following primary antibodies were used: goat anti-OPN1SW, 1∶1000 (RRID: AB_2158332, sc-14363, Santa-Cruz Biotechnologies, Heidelberg, Germany; detects S-opsin protein) and rabbit anti-opsin red/green, 1∶750 (RRID: AB_177456, ab5405, Millipore Ibérica, Madrid, Spain; detects L-opsin protein). Sc-14363 is an affinity-purified goat polyclonal antibody raised against a 20-amino-acid synthetic peptide mapping within amino acids 1 to 50 of human blue-sensitive opsin, and AB5405 was raised in rabbit against the last 42 amino acids of the C-terminus of recombinant human red/green opsin (Gaillard et al., 2009). These antibodies have been used successfully in many groups, including rodents, artiodactyls, bats, and birds (e.g. Gaillard et al., 2009, Müller et al., 2007 and Nießner et al., 2016). The following secondary antibodies were used at a 1:500 dilution: donkey anti-goat Alexa Fluor 568 (RRID: AB_2534104) and donkey anti-rabbit Alexa Fluor 647 (RRID: AB_10891079) (Thermofisher). In addition, we created amino acid alignments of the peptide regions thought to correspond to the antibody epitopes across the bat species studied to assess sequence variation.
 
-## Quality control of retinal IHC
+### Quality control of retinal IHC
 
 We used a strong quality control protocol to ensure that we could interpret an absence of labelling as a true loss of S-opsin protein. Given the variable age and preservation of museum specimens, we evaluated the anatomical preservation of the retina during dissection and excluded specimens (data not shown) if the retina was: (1) attached to the crystalline lens, poorly preserved, impossible to dissect/damaged, (2) highly fragile, poorly preserved, disintegrated/damaged upon dissection, and (3) intact or preserved in large pieces but exhibited shrinkage and/or an orange color characteristic of tissue degradation. When necessary, we also slightly modified the IHC protocol for some museum samples. Specifically, since museum samples where already permeabilized by their storage in ethanol, we reduced the number of PBS-0.5%Tx washes and removed the methanol permeabilization step at −70C. With these quality-control measures in place, and given the consistency of the detection of our chosen antibodies across all bats and other mammals (Müller et al., 2009; Müller et al., 2007; Ortín-Martínez et al., 2014), and the number of replicates and individuals we examined, we are confident in our interpretation that no labeling indicate a true loss of the respective cone type. In addition, we created amino acid alignments of the peptide regions thought to correspond to the antibody epitopes across the bat species studied to gain a measure of the sequence variation at these points.
 
-## IHC - photoreceptor quantification
+### IHC - photoreceptor quantification
 
 Flat-mounted retinas were photographed using a 20X objective on a confocal microscope (LSM710; Zeiss Microscopy). 564 and 633 lasers were used to excited Alexa 568 and Alexa 647 dyes, labelling S- and L- opsins, respectively. Each entire retina was completely imaged using 512 × 512 pixel tiles. For each retina, each tile was then Z-stacked and automatically counted using a 3D object counter plugin using Fiji (ImageJ). The accuracy of this automatic approach was verified by manually counting three biological replicates of five bat species, by two different people. For each retina quantified, the density was calculated for each tile and then averaged for each individual (total count was average over three individuals) and for each species (by averaging the average of the three individuals). The spatial distribution of L- and S-cone density was visualized for the following 14 species: Artibeus jamaicensis, Artibeus phaeotis, Carollia sowelli, Sturnira lilium, Monophyllus redmani, Erophylla sezekorni, Glossophaga soricina, Brachyphylla nana pumila, Desmodus rotundus, Pteronotus quadridens, Mormoops blainvillei, Macrotus waterhousii, Gardnerycteris crenulatum and Phyllops falcatus (see Figure 2, Table S2 in Supplementary file 2).
 
-## Opsin gene evolution
+### Opsin gene evolution
 
 We used aligned sequences from the transcriptomes of 38 species together with those from six noctilionoid genomes (Zepeda Mendoza et al., 2018) to estimate rates of molecular evolution of visual opsin genes (OPN1SW, OPN1LW, and RHO) in focal bats. First, we tested for divergent selection modes among species that had S-opsin cones, lacked the S-opsin cones but had an intact mRNA sequence, and those that lacked the S-opsin cones but either did not have OPN1SW transcripts or had a pseudogenized OPN1SW sequence (Figure 5—figure supplement 1) using the Branch Model 2 of codeml in PAML 4.8a (Yang, 2007). Second, we applied the same approach to test divergent selection modes between frugivorous and non-frugivorous bat species (Figure 5—figure supplement 1; gene alignments have been submitted to DRYAD http://dx.doi.org/10.5061/dryad.456569k).
 
-## Ecological correlates of cone presence and density
+### Ecological correlates of cone presence and density
 
 To determine whether cone phenotypes are explained by dietary specialization, we applied the hierarchical Bayesian approach implemented in the R packages MCMCglmm and mulTree (Guillerme and Healy, 2014; Hadfield, 2010), using a sample from the posterior distribution of phylogenies of New World noctilionoids grafted onto the phylogeny of bats (Rojas et al., 2016; Shi and Rabosky, 2015). We modeled S-cone presence with species as observations as function of diet represented by four variables (nspecies = nobservations = 50). Since all predictor variables correspond to the presence or absence of a given diet or roosting habit, the coefficients of the resulting models were used to compare the strength of the association between the OPN1SW genotype or phenotype and the ecological covariate. Since this modeling approach neither tests against a null hypothesis of no effect, nor assumes the point estimates –in this case the mans by ecological group– are stationary, there is no requirement to adjust for multiple comparisons (Gelman et al., 2012). Using the predictor variable from the best model for presence/absence of S-opsin cones, or the presence of S-cones as a factor, we then repeated this approach to explain L-cone density across individuals within species (nspecies = 14, nobservations = 33, see Supplementary Information). To normalize the response data (density), we transformed by taking the natural logarithm of the cone density estimate. These analyses took advantage of the hierarchical structure of observations of density replicates clustered within species, with estimates of variance between species (corresponding to the phylogenetic regression), and residual variance remaining between observations. Given this data design, the estimate of the mean density per-group (i.e. frugivory/non, or presence/absence of S-cones) accounts for both between and within species variance. The R code for all regression models is available from DRYAD http://dx.doi.org/10.5061/dryad.456569k

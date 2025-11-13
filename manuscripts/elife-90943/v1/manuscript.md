@@ -16,21 +16,21 @@
 
 ### Affiliations
 
-1. https://ror.org/04byxyr05 Pregnancy Research Branch, Division of Obstetrics and Maternal-Fetal Medicine, Division of Intramural Research, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health, US Department of Health and Human Services (NICHD/NIH/DHHS) Bethesda United States
-2. https://ror.org/01070mq45 Department of Obstetrics and Gynecology, Wayne State University School of Medicine Detroit United States
-3. https://ror.org/01070mq45 Department of Physiology, Wayne State University School of Medicine Detroit United States
-4. https://ror.org/00jmfr291 Department of Obstetrics and Gynecology, University of Michigan Ann Arbor United States
-5. https://ror.org/05hs6h993 Department of Epidemiology and Biostatistics, Michigan State University East Lansing United States
-6. https://ror.org/01070mq45 Department of Computer Science, Wayne State University College of Engineering Detroit United States
-7. https://ror.org/01070mq45 Center for Molecular Medicine and Genetics, Wayne State University Detroit United States
-8. https://ror.org/04teye511 Division of Obstetrics and Gynecology, Faculty of Medicine, Pontificia Universidad Católica de Chile Santiago Chile
-9. https://ror.org/01070mq45 Department of Biochemistry, Microbiology and Immunology, Wayne State University School of Medicine Detroit United States
+1. Pregnancy Research Branch, Division of Obstetrics and Maternal-Fetal Medicine, Division of Intramural Research, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health, US Department of Health and Human Services (NICHD/NIH/DHHS) Bethesda United States ([ROR:04byxyr05](https://ror.org/04byxyr05))
+2. Department of Obstetrics and Gynecology, Wayne State University School of Medicine Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))
+3. Department of Physiology, Wayne State University School of Medicine Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))
+4. Department of Obstetrics and Gynecology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+5. Department of Epidemiology and Biostatistics, Michigan State University East Lansing United States ([ROR:05hs6h993](https://ror.org/05hs6h993))
+6. Department of Computer Science, Wayne State University College of Engineering Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))
+7. Center for Molecular Medicine and Genetics, Wayne State University Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))
+8. Division of Obstetrics and Gynecology, Faculty of Medicine, Pontificia Universidad Católica de Chile Santiago Chile ([ROR:04teye511](https://ror.org/04teye511))
+9. Department of Biochemistry, Microbiology and Immunology, Wayne State University School of Medicine Detroit United States ([ROR:01070mq45](https://ror.org/01070mq45))
 
 † Corresponding author
 
 ## Abstract
 
-Preterm birth is the leading cause of neonatal morbidity and mortality worldwide. Most cases of preterm birth occur spontaneously and result from preterm labor with intact (spontaneous preterm labor [sPTL]) or ruptured (preterm prelabor rupture of membranes [PPROM]) membranes. The prediction of spontaneous preterm birth (sPTB) remains underpowered due to its syndromic nature and the dearth of independent analyses of the vaginal host immune response. Thus, we conducted the largest longitudinal investigation targeting vaginal immune mediators, referred to herein as the immunoproteome, in a population at high risk for sPTB. Vaginal swabs were collected across gestation from pregnant women who ultimately underwent term birth, sPTL, or PPROM. Cytokines, chemokines, growth factors, and antimicrobial peptides in the samples were quantified via specific and sensitive immunoassays. Predictive models were constructed from immune mediator concentrations. Throughout uncomplicated gestation, the vaginal immunoproteome harbors a cytokine network with a homeostatic profile. Yet, the vaginal immunoproteome is skewed toward a pro-inflammatory state in pregnant women who ultimately experience sPTL and PPROM. Such an inflammatory profile includes increased monocyte chemoattractants, cytokines indicative of macrophage and T-cell activation, and reduced antimicrobial proteins/peptides. The vaginal immunoproteome has improved predictive value over maternal characteristics alone for identifying women at risk for early (<34 weeks) sPTB. The vaginal immunoproteome undergoes homeostatic changes throughout gestation and deviations from this shift are associated with sPTB. Furthermore, the vaginal immunoproteome can be leveraged as a potential biomarker for early sPTB, a subset of sPTB associated with extremely adverse neonatal outcomes. This research was conducted by the Perinatology Research Branch, Division of Obstetrics and Maternal-Fetal Medicine, Division of Intramural Research, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health, U.S. Department of Health and Human Services (NICHD/NIH/DHHS) under contract HHSN275201300006C. ALT, KRT, and NGL were supported by the Wayne State University Perinatal Initiative in Maternal, Perinatal and Child Health.
+Background:Preterm birth is the leading cause of neonatal morbidity and mortality worldwide. Most cases of preterm birth occur spontaneously and result from preterm labor with intact (spontaneous preterm labor [sPTL]) or ruptured (preterm prelabor rupture of membranes [PPROM]) membranes. The prediction of spontaneous preterm birth (sPTB) remains underpowered due to its syndromic nature and the dearth of independent analyses of the vaginal host immune response. Thus, we conducted the largest longitudinal investigation targeting vaginal immune mediators, referred to herein as the immunoproteome, in a population at high risk for sPTB.Methods:Vaginal swabs were collected across gestation from pregnant women who ultimately underwent term birth, sPTL, or PPROM. Cytokines, chemokines, growth factors, and antimicrobial peptides in the samples were quantified via specific and sensitive immunoassays. Predictive models were constructed from immune mediator concentrations.Results:Throughout uncomplicated gestation, the vaginal immunoproteome harbors a cytokine network with a homeostatic profile. Yet, the vaginal immunoproteome is skewed toward a pro-inflammatory state in pregnant women who ultimately experience sPTL and PPROM. Such an inflammatory profile includes increased monocyte chemoattractants, cytokines indicative of macrophage and T-cell activation, and reduced antimicrobial proteins/peptides. The vaginal immunoproteome has improved predictive value over maternal characteristics alone for identifying women at risk for early (<34 weeks) sPTB.Conclusions:The vaginal immunoproteome undergoes homeostatic changes throughout gestation and deviations from this shift are associated with sPTB. Furthermore, the vaginal immunoproteome can be leveraged as a potential biomarker for early sPTB, a subset of sPTB associated with extremely adverse neonatal outcomes.Funding:This research was conducted by the Perinatology Research Branch, Division of Obstetrics and Maternal-Fetal Medicine, Division of Intramural Research, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health, U.S. Department of Health and Human Services (NICHD/NIH/DHHS) under contract HHSN275201300006C. ALT, KRT, and NGL were supported by the Wayne State University Perinatal Initiative in Maternal, Perinatal and Child Health.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ Herein, we conducted the largest assessment, based on the study’s scale, longi
 
 ## Results
 
-## Characteristics of the study population
+### Characteristics of the study population
 
 This study represents the largest (N = 739 women, n = 2819 samples) and most comprehensive (31 immune mediators) profiling of the soluble immune response in vaginal fluid throughout well-characterized pregnancies that culminated in the delivery of a term neonate (controls) or those that resulted in sPTB (sPTL and PPROM cases) (Figure 1A). Specifically, we enrolled pregnant women from whom vaginal swabs were collected at different points throughout gestation. Patients were followed until delivery, after which we selected women who underwent sPTL or PPROM with delivery before 37 weeks of gestation (preterm birth) and women with a normal term delivery as controls (matched by gestational age at sampling at a 2:1 ratio). All patients had a singleton pregnancy without fetal anomalies and had at least three vaginal samples available. Patients were classified into three study groups according to pregnancy outcome and diagnosis: (i) women who delivered at term (494 patients, 1907 samples); (ii) women who underwent sPTL (140 patients, 521 samples); and (iii) women who experienced PPROM (105 patients, 391 samples) (Figure 1B and C). By design, gestational age at sampling was similar among the study groups (Figure 1C). The clinical characteristics of the study population are shown in Table 1. As expected (Goldenberg et al., 2008), the prevalence of sPTL or PPROM was higher among women with a history of sPTB. Of note, this study addressed a high-risk population primarily composed of African-American women with an average body mass index (BMI) of 28.7 kg/m2. Hence, the current study represents the largest survey of the vaginal immunoproteome in a population at high risk for sPTB.
 
@@ -50,15 +50,749 @@ This study represents the largest (N = 739 women, n = 2819 samples) and most com
 
 **Figure 1.:** (A) Representative diagram showing the collection of vaginal swabs throughout gestation from women who underwent uncomplicated term birth (control; N = 494 subjects, n = 1907 swabs), spontaneous preterm labor with intact membranes (sPTL; N = 140, n = 521), or preterm prelabor rupture of membranes (PPROM; N = 105, n = 391) to quantify the concentrations of cytokines, chemokines, and other immune mediators in the cervico-vaginal fluid by immunoassay. (B) Plots showing the distribution of swabs collected throughout gestation (weeks) for each study group. Gray dots represent gestational ages when vaginal swabs were taken, and green triangles show the gestational age at delivery. (C) Violin plots showing sample frequency across gestational age (weeks) for each study group.
 
-## The vaginal immunoproteome is tightly regulated during normal gestation
+**Table 1.**
+ Demographics and clinical characteristics of the study groups.Demographics and clinical information are presented as a median (with interquartile ranges) or as proportions (n/N).Differences between study groups and the control group were assessed by the Mann–Whitney U test for continuous data or the Fisher’s exact test for categorical data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Term control(n = 494)</th>
+      <th colspan="4">Spontaneous preterm birth (n = 245)</th>
+    </tr>
+    <tr>
+      <th>sPTL (n = 140)</th>
+      <th>p</th>
+      <th>PPROM (n = 105)</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Maternal age (years)</td>
+      <td>24 (21–27)</td>
+      <td>23.5 (21-27)</td>
+      <td>0.37</td>
+      <td>25 (22–30)</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2)</td>
+      <td>27.5 (22.7–33.8)</td>
+      <td>26.4 (22.5–31.7)</td>
+      <td>0.05</td>
+      <td>28.2 (23.2–33.3)</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <td>Maternal race</td>
+      <td></td>
+      <td></td>
+      <td>0.09</td>
+      <td></td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>African American</td>
+      <td>94.5% (467/494)</td>
+      <td>90% (126/140)</td>
+      <td></td>
+      <td>98.1% (103/105)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>1.8% (9/494)</td>
+      <td>5% (7/140)</td>
+      <td></td>
+      <td>1% (1/105)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3.7 (18/494)</td>
+      <td>5% (7/140)</td>
+      <td></td>
+      <td>1% (1/105)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nulliparity</td>
+      <td>20.4% (101/494)</td>
+      <td>12.9% (18/140)</td>
+      <td>0.02</td>
+      <td>19% (20/105)</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <td>History of preterm birth</td>
+      <td>11.1% (55/494)</td>
+      <td>39.3% (55/140)</td>
+      <td>&lt;0.001</td>
+      <td>32.4% (34/105)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Gestational age at delivery (weeks)</td>
+      <td>39.6 (39–40.4)</td>
+      <td>35.7 (33.7–36.6)</td>
+      <td>&lt;0.001</td>
+      <td>35 (32.6–35.9)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Birthweight (g)</td>
+      <td>3300 (3090–3593)</td>
+      <td>2363 (1995–2748)</td>
+      <td>&lt;0.001</td>
+      <td>2235 (1760–2575)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Maternal Inflammatory response</td>
+      <td>0% (0/494)</td>
+      <td>21.1% (28/133)*</td>
+      <td>&lt;0.001</td>
+      <td>22.4% (22/98)*</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Fetal inflammatory response</td>
+      <td>4.3% (21/494)</td>
+      <td>20.3% (27/133)*</td>
+      <td>&lt;0.001</td>
+      <td>28.5% (28/98)*</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Early sPTB (&lt;34 weeks)</td>
+      <td>–</td>
+      <td>27.1% (38/140)</td>
+      <td></td>
+      <td>36.2% (38/105)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Late sPTB (34–36+6) weeks</td>
+      <td>–</td>
+      <td>72.9% (102/140)</td>
+      <td></td>
+      <td>63.8% (67/105)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_BMI = body mass index; sPTL = spontaneous preterm labor; sPTB = spontaneous preterm birth; PPROM = preterm prelabor rupture of membranes.*Seven missing data._
+
+### The vaginal immunoproteome is tightly regulated during normal gestation
 
 First, by profiling 31 immune mediators, including two antimicrobial molecules, we established the gestational age-dependent changes in the vaginal immunoproteome during normal gestation. Given that the immunobiology of preterm birth is syndromic in nature (Romero et al., 2014a; Gomez-Lopez et al., 2022a), in this study we classified the immune mediators measured in the vaginal fluid into six categories based on their established role and/or their potential cellular source: pro-inflammatory cytokines (IL-6, IL-1β, IL-16, CXCL8, TNF, IFN-γ, IL-1α, and LT-α), chemoattractants of monocytes (herein referred to as monocyte chemokines; CCL2, CCL3, and CCL4), macrophage cytokines (IL-12/IL-23p40, IL-12p70, and IL-15), T-cell cytokines and chemokines (IL-2, IL-4, IL-17A, IL-10, IL-13, IL-5, CXCL10, and CCL17), antimicrobial peptides (AMPs; β-defensin-2 and secretory leukocyte peptidase inhibitor [SLPI]), and growth factors (VEGF and GM-CSF). All immune mediators, except for CCL11, CCL13, CCL22, and CCL26, were present at detectable levels in the majority of our study samples (Table 2) and were included in our analyses. Importantly, one-third of these mediators showed an association with gestational age (Figure 2; Figure 2—source data 1 and 2), whereas the remaining were unaffected (Figure 2—figure supplements 1 and 2 , Figure 2—source data 1 and 2 ). Specifically, the vaginal concentrations of IL-1β (Figure 2), IL-1α (Figure 2B), CXCL8 (Figure 2C), IL-2 (Figure 2D), IL-12/IL-23p40 (Figure 2E), GM-CSF (Figure 2F), and β-defensin-2 (Figure 2G) declined as gestation progressed. On the other hand, CCL17 (Figure 2H), CXCL10 (Figure 2I), and VEGF (Figure 2J) increased with gestational age. A tendency for increased concentrations of SLPI with advancing gestational age was also observed (Figure 2K). These data indicate that the vaginal immunoproteome undergoes specific changes during normal pregnancy, which involve a decline in pro-inflammatory mediators, an increase in T cell-associated chemokines, and the tight regulation of growth factors and defensins. Together, these findings suggest that the vaginal cytokine network in normal pregnancy is modestly modulated during gestation, which prompted us to investigate whether a deviation from these changes occurs in women who ultimately undergo sPTB.
 
-## The vaginal immunoproteome of women with sPTB has a pro-inflammatory profile
+![Figure 2.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig2-v1.jpg)
+
+**Figure 2.:** Linear mixed effects modeling was used to determine changes in (A) IL-1β, (B) IL-1α, (C) CXCL8, (D) IL-2, (E) IL-12/IL-23p40, (F) GM-CSF, (G) β-defensin-2, (H) CCL17, (I) CXCL10, (J) VEGF, and (K) SLPI throughout pregnancies, resulting in term birth. Immune mediator labels denote category: pro-inflammatory cytokines (red), T-cell cytokine response (blue), macrophage cytokine response (purple), chemokines (green), growth factors (orange), and antimicrobial peptides (AMPs) (teal). Each black circle represents the protein concentration of one sample. Blue lines represent the linear fit, with gray shaded areas representing the 95% confidence interval of the mean. Scatterplot trends were estimated using generalized additive models with spline transformations of gestational age. *p<0.05 and q<0.1, **p<0.01 and q<0.1, ***p<0.001 and q<0.1, ap<0.05 and q>0.1. Correlation coefficients are shown above each figure as rho-values (ρ).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Linear mixed effects modeling was used to determine changes in (A) IL-6, (B) CXCL8 (HA, high affinity), (C) IL-16, (D) LT-α, (E) TNF, (F) IFN-γ, (G) CCL2, (H) CCL3, (I) CCL4, (J) IL-12p70, and (K) IL-15 throughout pregnancy. Each black circle represents the protein concentration of one sample. Blue lines represent the linear fit, with gray shaded areas representing the 95% confidence interval of the mean. Scatterplot trends were estimated using generalized additive models with spline transformations of gestational age. Immune mediator labels denote their immunobiology category: pro-inflammatory cytokines (red), chemokines (green), and macrophage cytokine response (purple). NS, nonsignificant.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Linear mixed effects modeling was used to determine changes in (A) IL-4, (B) IL-5, (C) IL-10, (D) IL-13, (E) IL-17A, and (F) IL-7 throughout pregnancy. Each black circle represents the protein concentration of one sample. Blue lines represent the linear fit, with gray shaded areas representing the 95% confidence interval. Scatterplot trends were estimated using generalized additive models with spline transformations of gestational age. Immune mediator labels denote their immunobiology category: T-cell cytokine response (blue) and growth factors (orange). NS, nonsignificant.
+
+**Table 2.**
+ Immune mediator assay sensitivity and proportion outside of range of detection.Vaginal immune mediator proportions below the limit of detection and greater than 2 * 99th percentile. Chemokines listed in red were excluded from analyses due to a majority of samples being below the limit of detection.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Immune mediator</th>
+      <th rowspan="2">Sensitivity of detection</th>
+      <th colspan="4">Control</th>
+      <th colspan="4">sPTL</th>
+      <th colspan="4">PPROM</th>
+    </tr>
+    <tr>
+      <th>Below limit</th>
+      <th>Below limit %</th>
+      <th>Above limit</th>
+      <th>Above limit %</th>
+      <th>Below limit</th>
+      <th>Below limit %</th>
+      <th>Above limit</th>
+      <th>Above limit %</th>
+      <th>Below limit</th>
+      <th>Below limit %</th>
+      <th>Above limit</th>
+      <th>Above limit %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IFN-γ</td>
+      <td>0.368  pg/mL</td>
+      <td>515.00</td>
+      <td>27.01</td>
+      <td>7.00</td>
+      <td>0.37</td>
+      <td>103.00</td>
+      <td>19.77</td>
+      <td>1.00</td>
+      <td>0.19</td>
+      <td>83.00</td>
+      <td>21.23</td>
+      <td>1.00</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>IL-1β</td>
+      <td>0.152  pg/mL</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.05</td>
+      <td>4.00</td>
+      <td>0.77</td>
+      <td>1.00</td>
+      <td>0.19</td>
+      <td>1.00</td>
+      <td>0.26</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>IL-2</td>
+      <td>0.219  pg/mL</td>
+      <td>29.00</td>
+      <td>1.52</td>
+      <td>2.00</td>
+      <td>0.10</td>
+      <td>10.00</td>
+      <td>1.92</td>
+      <td>1.00</td>
+      <td>0.19</td>
+      <td>6.00</td>
+      <td>1.53</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>IL-4</td>
+      <td>0.028  pg/mL</td>
+      <td>147.00</td>
+      <td>7.71</td>
+      <td>2.00</td>
+      <td>0.10</td>
+      <td>30.00</td>
+      <td>5.76</td>
+      <td>2.00</td>
+      <td>0.38</td>
+      <td>30.00</td>
+      <td>7.67</td>
+      <td>2.00</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>IL-6</td>
+      <td>0.113  pg/mL</td>
+      <td>43.00</td>
+      <td>2.25</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>10.00</td>
+      <td>1.92</td>
+      <td>2.00</td>
+      <td>0.38</td>
+      <td>8.00</td>
+      <td>2.05</td>
+      <td>3.00</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>CXCL8</td>
+      <td>0.101  pg/mL</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>4.00</td>
+      <td>0.77</td>
+      <td>1.00</td>
+      <td>0.19</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>IL-10</td>
+      <td>0.054  pg/mL</td>
+      <td>34.00</td>
+      <td>1.78</td>
+      <td>2.00</td>
+      <td>0.10</td>
+      <td>10.00</td>
+      <td>1.92</td>
+      <td>3.00</td>
+      <td>0.58</td>
+      <td>5.00</td>
+      <td>1.28</td>
+      <td>2.00</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>IL-12p70</td>
+      <td>0.084  pg/mL</td>
+      <td>178.00</td>
+      <td>9.33</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>35.00</td>
+      <td>6.72</td>
+      <td>1.00</td>
+      <td>0.19</td>
+      <td>42.00</td>
+      <td>10.74</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>IL-13</td>
+      <td>0.119  pg/mL</td>
+      <td>55.00</td>
+      <td>2.88</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>9.00</td>
+      <td>1.73</td>
+      <td>2.00</td>
+      <td>0.38</td>
+      <td>16.00</td>
+      <td>4.09</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>TNF</td>
+      <td>0.108  pg/mL</td>
+      <td>94.00</td>
+      <td>4.93</td>
+      <td>2.00</td>
+      <td>0.10</td>
+      <td>14.00</td>
+      <td>2.69</td>
+      <td>4.00</td>
+      <td>0.77</td>
+      <td>23.00</td>
+      <td>5.88</td>
+      <td>2.00</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>GM-CSF</td>
+      <td>0.200  pg/mL</td>
+      <td>176.00</td>
+      <td>9.23</td>
+      <td>4.00</td>
+      <td>0.21</td>
+      <td>46.00</td>
+      <td>8.83</td>
+      <td>2.00</td>
+      <td>0.38</td>
+      <td>30.00</td>
+      <td>7.67</td>
+      <td>2.00</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>IL-1α</td>
+      <td>0.089  pg/mL</td>
+      <td>15.00</td>
+      <td>0.79</td>
+      <td>8.00</td>
+      <td>0.42</td>
+      <td>14.00</td>
+      <td>2.69</td>
+      <td>1.00</td>
+      <td>0.19</td>
+      <td>5.00</td>
+      <td>1.28</td>
+      <td>3.00</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>IL-5</td>
+      <td>0.162  pg/mL</td>
+      <td>324.00</td>
+      <td>16.99</td>
+      <td>4.00</td>
+      <td>0.21</td>
+      <td>102.00</td>
+      <td>19.58</td>
+      <td>3.00</td>
+      <td>0.58</td>
+      <td>82.00</td>
+      <td>20.97</td>
+      <td>1.00</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>IL-7</td>
+      <td>0.124  pg/mL</td>
+      <td>772.00</td>
+      <td>40.48</td>
+      <td>3.00</td>
+      <td>0.16</td>
+      <td>190.00</td>
+      <td>36.47</td>
+      <td>4.00</td>
+      <td>0.77</td>
+      <td>141.00</td>
+      <td>36.06</td>
+      <td>1.00</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>IL-12/IL-23p40</td>
+      <td>0.408  pg/mL</td>
+      <td>211.00</td>
+      <td>11.06</td>
+      <td>8.00</td>
+      <td>0.42</td>
+      <td>48.00</td>
+      <td>9.21</td>
+      <td>1.00</td>
+      <td>0.19</td>
+      <td>34.00</td>
+      <td>8.70</td>
+      <td>2.00</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>IL-15</td>
+      <td>0.111  pg/mL</td>
+      <td>707.00</td>
+      <td>37.07</td>
+      <td>4.00</td>
+      <td>0.21</td>
+      <td>159.00</td>
+      <td>30.52</td>
+      <td>1.00</td>
+      <td>0.19</td>
+      <td>142.00</td>
+      <td>36.32</td>
+      <td>6.00</td>
+      <td>1.53</td>
+    </tr>
+    <tr>
+      <td>IL-16</td>
+      <td>0.478  pg/mL</td>
+      <td>123.00</td>
+      <td>6.45</td>
+      <td>4.00</td>
+      <td>0.21</td>
+      <td>31.00</td>
+      <td>5.95</td>
+      <td>1.00</td>
+      <td>0.19</td>
+      <td>26.00</td>
+      <td>6.65</td>
+      <td>1.00</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>IL-17A</td>
+      <td>0.381  pg/mL</td>
+      <td>247.00</td>
+      <td>12.95</td>
+      <td>10.00</td>
+      <td>0.52</td>
+      <td>42.00</td>
+      <td>8.06</td>
+      <td>4.00</td>
+      <td>0.77</td>
+      <td>46.00</td>
+      <td>11.76</td>
+      <td>4.00</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <td>LT-α</td>
+      <td>0.095  pg/mL</td>
+      <td>957.00</td>
+      <td>50.18</td>
+      <td>4.00</td>
+      <td>0.21</td>
+      <td>236.00</td>
+      <td>45.30</td>
+      <td>3.00</td>
+      <td>0.58</td>
+      <td>201.00</td>
+      <td>51.41</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>VEGF</td>
+      <td>0.264  pg/mL</td>
+      <td>7.00</td>
+      <td>0.37</td>
+      <td>2.00</td>
+      <td>0.10</td>
+      <td>9.00</td>
+      <td>1.73</td>
+      <td>2.00</td>
+      <td>0.38</td>
+      <td>12.00</td>
+      <td>3.07</td>
+      <td>1.00</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>CCL11/Eotaxin</td>
+      <td>0.480 pg/mL</td>
+      <td>1504.00</td>
+      <td>78.87</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>379.00</td>
+      <td>72.74</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>294.00</td>
+      <td>75.19</td>
+      <td>1.00</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>CCL26/Eotaxin-3</td>
+      <td>1.099 pg/mL</td>
+      <td>1480.00</td>
+      <td>77.61</td>
+      <td>7.00</td>
+      <td>0.37</td>
+      <td>394.00</td>
+      <td>75.62</td>
+      <td>3.00</td>
+      <td>0.58</td>
+      <td>309.00</td>
+      <td>79.03</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>CXCL8 (HA)</td>
+      <td>22.575 pg/mL</td>
+      <td>84.00</td>
+      <td>4.40</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>11.00</td>
+      <td>2.11</td>
+      <td>1.00</td>
+      <td>0.19</td>
+      <td>23.00</td>
+      <td>5.88</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>CXCL10</td>
+      <td>0.119 pg/mL</td>
+      <td>4.00</td>
+      <td>0.21</td>
+      <td>2.00</td>
+      <td>0.10</td>
+      <td>2.00</td>
+      <td>0.38</td>
+      <td>2.00</td>
+      <td>0.38</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>CCL2</td>
+      <td>0.072 pg/mL</td>
+      <td>10.00</td>
+      <td>0.52</td>
+      <td>2.00</td>
+      <td>0.10</td>
+      <td>4.00</td>
+      <td>0.77</td>
+      <td>2.00</td>
+      <td>0.38</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>4.00</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <td>CCL13/MCP-4</td>
+      <td>0.230 pg/mL</td>
+      <td>1693.00</td>
+      <td>88.78</td>
+      <td>2.00</td>
+      <td>0.10</td>
+      <td>438.00</td>
+      <td>84.07</td>
+      <td>7.00</td>
+      <td>1.34</td>
+      <td>332.00</td>
+      <td>84.91</td>
+      <td>5.00</td>
+      <td>1.28</td>
+    </tr>
+    <tr>
+      <td>CCL22/MDC</td>
+      <td>1.740 pg/mL</td>
+      <td>985.00</td>
+      <td>51.65</td>
+      <td>3.00</td>
+      <td>0.16</td>
+      <td>245.00</td>
+      <td>47.02</td>
+      <td>2.00</td>
+      <td>0.38</td>
+      <td>197.00</td>
+      <td>50.38</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>CCL3</td>
+      <td>0.319 pg/mL</td>
+      <td>718.00</td>
+      <td>37.65</td>
+      <td>2.00</td>
+      <td>0.10</td>
+      <td>134.00</td>
+      <td>25.72</td>
+      <td>2.00</td>
+      <td>0.38</td>
+      <td>116.00</td>
+      <td>29.67</td>
+      <td>2.00</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>CCL4</td>
+      <td>0.226 pg/mL</td>
+      <td>221.00</td>
+      <td>11.59</td>
+      <td>2.00</td>
+      <td>0.10</td>
+      <td>33.00</td>
+      <td>6.33</td>
+      <td>2.00</td>
+      <td>0.38</td>
+      <td>32.00</td>
+      <td>8.18</td>
+      <td>2.00</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>CCL17</td>
+      <td>0.375 pg/mL</td>
+      <td>192.00</td>
+      <td>10.07</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>45.00</td>
+      <td>8.64</td>
+      <td>2.00</td>
+      <td>0.38</td>
+      <td>38.00</td>
+      <td>9.72</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>SLPI</td>
+      <td>20.336  pg/mL</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>β-defensin-2</td>
+      <td>0.007 ng/mL</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+
+_sPTL = spontaneous preterm labor; PPROM = preterm prelabor rupture of membranes; HA = high affinity._
+
+### The vaginal immunoproteome of women with sPTB has a pro-inflammatory profile
 
 To interrogate whether alterations in the vaginal immunoproteome are observed in women destined to undergo sPTB, immune mediator data were quantified in vaginal swabs collected longitudinally from early to late gestation (in the interval of 8–37 weeks) from women who ultimately delivered term or preterm. Linear mixed effects modeling controlling for gestational age at sampling, maternal age, BMI, parity, and history of preterm birth was used to compare the concentrations of immune mediators between cases and controls (Figure 3, Figure 4, Figure 5, Figure 6, Figure 3—figure supplement 1, Figure 4—figure supplement 1, Figure 5—figure supplement 1, Figure 3—source data 1, Figure 4—source data 1, Figure 5—source data 1). Using the same immune mediator categories defined previously, we first looked at the pro-inflammatory cytokines IL-6, IL-1β, IL-16, CXCL8, TNF, IFN-γ, IL-1α, and LT-α. Notably, two pro-inflammatory cytokines that have been considered master regulators of parturition, IL-6 (Romero et al., 2006a; Robertson et al., 2010; Gomez‐Lopez et al., 2016) and IL-1β (Romero et al., 1989; Romero et al., 1992a), were increased in women who ultimately experienced sPTB compared to those who delivered at term (Figure 3A and B). Next, we divided cases of sPTB into sPTL and PPROM, as prior studies have suggested that there are distinct mechanisms of disease for PPROM and sPTL (Goldenberg et al., 2008; Romero et al., 2014a). We observed that IL-6 and IL-1β were increased in both sPTB subsets compared to women who delivered at term (Figure 3A and B). As early and late preterm birth have differing pathophysiology (Goldenberg et al., 2000), and adverse outcomes of prematurity are worsened with decreasing gestational age at delivery (Blencowe et al., 2013; Ely and Driscoll, 2020), we further subdivided cases of sPTL and PPROM into early (<34 weeks) or late (34–36+6 weeks) according to gestational age at delivery (Martin and Osterman, 2018). While the increase in all and late sPTL cases was consistent across all elevated pro-inflammatory cytokines, an increase in both all PPROM and exclusively early PPROM groups was noted only for IL-6 and IL-1β (Figure 3A and B). Likewise, IL-16, a pro-inflammatory mediator (Chupp et al., 1998) reported in the female reproductive tract (FRT) (Athayde et al., 2000; Florova et al., 2021), was also increased in late sPTL and early PPROM (Figure 3C). The vaginal concentrations of CXCL8 (high-affinity, HA), TNF, and IFN-γ, immune mediators previously reported in the vaginal fluid with conflicting results (Imseis et al., 1997; Wennerholm et al., 1998; Donders et al., 2003; Kalinka et al., 2005; Chandiramani et al., 2012; Kacerovsky et al., 2015; Jung et al., 2016; Yoo et al., 2017; Short et al., 2018; Mikołajczyk et al., 2020; Short et al., 2021; Chan et al., 2022; Grewal et al., 2022), were also increased in women with sPTB compared to term controls (Figure 3D–F). Yet, such elevation appeared to be driven by late sPTL cases (Figure 3D–F). The vaginal concentrations of CXCL8 (low-affinity, LA), IL-1α, and LT-α were unchanged with sPTB (Figure 3—figure supplement 1A–C). Taken together, these results suggest that some sPTB cases are characterized by a pro-inflammatory milieu in the vaginal ecosystem, which may contribute to the pathophysiology of sPTB; yet, the nature of this inflammatory profile is distinct between clinically defined subsets, highlighting the importance of subcategorization of sPTB for obstetrical disease.
 
-## The vaginal immunoproteome of women with sPTB harbors a stereotypical monocyte/macrophage response
+![Figure 3.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig3-v1.jpg)
+
+**Figure 3.:** Linear mixed effects modeling adjusted for gestational age at sampling, body mass index (BMI), parity, and history of preterm birth was used to compare the concentrations of proteins between groups. Violin plots showing the concentrations of (A) IL-6, (B) IL-1β, (C) IL-16, (D) CXCL8 (HA), (E) TNF, and (F) IFN-γ. Violin plots for early spontaneous preterm labor with intact membranes (sPTL) and early preterm prelabor rupture of membranes (PPROM) contain data <34 weeks, all other violin plots contain data <37 weeks. Light blue = controls, red = all sPTB, orange = sPTL, purple = PPROM, light orange = early sPTL (gestational age at delivery <34 weeks), dark orange = late sPTL (gestational age at delivery 34–36+6 weeks), light purple = early PPROM (gestational age at delivery <34 weeks), dark purple = late PPROM (gestational age at delivery 34–36+6 weeks). *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Linear mixed effects modeling adjusted for gestational age at sampling, body mass index (BMI), parity, and history of preterm birth was used to compare the concentrations of proteins between groups. Violin plots showing the concentrations of (A) CXCL8, (B) IL-1α, and (C) LT-α. Violin plots for early spontaneous preterm labor with intact membranes (sPTL) and early preterm prelabor rupture of membranes (PPROM) contain data <34 weeks, all other violin plots contain data <37 weeks. Light blue = controls, red = all spontaneous preterm births (sPTB), orange = sPTL, purple = PPROM, light orange = early sPTL (gestational age at delivery <34 weeks), dark orange = late sPTL (gestational age at delivery 34–36+6 weeks), light purple = early PPROM (gestational age at delivery <34 weeks), dark purple = late PPROM (gestational age at delivery 34–36+6 weeks).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig4-v1.jpg)
+
+**Figure 4.:** (A) Linear mixed effects modeling adjusted for gestational age at sampling, body mass index (BMI), parity, and history of preterm birth was used to compare the concentrations of proteins between groups. Violin plots showing the concentrations of (B) CCL2, (C) CCL3, and (D) CCL4. Violin plots for early spontaneous preterm labor with intact membranes (sPTL) and early preterm prelabor rupture of membranes (PPROM) contain data <34 weeks, all other violin plots contain data <37 weeks. Light blue = controls, red = all sPTB, orange = sPTL, purple = PPROM, light orange = early sPTL (gestational age at delivery <34 weeks), dark orange = late sPTL (gestational age at delivery 34–36+6 weeks), light purple = early PPROM (gestational age at delivery <34 weeks), dark purple = late PPROM (gestational age at delivery 34–36+6 weeks). *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Linear mixed effects modeling adjusted for gestational age at sampling, body mass index (BMI), parity, and history of preterm birth was used to compare the concentrations of proteins between groups. Violin plots showing the concentrations of (B) IL-12p70, (C) IL-12/IL-23p40, and (D) IL-15. Violin plots for early spontaneous preterm labor with intact membranes (sPTL) and early preterm prelabor rupture of membranes (PPROM) contain data <34 weeks, all other violin plots contain data <37 weeks. Light blue = controls, red = all sPTB, orange = sPTL, purple = PPROM, light orange = early sPTL (gestational age at delivery <34 weeks), dark orange = late sPTL (gestational age at delivery 34–36+6 weeks), light purple = early PPROM (gestational age at delivery <34 weeks), dark purple = late PPROM (gestational age at delivery 34–36+6 weeks). *p<0.05, **p<0.01, ap>0.05 and q<0.1.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig5-v1.jpg)
+
+**Figure 5.:** (A) Linear mixed effects modeling adjusted for gestational age at sampling, body mass index (BMI), parity, and history of preterm birth was used to compare the concentrations of proteins between groups. Violin plots showing the concentrations of (B) IL-2, (C) IL-10, (D) IL-4, and (E) IL-17A. Violin plots for early spontaneous preterm labor with intact membranes (sPTL) and early preterm prelabor rupture of membranes (PPROM) contain data <34 weeks, all other violin plots contain data <37 weeks. Light blue = controls, red = all sPTB, orange = sPTL, purple = PPROM, light orange = early sPTL (gestational age at delivery <34 weeks), dark orange = late sPTL (gestational age at delivery 34–36+6 weeks), light purple = early PPROM (gestational age at delivery <34 weeks), dark purple = late PPROM (gestational age at delivery 34–36+6 weeks). *p<0.05, **p<0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Linear mixed effects modeling adjusted for gestational age at sampling, body mass index (BMI), parity, and history of preterm birth was used to compare the concentrations of proteins between groups. Violin plots showing the concentrations of (A) IL-5, (B) IL-13, (C) CXCL10, (D) CCL17, and (E) IL-7. Violin plots for early spontaneous preterm labor with intact membranes (sPTL) and early preterm prelabor rupture of membranes (PPROM) contain data <34 weeks, all other violin plots contain data <37 weeks. Light blue = controls, red = all spontaneous preterm births (sPTB), orange = sPTL, purple = PPROM, light orange = early sPTL (gestational age at delivery <34 weeks), dark orange = late sPTL (gestational age at delivery 34–36+6 weeks), light purple = early PPROM (gestational age at delivery <34 weeks), dark purple = late PPROM (gestational age at delivery 34–36+6 weeks). Immune mediator labels denote their immunobiology category: T-cell cytokine response (blue) and growth factors (orange).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig6-v1.jpg)
+
+**Figure 6.:** (A) Linear mixed effects modeling adjusted for gestational age at sampling, body mass index (BMI), parity, and history of preterm birth was used to compare the concentrations of proteins between groups. Immune mediator labels denote category: antimicrobial peptides (AMPs) (teal) and growth factors (orange). Violin plots showing the concentrations of (B) SLPI, (C) β-defensin-2, (D) GM-CSF, and (E) VEGF. Violin plots for early spontaneous preterm labor with intact membranes (sPTL) and early preterm prelabor rupture of membranes (PPROM) contain data <34 weeks, all other violin plots contain data <37 weeks. Light blue = controls, red = all sPTB, orange = sPTL, purple = PPROM, light orange = early sPTL (gestational age at delivery <34 weeks), dark orange = late sPTL (gestational age at delivery 34–36+6 weeks), light purple = early PPROM (gestational age at delivery <34 weeks), dark purple = late PPROM (gestational age at delivery 34–36+6 weeks). *p<0.05, **p<0.01, ***p<0.001, bp>0.05 and q<0.1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Correlation of changes in the concentrations of vaginal immune mediators observed in PPROM vs. control (y-axis; coefficient PPROM vs. control) and in sPTL vs. control (coefficient sPTL vs. control). Proteins are categorized into pro-inflammatory cytokines (red), T-cell cytokine response (blue), macrophage cytokine response (purple), chemokines (green), growth factors (orange), and antimicrobial peptides (AMPs) (teal).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Linear mixed effect modeling with an allowance for an interaction term between preterm birth subsets and gestational age at sampling was used to compare the trajectory of immune mediator concentrations across gestation in pregnancies resulting in black = term delivery, orange = spontaneous preterm labor with intact membranes (sPTL), purple = preterm prelabor rupture of membranes (PPROM). Modeling showed significant change in the trendline of sPTL and/or PPROM in (A) IL-1β, (B) IL-6, (C) VEGF, (D) CCL2, (E) CCL3, and (F) CCL4. Immune mediator labels denote their immunobiology category: pro-inflammatory cytokines (red), growth factors (orange), chemokines (green), and macrophage cytokine response (purple).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Linear mixed effect modeling with an allowance for an interaction term between preterm birth subsets and gestational age at sampling was used to compare the trajectory of immune mediator concentrations across gestation in pregnancies resulting in black = term delivery, orange = spontaneous preterm labor with intact membranes (sPTL), purple = preterm prelabor rupture of membranes (PPROM). Modeling showed significant change in the trendline of sPTL and/or PPROM in (A) IFNγ, (B) IL-10, (C) IL-12p70, (D) CXCL8, (E) IL-2, (F) IL-4 (G) β-defensin-2 (H) TNF, (I) IL-15, (J) IL-16, and (K) IL-17A. Immune mediator labels denote their immunobiology category: pro-inflammatory cytokines (red), T-cell cytokine response (blue), macrophage cytokine response (purple), and antimicrobial peptides (AMPs) (teal). NS, non-significant.
+
+### The vaginal immunoproteome of women with sPTB harbors a stereotypical monocyte/macrophage response
 
 The conventional sources of cytokines in an inflammatory response are monocytes and macrophages (Gordon and Taylor, 2005; van de Veerdonk and Netea, 2010; Guilliams et al., 2018). Therefore, we first quantified chemokines responsible for monocyte recruitment such as CCL2, CCL3, and CCL4 (Shi and Pamer, 2011; Robinson et al., 2021; Figure 4A). Interestingly, each of these chemokines followed the same pattern: these mediators were increased in women with sPTB compared to those who delivered at term (Figure 4B–D). Specifically, CCL2 and CCL3 were increased in women with late sPTL and those with early PPROM (Figure 4B and C), and CCL4 was increased in early and late sPTL as well as in early PPROM (Figure 4D).
 
@@ -66,11 +800,11 @@ As a follow-up to the above findings, we also quantified cytokines that are typi
 
 These data suggest that part of the pathophysiology of preterm birth may result in an increased recruitment of monocytes into the lower FRT due to elevated chemokines, a finding observed peripartum in mice (Timmons et al., 2009) and in humans (Osman, 2003). Similarly, an increase in pro-inflammatory cytokines in the vaginal milieu occurs, possibly contributing to monocyte infiltration and/or the activation of resident macrophages (Benjelloun et al., 2020), as indicated by an increase in macrophage-associated cytokines. Together with prior studies implicating activated macrophages in the pro-inflammatory milieu accompanying preterm labor and birth (Xu et al., 2016; Gomez-Lopez et al., 2021), our study further incriminates such an innate immune response in the pathophysiology of a subset of preterm births.
 
-## The vaginal immunoproteome of women with sPTB is enriched for T-cell mediators
+### The vaginal immunoproteome of women with sPTB is enriched for T-cell mediators
 
 Important components of mucosal immunity in the vagina are T cells (Benjelloun et al., 2020) and T-cell-associated mediators, such as IL-2 (Short et al., 2018; Gandhi et al., 2020; Florova et al., 2021), IL-4 (Short et al., 2018; Florova et al., 2021; Kumar et al., 2021), IL-17A (Florova et al., 2021), IL-10 (Ashford et al., 2018; Short et al., 2018; Florova et al., 2021), IL-13 (Short et al., 2018; Florova et al., 2021), IL-5 (Florova et al., 2021), CXCL10 (Florova et al., 2021), and CCL17 (Florova et al., 2021), the concentrations of which were determined in the current study (Figure 5A). The partial determination of such cytokines/chemokines has been previously reported in the vaginal fluid (Short et al., 2018; Ashford et al., 2018; Gandhi et al., 2020; Kumar et al., 2021); however, their combined evaluation across gestation had not been undertaken. The vaginal concentrations of IL-2 and IL-10 were increased in women with sPTB; specifically, in those with late sPTL, but not in women with PPROM (Figure 5B and C). In addition, the vaginal concentrations of IL-4 and IL-17A were increased in specific subsets of sPTB (late sPTL and early PPROM) (Figure 5D and E). However, the concentrations of IL-5, IL-13, CXCL10, and CCL17 did not differ between sPTB cases and controls (Figure 5—figure supplement 1A–D). These results suggest that certain T-cell-associated mediators are implicated in the pathogenesis of early PPROM and late sPTL. The finding of products from activated T cells expands on previous research implicating T-cell infiltration and increased markers of inflammation in the amniotic fluid of women experiencing PPROM before 34 weeks of gestation (Galaz et al., 2020). Indeed, maternal anti-fetal rejection (infiltration of lymphocytes, including T cells, in the placental tissues; Kim et al., 2015b) has been suggested as a mechanism of disease for late sPTB (Kim et al., 2010), which is consistent with the increase in T-cell-associated cytokines and chemokines observed in this study.
 
-## The vaginal immunoproteome of women with sPTB exhibits altered antimicrobial proteins and growth factors
+### The vaginal immunoproteome of women with sPTB exhibits altered antimicrobial proteins and growth factors
 
 Defensins are key players in vaginal host defense (Cole, 2006; Shimoya et al., 2006; Cole and Cole, 2008; Elovitz et al., 2019; Florova et al., 2021). Indeed, it was previously reported that reduced vaginal concentrations of β-defensin-2 were associated with sPTB (Elovitz et al., 2019). Therefore, we next determined the concentrations of two canonical vaginal defensins: SLPI (Thompson and Ohlsson, 1986) and β-defensin-2 (Harder et al., 1997; Ganz, 2003; Figure 6A). Notably, the vaginal concentrations of both SLPI and β-defensin-2 were decreased in early PPROM (Figure 6B and C). These results show that a specific subset of preterm births, early PPROM, is associated with reduced concentrations of antimicrobial proteins, indicating that a dampened or impaired antimicrobial response may be associated with its pathophysiology.
 
@@ -78,13 +812,25 @@ Besides cytokines, chemokines, and defensins, we also determined the vaginal con
 
 A sub-analysis was performed to evaluate the degree to which adjustment for maternal characteristics affected the immune mediators found significantly different with birth outcome in our model. We compared the results of the adjusted model to a model constructed after adjusting only for gestational age but not for maternal characteristics (Figure 6—source data 1). Notably, the lack of adjustment for maternal characteristics confirmed the significance of the immune mediators found in the adjusted model as well as four additional immune mediators, suggesting that adjustment for maternal characteristics provides a more stringent model. In addition, a correlation analysis was also performed between the changes in concentrations of vaginal analytes in sPTL vs. controls and PPROM vs. controls (Figure 6—figure supplement 1). Overall, the majority of analytes displayed consistent change between the two sPTB subsets, as demonstrated by positive correlation of fold changes (r = 0.87, p<0.0001). VEGF and β-defensin-2 showed the largest decrease in sPTL and PPROM compared to controls, whereas CCL3, CCL4, and IL-6 displayed the largest increase. Yet, specific immune mediators (CXCL10, SLPI, and LT-α) displayed differing directions of change between sPTL and PPROM. This finding indicates that sPTB cases share a common inflammatory profile; yet, subtle differences may allow the distinction of its subsets.
 
-## The trajectory of vaginal mediators across gestation differs with birth outcome
+### The trajectory of vaginal mediators across gestation differs with birth outcome
 
 Vaginal immune mediators that were shown to be distinct among birth outcome groups in models controlling for gestational age were analyzed again to determine whether the trends of change across gestation varied among the different birth outcomes. Linear mixed effects models with adjustment for all the same covariates as the original analyses, as well as an allowance for an interaction term between sPTB subsets and gestational age at sampling, were constructed to answer this question (Figure 6—figure supplements 2 and 3). IL-6, CCL2, CCL3, CCL4, and VEGF were shown to have a significant interaction between the disease outcome for sPTL and PPROM and for gestational age (Figure 6—figure supplement 2). Specifically, the trendline for IL-6, CCL2, CCL3, and CCL4 was more positive for the disease groups than in pregnancies resulting in term birth, whereas for VEGF the trendlines for the disease groups were more negative than that for the term birth group. Notably, IL-1β was the only immune mediator that had a significant interaction term (increased trend) for sPTL but not PPROM (Figure 6—figure supplement 2), whereas no mediators were significant for PPROM but not sPTL. These data further highlight the shared but subtly different mechanisms of disease underlying sPTL and PPROM.
 
-## The vaginal immunoproteome can be leveraged as a biomarker for early sPTB
+### The vaginal immunoproteome can be leveraged as a biomarker for early sPTB
 
 Up to this point, our data show that specific components of the vaginal immunoproteome are disrupted in women who ultimately undergo sPTB and that such disruption is distinct among different subsets of preterm birth. Therefore, as a proof of concept, we next evaluated whether the vaginal immunoproteome could serve to generate noninvasive biomarkers for preterm birth subsets with improved predictive value over maternal clinical and demographic information. Random forest modeling of the vaginal immunoproteome was used to establish a predictive tool for sPTB and its subtypes. First, using the last sample taken before 28 weeks of gestation, predictive models were created for sPTB subsets, resulting in delivery after 28 weeks: all sPTB cases (Figure 7A), all sPTL cases (Figure 7B), sPTL cases delivered before 34 weeks of gestation (sPTL <34 or early sPTL) (Figure 7C), all PPROM cases (Figure 7D), and PPROM cases delivered before 34 weeks of gestation (PPROM <34 or early PPROM) (Figure 7E). When considering the vaginal concentrations of cytokines, chemokines, growth factors, and defensins without including maternal characteristics (black line), the vaginal immunoproteome has the highest potential predictive value for early PPROM <34 (area under the curve [AUC] = 0.787) (Figure 7E), with the two most informative immune mediators for the prediction of early PPROM being VEGF and IL-1β. Importantly, limiting inclusion in our model to only the five most significant immunoproteins from a univariate analysis for early PPROM would have resulted in similar performance [AUC = 0.701 (0.6–0.802)]. Nonetheless, the combination of all analytes determined in the vaginal fluid resulted in a model with a lower predictive strength for early sPTL <34 (AUC = 0.637) (Figure 7C) compared to early PPROM. For early sPTL, concentrations of IL-1β, IL-16, and IL-13 were most informative. When maternal characteristics (maternal age, BMI, parity, and history of preterm birth) were included in the models with all vaginal analytes (red line), the prediction accuracy of models predicting sPTB, and the subsets of all sPTL cases and all PPROM cases, was improved (p<0.05 for all) (Figure 7A, B, and D). On the other hand, the prediction of early sPTL (Figure 7C) and early PPROM (Figure 7E) was not improved with the addition of maternal characteristics to the predictive model. Similar conclusions about the significance of the predictions were derived using the area under the precision recall curve (AUPR) instead of the AUC (Figure 7—source data 1), and by determining empirical confidence intervals from permutations rather than relying on the DeLong confidence intervals for the AUC displayed in Figure 7. To show that the vaginal immunoproteome is capturing variations distinct from maternal characteristics, we compared our models, including the vaginal immunoproteome, to models generated from maternal characteristics alone. Immune mediator data and maternal characteristics resulted in significantly improved prediction of PPROM <34 (DeLong test p<0.023) and led to higher point estimates for all other outcomes when using the last sample before 28 weeks (Figure 7).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig7-v1.jpg)
+
+**Figure 7.:** Random forest modeling including protein concentrations generated from the last swab before 28 weeks of gestation was used to generate models using the combination of all cytokines, chemokines, immune-related growth factors, and antimicrobial molecules in this study (black line), maternal characteristics (blue line), or the combination of all cytokines, chemokines, immune-related growth factors, and antimicrobial molecules in this study together with maternal characteristics (red line) for (A) all sPTB, (B) all spontaneous preterm labor with intact membranes (sPTL), (C) sPTL who delivered before 34 weeks of gestation, (D) all preterm prelabor rupture of membranes (PPROM), and (E) PPROM who delivered before 34 weeks of gestation. Area under the curve (AUC) values and 95% confidence intervals are given for each curve. P-values correspond to the comparisons between the curves of maternal characteristics alone and the curves of maternal characteristics together with all cytokines, chemokines, immune-related growth factors, and antimicrobial molecules within each study group.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The vaginal immunoproteome allows for the prediction of early sPTB. Random forest modeling including protein concentrations generated from the last swab before 24 weeks of gestation was used to generate models using the combination of all cytokines, chemokines, immune-related growth factors, and antimicrobial molecules in this study (black line), maternal characteristics (blue line), or the combination of all cytokines, chemokines, immune-related growth factors, and antimicrobial molecules in this study together with maternal characteristics (red line) for (A) all spontaneous preterm births (sPTB), (B) all sPTL, (C) sPTL who delivered before 30 weeks of gestation, (D) all PPROM, and (E) PPROM who delivered before 30 weeks of gestation. Area under the curve (AUC) values and 95% confidence intervals are given for each curve.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/90943/elife-90943-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** The vaginal immunoproteome allows for the prediction of early spontaneous preterm births (sPTB). Random forest modeling including protein concentrations generated from the last swab before 28 weeks of gestation and cervical length measured during this time period was used to generate models using the combination of all cytokines, chemokines, immune-related growth factors, and antimicrobial molecules in this study (black line), quantitative cervical length measurements (blue line), or the combination of all cytokines, chemokines, immune-related growth factors, and antimicrobial molecules in this study together with cervical length measurements (red line) for (A) all sPTB, (B) all spontaneous preterm labor with intact membranes (sPTL), (C) sPTL who delivered before 34 weeks of gestation, (D) all PPROM, and (E) PPROM who delivered before 34 weeks of gestation. Area under the curve (AUC) values and 95% confidence intervals are given for each curve.
 
 In an effort to determine whether sPTB can be predicted earlier in the second trimester, a new set of models was developed by using samples collected before 24 weeks of gestation to predict preterm birth after 24 weeks (Figure 7—figure supplement 1). Utilizing earlier data also allowed for the prediction of earlier sPTB, specifically for delivery before 30 weeks of gestation. When only considering cytokines, chemokines, growth factors, and defensins in the vaginal fluid (black line), an improved predictive value for sPTL <30 (AUC = 0.743) (Figure 7—figure supplement 1C) and a similar value for PPROM <30 (AUC = 0.755) (Figure 7—figure supplement 1E) were observed compared to predictive values for sPTL and PPROM <34 weeks. Similar to our models for preterm birth <34 weeks, the inclusion of maternal characteristics (red line) in predictive models generated from the samples collected before 24 weeks of gestation improved the prediction accuracy for sPTB, all sPTL cases, and all PPROM cases (p<0.05 for all) (Figure 7—figure supplement 1A, B and D), but not early sPTL or early PPROM (Figure 7—figure supplement 1C and E). Likewise, the combination of immunoproteomic data and maternal characteristics resulted in higher point estimates than maternal characteristics alone for all outcomes considered, and significantly increased prediction of PPROM <30 (DeLong test p<0.04), when using the last sample before 24 weeks (Figure 7—figure supplement 1E).
 
@@ -112,29 +858,29 @@ A limitation of the current report is that, despite our comprehensive survey of 
 
 The current study represents the largest longitudinal survey of the vaginal immunoproteome in a population at high risk for sPTB. We report that, throughout uncomplicated gestation, the vaginal immunoproteome harbors a cytokine network that represents a homeostatic profile similar to that observed in other body sites during the second phase of pregnancy. By contrast, the vaginal immunoproteome is skewed toward a pro-inflammatory state in women who ultimately undergo sPTL and PPROM. Such an inflammatory profile includes increased monocyte chemoattractants, cytokines associated with macrophage and T-cell activation, and the consistent reduction of antimicrobial proteins/peptides. Notably, our data show that the vaginal immunoproteome during the second trimester holds predictive value for PPROM before 30 weeks of gestation, indicating that the vaginal immune response can be leveraged as part of a noninvasive approach for the prediction of early sPTB, the leading cause of neonatal morbidity and mortality worldwide.
 
-## Resource availability
+### Resource availability
 
-## Lead contact
+#### Lead contact
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Nardhy Gomez-Lopez (nardhy@wustl.edu).
 
 ## Methods
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Human subjects, clinical specimens, and definitions
+#### Human subjects, clinical specimens, and definitions
 
 This was a retrospective longitudinal case–control study evaluating the associations between the vaginal immunoproteome across pregnancy and the incidence of sPTB (i.e., sPTL or PPROM resulting in delivery <37 weeks). Term controls were defined as women who delivered ≥37 weeks of gestation. Patients with twins, fetal malformations, or those with less than three vaginal fluid samples collected throughout pregnancy were excluded. All cases meeting these specific criteria with samples in the biobank were included in the study. Cases were matched, based on ethnicity and maternal age, with term controls at a ratio of 1:2, and samples between these groups were further matched by gestational age at sampling. Samples were collected longitudinally across gestation from each subject under direct visualization from the posterior vaginal fornix using a Dacron swab (Medical Packaging Corp, Camarillo, CA) and a BD ESwab (COPAN ITALIA, Brescia, Italy/Beckton Dickinson, Loveton Circle Sparks, MD). No samples were collected after presentation to the clinic with signs of labor or rupture of membranes to avoid samples being affected by amniotic fluid leakage and/or treatment. Vaginal swabs/supernatants were stored at –80°C until cytokine, chemokine, or other biomarker concentrations were assessed. The study was conducted at the Perinatology Research Branch, an intramural program of the Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health, U.S. Department of Health and Human Services, Wayne State University (Detroit, MI), and the Detroit Medical Center (Detroit, MI). The collection and use of human materials for research purposes were approved by the Institutional Review Boards of the National Institute of Child Health and Human Development and Wayne State University (#110605MP2F(RCR)). All participating women provided written informed consent prior to sample collection.
 
 Gestational age was determined by the last menstrual period and confirmed by ultrasound examination, or by ultrasound examination alone when the sonographic determination of gestational age was inconsistent with menstrual dating. sPTL was defined as the presence of regular uterine contractions with a frequency of at least two every 10  min and cervical changes between 20 and 36+6 weeks of gestation with intact membranes (as determined by a lack of amniotic fluid pooling in the vagina, negative ferning, or a negative nitrazine test). PPROM was defined as amniorrhexis confirmed by vaginal pooling, ferning, or a positive nitrazine test prior to the onset of labor before 37 weeks of gestation (Tricomi et al., 1966; Friedman and McElin, 1969; Bennett et al., 1993). This classification gave the following sample breakdown: (i) women who delivered at term (494 patients, 1907 samples); (ii) women who underwent sPTL (140 patients, 521 samples); and (iii) women who experienced PPROM (105 patients, 391 samples). All women included in the sPTL and PPROM groups delivered preterm (<37 weeks of gestation). All samples were collected prior to patients presenting with signs of labor or membrane rupture.
 
-## Method details
+### Method details
 
-## Placental histopathological inflammation
+#### Placental histopathological inflammation
 
 Placentas were examined histologically by perinatal pathologists blinded to clinical diagnoses and obstetrical outcomes according to standardized Perinatology Research Branch protocols (Kim et al., 2015a). Briefly, 3–9 sections of the placenta were examined, and at least one full-thickness section was taken from the center of the placenta; others were taken randomly from the placental disc. Acute inflammatory lesions of the placenta (maternal placental inflammatory response [defined as invasion of neutrophils into the chorioamniotic membranes] and fetal placental inflammatory response [acute lesions in the umbilical cord and/or chorionic plate, diagnosed by invasion of neutrophils into these tissues]) were diagnosed according to established criteria (Kim et al., 2015a; Redline, 2015).
 
-## Determination of immune mediator concentrations in vaginal fluid supernatants
+#### Determination of immune mediator concentrations in vaginal fluid supernatants
 
 All vaginal swabs were processed and were centrifuged for 10 min at 1300 × g and 4°C. Supernatants from Dacron swabs were stored at −80°C until the determination of cytokine/chemokine concentrations. The V-PLEX Pro-Inflammatory Panel 1 (human), Cytokine Panel 1 (human), and the Chemokine Panel 1 (human) immunoassays (Meso Scale Discovery, Rockville, MD) were used to measure the concentrations of IFN-γ, IL-1β, IL-2, IL-4, IL-6, IL-8, IL-10, IL-12p70, IL-13, and TNF (Pro-inflammatory Panel 1); or GM-CSF, IL-1α, IL-5, IL-7, IL-12/IL-23p40, IL-15, IL-16, IL-17A, LT-α, and VEGF (VEGF-A) (Cytokine Panel 1); or CCL11 (Eotaxin), CCL26 (Eotaxin-3), CXCL8 (IL-8 (HA)), CXCL10 (IP-10), CCL2 (MCP-1), CCL13 (MCP-4), CCL22 (MDC), CCL3 (MIP-1α), CCL4 (MIP-1β), and CCL17 (TARC) (Chemokine Panel 1) in the cervicovaginal fluid according to the manufacturer’s instructions. A MESO QuickPlex SQ 120 (Meso Scale Discovery) was used to read the plates and analyte concentrations were calculated with the Discovery Workbench 4.0 (Meso Scale Discovery). The sensitivities of the assays were 0.368 pg/mL (IFN-γ), 0.152 pg/mL (IL-1β), 0.219 pg/mL (IL-2), 0.028 pg/mL (IL-4), 0.113 pg/mL (IL-6), 0.101 pg/mL (IL-8), 0.054 pg/mL (IL-10), 0.084 pg/mL (IL-12p70), 0.119 pg/mL (IL-13), 0.108 pg/mL (TNF), 0.200 pg/mL (GM-CSF), 0.089 pg/mL (IL-1α), 0.162 pg/mL (IL-5), 0.124 pg/mL (IL-7), 0.408 pg/mL (IL-12/IL-23p40), 0.111 pg/mL (IL-15), 0.478 pg/mL (IL-16), 0.381 pg/mL (IL-17A), 0.095 pg/mL (LT-α), 0.264 pg/mL (VEGF), 0.480 pg/mL (CCL11/Eotaxin), 1.099 pg/mL (CCL26/Eotaxin-3), 22.575 pg/mL (CXCL8/IL-8 (HA)), 0.119 pg/mL (CXCL10/IP-10), 0.072 pg/mL (CCL2/MCP-1), 0.230 pg/mL (CCL13/MCP-4), 1.740 pg/mL (CCL22/MDC), 0.319 pg/mL (CCL3/MIP-1α), 0.226 pg/mL (CCL4/MIP-1β), and 0.375 pg/mL (CCL17/TARC).
 
@@ -142,6 +888,6 @@ BD Eswabs were utilized to determine the vaginal fluid supernatant concentration
 
 Vaginal fluid cytokine, chemokine, and other immune mediator concentrations were adjusted by total protein concentration, which were determined using the Pierce BCA Protein Assay Kit (Thermo Fisher Scientific, Rockford, IL), following the manufacturer’s instructions. All immunoassay kits were validated for vaginal swab determinations of the analytes.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Values below detection limit were imputed with 99% of the smallest detected value. Values larger than two times the 99th percentile were set to two times the 99th percentile. All analyses were performed in R (version 3.6.1; R Development Core Team, 2010). Plots were generated with ggplot2 (version 3.3.5) and ggpubr (version 0.4.0.). Changes in immunoprotein abundance (log2 thereof) with gestational age at sampling were assessed via linear mixed effects models (Bates and Machler, 2015) to account for repeated observations from the same individuals using the lme4 package (version 1.1-26). The trends in scatterplots were estimated using generalized additive models with spline transformations of gestational age at sample collection using the mgcv package (version 1.8-35). Differences between sPTB, sPTL, or PPROM and controls were assessed based on data collected at <37 weeks. Comparisons between early (delivery <34 weeks) sPTL or PPROM and controls were based on data collected before 34 weeks. Violin plots for controls, sPTB, sPTL, PPROM, late sPTL, and late PPROM include data collected at <37 weeks. Violin plots for early sPTL and early PPROM contain data <34 weeks. Differences between cases and controls were assessed using linear mixed effects models with adjustment for gestational age at sampling, maternal age, BMI, parity, and history of preterm birth. p-Values for the significance of the coefficients in the linear mixed effects models were determined via t-statistics using Satterthwaite’s methods for degrees of freedom, which is the default method in the lmerTest package in R (version 3.1.3). To account for multiple testing, nominal p-values were adjusted using the false discovery rate method to obtain q-values. A 10% cutoff of false discovery rate was used in all analyses to infer significance. Prediction of preterm birth after 24 weeks was based on data collected prior to 24 weeks. Prediction of preterm birth after 28 weeks was based on data collected up to 28 weeks. Random forest models (Breiman, 2001) (R package randomForest version 4.6–14) with 1000 trees were trained and evaluated via tenfold cross-validation, and AUC was calculated with DeLong 95% confidence intervals (R package pROC version 1.17.0.1). Models with an AUC 95% confidence interval with a lower bound above 0.5 were considered significant. The importance of individual immune mediators in these analyses was determined using the mean decrease in Gini coefficient.

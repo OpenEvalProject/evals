@@ -35,7 +35,7 @@
 
 ## Abstract
 
-10.7554/eLife.44898.001 Organismal phenotypes frequently involve multiple organ systems. Histology is a powerful way to detect cellular and tissue phenotypes, but is largely descriptive and subjective. To determine how synchrotron-based X-ray micro-tomography (micro-CT) can yield 3-dimensional whole-organism images suitable for quantitative histological phenotyping, we scanned whole zebrafish, a small vertebrate model with diverse tissues, at ~1 micron voxel resolutions. Micro-CT optimized for cellular characterization (histotomography) allows brain nuclei to be computationally segmented and assigned to brain regions, and cell shapes and volumes to be computed for motor neurons and red blood cells. Striking individual phenotypic variation was apparent from color maps of computed densities of brain nuclei. Unlike histology, the histotomography also allows the study of 3-dimensional structures of millimeter scale that cross multiple tissue planes. We expect the computational and visual insights into 3D cell and tissue architecture provided by histotomography to be useful for reference atlases, hypothesis generation, comprehensive organismal screens, and diagnostics.
+Organismal phenotypes frequently involve multiple organ systems. Histology is a powerful way to detect cellular and tissue phenotypes, but is largely descriptive and subjective. To determine how synchrotron-based X-ray micro-tomography (micro-CT) can yield 3-dimensional whole-organism images suitable for quantitative histological phenotyping, we scanned whole zebrafish, a small vertebrate model with diverse tissues, at ~1 micron voxel resolutions. Micro-CT optimized for cellular characterization (histotomography) allows brain nuclei to be computationally segmented and assigned to brain regions, and cell shapes and volumes to be computed for motor neurons and red blood cells. Striking individual phenotypic variation was apparent from color maps of computed densities of brain nuclei. Unlike histology, the histotomography also allows the study of 3-dimensional structures of millimeter scale that cross multiple tissue planes. We expect the computational and visual insights into 3D cell and tissue architecture provided by histotomography to be useful for reference atlases, hypothesis generation, comprehensive organismal screens, and diagnostics.
 
 ## Introduction
 
@@ -49,15 +49,35 @@ Here, we present a 3D quantitative histological analysis of features of whole fi
 
 ## Results
 
-## Whole-Organism synchrotron X-ray histotomography
+### Whole-Organism synchrotron X-ray histotomography
 
 Synchrotron based micro-CT was chosen based on two demands of phenome projects: the potential to achieve resolutions and contrast required for histological evaluations, and high-throughput potential for phenotyping whole organisms. Fine-tuning of X-ray energies and bandwidth, and adjustment of sample-to-scintillator distance, were used to optimize volumetric reconstructions of optically-opaque zebrafish at isotropic resolutions (equal in all three dimensions) for histopathological interpretations. Synchrotron X-ray flux is orders of magnitude more brilliant than commercial tube sources, allowing imaging times short enough for high sample-number imaging projects (Winick, 1994).
 
 Micro-CT studies were performed on the sector two bending magnet, hutch B (2-BM-B) of the Advanced Photon Source at Argonne National Laboratory for both single-energy and multi-energy acquisitions (Figure 1). Beam energies for monochromatic imaging were optimized for contrast-to-noise ratio across a range of sample diameters and concentrations of tungsten (Figure 1—figure supplement 1). A beam energy of 13.8 keV was used for the smaller, larval samples and 16.2 keV for juveniles due to their greater thickness (see Materials and methods). Sample-to-scintillator distance was adjusted to optimize the magnitude of phase contrast-based edge enhancement (Figure 1—figure supplement 2). A 30 mm sample-to-scintillator distance provided sufficient edge enhancement to achieve histology-like contrast. For whole-organism imaging, the zebrafish were vertically translated to capture segments over the full length of the sample. Each zebrafish segment was reconstructed and the multiple segments stitched into a single 3D volume (Video 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44898/elife-44898-fig1-v2.jpg)
+
+**Figure 1.:** Quasi-parallel X-rays from beamline 2-BM-B are used to acquire projection images of an intact, fixed, and PTA-stained whole zebrafish. Total imaging time is ~20 min per monochromatic acquisition (sample-to-scintillator distance = 30 mm) and ~20 s per pink-beam acquisition (sample-to-scintillator distance = 25 mm). Each fish requires 3 to 5 acquisitions. The top inset shows the relative sizes of a juvenile (left), a larva (right), and a dime (diameter = 17.9 mm). Fish are shown embedded in acrylic resin with the polyimide tubing removed. Removal of the polyimide tubing is necessary for natural color light photography, but not for successful X-ray image acquisition. Scale bars in the specimen insets are 1 mm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44898/elife-44898-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** X-ray energy was modeled for different sample sizes and metal concentrations. (Left) Analytic contrast-to-noise ratio (CNR) for tungsten contrast detail in water background assuming ρW= 0.06 g/cm3, dW = 0.36 mm, ρH20= 1.0 g/cm3 and dH20 varying from 1 to 5 mm. (Right) Analytic contrast-to-noise ratio for tungsten for contrast detail in water background assuming ρW varying from 0.01 to 0.2 g/cm3, dW = 0.36 mm, ρH20 = 1.0 g/cm3 and dH20 = 1 mm. The plots indicate that over a wide range of sample sizes and metal concentrations, an optimal energy range is ~12 to 16 keV.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44898/elife-44898-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** A range of sample-to-scintillator distances (SSD) was surveyed for phase contrast enhancement of edges in larval samples. A line profile (A) is drawn through the retinal region as denoted by the yellow line in (B) to highlight differences in voxel intensity at edges. Zoomed insets (C) show the photoreceptor layer aligned with the attenuation profile in (A). The attenuation range (maximum attenuation– minimum attenuation) is shown in (D) for homogenous (lens, inner plexiform layer) and variable (photoreceptor layer) regions. The attenuation range increases for variable regions but remains constant for homogenous regions as SSD increases, demonstrating the effects of phase contrast edge enhancement. A SSD of 30 mm provided a level of edge perception resembling that found in traditional glass slide histology and was used for all subsequent acquisitions.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/44898/elife-44898-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** A juvenile (33 dpf) zebrafish was scanned using pink-beam (A) and monochromatic (B) sources. Insets show the ability for pink-beam (C) and monochromatic beam (D) to resolve the fine detail found in zebrafish photoreceptor layer. Signal-to-noise ratio (SNR) in high (eye lens) and low attenuation (brain) tissues was compared for both images (E). The monochromatic beam image has a higher SNR than the pink-beam image in both cases. While the noise in the pink beam image could be reduced by increasing acquisition times, the contrast in the monochromatic image is inherently better. A line profile (F) through the photoreceptor layer shows that the monochromatic beam is superior for discerning edges, which can be attributed to the phase contrast optimization done in Figure 1—figure supplement 1. Under these pink-beam imaging conditions, phase-contrast enhancement, which is energy-dependent, gets averaged out.
+
+![Video 1.](https://cdn.elifesciences.org/articles/44898/elife-44898-video1.mp4.jpg)
+
+**Video 1.:** This video demonstrates the relationship between multi-angle projection data and sinograms, which are used in reconstruction to backproject single axial slices that are combined to generate a volume (online viewing available from, https://youtu.be/MjobFBLc5m8). Best if viewed at highest quality setting.
+
 Large-scale phenotyping studies, such as those focusing on series of mutants or chemical exposures, require short imaging times to facilitate throughput. Monochromatic acquisitions took ~20 min,~36 fold faster than acquisition by commercial tabletop sources (e.g.,~720 min for Xradia 500 series machines) (Metscher, 2009b). The use of polychromatic ‘pink-beam’ increases X-ray flux, which greatly reduces exposure times. Each pink-beam acquisition took ~20 s,~60 fold faster than monochromatic acquisition and ~2,000 fold faster than commercial sources. Monochromatic acquisitions have better image quality than pink-beam, as defined by signal-to-noise ratio and pixel intensity profile (Figure 1—figure supplement 3). Notably, no image degradation over years of repetitive synchrotron imaging was detected (Lin et al., 2018). This high degree of sample stability across multiple scans suggests the potential use of pink-beam pre-screening followed by higher resolution monochromatic reacquisition.
 
-## Digital 3D zebrafish at cell resolution
+### Digital 3D zebrafish at cell resolution
 
 Digital zebrafish were reconstructed from projections after staining all tissues with PTA. The similarity of digital slices to conventional histological outputs is demonstrated by representative transverse (axial), sagittal, and coronal cross-sections for larval (4 days post-fertilization, dpf) and juvenile (33 dpf) zebrafish imaged at 0.743 and 1.43 µm3 isotropic voxel resolution, respectively (Figure 2). Volume renderings illustrate the orientation of individual planes of section in 3D. Full sets of cross-sections of the zebrafish in the sagittal orientation illustrate one way to use micro-CT data to phenotype full tissue volumes (Videos 2–3).
 
@@ -65,11 +85,31 @@ Digital zebrafish were reconstructed from projections after staining all tissues
 
 **Figure 2.:** Coronal (A, H), sagittal (B, I), and axial (C–F, J–M) cross sections of 4 dpf larval (A–G) and 33-dpf juvenile (H–N) wild-type zebrafish acquired using synchrotron X-ray micro-tomography at 0.743 μm3 and 1.43 μm3 isotropic voxel resolution, respectively. 3D volume renderings (G, N) show the cross-sections in relation to the whole organism. In contrast to histology, the cross sections are a single voxel in thickness and can be obtained in any plane (including oblique cuts) after imaging. Complete cross-sections in the orthogonal directions for both fish are provided (Videos 2 and 3). Images are presented to match histological convention of dark cell nuclei (higher attenuation is darker).
 
+![Video 2.](https://cdn.elifesciences.org/articles/44898/elife-44898-video2.mp4.jpg)
+
+**Video 2.:** This video shows full cross-sections of the larval (five dpf) zebrafish from the sagittal orientation (0.743 micron slice thickness) for histology-like phenotyping and qualitative analysis (online viewing available from, https://youtu.be/hyyZu2_75Qc). Intensity histogram of the dataset was inverted and locally adjusted to better discern originally faint or overlapping structures. Best if viewed at highest quality setting.
+
+![Video 3.](https://cdn.elifesciences.org/articles/44898/elife-44898-video3.mp4.jpg)
+
+**Video 3.:** This video shows full cross-sections of the juvenile (33 dpf) zebrafish from the sagittal orientation (1.4 micron slice thickness) for histology-like phenotyping and qualitative analysis (online viewing available from, https://youtu.be/gyxmFJGU1RY). Intensity histogram of the dataset was inverted and locally adjusted to better discern originally faint or overlapping structures. Best viewed at highest quality setting.
+
 Notably, the z-axis resolution of histotomography, presented here at 0.74 or 1.43 microns, is superior to the ~5 micron slice thickness of histology’s conventional paraffin sections. Increased z-axis resolution decreases the likelihood of two separate nuclei being scored as one when they are crowded, as is the case in the retinal and brain neurons of larval zebrafish. The problem of overlapping nuclei in the z-axis makes it difficult to accurately count nuclei from traditional histological images. Our x-y histotomographic resolution is comparable with that of optical microscopy using a 10X objective lens (Figure 3). When direct comparisons between histotomography and histology are desired, maximum intensity projections (MIPs) totaling ~5 microns in thickness can be created from image stacks. Just as in hematoxylin and eosin (H and E) stained sections from ~3.5 mm-long larval (five dpf) (Figure 3A) and ~1 cm-long juvenile (33 dpf) zebrafish (Figure 3C), cell and tissue types can be recognized histologically from five micron MIPS of age-matched fish (Figure 3B and D). As an internal measure of resolution, we calculated the spacing of striations in skeletal muscle fibers encircling the larval swim bladder (Figure 3—figure supplement 1). The average of 293 measures = 2.16 μm (SD = 0.55 μm) is comparable with published values (Burghardt et al., 2016; Dou et al., 2008).
 
-## Forms of analysis of zebrafish microanatomy enabled by histotomography
+![Figure 3.](https://cdn.elifesciences.org/articles/44898/elife-44898-fig3-v2.jpg)
+
+**Figure 3.:** Top: Comparison of larval (five dpf) zebrafish obtained from a 5 μm thick histology section and micro-tomography data (A and B, respectively). The larval micro-tomograph is 0.743 μm3 in isotropic voxel resolution, and a maximum intensity projection (MIP) of 7 slices, totalling 5.20 μm, resembling the appearance of ~5 μm thick histological sections. Bottom: Comparison of juvenile (33 dpf) zebrafish i5 μm histology section and micro-tomographic MIPs (C and D, respectively). Juvenile scan data is of 1.43 μm3 isotropic voxel resolution, and a MIP of 3 slices, totalling 4.29 μm thickness, is shown. Insets show detail of brain cell nuclei (A–B) and delicate gill structure (C–D). The images demonstrate the near histological resolution of X-ray histotomography. While natural variation in the size of specific features is observed in age matched fish (panel C length = 7.8 mm, panel D length = 10 mm) individual histological features are consistent.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44898/elife-44898-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The biological validation of imaging resolution was performed through measurement of distances between Z-lines in the swim bladder striated muscle strands. Cross sections of striated muscle surrounding the swim bladder diagonally in larval (five dpf) zebrafish (A) was used to generate pixel intensity profiles (B). Measurement of pixel distances between local intensity maxima assuming 0.743 μm3 isotropic voxel resolution yielded an average sarcomere length of 2.16 μm (SD = 0.55 μm for 293 distance measurements), consistent with published sarcomere lengths in larval zebrafish (Burghardt et al., 2016; Dou et al., 2008).
+
+### Forms of analysis of zebrafish microanatomy enabled by histotomography
 
 While both traditional histology and histotomography have the resolution needed to distinguish cellular features in 2D slices, only the latter is able to reveal elongated, complex 3D tissue structures such as vessels, nerve tracts, and bones. These advantages are particularly well-illustrated by the study of gill architecture (Figure 3C and D, insets). Histotomography makes it possible to interrogate primary and secondary lamellae from multiple angles without spatial distortion, revealing the delicate leaf-like structure of gill filaments on any pharyngeal arch and even bulges in epithelial cells caused by their nuclei (Video 4). Whole animal histotomographic reconstructions thus provide a level of organismal and anatomical context that is not practical using histology alone.
+
+![Video 4.](https://cdn.elifesciences.org/articles/44898/elife-44898-video4.mp4.jpg)
+
+**Video 4.:** The gill structure is visualized in a whole juvenile (33 dpf) zebrafish in order to demonstrate the ability of soft tissue synchrotron micro-CT to resolve the complex structure of 3D tissues in detail (online viewing available from, https://youtu.be/16sZpZZj9GU). Best viewed at highest quality setting.
 
 The isotropic nature of histotomography enables reslicing in any plane of section without distortion. Dynamic reslicing (cutting the same volume digitally in multiple planes) allows the study of either longitudinal, perpendicular, or other planar virtual sections of the gut at cellular resolution (Figure 4). As far as we are aware, the ability to generate full sets of cross-sections of convoluted structures (such as the gut of juvenile zebrafish) for histological phenotyping within a single modality is unprecedented. This approach can be applied to any convoluted structure requiring thorough evaluation.
 
@@ -79,17 +119,144 @@ The isotropic nature of histotomography enables reslicing in any plane of sectio
 
 Virtual sectioning and 3D rendering can be used to study any tissue in the fish, as illustrated for the neuronal cells in the eye, cartilaginous elements of the notochord, the squamous patch of the dorsum of the pharynx, nucleated red blood cells in the heart, and the pneumatic duct and goblet cells of the intestine of whole juvenile (33 dpf) and larval (five dpf) specimens in Figure 5 and Figure 6, respectively. In sum, our digital zebrafish allow tissues and cell nuclei to be visualized across organ systems, including the integumentary, hematopoietic, respiratory, genitourinary, musculoskeletal, gastrointestinal, cardiovascular, nervous and sensory systems (Figure 5—figure supplement 1, Video 5).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/44898/elife-44898-fig5-v2.jpg)
+
+**Figure 5.:** Top: Cutout visualization of a juvenile (33 dpf) zebrafish stained with PTA showing detail in many soft tissue structures. Bottom: Cell types and structures that can be visualized include neuronal cells in the eye (A), cartilaginous rudiments of the squamous patch dorsum (arrow) of the pharynx (B), nucleated red blood cells and heart chambers (C), nephrons of the kidney (D), brain nuclei and motor neurons in spinal nerve cord (E, F). Curved multiplanar slicing, as used for Figure 4D, was used to display the full length of the pneumatic duct (proximal and distal ends noted by an ‘*' and arrow, respectively) (G). Panels A and E represent individual slices (1.43 μm in thickness) while panels B, C, D represent maximum intensity projections of 5 μm thick sections to visualize larger 3D structures. F represents a 7 μm thick projection.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/44898/elife-44898-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Orthogonal views (middle), a zoomed view (top), and a projection zoom view (bottom, 36 slice, 50 µm projection) of the head of a juvenile (33 dpf) zebrafish are presented. Sagittal, coronal, and transverse sections are denoted by red, yellow, and blue lines, respectively.
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/44898/elife-44898-fig6-v2.jpg)
 
-**Figure 6.:** huli hutu mutant specimens.Top: Cutout visualization of both wild-type and huli hutu larval (five dpf) zebrafish stained with PTA showing detail in many soft tissue structures. Bottom: Cell types and structures that can be visualized include neuronal cells in the eye (A), cartilaginous rudiments of the squamous patch on the dorsal (arrow) pharynx (B), nucleated red blood cells (C), intact pneumatic duct (* to arrow) and goblet cells in the gut (D), and cross-striations of bands of muscles encircling the swim bladder (E). Panels A and D represent individual slices (0.743 μm in thickness) while B, C, E represent maximum intensity projections of 5 μm thick sections to visualize larger 3D structures. Compared to age matched wild-type larval zebrafish (top), the number of neuronal cells in the eye are markedly reduced (A’), chondrocytes appear cytologically normal, but formation of cartilaginous structures is markedly reduced (B’), the myocardium is thickened and, as is evident from a survey through all the sections of the heart (a single slice shown here) contains a markedly reduced number of nucleated red blood cells, consistent with anemia and abnormal hematopoiesis (C’). We are able determine the absence of the pneumatic duct and swim bladder in hht due to the ability to scan through the full volume of the sample. D’ shows degenerate tissue and E’ other tissues where those organs normally lie. A’, B’ and D’ represent individual slices (0.743 μm in thickness) while C’ and E’ represent maximum intensity projections of 5 μm thick sections to visualize structures of larger dimension.
+**Figure 6.:** Top: Cutout visualization of both wild-type and huli hutu larval (five dpf) zebrafish stained with PTA showing detail in many soft tissue structures. Bottom: Cell types and structures that can be visualized include neuronal cells in the eye (A), cartilaginous rudiments of the squamous patch on the dorsal (arrow) pharynx (B), nucleated red blood cells (C), intact pneumatic duct (* to arrow) and goblet cells in the gut (D), and cross-striations of bands of muscles encircling the swim bladder (E). Panels A and D represent individual slices (0.743 μm in thickness) while B, C, E represent maximum intensity projections of 5 μm thick sections to visualize larger 3D structures. Compared to age matched wild-type larval zebrafish (top), the number of neuronal cells in the eye are markedly reduced (A’), chondrocytes appear cytologically normal, but formation of cartilaginous structures is markedly reduced (B’), the myocardium is thickened and, as is evident from a survey through all the sections of the heart (a single slice shown here) contains a markedly reduced number of nucleated red blood cells, consistent with anemia and abnormal hematopoiesis (C’). We are able determine the absence of the pneumatic duct and swim bladder in hht due to the ability to scan through the full volume of the sample. D’ shows degenerate tissue and E’ other tissues where those organs normally lie. A’, B’ and D’ represent individual slices (0.743 μm in thickness) while C’ and E’ represent maximum intensity projections of 5 μm thick sections to visualize structures of larger dimension.
 
-## Detection of histopathological features in whole-fish histotomography
+![Video 5.](https://cdn.elifesciences.org/articles/44898/elife-44898-video5.mp4.jpg)
+
+**Video 5.:** Tissue structure of a juvenile (33 dpf) zebrafish stained with PTA and imaged with synchrotron micro-CT are visualized through a core-like cut from the center of the digitized sample (online viewing available from, https://youtu.be/FNG-NwXsGHA). Best viewed at highest quality setting.
+
+### Detection of histopathological features in whole-fish histotomography
 
 Successful histopathological analysis requires the detection of subtle differences in the characteristics of specific micron-scale structures. To probe the potential ability of X-ray histotomography to detect subtle histopathological change in a whole organism, we used a mutant, huli hutu (hht), that is known to show a range of subtle to obvious histological changes across all cell types and tissues (Mohideen et al., 2003) (Figure 6, Video 6). Reconstructions of larval hht at 0.743 µm3 voxel resolution allowed us to detect all of hht’s known histological changes, including nuclear fragmentation (karyorrhexis) that is associated with cell death, nuclear atypia (increased size, deviation from typical ovoid shape, and irregular nuclear membrane contour) in the gut, and tissue degeneration. Nuclear fragments are commonly two microns or less in diameter. We were able to reliably establish the absence of an easily missed, micron-scale structure, the pneumatic duct, since every virtual slice of entire fish is available at sub-micron resolution. This structure cannot be reliably assessed by histology on account of its small size and tortuous shape. Age-matched wild-type and hht fish (2, 3, 4 and 5 dpf) can be examined, using our web-based data sharing interface, to visually track progression of the histopathological changes characteristic of hht (Table 1). Additionally, computational detection of nuclei allows global assessment of the density of nuclei across the entire animal (second half of Video 6).
 
-## Distribution of cell nuclei reveals phenotypic variation between the brains of larval zebrafish
+**Table 1.**
+ ViewTool database.Scans listed are available for viewing on ViewTool at http://3D.fish and are PTA stained unless otherwise noted. Raw scans are available on request. Note: The wild-type larval five dpf samples, used for quantitative analysis, were imaged on the same day. *Only the cranial section (head) is presented.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Zebrafish specimen</th>
+      <th>Age (dpf)</th>
+      <th>Segments</th>
+      <th>12-bit projections (GB)</th>
+      <th>32-bit reconstructions (GB)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">Larval (wildtype)</td>
+      <td>2</td>
+      <td>2</td>
+      <td>25.2</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2</td>
+      <td>25.2</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>3</td>
+      <td>37.8</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>3</td>
+      <td>37.8</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1*</td>
+      <td>12.6</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1*</td>
+      <td>12.6</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1*</td>
+      <td>12.6</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1*</td>
+      <td>12.6</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Larval (huli hutu)</td>
+      <td>2</td>
+      <td>1*</td>
+      <td>12.6</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1*</td>
+      <td>12.6</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1*</td>
+      <td>12.6</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2</td>
+      <td>25.2</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>Juvenile</td>
+      <td>33</td>
+      <td>5</td>
+      <td>63.0</td>
+      <td>160</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 6.](https://cdn.elifesciences.org/articles/44898/elife-44898-video6.mp4.jpg)
+
+**Video 6.:** This video shows full cross-sections of the huli hutu mutant larval (five dpf) zebrafish from the sagittal orientation (0.743 micron slice thickness) for histology-like phenotyping and qualitative analysis (online viewing available from, https://youtu.be/KbVnamIMPiA). Neuronal cell nuclei probabilities of the mutant are also shown along with a wild-type comparison. The intensity histogram of the dataset was inverted and locally adjusted to enhance the visibility of faint or overlapping structures. Best viewed at highest quality setting.
+
+### Distribution of cell nuclei reveals phenotypic variation between the brains of larval zebrafish
 
 Due to the combination of histotomography’s field-of-view and resolution, we are able to compute features of individual cells and pattern of cells throughout the whole organism. Anatomic pathologists use cytological characteristics in qualitative tissue assessments (Al-Abbadi, 2011; Cheng and Bostwick, 2002). Quantitative assessment of these morphological attributes is best-accomplished in 3D, bringing added precision in distinguishing disease states from the range of normal tissue and cellular architecture. To evaluate the power of computational phenotyping enabled by histotomography, we combined regional segmentation with automated cell detection for characterization of the zebrafish brain (Figure 7).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/44898/elife-44898-fig7-v2.jpg)
+
+**Figure 7.:** Developing larval (five dpf) zebrafish brains were divided into 10 quantifiable anatomically relevant regions by registering sample brains to the Vibe-Z volume-based zebrafish brain atlas and referencing to an immunohistochemistry BrdU based neuroanatomy atlas. Sample landmark selection is shown for equivalent slices between the ViBE-Z atlas data and a five dpf micro-CT for registration-based segmentation (A). Overlay of ViBE-Z atlas embryo (red) over five dpf data (blue) post-registration (B). Semi-automated brain segmentation presented for a five dpf sample in its anatomic context in a representative slice (C). Neuronal cell nuclei detection and validation using a supervised random forest classifier (D). Nuclear detection visualized as a point map for a typical five dpf sample in its anatomic context (E). Semi-automated brain segmentation overlaid onto classifier-based nuclei detection (F). Brain density was calculated by counting every nucleus within a ~ 22 micron (30 voxel) radius surrounding each voxel of the brain (G)..This dimension waschosen because it covers about 5 cell diameters, an estimate of the width of a small brain region.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/44898/elife-44898-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** 75 × 75×75 µm regions were selected on each fish to validate detection of nuclei: sample regions R1, R2 and R3 are presented (A). 3D visualizations of thresholded original data (B–a) and nuclear probabilities based on the trained classifier (B–b) in Region two are shown. 3D rendering of validation is presented in (B–c); green denotes true positive, blue false positive, orange false negative. Good agreement between manual and automated segmentation is shown on regional 3D rendering and f1 scores (C) across all specimens.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/44898/elife-44898-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** PTA and osmium staining in (A) micro-CT and (B) transmission electron microscopy images (Hildebrand et al., 2017) both allow the nuclei of individual cells to be distinguished. Automated object detection applied to these images show similar regional patterning and counts of nuclei in corresponding brain slices (C, D).
 
 For example, brain cell nuclei can be distinguished from other stained objects based on shape (elongation) and volume. Elongation is measured as the ratio of the major axis over the minor axis of a 3D object. As anticipated, computational measurements of shape and volume of manually segmented red blood cells (RBCs) and motor neurons (n = 20 each) were different, in agreement with morphological differences that are readily apparent in histology (Figure 8A). In addition, RBCs and motor neurons are more elongated than typical brain nuclei, which are more spherical. Specifically, RBCs are typically flat and oval, while motor neurons are more ‘tear drop’ shaped. Other cell differences include the volume, with motor neurons being larger than typical brain nuclei. The PTA staining patterns of the cytoplasm of RBCs and motor neurons are different in appearance from those of other cells. From the measurements shown, it is apparent that our current resolution is sufficient to readily distinguish cell types.
 
@@ -104,6 +271,212 @@ Whole-animal histotomography enables quantitative analyses of both individual ce
 ![Figure 9.](https://cdn.elifesciences.org/articles/44898/elife-44898-fig9-v2.jpg)
 
 **Figure 9.:** Cellular density varies between individual brain regions and carries distinct signals consistent between individual samples (A). 3D renderings of whole-brain densities with identical transparency settings are presented for each fish (B) and reflects signal differences presented in (A).
+
+**Table 2.**
+ Cell nuclei counts in different five dpf zebrafish brain regions.Major divisions of the zebrafish brain and the number of cell nuclei in each division (counts) are shown across five fish. Mean total cell nuclei count is 75,413 and relative standard deviation ±11.3%.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Major brain divisions</th>
+      <th colspan="5">Brain region cell nuclei (Counts)</th>
+    </tr>
+    <tr>
+      <th>Specimen number</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Olfactory Epithelium</td>
+      <td>855</td>
+      <td>398</td>
+      <td>1103</td>
+      <td>1158</td>
+      <td>1257</td>
+    </tr>
+    <tr>
+      <td>Telencephalon</td>
+      <td>3696</td>
+      <td>4735</td>
+      <td>4576</td>
+      <td>3704</td>
+      <td>4570</td>
+    </tr>
+    <tr>
+      <td>Diencephalon</td>
+      <td>6323</td>
+      <td>6076</td>
+      <td>7390</td>
+      <td>7718</td>
+      <td>8134</td>
+    </tr>
+    <tr>
+      <td>Hypothalamus</td>
+      <td>2096</td>
+      <td>2342</td>
+      <td>3392</td>
+      <td>3047</td>
+      <td>2680</td>
+    </tr>
+    <tr>
+      <td>Mesencephalon</td>
+      <td>17,377</td>
+      <td>15,993</td>
+      <td>21,161</td>
+      <td>21,448</td>
+      <td>22,275</td>
+    </tr>
+    <tr>
+      <td>Metencephalon</td>
+      <td>876</td>
+      <td>1025</td>
+      <td>1012</td>
+      <td>2865</td>
+      <td>1713</td>
+    </tr>
+    <tr>
+      <td>Myelencephalon</td>
+      <td>27,899</td>
+      <td>28,691</td>
+      <td>30,991</td>
+      <td>37,769</td>
+      <td>34,766</td>
+    </tr>
+    <tr>
+      <td>White Matter</td>
+      <td>5633</td>
+      <td>5955</td>
+      <td>5810</td>
+      <td>4524</td>
+      <td>5181</td>
+    </tr>
+    <tr>
+      <td>Spinal Cord</td>
+      <td>1408</td>
+      <td>1570</td>
+      <td>1850</td>
+      <td>1712</td>
+      <td>2312</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>66,163</td>
+      <td>66,785</td>
+      <td>77,285</td>
+      <td>83,945</td>
+      <td>82,888</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Brain Volumes by Region for five dpf Zebrafish Brain.Major divisions of the zebrafish brain and their volumes (μm3) are shown across five zebrafish. Mean total volume is 15,507,461 and relative standard deviation ± 11.9%.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Major brain divisions</th>
+      <th colspan="5">Brain region volumes (µm3)</th>
+    </tr>
+    <tr>
+      <th>Specimen number</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Olfactory Epithelium</td>
+      <td>293,251</td>
+      <td>171,459</td>
+      <td>164,338</td>
+      <td>131,459</td>
+      <td>111,195</td>
+    </tr>
+    <tr>
+      <td>Telencephalon</td>
+      <td>1,117,500</td>
+      <td>1,021,518</td>
+      <td>956,493</td>
+      <td>826,273</td>
+      <td>672,572</td>
+    </tr>
+    <tr>
+      <td>Diencephalon</td>
+      <td>1,440,447</td>
+      <td>1,300,518</td>
+      <td>1,097,698</td>
+      <td>1,134,753</td>
+      <td>1,046,486</td>
+    </tr>
+    <tr>
+      <td>Hypothalamus</td>
+      <td>813,210</td>
+      <td>702,116</td>
+      <td>732,073</td>
+      <td>608,018</td>
+      <td>575,387</td>
+    </tr>
+    <tr>
+      <td>Mesencephalon</td>
+      <td>4,353,108</td>
+      <td>3,442,415</td>
+      <td>3,663,909</td>
+      <td>3,183,413</td>
+      <td>2,885,684</td>
+    </tr>
+    <tr>
+      <td>Metencephalon</td>
+      <td>324,562</td>
+      <td>273,699</td>
+      <td>388,409</td>
+      <td>529,656</td>
+      <td>296,336</td>
+    </tr>
+    <tr>
+      <td>Myelencephalon</td>
+      <td>4,982,069</td>
+      <td>4,636,451</td>
+      <td>3,977,877</td>
+      <td>4,550,207</td>
+      <td>3,850,373</td>
+    </tr>
+    <tr>
+      <td>White Matter</td>
+      <td>4,783,477</td>
+      <td>4,358,188</td>
+      <td>4,119,302</td>
+      <td>3,963,126</td>
+      <td>3,529,787</td>
+    </tr>
+    <tr>
+      <td>Spinal Cord</td>
+      <td>78,092</td>
+      <td>97,609</td>
+      <td>117,260</td>
+      <td>109,808</td>
+      <td>125,722</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>18,185,716</td>
+      <td>16,003,973</td>
+      <td>15,217,359</td>
+      <td>15,036,713</td>
+      <td>13,093,542</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -125,7 +498,157 @@ To make our data accessible to users with standard computational resources, we h
 
 ## Materials and methods
 
-## Zebrafish husbandry and sample preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>Wild-type Ekkwill</td>
+      <td>ZFIN ID: ZDB-GENO -990520–2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>huli hutu</td>
+      <td>Mohideen et al., 2003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>10% neutral buffered formalin</td>
+      <td>Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EMBed-812</td>
+      <td>Electron Microscopy Sciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ethyl alcohol</td>
+      <td>Pharmco-Aaper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Finquel (MS-222, tricaine-S)</td>
+      <td>Argent Chemical Laboratories</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>glycol methacrylate</td>
+      <td>Polysciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kapton tubing</td>
+      <td>Small Parts</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>phosphate-buffered saline</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>phosphotungstic acid</td>
+      <td>VWR</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ovadine</td>
+      <td>Syndel</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Avizo</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>SCR_014431</td>
+      <td>version 9.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Elastix</td>
+      <td>http://elastix.isi.uu.nl/</td>
+      <td>SCR_009619</td>
+      <td>version 4.8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji/ImageJ2</td>
+      <td>https://fiji.sc/</td>
+      <td>SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ilastik</td>
+      <td>Sommer et al., 2011 (http://ilastik.org/)</td>
+      <td>SCR_015246</td>
+      <td>version 1.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ITK-SNAP</td>
+      <td>Yushkevich et al., 2006 (http://www.itksnap.org)</td>
+      <td>SCR_002010</td>
+      <td>version 3.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OpenSeaDragon</td>
+      <td>https://openseadragon.github.io/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TomoPy</td>
+      <td>Argonne National Labs (http://tomopy.readthedocs.io)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VGStudio Max 2.1</td>
+      <td>Volume Graphics</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish husbandry and sample preparation
 
 Wild-type zebrafish (Ekkwill strain) and the huli hutu mutant (Mohideen et al., 2003) were reared at an average temperature of 28°C in a recirculating system with a 14:10 hr light:dark cycle (Copper et al., 2018). Fish were fed three times a day a diet consisting of brine shrimp and flake food. All fish were staged according to the zebrafish developmental staging series of Kimmel et al. (1995).
 
@@ -133,52 +656,62 @@ After staging, larval (2, 3, 4, and 5 dpf) and juvenile (33 dpf) zebrafish speci
 
 Generation of the ENU-mutagenized mutant hht was previously described (Mohideen et al., 2003). The hht line was maintained as heterozygotes due to the recessive larval-lethal nature of the mutation. Mating was carried out by placing male and female heterozygotes in Aquatic Habitat breeding tanks with dividers the afternoon prior to egg collection. Collected eggs were disinfected in 10% Ovadine (Syndel) for 1 min at room temperature followed by three washes with charcoal-filtered water. Larvae were incubated at 28.5°C to maintain consistent speed of development. Homozygous mutant larvae were identified by a combination of gross phenotypes, including small eyes, small head, dorsally curved body, and enlarged yolk, that are easily detected under a low-power stereomicroscope at ≥3 dpf. Gross mutant phenotype at two dpf is limited to small eyes and requires screening at 40X.
 
-## Image acquisition
+### Image acquisition
 
 Synchrotron micro-CT studies were performed on the beamline 2-BM-B Advanced Photon Source at Argonne National Laboratory. The beamline’s quasi-parallel X-rays were used to acquire projection images of larval and juvenile zebrafish in sets of 2048 digital slices. After passing through the object, the X-rays impinge on a thin scintillator, which converts X-rays to optical photons that are magnified by a microscope objective lens onto a cooled CCD. The volumetric field of view was 1.5 mm3 for 0.743 µm3 voxels using a 10X objective lens, and 3 mm3 with 1.43 µm3 voxels using a 5X objective. A vertical stage was used to translate the sample between multiple acquisitions.
 
-## Monochromatic imaging
+### Monochromatic imaging
 
 For monochromatic imaging, a multilayer monochromator with bandwidth ΔE/E ~ 1.5%, or 200–250 eV, was used to obtain discrete X-ray energies. 1501 projections were obtained over 180 degrees (1 projection every 0.12 degrees) with a 2048-by-2048 pixel CoolSnap HQ CCD camera (Photometrics, AZ, USA). Larval and juvenile zebrafish scans were obtained at 13.8 keV and 16.2 keV, respectively. Additionally, two flat-field (gain) images (one at the beginning and one at the end of the acquisition) and one dark-field image are also acquired. Flat-field and dark-field corrections, ring artifact reduction, and image reconstruction were done using the open source TomoPy toolkit. Reconstructing the projection data generates a 3D data set comprised of a 2048-by-2048-by-2048 voxel cube. A voxel in the PTA-stained larval zebrafish has nominal 0.743 µm x 0.743 µm x 0.743 µm resolution, while a voxel in the juvenile zebrafish has a nominal 1.43 µm x 1.43 µm x 1.43 µm resolution, corresponding with larval and juvenile zebrafish fields-of-view of 1.5 mm x 1.5 mm x 1.5 mm and 3 mm x 3 mm x 3 mm, respectively. Whole-organism zebrafish reconstructions were created by combining series of segmental reconstructions at each vertical position along the full length of each specimen. Exposures of 400 ms per projection yielded acquisitions of ~20 min. Whole zebrafish scans take 3–5 acquisitions, depending on asample size.
 
-## Polychromatic imaging
+### Polychromatic imaging
 
 A polychromatic ‘pink-beam’ covering 10–30 keV, was used to obtain 1600 projections over 192 degrees (1 per 0.12 degrees) with a 2048-by-2048 pixel CoolSnap HQ CCD camera. Whole-organism imaging polychromatic reconstructions were generated from segmental reconstructions over its full length, taking ~20 s per segment. Stripes present in the raw pink-beam projection data were removed using a Fourier-Wavelet based method with a Haar filter and sigma of 3 pixels (Münch et al., 2009). Rings and bands were corrected in the polar transform domain of the reconstructed images. Free parameters in this method were optimized by using minimum entropy approaches.
 
-## Estimates of the suitability of synchrotron micro-CT for phenome projects
+### Estimates of the suitability of synchrotron micro-CT for phenome projects
 
 The acquisition times using monochromatic or polychromatic ‘pink-beam’ sources are about 20 min or 20 s per scanned segment, respectively. Assuming: (i) a 5 min set up time per specimen, (ii) 10 replicates per condition, (iii) three scans per fish, (iv) a synchrotron availability of 100 scanning days per year and 10 hr of scanning time per scanning day, and (v) ability to multiplex five larval specimens at a time without increasing acquisition time, screening 20,000 larval mutants would require ~40 years with monochromatic source or ~1 year using pink-beam. There is potential for higher throughput via robotic sample swapping for monochromatic and polychromatic sources and/or increased multiplexing with pink-beam. Estimates of throughput would also be affected by the proportion of specimens that are juvenile or adult, since those are likely to be imaged individually, and require either multiple segmental scans per fish or spiral CT as used for humans.
 
-## Energy optimization
+### Energy optimization
 
 In X-ray based imaging modalities, including micro-CT, the choice of imaging energy determines both the contrast between different tissue types and the noise level in the image. The contrast is based on the difference in energy-dependent absorption coefficient between the materials of interest, and the noise is determined by the transmitted flux of X-rays. In medical imaging, the contrast is often maximized at lower energies, for which differential absorption is maximized, while relative noise is reduced at higher energies, for which transmitted flux is maximized. A contrast-to-noise ratio (CNR) is generally maximized at some intermediate energy that depends on the concentration and amounts of various tissues present. Metal-stained tissue tomography is associated with the potential addition of X-ray absorption edges introducing additional structure into the energy-dependence of attenuation coefficients.
 
-To investigate these tradeoffs, we made use of a simple but powerful model from Spanne (1989) that assumes the presence of a small circular contrasting detail at the center of a circular absorbing background. The background linear attenuation coefficient for energy E, μ1E=μbgE.  The attenuation coefficient for the contrasting material μ2E=μbgE+μcE. Note that each attenuation coefficient is given by the product of the material density in g/cm3 and of a tabulated mass-attenuation coefficient in cm2/g, that is μcE=ρcμρc(E).
+To investigate these tradeoffs, we made use of a simple but powerful model from Spanne (1989) that assumes the presence of a small circular contrasting detail at the center of a circular absorbing background. The background linear attenuation coefficient for energy E, $\mu_{1}E=\mu_{bg}E.$The attenuation coefficient for the contrasting material $\mu_{2}E=\mu_{bg}E+\mu_{c}E$. Note that each attenuation coefficient is given by the product of the material density in g/cm3 and of a tabulated mass-attenuation coefficient in cm2/g, that is $\mu_{c}E=ρ_{c}\frac{\mu}{ρ}_{c}(E)$.
 
-The contrast detail is assumed to be large enough that blurring during reconstruction does not bias the reconstructed attenuation coefficient from its true value. The reconstructed noise variances at the center of the image in the presence and absence of the contrast detail are denoted varμ1E and varμ2E, respectively. Because of circular symmetry, the variance at the center of a reconstructed image can be calculated in closed form (Kak and Slaney, 1988) and shown to be inversely proportional to the transmitted intensity.var{μi(E)}∝1I¯i(E) ,where I-1E=I0Eexp-μbgEtbg and I-2E=I0Eexp-μbgEdbg+μcEdc are the transmitted intensities in the absence and presence of the contrast detail, respectively. Here I0E is the incident intensity at energy E and dc and dbg are the diameters of the contrast detail and background circle, respectively. With this model, we can then readily calculate a CNR defined asCNRE=μ1E-μ2(E)varμ1E+varμ2E.
+The contrast detail is assumed to be large enough that blurring during reconstruction does not bias the reconstructed attenuation coefficient from its true value. The reconstructed noise variances at the center of the image in the presence and absence of the contrast detail are denoted $var\mu_{1}E$ and $var\mu_{2}E$, respectively. Because of circular symmetry, the variance at the center of a reconstructed image can be calculated in closed form (Kak and Slaney, 1988) and shown to be inversely proportional to the transmitted intensity.
+
+$$
+var{\mu_{i}(E)}∝\frac{1}{I¯_{i}(E)} ,
+$$
+
+where $I-_{1}E=I_{0}Eexp-\mu_{bg}Et_{bg}$ and $I-_{2}E=I_{0}Eexp-\mu_{bg}Ed_{bg}+\mu_{c}Ed_{c}$ are the transmitted intensities in the absence and presence of the contrast detail, respectively. Here $I_{0}E$ is the incident intensity at energy $E$ and $d_{c}$ and $d_{bg}$ are the diameters of the contrast detail and background circle, respectively. With this model, we can then readily calculate a CNR defined as
+
+$$
+CNRE=\frac{\mu_{1}E-\mu_{2}(E)}{\sqrt{var\mu_{1}E+var\mu_{2}E}}.
+$$
 
 We used this model to calculate CNR ratios for the PTA stain as a function of background material thickness and tungsten contrast detail concentration. These are shown in Figure 1—figure supplement 1 and both sets of plots show a clear optimal energy range just above the tungsten L1 edge at 12 keV with strong fall off below the L3 edge at 10.2 and again above about 16 keV. We thus chose to acquire all PTA stained larval data at the pre-calibrated 13.8 keV monochromator setting. For larger juvenile fish of diameter >3 mm, the CNR peak is broader, justifying the use of higher, more penetrating X-ray energies. Therefore, we chose the 16.2 keV monochromator setting for juvenile specimens.
 
-## Phase contrast optimization
+### Phase contrast optimization
 
 The coherence of synchrotron radiation allows for imaging that is sensitive to phase shifts in the incident X-ray wave front caused by variations in the real part of the complex index of refraction. A variety of approaches have been explored for performing quantitative phase-contrast tomography involving the use of grating analyzers or multiple measurements with different sample-scintillator distances (Paganin, 2006). The latter techniques rely on the fact that interference fringes develop in the transmitted intensity pattern as it propagates beyond the sample. Here, we were seeking a degree of edge perception resembling that seen in histology rather than quantitative phase-contrast. Juvenile (33 dpf) reconstructions at sample-to-scintillator distances (SSDs) of 10, 40, and 80 mm are reported in La Rivière et al. (2010). Herein, we generated larval (five dpf) reconstructions at SSDs of 20, 30, 40 and 50 mm. We focused on the zebrafish eye to take advantage of the periodicity of retinal photoreceptors (Figure 1—figure supplement 2). The SSD of 20 mm caused edges of nuclei to appear blurry. SSDs of 30 or 40 mm yielded a degree of edge perception resembling that achieved in glass slide histology. Subjectively SSDs of 50 mm and larger (data not shown) caused edge effects to begin to look ‘artificial’ compared with traditional histology and transmission electron microscopy. Exaggerated phase effects can diminish perceived resolution. Notably, an ‘ideal’ SSD depends upon the specific structures being defined. Line profiles through the periodic retinal cells show that higher SSDs give rise to line profiles with a higher modulation depth, with the greatest benefit achieved around 30 and 40 mm SSD and strong evidence of overshooting and bias above 50 mm SSD. Based on these considerations, we used an SDD of 30 mm for all subsequent acquisitions.
 
-## Image reconstruction, Image Processing and Visualization
+### Image reconstruction, Image Processing and Visualization
 
 CT reconstruction was done using TomoPy, an open-source package from Argonne National Labs (http://tomopy.readthedocs.io). Some of the image processing was conducted in Fiji/ImageJ2 (https://fiji.sc/). Software used for volumetric visualizations in this manuscript include Avizo version 9.4 (Thermo Fisher Scientific, Waltham, MA) and VGStudio Max 2.1 (Volume Graphics, Heidelberg, Germany). Videos 1 and 4 were generated in Avizo. Videos 2, 3, 5 and 6 were generated in VGStudio Max 2.1 using an intensity histogram adjusted to better discern otherwise faint or overlapping structures.
 
-## ViewTool
+### ViewTool
 
 The file sizes associated with synchrotron micro-CT are on the order of ~100 GB per larval or juvenile zebrafish, making scans difficult to view for people with standard computational resources. To allow users to inspect the data without having to download the full resolution volumes, we developed ViewTool, an open-access and web-based multiplanar viewer (http://3D.fish) (Figure 5—figure supplement 1). ViewTool is partly based on the open-access project OpenSeaDragon (https://openseadragon.github.io/), and combines radiology and digital pathology workflows into a seamless experience to provide user-friendly access to our 3D data. Orthogonal image z-stacks are downsampled using JPG compression before being served to end users through Amazon Web Services’ Simple Storage Service (AWS 3). For bandwidth considerations, only every fourth slice is currently shown in the viewer by default. These images are presented in three windows in a user’s browser that are spatially linked to the user’s mouse or multi-touch interface. The two planes orthogonal to the interrogated plane sync to the corresponding x,y mouse location. ViewTool’s code was written in client-side JavaScript, HTML and CSS, requires no download, and has no server requirement to run the basic implementation.
 
-## Landmark-based Cross-Atlas registration
+### Landmark-based Cross-Atlas registration
 
 Semi-automated segmentation was performed using Elastix version 4.8, an open-source registration software (Klein 2010, http://elastix.isi.uu.nl/). All registrations were performed in two parts: an affine registration for optimizing initialization positions of both images followed by a landmark based thin-plate spline registration. Landmarks were manually marked on corresponding anatomical regions. The detected brain regions were derived from segmented volumes of the larval (4 dpf) reference fish from the ViBE-Z zebrafish brain atlas (Ronneberger et al., 2012), which was used for the primary registration onto one of our 5 dpf samples. Validation of region detection was performed by cross-referencing to a histology-based developmental brain atlas (Wullimann and Mueller, 2005) and manual segmentation was used to correct areas of inaccurate registration. This process generated a foundation for the detection of brain regions in our remaining larval (5 dpf) specimens (n = 5 total samples). All other registrations used this segmented 5 dpf sample as the moving image for better detection accuracy with less extensive manual segmentation. Manual segmentations were performed using the open-source software, ITK-SNAP version 3.4 (Yushkevich et al., 2006) (http://www.itksnap.org). The ViBE-Z database and atlas are publicly available (http://vibez.informatik.uni-freiburg.de/) (Ronneberger et al., 2012).
 
-## Cell detection and counting
+### Cell detection and counting
 
-Using a supervised learning approach, we distinguished brain cell nuclei from background by training examples using Ilastik version 1.3 (Sommer et al., 2011), a simple, user-friendly, open-source tool for interactive image classification, segmentation and analysis (http://ilastik.org/). Specifically, three 75 µm3 regions were selected for training across the larval (5 dpf) zebrafish brain and notochord regions. Nuclei were manually segmented in 2D in each of three orthogonal views (sagittal, coronal, and axial). Features that were used in the classification including intensity (pixel value with various smoothing), edges (gradient, Laplacian of Gaussian, and difference of Gaussians) and texture (structured tensor of eigenvalues, Hessian of Gaussian eigenvalues). The random forest classifier assigned a probability of being a nucleus to any given pixel. We combined probabilities assigned from each orthogonal plane to obtain the probabilities in a given volume, Ptotal(x,y,z)=Pcoronal(x,y,z) ×Psaggitalx,y,z×Ptransverse(x,y,z). Original data were thresholded to show approximate locations of nuclei and their probabilities. The results of nuclear labeling based on the nuclear training set demonstrate that, as expected, brain cell nuclei have high probabilities, while blood vessels and background have low probabilities. From these measures, a probability threshold and size filter (80% or higher probability containing at least 8 voxels,~3.5 µm3) were used to detect individual cell nuclei. Cell nuclei in the same training regions were manually segmented in order to assess the accuracy of the automated segmentation results and to justify the probability threshold and size filter settings. Automatically detected cell nuclei were checked against those manually detected and categorized as true-positive (manual and automatic detected), false negative (manually detected but automatically undetected), or false positive (manually undetected but automatically detected). F1 score was optimized over different settings to balance precision and recall between manual and automated segmentation.
+Using a supervised learning approach, we distinguished brain cell nuclei from background by training examples using Ilastik version 1.3 (Sommer et al., 2011), a simple, user-friendly, open-source tool for interactive image classification, segmentation and analysis (http://ilastik.org/). Specifically, three 75 µm3 regions were selected for training across the larval (5 dpf) zebrafish brain and notochord regions. Nuclei were manually segmented in 2D in each of three orthogonal views (sagittal, coronal, and axial). Features that were used in the classification including intensity (pixel value with various smoothing), edges (gradient, Laplacian of Gaussian, and difference of Gaussians) and texture (structured tensor of eigenvalues, Hessian of Gaussian eigenvalues). The random forest classifier assigned a probability of being a nucleus to any given pixel. We combined probabilities assigned from each orthogonal plane to obtain the probabilities in a given volume, $P_{total}(x,y,z)=P_{coronal}(x,y,z)\timesP_{saggital}x,y,z\timesP_{transverse}(x,y,z)$. Original data were thresholded to show approximate locations of nuclei and their probabilities. The results of nuclear labeling based on the nuclear training set demonstrate that, as expected, brain cell nuclei have high probabilities, while blood vessels and background have low probabilities. From these measures, a probability threshold and size filter (80% or higher probability containing at least 8 voxels,~3.5 µm3) were used to detect individual cell nuclei. Cell nuclei in the same training regions were manually segmented in order to assess the accuracy of the automated segmentation results and to justify the probability threshold and size filter settings. Automatically detected cell nuclei were checked against those manually detected and categorized as true-positive (manual and automatic detected), false negative (manually detected but automatically undetected), or false positive (manually undetected but automatically detected). F1 score was optimized over different settings to balance precision and recall between manual and automated segmentation.
 
-## Resource sharing
+### Resource sharing
 
 ViewTool is publically available (http://3D.fish). Digital histology is publicly available from our Zebrafish Lifespan Atlas (http://bio-atlas.psu.edu) (Cheng, 2004). Registered and unregistered 8-bit reconstructions of the heads of five zebrafish larvae involved in analysis are available on the Dryad Digital Repository (https://doi.org/10.5061/dryad.4nb12g2), along with scripts written for cell nuclei detection, analysis, and sample registration. Other code used for analysis can be also be downloaded from the Dryad repository. Full resolution scans, including raw projection data, are available from researchers upon request as a download or by transfer to physical media.

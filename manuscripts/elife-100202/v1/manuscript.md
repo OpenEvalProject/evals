@@ -28,19 +28,19 @@
 
 ### Affiliations
 
-1. https://ror.org/034t30j35 CAS Key Laboratory of Mountain Ecological Restoration and Bioresource Utilization & Biodiversity Conservation Key Laboratory of Sichuan Province, Chengdu Institute of Biology, Chinese Academy of Sciences Chengdu China
-2. https://ror.org/05qbk4x57 College of Biological Sciences, University of Chinese Academy of Sciences Beijing China
+1. CAS Key Laboratory of Mountain Ecological Restoration and Bioresource Utilization & Biodiversity Conservation Key Laboratory of Sichuan Province, Chengdu Institute of Biology, Chinese Academy of Sciences Chengdu China ([ROR:034t30j35](https://ror.org/034t30j35))
+2. College of Biological Sciences, University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
 3. College of Pharmacy, Guizhou University of Traditional Chinese Medicine Guiyang China
-4. https://ror.org/034t30j35 International College, University of Chinese Academy of Sciences Beijing China
-5. https://ror.org/05k35b119 Entomologie, Staatliches Museum für Naturkunde Stuttgart Stuttgart Germany
-6. https://ror.org/034t30j35 CAS Key Laboratory of Zoological Systematics and Evolution, Institute of Zoology, Chinese Academy of Sciences Beijing China
-7. https://ror.org/05n911h24 Ecological Networks, Technical University Darmstadt, Schnittspahnstraße Darmstadt Germany
-8. https://ror.org/034t30j35 State Key Laboratory of Vegetation and Environmental Change, Institute of Botany, Chinese Academy of Sciences Beijing China
-9. https://ror.org/0245cg223 Department of Nature Conservation and Landscape Ecology, Albert-Ludwigs-University Freiburg Freiburg Germany
-10. https://ror.org/01y9bpm73 Forest Nature Conservation, University of Göttingen Göttingen Germany
-11. https://ror.org/05gqaka33 Institute of Biology/Geobotany and Botanical Garden, Martin Luther University Halle-Wittenberg Halle Germany
+4. International College, University of Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))
+5. Entomologie, Staatliches Museum für Naturkunde Stuttgart Stuttgart Germany ([ROR:05k35b119](https://ror.org/05k35b119))
+6. CAS Key Laboratory of Zoological Systematics and Evolution, Institute of Zoology, Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))
+7. Ecological Networks, Technical University Darmstadt, Schnittspahnstraße Darmstadt Germany ([ROR:05n911h24](https://ror.org/05n911h24))
+8. State Key Laboratory of Vegetation and Environmental Change, Institute of Botany, Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))
+9. Department of Nature Conservation and Landscape Ecology, Albert-Ludwigs-University Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
+10. Forest Nature Conservation, University of Göttingen Göttingen Germany ([ROR:01y9bpm73](https://ror.org/01y9bpm73))
+11. Institute of Biology/Geobotany and Botanical Garden, Martin Luther University Halle-Wittenberg Halle Germany ([ROR:05gqaka33](https://ror.org/05gqaka33))
 12. Key Laboratory of Animal Biodiversity Conservation and Integrated Pest Management Beijing China
-13. https://ror.org/034t30j35 State Key Laboratory of Integrated Pest Management, Institute of Zoology, Chinese Academy of Sciences Beijing China
+13. State Key Laboratory of Integrated Pest Management, Institute of Zoology, Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))
 
 † Corresponding author
 
@@ -60,15 +60,358 @@ Here, we use standardized trap nests for solitary cavity-nesting bees, wasps, an
 
 Overall, 34,398 brood cells were collected from 13,267 tubes across 5 years of sampling (2015, 2016, 2018, 2019, and 2020). Six families of hosts and seventeen families of parasitoids were identified. Among them, we found 56 host species (12 bees and 44 wasps, mean abundance and richness are 400 and 45, respectively, for each plot) and 50 parasitoid species (38 Hymenoptera and 12 Diptera, mean abundance and richness are 14 and 9, respectively, for each plot). The full species list and their abundances are given in Supplementary file 1a. Overall, our sampling was adequate for analysis (especially for hosts), as confirmed by the sampling completeness evaluation (Figure 1—figure supplement 1).
 
-## Community composition of hosts and parasitoids
+### Community composition of hosts and parasitoids
 
 Host species composition was significantly related to the species and phylogenetic composition of the trees and parasitoid communities (see nonmetric multidimensional scaling [NMDS] axis scores in Figure 1; i.e., preserving the rank order of pairwise dissimilarities between samples), as well as to canopy cover, tree phylogenetic mean pairwise distance (MPD), elevation, and eastness (sine-transformed radian values of aspect) (Figure 1a, Table 1, Supplementary file 1b). Parasitoid species composition was significantly associated with host phylogenetic diversity, tree functional diversity, tree MPD, eastness, and elevation, and was significantly related to tree species composition, host species composition, and canopy cover (Figure 1b, Table 1, Supplementary file 1c). Host phylogenetic composition was affected by tree species composition, tree MPD, tree functional diversity, canopy cover, eastness, elevation, and was especially affected by parasitoid species and phylogenetic composition (Figure 1c, Table 1, Supplementary file 1d). For parasitoid phylogenetic composition, significant relationships were found with tree species and phylogenetic composition, host species composition, tree functional diversity, canopy cover, elevation, and eastness (Figure 1d, Table 1, Supplementary file 1e). The PERMANOVA also highlighted the important role of canopy cover for host and parasitoid community (Supplementary file 1f–i). The Mantel test revealed a consistent pattern with the NMDS analysis, highlighting a pronounced relationship between the species composition of hosts and parasitoids (Supplementary file 1j). However, the correlation between the phylogenetic composition of hosts and parasitoids was not significant.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/100202/elife-100202-fig1-v1.jpg)
+
+**Figure 1.:** Ordination plot of the nonmetric multidimensional scaling (NMDS) analysis of (a) host species composition, (b) parasitoid species composition, (c) host phylogenetic composition, and (d) parasitoid phylogenetic composition across the study plots (filled circles) in the BEF-China experiment. Stress = 0.23, 0.23, 0.24, and 0.20, respectively. Arrows indicate significant (at p<0.05) correlations of environmental variables with NMDS axis scores. Lengths of arrows are proportional to the strength of the correlations. Red crosses refer to the host or parasitoid species in each community. See Supplementary file 1b–e in the Supplementary Materials for abbreviations and statistical values.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100202/elife-100202-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The sample coverage across different sample sizes for (a) hosts and (b) parasitoids.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/100202/elife-100202-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Levels of tree species richness indicated by color. Each study plot had a size of 25.8 m × 25.8 m.
+
+**Table 1.**
+ Environmental correlates of dissimilarity matrixes with predictors (nonmetric multidimensional scaling [NMDS] on Morisita-Horn dissimilarity) across the study plots.Significant p-values are indicated in bold. See Supplementary file 1b–e for the complete information.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Host species community</th>
+      <th>Parasitoid species community</th>
+      <th>Host phylogenetic community</th>
+      <th>Parasitoid phylogenetic community</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tree phylogeny NMDS1</td>
+      <td>0.225</td>
+      <td>0.422</td>
+      <td>0.386</td>
+      <td>0.274</td>
+    </tr>
+    <tr>
+      <td>Tree phylogeny NMDS2</td>
+      <td>0.003</td>
+      <td>0.12</td>
+      <td>0.128</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <td>Tree composition NMDS1</td>
+      <td>0.001</td>
+      <td>0.001</td>
+      <td>0.001</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Tree composition NMDS2</td>
+      <td>0.604</td>
+      <td>0.418</td>
+      <td>0.433</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td>Canopy cover</td>
+      <td>0.001</td>
+      <td>0.001</td>
+      <td>0.001</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Tree species richness</td>
+      <td>0.035</td>
+      <td>0.122</td>
+      <td>0.100</td>
+      <td>0.094</td>
+    </tr>
+    <tr>
+      <td>Elevation</td>
+      <td>0.005</td>
+      <td>0.007</td>
+      <td>0.001</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Eastness</td>
+      <td>0.079</td>
+      <td>0.045</td>
+      <td>0.04</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Northness</td>
+      <td>0.49</td>
+      <td>0.837</td>
+      <td>0.821</td>
+      <td>0.340</td>
+    </tr>
+    <tr>
+      <td>Slope</td>
+      <td>0.031</td>
+      <td>0.507</td>
+      <td>0.507</td>
+      <td>0.959</td>
+    </tr>
+    <tr>
+      <td>Tree FD (Rao’s Q)</td>
+      <td>0.094</td>
+      <td>0.019</td>
+      <td>0.021</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td>Tree MPD</td>
+      <td>0.005</td>
+      <td>0.021</td>
+      <td>0.013</td>
+      <td>0.223</td>
+    </tr>
+    <tr>
+      <td>Host phylogeny NMDS1</td>
+      <td>–</td>
+      <td>0.016</td>
+      <td>–</td>
+      <td>0.584</td>
+    </tr>
+    <tr>
+      <td>Host phylogeny NMDS2</td>
+      <td>–</td>
+      <td>0.027</td>
+      <td>–</td>
+      <td>0.914</td>
+    </tr>
+    <tr>
+      <td>Host composition NMDS1</td>
+      <td>–</td>
+      <td>0.001</td>
+      <td>–</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Host composition NMDS2</td>
+      <td>–</td>
+      <td>0.169</td>
+      <td>–</td>
+      <td>0.138</td>
+    </tr>
+    <tr>
+      <td>Parasitoid phylogeny NMDS1</td>
+      <td>0.001</td>
+      <td>–</td>
+      <td>0.001</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Parasitoid phylogeny NMDS2</td>
+      <td>0.462</td>
+      <td>–</td>
+      <td>0.058</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Parasitoid composition NMDS1</td>
+      <td>0.001</td>
+      <td>–</td>
+      <td>0.001</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Parasitoid composition NMDS2</td>
+      <td>0.014</td>
+      <td>–</td>
+      <td>0.001</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
 An effect of host composition on the composition of the parasitoid communities was further indicated by a significant parafit test (p=0.032) for testing the hypothesis of coevolution between a clade of hosts and a clade of parasites, suggesting nonrandom associations in the phylogenetic structure of parasitoid and host communities (Figure 2, Figure 2—figure supplement 1).
 
-## Host-parasitoid network associations
+![Figure 2.](https://cdn.elifesciences.org/articles/100202/elife-100202-fig2-v1.jpg)
+
+**Figure 2.:** Each rectangle represents a different superfamily (for host species) or family (for parasitoid species). H1: Pompilidae, H2: Apoidea, H3: Vespidae; P1: Sarcophagidae, P2: Phoridae, P3: Bombyliidae, P4: Trigonalyidae, P5: Mutillidae, P6: Megachilidae, P7: Chrysididae, P8: Ichneumonidae, P9: Chalcidoidea. The trophic network of hosts and parasitoids was nonrandomly structured (parafit test: p=0.032). Host and parasitoid species names are given in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100202/elife-100202-fig2-figsupp1-v1.jpg)
+
+### Host-parasitoid network associations
 
 The linear regression model results indicated that host vulnerability and linkage density were significantly positively associated with tree species richness. However, robustness of parasitoids was negatively correlated with tree species richness, while other environmental covariates had no significant effects (Table 2, Figure 3; except for elevation, which was marginally significantly related to robustness). Interaction evenness was significantly negatively associated with canopy cover, and interaction evenness was also negatively related to eastness (Figure 4c; Table 2). Parasitoid generality was only marginally associated with canopy cover, and was not related to tree species richness or the other environmental variables. In the alternative models (tree species richness replaced by tree MPD), host vulnerability and linkage density were significantly positively related to tree MPD (Figure 4a and b; Supplementary file 1k), while robustness of parasitoids was negatively related to tree MPD (Figure 4—figure supplement 1, Supplementary file 1k). The results of other network metrics (parasitoid generality and interaction evenness) were consistent with those of the primary models. Tree mean nearest taxon distance (MNTD) was unrelated to any network indices. It should be noted that the effects of tree species richness on host-parasitoid networks (i.e., host generality, parasitoid vulnerability, and linkage density) are more pronounced at one site. Since no directional differences were observed in the effects of tree species richness (Table 2), with all effects of tree species richness being either positive or negative but one being significant, we have presented the overall pattern of these effects on the network indices (Figures 3 and 4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/100202/elife-100202-fig3-v1.jpg)
+
+**Figure 3.:** Community-level relationships of network between tree species richness and (a) vulnerability, (b) linkage density, and (c) robustness of parasitoids.Values were adjusted for covariates of the final regression model. Regression lines (with 95% confidence bands) show significant (p<0.05) relationships. Note that axes are on a log scale for tree species richness.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100202/elife-100202-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Values and colored circles are Pearson’s correlation coefficients r, significances are indicated by asterisks: ***p<0.001, **p<0.01, *p≤0.05. Tree MPD (tree phylogenetic mean pairwise phylogenetic distance), tree FD (tree functional diversity expressed as Rao’s Q), tree MNTD (tree mean nearest taxon distance).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/100202/elife-100202-fig4-v1.jpg)
+
+**Figure 4.:** Community-level relationships of network between tree phylogenetic mean pairwise distance and (a) vulnerability and (b) linkage density and community-level relationships of network between canopy cover, and (c) interaction evenness.Values were adjusted for covariates of the final regression model. Regression lines (with 95% confidence bands) show significant (p<0.05) relationships.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100202/elife-100202-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Values were adjusted for covariates of the final regression model (i.e., partial residuals shown on y-axis). Regression lines (with 95% confidence bands) show significant (p<0.05) relationships.
+
+**Table 2.**
+ Summary results of linear models for parasitoid generality, host vulnerability, robustness, linkage density, and interaction evenness of host-parasitoid network indices at the community level across the tree species richness gradient.Standardized parameter estimates (with standard errors, t- and p-values) are shown for the variables retained in the minimal models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Est.</th>
+      <th>SE</th>
+      <th>t</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Parasitoid generality</td>
+      <td>Intercept</td>
+      <td>0.176</td>
+      <td>0.016</td>
+      <td>10.96</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Canopy cover</td>
+      <td>0.033</td>
+      <td>0.016</td>
+      <td>2.03</td>
+      <td>0.046</td>
+    </tr>
+    <tr>
+      <td>Host vulnerability</td>
+      <td>Intercept</td>
+      <td>2.873</td>
+      <td>0.08</td>
+      <td>35.89</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Elevation</td>
+      <td>–0.140</td>
+      <td>0.08</td>
+      <td>–1.66</td>
+      <td>0.101</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tree species richness: Site A</td>
+      <td>0.150</td>
+      <td>0.13</td>
+      <td>1.20</td>
+      <td>0.234</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tree species richness: Site B</td>
+      <td>0.230</td>
+      <td>0.11</td>
+      <td>2.12</td>
+      <td>0.037</td>
+    </tr>
+    <tr>
+      <td>Robustness of parasitoids</td>
+      <td>Intercept</td>
+      <td>0.630</td>
+      <td>0.01</td>
+      <td>84.43</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tree species richness: Site A</td>
+      <td>–0.022</td>
+      <td>0.01</td>
+      <td>–1.99</td>
+      <td>0.049</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tree species richness: Site B</td>
+      <td>–0.019</td>
+      <td>0.01</td>
+      <td>–1.90</td>
+      <td>0.061</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Linkage density</td>
+      <td>Intercept</td>
+      <td>2.038</td>
+      <td>0.04</td>
+      <td>50.99</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Elevation</td>
+      <td>–0.078</td>
+      <td>0.04</td>
+      <td>–1.85</td>
+      <td>0.069</td>
+    </tr>
+    <tr>
+      <td>Tree species richness: Site A</td>
+      <td>0.106</td>
+      <td>0.06</td>
+      <td>1.70</td>
+      <td>0.094</td>
+    </tr>
+    <tr>
+      <td>Tree species richness: Site B</td>
+      <td>0.106</td>
+      <td>0.04</td>
+      <td>2.68</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>0.511</td>
+      <td>0.009</td>
+      <td>59.12</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td>Interaction evenness</td>
+      <td>Canopy cover</td>
+      <td>–0.037</td>
+      <td>0.007</td>
+      <td>–5.06</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Eastness</td>
+      <td>–0.018</td>
+      <td>0.007</td>
+      <td>–2.50</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 The results of the null model analysis suggested that our metrics calculated by the observed network were significantly different from a random distribution (72, 71, and 77 out of 85 values for parasitoid generality, host vulnerability, and linkage density, respectively; all values for robustness, and interaction evenness), strongly demonstrating that interactions between species were not driven by random processes.
 
@@ -76,7 +419,7 @@ The results of the null model analysis suggested that our metrics calculated by 
 
 Our study demonstrates that tree species richness and phylogenetic diversity play key roles in modulating interacting communities of hosts and parasitoids. These interactions are further structured by the phylogenetic associations between hosts and parasitoids. Moreover, canopy cover partly determined host-parasitoid network patterns, including host vulnerability, linkage density, and interaction evenness. To some extent, this result supports a recent finding that the structure of host-parasitoid networks is also mediated by changes in microclimate (Fornoff et al., 2021), which is directly related to canopy cover. These patterns were highly associated with multiple tree diversity metrics (tree species, phylogenetic, and functional diversity), and compositional changes which are key to understand how host-parasitoid interactions may be impacted by biodiversity loss of lower trophic levels in food webs through trait- and phylogeny-based processes.
 
-## Community composition associations
+### Community composition associations
 
 Host species composition was influenced by several factors, including the species and phylogenetic composition of trees and parasitoids, tree diversity (species richness and MPD), and other abiotic factors such as elevation and slope (Figure 1a; Table 1). The effects of tree diversity and composition on host species composition agree with previous study where solitary bee and wasp species compositions were related to plant community structure (e.g., Loyola and Martins, 2008). It seems likely that these results are based on bee linkages to pollen resources and predatory wasp linkages to the diverse of food sources, which may themselves be closely linked to resource heterogeneity increasing with tree species richness (Reitalu et al., 2019; Staab and Schuldt, 2020).
 
@@ -86,7 +429,7 @@ Both host and parasitoid phylogenetic compositions were related to tree species 
 
 Moreover, the species and phylogenetic compositions of hosts and parasitoids were also related to canopy cover, which has been considered especially important to microclimate (Sobek et al., 2009; Fornoff et al., 2021). In future studies, it will be useful to incorporate other, more direct metrics of microclimate, such as local temperature and humidity, to determine the proximal drivers of these microclimatic effects (Ma et al., 2010; Fornoff et al., 2021).
 
-## Community-level host-parasitoid networks
+### Community-level host-parasitoid networks
 
 Tree species richness did not significantly influence the diversity of hosts targeted by parasitoids (parasitoid generality), but caused a significant increase in the diversity of parasitoids per host species (host vulnerability) (Figure 3a; Table 2). This is likely because niche differentiation often influences network specialization via potential higher resource diversity in plots with higher tree diversity (López-Carretero et al., 2014). Such positive relationship between host vulnerability and tree species richness suggested that host-parasitoid interactions could be driven through bottom-up effects via benefit from tree diversity. For example, parasitoid species diversity increases more than host diversity with increasing tree species richness (Guo et al., 2021), resulting in an increase of host vulnerability at community level. According to the enemies hypothesis (Root, 1973), which predicts a positive effects of increasing plant richness on natural enemies of herbivores, the higher trophic levels in our study (e.g., predators and parasitoids) would benefit from tree diversity and, thereby, regulate herbivores (Staab and Schuldt, 2020). Indeed, previous studies at the same site found that bee parasitoid richness and abundance were positively related to tree species richness, but not to the abundance and richness of their bee hosts (Fornoff et al., 2021; Guo et al., 2021). Because our dataset considered all hosts and reflects an overall pattern of host-parasitoid interactions, the effects of tree species richness on parasitoid generality might be more complex and difficult to predict, as we found that neither tree species richness nor tree MPD were related to parasitoid generality. Future research should further explore these patterns by incorporating temporal scales and decomposing interactions across different functional groups (e.g., pollinators such as bees and predators such as wasps).
 
@@ -96,54 +439,54 @@ Similar to tree species richness, tree MPD was also positively correlated with h
 
 Interaction evenness was significantly negatively related to canopy cover (Figure 4c), further reinforcing the important role of canopy cover-modulated microclimate (likely temperature and humidity) for trophic interactions (Sobek et al., 2009; Fornoff et al., 2021). Our results agree with a previous study on ants, where plant-insect interactions were more even with more open canopies (Dáttilo and Dyer, 2014). In our case, canopy cover might change Hymenoptera species evenness and then further influence interaction evenness. Certain host species tended to nest in plots with higher canopy cover, which might decrease the interaction evenness by favoring parasitoids of fewer, more dominant hosts. This pattern would become more significant when more host and parasitoid species are in a plot, given the positive relationship between higher trophic level diversity and canopy cover.
 
-## Future prospects
+### Future prospects
 
 Overall, our study enables new insights into the dynamics of host-parasitoid interactions under varying canopy conditions, an important step toward building a synthetic model for such biodiversity. A key finding was that although parasitoids and hosts respond to tree species richness, the effects of parasitoids on hosts were more pronounced than those of hosts on parasitoids. However, whether this pattern holds for other antagonistic interactions requires further investigation. Different trophic levels and functional groups of species responded differently to experimental changes in plant communities (Fornoff et al., 2021; Guo et al., 2021). This highlights the complexities of building multitrophic networks and calls for more studies across habitat types and taxa, to test the generality of our findings. Future studies should also consider the role of host/parasitoid functional traits, because they might play a critical role in modifying network structures and ecosystem functioning.
 
 ## Materials and methods
 
-## Study sites design
+### Study sites design
 
 This study was conducted in the BEF-China biodiversity experiment, which is the largest tree diversity experiment worldwide. The experiment is located in a subtropical forest near Xingangshan, Jiangxi province, south-east China (29°08′–29°11′N, 117°90′–117°93′E). The mean annual temperature is 16.7°C and mean annual precipitation 1821 mm (Yang et al., 2013). The experiment includes two study sites (Site A and Site B), 4 km apart from each other, that were established in 2009 (Site A) and 2010 (Site B), respectively. A total of 566 plots (25.8 m×25.8 m) were designed on the two sites, and per plot 400 trees were initially planted in 20 rows and 20 columns with a planting distance of 1.29 m. A tree species richness gradient (1, 2, 4, 8, 16, and 24 species) was established at each site, based on a species pool of 40 local, broadleaved tree species (Bruelheide et al., 2014). The tree species pools of the two plots are nonoverlapping (16 species for each site). The composition of tree species within the study plots is based on a ‘broken-stick’ design (see Bruelheide et al., 2014).
 
 For our study, at both sites (Site A and Site B) eight plots of each tree species richness level (1, 2, 4, 8) were randomly selected, as well as six and two plots of 16 and 24 mixtures. In addition, at Site B eight additional monocultures were sampled (Fornoff et al., 2021), resulting in 48 plots in Site B, including 16 monocultures, eight plots for each 2, 4, 8 mixtures and six and two plots for 16 and 24 mixtures (there are 8 overlapping tree species across 24 mixtures at the two sites). In total, 88 study plots were used (40 plots on Site A and 48 plots on Site B, see Figure 1—figure supplement 2).
 
-## Sampling
+### Sampling
 
 We collected trap nests monthly to sample solitary bees and wasps (Staab et al., 2018) in the 88 plots from September to November in 2015 and April to November in 2016, 2018, 2019, and 2020. For each plot, we installed two poles with trap nests (11 m apart from each other and 9 m away from the nearest adjacent plots) along a SW-NE diagonal (following the design of Ebeling et al., 2012). Each pole stood 1.5 m above ground, and each trap nest consisted of two PVC tubes (length: 22 cm ×diameter: 12.5 cm) filled with 75 ± 9 (SD) reed internodes of 20 cm length and diameters varying between 0.1 and 2.0 cm (Staab et al., 2014; Fornoff et al., 2021). Every month, we sampled the reeds with nesting hymenopterans and replaced them with internodes of the same diameter. All the samples were reared in glass test tubes under ambient conditions until specimens hatched. We identified hatched hosts and parasitoids to species or morphospecies (Supplementary file 1a) based on reference specimens (vouchered at the Institute of Zoology, CAS, Beijing). We were interested in the general patterns of host-parasitoid interactions at the community level, so for the analysis we did not distinguish between the two life-history strategies of parasitoids (true parasitoids and kleptoparasitoids, including hymenopteran and dipteran parasitoids) because they both have the same ecological result, death of host brood cells. We evaluated our sampling completeness with r package ‘iNEXT’ (Hsieh et al., 2016).
 
-## DNA extraction and amplification
+### DNA extraction and amplification
 
 All specimens were sequenced for a region of the mitochondrial cytochrome c oxidase subunit I (COI) gene (Hebert et al., 2003). We extracted whole-genomic DNA of hosts and parasitoids using DNeasy Blood & Tissue Kits (QIAGEN GmbH, Hilden, Germany), following the manufacturer’s protocols. COI sequences of samples were amplified using universal primer pairs, LCO1490 (GGTCAACAAATCATAAAGATATTGG) as the forward primer and HCO2198 (TAAACTTCAGGGTGACCAAAAAATCA) or HCOout (CCAGGTAAAATTAAAATATAAACTTC) as the reverse primer. We carried out polymerase chain reactions (PCRs) in 96-well plates with 30 μl reactions containing 10 μl ddH2O, 15 μl Premix PrimeSTAR HS (TaKaRa), 1 µl of each primer at 10 μM, and 3 μl template genomic DNA using a thermo cycling profile. The PCR procedure is as follows: 94°C for 1 min; 94°C for 1 min, 45°C for 1.5 min and 72°C for 1.5 min, cycle for 5 times; 94°C for 2 min, 58°C for 1.5 min and 72°C for 1 min, cycle for 36 times; 72°C for 5 min. We performed all PCRs on an Eppendorf Mastercycler gradient, which were then visualized on a 1% agarose gel. Samples with clean single bands were sequenced after PCR purification using BigDye v3.1 on an ABI 3730xl DNA Analyser (Applied Biosystems).
 
-## Sequence alignment and phylogenetic analysis
+### Sequence alignment and phylogenetic analysis
 
 We applied MAFFT (Katoh et al., 2002) to align all sequences, then translated the nucleotides into amino acids via MEGA v7.0 (Kumar et al., 2016) to check for the presence of stop codons with manual adjustments. Host and parasitoid sequences were then aligned against the references using a Perl-based DNA barcode aligner (Chesters, 2019).
 
 We employed two strategies to improve the phylogenetic structure of a DNA barcode phylogeny, which demonstrably improve resulting phylogeny-based diversity indices (Macías-Hernández et al., 2020). These include the integration of (a) molecular sequences of the plot data and (b) phylogenetic relationships from other molecular datasets. Integration was achieved following Wang et al., 2020, and Chesters, 2020: reference DNA barcodes of Hymenoptera and Diptera were downloaded from the BOLD API (https://bench.boldsystems.org/index.php/API_Public), which were variously processed (e.g., to retain only fully taxonomically labeled barcodes, to remove low-quality or mislabeled entries, and to dereplicate to a single exemplar per species), and then aligned (Chesters, 2019). A single outgroup was included for which we selected the most appropriate insect order sister to Diptera and Hymenoptera (Misof et al., 2014), a representative of the order Psocoptera (Psocidae, Psocus leidyi). We then constructed a phylogeny of the references and subjects, with references constrained according to the method described earlier (Chesters, 2020). A number of backbone topologies were integrated for setting hard and soft constraints, including a transcriptomics-derived topology (Chesters, 2020), a mitogenome tree of insects (Chesters, 2017), Diptera-specific trees (Wiegmann et al., 2011; Cranston et al., 2012; Ament, 2017), and Hymenoptera-specific trees (Peters et al., 2011; Branstetter et al., 2017; Cardinal, 2018). The constrained inference was conducted with RaxML version 8 (Stamatakis, 2014) under the standard GTRGAMMA DNA model with 24 rate categories. According to the backbone trees used, most taxa present were monophyletic with a notable exception of Crabronidae, for which there is emerging phylogenomic evidence of its polyphyly (Sann et al., 2018).
 
-## Tree phylogenetic diversity, functional diversity, and environmental covariates
+### Tree phylogenetic diversity, functional diversity, and environmental covariates
 
 The phylogenetic diversity of the tree communities was quantified by calculating wood volume-weighted phylogenetic MPD (Tucker et al., 2017). Tree wood volume was estimated from data on basal area and tree height (Bongers et al., 2021) measured in the center of each plot. Moreover, to represent variations toward the tips of the phylogeny beyond MPD, we additionally calculated MNTD, which is a measure that quantifies the distance between each species and its nearest neighbor on the phylogenetic tree (Webb, 2000). Phylogenetic metrics of trees (tree MPD and MNTD) were calculated based on a maximum likelihood phylogenetic tree available for the tree species in our study area (Michalski et al., 2017). Considering that predatory wasps mainly feed on herbivorous caterpillars, we calculated tree functional diversity to test the indirect effects on hymenopteran communities and relevant network indices. Specifically, seven leaf traits were used for calculation of tree functional diversity, which was calculated as the MPD in trait values among tree species, weighted by tree wood volume, and expressed as Rao’s Q (Ricotta and Moretti, 2011), including specific leaf area, leaf toughness, leaf dry matter content, leaf carbon content, ratio of leaf carbon to nitrogen, leaf magnesium content, and leaf calcium content. These functional traits were commonly related to higher trophic levels in our study area, such as herbivores and predators (Wang et al., 2020; Chen et al., 2023), which are the main food resources of our predatory wasps. All of the traits were measured on pooled samples of sun-exposed leaves of a minimum of five tree individuals per species following standard protocols (Pérez‐Harguindeguy et al., 2003).
 
 As our analyses mainly compare community patterns among study plots, we additionally considered potential effects of environmental variation by using plot means of slope, elevation, ‘eastness’ (sine-transformed radian values of aspect), and ‘northness’ (cosine-transformed radian values of aspect) as environmental covariates that characterize the heterogeneity of the study plots. We also accounted for the potential effects of canopy cover at plot level for host-parasitoid interactions, as it can structure hymenopteran communities (Perlík et al., 2023). Canopy cover was calculated as in Fornoff et al., 2021, based on hemispherical photographs.
 
-## Statistical analysis
+### Statistical analysis
 
 All analyses were conducted in R 4.1.2 with the packages ape, vegan, picante, bipartite, and caper (http://www.R-project.org). Prior to analysis, samples from the 5 years (2015, 2016, 2018, 2019, and 2020) were pooled at the plot level to discern overall and generalizable effects permeating this system. We excluded three plots with no living trees because of high mortality, resulting in 85 plots in the final analysis.
 
-## Composition of trees, hosts, and parasitoids
+### Composition of trees, hosts, and parasitoids
 
 The species and phylogenetic composition of trees, hosts, and parasitoids were quantified with NMDS analysis based on Morisita-Horn distances. The minimum number of required dimensions in the NMDS based on the reduction in stress value was determined in the analysis (k=2 in our case). We centered the results to acquire maximum variance on the first dimension, and used the principal components rotation in the analysis. The phylogenetic composition was calculated by MPD among the host or parasitoid communities per plot with the R package ‘picante’ applying the ‘mpd’ function. To test the influence of study plot heterogeneity on these relationships, we fitted their standardized values (see vectors in Supplementary file 1b) to the ordination on the basis of a regression with the NMDS axis scores (Quinn and Keough, 2002). NMDS was widely used to summarize the variation in species composition across plots. The two axes extracted from the NMDS represent gradients in community composition, where each axis reflects a subset of the compositional variation. These axes should not be interpreted in isolation, as the overall species composition is co-determined by their combined variation. For clarity, results were interpreted based on the relationships of variables with the compositional gradients captured by both axes together. For the analysis, we considered tree species richness, tree functional and phylogenetic diversity, canopy cover, and environmental covariates (elevation, eastness, northness, and slope) as plot characteristics. We assessed the significance of correlations with permutation tests (permutation: n=999). To strengthen the robustness of our findings based on NMDS, we further validated the composition results using Mantel test and PERMANOVA (with ‘adonis2’) for correlation between communities and relationships between communities and environmental variables.
 
-## Phylogenetic match of hosts and parasitoids
+### Phylogenetic match of hosts and parasitoids
 
 In addition, we used a parafit test (9999 permutations) with the R package ‘ape’ to test whether the associations were nonrandom between hosts and parasitoids. This is widely used to assess host-parasite co-phylogeny by analyzing the congruence between host and parasite phylogenies using a distance-based matrix approach. The species that were not attacked by parasitoids or failed to generate sequences were excluded from the analyses. For species abundance and composition, see Supplementary file 1a.
 
-## Host-parasitoid interactions
+### Host-parasitoid interactions
 
-We constructed quantitative host-parasitoid networks at community level with the R package ‘bipartite’ for each plot of the two sites. Bees and wasps were considered together as hosts because there were too few abundant bee species to analyze separate interaction networks for bees and wasps. We calculated five indices to quantitatively characterize the structure of the interaction networks (Blüthgen and Staab, 2024): weighted parasitoid generality (effective number of host species per parasitoid species), weighted host vulnerability (effective number of parasitoid species attacking a host species), robustness (degree of network stability), linkage density (degree of network specialization), and interaction evenness (degree of network evenness). Parasitoid generality was defined as the weighted mean number of host species per parasitoid species, Gqw =∑j=1JAjm2Hj, with Aj being the number of interactions of parasitoid species j, m the total number of interactions of all species, and Hj the Shannon diversity of interactions of parasitoid species j. Host vulnerability was the weighted mean number of parasitoid species per host species, vulnerability =∑i=1IAim2Hi (Bersier et al., 2002). Robustness was defined as the area under the extinction curve, reflecting the degree of decreases of one trophic level with the random elimination species of the other trophic levels, here using the robustness index for higher trophic levels (i.e., parasitoids). For linkage density, Lq=0.5(∑j=1JAjm2Hj+∑i=1IAim2Hi), we used the realized proportion of possible links between the two trophic levels as the mean number of interactions per species across the entire network (Tylianakis et al., 2007). Interaction evenness was defined as ES = −∑i∑jpijlnpij/lnIJ, which is used to describe Shannon’s evenness of network interactions (Dormann et al., 2009). To check whether all network indices significantly differ from chance across all study plots, we used Patefield null models (Dormann et al., 2009) to compare observed indices with simulated values (10,000 times).
+We constructed quantitative host-parasitoid networks at community level with the R package ‘bipartite’ for each plot of the two sites. Bees and wasps were considered together as hosts because there were too few abundant bee species to analyze separate interaction networks for bees and wasps. We calculated five indices to quantitatively characterize the structure of the interaction networks (Blüthgen and Staab, 2024): weighted parasitoid generality (effective number of host species per parasitoid species), weighted host vulnerability (effective number of parasitoid species attacking a host species), robustness (degree of network stability), linkage density (degree of network specialization), and interaction evenness (degree of network evenness). Parasitoid generality was defined as the weighted mean number of host species per parasitoid species, Gqw =$\sumj=1J\frac{A_{j}}{m}2^{H_{j}}$, with Aj being the number of interactions of parasitoid species j, m the total number of interactions of all species, and Hj the Shannon diversity of interactions of parasitoid species j. Host vulnerability was the weighted mean number of parasitoid species per host species, vulnerability =$\sumi=1I\frac{A_{i}}{m}2^{H_{i}}$ (Bersier et al., 2002). Robustness was defined as the area under the extinction curve, reflecting the degree of decreases of one trophic level with the random elimination species of the other trophic levels, here using the robustness index for higher trophic levels (i.e., parasitoids). For linkage density, $L_{q}=0.5(\sumj=1J\frac{A_{j}}{m}2^{H_{j}}+\sumi=1I\frac{A_{i}}{m}2^{H_{i}})$, we used the realized proportion of possible links between the two trophic levels as the mean number of interactions per species across the entire network (Tylianakis et al., 2007). Interaction evenness was defined as ES = $−\sumi\sumjp_{ij}lnp_{ij}/lnIJ$, which is used to describe Shannon’s evenness of network interactions (Dormann et al., 2009). To check whether all network indices significantly differ from chance across all study plots, we used Patefield null models (Dormann et al., 2009) to compare observed indices with simulated values (10,000 times).
 
-## Linear models
+### Linear models
 
 To test the effects of tree species richness, tree phylogenetic, and functional diversity, as well as canopy cover and the other environmental covariates (including slope, elevation, eastness, and northness) on the five network indices (vulnerability, generality, linkage density, interaction evenness, robustness of parasitoids), we used simple linear models. For our analyses, we included the interactions between site and tree species richness, site and tree MPD, and site and tree functional diversity as predictors. Given the strong correlation between tree species richness and tree MPD (Pearson’s r=0.74, p<0.01), we excluded tree MPD in the models where tree species richness was a predictor. To evaluate the potential effects caused by tree MPD, we also ran alternative models where tree species richness was replaced with tree MPD. We simplified all models by gradually removing nonsignificant factors to obtain the most parsimonious model with the lowest AICc (Table 2, Supplementary file 1k). To ensure that the analyses were not strongly affected by multicollinearity, the correlations among all predictors were tested (Figure 3—figure supplement 1), and variance inflation factors of our statistical models were checked.

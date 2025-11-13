@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03xc55g68 Faculty of Medical Sciences, Mohammed VI Polytechnic University (UM6P) Benguerir Morocco
+1. Faculty of Medical Sciences, Mohammed VI Polytechnic University (UM6P) Benguerir Morocco ([ROR:03xc55g68](https://ror.org/03xc55g68))
 
 † Corresponding author
 
@@ -31,6 +31,53 @@ Compounding this issue is the underdeveloped research culture in some institutio
 Despite these challenges, I am witnessing a positive shift in Moroccan academia. Those who once went abroad as part of the brain drain are now returning home to take up high ranking positions at Moroccan universities. These researchers care about their country and want to make a difference, and their expertise and global connections are helping less experienced researchers in Morocco to overcome the challenges mentioned above.
 
 Morale is also high among PhD holders. In a short informal survey I conducted September, 32/49 respondents rated their experience of doing a PhD in Morocco as 'good' and 5/49 rated it as 'very good', compared with 7/49 for 'bad' and 2/49 for 'very bad'. Reasons for pursuing or not pursing a PhD in Morocco are listed in Table 1.
+
+**Table 1.**
+ Reasons for pursuing or not pursuing a PhD in Morocco.In a short informal survey, researchers were presented with various reasons for pursing and not pursuing a PhD in Morocco. The top five reasons for both options are listed in order in the table, along with the number of researchers who choose each reason. 49 researchers answered this question, and it was possible select more than one reason for each option. More details are available at the following links: [code]; [data].
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reasons to pursue a PhD</th>
+      <th></th>
+      <th>Reasons not to pursue a PhD</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Access to diverse research opportunities</td>
+      <td>28</td>
+      <td>Limited research funding</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>Growing academic community</td>
+      <td>23</td>
+      <td>Limited post-PhD career options</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>Opportunities for international collaboration</td>
+      <td>22</td>
+      <td>Fewer advanced facilities</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Exposure to unique cultural perspectives</td>
+      <td>13</td>
+      <td>Limited access to cutting-edge resources</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Support for innovative projects</td>
+      <td>10</td>
+      <td>Bureaucratic hurdles</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
 
 Investment in scientific research is also increasing. Morocco is home to 39 research institutions (according to the Scimago database), and the Minister of Higher Education, Scientific Research, and Innovation allocated $1.412 billion to support research and education this year (Royaume du Maroc, 2023). Additionally, the World Bank recently approved a $300 million loan to help transform higher education and innovation in Morocco (World Bank, 2023; Rahhou, 2023a). And last year it was announced that my university, Mohammed VI Polytechnic University (UM6P) in Benguerir, was due to receive approximately $1 billion from the OCP Foundation (a charitable organization set up by the Office Chérifien des Phosphates, a state-owned mining company; Rahhou, 2023b). The government has also introduced a $700 per month scholarship for PhD students at public universities (Oukerzaz, 2024), with some institutions, such as mine, offering up to $1,000 per month in excellence scholarships (https://www.um6p.ma/fr/doctorat).
 

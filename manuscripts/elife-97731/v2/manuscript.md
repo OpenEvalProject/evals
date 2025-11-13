@@ -28,21 +28,21 @@
 
 ### Affiliations
 
-1. https://ror.org/02y72wh86 Department of Psychology, Queen's University Kingston Canada
-2. https://ror.org/030hj3061 Mathematical and Electrical Engineering Department, IMT Atlantique Brest France
-3. https://ror.org/00ayhx656 School of Psychology, University of Sussex Brighton United Kingdom
-4. https://ror.org/00f54p054 Department of Psychology, Stanford University Stanford United States
-5. https://ror.org/03rmrcq20 Faculty of Medicine, University of British Columbia Vancouver Canada
-6. https://ror.org/0387jng26 Department of Neurology, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
+1. Department of Psychology, Queen's University Kingston Canada ([ROR:02y72wh86](https://ror.org/02y72wh86))
+2. Mathematical and Electrical Engineering Department, IMT Atlantique Brest France ([ROR:030hj3061](https://ror.org/030hj3061))
+3. School of Psychology, University of Sussex Brighton United Kingdom ([ROR:00ayhx656](https://ror.org/00ayhx656))
+4. Department of Psychology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+5. Faculty of Medicine, University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
+6. Department of Neurology, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
 7. Max Planck School of Cognition Leipzig Germany
-8. https://ror.org/006jb1a24 School of Psychology and Sport Science, Bangor University Gwynedd United Kingdom
-9. https://ror.org/05ghs6f64 Montreal Neurological Institute-Hospital, McGill University Montreal Canada
+8. School of Psychology and Sport Science, Bangor University Gwynedd United Kingdom ([ROR:006jb1a24](https://ror.org/006jb1a24))
+9. Montreal Neurological Institute-Hospital, McGill University Montreal Canada ([ROR:05ghs6f64](https://ror.org/05ghs6f64))
 10. Centre de Recherche de l'Institut Universitaire de Geriatrie de Montreal Montreal Canada
-11. https://ror.org/01bfgxw09 Child Mind Institute New York United States
-12. https://ror.org/02fgakj19 Integrative Neuroscience and Cognition Center, University of Paris Paris France
-13. https://ror.org/02jx3x895 Division of Psychology & Language Sciences, University College London London United Kingdom
-14. https://ror.org/02jx3x895 Institute of Psychiatry, Psychology & Neuroscience, University College London London United Kingdom
-15. https://ror.org/0220mzb33 Department of Neuroimaging at the Institute of Psychiatry, Psychology and Neuroscience, King's College London London United Kingdom
+11. Child Mind Institute New York United States ([ROR:01bfgxw09](https://ror.org/01bfgxw09))
+12. Integrative Neuroscience and Cognition Center, University of Paris Paris France ([ROR:02fgakj19](https://ror.org/02fgakj19))
+13. Division of Psychology & Language Sciences, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+14. Institute of Psychiatry, Psychology & Neuroscience, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+15. Department of Neuroimaging at the Institute of Psychiatry, Psychology and Neuroscience, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
 
 † Corresponding author
 
@@ -66,19 +66,27 @@ One challenge that arises when attempting to map the dynamics of thought onto br
 
 ## Results
 
-## Analytic goal
+### Analytic goal
 
 The goal of our study, therefore, was to understand the association between patterns of brain activity over time during movie clips in one group of participants and the patterns of thought that participants reported at the corresponding moment in a different set of participants (see Figure 1). This can be conceptualized as identifying the mapping between two multi-dimensional spaces, one reflecting the time series of brain activity and the other describing the time series of ongoing experience (see Figure 1 right-hand panel). In our study, we selected three 11 mine clips from movies (Citizenfour, Little Miss Sunshine and 500 Days of Summer) for which recordings of brain data in fMRI already existed (n=44) (Aliko et al., 2020; Figure 1, Sample 1). A second set of participants (n=120) viewed the same movie clips, providing intermittent reports on their thought patterns using mDES (Figure 1, Sample 2). Our goal was to understand the mapping between the patterns of brain activity at each moment of the film and the reports of ongoing thought recorded at the same point in the movies. We first applied Principal Components Analysis (PCA) to the mDES data to reduce these data to a set of four simple dimensions that explained the reported thought pattern. These are represented as word clouds in Figure 1. We performed two analyses to understand the associations between the reported thought patterns and brain activity at each point in the film. Our first analysis computed the mean time series of experience for each of the four thought pattern components (averaged across participants in Sample 2) and used this as a regressor of interest in a model predicting brain activity recorded from each participant from Sample 1. We refer to this as a voxel-space analysis, and it allowed us to perform a whole-brain search of the mapping between activity in each region to each dimension of ongoing thought. In our second analysis, we projected the grand mean of brain activity for each volume of each film against the first five dimensions of brain activity from a decomposition of the Human Connectome Project (HCP) resting state date to form a 5D ‘brain space’ that describes the trajectory of the brain during each movie (Figure 1, note only the first four dimensions are shown; Margulies et al., 2016). We used the results of this analysis to produce coordinates for each TR of each movie, which were used as explanatory variables in a linear mixed model (LMM) in which the location of each mDES probe in the ‘thought space’ described by the PCA dimensions were the dependent variables. We refer to this second analysis as a state-space analysis (see Karapanagiotidis et al., 2017; Mckeown et al., 2023; Turnbull et al., 2020 for prior examples of this approach).
 
-## Generation of the thought space
+![Figure 1.](https://cdn.elifesciences.org/articles/97731/elife-97731-fig1-v2.jpg)
+
+**Figure 1.:** Left to Right - One sample of participants was scanned while watching movies (Sample 1), and a different set of participants responded to experience sampling probes (Sample 2) while watching the same movies in the laboratory. Decomposition of mDES data into low-dimension experiential patterns using principal component analysis (PCA) produced a set of dimensions that describe experience during movie-watching (a ‘thought space’ within which the dynamics of the movie-watching experience unfold). Word clouds illustrate how the experience sampling questions map onto each dimension that describes this space. In these word clouds, the font size describes their importance (bigger = more important), and the colour describes their polarity (red = positive, blue = negative). Similarly, we created a brain space to describe the movie-watching experience by comparing each moment in the film to validated dimensions of brain variation. For this purpose, we used the dimensions defined from the resting states of the HCP conducted by Margulies (Margulies et al., 2016) (often referred to as gradients): Gradient 1 (Association to Primary cortex), Gradient 2 (Visual to Motor cortex), Gradient 3 (Frontoparietal to Default Mode Networks), and Gradient 4 (Dorsal Attention Network (DAN)/Visual to Default Mode Networks) of brain variation dimensions illustrated by colour to map activity in state space analysis (purple = low, yellow = high) (not shown: Gradient 5 Lateral Default Mode to Primary sensory cortex) (Margulies et al., 2016). Two 3D scatter plots illustrating two examples from our data of how the movie-watching can be seen as two complimentary trajectories through a ‘Brain Space’ (focusing on Gradients 1, 2, and 3, shown at the top) and a ‘Thought Space’ (focusing on ‘Episodic Knowledge’, ‘Verbal Detail’, and ‘Sensory Engagement’, shown at the bottom). The cooler (blue) points occur earlier in the movie clip and the warmer (red) points occur later.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97731/elife-97731-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The scree plot illustrates the eigenvalues of principal components obtained from a PCA analysis. Each point on the plot represents a principal component, and the y-axis displays the corresponding eigenvalues. The eigen value threshold of 1 and the ‘elbow’ of the plot, where eigenvalues start to level off, is indicative of the optimal number of components to retain. In this case, the analysis suggests a four-component solution. The scree plot aids in determining the most meaningful components for capturing variance in the data, facilitating a more parsimonious representation of the underlying structure.
+
+### Generation of the thought space
 
 The first step in our analysis was to decompose the mDES data using PCA to produce the dimensions that comprise the ‘thought space’ used for our subsequent analyses (Figure 1, see Methods). Based on the scree plot (see Figure 1—figure supplement 1), the data best fit a four-component solution, and the resulting components are displayed as word clouds (see Methods for further details). In these word clouds, items with similar colours are related, and the font size indicates their importance. Component 1 contributed 26.1% of the variance explained and loaded positively on terms ‘past’, ‘self’, and ‘knowledge’, and negatively on ‘words’ and ‘sounds’, and is referred to as ‘Episodic Knowledge’. Component 2 explained 10.5% of the variance and loaded positively on the items ‘intrusive’ and ‘distracting’ and negatively on ‘deliberateness’, and is referred to as ‘Intrusive Distraction’. Component 3 loaded positively on ‘words’, ‘detail’, and ‘deliberateness’, explaining 7.7% of the variance, and is called ‘Verbal Detail’. Finally, Component 4 contributed 6.8% of the explained variance, loaded positively on ‘emotion’, ‘images’, ‘sounds’, and ‘people’, and was named ‘Sensory Engagement’. See Supplementary file 1a for a description of the mDES questionnaire and Supplementary file 1b for the percentage of variance explained by principal components overall and in each movie.
 
-## Split-half reliability results
+### Split-half reliability results
 
 A bootstrapped split-half reliability analysis was conducted to confirm that the four-component solution provided a reasonable description of our data. This analysis repeatedly divided the mDES data into two random samples and evaluated the correlation between the two halves’ components. The reliability analysis supported that the four-component solution was reproducible because it had a strong homologue similarity score (r=0.96, 95% CI [0.93, 1.00]; see Methods for further details).
 
-## Variation in thought patterns
+### Variation in thought patterns
 
 Next, we examined how these dimensions describe experience within each movie (see Figure 2). We performed four linear mixed models (LMM), one for each thought component (‘Episodic Knowledge’, ‘Intrusive Distraction’, ‘Verbal Detail’, and ‘Sensory Engagement’), in which the movie was the explanatory variable of interest, and participants were included as a random effect. The significance threshold was adjusted using the False Discovery Rate (FDR) to control for family-wise error (FWE) within the model (controlling for the three movies). The four-model analyses found significant differences in overall thought pattern scores across the three movies, including reported thoughts resembling ‘Episodic Knowledge’, F(2, 2015.3)=5.41, p=0.005, η2=0.01, ‘Intrusive Distraction’, F(2, 2015.3)=77.84, p<0.001, η2=0.07, ‘Verbal Detail’, F(2, 2015.4)=13.90, p<0.001, η2=0.01, and ‘Sensory Engagement’, F(2, 2015.7)=82.69, p<0.001. η2=0.08. This suggests that within each model, there was a significantly different score for the reported thought pattern in at least one of the movies. Post-hoc pairwise comparisons using the least-squares means (lsmeans) were conducted for each model to investigate how thought component scores differ in each movie, adjusting significance thresholds using the Tukey method to control for FWE within the model. The first model suggests patterns of responses in Little Miss Sunshine showed less similarity to ‘Episodic Knowledge’ (M=–0.12, SE = 0.10) than did patterns of thoughts reported in 500 Days of Summer (M=0.11, SE = 0.10), t(2016)=–3.27, p=0.003. However, there were no significant differences in ‘Episodic Knowledge’ thoughts reported during Citizenfour (M=–0.02, SE = 0.10) compared to Little Miss Sunshine, t(2015)=1.31, p=0.392, or 500 Days of Summer, t(2016)=–1.97, p=0.121. The second model identified self-reported thoughts that were more similar to the pattern of ‘Intrusive Distraction’ during Citizenfour (M=0.41, SE = 0.09) than during Little Miss Sunshine (M=–0.15, SE = 0.09), t(2015)=9.66, p<0.001, or during 500 Days of Summer (M=–0.27, SE = 0.09), t(2015)=11.66, p<0.001. There was no difference in how similar reported thoughts scores were to ‘Intrusive Distraction’ between Little Miss Sunshine and 500 Days of Summer, t(2016)=2.03, p=0.106. Model three found self-reported thoughts resemble patterns of ‘Verbal Detail’ more for Citizenfour (M=0.17, SE = 0.09) than for Little Miss Sunshine (M=–0.14, SE = 0.09), t(2015)=5.14, p<0.001, or 500 Days of Summer (M=–0.04, SE = 0.09), t(2016)=3.58, p=0.001. Again, there were no significant differences in reported ‘Verbal Detail’ scores between Little Miss Sunshine and 500 Days of Summer, t(2016)=–1.54, p=0.271. Lastly, model four found reported thoughts during Citizenfour resembled patterns of ‘Sensory Engagement’ (M=–0.32, SE = 0.07) significantly less than for either Little Miss Sunshine (M=–0.01, SE = 0.07), t(2015)=–6.07, p<0.001, or 500 Days of Summer (M=0.33, SE = 0.07), t(2016)=–12.85, p<0.001. Additionally, reported thoughts during Little Miss Sunshine resembled patterns of ‘Sensory Engagement’ less than reported thoughts during 500 Days of Summer, t(2016)=–6.81, p<0.001. The results are presented visually in Figure 2, and further details of the LMM are presented in Supplementary file 1c.
 
@@ -86,23 +94,342 @@ Next, we examined how these dimensions describe experience within each movie (se
 
 **Figure 2.:** Left to Right – The 3D scatterplot shows the average location of each film on three of the four PCA dimensions, ‘Episodic Knowledge’, ‘Verbal Detail’, and ‘Sensory Engagement’. The bar graphs show the average loading on each dimension, with the error bars showing the 95% Confidence Interval. The plots on the right illustrate the relationship between the mDES dimensions and memory for information in the film. The top barplot shows the average comprehension score on each film with 95% Confidence Intervals error bars. The scatter plots below show the association between mDES components and comprehension. The scatter plot on the left shows the negative linear relationship between the ‘Intrusive Distraction’ thought and memory. The plot on the right shows a positive association with ‘Sensory Engagement’. The blue line represents the best-fit line, and the shaded area shows the 95% Confidence Intervals.
 
-## Time series of experience across movie clips
+### Time series of experience across movie clips
 
 Next, we examined how each pattern of thought changes across each movie clip. For this analysis, we conducted separate ANOVAs for each film clip for the four components (see Table 1 and Figure 3). Clear dynamic changes were observed in several components for different films. First, there was a significant change in ‘Episodic Social Cognition’ scores across Little Miss Sunshine, F(1, 712)=10.80, p=0.001, η2=0.03, and Citizenfour, F(1, 712)=5.23, p=0.023, η2=0.02. There was also a significant change in ‘Verbal Detail’ scores across Little Miss Sunshine, F(1, 712)=31.79, p<0.001, η2=0.09. Lastly, there were significant changes in ‘Sensory Engagement’ scores for both Citizenfour, F(1, 712)=6.22, p=0.013, η2=0.02, and 500 Days of Summer, F(1, 706)=80.41, p<0.001, η2=0.18. These time series are plotted in Figure 3 and highlight how mDES can capture the dynamics of different types of experience across the three movie clips. Moreover, in several of these time series plots, it is clear that reported thought patterns extend beyond adjacent time periods (e.g. scores above zero between time periods 150–400 for Sensory Engagement in 500 Days of Summer and for time periods between 175 and 225 for Verbal Detail in Little Miss Sunshine). It is important to note that no participant completed experience sampling reports during adjacent sampling points (see Figure 3—figure supplement 1), so the length of these intervals indicates agreement in how specific scenes within a film were experienced and conserved across different individuals. Notably, the component with the least evidence for temporal dynamics was ‘Intrusive Distraction’.
 
-## Comprehension
+**Table 1.**
+ ANOVA across sampling bins of each Movie of each Thought Component score.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Little Miss Sunshine</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Df</td>
+      <td>Sum Sq</td>
+      <td>Mean Sq</td>
+      <td>F-value</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>PCA_1</td>
+      <td>Sampling bin</td>
+      <td>1.00</td>
+      <td>24.30</td>
+      <td>24.29</td>
+      <td>10.80</td>
+      <td>0.001 **</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>712.00</td>
+      <td>1601.80</td>
+      <td>2.25</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PCA_2</td>
+      <td>Sampling bin</td>
+      <td>1.00</td>
+      <td>3.60</td>
+      <td>3.64</td>
+      <td>1.97</td>
+      <td>0.161</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>712.00</td>
+      <td>1219.50</td>
+      <td>1.85</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PCA_3</td>
+      <td>Sampling bin</td>
+      <td>1.00</td>
+      <td>63.50</td>
+      <td>63.54</td>
+      <td>31.79</td>
+      <td>&lt;0.001 ***</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>712.00</td>
+      <td>1423.00</td>
+      <td>2.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PCA_4</td>
+      <td>Sampling bin</td>
+      <td>1.00</td>
+      <td>5.10</td>
+      <td>5.06</td>
+      <td>3.43</td>
+      <td>0.064</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>712.00</td>
+      <td>1048.20</td>
+      <td>1.47</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Citizenfour</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Df</td>
+      <td>Sum Sq</td>
+      <td>Mean Sq</td>
+      <td>F-value</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>PCA_1</td>
+      <td>Sampling bin</td>
+      <td>1.00</td>
+      <td>12.00</td>
+      <td>12.01</td>
+      <td>5.23</td>
+      <td>0.023 *</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>712.00</td>
+      <td>1637.00</td>
+      <td>2.30</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PCA_2</td>
+      <td>Sampling bin</td>
+      <td>1.00</td>
+      <td>2.00</td>
+      <td>1.95</td>
+      <td>0.87</td>
+      <td>0.350</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>712.00</td>
+      <td>1593.00</td>
+      <td>2.24</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PCA_3</td>
+      <td>Sampling bin</td>
+      <td>1.00</td>
+      <td>0.10</td>
+      <td>0.07</td>
+      <td>0.04</td>
+      <td>0.847</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>712.00</td>
+      <td>1425.30</td>
+      <td>2.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PCA_4</td>
+      <td>Sampling bin</td>
+      <td>1.00</td>
+      <td>7.40</td>
+      <td>7.40</td>
+      <td>6.22</td>
+      <td>0.013 *</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>712.00</td>
+      <td>847.80</td>
+      <td>1.19</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>500 Days of Summer</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Df</td>
+      <td>Sum Sq</td>
+      <td>Mean Sq</td>
+      <td>F-value</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>PCA_1</td>
+      <td>Sampling bin</td>
+      <td>1.00</td>
+      <td>7.30</td>
+      <td>7.34</td>
+      <td>2.51</td>
+      <td>0.114</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>706.00</td>
+      <td>2068.50</td>
+      <td>2.93</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PCA_2</td>
+      <td>Sampling bin</td>
+      <td>1.00</td>
+      <td>0.20</td>
+      <td>0.22</td>
+      <td>0.13</td>
+      <td>0.719</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>706.00</td>
+      <td>1219.10</td>
+      <td>1.73</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PCA_3</td>
+      <td>Sampling bin</td>
+      <td>1.00</td>
+      <td>7.80</td>
+      <td>7.85</td>
+      <td>3.86</td>
+      <td>0.049 *</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>712.00</td>
+      <td>1425.30</td>
+      <td>2.00</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PCA_4</td>
+      <td>Sampling bin</td>
+      <td>1.00</td>
+      <td>114.20</td>
+      <td>114.15</td>
+      <td>80.41</td>
+      <td>&lt;0.001 ***</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Residuals</td>
+      <td>706.00</td>
+      <td>1002.30</td>
+      <td>1.42</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. Results of each ANOVA test assessing if each PCA thought component score differs across each of the 15 s sampling bins (Sampling bin) for the three movies Little Miss Sunshine, Citizenfour and 500 Days of Summer. The table consists of the degrees of freedom (Df), sum of squares (Sum Sq), mean squares (Mean Sq), F-value, and p-value for each component and movie. Significant p-value (p<0.05) indicates a significant difference in the respective PCA component score across the sampling bins._
+
+![Figure 3.](https://cdn.elifesciences.org/articles/97731/elife-97731-fig3-v2.jpg)
+
+**Figure 3.:** Left to Right – The first panel illustrates the mDES method in the laboratory to demonstrate how participants respond to the sixteen items about their thoughts while watching the film on the laboratory computers. The plots on the right summarize the average thought pattern score at each 15 s sampling window across the three movies. The first time series plot illustrates the trajectory of the ‘Episodic Knowledge’ across Little Miss Sunshine, followed by the time course of ‘Verbal Detail’ also across Little Miss Sunshine, with distinct peaks in scores within the 150–250 s range and particularly low scores between the 400 and 500 s interval. The third plot demonstrates the relatively low and negative scores on ‘Sensory Engagement’ across Citizenfour. Lastly, the final plot highlights the relatively high scores on ‘Sensory Engagement’ throughout 500 Days of Summer, especially across the 150–400 s interval.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97731/elife-97731-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Visual representation of probe order conditions assigned to participants with timestamps of each delivered probe. Participants were randomly assigned to a different probe order condition for each movie clip. Probe orders 1-8 share no overlapping probes. Probe orders 9-16 have overlapping probes from the former probe orders, corresponding to their cell colours, to control for ordering effects across participants. Probes began at 1 minute and 15 seconds until the 11-minute mark (end of the movie clip).
+
+### Comprehension
 
 Next, we examined how the thought patterns relate to the participants’ memory of information from the movies (Figure 2). Participants answered four comprehension questions for each film (12 total) related to relevant information in the clip they just watched (see Supplementary file 1d for the comprehension questionnaire). We performed an LMM for which the movies, each thought pattern, and their interaction were explanatory variables of interest. Comprehension score was the dependent variable, and participant was included as a random effect. FDR was used to control for FWE, consisting of nine comparisons. The analysis revealed three significant main effects and a significant interaction. First, there was a significant main effect of movie on memory, F(2, 254.12)=49.33, p<0.001, η2=0.28. Post-hoc pairwise comparisons using the lsmeans were conducted to investigate the effect of memory performance across the different films. Significance thresholds for the post-hoc comparisons were adjusted using the Tukey method to control FWE within the model. Comprehension scores were significantly lower for questions related to information in Citizenfour (M=2.42, SE = 0.09) compared to Little Miss Sunshine (M=3.35, SE = 0.08), t(249) = –9.16, p<0.001, as well as 500 Days of Summer (M=3.33, SE = 0.08), t(273) = –8.33, p<0.001. Notably, there was no significant difference in comprehension performance between Little Miss Sunshine and 500 Days of Summer, t(242) = –0.18, p=0.982. There were also two significant main effects of thought patterns — ‘Intrusive Distraction’ was significantly associated with worse comprehension across the three movies, F(1, 324.41)=9.27, p=0.011, η2=0.03, whereas ‘Sensory Engagement’ was associated with better overall comprehension, F(1, 341.44)=8.30, p=0.013, η2=0.02. Finally, there was a significant movie by thought pattern interaction for ‘Episodic Knowledge’, F(2, 268.96)=4.46, p=0.028, η2=0.03. To follow up on this significant interaction, post-hoc simple slopes analysis was performed to assess the effect of ‘Episodic Knowledge’ on comprehension performance across each movie, using FDR to control for multiple comparisons. The analysis found moments when patterns of thought were more similar to ‘Episodic Knowledge’ were associated with significantly better comprehension performance for information in 500 Days of Summer, t(319.83)=2.54, p=0.030. The interaction predicted negative comprehension performance for information in Citizenfour, t(317.55)=–1.39, b=–0.09, SE = 0.06, p=0.240, but positive comprehension performance for information in Little Miss Sunshine, t(321.85)=0.93, b=0.07, SE = 0.07, p=0.350, although neither of these relationships was statistically significant. To see the complete model output and the pairwise comparisons, see Supplementary file 1e One important implication of these results suggests mDES is sensitive to objective indicators of movie-watching experience because they indicate that individuals for whom self-reported experience shows less evidence of the pattern of ‘Intrusive Distraction’ tended to encode features of the movie more accurately and, therefore, performed better on the comprehension test.
 
-## Brain – thought mappings: voxel-space analysis
+### Brain – thought mappings: voxel-space analysis
 
 Having established the dimensions that characterize the mDES data, how they organize experience in each movie, their variation over time, and their associations to memory, we then examined how these dimensions of experience relate to the brain activity at each moment in the films. Our first analysis examined this question at the voxel level. In this analysis, the averaged time course of each PCA dimension (collapsed across all individuals in Sample 2) was included as a regressor of interest at the first level for each of the three movies for the brain activity recorded in each subject in Sample 1. To perform a group comparison of these analyses, we used FLAME in FSL with a cluster forming threshold of z=3.1 FWE, controlling for the number of regressors of interest to determine the significance of each cluster (p<0.0125). This generated four group-level thresholded maps, which we followed up with a FEAT query to extract cluster-wise parameter estimates, corresponding to regions whose activation during moments in the film was correlated with a specific thought pattern (see Figure 4 and Supplementary file 1f). ‘Episodic Knowledge’ was significantly positively associated with activation in a region of dorsal visual cortex (b=0.62, 95% CI [0.27, 0.97]). ‘Intrusive Distraction’ was significantly associated with deactivation in the FPN (b=–0.78, 95% CI [-1.37,–0.20]). ‘Verbal Detail’ was significantly associated with suppression of activity in primary auditory cortex (b=–1.64, 95% CI [-2.11,–1.17]). Lastly, ‘Sensory Engagement’ was significantly associated with activation in both visual and auditory cortexes (b=1.26, 95% CI [0.81, 1.70]) (see Supplementary file 1f for the table of average Gradient score for each movie derived from this analysis). We also performed a functional connectivity analysis using each set of clusters as the seed region, see Figure 4—figure supplement 1, Figure 4—figure supplement 2, Figure 4—figure supplement 3, and Supplementary file 1g.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/97731/elife-97731-fig4-v2.jpg)
+
+**Figure 4.:** Left to Right - Regions in red are associated with activity corresponding to reports of ‘Episodic Knowledge’, green regions are associated with ‘Intrusive Distraction’, areas in purple are associated with ‘Verbal Detail’, and the regions in orange represent activity associated with ‘Sensory Engagement’. The bar plot illustrates the directionality of each parameter estimate with error bars representing 95% Confidence Intervals. Corresponding word clouds for each thought pattern are presented on the right for reference (Top to Bottom: ‘Episodic Knowledge’, ‘Intrusive Distraction’, ‘Verbal Detail’, and ‘Sensory Engagement’).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97731/elife-97731-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Results of functional connectivity (FC) in which we used the regions identified in our voxel space analysis that related to “Episodic Knowledge” (Red - Yellow color map), “Verbal Detail” (Blue-Green color map) and “Sensory Engagement” (Black – Green color map). These are thresholded at p < .001 and corrected for FEW at p < .05.The panel on the right shows the same fully saturated maps to highlight their common regions (shown in white).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/97731/elife-97731-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Overlap between the regions showing common functional connectivity between regions associated with three mDES components (‘Episodic Knowledge’, ‘Verbal Detail’ and ‘Sensory Engagement’) in the voxel space analysis and the DMN as defined by Yeo et al., 2011. Regions in red show regions of common functional connectivity, regions in green are the DMN and regions in yellow are the overlap between these two maps.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/97731/elife-97731-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Meta analytic decoding of the regions showing common functional connectivity between regions associated with three mDES components (“Episodic Knowledge”, “Verbal Detail” & “Sensory Engagement”) in the voxel space analysis and the DMN as defined by Yeo et al., 2011 (shown in yellow). The word cloud on the right shows the functional terms most likely to be associated with these regions following a Neurosynth analytic decoding. Regions in red are more likely and regions in blue are less likely. Words in a larger font size are more important.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/97731/elife-97731-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Overlap between regions associated with “Intrusive Distraction” in our voxel space analysis (green) and the FPN as defined by Yeo et al., 2011 (lavender). Regions of overlap are presented in cyan.
 
 Our voxel-space analysis highlights two notable features of how thought patterns during movie-watching were linked to brain activity. First, most regions whose activity we can predict based on mDES scores tended to fall within sensory cortex. Notably, ‘Sensory Engagement’, a pattern of multi-sensory thought linked to sounds and images, is associated with increased activity in both the visual and auditory systems. Interestingly, these regions overlap with regions linked to ‘Episodic Knowledge’ maps (Posterior [orange and red]) and those linked to ‘Verbal Detail’ (Right [orange and purple]). Notably, since both Episodic Knowledge and Sensory Engagement show positive links to comprehension and greater activity in sensory cortex regions, these results support the hypothesis that perceptual coupling is an important feature of making sense of events during movie-watching (e.g. Smallwood, 2013a). Second, the only regions identified outside sensory cortex were linked to ‘Intrusive Distraction’ and broadly fall within regions of the FPN. Figure 4—figure supplement 4 compares the regions linked to ‘Intrusive Distraction’ with the FPN as defined by Yeo et al., 2011, showing that the regions showing less activation during moments when Intrusive Distraction was high generally fall within this system. This pattern is consistent with views of the FPN as playing an active role in maintaining a state of non-distracted task focus (Scolari et al., 2015). See Supplementary file 1h for the analysis output and Figure 5—figure supplement 1, which shows each map is shown separately.
 
 Our analysis highlighted significant overlap across analyses in visual and auditory cortex regions. To better understand the likely functions of these common regions, we calculated the overlap in these maps (left-hand panel of Figure 5) and performed a large-scale automated analysis consisting of over 4400 studies using Neurosynth, with the aim of identifying the most likely functions ascribed to these regions by prior research (See Supplementary file 1i for the specific loadings for each term). The results of this analysis are displayed in the form of word clouds where regions common to reduced ‘Verbal Detail’ and greater ‘Sensory Engagement’ are linked to auditory processes (‘sounds’, ‘noise’, and ‘pitch’). In contrast, regions common to ‘Sensory Engagement’ and ‘Episodic Knowledge’ are most likely associated with ‘videos’, providing independent meta-analytic corroboration that these regions are paramount for movie-watching. The Neurosynth analysis, therefore, shows that the regions highlight by our analysis tend to be involved in sensory processing, and, are most commonly observed during movie-watching. Finally, we conducted a resting state functional connectivity analysis using the regions overlapping as seeds (right-hand panel of Figure 5). This highlighted that both regions exhibited functional connectivity patterns, including many overlapping areas (coloured yellow). Notably, both functional connectivity maps contained the seed regions of the other analysis.
 
-## State space analysis
+![Figure 5.](https://cdn.elifesciences.org/articles/97731/elife-97731-fig5-v2.jpg)
+
+**Figure 5.:** A region of superior temporal cortex is associated with positive reports of thoughts like ‘Sensory Engagement’ and negative reports of thoughts like ‘Verbal Detail’ (coloured green). A region of dorsal visual cortex was associated with both thoughts reported like ‘Sensory Engagement’ and ‘Episodic Detail’ (coloured red). The word clouds in the middle panel show the results of a Neurosynth analysis of the regions, highlighting the most likely functions associated with these regions. The font size describes their importance (bigger = more important), and the colour describes their polarity (darker = positive). The panel on the right shows the results of seed-based functional connectivity analysis of these regions of overlap from a separate resting-state study. Regions in red indicate those connected to the region of visual cortex, regions in green show those linked to auditory cortex, and regions in yellow are common to both spatial maps.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97731/elife-97731-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Brain maps of each voxel-space analysis output for each of the corresponding thought components separately, “Episodic Knowledge,” “Intrusive Distraction,” “Verbal Detail,” and “Sensory Engagement.” Each brain map is displayed from the coronal view, sagittal view, and axial view to maximize the understanding of the spatial distribution and localization of related brain regions for each thought pattern.
+
+### State space analysis
 
 Our next analysis used a ‘state-space’ approach to determine how brain activity at each moment in the film predicted the patterns of thoughts reported at these moments (for prior examples in the domain of tasks, see Mckeown et al., 2023; Turnbull et al., 2020, See Methods). In this analysis, we used the coordinates of the group average of each TR in the ‘brain space’ and the coordinates of each experience sampling moment in the ‘thought space’. To clarify, the location of a moment in a film in ‘brain space’ is calculated by projecting the grand mean of brain activity for each volume of each film against the first five dimensions of brain activity from a decomposition of the Human Connectome Project (HCP) resting state data, referred to as Gradients 1–5. ‘Thought space’ is the decomposition of mDES items to create thought pattern components, referred to as ‘Episodic Knowledge’, ‘Intrusive Distraction’, ‘Verbal Detail’, and ‘Sensory Engagement’. We ran four LMMs, one for each thought component, in each case using the location of each sampling point in the movie on Gradients 1–5 as explanatory variables and the scores for each thought pattern component (‘Episodic Knowledge’, ‘Intrusive Distraction’, ‘Verbal Detail’ and ‘Sensory Engagement’) as dependent variables. Participant was included as a random intercept. The significance threshold was adjusted using the FDR to control for FWE within each model, controlling for five brain dimensions. After correction, we found two significant main effects. First, we found a significant main effect of Gradient 4 (DAN to Visual), which predicted the similarity of answers to the ‘Episodic Knowledge’ component, t(2046)=2.17, p=0.013, η2=0.01. This suggests that moments when thoughts were most similar to ‘Episodic Knowledge’ were associated with moments when activity was high in visual cortex and lower in regions of the dorsal attention network (See Figure 6). There was also a significant main effect of Gradient 1 (Primary to Association) predicting patterns of thought related to ‘Sensory Engagement’, t(2046.34)=–3.26, p=0.006, η2=0.01. These results show that moments when thoughts are high on ‘Sensory Engagement’ were associated with increased brain activity in regions within the primary cortex low on Gradient 1 (see Figure 6). See Supplementary file 1j for complete results.
 
@@ -142,62 +469,62 @@ Finally, it is worth considering whether the patterns of brain activity identifi
 
 ## Methods
 
-## Participant pool – laboratory sample
+### Participant pool – laboratory sample
 
 The sample consisted of 120 participants (98 women (81.7%), 17 men (14.2%), 5 non-binary or similar gender identity (3.3%); age: M=18.83, SD = 1.19, range of 18–23) who participated in the in-person laboratory study to watch three 11 min movie clips, responded to mDES probes, and completed a brief comprehension assessment. All participants spoke English, with 95% of the sample primarily residing in Canada (China [1.7%], India [0.8%], Nigeria [0.8%], USA [1.7%]). This study was granted ethics clearance by the Queen’s University General Research Ethics Board (#6036804). Participants were recruited between March 2023 and April 2023 through the Queen’s University Psychology Participant Pool. Participants provided written, informed consent via electronic documentation before participating in the research study. Participants were rewarded with one-course credit or $10.00 for their participation and were provided with a verbal and written debrief form upon completion of the study. All data and corresponding analysis scripts included in this manuscript are available via Mendeley Data (DOI: 10.17632/mgb7ftwr9d.1).
 
-## Participant pool – brain data sample
+### Participant pool – brain data sample
 
 See Aliko and colleagues for a description of the sample (Aliko et al., 2020).
 
-## Participant pool – resting-state sample
+### Participant pool – resting-state sample
 
 191 student volunteers (mean age = 20.1 ± 2.25 years, range 18–31; 123 females) with normal or corrected-to-normal vision and no history of neurological disorders participated in this study. Written informed consent was obtained from all subjects prior to the resting-state scan. The study was approved by the ethics committees of the Department of Psychology and York Neuroimaging Centre, University of York. Previous studies have used this data to examine the neural basis of memory and mind-wandering, including region-of-interest-based connectivity analysis and cortical thickness investigations (Karapanagiotidis et al., 2017; Wang et al., 2018; Evans et al., 2020; Gonzalez Alam et al., 2018; Gonzalez Alam et al., 2019; Gonzalez Alam et al., 2022; Gonzalez Alam et al., 2021; Poerio et al., 2017; Turnbull et al., 2019b; Vatansever et al., 2017).
 
-## Procedure
+### Procedure
 
 Participants attended an individual in-person testing session at the laboratory at Queen’s University to watch movie clips after providing written informed consent and basic demographic information. Participants were assigned to a testing booth, a small room with a desk, a chair, a computer to present the stimuli, and headphones to listen to the audio stimuli. Participants had to attend to the computer screen to watch and listen to three randomly presented 11 min video clips. During each movie clip, participants were briefly interrupted five times to answer randomly assigned mDES probes about the content of their thoughts just prior to the probe. After the first minute of each clip, each probe was delivered once every two minutes, using a jittered technique, by assigning participants to a counterbalanced probe order to minimize the systematic impact of prior and later probes at any given sampling moment (see Figure 3—figure supplement 1 for visualization). Once participants finished watching the three clips, they completed a 12-item comprehension questionnaire on Qualtrics, with four items related to information from each of the three movie clips (see Supplementary file 1d).
 
-## Multi-dimensional experience sampling (mDES)
+### Multi-dimensional experience sampling (mDES)
 
 Participants received 16 total mDES probes across the three clips, five for each, and all responses were made with respect to their thoughts just before the probe interrupted their viewing. No probes were administered within the first minute of the clip — the first possible probe was administered at the 75 s mark to allow participants to situate themselves with the context of the movie clip. Each of the 16 mDES questions appeared in a randomized order, and participants were asked to use the directional arrow keys to move a slider across the screen to indicate, on a scale of 1 (not at all) to 10 (completely), how much that particular feature characterized their thoughts. The specific items used in this experiment are presented in Supplementary file 1a.
 
-## Probe orders
+### Probe orders
 
 There were 16 probe orders that a participant could be assigned to for each movie, which determined the delivery time of the five mDES probes throughout each 11 min clip. Each subject ID was assigned to three different probe orders for each of the three films, and no subject ID was given the same probe order twice. This was achieved by creating a matrix of equally distributed probe orders across subject IDs to ensure each moment in the movie was probed an equal amount of times while uniquely distributing probes to control for order effects. Probe orders were designed to sample participants at every 15 s interval of the entire movie clip but only probed a single participant five times per clip. This allowed us to sample experience as frequently as possible without interrupting participants from naturalistic viewing by oversampling or too frequent probes and to control for ordering effects from the delivery time of the other probes. Each participant received a probe approximately every two minutes using a jittered technique. The first eight probe orders do not share any of the same probe delivery times, whereas the latter eight probe orders (9-16) have been shuffled so that they share one probe time with only one of the orders from the former eight orders. Across orders 9–16, each probe from the first eight orders is repeated in a different combination of probes so that mDES responses at each probe are derived from participants in two different orders. See (Figure 3—figure supplement 1).
 
-## Movie clip stimuli
+### Movie clip stimuli
 
 Movie stimuli were presented in 11 min scenes from Citizenfour, Little Miss Sunshine, and 500 Days of Summer. Stimuli were selected from the Naturalistic Neuroimaging Database (NNDb; Aliko et al., 2020) and chosen based on genre, and they were cut from the full-length movie down to 11 min clips. Participants were informed they would watch three movie clips from different genres (romance, comedy, documentary) but were presented randomly. Written instructions were presented on screen at the beginning of each clip. After watching the three clips and responding to the mDES probes, participants were presented with a Qualtrics questionnaire to complete a comprehension test on the content of each film clip.
 
-## Comprehension questions
+### Comprehension questions
 
 Participants completed a comprehension test of 12 questions, four from each movie. The questions were created collaboratively to test general knowledge about the movie that would otherwise not be common sense and cover events during the clip’s beginning, middle, and end. An example of one of the comprehension questions was ‘What breakfast item did Olive order a la mode?’ for the movie clip Little Miss Sunshine. A table of all the questions with corresponding answers can be found in Supplementary file 1d. Participants responded using 1–2 words and were otherwise instructed to enter ‘?’ if they had no answer.
 
-## Brain analysis
+### Brain analysis
 
 Our analyses used brain data acquired and shared by the NNDb, an open-access database of pre-processed MNI 2 mm fMRI data (TR = 1) of participants who watched one of 10 full-length movies (Aliko et al., 2020). We utilized MNI 2 mm fMRI data corresponding to participants who watched Little Miss Sunshine (n=6), Citizenfour (n=18), and 500 Days of Summer (n=20). The specific pre-processing steps applied to the brain data and specific details of the sample are described in Aliko et al., 2020.
 
-## Voxel-space analysis
+### Voxel-space analysis
 
 Our analysis used the pre-processed data from Aliko et al., 2020. The first step in our analysis was to extract the brain activity of each individual for the 10 min section that we sampled in experience using mDES. To map the mDES time series onto these data, we created a mean time series for each movie, which described the mDES experience, averaged across 40 observations at every 15 s interval. Next, we interpolated this time series to generate a time series of experiences that matched the TR used to sample brain activity in Sample 1 (1 s). Next, the interpolated time series for each PCA for each film were included as regressors for each individual’s brain activity (i.e. four regressors for each movie). Finally, we used FLAME as implemented in FSL to perform a group-level analysis across the three movie clips. In this analysis, we set the cluster-forming threshold at z=3.1 and corrected for FWE by accounting for the number of voxels in the brain, the three movies we examined, and the four PCAs in each movie. This resulted in the correction of the FWE p-value from FSL p<0.0025.
 
-## State-space analysis
+### State-space analysis
 
 To create the ‘state-space’ coordinates, we first calculated a group-averaged timeseries for each movie. To do this, we first z-scored each individual’s timeseries data and calculated the mean activity in each voxel at each TR across the whole sample, resulting in a group-averaged brain volume at each TR. Next, we applied a binarized mask to each group-averaged brain volume at each TR. This mask was generated based on the (cortical and subcortical) gradient maps openly available on Neurovault (https://identifiers.org/neurovault.collection:1598). These gradient maps were produced from the decomposition of the Human Connectome Project resting-state fMRI data (Margulies et al., 2016). Then, we calculated the (spearman rank) correlation between each group-averaged per-TR brain map and each of the first five gradient maps. Consistent with published literature, the results of these correlations constitute the coordinates of each moment of the film in the 5D Brain space (Mckeown et al., 2023). An example of these coordinates is presented in the upper left panel of Figure 5. The code for this analysis is openly available at https://github.com/willstrawson/StateSpace (v1.0.0), copy archived at Mckeown et al., 2024 (https://zenodo.org/records/14112469).
 
-## Cognitive decoding
+### Cognitive decoding
 
 Connectivity maps were uploaded to Neurovault (Gorgolewski et al., 2015; https://neurovault.org/collections/13821/) and decoded using Neurosynth (Yarkoni et al., 2011). Neurosynth is an automated analysis tool that uses text-mining approaches to extract terms from neuroimaging articles that typically co-occur with specific peak coordinates of activation. It can be used to generate a set of terms frequently associated with a spatial map. The results of cognitive decoding were rendered as word clouds using in-house scripts implemented in Python. We excluded terms referring to neuroanatomy (e.g. ‘inferior’ or ‘sulcus’), as well as the second occurrence of repeated terms (e.g. ‘semantic’ and ‘semantics’). The size of each word in the word cloud relates to the frequency of that term across studies.
 
-## Analysis of intrinsic functional connectivity using resting-state fMRI
+### Analysis of intrinsic functional connectivity using resting-state fMRI
 
 Our analysis additionally used resting state cohort data (see below) to seed the maps created from each of the four thought pattern time series regressors from the prior analysis. We used this seed-based analysis to see if different resting state networks converge with the maps we have generated from movie-watching.
 
-## Pre-processing
+### Pre-processing
 
 Pre-processing and statistical analyses of resting-state data were performed using the CONN functional connectivity toolbox V.20a (http://www.nitrc.org/projects/conn; Whitfield-Gabrieli and Nieto-Castanon, 2012) implemented through SPM (Version 12.0) and MATLAB (Version 19 a). For pre-processing, functional volumes were slice-time (bottom-up, interleaved) and motion-corrected, skull-stripped and co-registered to the high-resolution structural image, spatially normalized to the Montreal Neurological Institute (MNI) space using the unified-segmentation algorithm, smoothed with a 6 mm FWHM Gaussian kernel, and band-passed filtered (0.008–0.09 Hz) to reduce low-frequency drift and noise effects. A pre-processing pipeline of nuisance regression included motion (12 parameters: the six translation and rotation parameters and their temporal derivatives), scrubbing (outlier volumes were identified through the composite artifact detection algorithm ART in CONN with conservative settings, including scan-by-scan change in global signal z-value threshold = 3; subject motion threshold = 5 mm; differential motion and composite motion exceeding 95% percentile in the normative sample) and CompCor components (the first five) attributable to the signal from white matter and CSF (Behzadi et al., 2007) as well as a linear detrending term, eliminating the need for global signal normalization (Chai et al., 2012; Murphy et al., 2009).
 
-## Seed selection and analysis
+### Seed selection and analysis
 
 Intrinsic connectivity seeds were binarized masks derived from voxel-space analysis using FLAME through FSL. We excluded all non-grey matter voxels that fell within these masks. We performed seed-to-voxel analyses convolved with a canonical hemodynamic response function for each seed. At the group-level, analyses were conducted using CONN with cluster correction at p<0.05 and a threshold of p-FDR=0.001 (two-tailed) to define contiguous clusters.

@@ -43,17 +43,169 @@ While many studies point out the importance of the vascular system in COVID-19 (
 
 **Figure 1.:** (a) Sketch representing the main organs affected by SARS-CoV-2; (b) structure and gene composition of SARS-CoV-2.
 
+**Table 1.**
+ Severe acute respiratory syndrome (SARS)-CoV-2 proteins.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SARS-CoV-2 proteins</th>
+      <th>General impact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Structural proteins</td>
+    </tr>
+    <tr>
+      <td>S (spike)</td>
+      <td>Spike protein, mediates binding to ACE2, fusion with host membraneSurface glycoprotein, needs to be processed by cellular protease TMPRSS2 (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>M (membrane)</td>
+      <td>Membrane glycoprotein, the predominant component of the envelopeA major driver for virus assembly and budding (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>E (envelope)</td>
+      <td>Envelope protein, involved in virus morphogenesis and assemblyCoexpression of M and E is sufficient for virus-like particle formation and release (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>N (nucleocapsid)</td>
+      <td>Nucleocapsid phosphoprotein binds to RNA genome (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Nonstructural proteins</td>
+    </tr>
+    <tr>
+      <td>nsp1</td>
+      <td>Leader sequence, suppresses host antiviral responseAntagonizes interferon induction to suppress host antiviral response (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>nsp2</td>
+      <td>Interferes with host cell signaling, including cell cycle, cell-death pathways, and cell differentiationMay serve as an adaptor for nsp3Not essential for virus replication, but deletion of nsp2 diminishes viral growth and RNA synthesis (Gordon et al., 2020; Procko, 2020)</td>
+    </tr>
+    <tr>
+      <td>nsp3</td>
+      <td>nsp3–nsp4–nsp6 complex involved in viral replicationFunctions as papain-like protease (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>nsp4</td>
+      <td>nsp3–nsp4–nsp6 complex involved in viral replication (Gordon et al., 2020)The complex is predicted to nucleate and anchor viral replication complexes on double-membrane vesicles in the cytoplasm (mitochondria)</td>
+    </tr>
+    <tr>
+      <td>nsp5</td>
+      <td>Inhibits interferon I signaling processes by intervening in the NF-κB process and breaking down STAT one transcription factorFunctions as 3-chymotrypsin-like protease, cleaves the viral polyprotein (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>nsp5_c145a</td>
+      <td>Catalytic dead mutant of nsp5 (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>nsp6</td>
+      <td>nsp3–nsp4–nsp6 complex involved in viral replicationLimits autophagosome expansionComponents of the mitochondrial complex V (the complex regenerates ATP from ADP) copurify with nsp6 (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>nsp7</td>
+      <td>Cofactor of nsp12nsp7–nsp8 complex in part of RNA polymerase (nsp7, 8, 12 – replication complex)Affects electron transport, GPCR signaling, and membrane trafficking (Gordon et al., 2020; Peng et al., 2020b; Romano et al., 2020; Hillen et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>nsp8</td>
+      <td>Cofactor of nsp12nsp7–nsp8 complex in part of RNA polymerase. Affects the signal recognition particle and mitochondrial ribosome (Gordon et al., 2020; Peng et al., 2020b; Romano et al., 2020; Chi et al., 2003)</td>
+    </tr>
+    <tr>
+      <td>nsp9</td>
+      <td>ssRNA binding protein (can bind both DNA and RNA, but prefers ssRNA)Interacts with the replication complex (nsp7, 8, 12) (Cornillez-Ty et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>nsp10</td>
+      <td>Cofactor of nsp16 and nsp14 (Romano et al., 2020)Essential for nsp16 methyltransferase activity (stimulator of nsp16)Zinc finger protein essential for replication (Gordon et al., 2020; Peng et al., 2020b)</td>
+    </tr>
+    <tr>
+      <td>nsp11</td>
+      <td>Unknown function</td>
+    </tr>
+    <tr>
+      <td>nsp12</td>
+      <td>Functions as an RNA-direct RNA polymerase, the catalytic subunitAffects the spliceosome (Gordon et al., 2020; Peng et al., 2020b; Romano et al., 2020; Hillen et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>nsp13</td>
+      <td>Has helicase and 5’ triphosphatase activityInitiates the first step in viral mRNA capping nsp13,14,16 installs the cap structure onto viral mRNA in the cytoplasm instead of in the nucleus, where the host mRNA is capped (Gordon et al., 2020; Peng et al., 2020b; Romano et al., 2020; Ivanov et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>nsp14</td>
+      <td>In addition to the capping function of the methyltransferase, nsp14 is also an endonuclease (3’–5’ exoribonuclease) that corrects mutations during genome replication (Gordon et al., 2020; Peng et al., 2020b; Romano et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>nsp15</td>
+      <td>Endoribonuclease has uridine-specific endonuclease activity, essential for viral RNA synthesis (Gordon et al., 2020; Romano et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>nsp16</td>
+      <td>May involve complexation with nsp10 and nsp14, for stabilization of homoenzyme, for capping the mRNA (Gordon et al., 2020; Peng et al., 2020b; Romano et al., 2020)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Open reading frame (accessory factors)</td>
+    </tr>
+    <tr>
+      <td>orf3a</td>
+      <td>Packaging into virionsMediates trafficking of spike protein by providing ER/golgi retention signalsInduces IL-6b, activates NF-κB, activates the NLRP3 inflammasome (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>orf3b</td>
+      <td>Interferon antagonist and involved in pathogenesis (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>orf6</td>
+      <td>Type I interferon antagonist, suppresses the induction of interferon, and interferon signaling pathways (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>orf7a</td>
+      <td>May be related to viral-induced apoptosis (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>orf7b</td>
+      <td>Unknown function</td>
+    </tr>
+    <tr>
+      <td>orf8</td>
+      <td>Recombination hotspotInduces ER stress and activates NLRP3 inflammasomesLow similarity to SAR-CoV (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>orf9b</td>
+      <td>Suppresses host antiviral responseTargets the mitochondrion-associated adaptor molecules MAVS and limits host cell interferon responses (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>orf9c</td>
+      <td>No evidence that this protein is expressed during SARS-CoV-2 infection (Gordon et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>orf10</td>
+      <td>No evidence that this protein is expressed during SARS-CoV-2 infection (Gordon et al., 2020)</td>
+    </tr>
+  </tbody>
+</table>
+
 To tackle these challenges, we cultured human umbilical vein endothelial cells (HUVECs) and systematically transduced them with lentiviral particles encoding 26 out of the 29 viral proteins, separately. The three remaining genes were not included in this study purely for technical reasons. We then examined their effects on HUVEC monolayer permeability and the expression of factors involved in vascular permeability and coagulation. The results were analyzed in the context of virus–host and host–host PPI networks. By combining the insights from the experimental and computational results, we generated a model that explains how each of the 26 proteins of SARS-CoV-2, including a mutated form of nsp5, the catalytic dead mutant termed nsp5_c145a, affects the protein network regulating vascular functionality. Moreover, once the PPI model was validated with our experimental data, we applied it to more than 250 proteins that have been identified in the literature as affected by the SARS-CoV-2 proteins. This enabled us to pinpoint the more dominant SARS-CoV-2 proteins and chart their effects. Overall, this work shows how each of the SARS-CoV-2 proteins differentially affects vascular functionality; moreover, once the model was validated, we applied it to identify how SARS-CoV-2 proteins interact with proteins that have been significantly correlated with changes in cell functionality.
 
 ## Results
 
-## SARS-CoV-2 proteins impair barrier properties affecting cell-junction proteins
+### SARS-CoV-2 proteins impair barrier properties affecting cell-junction proteins
 
 Increasing numbers of studies indicate a significant role for the vasculature in the physiological response to SARS-CoV-2. However, neither the exact molecular mechanism that leads to these effects nor the individual contribution of any of the SARS-CoV-2 proteins is known. Plasmids encoding SARS-CoV-2 proteins were cloned into lentivirus vectors, with eGFP-encoding vector used as a negative control. To shed light on the vascular response to the virus, HUVECs were cultured on different platforms, transduced with these lentiviral particles, and assessed for the effects of the virus proteins on different functionalities. Culturing HUVEC on Transwells or glass coverslips (Figure 2a) allowed us to identify how the specific proteins affect endothelial functionality. To ensure proper infection, the control vector included a GFP label, which enabled us to estimate infection efficiency at around 70 % (Figure 2a). Since the most basic function of the endothelium is to serve as a barrier, we sought to identify the changes in endothelium permeability in response to the SARS-CoV-2 proteins, and to pinpoint which of these proteins have the most significant effect. Barrier functions and properties were measured via trans-epithelial-endothelial electrical resistance (TEER), a standard method that identifies changes in impedance values, reflecting the integrity and permeability of the cell monolayer (Srinivasan et al., 2015). The GFP control and nine SARS-CoV-2 proteins did not show any significant change in TEER values (compared to the untreated condition), whereas 18 of the SARS-CoV-2 proteins caused significant changes in value (see plot in Figure 2b). The most dominant permeability changes were observed with nsp5_c145a, nsp13, nsp7, orf7a, and nsp2, with a 20–28% decrease in TEER values (Figure 2—figure supplement 1, and Figure 2c), in which the different SARS-CoV-2 proteins are listed and the gradual color change from red to violet represents the progressive reduction in TEER values. Figure 2—figure supplement 1 shows the comparison in TEER values before the infection and 3 and 4 days after the infection, showing that the permeability changes in the cells exposed to the viral proteins are maintained.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/69314/elife-69314-fig2-v1.jpg)
+
+**Figure 2.:** (a) Bright-field and fluorescent image of infected eGFP HUVEC, scale bar: 50 µm; (b) changes in barrier functions as a result of SARS-CoV-2 proteins were assessed by trans-epithelial-endothelial electrical resistance (TEER) measurement. Note the statistical differences compared to the untreated control condition, assessed by F-statistic with two-way ANOVA test, followed by the Holm–Sidak test for multiple comparisons; (c) color map showing a gradual decrease in TEER values compared to the untreated condition at day 3; (d) immunocytochemistry (ICC) for CD31 (green) and Hoechst (blue) for the three specified conditions, scale bar: 20 µm; (e) analysis of CD31 expression levels.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69314/elife-69314-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Trans-epithelial-endothelial electrical resistance (TEER) values at three different time points: before the infection (blue dots), 3 and 4 days after the infections (pink and green dots).
+
 Next, we analyzed some of the proteins that exhibited the most significant (nsp2, nsp5_c145a, and nsp7) or least significant (S) changes in TEER value for changes in expression of the cell-junction proteins such as CD31 (Figure 2d and e), cadherin 1–5, occludin, and ZO 1–3 (presented later), indicating altered barrier functions. Analysis of the immunocytochemistry (ICC) (Figure 2d and e) showed, as expected, that nsp2, nsp5_c145a, and nsp7 significantly reduce the expression levels of CD31 compared to the untreated, eGFP, and S conditions, suggesting a deterioration in barrier function. Hence, these data show a differential effect of SARS-CoV-2 proteins on endothelial functionality and provide a mechanistic explanation for the reduction in endothelial integrity.
 
-## Increased endothelial inflammatory response caused by SARS-CoV-2 proteins
+### Increased endothelial inflammatory response caused by SARS-CoV-2 proteins
 
 It is known that SARS-CoV-2 can cause a severe cytokine storm (Pum et al., 2021; Wang et al., 2020a) and a significant increase in coagulation-related pathologies. As we were interested in identifying the role of the vasculature in these observations, we stained and analyzed the expression level of VWF (Figure 3a and b), which is highly correlated with coagulation (Rietveld et al., 2019). Similar to the CD31 staining, we characterized only those proteins that resulted in a significant decrease in TEER values (nsp2, nsp5_c145a, and nsp7). As shown in Figure 3a and b, the control samples did not exhibit marked expression of VWF, whereas the cells transfected with nsp2, nsp5_c145a, and nsp7 showed a significant change in VWF expression. Moreover, as VWF is also associated with increased inflammation (Kawecki et al., 2017), we monitored changes in cytokine expression due to the different SARS-CoV-2 proteins (Figure 3c). We were particularly interested in IL-6, which has been identified as one of the most dominant cytokines expressed due to SARS-CoV-2 infection (Wang et al., 2020a; Akbari and Rezaie, 2020; Peruzzi et al., 2020; Liao et al., 2020b; Liao et al., 2020a). We observed that 13 out of the 26 proteins caused an increase in IL-6 secretion, 3 of which had resulted in a decrease in barrier function and increased VWF expression.
 
@@ -61,7 +213,7 @@ It is known that SARS-CoV-2 can cause a severe cytokine storm (Pum et al., 2021;
 
 **Figure 3.:** (a) Confocal reconstructions of HUVEC stained for von Willebrand factor (VWF) (green) and Hoechst (blue) for three conditions: control (untreated), eGFP, and nsp5_c145a, scale bar: 20 µm; (b) analysis of VWF expression levels; (c) fold change of interleukin (IL)-6 in response to the different proteins.
 
-## Correlation between vascular permeability impairment and viral proteins
+### Correlation between vascular permeability impairment and viral proteins
 
 We then investigated how SARS-CoV-2 causes the observed changes in HUVECs permeability. We collected sets of proteins responsible for specific functionalities of endothelial cells. We also constructed an integrated viral–host and host–host PPI network. For each viral protein and each prior functional set, we measured the network proximity between the viral protein and the human functional set using a network propagation algorithm. We scored the significance of these propagation calculations by comparing them to those obtained on random PPI networks with the same node degrees. Proteins receiving high and significant scores were most likely to interact with the specific SARS-CoV-2 protein and thus might cause the observed functional changes. When comparing the overall effects of the 26 SARS-CoV-2 proteins on endothelial TJ proteins (e.g., cadherin 1–5, occludin, and ZO 1–3), we found a correlation between the effects of the SARS-CoV-2 proteins and TEER values (Figure 4a). Moreover, some of the proteins that significantly affected the TEER parameters (Figure 2c) were also observed to be significantly proximal to the permeability-related set. These included nsp2, nsp7, and nsp13 (Figure 4a). Our algorithm identified cadherin-2, α-catenin, β-catenin, δ-catenin, and ZO 1 and 2 as the most susceptible proteins to SARS-CoV-2 infection (Figure 4b).
 
@@ -77,11 +229,208 @@ To validate our PPI network model, we performed immunostaining of some TJ protei
 
 Once the model was validated, we used it to identify how the individual SARS-Cov-2 proteins affect nine other different vascular endothelial cells. As a starting point, we created a table (Table 2) (based on the literature) where we compared the expression of 12 different TJ proteins across nine different types of endothelial cells. We then applied the network-based model to identify which endothelial cells are more susceptible to the different SARS-Cov-2 proteins. As can be seen in Figure 6, there are significant differences in the response of various viral proteins on different types of vascular endothelial cells. For example,, the viral proteins nsp13, nsp11, orf6, and S seem to have a significant effect on the different types of vascular endothelial cells, according to the network score detected. However, the proteins m, E, n, nsp12, and nsp8 are the less interactive with the vascular cells.
 
+**Table 2.**
+ Comparison of tight junction (TJ) proteins expression among different types of vascular endothelial cells.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Endothelial cells type</th>
+      <th colspan="12">TJ proteins</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Cadherin-2</td>
+      <td>Cadherin-3</td>
+      <td>Cadherin-4</td>
+      <td>Cadherin-5</td>
+      <td>δ-1-Catenin</td>
+      <td>β-Catenin</td>
+      <td>α-Catenin</td>
+      <td>Occludin</td>
+      <td>Claudin-5</td>
+      <td>ZO-1</td>
+      <td>ZO-2</td>
+      <td>ZO-3</td>
+    </tr>
+    <tr>
+      <td>Human pulmonary artery endothelial cells (HPAECs) (Nakato et al., 2019; Chi et al., 2003; Ivanov et al., 2004; Ferreri et al., 2008; DiStefano et al., 2014; Zebda et al., 2013; Yuan et al., 2012; Wang et al., 2011)</td>
+      <td>+</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Human umbilical vein endothelial cells (HUVECs) (Nakato et al., 2019; Chi et al., 2003; Ferreri et al., 2008; Wu et al., 2008; Dean et al., 2009; Polus et al., 2006; DeBusk et al., 2010; Wessells et al., 2009)</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Human umbilical artery endothelial cells (HUAECs) (Nakato et al., 2019; Chi et al., 2003; Davis et al., 2003; Ikuno et al., 2017; Kevil et al., 1998; Kluger et al., 2013)</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Human great saphenous vein endothelial cells (HGSVECs) (Nakato et al., 2019; Chi et al., 2003; Latif et al., 2006; Murakami et al., 2008)</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Human common carotid artery endothelial cells (HCCaECs) (Nakato et al., 2019; Chi et al., 2003)</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Human aortic endothelial cells (HAoECs) (Nakato et al., 2019; Chi et al., 2003; Wu et al., 2017; Sandig et al., 1999; DeMaio et al., 2006)</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Human coronary artery endothelial cells (HCAECs) (Nakato et al., 2019; Chi et al., 2003; Wessells et al., 2009; Wu et al., 2004; Pinto et al., 2018)</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Human endocardial cells (HENDCs) (Nakato et al., 2019; Chi et al., 2003; Vestweber et al., 2009; Bao et al., 2017)</td>
+      <td>+</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Human renal artery endothelial cells (HRAECs) (Nakato et al., 2019; Chi et al., 2003; Maciel et al., 2018)</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/69314/elife-69314-fig6-v1.jpg)
 
 **Figure 6.:** Correlation of adjusted p-value between vascular proteins identified in vascular endothelial cells and the viral proteins.
 
 As our network propagation model is highly correlated with our experimental results, we applied it to other physiological systems that are known to be affected by SARS-CoV-2. We created a list of all proteins that are known to be affected by the SARS-CoV-2 proteins according to the literature (Supplementary file 1A, white columns). The table was composed of both proteins identified experimentally via western blot, proteomics, and immunohistochemistry (marked in blue) and those identified clinically as being highly correlated with loss of specific functionality in specific tissues (marked in red). We then applied the network-based model to identify which proteins in Supplementary file 1A are most susceptible to the different SARS-CoV-2 proteins. As can be seen in Figure 7—figure supplements 2–7, Supplementary file 1A and B, specific SARS-CoV-2 proteins were identified as affecting specific proteins in specific tissues. As expected, most of the SARS-CoV-2 proteins affected more than one protein, the most salient being nsp11, nsp4, and nsp7 (Figure 7b), each of which was predicted to affect more than 40 different proteins. An additional parameter that should be considered is the protein’s ‘distance’ from the viral proteins. This value represents the number of hops in the PPI network from a given protein to the viral proteins, where a value of 1 represents a direct viral–host connection. We hypothesized that the closer the distance between the viral proteins and the given protein, the more significant the viral effect. Supplementary file 1A (gray columns) and Figure 7c present the calculated distances. Most of the identified proteins in Supplementary file 1A were classified with a distance of 1 or 2 from the virus, suggesting more severe putative effects. A very clear example, are the T cells, macrophages, lung epithelial and cardiomyocytes which show that the most significant effect was by the viral proteins which present a close connection with the relative cell proteins reported. This suggest a potential effect on the related functional or metabolic pathway (Supplementary file 1A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/69314/elife-69314-fig7-v1.jpg)
+
+**Figure 7.:** (a) PPI results for the severe acute respiratory syndrome (SARS)-CoV-2 proteins that have a significant effect on the proteins presented in SI Table 1 for each system; (b) number of proteins affected by each SARS-CoV-2 protein, as calculated by PPI; (c) number of proteins with a specific distance factor from the viral proteins (also shown in SI Table 1).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/69314/elife-69314-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** p-Value correlation of a target protein with a specific viral protein, calculated empirically using 100 random samples.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/69314/elife-69314-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** p-Value correlation of a target protein with a specific viral protein, calculated empirically using 100 random samples.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/69314/elife-69314-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** p-Value correlation of a target protein with a specific viral protein, calculated empirically using 100 random samples.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/69314/elife-69314-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** p-Value correlation of a target protein with a specific viral protein, calculated empirically using 100 random samples.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/69314/elife-69314-fig7-figsupp5-v1.jpg)
+
+**Figure 7—figure supplement 5.:** p-Value correlation of a target protein with a specific viral protein, calculated empirically using 100 random samples.
+
+![Figure 7—figure supplement 6.](https://cdn.elifesciences.org/articles/69314/elife-69314-fig7-figsupp6-v1.jpg)
+
+**Figure 7—figure supplement 6.:** p-Value correlation of a target protein with a specific viral protein, calculated empirically using 100 random samples.
+
+![Figure 7—figure supplement 7.](https://cdn.elifesciences.org/articles/69314/elife-69314-fig7-figsupp7-v1.jpg)
+
+**Figure 7—figure supplement 7.:** p-Value correlation of a target protein with a specific viral protein, calculated empirically using 100 random samples.
 
 ## Discussion
 
@@ -101,40 +450,40 @@ As already noted, the pathology is probably a combination of multiple conditions
 
 While beneficial, our approach has two major limitations: (a) our inability to identify the effect of multiple proteins and (b) our neglect of the effect of the coronavirus structure and binding on the cellular response. The former point can be overcome by expressing combinations of different SARS-CoV-2 proteins. However, since the SARS-CoV-2 expresses 29 proteins, there are about ~9 × 1030 possible protein combinations. Therefore, we decided to focus on individual proteins and allow further studies to pursue any combinations of interest. Regarding the latter limitation, we did not include the coronavirus structure (including the ACE2 receptors) in this study, because many studies have already demonstrated the cellular response to this structure (Chioh et al., 2020; Yang et al., 2020; Procko, 2020), and how tissues that do not have significant ACE2 expression (neurons, immune components such as B and T lymphocytes, and macrophages) are affected by the virus remains an open question.
 
-## Conclusions
+### Conclusions
 
 Accumulating clinical evidence suggests that COVID-19 is a disease with vascular aspects. However, only a few studies have identified the specific role of each of the SARS-CoV-2 proteins in the cellular response leading to vascular dysfunctions. In this work, we characterized the endothelial response to each of 26 SARS-CoV-2 proteins and identified those that have the most significant effect on the barrier function. In addition, we used PPI network-based analysis to predict which of the endothelial proteins is most affected by the virus and to identify the specific role of each of the SARS-CoV-2 proteins in the observed changes in systemic protein expression. Overall, this work identified which of the SARS-CoV-2 proteins are most dominant in their effect on the physiological response to the virus. We believe that the data presented in this work will give us better insight into the mechanism by which the vasculature and the system respond to the virus, and will enable us to expedite drug development for the virus by targeting the identified dominant proteins.
 
 ## Materials and methods
 
-## Generation of lentiviral SARS-CoV-2 plasmids
+### Generation of lentiviral SARS-CoV-2 plasmids
 
 Plasmids encoding the SARS-CoV-2 open reading frames proteins and eGFP control were a kind gift of Nevan Krogan (Addgene plasmid #141367–141395). Plasmids were acquired as bacterial LB–agar stabs and used per the provider’s instructions. Briefly, each stab was first seeded in LB agar (Bacto Agar; BD Biosciences, San Jose, CA) in 10 cm plates. Then, single colonies were inoculated into flasks containing LB (BD Difco LB Broth, Lennox) and 100 µg/ml penicillin (Biological Industries, Beit HaEmek, Israel). Transfection-grade plasmid DNA was isolated from each flask using the ZymoPURE II Plasmid Maxiprep Kit (Zymo Research, Irvine, CA) according to the manufacturer’s instructions.
 
-## Lentivirus preparation
+### Lentivirus preparation
 
 HEK293T cells (ATCC, Manassas, VA) were seeded in 10 cm cell culture plates at a density of 4 × 106 cells/plate. The cells were maintained in 293T medium composed of DMEM high glucose (4.5 g/l; Merck, Rahway, NJ) supplemented with 10 % fetal bovine serum (FBS; Biological Industries), 1× NEAA (Biological Industries), and 2 mM L-alanine–L-glutamine (Biological Industries, Israel). Lentiviral stocks, pseudo-typed with VSV-G, were produced in HEK293T cells as previously described (Kutner et al., 2009). Briefly, each of the pLVX plasmids containing the SARS-CoV-2 genes or EGFP for control were cotransfected with third-generation lentivirus helper plasmids at equimolar ratio; 48 hr later, the lentivirus-containing medium was collected and supernatant was clarified by centrifugation (500 g, 5 min) and filtration (0.45 µm, Millex-HV, Merck Millipore, Burlington, MA). All virus stocks were aliquoted and stored at –80 °C until thawed for subsequent use.
 
-## Endothelial cell culture
+### Endothelial cell culture
 
 HUVECs (C-12200, PromoCell GmbH, Heidelberg, Germany, tested negative for mycoplasma contamination) were used to test each viral protein’s impact on vascular properties. After thawing, the HUVECs were expanded in low-serum endothelial cell growth medium (PromoCell) at 37°C with 5% CO2 in a humidifying incubator, and used at passage p4–p6. Cells were grown to 80–90% confluence before being transferred to transparent polyethylene terephthalate Transwell supports (0.4 µm pore size, Greiner Bio-One, Austria) or a glass-bottom well plate (Cellvis, Mountain View, CA). Before seeding, the uncoated substrates were treated with Entactin-Collagen IV-Laminin (ECL) Cell Attachment Matrix (Merck) diluted in DMEM (10 µg/cm2) for 1 hr in the incubator. Then, the HUVECs were harvested using a DetachKit (PromoCell), were seeded inside the culture platforms at a density of 250,000 cells/cm2, and grown for 3 days. Then viral infection with the different plasmids was performed and its impact on cell behavior was tested 3 days later.
 
-## TEER measurement
+### TEER measurement
 
 The barrier properties of the endothelial monolayer were evaluated by TEER measurements, 3 and 4 days after viral infection. TEER was measured with the Millicell ERS-2 Voltohmmeter (Merck Millipore). TEER values (Ω cm2) were calculated and compared to those obtained in a Transwell insert without cells, considered as a blank, in three different individual experiments, with two inserts used for each viral protein.
 
-## Immunofluorescence
+### Immunofluorescence
 
 HUVEC plated on glass-bottom plates were rinsed in phosphate buffered saline (PBS) and fixed in 4 % paraformaldehyde (Sigma-Aldrich, Rehovot, Israel) for 20 min at RT, 5 days after viral infection. ICC was carried out after permeabilization with 0.1 % Triton X-100 (Sigma-Aldrich, Rehovot, Israel) in PBS for 10 min at RT and blocking for 30 min with 5 % FBS in PBS. The following primary antibodies were applied overnight in PBS at 4°C: rabbit anti-VWF (Abcam, Cambridge, UK), rabbit anti-CD31 (Abcam) against platelet endothelial cell adhesion molecule 1 (PECAM1), rabbit anti-β-catenin (Cell Signaling Technology, Danvers, MA), rabbit anti-cadherin-5 (Cell Signaling Technology, Danvers, MA), rabbit anti ZO-1 (Cell Signaling Technology, Danvers, MA), rabbit anti-occludin (Cell Signaling Technology, Danvers, MA). Cells were then washed three times in PBS and stained with the secondary antibody, anti-rabbit Alexa Fluor 488 (Invitrogen, Carlsbad, CA), for 1 hr at RT. After four washes with PBS, cells were incubated with Hoechst in PBS for 10 min at RT to stain the nuclei. After two washes with PBS, imaging was carried out using an inverted confocal microscope (Olympus FV3000-IX83) with suitable filter cubes and equipped with 20× (0.8 NA), 40× (0.95 NA), and 60× (1.42 NA) objectives. Image reconstruction and analysis were done using open-source ImageJ software (Schindelin et al., 2012).
 
-## Network analysis
+### Network analysis
 
 We scored the effect of each viral protein on selected human proteins using network propagation (Cowen et al., 2017). Specifically, a viral protein was represented by the set of its human interactors (Hu et al., 2021); each of these received a prior score, equal to 1 /n, where n is the size of the interactor set; these scores were propagated in a network of PPI (Almozlino et al., 2017). To assess the statistical significance of the obtained scores, we compared them to those computed on 1000 randomized networks that preserve node degrees. The PPI score was then compared versus the other random networks (this is empirical p-value). p-Values were adjusted for multiple testing using Benjamini–Hochberg FDR approach. For display purposes, the plotted p-value is the negative log of the p-value, which means numbers are non-negative and the higher is the more significant.
 
-## Quantitative ELISA for IL-6
+### Quantitative ELISA for IL-6
 
 ELISA was performed on conditioned medium of infected HUVEC 3 days postinfection, according to the manufacturer’s recommendations (PeproTech Rehovot, Israel).
 
-## Statistical analysis
+### Statistical analysis
 
 The results are presented as mean ± SD, unless otherwise indicated. Statistically significant differences among multiple groups were evaluated by F-statistic with two-way ANOVA, followed by the Holm–Sidak test for multiple comparisons (GraphPad Prism 8.4.3). The difference between the two data sets was assessed and p < 0.05 was considered statistically significant.

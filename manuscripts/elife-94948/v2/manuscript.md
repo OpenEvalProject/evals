@@ -25,28 +25,28 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Center for Life’s Origins and Evolution, Department of Genetics, Evolution and Environment, University College London London United Kingdom
-2. https://ror.org/00rcxh774 worm~lab, Institute of Zoology, University of Cologne Cologne Germany
-3. https://ror.org/01v29qb04 Department of Biosciences, Durham University Durham United Kingdom
-4. https://ror.org/019tgvf94 Université Côte D'Azur, CNRS, Inserm, iBV Nice France
-5. https://ror.org/00wge5k78 The Arctic University Museum of Norway, UiT – The Arctic University of Norway Tromsø Norway
-6. https://ror.org/02en5vm52 Collège Doctoral, Sorbonne Université Paris France
-7. https://ror.org/00j9c2840 Department of Tumor Biology, Institute for Cancer Research, The Norwegian Radium Hospital, Oslo University Hospital Oslo Norway
-8. https://ror.org/01xtthb56 Institute of Clinical Medicine, Medical Faculty, University of Oslo Oslo Norway
-9. https://ror.org/052d1a351 Museum für Naturkunde, Leibniz Institute for Evolution and Biodiversity Science Berlin Germany
-10. https://ror.org/00r1edq15 University of Greifswald, Institute for Mathematics and Computer Science Greifswald Germany
-11. https://ror.org/00r1edq15 University of Greifswald, Center for Functional Genomics of Microbes Greifswald Germany
-12. https://ror.org/00cv4n034 Royal Brompton Hospital, Guy's and St Thomas' NHS Foundation Trust London United Kingdom
-13. https://ror.org/0495fxg12 Institut Pasteur, Université de Paris, CNRS UMR3525, Unité Régulation Spatiale des Génomes Paris France
-14. https://ror.org/024mw5h28 The University of Chicago, Division of Biological Sciences Chicago United States
-15. https://ror.org/02en5vm52 Laboratoire de Biologie du Développement de Villefranche-sur-mer (LBDV), Sorbonne Universite Villefranche-sur-mer France
-16. https://ror.org/052gg0110 Department of Biochemistry, University of Oxford Oxford United Kingdom
+1. Center for Life’s Origins and Evolution, Department of Genetics, Evolution and Environment, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+2. worm~lab, Institute of Zoology, University of Cologne Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))
+3. Department of Biosciences, Durham University Durham United Kingdom ([ROR:01v29qb04](https://ror.org/01v29qb04))
+4. Université Côte D'Azur, CNRS, Inserm, iBV Nice France ([ROR:019tgvf94](https://ror.org/019tgvf94))
+5. The Arctic University Museum of Norway, UiT – The Arctic University of Norway Tromsø Norway ([ROR:00wge5k78](https://ror.org/00wge5k78))
+6. Collège Doctoral, Sorbonne Université Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))
+7. Department of Tumor Biology, Institute for Cancer Research, The Norwegian Radium Hospital, Oslo University Hospital Oslo Norway ([ROR:00j9c2840](https://ror.org/00j9c2840))
+8. Institute of Clinical Medicine, Medical Faculty, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))
+9. Museum für Naturkunde, Leibniz Institute for Evolution and Biodiversity Science Berlin Germany ([ROR:052d1a351](https://ror.org/052d1a351))
+10. University of Greifswald, Institute for Mathematics and Computer Science Greifswald Germany ([ROR:00r1edq15](https://ror.org/00r1edq15))
+11. University of Greifswald, Center for Functional Genomics of Microbes Greifswald Germany ([ROR:00r1edq15](https://ror.org/00r1edq15))
+12. Royal Brompton Hospital, Guy's and St Thomas' NHS Foundation Trust London United Kingdom ([ROR:00cv4n034](https://ror.org/00cv4n034))
+13. Institut Pasteur, Université de Paris, CNRS UMR3525, Unité Régulation Spatiale des Génomes Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
+14. The University of Chicago, Division of Biological Sciences Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+15. Laboratoire de Biologie du Développement de Villefranche-sur-mer (LBDV), Sorbonne Universite Villefranche-sur-mer France ([ROR:02en5vm52](https://ror.org/02en5vm52))
+16. Department of Biochemistry, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
 ## Abstract
 
-The evolutionary origins of Bilateria remain enigmatic. One of the more enduring proposals highlights similarities between a cnidarian-like planula larva and simple acoel-like flatworms. This idea is based in part on the view of the Xenacoelomorpha as an outgroup to all other bilaterians which are themselves designated the Nephrozoa (protostomes and deuterostomes). Genome data can provide important comparative data and help understand the evolution and biology of enigmatic species better. Here, we assemble and analyze the genome of the simple, marine xenacoelomorph Xenoturbella bocki , a key species for our understanding of early bilaterian evolution. Our highly contiguous genome assembly of X. bocki has a size of ~111 Mbp in 18 chromosome-like scaffolds, with repeat content and intron, exon, and intergenic space comparable to other bilaterian invertebrates. We find X. bocki to have a similar number of genes to other bilaterians and to have retained ancestral metazoan synteny. Key bilaterian signaling pathways are also largely complete and most bilaterian miRNAs are present. Overall, we conclude that X. bocki has a complex genome typical of bilaterians, which does not reflect the apparent simplicity of its body plan that has been so important to proposals that the Xenacoelomorpha are the simple sister group of the rest of the Bilateria.
+The evolutionary origins of Bilateria remain enigmatic. One of the more enduring proposals highlights similarities between a cnidarian-like planula larva and simple acoel-like flatworms. This idea is based in part on the view of the Xenacoelomorpha as an outgroup to all other bilaterians which are themselves designated the Nephrozoa (protostomes and deuterostomes). Genome data can provide important comparative data and help understand the evolution and biology of enigmatic species better. Here, we assemble and analyze the genome of the simple, marine xenacoelomorph Xenoturbella bocki, a key species for our understanding of early bilaterian evolution. Our highly contiguous genome assembly of X. bocki has a size of ~111 Mbp in 18 chromosome-like scaffolds, with repeat content and intron, exon, and intergenic space comparable to other bilaterian invertebrates. We find X. bocki to have a similar number of genes to other bilaterians and to have retained ancestral metazoan synteny. Key bilaterian signaling pathways are also largely complete and most bilaterian miRNAs are present. Overall, we conclude that X. bocki has a complex genome typical of bilaterians, which does not reflect the apparent simplicity of its body plan that has been so important to proposals that the Xenacoelomorpha are the simple sister group of the rest of the Bilateria.
 
 ## Introduction
 
@@ -54,7 +54,7 @@ Xenoturbella bocki (Figure 1) is a morphologically simple marine worm first desc
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig1-v2.jpg)
 
-**Figure 1.:** X. bocki showing the simple body organization of the marine vermiform animal.ant, anterior; post, posterior; If, lateral furrow; rf, ring furrow; m, mouth opening.
+**Figure 1.:** ant, anterior; post, posterior; If, lateral furrow; rf, ring furrow; m, mouth opening.
 
 The simplicity of xenacoelomorph species compared to other bilaterians is a central feature of discussions over their evolution. While Xenacoelomorpha are clearly monophyletic, their phylogenetic position within the Metazoa has been controversial for a quarter of a century. There are two broadly discussed scenarios: a majority of studies have supported a position for Xenacoelomorpha as the sister group of all other Bilateria (the Protostomia and Deuterostomia, collectively named Nephrozoa) (Jimenez-Guri et al., 2006; Ryan et al., 2006; Jékely, 2013); work we have contributed to Telford, 2008; Philippe et al., 2019; Philippe et al., 2011; Bourlat et al., 2006, has instead placed Xenacoelomorpha within the Bilateria as the sister group of the Ambulacraria (Hemichordata and Echinodermata) to form a clade called the Xenambulacraria (Philippe et al., 2011).
 
@@ -72,11 +72,64 @@ In order to infer the characteristics of the ancestral xenacoelomorph genome, an
 
 ## Results
 
-## Assembly of a draft genome of X. bocki
+### Assembly of a draft genome of X. bocki
 
 We collected X. bocki specimens (Figure 1) from the bottom of the Gullmarsfjord close to the biological field station in Kristineberg (Sweden). These adult specimens were starved for several days in tubes with artificial sea water, and then sacrificed in lysis buffer. We extracted high molecular weight (HMW) DNA from single individuals for each of the different sequencing steps below.
 
 We assembled a high-quality draft genome of X. bocki using one short read Illumina library and one TruSeq Synthetic Long Reads (TSLR) Illumina library. We used a workflow based on a primary assembly with SPAdes (‘Materials and methods’; Bankevich et al., 2012). The primary assembly had an N50 of 8.5 kb over 37,880 contigs with a maximum length of 206,709 bp. After using the redundans pipeline (Pryszcz and Gabaldón, 2016), this increased to an N50 of ~62 kb over 23,094 contigs and scaffolds spanning ~121 Mb, and a longest scaffold of 960,978 kb (Table 1).
+
+**Table 1.**
+ Improvement of assembly and scaffolding metrics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Assembly step</th>
+      <th># seqs</th>
+      <th># reals</th>
+      <th># Ns</th>
+      <th>Max length</th>
+      <th>N50</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Redundans contigs</td>
+      <td>37,880</td>
+      <td>113,212,556</td>
+      <td>38,3327</td>
+      <td>206,709</td>
+      <td>8544</td>
+    </tr>
+    <tr>
+      <td>Redundans scaffolds</td>
+      <td>24,538</td>
+      <td>117,405,089</td>
+      <td>3,021,351</td>
+      <td>952,321</td>
+      <td>52,073</td>
+    </tr>
+    <tr>
+      <td>Pre instaGRAAL</td>
+      <td>23,094</td>
+      <td>117,396,873</td>
+      <td>3,534,582</td>
+      <td>960,978</td>
+      <td>61,989</td>
+    </tr>
+    <tr>
+      <td>Final scaffolds</td>
+      <td>27,939</td>
+      <td>107,712,917</td>
+      <td>3,328,069</td>
+      <td>8,757,424</td>
+      <td>2,730,651</td>
+    </tr>
+  </tbody>
+</table>
+
+_Assessed with the jvci toolbox: https://github.com/tanghaibao/jcvi (Tang, 2010)._
 
 The final genome was obtained with Hi-C scaffolding using the program instaGRAAL (Baudry et al., 2020). The scaffolded genome has a span of 111 Mbp (117 Mbp including small fragments unincorporated into the HiC assembly) and an N50 of 2.7 Mbp (for contigs >500 bp). The assembly contains 18 megabase-scale scaffolds encompassing 72 Mbp (62%) of the genomic sequence, with 43% GC content. The original assembly indicated a repeat content of about 25% after a RepeatModeller-based RepeatMasker annotation (‘Materials and methods’). As often seen in non-model organisms, about 2/3 of the repeats are not classified.
 
@@ -86,9 +139,9 @@ The predicted X. bocki genes have a median coding length of 873 nt and a mean le
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig2-v2.jpg)
 
-**Figure 2.:** X. bocki genome with other metazoans (data from Francis and Wörheide, 2017).X. bocki does not appear to be an outlier in any of these comparisons.
+**Figure 2.:** X. bocki does not appear to be an outlier in any of these comparisons.
 
-## The genome of a co-sequenced Chlamydia species
+### The genome of a co-sequenced Chlamydia species
 
 We recovered the genome of a marine Chlamydia species from Illumina data obtained from one X. bocki specimen and from Oxford Nanopore data from a second specimen supporting previous microscopic analyses and single-gene PCRs suggesting that X. bocki is host to a species in the bacterial genus Chlamydia. The bacterial genome was found as five contigs spanning 1,906,303 bp (N50 of 1,237,287 bp), which were assembled into two large scaffolds. Using PROKKA (Seemann, 2014), we predicted 1738 genes in this bacterial genome, with 3 ribosomal RNAs, 35 transfer RNAs, and 1 transfer-messenger RNA. The genome is 97.5% complete for bacterial BUSCO (Simão et al., 2015) genes, missing only one of the 40 core genes.
 
@@ -96,17 +149,17 @@ Marine chlamydiae are not closely related to the group of human pathogens (Dhara
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig3-v2.jpg)
 
-**Figure 3.:** X. bocki harbors a marine Chlamydiae species as potential symbiont.In the phylogenetic analysis of 16S rDNA (ML: GTR + F + R7; bootstrap values included) the bacteria in our X. bocki isolate (arrow) are sister lo a previous isolate from X. westbladi. X. westbladi is most likely a mis-identification of X. bocki.
+**Figure 3.:** In the phylogenetic analysis of 16S rDNA (ML: GTR + F + R7; bootstrap values included) the bacteria in our X. bocki isolate (arrow) are sister lo a previous isolate from X. westbladi. X. westbladi is most likely a mis-identification of X. bocki.
 
 To investigate whether the X. bocki-hosted Chlamydia might contribute to the metabolic pathways of its host, we compared the completeness of metabolic pathways in KEGG for the X. bocki genome alone and for the X. bocki genome in combination with the bacteria. We found only slightly higher completeness in a small number of pathways involved in carbohydrate metabolism, carbon fixation, and amino acid metabolism (see supplementary material), suggesting that the relationship is likely to be commensal or parasitic rather than a true symbiosis.
 
 A second large fraction of bacterial reads, annotated as Gammaproteobacteria, were identified and filtered out during the data processing steps. These bacteria were also previously reported as potential symbionts of X. bocki (Kjeldsen et al., 2010). However, these sequences were not sufficiently well covered to reconstruct a genome, and we did not investigate them further.
 
-## HGT into the X. bocki genome is low
+### HGT into the X. bocki genome is low
 
 Given the close association with bacteria, we were curious to see whether the X. bocki genome contains an elevated number of horizontally acquired genes. We did not find this to be the case. We were able to detect 56 potential horizontal gene transfer (HGT) events. Phylogenies generated using closest blast hits for each HGT candidate unveiled one of the 56 genes to be of chlamydial origin and thus likely originating from a bacterial contig. A number of HGT candidates appear to be of proteobacterial origin, coding for a functionally diverse set of proteins. In summary, 0.35% of the X. bocki genes we have identified might be horizontally acquired. See supplementary online material for alignments and gene trees.
 
-## A phylogenetic gene presence/absence matrix supports Xenambulacraria
+### A phylogenetic gene presence/absence matrix supports Xenambulacraria
 
 The general completeness of the X. bocki gene set allowed us to use the presence and absence of genes identified in our genomes as a source of information to find the best supported phylogenetic position of the Xenacoelomorpha. We conducted two separate phylogenetic analyses of gene presence/absence data: one including the fast-evolving Acoelomorpha and one without. In both analyses, the best tree grouped Xenoturbella with the Ambulacraria (Figure 4a). The analysis including acoels, however, placed the acoels as the sister group to Nephrozoa separate from Xenoturbella (Figure 4b). There are two explanations for this finding. The first would be that the Xenacoelomorphs are paraphyletic; that Xenoturbella is the sister group of the Ambulacraria and Acoelomorpha the sister group of Nephrozoa. Because many other studies have shown the monophyly of Xenacoelomorpha to be robust (Philippe et al., 2019; Cannon et al., 2016; Rouse et al., 2016; Srivastava et al., 2014; Philippe et al., 2011; Bourlat et al., 2006; Ueki et al., 2019), we do not think this a plausible explanation. The second explanation of this observation is that it is the result of systematic error caused by a high rate of gene loss or by orthologs being incorrectly scored as missing due to higher rates of sequence evolution in acoelomorphs (Natsidis et al., 2021). Under this second scenario, we consider it more likely that, of the two clades, it is the Acoelomorpha not Xenoturbella that are wrongly placed and that the position of Xenoturbella represents the more likely position of the entire phylum of Xenacoelomorpha. We note that under both scenarios the focus of our work, Xenoturbella, is the sister group of the Ambulacraria though the implied error suggests that using gene presence/absence may not be the ideal way to solve difficult phylogenetic problems.
 
@@ -114,7 +167,7 @@ The general completeness of the X. bocki gene set allowed us to use the presence
 
 **Figure 4.:** Both analysis (a) and (b) confirm Xenambulacraria, that is, Xenoturbellida in a group with Echinoderms and Hemichordates. Inclusion of the acoel flatworms places these as sister to all other Bilateria (b). This placement appears as an artifact due to the very fast evolution in this taxon, in particular as good evidence exists for uniting Xenoturbellida and Acoela (Philippe et al., 2019; Cannon et al., 2016; Rouse et al., 2016; Srivastava et al., 2014; Philippe et al., 2011; Bourlat et al., 2006; Ueki et al., 2019).
 
-## The X. bocki molecular toolkit is typical of bilaterians
+### The X. bocki molecular toolkit is typical of bilaterians
 
 One of our principal aims was to ask whether the Xenoturbella genome lacks characteristics otherwise present in the Bilateria. We found that for the Metazoa gene set in BUSCO (v5) the X. bocki proteome translated from our gene predictions is 82.5% complete and ~90% complete when partial hits are included (82 and 93%, respectively, for the Eukaryote gene set). This estimate is even higher in the acoel H. miamia, which was originally reported to be 90% (Gehrke et al., 2019), but in our re-analysis was 95.71%. In comparison, the morphologically highly simplified and fast-evolving annelid Intoshia linei (Schiffer et al., 2018) has a genome of fewer than 10,000 genes (Mikhailov et al., 2016) and in our analysis is only ~64% complete for the BUSCO (v5) Metazoa set. The model nematode Caenorhabditis elegans is ~79% complete for the same set. Despite the morphological simplicity of both Xenoturbella and Hofstenia, these Xenacoelomorpha are missing few core genes compared to other bilaterian lineages that we perceive to have undergone a high degree of morphological evolutionary change (such as the evolution of miniaturization, parasitism, sessility, etc.).
 
@@ -124,13 +177,11 @@ To better profile the Xenoturbella and xenacoelomorph molecular toolkits, we use
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig5-v2.jpg)
 
-**Figure 5.:** X. bocki shows similar percentages of genes in orthogroups, un­assigned genes, and species-specific orthogroups as other well-annotated enomes.
-
-## Idiosyncrasies of Xenoturbella
+### Idiosyncrasies of Xenoturbella
 
 In order to identify sets of orthologs specific to the two Xenoturbella species, we used the kinfin software (Laetsch and Blaxter, 2017a) and found 867 such groups in the OrthoFinder clustering. We profiled these genes based on Pfam domains and GO terms derived from InterProScan. While these Xenoturbella specific proteins fall into diverse classes, we did see a considerable number of C-type lectin, Immunoglobulin-like, PAN, and Kringle domain containing Pfam annotations. Along with the cysteine-rich secretory protein family and the G-protein-coupled receptor activity GO terms, these genes and families of genes may be interesting for future studies into the biology of Xenoturbella in its native environment.
 
-## Gene families and signaling pathways are retained in X. bocki
+### Gene families and signaling pathways are retained in X. bocki
 
 In our orthology clustering, we did not see an inflation of Xenoturbella-specific groups in comparison to other taxa, but also no conspicuous absence of major gene families (Figure 6). Family numbers of transcription factors like Zinc-fingers or homeobox-containing genes, as well as, for example, NACHT-domain encoding genes seem to be neither drastically inflated nor contracted in comparison to other species in our InterProScan-based analysis.
 
@@ -140,21 +191,49 @@ In our orthology clustering, we did not see an inflation of Xenoturbella-specifi
 
 To catalogue the completeness of cell signaling pathways, we screened the X. bocki proteome against KEGG pathway maps using GenomeMaple (Takami et al., 2016). The X. bocki gene set is largely complete in regard to the core proteins of these pathways, while an array of effector proteins is absent (Figure 6). In comparison to other metazoan species, as well as to a unicellular choanoflagellate and a yeast, the X. bocki molecular toolkit has significantly lower KEGG completeness than morphologically complex animals such as the sea urchin and amphioxus (t-test; Figure 6). Xenoturbella is, however, not significantly less complete compared to other bilaterians considered to have low morphological complexity and which have been shown to have reduced gene content, such as C. elegans, the annelid parasite I. linei, or the acoel H. miamia (Figure 6).
 
-## Clustered homeobox genes in the X. bocki genome
+### Clustered homeobox genes in the X. bocki genome
 
 Acoelomorph flatworms possess three unlinked HOX genes, orthologs of anterior (Hox1), central (Hox4/5 or Hox5), and posterior Hox (HoxP). In contrast, previous analysis of X. bocki transcriptomes identified one anterior, three central, and one posterior Hox genes. We identified clear evidence of a syntenic Hox cluster with four Hox genes (centHox1, postHox, centHox3, and antHox1) in the X. bocki genome (Figure 7). There was also evidence of a fragmented annotation of centHox2, split between the four gene Hox cluster and a separate scaffold (Figure 7). In summary, this suggests that all five Hox genes form a Hox cluster in the X. bocki genome, but that there are possible unresolved assembly errors disrupting the current annotation. We also identified other homeobox genes on the Hox cluster scaffold, including Evx (Figure 7).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig7-v2.jpg)
 
-**Figure 7.:** X. bocki has five HOX genes, which are located in relatively close proximity on one of our chromosome-size scaffolds.Similar clusters exist for the ParaHox and ‘pharyngeal’ genes. Numbers between genes are distance (below) and number of genes between (below). Colors indicate gene families. Red box marks the position of a partial Hox gene. The ‘?’ gene has an unresolved homeodomain identity.
+**Figure 7.:** Similar clusters exist for the ParaHox and ‘pharyngeal’ genes. Numbers between genes are distance (below) and number of genes between (below). Colors indicate gene families. Red box marks the position of a partial Hox gene. The ‘?’ gene has an unresolved homeodomain identity.
 
 Along with the Hox genes, we surveyed other homeobox genes that are typically clustered in Bilateria. The canonical bilaterian ParaHox cluster contains three genes Cdx, Xlox (=Pdx), and Gsx. We identified Cdx and a new Gsx annotation on the same scaffold, as well as a previously reported Gsx paralog on a separate scaffold. This indicates partial retention of the ParaHox cluster in X. bocki along with a duplication of Gsx. On both of these ParaHox-containing scaffolds, we observed other homeobox genes.
 
 Hemichordates and chordates have a conserved cluster of genes involved in patterning their pharyngeal pores – the so-called ‘pharyngeal cluster’. The homeobox genes of this cluster (Msxlx, Nk2-1/2/4/8) were present on a single X. bocki scaffold. Another pharyngeal cluster transcription factor, the Forkhead containing Foxa, and ‘bystander’ genes from that cluster including Egln, Mipol1, and Slc25a21 are found in the same genomic region. Different subparts of the cluster are found in non-bilaterians and protostomes, and the cluster may well be plesiomorphic for the Bilateria rather than a deuterostome synapomorphy (Kapli et al., 2021).
 
-## The X. bocki neuropeptide complement is larger than previously thought
+### The X. bocki neuropeptide complement is larger than previously thought
 
 A catalog of acoelomorph neuropeptides was previously described using transcriptome data (Thiel et al., 2018a). We have discovered 12 additional neuropeptide genes and 39 new neuropeptide receptors in X. bocki adding 6 bilaterian peptidergic systems to the Xenoturbella catalog (NPY-F; MCH/Asta-C; TRH; ETH; CCHa/Nmn-B; Np-S/CCAP), and 6 additional bilaterian systems to the Xenacoelomorpha catalog (Corazonin; Kiss/GPR54; GPR83; 7B2; Trunk/PTTH; NUCB2), making a total of 31 peptidergic systems (Figure 8).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig8-v2.jpg)
+
+**Figure 8.:** (a) Sequence alignment of Cnidarian Colipase-like protein, Ecdysozoan Astakine-like protein and Spiralian, Chordates and Xenacoelomorpha Prokineticin-like proteins show conserved cysteine positions (highlighted by red triangle), as well as clade specific signature sequences sequences among which a “K/R-RFP-K/R” sequence shared only by ambulacrarians and X. bocki. The signature previously reported for Ecdysozoa and chordata, as well as new signatures we found in Spiralia and Cnidaria is absent from ambulacrarians and X. bocki prokineticin ligand sequences. Sequences are available as Figure 8—source data 1; alignment files are available at https://doi.org/10.5281/zenodo.6962271. (b) Peptidergic systems found in Xenoturbella (X), Nemertodermatida (N) and Acoelomorpha (A). Novel findings are highlighted in the top right inset. Color of schemes and inset cladogram nodes on grey background depicts the evolutionary origin of peptidergic systems in accordance with our analysis: bilaterian, protostomian, chordate, xenacoelomorph + ambulacrarian last common ancestors respectively. 7B2, Neuroendocrine protein 7B2; AKH, adipokinetic hormone; Asta-A, Allatostatin-A; Asta-C, Allatostatin-C; AVP, arginine vasopressin; AVT, Arginine vasotocin; CCAP, crustacean cardioactive peptide; CCHa, CCHamide peptide; CCK, cholecystokinin; CRF, Corticotropin-releasing factor; DH31, diuretic hormone 31; DH44, diuretic hormone 44; EH, eclosion hormone; GlycH A5, Glycoprotein Hormone alpha5; GlycH B2, Glycoprotein Hormone beta2; GnRH, Gonadotropin Releasing Hormone; GPR54, G Protein-Coupled Receptor 54; GPR83, G Protein-Coupled Receptor 83; ILP, Insulin-like peptide; Kiss, Kisspeptine; MCH, melanin concentrating hormone; Nmn-B, Neuromedin B; Np-S, Neuropeptide S; NP-Y/F, Neuropeptide Y/F; NucB2, nucleobindin 2; PDF, Pigment-dispersing factor; PEN, neuroendocrine peptide PEN; PTTH, Prothoracicotropic hormone; RYa, RYamide peptide; t-FMRFa, trochozoan-FMRFamide peptide.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Colored dots indicate support (UFB, 1000 ultrafast bootstrap replicates; SHL, 1000 SH-aLRT replicates) and follow the color code in the left inset. Scale bar unit for branch length is the number of substitutions per site. Branches are colored according to the phylogenetic position of the organism from which the sequence originates and follow the color code in the left inset. Nbl1, neuroblastoma suppressor of tumorigenicity 1. Sequences are available as Figure 8—source data 1; alignment and IQTREE tree files are available at https://doi.org/10.5281/zenodo.6962271.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Tree is calculated from concatenated alignment of A and B chains. Scale bar unit for branch length is the number of substitutions per site. Branches are colored according to the phylogenetic position of the organism from which the sequence originates and follow the color code in the bottom inset. dILP, Drosophila insulin-like peptide; GSS, gonad-stimulating substance; ILP, insulin-like peptide; IGF, insulin-like growth factor. Full version of this tree is presented as Supplementary file 2. Sequences are available as Figure 8—source data 1; alignment and IQTREE tree files are available at https://doi.org/10.5281/zenodo.6962271.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** Colored dots indicate support (UFB, 1000 Ultrafast bootstrap replicates; SHL, 1000 SH-aLRT replicates) and follow the color code in the bottom inset. Scale bar unit for branch length is the number of substitutions per site. Branches are colored according to the phylogenetic position of the organism from which the sequence originates and follow the color code in the bottom inset. Collapsed group colored in red indicate that they contain at least one X. bocki sequence. GPA2, Glycoprotein Hormone alpha5; GPB5, Glycoprotein Hormone beta2; GPCR, G Protein-Coupled Receptor; GRL-101, G-protein coupled receptor GRL101. Full version of this tree is presented in Supplementary file 3. Sequences are available as Figure 8—source data 2; alignment and IQTREE tree files are available at https://doi.org/10.5281/zenodo.6962271.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig8-figsupp4-v2.jpg)
+
+**Figure 8—figure supplement 4.:** Colored dots indicate support (UFB, 1000 ultrafast bootstrap replicates; SHL, 1000 SH-aLRT replicates) for main nodes and follow the color code in the bottom inset. Scale bar unit for branch length is the number of substitutions per site. Branches are colored according to the phylogenetic position of the organism from which the sequence originates and follow the color code in the bottom inset. Circular gray bars highlights names of groups of annotated sequences. Circular red bars indicate position of groups of Xenacoelomorpha sequences and associated number the number of X. bocki sequence(s) within these groups. AKH, adipokinetic hormone; Asta-A, Allatostatin-A; Asta-C, Allatostatin-C; CAPA, Cardio acceleratory peptide; CCAP, crustacean cardioactive peptide; CCHa, CCHamide peptide; CCK, cholecystokinin; CRZ, Corazonin; eFMRF, ecdysozoan-FMRFamide peptide; GGN-EP, GGN excitatory peptide; ETH, ecdysis triggering hormone; GnRH, Gonadotropin Releasing Hormone; GPR150, G Protein-Coupled Receptor 150; GPR54, G Protein-Coupled Receptor 54; GPR83, G Protein-Coupled Receptor 83; MCH, melanin concentrating hormone; Myomod, Myomodulin; NK-2, Neurokinin 2; Np-B/ W, Neuropeptide B/W; Np-FF, Neuropeptide FF; Np-F, Neuropeptide F; Np-S, Neuropeptide S; Np-Y, Neuropeptide Y; PBAN, pheromone biosynthesis activation neuropeptide; PEN, neuroendocrine peptide PEN; PRP, Prolactin releasing peptide; QRFP, Neuropeptide QRFP; RYa, RYamide peptide; SIFa, SIFamide peptide; SPR, Sex peptide receptor; tFMRFa, trochozoan-FMRFamide peptide; TRH, thyrotrophin-releasing hormone. Full version of this tree is presented in Supplementary file 4. Sequences are available as Figure 8—source data 2; alignment and IQTREE tree files are available at https://doi.org/10.5281/zenodo.6962271.
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig8-figsupp5-v2.jpg)
+
+**Figure 8—figure supplement 5.:** Colored dots indicate support (UFB, 1000 ultrafast bootstrap replicates; SHL, 1000 SH-aLRT replicates) and follow the color code in the bottom inset. Scale bar unit for branch length is the number of substitutions per site. Branches are colored according to the phylogenetic position of the organism from which the sequence originates and follow the color code in the bottom inset. Collapsed group colored in red indicate that they contain at least one X. bocki sequence. EGF, Epidermal Growth Factor; Discoidin cont. R, discoidin domain-containing receptor; Orphan Tyr. Kinase Ror2, receptor tyrosine kinase-like orphan receptor 2; VKR, Venus kinase Receptor; ILP, Insulin-like peptide; PDGF, Platelet-derived growth factor; VEGF, Vascular endothelial growth factor; GDNF, Glial cell line-derived neurotrophic factor; FGF, fibroblast growth factor; PTTH, Prothoracicotropic hormone. Full version of this tree is presented in Supplementary file 5. Sequences are available as Figure 8—source data 2; alignment and IQTREE tree files are available at https://doi.org/10.5281/zenodo.6962271.
+
+![Figure 8—figure supplement 6.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig8-figsupp6-v2.jpg)
+
+**Figure 8—figure supplement 6.:** Colored dots indicate support (UFB, 1000 ultrafast bootstrap replicates; SHL, 1000 SH-aLRT replicates) for main nodes and follow the color code in the bottom inset. Scale bar unit for branch length is the number of substitutions per site. Branches are colored according to the phylogenetic position of the organism from which the sequence originates and follow the color code in the bottom inset. Circular gray bars highlights names of groups of annotated sequences. Circular red bars indicate position of groups of Xenacoelomorpha sequences and associated number the number of X. bocki sequence(s) within these groups. DH31, diuretic hormone 31; Np-R B1, Neuropeptide receptor B3; Np-R B4, Neuropeptide receptor B1; PDF, Pigment-dispersing factor; CRF, Corticotropin-releasing factor; DH-44, diuretic hormone 44; PTH2/3-R, Parathyroid hormone receptor2/3; GIP, Gastric inhibitory polypeptide; PACAP, Pituitary adenylate cyclase-activating polypeptide; VIP-R, Vasoactive intestinal polypeptide receptor; GHRH, Growth hormone-releasing hormone; PTH, Parathyroid hormone receptor; SCTR, Secretin Receptor. Full version of this tree is presented in Supplementary file 6. Sequences are available as Figure 8—source data 2; alignment and IQTREE tree files are available at https://doi.org/10.5281/zenodo.6962271.
 
 Among the ligand genes, we identified six new repeat-containing sequences. One of these, the LRIGamide-peptide, had been identified in Nemertodermatida and Acoela and its loss in Xenoturbella had been proposed (Thiel et al., 2018a). We also identified the first 7B2 neuropeptide and NucB2/Nesfatin genes in Xenacoelomorpha. Finally, we identified three new X. bocki insulin-like peptides, one of them sharing sequence similarity and an atypical cysteine pattern with the Ambulacrarian octinsulin, constituting a potential synapomorphy of Xenambulacraria (see https://doi.org/10.5281/zenodo.6962271).
 
@@ -162,7 +241,7 @@ Our searches also revealed the presence of components of the arthropod moulting 
 
 Chordate Prokineticin ligands possess a conserved N-terminal ‘AVIT’ sequence required for the receptor activation (Negri and Ferrara, 2018). This sequence is absent in arthropod Astakine, which instead possess two signature sequences within their Prokineticin domain (Ericsson and Söderhäll, 2018). To investigate Prokineticin ligands in Xenacoelomorpha, we compared the sequences of their Prokineticin ligands with those of other bilaterians (Figure 8). Our alignment reveals clade-specific signatures already reported in Ecdysozoa and Chordata sequences, but also two new signatures specific to Lophotrochozoa and Cnidaria sequences, as well as a very specific ‘K/R-RFP-K/R’ signature shared only by ambulacrarian and X. bocki sequences. The shared Ambulacrarian/Xenacoelomorpha signature is found at the same position as the Chordate sequence involved in receptor activation – adjacent to the N-terminus of the Prokineticin domain (Figure 8).
 
-## The X. bocki genome contains most of the bilaterian miRNAs reported missing from acoels
+### The X. bocki genome contains most of the bilaterian miRNAs reported missing from acoels
 
 microRNAs have previously been used to investigate the phylogenetic position of the acoels and Xenoturbella. The acoel S. roscoffensis lacks some protostome and bilaterian miRNAs, and this lack was interpreted as supporting the position of acoels as sister group to the Nephrozoa. Based on shallow 454 microRNA sequencing (and sparse genomic traces) of Xenoturbella, some of the bilaterian miRNAs missing from acoels were found – 16 of the 32 expected metazoan (1 miRNA) and bilaterian (31 miRNAs) microRNA families – of which six could be identified in genome traces (Philippe et al., 2011).
 
@@ -170,19 +249,29 @@ By deep sequencing two independent small RNA samples, we have now identified the
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig9-v2.jpg)
 
-**Figure 9.:** X. bocki has a near-complete set of metazoan, bilaterian, and deuterostome families and genes.Presence (color) and absence (black) of microRNA families (column), paralog numbers (values and heatmap coloring) organized in node-specific blocks in a range of representative protostome and deuterostome species compared with Xenoturbella (species from MirGeneDB 2.1; Fromm et al., 2022). The bottom row depicts 2011 complement by Philippe et al., 2011 (blue numbers on black depict detected miRNA reads, but lack of genomic evidence). Red ‘x’ in the pink box highlights the lack of evidence for an Ambulacraria-specific microRNA in X. bocki.
+**Figure 9.:** Presence (color) and absence (black) of microRNA families (column), paralog numbers (values and heatmap coloring) organized in node-specific blocks in a range of representative protostome and deuterostome species compared with Xenoturbella (species from MirGeneDB 2.1; Fromm et al., 2022). The bottom row depicts 2011 complement by Philippe et al., 2011 (blue numbers on black depict detected miRNA reads, but lack of genomic evidence). Red ‘x’ in the pink box highlights the lack of evidence for an Ambulacraria-specific microRNA in X. bocki.
 
-## The X. bocki genome retains ancestral metazoan linkage groups
+### The X. bocki genome retains ancestral metazoan linkage groups
 
 The availability of chromosome-scale genomes has made it possible to reconstruct 24 ancestral linkage units broadly preserved in bilaterians (Simakov et al., 2020). In fast-evolving genomes, such as those of nematodes, tunicates, or platyhelminths, these ancestral linkage groups (ALGs) are often dispersed and/or extensively fused (supplementary material). We were interested in testing whether the general conservation of the gene content in X. bocki is reflected in its genome structure.
 
 We compared the genome of Xenoturbella to several other metazoan genomes and found that it has retained most of these ancestral bilaterian units: 12 chromosomes in the X. bocki genome derive from a single ALG, 5 chromosomes are made of the fusion of 2 ALGs, and 1 Xenoturbella chromosome is a fusion of 3 ALGs, as highlighted with the comparison of ortholog content with amphioxus, the sea urchin, and the sea scallop (Figure 10 and supplementary material).
 
+![Figure 10.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig10-v2.jpg)
+
+**Figure 10.:** 17 of the 18 large scaffolds in the X. bocki genome are linked via synteny to distinct chromosomal scaffolds in these species.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** (a) A summary plot of synteny between major scaffolds in the X. bocki genome assembly and early branching highly contiguous metazoan genome assemblies: Euphydatia muelleri, Trichoplax adhearens, Branchiostoma floridae, Saccoglossus kowalevskii, Ciona intestinalis, Nematostella vectensis, Asteria rubens, Pecten maximus, Nemopilema nomurai, and Carcinoscorpius rotundicauda. All but one of the chromosome-sized scaffolds in our assembly have at least one syntenic match in the each of the other species (see the main text for one-to-one plots with key species and a description of the aberrant scaffold). We performed the same analysis with amphioxus as the focal species as a proof of principle (inset). (b) Analysis of methylation on the largest scaffold in the X. bocki genome assembly. One scaffold with a deviant gene age and synteny structure (see the main text) also stands out in terms of methylation. A detailed analysis of methylation patterns across the genome and classes of genes will be published separately.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig10-figsupp2-v2.jpg)
+
 One ALG that has been lost in chordates but not in ambulacrarians nor in mollusks (ALG R in sea urchin and sea scallop) is detectable in X. bocki (Figure 10), while X. bocki does not show the fusions that are characteristic of lophotrochozoans.
 
 We also attempted to detect some pre-bilaterian arrangement of ancestral linkage: for instance, Simakov et al., 2022 predicted that several pre-bilaterian linkage groups successively fused in the bilaterian lineage to give ALGs A1, Q, and E. These ALGs are all represented as single units in X. bocki in common with other Bilateria. None of the inferred pre-bilaterian chromosomal arrangements that could have provided support for the Nephrozoa hypothesis were found in X. bocki, although of course this does not rule out Nephrozoa.
 
-## One X. bocki chromosomal fragment appears aberrant
+### One X. bocki chromosomal fragment appears aberrant
 
 The smallest of the 18 large scaffolds in the X. bocki genome did not show strong 1:1 clustering with any scaffold/chromosome of the bilaterian species we compared it to. To exclude potential contamination in the assembly as a source for this contig, we examined the orthogroups to which the genes from this scaffold belong. We found that X. profunda (Rouse et al., 2016), for which a transcriptome is available, was the species that most often occurred in the same orthogroup with genes from this scaffold (41 shared orthogroups), suggesting the scaffold is not a contaminant.
 
@@ -190,7 +279,7 @@ We did observe links between the aberrant scaffold and several scaffolds from th
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig11-v2.jpg)
 
-**Figure 11.:** X. bocki genome.One scaffold (c1896), which showed no synteny to a distinct chromosomal scaffold in the other metazoan species, also had a divergent gene age structure in comparison to other X. bocki scaffolds.
+**Figure 11.:** One scaffold (c1896), which showed no synteny to a distinct chromosomal scaffold in the other metazoan species, also had a divergent gene age structure in comparison to other X. bocki scaffolds.
 
 ## Discussion
 
@@ -222,7 +311,7 @@ Overall, we have shown that, while Xenoturbella has lost some genes – in addit
 
 ## Materials and methods
 
-## Genome sequencing, assembly, and scaffolding
+### Genome sequencing, assembly, and scaffolding
 
 We extracted DNA from individual Xenoturbella specimens with a standard and additionally worked with a Phenol–Chloroform protocol specifically developed to extract HMW DNA (dx.doi.org/10.17504/protocols.io.mrxc57n). The extracted DNA was quality controlled with a Nanodrop instrument in our laboratory and subsequently a TapeStation at the sequencing center. Worms were first starved and kept in repeatedly replaced salt water, reducing the likelihood of food or other contaminants in the DNA extractions. First, we sequenced Illumina short paired-end reads and mate pair libraries (see Philippe et al., 2019 for details). As the initial paired-read datasets were of low complexity and coverage, we later complemented these data with an Illumina HiSeq 2000/2500 series paired-end dataset with ~700 bp insert size and 250 bp read lengths, yielding ~354 million reads. Additionally, we generated ~40 million Illumina TruSeq Synthetic Long Reads (TSLR) for high-confidence primary scaffolding.
 
@@ -236,35 +325,43 @@ We also used two remaining specimens to extract HMW DNA for Oxford Nanopore Tech
 
 Library preparation for genome-wide bisulfite sequencing was performed as previously described (Lewis et al., 2020). The resulting sequencing data were aligned to the X. bocki draft genome using Bismark in non-directional mode to identify the percentage of methylation at each cytosine genome-wide. Only sites with >10 reads mapping were considered for further analysis.
 
-## Preparation of the Hi-C libraries
+### Preparation of the Hi-C libraries
 
 The Hi-C protocol was adapted at the time from Lieberman-Aiden et al., 2009, Sexton et al., 2012, and Marie-Nelly et al., 2014. Briefly, an animal was chemically cross-linked for 1 hr at room temperature (RT) in 30 ml of PBS 1× added with 3% formaldehyde (Sigma – F8775 – 4 × 25 ml). Formaldehyde was quenched for 20 min at RT by adding 10 ml of 2.5 M glycine. The fixed animal was recovered through centrifugation and stored at –80°C until use. To prepare the proximity ligation library, the animal was transferred to a VK05 Precellys tubes in 1× DpnII buffer (New England Biolabs; 0.5 ml) and the tissues were disrupted using the Precellys Evolution homogenizer (Bertin-Instrument). SDS was added (0.3% final) to the lysate and the tubes were incubated at 65°C for 20 min, followed by an incubation at 37°C for 30 min and an incubation of 30 min after adding 50 µl of 20% triton-X100. A total of 150 units of the DpnII restriction enzyme were then added and the tubes were incubated overnight at 37°C. The endonuclease was inactivated 20 min at 65°C and the tubes were then centrifuged at 16,000 × g during 20 min, supernatant was discarded, and pellets were resuspended in 200 µl NE2 1× buffer and pooled. DNA ends were labeled using 50 µl NE2 10× buffer, 37.5 µl 0.4 mM dCTP-14-biotin, 4.5 µl 10 mM dATP-dGTP-dTTP mix, 10 µl klenow 5 U/µl, and incubation at 37°C for 45 min. The labeling mix was then transferred to ligation reaction tubes (1.6 ml ligation buffer; 160 µl ATP 100 mM; 160 µl BSA 10 mg/ml; 50 µl T4 DNA ligase [New England Biolabs, 5 U/µl]; 13.8 ml H2O) and incubated at 16°C for 4 hr. A proteinase K mix was added to each tube and incubated overnight at 65°C. DNA was then extracted, purified, and processed for sequencing as previously described (Baudry et al., 2020). Hi-C libraries were sequenced on a NextSeq 500 (2 × 75 bp, paired-end using custom-made oligonucleotides as in Marie-Nelly et al., 2014). Libraries were prepared separately on two individuals in this way but eventually merged. Note that a more recent version of the HI-C protocol than the one used here has been described elsewhere (Lafontaine et al., 2021).
 
-## instaGRAAL assembly preprocessing
+### instaGRAAL assembly preprocessing
 
 The primary Illumina assembly contains a number of very short contigs, which are disruptive when computing the contact distribution needed for the instaGRAAL proximity ligation scaffolding (pre-release version, see Marie-Nelly et al., 2014 and Baudry et al., 2020 for details). Testing several Nx metrics, we found a relative length threshold that depends on the scaffolds’ length distribution to be a good compromise between the need for a low-noise contact distribution and the aim of connecting most of the genome. We found N90 a suitable threshold and excluded contigs below 1308 bp. This also ensured no scaffolds shorter than three times the average length of a DpnII restriction fragment (RF) were in the assembly. In this way, every contig contained enough RFs for binning and were included in the scaffolding step.
 
 Reads from both libraries were aligned with bowtie2 (v. 2.2.5) (Langmead and Salzberg, 2012) against the DpnII RFs of the reference assembly using the hicstuff pipeline (https://github.com/koszullab/hicstuff; koszullab, 2018) and in paired-end mode (with the options: -fg-maxins 5 -fg-very-sensitive-local), with a mapping quality >30. The preprocessed genome was reassembled using instaGRAAL. Briefly, the program uses a Markov Chain Monte Carlo method that samples DNA segments (or bins) of the assembly for their best relative 1D positions with respect to each other. The quality of the positions is assessed by fitting the contact data first on a simple polymer model, then on the plot of contact frequency according to the genomic distance law computed from the data. The best relative position of a DNA segment with respect to one of its most likely neighbors consists in operations such as flips, swaps, merges, or a split of contigs. Each operation is either accepted or rejected based on the computed likelihood, resulting in an iterative progression toward the 1D structure that best fits the contact data. Once the entire set of DNA segments is sampled for position (i.e., a cycle), the process starts over. The scaffolder was run independently for 50 cycles, long enough for the chromosome structure to converge. The corresponding genome is then considered stable and suitable for further analyses (Figure 13). The scaffolded assemblies were then refined using instaGRAAL’s instaPolish module to correct small artifactual inversions that are sometimes a by-product of instaGRAAL’s processing.
 
-## Genome annotation
+![Figure 13.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig13-v2.jpg)
 
-## Transcriptome sequencing
+**Figure 13.:** (a) Contact frequency map of the largest 18 scaffolds and (b) distribution of contact frequency as a function of distance (distance law).
+
+![Figure 13—figure supplement 1.](https://cdn.elifesciences.org/articles/94948/elife-94948-fig13-figsupp1-v2.jpg)
+
+**Figure 13—figure supplement 1.:** Linear plot and transformed linear plots are shown. As per the description at http://qb.cshl.edu/genomescope/, we used 21mers counted with jellyfish (Marçais and Kingsford, 2011). GenomeScope genome property estimates and measures were len: 222,242,800 bp, uniq: 31.7%, aa: 99.1%, ab: 0.929%, kcov: 8.72, err: 0.665%, dup: 0.527, k: 21, p:2, model fit min: 34.6%, model fit max: 96.3.
+
+### Genome annotation
+
+#### Transcriptome sequencing
 
 We extracted total RNA from a single X. bocki individual and sequenced a strand-specific Illumina paired-end library. Extraction of total RNA was performed using a modified Trizol & RNeasy hybrid protocol for which tissue had to be stored in RNAlater. cDNA transcription reaction/cDNA synthesis was done using the RETROscript kit (Ambion) using both Oligo(dT) and Random Decamer primers. Detailed extraction and transcription protocols are available from the corresponding authors. The resulting transcriptomic reads (deposited under SRX20415651) were assembled with the Trinity pipeline (Haas et al., 2013; Trinity, 2015) into 103,056 sequences (N50: 705; BUSCO_v5 Eukaryota scores: C: 65.1%, [S: 34.1%, D: 31.0%], F: 22.0%, M: 12.9%) for initial control and then supplied to the genome annotation pipeline (below).
 
-## Repeat annotation
+#### Repeat annotation
 
 In the absence of a repeat library for Xenoturbellida, we first used RepeatModeller v. 1.73 to establish a library de novo. We then used RepeatMasker v. 4.1.0 (https://www.repeatmasker.org) and the Dfam library (Wheeler et al., 2013; Hubley et al., 2016) to soft-mask the genome. We mapped the repeats to the instaGRAAL scaffolded genome with RepeatMasker.
 
-## Gene prediction and annotation
+#### Gene prediction and annotation
 
 We predicted genes using AUGUSTUS (Stanke and Waack, 2003) implemented into the BRAKER (v.2.1.0) pipeline (Hoff et al., 2019; Hoff et al., 2016) to incorporate the RNA-seq data. BRAKER uses spliced aligned RNA-seq reads to improve training accuracy of the gene finder GeneMark-ET (Lomsadze et al., 2014). Subsequently, a highly reliable gene set predicted by GeneMark-ET in ab initio mode was selected to train the gene finder AUGUSTUS, which in a final step predicted genes with evidence from spliced aligned RNA-seq reads. To make use of additional single-cell transcriptome data allowing for a more precise prediction of 3’-UTRs, we employed a production version of BRAKER (August 2018 snapshot). We had previously mapped the RNA-seq data to the genome with gmap-gsnap v. 2018-07-04 (Wu et al., 2016) and used samtools (Li et al., 2009) and bamtools (Barnett et al., 2011) to create the necessary input files. This process was repeated in an iterative way, visually validating gene structures and comparing with mappings loci inferred from a set of single-cell RNA-seq data (published elsewhere, see Robertson et al., 2022) in particular regarding fused genes. Completeness of the gene predictions was independently assessed with BUSCO_v5 (Simão et al., 2015) setting the metazoan and the eukaryote datasets as reference respectively on gVolante (Nishimura et al., 2017). We used InterProScan v. 5.27-66.0 standalone (Jones et al., 2014; Mulder and Apweiler, 2007) on the UCL cluster to annotate the predicted X. bocki proteins with Pfam, SUPERFAM, PANTHER, and Gene3D information.
 
-## Horizontal gene transfer
+#### Horizontal gene transfer
 
 To detect horizontally acquired genes in the X. bocki genome, we used a pipeline available from https://github.com/reubwn/hgt (Nowell, 2016). Briefly, this uses blasts against the NCBI database, alignments with MAFFT (Katoh and Standley, 2013), and phylogenetic inferences with IQTREE (Minh et al., 2020; Nguyen et al., 2015) to infer most likely horizontally acquired genes, while trying to discard contamination (e.g., from co-sequenced gut microbiota).
 
-## Orthology inference
+#### Orthology inference
 
 We included 155 metazoan species and outgroups in our orthology analysis. We either downloaded available proteomes or sourced RNA-seq reads from online repositories to then use Trinity v 2.8.5 and Trinnotate v. 3.2.0 to predict protein sets. In the latter case, we implemented diamond v. 2.0.0 blast (Buchfink et al., 2015; Buchfink et al., 2021) searches against UniProt and Pfam (Finn et al., 2016) hmm screens against the Pfam-A dataset into the prediction process. We had initially acquired 185 datasets, but excluded some based on inferior BUSCO completeness, while at the same time aimed to span as many phyla as possible. Orthology was then inferred using OrthoFinder v. 2.2.7 (Emms and Kelly, 2019; Emms and Kelly, 2015), again with diamond as the blast engine.
 
@@ -274,11 +371,11 @@ To screen for inflation and contraction of gene families, we first employed CAFE
 
 Through the GenomeMaple online platform, we calculated completeness of signaling pathways within the KEGG database using GhostX as the search engine.
 
-## Presence/absence phylogenetics
+#### Presence/absence phylogenetics
 
 We used a database of metazoan proteins, updated from Leclère et al., 2018, as the basis for an OMA analysis to calculate orthologous groups, performing two separate runs, one including Xenoturbella and acoels, and one with only Xenoturbella. We converted OMA gene OrthologousMatrix.txt files into binary gene presence absence matrices in Nexus format with datatype = restriction. We calculated phylogenetic trees on these matrices using RevBayes (see https://github.com/milliescient/metazoa-gene-content; Walker, 2017 for RevBayes script), as described in Mulder and Apweiler, 2007 with corrections for no absent sites and no singleton presence, using the reversible, not the Dollo model, as it is more likely to be able to correct for noise related to prediction errors (Pett et al., 2019; Buchfink et al., 2015). For each matrix, two runs were performed and compared and consensus trees generated with bpcomp from Phylobayes (Lartillot et al., 2009).
 
-## Hox and ParaHox gene cluster identification and characterization
+#### Hox and ParaHox gene cluster identification and characterization
 
 Previous work has already used transcriptomic data and phylogenetic inference to identify the homeobox repertoire in X. bocki. These annotations were used to identify genomic positions and gene annotations that correspond to Hox and ParaHox clusters in X. bocki. Protein sequences of homeodomains (Evx, Cdx, Gsx, antHox1, centHox1, centHox2, cent3, and postHoxP) were used as TBLASTN queries to identify putative scaffolds associated with Hox and ParaHox clusters. Gene models from these scaffolds were compared to the full-length annotated homeobox transcripts from Brauchle et al., 2018 using BLASTP, using hits over 95% identity for homeobox classification. There were some possible homeodomain-containing genes on the scaffolds that were not previously characterized and were therefore not given an annotation.
 
@@ -286,24 +383,24 @@ There were issues concerning the assignment of postHoxP and Evx to gene models. 
 
 Some issues were also observed with homeodomain queries matching genomic sequences that were identical, suggesting artifactual duplications. To investigate contiguity around genes, the ONT reads were aligned with Minimap2 to capture long reads over regions and coverage.
 
-## Small RNA sequencing and analysis
+#### Small RNA sequencing and analysis
 
 Two samples of starved worms were subjected to 5’ monophosphate-dependent sequencing of RNAs between 15 and 36 nucleotides in length, according to previously described methods (Sarkies et al., 2015). Using miRTrace (Kang et al., 2018) 3.3, 18.6 million high-quality reads were extracted and merged with the 27,635 high-quality 454 sequencing reads from Philippe et al. The genome sequence was screened for conserved miRNA precursors using MirMachine (Umu et al., 2022), followed by a MirMiner run that used predicted precursors and processed and merged reads on the genome (Wheeler et al., 2009). Outputs of MirMachine and MirMiner were manually curated using a uniform system for the annotation of miRNA genes (Fromm et al., 2015) and by comparing to MirGeneDB (Fromm et al., 2022).
 
-## Neuropeptide prediction and screen
+#### Neuropeptide prediction and screen
 
 Neuropeptide prediction was conducted on the full set of X. bocki predicted proteins using two strategies to detect neuropeptide sequence signatures. First, using a custom script detecting the occurrence of repeated sequence patterns: RRx(3,36)RRx(3,36)RRx(3,36)RR,RRx(2,35)ZRRx(2,35)ZRR, RRx(2,35)GRRx(2,35)GRR, RRx(1,34)ZGRRx(1,34)ZGRR where R = K or R; x = any amino acid; Z = any amino acid but repeated within the pattern. Second, using HMMER3.1 (Johnson et al., 2010) (http://www.hmmer.org/), and a combination of neuropeptide HMM models obtained from the PFAM database (http://pfam.xfam.org/) as well as a set of custom HMM models derived from the alignment of curated sets of neuropeptide sequences (Jékely, 2013; Mirabeau and Joly, 2013; Zandawala et al., 2017). Sequences retrieved using both methods and comprising fewer than 600 amino acids were further validated. First, by blast analysis: sequences with E-value ratio ‘best blast hit versus ncbi nr database/best blast hit versus curated neuropeptide dataset’ <1e-40 were discarded. Second by reciprocal best blast hit clustering using Clans (Frickey and Lupas, 2004) (https://www.bio.mpg.de/67908/clans) with a set of curated neuropeptide sequences (Jékely, 2013). SignalP-5.0 (Almagro Armenteros et al., 2019) (https://services.healthtech.dtu.dk/services/SignalP-5.0/) was used to detect the presence of a signal peptide in the curated list of predicted neuropeptide sequences while Neuropred (Southey et al., 2006) (http://stagbeetle.animal.uiuc.edu/cgi-bin/neuropred.py) was used to detect cleavage sites and post-translational modifications. Sequence homology of the predicted sequence with known groups was analyzed using a combination of (i) blast sequence similarity with known bilaterian neuropeptide sequences, (ii) reciprocal best blast hit clustering using Clans and sets of curated neuropeptide sequences, and (iii) phylogeny using MAFFT (https://mafft.cbrc.jp/alignment/server/), TrimAl (Capella-Gutiérrez et al., 2009) (https://trimal.cgenomics.org/), and IQ-TREE (Nguyen et al., 2015) webserver for alignment, trimming, and phylogeny inference, respectively. Bilaterian Prokineticin-like sequences were searched in NCBI nucleotide, EST, and SRA databases as well as in the Saccoglossus kowalevskii genome assembly (Nguyen et al., 2015; Simakov et al., 2015) (https://groups.oist.jp/molgenu) using various bilaterian Prokineticin-related protein sequences as query. The sequences used for alignments shown in the figures were collected from the NCBI nucleotide and protein databases as well as from the following publications: 7B2 (Jékely, 2013); NucB2 (Zandawala et al., 2017); insulin (Cherif-Feildel et al., 2019); and Prokineticin (Negri and Ferrara, 2018; Ericsson and Söderhäll, 2018; Thiel et al., 2018b). Alignments for figures were created with Jalview (https://www.jalview.org/).
 
-## Neuropeptide receptor search
+#### Neuropeptide receptor search
 
 Neuropeptide receptor sequences for rhodopsin-type GPCR, secretin-type GPCR, and tyrosine and serine/threonine kinase receptors were searched by running HMMER3.1 on the full set of X. bocki predicted proteins using the 7tm_1 (PF00001), 7tm_2 (PF00002), and PK_Tyr_Ser-Thr (PF07714) HMM models, respectively, which were obtained from the PFAM database (http://pfam.xfam.org/). Sequences above the significance threshold were then aligned with sequences from the curated dataset, trimmed, and phylogeny inference was conducted using same method as for the neuropeptide. A second alignment and phylogeny inference was conducted after the removal of all X. bocki sequences having no statistical support for grouping with any of the known neuropeptide receptors from the curated dataset. Curated datasets were collected from the following publications: rhodopsin-type GPCR beta and gamma and secretin-type GPCR (Thiel et al., 2018b); rhodopsin-type GPCR delta (leucine-rich repeat-containing G-protein-coupled receptors) (Roch and Sherwood, 2014); tyrosine kinase receptors (de Oliveira et al., 2019; Smýkal et al., 2020); and were complemented with sequences from the NCBI protein database.
 
-## Synteny
+#### Synteny
 
 Ancestral linkage analyses rely on mutual-best-hits computed using Mmseqs2 (Steinegger and Söding, 2017) between pairs of species in which chromosomal assignments to ALGs were previously performed, such as Branchiostoma floridae or Pecten maximus (Simakov et al., 2020). Oxford dotplots were computed by plotting reciprocal positions of indexed pairwise orthologs between two species as performed previously (Simakov et al., 2020; Simakov et al., 2022). The significance of ortholog enrichment in pairs of chromosomes was assessed using a Fisher test.
 
 We also used a Python implementation of MCscanX (Wang et al., 2012; Tang, 2010) available on https://github.com/tanghaibao/jcvi/wiki/MCscan-(Python-version) to compare X. bocki to E. muelleri, Trichoplax adhearens, B. floridae, S. kowalevskii, Ciona intestinalis, Nematostella vectensis, Asteria rubens, P. maximus, Nemopilema nomurai, and Carcinoscorpius rotundicauda. Briefly, the pipeline uses high-quality genomes and their annotations to infer syntenic blocks based on proximity. For this, an all vs. all blastp is performed and synteny extended from the anchors identified in this way. Corresponding heatmaps were plotted with Python in a Jupyter notebooks instance.
 
-## Chlamydia assembly, annotation and phylogenetics
+#### Chlamydia assembly, annotation and phylogenetics
 
 We identified a highly contiguous Chlamydia genome in the X. bocki genome assembly using blast. We then used our Oxford Nanopore-derived long reads to scaffold the Chlamydia genome with LINKS (Warren et al., 2015) and annotated it with the automated PROKKA pipeline. To place the genome on the Chlamydia tree, we extracted the 16S ribosomal RNA gene sequence, aligned it with set of Chlamydia 16S rRNA sequences from Dharamshi et al., 2020 using MAFFT, and reconstructed the phylogeny using IQ-TREE 2 (Minh et al., 2020) We visualized the resulting tree with Figtree (http://tree.bio.ed.ac.uk/).

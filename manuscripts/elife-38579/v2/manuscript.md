@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.38579.001 Changes in cancer cell identity can alter malignant potential and therapeutic response. Loss of the pulmonary lineage specifier NKX2-1 augments the growth of KRAS-driven lung adenocarcinoma and causes pulmonary to gastric transdifferentiation. Here, we show that the transcription factors FoxA1 and FoxA2 are required for initiation of mucinous NKX2-1-negative lung adenocarcinomas in the mouse and for activation of their gastric differentiation program. Foxa1/2 deletion severely impairs tumor initiation and causes a proximal shift in cellular identity, yielding tumors expressing markers of the squamocolumnar junction of the gastrointestinal tract. In contrast, we observe downregulation of FoxA1/2 expression in the squamous component of both murine and human lung adenosquamous carcinoma. Using sequential in vivo recombination, we find that FoxA1/2 loss in established KRAS-driven neoplasia originating from SPC-positive alveolar cells induces keratinizing squamous cell carcinomas. Thus, NKX2-1, FoxA1 and FoxA2 coordinately regulate the growth and identity of lung cancer in a context-specific manner.
+Changes in cancer cell identity can alter malignant potential and therapeutic response. Loss of the pulmonary lineage specifier NKX2-1 augments the growth of KRAS-driven lung adenocarcinoma and causes pulmonary to gastric transdifferentiation. Here, we show that the transcription factors FoxA1 and FoxA2 are required for initiation of mucinous NKX2-1-negative lung adenocarcinomas in the mouse and for activation of their gastric differentiation program. Foxa1/2 deletion severely impairs tumor initiation and causes a proximal shift in cellular identity, yielding tumors expressing markers of the squamocolumnar junction of the gastrointestinal tract. In contrast, we observe downregulation of FoxA1/2 expression in the squamous component of both murine and human lung adenosquamous carcinoma. Using sequential in vivo recombination, we find that FoxA1/2 loss in established KRAS-driven neoplasia originating from SPC-positive alveolar cells induces keratinizing squamous cell carcinomas. Thus, NKX2-1, FoxA1 and FoxA2 coordinately regulate the growth and identity of lung cancer in a context-specific manner.
 
 ## Introduction
 
@@ -34,35 +34,59 @@ In previous work, we and others have shown that loss of NKX2-1 is sufficient to 
 
 Many of the gastrointestinal transcripts expressed in IMA are known targets of the forkhead box transcription factors FoxA1 and FoxA2 (FoxA1/2). These transcription factors govern the development of a variety of tissues and are expressed in both the adult lung and GI tract (reviewed in Golson and Kaestner, 2016). FoxA1/2 are also expressed in both murine and human IMA (Figure 1A and Figure 1—figure supplement 1A–B). We previously found that Nkx2-1 deletion in autochthonous lung tumors caused FoxA1/2 to re-localize from the regulatory elements of pulmonary-specific genes (such as Sftpa1) to those of genes (such as Hnf4a) that are expressed in both the GI tract and IMA (Snyder et al., 2013). Given that NKX2-1 physically interacts with FoxA1/2 (Snyder et al., 2013; Minoo et al., 2007), we hypothesized that NKX2-1 promotes FoxA1/2 interaction with regulatory elements of the pulmonary differentiation program at the expense of those governing gastric identity. However, these data did not demonstrate a functional role for FoxA1/2 in the activation of the gastric program in these tumors. To address this question directly, we used conditional alleles of Foxa1 (Gao et al., 2008) and Foxa2 (Sund et al., 2000) to abrogate their function in an autochthonous mouse model of NKX2-1-negative lung adenocarcinoma. We found that FoxA1/2 are critical and redundant regulators of both the gastric differentiation program and growth of NKX2-1-negative tumors. Moreover, we found that the cellular identity adopted by tumors was highly dependent on the context in which FoxA1/2 activity is lost, suggesting that a cell’s baseline epigenetic state can influence the identity it adopts in response to changes in lineage specifier expression.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/38579/elife-38579-fig1-v2.jpg)
+
+**Figure 1.:** Photomicrographs of lung neoplasia arising 11 weeks after initiation with PGK-Cre lentivirus. All mice are KrasLSL-G12D/+; Nkx2-1F/F and harbor conditional alleles of Foxa1 and/or Foxa2 as indicated. (A) Hematoxylin and eosin (H and E) and immunohistochemistry (IHC) for NKX2-1, FoxA1 and FoxA2. Arrows indicate neoplasia lacking expression of all three proteins. Scale bar: 100 microns. (B) Alcian blue stain for mucin production. Scale bar: 50 microns. (C) IHC for markers of gastrointestinal differentiation HNF4α, PK-L and PDX1. Scale bar: 100 microns.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38579/elife-38579-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) IHC for indicated proteins on primary human mucinous lung adenocarcinoma. Images are representative of six independent primary tumors. Scale bar: 100 microns. (B) FOXA1 and FOXA2 mRNA levels in KRAS-mutant human lung adenocarcinoma and adjacent normal lung. Clusters were defined in Skoulidis et al. (2015) using TCGA data. HNF4α-positive/NKX2-1-negative tumors are found predominantly in KC cluster. (C) IHC for indicated proteins on lung neoplasia arising 11 weeks after initiation with PGK-Cre lentivirus. All mice are KrasLSL-G12D/+; Nkx2-1F/F and harbor conditional alleles of Foxa1 and/or Foxa2. Scale bar: 100 microns.
+
 ## Results
 
-## FoxA1 and FoxA2 are required for development of invasive mucinous adenocarcinoma of the lung
+### FoxA1 and FoxA2 are required for development of invasive mucinous adenocarcinoma of the lung
 
 To test the hypothesis that FoxA1/2 are required for lung adenocarcinoma cells to undergo a pulmonary to gastric lineage switch upon loss of NKX2-1 expression, we incorporated conditional alleles of Foxa1 and Foxa2 into a mouse model of NKX2-1-deficient lung adenocarcinoma (Snyder et al., 2013). In this model, intratracheal delivery of virus expressing Cre recombinase simultaneously activates a conditional allele of oncogenic Kras (KrasLSL-G12D/+) and silences conditional alleles of Nkx2-1 (Nkx2-1F/F) alone or in addition to Foxa1 (Foxa1F/F) and/or Foxa2 (Foxa2F/F). Initial evaluation by morphology (H and E) and immunohistochemistry (IHC) showed that tumors lacking either FoxA1 or FoxA2 were indistinguishable from control tumors (Figure 1A). In sharp contrast, concomitant deletion of Foxa1 and Foxa2 led to the emergence of small neoplastic lesions (Figure 1A, right column) in the alveoli that were completely devoid of the glandular architecture and mucin production that characterizes NKX2-1-deficient tumors. Absence of mucin production was apparent by H and E staining and further demonstrated by Alcian Blue staining (Figure 1B) and IHC for Muc5AC (Figure 1—figure supplement 1C).
 
 Given the dramatic change in the morphology of lung neoplasia lacking NKX2-1, FoxA1 and FoxA2, we used IHC to assess the differentiation state of these lesions. Cytokeratin 8 (CK8) was expressed in lesions arising in mice of all genotypes (Figure 1—figure supplement 1C), showing that cells lacking all three transcription factors retained an epithelial identity and did not undergo a complete epithelial to mesenchymal transition. HNF4α and PDX1 are transcription factors that regulate gastrointestinal differentiation and are expressed in human invasive mucinous adenocarcinoma and mouse models of this disease (Snyder et al., 2013; Skoulidis et al., 2015). Both transcription factors, as well as the HNF4α target PK-L, were undetectable in FoxA1/2-deficient neoplasia (Figure 1C). Additional markers of gastrointestinal differentiation, including Gastrokine 1, Cathepsin E and Galectin 4, were also not expressed in these lesions (Figure 1—figure supplement 1C). All these markers were retained in lesions lacking either FoxA1 or FoxA2 alone (Figure 1C and Figure 1—figure supplement 1C). Taken together, these data show that FoxA1 and FoxA2 are required for mucin production and key elements of the gastrointestinal differentiation program in NKX2-1-negative lung tumors in a functionally redundant manner.
 
-## FoxA1 and FoxA2 are required at initiation for growth and proliferation of NKX2-1-negative lung adenocarcinoma
+### FoxA1 and FoxA2 are required at initiation for growth and proliferation of NKX2-1-negative lung adenocarcinoma
 
 Most lesions in KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice exhibited complete loss of FoxA1/2 expression when analyzed at 11 weeks post-infection. However, these mice also harbored a variable but substantial quantity of tumors (‘incomplete recombinants’) that retained FoxA1 or FoxA2 as well as targets such as HNF4α (Figure 2—figure supplement 1A–B). Since incomplete recombinants were often larger than the lesions lacking NKX2-1, FoxA1 and FoxA2 (i.e. ‘complete recombinants’) (Figure 2—figure supplement 1B), we speculated that they might have gradually outgrown the complete recombinants over time. Consistent with this possibility, we found that 5 weeks after tumor initiation, incomplete recombinants comprised a much smaller proportion of overall tumor burden than at 11 weeks (Figure 2—figure supplement 1A–B).
 
 Based on these data, we chose the 5-week timepoint to quantitate tumor burden and proliferation rates among the different genotypes. We found that concomitant deletion of both Foxa1 and Foxa2 led to an approximately 10-fold reduction in tumor burden when measured at 5 weeks post-initiation (Figure 2A). This was accompanied by reduced lesion size and, to a lesser extent, fewer lesions/mm2 (Figure 2—figure supplement 1C–D). In contrast, deletion of either Foxa1 or Foxa2 alone had little to no effect on tumor burden.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/38579/elife-38579-fig2-v2.jpg)
+
+**Figure 2.:** (A) Quantitation of tumor burden 5 weeks after initiation with PGK-Cre lentivirus in KrasLSL-G12D/+; Nkx2-1F/F mice of indicated genotype: control (n = 15), Foxa1F/F (n = 13), Foxa2F/F (n = 9) and Foxa1F/F; Foxa2F/F (n = 12). **p < 0.0002 vs. each group, Mann-Whitney. *p=0.0425 vs. control. Graphs represent mean ±S.D. (B) Quantitation of BrdU incorporation in lung neoplasia 5 weeks after initiation with PGK-Cre lentivirus in KrasLSL-G12D/+; Nkx2-1F/F mice of indicated genotype: control (n = 7), Foxa1F/F (n = 4), Foxa2F/F (n = 4) and Foxa1F/F; Foxa2F/F (n = 7). *p < 0.005 vs. each control, Mann-Whitney. Graphs represent mean ±S.D. (C) Representative IHC for BrdU in KrasLSL-G12D/+; Nkx2-1F/F mice of indicated genotype quantitated in Figure 2B. Scale bar: 100 microns. (D) Long-term survival after tumor initiation with PGK-Cre lentivirus in KrasLSL-G12D/+; Nkx2-1F/F mice of indicated genotype: control (n = 9), Foxa1F/F (n = 10), Foxa2F/F (n = 12) and Foxa1F/F; Foxa2F/F (n = 9). p < 0.0001, KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice vs. each control, Log-rank test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38579/elife-38579-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Percentage of tumor area expressing HNF4α in KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice analyzed at 5-week (n = 11) and 11-week (n = 7) timepoints and in survival analysis (n = 9). Tumors were initiated by PGK-Cre lentivirus. *p < 0.001 vs. 11 weeks and survival group, Mann-Whitney. Graphs represent mean ±S.D. (B) IHC for HNF4α in KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mouse analyzed at 11-week timepoint. Arrow points to HNF4α-negative complete recombinant (left). Brown nuclear stain marks HNF4α-positive incomplete recombinant. Scale bar: 500 microns. (C) Quantitation of average lesion area 5 weeks after initiation with PGK-Cre lentivirus in KrasLSL-G12D/+; Nkx2-1F/F mice of indicated genotype: control (n = 15), Foxa1F/F (n = 13), Foxa2F/F (n = 9) and Foxa1F/F; Foxa2F/F (n = 12). **p < 0.001 vs. each group, Mann-Whitney. *p = 0.0251 vs. control. Graphs represent mean ±S.D. (D) Quantitation of lesions/mm2 5 weeks after initiation with PGK-Cre lentivirus in KrasLSL-G12D/+; Nkx2-1F/F mice of indicated genotype: control (n = 15), Foxa1F/F (n = 13), Foxa2F/F (n = 9) and Foxa1F/F; Foxa2F/F (n = 12). **p < 0.003 vs. each group, Mann-Whitney. *p=0.0171 vs. control. Graphs represent mean ±S.D. (E) Quantitation of proliferation marker MCM2 in lung neoplasia 5 weeks after initiation with PGK-Cre lentivirus in KrasLSL-G12D/+; Nkx2-1F/F mice of indicated genotype: control (n = 7), Foxa1F/F (n = 5), Foxa2F/F (n = 4) and Foxa1F/F; Foxa2F/F (n = 7). *p < 0.01 vs. each control, Mann-Whitney. Graphs represent mean ±S.D. (F) Quantitation of proliferation marker KI67 in lung neoplasia 5 weeks after initiation with PGK-Cre lentivirus in KrasLSL-G12D/+; Nkx2-1F/F mice of indicated genotype: control (n = 7), Foxa1F/F (n = 5), Foxa2F/F (n = 4) and Foxa1F/F; Foxa2F/F (n = 7). *p < 0.01 vs. each control, Mann-Whitney. Graphs represent mean ±S.D. (G) Representative IHC for proliferation markers MCM2 and KI67 in KrasLSL-G12D/+; Nkx2-1F/F mice of indicated genotype quantitated in Figure 2—figure supplement 1E–F. Scale bar: 100 microns. (H) Representative IHC for CC3 (cleaved caspase-3) in tumors from mice of indicated genotype. Inset depicts thymus (positive control). Scale bar: 100 microns. (I) H and E demonstrating extracellular mucin secretion (E) in tumors from KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F mice (survival analysis). Scale bar: 100 microns.
+
 To determine why loss of FoxA1/2 activity caused such a severe inhibition of tumorigenesis, we analyzed proliferation and apoptosis in tumors of each genotype. BrdU incorporation was reduced by ~50% in FoxA1/2-deficient lesions in comparison with control lesions (Figure 2B–C). IHC for the proliferation markers MCM2 and KI67 also demonstrated that FoxA1/2-deficient lesions proliferate at a significantly lower rate than controls (Figure 2—figure supplement 1E–G). In contrast, the apoptotic rate of FoxA1/2-deficient lesions was no different than controls as measured by IHC for cleaved caspase-3 (Figure 2—figure supplement 1H).
 
 In addition to these short-term measurements, we assessed the long-term impact of Foxa1/2 deletion in a survival analysis (Figure 2D). Mice in the three control groups survived for a similar duration after tumor initiation (median survival 143–160 days). In contrast, deletion of both Foxa1 and Foxa2 led to a dramatic increase in survival (median survival 293 days). Histopathologic analysis showed that approximately 80% of the tumor burden in KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice consisted of mucinous HNF4α-positive adenocarcinomas (Figure 2—figure supplement 1A). This suggests that these mice ultimately succumbed to growth of incomplete recombinants and that the complete recombinants likely had little impact on overall survival. We also noted extensive extracellular mucin secretion in the tumors of KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F mice (Figure 2—figure supplement 1I). This phenomenon was rarely observed in tumors from other control groups, which predominantly produced intracellular mucin, suggesting that FoxA1 and FoxA2 likely have some specific functions in the regulation of the differentiation state of NKX2-1-negative adenocarcinoma. Taken together, these data show that lack of FoxA1/2 activity at tumor initiation severely impairs the proliferation and long-term growth potential of NKX2-1-negative lung adenocarcinoma.
 
-## FoxA1 and FoxA2 are required for global activation of the gastric differentiation program in NKX2-1-negative lung adenocarcinoma
+### FoxA1 and FoxA2 are required for global activation of the gastric differentiation program in NKX2-1-negative lung adenocarcinoma
 
 We next sought to analyze the changes in gene expression induced by deletion of Foxa1 and Foxa2 in NKX2-1-deficient tumors. Our mice harbor a Cre-dependent tdTomato reporter allele (Madisen et al., 2010) that enables tumor cell isolation by fluorescence-activated cell sorting (FACS). For sorting experiments, we initiated tumors with the Ad5-SPC-Cre adenovirus (Sutherland et al., 2011), which restricts Cre activity to SPC-positive lung epithelial cells, obviating the need to exclude stromal cells from the sorted population. (SPC-Cre induces lesions identical to lentiviral-driven Cre (Figure 6 and data not shown)). However, we lacked a cell surface marker that would enable us to differentially isolate complete from incomplete recombinants in KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice during sorting.
 
 Single-cell RNA-Seq can be used to deconvolute gene expression profiles of mixed cell populations from the murine lung bioinformatically and thereby assign an identity to each cell (Treutlein et al., 2014). We therefore proceeded with single-cell RNA-Seq analysis on FACS-sorted lung tumor cells via the Fluidigm C1 Autoprep microfluidic system. We sorted tumor cells from one KrasLSL-G12D/+ mouse, one KrasLSL-G12D/+; Nkx2-1F/F mouse, and two KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice. After Illumina sequencing and transcript quantitation, we used the SC3 clustering package (Kiselev et al., 2017) for quality control, filtering and clustering. A total of 134 cells were considered to be of sufficient quality for further analysis (Supplementary files 1–2), which yielded three distinct clusters (tSNE plot, Figure 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/38579/elife-38579-fig3-v2.jpg)
+
+**Figure 3.:** (A) tSNE plot of single-cell mRNA-Seq data derived from murine lung tumor cells (n = 134). Cells were sorted based on tdTomato expression from mice of the following genotypes: KrasLSL-G12D/+(K), n = 1 mouse), KrasLSL-G12D/+; Nkx2-1F/F (KN), n = 1 mouse), KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F (KNF1F2, n = 2 mice). Color indicates cancer cell cluster. Shape indicates genotype of mouse from which cell was isolated. (B) tSNE plot of three cancer cell clusters (C1–C3) and a panel of normal murine tissue. ‘Glandular’ indicates glandular stomach. (C) IHC for indicated proteins in lung neoplasia 5 weeks after initiation with PGK-Cre lentivirus in KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice and NKX2-1-negative controls. SCJ: normal squamocolumnar junction (forestomach on left, glandular stomach on right). Scale bar: 100 microns.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38579/elife-38579-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Correlation between differentially expressed genes identified in single-cell analysis (C1 vs. C2, X axis) and population analysis (KrasLSL-G12D/+(K) vs. KrasLSL-G12D/+; Nkx2-1F/F (KN), Y axis). (B) tSNE plot of single high-quality tumor cells (this study) and E18.5 type two pneumocytes (AT2) from murine lung (Treutlein et al.). Color indicates cluster. Shape indicates source of cell. (C) Principal component analysis (PCA) of cancer cell clusters (C1–C3) based on genes comprising invasive mucinous adenocarcinoma signature (Guo et al). (D) Hierarchical clustering on principal components (HCPC) of the three cancer cell clusters (C1–C3) and normal murine tissue. The first two dimensions of a principal component analysis (PCA) is overlayed with the hierarchical clustering of the first five PCA dimensions. Dot color indicates cluster to which sample was assigned in K-means clustering. Gray ovals highlight multiple samples from the same tissue. ‘Glandular’ indicates glandular stomach. (E) IHC for indicated proteins in lung neoplasia 5 weeks after initiation with PGK-Cre lentivirus in KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice and controls. Scale bar: 100 microns. (F) IHC for FoxA1 and FoxA2 at the squamocolumnar junction (SCJ) of glandular stomach and forestomach (left panels) and in proximal forestomach (right panels). Arrows point to SCJ. Scale bars: 100 microns.
+
 Cluster 1 (C1, n = 62 cells) contained cells from mice of all three genotypes. Using the SC3 package, we identified marker genes for this cluster (defined as 'genes that are highly expressed in only one of the clusters and are able to distinguish one cluster from all the remaining ones’). These included canonical NKX2-1 target genes Sftpa1 and Sftpb (Supplementary file 3). From these data, we infer that C1 represents tumor cells that are phenotypically NKX2-1-positive. In contrast, cluster 2 (C2, n = 31 cells) only contained cells from KrasLSL-G12D/+; Nkx2-1F/F and KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice. Numerous gastrointestinal transcripts were identified as marker genes for this cluster, including Hnf4a, Gkn1, Lgals4 and Ctse. Thus, C2 appears to include incomplete recombinants from KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice that express sufficient levels of FoxA1 and/or FoxA2 to maintain a gastric differentiation state. In contrast, cluster 3 (C3, n = 41 cells) contained only cells from KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice and expressed marker genes not characteristic of either a pulmonary or gastric differentiation state, suggesting that C3 likely contains cells completely deficient for NKX2-1, FoxA1 and FoxA2 (i.e. complete recombinants).
 
 Several different analyses further validated our classification of C1 and C2 as NKX2-1-positive and NKX2-1-negative cells, respectively. First, we identified differentially expressed genes between C1 and C2 using an independent software package (SCDE) and found that many pulmonary and gastric transcripts were differentially expressed between the two clusters (Supplementary file 3). We then performed RNA-Seq on sorted bulk tumor cells from KrasLSL-G12D/+ and KrasLSL-G12D/+; Nkx2-1F/F mice (n = 3 each, Supplementary file 4) and found a strong correlation (Pearson correlation coefficient = 0.62) between the differentially expressed genes identified in single cell and bulk analyses (Figure 3—figure supplement 1A). We also compared our single-cell datasets with published data from other groups. We found that normal murine type two pneumocytes (Treutlein et al., 2014), which are the presumed cell of origin for NKX2-1-positive tumor cells, clustered with presumptive NKX2-1-positive C1 cells (Figure 3—figure supplement 1B). We also used principal component analysis (PCA) to compare our single-cell data with a gene signature of human IMA (Guo et al., 2017). In this analysis, the IMA signature caused C2 cells to cluster separately from the other cells (Figure 3—figure supplement 1C). This shows that C2 cells are more similar to IMA than C1 and C3, as would be expected if they represent the NKX2-1-negative tumor cell population.
 
-## NKX2-1; FoxA1/2-deficient tumor cells express markers of the squamocolumnar junctional epithelium of the GI tract
+### NKX2-1; FoxA1/2-deficient tumor cells express markers of the squamocolumnar junctional epithelium of the GI tract
 
 To characterize the identity of our tumor cells in a global manner, we compared our single-cell RNA-Seq data with total RNA-Seq data from a panel of mouse tissues (Supplementary file 5). The 50 genes in each tissue with the highest expression compared to the other tissues in the panel were identified. Expression data for this set of genes was extracted from the single cell and tissue datasets and evaluated using two approaches: tSNE (Figure 3B) and hierarchical clustering on principal components (HCPC, Figure 3—figure supplement 1D), which combines PCA, hierarchical clustering and k-means clustering. In both approaches, we found that C1 was most similar to normal lung, and that C2 was most similar to glandular stomach. C3 cells clustered near the upper GI tract, in particular the forestomach and esophagus. However, cosine similarity analysis (Supplementary file 6) showed that C3 cells are not as closely related to esophagus/forestomach as C1 and C2 are to lung and glandular stomach, respectively. This bioinformatic analysis is in consonance with microscopic evaluation of complete recombinants, which lack morphological features of a multi-layered, keratinizing squamous epithelium (Figure 1) that is found in the normal esophagus and forestomach. Moreover, the vast majority of complete recombinants cells do not express ΔNp63, a master regulator of squamous differentiation, or the squamous marker cytokeratin 5 (CK5) (Figure 3—figure supplement 1E). Thus, complete ablation of NKX2-1, FoxA1 and FoxA2 causes lung tumor cells to adopt an identity that is neither pulmonary nor gastric, but also is not fully squamous. Indeed, it appears that the exact differentiation state adopted by these cells is not well represented in the panel of tissues evaluated.
 
@@ -72,9 +96,17 @@ Manual inspection of genes specifically expressed in C3 vs. both C1 and C2 (usin
 
 These data led us to evaluate FoxA1/2 levels at the SCJ of the murine GI tract (Figure 3—figure supplement 1F). Both FoxA1 and FoxA2 are expressed in the glandular stomach. Interestingly, FoxA2 expression ends at the SCJ and is absent throughout the squamous forestomach and esophagus. In contrast, FoxA1 levels are very low but detectable at the SCJ then increase in the proximal forestomach and esophagus. Thus, overall FoxA1/2 levels appear to reach their nadir at the SCJ and distal forestomach of the normal murine GI tract. Taken together, our data show that FoxA1/2 are required for NKX2-1-deficient lung tumor cells to adopt a gastric identity. Moreover, concomitant loss of NKX2-1 and FoxA1/2 activity at tumor initiation leads to a distinct differentiation state characterized by expression of multiple markers of the transitional epithelium normally found at the SCJ of the GI tract.
 
-## FoxA1/2 are downregulated in the squamous component of murine and human adenosquamous carcinoma of the lung
+### FoxA1/2 are downregulated in the squamous component of murine and human adenosquamous carcinoma of the lung
 
 Although KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F and KrasLSL-G12D/+; Nkx2-1F/F; Foxa2F/F mice exhibited minimal obvious phenotypes at early timepoints (Figures 1–2), we found that a subset of these mice developed macroscopic adenosquamous carcinomas (AdSCCs) at 20 weeks post-initiation (Figure 4 and Figure 4—figure supplement 1A). In contrast, we did not find AdSCCs in any of the KrasLSL-G12D/+; Nkx2-1F/F mice aged to 20 weeks post-initiation. Human AdSCC is an uncommon but aggressive lung cancer subtype that contains a mix of clonally related adenocarcinoma and squamous cell components (Shu et al., 2013; Tochigi et al., 2011). In our mice, AdSCCs consisted of a mucinous adenocarcinoma component that was continuous with, and typically circumscribed, a well-differentiated, keratinizing squamous cell carcinoma component (Figure 4A–C). Both components were tdTomato-positive, indicating that these tumors had arisen through Cre-mediated recombination (Figure 4B). Although both components were NKX2-1-negative, markers of gastric differentiation were restricted to the adenocarcinoma component, and markers of squamous differentiation (including ΔNp63 and cytokeratins 5 and 14 (CK5 and CK14), but not SOX2) were selectively expressed in the SCC component (Figure 4B and Figure 4—figure supplement 1C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/38579/elife-38579-fig4-v2.jpg)
+
+**Figure 4.:** (A) H and E of AdSCC arising in KrasLSL-G12D/+; Nkx2-1F/F; Foxa2F/F mouse. Scale bar: 1000 microns. (B) H and E and IHC of adenocarcinoma (left) and squamous (right) components of AdSCC arising in KrasLSL-G12D/+; Nkx2-1F/F; Foxa2F/F mouse. Scale bar: 100 microns. (C) Dual IHC for ΔNp63 (brown) and FoxA1/2 (purple) in AdSCC arising in KrasLSL-G12D/+; Nkx2-1F/F; Foxa2F/F mouse. Scale bar: 1000 microns. (D) Percent of human AdSCC cases (n = 12) exhibiting downregulation of FoxA1 and/or FoxA2 expression in the SCC component as assessed by IHC. (E) Representative IHC for FoxA1 and FoxA2 in a human AdSCC exhibiting downregulation of both proteins in the SCC component. Scale bar: 100 microns.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38579/elife-38579-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Percent of KrasLSL-G12D/+; Nkx2-1F/F mice of indicated genotype with adenosquamous carcinoma (AdSCC) 20 weeks after initiation with PGK-Cre lentivirus. Control (n = 14), Foxa1F/F (n = 10), Foxa2F/F (n = 17) and Foxa1F/F; Foxa2F/F (n = 12). (B) IHC of adenocarcinoma (left) and squamous (right) components of AdSCC arising in KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F mouse. Scale bar: 100 microns. (C) IHC for indicated proteins in adenocarcinoma (left) and squamous (right) components of AdSCC arising in KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mouse. Scale bar: 100 microns.
 
 Given that genetic deletion of Foxa1 and Foxa2 at initiation completely suppressed mucinous gastric differentiation, we evaluated expression of both transcription factors in AdSCCs. In KrasLSL-G12D/+; Nkx2-1F/F; Foxa2F/F mice, we found that FoxA2 was absent in both components, whereas FoxA1 was expressed in the adenocarcinoma components but absent in the SCC (Figure 4B). AdSCC in the KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F mouse exhibited the opposite pattern, that is, FoxA1 loss in both components and FoxA2 expression only in the adenocarcinoma component (Figure 4—figure supplement 1B). Thus, the SCC component is always associated with stochastic loss of FoxA1/2 expression. Given that KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice contain incomplete recombinants that retain either FoxA1 or FoxA2, we also observed AdSCCs in a subset of these mice at 20 weeks (Figure 4—figure supplement 1A). As expected, AdSCCs in KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice always expressed either FoxA1 or FoxA2 in the adenocarcinoma component and stochastic loss of the other paralogue in the squamous component.
 
@@ -82,9 +114,17 @@ These data suggest that when only one FoxA paralogue is expressed in mucinous lu
 
 We next analyzed FoxA1/2 expression by IHC in human AdSCC (n = 12) to determine whether these transcription factors are differentially expressed between adenocarcinoma and squamous components (Figure 4D–E). FoxA1 and FoxA2 were expressed in the adenocarcinoma component of all cases. In half of the cases, FoxA1 and FoxA2 were both downregulated in the squamous component (n = 5 cases with complete loss of expression and n = 1 case with detectable but diminished expression). In the other half, either FoxA1 (n = 5) or FoxA2 (n = 1) exhibited downregulation in the squamous component. Thus, half of the human AdSCC examined exhibit the same pattern of FoxA1/2 downregulation that we observe in our mouse model. Moreover, all cases exhibit at least partial reduction in expression of FoxA1 or FoxA2 in the squamous component. Taken together, these data suggest that reduced FoxA activity is commonly associated with adenosquamous transdifferentiation in human lung cancer.
 
-## Context-dependent induction of squamous cell carcinoma by loss of FoxA1/2
+### Context-dependent induction of squamous cell carcinoma by loss of FoxA1/2
 
 To test the hypothesis that loss of FoxA1/2 activity might promote squamous differentiation only in specific contexts, we generated KrasFSF-G12D/+; RosaFSF-CreERT2; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice as well as controls wild type for either Foxa1 or both Foxa1 and Foxa2. In these mice, delivery of the FlpO recombinase (via Ad5CMV-FlpO adenovirus) to the lung epithelium activates transcription of the KrasG12D oncogene from its endogenous locus (Young et al., 2011) and transcription of CreERT2 from the Rosa26 locus (Schönhuber et al., 2014). Tamoxifen is then used to activate the CreERT2 protein and drive recombination of lineage specifiers in KRASG12D-expressing lung neoplasia. To determine whether loss of NKX2-1, FoxA1 and FoxA2 in established neoplasia was sufficient to induce full squamous differentiation, we administered tamoxifen 1 week after tumor initiation with Ad5CMV-FlpO, then analyzed tumors 4 weeks later (outline in Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/38579/elife-38579-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of experimental design. (B) H and E and IHC for indicated proteins in tumors from mice harboring the conditional alleles KrasFSF-G12D/+; RosaFSF-CreERT2; Nkx2-1F/F (controls) alone and in combination with either Foxa2F/F or Foxa1F/F; Foxa2F/F. ‘K’ indicates acellular keratin. All mice were given tamoxifen 1 week after tumor initiation. Tamoxifen administration consisted of six intraperitoneal doses over nine days, followed by tamoxifen-containing chow until the end of the experiment. Scale bar: 50 microns.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38579/elife-38579-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) IHC for FoxA2 in tumors from mice harboring the conditional alleles KrasFSF-G12D/+; RosaFSF-CreERT2; Nkx2-1F/F (controls) alone and in combination with either Foxa2F/F or Foxa1F/F; Foxa2F/F. Scale bar: 50 microns. (B) Low power H and E photomicrograph of keratinizing squamous cell carcinoma arising in KrasFSF-G12D/+; RosaFSF-CreERT2; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mouse. Scale bar: 100 microns. ‘K’ indicates acellular keratin. (C) Percent of KrasFSF-G12D/+; RosaFSF-CreERT2; Nkx2-1F/F (Control, n = 19), KrasFSF-G12D/+; RosaFSF-CreERT2; Nkx2-1F/F; Foxa2F/F (n = 21), KrasFSF-G12D/+; RosaFSF-CreERT2; Nkx2-1F/F; Foxa1F/F; Foxa2F/F (n = 8) and KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice (n = 6) harboring keratinizing squamous cell carcinoma 5 weeks after initiation with Ad5-CMV-FlpO followed by tamoxifen (KrasFSF-G12D/+ mice) or Ad5-CMV-Cre (KrasLSL-G12D/+ mice). *p < 0.001, Chi-square test.
 
 Histopathologic analysis of controls showed that the lungs contained mucinous adenocarcinoma that expressed HNF4α and the expected pattern of FoxA1/2 (Figure 5B and Figure 5—figure supplement 1A). Almost all lesions in Nkx2-1F/F and Nkx2-1F/F; Foxa2F/F mice were ΔNp63-negative (Figure 5B and Figure 5—figure supplement 1C). Indeed, only one mouse in each control group exhibited a single lesion with ΔNp63-positive cells. In contrast, all KrasFSF-G12D/+; RosaFSF-CreERT2; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice harbored numerous non-mucinous lesions lacking FoxA1/2 and HNF4α. Most of these lesions were morphologically similar to the SCJ-like lesions generated with Cre-mediated recombination at tumor initiation (Figure 1).
 
@@ -94,11 +134,19 @@ Most of the microscopic analysis of KrasLSL-G12D/+; Nkx2-1F/F; Foxa1F/F; Foxa2F/
 
 Taken together, these data identify a specific context in which loss of FoxA1/2 activity is sufficient to induce full squamous differentiation in the lung. Since FoxA1/2 loss was induced only 1 week after KRASG12D expression in this experiment, it seems likely that enhanced competence for squamous differentiation is a direct result of KRASG12D expression rather than stochastic genetic alterations accruing over time. Moreover, the fact that only a subset of neoplastic lesions are keratinizing SCC raises the possibility that a specific subpopulation of lung epithelial cells may exhibit enhanced competence for squamous differentiation in this system.
 
-## Squamous cell carcinoma arises from SPC-positive lung epithelial cells
+### Squamous cell carcinoma arises from SPC-positive lung epithelial cells
 
 To define more precisely the cell type from which SCCs arise in the sequential recombination model, we generated an adenovirus in which expression of the FlpO recombinase is driven by the murine SPC promoter. This promoter has been extensively validated to drive Cre expression primarily in type 2 pneumocytes of the alveoli (Sutherland et al., 2011). To validate this promoter in our sequential recombination system, we generated KrasFSF-G12D/+; RosaFSF-CreERT2 harboring a CAG-LSL-HA-UPRT transgene (Gay et al., 2013), in which the HA-tagged UPRT enzyme is only expressed after Cre-based recombination of the STOP cassette. These mice were infected with Ad5-SPC-FlpO or Ad5-CMV-FlpO, treated with tamoxifen 1-week post-infection, and subjected to histopathologic analysis 3 weeks post-infection. Whereas recombination was readily detectable in the bronchioles and alveoli of Ad5-CMV-FlpO infected mice, recombination was restricted to the alveoli of Ad5-SPC-FlpO infected mice (Figure 6—figure supplement 1A).
 
 Next, we infected a cohort of KrasFSF-G12D/+; RosaFSF-CreERT2; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice, along with KrasFSF-G12D/+; RosaFSF-CreERT2; Nkx2-1F/F controls with Ad5-SPC-FlpO. As an additional control, we infected a group of KrasLSL-G12D/+; RosaLSL-tdTomato; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice with Ad5-SPC-Cre. All mice were treated with tamoxifen 1 week after infection and analyzed 5 weeks after infection. As expected, the lungs of KrasFSF-G12D/+; RosaFSF-CreERT2; Nkx2-1F/F controls harbored numerous mucinous lesions in the alveoli that expressed FoxA1/2 and lacked squamous markers such as ΔNp63 and CK5 (Figure 6, left panel). KrasFSF-G12D/+; RosaFSF-CreERT2; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice harbored FoxA1/2-negative lesions of two distinct morphologies (Figure 6, central panels). All mice harbored SCJ-like lesions that were predominantly CK7-positive/CK5-negative and expressed ΔNp63 in a minority of cells. Moreover, 63% of these mice (n = 5 out of 8) harbored well-differentiated, keratinizing SCCs that were CK7-negative/CK5-positive and expressed ΔNp63 (Figure 6, central panels and Figure 6—figure supplement 1B). Overall, these phenotypes were very similar to those observed when tumors were initiated with Ad5-CMV-FlpO in these mice (Figure 5). Importantly, we did not identify SCC in any of the KrasLSL-G12D/+; RosaLSL-tdTomato; Nkx2-1F/F; Foxa1F/F; Foxa2F/F mice infected with Ad5-SPC-Cre. These mice harbored CK7-positive/CK5-negative SCJ-like lesions that were essentially identical to lesions initiated by lentivirus in previous experiments (Figures 1–3).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/38579/elife-38579-fig6-v2.jpg)
+
+**Figure 6.:** H and E and IHC for indicated proteins in neoplasia 5 weeks post initiation. In mice harboring the conditional alleles KrasFSF-G12D/+; RosaFSF-CreERT2; Nkx2-1F/F (controls) alone and in combination with Foxa1F/F; Foxa2F/F, lung tumors were in initiated with Ad5-SPC-FlpO adenovirus. In mice harboring the conditional alleles KrasLSL-G12D/+; RosaLSL-tdTomato; Nkx2-1F/F; Foxa1F/F; Foxa2F/F, tumors were initiated with Ad5-SPC-Cre (right column). All mice were given tamoxifen 1 week after tumor initiation. Tamoxifen administration consisted of four intraperitoneal doses over 5 days, followed by tamoxifen-containing chow until the end of the experiment. Scale bar: 100 microns.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38579/elife-38579-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) IHC for HA (purple) in lungs from KrasFSF-G12D/+; RosaFSF-CreERT2; CAG-LSL-HA-UPRT mice infected with Ad5-CMV-FlpO (top) or Ad5-SPC-FlpO (bottom). One week post-infection, mice were given four intraperitoneal injections of tamoxifen over 5 days, followed by tamoxifen chow. Lungs were analyzed 3 weeks post-infection. Scale bar: 100 microns. (B) Percent of mice harboring keratinizing squamous cell carcinoma (SCC) 5 weeks post tumor initiation. In mice harboring the conditional alleles KrasFSF-G12D/+; RosaFSF-CreERT2; Nkx2-1F/F (controls, n = 5)) alone and in combination with Foxa1F/F; Foxa2F/F (n = 8) lung tumors were initiated with Ad5-SPC-FlpO adenovirus. In mice harboring the conditional alleles KrasLSL-G12D/+; RosaLSL-tdTomato; Nkx2-1F/F; Foxa1F/F; Foxa2F/F (n = 5) tumors were initiated with Ad5-SPC-Cre (right column). All mice were given tamoxifen 1 week after tumor initiation. Tamoxifen administration consisted of four intraperitoneal doses over 5 days, followed by tamoxifen-containing chow until the end of the experiment. *p < 0.03 vs. each control, Chi-square test.
 
 Taken together, these data show that loss of NKX2-1, FoxA1, and FoxA2 in SPC-positive alveolar cells has distinct outcomes depending on the state of oncogenic signaling in these cells. When these lineage specifiers are lost in normal SPC-positive cells (concomitant with KRASG12D activation), the resulting neoplasia equilibrates to a uniform SCJ-like state marked by a CK7-positive/CK5-negative immunophenotype. In contrast, SPC-positive cells that have already been subjected to oncogenic signaling from KRASG12D for ~1 week have the potential to undergo full squamous transdifferentiation (CK7-negative/CK5-positive) and become well-differentiated keratinizing SCCs.
 
@@ -120,63 +168,542 @@ In summary, this work expands our understanding of the lineage specifiers that c
 
 ## Materials and methods
 
-## Mice and tumor initiation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>KrasLSL-G12D</td>
+      <td>PMID: 11751630</td>
+      <td></td>
+      <td>Dr. Tyler Jacks (Massachusetts Institute of Technology, Cambridge, Massachusetts)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>KrasFSF-G12D</td>
+      <td>PMID: 21512139</td>
+      <td>RRID:MGI:5007794</td>
+      <td>Dr. Tyler Jacks (Massachusetts Institute of Technology , Cambridge, Massachusetts)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26LSL-tdTomato</td>
+      <td>PMID: 20023653</td>
+      <td>RRID:MGI:4436847</td>
+      <td>Jackson Laboratories (Bar Harbor, Maine)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26FSF-CreERT2</td>
+      <td>PMID: 25326799</td>
+      <td></td>
+      <td>Dr. Dieter Saur (Technische Universität München, München, Germany)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Nkx2-1F/F</td>
+      <td>PMID: 16601074</td>
+      <td>RRID:MGI:3653706</td>
+      <td>Dr. Shioko Kimura (National Cancer Institute (NCI), National Institutes of Health, Bethesda, Maryland)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Foxa1F/F</td>
+      <td>PMID: 19141476</td>
+      <td>RRID:MGI:3831163</td>
+      <td>Dr. Klaus H. Kaestner (University of Pennsylvania School of Medicine, Philadelphia, Pennsylvania, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Foxa2F/F</td>
+      <td>PMID: 10866673</td>
+      <td>RRID:MGI:2177357</td>
+      <td>Dr. Klaus H. Kaestner (University of Pennsylvania School of Medicine, Philadelphia, Pennsylvania, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>CAG-LSL-HA-UPRT</td>
+      <td>PMID: 23307870</td>
+      <td></td>
+      <td>Jackson Laboratories (Bar Harbor, Maine)</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>293T</td>
+      <td>PMID: 19561589</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-BrdU</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab6326, RRID: AB_305426</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Cadherin 13</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab167407</td>
+      <td>IHC (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Cathepsin E</td>
+      <td>Lifespan Biosciences</td>
+      <td>Cat. #: LS-B523, RRID:AB_2087236</td>
+      <td>IHC (1:12000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Caveolin 1</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab192869</td>
+      <td>IHC (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-CHIL3/4</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab192029</td>
+      <td>IHC (1:20000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Cleaved- caspase 3</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9664</td>
+      <td>IHC (1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Cytokeratin-5</td>
+      <td>Abcam</td>
+      <td>Cat #: ab52635 (EP1691Y)</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Cytokeratin-7</td>
+      <td>Abcam</td>
+      <td>Cat #: ab181598 (EP17078)</td>
+      <td>IHC (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-Cytokeratin-8</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat. #: TROMA-I, RRID:AB_531826</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Cytokeratin- 14</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab181595 (EPR17350)</td>
+      <td>IHC (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-FoxA1</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab173287</td>
+      <td>IHC (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-FoxA2</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab108422, RRID:AB_11157157</td>
+      <td>IHC (1:1200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-Galectin 4</td>
+      <td>R and D Systems</td>
+      <td>Cat. #: AF2128, RRID:AB_ 2297050</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Gastrokine 1</td>
+      <td>Abnova</td>
+      <td>Cat. #: H00056287-M01, RRID:AB_1505437</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-GDA</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab210606</td>
+      <td>IHC (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-HNF4α</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 3113S, RRID:AB_2295208</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Ki67</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab16667, RRID:AB_302459</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-MCM2</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab31159, RRID:AB_881276</td>
+      <td>IHC (1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal goat anti-MMP7</td>
+      <td>R and D Systems</td>
+      <td>Cat. #: AF2967, RRID:AB_664120</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Muc5AC</td>
+      <td>Abnova</td>
+      <td>Cat. #: MAB13117</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-NKX2-1</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab76013, RRID: AB_1310784</td>
+      <td>IHC (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-p40 (∆Np63)</td>
+      <td>Biocare Medical</td>
+      <td>Cat. #: ACI 3066 C</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-PDX1</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat. #: F109-D12, RRID:AB_1 157903</td>
+      <td>IHC (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-PIGR</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab170321</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-PK-LR</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab171744</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-proSPC</td>
+      <td>Millipore</td>
+      <td>Cat. #: AB3786, RRID: AB_91588</td>
+      <td>IHC (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-RFP</td>
+      <td>Rockland</td>
+      <td>Cat. #: 600-401-379</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-SOX2</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 3728, RRID: AB_2194037</td>
+      <td>IHC (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-VCAM1</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab134047, RRID:AB_2721053</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ad5-CMVCre</td>
+      <td>Gene Transfer Vector Core, University of Iowa, IA</td>
+      <td>VVC-U of Iowa-5-HT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ad5-CMVFlpo</td>
+      <td>Gene Transfer Vector Core, University of Iowa, IA</td>
+      <td>VVC-U of Iowa-530HT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ad5-SPC-Cre</td>
+      <td>Gene Transfer Vector Core, University of Iowa, IA</td>
+      <td>VVC-Berns- 1168</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ad5-SPC-FlpO</td>
+      <td>Gene Transfer Vector Core, University of Iowa, IA</td>
+      <td>VVC-Snyder- 6695</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PGK-Cre</td>
+      <td>PMID: 19561589</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>VSVg</td>
+      <td>PMID: 19561589</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Δ8.9</td>
+      <td>PMID: 19561589</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SPC-FlpO shuttle plasmid</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>T5648-5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen supplemented chow</td>
+      <td>Envigo</td>
+      <td>TD.130858</td>
+      <td>500 mg/kg of diet</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1X PBS</td>
+      <td>ThermoFisher Scientific</td>
+      <td>20012050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>ThermoFisher Scientific</td>
+      <td>15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Bloxall</td>
+      <td>Vector Laboratories</td>
+      <td>SP-6000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Horse serum</td>
+      <td>Vector Laboratories</td>
+      <td>S-2012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay, kit</td>
+      <td>Rodent Block M</td>
+      <td>Biocare Medical</td>
+      <td>RBM961</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ImmPRESS anti-rabbit HRP</td>
+      <td>Vector Laboratories</td>
+      <td>MP-7401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ImmPRESS anti-rat HRP</td>
+      <td>Vector Laboratories</td>
+      <td>MP-7444</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ImmPRESS anti-goat HRP</td>
+      <td>Vector Laboratories</td>
+      <td>MP-7405</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Anti-mouse secondary</td>
+      <td>Biocare Medical</td>
+      <td>MM620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ImmPACT DAB Peroxidase (HRP) Substrate</td>
+      <td>Vector Laboratories</td>
+      <td>SK-4105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ImmPACT VIP Peroxidase (HRP) Substrate</td>
+      <td>Vector Laboratories</td>
+      <td>SK-4605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Hematoxylin</td>
+      <td>Fisher Scientific</td>
+      <td>6765003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Collagena se type I</td>
+      <td>ThermoFisher Scientific</td>
+      <td>17100017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Elastase</td>
+      <td>Worthington Biochemical Corporation</td>
+      <td>LS002280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Dispase</td>
+      <td>Corning</td>
+      <td>354235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Deoxyribonuclease I</td>
+      <td>Sigma-Aldrich</td>
+      <td>DN25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Red Blood Cell Lysis Buffer</td>
+      <td>eBioscience</td>
+      <td>00-4333-57</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>PureLink RNA Mini kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>12183018A</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and tumor initiation
 
 Mice harboring KrasLSL-G12D (Jackson et al., 2001), KrasFSF-G12D (Young et al., 2011), Rosa26LSL-tdTomato (Madisen et al., 2010), Rosa26FSF-CreERT2 (30), Nkx2-1F/F (Kusakabe et al., 2006), Foxa1F/F (Gao et al., 2008), Foxa2F/F (Sund et al., 2000) and CAG-LSL-HA-UPRT (Gay et al., 2013) alleles have been previously described. Rosa26LSL-tdTomato and CAG-LSL-HA-UPRT mice were obtained from the Jackson Laboratories (Bar Harbor, Maine). All animals were maintained on a mixed C57BL/6J × 129SvJ background. Mice were infected intratracheally with adenovirus (University of Iowa, Gene Transfer Vector Core) or lentivirus as described (DuPage et al., 2009). Animal studies were approved by the University of Utah IACUC, and conducted in compliance with the Animal Welfare Act Regulations and other federal statutes relating to animals and experiments involving animals and adhere to the principles set forth in the Guide for the Care and Use of Laboratory Animals, National Research Council (PHS assurance registration number A-3031–01).
 
-## Tamoxifen administration
+### Tamoxifen administration
 
 Tamoxifen (Sigma, St. Louis, MO) was dissolved in corn oil to a concentration of 20 mg/ml and administered at a dose of 120 mg/kg per day for 6 doses over 9 days. This was followed by ad libitum feeding with tamoxifen-supplemented chow (500 mg/ kg; Envigo, Indianopolis, IN) in place of standard chow for the duration of experiment.
 
-## Lentiviral production
+### Lentiviral production
 
 Lentivirus was produced by transfection of 293 T cells with TransIT-293 (Mirus Bio, Madison, WI), lentiviral backbone as well as packaging vectors Δ8.9 (gag/pol) and CMV-VSV-G (DuPage et al., 2009). Supernatant was collected at 36, 48, 60 and 72 hr after transfection. For in vivo infection, virus was concentrated by ultracentrifugation at 25,000 r.p.m. for 105 min and re-suspended in an appropriate volume of 1X PBS. Cell line identity was authenticated using STR analysis at the University of Utah DNA Sequencing Core. Cells tested negative for mycoplasma.
 
-## Cloning
+### Cloning
 
 We first generated a pCDH-SPC-Flpo lentiviral vector by PCR amplifying the murine SPC promoter (Sutherland et al., 2011) and cloning into SpeI-XbaI sites of pCDH-CMV-Flpo plasmid. The pCDH-mSPC-Flpo vector was then digested with ClaI-PacI and blunt ended with Klenow to clone into EcoRV site of the adenovirus shuttle plasmid G0687 pacAd5mcsSV40pA (University of Iowa, Viral Vector Core Facility). Correct identity and orientation of the construct was confirmed via Sanger sequencing. Further recombination and adenovirus production and purification was carried out by University of Iowa Viral Vector Core (cat.# VVC-Snyder-6695).
 
-## Histology and immunohistochemistry
+### Histology and immunohistochemistry
 
 All tissues were fixed in 10% formalin overnight, and lungs were perfused with formalin via the trachea. Tissues were transferred to 70% ethanol, embedded in paraffin, and four-micrometer sections were cut. To detect mucin, sections were stained with 1% Alcian Blue pH 2.5 at the HCI Research Histology Shared Resource. Immunohistochemistry (IHC) was performed manually on Sequenza slide staining racks (ThermoFisher Scientific, Waltham, MA). Sections were treated with Bloxall (Vector labs) followed by Horse serum (Vector Labs, Burlingame, CA) or Rodent Block M (Biocare Medical, Pacheco, CA), primary antibody, and HRP-polymer-conjugated secondary antibody (anti-Rabbit, Goat and Rat from Vector Labs; anti-Mouse from Biocare. The slides were developed with Impact DAB or VIP (Vector) and counterstained with hematoxylin. Slides were stained with antibodies to BrdU (BU1/75, Abcam, Cambridge, MA), Cadherin 13 (EPR9621, Abcam), Cathepsin E (LS-B523, Lifespan Biosciences, Seattle, WA), Caveolin 1 (EPR15554, Abcam), CHIL3/4 (EPR15263, Abcam), Cleaved caspase-3 (5A13, CST, Danvers, MA), Cytokeratin 5 (EP1691Y, Abcam), Cytokeratin 7 (EP17078, Abcam), Cytokeratin-8 (TROMA-I, DSHB, Iowa City, Iowa), Cytokeratin 14 (EPR17350, Abcam), FoxA1 (EPR10881-14, Abcam), FoxA2 (EPR4466, Abcam), Galectin 4 (AF2128, R and D Systems, Minneapolis, MN), Gastrokine 1 (2E5, Abnova, Taipei City, Taiwan), GDA (EPR18751, Abcam), HNF4α (C11F12, CST), KI67 (SP6, Abcam), MCM2 (ab31159, Abcam), MMP7 (AF2967, R and D Systems) Muc5AC (SPM488, Abnova), NKX2-1 (EP1584Y, Abcam), p40(ΔNp63) (BC28, Biocare), PDX1 (F109-D12, DSHB), PIGR (7C1, Abcam), PK-LR (EPR11093P, Abcam), RFP (Rockland Immunochemicals, Limerick, PA), SOX2 (C70B1, CST) and VCAM1 (EPR5047, Abcam). Pictures were taken on a Nikon Eclipse Ni-U microscope with a DS-Ri2 camera and NIS-Elements software. For double immunostaining, slides were blocked sequentially with Bloxall, horse serum and Rodent Block M, then incubated with antibodies of interest from different species (Rabbit and Mouse) simultaneously. Slides were incubated with a mouse secondary followed by DAB (brown). This was followed by incubation with a rabbit secondary antibody and ImPACT VIP (purple, Vector lab). Tumor quantitation was performed on hematoxylin and eosin-stained or IHC-stained slides using NIS-Elements software. All histopathologic analysis was performed by a board-certified anatomic pathologist (E.L.S.).
 
-## Fluorescence-activated cell sorting (FACS)
+### Fluorescence-activated cell sorting (FACS)
 
 7–20 weeks after tumor initiation with Ad5-SPC-Cre (Sutherland et al., 2011), tumor-bearing mice were euthanized using carbon dioxide and the rib-cage was dissected to reveal trachea and heart. Cadiac perfusion of the pulmonary vasculature was performed using PBS until the lungs turned pale. The lungs were inflated with an enzymatic digest solution (Collagenase type I (Thermo Fisher Scientific); Elastase (Worthington Biochemical, Lakewood, NJ), Dispase (Corning CB-40235, VWR, Radnor, PA) and Dnase I (DN25, Sigma)) and then minced and digested with the enzyme digest solution at 37 C for 45 min. The digested tissue was then passed through an 18-gauge syringe needle followed by 100, 70 and 40 micron filters to generate a single-cell suspension. The suspension was treated with Red Blood Cell Lysis Buffer (eBioscience, ThermoFisher Scientific,) and then reconstituted in 1X PBS supplemented with 2% fetal bovine serum, 2% BSA and DAPI (Sigma). Cells were sorted using BD FACSAria for tdTomato-positive and DAPI-negative cells into PBS + 10% serum.
 
-## Single-cell isolation and RNA sequencing
+### Single-cell isolation and RNA sequencing
 
 Sorted tumor cells (200–300 cells/ul) were mixed with C1 Suspension Reagent (Fluidigm, South San Francisco, CA) and loaded on a 5–10 μm C1 Single-cell Auto Prep IFC for mRNA Seq (Fluidigm cat# 100–5760). Captured cells were visualized and scored by microscopy. Amplified cDNA products derived from captured cells were harvested and concentrations were measured using the Qubit dsDNA HS Assay Kit. Amplified products were normalized to a concentration of 0.2 ng/ul and sequencing libraries were prepared using the Nextera XT DNA Library Preparation Kit (cat# FC131-1096, Illumina, San Diego, CA) and dual indexed adapters (FC-131–2001, FC-131–2002) according to the modified protocol described by Fluidigm. Purified libraries were qualified on an Agilent Technologies 2200 TapeStation using a D1000 ScreenTape assay (cat# 5067–5582 and 5067–5583). The molarity of adapter-modified molecules was defined by quantitative PCR using the Kapa Biosystems (Wilmington, MA) Kapa Library Quant Kit (cat# KK4824). Individual libraries were normalized to 10 nM and equal volumes were pooled in preparation for Illumina sequence analysis.
 
 Sequencing libraries (25 pM) were chemically denatured and applied to an Illumina HiSeq v4 single read flow cell using an Illumina cBot. Hybridized molecules were clonally amplified and annealed to sequencing primers with reagents from an Illumina HiSeq SR Cluster Kit v4-cBot (GD-401–4001). Following transfer of the flowcell to an Illumina HiSeq 2500 instrument (HCSv2.2.38 and RTA v1.18.61), a 50-cycle single-read sequence run was performed using HiSeq SBS Kit v4 sequencing reagents (FC-401–4002).
 
-## Processing and analysis of single-cell RNA-seq data
+### Processing and analysis of single-cell RNA-seq data
 
-## Transcript expression estimation
+#### Transcript expression estimation
 
 The genome index was created with STAR (v2.4.2a) (Dobin et al., 2013) using the mm10 genome sequence and Ensembl (build 85) gene definitions. Reads were aligned to the index using the following parameters: outFilterType BySJout, outFilterMultimapNmax 20, outFilterMismatchNmax 999, outFilterMismatchNoverReadLmax 0.04, alignIntronMin 20, alignIntronMax 1000000, alignMatesGapMax 1000000, alignSJoverhangMin 8, alignSJDBoverhangMin 1, sjdbScore 1, outSAMtype BAM SortedByCoordinate, quantMode TranscriptomeSAM.
 
 The RSEM (v1.2.19) (Li and Dewey, 2011) reference was created using the rsem-prepare-reference command. Gene estimates were generated by running rsem-calculate-expression on the STAR alignments.
 
-## Clustering
+#### Clustering
 
 The gene count estimates from RSEM were loaded into a scater (v1.2.0) (McCarthy et al., 2017) SCESet object. Genes with log2(CPM) >2 in at least 10 cells were retained in the analysis. Cells with greater than 20% mitochondrial reads, less than 500 thousand alignments, less than 500 measurable genes or less than 20% mRNA bases were removed from the analysis. SC3 (v1.3.18) (Kiselev et al., 2017) was run on the filtered SCESet object using k = 3 and gene filtering turned off. The resulting cell cluster assignments and marker genes were used in the remaining analyses. The scater ‘plotTSNE’ function was used to generate t-distributed stochastic neighbor embedding (t-SNE) plot.
 
 AT2 gene count estimates (E18.5 cells, Treutlein et al.) were added to the passing cells from the previous analysis. SC3 and scater were run using the parameters listed above.
 
-## Differential expression
+#### Differential expression
 
 Differential expression between the clusters was determined using the Bioconductor package SCDE (v1.99.1) (Kharchenko et al., 2014). RSEM gene count estimates from cells passing filtering were used in this analysis. Genes were retained if there were 10 or more counts in at least 10 cells. Error models were fit using the ‘scde.error.models’ function, expression magnitude priors for the genes were generated using the ‘scde.expression.prior’ function and differential expression was determined with the ‘scde.expression.difference’ function set to 100 randomizations.
 
-## Correlation with bulk RNA-Seq data
+#### Correlation with bulk RNA-Seq data
 
 The differential expression results from the bulk cell and single cell analyses were intersected. Genes with an average count less than 1000 in the bulk cell samples were removed. The log2 fold change values from both analyses were plotted using ggplot2 (v2.2.1) (ggplot, 2009). The Pearson correlation coefficient was calculated using the base R (v3.3.2) function cor.test.
 
-## IMA signature
+#### IMA signature
 
 Transcripts per Million (TPM) estimates from RSEM were extracted for cells passing filtering and restricted to genes found in the human IMA signature (Guo et al., 2017). The FactoMineR (v1.39) (Le et al., 2008) function ‘PCA’ was run on the log-transformed TPM values and the first two components were plotted using ggplot.
 
-## Normal tissue classification
+#### Normal tissue classification
 
 TPM values were generated for each cluster by summing gene counts across the members of the cluster and dividing by the RSEM estimated gene length in kilobases to get the counts per base rate of each gene. These rates are divided by the sum of all rates and scaled by a million to get TPM. The TPM values for each cluster were then intersected with bulk cell TPM and normal tissue TPM downloaded from Encode (Supplementary file 5). Gene were restricted to those classified as ‘protein coding’ by Ensembl and had at least 10 counts in 10 or more cells.
 
@@ -188,22 +715,22 @@ The FactoMineR function ‘PCA’ was run on the log2 TPM values with scaling tu
 
 Cosine similarity was calculated using the lsa (v0.73.1) (Wild, 2015) function ‘cosine’. Every combination of cluster and normal tissue log2 TPM values were compared.
 
-## Bulk RNA isolation and total RNA-Seq
+### Bulk RNA isolation and total RNA-Seq
 
 RNA was isolated by trizol-chloroform extraction followed by column-based purification. Sorted cells were lysed in 1 ml Trizol (ThermoFisher Scientific), followed by phenol-chloroform extraction. The aqueous phase was brought to a final concentration of 50% ethanol, and RNA was purified using the PureLink RNA Mini kit according to the manufacturer’s instructions (ThermoFisher Scientific). Library preparation was performed using the TruSeq Stranded RNA kit with Ribo-Zero Gold (Illumina). Libraries were sequenced on an Illumina HiSeq 2500 (50 cycle single-read sequencing).
 
-## Processing and analysis of total RNA-seq data
+### Processing and analysis of total RNA-seq data
 
 Mouse FASTA and GTF files were downloaded from Ensembl release 82 and a reference database was created using RSEM version 1.2.12 (Li and Dewey, 2011). RSEM and the Bowtie 1.0.1 aligner were used to map reads and estimate transcripts and gene counts using rsem-calculate-expression with the forward-prob 0 option for reversely stranded Illumina reads. The expected gene counts were filtered to remove 12371 features with zero counts and 10100 features with fewer than 10 reads in any sample. Differentially expressed genes were identified using a 5% false discovery rate with DESeq2 version 1.16.0 (59).
 
-## Histopathologic evaluation of primary human tumors
+### Histopathologic evaluation of primary human tumors
 
 Formalin fixed, paraffin-embedded (FFPE) tumors were obtained in accordance with protocols approved by the Institutional Review Boards of the University of Utah and Intermountain Healthcare. Additional lung adenocarcinomas were evaluated on commercially available tissue microarrays (US BioMax, Rockville, MD).
 
-## Comparison of FOXA1 and FOXA2 levels in KRAS-mutant human lung adenocarcinomas
+### Comparison of FOXA1 and FOXA2 levels in KRAS-mutant human lung adenocarcinomas
 
 The patient IDs and cluster names from 68 KRAS-mutants listed in supplementary figure 2A in Skoulidis et al. (2015) were saved to a sample table with 23 KL, 30 KP and 15 KC samples corresponding to genetic alterations in STK11/LKB1 (KL), TP53 (KP), and CDKN2A/B inactivation coupled with low expression of NKX2-1 (KC). The patient IDs were matched to a count matrix from the TCGA Lung Adenocarcinoma project (LUAD) using the TCGAbiolinks package and HTSeq counts in the GDC harmonized dataset (Colaprico et al., 2016). Eleven patients with a matched normal sample were also included as a fourth group for comparison. The count matrix was filtered to remove 5789 features with zero counts and 19,546 features with fewer than 10 reads in any sample. The sample table and filtered count matrix were loaded into DESeq2 version 1.16.0 (59) to estimate normalized counts and identify differentially expressed genes using a 5% false discovery rate.
 
-## Statistics
+### Statistics
 
 p-Values were calculated using the unpaired two-tailed Mann-Whitney (non-parametric) U test, Chi-squared test or Fisher’s Exact Test. RNA-Seq statistics are described above.

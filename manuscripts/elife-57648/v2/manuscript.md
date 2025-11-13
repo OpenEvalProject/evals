@@ -20,19 +20,19 @@
 
 ### Affiliations
 
-1. https://ror.org/04gndp242 Department of Translational Oncology, Genentech, Inc South San Francisco United States
-2. https://ror.org/04gndp242 Department of Bioinformatics & Computational Biology, Genentech, Inc South San Francisco United States
-3. https://ror.org/04gndp242 Department of Immunology, Genentech, Inc South San Francisco United States
-4. https://ror.org/04gndp242 Department of Molecular Biology, Genentech, Inc South San Francisco United States
-5. https://ror.org/04gndp242 Department of Pathology, Genentech, Inc South San Francisco United States
-6. https://ror.org/00f54p054 Department of Genetics, Stanford University Stanford United States
-7. https://ror.org/04gndp242 Department of Discovery Oncology, Genentech, Inc South San Francisco United States
+1. Department of Translational Oncology, Genentech, Inc South San Francisco United States ([ROR:04gndp242](https://ror.org/04gndp242))
+2. Department of Bioinformatics & Computational Biology, Genentech, Inc South San Francisco United States ([ROR:04gndp242](https://ror.org/04gndp242))
+3. Department of Immunology, Genentech, Inc South San Francisco United States ([ROR:04gndp242](https://ror.org/04gndp242))
+4. Department of Molecular Biology, Genentech, Inc South San Francisco United States ([ROR:04gndp242](https://ror.org/04gndp242))
+5. Department of Pathology, Genentech, Inc South San Francisco United States ([ROR:04gndp242](https://ror.org/04gndp242))
+6. Department of Genetics, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+7. Department of Discovery Oncology, Genentech, Inc South San Francisco United States ([ROR:04gndp242](https://ror.org/04gndp242))
 
 † Corresponding author
 
 ## Abstract
 
-Lung development, integrity and repair rely on precise Wnt signaling, which is corrupted in diverse diseases, including cancer. Here, we discover that EHMT2 methyltransferase regulates Wnt signaling in the lung by controlling the transcriptional activity of chromatin-bound β-catenin, through a non-histone substrate in mouse lung. Inhibition of EHMT2 induces transcriptional, morphologic, and molecular changes consistent with alveolar type 2 (AT2) lineage commitment. Mechanistically, EHMT2 activity functions to support regenerative properties of Kras G12D tumors and normal AT2 cells—the predominant cell of origin of this cancer. Consequently, EHMT2 inhibition prevents Kras lung adenocarcinoma (LUAD) tumor formation and propagation and disrupts normal AT2 cell differentiation. Consistent with these findings, low gene G12D EHMT2 expression in human LUAD correlates with enhanced AT2 gene expression and improved prognosis. These data reveal EHMT2 as a critical regulator of Wnt signaling, implicating Ehmt2 as a potential target in lung cancer and other AT2-mediated lung pathologies.
+Lung development, integrity and repair rely on precise Wnt signaling, which is corrupted in diverse diseases, including cancer. Here, we discover that EHMT2 methyltransferase regulates Wnt signaling in the lung by controlling the transcriptional activity of chromatin-bound β-catenin, through a non-histone substrate in mouse lung. Inhibition of EHMT2 induces transcriptional, morphologic, and molecular changes consistent with alveolar type 2 (AT2) lineage commitment. Mechanistically, EHMT2 activity functions to support regenerative properties of KrasG12D tumors and normal AT2 cells—the predominant cell of origin of this cancer. Consequently, EHMT2 inhibition prevents KrasG12D lung adenocarcinoma (LUAD) tumor formation and propagation and disrupts normal AT2 cell differentiation. Consistent with these findings, low gene EHMT2 expression in human LUAD correlates with enhanced AT2 gene expression and improved prognosis. These data reveal EHMT2 as a critical regulator of Wnt signaling, implicating Ehmt2 as a potential target in lung cancer and other AT2-mediated lung pathologies.
 
 ## Introduction
 
@@ -46,41 +46,127 @@ In many biological contexts, cellular self-renewal and lineage fate commitment i
 
 ## Results
 
-## EHMT2 activity is required for KrasG12D;Trp53 (KP) tumorsphere self-renewal
+### EHMT2 activity is required for KrasG12D;Trp53 (KP) tumorsphere self-renewal
 
 Given the association of EHMT2 expression and poor prognosis in LUAD (Chen et al., 2010; Huang et al., 2017), we sought to examine the expression and function of EHMT2 in primary murine KrasG12D;Trp53-/- (KP) tumors. Previous work established that KP tumor self-renewal was dependent on a TPC subset. Therefore, by utilizing the previously characterized surface markers CD24, ITGB4, and NOTCH (Zheng et al., 2013), we sorted the TPC population and evaluated EHMT2 protein expression. Using two distinct detection methods we observed a consistent and robust increase in EHMT2 protein expression (Figure 1A–C). Next, we evaluated the requirement of EHMT2 in self-renewal function of TPCs using ex vivo KP-derived organotypic cultures (i.e. tumorspheres), an established surrogate for measuring the in vivo regenerative capability of TPCs (Zheng et al., 2013). Pharmacological inhibition of EHMT2, using UNC0642 (Liu et al., 2013), resulted in a dose-dependent decrease of primary ex vivo KP-derived tumorsphere formation (Figure 1D). Pharmacological inhibition of EHMT2 in established tumorspheres led to a marked reduction in both histone H3 lysine 9 di- and tri-methylation marks (H3K9me2/3), consistent with potent EHMT2 inhibition (Collins and Cheng, 2010; Epsztejn-Litman et al., 2008; Shinkai and Tachibana, 2011; Figure 1—figure supplement 1). Both UNC0642 treatment or short hairpin RNA (shRNA)-mediated depletion of Ehmt2 similarly impaired secondary sphere formation (Figure 1F–I), albeit only shEHMT2.2 reached statistical significance, establishing a requirement for EHMT2 activity in TPC self-renewal.
 
-## EHMT2 is required for in vivo tumor growth
+![Figure 1.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig1-v2.jpg)
+
+**Figure 1.:** (A) Western blot analysis of EHMT2 in tumor-propagating cell (TPC) and non-TPC. Actin was used as loading control. (B) Flow cytometry analysis of EHMT2 in TPC and non-TPC (blue, TPC, red, non-TPC; gray, Isotype). (C) Quantification of EHMT2 geometric fluorescence intensity (gMFI) in (B) (n=2, mean ± SEM; two-tailed t-test, *p=0.05). (D) Tumorsphere formation of KP-derived primary cells seeded with increasing doses of EHMT2 inhibitor (n=2, mean ± SEM, One-way ANOVA with multiple testing, *p<0.005). (E) Western blot analysis showing reductions in H3K9me2/3 following EHMT2 inhibitor treatment (EHMT2i, EHMT2 inhibition) histone H3 was used as loading control. Ratio of H3K9me to H3 is depicted at the bottom of the Western blot. (F) Representative image of primary tumorspheres following secondary passaging in the absence of either vehicle control or EHMT2 inhibitor (EHMT2i, EHMT2 inhibition. Scale bar 100 μm). (G) Quantitation of tumorsphere growth after secondary passaging (n=5; mean ± SEM; two-tailed paired t-test, **p<0.005). (H) Relative qRT-PCR of Ehmt2 transcripts from primary tumorspheres, expressing either short hairpin RNA (shRNA) control (shControl), or shRNAs against Ehmt2 (shEhmt2. 1, shEhmt2. 2), (n=2; mean ± SEM; two-tailed paired t-test, *p<0.05). (I) Quantification of turbo RFP (tRFP)-positive tumorspheres following secondary passage of primary tumorspheres expressing control or Ehmt2 shRNAs. (shEhmt2.1, n=2; mean ± SD, shEhmt2.2, n=3; mean ± SD; two-tailed paired t-test, *p<0.05, shEHMT2.1 p=0.09).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig1-figsupp1-v2.jpg)
+
+### EHMT2 is required for in vivo tumor growth
 
 Previous work has demonstrated that serial re-growth of KP tumors following orthotopic transplantation requires a sustained functional TPC population (Zheng et al., 2013). To evaluate the functional necessity of EHMT2 activity on in vivo tumor formation, we evaluated tumor formation following serial transplantation of orthotopically transplanted KP-derived primary cells harboring doxycycline (Dox)-inducible shRNAs. First, hairpin expression was induced in vivo for 13 days by doxycycline administration to mice with established primary lung tumors. Thereafter, shRNA-expressing cells were sorted from primary tumors and assessed for secondary tumorsphere formation ex vivo and tumor formation in vivo (Figure 2—figure supplement 1A-C). Sorted shEhmt2-expressing cells from primary recipients showed a significant decrease in both ex vivo tumorspheres and in vivo secondary tumor formation, establishing a role for EHMT2 in maintaining TPC stemness (Figure 2A–D). Continuous monitoring of secondary transplants in vivo revealed a substantial growth impairment in sh Ehmt2 -expressing tumors, which translated to a significant increase in overall survival (Figure 2E–F). Mice harboring shEhmt2-expressing tumors eventually succumb to tumor outgrowth; however, analysis of terminal tumors revealed re-expression of Ehmt2 transcript to a level equivalent to that of control tumors (Figure 2—figure supplement 2A,B). This data demonstrates that Ehmt2 expression is required for TPC-tumor growth. Taken together, these data indicate that EHMT2 activity in TPCs functions to maintain the self-renewal capacity of KP tumors.
 
-## EHMT2 preserves TPC function by preventing AT2 differentiation
+![Figure 2.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig2-v2.jpg)
+
+**Figure 2.:** (A) Ex vivo analysis of tumorsphere formation from primary orthotopic transplanted cells, expressing either short hairpin RNA (shRNA) control (shcontrol) or shRNAs against Ehmt2 (shEhmt2) (n=3 ± SD) Scale bar 500µM. (B) Quantification of tumorsphere formation in panel (A), two tailed t-test, ***p<0.0005 (C) Representative μ-CT images of shcontrol- or shEhmt2-expressing tumors (n=6) red circles depicting tumors. (D) Table comparing efficiencies of secondary passage in vivo and ex vivo from orthotopically-transplanted primary KP cells, expressing shcontrol (n=6) or shEhmt2 (n=6). (E) Overall tumor volume in secondary recipient mice orthotopically transplanted with KP cells from primary recipients, expressing either shRNAs targeting control (shcontrol) or Ehmt2 (shEhmt2.1) (n=6) tumor volume at end of study by treatment, Mann-Whitney test, *p<0.05. (F) Graph indicates survival of mice depicted in (E) (n=6 per group. Geha-Breslow-Wilcoxon test, **p<0.005).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic representation of serial orthotopic transplantation of primary KP cells can be viewed in three basic parts: (i) Primary tumors are initated via intranasal infection of adenovirus expressing Cre recombinase in KrasLSL.G12D; Trp53flox/flox (KP) mice. Tumors develop with a latency of approximately 16 weeks. Primary tumors are isolated from KP mice and immediately transduced with lentiviral constructs harboring doxycycline-inducible hairpins and a tRFP label to facilitate identification of hairpin-expressing cells. Transduced primary KP cells are then orthotopically seeded into the lungs of wild-type recipient mice via intratracheal administration. Animals are thereafter monitored for tumor formation using microCT. Once tumor formation is confirmed in the first recipient mice, animals are stratified and dosed with doxycycline for 13 consecutive days to induce expression of latent hairpins targeting either Ehmt2 or control transcripts. After 13 days of expression, tumors from the first recipients are harvested and tRFP + cells are sorted to identify hairpin expressing cells. (ii) tRFP + cells are then orthotopically transplanted into the second recipient. The animals are maintained on doxycycline and tumor growth is monitored. (B) Flow cytometry showing gating strategy of primary tRFP-sorted cells prior to secondary transplantation (left plot, tRFP gate control; middle and right plot, sorted tRFP-positive cells from shcontrol and shEhmt2, respectively). (C) Relative expression of shEhmt2.2 in tRFP-sorted tumor cells prior to secondary transplantation (n=6).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Relative expression of Ehmt2 transcripts from tumors of shcontrol and shEhmt2.2 secondary recipients at study termination, showing no statistical difference (each point represents one tumor from n=9 for each group). (B) Micrographs showing extracted tumor areas taken for transcript expression analysis from both control and shEhmt2 secondary recipient tumor transplants.
+
+### EHMT2 preserves TPC function by preventing AT2 differentiation
 
 To elucidate the mechanistic basis of EHMT2 in maintaining tumor self-renewal, we characterized the phenotypic impact of pharmacological inhibition of EHMT2 in tumorspheres. EHMT2 inhibition resulted in significant reductions in BrdU-labeled cells (fivefold) and expression of cleaved caspase-3 (>10 fold) (Figure 3—figure supplement 1A-D). Reduced proliferation and cell death were previously associated with cell differentiation (Domen and Weissman, 1999; Ruijtenberg and van den Heuvel, 2016), therefore, we further explored cell fate changes as a possible treatment outcome. Since LUAD arises predominantly from the distal alveolar compartment (Mainardi et al., 2014; Sutherland et al., 2014; Xu et al., 2012), we quantified established gene signatures pertaining to distal alveolar cell types from RNA sequencing data derived from EHMT2 i-treated tumorspheres (Treutlein et al., 2014). The AT2 gene signature was significantly increased following EHMT2 inhibition, in contrast to other cell lineages (Figure 3A). Protein expression of surfactant protein C (SPC), a canonical AT2 marker was also significantly upregulated in EHMT2 -inhibited tumorspheres, likely due to differentiated progenitors (Figure 3—figure supplement 2). Concomitant with an increase in SPC+, we observed an increase in CD74, an additional cell surface marker characterizing AT2 cells (Lee et al., 2013), showing an increase of the double-positive population (1.8-fold) (Figure 3B and C). Moreover, we observed a significant increase in the transcript levels of multiple surfactants in both EHMT2-inhibited and EHMT2-depleted (shEhmt2) tumorspheres (Figure 3—figure supplement 3A.B), indicating increased/enhanced AT2-like cell fate features when EHMT2 activity is impaired. Importantly, this AT2-like conversion was confirmed in Ehmt2-depleted tumor cells from secondary passage in vivo (Figure 3—figure supplement 4). Furthermore, evidence supporting cell fate transition was observed when transmission electron microscopy (TEM) of EHMT2-inhibited tumorspheres revealed a significant increase in lamellar bodies (Balis and Conen, 1964), which are distinct specialized structures responsible for the storage and release of surfactants and serve as a morphometric readout for AT2 cells (Figure 3D and E). Together these results demonstrate that EHMT2 inhibition triggers an enhanced/reinforced AT2-like cell state in KP-derived tumorspheres.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig3-v2.jpg)
+
+**Figure 3.:** (A) Graphs show enrichment analyses of distinct alveolar cell-lineage gene signatures in transcriptomes generated from KP-derived primary tumorspheres following EHMT2 inhibition (EHMT2i) vs vehicle control (control) (n=4; mean Z-score ± SEM, two-tailed paired t-test, *p<0.05), each paired with immunofluorescence (IF) micrographs of representative canonical marker from their respective cell lineage. Scale bar 100µM (See Figure (S3E) for quantitation of IF). (B) Representative flow cytometry of cells derived from primary tumorspheres treated with either vehicle control (control) or EHMT2 inhibitor (EHMT2i) for 5 days and immuno-stained for alveolar type 2 (AT2) markers surfactant protein C (SPC) and CD74. (C) Quantification of the SPC-CD74 double positive (DP) population depicted in (B). (n=4; mean ± SEM, two-tailed paired t-test, *p<0.05). (D) Representative transmission electron microscopy (TEM) image of cells extracted from primary tumorspheres, treated as in (B). (Upper panel, scale bar 2 μm; lower panel, respective insets in the upper panel, scale bar 0.5 μm). (N, nucleus; yellow arrows, lamellar bodies). (E) Quantification of TEM in (D) (n=2; mean ± SEM, two-tailed paired t-test, *p<0.05). (F) Representative flow cytometry of tumor-propagating cells (TPCs) sorted after EHMT2 inhibitor (EHMT2i)- or vehicle control-treatment of primary tumorspheres and immuno-stained for AT2 markers SPC and CD74. (G) Quantification of (F), showing fold-change in EHMT2i/control ratio of AT2 markers SPC and CD74 (n=2; mean ± SEM, One-way ANOVA with Tukey’s multiple comparison test, **p<0.005). (H) Relative expression of Sftpc and Cd74 transcripts in EHMT2i vs control; TPC and non-TPC, respectively. (n=3; mean ± SEM, two-tailed paired t-test, *p<0.05). (I) Spearman’s rank correlation analysis between orthogonal human AT2 gene signatures and EHMT2 transcript in 546 human lung adenocarcinomas (LUAD). (n=546, linear regression analysis, ***p<0.0001, r=−0.4).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Proliferation in KP-derived primary tumorspheres demonstrated by BrdU staining, following 5 days with EHMT2 inhibitor (EHMT2i) or vehicle control (control) (red, BrdU immunofluorescence; blue, 4′,6-diamidino-2-phenylindole (DAPI) counterstain; scale bar 100 μm). (B) Quantification of BrdU-positive nuclei depicted in (a) (two-tailed paired t-test; n=3; mean ± SEM, *p<0.05). (C) Micrographs indicate apoptosis (CC3, cleaved caspase-3) in primary tumorspheres, following 5 days with EHMT2i or control (blue, DAPI counterstain; scale bar 500 μm). (D) Quantification of CC3-positive area per sphere area, depicted in (c). (two-tailed paired t-test n=2; mean ± SEM, **p<0.01).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Surfactant protein C (SPC): control, n=15; EHMT2i, n=9; two-tailed paired t-test, p<0.005. CC10: control, n=15; EHMT2i, n=9; two-tailed paired t-test, **p<0.05. (FoxJ1: control, n=28; EHMT2i, n=21).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Relative expression of surfactants and Cd74 transcripts following EHMT2 inhibition (n=4 ± SEM; p<0.05) or shEhmt2 vs shcontrol (control) (two-tailed paired t-test n=4 ± SEM; *p<0.05). (B) Relative expression of surfactants and Cd74 transcripts following EHMT2 inhibition (n=4 ± SEM; *p<0.05) or shEhmt2 vs shcontrol (control) (n=2 ± SEM).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig3-figsupp4-v2.jpg)
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig3-figsupp5-v2.jpg)
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig3-figsupp6-v2.jpg)
+
 As EHMT2 activity is critical for the self-renewal of tumorspheres and its expression is selectively enriched in TPCs, we interrogated whether the observed cell fate changes occur within the TPC fraction. EHMT2 inhibition in primary tumorspheres caused a reduction in TPCs, (Figure 3—figure supplement 5), consistent with their reduced stemness. Notably, EHMT2-inhibited TPCs displayed a statistically significant increase (fourfold) in the AT2 surface markers, SPC and CD74, compared to matched controls (Figure 3F and G). Consistently, Sftpc and Cd74 transcripts increased exclusively in TPCs (Figure 3H). Together, these data indicate that EHMT2 inhibition leads to an induced AT2-like cell state within the TPC subset, thereby reducing their regenerative capacity by a mechanism similar in features to differentiation. To assess whether the relationship between EHMT2 activity and cell state extends to human tumors, we used clinical adenocarcinoma specimens and assessed the association between EHMT2 transcript and cell lineage gene signatures (Treutlein et al., 2014) in a panel of 546 LUADs (Cancer Genome Atlas Research, 2014). Consistent with our murine data, EHMT2 gene expression negatively correlates with the AT2 cell gene signature (Figure 3—figure supplement 6), supporting the concept that EHMT2 activity impairs differentiation. Taken together, the data indicate that EHMT2 activity represses an alveolar differentiation program in murine LUAD as a means to preserve stem-like properties that enable tumor self-renewal.
 
-## Wnt activation impairs TPC self-renewal and induces AT2 cell lineage marker expression
+### Wnt activation impairs TPC self-renewal and induces AT2 cell lineage marker expression
 
 Previous work indicates that EHMT2 can suppress promiscuous transcription by regulating chromatin structure through the positioning of repressive H3K9 methylation marks in a context-dependent manner (Chen et al., 2012; Kim et al., 2017; Zylicz et al., 2018). We performed an assay for transposase-accessible chromatin using sequencing (ATAC-seq) to characterize chromatin accessibility in EHMT2 inhibitor-treated, tumorsphere-derived TPCs. Surprisingly, very limited changes in chromatin accessibility were observed in TPCs upon EHMT2 inhibition (Figure 4—figure supplement 1A,B), indicating that EHMT2 inhibition does not induce widespread chromatin remodeling: 11 promoter and 320 non-promoter sites became more accessible following EHMT2 inhibition, whereas 3 promoter and 54 non-promoter sites were less accessible (FDR <0.05, fold-change >1.5). The promoter sites were not disproportionately enriched for any pathway, and could not account for the EHMT2-induced phenotype.
 
 In the absence of EHMT2 i-induced chromatin accessibility changes, we investigated signaling pathways that influence alveolar cell fate decisions in TPCs. A subset of AT2 cells in normal lung act as tissue stem cells, and Wnt signaling is critical for the maintenance of their stem cell identity (Nabhan et al., 2018; Zacharias et al., 2018). We reasoned that EHMT2 could regulate Wnt signaling as a means to maintain stemness and prevent differentiation in TPCs. Consistent with this line of reasoning, EHMT2 inhibition resulted in a statistically significant increase in Axin2 expression only within the TPC subset (Figure 4A), implicating a functional link between EHMT2 activity and Wnt signaling.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig4-v2.jpg)
+
+**Figure 4.:** (A) Relative expression of Axin2 transcripts in tumor-propagating cells (TPCs) and non-TPC following EHMT2 inhibition (EHMT2i) vs vehicle control (control) (n=4 mean± SEM; two-tailed paired t-test, *p<0.05). (B) Representative micrographs of primary tumorspheres passaged to single cells following 5 days of the GSK3b inhibitor, CHIR (5 days CHIR) at indicated doses vs vehicle control (control) and assessed for secondary sphere formation (scale bar 100 μm). (C) Quantification of sphere formation experiments as represented in (b) (n=4 mean ± SEM; two-tailed paired t-test, **p<0.005). (D) Relative expression of Axin2 transcripts in primary tumorspheres (n=5 mean ± SEM, two-tailed paired t-test, *p<0.05). (E) Relative expression of alveolar type 2 (AT2) markers in tumorspheres (n=5 mean ± SEM, two-tailed paired t-test, *p<0.05). (F) Flow cytometry for surfactant protein C (SPC) in primary tumorspheres, treated with two doses of GSK3β inhibitor (CHIR) for 5 days vs vehicle control (control). (G) Relative expression of TCF4-containing AT2 markers in TPCs, treated with EHMT2i vs control (n=6, mean ± SEM, two-tailed paired t-test, *p<0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Scatter plots showing correlation of relative transposase-accessible chromatin using sequencing (ATAC-seq) tag counts for all peaks (A) or promoters only (B), from vehicle control (control) and EHMT2-inhibited (EHMT2i) tumor-propagating cells (TPCs) isolated from tumorspheres 5 days after inhibitor treatment. Overall 331 peaks and 57 peaks demonstrated increased and decreased accessibility, respectively (a) (n=3; FDR<0.05; fold change>1.5).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Bottom table displays how Tcf4 motifs rank in each of the cell lineage gene signatures.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig4-figsupp3-v2.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Tracks showing location of tcf4 motifs within promoters of alveolar type 2 (AT2)-lineage markers (red rectangles, Tcf4 motif locations).
+
 Since EHMT2 inhibition led to Axin2 upregulation whilst impairing TPC self-renewal and inducing an AT2-like cell fate, we assessed whether Wnt activation alone was sufficient to achieve these outcomes. Indeed, pharmacological activation of Wnt signaling using two doses of the GSK3β inhibitor CHIR99021 (Figure 4B and Figure 4C) impaired TPC stemness as illustrated by reduced tumorsphere self-renewal, consistent with EHMT2 inhibition (Figure 4B–F). Moreover, corresponding Wnt pathway activation and transcriptional activation of AT2 marker genes was observed at secondary passage (Figure 4E), with a concordant dose-dependent increase in SPC surface expression (Figure 4F). To better understand the link between Wnt pathway activation and selective increase of AT2 cell lineage gene expression, we performed an unbiased analysis of transcription factor binding motifs within the promoters of cell lineage signature genes (Treutlein et al., 2014). We found that the Tcf4 motif ranked eighth among 264 tested motifs for AT2 genes, while ranking much lower for other cell lineages, supporting the concept that AT2 cell fate is directly linked to a Wnt-driven signaling process (Figure 4—figure supplement 2). Moreover, 4 out of 7 Tcf4-containing AT2 genes are significantly induced in TPCs upon EHMT2 inhibition (Figure 4—figure supplement 3), further supporting the concept that the EHMT2 -inhibitor phenotype is Wnt-mediated. Notably, the Tcf4-containing AT2 genes that are induced upon EHMT2 inhibition display accessible chromatin configurations at their promoters irrespective of treatment (Figure 4—figure supplement 4), suggesting that these genes are poised to respond to Wnt-mediated signals and therefore would not require chromatin accessibility changes to enable gene expression (Zacharias et al., 2018).
 
-## EHMT2 restrains Tcf4 gene transcription by repressing chromatin bound β-catenin through RUVBL2
+### EHMT2 restrains Tcf4 gene transcription by repressing chromatin bound β-catenin through RUVBL2
 
 Given the convincing link between inhibition of EHMT2 activity and Wnt-mediated AT2 gene expression, we sought to elucidate the mechanistic basis for Tcf4-mediated gene transcription. Since we observed only a limited change in chromatin accessibility in response to EHMT2 inhibition, we reasoned that a non-histone substrate may be controlling this process. Previous reports have shown that EHMT2 -dependent methylation of the non-histone substrate RUVBL2 (REPTIN, TIP48, and TIP49b) can repress HIF1α-mediated transcription (Lee et al., 2010). RUVBL2 has also been shown to antagonize β-catenin activity (Bauer et al., 2000; Mao and Houry, 2017). We reasoned that the non-histone substrate, RUVBL2, might function to repress β-catenin activity through a EHMT2 -mediated mechanism. First, we confirmed the RUVBL2 and β-catenin interaction in a human NSCLC cell line (Figure 5A and B). Immunoprecipitation of RUVBL2 showed its ability to interact with β-catenin and HIF1-α proteins in hypoxic and normoxic conditions (Figure 5A), consistent with previously reported results (Lee et al., 2010). Reciprocally, immunoprecipitation of β-catenin showed an interaction with RUVBL2. However, the RUVBL2-β-catenin interaction was reduced exclusively in the EHMT2 -inhibited context (Figure 5B), indicating that the RUVBL2-β-catenin interaction requires EHMT2 activity, analogous to that of the RUVBL2-HIF-1α (Lee et al., 2010). To better visualize the impact of EHMT2 inhibition on the RUVBL2-β-catenin interaction with the relevant TPC subset, we performed proximity ligation assay (PLA). Indeed, PLA confirmed the RUVBL2-β-catenin interaction in TPCs and demonstrated a significant loss of signal in the presence of EHMT2 I, providing additional support for the requirement of EHMT2 activity to maintain the RUVBL2-β-catenin interaction (Figure 5C and D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig5-v2.jpg)
 
-**Figure 5.:** (A) Western blot demonstrating expression of HIF1-α and β-catenin in A549 lysates immunoprecipitated with RUVBL2 antibody. Cells were cultured under hypoxic conditions (1% O2) vs control (ambient O2). (B) Western blot demonstrating co-immunoprecipitation of RUVBL2 in A549 lysates co-immunoprecipitated with β-catenin antibody. Cells were treated with EHMT2 inhibitor vs control. (C) Proximity ligation assay in EHMT2i-treated vs vehicle-treated tumor-propagating cells (TPCs) (red, RUVBL2-β-catenin proximity ligation; blue, DAPI counterstain). Insets show a magnification of the red signal in nuclei of vehicle-treated TPCs (scale 10 μm). (D) Quantification of normalized nuclei with a positive signal (n=2; mean ± SEM, two-tailed paired t-test, **p<0.05). (E) Cytoplasmic (cyt), nuclear (nuc) and chromatin (chro) subcellular fractionation of EHMT2i-treated (as indicated) tumorspheres compared to control. Histone H4 and Tubulin are loading controls of chromatin and cytoplasmic fractions, respectively. (F) Chromatin immunoprecipitation using RUVBL2 antibody followed by qPCR (ChIP-qPCR) of areas flanking a Tcf4 binding sites in promoters of the alveolar type 2 (AT2) genes Etv5, Slc34a2 and Lamp3 (n=2 mean ± SEM; Etv5, Slc34a2, two-tailed paired t-test, *p<0.05). (G) Representative qPCR of Tcf4 binding motif within promoters of AT2 genes.Figure 5—source data 1.Figure 5E showing G9a (EHMT2) expression in subcellular fractionation of EHMT2i-treated tumorspheres compared to control.Figure 5—source data 2.Figure 5E showing TUBULIN expression in middle membrane (upper band) in subcellular fractionation of EHMT2i-treated tumorspheres compared to control.Figure 5—source data 3.Figure 5E showing histone H4 expression in the bottom membrane and beta catenin expression (upper membrane) in subcellular fractionation of EHMT2i-treated tumorspheres compared to control.
+**Figure 5.:** (A) Western blot demonstrating expression of HIF1-α and β-catenin in A549 lysates immunoprecipitated with RUVBL2 antibody. Cells were cultured under hypoxic conditions (1% O2) vs control (ambient O2). (B) Western blot demonstrating co-immunoprecipitation of RUVBL2 in A549 lysates co-immunoprecipitated with β-catenin antibody. Cells were treated with EHMT2 inhibitor vs control. (C) Proximity ligation assay in EHMT2i-treated vs vehicle-treated tumor-propagating cells (TPCs) (red, RUVBL2-β-catenin proximity ligation; blue, DAPI counterstain). Insets show a magnification of the red signal in nuclei of vehicle-treated TPCs (scale 10 μm). (D) Quantification of normalized nuclei with a positive signal (n=2; mean ± SEM, two-tailed paired t-test, **p<0.05). (E) Cytoplasmic (cyt), nuclear (nuc) and chromatin (chro) subcellular fractionation of EHMT2i-treated (as indicated) tumorspheres compared to control. Histone H4 and Tubulin are loading controls of chromatin and cytoplasmic fractions, respectively. (F) Chromatin immunoprecipitation using RUVBL2 antibody followed by qPCR (ChIP-qPCR) of areas flanking a Tcf4 binding sites in promoters of the alveolar type 2 (AT2) genes Etv5, Slc34a2 and Lamp3 (n=2 mean ± SEM; Etv5, Slc34a2, two-tailed paired t-test, *p<0.05). (G) Representative qPCR of Tcf4 binding motif within promoters of AT2 genes.
 
 In order to gain spatial insight into how EHMT2 inhibition impacts the relationship between EHMT2, RUVBL2, β-catenin and chromatin, we performed subcellular fractionation of tumorspheres. While EHMT2 inhibition showed loss of both EHMT2 and RUVBL2 proteins from the chromatin fraction, equal amounts of β-catenin remain chromatin-bound (Figure 5E). The sustained levels of chromatin-bound β-catenin following EHMT2 inhibition, suggests a critical role for EHMT2 -mediated RUVBL2 regulation that occurs at the chromatin (Figure 5E). Notably, the cytoplasmic fraction of controls confirms the presence of both β-catenin and RUVBL2, consistent with the cytoplasmic signal observed in the TPC PLA control (Figure 5C–E). Given that we established that RUVBL2 interacts with β-catenin and RUVBL2 abundance is reduced in the chromatin fraction when EHMT2 activity is inhibited, we tested whether RUVBL2 chromatin occupancy is changed specifically on Tcf4-containing AT2 genes in TPCs. We observed over 90% reduction in RUVBL2 promoter occupancy within Tcf4 elements of AT2 genes Slc34a2 and Etv5 (Figure 5F and G). Taken together these results indicate that EHMT2 directly controls Tcf4-containing AT2 gene expression through RUVBL2-mediated repression of β-catenin transcription.
 
-## EHMT2 controls Wnt signaling and differentiation within AT2 cells
+### EHMT2 controls Wnt signaling and differentiation within AT2 cells
 
 We next explored whether EHMT2 functions similarly to regulate β-catenin activity in normal AT2 cells. Pharmacological inhibition of EHMT2 in vivo for 6 days demonstrated a robust induction of Axin2 protein expression in primary distal alveolar cells using flow cytometry (Figure 6—figure supplement 1A,B). To assess the impact of EHMT2 inhibitor-mediated Wnt induction on AT2 cell fate, we derived primary AT2 cells from adult murine lung and determined the ability of AT2 progenitors to form alveospheres. Ex vivo culturing of primary AT2 cells leads to the formation of alveospheres with cells resembling both AT2 and AT1 cell fates (Barkauskas et al., 2013; Desai et al., 2014). In contrast to KP tumorspheres, inhibition of EHMT2 activity did not impair ex vivo alveosphere formation; however, the resulting spheres were significantly smaller relative to controls (Figure 6B). During alveosphere formation and expansion, emerging cells express transcriptional and surface markers consistent with an AT2 to AT1 cell differentiation (Barkauskas et al., 2013; Zacharias et al., 2018). By analyzing expression of surface markers indicative of these fates (Desai et al., 2014), we observed that EHMT2 inhibition significantly reduced the proportion of AT1 cells (SPC-PDPN+) from 67.2 to 24.4% (Figure 6—figure supplement 2). Interestingly, while the proportion of AT2 cells (SPC +PDPN-) remained unchanged, we observed a marked increase in double positive cells (SPC +PDPN + ) from 15 to 62%. Together these data indicate that EHMT2 is required for differentiation of the AT2 progenitor pool and for complete and proper AT1 differentiation. Consistent with our previous results in TPCs, EHMT2 inhibition resulted in enhanced Wnt signaling, reflected by increased Axin2 expression, as well as Lgr4 and Lgr5, two prominent Wnt signaling pathway components (de Lau et al., 2011; Figure 6D). The observed increase in Tcf4-containing AT2 marker gene expression supports increased Wnt-mediated activity in primary AT2 cells as in the TPC context (Figure 6E). In contrast to the TPC subset, we observed significant changes in the proportion of AT1 cells, consistent with the reduced plasticity observed in AT2 cells. These data demonstrate that EHMT2-mediated regulation of Wnt signaling and cell fate is also observable in untransformed, primary AT2 cells. To test whether EHMT2 loss is similarly required for the differentiation of AT2 cells in vivo, we deleted EHMT2 in the alveolar compartment by intratracheal administration of an adeno-associated virus encoding Cre (AAV9-Cre)(Nabhan et al., 2018). This approach allowed us to identify the EHMT2-targeted cells using a tdTomato reporter and confirm reduced EHMT2 expression from this EHMT2 -deleted population (Figure 6—figure supplement 3). TdT was expressed exclusively in the alveolar space and colocalized preferentially with SPC-expressing cells (Figure 6—figure supplement 4). To further assess how EHMT2 deletion impacts AT2 differentiation, we subsequently injured the lung using hyperoxia to promote alveolar repair (Figure 6—figure supplement 5). EHMT2 loss in the alveolar compartment showed a significant 2.5-fold increase in double positive (SPC + PDPN + ) cells, in just 4 days following injury consistent with our ex vivo alveosphere findings (Figure 6—figure supplement 6F). Studies evaluating the impact of EHMT2 loss at later stages of the tissue repair process will contribute further to our understanding of its role in epithelial cell fate decisions in the lung. All together these data demonstrate that EHMT2 functions as a cell intrinsic mechanism to directly control cell fate decisions in the context of primary, untransformed AT2 cells.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig6-v2.jpg)
+
+**Figure 6.:** (A) Scatter and contour plots demonstrating intracellular staining of AXIN2 in CD24 negative (CD24-) epithelial cells sorted from EHMT2-inhibited mice compared to control (n=6 for each group). The blue contour plot shows gating on the CD24- cell population. (B) Sphere number and size in alveospheres after treatment with EHMT2 inhibitor (EHMT2i) vs control. (n=10 ± SEM, two-tailed paired t-test, ***p<0.01). (C) Cell-lineage marker analysis of alveospheres, treated with either vehicle control or EHMT2i. Each panel shows a graph and a pie-chart depicting epithelial percentages of the AT1 marker podoplanin (PDPN) and the alveolar type 2 (AT2) marker surfactant protein C (SPC). (n=2 ± SEM), (D) Relative expression of Axin2, Lgr4 and Lgr5 transcripts (n=6–9 ± SEM, two-tailed paired t-test, **p<0.005, ***p<0.0001). (E) Relative expression of tcf4-containing AT2 transcript markers (n=6 ± SEM; two-tailed paired t-test, **p<0.05, ****p<0.0001). (F) Percentage of SPC +PDPN + double-positive cells out of SPC +in wildtype (control) (n=5) and Ehmt2fl/fl (n=5) groups, 4 days post hyperoxic (75% O2) injury. Quantitation represented as per-mouse, two-tailed paired t-test, *p<0.05 (G) Survival of KrasG12D;Trp53 (KP) (n=16), KrasG12D;Trp53;Ehmt2fl/f (KPE) (n=10), KrasG12D (K) (n=14) and KrasG12D;Ehmt2fl/f (KE) (n=9). Gehan-Breslow-Wilcoxon test, (*p<0.05).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Flow cytometry of AXIN2 following 48 hr of GSK3β inhibitor treatment in the RKO colorectal cell line (RKO +48 hr CHIR) compared to vehicle control (RKO) (Isotype depicted in grey; RKO in orange; CHIR-treated RKO in purple). (B) Calibration of an Axin2 antibody used in Figure 6A and S6A using immunohistochemistry of AXIN2 in APCfl/fl and APCfl/fl; ROSA26CreERT2 villi (n=4).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig6-figsupp2-v2.jpg)
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig6-figsupp3-v2.jpg)
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Dashed lines mark airways. Inset magnification shows colocalization of tdTomato-expressing cells (yellow) and SPC (Red).
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** WT and Ehmt2fl/fl mice were infected with AAV9-Cre. 5 days following infection, mice were exposed to hyperoxic conditions for 5 days and allowed to recover for 4 days.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** White arrows in the inset show double positive cells in Ehmt2fl/fl mice or single stained SPC or PDPN–only in WT mice, respectively.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/57648/elife-57648-fig6-figsupp7-v2.jpg)
+
+**Figure 6—figure supplement 7.:** (A) Graph shows cumulative tumor number detected by μ-CT scan at different time points following tumor initiation in KP mice (black) (n=16) and KPE mice (red) (n=10). (B) Graph shows tumor volume quantified by μ-CT scan at different time points following tumor initiation in KP mice (black) and KPE (red).
 
 The impaired regenerative capacity of AT2 cells observed by EHMT2 loss, together with the Wnt signaling effects impelled us to examine the outcome of EHMT2 deletion in Kras-dependent tumor initiation–an event that was previously shown to require cell fate alterations in other tissue contexts (Shibata et al., 2018). Additionally, genetic cooperativity between Ras and Wnt signaling pathways has been reported (Juan et al., 2014; Pacheco-Pinedo et al., 2011) and linked to cell fate effects. In this case, mutant beta catenin within Scgb1A1 + cells caused a distal cell fate change and enhanced tumor formation within Scgb1A1 + expressing cells (Pacheco-Pinedo et al., 2011). To assess the impact on tumor initiation we deleted EHMT2 using a conditional allele of the Ehmt2 gene (Ehmt2 fl/fl) together with conditional KrasG12D in the absence or presence of Trp53 loss (KPE: Kraslsl.G12D/wt: Trp53fl/fl; Ehmt2fl/fl and KE: Kraslsl.G12D/wt; Ehmt2fl/fl) KPE mice showed a striking reduction in tumor formation and significant decrease in tumor burden in comparison to KP mice, which translated to a significant increase in overall survival (Figure 6—figure supplement 7A,B). Of note, the observed increase in overall survival in both KPE and KE mice was independent of p53 status. These results demonstrate that EHMT2 is crucial for Kras-mediated tumor initiation and are consistent with the requirement of EHMT2 to enable AT2 and TPC regenerative capacity and cell fate.
 
@@ -96,100 +182,462 @@ Our work implicates EHMT2 as an important mediator of Wnt signals in order to ma
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell lines (Homo-sapiens)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>CRM-CCL-185</td>
+      <td>Short tandem repeat profiling, SNP fingerprinting, and mycoplasma testing were used for strict quality control.</td>
+    </tr>
+    <tr>
+      <td>Cell lines (Homo-sapiens)</td>
+      <td>MRC5</td>
+      <td>ATCC</td>
+      <td>CCL-171</td>
+      <td>Short tandem repeat profiling, SNP fingerprinting, and mycoplasma testing were used for strict quality control.</td>
+    </tr>
+    <tr>
+      <td>Cell lines (Homo-sapiens)</td>
+      <td>RKO</td>
+      <td>ATCC</td>
+      <td>CRL-2577</td>
+      <td>Short tandem repeat profiling, SNP fingerprinting, and mycoplasma testing were used for strict quality control.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rat monoclonal); CD45 biotin conjugated</td>
+      <td>BD Biosciences</td>
+      <td>553078; clone 20-F11</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rat monoclonal);Ter119 biotin conjugated</td>
+      <td>BD Biosciences</td>
+      <td>553672; clone Ter119</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(goat polyclonal); clone MEC13.3; CD31 biotin conjugated</td>
+      <td>BD Biosciences</td>
+      <td>553371</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rat monoclonal); CD24 PerCP-eFluor 710</td>
+      <td>eBioscience</td>
+      <td>46–0242</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rat monoclonal); EPCAM-FITC</td>
+      <td>Biolegend</td>
+      <td>118208; Clone G8.8</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rat monoclonal); ITGB4-PE</td>
+      <td>Biolegend</td>
+      <td>123602; clone 346–11 A</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(armenian hamster monoclonal); Notch1-APC</td>
+      <td>Biolegend</td>
+      <td>130613; clone HMN1-12</td>
+      <td>(1:80)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(armenian hamster monoclonal); Notch2-APC</td>
+      <td>Biolegend</td>
+      <td>130714; clone HMN2-35</td>
+      <td>(1:80)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(armenian hamster monoclonal); Notch3-APC</td>
+      <td>eBioescience</td>
+      <td>17-5763-82; clone HMN3-133</td>
+      <td>(1:80)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(armenian hamster monoclonal); Notch4-APC</td>
+      <td>Biolegend</td>
+      <td>128413; clone HMN4-14</td>
+      <td>(1:80)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rat monoclonal); Fc-Block</td>
+      <td>BD Biosciences</td>
+      <td>553141; clone 2.4 /G2</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal); CD74-BUV395</td>
+      <td>BD Biosciences</td>
+      <td>740274; clone ln-1</td>
+      <td>(1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rabbit polyclonal); Pro-SPC</td>
+      <td>Abcam</td>
+      <td>ab170699</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rabbit monoclonal); G9a</td>
+      <td>Abcam</td>
+      <td>ab185050; clone EPR18894</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal); Podoplanin</td>
+      <td>ThermoFisher</td>
+      <td>MA5-16113; clone 8.1.1</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rabbit polyclonal); Alexa Fluor 488</td>
+      <td>ThermoFisher</td>
+      <td>A-21206</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal); BrdU</td>
+      <td>NeoMarkers</td>
+      <td>MS-1058-PO; clone BRD.3</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal); Cleaved Caspase-3</td>
+      <td>Cell signaling Technology</td>
+      <td>9661</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rabbit polyclonal); CC10</td>
+      <td>SantaCruz Biotechnology</td>
+      <td>9772</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal); FoxJ1</td>
+      <td>eBioscience</td>
+      <td>14-9965-82; clone 2A5</td>
+      <td>(1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rat monoclonal); Rage</td>
+      <td>R&amp;D Systems</td>
+      <td>175410; clone MAB1179</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal); Actin</td>
+      <td>BD Biosciences</td>
+      <td>612656; clone C4</td>
+      <td>(1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rabbit polyclonal); Axin2</td>
+      <td>Abcam</td>
+      <td>109307; clone EPR2005</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal); H3K9me2</td>
+      <td>Abcam</td>
+      <td>Ab1220</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rabbit polyclonal); RUVBL2</td>
+      <td>Bethyl Laboratories</td>
+      <td>A302-536</td>
+      <td>Western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal); Beta-catenin</td>
+      <td>BD Biosciences</td>
+      <td>610153</td>
+      <td>Western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rabbit polyclonal); H3K9me3</td>
+      <td>Active Motif</td>
+      <td>39161</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal); Histone H3</td>
+      <td>Cell Signaling Technology</td>
+      <td>3638; clone 96C10</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rabbit polyclonal); RUVBL2</td>
+      <td>Bethyl Laboratories</td>
+      <td>A5302-537A</td>
+      <td>Immunoprecipitation</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rabbit polyclonal); Beta-catenin</td>
+      <td>ThermoFisher</td>
+      <td>71–2700</td>
+      <td>Immunoprecipitation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PE/Cy7 Streptavidin</td>
+      <td>Biolegend</td>
+      <td>405206</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>UNC0642</td>
+      <td>Biotechne</td>
+      <td>5132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR99021</td>
+      <td>Biotechne</td>
+      <td>4423</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Matrigel</td>
+      <td>Corning</td>
+      <td>356231</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Dynabeads Co-IP kit</td>
+      <td>ThermoFisher</td>
+      <td>14–321</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>PerfeCTa</td>
+      <td>QuantaBio</td>
+      <td>95146–005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>True-ChIP Kit</td>
+      <td>Diagenode</td>
+      <td>C01010140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SAGM media</td>
+      <td>Lonza</td>
+      <td>CC-3118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Collagenase/Dispase</td>
+      <td>Roche</td>
+      <td>COLLD-RO</td>
+      <td>2 ug/ml final concentration</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (bacteriophage P1)</td>
+      <td>Adeno CMV-Cre</td>
+      <td>Baylor College of Medicine</td>
+      <td>Adeno CMV-Cre</td>
+      <td>Concentration 1.2 × 107 plaque-forming units</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (bacteriophage P1)</td>
+      <td>Adeno-Flp-Ires-Cre</td>
+      <td>Baylor College of Medicine</td>
+      <td>Adeno-Flp-Ires-Cre</td>
+      <td>Concentration 1.2 × 107 plaque-forming units</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (bacteriophage P1)</td>
+      <td>AAV9-Cre</td>
+      <td>Virovek</td>
+      <td>AAV9-Cre</td>
+      <td>2E13 vg/ml dilution 1:60 in 60 ul vol.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bioruptor Pico</td>
+      <td>Diagenode</td>
+      <td>B01080010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Influx cell sorter</td>
+      <td>BD Biosciences</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flowjo</td>
+      <td>BD Biosciences</td>
+      <td>Flowjo.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Primer sequences included in Supplementary file 2.SPC: surfactant protein C._
+
+### Mice
 
 KrasLSL-G12D (Jackson et al., 2001), Trp53flox/flox (Jonkers et al., 2001), Trp53frt/frt (Lee et al., 2012), Rosa26LSL-tdTomato (Madisen et al., 2010) were licensed by Genentech Inc All animal studies were approved by the Institutional Animal Care and Use Committee at Genentech and adhere to the Guidelines for the Care and Use of Laboratory Animals (protocols 17–1217, 17–0107, and 18–1833 series). Tumors were induced in KP mice at 8–12 weeks of age using intranasal infection of AdCMV-Cre or Adeno-Flp-IRES-Cre (Baylor College of Medicine) at 1.2 × 107 plaque-forming units (PFU). In vivo treatment with EHMT2 inhibitor UNC0642 was performed by treating mice with either vehicle (60% PEG400/40% H20) or with UNC0642 10 mg/kg, IP, daily (60% PEG400/40% H20) for a duration of 6 days. Lungs were harvested and sorted for CD24- as previously described (Barkauskas et al., 2013; McQualter et al., 2010). For in vivo dosing experimentation of models, animals were randomized into treatment cohorts by tumor measurement, with equal numbers of male and female animals. The animals were dosed and monitored according to guidelines from the IACUC at Genentech, Inc Animals were censored for survival in an unblinded manner based on predetermined morbidity criteria.
 
-## Ehmt2 conditional knockout design
+### Ehmt2 conditional knockout design
 
 Ehmt2 expression vector was constructed by introducing a Frt-PGK-em7-NEO-Frt as a selection marker. LoxP sites were introduced into the 5’ and 3’ homology sequences flanking the targeted exons (genomic location 34908772–34912090 and 34916244–34918676, respectively). The loxP sites, flanked exon 25–27, constituting the SET catalytic domain of Ehmt2. 5’ and 3’ extra genomic regions were used to design PCR primers to validate the targeted deletion which generates a 2.2 kb fragment upon Cre recombinase administration. Conditional gene deletion in the adult was generated in the lung upon Adeno-Cre administration. Licensing and strain availability upon request from Genentech (Scheme 1).
 
 ![Scheme 1.](https://cdn.elifesciences.org/articles/57648/elife-57648-scheme1-v2.jpg)
 
-## Orthotopic transplantation studies
+### Orthotopic transplantation studies
 
 For tumor formation, 8–12 week-old recipient mice were intratracheally transplanted with 25,000–45,000 inducible shRNA-carrying primary KP tumor cells per mouse. Cells were resuspended in 60 µL MEM alpha (Gibco) before transplantation and monitored using micro CT as previously described (Zheng et al., 2013).
 
-## Cell isolation and tumorsphere preparation
+#### Cell isolation and tumorsphere preparation
 
 Pooled KP tumors from 3 to 6 mice per experiment, were extracted out of the lung and completely minced with a razor blade. The material was resuspended in DMEM-F12 media containing 10% fetal bovine serum (FBS), 1 × P/S and 2 µg/ml collagenase-dispase in 50 ml conical tubes and incubated for 1–1.5 hr in a 37°C incubator on a shaking platform. Digested material was sequentially filtered through 70 micron and 40 micron strainers, distributed into 15 ml conical tubes and centrifuged for 5 min at 500 g. Pellets were resuspended in hypotonic lysis buffer (15 mM NH4Cl, 10 mM KHCO3, and 0.1 mM EDTA) for 1–2 min, neutralized with DMEM-F12 and spun down on a 1 ml FBS cushion to remove cell debris. Final cell pellets were resuspended in PBS containing 10% FBS. For tumorsphere assays, KP tumor cells were mixed with Matrigel in tumorsphere media as previously described (Zheng et al., 2013). TPCs were sorted and analyzed using the influx machine (BD). Sorting was performed as previously described by Zheng et al., 2013 with the following modifications. Immune cell lineage content was excluded by sorting with the following antibodies: biotin-conjugated CD45 (BD, 553078, 30-F11,1:200), CD31(BD, 553371, MEC13.3, 1:200), Ter119 (BD, 553672, Ter119, 1:200), thereafter biotin-conjugated antibodies were detected with phycoerythrin (PE)/Cy7 streptavidin (Biolegend, 405206: 1:300), and subsequently stained for EpCAM +FITC (Biolegend, 118208, G8.8, 1:20) and TPC markers CD24 PerCP-eFluor 710 (eBioscience, 46–0242, M1/69: 1:300), ITGB4-PE (Biolegend, 123602, 346–11 A, 1:20) and Notch1 (Biolegend, 130613, HMN1-12, 1:80), Notch2 (Biolegend, 130714, HMN-2–35, 1:80), Notch3 (eBioescience, 17-5763-82, HMN3-133, 1:80), Notch4 (Biolegend, 128413, HMN4-14, 1:80). All anti-notch antibodies are allophycocyanin (APC) conjugated and used as a pool.
 
-## Transduction of primary KP tumor cells
+#### Transduction of primary KP tumor cells
 
 shRNAs containing the following Ehmt2 hairpins shG9.1: 5’ acagcaagtctgaagtcgaa 3’, shG9a.2: 5’ cactgtcaccgtcggcgatga 3’ were synthesized, cloned into a mirE backbone and then subsequently sub-cloned into pInducer-10 (Fellmann et al., 2013; Meerbrey et al., 2011) and transfected with packaging constructs into 293T cells using Lipofectamine 2000 (Thermo Fisher). Viral supernatants were collected 72 hr-post transfection and subsequently concentrated using ultracentrifuge at 25,000 RPM for 2 hr to generate high-titer virus. Freshly-sorted primary KP tumor cells were infected over-night using ultra-low attachment plates (corning) and subsequently transplanted or grown in Matrigel as tumorspheres.
 
-## TPC gating strategy
+#### TPC gating strategy
 
 Cells and doublet cells were excluded from the sort, respectively. EpCAM-Lineage scatter plot was used to gate on epithelial cells. Each TPC marker was gated in an individual scatter plot against a mock gate in the following sub-gating scheme: CD24 + cells gated from EpCAM + cells, ITGB4 + cells gated from CD24 + cells and NotchHI gated from ITGB4 + cells. Non-TPCs were classified as the ‘non-positive’ cells for each individual marker scheme and gated accordingly. All non-TPC were combined in one single tube.
 
-## Tumorsphere and TPC assays
+#### Tumorsphere and TPC assays
 
 For EHMT2 inhibition assays in KP tumorspheres, 10,000–20,000 KP primary tumor cells from 3 to 6 mice for each biological replicate were seeded in Matrigel for 4–5 days before treatment. Each biological replicate contained n=3–4 technical replicates. Tumorspheres were then treated with either vehicle or 2 µM of the EHMT2 inhibitor Unc0642 (Bio-techne) for an additional 5–7 days. For Wnt activation assays, established tumorspheres were treated with either 0.5 µM or 3 µM CHIR99021 (Tocris) for 5 days. For EHMT2 inhibition assays in TPCs, 5x106–10 × 106 KP primary tumor cells from 6 to 8 mice per experiment were seeded per 5 ml Matrigel plug for 4–5 days before treatment and treated as described above. Cells were then extracted out from Matrigel as single cell suspensions and sorted for the TPC cell subset. TPC isolation directly from treated or untreated cultured tumorspheres was performed using the influx sorter (BD).
 
-## Secondary sphere formation assays
+#### Secondary sphere formation assays
 
 For secondary sphere formation assays following EHMT2 inhibition or depletion, established KP tumorspheres were mechanically and enzymatically dissociated with 2 µg/ml collagenase/Dispase (Roche). To obtain single-cell suspensions, dissociated KP tumorspheres were further treated with Accutase (Corning) for 5–10 min, counted and re-seeded in Matrigel in 3–4 technical replicates per experiment. Matrigel, spheres were then counted using a 10×20 eyepiece containing 0.5×0.5 mm grid.
 
-## Alveolar and AT2-derived alveosphere preparations
+#### Alveolar and AT2-derived alveosphere preparations
 
 AT2 derived alveosphere assays were generated by isolating Epcam+/CD24- cells as previously described (Barkauskas et al., 2013; McQualter et al., 2010). Sorted cells were either intracellularly stained for Axin2 Abcam (109307, EPR2005, 1:100) or alternatively, resuspended in SAGM media (Lonza) and mixed in a 1:1 ratio with growth factor-reduced Matrigel (BD Biosciences). 100 μl of mixed cells/Matrigel suspension was placed in 24-well Transwell inserts (Falcon) and allowed to solidify. To allow alveospheres growth, 5×104 MRC5 human lung fibroblasts (ATCC CCL-171) were seeded in the bottom chamber supplied with 500 μl MTEC media. Media was changed every other day. EHMT2 inhibitor was replaced every 2–3 days.
 
-## Tumorsphere immunofluorescence (IF)
+### Tumorsphere immunofluorescence (IF)
 
 KP tumorspheres were either stained in Matrigel or were paraffin-embedded, sectioned and stained as previously described (Huber et al., 2015). For Matrigel preparations, tumorspheres were fixed in 4% PFA for 40 min, washed 3×5 min, permeabilized with 0.5% Triton X-100 for 30 min then blocked in 4% BSA for 30–60 min. Staining was performed in blocking buffer with 0.05% Triton X-100 and washes were performed with 0.1% Triton X-100. Tumorspheres were imaged using a Leica SPE confocal microscope. The following antibodies were used for IF: BrdU (NeoMarkers, MS-1058-PO, BRD.3 1:200), cleaved caspase-3 (Cell Signaling Technology, 9661 1:300) pro-SPC (Abcam, ab170699: 1:200), CC10 (SantaCruz, 9772, 1:200) FoxJ1 (eBioscience, 14-9965-82, 2A5), RAGE (R&D, 175410, MAB1179, 1:100).
 
-## BrdU incorporation in tumorspheres
+#### BrdU incorporation in tumorspheres
 
 BrdU labeling reagent (ThermoFisher) was incorporated for 3 hr. Tumorspheres were then processed according to IF procedures described in the previous section.
 
-## Quantification of tumorsphere IF images
+#### Quantification of tumorsphere IF images
 
 Images were taken using SP5 Confocal (Leica). Single projection images of 4–6 z-stack sections from at least 15–20 tumorspheres were constructed and analyzed in the Matlab software package (version R2016b by Mathworks, Natick, MA). Individual cell nuclei were segmented using regional intensity maxima and watershed thresholding on the DAPI channel, and then scored by the presence of relevant IF signal above a global intensity threshold in the area immediately surrounding each nucleus. For BrdU images, signal was calculated in each nucleus around intensity maxima. Quality control images were also created by superimposing the cell scoring mask on the raw image data.
 
-## IP and chromatin immunoprecipitation (ChIP)
+#### IP and chromatin immunoprecipitation (ChIP)
 
 For Co-IP experiments β-catenin and RUVBL2 were pulled-down from vehicle or EHMT2 inhibitor-treated A549, using Thermo Fisher (71–2700) or Bethyl (A5302-537A) antibodies, respectively, and utilizing the Dynabeads Co-IP kit (14-321) as indicated by protocol. To detect interacting proteins, membrane was blotted for β-catenin BD (610153) or RUVBL2 Bethyl (A302-536A). ChIP experiments were performed on tumor propagating cells (TPCs) sorted directly from vehicle or EHMT2 inhibitor treated-tumorspheres using the Diagenode True-ChIP protocol (C01010140) with the following modifications. Briefly, 50 K-100K cells were crosslinked with 1% formaldehyde for 8 min, chromatin was sheared to 100–500 bp fragments using the Bioruptor Pico sonicator for 3 cycles of 30 s on/off in 0.5 ml tubes (Diagenode). Quantitation of chromatin was performed using a qubit fluorimeter where at least 10 ng of chromatin were used per experiment. Pulldown was performed with 0.5 ug RUVBL2 antibody Bethyl (A302-537A) overnight then incubated with 30 min preblocked protein A conjugated Dynabeads. Immunoprecipitated material was then washed as indicated by protocol with an additional LiCl buffer wash (0.25 M LiCl, 1% IGEPAL, 1% deoxycholic acid, 1 mM EDTA, 10 mM Tris, pH 8.1). Samples corss-links where then reversed and then samples were preamplified using PerfeCTa, QuantaBio (95146–005). The precipitated DNA and input DNA were quantified by qPCR using specific primers flanking a TCF4 binding site in the promoters of the following genes, Etv5, Slc34a2, Lamp3.
 
-## Cell lineage marker analysis
+#### Cell lineage marker analysis
 
 Mouse cell lineage markers were obtained from Treutlein et al., 2014 using the following selection criteria: Pearson correlation ≥ 0.5, p-value (GBA, BH corrected)<0.05. This resulted in 30 mouse genes characteristic of AT1 cells, 28 genes for AT2 cells, 43 genes for Club cells, and 84 genes for ciliated cells. The biomaRt R package was used to map mouse genes to human orthologs, resulting in 28 human AT1 markers, 26 AT2 markers, 39 club markers, and 65 ciliated markers. For the assessment of lineage markers in human and mouse samples, expression data Z scores were first calculated for each gene across the 546 human LUAD tumors, and across the 10 mouse KP tumorsphere samples. Cell lineage signature scores were then calculated for human adenocarcinoma tumors as the average z-score expression of the human markers for each cell lineage and for mouse samples as the weighted average z-scored expression of the mouse markers with weights set to -log10(p-value). P-values were obtained from Table S4 (Treutlein et al., 2014).
 
-## Transmission Electron microscopy (TEM)
+#### Transmission Electron microscopy (TEM)
 
 Lung tumorspheres were first fixed in modified Karnovsky’s fixative and then post-fixed in freshly prepared 1% aqueous potassium ferrocyanide-osmium tetroxide (EM Sciences, Hatfield, PA), for 2 hr followed by overnight incubation in 0.5% Uranyl acetate at 40C. The samples were then dehydrated followed by propylene oxide (each step was for 15 min) and embedded in Eponate 12 (Ted Pella, Redding, CA). Ultrathin sections (80 nm) were cut with an Ultracut microtome (Leica), stained with 0.2% lead citrate and examined in a JEOL JEM-1400 TEM at 80kV. Digital imaged were captured with a GATAN Ultrascan 1000 CCD camera. For each biological replicate, 20 randomly selected cells in each treatment were manually scored and quantified for lamellar bodies. Sections were imaged at low and high magnifications, scale bars 2 µm and 0.5 µm, respectively.
 
-## qRT-PCR analysis
+#### qRT-PCR analysis
 
 RNA isolation for tumorspheres was performed using the RNAeasy Micro plus kit (Qiagen). Tumorspheres were dissociated as described. Samples were then measured using nanodrop and subsequently reverse transcribed using SuperScript III (ThermoFisher). For TPCs an additional step of pre-amplification was performed using TaqMan Preamp Master Mix (ThermoFisher). qRT-PCR was performed using fast advanced PCR Master Mix (ThermoFisher). Hprt and Actin were used as reference genes for all assays. All Taqman Assays used in the study are described in Supplementary file 2.
 
-## Tumorsphere subcellular fractionation
+### Tumorsphere subcellular fractionation
 
 Pooled primary KP tumorspheres (n=6) from EHMT2-treated and control Matrigel cultures were extracted, fractionated and processed to generate cytoplasmic, nuclear and chromatin fractions, using Subcellular Protein Fractionation Kit Thermo Fisher (78840), as defined by the protocol.
 
-## Antibody validation assays
+### Antibody validation assays
 
 Axin2 validation was conducted using both human RKO cells and intestinal sections of APCloxp/loxp vs APCfl/fl; ROSA26CreERT2. Briefly, RKO cells were GSK3-β (CHIR)-treated for 48 hr vs controls, harvested, 4% paraformaldehyde fixed for 10 min and subsequently washed and permeabilized with 0.25% Triton X-100. Cells were then blocked with 2.5% horse serum and stained for Axin2 Abcam (ab109307, EPR2005, 1:100) for flow cytometry. Intestinal epithelial sections were stained with Axin2 (ab109307, EPR2005, 1:25, AR; Citrate pH = 6).
 
-## Western blot for TPCs and tumorspheres
+#### Western blot for TPCs and tumorspheres
 
 TPCs and non-TPCs were sorted from 60 tumor-bearing mice to generate material for Western. Whole cell extracts were lysed in RIPA buffer (50 mM Tris-HCl, 150 mM NaCl, 1% Deoxycholate 0.1% SDS 1% Triton-X100) supplemented with Halt protease and phosphatase inhibitor cocktails (ThermoFisher). Lysates were quantified using pierce BCA protein assay kit (Pierce). To detect histones in tumorspheres, acid extraction method was used as previously described (Shechter et al., 2007). Antibodies used for Western blotting of TPCs and non-TPCs: G9a (Abcam, ab185050, EPR18894, 1:1000), Actin (BD, 612,656, C4, 1:20,000), was used as loading control. In tumorspheres; H3K9me2 (Abcam, Ab1220, 1:1000), H3K9me3 (Active Motif, 39,161 1:1000) histone H3 (cell signaling technology, 3638, 96C10, 1:1000), was used as loading control.
 
-## RNA-sequencing data for tumorspheres
+#### RNA-sequencing data for tumorspheres
 
 5 biological repetitions of primary tumorspheres were generated from pooled KP tumors from 6 to 10 mice per experiment. In each experiment matched KP tumorspheres were treated with either vehicle or G9a inhibitor (UNC0642). Total RNA was extracted using Qiagen RNeasy kit as per the manufacturer’s protocol and quality control of RNA samples was performed to determine their quantity and quality. The concentration of RNA samples was determined using NanoDrop 8000 (Thermo Scientific) and the integrity of RNA was determined by fragment analyzer (Advanced Analytical Technologies). 0.5–100 ng of total RNA was used as an input for library preparation using TruSeq RNA Sample Preparation Kit v2 (Illumina). Size of RNA-seq libraries was confirmed using 4200 TapeStation and high sensitivity D1K screen tape (Agilent Technologies). Library concentration was determined by a qPCR-based method using library quantification kit (KAPA). The libraries were multiplexed and then sequenced on Illumina HiSeq4000 (Illumina) to generate 30 M of single end 50 base pair reads.
 
 RNA sequencing data were analyzed with HTSeqGenie (Pau et al., 2012) in BioConductor (Huber et al., 2015) as follows: first, reads with low nucleotide qualities (70% of bases with quality <23) or rRNA and adapter contamination were removed. Reads were then aligned to the reference genome GRCm38 using GSNAP (Wu and Nacu, 2010). Alignments that were reported by GSNAP as ‘uniquely mapping’ were used for subsequent analysis. Gene expression levels were quantified as reads per kilobase of exon model per million mapped reads normalized by size factor (nRPKM), defined as number of reads aligning to a gene in a sample/(total number of uniquely mapped reads for that sample × gene length × size factor).
 
-## Assay for transposase-accessible chromatin using sequencing (ATAC-Seq)
+#### Assay for transposase-accessible chromatin using sequencing (ATAC-Seq)
 
 Cells were aliquoted into cryovials, frozen, and shipped to Epinomics, Menlo Park, CA. Cells were processed as previously described (Buenrostro et al., 2013). Paired-end reads were aligned to mouse reference genome GRCm38 using GSNAP (Wu and Nacu, 2010) version ‘2013-10-10’, allowing a maximum of two mismatches per read sequence (parameters: ‘-M 2 n 10 -B 2 -I 1–pairmax-dna=1000–terminal-threshold=1000–gmap-mode=none–clip-overlap’). Duplicate reads and reads aligning to locations in the mouse genome containing substantial sequence homology to the mitochondrial chromosome or to the ENCODE consortium blacklisted regions were omitted from downstream analyses. Remaining aligned reads were used to quantify chromatin accessibility according to the ENCODE pipeline standards with minor modifications as follows. Accessible genomic locations were identified by calling peaks with MACS 2.1.0 (Zhang et al., 2008) using insertion-centered pseudo-fragments (73 bp–community standard) generated on the basis of the start positions of the mapped reads and a width of 250 bp. Accessible peak locations were identified as described; briefly, we called peak significance (cutoff of P=1e-7) on a condition-level pooled sample containing all pseudo-fragments observed in all replicates within each condition. Peaks in the pooled sample, independently identified as significant (cutoff P=1e-5) in two or more of the constituent biological replicates were retained, using the union of all condition-level reproducible peaks to form the atlas. (https://www.encodeproject.org/atac-seq/). The atlas consisted of 184,032 peaks with a median width of 266 bp (ranging from 250 bp to 1531 bp). 20.4% of peaks were located in promoter regions, 32.6% in intergenic regions, and 43.3% in introns.
 
 Chromatin accessibility within each peak for each replicate was quantified as the number of pseudo-fragments overlapping a peak and normalized these estimates using the TMM method (Robinson and Oshlack, 2010). Differentially accessible peaks between control and EHMT2 -inhibited samples were identified using the framework of a linear model, accounting for TPC and non-TPC and implemented with the edgeR R package. Significant differences in chromatin accessibility levels within a peak between EHMT2 i-treated and control-treated samples was set to log2-fold change >1.5 and FDR <0.05. The fold-change of ATAC-seq peaks were used as input for gene set enrichment analysis using the Hallmark MsigDB gene set collection, v6.1 (Liberzon et al., 2015).The integrative genomics viewer (IGV) was used for visualization of ATAC-seq peaks near genes of interest (Robinson et al., 2011). All source code and sequencing data are available at https://github.com/anneleendaemen/G9a.CellIdentity.Lung; Pribluda, 2020.
 
-## Cancer genome atlas (TCGA) RNA-sequencing data analysis
+#### Cancer genome atlas (TCGA) RNA-sequencing data analysis
 
 RNA-sequencing (RNAseq) data for 546 LUAD tumors from TCGA (Cancer Genome Atlas Research, 2014) were obtained from the National Cancer Institute Genomic Data Commons (https://gdc.cancer.gov). We employed the same approach for RNAseq data processing and quantification, with human reference genome GRCh38.
 
-## Motif enrichment near lineage markers
+#### Motif enrichment near lineage markers
 
 For each cell lineage, function findMotifs.pl from HOMER 4.7 (Heinz et al., 2010) was used to identify enriched motifs near cell lineage markers from Treutlein et al., 2014. Motif enrichment was performed with promoter regions defined from –2000 bp to 500 bp relative to TSS, and with the background sets defined as the full genome. Locations of the TCF4 motif near cell lineage markers (from –2000 bp to 500 bp relative to TSS) were determined using findMotifs.pl from HOMER 4.7. The TCF4 motif file was obtained from the HomerMotifDB (http://homer.ucsd.edu/homer/motif/HomerMotifDB/homerResults.html).

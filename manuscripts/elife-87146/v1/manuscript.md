@@ -10,15 +10,15 @@
 ### Affiliations
 
 1. Department of Immunology and Infectious Diseases Harvard T. H. Chan School of Public Health Boston United States
-2. https://ror.org/04b6nzv94 Division of Infectious Diseases, Brigham and Women's Hospital Boston United States
+2. Division of Infectious Diseases, Brigham and Women's Hospital Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
 3. Department of Microbiology, Harvard Medical School Boston United States
-4. https://ror.org/006w34k90 Howard Hughes Medical Institute Boston United States
+4. Howard Hughes Medical Institute Boston United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
 ## Abstract
 
-Diverse chemical modifications fine-tune the function and metabolism of tRNA. Although tRNA modification is universal in all kingdoms of life, profiles of modifications, their functions, and physiological roles have not been elucidated in most organisms including the human pathogen, Mycobacterium tuberculosis ( Mtb ), the causative agent of tuberculosis. To identify physiologically important modifications, we surveyed the tRNA of Mtb , using tRNA sequencing (tRNA-seq) and genome-mining. Homology searches identified 23 candidate tRNA modifying enzymes that are predicted to create 16 tRNA modifications across all tRNA species. Reverse transcription-derived error signatures in tRNA-seq predicted the sites and presence of nine modifications. Several chemical treatments prior to tRNA-seq expanded the number of predictable modifications. Deletion of Mtb genes encoding two modifying enzymes, TruB and MnmA, eliminated their respective tRNA modifications, validating the presence of modified sites in tRNA species. Furthermore, the absence of mnmA attenuated Mtb growth in macrophages, suggesting that MnmA-dependent tRNA uridine sulfation contributes to Mtb intracellular growth. Our results lay the foundation for unveiling the roles of tRNA modifications in Mtb pathogenesis and developing new therapeutics against tuberculosis.
+Diverse chemical modifications fine-tune the function and metabolism of tRNA. Although tRNA modification is universal in all kingdoms of life, profiles of modifications, their functions, and physiological roles have not been elucidated in most organisms including the human pathogen, Mycobacterium tuberculosis (Mtb), the causative agent of tuberculosis. To identify physiologically important modifications, we surveyed the tRNA of Mtb, using tRNA sequencing (tRNA-seq) and genome-mining. Homology searches identified 23 candidate tRNA modifying enzymes that are predicted to create 16 tRNA modifications across all tRNA species. Reverse transcription-derived error signatures in tRNA-seq predicted the sites and presence of nine modifications. Several chemical treatments prior to tRNA-seq expanded the number of predictable modifications. Deletion of Mtb genes encoding two modifying enzymes, TruB and MnmA, eliminated their respective tRNA modifications, validating the presence of modified sites in tRNA species. Furthermore, the absence of mnmA attenuated Mtb growth in macrophages, suggesting that MnmA-dependent tRNA uridine sulfation contributes to Mtb intracellular growth. Our results lay the foundation for unveiling the roles of tRNA modifications in Mtb pathogenesis and developing new therapeutics against tuberculosis.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ Here, we conducted tRNA-seq in Mtb. We assigned modifications to many of the rev
 
 ## Results
 
-## In silico prediction of Mtb tRNA modifying enzymes
+### In silico prediction of Mtb tRNA modifying enzymes
 
 To predict tRNA modifications in Mtb, we used Basic Local Alignment Search Tool (BLAST) (Altschul et al., 1990) to identify homologs of all tRNA modification enzymes registered in Modomics in the Mtb genome (Boccaletto et al., 2022; Supplementary file 1). With a stringent threshold (E-value <1 × 10−10), 31 Mtb genes homologous to genes encoding known RNA modification enzymes were identified (Supplementary file 2). Twenty-three of these genes are predicted to synthesize 16 tRNA modifications in Mtb (Supplementary files 2 and 3), including miaA and miaB for 2-methylthio-6-isopentenyl-adenosine (ms2i6A), tsaD, tsaB, tsaE, and sua5 for N6-threonylcarbamoyladenosine (t6A), mnmA for 2-thiouridine (s2U), truB, truA, rluA, and pus9 for pseudouridine (Ψ), trm2 for 5-methyluridine (m5U), trmD for 1-methylguanosine (m1G), trmI for 1-methyladenosine (m1A), trmL for 2′-O-methylcytidine (Cm) or 2′-O-methyluridine (Um), trmB for 7-methylguanosine (m7G), two trmH for 2′-O-methylguanosine (Gm), trmR for 5-methoxyuridine (mo5U), trcM for 5-methylcytidine (m5C), dusB for dihydrouridine (D), tadA for inosine (I), and tilS for lysidine (k2C). While eight additional genes met the threshold for homology to modification enzymes, they exhibited greater similarity to a Glutamyl-tRNA synthase; Rv2992c, ribosome associated GTPases (Der; Rv1713 and Era; Rv2364c), molybdopterin biosynthesis proteins (MoeW; Rv2338c and MoeB2; Rv3116), thiosulfate sulfur transferases (CysA; Rv3117 and SseA; Rv3283) and a riboflavin biosynthesis protein (RibG; Rv1409), and likely do not correspond to tRNA modification enzymes (Supplementary file 2).
 
@@ -44,13 +44,21 @@ Several of the putative Mtb tRNA modifying enzymes are conserved across all thre
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig1-v1.jpg)
 
-**Figure 1.:** Mtb tRNA modifying enzyme homologs.Heatmap of log10 E-values from BLAST search results. BLAST searches were conducted against 120 manually picked organisms using Mtb tRNA modifying enzymes as queries. When one organism has multiple hits, the lowest log10(Eval) values among hits are shown. iTol (Letunic and Bork, 2021) was used to depict the results.Figure 1—source data 1.E-values from BLAST searching for the homologs of Mtb tRNA modifying enzymes in 120 organisms.
+**Figure 1.:** Heatmap of log10 E-values from BLAST search results. BLAST searches were conducted against 120 manually picked organisms using Mtb tRNA modifying enzymes as queries. When one organism has multiple hits, the lowest log10(Eval) values among hits are shown. iTol (Letunic and Bork, 2021) was used to depict the results.
 
 tRNA modifying enzymes predicted in Mtb were observed in mycobacteria species, including Mycolicibacterium smegmatis and Mycobacteroides abscessus (Figure 1), suggesting that tRNA modification patterns are similar among mycobacterium species.
 
-## Profiling Mtb tRNA modification sites by tRNA-seq
+### Profiling Mtb tRNA modification sites by tRNA-seq
 
 To begin profiling detectable Mtb tRNA modifications, we sequenced tRNAs isolated from wild-type Mtb strain H37Rv grown in 7H9 medium. In this protocol, tRNAs are first reversed transcribed to cDNA (Kimura et al., 2020). During cDNA synthesis, chemical modifications on tRNA nucleotides disrupt Watson–Crick base pairing and increase the frequency of reverse transcriptase errors, leading to incorporation of the incorrect nucleotide or early termination of cDNA synthesis (Kellner et al., 2010). These reverse transcription-derived ‘signatures’ typically correspond to modified sites (Zhang et al., 2022; Zheng et al., 2015) and are depicted in the heatmap in Figure 2.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig2-v1.jpg)
+
+**Figure 2.:** Heatmaps show misincorporation (A) and termination (B) frequencies at all positions across tRNAs (read 5′ to 3′). Predicted modifications are labeled based on similarity to known modifications in other organisms and the presence of the tRNA modifying enzyme homologs (Supplementary file 3). The positions with more than 10% misincorporation in Mtb but not in E. coli are depicted in white in A. Representative data of two independent experiments with similar results are shown. (C) M. tuberculosis tRNA modifications predicted in this study. Schematic tRNA secondary structure with sites of modifications identified either by the presence of modifying enzymes and/or tRNA sequencing (tRNA-seq). Modifications and tRNA species that are not observed in E. coli are shown in red. Modifications and positions that are predicted by both RT-derived signature and the presence of the homologs of tRNA modifying enzymes are shown in yellow (without chemical treatment) and green (with chemical treatment), whereas modifications that are only predicted by the presence of the homologs are shown in light blue. Genes reported to be essential in Mtb are shown in bold.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Schematic tRNA secondary structure with sites of modifications. Modifications and positions that are detected by RT-derived signature in yellow (without chemical treatment in Zhang et al., 2022) and green (with chemical treatment in this study), whereas modifications that are not detected by RT-derived signature are shown in light blue. Sites shown in yellow or green were not detected in all the listed tRNA species known to be modified. Genes reported to be essential in E. coli are shown in bold.
 
 Comparison of the reverse transcription-derived signatures observed in Mtb to E. coli, where tRNA modifications have been well characterized (Kimura et al., 2020) enables the prediction of the presence of common modifications, including ms2i6A, m1G, I, and k2C (Figure 2 and Figure 2—figure supplement 1). These predictions are strongly supported by the set of tRNA modification enzymes identified in the Mtb genome (Figure 1 and Supplementary file 3), including miaA and miaB (ms2i6A), trmD (m1G), tadA (I), and tilS (k2C). Some tRNA modifications were observed in Mtb but are not present in E. coli. In other actinobacteria, A58 and A59 are likely modified to m1A (Schwartz et al., 2018), and since trmI, the methylase that generates this modification is present in Mtb (Varshney et al., 2004), most Mtb tRNAs likely contain this modification as well. Nucleoside variation in the sequence of tRNA genes can account for some of the variations in modified sites between E. coli and Mtb. For example, in Mtb, termination signatures derived from G at position 37 were detected in tRNA-Arg2, -Gln1, and -Gln2, whereas this position in these tRNAs in E. coli are modified A, such as m2A and m6A, which are silent in tRNA-seq. Since m1G induces strong termination during reverse transcription, these positions are likely modified to m1G, as observed in the Bacillus subtilis tRNA-Arg2 gene position 37 G (Jühling et al., 2009).
 
@@ -58,29 +66,71 @@ tRNA samples were also treated with several chemical treatments prior to sequenc
 
 IAA is a thiol-reactive compound that covalently attaches carboxyamidomethyl to thiolated uridines via nucleophilic substitution (Herzog et al., 2017) and modified s4U is detected as C instead of U. In IAA-treated samples, positions 8 and 9, corresponding to s4U in many tRNA species, had high misincorporation frequencies, confirming that IAA treatment modifies s4U, leading to elevated misincorporation (Figure 3—figure supplement 1). Furthermore, we observed higher misincorporation and termination signals at the positions corresponding to other sulfur modification, s2C, s2U and their derivatives, such as position 32 in tRNA-Arg3, -Arg5, -Ser3, and Arg4, and 34 in tRNA-Glu, -Gln1, and -Lys (Figure 3 and Figure 3—figure supplement 1), revealing that IAA treatment facilitates the detection of not only s4U but also additional sulfur modifications, which are weakly detected without the IAA treatment.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig3-v1.jpg)
+
+**Figure 3.:** Heatmaps of the termination signals of E. coli tRNAs treated with (A) or without (B) IAA. Known modification sites, including sulfur modifications (s4U, s2C, s2U in white) are shown. (C) Termination frequency at s4U (n = 48), s2C (n = 5), and s2U (n = 3) sites of tRNAs treated with or without IAA. The experiment was performed once.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Heatmaps of the misincorporation signals of E. coli tRNAs treated with (A) or without (B) IAA. Known modification sites, including sulfur modifications (s4U, s2C, s2U in white) are shown. (C) Misincorporation frequency at s4U (n = 48), s2C (n = 5), and s2U (n = 3) sites of tRNAs treated with or without IAA.
+
 Next, we applied IAA treatment to Mtb tRNA-seq. IAA treatment increased termination signals from position 34 in tRNA-Glu1, -Gln1, and -Lys, which contain s2U derivatives in E. coli (Figure 4A). The 2-thiouridine modification is carried out by MnmA in E. coli (Kambampati and Lauhon, 2003), and a homolog, Rv3024c, of this enzyme was identified in the Mtb genome (Supplementary file 3; Kapopoulou et al., 2011). We used double-stranded DNA-based recombineering to delete Rv3024c in Mtb, yielding strain MtbΔmnmA (van Kessel and Hatfull, 2007). Sequencing of tRNA isolated from MtbΔmnmA with prior IAA treatment showed reduced termination signals from position 34 in tRNA-Glu1, -Gln1, and -Lys in treated samples, indicating that Rv3024c plays a critical role in the modification responsible for increased termination frequency derived from position 34 in these tRNAs (Figure 4B, C). Together, these observations strongly suggest that Rv3024c encodes an MnmA-like enzyme that sulfurates position 34 uridines in three Mtb tRNA isoacceptors.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig4-v1.jpg)
 
-**Figure 4.:** MtbΔmnmA with and without RNA alkylation.Heatmap of early termination frequencies across tRNA molecules and positions for wild-type (WT) (A) and MtbΔmnmA (B). Sulfur modification is shown in white. (C) Plot of termination frequencies at position 37 in WT Mtb and MtbΔmnmA for lysine_UUU, glutamate_UUG, and glutamine_UUC isoacceptors (n = 3). IAA: iodoacetamide. The experiment was performed once.Figure 4—source data 1.MtbΔmnmA with and without RNA alkylation.
+**Figure 4.:** Heatmap of early termination frequencies across tRNA molecules and positions for wild-type (WT) (A) and MtbΔmnmA (B). Sulfur modification is shown in white. (C) Plot of termination frequencies at position 37 in WT Mtb and MtbΔmnmA for lysine_UUU, glutamate_UUG, and glutamine_UUC isoacceptors (n = 3). IAA: iodoacetamide. The experiment was performed once.
 
 As shown previously (Carlile et al., 2014), CMC treatment increased both misincorporation and termination signatures at a subset of Ψs in E. coli tRNAs (Figure 5, and Figure 5—figure supplement 1 and Figure 5—figure supplement 2). In addition, CMC-treated samples showed increased frequencies of both misincorporation and termination at positions 16, 17, 20, and 20A corresponding to D, and m7G at position 46. Both modifications are known to undergo base elimination in mild alkali conditions (Marchand, 2021). Since these signals were also observed in the reaction condition in which CMC was not added, these signals are likely attributable to the alkali treatment that is common to both conditions.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig5-v1.jpg)
+
+**Figure 5.:** Heatmaps of the misincorporation signals of E. coli tRNAs treated with (A) or without (B) CMC. In both conditions, tRNAs are incubated in alkali condition. Known Ψ, D, and m7G sites are shown. Ψ is shown in white. (C) Misincorporation frequency at known Ψ (n = 80), D (n = 76), and m7G (n = 25) sites of tRNAs treated with CMC+/alkali+ or CMC−/alkali+, and tRNAs without treatment. The experiment was performed once.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Heatmaps of the termination signals of E. coli tRNAs treated with (A) or without (B) CMC. In both conditions, tRNAs are incubated at an alkali condition. Known Ψ (in white), D, and m7G sites are shown. (C) Termination frequency at known Ψ (n = 80), D (n = 75), and m7G (n = 25) sites of tRNAs treated with CMC+/alkali+ or CMC−/alkali+, and tRNAs without treatment.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Heatmaps of the termination frequencies at the uridine in E. coli tRNAs at positions 40 (A), 41 (B), and 57 (ψ55) (C). tRNA species where U at the indicated position is known to be ψ are shown in blue. Chemical treatment is shown in bottom.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Heatmaps showing termination frequencies at positions 18 (A), 21 (D, E), and 22 (F), and misincorporation frequencies at positions 16 (B), 17 (C), 20 (G), 20A (H), and 21 (I) to predict the presence of D. tRNAs bearing U at the indicated positions are shown. tRNA species bearing two consecutive D at positions are shown in red, whereas tRNA species containing single D at positions are shown in blue. D at a single position appears to induce misincorporation, and consecutive D likely induces termination of reverse transcription at the following position. The RT signatures are elevated in CMC− and CMC+ conditions, which include alkali treatment. Strain and chemical treatment are shown at the bottom.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig5-figsupp4-v1.jpg)
 
 Reverse transcription-derived signatures derived from alkali-treated D showed a distinctive pattern. With this treatment, when two Ds are at consecutive positions, for example, D16 and D17, termination signals were elevated at the following position, that is, position 18 (Figure 5—figure supplement 1, Figure 5—figure supplement 3, and Figure 5—figure supplement 4). Furthermore, alkali treatment also led to higher misincorporation frequencies at singlet Ds (Figure 5, Figure 5—figure supplement 3, and Figure 5—figure supplement 4). Thus, termination and misincorporation signatures enabled the prediction of known E. coli tRNA sites modified to D.
 
 CMC/alkali treatment facilitated the identification of additional modifications in Mtb tRNAs. Regardless of CMC treatment, alkali-treated samples showed increased misincorporation and termination frequencies derived from U located at positions 16, 17, 20, and 20A (Figure 6 and Figure 6—figure supplement 1). As observed in E. coli, termination signals at positions 18 and 21 likely correspond to consecutive Ds at positions 16 and 17, and 20 and 20A, respectively. Mtb Rv0823c is a homolog of dihydrouridylase DusB (Supplementary file 3), which likely accounts for the synthesis of D at these positions. Furthermore, alkali treatment increased the misincorporation frequencies at G at position 46 (Figure 6—figure supplement 2). Since Rv0208c is a homolog of TrmB, which synthesizes m7G at position 46 in E. coli, multiple Mtb tRNA species likely contain m7G at position 46 (Figure 6 and Figure 6—figure supplement 2).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig6-v1.jpg)
+
+**Figure 6.:** Heatmap of early termination frequencies across tRNA molecules and positions for WT (left) and MtbΔtruB (right). Termination signals derived from position 55 are shown in white. The experiment was performed once.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Heatmaps showing termination frequencies at positions 18 (A) and 21 (D), and misincorporation frequencies at positions 16 (B), 17 (C), 20 (E), and 20A (F) to predict the presence of D. tRNAs bearing U at the indicated positions are shown. tRNA species bearing two consecutive D are shown in red, whereas tRNA species containing single D are shown in blue. D at a single position appears to induce misincorporation, and consecutive D likely induces termination of reverse transcription at the following position. The RT-signatures are elevated in CMC− and CMC+ conditions, which include alkali treatment. Strain and chemical treatment are shown at the bottom.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Heatmaps showing termination frequencies at position 46 to predict the presence of m7G. tRNAs bearing G at position 46 are shown. tRNAs that have consistently high signals when tRNAs are treated alkali are shown in blue. Strain and chemical treatment are shown in bottom.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Heatmaps showing termination frequencies at positions 57 (A), 40 (B), and 41 (C) to assess the pseudouridylation states at positions 55 (A), 38 (B), and 39 (C). tRNAs bearing U at the indicated positions are shown and tRNAs that have higher signals when 1-cyclohexyl-(2-morpholinoethyl) carbodiimide (CMC) treated samples are shown in blue. Strain and chemical treatment are shown in bottom.
+
 CMC treatment also increased the termination frequency at several sites. Termination signatures derived from position 55, which is exclusively uridine in all tRNA species, increased in most tRNA species, suggesting that Mtb tRNAs contain pseudouridines at this position (Jühling et al., 2009). Rv2793c is an Mtb homolog of E. coli TruB and deletion of Rv2793c reduced the termination frequencies at this position in tRNAs isolated from MtbΔtruB (Figure 6 and Figure 6-figure supplement 3; van Kessel and Hatfull, 2007). Together, these observations suggest that Rv2793c encodes a TruB-like enzyme that modifies position 55 uridines to Ψ across tRNA species. Furthermore, the presence of a TruA homolog in Mtb (Rv3455c) suggests that in multiple tRNA species U at positions 38–40 can be modified to Ψ. Indeed, the termination signatures derived from positions 38 and 39 increased depending on CMC treatment, strongly suggesting that these positions are modified to Ψ (Figure 6 and Figure 6—figure supplement 3).
 
 In total, among 16 tRNA Mtb tRNA modifications predicted by the presence of tRNA modifying enzymes (Figure 1 and Supplementary file 3), 9 species of modifications were detected based on reverse-transcription-derived signatures (Figure 2C).
 
-## Growth of MtbΔmnmA is attenuated in a macrophage infection model
+### Growth of MtbΔmnmA is attenuated in a macrophage infection model
 
 To address whether Mtb tRNA modifications impact the pathogen’s growth in the host environment, we used the MtbTnDB transposon insertion sequencing (Tn-seq) database (Zhang et al., 2013; Jinich et al., 2021) to determine if transposon insertions in genes encoding tRNA modifying enzymes have been associated with in vivo growth defects. Transposon insertions in mnmA were reported to attenuate Mtb growth in mice infected with a library of Mtb transposon mutants, suggesting that mnmA facilitates Mtb growth in vivo. We found that the growth of WT and MtbΔmnmA were similar in 7H9 medium (Figure 7), suggesting the absence of s2U modification at position 34 does not impair Mtb growth in culture. In contrast, the MtbΔmnmA mutant was significantly impaired for growth in a macrophage infection model (Jinich et al., 2021; Figure 7). Defective growth of the MtbΔmnmA mutant was also observed in macrophages treated with all-trans retinoic acid (ATRA), which promotes macrophage control of Mtb infection (Babunovic et al., 2022). These observations strongly suggest that modification of U to s2U by MnmA facilitates Mtb growth in macrophages.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/87146/elife-87146-fig7-v1.jpg)
 
-**Figure 7.:** MtbΔmnmA is attenuated in a macrophage infection model.(A) Wild-type and MtbΔmnmA do not display growth differences in 7H9 medium. (B) Auto-luminescent wild-type and ΔmnmA Mtb strains were diluted to a multiplicity of infection of 2 bacteria per mouse bone marrow-derived macrophage with or without all-trans retinoic acid (ATRA). Survival was measured by luminescence and normalized to luminescence at time 0. Average values from three independent cultures (n=3) are shown with standard deviations.Figure 7—source data 1.
+**Figure 7.:** (A) Wild-type and MtbΔmnmA do not display growth differences in 7H9 medium. (B) Auto-luminescent wild-type and ΔmnmA Mtb strains were diluted to a multiplicity of infection of 2 bacteria per mouse bone marrow-derived macrophage with or without all-trans retinoic acid (ATRA). Survival was measured by luminescence and normalized to luminescence at time 0. Average values from three independent cultures (n=3) are shown with standard deviations.
 
 ## Discussion
 
@@ -104,68 +154,141 @@ Our findings serve as a valuable starting point for the research community to co
 
 ## Materials and methods
 
-## Bacterial strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mycobacterium tuberculosis)</td>
+      <td>mnmA</td>
+      <td>NA</td>
+      <td>Uniprot: Rv3024c; Refseq: NP_217540.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mycobacterium tuberculosis)</td>
+      <td>truB</td>
+      <td>NA</td>
+      <td>Uniprot: Rv2793c; Refseq: NP_217309.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mycobacterium tuberculosis)</td>
+      <td>H37Rv</td>
+      <td>PMID:9634230</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mycobacterium tuberculosis)</td>
+      <td>MtbΔmnmA::zeo</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mtb H37Rv strain lacking mnmA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mycobacterium tuberculosis)</td>
+      <td>MtbΔtruB::zeo</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mtb H37Rv strain lacking truB</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNit-RecET SacBR</td>
+      <td>NA</td>
+      <td></td>
+      <td>For homologous recombination</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Iodoacetamide (IAA)</td>
+      <td>Sigma</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>1-Cyclohexyl-(2-morpholinoethyl) carbodiimide (CMC)</td>
+      <td>Sigma</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and growth conditions
 
 Mtb strains were grown from frozen stocks into Middlebrook 7H9 medium supplemented with 0.2% glycerol, 0.05% Tween-80, and ADC (5 g/l bovine serum albumin, 2 g/l dextrose, 3 μg/ml catalase). Cultures were incubated at 37°C. Strains were grown to mid-log phase for all experiments (OD600 0.4–0.6). Growth was measured on a BioTek plate reader for in vitro growth by measuring OD600 every 24 hr.
 
-## Bacterial strain construction
+### Bacterial strain construction
 
 Supplementary file 4 depicts the strains, plasmids, primers, and recombinant DNA used for this study. Plasmids were built by restriction digest of a parental vector and inserts were prepared by Gibson assembly (Gibson et al., 2009). Plasmids were isolated from E. coli and confirmed via Sanger sequencing carried out by Genewiz, LLC (Massachusetts, USA).
 
-## Deletion mutants
+#### Deletion mutants
 
 The knockout strain Mtb∆mnmA::zeo (zeocin) was built using double-stranded recombineering in the parental Mtb strain H37Rv. A linear dsDNA fragment was constructed using stitch polymerase chain reaction (PCR) with the primers listed in Supplementary file 4 which consisted of a 500-bp region upstream of mnmA (Rv3024c), 500-bp downstream region, and a lox-zeo-lox fragment. This cassette was transformed into an H37Rv recombineering strain as described (Murphy et al., 2015) and plated on 7H10 + zeocin plates.
 
-## Homology search
+### Homology search
 
 Local BLAST was performed to search for Mtb homologs of tRNA modifying enzymes. First, the uniport IDs of tRNA modifying enzymes were obtained from Modomics (Boccaletto et al., 2022), and 12 proteins were manually added to the list (Cho et al., 2023; Kimura et al., 2020; Sakai et al., 2019; Kimura et al., 2022; Takakura et al., 2019; Sakai et al., 2016), including Q47319/TapT, P24188/TrhO, P76403/TrhP, O32034/TrhP1, O32035/TrhP2, P36566/CmoM, and Q87K36/TrcP, O34614/MnmM, Q8N5C7/DTWD1, Q8NBA8/DTWD2, O32036/TrmR, Q9KV41/AcpA. Uniprot ID provides a fasta file of tRNA modifying enzymes from the Uniprot database (UniProt, 2023). A blast database file was generated by ‘makeblastdb’ script using a fasta file of Mtb proteins (H37Rv strain) retrieved from NCBI. Then, the homologs of tRNA modifying enzymes were searched against the Mtb protein database using the fasta file of tRNA modifying enzymes as a query. Output format is defined by the following script: -outfmt ‘7 qacc sacc stitle score qcovs evalue pident’ -evalue 1e-10. The output file was modified by excel (Supplementary file 4).
 
-## Phylogenetic analysis of Mtb tRNA modifying enzyme homologs
+### Phylogenetic analysis of Mtb tRNA modifying enzyme homologs
 
 Local BLAST was conducted to search for homologs of Mtb tRNA modifying enzymes in 120 manually picked organisms across three domains of life. A custom database was generated by combining the fasta files of organisms’ proteins retrieved from NCBI. Homologs of 18 Mtb tRNA modifying enzymes were searched against the custom protein database using local blast. Log10 E-values were visualized by iTol (Letunic and Bork, 2021) with a phylogenetic tree generated by phyloT (PhyloT, 2015).
 
-## tRNA sequencing
+### tRNA sequencing
 
-## Extraction of total RNA
+#### Extraction of total RNA
 
 Strains were grown to mid-log phase with the appropriate antibiotics and inducing agents described above. RNA was collected at the same OD600 for each strain (between 0.4 and .6). Cells were left on ice for 20 min, then pelleted by centrifuging at 4000 rpm for 10 min at 4°C. Pellets were resuspended in 0.5–1 ml of TriZol (Life Technologies) and lysed using a BeadBug microtube homogenizer (Millipore Sigma). 200 μl of chloroform was added to each tube, after which samples obtained from Mtb strains were removed from biosafety level 3 precautions. Samples were centrifuged at 15,000 rpm for 15 min at 4°C and the aqueous layer was collected into a fresh tube. To the original tube, 250 μl of sodium acetate buffer (300 mM sodium acetate pH 5.2 and 10 mM ethylenediaminetetraacetic acid (EDTA) pH 8.0) was added, and samples were vortexed at 4°C for 5 min then centrifuged at 15,000 × g for 15 min at 4°C. The aqueous layer was added to the fresh sample-containing tubes. 400 μl chloroform was added, and tubes were briefly vortexed and then centrifuged at 15,000 rpm for 1 min at 4°C. The aqueous phase was collected into a fresh tube and RNA recovered by ethanol precipitation. RNA pellets were resuspended in 10 mM sodium acetate pH 5.2 and stored at −80°C until processed for sequencing. Total RNA samples were alkali treated prior to tRNA extraction to deacylate all tRNAs (1 hr at 37°C in 100 mM Tris–HCl pH 9.0).
 
-## Isolation of tRNA fraction
+#### Isolation of tRNA fraction
 
 1–2 μg of total RNA was run on a 10% TBE-UREA gel (Thermo Fisher Scientific) at 250 V for 1 hr. Gels were stained with SYBR Gold (Thermo Fisher Scientific), and tRNA was excised. Excised gels containing tRNA fractions were mashed in RNAse-free tubes, and 300 μl elution buffer (300 mM NaOAc pH 5.5, 1 mM EDTA pH 8.0, 0.10% sodium dodecyl sulfate) was added to each tube. Samples were shaken on a thermoshaker (Eppendorf) for 1–4 hr at 37°C and supernatant was collected using an Ultrafree filter column (Millipore Sigma). tRNA was recovered by isopropanol precipitation.
 
-## tRNA dephosphorylation
+#### tRNA dephosphorylation
 
 tRNA was dephosphorylated using QuickCIP (New England BioLabs) according to manufacturer instructions, and tRNA was collected by phenol–chloroform extraction followed by isopropanol precipitation.
 
-## IAA treatment
+#### IAA treatment
 
 IAA treatment was performed as described (Herzog et al., 2017). Briefly, 500 ng of total RNA is combined with 10 mM of IAA, 50 mM NaPO4 pH 8.0, and 50% dimethyl sulfoxide (DMSO) in a final volume of 50 μl. Reactions were incubated at 50°C for 15 min and quenched with dithiothreitol (DTT).
 
-## CMC treatment
+#### CMC treatment
 
 CMC treatment was carried out as described in ref Briefly, 2.5 μg tRNA fraction in 0.5 μl was mixed with 15 μl CMC-BEU buffer with or without CMC (0.34 M or 0 M CMC, 7 M urea, 4 mM EDTA, and 50 mM bicine pH 7.9) and incubated at 37°C for 20 min. Adding 100 μl CMC stop solution (0.3 M NaOAc pH 5.2 and 100 mM EDTA) quenched the reaction. RNA was desalted with PD-10 desalting column (Cytiva) and recovered by ethanol precipitation. RNA was dissolved in 40 μl of 50 mM sodium carbonate buffer (pH 10.4) and incubated at 37°C for 4 hr, followed by ethanol precipitation.
 
-## Adapter ligation
+#### Adapter ligation
 
 0.5 μL RNase inhibitor was added to 3.5 μl dephosphorylated tRNA (200–250 ng tRNA) and samples were boiled at 80°C for 2 min. Boiled tRNA was mixed with 12 μl PEG buffer mix (10 μl 50% PEG8000, 2 μl 10× buffer B0216S; New England Biolabs). 3 μl of 5′ adenylated linkers (Supplementary file 4) were added (33 pmol/μl) along with 1 μl T4 RNA ligase 2 truncated (New England BioLabs) and incubated at 25°C for 2.5 hr. Samples were recovered by isopropanol precipitation and run on a 10% TBE-Urea PAGE gel for 40 min at 250 V. Ligated products were recovered by gel excision as described above.
 
-## Reverse transcription
+#### Reverse transcription
 
 Identical quantities of samples with different adapter sequences were pooled for reverse transcription for a total of 200–250 ng tRNA. Reverse transcription was performed by combining 2.1 μl dephosphorylated tRNA with 100 mM Tris–HCl pH 7.5, 0.5 mM EDTA, 1.25 μM RT primer (Supplementary file 4), 450 mM NaCl, 5 mM MgCl2, 5 mM DTT, 500 nM TGIRT (InGex), and 15% PEG8000 in a final volume of 9 μl. Samples were incubated at 25°C for 30 min, after which 1 μl 10 mM dNTPs (New England BioLabs) were added and reactions incubated at 60°C for 1 hr. 1.15 μl NaOH was added, and samples were boiled for 15 min and run on a 10% TBE Urea PAGE gel at 250 V for 1 hr. Reverse transcription products were excised from gels and cDNA recovered by isopropanol precipitation. Linear single-stranded cDNA was circularized using CircLigase II (Lucigen) in accordance with manufacturer instructions.
 
-## PCR of tRNA libraries
+#### PCR of tRNA libraries
 
 PCR reactions were set up using HF Phusion according to the manufacturer’s instructions using a universal reverse primer (Supplementary file 4) and a different index primer for each pool of samples. PCR reactions were aliquoted into 4 tubes and collected after 6, 8, 10, and 12 cycles. Samples were run on a Native TBE PAGE gel (Thermo Fisher Scientific) at 180 V for 50 min, and amplified products were cut from the same cycle for each sequencing run. Samples were recovered by gel excision and isopropanol precipitation.
 
-## Sequencing
+#### Sequencing
 
 Sequencing was performed on a MiSeq instrument (Illumina) using 150 bp single end reads with a version 3, 150 cycle kit.
 
-## Analysis
+#### Analysis
 
 3′ linker sequences and two nucleotides at the 5′ end were trimmed using cutadapt and fastx-trimmer. Bowtie v1.2.2 was used with default settings to map reads to reference Mtb tRNA sequences retrieved from Mycobrowser (Kapopoulou et al., 2011; Supplementary file 5). Mpileup files were generated using samtools (samtools mpileup -I -A --ff 4 -x -B -q 0 -d 10000000). For analysis of termination frequencies, 5′ end termini of mapped reads were piled up using bedtools genomecov (option, -d -5 -ibam). The number of 5′ termini at each tRNA position was divided by the total number of mapped termini at that position plus all upstream (5′) positions.
 
-## Macrophage infection
+#### Macrophage infection
 
 Auto-luminescent wild-type and ΔmnmA Mtb strains grown to the same OD600 were pelleted by centrifugation and prepared in RPMI media by soft spinning as described (Saito et al., 2017). Briefly, cells were washed, pelleted, resuspended, and centrifuged at 121 × g, with the top half of the centrifuged supernatant used. Suspensions were diluted to a multiplicity of infection of 2 bacteria per mouse bone marrow-derived macrophage by determining the OD600. Macrophages were infected for 6 hr, followed by a phosphate-buffered saline wash and addition of RPMI with or without ATRA. ATRA promotes macrophage control of Mtb infection (Babunovic et al., 2022) and was used to assess strain survival in an increasingly restricted macrophage environment. Survival was measured by luminescence in a BioTek plate reader and normalized to luminescence reads at time 0.

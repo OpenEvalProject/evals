@@ -46,13 +46,89 @@ We use the regenerating limb to demonstrate that two click-it ready precursors c
 
 ## Results
 
-## Whole-mount, click-it based visualization of macromolecule synthesis
+### Whole-mount, click-it based visualization of macromolecule synthesis
 
 To visualize macromolecule synthesis, we injected click-it compatible monomer analogs (Table 1) intraperitonially 3 hr before sample collection. During this time, analogs metabolically incorporated into nascently synthesized macromolecules, resulting in in vivo labeling of macromolecule synthesis. Our group has found that collection of tissue after 3 hr provides sufficiently strong metabolic labeling of DNA synthesis (EdU), transcription (EU), translation (AHA), and protein glycosylation (GlcNAz). These labeled macromolecules contain either azide- or alkyne-modified monomers that can be detected with click-it compatible fluorescent molecules, enabling imaging of nascent macromolecules in whole-mount tissues with LSFM (Figure 1B–C). We show that our whole-mount method can be used at the organismal level to visualize the whole torso of a stage 52 axolotl larvae, where we observe proliferating cells in the developing limbs and hematopoiesis within the spleen (Figure 1B). To demonstrate the multiplexing capabilities of the approach, modified monomer analogs with disparate functional groups (EdU/AHA, 5-EU/AHA, EdU/GlcNAz, 5-EU/GlcNAz) were co-injected and visualized with LSFM (Figure 2A–D, Videos 1–3. For color blind accessible images, see Figure 2—figure supplement 1). whole-mount samples were comparable to 2D longitudinal tissue sections of the same stains (Figure 2I–L), showing that our method generates similar results in both whole-mount and tissue sections (Figure 2—figure supplement 2) with subcellular resolution (Figure 2—figure supplement 3). Furthermore, the number of EdU+ cells per blastema area in a single Z slice obtained by LSFM (EdU-AHA: 1954 cells/mm2, EdU-GlcNAz: 1458 cells/mm2) is similar to that of a tissue section obtained by confocal microscopy (EdU-AHA: 1272 cells/mm2, EdU-GlcNAz: 1349 cells/mm2). We finally demonstrate the specificity of GlcNAz incorporation by pretreating a GlcNAz-specific antibody on tissue sections collected from GlcNAz injected animals. By doing so, the subsequent click-it reaction was prevented due to the antibodies likely sterically hindering alkyne fluorophores from accessing the azide functional groups (Figure 2—figure supplement 4).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/60354/elife-60354-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Stitched and fused 3D reconstruction of 13 dpa blastemas stained for multiple macromolecules obtained by LSFM. (E–H) Single Z-plane from A-D that represents the entirety of the blastema. (I–L) Tissue section from identically treated limbs as A-H showing similar macromolecule staining patterns, indicating that the whole-mount staining method does not alter macromolecule synthesis staining patterns. Scale bars for panels A-D = 600 µm for each axis. Scale bars for panels E-L = 200 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60354/elife-60354-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–I) Color blind friendly images of DAPI, EdU, and AHA stained limbs. (J–R) Color blind friendly images of DAPI, 5-EU, and AHA stained limbs. (S–Aa) Color blind friendly images of DAPI, EdU, and GlcNAz stained limbs. (Ab-Aj) Color blind friendly images of DAPI, 5-EU, and GlcNAz stained limbs. A-C = 800 µm for each axis. Scale bars for panels J-L, S-U, Ab-Ad = 400 µm for each axis. Scale bars for panels D-I, M-R, V-Aa, Ae-Aj = 200 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60354/elife-60354-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Stitched and fused 3D reconstruction of 13 dpa blastemas stained for one macromolecule obtained by LSFM. (D–F) Single Z-plane from A-C that represents the entirety of the blastema. (G–I) Tissue section from identically treated limbs as A-F. (J–Aa) Grayscale images of A-I. Scale bars for panels A-C = 600 µm in each axis. Scale bars for panels D-I = 200 µm. Scale bars for grayscale images are identical to those in panels A-I.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/60354/elife-60354-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Cropped panel from Figure 2E. (B) Zoom in on panel A magnified 12.7×. (C) Zoom in on panel B magnified 6×. Scale bars = 100 µm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/60354/elife-60354-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A–D) Tissue section of a regenerating axolotl limb where the click-it cocktail for GlcNAz was applied before staining with GlcNAc antibodies (Ab). (E–H) Tissue section of a regenerating axolotl limb where GlcNAc antibodies were applied before treatment with the click-it cocktail for GlcNAz, demonstrating the specificity of the in vivo GlcNAz labeling. Scale bars = 100 µm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/60354/elife-60354-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A–B) Regenerating axolotl limb before (A) and after (B) clearing with 67% TDE. (C–D) Regenerating axolotl limb treated with 0.5% trypsin (C) and cleared in 67% TDE (D). (E–F) Single Z-plane of 13 dpa blastema imaged in PBS (E) or cleared and imaged in 67% TDE (F). Red indicates EdU staining whereas blue represents DAPI staining. Scale bars for panels E-F = 100 µm (G–H) Pixel intensity map of PBS imaged blastema (G) and 67% TDE imaged blastema (H). Scale bars are in units of microns.
+
+**Table 1.**
+ Monomer analogs used to demonstrate the whole-mount visualization method.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Macromolecule analog</th>
+      <th>Biological process</th>
+      <th>Click-it modification</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5-ethynyl-2′-deoxyuridine (EdU)</td>
+      <td>Thymidine</td>
+      <td>DNA synthesis</td>
+      <td>Alkyne</td>
+      <td>Salic and Mitchison, 2008</td>
+    </tr>
+    <tr>
+      <td>5-Ethynyl Uridine (5-EU)</td>
+      <td>Uracil</td>
+      <td>Transcription</td>
+      <td>Alkyne</td>
+      <td>Jao and Salic, 2008</td>
+    </tr>
+    <tr>
+      <td>L-Azidohomoalanine (AHA)</td>
+      <td>Methionine</td>
+      <td>Translation</td>
+      <td>Azide</td>
+      <td>Wang et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Azide-modified glucosamine (GlcNAz)</td>
+      <td>Glucoseamine</td>
+      <td>Protein glycosylation</td>
+      <td>Azide</td>
+      <td>Laughlin et al., 2006</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 1.](https://cdn.elifesciences.org/articles/60354/elife-60354-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/60354/elife-60354-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/60354/elife-60354-video3.mp4.jpg)
+
 An advantage of our method is that staining whole-mount tissues eliminates the need for sectioning, reducing the potential inconsistencies that arise as a result of the sectioning process (uneven tissue, different cutting planes, etc.). Additionally, traditional methods of obtaining 3D images of thick tissues with confocal microscopy are impractically slow when imaging hundreds of images in a single stack. LSFM allows for more rapid imaging of whole samples, requiring only minutes to image each sample. However, several considerations exist when imaging whole tissue in 3D with LSFM. Stain penetrates slower in whole 3D tissues compared to 10–20 µm thick tissue sections, requiring longer staining times. An advantage of our method is that the click reaction requires molecularly diminutive reagents that readily pass through cell and nuclear membranes, ensuring stain penetration in the center of dense tissues. Different refractive indices between disparate cellular components and the imaging media cause light to scatter, which can reduce the resolution and brightness of 3D images (Fadero and Maddox, 2017). To improve image resolution and light penetration, overnight refractive index matching with 67% 2,2’-thiodiethanol (TDE) can sufficiently clear axolotl limbs for imaging with LSFM. TDE was chosen due to its simplicity, cost, safety, and compatibility with common imaging modalities. This clearing method rapidly and effectively improves the signal-to-noise ratio of stained samples compared to imaging in PBS (Figure 2—figure supplement 5). Tissue morphology was minimally disturbed after clearing, with only mild shrinkage of the blastema epithelium observed. With careful attention to these challenges, our method provides a means to obtain high-quality 3D images from tissues 1 mm in depth in less than 10 min per sample with clear, consistent staining (Figure 2A–H, Figure 2—figure supplement 3).
 
-## 3D, multiscale quantitative analysis of the regenerating humerus
+### 3D, multiscale quantitative analysis of the regenerating humerus
 
 To demonstrate that our whole-mount click-it method can obtain quantifiable data on the organ, cellular, and molecular levels of organization, we applied our technique to the regenerating humerus. After regenerating for 35 d, axolotls with mid-humeral amputations were injected with EdU/AHA to identify cells within the humerus undergoing DNA synthesis (EdU) and protein translation (AHA). We observed EdU staining in chondrocytes distal to the amputation plane and AHA staining in the humerus perichondrium (Figure 3A). We outline a multiscale, quantitative pipeline that leverages the staining patterns of these macromolecules for analysis of 3D humerus morphology and 3D macromolecule synthesis. This workflow combines available plugins in Fiji (Schindelin et al., 2012) and scripts developed in Fiji and Matlab (The MathWorks, 2019) for the data analysis process (see supplementary information for a detailed description).
 
@@ -72,13 +148,21 @@ To demonstrate the quantitative molecular analysis of 3D macromolecule synthesi
 
 Taken together, these results demonstrate that our method can provide quantifiable data on the organ, cellular, and molecular levels of organization. This highlights the novelty of our method, as we have not found previous examples of multiscale analysis as outlined here. We foresee this multiscale, quantitative analysis having broad applications in the examination of dynamic cell processes in 3D, such as in cancer metabolism and mammalian neurogenesis or other fields where macromolecule synthesis is traditionally studied in tissue sections.
 
-## 3D, molecular analysis of biological perturbations
+### 3D, molecular analysis of biological perturbations
 
 To demonstrate that our method is sensitive enough to detect subtle changes in macromolecule synthesis in vivo, we quantified the difference in EdU intensity between limbs regenerating with and without a nerve supply. Blastema cells are thought to have a cell cycle length of 40–50 hr, with S phase approximately 30 hr (Tassava et al., 1987). In newts, it has been shown that amino acid, RNA, and DNA analog incorporation decreases approximately 30% by 24 hr after denervation (Singer and Caston, 1972). Based upon these estimates, we amputated both forelimbs at the mid-humerus and denervated the left limb at the brachial plexus 24 hr before collection. This timepoint for denervation was chosen because it should be sufficiently long to have an impact on DNA, RNA, and protein synthesis rates. At 6, 9, 12, 15, 18, and 25 d post-amputation (dpa) animals were pulsed with EdU for 3 hr before collection to label proliferating blastema cells (Figure 5A). We chose 3 hr of EdU incorporation to provide a snapshot of DNA synthesis in the 30 hr total S phase of blastema cells. LSFM was used to image samples (Figure 5B), ensuring pixel resolution was consistent between samples. We quantified DNA synthesis in denervated limbs compared to innervated limbs by creating a 175 × 175 × 175 µm cube 250 µm from the distal most tip of the blastema (Figure 6A). The size and location of the quantification cube was chosen to maximize the number of EdU+ mesenchymal cells and to exclude any epithelial cells. Although we limited the cube to the size of the smallest blastema, these parameters can be customized depending on the size of the blastemas. For this study, we estimate 50–150 blastema cells are found within the cube. From these results, we observed a marked decrease in blastema EdU incorporation due to denervation at 9, 12, and 15dpa (Figure 6B, Figure 6—figure supplement 1), demonstrating that our whole-mount staining approach is capable of detecting changes in macromolecule synthesis after biological perturbations. One potential limitation of our method in the blastema is the inability to perform single cell segmentation. This is due to the density and abundance of cells within the blastema. We predict that higher magnification imaging and deep learning segmentation techniques may overcome this limitation but will significantly increase imaging time and file size. For comparison, we have included estimates of imaging time and file sizes for confocal microscopy with a 20X objective and LSFM with a 5× objective (Supplementary file 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/60354/elife-60354-fig5-v2.jpg)
 
 **Figure 5.:** (A) Schematic of experimental design used to obtain samples from B-O. (B–O) Time course of regeneration in innervated and 24 hr denervated limbs at 0, 6, 9, 12, 15, 18, and 25 dpa. Scale bars for panels B-O = 600 µm for each axis.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60354/elife-60354-fig6-v2.jpg)
+
+**Figure 6.:** (A) A cube with sides of 175 µm was cropped along the proximodistal axis 250 µm from the distal tip of each blastema. P = proximal, D = distal. (B) Violin plots illustrate the pixel intensity of the innervated vs denervated blastema cubes. Comparison of mean intensity values (marked with a cross) of the same animal confirms that innervated blastemas have faster DNA synthesis rates than their denervated counterparts.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60354/elife-60354-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Histograms depicting EdU pixel intensity from innervated and denervated limbs. Data are the same as in Figure 6B.
 
 ## Discussion
 
@@ -88,34 +172,135 @@ We foresee our method being used to similarly readdress other classical question
 
 ## Materials and methods
 
-## Animal procedures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Ambystoma mexicanum)</td>
+      <td>d/d axolotl</td>
+      <td>Ambystoma genetic stock center</td>
+      <td>RRID:AGSC_101L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>5-Ethynyl-2’-deoxyuridine (EdU)</td>
+      <td>clickchemistrytools.com</td>
+      <td>Cat# 1149</td>
+      <td>Monomer analog</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>5-Ethynyl Uridine (5-EU)</td>
+      <td>clickchemistrytools.com</td>
+      <td>Cat# 1261</td>
+      <td>Monomer analog</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>L-Azidohomoalanine (AHA)</td>
+      <td>clickchemistrytools.com</td>
+      <td>Cat# 1066</td>
+      <td>Monomer analog</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>N-azidoacetylglucosamine-tetraacylated (Ac4GlcNAz)</td>
+      <td>clickchemistrytools.com</td>
+      <td>Cat# 1085</td>
+      <td>Monomer analog</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>AFDye 488 Azide</td>
+      <td>clickchemistrytools.com</td>
+      <td>Cat# 1275</td>
+      <td>Fluorescent azide</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>AFDye 594 Azide</td>
+      <td>clickchemistrytools.com</td>
+      <td>Cat# 1295</td>
+      <td>Fluorescent azide</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>AFDye 594 Alkyne</td>
+      <td>clickchemistrytools.com</td>
+      <td>Cat# 1297</td>
+      <td>Fluorescent alkyne</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,2′-Thiodiethanol (TDE)</td>
+      <td>Sigma</td>
+      <td>Cat# 166782</td>
+      <td>Clearing agent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L(+)-Ascorbic acid sodium salt</td>
+      <td>Thermo</td>
+      <td>Cat# AC352680050</td>
+      <td>Click-it cocktail component</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Copper(II) sulfate pentahydrate, 98+%</td>
+      <td>Thermo</td>
+      <td>Cat# AC423615000</td>
+      <td>Click-it cocktail component</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SlowFade Gold Antifade Mountant</td>
+      <td>Thermo</td>
+      <td>Cat# S36936</td>
+      <td>Mountant</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal procedures
 
 Axolotls were either bred in captivity at Northeastern University or purchased from the Ambystoma Genetic Stock Center at the University of Kentucky. Experiments were performed in accordance with the Northeastern University Institutional Animal Care and Use Committee. Animals were grown to 4–6 cm (Mean 5.3 cm, SD 0.36) and 1–1.5 g (Mean 1.3 g, SD 0.19 g) for use in all studies. For all experiments, animals were anesthetized by treatment of 0.01% benzocaine until visually immobilized. Limbs were amputated either at the distal end of the zeugopod or midway through the stylopod, and bones were trimmed below the amputation plane to allow for uniform growth. At the date of collection, animals were reanesthetized and injected with either 5-ethynyl-2′-deoxyuridine (EdU) to identify proliferating cells (8.0 µg/g animal), 5-Ethynyl Uridine (5-EU) to label RNA (270.0 µg/g animal), L-Azidohomoalanine (AHA) to label protein (180.59 µg/g animal), or N-azidoacetylglucosamine-tetraacylated (GlcNAz) to label glycosylated proteins (430 µg/g animal) alone or simultaneously in the following combinations: EdU/AHA, EdU/GlcNAz, 5-EU/AHA, 5-EU/GlcNAz (Table 1). All monomer analogs were purchased from www.clickchemistrytools.com and resuspended in DMSO at the following concentrations: EdU- 300 mM, 5-EU- 100 mM, AHA- 100 mM, GlcNAz- 100 mM. Stocks were further diluted in 1× phosphate buffered saline (PBS) for injection. After 3hr of analog incorporation, limbs were collected from the upper stylopod and fixed in 4% paraformaldehyde (PFA) (diluted in 1× PBS) at 4°C overnight. If limbs were denervated, the nerve supply was severed at the brachial plexus 24 hr before tissue collection.
 
-## Whole-mount click-it protocol
+### Whole-mount click-it protocol
 
 Following fixation in 4% PFA, samples were washed three times with 1X PBS at room temperature (~23°C) for 5 min. Samples were dehydrated in an increasing methanol series at room temperature starting with 25% methanol (diluted in 1× PBS), 50% methanol, 75% methanol, and 100% methanol for 5 min at each step. Samples could then be stored in 100% methanol indefinitely at −20°C. For staining, samples were rehydrated in a decreasing methanol series starting with 75% methanol (diluted in 1× PBS), 50% methanol, 25% methanol, and finally placed in 100% 1× PBS for 5 min at each step. Samples were then washed three times with 1× PBST (1× PBS with 0.1% Triton) for 5 min at room temperature. To aid in clearing, samples were washed in 0.5% trypsin (diluted in 1× PBS) for 30–90 min on a rocker at room temperature, or until the sample appeared translucent. Samples were washed three times at room temperature for 5 min with deionized water, then washed in 100% acetone for 20 min at −20°C and washed with deionized water again for 10 min. Samples were washed in 1× PBST three times at room temperature for 5 min before applying click-it cocktail for overnight at room temperature. The click-it cocktail was made in 500 µl of 1× TRIS buffered saline as follows: 50 µL 1M sodium ascorbate (100 mM final), 20 µL 100 mM CuSO4 (4 mM final), and 2 µL 500 µM azide- or alkyne-modified Alexa Flour (2 µM final), combined in order as listed. After the first round of staining, samples were washed at room temperature six times for 30 min with rocking. For double-labelling, samples were again placed in the click-it cocktail with a different fluorescent dye to stain for the second analog at room temperature overnight. Both rounds of staining were conducted in the dark to prevent photodegradation of fluorescent molecules. For staining with DAPI, samples were washed three times for 5 min with 1× PBS, then placed in 2.86 µM DAPI for 4 d at room temperature. Samples were washed three times for 20 min with 1× PBS and left in 1× PBS at 4°C for short-term storage before imaging with LSFM. whole-mount samples were cleared with 67% TDE (diluted in 1× PBS) overnight at room temperature in the dark.
 
-## Tissue section click-it protocol
+### Tissue section click-it protocol
 
 Following fixation in 4% PFA, samples were washed three times in 1× PBS each for 5 min, and cryoprotected in 30% sucrose on a rocker until the tissue fully sank. Samples were removed form sucrose and briefly washed in optimal cutting temperature (OCT) compound before mounting in OCT compound and frozen at −80°C. A cryostat was used to obtain 10 µm sections, and slides were baked at 65°C for 15 min. Slides were then washed with water for 30 min at room temperature to remove residual OCT. Slides were washed once with 1× PBS for 5 min at room temperature. The click-it cocktail (same as above) was applied to the slides and incubated at room temperature in the dark for 30 min. If staining for a second macromolecule, slides were washed five times for 5 min with 1× PBS at room temperature. The samples were then stained for 30 min at room temperature in the dark using the above click-it cocktail with a different a fluorophore dye. Following the final click-it reaction, slides were washed once with 1× PBS at room temperature for 5 min, then stained with 2.86 µM DAPI for 5 min at room temperature. Slides were washed again with 1× PBS for 5 min at room temperature and water for 5 min at room temperature and mounted with SlowFade Gold Antifade Mountant. Slides were imaged using a Zeiss LSM800 confocal microscope.
 
-## Light sheet microscopy
+### Light sheet microscopy
 
 All 3D images were acquired using a Zeiss light sheet Z.1 microscope paired with Zen software. Unless otherwise indicated, samples were cleared and imaged in 67% TDE. Post-processing for visualization purposes was performed with Arivis Vision4D v3.1.4 on a workstation with a 64-bit Windows Embedded Standard operating system, and an Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40 GhZ (two processors), 128 GB RAM, and NVIDIA Quadro K2200 GPU. Sub-volumes were stitched together with the Tile Sorter in Arivis, using the manual projection option. Volume fusion was performed through automatic landmark registration of manually selected points for alignment. For visualization, background intensity was corrected using the automatic functionality.
 
-## Data analysis
+### Data analysis
 
 All data were processed on desktop computers with the aid of Fiji (Schindelin et al., 2012) and Matlab (The MathWorks, 2019). The custom Fiji scripts and Matlab codes used are available in the supplementary material. We performed all analyses on unprocessed. czi files acquired directly from the light sheet microscope.
 
-## Organ level
+#### Organ level
 
 The goal of the organ level analysis was to determine gross morphology of the organ, such as area, principal axes, and maximum diameters in said axes for each cross section. Critical to this step is alignment of the images to a standard defined axis and reslicing in the transverse direction (perpendicular to the long axis of the humerus). The image stack of a regenerating axolotl elbow was imported into Fiji and aligned along the proximodistal axis of the humerus (Figure 3A). Morphological segmentation of the humerus was performed semi-automatically with the Segmentation Editor plugin (Figure 3B). The segmented surface was then exported from Fiji as a mesh via an. stl file using 3D Viewer (Pietzsch et al., 2015). Volumetric analysis was performed in Fiji by reslicing the aligned mask (Figure 3B) to obtain a stack of cross-sections perpendicular to the proximodistal axis, and then quantified the shape and volume with the Slice Geometry option in the BoneJ (Doube et al., 2010) Fiji plugin. Slice Geometry calculates cross-sectional geometric properties of shapes, including area, second moment of area around the major and minor axes, and maximum chord length from these major and minor axes.
 
-## Cellular level
+#### Cellular level
 
 The goal of the cellular level analysis was to determine the number of proliferating cells (EdU+) as a function of proximodistal position along the humerus, as well as average size, shape, and orientation. The aligned image stack (Figure 3A) was cropped using the morphological segmentation (Figure 3B) as a mask with the aid of the Image Calculator in Fiji. Based on the EdU staining (Figure 3C), we segmented the nuclei of the proliferating cells with Trainable Weka Segmentation 3D (Arganda-Carreras et al., 2017). We used a combination of filters available in Fiji before and after training the algorithm to improve segmentation results. Filters applied include the 3D Edge and Symmetry, Background Subtraction, 3D Fill Holes, Gaussian Blur 3D, and 3D Watershed Split. A detailed description of the sequence and parameters used is available in the supplementary materials. The 3D Objects Counter then provided a list of identified cells as well as their volume and position, among other information. In addition, the surfaces of the segmented cell nuclei were exported and processed in MeshLab, similarly to the process followed with the organ segmentation, to be visualized in Matlab (Figure 3E). The centroid coordinates and corresponding object volumes identified in Fiji were imported into Matlab for further processing and plotting. We computed the number of cell centroids within 50 μm thick slices perpendicular to the proximodistal axis to obtain a density-like measure of proliferating cells. Slice thickness was selected as slightly larger than the average cell diameter to ensure cells were not sampled across more than two slices.
 
-## Molecular level
+#### Molecular level
 
 The goal of the molecular level analysis was to determine molecular activity, characterized by fluorescent signal, which in our study represented DNA replication (EdU). The aligned and cropped image stack used as a starting point of the cellular-level analysis (Figure 3C) was also analyzed at the molecular level. We resliced the image stack along the proximodistal axis in the organ under study (Figure 3F). The histogram and pixel intensity statistics were listed for each slice via the getRawstatistics function. These allow for further quantification of the fluorescent signal in Matlab, for example, we calculated the mean intensity of each plane along the proximodistal axis and the histogram of the whole organ. For the example showing nerve-dependent regeneration in axolotl blastemas (Figure 6A), we compared overall pixel intensity of the left (denervated) and right (control, innervated) forelimbs of the same animal. To ensure full repeatability of our data analysis, we selected the same cubic volume in all blastemas processed: a cube with 175 μm sides, centered along the proximal-distal axis and at a distance of 250 μm from the distal tip (Figure 6A). The cube size was adjusted to maximize the cube volume for all blastemas processed, while ensuring that the entire cube was contained within the blastema. Histograms of each cubic volume and the ratio between the innervated and denervated limb of the same animal were computed and plotted with Matlab (Figure 6B) to quantify the changes in proliferation in innervated versus denervated limbs at different stages of regeneration. All scripts for blastema cube quantification are provided in the supplementary materials.

@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0153tk833 Center for Public Health Genomics at The University of Virginia School of Medicine Charlottesville United States
+1. Center for Public Health Genomics at The University of Virginia School of Medicine Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
 
 † Corresponding author
 

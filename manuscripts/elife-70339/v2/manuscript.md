@@ -31,37 +31,166 @@ To have a better overview of the accumulation of LOH events over time in a popul
 
 ## Results
 
-## Setup and propagation of MA lines
+### Setup and propagation of MA lines
 
 To characterize the genome-wide landscape and dynamics of LOH accumulation, we generated 180 MA lines using nine different heterozygous S. cerevisiae strains (Table 1). The diploids were obtained by crossing haploid derivates of natural S. cerevisiae isolates from various ecological (e.g. tree, wine, and fruit) and geographical origins (Peter et al., 2018) (e.g. Africa, China, and Europe) (Supplementary file 1). These hybrids were designed to lead to a heterozygosity level ranging from 0.1% to 1%, covering a large genetic diversity of the S. cerevisiae species. In addition, the isolates were selected in order to have uniformly distributed heterozygous sites throughout the genome with a single nucleotide polymorphism (SNP) density ranging from 0.8 to 10 SNPs per kb (Figure 1—figure supplement 1). These nine diploids were designated as the ancestors, and 20 replicate lines were isolated from each of them to set up an MA experiment. The replicate lines were propagated purely vegetatively and subjected to single-cell bottlenecks every 48 hr for at least 75 bottlenecks on rich media (see Materials and methods). Selection is minimal, as the experiment was designed to make drift by far the main cause of genomic changes (Halligan and Keightley, 2009). At the end of the experiment, the genome of the 169 surviving lines was completely sequenced using a short-read Illumina strategy (see Materials and methods).
 
+**Table 1.**
+ Hybrid mutation accumulation (MA) lines.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Hybrid</th>
+      <th>Cross*</th>
+      <th>Het positions</th>
+      <th>No. of sequenced lines</th>
+      <th>No. of bottlenecks</th>
+      <th>Total no. of divisions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H1</td>
+      <td>ABS × BKL</td>
+      <td>9972</td>
+      <td>20</td>
+      <td>100</td>
+      <td>2446</td>
+    </tr>
+    <tr>
+      <td>H2</td>
+      <td>ABP × BFQ</td>
+      <td>18789</td>
+      <td>12</td>
+      <td>75</td>
+      <td>1842</td>
+    </tr>
+    <tr>
+      <td>H3</td>
+      <td>BAP × BAN</td>
+      <td>20875</td>
+      <td>20</td>
+      <td>75</td>
+      <td>1863</td>
+    </tr>
+    <tr>
+      <td>H4</td>
+      <td>BTI × ABA</td>
+      <td>49412</td>
+      <td>20</td>
+      <td>75</td>
+      <td>1772</td>
+    </tr>
+    <tr>
+      <td>H5</td>
+      <td>ACD × AKQ</td>
+      <td>52223</td>
+      <td>20</td>
+      <td>75</td>
+      <td>1777</td>
+    </tr>
+    <tr>
+      <td>H6</td>
+      <td>ACK × CMQ</td>
+      <td>55570</td>
+      <td>20</td>
+      <td>100</td>
+      <td>2392</td>
+    </tr>
+    <tr>
+      <td>H7</td>
+      <td>ACG × BAK</td>
+      <td>69456</td>
+      <td>19</td>
+      <td>75</td>
+      <td>1844</td>
+    </tr>
+    <tr>
+      <td>H8</td>
+      <td>CGD × AKE</td>
+      <td>113241</td>
+      <td>19</td>
+      <td>75</td>
+      <td>1769</td>
+    </tr>
+    <tr>
+      <td>H9</td>
+      <td>BAM × CPG</td>
+      <td>116475</td>
+      <td>19</td>
+      <td>100</td>
+      <td>2452</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Standardized names from Peter et al., 2018._
+
 To accurately determine the total number of generations over the course of the MA experiment, we estimated the growth rate of the ancestors as well as the one of the MA lines at the end of the experiment in rich media. The growth rate of ancestral diploids was about 0.51 divisions per hour on average. No significant difference was observed between ancestors and final MA lines in terms of growth rate (Supplementary file 2, p>0.05 t-test). Therefore, we estimated that the MA lines have undergone an average of 24.2 divisions per bottleneck for a total of at least 1769 divisions per line.
 
-## Overview of the LOH content in the 169 MA lines
+### Overview of the LOH content in the 169 MA lines
 
 We first sought to characterize and analyze the LOH events that occur in the 169 MA lines. For this, the events supported by at least two adjacent converted heterozygous sites were considered as under LOH and consecutive events were merged, if the disruption was not supported by two heterozygous sites (see Materials and methods). A two-site threshold was chosen to accurately define LOH events across the nine backgrounds because of the 12-fold difference in terms of SNP density. In addition, the size of the LOH events was determined as the distance between the midpoint of the closest upstream and downstream unconverted sites.
 
 Overall, we identified a large set of 22,828 LOH events across the 169 MA lines, with an average size of 14.1 kb (Supplementary file 3). It is interesting to observe that the size distribution of the detected LOH events is bimodal (Figure 1A). While the majority of the events (95%) are in the first category with an average size of 1.6 kb, the rest of the events (5%) in the second category have an average size of 269.2 kb. We observed that accumulated LOHs are further away from centromeres (mean distance of 272 kb) than telomeres (mean distance of 230 kb) (Figure 1—figure supplement 2A). These observations are consistent with the size and distribution of events reported during gene conversion, mitotic CO, or BIR events (Mandegar and Otto, 2007; St Charles and Petes, 2013; Jeffreys and May, 2004). In S. cerevisiae, LOH events can be either centromere proximal, I-LOH resulting from gene conversions, or centromere distal, T-LOH resulting from mitotic CO or BIR (Sui et al., 2020; Loeillet et al., 2020). Among the accumulated events, the I-LOHs were found to be significantly enriched representing 86.1% of the events (n = 19,660) compared to the T-LOHs with only 3,168 detected events (i.e. 13.9%) (Figure 1B). As expected, T-LOH events are significantly larger than I-LOH events with an average size of 55.3 and 7.5 kb, respectively (Figure 1—figure supplement 3, p<10−3). And finally, we also observed a clear difference in the distribution of the T-LOH and I-LOH events across the genome (Figure 1—figure supplement 2B–C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig1-v2.jpg)
+
+**Figure 1.:** (A) LOH event tract size distribution across all 169 MA lines, the average tract sizes of the interstitial LOH (I-LOH) events (7.4 kb) and terminal LOH (T-LOH) events (55.3 kb), respectively. The global average LOH event size was 14.1 kb. (B) Violin plot of the LOH event counts in the MA lines population, I-LOH events were found to be significantly greater than T-LOH events (Wilcoxon test, p<2×10−16). (C) Distribution of MA lines based on the proportion of genome under LOH (%), dashed line indicates average proportion of genome under LOH across the 169 MA lines, 15.9% (±1.86).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) All LOH events, (B) terminal LOH (T-LOH), events, and (C) interstitial LOH (I-LOH) events.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig1-figsupp4-v2.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Orange and blue colors represent single nucleotide polymorphisms (SNPs) fixed toward either of the parents as described in Table 1 and Supplementary file 1. All the 14 nearly homozygous (NH) lines have been depicted. Dotted vertical lines represent position of the centromere.
+
 We then investigated the fraction of the genome under LOH as a consequence of the accumulated events. On average, 15.9% of the genome was under LOH but with a large variation as this fraction ranges from 0.01% to 98.6% across the lines. In fact, the 169 lines were divided into three distinct groups based on the proportion of genome under LOH (Figure 1C). The first two groups were represented by 113 and 43 lines with an average of 4.1% and 20.8% of genome under LOH, respectively. The last group encompassed 14 lines that exhibit more than 90% of the genome under LOH, which is significantly higher than the other two (Figure 1—figure supplements 4 and 5). This observation clearly shows that the genome of approximately 8% of the lines was quickly driven a quasi-homozygous state, henceforth we call them nearly homozygous lines.
 
 All these data also allowed us to have an estimate of the LOH rates on all the MA lines. In fact, LOH rates can be defined based on the total number of sites in the genome under LOH or the total number of events per division. Using the 169 lines, we estimated the LOH rates to be 7.1 × 10−5 per site per division and 6.5 × 10−2 events per division on average. However, these rates include both I-LOHs and T-LOHs and we therefore estimated their respective rates to know the impact of the two types of LOH. While the I-LOH rates were 3.1 × 10−5 per site per division and 5.6 × 10−2 events per division, we found that the T-LOH rates were 4.2 × 10−5 per site per division and 9.2 × 10−3 events per division. These results clearly show that if the number of genome sites impacted by the I-LOH and T-LOH events is the same, the number of events is very different as already pointed out previously.
 
-## Large variation of the LOH spectrum across genetic backgrounds
+### Large variation of the LOH spectrum across genetic backgrounds
 
 As mentioned previously, variation can be observed both in the number of events and in the fraction of the genome under LOH by examining all of the LOH events accumulated in the 169 MA lines. These observations prompted us to study the variability of LOH accumulation variation across the nine studied genetic backgrounds. Interestingly, we found that the number of accumulated LOH events varied considerably between the strains (Figure 2A). While the H1 lines accumulated the fewest LOH events (n = 10.8 on average), the H4 lines accumulated the largest number of events (n = 413.5 on average), which represents a difference of 38.2 times. We then examined this trend according to the type of LOH events (i.e. I-LOH or T-LOH) accumulated in the different genetic backgrounds. In most cases (except for the H1 and H9 lines), the I-LOH events were significantly in excess compared to T-LOH events in all backgrounds (Figure 2B). The variation in the LOH spectrum across strains is mainly related to a difference in the number of I-LOH. While there are 7.2 I-LOH events on average in the H1 lines, the H4 and H5 lines accumulated a large number of 395.9 and 294.8 I-LOH events on average, respectively. Although there is a difference in terms of T-LOH between genetic backgrounds, the variance is relatively small. The number varies from 3.6 events on average for the H1 lines to a maximum of 60.9 T-LOH events on average for the H9 lines. The frequency of I-LOH events was elevated on large chromosomes and a positive correlation with the chromosome size was observed for all backgrounds except H1 and H9 (Figure 2—figure supplement 2). The overall fraction of I-LOH events was significantly increased by more than 10–22 times in the H2, H4, and H5 lines, while in the others, the I-LOH events were only 1.3–2.7 times more frequent than the T-LOH events. These variations in the ratio between the I-LOH and T-LOH events are similar to those observed in various DNA repair and recombination mutants in S. cerevisiae hybrids (Figure 2—figure supplement 2; Sui et al., 2020; Loeillet et al., 2020). Interestingly, we observed that the more the ancestors were heterozygous, the more they accumulated T-LOH events (Figure 2B). And we have indeed found a positive correlation between the heterozygosity level and the number of T-LOH events (Figure 2C). Such a correlation was found neither for I-LOH nor for the total number of LOH events accumulated in the lines.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig2-v2.jpg)
+
+**Figure 2.:** (A) The frequency of total LOH events across the nine genetic backgrounds are highly variable (Kruskal-Wallis test, p<2×10−16). (B) Variability in interstitial and terminal LOH events counts across all backgrounds H1–H9 (Kruskal-Wallis test, p<10−16), interstitial events were always in excess, except for in H6 (Wilcoxon test, *p < 0.05; **p < 0.01; ***p<0.001; ****p < 0.0001; ns – not significant). (C) Frequency of terminal LOH events increases with increasing heterozygosity in the nine genetic backgrounds (Pearson’s correlation; r = 0.69, p<2×10−16), interstitial and total events do not bear any correlation with the background heterozygosity (Pearson’s correlation; p>0.05). (D) Proportion of genome under LOH is significantly variable across the nine backgrounds (H1–H9) (Kruskal-Wallis test, p<2×10−16).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Biased fixation was only observed in H4 and H5 backgrounds (binomial test, p<0.05).
 
 Similar to the number of LOH events, the proportion of the genome under LOH also varies across genetic backgrounds. This fraction varies from 3.6% to 16.6% of the genome across the nine backgrounds, when we exclude the nearly homozygous lines reaching more than 90% of the genome being under LOH (Figure 2D). The H3 lines accumulated the most genome under LOH (16.6%) while H8 accumulated the least (3.8%), representing a 4.6-fold difference. In addition, the H9 background was enriched in nearly homozygous lines (n = 5), while H1 and H4 had none (Figure 2D). We did not observe a significant excess in fixation of either of the parental genomes in the different backgrounds (binomial test, p>0.05), except for the H4 and H5 lines (binomial test, p<0.05). In both, H4 and H5, more than 80% of the genome under LOH is biased toward one of the parents (Figure 2—figure supplement 3), although the total genome under LOH in these backgrounds was very low with a level of 5.5% and 4.8%, respectively.
 
 Finally, we also sought to determine the LOH rate variation across the studied genetic backgrounds. The LOH site rates in these hybrids vary between 2.4 × 10−5 and 1.1 × 10−4 per site per division, and consequently a low variance was observed (Supplementary file 3). By contrast, the LOH event rates range from 5.6 × 10−3 to 2.8 × 10−1 events per division and are hence much more variable. The variability in event rates stems from I-LOH rates more than T-LOH rates. Indeed, while the T-LOH rates vary from 1.5 × 10−3 to 2.5 × 10−2 events per division, the I-LOH rates vary from 2.9 × 10−3 to 2.2 × 10−1 events per division.
 
-## Hybrid spore fertility and LOH accumulation
+### Hybrid spore fertility and LOH accumulation
 
 In our study, we selected ancestors with increasing genetic divergence (from 0.1% to 1%) and therefore with varying progeny viability. With an increase in genetic divergence, the role of anti-recombination as well as the increase in the probability of having genetic incompatibilities leads to a decrease in the viability of the offspring (Greig, 2009; Hou et al., 2016). By determining the spore viability as a measure of spore fertility in the ancestors, we indeed saw that it varies between 38% and 92% (Supplementary file 4). While the H1, H2, H3, H6, and H7 ancestors displayed good spore fertility (~85%), the spore viability of the H4, H5, H8, and H9 ancestors was severely compromised (~50%) (Supplementary file 4). We took advantage of this variability to assess the impact of it on the accumulation of LOH events. Interestingly, we observed that lines with high spore fertility accumulated much less LOH events than the lines showing low spore fertility (Figure 3A). The frequency in these was 7.6-fold higher per bottleneck. In addition, we also found that the size of the LOH events was on average much shorter in low spore fertility lines (Figure 3B). We therefore looked at the variation of the accumulated T-LOH and I-LOH events. In lines with high spore fertility, I-LOH events were three times more frequent than those of T-LOH, similar to what had previously been observed in the W303/YJM789 hybrid (Sui et al., 2020). However, I-LOH events were even more frequent (seven-fold) than T-LOH in the low spore fertility hybrids with low spore fertility. Overall, frequent short LOH tracts were a signature of the lines derived from hybrids with low spore fertility, that is, the H4, H5, H8, and H9 lines (Figure 3—figure supplement 1). MA lines derived from ancestral high spore fertility diploids accumulate large LOH events. The mean LOH event size in the latter is 45.8 kb compared to 7.4 kb in low spore fertility hybrids. The difference in the size of the events may be indicative of the specific underlying mechanisms. Moreover, meiotic spore fertility and recombination fidelity show a positive correlation in laboratory intraspecific S. cerevisiae hybrids (Raffoux et al., 2018).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig3-v2.jpg)
+
+**Figure 3.:** (A) Total LOH events accumulated in mutation accumulation (MA) lines derived from ancestral diploids with high spore fertility, that is, meiotic spore viability greater than or equal to 75% and the fraction of four-spore viable tetrads greater than 50% (H1, H2, H3, H6, H7) is significantly lower than in MA lines derived from ancestral diploids with low spore fertility, that is, meiotic spore viability lesser than 75% and the fraction of four-spore viable tetrads less than 50% (H4, H5, H8, H9) (Wilcoxon test, p<2×10−16). (B) The size (in bp) of the LOH events accumulated in MA lines derived from ancestral diploids with high spore fertility is significantly larger than in MA lines derived from ancestral diploids with low spore fertility (Wilcoxon test, p<2×10−16). The average LOH event size in the high spore fertility and low spore fertility MA lines are 45.8 and 7.4 kb, respectively. (C) Spore viabilities in both the high and low spore fertility groups compared respective to their ancestral diploids. There is a significant improvement in the spore viabilities of the MA lines derived from the low spore fertility ancestors (Mann-Whitney U test, p=0.04), whereas the viabilities do not change in the MA lines derived from the high spore fertility ancestral diploids (Mann-Whitney U test, p=0.34). The spore viabilities of the individual MA lines and the ancestral diploids detailed in Supplementary file 4.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig3-figsupp1-v2.jpg)
+
 In addition to the ancestors, we also determined meiotic spore viability in all 169 MA lines at the end of the experiment. Sporulation was consistent across all lines after 48 hr on sporulation media, with the exception of H9-8 and H9-11 which did not sporulate (Supplementary file 4). The spore viability of the lines derived from the highly fertile hybrids did not deviate significantly from their ancestral levels, meaning that they retained their high spore viability. By contrast, individual lines of the four other backgrounds presenting a low spore fertility (lines H4, H5, H8, and H9) showed significant increase compared to the ancestral spore fertility (Figure 3C). Rescue of the spore fertility in most MA lines was gradual, with only 42 out of 77 lines showing statistically significant increases (Supplementary file 4). MA lines showed up to a 23% increase in spore fertility and the nearly homozygous lines from all hybrid backgrounds were able to fully restore their spore fertility (~90%). Overall, these results suggest that recovery of spore fertility in the MA lines during mitotic propagation can be achieved either incrementally by undergoing frequent, short LOH events or completely by undergoing rapid whole-genome homozygotization.
 
-## Mutation rate is constant across heterozygous diploid backgrounds
+### Mutation rate is constant across heterozygous diploid backgrounds
 
 MA experiments have been primarily used to determine mutation rates in a number of model organisms. We therefore estimated mutation rates to understand if the mutational process is also impacted and variable across genetic backgrounds. DNA synthesis during mitotic recombination is considered to be mutagenic (Pham et al., 2020) and this effect is suggested to be amplified in heterozygous genomes (Strathern et al., 1995; Rattray et al., 2015). In the 169 MA lines, we identified 912 single nucleotide mutations (SNMs) and 14 multi-nucleotide mutations (MNMs), of which 83 and 2 are homozygous, respectively (Supplementary file 5). MNMs were defined as consecutive SNMs that were not separated by more than one base pair. While 101 SNMs and 2 MNMs were detected in the near-homozygous lines, 811 SNMs and 12 MNMs were identified in the 155 remaining lines. Overall, 70% of the mutations were observed in genic regions and 30% in the non-genic areas, and we observed a significant excess of non-synonymous mutations over synonymous mutations in the genic regions (binomial test, p>0.05). These biases have already been observed in previous yeast MA experiments. Transition mutations were more frequent than transversions with an average Ts/Tv ratio of 1.35. SNM and MNM rates were on average 1.1 × 10−10/site/division and 1.98 × 10−12/site/division, which is similar to previous estimates in isogenic and hybrid diploid S. cerevisiae strains (Dutta et al., 2017; Sharp et al., 2018; Liu and Zhang, 2019). SNM rates are five orders of magnitude lower than LOH rates.
 
@@ -69,9 +198,25 @@ The proportion of SNMs in the six categories of transitions and transversions va
 
 Finally, we estimated mutation rates in the nine genetic backgrounds to determine if they were as variable as the LOH rates. The SNM rates vary from 0.65 × 10−10 to 1.56 × 10−10/site/division across the nine heterozygous diploids, representing a 2.4-fold difference. SNM rates were not significantly different within or across the nine backgrounds (Figure 4). The average mutation rate in the 14 near-homozygous lines was just slightly higher, around 1.92 × 10−10/site/division. Furthermore, we observed no correlation between the mutation rates and the heterozygosity levels, GC content, or LOH rates. Overall, while the spectrum of SNMs is variable, their overall frequency of occurrence remains relatively constant across genetic backgrounds.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig4-v2.jpg)
+
+**Figure 4.:** The overall, mean single nucleotide mutation (SNM) rate in the 169 MA lines 1.1 × 10−10 per site per division is not different from previous estimates in various diploid Saccharomyces cerevisiae strains. NH lines represent the SNM rates in the NH lines. SNMs have been detailed in Supplementary files 5 and 6.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The spectrum of single nucleotide mutations (SNMs) in the mutation accumulation (MA) lines is variable across all genetic backgrounds (Chi-square test, p<0.05; Supplementary file 5–6). (B) The transition to transversion ratio is similar across all genetic backgrounds, significantly increased only in H3 (Chi-square test, p<0.05; Supplementary file 5–6). (C) The GC > AT/AT > GC mutational bias was similar in all genetic backgrounds, significantly increased only in H1 (Chi-square test, p<0.05; Supplementary file 5–6).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Horizontal red lines indicate mean events.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/70339/elife-70339-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Two backgrounds carried ancestral trisomies, H3 (+1 chrIX) and H9 (+1 chrIX; +1 chrXVI).
+
 In addition, we also detected 51 aneuploidy events in the MA lines, 43 chromosomal gains and 8 losses (Figure 4—figure supplement 3). No aneuploidy events were detected in the H2, H5, and H7 MA lines. Ancestral trisomies have been observed in H3 (chromosome IX) and H9 (chromosomes IX and XVI), and chromosome losses always correspond to the loss of extra copies of chromosomes IX and XVI in these two genetic backgrounds. The overall rate of aneuploidy is 1 × 10−4 per division, which is similar to that determined in previous studies (Sui et al., 2020; Loeillet et al., 2020; Sharp et al., 2018; Zhu et al., 2014). The LOH and SNM rates are not different among the euploid and aneuploid MA lines or the nearly homozygous lines (Mann-Whitney U test, p>0.05).
 
-## Mitotic propagation can lead to rapid homozygotization
+### Mitotic propagation can lead to rapid homozygotization
 
 As mentioned previously, we found a total of 14 nearly homozygous lines exhibiting more than ~90% of the genome under LOH, although it varies from 88% to 98% (Figure 1—figure supplement 5). These lines were present in all the genetic backgrounds except for two (H1 and H4) and with a prevalence in the H9 background. The LOH spectrum in these lines is characterized by a low number of events overall with similar frequency of I-LOH and T-LOH events. The average LOH event size is 185.1 kb, significantly larger than the rest of the 155 lines (~7 kb). The nearly homozygous lines coming from low spore fertility backgrounds were able to fully restore their spore fertility (~90%) (Supplementary file 4).
 
@@ -91,28 +236,28 @@ MA experiments have been a popular method for measuring mutation rates in model 
 
 ## Materials and methods
 
-## Strain construction and MA lines propagation
+### Strain construction and MA lines propagation
 
 The S. cerevisiae strains used in this study are described in Supplementary file 1. Yeast strains were grown on either YPD (yeast extract 1%, peptone 2%, dextrose 2%) or synthetic complete SC (yeast nitrogen base 0.67%, amino acid mix 0.2%, dextrose 2%) medium at 30°C (Mortimer and Johnston, 1986; Rose, 1990; McCusker et al., 1994). Briefly, haploid strains of opposite mating (MATa, ho::KanMX; MATα, ho::NatMX) types were crossed on SC for 6 hr. These were streaked down to single colonies on YPD medium supplemented with G418 (Euromedex – 4ml/l of 50 mg/ml stock) and nourseothricin (Jena Bioscience – 2 ml/l of 50 mg/ml stock) to select for diploids (Goldstein and McCusker, 1999).
 
 Eight diploid colonies were isolated from each of the crosses H1 through H9 and ploidies were confirmed by flow cytometry and two diploid colonies were frozen. These were also checked for their ability to sporulate on 1% potassium acetate agar. One frozen stock of each of the hybrid backgrounds was designated as the ancestor and further streaked down to single colonies. In total, 20 single colonies from each of the diploid hybrid were isolated and propagated. Individual replicate lines were bottlenecked to a single colony every 48 hr for at least 75 bottlenecks on YPD agar. Intermediates were frozen down every 25 bottlenecks until the end of the experiment. MA lines at the end of the experiment were sequenced.
 
-## Growth rates and tetrad dissection
+### Growth rates and tetrad dissection
 
 All MA lines and ancestral diploids were revived on YPD agar plates and further streaked down to single colonies. After 24 hr, three independent average sized colonies per line were picked in 1 μl of ddH2O. The total number of cells (N) counts were estimated using a cell counter and subsequently, growth rate per hour (r) was calculated assuming exponential growth described by N = ert. The generation time was estimated as g = ln2/r per hour and the number of divisions per day was 24/g = 24 r/ln2 (Liu and Zhang, 2019). Diploid ancestors and MA lines after 100 bottlenecks were revived on YPD agar and patched on sporulation media (1% potassium acetate agar) for up to 72 hr (Argueso et al., 2004). Tetrad dissections were performed using the SporePlay microscope (Singer Instrument) on DIFCO YPD agar and at least 24 and 48 tetrads were dissected for the high fertility and low fertility groups, respectively.
 
-## Whole-genome sequencing of diploid strains
+### Whole-genome sequencing of diploid strains
 
 Genomic DNA was extracted from the 169 MA lines using the Omega yeast DNA kit (Life Science Products) and DNA libraries were prepared from 5 ng of total genomic DNA using the NEBNext Ultra II FS DNA Library kit for Illumina (New England Biolabs) following manufacturer’s protocols. Following quality check using a Bioanalyzer 2100 (Agilent Technologies) and quantification using the Qubit dsDNA HS assay, 4 nM of each of the libraries were pooled and run on a NextSeq 500 sequencer with paired-end 150 bp reads by the EMBL Genomics Core Facility (Heidelberg, Germany).
 
-## Read mapping, genotyping of sequencing data
+### Read mapping, genotyping of sequencing data
 
 Sequencing reads from Fastq files were mapped to the masked (RepeatMasker, default parameters, masking simple repeats, and low complexity regions) S. cerevisiae R64 reference genome using bwa mem (v0.7.17). Resulting bam files were sorted and indexed using SAMtools (v1.9). Duplicated reads were marked, and sample names were assigned using Picard (v2.18.14). GATK (v3.7.0) was used to realign remaining reads. Candidate variants were then called using GATK UnifiedGenotyper. The calling was done simultaneously for lines from the same background.
 
-## Analysis of LOH tracts
+### Analysis of LOH tracts
 
 After variant calling, SNPs called in each hybrid parental couple were first filtered (bcftools v1.9) to define a set of confident markers expected to be heterozygous in the hybrid progeny. Positions with a single alternate allele, supported by at least 50 sequencing reads across both parents, were kept as parental markers. Joint SNP calling was performed background-wise as described previously. Bcftools isec was used to extract SNPs located at parental markers positions in all samples. In case of homozygosity at markers position, a parental origin tag was added by comparing the allele to parental alleles. Positions with GQ less than 20 were filtered out. LOH events were called using an in-house script. Heterozygous and LOH tracts from either parental origin were initially defined by uninterrupted tracts of successive marker positions with the right tag (heterozygous, parent1, parent2). Single-marker tracts were filtered out and subsequent tracts from the same origin were merged. Any tracts with 80% or more overlap and shared by at least 50% of the lines from the same hybrid were excluded. Average LOH tract coordinates were determined as the mean between the coordinates of first or last marker of a given tract and the first previous or next marker around that tract. LOH tracts were tagged as terminal if they overlapped the first or last 20 kb of a chromosome and tagged as interstitial otherwise. LOH site rates per line were calculated as N/D*G, where N = sites under LOH (I-LOH, T-LOH or overall), D = total number of divisions, and G = total genome size. LOH event rates per line were calculated as N/D, where N = number of events (I-LOH, T-LOH, or total events) and D = total number of divisions. The LOH plots as in Figure 1—figure supplement 5 were generated using the tool karyoploteR (Gel and Serra, 2017).
 
-## Analysis of new mutations
+### Analysis of new mutations
 
 Filters were applied to the SNPs that were called from the MA lines sequencing results in order to identify SNPs that were exclusive to a line, that is, mutations that occurred during the MA experiment (Sharp et al., 2018; Liu and Zhang, 2019; Zhu et al., 2014). An initial filtering round was first applied, and only positions covered by more than 10 reads in each sample with a single alternate allele were kept. Then, filters based on the numbers of lines per background and the type of conversion event expected to occur in a given background (homozygous to homozygous, homozygous to heterozygous) were applied to positions that were initially in a homozygous state (homozygous to homozygous, homozygous to heterozygous). Bcftools (v1.9) was used to perform the filtering. For homozygous-to-homozygous conversions, SNPs occurring within a called LOH were filtered out as they were actually representing the LOH and not an SNM. The remaining set of SNMs was then analyzed using snpEff to classify intergenic and genic mutations, and for the latter, synonymous and non-synonymous ones. Mutation rates per line were calculated as N/D*2G, where N = number of mutations (SNM or MNM), D = total number of divisions, and G = genome size (genome size was multiplied by 2, to account for the diploid genome). Homozygous mutations were multiplied by 2 in the estimation of the rates.

@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.26850.001 Parkinson's disease (PD) is a neurodegenerative disease with motor and non-motor symptoms, including constipation. Therefore, several studies have investigated the gastrointestinal tract, and more specifically the enteric nervous system (ENS), in search of an early biomarker of PD. Besides α-synuclein aggregation, mitochondrial dysfunction and dysregulation of intracellular Ca 2+ concentration probably contribute to the pathogenesis of PD. Here we assessed neuronal and mitochondrial functioning in primary enteric neurons of PD patients and their healthy partners as controls. Using a unique combination of live microscopy techniques, applied to routine duodenum biopsies, we were able to record neuronal Ca 2+ responses and mitochondrial membrane potential in these nerve tissues. We found that submucous neurons were not affected in PD patients, which suggests that these neurons are not involved in the pathogenesis or the gastrointestinal symptoms of PD. Our study provides for the first time functional information on live neurons in PD patients. DOI: http://dx.doi.org/10.7554/eLife.26850.001
+Parkinson's disease (PD) is a neurodegenerative disease with motor and non-motor symptoms, including constipation. Therefore, several studies have investigated the gastrointestinal tract, and more specifically the enteric nervous system (ENS), in search of an early biomarker of PD. Besides α-synuclein aggregation, mitochondrial dysfunction and dysregulation of intracellular Ca2+ concentration probably contribute to the pathogenesis of PD. Here we assessed neuronal and mitochondrial functioning in primary enteric neurons of PD patients and their healthy partners as controls. Using a unique combination of live microscopy techniques, applied to routine duodenum biopsies, we were able to record neuronal Ca2+ responses and mitochondrial membrane potential in these nerve tissues. We found that submucous neurons were not affected in PD patients, which suggests that these neurons are not involved in the pathogenesis or the gastrointestinal symptoms of PD. Our study provides for the first time functional information on live neurons in PD patients.
 
 ## Introduction
 
@@ -27,61 +27,156 @@ Parkinson’s disease (PD) is the most prevalent neurodegenerative movement diso
 
 Besides the well-known motor problems, PD patients can develop a variety of disabling non-motor symptoms (Lees et al., 2009), like psychosis, depression, hyposmia, rapid eye movement (REM) sleep behavior disorder and constipation, some of which can even occur prior to the first motor manifestations (Goldman and Postuma, 2014). This has sparked a growing interest in probing non-motor aspects for early diagnosis. Gastro-intestinal (GI) dysfunction in PD has recently attracted a lot of attention in this respect (Fasano et al., 2015). Several studies have reported the presence of α-synuclein aggregates in the enteric nervous system (ENS), which controls GI function, in fixed biopsy material or postmortem tissue from PD patients (Lebouvier et al., 2008; Shannon et al., 2012a; Pouclet et al., 2012a; Derkinderen et al., 2011) suggesting that the ENS is directly affected by the disease process. This finding also fueled the hypothesis that α-synuclein pathology may spread from the periphery to the brain. According to this theory, an ingested pathogenic agent would enter nerve fibers in the GI tract and initiate α-synuclein misfolding, which would then propagate in a prion-like fashion along the axons up to the dorsal motor nucleus of the vagus in the lower brainstem (Braak et al., 2006; Hawkes et al., 2007). Nevertheless, more recent studies have shown similar patterns of α-synuclein immunoreactivity in the ENS in a high percentage of neurologically unimpaired controls (Visanji et al., 2014; Gold et al., 2013; Gray et al., 2014). Given the current debate about the potential utility of enteric α-synuclein immunohistochemistry as a biomarker for PD (Visanji et al., 2014; Ruffmann and Parkkinen, 2016), new approaches are warranted to measure the involvement of the ENS in PD.
 
-So far, not a single report has investigated the functionality of enteric neurons in PD patients. The general aim of this study was to examine the functionality of living enteric neurons of well-characterized PD patients. We used calcium imaging (
+So far, not a single report has investigated the functionality of enteric neurons in PD patients. The general aim of this study was to examine the functionality of living enteric neurons of well-characterized PD patients. We used calcium imaging (Cirillo et al., 2015, 2013) as a reliable proxy to assess neuronal function and mitochondrial imaging, to test the functionality of enteric neurons and mitochondria in freshly isolated submucous plexus preparations from PD patients and controls (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/26850/elife-26850-fig1-v1.jpg)
 
-**Figure 1.:** Gastroduodenoscopy was performed on clinically well-characterized PD patients and their healthy partners, and 8 biopsies of the duodenum were taken per subject. The submucous plexus was peeled away from the mucosal epithelium and was used for live imaging techniques (Ca2+ or mitochondrial imaging) followed by post-hoc immunohistochemistry for confirmation of neuronal identity. In addition, the submucous plexus was isolated from 3 fresh biopsies per subject and immediately processed for immunohistochemistry (without live imaging) and numbers of neurons and ganglia were counted per biopsy (not indicated in the schematic).DOI: http://dx.doi.org/10.7554/eLife.26850.002
+**Figure 1.:** Gastroduodenoscopy was performed on clinically well-characterized PD patients and their healthy partners, and 8 biopsies of the duodenum were taken per subject. The submucous plexus was peeled away from the mucosal epithelium and was used for live imaging techniques (Ca2+ or mitochondrial imaging) followed by post-hoc immunohistochemistry for confirmation of neuronal identity. In addition, the submucous plexus was isolated from 3 fresh biopsies per subject and immediately processed for immunohistochemistry (without live imaging) and numbers of neurons and ganglia were counted per biopsy (not indicated in the schematic).
 
 ## Results
 
-## Study population
+### Study population
 
-We recruited 15 couples, each consisting of a PD patient and his or her healthy partner. This pairwise recruitment allowed within-pair comparisons to better control for variability in diet, lifestyle and other environmental factors. Demographic and clinical characteristics are summarized in Table 1 and Supplementary file 1. As in most clinical PD studies, the majority of PD participants were male. PD patients and controls were age-matched and disease duration ranged from 2 to 17 years. All PD patients were under treatment with oral dopaminergic medication. None were treated with apomorphine, levodopa-carbidopa intestinal gel or deep brain stimulation. Three patients had levodopa-induced dyskinesias, five had early morning dystonia and two had daytime motor fluctuations. None of the patients had a first-degree relative with PD, except possibly one whose mother had allegedly developed tremor around the age of 90 years. Six of the 15 patients had disease onset under the age of 46 years. Genetic analysis of the PARK2 gene was performed in 5 of these 6 patients, but no mutations were found.10.7554/eLife.26850.003Table 1.Demographic and clinical characterization of PD patients and controls Mean ± SD are shown with associated p-value (non-parametric Wilcoxon T-testa | Wilcoxson T-test b | Chi squared test c).DOI: http://dx.doi.org/10.7554/eLife.26850.003Control subjects (n = 15)PD patients (n = 15)p-valueGender (M:F)4: 1111: 40.01 (*) CAge57.8 ± 2.6 (range: 44–76)58.9 ± 9.2 (range: 45–71)0.40 aSCOPA total5.6 ± 2.7 (range: 2–10)12.3 ± 9.2 (range: 2–32)0.03 (*) aSCOPA GI0.9 ± 0.80 (range: 0–2)2.7 ± 2.29 (range: 0–8)0.02 (*) bDisease duration (years)-7.8 ± 3.9 (range: 2–17)UPDRS III off (disease severity)-23.3 ± 10.0 (range: 12–46)Age at onset (years)-51.1 ± 9.4 (range: 36–69)Hoehn-Yahr (off)-2 (IQR: 2–5)LED (mg)-684.1 ± 388.5 (range: 205–1740)MMSE-29.6 ± 0.9(*indicates a statistical difference p<0.05). For Hoehn-Yahr scores, median and interquartile range are shown.
+We recruited 15 couples, each consisting of a PD patient and his or her healthy partner. This pairwise recruitment allowed within-pair comparisons to better control for variability in diet, lifestyle and other environmental factors. Demographic and clinical characteristics are summarized in Table 1 and Supplementary file 1. As in most clinical PD studies, the majority of PD participants were male. PD patients and controls were age-matched and disease duration ranged from 2 to 17 years. All PD patients were under treatment with oral dopaminergic medication. None were treated with apomorphine, levodopa-carbidopa intestinal gel or deep brain stimulation. Three patients had levodopa-induced dyskinesias, five had early morning dystonia and two had daytime motor fluctuations. None of the patients had a first-degree relative with PD, except possibly one whose mother had allegedly developed tremor around the age of 90 years. Six of the 15 patients had disease onset under the age of 46 years. Genetic analysis of the PARK2 gene was performed in 5 of these 6 patients, but no mutations were found.
+
+**Table 1.**
+ Demographic and clinical characterization of PD patients and controls Mean ± SD are shown with associated p-value (non-parametric Wilcoxon T-testa | Wilcoxson T-test b | Chi squared test c).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Control subjects (n = 15)</th>
+      <th>PD patients (n = 15)</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gender (M:F)</td>
+      <td>4: 11</td>
+      <td>11: 4</td>
+      <td>0.01 (*) C</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>57.8 ± 2.6 (range: 44–76)</td>
+      <td>58.9 ± 9.2 (range: 45–71)</td>
+      <td>0.40 a</td>
+    </tr>
+    <tr>
+      <td>SCOPA total</td>
+      <td>5.6 ± 2.7 (range: 2–10)</td>
+      <td>12.3 ± 9.2 (range: 2–32)</td>
+      <td>0.03 (*) a</td>
+    </tr>
+    <tr>
+      <td>SCOPA GI</td>
+      <td>0.9 ± 0.80 (range: 0–2)</td>
+      <td>2.7 ± 2.29 (range: 0–8)</td>
+      <td>0.02 (*) b</td>
+    </tr>
+    <tr>
+      <td>Disease duration (years)</td>
+      <td>-</td>
+      <td>7.8 ± 3.9 (range: 2–17)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UPDRS III off (disease severity)</td>
+      <td>-</td>
+      <td>23.3 ± 10.0 (range: 12–46)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age at onset (years)</td>
+      <td>-</td>
+      <td>51.1 ± 9.4 (range: 36–69)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hoehn-Yahr (off)</td>
+      <td>-</td>
+      <td>2 (IQR: 2–5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LED (mg)</td>
+      <td>-</td>
+      <td>684.1 ± 388.5 (range: 205–1740)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MMSE</td>
+      <td>-</td>
+      <td>29.6 ± 0.9</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_(*indicates a statistical difference p<0.05). For Hoehn-Yahr scores, median and interquartile range are shown._
 
 Interestingly, although presence of autonomic and GI symptoms was not an inclusion criterion, PD patients had significantly more autonomic and GI symptoms than controls (Table 1).
 
-## Ca2+ signalling properties of submucous neurons do not differ between PD patients and controls
+### Ca2+ signalling properties of submucous neurons do not differ between PD patients and controls
 
-Neurons were identified based on their specific morphology, localization in a ganglion and characteristic Fluo-4 loading (
+Neurons were identified based on their specific morphology, localization in a ganglion and characteristic Fluo-4 loading (Figure 2A, left), as previously described (Cirillo et al., 2015, 2013), and neuronal viability was assessed using a short high K+ depolarization (10 s, 75 mM K+) (Figure 2A, left) (Video 1), which induced a transient rise in intracellular calcium [Ca2+]i (Figure 2A, middle). Post-hoc immunostaining for the neuronal markers HuCD and NF200 confirmed the neuronal identity of the cells selected during the live recordings (Figure 2A, right). In controls, 57.3 ± 29.5% of neurons displayed a transient change in Fluo-4 intensity (with maximum amplitude of 3.6 ± 2%, n = 15.6 ± 2.9 neurons per subject) upon depolarization with high K+. No significant difference was found when compared to PD patients, where both the number of high K+ responding neurons (49.5 ± 28.7%, p=0.47) and the [Ca2+]i transient amplitudes (2.8 ± 3%, p=0.37, n = 11.9 ± 1.9 neurons per patient) were similar (Figure 2B). The percentage of responding neurons and [Ca2+]i transient amplitudes in the PD group did not correlate with age, GI symptoms (as measured by the Scale for Outcomes in Parkinson's disease for Autonomic Symptoms (SCOPA-AUT), disease duration or disease severity (as assessed by Unified Parkinson’s Disease Rating Scale (UPDRS) part III off medication (Supplementary file 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/26850/elife-26850-fig2-v1.jpg)
 
-**Figure 2.:** 2+signalling in submucous neurons in biopsies from PD patients and controls.(A.) Representative examples calcium imaging (left) and posthoc immunohistochemical staining (right). A typical example of submucous ganglia (PD and control) loaded with Fluo-4 is shown (left) as well as typical Ca2+ traces (normalized to the fluorescence at time zero F/F0) of single submucous neurons depolarized with a high K+ stimulus (represented as grey bar). The green and red traces are 2 random examples, the black trace is the background value. The panels on the right show the correlated post-hoc immunostaining for enteric neuronal markers (Green: HuCD (neuronal cell bodies); Magenta: NF200 (intermediate neurofilament 200: neuronal fibers). The inset shows a magnification of the selected ganglion (dashed square). The arrow (neuronal cell bodies) and arrowheads (neuronal fibers) point to the same structures in both immunohistochemical and corresponding Fluo-4 images (left). (B.) Summary data plots showing the percentage of responding neurons (top row) and maximum peak amplitude ∆F/F0 (%) (bottom row) for high K+, DMPP and electrical stimulation. The individual data points represent a patient or control for which all individual neuronal responses were averaged. (NS, not significantly different, non-parametric Wilcoxon T-test; p-values: % of responders; High K+=0.23, DMPP = 0.88, ES = 0.99 | amplitudes: High K+=0.57, DMPP = 0.99, ES = 0.81).DOI: http://dx.doi.org/10.7554/eLife.26850.00410.7554/eLife.26850.005Figure 2—source data 1.GraphPad file with the corresponding values and graphs of the % of responders from the calcium imaging for the different stimuli HighK+, DMPP and electrical field stimulation (panel B, top graphs).DOI: http://dx.doi.org/10.7554/eLife.26850.00510.7554/eLife.26850.006Figure 2—source data 2.GraphPad file with the corresponding values and graphs of the amplitude from the calcium imaging for the different stimuli HighK+, DMPP and electrical field stimulation. (panel B, lower graphs).DOI: http://dx.doi.org/10.7554/eLife.26850.006
+**Figure 2.:** (A.) Representative examples calcium imaging (left) and posthoc immunohistochemical staining (right). A typical example of submucous ganglia (PD and control) loaded with Fluo-4 is shown (left) as well as typical Ca2+ traces (normalized to the fluorescence at time zero F/F0) of single submucous neurons depolarized with a high K+ stimulus (represented as grey bar). The green and red traces are 2 random examples, the black trace is the background value. The panels on the right show the correlated post-hoc immunostaining for enteric neuronal markers (Green: HuCD (neuronal cell bodies); Magenta: NF200 (intermediate neurofilament 200: neuronal fibers). The inset shows a magnification of the selected ganglion (dashed square). The arrow (neuronal cell bodies) and arrowheads (neuronal fibers) point to the same structures in both immunohistochemical and corresponding Fluo-4 images (left). (B.) Summary data plots showing the percentage of responding neurons (top row) and maximum peak amplitude ∆F/F0 (%) (bottom row) for high K+, DMPP and electrical stimulation. The individual data points represent a patient or control for which all individual neuronal responses were averaged. (NS, not significantly different, non-parametric Wilcoxon T-test; p-values: % of responders; High K+=0.23, DMPP = 0.88, ES = 0.99 | amplitudes: High K+=0.57, DMPP = 0.99, ES = 0.81).
+
+![Video 1.](https://cdn.elifesciences.org/articles/26850/elife-26850-media1.mp4.jpg)
+
+**Video 1.:** This movie shows a representative recording of Fluo-4 intensity changes in 2 human submucous ganglia (the ganglion on the right holds 2, while the one the left contains 5 neurons) during high K+ stimulation (10 s). The movie, which is representative for both groups (patients and controls) was taken from a PD patient sample. The original recording was deconvolved using Huygens software and movies generated using IGOR pro and ImageJ.
+
+![Video 2.](https://cdn.elifesciences.org/articles/26850/elife-26850-media2.mp4.jpg)
+
+**Video 2.:** TMRE-labeled mitochondria in a submucous ganglion of a control subject are shown as well as the selection of mitochondria that are color-coded for intensity (see also Figure 3A).
+
+![Video 3.](https://cdn.elifesciences.org/articles/26850/elife-26850-media3.mp4.jpg)
+
+**Video 3.:** Movie of TMRE-labeled mitochondria in a submucous ganglion of a PD patient. The TMRE intensity variations over time are shown as well as the 3D mask (in green, appearing half way in the movie) that is used to calculate the mitochondrial density in ganglia (see also Figure 4A).
+
+![Video 4.](https://cdn.elifesciences.org/articles/26850/elife-26850-media4.mp4.jpg)
+
+**Video 4.:** Movie of TMRE-labeled mitochondria in a submucous ganglion of a control subject, showing TMRE fluctuations, selection of the ganglionic volume (3D mask) and mitochondrial volume detection (yellow) and spot detection (cyan) (see also Figure 4 panels A1-4).
 
 In addition to high K+ depolarization we also used two more physiological stimuli to assess neuronal function: 1,1-dimethyl-4-phenylpiperazinium (DMPP), a nicotinic acetylcholine receptor agonist, as fast excitatory transmission in the ENS occurs mainly via acetylcholine on nicotinic receptors; and trains of electrical pulses applied to the fiber strands in the submucous plexus. However, neither for DMPP nor for electrical stimulation, differences in percentages of responding neurons or response amplitudes were found (Figure 2B).
 
-## Mitochondrial membrane potentials of submucous neurons are similar in PD patients and controls
+### Mitochondrial membrane potentials of submucous neurons are similar in PD patients and controls
 
-To assess mitochondrial membrane potential, submucous ganglia were injected with Tetramethylrhodamine, ethyl ester (TMRE) and 3D confocal recordings were made and quantified using Andor iQ and IMARIS (
+To assess mitochondrial membrane potential, submucous ganglia were injected with Tetramethylrhodamine, ethyl ester (TMRE) and 3D confocal recordings were made and quantified using Andor iQ and IMARIS (Figure 3A). First, the average intensity (in arbitrary values) was determined in recordings made at room temperature (RT). The TMRE signals at RT were similar in both groups (Figure 3B) and did not correlate with age, Gl symptoms, disease duration or severity of PD patients (Supplementary file 3). To monitor mitochondrial membrane potential changes, preparations were kept at 37°C while TMRE signals were measured continuously over several minutes(Videos 2–3). The intensity of the TMRE staining fluctuated substantially, indicating that both in PD patients and controls mitochondrial potentials were dynamically changing (Figure 3C–D). Here again, TMRE intensity fluctuations were not significantly different between PD patients and controls (Figure 3E), without any correlations with the clinical characteristics of PD patients (Supplementary file 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/26850/elife-26850-fig3-v1.jpg)
 
-**Figure 3.:** (A.) Representative example of a TMRE injection in the submucous plexus of a control subject. A subset of mitochondria was selected to show the TMRE intensity differences (as color-coded) in individual mitochondria. (B.) Summary data plot of the TMRE intensity in mitochondria of patients and controls (NS, not significantly different, p-value=0.49 (non-parametric Wilcoxon T-test). (C.) Example of a time series (900 s) of color-coded TMRE intensity fluctuations in individual mitochondria (see selection in A.). (D.) Graphs showing TMRE intensity variations (%) over time of three individual mitochondria of control and PD patient, suggesting similar dynamics in patients and controls. (E.) Summary data plot of the average TMRE intensity fluctuations for controls and PD patients. (NS, not significantly different, p-value=0.99, non-parametric Wilcoxon T-test).DOI: http://dx.doi.org/10.7554/eLife.26850.01110.7554/eLife.26850.012Figure 3—source data 1.GraphPad file with the corresponding values and graphs of the mitochondrial membrane potential measurements (panel B and E).DOI: http://dx.doi.org/10.7554/eLife.26850.012
+**Figure 3.:** (A.) Representative example of a TMRE injection in the submucous plexus of a control subject. A subset of mitochondria was selected to show the TMRE intensity differences (as color-coded) in individual mitochondria. (B.) Summary data plot of the TMRE intensity in mitochondria of patients and controls (NS, not significantly different, p-value=0.49 (non-parametric Wilcoxon T-test). (C.) Example of a time series (900 s) of color-coded TMRE intensity fluctuations in individual mitochondria (see selection in A.). (D.) Graphs showing TMRE intensity variations (%) over time of three individual mitochondria of control and PD patient, suggesting similar dynamics in patients and controls. (E.) Summary data plot of the average TMRE intensity fluctuations for controls and PD patients. (NS, not significantly different, p-value=0.99, non-parametric Wilcoxon T-test).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/26850/elife-26850-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** Representative graph showing the average intensity in arbitrary units (A.U.) of 16 mitochondria labeled with TMRE and imaged at 37°C before and after addition of 3 µM FCCP. The complete destaining in the presence of FCCP indicates that TMRE specifically labeled mitochondria.DOI: http://dx.doi.org/10.7554/eLife.26850.013
+**Figure 3—figure supplement 1.:** Representative graph showing the average intensity in arbitrary units (A.U.) of 16 mitochondria labeled with TMRE and imaged at 37°C before and after addition of 3 µM FCCP. The complete destaining in the presence of FCCP indicates that TMRE specifically labeled mitochondria.
 
-## Mitochondrial volume and numbers in submucous neurons do not differ between PD patients and controls
+### Mitochondrial volume and numbers in submucous neurons do not differ between PD patients and controls
 
-Given the similarity of TMRE loading between PD patients and controls and the problems with mitotracker green (MTG) loading (see Materials and methods), we used the TMRE signals recorded at RT to also compare mitochondrial volume and numbers (
+Given the similarity of TMRE loading between PD patients and controls and the problems with mitotracker green (MTG) loading (see Materials and methods), we used the TMRE signals recorded at RT to also compare mitochondrial volume and numbers (Figure 4A). We first analysed the total mitochondrial volume and number of mitochondria in a selected 3D mask surrounding the injected ganglion (Figure 4A). The volumes of the outlined ganglia were not significantly different between the 2 groups (data not shown), nor was the total mitochondrial volume inside the selection (Figure 4B). The mitochondrial volume did not significantly correlate with age, GI symptoms, disease duration or severity of PD patients (Supplementary file 3). In addition to total mitochondrial volume, we also analysed mitochondrial density (number of mitochondria within the ganglion outline). This parameter was again not significantly different between the two groups (Figure 4C) and did not correlate with clinical characteristics in the PD group (Supplementary file 3). Lastly, we compared average volume of individual mitochondria and, similarly to other mitochondrial parameters, this did not significantly differ between the two groups (Figure 4D), nor was it correlated with any of the clinical parameters (Supplementary file 3) (Video 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/26850/elife-26850-fig4-v1.jpg)
 
-**Figure 4.:** (A.) Representative example of a submucous plexus injected with TMRE for a control (left) and PD patient (right). The 3D mask drawn around the injected ganglion is shown in grey. The inside of this volume is enlarged in panels A1-4 with an additional magnification of a selected subset (dashed square). Panels A1-4 represent an example of mitochondrial volume detection (A2), mitochondrial spot detection (A3) and overlay of both (A4). (B.) Schematic representation of the total mitochondrial volume detection within the 3D mask and summary data plot of the volume (mitochondrial/3D mask) ratio quantification. (C.) Schematic representation of mitochondrial spot detection and summary data plot of the quantification (mitochondrial density (#/1000 µm³). (D.) Schematic representation of the segmentation process (color-coded for mitochondrial size) to quantify the average volume (µm³) of single mitochondria and a summary data plot of the quantification in controls versus patients. (NS, not significantly different, p-values (non-parametric Wilcoxon T-test); mitochondrial volume ratio = 0.65, mitochondrial density = 0.00.16, mitochondrial volume = 0.30).DOI: http://dx.doi.org/10.7554/eLife.26850.01410.7554/eLife.26850.015Figure 4—source data 1.GraphPad file with the corresponding values and graph of mitochondrial ratio measurements (panel B).DOI: http://dx.doi.org/10.7554/eLife.26850.01510.7554/eLife.26850.016Figure 4—source data 2.GraphPad file with the corresponding values and graph of mitochondrial density measurements (panel C).DOI: http://dx.doi.org/10.7554/eLife.26850.01610.7554/eLife.26850.017Figure 4—source data 3.GraphPad file with the corresponding values and graph of mitochondrial volume measurements (panel D).DOI: http://dx.doi.org/10.7554/eLife.26850.017
+**Figure 4.:** (A.) Representative example of a submucous plexus injected with TMRE for a control (left) and PD patient (right). The 3D mask drawn around the injected ganglion is shown in grey. The inside of this volume is enlarged in panels A1-4 with an additional magnification of a selected subset (dashed square). Panels A1-4 represent an example of mitochondrial volume detection (A2), mitochondrial spot detection (A3) and overlay of both (A4). (B.) Schematic representation of the total mitochondrial volume detection within the 3D mask and summary data plot of the volume (mitochondrial/3D mask) ratio quantification. (C.) Schematic representation of mitochondrial spot detection and summary data plot of the quantification (mitochondrial density (#/1000 µm³). (D.) Schematic representation of the segmentation process (color-coded for mitochondrial size) to quantify the average volume (µm³) of single mitochondria and a summary data plot of the quantification in controls versus patients. (NS, not significantly different, p-values (non-parametric Wilcoxon T-test); mitochondrial volume ratio = 0.65, mitochondrial density = 0.00.16, mitochondrial volume = 0.30).
 
-## The submucous plexus contains similar numbers of ganglia and neurons in PD patients and controls
+### The submucous plexus contains similar numbers of ganglia and neurons in PD patients and controls
 
-Finally, we counted the number of neurons per ganglion, total number of neurons per biopsy and number of ganglia per biopsy in both groups based on immunofluorescent staining (
+Finally, we counted the number of neurons per ganglion, total number of neurons per biopsy and number of ganglia per biopsy in both groups based on immunofluorescent staining (Figure 5A). None of these parameters differed between the two groups (Figure 5B–D). No correlations were found between these counts and age, GI symptoms, disease duration or disease severity of PD patients (Supplementary file 4). We also tested whether α-synuclein aggregates were present in the samples using an antibody against α-synuclein. However, the staining patterns were indistinguishable between PD patients and controls (Figure 6).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/26850/elife-26850-fig5-v1.jpg)
 
-**Figure 5.:** (A.) Representative immunofluorescent staining of submucous plexus of a control and PD patient stained for the pan-neuronal marker HuCD (green) and neuronal filament marker NF200 (Magenta). Bars: 50 μm. (B.) Graph showing quantification of number of neurons per ganglion. (C.) Graph showing quantification of total number of neurons per biopsy. (D.) Graph showing quantification of number of ganglia per biopsy. (NS, not significantly different (non-parametric Wilcoxon T-test), p-values; # neurons/ganglion = 0.86, # neurons/biopsy = 0.17 (non-parametric Wilcoxson T-test), # ganglia/biopsy = 0.24).DOI: http://dx.doi.org/10.7554/eLife.26850.01810.7554/eLife.26850.019Figure 5—source data 1.GraphPad file with the corresponding values and graph of number of neurons per ganglia (panel B).DOI: http://dx.doi.org/10.7554/eLife.26850.01910.7554/eLife.26850.020Figure 5—source data 2.GraphPad file with the corresponding values and graph of number of neurons per biopsy (panel C).DOI: http://dx.doi.org/10.7554/eLife.26850.02010.7554/eLife.26850.021Figure 5—source data 3.GraphPad file with the corresponding values and graph of number of neurons per biopsy (panel D).DOI: http://dx.doi.org/10.7554/eLife.26850.021
+**Figure 5.:** (A.) Representative immunofluorescent staining of submucous plexus of a control and PD patient stained for the pan-neuronal marker HuCD (green) and neuronal filament marker NF200 (Magenta). Bars: 50 μm. (B.) Graph showing quantification of number of neurons per ganglion. (C.) Graph showing quantification of total number of neurons per biopsy. (D.) Graph showing quantification of number of ganglia per biopsy. (NS, not significantly different (non-parametric Wilcoxon T-test), p-values; # neurons/ganglion = 0.86, # neurons/biopsy = 0.17 (non-parametric Wilcoxson T-test), # ganglia/biopsy = 0.24).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/26850/elife-26850-fig6-v1.jpg)
 
-**Figure 6.:** Top and bottom rows show three single slice confocal and deconvolved images of a representative immunofluorescent staining in the submucous plexus of a control (top) and PD patient (bottom) stained for the pan-neuronal marker HuCD (green) and α-synuclein (magenta). A neuronal fiber staining (yellow: NF200 in bottom and peripherin in top row) was added to help delineating the submucous ganglion. No differences in α-synuclein staining patterns in PD patients and controls could be detected. Bars: 10 µm.DOI: http://dx.doi.org/10.7554/eLife.26850.022
+**Figure 6.:** Top and bottom rows show three single slice confocal and deconvolved images of a representative immunofluorescent staining in the submucous plexus of a control (top) and PD patient (bottom) stained for the pan-neuronal marker HuCD (green) and α-synuclein (magenta). A neuronal fiber staining (yellow: NF200 in bottom and peripherin in top row) was added to help delineating the submucous ganglion. No differences in α-synuclein staining patterns in PD patients and controls could be detected. Bars: 10 µm.
 
 ## Discussion
 
@@ -103,15 +198,15 @@ In conclusion, we have applied live imaging techniques to investigate neuronal p
 
 ## Materials and methods
 
-## Study population
+### Study population
 
 Fifteen patients with PD and fifteen healthy age-matched controls were recruited in pairs in the Movement Disorders Clinic of University Hospitals Leuven. Each pair consisted of a PD patient and his/her healthy partner. We recruited pairwise in order to allow within-pair comparisons and minimize variability due to diet, lifestyle and other environmental factors. Inclusion criterion for PD patients was diagnosis of PD according to the Gelb criteria (Gelb et al., 1999). GI symptoms were not a requirement for inclusion. Exclusion criteria for PD patients were: cognitive impairment that, in the opinion of the treating neurologist, interfered with the ability to fully understand the patient information brochure; and presence of GI disorders unrelated to PD. Exclusion criteria for the controls were GI and neurological diseases. All PD and control subjects completed the SCOPA-AUT, a questionnaire designed to assess autonomic (including GI) symptoms in PD patients (Visser et al., 2004), within one month before the endoscopic procedure. On the morning of the gastroduodenoscopy disease severity was assessed in the PD patients by a movement disorders neurologist by means of UPDRS part III and Hoehn-Yahr (HY) scale in practically defined ‘off’ state, that is, at least 12 hr after the last intake of medication. UPDRS parts I, II and IV and Mini Mental State Examination (MMSE) were also completed. Levodopa-equivalent daily dose (LED) was calculated as described (Tomlinson et al., 2010). Disease duration was based on the onset of the first motor symptom as reported by the patient. On the morning of the procedure, control subjects were also clinically assessed by the movement disorders neurologist to exclude parkinsonism. The ethics committee of the University Hospitals Leuven approved the study and all subjects gave written informed consent and consent to publish according to the declaration of Helsinki.
 
-## Gastroduodenoscopy and biopsy preparation
+### Gastroduodenoscopy and biopsy preparation
 
 An experienced endoscopist at the Gastroenterology unit of the University Hospitals Leuven obtained 8 biopsies from the second part of the duodenum from each PD patient and control. Each pair underwent endoscopy on the same day immediately one after another in random order. All subjects had a macroscopically normal upper GI tract, except for one control with minor reflux esophagitis. The duodenal biopsies were immediately immersed in oxygenated ice-cold Krebs solution (in mM: 120.9 NaCl, 5.9 KCl, 1.2 MgCl2, 2.5 CaCl2, 11.5 glucose, 14.4 NaHCO3, and 1.2 NaH2PO4) and coded. All subsequent tissue manipulations, experiments and data analyses were performed by investigators blinded to the disease status (PD versus control) of the subject. The submucous plexus was removed from the mucosal epithelium by microdissection, as described previously (Cirillo et al., 2013), and used the same day for live calcium (Ca2+) or mitochondrial imaging. A schematic overview of the experimental workflow is presented in Figure 1.
 
-## Calcium imaging
+### Calcium imaging
 
 Submucous plexus preparations (2 per subject) were loaded at RT for 20 min with the fluorescent Ca2+ indicator Fluo-4 AM (1 µM, Molecular Probes, Merelbeke, Belgium) in Krebs buffer containing 0.01% Cremophor EL surfactant agent (Fluka Chemika, Buchs, Switzerland). After rinsing, tissues were imaged as previously described (Cirillo et al., 2013).
 
@@ -119,7 +214,7 @@ To elicit neuronal activity, we used three different stimuli: first, a brief hig
 
 Images were collected using Till Vision software (TILL Photonics, Gräfelfi, Germany) and analysis was performed using custom-written macros in IGOR PRO (Wavemetrics, Lake Oswego,OR). To remove drift and movement artefacts due to perfusion, the image stack was registered to the first image. Regions of interest (ROIs) were drawn over each neuron and fluorescence intensities were calculated, normalized and expressed as an F/F0 ratio (with F0 being the baseline fluorescence). Transient [Ca2+]i peaks were considered if they exceeded the baseline plus 5 times the intrinsic noise level. The percentage of responsive cells was determined. The maximum [Ca2+]i peak amplitude was calculated as a percentage change above baseline.
 
-## Mitochondrial imaging
+### Mitochondrial imaging
 
 Submucous plexus preparations (3 per subject) were pinned flat in a Sylgard (Dow Corning) containing dish. A glass microinjection capillary (pulled on a P87 Sutter Instruments pipette puller) filled with TMRE (300 nM, Thermo Fischer, Merelbeke, Belgium) was navigated into a submucous ganglion using a pneumatic manipulator (Narishige, New York, USA). Local injection of the mitochondrial dye was essential in order to avoid background loading of connective tissues and cellular structures other than those of the submucous plexus. This approach differs from TMRE loading protocols in cellular monolayers (O'Reilly et al., 2003; Perry et al., 2011). However, even though the TMRE concentration used in the injection pipette is relatively high, we assume that all observations were made in non-quenching TMRE mode, because after the topical injection (~150 nl) the dye rapidly diffuses into a larger volume (dilution by a factor 40 if the volume of biopsy [6 mm³], or ~3.103 if the recording bath volume 500 µl is considered). Moreover, image stacks were recorded in SMP structures away from the injection spot, to assure we recorded at lower concentrations than what was injected.
 
@@ -131,12 +226,12 @@ After injection, the tissues were imbedded in 1.5% low-melting point agarose dis
 
 Subsequently, the deconvolved image stacks were imported in IMARIS 8.0.1 (Bitplane, Zurich, Switzerland) to assess mitochondrial volume and intensity characteristics. First, a volume of interest was drawn around the injected ganglion, which was then used as a 3D mask, within which the spot and volume detection (absolute intensity thresholding) algorithms available in IMARIS were applied. Also mitochondrial intensity changes over time were analysed in the image stacks recorded at 37°C by tracking mitochondria over time. In this analysis, 500 mitochondria per volume were selected from the output of Imaris’ spot detection algorithm, which sorted detected spots based on maximum intensity in the spot centre.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 After Ca2+ imaging and mitochondrial analysis, the submucous plexus preparations were fixed for 30 min in 4% paraformaldehyde (PFA, Merck, Overijse, Belgium) for post-hoc immunohistochemical confirmation of neuronal identity. In addition, the submucous plexus was isolated from three fresh biopsies per subject (without live imaging) and immediately fixed in PFA for immunohistochemical analysis of numbers of ganglia, neurons per ganglion and numbers of non-ganglionic (individual) neurons, as described earlier (Cirillo et al., 2013).
 
 Primary antibodies against two typical enteric neuron markers: neurofilament NF200 (chicken anti-NF200 1/50000; Abcam, Cambridge, UK, RRID: AB_2149618) and HuCD (mouse anti-HuCD 1/500; Molecular Probes, Merelbeke, Belgium, RRID: AB_221448), were used after 2 hr (at RT) in blocking buffer containing 0.5% Triton X-100 (Thermo Fischer, Merelbeke, Belgium) and 4% serum matched to the host of the secondary antibody. After three cycles of washing (PBS), fluorescently labelled secondary antibodies were then added for 2 hr (at RT). After final washing (PBS), tissues were mounted on a microscope slide in citifluor (Citifluor Ltd.,Leicester,UK). Confocal images were recorded using a Zeiss LSM 780 confocal microscope (Zeiss, Belgium). Additionally, α-synuclein (SC-7011-R, Santa Cruz Biotechnology, Dallas, Texas, US, RRID:AB_2192953) antibodies were used on one fixed submucous plexus of each subject. Confocal images and blinded analysis were performed to evaluate labelling patterns and possible aggregation in these tissues.
 
-## Statistical analysis
+### Statistical analysis
 
 All experiments and analyses were performed in a blinded fashion. Investigators were unblinded only after the analysis of imaging data for all subjects had been finalized. All results are presented as mean ± SD, except for Hoehn-Yahr scores, which are presented as median and interquartile ranges. Differences between groups were analysed using paired tests (for details see below). Imaging parameters were also correlated with clinical characteristics (age, SCOPA GI symptoms, UPDRS III off, disease duration) using linear correlations. Based on data distributions, there was no reason to assume any higher order relations. Non-parametric (Wilcoxon test/Spearman correlation) tests were used based on the outcome of Shapiro-Wilk tests for normal data distribution. A Bonferroni correction was used to correct for multiple testing.

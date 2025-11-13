@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.32833.001 The ultimate formation of a four-chambered heart allowing the separation of the pulmonary and systemic circuits was key for the evolutionary success of tetrapods. Complex processes of cell diversification and tissue morphogenesis allow the left and right cardiac compartments to become distinct but remain poorly understood. Here, we describe an unexpected laterality in the single zebrafish atrium analogous to that of the two atria in amniotes, including mammals. This laterality appears to derive from an embryonic antero-posterior asymmetry revealed by the expression of the transcription factor gene meis2b . In adult zebrafish hearts, meis2b expression is restricted to the left side of the atrium where it controls the expression of pitx2c , a regulator of left atrial identity in mammals. Altogether, our studies suggest that the multi-chambered atrium in amniotes arose from a molecular blueprint present before the evolutionary emergence of cardiac septation and provide insights into the establishment of atrial asymmetry.
+The ultimate formation of a four-chambered heart allowing the separation of the pulmonary and systemic circuits was key for the evolutionary success of tetrapods. Complex processes of cell diversification and tissue morphogenesis allow the left and right cardiac compartments to become distinct but remain poorly understood. Here, we describe an unexpected laterality in the single zebrafish atrium analogous to that of the two atria in amniotes, including mammals. This laterality appears to derive from an embryonic antero-posterior asymmetry revealed by the expression of the transcription factor gene meis2b. In adult zebrafish hearts, meis2b expression is restricted to the left side of the atrium where it controls the expression of pitx2c, a regulator of left atrial identity in mammals. Altogether, our studies suggest that the multi-chambered atrium in amniotes arose from a molecular blueprint present before the evolutionary emergence of cardiac septation and provide insights into the establishment of atrial asymmetry.
 
 ## Introduction
 
@@ -32,43 +32,101 @@ The mature mammalian heart comprises four chambers that serve the systemic and p
 
 The formation and patterning of the tetrapod heart relies on the precise integration of cells from distinct progenitor populations during cardiogenesis. These progenitor pools include cells from the bilateral cardiogenic mesoderm, proepicardial progenitor cells, and cardiac neural crest derived cells. Progenitors from the cardiogenic mesoderm are further grouped into the so called first and second heart fields (FHF and SHF, respectively) (Buckingham et al., 2005). The integration of these spatiotemporally and molecularly distinct cellular fields is key in cardiac development, as their contributions increase heterogeneity by the addition of distinct cell types, and also define morphogenetic boundaries that shape the heart. Lineage tracing in mammals has revealed that the FHF forms most of the left ventricle, whereas the SHF contributes to the right ventricle and outflow tract (Buckingham et al., 2005; Simões-Costa et al., 2005; Koshiba-Takeuchi et al., 2009; Jensen et al., 2013) thereby establishing a left-right organ asymmetry in the ventricle that is important during ventricular septation and morphogenesis. In contrast to the ventricular chambers, both atria contain cells from both heart fields, but exhibit discrete gene expression programs. Notably, the Paired-like homeodomain transcription factor 2 c (Pitx2c) gene is exclusively expressed in the left atrial myocardium in amphibians and mammals where it regulates a wide variety of genes with left atrial expression (Figure 1a) (Ryan et al., 1998; Franco et al., 2014). Taken together, apparently distinct mechanisms of cellular heterogeneity establish ventricular and atrial laterality in mammals to allow the systemic and pulmonary compartments of the heart to be physically and molecularly distinct. Consequently, mutations interfering with FHF or SHF development or atrial asymmetry are associated with cardiac patterning and septation defects in humans and constitute the leading cause of congenital disorders (Hoffman, 1995; Lin et al., 2012a; Li et al., 2015).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig1-v1.jpg)
+
+**Figure 1.:** (a) Comparison of different vertebrate hearts showing the emergence of distinct left and right chamber identities and atrial septation. (b) Schematic representation of the workflow for the identification of cardiac chamber-specific transcription factor gene expression. (c) Atrial gene expression level (signal intensity) and chamber-specific enrichment in the atrium (fold change >0) or ventricle (fold change <0). Red line marks 2.5 (log2) fold cutoff. Highly enriched atrial transcription factor genes (blue), ventricular (myh7l) and atrial (myh6) chamber-specific myosin genes (orange) are shown. (d) Atrial enriched transcription factor genes (log2 fold change >2.5). (e–f) Whole-mount in situ hybridization on adult zebrafish hearts; myh6 expression covers the entire atrium while meis2b expression is restricted to the left side of the atrium. (g–h) In situ hybridization on adult cardiac sections; myl7 is expressed in all cardiomyocytes while meis2b is expressed on the left side of the atrium in the wall and trabeculae (see Figure 1—figure Supplement 1a for higher magnification). (i–i’) Brightfield and fluorescence images of a 4 mpf Tg(meis2b-reporter) zebrafish atrium. (j–j’) High-magnification confocal projections of a 4 mpf Tg(meis2b-reporter) heart showing expression of the Tg(meis2b-reporter) in the myocardium (Tg(meis2b-reporter)+/MF20+/Fli cells) but not the endocardium (Tg(meis2b-reporter)-/MF20-/Fli1+cells). (e–f, i–i’) Red and white dotted lines delineate the atrium; (i’) yellow line delineates Tg(meis2b-reporter) expression. Scale bars: (e–i) 1 mm, (j’) 50 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) High magnification of Figure 1g showing the asymmetric expression of meis2b in the atrium of the adult zebrafish heart (red arrow, meis2b + atrial domain; black arrow, meis2b- atrial domain). (b) Schematic of the TgBAC(meis2b:GAL4FF);Tg(5xUAS:EGFP) meis2b reporter system. (c–f) Comparison of meis2b expression as detected by whole-mount in situ hybridization and Tg(meis2b-reporter) expression at 24 and 48 hpf. Note: in situ hybridization staining reaction was stopped before spinal CNS expression was fully detected in order to avoid overstaining of the head region. Scale bars: 500 µm.
+
 Several transcription factors including Tbx5, Gata4, Nkx2.5 and Isl1 have been implicated in controlling lineage contribution from the FHF and SHF (Francou et al., 2013; Ang et al., 2016). However, it remains enigmatic how atrial left-right asymmetry is established in the developing tetrapod heart, in part because of the limitations posed by mammalian model systems when it comes to in vivo imaging. Despite its simple two-chambered heart, the zebrafish shows a surprisingly conserved cardiac ontogeny (Staudt and Stainier, 2012), including a SHF that contributes to the outer curvature of the ventricle, the outflow tract and atrium (Zhou et al., 2011; Witzel et al., 2012; Guner-Ataman et al., 2013). Hence, studies of cardiac development in zebrafish have contributed significantly to our understanding of the mechanisms underlying lineage diversity and spatiotemporal differentiation (Witzel et al., 2012; Guner-Ataman et al., 2013; Stainier et al., 1993; Lee et al., 1994; Mosimann et al., 2015; Rydeen and Waxman, 2016). Whether the single zebrafish atrium also shows myocardial asymmetry along its left-right axis has not been investigated thus far. Here, we systematically address this question using transcriptomic approaches, combined with the generation of transgenic reporter lines, high-resolution confocal microscopy, lineage tracing, as well as knock-down and loss-of-function experiments. We describe for the first time the existence of two different transcriptional compartments in the atrium of the zebrafish heart, which are analogous to the left and right atria of mammals. Furthermore, we show that this asymmetry appears to be established from two distinct antero-posterior fields during embryonic heart development. We find that the homeobox transcription factor Meis2b is important to establish and maintain left-right asymmetry in the zebrafish atrium, and that it regulates atrial morphogenetic growth and conduction. Altogether, our findings suggest that the multi-chambered heart in mammals evolved from transcriptional compartments present in the piscine heart.
 
 ## Results
 
-## Identification of asymmetrically expressed transcription factor genes in the zebrafish atrium
+### Identification of asymmetrically expressed transcription factor genes in the zebrafish atrium
 
 We hypothesized that the four-chambered heart evolved from preexisting cellular compartments rather than the introduction of new structures. To test this hypothesis, we examined in zebrafish atrial-specific transcription factor genes which could potentially be involved in establishing compartments across the atrial left-right axis (Figure 1b). Microarray analysis revealed a strong enrichment of pitx2 transcripts in the zebrafish atrium, reflecting the principal expression domain of its orthologues in the three- and four-chambered hearts of amniotes (Ryan et al., 1998; Campione et al., 1999; Tessari et al., 2008) (Figure 1b–d). In humans, PITX2 mutations can cause Axenfeld-Rieger syndrome and are associated with defects in atrial conduction and septation (Mammi et al., 1998; Gudbjartsson et al., 2007). In mice, Pitx2 deficiency causes atrial and ventricular septal defects, right ventricular and right atrial enlargement, and there is strong evidence that Pitx2 is also key in maintaining left-right atrial identity and sinoatrial node formation (Franco et al., 2014; Tessari et al., 2008). In addition to pitx2, we detected a high atrial enrichment of the myeloid ecotropic integration site 2b (meis2b) transcription factor gene. This gene was an interesting candidate, as mutations in its human orthologue, MEIS2, are strongly implicated in atrial and ventricular septation defects (Louw et al., 2015). Meis2-deficient mice display outflow tract malformations and persistent truncus arteriosus (Machon et al., 2015), while zebrafish meis2b morphants reportedly show cardiac looping defects and a decreased heart rate (Paige et al., 2012). Analysis of chromatin remodeling further indicates a role for MEIS2 during myocardial differentiation of human embryonic stem cells (Paige et al., 2012). Interestingly, using in situ hybridization, we found asymmetric expression of meis2b in the adult zebrafish heart, as it is exclusively expressed in the left compartment of the mature atrium (Figure 1e–h, Figure 1—figure Supplement 1a). To investigate meis2b expression in detail using live imaging, we established a transgenic reporter system (TgBAC(meis2b:GAL4FF)bns15;Tg(5xUAS:EGFP)nkuasgfp1a) [abbreviated Tg(meis2b-reporter)], which recapitulates the embryonic and adult meis2b expression as assessed by in situ hybridization (Figure 1i–i’, Figure 1—figure Supplement 1a–f). Notably, Tg(meis2b-reporter) expression is restricted to the left compartment of the adult zebrafish atrium, where it is expressed in the myocardial wall and trabecular myocardium but not expressed in other cardiac cells (Figure 1j–j’).
 
-## Left atrial compartments share gene expression programs in fish and mammals
+### Left atrial compartments share gene expression programs in fish and mammals
 
 To better understand the myocardial compartmentalization across the atrial left-right axis in the meis2b reporter line, we compiled an expression profile of the Tg(meis2b-reporter)-positive and -negative domains. We dissected the respective domains in individual hearts (n = 6), isolated RNA and identified the differentially expressed genes (Figure 2a). Interestingly, we found a number of genes whose expression showed significant enrichment in the Tg(meis2b-reporter)-positive domain (Figure 2b). Notably, besides meis2b itself, the five most significantly enriched genes were the Pentraxin-related protein gene ptx3a, the mitochondrial creatine kinase encoding gene ckmt2a, a muscle-specific heat-shock protein hspb6a, a zebrafish orthologue of the Norepinephrine transporter encoding gene Slc6a2, si:ch211-117c9.5, and importantly pitx2c, a marker of left atrial identity in mammals (Figure 2b). If the meis2b-positive left atrial compartment of zebrafish shares an evolutionary origin with the left atrium of mammals, we speculated that genes with left atrial expression in zebrafish would show left atrial enrichment in mammalian hearts as well. We were able to identify direct mammalian orthologues of the five most significantly enriched zebrafish genes and investigated their expression in a previously published expression dataset for atrial asymmetry in mice (Kahr et al., 2011). Indeed, we found that all five orthologues were robustly expressed in the mammalian heart and showed strong enrichment within the group of genes with significantly higher expression in the left atrium of mouse hearts (Figure 2c). To validate these results, we isolated RNA from mouse left and right atria and, by performing RT-qPCR analysis, found that the expression of Pitx2c, Slc6a2, Ckmt2 and Hspb6 was significantly enriched in the left atrium (Figure 2d–h). Notably, we further found that in Xenopus tropicalis, the expression of Pitx2c was also significantly enriched in the left atrium compared to the right one (data not shown). As Pitx2c serves as a marker of left atrial identity in mice, we asked whether pitx2c and meis2b share a common expression domain within the zebrafish atrium. Hence, we performed fluorescent in situ hybridization experiments for pitx2c expression in the meis2b reporter line and found that meis2b and pitx2c expression largely overlap in the adult zebrafish atrium and are restricted to the left atrial compartment (Figure 2i–i’’’).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig2-v1.jpg)
 
-**Figure 2.:** (a) Schematic illustrating the dissection of a Tg(meis2b-reporter) atrium into Tg(meis2b-reporter)-positive and -negative domains for RNAseq analysis. (b) Global heatmap depicting Z-score of differentially expressed genes between Tg(meis2b-reporter)-positive and -negative domains (m2b-pos and m2b-neg, respectively). Red color indicates higher expression and blue color lower expression in the respective sample listed at the bottom of each column. (c) Schematic representation of asymmetrically expressed transcripts in mouse atria as determined by microarray analysis (Kahr et al., 2011); only significantly differentially expressed genes included (3695/25697 probes). Green: significantly left atrial enriched transcripts; grey: significantly right atrial enriched transcripts. (d–h) RT-qPCR analysis of left vs. right atria in adult mouse shows that the orthologues of the most significantly enriched genes in the Tg(meis2b-reporter)-positive domain are also significantly enriched in the left atrium in mouse. Plots show relative gene expression in left atrium with respect to right atrium (n = 5). (i–i’’’) Wholemount fluorescent in situ hybridization (RNAscope) for pitx2c expression on a Tg(meis2b-reporter) zebrafish atrium [DAPI in blue, Tg(meis2b-reporter) in white, pitx2c in red]. (b–c, e) si:ch211-117c9.5 is a zebrafish orthologue of Slc6a2. (i–i’’) Red and white dotted lines delineate the atrium; (i’) yellow line delineates Tg(meis2b-reporter) expression. (d–h) Two-tailed student t-tests were performed, *p<0.05; **p<0.005; ***p<0.0005; error bars indicate ±SD. Scale bars: (i) 100 µm, (i’’’) 25 µm.10.7554/eLife.32833.005Figure 2—source data 1.
+**Figure 2.:** (a) Schematic illustrating the dissection of a Tg(meis2b-reporter) atrium into Tg(meis2b-reporter)-positive and -negative domains for RNAseq analysis. (b) Global heatmap depicting Z-score of differentially expressed genes between Tg(meis2b-reporter)-positive and -negative domains (m2b-pos and m2b-neg, respectively). Red color indicates higher expression and blue color lower expression in the respective sample listed at the bottom of each column. (c) Schematic representation of asymmetrically expressed transcripts in mouse atria as determined by microarray analysis (Kahr et al., 2011); only significantly differentially expressed genes included (3695/25697 probes). Green: significantly left atrial enriched transcripts; grey: significantly right atrial enriched transcripts. (d–h) RT-qPCR analysis of left vs. right atria in adult mouse shows that the orthologues of the most significantly enriched genes in the Tg(meis2b-reporter)-positive domain are also significantly enriched in the left atrium in mouse. Plots show relative gene expression in left atrium with respect to right atrium (n = 5). (i–i’’’) Wholemount fluorescent in situ hybridization (RNAscope) for pitx2c expression on a Tg(meis2b-reporter) zebrafish atrium [DAPI in blue, Tg(meis2b-reporter) in white, pitx2c in red]. (b–c, e) si:ch211-117c9.5 is a zebrafish orthologue of Slc6a2. (i–i’’) Red and white dotted lines delineate the atrium; (i’) yellow line delineates Tg(meis2b-reporter) expression. (d–h) Two-tailed student t-tests were performed, *p<0.05; **p<0.005; ***p<0.0005; error bars indicate ±SD. Scale bars: (i) 100 µm, (i’’’) 25 µm.
 
-## Atrial laterality appears to derive from two distinct antero-posterior progenitor fields
+### Atrial laterality appears to derive from two distinct antero-posterior progenitor fields
 
 Little is known about how atrial laterality is established during development. To determine the developmental origin of the observed asymmetric meis2b expression, we first performed in situ hybridization studies. We observed that meis2b expression appears bilaterally at the 12 somite stage (ss) within the cardiogenic anterior lateral plate mesoderm (ALPM) but is restricted to its posterior aspect (Figure 3—figure supplement 1) (Paige et al., 2012). The cells of the bilateral ALPM collectively migrate towards the midline where they fuse to form the cardiac disc (Stainier et al., 1993; Trinh and Stainier, 2004). Consistently, Tg(meis2b-reporter) expression was observed only within the posterior aspect of the cardiogenic ALPM (Figure 3a, Figure 3—figure supplement 1j). Migration to the midline and fusion of the bilateral fields lead to the formation of the cardiac disc which is strikingly asymmetric based on gene expression. At the 20 to 23 ss, once the cardiac disc is formed, Tg(meis2b-reporter)-positive cells form a posterior disc compartment (PDC) establishing a sharp boundary with the anterior part of the disc (ADC) which remains Tg(meis2b-reporter) negative (Figure 3b–c). At this stage, the endocardial progenitors are located ventral to the myocardium, and pass through the central ring of the cardiac disc to connect dorsally to the aortic arches (Stainier et al., 1993; Bussmann et al., 2007) (Figure 3—figure supplement 2; Video 1). Notably, the ADC and PDC are rearranged into a dorso-ventral configuration as the heart tube starts to extend (Smith et al., 2008; Rohr et al., 2008), with the Tg(meis2b-reporter)-positive cells located on the ventral side of the tube (Figure 3d–e) (Figure 3—videos 1–5). Furthermore, we observed that the Tg(meis2b-reporter)-positive PDC comprised 54% to 62% of all cardiomyocytes from 17 to 30 ss (Figure 3a, Figure 3—figure Supplement 2d).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig3-v1.jpg)
+
+**Figure 3.:** Confocal projections of Tg(meis2b-reporter);Tg(myl7:mCherry) embryos between the 17 ss (16 hpf) and 50 hpf. (a-c) Myocardial progenitors migrate to the midline and form the cardiac disc, where Tg(meis2b-reporter) expression is confined to the posterior compartment of the cardiac disc (PDC). (d) Cardiomyocytes forming the cardiac disc appear to migrate clock-wise, rotating the forming heart tube. (e) Tg(meis2b-reporter)-expressing cells are located on the ventral side of the heart tube. (f) At 50 hpf, Tg(meis2b-reporter) expression appears on the left side of the atrium, and in a small part of the ventricle near the AV canal. (a’-f’) 3D rendered sections (as indicated in the third column, white dotted lines) of the hearts shown in a-f (see Figure 3—videos 1–6 for full reconstructions). (a’’-f’’) Schematic representation of Tg(meis2b-reporter);Tg(myl7:mCherry) expression from (a’-f’). White dotted lines delineate the heart, yellow dotted lines delineate Tg(meis2b-reporter) expression. White dotted lines in third column indicate the level of the sagittal and transverse views. First to third columns: ventral views, anterior up; (a’-e’, a’’-e’’) sagittal views, anterior up; (f’, f’’) transverse views, dorsal up. Scale bars: (a-e’) 100 µm, (f’) 50 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Whole-mount in situ hybridization for meis2b (a–f’) and myl7 (g–i) expression at several embryonic stages. Arrows point to expression of meis2b (d’–f’) and the cardiomyocyte marker myl7 (g–i) in the same region of the ALPM. (j) Confocal projection of Tg(meis2b-reporter) expression at 18 ss. (a–c) Lateral views, anterior to the left; (d–i) Dorsal views, anterior to the left; (j) red dotted line delineates the cardiac disc. Scale bars: 100 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** 3D surface rendering of Tg(meis2b-reporter);Tg(kdrl:Hsa.HRAS-mCherry) embryos at 19 to 26 ss. (a) At 19 ss, endocardial cells are located ventral to the myocardium and pass through the ring of myocardial cells to connect dorsally to the aortic arches. (b) At 22 ss, endocardial cells cover most of the ventral side of the myocardium in the cardiac disc. (c) At 26 ss, Tg(meis2b-reporter) expression is observed in the ventral side of the heart tube, while endocardial cells are lining the interior of the heart tube. Left column: ventral views, anterior up. Second column: dorsal views, anterior up. Third and fourth column: transverse views, dorsal up. (d) Percentage of Tg(meis2b-reporter)-positive cardiomyocytes with respect to the total number of myl7+ cardiomyocytes from 17 to 30 ss. Scale bars: 100 µm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/32833/elife-32833-video1.mp4.jpg)
+
 At 50 and 72 hr post fertilization (hpf), after cardiac looping and chamber ballooning have occurred, the Tg(meis2b-reporter)-positive cells reside in the dorsal part of the atrium, parts of the sinus venosus, and a small part of the ventricle near the atrio-ventricular canal (AVC) (Figure 3f; Figure 4a,f–f`; Figure 3—video 6, Figure 4—video 1). While Tg(meis2b-reporter) expression is switched off in the ventricle between 4 and 6 days post-fertilization (dpf), Tg(meis2b-reporter)-positive cells populate the left atrial compartment at this stage (Figure 4—video 2). As atrial meis2b expression appears to be stable during development, it reveals a persistent left-right asymmetry in the adult atrium (Figure 4b–c,g–h’). Together, these findings strongly support the existence in zebrafish of atrial compartmentalization from early stages and throughout life (summarized in Figure 4d–h’). To our knowledge, a molecular asymmetry in the single atrium of teleosts has not been described. Altogether, our data provide evidence that asymmetric patterns of gene expression existed in the atrium of fish hearts prior to the evolutionary emergence of the inter atrial septum.
 
-## Atrial asymmetry is established independently of SHF contribution
+![Figure 4.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig4-v1.jpg)
+
+**Figure 4.:** (a) At 72 hpf, Tg(meis2b-reporter) expression is observed near the sinus venosus (white arrow), the dorsal and distal sides of the atrium, and a small part of the ventricle near the atrioventricular canal (red arrow) (n = 8) (Figure 4—video 1). (b) At 6 dpf Tg(meis2b-reporter) expression is found exclusively in the anterior-left compartment of the atrium at (n = 5) and in adult stages (c) in the left side of the atrium (n = 15) (Figure 4—video 2). (d-h’) Schematic of Tg(meis2b-reporter) expression throughout heart development [Tg(meis2b-reporter) expression in cardiomyocytes (cyan); meis2b-negative myocardium (red); (e) dotted line indicates the atrioventricular boundary]. (a, d–f) ventral views, anterior up; (b–c, g–h) lateral views, anterior to the left; (f’) dorsal view, anterior up; (h’) lateral view, anterior to the right. A, atrium; V, ventricle. (b–c) white dotted lines delineate the heart, yellow dotted lines delineate Tg(meis2b-reporter) expression. Scale bars: (a–b) 100 µm, (c) 500 µm.
+
+### Atrial asymmetry is established independently of SHF contribution
 
 The establishment of cardiac laterality from two distinct antero-posterior fields has not been described before. To confirm our observations, we lineage traced cells within the cardiac disc by fluorescent labeling and confocal imaging. We injected one-cell stage zebrafish embryos with mRNA encoding KikGR, a photoconvertible green-to-red fluorescent protein, leading to green KikGR expression throughout the developing embryo. After locating the cardiac disc at the 23 ss, photoconversion of the PDC was performed using a confocal laser scanning microscope. Subsequent tracing of the photoconverted red cells revealed their exclusive contribution to the left side of the atrium at 48 hpf, similar to what we observed in the Tg(meis2b-reporter) line (Figure 5a–b’’). Conversely, cells of the ADC contributed to the right side of the atrium at 48 hpf (Figure 5c–d’’; Figure 5—videos 1 and 2). Together, these results reveal a process that establishes atrial left-right asymmetry from an antero-posterior embryonic asymmetry.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig5-v1.jpg)
+
+**Figure 5.:** (a, c) Cardiac disc (dotted circle) at 23 ss. (b–b’) Confocal projections of photoconverted kikGR with Tg(myl7:BFP-CAAX) hearts (yellow lines) show that cells from the PDC populate the left side of the atrium while (d–d’) cells from the ADC populate the right side of the atrium (white dotted lines). (b’’, d’’) Single optical planes from b’ and d’, respectively (cardiomyocytes, green arrows; endocardial cells, white arrows). (e) Tg(meis2b-reporter) expression and antibody staining for Isl1 in the 48 hpf heart [meis2b+/Isl1+ (white arrows), meis2b+/Isl1- (green arrows) and meis2b-/Isl1+ (pink arrows) cardiomyocytes]. (f) Confocal projections of control uninjected and isl1 MO injected 48 hpf Tg(meis2b-reporter);Tg(myl7:mCherry) hearts [white lines delineate Tg(meis2b-reporter) expression]. Scale bars: 100 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) At 48 hpf, the heart rate of isl1 morphants (n = 10) is significantly lower than that of uninjected (n = 13) or control morpholino injected (n = 12) embryos, and similar to that of isl1 mutant embryos (n = 14), in agreement with previously published data (de Pater et al., 2009). The heart rate of isl1 mutants that were injected with isl1 morpholino (n = 3) do not show significant difference with that of isl1 mutants or morphants. (b) Antibody staining for Isl1 in 48 hpf Tg(myl7:HRAS-EGFP) hearts (arrowheads) showing decreased levels of Isl1 protein in isl1 morphants and mutants. Altogether, these data suggest that the observed cardiac phenotypes in isl1 morphants are not caused by non-specific effects from the morpholino injections. Student t-tests were performed, *p<0.05; **p<0.005; ***p<0.0005; ns, not significant; error bars indicate ±SD. Scale bars: 100 µm.
+
 The majority of cells that form the early heart tube are derived from FHF progenitors (Liu and Stainier, 2012). Subsequently, the SHF contributes cells at its cranial and caudal boundaries (Guner-Ataman et al., 2013; de Pater et al., 2009; Hami et al., 2011). As Tg(meis2b-reporter) is expressed in a subset of the atrial myocardium at 48 hpf, we tested whether the Tg(meis2b-reporter)-negative atrial myocardium was derived from the SHF. Using immunostainings for the established venous SHF marker Isl1, we tested for a potential inverse correlation between the Tg(meis2b-reporter) expression and Isl1-positive cells (Figure 5e). As previously reported (Witzel et al., 2012), we detected Isl1 expression at the venous pole of the atrium where it is essential for SHF-derived cardiomyocyte differentiation and contribution to the heart tube. However, Isl1 expression did not correlate with Tg(meis2b-reporter) expression in the heart. We could detect Isl1 in Tg(meis2b-reporter)-positive and -negative cells (Figure 5e), suggesting that asymmetric meis2b expression is not exclusively associated with the FHF or SHF. However, if a substantial contribution of the SHF was involved in the establishment of a meis2b-negative population in the atrium, a knockdown of isl1 should reduce it significantly. To test this hypothesis, we injected a previously published isl1 morpholino into the Tg(meis2b-reporter) line (Witzel et al., 2012). Interestingly, while the injection of isl1 morpholino resulted in a significant decrease in Isl1 immunostaining, and did not show any obvious toxic effects, the asymmetric expression of meis2b within the heart was unaffected at 48 hpf (Figure 5f, Figure 5—figure Supplement 1; Figure 5—videos 3 and 4), indicating that SHF contribution is not required to establish atrial asymmetry. These findings are consistent with our current understanding on the establishment of atrial asymmetry in mammals: in the mammalian heart, while the SHF is important for right ventricular formation, it contributes equally to both atrial chambers and thus is not essential to establish right atrial identity.
 
-## Loss of meis2b causes dysmorphic atrial growth and conduction defects
+### Loss of meis2b causes dysmorphic atrial growth and conduction defects
 
 In mammals, atrial asymmetry is important for cardiac septation, morphogenesis and conduction (Koshiba-Takeuchi et al., 2009; Tessari et al., 2008; Wang et al., 2010; Campione and Franco, 2016). To determine the role of Meis2b in compartmentalization of the teleost atrium, we induced a frameshift mutation in the highly conserved Hth/Meis domain (Bürglin, 1997; Longobardi et al., 2014) of meis2b, predicted to lead to a truncated protein lacking most functional domains, including the DNA-binding homeodomain (Figure 6—figure supplement 1). In contrast to previously published knockdown experiments (Paige et al., 2012), no early cardiac morphogenetic defect was observed in meis2b-/-, and cardiac jogging did not appear to be affected (Figure 6—figure supplement 2). However, as early as 3 weeks post-fertilization (wpf), the ratio of atrial to ventricular surface areas was significantly increased in meis2b-/- animals, while body length and ventricular size were unaffected (Figure 6a–c). Using confocal imaging in the Tg(myl7:LIFEACT-GFP) background (Reischauer et al., 2014), we assessed atrial myocardial specification and overall myofibril organization. We did not detect architectural defects other than the previously noted overgrowth of the atrium (Figure 6d), which results in a dysmorphic atrium and, in some animals, in pericardial bulging (Figure 6e–h). As previous reports have suggested an important role for other Meis proteins in the regulation of the myocardial cell cycle (Mahmoud et al., 2013), we used EdU incorporation assays in the pan myocardial Tg(−5.1myl7:nDsRed2) background to test whether the observed phenotype in meis2b-/- was a consequence of atrial hypertrophy or increased myocardial proliferation. Strikingly, meis2b-/- animals showed 10.02% (±1.12) of all atrial cardiomyocytes positive for EdU incorporation after a 4-day exposure in contrast to 2.78% (±0.49) in wild-type (WT) animals, suggesting a major contribution of proliferation to the abnormal atrial growth in meis2b-/- animals (Figure 6i).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig6-v1.jpg)
+
+**Figure 6.:** (a) meis2b-/- larvae exhibit a significant increase in the ratio of atrial to ventricular surface area, while (b) ventricular surface area and (c) body length are not affected compared to WT siblings. (d) Analysis of Tg(myl7:LIFEACT-GFP) fish reveals no obvious defects in atrial myofibrillar architecture in 4 wpf meis2b-/-. (e–h) Adult meis2b-/- display pericardial bulging (arrow) due to abnormal atrial growth. (i) meis2b-/- exhibit a significant increase in atrial cardiomyocyte (CM) proliferation at 3 mpf. (j–k) Cardiac physiology assessed using electrocardiography (ECG) at 5 and 12 mpf. (j) meis2b-/- exhibit a significant increase in PR-segment variability compared to WT siblings, while P-duration and ventricular conduction (QRS) appear unaffected at 5 mpf. (k) At 12 mpf, PR-segment, P-duration and QRS interval are significantly affected in meis2b-/-. (l–m) Representative ECGs of 12 mpf animals show reduced PR-segment duration (red line) and multiple P-waves (arrow) in meis2b-/-. Scale bars: (d) 100 µm, (e–h) 1 mm. (a–c, i) One-tailed student t-tests were performed. (j–k) F-test and Bartlett’s test were performed. Significant differences compared with control are indicated (*p<0.05; **p<0.005; ***p<0.0005); error bars indicate ± SD. A, atrium; V, ventricle; ns, not significant.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Illustration of the genomic structure of meis2b. Exon 4 (red asterisk), which encodes part of the Hth/Meis (HM) domain, was targeted by site directed mutagenesis with a TAL effector nuclease (TALEN). (b) Sequence of the left and right TALEN arms. (c) Chromatogram showing the induced frameshift allele which carries a 10 base pair deletion and three base pair insertion. (d) Alignment of the translated coding sequence of the HM-domain of different species, illustrating the high level of conservation from arthropods to mammals at the site of the lesion. Translated meis2bs988 coding sequence shows a premature stop 16 amino acids after the induced frameshift mutation. The resulting predicted protein lacks most functional domains, including the DNA-binding domain and the C-terminal transactivation domain (TAD).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** General body laterality is not affected in meis2b-/-. Cardiac jogging was assessed from the dorsal side (anterior to the top) using the Tg(myl7:LIFEACT-GFP) line, as shown in the picture on the right. (a) Cardiac jogging is not affected in meis2b-/-. (b) Assessment of cardiac jogging in three independent crosses of Tg(myl7:LIFEACT-GFP) WT fish.
+
 We next determined how loss of Meis2b affects cardiac physiology by performing electrocardiographic (ECG) analysis and observed that adult meis2b-/- frequently display cardiac conduction defects (Figure 6j–k). In 5 mpf animals, we found a significantly increased variability in P-R segment duration while P wave duration and ventricular conduction (QRS) appeared unaffected, suggesting a functional defect of the atrial and atrio-ventricular conduction systems in the absence of Meis2b (Figure 6j). In 12 mpf fish, these defects became more severe and we observed high variability in P wave duration, extremely long or short P-R segments and, in a few cases, even prolonged ventricular conduction (Figure 6k). Most frequently, shortened P-R segments and broad, biphasic P waves (Figure 6l–m) were observed (Weinsaft et al., 2014). Taken together, these data suggest that meis2b controls atrial morphogenetic growth and directly or indirectly the patterning and function of the atrial conduction system.
 
-## Meis2b positively regulates cardiac pitx2c expression
+### Meis2b positively regulates cardiac pitx2c expression
 
 Meis proteins evolved from their invertebrate ancestor Homothorax which acts together with Extradenticle (Pbx) and a variety of Hox proteins to regulate the transcription of target genes (Merabet and Mann, 2016). In mammals, several splice variants of MEIS2 have been described including isoforms that lack a C-terminal transactivation domain (TAD), and thus can act as transcriptional repressors (Hyman-Walsh et al., 2010). To test whether the zebrafish paralogs meis2a and meis2b encode transcriptional activators or repressors, we tested their transactivation potential in cultured cells. Using PCR amplification on adult cardiac cDNA, we were able to isolate two different splice isoforms for meis2a and one for meis2b. Fusions of the C-terminus of all three cardiac meis2 isoforms to a GAL4-DNA Binding Domain conferred strong transactivation potential (Figure 7—figure supplement 1), suggesting that all cardiac Meis2b isoforms function as positive regulators of transcription. To identify potential downstream targets, we next performed expression profiling of whole larvae, entire hearts and dissected atrial chambers of meis2b-/- and meis2b+/- siblings at different developmental stages (Figure 7a), resulting in a list of 10 atrial-enriched genes with reduced expression in cardiac tissues of meis2b-/- animals at all stages when compared to meis2b+/- siblings. Notably, for three of these genes, proximal binding sites for MEIS1/2 have been identified in previous ChIP-seq experiments performed on E11.5 mouse embryos marking them as potential direct targets (Figure 7b) (Penkov et al., 2013). Notably, the list of genes with reduced expression included pitx2c, a key gene of left atrial identity in mammals. Subsequent testing using RT–qPCR confirmed a strong 4.7 (±0.18) log2 fold reduction of pitx2c transcripts in adult meis2b mutant atria compared to WT siblings (Figure 7c).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig7-v1.jpg)
+
+**Figure 7.:** (a) Overview of the different samples used for microarray comparison, showing the stage, type of tissue and genotype of the compared samples. The bottom row shows the expected outcome of downstream genes potentially regulated by Meis2b. (b) Table showing the 10 genes fitting all selection criteria (for genes with n > 1, the values are averaged). Cis-regulatory MEIS1/2 DNA binding sites in orthologous mouse genes were extracted from (Penkov et al., 2013). (+, proximal binding site detected; -, no proximal binding site detected)]. (c) RT-qPCR analysis in meis2b-/- vs WT sibling atria. (d) Representation of the Pitx2 locus in mouse indicating the location of a previously reported MEIS1/2 ChIP-seq peak at the 3’ end of the regulatory region (RR) (ENSMUSR00000406450) (Penkov et al., 2013). A 53 bp conserved sequence inside the ChIP-seq peak is shown together with the MEIS1/2 binding motif. (e) ChIP-qPCR analysis on E12 embryonic mouse trunks of MEIS1/2 on the Pitx2 locus shown in (d), on the Hoxa5 locus (a known MEIS1/2 direct target), and on Myh6 locus (used as a negative control). One-tailed student t-tests (c), and one-sample t-tests (e) were performed, significant differences compared with control are indicated (*p<0.05; **p<0.005); error bars indicate ±SD.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The transactivation potential of cardiac Meis2 isoforms was investigated in vitro. (a) Alignment of the C-terminus of all Meis2a/b isoforms as detected by PCR in adult cardiac cDNA pools. (b) HEK293T cells were transiently co-transfected with plasmids encoding GAL4-DBD alone or GAL4-DBD fused to each of the Meis2 C-terminus shown in (a) together with an UAS:Luciferase reporter plasmid. Luciferase induction represents respective transactivation potential. Bar = median, box = 95% CI, whiskers = min/max, TAD = Transactivation domain. Error bars indicate ±SD.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/32833/elife-32833-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** The 53 bp long element found inside the MEIS1/2 ChIP-seq peak is highly conserved in many mammalian species and contains the MEIS1/2 binding motif (black square).
 
 Penkov et al. (2013) performed a ChIP-seq experiment using antibodies that recognize MEIS1 and MEIS2 isoforms. They found in addition to genes in the Hoxa cluster, a region annotated as regulatory (Ensembl, ENSMUSR00000406450), located downstream of the Pitx2 locus with the closest transcriptional start site belonging to Pitx2c. Interestingly, this 187 bp ChIP-seq peak contains a highly conserved 53 bp long element, which includes the MEIS1/2 binding motif (Figure 7d, Figure 7—figure Supplement 2). To validate these results, we performed a ChIP-qPCR analysis on E12 embryonic mouse trunks using the antibodies employed by Penkov et al. (2013). We performed qPCR on two regions of the Pitx2 element flanking the MEIS1/2-binding motif, on the Hoxa5 locus (a known direct target of MEIS1/2 (Penkov et al., 2013)), and on Myh6 (a region where no MEIS1/2 binding site is present). Interestingly, we observed that MEIS1/2 binds Pitx2 8.87 (±1.92) to 10.56 (±2.20) fold higher than Myh6, while enrichment for the MEIS1/2-binding motif within the Hoxa5 locus was 20.21 fold (±7.21) (Figure 7e). These data suggest that MEIS1/2 can directly bind the regulatory region next to Pitx2 in mouse. Taken together, our data showing the overlapping expression patterns of meis2b and pitx2 along with the reduced pitx2c expression in meis2b mutants suggest that meis2b acts upstream of pitx2c in the heart. These findings are further supported by our ChIP-qPCR data showing that MEIS1/2 directly binds the mouse Pitx2 locus in vivo as well as the similar MEIS2 and PITX2 mutant phenotypes in human and mouse.
 
@@ -84,11 +142,123 @@ Intriguingly, pitx2c, the evolutionary conserved marker for left atrial identity
 
 ## Materials and methods
 
-## Zebrafish husbandry and strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>Tg(5xUAS:EGFP)nkuasgfp1a</td>
+      <td>doi: 10.1073/pnas0.0704963105</td>
+      <td>ZFIN_ZDB-GENO-080528–1</td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>Tg(myl7:mCherry)chb1</td>
+      <td>doi: 10.1016/j.ydbio.2011.12.004</td>
+      <td>ZFIN_ZDB-GENO-110720–1</td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>meis2bs988</td>
+      <td>This paper</td>
+      <td>ZFIN: ZDB-ALT-180327-7</td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>TgBAC(meis2b:Gal4FF)bns15</td>
+      <td>This paper</td>
+      <td>ZFIN: ZDB-ALT-180330-1</td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>Tg(myl7:BFP-CAAX)bns193</td>
+      <td>This paper</td>
+      <td>ZFIN: ZDB-ALT-180327-8</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Fli1 Rabbit Polyclonal</td>
+      <td>Abcam, UK.</td>
+      <td>ab133485; RRID: AB_2722650</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MF20 Mouse Monoclonal</td>
+      <td>Developmental Studies Hybridoma Bank, US.</td>
+      <td>MF20-s; RRID: AB_2147781</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MEIS1/2</td>
+      <td>doi: 10.1016/j.celrep.2013.03.029</td>
+      <td>Produced at CNIC. K830; K844</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>isl1 ATG morpholino</td>
+      <td>doi: 10.1242/dev.02355; Gene Tools, LLC, US.</td>
+      <td>ZFIN_ZDB-MRPHLNO-060728–3</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope</td>
+      <td>Advanced Cell Diagnostics, US.</td>
+      <td>Multiplex Fluorescent kit</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ZEN Black and Blue 2012</td>
+      <td>Zeiss, Germany.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>NIS-Elements</td>
+      <td>Nikon Instruments Inc.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Imaris - Version 8.4.0.</td>
+      <td>Bitplane, UK.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>LabChart 8</td>
+      <td>ADInstruments, Australia.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>PerlPrimer - Version 7</td>
+      <td>doi: 10.1093/bioinformatics/bth254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads Protein G</td>
+      <td>Invitrogen, Germany.</td>
+      <td>10003D</td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish husbandry and strains
 
 All zebrafish husbandry was performed under standard conditions in accordance with institutional (MPG) and national ethical and animal welfare guidelines. The following transgenic and mutant lines were used in this study: Tg(myl7:LIFEACT-GFP)s974 (Reischauer et al., 2014), Tg(−5.1myl7:nDsRed2)f2 (Mably et al., 2003), Tg(5xUAS:EGFP)nkuasgfp1a (Asakawa et al., 2008), Tg(myl7:mCherry)chb1 (Langenbacher et al., 2012), Tg(myl7:EGFP-Hsa.HRAS)s883 (D'Amico et al., 2007), Tg(kdrl:Hsa.HRAS-mCherry)s896 (Chi et al., 2008), and isl1sa0029 (de Pater et al., 2009).
 
-## Generation of transgenic and mutant lines
+### Generation of transgenic and mutant lines
 
 TALEN technology was used to target meis2b. TALEN-binding sites were selected using TALEN Targeter 2.0 (tale-nt.cac.cornell.edu) for exon 4 of meis2b (NM_130910.1), and constructs were assembled as previously described (Cermak et al., 2011; Bedell et al., 2012) to bind the target sequences 5’-TTGAGAAGTGCGAGCT-3’ and 5’-AGAGAGCCGGGAGTCGCTGGA-3’ for the right and left arms, respectively. mRNA encoding the TALEN arms was synthesized using the mMESSAGE mMachine Kit (Ambion), and 100 pg per TALEN arm were injected into one-cell stage embryos to generate potential founders (F0). To assess the efficacy of the TALEN injections, DNA was extracted from injected embryos at 48 hr post fertilization (hpf) and subjected to high-resolution melt analysis (HRMA, Illumina Eco Real-Time PCR System). F0 founders were identified by outcrossing to wild-type (WT) fish. Genomic DNA was extracted from individual F1 embryos and analyzed for induced genomic mutations by PCR amplification of the TALEN target region and subsequent HRMA (Supplementary file 1a). Using the genomic DNA of F1 fin clipped adult fish as a template, PCR products were obtained with the primers shown in Supplementary file 1b and sequenced in order to determine the specific alleles generated. An allele containing a 10 bp deletion with a 3 bp insertion leading to a frameshift mutation and a premature stop codon was identified and designated meis2bs988. Genotyping of meis2bs988 allele was carried out by PCR using allele specific primer combinations (Supplementary file 1c-d).
 
@@ -96,7 +266,7 @@ The TgBAC(meis2b:Gal4FF)bns15 line was generated by rapid modification of a Bact
 
 Generation of Tg(myl7:BFP-CAAX)bns193: Blue fluorescent protein (BFP) coding sequence was fused to a CAAX membrane targeting motif (Lin et al., 2012b) using Cold Fusion technology (System Biosciences, CA) and cloned under the control of the myl7 promoter (Reischauer et al., 2014) to obtain myl7:BFP-CAAX. 20 pg of the resulting plasmid along with 15 pg Tol2 mRNA were injected in one-cell stage embryos to generate Tg(myl7:BFP-CAAX)bns193.
 
-## RNA in situ hybridization
+### RNA in situ hybridization
 
 RNA in situ hybridization experiments on embryos were performed as described (Thisse and Thisse, 2008). For whole-mount adult hearts, in situ hybridization was performed with the following modifications: permeabilization of the tissue was achieved by incubating the hearts in proteinase-K (10 µg/mL) for 30 min on ice and then for 40 min at 37°C with gentle agitation.
 
@@ -104,17 +274,17 @@ In situ hybridization on 12-µm-thick paraffin sections of adult hearts: briefly
 
 RNAscope (Advanced Cell Diagnostics, Hayward, CA) was performed on 5 weeks post-fertilization (wpf) Tg(meis2b-reporter) hearts, following a published protocol (Gross-Thebing et al., 2014) for whole-mount RNAscope. Advanced Cell Diagnostics designed the pitx2c probe used in this study.
 
-## Morpholino injections
+### Morpholino injections
 
 isl1 ATG morpholino from Gene Tools, LLC (5’-CCCATGTCAAGAAAGTAAGGCGGTG-3’) (Hutchinson and Eisen, 2006) was prepared at a stock concentration of 1 mM and diluted to the desired concentration for microinjection. 5 ng of the isl1 morpholino were injected into one-cell stage Tg(meis2b-reporter);Tg(myl7:mCherry), Tg(myl7:EGFP-Hsa.HRAS) and isl1 mutant embryos. Uninjected embryos and embryos injected with control morpholino served as controls. Embryos injected with control morpholino did not show any detectable phenotype. The embryos were imaged at 48 hpf using a Zeiss LSM 700 confocal microscope.
 
-## kikGR injection and photoconversion
+### kikGR injection and photoconversion
 
 100 pg of kikGR mRNA were injected into one-cell stage Tg(myl7:BFP-CAAX) embryos. Dechorionated embryos of 20–23 somite stage (ss) were mounted in 0.8% agarose with the dorsal side up. Using a Zeiss LSM 880 confocal microscope, the cardiac disc was identified, and the anterior or posterior half of the disc was selectively photoconverted using a 405 nm wavelength laser (7 pulses of 1 s each and 15% laser power).
 
 After photoconversion, the embryos were transferred to egg water and raised until 48 hpf. Then, the embryos were mounted in 0.8% agarose and the hearts were imaged by confocal microscopy (Zeiss LSM 880). Each heart was imaged twice: first, the green kikGR was imaged together with the photoconverted kikGR. In a second step, Tg(myl7:BFP-CAAX) expression was visualized by excitation with a 405 nm wavelength laser. The resulting images containing the different channels were merged using ImageJ.
 
-## Embryonic and juvenile heart imaging and measurements
+### Embryonic and juvenile heart imaging and measurements
 
 Offspring of a Tg(myl7:LIFEACT-GFP);meis2b+/- incross were grown until 3 and 4 wpf. The juvenile fish were fixed in Fish-Fix (0.1 M phosphate buffer, 4% PFA, 4% sucrose, 120 µM CaCl2) for 1 hr at room temperature. The hearts were dissected and individually mounted in 1% low-melt agarose. After imaging with a Zeiss LSM 780 confocal microscope, the fish were genotyped by PCR using the above-mentioned set of allele specific primers.
 
@@ -126,11 +296,11 @@ For determining the heart rate at 48 hpf, the embryos were embedded in 1% low-me
 
 Adult zebrafish electrocardiograms were performed as described (Orr et al., 2016). Signals were amplified using the Animal BioAmp FE136, acquired using the PowerLab 4/30, and analyzed using LabChart 8, all from ADInstruments (Sydney, Australia). 40 meis2b-/- and 25 WT siblings were tested. For each fish, a minimum of 20 heartbeats with a clearly identifiable baseline were used to analyze ECG tracings.
 
-## Image processing
+### Image processing
 
 Figure 5B was processed with PhotoFiltre seven for noise reduction (pixel dimension, two and threshold, 0). Figure 4B was processed using Imaris 8.4.0 for cropping areas outside of the heart and to enhance brightness. Adjustments for brightness and contrasts of other confocal projections and brightfield pictures were performed with Zen Black and Zen Blue editions (Zeiss), NIS-Elements (Nikon) and ImageJ (NIH).
 
-## Gene expression profiling
+### Gene expression profiling
 
 To identify chamber-specific transcripts, 12 adult zebrafish hearts (8 months post-fertilization, mpf) were isolated as described (Arnaout et al., 2014), and bisected into atria and ventricles. The expression profile of the pooled atria was compared to the expression profile of the pooled ventricles. Briefly, total RNA was isolated using TRIzol (Sigma), treated with DNase (Promega, Germany), and purified using an RNA Clean and Concentrator kit (Zymo Research). Gene expression profiles were established using dual color microarray analysis by MOgene (St. Louis, MO) using the Agilent Zebrafish V3 44K platform.
 
@@ -138,7 +308,7 @@ To determine the expression profiles of the Tg(meis2b-reporter)-positive vs -neg
 
 For the study of possible downstream targets of Meis2b, we compared the following expression profiles: 48 hpf whole larvae of meis2b-/- to meis2b+/+ siblings, whole hearts of 3 wpf meis2b-/- to meis2b+/- siblings, whole atria of 3 mpf meis2b-/- to meis2b+/- siblings, and ventricles to atria of 3 mpf WT zebrafish. Total RNA was isolated using TRIzol and purified using column-based affinity purification (RNA Clean and Concentrator kit, Zymo Research). Gene expression profiles were established using single color microarray analysis OakLabs (Hennigsdorf, Germany) using the ArrayXS Zebrafish 8 × 60K platform (OakLabs).
 
-## RT-qPCR analysis
+### RT-qPCR analysis
 
 To study gene expression in the adult mouse heart, the left and right atria of 5 adult hearts were dissected. RNA was isolated using TRIzol and cDNA was synthesized using a Maxima First Strand cDNA Synthesis Kit (Thermo Fisher Scientific) following manufacturer’s instructions. Plots show the result of five different experiments (one atrium per experiment). Primers were designed using PerlPrimer (Marshall, 2004), and Actb was used for normalization. Primer sequences are listed in Supplementary file 1. The Ct values obtained for every gene are shown in Figure 2—source data 1.
 
@@ -146,7 +316,7 @@ For RT-qPCR expression analysis of potential meis2b downstream targets, total RN
 
 Of note, reference genes do not show different expression levels between the left and right components of the atria in fish or mice (Kahr et al., 2011).
 
-## ChIP-qPCR
+### ChIP-qPCR
 
 ChIP experiments were performed as described (Penkov et al., 2013) with minor modifications using WT C57BL/6 E12 embryonic mouse trunks (without head, tail or legs). The protocol was started with approximately 5 × 107 cells (equivalent to three trunks). The Meis antibodies were kindly provided by the Torres lab (K830, recognizing Meis1a and Meis2a isoforms, and K844, recognizing Meis1a and Meis1b isoforms; both produced at the CNIC, Madrid, Spain).
 
@@ -154,11 +324,11 @@ Briefly, single-cell suspensions were prepared in cold DMEM +10% FBS by crushin
 
 After centrifugation and verification of the size of the sonicated chromatin, the sonicated lysates were incubated with antibody-bound Dynabeads protein G (Invitrogen). Rabbit IgG IP was used as a negative control. After overnight incubation at 4°C, three buffers were used (WB1, WB2 and WB3) and the immunoprecipitated material was washed twice at 4°C with 1 mL of each buffer. Finally, the elution of the immunoprecipitated material was done at 37°C with TE buffer +2% SDS for 30 min. After removing the magnetic beads, the eluted material was reverse cross-linked overnight at 65°C. Three volumes of TE buffer were added to dilute the SDS in the solution. After treatment with RNase-A and proteinase-K, the DNA was extracted twice with phenol-chloroform and purified with a MinElute PCR Purification Kit (Qiagen). Four biological samples were used for the ChIP. The qPCRs were done in triplicates, using 2X SYBR green real-time PCR master mix (Thermo Fisher Scientific) in a CFX Connect Real-Time PCR detection system (BioRad) with 39 cycles. Percentage input was calculated using the DDCT method. The list of primers employed for the qPCR can be found in Supplementary file 1. The Ct values obtained in the qPCR can be found in Figure 7—source data 2.
 
-## EdU injections
+### EdU injections
 
 Eight meis2b-/- fish and 8 WT siblings at 3 mpf were anesthetized in 0.02% tricaine. EdU (Life Technologies, # A10044) was injected intraperitoneally (200 µg/g of body weight) and incubated for 4 days. The EdU was detected using a Click-iT EdU Alexa Fluor 647 Imaging Kit (Life Technologies, # C10340).
 
-## Antibody staining and tissue clearing
+### Antibody staining and tissue clearing
 
 Whole-mount staining of Isl1 on 48 hpf Tg(meis2b-reporter) embryos was performed as previously described (Dong et al., 2007). With the exception that the washing solution contained 0.1% Triton X-100 to reduce background.
 
@@ -168,10 +338,10 @@ For antibody staining on cryosections, adult hearts were fixed in 4% paraformald
 
 The tissues were cleared using iDISCO (Renier et al., 2014) and imaged using a Zeiss LSM 800 confocal microscope. IMARIS was used to count the number of cardiomyocyte nuclei and the number of proliferating cells. The raw numbers of proliferating atrial cardiomyocytes can be found in Figure 6—source data 1.
 
-## Luciferase assays
+### Luciferase assays
 
 HEK293T cells were obtained from ATCC (CRL-3216) and authenticated by Short Tandem Repeat Analysis matching 100% with the database profile (ATCC Cell Line Authentication Service). Cells were tested using the MycoAlert PLUS Mycoplasma Detection Kit (Lonza, Walkersville, Inc.) and tested negative for mycoplasma contamination (ratio of 0.24). Cells were transfected with Lipofectamine 2000 (Life Technologies, Carlsbad, CA) 24 hr after seeding in a 24-well plate and were harvested 48 hr post transfection. Assays were performed in quadruplicates, and the ratio of activities of firefly luciferase (expressed from a UAS-Luc2 reporter plasmid) to Renilla luciferase was determined for each well using the Dual-Luciferase Reporter Assay System (Promega). GAL4 and Meis2-GAL4 fusions were expressed under a CMV promoter in pCS2+ vector. The following amounts of plasmid DNA were transfected per well: Renilla luciferase (pTK-RL) (50 ng), GAL4 or GAL4 fusions (500 ng), UAS-Luc2 (450 ng).
 
-## Statistical analyses
+### Statistical analyses
 
 No statistical tests were used to predetermine sample size. Several independent experiments were performed to ensure reproducibility. The investigators were inherently blinded by the experimental design during the experiment shown in Figure 6—figure supplement 2, until the genotyping was performed. Statistical analyses were performed by paired students t-test with one tail distribution, with the exception of the RT-qPCR analyses comparing left vs. right atria in mouse, where paired students t-test with two tailed was used. For the adult zebrafish electrocardiograms, the statistical differences were calculated using F-test and Bartlett’s test. For all bar graphs, data are represented as mean ± SD. p-Values were considered significant at p<0.05.

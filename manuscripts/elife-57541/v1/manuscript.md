@@ -32,17 +32,41 @@ For prediction-error neurons, fully predicted sensory signals should cancel with
 
 We studied a rate-based network model of layer 2/3 of rodent V1 to investigate how prediction-error (PE) neurons develop. In the following, we will focus primarily on negative prediction-error (nPE) neurons. In V1, nPE neurons have been studied more extensively, which allows us to compare our results with experimental findings. However, the same approaches and principles derived for nPE neurons can also be applied to positive prediction-error (pPE) neurons (see Appendix 2—figures 1 and 2). The network model includes excitatory pyramidal cells (PCs) as well as inhibitory parvalbumin-expressing (PV), somatostatin-expressing (SOM) and vasoactive intestinal peptide-expressing (VIP) interneurons (Figure 1a). The relative abundance of the four cell types and the probability of the respective synaptic connections are chosen in line with electrophysiological studies (see Materials and methods). While all inhibitory neurons are modeled as point neurons (Wilson and Cowan, 1972), we used a two-compartment model for PCs with a rectifying active dendritic process that allowed nonlinear dynamics akin to dendritic calcium spikes (Murayama et al., 2009) (see Materials and methods and Appendix 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/57541/elife-57541-fig1-v1.jpg)
+
+**Figure 1.:** (a) Network model with excitatory PCs and inhibitory PV, SOM and VIP neurons. Connections from PCs not shown for the sake of clarity. Somatic compartment of PCs, SOM and PV neurons receive visual input, apical dendrites of PCs and VIP neurons receive a motor-related prediction thereof. Connections marked with an asterisk undergo experience-dependent plasticity. (b) During plasticity, the network is exposed to a sequence of feedback (coupled sensorimotor experience) and playback phases (black square, visual input not predicted by motor commands). Stimuli last for 1 s and are alternated with baseline phases (absence of visual input and motor predictions). (c) Left: Before plasticity, somatic excitation (light red) and inhibition (light blue) in PCs are not balanced. Excitatory and inhibitory currents shifted by ±20 pA for visualization. The varying net excitatory current (gray) causes the PC population rate to deviate from baseline. Right: Response relative to baseline ($Δ⁢R/R$) of all PCs in feedback (FB), mismatch (MM) and playback (PB) phase, sorted by amplitude of mismatch response. None of the PCs are classified as nPE neurons (indicated by gray shading to the right). (d) Same as in (c) after plasticity. Somatic excitation and inhibition are balanced. PC population rate remains at baseline. All PCs classified as nPE neurons (also indicated by black shading to the right). (e) Left: Mismatch response increases with the difference between visual and motor input. Right: nPE neuron response during playback does not change with the difference between visual and motor input but remains at baseline.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57541/elife-57541-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Network model as in Figure 1. Connections colored and marked with an asterisk undergo experience-dependent plasticity. (b) PCs receive visual input. Connections onto PCs follow an inhibitory plasticity rule akin to Vogels et al., 2011 (triangle). SOM→PV and VIP→PV synapses approximate a back-propagation of error (diamond). The averaged weights converge to a steady-state. Weights are normalized to the theoretically derived values for nPE neurons (see Materials and methods). (c) Same as in (b) but SOM→PV and VIP→PV synapses change in proportion to the difference between the excitatory recurrent drive onto PV neurons and a target value (square). (d) Same as in (b) but visual drive onto PCs is absent. SOM→PV and VIP→PV synapses follow an inhibitory plasticity rule akin to Vogels et al., 2011 (triangle). Connections from PCs onto PV neurons establish a baseline for PV neurons by an anti-Hebbian plasticity rule (inverted triangle) .
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/57541/elife-57541-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Network model as in Figure 1 but without VIP→PV synapses. PV neurons receive visual input. (b) Population response ($Δ⁢R/R$) of PCs in feedback (dark gray) and playback phase (light gray) for varying SOM→PV (top), SOM→VIP (middle) and VIP→SOM (bottom) connections. For all values tested, firing rate during feedback and playback deviates from baseline. (c) Response ($Δ⁢R/R$) of all PCs in feedback, mismatch and playback phase, sorted by amplitude of mismatch response. Most PCs change their firing rate only mildly in feedback and/or playback phase. As indicated by the gray/black shading to the right, many of the PCs are classified as nPE neurons. (d–f) Same as in (a) but PV neurons receive motor predictions. (f) All PCs change their firing rate in response to all stimulation patterns. None of the PCs are classified as nPE neurons (indicated by gray shading to the right). .
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/57541/elife-57541-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Network model, its inputs and the training set are shown in Figure 1. Model setup modified to enable the formation of nPE neurons while abiding to Dale’s law: PCs receive 0.5 x visual input. External excitatory input onto the dendrites is set to 2.8 $s^{-1}$ to mitigate an excess of dendritic inhibition during baseline. Additional non-linearity for synapses from SOM neurons onto the apical dendrites of PCs: $Δ⁢w_{DS}∝\sigma⁢(A_{D})⋅A_{D}⋅r_{S}$, where $A_{D}$ denotes the total dendritic activity and $\sigma$ is a sigmoid function given by $\sigma⁢(A_{D})=0.5⋅(tanh⁢(A_{D}/3.5)+1)$. (a) Before plasticity, somatic excitation (light red) and inhibition (light blue) in PCs are not balanced. Excitatory and inhibitory currents are shifted by ±20 pA for visualization. The varying net excitatory current (gray) causes the PC population rate to deviate from baseline. (b) Left: Response ($Δ⁢R/R$) of all PCs in feedback, mismatch and playback phase, sorted by amplitude of mismatch response. All PCs change their firing rate in response to all stimulation patterns. None of the PCs are classified as nPE neurons (indicated by gray shading to the right). Right: Population responses of PV, SOM and VIP neurons in all phases. Responses are normalized between −1 and 1 such that baseline is zero. (c) Same as in (a) after plasticity. Somatic excitation and inhibition are balanced. PC population rate remains at baseline. (d) Same as in (b) after plasticity. Almost all PCs classified as nPE neurons (indicated by black/gray shading to the right). PV neurons are less active during the playback phase than during the feedback phase.
+
 A subset of inhibitory synapses – chosen based on a mathematical analysis (see Materials and methods, or Appendix 1) – are subject to experience-dependent plasticity, which aims at minimizing deviations of the PC firing rate from a baseline rate. These deviations can be interpreted as prediction errors. Learning hence strives to adapt the inhibitory circuit such as to reduce these errors. While the synapses onto both the somatic and dendritic compartments of PCs follow an inhibitory plasticity rule akin to Vogels et al., 2011, the inhibitory synapses onto PV neurons follow an approximated backpropagation of error rule akin to Rumelhart et al., 1986. Specifically, the former rule changes the synapses onto PCs in proportion to the presynaptic interneuron activity and the deviation of PC activity from a baseline rate (see Materials and methods, Equation 14). The latter rule changes the synapses onto PV neurons in proportion to the presynaptic interneuron activity and the averaged deviation of the postsynaptic PCs from their baseline rate (see Materials and methods, Equation 16). Earlier work has shown that such forms of plasticity establish a balance of excitation and inhibition (Vogels et al., 2011; Mackwood et al., 2020).
 
 All neurons in the model receive excitatory background input that ensures reasonable baseline activities in the absence of visual input and motor-related internal predictions (‘baseline’). In addition, we stimulated the network with time-varying external inputs representing actual and predicted visual stimuli (Figure 1a,b). We reasoned that during natural conditions, movements lead to sensory inputs that are fully predicted by internal motor commands (‘feedback phase’, Attinger et al., 2017), while unexpected external changes in the environment should generate unpredicted sensory signals (‘playback phase’, Attinger et al., 2017). Situations in which internal motor commands are not accompanied by corresponding sensory signals should be rare (‘feedback mismatch phase’, Attinger et al., 2017). During plasticity, we therefore stimulated the circuit with a sequence consisting of feedback and playback phases (‘quasi-natural training’, Figure 1b).
 
-## Negative prediction-error neurons emerge by balancing excitation and inhibition
+### Negative prediction-error neurons emerge by balancing excitation and inhibition
 
 Before the onset of plasticity, synaptic connections were randomly initialized, leading to PCs receiving unbalanced excitation and inhibition. Therefore, all PCs change their firing rate in response to both feedback and playback stimuli, indicating the absence of nPE neurons (Figure 1c). During quasi-natural sensorimotor experience, inhibitory plasticity strengthens or weakens inhibitory synapses to diminish the firing rate deviations of PCs from their baseline firing rate (Figure 1—figure supplement 1). At the same time, dendritic inhibition mediated by SOM interneurons was sufficiently strengthened to suppress the motor prediction arriving at the apical dendrite. After synaptic plasticity, somatic excitation and inhibition are balanced on a stimulus-by-stimulus basis (Figure 1d–e). PCs merely show small and transient onset/offset responses to feedback and playback stimuli. In contrast, all PCs show an increase in activity for feedback mismatch stimuli (Figure 1d), which scales with the size of the difference between actual and predicted visual input (Figure 1e). Hence, inhibitory synaptic plasticity generates nPE neurons by balancing excitation and inhibition in PCs for quasi-natural conditions.
 
-## Balance of excitation, inhibition and disinhibition in different functional prediction circuits
+### Balance of excitation, inhibition and disinhibition in different functional prediction circuits
 
 The circuit we studied so far was motivated by the widely accepted view that PCs and SOM and PV interneurons show visual responses (Ko et al., 2011; Yang et al., 2013; Larkum, 2013a; Xue et al., 2014; Harris and Shepherd, 2015; Lee et al., 2016; Attinger et al., 2017), while long-range (motor) predictions arrive in the superficial layers of V1 and target VIP neurons (Fu et al., 2014; Harris and Shepherd, 2015; Tremblay et al., 2016; Attinger et al., 2017) and the apical and distal compartments of PCs (Larkum, 2013a; Leinweber et al., 2017; Attinger et al., 2017). Because this view is not uncontested (Fu et al., 2014) and it has been shown that interneuron types can receive both feedforward and feedback inputs (Wall et al., 2016), we systematically varied the inputs to the different neuron classes. We first studied circuit variations in which PCs and PV neurons receive visual and/or motor signals (Figure 2, see also Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/57541/elife-57541-fig2-v1.jpg)
+
+**Figure 2.:** (a) Excitatory, inhibitory, disinhibitory and dis-disinhibitory pathways onto PCs that need to be balanced in nPE neuron circuits. Input to the soma of PCs and PV neurons is varied (c–f). SOM neurons receive visual input, VIP neurons receive a motor-related prediction. (b) Test stimuli: Feedback (FB), mismatch (MM) and playback (PB) phases of 1 s each. (c) PCs and PV neurons receive visual input (left, top). When all visual (V) and motor (M) pathways are balanced (left, bottom), PCs act as nPE neurons (right). PV neuron activity increases in both feedback and playback phases. Responses normalized between −1 and 1 such that baseline is zero. (d) Same as in (c) but PV neurons receive motor predictions. (e) Same as in (c) but PCs receive no visual input. PV neurons remain at baseline in the absence of visual input to the soma of PCs. (f) Same as in (c) but PCs receive no visual input and PV neurons receive motor predictions. PV neurons remain at baseline in the absence of visual input to the soma of PCs.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57541/elife-57541-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Excitatory, inhibitory, disinhibitory and dis-disinhibitory pathways onto PCs that need to be balanced in nPE neuron circuits. Input to the soma of PCs and PV neurons is varied (c–d). SOM neurons receive visual input, VIP neurons receive a motor-related prediction thereof. (b) Test stimuli: Feedback (FB), mismatch (MM) and playback (PB) phases of 1 s each. (c) PCs receive visual input (left, top). When all visual (V) and motor (M) pathways are balanced (left, bottom), PCs act as nPE neurons (right). PV neuron activity increases in both feedback and playback phases. Responses normalized between −1 and 1 such that baseline is zero. (d) Same as in (c) but PCs receive no visual input. PV neurons remain at baseline in the absence of visual input to the soma of PCs.
 
 We found that inhibitory plasticity establishes nPE neurons independent of the input configuration onto PCs and PV neurons (Figure 2c–f, right). The emerging connectivity of the interneuron circuits varied, however. For PCs not to respond above baseline in feedback and playback phase, various excitatory, inhibitory, disinhibitory and dis-disinhibitory pathways need to be balanced. An informative example is the input configuration in which PCs receive visual input and PV neurons receive motor predictions (Figure 2d). In this case, visual inputs arrive at the PCs as direct excitation, as disinhibition through the SOM-PV pathway, and as dis-disinhibition via the SOM-VIP-PV pathway (Figure 2a). To keep the PCs at their baseline during the playback phase, these three pathways need to be balanced (Figure 2d, left). Similarly, motor signals arrive at the PCs as inhibition from PV neurons, dis-inhibition via the VIP-PV pathway, dis-dis-inhibition via the VIP-SOM-PV pathway and as direct excitation to the dendrite that is canceled by SOM-mediated inhibition. Again, all these pathways need to be balanced to keep the PCs at their baseline for fully predicted visual stimuli (Figure 2d, left). Analog balancing arguments hold for other input configurations (Figure 2c–f, left). Note that this multi-pathway balance applies primarily to somatic inputs to PCs. During feedback and playback phases, this provides a complete picture, because the dendrites are deactivated by inhibition. During mismatch phases, this dendritic inhibition is withdrawn and the dendrites provide additional excitatory input to the soma that can drive mismatch responses.
 
@@ -50,11 +74,19 @@ While the flow of visual and motor information in the learned inhibitory microci
 
 In summary, inhibitory plasticity can establish functional nPE circuits irrespective of the inputs onto the soma of PCs and PV neurons. Although the underlying circuits vary substantially in the specific balance of pathways, the neural activity patterns only weakly reflect the underlying information flow.
 
-## Simulated optogenetic manipulations disambiguate prediction-error circuits
+### Simulated optogenetic manipulations disambiguate prediction-error circuits
 
 We hypothesized that the need to simultaneously balance several pathways offers a way to disambiguate the different prediction-error circuits by optogenetic manipulations. To test this, we systematically suppressed or activated PV, SOM and VIP interneurons in each input configuration after inhibitory plasticity had established the respective nPE circuit.
 
 We found that in our model, such simulated optogenetic experiments are highly informative about the underlying input configuration (Figure 3). For example, PV neuron inactivation changes the response of nPE neurons during feedback, playback and mismatch phases if and only if the PCs receive visual inputs. VIP inactivation renders nPE neurons silent unless PV neurons receive motor predictions, in which case they are transformed into positive prediction-error (pPE) neurons. Since SOM and VIP neurons are mutually inhibiting (see e.g. Pfeffer et al., 2013), the same information can be gained by an over-activation of SOM neurons that effectively silences VIP neurons.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/57541/elife-57541-fig3-v1.jpg)
+
+**Figure 3.:** (a) Left: nPE neuron circuit in which PCs and PV neurons receive visual input. Inactivation (middle) or activation (right) of PV (first row), SOM (second row) or VIP neurons (third row). Optogenetic manipulations change responses of nPE neurons (Ctrl) in feedback, mismatch and playback phases. Responses normalized between −1 and 1 such that baseline is zero. Inactivation input is -$8⁢s^{-1}$. Activation input is $5⁢s^{-1}$. (b) Same as in (a) but PV neurons receive motor-related prediction. (c) Same as in (a) but PCs receive no visual input. (d) Same as in (a) but PCs receive no visual input and PV neurons receive a motor-related prediction.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57541/elife-57541-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) nPE neuron circuit in which PCs and PV neurons receive visual input. In/activation of PV, SOM or VIP neurons changes net current in nPE neurons in feedback (blue), mismatch (red), playback (orange) and baseline (green) phase. Gray shading denotes currents below rheobase of PC. (b) Same as in (a) but PV neurons receive motor-related prediction. (c) Same as in (a) but PCs receive no visual input. (d) Same as in (a) but PCs receive no visual input and PV neurons receive a motor-related prediction.
 
 Changes in neuronal activity due to optogenetic manipulations depend on a variety of factors such as baseline firing rates and saturation effects (Phillips and Hasenstaub, 2016). For instance, while an excess of inhibition is not observable when PCs exhibit vanishingly small baseline activity, it leads to a firing rate decrease otherwise. Moreover, in/activation of interneuron types within a recurrent network may also have ambiguous consequences contingent on potential saturation effects in other cell types. These ambiguities can be partially resolved by measuring currents rather than firing rates, during baseline, feedback, mismatch and playback phases. Indeed, we found that the net currents in PCs after in/activation of PV, SOM or VIP neurons are highly informative about the underlying input configuration (Figure 3—figure supplement 1).
 
@@ -62,29 +94,45 @@ When we compared our results with optogenetic experiments in which SOM or VIP ne
 
 In summary, our model predicts that optogenetic experiments may unveil a unique fingerprint for nPE circuits that differ in their inputs onto PCs and PV neurons.
 
-## Fraction of nPE neurons is modulated by inputs to SOM and VIP interneurons
+### Fraction of nPE neurons is modulated by inputs to SOM and VIP interneurons
 
 In the model considered so far, all PCs developed into nPE neurons during learning, irrespective of the inputs to PCs and PV interneurons. However, nPE neurons represent only a small fraction of neurons in mouse V1 (Keller et al., 2012; Saleem et al., 2013; Zmarz and Keller, 2016; Attinger et al., 2017). Given that in our model, motor predictions arriving at the apical dendrites are canceled by SOM neuron-mediated inhibition, we hypothesized that the fraction of PCs that develop into nPE neurons depends on the distribution of visual and motor input onto SOM and VIP neurons.
 
-To test this, we allow neurons of both SOM and VIP populations to receive either visual input or a motor prediction thereof. A fraction f of SOM neurons and a fraction (1-f) of VIP neurons receive visual input. The remaining SOM and VIP neurons receive a motor-related prediction (Figure 4a). When the majority of SOM neurons receive visual inputs and the majority of VIP neurons receive motor predictions (f≈1), all PCs develop into nPE neurons (Figure 4b, left). Reducing the proportion of SOM neurons that receive visual input (and, equivalently, the proportion of VIP neurons that receive the motor prediction), the fraction of nPE neurons decreases (Figure 4b, middle). Non-nPE neurons remain at their baseline in all three phases, show a suppression during mismatch or develop into pPE neurons that respond only during playback. pPE neurons only emerge when the inputs to SOM and VIP neurons are reversed such that most SOM neurons receive motor predictions (Figure 4b, right).
+To test this, we allow neurons of both SOM and VIP populations to receive either visual input or a motor prediction thereof. A fraction f of SOM neurons and a fraction $(1-f)$ of VIP neurons receive visual input. The remaining SOM and VIP neurons receive a motor-related prediction (Figure 4a). When the majority of SOM neurons receive visual inputs and the majority of VIP neurons receive motor predictions ($f≈1$), all PCs develop into nPE neurons (Figure 4b, left). Reducing the proportion of SOM neurons that receive visual input (and, equivalently, the proportion of VIP neurons that receive the motor prediction), the fraction of nPE neurons decreases (Figure 4b, middle). Non-nPE neurons remain at their baseline in all three phases, show a suppression during mismatch or develop into pPE neurons that respond only during playback. pPE neurons only emerge when the inputs to SOM and VIP neurons are reversed such that most SOM neurons receive motor predictions (Figure 4b, right).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/57541/elife-57541-fig4-v1.jpg)
 
-**Figure 4.:** (a) Network model with excitatory PCs and inhibitory PV, SOM and VIP neurons. Connections from PCs not shown for the sake of clarity. Somatic compartment of PCs, PV neurons, a fraction f of SOM neurons and a fraction  of VIP neurons receive visual input. The remaining SOM and VIP neurons receive motor predictions. ((1-f)b) Response relative to baseline () of all PCs in feedback, mismatch and playback phases, sorted by amplitude of mismatch response. The fraction of nPE neurons that develop during learning decreases with Δ⁢R/Rf (also indicated by black and gray shading to the right). The increasing fraction of non-nPE neurons comprises neurons that remain at their baseline in all three phases, show a suppression during mismatch or develop into positive prediction-error neurons that respond only during playback.
+**Figure 4.:** (a) Network model with excitatory PCs and inhibitory PV, SOM and VIP neurons. Connections from PCs not shown for the sake of clarity. Somatic compartment of PCs, PV neurons, a fraction f of SOM neurons and a fraction $(1-f)$ of VIP neurons receive visual input. The remaining SOM and VIP neurons receive motor predictions. (b) Response relative to baseline ($Δ⁢R/R$) of all PCs in feedback, mismatch and playback phases, sorted by amplitude of mismatch response. The fraction of nPE neurons that develop during learning decreases with f (also indicated by black and gray shading to the right). The increasing fraction of non-nPE neurons comprises neurons that remain at their baseline in all three phases, show a suppression during mismatch or develop into positive prediction-error neurons that respond only during playback.
 
 In summary, the fraction of nPE neurons that develop during learning depends on the distribution of visual input and motor predictions onto both SOM and VIP neurons.
 
-## Experience-dependence of mismatch and interneuron responses
+### Experience-dependence of mismatch and interneuron responses
 
 Attinger et al., 2017 showed that the number of nPE neurons and the strength of their mismatch responses decreases when mice are trained in artificial conditions, during which a mouse was shown the visual information of a different mouse, such that motor predictions and visual flow were uncorrelated (‘non-coupled training’). We reasoned that this training paradigm should include baseline phases where both animals sit still and phases, during which the speeds of the two animals differ. To test whether the model shows the same experience-dependence, we generated a modified training paradigm, which includes baseline phases and phases during which the visual inputs and motor-related predictions are statistically independent (‘random gain training’, Figure 5a). We found that the number of nPE neurons and their mismatch responses also decrease for random gain trained relative to quasi-natural trained networks (Figure 5b). This decrease is primarily due to changes in PCs and PV neurons, while the responses of SOM and VIP neurons during the mismatch phase are largely independent of the training paradigm (Figure 5c). Hence, the experience-dependence of the model circuit is in line with that of nPE neurons in rodent V1 (Attinger et al., 2017).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/57541/elife-57541-fig5-v1.jpg)
+
+**Figure 5.:** (a) The network is either exposed to a sequence of baseline, feedback and playback phases (quasi-natural training, QT), to baseline phases and phases during which the visual inputs and motor-related predictions are statistically independent (random gain training, RT) or perfectly coupled sensorimotor experience (coupled training, CT) (b) The number of nPE neurons that develop during learning (top) and their mismatch responses (bottom) are smaller for RT than for QT networks. 90% of SOM and 50% of VIP neurons receive visual input. (c) Population response ($Δ⁢R/R$) of PCs, PV, SOM and VIP neurons during mismatch phase. SOM and VIP neurons show the same mismatch response for QT and RT, PCs and PV neurons show stronger responses in QT than in RT. 90% of SOM and 50% of VIP neurons receive visual input. (d) Responses during mismatch (top) and playback (bottom) for QT and CT networks. CT networks can exhibit a decrease in activity during playback phase. Connections from VIP to PV neurons are non-plastic and fixed to −0.3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57541/elife-57541-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) During plasticity, the network is exposed to a sequence of feedback phases only, representing perfectly coupled sensorimotor experience. Network model shown in Figure 1. Connections from VIP to PV neurons are non-plastic. (b–c) Model in which an excess of dendritic inhibition does not affect the soma of PCs. Connection strength from VIP to PV neurons fixed to −0.3. (b) Response ($Δ⁢R/R$) of all PCs in feedback, mismatch and playback phase, sorted by amplitude of mismatch response. All PCs increase their activity during mismatch phase but decrease their firing rate during playback phase. The decrease of PC activity during playback is a result of an excess of somatic inhibition mediated by PV neurons. (c) Population responses of PV, SOM and VIP neurons in all phases. Responses normalized between −1 and 1 such that baseline is zero. (d–e) Model in which an excess of dendritic inhibition is forwarded to the soma of PCs. Connection strength from VIP to PV neurons fixed to −0.18. External excitatory input onto the dendrites is set to 2.8 $s^{-1}$ to mitigate an excess of dendritic inhibition during baseline. (d) Same as in (b). The decrease of PC activity during playback is a result of an excess of dendritic inhibition mediated by SOM neurons. (e) Same as in (c). PV neurons are less active during the playback phase than during the feedback phase.
+
 During learning, we exposed the network to sensory inputs and motor-related predictions designed to reflect coupled sensorimotor experience. To account for changes in the external world that do not arise from the animal’s own movements, we included ‘playback’ phases in which the visual input is stronger than predicted by the motor-related input. Consistent with the experimental setup of Attinger et al., 2017, we deliberately excluded feedback mismatch phases. In the model, the stimuli experienced during learning have a strong impact on the response structure of the PCs, because the learning rules aim to keep the PCs at a given baseline rate at all times. The inclusion of feedback and playback phases during learning therefore leads to neurons that remain at their baseline during those phases, in line with nPE neurons. In mouse V1, nPE neurons exhibit an average rate decrease during playback when the animals were only exposed to perfectly coupled sensorimotor experience (Attinger et al., 2017). When our network was trained in the same way, we also observed that PCs reduced their firing rate during playback phases (Figure 5d and Figure 5—figure supplement 1). This can be a result of an excess of somatic inhibition, dendritic inhibition or both. The model hence predicts that the rate reduction during playback phases observed by Attinger et al., 2017 vanishes when playback phases are included during training.
 
-## nPE circuits can also be learned by biologically plausible learning rules
+### nPE circuits can also be learned by biologically plausible learning rules
 
 In our model, nPE neurons developed through inhibitory plasticity that establishes an excitation-inhibition (E/I) balance in PCs. So far, we used learning rules that approximate a backpropagation of error (Rumelhart et al., 1986), which changed SOM→PV and VIP→PV connections such as to minimize the difference between the PC firing rate and a baseline rate (see Equation 16 in Materials and methods). The biological plausibility of such backpropagation rules, which are broadly used in artificial intelligence, is still debated, because they rely on information that is not locally available at the synapse in question (Crick, 1989; Richards and Lillicrap, 2019). We therefore wondered whether prediction-error circuits can also be established by biologically plausible local learning rules.
 
 We found that nPE neurons also emerged when the backpropagation rules were replaced by a form of plasticity that changes SOM→PV and VIP→PV synapses in proportion to the difference between the excitatory recurrent drive onto PV neurons and a target value (see Mackwood et al., 2020, and Equations 17 and 18 in Materials and methods). This local form of learning was also able to balance excitation and inhibition sufficiently (Figure 6b,c and Figure 1—figure supplement 1c) so that all PCs developed into nPE neurons (Figure 6c).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/57541/elife-57541-fig6-v1.jpg)
+
+**Figure 6.:** (a) Left: Network model as in Figure 1. Connections marked with symbols undergo experience-dependent plasticity. Connections onto PCs follow an inhibitory plasticity rule akin to Vogels et al., 2011 (triangle). SOM→PV and VIP→PV synapses change in proportion to the difference between the excitatory recurrent drive onto PV neurons and a target value (square). Right: During plasticity, the network is exposed to a sequence of feedback (coupled sensorimotor experience) and playback phases (black square, visual input not predicted by motor commands). Stimuli last for 1 s and are alternated with baseline phases (absence of visual input and motor predictions). (b) Left: Before plasticity, somatic excitation (light red) and inhibition (light blue) in PCs are not balanced. Excitatory and inhibitory currents shifted by ±20 pA for visualization. The varying net excitatory current (gray) causes the PC population rate to deviate from baseline. Right: Response relative to baseline ($Δ⁢R/R$) of all PCs in feedback, mismatch and playback phases, sorted by amplitude of mismatch response. None of the PCs are classified as nPE neurons (indicated by gray shading to the right). (c) Same as in (b) after plasticity. Somatic excitation and inhibition are balanced. PC population rate remains at baseline. All PCs classified as nPE neurons (also indicated by black shading to the right).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57541/elife-57541-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Network model as in Figure 1. Connections marked with symbols undergo experience-dependent plasticity. Inhibitory connections onto PCs and PV neurons follow an inhibitory plasticity rule akin to Vogels et al., 2011 (triangle). Synapses from PCs onto PV neurons follow an anti-Hebbian plasticity rule (inverted triangle). (b) Left: Before plasticity, somatic excitation (light red) and inhibition (light blue) at PCs are not balanced. Excitatory and inhibitory currents are shifted by ±20 pA for visualization. The varying net excitatory current (gray) causes the PC population rate to deviate from baseline. Right: Response relative to baseline ($Δ⁢R/R$) of all PCs in feedback, mismatch and playback phase, sorted by amplitude of mismatch response. None of the PCs are classified as nPE neurons (indicated by gray shading to the right). (c) Same as in (b) after plasticity. Somatic excitation and inhibition are balanced. PC population rate remains at baseline. All PCs classified as nPE neurons (also indicated by black shading to the right).
 
 The plasticity rules can be further simplified when PCs do not receive visual information. In this case, PV neurons also remain at their baseline firing rate in feedback and playback phases (Figure 2e–f, right). Hence, the strength of SOM→PV and VIP→PV synapses can be learned according to a homeostatic rule (Vogels et al., 2011) that aims to sustain a target rate in the PV neurons (Figure 6—figure supplement 1 and Figure 1—figure supplement 1d, Equations 19 and 20 in Materials and methods). In summary, the backpropagation-like learning rules for the synapses onto PV neurons can be approximated by biologically plausible rules that exploit local information available at the respective synapses.
 
@@ -126,74 +174,164 @@ Our model suggests a well-orchestrated division of labor of PV, SOM and VIP inte
 
 ## Materials and methods
 
-## Network model
+### Network model
 
-We simulated a rate-based network model of excitatory pyramidal cells (NPC = 70) and inhibitory PV, SOM and VIP neurons (NPV=NSOM=NVIP = 10). All neurons are randomly connected with connection strengths and probabilities given below (see ‘Connectivity’).
+We simulated a rate-based network model of excitatory pyramidal cells ($N_{PC}$ = 70) and inhibitory PV, SOM and VIP neurons ($N_{PV}=N_{SOM}=N_{VIP}$ = 10). All neurons are randomly connected with connection strengths and probabilities given below (see ‘Connectivity’).
 
-The excitatory pyramidal cells are described by a two-compartment rate model that was introduced by Murayama et al., 2009. The dynamics of the firing rate rE,i of the somatic compartment of neuron i obeys(1)τEdrE,idt=−rE,i+[Ii−Θ],where τE denotes the excitatory rate time constant (τE = 60 ms), Θ terms the rheobase of the neuron (Θ=14 s−1). Firing rates are rectified to ensure positivity. Ii is the total somatic input generated by somatic and dendritic synaptic events and potential dendritic calcium spikes:(2)Ii=λD⁢[ID,isyn+ci]++(1-λE)⁢IE,isyn.
+The excitatory pyramidal cells are described by a two-compartment rate model that was introduced by Murayama et al., 2009. The dynamics of the firing rate $r_{E,i}$ of the somatic compartment of neuron i obeys
 
-Here, the function [x]+=max⁢(x,0) is a rectifying nonlinearity that prohibits an excess of inhibition at the apical dendrite to reach the soma. ID,isyn and IE,isyn are the total synaptic inputs into dendrite and soma, respectively, and ci denotes a dendritic calcium event. λD and λE are the fractions of ‘currents’ leaking away from dendrites and soma, respectively (λD=0.27, λE=0.31). The synaptic input to the soma IE,isyn is given by the sum of external sensory inputs xE and PV neuron-induced (P) inhibition,(3)IE,isyn=xE-∑j=1NPVwEP,i⁢j⋅rP,j.
+$$
+\tau_{E}\frac{dr_{E,i}}{dt}=−r_{E,i}+[I_{i}−Θ],
+$$
 
-The dendritic input ID,isyn is the sum of motor-related predictions xD, the recurrent, excitatory connections from other PCs and SOM neuron-induced (S) inhibition:(4)ID,isyn=xD-∑j=1NSOMwDS,i⁢j⋅rS,j+∑j=1NPCwDE,i⁢j⋅rE,j.
+where $\tau_{E}$ denotes the excitatory rate time constant ($\tau_{E}$ = 60 ms), $Θ$ terms the rheobase of the neuron ($Θ=14 s^{−1}$). Firing rates are rectified to ensure positivity. $I_{i}$ is the total somatic input generated by somatic and dendritic synaptic events and potential dendritic calcium spikes:
 
-The weight matrices wEP, wDS and wDE denote the strength of connection between PV neurons and the soma of PCs (wEP), SOM neurons and the dendrites of PCs (wDS) and the recurrence between PCs (wDE), respectively. The input generated by a calcium spike is given by(5)ci=c⋅H⁢(ID,i0-Θc),where c scales the amount of current produced (c=7s−1), H is the Heaviside step function, Θc represents a threshold that describes the minimal input needed to produce a Ca2+-spike (Θc=28 s−1) and ID,i0 denotes the total, synaptically generated input in the dendrites,(6)ID,i0=λE⁢IE,isyn+(1-λD)⁢ID,isyn.
+$$
+I_{i}=\lambda_{D}⁢[I_{D,i}^{syn}+c_{i}]_{+}+(1-\lambda_{E})⁢I_{E,i}^{syn}.
+$$
 
-Note that we incorporated the gain factor present in Murayama et al., 2009 into the parameters to achieve unit consistency for all neuron types (when we compared excitatory/inhibitory currents, the respective activities were divided by this gain factor, g=0.07 (pA· s)−1).
+Here, the function $[x]_{+}=max⁢(x,0)$ is a rectifying nonlinearity that prohibits an excess of inhibition at the apical dendrite to reach the soma. $I_{D,i}^{syn}$ and $I_{E,i}^{syn}$ are the total synaptic inputs into dendrite and soma, respectively, and $c_{i}$ denotes a dendritic calcium event. $\lambda_{D}$ and $\lambda_{E}$ are the fractions of ‘currents’ leaking away from dendrites and soma, respectively ($\lambda_{D}$=0.27, $\lambda_{E}$=0.31). The synaptic input to the soma $I_{E,i}^{syn}$ is given by the sum of external sensory inputs $x_{E}$ and PV neuron-induced (P) inhibition,
 
-The firing rate dynamics of each interneuron is modeled by a rectified, linear differential equation (Wilson and Cowan, 1972),(7)τi drX,idt=−rX,i+∑j=1NPCwXE,ij⋅rE,j−∑j=1NPVwXP,ij⋅rP,j−∑j=1NSOMwXS,ij⋅rS,j−∑j=1NVIPwXV,ij⋅rV,j+xi,where rX,i denotes the firing rate of neuron i from neuron type X (X∈{P,S,V}) and xi represents external inputs. The weight matrices wXY denote the strength of connection between the presynaptic neuron population Y and the postsynaptic neuron population X. The rate time constant τi was chosen to resemble a fast GABAA time constant, and set to 2 ms for all interneuron types included.
+$$
+I_{E,i}^{syn}=x_{E}-\sumj=1N_{PV}w_{EP,i⁢j}⋅r_{P,j}.
+$$
 
-## Negative prediction-error neurons
+The dendritic input $I_{D,i}^{syn}$ is the sum of motor-related predictions $x_{D}$, the recurrent, excitatory connections from other PCs and SOM neuron-induced (S) inhibition:
 
-We define PCs as nPE neurons when they exclusively increase their firing rate during feedback mismatch (visual input smaller than predicted), while remaining at their baseline during feedback and playback phases. In a linearized, homogeneous network and under the assumption that the apical dendrites are sufficiently inhibited during feedback and playback phase, this definition is equivalent to two constraints on the interneuron network (see Appendix 1 for a detailed analysis and derivation):(8)wPS=VP+wVSMP−(1+wPP)wEPVE,wPV=MP+wSV VP−wSV(1+wPP)wEPVE(9)=wSVwPS+(1−wSVwVS)MP.
+$$
+I_{D,i}^{syn}=x_{D}-\sumj=1N_{SOM}w_{DS,i⁢j}⋅r_{S,j}+\sumj=1N_{PC}w_{DE,i⁢j}⋅r_{E,j}.
+$$
 
-The parameters VX,MX∈{0,1} indicate whether neuron type X receives visual and motor-related inputs, respectively, and control the different input configurations. In addition to the conditions Equations 8 and 9, the synapses from SOM neurons onto the apical dendrites must be sufficiently strong to cancel potential excitatory inputs during feedback and playback phase.
+The weight matrices $w_{EP}$, $w_{DS}$ and $w_{DE}$ denote the strength of connection between PV neurons and the soma of PCs ($w_{EP}$), SOM neurons and the dendrites of PCs ($w_{DS}$) and the recurrence between PCs ($w_{DE}$), respectively. The input generated by a calcium spike is given by
 
-In practice, we classify PCs as nPE neurons when Δ⁢R/R is larger than 20% in the mismatch phase and less than ±10% elsewhere (Δ⁢R/R=(r-rBL)/rBL, rBL: baseline firing rate). Tolerating small deviations in feedback and playback phase is more in line with experimental approaches. The results do not rely on the precise thresholds used for the classification.
+$$
+c_{i}=c⋅H⁢(I_{D,i}^{0}-Θ_{c}),
+$$
 
-## Connectivity
+where c scales the amount of current produced ($c=7s^{−1}$), $H$ is the Heaviside step function, $Θ_{c}$ represents a threshold that describes the minimal input needed to produce a Ca2+-spike ($Θ_{c}=28 s^{−1}$) and $I_{D,i}^{0}$ denotes the total, synaptically generated input in the dendrites,
 
-All neurons are randomly connected with connection probabilities motivated by the experimental literature (Fino and Yuste, 2011; Packer and Yuste, 2011; Pfeffer et al., 2013; Lee et al., 2013; Pi et al., 2013; Jiang et al., 2015; Jouhanneau et al., 2015; Pala and Petersen, 2015),(10)p=(pEEpEPpESpEVpDEpDPpDSpDVpPEpPPpPSpPVpSEpSPpSSpSVpVEpVPpVSpVV)=(-0.6--0.1-0.55-0.450.50.60.50.35--0.50.1-0.45-).
+$$
+I_{D,i}^{0}=\lambda_{E}⁢I_{E,i}^{syn}+(1-\lambda_{D})⁢I_{D,i}^{syn}.
+$$
 
-All cells of the same neuron type have the same number of incoming connections. The mean connection strengths are given by(11)w=(wEEwEPwESwEVwDEwDPwDSwDVwPEwPPwPSwPVwSEwSPwSSwSVwVEwVPwVSwVV)=(-*--0.42-*-****1--0.61-0.5-)where the symbol * denotes weights that vary between simulations (e.g., subject to plasticity or computed from the Equations 8 and 9). For non-plastic networks, these synaptic strengths are given by wEP=2.8, wDS=3.5, wPE=1.5, wPP=0.1 (if PCs receive visual input) or wPP=1.5 (if PCs receive no visual input), wPS and wPV are computed from the Equations 8 and 9.
+Note that we incorporated the gain factor present in Murayama et al., 2009 into the parameters to achieve unit consistency for all neuron types (when we compared excitatory/inhibitory currents, the respective activities were divided by this gain factor, $g=0.07$ (pA· s)−1).
 
-For plastic networks, the initial connections between neurons are drawn from uniform distributions wi⁢ji⁢n⁢i⁢t⁢i⁢a⁢l∈𝒰⁢(0.5⁢w,1.5⁢w) where w denotes the mean connection strengths given in (Equation 11) and wEP=1.75, wDS=0.35, wPE=2.5 (if PCs receive visual input) or wPE=1.2 (if PCs receive no visual input), wPP=0.5 (if PCs receive visual input) or wPP=1.5 (if PCs receive no visual input), wPS=0.3 and wPV=0.6. Please note that the system is robust to the choice of connections strengths. The connection strengths are merely chosen such that the solutions of Equations 8 and 9 comply with Dale’s principle.
+The firing rate dynamics of each interneuron is modeled by a rectified, linear differential equation (Wilson and Cowan, 1972),
+
+$$
+\tau_{i} \frac{dr_{X,i}}{dt}=−r_{X,i}+\sumj=1N_{PC}w_{XE,ij}⋅r_{E,j}−\sumj=1N_{PV}w_{XP,ij}⋅r_{P,j}−\sumj=1N_{SOM}w_{XS,ij}⋅r_{S,j}−\sumj=1N_{VIP}w_{XV,ij}⋅r_{V,j}+x_{i},
+$$
+
+where $r_{X,i}$ denotes the firing rate of neuron i from neuron type $X$ ($X\in{P,S,V}$) and $x_{i}$ represents external inputs. The weight matrices $w_{XY}$ denote the strength of connection between the presynaptic neuron population Y and the postsynaptic neuron population X. The rate time constant $\tau_{i}$ was chosen to resemble a fast GABAA time constant, and set to 2 ms for all interneuron types included.
+
+### Negative prediction-error neurons
+
+We define PCs as nPE neurons when they exclusively increase their firing rate during feedback mismatch (visual input smaller than predicted), while remaining at their baseline during feedback and playback phases. In a linearized, homogeneous network and under the assumption that the apical dendrites are sufficiently inhibited during feedback and playback phase, this definition is equivalent to two constraints on the interneuron network (see Appendix 1 for a detailed analysis and derivation):
+
+$$
+(8)w_{PS}=V_{P}+w_{VS}M_{P}−\frac{(1+w_{PP})}{w_{EP}}V_{E},w_{PV}=M_{P}+w_{SV} V_{P}−w_{SV}\frac{(1+w_{PP})}{w_{EP}}V_{E}(9)=w_{SV}w_{PS}+(1−w_{SV}w_{VS})M_{P}.
+$$
+
+The parameters $V_{X},M_{X}\in{0,1}$ indicate whether neuron type X receives visual and motor-related inputs, respectively, and control the different input configurations. In addition to the conditions Equations 8 and 9, the synapses from SOM neurons onto the apical dendrites must be sufficiently strong to cancel potential excitatory inputs during feedback and playback phase.
+
+In practice, we classify PCs as nPE neurons when $Δ⁢R/R$ is larger than 20% in the mismatch phase and less than ±10% elsewhere ($Δ⁢R/R=(r-r_{BL})/r_{BL}$, $r_{BL}$: baseline firing rate). Tolerating small deviations in feedback and playback phase is more in line with experimental approaches. The results do not rely on the precise thresholds used for the classification.
+
+### Connectivity
+
+All neurons are randomly connected with connection probabilities motivated by the experimental literature (Fino and Yuste, 2011; Packer and Yuste, 2011; Pfeffer et al., 2013; Lee et al., 2013; Pi et al., 2013; Jiang et al., 2015; Jouhanneau et al., 2015; Pala and Petersen, 2015),
+
+$$
+p=(p_{EE}p_{EP}p_{ES}p_{EV}p_{DE}p_{DP}p_{DS}p_{DV}p_{PE}p_{PP}p_{PS}p_{PV}p_{SE}p_{SP}p_{SS}p_{SV}p_{VE}p_{VP}p_{VS}p_{VV})=(-0.6--0.1-0.55-0.450.50.60.50.35--0.50.1-0.45-).
+$$
+
+All cells of the same neuron type have the same number of incoming connections. The mean connection strengths are given by
+
+$$
+w=(w_{EE}w_{EP}w_{ES}w_{EV}w_{DE}w_{DP}w_{DS}w_{DV}w_{PE}w_{PP}w_{PS}w_{PV}w_{SE}w_{SP}w_{SS}w_{SV}w_{VE}w_{VP}w_{VS}w_{VV})=(-*--0.42-*-****1--0.61-0.5-)
+$$
+
+where the symbol * denotes weights that vary between simulations (e.g., subject to plasticity or computed from the Equations 8 and 9). For non-plastic networks, these synaptic strengths are given by $w_{EP}=2.8$, $w_{DS}=3.5$, $w_{PE}=1.5$, $w_{PP}=0.1$ (if PCs receive visual input) or $w_{PP}=1.5$ (if PCs receive no visual input), $w_{PS}$ and $w_{PV}$ are computed from the Equations 8 and 9.
+
+For plastic networks, the initial connections between neurons are drawn from uniform distributions $w_{i⁢j}^{i⁢n⁢i⁢t⁢i⁢a⁢l}\in𝒰⁢(0.5⁢w,1.5⁢w)$ where w denotes the mean connection strengths given in (Equation 11) and $w_{EP}=1.75$, $w_{DS}=0.35$, $w_{PE}=2.5$ (if PCs receive visual input) or $w_{PE}=1.2$ (if PCs receive no visual input), $w_{PP}=0.5$ (if PCs receive visual input) or $w_{PP}=1.5$ (if PCs receive no visual input), $w_{PS}=0.3$ and $w_{PV}=0.6$. Please note that the system is robust to the choice of connections strengths. The connection strengths are merely chosen such that the solutions of Equations 8 and 9 comply with Dale’s principle.
 
 All weights are scaled in proportion to the number of existing connections (i.e., the product of the number of presynaptic neurons and the connection probability), so that the results are independent of the population size.
 
-## Inputs
+### Inputs
 
-All neurons receive constant, external background input that ensures reasonable baseline firing rates in the absence of visual and motor-related input. In the case of non-plastic networks, these inputs were set such that the baseline firing rates are rE=1⁢s-1, rP=2⁢s-1, rS=2⁢s-1 and rV=4⁢s-1. In the case of plastic networks, we set the external inputs to xE=28⁢s-1, xD=0⁢s-1, xP=2⁢s-1, xS=2⁢s-1 and xV=2⁢s-1 (if not stated otherwise). In addition to the external background inputs, the neurons receive either visual input (v), a motor-related prediction thereof (m) or both.
+All neurons receive constant, external background input that ensures reasonable baseline firing rates in the absence of visual and motor-related input. In the case of non-plastic networks, these inputs were set such that the baseline firing rates are $r_{E}=1⁢s^{-1}$, $r_{P}=2⁢s^{-1}$, $r_{S}=2⁢s^{-1}$ and $r_{V}=4⁢s^{-1}$. In the case of plastic networks, we set the external inputs to $x_{E}=28⁢s^{-1}$, $x_{D}=0⁢s^{-1}$, $x_{P}=2⁢s^{-1}$, $x_{S}=2⁢s^{-1}$ and $x_{V}=2⁢s^{-1}$ (if not stated otherwise). In addition to the external background inputs, the neurons receive either visual input (v), a motor-related prediction thereof (m) or both.
 
-In line with the experimental setup of Attinger et al., 2017, we distinguish between baseline (m=v=0), feedback (m=v>0), feedback mismatch (m>v) and playback (m<v) phases. During training, the network is exposed to feedback and playback phases with stimuli drawn from a uniform distribution from the interval [0,7⁢s-1]. After learning, the strength of stimuli is set to 7⁢s-1 (plastic networks) or 3.5⁢s-1 (non-plastic networks).
+In line with the experimental setup of Attinger et al., 2017, we distinguish between baseline ($m=v=0$), feedback ($m=v>0$), feedback mismatch ($m>v$) and playback ($m<v$) phases. During training, the network is exposed to feedback and playback phases with stimuli drawn from a uniform distribution from the interval $[0,7⁢s^{-1}]$. After learning, the strength of stimuli is set to $7⁢s^{-1}$ (plastic networks) or $3.5⁢s^{-1}$ (non-plastic networks).
 
-## Plasticity
+### Plasticity
 
-In plastic networks, a number of connections between neurons are subject to experience-dependent changes in order to establish an E/I balance for PCs. PV→PC and the PC→PV synapses establish the target firing rates for PCs and PV neurons, respectively. VIP→PV and SOM→PV synapses and the synapses from SOM neurons onto the apical dendrites of PCs ensure that PCs remain at their baseline during feedback and playback phase. The corresponding plasticity rules are of the form(12)Δ⁢w∝±(post-baseline)⋅pre
+In plastic networks, a number of connections between neurons are subject to experience-dependent changes in order to establish an E/I balance for PCs. PV→PC and the PC→PV synapses establish the target firing rates for PCs and PV neurons, respectively. VIP→PV and SOM→PV synapses and the synapses from SOM neurons onto the apical dendrites of PCs ensure that PCs remain at their baseline during feedback and playback phase. The corresponding plasticity rules are of the form
 
-## Connections onto PCs
+$$
+Δ⁢w∝\pm(post-baseline)⋅pre
+$$
 
-In detail, the connections from PV and SOM neurons onto the soma and the apical dendrites, respectively, obey inhibitory Hebbian plasticity rules akin to Vogels et al., 2011(13)ΔwEP,ij∝(rE,ipost−ρE,0post)⋅rP,jpre,(14)ΔwDS,ij∝(Aipost−ϵ)⋅rS,jpre.
+#### Connections onto PCs
 
-The parameter ρE,0p⁢o⁢s⁢t denotes the baseline firing rate of the postsynaptic PC, and the dendritic activity Aip⁢o⁢s⁢t is given by the rectified synaptic events at the dendrites(15)Aip⁢o⁢s⁢t=[ID,isyn+ci]+.
+In detail, the connections from PV and SOM neurons onto the soma and the apical dendrites, respectively, obey inhibitory Hebbian plasticity rules akin to Vogels et al., 2011
 
-The small ‘correction’ term ϵ eases the effect of strong onset responses (here, we used ϵ=0.1⁢s-1).
+$$
+Δw_{EP,ij}∝(r_{E,i}^{post}−ρ_{E,0}^{post})⋅r_{P,j}^{pre},
+$$
 
-## Connections onto PV neurons - non-local learning
 
-The connections from both SOM and VIP neurons onto PV neurons implement an approximation of a backpropagation of error(16)Δ⁢wi⁢j∝1NE,i⁢∑k∈Sip⁢o⁢s⁢t(ρE,0p⁢o⁢s⁢t-rE,kp⁢o⁢s⁢t)⋅rjp⁢r⁢e.
 
-Sip⁢o⁢s⁢t denotes the set of postsynaptic PCs a particular PV neuron is connected to, and NE,i is the number of excitatory neurons in Sip⁢o⁢s⁢t.
+$$
+Δw_{DS,ij}∝(A_{i}^{post}−ϵ)⋅r_{S,j}^{pre}.
+$$
 
-## Connections onto PV neurons - local approximation to backpropagation of error
+The parameter $ρ_{E,0}^{p⁢o⁢s⁢t}$ denotes the baseline firing rate of the postsynaptic PC, and the dendritic activity $A_{i}^{p⁢o⁢s⁢t}$ is given by the rectified synaptic events at the dendrites
 
-When the connection probability between PCs and PV neurons is large, this backpropagation of error can be replaced by a biologically plausible learning rule that only relies on local information available in the PV neurons (Figure 6),(17)Δ⁢wi⁢j∝Δ⁢Erec,i⋅rjp⁢r⁢e,where Δ⁢Erec,i denotes the difference between the excitatory recurrent drive onto PV neuron i and a target value(18)Δ⁢Erec,i=∑k∈Sip⁢r⁢ewPE,i⁢k⋅(ρE,0p⁢o⁢s⁢t-rE,kp⁢o⁢s⁢t).
+$$
+A_{i}^{p⁢o⁢s⁢t}=[I_{D,i}^{syn}+c_{i}]_{+}.
+$$
 
-Sip⁢r⁢e denotes the set of presynaptic PCs a particular PV neuron receives excitation from.
+The small ‘correction’ term $ϵ$ eases the effect of strong onset responses (here, we used $ϵ=0.1⁢s^{-1}$).
 
-## Connections onto PV neurons - learning with a homeostatic firing rate for PV neurons
+#### Connections onto PV neurons - non-local learning
 
-When nPE neurons do not receive direct visual input, the backpropagation rules can be simplified even further (Figure 6—figure supplement 1). The synapses onto PV neurons can be learned according to a Hebbian inhibitory plasticity rule (Vogels et al., 2011) that aims to sustain a baseline rate in the PV neurons(19)ΔwPX,ij∝(rP,ipost−ρP,0post)⋅rX,jprewith X∈{S,V}. This baseline rate is established by modifying the connections from PCs onto PV neurons according to an anti-Hebbian plasticity rule(20)ΔwPE,ij∝(ρP,0post−rP,ipost)⋅rE,jpre.
+The connections from both SOM and VIP neurons onto PV neurons implement an approximation of a backpropagation of error
 
-## Simulation and code availability
+$$
+Δ⁢w_{i⁢j}∝\frac{1}{N_{E,i}}⁢\sumk\inS_{i}^{p⁢o⁢s⁢t}(ρ_{E,0}^{p⁢o⁢s⁢t}-r_{E,k}^{p⁢o⁢s⁢t})⋅r_{j}^{p⁢r⁢e}.
+$$
 
-All simulations were performed in customized Python code written by LH. Differential equations were numerically integrated using a 2nd-order Runge-Kutta method with time steps between 0.05 and 2 ms. Neurons were initialized with ri⁢(0)=0. Source code and data for all figures will be available after publication at Hertäg, 2020 (https://github.com/sprekelerlab/SourceCode_Hertaeg20, copy archived at https://github.com/elifesciences-publications/SourceCode_Hertaeg20).
+$S_{i}^{p⁢o⁢s⁢t}$ denotes the set of postsynaptic PCs a particular PV neuron is connected to, and $N_{E,i}$ is the number of excitatory neurons in $S_{i}^{p⁢o⁢s⁢t}$.
+
+#### Connections onto PV neurons - local approximation to backpropagation of error
+
+When the connection probability between PCs and PV neurons is large, this backpropagation of error can be replaced by a biologically plausible learning rule that only relies on local information available in the PV neurons (Figure 6),
+
+$$
+Δ⁢w_{i⁢j}∝Δ⁢E_{rec,i}⋅r_{j}^{p⁢r⁢e},
+$$
+
+where $Δ⁢E_{rec,i}$ denotes the difference between the excitatory recurrent drive onto PV neuron i and a target value
+
+$$
+Δ⁢E_{rec,i}=\sumk\inS_{i}^{p⁢r⁢e}w_{PE,i⁢k}⋅(ρ_{E,0}^{p⁢o⁢s⁢t}-r_{E,k}^{p⁢o⁢s⁢t}).
+$$
+
+$S_{i}^{p⁢r⁢e}$ denotes the set of presynaptic PCs a particular PV neuron receives excitation from.
+
+#### Connections onto PV neurons - learning with a homeostatic firing rate for PV neurons
+
+When nPE neurons do not receive direct visual input, the backpropagation rules can be simplified even further (Figure 6—figure supplement 1). The synapses onto PV neurons can be learned according to a Hebbian inhibitory plasticity rule (Vogels et al., 2011) that aims to sustain a baseline rate in the PV neurons
+
+$$
+Δw_{PX,ij}∝(r_{P,i}^{post}−ρ_{P,0}^{post})⋅r_{X,j}^{pre}
+$$
+
+with $X\in{S,V}$. This baseline rate is established by modifying the connections from PCs onto PV neurons according to an anti-Hebbian plasticity rule
+
+$$
+Δw_{PE,ij}∝(ρ_{P,0}^{post}−r_{P,i}^{post})⋅r_{E,j}^{pre}.
+$$
+
+### Simulation and code availability
+
+All simulations were performed in customized Python code written by LH. Differential equations were numerically integrated using a 2nd-order Runge-Kutta method with time steps between 0.05 and 2 ms. Neurons were initialized with $r_{i}⁢(0)=0$. Source code and data for all figures will be available after publication at Hertäg, 2020 (https://github.com/sprekelerlab/SourceCode_Hertaeg20, copy archived at https://github.com/elifesciences-publications/SourceCode_Hertaeg20).

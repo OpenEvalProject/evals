@@ -13,12 +13,12 @@
 
 ### Affiliations
 
-1. https://ror.org/0190ak572 Center for Neural Science, New York University New York United States
-2. https://ror.org/00sekdz59 Center for Computational Neuroscience, Flatiron Institute New York United States
-3. https://ror.org/00hj8s172 Columbia University, New York New York United States
-4. https://ror.org/0190ak572 Department of Psychology, New York University New York United States
-5. https://ror.org/0190ak572 Neuroscience Institute, New York University School of Medicine New York United States
-6. https://ror.org/0190ak572 Department of Biology, New York University New York United States
+1. Center for Neural Science, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+2. Center for Computational Neuroscience, Flatiron Institute New York United States ([ROR:00sekdz59](https://ror.org/00sekdz59))
+3. Columbia University, New York New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+4. Department of Psychology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+5. Neuroscience Institute, New York University School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+6. Department of Biology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 
 † Corresponding author
 
@@ -38,27 +38,71 @@ Here, we made continuous 20-day audio recordings from three separate gerbil fami
 
 ## Results
 
-## Longitudinal familial audio recording
+### Longitudinal familial audio recording
 
 We obtained acoustic recordings (four microphones, 125 kHz sampling rate) from three separate gerbil families, each containing two adults and four pups (Figure 1A). Continuous recordings began at P11-13, lasted 20 days, and pups were weaned at P29 (Figure 1B). As shown in Figure 1C, we extracted all sound events (yellow) using amplitude thresholding of acoustic power. To isolate vocalizations (blue) from non-vocal sounds (red), we computed the spectral flatness of each sound event and classified sounds with a threshold value of <0.3 as vocalizations. A similar approach has previously been used in mice (Castellucci et al., 2016), and we verified that a threshold value of 0.3 minimized the number of false positives (Figure 1—figure supplement 1). Using this approach, 10,267,972 sound events were extracted, containing 583,237 vocalizations and 9,684,735 non-vocal sounds detected across the three families. Sound events were produced at an average rate of 6726+/-1260 times per hour (Figure 1D), which reveals the rate of auditory object processing (Griffiths and Warren, 2004) for gerbil families in an undisturbed setting. Vocalizations represent 6.99+/-3.07% of all sound events over the recording period (Figure 1E) and were emitted at an average rate of 405+/-103 times per hour (Figure 1F), although this varied with time of day (see below).
 
-## Unsupervised discovery of the Mongolian gerbil vocal repertoire
+![Figure 1.](https://cdn.elifesciences.org/articles/89892/elife-89892-fig1-v2.jpg)
+
+**Figure 1.:** (A) Recording apparatus. Four ultrasonic microphones sampled at 125 kHz continuously recorded a family in an enlarged environment. (B) Experiment timeline. Three gerbil families with the same family composition (2 adults, 4 pups) were recorded continuously for 20 days. (C) Extraction of sound events from raw audio using sound amplitude thresholding (Gray threshold = ‘th_2’, black threshold = ‘th_1’ and ‘th_3’; see Methods). Vocalizations (n=583,237) are separated from non-vocal sounds (n=9,684,735) using a threshold on spectral flatness (Figure 1—figure supplement 1 see Methods). (D) Summary of total sound event emission and average emission per hour. (E) Proportion of all sound events that are vocal or non-vocal sounds. (F) Summary of total vocalization emission and average emission per hour.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89892/elife-89892-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Distribution of the spectral flatness of all sound events extracted. Vertical red line = 0.3. (B) False-positive percentage derived from human labeling of noise detected in randomly sampled 10x10 vocalization matrices. Random samples came from putative vocalizations with spectral flatness less than a moving threshold of 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4 (n=10 random samples per group). (C) Example random sample matrix of vocalizations with spectral flatness <0.3. Four false positives observed in this grid.
+
+### Unsupervised discovery of the Mongolian gerbil vocal repertoire
 
 To quantify the full array of vocalizations obtained from the three families, we trained a variational autoencoder (VAE) on vocalization spectrograms. The VAE learned a low-dimensional representation of latent acoustic features, thereby enabling analysis of such a large dataset with a larger representational capacity than standard acoustic features (Goffinet et al., 2021). Figure 2A shows a schematic of the VAE architecture used (Goffinet et al., 2021), where spectrograms (top; 128x128 pixels) are reduced via a deep convolutional neural network ‘encoder’ to a latent vector (middle; 32-dimensional). A deep convolutional neural network ‘decoder’ then reconstructs a spectrogram (bottom) from the 32-dimensional latent representation. The encoder/decoder networks are jointly trained to minimize the discrepancy between the original and reconstructed spectrograms (Figure 2—figure supplement 1A, B), resulting in a low-dimensional latent representation, or ‘code’, which depicts each vocalization. To cluster vocalizations into distinct categories, we trained a Gaussian Mixture Model (GMM) on VAE latent representations. Using a combination of the elbow method on held-out log likelihood and established knowledge for how many vocal types gerbils emit (see Methods, GMM clustering), we selected a model with 70 vocal clusters as a parsimonious description of the data (Figure 2—figure supplement 1C). Figure 2B shows a UMAP embedding of the VAE latents (center), used for visualization purposes only, which demonstrates that the gerbil vocal repertoire is more discrete than mouse, yet less discrete than zebra finch (Sainburg et al., 2020; Goffinet et al., 2021). Vocalizations occur as either single syllables bounded by silence (monosyllabic) or consist of combinations of single syllables without a silent interval (multisyllabic). Representative examples from 12 monosyllabic vocalization clusters are shown with their relative position in UMAP space, one of which appears similar in form to naked mole rat family specific chirp (blue box with asterisk; Barker et al., 2021). Furthermore, monosyllabic vocalizations (56/70 vocal clusters) can be flexibly strung together to create multisyllabic or ‘composite’ vocalizations (9/70 of vocal clusters; Kobayasi and Riquimaroux, 2012). The remaining five clusters contained a mixture of monosyllabic and multisyllabic vocalizations. Figure 2C shows 8 examples of multisyllabic vocalizations and their monosyllabic component boundaries, some of which have been reported previously (Kobayasi and Riquimaroux, 2012) and some of which are newly characterized (white asterisks). To assess how family structure influences vocal repertoire usage, we compared vocal usage one day prior and one day after pup weaning, showing a drastic decrease in vocal emission (Figure 3—figure supplement 1A). A large-magnitude vocal repertoire change is also observed, with the repertoire confined to a small region of vocal space following weaning (Figure 3—figure supplement 1B–D).
 
-## Family specific usage of vocal clusters
+![Figure 2.](https://cdn.elifesciences.org/articles/89892/elife-89892-fig2-v2.jpg)
+
+**Figure 2.:** Variational autoencoder and clustering. (A) Vocalization spectrograms (top) are input to a variational autoencoder (VAE) which encodes the spectrogram as a 32-D set of latent features (middle). The VAE learns latent features by minimizing the difference between original spectrograms and spectrograms reconstructed from the latent features by the VAE decoder (bottom). A gaussian mixture model (GMM) was trained on the latent features to cluster vocalizations into discrete categories. (B) Representative vocalizations from 12 distinct GMM clusters featuring monosyllabic vocalizations are shown surrounding a UMAP embedding of the latent features. Asterisk denotes vocal type not previously characterized. (C) Examples of multisyllabic vocalizations. White vertical lines indicate boundaries of monosyllabic elements. Asterisks denote multisyllabic vocal types not previously characterized.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89892/elife-89892-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) VAE reconstruction examples for different vocalization types. (B) VAE test and training loss show plateau in performance after a few epochs (model used in this study is epoch 50). (C) GMM held-out log likelihood as a function of the number of clusters used during model training. Seventy clusters were used in this study. (D) MMD2 permutation comparisons. All family comparisons occur greater than expected by chance (p<0.01, independent t-test). (E) Number of latent features used by VAE.
+
+### Family specific usage of vocal clusters
 
 We next asked whether gerbil families display different vocalization usage patterns. First, we visualized the entire vocal repertoire usage of each family as a probability density heatmap and determined that vocal repertoire usage significantly differed between families (Figure 3A, Figure 2—figure supplement 1D). Next, using GMM vocalization clusters, we compared the proportion usage of each vocal cluster for the three families, revealing specific vocal cluster differences between families (Figure 3B). All families used each of the 70 vocal types (i.e. no cluster usage is 0), but each family relied more heavily on some clusters as compared to others. Importantly, this result is stable across a wide range of GMM clusters (Figure 4—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/89892/elife-89892-fig3-v2.jpg)
+
+**Figure 3.:** (A) UMAP probability density plots (axes same as Figure 2B) show significant differences between family repertoires (p<0.01, MMD permutation test on latent space; see Methods). (B) GMM vocal cluster usage by family. Clusters sorted by cumulative usage across all families. Families show distinct usage patterns of different vocal clusters. (C) Clusters are resorted by the usage difference between families. (D) Spectrogram examples from top differentially used clusters (left) and location of clusters in embedding space (right).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89892/elife-89892-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Pup weaning causes a consistent reduction in vocal emission across families. (B) UMAP probability densities of the vocal repertoire pre and post pup weaning. Example vocalization from high-density post-weaning regions. (C). Difference in probability densities and total percent-change in repertoire pre-post pup weaning. (D) Quantification of day-to-day percent-change throughout the experiment shows that the percent-change magnitude observed in C is rare.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/89892/elife-89892-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Acoustic features computed on the top 100 most probable vocalizations from each GMM cluster. Mean values ± standard deviation shown. Details on acoustic feature calculation are described in the Methods section.
+
 Sorting the GMM cluster labels by the pairwise difference in vocal type usage between the three families revealed which vocal types differed most (Figure 3C). Examples of top preferred vocal clusters for each family are shown in Figure 3D, along with the position of those vocal clusters in UMAP embedding space. Families overexpress dissimilar vocal clusters relative to each other (e.g. clusters 4 and 8 in Family 2) and similar vocal clusters relative to each other (e.g. cluster 14 in Family 1 and cluster 1 in Family 3; cluster 9 in Family 1 and cluster 5 in Family 2).
 
-## Vocal usage differences remain stable across days of development
+### Vocal usage differences remain stable across days of development
 
 It is possible that the observed vocal usage differences could result from varying developmental progression of vocal behavior or overexpression of certain vocal clusters during specific periods within the recording. To assess the potential effect of daily variation on family specific vocal usage, we visualized density maps of vocal usage across days for each of the families (Figure 4A). There are two noteworthy trends: (1) the density map remains coarsely stable across days (rows) and (2) the maps look distinct across families on any given day (columns). This is a qualitative approximation for the repertoire’s stability, but does not take into account variation of call type usage (as defined by GMM clustering of the latent space). Figure 4B, shows the normalized usage of each cluster type over development for each family. Cluster usages during the period of ‘full family, shared recording days‘ (postnatal days beneath the purple bars) are stable across days within families – as is apparent by the horizontal striations in the plot – although each family maintains this stability through using a unique set of call types. This is addressed empirically in Figure 4C, which shows clearly separable PCA projections of the cluster usages shown in Figure 4B (purple days, concatenated into a 45 day x 70 cluster matrix). Finally, we computed the pairwise Maximum Mean Discrepancy (MMD) between latent distributions of vocalizations from individual recording days for each of the families (Figure 4D). This shows that across-family repertoire differences are substantially larger than within-family differences. This is visualized in a multidimensional scaling projection of the MMD matrix in Figure 4E.
 
-## Transition structure, but not emission structure, shows family specific differences
+![Figure 4.](https://cdn.elifesciences.org/articles/89892/elife-89892-fig4-v2.jpg)
+
+**Figure 4.:** (A) UMAP probability density plots for each day of the recording, across families. Purple box indicated recording days that are shared across families. These days are used for subsequent analyses in C-E. (B) GMM vocal cluster usage per day. Usages are normalized on a per-day basis. A unique color is used for each cluster type. (C) PCA projection of daily usages within the purple (shared recording days) period showing that families use a unique subset of clusters stably across days. (D) Maximum Mean Discrepancy (MMD) distance between VAE latent distributions of vocalizations between days and across families. (E) Multidimensional scaling projection of MMD matrix from (D). Family vocal repertoires are distinct and remain so across days.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89892/elife-89892-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) GMM cluster usages for each family over a range of GMM cluster sizes. (B) Quantification of pairwise cluster usage differences showing stability of family differences over all cluster sizes.
+
+### Transition structure, but not emission structure, shows family specific differences
 
 To assess whether temporal features also harbor family differences, we analyzed vocalization emission over a range of ethologically relevant timescales. First, we summed the total vocal emission for each hour of the day over the entire recording period, which revealed a diurnal activity pattern that was similar across the three families recorded (Figure 5A). We then analyzed a shorter time scale, the inter-vocalization-interval. The distribution of intervals between subsequent vocalizations is broad, with some vocalizations occurring rapidly after one another (e.g. within tens to hundreds of milliseconds) and others separated by many seconds. The majority of vocalizations occurred in bouts (58.5±0.9%), which we extracted using two criteria: (1) vocalizations within a bout display inter-vocalization-interval of <2 s, and (2) a bout contains at least 5 vocalizations (based on Rose et al., 2021). The distribution of bout durations, inter-vocalization-intervals, and vocalization durations for each family are highly overlapping and contain the same peaks (Figure 5B–D), suggesting that the temporal structure of vocal emission does not vary by family. Vocalization bouts show striking structure in vocal type sequencing (Figure 5E, F), therefore we next assessed whether vocal cluster sequencing varied by family. Vocal cluster transition matrices revealed a strong self-transition preference for all vocal clusters across families (Figure 5G); however, the proportion usage of different transitions (including self-transitions) drastically varied by family (Figure 5H).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/89892/elife-89892-fig5-v2.jpg)
+
+**Figure 5.:** (A) Vocalizations are emitted in a diurnal cycle. (B) Vocalizations consistently occur in seconds-long bouts across families. (C) Vocalization intervals (onset-to-onset) are consistent across families. (D) Vocalization durations are consistent across families. (E) Raw data examples of bouts. (F) Bouts typically occupy a similar area of vocal space. (G) Vocal cluster transition matrix. Vocalizations strongly favor self-transition. (H) Bigram probability graph. Self and other vocalization transition tendencies show family specific transitions (edges > 0.001 usage shown).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89892/elife-89892-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Vocal cluster transition matrix (same as Figure 5G). (B) Random transition matrix, computed after shuffling vocal cluster label sequence. (C) Transitions that occur greater than expected by chance (1000-iteration random shuffle with one-sample t-test and post hoc Benjamini-Hochberg multiple comparisons correction; see Methods). (D) Most common transitions (>0.04% usage) from cluster 12 (roughly equally used across all families) to other clusters. Red lines indicate transitions that are shared across families, black lines indicate unique family specific transitions.
 
 To determine whether differences in 1 gram structure contribute to differences in the transition (2 gram) structure, we performed a number of controls. Although subtle, vertical streaks are clearly present in shuffled transition matrices that correspond to 1 gram usages (Figure 5—figure supplement 1A, B). Given the shuffled data structure, we sought to determine whether the observed transition probabilities differed significantly from chance levels. We randomly shuffled label sequences 1000 times independently for each family to generate a null transition matrix distribution. Using these null distributions and the observed transition probabilities, we computed a p-value for each transition using a one-sample t-test and created a binary transition matrix indicating which transitions happen above chance levels (Figure 5—figure supplement 1C, black pixels, P ≤ 0.05 after post hoc Benjamini-Hochberg multiple comparisons correction). As is made clear in Figure 5—figure supplement 1C, most transitions for each family occur significantly above chance levels, despite the inherent 1 gram structure. Moreover, by looking at transitions from a highly usage cluster type used roughly the same proportion across families (cluster 12), we show that families arrange the same sets of vocal clusters into unique sequences (Figure 5—figure supplement 1D). We believe that this provides compelling evidence that the 1 gram structure does not change the interpretation of the main claim that transition structure varies by family.
 
@@ -82,15 +126,15 @@ These results reveal that Mongolian gerbil families possess a rich repertoire of
 
 ## Methods
 
-## Experimental animals
+### Experimental animals
 
 Three gerbil families (Meriones unguiculatus, n=6 per family: 2 adults, 4 pups) were used in this study (Charles River). All procedures related to the maintenance and use of animals were approved by the University Animal Welfare Committee at New York University (protocol 2020–1112), and all experiments were performed in accordance with the relevant guidelines and regulations.
 
-## Audio recording
+### Audio recording
 
 Four ultrasonic microphones (Avisoft CM16/CMPA48AAF-5V) were synchronously recorded using a National Instruments multifunction data acquisition device (PCI-6143) via BNC connection with a National Instruments terminal block (BNC-2110). The recording was controlled with custom python scripts using the NI-DAQmx-python library version 0.5.7; (https://github.com/ni/nidaqmx-python; National Instruments, 2017) which wrote samples to disk at a 125 kHz sampling rate. In total, 13.084 TB of raw audio data were acquired across the three families. For further analyses, the four-channel microphone signals were averaged to create a single-channel high-fidelity audio signal.
 
-## Audio segmentation
+### Audio segmentation
 
 Audio was segmented by amplitude thresholding using the Autoencoded Vocal Analysis (AVA) python package (see Goffinet et al., 2021). First, sound amplitude traces are calculated by computing spectrograms from raw audio, then summing each column of the spectrogram. The ‘get_onset_offsets’ function, which performs the segmenting, requires the selection of a number of parameters which affect segmenting performance. The following values were tuned via an interactive procedure which validated that the segmenting could detect low amplitude vocalizations and capture individual vocal units apparent by eye:
 
@@ -114,11 +158,11 @@ seg_params = {
 
 Sound onsets are detected when the amplitude exceeds 'th_3' (black dashed line, Figure 1C), and sound offset occurs when there is a subsequent local minimum for example amplitude less than 'th_2' (gray dashed line, Figure 1C), or 'th_1' (black dashed line, Figure 1C), whichever comes first. In this specific use case, th_2 (5) will always come before th_1 (2), therefore the gray dashed line will always be the offset. A subsequent onset will be marked if the sound amplitude crosses th_2 or th_3, whichever comes first. For example, the first sound event detected in Figure 1C shows the sound amplitude rising above the black dashed line (th_3) and marks an onset. Subsequently, the amplitude trace falls below the gray dashed line (th_2) and an offset is marked. Finally, the amplitude rises above th_2 without dipping below th_3 and an onset for a new sound event is marked. Had the amplitude dipped below th_3, a new sound event onset would be marked when the amplitude trace subsequently exceeded th_3 (e.g. between sound event 2 and 3, Figure 1C). The maximum and minimum syllable durations were selected based on published duration ranges of gerbil vocalizations (Rübsamen et al., 2012; Kobayasi and Riquimaroux, 2012).
 
-## Vocalization extraction
+### Vocalization extraction
 
 We computed the spectral flatness of each detected sound event using the python package librosa (https://github.com/librosa; McFee et al., 2024). Consistent with prior literature (Castellucci et al., 2016), we used a threshold on spectral flatness to separate putative vocal and non-vocal sounds. This threshold value was determined empirically, by calculating the false positive vocalization rate (Figure 1—figure supplement 1) of groups of randomly sampled vocalizations. For each spectral flatness value in Figure 1—figure supplement 1B, 100 randomly sampled vocalization spectrograms less than the working threshold value were assembled into 10x10 grids and visually inspected for false positives (e.g. non-vocal sounds; Figure 1—figure supplement 1C). This procedure was repeated 10 times for spectral flatness thresholds of 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, and 0.4. We quantified the false positive vocalization rate for each threshold value and selected 0.3, which had a 5.5+/-1.96% false positive rate.
 
-## Variational autoencoder training
+### Variational autoencoder training
 
 Extracted vocalizations were converted to 128x128 pixel spectrograms using the ‘process_sylls’ function from AVA with the following preprocessing parameters:
 
@@ -146,7 +190,7 @@ preprocess_params = {
 
 A VAE was trained for 50 epochs using a model precision of 40. We removed additional false positive vocalizations by inspecting a 2D UMAP embedding of the VAE latent space and removing UMAP clusters containing non-vocal sounds from further analysis.
 
-## Gaussian mixture model
+### Gaussian mixture model
 
 GMMs were fit to cluster VAE latent feature vectors. To reduce computation time, we fit the model on 7 of 32 VAE latents (Figure 2—figure supplement 1E), as these explained 99.5% of the variance in the original feature space. The model was implemented in Stan (https://mc-stan.org/cmdstanpy), however similar clustering results were achieved using the scikit-learn Gaussian Mixture model class with a diagonal covariance matrix (https://scikit-learn.org/stable/modules/generated/sklearn.mixture.GaussianMixture.html). We fit the model using stochastic variational inference, an approximate Bayesian inference technique that recasts the task of learning a posterior distribution as an optimization problem and enables vast speedups (Hoffman et al., 2013). GMMs typically assume that the whole population selects clusters with the same probabilities, however we modified this assumption to allow, although not enforce, the model to learn different cluster usage patterns for each family. Specifically, we used the following model:
 
@@ -154,21 +198,21 @@ Let D be the dimensionality of the VAE latents used (in our case, D=7) and K be 
 
 We selected our hyperparameters according to Stan’s guidelines for weakly informative priors, yielding the model:
 
-VAE feature embedding for vocalization k of cohort i: xikNormal(β(zik),Σ(zik))
+VAE feature embedding for vocalization k of cohort i: $x_{ik}Normal(\beta_{(z_{ik})},Σ_{(z_{ik})})$
 
 To select the number of clusters, K, we held out 25% of our data, trained models with varying values for K, and calculated the log probability of seeing the held-out data under each model (Figure 2—figure supplement 1C). Using the elbow method, we determined that ~70 clusters was a reasonable selection for K. Previous work documenting the Mongolian gerbil repertoire (Rübsamen et al., 2012; Kobayasi and Riquimaroux, 2012) has revealed ~12 vocalization types that vary with social context. It is likely that we are capturing these ~12 (plus a few more, as illustrated in Figure 2C) as well as individual or family-specific variations of some call types. Although the number of discrete call types is likely less than 70, it is plausible that variation due to vocalizer identity pushes some calls into unique clusters. This idea is supported by the fact that both naked mole rats and Mongolian gerbils have been shown to exhibit individual-specific variation in vocalizations, though only in single call types (Figure 1 from Barker et al., 2021; Table I from Nishiyama et al., 2011). Importantly, the core result is not affected by cluster size (Figure 5—figure supplement 1).
 
-## Maximum mean discrepancy permutation test
+### Maximum mean discrepancy permutation test
 
 Clustering analyses are notoriously challenging (Kleinberg, 2002). Thus, we performed a complementary analysis to investigate whether different gerbil families utilize different vocal repertoires. In particular, we pursued an approach that makes no assumptions about the number, character, or even existence of vocalization clusters.
 
 Specifically, we used Maximum Mean Discrepancy (MMD) to quantify the difference between two latent distributions of vocalizations. This test considers two sets of observed data points (e.g. N vocalizations from Family 1 and N vocalizations from Family 2), which are assumed to be independent and identically distributed random variables from underlying probability distributions, and returns a distance metric corresponding to the equality of the two distributions (Gretton et al., 2012). Lower values suggest distributions are more similar and higher values suggest distributions are more dissimilar. We investigated the null hypothesis that the gerbil families used the same vocal repertoire—that is the probability distribution over VAE latent space for each family was identical, corresponding to a MMD2 distance of zero. To test this null hypothesis, we computed the MMD2 distance between the empirical distributions of family pairs in batches of 1000 randomly sub-sampled vocalizations. This yielded a histogram of empirically observed MMD2 distance values for each family pair, which we compared a null distribution generated by randomly permuting the family label attached to each vocalization. The empirically observed MMD2 distances were much higher than the shuffle control, favoring the alternative hypothesis that gerbil families utilize distinct syllable usage statistics (Figure 2—figure supplement 1).
 
-## Transition analysis
+### Transition analysis
 
-Vocalization transition sequences were generated by concatenating vocal cluster labels chronologically for each family and calculating the number of transitions for all possible transition types. The resulting transition matrix was normalized such that each row sums to 1, thus reflecting the probability that vocalization i transitions to vocalization i+1, that is pij (Figure 5G). The transition matrix used to generate the bigram probability graph in Figure 5H was normalized such that edge and node widths correspond to the probability of each vocalization pair, that is pi,j (Shannon, 1948).
+Vocalization transition sequences were generated by concatenating vocal cluster labels chronologically for each family and calculating the number of transitions for all possible transition types. The resulting transition matrix was normalized such that each row sums to 1, thus reflecting the probability that vocalization $i$ transitions to vocalization $i+1$, that is $p_{i}j$ (Figure 5G). The transition matrix used to generate the bigram probability graph in Figure 5H was normalized such that edge and node widths correspond to the probability of each vocalization pair, that is $pi,j$ (Shannon, 1948).
 
-## Acoustic feature calculations
+### Acoustic feature calculations
 
 First, raw audio from the most probable vocalization samples (n=100) from each vocal cluster were extracted. Next, using the VocalPy (Nicholson, 2023) ‘similarity_features’ function (a python implementation of the Sound Analysis Pro Sound Analysis Tools library: http://soundanalysispro.com/matlab-sat), the following acoustic features were calculated: fundamental frequency (pitch), amplitude, entropy, frequency modulation, goodness of pitch. In addition to these features, spectral flatness was computed using librosa (https://librosa.org/doc/latest/generated/librosa.feature.spectral_flatness.html), and duration was computed from the raw audio itself. Finally, start and stop frequencies were computed by taking the median fundamental frequency within the first third and last third (time) of each vocalization, respectively.
 

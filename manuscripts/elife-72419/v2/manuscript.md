@@ -38,37 +38,141 @@ Because filopodia-like structures have been observed in fusing muscles (Gurevich
 
 ## Results
 
-## Protrusions from differentiating myoblasts are apparent during cellular fusion
+### Protrusions from differentiating myoblasts are apparent during cellular fusion
 
 Thin actin-filled cellular extensions that protrude from differentiating myoblasts have been observed during vertebrate myofusion (Randrianarison-Huetz et al., 2018). We sought to investigate the occurrence and behaviors of these projections in living myoblasts of both undifferentiated and differentiated states via live-cell confocal microscopy, utilizing membrane targeted fluorescent reporter constructs containing a C-terminal human H-Ras CAAX box prenylation signal (RFP-CAAX or GFP-CAAX; see Materials and methods) to enable detailed visualization of cellular protrusions. Undifferentiated myoblasts of the murine C2C12 cell line exhibit many thin cellular projections. Live imaging reveals that these projections are actively elongating primarily at the leading edge of myoblasts, while the trailing regions of the cells predominantly exhibit retraction fibers that become evident as the cells move (Figure 1—figure supplement 1A-C, Videos 1–2; summarized in Figure 1A), as commonly observed during cell migration (Mattila and Lappalainen, 2008). Upon induction of differentiation by switching the cells to low-serum media conditions, myoblasts undergo morphological changes characterized by cellular elongation, loss of distinct directional polarity, and increased incidence of cellular projections from the entirety of the cell body (Video 3). As the differentiation process proceeds to the formation of multinucleated myotubes, the cells display an array of dynamic and static projections at the lateral edges, prominent dorsal protrusions along the cell body, and arm-like lamellipodial extensions adorned with thin projections that can protrude from any part of the cell (Figure 1B and Videos 4–7; summarized in Figure 1C). The lengths of extending projections from myotubes are significantly longer than those from the leading edge of myoblasts (Figure 1—figure supplement 1D), and scanning electron micrographs confirm that these dorsal projections from myotubes are of consistent structure and size of thin, actin-based cellular projections known as filopodia (Figure 1D). Live imaging of differentiating myoblast cultures reveals the involvement of these structures in muscle cell fusion, as witnessed through fusion induced by projections extending from the lateral edge of myotubes (Figure 1E–F, Video 8), as well as by projection-laden lamellipodial extensions (Figure 1G, Videos 9–10). This evidence demonstrates that these cellular projections extending from differentiating myoblasts are involved in the formation of multinucleated mammalian muscle. The remainder of this report will focus on the cellular mechanisms responsible for the generation of these projections and their role in muscle fusion.
 
-## Myo10 is required for filopodia formation and cellular fusion of myoblast in vitro
+![Figure 1.](https://cdn.elifesciences.org/articles/72419/elife-72419-fig1-v2.jpg)
+
+**Figure 1.:** (A) A summary schematic depicting the cellular protrusions exhibited by undifferentiated myoblasts. (B) Live-cell confocal microscopy of differentiated myotubes (day 5) expressing a membrane-targeted fluorescent protein constructs (RFP-CAAX or GFP-CAAX) reveals myogenic projections are dynamic structures featured across the cell surface, including prominent lateral edge projections, dorsal protrusions, and those emerging from lamellipodial extensions (indicated by arrow). (C) Summary schematic displaying cellular projections associated with differentiated myotubes. (D) Cellular projections visualized on the surface of differentiating myoblasts by scanning electron microscopy (SEM). (E) Differential interference contrast imaging of a myotube exhibiting lateral edge protrusions (indicated by arrow) actively engaged in myoblast fusion (N indicates newly incorporated nucleus; days 4–5). Fluorescently labeled myoblasts utilizing (F) lateral edge protrusions and (G) a lamellipodial extension adorned with fine protrusions to promote fusion with adjacent cells (differentiation days 4–5). EGFP-CAAX in (G) becomes transferred to the non-expressing cell upon fusion, making the newly added cell visible via fluorescence. Unless otherwise noted, scale bars represent 25 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72419/elife-72419-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) Analysis of cellular projections in undifferentiated myoblasts expressing RFP-CAAX reveals elongating cellular projections are primarily observed on the anterior leading edge of the cell, whereas retraction fibers are the predominant cellular extensions observed away from the cell anterior (n = 4 independent experiments). (D) Quantification of extending projection length in undifferentiated myoblasts and differentiated myotubes (n = 115–244 projections from three individual cultures). Data are presented as box-and-whisker plots depicting second and third quartiles with minimum and maximum values and were analyzed using (B–C) one-way ANOVA followed by Tukey post hoc tests (α = 0.05; *p < 0.05 vs. anterior values; #p < 0.05 vs. dorsal/side values) or (D) two-tailed Welch’s t-tests with effect size presented as Cohen’s d (d). Scale bars represent 5 µm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/72419/elife-72419-video1.mp4.jpg)
+
+**Video 1.:** Time-lapse confocal imaging of undifferentiated myoblasts expressing RFP-CAAX. Individual frames were utilized to make Figure 1A. Images were acquired every 15 min. Scale bar represents 25 µm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/72419/elife-72419-video2.mp4.jpg)
+
+**Video 2.:** Representative time-lapse movies of cellular projections from the anterior, dorsal, and posterior positions of undifferentiated myoblasts expressing RFP-CAAX. Individual frames are included in Figure 2—figure supplement 1A. Images were acquired every 20 s for a duration of 2 min.
+
+![Video 3.](https://cdn.elifesciences.org/articles/72419/elife-72419-video3.mp4.jpg)
+
+**Video 3.:** Time-lapse movie of differentiating myoblasts expressing RFP-CAAX. Images were acquired every 15 min. Scale bar represents 100 µm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/72419/elife-72419-video4.mp4.jpg)
+
+**Video 4.:** Time-lapse video of the lateral edge of a differentiated myotube expressing RFP-CAAX. Individual frames are included in Figure 1B. Images were acquired every minute.
+
+![Video 5.](https://cdn.elifesciences.org/articles/72419/elife-72419-video5.mp4.jpg)
+
+**Video 5.:** Time-lapse of differential interference contrast imaging showing dynamic cellular projections at the lateral edge of a myotube. The arrow indicates where pronounced projections are clearly visible. Images of this myotube from later time points are also found in Figure 1E. Images were acquired every 30 s.
+
+![Video 6.](https://cdn.elifesciences.org/articles/72419/elife-72419-video6.mp4.jpg)
+
+**Video 6.:** Time-lapse confocal imaging of a GFP-CAAX-expressing myotube exhibiting dynamic dorsal protrusions. Individual frames are included in Figure 1B. Images were acquired every 30 s. Scale bar represents 25 µm.
+
+![Video 7.](https://cdn.elifesciences.org/articles/72419/elife-72419-video7.mp4.jpg)
+
+**Video 7.:** Time-lapse confocal imaging of diverse cellular projection of differentiating myotubes expressing GFP-CAAX. Individual frames were utilized to make Figure 1C. Images were acquired every 20 min.
+
+![Video 8.](https://cdn.elifesciences.org/articles/72419/elife-72419-video8.mp4.jpg)
+
+**Video 8.:** Time-lapse confocal images of a GFP-CAAX-expressing myotube initiating fusion with fine protrusions extending from the lateral edge. Individual frames are included in Figure 1F. Images were acquired every 15 min. Scale bar represents 25 µm.
+
+![Video 9.](https://cdn.elifesciences.org/articles/72419/elife-72419-video9.mp4.jpg)
+
+**Video 9.:** Time-lapse confocal images of a GFP-CAAX-expressing myotube initiating fusion using a lamellipodial extension adorned with fine protrusions. Individual frames are included in Figure 1G. Images were acquired every 15 min. Scale bar represents 25 µm.
+
+![Video 10.](https://cdn.elifesciences.org/articles/72419/elife-72419-video10.mp4.jpg)
+
+**Video 10.:** Time-lapse confocal images of a GFP-CAAX-expressing myotube initiating fusion using a lamellipodial extension. Images were acquired every 15 min.
+
+### Myo10 is required for filopodia formation and cellular fusion of myoblast in vitro
 
 A hallmark of filopodia is the presence of Myo10, which is a molecular motor associated with the initiation and elongation of filopodia and potential cargo binding/transport within filopodia (Berg and Cheney, 2002; Zhang et al., 2004). To establish if the projections we visualize during myogenic fusion are, indeed, filopodia, we investigated the expression pattern of Myo10 within differentiating myoblast cultures. Myo10 protein content (Figure 2A, Figure 2—figure supplement 1A) and Myo10 gene expression (Figure 2B) increase during the time course of myoblast differentiation. Myo10 immunofluorescence localizes specifically to differentiated myotubes (Figure 2C), which are confirmed to have expression of myosin heavy chain (MHC; Figure 2D). The Myo10-positive projections observed on these myotubes also contain actin filaments (F-actin; Figure 2E), a key feature of filopodia.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/72419/elife-72419-fig2-v2.jpg)
+
+**Figure 2.:** (A) Myo10 protein content, as shown by immunoblotting, and (B) Myo10 gene expression, as measured by real-time PCR (n = 3 independent cultures for each time point; normalized to Gapdh), is increased during the myoblast differentiation time course. (C) Immunofluorescence (IF) reveals that the increase in Myo10 in differentiating myoblast cultures is localized primarily to differentiated myotubes, which (D) also express the muscle terminal differentiation marker, myosin heavy chain (MHC). (E) The Myo10-positive cellular extensions of differentiated myoblasts contain F-actin. (F) IF of the insoluble fraction of differentiating myoblasts reveals that insoluble Myo10 is found distinctly at the tips of F-actin bundles (indicated by arrows). (G) Myo10-positive myoblasts exhibit nuclear staining for both MyoD and Myogenin muscle regulatory factors, as shown by IF, following 1 day of exposure to differentiation conditions. Gene expression data are presented as box-and-whisker plots depicting second and third quartiles with minimum and maximum values (relative to day 1 values). Data were analyzed using one-way ANOVA followed by Tukey post hoc tests (α = 0.05; *p < 0.05 vs. day 1 values; effect size is presented as eta-squared (η2)). Unless otherwise noted, scale bars represent 25 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72419/elife-72419-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Myo10 protein content increases during myoblast differentiation, as measured by immunoblotting (n = 3 individual experiments). (B) Fractionation of differentiation day 5 myoblast cultures into soluble and insoluble cellular fractions reveals that the slight majority of Myo10 content exists in the soluble fraction. (C) Immunofluorescence (IF) of differentiated myoblast insoluble fractions shows that Myo10 of the insoluble cellular fraction is associated with the actin cytoskeleton (as shown by phalloidin staining) and can be found at the tips of thin cellular projections. (D) Schematic of the consensus E-box-binding motifs (CANNTG) identified in the Myo10 promoter. (E–F) Activation of the Myo10 promoter reporter plasmid in differentiating myoblasts co-transfected with constitutively expressed GFP-CAAX and mApple (RFP) driven by the Myo10 promoter depicted in (D) (n = 4 individual experiments). (G) Expression of RFP in a differentiating myoblast following 1 day of differentiation. Efficient shRNA-mediated knockdown (KD) of myoblast Myo10 gene expression in (H) undifferentiated and (I) differentiated myoblasts, whereas muscle differentiation is not affected by Myo10 KD, as indicated by Myh2 expression, a gene encoding a mature myosin heavy chain (MHC) expressed by skeletal muscle (n = 3 individual experiments). (J) Representative images of MHC IF of control shRNA cells, Myo10 KD cells expressing a control RFP plasmid after 7 days of differentiation, and Myo10 KD cells expressing an RFP-Myo10 rescue plasmid. Data are presented as box-and-whisker plots depicting second and third quartiles with minimum and maximum values. Data of (A) were analyzed using one-way ANOVA followed by Tukey post hoc tests (α = 0.05; *p < 0.05 vs. day 1 values; #p < 0.05 vs. day 3 values; effect size is presented as eta-squared (η2)). Data of (E) and (H–I) were analyzed using two-tailed Welch’s t-tests with effect size presented as Cohen’s d (d). Scale bars represent (G) 10 or (C, J) 25 µm.
 
 Evidence suggests that Myo10 can exist as an inactive and diffusible folded monomer that undergoes a conformational change during activation that allows for unfolding and anti-parallel dimer formation, resulting in engagement with the actin cytoskeleton (Ropars et al., 2016; Umeki et al., 2011). Because Myo10 appears to fill the entire cell of differentiated myotubes, we sought to determine if myocyte Myo10 represents a freely diffusible population, an actin-bound population, or combination of the two states. Fractionation of differentiating myoblast cultures into soluble and insoluble cellular fractions revealed that Myo10 partitions into both the soluble and insoluble fractions (Figure 2—figure supplement 1B), with a slightly larger proportion residing in the soluble fraction. Serving as fractionation controls, αTubulin partitions primarily into the soluble cellular fraction, while MHC and actin are predominantly found in the insoluble fraction (Figure 2—figure supplement 1B). Immunofluorescence (IF) of insoluble myotube cellular remnants following soluble fraction extraction reveals that insoluble Myo10 is associated with the actin cytoskeleton (Figure 2—figure supplement 1C), and can be distinctly visualized at the tips of actin bundles that appear to be within myotube filopodia (Figure 2F).
 
 In agreement with Myo10 expression becoming highly activated in myoblasts during myogenic differentiation, analysis of the full-length Myo10 promoter (Lai et al., 2013) revealed the presence of 14 consensus E-Box motifs (CANNTG; depicted in Figure 2—figure supplement 1D). These motifs are DNA elements bound by myogenic regulator factors (MRFs), such as MyoD and Myogenin, during myogenesis (Tapscott, 2005). Co-expression of constitutive GFP-CAAX with a mApple (RFP) construct driven by the Myo10 promoter was used to investigate Myo10 activation in myoblasts exposed to differentiation medium for 1 day compared to those undergoing differentiation for 4 days. Activation of the Myo10 promoter, as determined by the RFP/GFP-CAAX ratio in immunoblots, is confirmed to increase proportionally with Myo10 content as myoblast differentiation progresses (Figure 2—figure supplement 1E-F). Live-cell imaging early in the differentiation time course (day 1) revealed individual myoblasts with low basal expression of mApple detaching from the culture substrate, undergoing a transition into a blebbing spherical morphology with increased mApple expression, and re-attachment to the culture substrate in a morphology resembling differentiated myocytes (Figure 2—figure supplement 1G, Video 11). Consistent with MRF-mediated activation of Myo10 during myoblast differentiation, Myo10-positive mononuclear myocytes exhibit positive staining for both MyoD and Myogenin, which have both been shown to bind to the Myo10 promoter (Cao et al., 2006), during the first day of differentiation (Figure 2G). These data indicate that Myo10 is activated early in the differentiation period of myogenesis.
 
+![Video 11.](https://cdn.elifesciences.org/articles/72419/elife-72419-video11.mp4.jpg)
+
+**Video 11.:** Time-lapse confocal images of a myoblast co-expressing GFP-CAAX and a reporter plasmid consisting of mApple driven by the Myo10 promoter at day 1 of differentiation. Individual frames are included in Figure 2—figure supplement 1G. Images were acquired every 20 min. Scale bar represents 10 µm.
+
 The requirement of Myo10 for the formation of muscle filopodia was investigated in Myo10 knockdown (KD) experiments using C2C12 myoblast cell lines generated by lentiviral-mediated expression of control or Myo10-targeted short-hairpin RNA (shRNA) and clonal selection. Myo10 KD results in efficient loss of Myo10 gene expression during both growth (Figure 2—figure supplement 1H) and differentiation (Figure 2—figure supplement 1I) culture conditions, as well as reduction of Myo10 protein from both culture conditions (Figure 3A) and loss of Myo10 IF during differentiation (Figure 3B). Myogenic differentiation potential per se is not affected by loss of Myo10, as MHC protein and Myh2 gene expression do not differ between control and Myo10 KD lines after 5 days of differentiation (Figure 3A, Figure 2—figure supplement 1I). Loss of Myo10 does, however, have a significant effect on prevalence of cellular projections, which are therefore filopodia, as Myo10 KD myocytes exhibit less dorsal protrusions (Figure 3C) and no detectable extending filopodia (Figure 3D; Video 12). The primary cellular protrusions displayed by Myo10 KD cells appear as blebs reaching to the cell periphery in order to create connections to the surface substrate (Video 13), which are significantly shorter in length when compared to the thin and distinct Myo10-driven filopodia of control shRNA myocytes (Figure 3D–E). Loss of Myo10 does not prevent the formation of lamellipodial extensions; however, they are devoid of detectable thin projections, which are thus confirmed to be filopodia (Video 13).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/72419/elife-72419-fig3-v2.jpg)
+
+**Figure 3.:** Clonal lines of C2C12 cells expressing control or Myo10-targeted short-hairpin RNA (shRNA) were validated for efficacy of Myo10 knockdown (KD) and myogenic differentiation potential. (A) Immunoblotting for Myo10 protein and the myogenic differentiation marker, myosin heavy chain (MHC; loading control visualized by Ponceau Red staining). KD of Myo10 myoblasts results in loss of filopodia during differentiation compared to control shRNA cells, as demonstrated by (B) immunofluorescence (day 3), (C) scanning electron microscopy (day 5), and (D) live-cell confocal microscopy (day 5), as well as loss of (E) cellular extension lengths (n = 31–152 cellular extensions). Myoblast differentiation assays (n = 3 individual experiments) reveal loss of multinucleated myotubes formation in Myo10 KD cells after 7 days of differentiation compared to control cells, quantified as (F) population distribution of myotube nuclear content. (G–H) Loss of fusion ability by Myo10 KD cells can be partially rescued by transfection of a full-length Myo10 construct with an N-terminal mApple fluorescent tag (RFP-Myo10; n = 3–6 individual experiments). Data analysis performed using (E–F) Welch’s two-tailed t-test (α = 0.05) with effect size displayed as Cohen’s d (d) or (H) one-way ANOVA followed by Tukey post hoc tests (α = 0.05; *p < 0.05 vs. control values; #p < 0.05 vs. RFP values; effect size is presented as eta-squared (η2)). Unless otherwise noted, scale bars represent 25 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72419/elife-72419-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative images of Myo10 knockdown (KD) myoblasts following transfection with RFP, RFP-Myo10, or a truncated RFP-Myo10 lacking C-terminal cargo-binding domains (RFP-Myo10ΔCBD). (B) Immunoblotting for Myo10 demonstrates the protein size difference between the RFP-Myo10 and RFP-Myo10ΔCBD constructs (protein loading visualized using Ponceau Red staining). (C) Both RFP-Myo10 and RFP-Myo10ΔCBD expression result in increased filopodia formation, relative to RFP-expressing Myo10 KD myoblasts (n = 20–30 cells across three experiments). (D) The projections/filopodia generated by RFP-Myo10 are slightly, but significantly, longer than those resulting from RFP-Myo10ΔCBD expression (n = 168–1339 projections). (E) Despite rescue of filopodia formation, RFP-Myo10ΔCBD does not rescue fusion ability of Myo10 KD myoblasts (n = 6 independent experiments; 5 days of differentiation). Data were analyzed using one-way ANOVA followed by Tukey post hoc tests (α = 0.05; effect size is presented as eta-squared (η2)) (C–D) *p < 0.05 vs. RFP values; #p < 0.05 vs. RFP-Myo10 values. (E) *p < 0.05 vs. control short-hairpin RNA (shRNA) values. Scale bars represent 25 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/72419/elife-72419-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) To test if Myo10 is required unilaterally or bilaterally for myoblast fusion, control short-hairpin RNA (shRNA) and Myo10 knockdown (KD) C2C12 myoblasts were labeled with different variants of fluorescent proteins (EGFP and RFP-CAAX, respectively), then were mixed in a 1:1 ratio to assess prevalence of EGFP and RFP-CAAX incorporation into bi/multinucleated myocytes (n = 5 independent experiments; 5 days of differentiation; bi-nucleated cells were included in this analysis because the fusion of Myo10 KD cells with control cells will result in Myo10 KD in both nuclei). (B–C) Bi-nucleated cells having both EGFP and RFP-CAAX expression were exceeding rare in this assay, as only one instance was found in during the course of these experiments. Observed bi-nucleated Myo10 KD cells having only RFP-CAAX expression are suspected to result from incomplete cytokinesis. Data were analyzed using one-way ANOVA followed by Tukey post hoc tests (α = 0.05; *p < 0.05 vs. green-only values; effect size is presented as eta-squared (η2)). Scale bars represent 25 µm.
+
+![Video 12.](https://cdn.elifesciences.org/articles/72419/elife-72419-video12.mp4.jpg)
+
+**Video 12.:** Confocal images of cellular projections exhibited by differentiated control and Myo10 short-hairpin RNA (shRNA) knockdown myocytes. Individual frames are included in Figure 3D. Images were acquired every 10 s. Scale bar represents 5 µm.
+
+![Video 13.](https://cdn.elifesciences.org/articles/72419/elife-72419-video13.mp4.jpg)
+
+**Video 13.:** Differentiating Myo10 knockdown myoblasts expressing RFP-CAAX produce lamellipodial extensions during differentiation. Images were acquired every 20 min. Scale bar represents 10 µm.
 
 The involvement of filopodia in myoblast fusion is also confirmed, as loss of Myo10 nearly abolishes multinucleated myotube formation following 7 days of differentiation (Figure 3F). This can be partially rescued by expression of exogenous Myo10, using an N-terminal mApple tagged human Myo10 construct (RFP-Myo10; Figure 3G–H, Figure 2—figure supplement 1J), as determined by the quantification of MHC-positive myocytes containing three or more nuclei following 7 days of differentiation. We chose this threshold of myonuclei content as an indication of fusion since prior studies have reported the presence of bi-nucleated myocytes following differentiation of myoblasts lacking the fusion proteins, Myomaker (Millay et al., 2013) or Myomixer (Bi et al., 2017). The rescue of Myo10 KD myoblast fusion by exogenous Myo10 expression is not attributed to solely filopodia formation, but requires Myo10’s cargo-binding functions, as a truncated RFP-Myo10 construct lacking the C-terminal PH, MyTH4, and FERM domains (RFP-Myo10ΔCBD) does not restore myoblast fusion despite promoting similar numbers of filopodia of only slightly reduced lengths (Figure 3—figure supplement 1). Furthermore, the requirement of myoblast Myo10 for fusogenic activity appears to be a requirement of both fusing cells, as a mixture of control and Myo10 KD myoblasts having distinct fluorescent labels rarely results in the fusion of the two populations (Figure 3—figure supplement 2). Together, these data reveal that the unconventional myosin, Myo10, is important for muscle formation in vitro.
 
-## Myo10 labels regenerating muscle fibers in vivo
+### Myo10 labels regenerating muscle fibers in vivo
 
 Given the robust impact of Myo10 loss on myoblast fusion, we next investigated Myo10-dependent skeletal muscle processes in vivo. Myo10 expression in postnatal regenerative myogenesis was examined in the muscle sections from the mdx mouse, a mouse model of Duchenne muscular dystrophy (DMD) that continuously displays regions of stable, damaged, and regenerating muscle fibers within the same muscle section, due to loss of dystrophin (Hoffman et al., 1987; Petrof et al., 1993). Strong Myo10 immunoreactivity within small muscle fibers of regenerating areas, which are identified by the presence of centrally located nuclei (Coulton et al., 1988), occurs in these muscle sections, with negligible signal detection in regions of stable muscle fibers (Figure 4A). This Myo10 expression pattern is also observed in human muscle, as DMD patient biopsy samples contain many small, Myo10-positive fibers localized to regenerating foci (Figure 4B). Thus, Myo10 is expressed in muscle during times that are expected to have high amounts of myoblast fusion, including muscle regeneration.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/72419/elife-72419-fig4-v2.jpg)
+
+**Figure 4.:** Myo10 immunoreactivity in regions of dystrophin-deficient skeletal muscle samples from (A) mdx mice and (B) Duchenne muscular dystrophy (DMD) patients that are undergoing active regeneration. (C) Fate-mapping (FM) of muscle satellite cells using the Pax7Cre-ERT2 allele crossed onto mice harboring a floxed nuclear-localized (NLS) mCherry allele demonstrates that Myo10 expression is found in regenerating muscle fibers of satellite cell origin. The inset shows Myo10-filled filopodia can found extending toward mononuclear myoblasts. (D) The role of Myo10 in postnatal muscle regeneration was investigated using Pax7Cre-ERT2 conditional Myo10 knockout (KO) (Pax7-M10cKO; n = 6) mice and their non-floxed littermates (Pax7-WT; n = 6). Tamoxifen induction was achieved via five consecutive daily intraperitoneal injections of 100 mg/kg tamoxifen (denoted by solid arrows) followed by daily oral treatments with 10 mg/kg tamoxifen (empty arrows) for 7 days preceding cardiotoxin (CTX) injury of the tibialis anterior muscle (TA) and continuing until 3 days after injury. (E) This protocol that results in efficient elimination of Myo10+ myocytes as evidenced in 4-day recovery muscle. Following 8 days of recovery, Pax7-M10cKO mice demonstrate impaired muscle regeneration compared to Pax7-WT muscle, as evidenced by (F) impaired histological recovery and (G–H) reduced muscle fiber size (n = 991–1307 fibers). Data are presented as (G) box-and-whisker plots depicting second and third quartiles with minimum and maximum values or (H) a histogram of entire data set populations, and are analyzed using two-tailed Welch’s t-tests with effect size presented as Cohen’s d (d). Scale bars represent 100 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72419/elife-72419-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Immunoblot for Myo10 content in uninjured and cardiotoxin (CTX)-affected tibialis anterior muscles after 4, 8, and 16 days of regeneration. (B) Myo10 immunoreactivity is high in regenerating muscle of Pax7Cre-ERT2-mCherryNLS mice 8 days following glycerol-induced injury. (C–D) Sham-induced Pax7Cre-ERT2 conditional Myo10 knockout (KO) (Pax7-M10cKO; n = 4) mice and their non-floxed littermates (Pax7-WT; n = 5) do not demonstrate distinguishable Myo10 immunoreactivity or muscle regeneration following cardiotoxin (CTX)-induced injury of the tibialis anterior muscle. (E) Efficient ablation of full-length Myo10 protein in tamoxifen (Tam)-induced Pax7-M10cKO muscle following 4 days of regeneration from CTX injury achieved using the induction protocol depicted in Figure 4D. Data are displayed as a histogram of entire muscle fiber populations and were analyzed using one-way ANOVA followed by Tukey post hoc tests (α = 0.05). Scale bars represent 100 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/72419/elife-72419-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Pax7-WT and Pax7-M10cKO littermate mice were induced with tamoxifen, and subjected to freeze injury of the tibialis anterior (TA) muscle (n = 5–8). (A) Following 21 days of recovery, Pax7-M10cKO (n = 8) mice exhibit impaired regeneration, as shown by Hematoxylin & Eosin (H&E) staining, and increased fibrosis, as shown by picrosirius red (PSR) staining. (B) Muscle mass and (C) muscle fiber size recovery was diminished by loss of satellite cell Myo10 (n = 12065–16707 fibers). Data are presented as box-and-whisker plots depicting second and third quartiles with minimum and maximum values, and are analyzed using two-tailed Welch’s t-tests with effect size presented as Cohen’s d (d). Scale bars represent 100 µm.
+
 Since asynchronous bouts of degeneration and regeneration in parallel characterize dystrophic muscle diseases, an acute model of synchronized muscle damage and subsequent regeneration was employed in non-dystrophic mice to verify that Myo10 of muscle fibers is associated with regenerative myogenesis rather than damage or degeneration. Intramuscular injection of the myotoxin, cardiotoxin (CTX), into the tibialis anterior (TA) of Pax7Cre-ERT2 mice crossed with a nuclear-localized mCherry reporter (Pax7-mCherryNLS), a model which allows for satellite cell fate-mapping, was performed. This enables distinct labeling of regenerative myogenesis by identifying mCherry-positive nuclei after tamoxifen-induced Cre-recombinase activation (Nishijo et al., 2009). Post-injury muscle development reveals highly elevated Myo10 levels within regenerating, mCherry-positive myofibers 4 days following CTX injection (Figure 4C). Analysis of muscle after 8 and 16 days of regeneration shows Myo10 content to progressively decline back to uninjured levels as the myofibers reach post-regenerative maturation (confirmed via immunoblotting; Figure 4—figure supplement 1A). This phenomenon is not exclusive to the CTX model, as intramuscular glycerol injection, an alternative muscle regeneration model, also results in mCherry-positive regenerating myofibers strongly labeled by Myo10 (Figure 4—figure supplement 1B). Therefore, regenerative myogenesis exhibits muscle-specific expression of Myo10 similar to findings in vitro. These data also demonstrate that Myo10 is an effective marker to label regenerating skeletal muscle fibers in vivo, which may be a useful tool to identify newly formed muscle fibers in lieu of developmental MHC isoforms.
 
-## Loss of Myo10 in satellite cells impairs muscle regeneration
+### Loss of Myo10 in satellite cells impairs muscle regeneration
 
 The consequence of myoblast-specific loss of Myo10 on muscle regeneration in vivo was assessed using Pax7Cre-ERT2 mice crossed to the floxed Myo10 (Myo10tm1cltm1c) allele (Heimsath et al., 2017), generating a mouse line capable of inducible ablation of Myo10 in satellite cells and, thus, their myoblast progeny and any resulting myofibers. In the absence of tamoxifen-induced Myo10 ablation, homozygous Myo10tm1c/tm1c mice (termed Pax7-M10cKO for Pax7-Myo10 conditional knockout) have indistinguishable phenotypes from their Myo10tm1c/+ or Myo10+/+ littermates (termed Pax7-WT) following CTX-induced regeneration in the TA (Figure 4—figure supplement 1C-D). Tamoxifen-induced Cre expression (via the protocol depicted in Figure 4D) results in efficient ablation of Myo10-positive muscle fibers (Figure 4E) and Myo10 protein content (Figure 4—figure supplement 1E) in Pax7-M10cKO mice 4 days following CTX injection. Remnants of extracellular matrix from pre-existing muscle fibers, known as ‘ghost fibers’ (Webster et al., 2016), predominate Pax7-M10cKO muscle sections at this time point. At 8 days following CTX injection, Pax7-WT muscles demonstrate robust regeneration, while Pax7-M10cKO muscles exhibit impaired regeneration, as evidenced by fewer and smaller myocytes present in regenerating musculature (Figure 4F–H). Pax7-M10cKO muscle regenerative defects are also exhibited following freeze injury, a more severe muscle injury model (Hardy et al., 2016), of which affected Myo10-deficient musculature is largely replaced by intramuscular fibrosis following 21 days of recovery (Figure 4—figure supplement 2). Thus, Myo10 is important for regenerative myogenesis.
 
-## Muscle fusion proteins localize to filopodia
+### Muscle fusion proteins localize to filopodia
 
 A possible role for Myo10-driven filopodia in muscle fusion is that they provide a means to create cellular contacts required for delivery of the fusion proteins, Myomaker and Myomixer, to apposing cellular membranes at a distance, thus increasing the probability of a fusion event occurring. To investigate this possibility, the localization of these fusion proteins on differentiating myoblasts was assessed via IF utilizing commercial antibodies for Myomixer (extracellular epitope; applied prior to cellular permeabilization) and Myomaker (intracellular epitope; applied following permeabilization). The ability of these antibodies to provide specific signals for their respective target proteins was evaluated using exogenous expression of wild-type versions of Myomaker or Myomixer in undifferentiated myoblasts (Figure 5—figure supplement 1A-B).
 
 Mononuclear myocytes early in the differentiation process exhibit strong extracellular staining of Myomixer on most of the cell periphery, including cellular projections (Figure 5—figure supplement 1C). In these cells, Myomaker is localized primarily to vesicular structures that are particularly evident in the perinuclear cap region (Figure 5—figure supplement 1C). This agrees with the previously reported Golgi localization of Myomaker (Gamage et al., 2017). In multinucleated myotubes, Myomixer remains prominently localized at the cellular periphery, while Myomaker is additionally observed in puncta found in close proximity to the cell membrane along the cell body and cellular projections, including filopodia protruding from lamellipodial extensions (Figure 5A, Figure 5—figure supplement 1D). Myo10-positive cells co-expressing Myomaker and Myomixer are observed during the first day of differentiation (Figure 5—figure supplement 1E), indicating temporal regulation of these myogenic genes are synchronized. The expression of Myomixer and Myomaker are not, however, dependent on Myo10, as both proteins are found in differentiated Myo10 KD myoblasts (Figure 5—figure supplement 1F). In fully differentiated Myo10-positive myotubes, puncta of both Myomaker and Myomixer are observed in Myo10-filled filopodia (Figure 5B, Figure 5—figure supplement 1G). Furthermore, these proteins are found to co-localize with Myo10 puncta in the filopodia remnants of insoluble myotube fractions (Figure 5). The localization of both Myomaker and Myomixer to Myo10-positive filopodia is also observed when functional Flag-tagged versions of these proteins, namely the Myomaker-F203 (Millay et al., 2013) and Myomixer-Flag (Zhang et al., 2017) constructs, are exogenously expressed in differentiating myoblast cultures (Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/72419/elife-72419-fig5-v2.jpg)
+
+**Figure 5.:** (A) Immunofluorescent detection of Myomaker and Myomixer in differentiating myoblast cultures. Inset shows Myomixer and Myomaker puncta on the surface of a lamellipodial extension with filopodia. (B) Myomaker and Myomixer puncta are found localized to class X myosin (Myo10)-filled filopodia of differentiating myoblasts (days 4–5). Co-localization of (C) Myomixer and (D) Myomaker with Myo10 in filopodia remnants of the differentiating myoblast insoluble fraction (indicated with arrows). (E) Tibialis anterior (TA) muscle cross-sections of Pax7-WT mice at 4 days following cardiotoxin (CTX)-induced injury. (F) Cross-section (left) and longitudinal section (right) of Pax7-M10cKO TA muscle at 4 days following CTX-induced injury. Scale bars represent 10 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72419/elife-72419-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Specificity testing of commercially available (A) Myomaker and (B) Myomixer antibodies for immunofluorescent detection of these proteins following transfection of undifferentiated myoblasts. Immunofluorescence (IF) staining pattern of Myomaker and Myomixer (C) early in myogenic differentiation and (D) in fully differentiated myotubes. Myomixer antibody was applied prior to cell permeabilization. (E) At day 1 of differentiation, myoblasts co-expressing class X myosin (Myo10) with Myomaker and Myomixer are observed. (F) Differentiated Myo10 knockdown (KD) cells express both Myomaker and Myomixer. (G) Localization patterns of Myo10 with Myomaker (top) and Myomixer (bottom) in differentiated myotubes (insets are found in Figure 5B). Scale bars represent 10 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/72419/elife-72419-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Anti-Flag staining of undifferentiated myoblasts following transfection of control, Myomaker-F203, or Myomixer-Flag plasmids reveals specificity of the anti-Flag antibody and that these Flag-tagged versions of Myomaker and Myomixer localize similarly to their wild-type counterparts (shown in Figure 5—figure supplement 1). Investigation of the localization of (B) Myomaker-F203 and (C) Myomixer-Flag in differentiated myotubes reveals Flag-positive puncta observed in class X myosin (Myo10)-positive filopodia of both whole cells and the insoluble cellular fraction. Scale bars represent 10 µm.
 
 Sections from regenerating Pax7-WT muscle also display Myo10-labeled filopodia decorated with Myomixer puncta (Figure 5E), suggesting this relationship also exists in vivo. Such cellular projections are not found on Myomaker- and Myomixer-positive cells of regenerating Pax7-M10cKO muscle (Figure 5F), which exhibit thin morphologies similar to Myo10 KD myoblasts rather than robust myotube formation found in wild-type muscle sections (Figure 4C). These findings are consistent with the hypothesis that muscle filopodia provide a means to enable cellular connections that facilitate the function of these fusion proteins upon delivery to a cellular target.
 
@@ -90,23 +194,271 @@ The findings detailed in this report describe a role of filopodia driven by the 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>H2B-mCherryfl/fl</td>
+      <td>Jackson Laboratories</td>
+      <td>JAX:023139RRID:IMSR_JAX:023139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Pax7Cre=ERT2</td>
+      <td>PMID:26792330</td>
+      <td>MGI:4436914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Myo10tm1c</td>
+      <td>PMID:29229982</td>
+      <td>MGI:6115837</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>C2C12</td>
+      <td>ATCC</td>
+      <td>ATCC No. CRL-1772RRID:CVCL_0188</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>tagRFPt-HRAS-CAAX(RFP-CAAX)</td>
+      <td>This paper</td>
+      <td>Evrogen # FP141NCBI NP_005334</td>
+      <td>Membrane-targeted RFP</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>EGFP-HRAS-CAAX(GFP-CAAX)</td>
+      <td>This paper</td>
+      <td>Clontech#632,470NCBI NP_005334</td>
+      <td>Membrane-targeted GFP</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>RFP-Myo10</td>
+      <td>This paper</td>
+      <td>Addgene No. 54,631NCBI No. NP_036466</td>
+      <td>Full-length Myo10</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>RFP-Myo10ΔCBD</td>
+      <td>This paper</td>
+      <td>Addgene No. 54,631NCBI No. NP_036466</td>
+      <td>Myo10(aa 1–938)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pMyo10-mApple</td>
+      <td>This paper</td>
+      <td>Addgene No. 54,631</td>
+      <td>Reporter for Myo10 promoter activation</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>Myomaker</td>
+      <td>PMID:26858401</td>
+      <td>NCBI No. NP_079652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>Myomixer</td>
+      <td>PMID:29581287</td>
+      <td>NCBI No. NP_001170939</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>Myomaker-F203</td>
+      <td>PMID:26858401</td>
+      <td>NCBI No. NP_079652</td>
+      <td>Flag-tagged Myomaker</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>Myomixer-Flag</td>
+      <td>PMID:28569745</td>
+      <td>NCBI No. NP_001170939</td>
+      <td>Flag-tagged Myomixer</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Control shRNA lentiviral particles</td>
+      <td>Sigma-Aldrich</td>
+      <td>No. SHCLNV shRNA ID- SHC002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Myo10 shRNA lentiviral particles</td>
+      <td>Sigma-Aldrich</td>
+      <td>No. SHCLNV shRNA IDs- TRCN0000110606 TRCN0000375033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myo10 (Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>HPA024223</td>
+      <td>IF: (0.3 µg/mL)IB: (0.24 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myo10 (Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc166720</td>
+      <td>IF: (2 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Laminin(Rat monoclonal)</td>
+      <td>Acris Antibodies</td>
+      <td>BM6064P</td>
+      <td>IF: (1.25 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myosin Heavy Chain(Mouse monoclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>MAB4470</td>
+      <td>IF: (0.25 µg/mL)IB: (0.125 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry(Chicken polyclonal)</td>
+      <td>Novus</td>
+      <td>NBP2-25158</td>
+      <td>IF: (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MyoD(Mouse monoclonal)</td>
+      <td>Thermofisher</td>
+      <td>MA1-41017</td>
+      <td>IF: (5 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myogenin(Mouse monoclonal)</td>
+      <td>Novus</td>
+      <td>NB100-56510</td>
+      <td>IF: (2 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TMEM8C/Myomaker(Rabbit polyclonal)</td>
+      <td>Thermofisher</td>
+      <td>PA5-63180</td>
+      <td>IF: (1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myomixer(Sheep polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>AF4580</td>
+      <td>IF: (0.67 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag(Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3165</td>
+      <td>IF: (1.6 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RFP(Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab62341</td>
+      <td>IB: (0.5 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP(Chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab13970</td>
+      <td>IB: (2.5 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Mus musculus)</td>
+      <td>Myo10 Forward Primer</td>
+      <td>This paper</td>
+      <td>NCBI No.NM_019472</td>
+      <td>TTC CAC CGC ACA TCT TCG CCA TTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Mus musculus)</td>
+      <td>Myo10 Reverse Primer</td>
+      <td>This paper</td>
+      <td>NCBI No.NM_019472</td>
+      <td>CCC CGG GAT TCT GCC TCA CTA CTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Mus musculus)</td>
+      <td>Myh2 Forward Primer</td>
+      <td>This paper</td>
+      <td>NCBI No.NM_001039545</td>
+      <td>AGA ACA TGG AGC AGA CCG TG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Mus musculus)</td>
+      <td>Myh2 Reverse Primer</td>
+      <td>This paper</td>
+      <td>NCBI No.NM_001039545</td>
+      <td>TCA TTC CAC AGC ATC GGG AC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Mus musculus)</td>
+      <td>Gapdh Forward Primer</td>
+      <td>This paper</td>
+      <td>NCBI No.BC023196</td>
+      <td>AGC AGG CAT CTG AGG GCC CA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Mus musculus)</td>
+      <td>Gapdh Reverse Primer</td>
+      <td>This paper</td>
+      <td>NCBI No.BC023196</td>
+      <td>TGT TGG GGG CCG AGT TGG GA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All animal procedures were approved and conducted in accordance with the University of Florida IACUC. C57BL/10 (RRID:IMSR_JAX:000476), mdx (RRID:IMSR_JAX:001801), and H2B-mCherryfl/fl (RRID:IMSR_JAX:023139) mice used for this study were from colonies originally derived from Jackson Laboratories. Pax7Cre-ERT2 mice were a generous gift from Dr Charles Keller (Nishijo et al., 2009). The Myo10tm1c floxed allele was generated as previously described (Heimsath et al., 2017). Tamoxifen-induced Cre expression for fate-mapping experiments was achieved by intraperitoneal injections of 20 mg/mL tamoxifen (Sigma-Aldrich No. T5648) dissolved in sterilized sunflower seed oil (Sigma-Aldrich No. S5007) at a dose of 100 mg/kg for 5 consecutive days, which results in ~85–90% labeling efficiency in Pax7 cells. To achieve near 100% induction for conditional ablation studies, mice were subjected to the 5-day injection protocol described above followed by daily oral administration of 10 mg/kg tamoxifen (sunflower seed oil vehicle) starting at 7 days preceding injury to 3 days following injury (depicted in Figure 4D). Oil-only injections and oral treatments served as sham induction controls. Injections and treatments were performed within 2 hr of the start of the mouse dark cycle to facilitate drug distribution. Only male mice were used for these experiments. The genotypes of all mice used for this study were verified by PCR-based genotyping. Mice were randomly assigned into experimental groups prior to experiments.
 
 Injury of the TA muscle was performed by injecting 50 µL of sterile solutions of either 12 µM CTX (Calbiochem No. 217503; dissolved in sterile PBS) or 50% glycerol longitudinally through the length of the muscle. Freeze injury was performed by applying a liquid N2-cooled metal rod to the mid-belly of a surgically exposed TA from a randomly selected hind-limb for 10 s. Following the allocated recovery time from injury, mice were euthanized via CO2. TA muscles were dissected free, either snap-frozen in liquid N2 or embedded in OCT compound and frozen in melting isopentane, and stored at –80°C until analysis.
 
-## Cell culture
+### Cell culture
 
 C2C12 murine myoblasts (ATCC No. CRL-1772; RRID:CVCL_0188; verified to be free of mycoplasma contamination) were purchased from ATCC and used between passages 5 and 13. Cells were cultured at 37°C in 5% CO2 in growth media consisting of high-glucose DMEM (Gibco No. 10566), 10% fetal bovine serum (Sigma-Aldrich No. F8067), and 1% penicillin/streptamycin (P/S; Gibco No. 15140). C2C12 differentiation media consisted of low-glucose DMEM (Gibco No. 11885), 2% horse serum (Hyclone No. SH30074), and 1% P/S and was changed every 2 days during differentiation experiments. Ectopic expression experiments were performed using X-tremeGENE 9 DNA transfection reagent (Sigma-Aldrich No. 6365779001) or electroporation using the 4D-Nucleofector system (Lonza). For live-cell imaging, cells were plated on collagen- or gelatin-coated glass-bottom dishes (Willco Wells No. GWST-3522) prior to transfection, differentiated in phenol red-free media (using glutamate-supplemented Gibco No. 11,054 DMEM in place of No. 11885), and mounted in a stage-top incubator (Tokai HIT No. INUB-GSI2-F1) with 5% CO2 for image acquisition.
 
 Control or Myo10 shRNA KD C2C12 lines were made using MISSION shRNA lentiviral particles (Sigma-Aldrich No. SHCLNV; Control shRNA ID- SHC002; Myo10 shRNA IDs- TRCN0000110606 and TRCN0000375033; 5 MOI) following the manufacturer’s directions. Puromycin-resistant clones were selected and verified for Myo10 KD efficiency and myogenic differentiation capacity. For all assays comparing control and Myo10 KD lines, equal cell numbers were plated and switched to differentiation medium 12–16 hr after plating.
 
-## Plasmids
+### Plasmids
 
 The tagRFPt-HRAS-CAAX (RFP-CAAX) plasmid was generated by adding the C-terminal 20 amino acids of human H-Ras (NCBI Accession No. NP_005334) to a tagRFP-C vector (Evrogen) modified with an S158T point mutation to enhance photostability (Shaner et al., 2008). EGFP-HRAS-CAAX (GFP-CAAX) was constructed similarly by placing the HRAS-CAAX box motif on the C-terminus of EGFP in the pEGFP-C1 vector (Clontech). The RFP-Myo10 construct was prepared by cloning mApple (from Addgene No. 54631) to the N-terminus of human Myo10 (NCBI Accession No. NP_036466) using a G-G-R linker, similar to as previously described (Ropars et al., 2016), in pCDNA3.1(+) vector (Thermofisher No. V79020). The RFP-Myo10ΔCBD construct was prepared by fusing mApple to the N-terminus of a human Myo10 construct lacking the PEST, PH, MyTH4, and FERM domains (aa 1–938), as previously described (Ropars et al., 2016), in pCDNA3.1(+) vector. The Myo10 reporter plasmid was constructed by replacing CMV promoter of pCDNA3.1(+) with the –835/+314 region of the Myo10 promoter region Lai et al., 2013 followed by an mApple open-reading frame. Murine Myomaker (NCBI Accession No. NP_079652), Myomixer (NCBI Accession No. NP_001170939), Myomaker-F203 (Millay et al., 2013), and Myomixer-Flag (Zhang et al., 2017) open-reading frames were cloned into pCDNA3.1(+) vector. All constructs were verified by sequencing and restriction analysis, and all plasmids were prepared in endotoxin-free conditions.
 
-## IF and fluorescent labeling
+### IF and fluorescent labeling
 
 Tissue IF was performed as previously described (Hammers et al., 2016). Briefly, OCT-embedded frozen muscle was sectioned into either cross-sections or longitudinal sections of 10 µm thickness, fixed in ice-cold acetone, blocked in 5% BSA-PBS +0.1% Triton X-100, and incubated in primary antibody overnight at 4°C. Secondary antibodies were applied for 1 hr at room temperature the following day. Lipofuscin-induced autofluorescence was eliminated using 0.1% Sudan Black B dissolved in 70% ethanol, ensued by a wash in 0.1% Triton X-100 in PBS. Sections were mounted in Vectashield (+DAPI; Vector Labs No. H1200), cover-slipped, and sealed. Control and DMD patient samples were acquired from the National Disease Research Interchange (NDRI; Philadelphia, PA).
 
@@ -114,20 +466,20 @@ Cells cultured on gelatin or collagen-coated coverslips were rinsed twice with P
 
 Primary antibodies used for IF include anti-Myo10 (0.3 µg/mL; Sigma No. HPA024223; RRID:AB_1854248), anti-Myo10 (2 µg/mL; Santa Cruz Biotechnology No. sc166720; RRID:AB_2148054), anti-Laminin (1.25 µg/mL; Acris Antibodies No. BM6064P), anti-MHC (0.25 µg/mL; R&D Systems No. MAB4470; RRID:AB_1293549), anti-mCherry (1:2000; Novus No. NBP2-25158; RRID:AB_2636881), anti-MyoD (5 µg/mL; Thermofisher No. MA1-41017; RRID:AB_2282434), anti-Myogenin (2 µg/mL; Novus No. NB100-56510; RRID:AB_838604), anti-TMEM8C/Myomaker (1 µg/mL; Thermofisher No. PA5-63180; RRID:AB_2648742), anti-Myomixer/Myomerger/ESGP (0.67 µg/mL; R&D No. AF4580; RRID:AB_952042), and anti-Flag (1.6 µg/mL; Sigma-Aldrich No. F3165; RRID:AB_259529). Secondary antibodies (all 1:500 dilution) used include Alexa 488 donkey anti-rabbit IgG (Life Technologies No. A21206), Alexa 647 donkey anti-rabbit IgG (Life Technologies No. A31573), Alexa 568 goat anti-mouse IgG (Life Technologies No. A11031), Alexa 568 donkey anti-sheep IgG (Life Technologies No. A21099), and TRITC donkey anti-chicken IgY (Jackson No. 703-025-155). Appropriate primary antibody isotype controls were used in combination of secondary antibodies to ensure specificity of signal. All images were acquired with a Leica SP8 confocal microscope and processed with Leica LAS X software. Image acquisition was performed in sequential scan mode to ensure fidelity of fluorescent signal observed. Cellular projection lengths were analyzed from time-lapse image Z-stacks, where each projection was measured at its longest observed length using FIJI image analysis software (NIH). Image-based quantifications were performed by investigators blind to experimental groups.
 
-## Immunoblotting
+### Immunoblotting
 
 Preparation of muscle protein homogenates was performed as previously described (Hammers et al., 2017). Cell lysates for direct immunoblotting experiments were prepared by lysis of cell cultures with SDS-supplemented T-Per lysis reagent (Thermofisher No. 78510) containing protease and phosphatase inhibitor cocktails. For cell fractionation experiments, the soluble cellular fraction was obtained by incubation of cells with ice-cold PBS containing 1% Triton X-100, 5 mM EDTA, and protease and phosphatase inhibitor cocktails. Following removal of this soluble fraction, the insoluble fraction was solubilized using an equal volume of SDS-supplemented T-Per lysis reagent containing protease and phosphatase inhibitor cocktails.
 
 All samples were prepared for SDS-PAGE by boiling in Laemeli’s sample buffer containing 50 mM DTT, run on 4–12% Tris-glycine SDS gels, and transferred to nitrocellulose membranes, as previously described (Hammers et al., 2017). Following blocking in 5% BSA-TBST, membranes were incubated with anti-Myo10 (0.24 µg/mL; Sigma No. HPA024223; RRID:AB_1854248), anti-Myo10 (2 µg/mL; Santa Cruz Biotechnology No. sc166720; RRID:AB_2148054), anti-MHC (0.125 µg/mL; R&D Systems No. MAB4470; RRID:AB_1293549), anti-Actin (1 µg/mL; Sigma-Aldrich No. A3853; RRID:AB_262137), anti-αTubulin (1:2000; Cell Signaling No. 2144; RRID:AB_2210548), anti-RFP (0.5 µg/mL; Abcam No. ab62341; RRID:AB_945213), or anti-GFP (2.5 µg/mL; Abcam No. ab13970; RRID:AB_300798) primary antibody overnight at 4°C. Membranes were incubated with HRP-conjugated anti-rabbit IgG (1:1000; Cell Signaling No. 7074), anti-mouse IgG (1:1000; Cell Signaling No. 7076), or anti-chicken IgY (1:1000; Jackson Labs No. 303-035-003) secondary antibody for 1 hr, and developed with ECL reagent (Thermofisher No. 34577). Images were captured using the C-Digit Imaging System (Licor). Ponceau Red staining was used to verify equal loading of comparative samples.
 
-## Real-time PCR
+### Real-time PCR
 
 Real-time PCR was performed as previously described (Hammers et al., 2017) using the following mouse-specific primers: Myo10 (forward) 5’-TTC CAC CGC ACA TCT TCG CCA TTG-3’ and (reverse) 5’-CCC CGG GAT TCT GCC TCA CTA CTC-3’; Myh2 (forward) 5’-AGA ACA TGG AGC AGA CCG TG-3’ and (reverse) 5’-TCA TTC CAC AGC ATC GGG AC-3’; Gapdh (forward) 5’-AGC AGG CAT CTG AGG GCC CA-3’ and (reverse) 5’-TGT TGG GGG CCG AGT TGG GA-3’. Relative gene expression quantification was performed using the ΔΔCt method with Gapdh as the reference gene.
 
-## Tissue histology
+### Tissue histology
 
 OCT-embedded frozen muscle was cross-sectioned into 10 µm thick sections, stained with Hematoxylin & Eosin (H&E) or picrosirius red as previously described (Hammers et al., 2020), and visualized with a Leica DMR bright-field microscope equipped with a digital camera (Leica No. DFC480). Image analysis was performed using FIJI software.
 
-## Statistical analysis
+### Statistical analysis
 
 Quantified data of this study are displayed as box-and-whisker plots (depicting second and third quartiles with minimum and maximum values) or as histograms of full population distribution, and were analyzed using two-tailed Welch’s t-test (α = 0.05; effect size reported as Cohen’s d) or one-way ANOVA (effect size reported as η2) followed by Tukey post hoc tests (α = 0.05). Power analyses (power = 0.8; α = 0.05) using previous or preliminary data for each measure dictated all sample sizes utilized in this study. No data points were excluded from data analysis during the course of this study.

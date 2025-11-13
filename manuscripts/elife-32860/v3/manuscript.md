@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.32860.001 Angiogenesis is coordinated by VEGF and Notch signaling. DLL4-induced Notch signaling inhibits tip cell formation and vessel branching. To ensure proper Notch signaling, receptors and ligands are clustered at adherens junctions. However, little is known about factors that control Notch activity by influencing the cellular localization of Notch ligands. Here, we show that the multiple PDZ domain protein (MPDZ) enhances Notch signaling activity. MPDZ physically interacts with the intracellular carboxyterminus of DLL1 and DLL4 and enables their interaction with the adherens junction protein Nectin-2. Inactivation of the MPDZ gene leads to impaired Notch signaling activity and increased blood vessel sprouting in cellular models and the embryonic mouse hindbrain. Tumor angiogenesis was enhanced upon endothelial-specific inactivation of MPDZ leading to an excessively branched and poorly functional vessel network resulting in tumor hypoxia. As such, we identified MPDZ as a novel modulator of Notch signaling by controlling ligand recruitment to adherens junctions.
+Angiogenesis is coordinated by VEGF and Notch signaling. DLL4-induced Notch signaling inhibits tip cell formation and vessel branching. To ensure proper Notch signaling, receptors and ligands are clustered at adherens junctions. However, little is known about factors that control Notch activity by influencing the cellular localization of Notch ligands. Here, we show that the multiple PDZ domain protein (MPDZ) enhances Notch signaling activity. MPDZ physically interacts with the intracellular carboxyterminus of DLL1 and DLL4 and enables their interaction with the adherens junction protein Nectin-2. Inactivation of the MPDZ gene leads to impaired Notch signaling activity and increased blood vessel sprouting in cellular models and the embryonic mouse hindbrain. Tumor angiogenesis was enhanced upon endothelial-specific inactivation of MPDZ leading to an excessively branched and poorly functional vessel network resulting in tumor hypoxia. As such, we identified MPDZ as a novel modulator of Notch signaling by controlling ligand recruitment to adherens junctions.
 
 ## Introduction
 
@@ -38,59 +38,95 @@ In yeast, two-hybrid screening approaches the Notch ligands DLL1 and DLL4, but n
 
 ## Results
 
-## MPDZ physically interacts with the Notch ligands DLL1 and DLL4 and promotes Notch signaling
+### MPDZ physically interacts with the Notch ligands DLL1 and DLL4 and promotes Notch signaling
 
 MPDZ has been identified in screening approaches as a putative binding partner of the Notch ligands DLL1 and DLL4 (Adam et al., 2013; Estrach et al., 2007; Wright et al., 2004). To verify this, we performed co-immunoprecipitation studies in HEK293T cells. Full-length DLL1 and DLL4 or mutants thereof lacking the carboxyterminal PDZ-binding site (amino acids IATEV) were co-expressed with MPDZ fused with an amino-terminal fluorescent Citrine. Co-immunoprecipitation revealed that MPDZ associated with DLL1 and DLL4 proteins. However, DLL1 or DLL4 lacking their PDZ-binding site did not interact with MPDZ (Figure 1A and B), indicating that the carboxyterminus of Delta-like ligands binds to MPDZ. This protein-protein interaction could also be detected in primary human umbilical venous endothelial cells (HUVEC) as well as in whole murine kidney lysates using a co-immunoprecipitation approach (Figure 1C and D, Figure 1—figure supplement 1A and B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/32860/elife-32860-fig1-v3.jpg)
+
+**Figure 1.:** (A, B) HEK293T cells were transfected with Citrine-MPDZ together with HA-tagged DLL1, HA-tagged DLL1ΔPDZ (lacking the PDZ-binding site), Flag-tagged DLL4 or Flag-tagged DLL4ΔPDZ. Antibodies against Citrine were used to immunoprecipitate Citrine-MPDZ. HA and FLAG-tagged proteins as well as MPDZ were detected by immunoblot (IB). Scheme shows structures of the constructs used for co-immunoprecipitation. Input, 10% of the immunoprecipitate. Cit-MPDZ, Citrine-MPDZ; IP, immunoprecipitation; neg.ctrl., negative control. (C, D) MPDZ was co-expressed with either DLL1 or DLL4 in primary endothelial cells (HUVEC). DLL1 and DLL4 were pulled down by using specific antibodies. DLL1, DLL4 and MPDZ were detected by immunoblot (IB). Input, 5% of the immunoprecipitate. IP, immunoprecipitation; neg.ctrl., negative control. (E) HUVEC were either transduced with adenovirus expressing GFP (ctrl) or MPDZ (MPDZ). Expression level of Notch target genes HEY1, HEY2 and HES1 were analyzed by qPCR 48 hr after transduction. Data are presented as mean ±SD. n = 4; *, p<0.05; **, p<0.01 unpaired Student’s t-test. (F) Scheme of the co-culture Notch reporter assay. IMCD3 cells expressing the Notch ligand DLL4 were co-cultured with CHO-N1-CIT cells carrying a Notch luciferase reporter construct. The IMCD3 sender cells were modified by expression of MPDZ or an empty vector control. After 48 hours, cells were lysed and the light emission of the luciferin and the Renilla luciferase activities were measured. Signaling activity is calculated by normalizing the luciferase signal with the Renilla signal. Data are presented as mean ± SEM. n = 5; *, p<0.05 unpaired Student’s t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32860/elife-32860-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Dll1 and Dll4 were immunoprecipitated by using specific antibodies from lysates of mouse kidneys. Mpdz was detected by immunoblot (IB). Input, 10% of the immunoprecipitate. IP, immunoprecipitation; neg.ctrl., negative control. (C, D) HEK293T control cells (293T sh-ctrl) as well as MPDZ-silenced HEK293T cells (293T sh-MPDZ) were transfected with SYNJ2BP and HA-tagged DLL1 or Flag-tagged DLL4. For immunoprecipitation either a DLL1 or a Flag-tag antibody was used and DLL1, DLL4 and SYNJ2BP were detected by Western Blotting. Input, 10% of immunoprecipitate; IB, Immunoblot; IP, Immunoprecipitation; neg.ctrl., negative control.
 
 Since SYNJ2BP binds also to DLL1 and DLL4 via the PDZ-binding motif and induces Notch signaling, a competition between SYNJ2BP and MPDZ might be possible. However, pull-down studies showed that the absence of MPDZ did not overtly affect the binding of SYNJ2BP to DLL1 or DLL4 (Figure 1—figure supplement 1C and D).
 
 The activity of Notch signaling depends critically on the amount of active DLL1/4 molecules on the cell surface. We tested whether the MPDZ-DLL1/4 protein interaction could alter Notch signaling activity. Forced expression of MPDZ promoted Notch signaling in HUVEC as indicated by higher expression levels of the Notch target genes HEY1, HEY2 and HES1 (Figure 1E). To test if MPDZ would alter the ability of DLL4 to activate Notch receptors in trans, IMCD3 cells expressing DLL4 (sender cells) were transfected with plasmids encoding MPDZ cDNA or empty vector control. A Notch luciferase reporter CHO cell line (receiver cells) was co-cultured with the IMCD3 sender cells (Figure 1F). This showed that higher amounts of MPDZ in the DLL4 expressing sender cells resulted in increased Notch signaling activity in receiver cells (Figure 1F).
 
-## Loss of MPDZ impairs endothelial Notch signaling in vitro and in mice
+### Loss of MPDZ impairs endothelial Notch signaling in vitro and in mice
 
 To test if MPDZ contributes to basal Notch signaling in ECs, we silenced MPDZ expression in HUVEC using established lentiviruses expressing independent shRNAs (Feldner et al., 2017). The reduction of MPDZ expression (93 ± 3%, n = 4, p<0.001) resulted in a significant reduction of mRNA expression of the Notch target genes HEY1, HEY2 and HES1 (Figure 2A), indicating diminished Notch activity.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/32860/elife-32860-fig2-v3.jpg)
 
-**Figure 2.:** (A) HUVECs were either transduced with lentivirus expressing GFP (sh-ctrl) or with lentivirus expressing shRNA against MPDZ (sh-MPDZ). Expression level of Notch target genes HEY1, HEY2 and HES1 were analyzed by qPCR 48 hr after transduction. Data are presented as mean ±SD. n ≥ 3; *, p<0.05; **, p<0.01; ***, p<0.001 unpaired Student’s t-test. (B) Cardiac endothelial cells were isolated from Mpdzfl/fl and MpdzΔEC mice by magnetic beads bound with CD31 antibodies. Expression levels of Notch target genes Hey1 and Hey2 were analyzed by qPCR. Data are presented as mean ±SD. n = 3; *, p<0.05; ***, p<0.001 unpaired Student’s t-test. (C) HUVECs were either transduced with lentivirus expressing GFP (sh-ctrl) or with lentivirus expressing shRNA against MPDZ (sh-MPDZ). Expression levels of DLL1 and DLL4 were analyzed by immunoblotting 48 hr after transduction. β-actin served as loading control. Data are presented as mean ±SD. n ≥ 3; n.s., not significant. (D) HUVECs were either transduced with adenovirus expressing GFP (ctrl) or with adenovirus expressing MPDZ. Expression levels of DLL1 and DLL4 were analyzed by immunoblotting 48 hr after transduction. β-actin served as loading control. Data are presented as mean ±SD. n ≥ 3; n.s., not significant. (E) Lung endothelial cells were isolated from Mpdzfl/fl and MpdzΔEC mice by CD31 magnetic beads. Protein amounts of Dll1 and Dll4 were analyzed by immunoblotting. β-actin served as loading control. Data are presented as mean ±SD. n = 3; n.s., not significant.10.7554/eLife.32860.007Figure 2—source data 1.Figure 2A and B.
+**Figure 2.:** (A) HUVECs were either transduced with lentivirus expressing GFP (sh-ctrl) or with lentivirus expressing shRNA against MPDZ (sh-MPDZ). Expression level of Notch target genes HEY1, HEY2 and HES1 were analyzed by qPCR 48 hr after transduction. Data are presented as mean ±SD. n ≥ 3; *, p<0.05; **, p<0.01; ***, p<0.001 unpaired Student’s t-test. (B) Cardiac endothelial cells were isolated from Mpdzfl/fl and MpdzΔEC mice by magnetic beads bound with CD31 antibodies. Expression levels of Notch target genes Hey1 and Hey2 were analyzed by qPCR. Data are presented as mean ±SD. n = 3; *, p<0.05; ***, p<0.001 unpaired Student’s t-test. (C) HUVECs were either transduced with lentivirus expressing GFP (sh-ctrl) or with lentivirus expressing shRNA against MPDZ (sh-MPDZ). Expression levels of DLL1 and DLL4 were analyzed by immunoblotting 48 hr after transduction. β-actin served as loading control. Data are presented as mean ±SD. n ≥ 3; n.s., not significant. (D) HUVECs were either transduced with adenovirus expressing GFP (ctrl) or with adenovirus expressing MPDZ. Expression levels of DLL1 and DLL4 were analyzed by immunoblotting 48 hr after transduction. β-actin served as loading control. Data are presented as mean ±SD. n ≥ 3; n.s., not significant. (E) Lung endothelial cells were isolated from Mpdzfl/fl and MpdzΔEC mice by CD31 magnetic beads. Protein amounts of Dll1 and Dll4 were analyzed by immunoblotting. β-actin served as loading control. Data are presented as mean ±SD. n = 3; n.s., not significant.
 
 This could also be observed in cardiac CD31-positive ECs derived from EC-specific Mpdz-deficient mice (Tek-Cre;Mpdzfl/fl referred to as MpdzΔEC) (Feldner et al., 2017). qPCR analysis revealed that the reduction of Mpdz expression (69 ± 12%, n = 4, p<0,001) resulted in a diminished Notch signaling activity as the relative Hey1 and Hey2 mRNA amounts were lower compared to Cre-negative littermate controls (Figure 2B).
 
-## MPDZ promotes cell surface localization of DLL1 and DLL4
+### MPDZ promotes cell surface localization of DLL1 and DLL4
 
 Next, we aimed at elucidating the mechanism of how MPDZ alters the activity of Notch ligands. The total expression levels of DLL1 and DLL4 proteins in HUVEC lysates were not altered upon silencing of MPDZ (Figure 2C). The same was observed after adenoviral MPDZ overexpression (Figure 2D). Lung ECs derived from MpdzΔEC mice also did not show changes in total Dll1 and Dll4 protein expression levels compared to controls (Figure 2E).
 
 MPDZ is able to cluster several transmembrane proteins at tight and adherens junctions. For instance, MPDZ facilitates RhoA signaling by recruiting Syx to endothelial junctions (Ngok et al., 2012). The activation of Notch receptors requires the interaction with Notch ligands presented on the cell surface. MPDZ is expressed in ECs derived of arteries, veins and microvessels with pronounced localization at the cell membrane (Figure 3—figure supplement 1). To address whether MPDZ affects the cell surface expression of the Notch ligands DLL1 and DLL4, we first tested if the carboxyterminal PDZ-binding sites of these Notch ligands are important for cell surface presentation. Constructs in which either full length DLL1 and DLL4 or versions lacking the PDZ-binding motifs were fused to a mCherry tag were generated. Those constructs were expressed in HUVEC and cell surface expression was analyzed by flow cytometry. Only mCherry-positive HUVEC were gated and the cell surface presentation of the Notch ligands was analyzed using specific antibodies against the extracellular domains of DLL1 and DLL4, respectively. Cell surface expression levels of full length DLL1 and DLL4 were higher than those of their mutants lacking the PDZ-binding site (Figure 3A). This indicates that protein-protein interactions via the PDZ-binding site could influence the localization of Delta-like proteins.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/32860/elife-32860-fig3-v3.jpg)
+
+**Figure 3.:** (A) DLL1 and DLL4 full length and such lacking the PDZ-binding site (ΔPDZ) constructs containing a mCherry tag were expressed in HUVEC. Cells were stained with antibodies against DLL1 or DLL4. DLL1 and DLL4 surface expression of mCherry positive cells was analyzed by flow cytometry. n = 3; *, p<0.05; **, p<0.01 unpaired Student’s t-test. (B) Endothelial cells were isolated from Mpdz+/+ embryos and Mpdz-/- littermates at embryonic day E11.5. Cells were purified by CD31 magnetic dynabeads and stained with anti-CD34 and anti-Dll4 antibodies for flow cytometric analysis. n = 4; *, p<0.05; unpaired Student’s t-test. (C, D) HEK293T control cells (293T sh-ctrl) as well as MPDZ-silenced HEK293T cells (293T sh-MPDZ) were transfected with Nectin-2 and HA-tagged DLL1 or Flag-tagged DLL4. For immunoprecipitation a Nectin-2 antibody was used and HA-tagged DLL1, Flag-tagged DLL4 and MPDZ were detected by western Blotting. Input, 10% of immunoprecipitate. IB, Immunoblot; IP, Immunoprecipitation; neg.ctrl., negative control.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32860/elife-32860-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Human umbilical vein endothelial cells (HUVEC), human umbilical artery endothelial cells (HUAEC), human brain microvessel endothelial cells (HBMVEC) were lysed, proteins isolated and expression level of MPDZ was analyzed by immunoblotting. β-actin served as loading control. (B) Methanol-fixed HUVEC and HUAEC were stained for MPDZ and counterstained with DAPI. Images were acquired with the confocal microscope LSM 700. Scale bar: 10 µm. Staining of MPDZ in HBMVEC did not give specific signals.
+
 To test whether indeed MPDZ is involved in regulating DLL4 cell surface localization, we analyzed cell surface presentation on isolated mouse embryonic EC at the developmental stage E11.5 by flow cytometry. This revealed that the Dll4 cell surface expression of CD34-positive ECs was lower in Mpdz-deficient cells compared to wild type littermate controls (Figure 3B).
 
-## MPDZ recruits DLL1 and DLL4 to the adherens junction protein nectin-2
+### MPDZ recruits DLL1 and DLL4 to the adherens junction protein nectin-2
 
 MPDZ binds to the intracellular domain of the single-pass type I membrane glycoprotein Nectin-2, which is a component of adherens junctions (Adachi et al., 2009) and is expressed in the endothelium (Rehm et al., 2013; Wallez and Huber, 2008). Thus, MPDZ could be involved in recruiting DLL1 and DLL4 to Nectin-2 containing adherens junctions. To test this, we performed co-immunoprecipitation studies in HEK293 cells. This revealed that DLL1 and DLL4 could be co-immunoprecipitated with Nectin-2. However, silencing of MPDZ expression abolished the interaction of DLL1 and DLL4 with Nectin-2 (Figure 3C and D).
 
 Interestingly, loss of Mpdz in mice did not affect the overall formation of vascular tight junctions (e.g. staining patterns of Claudin-5 and Occludin were unremarkable), as well as adherens junctions (VE-Cadherin) and Nectin-2-containing junctions (Figure 4, Figure 4—figure supplement 1), similar as observed before (Feldner et al., 2017). In vitro experiments indicated that the co-localization of DLL1 and DLL4 with the adherens junction protein Nectin-2 at the cell membrane was diminished upon silencing MPDZ expression in ECs (Figure 4—figure supplement 2A,B), whereas silencing of Nectin-2 did not affect localization of DLL1 and DLL4 (Figure 4—figure supplement 2C). Taken together, the data suggest that MPDZ stabilizes the cell surface presentation of DLL1 and DLL4 through recruitment to the adherens junction protein Nectin-2.
 
-## MPDZ regulates sprouting angiogenesis in vitro and ex vivo
+![Figure 4.](https://cdn.elifesciences.org/articles/32860/elife-32860-fig4-v3.jpg)
+
+**Figure 4.:** (A) Retinae isolated from 14 days old Mpdz-/- pups and control littermates (Mpdz+/+) were stained with Isolectin-B4 and antibodies against Claudin-5. Images were acquired with the confocal microscope LSM 700. Scale bar: 25 µm. (B, C) Retinae were isolated 9 days old Mpdz-/- pups and control littermates. Staining for endothelial cells with Isolectin-B4 and VE-Cadherin or Nectin-2. Images were acquired with the confocal microscope LSM 700. Scale bar: 25 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32860/elife-32860-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B, C) Brains were resected from 8 week old MpdzΔEC mice and control littermates (Mpdzfl/fl). Sections were stained with Isolectin-B4 and antibodies against VE-Cadherin (A), Occludin (B) and Nectin-2 (C). Images were acquired with the confocal microscope LSM 700. Scale bar: 10 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/32860/elife-32860-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A, B) HUVECs were either transduced with lentivirus expressing GFP (sh-ctrl) or with lentivirus expressing shRNA against MPDZ (sh-MPDZ). Cells were cultured under sparse conditions (A) or confluent conditions (B). After PFA fixation cells were stained for DLL1 and Nectin-2 or DLL4 and Nectin-2 and counterstained with DAPI. Images were acquired with the confocal microscope LSM 700. Arrow indicates co-localization of DLL1/4 with Nectin-2 at the cell membrane. Arrow head indicates diminished co-localization at the cell membrane. Scale bar: 10 µm. (C) HUVECs were either transfected with control siRNA (si-ctrl) or with siRNA against Nectin-2 (si-Nectin-2). After PFA fixation cells were stained for DLL1 and Nectin-2 or DLL4 and Nectin-2. Images were acquired with the confocal microscope LSM 700. Arrow indicates localization of DLL1/4 at the cell membrane.Scale bar: 10 µm.
+
+### MPDZ regulates sprouting angiogenesis in vitro and ex vivo
 
 DLL4/Notch signaling restricts sprouting angiogenesis and cells with high Notch signaling activity adopt the stalk cell phenotype in a growing vessel sprout (Blanco and Gerhardt, 2013; Eilken and Adams, 2010; Pitulescu et al., 2017). As such, the protein interaction of MPDZ with the Notch ligand DLL4 and its promotion of Notch signaling activity could potentially be important to control angiogenesis. To address this, MPDZ was silenced or over-expressed in HUVEC, which were embedded as spheroids into a collagen matrix to analyze endothelial sprout formation. HUVEC silenced for MPDZ expression had increased angiogenic potential and formed more capillary-like sprouts compared to control cells, both under basal conditions and after VEGF stimulation (Figure 5A). Oppositely, forced MPDZ expression resulted in impaired sprout formation under both conditions (Figure 5B). Furthermore, MPDZ-expressing cells, which exhibit increased Notch signaling activity, preferred the stalk cell position in the sprouting angiogenesis assay. In line with this result, MPDZ silenced cells, which showed less Notch signaling activity, adopted preferentially the tip cell position in a growing sprout (Figure 5C).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/32860/elife-32860-fig5-v3.jpg)
 
-**Figure 5.:** (A) HUVEC were transduced with lentivirus-expressing shRNA against MPDZ (sh-MPDZ) or expressing GFP (sh-ctrl). Sprouting angiogenesis of collagen-embedded spheroids was analyzed 72 hr after transduction. Spheroids were cultured under basal conditions or stimulated with VEGF-A (25 ng/ml). Quantification shows length of all sprouts of each spheroid. n = 4 experiments with 10 spheroids per condition. **, p<0.01; ***, p<0.001 one-way ANOVA (Holm-Sidak method). (B) HUVEC were transduced with control (ctrl) or MPDZ-expressing adenovirus. Sprouting angiogenesis of collagen-embedded spheroids was analyzed 72 hr after transduction. Spheroids were cultured under basal conditions or stimulated with VEGF-A (25 ng/ml). Quantification shows length of all sprouts of each spheroid. n = 5 experiments with 10 spheroids per condition. *, p<0.05; **, p<0.01; One Way ANOVA (Holm-Sidak method). (C) Mixed spheroids of HUVEC transduced with lentivirus expressing shRNA against MPDZ (sh-MPDZ) or expressing mCherry (ctrl) or spheroids of HUVEC transduced with control (ctrl) or MPDZ-expressing (MPDZ) adenovirus were embedded in a collagen matrix and analyzed 72 hr after transduction. Cells at the most distal end were considered as tip cells. Tip cell numbers were analyzed under basal conditions or after stimulation with VEGF-A (25 ng/ml). n = 3 experiments with 10 spheroids per condition. *, p<0.05; **, p<0.01; ***, p<0.001 unpaired Student’s t-test.10.7554/eLife.32860.015Figure 5—source data 1.Figure 5 A, B, C.
+**Figure 5.:** (A) HUVEC were transduced with lentivirus-expressing shRNA against MPDZ (sh-MPDZ) or expressing GFP (sh-ctrl). Sprouting angiogenesis of collagen-embedded spheroids was analyzed 72 hr after transduction. Spheroids were cultured under basal conditions or stimulated with VEGF-A (25 ng/ml). Quantification shows length of all sprouts of each spheroid. n = 4 experiments with 10 spheroids per condition. **, p<0.01; ***, p<0.001 one-way ANOVA (Holm-Sidak method). (B) HUVEC were transduced with control (ctrl) or MPDZ-expressing adenovirus. Sprouting angiogenesis of collagen-embedded spheroids was analyzed 72 hr after transduction. Spheroids were cultured under basal conditions or stimulated with VEGF-A (25 ng/ml). Quantification shows length of all sprouts of each spheroid. n = 5 experiments with 10 spheroids per condition. *, p<0.05; **, p<0.01; One Way ANOVA (Holm-Sidak method). (C) Mixed spheroids of HUVEC transduced with lentivirus expressing shRNA against MPDZ (sh-MPDZ) or expressing mCherry (ctrl) or spheroids of HUVEC transduced with control (ctrl) or MPDZ-expressing (MPDZ) adenovirus were embedded in a collagen matrix and analyzed 72 hr after transduction. Cells at the most distal end were considered as tip cells. Tip cell numbers were analyzed under basal conditions or after stimulation with VEGF-A (25 ng/ml). n = 3 experiments with 10 spheroids per condition. *, p<0.05; **, p<0.01; ***, p<0.001 unpaired Student’s t-test.
 
 The increased angiogenic potential of Mpdz-deficient cells could also be shown in the aortic ring assay, in which slices of the mouse aorta from MpdzΔEC or littermate control mice (Mpdzfl/fl) were embedded into Matrigel. Aortic ECs from MpdzΔEC mice showed a significantly higher outgrowth rate compared to control (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/32860/elife-32860-fig6-v3.jpg)
 
-**Figure 6.:** (A) Aortae were isolated from Mpdzfl/fl and MpdzΔEC mice. Aortic rings were embedded in Matrigel and EC outgrowth was analyzed 24 hr after embedding. n = 4 mice per genotype; *, p<0.05 unpaired Student’s t-test. (B) Embryos at developmental stage E12.5 were used for IsolectinB4-FITC staining (endothelial cells). Left panel shows whole hindbrains of Mpdz+/+ and Mpdz-/- embryos. Right panel shows zoom-ins. Left panel: scale bar, 500 µm; Right panel: scale bar, 100 µm. (C) Quantification of vessel branches and junctions per area. n ≥ 6 mice per genotype; **, p<0.01 unpaired Student’s t-test.10.7554/eLife.32860.017Figure 6—source data 1.Figure 6 A and C.
+**Figure 6.:** (A) Aortae were isolated from Mpdzfl/fl and MpdzΔEC mice. Aortic rings were embedded in Matrigel and EC outgrowth was analyzed 24 hr after embedding. n = 4 mice per genotype; *, p<0.05 unpaired Student’s t-test. (B) Embryos at developmental stage E12.5 were used for IsolectinB4-FITC staining (endothelial cells). Left panel shows whole hindbrains of Mpdz+/+ and Mpdz-/- embryos. Right panel shows zoom-ins. Left panel: scale bar, 500 µm; Right panel: scale bar, 100 µm. (C) Quantification of vessel branches and junctions per area. n ≥ 6 mice per genotype; **, p<0.01 unpaired Student’s t-test.
 
-## Loss of MPDZ promotes angiogenesis during brain development
+### Loss of MPDZ promotes angiogenesis during brain development
 
 Based on the in vitro and ex vivo data, we tested whether MPDZ also affects angiogenesis during mouse development. Vascularization of the hindbrain occurs in a stereotypic manner and is ideally suited to examine sprouting angiogenesis (Fantin et al., 2013). Hindbrains were resected at developmental stage E12.5 to analyze the vasculature. This revealed a much denser vessel network in Mpdz-/- embryos compared to wild-type littermates (Figure 6B). Mpdz-/- embryos had a significant higher number of vessel junctions and branches compared to littermate controls (Figure 6C). This indicates that Mpdz is needed to limit developmental angiogenesis.
 
-## Endothelial-specific loss of Mpdz alters tumor angiogenesis
+### Endothelial-specific loss of Mpdz alters tumor angiogenesis
 
 Angiogenesis is a hallmark of cancer and therefore we examined how genetic inactivation of Mpdz specifically in the endothelium would affect tumor growth and tumor angiogenesis. B16F10 melanoma and Lewis lung carcinoma (LLC) cells were injected subcutaneously into syngeneic MpdzΔEC and control mice. No significant differences in the tumor growth rates were observed between Mpdzfl/fl and MpdzΔEC mice (Figure 7A and B). The resected tumors were stained against the EC marker CD31 and α-SMA (smooth muscle cells, myofibroblasts) (Figure 7C). Microvessel density was significantly higher in MpdzΔEC compared to Mpdzfl/fl mice (Figure 7D), whereas vessel coverage was not altered (Figure 7D), similar as observed after blocking Dll4-induced Notch signaling in the tumor vasculature (Kangsamaksin et al., 2015).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/32860/elife-32860-fig7-v3.jpg)
+
+**Figure 7.:** Tumor growth curve of B16F10 (A) and LLC (B) tumors subcutaneously implanted into Mpdzfl/fl and MpdzΔEC mice. n ≥ 5; Results are shown as mean ±SEM. (C) Representative images of B16F10 and LLC tumors grown in Mpdzfl/fl and MpdzΔEC mice, stained against CD31 (endothelial cells) and α-SMA (smooth muscle cells). Scale bar: 100 µm (D) Quantification of the vessel staining. Microvessel density was determined by counting the CD31-positive vessels per area. For the analysis of vessel coverage, the percentage of α-SMA-positive vessels was determined. n ≥ 5; results are shown as mean ±SD; *, p<0.05; ***, p<0.001; unpaired Student’s t-test. (E) Representative images of B16F10 and LLC tumors stained for Glut1 (hypoxia marker) grown in Mpdzfl/fl and MpdzΔEC mice. Scale bar: 100 µm (F) Quantification of the Glut1-positive area. n ≥ 4; results are shown as mean ±SEM; *, p<0.05; **, p<0.01; unpaired Student’s t-test. Figure legends – figure supplements.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/32860/elife-32860-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A, B) Representative images of B16F10 (A) or LLC (B) tumors subcutaneously implanted into Mpdzfl/fl and MpdzΔEC mice. Sections show CD31-immunolabeled and fluorescein-lectin-labeled tumor vessels and Hoechst-33342-positive tumor areas. Lycopersicon Esculentum lectin and Hoechst 33342 was tail vein injected 5 min prior to sacrifice. Scale bar: 25 µm (C) Quantification of the lectin-positive vessels. n ≥ 3; results are shown as mean ±SD; *, p<0.05; unpaired Student’s t-test. (D) Quantification of the mean intensity of Hoechst 33342 per area. n ≥ 3; results are shown as mean ±SD; *, p<0.05; unpaired Student’s t-test.
 
 Increased numbers of blood vessels can support tumor growth, whereas too many vessel branches disturb the functionality of the vessel network, impair proper perfusion, inhibit tumor growth and can lead to tissue hypoxia. For instance, this was observed after inhibition of endothelial Dll4/Notch signaling in tumors (Kangsamaksin et al., 2015; Noguera-Troise et al., 2006; Ridgway et al., 2006). Indeed, both B16F10 and LLC tumors grown in MpdzΔEC mice contained larger hypoxic areas compared to controls, as indicated by Glut1 expression (Figure 7E and F). To elucidate whether tumor perfusion is impaired, we injected Hoechst 33342 and FITC-labeled Lycopersicon Esculentum lectin into a tail vein and resected the tumors 5 min later. This revealed that B16F10 as well as LLC tumors were less well perfused in MpdzΔEC mice compared to control littermates (Figure 7—figure supplement 1A and B). In the melanoma model, the percentage of Lectin-positive tumor blood vessels was reduced in MpdzΔEC mice (Figure 7—figure supplement 1C), whereas in the LLC model, which contains a better structured vasculature than the melanoma model, the Hoechst dye was delivered to a lesser extend into the tumor mass in MpdzΔEC mice compared to control littermates (Figure 7—figure supplement 1D).
 
@@ -108,21 +144,255 @@ Pharmacological Notch inhibition also leads to excessive tumor vessel sprouting 
 
 ## Materials and methods
 
-## Animal experiments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mpdz-/-</td>
+      <td>DOI: 10.15252/emmm.201606430</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>MpdzΔEC</td>
+      <td>DOI: 10.15252/emmm.201606430</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>MPDZ shRNA</td>
+      <td>Biocat</td>
+      <td>V2LHS_3656, 16945 16946</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>Nectin-2 siRNA</td>
+      <td>Origene</td>
+      <td>SR321541</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MPDZ</td>
+      <td>Sigma-Aldrich</td>
+      <td>HPA020255</td>
+      <td>Western Blot (1:500)/ICC (1:50) on methanol fixed cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mpdz</td>
+      <td>Invitrogen</td>
+      <td>42–2700</td>
+      <td>Western Blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA</td>
+      <td>Cell Signaling</td>
+      <td>#3724</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Flag</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3165</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DLL1</td>
+      <td>abcam</td>
+      <td>ab85346</td>
+      <td>Western Blot (1:1000)/ICC (1:100) on PFA fixed cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Dll1</td>
+      <td>R and D Systems</td>
+      <td>AF3970</td>
+      <td>Western Blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DLL4</td>
+      <td>Cell Signaling</td>
+      <td>#2589</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DLL4</td>
+      <td>Sigma-Aldrich</td>
+      <td>WH0054567M4</td>
+      <td>ICC (1:100) on PFA fixed cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Dll4</td>
+      <td>R and D Systems</td>
+      <td>AF1389</td>
+      <td>Western Blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SYNJ2BP</td>
+      <td>abcam</td>
+      <td>ab69431</td>
+      <td>Western Blot (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP</td>
+      <td>abcam</td>
+      <td>ab290</td>
+      <td>Western Blot (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Nectin-2</td>
+      <td>abcam</td>
+      <td>ab135246</td>
+      <td>ICC (1:50) on PFA fixed cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Nectin-2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-32804</td>
+      <td>Western Blot (1:500)/ICC (1:50) on PFA fixed cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Nectin-2</td>
+      <td>abcam</td>
+      <td>ab16912</td>
+      <td>ICC (1:100) on fresh frozen sections</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MPDZ</td>
+      <td>BioCat</td>
+      <td>clone BC140793</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Citrine-MPDZ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Citrine tag fused to the N-terminus of MPDZ (BioCat, clone BC140793)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DLL1</td>
+      <td>OpenBiosystems</td>
+      <td>OHS4559-99847851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-DLL1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Gateway cloning: Dll1 (OHS4559-99847851) into pDest26-HA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DLL1-mCherry</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mCherry inserted between extracellular and transmembrane domain of DLL1. Gateway vector: pLenti6.2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-DLL1ΔPDZ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Stop codon inserted before PDZ-binding site by site-directed mutagenesis. Gateway vector: pDest26-HA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DLL1-mCherryΔPDZ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Stop codon inserted before PDZ-binding site by site-directed mutagenesis. Gateway vector: pLenti6.2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DLL4</td>
+      <td>PMID:17045587</td>
+      <td></td>
+      <td>cDNA cloned into pEntr3C</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Flag-DLL4</td>
+      <td>this paper</td>
+      <td></td>
+      <td>cDNA cloned into pCS2p-FLAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DLL4-mCherry</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mCherry inserted between extracellular and transmembrane domain of DLL4. Gateway vector: pLenti6.2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Flag-DLL4ΔPDZ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Stop codon inserted before PDZ-binding site by site-directed mutagenesis. Vector: pCS2p-FLAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DLL4-mCherryΔPDZ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Stop codon inserted before PDZ-binding site by site-directed mutagenesis. Gateway vector: pLenti6.2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Nectin-2</td>
+      <td>DKFZ Genomics and Proteomics Core Facility</td>
+      <td></td>
+      <td>BC003091 (cDNA). Gateway vector: pLenti6.2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal experiments
 
 Mice were kept under pathogen-free barrier conditions. All animal procedures were performed in accordance with the institutional and national regulations and approved by the local committees for animal experimentation and the local government (reference number: 35–9185.81/G-30/14 and 35–9185.81/G-259/12). Generation of global Mpdz-/- mice and conditional Tek-Cre;Mpdzfl/fl mice was previously described (Feldner et al., 2017). Mice had been backcrossed on a C57Bl/6 background for 10 generations. For tumor experiments, 500,000 syngeneic tumor cells (B16F10 or LLC) in 100 µl PBS were injected subcutaneously in the abdominal flanks of mice. To analyze tumor perfusion, 100 µl of fluorescein-labeled lectin (1 mg/ml, FL-1171, Vector Laboratories, Burlington, CA) and Hoechst 33342 (5 mg/ml, H3570, Life Technologies, Carlsbad, CA) was injected into the tail vein 5 min prior to sacrifice.
 
-## Cell culture
+### Cell culture
 
 B16F10, LLC and HEK293T cells were cultured in DMEM containing 10% fetal calf serum, 100 units/ml penicillin and 100 μg/ml streptomycin. Primary human umbilical cord endothelial cells (HUAEC and HUVEC) were freshly isolated and cultured in Endopan-3 medium with supplements (P04-0010K, PAN Biotech, Aidenbach, Germany) and used until passage five. HUVEC of three donors were pooled. Human brain microvascular endothelial cells were also cultured in Endopan-3 medium with supplements (P04-0010K, PAN Biotech). Standardized multiplex cell contamination and cell line authentication testing (Multiplexion, Heidelberg, Germany) were conducted on a regular basis.
 
-## Expression plasmids, viral transduction, transfection
+### Expression plasmids, viral transduction, transfection
 
 HUVECs were transduced with lentivirus and adenovirus as described (Brütsch et al., 2010). For MPDZ silencing three different lentiviral shRNA vectors (Biocat V2LHS_3656, 16945 16946) were used (Feldner et al., 2017). Forced MPDZ expression was achieved by lentiviral or adenoviral transduction expressing MPDZ cDNA (BioCat clone BC140793). Forced expression of Nectin-2 was achieved by transient over-expression of Nectin-2 cDNA in HEK293T cells (DKFZ clone BC003091). SYNJ2BP, DLL1 and DLL4 expression constructs were described (Adam et al., 2013; Diez et al., 2007). Mutations in cDNAs were introduced by site-directed mutagenesis using the QuickChange XL Kit (Agilent, Santa Clara, CA). Mutagenesis primers for the deletion of the DLL1-PDZ-binding site were as follows: 5'-gagaaggatgagtgcgtctaagcaactgaggtgtaagg-3', 5'-ccttacacctcagttgcttagacgcactcatccttctc-3'. Mutagenesis primers for the deletion of the DLL4-PDZ-binding site were as follows: 5'-gaggagaggaatgaatgtgtctatgccacggaggtataagg-3', 5'-ccttatacctccgtggcatagacacattcattcctctcctc-3', 5'-ggagaggaatgaatgtgtctaagccacggaggtat-3', 5'-atacctccgtggcttagacacattcattcctctcc-3'.
 
 HUVECs were transfected with siRNA using RNAiMAX transfection reagent (Life Technologies). For Nectin-2 silencing, three different siRNAs were used (SR321541, Origene, Rockville, MD).
 
-## Immunoprecipitation and western blot analysis
+### Immunoprecipitation and western blot analysis
 
 Cells were lysed with Cell Lysis Buffer (9803S, Cell Signaling Technology, Danvers, MA) complemented with 1 mM PMSF. Proteins were separated by SDS-PAGE and blotted on nitrocellulose membranes. Membranes were blocked with 5% skim milk in PBS containing 0.05% Tween-20. Following primary antibodies were used: anti-HA (#3724, Cell Signaling Technology, 1:1000), anti-FLAG (F3165, Sigma-Aldrich, St. Louis, MO, 1:1000), anti-DLL1 (ab85346, abcam, Cambridge, UK, 1:1000), anti-DLL4 (#2589S, Cell Signaling Technology, 1:1000), anti-beta-actin (A5441-.2ML, Sigma-Aldrich, 1:2500), anti-DLL1 (AF3970, R & D Systems, Minneapolis, MN, 1:500), anti-DLL4 (AF1389, R & D Systems, 1:250), anti-MPDZ (HPA020255, Sigma-Aldrich, 1:500), anti-Mpdz (42–2700, Invitrogen, Carlsbad, CA, 1:500), anti-GFP (ab290, abcam, 1:1000), anti-SYNJ2BP (ab69431, abcam, 1:500), anti-Nectin-2 (sc-32804, Santa Cruz Biotechnology, Dallas, TX, 1:500). Membranes were incubated overnight at 4°C with primary antibodies. HRP-conjugated secondary antibodies (DAKO, Santa Clara, CA) were added for 1 hr at room temperature. Chemoluminescence was detected by Aceglow ECL Western Blotting Substrate (PEQL37-3420, VWR International, Darmstadt, Germany) using a ChemiDoc imaging system (Bio-Rad Laboratories, Hercules, CA). Western Blots were quantified with Image Lab 3.0 software (Bio-Rad Laboratories).
 
@@ -130,25 +400,25 @@ For immunoprecipitation, primary antibodies were added to protein lysates and in
 
 Quantitative Real-Time-PCR mRNA was isolated with the innuPrep RNA Mini Kit (845-KS-2040250, Jena Analytics, Jena, Germany) and transcribed into cDNA (High Capacity cDNA Reverse Transcription Kit; 4368814, Applied Biosystems, Foster City, CA). POWER SYBR Green Master Mix (4368708, Applied Biosystems) was used to perform qPCR on an ABI StepOnePlus cycler (Applied Biosystems). Rpl32 and OAZ1 were used for normalization. Primers: hOAZ (fw): 5’-gagccgaccatgtcttcatt-3’, hOAZ (rev): 5’-ctcctcctctcccgaagact-3’; mRpl32 (fw): 5’-aggcattgacaacagggttc-3’, mRpl32 (fw): 5’-gttgcacatcagcagcactt-3’; hHEY1 (fw): 5’-gagaaggctggtacccagtg-3’, hHEY1 (rev): 5’-cgaaatcccaaactccgata-3’; mHey1 (fw): 5’-gaaaagacggagaggcatca-3’, mHey1 (rev): 5’-gtgcgcgtcaaaataacctt-3’; hHEY2 (fw): 5’-cttgtgccaactgcttttga-3’, hHEY2 (rev): 5’-gcactctcggaatcctatgc-3’; mHey2 (fw): 5’- tgagaagactagtgccaacagc-3’, mHey2 (rev): 5’-tgggcatcaaagtagccttta-3’; hHES1 (fw): 5’-tcaacacgacaccggataaa-3’, hHES1 (rev): 5’-ccgcgagctatctttcttca-3’. All experiments included two technical and three biological replicates.
 
-## Luciferase co-culture assay
+### Luciferase co-culture assay
 
 A Notch expressing cell line, CHO-N1-CIT, was transfected in 24-well dishes using TransIT-LT1 (Mirus Bio, Madison, WI) with a TP1-firefly Notch luciferase reporter (800 ng) together with SV-40 Renilla luciferase (10 ng) (Shaya et al., 2017). IMCD3 cells were transfected under similar conditions with either an MPDZ construct or empty vector (pORI) as control. 24 hr after transfection, cells were trypsinized and the CHO-N1-CIT cells were co-cultured with either IMCD3 cells transfected with MPDZ or pORI. The cells were plated in a ratio of 40:60 (IMCD3: CHO-N1-CIT) and were incubated for 48 hr, after which the cells were lysed with lysis buffer (E1960, Promega, Madison, WI). The light emission of the luciferin and the Renilla luciferase activities were measured from cell lysates using a dual luciferase kit (E1960, Promega) and a Veritas luminometer (Promega). The assay was repeated five independent times.
 
-## Spheroid-based sprouting angiogenesis
+### Spheroid-based sprouting angiogenesis
 
 HUVECs were suspended in growth medium containing 20% methocel (Sigma-Aldrich). Endothelial cells were cultured as hanging drops for 24 hr to form spheroids. Each spheroid contained approximately 400 cells. Spheroids were suspended in 2 ml methocel containing 20% FCS and 2 ml rat collagen at neutral pH. The collagen matrix polymerized for 30 min and hereon 0.1 ml basal culture medium or 0.1 ml basal culture medium containing VEGF-A (final concentration 25 ng/ml; Peprotech, Hamburg, Germany) was added. After 24 hr, cells were fixed with 10% formaldehyde. The lengths of all sprouts of at least 10 spheroids per condition were measured using an inverted microscope (Leica DM IRB, Leica Microsystems, Wetzlar, Germany). Image analysis was done by using Fiji software. The assay is described in more detail at Bio-protocol (Tetzlaff and Fischer, 2018).
 
 To determine which cells prefer the tip or stalk cell position, a sprouting assay with a co-culture of endothelial cells was performed. Cells expressed either a fluorophore (GFP or mCherry) or were labeled with Cell Tracker Red (C34552, Life Technologies). Equal amount of each cell type were cultured as hanging drops. Sprouting assay was performed as described above. Using the inverted microscope (Leica DM IRB), the number of green or red fluorescent cells in the tip cell position was determined. Per condition at least 10 spheroids were analyzed.
 
-## Hindbrain analysis
+### Hindbrain analysis
 
 Embryonic hindbrains were isolated as described previously (Fantin et al., 2013). Samples were fixed with 4% PFA overnight at 4°C and hereon permeabilized in blocking buffer (0.3% Triton X-100% and 1% BSA in PBS) overnight at 4°C. Samples were washed three times for 20 min with Pblec buffer at room temperature and stained with FITC-IsolectinB4 (1:100; L2895, Sigma-Aldrich) in Pblec overnight at 4°C. After washing, samples were mounted using fluorescence mounting medium (S3023, DAKO). Z-stack images were acquired using a confocal microscope (Zeiss LSM 700, Zeiss, Oberkochen, Germany) and image analysis was done by Fiji software.
 
-## Aortic ring assay
+### Aortic ring assay
 
 Aortae were isolated from mice (8 weeks old) and cut into ~25 rings each. Aortic rings were embedded in matrigel (356234, BD Biosciences, Franklin Lakes, NJ), and stimulated with 30 ng/ml VEGF-A165(450–32, Peprotech). Images were taken after 24 hr with a Nikon SMZ800 microscope.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Freshly dissected tumors were embedded in Tissue-Tek (4583, Sakura), frozen and stored at −80°C. Sections (7 µm) were cut and fixed in methanol for 20 min at −20°C. The primary antibodies against CD31 (550274, BD Biosciences, 1:50), α-SMA (C6198, Sigma-Aldrich, 1:100) and Glut1 (ab40084, abcam, 1:200) were incubated over night at 4°C and secondary antibodies (Thermo Fisher Scientific, 1:400) for 1 hr at room temperature. Sections were washed three times with TBS-T and mounted with Fluoromount (S3023, Dako). Confocal images were obtained using an LSM 700 microscope (Zeiss) and analyzed using Fiji software.
 
@@ -156,14 +426,14 @@ Retinae were isolated, fixed and processed as previously described (Yang et al.,
 
 HUVEC were seeded on glass slides coated with 0.5% gelantine. Cells were washed twice with PBS, fixed with 4% PFA for 10 min, washed three times with PBS, permeabilized with PBS-T (containing 0.1% TritonX) and washed again three times with PBS. Alternative to PFA fixation, cells were fixed with ice-cold methanol for 20 min at −20°C and then washed three times with PBS. After blocking with 3% BSA in PBS, cells were incubated with the primary antibodies against MPDZ (HPA020255, Sigma-Aldrich, 1:50), DLL1 (ab85346, abcam, 1:100), DLL4 (WH0054567M4, Sigma-Aldrich, 1:100), Nectin-2 (ab135246, abcam, 1:50), Nectin-2 (sc-32804, Santa Cruz Biotechnology, 1:50) over night at 4°C and secondary antibodies (Thermo Fisher Scientific, 1:400) for 1 hr at room temperature. Sections were counterstained with DAPI, washed three times with PBS and mounted with Fluoromount (S3023, Dako). Confocal images were obtained using an LSM 700 microscope (Zeiss) and analyzed using Fiji software.
 
-## Flow cytometry
+### Flow cytometry
 
 HUVECs were detached from cell culture plates using trypsin-EDTA (25300054, Thermo Fisher Scientific, Waltham, MA). Mouse embryos were minced and incubated with 0.5 mg/ml collagenase type II (LS004177, Worthington, Lakewood, CA) for 45 min at 37°C. Tissue suspensions were mashed twice through cell strainers (BD Biosciences; 100 and 40 μm). Endothelial cells were enriched by CD31 magnetic beads. Cells were suspended (106 cells/ml) and incubated with different fluorophores coupled to primary antibodies against DLL1 (FAB1818A, R & D Systems), DLL4 (FAB1506A, R & D Systems), Dll4 (563802, BD Biosciences), CD34 (553733, BD Biosciences) for 20 min on ice. Concentration of the different antibodies was determined by titration, in order to get optimal compensation during acquisition.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed with SigmaPlot software 12.5 (Systat Software Inc., San Jose, CA). Statistical significance was calculated using unpaired Student’s t-test and one-way ANOVA, as adequate. p-values<0.05 were considered as significant.
 
-## Study approval
+### Study approval
 
 All animal works were approved by the local committees for animal experimentation and the local government (reference number: 35–9185.81/G-30/14 and 35–9185.81/G-259/12). This work is not considered ‘Human Subjects Research’.

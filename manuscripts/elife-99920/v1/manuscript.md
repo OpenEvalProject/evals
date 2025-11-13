@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01dr6c206 Laboratory of Language Neurobiology, Nencki Institute of Experimental Biology, Polish Academy of Sciences Warsaw Poland
-2. https://ror.org/039bjqg32 Faculty of Physics, University of Warsaw Warsaw Poland
-3. https://ror.org/01dr6c206 Laboratory of Brain Imaging, Nencki Institute of Experimental Biology, Polish Academy of Sciences Warsaw Poland
+1. Laboratory of Language Neurobiology, Nencki Institute of Experimental Biology, Polish Academy of Sciences Warsaw Poland ([ROR:01dr6c206](https://ror.org/01dr6c206))
+2. Faculty of Physics, University of Warsaw Warsaw Poland ([ROR:039bjqg32](https://ror.org/039bjqg32))
+3. Laboratory of Brain Imaging, Nencki Institute of Experimental Biology, Polish Academy of Sciences Warsaw Poland ([ROR:01dr6c206](https://ror.org/01dr6c206))
 
 † Corresponding author
 
@@ -37,9 +37,280 @@ Here, we examined both EEG (1/f signal, beta, and gamma oscillations during both
 
 ## Results
 
-## No evidence for group differences in the EEG E/I biomarkers
+### No evidence for group differences in the EEG E/I biomarkers
 
 We recruited 120 Polish adolescents and young adults – 60 with dyslexia diagnosis and 60 controls matched in sex, age, and family socio-economic status. The dyslexic group scored lower in all reading and reading-related tasks and higher in the Polish version of the Adult Reading History Questionnaire (ARHQ-PL) (Bogdanowicz et al., 2015), where a higher score indicates a higher risk of dyslexia (see Table 1). Although all participants were within the intellectual norm, the dyslexic group scored lower on the IQ scale (including nonverbal subscale only) than the control group. However, the Bayesian statistics did not provide evidence for the difference between groups in the nonverbal IQ.
+
+**Table 1.**
+ Demographic and behavioral characteristics of the entire sample of 120 participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">DYS28 F, 32 M</th>
+      <th colspan="2">CON28 F, 32 M</th>
+      <th rowspan="2">t(df)</th>
+      <th rowspan="2">p</th>
+      <th rowspan="2">Cohen’s d</th>
+      <th rowspan="2">BF10</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>M</th>
+      <th>SD</th>
+      <th>M</th>
+      <th>SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>19.41</td>
+      <td>3.18</td>
+      <td>19.54</td>
+      <td>2.96</td>
+      <td>0.25(118)</td>
+      <td>0.806</td>
+      <td>0.05</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>Mother’s education(years)</td>
+      <td>17.20</td>
+      <td>3.36</td>
+      <td>16.58</td>
+      <td>2.28</td>
+      <td>–1.19(103.89)</td>
+      <td>0.235</td>
+      <td>–0.22</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td>Father’s education(years)</td>
+      <td>16.12a</td>
+      <td>3.10a</td>
+      <td>17.13a</td>
+      <td>3.27a</td>
+      <td>1.71(114)</td>
+      <td>0.091</td>
+      <td>0.32</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>IQ</td>
+      <td>103.56b</td>
+      <td>11.83b</td>
+      <td>111.12</td>
+      <td>10.43</td>
+      <td>3.70(117)</td>
+      <td>&lt;0.001</td>
+      <td>0.68</td>
+      <td>75.31</td>
+    </tr>
+    <tr>
+      <td>Nonverbal IQ(scaled score)</td>
+      <td>10.40</td>
+      <td>2.94</td>
+      <td>11.62</td>
+      <td>2.57</td>
+      <td>2.42(118)</td>
+      <td>0.017</td>
+      <td>0.44</td>
+      <td>2.63</td>
+    </tr>
+    <tr>
+      <td>ARHQ-PL</td>
+      <td>51.50</td>
+      <td>9.70</td>
+      <td>25.47</td>
+      <td>8.00</td>
+      <td>–16.04(113.87)</td>
+      <td>&lt;0.001</td>
+      <td>–2.93</td>
+      <td>&gt;10,000</td>
+    </tr>
+    <tr>
+      <td>Reading and reading-related tasks</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Words/min</td>
+      <td>108.38</td>
+      <td>20.93</td>
+      <td>134.57</td>
+      <td>13.29</td>
+      <td>8.18(99.90)</td>
+      <td>&lt;0.001*</td>
+      <td>1.49</td>
+      <td>&gt;10,000</td>
+    </tr>
+    <tr>
+      <td>Pseudowords/min</td>
+      <td>56.75</td>
+      <td>14.16</td>
+      <td>83.43</td>
+      <td>17.04</td>
+      <td>9.33(118)</td>
+      <td>&lt;0.001*</td>
+      <td>1.70</td>
+      <td>&gt;10,000</td>
+    </tr>
+    <tr>
+      <td>RAN objects (s)</td>
+      <td>32.12</td>
+      <td>5.11</td>
+      <td>28.70</td>
+      <td>4.43</td>
+      <td>–3.92(118)</td>
+      <td>&lt;0.001*</td>
+      <td>–0.72</td>
+      <td>149.93</td>
+    </tr>
+    <tr>
+      <td>RAN colors (s)</td>
+      <td>35.83</td>
+      <td>6.82</td>
+      <td>31.18</td>
+      <td>5.73</td>
+      <td>–4.04(118)</td>
+      <td>&lt;0.001*</td>
+      <td>–0.74</td>
+      <td>229.96</td>
+    </tr>
+    <tr>
+      <td>RAN digits(s)</td>
+      <td>19.32</td>
+      <td>4.61</td>
+      <td>16.25</td>
+      <td>2.94</td>
+      <td>–4.34(100.28)</td>
+      <td>&lt;0.001*</td>
+      <td>–0.79</td>
+      <td>642.86</td>
+    </tr>
+    <tr>
+      <td>RAN letters (s)</td>
+      <td>22.70</td>
+      <td>4.53</td>
+      <td>19.68</td>
+      <td>3.16</td>
+      <td>–4.23(105.42)</td>
+      <td>&lt;0.001*</td>
+      <td>–0.77</td>
+      <td>433.23</td>
+    </tr>
+    <tr>
+      <td>Reading comprehension (s)</td>
+      <td>64.47</td>
+      <td>20.13</td>
+      <td>43.72</td>
+      <td>9.63</td>
+      <td>–7.20(84.66)</td>
+      <td>&lt;0.001*</td>
+      <td>–1.32</td>
+      <td>&gt;10,000</td>
+    </tr>
+    <tr>
+      <td>Phoneme deletion(% correct)</td>
+      <td>76.41</td>
+      <td>24.68</td>
+      <td>91.47</td>
+      <td>9.07</td>
+      <td>4.44(74.66)</td>
+      <td>&lt;0.001*</td>
+      <td>0.81</td>
+      <td>898.25</td>
+    </tr>
+    <tr>
+      <td>Spoonerisms phonemes(% correct)</td>
+      <td>54.29</td>
+      <td>35.42</td>
+      <td>82.74</td>
+      <td>22.06</td>
+      <td>5.28(98.78)</td>
+      <td>&lt;0.001*</td>
+      <td>0.96</td>
+      <td>&gt;10,000</td>
+    </tr>
+    <tr>
+      <td>Spoonerisms syllables(% correct)</td>
+      <td>46.94</td>
+      <td>30.61</td>
+      <td>73.06</td>
+      <td>23.98</td>
+      <td>5.20(111.62)</td>
+      <td>&lt;0.001*</td>
+      <td>0.95</td>
+      <td>&gt;10,000</td>
+    </tr>
+    <tr>
+      <td>Orthographic awareness(accuracy/time)</td>
+      <td>0.33</td>
+      <td>0.13</td>
+      <td>0.53</td>
+      <td>0.14</td>
+      <td>8.12(118)</td>
+      <td>&lt;0.001*</td>
+      <td>1.48</td>
+      <td>&gt;10,000</td>
+    </tr>
+    <tr>
+      <td>Perception speed (sten score)</td>
+      <td>3.32</td>
+      <td>2.04</td>
+      <td>4.50</td>
+      <td>1.67</td>
+      <td>3.48(118)</td>
+      <td>&lt;0.001*</td>
+      <td>0.64</td>
+      <td>38.71</td>
+    </tr>
+    <tr>
+      <td>Digits forward</td>
+      <td>5.53</td>
+      <td>1.64</td>
+      <td>6.98</td>
+      <td>1.95</td>
+      <td>4.40(118)</td>
+      <td>&lt;0.001*</td>
+      <td>0.80</td>
+      <td>792.55</td>
+    </tr>
+    <tr>
+      <td>Digits backward</td>
+      <td>5.25</td>
+      <td>1.49</td>
+      <td>7.33</td>
+      <td>2.25</td>
+      <td>5.99(102.59)</td>
+      <td>&lt;0.001*</td>
+      <td>1.09</td>
+      <td>&gt;10,000</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: DYS – dyslexic group; CON – control group; F – females, M – males. BF10 – Bayes factor indicating ratio of the likelihood of an alternative hypothesis (H1) to a null hypothesis (H0). ARHQ-PL – Polish version of the Adult Reading History Questionnaire. RAN – rapid automatized naming. Boldface indicates statistical significance at p<0.05 level (uncorrected).*Significance after Bonferroni correction for 14 planned comparisons for reading and reading-related tasksan = 58 (two participants did not provide information about the father’s education)bn = 59 (one participant did not attempt a verbal subtest of the scale, thus we were not able to calculate overall IQ)_
 
 The EEG signal was recorded at rest and during a spoken language task, where participants listened to a sentence and had to indicate its veracity. In the initial step of the analysis, we analyzed the aperiodic (exponent and offset) components of the EEG spectrum. The exponent reflects the steepness of the EEG power spectrum, with a higher exponent indicating a steeper signal; while the offset represents a uniform shift in power across frequencies, with a higher offset indicating greater power across the entire EEG spectrum (Donoghue et al., 2020).
 
@@ -55,7 +326,7 @@ Next, we restricted analyses to language regions and averaged exponent and offse
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/99920/elife-99920-fig1-v1.jpg)
 
-**Figure 1.:** .n = 119 (DYS n = 59, CON n = 60). (A) Power spectral densities averaged across three electrodes (T7, TP7, TP9)corresponding to the left superior temporal sulcus (STS) separately for dyslexic (DYS) and control (CON) groups at rest and (C) during the language task. (B) Plots illustrating results for the exponent, offset, and the beta power from the left STS electrodes at rest and (D) during the language task.
+**Figure 1.:** n = 119 (DYS n = 59, CON n = 60). (A) Power spectral densities averaged across three electrodes (T7, TP7, TP9)corresponding to the left superior temporal sulcus (STS) separately for dyslexic (DYS) and control (CON) groups at rest and (C) during the language task. (B) Plots illustrating results for the exponent, offset, and the beta power from the left STS electrodes at rest and (D) during the language task.
 
 For the exponent, there were significant effects of age (F(1,116) = 14.00, p<0.001, η2p = 0.108, BFincl = 11.46) and condition (F(1,116) = 4.06, p=0.046, η2p = 0.034, BFincl = 1.88), however, Bayesian statistics did not provide evidence for either including or excluding the condition factor. Furthermore, post hoc comparisons did not reveal significant differences between the exponent at rest (M=1.51, SD = 0.17) and during the language task (M=1.51, SD = 0.18, pcorr = 0.546). There was also a significant interaction between region and group, although Bayes factor indicated against including it in the model (F(1,116) = 4.44, p=0.037, η2p = 0.037, BFincl = 0.25). Post hoc comparisons indicated that the exponent was higher in the frontal than in the temporal region both in the dyslexic (Mfrontal = 1.54, SDfrontal = 0.15, Mtemporal = 1.49, SDtemporal = 0.18, pcorr<0.001) and in the control group (Mfrontal = 1.54, SDfrontal = 0.17, Mtemporal = 1.46, SDtemporal = 0.20, pcorr<0.001). The difference between groups was not significant either in the frontal (pcorr=0.858) or temporal region (pcorr=0.441). The effects of region (F(1,116) = 1.17, p=0.282, η2p = 0.010, BFincl>10,000) and hemisphere (F(1,116) = 1.17, p=0.282, η2p = 0.010, BFincl = 12.48) were not significant, although Bayesian statistics indicated in favor of including them in the model. Furthermore, the interactions between condition and group (F(1,116) = 0.18, p=0.673, η2p = 0.002, BFincl = 3.70), and between region, hemisphere, and condition (F(1,116) = 0.11, p=0.747, η2p = 0.001, BFincl = 7.83) were not significant, however Bayesian statistics indicated in favor of including these interactions in the model. The effect of group (F(1,116) = 0.12, p=0.733, η2p = 0.001, BFincl = 1.19) was not significant, while Bayesian statistics did not provide evidence for either inclusion or exclusion. Any other interactions were not significant and Bayes factor indicated against including them in the model. Since Bayes factor suggested the inclusion of the condition*group interaction in the model, we further conducted Bayesian t-tests to determine whether this was driven by differences between control and dyslexic groups in either condition. The results, however, supported the null hypothesis in both the resting-state condition (MDYS = 1.51, SDDYS = 0.16, MCON = 1.50, SDCON = 0.19, BF10=0.22) and during the language task (MDYS = 1.52, SDDYS = 0.17, MCON = 1.51, SDCON = 0.19, BF10=0.20).
 
@@ -67,9 +338,17 @@ The analysis revealed a significant effect of condition (F(1,115) = 8.58, p=0.00
 
 Additionally, building upon previous findings which demonstrated differences in dyslexia in aperiodic and periodic components within the parieto-occipital region (Turri et al., 2023), we have included analyses for the same cluster of electrodes in Appendix 1. However, in this region, we also did not find evidence for group differences either in the exponent, offset, or beta power.
 
-## No evidence for group differences in Glu and GABA+ concentrations in the left STS
+### No evidence for group differences in Glu and GABA+ concentrations in the left STS
 
 The MRS voxel was placed in the left STS, in a region showing highest activation for both visual and auditory words (compared to control stimuli) localized individually in each participant, based on an fMRI task (see Figure 2—figure supplement 1 and Appendix 1—table 5, Appendix 1—table 6, and Appendix 1—table 7 for the group-level results from the fMRI task). Sample voxel localization and sample MRS spectrum are presented in Figure 2A and B, while overlap of the MRS voxel placement across participants and MRS spectra separately for the dyslexic and control groups are presented in Figure 2C and D. We decided to analyze the neurometabolites’ levels derived from the left STS, as this region is consistently related to functional and structural differences in dyslexia across languages (Yan et al., 2021). Moreover, the neural noise hypothesis of dyslexia identifies perisylvian areas as being affected by increased glutamatergic signaling, and directly predicts associations between Glu and GABA levels in the superior temporal regions and phonological skills (Hancock et al., 2017).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/99920/elife-99920-fig2-v1.jpg)
+
+**Figure 2.:** (A) Sample MRS voxel localization. (B) Sample MRS spectrum with individual total creatine (tCr), Glu, and GABA+ contributions plotted below. (C) Group results (CON>DYS) from the fMRI localizer task for words compared to the control stimuli (p<0.05 FWE cluster threshold) and overlap of the MRS voxel placement across participants. n = 50 (DYS n = 21, CON n = 29). (D) MRS spectra separately for the dyslexic (DYS) and control (CON) groups. n = 50 (DYS n = 21, CON n = 29). (E) Plots illustrating results for the Glu, n = 50 (DYS n = 21, CON n = 29), GABA+, n = 47 (DYS n = 20, CON n = 27), Glu/GABA+ ratio, n = 47 (DYS n = 20, CON n = 27), and the Glu/GABA+ imbalance, n = 47 (DYS n = 20, CON n = 27).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/99920/elife-99920-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Note: CON – control group, DYS – dyslexic group, L – left hemisphere, R – right hemisphere. Results reported at p<0.001 height threshold corrected for multiple comparisons using p<0.05 FWE cluster threshold. n = 50 (DYS n = 21, CON n = 29).
 
 Due to financial and logistical constraints, 59 out of the 120 recruited subjects, selected progressively as the study unfolded, were examined with MRS. Subjects were matched by age and sex between the dyslexic and control groups. Due to technical issues and to prevent delays and discomfort for the participants, we collected 54 complete sessions. Additionally, four datasets were excluded based on our quality control criteria (linewidth>20 Hz and visual inspection), and three GABA+ estimates exceeded the selected CRLB threshold (>20%). Ultimately, we report 50 estimates for Glu (21 participants with dyslexia) and 47 for GABA+ and Glu/GABA+ ratios (20 participants with dyslexia). Demographic and behavioral characteristics for the subsample of 47 participants are provided in Appendix 1—table 2. For comparability with previous studies in dyslexia (Del Tufo et al., 2018; Pugh et al., 2014) we report Glu and GABA as a ratio to total creatine (tCr).
 
@@ -81,9 +360,209 @@ Also, Glu/GABA+ ratio did not correlate with age (r=–0.05, p=0.744, BF10=0.19)
 
 Following a recent study examining developmental changes in both EEG and MRS E/I biomarkers (McKeon et al., 2024), we calculated an additional measure of Glu/GABA+ imbalance, computed as the absolute residual value from the linear regression of Glu predicted by GABA+ with greater values indicating greater Glu/GABA+ imbalance. Alike the previous work (McKeon et al., 2024), we took the square root of this value to ensure a normal distribution of the data. This measure did not correlate with age (r=–0.05, p=0.719, BF10=0.19); thus, age was not included as a covariate. The results indicated that the effect of GMV was not significant (F(1,44) = 0.63, p=0.430, η2p = 0.014, BFincl = 0.37) while Bayes factor did not provide evidence for either inclusion or exclusion. The effect of group was not significant (F(1,44) = 0.74, p=0.396, η2p = 0.016, BFincl = 0.39) although Bayesian statistics did not provide evidence for either inclusion or exclusion. Descriptive statistics for MRS results separately for dyslexic and control groups are provided in Appendix 1—table 1.
 
-## Correspondence between Glu and GABA+ concentrations and EEG E/I biomarkers is limited
+### Correspondence between Glu and GABA+ concentrations and EEG E/I biomarkers is limited
 
 Next, we investigated correlations between Glu and GABA+ concentrations in the left STS and EEG biomarkers of E/I balance. Semi-partial correlations were performed (Table 2) to control for confounding variables – for Glu the effects of age and GMV were regressed, for GABA+, Glu/GABA+ ratio, and Glu/GABA+ imbalance the effect of GMV was regressed, while for exponents and offsets the effect of age was regressed. For zero-order correlations between variables, see Appendix 1—table 3.
+
+**Table 2.**
+ Semi-partial correlations between magnetic resonance spectroscopy (MRS) and electroencephalography (EEG) biomarkers of excitatory-inhibitory balance.For Glu the effects of age and gray matter volume (GMV) were regressed, for GABA+, Glu/GABA+ ratio, and Glu/GABA+ imbalance the effect of GMV was regressed, while for exponents and offsets the effect of age was regressed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>1.r(BF10)</th>
+      <th>2.</th>
+      <th>3.</th>
+      <th>4.</th>
+      <th>5.</th>
+      <th>6.</th>
+      <th>7.</th>
+      <th>8.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EEG resting state</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1. Glu</td>
+      <td>–</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2. GABA+</td>
+      <td>0.32*a(1.82)</td>
+      <td>–</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3. Glu/GABA+ ratio</td>
+      <td>–0.08a(0.21)</td>
+      <td>–0.91***a(&gt;10,000)</td>
+      <td>–</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4. Glu/GABA+ imbalance</td>
+      <td>0.12a(0.25)</td>
+      <td>0.31*a(1.63)</td>
+      <td>–0.18a(0.37)</td>
+      <td>–</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5. Exponent mean (rest)</td>
+      <td>–0.03b(0.18)</td>
+      <td>0.04a(0.19)</td>
+      <td>–0.11a(0.23)</td>
+      <td>0.29*a(1.21)</td>
+      <td>–</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6. Offset mean (rest)</td>
+      <td>–0.21b(0.49)</td>
+      <td>0.08a(0.21)</td>
+      <td>–0.17a(0.35)</td>
+      <td>0.25a(0.69)</td>
+      <td>0.68***c(&gt;10,000)</td>
+      <td>–</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7. Exponentleft STS (rest)</td>
+      <td>–0.16b(0.32)</td>
+      <td>0.01a(0.18)</td>
+      <td>–0.07a(0.20)</td>
+      <td>0.35*a(2.87)</td>
+      <td>0.68***c(&gt;10,000)</td>
+      <td>0.45***c(&gt;10,000)</td>
+      <td>–</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>8. Offsetleft STS (rest)</td>
+      <td>–0.38**b(6.28)</td>
+      <td>–0.10a(0.23)</td>
+      <td>0.02a(0.18)</td>
+      <td>0.18a(0.38)</td>
+      <td>0.18*c(0.80)</td>
+      <td>0.47***c(&gt;10,000)</td>
+      <td>0.66***c(&gt;10,000)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>9. Beta powerleft STS (rest)</td>
+      <td>–0.12b(0.25)</td>
+      <td>0.17a(0.33)</td>
+      <td>–0.25a(0.74)</td>
+      <td>0.01a(0.18)</td>
+      <td>0.18*c(0.80)</td>
+      <td>0.21*c(1.40)</td>
+      <td>0.51***c(&gt;10,000)</td>
+      <td>0.59***c(&gt;10,000)</td>
+    </tr>
+    <tr>
+      <td>EEG language task</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5. Exponent mean (task)</td>
+      <td>–0.10b(0.22)</td>
+      <td>0.06a(0.20)</td>
+      <td>–0.15a(0.29)</td>
+      <td>0.21a(0.49)</td>
+      <td>–</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6. Offset mean (task)</td>
+      <td>–0.26b(0.92)</td>
+      <td>0.09a(0.22)</td>
+      <td>–0.20a(0.43)</td>
+      <td>0.22a(0.53)</td>
+      <td>0.72***c(&gt;10,000)</td>
+      <td>–</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7. Exponentleft STS (task)</td>
+      <td>–0.20b(0.44)</td>
+      <td>0.01a(0.18)</td>
+      <td>–0.09a(0.22)</td>
+      <td>0.22a(0.51)</td>
+      <td>0.65***c(&gt;10000)</td>
+      <td>0.51***c(&gt;10,000)</td>
+      <td>–</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>8. Offsetleft STS (task)</td>
+      <td>–0.37**b(5.05)</td>
+      <td>–0.08a(0.21)</td>
+      <td>0.00a(0.18)</td>
+      <td>0.15a(0.30)</td>
+      <td>0.29**c(18.31)</td>
+      <td>0.55***c(&gt;10,000)</td>
+      <td>0.77***c(&gt;10,000)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>9. Beta powerleft STS (task)</td>
+      <td>–0.19b(0.42)</td>
+      <td>0.16a(0.32)</td>
+      <td>–0.22a(0.55)</td>
+      <td>–0.03a(0.19)</td>
+      <td>0.05c(0.13)</td>
+      <td>0.13c(0.31)</td>
+      <td>0.47***c(&gt;10,000)</td>
+      <td>0.60***c(&gt;10,000)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: r – Pearson’s correlation coefficient; BF10 – Bayes factor indicating ratio of the likelihood of an alternative hypothesis (H1) to a null hypothesis (H0); mean – values averaged across all electrodes; left STS – values averaged across three electrodes corresponding to the left superior temporal sulcus (T7, TP7, TP9).***p < 0.001 (uncorrected); **p < 0.01 (uncorrected); *p < 0.05 (uncorrected)an = 47; bn = 50; cn = 119_
 
 Glu negatively correlated with offset in the left STS both at rest (r=–0.38, p=0.007, BF10=6.28; Figure 3A) and during the language task (r=–0.37, p=0.009, BF10=5.05), while any other correlations between Glu and EEG biomarkers were not significant and Bayesian statistics indicated in favor of null hypothesis or provided absence of evidence for either hypothesis. Furthermore, Glu/GABA+ imbalance positively correlated with exponent at rest both averaged across all electrodes (r=0.29, p=0.048, BF10=1.21), as well as in the left STS electrodes (r=0.35, p=0.017, BF10=2.87; Figure 3B) although Bayes factor provided absence of evidence for either alternative or null hypothesis. Conversely, GABA+ and Glu/GABA+ ratio were not significantly correlated with any of the EEG biomarkers and Bayesian statistics indicated in favor of null hypothesis or provided absence of evidence for either hypothesis.
 
@@ -91,11 +570,171 @@ Glu negatively correlated with offset in the left STS both at rest (r=–0.38, p
 
 **Figure 3.:** (A) Semi-partial correlation between offset at rest in the left superior temporal sulcus (STS) electrodes and Glu controlling for age and gray matter volume (GMV), n = 50 (DYS n = 21, CON n = 29). (B) Semi-partial correlation between exponent at rest in the left STS electrodes (controlled for age) and Glu/GABA+ imbalance (controlled for GMV), n = 47 (DYS n = 20, CON n = 27).
 
-## Testing the paths from neural noise to reading
+### Testing the paths from neural noise to reading
 
 The neural noise hypothesis of dyslexia predicts impact of the neural noise on reading through the impairment of (1) phonological awareness, (2) lexical access and generalization, and (3) multisensory integration (Hancock et al., 2017). Therefore, we analyzed correlations between these variables, reading skills and MRS and EEG biomarkers of E/I balance. For the composite score of phonological awareness, we averaged z-scores from phoneme deletion, phoneme and syllable spoonerisms tasks. For the composite score of lexical access and generalization we averaged z-scores from objects, colors, letters, and digits subtests from rapid automatized naming (RAN) task, while for the composite score of reading we averaged z-scores from words and pseudowords read per minute, and text reading time in reading comprehension task. The outcomes from the RAN and reading comprehension task have been transformed from raw time scores to items/time scores in order to provide the same direction of relationships for all z-scored measures, with greater values indicating better skills. For the multisensory integration score we used results from the redundant target effect task reported in our previous work (Glica et al., 2024), with greater values indicating a greater magnitude of multisensory integration.
 
 Age positively correlated with multisensory integration (r=0.38, p<0.001, BF10=87.98), composite scores of reading (r=0.22, p=0.014, BF10=2.24), and phonological awareness (r=0.21, p=0.021, BF10=1.59), while not with the composite score of RAN (r=0.13, p=0.151, BF10=0.32). Hence, we regressed the effect of age from multisensory integration, reading, and phonological awareness scores and performed semi-partial correlations (Table 3, for zero-order correlations, see Appendix 1—table 4).
+
+**Table 3.**
+ Semi-partial correlations between reading, phonological awareness, rapid automatized naming (RAN), multisensory integration, and biomarkers of excitatory-inhibitory balance.For reading, phonological awareness, and multisensory integration the effect of age was regressed, for Glu the effects of age and gray matter volume (GMV) were regressed, for GABA+, Glu/GABA+ ratio, and Glu/GABA+ imbalance the effect of GMV was regressed, while for exponents and offsets the effect of age was regressed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>1.r(BF10)</th>
+      <th>2.</th>
+      <th>3.</th>
+      <th>4.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EEG resting state</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1. Reading</td>
+      <td>–</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2. Phonological awareness</td>
+      <td>0.60***c(&gt;10,000)</td>
+      <td>–</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3. RAN</td>
+      <td>0.71***c(&gt;10,000)</td>
+      <td>0.48***c(&gt;10,000)</td>
+      <td>–</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4. Multisensory integration</td>
+      <td>0.16d(0.41)</td>
+      <td>0.25*d(2.09)</td>
+      <td>0.02d(0.14)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>5. Glu</td>
+      <td>–0.03b(0.18)</td>
+      <td>–0.12b(0.25)</td>
+      <td>–0.05b(0.19)</td>
+      <td>0.03b(0.18)</td>
+    </tr>
+    <tr>
+      <td>6. GABA+</td>
+      <td>–0.18a(0.36)</td>
+      <td>–0.06a(0.20)</td>
+      <td>–0.23a(0.56)</td>
+      <td>0.31*a(1.62)</td>
+    </tr>
+    <tr>
+      <td>7. Glu/GABA+ ratio</td>
+      <td>0.07a(0.20)</td>
+      <td>0.04a(0.19)</td>
+      <td>0.09a(0.22)</td>
+      <td>–0.32*a(1.84)</td>
+    </tr>
+    <tr>
+      <td>8. Glu/GABA+ imbalance</td>
+      <td>–0.21a(0.47)</td>
+      <td>–0.08a(0.21)</td>
+      <td>–0.20a(0.44)</td>
+      <td>0.17a(0.33)</td>
+    </tr>
+    <tr>
+      <td>9. Exponent mean(rest)</td>
+      <td>–0.08c(0.17)</td>
+      <td>0.10c(0.20)</td>
+      <td>–0.06c(0.14)</td>
+      <td>0.02d(0.14)</td>
+    </tr>
+    <tr>
+      <td>10. Offset mean(rest)</td>
+      <td>0.06c(0.14)</td>
+      <td>0.14c(0.35)</td>
+      <td>0.03c(0.12)</td>
+      <td>0.16d(0.38)</td>
+    </tr>
+    <tr>
+      <td>11. Exponent left STS(rest)</td>
+      <td>–0.08c(0.16)</td>
+      <td>0.06c(0.14)</td>
+      <td>–0.04c(0.12)</td>
+      <td>–0.04d(0.14)</td>
+    </tr>
+    <tr>
+      <td>12. Offset left STS(rest)</td>
+      <td>0.12c(0.25)</td>
+      <td>0.18*c(0.77)</td>
+      <td>0.08c(0.17)</td>
+      <td>0.08d(0.18)</td>
+    </tr>
+    <tr>
+      <td>13. Beta power left STS(rest)</td>
+      <td>0.04c(0.13)</td>
+      <td>0.23*c(2.73)</td>
+      <td>–0.04c(0.12)</td>
+      <td>0.05d(0.15)</td>
+    </tr>
+    <tr>
+      <td>EEG language task</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9. Exponent mean(task)</td>
+      <td>–0.07c(0.16)</td>
+      <td>0.13c(0.30)</td>
+      <td>–0.10c(0.21)</td>
+      <td>0.01d(0.14)</td>
+    </tr>
+    <tr>
+      <td>10. Offset mean(task)</td>
+      <td>0.05c(0.13)</td>
+      <td>0.14c(0.34)</td>
+      <td>0.01c(0.12)</td>
+      <td>0.18d(0.50)</td>
+    </tr>
+    <tr>
+      <td>11. Exponent left STS(task)</td>
+      <td>–0.03c(0.12)</td>
+      <td>0.09c(0.18)</td>
+      <td>–0.07c(0.15)</td>
+      <td>–0.04d(0.14)</td>
+    </tr>
+    <tr>
+      <td>12. Offset left STS(task)</td>
+      <td>0.13c(0.28)</td>
+      <td>0.18c(0.71)</td>
+      <td>0.07c(0.15)</td>
+      <td>0.09d(0.19)</td>
+    </tr>
+    <tr>
+      <td>13. Beta power left STS(task)</td>
+      <td>0.07c(0.15)</td>
+      <td>0.23*c(2.84)</td>
+      <td>0.02c(0.12)</td>
+      <td>0.15d(0.33)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: r – Pearson’s correlation coefficient; BF10 – Bayes factor indicating ratio of the likelihood of an alternative hypothesis (H1) to a null hypothesis (H0); mean – values averaged across all electrodes; left STS – values averaged across three electrodes corresponding to the left superior temporal sulcus (T7, TP7, TP9).***p < 0.001 (uncorrected); **p < 0.01 (uncorrected); *p < 0.05 (uncorrected)an = 47 bn = 50; cn = 119; dn = 87_
 
 Phonological awareness positively correlated with offset in the left STS at rest (r=0.18, p=0.049, BF10=0.77) and with beta power in the left STS both at rest (r=0.23, p=0.011, BF10=2.73; Figure 4A) and during the language task (r=0.23, p=0.011, BF10=2.84; Figure 4B), although Bayes factor provided absence of evidence for either alternative or null hypothesis. Furthermore, multisensory integration positively correlated with GABA+ concentration (r=0.31, p=0.034, BF10=1.62) and negatively with Glu/GABA+ ratio (r=–0.32, p=0.029, BF10=1.84), although Bayes factor provided absence of evidence for either alternative or null hypothesis. Any other correlations between reading skills and E/I balance biomarkers were not significant and Bayesian statistics indicated in favor of null hypothesis or provided absence of evidence for either hypothesis.
 
@@ -143,17 +782,17 @@ In conclusion, while our study challenges the neural noise hypothesis as a sole 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 A total of 120 Polish participants aged between 15.09 and 24.95 years (M=19.47, SD = 3.06) took part in the study. This included 60 individuals with a clinical diagnosis of dyslexia performed by the psychological and pedagogical counseling centers (28 females and 32 males) and 60 control participants without a history of reading difficulties (28 females and 32 males). Since there are no standardized diagnostic norms for dyslexia in adults in Poland, individuals were assigned to the dyslexic group based on a past diagnosis of dyslexia. All participants were right-handed, born at term, without any reported neurological/psychiatric diagnosis and treatment (including ADHD), without hearing impairment, with normal or corrected-to-normal vision, and IQ higher than 80 as assessed by the Polish version of the Abbreviated Battery of the Stanford-Binet Intelligence Scale-Fifth Edition (SB5) (Roid et al., 2017).
 
 The study was approved by the institutional review board at the University of Warsaw, Poland (reference number 2N/02/2021). All participants (or their parents in the case of underaged participants) provided written informed consent and received monetary remuneration for taking part in the study.
 
-## Reading and reading-related tasks
+### Reading and reading-related tasks
 
 Participants’ reading skills were assessed by multiple paper-pencil tasks described in detail in our previous work (Glica et al., 2024). Briefly, we evaluated words and pseudowords read in 1 min (Szczerbiński and Pelc Pękała, 2013), RAN (Fecenec et al., 2013), and reading comprehension speed. We also assessed phonological awareness by a phoneme deletion task (Szczerbiński and Pelc Pękała, 2013) and spoonerisms tasks (Bogdanowicz et al., 2016), as well as orthographic awareness (Awramiuk and Krasowicz Kupis, 2014). Furthermore, we evaluated non-verbal perception speed (Ciechanowicz and Stańczak, 2006) and short-term and working memory by forward and backward conditions from the Digit Span subtest from the WAIS-R (Wechsler, 1981). We also assessed participants’ multisensory audiovisual integration by a redundant target effect task, which results have been reported in our previous work (Glica et al., 2024).
 
-## EEG acquisition and procedure
+### EEG acquisition and procedure
 
 EEG was recorded from 62 scalp and 2 ear electrodes using the Brain Products system (actiCHamp Plus, Brain Products GmbH, Gilching, Germany). Data were recorded in BrainVision Recorder Software (version 1.22.0002, Brain Products GmbH, Gilching, Germany) with a 500 Hz sampling rate. Electrodes were positioned in line with the extended 10–20 system. Electrode Cz served as an online reference, while the Fpz as a ground electrode. All electrodes’ impedances were kept below 10 kΩ. Participants sat in a chair with their heads on a chin-rest in a dark, sound-attenuated, and electrically shielded room while the EEG was recorded during both a 5 min eyes-open resting state and the spoken language comprehension task. The paradigm was prepared in the Presentation software (version 20.1, Neurobehavioral Systems, Inc, Berkeley, CA, USA,https://www.neurobs.com/).
 
@@ -161,21 +800,21 @@ During rest, participants were instructed to relax and fixate their eyes on a wh
 
 Sentences were presented in a random order in two blocks of 128 trials. At the beginning of each trial, a white fixation cross was presented centrally on a black background for 500 ms, then a blank screen appeared for either 500, 600, 700, or 800 ms (durations set randomly and equiprobably) followed by an auditory sentence presentation. The length of sentences ranged between 1.17 and 2.78 s and was balanced between true (M=1.82 s, SD = 0.29) and false sentences (M=1.82 s, SD = 0.32; t(254) = –0.21, p=0.835; BF10=0.14). After a sentence presentation, a blank screen was displayed for 1000 ms before starting the next trial. To reduce participants’ fatigue, a 1 min break between two blocks of trials was introduced, and it took approximately 15 min to complete the task.
 
-## fMRI acquisition and procedure
+### fMRI acquisition and procedure
 
 MRI data were acquired using Siemens 3T Trio system with a 32-channel head coil. Structural data were acquired using whole-brain 3D T1-weighted image (MP_RAGE, TI = 1100 ms, GRAPPA parallel imaging with acceleration factor PE = 2, voxel resolution = 1 mm3, dimensions = 256×256×176). Functional data were acquired using whole-brain echo planar imaging sequence (TE = 30 ms, TR = 1410 ms, flip angle FA = 90°, FOV = 212 mm, matrix size = 92×92, 60 axial slices 2.3 mm thick, 2.3×2.3 mm2 in-plane resolution, multiband acceleration factor = 3). Due to a technical issue, data from two participants were acquired with a 12-channel coil using whole-brain echo planar imaging sequence (TE = 28 ms, TR = 2500 ms, flip angle FA = 80°, FOV = 216 mm, matrix size = 72×72, 42 axial slices 3 mm thick, 3×3 mm2 in-plane resolution).
 
 The fMRI task served as a localizer for later MRS voxel placement in language-sensitive left STS. The task was prepared using Presentation software (version 20.1, Neurobehavioral Systems, Inc, Berkeley, CA, USA,https://www.neurobs.com/) and consisted of three runs, each lasting 5 min and 9 s. Two runs involved the presentation of visual stimuli, while the third run of auditory stimuli. In each run, stimuli were presented in 12 blocks, with 14 stimuli per block. In visual runs, there were four blocks from each category: (1) 3–4 letters-long words, (2) the same words presented as a false font string (BACS font) (Vidal et al., 2017), and (3) strings of 3–4-long consonants. Similarly, in the auditory run, there were four blocks from each category: (1) words recorded in a speech synthesizer, (2) the same words presented backward, and (3) consonant strings recorded in a speech synthesizer. Stimuli within each block were presented for 800 ms with a 400 ms break in between. The duration of each block was 16.8 s. Between blocks, a fixation cross was displayed for 8 s. Participants performed a 1-back task to maintain focus. The blocks were presented in a pseudorandom order and each block included 2–3 repeated stimuli.
 
-## MRS acquisition and procedure
+### MRS acquisition and procedure
 
 The GE 7T system with a 32-channel coil was utilized. Structural data were acquired using whole-brain 3D T1-weighted image (3D-SPGR BRAVO, TI = 450 ms, TE = 2.6 ms, TR = 6.6 ms, flip angle = 12°, bandwidth = ±32.5 kHz, ARC acceleration factor PE = 2, voxel resolution = 1 mm, dimensions = 256×256×180). MRS spectra with 320 averages were acquired from the left STS using single-voxel spectroscopy semiLaser sequence (Deelchand et al., 2021) (voxel size = 15×15×15 mm3, TE = 28 ms, TR = 4000 ms, 4096 data points, water suppressed using VAPOR). Eight averages with unsuppressed water as a reference were collected.
 
 To localize left STS, T1-weighted images from fMRI and MRS sessions were coregistered and fMRI peak coordinates were used as a center of voxel volume for MRS. Voxels were then adjusted to include only the brain tissue. During the acquisition, participants took part in a simple orthographic task.
 
-## Statistical analyses
+### Statistical analyses
 
-## EEG data
+#### EEG data
 
 The continuous EEG signal was preprocessed in the EEGLAB (Delorme and Makeig, 2004). The data were filtered between 0.5 and 45 Hz (Butterworth filter, fourth order) and re-referenced to the average of both ear electrodes. The data recorded during the break between blocks, as well as bad channels, were manually rejected. The number of rejected channels ranged between 0 and 4 (M=0.19, SD = 0.63). Next, independent component analysis was applied. Components were automatically labeled by ICLabel (Pion-Tonachini et al., 2019), and those classified with 50–100% source probability as eye blinks, muscle activity, heart activity, channel noise, and line noise, or with 0–50% source probability as brain activity, were excluded. Components labeled as ‘other’ were visually inspected, and those identified as eye blinks and muscle activity were also rejected. The number of rejected components ranged between 11 and 46 (M=28.43, SD = 7.26). Previously rejected bad channels were interpolated using the nearest neighbor spline (Perrin et al., 1987; Perrin et al., 1989).
 
@@ -195,21 +834,21 @@ Results for the alpha and beta bands were calculated for the same clusters of fr
 
 Apart from the frequentist statistics, we also performed Bayesian statistics using JASP (JASP Team, 2023). For Bayesian repeated measures ANOVA, we reported the Bayes factor for the inclusion of a given effect (BFincl) with the ‘across matched model’ option, as suggested by Keysers et al., 2020, calculated as a likelihood ratio of models with a presence of a specific factor to equivalent models differing only in the absence of the specific factor. For Bayesian t-tests and correlations, we reported the BF10 value, indicating the ratio of the likelihood of an alternative hypothesis to a null hypothesis. We considered BFincl/10>3 and BFincl/10<1/3 as evidence for alternative and null hypotheses respectively, while 1/3<BFincl/10<3 as the absence of evidence (Keysers et al., 2020).
 
-## fMRI data
+#### fMRI data
 
-## MRS voxel localization in the native space
+##### MRS voxel localization in the native space
 
 The data were analyzed using Statistical Parametric Mapping (SPM12, Wellcome Trust Centre for Neuroimaging, London, UK) run on MATLAB R2020b (The MathWorks Inc, Natick, MA, USA). First, all functional images were realigned to the participant’s mean. Then, T1-weighted images were coregistered to functional images for each subject. Finally, fMRI data were smoothed with a 6 mm isotropic Gaussian kernel.
 
 In each subject, the left STS was localized in the native space as a cluster in the middle and posterior left superior temporal sulcus, exhibiting higher activation for visual words versus false font strings and auditory words versus backward words (logical AND conjunction) at p<0.01 uncorrected. For six participants (DYS n=2, CON n=4), the threshold was lowered to p<0.05 uncorrected, while for another six participants (DYS n=3, CON n=3) the contrast from the auditory run was changed to auditory words versus fixation cross due to a lack of activation for other contrasts.
 
-## Group-level analysis
+##### Group-level analysis
 
 The group-level results from the fMRI task are reported in Appendix 1—table 5, Appendix 1—table 6, and Appendix 1—table 7. For this analysis, the following preprocessing steps were conducted: (1) realignment of all functional images to the participant’s mean, (2) coregistration of T1-weighted images to functional images for each subject, (3) segmentation of coregistered anatomical images, (4) normalization of functional images, and (5) smoothing of functional data with a 6 mm isotropic Gaussian kernel. We also used ART (artifact detection tools with default options) to add movement regressors and reject volumes identified as motion outliers.
 
 In the second-level analysis, we conducted one-sample t-tests to examine activation maps separately for visual (words>false fonts) and auditory runs (words>backward) within each group (dyslexic, control). We also employed paired t-tests to assess activations for both visual and auditory runs (logical AND conjunction), examining them separately for the groups. Finally, a flexible factorial model was utilized with the main factor of subject and an interaction factor between group and condition to investigate the effect of group in both visual and auditory runs. We reported the results at p<0.001 height threshold corrected for multiple comparisons using p<0.05 FWE cluster threshold. The anatomical regions were labeled based on the AAL3 atlas (Rolls et al., 2020). The results are reported for 50 participants – 21 in the dyslexic (12 females, 9 males) and 29 in the control group (13 females, 16 males) reflecting the sample size for Glu results from the MRS.
 
-## MRS data
+### MRS data
 
 MRS data were analyzed using fsl-mrs version 2.0.7 (Clarke et al., 2021). Data stored in pfile format were converted into NIfTI-MRS using spec2nii tool. We then used the fsl_mrs_preproc function to automatically perform coil combination, frequency and phase alignment, bad average removal, combination of spectra, eddy current correction, shifting frequency to reference peak and phase correction.
 

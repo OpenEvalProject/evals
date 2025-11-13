@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03q648j11 Key Laboratory of Green Prevention and Control of Tropical Plant Diseases and Pests, Ministry of Education, College of Plant Protection, Hainan University Haikou China
-2. https://ror.org/005edt527 College of Life Sciences and Academy for Multidisciplinary Studies, Capital Normal University Beijing China
+1. Key Laboratory of Green Prevention and Control of Tropical Plant Diseases and Pests, Ministry of Education, College of Plant Protection, Hainan University Haikou China ([ROR:03q648j11](https://ror.org/03q648j11))
+2. College of Life Sciences and Academy for Multidisciplinary Studies, Capital Normal University Beijing China ([ROR:005edt527](https://ror.org/005edt527))
 
 † Corresponding author
 

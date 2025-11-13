@@ -18,16 +18,16 @@
 
 ### Affiliations
 
-1. https://ror.org/00ka6rp58 Assisted Reproduction Unit, Department of Obstetrics and Gynecology, Sir Run Run Shaw Hospital, School of Medicine, Zhejiang University Hangzhou China
-2. https://ror.org/048seqj96 Zhejiang Provincial Clinical Research Center for Reproductive Health and Disease Hangzhou China
+1. Assisted Reproduction Unit, Department of Obstetrics and Gynecology, Sir Run Run Shaw Hospital, School of Medicine, Zhejiang University Hangzhou China ([ROR:00ka6rp58](https://ror.org/00ka6rp58))
+2. Zhejiang Provincial Clinical Research Center for Reproductive Health and Disease Hangzhou China ([ROR:048seqj96](https://ror.org/048seqj96))
 3. Zhejiang Key Laboratory of Precise Protection and Promotion of Fertility Hangzhou China
-4. https://ror.org/02kzr5g33 Department of Obstetrics and Gynecology, Zhejiang Xiaoshan Hospital Hangzhou China
+4. Department of Obstetrics and Gynecology, Zhejiang Xiaoshan Hospital Hangzhou China ([ROR:02kzr5g33](https://ror.org/02kzr5g33))
 
 † Corresponding author
 
 ## Abstract
 
-Preeclampsia (PE), a major cause of maternal and perinatal mortality with highly heterogeneous causes and symptoms, is usually complicated by gestational diabetes mellitus (GDM). However, a comprehensive understanding of the immune microenvironment in the placenta of PE and the differences between PE and GDM is still lacking. In this study, cytometry by time of flight indicated that the frequencies of memory-like Th17 cells (CD45RA − CCR7 + IL-17A + CD4 + ), memory-like CD8 + T cells (CD38 + CXCR3 − CCR7 + Helios − CD127 − CD8 + ) and pro-inflam Macs (CD206 − CD163 − CD38 mid CD107a low CD86 mid HLA-DR mid CD14 + ) were increased, while the frequencies of anti-inflam Macs (CD206 + CD163 − CD86 mid CD33 + HLA-DR + CD14 + ) and granulocyte myeloid-derived suppressor cells (gMDSCs, CD11b + CD15 hi HLA-DR low ) were decreased in the placenta of PE compared with that of normal pregnancy (NP), but not in that of GDM or GDM&PE. The pro-inflam Macs were positively correlated with memory-like Th17 cells and memory-like CD8 + T cells but negatively correlated with gMDSCs. Single-cell RNA sequencing revealed that transferring the F4/80 + CD206 − pro-inflam Macs with a Folr2 + Ccl7 + Ccl8 + C1qa + C1qb + C1qc + phenotype from the uterus of PE mice to normal pregnant mice induced the production of memory-like IL-17a + Rora + Il1r1 + TNF + Cxcr6 + S100a4 + CD44 + Th17 cells via IGF1–IGF1R, which contributed to the development and recurrence of PE. Pro-inflam Macs also induced the production of memory-like CD8 + T cells but inhibited the production of Ly6g + S100a8 + S100a9 + Retnlg + Wfdc21 + gMDSCs at the maternal–fetal interface, leading to PE-like symptoms in mice. In conclusion, this study revealed the PE-specific immune cell network, which was regulated by pro-inflam Macs, providing new ideas about the pathogenesis of PE.
+Preeclampsia (PE), a major cause of maternal and perinatal mortality with highly heterogeneous causes and symptoms, is usually complicated by gestational diabetes mellitus (GDM). However, a comprehensive understanding of the immune microenvironment in the placenta of PE and the differences between PE and GDM is still lacking. In this study, cytometry by time of flight indicated that the frequencies of memory-like Th17 cells (CD45RA−CCR7+IL-17A+CD4+), memory-like CD8+ T cells (CD38+CXCR3−CCR7+Helios−CD127−CD8+) and pro-inflam Macs (CD206−CD163−CD38midCD107alowCD86midHLA-DRmidCD14+) were increased, while the frequencies of anti-inflam Macs (CD206+CD163−CD86midCD33+HLA-DR+CD14+) and granulocyte myeloid-derived suppressor cells (gMDSCs, CD11b+CD15hiHLA-DRlow) were decreased in the placenta of PE compared with that of normal pregnancy (NP), but not in that of GDM or GDM&PE. The pro-inflam Macs were positively correlated with memory-like Th17 cells and memory-like CD8+ T cells but negatively correlated with gMDSCs. Single-cell RNA sequencing revealed that transferring the F4/80+CD206− pro-inflam Macs with a Folr2+Ccl7+Ccl8+C1qa+C1qb+C1qc+ phenotype from the uterus of PE mice to normal pregnant mice induced the production of memory-like IL-17a+Rora+Il1r1+TNF+Cxcr6+S100a4+CD44+ Th17 cells via IGF1–IGF1R, which contributed to the development and recurrence of PE. Pro-inflam Macs also induced the production of memory-like CD8+ T cells but inhibited the production of Ly6g+S100a8+S100a9+Retnlg+Wfdc21+ gMDSCs at the maternal–fetal interface, leading to PE-like symptoms in mice. In conclusion, this study revealed the PE-specific immune cell network, which was regulated by pro-inflam Macs, providing new ideas about the pathogenesis of PE.
 
 ## Introduction
 
@@ -45,35 +45,1218 @@ In this study, we combined cytometry by time of flight (CyTOF), single-cell RNA 
 
 ## Results
 
-## Overall immune cell profile in the placenta of PE, GDM, and GDM&PE
+### Overall immune cell profile in the placenta of PE, GDM, and GDM&PE
 
 To fully characterize the immune microenvironment at the maternal–fetal interface of PE, we collected full-term placentas of PE and NP, and did a CyTOF test (Table 1), which panel is shown in Table 2. Since PE is usually complicated by GDM, the subjects of GDM and GDM complicated with PE (GDM&PE) were also included. The experimental workflow for CyTOF is shown in the schematic diagram (Figure 1A). We found that in addition to the well-known macrophages and T cells, there are also γδ T cells, B cells, NK cells, granulocytes, dendritic cells, and myeloid-derived suppressor cells (MDSCs). An overall distribution of CD45+ cell subsets in placenta as shown in the t-Distributed Stochastic Neighbor Embedding (t-SNE) maps (Figure 1B). There were no significant differences in the proportion of these large subpopulations comparing the PE, GDM, GDM&PE group to the NP group (Figure 1C). To identify the 10 cell subpopulations, CD4, CD8, and γδTCR were used as markers to distinguish CD4+ T, CD8+ T, and γδ T cells. CD11b is a marker that distinguishes myeloid cells, including macrophages and granulocytes (Figure 1D). The 10 cell subsets were further annotated by 41 markers in the heatmap (Figure 1E, Table 3).
 
+**Table 1.**
+ Details of the individuals included in the cytometry by time of flight (CyTOF).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>NP (n = 9)</th>
+      <th>PE (n = 8)</th>
+      <th>GDM (n = 8)</th>
+      <th>GDM&amp;PE (n = 7)</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>31.33 ± 2.108</td>
+      <td>31.75 ± 4.206</td>
+      <td>35.25 ± 3.419</td>
+      <td>32.43 ± 2.321</td>
+      <td>0.1008</td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2)</td>
+      <td>27.35 ± 1.740</td>
+      <td>30.84 ± 2.888</td>
+      <td>29.56 ± 2.689</td>
+      <td>30.16 ± 2.280</td>
+      <td>0.0518</td>
+    </tr>
+    <tr>
+      <td>Gestational age (weeks)</td>
+      <td>38.89 ± 0.558</td>
+      <td>37.39 ± 1.253</td>
+      <td>38.73 ± 0.419</td>
+      <td>36.22 ± 1.372</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Number of living children</td>
+      <td>0.4444 ± 0.497</td>
+      <td>0.500 ± 0.500</td>
+      <td>1.125 ± 0.331</td>
+      <td>0.429 ± 0.495</td>
+      <td>0.0236</td>
+    </tr>
+    <tr>
+      <td>Previous abortions</td>
+      <td>0.7778 ± 1.030</td>
+      <td>1.000 ± 0.866</td>
+      <td>1.000 ± 1.000</td>
+      <td>1.714 ± 2.050</td>
+      <td>0.5848</td>
+    </tr>
+    <tr>
+      <td>Mean systolic blood pressure</td>
+      <td>109.7 ± 5.400</td>
+      <td>151 ± 7.225</td>
+      <td>106.9 ± 2.848</td>
+      <td>150.7 ± 9.161</td>
+      <td>&lt;0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/100002/elife-100002-fig1-v1.jpg)
 
-**Figure 1.:** (A) Schematic of the experimental workﬂow in CyTOF experiment. The placentas were obtained from individuals with normal pregnancy (NP, n = 9), preeclampsia (PE, n = 8), gestational diabetes mellitus (GDM, n = 8), or GDM&PE (n = 7). (B) t-Distributed Stochastic Neighbor Embedding (t-SNE) maps showing 8 × 104 CD45+ cells (the average cell number of the all samples) from the placenta overlaid with color-coded clusters and the distributions of B cells, CD4+ T cells, CD8+ T cells, dendritic cell (DC), γδT cells, monocytes, granulocytes, myeloid-derived suppressor cell (MDSC), and natural killer (NK) cells. (C) Percentages of each cell type of CD45+ cells in placentas. (D) t-SNE maps showing the expression of CD3, CD8, CD4, γδTCR, CD14, CD15, and CD56. (E) Heatmap showing the expression levels of markers in CD45+ cell subsets. Data were compared between NP and PE, NP and GDM, and NP and GDM&PE using the Kruskal–Wallis test and represented as mean ± SEM (*p < 0.05, NS, not significant). CyTOF soure data are stored in Dryad Digital Repository, DOI: 10.5061/dryad.4qrfj6qn0.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Schematic of the experimental workﬂow in CyTOF experiment. The placentas were obtained from individuals with normal pregnancy (NP, n = 9), preeclampsia (PE, n = 8), gestational diabetes mellitus (GDM, n = 8), or GDM&PE (n = 7). (B) t-Distributed Stochastic Neighbor Embedding (t-SNE) maps showing 8 × 104 CD45+ cells (the average cell number of the all samples) from the placenta overlaid with color-coded clusters and the distributions of B cells, CD4+ T cells, CD8+ T cells, dendritic cell (DC), γδT cells, monocytes, granulocytes, myeloid-derived suppressor cell (MDSC), and natural killer (NK) cells. (C) Percentages of each cell type of CD45+ cells in placentas. (D) t-SNE maps showing the expression of CD3, CD8, CD4, γδTCR, CD14, CD15, and CD56. (E) Heatmap showing the expression levels of markers in CD45+ cell subsets. Data were compared between NP and PE, NP and GDM, and NP and GDM&PE using the Kruskal–Wallis test and represented as mean ± SEM (*p < 0.05, NS, not significant). CyTOF soure data are stored in Dryad Digital Repository, DOI: 10.5061/dryad.4qrfj6qn0.
 
-## Specific altered T cell profile in the placenta of PE
+**Table 2.**
+ Cytometry by time of flight (CyTOF) antibody panel used for analyzing placentas from individuals with normal pregnancy (NP), preeclampsia (PE), gestational diabetes mellitus (GDM), and GDM complicated with PE (GDM&PE).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Target</th>
+      <th>Metal tag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD45</td>
+      <td>HI30</td>
+    </tr>
+    <tr>
+      <td>CD3</td>
+      <td>UCHT1</td>
+    </tr>
+    <tr>
+      <td>CD68</td>
+      <td>Y1/82A</td>
+    </tr>
+    <tr>
+      <td>CD56</td>
+      <td>NCAM16.2</td>
+    </tr>
+    <tr>
+      <td>gd TCR</td>
+      <td>5A6.E9</td>
+    </tr>
+    <tr>
+      <td>CD19</td>
+      <td>HIB19</td>
+    </tr>
+    <tr>
+      <td>CCR6</td>
+      <td>G034E3</td>
+    </tr>
+    <tr>
+      <td>CD38</td>
+      <td>HIT2</td>
+    </tr>
+    <tr>
+      <td>CD103</td>
+      <td>B-Ly7</td>
+    </tr>
+    <tr>
+      <td>CD39</td>
+      <td>A1</td>
+    </tr>
+    <tr>
+      <td>CXCR3</td>
+      <td>G025H7</td>
+    </tr>
+    <tr>
+      <td>PD-L1</td>
+      <td>29E.2A3</td>
+    </tr>
+    <tr>
+      <td>PD-1</td>
+      <td>EH12.2H7</td>
+    </tr>
+    <tr>
+      <td>CD11C</td>
+      <td>BU15</td>
+    </tr>
+    <tr>
+      <td>CD107a</td>
+      <td>H4A3</td>
+    </tr>
+    <tr>
+      <td>pAKT</td>
+      <td>D9E</td>
+    </tr>
+    <tr>
+      <td>CCR4</td>
+      <td>L291H4</td>
+    </tr>
+    <tr>
+      <td>TIGIT</td>
+      <td>A15153G</td>
+    </tr>
+    <tr>
+      <td>CD206</td>
+      <td>15-2</td>
+    </tr>
+    <tr>
+      <td>Helios</td>
+      <td>22F6</td>
+    </tr>
+    <tr>
+      <td>CD28</td>
+      <td>CD28.2</td>
+    </tr>
+    <tr>
+      <td>pSTAT3</td>
+      <td>4/p-Stat3</td>
+    </tr>
+    <tr>
+      <td>GITR</td>
+      <td>110416</td>
+    </tr>
+    <tr>
+      <td>CD33</td>
+      <td>WM53</td>
+    </tr>
+    <tr>
+      <td>CTLA-4</td>
+      <td>BN13</td>
+    </tr>
+    <tr>
+      <td>FOXP3</td>
+      <td>PCH101</td>
+    </tr>
+    <tr>
+      <td>CD163</td>
+      <td>GHI/61</td>
+    </tr>
+    <tr>
+      <td>CD45RA</td>
+      <td>HI100</td>
+    </tr>
+    <tr>
+      <td>ICOS</td>
+      <td>C398.4A</td>
+    </tr>
+    <tr>
+      <td>CD69</td>
+      <td>FN50</td>
+    </tr>
+    <tr>
+      <td>CCR7</td>
+      <td>G043H7</td>
+    </tr>
+    <tr>
+      <td>NKG2A</td>
+      <td>131411</td>
+    </tr>
+    <tr>
+      <td>CD15</td>
+      <td>W6D3</td>
+    </tr>
+    <tr>
+      <td>TIM-3</td>
+      <td>F38-2E2</td>
+    </tr>
+    <tr>
+      <td>CD86</td>
+      <td>Fun-1</td>
+    </tr>
+    <tr>
+      <td>HLA-DR</td>
+      <td>L243</td>
+    </tr>
+    <tr>
+      <td>Granzyme B</td>
+      <td>QA16A02</td>
+    </tr>
+    <tr>
+      <td>CD14</td>
+      <td>M5E2</td>
+    </tr>
+    <tr>
+      <td>pS6</td>
+      <td>A17020B</td>
+    </tr>
+    <tr>
+      <td>CD127</td>
+      <td>A019D5</td>
+    </tr>
+    <tr>
+      <td>CD4</td>
+      <td>RPA-T4</td>
+    </tr>
+    <tr>
+      <td>CD8</td>
+      <td>RPA-T8</td>
+    </tr>
+    <tr>
+      <td>CD11b</td>
+      <td>M1/70</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Expression levels of markers identified in each immune subset in the placentas.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>B cells</th>
+      <th>CD4+ T</th>
+      <th>CD8+ T</th>
+      <th>gdTCR</th>
+      <th>NK cells</th>
+      <th>Macrophage</th>
+      <th>Granulocyte</th>
+      <th>MDSC</th>
+      <th>Dendritic cells</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD45</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>CD3</td>
+      <td>－</td>
+      <td>++</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD68</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>CD56</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>gd TCR</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD19</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CCR6</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD38</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>++</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CD103</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD39</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CXCR3</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>－</td>
+      <td>+</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>PD-L1</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>PD-1</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD11C</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>CD107a</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>－</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>pAKT</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CCR4</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>TIGIT</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD206</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>－</td>
+      <td>+</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>Helios</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CD28</td>
+      <td>－</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>pSTAT3</td>
+      <td>+</td>
+      <td>+</td>
+      <td>－</td>
+      <td>+</td>
+      <td>－</td>
+      <td>+</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>GITR</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD33</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>－</td>
+      <td>+</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CTLA-4</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>FOXP3</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD163</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD45RA</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>ICOS</td>
+      <td>－</td>
+      <td>+</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD69</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td>－</td>
+      <td>++</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CCR7</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>NKG2A</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD15</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>TIM-3</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD86</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>HLA-DR</td>
+      <td>++</td>
+      <td>－</td>
+      <td>+</td>
+      <td>+</td>
+      <td>－</td>
+      <td>++</td>
+      <td>+</td>
+      <td>－</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>Granzyme B</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD14</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>pS6</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD127</td>
+      <td>－</td>
+      <td>++</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD4</td>
+      <td>－</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD8</td>
+      <td>－</td>
+      <td>－</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD11b</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>+</td>
+      <td>++</td>
+      <td>++</td>
+      <td>－</td>
+      <td>+</td>
+    </tr>
+  </tbody>
+</table>
+
+### Specific altered T cell profile in the placenta of PE
 
 To gain a comprehensive understanding of the distribution patterns within each cellular subset, we conducted separate clustering analyses for CD4+ T, CD8+ T, and γδ T cells, respectively. We first analyzed 15 clusters of CD4+ T cells from the placentas of NP, PE, GDM, and GDM&PE (Figure 2A). CD4+ T cell clusters were defined by canonical marker set signatures (Figure 2—figure supplement 1A). The frequencies of memory-like CD45RA−CCR7+CD69−CD127lowTIGIT−Helios−CD4+ T ells (cluster 8) were significantly increased in individuals with PE compared with NP controls. At the same time, there was no significance in the GDM and GDM&PE groups compared with the NP group (Figure 2B, Table 4). We analyzed the expression of common intracellular molecules in CD4+ memory-like T cells by sorting CD45RO+CCR7+CD4+ T cells from placental samples by flow cytometry. Higher levels of IL-17A and lower levels of Foxp3 were found in memory-like CD45RO+CCR7+CD4+ T cells in the placentas of individuals with PE (Figure 2C). Consistent with the results of CyTOF, higher fluorescence intensity of CD45RO+CD4+ T cells was found in the placentas of individuals with PE than that of NP, and this cell population was mainly located in the placental sinusoids (Figure 2D), suggesting that these T cells should be recently recruited. Moreover, lower expression of immune checkpoint molecules including T-cell immunoglobulin mucin-3 (Tim-3) and programmed cell death 1 (PD-1) was found in CD45RA−CCR7+CD4+ memory T cells in the PE group, suggesting that these cells have a lower immunosuppressive capacity (Chen et al., 2022b; Fanelli et al., 2021; Rasmussen et al., 2022; Wang et al., 2016), there was no significant difference in the GDM or GDM&PE groups comparing with the NP group (Figure 2E). Then, 18 clusters of CD8+ T cells were analyzed (Figure 2F). CD8+ T cell clusters annotation was based on the expression of canonical marker signatures (Figure 2—figure supplement 1B). CD38+CXCR3−CCR7+Helios−CD127− (cluster 2) memory-like CD8+ T cells were significantly increased in the PE group (Figure 2G, Table 4). CD38+CXCR3−CCR7+Helios−CD127− memory-like CD8+ T cells of the PE group expressed lower levels of PD-1 and TIGIT, suggesting the activation of cytotoxicity of these cells (Figure 2H; Morita et al., 2020). Then, 22 clusters of γδT cells were analyzed and annotated (Figure 2—figure supplement 1C, D). Cluster 15 (HeliosmidCD28midCD69midHLA-DRmidCD127midγδT cells), with lower expression of Tim3, was significantly decreased in the PE group (Figure 2—figure supplement 1E, F). Nevertheless, neither the CD4+ T nor the CD8+ T cells exhibited any alteration in the memory-like clusters when comparing the GDM or GDM&PE groups to the NP group.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/100002/elife-100002-fig2-v1.jpg)
+
+**Figure 2.:** (A) Distribution of the CD4+ T cells in the group analyzed using t-Distributed Stochastic Neighbor Embedding (t-SNE). (B) Scatter dot plots showing the frequencies of cluster 8 of CD4+ T cells in the placentas of individuals with NP, PE, GDM, and GDM&PE (n = 9 in NP group; n = 8 in PE group; n = 8 in GDM group; n = 7 in GDM&PE group). (C) Expression of IL-17A and Foxp3 in CD45RO+CCR7+CD4+ T cells in placentas of individuals with NP and PE using flow cytometry (IL-17A: n = 10 in NP group, n = 15 in PE group; Foxp3: n = 7 in NP group, n = 9 in PE group). (D) Immunofluorescence co-staining of CD4 (red), CD45RO (green), and DAPI (blue) in frozen placental sections. The right panels show the fluorescence intensity of CD4 and CD45RO. Scale bar, 20 µm. (E) Scatter dot plots showing significantly altered markers of in cluster 8 of CD4+ T cells. (F) Distribution of the CD8+ T cells analyzed using t-SNE. (G) Scatter dot plots showing the frequencies of cluster 2 of CD8+ T cells in the placentas of individuals with NP, PE, GDM, and GDM&PE. (H) Scatter dot plots showing significantly altered markers in cluster 2 of CD8+ T cells. Data were compared between NP and PE, NP and GDM, and NP and GDM&PE using the Kruskal–Wallis test and represented as mean ± SEM (*p < 0.05, NS, not significant).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100002/elife-100002-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Heatmap showing the expression levels of markers in the CD4+ T subsets (n = 9 in NP group; n = 8 in PE group; n = 8 in GDM group; n = 7 in GDM&PE group). (B) Heatmap showing the expression levels of markers in the CD8+ T subsets. (C) Heatmap showing the expression levels of markers in the γδT subsets. (D) Distribution of the γδT cells in the group analyzed using t-Distributed Stochastic Neighbor Embedding (t-SNE). (E) Scatter dot plots showing the frequencies of cluster 15 of γδT cells in the placentas of individuals with NP, PE, GDM, and GDM&PE. (F) Scatter dot plots showing significantly altered markers in cluster 15 of γδT cells. Data were compared between NP and PE, NP and GDM, and NP and GDM&PE using the Kruskal–Wallis test and represented as mean ± SEM (*p < 0.05, **p < 0.01，NS, not significant).
+
+**Table 4.**
+ The marker profile of PE-specific immune subsets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th>Memory-like CD4+ T cells</th>
+      <th>Memory-like CD8+ T cells</th>
+      <th>gMDSCs</th>
+      <th>Pro-inflammatory macrophages</th>
+      <th>Anti-inflammatory macrophages</th>
+    </tr>
+    <tr>
+      <th>Cluster 08 of CD4+ T cells</th>
+      <th>Cluster 02 of CD8+ T cells</th>
+      <th>Cluster 12 ofCD3−CD11b+ cells</th>
+      <th>Cluster 23 ofCD3−CD11b+ cells</th>
+      <th>Cluster 25 ofCD3−CD11b+ cells</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD45</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>CD3</td>
+      <td>++</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD68</td>
+      <td>-</td>
+      <td>－</td>
+      <td>+</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>CD56</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>gd TCR</td>
+      <td>-</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD19</td>
+      <td>-</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CCR6</td>
+      <td>-</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD38</td>
+      <td>++</td>
+      <td>++</td>
+      <td>－</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CD103</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CD39</td>
+      <td>+</td>
+      <td>－</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CXCR3</td>
+      <td>+</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>PD-L1</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>PD-1</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD11C</td>
+      <td>-</td>
+      <td>－</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>CD107a</td>
+      <td>-</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>pAKT</td>
+      <td>+</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CCR4</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>TIGIT</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD206</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>－</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Helios</td>
+      <td>+</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD28</td>
+      <td>+</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>pSTAT3</td>
+      <td>-</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>GITR</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD33</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CTLA-4</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>FOXP3</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD163</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD45RA</td>
+      <td>-</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>ICOS</td>
+      <td>+</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD69</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CCR7</td>
+      <td>++</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>NKG2A</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD15</td>
+      <td>－</td>
+      <td>－</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>TIM-3</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD86</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>HLA-DR</td>
+      <td>-</td>
+      <td>－</td>
+      <td>+</td>
+      <td>+</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>Granzyme B</td>
+      <td>-</td>
+      <td>－</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD14</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>pS6</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD127</td>
+      <td>+</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD4</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD8</td>
+      <td>－</td>
+      <td>++</td>
+      <td>－</td>
+      <td>－</td>
+      <td>－</td>
+    </tr>
+    <tr>
+      <td>CD11b</td>
+      <td>－</td>
+      <td>－</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+  </tbody>
+</table>
+
 In conclusion, significant changes in placental T cell profile were found in the placentas of PE but not in those of GDM or GDM&PE, suggesting that abnormal activation of T cells in the placenta is associated with the pathogenesis of PE.
 
-## Abnormal polarization of macrophages was correlated with specific immune cell subsets in individuals with PE
+### Abnormal polarization of macrophages was correlated with specific immune cell subsets in individuals with PE
 
 Except for T cells, we also analyzed 29 clusters of CD45+CD3−CD11b+ cells from placentas of NP, PE, GDM, and GDM&PE, including 9 clusters of macrophages, 11 clusters of granulocytes, and 5 clusters of NK/NK-like cells (Figure 3A). The clusters of CD45+CD3−CD11b+ cells were defined by canonical marker set signatures (Figure 3B). Moreover, significantly decreased frequencies of CD68midCD39midHLA-DRlowCD11b+CD15+ granulocytes (cluster 12), which are identified as gMDSCs, were found in the PE group (Figure 3C, Table 4). In addition, the frequency of anti-inflammatory macrophages (anti-inflam Macs) (CD206+CD163−CD86midCD33+HLA-DR+, cluster 25) was also significantly decreased, whereas the frequency of pro-inflammatory macrophages (pro-inflam Macs) (CD206−CD163−CD38midCD107alowCD86midHLA-DRmidCD14+, cluster 23) was significantly increased in the PE group (Figure 3C, Table 4). However, the frequencies of macrophages and gMDSCs were unchanged significantly in the GDM or GDM&PE groups.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/100002/elife-100002-fig3-v1.jpg)
 
-**Figure 3.:** + cell subsets and the interaction between placental immune cells.(A) Distribution of the CD11b+ immune cells in group analyzed using t-Distributed Stochastic Neighbor Embedding (t-SNE). (B) Heatmap showing the expression levels of markers in the CD11b+ cells. (C) Scatter dot plots showing the frequencies of clusters 12, 23, and 25 of CD11b+ cells in the placentas. (D) Interaction between placental immune cells showed in heatmap. (E) Scatter plots of Pearson’s correlation analysis between placental immune cells. Data were compared between NP and PE, NP and GDM, and NP and GDM&PE using the Kruskal–Wallis test and represented as mean ± SEM (*p < 0.05, **p < 0.01, ***p < 0.001; NS, not significant).Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Distribution of the CD11b+ immune cells in group analyzed using t-Distributed Stochastic Neighbor Embedding (t-SNE). (B) Heatmap showing the expression levels of markers in the CD11b+ cells. (C) Scatter dot plots showing the frequencies of clusters 12, 23, and 25 of CD11b+ cells in the placentas. (D) Interaction between placental immune cells showed in heatmap. (E) Scatter plots of Pearson’s correlation analysis between placental immune cells. Data were compared between NP and PE, NP and GDM, and NP and GDM&PE using the Kruskal–Wallis test and represented as mean ± SEM (*p < 0.05, **p < 0.01, ***p < 0.001; NS, not significant).
 
 Pearson correlation analysis indicated positive correlations between pro-inflam Macs (cluster 23 in CD11b+ cells) and CD4+ memory-like T cells (cluster 8 of CD4+ T cells), as well as CD8+ memory-like T cells (cluster 2 in CD8+ T cells). CD206− pro-inflam Macs were negatively correlated with gMDSCs (cluster 12 in CD11b+ cells), but were not statistically significant. Conversely, CD206+ anti-inflam Macs (cluster 25 in CD11b+ cells) were positively correlated with gMDSCs and negatively correlated with CD8+ memory-like T cells (Figure 3D, E).
 
 These results suggested that abnormally polarized CD206− pro-inflam Macs are positively correlated with memory-like CD4+ and CD8+ T cells in the placentas of individuals with PE and negatively correlated with gMDSCs.
 
-## F4/80+CD206− pro-inflam Macs induced immune imbalance at the maternal–fetal interface and PE-like symptoms
+### F4/80+CD206− pro-inflam Macs induced immune imbalance at the maternal–fetal interface and PE-like symptoms
 
 Though increased pro-inflam Macs have been reported in the placenta from individuals with PE (Faas et al., 2014), few studies have reported the interaction between macrophages and other immune cells in the placenta. In this study, transcriptome RNA-seq was used to analyze the difference between CD45+F4/80+CD206− pro-inflam Macs and CD45+F4/80+CD206+ anti-inflam Mac isolated from the uterus and placentas of mice with reducing uterine perfusion pressure (RUPP) (Figure 4A). The diagrammatic representation of the RUPP model is presented in Figure 4—figure supplement 1A. To establish the PE mouse model, we ligated uterine arteries in pregnant mice on day 12.5 of gestation, and mice with sham operation were considered as controls (Figure 4—figure supplement 1A). We found that mice of RUPP showed an increased embryo absorption rate, decreased fetal weight, and pup crown-rump length compared with the sham operation group (Figure 4—figure supplement 1B). Increased systolic blood pressure (SBP) and urine albumin creatine ratio (UACR) were also observed in mice with RUPP, which indicated a successful PE mice mode was built (Figure 4—figure supplement 1C). Then, we injected the PE mice derived macrophages into normal pregnant mice. An increased embryo resorption rate, decreased fetal top-rump length and fetal weight were found in mice injected with PE mice derived macrophages compared with mice injected PBS (Figure 4—figure supplement 1D). Increased SBP and UACR were also found in mice injected with PE mice derived macrophages (Figure 4—figure supplement 1E).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/100002/elife-100002-fig4-v1.jpg)
+
+**Figure 4.:** (A) An illustration showcasing the RNA-seq of the CD45+F4/80+CD206− pro-inflam Macs and CD45+F4/80+CD206+ anti-inflam Macs derived from the RUPP mouse model. (B) Principal component analysis (PCA) reflected the differences between the two groups of macrophages (n = 3). (C) The volcano map shows a comparison of the content and p value of gene expression between pro-inflam and anti-inflam Macs. Differential expression genes were screened out when p < 0.05. Red dots indicate genes with increased expression in pro-inflam Macs. Blue dots indicate genes with decreased expression. (D) The volcano map shows differential expression genes between pro-inflam and anti-inflam Macs. (E) Representative pathways enriched in the identified genes as determined by gene set enrichment analysis (GSEA) (p-value <0.05). (F) Embryo abortion rate of the pregnant mice, body weight and crown-rump length of pups measured on day 18.5 of gestation. Black represents mice treated with DMSO (n = 8); gray represents mice treated with PLX3397 (n = 8); blue represents mice injected with CD45+F4/80+CD206+ anti-inflammatory macrophages (n = 8); red represents mice injected with CD45+F4/80+CD206− pro-inflammatory macrophages (n = 8). (G) Systolic blood pressure (SBP) and UACR of pregnant mice in the four groups. (H) Frequencies of CD44+CD4+IL-17A+ cells, CD44+CD8+ T cells, and CD11b+Ly6G+ granulocytes analyzed by flow cytometry. Data were compared between groups using the Kruskal–Wallis test and represented as mean ± SEM (*p < 0.05, **p < 0.01, ***p < 0.001). RNA transcriptome soure data are stored in Dryad Digital Repository, doi:10.5061/dryad.4qrfj6qn0.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100002/elife-100002-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Experimental design of mice model with PE by reducing uterine perfusion pressure (RUPP) on day 12.5 of gestation. Mice with sham operation were considered as controls. Systolic blood pressure (SBP) and urine albumin creatine ratio (UACR) were measured on days 12.5 and 16.5 of gestation, respectively. Mice were sacrificed on day 18.5 of gestation. (B) The embryo abortion rate of pregnant mice, body weight, and crown-rump length of pups measured on day 18.5 of gestation in the Sham and RUPP group. Embryo abortion rate = number of absorbed embryos/total number of embryos. Blue represents mice in the Sham group (n = 9); red represents mice in the RUPP group (n = 9). (C) SBP and UACR of pregnant mice in Sham and RUPP group. (D) The embryo abortion rate of pregnant mice, body weight, and crown-rump length of pups measured on day 18.5 of gestation in the mice injected with PBS or RUPP-derived macrophages. Embryo abortion rate = number of absorbed embryos/total number of embryos. Blue represents mice in the mice injected with PBS group (n = 6); red represents mice in the mice injected with RUPP-derived macrophages group (n = 6). (E) SBP and UACR of pregnant mice in PBS and RUPP-derived macrophages group. (F) Experimental design of GFP pregnant mice model. (G) Frequencies of GFP+CD11b+ fetal-derived macrophages and GFP−CD11b+ maternal-derived macrophages were analyzed by flow cytometry. Data were compared between the two groups using the Student’s t-test and represented as mean ± SEM (*p < 0.05, **p < 0.01, ***p < 0.001).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/100002/elife-100002-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Frequencies of F4/80+7AAD− macrophages in PLX3397-treated mouse were analyzed by flow cytometry. (B) Frequencies of F4/80+7AAD− macrophages in clodronate liposomes-treated mouse were analyzed by flow cytometry. (C) Embryo abortion rate of the pregnant mice, body weight and crown-rump length of pups measured on day 18.5 of gestation. Black represents mice treated with control liposomes (n = 6); gray represents mice treated with clodronate liposomes (n = 6); blue represents mice injected with CD45+F4/80+CD206+ anti-inflam Macs (n = 6); red represents mice injected with CD45+F4/80+CD206− pro-inflam Macs (n = 6). (D) Systolic blood pressure (SBP) and UACR of pregnant mice in the four groups. (E) Frequencies of CD44+CD4+IL-17A+ cells, CD44+CD8+ T cells, and CD11b+Gr1+ granulocytes analyzed by flow cytometry. Data were compared between groups using one-way ANOVA and represented as mean ± SEM (*p < 0.05, **p < 0.01, ***p < 0.001).
 
 In addition, the green fluorescent protein (GFP) pregnant mice were used to distinguish between maternal- and fetal-derived macrophages. The wild-type (WT) female mice were mated with either transgenic male mice, genetically modified to express GFP to generate either GFP-expressing pups (GFP+pups), or mated with WT male mice for control (Figure 4—figure supplement 1F). We found that the majority of macrophages in the uterus and placenta are of maternal origin (CD11b+GFP−). In contrast, fetal-derived macrophages (CD11b+GFP+) represent a mere fraction of the total macrophage population (Figure 4—figure supplement 1G). In light of these findings, we have incorporated mouse uterine tissues to isolate macrophages for subsequent experiments with enhanced effectiveness.
 
@@ -81,15 +1264,35 @@ Significant differences were found between the pro-inflam and anti-inflam macrop
 
 To further investigate the effect of the pro-inflam Macs in immune imbalance at the maternal–fetal interface, PLX3397, the inhibitor of CSF1R, which is needed for macrophage development, was used to deplete the macrophages of pregnant mice (Chen et al., 2023; Chen et al., 2022a; Figure 4—figure supplement 2A). As expected, an increased embryo resorption rate, decreased fetal top-rump length and fetal weight were found in mice injected with pro-inflam Macs (Figure 4F). Increased SBP and UACR were also found in mice injected with pro-inflam Macs (Figure 4G). Moreover, it is shown that CD44+ memory-like Th17 cells and memory-like CD8+ T cells increased while CD11b+Ly6G+ gMDSCs decreased in mice injected pro-inflam Macs compared with mice injected anti-inflam Macs, which validated our findings with CyTOF (Figure 4H). Clodronate liposomes were also used to deplete the macrophages of pregnant mice (Liu et al., 2022) before pro-inflam or anti-inflam Macs were injected into the mice. The same experimental results were obtained (Figure 4—figure supplement 2B–2E). In conclusion, the F4/80+CD206− pro-inflam Macs induced immune imbalance at the maternal–fetal interface and PE-like symptoms.
 
-## Pro-inflam and anti-inflam Macs subsets are phenotypically heterogeneous
+### Pro-inflam and anti-inflam Macs subsets are phenotypically heterogeneous
 
 To further explore the role that macrophages play in the immune imbalance at the maternal–fetal interface in PE, scRNA-seq was performed to analyze the CD45+ immune cells in the uterus and placenta from mice that were injected with pro-inflam or anti-inflam Macs from the uterus and placentas of RUPP mice. An unsupervised cluster detection algorithm (SEURAT) was applied and eight types of immune cells were detected by mostly distinguishable cell type-specific genes, including macrophages, monocytes, granulocytes, T/NK cells, B cells, DC-like cells, mast cells, and basophils (Figure 5A, B). Macrophages were further identified into 15 clusters defined by marker set signatures. Single-cell differential expression analysis was performed for each population and characteristic gene expression patterns were detected for clusters 0–14 to characterize the phenotypes of these subsets in detail (Figure 5C, Figure 5—figure supplement 1C). We found that the frequency of cluster 0 was significantly increased in mice injected with pro-inflam Macs, while the frequency of cluster 1 was significantly decreased (Figure 5D). We also found that cluster 0 highly expresses genes associated with fetal and tissue resident (Folr2) (Nalio Ramos et al., 2022; Thomas et al., 2021), complement system activation (C1qa, C1qb, and C1qc) (Chen et al., 2021), and inflammatory response (Ccl7 and Ccl8) (He et al., 2019; Wu et al., 2023); while cluster 1 highly expresses genes associated with tissue repair (Chil3, Slpi, and Fn1) (Jin et al., 2023; Nugteren and Samsom, 2021; Li et al., 2022b), blood vessel morphogenesis (Thbs1) (Che et al., 2021), and preventing oxidative stress (Gsr and Mgst1) (Coppo et al., 2022; Figure 5E). Changes in gene expression patterns of cluster 0 (pro-inflam Macs) and cluster 1 (anti-inflam Macs) were analyzed in mice injected the pro-inflam or anti-inflam Macs. We found that enriched GO terms in cluster 0 and cluster1 including ‘antigen processing and presentation of exogenous antigen’ and ‘inflammatory response’ in the pro-inflam Macs group (Figure 5F), in which high expression of genes such as CCL5, CCL8, CALR, IRF7, IL10, IFI44, IFI30, and OAS3 could be observed (Figure 5G). The control group showed elevated expression of MMP14, Chil3, EGR1, ATF3, and VASP (Figure 5G); and these genes were enriched in ‘vascular endothelial growth factor production’ and ‘tissue development’ (Figure 5F). These results were consistent with the transcriptome RNA sequencing results of macrophages.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/100002/elife-100002-fig5-v1.jpg)
+
+**Figure 5.:** (A) Uniform Manifold Approximation and Projection (UMAP) maps showing the eight types of mouse immune cells at the maternal–fetal interface. (B) Heatmap showing clustering analysis for markers distinguished different type of immune cells. (C) UMAP maps showing the 15 clusters of mouse macrophages was listed. (D) Bar graph showing the frequencies of clusters of macrophages in the two groups of mice was listed in the right panel. (E) UMAP maps showing the distribution of specific markers of clusters 0 and 1. (F) Dot plot depicting GO enrichment terms that were significantly enriched in the differentially expressed genes in clusters 0 and 1 from the pro-inflam Macs group and the control group. (G) Violin plot of specific differential gene expression in clusters 0 and 1 between the pro-inflam Macs and the control groups. Single-cell RNA transcriptome soure data are stored in Dryad Digital Repository, 10.5061/dryad.4qrfj6qn0.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100002/elife-100002-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heatmap showing clustering analysis for markers distinguished different clusters of macrophages.
+
 These data suggested that the CD45+F4/80+CD206− pro-inflam Macs with a Folr2+Ccl7+Ccl8+C1qa+C1qb+C1qc+ phenotype play an important role in the development of PE.
 
-## Pro-inflam Macs induced the memory-like Th17 cells, which was associated with the development and recurrence of PE
+### Pro-inflam Macs induced the memory-like Th17 cells, which was associated with the development and recurrence of PE
 
 We also analyzed the scRNA-seq data of uterine T/NK cells from mice that were injected with or without pro-inflam Macs. T/NK cells were further identified into 12 clusters defined by marker set signatures (Figure 6A, Figure 6—figure supplement 1A). We found that the frequency of cluster 0 was increased in mice injected with pro-inflam Macs, while the frequency of clusters 1 and 2 were significantly decreased (Figure 6B). In addition to genes associated with Th17 cells (IL-17a, IL17f, Rora, Il1r1, and TNF) (Hang et al., 2019; Leite et al., 2023), cluster 0 also exhibits high expression of genes associated with memory phenotype (Cxcr6, S100a4, and CD44) (Evrard et al., 2023; Bieberich et al., 2021), suggesting that cluster 0 was the memory-like Th17 cells (Figure 6C). Cluster 1 exhibited high expression of genes associated with immunoregulation (Lef1, Tcf7, and Ccr7) (Qiu and Du, 2022; Sekine et al., 2020); Cluster 2 exhibited high expression of genes associated with immunomodulation (Gata3, GITR, and CD28), suggesting that clusters 1 and 2 were T cells with immunomodulation function (Esensten et al., 2016; Pai et al., 2023; Figure 6—figure supplement 1B). Changes in gene expression patterns of cluster 0 (memory-like Th17 cells) were analyzed in the pro-inflam Macs and control groups. We found that in the pro-inflam Macs group, enriched GO terms including ‘positive regulation of response to external stimulus’ and ‘tumor necrosis factor production’ (Figure 6D), in which highly express genes such as TNFSF11, TNF, IL27RA, IGF1R, CD226, and LAMP1 (Figure 6E). The control group showed elevated expression of ASS1, EIF5, S100A9, CTLA4, S100A8, and CXCR4 (Figure 6E); these genes were enriched in GO terms including ‘regulation of programmed cell death’ and ‘cellular biosynthetic process’ (Figure 6D). In summary, the pro-inflam Macs induced memory-like Th17 cells, which were characterized by IL-17a+IL17f+Rora+Il1r1+TNF+Cxcr6+S100a4+CD44+.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/100002/elife-100002-fig6-v1.jpg)
+
+**Figure 6.:** (A) Uniform Manifold Approximation and Projection (UMAP) maps showing the 12 clusters of mouse T/NK cells was listed. Heatmap showing clustering analysis for markers distinguished 12 different clusters of T/NK cells. (B) Bar graph showing the frequencies of clusters of T/NK cells in the two groups of mice was listed in the down panel. (C) Dot plot depicting GO enrichment terms that were significantly enriched in the differentially expressed genes in cluster 0 from the pro-inflam Macs and the control groups. (D) Violin plot of specific differential gene expression in cluster 0 between the pro-inflam Macs and the control groups. (F) Frequencies of CD4+CD44+ T cells and the percentages of Foxp3+ or IL-17A+ cells in CD4+CD44+ T cells at the maternal–fetal interface in Sham and RUPP group analyzed by flow cytometry. (G) The embryo abortion rate of pregnant mice, body weight, and crown-rump length of pups measured on day 18.5 of gestation in mice injected PBS, Sham mouse-derived or RUPP mouse-derived CD4+CD44+ T cells. Black represents mice injected with PBS (n = 6); blue represents mice injected with Sham mouse-derived CD4+CD44+ T cells (n = 6); red represents mice injected with RUPP mouse-derived CD4+CD44+ T cells (n = 6). (H) Systolic blood pressure (SBP) and UACR of pregnant mice injected with PBS, Sham mouse-derived or RUPP mouse-derived CD4+CD44+ T cells. Data were compared between groups using one-way ANOVA and represented as mean ± SEM (*p < 0.05, **p < 0.01, ***p < 0.001). Data were compared between the two groups using the Student’s t-test and represented as mean ± SEM (*p < 0.05, **p < 0.01, ***p < 0.001).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/100002/elife-100002-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Heatmap showing clustering analysis for markers distinguished 12 different clusters of T/NK cells. (B) Dot plot depicting gene that were significantly enriched in the differentially expressed genes in cluster 1 and cluster 2. (C) Embryo abortion rate of pregnant mice, body weight and crown-rump length of pups measured on day 18.5 of gestation. Blue represents mice with previous normal pregnancy (n = 9); red represents mice with previous pregnancy with PE (n = 9). (D) Systolic blood pressure (SBP) and UACR of second pregnant mice with a history of PE or NP in the first pregnancy measured on day 16.5 of gestation. (E) Frequencies of CD4+ CD44+ T cells and the levels of IL-17A in CD4+ CD44+ T cells in mice with a pregnancy history with NP and PE analyzed by flow cytometry. Data were compared using the Student’s t-test and represented as mean ± SEM (*p < 0.05, **p < 0.01, ***p < 0.001; NS, not significant). Data were compared between the two groups using the Student’s t-test and represented as mean ± SEM (*p < 0.05, **p < 0.01, ***p < 0.001).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/100002/elife-100002-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Uniform Manifold Approximation and Projection (UMAP) maps showing the nine clusters of mouse granulocytes. Bar graph showing the frequencies of clusters of granulocytes in the two groups of mice. (B) Heatmap showing clustering analysis for markers distinguished nine different clusters of granulocytes cells. (C) UMAP maps showing the distribution of specific markers of cluster 3. (D) Dot plot depicting GO enrichment terms that were significantly enriched in the differentially expressed genes in cluster 3 from the pro-inflam Macs and the control groups. (E) Violin plot of specific differential gene expression in cluster 3 between the pro-inflam Macs and the control groups. (F) Immunofluorescence co-staining of CD15 (red), CD66b (green), and DAPI (blue) in frozen placental sections. Scale bar, 20 µm. Data were compared between the two groups using the Student’s t-test and represented as mean ± SEM (*p < 0.05).
 
 To confirm the importance of memory-like CD4+ T cells in the pathogenesis of PE, the CD4+CD44+ T cells in the uterus and placentas from RUPP or NP mice were sorted and intravenously injected into normal pregnant mice on day 12.5 of gestation (Figure 6F). The CD4+CD44+ T cells derived from RUPP mouse were characterized by an increased frequency of Th17 cells and a reduced frequency of Tregs (Figure 6F). Increased embryo absorption rate, decreased fetal weight and pup crown-rump length were found in mice injected with PE mouse-derived CD4+CD44+ T cells (Figure 6G). The PE-like symptoms, including increased SBP and UACR, were also observed in those mice (Figure 6H).
 
@@ -99,9 +1302,17 @@ The uterine granulocytes from mice that were transferred with pro-inflam Macs fr
 
 In conclusion, pro-inflam Macs could induced the differentiation of IL-17a+IL17f+Rora+Il1r1+TNF+Cxcr6+S100a4+CD44+ memory-like Th17 cells, which was associated with the development and recurrence of PE. And the pro-inflam Macs also suppressed the production of Ly6g+S100a8+Retnlg+Wfdc21+ gMDSCs.
 
-## Pro-inflam Macs induced the production of memory-like Th17 cells via IGF1–IGF1R
+### Pro-inflam Macs induced the production of memory-like Th17 cells via IGF1–IGF1R
 
 Our results above showed that pro-inflam Macs induced memory-like Th17 cells in PE, however, the underlying molecular mechanisms were still unknown. CellPhoneDB analysis indicated that increased communication counts and signaling pathways numbers between macrophages and T/NK cells were observed in mice injected with pro-inflam Macs (Figure 7—figure supplement 1A, B). Then we identified the interacting ligand–receptor pairs between different types of immune cells and macrophages. Insulin-like growth factor 1 (IGF1) receptor (IGF1R) ligand–receptor pair was significantly enhanced between macrophages and T/NK cells in mice injected with pro-inflam Macs (Figure 7A). IGF1 has significant effects on immune function maintenance, and signaling through IGF1R could cause increased aerobic glycolysis, favoring Th17 cell differentiation over that of Treg cells (Bekkering et al., 2018; DiToro et al., 2020). For further demonstration, we analyzed the frequencies of IGF1+CD14+ and IGF1R+CD4+ cells in placentas of individuals with PE and NP and found both of these two cells were significantly increased in the PE group (Figure 7B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/100002/elife-100002-fig7-v1.jpg)
+
+**Figure 7.:** (A) Signaling modules indicated by ligand–receptor pairing between macrophages and other types of immune cells at the maternal–fetal interface using CellPhoneDB. (B) Frequencies of IGF1+CD14+ and IGFIR+CD4+ cells in placentas of individuals with NP and PE (n = 12 in NP group, n = 4 in PE group). (C) Schematic of the experimental workﬂow to induce memory-like T cells in vitro. Macrophages, after incubating with PBS, NP-EVs or PE-EVs, were co-cultured with CD4+ naive T cells treated with DMSO or BMS-754807. Cells were isolated from human peripheral blood. (D) Frequencies of CD45RO+CCR7+Th17 cells. Black represents CD4+ naive T cells treated with DMSO; gray represents CD4+ naive T cells co-cultured with NP-EV-treated macrophages; blue represents CD4+ naive T cells co-cultured with PE-EV-treated macrophages; red represents CD4+ naive T cells treated with BMS-754807 before co-cultured with PE-EV-treated macrophages (n = 10 in each group). (E) Schematic of mice transferred CD4+ T cells treated with BMS-754807 or PBS. Anti-CD4 antibody was used to deplete CD4+ T cells in mice on day 10.5 of gestation. CD4+ T cells were transferred into mice on day 11.5 of gestation. 20 µg/kg lipopolysaccharide (LPS) was intraperitoneally injected on days 12.5 and 15.5 of gestation to induce a PE-like pregnant mice model. Mice were sacrificed on day 18.5 of gestation. (F) Embryo abortion rate of pregnant mice, body weight and crown-rump length of pups were measured on day 18.5 of gestation. Black represents the control group mice (n = 6); gray represents mice treated with LPS (20 μg/kg) to construct an animal model of PE (n = 6); blue represents anti-CD4 antibody treated PE mice (n = 6); red represents anti-CD4 antibody treated PE mice injected with CD4+ T cells with DMSO treatment (n = 7); orange represents anti-CD4 antibody treated PE mice injected with CD4+ T cells with BMS754807 treatment (n = 7). (G) Systolic blood pressure (SBP) and UACR of pregnant mice in the five groups. (H) The frequencies of CD4+ CD44+ IL-17A+ cells analyzed by flow cytometry. Data were compared between groups using one-way ANOVA and represented as mean ± SEM (*p < 0.05, **p < 0.01, ***p < 0.001).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/100002/elife-100002-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Abundance of connections between different cell types at the maternal–fetal interface analyzed by CellPhoneDB. (B) Capacities for interactions between immune cells are showed. Each line indicates the ligands expressed by the cell population represented by the same color (labeled). The lines connect to cell types that express cognate receptors. Line thickness is proportional to the number of ligands when cognate receptors are present in the recipient cell type.
 
 Trophoblast-derived extracellular vesicles from the placenta of PE (PE-EVs), which carry the fetal antigen, could induce M1-like macrophage (pro-inflammatory Macs) polarization to participate in the development of PE according to our previous study (Liu et al., 2022). To confirm whether pro-inflammatory Macs induced the production of memory-like Th17 cells via IGF1–IGF1R, macrophages from human peripheral blood, after incubating with PBS, trophoblast-derived extracellular vesicles from NP (NP-EVs) or PE-EVs in vitro, were co-cultured with CD4+ naive T cells (Figure 7C). The frequencies of memory-like CD45RO+ CCR7+ IL-17A+ CD4+ cells significantly increased in the PE-EV-induced macrophages group rather than in the NP-EV-induced macrophages group. However, the frequencies of memory-like Th17 cells significantly decreased after CD4+ naive T cells were treated with the IGF1R inhibitor BMS-754807 (Figure 7D).
 
@@ -131,25 +1342,113 @@ In summary, this study demonstrated the statistically distinguished placental im
 
 ## Materials and methods
 
-## Clinical sample collection
+### Clinical sample collection
 
 The samples used in this study were collected from Sir Run Run Shaw Hospital between October 2020 and August 2023. Informed consent was obtained from all volunteers, and the Ethics Committee of Sir Run Run Shaw Hospital, Zhejiang University School of Medicine, approved the study. Human placentas were obtained from women with NP, PE, GDM, or GDM&PE who underwent elective cesarean delivery. The diagnostic criteria for PE included new-onset hypertension after 20 weeks of gestation with SBP ≥140 mmHg and/or diastolic blood pressure ≥90 mmHg and proteinuria (≥300 mg) on at least two occasions. A positive glucose tolerance test diagnoses GDM. Women with normal blood pressure, full-term pregnancies, and no complications were designated as controls. The detailed clinical characteristics of the pregnant women in this study are presented in Tables 5 and 6.
 
-## Laboratory mice
+**Table 5.**
+ Details of the individual with NP or PE included in the study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>NP (n = 30)</th>
+      <th>PE (n = 30)</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>31.13 ± 2.9747</td>
+      <td>31.50 ± 4.1693</td>
+      <td>0.0741</td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2)</td>
+      <td>27.24 ± 2.8048</td>
+      <td>29.48 ± 3.9295</td>
+      <td>0.0155</td>
+    </tr>
+    <tr>
+      <td>Gestational age (weeks)</td>
+      <td>38.68 ± 0.6038</td>
+      <td>35.53 ± 3.29</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Number of living children</td>
+      <td>0.6000 ± 0.4900</td>
+      <td>0.4667 ± 0.6182</td>
+      <td>0.3665</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 6.**
+ Details of the individual with early- or late-onset preeclampsia included in the study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>Early-onset preeclampsia (n = 11)</th>
+      <th>Late-onset preeclampsia (n = 19)</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The gestational week when blood pressure begins to rise</td>
+      <td>28.82 ± 2.8220</td>
+      <td>36.05 ± 1.129</td>
+      <td>＜0.0001</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>32.45 ± 4.6768</td>
+      <td>32.36 ± 3.8472</td>
+      <td>0.9568</td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2)</td>
+      <td>29.64 ± 2.6840</td>
+      <td>28.71 ± 4.4506</td>
+      <td>0.5388</td>
+    </tr>
+    <tr>
+      <td>Gestational age (weeks)</td>
+      <td>33.45 ± 3.7887</td>
+      <td>36.77 ± 1.2171</td>
+      <td>0.0014</td>
+    </tr>
+    <tr>
+      <td>Number of living children</td>
+      <td>0.36 ± 0.5045</td>
+      <td>0.36 ± 0.4956</td>
+      <td>0.98</td>
+    </tr>
+  </tbody>
+</table>
+
+### Laboratory mice
 
 Eight-week-old female C57 mice and ten-week-old male BALB/c mice were purchased from Hangzhou Ziyuan Laboratory Animal Technology Co, Ltd (Hangzhou, China) and Shanghai Jihui Experimental Animal Breeding Co, Ltd (Shanghai, China), respectively. All animals were maintained under pathogen-free conditions. The Guide for the Care and Use of Laboratory Animals (China) conducted all experimental procedures involving animals, and the Animal Research Ethics Committee of the Sir Run Run Shaw Hospital of Zhejiang University approved the protocols.
 
 Female C57 mice were mated with male BALB/c mice to establish an allogeneic pregnancy 529 model (Rowe et al., 2012). The day of the vaginal plug detection was considered day 0.5 of 530 pregnancy. SBP was measured using a noninvasive mouse tailcuff BP analyzer (BP-2010A, 531 Softron, Japan) at 12.5, and 16.5 days of gestation. Three random urine samples were collected 532 after day 16.5 of gestation, and UACR was measured by urinary microalbumin (CH0101060, 533 Maccura, China). Mice were euthanized on day 18.5 of gestation.
 
-## Reduction in uterine perfusion pressure mouse model
+### Reduction in uterine perfusion pressure mouse model
 
 To construct a mouse model of PE, we ligated uterine arteries in pregnant mice on day 12.5 of gestation. Briefly, after 4% chloral hydrate was intraperitoneally injected for anesthesia, bilateral incisions were made on the back of the pregnant mice, and surgical sutures were used to reduce the blood flow of the bilateral uterine arcades.
 
-## Isolation of single cells from the mouse uterus and human placenta
+### Isolation of single cells from the mouse uterus and human placenta
 
 Uterus from pregnant mice and placentas from volunteers were washed twice with ice-cold PBS and cut into small pieces. The tissues were digested with collagenase type IV (1 mg/ml, Sigma-Aldrich, USA) and DNase I (0.01 mg/ml, Sigma-Aldrich, U.S.A) in RPMI 1640 medium (Thermo Fisher Scientific) for 40 min at 200 rpm and 37°C. The suspensions were strained through 70-μm nylon mesh and centrifuged at 500 × g for 5 min. Leaving the supernatants, the cell pellets from human placentas need an extra purification by Ficoll (P4350, Solarbio, China) according to the manufacturer’s instructions. Human CD4+ memory T cells were isolated using a Human Central and Effector Memory CD4+ T Cell Isolation Kit (17865, STEMCELL, Canada).
 
-## Adoptive transferred mouse model
+### Adoptive transferred mouse model
 
 Endogenous macrophages or CD4+ T cells were depleted by injecting PLX3397 (S7818, Selleck, USA), clodronate liposomes (40337ES08, YEASEN, China), or anti-CD4 antibody (BE0003-1, BioXcell, USA) intraperitoneally every 3 days starting from day 10.5 of gestation.
 
@@ -157,40 +1456,40 @@ For the adoptive transferred mouse model, phycoerythrin-conjugated anti-mouse CD
 
 2–5 × 105 CD45+CD4+ T cells from uterus and placentas of pregnant mice were sorted and transferred to pregnant C57 mice at day 11.5 of gestation after treating with 100nM BMS-754809 (HY10200; MedChemExpress; USA) or PBS for three days in vitro.
 
-## Mass cytometry by time of flight
+### Mass cytometry by time of flight
 
 Placental villi rather than chorionic plate and extraplacental membranes were used for CyTOF in this study. 8 × 105 immune cells from NP (n = 9), PE (n = 8), GDM (n = 8), and GDM&PE (n = 7) presented in Table 1 were washed once with 1× PBS and then stained with 100 μl of 2.5 μM cisplatin (Fluidigm) for 5 min on ice to exclude dead cells, and then incubated in Fc receptor blocking solution before stained with surface antibodies cocktail for 30 min on ice. Cells were washed twice with FACS buffer (1× PBS + 0.5% BSA) and fixed in 200 μl of intercalation solution (Maxpar Fix and Perm Buffer containing 250 nM 191/193Ir, Fluidigm) overnight. After fixation, cells were washed once with FACS buffer and then perm buffer (eBioscience), stained with intracellular antibodies cocktail for 30 min on ice. Cells were washed and resuspend with deionized water, adding into 20% EQ beads (Fluidigm), acquired on a mass cytometer (Helios, Fluidigm). Additionally, all PE samples enumerated in Table 1 demonstrate a late-onset PE, with placental specimens being procured from patients more than 35 weeks of gestation and less than the 38 weeks of pregnancy.
 
 As for data analysis, data of each sample were debarcoded from raw data using a doublet-filtering scheme with unique mass-tagged barcodes firstly. Each .fcs file generated from different batches were normalized through bead normalization method. Then we manually gate data using a FlowJo software to exclude to debris, dead cells and doublets, leaving live, single immune cells. Subsequently we applied the Phenograph clustering algorithm to all cells to partition the cells into distinct phenotypes based on marker expression levels. Cell type of each cluster according to its marker expression pattern on a heatmap of cluster vs marker was annotated. Finally, we used the dimensionality reduction algorithm t-SNE to visualize the high-dimensional data in two dimensions and show distribution of each cluster and marker expression and difference among each group or different sample type.
 
-## RNA sequencing
+### RNA sequencing
 
 5 × 105 CD45+F4/80+CD206− pro-inflam Macs (n = 3) and 5 × 105 CD45+F4/80+CD206+ anti-inflam Macs (n = 3) were isolated from the uterus and placentas of mice with RUPP and high throughput sequencing and bioinformatics analyses were conducted at Shenzhen Huada Gene Technology Service Co Ltd (Shenzhen, China). Only differential genes with more than twofold change and a corrected p value less than 0.05 were considered statistically significant.
 
-## Single-cell RNA sequencing
+### Single-cell RNA sequencing
 
 Mice were injected with 5 × 105 CD45+F4/80+CD206− pro-inflam Macs or 5 × 105 CD45+F4/80+CD206+ anti-inflam Macs at 12.5 days of gestation and euthanized on day 18.5 of gestation. CD45+ immune cells from the uterus and placenta were isolated from mice transferred pro-inflam and anti-inflam Macs. scRNA-seq was conducted at PLTTECH Service Co Ltd (Hangzhou, China).
 
 First, the outcomes of cellular high-throughput sequencing were preserved in the FASTQ file format, facilitating a rigorous evaluation of the raw data. Subsequently, the data underwent debarcoding, enabling its alignment with the reference genome to precisely identify and sieve effective cells. This process culminated in the construction of a comprehensive gene-barcode expression matrix. For the statistical analysis and visualization of gene expression levels and Unique Molecular Identifier counts, we leveraged the powerful Seurat software. Furthermore, we conducted a clustering analysis rooted in the gene-barcode expression matrix, utilizing Seurat’s capabilities in conjunction with principal component analysis for dimensionality reduction. This allowed us to scale down the clustering results and visually represent them in two dimensions using either Uniform Manifold Approximation and Projection or t-SNE. To gain deeper insights, we performed Marker genes analysis, which hinged on the clustering outcomes. This enabled us to pinpoint the genes that significantly distinguished each subgroup, thereby identifying their characteristic genes. Additionally, we analyzed and graphically represented the varying expression levels of these genes across different groups, providing a comprehensive understanding of their differences.
 
-## Isolation of NP-EVs and PE-EVs
+### Isolation of NP-EVs and PE-EVs
 
 NP-EVs and PE-EVs were isolated and identified using our published protocols (Jiang et al., 2021; Liu et al., 2022). Briefly, after digesting the placental tissues from NP or PE, the suspensions were filtered through 100-μm nylon mesh and centrifugated at 3000 × g for 15 min. Then the supernatants were filtered with a 0.22-μm filter and centrifuged at 100,000 × g for 1 hr at 4°C. Then the pellets of EVs were resuspended and centrifuged at 100,000 × g once again. A BCA assay kit conducted Protein quantitation of EVs (23235, Thermo Fisher Scientific). To isolate the T-EVs, 500 μg of the EVs were incubated with 1 µg placental alkaline phosphatase antibody (SC-47691, Santa Cruz Biotechnology) at 4°C overnight, then washed in the recommended buffer (PBS containing 2% exosome-free FBS and 1 mmol/l ethylenediaminetetraacetic acid), and centrifuged at 100,000 × g for 1 hr at 4°C. After resuspended, the total EVs were sorted by EasySep Mouse PE Positive Selection Kit II (17666, STEMCELL) to collect the final NP-EVs or PE-EVs.
 
-## Induction of CD4+ memory-like T cells
+### Induction of CD4+ memory-like T cells
 
 Macrophages were obtained after 5 days of culture of mononuclear cells isolated from human peripheral blood following previous protocols (Liu et al., 2022). NP-EVs or PE-EVs in a 50 μg/ml concentration were added to macrophages and co-cultured at 37°C for 8 hr. The human CD4+ naive T cells Isolation Kit (19555, STEMCELL, Canada) was used to isolate purified CD4+ naive T cells from human peripheral blood cells according to the manufacturer’s instructions. Then, CD4+ naive T cells were co-cultured with EV-treated macrophages for 6 days. Flow cytometry was performed to measure the frequency of memory-like Th17 cells. For animal experiments, CD4+ naive T cells sorted from the uterus and placentas of pregnant mice were cultured with the IGF1R inhibitor BMS-754807 at a concentration of 10 μM for 3 days before co-cultured with macrophages.
 
-## Flow cytometry
+### Flow cytometry
 
 Single immune cells from the mice uterus were obtained following the method described above. After incubation with Cell Stimulation Cocktail (00-4975-93, Invitrogen, USA) for 5 hr at 37°C, cells were collected and surface staining for either phycoerythrin-conjugated anti-mouse CD4 (12-0041-82, eBioscience, USA), APC-conjugated anti-mouse CD8 (100711, BioLegend, USA), phycoerythrin-Cy5.5-conjugated anti-mouse CD44 (45-0441-82, eBioscience, USA), APC-conjugated anti-mouse CD11b (101212, BioLegend, USA), FITC-conjugated anti-mouse Gr-1 (108406, BioLegend, USA), PE-Cyanine7-conjugated anti-mouse Ly6G (E-AB-F1108H, elabscience, China), or intracellular staining for 488-conjugated anti-mouse IL-17A (506910, BioLegend, USA) was performed according to the manufacturer’s instructions.
 
 Single placental and peripheral lymphocytes and were obtained following the method described in previous protocols (Liu et al., 2022). The Human Central and Effector Memory CD4+ T cell Isolation Kit (17865, STEMCELL, Canada) was used to obtain purified memory CD4+ T cells, according to the manufacturer’s instructions. After incubation with Cell Stimulation Cocktail (00-4975-93, Invitrogen, USA) for 5 hr at 37°C, cells were collected and surface staining for phycoerythrin-conjugated anti-human CD4 (2384240, eBioscience, USA), FITC-conjugated anti-human CD45RO (304204, BioLegend, USA), and phycoerythrin-Cy7-conjugated anti-human CCR7 (353227, BioLegend, USA) or intracellular staining for APC-conjugated anti-human IL-17A (17-7179-42, eBioscience, USA) and Foxp3 (320014, BioLegend, USA) was performed according to the manufacturer’s instructions.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Frozen sections of the placentas were permeabilized with PBS containing 0.5% Triton X-100 (PBST) for 20 min and incubated for 1 hr with a blocking buffer in PBST. The sections were then incubated with anti-CD4 (sc-1176, Santa Cruz Biotechnology, China) and FITC-conjugated anti-human CD45RO (304204, BioLegend, USA) at 4°C overnight, followed by Alexa Fluor 568-conjugated secondary antibodies (dilution: 1:200, Yeasen, China) for 1 hr. The slides were counterstained with 4,6-diamidino-2-phenylindole (DAPI, 1 μg/ml; Roche, Switzerland) for 20 min. Digital images were obtained using confocal fluorescence microscopy (ZEISS LSM 800, Germany). ImageJ software was used to quantify the fluorescence intensity from immunofluorescence images.
 
-## Statistical analysis
+### Statistical analysis
 
 All experiments in the main text and figures consist of at least three biological replicates. We define biological replicates as the performance of the same experiment on different biological individuals, samples, or cell. Data were analyzed using SPSS version 20. After the Shapiro–Wilk test, the data were confirmed to be non-normal distribution. Kruskal–Wallis test was used to compare the results of experiments with multiple groups. Student’s t-test was used to compare the results of experiments with two groups. All data are presented as mean ± SEM (*p < 0.05, **p < 0.01, ***p < 0.001; NS, not significant).

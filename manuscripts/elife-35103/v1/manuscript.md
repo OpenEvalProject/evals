@@ -36,7 +36,7 @@
 
 ## Abstract
 
-10.7554/eLife.35103.001 Urban agriculture is making an increasing contribution to food security in large cities around the world. The potential contribution of biodiversity to ecological intensification in urban agricultural systems has not been investigated. We present monitoring data collected from rice fields in 34 community farms in mega-urban Shanghai, China, from 2001 to 2015, and show that the presence of a border crop of soybeans and neighboring crops (maize, eggplant and Chinese cabbage), both without weed control, increased invertebrate predator abundance, decreased the abundance of pests and dependence on insecticides, and increased grain yield and economic profits. Two 2 year randomized experiments with the low and high diversity practices in the same locations confirmed these results. Our study shows that diversifying farming practices can make an important contribution to ecological intensification and the sustainable use of associated ecosystem services in an urban ecosystem.
+Urban agriculture is making an increasing contribution to food security in large cities around the world. The potential contribution of biodiversity to ecological intensification in urban agricultural systems has not been investigated. We present monitoring data collected from rice fields in 34 community farms in mega-urban Shanghai, China, from 2001 to 2015, and show that the presence of a border crop of soybeans and neighboring crops (maize, eggplant and Chinese cabbage), both without weed control, increased invertebrate predator abundance, decreased the abundance of pests and dependence on insecticides, and increased grain yield and economic profits. Two 2 year randomized experiments with the low and high diversity practices in the same locations confirmed these results. Our study shows that diversifying farming practices can make an important contribution to ecological intensification and the sustainable use of associated ecosystem services in an urban ecosystem.
 
 ## Introduction
 
@@ -56,27 +56,25 @@ To test our hypothesis, we analyzed monitoring data collected from 34 community 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/35103/elife-35103-fig1-v1.jpg)
 
-**Figure 1.:** 10.7554/eLife.35103.003Figure 1—source data 1. 10.7554/eLife.35103.004Figure 1—source data 2.The crosses indicate, for each insecticide, when they were used.
-
 The abundances of the three main rice pests, which have resulted in major crop losses since the late 1990 s, were monitored. The abundance of pink rice borer (Sesamia inferens) and rice brown planthopper (Nilaparvata lugens) in rice fields were evaluated with trapping lamps, and abundance of rice leaf roller (Cnaphalocrocis medinalis) was estimated with field surveys. We also estimated the densities of the main predators of these pests in the rice fields and in the border and neighboring crops of the diversified farms, monitored pesticide use and grain yield, and conducted a continuous economic cost–benefit analysis on both farm types. Complete monitoring data for rice pests, pesticide use and grain yield on these farms started in 2001, and monitoring of predators began at the beginning of 2007. Since the diverse and mono-rice farms were located in different areas of the city, group members from the Shanghai Academy of Agricultural Sciences supplemented the monitoring data with two controlled experiments, in which both treatments were performed at two locations over two years in a complete random design.
 
 ## Results
 
-## Occurrence of rice pests
+### Occurrence of rice pests
 
 For all three pest groups, there were no significant interactions between farm type and year (pink rice borer: LR [Likelihood Ratio]=18.617, p=0.338; rice plant-hopper: LR = 12.772, p=0.684; leaf roller: LR = 7.600, p=0.952). Therefore, we analyzed the effects of plant-diversified versus mono-rice farms with main-effects models with only farm type and year as predictors. The main-effects models showed that the abundances of pink rice borer, rice plant-hopper and leaf roller were significantly lower on plant-diversified farms (pink rice borer: LR = 13.864, p=0.002; rice plant-hopper: LR = 10.361, p=0.004; leaf roller: LR = 12.827, p=0.001). The percent decrease in mean pest abundance on the plant-diversified farms varied from year to year over the 15 year study period (pink rice borer: mean percent decrease = 28.8, SD [standard deviation]=9.9, range = 16.3–47.0, IQR [interquartile range]=20.8–34.5; rice brown plant-hopper: mean percent decrease = 32.3, SD = 17.2, range = 16.8–85.5, IQR = 24.2–30.4; rice leaf rollers: mean percent decrease = 20.0, SD = 6.7, range = 9.0–33.8, IQR = 15.6–24.0) (Figure 2; Figure 2—source datas 1–3).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/35103/elife-35103-fig2-v1.jpg)
 
-**Figure 2.:** (A) and (B) Pink rice borer; (C) and (D) Rice brown planthopper; (E) and (F) Rice leaf roller. The blue and red lines (in Figure 6A, C and E) indicate the plant-diversified and mono-rice farms, respectively. Vertical bars on each point denote SE. From 2001 to 2015, the number of trapped pink rice borers and rice brown planthoppers, and the population densities of rice leaf rollers were monitored from 10 April to 30 September, 11 May to 30 September, and 11 June to 20 September, respectively. 10.7554/eLife.35103.006Figure 2—source data 1. 10.7554/eLife.35103.007Figure 2—source data 2. 10.7554/eLife.35103.008Figure 2—source data 3. 10.7554/eLife.35103.009Figure 2—source data 4.‘/' denotes that there is no Economic Injury Level for rice leaf roller in grain-filling stage of rice.
+**Figure 2.:** (A) and (B) Pink rice borer; (C) and (D) Rice brown planthopper; (E) and (F) Rice leaf roller. The blue and red lines (in Figure 6A, C and E) indicate the plant-diversified and mono-rice farms, respectively. Vertical bars on each point denote SE. From 2001 to 2015, the number of trapped pink rice borers and rice brown planthoppers, and the population densities of rice leaf rollers were monitored from 10 April to 30 September, 11 May to 30 September, and 11 June to 20 September, respectively.
 
-## Abundance of predators
+### Abundance of predators
 
 For predator abundance (ladybird beetles, lacewings and spiders), there was no significant interaction between farm type and year (LR = 6.150, p=0.740). The main-effects model (with farm type and year as predictors) showed that plant-diversified farms had significantly higher predator abundance than mono-rice farms throughout 2007–2015 (LR = 37.002, p=0.001). From 2007 to 2015, annual average abundance of pests' predators observed during all the four stages of rice development was 22.6% (±3.0% [SE]; range 8.3–32.0%) higher on plant-diversified than on mono-rice farms (Figure 3; Figure 3—source data 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/35103/elife-35103-fig3-v1.jpg)
 
-**Figure 3.:** Abundance of predators in the rice fields was sampled at an interval of 15–20 days (with minor variation due to weather conditions) from seedling stage to grain stage from 2007 to 2015. Vertical bars on each point denote SE. 10.7554/eLife.35103.011Figure 3—source data 1.
+**Figure 3.:** Abundance of predators in the rice fields was sampled at an interval of 15–20 days (with minor variation due to weather conditions) from seedling stage to grain stage from 2007 to 2015. Vertical bars on each point denote SE.
 
 From 2007 to 2014, abundances of these predators in the soybean border crop ranged from 69.4 (±11.6) to 127.4 (±19.9) individuals per 100 plants, and in the neighboring crops it ranged from 121.0 (±27.6) to 153.6 (±26.6) individuals per 100 plants in maize, 101.3 (±21.3) to 117.3 (±22.5) individuals per 100 plants in eggplant, and 39.4 (±6.2) to 46.0 (±5.2) individuals per 100 plants in Chinese cabbage (Figure 4A). Annual average abundances of predators in soybean, maize, eggplant and Chinese cabbage were 92.4 (±7.1), 141.9 (±5.7), 107.3 (±2.9) and 43.1 (±1.3) individuals per 100 plants, respectively (Figure 4B).
 
@@ -84,21 +82,29 @@ From 2007 to 2014, abundances of these predators in the soybean border crop rang
 
 **Figure 4.:** (A) Predator abundance in different years; and (B) Predator abundance on four crops (soybean, maize, eggplant and Chinese cabbage). Abundance of predators (ladybird beetles, lacewings and spiders) were monitored in soybeans from 2007 to 2014 and in neighboring crops (maize, eggplant and Chinese cabbage) during 2009–2011 and 2013–2014. Vertical bars on each point denote SE.
 
-## Insecticide use
+### Insecticide use
 
 There were significant interactions between farm type and year for the number and amount of insecticide sprays (number: LR = 56.395, p=0.001, amount of commercial insecticide: LR = 96.67, p=0.001; amount of active ingredient insecticide: LR = 307.33, p<0.001), so interactions were included in the statistical models. In the first two years (2001 and 2002), the number of insecticide sprays and the amount of insecticide sprays did not decrease on the plant-diversified farms, but in the following 13 years (2003–2015), there were significant decreases (number of insecticide sprays: mean percent decrease = 16.8, SD = 4.9, range = 11.8–26.2, IQR = 13.0–18.9; amount of commercial insecticide sprays: mean percent decrease = 18.5, SD = 4.1, range = 10.1–25.4, IQR = 17.3–21.2; amount of active ingredient insecticide sprays: mean percent decrease = 27.1, SD = 17.2, range = 5.0–66.2, IQR = 18.2–27.3) (Figure 5A–B; Figure 5—source datas 1–2).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/35103/elife-35103-fig5-v1.jpg)
 
-**Figure 5.:** (A) Number of insecticide sprays; (B) Amount of commercial insecticide sprayed (kg•ha−1); (C) Amount of active ingredient in insecticide sprayed (kg•ha−1); and (D) Grain yield (t•ha−1). Vertical bars on each point denote SE. 10.7554/eLife.35103.014Figure 5—source data 1.−1) from the 15 year monitoring data, stratified by year and farm type. 10.7554/eLife.35103.015Figure 5—source data 2. 10.7554/eLife.35103.016Figure 5—source data 3.All data are mean values from 2001 to 2015; average grain price is 2.163 RMB per kilogram, and average soybean price is 3.873 RMB per kilogram; about 3% of one-hectare rice field was taken by soybeans in the field ridge, and soybean yield is about 25.0 kilograms per hectare rice field. Means ± SE. 10.7554/eLife.35103.017Figure 5—source data 4.−1) from the 15 year monitoring data, stratified by year and farm type.
+**Figure 5.:** (A) Number of insecticide sprays; (B) Amount of commercial insecticide sprayed (kg•ha−1); (C) Amount of active ingredient in insecticide sprayed (kg•ha−1); and (D) Grain yield (t•ha−1). Vertical bars on each point denote SE.
 
-## Grain yield and economic cost–benefit analysis
+### Grain yield and economic cost–benefit analysis
 
 Monitoring data for each year showed that plant-diversified farming generally had higher grain yield (Figure 5C). The farm type × year interaction effect for grain yield was marginally significant (LR = 27.214, p=0.058). According to the main-effects model with only farm type and year as predictors, the farm type effect was not significant (LR = 0.0005, p=0.991). The economic cost–benefit analysis showed that the plant-diversified farming generated a net advantage of 576 (±116) RMB per hectare per year, which was 3.48% (±0.79%) higher than the mono-rice farms (Figure 5—source datas 3–4).
 
-## Common-location experiments
+### Common-location experiments
 
 For the abundances of the three pest groups and the predators in the common-location experiments, the statistical models indicated that plant-diversified fields had significantly lower abundance of stem borer (LR = 7.343, p=0.043), and marginally significant lower abundance of rice plant-hopper and leaf roller (rice plant-hopper: LR = 6.946, p=0.066; leaf roller: LR = 5.792, p=0.084). The increase in predator abundance was also marginally significant (LR = 7.545, p=0.069). Averaged over both experiments, the numbers of the three pest groups all decreased during the four years (stem borer: mean percent decrease = 15.6, SD = 2.9, range = 12.4–18.8, IQR = 13.6–17.5; rice plant-hopper: mean percent decrease = 16.7, SD = 1.6, range = 15.2–18.8, IQR = 15.5–17.5; leaf roller: mean percent decrease = 16.0, SD = 3.2, range = 12.3–18.7, IQR = 13.9–18.5) (Figure 6A–C), and the abundances of their predators increased on the plant-diversified fields (mean percent increase = 12.7, SD = 2.6, range = 8.8–14.8, IQR = 12.2–14.0) (Figure 6D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/35103/elife-35103-fig6-v1.jpg)
+
+**Figure 6.:** (A) Density of rice plant-hoppers sampled in rice field plots; (B) Density of rice stem borers sampled in rice field plots; (C) Density of rice leaf rollers sampled in rice field plots; (D) Density of the predators (ladybird beetles, lacewings and spiders) sampled in rice field plots; (E) Amount of insecticide sprays per rice field plot (kg•ha−1); and (F) Grain yield per rice field (t•ha−1). Vertical bars denote SE.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/35103/elife-35103-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Vertical bars denote SE.
 
 Significantly less insecticide was applied on the plant-diversified fields in the common-location experiments (LR = 7.818, p=0.048), and these had marginally significantly higher grain yield (LR = 6.691, p=0.054). Insecticides were applied at rate of 5.25 (±0.20)–7.16 (±0.15) kg•ha−1 on the plant-diversified rice fields, which was, on average, 14.21% lower than the controls over the four years (SD = 4.07, range = 9.38–18.90, IQR = 11.94–16.65) (Figure 6E). Plant-diversified rice fields produced grain yields of 8.47 (±0.07)–8.73 (±0.05) t•ha−1, which was on average 2.26% higher than the controls (SD = 0.28, range = 1.88–2.53, IQR = 2.13–2.45) (Figure 6F).
 
@@ -142,7 +148,7 @@ Our results on pests and pesticide application resulting from the introduction o
 
 ## Materials and methods
 
-## Monitoring sites
+### Monitoring sites
 
 In this study, all community farms are located in nine districts in the suburban areas of Shanghai, China, belonging to alluvial plains of the Yangtze River Delta (Figure 1). All sites are in the same geographic and climatic region (East Asian monsoon zone, with four distinctive seasons). Southeast winds prevail in summer, producing hot, rainy weather, while southerly winds dominate in winter, causing winter monsoons.
 
@@ -160,7 +166,7 @@ On all community farms, the hybridized rice varieties were cultivated and agrono
 
 **Figure 12.:** On each farm, the rice growing area was divided into nine paddy plots, which were 60–70 × 25–35 m on each plot. Three to six rice field plots of 0.120–0.167 hectares were selected in each community farm to measure the grain yield each year. The rice plants at harvest stage (‘Z’-style sampling with 10, one square meter subplots in each plot) were mowed and threshed, and the grain yield per unit area was obtained. ‘×' and black solid dots denoted rice, and 1 m2 sampling areas for rice grain yield, respectively. The interval between two adjacent black solid dots was about five meters.
 
-## Monitoring and sampling methods
+### Monitoring and sampling methods
 
 Insect trapping lamps (Jiaduo Company Limited, Henan Province, China) were installed on the periphery of 9 paddy plots of each community farm to estimate the abundance of the main herbivore pests (pink rice borer, rice brown planthopper, etc.). Lamps attracted the pests, which fell into cloth bags or cylindrical iron buckets below the lamp, and then the workers on each farm identified the species and counted the pests every day. Each lamp tube was hung 1.5 m above the ground and was automatically turned on at 6:00 p.m. and turned off at 5:00 a.m. from early April to late October (Wan et al., 2016a). From 2001 to 2015, we monitored the number of trapped pink rice borers and rice brown planthoppers from 10 April to 30 September and from 11 May to 30 September, respectively, as this was when they occurred in the rice fields.
 
@@ -170,7 +176,7 @@ Monitoring is very labor intensive, so the abundance of the three major generali
 
 The population dynamics of the three major generalist predator groups (ladybird beetles, lacewings and spiders) was evaluated approximately every 15 days from middle/late June to early October in the border crop of soybeans on 4–6 plant-diversified farms from 2007 to 2014, and in the three main neighboring crops (maize, eggplant and Chinese cabbage) in 2009–2011 and 2013–2014, giving seven sampling dates each year for the predators in border and neighboring crops. At each sampling date, a subplot of 20 adjacent plants at five randomly selected locations were visually investigated and all predators counted and recorded (Lu et al., 2012).
 
-## Common-location experiments
+### Common-location experiments
 
 Because the mono-rice and diversified farms in the 15 year study were located in different suburban areas of Shanghai, we also performed two more highly controlled 2 year experiments in which both treatments were performed at the same locations. One experiment was conducted in Xinchang Town, Pudong district (121°38’E, 31°01’N), in 2009 and 2010 and the other in Sanxing Town, Chongming district, (121°17’E, 31°44’N) in 2013 and 2014. For each site, the experiment was a randomized block design with three replicate blocks. Each block contained two plots — one for plant-diversified farming and the other for mono-rice farming (50–55 × 30–35 m plot size in Xinchang, and 55–60 × 35–40 m in Sanxing) (Figure 13). In early-to-middle May of each year, a border crop (soybean) was planted on the earth banks around the plots of the diversified cropping treatments. In the periphery of each rice field plot of the diversified cropping treatments, a neighboring crop (maize) was interplanted in early June on the 1.5–2.0 m-wide bare soil border around soybeans. Blocks were spaced more than 100 m apart, and adjacent plots in each block were separated by a > 50 m wide buffer zone consisting of a rice field that was managed according to normal pest management, which was identical in all control treatments.
 
@@ -186,7 +192,7 @@ The pests and predators in each plot of rice fields were scouted and sampled at 
 
 The abundance of the three major generalist predator groups (ladybird beetles, lacewings and spiders) was surveyed about every 10 days in the border crop of soybean and in the neighboring crop of maize from middle-to-late June to late September in 2009 and 2010 in Xinchang, and in 2013 and 2014 in Sanxing, with ten sampling dates each year for the predators in soybean and maize plants in each plot in the plant-diversified field block. At each sampling date, 100 plants from five randomly-selected subplots of 20 adjacent plants were visually investigated and all predators were counted and recorded.
 
-## Data analysis
+### Data analysis
 
 The monitoring studies involved 34 farms belonging to 9 districts of Shanghai, and each farm had longitudinal repeated measurements across the 15 year study period. Due to the longitudinal nature of the data, we used mixed-effects models, a widely adopted method for analyzing data with repeated measurements (Bolker et al., 2009), to analyze the effects of the community farm types (plant-diversified vs. mono-rice farms) on the following eight response variables: numbers of pink rice borers and rice brown plant-hoppers trapped in the lamp, the population density of rice leaf roller observed in rice fields, the abundance of predators observed in the rice fields, the number of insecticide sprays, the amount of commercial and active ingredient insecticide sprayed, and grain yield. For predator abundance in the rice fields, the data used for analysis involved measurements from 6 to 10 mono-rice farms and 3–6 diversified-farms collected from 2007 to 2015. For the other seven outcome variables from 2001 to 2015, measurements for plant-diversified farming practices were obtained from the six community farms within Chongming district, and measurements from the 28 mono-rice farms were averaged at the eight district levels except for Chongming district (resulting in eight averaged measurements for mono-rice farming and six measurements for plant-diversified farming, collected annually across the 15 year monitoring period).
 
@@ -198,6 +204,6 @@ Parametric bootstrap tests with 2500 bootstrap samples were used for significanc
 
 An economic cost–benefit analysis was conducted according to Gurr et al. (2016), in which we considered the insecticide material costs in each treatment, the cost of seeds used to establish border and neighboring crops in the plant-diversified farming treatment. The analysis also reflected a labor cost for spraying insecticides, planting and soybean harvesting. The benefit was focused on the value of grain yield and the soybeans harvested on paddy field ridges. Other material inputs and labor costs were not included, as these were not consistent across treatments. The grain and soybean price per kilogram and the labor force was based on the average price in Shanghai each year. The economic costs of biodiversity loss, environmental pollution and human health caused by the negative effects of pesticides could not be included.
 
-## Power analyses
+### Power analyses
 
 For the common-location experiment data analysis, simulation-based power analyses were performed for marginally significant responses to farm type at the standard significance level of 0.05 for the abundances of rice plant-hoppers, leaf rollers and predators and for grain yield. Using the estimated effect size from the fitted mixed-effects model, the statistical power was estimated for number of experimental sites from 2 to 8, number of years from 2 to 8, and number of replicates within each farm type-site-year combination from 3 to 38. Statistical power was estimated based on 200 simulations. The target statistical power was 80%, and the R package ‘SIMR’ (Green and MacLeod, 2016) was used for power analyses. Due to the costs and manpower required, additional replication of the common-location experiments was not possible.

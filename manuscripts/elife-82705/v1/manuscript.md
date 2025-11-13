@@ -38,22 +38,22 @@
 
 ### Affiliations
 
-1. https://ror.org/011ashp19 Department of Oto-Rhino-Laryngology, and National Clinical Research Center for Geriatrics, West China Hospital, West China Medical School, Sichuan University Chengdu China
-2. https://ror.org/011ashp19 Institute of Clinical Pathology, West China Hospital, Sichuan University Chengdu China
-3. https://ror.org/011ashp19 Research Core Facility of West China Hospital, Sichuan University Chengdu China
-4. https://ror.org/011ashp19 West China Biomedical Big Data Center, West China Hospital, Sichuan University Chengdu China
-5. https://ror.org/03dbr7087 Department of Radiation Oncology, Princess Margaret Cancer Centre, University of Toronto Toronto Canada
-6. https://ror.org/011ashp19 Department of Biotherapy and National Clinical Research Center for Geriatrics, Cancer Center, West China Hospital, Sichuan University Chengdu China
+1. Department of Oto-Rhino-Laryngology, and National Clinical Research Center for Geriatrics, West China Hospital, West China Medical School, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+2. Institute of Clinical Pathology, West China Hospital, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+3. Research Core Facility of West China Hospital, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+4. West China Biomedical Big Data Center, West China Hospital, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+5. Department of Radiation Oncology, Princess Margaret Cancer Centre, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+6. Department of Biotherapy and National Clinical Research Center for Geriatrics, Cancer Center, West China Hospital, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
 7. MinSheng Ear-Nose-Throat Hospital Chengdu China
-8. https://ror.org/011ashp19 Department of Laboratory Medicine, West China Hospital, Sichuan University Chengdu China
-9. https://ror.org/03zayce58 Department of Biostatistics, Princess Margaret Cancer Centre and Dalla Lana School of Public Health Toronto Canada
-10. https://ror.org/03dbr7087 Department of Medicine, Division of Medical Oncology and Hematology, Princess Margaret Cancer Center, University Health Network, University of Toronto Toronto Canada
+8. Department of Laboratory Medicine, West China Hospital, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+9. Department of Biostatistics, Princess Margaret Cancer Centre and Dalla Lana School of Public Health Toronto Canada ([ROR:03zayce58](https://ror.org/03zayce58))
+10. Department of Medicine, Division of Medical Oncology and Hematology, Princess Margaret Cancer Center, University Health Network, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
 
 † Corresponding author
 
 ## Abstract
 
-The survival prognosis of human papillomavirus (HPV)-positive and HPV-negative head and neck squamous cell carcinoma (HNSCC) is largely different, and little is known about the anti-tumor mechanism of tumor-infiltrated exhausted CD8 + T cells (Tex) in HNSCC. We performed cell-level multi-omics sequencing on human HNSCC samples to decipher the multi-dimensional characteristics of Tex cells. A proliferative exhausted CD8 + T cell cluster (P-Tex) which was beneficial to survival outcomes of patients with HPV-positive HNSCC was identified. Interestingly, P-Tex cells expressed CDK4 genes as high as cancer cells, which could be simultaneously inhibited by CDK4 inhibitors and might be a potential reason for the ineffectiveness of CDK4 inhibitors in treating HPV-positive HNSCC. P-Tex cells could aggregate in the antigen-presenting cell niches and activate certain signaling pathways. Together, our findings suggest a promising role for P-Tex cells in the prognosis of patients with HPV-positive HNSCC by providing modest but persistent anti-tumor effects.
+The survival prognosis of human papillomavirus (HPV)-positive and HPV-negative head and neck squamous cell carcinoma (HNSCC) is largely different, and little is known about the anti-tumor mechanism of tumor-infiltrated exhausted CD8+ T cells (Tex) in HNSCC. We performed cell-level multi-omics sequencing on human HNSCC samples to decipher the multi-dimensional characteristics of Tex cells. A proliferative exhausted CD8+ T cell cluster (P-Tex) which was beneficial to survival outcomes of patients with HPV-positive HNSCC was identified. Interestingly, P-Tex cells expressed CDK4 genes as high as cancer cells, which could be simultaneously inhibited by CDK4 inhibitors and might be a potential reason for the ineffectiveness of CDK4 inhibitors in treating HPV-positive HNSCC. P-Tex cells could aggregate in the antigen-presenting cell niches and activate certain signaling pathways. Together, our findings suggest a promising role for P-Tex cells in the prognosis of patients with HPV-positive HNSCC by providing modest but persistent anti-tumor effects.
 
 ## Introduction
 
@@ -69,9 +69,17 @@ To address these questions, we applied cell-level multi-omics sequencing techniq
 
 ## Results
 
-## P-Tex cells were identified in the transcriptomic landscape of T cells in HNSCC patients
+### P-Tex cells were identified in the transcriptomic landscape of T cells in HNSCC patients
 
 To decipher the multi-dimensional characterization of tumor-infiltrating T cells in human HNSCC, we integrated multi-omics sequencing based on 5’ droplet-based single-cell RNA (scRNA-seq), single-cell TCR sequencing (scTCR-seq), and spatial transcriptomics in HNSCC samples (mainly oropharyngeal cell carcinoma, the most representative type of HPV-related HNSCC), and further verified in vitro (n=24, Supplementary file 1 and Figure 1a). A total of 49,813 CD3+ T cells in 14 paired HNSCC tumor and normal adjacent samples were obtained after quality control. And 11 T cell clusters with distinct gene signatures were defined (Figure 1b, Supplementary file 2), including four CD8+ T cell clusters (C1, C4, C7, and C9), five CD4+ T cell clusters (C2: naïve CD4+ T cells, C3: regulatory T cells [Treg], C5: T helper cells, C8: CD4-Tex, and C10: T follicular helper cells), one γδ T cell cluster (C6), and one double negative T cell cluster (C0: DN, CD4-CD8-), with marker genes (Brummelman et al., 2018) shown in Supplementary file 3.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/82705/elife-82705-fig1-v1.jpg)
+
+**Figure 1.:** (a) The flow chart of this study. (b) Uniform manifold approximation and projection (UMAP) plot of all single T cells from 14 samples via 10× Genomics. Eleven T cell clusters with different functions are identified. (c) Dotplot of selected T cell function-associated genes across different T cell clusters, showing both gene expression level (the color gradient) and the percentage of cells (the size of circle) in a given cluster. (d) Pie charts of cell-type fractions identified in cancer and normal adjacent tissues, colored by cell types. (e) The kernel density estimation plot showing the distribution of MKI67 and CDK4 genes of T cells. (f) The gene expression levels of CDK4 and MKI67 shown by violin plots. (g) Heatmap of the transcriptional regulators of top expressed genes in each T cell clusters.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82705/elife-82705-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) The distribution of T cells in cancer and adjacent normal tissues in uniform manifold approximation and projection (UMAP) plots. (b) The distribution of T cells in each patient in UMAP plots. (c) The distribution of cell proportions in each sample.
 
 We specifically characterized marker genes of CD8+ T cell into several panels based on their canonical biological function (proliferation, exhaustion, and cytotoxicity, shown in Figure 1c). Among the four CD8+ T cell clusters, C1 was characterized by expressing multiple effector genes, including NKG7, GZMH, IFNG, and KLRG1, with a high cytotoxicity score but a low exhaustion score, thus representing effective CD8+ T cell (Teff) (Galletti et al., 2020). C4 showed high expression of checkpoint marker genes, including PDCD1, HAVCR2, LAG3, and TNFRSF9, with both high cytotoxicity and exhaustion scores, which was consistent with the cell identity of terminally differentiated exhausted CD8+ T cells (T-Tex) (Wherry and Kurachi, 2015). Notably, in addition to high expression of the above-mentioned checkpoint marker genes, C7 and C9 also displayed high expression levels of cell cycle-related genes, including CCNA2, UBE2C, and CDK4, as well as stem-like genes MKI67 (marker gene of proliferation) and ASPM (involved in regulation of the mitotic spindle and coordination of mitotic processes), with high cytotoxicity, exhaustion, and proliferation genes, featuring a gene expression profile reminiscent of a previously reported Tex subset with high proliferative capacity (Wagle et al., 2021), which we defined as P-Tex in the present study.
 
@@ -81,13 +89,13 @@ Notably, the P-Tex cluster (~2819 cells) could be further partitioned into two s
 
 Taken together, our clustering strategy generated 11 distinct T cell clusters in HNSCC, among which P-Tex cells with both exhausted and proliferative phenotypes were identified.
 
-## Functional characteristics of P-Texs
+### Functional characteristics of P-Texs
 
 To further investigate the functional characteristics of P-Tex cells, we characterized the function of marker genes by comparing with Teff and T-Tex clusters. Specifically, gene ontology (GO) enrichment analysis showed that T cell activation, lymphocyte differentiation, and viral gene expression were enriched in all three Tex cell clusters, whereas the regulation of the cell cycle, apoptosis, and certain immune responses were enriched in P-Texs, showing divergent functional specialization (Figure 2a). Meanwhile, the activation states of CD8+ T cell subpopulations were quantitatively assessed based on the average expression of previously described activation-related gene signatures (Azizi et al., 2018) (also shown in Supplementary file 3). Our results showed that the T-Tex cluster was the most activated, followed by the two P-Tex clusters (Figure 2b, left). In addition, CD8+ T cells in tumor tissues were more activated than those in adjacent normal tissues (Figure 2b, right top). And no significant difference in T cell activation states was observed between HPV-positive and HPV-negative samples (Figure 2b, right bottom).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/82705/elife-82705-fig2-v1.jpg)
 
-**Figure 2.:** + T cell clusters.(a) Gene ontology (GO) analysis of differentially expressed genes in each CD8+ T cell clusters, colored by cell types. (b) The T cell activation score of each CD8+ T cell clusters. T cell activation score defined as the averaged expression of genes in the activation signature in Supplementary file 3. Statistics were assessed by Dunn's tests. (c) The gene set enrichment analysis (GSEA) diagrams show the enrichment profiles of cell cycle pathway in each CD8+ T cell clusters. (d–f) The distribution and scores of cell cycle phases of each CD8+ T cells. (g) The proliferation, exhaustion, and cytotoxic scores of each CD8+ T cell clusters. Proliferation score: averaged expression of MKI67-related genes; exhaustion score: averaged expression of PDCD1-related genes; cytotoxic score: averaged expression of GZMB-related genes. (h) The Kaplan–Meier curves show the overall survival rate of HPV+/HPV- head and neck squamous cell carcinoma (HNSCC) patients with different proliferation, exhaustion, and cytotoxic scores in The Cancer Genome Atlas (TCGA) cohort, adjusted for age and gender. ***: p<0.001, **: p<0.01, *: p<0.05.
+**Figure 2.:** (a) Gene ontology (GO) analysis of differentially expressed genes in each CD8+ T cell clusters, colored by cell types. (b) The T cell activation score of each CD8+ T cell clusters. T cell activation score defined as the averaged expression of genes in the activation signature in Supplementary file 3. Statistics were assessed by Dunn's tests. (c) The gene set enrichment analysis (GSEA) diagrams show the enrichment profiles of cell cycle pathway in each CD8+ T cell clusters. (d–f) The distribution and scores of cell cycle phases of each CD8+ T cells. (g) The proliferation, exhaustion, and cytotoxic scores of each CD8+ T cell clusters. Proliferation score: averaged expression of MKI67-related genes; exhaustion score: averaged expression of PDCD1-related genes; cytotoxic score: averaged expression of GZMB-related genes. (h) The Kaplan–Meier curves show the overall survival rate of HPV+/HPV- head and neck squamous cell carcinoma (HNSCC) patients with different proliferation, exhaustion, and cytotoxic scores in The Cancer Genome Atlas (TCGA) cohort, adjusted for age and gender. ***: p<0.001, **: p<0.01, *: p<0.05.
 
 Additionally, to further confirm that P-Texs displayed high cell cycle-related function, we performed gene set enrichment analysis (GSEA) using the gene set that represents the cell cycle pathway, and the results showed that two P-Tex clusters were more enriched in the cell cycle signal pathway than the T-Tex and Teff clusters (p<0.001, Figure 2c). To further investigate the cell cycle phase of each T cell cluster, we calculated cell cycle scores and visualized them on uniform manifold approximation and projection (UMAP) plots (Figure 2d, Supplementary file 5). P-Tex1 was mainly in G2/M phase, indicating cells were under a proliferative burst, which was consistent with the high expression of proliferation marker gene MKI67 (Bertoli et al., 2013), whereas P-Tex2 was mainly in S phase, an essential phase for DNA replication before undergoing mitosis, which was consistent with the high expression of CDK4 (initiating the G1 to S phase transition) (Figure 2e–f; Bertoli et al., 2013; Romero-Pozuelo et al., 2020; Rubin et al., 2020). Taken together, P-Tex1 and P-Tex2 might represent proliferation cells in two distinct cell cycle phases.
 
@@ -95,11 +103,23 @@ It is also noteworthy that HPV-positive HNSCC patients in TCGA (The Cancer Genom
 
 Taken together, the P-Tex cluster displayed high expression levels of proliferation- and cell cycle-related genes. More importantly, HPV-positive HNSCC patients with higher P-Tex score, proliferation score, exhaustion score, or cytotoxic score had better survival outcomes, while this trend was not observed in HPV-negative HNSCC patients.
 
-## Paired scRNA-seq and TCR-seq revealed the developmental trajectory of P-Tex
+### Paired scRNA-seq and TCR-seq revealed the developmental trajectory of P-Tex
 
 Given the clonal accumulation of CD8+ T cells was a result of local T cell proliferation and activation in the tumor environment (Tanchot et al., 2013), we further conducted clonality analysis of CD8+ T cells based on TCR-seq data. After quality control, we obtained TCRs with both alpha and beta chains for 33,897 T cells, including 20,607 unique TCRs, 2798 double TCRs, and 10,492 clonally expanded TCRs, with clonal sizes ranging from 2 to 162.
 
 To further confirm whether the T cell clonality was associated with TME and HPV status, we systematically compared the clonality by cell clusters, tissue origin, and HPV status, respectively. The CD8+ T cell clusters harbored more clonally expanded cells than CD4+ T cell clusters and DN cell clusters in general, among which Tex harbored the highest proportions of clonal cells, followed by the two P-Tex clusters, which were more abundant than the Teff cells (Figure 3a–b, Figure 3—figure supplement 1a–b). Our results showed that hyperexpanded TCR clonotypes were more enriched in tumors than adjacent normal tissues (Figure 3c–d, Figure 3—figure supplement 1c–d). However, the proportions of hyperexpanded TCR clonotypes of Teff, P-Tex1, and T-Tex showed no significant difference between HPV-positive samples and HPV-negative samples (Figure 3e–f, Figure 3—figure supplement 1e–f). Correspondingly, a higher diversity of TCRs was observed in adjacent normal tissues and HPV-negative samples (Figure 3g), indicating the absence of a strong antigen-specific immune response, which further confirmed the crucial roles of virus and tumor play in local T cell proliferation and activation (Hwang et al., 2020; Poropatich et al., 2017).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/82705/elife-82705-fig3-v1.jpg)
+
+**Figure 3.:** (a–f) Single-cell TCR profiling of head and neck squamous cell carcinoma (HNSCC) in all samples (a–b), cancer tissues vs. normal tissues (c–d), HPV+ vs. HPV- (e–f). Bar plots show the fractions of each clonotype frequencies. The clonotype frequencies are defined as unique (n=1), double (n=2), multiple clones (2 < n ≤ 20), and hyper clones (20 < n ≤ 200) according to the numbers of clonotypes. (g) The TCR diversity of cancer tissues vs. normal tissues and HPV+ vs. HPV- samples, calculated using Shannon metric. (h–i) Cell state transition of T cell clusters inferred by shared TCRs. The chord diagram (h) showing the fraction of shared clonotypes among each cell clusters. Lines connecting different clusters are based on the degree of TCR sharing, with the width of lines representing the number of shared TCRs. The clonal overlap diagram (i) measures the clonal similarity among each cluster. Color gradient in the grid refers to the overlap coefficient. The higher the index score, the higher the clonal diversity. (j–l) Potential developmental trajectory of T cells inferred by Monocle3 based on gene expressions.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82705/elife-82705-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The supplementary comparison of the clonotype frequencies of clusters in each cluster (a–b), cancer tissues vs. normal tissues (c–d), HPV+ vs. HPV- (e–f) ; statistics were assessed by Chi-square tests.The clonotypes are defined as unique (n=1), double (n=2), multiple (2 < n ≤ 20), and hyper clonal (20 < n ≤ 200) according to their clonotype numbers. The clonalOverlay diagrams show the clonal expansion in HPV+ vs. HPV- and cancer tissues vs. normal tissues by overlaying the cells with specific clonal frequency onto the uniform manifold approximation and projection (UMAP) plots in Seurat (c and f). The density contours indicate the frequencies of TCR, with the number of clones ≥3 to be the cutoff value of the outermost circle layer, and the most central circle layer represents the area with the highest TCR expansion. (g–j) The distribution of shared CD8+ clones on the UMAP plot. Colored dots were CD8+ T cells of identical clonotypes. The colored circles highlight the cluster information of each cell, as defined in Figure 1a, with fractional Teff, T-Tex, and P-Tex cells sharing the same TCRs shown in colors. Bar charts show the proportion of the each clonotype in each cluster (h), samples (i), and different human papillomavirus (HPV) status (j), respectively. ***: p<0.001, **: p<0.01, *: p<0.05.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82705/elife-82705-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a–c) The frequency of clonotypes and TCR distribution of CD8+ T cells across individuals (a), HPV+/HPV- samples (b), and cancer/normal samples (c). Frequencies of TCRs are labeled with gradient colors. Pie charts below each bar illustrate the TCR composition of each CD8 cluster. (d) The 3D developmental trajectories of T cells show the potential differentiation direction of each cluster.
 
 We further examined the TCR clonotype occupation among each cluster and revealed that most of the shared TCRs were observed among the T-Tex, P-Tex, and Teff clusters (Figure 3h–i, Supplementary files 6-7). The Teff cluster had higher proportion of TCRs shared with the γδ T (overlap coefficient, oc = 0.49), Tex (oc = 0.43), P-Tex2 (oc = 0.35), and P-Tex1 (oc = 0.33) clusters, respectively, indicating they had common ancestry of origin. Besides, Figure 3—figure supplement 1g–j and Figure 3—figure supplement 2a–c show the distribution of the top shared clonotypes across CD8+ T cell clusters, individuals, and HPV status. There were almost no shared TCRs across individuals, indicating the highly heterogeneous characteristics of T cells among individuals.
 
@@ -107,7 +127,7 @@ To further investigate their lineage relationships, we performed pseudotime anal
 
 Taken together, given that two P-Tex clusters were located at the end of the developmental trajectory of the Teff and T-Tex cells and that P-Tex clusters partially shared TCRs with the T-Tex cluster, we speculated that Teff cells transformed from an activated to exhausted state (T-Tex cells), and some of the T-Tex cells could further gradually transform into a unique P-Tex subpopulation with a highly specific proliferation state.
 
-## The survival, proliferation capacity, and cytotoxicity of P-Texs in vitro
+### The survival, proliferation capacity, and cytotoxicity of P-Texs in vitro
 
 To further verify the aforementioned function of P-Tex cells, we sorted P-Tex cells (CD3+CD8+UBE2C+PD1+) and T-Tex cells (CD3+CD8+UBE2C-KLRB1+PD1+) via flow cytometry to compare their functions in vitro (Figure 4a–g). Unexpectedly, our flow cytometry results showed that the proliferation rate of P-Tex cells cultured with IL-2 for 15 and 20 days in vitro was much slower than that of T-Tex cells (Figure 4a), whereas the cell viability of P-Tex cells was much higher than that of T-Tex cells (Figure 4b–c), indicating that instead of showing high proliferation capacity when stimulated in vitro, the P-Tex cells were mainly characterized by prolonged cell survival.
 
@@ -119,17 +139,37 @@ Moreover, P-Tex cells expressed higher levels of proliferation-related marker UB
 
 Taken together, P-Tex cells represent a unique subcluster of the exhausted CD8+ T cells, which was characterized by prolonged cell survival in vitro and could provide modest but persistent anti-tumor effects.
 
-## The effect of CDK4 inhibitor on P-Tex cells might be a reason for its ineffectiveness in HPV-positive HNSCC patients
+### The effect of CDK4 inhibitor on P-Tex cells might be a reason for its ineffectiveness in HPV-positive HNSCC patients
 
 To better understand the anti-tumor role of P-Tex within the TME, we additionally conducted 5’ droplet-based scRNA-seq profiles (10× Genomics) for primary tumors with paired adjacent normal tissues from two HNSCC patients. All biopsies were histologically examined by two independent pathologists. After quality control, a total of 13,515 cells from tumors (9040 cells) and adjacent normal tissues (4476 cells) were obtained. Given the fact that higher heterogeneity of cellular compositions exists in the TME than pure T cells, we recategorized all cells into 20-cell clusters according to previously reported markers (Figure 5a, Figure 5—figure supplement 1a, Supplementary file 8). We consistently identified that P-Tex cells highly expressed proliferation- and cell cycle-related genes and functions as the cancer epithelial cluster (Figure 5b, Figure 5—figure supplement 1b–d).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/82705/elife-82705-fig5-v1.jpg)
+
+**Figure 5.:** (a) Single-cell transcriptomic profiling of HNSCC tumor microenvironment (TME). Twenty cell clusters are identified, colored by cell types. (b) The proliferation status of P-Tex and epithelial cells in violin plot. (c) The kernel density estimate distribution of proliferation markers (CDK4 and MKI67) and epithelial cancer cell markers (KRT15 and CD24) in uniform manifold approximation and projection (UMAP) plots. (d) The overall survival rate of HPV+/HPV- HNSCC patients in The Cancer Genome Atlas (TCGA) cohort related to the expression levels of CDK4 gene, adjusted for age and gender. (e) The proportion of P-Texs, T-Tex, and TEFF clusters in HPV+ and HPV- samples in TCGA cohort by using the deconvolution algorithm; statistics were assessed by Chi-square tests. Marker genes that were used to define cell clusters in (a) are deconvolved into the TCGA data to obtain the proportion of P-Texs, T-Tex, and Teff clusters in the TCGA cohort. (f) The cell viability of P-Tex and cancer epithelial cells assessed by CCK8 experiment after Abemaciclib treated in vitro. ***: p<0.001, **: p<0.01, *: p<0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82705/elife-82705-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Average expression of selected T cell function-associated genes across different cell clusters. (b) Gene ontology (GO) analysis of differentially expressed genes in two P-Tex and cancer epithelial cell clusters. (c) The gene set enrichment analysis (GSEA) diagrams show the enrichment of cell cycle genes in P-Tex clusters and cancer epithelia cluster. (d) The proliferation status of each T cell cluster; statistics were assessed by Dunn's tests. ***: p<0.001, **: p<0.01, *: p<0.05.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82705/elife-82705-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (a) The distribution of cells in cancer and normal tissues in uniform manifold approximation and projection (UMAP) plots. (b) The proportion of each cell cluster in all samples, cancer vs. normal tissue samples, and individual samples, colored by cell types. (c) Comparing the proportion of P-Texs, T-Tex, and Teff clusters in HPV+ and HPV- samples in single-cell sequencing data; statistics were assessed by Chi-square tests. ***: p<0.001, **: p<0.01, *: p<0.05.
 
 P-Tex clusters were predominantly tumor-derived (Figure 5—figure supplement 2a–b) cells. We further investigated the expression and distribution of proliferation-related (CDK4, MKI67) and cancer-related epithelial (KRT15, CD24) cell marker genes among each cluster (Figure 5c). Notably, CDK4 was highly expressed in P-Tex2 cells, cancer epithelial cells, and fibroblasts, while MKI67 was highly expressed in P-Tex1 clusters. CDK4 is a well-known cancer treatment target, and CDK4 inhibitors (e.g., abemaciclib and palbociclib) have demonstrated cytostatic activity in HPV-negative HNSCC, whereas their effects on HPV-positive HNSCC are not obvious (Adkins et al., 2019; Oppelt et al., 2021; Robinson et al., 2019). And it was interesting that HPV-positive HNSCC patients with higher CDK4 expression levels showed better survival than patients with lower CDK4 expression, whereas HPV-negative HNSCC patients with higher CDK4 expression levels showed worse prognosis (Figure 5d). Besides, compared with HPV-negative patients, the proportion of P-Tex was higher in the TME of HPV-positive HNSCC patients (TCGA cohort, Figure 5e, Figure 5—figure supplement 2c, Supplementary file 9). These findings raised the question of whether P-Tex cells that were beneficial to the prognosis of HPV-positive HNSCC patients would be simultaneously suppressed by CDK4 inhibitors.
 
 To answer this question, we compared the cell viability of P-Tex cells and cancer epithelial cells by culturing with abemaciclib in vitro, respectively. As expected, abemaciclib inhibited the cell viability of both cancer cells (FD-LSC-1 cells) and P-Tex cells (Figure 5f). Therefore, we speculated that the inhibition of CDK4 inhibitor on the cell viability of P-Tex cells (which were beneficial to the survival prognosis of HPV-positive HNSCC patients) might be a potential reason why CDK4 inhibitors were ineffective in treating HPV-positive HNSCC patients.
 
-## The cell–cell interactions between T cells and APCs in the HNSCC TME
+### The cell–cell interactions between T cells and APCs in the HNSCC TME
 
 To determine the underlying mechanism by which P-Tex cells fulfill their proliferation-related and anti-tumor function, we systematically explored the crosstalk between T cells and other cells in the HNSCC TME. The results showed that the interactions between P-Tex and Tex clusters and APCs (especially DCs) in the HNSCC TME were mainly enriched in T cell activation and proliferation signaling pathways, such as CD70-, CD80-, ICOS-, and PD-L1-related signaling pathways (Figure 6a–b, Figure 6—figure supplement 1 and Supplementary file 10). Given the fact that the co-localization of APCs and T cells is the precondition for fulfilling their function related to antigen presentation and T cell activation, we further conducted spatial transcriptome (ST) analysis for representative fresh HNSCC tumor (P_08) to verify their spatial distribution characteristics. We identified 17 spatial cluster areas, among which cluster 16 were defined as APC area (Figure 6c). The P-Tex and Tex cells were characterized by the co-localization in the APC aggregation area with significantly higher P-Tex scores and Tex scores than other non-APC areas (p<0.001), and the correlations among the three scores in the APC area were higher than those in other non-APC areas. As expected, the activation score of T cells were higher in APC area (Figure 6d–e, Figure 6—figure supplement 2, Supplementary file 11). Besides, the aforementioned ligand–receptor interactions of T cell activation and proliferation signaling pathways (CD70-CD27, CD80-ICOS, CD86-CTLA4, CD274-PDCD1) were also detected in the APC areas (Figure 6f). We also observed enriched signaling pathways in APC areas involving the cell cycle, neutrophil activation, and RNA splicing (Figure 6g), supporting that these antigen-presenting cells play a role in modulating the immune response within the TME by promoting T cell activation (Mehrfeld et al., 2018; Wosen et al., 2018).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/82705/elife-82705-fig6-v1.jpg)
+
+**Figure 6.:** (a) The communication probabilities mediated by selected ligand–receptor pairs among different cell types. The color gradient shows the level of interaction. (b) Network circle graphs visualize the inferred communication network of signaling pathways among different cell clusters derived by ligand–receptor interactions. The color of lines are consistent with the ligands. The width of lines are proportional to the interaction strength, and the circle sizes are proportional to the number of cells in each clusters. (c) The spatial transcriptomic landscape of representative HNSCC samples. (d–e) P-Tex and Tex features were co-expressed in APC area (cluster 16). The circles in SpatialDimPlot (d, left) represent APC, P-Tex, and Tex scores enriched in the APC area (cluster 16). The Texs and P-Tex scores were higher in the APC aggregation area (d, right). The correlation of P-Tex, Tex, activation scores, and APC scores in the spatial transcriptome (e). (f) Spatial feature plots of selected ligands–receptor interactions enriched in APC area. Spatial feature plots showing the expression pattern of single ligand genes (CD70, CD80, CD86, CD274, yellow spots), single receptor genes (CD27, ICOS, CTLA4, PDCD1, blue spots), and co-expression pattern (green spots) in APC area. (g) Gene ontology (GO) analysis identified the enriched gene functions in APC area of spatial transcriptome.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/82705/elife-82705-fig6-figsupp1-v1.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/82705/elife-82705-fig6-figsupp2-v1.jpg)
 
 To further confirm the ST results (transcriptomic level) at the proteomic level, we performed multiplex immunofluorescence (mIF) of both canonical APC markers (MHC-II+) and selected markers for P-Tex cells (CD8+PD1+CDK4+/MKI67+), bulk Tex cells (CD8+PD1+CDK4-MKI67-) and bulk CD8+ T cells (CD8+) on formalin-fixed paraffin-embedded (FFPE) tissue originating from HNSCC patients (Figure 7a–b). Next, we explored average distances of APCs to P-Tex cells, bulk Tex cells, and bulk CD8+ T cells (Figure 7c), respectively. As expected, 90% of the P-Tex cells, bulk Tex, and bulk CD8+ cells enriched within a distance of 25 µm from APCs, forming an intra-tumoral niche (Jansen et al., 2019).
 
@@ -151,94 +191,300 @@ Overall, a novel promising P-Tex cluster, which was mainly identified in APC are
 
 ## Materials and methods
 
-## Ethical statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Chromium Single Cell 5’ Gel Bead and Library Construction Kit</td>
+      <td>10× Genomics</td>
+      <td>PN-1000006;PN-1000020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Single Cell V(D)J Enrichment Kit Human T cell</td>
+      <td>10× Genomics</td>
+      <td>PN-1000005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Visum Spatial Library Construction kit</td>
+      <td>10× Genomics</td>
+      <td>PN-1000184</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC Mouse Anti-Human CD3 (mouse monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat#555332</td>
+      <td>FACS (0.8 μL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-human CD8a Antibody (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#300908, Clone: HIT8a</td>
+      <td>FACS (5 μL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD279 (PD-1) (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#329920</td>
+      <td>FACS (5 μL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>UBE2C (B-8) PE (mouse monoclonal)</td>
+      <td>Santacruz</td>
+      <td>Cat#Sc271050</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Cyanine7 anti-human CD161 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#339917</td>
+      <td>FACS (5 μL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD8α (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#70306S</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PD-1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#84,651T</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab16667, Clone: SP6</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CDK4 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#12790</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD24 (Rabbit Polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat#10600-1-AP</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HLA-DR (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab92511</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EpCAM (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab223582, Clone: EPR20532-225</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cell Counting Kit-8</td>
+      <td>MedChemExpress</td>
+      <td>Cat#HY-K0301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Manual Opal 7-Color IHC Kit</td>
+      <td>Akoyabio</td>
+      <td>Cat#NEL811001KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Laryngeal carcinoma</td>
+      <td>This paper</td>
+      <td>FD-LSC-1</td>
+      <td>Cell line maintained in State Key Laboratory of Biotherapy, West China Medical School, Sichuan University</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Abemaciclib (LY2835219)</td>
+      <td>Topscience</td>
+      <td>Cat#T2381</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger count</td>
+      <td>10× Genomics</td>
+      <td>v3.1.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger VDJ</td>
+      <td>10× Genomics</td>
+      <td>v6.1.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Space Ranger</td>
+      <td>10× Genomics</td>
+      <td>v2.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat</td>
+      <td>R</td>
+      <td>RRID:SCR_007322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>monocle3</td>
+      <td>R</td>
+      <td>RRID:SCR_018685</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellChat</td>
+      <td>R</td>
+      <td>RRID:SCR_021946</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pheatmap</td>
+      <td>R</td>
+      <td>RRID:SCR_016418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>FlowJo</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethical statement
 
 This study was conducted in accordance with the Declaration of Helsinki (as revised in 2013) and was approved by the Biomedical Research Ethics Committee of West China Hospital (2021-908), with the individual consent for each participant.
 
-## Specimen collection and processing
+### Specimen collection and processing
 
 Patient’s information was summarized in Supplementary file 1. HNSCC tumor tissues and paired adjacent normal tissues were collected during the surgery. Then, the tissues were rinsed by 1× PBS, with surrounding necrotic areas being carefully removed and were cut into small pieces of 2–4 mm and reserved in the mixture of 1× DMEM medium (Gibco) and penicillin-streptomycin solution (Hyclone). The remaining tissues were fixed into FFPE blocks for HE staining and mIF.
 
-## Preparation of single-cell suspensions
+### Preparation of single-cell suspensions
 
 The tissue pieces were rapidly transferred into the gentleMACS C Tube containing Human Tumor Dissociation Kit (Miltenyi Biotec, #130-095-929) according to the manufacturer’s recommendation. The dissociated cells were filtered through 40 µm cell strainers to remove clumps. Cell pellets were resuspended in binding buffer after centrifuged and sorted via human CD3 MicroBeads (Miltenyi Biotec, #130-050-101) according to the manufacturer’s recommendation (Note: as for the experiment of scRNA-seq of overall cells, CD3 sorting was not needed). The overall cells and the sorted CD3+ T cells were separately resuspended in HBSS (Gibco) plus 0.04% bovine serum albumin (Sigma-Aldrich) and tested for cell viability. Cell viability >80% was required for subsequent library constructions.
 
-## Library construction and sequencing
+### Library construction and sequencing
 
 ScRNA-seq was performed using Chromium Single Cell 5’ Gel Bead and Library Construction Kit (10× Genomics, #PN-1000006, PN-1000020) and Single Cell V(D)J Enrichment Kit Human T cell (10× Genomics, #PN-1000005). Reverse transcription, cDNA recovery, cDNA amplification, and library construction were performed according to the manufacturer’s protocol. The constructed libraries were sequenced on NovaSeq 6000 (Illumina) with paired-end sequencing and single indexing.
 
-## Quality control and preprocessing of sequencing data
+### Quality control and preprocessing of sequencing data
 
 Cell Ranger count (v3.0) (Zheng et al., 2017) was used to process the raw FASTQ files, align the sequencing reads to Ensembl GRCh38 reference genome (http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-GRCh38-3.0.0.tar.gz), and exclude background noise to generate a filtered UMI expression matrix for each cell. The package Seurat (v4.0.4) (Hao et al., 2021) were used to filter cells that were empty droplets or doublets and that have >5% mitochondrial counts. Next, we normalized the expression matrix via ‘LogNormalize’ and log-transform method. Then, we apply a linear transformation to prepare the expression matrix for next step dimensional reduction.
 
-## Unsupervised clustering of cells and UMAP visualization
+### Unsupervised clustering of cells and UMAP visualization
 
 The high cell-to-cell variable features (top 2000) between cells were used as input to perform principal component analysis on the scaled matrix. Subsequently, we employed Harmony (v1.0, R package) (Korsunsky et al., 2019) to integrate multiple samples and the top 30 dimensions were selected for UMAP with the reduction of ‘harmony’.
 
 We performed Seurat to cluster cells using the Louvain algorithm. The previous reported marker genes (Supplementary file 3) were used for the cell cluster annotation with gene functional description and gene expression. Nebulosa (v1.3.0, R package) (Alquicira-Hernandez and Powell, 2021) was applied to perform gene kernel density estimation and visualize cell features on UMAP plot.
 
-## Differential expression and analysis of signaling pathways
+### Differential expression and analysis of signaling pathways
 
 To characterize the function of defined clusters, we used Seurat to calculate differentially expressed genes (DEGs) among each cluster, identified marker genes as DEGs with adjusted p-value <0.05 and put marker genes into clusterProfiler (v4.0.2, R package) (Wu et al., 2021) to perform GO enrichment analysis (p<0.01) and GSEA and visualization.
 
-## Transcription factor regulatory network analysis
+### Transcription factor regulatory network analysis
 
 To predict the gene regulatory network within cell clusters, we used previous selected top 2000 variable features-barcode matrix from scRNA-seq data as input and applied pySCENIC (v0.11.2) (Aibar et al., 2017) to infer the network activity in each cell cluster.
 
-## Cell score calculation
+### Cell score calculation
 
 We applied AddModuleScore function embedded in Seurat to calculate the specific cell scores in different clusters, which was defined as: the average gene expression of specific gene panel in each cluster, subtract the average gene expression of random control gene sets (Puram et al., 2017; Supplementary file 3). Functional module scores were based on the expression levels of top 30 genes which were highly correlated with GZMB (cytotoxicity score), PDCD1 (exhaustion score), or MKI67 (proliferation), respectively. TCR-dependent T cell activation score was calculated based on the activation gene signature (Azizi et al., 2018). Proliferation score was calculated based on the genes enriched in the GO molecular function term of ‘cell cycle phase transition’. The specific cluster score (P-Tex, Tex, and APC score) was calculated based on marker genes of each cluster listed in Supplementary file 3.
 
 We assigned cell cycle scores based on the expression of G2/M and S phase marker genes and predicted the classification of each cell in either G2/M, S, or G1 phase in the CellCycleScoring function embedded in Seurat.
 
-## Trajectory analyses
+### Trajectory analyses
 
 To determine the potential development lineages of T cell subclusters, we converted the previous Seurat object into Monocle3 (v1.0.0, R package) (Cao et al., 2019) object and inferred the trajectory of T cell subclusters at its proper position in pseudotime. Besides, to visualize the major non-linear components of variation across cells, we applied destiny package (v3.1.1, R package) (Angerer et al., 2016) to perform the 3D diffusion maps to compute the diffusion components of each cell type.
 
-## TCR clonotype analysis
+### TCR clonotype analysis
 
 Cell Ranger VDJ pipeline (v6.1.1, 10× Genomics) was used to process the raw TCR sequence data with default augments and align them to the Ensembl GRCh38 reference (https://cf.10xgenomics.com/supp/cell-vdj/refdata-cellranger-vdj-GRCh38-alts-ensembl-5.0.0.tar.gz). We performed scRepertoire (v1.3.2, R package) (Borcherding et al., 2020) to integrate the TCR sequence data with mRNA expression data and used absolute frequency of V(D)J genes to define clonotype groups. The total frequency assigned for different extents of clonal expansion was categorized as follows: hyperexpanded (20 < X ≤ 200), multiple (2 < X ≤ 20), double (1 < X ≤ 2), single (0 < X ≤ 1).
 
-## Ligand–receptor interactions
+### Ligand–receptor interactions
 
 To understand communications among tumor cell clusters, we applied CellChat (v1.1.3, R package) (Jin et al., 2021) to identify the cell–cell signaling links, inferred the cellular communication network and visualized the major ligand–receptor interaction between each cell cluster.
 
-## Library construction of ST
+### Library construction of ST
 
 Representative HNSCC tumor samples were collected for the spatial transcriptomic sequencing. Samples were cut into 6.5×6.5 mm2 pieces, embedded in optimal cutting compound media and quickly frozen on dry ice. The frozen tissues were cryosectioned at 10 μm thickness by using the Thermo Scientific CryoStar NX50 cryostat and were placed in the capture area frames on the 10× Visium Spatial slides. Each sample slide was stained with H&E (Hematoxylin Dako #S3309, Eosin, Dako #CS701, bluing buffer #CS702) and the brightfield images were captured via Leica whole-slide scanner at 10× resolution.
 
 Following tissue permeabilization, reverse transcription and cDNA amplification were processed by using Reagent Kit (10× Genomics, #PN-1000184, PN-1000193). Visum spatial libraries were constructed using Visum Spatial Library Construction kit (10× Genomics, #PN-1000184) according to the manufacturer’s protocols. Finally, the libraries were sequenced using the Illumina NovaSeq6000 at least 100,000 reads per spot via pair-end 150 bp (PE150) reading strategy (performed by CapitalBio Technology, Beijing).
 
-## Functional scoring and visualization of ST data
+### Functional scoring and visualization of ST data
 
 We performed alignment, filtering, barcode counting, and UMI counting by the Spaceranger count (v1.3.0) to generate feature-barcode matrix. We performed normalization, high-variance features detection (top 2000 genes), dimensionality reduction, and clusters identification (resolution = 1.0) for the spatially barcoded gene expression data via the standard Seurat pipeline. The P-Tex, Tex, and APC scoring algorithms of ST were similar to the module scoring algorithm of scRNA transcriptome (AddModuleScore) and the gene list of each module was listed in Supplementary file 5. Co-localization of P-Tex, Tex, and APC scores was verified by cor.test (stats, v3.6.2, R package) (Maurage et al., 2013).
 
-## Multiplex immunohistochemistry
+### Multiplex immunohistochemistry
 
 Ten FFPE tissue of HNSCC tumors were sectioned to 4 µm thick for the subsequent multiplex immunohistochemistry via the OPAL Polaris system (Akoya Biosciences). After deparaffinization and hydration, the FFPE slides were manually stained with the CD8 (clone C8/144B, CST, #70306S), PD-1 (clone D7D5W, CST, #84,651T), anti-Ki67 (clone SP6, Abcam, #ab16667), CDK4 (clone D9G3E, CST, #12790), CD24 (10600-1-AP, Proteintech, #10600-1-AP), Anti-EPCAM (clone EPR20532-225, Abcam, #ab223582), and Anti-HLA-DR (clone EPR3692, Abcam, #ab92511) antibodies. The sections were counterstained with spectral DAPI (Akoya Biosciences). The stained slides were imaged and scanned using the Vectra Polaris multispectral imaging system.
 
-## Cell staining strategies for flow cytometry
+### Cell staining strategies for flow cytometry
 
 Single-cell suspensions (100 μL) of HNSCC tumor tissues were stained with CD3 (BD Pharmingen, #555332), CD8 (CST, #300908), PD1 (Biolegend, #329920), UBE2C (Santacruz, #Sc271050), and KLRB1 (Biolegend, #339917) antibodies at 4°C for 30 min under dark conditions. And 7-aminoactinomycin D (7AAD) was used for live/dead discrimination. P-Tex cells were defined as 7AAD-CD3+CD8+PD1+ UBE2C+ cells and T-Tex cells were defined as 7AAD-CD3+CD8+PD1+KLRB1+UBE2C- cells.
 
-## In vivo cell function assays
+### In vivo cell function assays
 
-## Cell culture and proliferation assay
+#### Cell culture and proliferation assay
 
 The sorted P-Tex cells and T-Tex cells were cultured in RPMI media containing 10% FBS, penicillin, streptomycin, and 20 IU/mL IL-2, and stimulated with T Cell TransAct (diluted at 1:100, T Cell TransAct, human, Miltenyi Biotec, #130-111-160), with fresh medium replaced every 3 days. After 14 consecutive days, proliferation rate of cells was assessed by flow cytometry.
 
-## Survival assay
+#### Survival assay
 
 The sorted P-Tex and T-Tex cells were cultured in the RPMI media containing 10% FBS, human IL-2 (20 IU/mL), penicillin, and streptomycin in 96-well plates (15,000 cells/well). At the 5th, 10th, and 15th day of growth, cell counting was performed by flow cytometry. Cell viability was determined by propidium iodide (PI) staining on the 15th and 20th day of cell growth. And on the 9th and 16th day, P-Tex and T-Tex cells were stained by UBE2C (Santacruz, #Sc271050), PD1 (Biolegend, #329920), KLRB1 (Biolegend, #339917), and the protein expression was detected by flow cytometry. Software FlowJo was used for data analysis.
 
-## CDK4/6 inhibition test
+#### CDK4/6 inhibition test
 
 The sorted P-Tex and T-Tex cells (50,000 cells/well) and the cancer cell line (FD-LSC-1, 4000 cells/well, donated by State Key Laboratory of Biotherapy, West China Medical School, Sichuan University) (Liu et al., 2020a) were transferred into 96-well plates, treated with Abemaciclib in gradient concentrations (0, 10, 100, and 500 nM) for 24, 48, and 72 hr, respectively. Cell proliferation was detected by Cell Counting Kit-8 (CCK-8) according to the manufacturer’s instruction. FD-LSC-1 cell line was authenticated by STR profiling. Cells were tested regularly for Mycoplasma contamination and none tested positive throughout the studies.
 
-## Survival analysis
+#### Survival analysis
 
 We further analyzed the transcriptome data of 500 HNSCC tumor samples (HPV negative: n=410; HPV positive: n=90) in TCGA cohort (Liu et al., 2020b). Survival analysis related to gene expression level and functional module score in different HPV status was conducted through the Tumor Immune Estimation Resource (TIMER; cistrome.shinyapps.io/timer) (Li et al., 2017). Besides, to predict the proportion of P-Tex, Teff, and T-Tex cells in HPV-positive and HPV-negative HNSCC TCGA cohort, we used CIBERSORT software to deconvolve our scRNA-seq data (534 specific marker genes, Supplementary file 3) into the TCGA bulk transcription data for clustering.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using R (v3.6.3). Wilcoxon rank-sum tests and Chi-square tests were used to compare variables. The hazard ratio and survival curves were estimated via a Cox regression model. A statistical significance was considered at p<0.05.

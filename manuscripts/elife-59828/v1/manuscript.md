@@ -32,7 +32,7 @@
 
 ## Abstract
 
-Poly(ADP-ribose) polymerase (PARP) enzymes initiate (mt)DNA repair mechanisms and use nicotinamide adenine dinucleotide (NAD + ) as energy source. Prolonged PARP activity can drain cellular NAD + reserves, leading to de-regulation of important molecular processes. Here, we provide evidence of a pathophysiological mechanism that connects mtDNA damage to cardiac dysfunction via reduced NAD + levels and loss of mitochondrial function and communication. Using a transgenic model, we demonstrate that high levels of mice cardiomyocyte mtDNA damage cause a reduction in NAD + levels due to extreme DNA repair activity, causing impaired activation of NAD + -dependent SIRT3. In addition, we show that myocardial mtDNA damage in combination with high dosages of nicotinamideriboside (NR) causes an inhibition of sirtuin activity due to accumulation of nicotinamide (NAM), in addition to irregular cardiac mitochondrial morphology. Consequently, high doses of NR should be used with caution, especially when cardiomyopathic symptoms are caused by mitochondrial dysfunction and instability of mtDNA.
+Poly(ADP-ribose) polymerase (PARP) enzymes initiate (mt)DNA repair mechanisms and use nicotinamide adenine dinucleotide (NAD+) as energy source. Prolonged PARP activity can drain cellular NAD+ reserves, leading to de-regulation of important molecular processes. Here, we provide evidence of a pathophysiological mechanism that connects mtDNA damage to cardiac dysfunction via reduced NAD+ levels and loss of mitochondrial function and communication. Using a transgenic model, we demonstrate that high levels of mice cardiomyocyte mtDNA damage cause a reduction in NAD+ levels due to extreme DNA repair activity, causing impaired activation of NAD+-dependent SIRT3. In addition, we show that myocardial mtDNA damage in combination with high dosages of nicotinamideriboside (NR) causes an inhibition of sirtuin activity due to accumulation of nicotinamide (NAM), in addition to irregular cardiac mitochondrial morphology. Consequently, high doses of NR should be used with caution, especially when cardiomyopathic symptoms are caused by mitochondrial dysfunction and instability of mtDNA.
 
 ## Introduction
 
@@ -46,25 +46,25 @@ In this study, we show a direct link between mtDNA damage to loss of mitochondri
 
 ## Results
 
-## Elevated PARP activity depletes cardiac NAD+ levels and increases mitochondrial protein acetylation
+### Elevated PARP activity depletes cardiac NAD+ levels and increases mitochondrial protein acetylation
 
 We utilized a mouse model where high levels of mtDNA damage in the form of AP sites are generated specifically in cardiomyocytes. These mice develop cardiac hypertrophy and die of HF ~8 weeks after mtDNA damage initiation (Lauritzen et al., 2015). AP sites increase the risk of single-strand DNA breaks, which are recognized by PARP (Caldecott, 2008). PARP initiates DNA repair and uses NAD+ as a substrate for its activity (Cheng et al., 2013). We hypothesized that strongly increased PARP activity would deplete NAD+ levels, which again would impair the function of other crucial NAD+-dependent proteins such as sirtuins. Indeed, we found increased PARP levels in isolated mitochondria from heart tissue from mutUNG1-expressing mice compared to wild-type (Wt) littermates (Figure 1A–B), accompanied by reduced total NAD+ levels in cardiac tissue as assessed by HPLC (Figure 1C). Sirtuins are also dependent on NAD+ and SIRT3 is the major mitochondrial isoform that controls the activity of a number of different proteins through deacetylation. Whereas we saw an increase in SIRT3 protein levels in mitochondrial extracts from mutUNG1 cardiac tissue (Figure 1D–E), the overall protein acetylation status was increased in mitochondrial extract from mutUNG1 (Figure 1F–G), indicating lower SIRT3 activity. This was also seen in the acetylation status of SOD2 (Figure 1H–I), which is dependent on SIRT3 activity. Impaired SOD2 function could contribute to weakened antioxidant defenses with enhanced oxidative DNA damage as a potential consequence. Importantly, increased damage will increase PARP activity, representing a potential vicious circle in these mice.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/59828/elife-59828-fig1-v1.jpg)
 
-**Figure 1.:** + levels and reduces mitochondrial protein deactylation.(A) Western blot showing PARP levels in cardiac mitochondrial extract from mutUNG1-expressing mice and wild-type littermates. (B) Quantification of PARP levels in western blot. (C) NAD+ levels from heart tissue from wild-type and mutUNG1-expressing mice measured with HPLC. (D) Western blot of SIRT3 levels in extract of mitochondria isolated from cardiac tissue from mutUNG1-expressing mice and wild-type littermates. (E) Quantification of SIRT3 levels in western blot. (F) Western blot of protein acetylation levels in cardiac mitochondrial extract from mutUNG1-expressing mice and wild-type littermates. (G) Quantification of protein acetylation levels in western blot. (H) Western blot of SOD2 and acetylated SOD2 levels in cardiac mitochondrial extract from mutUNG1-expressing mice and wild-type littermates. (I) Quantification of relative acetylated SOD2 protein levels in western blot. (J) Western blot acetylated protein levels of samples of immunoprecipitated OPA1 from total extract (200 µg protein) of cardiac tissue from mutUNG1-expressing mice and wild-type littermates. (K) Quantification of relative acetylated OPA1 protein levels in western blot. Data is presented as mean ± SE. *p<0.05, **p<0.01 vs. Wt chow. Abbreviations: Wt = Wild-type mice, mU1 = mutUNG1-expressing mice, PARP = poly(ADP-ribose) polymerase, CII = mitochondrial complex II, SIRT3 = sirtuin 3, AcK = acetylated lysine, SOD2 = superoxide dismutase 2, PDH = pyruvate dehydrogenase, OPA1 = optic atrophy 1, and NAD+ = nicotinamide adenine dinucleotide. Raw data are presented in Source data 1.
+**Figure 1.:** (A) Western blot showing PARP levels in cardiac mitochondrial extract from mutUNG1-expressing mice and wild-type littermates. (B) Quantification of PARP levels in western blot. (C) NAD+ levels from heart tissue from wild-type and mutUNG1-expressing mice measured with HPLC. (D) Western blot of SIRT3 levels in extract of mitochondria isolated from cardiac tissue from mutUNG1-expressing mice and wild-type littermates. (E) Quantification of SIRT3 levels in western blot. (F) Western blot of protein acetylation levels in cardiac mitochondrial extract from mutUNG1-expressing mice and wild-type littermates. (G) Quantification of protein acetylation levels in western blot. (H) Western blot of SOD2 and acetylated SOD2 levels in cardiac mitochondrial extract from mutUNG1-expressing mice and wild-type littermates. (I) Quantification of relative acetylated SOD2 protein levels in western blot. (J) Western blot acetylated protein levels of samples of immunoprecipitated OPA1 from total extract (200 µg protein) of cardiac tissue from mutUNG1-expressing mice and wild-type littermates. (K) Quantification of relative acetylated OPA1 protein levels in western blot. Data is presented as mean ± SE. *p<0.05, **p<0.01 vs. Wt chow. Abbreviations: Wt = Wild-type mice, mU1 = mutUNG1-expressing mice, PARP = poly(ADP-ribose) polymerase, CII = mitochondrial complex II, SIRT3 = sirtuin 3, AcK = acetylated lysine, SOD2 = superoxide dismutase 2, PDH = pyruvate dehydrogenase, OPA1 = optic atrophy 1, and NAD+ = nicotinamide adenine dinucleotide. Raw data are presented in Source data 1.
 
 The cardiomyocyte mutUNG1 mouse model is characterized by severely disordered mitochondrial morphology (Lauritzen et al., 2015). OPA1 is an important protein involved in organization of the mitochondrial inner membrane and is also activated by SIRT3. By investigating the acetylation status of OPA1, we saw an increase in acetylation of immunprecipitated OPA1 in mutUNG1-expressing mice compared to Wt littermates in total cardiac tissue. This indicates that a loss of OPA1 activity and regulation play a part in the observed impaired mitochondrial morphology (Figure 1J–K).
 
-## Elevation of NAD+ levels through NR treatment does not mitigate cardiac hypertrophy in mutUNG1-expressing mice
+### Elevation of NAD+ levels through NR treatment does not mitigate cardiac hypertrophy in mutUNG1-expressing mice
 
 To test if replenishment of NAD+ levels could reverse the cardiac phenotype in mutUNG1-expressing mice, we included NR in their diet (referred to as chow-NR). NR enters the ‘NAD salvage pathway’ through nicotinamide riboside kinase 1 which metabolizes NR into NMN. NR can thereby be used as a means to boost NAD+ levels (Braidy et al., 2019). The dose (400 mg/kg chow) was chosen from the literature and is considered a medium dose (Gariani et al., 2016; Zhang et al., 2016). To investigate if NR did boost NAD+ levels in the animals, we first measured NAD+ levels using HPLC in the myocardium. Even though we did reconfirm lower levels of NAD+ in heart tissue in mutUNG1-expressing mice, we did not see any increase in cardiac NAD+ levels with NR supplementation (Figure 2A). However, others have noted that it is difficult to achieve increase in NAD+ levels in heart tissue, possibly due to very high metabolic turnover (Trammell et al., 2016). However, these authors found NR to increase hepatic NAD+ levels. Indeed, we did detect an increase in NAD+ levels in the livers of mutUNG1-expressing mice, suggesting that NR treatment does increase cellular NAD+ in this model (Figure 2B), albeit in a potential tissue-specific manner. Nevertheless, NR supplementation did not lead to any significant changes in the cardiac phenotype of mutUNG1-expressing mice (Figure 2C–K). Physical and echocardiographic measurements show cardiac hypertrophy, with increased mass of both left and right ventricular size in mutUNG1-expressing mice compared to Wt littermates, but with no significant difference between mutUNG1-expressing mice fed chow with or without NR supplement. In Wt mice, NR supplementation in chow diet resulted in a tendency toward poorer cardiac function as compared with chow diet alone with reduced ejection fraction (Figure 2I, p=0.087) and fractional shortening (Figure 2J, p=0.080), but these differences did not reach statistical significance.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/59828/elife-59828-fig2-v1.jpg)
 
-**Figure 2.:** +) levels through nicotinamide riboside (NR) treatment does not mitigate cardiac hypertrophy in mutUNG1-expressing mice.NAD+ levels in heart tissue (A) and liver tissue (B) from wild-type and mutUNG1-expressing mice fed chow with or without NR, measured by HPLC. Weight of (C) heart, (D) left ventricle, and (E) right ventricle of wild-type and mutUNG1-expressing mice fed chow with or without NR. Echocardiographic measurement of (F) interventricular septum thickness at end-diastole, (G) left ventricular posterior wall thickness, (H) left ventricular internal dimension at end-diastole, (I) ejection fraction, (J) fractional shortening, and (J) relative wall thickness at end-diastole in wild-type and mutUNG1-expressing mice fed chow with or without NR. (C-H) Normalized against tibia length. Data is presented as mean ± SE. *p<0.05, **p<0.01, ***p<0.001 vs. Wt chow (for C-J, N = Wt; 15, Wt-NR; 17, mU1; 8, mU1-NR; 11). Raw data are presented in Source data 2.
+**Figure 2.:** NAD+ levels in heart tissue (A) and liver tissue (B) from wild-type and mutUNG1-expressing mice fed chow with or without NR, measured by HPLC. Weight of (C) heart, (D) left ventricle, and (E) right ventricle of wild-type and mutUNG1-expressing mice fed chow with or without NR. Echocardiographic measurement of (F) interventricular septum thickness at end-diastole, (G) left ventricular posterior wall thickness, (H) left ventricular internal dimension at end-diastole, (I) ejection fraction, (J) fractional shortening, and (J) relative wall thickness at end-diastole in wild-type and mutUNG1-expressing mice fed chow with or without NR. (C-H) Normalized against tibia length. Data is presented as mean ± SE. *p<0.05, **p<0.01, ***p<0.001 vs. Wt chow (for C-J, N = Wt; 15, Wt-NR; 17, mU1; 8, mU1-NR; 11). Raw data are presented in Source data 2.
 
-## NR treatment does not alleviate mitochondrial dysfunction in mutUNG1-expressing mice, but alters morphology in Wt mitochondria
+### NR treatment does not alleviate mitochondrial dysfunction in mutUNG1-expressing mice, but alters morphology in Wt mitochondria
 
 Even though NR supplement failed to improve cardiac function in mutUNG1 mice, we wanted to investigate if NR could have an effect on the impaired mitochondrial morphology in these mice. For this, we performed electron microscopy on heart tissue sections from mutUNG1-expressing and Wt mice with or without NR treatment. In line with the lack of effect on SIRT3 activity, NR treatment did not seem to alleviate the phenotype of dysfunctional mitochondria in mutUNG1 mice, which display abnormal organelle shapes and severe damage of internal cristae structures of the mitochondria as shown earlier (Lauritzen et al., 2015; Figure 3A). Whereas heart mitochondria from mice without NR treatment are tethered together with visible contact points, mitochondria in mice fed chow-NR seemed to have a rounder shape and to be organized in a more solitary fashion with less obvious contact points with neighboring mitochondria (Figure 3A–B). Figure 3B illustrates cristae structure of the cardiomyocyte mitochondria. Recent morphological studies have shown that adjacent mitochondria can interact through specialized regulated inter-mitochondrial junction (IMJ) sites, where cristae membranes become organized into coordinated pairs across organelles (Picard et al., 2015). This was also seen in our Wt mice, and highlighted in panel (ii) in Figure 3B, where there is a clear alignment of cristae structures of three neighboring mitochondria with visible contact points between mitochondria (indicated with red arrowheads). This, however, was not as prominent in Wt animals fed chow-NR, where the mitochondria have a rounder shape without tethering of neighboring organelles. The IMJs seem to be lost to a large extent, resulting in failing of cristae structures to align between neighboring mitochondria. As observed earlier (Lauritzen et al., 2015), the cristae structure in mutUNG1-expressing mice is heavily unorganized and damaged, and NR treatment did not alleviate this impairment (Figure 3B).
 
@@ -74,21 +74,57 @@ Even though NR supplement failed to improve cardiac function in mutUNG1 mice, we
 
 The electron microscope (EM) images were evaluated by a blinded scoring of cristae organization and mitochondrial shape. Internal cristae structure was found to be less organized and inter-organelle alignment was found to a lesser degree in mutUNG1-expressing mice compared to Wt animals, and not affected by NR supplement in the diet (Figure 3C–D). Mitochondria were also scored according to shape, and Wt animals fed NR had significantly more circular mitochondria than mice on a standard diet (Figure 3E). By measuring the length of electron-dense contact points (here defined as IMJ) and normalizing to total mitochondrial area, we also saw significantly lower IMJ length in all groups compared to Wt fed standard chow (Figure 3F). This was particularly surprising regarding Wt mice on an NR supplement, and we speculate that lower levels of IMJ are caused by the change of mitochondrial shape with a higher degree of circularity that leads to a loss of organelle tethering and thereby contact points (Figure 3E).
 
-## Proteom analyses support structural effects of NR treatment on mitochondria
+### Proteom analyses support structural effects of NR treatment on mitochondria
 
 Mitofusin 2 (MFN2), dynamin-related protein (DRP1), and peroxisome proliferator-activator receptor gamma coactivator 1-alpha (PGC-1a) are proteins typically involved in mitochondrial morphogenesis and biogenesis. We quantified their proteins’ levels in mutUNG1-expressing animals and Wt littermates (with and without chow-NR) in order to see if changes in mitochondrial structure could be related to changes in their expression levels. However, no significant changes could be detected (Figure 4—figure supplement 1A–F) and we continued with a broader approach performing MS-LC proteome analysis. Proteomic analysis of cardiac mitochondrial extract supported structural effects of NR treatment (Figure 4A–B). We calculated differentially expressed proteins (DEPs) for both mutUNG1-expressing and Wt mice given NR supplements vs. no supplement, and the DEPs were included in gene enrichment analyses (Figure 4A). For both Wt and mUNG1-expressing mice, the top two significantly enriched terms were the citric acid (TCA) cycle and respiratory electron transport (Reactome) followed by mitochondrion organization (gene ontology [GO]) (top five listed in Figure 4A). These two terms include overlapping proteins as illustrated in concomitant heatmaps, indicating crosstalk between these processes (Figure 4A). Figure 4B shows a simplified illustration (modified from Pfanner et al., 2019) including important regulators of the cristae structure, highlighting selected DEPs. Analysis is based on data presented in Source data 1.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/59828/elife-59828-fig4-v1.jpg)
+
+**Figure 4.:** (A) Proteomic analysis of cardiac mitochondrial extract evaluating the effect of NR supplement in Wt and mutUNG1 mice. Shown are top five members by gene enrichment analysis. The differently regulated proteins (DEPs) included in the gene ontology terms the citric acid (TCA) cycle and respiratory electron transport (blue) and mitochondrial organization (green) are shown in the heatmap. Differentially expressed genes (DEGs) included in both pathways are marked in orange. (B) A simplified illustration modified from Pfanner et al., 2019 including important regulators of the cristae structure. The selection of DEPs is based on the gene enrichment analysis. Analysis is based on data presented in Source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59828/elife-59828-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Western blot showing MFN2 levels in cardiac mitochondrial extract from mutUNG1-expressing mice and wild-type littermates fed chow with or without nicotinamde riboside (NR). (B) Quantification of MFN2 levels in western blot. (C) Western blot showing DRP1 levels in cardiac mitochondrial extract from mutUNG1-expressing mice and wild-type littermates fed chow with or without NR. (D) Quantification of DRP1 levels in western blot. (E) Western blot showing PGC-1a levels in cardiac mitochondrial extract from mutUNG1-expressing mice and wild-type littermates fed chow with or without NR. (F) Quantification of PGC-1a levels in western blot. Raw data are presented in Source data 3.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/59828/elife-59828-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Rt-PCR analysis of total DNA shows a decrease in mtDNA copy number in mutUNG1-expressing mice compared with wild-type littermates fed chow with or without nicotinamde riboside (NR) (*p=0.048, ***p=0.001, #p=0.45, and ###p=0.00095). Raw data are presented in Source data 2.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/59828/elife-59828-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Mitochondrial complex II-driven respiratory capacity in heart homogenates from mutUNG1-expressing mice and wild-type littermates fed chow with or without nicotinamde riboside (NR). Raw data are presented in Source data 2.
 
 We were also interested if NR treatment might alleviate the observed reduction in mtDNA copy number seen in mutUNG1-expressing mice (Lauritzen et al., 2015) but this was not the case (Figure 4—figure supplement 2). Additionally, earlier studies have shown a reduction in mitochondrial respiration in mutUNG1-expressing mice (Lauritzen et al., 2015), but analysis by high-resolution respirometry after NR supplementation did not show increased respiration up to Wt levels (Figure 4—figure supplement 3).
 
 Finally, the proteomic analysis was also used to verify the purity of the mitochondrial extract. From the 812 proteins, 28 were not linked to a GO term and excluded. From the 784 proteins left, 40 proteins could from their GO terms be connected to nucleus. Among these 40 proteins, 23 proteins did also have a GO term linking them to mitochondria, leaving 17 proteins connected to nucleus. Most of these could be further linked to the nuclear envelope. As mitochondria interact with other organelles, one could expect some contamination of non-mitochondria proteins in these extracts. However, as the level of nuclear proteins was very low (2.2%), and mainly linked to the nuclear membrane, we considered the purity of this extract to be satisfactory. Nuclear proteins detected in this analysis are shown in Supplementary file 1.
 
-## NR treatment does not increase mitochondrial protein deacetylation in cardiac tissue, but causes accumulation of NM
+### NR treatment does not increase mitochondrial protein deacetylation in cardiac tissue, but causes accumulation of NM
 
 We next examined the effect of NR supplementation on the acetylation status of mitochondrial proteins as an indicator of SIRT3 activity in cardiac tissue from mutUNG1-expressing mice. Whereas the acetylation was high in mutUNG1-expressing mice compared to Wt littermates, NR supplementation had no effect on the acetylation status (Figure 5A–B). To investigate if the NR dose was too low to have any effect on SIRT3 activity, we fed the animals with a higher NR dose (1000 mg/chow). This gave a small, non-significant increase in NAD+ levels (Figure 5—figure supplement 1). To our surprise, a high dose of NR caused an even higher overall mitochondrial protein acetylation than the lower dose, at least in heart tissue of the mutUNG1-expressing mice (Figure 5C–D). However, this was not seen in liver tissue (Figure 5—figure supplement 2A–B). During deacetylation, sirtuins release NAM from their substrate NAD+, and it has been shown that this can inhibit sirtuin activity as a negative feedback mechanism (Avalos et al., 2005). We therefore next measured NAM levels using HPLC and notably, there was a significant increase in NAM levels in cardiac tissue of mutUNG1-expressing mice, but not in Wt littermates fed chow-NR (Figure 5E). In liver tissue, NR-chow induced an increase in NAM levels in both genotypes, illustrating the complexity of NAD+ metabolism and tissue differences in turnover (Figure 5F). No regulation of cardiac gene expression was found for NAMPT and NMAT1-3 (Figure 5—figure supplement 3A–D), indicating that accumulation of NAM is not caused by alterations in gene expression of components involved the salvage pathway in this context. Thus, it is possible that higher NR doses lead to an accumulation of NAM, and that this may result in inhibition rather than enhancement of SIRT3 activity, with an increase in the overall mitochondrial protein acetylation as a consequence.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/59828/elife-59828-fig5-v1.jpg)
+
+**Figure 5.:** (A) Western blot of protein acetylation levels in cardiac mitochondrial extract from mutUNG1-expressing mice and wild-type littermates fed chow with or without medium dose of NR. (B) Quantification of protein acetylation levels in western blot. (C) Western blot of protein acetylation levels in cardiac mitochondrial extract from mutUNG1-expressing mice and wild-type littermates fed chow with or without high dose of NR. (D) Quantification of protein acetylation levels in western blot. Nicotinamide (NAM) levels in heart tissue (E) and liver tissue (F) from wild-type and mutUNG1-expressing mice fed chow with or without NR, measured with HPLC. Data is presented as mean ± SE. *p<0.05, **p<0.01 vs. Wt chow. #p<0.05 vs. mutUNG1 chow. Raw data are presented in Source data 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59828/elife-59828-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** NAD+ levels in liver tissue from wild-type and mutUNG1-expressing mice fed chow with or without high-dose nicotinamde riboside (NR), measured by HPLC. Raw data are presented in Source data 2.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/59828/elife-59828-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Western blot of protein acetylation levels in liver homogenate from mutUNG1-expressing mice and wild-type littermates fed chow with or without high dose of nicotinamde riboside (NR). (B) Quantification of protein acetylation levels in western blot. Raw data are presented in Source data 2.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/59828/elife-59828-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** qPCR data from cardiac tissue from mutUNG1-expressing mice and wild-type littermates fed chow with or without nicotinamde riboside (NR). Raw data are presented in Source data 2.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/59828/elife-59828-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Acetyl CoA levels in cardiac tissue from mutUNG1-expressing mice and wild-type littermates fed chow with or without nicotinamde riboside (NR). Raw data are presented in Source data 2.
+
 Finally, we investigated the acetyl CoA levels in mutUNG1-expressing mice and Wt littermates on a chow-NR diet, but found no significant difference (Figure 5—figure supplement 4), indicating that acetylation of CoA is not implicated in the differences between the genotypes or in the effect of NR in these mice.
 
-## Increasing doses of NR progressively inhibit deacetylation and PARP cleavage
+### Increasing doses of NR progressively inhibit deacetylation and PARP cleavage
 
 Our findings so far suggest that increasing doses of NR could have non-beneficial effects on cardiac mitochondria. To further investigate this issue, we utilized a stably transfected cell line where mutUNG1 is expressed and under control of the Tet-on system (Lauritzen et al., 2010). As seen in heart tissue, the cells expressed PARP in mitochondria with a significantly higher level in mutUNG1-expressing cells (Figure 6A–B). Interestingly, the highest levels of PARP were in mutUNG1-expressing cells treated with NR (Figure 6B). By measuring PARylation as readout of PARP activity, we did see an increased activity in mutUNG1-expressing cells that could be silenced by the PARP inhibitor Olaparib (Figure 6C–D). PARP activity did not increase when supplementing NR (Figure 6C–D). As in cardiac mitochondria, we measured relative protein acetylation and observed that increasing doses of NR progressively inhibited deacetylation in cells, and to a higher degree in mutUNG1-expressing cells (Figure 6E–F). PARP inhibition reduced the acetylation levels to some degree, in line with these enzymes utilizing the same pool of NAD+ (Figure 6G–H). SIRT3 silencing RNA (SiRNA) did reduce SIRT3 levels by more than 50% (Figure 6I–J). Accordingly, acetylation levels were increased following SIRT3 siRNA treatment, demonstrating SIRT3 does influence acetylation levels when high levels of NR are introduced (Figure 6K–L). All together, these results indicate stronger sirtuin inhibition with higher NR doses, in line with the observed inhibition in mouse cardiomyocyte mitochondria (Figure 5C).
 
@@ -102,7 +138,7 @@ Mitochondrial dysfunction has been suggested to play an important role in the pr
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/59828/elife-59828-fig7-v1.jpg)
 
-**Figure 7.:** +) due to overactive (mt).DNA damage repair and consequences of nicotinamide (NAM) accumulation in cardiac tissue.
+**Figure 7.:** DNA damage repair and consequences of nicotinamide (NAM) accumulation in cardiac tissue.
 
 We wanted to investigate the correlation between loss of mtDNA integrity, mitochondrial dysfunction and cardiomyopathy, and utilized a previously characterized mouse model where mtDNA damage in the form of AP sites is induced specifically in cardiomyocytes in adult animals (Lauritzen et al., 2015). AP sites increase the risk of single-strand breaks, which are recognized by PARP that initiates NAD+ consuming repair of this lesion (Caldecott, 2008; Vida et al., 2017). We therefore hypothesized that loss of NAD+ could be a driving force in the fatal phenotype in this model. Interestingly, PARP (over)activation has been shown to contribute to HF induced by the anticancer anthracycline drug, doxorubicin (Pacher et al., 2002), and in vitro and in vivo studies with PARP inhibitors diminished this cytotoxic effect (Ali et al., 2011; Damiani et al., 2018). However, we found that NR supplementation with the intention to increase NAD+ levels failed to improve the cardiac protein deacetylation status and phenotype in the mutUNG1 mice. In fact, a higher dosage of NR even worsened the cardiac deacetylation status in these mice. Importantly, NR caused a marked increase in NAM in both cardiac and liver tissue, and this compound has been shown to inhibit sirtuin activity (Avalos et al., 2005). It is therefore likely that NAM-mediated inhibition of sirtuin activity in the myocardium during NR supplementation results in impaired rather than improved cardiac protein deacetylation and function. An earlier study showed that even though the nuclear and cytoplasmic NAD+ levels were reduced after genotoxic stress, the mitochondrial NAD+ pool remained unchanged (Yang et al., 2007). We however speculate that specific mtDNA damage like AP sites (with concomitant PARP activation) will affect the mitochondrial NAD+ levels as well.
 
@@ -118,13 +154,366 @@ In conclusion, high levels of mtDNA damage can cause a drop in NAD+ levels throu
 
 ## Materials and methods
 
-## Experimental models and treatment
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>mutUNG1</td>
+      <td>PMID:26055793</td>
+      <td></td>
+      <td>Dr Knut H Lauritzen (Oslo University Hospital)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLA/ mutUNG1</td>
+      <td>PMID:20065039</td>
+      <td>Cat:631183 RRID:CVCL_V353</td>
+      <td>Stable transfected; HeLa Tet-On 3 G Cell Line</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nicotinamide Riboside Chloride (Nigagen)</td>
+      <td>ChromaDex</td>
+      <td>Cat:ASB-00014315–15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AZD2461/ Olaparib</td>
+      <td>Merck</td>
+      <td>Cat:SML1858</td>
+      <td>25 µM</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA to SIRT3 (ID:S23766)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat:4392420</td>
+      <td>Transfected construct (human)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA, Negative control</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat:AM4635</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PARP (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat:9542 RRID:AB_2160739</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SIRT3 (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat:5490 RRID:AB_10828246</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SDHA (CII) (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat:ab14715 RRID:AB_301433</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Acetylated-Lysine (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat:9441 RRID:AB_331805</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SOD2 (acetyl K68) (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat:ab137037 RRID:AB_2784527</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SOD2 (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat:13194 RRID:AB_2750869</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Poly/Mono-ADP Ribose (E6F6A) (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat:83732 RRID:AB_2749858</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PHD (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat:2784 RRID:AB_2162928</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>OPA1 (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat:80471 RRID:AB_2734117</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>beta-Actin (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat:A5441 RRID:AB_476744</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MFN2 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat:ab56889 RRID:AB_2142629</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DRP1 (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat:8570 RRID:AB_10950498</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PGC-1a (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat:ab54481 RRID:AB_881987</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG</td>
+      <td>Cell Signaling</td>
+      <td>Cat: 7074 RRID:AB_2099233</td>
+      <td>WB: (1:20000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ant-Mouse IgG</td>
+      <td>Cell Signaling</td>
+      <td>Cat:7076 RRID:AB_330924</td>
+      <td>WB: (1:20000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NAMPT_f</td>
+      <td>Merck</td>
+      <td>PCR primers</td>
+      <td>ATCCAGGAGGCCAAAGAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NAMPT_r</td>
+      <td>Merck</td>
+      <td>PCR primers</td>
+      <td>ATCGGGAGATGACCATCGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NMNT1_f</td>
+      <td>Merck</td>
+      <td>PCR primers</td>
+      <td>TGCATGCTACAGGAAAATAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NMNT1_r</td>
+      <td>Merck</td>
+      <td>PCR primers</td>
+      <td>AAGTTCTGCCATGATGATTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NMNT2_f</td>
+      <td>Merck</td>
+      <td>PCR primers</td>
+      <td>GGCAGATATGGAAGTGATTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NMNT2_r</td>
+      <td>Merck</td>
+      <td>PCR primers</td>
+      <td>GGAGTATGGAGGAGTGATTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NMNT3_f</td>
+      <td>Merck</td>
+      <td>PCR primers</td>
+      <td>CAGCATGAAGAACCGAATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NMNT3_r</td>
+      <td>Merck</td>
+      <td>PCR primers</td>
+      <td>TGGTACCTTCCTGTTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>18 s_f</td>
+      <td>Merck</td>
+      <td>PCR primers</td>
+      <td>CGCGGTTCTATTTTGTTGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>18 s_r</td>
+      <td>Merck</td>
+      <td>PCR primers</td>
+      <td>AGTCGGCATCGTTTATGGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mtDNA_f</td>
+      <td>Merck</td>
+      <td>PCR primers</td>
+      <td>CCCAGCTACTACCATCATTCAAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mtDNA_r</td>
+      <td>Merck</td>
+      <td>PCR primers</td>
+      <td>GATGGTTTGGGAGATTGGTTGATGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OGG1_f</td>
+      <td>Merck</td>
+      <td>PCR primers</td>
+      <td>ATGAGGACCAAGCTAGGTGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OGG1_r</td>
+      <td>Merck</td>
+      <td>PCR primers</td>
+      <td>GCCTCACAATCAACTTATCCC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat:23228</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat:74106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Acetyl-Coenzyme A Assay kit</td>
+      <td>Merck</td>
+      <td>Cat:MAK039</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RM1+ 6000 ppm</td>
+      <td>Special Diets Services</td>
+      <td></td>
+      <td>Custom Dox diet</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TRI Reagent</td>
+      <td>Merck</td>
+      <td>Cat:9424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>qScript cDNA Supermix</td>
+      <td>Quantbio</td>
+      <td>Cat:95048</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PerfeCTa SYBR Green Supermix</td>
+      <td>Quantbio</td>
+      <td>Cat: 95054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sodium succinate dibasic hexahydrate</td>
+      <td>Merck</td>
+      <td>Cat:S2378</td>
+      <td>10 mM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cytochrome c</td>
+      <td>Merck</td>
+      <td>Cat:C7752</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Halt Protease and Phosphatase Inhibitor</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat:1861284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>M-PER Mammalian protein extraction reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat:78505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads Protein G</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat:10003D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Oligofectamine Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat:12252–011</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental models and treatment
 
 The mutUNG1 mouse model (mU1) was designed and characterized as previously described. Here, a transgene consisting of a human version of Uracil-DNA glycosylase 1 (Ung1) (HGNC ID:12572) with a substitution mutation (Tyr147Ala) has been introduced (Lauritzen et al., 2015). Expression of mutUNG1 was induced by addition of doxycycline to the diet corresponding to 6 mg doxycycline/g chow (manufactured by Special Diets Services) when the mice were 8 weeks of age. The mice were sacrificed after 8 weeks of mutUNG1 induction. NR (Niagen from Chromadex) was added to the diet, either as 400 mg/kg chow (medium dose) or 1000 mg/kg chow (high dose), after 6 weeks of mutUNG1 induction (with a total of 2 weeks of NR treatment). These numbers were chosen based on the parameters that a mouse in average weighs 30 g, and eat 3 g chow per day, and published experiments performed by other groups (Gariani et al., 2016; Zhang et al., 2016). All experiments had three to five animals per group unless stated otherwise, with several biological repeats. All experimental procedures were approved by the Section for Comparative Medicine at the University Hospital of Oslo and by the Norwegian Animal Research Authority, FOTS: 8594 and conducted according to the laws and regulation on animal welfare in Norway and in the European Union.
 
 The cell model was designed and characterized as previously described. Briefly, HeLa Tet-On 3 G Cell Line (Clontech/Takara Bio) was stably transfected with the same transgenic element described for the mice model above. The presence of the transgene was confirmed by sequencing. The cells were incubated in a sterile environment and routinely checked to ensure negative mycoplasma contamination (Lauritzen et al., 2010). For PARP inhibition, typically 25 µM Olaparib/AZD2461 (Merck) was used. For SIRT3 knockdown, SIRT3 siRNA (ID: s23766) and negative/scramble control (AM4635) (Thermo Fisher Scientific) was transfected into a six-well plate with the cells, using Oligofectamine Reagent (12252–011, Thermo Fisher Scientific) according to the manufacturer’s recommendations for 48 hr before harvest.
 
-## Protein extract preparation and western blotting
+### Protein extract preparation and western blotting
 
 Mitochondria were isolated from cardiac tissue by the following protocol: Left ventricular cardiac tissue was briefly washed in ice-cold PBS, transferred to 2 mL buffer A1 (250 mM sucrose, 0.5 mM Na2EDTA, 10 mM Tris, pH 7.4) + 200 µL trypsin (Sigma #T4049), homogenized using a tissue homogenizer, and incubated on ice for 20 min; 2 mL buffer B1 (buffer A1 + 0.1% bovine serum albumin) was added, and the sample was further homogenized by two strokes with a Douncer B and centrifuged at 600 × g at 4°C for 10 min. The supernatant (containing mitochondria) was transferred to a new tube and centrifuged at 9800 × g at 4°C for 10 min. The supernatant was discarded and the pellet was resuspended in 500 µL buffer B1 and centrifuged at 9600 × g at 4°C for 10 min. The supernatant was discarded and the pellet was resuspended in 500 µL buffer B1 and centrifuged at 9200 × g at 4°C for 10 min. The supernatant was discarded and mitochondrial protein was extracted with M-PER Mammalian Protein Extraction Reagent (Thermo Fisher Scientific) containing Halt Protease and Phosphatase Inhibitor. The purity of the mitochondrial extracts was validated using proteomic analysis and bioinformatics evaluation.
 
@@ -136,23 +525,23 @@ The protein was separated by SDS-PAGE and transferred to PVDF membrane.
 
 The membranes were developed with Radiance Plus Substrate (Azure Biosystems). The images were captured by LAS-4000 (Fujifilm) and quantified by Image Studio Lite (version 5.2, Li-Cor, Lincoln, NE). All protein quantification blots are normalized against the loading control (CII, PHD, GAPDH or ACTIN).
 
-## HPLC sample preparation and measurement
+### HPLC sample preparation and measurement
 
 NAD+ and NAM extraction and subsequent quantitative analysis were performed as previously described (Yoshino and Imai, 2013). Briefly, tissue sample (typically 50–70 mg) was homogenized in 500 µL HClO4 (0.4 M), incubated on ice for 5 min and precipitated by adding 80 µL KOH (0.2 M) with shaking for 2 min. The samples were then centrifuged at 3000 × g, 10 min, 4°C. Supernatant was filtered using Spin-X centrifuge tube (Costar, filter size 0.22 µM) and the samples were stored in −80°C until HPLC measurements. The samples from tissues were subjected to HPLC using a 20 mm × 3.9 mm Sentry Guard column (Nova-Pak C18 bonded silica) connected to a 150 mm × 4.6 mm Atlantis T3 silica-based, reversed-phase C18 columns (Waters Corporation). NAD+ and NAM were detected by UV detector and UV absorbance was monitored at 261 nm. Elution of NAD+ and NAM from samples was verified and quantified by co-elution with known amounts of NAD+ and NAM standards (Sigma-Aldrich).
 
-## Echocardiography
+### Echocardiography
 
 Examination was performed with the VEVO 2100 system (VisualSonics, Toronto, Canada). Mice were lightly anesthetized with a mixture of 98.25% O2 and 1.75% isoflurane maintained by mask ventilation and were placed on a heated examination table to maintain body temperature. Standard echocardiography examination, including long and short axis images of the left ventricular (LV) and atrium, was performed (Finsen et al., 2005). Recorded data were analyzed offline using the Vevo LAB 3.2 software (VisualSonics). Data were assembled from 8 to 16 animals per group, pooled results of several biological repeats. Relative LV wall thickness was calculated with the formula: (2*LVPW:d)/(LVID:d).
 
-## Proteomic analysis
+### Proteomic analysis
 
 Cardiac mitochondria were isolated from 15 tissue samples as explained above, and lysed in M-PER buffer (Thermo Fisher Scientific) with 0.5% Triton X-100, and aliquoted to 100 µg protein. The proteins were precipitated with TCA/acetone in −20°C overnight. The precipitated proteins were dissolved with 6 M urea in 50 mM ammonium bicarbonate, reduced with DTT, and alkylated with iodoacetamide. Then, the proteins were in-solution digested by diluting the urea concentration to 1 M followed by digestion with trypsin overnight in 37°C. The resulting peptides were desalted and concentrated before mass spectrometry by the STAGE-TIP method using a C18 resin disk (3M Empore). Each peptide mixture was analyzed by an nEASY-LC coupled to QExactive Plus (ThermoElectron, Bremen, Germany) with EASY Spray PepMapRSLC column (C18, 2 µL, 100 Å, 75 µM × 50 cm) using a 60 min LC separation gradient. The resulting MS raw files were submitted to the MaxQuant software version 1.6.1.0 for protein identification and label-free quantification. Carbamidomethyl (C) was set as a fixed modification and acetyl (K), carbamyl (N-term), and oxidation (M) were set as variable modifications. First search peptide tolerance of 20 ppm and main search error of 4.5 ppm were used. Trypsin without proline restriction enzyme option was used, with two allowed miscleavages. The minimal unique+razor peptides number was set to 1, and the allowed FDR was 0.01 (1%) for peptide and protein identification. Label-free quantitation was employed with default settings. The Uniprot database with ‘mouse’ entries (January 2019) was used for the database searches. Perseus software version 1.6.1.3 was used for the statistical analysis of the results. Known contaminants as provided by MaxQuant and identified in the samples were excluded from further analysis. Metascape and Pheatmap R package 1.0.12 was used for further data analysis (R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL https://www.R-project.org/.pheatmap. Pheatmap: Pretty Heatmaps. R package version 1.0.12. https://CRAN.R-project.org/package=pheatmap).
 
-## Electron microscopy
+### Electron microscopy
 
 Pieces of heart tissue were immersion fixed in a phosphate buffered solution containing 1% paraformaldehyde and 2.5% glutaraldehyde. The samples were then dissected into small rectangular pieces (~0.5 mm × 0.5 mm × 1 mm) and cryoprotected by immersion in graded concentrations of glycerol (10%, 20%, and 30%) in 0.1 M phosphate buffer (75 mM Na2HPO4 and 25 mM NaH2PO4, pH 7.4). The samples were plunged into liquid propane cooled to −170°C by liquid nitrogen in a Universal Cryofixation System KF80 (Reichert-Jung). For freeze substitution (Bergersen et al., 2008), the samples were immersed in a solution of anhydrous methanol and 0.5% uranyl acetate overnight at −90°C. The temperature was then raised stepwise in 4°C increments per hour from −90°C to −45°C, where it was kept for the subsequent steps. The tissue samples were washed several times with anhydrous methanol to remove residual water and uranyl acetate, and then infiltrated in the embedding resin Lowicryl HM20 stepwise from Lowicryl/methanol 1:2, 1:1, and 2:1 (1 hr each) to pure Lowicryl (overnight). Polymerization was catalyzed by 360 nm ultraviolet light for 2 days at −45°C followed by 1 day at room temperature. Ultrathin sections (70 nm) were cut by a diamond knife on a Reichert-Jung ultramicrotome and mounted on nickel grids with an adhesive pen (David Sangyo). The ultrathin sections were contrasted in uranyl acetate (5%) and lead citrate (30%), before they were observed in a Philips CM100 EM.
 
-## Analysis and quantification of EM micrographs
+### Analysis and quantification of EM micrographs
 
 Cristae organization and cristae inter-organelle organization was evaluated based on a scoring system where 5 was the highest level of organization and 1 the lowest. For mitochondrial shape/circularity, scoring was also applied but 5 was the highest degree of circularity and 1 the lowest. One to five images were evaluated for each animal, N=5 for each group except Wt where N=4.
 
@@ -160,18 +549,18 @@ IMJ length was quantified using ImageJ, where total measured IMJ length was norm
 
 All analyzed samples were from area LV tissue with myocardium cut in longitudinal direction. All samples were analyzed, randomized, and blinded.
 
-## qPCR
+### qPCR
 
 Total RNA was isolated from mouse hearts, using RNeasy Tissue Mini Kit (Qiagen) in combination with Trizol Reagent (Sigma-Aldrich, Merck, Darmstadt, Germany) in accordance with the manufacturer’s recommendations. cDNA was produced from the isolated RNA using qScript cDNASupermix (Quantabio). For rt-PCR measurement of mtDNA copy number, total DNA was isolated using Dneasy Blood and Tissue Kit (Qiagen). rt-PCR reactions were carried out in a 20 μL mixture containing PerfeCTa SYBR Green Supermix (Quantabio), 100 nM of each primer, and 10 ng cDNA or 5 ng total DNA. All reactions were done in triplicates. Negative controls with water were performed for each target. Standard curves with a 5-point 1:10 dilution series, starting with 100 ng, were made for each target. Default PCR program settings were used. All reactions were run on a Stratagene Mx3005P (Agilent Technologies) using the default settings recommended by the manufacturer and analyzed using MxPro software. Data were calculated based on the standard curves (standard curve method), and target of interest was normalized against the control target gene(S) (18 s for cDNA and OGG1 for mtDNA). Standard curves with R2 values of <0.99 were rejected.
 
-## Oxygraph
+### Oxygraph
 
 Mitochondrial complex II-driven respiratory capacity measured in heart homogenates were analyzed by high-resolution respirometry (Oxygraph-2K; Oroboros). Frozen heart tissue (left ventricle) was homogenized in 1 mL of MSHE buffer, pelleted at 10,000 × g, washed once, and resuspended in 250 μL of MSHE buffer. Mir05 buffer was supplied with succinate (10 mM). Cytochrome C (10 μM) was added when respiration was stabilized. The succinate-/cytochrome C-based respiration was then set as respiration capacity.
 
-## Acetyl CoA levels
+### Acetyl CoA levels
 
 Acetyl CoA levels were measured using Acetyl-Coenzyme A Assay kit (Sigma-Aldrich, Merck, Darmstadt, Germany) according to the manufacturer’s recommendations.
 
-## Statistics
+### Statistics
 
 All experiments using animals were n=3–5 per group unless stated otherwise, and several biological repeats were conducted for all experiments. All quantitative data are represented as means ± the standard error of the mean. Unpaired, two-tailed t-tests were performed unless otherwise stated. The null hypothesis was rejected at the 0.05 level.

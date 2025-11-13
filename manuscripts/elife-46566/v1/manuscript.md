@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.46566.001 Neural progenitors undergo temporal patterning to generate diverse neurons in a chronological order. This process is well-studied in the developing Drosophila brain and conserved in mammals. During larval stages, intermediate neural progenitors (INPs) serially express Dichaete (D), grainyhead (Grh) and eyeless (Ey/Pax6), but how the transitions are regulated is not precisely understood. Here, we developed a method to isolate transcriptomes of INPs in their distinct temporal states to identify a complete set of temporal patterning factors. Our analysis identifies odd-paired (opa), as a key regulator of temporal patterning. Temporal patterning is initiated when the SWI/SNF complex component Osa induces D and its repressor Opa at the same time but with distinct kinetics. Then, high Opa levels repress D to allow Grh transcription and progress to the next temporal state. We propose that Osa and its target genes opa and D form an incoherent feedforward loop (FFL) and a new mechanism allowing the successive expression of temporal identities.
+Neural progenitors undergo temporal patterning to generate diverse neurons in a chronological order. This process is well-studied in the developing Drosophila brain and conserved in mammals. During larval stages, intermediate neural progenitors (INPs) serially express Dichaete (D), grainyhead (Grh) and eyeless (Ey/Pax6), but how the transitions are regulated is not precisely understood. Here, we developed a method to isolate transcriptomes of INPs in their distinct temporal states to identify a complete set of temporal patterning factors. Our analysis identifies odd-paired (opa), as a key regulator of temporal patterning. Temporal patterning is initiated when the SWI/SNF complex component Osa induces D and its repressor Opa at the same time but with distinct kinetics. Then, high Opa levels repress D to allow Grh transcription and progress to the next temporal state. We propose that Osa and its target genes opa and D form an incoherent feedforward loop (FFL) and a new mechanism allowing the successive expression of temporal identities.
 
 ## Introduction
 
@@ -29,43 +29,103 @@ Here, we describe a FACS-based method to isolate INPs from three different tempo
 
 ## Results
 
-## Transcriptome analysis of distinct INP temporal states
+### Transcriptome analysis of distinct INP temporal states
 
 To obtain a comprehensive list of temporally regulated genes in INPs, we used FACS to purify INPs at each of their three temporal states: D+, Grh+ and Ey+ (Figure 1B). For this, we generated fly lines expressing tdTomato under an INP specific promoter (erm-Gal4 >CD8::tdTomato) and expressing GFP-fusions of one of the temporal identity factors (D-GFP, Grh-GFP and Ey-GFP, Figure 1—figure supplement 1A). Although D-GFP flies were generated with CRISPR/Cas9 method to knock-in GFP into the endogenous locus, Grh-GFP and Ey-GFP flies were generated as BAC clones insertions (Spokony and White, 2012). To test if extra copies from BAC clones cause overexpression effects, numbers of each temporal state were quantified in control versus GFP-tagged brains (Figure 1—figure supplement 1A). After dissection and dissociation of third instar larval brains, GFP-positive INP populations (D-GFP+, Grh-GFP+ and Ey-GFP+) were identified (Figure 1B and Figure 1—figure supplement 1B) as the largest cells with highest GFP and tdTomato expression (Figure 1—figure supplement 1B). Using immunofluorescence (IF), these cells were verified to be mature INPs (Figure 1—figure supplement 1C-D). All sorted cells within the INP populations expressed Dpn, indicating a 100% mature INP identity, while unsorted cells showed a mixture of Dpn+ and Dpn- cells (Figure 1—figure supplement 1C-D). We validated the temporal identity of the progenitors by performing IF for their respective temporal identity markers (Figure 1C–F and Figure 1—figure supplement 2). Importantly, each GFP+ sorted INP population was 100% positive for its respective temporal marker (Figure 1F). In contrast, the unsorted cells consisted of mixed cell populations containing various temporal identities (Figure 1—figure supplement 2B). Lastly, we tested for the presence of sorted cells expressing markers of two temporal identities, which reflects transition states of INP temporal patterning as occurs in vivo. Analyzing Grh IF on D-GFP+ and Ey-GFP+ sorted cells, and Ey IF on Grh-GFP+ sorted cells revealed that sorted populations contained only 4–6% of such double-positive cells (Figure 1C–F, and Figure 1—figure supplement 2A-C), suggesting we can isolate almost pure populations of different temporal states. Collectively, we established the genetic tools and methodology to precisely sort INPs into separate populations according to their three distinct temporal states.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cartoon depicting a typical type II neuroblast of larval Drosophila brain; NB and imINPs (empty circles) are followed by mINPs and neurons, GMCs omitted for simplicity. INPs are temporally patterned with Dichaete (blue), Grainyhead (red), and Eyeless (orange), and neurons are Bsh (green) or Toy (brown) positive. Summary of the regulation of temporal identity factors, and their progeny. (B) Cartoon illustrating the strategy used to isolate temporally-staged INPs. (C–E) D-, Grh and Ey-GFP FACS-sorted cells are stained for D and Grh (C), Grh or Ey (D–E), GFP-tagging temporal identity factors (in green, D or, Grh or Ey), tdTomato tagging the membrane of INPs (magenta), antibody staining (gray) scale bar 10 μm, (induced with ermGal4, marked with membrane bound tdTomato). (F) Graphs showing the percentage of temporal identity positive cells in D-, Grh- or Ey-GFP FACS sorted cells. n numbers are depicted on the graphs. (G) Hierarchical clustering analysis of gene log2fc between three different temporally-staged INP populations. (H) qPCR analysis of opa and ham expression levels in FACS-sorted D+, Grh+ and Ey+ INPs. Data are mean ± SD, n = 3, genes were normalized to Act5c, and then the average expression levels, Delta-Delta Ct method is used. (I) Graph showing the rpm levels of opa and ham between different INP temporal stages.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Close-up images of larval brains expressing tdtomato in INP-specific manner (UAS-cd8tomato; ermGal4, shown in magenta) and temporal identity markers, Dichaete, Grainyhead and Eyeless tagged with GFP, stained for Dpn (gray). Type II lineages are outlined with yellow dashed lines, NBs are marked with *, scale bar 10 μm, (induced with ermGal4, marked with membrane bound tdTomato). Graphs showing the numbers of each temporal identity markers in control vs GFP-tagged brains. (B) Representative FACS plots of sorted INP temporal stages. The population with highest tomato and GFP expression (vertical axis) versus biggest cell size (horizontal axis) was sorted to obtain D+, Grh+, and Ey+ INPs. (C) D-, Grh- and Ey-GFP FACS-sorted cells and their unsorted control are stained for Dpn (gray), GFP-tagging temporal identity factors (in green, D or, Grh or Ey), tdTomato tagging the membrane of INPs (magenta), Dapi (gray), scale bar 20 μm, yellow arrowheads mark Dpn positive cells, (induced with ermGal4, marked with membrane bound tdTomato). (D) Graph showing the percentages of Dpn positive cells, n is the number of the cells analyzed. (E) qPCR analysis of temporal identity expression levels in FACS-sorted D+, Grh+ and Ey+ INPs. Data are mean ± SD, n = 3, genes were normalized to Act5c, and then the average expression levels, Delta-Delta Ct method is used. (F) Graph showing the rpm levels of marker genes between different INP temporal stages.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A–C) Immunofluorescence of unsorted controls for Figure 1C–E, scale bar 10 μm, (induced with ermGal4, marked with membrane bound tdTomato). (D–F) GO-term analysis of each cluster found in hierarchical clustering analysis for biological process, and molecular function. The graphs are color-coded with their respective clusters, the top three hits were shown if applicable. Cluster two doesn’t have any GO-term enrichment.
+
 Since our stringent FACS sorting conditions led to low RNA yields, we generated cDNA libraries using DigiTag (Landskron et al., 2018; Wissel et al., 2018). With this RNA sequencing strategy, we found 458 genes expressed differently between D+ and Grh+ INPs, and 466 genes between Grh+ and Ey+ INPs (FDR 0.05, log2foldchange > 1, and Rpm (reads per million mapped reads)>10 in one of three samples/D+, Grh+ or Ey+ INPs). Hierarchical clustering identified genes specifically expressed in certain temporal states, and therefore potentially involved in temporal patterning (Figure 1G). First, we confirmed the quality of our dataset by examining the transcriptional changes of temporal identity genes with quantitative PCR (qPCR) (Figure 1—figure supplement 1E). As expected, each temporal state had high expression levels of their own temporal identity genes. Second, we confirmed the expression of known temporal identity genes (Figure 1—figure supplement 1F). FACS-purified Grh+ INPs expressed high levels of Ey mRNA. However, immunofluorescent analysis showed that Grh+ INPs expressed only low levels of Ey protein, suggesting that post-transcriptional modifications regulate the Grh-to-Ey transition (Figure 1C–F and Figure 1—figure supplement 1F). Third, we performed GO-term analysis on the identified gene clusters. Genes upregulated in D+ INPs showed enrichment for mitochondrial translation, cellular nitrogen compound metabolic process and gene expression (Figure 1—figure supplement 2D). Genes upregulated in Grh +INPs were enriched for protein binding and system development (Figure 1—figure supplement 2E). Finally, genes upregulated in Ey +INPs were enriched for neurogenesis and sequence-specific DNA binding (Figure 1—figure supplement 2F). Interestingly, we observed that the glial identity-promoting factor glial cell missing (gcm) and cell cycle inhibitor dacapo (dap) were upregulated in Ey+ INPs (Figure 1G—figure supplement 1F). These observations support previous findings indicating that INPs begin producing glia cells instead of neurons during their later cell divisions, and that Ey is required for cell cycle exit (Baumgardt et al., 2014; Bayraktar and Doe, 2013; Ren et al., 2018; Viktorin et al., 2013). To identify genes that regulate transitions of temporal patterning, we focused on genes with a dynamic expression pattern between INP populations. To this end, we focused on genes with a log2foldchange > 1 in either the D-to-Grh or Grh-to-Ey transition. From this list, we excluded genes with a log2foldchange < 0.5 in the remaining transition. We applied a cut-off of Rpm (reads per million mapped reads)>50 in one of the three temporal identity states due to the fact that all the other temporal identity factors, along with osa and ham, had high expression levels. With these criteria, we identified 71 genes (Supplementary file 1 and Supplementary file 2), 49 of which displayed an expression pattern of high in D + INPs, low in Grh +INPs, and finally higher in Ey +INPs. Among these genes, odd-paired (opa) was ranked as the 5th hit that is most downregulated in Grh+ INPs (Figure 1G–I, Supplementary file 1). Since Osa binds to the TSS of opa in order to prime its expression (Eroglu et al., 2014), we investigated in detail the potential role of Opa in regulating INP temporal patterning.
 
-## Odd-paired (opa) is required for the progression of INP temporal patterning
+### Odd-paired (opa) is required for the progression of INP temporal patterning
 
 Opa is a transcription factor containing five zinc finger domains and is essential for para-segmental subdivision of Drosophila embryos (Benedyk et al., 1994; Mizugishi et al., 2001). During development, Opa ensures the timely activation of the transcription factors engrailed and wingless (Benedyk et al., 1994). To test if opa regulates INP temporal patterning, we depleted opa using RNAi expressed specifically in INPs with ermGal4. Opa knockdown slightly increased the total number of INPs (Dpn+ cells), but drastically increased the number of D+ INPs while decreasing the number of both Grh+ and Ey+ INPs (Figure 2A–D). We confirmed this result by performing mosaic analysis with a repressible cell marker (MARCM) to create mosaic opa (-/-) mutant or control opa (+/+) GFP+ cell clones (Lee and Luo, 1999). Control clones were indistinguishable from WT, whereas opa mutant clones contained predominantly D+ INPs, at the expense of the other two temporal states (Figure 2E–F). The RNAi and mosaic mutant analysis both indicate that loss of Opa causes a shift in INP temporal state identity such that the early generated D+ INPs are increased while the later generated Grh+ and Ey+ INPs are decreased. These results suggest that opa is regulating the D-to-Grh transition by either repressing D or activating Grh. Since it has been previously shown that Grh is not sufficient for D repression (Bayraktar and Doe, 2013), we tested whether the main role of opa is to repress D. For this, we depleted opa in DM1 lineages, which undergo temporal patterning by expressing only D and then Ey (Figure 2—figure supplement 1). Opa knock-down in DM1 lineages caused a significant increase in the number of D+ INPs at the expense of Ey+ INPs, suggesting that opa is required for D repression (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig2-v1.jpg)
+
+**Figure 2.:** (A) Close-up images of larval brains expressing RNAi against opa in INPs, stained for Dpn and D (induced with ermGal4, marked with membrane bound GFP). Lineages are outlined with yellow dashed line. (B) Close-up images of larval brains expressing RNAi against opa in INPs, stained for Dpn and Grh (induced with ermGal4, marked with membrane bound GFP). Lineages are outlined with yellow dashed line. (C) Close-up images of larval brains expressing RNAi against opa in INPs, stained for Dpn and Ey (induced with ermGal4, marked with membrane bound GFP). Lineages are outlined with yellow dashed line. (D) Quantification of INP numbers in different temporal stages identified by antibody staining of Dpn+, D+ cells, Dpn+, Grh+ cells, and Dpn+, Ey+ cells in control and opa knock-down brains, n = 10, total INP numbers in control were normalized to 100%. Data represent mean ± SD, ***p<=0.001, Student’s t-test (D+ INPs control 12.44 ± 1.42 [n = 10], opa RNAi 34.66 ± 1.02 [n = 12], p<0.001; Grh+ INPs control 8.5 ± 1.32 [n = 10], opa RNAi 0.5 ± 0.65 [n = 12], p<0.001; Ey+ INPs control 13.2 ± 0.98 [n = 10], opa RNAi 0.2 ± 0.4 [n = 10], p<0.001). (E) Control and opa mutant MARCM clones marked by membrane-bound GFP, stained for Dpn, Grh and D after 120 hr of induction. Control clone has D+, Dpn+ INPs followed by Grh+ INPs while opa mutant clone has increased number of D+ INPs and decreased number of Grh+ INPs. (F) Control and opa mutant MARCM clones marked by membrane-bound GFP, stained for Dpn, D and Ey after 120 hr of induction. Opa mutant clone has higher number of D+ INPs and lower number of Ey+ INPs. Scale bar 10 μm in all images.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) Close-up images of larval brains expressing RNAi against opa in type II DM1 lineages, stained for Dpn, D (A), Dpn and Ey (B), lineages are outlined with yellow dashed line, scale bar 10 μm (induced with ermGal4, marked with membrane bound GFP). (C) Quantification of Dpn+, D+, and Dpn+, Ey+ INPs in control and opa knock-down brains, n = 5, total INP numbers in control were normalized to 100%. Data represent mean ± SD, ***p<=0.001, Student’s t-test. (D+ INPs control 11.14 ± 0.55 [n = 7], opa RNAi 26.43 ± 0.92 [n = 7], p<0.001; Ey+ INPs control 14.4 ± 0.92 [n = 5], opa RNAi 0.43 ± 0.29 [n = 7], p<0.001).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Close-up images of larval brains expressing RNAi against opa in type II lineages, stained for Dpn and Ase, lineages outlined with yellow dashed lines, Dpn-/Ase- INPs are marked with white arrowhead, Dpn-/Ase+ INPs are marked with yellow arrowhead, scale bar 10 μm (induced with worGal4, aseGal80, marked with membrane bound GFP). (B–C) Close-up images of larval brains expressing RNAi against opa in type II lineages, stained for Dpn, D and Ey (B), and Grh (C), lineages are outlined with yellow dashed line, scale bar 10 μm (induced with worGal4, aseGal80, marked with membrane bound GFP). (D) Quantification of Dpn+, D+, and Dpn+, Grh+, and Dpn+, Ey+ INPs in control and opa knock-down brains, n = 5, total INP numbers in control were normalized to 100%. Data represent mean ± SD, ***p<=0.001, Student’s t-test. (D+ INPs control 12.6 ± 1.5 [n = 5], opa RNAi 33.3 ± 2.35 [n = 6], p<0.001; Grh+ INPs control 8.8 ± 1.6 [n = 5], opa RNAi 0 [n = 6], p<0.001; Ey+ INPs control 14 ± 0.89 [n = 5], opa RNAi 0.5 ± 0.86 [n = 5], p<0.001). (E) Close-up images of larval brains expressing opa RNAi in INPs, stained for pH3, Mira and aPKC, the crescents of Mira staining are marked with white arrowhead, and the crescents of aPKC staining are marked with yellow arrowhead, scale bar 10 μm, (induced with ermGal4, marked with membrane bound GFP).
+
 Finally, we tested if opa regulates processes upstream of temporal patterning during the stages of initial INP maturation with a type II-specific driver line. When expressing opa RNAi specifically in type II NBs, we observed no effect on INP maturation (Figure 2—figure supplement 2A) as observed with sequential activation of Ase and Dpn, but immunofluorescent analysis of INPs for D, Grh and Ey expression showed the same phenotype as INPs depleted for opa (Figure 2—figure supplement 2B-D). Collectively, these data suggest that opa inhibits D expression. Furthermore, similar to hamlet, Opa appears to act as a temporal identity switch gene, controlling the transition from a D+ to a Grh+ state. To test if opa knock-down impairs INP asymmetric cell division leading to the disruption in temporal patterning, we analyzed the expression of Mira, a known scaffolding protein that localizes asymmetrically during cell division, and aPKC, which localizes to apical cortex (Figure 2—figure supplement 2E). Opa-depleted INPs can asymmetrically segregate Mira and aPKC, which suggests that asymmetric division is normal. Thus, opa is indeed a temporal switch factor required for the D-to-Grh state.
 
-## Opa regulates the transition from early to late born neurons and is required for motor function
+### Opa regulates the transition from early to late born neurons and is required for motor function
 
 INP temporal patterning results in the production of different neuronal subtypes at distinct periods of neurogenesis. For instance, ‘young’, D+ INPs produce Brain-specific homeobox (Bsh)+ neurons and ‘old’, Ey+ INPs produce Toy+ neurons (Bayraktar and Doe, 2013). Since the progression of INP temporal identity is disrupted in opa-depleted INPs, we tested whether this disrupted identity affects the production of different types of neurons. INP-driven opa RNAi displayed a significant increase in Bsh+ neurons, at the expense of Toy+ neurons (Figure 3A–C). In addition, opa-depleted MARCM clones also contained increased numbers of Bsh+ neurons compared to wild-type counterparts (Figure 3D). This result confirms that shifting the INP identity toward a D+ identity leads to a concomitant increase in the Bsh+ neurons produced by D+ INPs. Thus, altering the temporal identity progression of neural progenitors can alter the proportions of neuronal subtypes in the brain.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig3-v1.jpg)
 
-**Figure 3.:** (A–B) Close-up images of larval brains expressing RNAi against opa in INPs, immunofluorescence for Bsh (A), and Toy (B) neuronal markers, scale bar 10 μm, lineages are outlined with yellow dashed line (induced with ermGal4, marked with membrane bound GFP). (C) Quantification of Bsh+ and Toy+ neurons in control and opa knock-down brains, n = 11, total Bsh+ or Toy+ neuron numbers in control were normalized to 100%. Data represent mean ± SD, ***p<=0.001, Student’s t-test. (D) Control and opa mutant MARCM clone marked by membrane-bound GFP, stained with Mira, Ase, and Bsh antibodies after 120 hr of induction. The clones are marked with yellow dashed line, scale bar 10 μm. (E) Close-up images of adult central complex, composed of fan-shaped body (FB), noduli (NO), ellipsoid body (EB), and protocerebral bridge (PB) of control and opa knock-down brains, stained with Bruchpilot antibody (gray) (induced with ermGal4) scale bar 50 μm. (F) Negative geotaxis assay with control and opa RNAi expressing flies (induced with ermGal4, marked with membrane bound GFP). For each genotype n = 10 replicates, each consisting of 10 adult female or male adults. Data are mean ± SD, ***p<0.001, Student’s t-test.10.7554/eLife.46566.020Figure 3—source data 1.+ or Toy+ neuron numbers in control versus opa-depleted brains with INP-specific driver (Figure 3C).10.7554/eLife.46566.021Figure 3—source data 2.Figure 3F).
+**Figure 3.:** (A–B) Close-up images of larval brains expressing RNAi against opa in INPs, immunofluorescence for Bsh (A), and Toy (B) neuronal markers, scale bar 10 μm, lineages are outlined with yellow dashed line (induced with ermGal4, marked with membrane bound GFP). (C) Quantification of Bsh+ and Toy+ neurons in control and opa knock-down brains, n = 11, total Bsh+ or Toy+ neuron numbers in control were normalized to 100%. Data represent mean ± SD, ***p<=0.001, Student’s t-test. (D) Control and opa mutant MARCM clone marked by membrane-bound GFP, stained with Mira, Ase, and Bsh antibodies after 120 hr of induction. The clones are marked with yellow dashed line, scale bar 10 μm. (E) Close-up images of adult central complex, composed of fan-shaped body (FB), noduli (NO), ellipsoid body (EB), and protocerebral bridge (PB) of control and opa knock-down brains, stained with Bruchpilot antibody (gray) (induced with ermGal4) scale bar 50 μm. (F) Negative geotaxis assay with control and opa RNAi expressing flies (induced with ermGal4, marked with membrane bound GFP). For each genotype n = 10 replicates, each consisting of 10 adult female or male adults. Data are mean ± SD, ***p<0.001, Student’s t-test.
 
 We next investigated whether altering the proportions of neuronal subtypes leads to a defect on brain morphology and function. The adult central complex (CCX) brain region relies on type II NB neurogenesis (Bayraktar et al., 2010; Izergina et al., 2009). Opa-depletion in INPs caused major alterations in the gross morphology of the adult CCX. The fan-shaped body (FB) was enlarged, the noduli (NO) and ellipsoid body (EB) only partially formed, and the protocerebral bridge (PB) appeared fragmented (Figure 3E). Since the CCX is required for adult motor functions (Callaerts et al., 2001; Young and Armstrong, 2010), we tested whether altered CCX morphology affected motor behavior. Compared to control flies, INP-driven opa RNAi caused impaired negative geotaxis performance (Figure 3F). Thus, opa is a temporal switch gene required for neuronal subtype specification, which is required for the correct assembly and function of the adult central complex. Thus, the temporal identity specification of neural progenitors is crucial for proper neural cell complexity, and brain function.
 
-## Dichaete and Opa are sequentially expressed in INPs
+### Dichaete and Opa are sequentially expressed in INPs
 
 If opa is required for the D-to-grh transition, what is the molecular mechanism of this transitional regulation? To answer this question, we first confirmed that opa is indeed a target of Osa in type II NB lineages by analyzing opa protein expression within the NB lineage, and whether this expression is regulated by Osa. We generated healthy, homozygous, endogenously C-terminally tagged opa::V5 knock-in flies (Figure 4—figure supplement 1A). Through immunofluorescent analysis of V5 tag expression, we observed that Opa is expressed throughout the type II lineage in INPs (marked with Dpn and Ase) and, GMCs (Pros+ cells) and neurons, but not in NBs (Dpn+) or immature INPs (Dpn-/Ase- or Dpn-/Ase+ cells) (Figure 4—figure supplement 1B-D). Opa is also expressed in the DM1 lineage, even though DM1 lineages display a temporal patterning lacking Grh expression (Figure 1—figure supplement 1E). To check the specificity of the opa-V5 line, we depleted opa specifically in type II lineages using RNAi. As expected, opa-V5 expression decreased with opa-RNAi (Figure 4—figure supplement 1E-F). The proper expression of opa is dependent on Osa, since Osa-knockdown in type II NBs resulted in a loss of Opa (Figure 4—figure supplement 2A and B).
 
 Since both D and opa are direct Osa targets, we next compared the expression pattern of D and opa (Figure 4A). Without exception, D+/opa- INPs appeared before D+/opa+ cells in the lineage (Figure 4A). However, in later temporal states, all Grh+ and Ey+ INPs expressed opa (Figure 4B, and Figure 4—figure supplement 3A). Our transcriptome data suggest that opa expression fluctuates throughout the three different INP populations. To confirm this hypothesis, we calculated the intensity of the opa-V5 signal among these three populations (Figure 4C–D, and Figure 4—figure supplement 3B). Indeed, we found that D+ INPs express the highest opa protein levels (Figure 4C), while Grh+ INPs express the lowest (Figure 4D and Figure 4—figure supplement 3B). Since D expression precedes opa expression, it is possible that D activates opa. However, upon type II NB specific D knockdown, opa localization was unchanged (Figure 4E). Interestingly, D knockdown alone also did not prevent later temporal stages, Grh and Ey, to appear (Bayraktar and Doe, 2013), suggesting that other factor(s) are required to maintain temporal identities in INPs. Since Osa-depleted type II NB lineages fail to initiate temporal patterning (Eroglu et al., 2014), we hypothesized that one of these unidentified factors could be a target of Osa that remains expressed in D-depleted INPs, such as opa. To test this hypothesis, we examined the epistatic genetic interactions between D and Opa. Double knock down of D and opa by type II NB-specific RNAi produced type II lineages containing fewer Dpn+/Ase+ INPs compared to controls (Figure 4F–G). This result suggests that even though D and opa are Osa targets, two of them alone cannot fully account for Osa tumor suppressor role (Figure 4F–G). Importantly, all known temporal identity markers on the remaining cells were absent, suggesting a complete loss of temporal identity in these INPs (Figure 4F–G). However, since these cells also lost their INP identity due to lack of Dpn and Ase, they exhibit a different phenotype than Osa knockdown. Therefore, our data suggest that opa is required for the repression of D, the activation of Grh, and thus the progression of temporal identities in INPs.
 
-## Opa is an expression level-dependent repressor of D
+![Figure 4.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig4-v1.jpg)
+
+**Figure 4.:** (A) Close-up images of fly brains endogenously expressing V5-tagged opa in INPs, stained for V5, Dpn and D. D+, V5- cell is marked with arrows, lineages are outlined with yellow dashed line, scale bar 10 μm and 5 μm, (induced with ermGal4, marked with membrane bound GFP). (B) Close-up images of fly brains endogenously expressing V5-tagged opa in INPs, stained for V5, Dpn and Grh, lineages are outlined with yellow dashed line, scale bar 10 μm, (induced with ermGal4, marked with membrane bound GFP). (C) Quantifications of opa::V5-signal intensity measurements of D+ vs D- INPs, n = 10, normalized to background intensity. Data represent mean ± SD, ***p<=0.001, Student’s t-test. (D) Quantifications of opa::V5-signal intensity measurements of Grh+ vs Grh- INPs, n = 10, normalized to background intensity. Data represent mean ± SD, ***p<=0.001, Student’s t-test. (E) Close-up images of fly brains endogenously expressing V5-tagged opa and RNAi for D in type II lineages, stained for V5, Dpn and D, lineages are outlined with yellow dashed line, scale bar 10 μm, (induced with worGal4, aseGal80, marked with membrane bound GFP). (F–G) Close up images of control versus opa and D double knock-down brains in type II lineages, stained with Dpn, D and Grh (C), or for Dpn, Ey and Ase (C) antibodies, lineages are outlined with yellow dashed lines, scale bar 10 μm, (induced with Dcr2; UAS-StgRFP; VT17-Gal4, marked with nuclear RFP).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Western blot confirmation of opa::V5 expressing flies. Wild-type embryos were used as control, three different clones were tested: two C-terminus tagged embryos and one N-terminus tagged embryos were used. Alpha-tubulin is used as loading control while V5 antibody was used for opa::V5 tag. (B) Opa is expressed in type II lineages. Overview image of brain lobe expressing endogenously V5-tagged opa, stained for Dpn and V5 antibodies, lobes are outlined with yellow dashed lines, scale bar 50 μm, (induced with ermGal4, marked with membrane bound GFP). (C) Close-up images of (B) marked with yellow square, stained for Dpn, Ase, and V5 antibodies. Type II lineage is outlined with yellow dashed lines, scale bar 10 μm, (induced with ermGal4, marked with membrane bound GFP). Yellow arrow is marking the start of opa expression. (D) Close-up images of brain lobes expressing endogenously V5-tagged opa, stained for Dpn, Prospero and V5 antibodies, lineages are outlined with yellow dashed lines, scale bar 10 μm, (induced with ermGal4, marked with membrane bound GFP). (E) Close-up images of DM1 lineage expressing endogenously V5-tagged opa, stained for Dpn and V5 antibodies, lineage is outlined with yellow dashed lines, while the brain lobe is outlined with yellow line (DM1 lineages can be deduced from their localization in the brain lobe), scale bar 10 μm, (induced with ermGal4, marked with membrane bound GFP). (F) Overview images of brain lobes expressing opa-V5 alone or along with opa RNAi in type II lineages, stained for Dpn and V5 antibodies, lobes are outlined with yellow dashed lines, scale bar 50 μm, (induced with worGal4, aseGal80, marked with membrane bound GFP). (G) Close up images of (F) marked with yellow square, stained with Dpn and V5 antibodies. Type II lineages are outlined with yellow dashed lines, scale bar 10 μm, (induced with worGal4, aseGal80, marked with membrane bound GFP).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Opa is induced directly by Osa. Overview images of brain lobes expressing opa-V5 alone or along with osa shmiR in type II lineages, stained for Dpn and V5 antibodies, lobes are outlined with yellow dashed lines, scale bar 50 μm, (induced with worGal4, aseGal80, marked with membrane bound GFP). Osa knock-down causes the loss of V5 expression in type II lineages. (B) Close-up images of (A) marked with yellow square, stained with Dpn, V5 and Ase antibodies. Type II lineage is outlined with yellow dashed lines, scale bar 10 μm, (induced with worGal4, aseGal80, marked with membrane bound GFP). Knock-down of Osa causes higher numbers of Dpn+ cells which are V5-.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Close-up images of fly brains endogenously expressing V5-tagged opa in INPs, stained for V5, Dpn and Ey. Lineages are outlined with yellow dashed line, scale bar 10 μm, (induced with ermGal4, marked with membrane bound GFP). (B) Quantifications of opa::V5-signal intensity measurements of Ey+ vs Ey- INPs, n = 7, normalized to background intensity. Data represent mean ± SD, not significant, Student’s t-test.
+
+### Opa is an expression level-dependent repressor of D
 
 If Opa suppresses D, one puzzling aspect of our data is the presence of double-positive D+/opa+ INPs (Figure 4A). To better understand this paradox, we overexpressed opa in type II NBs during a period before D is normally expressed. Overexpression of opa resulted in shorter lineages (Figure 5—figure supplement 1A-B), decreased total INP numbers (Figure 5—figure supplement 1A), and a loss of type II NBs (marked by Dpn or Mira) (Figure 5—figure supplement 1A-B). Co-expressing the apoptosis inhibitor p35 did not prevent NB loss or shortened lineages, suggesting that opa overexpression does not induce cell death, but causes premature differentiation instead (Figure 5—figure supplement 1C). NBs and INPs overexpressing opa successfully segregated Mira and aPKC, excluding that asymmetric cell division was altered (Figure 5—figure supplement 1D-E, and Figure 2—figure supplement 2E). Overexpressing opa in type II NB lineages caused complete loss of D+ INPs, but the few remaining INPs could still activate Grh and Ey (Figure 5A–C), which is similar to D knockdown phenotype (Bayraktar and Doe, 2013).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig5-v1.jpg)
+
+**Figure 5.:** (A) Close-up images of control and opa overexpressing brains in type II lineages, stained for Dpn, D and Grh antibodies, lineages are outlined with yellow dashed lines, scale bar 10 μm, (induced with worGal4, aseGal80, marked with membrane bound GFP). Overexpression of opa in type II lineages causes the loss of D+ INPs. (B) Close-up images of control and opa overexpressing brains in type II lineages, stained for Dpn, and Ey antibodies, lineages are outlined with yellow dashed lines, scale bar 10 μm, (induced with worGal4, aseGal80, marked with membrane bound GFP). (C) Quantification of D+, Grh+ and Ey+ INPs in control and opa overexpressing brains, n = 10, total INP numbers in control were normalized to 100%. Data represent mean ± SD, p<=0.05, ***p<=0.001, Student’s t-test (D+ INPs control 12.18 ± 1.33 [n = 10], opa GOF 0.4 ± 0.6 [n = 10], p<0.001; Grh+ INPs control 7.38 ± 1 [n = 10], opa GOF 5.12 ± 2.20 [n = 10], p<0.05; Ey+ INPs control 13.5 ± 0.76 [n = 10], opa GOF 6 ± 3.5 [n = 10], p<0.001). (D) Close-up images of control and opa overexpressing brains in INPs, stained for Dpn, and Ey, lineages are outlined with yellow dashed lines, scale bar 10 μm, (induced with ermGal4, marked with membrane bound GFP). (E) Close-up images of control and opa overexpressing brains in INPs, stained for Dpn, D and Grh, lineages are outlined with yellow dashed lines, scale bar 10 μm, (induced with ermGal4, marked with membrane bound GFP). (F) Quantification of D+, Grh+ and Ey+ INPs in control and opa overexpressing brains, n = 5, total INP numbers in control were normalized to 100%. Data represent mean ± SD, *p<=0.05, ***p<0.001, Student’s t-test (D+ INPs control 12.4 ± 1.01 [n = 5], opa GOF 4.83 ± 0.68 [n = 5], p<0.0001; Grh+ INPs control 8.2 ± 1.16 [n = 5], opa GOF 10.33 ± 1.24 [n = 5], p<0.05; Ey+ INPs control 13.4 ± 1.01 [n = 5], opa GOF 15.71 ± 1.9 [n = 5], p<0.05).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Overview images of brain lobes, control or type II lineage-specific opa overexpression, stained for Dpn, and Ase antibodies, lobes are outlined with yellow dashed lines, yellow arrowheads mark Dpn positive type II NB lineages, one lineage is invisible in this z-plane, scale bar 50 μm, (induced with worGal4, aseGal80, marked with membrane bound GFP). (B) Overview images of brain lobes, control or type II lineage-specific opa overexpression, stained for Mira antibody, lobes and type II lineages are outlined with yellow dashed lines, scale bar 50 μm, (induced with worGal4, aseGal80, marked with membrane bound GFP). (C) Overexpression of apoptosis inhibitor p35 in type II lineages is not sufficient to prevent type II lineage loss upon opa overexpression. Overview images of brain lobes overexpressing opa alone and together with p35, stained for Dpn and Ase antibodies, lobes are outlined with yellow dashed lines, scale bar 50 μm, (induced with worGal4, aseGal80, marked with membrane bound GFP). (D) Close-up images of control and opa overexpressing type II NBs stained for pH3, Mira and aPKC, scale bar 10 μm, the crescents of Mira staining are marked with white arrowhead, and the crescents of aPKC staining are marked with yellow arrowhead, (induced with worGal4, aseGal80, marked with membrane bound GFP). (E) Close-up images of larval brains overexpressing opa in INPs, stained for pH3, Mira and aPKC, the crescents of Mira staining are marked with white arrowhead, and the crescents of aPKC staining are marked with yellow arrowhead, scale bar 10 μm, control is in Figure 2—figure supplement 2E (induced with ermGal4, marked with membrane bound GFP).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–B) Close-up images of larval brains overexpressing opa in type II DM1 lineages, stained for Dpn, D and Ey (A), and Dpn and Grh (B), lineages are outlined with yellow dashed line, scale bar 10 μm (induced with ermGal4, marked with membrane bound GFP). (C) Quantification of Dpn+, D+, and Dpn+, Ey+ INPs in control and opa gain-of-function brains, n = 6, total INP numbers in control were normalized to 100%. Data represent mean ± SD, ***p<=0.001, Student’s t-test. (D+ INPs control 11.33 ± 0.42 [n = 6], opa GOF 5.5 ± 1.05 [n = 6], p<0.001; Ey+ INPs control 14 ± 0.36 [n = 6], opa GOF 18.33 ± 0.61 [n = 6], p<0.001).
+
 To exclude that these could result from altered NB patterning, we next overexpressed opa in an INP-specific manner during a stage where D is normally expressed. Opa overexpression caused a decrease in D+ INPs (Figure 5D–F), and a concomitant increase in both Grh+ and Ey+ INP populations (Figure 5D–F). This result further indicates that Opa represses the early D+ temporal identity, but also activates later Grh+ temporal identity. We also overexpressed opa in DM1 lineages in an INP-specific manner, which resulted in a decrease in D+ INP numbers and an increase in Ey+ INPs (Figure 5—figure supplement 2A and C). However, ectopic Grh expression was undetectable (Figure 5—figure supplement 2B), suggesting opa mis-expression does not cause ectopic Grh expression. Collectively, these results show that opa-mediated repression of D depends on Opa expression levels.
 
-## Opa and ham together control the correct representation of each temporal identity
+### Opa and ham together control the correct representation of each temporal identity
 
 Having established an interaction between opa and D, we next wondered if opa and ham, two temporal switch genes, can recapitulate the Osa loss-of-function phenotype, a more upstream regulator of lineage progression in type II NBs. Osa knock-down causes INPs to revert back to the NB-state due to a failure to initiate temporal patterning, while single depletion of opa or ham leads to either an increase in D+ or Grh+ cells, respectively (Figure 2; Eroglu et al., 2014). Co-expressing opa RNAi with ham shmiR in an INP-specific manner caused supernumerary Dpn+, Ase+ INPs (Figure 6—figure supplement 1A). In addition, the number of D+/Dpn+ and Grh+/Dpn+ INPs were also increased, which is in contrast to single depletion of opa or ham (Figure 6A–B, Figure 2; Eroglu et al., 2014). Thus, opa and ham loss-of-function phenotypes are additive. Importantly, despite inducing over-proliferation of mature INPs (Ase+/Dpn+), depleting both opa and ham in type II NBs could not recapitulate the Osa loss-of-function phenotype because imINPs could mature and express Ase, and therefore did not revert into ectopic NBs (Figure 6—figure supplement 1B). This suggests that Osa regulates temporal patterning in two levels: initiation by D activation, and progression by opa and ham.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig6-v1.jpg)
+
+**Figure 6.:** (A–B) Overview images of brain lobes expressing RNAi against opa and ham in INPs and their close-up images (marked with yellow squares), stained for Dpn, D and Ey (A), or Dpn and Grh (B) antibodies, lineages and lobes are outlined with yellow dashed lines, scale bar 50 μm for brain lobes, 10 μm for zoomed images, (induced with ermGal4, marked with membrane bound GFP). (C) Model depicting the genetic interactions between temporal switch genes (opa and hamlet), and temporal identity genes (D, Grh, and Ey).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46566/elife-46566-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Overview images of opa and ham RNAi expressing brains in type II lineages are stained for Dpn and Ase antibodies, brain lobes are outlined with yellow dashed lines, yellow arrowheads mark lineages with overproliferation, scale bar 50 μm, (induced with ermGal4, marked with membrane bound GFP). (B) Overview images of osa RNAi, and opa/ham double RNAi expressing brains in type II lineages are stained for Dpn and Ase antibodies, brain lobes are outlined with yellow dashed lines, scale bar 50 μm, (induced with worGal4, aseGal80, marked with membrane bound GFP).
 
 ## Discussion
 
@@ -85,53 +145,462 @@ Our findings provide a novel regulatory network model controlling temporal patte
 
 ## Materials and methods
 
-## Fly strains, RNAi, and clonal analysis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>osa</td>
+      <td>NA</td>
+      <td>FBgn0261885</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>Dichaete</td>
+      <td>NA</td>
+      <td>FBgn0000411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>Grainyhead</td>
+      <td>NA</td>
+      <td>FBgn0259211</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>Eyeless</td>
+      <td>NA</td>
+      <td>FBgn0259211</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>Hamlet</td>
+      <td>NA</td>
+      <td>FBgn0045852</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>Odd-paired</td>
+      <td>NA</td>
+      <td>FBgn0003002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CD8::GFP; ermGAL4</td>
+      <td>PMID:18621688 and 20152183</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CD8::tdTomato; ermGAL4</td>
+      <td>PMID:18621688 and 20152183</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-dcr2; wor-GAL4, aseGAL80; UAS-CD8::GFP</td>
+      <td>PMID:21549331</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>VT17-GAL4</td>
+      <td>Vienna Drosophila RNAi Center</td>
+      <td>212057, discarded</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-stinger::RFP</td>
+      <td>PMID:11056799</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-opaRNAi</td>
+      <td>Vienna Drosophila RNAi Center</td>
+      <td>101531</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DRNAi</td>
+      <td>Vienna Drosophila RNAi Center</td>
+      <td>49549 and 107194</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mcherryshmiR</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>35785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-osaRNAi</td>
+      <td>Vienna Drosophila RNAi Center</td>
+      <td>7810</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-hamshmiR</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>32470</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-osashmiR</td>
+      <td>PMID:2460726</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-p35</td>
+      <td>PMID:7925015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-opa</td>
+      <td>PMID:17329368</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>D::GFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>endogenously GFP-tagged D in C-terminus</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Grh-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>42272</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ey-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>42271</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>opa::V5</td>
+      <td>this paper</td>
+      <td></td>
+      <td>endogenously V5-tagged opa in C-terminus</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT82B, opa7</td>
+      <td>PMID:17329368</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>elavGal4 (C155)</td>
+      <td>PMID:10197526</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>actCas9</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>54590</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hsCre</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Deadpan (guinea pig, polyclonal)</td>
+      <td>PMID:2460726</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Asense (rat, polyclonal)</td>
+      <td>PMID:2460726</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Miranda (guinea pig, polyclonal)</td>
+      <td>PMID:2460726</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Grainyhead (rat, polyclonal)</td>
+      <td>PMID:19945380</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Dichaete (rabbit, polyclonal)</td>
+      <td>gift from Steve Russell</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Eyeless (mouse, monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>anti-eyeless</td>
+      <td>(1:50), RRID:AB_2253542</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Toy (guinea pig, polyclonal)</td>
+      <td>gift from Uwe Walldorf</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Bsh (guinea pig, polyclonal)</td>
+      <td>gift from Makoto Sato, PMID:21303851</td>
+      <td></td>
+      <td>(1:500), RRID:AB_2567934</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 (mouse, monoclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>V8012</td>
+      <td>(1:500 IF, 1:1000 WB), RRID:AB_261888</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Bruchpilot nc82 (mouse, monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>nc82</td>
+      <td>(1:10), RRID:AB_2314866</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 IgG2a (mouse, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>R960-25</td>
+      <td>(1:500), RRID:AB_2556564</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 (rabbit, polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab9116</td>
+      <td>(1:500), RRID:AB_307024</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Prospero (mouse, monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>MR1A</td>
+      <td>(1:20), RRID:AB_528440</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pH3(Ser10) (mouse, monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>9706S</td>
+      <td>(1:1000), RRID:AB_331748</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-aPKC (rabbit, polyclonal)</td>
+      <td>Santa Cruz Biotechnologies</td>
+      <td>sc-216</td>
+      <td>(1:500), RRID:AB_2300359</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-alpha tubulin (mouse, monoclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>T6199</td>
+      <td>(1:10000), RRID:AB_477583</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 405, 568, 647</td>
+      <td>Invitrogen</td>
+      <td>Alexa Fluor dyes</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 700, 800</td>
+      <td>LI-COR</td>
+      <td>IRDye</td>
+      <td>(1:15000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 7</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BWA</td>
+      <td>PMID:19451168</td>
+      <td></td>
+      <td>RRID:SCR_010910</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TopHat</td>
+      <td>PMID:19289445</td>
+      <td></td>
+      <td>RRID:SCR_013035</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HTSeq</td>
+      <td>PMID:25260700</td>
+      <td></td>
+      <td>RRID:SCR_005514</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 (v1.12.4)</td>
+      <td>PMID:25516281</td>
+      <td></td>
+      <td>RRID:SCR_016533</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bedtools (v2.26.0)</td>
+      <td>PMID:20110278</td>
+      <td></td>
+      <td>RRID:SCR_006646</td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>TRIzol LS</td>
+      <td>Ambion</td>
+      <td>10296010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>Agencourt AMPure XP beads</td>
+      <td>Beckman Coulter</td>
+      <td>A63880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>Nextera DNA Library Prep Kit</td>
+      <td>Illumina</td>
+      <td>FC-121–1031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pU6-Bbsl-chiRNA</td>
+      <td>PMID:23709638</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Rinaldini solution</td>
+      <td>PMID:22884370</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains, RNAi, and clonal analysis
 
 The following Drosophila stocks were used: UAS-opaRNAi (VDRC, TID: 101531), UAS-mcherryshmiR (BL35785), UAS-DRNAi (VDRC, TID: 49549, 107194), UAS-osaRNAi (VDRC, TID: 7810), UAS-hamshmiR (BL32470), UAS-osashmiR (Eroglu et al., 2014), UAS-p35, UAS-opa (Lee et al., 2007), PBac{grh-GFP.FPTB}VK00033 (BL42272), PBac{EyGFP.FPTB}VK00033 (BL42271) (Spokony and White, 2012), D::GFP (generated in this study), opa::V5 (generated in this study). GAL4 driver lines used: UAS-cd8::tdTomato; ermGal4, UAS-cd8::GFP; ermGal4 (Pfeiffer et al., 2008; Weng et al., 2010), UAS-dcr2; worGal4, aseGal80; UAS-cd8::GFP (Neumüller et al., 2011), UAS-dcr2; UAS-cd8::GFP; VT17-Gal4 (VDRC, TID: 212057, discarded). Mutant fly strains used for clonal analysis were FRT82B, opa7 (Lee et al., 2007). Clones were generated by Flippase (FLP)/FLP recombination target (FRT)-mediated mitotic recombination, using the elavGal4 (C155) (Lee and Luo, 1999). Larvae were heat shocked for 90 min at 37°C and dissected as third-instar wandering larvae (120 hr). RNAi crosses were set up and reared at 29°C, and five days later, third-instar wandering larvae were dissected. w118 was used as control for comparison with RNAi lines, whereas UAS-mcherryshmiR was used as control for comparison with shmiR lines, and experiments involving UAS-transgenes.
 
-## Generation of opa::V5 and D::GFP flies
+### Generation of opa::V5 and D::GFP flies
 
 For both genes, the guides were cloned as overlapping oligos into linearized pU6-BbsI-chiRNA (Addgene 45946, Gratz et al., 2013) and injected at 100 ng/μl into actCas9 flies (BL 54590, Port et al., 2014). Donors (either oligos or plasmid) were co-injected at 250 ng/μl. For opa, donors were Ultramer Oligos from IDT with around 60nt homology arms on either side. For D, homology arms were 800 bp and 900 bp long. Donor plasmid contained GFP, V5, 3xFlag, and dsRed. They were screened for dsRed eyes and then, the selection cassette was removed with hsCre (BL 851). opa gRNA GATGCATCCCGGCGCAGCGA opa donor GAACCCGCTGAACCATTTCGGACACCATCACCACCACCACCACCTGATGCATCCCGGCGCgGCaACcGCGTATggtaagcctatacctaaccctcttcttggTCTAGAtagcacgTGAGAGTGGGAGAACTGGTGGCCCGAGGAGGCGCCACCGCCGGCCGCCCAACCGA
 
 D gRNA GTGCTCTATTAGAGTGGAGT
 
-## Negative geotaxis assay
+### Negative geotaxis assay
 
 Negative geotaxis assay was used as described before (Ali et al., 2011), where the percentage of flies passing the 8.5 cm mark in 10 s was assessed. For each genotype and gender, 10 two-day old adult flies in 10 biological replicates were measured and for each replicate, 10 measurements were performed with 1 min rest period in between.
 
-## Immunohistochemistry and antibodies
+### Immunohistochemistry and antibodies
 
 Larval or adult brains were dissected in 1X PBS, and then fixed for 20 min at room temperature (RT) in 5% paraformaldehyde in PBS and washed once with 0.1% TritonX in PBS (PBST). The brains were incubated for 1 hr at RT with blocking solution (5% normal goat serum or 1% BSA in PBST). Blocking was followed by overnight incubation at 4°C with primary antibodies in blocking solution. Then, the brains were washed three times with PBST, and incubated for 1 hr at RT with secondary antibodies (1:500, goat Alexa Fluor, Invitrogen) in blocking solution. After secondary antibody, brains were washed three times with PBST, and mounted in Vectashield Antifade Mounting Medium (Vector Labs).
 
 Antibodies used in this study were: guinea pig anti-Deadpan (1:1000, Eroglu et al., 2014), rat anti-Asense (1:500, Eroglu et al., 2014), guinea pig anti-Miranda (1:500, Eroglu et al., 2014), rat anti-Grh (1:1,000; Baumgardt et al., 2009); rabbit anti-D (1:1,000; gift from Steve Russell); mouse anti-Ey (1:10; DSHB); guinea pig anti-Toy (gift from Uwe Walldorf), guinea pig anti-Bsh (gift from Makoto Sato), mouse anti-Bruchpilot nc82 (1:10, DSHB), mouse anti-V5 (1:500, Sigma Aldrich, V8012), mouse antiV5 IgG2a (Thermo Fisher Scientific, R960-25, used in Figure 4—figure supplement 1D), rabbit anti-V5 (Abcam, ab9116, used in Figure 4—figure supplement 3A), mouse anti-Pros (1:100, Developmental Studies Hybridoma Bank), mouse anti-pH3(Ser10) (1:500, Cell Signaling Technologies, 9701S), rabbit anti-aPKC (1:500, Santa Cruz Biotechnology, sc-216). Throughout the paper, for every quantification, dorsomedial 2 and 3 type II NB lineages (DM2 and 3) were considered, if not stated otherwise.
 
-## In vitro immunofluorescence
+### In vitro immunofluorescence
 
 FACS-sorted cells from ~300 larval brains (UAS-cd8::tdTomato, ermGal4) or their unsorted control matches were plated on cover glass (Labtek II Chambered Coverglass, 8-well, 155409, Thermo Fisher Scientific) into Schneider’s medium (Homem et al., 2013). The dishes were placed onto ice and cells were incubated for 1 hr to settle down. Cells were then fixed with 5% PFA in PBS at RT and washed three times with 0.1% PBST. After washes, cells were incubated for 1 hr at RT with blocking solution (5% normal goat serum in 0.1% PBST). The cells were then incubated overnight at 4°C with primary antibodies in blocking solution, which was followed by three washes with 0.1% PBST, and secondary antibody (1:500, goat Alexa Fluor, Invitrogen) incubation for 1 hr at RT. Cells were again washed three times with 0.1% PBST, and then mounted in in Vectashield Antifade Mounting Medium with Dapi (Vector Labs).
 
-## Microscopy
+### Microscopy
 
 Confocal images were acquired with Zeiss LSM 780 confocal microscopes.
 
-## Western blot
+### Western blot
 
 Embryos were collected and dechorionated, then boiled in 2x Laemmli buffer and loaded on 4–12% gradient Bis-Tris gels (NuPAGE, Invitrogen). After SDS-PAGE according to Invitrogen’s protocol, proteins were transferred to a Nitrocellulose membrane (0.22 µm, Odyssey LI-COR) for 2 hr at 100V, blocked with 5% milk powder in blocking solution (PBS with 0.2% Tween) for 1 hr, overnight incubation with primary antibody in blocking solution at 4°C, 3x washed with washing solution (PBS with 0.1% Tween) and followed by 1 hr incubation with secondary antibody (1:15000, goat IRDye, LI-COR)in blocking solution. After three washes with washing solution, the membranes were air-dried, and fluorescent signal were detected with Odyssey CLx imaging system (Odyssey CLx LI-COR). Antibodies used were: mouse anti-V5 (1:1000, Sigma Aldrich, V8012), anti-alpha tubulin (1:10000, Sigma Aldrich, T6199).
 
-## Intensity measurements
+### Intensity measurements
 
 For intensity measurements of opa-V5 signal, cells expressing Dpn and temporal identity markers (D, Grh or Ey) were circled with selection tools. Raw integrity density (sum of gray values of all selected pixels) was measured using FIJI. In each image, five temporal identity positive INP and five temporal identity negative INP were measured for raw integrity density along with three background circles with no opa-V5 signal, (eg. D+ vs D- INPs). Then, corrected total cell fluorescent (CTCF) were calculated with ‘Integrated density – (Area of selected cells X Mean fluorescence of background readings)’ (McCloy et al., 2014). Then, the mean of temporal identity positive versus negative cells were calculated and the values were normalized to means of background for each brain.
 
-## Statistics
+### Statistics
 
 Statistical analyses were performed with GraphPad Prism 7. Unpaired two-tailed Student’s t-test was used to assess statistical significance between two genotypes. Experiments were not randomized, and investigator was not blinded. Sample sizes for experiments were estimated on previous experience with similar setup which showed significance, thus, no statistical method was used to determine sample size.
 
-## Cell dissociation and FACS
+### Cell dissociation and FACS
 
 Cell dissociation and FACS were performed as previously described with minor changes (Berger et al., 2012; Harzer et al., 2013). UAS-cd8::tdTomato; ermGal4 driver line was used to induce expression of membrane bound tdTomato in INPs. In addition to the driver lines, temporal identity factors were tagged with GFP. Flies expressing both fluorophores were dissected at L3 stage, and then dissociated into single cell suspension. Decreasing levels of tdTomato were observed in differentiated cells due to lack of driver line expression. Thus, biggest cells with highest tdTomato expression and highest GFP expression were sorted.
 
 For RNA isolation, cells were sorted directly in TRIzol LS (10296010, Invitrogen), while for cell staining, they were sorted on coated glass-bottomed dishes and stained as previously described (Berger et al., 2012).
 
-## RNA isolation, cDNA synthesis and qPCR
+### RNA isolation, cDNA synthesis and qPCR
 
 RNA was isolated using TRIzol LS reagent (10296010, Invitrogen) from FACS sorted cells. Then RNA samples were used as template for first-strand cDNA synthesis with random hexamer primers (SuperScriptIII, Invitrogen). qPCR was done using Bio-Rad IQ SYBR Greeen Supermix on a Bio-Rad CFX96 cycler. Expression of each gene was normalized to Act5c, and relative levels were calculated using the 2-ΔΔCT method (Livak and Schmittgen, 2001). Primer used were:
 
@@ -147,32 +616,32 @@ ham ATAGATCCTTTGGCCAGCAGAC, AGTACTCCTCCCTTTCGGCAAT
 
 opa CTGAACCATTTCGGACACCATC, CCAGTTCTCCCACTCTCAATAC
 
-## RNA sequencing – DigiTAG
+### RNA sequencing – DigiTAG
 
 For each experiment 6000–7000 FACS-sorted D+, Grh+ or Ey+ INPs were isolated by TRIzol purification. Three replicates from each temporal state were analyzed. RNA samples were reverse transcribe into first-strand cDNA using SuperScriptIII Reverse Transcriptase (Invitrogen) with oligo-(dT)2- primers. Then the second-strand cDNA were generated. It was followed by library preparation with Nextera DNA Library Preparation Kit (Illumina) as previously described (Landskron et al., 2018; Wissel et al., 2018). Libraries were purified with Agencourt AMPure XP beads. Purified libraries were then subjected to 50 base pair Illumina single-end sequencing on a Hiseq2000 platform.
 
-## Transcriptome data analysis
+### Transcriptome data analysis
 
-## Alignment
+#### Alignment
 
 Unstranded reads were screened for ribosomal RNA by aligning with BWA (v0.7.12; Li and Durbin, 2009) against known rRNA sequences (RefSeq). The rRNA subtracted reads were aligned with TopHat (v2.1.1; Kim et al., 2013) against the Drosophila genome (FlyBase r6.12). Introns between 20 and 150,000 bp are allowed, which is based on FlyBase statistics. Microexon-search was enabled. Additionally, a gene model was provided as GTF (FlyBase r6.12).
 
-## Deduplication
+#### Deduplication
 
 Reads arising from duplication events are marked as such in the alignment (SAM/BAM files) as follows. The different tags are counted at each genomic position. Thereafter, the diversity of tags at each position is examined. First, tags are sorted descending by their count. If several tags have the same occurrence, they are further sorted alphanumerically. Reads sharing the same tag are sorted by the mean PHRED quality. Again, if several reads have the same quality, they are further sorted alphanumerically. Now the tags are cycled through by their counts. Within one tag, the read with the highest mean PHRED quality is the unique cor- rect read and all subsequent reads with the same tag are marked as duplicates. Furthermore, all reads that have tags with one mis- match difference compared the pool of valid read tags are also marked as duplicates.
 
-## Summarization
+#### Summarization
 
 Small nuclear RNA, rRNA, tRNA, small nucleolar RNA, and pseudogenes are masked from the GTF (FlyBase r6.12) with subtractBed from bedtools (v2.26.0; Quinlan and Hall, 2010). The aligned reads were counted with HTSeq (v0.6.1; intersec- tion-nonempty), and genes were subjected to differential expres- sion analysis with DESeq2 (v1.12.4; Love et al., 2014).
 
-## Hierarchical clustering analysis
+### Hierarchical clustering analysis
 
 Genes are filtered by the indicated log2fc and an adjusted P value < 0.05 in at least one pairwise comparison. In addition, a minimal expression of 10 RPM in at least one condition was required. The tree cut into four clusters (different cluster numbers were tested; Kolde and Package, 2015, 202AD). GO analysis was performed with FlyMine (Lyne et al., 2007), Holm-Bonferroni correction with max p-value 0.05 was used. Biological process and molecular function were the ontologies.
 
-## Accession numbers
+### Accession numbers
 
 The Gene Expression Omnibus accession number for the RNA-sequencing data reported in this paper is GSE127516.
 
-## GO-term analysis
+### GO-term analysis
 
 Gene Ontology (GO) enrichment analysis were performed on www.flymine.org/with Holm-Bonferroni correction with max p-value 0.05. Biological process and molecular function were the ontologies.

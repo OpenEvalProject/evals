@@ -19,22 +19,22 @@
 
 ### Affiliations
 
-1. https://ror.org/02dgjyy92 DeWitt Daughtry Family Department of Surgery, University of Miami Leonard M. Miller School of Medicine Miami United States
-2. https://ror.org/02dgjyy92 Department of Medicine, Division of Pulmonary, Critical Care and Sleep, University of Miami Miami United States
+1. DeWitt Daughtry Family Department of Surgery, University of Miami Leonard M. Miller School of Medicine Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
+2. Department of Medicine, Division of Pulmonary, Critical Care and Sleep, University of Miami Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
 3. Medical Director, Grand Health Institute Miami United States
-4. https://ror.org/02dgjyy92 Cancer Modeling Shared Resource Sylvester Comprehensive Cancer Center, University of Miami Miami United States
+4. Cancer Modeling Shared Resource Sylvester Comprehensive Cancer Center, University of Miami Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
 5. ZenBio Inc. Durham United States
-6. https://ror.org/02dgjyy92 Department of Biochemistry and Molecular Biology, University of Miami, Miller School of Medicine Miami United States
-7. https://ror.org/02dgjyy92 Dr. JT Macdonald Foundation Biomedical Nanotechnology Institute, University of Miami Miller School of Medicine Miami United States
-8. https://ror.org/02dgjyy92 Miami Clinical and Translational Science Institute, University of Miami Miller School of Medicine Miami United States
-9. https://ror.org/02dgjyy92 Wound Healing and Regenerative Medicine Research Program, Dr Phillip Frost Department of Dermatology and Cutaneous Surgery, University of Miami Miami United States
-10. https://ror.org/04b6x2g63 Department of Medicine, Stritch School of Medicine, Loyola University Chicago Chicago United States
+6. Department of Biochemistry and Molecular Biology, University of Miami, Miller School of Medicine Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
+7. Dr. JT Macdonald Foundation Biomedical Nanotechnology Institute, University of Miami Miller School of Medicine Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
+8. Miami Clinical and Translational Science Institute, University of Miami Miller School of Medicine Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
+9. Wound Healing and Regenerative Medicine Research Program, Dr Phillip Frost Department of Dermatology and Cutaneous Surgery, University of Miami Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
+10. Department of Medicine, Stritch School of Medicine, Loyola University Chicago Chicago United States ([ROR:04b6x2g63](https://ror.org/04b6x2g63))
 
 † Corresponding author
 
 ## Abstract
 
-MicroRNAs (miRNA) and other components contained in extracellular vesicles may reflect the presence of a disease. Lung tissue, sputum, and sera of individuals with idiopathic pulmonary fibrosis (IPF) show alterations in miRNA expression. We designed this study to test whether urine and/or tissue derived exosomal miRNAs from individuals with IPF carry cargo that can promote fibrosis. Exosomes were isolated from urine (U-IPFexo), lung tissue myofibroblasts (MF-IPFexo), serum from individuals with IPF (n=16) and age/sex-matched controls without lung disease (n=10). We analyzed microRNA expression of isolated exosomes and their in vivo bio-distribution. We investigated the effect on ex vivo skin wound healing and in in vivo mouse lung models. U-IPFexo or MF-IPFexo expressed miR-let-7d, miR-29a-5p, miR-181b-3p and miR-199a-3p consistent with previous reports of miRNA expression obtained from lung tissue/sera from patients with IPF. In vivo bio-distribution experiments detected bioluminescent exosomes in the lung of normal C57Bl6 mice within 5 min after intravenous infusion, followed by distribution to other organs irrespective of exosome source. Exosomes labeled with gold nanoparticles and imaged by transmission electron microscopy were visualized in alveolar epithelial type I and type II cells. Treatment of human and mouse lung punches obtained from control, non-fibrotic lungs with either U-IPFexo or MF-IPFexo produced a fibrotic phenotype. A fibrotic phenotype was also induced in a human ex vivo skin model and in in vivo lung models. Our results provide evidence of a systemic feature of IPF whereby exosomes contain pro-fibrotic miRNAs when obtained from a fibrotic source and interfere with response to tissue injury as measured in skin and lung models. This work was supported in part by Lester and Sue Smith Foundation and The Samrick Family Foundation and NIH grants R21 AG060338 (SE and MKG), U01 DK119085 (IP, RS, MTC).
+Background:MicroRNAs (miRNA) and other components contained in extracellular vesicles may reflect the presence of a disease. Lung tissue, sputum, and sera of individuals with idiopathic pulmonary fibrosis (IPF) show alterations in miRNA expression. We designed this study to test whether urine and/or tissue derived exosomal miRNAs from individuals with IPF carry cargo that can promote fibrosis.Methods:Exosomes were isolated from urine (U-IPFexo), lung tissue myofibroblasts (MF-IPFexo), serum from individuals with IPF (n=16) and age/sex-matched controls without lung disease (n=10). We analyzed microRNA expression of isolated exosomes and their in vivo bio-distribution. We investigated the effect on ex vivo skin wound healing and in in vivo mouse lung models.Results:U-IPFexo or MF-IPFexo expressed miR-let-7d, miR-29a-5p, miR-181b-3p and miR-199a-3p consistent with previous reports of miRNA expression obtained from lung tissue/sera from patients with IPF. In vivo bio-distribution experiments detected bioluminescent exosomes in the lung of normal C57Bl6 mice within 5 min after intravenous infusion, followed by distribution to other organs irrespective of exosome source. Exosomes labeled with gold nanoparticles and imaged by transmission electron microscopy were visualized in alveolar epithelial type I and type II cells. Treatment of human and mouse lung punches obtained from control, non-fibrotic lungs with either U-IPFexo or MF-IPFexo produced a fibrotic phenotype. A fibrotic phenotype was also induced in a human ex vivo skin model and in in vivo lung models.Conclusions:Our results provide evidence of a systemic feature of IPF whereby exosomes contain pro-fibrotic miRNAs when obtained from a fibrotic source and interfere with response to tissue injury as measured in skin and lung models.Funding:This work was supported in part by Lester and Sue Smith Foundation and The Samrick Family Foundation and NIH grants R21 AG060338 (SE and MKG), U01 DK119085 (IP, RS, MTC).
 
 ## Introduction
 
@@ -54,147 +54,687 @@ A complete list of source data including antibodies and primer sequences are inc
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/79543/elife-79543-fig1-v1.jpg)
 
-## Urine and blood collection
+### Urine and blood collection
 
 Random urine samples were collected (between 10am-2pm) from male control individuals (ages 55–77) or individuals seen in the Interstitial Lung Disease (ILD, subjects with IPF ages 55–79; subjects with non-CF bronchiectasis ages 73–86; and subjects with asthma ages 36–61) clinic at the University of Miami Hospital. Written informed consent was obtained from the participants with an approved Institutional Review Board protocol (IRB# 20060249) at the University of Miami Miller School of Medicine. Control urines were obtained from subjects that did not have underlying kidney, heart, or lung comorbidities and had normal albumin creatinine ratios sampled in an aliquot of each urine. Urine was processed within 3 hr of collection and spun at 3000xg for 15 min to remove sediment; supernatant was aliquoted at 10 ml/tube. Patients with known kidney disease or diabetes were excluded from the study and a small aliquot of urine was used to measure urine albumin and creatinine to exclude samples with albuminuria (Creatinine LiquiColor Test, Stanbio Laboratory Boerne, TX and albumin Elisa, Bethyl laboratories, Montgomery, TX). Tubes were frozen at –80 ° C until exosome isolation. Blood was collected during the same clinic visit as urine collection. Blood was left to clot for up to an hour and serum separated after centrifugation at ~2500 RPM for 15 min. Serum was aliquoted and frozen at –80 ° C until exosome isolation. Samples were selected for inclusion in the present study after review of imaging confirming a definitive UIP pattern (Raghu et al., 2022). Lung function (forced vital capacity [FVC], FEV1, FEV1: FVC%) and diffusion capacity (DLCO) performed at several facilities, were obtained from subjects’ medical records closest to the timing of the sample (Table 1).
 
-## Cell culture
+**Table 1.**
+ Male IPF (A group), non‐CF bronchiectasis (B group), or asthma (C group) urine-derived exosomes (Age of subject at collection).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject number</th>
+      <th>Age of subject at collection</th>
+      <th>Ethnicity</th>
+      <th>FEV1 (liters)</th>
+      <th>FVC (liters)</th>
+      <th>FEV/FVC (%)</th>
+      <th>FEV/FVC(predicted)</th>
+      <th>DLCO (% reference)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A4</td>
+      <td>72</td>
+      <td>Caucasian</td>
+      <td>2.93</td>
+      <td>3.75</td>
+      <td>78</td>
+      <td>77</td>
+      <td>11.8 (47)</td>
+    </tr>
+    <tr>
+      <td>A6</td>
+      <td>79</td>
+      <td>Caucasian</td>
+      <td>2.36</td>
+      <td>2.91</td>
+      <td>81</td>
+      <td>67</td>
+      <td>16.2 (101)</td>
+    </tr>
+    <tr>
+      <td>A26</td>
+      <td>69</td>
+      <td>Hispanic</td>
+      <td>1.67</td>
+      <td>1.98</td>
+      <td>84</td>
+      <td>72</td>
+      <td>NT</td>
+    </tr>
+    <tr>
+      <td>A35</td>
+      <td>69</td>
+      <td>Hispanic</td>
+      <td>1.71</td>
+      <td>2.22</td>
+      <td>70</td>
+      <td>73</td>
+      <td>NT</td>
+    </tr>
+    <tr>
+      <td>A37</td>
+      <td>69</td>
+      <td>Hispanic</td>
+      <td>2.7</td>
+      <td>3.21</td>
+      <td>84</td>
+      <td>77</td>
+      <td>10.5 (44)</td>
+    </tr>
+    <tr>
+      <td>A62</td>
+      <td>67</td>
+      <td>Hispanic</td>
+      <td>1.94</td>
+      <td>2.33</td>
+      <td>82</td>
+      <td>77</td>
+      <td>8.7 (33)</td>
+    </tr>
+    <tr>
+      <td>A74</td>
+      <td>75</td>
+      <td>Hispanic</td>
+      <td>2.48</td>
+      <td>2.77</td>
+      <td>80</td>
+      <td>74</td>
+      <td>9.9 (49)</td>
+    </tr>
+    <tr>
+      <td>A77</td>
+      <td>55</td>
+      <td>Hispanic</td>
+      <td>1.14</td>
+      <td>1.27</td>
+      <td>90</td>
+      <td>78</td>
+      <td>6.7 (32)</td>
+    </tr>
+    <tr>
+      <td>A80</td>
+      <td>70</td>
+      <td>Caucasian</td>
+      <td>2.09</td>
+      <td>2.62</td>
+      <td>78.9</td>
+      <td>87.49</td>
+      <td>11.8 (48)</td>
+    </tr>
+    <tr>
+      <td>A83</td>
+      <td>68</td>
+      <td>Hispanic</td>
+      <td>2.39</td>
+      <td>2.69</td>
+      <td>86</td>
+      <td>75</td>
+      <td>10.5 (49)</td>
+    </tr>
+    <tr>
+      <td>A84</td>
+      <td>67</td>
+      <td>Caucasian</td>
+      <td>1.78</td>
+      <td>2.12</td>
+      <td>84</td>
+      <td>84</td>
+      <td>14.1 (57)</td>
+    </tr>
+    <tr>
+      <td>A88</td>
+      <td>66</td>
+      <td>Hispanic</td>
+      <td>1.36</td>
+      <td>1.39</td>
+      <td>98</td>
+      <td>75</td>
+      <td>2.6 (11)</td>
+    </tr>
+    <tr>
+      <td>A90</td>
+      <td>67</td>
+      <td>Caucasian</td>
+      <td>2.48</td>
+      <td>2.85</td>
+      <td>88.9</td>
+      <td>74</td>
+      <td>12.8 (45)</td>
+    </tr>
+    <tr>
+      <td>A103</td>
+      <td>72</td>
+      <td>Hispanic</td>
+      <td>1.95</td>
+      <td>2.64</td>
+      <td>74</td>
+      <td>75</td>
+      <td>13.4 (59)</td>
+    </tr>
+    <tr>
+      <td>A104</td>
+      <td>76</td>
+      <td>Caucasian</td>
+      <td>2.95</td>
+      <td>3.27</td>
+      <td>90</td>
+      <td>65</td>
+      <td>14.6 (58)</td>
+    </tr>
+    <tr>
+      <td>A105</td>
+      <td>62</td>
+      <td>Hispanic</td>
+      <td>1.47</td>
+      <td>1.69</td>
+      <td>87</td>
+      <td>78</td>
+      <td>11.7 (41)</td>
+    </tr>
+    <tr>
+      <td>B1</td>
+      <td>73</td>
+      <td>Caucasian</td>
+      <td>1.04</td>
+      <td>2.06</td>
+      <td>50</td>
+      <td>79.91</td>
+      <td>9.6 (48)</td>
+    </tr>
+    <tr>
+      <td>B10</td>
+      <td>70</td>
+      <td>Hispanic</td>
+      <td>1.33</td>
+      <td>2.89</td>
+      <td>46</td>
+      <td>74</td>
+      <td>21.29 (69.5)</td>
+    </tr>
+    <tr>
+      <td>B13</td>
+      <td>86</td>
+      <td>Hispanic</td>
+      <td>2.54</td>
+      <td>3.59</td>
+      <td>70.7</td>
+      <td>74</td>
+      <td>23.08 (76.78)</td>
+    </tr>
+    <tr>
+      <td>C1</td>
+      <td>36</td>
+      <td>Hispanic</td>
+      <td>3.67</td>
+      <td>4.75</td>
+      <td>77.16</td>
+      <td>82.89</td>
+      <td>31.49 (92)</td>
+    </tr>
+    <tr>
+      <td>C4</td>
+      <td>61</td>
+      <td>Caucasian</td>
+      <td>3.38</td>
+      <td>4.72</td>
+      <td>71.65</td>
+      <td>79.09</td>
+      <td>27.77 (96)</td>
+    </tr>
+    <tr>
+      <td>C7</td>
+      <td>44</td>
+      <td>Caucasian</td>
+      <td>3.08</td>
+      <td>4.57</td>
+      <td>67.3</td>
+      <td>70</td>
+      <td>27.83 (96)</td>
+    </tr>
+  </tbody>
+</table>
+
+_NT, not tested._
+
+### Cell culture
 
 Myofibroblasts isolated from male individuals with IPF and fibroblasts isolated from male control lungs were propagated and characterized as previously described (Elliot et al., 2019). All cell lines tested negative for mycoplasma. Two IPF and one control cell isolate was purchased from Lonza (catalog number CC7231 and CC2512, MSCBM, Lonza Inc, Walkersville, MD). Cells (passages 2 or 3) were grown until 80% confluence in 30 T175 flasks in Lonza media. At the time of collection, media was aspirated, and each flask washed three times with PBS to remove serum and serum proteins. After serum-free medium was added back to each flask for an additional 48 hr, the supernatant was collected and exosomes isolated and characterized (See Zen-Bio Inc, Durham, NC method below).
 
-## Exosome Isolation (conditioned tissue culture medium, urine), characterization, and RNA isolation
+### Exosome Isolation (conditioned tissue culture medium, urine), characterization, and RNA isolation
 
 A 4 °C sample was centrifuged at 3000 x g for 20 min at room temperature in a swinging bucket rotor to remove large cells and debris. The clarified supernatant was collected and ultracentrifuged at 100,000 x g for 2 hr, in a fixed angle rotor at 4 °C, to pellet exosomes. The exosome pellet was resuspended in a minimum volume of DPBS (approximately 120 µL/ultracentrifugation tube). Exosomes were characterized using a Thermo NanoDrop spectrophotometer for protein determination and approximate RNA concentration by direct absorbance; exosomes were not lysed, stained, or RNA extracted prior to taking these measurements. Particle diameter and concentration was assessed by tunable resistive pulse sensing TRPS; (qNano, Izon Science Ltd Christchurch, New Zealand), using a NP150 nanopore membrane at a 47 mm stretch. The concentration of particles was standardized using multi-pressure calibration with carboxylated polystyrene beads of a defined size (nm diameter) and at a defined concentration (particles/mL). The samples were deidentified so that the experimenter performing the isolation was blinded. MACSPlex surface protein analysis (Miltenyl Biotech, Auburn, CA) was performed according to manufacturer’s directions on two samples of urine derived exosomes.
 
 For RNA isolation the Norgen Preserved Blood RNA Purification Kit I (Norgen Biotek Corp, Ontario, Canada) was used according to manufacturer’s directions. Briefly, for every 100 µl of exosome preparation, 300 µL of lysis solution was added. After a short vortex, 400 µL of 95–100% ethanol was added. 600 µl of the lysate containing ethanol was loaded onto the column and centrifuged for 1 min at ≥3500 x g (~6000 RPM). The column was washed three times with wash solution and centrifuged each time for 1 min (14,000 x g). The column was spun for an additional 2 min in order to thoroughly dry the resin and the column contents eluded with 50 µl of Elution Solution by centrifuging for 2 min at 200 x g (~2000 RPM), followed by 1 min at 14,000 x g.
 
-## Biodistribution
+### Biodistribution
 
 Mice were fed an alfalfa-free diet to prevent auto fluorescence of tissues (Perkin-Elmer personal communication). Exosomes were labeled with ExoGlow-Vivo EV Labeling Kit (System Biosciences, Palo Alto, CA). Labeled exosomes or PBS containing exosomes were injected via tail vein into 17- to 18-month-old C57BL/6 mice. Mice were anesthetized with isoflurane and imaged using an IVIS Spectrum In Vivo Imaging System (Perkin Elmer). The mice were imaged at 5, 10, 15, 30, 60, 90 min, 2, 4, 6, and 24 hr as well as at 2, 3, and 19 days post injection. Imaging data was analyzed using Living Image Software (Perkin Elmer). Control experiments were conducted with dye alone.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 For conventional transmission electron microscopy (TEM), exosome pellets were placed in a droplet of 2.5% glutaraldehyde in PBS buffer at pH 7.2 and fixed overnight at 4 °C. The samples were rinsed in PBS (3 times, 10 min each) and post‐fixed in 1% osmium tetroxide for 60 min at room temperature. The samples were then embedded in 10% gelatin, fixed in glutaraldehyde at 4 °C and cut into several blocks (smaller than 1 mm3). The samples were dehydrated for 10 min per step in increasing concentrations of alcohol (30%, 50%, 70%, 90%, 95%, and 100%×3). Next, pure alcohol was replaced with propylene oxide, and the specimens were infiltrated with increasing concentrations (25%, 50%, 75%, and 100%) of Quetol‐812 epoxy resin mixed with propylene oxide for a minimum of 3 hr per step. The samples were embedded in pure, fresh Quetol‐812 epoxy resin and polymerized at 35 °C for 12 hr, 45 °C for 12 hr, and 60 °C for 24 hr. Ultrathin sections (100 nm) were cut using a Leica UC6 ultramicrotome and post‐stained, first with uranyl acetate for 10 min and then with lead citrate for 5 min at room temperature, prior to observation using the FEI Tecnai T20 transmission electron microscope (Hillsboro, TX, USA) operated at 120 kV.
 
-## Gold nanoparticle labelling of exosomes
+### Gold nanoparticle labelling of exosomes
 
 Gold nanoparticles (nanospheres) modified with branched polyethylenimine (BPEI) of 10 nm size were used (nanoComposix, co). The original concentration of gold nanoparticles purchased was 1 mg/mL (5.7E+13 particles/mL). We preformed experiments to optimize the ratio between the exosome particles and the modified gold nanoparticles with the final prep containing 10*8 exosomes: 0.001 mg of the modified gold nanoparticles. Briefly, gold nanosuspensions were sonicated prior to the experiment. The concentration of gold nanoparticles was adjusted based on the concentration of each exosome prep and the desired volume for injection. The mixture was vortexed and then placed in a thermomixer (Eppendorf ThermoMixer F1.5) at 37 °C and spun at 300 rpm. After 3 hr, the mixture was vortexed, allowed to sit at room temperature for 15 min, and placed at 4 °C until the next day.
 
-## Ex vivo lung punches
+### Ex vivo lung punches
 
 Cannulated lungs from 17- to 18-month-old male C57BL/6 mice were filled with warm low melting point agarose (3%, Sigma-Aldrich, St. Louis, MO). Lung segments were cooled on ice for 30 min to allow solidification of the agarose, punched to a diameter of 4 mm using a biopsy punch (Acuderm Inc Ft Lauderdale, FL) and transferred to an air-liquid interface with phenol red free minimal essential media (MEM) without serum. Human urine-derived or cell derived exosomes were injected into the lung punch with 29 G needles in a volume of 100 μl. The 100 µl volume of injection was divided equally into four injection sites on the punch. Punches were incubated at 37 °C in a humidified atmosphere of 5% CO2 for 4 days. Parallel punches (injected and naïve) from the same experiment were prepared for histology, immunofluorescence staining, RNA and protein purification. The normal histology of the punch was preserved after injection with PBS at four sites as shown by light and electron microscopic examination after PBS injection (Figure 5—figure supplement 1). For human lung, we injected a bronchial branch with 2% agarose and performed punch experiments as described above. Selected punches were injected with nanoparticle containing exosomes for EM experiments and collected within 24 hr of injection (see section above for nanoparticle labelling method). A series of punches were collected that did not receive any injections or were injected with nanoparticles alone. Four days after injection punches were fixed in 10% formalin (Sigma–Aldrich), processed for paraffin embedding and stained with trichrome to assess collagen content.
 
-## Punch TEM
+### Punch TEM
 
 Individual punches were fixed in 2% glutaraldehyde in 0.05 M phosphate buffer and 100 mM sucrose, post-fixed overnight in 1% osmium tetroxide in 0.1 M phosphate buffer, dehydrated through a series of cold graded ethanol, and embedded in a mixture of EM-bed/Araldite (Electron Microscopy Sciences). One-μm-thick sections were stained with Richardson’s stain for observation under a light microscope. A total of 100 nM sections were cut on a Leica UC7 ultramicrotome and stained with uranyl acetate and lead citrate. The grids were viewed t 80 kV in a JEOL JEM-1400 transmission electron microscope and images captured by an AMT BioSprint 12 digital camera.
 
-## Immunofluorescence staining of lung punches
+### Immunofluorescence staining of lung punches
 
 Formalin fixed paraffin embedded punches were processed as previously described for tissue (Tashiro et al., 2015). Fluorescent staining was performed using α-SMA (Abcam, Cambridge, MA) or anti-prosurfactant protein C (SPC, Abcam) and DAPI containing mounting medium (Vector Shield, Burlingame Ca).
 
-## Real-time PCR
+### Real-time PCR
 
 Total RNA was extracted from lung tissue homogenates. Amplification and measurement of target RNA was performed on the Step 1 real time PCR system as previously described (Karl et al., 2006). αv-integrin, collagen type I and TGF-β were measured using RNA extracted from lung punches or lung tissue. ER subtypes, TGF-β and IGF-1 mRNA expression was measured using RNA extracted from exosomes. The TaqMan rRNA control reagents kit (Life Technologies) was used to detect 18 S rRNA gene, an endogenous control, and samples were normalized to the 18 S transcript content as previously described (Potier et al., 2002). For miRNA analyses, cDNA was generated using qScript microDNA cDNA Synthesis Kit (Quanta Biosciences, Beverly, MA) according to manufacturer’s instructions (Elliot et al., 2019). Amplification of all miRNAs was performed on the QuantStudio 3 96well 0.2 ml Block Real-Time PCR System using specific primers, miR-let-7d, miR-29a-5p, miR-34a-5p, miR-142–3 p, miR-199a-3p, and miR-181b (IDT, Coralville, IA) using Real-Time SYBR Green qRT-PCR Amplification kit (Quanta Biosciences, Beverly, MA). U6 expression was used as a control for miRNA analyses, and relative expression was calculated using the comparative C(T) method (Schmittgen and Livak, 2008).
 
-## Western blot
+### Western blot
 
 Punches or lung pieces were homogenized, and western analysis performed as previously described (Glassberg et al., 2014) using the Invitrogen mini-cell gel surelock cell module Xcell II vertical surelock box (Thermofisher, Waltham, MA). For pAKT, AKT, c-Jun, Caveolin-1, ERα and β-actin, 5–25 μg of protein lysate was fractionated on 10% polyacrylamide gels. Immunoreactive bands were determined by exposing nitrocellulose blots to a chemiluminescence solution (Denville Scientific Inc, Metuchen, NJ) followed by exposure to Amersham Hyperfilm ECL (GE Healthcare Limited, Buckinghamshire, UK). To determine the relative amounts of protein densitometry Image J version 1.48 v (National Institutes of Health, Bethesda, MD) was utilized. All values from western blots were standardized to the corresponding β-actin band prior to comparative analyses.
 
-## MMP activity
+### MMP activity
 
 MMP activity was assessed in lung punches and lung tissue using a previously described method (Glassberg et al., 2014). Briefly, Novex 10% zymogram gels (Life Technologies) were incubated for 24 hr in a gelatinase solution, which allows the determination of total proteolytic MMP activities without interference from associated tissue inhibitors. Relative MMP activity was determined by densitometry using Image J (NIH).
 
-## Ex vivo human skin wound model to evaluate functional effects of urine-derived exosomes
+### Ex vivo human skin wound model to evaluate functional effects of urine-derived exosomes
 
 Human skin samples were obtained from healthy subjects following panniculectomy (abdominal skin; median age 44 years old). Informed consent was obtained per the requirements of the Institutional Review Board at the University of Miami (IRB protocol # 20070922). Under sterile conditions, subcutaneous fat was trimmed from skin prior to generating wounds. A 3 mm punch (Acuderm) was used to make wounds in the epidermis through the reticular dermis and 3 mm discs of epidermis were excised. Skin discs (8 mm), with the 3 mm epidermal wound in the middle, were excised using a 6 mm biopsy punch (Acuderm). Wounded skin specimens were immediately transferred to air-liquid interface with DMEM medium (BioWhittaker) supplemented with antibiotics-antimycotics and 10% fetal bovine serum (Gemimi Bio – Products). The skin samples were incubated at 37 °C in a humidified atmosphere of 5% CO2 for 4 days. Tissues were fixed in 10% formalin (Sigma–Aldrich), processed for paraffin embedding and stained with hematoxylin and eosin to follow the rate of healing.
 
-## Animal model
+### Animal model
 
 Seventen- to 18-month-old male C57BL/6 mice obtained from Jackson Laboratories were housed under specific pathogen-free conditions with food and water ad libitum. All experiments and procedures were approved by the Institutional Animal Care and Use Committee at the Leonard M. Miller School of Medicine at the University of Miami (Miami, FL), a facility accredited by the American Association for the Accreditation of Laboratory Animal Care. Following treatments all mice were housed one/per cage until sacrifice. Sample size was based on our published data (Tashiro et al., 2015). Starting with 8–10 mice per group we have >90% statistical power to detect a Cohen’s effect size d>1.75 standard deviations.
 
-## Bleomycin administration
+### Bleomycin administration
 
 After the administration of anesthesia, Bleomycin sulfate (Sigma-Aldrich) dissolved in 50 µl sterile saline at 2.5 U per kg of bodyweight was administered by direct intratracheal instillation via intubation. Control mice received 50 µl of sterile saline using the same method. Mice were weighed and sacrificed at 21 days post-Bleo administration.
 
-## Exosome injections and time course
+### Exosome injections and time course
 
 Urine-derived or cell-derived exosomes were thawed in a 37 ° C water bath and washed in PBS to remove the cell freezing solution immediately prior to injection. Twenty-four hours following Bleo administration, each animal received 100 µl either PBS (control) or 40 µg of exosomes in 100 μl of PBS by tail vein injection over a one minute period (Tashiro et al., 2015). This amount was calculated based on the number of exosomes derived from 105 cells (number of cells utilized in whole cell experiments) (Tashiro et al., 2015). Some mice received Bleo +vehicle injection. Treatments were assigned by simple randomization and the technician was blinded to the treatments. Dose response experiments were conducted with 20 and 40 µg of exosomes. A separate set of naïve mice (not treated with Bleo), received the same exosome injections and were sacrificed at 21 days post injection.
 
-## Murine lung tissue analysis/immunohistochemistry
+### Murine lung tissue analysis/immunohistochemistry
 
 Left lung lobes were harvested for protein, zymography, and mRNA analysis (see methods above). For morphometry and histology studies, right lung lobes were inflated with 10% neutral buffered formalin (NBF) under 25 cm H2O pressure. The lungs were post fixed by immersion in 10% NBF for 24 hr and then transferred to PBS at 4 °C. Samples were paraffin-embedded and 4 µm sections were obtained for hematoxylin-eosin and Masson’s Trichrome staining.
 
-## Ashcroft scoring
+### Ashcroft scoring
 
 Pulmonary fibrosis was assessed by a pulmonary pathologist blinded to the experimental groups using the semi-quantitative Ashcroft method (Ashcroft et al., 1988) on Masson’s Trichrome-stained slides at ×20 magnification. Individual fields were assessed by systematically moving over a 32-square grid; each field was assessed for fibrosis severity and assigned a score on a scale of 0 (normal lung) to 8 (total fibrosis of the field) and an average was obtained for each slide.
 
-## Collagen content assessment by hydroxyproline content
+### Collagen content assessment by hydroxyproline content
 
 Hydroxyproline content was determined according to the manufacturer’s instructions (Hydroxyproline Assay Kit, Sigma-Aldrich, St. Louis, MO). Briefly, 2 mg lung fragments were weighed and homogenized in 100 μl of distilled water. An equal volume of 10 N HCl was added to the samples before drying at 49 ° C for 3 hr. A total of 50 μl of sample was loaded in the plate and incubated overnight at 37 ° C. A hydroxyproline standard curve was prepared according to a standard solution (0–1 µg/well). Hydroxyproline content was read at 557 nm, using the SoftMax Pro Software (Molecular Devices Corp, Sunnyvale, CA).
 
-## Statistical analysis
+### Statistical analysis
 
 Mean and SEM were determined using GraphPad Prism 9.0 (GraphPad Software, San Diego, CA). Statistically significant differences between groups were determined by using Kruskal-Wallis test and Mann-Whitney test for single comparisons. Given limited sample sizes in some experiments, data were determined to be normally distributed using Kolmogorov-Smirnov test and tested by one-way analysis of variance (ANOVA) and Tukey multiple comparison. Results were considered statistically significant at p<0.05. ANOVA was also used to analyse rate of epithelialization among treatment groups; p<0.05 was considered significant.
 
 ## Results
 
-## Exosome isolation and characterization
+### Exosome isolation and characterization
 
 Urine samples were collected from individuals diagnosed with IPF (A group) or non‐CF bronchiectasis (B group) or asthma (C group, Table 1) and normal age and sex-matched controls (D group, Table 2, IRB # 20060249). Control urines were obtained from subjects that did not have underlying kidney, heart, or lung comorbidities and had normal albumin creatinine ratios sampled in an aliquot of each urine. IPF and control exosomes were isolated from myofibroblasts and fibroblasts (Table 3). Human urine, blood and cell derived exosome isolation were performed by Zen-Bio Inc (Durham, NC). Exosome size from urine, blood and cells was approximately 30–150 µm. EM performed on isolated exosomes (Figure 2) confirmed a size and shape previously reported for exosomes (Gurunathan et al., 2019). The presence of exosome markers CD1, CDC9, and CD63 were determined by MACSPlex analysis and CD63 (Figure 2B) was confirmed by western analysis. Other exosome markers present were CD9 and CD81.
+
+**Table 2.**
+ Male control (D group) urine-derived exosomes (Age of subject at collection).No evidence of documented lung disease or abnormal PFTs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject number</th>
+      <th>Age of subject at collection</th>
+      <th>Ethnicity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D8</td>
+      <td>66</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>D9</td>
+      <td>70</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>D12</td>
+      <td>77</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>D28</td>
+      <td>77</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>D31</td>
+      <td>55</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>D32</td>
+      <td>73</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>D38</td>
+      <td>72</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>D41</td>
+      <td>65</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>D50</td>
+      <td>75</td>
+      <td>Caucasian</td>
+    </tr>
+    <tr>
+      <td>D101</td>
+      <td>57</td>
+      <td>Caucasian</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Myofibroblast and control fibroblast-derived exosomes (Age of subject at collection).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Male myofibroblasts IPF (Age of subject at collection)</th>
+      <th>Male fibroblast Control (Age of subject at collection)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 (52)</td>
+      <td>5 (70)</td>
+    </tr>
+    <tr>
+      <td>2 (83)</td>
+      <td>6 (69)</td>
+    </tr>
+    <tr>
+      <td>3 (73)</td>
+      <td>7 (67)</td>
+    </tr>
+    <tr>
+      <td>4 (74)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/79543/elife-79543-fig2-v1.jpg)
 
 **Figure 2.:** Image magnification Scale bar = 50 nm. 1B. Isolated exosomes express CD63.
 
-## Determination of miRNAs expressed in urine- and serum-derived exosomes
+### Determination of miRNAs expressed in urine- and serum-derived exosomes
 
 To our knowledge, determination of the cargo of U-IPFexo has not been previously reported. U-IPFexo relative expression analysis revealed dysregulated expression of miR-let-7D, miR-199, miR-29, and miR-181 (Figure 3A, B, C and D, Figure 3—source data 1) compared to urine-derived control exosomes. We compared serum-derived exosome miRNA to urine-derived exosomal miRNA from the same patient and found no difference in relative expression of selected miRNAs (Figure 3E, Figure 3—source data 1). These selected miRNAs have also been shown to be altered in lung tissue and serum from individuals with IPF (Casanova et al., 2021; Omote and Sauler, 2020; Ortiz-Quintero et al., 2020). These data suggest that cargo carried in urine exosomes from individuals with IPF may parallel cargo of serum-derived exosomes in the same individual.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/79543/elife-79543-fig3-v1.jpg)
 
-**Figure 3.:** miR-let-7d (A), miR-29a-5p (B), miR 181b-3p (C) and miR-199a-3p (D) in urine-derived exosomes reveals a pattern corresponding to that reported in serum and whole lung of individuals with IPF.PCR was performed on extracted urine-derived exosomes as described in methods. Data are graphed as relative miRNA expression normalized to U6 and percent of control expression. * p<0.05, **p<0.01, *** p<0.001 compared to control exosomes. Each point represents an individual patient exosome sample. n=5–14 individual samples/group, P values were calculated by Mann-Whitney U test. E. Urine and serum-derived exosomes isolated from the same individuals with IPF have similar miRNA expression. Exosome isolation, RNA preparation and PCR performed as described in methods. n=5 individual samples of urine and serum-derived exosomes. Paired T test analysis was performed. Figure 3—source data 1.Figure 3—source data 1.Figure 3.
+**Figure 3.:** PCR was performed on extracted urine-derived exosomes as described in methods. Data are graphed as relative miRNA expression normalized to U6 and percent of control expression. * p<0.05, **p<0.01, *** p<0.001 compared to control exosomes. Each point represents an individual patient exosome sample. n=5–14 individual samples/group, P values were calculated by Mann-Whitney U test. E. Urine and serum-derived exosomes isolated from the same individuals with IPF have similar miRNA expression. Exosome isolation, RNA preparation and PCR performed as described in methods. n=5 individual samples of urine and serum-derived exosomes. Paired T test analysis was performed. Figure 3—source data 1.
 
-## Detection of expression of mRNA from exosomes
+### Detection of expression of mRNA from exosomes
 
 Isolated exosomes were subjected to PCR to detect potential mRNA expression that are reflective of fibrotic pathways. As expected in pure exosome preparations (Batagov and Kurochkin, 2013), we did not detect mRNA expression of TGFβ, IGF or ER subtypes from normal or diseased exosomes.
 
-## Tracking exosomes reveals a rapid systemic distribution
+### Tracking exosomes reveals a rapid systemic distribution
 
 We assessed exosome signal and time course in 17- to 18-month-old male C57BL/6 mice using an in vivo bioluminescent imaging system. Regardless of source (U-IPFexo or control exosomes), exosomes were located in the lung within 5 min post-tail vein injection. Images were taken at 5 min, 15 min 30 min, 60 min, 90 min and 2, 4, 6, 24, and 48 hr (Figure 4) in all preparations. No adverse events were noted in mice followed for 20 days. All mice injected with U-IPFexo had a higher lung signal over time compared to mice injected with urine-derived age and sex-matched controls (Figure 4—figure supplement 1A ), suggesting that these exosomes may be retained longer in the lung than control exosomes. A set of mice sacrificed at 48 hr to quantify signals in heart/lung, spleen, liver, and kidney (Figure 4—figure supplement 1C) showed that the lung signal evident at 30 min (Figure 4—figure supplement 1B) was not evident at 48 hr as seen by IVIS suggesting clearance of the exosomes. Mice injected with PBS had no signal (Figure 4C).
 
-## Transmission electron microscopy reveals uptake of exosomes into alveolar epithelial cells (AEC)
+![Figure 4.](https://cdn.elifesciences.org/articles/79543/elife-79543-fig4-v1.jpg)
+
+**Figure 4.:** Shown are representative in vivo bioluminescence images to study the biodistribution of ExoGlow labeled urine-derived exosomes in mice (n=3/group) at the indicated time points. Panel A=mouse injected with labeled U-IPF exo; Panel B=mouse injected with labeled urine-derived exosomes from age and sex-matched control individuals without lung disease. Panel C=mouse injected with PBS. Intensity of luminescence seen in bar from lowest (red) to highest (blue). n=3 individual exosome preparations/group.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79543/elife-79543-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** C.Ex-vivo fluorescence imaging of isolated organs at 48 hours following exosome treatment in micee.
+
+### Transmission electron microscopy reveals uptake of exosomes into alveolar epithelial cells (AEC)
 
 Exosomes were labeled with gold nanoparticles at varying ratios and processed for EM to determine the optimum ratio of nanoparticles to exosomes. Utilizing TEM, exosomes labeled with nanoparticles were visualized in mouse lung punches (Figure 5—figure supplement 1A) injected with urine-derived control exosomes (Figure 5A-C) or U-IPFexo (Figure 5D-H). TEM revealed increased collagen bands in those punches injected with U-IPFexo (Figure 5H). Collagen bands were not as evident in the control punches as compared with U-IPF samples due to sampling limitation; however, we observed collagen bundles in both normal and U-IPF-treated samples. Lung structure was preserved in both normal and U-IPF treated samples.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/79543/elife-79543-fig5-v1.jpg)
+
+**Figure 5.:** Panels A-C show mouse lung punches injected with gold nanoparticle labeled urine-derived exosomes from age and sex-matched control subjects (without lung disease) or U-IPFexo (panels D-H). TEM revealed exosomes in alveolar epithelial cells (AEC) type I and type II. Arrows in panels C, F, and G highlight exosomes containing nanoparticles. n=2 individual exosome preparations/group.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79543/elife-79543-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Lung punches from control lungs shown in tissue culture dish (S1A) have normal histology (S1B, Trichrome staining ×10 mag) and structure by TEM (S1C, ×500 mag). Histology of non-injected lung punch (SA1D).
 
 Immunofluorescent staining of punches appeared to have decreased surfactant protein C positive cells (AEC II) after treatment with IPF derived exosomes (Figure 6C) compared to treatment with control exosomes (Figure 6B). Taken together these data suggest that exosomes are taken up by the alveolar cells and that IPFexo may promote disease by inhibiting the reparative AEC II cells.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/79543/elife-79543-fig6-v1.jpg)
 
-**Figure 6.:** B–C) or myofibroblasts or fibroblasts (E–F).Lung punches were fixed four days post injection with either PBS (panels A or D) or control urine-derived exosomes (panel B), U-IPFexo (panel C), control fibroblast (panel E) or MF-IPF exosomes (panel F). Shown are representative merged photographs at 20 x, surfactant protein C (SPC, red), αSMC actin (green) and DAPI (blue). n=3 individual exosome preparations/group. Scale bar 50 µm.
+**Figure 6.:** Lung punches were fixed four days post injection with either PBS (panels A or D) or control urine-derived exosomes (panel B), U-IPFexo (panel C), control fibroblast (panel E) or MF-IPF exosomes (panel F). Shown are representative merged photographs at 20 x, surfactant protein C (SPC, red), αSMC actin (green) and DAPI (blue). n=3 individual exosome preparations/group. Scale bar 50 µm.
 
-## U-IPFexo stimulate a fibrotic pathway response in human lung punches ex vivo
+### U-IPFexo stimulate a fibrotic pathway response in human lung punches ex vivo
 
 To determine the effects of exosomes on control human lung tissue, we performed ex vivo punch experiments utilizing lungs deemed unsuitable for transplant due to trauma (n=2; Figure 7, Figure 7—source data 1). αv-integrin and collagen type I mRNA increased after injection with MF-IPFexo compared to control (Figure 7A). Consistent with our published data in the lungs of mice with Bleo-injury and lung tissue from individuals with IPF (Elliot et al., 2019; Rubio et al., 2018), Cav-1 protein decreased (Figure 7B,Figure 7—source data 1) and ERα protein expression increased (Figure 7C, Figure 7—source data 1) after U-IPFexo were injected into human lung punches. We conducted parallel experiments using lung tissue obtained from 18-month-old male C57BL/6 mice (n=3 technical replicates/individual exosome isolate). Markers for fibrosis (αv-integrin, collagen type I mRNA expression) and other downstream fibrotic pathways (ERα, c-Jun, AKT expression and MMP-9 activity) were only activated by the U-IPFexo and not control exosomes or PBS alone (Figure 7D–I, Figure 7—source data 1). We found a 2.5 fold increase in TGFβ mRNA expression in punches that were injected with IPF exosomes compared to those injected with PBS or control exosome injections (p<0.05). Similar data were obtained from analysis of punches injected with MF-IPFexo (Figure 7J–M, Figure 7—source data 1). mRNA expression of αv-integrin and collagen type I were increased in punches injected with MF-IPFexo compared with punches injected with age and sex-matched control fibroblast exosomes (Figure 7J, K, Figure 7—source data 1). ERα protein expression shown to be upregulated in the lung tissue and myofibroblasts isolated from individuals with IPF (Elliot et al., 2019) was increased after injection of U-IPFexo (1.4 fold increase over control, p=0.05) and MF-IPFexo (>3 fold) into lung punches (Figure 7F and L, Figure 7—source data 1) compared to control exosomes. Finally, increased c-Jun expression was noted after injection of IPF exosomes but not after injection with control exosomes. U-IPFexo stimulate a fibrotic pathway response like that stimulated by MF-IPFexo.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/79543/elife-79543-fig7-v1.jpg)
 
-**Figure 7.:** Human (A–C) and mouse lung (D–M) punches were injected with PBS alone, U-IPFexo (D–I) or MF-IPFexo (J–M) or age and sex-matched control urine exosomes or lung fibroblast exosomes from control subjects (without lung disease). Punches were collected 4 days later and processed as described in Methods. Human lung punches were injected with MF-IPFexo or fibroblast cell derived exosomes (panels A and B) or urine-derived control exosomes and U-IPFexo (panels B and C). n=2 human lung punch isolates, 2 biological exosome preparations/group. Panels D-M, n=3 mouse lung replicates/group, n=3–5 biological exosome isolates/group Data are graphed as percent PBS control. αv-integrin (panels A, D and J, Figure 7—source data 1) and collagen type 1 (panels A, E and K, Figure 7—source data 1) mRNA expression increased in punches injected with IPFexo (derived from urine or myofibroblasts). Downstream fibrotic pathways; ERα (C, F and L), activated AKT (H), c-Jun (G and M), protein expression and MMP-9 activity (I) were also stimulated by exosomes from individuals with IPF. * p<0.05, **p<0.01. p Values were calculated by Mann Whitney U test.Figure 7—source data 1.Figure 7.
+**Figure 7.:** Human (A–C) and mouse lung (D–M) punches were injected with PBS alone, U-IPFexo (D–I) or MF-IPFexo (J–M) or age and sex-matched control urine exosomes or lung fibroblast exosomes from control subjects (without lung disease). Punches were collected 4 days later and processed as described in Methods. Human lung punches were injected with MF-IPFexo or fibroblast cell derived exosomes (panels A and B) or urine-derived control exosomes and U-IPFexo (panels B and C). n=2 human lung punch isolates, 2 biological exosome preparations/group. Panels D-M, n=3 mouse lung replicates/group, n=3–5 biological exosome isolates/group Data are graphed as percent PBS control. αv-integrin (panels A, D and J, Figure 7—source data 1) and collagen type 1 (panels A, E and K, Figure 7—source data 1) mRNA expression increased in punches injected with IPFexo (derived from urine or myofibroblasts). Downstream fibrotic pathways; ERα (C, F and L), activated AKT (H), c-Jun (G and M), protein expression and MMP-9 activity (I) were also stimulated by exosomes from individuals with IPF. * p<0.05, **p<0.01. p Values were calculated by Mann Whitney U test.
 
-## U-IPFexo impair tissue repair of human skin ex vivo
+### U-IPFexo impair tissue repair of human skin ex vivo
 
 We used the human ex vivo skin wound healing assay to test whether U-IPFexo would impair closure of of wounds (Pastar et al., 2016; Stojadinovic and Tomic-Canic, 2013). U-IPFexo treatment delayed would healing mirroring our previous data showing that mice who develop pulmonary fibrosis after treatment with Bleo also demonstrate a delay in wound healing (Rubio et al., 2018). We found that U-IPFexo decreased wound closure compared to control exosomes or PBS (27 ± 6.3% vs 14 ± 0.7%, vs 95%, n=3 technical replicates from two to three biological exosome isolates/group, Figure 8, Figure 8—source data 1), suggesting that exosomes carry a disease phenotype that can impair tissue repair. As expected, due to age of control exosomes we noted less effective wound healing compared to PBS control.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/79543/elife-79543-fig8-v1.jpg)
 
-**Figure 8.:** Human skin was wounded, injected with U-IPFexo or control (age and sex-matched from individuals without lung disease) exosomes and maintained at the air-liquid interface. Wound healing was assessed at day 4 post-wounding, a time point when exponential epithelialization occurs. (A) Data are graphed as mean with each data point representing a single wound. Experiments were performed using triplicate technical replicates and two to three biological replicates (Figure 7—source data 1). p<0.005 PBS and control compared to IPF, PBS vs control = 0.05 p values were calculated by Mann Whitney U test. (B). Photos of gross skin show visual signs of closure and correspond to the histology assessments. Black arrows point to the initial site of wounding, while white arrows point to the wound edge of the migrating epithelial tongue. Scale bars, 500 µm proportional to the image size.Figure 8—source data 1.Figure 8.
+**Figure 8.:** Human skin was wounded, injected with U-IPFexo or control (age and sex-matched from individuals without lung disease) exosomes and maintained at the air-liquid interface. Wound healing was assessed at day 4 post-wounding, a time point when exponential epithelialization occurs. (A) Data are graphed as mean with each data point representing a single wound. Experiments were performed using triplicate technical replicates and two to three biological replicates (Figure 7—source data 1). p<0.005 PBS and control compared to IPF, PBS vs control = 0.05 p values were calculated by Mann Whitney U test. (B). Photos of gross skin show visual signs of closure and correspond to the histology assessments. Black arrows point to the initial site of wounding, while white arrows point to the wound edge of the migrating epithelial tongue. Scale bars, 500 µm proportional to the image size.
 
-## U-IPFexo regulate miRNA expression and MMP-9 activity
+### U-IPFexo regulate miRNA expression and MMP-9 activity
 
 We measured miRNAs in exosome treated lung punches to determine whether expression changes found in the punches correlated with data published from lung tissue/cells isolated from individuals with IPF (Omote and Sauler, 2020). We found decreased expression of miR-29 and miR-let-7d in punches treated with U-IPFexo (Table 4) or MF-IPFexo. MiR-199 was upregulated in those punches injected with U-IPFexo, but remained unchanged by MF-IPFexo. Most likely related to the heterogeneity of the myofibroblasts (Tsukui et al., 2020). We and others have previously shown an increase in miR-199 expression in IPF lung tissue and cells and that increased miR-199 expression correlates with downregulated Cav-1 expression (Aranda et al., 2015; Rubio et al., 2018). Additional miRNAs were assessed that were reported to be dysregulated in tissues, serum or sputum of individuals with IPF. Punch expression of miR-34a, and miR-142 was regulated in a manner similar to expression found in isolated exosomes after treatment with either U-IPFexo or MF-IPFexo, supporting the relevance of the cargo carried in urine of individuals with IPF (Shetty et al., 2017).
 
-## U-IPFexo impact lung fibrosis in vivo
+**Table 4.**
+ Mouse lung punch miRNA expression.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mouse lung punch miRNA expression (% of PBS)</th>
+      <th>miR-let-7d</th>
+      <th>miR-29</th>
+      <th>miR-181b</th>
+      <th>miR-199 fibrotic</th>
+      <th>miR-34a fibrotic</th>
+      <th>miR-142 antifibrotic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="7">Urine exosomes (n=6–8/group)</td>
+    </tr>
+    <tr>
+      <td>PBS</td>
+      <td>100±0.5</td>
+      <td>100±0.3</td>
+      <td>100±0.2</td>
+      <td>100±0.1</td>
+      <td>100±.3.1</td>
+      <td>100±0.2</td>
+    </tr>
+    <tr>
+      <td>Control exosomes</td>
+      <td>74±6.7</td>
+      <td>96±13.3</td>
+      <td>137±18</td>
+      <td>92±5</td>
+      <td>88±15</td>
+      <td>105±20</td>
+    </tr>
+    <tr>
+      <td>U-IPFexo</td>
+      <td>32±6.5 @</td>
+      <td>55±12.1 *&amp;</td>
+      <td>52±17 +</td>
+      <td>169±18 + &amp;</td>
+      <td>131±10 *+</td>
+      <td>74±14 = 0.5</td>
+    </tr>
+    <tr>
+      <td colspan="7">Fibroblast exosomes (n=3–4/group)</td>
+    </tr>
+    <tr>
+      <td>PBS</td>
+      <td>100±0.1</td>
+      <td>100±0.3</td>
+      <td>100±0.5</td>
+      <td>100±0.5</td>
+      <td>100±0.2</td>
+      <td>100±0.2</td>
+    </tr>
+    <tr>
+      <td>Control exosomes</td>
+      <td>114±5</td>
+      <td>110.8±9.2</td>
+      <td>110±8.2</td>
+      <td>53±5</td>
+      <td>101±16.5</td>
+      <td>78±14</td>
+    </tr>
+    <tr>
+      <td>MF-IPFexo</td>
+      <td>57±5.9 @</td>
+      <td>56±7.9 *&amp;</td>
+      <td>42±12.7@</td>
+      <td>115±14 NS</td>
+      <td>100.±27 NS</td>
+      <td>47±12 NS</td>
+    </tr>
+  </tbody>
+</table>
+
+_*+p = 0.05 compared to PBS, @<0.01 compared to PBS and control exosomes, * p<0.05 compared to control exosomes, &p<0.01 compared to control exosomes, p values were calculated by Mann-Whitney U test. NS = not significant._
+
+### U-IPFexo impact lung fibrosis in vivo
 
 Analysis of lung tissue obtained from Bleo treated mice sacrificed at day 21 showed a higher Ashcroft score (Figure 9M, Figure 9—source data 1) and collagen content (Figure 9N, Figure 9—source data 1) in those mice receiving U-IPFexo compared to control exosomes or Bleo alone. αV-integrin (Figure 9O, Figure 9—source data 1) mRNA expression was higher in lungs of mice that received U-IPFexo compared to Bleo alone. We noted higher TGFB mRNA expression in the lung tissue of mice injected with U-IPFexo compared to Bleo treatment alone (p>0.001, 23.8±3.9 vs 11.66±0.6). Lungs obtained from mice treated with urine exosomes from either asthmatics or subjects with non-CF bronchiectasis also exhibited increased TGFB mRNA expression. MMP-2 was induced 2.5-fold by U-IPFexo (p<0.05) compared to Bleo treatment, control exosomes or other exosomes. When Bleo injury was followed by injection of U-IPFexo, fibrosis was more homogeneous and widespread compared to Bleo treatment alone. Mice treated with Bleo +IPF exosomes lost 35±2.6% BW compared to mice treated with Bleo (29 ± 2.6% of BW; p=0.05 compared to IPF) or mice receiving Bleo +control exosomes (19 ± 3.2% of BW; p<0.05 compared to Bleo, p<0.01 compared to IPF). Bleo-treated mice that received urine derived exosomes from individuals with non-CF bronchiectasis lost more weight (39 ± 5.7% BW; p<0.05) than Bleo-treated mice. The Bleo-treated mice receiving urine derived exosomes from individuals with asthma lost a similar amount of weight as the Bleo-treated mice (27 ± 3.5% of BW). We also found that mir-let-7d, and –142 expression decreased while miR-34a, and –199 were increased in lung tissue from Bleo mice treated with U-IPFexo (Table 5) but not urine exosomes derived from either asthmatics or subjects with non-CF bronchiectasis (Table 5). Although Ashcroft scoring and histology did not demonstrate changes consistent with fibrosis in lung tissue collected from naive animals treated with PBS or naive animals treated with U-IPFexo, increased collagen content (Figure 9—figure supplement 1, Figure 9—figure supplement 1—source data 1), and dysregulated miR-34a, miR-199 miR-29, and –142 expression (Table 5), were detected in lung tissue obtained from these mice.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/79543/elife-79543-fig9-v1.jpg)
+
+**Figure 9.:** Histological sections of lung tissue were stained with Masson’s-Trichrome as described in Materials and Methods. Representative photomicrographs (4 x, 10 x, and 20 x) of lung sections from Bleo +vehicle (panels A-C), Bleo +control exosome injected mice (panels D-F), from Bleo +U-IPFexo injected mice (panels G-I) or from non-fibrotic inducing exosomes (Bronchiectasis, panels J-L). Fibrotic score (M), collagen content (N), αvintegrin (O) increased after Bleo +U-IPFexo treatment. (M) Ashcroft scores were used to evaluate the degree of fibrosis. Data are graphed as the mean score of 32 fields/section of lung. (N) Collagen content was estimated by hydroxyproline assay as described in Methods. Data are graphed as μg/mg of lung tissue. (O) αv-integrin mRNA expression was determined by RT-PCR as a marker of fibrosis. Data are graphed normalized for 18 S content. Each data point represents an individual mouse, n=4–11 technical replicates/group and two biological replicates/group (Figure 9—source data 1) *p<0.05 compared to control exosome treatment or compared to Bleo +vehicle treatment. Data were analyzed using one-way analysis of variance (ANOVA) and Mann-Whitney U test. Scale bar panels A, D, G, J, 200 µm; panels B, E,H, K,100 µm; panels C, F,I,L, 50 µm.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/79543/elife-79543-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** Naïve mice were treated with PBS, control or IPF urine-derived exosomes. Mice were sacrificed 21 days later as described in methods. Data are graphed as mean ± SEM. Each data point represents an individual mouse (n=2 exosome preps/group, Figure 9—figure supplement 1—source data 1). p<0.05 IPF compared to control and PBS, Data were analyzed using Mann Whitney test.
+
+**Table 5.**
+ Lung tissue microRNA expression.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Lung tissue microRNA expression/U6</th>
+      <th>miR-let-7d</th>
+      <th>miR-29</th>
+      <th>miR-181b</th>
+      <th>miR-199fibrotic</th>
+      <th>miR-34a fibrotic</th>
+      <th>miR-142 antifibrotic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PBS</td>
+      <td>0.18±0.03</td>
+      <td>2.1±0.4</td>
+      <td>0.26±0.06</td>
+      <td>0.03±0.001</td>
+      <td>0.07±0.02</td>
+      <td>0.23±0.016</td>
+    </tr>
+    <tr>
+      <td>Control U-exo</td>
+      <td>0.3±0.01 ##</td>
+      <td>2.8±0.7</td>
+      <td>0.3±0.07</td>
+      <td>0.06±0.003</td>
+      <td>0.09±0.01</td>
+      <td>0.19±0.03</td>
+    </tr>
+    <tr>
+      <td>U-IPFexo</td>
+      <td>0.14±0.02</td>
+      <td>0.48±0.1 *&amp;</td>
+      <td>0.15±0.05</td>
+      <td>0.05±0.006 †</td>
+      <td>0.13±0.03 *</td>
+      <td>0.16±0.02 *</td>
+    </tr>
+    <tr>
+      <td>Bleomycin (Bleo)</td>
+      <td>0.057±0.009 ^^</td>
+      <td>0.17±0.02</td>
+      <td>0.009±0.001</td>
+      <td>0.19±0.02</td>
+      <td>0.18±0.05</td>
+      <td>0.23±0.04</td>
+    </tr>
+    <tr>
+      <td>Bleo +Control U- exo</td>
+      <td>0.24±0.05 †</td>
+      <td>0.17±0.02</td>
+      <td>0.008±0.001</td>
+      <td>0.35±0.11</td>
+      <td>0.18±0.02</td>
+      <td>0.29±0.05</td>
+    </tr>
+    <tr>
+      <td>Bleo +U-IPFexo</td>
+      <td>0.10±0.011 $$^^</td>
+      <td>0.20±0.17</td>
+      <td>0.004±.001 †</td>
+      <td>1.68±0.44 *$$^^</td>
+      <td>0.43±0.08 *$$^</td>
+      <td>0.16±0.01 &amp;$^</td>
+    </tr>
+    <tr>
+      <td>Bleo +U-bronchiectasis exo</td>
+      <td>0.17±.03</td>
+      <td>0.14±0.03</td>
+      <td>ND</td>
+      <td>0.13±0.35</td>
+      <td>0.06±0.02</td>
+      <td>0.3±0.07</td>
+    </tr>
+    <tr>
+      <td>Bleo +U-asthma exo</td>
+      <td>0.39±0.1</td>
+      <td>0.11±0.01</td>
+      <td>ND</td>
+      <td>0.06±0.01</td>
+      <td>0.06±0.02</td>
+      <td>0.29±0.04</td>
+    </tr>
+  </tbody>
+</table>
+
+_* p<0.05 compared to control exosomes, &p<0.001 compared to control exosomes.† p<0.05 compared to Bleo, ##p<0.001 compared to Bleo, $p<0.05, $$ p<0.01 compared to bronchiectasis exosomes ^p<0.01 ^^ p<0.001compared to asthma exosomes. p values were calculated by Mann-Whitney U test. ND = not detected._
 
 ## Discussion
 

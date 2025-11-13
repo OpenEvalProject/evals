@@ -53,23 +53,270 @@ The primary aims of the present study were to examine the combined effect of HLF
 
 The mean age of 4681 participants was 46.7 ± 8.0 years. Five HLFs included never smoking, moderate alcohol consumption, having a healthy dietary score ≥4, being physically active, and healthy adiposity levels. Of the 4681 participants, 0.2%, 11.1%, and 47.4% had at least 5, 4, and 3 HLFs, respectively. The overall mean (SD) LDL-C concentration measured by the clinical chemistry assay was 88.8 (27.0) mg/dl. Younger, female, and more educated participants were more likely to adopt a healthy lifestyle (Table 1). Compared with control participants, the CHD cases were older, were less likely to be women, and had a higher prevalence of hypertension and diabetes at baseline (Supplementary file 2A).
 
-## Associations of combined HLFs with lipid metabolites
+**Table 1.**
+ Age-, sex-, and study area-adjusted baseline characteristics of 4681 participants according to the number of healthy lifestyle factors (HLFs).The results are presented as adjusted means or percentages, with adjustment for age, sex, and study area, as appropriate. All baseline characteristics were associated with the number of HLFs, with p<0.05 for trend across categories, except for urban or rural residence (0.155), family history of heart attack (p=0.905), and consumption of fresh vegetables (0.065).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Baseline characteristics</th>
+    </tr>
+    <tr>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>≥4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No. of participants, n (%)</td>
+      <td>118 (2.5)</td>
+      <td>688 (14.7)</td>
+      <td>1656 (35.4)</td>
+      <td>1698 (36.3)</td>
+      <td>521 (11.1)</td>
+    </tr>
+    <tr>
+      <td>Age, year</td>
+      <td>49.6</td>
+      <td>49.0</td>
+      <td>47.5</td>
+      <td>45.8</td>
+      <td>43.8</td>
+    </tr>
+    <tr>
+      <td>Female, %</td>
+      <td>5.1</td>
+      <td>22.6</td>
+      <td>46.4</td>
+      <td>62.9</td>
+      <td>67.5</td>
+    </tr>
+    <tr>
+      <td>Urban area, %</td>
+      <td>42.6</td>
+      <td>33.5</td>
+      <td>27.8</td>
+      <td>25.1</td>
+      <td>36.6</td>
+    </tr>
+    <tr>
+      <td>Middle school and above, %</td>
+      <td>51.5</td>
+      <td>53.6</td>
+      <td>53.8</td>
+      <td>57.9</td>
+      <td>58.2</td>
+    </tr>
+    <tr>
+      <td>Married, %</td>
+      <td>91.3</td>
+      <td>92.9</td>
+      <td>94.6</td>
+      <td>95.3</td>
+      <td>95.2</td>
+    </tr>
+    <tr>
+      <td>Prevalent hypertension, %</td>
+      <td>62.6</td>
+      <td>52.6</td>
+      <td>48.7</td>
+      <td>40.6</td>
+      <td>38.5</td>
+    </tr>
+    <tr>
+      <td>Prevalent diabetes, %</td>
+      <td>13.8</td>
+      <td>12.0</td>
+      <td>7.1</td>
+      <td>4.1</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>Family history of heart attack, %</td>
+      <td>2.8</td>
+      <td>5.0</td>
+      <td>4.7</td>
+      <td>4.2</td>
+      <td>4.8</td>
+    </tr>
+    <tr>
+      <td>Having HLFs*, %</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Never smoking</td>
+      <td>–</td>
+      <td>47.1</td>
+      <td>57.0</td>
+      <td>70.6</td>
+      <td>85.9</td>
+    </tr>
+    <tr>
+      <td>Moderate alcohol consumption</td>
+      <td>–</td>
+      <td>3.5</td>
+      <td>8.6</td>
+      <td>15.9</td>
+      <td>28.3</td>
+    </tr>
+    <tr>
+      <td>Being physically active</td>
+      <td>–</td>
+      <td>13.3</td>
+      <td>37.6</td>
+      <td>66.2</td>
+      <td>96.0</td>
+    </tr>
+    <tr>
+      <td>Healthy dietary pattern</td>
+      <td>–</td>
+      <td>23.9</td>
+      <td>41.4</td>
+      <td>60.2</td>
+      <td>94.0</td>
+    </tr>
+    <tr>
+      <td>Vegetables 7 days/week</td>
+      <td>90.8</td>
+      <td>93.2</td>
+      <td>92.5</td>
+      <td>93.0</td>
+      <td>97.6</td>
+    </tr>
+    <tr>
+      <td>Fruit 7 days/week</td>
+      <td>2.6</td>
+      <td>7.6</td>
+      <td>10.2</td>
+      <td>16.3</td>
+      <td>24.8</td>
+    </tr>
+    <tr>
+      <td>Read meat &lt;7 days/week</td>
+      <td>52.9</td>
+      <td>65.7</td>
+      <td>73.7</td>
+      <td>76.7</td>
+      <td>84.8</td>
+    </tr>
+    <tr>
+      <td>Soybean product ≥4 days/week</td>
+      <td>2.4</td>
+      <td>4.0</td>
+      <td>7.0</td>
+      <td>10.7</td>
+      <td>19.2</td>
+    </tr>
+    <tr>
+      <td>Fish ≥1 day/week</td>
+      <td>18.3</td>
+      <td>23.9</td>
+      <td>30.3</td>
+      <td>38.5</td>
+      <td>50.3</td>
+    </tr>
+    <tr>
+      <td>Coarse grains ≥4 days/week</td>
+      <td>7.9</td>
+      <td>21.1</td>
+      <td>22.7</td>
+      <td>23.7</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <td>Healthy adiposity level</td>
+      <td>–</td>
+      <td>25.8</td>
+      <td>55.5</td>
+      <td>89.0</td>
+      <td>98.0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*HLFs were defined as: never smoking; weekly but not daily drinking or daily drinking less than 30 g of pure alcohol; engaging in a sex-specific median or higher level of physical activity; engaging in more than or equal to 4 of total six healthy diet components; having a body mass index between 18.5 and 27.9 kg/m2 and having a waist circumference <90 cm in men and <85 cm in women._
+
+### Associations of combined HLFs with lipid metabolites
 
 Adherence to combined HLFs was associated with 50 components of the lipid profile (false dicovery rate [FDR] < 0.05). Compared with participants who adopted at most one HLF, the differences in the lipid metabolites, especially VLDL- and HDL-related measures, increased with the number of HLFs adhered to (Figures 1–3). Participants with four to five HLFs had lower VLDL particle concentrations and smaller VLDL particle size, with adjusted SD difference (95% CI) ranging from −0.54 (−0.66,–0.43) for large VLDL to −0.27 (−0.38,–0.15) for very small VLDL, and −0.47 (−0.59,–0.36) for VLDL diameter (Figure 1, Figure 1—source data 1). For HDL, adherence to four to five HLFs was associated with higher HDL particle concentrations and larger HDL particle size, with maximum SD difference (95% CI) of 0.39 (0.28, 0.50) for large HDL, and 0.32 (0.21, 0.43) for HDL diameter. The corresponding SD difference (95% CI) for apolipoprotein B/apolipoprotein A1 was −0.45 (−0.56,–0.34), resulting from higher apolipoprotein A1 and lower apolipoprotein B.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig1-v1.jpg)
+
+**Figure 1.:** (a) SD difference and 95% CI are for comparison of participants who adopted two to three or four to five combined healthy lifestyles with participants who adopted zero to one. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, and case/control status. (b) Odds ratio and 95% CI are for the associations of 1-SD metabolic markers increasing with CHD risk. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, and smoking status. Horizontal lines represent 95% CIs. ApoA1 = apolipoprotein A1; ApoB = apolipoprotein B; CHD = coronary heart disease; HDL = high-density lipoprotein; IDL = intermediate-density lipoprotein; LDL = low-density lipoprotein; Sig. = significance ***p≤0.0001, **p≤0.01, *p≤0.05, – p>0.05 (false discovery rate [FDR]–adjusted p-values); VLDL = very low-density lipoprotein.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Betas are linear regression coefficients per one increase in number of healthy lifestyles. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, and case/control status. Horizontal lines represent 95% CIs. Sig. = significance ***p≤0.0001, **p≤0.01, *p≤0.05, – p>0.05 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Betas are linear regression coefficients per one increase in number of healthy lifestyles. Multivariable model was adjusted for: age, sex, study areas, education level, and case/control status. Horizontal lines represent 95% CIs. Sig. = significance ***p≤0.0001, **p≤0.01, *p≤0.05, – p>0.05 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Betas are linear regression coefficients per one increase in number of healthy lifestyles. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, and case/control status. Horizontal lines represent 95% CIs. Sig. = significance ***p≤0.0001, **p≤0.01, *p≤0.05, – p>0.05 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Betas are linear regression coefficients per one increase in number of healthy lifestyles. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, and case/control status. Horizontal lines represent 95% CIs. Sig. = significance ***p≤0.0001, **p≤0.01, *p≤0.05, – p>0.05 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** SD difference and 95% CI are for comparison of moderate alcohol drinker with others. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, case/control status, and other four lifestyle factors. Horizontal lines represent 95% CIs. Sig. = significance **p≤0.05, *p≤0.10, – p>0.10 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** SD difference and 95% CI are for comparison of physically active participants with others. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, case/control status, and other four lifestyle factors. Horizontal lines represent 95% CIs. Sig. = significance **p≤0.05, *p≤0.10, – p>0.10 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** SD difference and 95% CI are for comparison of participants with healthy adiposity with others. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, case/control status, and other four lifestyle factors. Horizontal lines represent 95% CIs. Sig. = significance **p≤0.05, *p≤0.10, – p>0.10 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** SD difference and 95% CI are for comparison of participants with healthy adiposity with others. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, case/control status, and other four lifestyle factors. Horizontal lines represent 95% CIs. Sig. = significance **p≤0.05, *p≤0.10, – p>0.10 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig1-figsupp9-v1.jpg)
+
+**Figure 1—figure supplement 9.:** SD difference and 95% CI are for comparison of moderate alcohol drinker with others. Participants reporting weekly or daily drinking with <30 g of pure alcohol per day were defined as moderate alcohol use group; participants with ≥30 g per day as heavy alcohol use. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, case/control status, and other four lifestyle factors. Horizontal lines represent 95% CIs. Sig. = significance ***p≤0.0001, **p≤0.01, *p≤0.05, – p>0.05 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig1-figsupp10-v1.jpg)
+
+**Figure 1—figure supplement 10.:** SD difference and 95% CI are for comparison of moderate alcohol drinker with others. Participants reporting weekly or daily drinking with <30 g of pure alcohol per day were defined as moderate alcohol use group; participants with ≥30 g per day as heavy alcohol use. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, case/control status, and other four lifestyle factors. Horizontal lines represent 95% CIs. Sig. = significance ***p≤0.0001, **p≤0.01, *p≤0.05, – p>0.05 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.
+
+![Figure 1—figure supplement 11.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig1-figsupp11-v1.jpg)
+
+**Figure 1—figure supplement 11.:** SD difference and 95% CI are for comparison of moderate alcohol drinker with others. Participants reporting weekly or daily drinking with <30 g of pure alcohol per day were defined as moderate alcohol use group; participants with ≥30 g per day as heavy alcohol use. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, case/control status, and other four lifestyle factors. Horizontal lines represent 95% CIs. Sig. = significance ***p≤0.0001, **p≤0.01, *p≤0.05, – p>0.05 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.
+
+![Figure 1—figure supplement 12.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig1-figsupp12-v1.jpg)
+
+**Figure 1—figure supplement 12.:** SD difference and 95% CI are for comparison of never smokers with ever smokers. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, case/control status, and other four lifestyle factors. Horizontal lines represent 95% CIs. Sig. = significance **p≤0.05, *p≤0.10, – p>0.10 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.
+
+![Figure 1—figure supplement 13.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig1-figsupp13-v1.jpg)
+
+**Figure 1—figure supplement 13.:** SD difference and 95% CI are for comparison of participants adopting a healthy diet pattern with others. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, case/control status, and other four lifestyle factors. Horizontal lines represent 95% CIs. Sig. = significance **p≤0.05, *p≤0.10, – p>0.10 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig2-v1.jpg)
 
-**Figure 2.:** (a) SD difference and 95% CI are for comparison of participants who adopted two to three or four to five combined healthy lifestyles with participants who adopted zero to one. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, and case/control status. (b) Odds ratio and 95% CI are for the associations of 1-SD metabolic markers increasing with CHD risk. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, and smoking status. Horizontal lines represent 95% CIs. CHD = coronary heart disease; HDL2 = larger HDL particles; HDL3 = smaller HDL particles; Sig. = significance ***p≤0.0001, **p≤0.01, *p≤0.05, – p>0.05 (false discovery rate [FDR]–adjusted p-values); other abbreviations as in Figure 1.Figure 2—source data 1.
+**Figure 2.:** (a) SD difference and 95% CI are for comparison of participants who adopted two to three or four to five combined healthy lifestyles with participants who adopted zero to one. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, and case/control status. (b) Odds ratio and 95% CI are for the associations of 1-SD metabolic markers increasing with CHD risk. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, and smoking status. Horizontal lines represent 95% CIs. CHD = coronary heart disease; HDL2 = larger HDL particles; HDL3 = smaller HDL particles; Sig. = significance ***p≤0.0001, **p≤0.01, *p≤0.05, – p>0.05 (false discovery rate [FDR]–adjusted p-values); other abbreviations as in Figure 1.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig3-v1.jpg)
 
-**Figure 3.:** (a) SD difference and 95% CI are for comparison of participants who adopted two to three or four to five combined healthy lifestyles with participants who adopted zero to one. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, and case/control status. (b) Odds ratio and 95% CI are for the associations of 1-SD metabolic markers increasing with CHD risk. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, and smoking status. Horizontal lines represent 95% CIs. CHD = coronary heart disease; Sig. = significance ***p≤0.0001, **p≤0.01, *p≤0.05, – p>0.05 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.Figure 3—source data 1.
+**Figure 3.:** (a) SD difference and 95% CI are for comparison of participants who adopted two to three or four to five combined healthy lifestyles with participants who adopted zero to one. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, and case/control status. (b) Odds ratio and 95% CI are for the associations of 1-SD metabolic markers increasing with CHD risk. Multivariable model was adjusted for: age, sex, fasting time, study areas, education level, and smoking status. Horizontal lines represent 95% CIs. CHD = coronary heart disease; Sig. = significance ***p≤0.0001, **p≤0.01, *p≤0.05, – p>0.05 (false discovery rate [FDR]–adjusted p-values); Abbreviations as in Figure 1.
 
 The associations of combined HLFs with cholesterol concentrations in lipoprotein subfractions were very similar to the associations with the corresponding lipoprotein particle concentrations (Figure 2, Figure 2—source data 1). Combined HLFs were consistently associated with lower TG concentrations in all lipoprotein subfractions except large HDL particles. The adjusted SD difference (95% CI) for participants with four to five HLFs ranged from −0.55 (−0.66,–0.43) for small VLDL-TG to −0.29 (−0.41,–0.18) for medium LDL-TG (Figure 3, Figure 3—source data 1).
 
 The linear associations between each one factor increase in HLFs and lipid profile were illustrated in Figure 1—figure supplement 1. In sensitivity analyses, we further adjusted for prevalent diabetes, restricted analyses to control participants (Supplementary file 2B), did not adjust for fasting time, used more strict body mass index (BMI) and waist circumference (WC) cut-off points to define healthy adiposity, or excluded moderate alcohol consumption from the HLF definition; the associations between HLFs and metabolites were not substantially altered (Figure 1—figure supplements 2–4).
 
-## Associations of individual HLFs with lipid metabolites
+### Associations of individual HLFs with lipid metabolites
 
 Of the five individual HLFs analyzed, moderate alcohol consumption (Figure 1—figure supplement 5), being physically active (Figure 1—figure supplement 6), and having healthy adiposity levels (Figure 1—figure supplement 7), had the most significant influence on lipid metabolites. Participants who were physically active or had healthy adiposity levels had a cardioprotective lipid profile, with lower concentrations of VLDL-related measures, apolipoprotein B, and higher concentrations of larger HDL particles. The maximum SD differences (95% CI) related to physical activity (Figure 1—figure supplement 6) and healthy adiposity level (Figure 1—figure supplement 7) were −0.12 (−0.18,–0.06) for medium VLDL-TG and −0.54 (−0.60,–0.48) for total TG, respectively. Sensitivity analysis using more strict BMI and WC cut-off points (BMI in the range of 18.5–24.9 kg/m2 and WC <90 cm in men and <80 cm in women) observed similar and generally stronger associations between healthy adiposity level and lipidomic profile (Figure 1—figure supplement 8).
 
@@ -77,15 +324,31 @@ Moderate alcohol consumption was associated with higher concentrations of VLDL-�
 
 Smoking (Figure 1—figure supplement 12) and dietary habit (Figure 1—figure supplement 13) had a relatively small impact on lipid metabolites.
 
-## Mediation effects of lipid metabolites in the association between HLFs and CHD risk
+### Mediation effects of lipid metabolites in the association between HLFs and CHD risk
 
 We restricted the following analyses in 927 incident CHD cases and 1513 controls. Incident CHD cases were those who developed fatal ischemic heart disease and nonfatal myocardial infarction during follow-up. The associations between lipid metabolites and CHD risk generally mirrored the associations between combined HLFs and lipid metabolites (Figures 1–3). None of the lipid metabolites showed interactions with the HLFs in their effect on CHD risk (all pinteration > 0.05). A total of 35 lipid metabolites showed statistically significant mediation effects from combined HLFs to CHD reduction (FDR ranging from <0.001 to 0.042). The proportions of reduced CHD risk associated with combined HLFs mediated by VLDL particle concentration ranged from 4.77% for very small VLDL to 10.15% for small VLDL (Figure 1, Figure 1—source data 1). Other strong mediators included large HDL (8.02%), apolipoprotein B (8.36%), and apolipoprotein B/apolipoprotein A1 (11.32%). For cholesterol, compared to LDL-C, VLDL- and HDL-C were relatively strong mediators (Figure 2, Figure 2—source data 1). TG carried within all lipoproteins (except for large-sized HDL) showed statistically significant mediating effects, with the maximum proportion of 10.47% for small VLDL-TG (Figure 3, Figure 3—source data 1). The top five principal components of all lipid metabolites mediated 14.05% of the reduced CHD risk associated with combined HLFs.
 
-## HMGCR and ACLY scores, HLFs, and lipid metabolites
+### HMGCR and ACLY scores, HLFs, and lipid metabolites
 
 The HMGCR and ACLY scores had a similar pattern of effects on lipid metabolites, with higher scores mainly associated with decreased concentrations of intermediate-density lipoprotein (IDL)- and LDL-related measures and apolipoprotein B (Supplementary file 2C and D). The sum of HMGCR and ACLY scores was associated with stronger changes in the above lipid metabolites (Supplementary file 2E). Use of genetic scores based on the European population (Ference et al., 2019) for HMGCR and ACLY observed similar but weaker associations (Supplementary file 2C–F).
 
 In the joint association analysis of HLFs and HMGCR score with lipid metabolites, compared with participants who had higher genetic risk (median cutoffs) and adhered to zero to two HLFs, those with lower genetic risk and three to five HLFs had the most cardioprotective lipidomic profile, including 0.36 SD decrease in VLDL-C, 0.13 SD decrease in LDL-C, and 0.21 SD increase in HDL-C (Figure 4 and Figure 4—figure supplement 1 for ACLY score). We further compared the effect patterns of each one factor increase in HLFs with a 2-SD increase in HMGCR or ACLY score on lipid metabolites (Figure 4—figure supplements 2 and 3). The combined HLFs, as opposed to the effect by HMGCR and ACLY scores, were associated with lower VLDL-related measures, apolipoprotein B, and TG in almost all lipoprotein subfractions, and with higher HDL and HDL-C concentrations.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig4-v1.jpg)
+
+**Figure 4.:** Participants who had higher genetic risk regarding HMGCR (3-hydroxy-3-methylglutaryl–coenzyme A reductase) and adhered to zero to two healthy lifestyle factors (HLFs) were reference group. SD difference and 95% CI of log-transformed lipid metabolites for participants with lower genetic risk and 0-2 HLFs, higher genetic risk and 3-5 HLFs, and lower genetic risk and 3-5 HLFs were shown in red, blue, and green, respectively. Abbreviations as in Figure 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Participants who had higher genetic risk regarding ACLY (ATP citrate lyase) and adhered to zero to two healthy lifestyle factors (HLFs) were reference group. SD difference and 95% CI of log-transformed lipid metabolites for participants with lower genetic risk and 0–2 HLFs, higher genetic risk and 3–5 HLFs, and lower genetic risk and 3–5 HLFs were shown in red, blue, and green, respectively. Abbreviations as in Figure 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** SD difference and 95% CI of log-transformed lipid metabolites per one factor increase in healthy lifestyle factors were shown in blue. SD difference and 95% CI of log-transformed lipid metabolites per 2-SD higher HMGCR (3-hydroxy-3-methylglutaryl–coenzyme A reductase) score were shown in red. Abbreviations as in Figure 1.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/60999/elife-60999-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** SD difference and 95% CI of log-transformed lipid metabolites per one factor increase in healthy lifestyle factors were shown in blue. SD difference and 95% CI of log-transformed lipid metabolites per 2-SD higher ACLY (ATP citrate lyase) score were shown in red. Abbreviations as in Figure 1 .
 
 When we stratified participants according to the score of HMGCR, ACLY, or their sum score, the associations between each one factor increase in HLFs and lipid metabolites were generally similar between high- and low- genetic risk stratum (all pinteraction >0.05) (Supplementary file 2C–E).
 
@@ -109,27 +372,27 @@ The present study of Chinese adults elucidated that the effects of adherence to 
 
 ## Materials and methods
 
-## Study population
+### Study population
 
 The CKB is a prospective cohort of 512,715 adults (aged 30–79 years) from 10 geographically diverse areas across China (five urban sites and five rural sites) during 2004–2008. Details of the study design, survey methods, and long-term follow-up have been given elsewhere (Chen et al., 2005; Chen et al., 2011). Briefly, all participants had baseline data collected by questionnaire, including sociodemographic, lifestyle factors, and medical and medication history, and physical measurements. Participants also provided a 10 ml random blood sample for long-term storage, with the time since last meal recorded. Mortality and morbidity during follow-up were identified through linkage with local death and disease registries, with the national health insurance system, and by active follow-up if necessary (i.e., visiting local communities or directly contacting participants). Since 2014, 97% of the participants have been linked to the health insurance databases. By December 31, 2015, of all the cohort participants, only 4875 (<1%) were lost to follow-up. The mean follow-up duration of the cohort since baseline was 9.2 (1.4) years.
 
 The study protocol was approved by the Ethics Review Committee of the Chinese Center for Disease Control and Prevention (005/2004, Beijing, China) and the Oxford Tropical Research Ethics Committee, University of Oxford (025–04, UK). All participants provided written informed consent.
 
-## Design of the present study
+### Design of the present study
 
 A subset of 4681 CKB participants was selected for metabolomics measurements in a nested case–control study of incident CHD and stroke occurring before the censoring date of January 1, 2015 (Holmes et al., 2018). Cases were those who had a newly developed fatal or nonfatal disease during follow-up: (1) CHD: fatal ischemic heart disease coded as ICD-10 I20-I25 and nonfatal myocardial infarction coded as I21-I23 (n = 927); (2) ischemic stroke: ICD-10 I63 or I69.3 (n = 1114); (3) intracerebral hemorrhage: ICD-10 I61 or I69.1 (n = 1127). Case status was defined as the disease first occurred in each participant. Common controls were selected by frequency matching to combined cases by age, sex, and study area (n = 1513). The diagnosis adjudication has finished for 34,000 reported cases of ischemic heart disease by a review of hospital medical records. Overall, 88% of the diagnoses were confirmed. All case and control participants did not report doctor-diagnosed CHD, stroke, transient ischemic attack, or cancer, and were not using statins and other lipid-lowering medications at baseline. Of the 4681 participants, 4592 had genotyping information, which was generated using a customized Affymetrix Axiom array including ~800,000 SNPs and further imputed to the 1000 Genomes reference panel (Phase 3) using IMPUTE v2.
 
-## Measurement of lipid metabolites
+### Measurement of lipid metabolites
 
 A high-throughput targeted NMR metabolomics platform (Soininen et al., 2015) was used for quantification of circulating lipid metabolites in baseline plasma samples (Brainshake Laboratory at Kuopio, Finland). All metabolites were assayed simultaneously. Cases and controls were measured in random order, with laboratory staff blinded to case/control status. Of the 4681 participants, 137 had duplicated measurements. The median coefficient of variation for duplicates was 5.0% (interquartile range: 2.7–6.7%) (Holmes et al., 2018). Six traits covered by NMR spectroscopy were also measured using standard clinical chemistry assays including total cholesterol, LDL-C, high-density lipoprotein cholesterol (HDL-C), triglyceride (TG), apolipoprotein B, and apolipoprotein A1 (Wolfson Laboratory at University of Oxford, UK). There were high correlations between NMR and clinical chemistry measured traits, with the correlation ranging from 0.80 to 0.90 (Holmes et al., 2018).
 
-## Definition and assessment of HLFs
+### Definition and assessment of HLFs
 
 We included five baseline lifestyle-related characteristics: smoking, alcohol consumption, dietary habit, physical activity, and body weight and fat to assess energy balance (Lloyd-Jones et al., 2010). In the baseline questionnaire, for smoking, we asked frequency, type, and amount of tobacco smoked per day for ever smokers, and years since quitting and reason to quit for former smokers. For alcohol consumption, we asked drinking frequency on a week, type of alcoholic beverage, and volume of alcohol consumed on a typical drinking day. For physical activity, we asked the usual type and duration of activities. The daily level of physical activity was calculated by multiplying the metabolic equivalent tasks (METs) value for a particular type of physical activity by hours spent on that activity per day and summing the MET hours for all activities. For dietary habit, we used a short qualitative food frequency questionnaire to assess habitual intakes of 12 conventional food groups (Supplementary file 2G). For adiposity level, trained staff measured weight, height, and WC with calibrated instruments. BMI was calculated as weight in kilograms divided by the square of the height in meters.
 
 The HLFs that may be related to lower CHD risk were defined as follows: (1) never smoking; (2) moderate alcohol consumption: weekly but not daily drinking, or daily drinking less than 30 g of pure alcohol; (3) having ≥4 of the total six healthy dietary habits that are particularly addressed in the Chinese dietary guidelines (2016) (Yang et al., 2018): consuming fresh vegetables every day, fresh fruits every day, red meat <7 days/week, soybean products ≥4 days/week, fish ≥1 day/week, and coarse grains ≥4 days/week; (4) being physically active, i.e. having a sex-specific median or higher level of physical activity; (5) healthy adiposity levels: BMI in the range of 18.5–27.9 kg/m2 (normal or overweight according to the standard classification specific for Chinese) and WC <90 cm in men and <85 cm in women (Chen et al., 2018; Jia et al., 2010).
 
-## Genetic scores for HMGCR and ACLY
+### Genetic scores for HMGCR and ACLY
 
 We constructed the genetic scores in the Chinese population with a previously adopted method (Ference et al., 2019). This approach has been used to accurately anticipate the results of several randomized trials that have evaluated lipid-lowering therapies (Ference, 2018). First, we tested the association of each variant within a 500 KB window on either side of the HMGCR gene in a linear regression model, with plasma LDL-C as dependent variable and age, sex, and the top 10 ancestry-informative principal components as covariates in 13,060 participants from the CKB cohort without overlapping with the lipidomic data set. All 13,060 participants were not using statin and other lipid-lowering medications at baseline. Second, we pruned the variant by keeping the top variants with most significant p-value and removed other variants that were correlated with the selected variant (r2 > 0.3). Next, we tested the association between each remaining variant and LDL-C, conditional on previously selected variants and covariates, and selected the variant with the smallest p-value. We iteratively repeated this step until all variants were selected, removed due to linkage disequilibrium with a selected variant, or were not associated with LDL-C (p>0.05). The exposure allele for each selected variant was defined as the allele associated with lower plasma LDL-C. The weight for each variant was the conditional effect of that variant on LDL-C level in mmol/l adjusted for all other variants included in the score among the 13,060 participants.
 
@@ -139,7 +402,7 @@ We also used previously constructed HMGCR and ACLY genetic scores (Ference et al
 
 Variants included in the genetic scores and their association with LDL-C were provided in Supplementary file 2H.
 
-## Statistical analysis
+### Statistical analysis
 
 We classified participants into three groups according to the number of HLFs they adopted: zero to one, two to three, and four to five. All lipid metabolites were inverse normal transformed (SD = 1), which is useful for comparing variables expressed in different units. The associations between combined HLFs and lipid metabolites were assessed using linear regression adjusted for age (years), sex (male or female), fasting time (<8 or ≥8 hr), 10 study areas, education level (no formal or primary school, middle or high school, technical school or college or higher), and case/control status, with participants who adopted zero to one HLF as the reference group. Logistic regression was used to estimate odds ratios (ORs) of CHD per 1-SD higher lipid metabolite levels, adjusted for age, sex, fasting time, study areas, education level, and smoking status. The additional adjustment was also made for other HLFs (alcohol consumption, dietary habit, physical activity, and BMI) and prevalent diabetes, with results largely unchanged (data not shown).
 

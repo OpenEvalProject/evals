@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.31522.001 The Escherichia coli SMC complex, MukBEF, acts in chromosome segregation. MukBEF shares the distinctive architecture of other SMC complexes, with one prominent difference; unlike other kleisins, MukF forms dimers through its N-terminal domain. We show that a 4-helix bundle adjacent to the MukF dimerisation domain interacts functionally with the MukB coiled-coiled ‘neck’ adjacent to the ATPase head. We propose that this interaction leads to an asymmetric tripartite complex, as in other SMC complexes. Since MukF dimerisation is preserved during this interaction, MukF directs the formation of dimer of dimer MukBEF complexes, observed previously in vivo. The MukF N- and C-terminal domains stimulate MukB ATPase independently and additively. We demonstrate that impairment of the MukF interaction with MukB in vivo leads to ATP hydrolysis-dependent release of MukBEF complexes from chromosomes.
+The Escherichia coli SMC complex, MukBEF, acts in chromosome segregation. MukBEF shares the distinctive architecture of other SMC complexes, with one prominent difference; unlike other kleisins, MukF forms dimers through its N-terminal domain. We show that a 4-helix bundle adjacent to the MukF dimerisation domain interacts functionally with the MukB coiled-coiled ‘neck’ adjacent to the ATPase head. We propose that this interaction leads to an asymmetric tripartite complex, as in other SMC complexes. Since MukF dimerisation is preserved during this interaction, MukF directs the formation of dimer of dimer MukBEF complexes, observed previously in vivo. The MukF N- and C-terminal domains stimulate MukB ATPase independently and additively. We demonstrate that impairment of the MukF interaction with MukB in vivo leads to ATP hydrolysis-dependent release of MukBEF complexes from chromosomes.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ Here, we reveal that MukF, like other characterised kleisins, interacts function
 
 ## Results
 
-## The MukF N-terminal domain interacts with the MukB neck
+### The MukF N-terminal domain interacts with the MukB neck
 
 Because of the intriguing distinction between dimeric MukF and monomeric kleisins (Figure 1), we set out to test, if the MukF N-terminal domain would interact with the MukB neck, thereby exhibiting the architecture of other SMC dimers and their cognate kleisins. In order to undertake an initial characterisation of MukB-MukF interactions, C- and N-terminal MukF Flag-tagged truncations, immobilised on anti-Flag resin, were analysed for binding to intact MukB and its truncated derivatives containing just the ATPase head (MukBH), or the head plus approximately a third of the adjacent coiled-coil region (MukBHN). The latter variant would be expected to retain any ‘neck’ interaction determinants for MukF, based on similarity with kleisin interacting ‘necks’, adjacent to the SMC heads of other SMC complexes (Figure 2A; Bürmann et al., 2013; Gligoris et al., 2014). MukF C-terminal derivatives, FC1 and FC2, interacted with MukB, and all of its derivatives, as expected, because the MukB ATPase head participates in this interaction (Figure 2B; Figure 1; Woo et al., 2009). FN2, containing the N-terminal dimerisation WHD and an adjacent 4-helix bundle, interacted strongly with intact MukB and MukBHN, but not with MukBH, consistent with FN2 interacting with the MukB neck (Figure 2B). Since we reproducibly recovered low levels of MukBH in pulldowns with FN2, the MukB head might also bind FN2 weakly, although we could not substantiate this by further biochemical analyses (below). We detected no interactions of FN1, containing just the WHD involved in MukF dimerisation, with the MukB derivatives. In contrast, FN3, containing the 4-helix bundle (helices 6–9), and FN4, carrying only helices 8 and 9, interacted with MukB and MukBHN, but not MukBH (Figure 2B). Consistent with this, FN6 lacking helices 8 and 9 failed to show an interaction in size exclusion chromatography-multi-angle light scattering (SEC-MALS) assays (below) and FN7, lacking helix 9 failed to interact with MukBHN (Figure 2B bottom right panel). We conclude that while helices 8 and 9 of the 4-helix bundle are sufficient for interaction with the MukB neck, helix 9 is essential.
 
@@ -46,19 +46,69 @@ Because of the intriguing distinction between dimeric MukF and monomeric kleisin
 
 To confirm these observations, and to determine the molecular mass of the complexes, we used SEC-MALS (Figure 3). MukBHN was monomeric in solution, while FN2 was dimeric, as expected from structural analyses (Fennell-Fezzie et al., 2005; Woo et al., 2009). When mixed at a molar ratio of 1 MukBHN monomer:1.25 2FN2 (in the figures, we refer to FN2 dimers as 2FN2, to reflect their dimeric state), two additional peaks of masses 165 kDa and 284 kDa were evident in addition to the MukBHN monomers (Figure 3A left panel). We interpret these as complexes in which either one or two MukBHN molecules bound independently to a single FN2 dimer. Consistent with this interpretation, more of the larger complexes were observed at higher MukBHN to 2FN2 ratios (3:1; Figure 3—figure supplement 1). Therefore, the interaction between the MukF N-terminal domain and the MukB neck does not compromise MukF dimerisation. The relatively low proportion of complexes of stoichiometry MukBHN-2FN2-MukBHN as compared to MukBHN-2FN2 in the presence of a large excess of MukBHN, indicates that binding of the second MukBHN to MukBHN-2FN2 complex may be less favourable than binding of the first MukBHN to FN2.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig3-v2.jpg)
+
+**Figure 3.:** Binding and stoichiometry of complexes was determined by SEC-MALS. (A) Left panel; MukBHN (red), 2FN2 (blue), and MukBHN + 2FN2 (green) at a 1:1.25 monomer:dimer molar ratio. Middle panel; MukBH (pink), 2FN2 (blue), and MukBH + 2FN2 (brown) at 1:0.25 m:d ratio. Right panel; MukBH (pink), FC2 (lime green), and MukBH + FC2 (green) at a 1:1 m:m ratio. (B) MukBHN (red), 2FN6 (grey), and MukBHN + 2FN6 (blue) at a 1:0.25 m:d ratio. (C) MukBHN + 2FN2 at a1:1 m:d ratio (dark green), and MukBHN + 2FN2 + FC2 at a 1:1:1 m:d:m ratio (olive green).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The samples contained a mixture of MukBHN and FN2 at ratios of; 3:1 m:d, pink; and 0.3:1 m:d, purple.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) FCS measurements of FN2 and FN10 binding to MukB. Cy5 labelled fragments were at a fixed ~10 nM concentration; exponential fits to data points were used to extract Kds. Error bars represent S.D. of three independent experiments. (B) FPA measurements of FN3 and FC2 binding to MukB. Cy5 labelled FN3 and FC2 fragments were at concentrations 5 nM and 9 nM, respectively.
+
 In agreement with the Flag-MukF-MukB interaction assays, FC2, but not FN2, formed complexes with MukBH (Figure 3A middle and right panels). FN6, which lacks the two C-terminal helices, 8 and 9, of the 4-helix bundle, failed to form complexes with MukBHN (Figure 3B). Addition of ATP did not significantly alter the nature or abundance of complexes containing MukBHN and FN2 or FC2 (Figure 3—figure supplement 2). This is consistent with MukBHN, which is a monomer in solution, being unable to form stable heads-engaged dimers with either FN2 or FC2 in the presence of ATP.
 
 We next tested whether monomers of MukBHN can simultaneously bind both FN2 and FC2. SEC analysis (Figure 3C) showed that mixtures of MukBHN, FN2 and FC2 yielded larger complexes (olive green trace) than those formed with MukBHN and FN2 alone (dark green trace), consistent with binding of both FN2 and FC2 to a single monomer of MukBHN. Nevertheless, it was not possible to assign precise masses to these by light scattering, because of the dynamic nature of the complexes and an inability to completely resolve them under a range of SEC conditions. Therefore, a complex containing a MukB dimer with unengaged heads, bound to a MukF dimer may be stabilised by MukF interactions to both the MukB head and neck. An equivalent result was observed with B. subtilis SMC complexes, with both head and neck of a single SMC molecule being bound simultaneously by kleisin N-and C-terminal domains (Bürmann et al., 2013).
 
 To characterise further the interaction of MukF N- and C-terminal domains to MukB, we determined the binding affinities of fluorescently labelled FN2, FN10, FN3 and FC2 using Fluorescence Correlation Spectroscopy (FCS) and Fluorescence Polarization Anisotropy (FPA). Both domains bound to MukB with similar affinities, with Kds in the 9–26 nM range, suggesting that interactions of the N-terminal and C-terminal MukF domains with the MukB neck and head, respectively, are similarly strong (Figure 3—figure supplement 3). FN10, which in addition to the N-terminal domain also carries the MukF middle region, bound more tightly to MukB than FN2, consistent with the MukF middle region interacting directly with MukB (Woo et al., 2009)﻿
 
-## The MukF C- and N-terminal domains activate MukB ATPase independently and additively
+### The MukF C- and N-terminal domains activate MukB ATPase independently and additively
 
 MukB dimers alone had negligible ATPase activity (Figure 4), in agreement with previous reports (Petrushenko et.al., 2005; Woo et al., 2009). Addition of MukF kleisin led to robust MukB ATPase. The steady state ATPase rate was ~21 ATP molecules hydrolysed/min/MukB dimer, under conditions of MukF excess (Figure 4—figure supplement 1A). MukF alone did not exhibit ATPase activity. To dissect the MukF requirements for MukB ATPase, we assayed two MukF truncations, containing either the N-terminal domain (FN2), or the C-terminal domain and the middle region (FC2) (Figure 2A). Both variants stimulated MukB ATPase (Figure 4). Saturating FC2, at a 2.5-fold molar excess, gave 60% of the maximal ATPase obtained with MukF, while saturating FN2 (at a 2.5-fold molar excess) gave 33% of maximum ATPase (Figure 4—figure supplement 1BC), while a truncation equivalent to FN2 plus the MukF middle region raised this level to ~50% (later). Addition of FN2 and FC2 together restored ATPase to the level observed with wild type MukF. FN6, lacking helices 8 and 9, did not stimulate MukB ATPase, consistent with its failure to interact with the MukB neck (Figure 4—figure supplement 1D). Taken together, the results show that MukB ATPase is activated additively and independently by the N-and C-terminal domains of MukF, with each domain being able to activate ~50% of maximal MukB ATPase.
 
-## Characterisation of the interactions between the MukB neck and MukF
+![Figure 4.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig4-v2.jpg)
+
+**Figure 4.:** Concentrations in the assays were: MukB, 0.5 μM, MukF/FN2/FC2 1.25 μM, that is, at molar ratio of B:F, 0.5:1.25 monomer equivalent. The curves in the graph represent a single experiment; averages of initial rates ± SD from three experiments are tabulated beneath.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B, C) MukB ATPase activity at a range of concentrations of MukF/FN2/FC2. MukB was present at 0.5 μM, MukF/FN2/FC2 at following concentrations: 0.25 μM pink, 0.5 μM black, 1.25 μM blue, 2.5 μM red, and 5 μM green (in B and C 0.6 μM black). (D) MukF FN6 failed to stimulate MukB ATPase.
+
+### Characterisation of the interactions between the MukB neck and MukF
 
 To gain further insight into the interaction of the MukF 4-helix bundle and the MukB neck, variants altered in the MukB neck and MukF helix 9 were analysed for their activity and binding. The mutagenesis strategy was informed by structures of comparable kleisin and SMC neck interactions in yeast cohesin, and B. subtilis SMC complexes (Gligoris et al., 2014; Huis in’t Veld et al, 2014,Bürmann et al., 2013); see Materials and methods for the mutagenesis strategy). Three variants with triple substitutions in helix 9 of FN2 exhibited an impaired ability to activate MukB ATPase. FN2m2 (substitutions R279E K283A R286A) displayed a ~10 fold reduction in the ability to activate MukB ATPase, FN2m3 (D261K S265K Q268A), showed a ~2 fold reduction, while FN2m1 (D272K I275K R279D) was reduced by about a third (Figure 5A). Moreover, SEC analysis showed that FN2m1 and FN2m2 failed to interact detectably with MukBHN (Figure 5—figure supplement 1). Consistent with these results, functional in vivo complementation analysis of the ability of full length MukF variants, containing these sets of mutations, showed that neither MukFm2 nor MukFm3 could complement the temperature-sensitivity of ΔmukF cells, while MukFm1 exhibited partial complementation (Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig5-v2.jpg)
+
+**Figure 5.:** (A) Left panel; cartoon of MukF N-terminal domain fragment carrying the N-terminal dimerisation domain (green) and part of the middle region (orange). Helices 8 and 9 are indicated in cyan. The mutated amino acid residues in variants FN2m1, FN2m2 and FN2m3 are indicated in yellow, red and purple, respectively, (residue R279 was altered in both m1 and m2, but is shown only in m2); views of helices 8 and 9 from different angles are shown separately. Right panel; ATPase activities of the mutated variants; means of initial rate measurements from three experiments are tabulated below. (B) Left panel; ATPase activities in the presence of MukF, of MukB and MukB variants mutated at the neck, MukBm1, blue, and MukBm3, yellow. Averages of initial rates from three experiments are tabulated underneath. Right panel; monomer of the MukB head (pdb 3EUK, Woo et al., 2009); the helix that emerges from the C-terminal subdomain of the head (C-ter helix) and forms the head-adjacent segment of the coiled-coil has been extended by modelling (shown in lilac). Right; enlarged view of the C-ter neck helix from the top with mutated residues shown. (C) Interactions of kleisin N-terminal domains with SMC necks. Left panel; Smc3-Scc1N; Gligoris et al. (2014). Right panel; B. subtilis SMC-ScpAN; Bürmann et al. (2013). The coiled-coil neck consists of two helical regions protruding from the SMC N-terminal head subdomain (N-ter helix; yellow), and from the C-terminal head subdomain (C-ter helix; red). Kleisin helices are shown in cyan.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Binding of FN2 (dark grey trace), FN2m2 (R279E K283A R286A, pink trace), and FN2m3 (D261K S265K Q268A, yellow trace) to MukBHN was analysed by SEC on Sephadex 200 column using MukBHN (red trace) and FN2 (navy blue trace) as reference. The protein concentrations were: MukBHN - 3.7 μM (monomer) and FN2 variant - 4.6 μM (dimer). The ranges of elution volumes for HN-2FN2, HN and 2FN2 in various SEC runs are indicated below the traces.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** in vivo complementation in strain lacking chromosomal mukF gene by variants expressed from pET21 was assessed in the absence of IPTG (constitutive leaky expression). Growth material from colonies of each variant and MukF was streaked on LB and incubated at permissive, 22°C, and non-permissive, 37°C temperature and compared to negative control, empty vector.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** ATPase activity was measured at concentrations of MukB variant, 0.5 μM; MukF/FN2/FC2, 1.25 μM. The traces represent a single experiment.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Binding of Cy5-labelled FN3 (at concentration of 5 nM) was assessed by FPA.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** in vivo complementation in cells lacking chromosomal mukB gene by variants expressed from pET21 plasmid. Growth of material streaked from 6 colonies of each variant was compared to growth of cells carrying WT MukB construct at permissive, 22°C, and non-permissive, 37°C; ϕ - a negative control, empty vector.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** (A) Pymol cartoon of MukBHN complex based on the asymmetric complex structure from Woo et al. (2009), as shown in Figure 1B, but viewed from the top. ‘B monomer 1’, is coloured salmon pink, ‘B monomer 2’, intense red. The residues that make the motifs of ATPase catalytic binding sites are shown as spheres and indicated as follows: in monomer 1, Walker A and Walker B are coloured blue and signature loop in yellow; while in monomer 2, Walker A and Walker B are orange and the signature loop is in cyan; the modelled C-ter helices of the necks are shown in lilac. In this conformation, two assembled active sites, WA1 + WB1 + S2 and WA2 + WB2 + S1, bind two nucleotide molecules (not shown here). (B) A model of the MukBHN-2FN2-MukBHN complex inferred from the studies presented here shown in two views; the model assumes that FN2 dimer retains the conformation as seen in MukFE complex in the absence of MukB (Woo et al., 2009). Interactions between the two independently bound MukBHN necks and the helices of four-helix bundle of MukF N-terminal domain impose a conformation, in which the heads are turned around with respect to one another separating the catalytic active sites motifs.
 
 In addition, we analysed MukB variants carrying three double amino acid substitutions in the neck, located near MukB C-terminal head domain. They were designed to be at different locations on the putative candidate coiled-coil helix, that protrudes from the C-terminal subdomain of the MukB head, in positions that were predicted to point towards the MukF 4-helix bundle (Figure 5B). MukBm3 (L1219K L1226K) had about 35% of wild type ATPase activity when activated by full length MukF; FN2 was unable to activate its ATPase, while FC2 activated it as efficiently as wild type MukF, consistent with its defect in interaction with FN2 (Figure 5—figure supplement 3; Figure 5—figure supplement 4). MukBm2 (E1216A E1230A), showed no reduction in ATPase, while MukBm1 (M1215K L1222K) had <10% of MukF-stimulated MukB ATPase (Figure 5B), indicating that both the MukF N- and C-terminal fragments failed to activate the MukB ATPase of this variant (Figure 5—figure supplement 3). Although we believe that this protein can fold correctly, the failure to have its ATPase activated by the MukF C-terminal domain is not yet understood; perhaps substitutions at these residues result in an alteration of the coiled-coil structure adjacent to the head, thereby compromising head engagement. MukBm1 and MukBm3 failed to bind FN2 in FPA assays (Figure 5—figure supplement 4).
 
@@ -68,13 +118,29 @@ Using the E. coli MukEF crystal structure (pdb, 3EUH; Woo et al., 2009), along w
 
 In conclusion, the functional interaction between the MukF N-terminal helix 9 and the neck region of MukB coiled-coil revealed and characterised here is equivalent to the similar interaction in other characterised SMC complexes (Gligoris et al. (2014); Huis in’t Veld et al, 2014,Bürmann et al., 2013).
 
-## MukE inhibits MukBF ATPase
+### MukE inhibits MukBF ATPase
 
 MukE inhibited MukF-stimulated MukB ATPase in steady-state assays (Figure 6A; Bahng et al., 2016). This inhibition was MukE concentration-dependent (Figure 6—figure supplement 1). We then tested whether MukE could equally inhibit the ATPase activated by the isolated C- and N-terminal domains of MukF. The incorporation of MukE into a MukBF complex depends on the asymmetric binding of a MukE dimer to the MukF middle region, which also interacts with MukB head in the engaged MukB heads complex (Shin et al., 2009; Woo et al., 2009; Figure 7A and Figure 1B left panel). In the absence of MukE, the N- and C-terminal variants of MukF carrying the entire middle region, FN10 and FC2, respectively, showed 50–60% of wild type MukF activation activity, whereas variants lacking the middle region, FN2 and FC5, showed 25–33% of activation activity, thereby implicating the middle region, whether it be specified by the C- or N-terminal domains, in stabilising or directing, a conformation that optimises ATP hydrolysis. Both the MukF C-terminal head binding fragment (Figure 7A, ‘Hb’) and the MukE binding segment of the MukF middle region (Figure 7A, ‘E1a, E1b, E2’) contributed to the optimal activation activity (Figure 7B). The molecular basis underlying the role of this middle region segment in maximising steady state MukB ATPase remains unclear; there are no structural data available to inform how the MukF middle region interacts with the MukB head in the absence of MukE.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig6-v2.jpg)
+
+**Figure 6.:** (A) MukE inhibits MukBF ATPase. Concentrations: MukB, 0.5 μM, MukF 1.25 μM, and MukE 5.0 μM. (B) DNA alleviates MukE-mediated inhibition. ATPase was measured in the presence/absence of 53 bp linear ds DNA fragment at 5x or 10x molar excess over MukB. The average values of the initial rates ± SD from three experiments are tabulated beneath the graphs. (C) Surface representation of the MukBEF asymmetric complex with amino acids, whose substitution abolished (red) or altered interactions with DNA (Woo et al., 2009).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) ATPase activity was measured at constant concentrations of MukB, 0.5 μM and MukF 1.25 μM and a range of concentrations of MukE from 0.25 μM - 5 μM. (B) Inhibition of MukBF ATPase by MukE was dependent on the concentration of MukF. Concentrations of MukB and MukE were constant with MukB, 0.5 μM, MukE 2.5 μM while concentration of MukF ranged between 0.25 μM and 5 μM.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig7-v2.jpg)
+
+**Figure 7.:** (A) One monomer of a MukE dimer binds helical region E1a and part of the acidic linker E1b, while the second MukE monomer binds E2. Hence, MukE binds FC2, containing the entire middle region, but not FN2, which lacks the middle region (Figure 7—figure supplement 1). The C-terminal part of the MukF middle region forms an extended polypeptide that binds the MukB head in the asymmetric complex (Hb; Woo et al., 2009). (B) Stimulation of MukB ATPase by MukF variants in the presence and absence of MukE and DNA (53nt ds fragment at 10-fold molar excess over MukB). The bars show means of the initial rates ± SD from three independent experiments.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The samples contained a mixture of (A) FC2 and MukE at molar ratio of 1:1, monomer to dimer, (B) FN2 and MukE at ratio 1:1.5 dimer:dimer.
+
 MukE inhibited MukB ATPase activated by the MukF N- and C-terminal domain variants that carried complete MukE dimer binding sites (FN9, FN10 and FC2), with a ~4 fold greater inhibition of activation by FN10, as compared to FC2 (Figure 7B). MukE was unable to inhibit ATPase stimulated by FN2 and FC5, both of which were lacking MukE binding sites. The effect of MukE on FC4, lacking the N-terminal part of the MukE1 binding site (E1A) was to partially inhibit ATPase activation. These data demonstrate that each of the MukB ATPase activities, stimulated independently by the N- and C-terminal domains of MukF can be inhibited by MukE binding to MukBF.
 
-## DNA binding to MukB relieves MukE-mediated ATPase inhibition
+### DNA binding to MukB relieves MukE-mediated ATPase inhibition
 
 Previous reports have shown no effect of DNA on the ATPase of MukBEF (Chen et al., 2008, Petrushenko et al., 2006; Woo et al., 2009), whereas B. subtilis SMC ATPase was reported to be stimulated modestly by DNA (Hirano and Hirano, 2004). We confirmed that MukB ATPase is independent of the presence of DNA (Figure 6B); addition of 53 bp ds linear DNA at 20-fold excess (10 μM) over MukB (0.5 μM), did not influence MukBF ATPase activity. MukBF ATPase was not dependent on residual DNA contamination of the proteins as judged by the observation that extensive DNase treatment of MukBF did not influence the ATPase level.
 
@@ -82,11 +148,21 @@ DNA alleviated the MukE-mediated inhibition of MukB ATPase. At 5–10-fold exces
 
 The position of the DNA binding interface on MukB heads, defined by structure-informed mutational analysis (Figure 7C; Woo et al., 2009), indicated that DNA binding to this interface could clash with MukE dimer binding to the MukF middle region in a heads-engaged MukBEF complex. Therefore, it seems possible that relief of MukE inhibition by DNA might reflect a competition between MukE and DNA for binding to the MukBF head complex, consistent with the demonstration that MukFE can disrupt MukB-DNA interactions (Petrushenko et al., 2006b).
 
-## The MukF N-terminal and C-terminal domains independently modulate MukBEF action in vivo
+### The MukF N-terminal and C-terminal domains independently modulate MukBEF action in vivo
 
 Since N-terminal and C-terminal domains of MukF could independently and additively bind MukB at the neck and cap, and independently stimulate MukB ATPase activity, we analysed the consequences of disruption of the interactions of endogenous MukF with MukB neck and cap regions in live cells. To this end, we over-expressed either FN2 or FC5 polypeptides from the inducible arabinose promoter on a multicopy plasmid in cells expressing chromosomal MukBmYPetEF. We assessed MukBEF function by analysing the presence and behaviour MukBmYPetEF clusters observed as fluorescent foci associated with the replication origin (ori) (Badrinarayanan et al., 2012a, 2012b; Nolivos et al., 2016).
 
 Induced over-expression of FN2 led to a rapid loss of MukBEF foci (half-life of loss ~10 min), whereas FC5 over-expression had a lesser effect on focus loss (half-life of loss ~45 min) (Figure 8, Figure 8—figure supplement 1). In both cases, residual MukBEF clusters remained ori-associated. We then tested if normal cycles of ATP binding and hydrolysis are responsible for the inferred turnover of MukF within functional MukBEF complexes, by testing the effect of fragment production on MukBEQEF complexes that are impaired in ATP hydrolysis and form clusters that turn over very slowly at the replication terminus (ter) rather than at ori (Badrinarayanan et al., 2012a). Over-expression of either FN2 or FC5 had little effect on ter-associated fluorescent MukBEQmYPetEF clusters, consistent with the observation in FRAP experiments that there was little turnover of these complexes, presumably as a consequence of their impaired ATP hydrolysis (Badrinarayanan et al., 2012a). Nevertheless, we cannot exclude the possibility that the failure to lose MukBEQEF complexes on FN2 or FC5 over-expression is a consequence of the altered cellular localisation of MukBEQEF complexes rather than their impaired ATP hydrolysis. Analysis of the protein composition in MukB+ and MukBEQ extracts, verified comparable high levels of induced expression of FN2 and FC5 in mukB and mukBEQ cells (>100 fold excess over endogenous MukF for both FN2 and FC5, when judged by Western blots; Figure 8—figure supplement 2). These observations are consistent with the hypothesis that the MukF interaction with MukB breaks and reforms during cycles of ATP binding and hydrolysis, and that impairment of this interaction leads to loss of functional MukBEF clusters from the chromosome. We have also considered the possibility that the loss of MukBEF clusters from ori after over-expression of FN2 results from the disruption of MukF dimers, rather than an opening of a ring interface. If this were the case, we would have expected the same result in mukBEQ cells.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig8-v2.jpg)
+
+**Figure 8.:** MukF FN2 and FC5 fragments were overexpressed from para promoter in pBAD24 by addition of arabinose. MukBmYPetEF and MukBEQmYPetEF complexes were visualised in the absence of arabinose and at every 20 min after induction. More than 500 cells were analysed for each condition. Experiment was repeated three times; error bars show standard deviation of 3 repeats. Bottom panel; images of FN2 overexpressing cells taken at time 0 and 60 min in MukBmYPetEF and MukBEQYPetEF strains (SN182 and SN311, Nolivos et al., 2016).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig8-figsupp1-v2.jpg)
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/31522/elife-31522-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Western blot analysis of overexpression levels of MukF fragments FN2/FC5 in whole cell protein samples from arabinose induced and uninduced mukB and mukBEQ cells, as above. Relative intensities of bands (after background subtraction) are shown under the bands. In italics (parentheses) are the corrected intensities for FC5 after taking into account the different specific binding activities of FN2 and FC5 to the MukF antibody (B). We therefore estimate a ~2 fold excess of FC5 monomers over FN2 dimers in both mukB and mukBEQ cells. (B) Titration of purified FN2 and FC5 proteins against the same MukF antibody to determine the relative specific activity of detection of FC5/FN2. We estimate that the signal is ~4 fold less per FC5 monomer than a FN2 dimer. (C) SDS PAGE of proteins from lysates produced from induced cells lacking or carrying induced pBAD FN2. Since E. coli contains >1×106 protein molecules and semiquantitative scans of the gel lanes showed FN2 to represent ~2% of cell protein after arabinose induction, we estimate the copy number of FN2 dimers to be >20000 (parentheses), with none detectable before induction. (D) Quantitative mass-spectroscopy analysis of overexpression levels of MukF FN2 and FC5 fragments. The values represent two replicates from a single representative experiment. emPAI was used to estimate copy number/cell with HU alpha as a standard. The low relative value here for FC5 compared to FN2 in relation to the values in panel A is likely a consequence of FC5 yielding few peptides; we therefore conclude that the values in panel A are more robust. Nevertheless, the value here for FC5 is still in ~10 fold excess of endogenous MukF. *emPAI - Exponentially Modified Protein Abundance Index (Ishihama et al., 2005); a microscopic determination in live cells (Badrinarayanan et al., 2012a); b Western blot analysis (Petrushenko et al., 2006b); dhttps://pax-db.org/protein/6884531.
 
 The relatively low turnover of this interaction as compared to the dwell time of MukBEF complexes in vivo (~50 s) and the rates of ATPase measured in vitro could be a consequence of the chelate effect arising from the fact that when the N- or C-terminal domain is released from the MukB neck, or cap, respectively, the reminder of MukF remains associated with MukB through its other interactions, thereby giving a high re-binding rate.
 
@@ -124,7 +200,113 @@ A range of structures, alongside extensive biochemical and functional analyses, 
 
 ## Materials and methods
 
-## Protein purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (E.coli K12 AB1157)</td>
+      <td>mukBmYPetEF</td>
+      <td>SN 182 Nolivos et al.; DOI:10.1038/ncomms10466</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E.coli K12 AB1157)</td>
+      <td>mukB EQ mYPetEF</td>
+      <td>SN 182 Nolivos et al.; DOI:10.1038/ncomms10466</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, for protein expression (E.coli C3013I)</td>
+      <td></td>
+      <td>NEB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, for MukB protein expression (E.coli C3013I) C3013I - mukB 3xflag tag</td>
+      <td>mukB 3xFLAG C3031</td>
+      <td>FLOI - this work; derivative of SN 54; Nolivos et al; DOI:10.1038/ncomms10466</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E.coli K12 AB1157)</td>
+      <td>RRL 149; Δ mukB</td>
+      <td>Nolivos et al.; DOI:10.1038/ncomms10466</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E.coli K12 AB1157)</td>
+      <td>Ab 233; Δ mukF mukBGFP</td>
+      <td>Nolivos et al.; DOI:10.1038/ncomms10466</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti MukF- (mouse polyclonal)</td>
+      <td>gift from Kenneth Marians, Memorial Sloan Kettering Center, New York</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-Mouse IgG (whole molecule)– Peroxidase antibody produced in goat</td>
+      <td>SIGMA</td>
+      <td>RRID: AB_258167</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>ENZCheck Phosphate Assay</td>
+      <td>Life Technologies</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>ASTRA 6</td>
+      <td>Wyatt Technologies</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software algorithm</td>
+      <td>MicrobTracker-Matlab</td>
+      <td>Sliusarenko et al. (2011)</td>
+      <td>RRID:SCR_001622</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Pymol</td>
+      <td>https://pymol.org/2/</td>
+      <td>RRID:SCR_000305</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Methamorph - Ni elements</td>
+      <td>Nikon</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Modeller</td>
+      <td></td>
+      <td>RRID:SCR_008395</td>
+    </tr>
+    <tr>
+      <td>software algorithm</td>
+      <td>MARS data analysis</td>
+      <td>BMG Lagtech</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein purification
 
 MukB, MukBH, MukBHN, MukE, were 6xHis-tagged at the C-terminus (pET21), while MukF and its C- and N-terminal truncations were 6xHis-tagged at the N-terminus (pET28). MukB variants were expressed in strain FL01, which is mukB 3xFLAG C3013I (NEB). MukF variants and MukE 6xHis-tagged at the C-terminus were expressed from pET21 in C3013I cells (NEB). 2L cultures were grown in LB with appropriate antibiotics at 37°C to A600 ~0.6 and induced by adding IPTG at final concentration of 0.4 mM. After 2 hr at 30°C, cells were harvested by centrifugation, re-suspended in 30 ml lysis buffer (50 mM HEPES pH 7.5, 300 mM NaCl, 5%glycerol, 10 mM imidazole) supplemented with 1 tablet of protease inhibitor (PI), and homogenised. Cell debris was removed by centrifugation and clear cell lysates were mixed with 5 ml equilibrated TALON Superflow resin, poured into a column, then washed with 10 X volume of washing buffer (50 mM HEPES pH 7.5, 300 mM NaCl, 5% glycerol, 25 mM imidazole, PI). Bound proteins were eluted in elution buffer (50 mM HEPES pH 7.5, 300 mM NaCl, 5% glycerol, 250 mM imidazole). The fractions from TALON were diluted to 100 mM NaCl buffer and injected to HiTrapTM Heparin HP column (GE Healthcare) pre-equilibrated with Buffer A (50 mM HEPES pH 7.5, 100 mM NaCl, 10% glycerol, 1 mM EDTA, 1 mM DTT), then the column was washed at 1 ml/min flow rate until constant A280. Purified fractions were eluted with a gradient 100–1000 mM NaCl.
 
@@ -132,49 +314,63 @@ For MukE and MukF purifications, fractions from Talon were diluted and injected 
 
 Protein concentration was estimated by UV absorption at 280 nm on Nanodrop spectrophotometer, and protein purity and identity confirmed by electrospray ionisation mass-spectrometry and SDS PAGE. Proteins were aliquoted and stored at −20°C in a buffer containing 10% glycerol.
 
-## ATP hydrolysis assays
+### ATP hydrolysis assays
 
 ATP hydrolysis was analysed in steady state reactions using an ENZCheck Phosphate Assay Kit (Life Technologies). 150 µL samples containing standard reaction buffer supplemented with 2 mM of ATP were assayed in a BMG Labtech PherAstar FS plate reader at 25°C. The data were analysed using MARS data analysis software. Quantitation of phosphate release was determined using the extinction coefficient of 11,200 M−1cm−1 for the phosphate-dependent reaction at A360 nm at pH 7.0.
 
-## Size exclusion chromatography and Multi-Angle light scattering (SEC-MALS)
+### Size exclusion chromatography and Multi-Angle light scattering (SEC-MALS)
 
 Purified proteins were fractionated on a Superose 6 10/300 GL or a Superose 12 10/300 column equilibrated with 50 mM HEPES, pH 7.5 buffer containing 100 mM NaCl, 1 mMDTT, 1 mM EDTA, at flow rate of 0.5 ml/min. 500 µl samples containing analysed proteins were injected on the column and run at a flow rate of 0.5 ml/min. SEC-MALS analysis was performed at 20°C using a Shimadzu (Kyoto, Japan) chromatography system, connected in-line to a Heleos8+ multi angle light scattering detector and an Optilab T-rEX refractive index (RI) detector (Wyatt Technologies, Goleta, CA). Protein samples in 50 mM HEPES pH 7.5, 100 mM NaCl, 1 mM DTT, 1 mM EDTA, 10% glycerol, were injected in this system, and the resulting MALS, RI and UV traces processed in ASTRA 6 (Wyatt Technologies).
 
-## Pull-down assays
+### Pull-down assays
 
 MukF FLAG-tagged fragments were expressed from pET DUET plasmids in C3013I cells (NEB).1L cultures were grown in LB with carbenicilin (100 µg/ml) at 37°C to A600 ~0.6 and induced by adding IPTG to a final concentration 0.4 mM. After 2 hr at 30°C, cells were harvested by centrifugation, re-suspended in 30 ml lysis buffer (50 mM HEPES pH 7.5, 300 mM NaCl, 5%glycerol, 10 mM imidazole) supplemented with 1 tablet of protease inhibitor (PI), and homogenised. Cell debris was removed by centrifugation and clear cell lysates were mixed with 150 µl Anti-FLAG M2 Affinity gel (Sigma Aldrich), incubated for 1 hr at 4°C. The resin was then washed three times with the same buffer containing 250 mM NaCl, resuspended in 1 ml of buffer I (50 mM HEPES pH 7.5, 100 mM NaCl), and purified MukB, MukBH or MukBHN were added. After 45 min incubation (4°C) the resin was washed three times, re-suspended in 200 µl of protein loading buffer (NEB) and analysed on 4–20% gradient SDS PAGE.
 
-## Rationale for targeted mutagenesis
+### Rationale for targeted mutagenesis
 
 Our design of amino acid substitutions in the coiled-coil of MukB neck and MukF helix 9 was informed by the arrangement and interactions at the interface between Scc1 kleisin helices that interact with the coiled-coil of cohesin (Gligoris et al., 2014). Both SMC coiled-coil helices, one protruding from N-terminal and the other from the C-terminal subdomain interact with Scc1. We targeted the MukB C-terminal helix for mutagenesis because we could make better predictions for the orientation of this helix in the MukB neck. Three sets of double mutations were constructed; they mapped to the same side of the helix, but with each set on a slightly different face.
 
 The rationale for mutagenesis in MukF helix 9 was to mutate solvent exposed residues that were not predicted to interact with other MukF helices, or be obstructed by MukE binding. Three sets of triple mutations along the helix were constructed. All amino acid residues chosen for mutagenesis were either invariant or very highly conserved among bacterial species. Point mutations in plasmid-encoded genes were made using Q5 site-directed mutagenesis Kit (NEB). Primers were designed with NEBase Changer. 10 ng of the template was taken to the reaction. Plasmids were isolated and mutations confirmed by sequencing.
 
-## Complementation assays
+### Complementation assays
 
 The ability of leaky plasmid-encoded MukF or MukB expression from pET21, in the absence of IPTG, to complement the temperature-sensitive growth defect of ∆mukF (AB 233) or ∆mukB (RRL149) cells, respectively, at 37°C in LB was assayed. Cells were transformed with pET21 carrying MukF or MukB, or their variants, and allowed to recover for 8 hr post transformation at permissive temperature then plated in duplicates on LB plates containing carbenicillin (100 µg/ml). One plate was incubated at non-permissive (37°C) and the other one at permissive (20°C) temperature. Colonies from plates incubated at permissive temperature were streaked in duplicate and grown at permissive and non-permissive temperature along with positive and negative controls.
 
-## Analysis of MukBEF function in vivo
+### Analysis of MukBEF function in vivo
 
 Strains were streaked onto LB plates with appropriate antibiotics. Single colonies were inoculated into M9 glycerol (0.2%) and grown overnight at 37°C to A6000.4–0.6, then diluted into fresh M9 and grown to A600 0.1. Cells were spun and immobilised on agarose pads between two glass coverslips (1.5 thickness). 1% agarose pads were prepared by mixing low-fluorescence 2% agarose (Bio-Rad) in dH2O 1:1 with 2x growth medium. For analysis of MukBEF fluorescent clusters (foci), strains carrying either functional MukBmYPet (SN182), or the ATP hydrolysis-impaired mutant MukBEQmYPet (SN311, Nolivos et al., 2016) were used. Wide-field fluorescence microscopy used an Eclipse TE2000-U microscope (Nikon), equipped with an 100x/NA1.4 oil PlanApo objective and a Cool-Snap HQ2 CCD, and using Metamorph software for image acquisition. Over-expression of FN2 and FC2 was from pBAD24 plasmids containing the appropriate arabinose-inducible MukF derivative. Strains were transformed with given plasmid and grown in M9 glycerol medium supplemented with 0.2% glucose to limit leaky expression from the arabinose promoter. Once cultures reached A600 ~0.1, cells were centrifuged and re-suspended in M9 glycerol medium supplemented with 0.2% L-Arabinose and grown at 37°C. Every 20 min, cells from1 ml of culture were taken, centrifuged, placed on agarose pad and imaged. As a control, strain carrying empty pBAD24 vector was analysed. Cells were segmented from brightfield images using MicrobeTracker (Sliusarenko et al., 2011). MukB foci were detected using ‘spotfinderM’, available as part of the MicrobeTracker Suite.
 
-## Fluorescence correlation spectroscopy (FCS)
+### Fluorescence correlation spectroscopy (FCS)
 
 FCS was carried out on a ConfoCor 2 system (Carl Zeiss). The 633 nm line of a HeNe laser was directed via a 488/561/633 dichroic mirror and focused with a Zeiss C-Apochromat 40 Å~NA 1.2 water immersion objective to excite experimental samples containing Cy5. Fluorescence emission was collected using a 655 nm long pass filter and recorded by an avalanche photodiode. The pinhole diameter was adjusted to 83 μm (one Airy unit), and the pinhole position was optimised with use of the automatic pinhole adjustment for Cy5. All FCS experiments were carried out in Lab-Tek (Nagle Nunc International) eight-well chambered borosilicate glass plates at 22 ± 1°C. In the assay, diffusion of Cy5-labelled FN2 and FN10 fragments at fixed concentrations (~10 nM) was measured in samples carrying MukB at a range of concentrations up to 160 μM. Since MukB is much larger than any of the fragments used, up to a 3-fold increase in diffusion time was observed.
 
-The intensity of fluorescence signal was measured and the autocorrelation function G(t) was determined for diffusing fluorescently labelled species present in the sample. If two species with different diffusional properties are present, the autocorrelation function G(t) can be described as a two-component model that allows analysis of the abundance of each species:G(τ)=[1−T+Texp⁡(−ττT)]N−1=[1−Y(1+ττsubstrate)1+r02z02ττsubstrate+Y(1+ττproduct)1+r02z02ττproduct]where T is the average fraction of dye molecules in the triplet state with the relaxation time τT, N is the average number of fluorescent molecules in the volume observed, Y is the relative fraction of fragment bound to MukB, τ substrate and τ product are the diffusion time constants of free protein (labelled fragment as indicated for individual experiment and fragment bound to MukB), respectively, and r0 and z0 are the lateral and axial dimensions, respectively, of the observation volume. All calculations, including the evaluation of the autocorrelation curves, which was carried out with a Marquardt nonlinear least-square fitting procedure, were performed using the ConfoCor 2 instrument software. To obtain the % of bound and unbound fragments, the diffusion times for fluorescently labelled fragment were measured and fixed during data analysis. The diffusion time for the complex of a given fragment and MukB was estimated based on measured diffusion time for labelled MukB. No change in diffusion time for labelled MukB was observed when unlabelled fragment was added; therefore, the measured diffusion time for MukB was used as a fixed value during data analysis.
+The intensity of fluorescence signal was measured and the autocorrelation function G(t) was determined for diffusing fluorescently labelled species present in the sample. If two species with different diffusional properties are present, the autocorrelation function G(t) can be described as a two-component model that allows analysis of the abundance of each species:
 
-## Fluorescence polarization anisotropy (FPA)
+$$
+G(\tau)=[1−T+Texp⁡(\frac{−\tau}{\tauT})]N^{−1}=[\frac{1−Y}{(1+\frac{\tau}{\tau_{substrate}})\sqrt{1+\frac{r_{0}^{2}}{z_{0}^{2}}\frac{\tau}{\tau_{substrate}}}}+\frac{Y}{(1+\frac{\tau}{\tau_{product}})\sqrt{1+\frac{r_{0}^{2}}{z_{0}^{2}}\frac{\tau}{\tau_{product}}}}]
+$$
 
-Experiments were done on a BMG LABTECH PHERAstar FS next-generation microplate reader with an FP 590–50 675–50 optic module. Samples were measured in Corning black 96 well flat bottom half volume plates at 25°C. All sample volumes were 100 μL. Cy5 labelled FN3 and FC2 were used at 5 nM and 9 nM respectively. The concentration of MukB was varied from 0.1 nM to 1 µM. Samples were equilibrated for 40 min before measurement. Experiments were repeated thrice and standard deviations are reported. Data were plotted and analysed using Sigmaplot, where Kd and total receptor concentration were solved simultaneously. Binding reached saturation above 160 nM MukB. Binding of FN3 or FC2 with 1 µM MukB was used as a 100% bound reading. The fraction of FN3 or FC2 bound was determined using the equation:[1−(Max value−Current valueMax value−Min value)]∗100%
+where T is the average fraction of dye molecules in the triplet state with the relaxation time τT, N is the average number of fluorescent molecules in the volume observed, Y is the relative fraction of fragment bound to MukB, τ substrate and τ product are the diffusion time constants of free protein (labelled fragment as indicated for individual experiment and fragment bound to MukB), respectively, and r0 and z0 are the lateral and axial dimensions, respectively, of the observation volume. All calculations, including the evaluation of the autocorrelation curves, which was carried out with a Marquardt nonlinear least-square fitting procedure, were performed using the ConfoCor 2 instrument software. To obtain the % of bound and unbound fragments, the diffusion times for fluorescently labelled fragment were measured and fixed during data analysis. The diffusion time for the complex of a given fragment and MukB was estimated based on measured diffusion time for labelled MukB. No change in diffusion time for labelled MukB was observed when unlabelled fragment was added; therefore, the measured diffusion time for MukB was used as a fixed value during data analysis.
 
-Data were plotted and the values of Kd and ‘total receptor’ concentration (RT) were simultaneously determined using Sigmaplot by solving the quadratic for fraction bound (B) below,B=(MukBT + Kd + RT) −((−MukBT − Kd − RT)2 − 4MukBTRT)2
+### Fluorescence polarization anisotropy (FPA)
 
-## Western blot analysis
+Experiments were done on a BMG LABTECH PHERAstar FS next-generation microplate reader with an FP 590–50 675–50 optic module. Samples were measured in Corning black 96 well flat bottom half volume plates at 25°C. All sample volumes were 100 μL. Cy5 labelled FN3 and FC2 were used at 5 nM and 9 nM respectively. The concentration of MukB was varied from 0.1 nM to 1 µM. Samples were equilibrated for 40 min before measurement. Experiments were repeated thrice and standard deviations are reported. Data were plotted and analysed using Sigmaplot, where Kd and total receptor concentration were solved simultaneously. Binding reached saturation above 160 nM MukB. Binding of FN3 or FC2 with 1 µM MukB was used as a 100% bound reading. The fraction of FN3 or FC2 bound was determined using the equation:
+
+$$
+[1−(\frac{Max value−Current value}{Max value−Min value})]∗100%
+$$
+
+Data were plotted and the values of Kd and ‘total receptor’ concentration (RT) were simultaneously determined using Sigmaplot by solving the quadratic for fraction bound (B) below,
+
+$$
+B=\frac{(MukB_{T} + K_{d} + R_{T}) −\sqrt{}((−MukB_{T} − K_{d} − R_{T})^{2} − 4MukB_{T}R_{T})}{2}
+$$
+
+### Western blot analysis
 
 MukB+ (SN182) and MukBEQ mutant (SN311) cells were transformed with pBAD, pBAD-FN2 (pKZ111) and pBAD-FC5 (pZ103) plasmids. Cells were grown at 22°C, to A6000.4–0.6, induced with 0.2% L-Arabinose for 3 hr. Cultures were spun down and cell pellets were resuspended in gel loading buffer and proteins were separated by a 4–20% gradient SDS PAGE followed by Western blots with mouse anti-MukF antibody as primary and goat anti-mouse as secondary antibody.
 
-## Quantitative mass spectroscopy
+### Quantitative mass spectroscopy
 
 In-solution trypsin digestion. Bacterial lysates were prepared from 50 ml cultures grown in M9 minimum media to A600 ~0.2, with expression from pBAD- induced with 0.2% arabinose for 1 hr. Cells were centrifuged and the pellet was resuspended in 200 μL of 0.1% SDS in PBS, sonicated and incubated for 5 min at 100°C. After centrifugation, supernatant was collected and protein concentration was as assessed using the BCA (Thermo Fisher Scientific, USA) method. Then, 10 μg of protein extract was digested with 0.2 μg of sequencing-grade trypsin (Promega, Mannheim, Germany) overnight at 37°C Proteins were reduced with DTT and alkylated using iodoacetamide. Each sample was prepared for digestion in duplicate.
 

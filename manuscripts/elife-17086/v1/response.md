@@ -19,9 +19,7 @@ Notably, the distance metric that best explains response times in this context d
 
 Communicability is a graph-theoretic measure capturing the distribution of future states in a graph. It is closely related to the successor representation, a predictive encoding scheme of states in a reinforcement learning world (Dayan, 1993). Recent theoretical accounts of hippocampal function suggest that such a successor representation may be encoded by hippocampal place cells (Stachenfeld et al., 2016, 2014). Both measures are predictive and reflect topological features of a graph (unlike Euclidian distances), which becomes particularly pertinent in situations where geometries are warped around obstacles in (physical or abstract) space.
 
-In Author response image 1, this novel distance measure is characterised by specific distortions in comparison to link distance and Euclidian distance measures. For example, transitions that form part of many paths around the graph structure are shortened (e.g. link 3-4) and links that are less frequently visited are substantially longer (e.g. link 6-4). We elaborate further on this novel measure in our fourth response below.10.7554/eLife.17086.016Author response image 1.Visualisation of communicability coordinates for the graph structure by performing multi- dimensional scaling on the communicability matrix.DOI: http://dx.doi.org/10.7554/eLife.17086.016
-
-DOI: http://dx.doi.org/10.7554/eLife.17086.016
+In Author response image 1, this novel distance measure is characterised by specific distortions in comparison to link distance and Euclidian distance measures. For example, transitions that form part of many paths around the graph structure are shortened (e.g. link 3-4) and links that are less frequently visited are substantially longer (e.g. link 6-4). We elaborate further on this novel measure in our fourth response below.10.7554/eLife.17086.016Author response image 1.Visualisation of communicability coordinates for the graph structure by performing multi- dimensional scaling on the communicability matrix.
 
 We now added the following text to the Methods section:
 
@@ -47,9 +45,7 @@ Text added to the Methods section:
 
 Related to this, it is surprising that no effects were seen in the hippocampus. This should be directly addressed. Especially based on the study by Morgan et al. (J Neurosci, 2011), which also capitalizes on fMRI adaptation as a function of distance, one might have predicted similar effects in the hippocampus. The authors should discuss this.
 
-We agree with the reviewers and we had no strong prior hypothesis about the precise spatial location, other than an expectation that we would find the map in the hippocampal-entorhinal system. Indeed, if we lower the statistical threshold we can see that activity extends into the hippocampus (Link distance, Figure 2A, Author response image 2 p < 0.05).10.7554/eLife.17086.017Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.17086.017
-
-DOI: http://dx.doi.org/10.7554/eLife.17086.017
+We agree with the reviewers and we had no strong prior hypothesis about the precise spatial location, other than an expectation that we would find the map in the hippocampal-entorhinal system. Indeed, if we lower the statistical threshold we can see that activity extends into the hippocampus (Link distance, Figure 2A, Author response image 2 p < 0.05).10.7554/eLife.17086.017Author response image 2.
 
 More importantly, however, using the new distance metric we introduce (the successor representation) we do find hippocampal activity, in particular if Euclidian distances are regressed out (Figure 4D).
 

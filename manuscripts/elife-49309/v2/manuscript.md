@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.49309.001 Oogenesis features an enormous increase in mitochondrial mass and mtDNA copy number, which are required to furnish mature eggs with an adequate supply of mitochondria and to curb the transmission of deleterious mtDNA variants. Quiescent in dividing germ cells, mtDNA replication initiates upon oocyte determination in the Drosophila ovary, which necessitates active mitochondrial respiration. However, the underlying mechanism for this dynamic regulation remains unclear. Here, we show that an feedforward insulin-Myc loop promotes mitochondrial respiration and biogenesis by boosting the expression of electron transport chain subunits and of factors essential for mtDNA replication and expression, and for the import of mitochondrial proteins. We further reveal that transient activation of JNK enhances the expression of the insulin receptor and initiates the insulin-Myc signaling loop. This signaling relay promotes mitochondrial biogenesis in the ovary, and thereby plays a role in limiting the transmission of deleterious mtDNA mutations. Our study demonstrates cellular mechanisms that couple mitochondrial biogenesis and inheritance with oocyte development.
+Oogenesis features an enormous increase in mitochondrial mass and mtDNA copy number, which are required to furnish mature eggs with an adequate supply of mitochondria and to curb the transmission of deleterious mtDNA variants. Quiescent in dividing germ cells, mtDNA replication initiates upon oocyte determination in the Drosophila ovary, which necessitates active mitochondrial respiration. However, the underlying mechanism for this dynamic regulation remains unclear. Here, we show that an feedforward insulin-Myc loop promotes mitochondrial respiration and biogenesis by boosting the expression of electron transport chain subunits and of factors essential for mtDNA replication and expression, and for the import of mitochondrial proteins. We further reveal that transient activation of JNK enhances the expression of the insulin receptor and initiates the insulin-Myc signaling loop. This signaling relay promotes mitochondrial biogenesis in the ovary, and thereby plays a role in limiting the transmission of deleterious mtDNA mutations. Our study demonstrates cellular mechanisms that couple mitochondrial biogenesis and inheritance with oocyte development.
 
 ## Introduction
 
@@ -30,47 +30,99 @@ In this study, we find that mitochondrial respiration is quiescent in GSCs and d
 
 ## Results
 
-## Coordinated transcription of both nuclear and mitochondrial genome controls etc biogenesis
+### Coordinated transcription of both nuclear and mitochondrial genome controls etc biogenesis
 
 Mitochondrial DNA replication is significantly increased in the post-mitotic germ cells in late germarium and relies on the mitochondrial inner membrane potential (ψm) and etc activity (Hill et al., 2014). We therefore hypothesized that mitochondrial respiration might be developmentally regulated in a spatio-temporal pattern similar to that of mtdna replication. To test this idea, we monitored ψm, which is an indicator of mitochondrial respiration, in the developing germ cells. We found that ψm, measured as the ratio of tmrm (an indicator of membrane potential) to mitotracker green (an indicator of mitochondrial mass) (Zhang et al., 2019), was markedly higher in region 2b than at earlier stages in the germarium (Figure 1A), indicating that respiration is activated in the 16-cell cysts, concomitantly with the onset of mtdna replication. Consistently, etc activity, indicated by a dual sdh (succinate dehydrogenase)/cox (cytochrome c oxidase) colorimetric assay (Ross, 2011), was much higher in region 2b than at earlier germarium stages and remained high until the stage-10 egg chamber (Figure 1B and Figure 1—figure supplement 1A). These results suggest that etc activity is upregulated in the late germarium stages.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49309/elife-49309-fig1-v2.jpg)
+
+**Figure 1.:** (A) Upper panel: a representative image of a germarium stained with TMRM (a membrane potential marker) and MitoTracker Green (a mitochondrial mass marker). Germarium regions are indicated. Arrows indicate mitochondria in germ cells (GCs). Lower panel: TMRM/MitoTracker Green ratiometric image, indicating that mitochondria membrane potential in stem cells and dividing cysts is low, but markedly increased in 16-cell cysts and budding egg chambers. Scale bar, 5 μm. (B) Upper panel: a representative image of a wt ovariole (from germarium to stage nine egg chamber) stained for the COX/SDH dual activities. Lower panel: a representative high-magnification image of a germarium stained for COX/SDH. Note the onset of COX/SDH activity in region 2B of the germarium (arrowhead). Scale bars, 50 μm for the upper panel and 10 μm for the lower panel. (C) Visualization of the CoxIV and CoxIII mRNAs in germaria from wt flies by FISH with fluorescently labeled DNA probes. Germaria are outlined with dotted lines. For each mRNA labeling, lower panels illustrate the enlarged areas of germarium region 2A (red dotted line) and 2B (green dotted line), respectively, shown in the upper panels. Scale bars, 5 μm. (D) Quantification of the relative expression level of CoxIV or CoxIII mRNA in different regions of germarium. Note that both transcripts are markedly induced in region 2B germarium. Error bars represent SEM. (E) RNAi screen for genes required to induce ETC activity in germaria. For each RNAi line, the impact on ETC activity is scored as the percentage of germaria with reduced COX/SDH staining.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49309/elife-49309-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Egg chambers from wt flies stained with dual enzymatic COX/SDH histochemistry. Note that ETC activities are high in the stage-10 egg chamber, but dramatically reduced in a stage-11 egg chamber. Scale bars, 100 μm. (B) Visualization of Cyt-C1 and Cyt-B mRNA in germaria from wt flies by FISH with fluorescently labeled DNA probes. Germaria are outlined with dotted lines. Scale bars, 10 μm. (C) COX/SDH staining for germaria with reduced ETC activity (positive hits) from the candidate RNAi screen. Scale bars, 10 μm.
+
 We next asked whether the dynamic pattern of ETC activity in the germarium reflected the expression of ETC subunits. Except for complex II (SDH) components, which are encoded on nuclear genome only, all other ETC proteins are encoded by both nuclear and mitochondrial genomes. Thus, we performed fluorescence in situ hybridization (FISH) with fluorescently labeled DNA probes specific to mRNAs of either nuDNA- or mtDNA-encoded ETC subunits in ovaries. Both COXIV (nuclear-encoded) and COXIII (mtDNA-encoded) transcripts exhibited low expression in earlier regions, but increased 4 to 6 folds in region 2B, recapitulating the pattern of ETC activity (Figure 1C,D). The same pattern was observed for Cyt-C1 (nuclear-encoded) and Cyt-B (mtDNA-encoded) (Figure 1—figure supplement 1B). These results indicate that the increased ETC activity detected with our COX/SDH colorimetric assay correlates with an increase of ETC genes expression at region 2B germarium. Taken together, these data suggest that the activation of respiration at stage 2B may partially relies on the coordinated transcription of nuDNA- and mtDNA-encoded genes.
 
-## A candidate RNAi screen for upstream regulators of ETC biogenesis
+### A candidate RNAi screen for upstream regulators of ETC biogenesis
 
 To uncover the developmental cues that initiate ETC gene transcription in the late germarium, we screened a collection of 132 RNAi lines directed at major developmental pathways and at factors involved in cellular metabolism and mitochondrial functions (Basson, 2012; Clavería and Torres, 2016; Desvergne et al., 2006; Perrimon et al., 2012). We expressed dsRNAs to knockdown genes in the germ cells using a nanos-Gal4 (nos-Gla4) driver and applied the COX/SDH dual activity assay as an indirect measure of ETC abundance (Ross, 2011) (Supplementary file 1). We also included a few RNAi lines directed at COX components or genes essential for mitochondrial biogenesis as positive controls. As expected, knocking down these genes consistently impaired ETC activity (Figure 1E). Overall, 6 RNAi lines from the list caused germline degeneration and 12 lines led to reduced ETC activity without causing the loss of the germline or other defects in development. Among these 12 lines are components of the IIS/TORC1 signaling, the JNK pathway, cell adhesion molecules, translation regulators and one transcription factor (Figure 1—figure supplement 1C). Notably, all hits impaired activities of both COX and SDH, except for coxV RNAi, which disrupted COX activity only, indicating that the recovered genes are required for the expression of both nuclear and mitochondrial genes.
 
-## Myc controls ETC biogenesis and mtDNA replication
+### Myc controls ETC biogenesis and mtDNA replication
 
 The transcription factor Myc emerged as one of the strongest hits from our screen. Myc has been demonstrated to boost mitochondrial biogenesis and regulate energy metabolism in mammals (Ahuja et al., 2010; Dang, 2013; Jellusova et al., 2017; Li et al., 2005). Additionally, we found that Myc’s expression pattern, monitored with a Myc-GFP fusion protein (Greer et al., 2013), mirrored the pattern of ETC activity in the ovary: low in the early stages, but elevated in germarium region 2B and remaining high until mid-stage egg chambers (Figure 2A and Figure 2—figure supplement 1A). These observations spurred us to explore the potential roles of Myc in the induction of ETC activity in region 2B cysts. To confirm the result of the Myc RNAi from the screen, we utilized a hypomorphic Myc allele, mycP0, which has reduced level of myc mRNA, but progresses through early oogenesis (Johnston et al., 1999; Quinn et al., 2004). To get a semi-quantitative measure of COX activity, we visualized COX activity in the ovary (Figure 2—figure supplement 2A,B). Then, we generated a standard enzymatic activity curve for COX (Figure 2—figure supplement 2C,D) adopting previously established procedures (Jung et al., 2002; Melendez-Ferro et al., 2013). The activity of COX in the germarium was normalized to the COX activity on the standard curve. Consistent with the RNAi result, COX activity was markedly reduced in the mycP0 ovaries, and mtDNA replication was also reduced (Figure 2B–E). Next, to test whether Myc is sufficient for ETC activity induction, we over-expressed myc ORF with a bam-Gal4 in the dividing cysts in region 2A that normally have low levels of COX activity and Myc protein. Over-expression of Myc in this region ectopically enhanced COX activity (Figure 2B,C). Thus, Myc is both necessary and sufficient to stimulate mitochondrial respiration in the ovary.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/49309/elife-49309-fig2-v2.jpg)
+
+**Figure 2.:** (A) Left panel: germarium of a fly endogenously expressing Myc-GFP stained with anti-GFP (Green) and anti-1B1 (Red). Right panel: germarium of a fly expressing LacZ driven by the myc endogenous promoter stained with anti-β-galactosidase (Green) and anti-1B1 (Red). Myc protein is expressed at low level in GSCs and dividing cysts, but markedly induced from region 2B germ cells. In contrast, myc promoter activity is uniform in the germarium. Scale bars, 10 μm. (B) COX activity in germaria from wt, mycP0, bam >ctrl, and bam >mycOE ovaries visualized by COX single staining. The activities are normalized to that of region 2B cysts wt. COX activity is significantly reduced in the mycP0 mutant, but is ectopically induced when Myc is over-expressed in region 2A by bam-Gal4. Scale bars, 10 μm. (C) Quantifications of relative COX activity in germarium regions from wt, mycP0, bam >ctrl, and bam >mycOE flies. ETC activities is normalized to that in the wt 2B cysts. n = 10 germaria for each genotype. Error bars represent SEM. *p<0.05. (D) Visualization of mtDNA replication in germaria from wt and mycP0 ovaries with EdU incorporation (Green) and co-staining with anti-1B1 (Red). Arrowheads point to EdU incorporation into mtDNA, while arrows point to EdU incorporation into the nuclear genome. Scale bars, 10 μm. (E) Area of EdU puncta (pixels) normalized to total pixels at indicated germarium stages in the germline cysts from wt and mycP0 ovaries. n = 11 cysts for each column. Error bars represent SEM. *p<0.005. (F) Table of genes functioning in mitochondrial processes with at least 3-fold decreased expression in mycP0 ovaries compared with wt ovaries. (G) Diagrams of decreased genes encoding mitochondrial processes and transcription factors (TFs) in the mycP0 ovaries. A number of genes in either category has a Myc binding site in their regulatory region.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49309/elife-49309-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A representative low-magnification image of ovarioles from flies endogenously expressing Myc-GFP stained with anti-GFP, anti-1B1, and DAPI. Note that Myc level is low in early germarium stages, becomes high from germarium region 2B, and reduces from the stage-10 egg chamber. Scale bar, 50 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49309/elife-49309-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Upper panel: representative images of wt germaria stained for COX activity, respectively. Lower panel: germaria from wt ovaries incubated in COX activity solution supplied with complex IV inhibitor KCN. Note the onset of COX activity from the germarium region 2B (arrowhead). Scale bars, 5 μm. (B) COX activity was visualized in an ovariole from germarium to the stage-10 egg chamber. Scale bar, 50 μm. (C) Standards for COX activity visualized on a nitrocellulose membrane. COX proteins from bovine heart were used for generating COX standards. The amounts of COX proteins for each band were indicated. (D) Intensities of bands from (C) were calculated by the ‘Gels’ function in ImageJ and plotted against corresponding COX protein amounts. COX protein amounts and their corresponding band intensity values fit well a linear relation (R2 = 0.9923).
+
 To gain insight into how Myc regulates mitochondrial biogenesis, we compared the transcriptomes of wt and mycP0 mutant ovaries (Supplementary file 2). RNA sequencing (RNAseq) showed that nearly one-third of the detected transcripts were reduced in mycP0 mutant compared to wt (fold change >3.0, FDR < 0.05%) (Figure 2F), consistent with the notion of Myc as a general transcription activator (Orian et al., 2003). We found that the downregulated genes were enriched in nuclear-encoded mitochondrial genes (Zhang et al., 2019). About 52% of the total mitochondrial genes, and 75% of ETC genes and factors for mtDNA replication and expression were downregulated (Figure 2F, Supplementary file 3, and Supplementary file 4). Myc directly regulates the expression of its targets by binding to a short sequence, CACGTG (E-box) in the regulatory region (Kim et al., 2008). Interestingly, 421 out of 458 down-regulated mitochondrial genes have predicted Myc binding sites in their regulatory regions, further substantiating a role for Myc in promoting mitochondrial biogenesis by boosting the transcription of mitochondrial genes (Figure 2G and Supplementary file 4). Additionally, 45 transcriptional factors, 33 of which have E-boxes in their regulatory regions, were also decreased in mycP0 mutant ovaries (Figure 2F,G and Supplementary file 5), suggesting that secondary transcriptional controls might also be involved in Myc’s regulation of mitochondrial biogenesis.
 
-## IIS regulates Myc post-transcriptionally through Sgg and Thor
+### IIS regulates Myc post-transcriptionally through Sgg and Thor
 
 Having identified Myc as the master regulator of ETC biogenesis and mtDNA replication in the ovary, we sought to explore how the spatio-temporal pattern of Myc protein was established. Myc can be regulated either transcriptionally or post-transcriptionally by a variety of upstream signals (Gallant, 2013). We first examined myc transcription by visualizing its promoter activity using a myc-LacZ transgene (Neto-Silva et al., 2010). In contrast to Myc protein, which was markedly upregulated at region 2B, myc promoter activity appeared to be uniform in the germarium (Figure 2A), suggesting that post-transcriptional regulations are responsible for the spatial pattern of Myc protein. IIS/TORC1 signaling is known to regulate both translation and protein stability (Garofalo, 2002; Maurer et al., 2014; Pan et al., 2004), and multiple genes in the IIS/TORC1 signaling emerged from the initial RNAi screen. Consistently, COX activity and mtDNA replication were markedly impaired in ovaries of chico mutant flies (Figure 3A–C), which were obtained by combining two chico mutant alleles, chico1 (loss of function) and chicoKG (hypomorphic) (Böhni et al., 1999; Song et al., 2010). These data support a critical role of IIS in ETC biogenesis and mtDNA replication. Intriguingly, the activity of IIS, revealed by staining for phosphorylated AKT at serine 505 (p-AKT) (Parker and Struhl, 2015), was also increased in the germarium region 2B and maintained until mid-stage egg chambers (Figure 3D and Figure 3—figure supplement 1A), a pattern similar to that of Myc protein. In contrast, total AKT staining was uniform in the germarium (Figure 3D). These observations suggest that Myc may be regulated by IIS. Indeed, Myc protein was strongly reduced in chico1/KG mutant ovaries (Figure 3E,F). In chico RNAi ovaries, Myc protein was also diminished in germ cells, while the expression of myc-LacZ was not affected (Figure 4B and Figure 4—figure supplement 1A). Importantly, over-expressing Myc in the chico RNAi background restored ETC biogenesis in the ovary (Figure 4D). Altogether, these results suggest that upregulation of IIS in late germarium stimulates ETC biogenesis and mtDNA replication through post-transcriptional control of Myc level.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/49309/elife-49309-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative germaria from wt or chico1/KG mutant flies incorporating EdU and stained with anti-1B1. Arrowheads indicate EdU incorporation into the mtDNA of germ cells. Scale bars, 10 μm. (B) Quantification of the mitochondrial EdU puncta areas relative to the areas of germline cysts from wt or chico1/KG mutant flies. n = 11 cysts each column (left to right). Error bars represent SEM. *p<0.005. (C) Quantifications of COX activity in region 2B cysts from wt or chico1/KG mutant flies. The activities are normalized to that of region 2B cysts from wt. n = 10 germaria for each genotype. Error bars represent SEM. *p<0.005. (D) Germaria from wt ovaries stained with anti-AKT and anti-p-AKT (S505). p-AKT staining is low in both GSCs and dividing cysts, while increased from region 2B germ cells. In contrast, AKT staining is uniform in the germarium. Scale bars, 10 μm. (E) Germaria from wt or chico1/KG mutant ovaries endogenously expressing Myc-GFP stained with anti-GFP, anti-1B1, and DAPI. Scale bars, 10 μm. (F) Quantification of relative Myc-GFP intensity in germarium region 2B from wt or chico1/KG mutant ovaries. n = 10 germaria for each genotype. Error bars represent SEM. *p<0.005.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49309/elife-49309-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A low-magnification image of ovarioles stained with anti-p-AKT and anti-1B1. Note that IIS activity is low in early germarium stages, becomes high from late germarium, and decreases from the stage-10 egg chamber, the same pattern as Myc protein. Scale bar, 100 μm.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/49309/elife-49309-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of the conserved IIS pathway that inhibits 4E-BP/Thor and GSK3/Sgg to promote protein translation and suppress protein degradation, respectively. (B) Germaria from ovaries of ctrl; chicoRNAi; chicoRNAi, thorRNAi; and chicoRNAi, sggRNAi driven by nos-Gal4 endogenously expressing Myc-GFP and stained with anti-GFP (green) and anti-1B1 (red). Scale bars, 5 μm. (C, D) Quantification of Myc-GFP intensity (C) and COX activity (D) in germarium region 2B from ovaries with indicated genotypes, normalized to the intensity or activity values in germaria with ctrl over-expression. (C) n = 10 germaria for each genotype. (D) n = 10 germaria for each genotype. Error bars represent SEM. *p<0.05. (E) Germaria from ovaries of ctrl and sggRNAi driven by nos-Gal4 endogenously expressing Myc-GFP and stained with anti-GFP and anti-1B1. Myc protein is up-regulated in both region 2A and region 2B germ cells in the sgg RNAi ovary. Scale bars, 10 μm. (F) Quantification of relative Myc-GFP intensity in germarium region 2B from ovaries of ctrl and sggRNAi driven by nos-Gal4. Myc-GFP intensity is normalized to that of region 2B cysts with ctrl expression. n = 7 germaria for each genotype. Error bars represent SEM. *p<0.01. (G) A germarium from wt flies stained with anti-GSK3 and anti-p-GSK3. Germaria are outlined with dotted lines. Scale bars, 5 μm. (H) Upper panel: a representative image of a germarium from ovaries expressing endogenous InR-EGFP. Lower panel: visualization of the InR mRNA in germarium by FISH with fluorescently labeled DNA probes. Germaria are outlined with dotted lines. Scale bars, 5 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49309/elife-49309-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Germaria from ovaries of ctrl, chicoRNAi, and bskRNAi driven by nos-Gal4 expressing LacZ under the control of myc endogenous promoter stained with anti-β-galactosidase and anti-1B1. Scale bars, 10 μm. (B) A representative live imaging of germaria from flies expressing GFP-tagged Sgg under its endogenous promoter. Scale bar, 10 μm. (C) A germarium from wt flies endogenously expressing Myc-GFP stained with anti-GFP (green) and anti-p-GSK3 (red). Germarium regions are indicated. Myc protein highly corresponds to inhibited form of GSK3. Scale bar, 10 μm.
+
 Next, we explored how IIS regulates Myc. IIS either promotes protein translation by repressing 4E-BP/Thor, or stabilizes its targets by antagonizing GSK3/Sgg-dependent protein degradation (Figure 4A) (Garofalo, 2002; Maurer et al., 2014; Pan et al., 2004). Knocking down sgg in a chico RNAi background restored Myc protein level and COX activity, while thor RNAi only partially rescued both (Figure 4B–D). Intriguingly, sgg RNAi not only elevated Myc protein level in region 2B and thereafter, but also strongly induced Myc in earlier stages where Myc protein is not normally present (Figure 4E,F). Next, we examined the pattern of GSK3 and GSK3 activity in the germarium. GSK3 activity is suppressed by IIS through AKT-mediated phosphorylation on GSK3 serine 9. GSK3 protein visualized by both antibody staining and an endogenous expressed Sgg-GFP was ubiquitous in the germarium (Figure 4G and Figure 4—figure supplement 1B). However, phosphorylated GSK3 (Figure 4G and Figure 4—figure supplement 1C), the inactive form of GSK3, became evident in region 2B germarium and later stages egg chambers, the same pattern as ETC biogenesis (Figure 1B,C), Myc (Figure 2B and Figure 4—figure supplement 1C), and p-AKT (Figure 3D). Taken together, these data suggest that Sgg is the main regulator of Myc and acts downstream of IIS.
 
-## InR expression is boosted at region 2B germarium
+### InR expression is boosted at region 2B germarium
 
 So far, our data has established Myc as the link between IIS, a major pathway regulating cell proliferation and growth, and mitochondrial biogenesis in ovaries. The IIS regulates germ cells growth and proliferation in response to insulin-like peptides (dilps) produced by neuroendocrine cells (LaFever and Drummond-Barbosa, 2005). Drosophila has an open circulatory system. In a given tissue, all cells are exposed to a similar level of dilps circulating in the hemolymph. However, instead of being uniform in the germarium, the activity of IIS, indicated by both p-AKT and inhibitory phosphorylated Sgg staining (Figures 3D and 4G), demonstrated a distinct spatio-temporal pattern similar to that of Myc, ETC expression and mtDNA replication. Therefore, some IIS components downstream of dilps must be differentially expressed in the germarium.
 
 To test this idea, we generated an InR-EGFP reporter line by inserting an EGFP at the C-terminus of the InR genomic locus. Using this line and other reporter lines (Nagarkar-Jaiswal et al., 2015; Orme et al., 2006; Sarov et al., 2016), we examined the expression patterns of InR and other components of IIS signaling upstream of AKT. InR-EGFP was upregulated in region 2B (Figure 4H), while all other components in the IIS signaling examined were ubiquitously expressed in the germarium (Figure 5—figure supplement 1A). Additionally, InR mRNA, visualized by FISH, demonstrated the same pattern as that of InR-EGFP (Figure 4H), suggesting that upregulation of InR transcription enhances IIS to boost mitochondrial biogenesis.
 
-## Both JNK pathway and Myc promote IIS via InR transcription
+### Both JNK pathway and Myc promote IIS via InR transcription
 
 We next asked how InR transcription was elevated at region 2B germarium. The JNK pathway, which transcriptionally controls various cellular processes (Weston and Davis, 2007), had emerged from the initial RNAi screen. Consistent with the RNAi screen, homozygous bsk1 clones showed impaired mtDNA replication, compared to bsk1/+ heterozygous germ cells (Figure 5A,B). Interestingly, JNK signaling activity, visualized by a puc-LacZ reporter (Martín-Blanco et al., 1998), was sharply up-regulated in late germarium stages, but decreased and eventually disappeared in growing egg chambers (Figure 5C and Figure 5—figure supplement 1B). The partial overlap between the spatial patterns of IIS and JNK activation, and the phenotypic resemblance between IIS and JNK mutations on COX activity and mtDNA replication, suggested a potential link between these two pathways. Indeed, IIS activity, Myc protein, InR-EGFP, and InR mRNA were all markedly reduced in ovaries expressing dsRNA against either bsk or jra, fly homolog of JNK or Jun, respectively (Figure 5D–H and Figure 5—figure supplement 1C–G). In bsk RNAi or jra RNAi background, over-expression of InR restored Myc level and over-expression of either InR or Myc rescued COX activity (Figure 5H,I and Figure 5—figure supplement 1G). In contrast, enhancing JNK signaling by puc RNAi failed to rescue defective ETC activity in a chico RNAi background (Figure 5I). Together, these observations suggest that JNK promotes mitochondrial biogenesis respiration and mtDNA replication in late germarium stages by boosting IIS.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/49309/elife-49309-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative germaria with bsk1 FRT clones showing EdU incorporation (green) to visualize mtDNA replication. bsk1/+ cells are positive for mRFP (red), while bsk1 mutant cells are negative for mRFP. Arrows indicate EdU incorporated into mtDNA, arrowheads point out EdU incorporated into the nuclear genome. Scale bars, 5 μm. (B) Percentage areas of EdU incorporated into mtDNA relative to total areas of the germline cysts at indicated germarium stages from bsk1/+ and bsk1 clones. n = 11, 14, 15, and 10 cysts each column (left to right). Error bars represent SEM. *p<0.005. (C) Germarium from ovaries expressing LacZ driven by the puc promoter stained with anti-β-galactosidase (green) and anti-Vasa (red). Germarium is outlined with dotted lines. Scale bar, 10 μm. (D) Germaria from ovaries of ctrl and bskRNAi driven by nos-Gal4 stained with anti-p-AKT (green) and anti-1B1 (red). Note that IIS activity is markedly reduced when JNK signaling is decreased by bsk RNAi. Scale bars, 10 μm. (E) Quantification of p-AKT intensity from cysts in germarium region 2A and 2B of ovaries with indicated genotypes. p-AKT intensity is normalized to that of region 2B cysts from the ctrl line. n = 11 germaria for each genotype. Error bars represent SEM. *p<0.005. (F) Visualization of InR-EGFP in germaria from ovaries of ctrl and bskRNAi driven by nos-Gal4. Note that InR-EGFP level on the region 2B cyst membrane is decreased by bsk RNAi. Germaria are outlined with dotted lines. Scale bars, 10 μm. (G) Quantification of background subtracted InR-EGFP intensity on cell membrane of the region 2B cyst. n = 7 germaria for each genotype. Error bars represent SEM. *p<0.005. (H) Germaria from ovaries of bskRNAi; bskRNAi, InROE; jraRNAi; jraRNAi, InROE driven by nos-Gal4 endogenously expressing Myc-GFP co-stained with anti-GFP and anti-1B1. Note that Myc-GFP level in germ cells is markedly lower than that in follicle cells pointed out by arrows. Scale bars, 10 μm. (I) COX activity in region 2B cysts from ovaries with indicated genotypes. The activities are normalized to that of region 2B cysts from the ctrl line. n = 10 germaria for each genotype. Error bars represent SEM. *p<0.005.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49309/elife-49309-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Confocal images for germaria expressing Chico-GFP, myc-Dp110 or PDK1-GFP in the background of ctrl or bskRNAi from ovaries stained with anti-GFP or anti-myc. Scale bars, 10 μm. (B) Ovaries expressing LacZ driven by the puc promoter stained with anti-β-galactosidase, anti-1B1, and DAPI. Note that JNK activity is moderately induced in late germarium and decreased in the following stages, while JNK activity is much stronger in follicle cells of a maturing egg. Scale bars, 20 μm. (C) Germaria from ovaries of ctrl and bskRNAi driven by nos-Gal4 stained with anti-AKT and anti-1B1. Scale bars, 10 μm. (D) Quantification of AKT intensity from cysts in germarium region 2A and 2B of ovaries with ctrl and bskRNAi driven by nos-Gal4. Intensities are normalized to the value of ctrl at region 2B. n = 7 and 8 germaria for ctrl and bskRNAi, respectively. Error bars represent SEM. *p<0.005. (E) Visualization of the InR mRNA by FISH in germaria from ovaries of ctrl and bskRNAi driven by nos-Gal4. Note that InR mRNA level is decreased by bsk RNAi. Germaria are outlined with dotted lines. Scale bars, 10 μm. (F) Quantification of InR mRNA density in region 2A and 2B germ cells from ovaries with indicated genotypes. n = 9 germaria for each genotype. Error bars represent SEM. *p<0.005. (G) Quantification of relative Myc-GFP intensity in region 2B cysts of ovaries illustrated in Figure 5H. n = 10 germaria for each genotype. Error bars represent SEM. *p<0.005.
+
 IIS was elevated in region 2B and remained active until stage-10 egg chambers, the same period during which ETC biogenesis and mtDNA replication are active. However, JNK is only transiently activated in the region 2B cysts. Therefore, additional regulations must be involved to maintain IIS activity after JNK activity subsides. Our RNAseq results showed that InR mRNA was downregulated in the mycP0 ovary compared with controls (Supplementary file 2), suggesting that Myc might activate InR transcription. Indeed, both InR mRNA level measured by FISH and IIS activity indicated by p-AKT were reduced in mycP0 mutant or chico RNAi ovaries (Figure 6A–D and Figure 6—figure supplement 1A,B). Importantly, over-expression of myc using bam-Gal4 in region 2A ectopically induced InR transcription and IIS activity (Figure 6A–D and Figure 6—figure supplement 1A,B), suggesting that Myc can indeed increase IIS activity by boosting InR expression. Together, our results highlight an IIS-Myc-positive feedback loop that promotes respiration and mtDNA replication in the ovary.
 
-## The JNK-IIS-Myc relay is essential for female fertility and mtDNA selective inheritance
+![Figure 6.](https://cdn.elifesciences.org/articles/49309/elife-49309-fig6-v2.jpg)
+
+**Figure 6.:** (A) Visualization of the InR mRNA by FISH with fluorescently labeled DNA probes in germaria from ctrl, chicoRNAi, mycP0, and bam >mycOE ovaries. Germaria are outlined with dotted lines. Reduction in either IIS or Myc depletes InR mRNA in the germarium, while myc over-expression in region 2A ectopically induces InR mRNA. Scale bars, 5 μm. (B) Quantification of InR mRNA intensity from cysts in germarium region 2A and 2B of ovaries with indicated genotypes. Intensities are normalized to the value of ctrl at region 2B. n = 8, 8, 8, and 9 germaria for ctrl, chicoRNAi, mycP0, and bam >mycOE, respectively. Error bars represent SEM. *p<0.05. (C) Germaria from ctrl, chicoRNAi, mycP0, and bam >mycOE ovaries stained with anti-p-AKT and anti-1B1. Decrease in either IIS or Myc reduces IIS activity in the germarium, while myc over-expression in region 2A ectopically induces IIS activity. Scale bars, 5 μm. (D) Quantification of p-AKT intensity in region 2A and 2B cysts of ovaries with indicated genotypes. Intensities are normalized to the value of ctrl at region 2B. n = 11 germaria for each genotype. Error bars represent SEM. *p<0.005.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/49309/elife-49309-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Germaria from ovaries of ctrl, chicoRNAi, mycP0, and bam >mycOE stained with anti-AKT and anti-1B1. Scale bars, 10 μm. (B) Quantification of AKT intensity in region 2A and 2B from ovaries with indicated genotypes. n = 10 germaria for each genotype. Error bars represent SEM. *p<0.005.
+
+### The JNK-IIS-Myc relay is essential for female fertility and mtDNA selective inheritance
 
 So far, we have established that the JNK-IIS-Myc relay is critical for ETC activity, mtDNA expression, replication, and transmission in the ovary. Next, we explored its physiological impact on reproduction. While both chico mutant females and those with germline clones of bsk1 produced similar amount of eggs as controls, they failed to generate adequate amount of mtDNA to deposit in eggs (Figure 7A). Thus, their eggs had significantly reduced mtDNA level and hatching rates (Figure 7B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/49309/elife-49309-fig7-v2.jpg)
 
-**Figure 7.:** (A) Quantification of relative mtDNA content in eggs produced by mothers carrying germline clones (GLCs) of bsk or by 1chico1/ mutant mother. Relative mtDNA levels are determined by qPCR for KGmt:CoI and his4 copies, and normalized to the level in wt. n = 12, 16, and 12 mothers for wt, bsk, and 1chico1/. Error bars represent SEM. *p<0.005. (KGB) The hatching rate of eggs produced by female flies carrying bsk GLCs or 1chico1/ females is significantly lower than that of wt eggs. n = 5 × 40 eggs for each genotype. Error bars represent SEM. *p<0.005. (KGC) Quantification of mt:Col transmission from females with indicated nuclear genotypes. In wt females, the mtDNA mutation is counter-selected, resulting in ~20% fewer mutant mtDNA in the progeny than in the mothers. This counter-selection is diminished in T300Ichico1/ mutant mothers of in mothers expressing KGbsk driven by RNAinos-Gal4. Mothers heteroplasmic for mt:Col were cultured at 29°C. n = 10 mothers for each genotype. Error bars represent SEM. *p<0.005. (T300ID) Schematics of the developmental signaling relay initiated from late germarium that primes mitochondrial respiration, and mtDNA replication and inheritance.  10.7554/eLife.49309.024Figure 7—source data 1.ts in eggs.
+**Figure 7.:** (A) Quantification of relative mtDNA content in eggs produced by mothers carrying germline clones (GLCs) of bsk1 or by chico1/KG mutant mother. Relative mtDNA levels are determined by qPCR for mt:CoI and his4 copies, and normalized to the level in wt. n = 12, 16, and 12 mothers for wt, bsk1, and chico1/KG. Error bars represent SEM. *p<0.005. (B) The hatching rate of eggs produced by female flies carrying bsk1 GLCs or chico1/KG females is significantly lower than that of wt eggs. n = 5 × 40 eggs for each genotype. Error bars represent SEM. *p<0.005. (C) Quantification of mt:ColT300I transmission from females with indicated nuclear genotypes. In wt females, the mtDNA mutation is counter-selected, resulting in ~20% fewer mutant mtDNA in the progeny than in the mothers. This counter-selection is diminished in chico1/KG mutant mothers of in mothers expressing bskRNAi driven by nos-Gal4. Mothers heteroplasmic for mt:ColT300I were cultured at 29°C. n = 10 mothers for each genotype. Error bars represent SEM. *p<0.005. (D) Schematics of the developmental signaling relay initiated from late germarium that primes mitochondrial respiration, and mtDNA replication and inheritance.
 
 During oogenesis, prodigious mtDNA replication not only furnishes mature oocytes with adequate amounts of mtDNA to support the early embryogenesis, it also affords the replication competition that allows the wild-type mitochondrial genomes to out-compete mtDNA carrying deleterious mutations (Hill et al., 2014). Thus, we asked whether inhibition of IIS and JNK signaling, which impairs mtDNA replication, would also diminish selective inheritance in heteroplasmic females harboring both wt and a temperature-sensitive lethal mutation, mt:CoIT300I (Hill et al., 2014). Consistent with previous studies, eggs contained ~20% less mt:CoIT300I mtDNA on average than their mothers at restrictive temperature in controls (Figure 7C). However, this counter-selection of the mt:CoIT300I genome was greatly diminished by downregulation of either IIS or JNK signaling (Figure 7C). Together, these results stress that although JNK is transiently activated in the late germarium, it triggers a developmental signaling relay that has profound impacts on mitochondrial inheritance through activation of mitochondrial biogenesis, including ETC biogenesis and mtDNA replication.
 
@@ -92,19 +144,477 @@ Studies in a variety of animal models have shown that reproductive aging in fema
 
 ## Materials and methods
 
-## Fly stocks and genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118 (wt)</td>
+      <td>Zhang et al., 2019</td>
+      <td>https://doi.org/10.1016/j.molcel.2019.01.013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ts (mt:ColT300I%)</td>
+      <td>Hill et al., 2014</td>
+      <td>https://doi.org/10.1038/ng.2920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Dcr-2; nos-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 25751 FLYB: FBti0101430 FLYB: FBti0012287</td>
+      <td>FLYB symbol: P{UAS-Dcr-2.D}1 P{GAL4-nos.NGT}40</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nos-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 32563 FLYB: FBti0012287</td>
+      <td>FLYB symbol: P{GAL4-nos.NGT}40</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>bam-Gal4</td>
+      <td>Chen and McKearin, 2003</td>
+      <td>https://doi.org/10.1242/dev.00325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-LacZ</td>
+      <td>Wang et al., 2016</td>
+      <td>https://doi.org/10.1093/hmg/ddw067</td>
+      <td>ctrl over-expression</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>mycP0</td>
+      <td>Johnston et al., 1999</td>
+      <td>https://doi.org/10.1016/S0092-8674(00)81512–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>myc-LacZ</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 12247 FLYB: FBti0015660</td>
+      <td>FLYB symbol: P{lacW}MycG0359</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>puc-LacZ</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 11173 FLYB: FBti0005134</td>
+      <td>FLYB symbol: P{lArB}pucA251.1F3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-myc</td>
+      <td>(Rhiner et al., 2009)</td>
+      <td>https://doi.org/10.1242/dev.033340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>bsk1, FRT40A</td>
+      <td>(Bornstein et al., 2015)</td>
+      <td>https://doi.org/10.1016/j.neuron.2015.10.023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hs-FLP; ubi-mRFP, FRT40A</td>
+      <td>(Bornstein et al., 2015)</td>
+      <td>https://doi.org/10.1016/j.neuron.2015.10.023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>luciferaseRNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 31603 FLYB: FBti0130444</td>
+      <td>FLYB symbol: P{TRiP.JF01355}attP2 ctrl RNAi</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sggRNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 35364 FLYB: FBst0035364</td>
+      <td>FLYB symbol: P{TRiP.GL00277}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>thorRNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 36815 FLYB: FBst0036815</td>
+      <td>FLYB symbol: P{TRiP.GL01034}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pucRNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 36085 FLYB: FBst0036085</td>
+      <td>FLYB symbol: P{TRiP.GL00504}attP40</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-InR</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 8262 FLYB: FBst0008262</td>
+      <td>FLYB symbol: P{UAS-InR.Exel}2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>chico1</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 10738 FLYB: FBst0010738</td>
+      <td>FLYB symbol: P{ry11}chico1/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>chicoKG</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 14337 FLYB: FBst0014337</td>
+      <td>FLYB symbol: P{SUPor-P}chicoKG00032</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Myc-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 81274 FLYB: FBti0147732</td>
+      <td>FLYB symbol: PBac{y+-attP-3B}VK00033</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Sgg-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 66770 FLYB: FBst0066770</td>
+      <td>FLYB symbol: Mi{PT-GFSTF.1}sggMI11971-GFSTF.1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>PDK1-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 59836 FLYB: FBst0059836</td>
+      <td>FLYB symbol: Mi{PT-GFSTF.0}Pdk1MI06823-GFSTF.0</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>myc-Dp110</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 25915 FLYB: FBst0025915</td>
+      <td>FLYB symbol: P{Myc-Dp110}1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Chico-GFP</td>
+      <td>Vienna Drosophila RNAi Center</td>
+      <td>VDRC: v318104 FLYB: FBst0491524</td>
+      <td>FLYB symbol: PBac{fTRG00456.sfGFP-TVPTBF}VK00033</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>InR-EGFP</td>
+      <td>This paper</td>
+      <td>HX lab</td>
+      <td>EGFP inserted before the stop codon of InR genomic locus</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-FLP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 29731 FLYB: FBti0128596</td>
+      <td>FLYB symbol: P{w[+mC]=UASp FLP.G}3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TM3, Sb1, Ser1/TM6B, Tb1</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 2537 FLYB: FBst0002537</td>
+      <td>FLYB symbol: TM3, Sb[1] Ser[1]/TM6B, Tb[1]</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GFP</td>
+      <td>Roche</td>
+      <td>11814460001</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Hts</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>1B1</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-ATP5A</td>
+      <td>ATP5A</td>
+      <td>ab14748</td>
+      <td>IF(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFP</td>
+      <td>Novus</td>
+      <td>NB600-308</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-dMyc</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>d1-717</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Vasa</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-30210</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-p-GSK3</td>
+      <td>Cell Signaling Technology</td>
+      <td>9323S</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GSK3</td>
+      <td>Cell Signaling Technology</td>
+      <td>9832S</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-AKT</td>
+      <td>Cell Signaling Technology</td>
+      <td>9272S</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-p-AKT</td>
+      <td>Cell Signaling Technology</td>
+      <td>4054S</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal β-galactosidase</td>
+      <td>Promega</td>
+      <td>Z378A</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Cytochrome c from equine heart</td>
+      <td>Sigma-Aldrich</td>
+      <td>C7752</td>
+      <td>COX histochemistry staining</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Catalase from bovine liver</td>
+      <td>Sigma-Aldrich</td>
+      <td>C9322</td>
+      <td>COX histochemistry staining</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TMRM</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>I34361</td>
+      <td>1:10000 on dissected ovaries</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTracker Green</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>M7514</td>
+      <td>1:10000 on dissected ovaries</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3,3′-Diaminobenzidine tetrahydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>D5905</td>
+      <td>COX histochemistry staining</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nitrotetrazolium Blue chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>N6876</td>
+      <td>COX/SDH dual histochemistry staining</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenazine methosulfate</td>
+      <td>Sigma-Aldrich</td>
+      <td>P9625</td>
+      <td>COX/SDH dual histochemistry staining</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium succinate</td>
+      <td>Sigma-Aldrich</td>
+      <td>S2378</td>
+      <td>COX/SDH dual histochemistry staining</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Heparin ammonium salt</td>
+      <td>Sigma-Aldrich</td>
+      <td>H6279</td>
+      <td>RNA FISH</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Salmon Sperm DNA</td>
+      <td>Invitrogen</td>
+      <td>15632011</td>
+      <td>RNA FISH</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Click-iT Plus EdU Alexa Fluor 488 Imaging Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C10637</td>
+      <td>labeling replicating mtDNA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Ribo-Zero rRNA Removal Kit</td>
+      <td>Illumina Inc.</td>
+      <td>MRZH116</td>
+      <td>Used in RNA preparation for RNAseq</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>InR chiRNA targeting sequence</td>
+      <td>This paper</td>
+      <td>HX lab</td>
+      <td>CCTTTCCGTAGATGGATGACACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>InR-F1</td>
+      <td>This paper</td>
+      <td>HX lab</td>
+      <td>ATGATGTCATCGGTGGGTCCTCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EGFP-seqR</td>
+      <td>This paper</td>
+      <td>HX lab</td>
+      <td>CTTGTAGTTGCCGTCGTCCTTGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>InR-F2</td>
+      <td>This paper</td>
+      <td>HX lab</td>
+      <td>AGCACATTGTGTCAGTCTTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>InR-R</td>
+      <td>This paper</td>
+      <td>HX lab</td>
+      <td>CTCATTTTCCGAAGCTTGGCTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mt:CoI, Xho1 site genotyping F</td>
+      <td>Hill et al., 2014</td>
+      <td>https://doi.org/10.1038/ng.2920</td>
+      <td>TGGAGCTATTGGAGGACTAAATCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mt:CoI, Xho1 site genotyping R</td>
+      <td>Hill et al., 2014</td>
+      <td>https://doi.org/10.1038/ng.2920</td>
+      <td>GCTCCTGTTAATGGTCATGGACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR, his4-F</td>
+      <td>Zhang et al., 2015</td>
+      <td>https://doi.org/10.15252/embr.201439636</td>
+      <td>TCCAAGGTATCACGAAGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR, his4-R</td>
+      <td>(Zhang et al., 2015)</td>
+      <td>https://doi.org/10.15252/embr.201439636</td>
+      <td>AACCTTCAGAACGCCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR, mt:CoI-F</td>
+      <td>(Zhang et al., 2015)</td>
+      <td>https://doi.org/10.15252/embr.201439636</td>
+      <td>ATTGGAGTTAATTTAACATTTTTTCCTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR, mt:CoI-R</td>
+      <td>Zhang et al., 2015</td>
+      <td>https://doi.org/10.15252/embr.201439636</td>
+      <td>AGTTGATACAATATTTCATGTTGTGTAAG</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Scoftware, algorithm</td>
+      <td>GraphPad Prism7</td>
+      <td>GraphPad Software, Inc</td>
+      <td>http://www.graphpad.com/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and genetics
 
 Flies were maintained on standard BDSC cornmeal medium at 25°C. RNAi lines for candidate screen are listed in Supplementary file 1. Embryo hatch assay was performed as previously described (Zhang et al., 2019). To control the genetic background, chicoKG, chico1, ts and mycP0 strains were back-crossed with w1118 for six generations.
 
-## CRISPR/Cas9 in flies
+### CRISPR/Cas9 in flies
 
 To tag InR with EGFP at its endogenous locus, a targeting cassette comprising of 1 kb upstream of InR stop codon, EGFP ORF, a fragment containing GMR-Hid flanked by two FRT sites, and 1 kb downstream of InR stop codon was inserted into a pOT2 vector. This donor construct and a InR chiRNA construct were injected into the embryos of M{vas-Cas9}ZH-2A (BL51323) by Bestgene Inc.. G0 adults were crossed with w1118, and progeny with small eye phenotype were selected as candidates due to the expression of GMR-Hid. Insertion events were further confirmed by PCR using two pairs of primers: 1, InR-F1/EGFP-seqR and 2, InR-F2/InR-R. To remove the GMR-Hid cassette, the InR-EGFP-GMR-Hid flies were crossed with nos-Gal4; UASp-FLP. The F1 progeny with the genotype of nos-Gal4/+; UASp-FLP/InR-EGFP-GMR-Hid were selected and crossed with TM3, Sb1, Ser1/TM6B, Tb1. The F2 flies of InR-EGFP/TM6B, Tb1 with normal white eyes were selected and maintained.
 
-## Measurement of mtDNA copy number and quantification of heteroplasmy
+### Measurement of mtDNA copy number and quantification of heteroplasmy
 
 Total DNA was isolated from eggs with QIAamp DNA Micro Kit (Qiagen). The mtDNA copy number was measured by quantitative real-time PCR with primers targeting to cytochrome c oxidase subunit I (mt:CoI) and His4 genes. Quantification of heteroplasmy was performed as described previously by qPCR (Zhang et al., 2019), with primer pairs: his4-F/his4-R: and mt:CoI-F/mt:CoI-R. Heteroplasmic female flies were transferred from 18°C to 29°C after eclosion. Each female was mated with five wt males. Ten eggs produced from the day 7 at 29°C were collected. The genomic DNA from female flies and eggs was extracted and their heteroplasmy levels were determined as shown before (Hill et al., 2014), with primers: mt:CoI, Xho1 site genotyping F and mt:CoI, Xho1 site genotyping R.
 
-## RNA sequencing and RNA-seq analysis
+### RNA sequencing and RNA-seq analysis
 
 Total RNA was extracted by Trizol (Life Technologies) following its standard protocol. Poly (A) capture libraries were generated at the DNA Sequencing and Genomics Core, NHLBI, NIH. RNA sequencing was performed with using an Hiseq3000 (Illumina) and 75 bp pair-end reads were generated at the DNA Sequencing and Genomics Core, NHLBI, NIH. Raw sequence reads were quality-trimmed using Trim Galore! (v0.3.7) and aligned using HISAT2 against the Dm6 reference genome. Uniquely mapped paired-end reads were then used for subsequent analyses. FeatureCounts was used for gene level abundance estimation. Principal component analysis (PCA) was used to assess outlier samples. Genes were kept in the analysis if they had Counts Per Million (CPM > 1) in at least half the samples. We adjusted for multiple testing by reporting the FDR q-values for each feature. Features with q < 5% were declared as genome-wide significant. Genes with three or more-fold changes on mRNA level in mycP0 mutant compared with wt were considered differentially expressed. Gene Ontology (GO) was used to analyze gene set enrichment. FDR q-values were estimated to correct the p-values for the multiple testing issue.
 
@@ -112,11 +622,11 @@ To evaluate the enrichment of genes associated with mitochondrial processes in o
 
 Myc target analysis dMyc enriched binding regions that is peak files were downloaded from the Gene Expression Omnibus (GEO) repository (Barrett et al., 2013; Edgar et al., 2002). The accession numbers of the downloaded files are GSE53560, GSE53559, and GSE49774 (Slattery et al., 2014). Using an in-house R script and Bedtools utility (Quinlan and Hall, 2010), the peaks were annotated to Drosophila melanogaster's genome using Ensembl V(91) annotation (Aken et al., 2017) to identify downstream targets of dMyc. If a ChIP-seq peak from any one of the datasets was observed between 250 base-pairs upstream to 100 base-pair downstream of a gene's transcription start site, then the gene was assumed to be putative downstream targets of dMyc. To reduce the false positives that could potentially arise due to different origins of tissues in RNA-seq and ChIP-seq data, only those genes that were both differentially expressed and had a ChIP-seq peak were considered as putative targets of dMYC.
 
-## Live image
+### Live image
 
 Live image of fly ovaries was performed as previously reported (Zhang et al., 2019). Ovaries from wt flies were stained with TMRM (1:10000, I34361, Thermo Fisher Scientific) and MTgreen (1:10000, M7514, Thermo Fisher Scientific) in PBS for 20 min followed by PBS washes for three times. Ovaries from Sgg-GFP flies were dissected. Ovarioles were isolated and immerged in halocarbon oil on coverslips, then live imaged with a Perkin Elmer Ultraview system. The ratiometric image was generated with ImageJ, which the intensity of red channel is divided by that of green channel.
 
-## SDH and COX activity staining in the ovary
+### SDH and COX activity staining in the ovary
 
 To determine if changes in the intensities of COX staining linearly or exponentially correlate with the activities/amounts of complexes IV in the ovary, we generated standards for COX staining by blotting various amount of Cytochrome c oxidase (C5499, Sigma, for the COX standards) on a nitrocellulose membrane with a slot blotting apparatus (Bio-Dot SF Apparatus). COX staining solution contains 50 mM phosphate (pH 7.4), 4 mM 3,3’-diaminobenzidine, 2 μg/ml catalase, 200 μM cytochrome c, 84 mM malonate, 60 μM rotenone and 4 mM antimycin A. The nitrocellulose membrane blotted with COX was incubated in the COX staining solution at room temperature for 30 min. The reaction was stopped by incubation with 4% paraformaldehyde for 15 mins. Membrane was then washed twice in 50 mM phosphate (pH 7.4) and scanned. The intensities of bands were quantified using the ‘Gels’ function in ImageJ. Band intensities and the according amounts of mitochondria or Cytochrome c oxidase were plotted in Excel. Trendlines were generated based on linear or exponential relation, respectively. We found that R2 values of linear correlation are 0.9919 for COX activity standards, while R2 values of exponential correlation are reduced to 0.8658.
 
@@ -124,14 +634,14 @@ For COX/SDH dual activity staining, five pairs of ovaries were dissected in PBS 
 
 Quantification for relative ETC activities in the germarium was performed using ImageJ. From the opened images, germline cysts were isolated by ‘Clear Outside’. Color of the cysts was inverted and converted into gray. ‘Color Threshold’ was used to select COX staining. Intensity of selected staining area was measured. Intensity of non-selected area was considered as background and subtracted from the intensity of selected area. From each batch of activity staining, the COX activity was calculated by normalizing the staining intensities in the germarium to the COX activity standard curves. The intensity from the negative control group, with addition of inhibitor for COX, was considered as ‘0’ activity, while the intensity from the control groups was considered as a relative ‘1’ activity.
 
-## Immunofluorescence staining and fluorescence in situ hybridization (FISH)
+### Immunofluorescence staining and fluorescence in situ hybridization (FISH)
 
 Ovary dissection, immunostaining, and EdU incorporation were performed as described before (Hill et al., 2014). Click-iT Plus EdU Alexa Fluor 488 Imaging Kit (C10637, Thermo Fisher Scientific) was used for EdU incorporation and visualization. Stellaris FISH probes against, Cyt-C1, Cyt-B, CoxIV, CoxIII, or InR mRNA were synthesized from Biosearch Technologies. Sequences of the probes are listed in the Supplementary file 7. FISH of Drosophila ovaries was conducted as previously described (Trcek et al., 2017). Confocal images were collected by a Perkin Elmer Ultraview system or Instant Sim (iSIM) Super-Resolution Microscope. All images were processed with Image J.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All statistical analyses were conducted with Prism 7 (GraphPad Software). Error bars in all charts represent standard errors. p-Values were performed with Two‐tailed Student’s t test. Statistical significance of difference was considered when p<0.05.
 
-## Data availability
+### Data availability
 
 The data were deposited in Gene Expression Omnibus of NCBI (Edgar et al., 2002) and will be available with accession number (GEO: GSE126997).

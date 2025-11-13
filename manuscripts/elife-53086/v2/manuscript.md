@@ -39,17 +39,33 @@ Participants read visually presented words aloud (n = 27), performed an object
 
 **Figure 1.:** (A) Schematic representation of the four tasks. (B) Representative spatial coverage map on a standard N27 inflated surface illustrating how many patients had electrodes in each brain region. (C) Individual electrodes shown on the same brain surface. Colored electrodes represent those included in each ROI for the grouped electrode analyses. PI: Posterior Insula, AI: Anterior Insula, STG: Superior Temporal Gyrus, CS: Central Sulcus, IFG: Inferior Frontal Gyrus.
 
-## Behavioral performance
+### Behavioral performance
 
 Task accuracy for the word reading task was 96.4 ± 5.3% (mean ± SD) with an average response time (RT) of 978 ± 221 ms from word presentation. The RT for the object naming task was 1192 ± 245 ms. 75.1 ± 10.6% of responses in the naming task had both correct articulation and the expected, most common word choice; only these were used for subsequent analysis.
 
-## Electrode coverage
+### Electrode coverage
 
 A plot of the coverage across our standardized brain, accumulating electrode recording zones from each patient (Figure 1B) (Kadipasaoglu et al., 2014), confirmed good coverage bilaterally in all sub-regions of the insula and across our extra-insular ROIs.
 
-## Chronology of insula activation
+### Chronology of insula activation
 
 To compare the timing of activation of other functional regions with the insula, we used ROIs based on known anatomico-functional parcellation of the insula, separating the short gyri (anterior) and long gyri (posterior) (Naidich et al., 2004), and targeted adjacent regions well-established to be involved in speech production, as detailed in the methods: left superior temporal gyrus (STG; primary and secondary auditory cortex), bilateral central sulcus (CS) and left inferior frontal gyrus (IFG) (Figure 1C). During both reading and naming, activity in these ROIs was as expected (Figure 2; Figure 2—source data 1). IFG activation began ~750 ms before speech onset, prior to CS activation. CS activity was maximal at speech onset and, shortly after the onset speech, STG became active.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/53086/elife-53086-fig2-v2.jpg)
+
+**Figure 2.:** Broadband gamma activity (A–D) and spectrogram (E–H) plots of activity within each ROI, averaged across subjects during the complex reading (A,E; n = 27), monosyllabic naming (B,F; n = 23), multisyllabic naming (C,G; n = 23) and listening (D,H; n = 21) tasks. Colored bars under the BGA plots represent regions of significant activation (q < 0.05). Responses are time locked to speech onset in the reading and naming tasks and to the stimulus onset in listening.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53086/elife-53086-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Broadband gamma activity bar plots of activity within each ROI, averaged across pre-articulatory (−500 to −100 ms), post-articulatory (200 to 600 ms) and late post-articulatory (600 to 1000 ms) windows for each task. Error bars represent standard error margin. Significance bars show contrasts discussed in main text; ns p>0.05, *p<0.05, **p<0.01. Responses are time locked to speech onset in the reading and naming tasks and to the stimulus onset in listening. PI: Posterior Insula, AI: Anterior Insula, STG: Superior Temporal Gyrus, CS: Central Sulcus, IFG: Inferior Frontal Gyrus.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53086/elife-53086-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Broadband gamma activity (A) and spectrogram (B) plots of activity within each ROI, averaged across subjects during the praxis task. Colored bars under the BGA plot represent regions of significant activation (q < 0.05). Responses are time locked to movement onset. PI: Posterior Insula (n = 24 (7); # electrodes (# patients)); AI: Anterior Insula (n = 10 (5)); STG: Superior Temporal Gyrus (n = 48 (6)); CS: Central Sulcus (n = 9 (2)); IFG: Inferior Frontal Gyrus (n = 7 (4)).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/53086/elife-53086-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The broadband gamma measures used through the paper are measures of invoked oscillations. To further evaluate the role of insular cortex, we calculated event related potentials (ERPs) using electrodes in this region, relative to speech production. ERPs were calculated for each ROI for the three speech conditions: complex word reading (A), monosyllabic naming (B) and multisyllabic naming (C). STG and IFG both showed periods of significant evoked activity (q < 0.05), however, neither insular ROI displayed any periods of significant evoked activity.
 
 The posterior insula was active exclusively after speech onset implying that it did not play a role in speech planning. There were no differences in the amplitude of activation with varying levels of articulation complexity - simple monosyllabic names vs. complex read words (Wilcoxon rank sign, 200–600 ms; p=0.083) and multisyllabic naming responses (p=0.898) (Figure 2—figure supplement 1). The only difference observed was a duration effect, with longer articulation times and therefore longer activation duration for multisyllabic words (600–1000 ms; p=0.024).
 
@@ -57,13 +73,13 @@ In posterior insula, the timing of responses resembled those of STG very closely
 
 The anterior insula showed a very weak though significant activation in both speech articulation tasks, starting shortly after the IFG. This low amplitude response first became significant around 150 ms before speech onset and remained active for the duration of speech, concurrent with the posterior insula and STG. This small but reliable response could represent a low magnitude local processing, but could also represent activity from an active adjacent region, such as the frontal operculum which overlies the insula. Additionally, when considering the evoked activity from anterior insula, we observed no significant response (Figure 2—figure supplement 3).
 
-## Topography of insula activation
+### Topography of insula activation
 
 To evaluate activity in the insula without imposing regional homogenization intrinsic to grouped electrode analysis, and form an accurate spatiotemporal activity map, we also represented the activity of individual insular electrodes on a standardized brain surface (Figure 3A). During both reading and naming the magnitude and significance of the activation at individual electrodes were highly consistent. In the post-articulatory period of both the reading and naming tasks, the posterior insula, bilaterally along the anterior long gyri (ALG), showed clusters of electrodes responding with high significance and amplitude, primarily in the superior part of the gyrus (Figure 3B; Figure 3—source data 1). This region also appeared to be the primary region of activation in the listening task and also showed significant but low amplitude activation during the praxis task.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/53086/elife-53086-fig3-v2.jpg)
 
-**Figure 3.:** (A) Insula coverage map showing all insula electrodes from patients who did the reading task on a standard N27 pial surface insula. (B) Activity maps showing activation above baseline for each task in either the pre (−500 to −100 ms) or post (200 to 600 ms) articulatory time window. ASG: Anterior Short Gyrus, PSG: Posterior Short Gyrus, ALG: Anterior Long Gyrus. Electrodes with a non-significant activation (q > 0.05) shown in black.Figure 3—source data 1.Figure 3B.
+**Figure 3.:** (A) Insula coverage map showing all insula electrodes from patients who did the reading task on a standard N27 pial surface insula. (B) Activity maps showing activation above baseline for each task in either the pre (−500 to −100 ms) or post (200 to 600 ms) articulatory time window. ASG: Anterior Short Gyrus, PSG: Posterior Short Gyrus, ALG: Anterior Long Gyrus. Electrodes with a non-significant activation (q > 0.05) shown in black.
 
 Overall the anterior insula showed characteristics comparable to those in the grouped analysis, with significant but very low amplitude responses in the post-articulatory period but little to no pre-articulatory activity. The active electrodes seen at the anterior edge of the left insula in the pre-articulatory period were both from one patient and were in close proximity to the frontal operculum. The remaining electrodes with significant responses were very low in amplitude and were scattered across the region, with no clear spatial organization.
 
@@ -73,21 +89,33 @@ To account for variations in sampling density across the insula, we also perform
 
 **Figure 4.:** Regions are shown for clusters with significant activity (p<0.01, corrected), absolute BGA change of >10% and coverage of at least three patients. Regions excluded for lack of patient coverage are shown in black.
 
-## Comparing anterior insula and frontal operculum
+![Video 1.](https://cdn.elifesciences.org/articles/53086/elife-53086-video1.mp4.jpg)
+
+**Video 1.:** MEMA was run on short, overlapping time windows (150 ms width, 10 ms spacing). Regions are shown for clusters with significant activity (p<0.01, uncorrected), absolute BGA change of >15% and coverage of at least three patients. Regions excluded for lack of patient coverage are shown in black.
+
+### Comparing anterior insula and frontal operculum
 
 In fMRI studies of speech and language, the anterior insula is often represented as being active. However, these activation clusters typically encompass both anterior insula and medial frontal operculum (FO). Given that we recorded little activity from electrodes in anterior insula and the MEMA results revealed prominent activity in the FO, it is pertinent to evaluate if FO activity could be the true source of the subtle activation seen in some anterior insular electrodes.
 
 To assess this, we evaluated electrode responses in patients who had electrodes in both the anterior insula and FO. Two examples are shown in Figure 5. We noted strong, pre-articulatory BGA responses in FO but low amplitude activity in the anterior insula. FO electrodes showed significant gamma activation that started up to 700 ms before articulation and continued for the duration of articulation (Figure 5A,B; Figure 5—source data 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/53086/elife-53086-fig5-v2.jpg)
+
+**Figure 5.:** (A) Electrode pairs within two representative patients showing two neighboring electrodes, one within anterior insula (AI) and another within frontal operculum (FO). (B) Activity of these electrodes while reading, showing much greater activity within the FO electrodes. Electrode locations (C) and BGA (D) for neighboring electrode pairs used for within patient comparisons of AI and FO activity. Colored bars under the BGA plots represent regions of significant activation (q < 0.05).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53086/elife-53086-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Results of time lagging the insular and peri-insular recordings on the resultant cross-correlation values for the AI-FO (A) and PI-STG (B) comparisons. Correlation magnitude was maximal at 0 ms (r = 0.11 ± 0.03, mean ± SE) for the AI-FO comparison and at −4 ms (r = −0.02 ± 0.01) for the PI-STG comparison. Cross-correlations were performed within-patient, on the band-limited (70–150 Hz) voltage traces from the most proximal electrode pair across regions, in the time window ±1 s from articulation onset. Negative time lag represents insula preceding the peri-insular region.
+
 Due to the oblique trajectories used for sampling the insula, the majority of patients (n = 13) with anterior insula electrodes had a nearby electrode on the same probe (separation 5.7 ± 2.2 mm) that was localized to frontal operculum (Figure 5C). The band-limited (70–150 Hz) voltage traces of these electrodes were significantly correlated between the electrode pairs (r = 0.11 ± 0.03, mean ± SE; Wilcoxon rank sign, p=0.008), this correlation was maximal at 0 ms time lag, suggestive of volume conduction between the two regions (Figure 5—figure supplement 1). Also, the population level BGA time courses were highly comparable between the two regions (Figure 5D).
 
-## Posterior insular vs. superior temporal gyrus activity
+### Posterior insular vs. superior temporal gyrus activity
 
 As we have shown earlier, the posterior insula, particularly the superior ALG, is active in the post-articulatory period during both reading and naming and also during auditory perception and orofacial movements. Posterior insula and STG followed comparable time courses of activation and appeared as one contiguous activation cluster in the MEMA potentially suggesting comparable functional characteristics. However, when we compared the response amplitudes between the reading and listening tasks, within individual electrodes (Figure 6; Figure 6—source data 1), significantly larger responses were seen along the entire left STG to externally generated over self-generated speech. By contrast, the posterior insula showed greater activation during self-generated speech.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/53086/elife-53086-fig6-v2.jpg)
 
-**Figure 6.:** (A) Contrast map comparing activation during self-generated speech in the reading task to external speech from the listening task in the 200 to 600 ms window. STG showed greater activation during speech perception while PI activity was greater during speech production. Electrodes with a non-significant difference (q > 0.05) shown in black. Electrode locations (B) and BGA for reading (C) and listening (D) for electrode pairs used for within patient comparisons of PI and STG activity. Colored bars under the BGA plots represents regions of significant activation (q < 0.05).Figure 6—source data 1.Figure 6A.
+**Figure 6.:** (A) Contrast map comparing activation during self-generated speech in the reading task to external speech from the listening task in the 200 to 600 ms window. STG showed greater activation during speech perception while PI activity was greater during speech production. Electrodes with a non-significant difference (q > 0.05) shown in black. Electrode locations (B) and BGA for reading (C) and listening (D) for electrode pairs used for within patient comparisons of PI and STG activity. Colored bars under the BGA plots represents regions of significant activation (q < 0.05).
 
 In patients with electrodes in both PI and STG (n = 8), we took the closest electrode pair (separation 11.9 ± 2.9 mm) (Figure 6B). In contrast to the AI-FO correlation, band-limited voltage traces in these electrode pairs were not significantly correlated (r = 0.01 ± 0.03, mean ± SE; Wilcoxon rank sign, p=0.74).
 
@@ -95,7 +123,7 @@ In patients with electrodes in both PI and STG (n = 8), we took the closest el
 
 Our recordings showed no clear evidence for insular involvement in the preparation for speech. Rather, bilateral posterior insula, particularly the superior anterior long gyri, appear involved in some aspect of monitoring during speech production, a process that is functionally separable from that of the superior temporal gyrus. We find little evidence anterior insula is directly involved in speech or language production, with the neighboring frontal operculum more likely being the true regional activity source.
 
-## Posterior insula
+### Posterior insula
 
 The posterior insula was strongly active during speech production, with weaker activation during speech perception and much weaker activation during silent mouth movements. The weaker activation during these constituent components of speech compared with speech production could suggest that this region may serve a role in integration of auditory and somatosensory input (Rodgers et al., 2008). It could also suggest its involvement in respiratory or laryngeal control (Ackermann and Riecker, 2010; Fedorenko et al., 2015), aspects we did not control for in these experiments.
 
@@ -107,7 +135,7 @@ Lesional analysis in cases of apraxia of speech, attribute the primary cause to 
 
 In summary, the posterior insula (i) lacks pre-articulatory activity, (ii) lacks complexity sensitivity (Baldo et al., 2011), (iii) is activated by externally produced sounds and (iv) by non-speech mouth movements. Taken together these findings are suggestive of a sensory monitoring region - congruent with the role of the insula in auditory-somatosensory integration (Rodgers et al., 2008) where both auditory and somatosensory activity in rodent insula is maximal during coincident presentation, comparable to what we see during human self-generated speech.
 
-## Anterior insula
+### Anterior insula
 
 The anterior insula is a common area of fMRI activation during speech and language studies. However, these do not show a clear delineation between insula and the operculum in their activation clusters. Our results reveal that the majority of activity lies on the side of the operculum rather than anterior insula. The frontal operculum is also the only peri-insular region in this study with significant and substantial pre-articulatory gamma activity, the timing of which would implicate it as a preparatory region, a role that has traditionally been attributed to the insula. This agrees with stimulation studies of the operculum as disruption of this region has been shown to lead to language disruption (Mălîia et al., 2018).
 
@@ -117,41 +145,41 @@ In summary, we find that the insula does not serve pre-articulatory preparatory 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Twenty-seven patients (14 male, 18–50 years, 8 left handed) participated in the experiments after written informed consent was obtained. All experimental procedures were reviewed and approved by the Committee for the Protection of Human Subjects (CPHS) of the University of Texas Health Science Center at Houston as Protocol Number HSC-MS-06–0385. Inclusion criteria were that the participants were an English native speaker, had at least one electrode contact localized in the insular long or short gyri and that the insula was not identified as a seizure onset zone.
 
-## Electrode implantation and data recording
+### Electrode implantation and data recording
 
 Recordings were acquired from stereo-electroencephalographic (sEEG) electrodes (PMT corporation, Chanhassen, Minnesota) implanted for clinical purposes of seizure localization in patients with pharmaco-resistant epilepsy using a Robotic Surgical Assistant (ROSA; Medtech, Montpellier, France) (Tandon et al., 2019). sEEG probes were 0.8 mm in diameter, with 8–16 electrode contacts, each of which was a platinum-iridium cylinder, 2.0 mm in length and separated from the adjacent contact by 1.5–2.43 mm. Thus, the center-to-center distance between the electrode contacts was 3.5–4.43 mm. Each patient had multiple (12-16) such probes implanted.
 
 Following implantation, electrodes were localized by co-registration of pre-operative anatomical 3T MRI and post-operative CT scans using a cost function in AFNI (Cox, 1996). Electrode positions were projected onto a cortical surface model generated in FreeSurfer (Dale et al., 1999), and displayed on the cortical surface model for visualization (Pieters et al., 2013). sEEG data were collected using the NeuroPort recording system (Blackrock Microsystems, Salt Lake City, UT) digitized at 2 kHz. They were imported into MATLAB initially referenced to the white matter channel used as a reference by the clinical acquisition system, visually inspected for line noise, artefacts and epileptic activity. Electrodes with excessive line noise or localized to sites of seizure onset were excluded. Each electrode was re-referenced offline to the common average of the remaining channels. Trials contaminated by inter-ictal epileptic spikes were discarded.
 
-## Stimuli and experimental design
+### Stimuli and experimental design
 
 Participants read visually presented words aloud (n = 27), performed an object naming task (n = 23) of common objects presented as line drawings, listened to speech stimuli as a part of a naming to description task (n = 21) and performed an orofacial praxis task (n = 8), where they silently performed non-speech mouth movements (Figure 1A).
 
-## Word Reading
+#### Word Reading
 
 Fifty-eight unique words were visually presented in a pseudorandom order with no repetition and patients read the words aloud. Stimuli were presented using Python v2.7, on a 15.4’ LCD screen positioned at eye-level, 2–3’ from the patient, for 2000 ms with an inter-stimulus interval of 3000 ms. Black, lower-case text (Calibri, height 150 pixels) centered on a 2880 × 1800 pixel white background was used. To create high articulatory complexity and to maximally engage the insula (Baldo et al., 2011), all words used had three or more syllables, an initial CCV phoneme structure, and a high articulatory travel (e.g. snapdragon, globalization, claustrophobia).
 
-## Object Naming
+#### Object Naming
 
 To enable comparisons of a range of articulatory complexities and allow for word selection processes, participants were presented with visual stimuli selected from a standardized set of line drawings (Snodgrass and Vanderwart, 1980; Kaplan et al., 1983) and instructed to verbally name the objects (Conner et al., 2014; Forseth et al., 2018). Stimuli were presented in two recording sessions, each containing presentation of 165 unique images, in a pseudorandom order, that were either coherent images or their spatially scrambled versions. Stimuli were presented using Python v2.7 at a size of 1000 × 1000 pixels centered on a 2880 × 1800 pixel white background on a 15.4’ LCD screen positioned at eye-level, 2–3’ from the patient, for 1500 ms with an inter-stimulus interval of 3000 ms. Unlike the reading task, this task did not require a single specific response, allowing the patient to choose the response to any given stimulus (e.g. Pelican vs. Bird, Rhinoceros vs. Rhino). Only trials with the most commonly produced word for each stimulus were used for analysis. If all responses were given using expected answers this resulted in 112 monosyllabic responses and 37 multisyllabic (3+ syllable) responses.
 
-## Listening to speech
+#### Listening to speech
 
 Participants listened to recorded phrases that described common objects (Hamberger and Seidel, 2003; Forseth et al., 2018). A total of 72 unique speech stimuli were presented in a pseudorandom order, balanced with an equal number of trials with male and female speakers. Auditory stimuli were played using stereo speakers (44.1 kHz, 15’ MacBook Pro 2008) with an inter-stimulus interval of 5000 ms.
 
-## Orofacial Praxis
+#### Orofacial Praxis
 
 Participants were cued to perform various orofacial movements silently (e.g. smile then pout, stick tongue out straight) based on the stimuli from Fedorenko et al. (2015). There were 12 unique movements, repeated five times each in a pseudorandom order resulting in a total of 60 trials. Instructions were presented using the same style visual stimuli and timings as in the reading task.
 
-## Audio and video analysis
+### Audio and video analysis
 
 Continuous audio recordings were carried out using an omnidirectional microphone (30–20,000 Hz response, 73 dB SNR, Audio Technica U841A) placed adjacent to the presentation laptop. These recordings were analyzed offline to transcribe patient responses and manually select the onset of audible speech. In participants who performed the praxis task, we performed video recordings of both reading and praxis tasks to obtain timing of articulation onset and to allow a comparison between the timing of the onset of articulation and that of audible speech. This comparison showed that in the reading task, articulation onset preceded audible speech by 108 ± 127 ms.
 
-## Signal analysis
+### Signal analysis
 
 A total of 5312 electrode contacts were implanted in these patients, 1807 of these were excluded from analysis due to proximity to the seizure onset zone, excessive inter-ictal spikes or line noise. Insular electrodes were selected manually, based on anatomical criteria, after localization of the electrodes’ CT artifacts relative to a pre-operative MRI scan. Electrodes in either the anterior (short) gyri or posterior (long) gyri of the insula, as separated by the central sulcus (Naidich et al., 2004), were selected for analysis. 52 electrodes in 20 patients were localized to anterior insula (LH n = 40 (16), RH n = 12 (5); # electrodes (# patients)) and 53 electrodes in 14 patients were localized to posterior insula (LH n = 30 (9), RH n = 23 (7)). For the remainder, electrodes were indexed to the closest node on a standardized cortical surface in patient-space to enable grouped representation and analysis (Saad and Reynolds, 2012). Regions of interest (ROIs) derived using cortical parcellation from the Human Connectome Project parcellation (Glasser et al., 2016) on the standardized surface were used to select electrodes for further analysis. These were the (i) superior temporal gyrus (STG) ROI comprised of: A1, PBelt, MBelt and LBelt in the left hemisphere (n = 106 (16)); (ii) the central sulcus (CS) ROI comprised of areas 3a, 3b and 4 bilaterally (n = 31 (5)). (iii) the inferior frontal gyrus (IFG) ROI comprised of the areas 45, IFSp and IFSa in the left hemisphere (n = 70 (17)). A post-hoc medial frontal operculum ROI (n = 13 (13)) was defined using the same techniques as the insular ROIs, manually selecting electrodes from individual patient MRIs based on anatomical criteria (Naidich et al., 2004).
 

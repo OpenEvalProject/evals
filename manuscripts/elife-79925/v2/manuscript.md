@@ -13,12 +13,12 @@
 
 ### Affiliations
 
-1. https://ror.org/03vek6s52 Human Evolutionary Biology, Harvard University Cambridge United States
-2. https://ror.org/00dvg7y05 Department of Orthopedic Research, Boston Children’s Hospital Boston United States
+1. Human Evolutionary Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+2. Department of Orthopedic Research, Boston Children’s Hospital Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))
 3. Department of Orthopedic Surgery, Harvard Medical School Boston United States
-4. https://ror.org/03vek6s52 Department of Molecular and Cellular Biology, Harvard University Cambridge United States
-5. https://ror.org/042nb2s44 Broad Institute of MIT and Harvard Cambridge United States
-6. https://ror.org/04kj1hn59 Harvard Stem Cell Institute Cambridge United States
+4. Department of Molecular and Cellular Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+5. Broad Institute of MIT and Harvard Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+6. Harvard Stem Cell Institute Cambridge United States ([ROR:04kj1hn59](https://ror.org/04kj1hn59))
 
 † Corresponding author
 
@@ -40,13 +40,33 @@ We used our established in vitro hPSC-based model of developing human cartilage 
 
 ## Results
 
-## Transcriptomic profiles of hESC-derived chondrocytes recapitulate those of human fetal chondrocytes
+### Transcriptomic profiles of hESC-derived chondrocytes recapitulate those of human fetal chondrocytes
 
 Having differentiated hESCs to produce articular chondrocytes and growth cartilage chondrocytes (Figure 1A), we performed bulk RNA-seq on these cartilage tissues after 12 weeks in culture. To serve as in vivo references for the in vitro cartilage tissues, we performed bulk RNA-seq on human distal femur articular and growth plate chondrocytes isolated from embryonic day (E)67 fetal donor tissue (Supplementary file 1a-b). Principal component analysis indicated the four different chondrocyte sources (hESC-derived growth plate cartilage, hESC-derived articular cartilage, fetal growth plate cartilage, and fetal articular) clustered separately (Figure 1B). Reassuringly, even though hESC differentiation and RNA-seq were performed on more than one occasion (4 independent differentiations and 3 sequencing batches), transcriptome clustering was primarily dependent on cell type. That is, hESC-derived articular (orange icons) or growth plate tissues (light blue icons) from different experiments and batches cluster together, indicating reproducibility within the hESC model system. Principle component 1 (PC1) generally represents differences observed between the in vitro and in vivo samples (Figure 1B, circles/triangles vs. squares), including minor contributions from sex-linked genes (hESC-derived samples are female and the fetal donor tissue was male). The top genes contributing to PC1 are enriched in GO biological processes that, with the exceptions of extracellular matrix/structure organization and immune responses, are detecting cellular responses to ions (Figure 1—figure supplement 1), suggesting differences associated with culturing cells in media not identical to the milieu in vivo. PC2 represents differences between articular/epiphyseal and growth plate cartilages, which were more pronounced for hESC-derived chondrocytes than for their in vivo counterparts, as indicated by the greater distance in separation along the PC2 axis. The top genes contributing to PC2 are enriched in GO biological processes that are consistent with cartilage and skeletal system development and morphogenesis (Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/79925/elife-79925-fig1-v2.jpg)
+
+**Figure 1.:** (A) Brief methods to generate hESC-derived cartilage accompanied by toluidine-blue staining sections of hESC-derived articular (TGFB) and growth plate-like (BMP) cartilage tissues and the epiphyseal and growth plate cartilage of a developing fetal cartilage (E59 proximal tibia) show distinct chondrocyte morphology and proteoglycan-rich matrix. Fetal dissection location noted is approximate, and the dotted circle highlights the overlap of chondrocytes with similar phenotypes likely present in both samples following dissection. (B) PCA plot of RNA-seq expression data from hESC-derived and fetal cartilages. Legend indicates cell type and sequencing batch. (C) Expression heatmap of the top 20 differentially-expressed genes (DEGs) up- and down-regulated when comparing hESC-derived articular and growth plate cartilage. Red/blue color scale indicates Z-score expression values across samples in each plot. Columns indicate biological replicates. (D) Expression heatmap of the top 20 DEGs up- and down-regulated when comparing fetal epiphyseal and growth plate cartilage tissues. Red/blue color scale indicates Z-score expression values across samples in each plot. Columns indicate biological replicates. (E) The top 100 DEGs up- and down-regulated in the hESC-derived cartilages (top) were compared with equivalent log(2)FC values from the fetal cartilage (bottom).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79925/elife-79925-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Gene-set GO biological process enrichments for the top 200 gene loadings of PC1. (B) Gene-set GO biological process enrichments for the top 200 gene loadings of PC2.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/79925/elife-79925-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The top 200 DEGs ordered by log(2)FC (100 each up- and down-regulated) in the fetal articular and fetal growth plate cartilage (top) were compared with equivalent log(2)FC values from the hESC-derived cartilages (bottom). (B) The log(2)FC of the top 200 DEGs with the lowest p-value (100 each up- and down-regulated) in the hESC-derived cartilages (top) were compared to the equivalent log(2)FC values from the fetal articular and fetal growth plate cartilage (bottom). (C) The log(2)FC of the top 200 DEGs with the lowest p-value (100 each up- and down-regulated) in the fetal cartilages (top) were compared to the equivalent log(2)FC values from the hESC-derived cartilages (bottom).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/79925/elife-79925-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A–C) Expression heatmap of the top 20 differentially-expressed genes (DEGs) up- and down-regulated when comparing hESC-derived articular and growth plate cartilage after 4 weeks (A), 8 weeks (B), and 12 weeks (C) of differentiation. (D–F) Expression heatmap of the top 20 differentially-expressed transcription factors (TFs) up- and down-regulated when comparing hESC-derived articular and growth plate cartilage after 4 weeks (D), 8 weeks (E), and 12 weeks (F) of differentiation. Red/blue color scale indicates Z-score expression values across samples in each plot. Columns indicate biological replicates. (G–H) Venn diagrams depicting the number of differentially expressed TFs in the articular cartilage (TGFB-treated) lineage (G) or the growth plate cartilage (BMP4-treated) lineage (H) that are unique at early (4 weeks), mid (8 weeks), and late stages (12 weeks) of differentiation, or shared at indicated stages.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/79925/elife-79925-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Direction sharing of the top 20 differentially-expressed transcription factors (TFs) up- and down-regulated when comparing hESC-derived articular and growth-plate chondrocytes (top), along with the equivalent log(2)FC values from the fetal tissue samples (bottom). (B) Venn diagram of the overlap between TFs defined as differentially expressed in either hESC-derived (purple) or fetal (salmon) chondrocytes. (C) Expression heatmap of the top 20 differentially-expressed TFs up- and down-regulated when comparing hESC-derived articular and growth-plate chondrocytes (left plots), with the equivalent expression of fetal articular and fetal growth plate cartilage (right). Red/blue color scale indicates Z-score expression values across samples in each plot. Columns indicate biological replicates.
+
 The top 40 differentially-expressed genes (DEGs) between respective cartilage lineages, in vitro or in vivo, are shown in Figure 1C–D, respectively (all DEGs are provided in Supplementary file 1b). We performed gene-set enrichment analyses on the set of genes upregulated in hESC-derived articular or hESC-derived growth plate cartilage. The former was enriched for terms relating to ECM organization, response to TGF stimulus, and collagen processes, while the latter was enriched for terms relating to ossification, ECM organization, and cartilage development (Supplementary file 1c). We obtained similar enrichment terms when we performed the same analysis on genes upregulated in fetal epiphyseal or fetal growth plate cartilage (Supplementary file 1c). Of the top 200 genes with the highest degree of differential expression between hESC-derived articular and growth plate chondrocytes, >70% exhibited similar differential expression in fetal epiphyseal and fetal growth plate chondrocytes, a trend that was statistically significant (Figure 1E, compare top and bottom graphs; p=2.8e−16, Supplementary file 1d). Notable genes whose expression in fetal cartilage is opposite that of hESC-derived cartilage are MMP13, a collagenase often observed in pathogenic osteoarthritic cartilage, and SCARA5, a dexamethasone-responsive gene implicated in adipogenesis (Lee et al., 2017). We obtained similar results in expression trends when starting with the top 200 genes with the highest degree of differential expression between fetal epiphyseal and fetal growth plate chondrocytes, and when considering those DEGs whose difference is most significant from either dataset (Figure 1—figure supplement 2). Taken together, these data lend strong support to the notion that the two chondrogenic cell types derived from hESCs represent bona fide articular and growth plate chondrocytes.
 
-## Differentially expressed transcripts localize to specific regions within hESC-derived and fetal articular and growth plate cartilages
+### Differentially expressed transcripts localize to specific regions within hESC-derived and fetal articular and growth plate cartilages
 
 RNA-seq differences between fetal and hESC-derived cartilages may represent differences in the relative abundance of specific chondrocyte subtypes between the two samples. For example, mature articular cartilage has a superficial, intermediate, deep zone, and calcified chondrocytes, but fetal epiphyseal cartilage is less mature and contains surface chondrocytes that will give rise to the future articular cartilage as well as chondrocytes that will contribute to the secondary ossification center (future growth plate chondrocyte) (Lui et al., 2015; Chau et al., 2014). Growth plate cartilage has resting, proliferating, pre-hypertrophic, and hypertrophic chondrocytes. But as the developing cartilage is a continuous unit in vivo, the fetal epiphyseal chondrocytes and fetal growth plate both contain a portion of resting and proliferating chondrocytes, indicated by the approximate dissection point and dashed circle in Figure 1A. Therefore, we used in situ hybridization to localize sites of differential gene expression in hESC-derived and fetal cartilages and to estimate the fraction of cells expressing those transcripts (Figure 2). Type II collagen, encoded by the gene COL2A1, is a major structural component of both articular and growth plate cartilage, and as such, expression is observed in the cartilaginous structures both in vitro and in vivo (Figure 2A–D). PRG4 is expressed in the superficial layer of the hESC-derived TGFB-treated articular cartilage (Figure 2A) and absent in the BMP4-treated growth plate cartilage (Figure 2B). Similarly, in vivo, PRG4 is expressed in the superficial zone of fetal articular cartilage, as well as the intra-articular ligaments and meniscus (Figure 2C), and is absent in the growth plate (Figure 2D). Tenomodulin (TNMD), a well-known marker of tendon fate (Docheva et al., 2005), was a top DEG in hESC and fetal articular chondrocytes, where it is found in cells at the most superficial layers of the hESC-derived articular cartilage and the fetal knee cartilage (Figure 2A and C, white arrows). TNMD is also expressed in the intra-articular ligaments in vivo, as expected (Figure 2C double arrow). COL10A1 mRNA is detected in the hESC-derived growth plate cartilage (Figure 2F), but not hESC-derived articular cartilage (Figure 2E), consistent with expression patterns found in the fetal knee, where COL10A1 is expressed in the hypertrophic chondrocytes of the growth plate (Figure 2H) but not in the epiphyseal chondrocytes (Figure 2G). Thus, lower fold-change differences in genes (e.g. PRG4) in the fetal cartilages compared to the hESC-derived cartilages may reflect the incomplete terminal differentiation in the fetal cartilage, while others (e.g. COL10A) may reflect higher proportions of hypertrophic chondrocytes among the cells recovered from hESC-derived growth plate cartilage compared to the fetal growth plate.
 
@@ -64,19 +84,92 @@ Gene expression differences were also observed between the developing articular 
 
 The reproducible identification of known lineage-specific expression in the distinct cartilage tissues we generated from hESCs validates the utility of our established in vitro differentiation methods and further illustrates the strength of our transcriptomic datasets in identifying novel markers and potential regulators of articular and growth plate cartilage development.
 
-## Chromatin accessibility differences between hESC-derived articular chondrocytes and hESC-derived growth plate chondrocytes
+### Chromatin accessibility differences between hESC-derived articular chondrocytes and hESC-derived growth plate chondrocytes
 
 As cell fate decisions are guided by transcriptional regulation, we next sought to more deeply investigate the expression of TFs and potential gene regulatory elements within the hESC-derived cartilage tissues. From our initial differential gene expression analyses, we identified 277 TFs that were differentially expressed in at least one of the four cell types profiled and for which a binding motif has been described (Supplementary file 1e, Figure 1—figure supplement 4). Moreover, in our independent transcriptomic analysis of cartilage developing over time in vitro, we detected an additional 41 TFs that were differentially expressed in the 4 week cartilage tissues and 173 in the 8 week tissues, including those differentially expressed at more than one timepoint (Supplementary file 2e-i and Figure 1—figure supplement 3). To refine this list of potential chondrogenic lineage regulators, we performed ATAC-seq (Buenrostro et al., 2015), a method used to characterize chromatin accessibility on a genome-wide basis, on a subset of terminally differentiated hESC-derived chondrocytes that were used for transcriptomic analysis (i.e. the three biological replicate tissues per treatment sequenced in batch two, Supplementary file 1a and f-g). To establish a set of evolutionarily conserved and, therefore, likely functional regulatory elements in chondrogenesis, we also generated ATAC-seq data from mouse embryonic chondrocytes expressing Col2a1 (expressed by all chondrocytes) or hypertrophic growth plate chondrocytes expressing Col10a1. Col2a1+or Col10a1+chondrocytes were isolated from E15.5 transgenic mice (i.e. stage-matched to our human embryonic samples) harboring fluorescent reporters driven by Col2a1 or Col10a1 regulatory elements using cell sorting (see Methods and previous work Richard et al., 2020). The genome-wide overlap of peaks found in the two types of human and mouse chondrocytes is summarized in Table 1. As hypertrophic growth plate chondrocytes can co-express both Col2a1 and Col10a1, we expected there to be some overlap in peaks between the Col2a1+ sorted chondrocytes and the Col10a1+ chondrocytes. However, peaks identified in only Col10a1+ chondrocytes are expected to be more restricted to chondrocytes in the growth plate.
 
+**Table 1.**
+ Summary of ATAC-seq peaks from mouse and human chondrocytes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3" colspan="3"></th>
+      <th colspan="3">Mouse embryonic chondrocytes</th>
+    </tr>
+    <tr>
+      <th>All</th>
+      <th>Col2+</th>
+      <th>Col10+</th>
+    </tr>
+    <tr>
+      <th>30,950</th>
+      <th>28,972</th>
+      <th>12,906</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">hESC-derived chondrocytes</td>
+      <td>All Peaks (T+B)</td>
+      <td>37,780</td>
+      <td>13,687</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TGFB (All peaks)</td>
+      <td>31,137</td>
+      <td></td>
+      <td>13,381</td>
+      <td>9223</td>
+    </tr>
+    <tr>
+      <td>BMP (All peaks)</td>
+      <td>29,821</td>
+      <td></td>
+      <td>12,471</td>
+      <td>9070</td>
+    </tr>
+    <tr>
+      <td>TGFB (Unique)</td>
+      <td>11,571</td>
+      <td></td>
+      <td>3971</td>
+      <td>2385</td>
+    </tr>
+    <tr>
+      <td>BMP (Unique)</td>
+      <td>12,154</td>
+      <td></td>
+      <td>2584</td>
+      <td>1754</td>
+    </tr>
+  </tbody>
+</table>
+
 Profiling the hESC-derived chondrocytes by ATAC-seq and calling significant reproducible open-chromatin regions (i.e. peaks) revealed a total of 37,780 unique peaks, corresponding to putative regulatory elements. We categorized these regions on the basis of differential accessibility in either growth plate or articular chondrocytes, identifying 12,154 regions more accessible in growth plate chondrocytes and 11,571 more accessible in articular chondrocytes (Supplementary file 3a-b). These differentially accessible regions (DARs) suggest cell-type specific regulatory activity and are the focus of subsequent analyses. To illustrate these data, the top 20 DEGs for each lineage in this subset of hESC-derived tissues, the accessibility of their corresponding promoters, and their respective cis-regulatory score (CRS, see below and Methods) are shown in Figure 3A. For example, DARs identified near the IHH and CHI3L1 loci in hESC-derived growth plate chondrocytes and hESC-derived articular chondrocytes are indicated by black rectangles in the ‘BMP Diff Peaks’ track, orange dashed line and the ‘TGF Diff Peaks’ track, blue dashed line, respectively (Figure 3B–C). Tracks showing accessible regions detected in mouse embryonic chondrocytes are also shown (outlined with purple dashed lines) to visualize those regulatory elements that are conserved between species (examples indicated with arrows). Using the GREAT region-based association tool (McLean et al., 2010), we identified terms significantly associated with DARs from growth plate chondrocytes, including anomaly of the limb diaphyses and ECM organization. Likewise, we identified terms associated with DARs from articular chondrocytes, including ECM organization, collagen metabolic process, and osteoarthritis (Supplementary file 3c).
 
-## A simplistic model of gene expression is not sufficient to explain the gene regulatory network information captured by this merged transcriptomic and epigenetic data approach
+![Figure 3.](https://cdn.elifesciences.org/articles/79925/elife-79925-fig3-v2.jpg)
+
+**Figure 3.:** (A) The expression (left), gene-promoter accessibility (middle), and metric of cis-regulatory activity (cis-regulatory score, CRS, right) values of the top 20 differentially-expressed genes (DEGs) in each lineage. Red/blue color scale indicates Z-score expression/accessibility values across samples in each plot. Blue/orange scale indicates lineage-bias in cis-regulatory metric. (B–C) Representative differentially-expressed gene locus in each lineage show differentially accessible regions (DARs) at the promoter corresponding to the same lineage. IHH (B) is differentially expressed in the growth plate lineage while CHI3L1 (C) is differentially expressed in the articular cartilage lineage. Arrows highlight DAR of interest in respective tracks.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79925/elife-79925-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (Left) Expression heatmap of the top 10 differentially-expressed TFs in each lineage. (Right) For indicated TF, the number of hits of that motif in putative enhancer sequences is biased towards either lineage (red line), compared to randomly-sampled sequence sets (black lines/histogram).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/79925/elife-79925-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The number of motif hits within the BMP-biased peaks for a particular transcription factor, compared against the information content (IC) of that factor’s binding motif. The Pearson correlation (R) and significance values of the relationship between IC and motif hits are shown in the top left. (B) The number of motif hits within the TGFB-biased peaks for a particular transcription factor, compared against the IC of that factor’s binding motif.
+
+### A simplistic model of gene expression is not sufficient to explain the gene regulatory network information captured by this merged transcriptomic and epigenetic data approach
 
 To begin to understand differential transcriptional regulation mechanisms in these two lineages, we used de novo motif analysis to identify over-represented TF motifs in DARs specific to either articular or growth plate chondrocytes (Supplementary file 3d-e). We detected RNA expression for 15 TFs whose motifs are enriched in BMP DARs, but only five TFs were differentially expressed (Supplementary file 1e and 3d). FOSL2 and PITX2 were expressed at significantly higher levels in the corresponding BMP-treated growth plate lineage, while SOX11, FOXA1, and RUNX1 were expressed at significantly higher levels in the opposite lineage. We detected RNA expression for 19 TFs whose motifs are enriched in TGFB DARs, but again only five of these were differentially expressed (Supplementary file 1e and 3e). ETV4, AP4, and NFYB were expressed at significantly higher levels in the corresponding TGFB-treated articular cartilage lineage, while NFAT5 and NHLH1 were expressed at significantly higher levels in the opposite lineage. Thus, the majority of motifs identified in these DARs were not for TFs that were also differentially expressed in the corresponding cell type.
 
 We then examined the same two sets of DARs specifically for the enrichment of motifs belonging to TFs differentially expressed in the corresponding cell types. This yielded a reduced set of TFs, several of which were also observed in our de novo analysis (Figure 3—figure supplement 1 and Supplementary file 3f). For this latter approach, we confirmed that motif enrichment is not substantially correlated with sequence complexity (Figure 3—figure supplement 2). When we considered sets of lineage-specific DARs nearby genes exhibiting lineage-specific expression, we observed similar enrichments for motif occurrences of several of these TFs in both region (lineage) sets, despite conditioning on the lineage-specific expression of these factors (Figure 3—figure supplement 1, right). For example, motifs for the top DE TFs, POU2F2 (a TGFB-specific DE TF), and MEF2C (a BMP-specific DE TF) were significantly enriched in both TGFB-DARs and BMP-DARS when compared to randomly-sampled sequence sets (red lines, Figure 3—figure supplement 1, right). Motifs for only two of these DE TFs, RUNX2, and RUNX3 were significantly enriched in the corresponding BMP lineage, and significantly depleted or not significant in the TGFB-DARs. This suggests that a simplistic model of gene expression, wherein upregulation of a given TF is associated with increased accessibility of elements to which it may bind, and subsequently increased expression of its putative targets, is not sufficient to explain the gene regulatory network information captured by our ATAC-seq/RNA-seq strategy.
 
-## Defining hypothetical gene regulatory networks via cataloging gene expression and chromatin accessibility differences between hESC-derived articular chondrocytes and hESC-derived growth plate chondrocytes
+### Defining hypothetical gene regulatory networks via cataloging gene expression and chromatin accessibility differences between hESC-derived articular chondrocytes and hESC-derived growth plate chondrocytes
 
 We sought to integrate our ATAC- and RNA-seq datasets in a way that better captured the regulatory behavior described in our sequencing datasets. Our approach defined three metrics of expression and accessibility at a given locus: (1) gene expression, (2) proximal (promoter) accessibility, and (3) distal (enhancer) activity, defined as a cis-regulatory score (see Methods, Supplementary file 4a). Based on the simplistic model of gene expression described above, we would have expected absolute correspondence between these three metrics for all DEGs, however, there were clear deviations from this result (Figures 3A and 4A). We reasoned that multiple regulatory principles may be at play and, inspired by recent work describing the cis-regulatory behavior of immunological genes in mice (Yoshida et al., 2019), we classified genes into four different regulatory behaviors based on the proportion of variance in expression explained by chromatin accessibility within their respective loci. Briefly, these consist of genes whose expression variance is best explained by: variance does not clearly associate with chromatin accessibility (‘unexplained,’ cluster 1, Supplementary file 4b), a combination of promoter accessibility and distal cis-regulatory accessibility (‘combo-centric, cluster 2, Supplementary file 4c), promoter accessibility alone (‘promoter-centric,’ cluster 3, Supplementary file 4d), or distal cis-regulatory accessibility alone (‘enhancer-centric,’ cluster 4, Supplementary file 4e; Figure 4B). In general, genes falling into clusters 2–4 exhibited larger fold-changes in expression between articular and growth plate chondrocytes compared to genes falling into the ‘unexplained variance’ category (cluster 1; Figure 4C). Likewise, a greater proportion of genes from clusters 2–4 (genes whose variance in expression can be attributed to promoter or enhancer accessibility or both) were differentially expressed, compared to those from cluster 1 (whose variance cannot be attributed to differential accessibility in any putative regulatory elements, Figure 4C). Further, we confirmed that sets of genes segregated with this method show increased sharing of direction (i.e. lineage bias) for the expected parameters (e.g. ‘combo-centric’ gene expression had a greater correspondence with our cis-regulatory bias metric than did ‘promoter-centric’ gene expression) (Figure 4D).
 
@@ -92,11 +185,212 @@ We focused on those motifs most highly enriched in DARs from enhancer-centric (c
 
 **Figure 5.:** Enrichment test results comparing the occurrence of the indicated motif in TGFB or BMP-biased differentially accessible regions (DARs) relative to randomized backgrounds. (A) TFs differentially expressed (DE) in TGFB-treated articular chondrocytes, testing motif occurrence in TGFB or BMP-biased DARs around enhancer-centric DEGs. *p<0.05; NS, not significant. (B) TFs DE in TGFB-treated articular chondrocytes, testing motif occurrence in TGFB or BMP-biased DARs around combo-centric differentially-expressed genes (DEGs). *p<0.05; NS, not significant. (C) Enrichment histogram of RELA motif occurrence in BMP (left) and TGFB (right)-biased DARs around combo-centric genes DE in their respective lineages. Red line indicates the target set value, black bars indicate occurrences in randomized sets. (D) TFs DE in BMP-treated growth plate chondrocytes, testing motif occurrence in TGFB or BMP-biased DARs around enhancer-centric DEGs. *p<0.05; NS, not significant. (E) TFs DE in BMP-treated growth plate chondrocytes, testing motif occurrence in TGFB or BMP-biased DARs around combo-centric DEGs. *p<0.05; NS, not significant. (F) Enrichment histogram of RUNX2 motif occurrence in BMP (left) and TGFB (right)-biased DARs around combo-centric genes DE in their respective lineages. Red line indicates the target set value, black bars indicate occurrences in randomized sets.
 
-## Functional validation of TF and target interactions in human chondrocytes
+### Functional validation of TF and target interactions in human chondrocytes
 
 To functionally validate the putative gene regulatory interactions we identified in these studies, we performed ChIP-qPCR for several enhancer and promoter elements assigned to DEGs that have putative binding sites for RELA or RUNX2 in hESC-derived chondrocytes (Tables 2 and 3). RELA and NFKB1 are members of the same transcriptional complex and were also differentially expressed in the articular cartilage lineage at 8 weeks of differentiation (Figure 1—figure supplement 3 and Supplementary file 2b). In the fetal donor samples, RELA and NFKB1 were expressed at higher levels in the epiphysis compared to the growth plate, though the differences were not statistically significant. Having identified both of these genes in these conservative analyses, we postulated they have a cooperative functional role in articular chondrocyte biology and chose RELA as the differential p-value between the specificity of motif enrichments between hESC-derived articular cartilage DARs and growth plate DARs was higher than NFKB1. We also chose to investigate downstream RUNX2 targets in the growth plate cartilage lineage, as it too was a differentially expressed TF in the growth plate lineage at 8 weeks, as well as in the fetal growth plate, and we wished to complement studies performed in the osteoblast lineages and in mice (Wu et al., 2014; Hojo et al., 2021) with human-specific data. We cross-referenced putative binding sites with ATAC-seq data collected from E15.5 mouse Col2a1+ and Col10a1+ chondrocytes and published ChIP-seq data for several cell types (Supplementary file 5a-e). We chose 7–10 targets that satisfied some or all of these criteria, choosing some targets that have been previously described in chondrocyte biology, and others with binding sites that have overlapping ChIP-seq peaks in other cell types.
 
+**Table 2.**
+ Summary of candidate RELA targets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Putative Target</th>
+      <th>Chromosome location (hg19)</th>
+      <th>Distance from TSS of gene</th>
+      <th>Overlap with Mouse Col2a1+peaks</th>
+      <th>Overlap with mouse Col10a1+peaks</th>
+      <th>Validated ChIP-seq hits from other studies</th>
+      <th>Fold enrichment in ChIP-qPCR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PRG4</td>
+      <td>chr1:186201240–186201490</td>
+      <td>- 64.4 kb</td>
+      <td>Y</td>
+      <td></td>
+      <td>1</td>
+      <td>8.26</td>
+    </tr>
+    <tr>
+      <td>LOXL2</td>
+      <td>chr8:23268990–23269240</td>
+      <td>- 7520 bp</td>
+      <td></td>
+      <td></td>
+      <td>44</td>
+      <td>6.03</td>
+    </tr>
+    <tr>
+      <td>LTBP2</td>
+      <td>chr14:75083374–75083624</td>
+      <td>- 4380 bp</td>
+      <td></td>
+      <td></td>
+      <td>33</td>
+      <td>5.71</td>
+    </tr>
+    <tr>
+      <td>GLIPR2</td>
+      <td>chr9:36135932–36137932</td>
+      <td>+10 bp</td>
+      <td>Y</td>
+      <td></td>
+      <td>17</td>
+      <td>5.57</td>
+    </tr>
+    <tr>
+      <td>DKK3</td>
+      <td>chr11:12101707–12101957</td>
+      <td>- 71.1 kb</td>
+      <td></td>
+      <td></td>
+      <td>134</td>
+      <td>11.56</td>
+    </tr>
+    <tr>
+      <td>TLR2</td>
+      <td>chr4:154577179–154577429</td>
+      <td>+27.2 kb</td>
+      <td>Y</td>
+      <td></td>
+      <td>36</td>
+      <td>4.85</td>
+    </tr>
+    <tr>
+      <td>COL15A1</td>
+      <td>chr9:101733568–101733818</td>
+      <td>+26.6 kb</td>
+      <td>Y</td>
+      <td></td>
+      <td>1</td>
+      <td>1.28</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Summary of candidate RUNX2 targets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Putative Target</th>
+      <th>Chromosome location (hg19)</th>
+      <th>Distance from TSS of gene</th>
+      <th>Overlap with mouse Col2 +peaks</th>
+      <th>Overlap with mouse Col10 +peaks</th>
+      <th>Validated ChIP-seq hits from other studies</th>
+      <th>Fold enrichment in ChIP-qPCR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ACAN</td>
+      <td>chr15:89312870–89313120</td>
+      <td>–33.0 kb</td>
+      <td>Y</td>
+      <td></td>
+      <td></td>
+      <td>3.98</td>
+    </tr>
+    <tr>
+      <td>ATOH8</td>
+      <td>chr2:85969150–85969400</td>
+      <td>–11.9 kb</td>
+      <td>Y</td>
+      <td></td>
+      <td>2</td>
+      <td>4.79</td>
+    </tr>
+    <tr>
+      <td>C16orf72</td>
+      <td>chr16:9166745–9166995</td>
+      <td>–18.5 kb</td>
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td>12.88</td>
+    </tr>
+    <tr>
+      <td>COL10A1</td>
+      <td>chr6:116439814–116440064</td>
+      <td>+7110 bp</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>4</td>
+      <td>2.44</td>
+    </tr>
+    <tr>
+      <td>RCL1</td>
+      <td>chr9:4837930–4838180</td>
+      <td>+44.8 kb</td>
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td>14.73</td>
+    </tr>
+    <tr>
+      <td>WNT10B</td>
+      <td>chr12:49366141–49368141</td>
+      <td>- 899 bp</td>
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td>5.96</td>
+    </tr>
+    <tr>
+      <td>GPR153</td>
+      <td>chr1:6319685–6321685</td>
+      <td>+699 bp</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>3</td>
+      <td>4.06</td>
+    </tr>
+    <tr>
+      <td>MAP4K3</td>
+      <td>chr2:39719320–39719570</td>
+      <td>–54.6 kb</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>1</td>
+      <td>11.36</td>
+    </tr>
+    <tr>
+      <td>RXRA</td>
+      <td>chr9:137178491–137178741</td>
+      <td>–39.3 kb</td>
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td>6.42</td>
+    </tr>
+    <tr>
+      <td>SCUBE1</td>
+      <td>chr22:43701886–43702136</td>
+      <td>–36.8 kb</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>1</td>
+      <td>9.27</td>
+    </tr>
+  </tbody>
+</table>
+
 Seven putative RELA target loci (Table 2) were chosen to confirm by ChIP-qPCR, including several genes known to be involved in articular cartilage identity and maintenance. These include PRG4 (lubricin), a functional marker for the superficial zone of articular cartilage; LOXL2 (lysyl oxidase-like 2), which induces anabolic gene expression and plays a potential protective role against OA (Alshenibr et al., 2017); DKK3 (Dickkopf-3), a noncanonical member of the Dkk family of Wnt antagonists that plays a role in articular cartilage maintenance (Snelling et al., 2016); and TLR2 (Toll-like receptor 2), which mediates articular cartilage homeostasis (Sillat et al., 2013). We also chose to validate targets that are less well-studied, or newly identified in articular cartilage, including LTBP2, COL15A1 (validated in Figure 2M), and GLIPR2. Representative binding regions with RELA motifs are the GLIPR2 promoter (Figure 6A, overlapping with RELA ChIP-seq data and overlap with Col2a1+mouse chondrocytes, indicated dotted box and red arrows) and an upstream enhancer of LOXL2 (Figure 6B, overlapping with RELA ChIP-seq data and histone acetylation peaks). RELA and these putative target genes are expressed at significantly higher levels in hESC-derived articular cartilage (Figure 6C–D). The majority of RELA target genes were also expressed at significantly higher levels in the fetal epiphyseal chondrocytes compared to fetal growth plate chondrocytes (Table 1 and data not shown), however, RELA, COL15A1, and LOXL2 were not DEGs, likely due to under-represented terminally differentiated chondrocytes, and the overlap of unspecialized developing chondrocytes in both primary samples (Figure 1A, Figure 2). Notably, while COL15A1 is not a DEG in the fetal chondrocytes, its protein expression appears higher in the matrix of the fetal epiphysis and superficial layers, compared to the matrix of the fetal growth plate (Figure 2K).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/79925/elife-79925-fig6-v2.jpg)
+
+**Figure 6.:** (A–B) Two representative differentially accessible regions (DARs) (blue dashed boxes) in hESC-derived articular chondrocytes (TGFB-treated) which contain RELA binding motifs: near the promoter of GLIPR2 (A) and an intronic enhancer of LOXL2 (B). Region of interest indicated with the red arrow in relevant tracks. (C) RELA is differentially expressed in TGFB-treated articular chondrocytes, quantified by qRT-PCR. **p<0.01. (D) Expression of selected genes with putative RELA binding motifs was quantified by qRT-PCR. *p<0.05, **p<0.01, ***p<0.001, Student’s t-test. Values indicate the mean of two to three biological replicates per five independent experiments. Error bars, SEM. (E–F) Two representative DARs (orange dashed boxes) in hESC-derived growth plate chondrocytes (BMP-treated) which contain RUNX2 binding motifs: near the promoter of ATOH8 (E) and an enhancer of ACAN (F). Region of interest indicated with the red arrow in relevant tracks. (G) RUNX2 is differentially expressed in BMP-treatment, quantified by qRT-PCR. ***p<0.001. (H) Expression of selected genes with putative RUNX2 binding motifs was quantified by qRT-PCR. *p<0.05, **p<0.01, ***p<0.001, Student’s t-test. Values indicate the mean of two to three biological replicates per five independent experiments. Error bars, SEM.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79925/elife-79925-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) ChIP-qPCR of RELA results for differentially accessible peaks near target genes show enrichment of these sequences compared to a negative (gene desert) control (Untr12). BIRC3 is a positive RELA control. A and B represent two independent pools of TGFB-treated articular chondrocytes. (C) ChIP-qPCR of RUNX2 results for differentially accessible peaks near target genes show enrichment of these sequences compared to a negative (gene desert) control (Untr12). DPF1 is a positive RUNX2 control. Error bars, SD. Primers are provided in Supplementary file 6.
 
 Following ChIP-mediated pulldown of genomic regions bound by RELA in TGFB-treated articular cartilage, four of the six loci were enriched at least fivefold (PRG4, GLIPR2, DKK3, LOXL2, LTBP2), and a fifth locus (TLR2) was enriched at least twofold compared to the negative control in the TGFB-treated articular cartilage (Table 2 and Figure 6—figure supplement 1). The binding region for the COL15A1 locus was only 1.3-fold enriched compared to the negative control in hESC-derived TGFB-treated articular cartilage, which suggests that RELA was not sufficiently bound to this locus in this sample.
 
@@ -126,11 +420,287 @@ The molecular data provided herein have, for the first time, unlocked key findin
 
 ## Methods
 
-## Maintenance of hESCs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>H9 hESCs (XX)</td>
+      <td>Wicell</td>
+      <td>WAe009-A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Musculoskeletal/joint fetal donor samples; from first trimester termination</td>
+      <td>Birth Defects Research Laboratory, University of Washington</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Phalangeal joint fetal donor samples; first trimester termination (E70)</td>
+      <td>Advanced Bioscience Resources Inc.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-EFHD1</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# HPA056959</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-COL15A1</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# HPA017915</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Basic Fibroblast Growth Factor (bFGF)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#233-FB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Bone Morphogenetic Protein 4 (BMP4)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#314 BP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Activin A</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#338-AC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Transforming Growth Factor Beta 3 (TGFB3)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#243-B3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal Bovine Serum (FBS)</td>
+      <td>Corning</td>
+      <td>Cat#35–010-CV</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dulbecco’s Modified Eagle Medium, high glucose</td>
+      <td>Gibco</td>
+      <td>Cat#11995065</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM/F12</td>
+      <td>Corning</td>
+      <td>Cat#10–092-CV</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>StemPro-34 serum-free medium and nutrient supplement</td>
+      <td>Gibco</td>
+      <td>Cat#10639011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Knockout Serum Replacement (KOSR)</td>
+      <td>Gibco</td>
+      <td>Cat#10828028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Ascorbic Acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A4544</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-glutamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#25030081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Non-essential amino acids (NEAA)</td>
+      <td>Gibco</td>
+      <td>Cat#11140050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin/Streptomycin (Pen/Strep)</td>
+      <td>Gibco</td>
+      <td>Cat#15140122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>b-mercaptoethanol, 55 mM solution (BME)</td>
+      <td>Gibco</td>
+      <td>Cat#21985023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Transferrin from human serum</td>
+      <td>Roche</td>
+      <td>Cat#10652202001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>a-monothioglycerol (MTG)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#M6145</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin-Transferrin-Selenium-Sodium Pyruvate (ITS-A)</td>
+      <td>Gibco</td>
+      <td>Cat#51300044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Proline</td>
+      <td>Gibco</td>
+      <td>Cat#P5607</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#D4902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polyheme (2-hydroxyethyl methacrylate)</td>
+      <td>Sigma-Alrich</td>
+      <td>Cat#P3932</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gelatin from porcine skin type A</td>
+      <td>Sigma-Alrich</td>
+      <td>Cat#G1890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Matrigel, growth factor-reduced</td>
+      <td>Corning</td>
+      <td>Cat#354230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TryplE</td>
+      <td>Gibco</td>
+      <td>Cat#12605028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin from porcine pancreas</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#T4799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethylenediaminetetraacetic Acid (EDTA), 0.5 M solution, pH 8.0</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A3145</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNaseI from bovine pancreas</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#260913</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase type B</td>
+      <td>Roche</td>
+      <td>Cat#11088831001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ROCK inhibitor Y-27632 dihydrochloride (RI)</td>
+      <td>Tocris</td>
+      <td>Cat#1254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB431542 hydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#S4317</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dorsomorphin (DM)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#P5499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IWP2</td>
+      <td>Tocris</td>
+      <td>Cat#3533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase Type I</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#C0130</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Maintenance of hESCs
 
 All reported research involving human embryonic stem cells was approved by IRB (IRB-P00017303) and ESCRO (ESCRO-2015.4.24) regulatory bodies at Boston Children’s Hospital. H9 hESCs (Wicell, RRID:CVCL_9773) were maintained on irradiated mouse embryonic fibroblasts in hESC media containing DMEM/F12 (Corning) supplemented with 20% knockout serum replacement (Gibco), nonessential amino acids (Gibco), L-glutamine (Gibco), Pen/Strep (Gibco), b-mercaptoethanol (Gibco), and human bFGF (10 ng/mL) in six-well tissue culture plates. Cells were passaged when they reached ~80% confluency onto new feeders as cell clusters of about 3–10 cells, following dissociation with TrypLE (Gibco). The identity of the H9 hESC line was authenticated at the commercial source (Wicell) using STR and karyotype and was mycoplasma negative.
 
-## Generation of chondrocytes from hESCs
+### Generation of chondrocytes from hESCs
 
 A detailed description of the protocol for generating chondrogenic cells and tissues from human pluripotent stem cells has been published (Craft et al., 2015). Briefly, embryoid bodies (EBs) were generated from H9 hESCs and cultured in suspension in the presence of BMP4 (1 ng/mL) and ROCK inhibitor (5 µM) for 24 hr in StemPro-34 medium (Gibco) supplemented with L-glutamine (Gibco), L-ascorbic acid (Sigma-Aldrich), transferrin (Roche), and a-monothioglycerol (Sigma-Aldrich). On day 1, EBs were harvested and resuspended in StemPro-34 media with bFGF (5 ng/mL), BMP4 (3 ng/mL), Activin A (2 ng/mL), and ROCK inhibitor (5 µM) to induce primitive streak-like mesoderm. After 44 hr, on day 3, the EBs were harvested from the induction media, cells were dissociated with TrypLE and cultured as monolayers (100,00 cells per well) in 96-well tissue culture plates (Corning) in StemPro-34 media containing bFGF (20 ng/mL), an inhibitor of type I activin receptor-like kinase (ALK) receptors SB431542 (5.4 µM), type I BMPR inhibitor dorsomorphin (4 µM), and a Wnt inhibitor IWP2 (2 µM). After 48 hr, on day 5, monolayer cultures were maintained in StemPro-34 media containing bFGF (20 ng/mL) until day 14 to generate chondrogenic mesoderm. Cultures were maintained in a hypoxic 5% O2, 5% CO2, 90% N2 environment for 11 days, and normoxic 5% CO2/air condition for the remainder of the culture period.
 
@@ -138,7 +708,7 @@ Cartilage tissues were generated from the hESC-derived chondrogenic mesoderm cul
 
 Chondrocytes were generated for the transcriptomic and epigenetic studies in seven independent experiments. For each cell type (articular and growth plate), a single micromass was collected per replicate, as described in Supplementary file 1a and 2a. Additional experiments were performed to produce cartilage tissues for validation.
 
-## Fetal tissue dissection
+### Fetal tissue dissection
 
 Human fetal donor samples (E59, E67, E72) were collected from the first trimester termination via the University of Washington (UW) Birth Defects Research Laboratory (BRDL) in full compliance with the ethical guidelines of the NIH and with the approval of UW Review Boards for the collection and distribution of human tissue for research, and Harvard University and Boston Children’s Hospital for the receipt and use of such materials (Capellini: IRB16-1504; Craft: IRB-P00017303). The samples were briefly washed in Hank’s Balanced Salt Solution (HBSS) and transported in the same buffer at 4 °C during shipment.
 
@@ -146,11 +716,11 @@ Cartilaginous tissues as described below were dissected under a light dissection
 
 For fetal bulk-RNA seq, epiphyseal, and growth plate cartilages from the left and right distal femur were micro-dissected from an E67 donor sample. For qPCR, epiphyseal and growth plate cartilage from the distal femur and proximal tibia of one knee joint were microdissected from E59, E67, and E72 human samples. Donor samples for histology/immunohistochemistry were obtained from E59 knee joints (UW BDRL) and E70 metacarpophalangeal and metatarsophalangeal joints (Advanced Bioscience Resources Inc), formalin-fixed and paraffin embedded as described in the Histology/Immunohistochemistry section.
 
-## RNA-sequencing (RNA-seq)
+### RNA-sequencing (RNA-seq)
 
 Cartilage derived from hESCs (Batch 1 and 4) was enzymatically digested with 0.2% type I collagenase (Sigma, St. Louis) for up to 2 hr at 37 °C to solubilize the majority of ECM. Microdissected fetal cartilage was minced and subsequently incubated with 0.1% bacterial collagenase (Sigma, St. Louis) for 2–3 hr at 37 °C to solubilize the majority of ECM. Liberated cells were pelleted by centrifugation and the supernatant was completely removed. Fetal chondrocytes and hESC-derived cells from Batch 1/4 were lysed in guanidine thiocyanate buffer. Total RNA was purified using silica column-based kits (ThermoFisher). RNA quality and quantity were assessed via Bioanalyzer (Agilent, Santa Clara), with RIN values >7. 100 ng of total RNA was used as input for the TruSeq RNA Library Prep Kit v2 (Illumina, San Diego). Libraries for Batch 4 were prepared using the NEBNext Ultra II RNA Library Prep Kit for Illumina using the manufacturer’s instructions (Azenta). Libraries from Batch 1 were sequenced on an Illumina NextSeq instrument using 2 × 150 bp paired-end reads. The fetal samples (Batch 3) plus one technical replicate of an hESC-derived articular and growth plate library from Batch 1, and Batch 4, were sequenced on an Illumina Hi-seq using 2 × 150 bp paired-end reads. hESC-derived cartilage tissues from Batch 2 were lysed directly in Trizol (Thermo Fisher, Waltham) without prior ECM dissociation (see Paired ATAC-seq and RNA-seq section below). See Supplementary file 1a for additional details.
 
-## Paired ATAC-seq and RNA-seq
+### Paired ATAC-seq and RNA-seq
 
 In order to perform simultaneous RNA-seq and ATAC-seq assays on the same micromass chondrocyte culture, we physically bisected cultures via forceps and a scalpel blade. One section of bisected micromass culture was immediately minced, then subsequently transferred to a 1.5 ml microfuge tube containing 200 uL of TRIzol reagent (Thermo Fisher Scientific, Waltham) and 5 mm stainless steel beads (Qiagen). Sections were homogenized using a tissue lyser (Qiagen) at 50 Hz for 2 min periods with intermittent incubation on ice for 1 min. RNA was extracted from the tissue homogenate using the phenol-chloroform extraction method, followed by purification using the Direct-zol RNA miniprep kit (Zymo Research, Irvine). RNA quality and quantity was assessed using Bioanalyzer (Agilent, Santa Clara) and Qubit (Thermofisher, Waltham). Samples with RNA integrity numbers >7 were used for subsequent RNA-seq experiments. 100 ng of total RNA were then sent to the Harvard University Bauer Core Facility for library preparation with the Kapa mRNA Library Prep kit (Roche, Basel). Generated RNA-seq libraries were then sequenced on a single sequencing lane of the Illumina NextSeq 500 using 2 × 38 bp reads at the Harvard University Bauer Core Facility – see Supplementary file 1a for per-sample sequencing information. Sequencing yielded ∼500 million reads per lane and an average of 50 million per sample. Quality control statistics and primer information are presented in Supplementary file 1a.
 
@@ -158,19 +728,19 @@ The second section of micromass culture was again bisected, then transferred to 
 
 The transposase reaction product was then purified using the DNA Clean & Concentrator Kits (Zymo Research) following manufacturer’s protocols, eluted in 10 μl of warmed ddH20, and stored at −20 °C. All samples were next subjected to PCR amplification and barcoding following Buenrostro et al., 2015; Buenrostro et al., 2013. Ten microliters of transposed DNA were then placed in a reaction containing NEBNext High-Fidelity PCR Master Mix, ddH20, and barcoding primers. Following PCR amplification, samples were subjected to double-sided size selection using the Magbind RXN Pure Plus beads (OMEGA) following manufacturer’s instructions. The samples were eluted in 20 μl of TE buffer, nano-dropped, and the fragment size distribution was analyzed by the 2100 Bioanalyzer instrument (Agilent Technologies). Prior to sequencing, library concentrations were determined using the KAPA Library Quantification Complete Kit (KK4824). Samples were then sent out to the Harvard University Bauer Core Facility for sequencing on a single lane of an Illumina NextSeq 500. Quality control statistics and primer information are presented in Supplementary file 3a.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Total RNA was extracted from in vitro tissue using the MagMAX mirVana Total RNA kit (Applied Biosystems) and from fetal tissue using the RNAqueous-Micro Total RNA kit (Invitrogen). RNA (0.1–1 μg) was reverse transcribed with Superscript IV VILO reverse transcriptase (Invitrogen) and treated with ezDNase enzyme (Invitrogen). Real-time quantitative PCR was performed on a ViiA 7 Real-Time PCR System with OptiFlex Optics System (Applied Biosystems) using PowerUp SYBR Green PCR kit (Applied Biosystems). Genomic DNA standards were used to evaluate the efficiency of the PCR and calculate the copy number of each gene relative to the expression of the gene encoding TATA-box binding protein (TBP). All data represent three biological replicates (independent experiments or fetal donor specimens) or more as indicated. Student’s t-test was used to evaluate statistical significance, as indicated. Oligonucleotides are provided in Supplementary file 6.
 
-## Histology and immunohistochemistry
+### Histology and immunohistochemistry
 
 In vitro-derived cartilage tissues and primary human donor samples (E59 knee joint; E70 metacarpophalangeal and metatarsophalangeal joints) were fixed in 10% formalin and embedded in paraffin. 5 μm sections were stained with toluidine blue to visualize sulfated glycosaminoglycans. Immunohistochemistry was performed using antibodies recognizing EF-Hand domain family D1 (HPA056959; RRID:AB_2683288; Sigma Aldrich), and type XV collagen (HPA017915; RRID:AB_1847100; Sigma Aldrich). Antigen retrieval was performed on the tissue using citrate buffer (pH 6.0, overnight at 50 °C) for type XV collagen, and using pepsin (30 min. at 37 °C) for EFHD1. Positive staining was visualized with DAB. Sections were counterstained with Mayer’s hematoxylin (blue).
 
-## RNA scope
+### RNA scope
 
 Five µm sections of tissues were deparaffinized by submersion in xylene and washed with 100% ethanol, and treated with the RNAscope hydrogen peroxide solution (Advanced Cell Diagnostics (ACD), Cat. No. 322381). Target antigen retrieval was performed by incubating sections in TEG buffer (25 mM Tris-HCl pH 8, 10 mM EDTA, and 50 mM Glucose) at 60 °C for 4 hr, changing the buffer every 40 min. Sections were then rinsed in water, dipped in 100% ethanol for 3 min, and air dried. RNAscope Protease 3 was applied to the sections at 40 °C for 1 hr (ACD, Cat. No. 322381). In situ detection of PRG4, TNMD, COL2A1, and COL10A1 mRNA was performed using the RNAscope Multiplex Fluorescent V2 Assay system (ACD, Cat. No. 323110) with the probes (Probe-Hs-COL2A1, Cat. No. 427878; Probe-Hs-PRG4-C3, Cat. No. 427861-C3; Probe-Hs-TNMD, Cat. No. 564409; Probe-Hs-COL10A1, Cat No. 427851). Fluorescent signal was detected using a confocal microscope (Zeiss LSM 800).
 
-## RNA-seq processing
+### RNA-seq processing
 
 Paired-end sequencing reads were mapped to the human reference transcriptome (GRCh37.67) obtained from the ENSEMBL database using the ‘quant’ function of Salmon version 0.14.0 (Patro et al., 2017) (version 1.2.1 for the timecourse) with the following parameters: ‘-l A --numBootstraps 100 --gcBias --validateMappings,’ all others parameters were left to defaults. Salmon quantification files were imported into R version 3.6.1 (R Development Core Team, 2023) using the tximport library (version 1.14.0) (Soneson et al., 2015) with the ‘type’ option set to ‘salmon,’ all others set to default. Salmon quantification files for the timecourse were imported into R version 4.2.1 using the tximport library (version 1.24.0). Transcript counts were summarized at the gene level using the corresponding transcriptome GTF file mappings obtained from ENSEMBL.
 
@@ -178,23 +748,23 @@ Count data was subsequently loaded into DESeq2 (Love et al., 2014) version 1.26.
 
 Statistical analysis was performed using the ‘DESeq’ function of DESeq2 using all samples, with results subsequently summarized using the ‘results’ function for the BMP-TGF contrast with the ‘alpha’ parameter set to 0.05; p-values were adjusted using the Benjamini-Hochberg FDR method (Benjamini and Hochberg, 1995), with DEGs defined at an adjusted p-value cutoff of 0.05. To visualize the expression patterns of these genes across tissues, count data was normalized using the ‘estimateSizeFactors’ function using the default ‘median ratio method,’ with the normalized matrix output using the ‘counts’ function with the ‘normalized’ option. The top 200 DEGs (sorted by absolute logFC) were subset from this normalized matrix, z-score transformed using the ‘scale’ function in base R, and visualized with the ComplexHeatmap package version 2.4.3 (Gu et al., 2016) (timecourse data visualized with gplots package version 3.1.3).
 
-## Note on digestion protocol for extracting RNA from cartilage
+### Note on digestion protocol for extracting RNA from cartilage
 
 For transcriptomic analysis of hESC-derived chondrocytes, we isolated RNA from half the samples after first separating the cells from their extracellular matrix via enzymatic digestion (collagenase). From the remaining samples, we isolated RNA directly without prior disruption of the matrix. Differential expression analysis revealed a subset of genes up-regulated in collagenase-digested cells, which were substantially enriched for GO biological processes such as ‘response to lipopolysaccharides,’ ‘response to oxidative stress,’ and ‘cellular response to toxic substance.’ Several of these processes were previously identified via a similar analysis of collagenase-digested osteoblasts (Ayturk et al., 2013). Various ‘cellular responses’ were among the enriched processes, indicating chondrocytes are sensitive to enzymatic disruption of their matrix. For applications in which matrix disruption is unavoidable, such as single-cell RNA-seq, care should be taken to ensure the transcriptomic signatures of interest are not confused with artifacts associated with enzymatic digestion.
 
-## Shared direction analysis
+### Shared direction analysis
 
 In order to compare the direction of differential expression between in-vitro and in-vivo samples, we took the in-vitro dataset and subset the top 100 most strongly up-regulated and down-regulated genes, for a final set of 200 (see Supplementary file 1). The equivalent data for these genes were subsets from the in-vivo dataset. The resulting sets of log2 fold-change values were plotted using ggplot2. A chi-square test for shared direction was performed in base R using a 2 × 2 contingency table of values (see Supplementary file 1). An equivalent analysis was performed using 200 genes defined in the in-vivo dataset, see Figure 1—figure supplement 2, Supplementary file 1.
 
-## Definition of differentially-expressed TFs
+### Definition of differentially-expressed TFs
 
 To identify TFs that are DEGs in our transcriptional data, we extracted all defined motif position-weight-matrices (PWMs) from the JASPAR 2020 database (Mathelier et al., 2016) along with the motif database provided by HOMER version 4.11 (Heinz et al., 2010). We then intersected these sets of genes with those differentially expressed in our RNA-seq analysis to define our sets of differentially-expressed transcription factors (Supplementary file 1e). To identify differentially expressed transcription factors in our timecourse transcriptional data, we intersected the DEGs with the list of curated TFs identified in Lambert et al., 2018; Supplementary file 2e-g. For our analyses integrating ATAC and RNA-seq datasets, we defined differentially-expressed transcription factors using the expression data from the RNA-seq for which paired ATAC was generated (i.e. ‘Batch 2’ samples).
 
-## Gene-set enrichment analyses
+### Gene-set enrichment analyses
 
 Genes associated with different expression/accessibility sets (as described in the results and methods text) were tested for enrichment in GO Biological Process terms using the ‘enrichGO’ function from the clusterProfiler (Yu et al., 2012) package version 3.13.1 (version 4.4.4 for the timecourse). The background gene sets used for individual enrichment tests are specific - pertaining to a particular analysis. For all differential-expression datasets, all genes in the human reference transcriptome (GRCh37.67), following quality filtering (see RNA-seq section of Methods), were used. For GO enrichments on defined differentially-accessible promoter windows, the background gene set was defined as the set of all promoters. Semantically similar enriched GO terms were subsequently collapsed using the ‘simplify’ function from clusterProfiler, using default settings. The top enriched GO terms (sorted by adjusted p-value) for each region-associated gene set are reported in Supplementary file 1c and 2d, limiting to the top twenty significant (adjusted p-value <0.05) terms.
 
-## ATAC-seq read processing
+### ATAC-seq read processing
 
 Sequence read quality was checked with FastQC and subsequently aligned to the human reference hg19 genome assembly with Bowtie2 v2.3.2 (Langmead and Salzberg, 2012) using default parameters for paired-end alignment. Reads were filtered for duplicates using picard (https://github.com/broadinstitute/picard; version 2.18.12; RRID:SCR_006525): and subsequently used for peak calling using MACS2 (Zhang et al., 2008) software (version 2.1.1.2) with the following flags: ‘bampe call -f BAMPE –nolambda’. Reproducible called peaks were defined using an IDR threshold of <0.05, as defined by the IDR statistical test (Li et al., 2011) (version 2.0.3), as well as a more stringent cutoff of 0.01 for peak sets containing more than 100,000 peaks as recommended by previous ENCODE processing pipelines. Briefly, the IDR method looks for overlaps in peak calls across pairs of replicate samples by comparing ranked peak lists (using MACS2 q-value) to define a reproducibility score curve. All paired ranks are assigned a pointwise score based on this curve, subsequently sorted, and all peaks falling below an ‘irreproducible discovery rate’ (IDR) threshold of 0.05 are taken as our final reproducible peak set.
 
@@ -202,25 +772,25 @@ For calculating differential accessibility of regions between treatments, all ID
 
 Following this smoothening, for each window, we calculated the 75th percentile read coverage value across all pelvic elements and samples (this was found to be more robust than mean read coverages, even after smoothening adjustment) using the dplyr (CRAN, 2022) package version 1.0.7. The window with the greatest 75th-percentile coverage was then selected as the representative region for that pooled ATAC-seq peak. Subsequently, raw read coverages for all optimized windows across all ATAC-seq samples were imported as a matrix into DESEQ2 version 1.26.0 using the ‘DESeqDataSetFromMatrix’ function, with differential-accessibility calculated using the ‘DESeq’ function with treatment-type as the main variable. Differentially accessible (DA) peaks were generated using the ‘results’ function from DESeq2 using the BMP-TGF contrast, with significance assessed as a Benjamini-Hochberg adjusted p-value of <0.05. To visualize accessibility in these DA peaks, read coverages were normalized using the ‘estimateSizeFactors’ function in DESeq2 using the default TMM normalization. Subsequently, the normalized read-counts matrix was z-score transformed using the ‘scale’ function in base R and plotted using the ‘ComplexHeatmap’ package version 2.4.3.
 
-## De-novo motif enrichments
+### De-novo motif enrichments
 
 Sequence sets for the sets of differentially-accessible regions (as defined above) were generated using reference sequences from hg19. HOMER (version 4.11) de novo motif analysis was performed on each sequence set using a 10 x random shuffling as a background set. De novo motifs were compared to a vertebrate motif library included with HOMER, which incorporates the JASPAR database (2022 version); matches are scored using Pearson’s correlation coefficient of vectorized motif matrices (PWMs), with neutral frequencies (0.25) substituted for non-overlapping (e.g. gapped) positions. Best-matching motif PWMs for TGF- and BMP-biased region sets are shown in Figure 2C and Supplementary file 3d-e.
 
-## Targeted motif enrichments
+### Targeted motif enrichments
 
 We took our set of differentially-expressed transcription factors up-regulated in articular and growth-plate chondrocytes, defined using expression from Batch 2 samples, and obtained the PWMs for all factors. In instances where a factor had more than one defined PWM (e.g. due to overlap between JASPAR and HOMER databases), the information content (IC) of each matrix was calculated, with the matrix having the highest IC retained. To define the background nucleotide frequencies of our ATAC-seq region sets, we took the pooled set of fixed-size peaks used in the DA analysis (n=37780) and generated a Markov background model using the ‘fasta-get-markov’ function from the MEME suite (Bailey et al., 2009; version 5.4.1). Next, we took the sets of nucleotide sequences corresponding to DA peaks and scanned them for instances of particular TF motifs using the FIMO program from MEME, defining a p-value threshold for motif hits as 2e−4 (calculated as 0.1/ (2 × 250 bp of sequence)). To define a background expectation of motif hits for sequence sets equivalent to our target sets, we used the ‘shuffle’ command from bedtools, randomly shuffling our sequence set across the hg19 genome (exclusive of the true set of regions). For each randomly-shuffled set, we then scanned for motif hits with FIMO, performing this random shuffling and scanning for n=100 randomized sets. This was used to establish a random background distribution of expected motif hits for a given TF motif. Motif hit values were standardized and statistical significance was assessed using a CDF of the standard normal distribution as implemented in the ‘pnorm’ function in base R. For each DA sequence set, P-values for significant deviations from the background distribution were corrected for the number of TFss tested (n=194) (Supplementary file 3e). As further confirmation, for the top 10 most strongly-DE TFs in each lineage, we increased the number of randomly-shuffled background sets to n=1000,, finding that our enrichments were robust to the size of the background distribution.
 
 We next checked to confirm whether these motif enrichments are reflective of the complexity of PWMs, i.e., that TFs with lower sequence binding specificity result in more promiscuous motif hits. For a given TF, we compared the fraction of all sequences in a given DA set that had at least one motif hit to the IC of the factor’s PWM. These values were plotted across all TFs tested using the ‘ggscatter’ function from ggpubr version 0.4.0, with Pearson correlation calculated with this function (see Figure 3—figure supplement 2).
 
-## GREAT analysis
+### GREAT analysis
 
 GREAT (McLean et al., 2010) takes an input set of genomic regions along with a defined ontology of gene annotations; first, it defines regulatory domains for all genes genome-wide, then measures the fraction of the genome covered by the regulatory domains of genes associated with a particular annotation (e.g. ‘cartilage development’). These fractions are used as the expectation in a binomial test counting the number of input genomic regions falling within a given set of regulatory domains, which results in the reported significance of association between an input region set and a particular gene ontology term. GREAT also performs a more traditional gene-based hypergeometric test to test for the significance of region set-ontology association. The program returns a set of enriched ontologies sorted by the joint rankings of FDR-corrected binomial and hypergeometric tests, as reported here in Supplementary file 3c.
 
-## Defining promoter-accessibility
+### Defining promoter-accessibility
 
 All hg19 Refseq gene TSS were obtained from the UCSC genome browser (Karolchik et al., 2014) and padded 5 kb up/downstream to define regions around each promoter. For each promoter, 2 kb windows were slid along this region in 50 bp increments, with per-window ATAC-seq read coverage for all samples calculated using the ‘bedcov’ function of samtools (version 1.5) for each mapped.bam file. A similar smoothening method as that described above for per-peak windowed accessibility was also performed here using sliding promoter window accessibility. As above, this smoothening method does not impact the later differential-accessibility analysis, for which we take the original read coverage values calculated for a given window using the mapped bam file. Following smoothing, the window with the greatest 75th-percentile coverage was selected as the representative read coverage metric for a given promoter. Following per-promoter window selection, the final matrix of read coverages for all promoter windows across all samples was loaded into DESeq2 version 1.26.0 using the resulting in a final matrix of read coverages for all promoters across all samples. This matrix was subsequently loaded into DESeq2 version 1.26.0 using the ‘DESeqDataSetFromMatrix’ function, with differential accessibility calculated using the ‘DESeq’ function with treatment type as the main variable. DA promoters were generated using the ‘results’ function from DESeq2 using the BMP-TGF contrast, with significance assessed as a Benjamini-Hochberg adjusted p-value of <0.05.
 
-## Defining cis-regulatory scores
+### Defining cis-regulatory scores
 
 We defined a ‘cis-regulatory score’ which seeks to capture information on accessibility patterns within putative regulatory elements around a given gene locus, a concept inspired by methods of integrating RNA-seq and ChIP-seq datasets (Wang et al., 2013). For a given gene, we collected all accessibility regions (i.e. the optimized windows described above) within 100 kb up/downstream of the TSS. Given that we also, separately, considered promotor accessibility in describing the regulatory behavior of genes (see above, and below), we explicitly excluded any regions which fell within the optimized promoter regions defined above. For each captured accessibility region, we took the calculated fold-accessibility change (BMP-TGF contrast) and scaled it by the distance to the gene TSS using the following formula:
 
@@ -228,7 +798,7 @@ Per-region score = (differential-accessibility logFC) * (e-(0.5 + 4 * (distance 
 
 Where the second distance-scaling term is taken from Tang et al., 2011. These per-region scores were summed across all captured regions across the locus to give a single, signed lineage-specific (i.e. BMP or TGF-treated) cis-regulatory score. These scores were visualized per gene as an additional feature in the ‘ComplexHeatmap’ visualizations of expression (as seen in Figure 2B); blue/red scale was defined based on max/min values (respectively) for this score (positive being TGF-biased, negative being BMP-biased); points outside two standard deviations of the mean score were capped at 2*SD +/−the mean.
 
-## Defining gene regulatory behaviors
+### Defining gene regulatory behaviors
 
 For a given gene, all accessible elements within a 100 kb (up/downstream of the gene TSS) were collected, exclusive of the optimized promoter window (as described above). For each element, the normalized accessibility counts data (via DESeq2 using the default TMM normalization, as described above) was retrieved for all hESC samples (BMP and TGF treated). These normalized counts were subsequently scaled by distance to the TSS using the above distance-scaling term. Similarly, the normalized accessibility counts data for promoter regions (as described above) was also retrieved across all samples. Finally, RNA-seq expression data for the given gene was retrieved and normalized using the ‘vst’ function in varistran (Francis Harrison, 2017) version 1.0.4 to obtain normalized expression counts across all samples.
 
@@ -238,7 +808,7 @@ These four per-gene metrics (contribution of enhancer information, promoter info
 
 To test whether the directionality of accessibility and expression was shared in different clusters of genes we used the following approach. For each gene, the distance-scaled enhancer accessibility, promoter accessibility, and gene expression values were binarized into either ‘biased towards TGF samples’ or ‘biased towards BMP samples.’ Across all genes in a given cluster, the number of genes sharing direction in either (a) enhancer accessibility and RNA expression, or (b) promoter accessibility and RNA expression was compared to those switching direction using a chi-square test in base R. Finally, for each clustered set of genes, the RNA-seq expression, promoter accessibility, and cis-regulatory score values were visualized using ComplexHeatmap, sorting first on RNA-seq expression.
 
-## Motif analyses with regulatory behaviors
+### Motif analyses with regulatory behaviors
 
 For motif analyses in the context of our defined regulatory behaviors, we considered motif enrichments at putative regulatory regions (enhancers) around genes and gene promoter regions separately. We first took the groups of genes falling into ‘enhancer-centric’ and ‘combo-centric’ clusters, separated them into those up-regulated in articular/growth-plate chondrocytes, then defined 200 kb windows centered on the TSS of each gene. Subsequently, all DA peaks sharing directionality (i.e. articular chondrocyte DA peaks around articular chondrocyte DEGs) within these windows were collected and aggregated into a final set of sequences. For ‘promoter-centric’ genes, we took the set of optimized promoter regions for DEGs and aggregated them. These sequence sets were then used with the AME webserver (part of the MEME suite) (Bailey et al., 2009), along with the sets of differentially-expressed TF motif matrices, matching the sequence sets (i.e. articular chondrocyte-biased sequence sets were scanned with articular chondrocyte-biased TFs), using default settings. The resulting enrichments were filtered with a p-value threshold of <0.05 and summarized (see Supplementary file 4f).
 
@@ -250,17 +820,17 @@ As a more stringent analysis, we also re-ran these enrichment tests using a cons
 
 To visualize the differences in motif enrichments across sets of lineage-biased genes and regions, we took the sets of motifs enriched in either growth-plate (BMP) or articular (TGF) chondrocyte lineages and sorted them by the absolute difference in log10 adjusted p-values (i.e. selecting those motifs with the largest change in motif enrichments across lineages). The top five motifs from each analysis were then plotted using ggplot2 (as seen in Figure 5A, B, D and E). The ‘ATAC-BACK’ background sets were used to visualize the distribution of motif hits used in assessing the significance of the indicated factors in Figure 5C and F.
 
-## Overlap with ChIP-seq data
+### Overlap with ChIP-seq data
 
 For our two chosen factors of interest (RELA and RUNX2), we obtained ChIP-seq datasets from ChIP-Atlas (Oki et al., 2018), which aggregates ChIP-seq datasets from publicly-available datasets (see Supplementary file 5a for full lists of accessions aggregated in each track). We broadly selected all ChIP-seq tracks available for our factors, retaining all peaks at a significance threshold of 0.05. Tracks were sorted and merged with bedtools. To test for overlap with our region sets we performed hypergeometric tests using the ‘phyper’ function in base R. Given our interest in the lineage-specificity of transcription factor motifs, we used as a background the pooled set of DA peaks biased in either lineage (n=4720). BH correction was applied for the number of sequence sets tested (n=4) (Supplementary file 5a). We subsequently summarized the results of these overlaps, which are presented in Supplementary file 5b-e. Additionally, we took the result of FIMO-predicted motif hits (as described above) for RELA and RUNX2 motif matrices on BMP- and TGF-biased peak sets, and included them along with the data on ChIP-seq overlaps. Indicated genes in Supplementary file 5 represent the closest nearby gene to a given peak.
 
-## Mouse chondrocyte isolation
+### Mouse chondrocyte isolation
 
 All studies involving animals were performed in accordance with ARRIVE guidelines. All animal work was performed according to approved institutional animal care and use committee protocols at Harvard University (IACUC 13-04-161). ATAC-seq experiments were performed on transgenic Col2a1-ECFP/Col10a1-mCherry reporter mice (a gift from Dr. Cliff Tabin at Harvard Medical School) (Chokalingam et al., 2009), which has an enhanced cyan fluorescent protein reporter under the control of the promoter of Col2a1, and an enhanced mCherry fluorescent protein reporter under the control of the promoter of Col10a1. Col2a1-ECFP/Col10a1-mCherry male and female mice were used to establish timed matings, and at E15.5 pregnant females were euthanized to acquire embryos. At this time point, chondrocytes are easily extracted from the surrounding extracellular matrix for ATAC-seq with negligible effects on the epigenome (Guo et al., 2017). Embryos were dissected under a microscope in 1 X PBS on ice and the proximal and distal portions of the right and left femur and tibia of the hind limb were stripped clear of soft tissues. Each proximal or distal cartilaginous end comprising of the articular chondrocytes, epiphyseal chondrocytes, and metaphyseal chondrocytes was then micro-dissected from the bony diaphysis and separately pooled from a single litter, consisting on average of eight animals. All samples were collected in micro-centrifuge Eppendorf tubes containing 200 mL 5% FBS/DMEM. To generate a single-cell chondrocyte suspension, each pooled sample was then subjected to 1% Collagenase II (Worthington Biochemical, LS004176) digestion for 2 hrs at 37 °C rocking, mixing every 30 min. After placing on ice, samples were next filtered using a micro-centrifuge filter set-up by gently mashing the residual tissues through the filter followed by rinsing with 5% FBS/DMEM. Samples were then spun down at 500 × g at 4 °C for 5 min. Col2a1-ECFP or Col10a1-mCherry positive chondrocytes were collected by fluorescence-activated cell sorting (FACS) using BD FACS Aria Cell Sorters at Harvard University Bauer Core Facility (HUBCF). All chondrocyte counting methods were performed using trypan blue and a hemocytometer and subsequent ATAC-seq steps were performed on collected chondrocyte samples that had cell death rates well below 10%. On average we acquired 150,000–200,000 living cells for Col2a1-ECFP positive chondrocytes per harvest; and acquired 2500–5000 living cells for Col10a1-mCherry positive chondrocytes per harvest. Next, cells were re-suspended in concentrations of 50,000 cells in 1 x PBS for CFP-positive chondrocytes; and entire mCherry-positive chondrocytes were resuspended in PBS for the next step of ATAC-seq process. Cell samples were then subjected to the ATAC-seq protocol as described previously Buenrostro et al., 2015; Buenrostro et al., 2013, modifying the protocol by using 2 µl of transposase per reaction. The transposase reaction product was then purified using the Omega MicroElute DNA Clean Up Kit following manufacturer’s protocols, eluted in 10 µl of warmed ddH20, and stored at –20 °C. All samples were next subjected to PCR amplification and barcoding following Buenrostro et al., 2015; Buenrostro et al., 2013. Ten microliters of transposed DNA were then placed in a reaction containing NEBNext High-Fidelity PCR Master Mix, ddH20, and primers. Because of the low cell number for Col10a1-mCherry positive chondrocytes, additional PCR cycles of PCR amplification are needed to generate enough PCR fragments for the next steps of ATAC-seq. To determine the optimal number of cycles to amplify the library with minimal artifacts associated with saturation PCR of complex libraries, the appropriate number of PCR cycles is determined using qPCR to stop amplification prior to saturation (Buenrostro et al., 2015; Buenrostro et al., 2013). Following amplification, samples were transferred to new tubes and treated using the OMEGA Bead Purification Protocol following the manufacturer’s instructions. The samples were eluted in 30 ml of TE, nano-dropped, diluted to 5 ng/ml, and run on a Bioanalyzer. Prior to sequencing, sample concentrations were determined using the KAPA Library Quantification Complete Kit (KK4824). Samples were then sent out to the Harvard University Bauer Core Facility for sequencing on one lane of the Illumina NextSeq 500. Sequencing yielded ~400 million reads per lane and an average of 50 million per sample.
 
 Sequence read quality was checked with FastQC and subsequently aligned to the mouse reference mm10 genome assembly with Bowtie2 v2.3.2 (Langmead and Salzberg, 2012) using default parameters for paired-end alignment. Reads were filtered for duplicates using picard (https://github.com/broadinstitute/picard; version 2.18.12; RRID:SCR_006525) and subsequently used for peak calling using MACS2 (Zhang et al., 2008) (version 2.1.1.2) with the following flags: ‘bampe call -f BAMPE –nolambda.’ Reproducible called peaks were defined using an IDR threshold of <0.05, as defined by the IDR statistical test (Li et al., 2011) (version 2.0.3). However, the Col10a1 datasets, for which we noted elevated levels of cell death prior to ATAC-seq (possibly attributable to the hypertrophic nature of these cells) had substantially greater variability across samples compared to our Col2a1 datasets. Thus, for Col10a1 called peaks (peak calls are available through GEO datasets), we used a less stringent approach to replicate consolidation – requiring that a called peak is overlapped in at least two different samples (using bedtools intersect) in order to be considered for subsequent analyses.
 
-## Chromatin immunoprecipitation – quantitative PCR (ChIP-qPCR)
+### Chromatin immunoprecipitation – quantitative PCR (ChIP-qPCR)
 
 Chromatin preparation, ChIP, and qPCR were performed at Active Motif (Carlsbad, CA). In brief, hESC-derived articular and growth plate chondrocytes were isolated from their respective cartilage tissues, fixed with 1% formaldehyde for 15 min, and quenched with 0.125 M glycine. Chromatin was isolated by the addition of lysis buffer, followed by disruption with a Dounce homogenizer. Lysates were sonicated and the DNA sheared to an average length of 300–500 bp using the EpiShear Probe Sonicator (Active Motif, cat # 53051) with an EpiShear Cooled Sonication Platform (Active Motif, cat # 53080). Genomic DNA (Input) was prepared by treating aliquots of chromatin with RNase, proteinase K, and heat for de-crosslinking (overnight at 65 °C) followed by ethanol precipitation and SPRI bead clean up (Beckman Coulter). The resulting DNA was quantified by Clariostar (BMG Labtech). Extrapolation to the original chromatin volume allowed quantitation of the total chromatin yield.
 

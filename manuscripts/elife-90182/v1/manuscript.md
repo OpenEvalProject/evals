@@ -17,11 +17,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01y0j0j86 School of Automation, Northwestern Polytechnical University Xi’an China
-2. https://ror.org/04qr3zq92 School of Life Science and Technology, MOE Key Lab for Neuroinformation, University of Electronic Science and Technology of China Chengdu China
-3. https://ror.org/00z3td547 School of Information Technology, Northwest University Xi'an China
-4. https://ror.org/04z4wmb81 College of Science, North China University of Science and Technology Tangshan China
-5. https://ror.org/00te3t702 Cortical Architecture Imaging and Discovery Lab, Department of Computer Science and Bioimaging Research Center, University of Georgia Athens United States
+1. School of Automation, Northwestern Polytechnical University Xi’an China ([ROR:01y0j0j86](https://ror.org/01y0j0j86))
+2. School of Life Science and Technology, MOE Key Lab for Neuroinformation, University of Electronic Science and Technology of China Chengdu China ([ROR:04qr3zq92](https://ror.org/04qr3zq92))
+3. School of Information Technology, Northwest University Xi'an China ([ROR:00z3td547](https://ror.org/00z3td547))
+4. College of Science, North China University of Science and Technology Tangshan China ([ROR:04z4wmb81](https://ror.org/04z4wmb81))
+5. Cortical Architecture Imaging and Discovery Lab, Department of Computer Science and Bioimaging Research Center, University of Georgia Athens United States ([ROR:00te3t702](https://ror.org/00te3t702))
 
 † Corresponding author
 
@@ -41,13 +41,39 @@ In this investigation, shared and unique peak clusters across individuals and sp
 
 ## Results
 
-## Locations of shared and unique peak clusters
+### Locations of shared and unique peak clusters
 
 To obtain shared and unique gyral peaks between species, peak clusters were first extracted for each species. The definition of peaks and the method for extracting peak clusters within each species are described in the Materials and methods section. Subsequently, a cross-species registration method (Xu et al., 2020) was applied to align the macaque peak clusters onto the human brain surface. Figure 1a top and middle panels display the locations of all peak clusters found in both human and macaque brains (Human: LH-96, RH-96; Macaque: LH-42, RH-43). Then the cross-species registration method (Xu et al., 2020) was utilized to register the peak clusters of the macaque brain onto the human brain surface (Figure 1a bottom panel uses the same color-coding as the macaque surface to represent the same cluster). Next, based on the definition of shared peak clusters (see Materials and methods), shared and unique gyral peaks between the two species were identified. Figure 1b shows the locations of shared peak clusters between the two species, with 25 shared peaks in the left hemisphere while 26 in the right (the locations of all human shared peaks are reported in Table 1). For the purpose of comparison, the shared gyral peak clusters of two species were displayed on the surface of the human brain template (Conte69, Van Essen et al., 2012b) with the same color coding for corresponding peak clusters on the two species. The results of shared peak clusters on the macaque surface template are placed in Supplementary Information. Figure 1c shows the locations of unique peak clusters found in each species, with 141 (LH-71, RH-70) unique peak clusters found in the human brain and 34 (LH-17, RH-17) found in the macaque brain. The unique peaks found in the human brain were mapped onto the Conte69, while those found in the macaque brain were mapped onto the Yerkes19 (Van Essen et al., 2012a) template surface. It is worth noting that for each species, the union of the clusters in Figure 1b and Figure 1c is the same as the clusters in Figure 1a (including color).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/90182/elife-90182-fig1-v1.jpg)
 
 **Figure 1.:** (a) Top: 192 gyral peak clusters of human on human brain template (Conte69, Van Essen et al., 2012b). Middle: 85 gyral peak clusters of macaque on macaque brain template (Yerkes19, Van Essen et al., 2012a). Bottom: The results of mapping macaque gyral peak clusters on the human brain template by the cross-species registration (Xu et al., 2020). The same color of middle and bottom surface indicates the corresponding peak clusters. (b) Peak clusters shared by human and macaque (LH-25, RH-26). On the same hemisphere of the brain, the corresponding-colored regions on both human and macaque represent the corresponding shared peak clusters. In addition, the color of the left and right hemisphere clusters are not related. (c) Unique peak clusters of two species map on the surface of their respective surface template.
+
+**Table 1.**
+ The number of shared and unique peaks in lower- and higher-order brain networks of the two species.Lower-order networks include visual 1 (V1), visual 2 (V2), auditory (Aud), somatomotor (SMN), posterior multimodal (PMN), ventral multimodal (VMN), and orbito-affective networks (OAN), higher order networks include cingulo-opercular (CON), dorsal attention (DAN), language (Lan), frontoparietal (FPN), default-mode network (DMN).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Lower/Higher cortex</th>
+      <th>Human</th>
+      <th>Macaque</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Shared peak</td>
+      <td>33/18</td>
+      <td>29/22</td>
+    </tr>
+    <tr>
+      <td>Unique peak</td>
+      <td>37/104</td>
+      <td>14/20</td>
+    </tr>
+  </tbody>
+</table>
 
 To investigate the regions where shared and unique peaks are located, the Cole-Anticevic Brain-wide Network Partition (CA network, Ji et al., 2019) was utilized, which includes in total 12 functional networks (Figure 2a right panel) based on the MMP (multimodal parcellation, Glasser et al., 2016). The human Cole-Anticevic network was projected onto the macaque surface using the method described by Xu et al., 2020. This allowed for a qualitative comparison of the differences in the distribution of cluster centers between human and macaque. It is important to emphasize that while the shared peak clusters were obtained through cross-species registration, and the human brain network (Cole-Anticevic) was also transferred to the macaque surface using cross-species registration, it is still meaningful to compare the distribution of shared peak centers between humans and macaques. This is because the intersection of clusters (one of the definition of shared peak clusters) does not necessarily imply that the centers of peak clusters are located in the same brain region.
 
@@ -61,33 +87,365 @@ In general, to clarify the distribution of shared and unique peaks in the high-o
 
 While it is known where shared and unique peaks are distributed across different brain networks, the dominance of each type of peak within each networks remains unrevealed. Figure 2b reports the ratio between peak count and unique peak count for each network, such that the networks where the most shared or unique peaks are found can be easily highlighted. To mitigate potential imbalances in proportions caused by differences in the absolute numbers of each category (shared or unique) of peak, the proportions of peaks within their respective categories were utilized in the calculations. The pink and green color bins represent ratios of shared and unique peaks, respectively. The dark blue dashed line represents the 50% reference line. In general, from left to right in the figure, the ratio of shared peaks decreases gradually while the ratio of unique peaks increases, suggesting that shared peaks are more (>0.5, above the dashed line) on lower order networks (orange font), while unique peaks are generally more on higher order networks (blue font). In specific, in human brains, the brain networks with a higher abundance of shared peaks are Aud, VMN, V1, SMN, and V2; whereas in macaques, they are CON, VMN, V1, V2, FPN, and SMN. Again, in the human brains, the disparity between shared and unique peaks tends to be more significant (further away from the reference line), for both lower order and higher order networks, respectively. In contrast, in the macaque brains, the disparity between shared and unique peaks is less significant (closer to the reference line). The ratio of shared and unique peaks is around 0.5 for 6 out of all 10 networks (including both lower and higher order ones).
 
-## Consistency of unique/shared peak clusters
+### Consistency of unique/shared peak clusters
 
-In the previous researches, the inter-individual consistency of peaks is a measure to assess whether peaks exist consistently in different individuals (Zhang et al., 2022; Zhang et al., 2023). To explore the inter-individual consistency of shared and unique peak clusters in macaques and humans, the mean count covered by these clusters was calculated and normalized by the number of individuals, as presented in Figure 3a. In both human and macaque, the consistency of shared peak clusters is significantly greater than that of unique peak clusters (p<0.001, t-value=4.74 for human and 2.67 for macaque). Additionally, the overall consistency of peaks in the macaque brain is much higher than that in the human brain, indicating that the peaks in the different macaque brain are more concentrated in spatial distribution. Furthermore, linear regression analysis was performed on the average counts of all corresponding shared peak clusters of human and macaque. The horizontal and vertical axes of the Figure 3b represent the average count of shared peaks in the macaque and human brains, respectively. The Pearson correlation coefficient (PCC) of the inter-species consistency of the left and right brain is 0.20 and 0.26 (p>0.05 for all), respectively. The result of linear regression shows that there is a positive correlation in the inter-individual consistency of shared peaks between macaque and human brains, but it is not statistically significant (with R2 for the left and right brain are 0.07 and 0.01, respectively).
+In the previous researches, the inter-individual consistency of peaks is a measure to assess whether peaks exist consistently in different individuals (Zhang et al., 2022; Zhang et al., 2023). To explore the inter-individual consistency of shared and unique peak clusters in macaques and humans, the mean count covered by these clusters was calculated and normalized by the number of individuals, as presented in Figure 3a. In both human and macaque, the consistency of shared peak clusters is significantly greater than that of unique peak clusters (p<0.001, t-value=4.74 for human and 2.67 for macaque). Additionally, the overall consistency of peaks in the macaque brain is much higher than that in the human brain, indicating that the peaks in the different macaque brain are more concentrated in spatial distribution. Furthermore, linear regression analysis was performed on the average counts of all corresponding shared peak clusters of human and macaque. The horizontal and vertical axes of the Figure 3b represent the average count of shared peaks in the macaque and human brains, respectively. The Pearson correlation coefficient (PCC) of the inter-species consistency of the left and right brain is 0.20 and 0.26 (p>0.05 for all), respectively. The result of linear regression shows that there is a positive correlation in the inter-individual consistency of shared peaks between macaque and human brains, but it is not statistically significant (with $R^{2}$ for the left and right brain are 0.07 and 0.01, respectively).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/90182/elife-90182-fig3-v1.jpg)
 
 **Figure 3.:** (a) Mean peak count (± SD) covered by shared and unique peak clusters in two species. ***indicates p<0.001. The t-values for the t-tests in humans and macaques are 4.74 and 2.67, respectively. (b) Linear regression results of the consistency of peak clusters shared between macaque and human brains. The pink and blue colors represent the left and right hemispheres, respectively. The results of the linear regression are depicted in the figure. While there was a positive correlation observed in the consistency of gyral peaks between macaque and human, the obtained p-value for the fitted results exceeded the significance threshold of 0.05.
 
-## Anatomical features of shared and unique peaks
+### Anatomical features of shared and unique peaks
 
 The mean of the anatomical features of shared and unique peaks across all individuals of both species was calculated. The shared and unique peaks in each individual were obtained by calculating the intersection between the group-wise shared and unique clusters and the gyral peaks in each individual. It was found that, in both human or macaque, the sulcs and local surface area of shared peaks are larger than those of the unique peaks, but the curvatures are smaller. Due to issues with MRI data quality and technical limitations, only the white matter surface of the macaque brain was reconstructed, and the gray matter surface was not available. Therefore, it was not possible to calculate cortical thickness for the macaque dataset. Additionally, due to the unavailability of T2 data in the macaque dataset, the myelin feature was also missing. For the exclusive anatomical features of human, shared gyral peaks are located in cortical regions with thinner cortex but larger myelin in contrast of unique peaks (Table 2). The statistical analysis conducted using t-tests revealed that the p-values for shared and unique peaks of all features were less than 0.001, except for the local surface area of the macaque.
 
-## Functional connectivity characteristics of shared and unique peaks
+**Table 2.**
+ The mean (± SD) of anatomical features, as well as the p-values and t-values of the t-test between shared and unique peak clusters.In the t-test, n for human is 880 and for macaque is 591. The bold font is the one with the larger values of shared and unique peaks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="5">Human</th>
+      <th colspan="3">Macaque</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Sulc</th>
+      <th>Curv</th>
+      <th>Myelin</th>
+      <th>Thickness</th>
+      <th>Area</th>
+      <th>Sulc</th>
+      <th>Curv</th>
+      <th>Area</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Shared</td>
+      <td>0.93±0.05</td>
+      <td>0.31±0.02</td>
+      <td>1.85±0.10</td>
+      <td>2.71±0.14</td>
+      <td>1.19±0.09</td>
+      <td>0.86±0.03</td>
+      <td>0.55±0.03</td>
+      <td>0.94±0.44</td>
+    </tr>
+    <tr>
+      <td>Unique</td>
+      <td>0.79±0.05</td>
+      <td>0.32±0.01</td>
+      <td>1.83±0.11</td>
+      <td>2.94±0.12</td>
+      <td>1.09±0.05</td>
+      <td>0.80±0.04</td>
+      <td>0.58±0.03</td>
+      <td>0.91±0.17</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>t</td>
+      <td>58.43</td>
+      <td>–16.26</td>
+      <td>6.51</td>
+      <td>–36.67</td>
+      <td>30.43</td>
+      <td>6.07</td>
+      <td>–5.32</td>
+      <td>0.54</td>
+    </tr>
+  </tbody>
+</table>
+
+### Functional connectivity characteristics of shared and unique peaks
 
 Table 3 shows the mean (± SD) of node properties of the functional connectivity for all shared and unique peak clusters in human and macaque, including degree, strength, clustering coefficient (CC), betweenness, and efficiency. In general, the results demonstrate that shared peaks exhibit significantly (p<0.001) larger degree, strength, clustering coefficient, betweenness, and efficiency values than unique peaks (except for betweenness and efficiency of macaque) for the functional connectivity characteristics. The mean values of all node properties, as well as the p-values and t-values of the t-test between shared and unique peaks, are all displayed in Table 3. In addition, a comparison was made between shared and unique peaks on the structural connectivity matrix of the human brain, and the results are presented in Appendix 6—table 1 of the Supplementary Information (due to the poor tracking effect of dti fiber tractography in the macaque data, only the structural connection matrix of human brain was calculated).
 
-## Spatial relationship between peaks and functional regions
+**Table 3.**
+ The mean (± SD) functional connectivity characteristics, as well as the p-values and t-values of the t-test between shared and unique peak clusters of human and macaque.In the t-test, n for human is 880 and for macaque is 591. The bold font represent the larger values between the shared peak and unique peaks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Degree</th>
+      <th>Strength</th>
+      <th>CC</th>
+      <th>Betweeness</th>
+      <th>Efficiency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Human FC</td>
+      <td>Shared</td>
+      <td>141.13±30.46</td>
+      <td>52.27±22.84</td>
+      <td>0.20±0.07</td>
+      <td>1.87±0.74(×103)</td>
+      <td>0.25±0.07</td>
+    </tr>
+    <tr>
+      <td>Unique</td>
+      <td>119.88±18.03</td>
+      <td>44.35±15.24</td>
+      <td>0.19±0.05</td>
+      <td>1.46±0.43(×103)</td>
+      <td>0.24±0.06</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>t</td>
+      <td>7.78</td>
+      <td>5.24</td>
+      <td>3.94</td>
+      <td>4.42</td>
+      <td>3.37</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Macaque FC</td>
+      <td>Shared</td>
+      <td>136.60±21.89</td>
+      <td>43.74±8.85</td>
+      <td>0.18±0.05</td>
+      <td>2.00±0.50(×103)</td>
+      <td>0.25±0.07</td>
+    </tr>
+    <tr>
+      <td>Unique</td>
+      <td>134.69±23.51</td>
+      <td>43.30±8.15</td>
+      <td>0.17±0.05</td>
+      <td>2.18±0.60(×103)</td>
+      <td>0.24±0.07</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.001</td>
+      <td>&gt;0.05</td>
+    </tr>
+    <tr>
+      <td>t</td>
+      <td>2.98</td>
+      <td>5.01</td>
+      <td>2.64</td>
+      <td>–6.52</td>
+      <td>0.53</td>
+    </tr>
+  </tbody>
+</table>
+
+### Spatial relationship between peaks and functional regions
 
 To assess the relative spatial relationship between the two types of peaks and different brain regions, the number of brain regions where each type of peak appeared within a 3-ring neighborhood was calculated. Various types of brain atlases were utilized, including those based on functional, structural, and cytoarchitectural. These atlases are crucial because they contain diverse features of the brain, helping to identify spatial patterns of shared and unique peaks across multiple references. Table 4 and Table 5 present the results for 10 human brain atlases and 3 macaque brain atlases, respectively (results of all other human atlases are presented in Appendix 7—table 1). False discovery rate (FDR) correction was utilized for multiple comparisons, and the corrected p-values are reported in tables (n=880 for human and n=591 for macaque). The observation that more diverse brain regions around shared peaks than around unique peaks for multiple brain atlases with a median parcellation resolution (7 parcels to 300 parcels), demonstrating the robustness of the conclusion.
 
-## Gene analysis of shared and unique peak clusters based on Lasso
+**Table 4.**
+ The mean values (± SD) of brain regions that appeared within a 3-ring neighborhood for shared and unique peaks in 10 common human atlases.All the shared peaks in the table have a greater number of neighboring brain regions compared to the unique peaks. All p<0.001, false discovery rate (FDR) corrected.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Atlas Name</th>
+      <th>Glasser2016</th>
+      <th>Schaefer-100</th>
+      <th>Schaefer-200</th>
+      <th>Schaefer-300</th>
+      <th>Vosdewael-100</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Share Nbr</td>
+      <td>2.43±0.15</td>
+      <td>1.89±0.12</td>
+      <td>2.12±0.11</td>
+      <td>2.23±0.11</td>
+      <td>1.57±0.17</td>
+    </tr>
+    <tr>
+      <td>Unique Nbr</td>
+      <td>2.37±0.09</td>
+      <td>1.74±0.09</td>
+      <td>2.08±0.10</td>
+      <td>2.17±0.10</td>
+      <td>1.46±0.10</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>t</td>
+      <td>8.32</td>
+      <td>26.66</td>
+      <td>4.50</td>
+      <td>18.08</td>
+      <td>34.09</td>
+    </tr>
+    <tr>
+      <td>Atlas Name</td>
+      <td>Yeo2011(17)</td>
+      <td>Aparc</td>
+      <td>Aparc2009</td>
+      <td>BA</td>
+      <td>Cole-Anticevic</td>
+    </tr>
+    <tr>
+      <td>Share Nbr</td>
+      <td>1.76±0.11</td>
+      <td>1.58±0.12</td>
+      <td>1.95±0.13</td>
+      <td>1.58±0.12</td>
+      <td>1.65±0.11</td>
+    </tr>
+    <tr>
+      <td>Unique Nbr</td>
+      <td>1.73±0.08</td>
+      <td>1.33±0.07</td>
+      <td>1.94±0.09</td>
+      <td>1.29±0.08</td>
+      <td>1.57±0.07</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>t</td>
+      <td>22.29</td>
+      <td>56.37</td>
+      <td>3.80</td>
+      <td>69.84</td>
+      <td>22.44</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ The mean values (± SD) of brain regions that appeared within a 3-ring neighborhood for shared and unique peaks in 3 common macaque atlases.For both Markov91 and Cole-Anticevic atlas, the shared peaks has more variety of functional regions around it than the unique peaks. But for the altas BA05, the conclusion was reversed. The bold font represent the larger values between the shared peak and unique peaks. All p<0.001, false discovery rate (FDR) corrected.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Atlas Name</th>
+      <th>Markov91</th>
+      <th>Cole-Anticevic</th>
+      <th>BA05</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Share Nbr</td>
+      <td>2.73±0.27</td>
+      <td>1.77±0.17</td>
+      <td>1.61±0.16</td>
+    </tr>
+    <tr>
+      <td>Unique Nbr</td>
+      <td>2.16±0.15</td>
+      <td>1.58±0.16</td>
+      <td>1.80±0.16</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>t</td>
+      <td>–7.4</td>
+      <td>14.93</td>
+      <td>6.49</td>
+    </tr>
+  </tbody>
+</table>
+
+### Gene analysis of shared and unique peak clusters based on Lasso
 
 Finally, to study whether there are significant differences in gene expression between the two types of peaks, the surface-based gene expression dataset Allen Human Brain Atlas (AHBA) (Arnatkeviciute et al., 2019, Hawrylycz et al., 2012) was utilized, employing the widely used lasso method for gene selection. The preprocessed AHBA gene data is in the form of region×gene and the region above referred to the parcellation of a certain atlas, such as Aparc, Schaefer100, Schaefer500, Schaefer1000, etc. Finally, the Schaefer-500 atlas was selected for this study because high resolution may result in some areas with no gene data (more details refer to Arnatkeviciute et al., 2019), while low resolution may result in multiple categories of clusters being located in the same region. Therefore, Schaefer500 was chosen as the most suitable atlas for the analysis. Before using lasso for feature selection, the determination of the Lambda parameter is necessary to regulate the number of selected features. For parameter selection, 10-fold cross validation was employed. By considering the maximization of accuracy (acc) and minimization of mean squared error (MSE) simultaneously, the lambda value was ultimately determined to be 0.027 Figure 4 (Figure 5b). The accuracy of training set was 0.84, and the MSE was 0.64; The accuracy of test set was 0.75, and the MSE was 1.00. Finally, the Lasso method was utilized to select 28 genes with significant impacts on the classification of shared and unique peaks. Then the Welch’s t-tests was performed to compare the expression of the 28 genes in the shared and unique peak clusters. The gene list and the corresponding Welch’s t-tests results were shown in Appendix 8—table 1. Ultimately, seven genes showed significant differential expression between shared and unique peaks. These genes were PECAM1, TLR1, SNAP29, DHRS4, BHMT2, PLBD1, KCNH5. Brief descriptions of their functions are listed in Table 6. All gene functions descriptions were derived from the NCBI website (https://www.ncbi.nlm.nih.gov/).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/90182/elife-90182-fig4-v1.jpg)
 
 **Figure 4.:** The two rows represent the human brain and the macaque brain, respectively. (a) Shows the locations of all extracted peaks in an individual. (b) Due to resampling of the human and macaque surface, there is a vertex-to-vertex correspondence between individuals. Therefore, all individual peaks were placed on the template brain surface and undergo isotropic smoothing, resulting in the count map shown in (b), where the highlighted regions indicate a higher frequency of peak occurrences across individuals. (c) shows the results of clustering the count map using watershed algorithm, resulting in peak clusters for both species. A total of 192 peak clusters were detected in the human brain, while 85 peak clusters were detected in the macaque brain.
+
+**Table 6.**
+ Seven genes were selected using LASSO that showed significant differential expression in shared and unique peaks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene symbol</th>
+      <th>Gene function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PECAM1</td>
+      <td>The protein encoded by this gene is found on the surface of platelets, monocytes, neutrophils, and some types of T-cells, and makes up a large portion of endothelial cell intercellular junctions. The encoded protein is a member of the immunoglobulin superfamily and is likely involved in leukocyte migration, angiogenesis, and integrin activation. [provided by RefSeq, May 2010]</td>
+    </tr>
+    <tr>
+      <td>TLR1</td>
+      <td>The protein encoded by this gene is a member of the Toll-like receptor (TLR) family which plays a fundamental role in pathogen recognition and activation of innate immunity. They recognize pathogen-associated molecular patterns (PAMPs) that are expressed on infectious agents, and mediate the production of cytokines necessary for the development of effective immunity. [provided by RefSeq, Jul 2008]</td>
+    </tr>
+    <tr>
+      <td>SNAP29</td>
+      <td>This gene, belonging to the SNAP25 gene family, encodes a protein involved in various membrane trafficking processes. Other members of this gene family, such as SNAP23 and SNAP25, encode proteins that bind to a syntaxin protein and facilitate the docking and fusion of synaptic vesicle membranes with the plasma membrane. [provided by RefSeq, Jul 2008]</td>
+    </tr>
+    <tr>
+      <td>DHRS4</td>
+      <td>Exhibits protein binding and oxidoreductase activities, involved in cellular metabolic processes including ketone metabolism, regulation of reactive oxygen species, and steroid metabolism. Found in the nucleus and peroxisomal membrane. [provided by Alliance of Genome Resources, Apr 2022]</td>
+    </tr>
+    <tr>
+      <td>BHMT2</td>
+      <td>Homocysteine, a sulfur-containing amino acid, is crucial for methylation reactions. The protein encoded by this gene is one of two methyltransferases that facilitate the transfer of a methyl group from betaine to homocysteine. Irregularities in homocysteine metabolism have been linked to conditions ranging from vascular disease to neural tube birth defects. This gene has alternatively spliced transcript variants encoding different isoforms.[provided by RefSeq, May 2010]</td>
+    </tr>
+    <tr>
+      <td>PLBD1</td>
+      <td>Predicted to enable phospholipase activity. Predicted to be involved in phospholipid catabolic process. Located in extracellular space. [provided by Alliance of Genome Resources, Apr 2022]</td>
+    </tr>
+    <tr>
+      <td>KCNH5</td>
+      <td>This gene encodes a member of voltage-gated potassium channels. Members of this family have diverse functions, including regulating neurotransmitter and hormone release, cardiac function, and cell volume. This protein is an outward-rectifying, noninactivating channel. Alternative splicing results in multiple transcript variants. [provided by RefSeq, Jul 2013]</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/90182/elife-90182-fig5-v1.jpg)
 
@@ -113,50 +471,50 @@ Using lasso regression, 28 genes were screened on the cortex, identifying signif
 
 ## Materials and methods
 
-## Dataset description
+### Dataset description
 
-## Human MRI
+#### Human MRI
 
-In this study, the Human Connectome Project (HCP) S900 Subjects MR imaging data from Q3 Release (https://www.humanconnectome.org/). The data was obtained from the Q3 Release and all participants involved provided written informed consent and the study was approved by the relevant institutional review boards. The MR images were acquired by a Siemens ‘Connectome Skyra’ 3T scanner housed at Washington University in St Louis using a 32-channel head coil. For T1-weighted MRI: TR = 2400 m⁢s, TE = 2.14 m⁢s, flip angle = 8 d⁢e⁢g, FOV = 224× 224 m⁢m and resolution = 0.7×0.7×0.7 m⁢m3. T2-weighted MRI: TR = 3200 m⁢s, TE = 565 m⁢s and resolution = 0.7×0.7×0.7 m⁢m3. Diffusion MRI (dMRI): TR = 5520 m⁢s, TE = 89.5 m⁢s, refocusing flip angle = 160 d⁢e⁢g, flip angle = 78 d⁢e⁢g, FOV = 210×180 m⁢m, matrix = 168×144, resolution = 1.25×1.25×1.25 m⁢m3, 1.25 m⁢m isotropic voxels, echo spacing = 0.78 m⁢s, BW = 1,488 H⁢z/P⁢x. Resting state fMRI (rfMRI): TR = 720 m⁢s, TE = 33.1 m⁢s, flip angle = 52 d⁢e⁢g, FOV = 208×180 m⁢m, matrix = 104×90, 1200 time points, 2.0 m⁢m isotropic voxels, BW = 2,290 H⁢z/P⁢x.
+In this study, the Human Connectome Project (HCP) S900 Subjects MR imaging data from Q3 Release (https://www.humanconnectome.org/). The data was obtained from the Q3 Release and all participants involved provided written informed consent and the study was approved by the relevant institutional review boards. The MR images were acquired by a Siemens ‘Connectome Skyra’ 3T scanner housed at Washington University in St Louis using a 32-channel head coil. For T1-weighted MRI: TR = 2400 $m⁢s$, TE = 2.14 $m⁢s$, flip angle = 8 $d⁢e⁢g$, FOV = 224× 224 $m⁢m$ and resolution = 0.7×0.7×0.7 $m⁢m^{3}$. T2-weighted MRI: TR = 3200 $m⁢s$, TE = 565 $m⁢s$ and resolution = 0.7×0.7×0.7 $m⁢m^{3}$. Diffusion MRI (dMRI): TR = 5520 $m⁢s$, TE = 89.5 $m⁢s$, refocusing flip angle = 160 $d⁢e⁢g$, flip angle = 78 $d⁢e⁢g$, FOV = 210×180 $m⁢m$, matrix = 168×144, resolution = 1.25×1.25×1.25 $m⁢m^{3}$, 1.25 $m⁢m$ isotropic voxels, echo spacing = 0.78 $m⁢s$, BW = 1,488 $H⁢z/P⁢x$. Resting state fMRI (rfMRI): TR = 720 $m⁢s$, TE = 33.1 $m⁢s$, flip angle = 52 $d⁢e⁢g$, FOV = 208×180 $m⁢m$, matrix = 104×90, 1200 time points, 2.0 $m⁢m$ isotropic voxels, BW = 2,290 $H⁢z/P⁢x$.
 
 The standard HCP MR structural pipelines (Glasser et al., 2013; Fischl, 2012; Jenkinson et al., 2002; Jenkinson et al., 2012) were applied for processing all structural MR images. It mainly includes the following three main steps: (1) PreFreeSurfer pipeline (Jovicich et al., 2006; van der Kouwe et al., 2008; Smith, 2002) which corrected for image distortion, aligned and averaged T1w and T2w images and registered the subject’s native structural volume space to MNI space. (2) FreeSurfer pipeline (Dale et al., 1999; Fischl et al., 2002; Fischl et al., 1999; Ségonne et al., 2005) including segmentation of brain volume, reconstruction of white matter and pial surfaces, and registering to fsaverage surface atlas; (3) PostFreeSurfer pipeline, including surface registration to the Conte69 surface template (Van Essen et al., 2012b) by using MSM-All algorithm (Glasser et al., 2016; Robinson et al., 2018; Robinson et al., 2014). In this step, cortical folding, myelin maps, and resting state fMRI (rfMRI) correlations together for registration, which improved the cortical correspondences across different subjects. For this study, the white matter cortical surface with 64,984 vertices after MSM-All registration and the associated cortical folding features such as sulc, myelin, and cortical thickness, were adopted for cross-subjects analysis. For the diffusion MRI (dMRI) data, fiber tractography was performed using MRtrix3 (Tournier et al., 2019, https://www.mrtrix.org). Each individual had 40,000 fiber tracts reconstructed. A maximum length limit of 150 mm was defined to reduce the presence of false positives (Varriano et al., 2018).
 
-## Gene expression data
+#### Gene expression data
 
 The AHBA microarray gene expression data consists of 3702 samples from six typical adult human brains. Several hundred samples (mean ± standard deviation: 617±241) were collected from cortical, subcortical, brainstem and cerebellar regions in each brain to profile genome-wide gene expression. In the AHBA, each gene probe is associated with a numerical ID and a platform-specific label or name. If a probe is assigned to represent a unique gene it is also characterized with a range of gene-specific labels such as gene symbol and an Entrez Gene ID–a stable identifier for a gene generated by the Entrez Gene database at the National Center for Biotechnology Information (NCBI). The probe-level data offer high-resolution coverage of nearly the entire brain, providing expression measures for over 20,000 genes from 3702 spatially distinct tissue samples. The AHBA data is available at figshare https://figshare.com/s/441295fe494375aa0c13. The AHBA dataset has been preprocessed, and detailed information can be referred to Arnatkeviciute et al., 2019. The first six processing steps produce the region×gene matrix that can be used for the regional analyses.
 
-## Macaques MRI
+#### Macaques MRI
 
-Rhesus macaque monkeys’ structural and functional MR imaging data aging from 0.8 to 4.5 years were selected from the non-human primate (NHP) consortium PRIME-DE from University of Wisconsin–Madison (http://fcon_1000.projects.nitrc.org/indi/indiPRIME.html). The full dataset consisted of 592 rhesus macaque monkeys (Macaca mulatta) scanned on a 3T with a 4-channel coil. For T1-weighted MRI: TR = 11.4 m⁢s, TE = 5.41 m⁢s, flip angle = 10 d⁢e⁢g, image matrix = 512×248×512 and resolution = 0.27× 0.50×0.27 m⁢m3. The rsfMRI data were preprocessed based on DPARSF, which included slice timing, realignment, covariant regression, band-pass filtering (0.01–0.1 H⁢z), and smoothing (FWHM = 4 m⁢m). T1w images were fed into CIVET, registering them into the NMT-standardized space (Seidlitz et al., 2018) using an affine transformation, followed by image resampling and tissue segmentation. The reconstructed white matter cortical surface was obtained using Freesurfer. The surfaces were resampled to 40 k vertices to ensure vertex-to-vertex correspondence across subjects through spherical registration. After linear registration between fMRI and T1w MRI via FLIRT, the volume time-series were mapped to surface vertices for further analysis.
+Rhesus macaque monkeys’ structural and functional MR imaging data aging from 0.8 to 4.5 years were selected from the non-human primate (NHP) consortium PRIME-DE from University of Wisconsin–Madison (http://fcon_1000.projects.nitrc.org/indi/indiPRIME.html). The full dataset consisted of 592 rhesus macaque monkeys (Macaca mulatta) scanned on a 3T with a 4-channel coil. For T1-weighted MRI: TR = 11.4 $m⁢s$, TE = 5.41 $m⁢s$, flip angle = 10 $d⁢e⁢g$, image matrix = 512×248×512 and resolution = 0.27× 0.50×0.27 $m⁢m^{3}$. The rsfMRI data were preprocessed based on DPARSF, which included slice timing, realignment, covariant regression, band-pass filtering (0.01–0.1 $H⁢z$), and smoothing (FWHM = 4 $m⁢m$). T1w images were fed into CIVET, registering them into the NMT-standardized space (Seidlitz et al., 2018) using an affine transformation, followed by image resampling and tissue segmentation. The reconstructed white matter cortical surface was obtained using Freesurfer. The surfaces were resampled to 40 k vertices to ensure vertex-to-vertex correspondence across subjects through spherical registration. After linear registration between fMRI and T1w MRI via FLIRT, the volume time-series were mapped to surface vertices for further analysis.
 
-## Peak cluster extraction
+### Peak cluster extraction
 
 Based on our previous work, gyral peaks are defined as the highest point of the gyri (Zhang et al., 2022). Gyral height was measured by ‘Sulc’ (https://surfer.nmr.mgh.harvard.edu/, Fischl, 2012), which was defined as the displacement from a vertex on the surface to a hypothetical mid-surface, which is between the gyri and sulci, and the ‘mean’ of displacements of all vertices is zero (Fischl et al., 1999). Thus, gyral peaks on individuals were identified by locating the vertex of the minimum sulc value within the x-ring (4-ring for humans, 3-ring for macaques) neighborhood on the grid (Zhang et al., 2022; Zhang et al., 2023). To obtain group-wise peak clusters, all gyral peaks in individual spaces of the two species were projected onto the respective template white matter surface, which produced a count map of peaks for each species. Of note, vertex-to-vertex correspondences were established across all surfaces within each species. Next, peak count maps of two species were processed by anisotropic smoothing, with n iterations within an k-ring neighborhood, as described in Meng et al., 2014; Zhang et al., 2023. Finally, the watershed clustering algorithm detailed in Meng et al., 2014; Rettmann et al., 2002; Yang and Kruggel, 2008; Zhang et al., 2023 was applied to the smoothed count map to automatically generate group-wise peak clusters for each species. Notably, the selection of parameters for anisotropic smoothing and watershed clustering algorithm were based on the previous work (Zhang et al., 2022; Zhang et al., 2023). Parameters of these three steps (individual peak extraction, anisotropic smoothing and watershed clustering algorithm) on two species are reported in the Supplementary Information. In total, 192 (LH: 96, RH: 96) and 85 (LH: 42, RH: 43) peak clusters were detected on Humans and macaques, respectively (Figure 1a).
 
-## Cross-species registration
+### Cross-species registration
 
 To elucidate the inter-species relationship of group gyral peaks between humans and macaques, a functional joint alignment technique (Xu et al., 2020) was employed to project macaque peak clusters onto the human cortical surface. They first constructed a joint similarity matrix by concatenating within- and cross-species similarities of connectivity patterns. Next, the diffusion embedding algorithm applied on the similarity matrix. Finally, gradients as surface features, and the cortical surfaces of humans and macaques were aligned using Multimodal Surface Matching (MSM) (Robinson et al., 2014). This technique builds upon recent advances in high-dimensional common space representations of functional organization and offers a transformational framework between human and macaque cortices.
 
-## Definition of shared and unique peak clusters
+### Definition of shared and unique peak clusters
 
-After the cross-species registration mentioned above, the group-wise gyral peak clusters of the two species were placed on the same template surface. The determination of peak clusters that are shared between species involves two criteria: (1) the Dice of clusters >0; and (2) the geodesic distance between the centers of the two clusters is less than 7 m⁢m. If a pair of clusters satisfies either one of these two criteria, they can be identified as peak clusters that are shared between species. The difference set between all peaks of the two species and the shared peaks is the set of unique peaks for each species.
+After the cross-species registration mentioned above, the group-wise gyral peak clusters of the two species were placed on the same template surface. The determination of peak clusters that are shared between species involves two criteria: (1) the Dice of clusters >0; and (2) the geodesic distance between the centers of the two clusters is less than 7 $m⁢m$. If a pair of clusters satisfies either one of these two criteria, they can be identified as peak clusters that are shared between species. The difference set between all peaks of the two species and the shared peaks is the set of unique peaks for each species.
 
-## Statistical analysis
+### Statistical analysis
 
 All variables used in the two-samples t-test follow a normal distribution and all p-values were corrected for multiple comparisons using the false discovery rate (FDR) method. Moreover,in order to identify differently expressed genes within shared and unique peaks, and considering the unequal sample sizes for shared and unique peaks, the Welch’s t-test was employed, which is suitable for this scenario. For all tests, a p-value <0.05 was considered significant (FDR corrected).
 
-## Anatomical features of gyral peaks
+### Anatomical features of gyral peaks
 
-The anatomical characteristics of shared and unique gyral peaks were analyzed, including sulc, curvature (the amount of bending at a point on a convoluted surface), thickness (the distance from the point on the pial surface to the nearest point on the white surface Fischl and Dale, 2000) myelin, and local surface area (The calculation that the average area of all triangles in the neighborhood of vertex i is Si. The local surface area of vertex i is the mean neighborhood area Si divided by the mean of all vertices in the whole brain S¯).
+The anatomical characteristics of shared and unique gyral peaks were analyzed, including sulc, curvature (the amount of bending at a point on a convoluted surface), thickness (the distance from the point on the pial surface to the nearest point on the white surface Fischl and Dale, 2000) myelin, and local surface area (The calculation that the average area of all triangles in the neighborhood of vertex $i$ is $S_{i}$. The local surface area of vertex $i$ is the mean neighborhood area $S_{i}$ divided by the mean of all vertices in the whole brain $S¯$).
 
-## Functional and structural connectivity
+### Functional and structural connectivity
 
-The white matter surface (excluding the regions between two hemispheres) was parcellated into 1400 patches for human and 1700 patches for macaque (He et al., 2022) due to the number of vertices on the surface. A structural connective graph Gs={V,Es,As} and a functional connective graph Gf={V,Ef,Af} were constructed for each subject. Graph nodes vs and vf were defined as cortical patches of the same area. For human individual structural connectivity matrix As, asi⁢j represents the fiber count connecting the two nodes. For human and macaque individual functional connectivity matrices, the Pearson correlation coefficient (PCC) between the average time-series between two nodes vfi and vfj was calculated, followed by Fisher’s z-transformation. Due to the vertex-to-vertex correspondences across individual surfaces of each species, the patches (or nodes) had cross-subject correspondences as well. On this basis, the structural and functional connectivity matrices of each subject were averaged to obtain a group-average structural and functional connectivity matrix A¯s and A¯f. Then, for each row in the group-average functional connectivity matrix, the values of the top 10% of connections were retained, whereas all others were zeroed. On this group-average graph, nodal graph metrics, including degree, strength, clustering coeﬀicient, betweeness, and efficiency, were computed using the Brain Connectome Toolkit (https://sites.google.com/site/bctnet/). The definitions of these network properties are detailed in the Supplementary Information.
+The white matter surface (excluding the regions between two hemispheres) was parcellated into 1400 patches for human and 1700 patches for macaque (He et al., 2022) due to the number of vertices on the surface. A structural connective graph $G_{s}={V,E_{s},A_{s}}$ and a functional connective graph $G_{f}={V,E_{f},A_{f}}$ were constructed for each subject. Graph nodes vs and vf were defined as cortical patches of the same area. For human individual structural connectivity matrix $A_{s}$, $a_{s}^{i⁢j}$ represents the fiber count connecting the two nodes. For human and macaque individual functional connectivity matrices, the Pearson correlation coefficient (PCC) between the average time-series between two nodes $v_{f}^{i}$ and $v_{f}^{j}$ was calculated, followed by Fisher’s z-transformation. Due to the vertex-to-vertex correspondences across individual surfaces of each species, the patches (or nodes) had cross-subject correspondences as well. On this basis, the structural and functional connectivity matrices of each subject were averaged to obtain a group-average structural and functional connectivity matrix $A¯_{s}$ and $A¯_{f}$. Then, for each row in the group-average functional connectivity matrix, the values of the top 10% of connections were retained, whereas all others were zeroed. On this group-average graph, nodal graph metrics, including degree, strength, clustering coeﬀicient, betweeness, and efficiency, were computed using the Brain Connectome Toolkit (https://sites.google.com/site/bctnet/). The definitions of these network properties are detailed in the Supplementary Information.
 
-## Feature selection of genes
+### Feature selection of genes
 
-Since human gyral peaks were divided into peaks shared with macaque and peaks unique to human, the aim was to investigate the genes that are significantly different expressed between two types of gyral peak. The preprocessed AHBA gene data is in the form of region×gene and the region above referred to the parcellation of a certain atlas, such as Aparc, Schaefer100, Schaefer500, Schaefer1000, etc. The Schaefer500 atlas was selected for this study because high resolution may result in some areas with no gene data (more details refer to Arnatkeviciute et al., 2019), while low resolution may result in multiple categories of clusters being located in the same region. Therefore, Schaefer500 was chosen as the most suitable atlas for this work. First, all regions of Schaefer500 atlas were labeled as shared, unique, or other based on the positions of group-wise gyral peaks. Then, Lasso (a linear regression method that uses L1 regularization for gene selection) was applied on this labeled gene data. The cost function of Lasso regression is as follows: C⁢o⁢s⁢t⁢(w)=∑i=1N(yi-wT⁢xi)2+λ⁢||w||1. An important parameter of Lasso is lambda, which affects the sparsity of feature selection. Ten-fold cross-validation was employed to select the optimal lambda. By considering the maximization of accuracy (acc) and minimization of mean squared error (MSE) simultaneously, the lambda value was ultimately determined to be 0.027 (Figure 5b). The accuracy of training set was 0.84, and the MSE was 0.64; The accuracy of test set was 0.75, and the MSE was 1.00.
+Since human gyral peaks were divided into peaks shared with macaque and peaks unique to human, the aim was to investigate the genes that are significantly different expressed between two types of gyral peak. The preprocessed AHBA gene data is in the form of region×gene and the region above referred to the parcellation of a certain atlas, such as Aparc, Schaefer100, Schaefer500, Schaefer1000, etc. The Schaefer500 atlas was selected for this study because high resolution may result in some areas with no gene data (more details refer to Arnatkeviciute et al., 2019), while low resolution may result in multiple categories of clusters being located in the same region. Therefore, Schaefer500 was chosen as the most suitable atlas for this work. First, all regions of Schaefer500 atlas were labeled as shared, unique, or other based on the positions of group-wise gyral peaks. Then, Lasso (a linear regression method that uses L1 regularization for gene selection) was applied on this labeled gene data. The cost function of Lasso regression is as follows: $C⁢o⁢s⁢t⁢(w)=\sum_{i=1}^{N}(y_{i}-w^{T}⁢x_{i})^{2}+\lambda⁢||w||_{1}$. An important parameter of Lasso is lambda, which affects the sparsity of feature selection. Ten-fold cross-validation was employed to select the optimal lambda. By considering the maximization of accuracy (acc) and minimization of mean squared error (MSE) simultaneously, the lambda value was ultimately determined to be 0.027 (Figure 5b). The accuracy of training set was 0.84, and the MSE was 0.64; The accuracy of test set was 0.75, and the MSE was 1.00.
 
-## Data availability
+### Data availability
 
 All human data analyzed in this manuscript were obtained from the open-access HCP adult sample (https://www.humanconnectome.org/). Macaque data came from PRIME-DE (http://fcon_1000.projects.nitrc.org/indi/indiPRIME.html). Fiber tracking based on MRtrix3 (https://www.mrtrix.org). Full extraction process of gyral peaks of this work can be found at https://github.com/zsy0728/extract-gyral-peak (copy archived at Zhang, 2024).

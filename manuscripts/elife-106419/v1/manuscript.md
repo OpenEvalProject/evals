@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05vkpd318 La Jolla Institute for Immunology La Jolla United States
+1. La Jolla Institute for Immunology La Jolla United States ([ROR:05vkpd318](https://ror.org/05vkpd318))
 
 † Corresponding author
 

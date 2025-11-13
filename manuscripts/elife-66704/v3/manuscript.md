@@ -9,13 +9,13 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj54h04 Department of Molecular Biosciences, University of Texas at Austin Austin United States
+1. Department of Molecular Biosciences, University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
 
 † Corresponding author
 
 ## Abstract
 
-Failures of neural tube closure are common and serious birth defects, yet we have a poor understanding of the interaction of genetics and cell biology during neural tube closure. Additionally, mutations that cause neural tube defects (NTDs) tend to affect anterior or posterior regions of the neural tube but rarely both, indicating a regional specificity to NTD genetics. To better understand the regional specificity of cell behaviors during neural tube closure, we analyzed the dynamic localization of actin and N-cadherin via high-resolution tissue-level time-lapse microscopy during Xenopus neural tube closure. To investigate the regionality of gene function, we generated mosaic mutations in shroom3 , a key regulator or neural tube closure. This new analytical approach elucidates several differences between cell behaviors during cranial/anterior and spinal/posterior neural tube closure, provides mechanistic insight into the function of shroom3, and demonstrates the ability of tissue-level imaging and analysis to generate cell biological mechanistic insights into neural tube closure.
+Failures of neural tube closure are common and serious birth defects, yet we have a poor understanding of the interaction of genetics and cell biology during neural tube closure. Additionally, mutations that cause neural tube defects (NTDs) tend to affect anterior or posterior regions of the neural tube but rarely both, indicating a regional specificity to NTD genetics. To better understand the regional specificity of cell behaviors during neural tube closure, we analyzed the dynamic localization of actin and N-cadherin via high-resolution tissue-level time-lapse microscopy during Xenopus neural tube closure. To investigate the regionality of gene function, we generated mosaic mutations in shroom3, a key regulator or neural tube closure. This new analytical approach elucidates several differences between cell behaviors during cranial/anterior and spinal/posterior neural tube closure, provides mechanistic insight into the function of shroom3, and demonstrates the ability of tissue-level imaging and analysis to generate cell biological mechanistic insights into neural tube closure.
 
 ## Introduction
 
@@ -37,9 +37,17 @@ Here, we used image-tiling time-lapse confocal microscopy to obtain over 750,000
 
 ## Results and discussion
 
-## High-content imaging of cell behavior and protein localization during vertebrate neural tube closure
+### High-content imaging of cell behavior and protein localization during vertebrate neural tube closure
 
 X. tropicalis affords several advantages for imaging neural tube closure, as its cells are large and easily accessible; its culture conditions for imaging are no more complex than synthetic pond water held at room temperature; and its broad molecular manipulability allows examination of diverse fluorescent markers. We developed methods for confocal microscopy and image tiling to collect high-magnification datasets spanning broad regions of the folding neural ectoderm from embryos injected at blastula stages with mRNAs encoding fluorescent reporters (Figure 1A). At the onset of neurulation (approximately Nieuwkoop and Faber, 1994; Nieuwkoop and Faber, 1994, stages 12.5–13), embryos were positioned to image either the anterior or the posterior regions of the neural ectoderm. We then established a pipeline by which cells captured in our movies were segmented using Tissue Analyzer, CSML, and EPySeg (Aigouy et al., 2020; Aigouy et al., 2016; Ota et al., 2018), yielding a map of both the apical cell surfaces and all individual junctions (Figure 1B). Finally, we built pipelines to process these data with Tissue Analyzer (Aigouy et al., 2010; Aigouy et al., 2016) and Fiji (Schindelin et al., 2012) to quantify both cell behaviors and the localization of fluorescent protein reporters across the neural plate and across neurulation.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic of mRNA injections and subsequent imaged regions of the Xenopus tropicalis embryo. (B) Cell segmentation and tracking workflow. Binary segmentation, cell surface tracking, and cell junction tracking were all generated using Tissue Analyzer. (C) Example Xenopus cells with analyzed subcellular domains labeled. Orange label = medial, cyan labels = junctional/junctions. (D) Schematic and N values of whole cell measurements. (E) Schematic and N values of individual cell junction measurements.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Raw data for apical area (converted to square microns) of an individual cell over time. (B) Apical area averaged/smoothed over 7 frames. (C) Smoothed data after mean-centering and standardization. (D’) Apical area (square microns) versus time of all cells from a control embryo displayed as a density plot. The green dots are from the same cell as displayed in B. (D”) The same cells as D’ after mean-centering and standardization of each cell track. The green dots are from the same cell as displayed in C. s.d. = standard deviations.
 
 With these methods in place, we considered three interrelated problems in neural tube closure biology: First, the incidence and form of NTDs differ widely between the brain and spinal cord (Nikolopoulou et al., 2017; Wallingford et al., 2013), yet our understanding of the dynamic cell behaviors in the two regions remains limited. Second, a unified mechanism for apical constriction has emerged in recent years involving the coordinated action of two discrete populations of actomyosin positioned either at apical cell-cell junctions or the medial apical cell surface (Coravos and Martin, 2016; Martin and Goldstein, 2014; Martin et al., 2009; Roh-Johnson et al., 2012), but the extent to which this model, developed in Drosophila and C. elegans, applies to vertebrates is unknown. Third, N-cadherin is essential for apical constriction in Xenopus (Nandadasa et al., 2009), but its functional interplay with junctional and/or medial actin is unknown. Accordingly, we made movies focused on either the anterior or posterior neural plate during neurulation, imaging the fluorescent actin biosensor LifeAct-RFP (Riedl et al., 2008; Figure 1A, magenta) and N-cadherin-GFP (Figure 1A), and independently quantified the mean fluorescent intensity of junctional and medial populations for both reporters (Figure 1C, D). To account for noise in these measurements, we have smoothed the data within individual cell tracks by averaging the data over a 7-frame window (Figure 1—figure supplement 1A, B).
 
@@ -51,19 +59,35 @@ We first performed an initial test of the validity of our approach, examining ou
 
 **Figure 2.:** (A) Overall change (Δ) in apical surface area (standardized) across anterior (left) and posterior (right) control embryos. (B) Overall change in medial LifeAct/actin localization (standardized) across anterior (left) and posterior (right) control embryos. Circle and triangle in A and B denote a representative cell for each embryo. Scale bars = 100 µm. (C) Standardized apical surface area (black) and medial actin (red) over time in representative cells from anterior (left/circle) and posterior (right/triangle). s.d. = standard deviation.
 
-## Distinct patterns of apical constriction behavior, actin assembly, and N-cadherin localization in anterior and posterior regions of the closing neural tube
+### Distinct patterns of apical constriction behavior, actin assembly, and N-cadherin localization in anterior and posterior regions of the closing neural tube
 
 Our dataset revealed several interesting trends. First, while bulk measurements showed a decrease in apical area in both anterior and posterior regions over time (Figure 3A), we observed distinct region-specific distributions for these changes. For example, in the anterior, the vast majority of cells displayed significant apical constriction, and this constriction proceeded gradually across neurulation (Figure 3A and A’, left). In the posterior, however, a much smaller proportion of posterior cells constricted and a substantial number actually dilated (Figure 3A, right). Moreover, constriction of cells in the posterior was initiated very late in neurulation and proceeded very rapidly (Figure 3A’, right).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig3-v3.jpg)
+
+**Figure 3.:** Tissue-level cell size and protein localization dynamics from control embryos in Figure 2. (X) Distribution of overall change (Δ) in displayed parameter (standardized) among cells from control embryos. Horizontal lines on density plots/violins indicate quartiles of distribution. Black circles are individual cells. Statistical comparisons performed by Kolmogorov-Smirnov (KS) test. (X’) 2D density plots of standardized variable versus time for all observations/cells in each control embryo in Figure 2. Green points are measurements from the representative cells denoted in Figure 2. s.d. = standard deviation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Xenopus tropicalis embryos were fixed in paraformaldehyde then stained with the monoclonal N-cadherin antibody mNCD-2. Increased medial N-cadherin localization is apparent as cells constrict.
 
 We further observed that both medial and junctional actin intensity generally increased over time in both regions, with their temporal progressions being reciprocal to the changes in apical area described above (Figure 3B, B’, C, and C’, right). Again, these distributions were significantly different between the anterior and posterior regions, with cells in the spine having a significantly more heterogeneous distribution of actin accumulation outcomes (Figure 3B, C, left).
 
 By far the most intriguing results related to the dynamics of N-cadherin localization, for which we observed two surprising patterns. First, in the anterior neural plate N-cadherin accumulated dramatically not only in the junctional region but also in the medial region (i.e. the free apical surface) (Figure 3D, D’, E and E’). Thus, N-cadherin localization closely parallels actin dynamics in the normal anterior neural plate. This result was surprising because classical cadherins such as N-cadherin are typically known for their action at cell-cell junctions. Nonetheless, immunostaining for endogenous N-cadherin in fixed embryos confirmed this medial accumulation in the apical surfaces of anterior neural ectoderm cells (Figure 3—figure supplement 1). Our dataset lacked the time resolution to determine precise patterns of N-cadherin movement during apical constriction, but in Z-projections of highly constricted cells, we observed N-cadherin signal not just coincident with, but also basal to, to the apical actin signal (Figure 4). This result is consistent with the emerging understanding of the cell-autonomous roles for cadherins in both actin organization and endocytosis (Ichikawa et al., 2020; Padmanabhan et al., 2017; Rebman et al., 2016; Sabatini et al., 2011; Sako et al., 1998; Wu et al., 2015).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig4-v3.jpg)
+
+**Figure 4.:** (A) XY (top row) and XZ (bottom row) projections of N-cadherin-GFP and LifeAct-RFP in the anterior neural ectoderm of a Xenopus tropicalis embryo. (B) XY (top panel) and XZ (bottom panel) projections of NCD-2 (monoclonal α-N-cadherin antibody) in the anterior neural ectoderm of a X. tropicalis embryo. Dashed cyan lines marks the position of the XZ projection.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Three time points of GFP-Shroom3ΔC-term and LifeAct-RFP in constricting neural ectoderm cells of a Xenopus embryo.
+
 The medial accumulation of both N-cadherin and actin led us to explore the localization of Shroom3 itself. No antibodies are available for Xenopus Shroom3, and gain-of-function effects during early development preclude analysis of tagged wild-type Shroom3 during neural tube closure. That said, ectopic Shroom3 clearly decorates both junctional and medial regions in diverse epithelial cells (Haigo et al., 2003; Kowalczyk et al., 2021; Lee et al., 2009). To gain insight into Shroom3 localization during neural tube closure, we imaged the localization of the a GFP-tagged Shroom3 construct lacking the c-terminal Rok-binding domain, similar to a construct previously used to explore Shroom dynamics in Drosophila (Farrell et al., 2017; Simões et al., 2014). In movies of the folding neural plate, the construct localized in a pattern essentially identical to actin, accumulating in both junctional and medial regions of the anterior neural plate (Figure 4—figure supplement 1).
 
 Finally, we observed a strikingly different trend in the posterior neural plate, where N-cadherin dynamics did not closely parallel actin dynamics. In fact, neither junctional nor medial N-cadherin displayed significant accumulation in the posterior neural plate during the period of observation (Figure 3D, E), despite robust actin accumulation in this region (Figure 3B, C). Together, these data provide a comprehensive, quantitative description of apical constriction, actin dynamics and N-cadherin localization in the anterior and the posterior neural plate during Xenopus neural tube closure. The data further suggest that the mechanisms linking actin and N-cadherin to apical surface area differ in the two regions.
 
-## Mosaic mutation of Shroom3 reveals distinct anterior and posterior phenotypes in the neural ectoderm
+### Mosaic mutation of Shroom3 reveals distinct anterior and posterior phenotypes in the neural ectoderm
 
 The differences in cell behaviors we observed between anterior and posterior neural ectodermal regions reflect the region-specific nature of NTDs in both humans and animal models. To explore the relationships in more detail, we next turned to loss-of-function manipulation of shroom3, which is implicated in human NTDs and has variably penetrant effects on anterior and posterior neural tube closure (Deshwar et al., 2020; Haigo et al., 2003; Hildebrand and Soriano, 1999; Lemay et al., 2015).
 
@@ -73,9 +97,25 @@ Using injection into the two dorsal-animal blastomeres at the 8-cell stage to ta
 
 We next performed more targeted injections to generate mosaic embryos. To do so, we labeled the neural plate by injection of fluorescent reporters into both dorsal blastomeres at the 4-cell stage, and then injected a mixture of shroom3-targeted sgRNA, Cas9 protein, and membrane-BFP mRNA into one dorsal blastomere of 8-cell stage embryos (Figure 5A and see Figure 5—figure supplement 1). We then identified shroom3 crispant cells via membrane-BFP localization (Figure 5B). Because cell junction behavior may be altered at mosaic cell-cell interfaces (i.e. junctions between a control and a crispant cell), we excluded this relatively small number of cells from our analysis. Importantly, this mosaic F0 CRISPR-based approach also generally recapitulated the known phenotype of Shroom3 loss, as we observed gross failure of anterior neural tube closure.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig5-v3.jpg)
+
+**Figure 5.:** (A) Schematic of mosaic F0 CRISPR/Cas9 injections in Xenopus tropicalis embryos. (B) Workflow of identification and analysis of mosaic F0 crispants. (C) Top row, distribution of initial area (square microns) of tracked cells from anterior (left) and posterior (right) embryos. Lower row, distribution of final area (square microns) of tracked cells. (D) Distribution of overall change (Δ) in apical area (standardized) from all cells/embryos. In C and D, horizontal lines on density plots/violins indicate quartiles of distribution. Black circles are individual cells. Statistical comparisons performed by Kolmogorov-Smirnov (KS) test. Cells situated along the mosaic interface were excluded from these analyses. s.d. = standard deviation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Gene model for shroom3 in Xenopus tropicalis per Xenbase. The sgRNA was designed to target the 5’ end of the second exon. (B) Fragment analysis to validate efficacy of sgRNA+ Cas9 injections. A 431 base pair genomic fragment of shroom3 at the sgRNA target site was generated by PCR from whole embryo lysates and subjected to capillary electrophoresis. Uninjected embryos that did not receive CRISPR reagents showed one band at 431 base pairs (left column, red dashed line). Embryos injected with shroom3 sgRNA+ Cas9 protein at various times and frequencies are displayed in right-hand columns, with the wild-type fragment size indicated by the red dashed line. Relative frequency of wild-type shroom3 fragment size is severely reduced in injected embryos. Each plot represents one embryo. (C) sgRNA controls. Embryos were injected with shroom3 sgRNA alone or sgRNA plus Cas9 protein into the dorsal blastomere at the 8-cell stage, as in the imaging experiments. Membrane-RFP mRNA was used as injection/lineage tracer. Red line segments indicate the posterior boundary of the hindbrain, which was used to calculate values in D. (D) Quantification of sgRNA controls. Hindbrain widths were measured at approximately stage 17 as indicated in C. Colors of individual points indicate clutch membership of each embryo. An average width of the hindbrain of uninjected embryos of each clutch was calculated, then all embryos in each clutch had their hindbrain width calculated as a ratio of that average. Density distribution violins were then calculated based on pooled clutches. Vertical lines on density plots/violins indicate quartiles of distribution. Statistical tests were calculated using t-test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Representative cells in Figures 5, 6, 8,, 9 are highlighted. Scale bar = 100 µm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Smoothed mean of medial LifeAct-RFP/actin fluorescent intensity across all imaged cells across time. (B) Smoothed mean of medial N-cadherin-GFP fluorescent intensity across all imaged cells across time. (C) Smoothed mean of apical surface area across all imaged cells across time. Red dashed box indicates frames where fluorescence values dropped temporarily. Cells were tracked through these frames, but the frames were removed from analyses of this embryo.
+
 At the level of cell behaviors, we observed a surprising difference in anterior and posterior phenotypes. In the anterior region, shroom3 crispant cells displayed significantly enlarged apical surfaces at the onset of our imaging (~stage 13), and this phenotype grew more severe over time (Figure 5C, left); the majority of cells not only failed to constrict but instead dilated (Figure 5D, left). In the posterior, however, the majority of shroom3 crispant cells still strongly constricted, though collectively they displayed a mildly significant defect in apical constriction (Figure 5C, D, right). Thus, the magnitude of apical constriction defects in shroom3 crispant cells reflects the penetrance of NTDs in the anterior and posterior regions (Haigo et al., 2003; Hildebrand and Soriano, 1999).
 
-## Loss of Shroom3 uncouples actin dynamics from N-cadherin localization in the anterior neural ectoderm
+### Loss of Shroom3 uncouples actin dynamics from N-cadherin localization in the anterior neural ectoderm
 
 Loss of Shroom3 disrupts apical actin assembly in the neural plate (Haigo et al., 2003; McGreevy et al., 2015), but the precise nature of this defect and whether or how it relates to junctional and/or medial actin is unknown. Likewise, N-cadherin is implicated in Shroom3 function and apical constriction (Lang et al., 2014; Nandadasa et al., 2009; Plageman et al., 2011b), but how this relates to actin dynamics is poorly defined. We therefore examined the relationship between apical constriction, actin dynamics, and N-cadherin dynamics, focusing first on the anterior neural plate.
 
@@ -87,13 +127,13 @@ We found that wild-type cells tended to increase both medial and junctional acti
 
 In contrast to this surprisingly modest change in actin intensity (Figure 6B, C), bulk measurements revealed that shroom3 crispant cells displayed a profound failure to accumulate both junctional and medial N-cadherin, and in fact the majority of cells actually reduced N-cadherin levels (Figure 6A, D, and E, blue violins). Moreover, this effect was far more pronounced for the medial population of N-cadherin (Figure 6D). Thus, loss of Shroom3 elicits a substantially more severe effect on the dynamics of N-cadherin than of actin, apparently uncoupling the two.
 
-## Shroom3 links actin and N-cadherin dynamics to effective apical constriction in the anterior neural ectoderm
+### Shroom3 links actin and N-cadherin dynamics to effective apical constriction in the anterior neural ectoderm
 
 To explore these surprising results in more detail, we directly compared changes in apical area with changes in actin and N-cadherin intensity for each cell individually. In 838 control cells, we observed that the vast majority displayed a strong reduction in apical area and a strong increase in both junctional and medial actin intensity (Figure 7A, B). As noted in the bulk statistics above, the majority of 147 shroom3 crispant cells displayed increased actin intensity; however, these crispant cells displayed a bimodal distribution of changes in apical area, with some cells constricting and other cells dilating, yet even cells that increased their apical area after loss of Shroom3 nonetheless accumulated medial and junctional actin (Figure 7A, B). Thus, loss of shroom3 does not lead to loss of apical actin in the anterior neural plate but rather to a reduced accumulation of apical actin.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig7-v3.jpg)
 
-**Figure 7.:** shroom3 crispant cells that fail to apically constrict.(A-D) 2D density plots of all observations of apical area versus medial (A) or junctional (B) LifeAct/actin or medial (C) or junctional (D) N-cadherin for all cells within each group. Percentages in white indicate the percentage of total cells in each quadrant. Statistical comparisons performed by Peacock test, a 2D implementation of the Kolmogorov-Smirnov (KS) test. Cells situated along the mosaic interface were excluded from these analyses. s.d. = standard deviation.
+**Figure 7.:** (A-D) 2D density plots of all observations of apical area versus medial (A) or junctional (B) LifeAct/actin or medial (C) or junctional (D) N-cadherin for all cells within each group. Percentages in white indicate the percentage of total cells in each quadrant. Statistical comparisons performed by Peacock test, a 2D implementation of the Kolmogorov-Smirnov (KS) test. Cells situated along the mosaic interface were excluded from these analyses. s.d. = standard deviation.
 
 N-cadherin localization follows a very different trend, with shroom3 crispant cells consistently displaying apical surface dilation over time coupled to a strong reduction in medial N-cadherin intensity over time (Figure 7C). Junctional N-cadherin followed a similar, if less robust, trend (Figure 7D). Thus, loss of shroom3 anteriorly results in a loss of medial and junctional N-cadherin.
 
@@ -101,17 +141,17 @@ An advantage of our large-scale approach is that correlations between parameters
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig8-v3.jpg)
 
-**Figure 8.:** shroom3 crispant cells.(A and B) 2D density plots of all observations of medial (A) or junctional (B) LifeAct/actin versus apical area for all cells within each group. (C and D) 2D density plots of all observations of medial (C) or junctional (D) LifeAct/actin versus N-cadherin at the same domain for all cells within each group. Red lines indicate best-fit line through the observations. Statistics (r and p) are calculated for Pearson’s correlation. Cells situated along the mosaic interface were excluded from these analyses. s.d. = standard deviation.
+**Figure 8.:** (A and B) 2D density plots of all observations of medial (A) or junctional (B) LifeAct/actin versus apical area for all cells within each group. (C and D) 2D density plots of all observations of medial (C) or junctional (D) LifeAct/actin versus N-cadherin at the same domain for all cells within each group. Red lines indicate best-fit line through the observations. Statistics (r and p) are calculated for Pearson’s correlation. Cells situated along the mosaic interface were excluded from these analyses. s.d. = standard deviation.
 
 Though further exploration of the issue will be required, our large-scale analysis nonetheless generates two interesting hypotheses. First, they suggest an extra-junctional role for medial N-cadherin in apical constriction in the anterior neural plate. Second, they suggest that shroom3 loss in the anterior neural plate does not prevent actin assembly per se, but rather uncouples medial actomyosin contractility from medial N-cadherin accumulation, and thus uncouples actin assembly from effective apical constriction.
 
-## A distinct mode of action for Shroom3 in the posterior neural plate
+### A distinct mode of action for Shroom3 in the posterior neural plate
 
 As noted above, shroom3 crispant cells in the posterior neural ectoderm displayed far milder defects in apical constriction over the period of imaging (Figure 5D, right). Nonetheless, Shroom3 loss can alone elicit low-penetrance spina bifida and can severely exacerbate spina bifida in combination with certain PCP mutants (Hildebrand and Soriano, 1999; McGreevy et al., 2015). We therefore explored our image data for insights into this phenotype. We found that both junctional and medial actin accumulated over the course of our imaging in control cells in the posterior neural ectoderm and as we observed anteriorly, both actin populations still increased in shroom3 crispant cells (Figure 9A–C, right). In striking contrast, N-cadherin intensity decreased, both medially and junctionally, in both control and shroom3 crispant cells (Figure 9A, D, and E). Thus, while actin accumulation was very slightly disrupted in posterior shroom3 cells, N-cadherin dynamics were essentially unaltered in posterior shroom3 cells.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig9-v3.jpg)
 
-**Figure 9.:** shroom3 disrupts actin dynamics in the posterior neural ectoderm.(A) Representative images of LifeAct/actin and N-cadherin-GFP (N-cad-GFP) localization in control cells (left) and shroom3 crispant cells (right) from the posterior region of the neural ectoderm. White asterisks mark the same cell in each embryo. Scale bar = 15 µm. (B) Distribution of overall change (Δ) in medial LifeAct/actin (standardized) from anterior cells. (C) Distribution of overall change (Δ) in junctional LifeAct/actin (standardized) from anterior cells. (D) Distribution of overall change (Δ) in medial N-cadherin (standardized) from anterior cells. (E) Distribution of overall change (Δ) in junctional N-cadherin-GFP (standardized) from anterior cells. In B-E, horizontal lines on density plots/violins indicate quartiles of distribution, black circles are individual cells, and statistical comparisons performed by Kolmogorov-Smirnov (KS) test.
+**Figure 9.:** (A) Representative images of LifeAct/actin and N-cadherin-GFP (N-cad-GFP) localization in control cells (left) and shroom3 crispant cells (right) from the posterior region of the neural ectoderm. White asterisks mark the same cell in each embryo. Scale bar = 15 µm. (B) Distribution of overall change (Δ) in medial LifeAct/actin (standardized) from anterior cells. (C) Distribution of overall change (Δ) in junctional LifeAct/actin (standardized) from anterior cells. (D) Distribution of overall change (Δ) in medial N-cadherin (standardized) from anterior cells. (E) Distribution of overall change (Δ) in junctional N-cadherin-GFP (standardized) from anterior cells. In B-E, horizontal lines on density plots/violins indicate quartiles of distribution, black circles are individual cells, and statistical comparisons performed by Kolmogorov-Smirnov (KS) test.
 
 Considering our data from the anterior neural plate above, these results suggest a fundamentally different relationship between actin, N-cadherin, and apical area in the posterior neural plate. A more granular view of the data revealed two results that reinforced this conclusion. First, the correlations between actin localization and apical area were much weaker in posterior control cells (Figure 10A, B) than in anterior control cells (Figure 8A, B), suggesting that apical constriction is mechanistically different between the anterior and posterior neural ectoderm. Second, loss of Shroom3 disrupted the actin/area correlation in both regions (Figures 8A, B, 10A, B), but this phenotype was much stronger in the anterior region, again consistent with the weaker shroom3 apical constriction phenotype in the posterior region (Hildebrand and Soriano, 1999; McGreevy et al., 2015). Finally, while medial and junctional N-cadherin were both strongly negatively correlated with apical area in wild-type anterior cells (Figure 7F, G), no correlation whatsoever was observed between N-cadherin and apical area in posterior cells (Figure 10C, D).
 
@@ -121,9 +161,17 @@ Considering our data from the anterior neural plate above, these results suggest
 
 Together, these results suggest a more complex relationship between actin, N-cadherin, and Shroom3 in the posterior neural plate as compared to the anterior. These results suggest that changes in apical constriction alone are unlikely to explain the role of Shroom3 in posterior NTDs. Instead, the result may reflect the complex interplay of Shroom3-mediated apical constriction and PCP-dependent convergent extension cell behaviors that affect cell-cell junction lengths specifically in the posterior neural plate (e.g. McGreevy et al., 2015; Nishimura et al., 2012).
 
-## Loss of Shroom3 elicits a subtle but consistent defect in polarized junction shrinking in the posterior neural plate
+### Loss of Shroom3 elicits a subtle but consistent defect in polarized junction shrinking in the posterior neural plate
 
 Our data suggest that changes in apical surface area are unlikely to explain shroom3-related posterior NTDs, so turned our attention to the 13,000 individual cell-cell junctions tracked in our dataset. We assessed the behavior of each junction by quantifying the change in length over time, and because junction behaviors during epithelial morphogenesis are frequently polarized with respect to the embryonic axes (Pinheiro and Bellaϊche, 2018), we next assigned orientations to all junctions in our dataset. Those with a mean orientation less than 45° were designated anteroposterior (AP), as they represent the anterior face of one cell abutting the posterior face of a neighboring cell; junctions with mean orientations greater than 45° were designated as mediolateral (ML) (Figure 11A).
+
+![Figure 11.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig11-v3.jpg)
+
+**Figure 11.:** (A) Junction orientation from posterior control embryo from Figure 2. Scale bars = 100 µm. (B) Distribution of overall change (Δ) in junction length (standardized) from the posterior neural ectoderm. Horizontal lines on density plots/violins indicate quartiles of distribution, black circles are individual cells, and statistical comparisons performed by Kolmogorov-Smirnov (KS) test. (C) 2D density plots of all observations of mean junction orientation over time versus overall change (Δ) in junction length (standardized) for all junctions within each group. Dashed cyan ellipses indicate areas of altered polarization between control and shroom3 crispant junctions. (D) 2D density plots of all observations of mean junction orientation over time versus overall change (Δ) in junction actin (standardized) for all junctions within each group. (E) 2D density plots of all observations of mean junction orientation over time versus overall change (Δ) in junction N-cadherin (standardized) for all junctions within each group. Percentages in white indicate the percentage of total cells in each quadrant. Statistical comparisons performed by Peacock test, a 2D implementation of the KS test. s.d. = standard deviation. (F) Example diagram of T1 transition/neighbor exchange within an epithelial tissue. (G) Distribution of stable T1 transitions/neighbor exchanges per cell as calculated by Tissue Analyzer. Horizontal lines on density plots/violins indicate quartiles of distribution, black circles are individual cells, and statistical comparisons performed by KS test. (H) Histogram showing relative frequencies of mean junction orientation from shrinking (Δ length < 0, upper panels) and growing (Δ length > 0, lower panels) posterior junctions. Compare to 11C. Statistical comparisons performed by KS test.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/66704/elife-66704-fig11-figsupp1-v3.jpg)
+
+**Figure 11—figure supplement 1.:** (A) Distribution of overall change (Δ) in junction length (standardized) from the anterior neural ectoderm. Horizontal lines on density plots/violins indicate quartiles of distribution, black circles are individual cells, and statistical comparisons performed by Kolmogorov-Smirnov (KS) test. (B) 2D density plots of all observations of mean junction orientation over time versus overall change (Δ) in junction length (standardized) for all junctions within each group. (C) 2D density plots of all observations of mean junction orientation over time versus overall change (Δ) in junction actin (standardized) for all junctions within each group. (D) 2D density plots of all observations of mean junction orientation over time versus overall change (Δ) in junction N-cadherin (standardized) for all junctions within each group. Percentages in white indicate the percentage of total cells in each quadrant. Statistical comparisons performed by Peacock test, a 2D implementation of the KS test. s.d. = standard deviation.
 
 As a positive control for this dataset, we first examined bulk trends. For example, the vast majority of junctions in the anterior neural plate decreased in length, but shortening junctions displayed no bias to their orientation, consistent with the robust, largely isodiametric apical constriction of these cells (Figure 11—figure supplement 1A, B). Consistent with our data on apical surface area, anterior shroom3 crispant cells displayed a robustly significant defect (p < 2.2 × 10–16), with the majority of junctions actually elongating rather than shortening (Figure 11—figure supplement 1A, left). A very different trend was observed in the posterior, where most junctions shortened but many elongated (Figure 11B, left); shrinking was strongly biased to junction joining AP neighbors, with a reciprocal strong bias for elongation (Figure 11C). The converse pattern was observed for actin accumulation, with increasing actin accumulation negatively correlated to decreasing junction length (Figure 11D). This pattern is consistent with the known convergent extension cell behaviors in the posterior neural tube and our data here reflect the findings of a previous, smaller scale study of this tissue (Butler and Wallingford, 2018) as well as data from fixed mouse embryos (McGreevy et al., 2015), providing confidence in the veracity of the dataset.
 
@@ -135,7 +183,7 @@ We found that strongly shrinking junctions were very tightly clustered in the mo
 
 Thus, loss of shroom3 leads to a subtle but significant shift in the polarization of the junction behaviors that drive convergent extension, a result that could explain the incompletely penetrant posterior NTDs resulting from Shroom3 loss (Haigo et al., 2003; Hildebrand and Soriano, 1999) and that is very consistent with the known genetic interaction of shroom3 and PCP gene mutations (McGreevy et al., 2015). The molecular basis for this interaction remains unclear, but it could relate to the interplay of Shroom3 and N-cadherin. Indeed, we observed a very strong clustering signal for N-cadherin clearance from the most polarized elongating junctions (i.e. ~90°) that was not observed for actin in elongating junctions, and this clustering was significantly diminished in shroom3 crispants (Figure 11E).
 
-## Conclusions
+### Conclusions
 
 Understanding the cellular mechanisms contributing to neural tube closure has long challenged embryologists due to the relatively large number of cells involved and the heterogeneity of their behaviors. Indeed, some of the earliest uses of computer simulation in developmental biology focused on understanding the degree to which neural ectoderm cells constrict their apical surfaces during neural tube closure (Jacobson and Gordon, 1976). Since then, our understanding of neural tube closure has broadly improved. Hundreds of mutations affecting neural tube closure have been identified (Harris and Juriloff, 2010), and the functional interactions between these genes are coming into focus (McGreevy et al., 2015; Murdoch et al., 2014). However, while time-lapse imaging of single cell behaviors in chicks, frogs, and mice have provided key insights (Butler and Wallingford, 2018; Christodoulou and Skourides, 2015; Davidson and Keller, 1999; Galea et al., 2017; Massarwa and Niswander, 2013; Molè et al., 2020; Ossipova et al., 2015; Pyrgaki et al., 2010; Wallingford and Harland, 2002; Williams et al., 2014), our understanding of the cell biology of neural tube closure still lags substantially behind our understanding of the genetics.
 
@@ -149,21 +197,21 @@ Finally, the study of developmental biology in the 21st century has been marked 
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Wild-type X. tropicalis frogs were obtained from the National Xenopus Resource, Woods Hole, MA (Horb et al., 2019).
 
-## Injections
+### Injections
 
 Wild-type X. tropicalis eggs were fertilized in vitro using sperm from wild-type X. tropicalis males using standard methods (Wlizla et al., 2018).
 
 X. tropicalis embryos were moved to 1/9× MMR +2% Ficoll, then injected in both dorsal blastomeres at the 4-cell stage with 50 pg LifeAct-RFP mRNA and 45 pg Xenopus N-cadherin-GFP mRNA, or 80 pg GFP-Shroom3ΔC-term mRNA. In CRISPR-injected embryos, after the next division to reach 8-cell stage, one dorsal blastomere was injected with 1 ng Cas9 protein (PNA Bio), 250 pg shroom3-targeted sgRNA (target sequence GUAGCCGGAGAGAUCACUUG, Synthego) (Figure 5—figure supplement 1A), and 60 pg membrane(CAAX)-BFP mRNA.
 
-## Antibody staining
+### Antibody staining
 
 X. tropicalis embryos were collected at NF stages 13–17 and devitellinized. Embryos were then fixed in 4% paraformaldehyde in PBS for 30 min at room temperature. Embryos were then washed in PBS + 0.01% Triton X-100 3 times for 20 minutes at room temperature. Fixed embryos were blocked in normal goat serum then stained with monoclonal NCD-2 antibody (Hatta et al., 1987; Hatta and Takeichi, 1986). NCD-2 was diluted 1:10 from supernatant provided by the Developmental Studies Hybridoma Bank, created by the NICHD of the NIH and maintained at The University of Iowa, Department of Biology, Iowa City, IA. Embryos were again washed in PBS + Triton then incubated with a 1:1000 dilution of Invitrogen Alexa Fluor 488 goat α-rat secondary antibody prior to imaging.
 
-## CRISPR genotyping
+### CRISPR genotyping
 
 To test the efficacy of our CRISPR injections in vivo, we injected wild-type X. tropicalis with the above-described Cas9 + sgRNA combination in the following cells and stages: 2× injections into 1-cell stage embryos, 1× injections into each blastomere of 2-cell stage embryos, 1× injections into two blastomeres of the 4-cell stage embryo, and 1× injections into all blastomeres of 4-cell stage embryos (Figure 5—figure supplement 1B). Uninjected embryos that did not receive any Cas9 + sgRNA were used as controls.
 
@@ -173,13 +221,13 @@ Uninjected embryos did not have any indel products at the shroom3 locus and thus
 
 Overall, these results indicate that our Cas9 + sgRNA combination efficiently cleaves the shroom3 target site in vivo. However, our F0 mosaic crispants generated by CRISPR injection into one blastomere at the 8-cell stage do not generate enough crispant cells to be detected by whole embryo PCR at later stages of embryonic development.
 
-## Imaging
+### Imaging
 
 Injected embryos were held at 25°C until they reached Nieuwkoop and Faber (NF) stage 12.5. At NF stage 12.5, vitelline envelopes were removed from embryos and embryos were allowed to ‘relax’ for 30 min. Embryos were then mounted in imaging chambers and positioned for imaging of either the anterior or posterior neural plate.
 
 Embryos were imaged on a Nikon A1R confocal microscope using the resonant scanner. Image quality, Z-stacking, and XY tiling were optimized to generate optimal 3D images of the neural plate at a rate of 1 frame per minute. Ultimately, movies of nine embryos were of sufficient length and quality for analysis, tissue geometry of the initial frame of each of these embryos is presented in Figure 5—figure supplement 2.
 
-## Image analysis
+### Image analysis
 
 Raw 3D images were projected to 2D via maximum intensity and underwent initial segmentation of cell boundaries using the FIJI plugin Tissue Analyzer (Aigouy et al., 2010; Aigouy et al., 2016). The segmentation of an initial frame was hand-corrected, and this hand-corrected segmentation was used to train a classifier using the programs CSML and EPySEG (Aigouy et al., 2020; Ota et al., 2018). CSML and EPySEG were used to generate segmentation for subsequent frames, which were then further hand-corrected in Tissue Analyzer.
 
@@ -189,7 +237,7 @@ For individual junctions, errors in junction length caused by Z-displacement and
 
 Tissue Analyzer databases were imported to R and further analyzed and manipulated primarily using the tidyverse package (Wickham et al., 2019).
 
-## Data analysis
+### Data analysis
 
 Cell tracks shorter than 30 frames and junction tracks shorter than 15 frames were discarded.
 
@@ -203,4 +251,4 @@ Individual junctions were determined to be wild-type versus shroom3 crispant ver
 
 Junction orientations were corrected so that the ML axis of the embryo was set at 0° and the AP axis of the embryo was set at 90° (Figure 11B).
 
-## Cell data parameters
+#### Cell data parameters

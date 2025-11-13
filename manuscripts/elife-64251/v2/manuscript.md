@@ -48,9 +48,25 @@ The availability of a potent and highly selective allosteric inhibitor of SHP2 n
 
 ## Results
 
-## Dynamic regulation of the EGF-responsive phosphoproteome by SHP2
+### Dynamic regulation of the EGF-responsive phosphoproteome by SHP2
 
 We investigated the role of SHP2 in the responsiveness to EGF by using the EGFR-amplified cell line MDA-MB-468, derived from a patient with triple-negative breast cancer. To identify timepoints for in-depth proteomic analysis, we monitored the influence of SHP2 on the response to EGF stimulation using ERK1/2 phosphorylation as a readout. Cell extracts were prepared at a series of timepoints from three treatment conditions: (1) following pretreatment with dimethyl sulfoxide (DMSO) and then stimulation with 10 nM EGF, (2) following pretreatment with the SHP2 inhibitor SHP099 for 2 hr and then stimulation with EGF, and (3) following pretreatment with SHP099 and then stimulation with EGF for 10 min, after which drug was washed out and medium containing EGF replenished. Because the response of the EGF receptor to EGF stimulation occurs in the 1–2 min time period (Jadwin et al., 2016), we focused attention on the 5–30 min time window to ensure the observation of SHP2-dependent events downstream of EGF receptor stimulation. Immunoblot analysis revealed the expected effect of EGF stimulation: a dramatic increase in phospho-ERK1/2 (p-ERK1/2) levels followed by a decline toward basal levels by 30 min. The induction of p-ERK1/2 was greatly attenuated by pretreatment of cells with 10 μM SHP099. SHP099 washout in the continued presence of EGF (condition 3) revealed p-ERK1/2 induction with a kinetic profile similar to that of EGF stimulation in the absence of drug (condition 1), showing that SHP099 inhibition of SHP2 is rapidly reversible in MDA-MB-468 cells (Figure 1A, Figure 1—figure supplement 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig1-v2.jpg)
+
+**Figure 1.:** (A) Left: Western blot showing the phosphoERK1/2 abundance after EGF stimulation alone, EGF stimulation in the presence of SHP099, and EGF stimulation in the presence of SHP099, followed by drug washout 10 min after EGF stimulation. Right: quantification of the Western blot data, calculated from the ratio of [pERK1/2]/[ERK1/2] band intensities. (B) Schematic illustration of treatment conditions and mass spectrometry workflow. Western blot and phosphoproteomic data are both representative of two independent biological replicates (n = 2). (C) Venn diagram showing the overlap of phosphopeptides identified in biological replicates 1 and 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Top: Western blot showing the time course of the phosphoERK1/2 response after EGF stimulation. Bottom: Quantification of the ratio of pERK/ERK band intensities, relative to the ratio at t = 2 min. (B, C) TMT relative abundance plotted as a function of peptide m/z values from MS3 spectra, showing quantification of ERK1 (B) and PLCG2 (C) phosphopeptides.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Paired samples from two independent biological replicates are shown. Each datapoint represents a treatment condition in the TMT 11-plex experiment as indicated in the legend. The first two principal components are plotted, and the explained variance of each component is indicated in parentheses.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Classification of phosphorylation time courses based on EGFR and SHP2 dependence. Numbers above each plot indicate the number of phosphopeptides within each class combination. (B) Sequence logos (WebLogo, RRID:SCR_010236) showing amino acid preferences at positions flanking the phosphorylated tyrosine residue for each cluster.
 
 To obtain an in-depth view of the effects of SHP2 inhibition on EGFR signaling, we performed quantitative phosphoproteomics, monitoring dynamic changes in pY abundance as a function of time under DMSO, SHP099, and washout conditions (Figure 1B). Tryptic peptides from DMSO, SHP099, and SHP099-washout groups were enriched for phosphopeptides using immobilized metal affinity chromatography (IMAC) prior to labeling with 11-plex isobaric tandem mass tags (TMT). Tyrosine phosphorylated (pY) peptides were then immunoprecitiated from the TMT-labeled, pooled samples using an anti-pY antibody, and the recovered pY-containing peptides were analyzed by LC-MS3 mass spectrometry (Supplementary files 1 and 2 and Figure 1—figure supplement 1B,C). Principal component analysis revealed a high degree of consistency between matched samples from the two biological replicates (Figure 1—figure supplement 2), which yielded relative quantification for several hundred pY-containing peptides, with good concordance between biological replicates (Figure 1C and Supplementary files 1 and 2). The Western blot (Figure 1A) and mass spectrometry data for the dynamics of pY204 of ERK1 (Figure 1—figure supplement 1B) and pY187 of ERK2 (Supplementary files 1 and 2) show the same pattern of response, confirming that key pY marks associated with EGF-induced signaling events were accurately determined in the TMT experiment.
 
@@ -60,23 +76,67 @@ As anticipated, SHP2 inhibition resulted in increased abundance of pY marks at a
 
 Hierarchical clustering was performed to identify groups of pY sites with similar kinetics in DMSO, SHP099, and washout conditions. Among the six kinetic profiles that emerged (Figure 2—figure supplement 1), we highlight three clusters of sites implicated in EGFR signaling and that display distinct responses to the drug (Figure 2A). The first class of responses, which includes the regulatory subunits of PI3K, occludin, Syntaxin 4 (Figure 2B), the adapter proteins CRK and GRB2, and ARHGAP35 (also known as p190RhoGAP), among other proteins, shows quantitatively increased tyrosine phosphorylation in the presence of SHP099 that rapidly disappears upon drug washout (Figure 2A), as predicted for a SHP2 substrate. The second class of sites accumulates pY marks slowly under SHP099 inhibition (at 30 min after EGF treatment), and not when SHP099 is omitted or washed out. This pattern, observed for pY sites on CBL E3 ligase, RAB10, hnRNPs, PLCγ proteins, and CAPRIN1 (Figure 2C), also matches the response predicted for a SHP2 substrate, but with a time delay, suggesting that the action of SHP2 on these proteins might require an intervening event, such as relocalization (e.g. after endocytosis of active EGFR signaling complexes), or alternatively, that the effect is indirect. The large number of potential substrates identified in this work suggests that SHP2 may catalyze dephosphorylation of many different proteins on different time scales.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig2-v2.jpg)
+
+**Figure 2.:** (A) Heatmap showing three classes of dynamic response in which inhibition of SHP2 modulates the effect of EGF stimulation on pY abundance. Specific examples from each cluster are indicated to the left of the heatmap. (B) Plot of pY abundance as a function of treatment condition for Y251 of STX4, an example of an early substrate-like response pattern to SHP2 inhibition. (C) Plot of pY abundance as a function of treatment condition for Y818 of PLCG2, an example of a late substrate-like response pattern to SHP2 inhibition. (D) Plot of pY abundance as a function of treatment condition for Y1100 of ARHGEF5, an example of a site where the abundance of the mark decreases when SHP2 is inhibited, and rebounds after compound washout.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The heatmap shows six different response patterns, based on hierarchical clustering. Source data listing pY sites present in each hierarchical cluster are provided.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Semi-log volcano plots of p-value as a function of pY fold-change after EGF stimulation for 5 min (A), 10 min (B), and 30 min (C). Sites exhibiting biologically significant increases (p<0.05, two independent biological replicates of the phosphoproteomics experiment, and an increase >1.5-fold) are colored salmon (A, B) or red (C). Sites exhibiting statistically biologically significant decreases (p<0.05, two independent biological replicates of the phosphoproteomics experiment, and a decrease >1.5-fold) are green. (D) Functional classification of proteins whose pY sites display statistically significant changes in response to SHP099 treatment. Classes were assigned using Gene Ontology categories and literature curation.
+
 The third pattern of response observed is one in which accumulation of pY in response to EGF depends on the release of SHP2 from inhibition by SHP099. Examples of sites that fall into this category include Y1100 of ARHGEF5 (Figure 2D), Y659 of GAB1, Y643 of GAB2, as well as Y546 and Y584 of SHP2 itself.
 
 Functional classification of EGF-responsive pY sites (by GSEA and Reactome) differentially regulated by SHP099 (Figure 2—figure supplement 2A–C) reveals enrichment of six major cellular processes (Figure 2—figure supplement 2D). As expected, proteins implicated in MAPK and PI3K signaling, including EGFR and SHP2 itself, contain numerous EGF-responsive phosphosites differentially regulated by SHP099 treatment. The largest functional group includes proteins implicated in adhesion and migration, including tight junction proteins, catenins, Rho-GEF, and Rho-GAP proteins. These findings, along with data on the abundance of cytoskeletal proteins differentially affected by SHP099 (Figure 2—figure supplement 2D), are consistent with earlier results, suggesting that SHP2 promotes migration in MDA-MB-468 cells by regulating EGF-induced lamellipodia persistence (Hartman et al., 2013). Proteins implicated in transcription comprise another functional class with a number of differentially regulated phosphosites (Figure 2—figure supplement 2D). Two additional functional categories enriched in the analysis comprise endocytosis and mRNA processing, neither of which have previously been linked to SHP2 activity. Most of the sites in these two categories display a substrate-like response with SHP099 treatment. In addition, SHP099 also affected phosphorylation of CBL and CBLB, E3 ligases that ubiquitinate EGFR and facilitate its recruitment to clathrin-coated pits for endocytosis. Together, these results highlight the diversity of influence of SHP2, both in the function of proteins that it affects and in the manner in which it affects their phosphorylation patterns.
 
-## Identification of new substrates of SHP2
+### Identification of new substrates of SHP2
 
 Among proteins that show a substrate-like pattern, only one of the phosphosites observed has previously been reported to be dephosphorylated by SHP2 (GRB2 pY209; ARHGAP35 has also been reported to be a substrate, but its pY site has not been reported) (Bregeon et al., 2009; Chardin et al., 1993). Therefore, we carried out follow-up studies to determine whether any of the proteins with sites newly identified in this proteome-wide analysis are indeed directly dephosphorylated by SHP2.
 
 Of the potential substrates identified from the mass spectrometry data, we identified 20 proteins with sites that (1) showed an increase upon EGF stimulation, (2) showed an increase of greater than twofold in the presence of SHP099 when compared to the DMSO control for at least one timepoint, (3) were not previously reported as SHP2 substrates, and (4) had commercial antibodies available for immunoprecipitation studies. Of these twenty proteins screened (Supplementary file 3), three that were reliably immunoprecipiated at endogenous abundance showed phosphosite enrichment after EGF stimulation in the presence of SHP099 as judged by Western blot with an anti-pY antibody. These three proteins are occludin, PLCγ2, and ARHGAGP35 (Figure 3A–C). Immunoprecipitation of pY-modified proteins with an anti-pY antibody in EGF-stimulated cells treated with SHP099 likewise showed that PLCγ2, occludin, and GRB2 accumulate pY in the presence of SHP099, as judged by Western blot (Figure 3—figure supplement 1). Because it was not possible to immunoprecipitate ARHGAP35 with either the anti-pY antibody or an antibody that specifically reognizes the pY1105 phosphosite, we immunoblotted anti-ARHGAP35 immunoprecipitates with the anti-pY1105 antibody to confirm that accumulation of this specific mark occurs when SHP2 is inhibited by SHP099 (Figure 3D,E). In addition, enzyme assays using purified SHP2 and the pY-containing peptides that contain the SHP099-enriched phsophosites identified in the proteomic studies confirm that SHP2 can robustly remove the phosphate mark from pY209 of GRB2, pY443 of occludin, pY1105 of ARHGAP35, and pY818 of PLCγ2, whereas neither a control peptide containing pY708 from CSF-1R nor a Class III peptide from TMEM134 that shows a protection-type pattern are robust SHP2 substrates (Figure 3F). Together, these data suggest that ARHGAP35, PLCγ2, and occludin are newly identified substrates for SHP2 in EGF-stimulated MDA-MB-468 cells.
 
-## Allosteric inhibition of SHP2 results in reduced pY abundance at its interaction motifs
+![Figure 3.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig3-v2.jpg)
+
+**Figure 3.:** MDA-MB-468 cells pre-treated with DMSO carrier or SHP099 (10 µM) for 2 hr were mock treated or stimulated with EGF (10 nM) for 10 min (A) or 30 min (B, C, and E). Total cell lysates were immunoprecipitated with occludin (A), PLCγ2 (B), or ARHGAP35 (C, E) antibodies and the eluted samples were subjected to Western blotting with the phosphotyrosine antibody pY1000 (A–C), pY1105-ARHGAP35 (E), and anti-protein antibodies as indicated (A–C, E). Input samples represent 1% of total cell lysate. Non-specific IgG was used as a negative control. (D) Plot of pY abundance as a function of treatment condition for Y1105 of ARHGAP35. (F) Dephosphorylation activity of full-length wild-type SHP2, activated with 6 µM bisphosphorylated IRS-1 peptide [SLNY(p)IDLDLVKdPEG8-LSTY(p)ASINFQK], toward synthetic phosphopeptides (OCLN_pY443, PLCG2_pY818, GRB2_pY209, ARHGAP35_1105, TMEM134_pY57, CSF-1R_pY708). Immunoprecipitation – Western blot assays are representative of at least two independent biological replicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Tandem mass tag (TMT) intensity plots of pY phophsphopeptide abundance as a function of treatment condition for Y818 of PLCγ2 (A), pY443 of OCLN (B) and pY209 of GRB2 (C). (D, E, and F) MDA-MB-468 cells pre-treated with DMSO carrier or SHP099 (10 µM) for 2 hr were mock treated or stimulated with EGF (10 nM) for 5 min, 10 min, or 30 min. Total cell lysates were immunoprecipitated with the anti-phosphotyrosine antibody, pY1000, and the eluted samples were subjected to Western blotting with anti-PLCγ2 (D), anti-OCLN (E), or anti-GRB2 (F) antibodies. Input samples represent 1% of total cell lysate. Non-specific IgG was used as a negative control. Western blot results are representative of at least n = 2 independent biological replicates.
+
+### Allosteric inhibition of SHP2 results in reduced pY abundance at its interaction motifs
 
 SHP099 allosterically stabilizes the autoinhibited conformation of SHP2 (Chen et al., 2016), thereby not only inhibiting the catalytic activity of the enzyme, but also suppressing binding of its two SH2 domains to pY-containing motifs. Because the third pattern of response shows accumulation of pY after SHP2 is released from inhibition, we performed a dynamic analysis of whether SHP2 directly protects sites in this class from dephosphorylation and whether this protection is lost upon SHP099 binding by Western blot. Y659 of GAB1 and Y643 of GAB2 both show dramatic reductions in pY abundance upon SHP099 treatment and recover their pY marks upon compound washout (Figure 4), as judged by the phosphoproteomic data and confirmed across an extended time course by Western blot. These data are fully consistent with prior work indicating that the SH2 domains of SHP2 can bind to the bisphosphotyrosine-containing motifs of GAB1 (pY627/pY659) and GAB2 (pY614/pY643) to relieve SHP2 autoinhibition (Arnaud et al., 2004; Cunnick et al., 2001).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) TMT signal-to-noise intensities of GAB1 pY659 (A) and GAB2 pY643 (B) peptides showing dynamic changes in phosphorylation under DMSO- (solid line) and SHP099-treated (dotted line) conditions. (C) MDA-MB-468 cells pre-treated with DMSO carrier or SHP099 (10 µM) for 2 hr were mock treated or stimulated with EGF (10 nM). Total GAB1, total GAB2, GAB1 pY659, and GAB2 pY643 were analyzed by Western blot with both anti-protein and phosphospecific antibodies as a function of time after EGF addition. Western blot results are representative of at least two independent biological replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) KYSE520 cells pre-treated with DMSO carrier or SHP099 (10 uM) for 2 hr were left uninduced or induced with EGF (10 nM) for 10 min. Whole-cell lysates were then subjected to immunoblotting with GAB1-pY659 and GAB1 antibodies. (B) H1975 cells were treated with SHP099 (10 uM) for 2 hr, washed three times with warm HBSS buffer, and cultured in full growth medium (RPMI-1640 supplemented with 10% FBS) for the indicated time periods. Lysates were then blotted with pY643-GAB2 and GAB2 antibodies. (C) Whole-cell extracts from parental-, SHP2 knockout-, and SHP2 knockout stably expressing wild-type SHP2 U2OS cell lines were blotted with pY659-GAB1 and GAB1 antibodies. (D) DMSO- and SHP099-treated U2OS cells were stimulated with PDGF (5 nM) and probed for pY659-GAB1 and GAB1. (E) DMSO- and SHP099-treated Jurkat cells were stimulated with anti-CD3 antibody (10 µg/ml) and subjected to immunoblotting with pY659-GAB1, pY643-GAB2, GAB1, and GAB2 antibodies. Western blot results are representative of at least n = 2 independent biological replicates.
 
 To determine whether pY sites of GAB1 and GAB2 exhibit the same pattern of response in other cellular contexts, we also treated other EGFR-driven cancer cell lines with SHP099. KYSE520, an EGFR-amplified esophageal cancer cell line, showed loss of GAB1 Y659 phosphorylation with SHP099 treatment under conditions of EGF stimulation (Figure 4—figure supplement 1A). H1975 cells, which carry an EGFR activating mutation, displayed high levels of constitutive GAB2-Y643 phosphorylation. SHP099 treatment eliminated phosphorylation of this site, and washout of the drug restores the mark within 5 min (Figure 4—figure supplement 1B). In addition, we tested whether deletion of the SHP2 gene recapitulated the effects of chemical inhibition on the phosphorylation of Y659 of GAB1. For these studies, we used a PTPN11 knockout U2OS cell line prepared by CRISPR/Cas9 mediated genome editing (LaRochelle et al., 2018). When stimulated with EGF, SHP2-null U2OS cells showed a reduction in GAB1 pY659 levels when compared to parental cells, and reintroduction of SHP2 fully rescued the level of accumulated pY659 (Figure 4—figure supplement 1C). Stimulation of U2OS cells with PDGFββ also showed an induction of the GAB1 pY659 mark that is lost upon treatment with SHP099 (Figure 4—figure supplement 1D). Similarly, stimulation of the T cell receptor on Jurkat cells with an anti-CD3 antibody induced GAB1 and GAB2 phosphorylation, and this induction was attenuated by SHP099 treatment (Figure 4—figure supplement 1E). These findings show that the effect of SHP2 on the abundance of GAB1 and GAB2 pY marks is broadly shared among a range of growth factor and antigen receptor signaling systems.
 
 To determine how inhibition of SHP2 reduced pY abundance at these sites, we generated a set of site-specific SHP2 mutants and asked whether they could rescue GAB1-pY659 phosphorylation in U2OS PTPN11 null cells. We constructed point mutations that abolish autoinhibition (E76K), eliminate catalytic activity (C459E), or disable both autoinhibition and catalytic activity (E76K/C459E). We also created protein truncations that contain only the catalytic domain (PTP) or only the SH2 domains (SH2) (Figure 5A). When stimulated with EGF, C459E, E76K, and the E76K/C459E double mutant, all restored GAB1-pY659 phosphorylation to a level similar to that of cells rescued with wild-type SHP2 (Figure 5B). When the SH2 or PTP constructs were introduced into U2OS cells lacking endogenous SHP2, the PTP fragment failed to rescue, whereas the SH2 fragment was as active as wild-type SHP2 (Figure 5C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic representation of wild-type, point mutants, and deletion constructs of SHP2 tested. (B, C) Parental-, SHP2 knockout-, or SHP2 knockout U2OS cells stably expressing various SHP2 ‘rescue’ constructs were cultured with or without EGF stimulation (10 nM) for 10 min. Cells were lysed and subjected to Western blotting using anti-pY659-GAB1 and anti-GAB1 antibodies. (D) MDA-MB-468 cells stably expressing wild-type, PTP, or SH2 domains pre-treated with SHP099 were stimulated with EGF and immunoblotted after lysis using the specified antibodies. Western blot results are representative of at least n = 2 independent biological replicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) TMT signal-to-noise intensities of MPZL1 peptides showing phosphorylation changes between DMSO- (solid line) and SHP099-treated (dotted line) groups. (C) Unstimulated or EGF-stimulated parental-, SHP2 knockout-, and SHP2 knockout stably expressing wild-type, PTP, and SH2 U2OS cell lines were blotted for pY263-MPZL1, pY241-MPZL1, and MPZL1. Western blot results are representative of at least two independent biological replicates.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) MDA-MB-468 cells pre-treated with DMSO carrier or AZD0530 (10 µM) were left unstimulated or stimulated with EGF (10 nM) for 10 min and subjected to western analysis with pY659-GAB1 and pY643-GAB2 antibodies. Total protein levels were detected using antibodies for GAB1 and GAB2. (B) MDA-MB-468 and H1975 cells were treated with DMSO and SHP099 (10 µM) for 2 hr and subjected to immunoblotting with Src-pY416, Src-pY527, and Src antibodies. Parental and SHP2 deficient U2OS cells were probed for Src-pY416, Src-pY527, and total Src levels. Western blot results are representative of at least two independent biological replicates. (C) Control Western blot with anti-pY416-Src antibody showing induction of pY416 of Src in NIH/3T3 cells after stimulation with hPDGF. (D) Control Western blot with anti-pY527-Src antibody showing the elimination of pY527 reactivity after phosphatase treatment of resting cell lysates.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Confocal images of EGFR-GAB1 complexes in MDA-MB-468 cells. Cells were pre-treated with DMSO carrier or SHP099 for 2 hr, mock treated or stimulated with 1 nM EGF for 2 min, and then analyzed using a proximity ligation assay (PLA). Cells were identified with propidium iodide (nuclei) and phalloidin (F-actin). PLA foci appear as green dots. Images are representative of three independent experiments. (B) Plot of PLA dots per cell (mean ± SEM), quantifying the extent of EGFR-GAB1 complex formation under each treatment condition in (A) (n = 3, *p<0.05 using Kruskal–Wallis ANOVA test).
 
 Since MDA-MB-468 cells cannot survive without SHP2 (see also the gene essentiality data from avana_public_18Q2 library, Project Achilles; Meyers et al., 2017), we stably expressed the SH2 or PTP fragments in parental MDA-MB-468 cells and chemically inhibited endogenous SHP2. These cell lines were stimulated with EGF and probed for phospho-GAB1 and phospho-GAB2. As expected, SHP099 treatment significantly reduced the abundance of pY659 on GAB1, as well as that of pY643 on GAB2. GAB1 pY627, which has been reported to bind to the N-SH2 domain of SHP2 (Cunnick et al., 2001), also showed reduced phosphorylation. Consistent with the results from U2OS cells, the SH2 fragment, but not the PTP fragment was active in increasing pY abundance at these positions of GAB1 and GAB2 (Figure 5D). Indeed, the SH2 fragment stabilizes these GAB1 and GAB2 phospho marks even in the absence of EGF stimulation (Figure 5D), consistent with a dominant protective function that is independent of the catalytic activity of the enzyme. In addition, the SHP099-resistant variant of SHP2 (T253M/Q257L) rescues protection of the GAB1 and GAB2 pY sites (Figure 6A,B), and point mutation of the key arginine residue of each SH2 domain (R32M of the N-SH2 domain or R138M of the C-SH2 domain) suppresses phosphosite protection of these sites, as does the R32M/R138M double mutant (Figure 6C,D). Together, these findings show that the catalytic activity of SHP2 is not required for the protection of the pY659 and pY643 marks on GAB1 and GAB2, respectively, and argue that the presence of tandem SH2 domains in SHP2 is needed to bind and protect pYs on GAB1 and GAB2 from phosphatase-mediated dephosphorylation.
 
@@ -88,7 +148,7 @@ To assess whether this protection mechanism applies to other SHP2 interacting pr
 
 Multiple studies have reported that GAB1, GAB2, and MPZL1 can be phosphorylated by Src family kinases (SFKs) (Chan et al., 2003; Kong et al., 2003; Kusano et al., 2008). Indeed, MDA-MB-468 cells treated with an SFK inhibitor (saracatinib/AZD0530) showed greatly reduced modification of GAB1-Y659 and GAB2-Y643 (Figure 5—figure supplement 2A), suggesting that SFK activity is required to phosphorylate the SHP2 binding sites on GAB1 and GAB2. SHP099, however, had no detectable effect on the abundance of pY at Y416 of the activation loop of SFKs (Figure 5—figure supplement 2B), or on the abundance of pY at Y527, which maintains SFKs in their autoinhibitory conformation (Roskoski, 2005). Although it is possible that SFK activity in the GAB complex is not reflected by assessment of bulk SFK activity in the whole-ell lysate, when combined with the phosphosite protection results from the studies with various forms of SHP2 above, these data suggest that SHP2 acts to increase the half-life of pY modifications at sites on GAB1 and GAB2 that are phosphorylated by SFKs and then bound by SHP2.
 
-## SHP2 is required for membrane localization of GAB1
+### SHP2 is required for membrane localization of GAB1
 
 To determine whether activation of SHP2 is required for recruitment of GAB1 to EGFR at the plasma membrane, we used a proximity ligation assay (PLA). MDA-MB-468 cells were mock treated or stimulated with EGF in the presence of DMSO or SHP099, fixed in paraformaldehyde, and probed for co-localization of GAB1 and EGFR. Under serum-starved (basal) conditions, the PLA signal was minimal and unaffected by SHP2 inhibition with SHP099. In contrast, within 2 min of EGF addition, cells treated with DMSO alone displayed a strong PLA signal indicative of GAB1 and EGFR co-localization, whereas SHP099 treatment reduced the number of binding events by 85% (p<0.05; Figure 5—figure supplement 3). These results suggest that SHP2 is required to assemble the EGFR-GAB1 signaling hub crucial for MAPK and PI3K signaling.
 
@@ -102,78 +162,566 @@ Our data also reveal many proteins with SHP2-dependent changes in pY abundance t
 
 Strikingly, the most frequent change in pY pattern following SHP2 inhibition is not substrate-like, but rather one in which pY levels fall. Others have also recently reported that binding of SHP2 can prevent dephosphorylation of certain pY sites in the response to stimulation of other RTKs (Batth et al., 2018). This pattern of response is seen at pY residues on proteins recruited to the EGFR signaling hub, such as GAB1, GAB2, as well as on EGFR and SHP2 itself. To better understand this mode of pY regulation, we studied SHP2-dependent protection of pY sites on GAB1 and GAB2, adapters that induce SHP2 binding and activation upon tyrosine phosphorylation (Arnaud et al., 2004; Crouin et al., 2001; Cunnick et al., 2001). Binding and mutagenesis studies clearly demonstrate that the tandem SH2 domains of SHP2 shield pY binding sites on GAB1 and GAB2 from dephosphorylation. Also intriguing is the SHP2-mediated protection of nearby pairs of pY residues on several proteins, including MPZL1-pY241/pY263, a fibronectin-activated adhesion protein that can assemble into complexes containing SHP2 and Grb2 in a pY-dependent manner (Figure 5—figure supplement 1 and Beigbeder et al., 2017). In fact, decreased phosphoabundace is observed on multiple proteins harboring nearby tyrosine residues (Figure 7—figure supplement 1), all of which may experience protection of their pY marks by the tandem SH2 domains of SHP2. The protection of pY sites by SHP2 highlights the scaffolding role of SHP2 in stimulating pY engagement by SH2 domains at sites of RTK activation (Figure 7). SHP2 scaffolding activity is particularly relevant to Noonan and LEOPARD syndromes, both of which result from missense SHP2 mutations. Though distinct, the two syndromes have overlapping clinical features. Mutations found in Noonan syndrome destabilize the autoinhibited form of the enzyme without substantially affecting the intrinsic catalytic activity of the phosphatase domain, leading to increased basal phosphatase activity, elevated scaffolding activity, and downstream induction of ERK (Araki et al., 2004; Niihori et al., 2005). LEOPARD syndrome mutations also destabilize the autoinhibited conformation of the enzyme, enhancing scaffolding activity, but in addition cripple the catalytic activity of the phosphatase domain. The increased preference for the open conformation in both Noonan and LEOPARD syndrome mutations promotes the protective ‘arm’ of SHP2 signaling, whereas only Noonan syndrome mutations retain the catalytic activity needed to drive the substrate-dependent features of signaling. The work reported here shows how central the scaffolding function is at the EGFR signaling hub and in the engagement of pY sites on GAB1 and GAB2 at the site of activation, with the phosphatase-dependent events, through adapter proteins like Grb2 and key signaling nodes like PI3K, required for full propagation of a growth factor induced signal to downstream effectors.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic model showing pY mark protection by stable engagement of a partner protein (e.g. GAB1) with the tandem SH2 domains of SHP2. (B) In the presence of SHP099, pY marks on putative SHP2 interactors are vulnerable to dephosphorylation, and SHP099 is not recruited to sites of RTK signaling. It is also possible that deposition of certain phosphate marks is SHP2 dependent (lower panel).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/64251/elife-64251-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Quantification showing the relative percentages of proteins displaying multisite phosphorylation in SHP099-responsive pY sites. (B) Heatmap visualization of multisite protein phosphorylation dynamics in the class of SHP2-protected pY sites.
+
 ## Materials and methods
 
-## Plasmids, compounds, and ligands
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-SHP2-WT</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_8381, plasmid # 8381</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>migR1-IRES-GFP</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_27490, plasmid # 27490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SHP2 inhibitor (SHP099)</td>
+      <td>DC chemicals</td>
+      <td>Catalog # DC9737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Src inhibitor (AZD0530)</td>
+      <td>Dr. Nathanael Gray (Dana-Farber Cancer Institute)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD3 (UCHT1)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_468857; Catalog # 16-0038-85</td>
+      <td>10 µg/ml for TCR stimulation of Jurkat cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal Phospho-Tyr-1000</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2687925; Catalog # 8954</td>
+      <td>Western blot (1:2000); Immunoprecipitation (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Phospho-Thr202/Tyr204-Erk1/2</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_331646; Catalog # 9101</td>
+      <td>Western blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Erk1/2</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_330744; Catalog # 9102</td>
+      <td>Western blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal GAB1-pY659</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2798014; Catalog # 12745</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal GAB1-pY627</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2305002; Catalog # 3231</td>
+      <td>Western blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal GAB2-pY643</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_2554386; Catalog # PA5-37778</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal GAB1</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2304999; Catalog # 3232</td>
+      <td>Western blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal GAB2</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_10698601; Catalog # 3239</td>
+      <td>Western blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal pY263-MPZL1</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_10715080; Catalog # 5543</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal pY241-MPZL1</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_10891793; Catalog # 8131</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal MPZL1</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_1904189; Catalog # 4157</td>
+      <td>Western blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal pY1105-ARHGAP35</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_2553676; Catalog # PA5-36713</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal ARHGAP35</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2115740; Catalog # 2562</td>
+      <td>Western blot (1:2000); Immunoprecipitation (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal SHP2</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2174959; Catalog # 3397</td>
+      <td>Western blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal SHP2</td>
+      <td>Bethyl</td>
+      <td>RRID:AB_1040019; Catalog # A301-544A</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal SHP2</td>
+      <td>Santa Cruz</td>
+      <td>RRID:AB_628252; Catalog # sc-7384</td>
+      <td>Immunoprecipitation (2 µg antibody per500 µg cell lysate)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal PLCG2</td>
+      <td>Santa Cruz</td>
+      <td>RRID:AB_628120; Catalog # sc-5283</td>
+      <td>Western blot (1:500); Immunoprecipitation (2 µg antibody per500 µg cell lysate)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal OCLN</td>
+      <td>Bethyl</td>
+      <td>RRID:AB_2631690; Catalog # A305-297A</td>
+      <td>Western blot (1:1000); Immunoprecipitation (5 µg antibody per1 mg cell lysate)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal GRB2</td>
+      <td>BD Transduction Laboratories</td>
+      <td>RRID:AB_397518; Catalog # 610112</td>
+      <td>Western blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MDA-MB-468</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0419; HTB-132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>KYSE-520</td>
+      <td>DSMZ</td>
+      <td>RRID:CVCL_1355; ACC 371</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>U2OS</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0042; HTB-96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Jurkat</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0367; TIB-152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>NCI-H1975</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_UE30; CRL-5908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>SHP2 knockout U2OS cell line</td>
+      <td>LaRochelle et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human EGF</td>
+      <td>Gibco</td>
+      <td>PHG0311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human PDGF-BB</td>
+      <td>Peprotech</td>
+      <td>Catalog # 10771–922</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IRS1_pY1172–PEG–pY1222 peptide</td>
+      <td>This paper</td>
+      <td></td>
+      <td>SLN{pY}IDLDLVK–dPEG8–LST{pY}ASINFQK; (custom synthesized by Genscript)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>OCLN_pY443 peptide</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TGLQE{pY}KSLQS; (custom synthesized by Genscript)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>PLCG2_pY818 peptide</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TRIQQ{pY}FPSNY (custom synthesized by Genscript)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GRB2_pY209 peptide</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MFPRN{pY}VTPVN; (custom synthesized by Genscript)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ARHGAP35_pY1105 peptide</td>
+      <td>This paper</td>
+      <td></td>
+      <td>EENI{pY}SVPHDS; (custom synthesized by Genscript)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CSF-1R_pY708 peptide</td>
+      <td>This paper</td>
+      <td></td>
+      <td>IHLEKK{pY}VRRDSGF; (custom synthesized by Genscript)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TMEM134_pY57 peptide</td>
+      <td>This paper</td>
+      <td></td>
+      <td>KQSRLR{pY}QNLEND; (custom synthesized by Genscript)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Lysyl Endopeptidase, Mass Spectrometry Grade (Lys-C)</td>
+      <td>FUJIFILM Wako Pure Chemical Corporation</td>
+      <td>Catalog # 125–05061</td>
+      <td>Protein cleavage for mass spectrometry (10 µg per 1 mg total protein)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Sequencing Grade Modified Trypsin</td>
+      <td>Promega</td>
+      <td>Catalog # V511C</td>
+      <td>Protein cleavage for mass spectrometry (10 µg per 1 mg total protein)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Wild-type SHP2 purified protein</td>
+      <td>LaRochelle et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange II Site-Directed Mutagenesis kit</td>
+      <td>Agilent</td>
+      <td>Catalog # 200523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA protein assay</td>
+      <td>Pierce</td>
+      <td>Catalog # 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Malachite Green assay kit</td>
+      <td>Sigma–Aldrich</td>
+      <td>Catalog # MAK307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PLA kit</td>
+      <td>Sigma–Aldrich</td>
+      <td>Catalog # DUO92014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NTA Magnetic Agarose beads</td>
+      <td>Qiagen</td>
+      <td>Catalog # 36113</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TMT 11-plex reagent</td>
+      <td>Thermo Scientific</td>
+      <td>Catalog # A37725</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9.0</td>
+      <td>N/A</td>
+      <td>RRID:SCR_002798; https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R 3.6.3</td>
+      <td>N/A</td>
+      <td>RRID:SCR_001905; https://www.r-project.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellProfiler</td>
+      <td>N/A</td>
+      <td>RRID:SCR_007358; https://cellprofiler.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Reactome database</td>
+      <td>N/A</td>
+      <td>RRID:SCR_003485; http://software.broadinstitute.org/gsea/msigdb/annotate.jsp</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gene set enrichment analysis</td>
+      <td>Mootha et al., 2003; Subramanian et al., 2005</td>
+      <td>RRID:SCR_003199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Hierarchical clustering</td>
+      <td>MATLAB</td>
+      <td>RRID:SCR_001622; https://www.mathworks.com/products/matlab.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Principal component analysis</td>
+      <td>Python</td>
+      <td>RRID:SCR_008394; https://www.python.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Dependence classification</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Dependence classification of phosphorylation site time courses’ in Methods</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Logo analysis</td>
+      <td>Crooks, 2014</td>
+      <td>RRID:SCR_010236</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids, compounds, and ligands
 
 Constructs used to rescue SHP2 knockout U2OS cells were obtained by cloning the SHP2 cDNA from pCMV-SHP2-WT (RRID: Addgene_8381) into the migR1-IRES-GFP vector (RRID:Addgene_27490). Point mutants (E76K, C459E, and DM) were generated from the parental SHP2-migR1 construct using site-directed mutagenesis (QuikChange II, Agilent, Catalog # 200523). SH2-only and phosphatase-only mutants were generated by cloning the PTP (220–525 aa) and N-SH2-C-SH2 (1–219 aa) fragments, respectively, into the migR1-IRES-GFP vector. SHP099 was obtained commercially from DC chemicals (Catalog # DC9737). AZD0530 (Saracatinib) was a gift from Dr. Nathanael Gray (Dana-Farber Cancer Institute). The CD3 monoclonal antibody (UCHT1) was purchased from Thermo Fisher Scientific (RRID:AB_468857). Recombinant human EGF and PDGF-BB were purchased from Gibco (Catalog # PHG0311) and Peprotech (Catalog # 10771–922), respectively.
 
-## Antibodies
+### Antibodies
 
 Antibodies used in this study were obtained commercially from the following sources: Phospho-Tyr-1000 (RRID:AB_2687925), Phospho-Thr202/Tyr204-Erk1/2 (RRID:AB_331646), Erk1/2 (RRID:AB_330744), GAB1-pY659 (RRID:AB_2798014), GAB1-pY627 (RRID:AB_2305002), GAB2-pY643 (RRID:AB_2554386), GAB1 (RRID:AB_2304999), GAB2 (RRID:AB_10698601), pY263-MPZL1 (RRID:AB_10715080), pY241-MPZL1 (RRID:AB_10891793), MPZL1 (RRID:AB_1904189), pY1105-ARHGAP35 (RRID:AB_2553676), ARHGAP35 (RRID:AB_2115740), SHP2 (RRID:AB_2174959, RRID:AB_1040019, RRID:AB_628252), PLCG2 (RRID:AB_628120), OCLN (RRID:AB_2631690), and GRB2 (RRID:AB_397518).
 
-## Cell culture and generation of stable cell lines
+### Cell culture and generation of stable cell lines
 
 All the parental cell lines used in this study (MDA-MB-468 [RRID:CVCL_0419], KYSE520 [RRID:CVCL_1355], U2OS [RRID:CVCL_0042], Jurkat [RRID:CVCL_0367], and NCI-H1975 [RRID:CVCL_UE30]) were purchased from ATCC. The SHP2 knockout U2OS cell line was created previously (LaRochelle et al., 2018). To generate rescued SHP2-null U2OS lines, knockout cells were infected with retrovirus harboring the wild-type or mutant SHP2 cDNAs and FACS sorted for GFP-positive cells. MDA-MB-468 parental cells stably expressing full-length GAB1-GFP, GAB2-GFP, SHP2, PTP, and N-SH2-C-SH2 cDNAs were also generated similarly. U2OS cell lines were grown in McCoy’s 5A media with 10% fetal bovine serum (FBS). MDA-MB-468 cells were cultured in Leibovitz’s L-15 media with 10% FBS without CO2. All other cell lines (KYSE520, Jurkat, and NCI-H1975) were maintained in RPMI-1640 supplemented with 10% FBS at 5% CO2. Cell lines were acquired from sources provided in the key resources table. All cell lines used in this study tested negative for mycoplasma contamination.
 
-## Ligand stimulation
+### Ligand stimulation
 
 For ligand stimulation experiments analyzed by Western blotting, cells were seeded at 70% confluence in 10 cm petri dishes (Nunc, Thermo Fisher Scientific), serum starved for 24 hr, and treated with DMSO carrier or SHP099 (10 µM) for 2 hr before stimulation with ligands (EGF [10 nM], PDGF-BB [5 nM], or anti-CD3 [10 µg/ml]) for the indicated time periods. Cells were then quickly washed with ice-cold phosphate-buffered saline (PBS) twice, lysed in Ripa buffer (25 mM Tris–HCl [pH 7.6], 150 mM NaCl, 1% Nonidet P-40, 1% sodium deoxycholate, 0.1% sodium dodecyl sulfate, 2 mM EDTA) with protease and phosphatase inhibitors (cOmplete Mini and PhosSTOP, Roche) and analyzed by Western blotting. For all Western blot assays, the figures shown are representative results from at least two independent experiments.
 
-## Sample preparation for phosphoproteomics
+### Sample preparation for phosphoproteomics
 
 MDA-MB-468 cells were seeded in 15 cm cell culture dishes (Corning) in full growth media (Leibovitz’s L-15 with 10% FBS and 1% penicillin/streptomycin). At 80% confluence, cells were washed twice with warm HBSS buffer and incubated in serum-free media for 24 hr. On the following day, cells were pre-treated with DMSO or SHP099 (10 µM) for 2 hr prior to ligand stimulation. As outlined in Figure 1A, DMSO and SHP099 groups were left untreated (0 min) or stimulated with EGF (10 nM) for 5, 10, or 30 min. The SHP099 washout group was stimulated with EGF (10 nM) for 10 min, washed three times with warm HBSS, and stimulated with EGF again for 5, 10, or 30 min. To terminate stimulation, cells were immediately washed with ice-cold PBS, harvested, centrifuged, flash frozen in liquid N2 and stored at −80°C until all 11 samples were prepared. Cell pellets were lysed in lysis buffer (2% SDS, 150 mM NaCl, 50 mM Tris [pH 8.5–8.8]) containing protease and phosphatase inhibitors (cOmplete Mini, PhosSTOP, Roche; 2 mM Sodium Orthovanadate, NEB), sonicated to shear chromatin, and centrifuged to remove cellular debris. A bicinchoninic acid (Pierce, Catalog # 23225) assay was performed according to manufacturer’s instructions and lysates were normalized to a protein concentration of 1 mg/ml, reduced with DTT (5 mM), alkylated with iodoacetamide (14 mM), and quenched with further addition of DTT (5 mM). Total protein (1 mg) was precipitated with methanol-chloroform, reconstituted in 8 M urea at pH 8.5, sonicated, diluted to 4 M urea, and digested with Lys-C (FUJIFILM Wako, Catalog # 125–05061) overnight and Trypsin (Promega, Catalog # V511C) for 6 hr at an enzyme-to-protein ratio of 1:100. The percentage of missed cleavages was monitored using aliquots from a few representative samples (total 3 µg) that were desalted and analyzed by mass spectrometry. Digests were acidified with 2% formic acid and desalted using C18 Sep-Pak cartridges (WAT054960, Waters). Samples were dried by vacuum centrifugation, resuspended in 80% acetonitrile/0.15% trifluoroacetic acid (TFA), and normalized to 1 mg/ml for enrichment of phosphopeptides.
 
-## Phosphopeptide enrichment
+### Phosphopeptide enrichment
 
 Phosphopeptides were enriched using IMAC with NTA Magnetic Agarose beads (Qiagen, Catalog # 36113) stripped of Ni2+ and reloaded with Fe(III). Five hundred microliters of beads were incubated in 1 ml EDTA (40 mM) for 30 min at room temperature to remove bound Ni2+, followed by three washes with 1 ml of HPLC-grade water. The beads were then charged with iron using FeCl3 (100 mM) for 30 min at room temperature. Excess iron was removed by washing the beads three times with water followed by acidification with 80% acetonitrile/0.15% TFA. Peptides (1 mg per sample) were incubated with the IMAC beads for 30 min at room temperature. Phosphopeptide-bound beads were washed with 1 ml of 80% acetonitrile/0.15% TFA to remove non-specifically bound peptides. Phosphopeptides were eluted with 300 µl of 50% acetonitrile/0.7% NH4OH, acidified with 4% formic acid, immediately vacuum centrifuged to dryness, and subjected to desalting using SOLA HRP 10 mg Sep-Pak cartridges (Thermo Fisher).
 
-## TMT labeling
+### TMT labeling
 
 Prior to isobaric labeling, phosphopeptides were reconstituted in 200 mM EPPS (pH 8.3) and anhydrous acetonitrile to 30% (v/v). Each sample was labeled with 5 µl of a TMT 11-plex reagent (20 µg/µl; A37725, Thermo Scientific) for 90 min at room temperature. The reactions were quenched with 5 µl of 5% hydroxylamine for 15 min, combined, acidified with TFA to 1.0% (v/v), desalted using 10 mg SOLA Sep-Pak cartridges (Thermo Fisher), and lyophilized for 2 days to remove residual TFA.
 
-## Phosphotyrosine immunoaffinity purification
+### Phosphotyrosine immunoaffinity purification
 
 The pY antibody (p-Tyr-1000, Cell Signaling Technology) was coupled with agarose beads one day prior to the immunoaffinity purification (IAP) as follows. A Protein A agarose bead slurry (Sigma–Roche) (60 µl) was washed four times with 1 ml of cold PBS. The p-Tyr-1000 antibody (Cell Signaling Technology) (30 µl) was gently mixed with 1.5 ml PBS and added onto the washed agarose beads and incubated on a rotator overnight at 4°C. The beads were washed four times in 1 ml of cold PBS to remove excess uncoupled antibody. Lyophilized peptides were reconstituted with 500 µl of IAP buffer (50 mM MOPS/NaOH pH 7.2, 10 mM Na2HPO4, 50 mM NaCl) and incubated with antibody conjugated beads for 2 hr at 4°C with gentle rotation. The non-specific binding phosphopeptide (phospho-serine and -threonine peptides) flow through was collected after centrifugation and stored at −80°C. The pY-bound peptides were washed once with 1 ml of IAP buffer and transferred into a 0.2 µM filter spin column followed by two 400 µl washes with cold HPLC-grade water. pY peptides were eluted twice with 75 µl of 100 mM formic acid. The pY eluate was desalted using a C18 StageTip, dried by vacuum centrifugation, and reconstituted in 3% acetonitrile/0.5% formic acid for MS analysis.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Phosphoproteomic mass spectrometric data were acquired on an Orbitrap Fusion Lumos mass spectrometer (Thermo Fisher Scientific) equipped with a Proxeon EASY-nLC 1000 liquid chromatography system (Thermo Fisher Scientific). Phosphopeptides were separated on a 75 µm inner diameter microcapillary column packed with ~35 cm Sepax GP-C18 resin (1.8 µm, 150 A, Thermo Fisher Scientific). Phosphopeptides (~2 µg) were separated using a 2 hr gradient of acetonitrile in 0.125% formic acid.
 
 The phosphoproteome MS analysis scan sequence began with the collection of an FTMS1 spectrum (120,000 resolution with mass range 400–1400 Th). The top 10 most intense ions were selected for MS/MS and fragmented via collision-induced dissociation (CID, CE = 35%) with a maximum injection time of 200 ms and an isolation window of 0.5 Da. FTMS3 precursors were fragmented by high-energy collision-induced dissociation (HCD, CE = 55%) and analyzed at 50,000 resolution (200 Th) with a maximum ion injection time of 300 ms and an isolation window of 1.2. The MultiNotch MS3-based TMT method was applied as described in McAlister et al., 2014.
 
-## Data processing
+### Data processing
 
 Mass spectra were processed using a SEQUEST-based software pipeline. A modified version of ReAdW.exe was used to convert spectra (.raw) to mzXML. All spectra were searched against a database containing the human proteome downloaded from Uniprot (February 4, 2014) and common contaminating protein sequences. Database searches were performed using a peptide mass tolerance of 50 ppm and a fragment ion tolerance of 0.9 Da. TMT on lysine residues and peptide N termini (+229.163 Da) and carbamidomethylation of cysteine residues (+57.021 Da) were fixed modifications, while oxidation of methionine residues (+15.995 Da) and phosphorylation of serine, threonine, and tyrosine residues were set as a variable modification (+79.966 Da).
 
 Peptide-spectrum matches were filtered by linear discriminant analysis to a false discovery rate (FDR) of 2% at the peptide level based on matches to reversed sequences. Linear discriminant analysis considered the following parameters: XCorr, ΔCn, missed cleavages, adjusted PPM, peptide length, fraction of ions matched, charge state, and precursor mass accuracy. Filtered peptides were collapsed further to a final protein-level FDR of 2%. Phosphopeptides were quantified from MS3 scans after filtering with a total TMT reporter signal-to-noise ratio > 200 and isolation specificity at 0.5. Localization of phosphorylation sites was determined using AScore (Huttlin et al., 2010), and sites with an AScore > 13 were selected for further analysis.
 
-## Dependence classification of phosphorylation site time courses
+### Dependence classification of phosphorylation site time courses
 
 Each phosphorylation time course was classified according to its response to (1) EGF stimulation and (2) SHP2 inhibition. This analysis was performed using the union of the two biological replicates, averaging measurements for sites that were found in the intersection of replicates. EGF classes were defined based on phosphorylation dynamics in control cells only. Significant increases and decreases were defined as changes of at least 1.5-fold relative to time 0 (unstimulated cells). The classes comprised the following: (1) fast increase (increased phosphorylation within 5 min of EGF stimulation), (2) medium increase (increased phosphrylation within 10 min), (3) slow increase (increased phosphorylation within 30 min), (4) neutral (no change at any timepoint), and (5) decrease (decreased phosphorylation by any point in the time course).
 
-## EGF classes
+#### EGF classes
 
-NameEarliest timepoint where change is detectedFast increase5 minMedium increase10 minSlow increase30 minNeutraln/aDecreaseAny
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Earliest timepoint where change is detected</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fast increase</td>
+      <td>5 min</td>
+    </tr>
+    <tr>
+      <td>Medium increase</td>
+      <td>10 min</td>
+    </tr>
+    <tr>
+      <td>Slow increase</td>
+      <td>30 min</td>
+    </tr>
+    <tr>
+      <td>Neutral</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Decrease</td>
+      <td>Any</td>
+    </tr>
+  </tbody>
+</table>
 
 Classes of SHP2 responses were defined based on comparison between control cells and cells treated with SHP099 for two hours prior to EGF stimulation. The classes comprised the following: (1) pre-stimulation negative (increased phosphorlyation in SHP099-treated cells compared to control cells, prior to EGF addition), (2) post-stimulation negative (increased phosphorylation in SHP099-treated cells at any point after EGF addition), (3) neutral (no difference between treatment and control at any timepoint), (4) pre-stimulation positive (decreased phosphorylation in SHP099-treated cells compared to control cells, prior to EGF addition), and (5) post-stimulation positive (decreased phosphorylation in SHP099-treated cells at any point after EGF stimulation).
 
-## SHP2 classes
+#### SHP2 classes
 
-NameChange with SHP099 treatmentTiming of changePre-stimulation negativeIncreaseBefore EGF additionPost-stimulation negativeIncreaseAny timepoint after EGF addition, but not beforeNeutralNonen/aPre-stimulation positiveDecreaseBefore EGF additionPost-stimulation positiveDecreaseAny timepoint after EGF addition, but not before
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Change with SHP099 treatment</th>
+      <th>Timing of change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pre-stimulation negative</td>
+      <td>Increase</td>
+      <td>Before EGF addition</td>
+    </tr>
+    <tr>
+      <td>Post-stimulation negative</td>
+      <td>Increase</td>
+      <td>Any timepoint after EGF addition, but not before</td>
+    </tr>
+    <tr>
+      <td>Neutral</td>
+      <td>None</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Pre-stimulation positive</td>
+      <td>Decrease</td>
+      <td>Before EGF addition</td>
+    </tr>
+    <tr>
+      <td>Post-stimulation positive</td>
+      <td>Decrease</td>
+      <td>Any timepoint after EGF addition, but not before</td>
+    </tr>
+  </tbody>
+</table>
 
-## Bioinformatic analysis
+### Bioinformatic analysis
 
 Volcano plots were generated for all sites that were detected in either of the biological replicates. For each site at each timepoint (5 min, 10 min, and 30 min), the mean of [SHP099/DMSO] and [SHP099/WO] fold-changes was plotted against –log10(p-value). Significantly altered phosphorylation sites were visualized based on their membership in the Reactome database (http://software.broadinstitute.org/gsea/msigdb/annotate.jsp, RRID:SCR_003485). Gene set analysis was performed using publicly available GSEA tools (RRID:SCR_003199) (Mootha et al., 2003; Subramanian et al., 2005), which were used to compute the overlap between detected proteins and the REACTOME pathway database. Hierarchical clustering was performed using the clustergram function of MATLAB (RRID:SCR_001622), with a Euclidean distance metric.
 
-## Immunoprecipitation assays
+### Immunoprecipitation assays
 
 MDA-MB-468 cells were seeded at 80% confluence in 10 cm dishes (Nunc, Thermo Fisher Scientific), serum starved for 24 hr, and treated with DMSO carrier or SHP099 (10 µM) for 2 hr before stimulation with EGF (10 nM) for 5 min, 10 min, or 30 min. Cells were then quickly washed with ice-cold PBS, lysed in 1 ml of RIPA buffer (25 mM Tris–HCl (pH 7.6), 150 mM NaCl, 1% Nonidet P-40, 1% sodium deoxycholate, 0.1% sodium dodecyl sulfate, 2 mM ethylenediaminetetraacetic acid [EDTA]) containing protease and phosphatase inhibitors (cOmplete Mini and PhosSTOP, Roche) on ice for 5 min and sonicated briefly to dissolve the pellet. After centrifugation at 16,000 g for 20 min, the lysates were pre-cleared with protein A/G agarose (20421, Pierce) for 1 hr at 4°C. Pre-cleared lysates were incubated with the specified antibodies overnight at 4°C. Immunoprecipitates were then pulled down by incubating lysates with protein A/G agarose for 1 hr at 4°C, washed four times with ice-cold RIPA buffer, eluted in protein loading buffer, and analyzed by Western blotting. For all immunoprecipitation – Western blotting assays, the figures shown are representative results from at least two independent experiments.
 
-## In vitro phosphate release assay
+### In vitro phosphate release assay
 
 Phosphate released from synthetic phosphopeptide substrates by SHP2 was measured using Malachite Green assay (MAK307, Sigma–Aldrich). The dephosphorylation reaction contained 50 nM wild-type SHP2(1–525), 6 µM bisphosphorylated IRS1 ligand for activating SHP2, and varying concentrations of phosphopeptide substrates (0–0.5 mM) in a final volume of 40 µl buffer (60 mM HEPES [pH 7.2], 75 mM KCl, 75 mM NaCl, 1 mM EDTA, 0.05% Tween 20, and 2 mM DTT). The reactions were incubated at room temperature for 5 min in a 384-well plate in triplicate and terminated by the addition of 10 µl malachite green solution (Sigma–Aldrich, Catalog # MAK307) to each well. After further incubation for 30 min at room temperature for color development, absorbance was measured at 620 nm on a plate reader. The amount of phosphate released was determined by comparison with a malachite green standard curve. The reaction rate, defined as micromoles of phosphate released per minute, reflects the dephosphorylation activity of SHP2 toward its phosphopeptide substrates. The sequences of the peptides used in the assay were:
 
-## Proximity ligation assay
+### Proximity ligation assay
 
 MDA-MB-468 cells were grown to 70% confluence on eight-chambered glass slides (Nunc Lab-Tek II, Thermo Scientific), starved in serum-free media for 24 hr, and treated with DMSO carrier or SHP099 (10 µM) for 2 hr prior to stimulation with 1 nM EGF for 2 min. Cells were fixed with ice-cold 4% (v/v) paraformaldehyde for 15 min and permeabilized with 0.125% Tween-20 in PBS for 5 min prior to incubation in 1× blocking solution (1× PBS, 10% BSA, 10% donkey serum, 10% goat serum) for 1 hr at room temperature. Cells were then incubated with mouse anti-EGFR (1:1000, clone 13G8, Millipore) and rabbit anti-GAB1 (1:100, Catalog # SAB4501060, Sigma) overnight at 4°C in a humidified chamber. The proximity ligation assay was conducted using a DuoLink In Situ Mouse/Rabbit PLA kit (Sigma–Aldrich, Catalog # DUO92014) according to the manufacturer’s instructions. All images were collected on a confocal laser scanning microscope (Zeiss LSM 880 with Airyscan) equipped with a 63× oil immersion objective lens (Plan Apo, NA = 1.4) and analyzed using CellProfiler software (RRID:SCR_007358). Three independent replicates (n = 3) were performed.

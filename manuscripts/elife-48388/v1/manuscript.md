@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.48388.001 Trypanosomes are important disease agents of humans, livestock and cold-blooded species, including fish. The cellular morphology of trypanosomes is central to their motility, adaptation to the host’s environments and pathogenesis. However, visualizing the behaviour of trypanosomes resident in a live vertebrate host has remained unexplored. In this study, we describe an infection model of zebrafish ( Danio rerio ) with Trypanosoma carassii . By combining high spatio-temporal resolution microscopy with the transparency of live zebrafish, we describe in detail the swimming behaviour of trypanosomes in blood and tissues of a vertebrate host. Besides the conventional tumbling and directional swimming, T. carassii can change direction through a ‘whip-like’ motion or by swimming backward. Further, the posterior end can act as an anchoring site in vivo. To our knowledge, this is the first report of a vertebrate infection model that allows detailed imaging of trypanosome swimming behaviour in vivo in a natural host environment.
+Trypanosomes are important disease agents of humans, livestock and cold-blooded species, including fish. The cellular morphology of trypanosomes is central to their motility, adaptation to the host’s environments and pathogenesis. However, visualizing the behaviour of trypanosomes resident in a live vertebrate host has remained unexplored. In this study, we describe an infection model of zebrafish (Danio rerio) with Trypanosoma carassii. By combining high spatio-temporal resolution microscopy with the transparency of live zebrafish, we describe in detail the swimming behaviour of trypanosomes in blood and tissues of a vertebrate host. Besides the conventional tumbling and directional swimming, T. carassii can change direction through a ‘whip-like’ motion or by swimming backward. Further, the posterior end can act as an anchoring site in vivo. To our knowledge, this is the first report of a vertebrate infection model that allows detailed imaging of trypanosome swimming behaviour in vivo in a natural host environment.
 
 ## Introduction
 
@@ -42,23 +42,89 @@ The transparency of the zebrafish allows high-resolution, real-time imaging of t
 
 ## Materials and methods
 
-## Zebrafish lines and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>elongation factor-1α (ef1a)</td>
+      <td>NA</td>
+      <td>ZDB-GENE-990415–52</td>
+      <td>template for primers for RQ-PCR analysis</td>
+    </tr>
+    <tr>
+      <td>Gene (Trypanosoma carassii)</td>
+      <td>heat-shock protein-70 (hsp70)</td>
+      <td>NA</td>
+      <td>GeneBank-FJ970030.1</td>
+      <td>template for primers for RQ-PCR analysis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Cyprinus carpio)</td>
+      <td>Wild type common carp, R3xR8 strain</td>
+      <td>doi:10.1016/0044-8486(95)91961 T</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Wild type zebrafish, AB strain</td>
+      <td>European Zebrafish Resource Center (EZRC)</td>
+      <td>https://www.ezrc.kit.edu/index.php</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>casper strain</td>
+      <td>White et al. (2008)</td>
+      <td></td>
+      <td>optically transparent</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(fli:egfp)y1 (casper)</td>
+      <td>doi:10.1038/nrg888</td>
+      <td></td>
+      <td>optically transparent line, marking the vasculature with green fluorescent protein</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Trypanosoma carassii)</td>
+      <td>TsCc-NEM strain</td>
+      <td>Overath et al. (1998)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish lines and maintenance
 
 Zebrafish were kept and handled according to the Zebrafish Book (zfin.org) and animal welfare regulations of The Netherlands. Adult zebrafish were reared at the aquatic research facility of Wageningen University and Research (Carus). Zebrafish embryos and larvae were raised in egg water (0.6 g/L sea salt, Sera Marin, Heinsberg, Germany) at 27°C with a 12:12 light-dark cycle. From 5 days post fertilization (dpf) until 14 dpf, larvae were fed once a day with Tetrahymena. Larvae older than 10 dpf were also fed daily with dry feed ZM-100 (zmsystem, UK). The zebrafish lines used in this study included: wild type AB, optically transparent casper lines (White et al., 2008), a transgenic Tg(fli:egfp)y1 line marking the vasculature (Lawson and Weinstein, 2002) or crosses thereof. All animals were handled in accordance with good animal practice as defined by the European Union guidelines for handling of laboratory animals (http://ec.europa.eu/environment/chemicals/lab_animals/home_en.htm). All animal work at Wageningen University was approved by the local experimental animal committee (DEC number 2014095).
 
-## Trypanosoma carassii culture
+### Trypanosoma carassii culture
 
 Trypanosoma carassii (strain TsCc-NEM) was previously cloned and characterized (Overath et al., 1998) and maintained in our laboratory by syringe passage through common carp (Cyprinus carpio, R3xR8 strain; Irnazarow, 1995). To this end, adult common carp were infected by intraperitoneal injection of 1 × 104 T. carassii; approximately 3 weeks post-infection and before the parasitaemia reached 1 × 106/mL, carp were euthanized in 0.6 g/L tricaine methane sulfonate (TMS, Crescent Research Chemicals) and bled via the caudal vein using a final concentration of 10–20 Units heparin/mL of blood. Trypanosomes in blood were imaged immediately or blood was kept at 4°C overnight in siliconized tubes. The following morning, trypanosomes were enriched at the interface between the red blood cells and plasma, and this buffy coat was recovered and centrifuged at 600xg for 8 min at room temperature. Trypanosomes were resuspended in RPMI without L-glutamine and phenol red (Lonza, Verviers, Belgium). To separate trypanosomes from red blood cells, the suspension was loaded on top of a 100% Ficoll-Paque layer (GE Healthcare, Uppsala, Sweden) and centrifuged at room temperature for 20 min, at 800xg. Cells at the interphase were transferred to a new 50 mL tube and washed with RPMI. Trypanosomes were then resuspended at a density of 5 × 105–1×106/mL and cultured in 75 or 165 cm2 flasks in complete medium: 22.5% MEM with L-glutamine and phenol red (Gibco), 22.5% Leibovitz’s L-15 medium without L-glutamine, with phenol red (Lonza, Verviers, Belgium), 45% Hanks’ Balanced Salt solution (HBSS) with phenol red (Lonza, Verviers, Belgium), 10% sterile water, completed with 10% pooled carp serum, 2% 200 mM L-glutamine (Fisher Scientific) and 1% penicillin-streptomycin solution (10.000:10.000, Fisher Scientific). Cultures were incubated at 27°C without CO2. Trypanosomes were kept at a density below 5 × 106/mL and subcultured one to three times a week. Using this medium, T. carassii was kept in culture without losing infectivity for up to 2 months. For zebrafish infection, trypanosomes were cultured for 1 week and never longer than 3 weeks.
 
-## Zebrafish infection with Trypanosoma carassii and morbidity signs
+### Zebrafish infection with Trypanosoma carassii and morbidity signs
 
 Cultured trypanosomes were centrifuged at 800xg for 5 min and resuspended in 2% polyvinylpyrrolidone (PVP, Sigma-Aldrich) prior to injection. PVP was used to increase the viscosity of the medium to ensure a homogenous trypanosome solution throughout the injection period. Trypanosome number in 1–2 nL drop size varied depending on the intended dose and was monitored at the beginning and after 50 injections using a Bürker counting chamber. Prior to injection, 5 dpf zebrafish larvae were anaesthetized with 0.017% ethyl 3-aminobenzoate methanesulfonate (MS-222, Tricaine, Sigma-Aldrich) in egg water, and injected intravenously. Experimental groups received either T. carassii resuspended in PVP solution or PVP solution alone as a negative control. Injected larvae were directly transferred into pre-warmed egg water and kept in the incubator at 27°C. Viability was monitored daily. During the course of the optimization of the infection model, we noticed that some fish displayed lethargic behaviour and no escape reflex to a pipette, such fish usually had a high parasitaemia leading to death. These clinical signs were therefore used to monitor morbidity and the progression of infection. When necessary, fish were removed from the experiment and euthanized with an overdose of anaesthetic (0.4% MS-222).
 
-## Real-time quantitative PCR
+### Real-time quantitative PCR
 
 At various time points after infection, three to six zebrafish larvae were sacrificed by an overdose of anaesthetic, pooled and transferred to RNA later (Ambion). Total RNA isolation was performed with the Qiagen RNeasy Micro Kit (QIAgen, Venlo, The Netherlands) according to the manufacturer’s protocol. Next, 250–500 ng of total RNA was used as a template for cDNA synthesis using SuperScript III Reverse Transcriptase and random hexamers (Invitrogen, Carlsbad, CA, USA), following the manufacturer’s instructions with an additional DNase step using DNase I Amplification Grade (Invitrogen, Carlsbad, CA, USA). cDNA was then diluted 25 times to serve as template for real-time quantitative PCR (RT-qPCR) using Rotor-Gene 6000 (Corbett Research, QIAgen), as previously described (Forlenza et al., 2012; Forlenza et al., 2008). Primers for zebrafish elongation factor-1α (ef1a Fw: 3’-CTGGAGGCCAGCTCAAACAT-5’ and RV: 3’-ATCAAGAAGAGTAGTAGTACCG-5’; ZDB-GENE-990415–52) and T. carassii heat-shock protein-70 (FW: 3’-CAGCCGGTGGAGCGCGT-5’ 3’-AGTTCCTTGCCGCCGAAGA-5’; GeneBank-FJ970030.1) were obtained from Eurogentec (Liège, Belgium). Gene expression was normalized to the ef1a housekeeping gene and expressed relative to the time point PVP control.
 
-## High-speed light microscopy, image and video analysis
+### High-speed light microscopy, image and video analysis
 
 For imaging of T. carassii swimming behaviour in vitro, a high-speed camera was mounted on an automated DM6b upright digital microscope (Leica Microsystems), controlled by Leica LASX software (version 3.4.2.) and equipped with 100x oil (NA 1.32), 40x (NA 0.85, DIC) and 20x (NA 0.8, DIC) short distance objectives (Leica Microsystems). For high-speed light microscopy a (12 bits) Photron APX-RS High Speed Camera (Photron, resolution (128 × 16) to (1024 × 1024) pixels), with Leica HC 1x Microscope C-mount Adapter was used, controlled by Photron FASTCAM Viewer (PFV) software (version 3.5.1). Images were acquired at a resolution of 900 × 900 or 768 × 880 pixels depending on the C-mount adapter. Trypanosomes were transferred to non-coated microscopic slides (Superforst, Thermo Scientific), covered with a 24 × 50 mm coverslip and imaged immediately and for no longer than 10 min.
 
@@ -70,7 +136,7 @@ For fluorescence microscopy of Tg(fli1:egfp)y1 casper lines, marking the zebrafi
 
 ## Results
 
-## Characterization of T. carassii swimming behaviour in vitro
+### Characterization of T. carassii swimming behaviour in vitro
 
 Previous in vitro studies reported on the heterogeneity in swimming behaviour of African trypanosomes, and on how this was dependent on the viscosity of the culture medium or host blood (Bargul et al., 2016; Engstler et al., 2007; Heddergott et al., 2012). To investigate the swimming behaviour of T. carassii in fish blood or culture medium, we used high spatio-temporal resolution microscopy. For the initial description of trypanosome swimming behaviour in vitro, we adopted the classification and quantification method described previously (Bargul et al., 2016): persistent swimmers, trypanosomes exhibiting a directional movement covering several hundreds of micrometres; tumblers, trypanosomes exhibiting a non-directional movement and travelling no further than their body length; and intermediate swimmers, trypanosomes alternating periods of directional and non-directional movement.
 
@@ -78,7 +144,9 @@ Analysis of the swimming behaviour of trypanosomes in blood of infected carp rev
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/48388/elife-48388-fig1-v1.jpg)
 
-**Figure 1.:** Blood was freshly drawn from carp and T. carassii swimming behaviour analysed immediately using high-resolution microscopy at 240 frames per second (fps). (A) Relative percentage of tumblers, and intermediate or persistent swimmers (defined in the text) was calculated over a total number of 944 T. carassii, isolated from six different carp infections and imaged over 60 independent acquisitions. (B) Representative tracks of a tumbler (green), intermediate (yellow) and persistent (red) swimmer. The diameter of the circles (23 µm) indicates the average cell-body size of a trypanosome as also shown in (C). The inset table summarizes the straight-line distance covered by the trypanosome (between the first and last track point); the total track length, that is the path covered by the trypanosome in approximately 20 s of acquisition time, indicated in matching colours; and the average speed (μm/s) was calculated on a selection of the acquisitions used in (A). For tumblers, the displacement of the posterior end was used as tracking point. (C) Detailed image of two trypanosomes indicating the total body length including the flagellum (left) and the total cell-body length excluding the flagellum (right). Measurements were acquired on high-resolution images of at least 10 freshly isolated trypanosomes obtained from four independent infections, using more than 20 frames within the same acquisition. Quantification of trypanosome length, swimming speed and directionality was performed with ImageJ-Fijii using the MTrack plug-in. Video 1 displays high-speed videos of the swimming behaviour of tumblers, intermediate and persistent swimmers in carp blood, or of trypanosomes in serum or culture medium.  10.7554/eLife.48388.004Figure 1—source data 1.  10.7554/eLife.48388.005Figure 1—source data 2.
+**Figure 1.:** Blood was freshly drawn from carp and T. carassii swimming behaviour analysed immediately using high-resolution microscopy at 240 frames per second (fps). (A) Relative percentage of tumblers, and intermediate or persistent swimmers (defined in the text) was calculated over a total number of 944 T. carassii, isolated from six different carp infections and imaged over 60 independent acquisitions. (B) Representative tracks of a tumbler (green), intermediate (yellow) and persistent (red) swimmer. The diameter of the circles (23 µm) indicates the average cell-body size of a trypanosome as also shown in (C). The inset table summarizes the straight-line distance covered by the trypanosome (between the first and last track point); the total track length, that is the path covered by the trypanosome in approximately 20 s of acquisition time, indicated in matching colours; and the average speed (μm/s) was calculated on a selection of the acquisitions used in (A). For tumblers, the displacement of the posterior end was used as tracking point. (C) Detailed image of two trypanosomes indicating the total body length including the flagellum (left) and the total cell-body length excluding the flagellum (right). Measurements were acquired on high-resolution images of at least 10 freshly isolated trypanosomes obtained from four independent infections, using more than 20 frames within the same acquisition. Quantification of trypanosome length, swimming speed and directionality was performed with ImageJ-Fijii using the MTrack plug-in. Video 1 displays high-speed videos of the swimming behaviour of tumblers, intermediate and persistent swimmers in carp blood, or of trypanosomes in serum or culture medium.
+
+![Video 1.](https://cdn.elifesciences.org/articles/48388/elife-48388-video1.mp4.jpg)
 
 Comparison of the movement of freshly isolated trypanosomes kept in either carp serum or culture medium revealed comparable swimming behaviour (Video 1, 00:58 s - 1:15 min). Culture in medium or serum for a period of up to 2 months did not alter morphology, the proportions of tumblers, intermediate or persistent swimmers (data not shown), suggesting that the swimming behaviour is an intrinsic property of trypanosomes in blood.
 
@@ -86,23 +154,31 @@ In freshly drawn blood from infected carp, trypanosomes were observed anchored t
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/48388/elife-48388-fig2-v1.jpg)
 
-**Figure 2.:** T. carassii attaches to cells or surfaces through its posterior end leaving the flagellum free to move.(A) Blood was freshly drawn from carp and trypanosomes' swimming behaviour immediately imaged using high-resolution microscopy at 240 frames fps. Images are frames (indicated by the numbers) of four different locations within the same field of view, selected from the corresponding Video 2. Note how the posterior end of the parasites is attached to the red blood cell and the flagellum is free to move. (B) Selected frames from Video 2, at the indicated time points, show how T. carassii can also adhere to glass surfaces through the posterior end (white arrow) leaving the body and flagellum free to move.  10.7554/eLife.48388.008Figure 2—source data 1.T. carassii infection and kinetics of parasitaemia.
+**Figure 2.:** (A) Blood was freshly drawn from carp and trypanosomes' swimming behaviour immediately imaged using high-resolution microscopy at 240 frames fps. Images are frames (indicated by the numbers) of four different locations within the same field of view, selected from the corresponding Video 2. Note how the posterior end of the parasites is attached to the red blood cell and the flagellum is free to move. (B) Selected frames from Video 2, at the indicated time points, show how T. carassii can also adhere to glass surfaces through the posterior end (white arrow) leaving the body and flagellum free to move.
 
-## Establishment of a Trypanosoma carassii infection model in zebrafish
+![Video 2.](https://cdn.elifesciences.org/articles/48388/elife-48388-video2.mp4.jpg)
+
+**Video 2.:** Trypanosomes were also observed to swim backwards.
+
+### Establishment of a Trypanosoma carassii infection model in zebrafish
 
 To observe the swimming behaviour of T. carassii in a host, we developed an infection model in transparent zebrafish larvae. First, the susceptibility and kinetics of parasitaemia were determined. Infection of 5 day-post-fertilization (dpf) zebrafish resulted in an acute infection associated with low survival (Figure 3A) and high parasitaemia (Figure 3B), independent of the infection dose. This confirms that zebrafish, similarly to other cyprinid fish, are susceptible to T. carassii infection.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/48388/elife-48388-fig3-v1.jpg)
 
-**Figure 3.:** T. carassii infection.Zebrafish larvae (5 dpf) were injected with the indicated number of T. carassii per fish. PVP was used as injection control. (A) Kinetics of zebrafish larval survival. Fish (n = 40/group) were observed daily for signs of infection and survival. (B) Kinetics of parasitaemia. Trypanosome levels were quantified by real-time quantitative-PCR using T. carassii hsp70-specific primers. RNA of five fish was pooled at each time point. Expression was normalized relative to the host house-keeping gene elongation factor-1 alpha and expressed relative to fish injected with the corresponding trypanosome dose at time point zero.
+**Figure 3.:** Zebrafish larvae (5 dpf) were injected with the indicated number of T. carassii per fish. PVP was used as injection control. (A) Kinetics of zebrafish larval survival. Fish (n = 40/group) were observed daily for signs of infection and survival. (B) Kinetics of parasitaemia. Trypanosome levels were quantified by real-time quantitative-PCR using T. carassii hsp70-specific primers. RNA of five fish was pooled at each time point. Expression was normalized relative to the host house-keeping gene elongation factor-1 alpha and expressed relative to fish injected with the corresponding trypanosome dose at time point zero.
 
-## In vivo, T. carassii rapidly adapts its swimming behaviour to the heterogenous blood environment
+### In vivo, T. carassii rapidly adapts its swimming behaviour to the heterogenous blood environment
 
 Having established that T. carassii can infect zebrafish, we took advantage of the transparency of zebrafish larvae to characterize trypanosome swimming behaviour in vivo. Zebrafish larvae were infected at 5 dpf with 200 T. carassii per fish and imaged using either live stream imaging (20 fps) or high spatio-temporal resolution microscopy (500 fps) at various time points after infection and in differently sized blood vessels. When parasitaemia was low, typically early during infection, trypanosomes were most readily detected in small to medium-sized blood vessels with reduced blood flow and a lower density of red blood cells, such as the tail tip loop or intersegmental capillaries (ISCs). In the tail tip loop, trypanosomes were dragged passively by the bloodstream along with red blood cells (Figure 4A, Video 3, 0 - 42 s) and were seen to either curl or stretch the cell body as well as occasionally propel their flagellum in the same or opposite direction to the blood flow (Video 3, 00:42 s - 01:57 min), but were never seen swimming faster than the flow. ISCs are narrow, with a diameter equivalent to a single red blood cell. In ISCs, trypanosomes were elongated with their flagellum in the opposite direction to the blood flow (Figure 4B, Video 3, 01:57 - 02:49 min); the diameter of the vessel, the speed of the flow and the presence of colliding red blood cells within the ISC, force the trypanosomes to passively move forward in the direction of the flow.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/48388/elife-48388-fig4-v1.jpg)
 
-**Figure 4.:** T. carassii swimming behaviour in blood vessels of various sizes.In general, in vessels with an intact blood flow (grey arrows) and a normal number of red blood cells (RBC), trypanosomes are dragged passively by the flow along with RBC. Under these conditions, trypanosomes were never seen swimming directionally against the flow or faster than RBC. (A) In medium-sized blood vessels with moderate flow, while being dragged passively by the flow, trypanosomes can either curl or stretch their body, as well as occasionally propel their flagellum in the same or opposite direction to the blood flow. (B) In small-sized blood vessels of one-cell diameter, such as intersegmental capillaries (ISC), trypanosomes are pushed forward by the blood flow and by colliding RBC. (C) In large-sized blood vessels, the blood flow is very strong and the density of RBC high, making it more difficult to detect trypanosomes without the aid of high-speed microscopy. Only the occasional trypanosome that would slow down by bouncing against the vessel wall would be visible in the cell-free layer. Video 3 contains high-speed videos showing details of the trypanosome movements schematically depicted above.
+**Figure 4.:** In general, in vessels with an intact blood flow (grey arrows) and a normal number of red blood cells (RBC), trypanosomes are dragged passively by the flow along with RBC. Under these conditions, trypanosomes were never seen swimming directionally against the flow or faster than RBC. (A) In medium-sized blood vessels with moderate flow, while being dragged passively by the flow, trypanosomes can either curl or stretch their body, as well as occasionally propel their flagellum in the same or opposite direction to the blood flow. (B) In small-sized blood vessels of one-cell diameter, such as intersegmental capillaries (ISC), trypanosomes are pushed forward by the blood flow and by colliding RBC. (C) In large-sized blood vessels, the blood flow is very strong and the density of RBC high, making it more difficult to detect trypanosomes without the aid of high-speed microscopy. Only the occasional trypanosome that would slow down by bouncing against the vessel wall would be visible in the cell-free layer. Video 3 contains high-speed videos showing details of the trypanosome movements schematically depicted above.
+
+![Video 3.](https://cdn.elifesciences.org/articles/48388/elife-48388-video3.mp4.jpg)
+
+**Video 3.:** Under these conditions, trypanosomes are dragged passively by the flow or pushed forward by colliding RBC.
 
 In larger diameter vessels with a strong blood flow and higher density of red blood cells, such as the cardinal caudal vein (Video 3, 02:49 - 04:11 min) or artery (Video 3, 04:11 - 04:37 min), detection and description of swimming behaviour was greatly aided by the use of high spatio-temporal resolution microscopy. In these vessels as well, trypanosomes are dragged passively by the bloodstream, curling among the densely packed red blood cells. In real-time speed, only the occasional trypanosome was seen to slow down by rolling or bouncing against the vessel in the peripheral cell-free layer (Figure 4C and Video 3, 03:53 - 04:11 min). In general, the typical tumbling movement described in vitro was not observed in the fish, except for those locations where the blood flow was highly reduced or absent as in sharp turns of the tail tip (Video 3, 04:37 - 05:09 min), and in locations where leukocytes adhering to the endothelium would create a local disturbance of the flow rate allowing trypanosomes to tumble (Video 3, 05:09 - 05:24 min).
 
@@ -110,39 +186,55 @@ Physiological changes in the blood flow or red blood cells density associated wi
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/48388/elife-48388-fig5-v1.jpg)
 
-**Figure 5.:** T. carassii swimming behaviour in blood vessels with altered blood flow or red blood cell (RBC) number.(A) Blood vessels with a reduced blood flow (dashed arrows) and fewer RBC. (B) Blood vessels with an intact blood flow (grey arrows) but with a temporary absence of RBC. In both cases, trypanosomes can swim directionally (black straight arrows) by propelling the flagellum (distorted circular arrows) in the same or opposite direction to the flow, or can tumble (circular arrows). Video 4 contains high-speed videos showing trypanosome movement in medium-sized blood vessels and in capillaries as schematically depicted.
+**Figure 5.:** (A) Blood vessels with a reduced blood flow (dashed arrows) and fewer RBC. (B) Blood vessels with an intact blood flow (grey arrows) but with a temporary absence of RBC. In both cases, trypanosomes can swim directionally (black straight arrows) by propelling the flagellum (distorted circular arrows) in the same or opposite direction to the flow, or can tumble (circular arrows). Video 4 contains high-speed videos showing trypanosome movement in medium-sized blood vessels and in capillaries as schematically depicted.
+
+![Video 4.](https://cdn.elifesciences.org/articles/48388/elife-48388-video4.mp4.jpg)
+
+**Video 4.:** Under these conditions, trypanosomes can repeatedly invert direction, swim directionally or tumble.
 
 Altogether, we observed that T. carassii can adopt different swimming behaviours all greatly influenced by the blood flow, size of the blood vessel and presence of red blood cells. Most frequently, in blood vessels with an intact blood flow and high density of red blood cells, trypanosomes are dragged passively by the flow along with red blood cells, in a curling motion. Occasionally, when the blood flow or the number of red blood cells is reduced, trypanosomes can swim directionally and persistently (swimmers) in blood vessels. This indicates that, at least in vivo, it is not possible to assign a specific swimming behaviour to trypanosomes in blood vessels; on the contrary, trypanosomes rapidly adapt their swimming behaviour to changes in microenvironmental conditions.
 
-## Trypanosomes can attach in vivo by anchoring through their posterior end
+### Trypanosomes can attach in vivo by anchoring through their posterior end
 
 In addition to being dragged passively within blood vessels, trypanosomes could often be seen attached to the endothelium on the dorsal luminal side of the cardinal caudal vein (referred to as caudal vein, Figure 6A). Remarkably, despite the strong blood flow, attachment (anchoring) could last for several seconds (Video 5, 0 - 01:11 min) and involved a small area of the posterior end of the trypanosome, leaving the cell body and the flagellum free to move (Video 5, 01:11 - 01:59 min). Although anchoring could be observed already at 1 dpi, it was more easily detected at later stages of the infection. Anchoring was not the only mode of attachment, trypanosomes were also seen crawling along the vessel wall involving the entire cell body (Figure 6B, and Video 5, 01:59 - 02:38 min). Within blood vessels, anchoring occurred exclusively at the dorsal side of the caudal vein, whereas crawling could occur anywhere in the vein. No attachment or crawling was observed in arteries or capillaries, independently of the speed of the blood flow.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/48388/elife-48388-fig6-v1.jpg)
 
-**Figure 6.:** T. carassii attachment to the blood vessel wall.(A) T. carassii anchor themselves by their posterior end, leaving the cell body and the flagellum free to move. Anchoring occurred only to the dorsal luminal side of the caudal vein and was not observed in other blood vessels. (B) Trypanosomes crawl along the vessel wall of the caudal vein; the transparent square allows visualization of trypanosomes through the pack of red blood cells. Crawling occurred everywhere in the vein and involved the entire cell body. Video 5 contains high-speed videos showing anchored and crawling T. carassii in the caudal vein as schematically depicted above.
+**Figure 6.:** (A) T. carassii anchor themselves by their posterior end, leaving the cell body and the flagellum free to move. Anchoring occurred only to the dorsal luminal side of the caudal vein and was not observed in other blood vessels. (B) Trypanosomes crawl along the vessel wall of the caudal vein; the transparent square allows visualization of trypanosomes through the pack of red blood cells. Crawling occurred everywhere in the vein and involved the entire cell body. Video 5 contains high-speed videos showing anchored and crawling T. carassii in the caudal vein as schematically depicted above.
+
+![Video 5.](https://cdn.elifesciences.org/articles/48388/elife-48388-video5.mp4.jpg)
+
+**Video 5.:** T. carassii movement in fluids outside the blood vessels and in tissues.
 
 Altogether, our observations show that T. carassii attaches to host cells through their posterior end, both in vitro (Video 2) and in vivo, leaving the flagellum free to move, and suggest that the posterior end acts as an anchoring site. Whether the exact anchoring site corresponds to the flagellum base or to the neck of the flagellar pocket and whether it may possibly favour extravasation, could not be confirmed under the current conditions and will be the focus of further investigation.
 
-## T. carassii movement in fluids outside the blood vessels and in tissues
+### T. carassii movement in fluids outside the blood vessels and in tissues
 
 A characteristic of T. carassii infections is extravasation from blood vessels into surrounding tissues and tissue fluids (Haag et al., 1998; Lom and Dyková, 1992). In zebrafish, this was observed at 1 dpi and allowed us to investigate the swimming behaviour in tissue fluids other than blood, including those of the peritoneal and heart cavities. In these locations, we could thus evaluate the swimming behaviour of trypanosomes in the absence of red blood cells and of blood flow. In these environments, the swimming behaviour was similar to that observed in vitro (Video 1 and Figure 1), where the majority of the trypanosomes were tumblers (Figure 7 and Video 6, 0 – 42 s). In a field of view of more than 100 trypanosomes in the peritoneal cavity, only three persistent swimmers could be identified (Figure 7B and Video 6, 00:42 s - 01:35 min). Furthermore, trypanosomes were seen anchored by their posterior end to cells of the peritoneal membrane in a manner similar to that observed in the caudal vein (Video 6, 34 - 42 sec).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/48388/elife-48388-fig7-v1.jpg)
 
-**Figure 7.:** T. carassii swimming behaviour in tissue fluids outside blood.(A) Schematic representation of T. carassii swimming in the peritoneal or heart cavity, both environments without hydrodynamic flow and red blood cells; here, most of the trypanosomes are tumblers, only occasionally was a persistent swimmer observed. (B) Selected frame from Video 6, capturing trypanosomes in the peritoneal cavity. More than 100 trypanosomes are present but are not all in focus in the selected frame; the majority are tumblers. The tracks of four representative tumblers (green) and of the only three persistent swimmers (red) are shown. Video 6 contains high-speed videos showing the location and swimming behaviours described above.
+**Figure 7.:** (A) Schematic representation of T. carassii swimming in the peritoneal or heart cavity, both environments without hydrodynamic flow and red blood cells; here, most of the trypanosomes are tumblers, only occasionally was a persistent swimmer observed. (B) Selected frame from Video 6, capturing trypanosomes in the peritoneal cavity. More than 100 trypanosomes are present but are not all in focus in the selected frame; the majority are tumblers. The tracks of four representative tumblers (green) and of the only three persistent swimmers (red) are shown. Video 6 contains high-speed videos showing the location and swimming behaviours described above.
+
+![Video 6.](https://cdn.elifesciences.org/articles/48388/elife-48388-video6.mp4.jpg)
+
+**Video 6.:** These include the peritoneal and heart cavities.
 
 Next, we analysed the swimming behaviour of T. carassii in tissues: the tail tip, fins, muscle and interstitial space lining the blood vessels. Here, we observed no apparent consistency in swimming behaviour, and trypanosomes alternated between directional and non-directional swimming depending on the compactness of the tissue. For example, in the compact tissue of the fins, most trypanosomes were directional swimmers (Figure 8A–B), although their path can often be interrupted or hindered by the compactness of the tissue. Swimmers moved at an average speed of 47.5 μm/s, covering up to 187 μm, before disappearing from view or colliding with an obstacle that resulted in a change in direction (Video 7, 0 – 47 s). Similar to the observations made in vitro (Video 2), trypanosomes could invert their swimming direction by swimming backwards (Figure 8A–B, Video 7, 00:47 s - 01:07 min). In vivo, backward swimming was only observed in the fins.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/48388/elife-48388-fig8-v1.jpg)
 
-**Figure 8.:** T. carassii swimming behaviour in tissues.(A) Schematic representation of T. carassii swimming in compact tissues such as those in the fins. Most trypanosomes are directional swimmers and both forward and backward swimming were observed. (B) Selected frame from Video 7 showing the tracks of representative persistent swimmers identified in the fins. (C) In less compact tissues and in capillaries without blood flow, trypanosomes could invert their swimming direction in a ‘whip-like’ motion using the available three-dimensional space of the capillary or tissue. The ‘whip-like’ motion combines the swing of the flagellum along one plane (thin arc arrows), accompanied by a 180°C rotation of the flexible cell body along a third axis (rotational arrows). (D) In tissues where trypanosomes reach dead ends such as the interstitial space between vessels, persistent forward swimming translates into a drilling (auger) movement. Video 7 and Video 8 contain high-speed videos showing all locations and swimming behaviours schematically depicted.
+**Figure 8.:** (A) Schematic representation of T. carassii swimming in compact tissues such as those in the fins. Most trypanosomes are directional swimmers and both forward and backward swimming were observed. (B) Selected frame from Video 7 showing the tracks of representative persistent swimmers identified in the fins. (C) In less compact tissues and in capillaries without blood flow, trypanosomes could invert their swimming direction in a ‘whip-like’ motion using the available three-dimensional space of the capillary or tissue. The ‘whip-like’ motion combines the swing of the flagellum along one plane (thin arc arrows), accompanied by a 180°C rotation of the flexible cell body along a third axis (rotational arrows). (D) In tissues where trypanosomes reach dead ends such as the interstitial space between vessels, persistent forward swimming translates into a drilling (auger) movement. Video 7 and Video 8 contain high-speed videos showing all locations and swimming behaviours schematically depicted.
+
+![Video 7.](https://cdn.elifesciences.org/articles/48388/elife-48388-video7.mp4.jpg)
 
 In the interstitial space lining the cardinal blood vessels (artery and vein), trypanosomes swim directionally or tumble (Video 8, 0 - 23 s), but can also use the space between cells to pin themselves and effectively invert swimming direction in a ‘whip-like’ motion, a movement distinct from the more random tumbling movement. (Video 8, 00:23 s - 01:17 min). Such ‘whip-like’ movement was also observed for trypanosomes swimming in ISC in which the blood flow is absent, and in more compact tissues such as the fin (Figure 8C, Video 8, 01:17 - 02:18 min). The ‘whip-like’ motion combines the swing of the flagellum along one plane, similar to the movement of tumblers on a glass surface (Video 1), accompanied by a 180°C rotation of the cell body along a third axis. This is indeed possible only in vivo where the cylindrical form of a capillary or interstitial space within a tissue allow the very flexible trypanosome cell body to move in three dimensions. Furthermore, in compact tissues that do not present a ready passage for trypanosomes, the persistent swimming translates into a drilling (auger) movement, which in some cases can lead to an enlargement of the space between somatic cells (Figure 8D, Video 8, 02:18 - 03:52 min).
 
+![Video 8.](https://cdn.elifesciences.org/articles/48388/elife-48388-video8.mp4.jpg)
+
 Altogether, in tissues and tissue fluids T. carassii can adopt all swimming movements and can adhere through the posterior end to endothelial cells of the peritoneal cavity. Besides the previously described tumbling and directional (forward) swimming, trypanosomes were also able to invert direction through a ‘whip-like’ motion or by backward swimming.
 
-## Progression of T. carassii infection and associated clinical signs
+### Progression of T. carassii infection and associated clinical signs
 
 Physiological changes associated with the progression of the infection can affect the conditions within blood vessels or host tissues, and thus influence trypanosome behaviour. In addition to extravasation (Videos 6–8), which occurred as early as 1 dpi, we observed onset of anaemia and vasodilation of blood vessels.
 
@@ -150,13 +242,15 @@ Non-infected larvae have a strong and steady blood flow, with all blood vessels 
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/48388/elife-48388-fig9-v1.jpg)
 
-**Figure 9.:** T. carassii infection.Zebrafish larvae (5 dpf) were infected with 200 T. carassii or injected with PVP as non-infected control. Images are selected frames depicting the caudal artery, extracted from high-speed videos where trypanosomes (white open-arrow heads) and red blood cells (RBC, black open-arrow heads) were identified and tracked. (A) Artery of a control, non-infected, fish. Only RBC are present. (B) Artery of an infected fish, 1 dpi, showing a high ratio of RBC:trypanosomes. This frame corresponds to seconds 04:20-04:23 in Video 3, where the same trypanosomes were tracked. (C) Artery of an infected fish, 6 dpi, showing a reduced ratio of RBC:trypanosomes, indicating the onset of anaemia. (D) Artery of an infected fish suffering from severe anaemia, 8dpi, where only trypanosomes are present. The frame is extracted from the corresponding Video 9. Scale bars indicate 25 µm.
+**Figure 9.:** Zebrafish larvae (5 dpf) were infected with 200 T. carassii or injected with PVP as non-infected control. Images are selected frames depicting the caudal artery, extracted from high-speed videos where trypanosomes (white open-arrow heads) and red blood cells (RBC, black open-arrow heads) were identified and tracked. (A) Artery of a control, non-infected, fish. Only RBC are present. (B) Artery of an infected fish, 1 dpi, showing a high ratio of RBC:trypanosomes. This frame corresponds to seconds 04:20-04:23 in Video 3, where the same trypanosomes were tracked. (C) Artery of an infected fish, 6 dpi, showing a reduced ratio of RBC:trypanosomes, indicating the onset of anaemia. (D) Artery of an infected fish suffering from severe anaemia, 8dpi, where only trypanosomes are present. The frame is extracted from the corresponding Video 9. Scale bars indicate 25 µm.
+
+![Video 9.](https://cdn.elifesciences.org/articles/48388/elife-48388-video9.mp4.jpg)
 
 Highly infected fish that are anaemic also showed vasodilation, a clinical sign typical of advanced stages of infection (>3 dpi) with T. carassii (Figure 10A–C), most obviously observed in the caudal vein. The degree of vasodilation differed between individuals, and in extreme cases, the diameter of the caudal vein could be up to three times larger than that of control fish (Figure 10D). Vasodilation also occurs in the caudal artery but to a lesser extent (not shown). Interestingly, while the dilated blood vessels of larvae are packed with trypanosomes and have limited circulation, the number of extravasated trypanosomes is very low (Video 9).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/48388/elife-48388-fig10-v1.jpg)
 
-**Figure 10.:** T. carassii infection lead to vasodilation of the caudal vein.Wild type zebrafish larvae (5 dpf) were infected with 200 T. carassii or injected with PVP as non-infected control. Images are selected frames from high-speed videos. (A-C) Representative images of caudal artery and caudal vein (dashed lines) region at various time points after infection. Scale bars indicate 50 µm. (D) Maximum diameter of the caudal vein in non-infected (open symbols) and infected individuals (closed symbols) at 2–3 dpi (squares) and 6–8 dpi (triangles). Each value is the average of at least three measurements taken at different locations within the caudal vein of the same individual. Numbers indicate average and standard deviation.  10.7554/eLife.48388.025Figure 10—source data 1.
+**Figure 10.:** Wild type zebrafish larvae (5 dpf) were infected with 200 T. carassii or injected with PVP as non-infected control. Images are selected frames from high-speed videos. (A-C) Representative images of caudal artery and caudal vein (dashed lines) region at various time points after infection. Scale bars indicate 50 µm. (D) Maximum diameter of the caudal vein in non-infected (open symbols) and infected individuals (closed symbols) at 2–3 dpi (squares) and 6–8 dpi (triangles). Each value is the average of at least three measurements taken at different locations within the caudal vein of the same individual. Numbers indicate average and standard deviation.
 
 ## Discussion
 

@@ -18,16 +18,16 @@
 
 ### Affiliations
 
-1. https://ror.org/001bbwj30 Epidemiology Unit, Azienda Unità Sanitaria Locale – IRCCS di Reggio Emilia Reggio Emilia Italy
-2. https://ror.org/02d4c4y02 Centre for Environmental, Nutritional and Genetic Epidemiology (CREAGEN), University of Modena and Reggio Emilia Modena Italy
-3. https://ror.org/001bbwj30 Public Health Unit, Azienda Unità Sanitaria Locale-IRCCS di Reggio Emilia Reggio Emilia Italy
-4. https://ror.org/02hssy432 Department of Infectious Diseases, Istituto Superiore di Sanità Rome Italy
+1. Epidemiology Unit, Azienda Unità Sanitaria Locale – IRCCS di Reggio Emilia Reggio Emilia Italy ([ROR:001bbwj30](https://ror.org/001bbwj30))
+2. Centre for Environmental, Nutritional and Genetic Epidemiology (CREAGEN), University of Modena and Reggio Emilia Modena Italy ([ROR:02d4c4y02](https://ror.org/02d4c4y02))
+3. Public Health Unit, Azienda Unità Sanitaria Locale-IRCCS di Reggio Emilia Reggio Emilia Italy ([ROR:001bbwj30](https://ror.org/001bbwj30))
+4. Department of Infectious Diseases, Istituto Superiore di Sanità Rome Italy ([ROR:02hssy432](https://ror.org/02hssy432))
 
 † Corresponding author
 
 ## Abstract
 
-The aim of our study was to test the hypothesis that the community contact tracing strategy of testing contacts in households immediately instead of at the end of quarantine had an impact on the transmission of SARS-CoV-2 in schools in Reggio Emilia Province. We analysed surveillance data on notification of COVID-19 cases in schools between 1 September 2020 and 4 April 2021. We have applied a mediation analysis that allows for interaction between the intervention (before/after period) and the mediator. Median tracing delay decreased from 7 to 3.1 days and the percentage of the known infection source increased from 34–54.8% (incident rate ratio-IRR 1.61 1.40–1.86). Implementation of prompt contact tracing was associated with a 10% decrease in the number of secondary cases (excess relative risk –0.1 95% CI –0.35–0.15). Knowing the source of infection of the index case led to a decrease in secondary transmission (IRR 0.75 95% CI 0.63–0.91) while the decrease in tracing delay was associated with decreased risk of secondary cases (1/IRR 0.97 95% CI 0.94–1.01 per one day of delay). The direct effect of the intervention accounted for the 29% decrease in the number of secondary cases (excess relative risk –0.29 95%–0.61 to 0.03). Prompt contact testing in the community reduces the time of contact tracing and increases the ability to identify the source of infection in school outbreaks. Although there are strong reasons for thinking it is a causal link, observed differences can be also due to differences in the force of infection and to other control measures put in place. This project was carried out with the technical and financial support of the Italian Ministry of Health – CCM 2020 and Ricerca Corrente Annual Program 2023.
+Background:The aim of our study was to test the hypothesis that the community contact tracing strategy of testing contacts in households immediately instead of at the end of quarantine had an impact on the transmission of SARS-CoV-2 in schools in Reggio Emilia Province.Methods:We analysed surveillance data on notification of COVID-19 cases in schools between 1 September 2020 and 4 April 2021. We have applied a mediation analysis that allows for interaction between the intervention (before/after period) and the mediator.Results:Median tracing delay decreased from 7 to 3.1 days and the percentage of the known infection source increased from 34–54.8% (incident rate ratio-IRR 1.61 1.40–1.86). Implementation of prompt contact tracing was associated with a 10% decrease in the number of secondary cases (excess relative risk –0.1 95% CI –0.35–0.15). Knowing the source of infection of the index case led to a decrease in secondary transmission (IRR 0.75 95% CI 0.63–0.91) while the decrease in tracing delay was associated with decreased risk of secondary cases (1/IRR 0.97 95% CI 0.94–1.01 per one day of delay). The direct effect of the intervention accounted for the 29% decrease in the number of secondary cases (excess relative risk –0.29 95%–0.61 to 0.03).Conclusions:Prompt contact testing in the community reduces the time of contact tracing and increases the ability to identify the source of infection in school outbreaks. Although there are strong reasons for thinking it is a causal link, observed differences can be also due to differences in the force of infection and to other control measures put in place.Funding:This project was carried out with the technical and financial support of the Italian Ministry of Health – CCM 2020 and Ricerca Corrente Annual Program 2023.
 
 ## Introduction
 
@@ -53,7 +53,7 @@ This study aimed to estimate the impact of changing contact tracing intervention
 
 ## Methods
 
-## Design and setting
+### Design and setting
 
 In the present study, population-based surveillance data were analysed including 1604 consecutive positive cases confirmed with RT-PCR for SARS-COV-2 infection between 1 September 2020 and 4 April 2021 in Reggio Emilia Province that led to an epidemiological investigation among children and adolescents (0–19 years old) or school staff in 1884 classes who may have been exposed or in contact with positive cases at school.
 
@@ -67,15 +67,15 @@ During the study period, there were two peaks of infections: in November 2020 an
 
 Infection control measures in place during the study period were previously described in detail Larosa et al., 2020; Djuric et al., 2022; Regione et al., 2020.
 
-## Intervention
+### Intervention
 
 Starting from 27 November 2020, the local health authority improved contact tracing protocols and introduced immediate molecular tests for all contacts, whether symptomatic or asymptomatic, at the beginning of quarantine, with the aim to identify all possible sources of infection in asymptomatic contacts and facilitate backward tracing (Djuric et al., 2022). This strategy was applied to all contacts, independently from the setting of infection, including all household members of sporadic cases, and particular attention was given to testing of children and adolescents because they were most commonly asymptomatic. This strategy was explicitly thought to correctly identify in a timely manner the contacts of asymptomatic cases before they started the quarantine. Testing only at the end of quarantine guarantees a safe return to the community of contacts and to identify secondary transmission in the cluster, but, by definition, assumes that the asymptomatic cases are secondary cases and became infectious during the quarantine and thus could not have contacts.
 
-## Outcome and variables of interest
+### Outcome and variables of interest
 
 The main outcome was the number of secondary cases per class; we preferred to use the absolute number instead of the attack rate, because we were interested in assessing whether the intervention limited the number of secondary cases and not the probability of being infected given that an exposure occurred. Three process indicators of contact tracing performance were considered. The first one, tracing delay, was calculated as the time from the swab positivity of the index case to the date on which the swab for (the majority of) classmates was scheduled. The second indicator was the proportion of index cases who had close contact with a known COVID-19 case in the ten days before the onset of symptoms or diagnosis. This indicator, called ‘the known source of infection of the index case,’ is a proxy of backward contact tracing success, which should reflect the extent to which school index cases were tested and linked to the school investigation because of a known contact with a positive person. Finally, the third indicator was the proportion of asymptomatic index cases. This indicator is also a proxy of backward tracing, because in the absence of screening, asymptomatic cases are mostly identified during contact tracing and to become an index case of school investigation this testing should not be done at the end of quarantine. We also reported testing delay, i.e., the delay in the diagnosis of the index case, defined as the number of days between symptom onset and the date of swab positivity, but this indicator is expected to only be marginally influenced by contact tracing strategies.
 
-## Definitions and assumptions
+### Definitions and assumptions
 
 The first case that tested positive (considering the date on which the swab was done) per class was considered an index case. If more than one case in a class tested positive on the same day, the one with the earliest symptom onset was considered the index case. The same class can be included more than once in the analysis because it may have been involved in more than one investigation during the study period.
 
@@ -85,11 +85,11 @@ The overall attack rate was calculated by dividing the number of cases by the po
 
 If a classmate was already in isolation prior to symptom onset or swab positivity of the index case, due to contact with a positive person or re-entry from abroad, he/she was excluded from the denominator. Any student or staff who refused to perform a swab was excluded from the denominator.
 
-## Data sources
+### Data sources
 
 Following the identification and notification of a COVID-19 case, qualified Public Health Department (PHD) personnel performed a detailed field investigation and managed the index case and identified contacts according to the regional recommendations and control measures in place. Comprehensive surveillance data containing information on index cases, contacts, school and class characteristics, swabs performed, secondary cases, and measures undertaken, were collected by PHD, and stored in electronic forms. Each case and cluster were re-abstracted by a study investigator and checked for consistency and plausibility. Missing data were imputed from the COVID-19 Surveillance Registry software and a de-identified research database was constructed for the analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 During the study period, many factors that could influence secondary transmission in schools occurred, including changes in overall incidence, changes in in-school and out-of-school (especially transport and leisure-time activities) control measures, time of in-person and distance teaching, and the spread of the Alpha variant. Therefore, simply measuring the outcome before and after the intervention would be surely biased and would not allow any causal inference.
 
@@ -103,19 +103,551 @@ Lastly, a novel effect decomposition method was used in a subset of pre-Alpha va
 
 ## Results
 
-## Description of investigated classes and secondary transmission
+### Description of investigated classes and secondary transmission
 
 We investigated 1884 classes overall, 1882 in which at least one case/contact was recorded, and two classes where screening was done due to out-of-school contact with an index case from another class. One thousand seven hundred and five secondary cases (1047 students and 658 teachers/staff) were identified among 43,214 tested contacts linked to 1604 index cases, resulting in an overall secondary attack rate of 3.9% (95%CI 3.8–4.1).
 
 The median number of secondary cases per class was 1 (IQR 1–3); 2 before, and 1 after the intervention (test of equal medians p=0.092) (Table 1). The proportion of classes where secondary transmission occurred was overall 38.6%; 37.4% before and 39.0% after the intervention.
 
+**Table 1.**
+ Characteristics of 1884 classes and 1604 index cases for which a school contact with COVID-19 cases was suspected, before, and after the intervention.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>n (%)</th>
+      <th>Before interventionn=490</th>
+      <th>After interventionn=1394</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Classes (n=1884)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Type of school</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Infant-toddler centre</td>
+      <td>350 (18.5)</td>
+      <td>107 (21.8)</td>
+      <td>243 (17.4)</td>
+    </tr>
+    <tr>
+      <td>Primary school</td>
+      <td>540 (28.7)</td>
+      <td>125 (25.5)</td>
+      <td>415 (29.8)</td>
+    </tr>
+    <tr>
+      <td>Middle school</td>
+      <td>496 (26.3)</td>
+      <td>128 (26.1)</td>
+      <td>368 (26.4)</td>
+    </tr>
+    <tr>
+      <td>High school</td>
+      <td>478 (25.4)</td>
+      <td>129 (26.3)</td>
+      <td>349 (25.0)</td>
+    </tr>
+    <tr>
+      <td>Other educational services</td>
+      <td>20 (1.1)</td>
+      <td>1 (0.2)</td>
+      <td>19 (1.4)</td>
+    </tr>
+    <tr>
+      <td>Calendar period</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>September/October</td>
+      <td>248 (13.1)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>November</td>
+      <td>263 (13.9)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>December</td>
+      <td>316 (16.8)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>265 (14.1)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>523 (27.8)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March/April</td>
+      <td>269 (14.3)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Class size</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&lt;21</td>
+      <td>862 (45.7)</td>
+      <td>191 (39.0)</td>
+      <td>671 (48.1)</td>
+    </tr>
+    <tr>
+      <td>≥21</td>
+      <td>1011 (53.7)</td>
+      <td>293 (59.8)</td>
+      <td>718 (51.5)</td>
+    </tr>
+    <tr>
+      <td>Missing</td>
+      <td>11 (0.6)</td>
+      <td>6 (1.2)</td>
+      <td>5 (0.4)</td>
+    </tr>
+    <tr>
+      <td>Secondary transmission</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>1157 (61.4)</td>
+      <td>307 (62.6)</td>
+      <td>850 (61.0)</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>727 (38.6)</td>
+      <td>183 (37.4)</td>
+      <td>544 (39.0)</td>
+    </tr>
+    <tr>
+      <td>Number of secondary cases*</td>
+      <td>1 (1-3)</td>
+      <td>2 (1-3)</td>
+      <td>1 (1-3)</td>
+    </tr>
+    <tr>
+      <td>Mean attack rate</td>
+      <td>0.1 (0.04–0.12)</td>
+      <td>0.1 (0.04–0.12)</td>
+      <td>0.1 (0.04–0.12)</td>
+    </tr>
+    <tr>
+      <td>Part of a school cluster</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>1 367 (72.6)</td>
+      <td>368 (75.1)</td>
+      <td>999 (71.7)</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>517 (27.4)</td>
+      <td>122 (24.9)</td>
+      <td>395 (28.3)</td>
+    </tr>
+    <tr>
+      <td>Tracing delay*</td>
+      <td>3 (2-5)</td>
+      <td>7 (5-10)</td>
+      <td>3 (2-4)</td>
+    </tr>
+    <tr>
+      <td>Testing delay*</td>
+      <td>4 (2-8)</td>
+      <td>5 (3-8)</td>
+      <td>4 (2-7)</td>
+    </tr>
+    <tr>
+      <td>Index cases (n=1604)</td>
+      <td></td>
+      <td>n=429</td>
+      <td>n=1,175</td>
+    </tr>
+    <tr>
+      <td>Type of index case</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Student</td>
+      <td>1213 (75.6)</td>
+      <td>321 (74.8)</td>
+      <td>892 (75·9)</td>
+    </tr>
+    <tr>
+      <td>Teacher</td>
+      <td>391 (24.4)</td>
+      <td>108 (25.2)</td>
+      <td>283 (24.1)</td>
+    </tr>
+    <tr>
+      <td>Index case symptomatic</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>298 (18.6)</td>
+      <td>63 (14.7)</td>
+      <td>235 (20)</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>1306 (81.4)</td>
+      <td>366 (85.3)</td>
+      <td>940 (80)</td>
+    </tr>
+    <tr>
+      <td>Potential source of infection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>814 (50.7)</td>
+      <td>283 (66·0)</td>
+      <td>531 (45.2)</td>
+    </tr>
+    <tr>
+      <td>Known</td>
+      <td>790 (49.3)</td>
+      <td>146 (34·0)</td>
+      <td>644 (54.8)</td>
+    </tr>
+    <tr>
+      <td>Type of source</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Household outbreak</td>
+      <td>614 (77.7)</td>
+      <td>97 (66.4)</td>
+      <td>517 (80.3)</td>
+    </tr>
+    <tr>
+      <td>Social contact</td>
+      <td>26 (3.3)</td>
+      <td>7 (4.8)</td>
+      <td>19 (2.9)</td>
+    </tr>
+    <tr>
+      <td>Sport contact</td>
+      <td>18 (2.3)</td>
+      <td>7 (4.8)</td>
+      <td>11 (1.7)</td>
+    </tr>
+    <tr>
+      <td>Unidentifiable contact</td>
+      <td>132 (16.7)</td>
+      <td>35 (24.0)</td>
+      <td>97 (15.1)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Median (IQR), calculated only in classes with secondary transmission._
+
 The number of symptomatic index cases decreased in the period after intervention from 85.3–80%. There were no changes in the number of classes that made up part of a multi-class cluster, as well as in the type of index case.
 
 Secondary transmission was associated with the type of index case; it was lower among teachers than among students (IRR 0.75 95% CI 0.61–0.92) (Table 2).
 
+**Table 2.**
+ Association between class or index case characteristics (potential confounders) and number of secondary cases.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Number of classes with secondary transmission</th>
+      <th>Number of secondary cases</th>
+      <th>IRR* (95% CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Classes (n=1884)</td>
+      <td>n=727</td>
+      <td>n=1706</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Type of school</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Infant-toddler centre</td>
+      <td>131 (18.2)</td>
+      <td>349</td>
+      <td>ref</td>
+    </tr>
+    <tr>
+      <td>Primary school</td>
+      <td>217 (29.8)</td>
+      <td>553</td>
+      <td>1.03 (0.80–1.31)</td>
+    </tr>
+    <tr>
+      <td>Middle school</td>
+      <td>172 (23.7)</td>
+      <td>386</td>
+      <td>0.78 (0.60–1.01)</td>
+    </tr>
+    <tr>
+      <td>High school</td>
+      <td>202 (27.8)</td>
+      <td>409</td>
+      <td>0.86 (0.66–1.11)</td>
+    </tr>
+    <tr>
+      <td>Other educational services</td>
+      <td>5 (0.7)</td>
+      <td>9</td>
+      <td>0.45 (0.17–1.18)</td>
+    </tr>
+    <tr>
+      <td>Class size</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&lt;21</td>
+      <td>316 (43.5)</td>
+      <td>751</td>
+      <td>ref</td>
+    </tr>
+    <tr>
+      <td>≥21</td>
+      <td>411 (56.5)</td>
+      <td>955</td>
+      <td>1.08 (0.91–1.29)</td>
+    </tr>
+    <tr>
+      <td>Index cases (n=1604)</td>
+      <td>n=640</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Type of index case</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Student</td>
+      <td>477 (74.5)</td>
+      <td>1047</td>
+      <td>ref</td>
+    </tr>
+    <tr>
+      <td>Teacher</td>
+      <td>163 (25.5)</td>
+      <td>658</td>
+      <td>0.75 (0.61–0.92)</td>
+    </tr>
+    <tr>
+      <td>Screening</td>
+      <td>0</td>
+      <td>1</td>
+      <td>na</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Relative risks are computed with negative binomial models with the count of secondary cases as a dependent variable._
+
 We also tested the association between class or index case characteristics and the process indicators (Table 3). There was no difference in the number of index cases with known sources between types of school and class size. Percentage of known sources of infection was higher when the index case was a student compared to teachers (56.3% vs 26.7%). Median tracing delay was 3 days in all types of schools and index cases. There was more symptomatic index cases in infant-toddler centres and high schools than in primary schools and other educational services.
 
-## Association between intervention and process indicators
+**Table 3.**
+ Association between class or index case characteristics and the process indicators (potential mediators).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Totaln</th>
+      <th>Known source of infection of the index casen (%)*</th>
+      <th>Index case symptomaticn (%)*</th>
+      <th>Tracing delayMedian (IQR)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Classes (n=1884)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Type of school</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Infant-toddler centre</td>
+      <td>350</td>
+      <td>157 (44.9)</td>
+      <td>281 (80.3)</td>
+      <td>3 (2-5)</td>
+    </tr>
+    <tr>
+      <td>Primary school</td>
+      <td>540</td>
+      <td>255 (47.2)</td>
+      <td>355 (65.7)</td>
+      <td>3 (2-5)</td>
+    </tr>
+    <tr>
+      <td>Middle school</td>
+      <td>496</td>
+      <td>206 (41.5)</td>
+      <td>293 (59.1)</td>
+      <td>3 (2-6)</td>
+    </tr>
+    <tr>
+      <td>High school</td>
+      <td>478</td>
+      <td>216 (45.2)</td>
+      <td>360 (75.3)</td>
+      <td>3 (2-6)</td>
+    </tr>
+    <tr>
+      <td>Other educational services</td>
+      <td>20</td>
+      <td>7 (35.0)</td>
+      <td>10 (50.0)</td>
+      <td>3 (1.5–5)</td>
+    </tr>
+    <tr>
+      <td>P value†</td>
+      <td></td>
+      <td>0.378</td>
+      <td>0.001</td>
+      <td>0.147</td>
+    </tr>
+    <tr>
+      <td>Class size</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&lt;21</td>
+      <td>862</td>
+      <td>375 (41.4)</td>
+      <td>587 (81.6)</td>
+      <td>3 (2-5)</td>
+    </tr>
+    <tr>
+      <td>≥21</td>
+      <td>1011</td>
+      <td>461 (45.6)</td>
+      <td>707 (69.9)</td>
+      <td>3 (2-6)</td>
+    </tr>
+    <tr>
+      <td>Missing</td>
+      <td>11</td>
+      <td>5 (45.5)</td>
+      <td>5 (45.5)</td>
+      <td>6 (3-7)</td>
+    </tr>
+    <tr>
+      <td>p value†</td>
+      <td></td>
+      <td>0.661</td>
+      <td>0.782</td>
+      <td>0.367</td>
+    </tr>
+    <tr>
+      <td>Index cases (n=1604)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Type of index case</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Student</td>
+      <td>1213</td>
+      <td>683 (56.3)</td>
+      <td>957 (78.9)</td>
+      <td>3 (2-5)</td>
+    </tr>
+    <tr>
+      <td>Teacher</td>
+      <td>391</td>
+      <td>104 (26.7)</td>
+      <td>342 (87.5)</td>
+      <td>3 (2-6)</td>
+    </tr>
+    <tr>
+      <td>p value†</td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>0.486</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values are numbers with row percentages.†Kruskal-Wallis test._
+
+### Association between intervention and process indicators
 
 Overall median tracing delay was 3 days (IQR 2–5), decreasing from 7 (IQR 5–10) in the period before intervention to 3.1 (IQR 2–4) days in the period after intervention (Table 1). The testing delay also decreased from 5 to 4 days following the implementation of the intervention. The percentage of index cases with a known source of infection was 49.3%, and it increased from 34% in November to 54.8% in the period after intervention. The number of index cases that were part of a household outbreak increased from 66.4% before the intervention to 80.3% after the intervention. Weekly average contact tracing delay decreased while the percentage of known sources of infection increased in the period after intervention implementation (Figure 5).
 
@@ -123,15 +655,124 @@ Overall median tracing delay was 3 days (IQR 2–5), decreasing from 7 (IQR 5–
 
 **Figure 5.:** Lower graph: Weekly average contact tracing delay and percentage of index cases with a known source of infection.
 
-## Association between process indicators and outcome
+### Association between process indicators and outcome
 
 Results of negative binomial regression covering the entire period show that both known sources of infection (IRR 0.75 95% CI 0.63–0.91) and decrease in tracing delay (1/IRR 0.97 95% CI 0.94–1.01 for each day of avoided delay) were associated with the decrease of the number of secondary cases (Table 4). Sensitivity analyses restricted to the period before the spread of the Alpha variant showed similar results (Table 4).
 
-## Mediation analysis
+**Table 4.**
+ Negative binomial regression of the association between the number of secondary cases (outcome) and intervention promptness indicators (mediators).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Entire period(n=1884)</th>
+      <th colspan="2">Before Alpha variant (n=827)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>IRR*</th>
+      <th>95% CI</th>
+      <th>IRR*</th>
+      <th>95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tracing delay</td>
+      <td>1.01</td>
+      <td>0.99–1.04</td>
+      <td>1.03</td>
+      <td>0.99–1.07</td>
+    </tr>
+    <tr>
+      <td>Known source of infection of the index case</td>
+      <td>0.75</td>
+      <td>0.63–0.91</td>
+      <td>0.73</td>
+      <td>0.55–0.96</td>
+    </tr>
+    <tr>
+      <td>Index case symptomatic</td>
+      <td>1.21</td>
+      <td>0.96–1.53</td>
+      <td>1.30</td>
+      <td>0.93–1.82</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Adjusted for the type of school, type of index case, and class size._
+
+### Mediation analysis
 
 Only the known source of infection of the index case was associated with the outcome (number of secondary cases) in multivariable analysis and it was, therefore, tested for the mediation and interaction in the four-way decomposition method.
 
 Implementation of prompt contact tracing was associated with a 10% decrease in the number of secondary cases (excess relative risk –0.1 95% CI –0.35–0.15) (Table 5). The direct effect of the intervention accounted for the large part of the excess in risk (excess relative risk –0.29 95%–0.61– 0.03), leading to the 29% decrease in the number of secondary cases if the source of infection of the index case is known. Interaction only accounted for the other large part of the excess risk (excess relative risk 0.35 95% 0.03–0.68); knowing the source of infection of the index case in the period before the intervention when tracing delay was high, would increase the risk of secondary cases by 35%. However, we found evidence of mediated interaction that had a negative effect on the secondary transmission (excess relative risk –0.14 95% CI –0.28–0.01). The known source of infection of the index case alone accounted for only a small percent of the reduction of excess risk (excess relative risk –0.02 95% –0.10–0.07).
+
+**Table 5.**
+ Four-way decomposition mediation analysis of the association between intervention and the number of secondary cases.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>ERR*</th>
+      <th>95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total effect</td>
+      <td>–0.1</td>
+      <td>–0.35–0.15</td>
+    </tr>
+    <tr>
+      <td>Controlled direct effect</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Known contact (M=1)</td>
+      <td>–0.29</td>
+      <td>–0.61–0.03</td>
+    </tr>
+    <tr>
+      <td>Unknown contact (M=0)</td>
+      <td>0.31</td>
+      <td>–0.49 to –0.02</td>
+    </tr>
+    <tr>
+      <td>Pure indirect effect</td>
+      <td>–0.02</td>
+      <td>–0.10–0.07</td>
+    </tr>
+    <tr>
+      <td>Mediated interaction</td>
+      <td>–0.14</td>
+      <td>–0.28 to –0.01</td>
+    </tr>
+    <tr>
+      <td>Reference interaction</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Known contact (M=1)</td>
+      <td>0.35</td>
+      <td>0.03–0.68</td>
+    </tr>
+    <tr>
+      <td>Unknown contact (M=0)</td>
+      <td>–0.25</td>
+      <td>–0.49 to –0.02</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Adjusted for the type of school, type of index case, and class size.ERR, excess relative risk; M, mediator (known source of infection of the index case)._
 
 ## Discussion
 
@@ -151,6 +792,6 @@ The major limitation of the study is its before-and-after design; i.e., the impo
 
 To our knowledge, this is the only study that attempted to quantify the potential effect of changing a contact tracing strategy in a community on secondary transmission in schools by estimating the excess risk associated with the intervention, through the application of a new mediation analysis method which allowed us to partition the total excess risk into separate effects of the intervention and its process indicators in the presence of their interaction (VanderWeele, 2014; Discacciati et al., 2019). As such it can have important methodological implications as well.
 
-## Conclusion
+### Conclusion
 
 Changing the contact tracing strategy in the community, from testing contacts at the end of quarantine to testing contacts immediately, reduced the time of contact tracing and increased the ability to identify the source of infection in school outbreaks. The improvement in tracing performance appears to be linked to a decrease in the number of secondary cases in school contacts, although the intervention was implemented in a changing context just after the incidence peak of the autumn wave, and we cannot exclude that the observed differences are due to differences in the force of infection and to other control measures put in place before as the reduction of in presence school attendance.

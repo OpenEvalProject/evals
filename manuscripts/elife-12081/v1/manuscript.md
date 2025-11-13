@@ -57,69 +57,403 @@
 
 ## Abstract
 
-10.7554/eLife.12081.001 Ecological adaptation is of major relevance to speciation and sustainable population management, but the underlying genetic factors are typically hard to study in natural populations due to genetic differentiation caused by natural selection being confounded with genetic drift in subdivided populations. Here, we use whole genome population sequencing of Atlantic and Baltic herring to reveal the underlying genetic architecture at an unprecedented detailed resolution for both adaptation to a new niche environment and timing of reproduction. We identify almost 500 independent loci associated with a recent niche expansion from marine (Atlantic Ocean) to brackish waters (Baltic Sea), and more than 100 independent loci showing genetic differentiation between spring- and autumn-spawning populations irrespective of geographic origin. Our results show that both coding and non-coding changes contribute to adaptation. Haplotype blocks, often spanning multiple genes and maintained by selection, are associated with genetic differentiation. DOI: http://dx.doi.org/10.7554/eLife.12081.001
+Ecological adaptation is of major relevance to speciation and sustainable population management, but the underlying genetic factors are typically hard to study in natural populations due to genetic differentiation caused by natural selection being confounded with genetic drift in subdivided populations. Here, we use whole genome population sequencing of Atlantic and Baltic herring to reveal the underlying genetic architecture at an unprecedented detailed resolution for both adaptation to a new niche environment and timing of reproduction. We identify almost 500 independent loci associated with a recent niche expansion from marine (Atlantic Ocean) to brackish waters (Baltic Sea), and more than 100 independent loci showing genetic differentiation between spring- and autumn-spawning populations irrespective of geographic origin. Our results show that both coding and non-coding changes contribute to adaptation. Haplotype blocks, often spanning multiple genes and maintained by selection, are associated with genetic differentiation.
 
 ## Results
 
-## Genome assembly and annotation
+### Genome assembly and annotation
 
-Clupeiformes represents an early diverging clade of the otomorpha (
+Clupeiformes represents an early diverging clade of the otomorpha (Near et al., 2012) (Figure 2A). The genome size for herring has been estimated at ~850 Mb (Hinegardner and Rosen, 1972; Ida et al., 1991; Ohno et al., 1969) with no recent whole genome duplications reported. We performed whole genome assembly based on short read sequencing of libraries ranging from 170 bp to 20 kb insert sizes (Supplementary file 1A). The 808 Mb assembly had a scaffold N50 of 1.84 Mb with 23,336 predicted coding gene models. It showed a high degree of completeness based on RNAseq alignments, core gene analyses and comparisons to other fish gene sets (Table 1, Supplementary files 2, 3A–D, Figure 2B, Figure 2—figure supplements 1–2). The GC content was 44%, and repetitive elements made up 31% of the assembly (Table 1). Alignments of synthetic long reads (SLRs; Illumina) failed to significantly improve the assembly due to coincidental gaps between the assembly and the SLRs, but proved useful in phasing parental alleles (Materials and methods; Figure 2—figure supplements 3–4) and dramatically improved the discovery of indels larger than 30 bp compared to short Illumina reads (Supplementary file 1F). We identified 150 endogenous retroviruses (ERVs) constituting ~0.14% of the genomic sequence but none included open reading frames in all gag, pol and env genes (Supplementary file 1, Figure 2—figure supplement 5).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/12081/elife-12081-fig2-v1.jpg)
 
-**Figure 2.:** (A) Phylogeny of ray-finned fishes (Actinopterygii) from the Devonian to the present, time-calibrated to the geological time scale based on Near et al. (2012). Geological abbreviations: C (Carboniferous), CZ (Cenozoic), D (Devonian), J (Jurassic), K (Cretaceous), Ng (Neogene), P (Permian), Pg (paleogene) and Tr (Triassic). Dating of the specific rounds of whole genome duplication is based on Glasauer and Neuhauss (2014). Abbreviations: Ts3R (teleost-specific third round) and Ss4R (salmonid-specific fourth round) of duplication. The number of species with a genome assembly available is marked within parentheses after their group’s name. Atlantic herring belongs to Clupeiformes, the order indicated in red letters. (B) Orthologous gene families across four fish genomes (C. harengus, D. rerio, L. chalumnae and G. morhua).DOI: http://dx.doi.org/10.7554/eLife.12081.005
+**Figure 2.:** (A) Phylogeny of ray-finned fishes (Actinopterygii) from the Devonian to the present, time-calibrated to the geological time scale based on Near et al. (2012). Geological abbreviations: C (Carboniferous), CZ (Cenozoic), D (Devonian), J (Jurassic), K (Cretaceous), Ng (Neogene), P (Permian), Pg (paleogene) and Tr (Triassic). Dating of the specific rounds of whole genome duplication is based on Glasauer and Neuhauss (2014). Abbreviations: Ts3R (teleost-specific third round) and Ss4R (salmonid-specific fourth round) of duplication. The number of species with a genome assembly available is marked within parentheses after their group’s name. Atlantic herring belongs to Clupeiformes, the order indicated in red letters. (B) Orthologous gene families across four fish genomes (C. harengus, D. rerio, L. chalumnae and G. morhua).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/12081/elife-12081-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Program versions used are detailed in Materials and methods.DOI: http://dx.doi.org/10.7554/eLife.12081.006
+**Figure 2—figure supplement 1.:** Program versions used are detailed in Materials and methods.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/12081/elife-12081-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** The refined rc5 (red stroke) shows a distribution closer to 0 compared to the evidence build (black stroke), thereby supporting a second pass of ab initio gene modeling that includes in rc5 those genes lacking support from evidence models alone.DOI: http://dx.doi.org/10.7554/eLife.12081.007
+**Figure 2—figure supplement 2.:** The refined rc5 (red stroke) shows a distribution closer to 0 compared to the evidence build (black stroke), thereby supporting a second pass of ab initio gene modeling that includes in rc5 those genes lacking support from evidence models alone.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/12081/elife-12081-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** The shape of the histogram looks similar to other published length histograms (Voskoboynik et al., 2013). The sequence provider has filtered out SLRs shorter than 1,500 bp from the dataset. The red bar indicates the frequency of reads longer than the 99.9% percentile of the data (i.e. 10,887 bp).DOI: http://dx.doi.org/10.7554/eLife.12081.008
+**Figure 2—figure supplement 3.:** The shape of the histogram looks similar to other published length histograms (Voskoboynik et al., 2013). The sequence provider has filtered out SLRs shorter than 1,500 bp from the dataset. The red bar indicates the frequency of reads longer than the 99.9% percentile of the data (i.e. 10,887 bp).
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/12081/elife-12081-fig2-figsupp4-v1.jpg)
 
-**Figure 2—figure supplement 4.:** The average coverage for SLRs is ~5-6X. In shotgun sequencing, a Poisson distribution of coverage would be expected (Lander and Waterman, 1988). A Poisson distribution (shown as red dots) fitting our data (λ=5) indicates that this would result in most bases having a coverage of 5 and less than 1% of bases not to be covered at all. The observed distribution is quite different (blue bars), with most bases (36.7% of non-N-bases) not being covered at all and a large variance of coverage across the genome.DOI: http://dx.doi.org/10.7554/eLife.12081.009
+**Figure 2—figure supplement 4.:** The average coverage for SLRs is ~5-6X. In shotgun sequencing, a Poisson distribution of coverage would be expected (Lander and Waterman, 1988). A Poisson distribution (shown as red dots) fitting our data (λ=5) indicates that this would result in most bases having a coverage of 5 and less than 1% of bases not to be covered at all. The observed distribution is quite different (blue bars), with most bases (36.7% of non-N-bases) not being covered at all and a large variance of coverage across the genome.
 
 ![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/12081/elife-12081-fig2-figsupp5-v1.jpg)
 
-**Figure 2—figure supplement 5.:** Phylogeny of 62 Clupea harengus ERVs representing 150 detected ERVs, in relation to 92 reference sequences (Genbank and Repbase) rooted on the Cer1 retrotransposon. The phylogeny was constructed using FastTree2 (Price et al., 2010). Sequences and annotations for herring ERVs are presented in Supplementary file 2.DOI: http://dx.doi.org/10.7554/eLife.12081.010
+**Figure 2—figure supplement 5.:** Phylogeny of 62 Clupea harengus ERVs representing 150 detected ERVs, in relation to 92 reference sequences (Genbank and Repbase) rooted on the Cer1 retrotransposon. The phylogeny was constructed using FastTree2 (Price et al., 2010). Sequences and annotations for herring ERVs are presented in Supplementary file 2.
 
-## Population genetics and demographic history
+**Table 1.**
+ Summary of the herring assembly compared to other sequenced fish genomes.
 
-Whole genome pooled sequencing was done using 20 population samples of herring from the Baltic Sea, Skagerrak, Kattegat, North Sea, Atlantic Ocean and Pacific Ocean (Figure 1A; Table 2); the latter sample represents the closely related Pacific herring (Clupea pallasii). Each pool comprised 47–100 fish and was sequenced to ~30x coverage. Furthermore, 16 fish, eight Baltic and eight Atlantic herring (Table 2), were sequenced individually to ~10x coverage. All data were aligned to the reference assembly and SNPs were called after rigorous quality filtering. We found 8.83 million SNPs when Pacific herring was included and 6.04 million among Atlantic and Baltic herring.10.7554/eLife.12081.012Table 2.Samples of herring used for whole genome resequencing.DOI: http://dx.doi.org/10.7554/eLife.12081.012LocalityaSamplenPositionSalinity (‰)Date (yy/mm/dd)Spawning seasonBaltic SeaGulf of Bothnia (Kalix)bBK47N 65°52’E 22°43’3800629springBothnian Sea (Hudiksvall)BU100N 61°45’E 17°30’6120419springBothnian Sea (Gävle)BÄV100N 60°43’E 17°18’6120507springBothnian Sea (Gävle)BÄS100N 60°43’E 17°18’6120718summerBothnian Sea (Gävle)BÄH100N 60°44’E 17°35’6120904autumnBothnian Sea (Hästskär)cBH50N 60°35’E 17°48’6130522springCentral Baltic Sea (Vaxholm)bBV50N 59°26’E 18°18’6790827springCentral Baltic Sea (Gamleby)bBG49N 57°50’E 16°27’7790820springCentral Baltic Sea (Kalmar)BR100N 57°39’E 17°07’7120509springCentral Baltic Sea (Karlskrona)BA100N 56°10’E 15°33’7120530springCentral Baltic SeaBC100N 55°24’E 15°51’8111018unknownSouthern Baltic Sea (Fehmarn)bBF50N 54°50’E 11°30’12790923autumnKattegat, Skagerrak, North Sea, Atlantic OceanKattegat (Träslövsläge)bKT50N 57°03’E 12°11’20781023unknownKattegat (Björköfjorden)KB100N 57°43’E 11°42’23120312springSkagerrak (Brofjorden)SB100N 58°19’E 11°21’25120320springSkagerrak (Hamburgsund)bSH49N 58°30’E 11°13’25790319springNorth SeabNS49N 58°06’E 06°10’35790805autumnAtlantic Ocean (Bergen)bAB149N 64°52’E 10°15’35800207springAtlantic Ocean (Bergen)cAB28N 60°35’E 05°00’33130522springAtlantic Ocean (Höfn)AI100N 65°49’W 12°58’35110915springPacific OceanStrait of Georgia (Vancouver)PH50--35121124-aPlaces where the sample was landed (if known) are given in parenthesisbSamples from previous study (Lamichhaney et al., 2012)cEight Baltic herring from the BH sample and eight Atlantic herring from the AB2 sample were used for individual sequencing n=number of fish
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Herring (Clupea harengus)</th>
+      <th>Zebrafish (Danio rerio)</th>
+      <th>Cod (Gadus morhua)</th>
+      <th>Coelacanth (Latimeria chalumnae)</th>
+      <th>Stickleback (Gasteosteus aculeatus)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Estimated genome size (Mb)</td>
+      <td>850</td>
+      <td>1,454a</td>
+      <td>830b</td>
+      <td>3,530c</td>
+      <td>530d</td>
+    </tr>
+    <tr>
+      <td>Assembly size (Mb)</td>
+      <td>808</td>
+      <td>1,412</td>
+      <td>753b</td>
+      <td>2,861e</td>
+      <td>463f</td>
+    </tr>
+    <tr>
+      <td>Contig N50 (kb)</td>
+      <td>21.3</td>
+      <td>25.0</td>
+      <td>2.8</td>
+      <td>12.7</td>
+      <td>83.2</td>
+    </tr>
+    <tr>
+      <td>Scaffold N50 (Mb)</td>
+      <td>1.84</td>
+      <td>1.55</td>
+      <td>0.69</td>
+      <td>0.92</td>
+      <td>10.8</td>
+    </tr>
+    <tr>
+      <td>Sequencing technologyg</td>
+      <td>I</td>
+      <td>S+I</td>
+      <td>R+I</td>
+      <td>I</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <td>Repeat content</td>
+      <td>30.9</td>
+      <td>52.2</td>
+      <td>25.4</td>
+      <td>27.7</td>
+      <td>25.2</td>
+    </tr>
+    <tr>
+      <td>%GC content</td>
+      <td>44.1</td>
+      <td>36.7</td>
+      <td>45.4</td>
+      <td>43.0</td>
+      <td>44.6</td>
+    </tr>
+    <tr>
+      <td>Heterozygosity</td>
+      <td>1/309</td>
+      <td>n.a.</td>
+      <td>1/500</td>
+      <td>1/435</td>
+      <td>1/700</td>
+    </tr>
+    <tr>
+      <td>Protein-coding gene count</td>
+      <td>23,336</td>
+      <td>26,459</td>
+      <td>22,154</td>
+      <td>19,033</td>
+      <td>20,787</td>
+    </tr>
+  </tbody>
+</table>
+
+_a(Freeman et al., 2007; Vinogradov, 1998; Howe et al., 2013)b(Star et al., 2011)cGenome size calculated as pg x 0.978 × 109 bp/pg; picogram values taken from Cimino and Bahr (1974)d(Vinogradov, 1998; Jones et al., 2012)e(Amemiya et al., 2013)f(Jones et al., 2012)gI=Illumina sequencing; S=Sanger sequencing; R=Roche 454 n.a.=not available_
+
+### Population genetics and demographic history
+
+Whole genome pooled sequencing was done using 20 population samples of herring from the Baltic Sea, Skagerrak, Kattegat, North Sea, Atlantic Ocean and Pacific Ocean (Figure 1A; Table 2); the latter sample represents the closely related Pacific herring (Clupea pallasii). Each pool comprised 47–100 fish and was sequenced to ~30x coverage. Furthermore, 16 fish, eight Baltic and eight Atlantic herring (Table 2), were sequenced individually to ~10x coverage. All data were aligned to the reference assembly and SNPs were called after rigorous quality filtering. We found 8.83 million SNPs when Pacific herring was included and 6.04 million among Atlantic and Baltic herring.
+
+**Table 2.**
+ Samples of herring used for whole genome resequencing.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Localitya</th>
+      <th>Sample</th>
+      <th>n</th>
+      <th colspan="2">Position</th>
+      <th>Salinity (‰)</th>
+      <th>Date (yy/mm/dd)</th>
+      <th>Spawning season</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="8">Baltic Sea</td>
+    </tr>
+    <tr>
+      <td>Gulf of Bothnia (Kalix)b</td>
+      <td>BK</td>
+      <td>47</td>
+      <td>N 65°52’</td>
+      <td>E 22°43’</td>
+      <td>3</td>
+      <td>800629</td>
+      <td>spring</td>
+    </tr>
+    <tr>
+      <td>Bothnian Sea (Hudiksvall)</td>
+      <td>BU</td>
+      <td>100</td>
+      <td>N 61°45’</td>
+      <td>E 17°30’</td>
+      <td>6</td>
+      <td>120419</td>
+      <td>spring</td>
+    </tr>
+    <tr>
+      <td>Bothnian Sea (Gävle)</td>
+      <td>BÄV</td>
+      <td>100</td>
+      <td>N 60°43’</td>
+      <td>E 17°18’</td>
+      <td>6</td>
+      <td>120507</td>
+      <td>spring</td>
+    </tr>
+    <tr>
+      <td>Bothnian Sea (Gävle)</td>
+      <td>BÄS</td>
+      <td>100</td>
+      <td>N 60°43’</td>
+      <td>E 17°18’</td>
+      <td>6</td>
+      <td>120718</td>
+      <td>summer</td>
+    </tr>
+    <tr>
+      <td>Bothnian Sea (Gävle)</td>
+      <td>BÄH</td>
+      <td>100</td>
+      <td>N 60°44’</td>
+      <td>E 17°35’</td>
+      <td>6</td>
+      <td>120904</td>
+      <td>autumn</td>
+    </tr>
+    <tr>
+      <td>Bothnian Sea (Hästskär)c</td>
+      <td>BH</td>
+      <td>50</td>
+      <td>N 60°35’</td>
+      <td>E 17°48’</td>
+      <td>6</td>
+      <td>130522</td>
+      <td>spring</td>
+    </tr>
+    <tr>
+      <td>Central Baltic Sea (Vaxholm)b</td>
+      <td>BV</td>
+      <td>50</td>
+      <td>N 59°26’</td>
+      <td>E 18°18’</td>
+      <td>6</td>
+      <td>790827</td>
+      <td>spring</td>
+    </tr>
+    <tr>
+      <td>Central Baltic Sea (Gamleby)b</td>
+      <td>BG</td>
+      <td>49</td>
+      <td>N 57°50’</td>
+      <td>E 16°27’</td>
+      <td>7</td>
+      <td>790820</td>
+      <td>spring</td>
+    </tr>
+    <tr>
+      <td>Central Baltic Sea (Kalmar)</td>
+      <td>BR</td>
+      <td>100</td>
+      <td>N 57°39’</td>
+      <td>E 17°07’</td>
+      <td>7</td>
+      <td>120509</td>
+      <td>spring</td>
+    </tr>
+    <tr>
+      <td>Central Baltic Sea (Karlskrona)</td>
+      <td>BA</td>
+      <td>100</td>
+      <td>N 56°10’</td>
+      <td>E 15°33’</td>
+      <td>7</td>
+      <td>120530</td>
+      <td>spring</td>
+    </tr>
+    <tr>
+      <td>Central Baltic Sea</td>
+      <td>BC</td>
+      <td>100</td>
+      <td>N 55°24’</td>
+      <td>E 15°51’</td>
+      <td>8</td>
+      <td>111018</td>
+      <td>unknown</td>
+    </tr>
+    <tr>
+      <td>Southern Baltic Sea (Fehmarn)b</td>
+      <td>BF</td>
+      <td>50</td>
+      <td>N 54°50’</td>
+      <td>E 11°30’</td>
+      <td>12</td>
+      <td>790923</td>
+      <td>autumn</td>
+    </tr>
+    <tr>
+      <td colspan="8">Kattegat, Skagerrak, North Sea, Atlantic Ocean</td>
+    </tr>
+    <tr>
+      <td>Kattegat (Träslövsläge)b</td>
+      <td>KT</td>
+      <td>50</td>
+      <td>N 57°03’</td>
+      <td>E 12°11’</td>
+      <td>20</td>
+      <td>781023</td>
+      <td>unknown</td>
+    </tr>
+    <tr>
+      <td>Kattegat (Björköfjorden)</td>
+      <td>KB</td>
+      <td>100</td>
+      <td>N 57°43’</td>
+      <td>E 11°42’</td>
+      <td>23</td>
+      <td>120312</td>
+      <td>spring</td>
+    </tr>
+    <tr>
+      <td>Skagerrak (Brofjorden)</td>
+      <td>SB</td>
+      <td>100</td>
+      <td>N 58°19’</td>
+      <td>E 11°21’</td>
+      <td>25</td>
+      <td>120320</td>
+      <td>spring</td>
+    </tr>
+    <tr>
+      <td>Skagerrak (Hamburgsund)b</td>
+      <td>SH</td>
+      <td>49</td>
+      <td>N 58°30’</td>
+      <td>E 11°13’</td>
+      <td>25</td>
+      <td>790319</td>
+      <td>spring</td>
+    </tr>
+    <tr>
+      <td>North Seab</td>
+      <td>NS</td>
+      <td>49</td>
+      <td>N 58°06’</td>
+      <td>E 06°10’</td>
+      <td>35</td>
+      <td>790805</td>
+      <td>autumn</td>
+    </tr>
+    <tr>
+      <td>Atlantic Ocean (Bergen)b</td>
+      <td>AB1</td>
+      <td>49</td>
+      <td>N 64°52’</td>
+      <td>E 10°15’</td>
+      <td>35</td>
+      <td>800207</td>
+      <td>spring</td>
+    </tr>
+    <tr>
+      <td>Atlantic Ocean (Bergen)c</td>
+      <td>AB2</td>
+      <td>8</td>
+      <td>N 60°35’</td>
+      <td>E 05°00’</td>
+      <td>33</td>
+      <td>130522</td>
+      <td>spring</td>
+    </tr>
+    <tr>
+      <td>Atlantic Ocean (Höfn)</td>
+      <td>AI</td>
+      <td>100</td>
+      <td>N 65°49’</td>
+      <td>W 12°58’</td>
+      <td>35</td>
+      <td>110915</td>
+      <td>spring</td>
+    </tr>
+    <tr>
+      <td colspan="8">Pacific Ocean</td>
+    </tr>
+    <tr>
+      <td>Strait of Georgia (Vancouver)</td>
+      <td>PH</td>
+      <td>50</td>
+      <td>-</td>
+      <td>-</td>
+      <td>35</td>
+      <td>121124</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_aPlaces where the sample was landed (if known) are given in parenthesisbSamples from previous study (Lamichhaney et al., 2012)cEight Baltic herring from the BH sample and eight Atlantic herring from the AB2 sample were used for individual sequencing n=number of fish_
 
 Average nucleotide diversity was estimated by counting the frequency of heterozygous sites in the reference individual after stringent filtering for sequence quality and coverage (within one standard deviation of mean coverage). The estimate was one heterozygous site per 309 bp, giving a nucleotide diversity of 0.32%; no estimate based on the 16 herring sequenced individually deviated significantly from this value and there was no significant difference between Atlantic and Baltic herring. The average decay of linkage disequilibrium between loci was very steep, with average r2 falling to 0.1 at a distance of 100 base pairs (Figure 1—figure supplement 1A).
 
 The allele frequency distribution deviated significantly from the one expected for selectively neutral alleles at genetic equilibrium (p<2x10-16, Kolmogorov-Smirnov test), due to an excess of rare alleles (Figure 1—figure supplement 1B) consistent with population expansion. The result is supported by the genome-wide distribution of Tajima’s D, which shows a global shift towards negative values (mean=−0.57 ± 0.01; Figure 1—figure supplement 1C). A demographic analysis using the diCal software (Sheehan et al., 2013) confirmed that herring have experienced an expansion in effective population size, roughly five- to ten-fold, and that the current Ne is on the order of 106 individuals (Figure 1B); the results for Baltic and Atlantic herring were essentially identical. The result indicates that the effective population size minimum occurred at around one to two MYA, after the onset of the Quaternary ice age.
 
-## Phylogeny
+### Phylogeny
 
 The neighbor-joining phylogenetic tree including Atlantic, Baltic and Pacific herring shows a large phylogenetic distance between Pacific and Atlantic herring, as compared with the tiny genetic divergence among samples of Atlantic and Baltic herring (Figure 1C). We estimated the split between Atlantic and Pacific herring to ~2.2 million years ago based on mtDNA cytochrome B sequence divergence. The phylogenetic tree is consistent with minute differentiation at selectively neutral loci in Atlantic herring (Ryman et al., 1984; Lamichhaney et al., 2012); all subpopulations in the Eastern North Atlantic may have expanded from a common ancestral population after the last glaciation as indicated by demographic analysis (Figure 1B).
 
 A closer examination of the tight cluster of Atlantic and Baltic herring populations reveals some structure consistent with geographic origin (Figure 1C). Samples from the Baltic Sea cluster on one half while samples from marine waters cluster on the other half of the tree. Only three populations are located at intermediate positions. Two of these are autumn-spawners from the Baltic Sea (BÄH and BF), indicating that autumn-spawning herring are genetically distinct from spring- and summer-spawning herring. The third sample (KT) at an intermediate position was sampled outside the spawning season and at the border between Kattegat and Baltic Sea and may represent a mixed sample of local Kattegat population and fish that spawn in the Baltic Sea but migrate into Kattegat for feeding.
 
-## Genetic adaptation to a new niche environment
+### Genetic adaptation to a new niche environment
 
 The Atlantic (Clupea harengus harengus) and Baltic herring (Clupea harengus membras) were classified as subspecies by Linnaeus (1761) in the 18th century. They are adapted to strikingly different environments, in particular regarding salinity that ranges from 2–3‰ in the Gulf of Bothnia to 12‰ in Southern Baltic Sea, whereas salinity in Kattegat, Skagerrak, North Sea and Atlantic Ocean is in the range 20‰–35‰ (Figure 1A; Table 2). To reveal loci underlying genetic adaptation associated with the recent niche expansion into brackish waters after the last glaciation we compared allele frequencies, SNP by SNP, in two superpools: one Atlantic including all populations from Atlantic Ocean, Skagerrak and Kattegat and a pool comprising all samples collected in Baltic Sea; this is justified by low differentiation at neutral loci as documented by the low FST-values when comparing all samples of Atlantic and Baltic herring (Figure 1D). Samples of autumn-spawning herring, a possible confounding factor, were excluded from the analysis. We used a stringent significance threshold of p<1x10-10 (Bonferroni correction, p=8.2x10-9).
 
-We identified 46,045 SNPs that showed an allele frequency difference with p<1x10
+We identified 46,045 SNPs that showed an allele frequency difference with p<1x10-10 in the χ2 test (Figure 3A; Supplementary file 3A). An important question is how many independent loci these represent. A conservative estimate of 472 independent loci was obtained (i) by only using SNPs with p<1x10-20, (ii) by taking into account gaps in the assembly and (iii) by using the Comb-P software (Pedersen et al., 2012) to combine strongly correlated SNPs from the same genomic region (see Materials and methods). Figure 3A (lower panel) illustrates one of the most striking associations. For a large part of scaffold 218 there are no significant differences among Atlantic and Baltic samples whereas there are striking allele frequency differences over a 119.4 kb region; this is a characteristic pattern for differentiated regions, indicating that genetic adaptation typically occur as large haplotype blocks, often including multiple genes. A phylogenetic tree based on SNPs showing genetic differentiation between Atlantic and Baltic (Figure 3B) differs profoundly from the tree based on all SNPs (Figure 1C). With the exception of the two autumn-spawning populations BF and BÄH from the Baltic Sea, the position of all other populations match the variation in salinity perfectly with the population samples from the North Sea and Atlantic Ocean (35‰) at one end of the tree and samples from the brackish Baltic Sea (3‰–12‰) at the other end and with samples from Skagerrak (25‰) and Kattegat (20‰) at intermediate positions. The low genetic differentiation among Baltic samples, excluding the two autumn-spawning populations BF and BÄH, suggests that adaptation to brackish waters is a derived state.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/12081/elife-12081-fig3-v1.jpg)
 
-**Figure 3.:** (A) Manhattan plot of significance values testing for allele frequency differences between pools of herring from marine waters (Kattegat, Skagerrak, Atlantic Ocean) versus the brackish Baltic Sea. Lower panel, corresponding plot for scaffold 218 only; both P- and F-values are shown. (STB) Neighbor-joining phylogenetic tree based on all SNPs showing genetic differentiation in this comparison (p<10-10). (C) Comparison of allele frequencies in five strongly differentiated regions. The major allele in the AB1 sample (Atlantic Ocean) was used as reference at each SNP. Lower panel, neighbor-joining tree based on haplotypes formed by 128 differentiated SNPs from scaffold 218. (D) Heat map showing copy number variation partially overlapping the HCE gene. Orientation of transcription is marked with an arrow; the position of SNPs significant in the χ test is indicated by stars. Population samples and salinity at sampling locations are indicated to the right; abbreviations are explained in 2Table 2. (E) Strong genetic differentiation between Atlantic and Baltic herring in a region downstream of SLC12A3; statistical significance based on the χ test is indicated.2DOI: http://dx.doi.org/10.7554/eLife.12081.013
+**Figure 3.:** (A) Manhattan plot of significance values testing for allele frequency differences between pools of herring from marine waters (Kattegat, Skagerrak, Atlantic Ocean) versus the brackish Baltic Sea. Lower panel, corresponding plot for scaffold 218 only; both P- and FST-values are shown. (B) Neighbor-joining phylogenetic tree based on all SNPs showing genetic differentiation in this comparison (p<10-10). (C) Comparison of allele frequencies in five strongly differentiated regions. The major allele in the AB1 sample (Atlantic Ocean) was used as reference at each SNP. Lower panel, neighbor-joining tree based on haplotypes formed by 128 differentiated SNPs from scaffold 218. (D) Heat map showing copy number variation partially overlapping the HCE gene. Orientation of transcription is marked with an arrow; the position of SNPs significant in the χ2 test is indicated by stars. Population samples and salinity at sampling locations are indicated to the right; abbreviations are explained in Table 2. (E) Strong genetic differentiation between Atlantic and Baltic herring in a region downstream of SLC12A3; statistical significance based on the χ2 test is indicated.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/12081/elife-12081-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** Abbreviations for localities are given in Table 2.DOI: http://dx.doi.org/10.7554/eLife.12081.014
+**Figure 3—figure supplement 1.:** Abbreviations for localities are given in Table 2.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/12081/elife-12081-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** Trees based on individual SNP genotype data from four highly differentiated regions.DOI: http://dx.doi.org/10.7554/eLife.12081.015
+**Figure 3—figure supplement 2.:** Trees based on individual SNP genotype data from four highly differentiated regions.
 
 Figure 3C (upper panel) shows estimated allele frequencies for highly differentiated SNPs from five genomic regions in six population samples, each region showing an underlying genetic architecture with large and distinctly defined haplotype blocks. The Atlantic Ocean and North Sea samples are both nearly fixed for the reference allele at these SNPs. In contrast, the samples of Baltic herring were close to fixation for the alternate alleles. Interestingly, the sample (SB) collected in Skagerrak (salinity ~25‰) is most similar to the Atlantic Ocean and North Sea samples, but consistently shows a trend towards more intermediate allele frequencies at these loci.
 
@@ -129,21 +463,21 @@ There are many environmental and ecological differences between Atlantic Ocean a
 
 Here we present three loci with striking association to salinity. Firstly, the 11 kb region in scaffold 899 (Figure 3C) contains a single gene, prolactin receptor (PRLR), that is essential for mammalian reproduction but has a central role for osmoregulation in fish (Manzon, 2002), and possibly in mammals (Schennink et al., 2015). Secondly, strong genetic differentiation was also observed at scaffold 346 (Figure 3A; p<1x10-39). This signal overlaps HCE encoding high choriolytic enzyme. This locus was also identified as one of the most differentiated region in our screen for structural changes (Supplementary file 3B). A 4 kb region including part of the coding sequence showed a massive copy number amplification that had a strong negative correlation with salinity (Figure 3D). The outgroup, Pacific herring, showed an intermediate copy number. Interestingly, the Pacific herring spawns exclusively in shallow nearshore waters (Hay et al., 2009) often in estuaries and tidal zones where salinity varies, in contrast to deeper-spawning Atlantic herring. HCE is a protease, also denoted hatching enzyme, that solubilizes the inner layer of the egg envelope during hatching and adaptive evolution of this protein in relation to salinity has been reported (Kawaguchi et al., 2013). In herring, we found no coding changes implying altered transcriptional regulation. In fact, massive amplification of the promoter region is expected to alter gene expression. Hatching of the egg is probably a particularly challenging stage of development for a marine fish adapting to brackish conditions. Thirdly, a ~65 kb region downstream of solute carrier family 12 (sodium/chloride transporter) member 3 (SLC12A3) shows strong correlation with salinity (Figure 3E, Supplementary file 3A). SLC12A3, which has an established role in regulating osmotic balance, is associated with hypertension in human and shows differential expression in kidney tissue between sticklebacks kept in freshwater or sea water (Wang et al., 2014).
 
-## Genetic basis underlying timing of reproduction
+### Genetic basis underlying timing of reproduction
 
-Herring spawn from early spring to late fall. Prior to this study it was unknown if spawning time is entirely due to phenotypic plasticity, set by nutritional status and environmental conditions, or if genetic factors contribute (
+Herring spawn from early spring to late fall. Prior to this study it was unknown if spawning time is entirely due to phenotypic plasticity, set by nutritional status and environmental conditions, or if genetic factors contribute (McQuinn, 1997). For example, it has been hypothesized that spawning time in the Baltic Sea is regulated by productivity of the system affecting maturation of fish prior to spawning (Aneer, 1985). To study this important question we collected spawning herring from the same geographic area, close to Gävle (Sweden), in May, July and September (Table 2). Our sampling included two other autumn-spawning populations collected in 1979, one from North Sea and the other from Southern Baltic Sea. We formed two superpools including three autumn-spawning and 10 spring-spawning population samples, respectively; the summer-spawners and one population of non-spawning herring (KT in Table 2) were excluded from the initial analysis. We identified 10,195 SNPs with significant allele frequency differences between pools (p<1x10-10) and 69 regions with copy number variation (p<0.001) (Figure 4A); the highly differentiated SNPs represented at least 125 independent loci based on our strict criteria (see Materials and methods). The result demonstrates for the first time that autumn- and spring-spawning herring are genetically distinct and indicates that genetic factors affect spawning time. In a phylogenetic tree based on these 10,195 SNPs the autumn-spawning populations from the Baltic Sea and North Sea tended to cluster with spring-spawning herring from the Atlantic Ocean (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/12081/elife-12081-fig4-v1.jpg)
 
-**Figure 4.:** (A) Manhattan plot of significance values testing for allele frequency differences. (B) Neighbor-joining phylogenetic tree based on all SNPs showing genetic differentiation in this comparison (p<10-10). (C) Comparisons of allele frequencies in four strongly differentiated regions. The major allele in the AB1 sample (Atlantic Ocean) was set as reference at each SNP. Scaffolds 190 and 1420 have been merged in this plot since it was obvious that they were overlapping. *The signal in scaffold s1440 is present ~27 kb upstream of SOX11 and ~46 kb downstream of DCDC2/ALLC. (D) Neighbor-joining tree based on haplotypes formed by 70 differentiated SNPs from scaffold 190/1420; same populations as in Figure 4C. (E) Plot of average heterozygosity, per SNP in 5 kb windows, across scaffold 1420 indicating a selective sweep among spring-spawners in the region marked with vertical hatched lines. Autumn-spawning populations are marked by an asterisk.DOI: http://dx.doi.org/10.7554/eLife.12081.016
+**Figure 4.:** (A) Manhattan plot of significance values testing for allele frequency differences. (B) Neighbor-joining phylogenetic tree based on all SNPs showing genetic differentiation in this comparison (p<10-10). (C) Comparisons of allele frequencies in four strongly differentiated regions. The major allele in the AB1 sample (Atlantic Ocean) was set as reference at each SNP. Scaffolds 190 and 1420 have been merged in this plot since it was obvious that they were overlapping. *The signal in scaffold s1440 is present ~27 kb upstream of SOX11 and ~46 kb downstream of DCDC2/ALLC. (D) Neighbor-joining tree based on haplotypes formed by 70 differentiated SNPs from scaffold 190/1420; same populations as in Figure 4C. (E) Plot of average heterozygosity, per SNP in 5 kb windows, across scaffold 1420 indicating a selective sweep among spring-spawners in the region marked with vertical hatched lines. Autumn-spawning populations are marked by an asterisk.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/12081/elife-12081-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** F statistic in spring- (BÄV), summer- (BÄS) and autumn- (BÄH) spawners from the same locality (Gävle).ITThe result is based on individual genotyping, using a SNP-chip, of 1500 SNPs that show strong genetic differentiation between spring- and autumn-spawners. The data are presented as a violin plot that shows a box plot in the middle and a rotated kernel density plot on each side. The central rectangle of the box plot spans the first to third quartiles of the distribution, and the ‘whiskers’ above and below the box show the maximum and minimum estimates. The line inside the rectangle shows the median. Mean  and its standard error is shown at the bottom; n represents the number of loci that was polymorphic in that particular population.FITDOI: http://dx.doi.org/10.7554/eLife.12081.017
+**Figure 4—figure supplement 1.:** The result is based on individual genotyping, using a SNP-chip, of 1500 SNPs that show strong genetic differentiation between spring- and autumn-spawners. The data are presented as a violin plot that shows a box plot in the middle and a rotated kernel density plot on each side. The central rectangle of the box plot spans the first to third quartiles of the distribution, and the ‘whiskers’ above and below the box show the maximum and minimum estimates. The line inside the rectangle shows the median. Mean FIT and its standard error is shown at the bottom; n represents the number of loci that was polymorphic in that particular population.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/12081/elife-12081-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** Trees based on individual SNP genotype data from three highly differentiated regions.DOI: http://dx.doi.org/10.7554/eLife.12081.018
+**Figure 4—figure supplement 2.:** Trees based on individual SNP genotype data from three highly differentiated regions.
 
 A general linear mixed model was used to identify which of the 125 independent loci showed the most consistent allele frequency differences between spring and autumn spawners. This analysis revealed 17 independent genomic regions that passed the stringent significance threshold of p<10–10 (Bonferroni correction, p=4.9x10-6) (Supplementary file 3C). We then illustrate the striking allele frequency differences at the four most significant regions using data from six different populations. As observed for the genetic adaptation to declined salinity (above), the most significant regions underlying seasonal reproductive timing typically consists of large haplotype blocks often containing multiple genes. Spring-spawning Atlantic and Baltic herring showed nearly identical allele frequencies at these loci while autumn-spawning herring from Baltic Sea and North Sea showed high frequencies of the alternate alleles (Figure 4C). Remarkably, summer-spawning herring showed a clear trend towards intermediate allele frequencies at all loci, most pronounced for scaffold 481 (Figure 4C). This may either reflect that this sample is an admixture of spring- and autumn-spawning herring or that it represents a distinct population. To explore this we investigated deviations from Hardy-Weinberg equilibrium using the FIT statistics because we expect a heterozygote deficiency if this is a mix of two populations. The results, based on 1,500 SNPs all showing strong genetic differentiation between spring- and autumn-spawners and genotyped individually using the SNP chip, showed that the summer spawners (BÄS) did not deviate markedly from FIT = 0 and in fact to a lesser extent than the spring-spawning population (BÄV) sampled at the same locality (Figure 4—figure supplement 1). For instance, individual genotyping of the highly differentiated SNPs from scaffold 481 (Figure 4C) resulted in mean FIT = −0.10 (excess of heterozygotes) for the summer spawners (BÄS) whereas if the sample had constituted an equal mix of spring- and autumn spawners from the same locality (BÄV and BÄH) the expected FIT-value would have been 0.46 (strong heterozygote deficiency). Thus, the data strongly suggest that these summer spawners represent a distinct population rather than admixture. Spawning time may be fine-tuned by the dosage of alleles affecting spawning time. The three populations from Gävle showed nearly identical allele frequencies at loci with strong genetic differentiation between Atlantic Ocean and Baltic Sea (Figure 3C), whereas they showed dramatic allele frequency differences at loci associated with spawning time (Figure 4C).
 
@@ -151,23 +485,23 @@ We used SNP-chip data to construct a haplotype tree based on highly differentiat
 
 Genetic differences in spawning time are expected to involve photoperiodic regulation of reproduction. Interestingly, our strongest signals (p<1x10-120) in this contrast is located within and up to 25 kb upstream of TSHR encoding thyroid-stimulating hormone receptor, which has a central role in this pathway in birds and mammals (Nakao et al., 2008; Ono et al., 2008; Hanon et al., 2008). Further, a second gene in the same scaffold (190/1420), calmodulin has a role in initiating reproduction following secretion of gonadotropin-releasing hormone (GnRH) (Melamed et al., 2012) downstream of TSHR signalling in photoperiodic regulation of reproduction. SOX11, one of the genes in the associated region in scaffold 1440 (Figure 4C), encodes a transcription factor that controls GnRH expression in GnRH-secreting neurons (Kim et al., 2011). Finally, ESR2a, in scaffold 312, encodes estrogen receptor beta that has a well established function in reproductive biology (Bondesson et al., 2015). Interestingly, a previous experimental study in sticklebacks also indicate that estrogen receptor signaling is involved in photoperiodic regulation of reproduction since treatment with aromatase inhibitors, which leads to an inhibition of the conversion of androgens to estrogens, altered photoperiodic regulation of male sexual maturation (Bornestaf et al., 1997). Also, the expression of ESR2 but not ESR1 is regulated by circadian factors in mice (Cai et al., 2008), consistent with our data suggesting that estrogen receptor beta (encoded by ESR2) is more important than estrogen receptor alpha (encoded by ESR1) for photoperiodic regulation of reproduction.
 
-## Adaptive haplotype blocks are maintained by selection
+### Adaptive haplotype blocks are maintained by selection
 
 A common feature for the signatures of selection for adaptation to low salinity and for seasonal reproduction in herring is the presence of haplotype blocks (10–200 kb in size) showing strong differentiation (Figures 3C, 4C), despite the rapid decay of linkage disequilibrium at selectively neutral sites (Figure 1—figure supplement 1A). A possible explanation for the pattern is the presence of inversions suppressing recombination as previously shown in three-spined stickleback (Jones et al., 2012). We constructed 3.3 kb Nextera mate pair libraries for two Atlantic and two Baltic herring individuals to scan for inversions with a particular focus on regions under selection. However, few convincing inversion candidates were detected and none coincided with the regions highlighted in Figures 3C, 4C. Thus, inversions do not appear to be an important explanation for the presence of haplotype blocks.
 
-Having excluded inversions as a major explanation for the long haplotype blocks, two other possible explanations were considered. Haplotype blocks may occur as a consequence of recent fast selective sweeps that leads to hitchhiking of neutral polymorphism in close genetic linkage with causal variants (
+Having excluded inversions as a major explanation for the long haplotype blocks, two other possible explanations were considered. Haplotype blocks may occur as a consequence of recent fast selective sweeps that leads to hitchhiking of neutral polymorphism in close genetic linkage with causal variants (Maynard-Smith and Haigh, 1974; Charlesworth et al., 1997). Alternatively, haplotype blocks involving multiple causal mutations may be maintained by natural selection. These two models give entirely different predictions as regards nucleotide diversity in the differentiated regions of the genome. The hitchhiking model predicts reduced levels of genetic diversity in the differentiated region whereas the haplotype evolution model implies that nucleotide diversity in the differentiated regions, even within populations, may be as high or even higher than in neutral regions because the haplotypes are expected to have been maintained during an evolutionary process. We decided to test this by comparing nucleotide diversity for the 30 most differentiated regions in the contrast Atlantic vs. Baltic within and between one population of Atlantic herring (Bergen) and one population of Baltic herring (Kalix). The nucleotide diversity turned out to be significantly higher in the differentiated regions than in random regions of the genome both within and between populations (Figure 5A). The same conclusion emerged from the analysis of the 30 most differentiated regions between autumn- and spring-spawning herring using the samples collected at the same locality (Gävle) in May and September (Figure 5B). Thus, we conclude that our data on genetic differentiation in herring is consistent with the evolution of haplotype blocks harbouring multiple causal variants. The model also implies that the presence of multiple alleles containing different combinations of causal variants is expected.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/12081/elife-12081-fig5-v1.jpg)
 
-**Figure 5.:** (A) salinity and (B) spawning time. For each contrast 30 strongly differentiated regions of the genome and 30 control regions showing no significant differentiation were used. The nucleotide diversity within and between populations for the control regions was estimated around 0.3% consistent with the genome average whereas diversity in differentiated regions was significantly higher. BK=Baltic herring, Kalix; AB=Atlantic herring, Bergen; BÄH=autumn-spawning Baltic herring from Gävle; BÄV, spring-spawning Baltic herring from Gävle; see Table 1. The data are presented as box plots; the central rectangle spans the first to third quartiles of the distribution, and the ‘whiskers’ above and below the box show the maximum and minimum estimates. The line inside the rectangle shows the median.DOI: http://dx.doi.org/10.7554/eLife.12081.019
+**Figure 5.:** (A) salinity and (B) spawning time. For each contrast 30 strongly differentiated regions of the genome and 30 control regions showing no significant differentiation were used. The nucleotide diversity within and between populations for the control regions was estimated around 0.3% consistent with the genome average whereas diversity in differentiated regions was significantly higher. BK=Baltic herring, Kalix; AB=Atlantic herring, Bergen; BÄH=autumn-spawning Baltic herring from Gävle; BÄV, spring-spawning Baltic herring from Gävle; see Table 1. The data are presented as box plots; the central rectangle spans the first to third quartiles of the distribution, and the ‘whiskers’ above and below the box show the maximum and minimum estimates. The line inside the rectangle shows the median.
 
-## Genomic distribution of causal variants
+### Genomic distribution of causal variants
 
-Genome-wide analysis combined with strong signatures of selection enabled us to explore the genomic distribution of sequence polymorphisms underlying ecological adaptation. We carried out an enrichment analysis as previously used to identify categories of SNPs showing differentiation between domestic and wild rabbits (
+Genome-wide analysis combined with strong signatures of selection enabled us to explore the genomic distribution of sequence polymorphisms underlying ecological adaptation. We carried out an enrichment analysis as previously used to identify categories of SNPs showing differentiation between domestic and wild rabbits (Carneiro et al., 2014). We calculated the absolute allele frequency difference (dAF) for different categories of SNPs in the two contrasts Atlantic vs. Baltic and spring- vs. autumn spawning herring and sorted these into bins (dAF 0–0.05, etc.) for different categories of SNPs. In both contrasts the great majority of SNPs (>90%) showed a dAF lower than 0.10 (Figure 6, Supplementary file 3E).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/12081/elife-12081-fig6-v1.jpg)
 
-**Figure 6.:** (A) dAF calculated for the contrast marine vs. brackish water. (B) dAF calculated for the contrast spring- vs. autumn-spawning. The black line represents the total number of SNPs in each dAF bin and coloured lines represent M values of different SNP types. M values were calculated by comparing the frequency of SNPs in a given annotation category in a specific bin with the corresponding frequency across all bins.DOI: http://dx.doi.org/10.7554/eLife.12081.020
+**Figure 6.:** (A) dAF calculated for the contrast marine vs. brackish water. (B) dAF calculated for the contrast spring- vs. autumn-spawning. The black line represents the total number of SNPs in each dAF bin and coloured lines represent M values of different SNP types. M values were calculated by comparing the frequency of SNPs in a given annotation category in a specific bin with the corresponding frequency across all bins.
 
 Non-synonymous substitutions showed the most striking enrichment in both contrasts and showed a steady increase above dAF=0.15 reaching a two-fold enrichment at dAF>0.50 (Figure 6, Supplementary file 3E). This enrichment must reflect natural selection acting on the protein sequence because synonymous substitutions did not show a similar strong enrichment at high dAF. All non-synonymous substitutions showing dAF>0.50 in any of the two contrasts are compiled in Supplementary file 3F. A striking feature of this list is the common occurrence of multiple high dAF SNPs in the same gene. The 74 non-synonymous changes with dAF>0.50 in the contrast Atlantic vs. Baltic occur in only 29 different genes and the corresponding figure for the contrast spring- vs. autumn-spawning is 21 non-synonymous changes in 9 genes. We excluded the possibility that the presence of multiple non-synonymous changes in many of the genes was explained by errors in gene models (non-coding sequences annotated as exons) by a comparative analysis with other teleosts. We identified the orthologous position for about two thirds of the positions listed in Supplementary file 3F, the great majority of these (58/62) were annotated as coding sequence also in other species (Supplementary file 3F).
 
@@ -197,17 +531,17 @@ Many populations of marine fish, including the herring, have been severely affec
 
 ## Materials and methods
 
-## Genome assembly and annotation
+### Genome assembly and annotation
 
-## Sample collection
+#### Sample collection
 
 A single Baltic herring (Clupea harengus membras) captured at Forsmark, east of Uppsala, Sweden on September 21, 2011 was used as the reference individual. Skeletal muscle was isolated, placed in 20% glycerol and stored in -80oC until DNA preparation was performed. DNA extraction was carried out with a standard salt precipitation method without vortexing to generate high molecular weight DNA.
 
-## Genome sequencing and assembly
+#### Genome sequencing and assembly
 
 Libraries of eight different insert sizes from the reference individual were sequenced on Illumina HiSeq2000 and Illumina MiSeq (chemistry v2) to a total depth of 127-fold coverage of quality-filtered data (Supplementary file 1A). Reads were filtered according to the following criteria: we eliminated (i) read pairs that contained more than 10% Ns in one of their reads; (ii) read pairs with more than 40% low quality bases (quality ASCII-64 ≤ 7); (iii) read pairs containing adapter sequence (with mismatches ≤ 3bp); (iv) for those libraries with insert size longer than the sum of both reads, if reads overlapped, we skipped reads with at least 10 bp overlap and mismatch in more than 10% of the bases overlapping; (v) finally, we avoided reads showing to be PCR duplicates. Genome assembly with SOAPdenovo v2.04 release 238 (Li et al., 2010) resulted in a scaffolded assembly of 834 Mb (Supplementary file 1B). An additional round of gap closing with an in-house pipeline was performed, utilizing both the overlapping HiSeq library and small unscaffolded contigs. To avoid short spurious contigs, which might appear in the assembly process, all contigs smaller than 1 kb were omitted from the final assembly. Potentially redundant contigs (no mismatches and maximal two gaps) were identified by self-aligning the complete assembly by BLAT, resulting in the removal of an additional 28 contigs. After aligning all reads back to the assembly, regions with no coverage (i.e. assembly valleys) were masked with N’s (3.6 Mb in total). In addition, 298,968 nucleotide positions where all the aligned reads conflicted with the assembly were corrected. The final assembly had a total size of 808 Mbp (Supplementary file 1B), which is in reasonable agreement with flow cytometry genome size estimates in Pacific herring (C. pallasii); 0.77–0.98 picograms (Hinegardner and Rosen, 1972, Ida et al., 1991, Ohno et al., 1969) corresponding to an average of ~850 Mb (mean(pg) x 0.978 × 109 bp/pg) (Doležel et al., 2003).
 
-## Synthetic long reads
+#### Synthetic long reads
 
 We obtained data from Illumina’s synthetic long-read sequencing service (formerly Moleculo) (McCoy et al., 2014). Illumina prepared five libraries as a service following a detailed published protocol (Voskoboynik et al., 2013). In brief, pieces of genomic DNA of approximately 8 kb per molecule were distributed into 384 wells per library, with multiple molecules per well. The DNA in each well was fragmented, and sequencing adapters and well-specific barcodes were added. After pooling and sequencing on one lane of a HiSeq instrument, reads within each well were assembled separately in order to reconstruct the original molecules in each well. The contigs resulting from this process are called synthetic long reads (SLRs). They were filtered to be at least 1500 bp in size. From the five libraries, we obtained 1.3 million SLRs at an average length of 3.6 kb per read (4.7 Gb total sequence), with 20% longer than 5 kb (Figure 2—figure supplement 3). Since SLRs are assembled consensus sequences, base qualities were high, with an average Phred-scaled quality value of 36.
 
@@ -219,15 +553,15 @@ SLRs allowed an improved read-based phasing (Kuleshov et al., 2014) of the 3,896
 
 Indels in the reference individual were called separately with Illumina data and with SLR data using FreeBayes (version 0.9.8). The availability of long, high-quality reads makes it possible to call medium-sized indels. This type of indels are too long to be found using short reads, but too short to be found by techniques relying on mate-pair mapping distance so by using long reads we should improve our chances of finding them. Calling variants on the reference individual from only short reads results in 537,186 indels of quality 100 or better. Only 580 of those have a length of 30 bp or more. Feeding the variant caller with the SLRs resulted in 8,372 additional indels of length 30 bp or more (Supplementary file 1F).
 
-## Mappability calculation
+#### Mappability calculation
 
 We calculated per base mappability, a measure of base pair uniqueness in the reference sequence, with the GEM library (Marco-Sola et al., 2012). We translated the program’s output to a bounded score per base pair along the genome. Thereafter, we binned these scores using 1 kb non-sliding windows in order to identify regions of the genome that are either highly unique or repetitive. By doing so, we could collate this information track and other annotations when searching for structural changes to better interpret the results.
 
-## CEGMA
+#### CEGMA
 
 The completeness of the assembled genome was evaluated by analysing a set of 248 ultra-conserved eukaryotic genes using hidden Markov models (HMM) as implemented in CEGMA (v2.4) (Parra et al., 2007, 2009). 84% of the core genes were scored as 'complete' in the assembly (>70% aligned), and only 2.5% were missing from the assembly (<30% aligned), which indicates that the gene space is well represented in the assembly (Supplementary file 1C).
 
-## RNA sequencing, transcriptome assembly and annotation
+#### RNA sequencing, transcriptome assembly and annotation
 
 Liver and kidney tissue were collected from the reference individual and stored in RNAlater. After extraction of RNA, using Qiagen RNeasy Fibrous Tissue Mini Kit, and poly-A selection, strand-specific dUTP libraries were produced. Fragments with an insert size of 200 bp were then sequenced by Illumina Hi-Seq instrument using 101 cycles per run producing ~200 million paired-end reads for each library (Supplementary file 1A).
 
@@ -235,7 +569,7 @@ We reconstructed the herring transcriptome combining RNAseq data for liver and k
 
 Both the Swedish genome annotation platform and the BGI team then carried out genome annotation using a custom annotation pipeline. This process utilised various programs detailed in Figure 2—figure supplement 1. A combination of data from evidence sources (protein homology, transcripts, repeats) and ab initio predictions were used to discover 23,336 coding gene models (Supplementary file 1D).
 
-## Genome annotation
+#### Genome annotation
 
 A custom annotation pipeline using the Maker package (version 2.31.6) (Cantarel et al., 2008) was applied to combine evidence data (protein homology, transcripts, repeats) and ab initio predictions into gene annotations (Figure 2—figure supplement 1). First, using TopHat2 (v2.0.9) (Kim et al., 2013) and cufflinks (v2.2.1) (Trapnell et al., 2010), we reconstructed individual genome-guided RNA-seq assemblies of the reference herring transcriptome from liver and kidney tissues, and the previously published transcriptome from skeletal muscle from another Baltic herring individual (Lamichhaney et al., 2012). In order to obtain a high-confidence set of coding transcripts, we set the minimum isoform fraction (-F) to 0.25 in cufflinks (this allows isoforms to be reported if they accounted for 25% of the expression in a given sample) and the pre-mRNA fraction (-j) to 0.6 (suppressing reads that are spanned by splice junctions and are expressed at 60% or lower when compared to the splice junction). While this approach may loose some data, we found it to yield satisfactory results with regards to noise levels and spurious transcription, judged by coding potential and structure (31,374 transcripts built from muscle, 50,404 from kidney and 41,285 from liver). In a complementary approach, we computed a de novo assembly of normalized, merged samples of liver and kidney, using the Trinity package (Grabherr et al., 2011) with default settings (248,721 transcripts).
 
@@ -253,21 +587,21 @@ With the initial gene build completed, we proceeded to infer putative functions 
 
 The standard annotation pipeline combining evidence based and ab initio predictions applied to our present assembly predicted a total of 23,336 gene models in the herring genome (Supplementary file 1D). We performed clustering of orthologous genes among 15 species (H. sapiens, D. rerio, L. chalumnae, G. morhua, T. rubripes, T. nigroviridis, O. latipes, C. harengus, G. aculeatus, P. marinus, O. niloticus, L. oculatus, X. maculatus, A. mexicanus, P. formosa), downloaded from Ensembl 78, with OrthoMCL (version 2.0.9) and used granularity of 1.5 as recommended for the mcl algorithm (Li et al., 2003). We first filtered the proteomes to keep only the longest isoform per gene. Then we filtered by length, keeping only those with more than 50 amino acid residues. None of the herring proteins were removed but 208 proteins from the three proteomes of the 4way-fish comparison were removed. We found that the herring assembly contained 14,107 orthologous gene families, 9,634 of which were common to four fish genomes (C. harengus, D. rerio, L. chalumnae, G. morhua), and 573 of these gene families were specific only to the herring genome (Figure 2B). The difference between both figures is likely to be a reflection of the different annotation statuses for current fish genomes, some of them more fragmented and poorly annotated, possibly yielding some spurious clustering in the 15way comparison.
 
-## Endogenous retroviruses (ERVs)
+#### Endogenous retroviruses (ERVs)
 
 Analyses of the herring genome using RetroTector (Sperber et al., 2007) identified 150 endogenous retroviruses (ERVs) in scaffolds or contigs larger than 12 kb constituting about 0.13% of the genomic sequence (Supplementary file 2), none of which presented open reading frames in all gag, pol and env genes. The number of identified ERVs is somewhat lower than in most vertebrate hosts but comparable to other fish genomes (Hayward et al., 2015). Epsilon retroviruses such as the Walleye dermal sarcoma virus (WDSV) are typical findings in fish genomes and 8 epsilon-like ERVs could be determined by phylogenetic analysis (Figure 2—figure supplement 5). Additionally, three ERVs group together with the Snakehead fish retrovirus (SnRV) and 51 ERVs form a large basal clade in the phylogenetic tree without known reference sequences, possibly a transition between known retroviral sequences and gypsy retrotransposons represented by Cer1 in the root of the tree.
 
-## Genome resequencing and data analyses
+### Genome resequencing and data analyses
 
-## Sampling
+#### Sampling
 
 Tissue samples from 47–100 fish per population were collected from different localities in the Baltic Sea, Skagerrak, Kattegat, the Atlantic Ocean and the Pacific Ocean (Table 2). Genomic DNA was isolated by standard procedures and DNA from all individuals per sampling location was pooled in equimolar concentrations. We also used eight DNA samples of Baltic herring collected close to Gävle, Sweden and eight Atlantic herring collected close to Bergen, Norway for individual sequencing.
 
-## Resequencing, alignment and SNP calling
+#### Resequencing, alignment and SNP calling
 
 Sequencing libraries (average fragment size about 400 bp) were constructed for each population pool and the 16 individuals, and 2x100 bp paired-end reads were generated using Illumina HiSeq2000 sequencers. The amount of sequence per pool was targeted to ~30x coverage. These sequences in addition to the data from eight herring populations from our previous study (Lamichhaney et al., 2012) (Table 2) were aligned to the herring reference genome using BWA-MEM v0.7.1 (Li and Durbin, 2009). SNP calling was done using a standard GATK pipeline (McKenna et al., 2010). The quality filtering of the raw variant calls was done using GATK using the following cut-offs, QD < 2.0, MQ < 40.0, FS > 60.0, MQRankSum <-12.5, ReadPosRankSum < -8.0 and DP < 100. In addition, only SNPs with an average sequence coverage of 30-50x in each pool were retained for downstream analysis to avoid regions of the genome that are difficult to sequence using current technology and regions oversampled due to for instance duplications. Similar filtering criteria were used for individual sequences using GATK (QUAL < 100, MQ < 50.0, MQRankSum < -4.0, ReadPosRankSum < -2.0, QD < 2.0, HaplotypeScore > 10.0, FS > 60.0, DP < 12, DP > 720.0).
 
-## Population genetics and demographic history
+#### Population genetics and demographic history
 
 The filtered SNP dataset was used to estimate genetic diversity within and between populations using Plink (Purcell et al., 2007) and to generate neighbor-joining trees using Phylip (Felsenstein, 1989). The split between Atlantic and Pacific herring was dated based on sequence divergence for mtDNA cytochrome B sequence using the molecular clock calibration for this sequence from fish (Burridge et al., 2008). Average nucleotide diversity was calculated using the 16 individual sequences, by counting the number of heterozygous sites in each individual and dividing by the total length of the used scaffolds. In order to avoid edge effects, only scaffolds longer than one Mb were included in the calculation. Decay of linkage disequilibrium, measured as correlation between genotypes, and Tajima’s D were calculated using VCFtools (Danecek et al., 2011).
 
@@ -275,7 +609,7 @@ In order to compare the observed allele frequency distribution with the expected
 
 We analysed the Baltic and Atlantic populations separately, using phased sequence data from eight individuals (i.e. 16 unique chromosomes) from each population. Due to memory usage constraints, we performed the analysis for a limited number of genomic regions, each containing approximately 105 SNPs, arbitrarily chosen from parts of the genome that did not show strong signs of selection. A representative population history was then reconstructed by averaging across the analysed regions.
 
-## Screening for signatures of selection
+#### Screening for signatures of selection
 
 We classified populations based on their adaptations to different environmental variables, marine (Atlantic Ocean) vs. brackish (Baltic Sea) waters, and different spawning seasons (spring vs. autumn). We then performed contingency χ2 tests using the allele frequency estimates at each locus to identify genomic regions showing significant allele frequency differences between populations sorted according to these contrasts. In order to control for the inflation in P values at positions with high coverage, we normalised the reference and variant allele read counts at these positions using genome-wide expected coverage. The Bonferroni correction threshold was p=8.2x10-9 and p<1x 10-10 was chosen as the stringent significance threshold. We also estimated pooled heterozygosity as previously described (Rubin et al., 2010) in 5 kb genomic window across the whole genome in each population to identify genomic regions with reduced heterozygosity that may have been targets of selection. All significant SNPs associated with spawning or adaptation to variation in salinity (p<10-20) were clustered as one independent genomic region under selection using the following steps. 1) We rescaled the coordinates by subtracting gaps from SNP positions along each scaffold. 2) We combined strongly correlated SNPs using the Comb-p software (Pedersen et al., 2012) and requested that independent regions should be separated by a distance of at least 20 kb with no SNPs reaching the significance threshold (p<10-20).
 
@@ -285,11 +619,11 @@ In order to identify the loci showing the most consistent allele frequency diffe
 
 glmer(y ~ Group+(1|populations), family=binomial(), nAGQ = 10, data=input_file), where, Group = autumn or spring spawning population, Population = specific population, Family = error distribution used in the model, nAGQ = the number of points per axis for evaluating the adaptive Gauss-Hermite approximation to the log-likelihood, Default = 1, that corresponds to the Laplace approximation. As the differences in allele frequencies between the populations within the groups were small in our dataset, we did not use the Laplace approximation, but used a greater nAGQ (i.e. 10) for more thorough likelihood maximization procedure. The Bonferroni correction threshold was p=4.9x10-6 and cut-off of p<1x10-10 was chosen as the stringent significance threshold.
 
-## Genomic distribution of genetic variants
+#### Genomic distribution of genetic variants
 
 SnpEff (v.3.4) (Cingolani et al., 2012) was used to annotate the genomic distribution of variants and classify them into different categories (non-synonymous, synonymous, UTR, 5 kb upstream, 5 kb downstream, intronic and intergenic). For both (1) Atlantic vs. Baltic and (2) spring- vs. autumn-spawning contrasts, we calculated the absolute allele frequency difference (dAF) and sorted them into bins (dAF -0.05, etc.) for each of these categories of SNPs. For unbiased estimation of dAF, SNPs with missing calls in at least one population were removed. The SnpEff prediction from less confident annotations (for instance, missing start and stop codons in the transcript) were excluded from the analysis. The expected number of SNPs for each category in each bin was calculated as p(category) X n(bin), where p(category) is the proportion of a specific SNP category in the entire genome and n(bin) is the total number of SNPs in a given bin. Log2 fold change of the observed SNP count for each category in each bin was compared against the expected SNP count (M-value) and statistical significance of the deviations from the expected values was tested with a standard χ2 tests.
 
-## Detection of structural changes
+#### Detection of structural changes
 
 We extracted depth of coverage for all populations using GATK:DepthOfCoverage (McKenna et al., 2010), after filtering out reads with mapping quality below 20. We compared populations using 1 kb non-overlapping windows where all pools were normalized against the AB1 sample that showed highest average depth. In short, we created a correction factor per population and applied it on the depth of coverage value for each window. For all the contrasts, we performed an analysis of variance (ANOVA) as described (Carneiro et al., 2014).
 
@@ -297,7 +631,7 @@ We compared populations for two contrasts: 1) Atlantic vs. Baltic and 2) spring 
 
 We searched for inversions using mate-pair (2x100 bp) Nextera libraries (Illumina) with an average insert size of 3–4 kb generated from four individuals: two Atlantic (one female and male) and two Baltic (one female and male) sequenced to 3X coverage using Illumina HiSeq2000, After trimming and filtering low quality reads, we aligned the reads on herring genome by BWA-MEM (Li and Durbin, 2009). We used DELLY (Rausch et al., 2012) and BreakDancer (Chen et al., 2009) with default parameters, except that mapping quality was set to 10. We used bitwise flag in BAM files to extract deviant reads indicative of inversions overlapping sweep regions.
 
-## Genotyping of individual fish using high density SNP array
+### Genotyping of individual fish using high density SNP array
 
 We designed an Affymetrix custom genotyping array with 72,560 SNPs, tiling the best strand for each SNP. Due to the fact that A/T and G/C SNPs require twice the features on the array that other markers require, the array layout covered 82,569 probe pair sets. These covered the majority of SNPs showing significant genetic differentiation together with the best 2000 monomorphic nucleotide sites to validate the individual plate/sample performance (in the dish quality metric, DQC). We submitted 36-mer nucleotide sequences around target SNPs to the manufacturer. SNPs flanked by other sequence polymorphisms were avoided as well as regions containing repetitive or low mappability sequences, Finally, we deprioritized A/T and C/G SNPs, as they take twice as much room on the array. Array experiments were performed by the Array and Analysis Facility, SciLifeLab (Uppsala, Sweden) according to standard protocol (Affymetrix Axiom 2.0 Assay Manual Workflow User Guide, P/N 702990 Rev3, Affymetrix).
 

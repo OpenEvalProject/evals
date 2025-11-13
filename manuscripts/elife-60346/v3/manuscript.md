@@ -32,7 +32,7 @@
 
 ## Abstract
 
-Peroxiredoxins are H 2 O 2 scavenging enzymes that also carry out H 2 O 2 signaling and chaperone functions. In yeast, the major cytosolic peroxiredoxin, Tsa1 is required for both promoting resistance to H 2 O 2 and extending lifespan upon caloric restriction. We show here that Tsa1 effects both these functions not by scavenging H 2 O 2 , but by repressing the nutrient signaling Ras-cAMP-PKA pathway at the level of the protein kinase A (PKA) enzyme. Tsa1 stimulates sulfenylation of cysteines in the PKA catalytic subunit by H 2 O 2 and a significant proportion of the catalytic subunits are glutathionylated on two cysteine residues. Redox modification of the conserved Cys243 inhibits the phosphorylation of a conserved Thr241 in the kinase activation loop and enzyme activity, and preventing Thr241 phosphorylation can overcome the H 2 O 2 sensitivity of Tsa1-deficient cells. Results support a model of aging where nutrient signaling pathways constitute hubs integrating information from multiple aging-related conduits, including a peroxiredoxin-dependent response to H 2 O 2 .
+Peroxiredoxins are H2O2 scavenging enzymes that also carry out H2O2 signaling and chaperone functions. In yeast, the major cytosolic peroxiredoxin, Tsa1 is required for both promoting resistance to H2O2 and extending lifespan upon caloric restriction. We show here that Tsa1 effects both these functions not by scavenging H2O2, but by repressing the nutrient signaling Ras-cAMP-PKA pathway at the level of the protein kinase A (PKA) enzyme. Tsa1 stimulates sulfenylation of cysteines in the PKA catalytic subunit by H2O2 and a significant proportion of the catalytic subunits are glutathionylated on two cysteine residues. Redox modification of the conserved Cys243 inhibits the phosphorylation of a conserved Thr241 in the kinase activation loop and enzyme activity, and preventing Thr241 phosphorylation can overcome the H2O2 sensitivity of Tsa1-deficient cells. Results support a model of aging where nutrient signaling pathways constitute hubs integrating information from multiple aging-related conduits, including a peroxiredoxin-dependent response to H2O2.
 
 ## Introduction
 
@@ -46,7 +46,7 @@ We recently showed that, in response to H2O2, Tsa1 and thioredoxin are required 
 
 ## Results
 
-## The effects of Tsa1 on longevity are mediated by the Ras-cAMP-PKA pathway
+### The effects of Tsa1 on longevity are mediated by the Ras-cAMP-PKA pathway
 
 A single extra-copy of the TSA1 gene, which encodes the major yeast cytosolic Prx, Tsa1, prolongs lifespan in the absence of caloric restriction (Hanzén et al., 2016). To clarify the mechanism by which Tsa1 promotes this effect, we enquired whether PKA is involved, as this kinase antagonizes both longevity (Lin et al., 2000) and resistance to H2O2 (Molin et al., 2011) and Tsa1 is required for decreasing PKA-dependent phosphorylation of the ‘general stress’ transcription factor Msn2 in response to H2O2 (Bodvard et al., 2017). The high affinity cAMP-phosphodiesterase Pde2 degrades cAMP, and deletion of PDE2 promotes PKA activation by increasing cAMP levels, downstream of Ras2 (Figure 1A; Broach, 2012; Deprez et al., 2018; Santangelo, 2006). Deletion of PDE2 decreased the lifespan of the wild type strain by 45% (Figure 1B), as previously shown (Lin et al., 2000), and also prevented the increased lifespan conferred by mild overexpression of TSA1 (compare pde2Δ and pde2Δ o/e TSA1), which indicates that PKA activity is dominant over Tsa1, and suggests that Tsa1 might slow down aging by decreasing PKA activity. Indeed, mild TSA1 overexpression increased both the accumulation of the reserve carbohydrate glycogen (Figure 1C), a diagnostic feature of low PKA activity, and the expression of the PKA-repressed Msn2/4 target Hsp12 (Figure 1D).
 
@@ -56,9 +56,17 @@ A single extra-copy of the TSA1 gene, which encodes the major yeast cytosolic Pr
 
 We turned to cells lacking TSA1, which suffer a severely shortened lifespan (Molin et al., 2011), asking whether this phenotype is linked to PKA. We combined the deletion of TSA1 and RAS2, the latter largely abrogating the stimulation of PKA by glucose (Figure 1A; Santangelo, 2006). Strikingly, Ras2 deficiency completely rescued the reduced lifespan (Figure 1E) of cells lacking Tsa1, and upon deletion of PDE2 in these cells (ras2Δtsa1Δpde2Δ), this rescue was no longer visible (Figure 1F). These data indicate that the shortened lifespan of tsa1Δ is due to aberrant activation of the Ras-PKA pathway, and as a corollary, that Tsa1 might inhibit this pathway. That Tsa1 deletion did not further reduce the lifespan of Pde2-deficient cells (Figure 1F), further support the notion that Tsa1 influences longevity by repressing the Ras-PKA pathway.
 
-## Tsa1 represses the Ras-cAMP-PKA pathway at the level of the PKA enzyme
+### Tsa1 represses the Ras-cAMP-PKA pathway at the level of the PKA enzyme
 
 Cells lacking Ras2 grew significantly slower than the wild-type (Figure 2A), consistent with a substantial reduction in PKA activity. However, deleting TSA1 in these cells (ras2Δtsa1Δ) rescued their slow growth to a rate indistinguishable from that of tsa1Δ cells (Figure 2A), again pointing to an antagonistic effect of Tsa1 on the Ras-PKA pathway, also suggesting that Tsa1 affects the pathway downstream of Ras2. Similarly, overexpressing Ira2, a Ras-GTPase activating protein (RasGAP) that decreases PKA activation by switching RAS-GTP to its inactive GDP form, both slowed down growth to approximately half the rate of control cells (Figure 2C) and increased expression of Msn2/4-target genes that are under PKA repression (Figure 2D). Deleting TSA1 in this strain restored both phenotypes (Figure 2B–D), similar to the effect of Ras-overactivation (RAS2G19V allele, Figure 2—figure supplement 1A–B) or Pde2 deficiency (Figure 2C). Importantly, rescue of the slow growth of Ira2-overproducing cells by Tsa1 deletion was lost when PDE2 was also overexpressed in these cells, also indicating that the rescue is due to increased PKA activity (Figure 2E).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60346/elife-60346-fig2-v3.jpg)
+
+**Figure 2.:** (A) Growth of cells lacking Ras2, Tsa1 or both (n = 3, error bars indicate SD). (B–C) Growth of cells overexpressing IRA2 in the indicated mutants of the Tsa1 catalytic cycle or the PKA signaling pathway on solid (B) or in liquid medium (C), n = 3–15). (D) Expression of the PKA repressed CTT1 or HSP12 genes in the indicated mutants in the Tsa1 catalytic cycle overexpressing IRA2 (mc-IRA2) or not (instead expressing the vector, control, n = 3 ± SD) sampled during mid-exponential growth. (E) Growth of Tsa1-proficient or deficient (tsa1Δ) cells overexpressing IRA2 (mc-IRA2) or PDE2 (mc-PDE2), both or the corresponding vector control plasmids (control) in liquid medium (n = 3 ± SD). (F) Spore germination in cells deficient in Ras1, Ras2, Tsa1 or combinations thereof. Spore germination was estimated in 32 tetrads where genotypes could be assigned to all spores (128 in total, 8–23 spores per genotype). (G) Total time of nuclear Msn2 localization in the indicated mutant strains for 60 min following the addition of 0.3 mM H2O2 (n = 46–82). (H–I) Ras-GTP (H) or cAMP (I) levels in the wild-type or the indicated mutant strains overexpressing IRA2 (mc-IRA2) or not (expressing the vector control, control, n = 3). (J) Phosphorylation of the ectopic AKAR4 PKA site upon H2O2 addition (0.4 mM) in wt, tsa1Δ and trx1Δtrx2Δ cells. (n = 85, 71 and 32, respectively). Error bars indicate SD.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60346/elife-60346-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A-B) Growth of cells expressing the oncogenic RAS2G19V allele, overexpressing IRA2 (mc-IRA2) or both. (C) Spore viability in mutants segregating in a tsa1Δ x tpk1Δtpk2Δtpk3Δ mutant cross. The tpk1Δtpk2DΔtpk3Δ mutant was kept alive by a Tpk1-expressing plasmid (pRS313-TPK1). Spore viability was estimated in 43 tetrads where genotypes could be assigned to all spores (172 spores in total and in 8-15 spores per genotype). (D) Expression of PKA repressed Msn2/4 targets (Hasan et al., 2002; Molin et al., 2011) in wild-type, tsa1Δ or trx1Δtrx2Δ cells deficient in RAS2 (ras2Δ) or not (RAS2).
 
 Strains lacking both RAS alleles (ras1Δras2Δ) are not viable due to inactivation of PKA. This inability to germinate can be rescued by genetic interventions that restore PKA activity downstream of Ras, i.e. the inactivation of Pde2 or of the PKA negative regulatory subunit Bcy1 (Garrett and Broach, 1989; Toda et al., 1985; Wilson and Tatchell, 1988), or of Yak1, which acts downstream of PKA. Loss of the PKA-repressed ‘general stress’ transcription factor Msn2 alone or of both Msn2 and its homologue Msn4, can also partially overcome the growth impairment of the partial loss of active Ras (Figure 2C) and the requirement for a PKA catalytic subunit-encoding (TPK)-gene for viability (Smith, 1998). As the above data indicate that Tsa1 represses PKA activity, we tested whether its loss could similarly rescue the inability of ras1Δras2Δ to germinate by sporulating heterozygous ras1Δ/RAS1, ras2Δ/RAS2 and tsa1Δ/TSA1 diploid cells. However, no cells lacking both Ras1 and Ras2 were viable irrespective of the presence or absence of Tsa1 (Figure 2F). Similarly, we did not obtain viable tsa1Δ tpk1Δ tpk2Δ tpk3Δ spores in a cross between haploid tsa1Δ and tpk1Δ tpk2Δ tpk3Δ strains unless a centromeric TPK1 plasmid was also present (in 6 out of 6 viable spores with the genomic tsa1Δ tpk1Δ tpk2Δ tpk3Δ genotype (Figure 2—figure supplement 1C). These data suggest that the repression exerted by Tsa1 on the Ras-PKA pathway requires the presence of PKA, and thus that the latter may be the target of repression.
 
@@ -66,19 +74,43 @@ To further ascertain at which level Tsa1 interferes with Ras-cAMP-PKA activity, 
 
 Altogether, these data indicate that repression of the Ras-cAMP-PKA pathway by Tsa1 is exerted at the level of PKA, and occurs during aging, in the cell response to H2O2 and during normal growth.
 
-## Tsa1 catalytic cysteines control H2O2 resistance by repressing PKA
+### Tsa1 catalytic cysteines control H2O2 resistance by repressing PKA
 
 Prxs can function as H2O2 scavengers, as receptors of H2O2 signaling relays, or as chaperones. The first two functions require Prx-two catalytic Cys residues CP and CR and electrons from thioredoxin, whereas the third one only relies on the sulfinylation of CP. To sort out which of these three Prx biochemical functions is involved in PKA repression, we examined the effect of mutating CP and CR or of preventing enzyme sulfinylation on Tsa1-mediated repression. The lifespans of tsa1C48S and tsa1C171S mutants suffered a lifespan as short as cells lacking Tsa1 (Figure 3A). Similarly, both the slow growth and the constitutive expression of the PKA-repressed genes CTT1 and HSP12 resulting from Ira2 overproduction were lost in the tsa1C48S and tsa1C171S mutants (Figure 2B–D). In contrast, cells expressing a truncated form of Tsa1 lacking the C-terminal YF motif (tsa1ΔYF), an enzyme form almost totally resilient to sulfinylation (Hanzén et al., 2016), were indistinguishable from wild-type with regards to their lifespan (Figure 3A), slow growth and Ira2 overexpression-dependent, constitutive Msn2-target expression (Figure 2B–D), thus excluding an involvement of the Tsa1 chaperone function in PKA repression.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60346/elife-60346-fig3-v3.jpg)
+
+**Figure 3.:** (A) Life spans of wild-type or the indicated genomic tsa1 mutant strains. In brackets median life-spans and n. (B) Spot-test assay of growth in the presence and absence of 1.5 mM H2O2 in YPD plates. (C) Quantification of H2O2 resistance in (B) (n = 3). (D) H2O2 resistance (1.5 mM H2O2, YPD medium) in the indicated mutants (n = 3). (E) H2O2 resistance in cells overexpressing IRA2 (mc-IRA2 +) or vector control (-) 0.4 mM H2O2, SD medium (n = 3). (F) Culture medium H2O2 removal assay of wt (black) and tsa1Δ cells (blue) to which 200 μM was added. Inset shows average scavenging rates for cultures upon the addition of 400 μM (n = 3). Error bars indicate SD. (G) Average HyPer3 (red) or HyPer3 C199S (black) fluorescence ratio (500 nm/420 nm) in young or aged wild-type or tsa1Δ cells +/- 400 μM H2O2 for 10 min. Cells of about 10–12 generations of replicative age (aged) or young control cells (young) were assayed. Error bars indicate SEM (n = 231, 170, 319, 236 and 202, respectively). (H) Average HyPer3 (red) or HyPer3 C199S (black) fluorescence ratio (500 nm/420 nm) in young or aged wild-type (YMM130) and o/e TSA1 cells as in (G) Error bars indicate SEM (n = 404, 579, 190 and 204, respectively).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60346/elife-60346-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) H2O2 resistance in the indicated mutant strains strains grown to mid exponential phase (OD 0.3) and spotted onto plates with or without the indicated amounts of H2O2. (B) H2O2 resistance in the indicated mutant strains strains grown to early (OD0.01) and mid exponential phase (OD0.5) and spotted onto plates with or without the indicated amounts of H2O2.
 
 Next, to differentiate between the scavenging and signaling functions of Tsa1, we first probed the H2O2 sensitivity phenotype of cells lacking Tsa1. The tsa1Δ was sensitive to H2O2, as monitored by growth on plates containing H2O2, and strikingly, deletion of RAS2 or the overproduction of Ira2 totally rescued this phenotype (Figure 3B–C). Deletion of PDE2 in these cells (ras2Δtsa1Δpde2Δ or pde2Δtsa1Δ mc−IRA2) restored the H2O2 sensitivity of tsa1Δ (Figure 3E; Figure 3—figure supplement 1A), further indicating that the tsa1Δ Η2O2 phenotype is linked to overactive PKA, and not to the loss of Tsa1 scavenging function. Similarly, mild overexpression of TSA1 conferred an increased tolerance to H2O2, which was lost upon deletion of PDE2 (Figure 3D). As another indication of Tsa1 scavenging function dispensability, the decay rate of H2O2 in the medium of tsa1Δ cells after adding a bolus dose was similar to the rate observed in a wild-type cell suspension (Figure 3F). In addition, H2O2 levels measured using the genetically encoded H2O2 sensor HyPer3 (Bilan et al., 2013) were modestly, but significantly increased in old wild-type (10–12 generations), relative to young cells (Figure 3G). Tsa1-deficient cells however, exhibited a similar or even lower increase in the H2O2 fluorescence ratio with age, relative to wild-type, and in cells expressing an extra copy of the TSA1 gene, H2O2 increased to a similar or even higher levels in aged cells (Figure 3H).
 
 We also examined the role of the thioredoxin pathway in PKA repression, which although required for both Tsa1 signaling and scavenging functions, should be more important for the latter. Deletion of TRX1 and TRX2 partly rescued the slow growth of IRA2-overexpressing cells (Figure 2B–C), and suppressed the increased constitutive expression of the PKA-repressed Msn2/4 target genes resulting from Ras2 deletion (Figure 2—figure supplement 1D), the latter even more so than did the deletion of TSA1. However, although H2O2 sensitive, this trx1Δtrx2Δ strain H2O2 phenotype could neither be rescued by deletion of RAS2 (Figure 3—figure supplement 1B) nor by the overproduction of Ira2 (Figure 3E). In addition, PKA was still moderately repressed in trx1Δtrx2Δ in response to H2O2, as measured with the FRET PKA phosphorylation sensor (Figure 2J). Thioredoxins are thus only partially required to repress the phosphorylation of an ectopic PKA target site upon H2O2 addition, or may govern signaling through another pathway that synergizes with PKA in some PKA output functions. Nevertheless, that the Tsa1 catalytic Cys residues are critical to restrain PKA activity, but not the thioredoxins further exclude the Tsa1 scavenging function per se.
 
-## Tpk1 is sulfenylated upon H2O2 addition and glutathionylated on the conserved Cys243
+### Tpk1 is sulfenylated upon H2O2 addition and glutathionylated on the conserved Cys243
 
 If indeed Tsa1 inhibits PKA, we asked by which mechanism this happens. We detected in myc-Tsa1 immunoprecipitates from unstressed cells a weak, but significant amount of Tpk1, the amount of which increased dramatically following H2O2 addition (0.4 mM, Figure 4A). Moreover, immunoprecipitating Tpk1-HB brought down a significant amount of Tsa1 (Figure 4—figure supplement 1A). We next asked whether PKA underwent thiol-redox modifications. Non-reducing electrophoresis did not identify any migration changes compatible with the presence of a disulfide in neither of Tpk1 nor Bcy1 (Figure 4—figure supplement 1B–C). Similarly, kinetic-based trapping using tsa1- and trx2-resolving cysteine mutants (tsa1C171S and trx2C34S) neither altered Bcy1 nor Tpk1 migration (Figure 4—figure supplement 1B–D). We thus performed a mass spectrometry (MS) analysis using affinity-purified His-biotin-tagged Tpk1 (Tpk1-HB) (Tagwerker et al., 2006; Supplementary file 1A). We first performed shot-gun MS and open search analysis to determine the most abundant Tpk1 PTMs of its two Cys residues, Cys195 and Cys243, followed by a targeted label-free quantification approach on a selected set of peptides using parallel reaction monitoring (PRM). A significant proportion of Cys195 was present as an adduct with glutathione (GSH) in unstressed cells (Figure 4—figure supplement 1E, Supplementary file 1B), and levels of all three peptides bearing this modification decreased by 6 and 11-fold upon cell exposure to 0.4 mM and 0.8 mM H2O2, respectively (Figure 4—figure supplement 1F, Supplementary file 1C-D). A significant fraction of Tpk1 Cys243 was also glutathionylated, even in unstressed cells, and in this peptide, Thr241 was phosphorylated (Figure 4B–C, Figure 4—figure supplement 1G–H, Supplementary file 1B). We also detected variants of this peptide bearing other cysteine modifications (i.e. methyl thiolation, sulfinylation and unknown modifications, Figure 4—figure supplement 1G). Importantly, Thr241 phosphorylation decreased upon exposure to H2O2 (Figure 4C, Figure 4—figure supplement 1G), as did Cys243 glutathionylation (2.5-fold), when it occurred on the phosphorylated peptide (Figure 4C). However, the Cys243 glutathionylated Thr241 dephosphorylated peptide increased by 1.4 fold. Confirming MS results, Tpk1 was glutathionylated in unstressed cells, when monitored by anti-glutathione immunoblot of immunoprecipitated Tpk1-HB (Figure 4E–F), and this signal decreased upon exposure to H2O2. Further, in tsa1Δ cells, the glutathionylation signal was more intense, and did not decrease, but rather increased upon H2O2 exposure. We also used DYn-2, a cell-permeable cysteine sulfenic acid (-SOH) probe amenable to click chemistry (Yang et al., 2015) as another approach to probe Tpk1 oxidative modifications. In wild-type unstressed cells, Tpk1 displayed a weak DYn-2 signal, the intensity of which significantly increased upon H2O2 addition, whereas in tsa1Δ cells this signal was much less intense, both prior to and after exposure to H2O2 (0.4 mM, Figure 4D, Figure 4—figure supplement 1I).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/60346/elife-60346-fig4-v3.jpg)
+
+**Figure 4.:** Tpk1 is glutathionylated at a conserved cysteine. (A) Tpk1 interacts with myc-Tsa1 in a coimmunoprecipitation assay and in a manner strongly stimulated by H2O2. (B) MS-MS spectrum showing the matching b-ion (blue) and y-ion (red) series following fragmentation of the Thr241 phosphorylated and C243 glutathionylated peptide encompassing amino acid residues Y239-K261 in Tpk1. T-P = phospho threonine, C-SSG = glutathionylated cysteine. (C) PRM-based quantification of the indicated Thr241 and Cys243 containing Y239-K261 peptides in Tpk1, in the absence or presence of the indicated amount of H2O2, respectively (n = 3). Error bars indicate SD. (D) DYn-2 assay showing Tpk1 cysteine sulfenylation in the presence and absence of TSA1 and +/- 0.5 mM H2O2 for 5 min. Tpk1-HB was immunoprecipitated from tpk2Δtpk3Δ (TSA1) and tpk2Δtpk3Δtsa1Δ (tsa1Δ) cells and analyzed in gel for cyanine5 fluorescence. (E–F) Glutathionylation of Tpk1-HB in strains in (D) as assayed by anti-glutathione immunoblot of immunoprecipitated Tpk1-HB in the absence of or 10 min following the addition of 0.4 mM H2O2. Extracts were separated under non-reducing conditions (n = 3).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60346/elife-60346-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Tsa1 interacts with Tpk1 in a Ni2+-sepharose coimmunoprecipitation assay (Tpk1-HB tpk2Δtpk3Δ strain or tpk1Δtpk3Δ strain used as a negative control). An arrow indicates the Tpk1 specific band, whereas * indicates an unspecific band. (B-C) Bcy1 (B) or Tpk1 (C) redox immunoblots of protein extracts isolated from the indicated thioredoxin mutant strains in the absence of stress (H2O2 -) or following the addition of 0.4 mM H2O2 for 20 min (H2O2 +). NR = non-reducing R = reducing CS = trx2C34S SS = trx2C31SC34S. (D) Tpk1 redox immunoblots of protein extracts isolated from the indicated myc-tsa1 mutant strains in the absence of stress (Time in H2O2 = 0) or 10 or 120 min following the addition of 0.4 mM H2O2. (E, G) Mass-shifts in peptides covering the indicated Tpk1 cysteines detected using unbiased open search approaches. Tpk1-Cys195 denotes the F189-K204 peptide whereas Tpk1-Cys243 the Y239-K261 peptide. (F) PRM-based quantification of the indicated C195 containing Tpk1 peptides (n=3). Error bars indicate SD. (H) PRM-based quantification of the Thr241 phosphorylated and Cys243 sulfinic acid containing Y239-K261 peptide in Tpk1 (n=3). Error bars indicate SD. (I) DYn-2 sulfenylation assay depicting oxidation of Tpk1 following the addition of 0.5 mM of H2O2 for 5 min or not in the presence and absence of TSA1. Tpk1-HB was immunoprecipitated from tpk2Δtpk3Δ (TSA1) and tpk2Δtpk3Δ tpk2Δtsa1Δ (tsa1Δ) cells and analyzed in gel for cyanine5 fluorescence. Arrows indicate Tpk1. Coomassie staining was used to assess total protein used in the assay.
+
 The two Tpk1 Cys residues thus undergo complex redox changes comprising glutathionylation and sulfenylation as dominant and biologically relevant modifications. These changes occur independently, the former present in unstressed cells, decreasing upon H2O2 exposure, and the latter strongly induced by H2O2, both dependent upon Tsa1. The fact that the increased sulfenylation of Tpk1 upon H2O2 addition correlates with Thr241 dephosphorylation led us to probe the importance of all three residues in Tpk1 function by Ala substitution. These substitutions altered neither protein levels nor the ability of cells to grow (Figure 5—figure supplement 1A–D). Interestingly, tpk1C243A, but not tpk1C195A rendered cells hyper-sensitive to H2O2 (Figure 5A, Figure 5—figure supplement 1E), which was not improved by mild overexpression of TSA1 (Figure 5B). In contrast, the tpk1T241A mutant significantly increased H2O2 resistance both in wild-type (Figure 5A) and in tsa1Δ cells (Figure 5C). A docking experiment performed on a Tpk1 3D structural homology model based on the mouse enzyme structure (Figure 5D–E), showed that introducing a glutathione moiety at Cys243 stabilized Thr241 in the dephosphorylated state by direct hydrogen bonding (Figure 5F–H). When Thr241 was phosphorylated, the kinase activation loop was now stabilized through hydrogen bonds to Arg209 and Lys233 (Figure 5F–G), and in this setting, glutathione at Cys243 adopted a different position, now extending towards the ATP-binding pocket (Figure 5I). Subsitution of Cys243 to the less bulky cysteine sulfenic/sulfinic acid mimetic aspartate (tpk1C243D), or modification by methylthiolation (S-CH3, Figure 4—figure supplement 1E) had, however, little effect on the molecular dynamics of Tpk1 (Figure 5—figure supplement 1F–G). In summary, Cys243 glutathionylation might inhibit PKA by interfering both with Thr241 phosphorylation and with the ATP-binding pocket dynamics, when occurring together with phosphorylated Thr241, which would not fit the observed decreased glutathionylation of Tpk1 seen upon H2O2 addition. Alternatively, the Cys243 sulfenic acid may react further as previously speculated for the redox modulation of the ER kinase IRE-1 (Hourihan et al., 2016) and our 3D data suggest that a more bulky modification may be the driving event in PKA repression. Taken together, these data support the presence of a Tsa1 thiol-based redox mechanism in PKA repression.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60346/elife-60346-fig5-v3.jpg)
+
+**Figure 5.:** (A–B) H2O2 resistance of the wild-type vector control (A, pRS313 or B, pRS403) or the indicated tsa1- or tpk-mutant strains in SD medium, 0.6 mM H2O2. Strains in (B) carry pRS316-TPK1 or pRS316-tpk1C243A as the only PKA catalytic subunit peroxiredoxin Tsa1 slows down (genomic tpk1Δtpk2Δtpk3Δ deletions, n = 3). (C) H2O2 resistance of tpk1Δtpk2Δtpk3Δ and tpk1Δtpk2Δtpk3Δtsa1Δ cells transformed with pRS313-TPK1 or pRS313-tpk1T241A as indicated in SD medium 0.6 mM H2O2 (n = 3). (D–E) Structural homology model of yeast Tpk1 (D) based on the structure of mouse type II PKA holoenzyme (E) [PDB ID 3TNP, (Zhang et al., 2012). (F–I) Amino acids in the activation loop (in red) of Tpk1 in the Thr241 phosphorylated Cys243 non-modified (F), Thr241 non-phosphorylated Cys243 non-modified (G), Thr241 non-modified Cys243 glutathionylated (H) and Thr241 phosphorylated Cys243 glutathionylated (I) states in the Tpk1 structural homology model. The backbones are colored in light blue, carbon atoms in yellow, nitrogen atoms in blue, oxygen atoms in red and phosphor atoms in scarlet. The distance between Lys233 and phosphorylated Thr241 is 9.55 Å (F) whereas Lys233 and non-phosphorylated Thr241 reside 10.88 Å apart (G). (J) Overview of mechanisms by which glucose and H2O2 control PKA activity. In blue activators and in red inhibitors. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60346/elife-60346-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** PKA catalytic subunit Tpk1 neither affects viability nor growth, whereas in silico simulation suggest that glutathionylation, but not sulfenylation, of Tpk1Cys243 significantly impacts on Tpk1 structure.(A) Growth of tpk1Δtpk2Δtpk3Δ cells transformed with the vector (vector) or the indicated pRS313-TPK1 plasmids and pRS316-TPK1 (pTPK1-URA3) on solid synthetic defined (-HIS, 5-FOA) medium to counterselect pTPK1-URA3. (B) Growth of the strains in (A) on solid synthetic defined selective (-HIS, URA) medium. Cells in A) and B) were left to grow for 3 days before photographed. (C) Doubling time of the indicated tpk-mutant strains in synthetic defined -HIS medium. (D) Tpk1 levels are not significantly altered in Tpk1 substitution mutants neither with nor without H2O2 (0.4 mM. 10 min). Pgk1 levels were used to indicate protein loading. (E) H2O2 resistance of TPK1 tpk2Δ tpk3Δ and tpk1C195A tpk2Δ tpk3Δ-mutants as indicated. (F) Alignment of cysteine (green), aspartate (blue), methylthiolated (pink) or glutathionylated cysteine (grey) in position 243 in the Tpk1 homology model. (G) Root-mean-square deviation of the C-alpha distances in C243-SH (orange), Cys243Asp (blue), Cys243 methylthiolated (yellow) and C243 glutathionylated enzyme (Cys243-SSG, grey) upon molecular dynamic simulation.
 
 ## Discussion
 
@@ -102,123 +134,945 @@ The incidence of many major age-related diseases, such as cancer, diabetes and n
 
 ## Materials and methods
 
-## Strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli BL21 strain expressing pGEX2T-1-GST-RBD</td>
+      <td>This paper, 10.1038/s41467-017-01019-z</td>
+      <td></td>
+      <td>To purify GST-RBD for Ras-GTP assays</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>wt control</td>
+      <td>10.1016/j.cell.2016.05.006</td>
+      <td>YMM130</td>
+      <td>MAT alpha his3Δ1::pRS403, leu2Δ0 lys2Δ0 ura3Δ0</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>o/e TSA1</td>
+      <td>10.1016/j.cell.2016.05.006</td>
+      <td>o/e TSA1</td>
+      <td>MAT alpha his3Δ1::pRS403-Myc-TSA1, leu2Δ0 lys2Δ0 ura3Δ0</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>pde2Δ control</td>
+      <td>This paper</td>
+      <td>YMM175</td>
+      <td>MAT alpha his3Δ1::pRS403, leu2Δ0 lys2Δ0 ura3Δ0 pde2Δ::kanMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>pde2Δ o/e TSA1</td>
+      <td>This paper</td>
+      <td>YMM176</td>
+      <td>MAT alpha his3Δ1::pRS403-Myc-TSA1, leu2Δ0 lys2Δ0 ura3Δ0 pde2Δ::kanMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>wt</td>
+      <td>10.1002/(SICI)1097-0061(19980130)14:2&lt;115::AID-YEA204&gt;3.0.CO;2–2.</td>
+      <td>BY4742</td>
+      <td>MAT alpha his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tsa1Δ</td>
+      <td>10.1016/j.molcel.2011.07.027</td>
+      <td>YMM114</td>
+      <td>BY4742 tsa1Δ::natMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>ras2Δ</td>
+      <td>10.1016/j.molcel.2011.07.027</td>
+      <td>YMM113</td>
+      <td>BY4742 ras2Δ::kanMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>ras2Δtsa1Δ</td>
+      <td>This paper</td>
+      <td>YMM170</td>
+      <td>BY4742 ras2Δ::kanMX4 tsa1Δ::natMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>pde2Δ</td>
+      <td>Research Genetics, 10.1038/nature00935.</td>
+      <td>pde2Δ</td>
+      <td>BY4742 pde2Δ::kanMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>ras2Δpde2Δ</td>
+      <td>This paper</td>
+      <td>YMM171</td>
+      <td>BY4742 ras2Δ::kanMX4 pde2Δ::hphMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>pde2Δtsa1Δ</td>
+      <td>This paper</td>
+      <td>YMM172</td>
+      <td>BY4742 pde2Δ::kanMX4 tsa1Δ::natMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>ras2Δpde2Δtsa1Δ</td>
+      <td>This paper</td>
+      <td>YMM173</td>
+      <td>BY4742 ras2Δ::kanMX4 pde2Δ::hphMX4 tsa1Δ::natMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tsa1C48S</td>
+      <td>10.1038/ncomms14791</td>
+      <td>YMM145</td>
+      <td>BY4742 tsa1C48S</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tsa1C171S</td>
+      <td>10.1038/ncomms14791</td>
+      <td>YMM146</td>
+      <td>BY4742 tsa1C171S</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tsa1ΔYF</td>
+      <td>10.1038/ncomms14791</td>
+      <td>YMM147</td>
+      <td>BY4742 tsa1(1-184)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tsa1C171SΔYF</td>
+      <td>10.1038/ncomms14791</td>
+      <td>YMM148</td>
+      <td>BY4742 tsa1(1-184)C171S</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>trx1Δtrx2Δ</td>
+      <td>10.1038/ncomms14791</td>
+      <td>YMM143</td>
+      <td>BY4742 trx1Δ::hphMX4 trx2Δ::natMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>msn2Δmsn4Δ</td>
+      <td>This paper</td>
+      <td>YMM174</td>
+      <td>BY4742 msn2Δ::hphMX4 msn4Δ::natMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>ras1Δ::hphMX4</td>
+      <td>This paper</td>
+      <td>YMM177</td>
+      <td>MAT a, his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0 ras1Δ::hphMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td></td>
+      <td>This paper</td>
+      <td>YMM178</td>
+      <td>BY-2n met15Δ0/MET15 lys2Δ0/LYS2 tpk1Δ::kanMX4/TPK1 tpk2Δ::natMX4/TPK2 tpk3Δ::hphMX4/TPK3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk3Δ</td>
+      <td>This paper</td>
+      <td>YMM179</td>
+      <td>BY4742 tpk1Δ::kanMX4 tpk3Δ::hphMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk2Δtpk3Δ</td>
+      <td>This paper</td>
+      <td>YMM180</td>
+      <td>BY4742 tpk2Δ::natMX4 tpk3Δ::hphMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δ pTPK1-URA</td>
+      <td>This paper</td>
+      <td>YMM181</td>
+      <td>BY4742 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 pRS316-TPK1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δ pTPK1-URA vector control</td>
+      <td>This paper</td>
+      <td>YMM182</td>
+      <td>BY4742 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 pRS313 pTPK1-URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δ pTPK1-URA pTPK1</td>
+      <td>This paper</td>
+      <td>YMM183</td>
+      <td>BY4742 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 pRS313-TPK1 pTPK1-URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δ pTPK1-URA3 ptpk1C243A</td>
+      <td>This paper</td>
+      <td>YMM184</td>
+      <td>BY4742 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 pRS313-tpk1C243A pTPK1-URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δ pTPK1-URA3 ptpk1C243D</td>
+      <td>This paper</td>
+      <td>YMM185</td>
+      <td>BY4742 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 pRS313-tpk1C243D pTPK1-URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δ pTPK1-URA3 ptpk1T241A</td>
+      <td>This paper</td>
+      <td>YMM186</td>
+      <td>BY4742 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 pRS313-tpk1T241A pTPK1-URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δ pTPK1</td>
+      <td>This paper</td>
+      <td>YMM187</td>
+      <td>BY4742 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 pRS313-TPK1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δ ptpk1C243A</td>
+      <td>This paper</td>
+      <td>YMM188</td>
+      <td>BY4742 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 pRS313-tpk1C243A</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δ ptpk1C243D</td>
+      <td>This paper</td>
+      <td>YMM189</td>
+      <td>BY4742 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 pRS313-tpk1C243D</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δ ptpk1T241A</td>
+      <td>This paper</td>
+      <td>YMM190</td>
+      <td>BY4742 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 pRS313-tpk1T241A</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>ras2Δtrx1Δtrx2Δ</td>
+      <td>This paper</td>
+      <td>YMM191</td>
+      <td>BY4742 ras2Δ::kanMX4 trx1Δ::hphMX4 trx2Δ::natMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tsa1Δ::bleMX4</td>
+      <td>This paper</td>
+      <td>YMM192</td>
+      <td>BY4741 tsa1Δ::bleMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk2Δtpk3Δtsa1Δ</td>
+      <td>This paper</td>
+      <td>YMM193</td>
+      <td>BY4741 tpk2Δ::natMX4 tpk3Δ::hphMX4 tsa1Δ::bleMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces  cerevisiae)</td>
+      <td>TPK1-HBH tpk2Δtpk3Δ</td>
+      <td>This paper</td>
+      <td>WR1832</td>
+      <td>BY4742 TPK1-HBH::TRP1 tpk2Δ::natMX4 tpk3Δ::hphMX4 trp1Δ::kanMX4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δ pTPK1-URA vector control</td>
+      <td>This paper</td>
+      <td>yCP101</td>
+      <td>MAT a his3Δ1::pRS403, leu2Δ0 lys2Δ0 ura3Δ0 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 pRS316-TPK1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δ ptpk1C243A-URA vector control</td>
+      <td>This paper</td>
+      <td>yCP102</td>
+      <td>MAT alpha his3Δ1::pRS403, leu2Δ0 lys2Δ0 ura3Δ0 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 pRS316-tpk1C243A</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δ pTPK1-URA o/e TSA1</td>
+      <td>This paper</td>
+      <td>yCP103</td>
+      <td>MAT alpha his3Δ1::pRS403-myc-TSA1, leu2Δ0 lys2Δ0 ura3Δ0 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 pRS316-TPK1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δ ptpk1C243A-URA o/e TSA1</td>
+      <td>This paper</td>
+      <td>yCP104</td>
+      <td>MAT alpha his3Δ1::pRS403-myc-TSA1, leu2Δ0 lys2Δ0 ura3Δ0 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 pRS316-tpk1C243A</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δtsa1Δ pTPK1</td>
+      <td>This paper</td>
+      <td>yCP105</td>
+      <td>BY4742 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 tsa1Δ::bleMX4 pRS313-TPK1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>tpk1Δtpk2Δtpk3Δtsa1Δ ptpk1T241A</td>
+      <td>This paper</td>
+      <td>yCP106</td>
+      <td>BY4742 tpk1Δ::kanMX4 tpk2Δ::natMX4 tpk3Δ::hphMX4 tsa1Δ::bleMX4 pRS313-tpk1T241A</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>TPK1-HBH tpk2Δtpk3Δtsa1Δ</td>
+      <td>This paper</td>
+      <td>yCP107</td>
+      <td>BY4742 TPK1-HBH::TRP1 tpk2Δ::natMX4 tpk3Δ::hphMX4 tsa1Δ::bleMX4 trp1Δ::kanMX4 tsa1Δ::bleMX4</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal) anti-Tpk1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Sc-374592, RRID:AB_10990730</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(goat polyclonal) anti-Bcy1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Sc-6734, RRID:AB_671758</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(rabbit) IgG; anti-Protein A</td>
+      <td>Sigma Aldrich</td>
+      <td>I5006, RRID:AB_1163659</td>
+      <td>1 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(goat polyclonal) anti-Ras2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Sc-6759, RRID:AB_672465</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal) anti-Glutathione (D8)</td>
+      <td>Abcam</td>
+      <td>ab19534, RRID:AB_880243</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal) anti-Pgk1 (22C5D8)</td>
+      <td>Thermo Fisher</td>
+      <td>459250, RRID:AB_2532235</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse monoclonal) anti-2 Cys Prx (6E5); (anti-Tsa1)</td>
+      <td>Abcam</td>
+      <td>ab16765, RRID:AB_443456</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>yEP24</td>
+      <td>10.1016/0378-1119(79)90004-0</td>
+      <td></td>
+      <td>yeast 2μ, URA3 vector plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKF56</td>
+      <td>10.1128/mcb.10.8.4303.</td>
+      <td></td>
+      <td>IRA2 in yEP24</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS425</td>
+      <td>10.1016/0378-1119(92)90454w.</td>
+      <td></td>
+      <td>yeast 2μ, LEU2 vector plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>yEP13-PDE2</td>
+      <td>10.1093/emboj/cdg314.</td>
+      <td></td>
+      <td>PDE2 in yeast 2μ, LEU2 plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>yEPlac195</td>
+      <td>10.1016/0378-1119(88)90185-0.</td>
+      <td></td>
+      <td>yeast 2μ, URA3 vector plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pXP1</td>
+      <td>10.1128/mcb.19.7.4874.</td>
+      <td></td>
+      <td>BCY1 in yEPlac195</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS315</td>
+      <td>PMID:2659436</td>
+      <td></td>
+      <td>yeast CEN/ARS, LEU2 empty vector plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>B561 (pRS315-RAS2G19V)</td>
+      <td>10.1128/mcb.19.10.6775.</td>
+      <td></td>
+      <td>RAS2G19V in pRS315</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHyPer3C199S (pRS416-GPD-HyPer3C199S)</td>
+      <td>This paper, 10.1021/cb300625g</td>
+      <td></td>
+      <td>HyPer3C199S</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS416-GPD-AKAR4</td>
+      <td>Molin et al., 2020</td>
+      <td></td>
+      <td>AKAR4 in pRS416-GPD [CEN/ARS, pGPD promotor, URA3]</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS316</td>
+      <td>PMID:2659436</td>
+      <td></td>
+      <td>yeast CEN/ARS, URA3 empty vector plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS316- myc-TSA1</td>
+      <td>10.1038/nature02075.</td>
+      <td></td>
+      <td>Myc-TSA1 in pRS316</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS316- myc-tsa1C48S</td>
+      <td>10.1016/j.molcel.2011.07.027</td>
+      <td></td>
+      <td>Myc-tsa1C48S in pRS316</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS316- myc-tsa1C171S</td>
+      <td>10.1016/j.molcel.2011.07.027</td>
+      <td></td>
+      <td>Myc-tsa1C171S in pRS316</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS315-ProtA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ProteinA in pRS315</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS315-TRX2-ProteinA</td>
+      <td>10.1038/ncomms14791</td>
+      <td></td>
+      <td>TRX2-ProtA in pRS315</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS315-trx2C34S-ProteinA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>trx2C34S-ProtA in pRS315</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS315-trx2C31SC34S-ProteinA</td>
+      <td>This paper</td>
+      <td>trx2C31SC34S-ProtA in pRS315</td>
+      <td>trx2C31SC34S-ProtA in pRS315</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS313</td>
+      <td>PMID:2659436</td>
+      <td>yeast CEN/ARS, HIS3 empty vector</td>
+      <td>yeast CEN/ARS, HIS3 empty vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS313-TPK1</td>
+      <td>10.1074/jbc.M110.200071.</td>
+      <td>TPK1 in pRS313</td>
+      <td>TPK1 in pRS313</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS313-tpk1C243A</td>
+      <td>This paper</td>
+      <td>tpk1C243A in pRS313</td>
+      <td>tpk1C243A in pRS313</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS313-tpk1C243D</td>
+      <td>This paper</td>
+      <td>tpk1C243D in pRS313</td>
+      <td>tpk1C243D in pRS313</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS313-tpk1T241A</td>
+      <td>This paper</td>
+      <td>tpk1T241A in pRS313</td>
+      <td>tpk1T241A in pRS313</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTPK1-URA3 (pRS316-TPK1)</td>
+      <td>Karin Voordeckers</td>
+      <td>TPK1 in pRS316</td>
+      <td>TPK1 in pRS316</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ptpk1C243A-URA3</td>
+      <td>This paper</td>
+      <td>tpk1C243A in pRS316</td>
+      <td>tpk1C243A in pRS316</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ACT1F</td>
+      <td>10.1016/j.molcel.2011.03.021</td>
+      <td>For Q-PCR of ACT1</td>
+      <td>CTGCCGGTATTGACCAAACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ACT1R</td>
+      <td>10.1016/j.molcel.2011.03.021</td>
+      <td>For Q-PCR of ACT1</td>
+      <td>CGGTGAATTTCCTTTTGCATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CTT1F</td>
+      <td>This paper</td>
+      <td>For Q-PCR of CTT1</td>
+      <td>GCTTCTCAATACTCAAGACCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CTT1R</td>
+      <td>This paper</td>
+      <td>For Q-PCR of CTT1</td>
+      <td>GCGGCGTATGTAATATCACTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HSP12F</td>
+      <td>10.1016/j.molcel.2011.03.021</td>
+      <td>For Q-PCR of HSP12</td>
+      <td>AGGTCGCTGGTAAGGTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HSP12R</td>
+      <td>10.1016/j.molcel.2011.03.021</td>
+      <td>For Q-PCR of HSP12</td>
+      <td>ATCGTTCAACTTGGACTTGG</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Glutathione-S-Transferase-Raf1-Binding-Domain (GST-RBD)</td>
+      <td>This paper, 10.1038/s41467-017-01019-z</td>
+      <td>For Ras-GTP assay</td>
+      <td>Purified from E. coli strain BL21 expressing pGEX2T-1-GST-RBD</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PureLink RNA Mini kit</td>
+      <td>Thermo-Fisher</td>
+      <td>Cat #: 12183025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantiTect Reverse Transcription Kit</td>
+      <td>Qiagen</td>
+      <td>Cat #: 205313</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iQ SYBR Green Supermix</td>
+      <td>BioRad</td>
+      <td>Cat #: 170–8882</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LANCE cAMP 384 kit</td>
+      <td>Perkin Elmer</td>
+      <td>Cat #: AD0262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>G418</td>
+      <td>Acros Organics</td>
+      <td>Cat #: 329400050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ClonNAT</td>
+      <td>Werner Bioagents</td>
+      <td>Cat #: 5.005.000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hygromycin B</td>
+      <td>Formedium</td>
+      <td>Cat #: HYG5000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phleomycin</td>
+      <td>Sigma Aldrich</td>
+      <td>P9564</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-fluoroorotic acid</td>
+      <td>Sigma Aldrich</td>
+      <td>F5013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EZ-Link Sulfo-NHS-LC Biotin</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #: 21335</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trichloroacetic acid</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat #: T6399</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KSCN</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat #: P2713</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(NH4)2Fe(SO4)2 • 6 H2O</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat #: 215406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol Reagent</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #: 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNase, RNase-free set</td>
+      <td>Qiagen</td>
+      <td>Cat #: 79254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete Mini EDTA-free protease inhibitor</td>
+      <td>Roche Applied Science</td>
+      <td>Cat #: 11873580001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutathione Sepharose beads</td>
+      <td>GE Healthcare</td>
+      <td>Cat #: 17-0756-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>12% Bis-Tris NUPAGE gels</td>
+      <td>Thermo FisherArch Biochem Biophys</td>
+      <td>Cat #: NP0349BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MOPS running buffer</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #: NP0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Immobilon-FL PVDF membrane</td>
+      <td>Millipore</td>
+      <td>Cat #: IPFL00010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ni2+-Sepharose beads</td>
+      <td>GE Healthcare</td>
+      <td>Cat #: 17-5318-06</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anti-c-myc, agarose conjugated</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: A7470</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin Gold, mass spectrometry grade</td>
+      <td>Promega</td>
+      <td>Cat #: V5280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-ethylmaleimide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: E3876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DYn-2</td>
+      <td>Cayman Chemical</td>
+      <td>Cat #: 11220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>10% Criterion TGX Precast Midi Protein Gel</td>
+      <td>Bio-Rad</td>
+      <td>Cat #: 5671034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Peptide Retention Time Calibration Mixture</td>
+      <td>Pierce, Thermo Fisher</td>
+      <td>Cat #: 88320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>version 2016b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellX</td>
+      <td>10.1002/0471142727.mb1422s101</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scrödinger Suite</td>
+      <td>Schrödinger LLC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GROMACS</td>
+      <td>10.1016/j.softx.2015.06.001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Amber tools</td>
+      <td>10.1002/wcms.1121</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and growth conditions
 
 Yeast strains and plasmids are listed in the Key resources table. The strains used in this study are derivatives of BY4741/BY4742. Strains were grown at 30°C in YPD 2% glucose (w/v) or in Yeast Nitrogen Base defined medium containing 2% glucose and complete supplement mixture (CSM) lacking the appropriate amino acids (Formedium) as described previously (Molin et al., 2011). To check the segregation of deletion markers in tetrad dissections YPD medium supplied with the following chemicals was used to check segregation of the dominant markers: kanMX4 (G418 200 µg/ml), natMX4 (ClonNAT 100 µg/ml), hphMX4 (Hygromycin B 300 µg/ml), bleMX4 (Phleomycin 40 µg/ml). To counterselect the pTPK1-URA3 plasmid cells were grown in defined glucose CSM –HIS, 5-FOA medium containing YNB, glucose and CSM –URA, HIS; 50 mg/l uracil and 1 g/l 5-fluoroorotic acid.
 
-## Strain and plasmid constructions
+### Strain and plasmid constructions
 
 Strains YMM170 (ras2∆tsa1∆) and YMM172 (pde2∆tsa1∆) were constructed by crossing strain YMM114 to BY4741 ras2∆::kanMX4 and BY4741 pde2∆::kanMX4 (Research Genetics, Giaever et al., 2002), respectively, and selecting for Mat alpha, methionine prototrophic, lysine auxotrophic, G418 resistant and nourseothricin resistant progeny. Strains YMM171 and YMM173 were constructed by crossing a BY4741 pde2∆::hphMX4 {pde2∆::kanMX4 from the deletion collection (Research Genetics, Giaever et al., 2002) marker-switched (Goldstein and McCusker, 1999) to pde2∆::hphMX4 to strain YMM170 (ras2∆tsa1∆) and selecting for Mat alpha, methionine prototrophic, lysine auxotrophic, G418 resistant, hygromycin resistant and nourseothricin sensitive (YMM171 ras2∆pde2∆) or nourseothricin resistant (YMM173 ras2∆pde2∆tsa1∆) progeny. Strains YMM174 (msn2∆msn4∆), YMM175 (pde2∆) and YMM176 (pde2∆ o/e TSA1) were constructed by crossing BY4741 msn2∆msn4∆ (Caballero et al., 2011) or BY4741 pde2∆::kanMX4 (Research Genetics, Giaever et al., 2002) to strains YMM130 or BY4742 his3∆1::pRS403-Myc-TSA1, respectively and selecting for Mat alpha, methionine prototrophic, lysine auxotrophic, histidine auxotrophic, hygromycin- and nourseothricin-resistant progeny (YMM174) or Mat alpha, methionine prototrophic, lysine auxotrophic, G418 resistant and histidine prototrophic progeny (YMM174 and YMM175). Strain YMM177 was constructed by marker-switching (Goldstein and McCusker, 1999) a Mat a ras1∆::kanMX4 spore, obtained from crossing strain BY4741 ras1∆::kanMX4 Research Genetics, Giaever et al., 2002) to strain YMM114 and selecting for Mat a, methionine prototrophic, lysine auxotrophic and G418 resistant progeny, to ras1∆::hphMX4. Strain YMM178 (tpk1∆/TPK1 tpk2∆/TPK2 tpk3∆/TPK3) was constructed by crossing a BY4742 tpk1∆::kanMX4 tpk2∆::natMX4 strain to a BY4741 tpk3∆::hphMX4 strain {tpk3∆::kanMX4 from the deletion collection [Research Genetics, (Giaever et al., 2002) marker-switched (Goldstein and McCusker, 1999) to tpk3∆::hphMX4 resulting in a tpk1Δ/TPK1 tpk2Δ/TPK2 tpk3Δ/TPK3 heterozygous diploid strain. A Mat alpha, G418- and hygromycin-resistant spore constitutes strain YMM179 whereas a Mat alpha, nourseothricin- and hygromycin-resistant spore constitutes strain YMM180. The BY4742 tpk1∆::kanMX4 tpk2∆::natMX4 strain was constructed by introducing tpk2∆::natMX4 PCR amplified from a BY4742 tpk2∆::natMX4 strain (Costanzo et al., 2010) into strain BY4741 tpk1∆::kanMX4 [Research Genetics, (Giaever et al., 2002) selecting for nourseothricin- and G418-resistance and verifying the deletion by diagnostic PCR. A BY4742 tpk1∆tpk2∆tpk3∆ pTPK1-URA3 haploid strain (YMM181) was constructed by transforming strain YMM177 with plasmid pTPK1-URA3 and sporulating the strain selecting for a Mat alpha methionine prototrophic, lysine auxotrophic, G418-, nourseothricin-, hygromycin B-resistant and uracil auxotrophic progeny. Strains YMM182-YMM186 were constructed by transforming strain YMM180 with plasmids pRS313 (YMM181), pRS313-TPK1 (YMM183), pRS313-tpk1C243A (YMM184) and pRS313-tpk1C243D (YMM185) and pRS313-tpk1T241A (YMM186). Counterselecting pTPK1-URA3 on 5-FOA medium resulted in strains YMM187 (BY4742 tpk1∆tpk2∆tpk3∆ pRS313-TPK1), YMM188 (BY4742 tpk1∆tpk2∆tpk3∆ pRS313-tpk1C243A), YMM189 (BY4742 tpk1∆tpk2∆tpk3∆ pRS313-tpk1C243D) and yMM190 (BY4742 tpk1∆tpk2∆tpk3∆ pRS313-tpk1T241A), respectively. Strain YMM191 (ras2∆trx1∆trx2∆) was constructed by crossing strain YMM113 (ras2∆) to strain YMM143 (trx1∆trx2∆) selecting for Mat alpha, methionine prototrophic, lysine auxotrophic, G418-, nourseothricin- and hygromycin B-resistant progeny. Strain YMM192 was constructed by marker-switching strain BY4741 tsa1∆::kanMX4 [Research Genetics, (Giaever et al., 2002) into BY4741 tsa1∆::bleMX4 using a bleMX4 cassette PCR amplified from plasmid pUG66 (Gueldener et al., 2002) using primers PR78 and PR79 (Goldstein and McCusker, 1999). Strain yMM193 was constructed by crossing strains yMM180 and yMM192 selecting for a Mat a, nourseothricin+, hygromycin+ and phleomycin+ spore. Strain WR1832 was constructed by first introducing PCR amplified trp1Δ::kanMX4 DNA (Longtine et al., 1998) into strain YMM180, verification of cassette integration by PCR and loss of the ability to grow without tryptophan supplement and next by HBH::TRP1 C-terminal tagging of TPK1 and PCR based verification as described (Tagwerker et al., 2006). Strains yCP101-yCP104 were constructed by crossing Mat a his3Δ1::pRS403 or his3Δ1::pRS403-myc-TSA1 spores, obtained in crosses generating strains yMM175 above, either to strain yMM183 or to strain yMM187 also carrying plasmid pRS316-tpk1C243A. Methionine prototrophic, lysine auxotrophic, histidine prototrophic, 5-FOA-sensitive, G418+, nourseothricin+ and hygromycin B+ progeny obtained in these crosses constitute strains yCP101-yCP104 listed in Supplementary file 1 Table S1. Strains yCP105 and yCP106 were constructed by crossing strains yMM187 (pTPK1) or yMM189 (ptpk1T241A), respectively, to strain yMM192 selecting for Mat alpha, Met+, Lys-, G418+, Nat+, Hyg+, Phleomycin+, His+ progeny. Strain yCP107 was constructed by crossing strain WR1832 to yMM193 and selecting for Mat alpha, Met+, Lys-, G418+, Nat+, Hyg+, Phleomycin+, Trp+ progeny.
 
 Plasmids pRS313-tpk1C243A, pRS313-tpk1C243D, pRS313-tpk1T241A and pRS316-tpk1C243A, were constructed by site directed mutagenesis of the pRS313-TPK1 or pRS316-TPK1 plasmids (Eurofins Genomics). Plasmids pRS315-trx1C34S-ProtA and pRS315-trx2C31SC34S-ProtA were constructed by site-directed mutagenesis of plasmid pRS315-TRX2-ProtA (GenScript). The correct sequence of all plasmids constructed was verified by sequencing.
 
-## Lifespan analyses
+### Lifespan analyses
 
 Lifespan analyses were performed as previously described by counting the number of daughters produced in a cohort of mother cells (Erjavec et al., 2007).
 
-## 2D-page
+### 2D-page
 
 Protein synthesis rates of the indicated proteins were determined in 35S-Methionine labelled protein extracts separated by two-dimensional polyacrylamide gel electrophoresis as described (Maillet et al., 1996; Molin et al., 2011). Tsa1 sulfinylation was determined by comparing levels of sulfinylated Tsa1 (Tsa1-SOOH) to non-sulfinylated Tsa1 on silver-stained 2D gels as described (Molin et al., 2011).
 
-## Spot tests
+### Spot tests
 
 H2O2 resistance was tested with mid-exponential-phase (A600 = 0.3, 3 × 106 cells/ml) cells that were diluted (x5, x50, x500, x5000, x50000) and spotted onto SD media containing 0 to 1 mM H2O2 or YPD media containing 0 to 2 mM. The number of colonies after 2 days incubation at 30 ◦C on H2O2 plates was divided with the number on control plates to get H2O2-resistance (%).
 
 For glycogen accumulation, plates incubated for 2 days at 30 ◦C were exposed to iodine-bead fumes for 2.5 min and scanned immediately.
 
-## Spore viability
+### Spore viability
 
 The viability of spores segregating in the sporulation and dissection of a heterozygous diploid ras1∆:: hphMX4/RAS1 ras2∆::kanMX4/RAS2 tsa1∆::natMX4/TSA1 strain obtained by crossing strain YMM176 (ras1∆::hphMX4) to strain YMM170 (BY4742 ras2∆::kanMX4 tsa1∆::natMX4) was analyzed after 4 days of incubation at 30◦C in 32 tetrads where 1) all markers analyzed (hphMX4, kanMX4, natMX4, MET15, LYS2) segregated 2:2, 2) the exact genotypes of all spores were possible to deduce from this information and 3) the genotypes of dead spores were assigned based on markers present in the other spores dissected from the same tetrads. Similarly, spore viability of spores segregating in a heterozygous diploid tpk1∆::kanMX4/TPK1 tpk2∆::natMX4/TPK2 tpk3∆::hphMX4/TPK3 tsa1∆::bleMX4/TSA1, obtained by crossing strain YMM191 (BY4741 tsa1∆::bleMX4) to strain YMM186 (BY4742 tpk1∆::kanMX4 tpk2∆::natMX4 tpk3∆::hphMX4 expressing pRS313-TPK1), was analyzed in 43 tetrads where all chromosomal markers analyzed (kanMX4, natMX4, hphMX4, bleMX4, MET15, LYS2) segregated 2:2. The ability to grow in the absence of histidine supplementation (-HIS) was taken as an indication that the pRS313-TPK1 plasmid was present.
 
-## Quantitative Real-Time PCR analysis
+### Quantitative Real-Time PCR analysis
 
 Cell cultures were harvested in mid-exponential phase and resuspended in 1 ml Trizol Reagent (Invit- rogen) and homogenized with silica beads by Fast prep (6.5 m/s, 30 s, interval 2.5 min, 4 °C). RNA was extracted using phenol chloroform extraction and precipitated with sodium acetate/ethanol. The pellet was treated with DNase for 30 min followed by heat-inactivation of the enzyme. The RNA was purified with Invitrogen PureLink RNA Mini Kit columns and converted to cDNA following the QIAGEN QuantiTect Reverse Transcription Kit. Q-PCR was performed with 50 ng cDNA by using BioRad iQ SYBR Green Supermix and quantified with the BioRad iCycler, iQ5. Relative levels of mRNA were calculated by using cycle times of ACT1 as a reference gene.
 
-## Quantitative analyses of Msn2-GFP localization
+### Quantitative analyses of Msn2-GFP localization
 
 Msn2-signaling was analyzed as described previously (Bodvard et al., 2017). Briefly, the fraction of cells displaying nuclear localization of Msn2-GFP (nucleus/cytoplasm signal ratio >1.28) at each time point was calculated and used to calculate the total time Msn2 spent in the nucleus during a 60 min experiment.
 
-## Measurement of Ras2-GTP in vivo
+### Measurement of Ras2-GTP in vivo
 
 Ras2-GTP level was measured as a ratio between Ras2-GTP and total Ras2 as described previously (Colombo and Martegani, 2014; Peeters et al., 2017). Mid-exponential phase yeast cells were harvested and lysed with glass- beads in Fast-prep (6.0 m/s, 20 s, interval 2.5 min) in lysis buffer [50 mM Tris-HCl, 200 mM NaCl, 2.5 mM MgCl2, 10% glycerol, 1% Triton X100, cOmplete Protease inhibitor EDTA-free]. The supernatant with 1.5 mg of total protein was incubated with a bed volume 50 µL of glutathione S-transferase (GST)-RBD fusion protein pre-bound to glutathione-Sepharose for 1 hr at 4 °C and washed three times with lysis buffer by centrifugation. For elution the beads were boiled for 5 min at 98 °C in SDS-sample buffer (6% SDS, 62.5 mM Tris-HCl pH 8.7, 30% Glycerol, 0.75% β-mercaptoethanol). Through western blotting, Ras2-GTP and total Ras2 proteins were detected with anti-Ras2 antibodies. Determination of ratios between Ras2-GTP and total Ras2 was performed by ImageJ.
 
 cAMP measurement cAMP measurements were performed as previously described (Caballero et al., 2011; Parts et al., 2011). 2 × 108 cells grown to midexponential phase were pelleted, washed, and resuspended in 1 ml cold milliQ water. Metabolites were extracted by adding 1.2 ml TCA (0.5 M) and occasional vigourous vortexing while samples were kept on ice for 15 min. TCA was removed by ether extraction. cAMP levels were determined by the LANCE cAMP 384 kit in 40 µL total reactions and by comparing to the standards supplied. The values for cAMP were normalized to the wild type level.
 
-## Global H2O2 scavenging in the medium
+### Global H2O2 scavenging in the medium
 
 Medium peroxide determinations were performed using a ferrithiocyanate spectrophotometric assay (Molin et al., 2007). After bolus addition of H2O2, 100 µL sample aliquots were withdrawn and cultures were arrested by the addition of 1 ml ice-cold 10% TCA. After pelleting cells 180 mM KSCN and 1.4 mM Fe(NH4)2(SO4)2 final concentrations were added to the supernatants. Absorbance at 480 nm was subsequently determined and compared to equally TCA-treated H2O2 standards diluted in medium.
 
-## Isolation of old cells
+### Isolation of old cells
 
 Old cells were obtained as previously described by sorting biotin-labeled mother cells using the MagnaBind streptavidin system (Sinclair and Guarente, 1997). Briefly, mid-exponential phase cells were labeled with EZ-Link Sulfo-NHS-LC Biotin and grown overnight in minimal media (CSM-His). The cells were incubated with streptavidin-conjugated magnetic beads for 2 hr and then sorted magnetically with the unlabeled cells being washed away. Sorted cells were then grown overnight and the streptavidin labeling procedure was repeated before sorting one last time. After sorting the cells were incubated for 1 hr in CSM-His media at 30 ◦C for recovery before microscopy.
 
-## Measurements of cytoplasmic H2O2 using HyPer3
+### Measurements of cytoplasmic H2O2 using HyPer3
 
 Fluorescence of the ratiometric probe HyPer-3 (Bilan et al., 2013) was acquired using an Olympus IX81 motorized microscope with a PlanApoN 60x/1.42 Oil objective and a 12-bit Hamamatsu camera. Shifts in the fluorescence intensities were acquired with excitation around 500 nm (485/20 nm) and 420 nm (427/10 nm filter) and an emission filter around 520 nm (Fura two filter). For bolus addition of H2O2, cells in midexponential phase were incubated with 0.2 mM H2O2 for 10 min and immediately imaged.
 
-## Image analysis of HyPer3 fluorescence
+### Image analysis of HyPer3 fluorescence
 
 Image and signal analysis was performed using the MATLAB toolbox 2016b. Cell segmentation is performed with the CellX algorithm using the bright-field channel. The fluorescent intensity data were obtained from fluorescent images and data are presented as the median 500 nm fluorescent signal normalized to the median fluorescent 420 nm signal by dividing the latter with the former.
 
-## AKAR4 FRET-based PKA activity measurements
+### AKAR4 FRET-based PKA activity measurements
 
 Detection of cyan fluorescent protein CFP to yellow fluorescent protein YFP FRET in the AKAR4 sensor was performed as described previously (Depry and Zhang, 2011; Molin et al., 2020). CFP was excited at 427/10 nm, YFP was excited at 504/6 nm and emission was monitored using a Semrock dual bandpass filter (part no: FF01-464/547). Images were acquired using an automated epi-fluorescence microscope (Olympus IX81) equipped with a × 60 oil-immersion objective (numerical aperture 1.4, PlanApoN ×60/1.42 Oil, Olympus) and an electron-multiplying charge-coupled device camera (12-bit Hamamatsu camera). The yeast cells were kept in a heated perfusion chamber (FCS2, Bioptechs Inc) at 28°C to avoid heat-induced stress responses. The objective was heated to 26.2°C (according to the manufacturer’s instructions) to maintain a stable temperature in the perfusion chamber. The cover glasses were precoated for 1.5 hr with protein concanavalin A, 0.5 μg μl−1 in 0.01 M PBS, to immobilize yeast cells on the surface.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Cells from 50 mL/sample of mid-exponential phase YPD culture was pelleted, the pellet was washed with cold water and pelleted again, washed with 1 mL lysis buffer (50 mM Tris HCl pH 8.0, 150 mM NaCl, 1 mM EDTA, 10% Glycerol, 5 mM MgCl2 and protease-inhibitor cocktail). Cells were broken in 0.35 mL lysis buffer by beads at four degrees in a Fastprep FP120 cell disrupter (Bio101/ThermoSavant, speed 5 m/sec, 4 times 40 s with >1 min on ice in between each agitation). The extract was pelleted at 12500 rpm at four degrees and the supernatant was used for subsequent analyses. An aliquot of supernatant was withdrawn for analysis of input protein levels (load sample). Beads were prewashed with lysis-buffer (100 µL) before incubated with protein extract (300 µL at 1 ug/µL) at four degrees overnight. Beads were pelleted by centrifugation at 1000 rpm, 1 min, washed three times with lysis buffer and boiled at 95°C, 5 min with Laemmli buffer (IP sample). 10 µL of each sample was separated on an SDS-PAGE gel for 1.5 hr at 120V an blotted as described below. Membranes were incubated overnight with the primary antibody at 4 degrees.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Immunoblot analysis of selected proteins was performed as described previously (Biteau et al., 2003; Molin et al., 2011). Prior to separation on 12% Bis-Tris NuPAGE gels using an XCell SureLock MiniCell (Invitrogen) in NuPAGE MOPS running buffer as recommended by the supplier protein extracts were heated in Laemlii buffer (pH 8.7) either in the presence of β-mercaptoethanol (5%, reducing) or not (non-reducing) as indicated. Transfer to Immobilon-FL PVDF membranes was done using an XCell II Blot Module kit. Membranes were analyzed by the Odyssey infrared imaging system (LI-COR biosciences) as recommended by the suppliers.
 
 Glutathionylation of Tpk1 was assayed using anti-glutathione immunoblot on Tpk1-HB immunoprecipitated by Ni2+-Sepharose beads following a simplified protocol similar to that used during MS sample preparation (see below). We verified that the anti-glutathione immunoblot signal in Tpk1 completely disappeared upon extract reduction by β-mercaptoethanol.
 
-## Growth conditions for MS analysis
+### Growth conditions for MS analysis
 
 Cells were grown at 30°C in yeast extract/peptone (YP) medium, containing 2% glucose as carbon source. Three independent experimental replicates were performed for each experimental condition. For each replicate, we inoculated 750 ml YPD cultures, which were incubated (with shaking) overnight until OD600 = 1. Oxidative stress was induced by adding 0.4 mM or 0.8 mM (final concentration) H2O2 for 10 min.
 
-## Mass spectrometric sample preparation
+### Mass spectrometric sample preparation
 
 HB (poly histidine, biotinylation signal) tandem affinity purifications were performed as described elsewhere (Reiter et al., 2012). Cells were harvested by filtration and immediately deep-frozen in liquid N2. Cells were grinded using a SPEX Freezer Mill 6870 (SPEXSamplePrep, Metuchen, NJ, USA) with the following settings: 7 cycles: 3 min breakage (15 CPS), 3 min cooling, resuspended in buffer 1 (6 M guanidine HCl, 50 mM Tris pH8.0, 5 mM NaF, 1 mM PMSF, 0.1% Tween, cOmplete Protease inhibitor cocktail, pH 8) and cleared of debris by centrifugation 13.500 x g, 15 min, 4°C. Cleared extracts were incubated (4 hr, room temperature) with Ni2+-Sepharose beads, washed with urea buffer (8M urea, 50 mM sodium phosphate buffer pH8.0, 300 mM NaCl, 0.1% Tween20) and urea buffer pH 6.3. Proteins were eluted in urea buffer pH 4.3 containing 10 mM EDTA, incubated overnight with streptavidin-agarose beads, washed using urea wash buffer containing 1% SDS and urea wash buffer without SDS. Beads were washed five times with 50 mM ammonium bicarbonate (ABC). Cys-residues were alkylated with IAA (25% w/w of the estimated amount of protein). Excess IAA was washed out by ABC. Proteins were digested with 300 ng trypsin at 37°C overnight. Digestion was stopped with trifluoroacetic acid (0.5% final concentration) and the peptides were desalted using C18 Stagetips (Rappsilber et al., 2007). 50 fmol of the Peptide Retention Time Calibration Mixture was spiked in each sample for quality control.
 
-## Mass spectrometry analysis of Tpk1
+### Mass spectrometry analysis of Tpk1
 
 Peptides were separated on an Ultimate 3000 RSLC nano-flow chromatography system (Thermo-Fisher), using a pre-column (Acclaim PepMap C18, 2 cm ×0.1 mm, 5 μm, Thermo-Fisher), and a C18 analytical column (Acclaim PepMap C18, 50 cm ×0.75 mm, 2 μm, Thermo-Fisher). A segmented linear gradient from 2% to 35% solvent B (solvent B: 80% acetonitrile, 0.1% formic acid; solvent A: 0.1% formic acid) was applied at a flow rate of 230 nL/min over 120 min. A Proxeon nanospray flex ion source (Thermo Fisher) using coated emitter tips (New Objective) was used for ionization. The capillary temperature was set to 200°C. Peptides were analyzed on an Orbitrap Fusion Lumos Tribrid mass spectrometer (Thermo Fisher). The mass spectrometer was operated in data-dependent mode, survey scans were obtained in a mass range of 380–1500 m/z with lock mass activated, at a resolution of 120,000 at 200 m/z and an automatic gain control (AGC) target value of 4E5. The maximum cycle time was set to 2.5 s and the most abundant precursors were selected for fragmentation by high-energy collision at 30% collision energy. Fragmented precursors were excluded from further fragmentation for 30 s (with +/- 5 ppm accuracy) and peptides with charge +one or > +six were excluded from MS/MS analysis. The most abundant Tpk1 Cys containing peptide forms have been added to an inclusion list as specified in the raw files. MS proteomics data have been deposited to the ProteomeXchange Consortium through the Proteomics Identifications database (PRIDE) partner repository (Vizcaíno et al., 2016) with the data set identifiers PXD012617.
 
-## Closed database search
+### Closed database search
 
 Peptide identification and label free quantification (LFQ) were performed using MaxQuant (version 1.6.0.16) with default parameters. Saccharomyces cerevisiae reference proteome database (UniProt, version January 2017) in combination with a common laboratory contaminants database (MQ) was used for peptide spectrum matching. N-terminal acetylation, deamidation of asparagine and glutamine, oxidation of methionine, tri-oxidation and glutathionylation of cysteine and phosphorylation of serine, threonine and tyrosine were set as variable protein modification. Carbamidomethylation of cysteine was set as fixed. A maximum of 5 variable modifications per peptide was allowed. Leucine and isoleucine were treated as indistinguishable. Enzyme specificity was set to ‘Trypsin/P’. A maximum of 2 missed cleavages per peptide was allowed. ‘Requantify’ and ‘Match between runs’ was activated. MaxLFQ (implemented in the MaxQuant package) was used for MS1-based label free quantification and normalization of protein groups.
 
-## Open database search of selected peptides
+### Open database search of selected peptides
 
 To screen for protein modifications in an unbiased manner we initially performed an open search using MSFragger in FragPipe (Kong et al., 2017). The default open search parameters were used, with trypsin specificity, +/- 500 Da windows and oxidation of methionine and carbamidomethylation of cysteine as variable modifications. The observed mass shifts were inspected and filtered for the most abundant and relevant modifications occurring in Tpk1.
 
-## Targeted mass-spectrometry
+### Targeted mass-spectrometry
 
 Parallel-Reaction-Monitoring (PRM) assays were generated based on the peptide information obtained by MaxQuant. We selected Tpk1 peptides for targeted relative LFQ as specified in Supplementary file 1D .Peptides were separated using a 120 min gradient (HPLC setup as described above). PRM data acquisition was performed using a scheduled method with 20 min windows for each target based on the retention time determined in the shotgun-approach. Raw data were obtained on an Orbitrap Q Exactive HF-X (Thermo Fisher Scientific) mass spectrometer applying the following settings: survey scan with 60 k resolution, AGC 1E6, 60 ms IT, over a range of 400 to 1400 m/z, PRM scan with 30 k resolution, AGC 1E5, 200 ms IT, isolation window of 1.0 m/z with 0.3 m/z offset, and NCE of 27%.
 
 Wash runs were checked for potential peptide carry-over in between samples using same HPLC and MS methods. Data analysis, manual validation of all transitions (based on retention time, relative ion intensities, and mass accuracy), and relative quantification was performed in Skyline. Up to six characteristic transitions were selected for each peptide and their peak areas were summed for peptide quantification (total peak area). MS1 signals of PRTC standards were used as global standards for normalization in Skyline to account for fluctuations in instrument performance. The mean of the log2 Tpk1 non-modified peptide intensities was used to normalize Tpk1 modified peptides and Tsa1 peptides to account for differences in Tpk1 levels. Tsa1 peptide intensities (anti-log) were summed up to obtain values for relative protein abundance.
 
-## Cysteine sulfenylation assay by DYn-2 labeling, protein extraction and click chemistry
+### Cysteine sulfenylation assay by DYn-2 labeling, protein extraction and click chemistry
 
 Mid-exponential cells (10 ml at OD600 = 0.5) were treated with of DYn-2 (0.5 mM) for 30 min, at 30°C and cell suspensions were next exposed to 0.5 mM H2O2for 5 min. To the cultures trichloroacetic acid (TCA) was added to a final concentration of 20%, followed by centrifugation (6000 x g, 5 min, 4°C) and pellets were lysed with glass beads (equivalent of 0.1 ml of beads) in 0.2 ml of TCA (20%). Lysates were centirfuged (14000 x g, 15 min, 4°C) and pellets were washed twice with acetone, dried and solubilized in 0.2 ml Hepes (100 mM) buffer containing cOmplete mini EDTA-free protease inhibitor cocktail (Roche) (one tablet/20 ml of buffer solution), 25 µg/ml phenylmethylsulfonylfluoride, 0.1% Nonidet P-40, 2% SDS, pH 7.4. Protein content was determined using a standard DC Protein Assay (Bio-Rad). A copper (I)-catalyzed azide-alkyne cycloaddition (CuAAC) click chemistry reaction was performed on 0.2 mg of protein as previously described (Truong and Carroll, 2012; Yang et al., 2015). Briefly, cyanine5 azide (0.5 mM), copper(II)-TBTA complex (1 mM) and ascorbate (2 mM) were added to the lysates, protected from light and incubated for 1 hr at room temperature under rotation. The CuAAC reaction was quenched by adding EDTA (1 mM) for 10 min. The solution was precipitated by methanol/chloroform precipitation (sample/methanol/chloroform, 4/4/1 (v/v/v)) and centrifuged (14000 x g, 15 min, 4°C). The protein pellet obtained were between the organic and aqueous layers, both layers were aspirated. A solution of methanol/chloroform (H2O/methanol/chloroform, 4/4/1 (v/v/v) was added to the protein pellet and centrifuged (14000 x g, 15 min, 4°C). Both layers were aspirated and the obtained pellet was subsequently washed twice with methanol. Protein pellets were resuspended in 100 mM Hepes buffer containing 2% SDS. Biotinylated proteins were enriched with Pierce streptavidin bead (Thermo Scientific). The protein pellets were mixed to a pre-washed streptavidin beads (100 mM Hepes buffer). The samples were incubated for 2 hr at room temperature and subsequently washed twice with 1% SDS, twice with 4M urea, once with 1M NaCl and twice with PBS. After each wash step, beads were collected by centrifugation. Beads were finally resuspended in 5X Laemmli buffer and boiled for 5 min at 95°C. Samples were resolved by SDS-PAGE and analyzed for fluorescence at 700 nm (Cyanine5) on an Odyssey CLx (Licor).
 
-## Homology modeling
+### Homology modeling
 
 A model of the yeast PKA tetramer structure was obtained by homology modeling. The protein sequences of yeast Tpk1 (catalytic subunit of PKA) and Bcy1 (regulatory subunit of PKA) were obtained from Genbank (ID: 1023942850 and ID: 1023943330, respectively). The crystal structure of mouse PKA (PDBID: 3TNP) was used as the template for the homology calculations. The catalytic and regulatory subunits of yeast PKA and mouse PKA shares 48% and 42% sequence similarity, respectively. The homology model was built using StructurePrediction panel (Jacobson et al., 2002) in Schrödinger Suite (Schrödinger, LLC, New York, NY). The ClustralW method was used to align the target and template sequences in Prime, the energy-based was selected for model building method, and homo-multimer was selected for multi-template model type.
 
-## Covalent docking
+### Covalent docking
 
 Covalent docking was carried out to obtain a model for glutathionylated Tpk1. The Tpk1 crystal structure (PDB ID: 1FOT, Mashhoon et al., 2001) were prepared using the Protein Preparation utility in Schrodinger to assign the correct protonation state and fix the missing side chains and loops. The glutathione was built by 3D builder and prepared by LigPre utility in Schrodinger. The Covalent-Dock panel (Zhu et al., 2014) in Schrodinger was used to predict the pose of the glutathione attaching to Cys243. The reaction type was set to be disulfide formation, the docking mode was set to be thorough pose prediction, the other parameters were all set to be default. At the final step, Prime Energy was used to rank the poses of the ligand. Covalent docking was performed on dephosphorylated Tpk1 structure.
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 Molecular dynamics simulations were carried out to study structural changes of Tpk1 upon phosphorylation and glutathionylation. MD simulations non-modified Tpk1, Cys243 glutathionylation Tpk1, Thr241 phosphorylation Tpk1, Cys243 glutathionylation and Tpk1 phosphorylation co-existed Tpk1 were carried out. The GROMACS software (Abraham et al., 2015) was used for the MD simulations and the Amber 99 (Ponder and Case, 2003) force field was selected to assign the parameters for different amino acid residues. The glutathionylation and phosphorylation parameters was generated from Ambertools, and incorporated into the GROMACS software.
 
 The systems were solvated with a buffer distance of 10.0 Å TIP3P water in periodic boxes, and then 0.1 mol/L of Na+ and Cl− ions were added to adjust the systems to electroneutrality condition. Then 200 steps of the steepest descent energy minimization was carried out to remove close contacts in the obtained systems. A 2ns position-restrained simulation with a constant pressure ensemble (NPT) was performed to make sure the water molecules would reach more favorable positions. The parameters for position-restrained simulation are set to be: a time step = 1 fs, temperature = 298 K, and coupling pressure = 1 bar, Coulomb cutoff = 10 Å, Lennard-Jones cutoff = 10 Å, particle-mesh Ewald summation (Darden et al., 1993; Essmann et al., 1995) was used for longrange electrostics. The temperature and pressure was controlled by Berendsen coupling algorithm (Berendsen et al., 1984), with the time constants of 0.1 ps for temperature and 1.0 ps for pressure coupling. All bond lengths were contrained by the LINCS algorithm (Hess et al., 1997). Following the position-restrained simulation, 100 ns production simulations with NPT ensemble were performed on each system for further study the protein conformational changes. In this step, the Nose−́ Hoover thermostat (Hoover, 1985), with a time constant 0.1 ps, was used to control the temperature and the Parrinello−Rahman barostat (Parrinello and Rahman, 1981), with a time constant 1.0 ps, was used to control the pressure. The other parameters were the same as those in the position-restrained simulations.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All experiments were repeated at least three times (biological replicates) to ensure reproducibility. Biological replicates of experiments were performed in separate, independent experiments (typically on a separate day). No data were excluded in averages/median values presented in figures. Details on the number of replicates and statistical analyses performed in relation to the specific figures are available below.
 

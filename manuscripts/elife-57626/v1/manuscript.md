@@ -43,7 +43,7 @@ In the present study, we show that MnPV, as a rodent equivalent for cutaneous PV
 
 ## Results
 
-## Alternative translation initiation codons of the PV L1 ORF
+### Alternative translation initiation codons of the PV L1 ORF
 
 Based on two previous studies comparing the presence of initiation codons within the papillomavirus L1 ORF (Joh et al., 2014; Webb et al., 2005), their position was aligned according to the PV genera derivation (Bzhalava et al., 2015; Van Doorslaer et al., 2013; Figure 1). Notably, alternative ATGs can be found in various mucosal ‘high-risk’ HPV types such as 16, 18, 45, 52, 56, 58, but not in ‘low-risk’ types such as HPV6, 11, 40, 42, 43, 44, respectively (Webb et al., 2005). Additional in-frame initiation codons can also be detected in cutaneous HPV types of several genera such as HPV1, 2, 8, 38, 41, 57 and 77, respectively, of which HPV8 and HPV38 are considered to be ‘high-risk’ cutaneous HPVs (Rollison et al., 2019; Tommasino, 2017). Accordingly, due to the presence of potential alternative translation initiation sites, different L1 isoforms could be translated. As shown in Figure 1, almost all outlined PV L1 proteins harbor a consensus Wx7YLPP motif within the N-terminal region (Joh et al., 2014), independently from PV genus or cancer risk assessment, while the remaining N-terminal sequences are not very conserved. For the majority of PV types, the nearest methionine codon to this motif is located one to three amino acids upstream of the tryptophan (W) in the consensus motif. However, there are also exceptions from this rule since HPV31, 35 and 51, for instance, harbor one additional ATG followed by an interspersed in-frame TAA stop codon, thereby probably preventing the synthesis of additional L1 isoforms (Webb et al., 2005). Intriguingly, the MnPV L1 ORF also contains three alternative ATGs, which are located at nucleotide positions (nt) 5704, 5725 and 5797, potentially leading to the expression of L1LONG, L1MIDDLE and L1SHORT proteins, respectively.
 
@@ -51,9 +51,21 @@ Based on two previous studies comparing the presence of initiation codons within
 
 **Figure 1.:** N-terminal sequences of L1 proteins from 29 PV types were aligned using Clustal Omega. The highly conserved motif (Wx7YLPP) is marked in pink boxes. The first methionine of L1 is marked in red. The last methionine upstream of the Wx7YLPP motif is shown in green and methionines between the first and the last one are depicted in blue. In the case of MmuPV and McPV2, both methionines upstream of the conserved motif fit to the consensus sequence of L1SHORT and are therefore depicted in green.
 
-## Anti-L1LONG and anti-L1SHORT seroresponses emerge at different time points after infection
+### Anti-L1LONG and anti-L1SHORT seroresponses emerge at different time points after infection
 
 To examine serological responses against the three putative MnPV L1 isoforms, 60 naturally infected animals were monitored during different stages of viral infection (682 sera in total) encompassing an age between 8 and 76 weeks. Since most serological detection methods developed to date are based on the L1SHORT isoform, firstly we examined seroconversion against L1SHORT by glutathione S-transferase (GST)-capture ELISA (Kricker et al., 2020; Sehr et al., 2002; Waterboer et al., 2009). Notably, only few animals (8/60) exhibited measurable seroresponses against L1SHORT, initially at an age of 28 weeks. The mean seroreactivity per time point exceeded the cut-off earliest at an age of 68 weeks (Figure 2A). Conversely, in 27.5% of the animals, broad seroresponses against MnPV L1LONG were already detectable as early as 8 weeks of age which increased to 52.5% of the animals at 76 weeks (Figure 2B). In the main comparison at the latest time point where most animals were still alive (68 weeks), a significant difference was observed (p<0.001, two-tailed McNemar’s test, see Figure 2—figure supplement 1). Seroreactivity against L1MIDDLE shows a similar time course as L1LONG which is consistent with the correlation between both (Figure 2C and Figure 2—figure supplement 2. Seroresponses against the E2 protein, which is involved in viral DNA replication (McBride, 2013) and considered as an early marker of infection (Schäfer et al., 2011), developed shortly after birth and increased during the study (Figure 2D). Conversely, seroconversion against the minor capsid protein L2 appeared only in a few of the animals and as late as seroconversion against L1SHORT (Figure 2E).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/57626/elife-57626-fig2-v1.jpg)
+
+**Figure 2.:** Seroresponses of 682 sera from 60 animals measured by GST-ELISA against (A) L1SHORT, (B) L1LONG, (C) L1MIDDLE, (D) E2 and (E) L2 GST-fusion proteins and F) VLP-ELISA. Dashed lines represent the methods’ cut-off (OD450 = 0.2 for GST-ELISA or titer of 300 for VLP-ELISA) (Mean ± SEM; 1-Way-ANOVA test, *p<0.05, **p<0.01, ***p<0.001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57626/elife-57626-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Rate of L1LONG and L1SHORT positive animals at different time points of the follow-up study. The 2 × 2 contingency table used for the two-tailed McNemar’s test shows the 68 week time point, which was used for the main comparison, since here, most animals were still alive.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57626/elife-57626-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Correlation of seroreactivities against GST-L1LONG with seroreactivities against GST-L1MIDDLE (correlation coefficient, R2 = 0.4723).
 
 In order to exclude possible experimental bias merely working with a GST-fusion protein-based L1SHORT ELISA, additional ELISAs were performed using MnPV VLPs (derived from L1SHORT) produced via baculovirus expression system (Christensen et al., 1994; Rose et al., 1993). In accordance with the GST-L1SHORT ELISA, serum responses against VLPs were absent in early infection stages and did not exceed the cut-off before an age of 20 weeks (Figure 2F). This suggests that anti-L1LONG antibodies during early infection fail to recognize epitopes of both GST-L1SHORT antigen and on the surface of intact VLPs. Accordingly, there is no correlation of anti-GST-L1LONG with anti-GST-L1SHORT or anti-VLP reactivity (Figure 3A and B). Conversely, a significant correlation between GST-L1SHORT and VLP-ELISA (Figure 3C) strengthens the notion that the absence of a correlation between GST-L1LONG and L1SHORT ELISAs was indeed due to altered serological properties of L1 isoforms rather than due to different ELISA methodologies.
 
@@ -61,21 +73,37 @@ In order to exclude possible experimental bias merely working with a GST-fusion 
 
 **Figure 3.:** (A) Correlation of seroreactivities against GST-L1LONG with seroreactivities against GST-L1SHORT (correlation coefficient, R2 = 0.0261). (B) Correlation of GST-L1LONG ELISA with VLP-ELISA (R2 = 0.0062). (C) Correlation of GST-L1SHORT ELISA with VLP-ELISA (R2 = 0.8394). All graphs include all 682 sera taken during the study. Dashed lines indicate the methods’ cut-offs.
 
-## Anti-L1LONG antibodies lack neutralizing capacity
+### Anti-L1LONG antibodies lack neutralizing capacity
 
 Due to the different temporal order of seroconversion against L1LONG, L1SHORT and VLPs, we reasoned that MnPV escapes from adaptive immunity to establish an efficient infection and to maintain a persistent life cycle, which is indicated by the increased seroresponse against MnPV E2 (Figure 2D). To get insight into this question, pseudovirion-based neutralization assays (PBNA) (Pastrana et al., 2004; Roden et al., 1996; Vinzón et al., 2014) were performed to monitor for the presence of protecting antibodies. As shown in Figure 4A, PBNA revealed a similar kinetics as previously demonstrated for the L1SHORT isoform, indicating that neutralizing antibodies in fact appeared delayed. This was further substantiated by correlating the serum titers measured by VLP-ELISA with data obtained by PBNA (Figure 4B). Conversely, all sera directed against L1LONG (but negative for L1SHORT) lack neutralizing capability (Figure 4C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/57626/elife-57626-fig4-v1.jpg)
 
-**Figure 4.:** LONG and anti-L1SHORT antibodies.(A) Neutralization assay for all L1LONG-/L1SHORT-positive sera (n = 294) from 60 naturally infected animals. (B) Correlation of VLP-ELISA titers and neutralizing titers of all L1LONG-/L1SHORT-positive sera (correlation coefficient, R2 = 0.9883). The regression line represents a linear regression fit (Please note, that for both assays all sera were diluted in three-fold dilution steps. Since the titers are calculated from the dilution, data points of 294 different sera overlay when having the same titer in both assays). (C) Correlation of GST-L1LONG ELISA and neutralization assay for 234 L1LONG-positive/L1SHORT-negative sera (R2 = 0.0000). Correlation analyses contain sera from animals representing the complete age range. Dashed lines indicate the methods’ cut-offs (OD450 = 0.2 for GST-ELISA or titer of 300 for neutralization assay).
+**Figure 4.:** (A) Neutralization assay for all L1LONG-/L1SHORT-positive sera (n = 294) from 60 naturally infected animals. (B) Correlation of VLP-ELISA titers and neutralizing titers of all L1LONG-/L1SHORT-positive sera (correlation coefficient, R2 = 0.9883). The regression line represents a linear regression fit (Please note, that for both assays all sera were diluted in three-fold dilution steps. Since the titers are calculated from the dilution, data points of 294 different sera overlay when having the same titer in both assays). (C) Correlation of GST-L1LONG ELISA and neutralization assay for 234 L1LONG-positive/L1SHORT-negative sera (R2 = 0.0000). Correlation analyses contain sera from animals representing the complete age range. Dashed lines indicate the methods’ cut-offs (OD450 = 0.2 for GST-ELISA or titer of 300 for neutralization assay).
 
-## Mapping of immunodominant epitopes in MnPV L1
+### Mapping of immunodominant epitopes in MnPV L1
 
 In order to identify epitopes within L1 recognized by the sera, synthetic linear 15-mer peptides with 14 residue overlaps were spotted on microarrays. Incubation with a Mastomys serum mix obtained from five tumor-bearing animals, possessing high titers against L1LONG and L1SHORT identified three immunogenic epitopes within the region homologous between L1LONG and L1SHORT (ITGHPLY, DYLGMSK and KRSLPASRN) (Figure 5A and B). Notably, two of them (ITGHPLY, DYLGMSK) coincide with the DE and FG loops (Figure 5C; Bissett et al., 2016) that form conformational epitopes on the surface of HPV virions (Li et al., 2017; Zhang et al., 2016) and are known to be highly immunogenic.
 
-## Epitope characterization of anti-L1LONG and anti-L1SHORT antibodies
+![Figure 5.](https://cdn.elifesciences.org/articles/57626/elife-57626-fig5-v1.jpg)
+
+**Figure 5.:** (A) Synthetic 15-mer peptides with residue overlaps of 14 residues were spotted on microarrays and incubated with serum mix from five tumor-bearing animals with high titers against both L1 isoforms. Bound serum antibodies were detected with fluorophore-conjugated secondary antibodies. Positive regions (ITGHPLY, DYLGMSK and KRSLPASRN) are indicated and were mapped to their position in L1LONG (B). (C) Two of these regions (ITGHPLY and DYLGMSK) coincide with the DE and the FG loop, respectively (scheme shows MnPV L1SHORT; see Supplementary file 1).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57626/elife-57626-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Prediction of antigenic determinants within L1LONG suggests an immunogenic epitope between residues 11 and 34 of the N-terminus of L1LONG. Also the DE loop (determinant no. 8) and partially the FG loop (last 2 residues of determinant no. 12) are predicted.
+
+### Epitope characterization of anti-L1LONG and anti-L1SHORT antibodies
 
 To further elucidate why anti-L1LONG antibodies lack neutralizing capacity, we dissected the seroresponse against L1 with respect to the 31 amino acids present only at the N-terminus of L1LONG (Figure 1). Analyzing 297 sera of 39 L1LONG-positive animals by GST-ELISA, no detectable or only weak positivity could be measured against this L1LONGaa1-31 (Figure 6A). In contrast, when extending these 31 amino acids of L1LONG to 41 residues (which includes nine residues of L1SHORT), the number of seropositive animals strikingly increased (Figure 6B), whereas such a reactivity could not be observed in sera from MnPV-free animals vaccinated with VLPs (made from L1SHORT) obtained in a previous study (Vinzón et al., 2014; Figure 6C). Correlating reactivities between L1LONG and L1LONGaa1-41 (Figure 6D) shows that actually all sera which are positive for L1LONGaa1-41 are also positive for L1LONG, (which is not the case for L1SHORT, see Figure 6—figure supplement 1). It is therefore reasonable to assume that this antibody population is likely arising from exposure of the immune cells to the L1LONG antigen.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/57626/elife-57626-fig6-v1.jpg)
+
+**Figure 6.:** (A) Seroreactivity against the 31 aa exclusive for L1LONG (60 animals, 682 sera) and (B) Against 41 aa of the N-terminus of L1LONG (39 L1LONG-positive animals, 297 sera). Dashed lines represent the cut-off (0.11) based on virus-free animals. (C) Sera from MnPV-free animals (14 sera, black dots) vaccinated with VLPs (made from L1SHORT) and six pre-immune sera (grey squares) from a previous study (Vinzón et al., 2014) measured in the different L1 GST-ELISAs. Dashed lines indicate the cut-offs (grey: OD450 = 0.2 for L1SHORT and L1LONG; black: OD450 = 0.11 for L1LONGaa1-31 and L1LONGaa1-41). (D) Correlation of ELISAs for GST-L1LONG and GST-L1LONGaa1-41 (correlation coefficient, R2 = 0.0996).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57626/elife-57626-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Correlation of GST-L1SHORT with GST-L1MIDDLE (R2 = 0.0106). Dashed lines indicate the cut-offs (OD450 = 0.2 for GST-L1SHORT, GST-L1MIDDLE and GST-L1LONG; OD450 = 0.11 for L1LONGaa1-41).
 
 These data, together with the finding that the first linear epitope recognized on the peptide array is located in L1SHORT (Figure 5), indicate that a conformational epitope is spanning L1LONG and L1SHORT, and represents both the most immunogenic epitope in L1LONG and a major immunogen in early stages of infection. Moreover, an algorithm that predicts antigenic sites on proteins (Kolaskar and Tongaonkar, 1990), calculates the abovementioned DE loop (determinant no. 8) and partially the FG loop (determinant no. 12) (Figure 5—figure supplement 1) detected by the serum mix (see Figure 5) and also predicts an N-terminal epitope between residues 11 and 34 (determinant no. 1).
 
@@ -87,31 +115,43 @@ To further characterize the antigenic properties and to prove that a conformatio
 
 Sera from the collective of 60 naturally infected animals previously tested positive for L1LONG and L1SHORT were also tested in denatured-VLP ELISA (306 sera) and denatured-GST-L1 ELISA (281 sera). Interestingly, denaturation of both VLPs and GST-L1 antigens abrogated the reactivity of all sera (Figure 7C–E), suggesting that anti-L1LONG and anti-L1SHORT antibodies were indeed directed against conformational epitopes.
 
-## L1SHORT but not L1LONG and L1MIDDLE can form VLPs and infectious pseudovirions
+### L1SHORT but not L1LONG and L1MIDDLE can form VLPs and infectious pseudovirions
 
 To test the different isoforms for their capability to form virus-like structures, the ORFs of L1SHORT, L1MIDDLE and L1LONG were expressed in Sf9 insect cells by the use of recombinant baculoviruses. Different preparations were analyzed by CsCl density gradient centrifugation. For quality control, the gradients’ refractive indices were measured and corresponding fractions were analyzed via western blot, where all three L1 isoforms could be found, ranging between 55 and 70 kDa (Figure 8—figure supplement 1). To analyze the ability of the isoforms to form VLPs or similar structures, different fractions of the gradients were examined by EM. Considering L1SHORT, highly concentrated and spherically shaped particles with sizes of 60 nm and clearly visible capsomers could be found (Figure 8A). Also in the lowest density fractions (e.g. fraction 11), particles with capsomer-like structures were detected. Conversely, inspecting the gradients of L1LONG and L1MIDDLE, similar assemblies were absent, although many particles of different sizes (20–50 nm) were found (Figure 8B and C). However, it is difficult to classify these substructures as regular capsomers, indicating that L1LONG and L1MIDDLE were apparently not able to form correctly assembled VLPs under the same experimental conditions.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/57626/elife-57626-fig8-v1.jpg)
+
+**Figure 8.:** EM micrographs of peak fractions and the respective fractions of lowest densities of (A) L1SHORT (B) L1MIDDLE and (C) L1LONG at 16,000x magnification. Capacity to form infectious pseudovirions in presence of L2 was analyzed by infectivity assay and EM for (D) L1SHORT (E) L1MIDDLE and (F) L1LONG. Note that high signals with unpurified lysate from PsV-producing cells result from co-expressed luciferase reporter protein (Mean ± SD, n = 3).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/57626/elife-57626-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) The CsCl density (refractive index) of each fraction was determined via refractometer at RT. (B) Analysis of fractions from PsV production with L1SHORT, L1MIDDLE and L1LONG analyzed by Coomassie blue staining (upper panels) and Western blot (lower panels). Immunoblots were incubated with a serum mix from five MnPV-infected tumor-bearing animals.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/57626/elife-57626-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Model of HPV16 capsid (cryo-electron microscopy, structure ID: 3J6R, view from inside of the capsid, display: left: ball and stick, middle: trace, right: cartoon). The chain starts at residue 9. The first three residues ATV of the different L1 proteins are indicated.
+
 To examine whether the addition of L2, regularly present in mature infectious virions, can facilitate the formation of L1LONG or L1MIDDLE composed particles, pseudovirions were produced. 293TT cells were transfected with expression plasmids encoding L2 and the different L1 isoforms in conjunction with a reporter plasmid. The assembled structures were purified via Optiprep gradients and infection assays with different fractions were performed. In contrast to L1SHORT (Figure 8D), L1LONG and L1MIDDLE again did not yield virus-like structures even in the presence of L2 (Figure 8E and F). Moreover, while infectious L1SHORT-based pseudovirions can be found in most of the gradient fractions, no signals of the reporter construct could be discerned for L1LONG and L1MIDDLE. Luciferase signals could be measured in non-fractionated 293TT cell lysates, indicating that the transfection was successful for all three L1 isotypes.
 
-## L1SHORT but not L1LONG can form high-MW structures in genuine host cells
+### L1SHORT but not L1LONG can form high-MW structures in genuine host cells
 
 To further investigate L1 isoform expression in their genuine host in vitro, Mastomys-derived fibroblasts (Hasche et al., 2016) were transfected either with plasmids exclusively encoding HA-tagged L1SHORT, L1MIDDLE or L1LONG or with the polycistronic plasmid vL1 encoding the genuine viral L1 ORFs as found in natural transcripts. While serum mix from tumor-bearing animals was able to detect all L1 isoforms in immunofluorescence stainings, mAb 2D11 (which exclusively binds a conformational L1SHORT epitope, see Figure 7D and E, respectively) could only detect L1SHORT but not L1MIDDLE and L1LONG, despite similar expression levels of all isoforms (see HA-tag) (Figure 9A). This indicates that in Mastomys cells only the L1SHORT can form structures involved in the formation of virus particles.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/57626/elife-57626-fig9-v1.jpg)
 
-**Figure 9.:** SHORT and L1LONG protein expose different epitopes when expressed in Mastomys cells. Mastomys-derived fibroblasts were transfected with HA-tagged L1SHORT, L1MIDDLE or L1LONG (humanized codons and artificial Kozak sequences), or the polycistronic plasmid vL1 (encodes all three viral L1 ORFs and Kozak sequences). (A) Expression of L1 isoforms was visualized with mAb 2D11 (only recognizing conformational L1 epitopes), serum mix from five tumor-bearing animals and anti-HA as a control. (B) Western blotting reveals two high-MW bands only in L1SHORT-expressing cells corresponding to L1 dimers (#) and trimers (§). Transfection with vL1 results in synthesis of both L1LONG as well as L1SHORT and its multimer. (C) Upon harsher denaturation of cell lysates, L1SHORT multimer bands disappear. Vinculin served as loading control.
+**Figure 9.:** Mastomys-derived fibroblasts were transfected with HA-tagged L1SHORT, L1MIDDLE or L1LONG (humanized codons and artificial Kozak sequences), or the polycistronic plasmid vL1 (encodes all three viral L1 ORFs and Kozak sequences). (A) Expression of L1 isoforms was visualized with mAb 2D11 (only recognizing conformational L1 epitopes), serum mix from five tumor-bearing animals and anti-HA as a control. (B) Western blotting reveals two high-MW bands only in L1SHORT-expressing cells corresponding to L1 dimers (#) and trimers (§). Transfection with vL1 results in synthesis of both L1LONG as well as L1SHORT and its multimer. (C) Upon harsher denaturation of cell lysates, L1SHORT multimer bands disappear. Vinculin served as loading control.
 
 Western blot analysis of the corresponding cells showed similar expression of all HA-tagged L1 isoforms, which again could be detected by the serum mix (Figure 9B). Notably, only in L1SHORT-transfected cells both mAb 2D11 and serum mix detected bands between 100 and 130 kDa and around 250 kDa, which disappeared in lysates treated with additional DTT, β-mercaptoethanol and extended heating prior to SDS-PAGE separation (Figure 9C). Their sizes correlate to L1-dimers and trimers and since mAb 2D11 does not detect linear epitopes, this suggests that only the L1SHORT isoform is able to form capsomer-like structures, which are at least partially structured in non-reducing conditions due to stabilizing properties of inter-capsomeric disulfide bridges (Buck et al., 2005b; Sapp et al., 1998).
 
 Previous viral transcriptome analysis revealed the presence of three polycistronic transcripts (referred to as Q, R and S) that have the potential to encode both L1LONG and L1SHORT (Salvermoser et al., 2016). Using the most abundant of these (transcript Q) for prediction of the start codons’ likelihood of being used for translation initiation (Nishikawa et al., 2000), it turned out that the ORFs of E1^E4 (reliability index, RI = 0.43), L2 (RI = 0.42) and L1LONG (RI = 0.38) could be favored over L1SHORT (RI = 0.17) (Supplementary file 3). Indeed, consistent with the immunofluorescence, when transfecting cells with the polycistronic construct vL1, L1LONG as well as L1SHORT and its multimer band are detected, which confirms that both ORFs are functional and that L1LONG, although unable to form capsomers, can be expressed from such a polycistronic construct (Figure 9).
 
-## L1LONG and L1SHORT appear at different locations in MnPV-induced tumors
+### L1LONG and L1SHORT appear at different locations in MnPV-induced tumors
 
 Considering the PV life cycle, virions are released by shedding of terminally differentiated cells at the uppermost layer (stratum corneum) of the epidermis. Here, L1 and L2 are assembled to capsomers and virus particles (Figure 10A). When staining MnPV-induced papillomas with serum that detects mature MnPV virions, virus particles can only be found in cornified structures above or within the epidermis and in islands of terminally differentiated keratinocytes (Figure 10B). This is consistent with the expression of L2, which also appears the earliest in nearly shed cells (Figure 10C). Conversely, using serum from mice immunized with the N-terminal peptide exclusive for L1LONG, keratinocytes in the basal layer and the complete epithelium are positively stained (Figure 10B). This suggests that its expression takes place already during early infection phases long before viral particles are formed.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/57626/elife-57626-fig10-v1.jpg)
 
-**Figure 10.:** LONG synthesis occurs much earlier than capsid formation in vivo.(A) EM micrograph of MnPV particles (p) in the stratum corneum (s.c.) of a MnPV-induced papilloma. The nearly shed cell shown here is strongly degraded and only tonofilaments (f) are left. (B) Immunohistochemical analysis reveals MnPV capsids (detected with serum of a MnPV-VLP-immunized Mastomys) in the uppermost layers of the stratum corneum while L1LONG (detected by serum from a mouse immunized with the N-terminal 31 residues of MnPV-L1LONG) appears throughout the whole epidermis. Pre-immune sera were used as controls. (C) Tissue sections were stained with cross-reactive anti-HPV-L2 antibody (K18L2, red) or cross-reactive anti-HPV-VLP guinea pig serum (green) as controls. Consistent with capsid formation, L2 only appears in the uppermost layers of the tissue shortly prior to VLP formation (d: dermis, e: epidermis, k: keratin).
+**Figure 10.:** (A) EM micrograph of MnPV particles (p) in the stratum corneum (s.c.) of a MnPV-induced papilloma. The nearly shed cell shown here is strongly degraded and only tonofilaments (f) are left. (B) Immunohistochemical analysis reveals MnPV capsids (detected with serum of a MnPV-VLP-immunized Mastomys) in the uppermost layers of the stratum corneum while L1LONG (detected by serum from a mouse immunized with the N-terminal 31 residues of MnPV-L1LONG) appears throughout the whole epidermis. Pre-immune sera were used as controls. (C) Tissue sections were stained with cross-reactive anti-HPV-L2 antibody (K18L2, red) or cross-reactive anti-HPV-VLP guinea pig serum (green) as controls. Consistent with capsid formation, L2 only appears in the uppermost layers of the tissue shortly prior to VLP formation (d: dermis, e: epidermis, k: keratin).
 
 ## Discussion
 
@@ -145,64 +185,347 @@ In conclusion, it is tempting to speculate that our results show that early synt
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mastomys coucha)</td>
+      <td>African Multimammate rodent</td>
+      <td>DKFZ, Prof. F. Rösl</td>
+      <td>Mastomys coucha</td>
+      <td>Used asexperimental model, Hasche and Rösl, 2019</td>
+    </tr>
+    <tr>
+      <td>Gene (Mastomys natalensis Papillomavirus1)</td>
+      <td>MnPV</td>
+      <td>GenBank</td>
+      <td>NC_001605.1</td>
+      <td>Tan et al., 1994</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mastomys coucha)</td>
+      <td>Sera</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sera tested for seroconversionagainst different MnPV proteins</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mastomys coucha)</td>
+      <td>Sera</td>
+      <td>Vinzón et al., 2014</td>
+      <td></td>
+      <td>Sera from VLP-vaccinated animals</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mastomys coucha)</td>
+      <td>MaFi132; Mastomys coucha- derived fibroblasts</td>
+      <td>DKFZ, Prof. F. Rösl</td>
+      <td></td>
+      <td>Hasche et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLaT</td>
+      <td>DKFZ, Prof. M. Müller, Sehr et al., 2002</td>
+      <td>HeLaT clone-4,</td>
+      <td>Used for pseudovirion--based neutralization assay</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293TT</td>
+      <td>DTP, DCTD TUMOR REPOSITORY</td>
+      <td>NCI-293TT; RRID:CVCL_1D85</td>
+      <td>Used forpseudovirion production</td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>DKFZ, Prof. M. Müller</td>
+      <td>RRID:CVCL_0549</td>
+      <td>Insect cells,used for VLPproduction</td>
+    </tr>
+    <tr>
+      <td>Cell line (Trichoplusia ni)</td>
+      <td>TN-High Five</td>
+      <td>Gibco</td>
+      <td>BTI-TN-5B1-4; RRID:CVCL_C190</td>
+      <td>Insect cells, used for VLPproduction</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>TOP10 (DH10B)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: C404010</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH10MultiBacCre</td>
+      <td>Geneva Biotech</td>
+      <td>Electrocompetent cells</td>
+      <td>Fitzgerald et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mastomys natalensis Papillomavirus1)</td>
+      <td>pFBDM_L1SHORT, pFBDM_L1MIDDLE , pFBDM_L1LONG</td>
+      <td>This paper</td>
+      <td>Backbone RRID:Addgene_110738</td>
+      <td>Multibac constructs to transfect andexpress MnPVL1 variants ininsect cells for VLPproduction</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mastomys natalensis Papillomavirus1)</td>
+      <td>pPK-CMV-E3_L1SHORT, pPK-CMV-E3_L1MIDDLE, pPK-CMV-E3_L1LONG</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Constructs totransfect humanized ORFs andexpress MnPVL1 variants inMaFi132 cells</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mastomys natalensis Papillomavirus1)</td>
+      <td>pPK-CMV-E3_vL1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Construct totransfect and express all L1 ORFs as found in the genuineMnPV genomein MaFi132 cells</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mastomys natalensis Papillomavirus1)</td>
+      <td>MnPV VLPs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MnPV virus-likeparticles usedfor VLP-ELISAand assemblystudies</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mastomys natalensis Papillomavirus1)</td>
+      <td>MnPV PsVs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MnPV pseudovirions for infectivity assay andPBNA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-L1 (Mouse monoclonal)</td>
+      <td>This paper</td>
+      <td>mAb 2E2, 2D11, 3H8, 2D6, 5E5</td>
+      <td>ELISA (1:20-1:14,580), IF(1:5), WB(2D11, 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mastomys serum mix (Mastomys coucha polyclonal serum)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>IF (1:1000),Peptide Array(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA clone 3F10 (Rat monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 11867423001; RRID:AB_390918</td>
+      <td>IF (1:1000), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vinculin clone 7F9 (Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#: sc-73614; RRID:AB_1131294</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-L1LONGaa1-31 serum (Mouse polyclonal serum)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-L2 serum (Guinea pig polyclonal serum)</td>
+      <td>DKFZ, Prof. M. Müller</td>
+      <td></td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-L2 clone K18L2 (Guinea pig polyclonal serum)</td>
+      <td>DKFZ, Prof. M. Müller, Rubio et al., 2011</td>
+      <td></td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG (H+L), HRP Conjugate (Goat polyclonal)</td>
+      <td>Promega</td>
+      <td>Cat#: W4021; RRID:AB_430834</td>
+      <td>ELISA (1:10,000), WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase AffiniPure Goat Anti-Rat IgG (H+L)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#: 112-035-003; RRID:AB_2338128</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG (H+L), Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: A11029; RRID:AB_138404</td>
+      <td>IF (1:1000), IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Guinea Pig IgG (H+L), Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: A11073; RRID:AB_2534117</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rat IgG (H+L), Alexa Fluor 488, (Donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: A21208; RRID:AB_141709</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG (H and L) Antibody DyLight 680 Conjugated</td>
+      <td>Rockland Immunochemicals</td>
+      <td>Cat#: 610-144-121; RRID:AB_1057546</td>
+      <td>Peptide Array (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPK-CMV-E3</td>
+      <td>Promocell</td>
+      <td>Cat#: PK-MB-P003300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-L1SHORT, GST-L1MIDDLE, GST-L1LONG,</td>
+      <td>This paper, Schäfer et al., 2010</td>
+      <td></td>
+      <td>GST proteinfused to thedifferent MnPV L1 variants</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-L1LONGaa1-31, GST-L1LONGaa1-41</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST proteinfused to the N-terminus of MnPV L1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-E2, GST-L2</td>
+      <td>This paper, Schäfer et al., 2010</td>
+      <td></td>
+      <td>GST proteinfused to MnPVE2 or L2</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>L1 peptide array</td>
+      <td>PEPperPRINT GmbH</td>
+      <td></td>
+      <td>Stadler et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dako REAL Detection System, Peroxidase/AEC, Rabbit/Mouse</td>
+      <td>Agilent</td>
+      <td>Cat#: K5007</td>
+      <td>IHC chromogenicdetection Kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gaussia glow juice</td>
+      <td>PJK Biotech</td>
+      <td>Cat#: 102542</td>
+      <td>Luciferase activity detection kit</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: D9542-5MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 6.0</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 The Mastomys coucha breeding colony naturally infected by MnPV is maintained under SFP conditions in individually ventilated cages (Tecniplast GR900) at 22+/- 2°C and 55+/- 10% relative humidity in a light/dark cycle of 14/10 hr. Mastomys were fed with mouse breeding diet and allowed access to water ad libitum. For the follow-up experiment, animals were monitored for the duration of their lifetime until they had to be sacrificed due to tumor development or decrepitude. Blood was taken in intervals from 2–8 weeks by puncturing the submandibular vein of anesthetized animals (3% isoflurane), starting at the age of eight weeks.
 
-## Cell culture conditions
+### Cell culture conditions
 
 293TT, HeLaT and MaFi132 cells were grown in DMEM supplemented with 10% fetal calf serum (FCS), 1% Penicillin/Streptomycin and 1% L-glutamine. Media of HeLaT and 293TT cell were further supplemented with Hygromycin B (125 μg/ml) to maintain additional SV40 large T-antigen expression. All cell lines were kept at 37°C, 5% CO2 and 95% humidity and regularly checked for Mycoplasma via PCR. Sf9 and TN-High Five insect cells were kept as described elsewhere (Senger et al., 2009b).
 
-## GST-capture ELISA
+### GST-capture ELISA
 
 As previously described (Schäfer et al., 2011; Schäfer et al., 2010), glutathione-casein was diluted in 50 mM carbonate buffer (pH9.6) and 200 ng/well were coated overnight at 4°C to 96 well plates (Nunc PolySorp). After blocking with 180 µl/well casein blocking buffer (CBB, 0.2% casein in PBST: 0.05% Tween-20 in PBS) for 1 hr at 37°C, the plate was incubated with the respective antigen (bacterial lysate containing the GST-antigen-SV40-tag fusion protein) for 1 hr at RT. Mastomys sera diluted 1:50 in CBB containing GST-SV40-tag were incubated for 1 hr at RT to remove unspecific reaction against bacterial proteins or the GST-SV40-tag fusion protein. Afterwards, ELISA plates were washed four times with PBST and incubated with pre-incubated sera for 1 hr at RT. After washing four times, 100 µl/well HPR-conjugated goat anti-mouse IgG (H+L) antibody (Promega, 1:10,000 in CBB) were applied for 1 hr at RT. Antibodies were quantified colorimetrically by incubating with 100 μl/well substrate buffer for 8 min (0.1 mg/ml tetramethylbenzidine and 0.006% H2O2 in 100 mM sodium acetate, pH6.0). The enzymatic reaction was stopped with 50 μl/well 1 M sulfuric acid. The absorption was measured at 450 nm in a microplate reader (Labsystems Multiskan, Thermo Fisher Scientific). To calculate the serum reactivity against the respective antigen, sera were tested in parallel against the GST-SV40-tag fusion protein and the reactivity was subtracted from the reactivity against the GST-antigen-SV40-tag. Each ELISA was performed in duplicates at least. The cut-offs were calculated individually for each antigen by measuring sera of virus-free animals.
 
-## VLP-ELISA
+### VLP-ELISA
 
 VLP-ELISAs were performed as described elsewhere (Vinzón et al., 2014). Briefly, 100 ng/well purified high quality L1SHORT-VLPs were coated overnight in 50 mM carbonate buffer pH9.6 and blocked with CBB the next day. After incubation for 1 hr at RT with three-fold dilutions of sera in CBB, plates were washed four times with PBST and incubated with goat anti-mouse IgG-HRP (1:10,000 in CBB). After four washes, color development and measurement was performed as described for the GST-ELISA. Antibody titer represents the last reciprocal serum dilution above the blank.
 
-## Denatured ELISAs
+### Denatured ELISAs
 
 VLPs and GST fusion antigens were denatured at 95°C for 10 min in coating buffer (50 mM carbonate buffer pH9.6) prior to coating to ELISA plates overnight at 37°C. For the denatured VLP-ELISA, further steps were carried out according to the VLP-ELISA protocol described above. Denatured GST-ELISA antigens were then directly coated onto the ELISA plates overnight at 37°C and further steps (blocking, washing, incubation with sera, color reaction) were carried out according to the GST-ELISA protocol. The five monoclonal MnPV anti-L1SHORT antibodies mAb2E2, mAb2D6, mAb2D11, mAb5E5 and mAb3H8 (reactivities shown in Supplementary file 2) were generated via hybridoma technique from BALB/c mice vaccinated with MnPV L1SHORT-VLPs and were used together with a Mastomys serum mix (sera from five tumor-bearing animals) as controls for denaturation conditions.
 
-## Peptide arrays
+### Peptide arrays
 
 The peptide array (PEPperPRINT GmbH, Germany) was produced as previously described (Stadler et al., 2008). The amino acid sequence of MnPV L1 was elongated with neutral GSGSGSG linkers at the C- and N-termini to avoid truncated peptides. Elongated antigen sequences were translated into 15 aa peptides with peptide-peptide overlaps of 14 aa. The resulting peptide microarray contained 530 different overlapping L1 peptides printed in duplicates and framed by additional HA (YPYDVPDYAG, 86 spots) control peptides. The peptide array was incubated for 10 min in PBST, followed by incubation in Rockland Blocking Buffer MB-070 (RBB; Rockland Immunochemicals, USA) for 1 hr. After short rinsing with PBST, the array was incubated for 16 hr at 4°C with Mastomys serum mix at a dilution of 1:300 in 10% RBB in PBST. The array was washed three times for 1 min with PBST and then incubated for 1 hr at RT with 0.2 µg/ml 10% RBB in PBST goat anti-mouse IgG (Fc) DyLight680 (Rockland Immunochemicals, USA). Subsequently, the array was washed three times for 1 min with PBST and rinsed with 1 mM TRIS-HCL pH7.4. As peptide controls, HA peptide spots were stained with monoclonal mouse-anti-HA IgG antibody (12CA5, kindly provided by Dr. G. Moldenhauer, DKFZ) conjugated with DyLight800 (Lightning-Link, Innova Biosciences, UK), followed by washing as described above. The antibody was diluted to 1 µg/ml in 10% RBB in PBST and staining was performed for 1 hr at RT in the dark followed by washing as described above. After drying of the array, fluorescence images were acquired with an Odyssey Infrared Imager (LICOR, USA) at a resolution of 21 µm. Scanner sensitivity was set to 7.0 for the 700 and 800 nm channels respectively, the focal plane was set to +0.8 mm. Quantification of spot intensities, based on 16-bit gray scale tiff files and microarray image analysis, via PepSlide Analyzer (SICASYS Software GmbH, Germany). A software algorithm breaks down fluorescence intensities of each spot into raw, foreground and background signal, and calculates averaged median foreground intensities and spot-to-spot deviations of spot duplicates. Averaged spot intensities of the assays with the sample were plotted against the antigen sequence from N- to C-terminus to visualize overall spot intensities and signal-to-noise ratios (intensity plot).
 
-## Pseudovirion production
+### Pseudovirion production
 
 Pseudovirions were produced as previously described (Buck and Thompson, 2007). 293TT cells were co-transfected by calcium phosphate transfection with plasmids encoding humanized MnPV L1 isoforms (L1LONG, L1MIDDLE and L1SHORT), L2 and a reporter plasmid encoding Gaussia luciferase. The 2nd and 3rd ATG of L1LONG and the 2nd ATG of L1MIDDLE were mutated to GCG (alanine) to exclusively guarantee L1LONG or L1MIDDLE expression. Transfected cells were incubated for 48 hr, harvested and resuspended in an equal volume of PBS and supplemented with 0.5% Brij 58 (Sigma) and 1% RNase A/T1 mix (Thermo Fisher Scientific). Cells were lysed for 24 hr under rotation at 37°C to allow pseudovirion maturation prior to adjustment with 5 M NaCl to 0.85 M NaCl and treatment with 700 U Benzonase (Merck) for 1 hr at 37°C. For purification, the lysate was transferred on top of a three-step gradient of 27%, 33% and 39% Iodixanol (Optiprep, Sigma) diluted in 0.8 M NaCl/DPBS. and centrifuged at 37,000 rpm for 5 hr at 16°C in a swinging bucket rotor. Fractions of 500 µl each were collected in siliconized LoBind tubes (Eppendorf) and quantity and quality of pseudovirions in each fraction was assessed by electron microscopy (EM) and Gaussia luciferase reporter activity after infection of HeLaT cells.
 
-## Pseudovirion-based neutralization assay
+### Pseudovirion-based neutralization assay
 
 As previously described (Buck et al., 2005a), animal sera (in duplicates, initial dilution 1:60 in medium) were subjected to 1:3 serial dilutions in 96-well cell culture plates (Greiner Bio-One GmbH). Then, the sera were mixed with 40 µl of diluted pseudovirions and incubated for 15 min at RT. Then, 50 µl of 2.5 × 105 HeLaT cells/ml were seeded to the pseudovirion-serum mixture and cultured for 48 hr at 37°C. The activity of secreted Gaussia luciferase was measured 15 min after adding coelenterazine substrate and Gaussia glow juice (PJK Biotech, Germany) according to the manufacturer’s instructions in a microplate luminometer reader (Synergy 2, BioTek). The neutralization titer represents the reciprocal of the highest dilution that reduces the signal by at least 50%.
 
-## Construction of pFBDM plasmids and Multibac plasmids
+### Construction of pFBDM plasmids and Multibac plasmids
 
 Two copies of MnPV wildtype L1LONG, L1MIDDLE and L1SHORT were inserted into the Multibac vector pFBDM using EcoRI/HindIII and XmaI/SphI. Comparable to the VLP production, to ensure that only L1LONG and L1MIDDLE are expressed in the Multibac expression system, the 2nd and 3rd ATG start codons of L1LONG and the 2nd ATG of L1MIDDLE were mutated to GCG (alanine). The recombinant MultiBac bacmids were generated by electroporation (1.8 kV pulse) of DH10MultiBacCre E. coli with the generated plasmids, followed by selection with antibiotics and blue/white screening (Fitzgerald et al., 2006). Recombinant MultiBac bacmids were isolated by QIAGEN Plasmid Mini Kit followed by ethanol precipitation.
 
-## VLP production and purification
+### VLP production and purification
 
 Recombinant baculoviruses were generated as previously described (Vinzón et al., 2014) with some modifications. One µg of MultiBac bacmid containing L1LONG, L1MIDDLE or L1SHORT was diluted in 1 ml transfection buffer (25 mM Hepes, 125 mM CaCl2, 140 mM NaCl, pH7.2) and added dropwise to Sf9 cells. After incubation at 27°C for 5 hr, cells were washed twice and then cultured for 6 days in supplemented TNM-FH medium (Sigma). One ml supernatant was used for generation of a high-titer baculovirus stock by infecting 2 × 106 Sf9 cells in a T25 flask followed by virus amplification for 6 days. This step was repeated with the obtained supernatant two times with increasing cell numbers (3 ml supernatant for 1 × 107 cells in a T75 flask and 5 ml supernatant for 2.5 × 107 cells in a T175 flask). TN-High Five cells were cultivated to a density of 2.5 × 106/ml in 250 ml suspension culture, which were then pelleted and resuspended in 42 ml EX-CELL 405 serum-free medium (Sigma) and 8 ml high titer virus stock. The cells were shaken at a low speed for 1 hr at RT and then incubated within 250 ml final volume of medium for 3 days at 27°C. Cell pellets were harvested by centrifugation (3000 rpm for 10 min at 4°C in a Sorvall GS-3 rotor) and washed in pre-chilled PBS for two times. Dry pellets were resuspended in 10 ml VLP extraction buffer (5 mM MgCl2, 5 mM CaCl2, 150 mM NaCl, 0.01% Triton X-100 and 20 mM Hepes pH7.4) containing 200 μl 100 mM PMSF, and then followed by three times sonication. A two-step gradient consisting of 7 ml of 40% sucrose on top of 7 ml CsCl solution was prepared. Clear cell lysate was obtained by centrifugation (10,000 rpm for 10 min at 4°C in a Sorvall F-28/50 rotor) and carefully loaded onto the top of the CsCl layer. After centrifugation (27,000 rpm for 3 hr at 10°C in SW-31Ti rotor), the interphase between sucrose and CsCl together with the complete CsCl layer was transferred into a Quickseal tube. The fractions were collected in 1 ml aliquot after 16 hr centrifugation at 48,000 rpm at 20°C in a Beckman 70Ti rotor and analyzed by Coomassie blue dye and Western blot. Small aliquots from the fraction with highest and lowest protein yield were dialyzed against H2O on a membrane filter and analyzed by EM.
 
-## Electron microscopy (EM)
+### Electron microscopy (EM)
 
 VLP and PsV preparations or tissue were fixed with buffered aldehyde solution (2% formaldehyde, 2% glutaraldehyde, 1 mM MgCl2, 2% sucrose in 100 mM calcium cacodylate, pH7.2), followed by post-fixation in buffered 1% OsO4, graded dehydration with ethanol and resin-embedding in epoxide (12 g glycid ether, 6.5 g NMA, 6.5 g DDSA, 400 μl DMP30, all from Serva, Germany). Ultrathin sections at nominal thickness 60 nm and contrast-stained with lead-citrate and Uranylacetate were observed in a Zeiss EM 910 at 100 kV (Carl Zeiss, Oberkochen, Germany) and micrographs were taken with image-plates, scanned at 30 µm resolution (Ditabis micron, Pforzheim, Germany).
 
-## Transfection of mammalian cells, SDS-PAGE and western blotting
+### Transfection of mammalian cells, SDS-PAGE and western blotting
 
 Variants of L1 ORFs were cloned into pPK-CMV-E3 expression plasmids. For exclusive and strong eukaryotic expression of the respective L1 isoform, viral codons were humanized, unwanted start codons mutated (L1SHORT starts from 3rd ATG; L1MIDDLE starts from 2nd ATG, 3rd ATG mutated; L1LONG starts from 1st ATG, 2nd and 3rd ATG mutated) and the ORFs were cloned downstream of an artificial Kozak sequence. Alternatively, the complete genuine viral L1 ORF encoding start codons and Kozak sequences of all isoforms was cloned and termed pPK-CMV_MnPV-vL1.
 
 MaFi132 cells (400,000 cells/10 cm dish) were transfected with 5 µg pPK-CMV_MnPV-L1SHORT or either 10 µg pPK-CMV_MnPV-L1MIDDLE, pPK-CMV_MnPV-L1LONG or pPK-CMV_vL1 24 hr after seeding using TurboFect (Thermo Fisher Scientific) according to the manufacturer’s protocol. Cells were collected 48 hr after transfection, washed in PBS and lysed for 30 min on ice in 1.25x Laemmli buffer (78 mM Tris pH6.8, 2.5% SDS, 6.25% glycerol, 0.125% bromophenol blue, 2.5% β-mercaptoethanol). Lysates were then heated at 95°C for 5 min, chilled on ice and treated with 100 U/ml Benzonase (Millipore) for 5 min at RT. Protein concentrations were measured using a NanoDrop spectrophotometer. Forty μg lysate/lane were loaded to 8% SDS-PAGE. To guarantee complete denaturation of the samples, additional DTT and β-mercaptoethanol were added to a final concentration of 100 mM and 4%, respectively, prior to incubation for 1 hr at RT and heating at 95°C for 10 min. After blotting, proteins were detected with anti-HA (3F10, 1:1000, Roche), anti-vinculin (7F9, 1:4000, Santa Cruz), anti-MnPV-L1SHORT (mAb 2D11, 1:5) or Mastomys serum mix (1:1000) prior to detection with goat anti-mouse-HRP (W4021, 1:10,000, Promega) or goat anti-rat-HRP (1:10,000, Jackson ImmunoResearch). For Coomassie staining, gels were incubated overnight in Coomassie stain and then destained in 20% methanol.
 
-## Immunofluorescence stainings
+### Immunofluorescence stainings
 
 MaFi132 cells were transfected with L1 isoforms as described above and seeded on glass cover slides after 24 hr. Additional 48 hr later the cells were washed with PBS and fixed for 10 min in 4% PFA. Cells were blocked in 10% goat serum/0.3% Triton X-100 in PBS for 1 hr and stained with anti-MnPV-L1SHORT (2D11, 1:5), Mastomys serum mix (1:1000) or anti-HA (3F10, 1:1000, Roche) and the respective secondary goat anti-mouse or donkey anti-rat IgG (conjugated to AlexaFluor488, 1:1000, Invitrogen). Nuclei were stained with DAPI. Cover slides were mounted with Faramount Aqueous Mounting Medium (Dako) and imaged with a Cell Observer (Carl Zeiss).
 
-## Immunohistochemistry (IHC)
+### Immunohistochemistry (IHC)
 
 Staining of formalin-fixed, paraffin-embedded tumors was performed as previously described (Hasche et al., 2017). Briefly, deparaffinized sections were heated in citrate buffer pH6.0 prior to blocking with 5% goat serum/5% FCS/1% BSA in PBS and incubation with primary antibodies (serum of a VLP-vaccinated Mastomys (Vinzón et al., 2014), serum of a mouse immunized with the N-terminal 31 aa of MnPV-L1LONG in the OVX313 platform (Spagnoli et al., 2017) or the respective pre-immune sera, cross-reactive anti-L2 (K18L2) (Rubio et al., 2011) or serum of a guinea pig immunized with Gardasil9 (unpublished) overnight at 4°C. Detection of L1 isoforms was achieved with the Dako REAL Detection System, Peroxidase/AEC, Rabbit/Mouse. The color reaction with AEC/H2O2 substrate solution (Sigma) was stopped with distilled water followed by counterstaining with hemalum solution (Carl Roth, Karlsruhe, Germany). Fluorescence stainings were detected with anti-mouse-IgG1-Alexa594 or anti-guinea-pig-Alexa488 (Invitrogen) and nuclei were stained with DAPI. Sections were mounted with Dako Faramount Aqueous Mounting Medium.
 
-## Statistical analysis
+### Statistical analysis
 
 Data analyses and graphic representations were performed with GraphPad Prism 6.0 Software and the respective statistical test indicated in the figure legends at 95% confidence interval and an alpha level of 5% to assess significance. For time course analyses, individual time points were compared to the eight-week starting time point. The rate of L1LONG- and L1SHORT- positive animals was calculated and compared with a two-tailed McNemar’s test at an alpha level of 5% to assess significance.

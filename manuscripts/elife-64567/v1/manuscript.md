@@ -170,6 +170,61 @@ Oscillatory activity can enhance communication between specific brain regions du
 
 The Dlx1–6 genes encode a family of homeobox transcription factors that play critical roles in the development of MGE-derived cortical GABAergic interneurons. While Dlx6 may have limited expression in adult cortical neurons, Dlx5 is expressed in PV, SST, CR, and neuropeptide Y (NPY) cells in superficial cortical layers, and predominantly in PV cells in deep cortical layers (Wang et al., 2010). Dlx5/6-/- KOs have reduced numbers of cortical PV cells and increased dendritic branching in the PV cells that remain (Wang et al., 2010). In Dlx5/6+/- heterozygous mice, alterations in the properties of mPFC PV interneurons arise in early adulthood, beginning around P63. In these mice, PV interneurons have abnormal physiological properties, including wider action potentials, higher input resistance, and slower membrane time constants (Cho et al., 2015a). These changes result in reductions in the amplitude of gamma frequency-induced inhibitory postsynaptic currents in connected mPFC pyramidal neurons. At the same age, Dlx5/6+/- mice exhibit heightened anxiety and deficits in a rule-shift task that requires cognitive flexibility. Importantly, Dlx5/6+/- mice exhibit deficits in task-related gamma frequency power and task performance that can be rescued by pharmacological augmentation of mPFC interneuron function (Cho et al., 2015a). Together, these studies link mutations in Dlx5 and Dlx6, key genes that regulate mPFC interneuron development, to alterations in gamma oscillations that underlie deficits in cognitive flexibility. These mechanisms may contribute to post-adolescent onset of cognitive changes in schizophrenia as well as aberrations in fear and reward learning (Cho et al., 2020).
 
+**Table 1.**
+ Summary of phenotypes in four mouse models.PYR: pyramidal cell; IN: interneuron; MGE: median ganglionic eminence; Pr: release probability; PSD: postsynaptic density; E/I: excitatory/inhibitory.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+      <th colspan="3">Phenotypes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene</td>
+      <td>Protein function</td>
+      <td>Cell types</td>
+      <td>Cellular</td>
+      <td>Circuit</td>
+      <td>Behavior</td>
+    </tr>
+    <tr>
+      <td>CNTNAP2</td>
+      <td>Axonal transmembrane protein</td>
+      <td>PYR, INs</td>
+      <td>Reduced spine density, reduced excitatory and inhibitory synaptic input to PYR cells</td>
+      <td>Altered phase modulated spiking to delta and theta rhythms, reduced long-range cortico-cortical connectivity, and reduced local connectivity</td>
+      <td>Repetitive behaviors and cognitive inflexibility</td>
+    </tr>
+    <tr>
+      <td>Disc1</td>
+      <td>Intracellular scaffold</td>
+      <td>PYR, INs, glia</td>
+      <td>Reduced PV expression, change in Pr in INs, and reduced inhibitory input to PYR cells</td>
+      <td>Reduced feed-forward inhibition in thalamocortical circuits and elevated E/I ratio</td>
+      <td>Impairments in working memory, latent inhibition, and pre-pulse inhibition, and increased immobility in forced swim test</td>
+    </tr>
+    <tr>
+      <td>Dlx5/6</td>
+      <td>Transcription factor</td>
+      <td>MGE INs</td>
+      <td>Deficits in IN migration and reduced IN number</td>
+      <td>Altered gamma rhythms</td>
+      <td>Anxiety and congnitive inflexibility</td>
+    </tr>
+    <tr>
+      <td>Shank3</td>
+      <td>Excitatory synaptic scaffold</td>
+      <td>PYR</td>
+      <td>Reduced dendritic complexity, reduced spine density and PSD length, and reduced excitatory synaptic transmission</td>
+      <td>Reduced frontostriatal connectivity, reduced local and long-range cortical connectivity, and reduced prefrontal gray matter</td>
+      <td>Social deficits, anxiety, and repetitive behaviors</td>
+    </tr>
+  </tbody>
+</table>
+
 Though Dlx5 and Dlx6 have not been linked to specific disorders, Disc1 (disrupted-in schizophrenia-1) and Cntnap2 have similar functions in cortical interneurons. DISC1 is a scaffolding protein that interacts with numerous synaptic proteins and enzymes to regulate diverse processes including cortical development and synapse formation (Brandon and Sawa, 2011). A translocation in DISC1 was reported in a Scottish pedigree as a rare but penetrant risk factor for several mental illnesses including schizophrenia, depression, and bipolar disorder (Millar et al., 2000). Several mouse models of Disc1 have reductions in PV expression in prefrontal cortex (Niwa et al., 2010; Hikida et al., 2007; Shen et al., 2008; Ibi et al., 2010; Ayhan et al., 2011; Lee et al., 2013) and exhibit impairments in multiple cognitive domains (Niwa et al., 2010; Brandon and Sawa, 2011; Lee et al., 2013; Koike et al., 2006; Clapcote et al., 2007; Li et al., 2007; Kvajo et al., 2008). Until recently, however, the function of Disc1 in regulating mPFC inhibitory connectivity and circuit function remained unexplored.
 
 Using mice that are heterozygous for the Disc1 locus impairment (LI) allele, recent work revealed that Disc1 regulates the connectivity between mPFC pyramidal cells and PV interneurons. Beginning as early as P15, mPFC L2/3 pyramidal cells exhibit reduced inhibitory synaptic input that likely results from reductions in release probability in PV interneurons. These changes have consequences for circuit function, causing a significant decrease in the strength of feed-forward inhibition in the MD thalamus–mPFC pathway (Delevich et al., 2020), one of the most prominent sources of input to the mPFC (DeNardo et al., 2015). The authors also observed elevations in the E/I ratio in mPFC pyramidal neurons (Delevich et al., 2020), a property that is hypothesized to be associated with the pathobiology of neuropsychiatric diseases (Sohal and Rubenstein, 2019; Yizhar et al., 2011). Phenotypic analyses of Disc1 mutant mice have revealed deficits in cognition (Clapcote et al., 2007). Further, Disc1 has been shown to interact with cannabis exposure to induce deficits in learned fear, indicating possible vulnerability in the interaction between inhibitory neurotransmission and the EC system (Ballinger et al., 2015). Given the importance of mPFC inhibitory circuit function in these behavioral functions, the identified changes in inhibitory circuits may affect both cognitive and emotive functions.

@@ -27,37 +27,37 @@
 
 ### Affiliations
 
-1. https://ror.org/0524sp257 MRC Integrative Epidemiology Unit at the University of Bristol Bristol United Kingdom
-2. https://ror.org/0524sp257 Population Health Sciences, Bristol Medical School, University of Bristol Bristol United Kingdom
-3. https://ror.org/0524sp257 Translational Health Sciences, Bristol Medical School, University of Bristol Bristol United Kingdom
-4. https://ror.org/007ps6h72 Public Health Sciences Division, Fred Hutchinson Cancer Center Seattle United States
-5. https://ror.org/04cdgtt98 Division of Clinical Epidemiology and Aging Research, German Cancer Research Center (DKFZ) Heidelberg Germany
-6. https://ror.org/01txwsw02 Division of Preventive Oncology, German Cancer Research Center (DKFZ) and National Center for Tumor Diseases (NCT) Heidelberg Germany
-7. https://ror.org/04cdgtt98 German Cancer Consortium (DKTK), German Cancer Research Center (DKFZ) Heidelberg Germany
-8. https://ror.org/021018s57 Gastroenterology Department, Hospital Clínic, Institut d'Investigacions Biomèdiques August Pi i Sunyer (IDIBAPS), Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas (CIBEREHD), University of Barcelona Barcelona Spain
-9. https://ror.org/002pd6e78 Division of Gastroenterology, Massachusetts General Hospital and Harvard Medical School Boston United States
-10. https://ror.org/04b6nzv94 Channing Division of Network Medicine, Brigham and Women's Hospital and Harvard Medical School Boston United States
-11. https://ror.org/002pd6e78 Clinical and Translational Epidemiology Unit, Massachusetts General Hospital and Harvard Medical School Boston United States
-12. https://ror.org/042nb2s44 Broad Institute of Harvard and MIT Cambridge United States
-13. https://ror.org/03vek6s52 Department of Epidemiology, Harvard T.H. Chan School of Public Health, Harvard University Boston United States
-14. https://ror.org/03vek6s52 Department of Immunology and Infectious Diseases, Harvard T.H. Chan School of Public Health, Harvard University Boston United States
-15. https://ror.org/05kzjxq56 Department of Preventive Medicine, Chonnam National University Medical School Gwangju Republic of Korea
-16. https://ror.org/054gh2b75 Jeonnam Regional Cancer Center, Chonnam National University Hwasun Hospital Hwasun Republic of Korea
-17. https://ror.org/00kt3nk56 University of Hawaii Cancer Center Honolulu United States
-18. https://ror.org/0153tk833 Department of Family Medicine, University of Virginia Charlottesville United States
-19. https://ror.org/043mz5j54 Department of Epidemiology and Biostatistics, University of California, San Francisco San Francisco United States
-20. https://ror.org/043mz5j54 University of California, San Francisco Helen Diller Family Comprehensive Cancer Center, San Francisco San Francisco United States
-21. https://ror.org/03jp40720 Department of Pathology and Laboratory Medicine, Mayo Clinic Scottsdale United States
-22. https://ror.org/02pammg90 Department of Medicine, Samuel Oschin Comprehensive Cancer Institute, Cedars-Sinai Medical Center Los Angeles United States
-23. https://ror.org/03zb6nw87 Nutrition and Metabolism Branch, International Agency for Research on Cancer Lyon France
-24. https://ror.org/03zb6nw87 Nutrition and Metabolism Branch, International Agency for Research on Cancer Lyon France
-25. https://ror.org/041kmwe10 Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London London United Kingdom
+1. MRC Integrative Epidemiology Unit at the University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+2. Population Health Sciences, Bristol Medical School, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+3. Translational Health Sciences, Bristol Medical School, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+4. Public Health Sciences Division, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+5. Division of Clinical Epidemiology and Aging Research, German Cancer Research Center (DKFZ) Heidelberg Germany ([ROR:04cdgtt98](https://ror.org/04cdgtt98))
+6. Division of Preventive Oncology, German Cancer Research Center (DKFZ) and National Center for Tumor Diseases (NCT) Heidelberg Germany ([ROR:01txwsw02](https://ror.org/01txwsw02))
+7. German Cancer Consortium (DKTK), German Cancer Research Center (DKFZ) Heidelberg Germany ([ROR:04cdgtt98](https://ror.org/04cdgtt98))
+8. Gastroenterology Department, Hospital Clínic, Institut d'Investigacions Biomèdiques August Pi i Sunyer (IDIBAPS), Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas (CIBEREHD), University of Barcelona Barcelona Spain ([ROR:021018s57](https://ror.org/021018s57))
+9. Division of Gastroenterology, Massachusetts General Hospital and Harvard Medical School Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+10. Channing Division of Network Medicine, Brigham and Women's Hospital and Harvard Medical School Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
+11. Clinical and Translational Epidemiology Unit, Massachusetts General Hospital and Harvard Medical School Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+12. Broad Institute of Harvard and MIT Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+13. Department of Epidemiology, Harvard T.H. Chan School of Public Health, Harvard University Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+14. Department of Immunology and Infectious Diseases, Harvard T.H. Chan School of Public Health, Harvard University Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+15. Department of Preventive Medicine, Chonnam National University Medical School Gwangju Republic of Korea ([ROR:05kzjxq56](https://ror.org/05kzjxq56))
+16. Jeonnam Regional Cancer Center, Chonnam National University Hwasun Hospital Hwasun Republic of Korea ([ROR:054gh2b75](https://ror.org/054gh2b75))
+17. University of Hawaii Cancer Center Honolulu United States ([ROR:00kt3nk56](https://ror.org/00kt3nk56))
+18. Department of Family Medicine, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+19. Department of Epidemiology and Biostatistics, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+20. University of California, San Francisco Helen Diller Family Comprehensive Cancer Center, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+21. Department of Pathology and Laboratory Medicine, Mayo Clinic Scottsdale United States ([ROR:03jp40720](https://ror.org/03jp40720))
+22. Department of Medicine, Samuel Oschin Comprehensive Cancer Institute, Cedars-Sinai Medical Center Los Angeles United States ([ROR:02pammg90](https://ror.org/02pammg90))
+23. Nutrition and Metabolism Branch, International Agency for Research on Cancer Lyon France ([ROR:03zb6nw87](https://ror.org/03zb6nw87))
+24. Nutrition and Metabolism Branch, International Agency for Research on Cancer Lyon France ([ROR:03zb6nw87](https://ror.org/03zb6nw87))
+25. Department of Epidemiology and Biostatistics, School of Public Health, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
 
 † Corresponding author
 
 ## Abstract
 
-Recognizing the early signs of cancer risk is vital for informing prevention, early detection, and survival. To investigate whether changes in circulating metabolites characterize the early stages of colorectal cancer (CRC) development, we examined the associations between a genetic risk score (GRS) associated with CRC liability (72 single-nucleotide polymorphisms) and 231 circulating metabolites measured by nuclear magnetic resonance spectroscopy in the Avon Longitudinal Study of Parents and Children (N = 6221). Linear regression models were applied to examine the associations between genetic liability to CRC and circulating metabolites measured in the same individuals at age 8 y, 16 y, 18 y, and 25 y. The GRS for CRC was associated with up to 28% of the circulating metabolites at FDR-P < 0.05 across all time points, particularly with higher fatty acids and very-low- and low-density lipoprotein subclass lipids. Two-sample reverse Mendelian randomization (MR) analyses investigating CRC liability (52,775 cases, 45,940 controls) and metabolites measured in a random subset of UK Biobank participants (N = 118,466, median age 58 y) revealed broadly consistent effect estimates with the GRS analysis. In conventional (forward) MR analyses, genetically predicted polyunsaturated fatty acid concentrations were most strongly associated with higher CRC risk. These analyses suggest that higher genetic liability to CRC can cause early alterations in systemic metabolism and suggest that fatty acids may play an important role in CRC development. This work was supported by the Elizabeth Blackwell Institute for Health Research, University of Bristol, the Wellcome Trust, the Medical Research Council, Diabetes UK, the University of Bristol NIHR Biomedical Research Centre, and Cancer Research UK. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. This work used the computational facilities of the Advanced Computing Research Centre, University of Bristol - http://www.bristol.ac.uk/acrc/ .
+Background:Recognizing the early signs of cancer risk is vital for informing prevention, early detection, and survival.Methods:To investigate whether changes in circulating metabolites characterize the early stages of colorectal cancer (CRC) development, we examined the associations between a genetic risk score (GRS) associated with CRC liability (72 single-nucleotide polymorphisms) and 231 circulating metabolites measured by nuclear magnetic resonance spectroscopy in the Avon Longitudinal Study of Parents and Children (N = 6221). Linear regression models were applied to examine the associations between genetic liability to CRC and circulating metabolites measured in the same individuals at age 8 y, 16 y, 18 y, and 25 y.Results:The GRS for CRC was associated with up to 28% of the circulating metabolites at FDR-P < 0.05 across all time points, particularly with higher fatty acids and very-low- and low-density lipoprotein subclass lipids. Two-sample reverse Mendelian randomization (MR) analyses investigating CRC liability (52,775 cases, 45,940 controls) and metabolites measured in a random subset of UK Biobank participants (N = 118,466, median age 58 y) revealed broadly consistent effect estimates with the GRS analysis. In conventional (forward) MR analyses, genetically predicted polyunsaturated fatty acid concentrations were most strongly associated with higher CRC risk.Conclusions:These analyses suggest that higher genetic liability to CRC can cause early alterations in systemic metabolism and suggest that fatty acids may play an important role in CRC development.Funding:This work was supported by the Elizabeth Blackwell Institute for Health Research, University of Bristol, the Wellcome Trust, the Medical Research Council, Diabetes UK, the University of Bristol NIHR Biomedical Research Centre, and Cancer Research UK. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. This work used the computational facilities of the Advanced Computing Research Centre, University of Bristol - http://www.bristol.ac.uk/acrc/.
 
 ## Introduction
 
@@ -71,7 +71,7 @@ Here, we applied a reverse MR framework to identify circulating metabolites whic
 
 ## Methods
 
-## Study populations
+### Study populations
 
 This study uses data from two cohort studies: the Avon Longitudinal Study of Parents and Children (ALSPAC) offspring (generation 1) cohort (individual-level data) and the UK Biobank cohort (summary-level data); plus summary-level data from a genome-wide association study (GWAS) meta-analysis of CRC comprising the Genetics and Epidemiology of Colorectal Cancer Consortium (GECCO), Colorectal Transdisciplinary Study (CORECT), and Colon Cancer Family Registry (CCFR).
 
@@ -81,17 +81,17 @@ UK Biobank is a population-based cohort study based in 22 centres across the UK 
 
 The GWAS meta-analysis for CRC included up to 52,775 cases and 45,940 controls (Huyghe et al., 2019; Huyghe et al., 2021). This sample excluded cases and controls from UK Biobank to avoid potential bias due to sample overlap which may be problematic in MR analyses (Burgess et al., 2016). Cases were diagnosed by a physician and recorded overall and by site (colon, 28,736 cases; proximal colon, 14,416 cases; distal colon, 12,879 cases; and rectal, 14,150 cases). Colon cancer included proximal colon (any primary tumour arising in the caecum, ascending colon, hepatic flexure, or transverse colon), distal colon (any primary tumour arising in the pleenic flexure, descending colon, or sigmoid colon), and colon cases with unspecified site. Rectal cancer included any primary tumour arising in the rectum or rectosigmoid junction (Huyghe et al., 2019). Approximately 92% of participants in the overall CRC GWAS were white European (~8% were East Asian). All participants included in site-specific CRC analyses were of European ancestry. Imputation was performed using the Michigan imputation server and HRC r1.0 reference panel. Regression models were further adjusted for age, sex, genotyping platform, and genomic principal components as described previously (Huyghe et al., 2019).
 
-## Assessment of CRC genetic liability
+### Assessment of CRC genetic liability
 
 Genetic liability to CRC was based on single-nucleotide polymorphisms (SNPs) associated with CRC case status at genome-wide significance (p<5 × 10−8). A total of 108 independent SNPs reported by two major GWAS meta-analyses were eligible for inclusion in a CRC genetic risk score (GRS) (Huyghe et al., 2019; Law et al., 2019). The set of SNPs was filtered, excluding 36 SNPs that were in linkage disequilibrium based on R2 > 0.001 using the TwoSampleMR package (SNPs with the lowest p-values were retained) (Hemani et al., 2018). This left 72 SNPs independently associated with CRC (Supplementary file 1a), 65 of which were available in imputed ALSPAC genotype data post quality control. As GWAS of site-specific CRC have identified marked heterogeneity (Huyghe et al., 2021), GRS describing site-specific CRCs were constructed for sensitivity analyses using the same process outlined above. The GRS for colon cancer, rectal cancer, proximal colon cancer, and distal colon cancer were comprised of 38, 25, 20, and 24 variants, respectively (Supplementary file 1a). For overall CRC and site-specific CRC analyses, sensitivity analyses excluding any SNPs in the FADS cluster (i.e. within the gene regions of FADS1, FADS2, or FADS3) (Supplementary file 1a) were performed given a likely role for these SNPs in influencing circulating metabolite levels directly, in particular via lipid metabolism (i.e. not primarily due to CRC) (Lu et al., 2019; Zaytseva et al., 2018; ClinicalTrials.gov, 2022; Fhu and Ali, 2020; Chen et al., 2020; Kathiresan et al., 2009; Tanaka et al., 2009).
 
-## Assessment of circulating metabolites
+### Assessment of circulating metabolites
 
 Circulating metabolite measures were drawn from ALSPAC and UK Biobank using the same targeted metabolomics platform. In ALSPAC, participants provided non-fasting blood samples during a clinic visit while aged approximately 8 y, and fasting blood samples from clinic visits while aged approximately 16 y, 18 y, and 25 y. Proton nuclear magnetic resonance (1H-NMR) spectroscopy was performed on ethylenediaminetetraacetic acid (EDTA) plasma (stored at or below –70°C pre-processing) to quantify a maximum of 231 metabolites (Würtz et al., 2017). Quantified metabolites included the cholesterol and triglyceride content of lipoprotein particles; the concentrations and diameter/size of these particles; apolipoprotein B and apolipoprotein A-1 concentrations; as well as fatty acids and their ratios to total fatty acid concentration, branched chain and aromatic amino acids, glucose and pre-glycaemic factors including lactate and citrate, fluid balance factors including albumin and creatinine, and the inflammatory marker glycoprotein acetyls (GlycA). This metabolomics platform has limited coverage of fatty acids. In UK Biobank, EDTA plasma samples from 117,121 participants, a random subset of the original ∼500,000 who provided samples at assessment centres between 2006 and 2013, were analysed between 2019 and 2020 for levels of 249 metabolic traits (168 concentrations plus 81 ratios) using the same high-throughput 1H-NMR platform. Data pre-processing and QC steps are described previously (Würtz et al., 2017; Julkunen et al., 2021; Bycroft et al., 2018). To allow comparability between MR and GRS estimates, all metabolite measures were standardized and normalized using rank-based inverse normal transformation. For descriptive purposes in ALSPAC, body mass index (BMI) was calculated at each time point as weight (kg) divided by squared height (m2) based on clinic measures of weight to the nearest 0.1 kg using a Tanita scale and height measured in light clothing without shoes to the nearest 0.1 cm using a Harpenden stadiometer.
 
 CRC liability variants were combined into a GRS using PLINK 1.9, specifying the effect (risk raising) allele and coefficient (logOR) with estimates from the CRC GWAS used as external weights (Huyghe et al., 2019; Law et al., 2019). GRSs were calculated as the number of effect alleles (or dosages if imputed) at each SNP (0, 1, or 2) multiplied by its weighting, summing these, and dividing by the total number of SNPs used. Z-scores of GRS variables were calculated to standardize scoring.
 
-## Statistical approach
+### Statistical approach
 
 An overview of the study design is presented in Figure 1. To estimate the effect of increased genetic liability to CRC on circulating metabolites, we conducted a GRS analysis in ALSPAC and reverse two-sample MR analyses in UK Biobank. Estimates were interpreted within a ‘reverse MR’ framework (Holmes and Davey Smith, 2019), wherein results are taken to reflect ‘metabolic features’ of CRC liability which could capture causal or predictive metabolite–disease associations. To clarify the direction of metabolite–CRC associations, we additionally performed conventional ‘forward’ two-sample MR analyses to estimate the effect of circulating metabolites on CRC risk using large-scale GWAS data on metabolites and CRC.
 
@@ -99,15 +99,15 @@ An overview of the study design is presented in Figure 1. To estimate the effect
 
 **Figure 1.:** First, linear regression models were used to examine the relationship between genetic susceptibility to adult colorectal cancer (CRC) and circulating metabolites measured in the Avon Longitudinal Study of Parents and Children (ALSPAC) participants at age 8 y, 16 y, 18 y, and 25 y. Next, we performed a reverse Mendelian randomization analysis to identify metabolites influenced by CRC susceptibility in an independent population of adults. Finally, we performed a conventional (forward) Mendelian randomization analysis of circulating metabolites on CRC to identify metabolites causally associated with CRC risk. Consistent evidence across all three methodological approaches was interpreted to indicate a causal role for a given metabolite in CRC aetiology.
 
-## Associations of CRC liability with circulating metabolites in early life
+#### Associations of CRC liability with circulating metabolites in early life
 
 Separate linear regression models with robust standard errors were used to estimate coefficients and 95% confidence intervals (95% CIs) for associations of GRSs with each metabolite as a dependent variable measured on the same individuals at age 8 y, 16 y, 18 y, and 25 y, adjusted for sex and age at the time of metabolite assessment. To aid interpretations, estimates were multiplied by 0.693 (loge2) to reflect SD-unit differences in metabolites per doubling of genetic liability to CRC (Burgess and Labrecque, 2018). The Benjamini–Hochberg method was used to adjust p-values for multiple testing and an adjusted p-value of <0.05 was used as a heuristic for evidence for association given current sample sizes (Benjamini and Hochberg, 1995).
 
-## Reverse MR of the effects of CRC liability on circulating metabolites in middle adulthood
+#### Reverse MR of the effects of CRC liability on circulating metabolites in middle adulthood
 
 ‘Reverse’ MR analyses (Holmes and Davey Smith, 2019) were conducted using UK Biobank for outcome datasets in two-sample MR to examine the effect of CRC liability on circulating metabolites. SNP-outcome (metabolite) estimates were obtained from a GWAS of metabolites in UK Biobank (Clayton et al., 2022; Borges et al., 2022a). Prior to GWAS, all metabolite measures were standardized and normalized using rank-based inverse normal transformation. Genetic association data for metabolites were retrieved using the MRC IEU UK Biobank GWAS pipeline (Data.bris, 2022). Full summary statistics are available via the IEU Open GWAS project (Holmes and Davey Smith, 2019; Elsworth et al., 2020). Up to three statistical methods were used to generate reverse MR estimates of the effect of CRC liability on circulating metabolites using the TwoSampleMR package (Hemani et al., 2016): random-effects inverse variance weighted (IVW), weighted-median, and weighted-mode, which each make differing assumptions about directional pleiotropy and SNP heterogeneity (Bowden et al., 2016; Hartwig et al., 2017). The IVW MR model will produce biased effect estimates in the presence of horizontal pleiotropy, that is, where one or more genetic variant(s) included in the instrument affect the outcome by a pathway other than through the exposure. In the weighted median model, each genetic variant is weighted according to its distance from the median effect of all genetic variants. Thus, the weighted median model will provide an unbiased estimate when at least 50% of the information in an instrument comes from genetic variants that are not horizontally pleiotropic. The weighted mode model uses a similar approach but weights genetic instruments according to the mean effect. In this model, over 50% of the weight of the genetic instrument can be contributed to by genetic variants which are horizontally pleiotropic, but the most common amount of pleiotropy must be zero (known as the Zero Modal Pleiotropy Assumption [ZEMPA]) (Hartwig et al., 2017). As above, estimates were multiplied by 0.693 (loge2) to reflect SD-unit differences in metabolites per doubling of genetic liability to CRC (Burgess and Labrecque, 2018).
 
-## Forward MR of the effects of metabolites on CRC
+#### Forward MR of the effects of metabolites on CRC
 
 Forward MR analyses were conducted using summary statistics from UK Biobank for the same NMR-measured metabolites (SNP-exposure) and from GECCO/CORECT/CCFR as outlined above (SNP-outcome). We identified SNPs that were independently associated (R2 < 0.001 and p<5 × 10–8) with metabolites from a GWAS of 249 metabolites in UK Biobank described above. As before, we used up to three statistical methods to generate MR estimates of the effect of circulating metabolites on CRC risk (overall and site-specific): random-effects IVW, weighted median, and weighted mode. The Benjamini–Hochberg method was used to adjust p-values for multiple testing and an adjusted p-value of <0.05 was used as a heuristic for nominal evidence for a causal effect (Benjamini and Hochberg, 1995). MR outputs are beta coefficients representing the logOR for CRC per SD higher metabolite, exponentiated to reflect the OR for CRC per SD metabolite.
 
@@ -115,19 +115,79 @@ MR analyses were performed in R version 4.0.3 (R Development Core Team, 2021) an
 
 ## Results
 
-## Associations of CRC liability with circulating metabolites in early life
+### Associations of CRC liability with circulating metabolites in early life
 
 At the time the ALSPAC blood samples were taken, the mean age of participants was 7.5 y (N = 4767), 15.5 y (N = 2930), 17.8 y (N = 2613), and 24.5 y (N = 2559) for the childhood, early adolescence, late adolescence, and young adulthood time points, respectively. The proportion of participants which were male were 50.5, 47.4, 44.5, and 39.1% and mean BMI was 16.2, 21.4, 22.7, and 24.8 kg/m2 for each time point, respectively. The socio-demographic profile of ALSPAC offspring participants has been reported previously (Boyd et al., 2013). The mean and standard deviation (SD) values for metabolites on each measurement occasion in ALSPAC are shown in Supplementary file 1b.
 
 In the GRS analysis, there was no strong evidence of association of CRC liability with metabolites at age 8 y (Supplementary file 1c). At age 16 y, there was evidence for association with several lipid traits including higher cholesteryl esters to total lipids ratio in large low-density lipoprotein (LDL) (SD change per doubling CRC liability = 0.06, 95% CI = 0.02–0.10) and higher cholesterol in very small very low-density lipoprotein (VLDL) (SD change per doubling CRC liability = 0.06, 95% CI = 0.03–0.10). There was strong evidence for association with several traits at age 18 y including higher non-high-density lipoprotein (non-HDL) lipids, for example, a 1 doubling CRC liability was associated with higher levels of total cholesterol (SD change = 0.05 95% CI = 0.01–0.09), VLDL-cholesterol (SD change = 0.05, 95% CI = 0.01–0.09), LDL-cholesterol (SD change = 0.06, 95% CI = 0.02–0.09), apolipoproteins (apolipoprotein B [SD change = 0.06, 95% CI = 0.02–0.09]), and fatty acids (omega-3 [SD change = 0.08, 95% CI = 0.04–0.11], docosahexaenoic acid [DHA] [SD change = 0.05, 95% CI = 0.02–0.09]) (Supplementary file 1c). Figure 2 (Figure 2—figure supplements 1–6) shows results for all clinically validated metabolites. At age 25 y, there was no strong evidence of association of CRC liability with metabolites. In anatomical site-specific analyses, there was strong evidence for association of liability to colon cancer with omega-3 (SD change = 0.07, 95% CI = 0.03–0.11) and DHA (SD change = 0.07, 95% CI = 0.03–0.10) at age 18 y. There was little evidence for any associations at any other CRC site or age (Supplementary file 1c). When SNPs in the FADS cluster gene regions were excluded due to possible horizontal pleiotropy given the role of FADS in lipid metabolism, there was a reduction in strength of evidence for an association of liability to CRC with any metabolite measured, although estimates were in a largely consistent direction with the prior analysis (Supplementary file 1d).
 
-## Reverse MR of the effects of CRC liability on circulating metabolites in middle adulthood
+![Figure 2.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig2-v2.jpg)
+
+**Figure 2.:** Estimates shown are beta coefficients representing the SD difference in metabolic trait per doubling of genetic liability to colorectal cancer (purple, 8 y; turquoise, 16 y; red, 18 y; black, 25 y). Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Estimates shown are beta coefficients representing the SD difference in metabolic trait per doubling of genetic liability to colon cancer (purple, 8 y; turquoise, 16 y; red, 18 y; black, 25 y). Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Estimates shown are beta coefficients representing the SD difference in metabolic trait per doubling of genetic liability to proximal colon cancer (purple, 8 y; turquoise, 16 y; red, 18 y; black, 25 y). Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Estimates shown are beta coefficients representing the SD difference in metabolic trait per doubling of genetic liability to distal colon cancer (purple, 8 y; turquoise, 16 y; red, 18 y; black, 25 y). Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Estimates shown are beta coefficients representing the SD difference in metabolic trait per doubling of genetic liability to rectal cancer (purple, 8 y; turquoise, 16 y; red, 18 y; black, 25 y). Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Estimates shown are beta coefficients representing the SD difference in metabolic trait per doubling of genetic liability to colorectal cancer (purple, 8 y; turquoise, 16 y; red, 18 y; black, 25 y). Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Estimates shown are beta coefficients representing the SD difference in metabolic trait per doubling of genetic liability to colorectal cancer (purple, 8 y; turquoise, 16 y; red, 18 y; black, 25 y). Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
+
+### Reverse MR of the effects of CRC liability on circulating metabolites in middle adulthood
 
 All instrument sets from the reverse MR analysis had an F-statistic greater than 10 (minimum F-statistic = 36, median = 40), suggesting that our analyses did not suffer from weak instrument bias (Supplementary file 1e). There was little evidence of an association of CRC liability (overall or by anatomical site) on any of the circulating metabolites investigated, including when the SNP in the FADS gene region was excluded, based on our pre-determined cut-off of FDR-P < 0.05; however, the direction of effect estimates was largely consistent with those seen in ALSPAC GRS analyses, with higher CRC liability weakly associated with higher non-HDLs, lipoproteins, and fatty acid levels (Supplementary file 1f and g). Figure 3 (Figure 3—figure supplements 1–3) shows the results for clinically validated metabolites. In subsite stratified analyses, there was strong evidence for a causal effect of genetic liability to proximal colon cancer on several traits, including total fatty acids (SD change per doubling of liability = 0.02, 95% CI = 0.01–0.04) and omega-6 fatty acids (SD change per doubling of liability = 0.03, 95% CI = 0.01–0.05).
 
-## Forward MR for the effects of metabolites on CRC risk
+![Figure 3.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig3-v2.jpg)
+
+**Figure 3.:** Estimates shown are beta coefficients representing the SD-unit difference in metabolic trait per doubling of liability to colorectal cancer. Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Estimates shown are beta coefficients representing the SD-unit difference in metabolic trait per doubling of liability to colorectal cancer by site (colorectal, colon, distal colon, proximal colon, and rectal cancer). Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Estimates shown are beta coefficients representing the SD-unit difference in metabolic trait per doubling of liability to colorectal cancer. Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Estimates shown are beta coefficients representing the SD-unit difference in metabolic trait per doubling of liability to colorectal cancer by site (colorectal, colon). Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
+
+### Forward MR for the effects of metabolites on CRC risk
 
 All instrument sets from the forward MR analysis had an F-statistic greater than 10 (minimum F-statistic = 54, median = 141), suggesting that our analyses were unlikely to suffer from weak instrument bias (Supplementary file 1h and i). There was strong evidence for an effect of several fatty acid traits on overall CRC risk, including of omega-3 fatty acids (CRC OR = 1.13, 95% CI = 1.06–1.21), DHA (OR CRC = 1.76, 95% CI = 1.08–1.28), ratio of omega-3 fatty acids to total fatty acids (OR CRC = 1.18, 95% CI = 1.11–1.25), ratio of DHA to total fatty acids (CRC OR = 1.20, 95% CI = 1.10–1.31), and ratio of omega-6 fatty acids to omega-3 fatty acids (CRC OR = 0.86, 95% CI = 0.80–9.13) (Supplementary file 1j, Figure 4, Figure 4—figure supplements 1–3). These estimates were overlapping with variable precision in MR sensitivity models. When SNPs in the FADS gene region were excluded, there was little evidence for a causal effect of any metabolite investigated on CRC risk based on the predetermined FDR-P cut-of off <0.05, although the directions of effect estimates were consistent with previous analyses (Supplementary file 1k).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig4-v2.jpg)
+
+**Figure 4.:** Estimates shown are beta coefficients representing the logOR for colorectal cancer per SD metabolite. Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Estimates shown are ORs for colorectal cancer per SD metabolite. Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Estimates shown are ORs for colorectal cancer per SD metabolite. Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/87894/elife-87894-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Estimates shown are ORs for colorectal cancer per SD metabolite. Filled point estimates are those that pass a Benjamini–Hochberg FDR multiple-testing correction (FDR < 0.05).
 
 In anatomical subtype-stratified analyses, evidence was the strongest for an effect of fatty acid traits on higher CRC risk, and this appeared specific to the distal colon, for example, omega-3 (distal CRC OR = 1.20, 95% CI = 1.09–1.32), and ratio of DHA to total fatty acids (distal colon OR = 1.29, 95% CI = 1.16–1.43). There was also evidence of a negative effect of ratio of omega-6 to omega-3 fatty acids (distal CRC OR = 0.80, 95% CI = 0.74–0.88) and a positive effect of ratio of omega-3 fatty acids to total fatty acids (distal CRC = 1.24, 95% CI = 1.15–1.35; seen also for proximal CRC OR = 1.15, 95% CI = 1.07–1.23) (Supplementary file 1j). These estimates were also directionally consistent in MR sensitivity models.
 
@@ -145,10 +205,10 @@ Our analyses stratified by anatomical subsite highlighted fatty acids as being a
 
 In our forward MR analyses, we were unable to replicate the findings of three previous MR studies which found evidence for a causal effect of circulating linoleic acid levels on CRC development in terms of strength of evidence, though the direction of the effect estimate was similar to previous studies (May Wilson et al., 2017; Khankari et al., 2020; Liyanage et al., 2019). This is surprising as all three previous analyses had a much smaller sample size than that included in our analysis (the largest had sample size of 24,748 for exposure vs 118,466 presently; and 11,016 cases and 13,732 controls for outcome vs 52,775 cases and 45,940 controls presently). Our analysis using updated genetic instruments to proxy fatty acids may be more successful in accurately instrumenting heterogenous phenotypes such as metabolite levels compared with previous analyses. All other findings in our forward MR analysis are consistent with previous MR studies where they exist (Rodriguez-Broadbent et al., 2017; Cornish et al., 2020; Luo et al., 2021).
 
-## Limitations
+### Limitations
 
 The limitations of this study include firstly the relatively small sample size included in the ALSPAC analysis, which may have implications for power and precision. Secondly, mostly due to the longitudinal nature of the ALSPAC study, our sample at each time point is composed of slightly different individuals. This could be influencing our results and should be taken into account when comparing across time points. Thirdly, our analyses involving genetic instruments for CRC liability may have suffered from horizontal pleiotropy, even after excluding genetic variants in or near the FADS gene. Fourthly, our analyses were mostly restricted to white Europeans, which limits the generalizability of our findings to other populations. Fifthly, our analysis would benefit from being repeated with sex-stratified data. Although such GWAS results for metabolites are not currently available, the data to perform such GWAS are available in UK Biobank for future analyses. Sixthly, for our forward MR analysis, we used the UK Biobank for our exposure data. The UK Biobank has a median age of 58 at the time these measurements were taken, meaning statin use may be widespread in this population, which could be attenuating our effect estimates. Future work could attempt to replicate our analysis in a population with lower prevalence of statins intake. Finally, we included only metabolites measured using NMR. Confirming whether our results replicate using metabolite data measured with an alternative method would strengthen our findings.
 
-## Conclusions
+### Conclusions
 
 Our analysis provides evidence that genetic liability to CRC is associated with altered levels of metabolites at certain ages, some of which may have a causal role in CRC development. Further investigating the role of PUFAs in CRC risk and circulating cholesterol in CRC prediction may be promising avenues for future research.

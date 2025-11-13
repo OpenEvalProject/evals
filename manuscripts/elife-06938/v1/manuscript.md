@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.06938.001 The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by replicating selected results from a substantial number of high-profile papers in the field of cancer biology published between 2010 and 2012. This Registered report describes the proposed replication plan of key experiments from ‘Interactions between cancer stem cells and their niche govern metastatic colonization’ by Malanchi and colleagues, published in Nature in 2012 ( Malanchi et al., 2012 ). The key experiments that will be replicated are those reported in Figures 2H, 3A, 3B, and S13. In these experiments, Malanchi and colleagues analyze messenger RNA levels of periostin (POSTN) in pulmonary fibroblasts, endothelial cells, and immune cells isolated from mice with micrometastases to determine which cell type is producing POSTN in the metastatic niche (Figure 2H; Malanchi et al., 2012 ). Additionally, they examine MMTV-PyMT control or POSTN null mice to test the effect of POSTN on primary tumor growth and metastasis (Figures 3A, 3B, and S13; Malanchi et al., 2012 ). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange , and the results of the replications will be published in eLife . DOI: http://dx.doi.org/10.7554/eLife.06938.001
+The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by replicating selected results from a substantial number of high-profile papers in the field of cancer biology published between 2010 and 2012. This Registered report describes the proposed replication plan of key experiments from ‘Interactions between cancer stem cells and their niche govern metastatic colonization’ by Malanchi and colleagues, published in Nature in 2012 (Malanchi et al., 2012). The key experiments that will be replicated are those reported in Figures 2H, 3A, 3B, and S13. In these experiments, Malanchi and colleagues analyze messenger RNA levels of periostin (POSTN) in pulmonary fibroblasts, endothelial cells, and immune cells isolated from mice with micrometastases to determine which cell type is producing POSTN in the metastatic niche (Figure 2H; Malanchi et al., 2012). Additionally, they examine MMTV-PyMT control or POSTN null mice to test the effect of POSTN on primary tumor growth and metastasis (Figures 3A, 3B, and S13; Malanchi et al., 2012). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange, and the results of the replications will be published in eLife.
 
 ## Introduction
 
@@ -33,91 +33,512 @@ Malanchi and colleagues show that POSTN is expressed primarily in fibroblasts an
 
 ## Materials and methods
 
-## Protocol 1: tumor size and metastases of MMTV-PyMT+/tg; Postn+/+ and MMTV-PyMT+/tg; Postn−/− mice
+### Protocol 1: tumor size and metastases of MMTV-PyMT+/tg; Postn+/+ and MMTV-PyMT+/tg; Postn−/− mice
 
 This experiment examines the requirement of POSTN in metastatic colonization using the MMTV-PyMT mouse model. Female mice carrying the MMTV-PyMT transgene that are either Postn+/+ or Postn−/− will be examined for changes in primary tumor size and the number of spontaneously formed pulmonary macrometastases, which is a replication of the experiment reported in Figures 3A, 3B, and Supplemental Figure 13. This experiment will also generate lung tissue from MMTV-PyMT+/tg; Postn+/+ female mice that are positive with metastatic disease for use in Protocol 2.
 
-## Sampling
+#### Sampling
 
 ■ Experiment has 2 cohorts:◯ Cohort 1: MMTV-PyMT+/tg; Postn+/+ female mice.◯ Cohort 2: MMTV-PyMT+/tg; Postn−/− female mice.■ Experiment will use the following number of mice per cohort:◯ Cohort 1: 14 mice.◯ Cohort 2: 15 mice.Note: Derive mice from consecutive litters and analyze development of tumors and metastases until the two cohorts reach the indicated numbers.■ To account for outlier data, as presented in the original publication, 5% and 10% more mice were added to each cohort, respectively, to ensure at least 13 mice survive each cohort for a minimum power of 80%.◯ See ‘Power calculations’ section for details.
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #CommentsMMTV-PyMT+/tg; Postn+/− FVB male mouseAnimal modelOriginal labn/aFrom original labMMTV-PyMT+/tg; Postn−/− FVB male mouseAnimal modelOriginal labn/aFrom original labPostn−/− FVB female miceAnimal modelOriginal labn/aFrom original labPostn+/+ FVB female miceAnimal modelCharles RiverStrain code: 207Original was from FrancePureGenome tissue DNA extraction kitKitEMD Millipore72635Original not specifiedMMTV-PYVT384 primerNucleic acidSequences provided by original authors; specific brand information will be left up to the discretion of the replicating lab and recorded laterMMTV-PYVT385 primerNucleic acidPostn-5′ primerNucleic acidPostn-3′ primerNucleic acidINT-as primerNucleic aciddNTPs (10 mM)ChemicalSigma–AldrichD7295Included during communication with authors. Original brand not specifiedTaq-polymerase (with tubes of 10× PCR buffer and 25 mM MgCl2)EnzymeSigma–AldrichD4545Included during communication with authors. Original brand not specifiedPCR systemEquipmentApplied Biosystems StepOneOriginal not specifiedIsofluraneChemicalSpecific brand information will be left up to the discretion of the replicating lab and recorded laterStereoZoom stereomicroscope, zoom range 0.8×–4.0×InstrumentBausch & Lombn/aOriginal a Leica M205 FA
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MMTV-PyMT+/tg; Postn+/− FVB male mouse</td>
+      <td>Animal model</td>
+      <td>Original lab</td>
+      <td>n/a</td>
+      <td>From original lab</td>
+    </tr>
+    <tr>
+      <td>MMTV-PyMT+/tg; Postn−/− FVB male mouse</td>
+      <td>Animal model</td>
+      <td>Original lab</td>
+      <td>n/a</td>
+      <td>From original lab</td>
+    </tr>
+    <tr>
+      <td>Postn−/− FVB female mice</td>
+      <td>Animal model</td>
+      <td>Original lab</td>
+      <td>n/a</td>
+      <td>From original lab</td>
+    </tr>
+    <tr>
+      <td>Postn+/+ FVB female mice</td>
+      <td>Animal model</td>
+      <td>Charles River</td>
+      <td>Strain code: 207</td>
+      <td>Original was from France</td>
+    </tr>
+    <tr>
+      <td>PureGenome tissue DNA extraction kit</td>
+      <td>Kit</td>
+      <td>EMD Millipore</td>
+      <td>72635</td>
+      <td>Original not specified</td>
+    </tr>
+    <tr>
+      <td>MMTV-PYVT384 primer</td>
+      <td>Nucleic acid</td>
+      <td rowspan="5" colspan="3">Sequences provided by original authors; specific brand information will be left up to the discretion of the replicating lab and recorded later</td>
+    </tr>
+    <tr>
+      <td>MMTV-PYVT385 primer</td>
+      <td>Nucleic acid</td>
+    </tr>
+    <tr>
+      <td>Postn-5′ primer</td>
+      <td>Nucleic acid</td>
+    </tr>
+    <tr>
+      <td>Postn-3′ primer</td>
+      <td>Nucleic acid</td>
+    </tr>
+    <tr>
+      <td>INT-as primer</td>
+      <td>Nucleic acid</td>
+    </tr>
+    <tr>
+      <td>dNTPs (10 mM)</td>
+      <td>Chemical</td>
+      <td>Sigma–Aldrich</td>
+      <td>D7295</td>
+      <td>Included during communication with authors. Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Taq-polymerase (with tubes of 10× PCR buffer and 25 mM MgCl2)</td>
+      <td>Enzyme</td>
+      <td>Sigma–Aldrich</td>
+      <td>D4545</td>
+      <td>Included during communication with authors. Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>PCR system</td>
+      <td>Equipment</td>
+      <td>Applied Biosystems StepOne</td>
+      <td></td>
+      <td>Original not specified</td>
+    </tr>
+    <tr>
+      <td>Isoflurane</td>
+      <td>Chemical</td>
+      <td colspan="3">Specific brand information will be left up to the discretion of the replicating lab and recorded later</td>
+    </tr>
+    <tr>
+      <td>StereoZoom stereomicroscope, zoom range 0.8×–4.0×</td>
+      <td>Instrument</td>
+      <td>Bausch &amp; Lomb</td>
+      <td>n/a</td>
+      <td>Original a Leica M205 FA</td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+#### Procedure
 
 Breed MMTV-PyMT+/tg; Postn+/− or MMTV-PyMT+/tg; Postn−/− male mice with Postn+/+ and Postn−/− female mice to obtain MMTV-PyMT+/tg; Postn+/+ control and MMTV-PyMT+/tg; Postn−/− experimental female mice, respectively.a. Do not use MMTV-PyMT female mice for breeding as they develop mammary tumors. Additionally, MMTV-PyMT+/tg males cannot be crossed with MMTV-PyMT+/tg females as the progeny will have a double dose of the oncogene and develop extremely aggressive tumors that cannot be used in this study.b. For generation of the MMTV-PyMT+/tg; Postn−/− experimental female mice, male MMTV-PyMT+/tg; Postn−/− male mice will be crossed with Postn−/− female mice.c. For generation of the MMTV-PyMT+/tg; Postn+/+ control female mice, the MMTV-PyMT+/tg; Postn+/− male mouse will be crossed to Postn+/+ female mice to obtain MMTV-PyMT+/tg; Postn+/+ male mice that will then be crossed with Postn+/+ female mice.d. As mice obtained were found to contain agents, cross-foster rederivation of mice will be performed based on the following procedure (Artwohl et al., 2008). Donor dam will be placed with male mice 5 days a week Monday afternoon to Friday morning and plugs will be checked daily. When dam is found plugged, she should be single housed and date of plug will be recorded as a sign of pregnancy. Once the pregnancy is confirmed, a timed pregnant mouse will be ordered to use as a foster recipient. Foster recipients will ideally have a different fur coat color than the donor dam, so the identification of the fostered pups will be easier. Consequently, the donor and recipient dams will be removed from their cages and placed in separate clean cages. The litter to be fostered will gently be picked up and cleaned with alcohol and passed to a clean tech to be mixed with dirty bedding, nestlet, and other pups from the recipient dam's cage. When mixing the pups, they will be gently arranged in the palm of the hand, in contact with nestlet and bedding from the recipient dam's cage to transfer the recipient dam's scent. All pups will be placed back in the nest and the recipient dam will be returned to the cage. The cage will be monitored visually every 15 min for the first hour; if there is evidence of rejection by the dam (agitation, carrying the pups around), the pups will be removed from the cage and humanely euthanized. The cages will be visually assessed at least twice daily and will not be disturbed for the first 72 hr after fostering in order to avoid any potential cannibalism. All experimental animals will not be treated with Ivermectin or Fenbendazole, as these could change a number of immune parameters affecting tumor growth and take rate.Extract genomic DNA from mouse tail snips using DNA extraction kit following manufacturer instructions.a. From manufacturer's instructions follow ‘Solid Tissue’ assay protocol.Genotype mice by PCR with MMTV-PyMT and Postn primers.a. MMTV-PYVT384 primer: GGA AGC AAG TAC TTC ACA ACG G.i. This primer is one nucleotide different than what is listed on the Jackson Laboratory information for stock number 002374 (FVB/N-Tg(MMTV-PyVT)634Mul/J), but is used successfully by the original lab.b. MMTV-PYVT385 primer: GGA AAG TCA CTA GGA GCA GGG.c. Postn-5′ primer: GGT GCT TCT GTA AGG CCA TC.d. Postn-3′ primer: GTG AGC CAG GAC CTT GTC ATA.e. INT-as primer: AGC ACT GAC TGC GTT AGC AA.f. Genotyping will be determined by examining both amplicon size and presence.i. MMTV-PyMT conditions (oncogene = 556 bp band):10× PCR buffer1.50 µl50 mM MgCl20.45 µl10 mM dNTPs0.30 µlMMTV-PYVT384 primer0.10 µlMMTV-PYVT385 primer0.10 µlTaq-polymerase0.20 µlH2OBring up to 13 µlDNA (1:20 dilution)2 µlCycling parameters:94°C pause.94°C for 3 min.12 cycles of:i. 96°C for 20 s.ii. 64°C for 30 s.iii. 72°C for 65 s.25 cycles of:i. 94°C for 20 s.ii. 58°C for 30 s.iii. 72°C for 35 s.72°C for 2 min.20°C pause.ii. Postn conditions (WT = 245 bp band; KO = 182 bp band):10× PCR buffer1.50 µl50 mM MgCl20.45 µl10 mM dNTPs0.30 µlPostn-5′ primer0.10 µlPostn-3′ primer0.10 µlINT-as primer0.10 µlTaq-polymerase0.20 µlH2OBring up to 13 µlDNA (1:20 dilution)2 µlCycling parameters:94°C pause.94°C for 1 min.45 cycles of:i. 96°C for 6 s.ii. 59°C for 20 s.iii. 72°C for 30 s.20°C pause.Separate and image amplicons by agarose gel electrophoresis.Monitor MMTV-PyMT+/tg; Postn+/+ and MMTV-PyMT+/tg; Postn−/− female mice for tumor development and keep until tumor disease is fully developed and the metastatic disease is estimated to occur.a. Record age of mice when palpable tumors are detected.i. Multiple tumors will form and grow until they reach a significant size.b. Monitor health status of mice. If mice have to be euthanized prior to reaching fully developed primary tumors exclude mice from study and record reason for euthanasia.c. Tumor disease is fully developed when primary tumors have developed in all mammary glands with an average weight around 1 g per tumor.i. Both cohorts of mice will develop tumors approximately within 3–4 months of age and up to 6 months.ii. Record mice with tumors that are large and form close to the neck as these may give metastasis more efficiently.d. Record age of mice when sacrificed and determine time gap between detection and fully developed tumor.i. Method of euthanasia is isoflurane overexposure (2–5% at 1 l/min) followed by cervical dislocation.Dissect primary tumor and lung tissue from mice.a. Weigh primary tumors.i. Record total weight of all primary tumors together for each mouse.ii. Record the number of primary tumors for each mouse.iii. Divide total weight of all primary tumors by number of primary tumors to obtain a reference primary tumor weight for each mouse.Dissect lungs and blindly count the number of macrometastatic nodules on every side of all separated lobes of the lung using a stereomicroscope.a. Do not fix or stain tissues.b. Quickly count large macrometastatic nodules (≥1 mm in diameter) on all sides.Immediately after counting macrometastasis, use the first six lungs identified from MMTV-PyMT+/tg;Postn+/+ female mice that are positive with metastatic disease for further analysis (Protocol 2).a. Should be approximately 5–6 months of age.i. Exclude lungs from mice that are euthanized before this age.b. Use mice with detectable metastatic disease and record number of macrometastases in each lung used and the total weight of the primary mammary tumors.
 
-## Deliverables
+##### Deliverables
 
 ■ Data to be collected:◯ Mouse health records (age of palatable tumor detection, reason for early euthanasia and exclusion of mice, age of mice with fully developed tumor when sacrificed, mice with large tumors formed close to the neck).◯ Gel images of PCR genotyping (Compare to Figure S10).◯ Number of primary tumors formed and total weight of all tumors for each mouse.◯ Raw numbers and box and whisker plot of weight of primary tumors (total weight divided by number of primary tumors) for each mouse. (Compare to Figure 3A and S13).◯ Raw numbers of pulmonary macrometastases for each mouse (Compare to Figure 3B and S13).◯ Box and whisker plot of number of pulmonary macrometastases for each mouse. (Compare to Figure 3B and S13).■ Sample delivered for further analysis:◯ Lungs for FACS and qRT-PCR analysis for Protocol 2.
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
 The original paper reported outliers in each cohort of mice. As these appear to have not been included in the original analysis, we will also remove any outliers from the analysis for comparison. But the analysis will also be performed with all data values. Outliers are determined as 1.5 times the interquartile range.
 
 This replication attempt will perform the following statistical analysis listed below:■ Statistical analysis:◯ Primary tumor weight in MMTV-PyMT+/tg;Postn+/+ mice relative to MMTV-PyMT+/tg;Postn−/− mice.Unpaired two-tailed t-test.◯ Number of pulmonary macrometastases in MMTV-PyMT+/tg;Postn+/+ mice relative to MMTV-PyMT+/tg;Postn−/− mice.Unpaired two-tailed t-test.◯ The replication attempt will also perform negative binomial regression analysis of the macrometastases count data.■ Meta-analysis of effect sizes:◯ Compute the effect sizes of each comparison, compare them against the reported effect size in the original paper, and use a meta-analytic approach to combine the original and replication effects, which will be presented as a forest plot.
 
-## Known differences from the original study
+#### Known differences from the original study
 
 The mice in the original study were from an 8th generation backcross to the FVB line, thus it was on a mixed background, while the mice used in the replication will be from a pure 10th generation backcross to the FVB line. This may make a difference in the effect size and will be included in the discussion of the results of the replication. Additionally, mice will undergo cross-foster rederivation to attempt to remove agents currently associated with the mice. All known differences of materials and reagents are listed in the materials and reagents section above with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 Mice will undergo cross-foster rederivation to attempt to remove agents currently associated with the mice that could alter immune parameters affecting tumor growth and take rate. All data obtained from the experiment—raw data, data analysis, control data, and quality control data—will be made publicly available, either in the published manuscript or as an open access data set available on the Open Science Framework project page for this study (https://osf.io/vseix).
 
-## Protocol 2: POSTN expression in lung stroma with macrometastases
+### Protocol 2: POSTN expression in lung stroma with macrometastases
 
 This experiment uses quantitative PCR to detect the expression level of POSTN in CD34+/CD31− pulmonary fibroblasts, CD31+ endothelial cells, and CD45+ immune cells isolated from lungs of mice with macrometastases, which is a replication of the experiment reported in Figure 2H.
 
-## Sampling
+#### Sampling
 
 ■ Experiment will use six lungs for a minimum power of 82%.◯ See appendix for detailed power calculations.■ Each lung will be isolated into 3 cohorts:◯ Cohort 1: CD34+/CD31− pulmonary fibroblasts from MMTV-PyMT+/tg;Postn+/+ mice.◯ Cohort 2: CD31+ endothelial cells from MMTV-PyMT+/tg;Postn+/+ mice.◯ Cohort 3: CD45+ immune cells from MMTV-PyMT+/tg;Postn+/+ mice.Each cohort will be sorted using the following antibodies:◯ CD45.◯ CD31.◯ CD34.◯ Isotype controls.◯ Unstained control.■ Each cohort will be analyzed for the following gene expression levels:◯ POSTN.◯ GAPDH.
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #Comments50 ml tubesLabwareSigma–AldrichCLS430290Originally not specifiedHank's balanced salt solution (HBSS)BufferSigma–AldrichH6648Included during communication with authors. Original brand not specifiedLiberase TMEnzymeRoche05401127001–Liberase THEnzymeRoche05401151001–DNaseEnzymeSigma–AldrichDN25–Phosphate buffered saline (PBS) without MgCl2 and CaCl2BufferSigma–AldrichD8537Original brand not specifiedEDTAChemicalIncluded during communication with authors. Specific brand information will be left up to the discretion of the replicating lab and recorded laterBovine serum albumin (BSA)ChemicalSigma–AldrichA3803Included during communication with authors. Original brand not specified100 µm cell strainerLabwareCorning431752Original brand not specified2.5 ml syringeLabwareIncluded during communication with authors. Specific brand information will be left up to the discretion of the replicating lab and recorded laterFetal bovine serum (FBS)Cell cultureSigma–AldrichF0392Original brand not specifiedPolypropylene (opaque) FACS tubesLabwareSpecific brand information will be left up to the discretion of the replicating lab and recorded laterCD45 (clone 30-F11) PE-Cy5.5 antibody (rat IgG2b, kappa)AntibodieseBioscience35-0451-80Use at 1:300CD31 (clone 390) Pac.Blue antibody (rat IgG2a, kappa)AntibodiesInvitrogenRM5228Use at 1:200CD34 (clone RAM34) PE antibody (rat IgG2a, kappa)AntibodiesBD Pharmingen551387Use at 1:50Rat IgG2b, kappa isotype control PE-Cy5.5AntibodieseBioscience35-4031Use at 1:300 dilution. Originally not specifiedRat IgG2a, kappa isotype control Pac.BlueAntibodiesInvitrogenR2a28Use at 1:200 dilution. Originally not specifiedRat IgG2a, kappa isotype control PEAntibodiesBD Pharmingen553930Use at 1:50 dilution. Originally not specified7AADChemicalBioLegend420403Use at 1:1000. Original brand not specifiedFlow cytometric cell sorterInstrumentBD PharmingenFACSAria IIOriginal from Beckman CoulterFlowJoSoftware–––TRI reagentChemicalSigma–AldrichT9424Replaces RNA extraction kit from QiagenOligo dT (18)Nucleic acidLife TechnologiesSO132Included during communication with authors. Original brand not specifiedOligo dT (23), AnchoredNucleic acidSigma–AldrichO4387Included during communication with authors. Original was Oligo dT (24). Original brand not specifieddNTPs (10 mM)ChemicalSigma–AldrichD7295Included during communication with authors. Original brand not specified25 mM MgCl2ChemicalSigma–AldrichM8787 (part of Sigma–Aldrich D4545 from Protocol 1)Included during communication with authors. Original brand not specifiedSuperscript II (with tube of 5× buffer and 100 mM DTT)EnzymeLife Technologies18064-014Included during communication with authorsRNase inhibitorEnzymeSigma–AldrichR1274Included during communication with authors. Original was RNasinPOSTN 5′ primerNucleic acidSequences provided by original authors; specific brand information will be left up to the discretion of the replicating lab and recorded laterPOSTN 3′ primerNucleic acidGAPDH 5′ primerNucleic acidGAPDH 3′ primerNucleic acidPower SYBR green PCR master mixBufferLife Technologies4368577–Real-time PCR systemEquipmentApplied Biosystems StepOne–Original was from Roche or a StepOnePlus from Applied Biosystems
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>50 ml tubes</td>
+      <td>Labware</td>
+      <td>Sigma–Aldrich</td>
+      <td>CLS430290</td>
+      <td>Originally not specified</td>
+    </tr>
+    <tr>
+      <td>Hank's balanced salt solution (HBSS)</td>
+      <td>Buffer</td>
+      <td>Sigma–Aldrich</td>
+      <td>H6648</td>
+      <td>Included during communication with authors. Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Liberase TM</td>
+      <td>Enzyme</td>
+      <td>Roche</td>
+      <td>05401127001</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Liberase TH</td>
+      <td>Enzyme</td>
+      <td>Roche</td>
+      <td>05401151001</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>DNase</td>
+      <td>Enzyme</td>
+      <td>Sigma–Aldrich</td>
+      <td>DN25</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Phosphate buffered saline (PBS) without MgCl2 and CaCl2</td>
+      <td>Buffer</td>
+      <td>Sigma–Aldrich</td>
+      <td>D8537</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>EDTA</td>
+      <td>Chemical</td>
+      <td colspan="3">Included during communication with authors. Specific brand information will be left up to the discretion of the replicating lab and recorded later</td>
+    </tr>
+    <tr>
+      <td>Bovine serum albumin (BSA)</td>
+      <td>Chemical</td>
+      <td>Sigma–Aldrich</td>
+      <td>A3803</td>
+      <td>Included during communication with authors. Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>100 µm cell strainer</td>
+      <td>Labware</td>
+      <td>Corning</td>
+      <td>431752</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>2.5 ml syringe</td>
+      <td>Labware</td>
+      <td colspan="3">Included during communication with authors. Specific brand information will be left up to the discretion of the replicating lab and recorded later</td>
+    </tr>
+    <tr>
+      <td>Fetal bovine serum (FBS)</td>
+      <td>Cell culture</td>
+      <td>Sigma–Aldrich</td>
+      <td>F0392</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Polypropylene (opaque) FACS tubes</td>
+      <td>Labware</td>
+      <td colspan="3">Specific brand information will be left up to the discretion of the replicating lab and recorded later</td>
+    </tr>
+    <tr>
+      <td>CD45 (clone 30-F11) PE-Cy5.5 antibody (rat IgG2b, kappa)</td>
+      <td>Antibodies</td>
+      <td>eBioscience</td>
+      <td>35-0451-80</td>
+      <td>Use at 1:300</td>
+    </tr>
+    <tr>
+      <td>CD31 (clone 390) Pac.Blue antibody (rat IgG2a, kappa)</td>
+      <td>Antibodies</td>
+      <td>Invitrogen</td>
+      <td>RM5228</td>
+      <td>Use at 1:200</td>
+    </tr>
+    <tr>
+      <td>CD34 (clone RAM34) PE antibody (rat IgG2a, kappa)</td>
+      <td>Antibodies</td>
+      <td>BD Pharmingen</td>
+      <td>551387</td>
+      <td>Use at 1:50</td>
+    </tr>
+    <tr>
+      <td>Rat IgG2b, kappa isotype control PE-Cy5.5</td>
+      <td>Antibodies</td>
+      <td>eBioscience</td>
+      <td>35-4031</td>
+      <td>Use at 1:300 dilution. Originally not specified</td>
+    </tr>
+    <tr>
+      <td>Rat IgG2a, kappa isotype control Pac.Blue</td>
+      <td>Antibodies</td>
+      <td>Invitrogen</td>
+      <td>R2a28</td>
+      <td>Use at 1:200 dilution. Originally not specified</td>
+    </tr>
+    <tr>
+      <td>Rat IgG2a, kappa isotype control PE</td>
+      <td>Antibodies</td>
+      <td>BD Pharmingen</td>
+      <td>553930</td>
+      <td>Use at 1:50 dilution. Originally not specified</td>
+    </tr>
+    <tr>
+      <td>7AAD</td>
+      <td>Chemical</td>
+      <td>BioLegend</td>
+      <td>420403</td>
+      <td>Use at 1:1000. Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Flow cytometric cell sorter</td>
+      <td>Instrument</td>
+      <td>BD Pharmingen</td>
+      <td>FACSAria II</td>
+      <td>Original from Beckman Coulter</td>
+    </tr>
+    <tr>
+      <td>FlowJo</td>
+      <td>Software</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>TRI reagent</td>
+      <td>Chemical</td>
+      <td>Sigma–Aldrich</td>
+      <td>T9424</td>
+      <td>Replaces RNA extraction kit from Qiagen</td>
+    </tr>
+    <tr>
+      <td>Oligo dT (18)</td>
+      <td>Nucleic acid</td>
+      <td>Life Technologies</td>
+      <td>SO132</td>
+      <td>Included during communication with authors. Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Oligo dT (23), Anchored</td>
+      <td>Nucleic acid</td>
+      <td>Sigma–Aldrich</td>
+      <td>O4387</td>
+      <td>Included during communication with authors. Original was Oligo dT (24). Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>dNTPs (10 mM)</td>
+      <td>Chemical</td>
+      <td>Sigma–Aldrich</td>
+      <td>D7295</td>
+      <td>Included during communication with authors. Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>25 mM MgCl2</td>
+      <td>Chemical</td>
+      <td>Sigma–Aldrich</td>
+      <td>M8787 (part of Sigma–Aldrich D4545 from Protocol 1)</td>
+      <td>Included during communication with authors. Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Superscript II (with tube of 5× buffer and 100 mM DTT)</td>
+      <td>Enzyme</td>
+      <td>Life Technologies</td>
+      <td>18064-014</td>
+      <td>Included during communication with authors</td>
+    </tr>
+    <tr>
+      <td>RNase inhibitor</td>
+      <td>Enzyme</td>
+      <td>Sigma–Aldrich</td>
+      <td>R1274</td>
+      <td>Included during communication with authors. Original was RNasin</td>
+    </tr>
+    <tr>
+      <td>POSTN 5′ primer</td>
+      <td>Nucleic acid</td>
+      <td rowspan="4" colspan="3">Sequences provided by original authors; specific brand information will be left up to the discretion of the replicating lab and recorded later</td>
+    </tr>
+    <tr>
+      <td>POSTN 3′ primer</td>
+      <td>Nucleic acid</td>
+    </tr>
+    <tr>
+      <td>GAPDH 5′ primer</td>
+      <td>Nucleic acid</td>
+    </tr>
+    <tr>
+      <td>GAPDH 3′ primer</td>
+      <td>Nucleic acid</td>
+    </tr>
+    <tr>
+      <td>Power SYBR green PCR master mix</td>
+      <td>Buffer</td>
+      <td>Life Technologies</td>
+      <td>4368577</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Real-time PCR system</td>
+      <td>Equipment</td>
+      <td>Applied Biosystems StepOne</td>
+      <td>–</td>
+      <td>Original was from Roche or a StepOnePlus from Applied Biosystems</td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+#### Procedure
 
 Note:These metastatic positive lungs from MMTV-PyMT+/tg; Postn+/+ female mice come from Protocol 1.Mince lungs with bended scissors to smooth paste without any clumps and transfer to tube.a. Keep each set of lungs separate (do not pool).Incubate tissue in 6× volume of digestion solution for 1 hr at 37°C with the tube horizontal and shaking at 100 rpm.a. Digestion solution: HBSS supplemented with 0.4 U/ml liberase TM, 0.4 U/ml liberase TH, and 25 µg/ml DNase.i. Liberase TM: stock solution = 26 U/ml = 5 mg/ml; store at −20°C; use at 1:66 dilution.ii. Liberase TH: stock solution = 26 U/ml = 5 mg/ml; store at −20°C; use at 1:66 dilution.iii. DNase: stock solution = 10 mg/ml in PBS; store at −20°C; use at 1:400 dilution.Pellet cells at 180×g for 5 min at room temperature.Resuspend cells in cold MACS buffer and filter through 100-µm cell strainer using a rubber tip of 2.5 ml syringe to smash remaining tissue pieces.a. MACS buffer: 2 mM EDTA in PBS supplemented with 0.5% BSA.Wash strainer extensively with MACS buffer to collect all cells and pellet cells at 180×g for 5 min.Wash twice in MACS buffer, pelleting cells at 180×g for 5 min between washes.Pellet cells at 180×g for 5 min, wash once in FACS buffer and pellet cells at 180×g for 5 min.a. FACS buffer: 3% FBS in PBS.Resuspend up to 5 × 107 cells total in FACS buffer at 2 × 107 cells/ml in polypropylene (opaque) FACS tubes.Either add antibodies directly, or add antibody dilution mixes, and incubate on ice for 30 min in the dark (if staining high amount of cells put on roller at 4°C).a. CD45-PE·Cy5.5 (use at 1:300 dilution).b. CD31-Pac.Blue (use at 1:200 dilution).c. CD34-PE (use at 1:50 dilution).d. Include an unstained control for gating.e. Include isotype control antibody stains.i. Rat IgG2b, κ—PE-Cy5.5.ii. Rat IgG2a, κ—Pac.Blue.iii. Rat IgG2a, κ—PE.Pellet cells at 180×g for 5 min, wash once with 4 ml FACS buffer, and pellet cells at 180×g for 5 min (if staining high amount of cells perform another wash).Resuspend cells in 500 µl FACS buffer and filter through filter-membrane into polypropylene (opaque) FACS tubes protected from light.Just before FACS add viability dye.a. 7AAD (use at 1:1000 dilution).Perform FACS analysis on cells.a. Gate for viability (7-AAD−), then gate and collect the different populations to be analyzed:i. CD34+/CD31− cells.ii. CD31+ cells.iii. CD45+ cells.iv. Use negative controls (unstained and isotype control antibodies) to determine gating of populations.Isolate RNA from each collected cell population using TRI reagent following manufacturer's instructions.a. Quantify RNA concentrations in each sample using a spectrometer.i. Record sample purity (A260/280 and A260/230 ratios).Reverse transcribe RNA:a. cDNA synthesis:Total RNA1 ng–5 µgoligodT(18)40 pmololigodT(24)40 pmol10 mM dNTPs1.0 µlH2OBring up to 12.5 µlb. Heat to 70°C for 5 min, chill on ice for 2 min, then add:5× superscript II buffer4.0 µl100 mM DTT2.0 µlRNasin0.5 µlc. Incubate at 45°C for 2 min, then add:Superscript II1.0 µld. Incubate for 1 hr at 42°C.e. Heat-inactivate at 70°C for 15 min.Prepare samples in technical duplicates with two dilutions of cDNA (1:25 and 1:125) using POSTN and GAPDH primers and the Power SYBR green PCR Master Mix. Use GAPDH as control.a. Primers:i. POSTN 5′ primer: AAT GCT GCC CTG GCT ATA TG.ii. POSTN 3′ primer: GTA TGA CCC TTT TCC TTC AA.iii. GAPDH 5′ primer: CAA GCT CAT TTC CTG GTA TGA CAA T.iv. GAPDH 3′ primer: GTT GGG ATA GGG CCT CTC TTG.b. Set up SYBR mix (contains 1 mM MgCl2): 10 µl of 1a into 1b (store on ice in the dark).c. Set up PCR master mix (per reaction):Forward primer1.0 µl of 5 µM (5 pmol/µl)Reverse primer1.0 µl of 5 µM (5 pmol/µl)MgCl20.4 µl (for 2 mM)H2OBring up to 4.0 µlSYBR mix1.0 µld. Add 5.0 µl of diluted cDNA and 5.0 µl of PCR master mix to Light cycler capillaries, spin down, and run quantitative PCR reaction following manufacturer's instructions.i. Include negative control (no cDNA).e. Analyze and compute ∆∆CT values.
 
-## Deliverables
+##### Deliverables
 
 ■ Data to be collected:◯ All FACS plots in gating scheme (including all controls), leading to final population of viable, CD34+/CD31−, CD31+, and CD45+ cells.◯ Purity (A260/280 and A260/230 ratios) and concentration of isolated total RNA from cells.◯ Raw CT qRT-PCR values and ∆∆CT (the CT value of POSTN normalized to GAPDH).◯ Graph of POSTN normalized expression (∆∆CT) for each condition. (Compare to Figure 2H).
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
 This replication attempt will perform the following statistical analysis listed below:■ Statistical analysis:
 
 Note: At the time of analysis, we will perform the Shapiro–Wilk test and generate a quantile–quantile (q–q) plot to assess the normality of the data and also perform Levene's test to assess homoscedasticity. If the data appear skewed, we will perform the appropriate transformation in order to proceed with the proposed statistical analysis. If this is not possible, we will perform the equivalent non-parametric test.◯ One-way ANOVA of POSTN RNA expression in CD34+/CD31−, CD31+, and CD45+ cells.◯ Planned comparisons with the Bonferroni correction:CD34+/CD31− vs CD45+.CD31+ vs CD45+.■ Meta-analysis of effect sizes:◯ Compute the effect sizes of each comparison, compare them against the reported effect size in the original paper and use a meta-analytic approach to combine the original and replication effects, which will be presented as a forest plot.
 
-## Known differences from the original study
+#### Known differences from the original study
 
 All known differences are listed in the materials and reagents section above with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 Negative staining and isotype controls are included to assess antibody staining relative to background during FACS analysis. The sample purity (A260/280 and A260/230 ratios) of the isolated RNA from each sample will be reported. All data obtained from the experiment—raw data, data analysis, control data, and quality control data—will be made publicly available, either in the published manuscript or as an open access data set available on the Open Science Framework project page for this study (https://osf.io/vseix).
 
 ## Power calculations
 
-## Protocol 1
+### Protocol 1
 
-Summary of original data (estimated from Figure S13).Figure 3B and S13: Number of metastases or size of primary tumorMeanSDNNumber of metastases in MMTV-PyMT; Postn+/+ mice15.7817.5418Number of metastases in MMTV-PyMT:Postn−/− mice2.7655.06917Size of primary tumor in MMTV-PyMT; Postn+/+ mice1.2210.602318Size of primary tumor in MMTV-PyMT; Postn−/− mice1.1860.590116
+Summary of original data (estimated from Figure S13).
 
-## Size of primary tumor
+<table>
+  <thead>
+    <tr>
+      <th>Figure 3B and S13: Number of metastases or size of primary tumor</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of metastases in MMTV-PyMT; Postn+/+ mice</td>
+      <td>15.78</td>
+      <td>17.54</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Number of metastases in MMTV-PyMT:Postn−/− mice</td>
+      <td>2.765</td>
+      <td>5.069</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Size of primary tumor in MMTV-PyMT; Postn+/+ mice</td>
+      <td>1.221</td>
+      <td>0.6023</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Size of primary tumor in MMTV-PyMT; Postn−/− mice</td>
+      <td>1.186</td>
+      <td>0.5901</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Size of primary tumor
 
 Test family■ 2-tailed t-test, difference between two independent means, alpha error = 0.05.
 
-Sensitivity calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).Group 1Group 2Effect size dA priori powerGroup 1 sample sizeGroup 2 sample sizeMMTV-PyMT; Postn+/+ miceMMTV-PyMT; Postn−/− mice1.145371*80.0%1313*This excludes one outlier data point (2.83) from the Postn−/− data.
+Sensitivity calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-## Number of metastases
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MMTV-PyMT; Postn+/+ mice</td>
+      <td>MMTV-PyMT; Postn−/− mice</td>
+      <td>1.145371*</td>
+      <td>80.0%</td>
+      <td>13</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This excludes one outlier data point (2.83) from the Postn−/− data._
+
+#### Number of metastases
 
 Test family■ 2-tailed t-test, difference between two independent means, alpha error = 0.05.
 
-Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).Group 1Group 2Effect size dA priori powerGroup 1 sample sizeGroup 2 sample sizeMMTV-PyMT; Postn+/+ miceMMTV-PyMT; Postn−/− mice1.186517*82.7%1313*This excludes one outlier data point (61) from the Postn+/+ data and two outlier data points (18 and 13) from the Postn−/− data.
+Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
+
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MMTV-PyMT; Postn+/+ mice</td>
+      <td>MMTV-PyMT; Postn−/− mice</td>
+      <td>1.186517*</td>
+      <td>82.7%</td>
+      <td>13</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This excludes one outlier data point (61) from the Postn+/+ data and two outlier data points (18 and 13) from the Postn−/− data._
 
 Test family■ Negative binomial regression, alpha error = 0.05.
 
@@ -127,20 +548,152 @@ Chi-square goodness of fit test, p-value = 0.2535.
 
 Regression coefficient, Genotype (Postn−/−) = −1.742, incident rate ratio = 0.1752, p-value = 0.000923.
 
-Predicted values from model:Data set being analyzedMeanSENumber of metastases in MMTV-PyMT; Postn+/+ mice15.785.594Number of metastases in MMTV-PyMT:Postn−/− mice2.7651.073
+Predicted values from model:
 
-Power Calculations performed with R software, version 3.1.2 (R Core Development Team, 2014).GroupsNumber of simulationsA priori powerSample sizeNumber of metastases in MMTV-PyMT; Postn+/+ mice and MMTV-PyMT; Postn−/− mice10,000*81.2%12 per group*The original data were randomly sampled from, with replacement, to create simulated data sets. For a given n (the number of observations) 10,000 simulations were run and the Chi-square goodness of fit test and regression coefficient (Genotype (Postn−/−)) was calculated for each simulated data set. Any model fit with p < 0.05 was excluded. The power was then calculated by counting the number of times p ≤ 0.05 and dividing by the number of model fits.
+<table>
+  <thead>
+    <tr>
+      <th>Data set being analyzed</th>
+      <th>Mean</th>
+      <th>SE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of metastases in MMTV-PyMT; Postn+/+ mice</td>
+      <td>15.78</td>
+      <td>5.594</td>
+    </tr>
+    <tr>
+      <td>Number of metastases in MMTV-PyMT:Postn−/− mice</td>
+      <td>2.765</td>
+      <td>1.073</td>
+    </tr>
+  </tbody>
+</table>
 
-## Protocol 2
+Power Calculations performed with R software, version 3.1.2 (R Core Development Team, 2014).
 
-Summary of original data (estimated from Figure 2H).Figure 2H: qPCR analysis of POSTN expressionNMeanSDCD34+/CD31− pulmonary fibroblasts31.70.6CD31+ endothelial cells30.150.1CD45+ immune cells30.010.04
+<table>
+  <thead>
+    <tr>
+      <th>Groups</th>
+      <th>Number of simulations</th>
+      <th>A priori power</th>
+      <th>Sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of metastases in MMTV-PyMT; Postn+/+ mice and MMTV-PyMT; Postn−/− mice</td>
+      <td>10,000*</td>
+      <td>81.2%</td>
+      <td>12 per group</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The original data were randomly sampled from, with replacement, to create simulated data sets. For a given n (the number of observations) 10,000 simulations were run and the Chi-square goodness of fit test and regression coefficient (Genotype (Postn−/−)) was calculated for each simulated data set. Any model fit with p < 0.05 was excluded. The power was then calculated by counting the number of times p ≤ 0.05 and dividing by the number of model fits._
+
+### Protocol 2
+
+Summary of original data (estimated from Figure 2H).
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure 2H: qPCR analysis of POSTN expression</th>
+      <th>N</th>
+      <th>Mean</th>
+      <th>SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD34+/CD31− pulmonary fibroblasts</td>
+      <td>3</td>
+      <td>1.7</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>CD31+ endothelial cells</td>
+      <td>3</td>
+      <td>0.15</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>CD45+ immune cells</td>
+      <td>3</td>
+      <td>0.01</td>
+      <td>0.04</td>
+    </tr>
+  </tbody>
+</table>
 
 Test family■ ANOVA: Fixed effects, omnibus, one-way, alpha error = 0.05.
 
 Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-ANOVA F test statistic and partial η2 performed with R software, version 3.1.2 (R Core Development Team, 2014).GroupsF test statisticPartial η2Effect size fA priori powerTotal sample sizeCD34+/CD31−, CD31+, and CD45+F(2,6) = 21.3060.8765742.66496289.8%*6* (3 groups)*A total sample size of 18 will be used based on the planned comparison calculations making the power 99.9%.
+ANOVA F test statistic and partial η2 performed with R software, version 3.1.2 (R Core Development Team, 2014).
+
+<table>
+  <thead>
+    <tr>
+      <th>Groups</th>
+      <th>F test statistic</th>
+      <th>Partial η2</th>
+      <th>Effect size f</th>
+      <th>A priori power</th>
+      <th>Total sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD34+/CD31−, CD31+, and CD45+</td>
+      <td>F(2,6) = 21.306</td>
+      <td>0.876574</td>
+      <td>2.664962</td>
+      <td>89.8%*</td>
+      <td>6* (3 groups)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*A total sample size of 18 will be used based on the planned comparison calculations making the power 99.9%._
 
 Test family■ 2-tailed t-test, difference between two independent means, Fisher's LSD test: alpha error = 0.05.
 
-Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).Group 1Group 2Effect size dA priori powerGroup 1 sample sizeGroup 2 sample sizeCD34+/CD31−CD45+3.97454694.6%*3*3*CD31+CD45+1.83829081.8%66*6 tumors will be used per group based on the CD31+ to CD45+ comparison making the power 99.9%.
+Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
+
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD34+/CD31−</td>
+      <td>CD45+</td>
+      <td>3.974546</td>
+      <td>94.6%*</td>
+      <td>3*</td>
+      <td>3*</td>
+    </tr>
+    <tr>
+      <td>CD31+</td>
+      <td>CD45+</td>
+      <td>1.838290</td>
+      <td>81.8%</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+
+_*6 tumors will be used per group based on the CD31+ to CD45+ comparison making the power 99.9%._

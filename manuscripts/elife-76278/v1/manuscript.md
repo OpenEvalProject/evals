@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0524sp257 School of Physiology, Pharmacology & Neuroscience, University of Bristol Bristol United Kingdom
+1. School of Physiology, Pharmacology & Neuroscience, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
 
 † Corresponding author
 
@@ -33,9 +33,25 @@ The experiments reported here used a combination of electrophysiological, behavi
 
 ## Results
 
-## vlPAG neuronal responses during an auditory cued fear conditioning paradigm
+### vlPAG neuronal responses during an auditory cued fear conditioning paradigm
 
 As a first step, an auditory cued fear conditioning paradigm (Figure 1A) was used to investigate how single-unit activity in the PAG responded to fear acquisition and subsequent retrieval and extinction of fear-conditioned responses (n = 10 animals total; n = 6 with dual microdrives and n = 4 microdrives combined with cannulae, see Materials and methods for details and Figure 1B–E and Figure 1—figure supplement 1A–C). In all animals, the position of tetrodes was histologically verified. The majority of PAG tetrode recording sites were located in the ventrolateral sector of the PAG (vlPAG, so this term will be used, Figure 1—figure supplement 2). Note, however, that we cannot rule out inclusion of other ventral recording sites.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of the fear conditioning paradigm composed of habituation, acquisition, and extinction sessions. Habituation and acquisition were carried out in context A, whilst extinction training was in context B. During acquisition, a conditioned stimulus (CS) tone was paired with an unconditioned stimulus (US) footshock (see Materials and methods for details). (B) Peri event time histogram (PETH) showing average firing rate of all available single units (n = 32) recorded during presentation of the unconditioned tone (10 s) during habituation in eight control animals. Time 0, tone onset. Light blue bar shows time the tone is on. (C) Same as (B) but all available single units (n = 50) recorded during acquisition from 10 control animals (shaded red and lightening symbol indicates time of US footshock when the stimulus artefact prevented neural recording). (D) Same as (B) but all available single units (n = 55) recorded during presentation of the unreinforced CS+ throughout extinction from 10 control animals. For (B–D), individual unit activity was z-score normalised to a 5 s baseline before tone onset. Horizontal dashed red line represents significance level (p<0.05). PETHs show mean ± SEM; 40 ms bins. (E) One example of a type 1 onset and offset single unit recorded during extinction training. Data displayed as raster plot from early extinction (EE) to late extinction (LE) with corresponding PETH for EE (trials 1–14) and LE (trials 22–35) (40 ms bins), time 0 onset of CS+. Horizontal dashed red line represents significance level (p<0.05).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Example electrophysiological data recorded from a ventrolateral periaqueductal grey (vlPAG) tetrode (30 kHz sampling rate, 600–3 kHz bandpass filter, Ch1-4, tetrode channels 1–4). Raw data captured during early extinction training around the time of CS+ onset (left, tone on) and CS+ offset (right, tone off). Light blue bar shows time the tone is on. (B) Spikes were sorted using all channels in MClust to identify individual units; in this case, four units (colour coded) were isolated. Individual units were classified as described in Materials and methods. (C) Violin plots showing distribution of baseline firing rates for all available single units recorded in vlPAG during three phases of fear conditioning: habituation (n = 30 units), acquisition (n = 50 control units), and extinction (n = 55 control units). Horizontal black lines show median, and blue lines IQR firing rate for each phase of conditioning. (D) Same as (C), but for single units recorded during muscimol experiments. Habituation (n = 10 units), acquisition (n = 17 units), and extinction (n = 25 units). Horizontal black lines show median, and orange lines IQR firing rate for each phase of conditioning.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Photomicrographs of two example tetrode tracks (arrows) in periaqueductal grey (PAG). Outlines show left half of two coronal sections (anteroposterior [AP] levels –6.5 and –7.5) of the PAG. Dotted lines indicate approximate location of the ventrolateral sector (vlPAG). Note that a lack of correspondence between the physiological and histological boundaries of the lateral border of PAG has been reported previously (McMullan and Lumb, 2006). (B) Same as (A) but tracks in sagittal sections (±1 mm of midline) medial cerebellar nucleus (MCN) and (C) example track of a cerebellar cannula. (D) Pairs of figurines to the left show two coronal sections (AP levels –6.5 and –7.5) of the PAG. Pairs of figurines to the right show sagittal sections of left and right cerebellum (±1 mm of midline). Tetrodes-only controls (n = 6 rats, tetrodes implanted on one side of PAG and also in the contralateral MCN), tracks colour coded for each animal, and length of each track indicates extent of unit recording in that track; reconstruction of tetrode tracks in the vlPAG (left) and contralateral MCN (right). (E) Same as (D) but for saline controls (tetrodes implanted on one side in PAG and cannulae implanted bilaterally in MCN for saline infusion; n = 4 rats). In the cerebellar sections, the whole length of each cannula track has been reconstructed, and the blue-coloured tips indicate the extension of the internal cannula for infusions. (F) Same as (E) but cannulae used for infusion of muscimol (n = 4 rats). In the cerebellar tracks, orange-coloured tips indicate the extension of the internal cannulae for infusions. (G) Same as (F) but only cannulae implanted in left and right cerebellum for infusion of muscimol (n = 4 rats).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Example type 1 offset unit in vlPAG recorded during extinction following acquisition where a 1 s trace was introduced between conditioned stimulus (CS) offset and the unconditioned stimulus (US) during acquisition. Raster plot and peri event time histogram (PETH) showing activity relative to CS+ offset (arrow in raster and time 0 in PETH). Time of the US during acquisition is shown by red dotted rectangle; 40 ms bins. (B) Same as (A) but mean PETH ± SEM for all type 1 offset units (n = 6). Horizontal dashed red line represents significance level (p<0.05). (C) Same as (A) but example type 4 offset unit. (D) Same as (B) but mean PETH ± SEM for all type 4 offset units (n = 6). (E) Bar chart plotting mean time to peak or trough in activity for all units after CS+ offset (delay, n = 19 units recorded after delay conditioning; trace, n = 12 units recorded after trace conditioning; individual units for trace experiments: light grey type 1 offset units and dark grey type 4 offset units). No significant difference in timing between trace and delay (p>0.05).
 
 A total of 32 vlPAG units (obtained from eight animals) were recorded during habituation (Figure 1B). The majority (75%, n = 24/32 units) were unresponsive to the unconditioned auditory tone; the remainder responded (see Materials and methods for definition) to tone onset (either increasing, n = 6/32 units, or decreasing firing rate, n = 2/32 units); and in some of these cases (15.6%) also to tone offset (either increasing 3/32 units or decreasing firing rate 2/32 units).
 
@@ -47,13 +63,29 @@ Of the remainder of the sample of vlPAG units recorded in control animals during
 
 Since the majority of responsive vlPAG units recorded in control experiments were type 1 (i.e. displayed an increase in firing rate), the following analysis is confined mainly to consideration of their activity during fear-conditioned retrieval and extinction. The majority of type 1 onset units (75%, 18/24 units) and type 1 offset units (73%, 19/26 units) showed a significant reduction in responsiveness during extinction training, as measured by the integrated area of response during CS+ trials in EE versus late extinction (LE, Figure 2B and D, control, type 1 onset units: t(17) = 5.146, p<0.0001, n = 18, paired t-test; type 1 offset units, Figure 2F and H: t(18) = 4.4, p=0.0003, n = 19, paired t-test). For type 1 onset responses, this reduction was not evident for mean peak z-score (Figure 2E, decrease of 13.8% from EE to LE; t(17) = 1.344, p=0.197, n = 18, paired t-test) but was evident for type 1 offset responses (Figure 2I, decrease of 67.0% from EE to LE; t(18) = 2.354, p=0.0302, n = 19, paired t-test). This distinction between onset and offset responses provides additional evidence that they may be evoked by separate mechanisms.
 
-## vlPAG offset responses during trace conditioning
+![Figure 2.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic timeline representing the fear conditioning protocol for muscimol animals. (B) Group data for control animals showing average z-scored type 1 onset responses (n = 18 single units from n = 7 animals) during early extinction (EE, upper panel) and late extinction (LE, lower panel); solid lines in each plot show mean z-score, shaded regions ± SEM; horizontal dashed red lines show significance level (p<0.05). Time 0, CS+ tone onset. (C) Same as (B) but grouped data for muscimol animals (n = 10 single units from n = 3 animals). (D) Bar charts showing average type 1 onset response area (arbitrary units) during EE and LE for single units recorded in control versus muscimol animals. Pairs of data points connected with dashed lines show change in mean response area for each single unit over extinction training. Bars show group means ± SEM. Paired t-test, ****p<0.0001, ***p<0.001. (E) Same as (D) but grouped data for peak z-score. (F) Same as (B) but control type 1 offset responses (n = 19 single units from n = 7 animals) during EE (upper panel) and LE (lower panel). Time 0, CS+ tone offset. (G) Same as (F) but grouped data for muscimol animals (n = 10 units from n = 3 animals). (H) Same as (D) but showing average type 1 offset response area (arbitrary units) during EE and LE for single units recorded in control versus muscimol animals. Paired t-test, ***p<0.001, **p<0.01; unpaired t-test, **p<0.01, *p<0.05. (H) Same as (I) but grouped data for peak z-score. Paired t-test, *p<0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Group data for tetrodes-only control animals (n = 14 units) recorded on day 2, showing average z-scored type 1 onset responses during early extinction (EE, upper panel) and late extinction (LE, lower panel). Time 0, CS+ tone onset. Solid lines in each plot show mean z-score, shaded regions ± SEM. Horizontal dashed red lines show significance level (p<0.05). (B) Same as (A) but grouped data for saline control animals recorded on day 3 (n = 4 units). (C) Bar charts showing average type 1 onset response area (arbitrary units) during EE and LE for single units recorded in tetrodes-only and saline control animals. Pairs of data points connected with dashed lines show change in mean response area for each single unit over extinction training. Bars show group means ± SEM. ns, no significant difference (EE, t(16) = 0.2773, p=0.785; LE, t(16) = 0.4828, p=0.6358, unpaired t-test). (D) and (E) same as (A) and (B) but for type 1 offset responses. Time 0, CS+ tone offset. (D) Tetrodes-only control unit offset responses recorded on day 2 (n = 16 units). (E) Saline control unit offset responses recorded on day 3 (n = 3 units). (F) Same as (C). ns, no significant difference (EE, t(17) = 1.263, p=0.224 and LE, t(17) = 0.2263, p=0.824, unpaired t-test).
+
+### vlPAG offset responses during trace conditioning
 
 For the results described above, a delay classical conditioning paradigm was used where the US was timed to occur at CS offset (Figure 1A, see Materials and methods). For the unit activity recorded at CS+ offset, it was therefore unclear whether the change in firing rate during retrieval signals the end of the conditioned tone and/or represents the timing of the expected US. To examine this, in three animals, a 1 s trace interval was introduced between the CS and US during acquisition trials. A total of six type 1 units (those with increased activity at CS+ offset) were found to show a change in activity that was temporally related to the offset of the CS+ during retrieval and not to the time of the expected occurrence of the US (1 s after CS+ offset, Figure 1—figure supplement 3A and B). We also recorded six units with type 4 responses (those with reduced activity at CS+ offset) and in trace conditioning their activity was also related to time of CS+ offset (Figure 1—figure supplement 3C and D). A comparison of time to peak or trough of response for all available units recorded during control versus trace conditioning showed no statistical difference (Figure 1—figure supplement 3E; t(25) = 1.76, p=0.091, unpaired t-test). These results are therefore consistent with vlPAG activity signalling the conditioned tone offset rather than a prediction of the timing of the US.
 
-## Population activity in the MCN and vlPAG
+### Population activity in the MCN and vlPAG
 
 It was also of interest to consider any changes in neural population activity during extinction training. To assess such changes, auditory event-related potentials (ERPs) were recorded simultaneously from the MCN and vlPAG, following a delay conditioning paradigm (n = 6 animals, Figure 3). For vlPAG, we were able to compare the ERP waveform to the simultaneously recorded unit activity and found that field duration and spike activity were broadly concomitant (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig3-v1.jpg)
+
+**Figure 3.:** (A) Group average ERPs recorded at CS+ onset in the MCN and vlPAG in control animals (n = 6 rats), arrows indicate time of tone onset; each waveform shows mean ± SEM; dark blue, average ERP during early extinction (EE), light blue, average ERP during late extinction (LE). (B) Same as (A) but ERPs recorded simultaneously at CS+ offset (n = 6 rats). (C) Plots showing mean peak-to-peak amplitude of ERPs recorded at CS+ onset in EE versus LE; left panel, MCN; right panel, vlPAG (n = 6 rats, means ± SEM). Pairs of data points connected with dashed lines show the change in mean amplitude over extinction training for individual animals. (D) Same as (C) but for CS+ offset (n = 6 rats, paired t-test, **p<0.01). (E) Repeated-measures correlation (rrm) for ERPs at CS+ onset (n = 6 rats) comparing the amplitude of ERPs recorded simultaneously in MCN and vlPAG. Each colour represents data and line of best fit for an individual animal. (F) Same as (E) but for CS+ offset (n = 6 rats).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Example ERP recorded in the ventrolateral periaqueductal grey (vlPAG) during early extinction training at CS+ offset. Average of 14 trials. (B) Example single-unit data recorded simultaneously from the same vlPAG recording site. Vertical dashed line and arrowhead indicate CS+ offset at time 0. Raster plot 14 trials, peri event time histogram (PETH), 10 ms bin width.
 
 The ERP recorded in the vlPAG at CS+ onset had a significantly shorter onset latency than the ERP recorded in the same animals in MCN (vlPAG onset 6.5 ± 1.45 ms; MCN onset 25.2 ± 4.05 ms, t(10) = 4.33, p=0.007, paired t-test). However, latency to peak was not significantly different (PAG peak 58.5 ± 7.4 ms; MCN peak 84.7 ± 11.46 ms, t(5) = 1.418, p=0.215, paired t-test). At CS+ offset, the ERP in the vlPAG was also significantly shorter in latency than the ERP in MCN (vlPAG offset 32 ± 5.2 ms; MCN offset 47.7 ± 3.3 ms, t(5) = 2.991, p=0.0304; paired t-test), while latency to peak was similar (vlPAG peak 99 ± 6.4 ms; MCN peak 100.7 ± 6.14 ms, t(5) = 1.746, p=0.141, paired t-test). The difference in onset latency between ERP responses recorded at CS+ onset and offset within both vlPAG and MCN was statistically significant (vlPAG onset vs. offset, t(10) = 4.720, p=0.0008, unpaired t-test; MCN onset vs. offset, t(10) = 4.319, p=0.0015, unpaired t-test). These findings indicate that both MCN and vlPAG receive auditory inputs that convey information about conditioned tone onset and offset. Given the likely differences in central pathways involved, the disparity in latency of the ERPs recorded within the two brain regions is perhaps unsurprising (Huang et al., 1982; Vianna and Brandão, 2003; Wang et al., 2019). However, the difference in latency between ERP responses recorded at CS+ onset compared to CS+ offset within each structure suggests that they are also likely to be generated by different neural pathways.
 
@@ -63,13 +95,25 @@ To assess if changes in ERP amplitude during extinction covaried between MCN and
 
 Taken together, these ERP data therefore suggest that population activity in MCN and vlPAG broadly parallels the changes that occur in vlPAG single-unit peak activity at onset and offset of the CS+ during extinction of a fear-conditioned response.
 
-## The effect of temporary MCN inactivation on vlPAG activity during fear consolidation
+### The effect of temporary MCN inactivation on vlPAG activity during fear consolidation
 
 In eight additional animals, a delay conditioning paradigm was used (see Figure 2A, n = 4 rats with bilateral cannulae in MCN and unilateral tetrodes in PAG, and n = 4 rats with bilateral cannulae only in MCN; see Figure 1—figure supplement 2F and G), and muscimol was infused into the MCN to reversibly block cerebellar output during consolidation of the fear-associative memory prior to extinction training (termed ‘muscimol’ in extinction sessions, Figures 2, 4 and 5; see also Figure 1—figure supplement 2F and G). After a delay of 48 hr, to ensure complete washout of the drug, the animals were exposed to the unreinforced CS+ in extinction training. There was no significant difference between the overall firing rates across habituation, acquisition, and extinction training (Figure 1—figure supplement 1D, F(2, 49) = 0.506, p=0.079, n = 52, one-way ANOVA).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig4-v1.jpg)
 
-**Figure 4.:** (A) Violin plots showing the number of significant peaks of activity (≥2 SD from baseline) that occur in the initial 500 ms following CS+ onset for early extinction (EE) and late extinction (LE) in control rats (blue, n = 18 units) and muscimol rats (orange, n = 10 units). (B) Proportion of peak responses as a function of time after CS+ onset. For each unit, the 100 ms time bin in which the maximum peak response occurred in the first 500 ms after CS+ onset was expressed as a percentage of total count during EE. Control (blue); muscimol (orange). Chi-squared test, p>0.05. (C) Same as (A) but for CS+ offset. ***p<0.001, unpaired t-test. Control (blue, n = 19); muscimol (orange, n = 10). (D) Same as (B) but for CS+ offset. Chi-squared test, p<0.01.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Violin plots showing the number of significant peaks of activity (≥2 SD from baseline) that occur in the initial 500 ms following CS+ onset for early extinction (EE) and late extinction (LE) in control rats (blue, n = 18 units) and muscimol rats (orange, n = 10 units). (B) Proportion of peak responses as a function of time after CS+ onset. For each unit, the 100 ms time bin in which the maximum peak response occurred in the first 500 ms after CS+ onset was expressed as a percentage of total count during EE. Control (blue); muscimol (orange). Chi-squared test, p>0.05. (C) Same as (A) but for CS+ offset. ***p<0.001, unpaired t-test. Control (blue, n = 19); muscimol (orange, n = 10). (D) Same as (B) but for CS+ offset. Chi-squared test, p<0.01.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig5-v1.jpg)
+
+**Figure 5.:** (A) The percentage of total time the conditioned tone (CS+) was presented during early extinction (EE) and late extinction (LE) that freezing epochs occurred in control (n = 10 rats) versus muscimol (n = 8 rats). Pairs of data points connected with dashed lines show the change in mean percentage freezing per animal over extinction training. Bars show group median ± IQR. ****p<0.0001; ***p<0.001. (B) Same as (A) but for inter-tone interval (ITI). (C) Same as (A) but for the average duration of time that animals displayed freezing behaviour after the CS+. Bars show group means ± SEM. Paired t-test. **p<0.01, *p<0.05. (D) Same as (C) but for average duration of moving epochs. (E) Repeated-measures correlation (rrm) for control (upper panel, n = 7 rats) and muscimol (lower panel, n = 3 rats), comparing the integrated response area of units (arbitrary units, a.u.) at CS+ onset as a function of percentage of time freezing during presentation of the CS+. Each colour represents data and line of best fit for an individual animal. (F) Same as (E) but unit activity at CS+ offset in relation to time freezing during ITI.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Grouped data showing the average percentage of time spent freezing during presentation of each CS+ tone as a function of extinction training. Five blocks of extinction (Ext1–5) with early extinction (EE, ext1,2) shaded dark grey and late extinction (LE, ext4,5) shaded light grey. Control data (blue, n = 10 rats) and muscimol data (orange, n = 8 rats). Plots show mean ± SEM. (B) Same as (A) but during the inter-tone interval (ITI). (C) Scatterplots for baseline, EE, and LE showing the duration of the first five freezing epochs (left panel) and first five movement epochs (right panel) for each block of extinction training (1–5, see Materials and methods for further details). Each data point represents the freezing or movement epoch for an individual animal. Control,blue; muscimol, orange.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Rate of extinction as measured by the slope of the line of best fit for change in percentage of time spent freezing during presentation of the CS+ over the first 21 presentations of the CS+ during extinction training in control (n = 10 rats) versus muscimol (n = 8 rats) experiments. Individual data points show mean rate of change per animal. Bars show group means ± SEM. (B) Same as (A) but the change in percentage of time spent freezing during the inter-tone interval (ITI) for the first 21 CS+ presentations during extinction training in control (n = 10 rats) versus muscimol (n = 8 rats) experiments. (C) Scatterplot showing the mean unit response area (arbitrary units) at CS+ onset as a function of percentage time spent freezing activity in early extinction (EE) and late extinction (LE) during CS+ presentation. Individual data points represent individual animals. Blue, control; orange, muscimol. Pearson correlation r = –0.19, p>0.05. (D) Same as (C) but for freezing during the ITI and unit response area at CS+ offset. Pearson correlation r = –0.23, p>0.05. (E) The total number of rears during CS+ presentation during extinction training in control (n = 10 rats) versus muscimol (n = 8 rats) experiments. Individual data points connected with dashed lines show change in mean number of rears per animal over extinction training. Bars show group median and IQR (EE, U = 30, p=0.275; LE, U = 33.5, p=0.444, Mann–Whitney test). (F) Same as (E) but rearing count for ITI in control (n = 10 rats) versus muscimol (n = 8 rats) experiments (EE, U = 33, p=0.490; LE, U = 36.5, p=0.7629, Mann–Whitney test). (G) Total number of ultrasonic vocalisations (USVs) during presentation of the CS+ in all extinction training trials for control (n = 10 rats) versus muscimol (n = 8 rats) experiments. Individual data points show mean count per animal. Bars show group median and IQR (U = 31, p=0.3725, Mann–Whitney test). (H) Same as (G) but USV count in the ITI for control (n = 10 rats) versus muscimol (n = 8 rats) experiments (U = 30, p=0.3039, Mann–Whitney test).
 
 In the four muscimol animals with tetrodes, a total of 14 type 1 vlPAG units were recorded from three animals during extinction. Units were recorded from the fourth animal but were not type 1 responses so were not analysed further. Similar to the control results described above, the majority (71%, 10/14 units) of available type 1 onset units (Figure 2C) showed a reduction in responsiveness during extinction training as measured by mean change in integrated area of response (Figure 2D; on average, the integrated area of response was 77.8% smaller between EE and LE, t(9) = 4.294, p=0.002, n = 10, paired t-test). In keeping with the findings from control animals, no significant difference was found for mean peak z-score (Figure 2E, peak 0.7% smaller between EE and LE, t(9) = 1.707, p=0.122, n = 10, paired t-test). There was also no statistically significant difference between control and muscimol animals for type 1 CS+ onset responses in EE or LE for either measure of response (Figure 2D and E, for control n = 18 vs. muscimol n = 10; mean integrated area in EE, t(26) = 0.112, p=0.912, unpaired t-test; mean integrated area in LE, t(26) = 0.949, p=0.351, unpaired t-test; mean peak z-score in EE, t(26) = 0.103, p=0.919, unpaired t-test; mean peak z-score in LE, t(26) = 0.454, p=0.654, unpaired t-test), nor was there a difference in overall firing rates for all units during extinction training (control vs. muscimol; t(78) = 0.407, p=0.685, unpaired t-test; Figure 1—figure supplement 1C and D).
 
@@ -81,9 +125,9 @@ By contrast, following CS+ offset both the number (Figure 4C; t(31) = 7.184, p<0
 
 Taken all together, these data therefore suggest that during extinction training the pattern of response of vlPAG units at CS+ onset is mainly unaffected by pharmacological block of MCN during consolidation, but the temporally precise activity at CS+ offset is disrupted during EE, providing additional evidence that the two responses are independent of one another.
 
-## The effect of temporary MCN inactivation during fear consolidation on behaviour
+### The effect of temporary MCN inactivation during fear consolidation on behaviour
 
-## Effects on freezing behaviour
+#### Effects on freezing behaviour
 
 To assess whether muscimol infusions into the MCN during consolidation had an effect on subsequent expression of fear-related freezing behaviour, a range of measures were taken during extinction training: % freezing during presentation of the CS+ and inter-tone interval (ITI), extinction rate during the CS+ and ITI, and the duration of freezing and movement epochs.
 
@@ -97,11 +141,11 @@ To investigate the extent to which changes in unit activity correlate with fear 
 
 To investigate whether the extent of change in freezing behaviour and unit response during extinction training were related, a comparison was made between the absolute change in freezing for each animal with the mean absolute change in unit response. No significant relationship was found between freezing and unit response area at CS+ onset, nor for freezing during the ITI and unit response area at CS+ offset (Figure 5—figure supplement 2C and D). Taken together, these results therefore suggest that the magnitude of vlPAG unit responses at both onset and offset of a conditioned tone reflects general fear state within an individual animal, but does not predict which individuals will have a stronger freezing response overall.
 
-## Effects on other defence-related behaviour
+#### Effects on other defence-related behaviour
 
 To investigate whether MCN inactivation during consolidation had an effect on other defence-related behaviours, rearing activity and USVs were monitored during presentation of the CS+ and ITI during extinction training. However, by comparison to controls, no statistically significant effects were observed in either type of behaviour in muscimol animals (Figure 5—figure supplement 2E–H).
 
-## Modulation of direct MCN to vlPAG projection during fear acquisition and early consolidation
+### Modulation of direct MCN to vlPAG projection during fear acquisition and early consolidation
 
 Given that during extinction training (i) population activity in MCN resembles changes in vlPAG population and unit activity, and (ii) the finding that global inactivation of MCN during consolidation can lead to changes in the fear network that disrupt encoding in vlPAG, it was of interest to determine whether the behavioural effects described above were dependent on a direct projection between the two brain structures (Whiteside and Snider, 1953; Teune et al., 2000; Vaaga et al., 2020; Frontera et al., 2020). As a first step, a direct anatomical connection was investigated by injecting a fluorescently tagged anterograde virus into the MCN (n = 7 rats, Figure 6—figure supplement 1). In every case, terminal projections in the PAG were primarily localised to its ventrolateral region on the contralateral side.
 
@@ -111,11 +155,35 @@ To estimate the population of neurons that were manipulated in our viral vector 
 
 To determine the effect of MCN-PAG pathway modulation on conditioned fear behaviours, CNO was infused 15 min (Stachniak et al., 2014; Jendryka et al., 2019) before acquisition training to modify the direct MCN-PAG pathway during acquisition and early consolidation (Figure 6A). During acquisition, there was no significant difference in the percentage of freezing between control versus DREADD animals during CS-US paired presentations (Figure 6B, upper panel, two-way repeated-measures ANOVA; time, F(4.45, 75.64) = 16.63, p<0.0001; virus, F(1, 17) = 0.089, p=0.769) nor during the ITI (Figure 6B, lower panel, two-way repeated-measures ANOVA; time, F(3.834, 65.19) = 17.82, p<0.0001; virus, F(1, 17) = 2.339, p=0.144). However, comparison of the mean total number of USVs per animal in DREADD versus control groups across all acquisition trials showed that during the ITI there was a significant reduction in the number of USVs (Figure 6C, lower panel, a decrease of 36%, control 34 (0.0 201.5) s, median ± IQR, DREADD 0 (0.0 29.25) s, median ± IQR, U = 23, p=0.032, Mann–Whitney test, one-tailed). This difference was not apparent during CS-US presentations (Figure 6C, upper panel, control 0 (0.0 10.0) s, median ± IQR, DREADD 0 (0.0 4.5) s, median ± IQR, U = 39, p=0.310, Mann–Whitney test, one-tailed).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic timeline representing the fear conditioning protocol for the DREADDs experiment. (B) The effect of clozapine N-oxide (CNO) delivery into the ventrolateral PAG (vlPAG) during acquisition on freezing behaviour measured during presentation of the paired conditioned stimulus-unconditioned stimulus (CS-US) (upper plot), and the inter-tone interval (ITI) (lower plot). Blue plot, control animals (n = 9 rats); red plot, DREADD (hM4D(Gi)) animals, n = 10 rats; data points mean ± SEM. (C) The number of ultrasonic vocalisations (USVs) recorded in control versus DREADD animals during CS-US presentation (upper panel) and during the ITI (lower panel); bars show median ± IQR. Mann–Whitney, one-tailed test, *p<0.05.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Schematic showing a sagittal section of the cerebellum injection into the MCN of an anterograde tracer (AAV-CAG-tdTomato viral vector). To the left, high-power photomicrograph showing transfected neurons in MCN. To the right, coronal section shows representative pattern of terminal labelling in the contralateral PAG in one animal (dlPAG, lPAG, vlPAG; dorsolateral, lateral, and ventrolateral PAG). (B) Coronal sections of the PAG at different anteroposterior (AP) levels showing the pattern of terminal labelling in all available animals (n = 7 rats). The darker the red shading, the larger the number of animals with terminal labelling in that area.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Histological reconstruction of cannulae placement in periaqueductal grey (PAG) in control (n = 9 rats, tracks colour coded blue to black for different animals) and DREADD animals (n = 10 rats, tracks colour coded orange to red for different animals). For each track, the tips indicate the extension of the internal cannula for infusions. (B) Percentage of the total time in an elevated plus maze spent in the open arm (left) and in the closed arm (right) for control (n = 9 rats) versus DREADD (n = 9 rats) experiments. Individual data points show percentage of time per animal. Bars show mean ± SEM (open arm, t(16) = 1.036, p=0.316; closed arm, t(16) = 1.036, p=0.316; unpaired t-test). (C) Time spent in the centre versus the periphery of the open field arena for control versus DREADD animals. Individual data points show total time per animal. Bars show mean ± SEM (centre, t(12) = 0.145, p=0.887; periphery, t(12) = 0.463, p=0.651, unpaired t-test). (D) The total distance moved in the open field arena in control (n = 8 rats) versus DREADD (n = 6 rats) experiments. Individual data points show total distance per animal. Bars show mean ± SEM (t(12) = 0.267, p=0.794, unpaired t-test). (E) Beam walking traversal times in control (n = 9 rats) and DREADD (n = 9 rats) experiments before (baseline) and after infusion of clozapine N-oxide (CNO) into ventrolateral PAG (vlPAG) for the two groups of animals. Pairs of data points connected by dotted lines show change in mean crossing time per animal between baseline and CNO. Bars show mean ± SEM (time to traverse, t(16) = 0.508, p=0.618, unpaired t-test). (F) Same as (E) but beam traversal times in control (n = 9 rats) and DREADD (n = 9 rats) experiments before (baseline) and intraperitoneal injection of CNO. Unpaired t-test **p<0.001.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Schematic showing experimental arrangement for anatomical assessment of DREADD transfection. In each animal, a green fluorescent retrograde tracer (rAAV-CAG-GFP) was injected into the ventrolateral sector of PAG (shown as false colour blue) and in the same animals MCN was transfected with inhibitory DREADD virus that expressed red fluorescence (AAV-hSyn-hM4D(Gi)-mCherry). (B) Photomicrograph showing examples of single- (red or blue) and double-labelled neurons (purple, arrows) in MCN. (C) Graph plotting double-labelled neurons in MCN as a percentage of the two single-labelled populations (n = 4 rats). Individual data points per animal. Mean ± SEM.
+
 During extinction training, control and DREADD animals showed similar levels of freezing during presentation of the CS+ (Figure 7A; EE t(17) = 0.469, p=0.645, LE t(17) = 0.937, p=0.362, unpaired t-test) and the ITI (Figure 7B; EE t(17) = 0.687, p=0.501, LE t(17) = 0.822, p=0.422, unpaired t-test); for trial-by-trial variation, see Figure 7—figure supplement 1A and B. Both groups also showed similar levels of extinction learning during CS+ (control, t(8) = 3.335, p=0.010; DREADD, t(9) = 10.31, p<0.0001, paired t-test) and the ITI (control, t(8) = 3.950, p=0.004; DREADD, t(9) = 8.679, p<0.0001, paired t-tests). However, the rate of extinction during the CS+ was significantly slower in DREADD animals (Figure 7C; t(17) = 2.2.01, p=0.042, unpaired t-test), but not during the ITI (Figure 7D; t(17) = 1.096, p=0.229, unpaired t-test). The latter finding suggests that the effect is not a general disruption of the expression of freezing behaviour.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig7-v1.jpg)
+
+**Figure 7.:** (A) The percentage of total time the CS+ was presented that animals displayed freezing behaviour during early extinction (EE) (trials 1–14) or late extinction (LE) (trials 21–35) in control (n = 9 rats) versus DREADD (hM4D(Gi), n = 10 rats). Pairs of data points connected with dashed lines show the change in mean percentage freezing per animal over extinction training. Bars show group means ± SEM. ****p<0.0001, *p<0.05. (B) Same as (A) but for inter-tone interval (ITI). (C) Rate of extinction during presentation of the CS+ as measured by the change in percentage freezing over the first 21 CS+ presentations during extinction training in control (n = 9 rats) versus DREADD experiments (n = 10 rats). Individual data points show mean rate of change per animal. Bars show group means ± SEM. Unpaired t-test *p<0.05. (D) Same as (C) but for ITI. (E) The total number of rears during presentation of the CS+ during EE and LE for control (n = 9 rats) versus DREADD experiments (n = 10 rats). Pairs of data points connected with dashed lines show change in mean number of rears per animal over extinction training. Bars show group median and IQR. (F) Same as (E) but for ITI. (G) Total number of ultrasonic vocalisations (USVs) during presentation of the CS+ in extinction training in control (n = 9 rats) versus DREADD experiments (n = 10 rats). Individual data points show mean count per animal. Bars show group median and IQR. (H) Same as (G) but total number of USVs recorded during ITI.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/76278/elife-76278-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Grouped data showing the average percentage of time spent freezing during presentation of each CS+ tone as a function of extinction training. Each data point based on average of seven CS+ presentations per animal ± SEM. Five blocks of extinction (Ext1–5) with early extinction (EE, ext1,2) shaded dark grey and late extinction (LE, ext4,5) shaded light grey. Control data (blue, n = 9 rats) and DREADD data (red, n = 10 rats). (B) Same as (A) but during the inter-tone interval (ITI). (C) Same as (A) but grouped data showing average count of USVs emitted during each CS+ presentation as a function of extinction training. Control (blue, n = 9 rats) and DREADD (red, n = 10 rats). (D) Same as (C) but average USV count during the ITI. Mean ± SEM.
 
 With regard to rearing behaviour, no differences were found between control and DREADD animals both within EE and LE (Figure 7E and F; EE CS+, t(17) = 1.058, p=0.305; EE ITI, t(17) = 0.124, p=0.903; LE CS+, t(17) = 1.134, p=0.273; LE ITI, t(17) = 0.276, p=0.786, unpaired t-test), nor across all extinction training (Figure 7E and F; EE vs. LE; control CS+, t(8) = 0.610, p=0.556, control ITI, t(8) = 1.189, p=0.269; DREADD, CS+ t(9) = 1.246, p=0.244; DREADD, ITI, t(9) = 1.765, p=0.111, paired t-test). Similarly, there was also no significant difference in the total number of USVs per animal in DREADD versus control groups across all extinction training (Figure 7G and H; CS+, control 0 (0.0 4.5) s, median ± IQR, DREADD 0 (0.0 9.5) s, median ± IQR, U = 42.5, p=0.844; ITI, control 0 (0.0 73.0) s, median ± IQR, DREADD 0 (5.5 56.75) s, median ± IQR, U = 42.5, p=0.849, Mann–Whitney tests; for trial-by-trial variation, see Figure 7—figure supplement 1C and D).
 
-## Control experiments for MCN-PAG intervention
+### Control experiments for MCN-PAG intervention
 
 To test for potential changes in anxiety and motor behaviour induced by modulation of the MCN-PAG pathway, the same DREADD and control animals studied in the fear conditioning experiments (n = 18 rats) were also tested on the following tasks after CNO infusion into vlPAG: elevated plus maze, open field, and beam walking. By comparison to controls, no statistically significant difference was found in any of these behaviours (Figure 6—figure supplement 2B–E) Thus, no evidence was obtained to suggest that targeted modulation of the MCN-PAG pathway causes a general deficit in motor behaviour, nor a change in anxiety levels. However, insufficient effect of the DREADD on the MCN-PAG pathway cannot be ruled out.
 
@@ -129,13 +197,13 @@ Importantly, vlPAG units displayed little or no response to an auditory tone dur
 
 More generally, our study applied novel approaches to address fundamental questions about the role of cerebellar-PAG interactions in survival behaviour. As such, consideration of the methods used is critical to the interpretation of the data and is included in the Materials and methods section.
 
-## Comparison to previous behavioural studies
+### Comparison to previous behavioural studies
 
 Previous inactivation studies in rats using TTX have indicated that the cerebellar vermal cortex is involved in the consolidation of associatively conditioned cue and context-dependent fear memories (Sacchetti et al., 2002; Sacchetti et al., 2007). This suggests that the vermal compartment of the cerebellum is involved in various aspects of fear learning. The finding in the present study that inactivation of a major output of the vermal compartment, MCN, leads to deficits in both USVs and freezing behaviour strongly supports this multiplicity of function.
 
 The present results are also consistent with Frontera et al., 2020, who found in mice that inactivation of the MCN-PAG pathway during acquisition but not consolidation reduced the subsequent rate of extinction of conditioned freezing behaviour during retrieval. The present experiments in rats found that DREADD-induced modulation of the MCN-PAG pathway during acquisition slowed subsequent extinction rate, while muscimol inactivation during consolidation had no detectable effect on freezing behaviour (suggesting comparability across species). The additional finding reported here is the observation that muscimol inactivation during consolidation increases the duration of both freezing and movement bouts during retrieval of the conditioned response. This suggests that during consolidation the influence of MCN on survival circuits has an effect on the subsequent temporal profile of behavioural responses during retrieval but not the strength of the fear-related memory. We also show that modulation of the MCN-PAG pathway during acquisition reduces the expression of fear-related USVs at this time. Taken all together, this raises the possibility that the MCN regulates different aspects of survival behaviour depending on the stage of fear conditioning.
 
-## Comparison to previous electrophysiological studies
+### Comparison to previous electrophysiological studies
 
 In regard to our electrophysiological findings, similar responses to CS+ onset in vlPAG have been reported previously by ourselves (Watson et al., 2016) and others (Ozawa et al., 2016; Wright and McDannald, 2019), but to our knowledge no equivalent response precisely time locked to CS+ offset has been described. This may be due to differences in the characteristics of the auditory cue used for conditioning (e.g. duration, intensity, and rise-fall time of the tone; Takahashi et al., 2004; Qin et al., 2007; Scholl et al., 2010; Harris et al., 2017; Sołyga and Barkat, 2019), but also because detection of such responses depends on the temporal resolution used for the analysis. For example, Watson et al., 2016 used, as is the case in many other electrophysiological studies, a 1 s bin width to visualise the patterns of vlPAG activity during CS+ presentation. Because offset responses are brief, temporally precise events, we found that a 40 ms bin width was needed to reliably capture them.
 
@@ -149,7 +217,7 @@ A further important question relates to what information CS+ offset responses en
 
 We also show that inactivation of the cerebellar output nucleus MCN during consolidation disrupts but does not abolish CS+ type 1 offset responses in vlPAG upon retrieval of the fear memory. This is in line with MCN modulating vlPAG activity (Vaaga et al., 2020), and advances understanding by raising the possibility that the vermal compartment of the cerebellum is involved in the timing of the memory trace, but not necessarily the origin of CS+ offset signals in vlPAG. The finding that CS+ onset and offset ERP responses occur earlier in the PAG compared with MCN would appear to provide contradictory evidence that MCN output can influence PAG activity. However, it is important to bear in mind that manipulation of the MCN-PAG pathway was carried out during consolidation, prior to retrieval. This would provide the means to modulate the subsequent timing of PAG neuronal activity, presumably through a long-term effect on survival circuits. The pattern and duration of MCN manipulation may also be important. In mice, phasic optogenetic stimulation of the MCN-PAG pathway during CS+ offset significantly enhanced extinction learning, while tonic activation using chemogenetics had the opposite effect (Frontera et al., 2020), suggesting that the temporal pattern of activation of vlPAG neurons by MCN determines the effect on extinction learning.
 
-## Functional significance
+### Functional significance
 
 A role of MCN in temporal patterning is in good agreement with the timing hypothesis of cerebellar function (Ivry, 1997; Cheron et al., 2016; D’Angelo, 2018). This hypothesis proposes that the cerebellum not only regulates the timing of movements to enable coordinated behaviour and motor learning, but that this temporal regulation extends to other functions of the CNS, including perceptual tasks that require the precise timing of salient events (Spencer and Ivry, 2013). The present study extends this concept to the encoding of fear memory by vlPAG. Our findings suggest that the cerebellum is important for the regulation of fear memory processes at multiple timescales: at the millisecond timescale to control the neural dynamic encoding of CS+ offset within vlPAG, and at longer timescales (seconds/hours/days) to regulate the duration of freezing and movement bouts during extinction, the rate of fear extinction, and the timing of expression of fear-related behaviours – MCN indirectly influences fear-conditioned freezing behaviour during extinction training but more directly is also involved in the expression of USVs during acquisition. It is tempting to speculate that the influence of MCN on survival circuits during consolidation that leads to the temporally precise encoding of CS+ offset by vlPAG during retrieval also underlies the behavioural effects we observed during extinction, but this remains to be determined.
 
@@ -159,109 +227,259 @@ In summary, MCN is part of a survival circuit network that regulates the precise
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (species)</td>
+      <td>Sprague–Dawley (rat) male</td>
+      <td>Envigo</td>
+      <td>RRID:RGD_737903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pAAV-CAG-tdTomato</td>
+      <td>Addgene, USA</td>
+      <td>RRID:Addgene_59462</td>
+      <td>Adeno-associated viral vector (AAV1)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>rAVV-CAG-GFP</td>
+      <td>Addgene, USA</td>
+      <td>RRID:Addgene_37825</td>
+      <td>Adeno-associated viral vector (AAVrg)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pAAV-hSyn-hM4D(Gi)-mCherry</td>
+      <td>Addgene, USA</td>
+      <td>RRID:Addgene_50475</td>
+      <td>Adeno-associated viral vector (AAV5)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pAAV-hSyn-EGFP</td>
+      <td>Addgene, USA</td>
+      <td>RRID:Addgene_50465</td>
+      <td>Adeno-associated viral vector (AAV5)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Muscimol</td>
+      <td>Sigma-Aldrich</td>
+      <td>M1523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozepine-N-oxide</td>
+      <td>Tocris Bioscience, UK</td>
+      <td>4963</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry (rabbit polyclonal)</td>
+      <td>BioVision</td>
+      <td>5993</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594</td>
+      <td>Molecular Probes</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CerePlex µ Headstage</td>
+      <td>Blackrock Microsystems, UT</td>
+      <td>PN-9716</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Blackrock Central Software Suite</td>
+      <td>Blackrock Microsystems, UT</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OBS</td>
+      <td>Open Broadcaster Software; 2012–2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Solomon Coder</td>
+      <td>András Péter, 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepLabCut</td>
+      <td>Wei and Kording, 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spike7</td>
+      <td>Cambridge Electronic Design Limited</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuroExplorer</td>
+      <td>Plexon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>RStudio, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>GraphPad, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All animal procedures were performed in accordance with the UK Animals (Scientific Procedures) Act of 1986 and were approved by the University of Bristol Animal Welfare and Ethical Review Body (PPL number: PA26B438F). A total of 47 adult male Sprague–Dawley rats (280–400 g; Harlan Laboratories) were used in this study. They were housed under normal environmental conditions in a normal 12 hr dark/light cycle and provided with food and water ad libitum. Animals were single housed after surgery to prevent damage to implants.
 
-## Surgical procedures for chronic implants
+### Surgical procedures for chronic implants
 
 Rats were anaesthetised initially with gaseous isoflurane, followed by intraperitoneal injections with ketamine and medetomidine (5 mg/100 g of Narketan 10 and Domitor, Vetoquinol). Each animal was mounted in a stereotaxic frame with atraumatic ear bars, and surgery was performed under aseptic conditions. Depth of anaesthesia was monitored regularly by testing corneal and paw withdrawal reflexes with supplementary doses of ketamine/medetomidine given as required. A midline scalp incision was made, and craniotomies were performed to gain access to the cerebellum and/or the PAG as required in each line of experiment. Microdrives and/or cannulae were implanted and/or viral injections were made as described below depending on the experiment. At the end of every surgery, the rat was administered the analgesic Metacam (Boehringer Ingelheim, 1 mg/kg) and the medetomidine antidote Atipamezole (Antisedan, Vetoquinol 0.1 mg i.p.). Animals were handled for 1 week prior to surgery and during recovery before any behavioural paradigms or electrophysiological recordings were undertaken.
 
-## Electrophysiological recordings and cannulae (n = 22 rats)
+### Electrophysiological recordings and cannulae (n = 22 rats)
 
 (1) Dual microdrive experiments (n = 6 rats). Two in-house-built microdrives, designed to slot closely next to each other, were positioned over craniotomies to allow tetrodes to be independently advanced into the right MCN (11.4 mm caudal from bregma, 1 mm lateral from midline, depth of 4 mm) and contralateral vlPAG (7.5 mm caudal from bregma, 1 mm lateral from midline, depth 4.8 mm). The microdrives were attached to the skull with screws and dental acrylic cement. Each microdrive contained 3–4 tetrodes for local field potential (LFP) and single-unit recording (0.0008-inch tungsten wire 99.95% CS 500 HML, insulated with VG Bond, 20 µm inner diameter, impedance 100–400 kΩ after gold plating; California Fine Wire). (2) Single microdrive experiments (n = 12 rats). These implants were the same as described above except that only one microdrive was implanted to record single units from the vlPAG. In eight of these animals, infusion cannulae were implanted bilaterally to target the MCN (four with muscimol and four with saline) during delay conditioning experiments (details below). The remaining four animals were used in trace conditioning experiments. Single units were recorded from three of these animals.
 
 Since similar electrophysiological data (see Figure 2—figure supplement 1) were recorded from the PAG obtained from animals with a dual microdrive (PAG and MCN, tetrodes-only controls) and those with a single microdrive (PAG, which received a saline infusion into MCN, saline controls), the results have been pooled (collectively termed ‘control’). There was no significant difference between the overall firing rates across habituation, acquisition, and extinction training (Figure 1—figure supplement 1C; F(2, 132) = 0.3644, p=0.7039, one-way ANOVA). Thus, it seems reasonable to assume that single-unit recording was stable over time and comparable between groups.
 
-## Muscimol infusions
+### Muscimol infusions
 
 Effects of the muscimol infusion on general motor coordination were carefully monitored. Immediately after the infusion all animals (n = 8 rats) displayed mild to moderate ataxia, providing a positive control that the muscimol was disrupting cerebellar activity. The severity of the ataxia gradually reduced over several hours, and the animals were behaviourally normal after 24 hr.
 
-## Anatomical pathway tracing (n = 7 rats)
+### Anatomical pathway tracing (n = 7 rats)
 
 To anterogradely map direct connections between MCN and PAG, 100 nl of an adeno-associated viral (AAV1) vector expressing tdTomato under the CAG promoter was injected unilaterally into the MCN (11.4 mm caudal from bregma, 1 mm lateral from midline, depth of 4.5 mm). pAAV-CAG-tdTomato (codon diversified) was a gift from Edward Boyden (Addgene viral prep # 59462-AAV1; http://n2t.net/addgene:59462; RRID:Addgene59462). Injections of the AAV were made following previously published methods (Hirschberg et al., 2017). In brief, the glass micropipette was connected to a 25 µl syringe (Hamilton, Bonaduz, Switzerland) via tubing filled with dyed mineral oil and was then backfilled with virus using a syringe driver (AL-1000, World Precision Instruments). To monitor progress of the injection, movement of the oil-vector capillary interface was monitored. Injections were made at 200 nl/min and the pipette left in situ for 5 min prior to removal. Survival time was 3 weeks prior to terminal perfusion and histology (see below).
 
-## DREADD surgery (n = 24 rats)
+### DREADD surgery (n = 24 rats)
 
 For the DREADD experiments, two AAV vectors were used: a control, pAAV-hSyn-EGFP (AAV5); and active DREADD, pAAV-hSyn-hM4D(Gi)-mCherry (AAV5) (both gifts from Bryan Roth, Addgene viral prep # 50465-AAV5 and # 50475-AAV5). Using the same techniques as outlined above, animals were injected bilaterally into MCN with 350 nl of either the control (n = 12) or the DREADD (n = 12). In the same surgery, bilateral cannulae (26-gauge guide cannula, PlasticsOne) were also chronically implanted with tips (33-gauge internal) located just above the vlPAG (7.5 mm caudal from bregma, 0.8 mm lateral from midline, at a depth of 5 mm).
 
-## Anatomical double labelling (n = 4 rats)
+### Anatomical double labelling (n = 4 rats)
 
 To assess the proportion of PAG projecting neurons transfected with the DREADD virus, four animals were injected with the DREADD virus in the MCN as described above and with a rAVV-CAG-GFP (AAVr) retrograde virus into vlPAG (7.5 mm caudal from bregma, 0.8 mm lateral from midline, at a depth of 5 mm). Survival time was 3 weeks prior to terminal perfusion and histology (see below).
 
-## Behavioural protocols
+### Behavioural protocols
 
-## Auditory cued fear conditioning (n = 46 rats)
+#### Auditory cued fear conditioning (n = 46 rats)
 
 The delay conditioning paradigm was based on Watson et al., 2016. On day 0, all animals underwent a session of habituation to the Skinner box (context A, Med Associates Inc, St Albans, VT) to act as a baseline for analysis prior to a session of acquisition in the same context (day 1). During acquisition, the CS (2 kHz, 10 s tone) was paired 7× with an US (0.5 s footshock, 0.75 mA) delivered at the end of the tone, except in four animals where the timing of the US was delayed 1 s after the CS (trace conditioning). In all animals, this was followed by a single session of extinction training in a different context (context B) on either day 2 (tetrodes-only animals) or day 3 (muscimol and saline control animals). During extinction, seven tone presentations (trials) were repeated in five blocks. The first two blocks (trials 1–14) were defined as early extinction (EE), when the animal was exhibiting high levels of freezing, while the last two blocks (trials 21–35) were defined as late extinction (LE), when the animals exhibited low levels of freezing.
 
-## Balance beam (n = 18 rats)
+#### Balance beam (n = 18 rats)
 
 This test was used to assess general motor coordination and balance (Luong et al., 2011). Animals were trained for three consecutive days to cross a 160-cm-long beam that ended on an enclosed safety platform (six traversals of the beam per day). On each day, the beam was progressively thinner in width (6 cm, 4 cm, and 2 cm). The 2 cm beam was then used for the test day. Baseline performance was recorded and then CNO was administered either i.p. or by intracranial infusion (for details, see below). After an interval of 15 min, the animal was retested on the beam. Beam balance performance was manually scored using Solomon Coder software (András Péter, 2019), measuring the time to cross the beam for the baseline and test trials.
 
-## Open field (n = 14 rats)
+#### Open field (n = 14 rats)
 
 This test was used to assess both general motor behaviour and anxiety levels. Animals were exposed for the first time to the circular arena on the test day (90 cm diameter, 51 cm height). They were placed at the perimeter of the arena and were allowed to explore for 10 min. Videos were recorded of exploratory behaviour for the whole session, and DeepLabCut (Wei and Kording, 2018) was used to track animal behaviour. The total distance travelled, and time spent in two equivalent areas of the arena (centre and a periphery) were calculated.
 
-## Elevated plus maze (n = 18 rats)
+#### Elevated plus maze (n = 18 rats)
 
 This test was used as an additional assessment of anxiety (Pellow et al., 1985). Animals were placed in a plus-shaped maze, 1 m above the floor, with two open and two closed arms (10 cm wide and 50 cm length) and allowed to explore the maze for 5 min. Performance was manually scored using Solomon Encoder software (András Péter, 2019) to calculate the percentage of total time spent in the open versus closed arms.
 
-## Data acquisition and analysis
+### Data acquisition and analysis
 
-## Electrophysiological recording
+#### Electrophysiological recording
 
 Multisite electrophysiological data were recorded using a Blackrock Microsystems (UT) data capture system synchronised with OptiTrak software. Raw data were processed offline to extract single-unit activity and LFPs (see ‘Neural data analysis’ section). Neural data for single units were sampled at 30 kHz and band-pass filtered between 300 Hz and 6 kHz. LFPs were extracted from the data by downsampling to 1 kHz and band-pass filtered at 1–32 Hz.
 
-## Auditory cued fear conditioning
+#### Auditory cued fear conditioning
 
 Video recording of animal behaviour during the fear conditioning paradigm was captured with an OptiTrak camera and software, allowing synchronisation with neural data. Fear-related freezing behaviour was manually scored using Solomon Coder software (András Péter, 2019). Freezing behaviour was identified as periods in which the animal had an absence of movement (except those associated with respiration and eye movements; Blanchard and Blanchard, 1969) while typically maintaining a crouching position. Percentage of time spent freezing was calculated for each trial during CS+ presentations and during ITIs. The duration of freezing and movement epochs was also assessed for each animal during three different time periods: (i) baseline (the average of the last five freezing and the average of the last five moving epochs immediately before CS+ onset), (ii) EE (same as baseline but the five freezing and movement epochs following the first CS+ onset), and (iii) LE (same as baseline but the first five freezing and movement epochs following onset of CS+ presentation 22). To evaluate the extinction rate of freezing behaviour, the slope of the trendline of changes in freezing % over the initial three blocks of extinction training was calculated (trials 1–21, by trial 21, 50% of control animals reached extinction). Rearing activity was counted as the number of events in which the animal moved from the floor to standing upright on its rear limbs. The number of rearing events during CS+ presentations and ITIs was counted.
 
-## USV recordings
+#### USV recordings
 
 USVs emitted at 22 kHz were recorded using an ANL-940-1 Ultrasonic Microphone and Amplifier (Med Associates, Inc) connected to the Blackrock Microsystems. Although USVs were recorded as an aliased signal (the maximum sampling rate of the recording system was 30 kHz, while the optimal sampling rate was 44 kHz), we were able to identify USV events. For analysis, USVs were visualised using Spike7 software (Cambridge Electronic Design Limited) and individual USV emissions manually identified and the total number counted during each recording session.
 
-## Control behavioural tests
+### Control behavioural tests
 
 Beam balance, open field, and elevated plus maze tests were recorded via standard webcams linked to OBS (Open Broadcaster Software; 2012–2020).
 
-## Inactivation experiments (n = 12)
+### Inactivation experiments (n = 12)
 
 In eight animals, muscimol (Sigma-Aldrich, 0.3 µl, at a rate of 0.3 µl/min) (or saline; n = 4 animals) was infused via indwelling cannulae at a rate of 0.3 µl/min to target MCN. The infusion was made immediately after acquisition (i.e. during early consolidation). Extinction training was carried out 48 hr after the infusion (day 3).
 
-## DREADD experiments
+### DREADD experiments
 
 A total of 24 rats were randomly assigned to either a saline control (n = 12) or a DREADD experimental group (n = 12) and coded so the experimenter was blinded. A total of 9 controls and 10 DREADD animals were included in the analysis. The remainder (five animals) were excluded because postmortem histology showed off-target cannulae placement.
 
 Unblinding occurred once all procedures and analysis were completed. Six weeks after viral transfection (see above), animals were tested in the following behavioural paradigms: auditory cued fear conditioning, beam balance, open field, and elevated plus maze. One animal was excluded from the study after the fear conditioning test because of poor health; a further three animals were excluded from the open field analysis because of technical problems with the video recording. In every animal, a volume of 500 nl of CNO (3 µM, Tocris) was infused at a rate of 0.5 µl/min to target the PAG, 15 min prior to each behavioural test (infusion pump Harvard Apparatus, PHD 2000 Infusion). Since the effect of CNO is estimated to last 60–90 min (Stachniak et al., 2014; Jendryka et al., 2019), this meant that during fear conditioning the pathway under study was likely to be inhibited during both acquisition (which lasted about 10 min) and also a subsequent period of early consolidation.
 
-## Physiological and behavioural verification of hM4D(Gi) receptor activation in the MCN
+### Physiological and behavioural verification of hM4D(Gi) receptor activation in the MCN
 
-## Histology
+### Histology
 
 At experimental end points, all animals were deeply anaesthetised (Euthatal, 200 mg/ml, Merial Animal Health) and terminated by transcardial perfusion (4% paraformaldehyde in 0.1 m phosphate buffer) and the brains extracted. After post-fixation, the brains were cryoprotected in 30% sucrose solution. The cerebellum was cut sagittally and the midbrain including the PAG cut coronally into sections of 40 or 60 μm thickness, respectively. To aid verification of electrode and cannula brain loci, sections were stained with cresyl violet.
 
 For visualisation of viral expression, immunohistochemistry for anti-mCherry (1:2000, Anti-mCherry Polyclonal Antibody host rabbit, BioVision, with 5% normal horse serum; 1:1000, Alexa Fluor 594 donkey anti rabbit IgG, Molecular Probes) was performed. No signal amplification was required for the eGFP controls. Sections were visualised on an Axioskop 2 Plus microscope (Zeiss) and photomicrographs captured using AxioVision software, or with a widefield microscope (Leica DMI6000, with Leica DFC365FX camera and Leica LASX live cell imaging workstation software).
 
-## Neural data analysis
+### Neural data analysis
 
-## Spike sorting
+#### Spike sorting
 
 Offline spike sorting was carried out using MClust software in MATLAB. Clustering was classified as single unit if L ratio < 0.35, ID > 15, and < 1% of interspike intervals was >2 ms (Schmitzer-Torbert et al., 2005). For an example tetrode recording and its isolated spikes, see Figure 1—figure supplement 1A and B. The firing rate of individual units was taken from MClust and verified using NeuroExplorer.
 
-## Data analysis of single units
+### Data analysis of single units
 
 For habituation, acquisition, and extinction training sessions, peri event time histograms (PETHs, 40 ms time bins) of the activity of individual units were created in NeuroExplorer, with tone onset and offset as time 0. During acquisition, the footshock caused electrical interference, so it was not possible to record unit activity during the 0.5 s period of stimulus delivery. The following analysis was performed in MATLAB. In all experimental groups, PETHs of unit activity to the unreinforced conditioned tone (CS+) during extinction training were constructed for individual units over all trials (1–35) and also separately for EE (trials 1–14) and LE trials (21–35). PETHs were z-score normalised to a 5 s baseline recording of unit activity immediately before CS+ onset and data grouped according to response type and averaged. A significant response was defined as one or more consecutive 40 ms time bins where the z-score was ±2 SD from baseline mean in the first 500 ms following the tone. The area of the response was calculated as the trapezoidal numerical integration of the first 1 s after tone onset or offset (arbitrary units). Peak z-score was measured for each unit at the time where the average peak response occurred. Total peak number was calculated as the sum of all (non-consecutive) 40 ms time bins where the z-score was ±2 SD from baseline mean within the first 500 ms after tone onset. Any single units in EE or LE that had peaks occurring after 500 ms were excluded from this analysis. The first 500 ms period after tone onset was also divided into 100 ms time bins and the proportion of units with maximal peak response within each bin expressed as a percentage of total number of maximal peaks. Maximal peak per unit was identified as the response with the largest increase relative to baseline mean.
 
-## Data analysis of auditory ERPs
+### Data analysis of auditory ERPs
 
 Auditory ERPs were extracted by averaging LFP activity in relation to tone onset and offset using MATLAB (mean based on n = 14 trials per animal). The tetrode recording site yielding the largest mean amplitude peak to trough response was identified in each animal and used to calculate group average data of peak amplitude of LFP response recorded in the PAG and cerebellum.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis and graphs were performed with GraphPad Prism 9. Data are shown as mean ± SEM, except for rearing behaviour, USVs, duration of freezing, and duration of movement, which are plotted as median ± IQR. Paired t-tests or Wilcoxon test were used for within-group comparisons, while unpaired t-tests or Mann–Whitney test and ANOVA were used to compare groups. Differences were considered significant at p<0.05. Pearson r correlation was used to compare the absolute change in freezing per animal from EE to LE versus the absolute change in unit area response from EE to LE. To investigate the relationship within animals between unit response size and freezing activity and the relationship between MCN and vlPAG ERPs, repeated-measures correlation (using RStudio; see Bakdash and Marusich, 2017) was calculated between response area at tone onset and offset and percentage of time spent freezing during blocks of seven tones (i.e. block 1 = tones 1–7; block 2 = tones 8–14, etc.).
 
-## Additional methodological considerations
+### Additional methodological considerations
 
 Our experiments were confined to the study of adult male rats. Gender differences are an important issue, and an increasing body of evidence suggests that there are neurobiological differences between male and female rodents in fear processing (Hurley and Adams, 2008; Bangasser and Cuarenta, 2021). The extent to which such differences influenced our findings remains an open question for future study.
 

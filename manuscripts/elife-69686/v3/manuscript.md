@@ -9,15 +9,15 @@
 
 ### Affiliations
 
-1. https://ror.org/019k1pd13 Department of Psychology and Social Work, Mid Sweden University Östersund Sweden
-2. https://ror.org/01apvbh93 Department of Psychology, Uppsala University Uppsala Sweden
-3. https://ror.org/056d84691 Department of Clinical Neuroscience, Karolinska Institutet Stockholm Sweden
+1. Department of Psychology and Social Work, Mid Sweden University Östersund Sweden ([ROR:019k1pd13](https://ror.org/019k1pd13))
+2. Department of Psychology, Uppsala University Uppsala Sweden ([ROR:01apvbh93](https://ror.org/01apvbh93))
+3. Department of Clinical Neuroscience, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
 
 † Corresponding author
 
 ## Abstract
 
-Understanding the neural basis for individual differences in the skin conductance response (SCR) during discriminative fear conditioning may inform on our understanding of autonomic regulation in fear-related psychopathology. Previous region-of-interest (ROI) analyses have implicated the amygdala in regulating conditioned SCR, but whole brain analyses are lacking. This study examined correlations between individual differences in SCR during discriminative fear conditioning to social stimuli and neural activity throughout the brain, by using data from a large functional magnetic resonance imaging study of twins ( N = 285 individuals). Results show that conditioned SCR correlates with activity in the dorsal anterior cingulate cortex/anterior midcingulate cortex, anterior insula, bilateral temporoparietal junction, right frontal operculum, bilateral dorsal premotor cortex, right superior parietal lobe, and midbrain. A ROI analysis additionally showed a positive correlation between amygdala activity and conditioned SCR in line with previous reports. We suggest that the observed whole brain correlates of SCR belong to a large-scale midcingulo-insular network related to salience detection and autonomic-interoceptive processing. Altered activity within this network may underlie individual differences in conditioned SCR and autonomic aspects of psychopathology.
+Understanding the neural basis for individual differences in the skin conductance response (SCR) during discriminative fear conditioning may inform on our understanding of autonomic regulation in fear-related psychopathology. Previous region-of-interest (ROI) analyses have implicated the amygdala in regulating conditioned SCR, but whole brain analyses are lacking. This study examined correlations between individual differences in SCR during discriminative fear conditioning to social stimuli and neural activity throughout the brain, by using data from a large functional magnetic resonance imaging study of twins (N = 285 individuals). Results show that conditioned SCR correlates with activity in the dorsal anterior cingulate cortex/anterior midcingulate cortex, anterior insula, bilateral temporoparietal junction, right frontal operculum, bilateral dorsal premotor cortex, right superior parietal lobe, and midbrain. A ROI analysis additionally showed a positive correlation between amygdala activity and conditioned SCR in line with previous reports. We suggest that the observed whole brain correlates of SCR belong to a large-scale midcingulo-insular network related to salience detection and autonomic-interoceptive processing. Altered activity within this network may underlie individual differences in conditioned SCR and autonomic aspects of psychopathology.
 
 ## Introduction
 
@@ -29,6 +29,89 @@ Previous studies of the neural correlates of individual differences in condition
 
 A limiting factor of previous studies of the neural correlates of individual differences in conditioned SCR is that they generally have been based on small sample sizes (N ≤ 27) and have reported results from region of interest analyses (ROIs). Notably, most previous studies have sample sizes that fall below the minimum guidelines for correlation analysis in fMRI research (Yarkoni, 2009; Yarkoni and Braver, 2010), which recommend a sample size of at least N = 40 for determination of inter-individual correlations. Studies that do not comply with this minimum recommendation are highly susceptible to type II errors (i.e. not detecting real effects, even within ROIs) as well as gross inflation of reported effect sizes (Yarkoni, 2009). Furthermore, some of the reported studies also use non-standard statistical procedures, such as reporting results from uncorrected whole brain analyses (Petrovic et al., 2008), or initially use an uncorrected whole brain analysis followed up by stringent FWE-correction within masks only targeting regions implicated in the prior uncorrected analysis (Dunsmoor et al., 2011), which raises the risk for type I error (see e.g. Poldrack et al., 2017) and could reduce the reliability of the results. Only two previous studies that investigated the association between individual differences in conditioned SCR and neural activity have met the minimum requirements for sample size suggested by Yarkoni and Braver, 2010: MacNamara et al., 2015 (N = 49) and Marin et al., 2020 (N = 60). However, both of these studies have still reported results based on uncorrected statistics in pre-defined ROIs (See Table 1 for a comparison of previous studies investigating neural correlates of SCR).
 
+**Table 1.**
+ Previous studies examining the association between individual differences in skin conductance responses (SCR) and neural activation during fear conditioning.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>Participants (n)</th>
+      <th>Analysis</th>
+      <th>Definition of individual SCR scores</th>
+      <th>Definition of neural activation</th>
+      <th>ROI(s)</th>
+      <th>Statistical threshold</th>
+      <th>Findings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LaBar et al., 1998</td>
+      <td>5</td>
+      <td>Correlation</td>
+      <td>CS+ minus CS-</td>
+      <td>No. of voxels inCS+ &gt; CS- contrast</td>
+      <td>Amygdala, rostral and caudal ACC</td>
+      <td>PUnc &lt; 0.001</td>
+      <td>Positive correlation in Amygdala</td>
+    </tr>
+    <tr>
+      <td>Phelps et al., 2004</td>
+      <td>11</td>
+      <td>Correlation</td>
+      <td>CS+ minus CS-</td>
+      <td>CS+ &gt; CS- contrast</td>
+      <td>Amygdala, mid PFC</td>
+      <td>PUnc &lt; 0.001</td>
+      <td>Positive correlation in Amygdala</td>
+    </tr>
+    <tr>
+      <td>Dunsmoor et al., 2011</td>
+      <td>14</td>
+      <td>Correlation</td>
+      <td>CS+ minus CS-</td>
+      <td>CS+ &gt; CS- contrast</td>
+      <td>Whole brain, Amygdala</td>
+      <td>Whole brain: PUnc &lt; 0.001 then ROI: PFWE &lt; 0.05</td>
+      <td>Positive correlation in left Amygdala</td>
+    </tr>
+    <tr>
+      <td>Petrovic et al., 2008</td>
+      <td>27</td>
+      <td>Correlation</td>
+      <td>Late(CS+ minus CS-) - Early(CS+ minus CS-)</td>
+      <td>CS+ &gt; CS- contrast</td>
+      <td>Amygdala, Fusiform Gyrus and pain regions from Peyron et al., 2000</td>
+      <td>PUnc &lt; 0.001</td>
+      <td>Positive correlation in Amygdala</td>
+    </tr>
+    <tr>
+      <td>MacNamara et al., 2015</td>
+      <td>49</td>
+      <td>Correlation</td>
+      <td>CS+ minus CS-</td>
+      <td>CS+ &gt; CS- contrast</td>
+      <td>Amygdala, Insula, ACC, cerebellum (lobule 4–5), mPFC, precentral gyrus, STG</td>
+      <td>PUnc &lt; 0.001 then PFWE &lt; 0.05 using ClusterSim</td>
+      <td>Positive correlation in right Amygdala and left SMA. Positive correlation in left Amygdala using relaxed statistical threshold.</td>
+    </tr>
+    <tr>
+      <td>Marin et al., 2020</td>
+      <td>60</td>
+      <td>High vs. low SCR responders (drawn from larger sample of N = 109)</td>
+      <td>CS+ minus CS-</td>
+      <td>CS+ &gt; CS- contrast</td>
+      <td>Amygdala, Insula, dACC, sgACC, vmPFC</td>
+      <td>Combined ROIs: PUnc &lt; 0.001; Single ROIs: PFWE &lt; 0.05</td>
+      <td>High SCR responders &gt; Low responders: Left Amygdala, left Insula and vmPFC</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: ACC, Anterior cingulate cortex; dACC, dorsal ACC; FWE, Family-wise error, mPFC, medial PFC; PFC, Prefrontal cortex; sgACC, subgenual ACC; Unc, Uncorrected; vmPFC, ventromedial PFC._
+
 The previous focus on ROIs excludes activations in many parts of the brain that are potentially important for explaining individual differences in conditioned SCR. Fear conditioning is known to activate a large set of cortical, subcortical, and brainstem areas other than the ROIs that have so far been investigated for their correlation with SCR (Fullana et al., 2016). In their meta-analysis, Fullana et al., 2016 proposed that neural regions consistently activated during fear conditioning collectively constitute a large-scale neural network, centered on the dACC and anterior insula, that represents autonomic-interoceptive processing in response to conditioned stimuli (Fullana et al., 2016; based on findings by e.g. Cameron, 2009; Craig, 2009; Critchley and Harrison, 2013; Medford and Critchley, 2010). Based on this proposal, one would expect individual differences in autonomic conditioned responding, such as those measured by SCR (Dawson et al., 2007), to correlate with conditioning-related activity within this broader network.
 
 Because previous studies only studied correlations to SCR in a handful of brain regions and in relatively small samples, the primary aim of this study was to investigate the whole brain correlations of individual differences in conditioned SCR by analyzing data from a large twin sample performing a fear conditioning task (N = 285 individuals). Similar to previous studies (e.g. Phelps et al., 2004; Dunsmoor et al., 2011; MacNamara et al., 2015), the present study used differential SCR as a between-subjects regressor of CS+ > CS- BOLD activation. Previous studies have not found whole-brain correlations surviving correction for multiple comparisons. In the current study, the sample size of N = 285 individuals provided sufficient statistical power to detect correlations of medium effect size and above (r > .251) throughout the whole brain (see section 4.3.3 in the Materials and methods section for details), thereby substantially improving upon the power of previous whole brain analyses of smaller sample sizes. A family-wise error (FWE) corrected alpha level of α = .05 was used to constrain the risk of type I errors to an acceptable level (see e.g. Poldrack et al., 2017), which was not done in previous studies.
@@ -37,25 +120,131 @@ Based on findings from previous studies of individual differences in conditioned
 
 ## Results
 
-## SCR
+### SCR
 
 There was no difference in SCR to CS+ and CS- during habituation (M = 0.35, SD = 0.60; t(285) = 0.27; p = 0.79). During acquisition, participants displayed significantly larger SCRs to the CS+ relative to the CS- (t(284) = 23.28; p < 0.001; d = 1.38), indicating successful conditioning. An SCR difference score between the CS+ and the CS- was calculated for each participant (M = 0.64, SD = 0.47). The distribution of SCR difference scores revealed substantial individual differences (see Appendix 1). The average shock expectancy was greater to the CS+ (M = 0.68, SD = 0.26) than the CS- (M = 0.09, SD = 0.21; t285=25.52; p < 0.05).
 
-## Brain responses
+### Brain responses
 
 The effects of fear conditioning on fMRI responses during habituation and acquisition (CS+ > CS-) are described in Appendix 6. We found no differences in neural responses to the CS+ compared to the CS- during habituation. During acquisition, the pattern of activation to the CS+ relative to the CS- was very similar to the pattern reported in the meta-analysis by Fullana et al., 2016 and included large parts of the striatum, the insula, midline areas of the cingulum, lateral temporal cortex, parietal cortex, and the supplementary motor areas. Of note, the whole brain analysis also revealed greater activation to the CS+ than to the CS- bilaterally in the amygdala.
 
-## Correlation between SCR difference scores and brain responses during fear conditioning
+### Correlation between SCR difference scores and brain responses during fear conditioning
 
-## Whole brain analysis
+#### Whole brain analysis
 
 Fear conditioning-related brain responses (CS+ > CS-) were correlated to SCR difference scores in the dorsal anterior cingulate cortex/anterior midcingulate cortex, right anterior insula, right inferior frontal gyrus/frontal operculum, bilateral temporoparietal junction/superior temporal gyrus, right superior parietal lobe/postcentral gyrus, bilateral superior frontal gyri/dorsal premotor cortex, and a right-lateralized midbrain region in areas consistent with periaqueductal gray and reticular formation. For a summary of results, see Figure 1 and Table 2. In order to ensure the reliability of our findings and facilitate comparison with prior studies, we performed the same analysis using average square root transformed raw value SCRs instead of Z transformed SCRs. We also performed the same analysis without any participant exclusion (see the Materials and methods section regarding participant exclusion). Both of these analyses resulted in a very similar pattern of correlations (see Appendix 3 and 4), showing that the results seem robust to different types of SCR normalization and to different choices regarding participant exclusion. In addition, we also repeated our analysis using an extended SCR response window as well as controlling for shock expectancy and genetic influence, again with similar results (see Appendix 7—table 1). Finally, as pointed out by a reviewer, the Ledalab software package (v 3.4.9; Benedek and Kaernbach, 2010) presently used for SCR scoring has been shown to yield no better and sometimes worse results than standard peak scoring (Bach, 2014). For this reason, we also repeated our whole brain analysis using the PsPM software package (v 5.1.1) (Bach and Friston, 2013). This analysis once again implicated the same set of regions. See Appendix 7 for results and Appendix 8 for additional information on how this analysis was conducted (complementary analysis).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69686/elife-69686-fig1-v3.jpg)
 
-**Figure 1.:** The sample consisted of 285 participants who passed the following exclusion criteria: pregnancy, inability to lie still for a 1 hr duration, intolerance of tight confinements, ongoing psychological treatment, metal objects in the body (due to surgery, fragmentation, etc.), current alcohol or drug-related problems, use of psychotropic medications, unsuccessful recording of skin conductance responses, loss of brain imaging data due to excessive head movement, and participant failure to comply with task instruction regarding button press in at least 80% of trials. (A) Activation map of key implicated neural regions. Color-coded t values ranged from t = 3 to t = 6. The statistical image was thresholded at P < 0.05 FWE-corrected and displayed on an anatomical brain template. (B) Scatter plots depicting correlation between SCR difference scores and eigenvariates from significant whole brain clusters in the dorsal anterior cingulate cortex (upper panel) and the temporoparietal junction (lower panel). R = right dACC = dorsal anterior cingulate cortex. TPJ = temporoparietal junction. IFG = inferior frontal gyrus. PAG/RF = periaqueductal gray/reticular formation. AI = anterior insula.Figure 1—source data 1.Figure 1B, Figure 2B and statistical analyses reported in the section ‘Relative contribution of neurofunctional correlates to individual differences in SCR’, as well as Appendix 1—figure 1, Appendix 2—figure 1 and Appendix 5—table 1.Scatter plots depicting correlation between SCR difference scores and eigenvariates from significant neural regions were rendered using JASP version 0.14.1 (JASP Team, 2020). SCR source data was computed within the Ledalab software package (v 3.4.9; Benedek and Kaernbach, 2010) implemented in Matlab 2020a (Mathworks, Inc, Natick, MA) and individual SCR difference scores were computed using the JASP software (see Materials and methods, sections 4.2.4 and 4.3.2). fMRI source data was computed from the SPM software and extracted as eigenvariates from all significant clusters (see Materials and methods, section 4.3.3) and matched to the corresponding SCR difference scores in a comma separated values (CSV) file (attached). Within the attached file you can find SCR scores for each participant using both Z transformation and square root transformation, as well as average SCR responding to the CS+ and CS-, separately. Also included are extracted eigenvariates from all implicated regions in the whole brain analysis and the amygdala ROI analysis (section 2.2.2). Notice that this data also constitutes source data for Figure 2B as well as for statistical analyses reported in section 2.2.3 and for Appendix 1—figure 1, Appendix 2—figure 1, and Appendix 5—table 1.
+**Figure 1.:** The sample consisted of 285 participants who passed the following exclusion criteria: pregnancy, inability to lie still for a 1 hr duration, intolerance of tight confinements, ongoing psychological treatment, metal objects in the body (due to surgery, fragmentation, etc.), current alcohol or drug-related problems, use of psychotropic medications, unsuccessful recording of skin conductance responses, loss of brain imaging data due to excessive head movement, and participant failure to comply with task instruction regarding button press in at least 80% of trials. (A) Activation map of key implicated neural regions. Color-coded t values ranged from t = 3 to t = 6. The statistical image was thresholded at P < 0.05 FWE-corrected and displayed on an anatomical brain template. (B) Scatter plots depicting correlation between SCR difference scores and eigenvariates from significant whole brain clusters in the dorsal anterior cingulate cortex (upper panel) and the temporoparietal junction (lower panel). R = right dACC = dorsal anterior cingulate cortex. TPJ = temporoparietal junction. IFG = inferior frontal gyrus. PAG/RF = periaqueductal gray/reticular formation. AI = anterior insula.
 
-## Correlation between individual differences in conditioned SCR and amygdala activation
+**Table 2.**
+ Whole brain correlation to conditioned SCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Anatomical region</th>
+      <th rowspan="2">Hemisphere</th>
+      <th rowspan="2">Voxels</th>
+      <th rowspan="2">t</th>
+      <th colspan="3">MNI Coordinates</th>
+    </tr>
+    <tr>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dorsal Anterior Cingulate Cortex/Anterior Midcingulate Cortex</td>
+      <td>N/A</td>
+      <td>50</td>
+      <td>4.79</td>
+      <td>6</td>
+      <td>8</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Anterior Insula</td>
+      <td>Right</td>
+      <td>20</td>
+      <td>4.65</td>
+      <td>36</td>
+      <td>20</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Inferior Frontal Gyrus/Frontal Operculum</td>
+      <td>Right</td>
+      <td>138</td>
+      <td>5.80</td>
+      <td>56</td>
+      <td>10</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Temporoparietal Junction/Superior Temporal Gyrus</td>
+      <td>Right</td>
+      <td>81</td>
+      <td>5.66</td>
+      <td>64</td>
+      <td>–40</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Superior Frontal Gyrus/Dorsal Premotor Cortex</td>
+      <td>Right</td>
+      <td>44</td>
+      <td>5.21</td>
+      <td>18</td>
+      <td>0</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>Midbrain</td>
+      <td>Right</td>
+      <td>59</td>
+      <td>5.22</td>
+      <td>10</td>
+      <td>–30</td>
+      <td>–12</td>
+    </tr>
+    <tr>
+      <td>Superior Parietal Lobe/Postcentral Gyrus</td>
+      <td>Right</td>
+      <td>3</td>
+      <td>4.52</td>
+      <td>22</td>
+      <td>–46</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>Superior Frontal Gyrus/Dorsal Premotor Cortex</td>
+      <td>Left</td>
+      <td>2</td>
+      <td>4.46</td>
+      <td>–14</td>
+      <td>-2</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>Temporoparietal Junction/Superior Temporal Gyrus</td>
+      <td>Left</td>
+      <td>1</td>
+      <td>4.37</td>
+      <td>–62</td>
+      <td>–36</td>
+      <td>22</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. MNI coordinates and t values represent significant peak voxels of each cluster. Statistical significance was calculated using t tests implemented within the SPM software with an FWE corrected alpha level of α = .05._
+
+#### Correlation between individual differences in conditioned SCR and amygdala activation
 
 To test the hypothesis of a correlation between individual differences in conditioned SCR and amygdala activation, we performed an ROI analysis. This analysis demonstrated significant correlations bilaterally in the amygdala (right peak MNI coordinates: 20, –2, –14; cluster size = 38 voxels; t = 3.68; left peak MNI coordinates: −22, –2, –16; cluster size = 8 voxels; t = 3.08). See Figure 2.
 
@@ -63,7 +252,7 @@ To test the hypothesis of a correlation between individual differences in condit
 
 **Figure 2.:** The sample consisted of 285 participants who passed the following exclusion criteria: pregnancy, inability to lie still for a 1 hr duration, intolerance of tight confinements, ongoing psychological treatment, metal objects in the body (due to surgery, fragmentation, etc.), current alcohol or drug-related problems, use of psychotropic medications, unsuccessful recording of skin conductance responses, loss of brain imaging data due to excessive head movement, and participant failure to comply with task instruction regarding button press in at least 80% of trials. (A) Activation map depicting significant activation on coronal section at MNI Y-coordinate = –2. Color-coded t values range from t = 2.0 to t = 4.0. The statistical image was thresholded at p < 0.05 FWE-corrected. (B) Scatter plot depicting correlation between SCR difference scores and eigenvariates from the significant right amygdala cluster within the amygdala ROI. For source data to (B), see Figure 1—source data 1.
 
-## Relative contribution of neurofunctional correlates to individual differences in SCR
+#### Relative contribution of neurofunctional correlates to individual differences in SCR
 
 In order to examine the independent and/or shared contributions of neural responses to SCR, we extracted eigenvariates of contrast values from all significant clusters in the whole brain analysis. Eigenvariates were then entered as regressors in a hierarchical regression analysis. Together, regional eigenvariates demonstrated a significant correlation with conditioned SCR with a moderate effect size (F(1, 284) = 4.82; r = .37; r2 = .14; p < 0.001). No region contributed unique, statistically significant variance (see Appendix 5). Source data for all hierarchical regression analyses can be found in Figure 1—source data 1.
 
@@ -83,13 +272,13 @@ In summary, the present study is the largest study to date on the neural correla
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 This study was part of a twin study of genetic influences on fear-related brain functions. Results describing genetic influences on SCR and fMRI responses during fear conditioning will be reported elsewhere. A total of 311 adult monozygotic (N = 138) and dizygotic (N = 147) twin volunteers were recruited from the Swedish Twin Registry (Svenska Tvillingregistret). Six participants were excluded before data collection because they were unable to undergo magnetic resonance imaging. After data collection, another twenty participants were excluded from analysis due to one or several of the following reasons: unsuccessful recording of skin conductance responses (2 participants); loss of brain imaging data due to excessive head-movement (5 participants); failure to indicate shock expectancy with button press in at least 80% of trials (11 participants; see section 4.3.1); use of psychotropic medication (7 participants). Thus, 285 participants (female = 167, mean age = 33.92 years, age range = 20–58 years, SD = 10.11 years) were included in the analyses. All of these 285 participants (138 monozygotic and 147 dizygotic twins) passed the following exclusion criteria: pregnancy, inability to lie still for a 1 hr duration, intolerance of tight confinements, ongoing psychological treatment, metal objects in the body (due to surgery, fragmentation, etc.), ongoing substance abuse, or use of psychotropic medications. Non-psychotropic medication was not an exclusion criterion. However, in order to ensure the reliability of our findings, we also performed an additional supplementary analysis wherein all participants with fMRI and SCR data were included (N = 303; see Appendix 4). Participants receiving psychological treatment remained excluded as treatment could affect brain responses to emotional stimuli. Although this may be less problematic for the current analysis of brain correlates of SCR, it could be a problem when analyzing correlations between members of a twin pair if one individual receives treatment and one does not (these results will be reported elsewhere). Participants provided written informed consent in accordance with guidelines from the Regional Ethical Review Board in Uppsala and received SEK 1000 as reimbursement for their participation. The study protocol was approved by the Regional Ethical Review Board in Uppsala (Dnr 2016/171).
 
-## Materials
+### Materials
 
-## Stimuli and contexts
+#### Stimuli and contexts
 
 During the discriminative fear conditioning task, two male, three-dimensional, virtual humanoid characters and a virtual environment (Figure 3) were used. The characters and the environments were created in Unity (version 5.2.3, Unity Technologies, San Francisco, CA) and consisted of a room with four red brick walls, a grey concrete roof, and a wooden floor.
 
@@ -97,15 +286,15 @@ During the discriminative fear conditioning task, two male, three-dimensional, v
 
 **Figure 3.:** Two male characters were displayed in the scanner during the fear conditioning task (top left, bottom right). One character predicted an electric shock (CS+) whereas the other served as a control stimulus and was never followed by shock (CS-). Between character presentations, participants viewed the empty virtual environment (top right, bottom left).
 
-## Stimulus presentation software
+#### Stimulus presentation software
 
 The virtual characters and the environment were shown on a flat surface in the MR scanner by a projector (Epson EX5260). Stimulus presentation was handled by the Unity 3D-engine (version 5.2.3, Unity Technologies, San Francisco, CA). The Unity software communicated with BIOPAC (BIOPAC Systems, Goleta, CA) through a custom-made serial interface using standard libraries by Microsoft (Microsoft Corporation, Albuquerque, New Mexico).
 
-## Brain imaging
+#### Brain imaging
 
 Imaging data were acquired using a 3.0 T scanner (Discovery MR750, GE Healthcare) and an eight-channel head-coil. Foam wedges, earplugs, and headphones were used to reduce head motion and scanner noise. We acquired T1-weighted structural images with whole-head coverage, TR = 6400ms, TE = 28ms, acquisition time = 6.04 min, and flip angle = 11°. Functional images were acquired using gradient echo-planar-imaging (EPI), TR = 2400ms, TE = 28ms, flip angle = 80°, slice thickness = 3.0 mm with no spacing, axial orientation, frequency direction R/L, interleaved (bottom up), number of slices were 47 and voxel size 3.0 mm3. Higher order shimming was performed, and five dummy scans were run before the experiment.
 
-## Skin conductance responses
+#### Skin conductance responses
 
 Skin conductance was recorded with the MP-150 BIOPAC system (BIOPAC Systems, Goleta, CA). Radio-translucent disposable dry electrodes (EL509, BIOPAC Systems, Goleta, CA) were coated with isotonic gel (GEL101, BIOPAC Systems, Goleta, CA) and placed on the palmar surface of the participant’s left hand. The signal was high-pass (0.05 Hz) filtered using the built-in BIOPAC hardware Butterworth filter. SCRs were scored using Ledalab software package (v 3.4.9) (Benedek and Kaernbach, 2010) implemented in Matlab 2020a (Mathworks, Inc, Natick, MA). Minimum response threshold was set to 0.01 µS. After filtering and before analysis, the SCR signal was down-sampled from 2000 Hz to 200 Hz (factor mean). The options specified for the Ledalab batch run were 'open', 'biotrace', 'downsample', 10, 'analyze','CDA', 'optimize',4. SCR was analyzed using standard peak score (through-to-peak, TTP.AmpSum) 1–4 s after CS onset for each participant. To check that whole brain SCR correlations were not dependent on the choice of peak scoring window, we also analyzed SCR with a window of 1–5 s after CS onset. We also scored SCR using a software package called PsPM (Bach and Friston, 2013), which uses a model-based approach in estimating SCR (see Appendix 8 for details). We performed these variants of SCR scoring as part of a sensitivity analysis to ensure that correlation results between SCR and brain activity were not dependent on the choice of SCR scoring method.
 
@@ -113,9 +302,9 @@ Unlike previous studies considering the neural correlates of CS+ > CS- SCR (LaBa
 
 Skin conductance was recorded without a low-pass filter. By using this recording procedure, we noticed that a small number of trials produced unreasonably high SCR values (e.g. 17 mS responding), likely due to electrode movement. As such extreme values may skew correlations even using standard scores, we excluded from all analysis trials with a raw value SCR score > 3 mS. This was based on previous research indicating a general maximum SCR between 2 and 3 mS using similar methodology as the one used in this paper (Boucsein, 2012). Using this criterion 97/12200 trials were excluded from analysis (0.795% of all trials).
 
-## Procedure
+### Procedure
 
-## Fear conditioning task
+#### Fear conditioning task
 
 Two virtual characters served as CSs, one as a threat cue (CS+) predicting the US and the other as a control cue (CS-). CSs were presented on a screen in the MR scanner at a distance of 2.7 m in the virtual environment. The relatively long distance of 2.7 m was selected in order for the effect of conditioning on SCR not to be occluded by proximal threat effects on SCR, as was observed in two previous studies by Rosén et al., 2017; Rosén et al., 2019. Participants were told prior to the experiment that they could learn to predict the US but were not told which character served as the CS+. Participants were furthermore instructed to indicate which character would be followed by the US by selecting either ‘yes’ or ‘no’ by pressing a button immediately following each CS presentation. The inclusion of the button presses was to assure participants’ attention during the task as well as to confirm that participants, overall, learned the contingency. Which of the two characters that served as CS+ and CS- was counterbalanced across participants using four different stimulus presentation orders. Each CS presentation lasted for 6 s followed by an inter-stimulus interval of 8–12 s, during which the context was still displayed, but no CS was present.
 
@@ -125,15 +314,15 @@ The US consisted of an electric shock delivered to the subjects’ wrist via rad
 
 In all sequences, the first CS+ presentation following the 4 CS+ habituation trials was always reinforced. The sequences differed in whether the CS- or CS+ started the acquisition phase. If the reinforced CS+ is always the first trial in the acquisition phase, the CS- trial following the US will be elevated due to sensitization. This was why the presentation order was counterbalanced.
 
-## Analysis of SCR data
+#### Analysis of SCR data
 
 SCR Z scores were averaged separately across CS+ and CS- trials within each participant. A paired samples t test was performed to compare the average CS+ SCRs to the average CS- SCRs at an alpha level (of significance) of α = .05 using JASP software (version 0.14.1, JASP Team (2020)). This allowed us to determine whether the fear conditioning task was successful in evoking greater SCR to the CS+ than to the CS-. Secondly, in order to examine the correlations between conditioned SCR and fMRI responses during fear conditioning, an SCR difference score was calculated for each participant by subtracting the average SCR to CS+ presentations from the average SCR to CS- presentations. The distribution of SCR difference scores was examined to ensure the validity and sensitivity of neural regression analyses (see Appendix 1 regarding methodology and results of SCR distribution analysis).
 
-## Online recording of shock expectancy
+#### Online recording of shock expectancy
 
 Participants pressed one of two buttons each time a CS was displayed to indicate whether they were expecting to receive an electric shock (coded 1) or not (coded 0). The mean response was computed for the CS+ and the CS- presentations. A t-test was performed in JASP to compare mean shock expectancy to the CS+ and CS-, indicating whether participants learned the contingency.
 
-## Analysis of fMRI data
+#### Analysis of fMRI data
 
 Analyses of fMRI data were performed using SPM12 (version 6685, Wellcome Department of Cognitive Neurology, University College, London). Preprocessing of images included interleaved slice time correction and realignment of functional volumes. For each participant, the mean functional image was co-registered to the anatomical T1-weigthed image. Quality control of functional images was performed using MRIQC v0.16 (mask validation matching; Esteban et al., 2017). Realignment parameters were inspected for excessive movement (defined as 5 mm) during scanning. Anatomical images were segmented using 4 tissue classes and normalized to Montreal Neurological Institute (MNI) standard space. The co-registered functional images were next warped to MNI space using the same parameters that were used for the anatomical image. An 8 mm FHMW Gaussian kernel was used for smoothing of the functional images.
 

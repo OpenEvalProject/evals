@@ -20,21 +20,21 @@
 
 ### Affiliations
 
-1. https://ror.org/04q84b570 Genomic Epidemiology branch, International Agency for Research on Cancer/World Health Organization (IARC/WHO) Lyon France
-2. https://ror.org/052gg0110 Cancer Epidemiology Unit, University of Oxford Oxford United Kingdom
-3. https://ror.org/030qtrs05 MRC Integrative Epidemiology Unit, Bristol Population Health Science Institute, Bristol Medical School (PHS) Bristol United Kingdom
-4. https://ror.org/04h699437 Department of Cardiovascular Sciences, University of Leicester Leicester United Kingdom
-5. https://ror.org/0187kwz08 NIHR Leicester Biomedical Research Centre, Glenfield Hospital Leicester United Kingdom
+1. Genomic Epidemiology branch, International Agency for Research on Cancer/World Health Organization (IARC/WHO) Lyon France ([ROR:04q84b570](https://ror.org/04q84b570))
+2. Cancer Epidemiology Unit, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+3. MRC Integrative Epidemiology Unit, Bristol Population Health Science Institute, Bristol Medical School (PHS) Bristol United Kingdom ([ROR:030qtrs05](https://ror.org/030qtrs05))
+4. Department of Cardiovascular Sciences, University of Leicester Leicester United Kingdom ([ROR:04h699437](https://ror.org/04h699437))
+5. NIHR Leicester Biomedical Research Centre, Glenfield Hospital Leicester United Kingdom ([ROR:0187kwz08](https://ror.org/0187kwz08))
 6. Ludwig Lausanne Branch, Faculty of Biology and Medicine Lausanne Switzerland
-7. https://ror.org/02pttbw34 Institute for Clinical and Translational Research, Baylor College of Medicine Houston United States
-8. https://ror.org/01s5axj25 Lunenfeld-Tanenbaum Research Institute, Sinai Health Toronto Canada
-9. https://ror.org/00f54p054 Departament of Epidemiology and Population Health, Stanford University Stanford United States
+7. Institute for Clinical and Translational Research, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+8. Lunenfeld-Tanenbaum Research Institute, Sinai Health Toronto Canada ([ROR:01s5axj25](https://ror.org/01s5axj25))
+9. Departament of Epidemiology and Population Health, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
 ## Abstract
 
-Genome-wide association studies (GWASs) have identified genetic susceptibility variants for both leukocyte telomere length (LTL) and lung cancer susceptibility. Our study aims to explore the shared genetic basis between these traits and investigate their impact on somatic environment of lung tumours. We performed genetic correlation, Mendelian randomisation (MR), and colocalisation analyses using the largest available GWASs summary statistics of LTL (N=464,716) and lung cancer (N=29,239 cases and 56,450 controls). Principal components analysis based on RNA-sequencing data was used to summarise gene expression profile in lung adenocarcinoma cases from TCGA (N=343). Although there was no genome-wide genetic correlation between LTL and lung cancer risk, longer LTL conferred an increased risk of lung cancer regardless of smoking status in the MR analyses, particularly for lung adenocarcinoma. Of the 144 LTL genetic instruments, 12 colocalised with lung adenocarcinoma risk and revealed novel susceptibility loci, including MPHOSPH6 , PRPF6 , and POLI . The polygenic risk score for LTL was associated with a specific gene expression profile (PC2) in lung adenocarcinoma tumours. The aspect of PC2 associated with longer LTL was also associated with being female, never smokers, and earlier tumour stages. PC2 was strongly associated with cell proliferation score and genomic features related to genome stability, including copy number changes and telomerase activity. This study identified an association between longer genetically predicted LTL and lung cancer and sheds light on the potential molecular mechanisms related to LTL in lung adenocarcinomas. Institut National du Cancer (GeniLuc2017-1-TABAC-03-CIRC-1-TABAC17‐022), INTEGRAL/NIH (5U19CA203654-03), CRUK (C18281/A29019), and Agence Nationale pour la Recherche (ANR-10-INBS-09).
+Background:Genome-wide association studies (GWASs) have identified genetic susceptibility variants for both leukocyte telomere length (LTL) and lung cancer susceptibility. Our study aims to explore the shared genetic basis between these traits and investigate their impact on somatic environment of lung tumours.Methods:We performed genetic correlation, Mendelian randomisation (MR), and colocalisation analyses using the largest available GWASs summary statistics of LTL (N=464,716) and lung cancer (N=29,239 cases and 56,450 controls). Principal components analysis based on RNA-sequencing data was used to summarise gene expression profile in lung adenocarcinoma cases from TCGA (N=343).Results:Although there was no genome-wide genetic correlation between LTL and lung cancer risk, longer LTL conferred an increased risk of lung cancer regardless of smoking status in the MR analyses, particularly for lung adenocarcinoma. Of the 144 LTL genetic instruments, 12 colocalised with lung adenocarcinoma risk and revealed novel susceptibility loci, including MPHOSPH6, PRPF6, and POLI. The polygenic risk score for LTL was associated with a specific gene expression profile (PC2) in lung adenocarcinoma tumours. The aspect of PC2 associated with longer LTL was also associated with being female, never smokers, and earlier tumour stages. PC2 was strongly associated with cell proliferation score and genomic features related to genome stability, including copy number changes and telomerase activity.Conclusions:This study identified an association between longer genetically predicted LTL and lung cancer and sheds light on the potential molecular mechanisms related to LTL in lung adenocarcinomas.Funding:Institut National du Cancer (GeniLuc2017-1-TABAC-03-CIRC-1-TABAC17‐022), INTEGRAL/NIH (5U19CA203654-03), CRUK (C18281/A29019), and Agence Nationale pour la Recherche (ANR-10-INBS-09).
 
 ## Introduction
 
@@ -48,11 +48,11 @@ The aim of the current work was to investigate the relationship between genetica
 
 ## Materials and methods
 
-## Reporting guidelines
+### Reporting guidelines
 
 The current study has been reported according to the STROBE-MR guidelines (Reporting Standards Document).
 
-## Data
+### Data
 
 Genome-wide association studies (GWASs) summary statistics for lung cancer (29,239 cases and 56,450 controls) and stratified by histological subtype (squamous cell carcinoma, small-cell carcinoma, and adenocarcinoma) and smoking status (ever and never smokers) were obtained from the International Lung Cancer Consortium (ILCCO; McKay et al., 2017). All analyses of LTL requiring summary statistics used results from a GWAS of LTL in 464,716 individuals of European ancestry from the UKBB (Codd et al., 2021). Downstream analyses considered additional lung cancer risk factors, such as lung function and cigarette smoking. We obtained GWAS summary statistics for forced expiratory volume in 1 s (FEV1) and forced vital capacity (FVC) from a published UKBB analysis (Kachuri et al., 2020). For smoking behaviour traits, we used results from the GWAS and Sequencing Consortium of Alcohol and Nicotine use (GSCAN) consortium meta-analysis of cigarettes per day (continuous), smoking initiation (ever versus never), smoking cessation (successfully quit versus continuing), and age at smoking initiation (continuous; Liu et al., 2019) excluding the UKBB participants. For the obesity-related traits (continuous), we used the results from the UKBB and GIANT meta-analysis of BMI (Pulit et al., 2019) and waist-to-hip ratio (WHR; Pulit et al., 2019), or OpenGWAS data using UKBB participants (Elsworth et al., 2020) for high-density lipoprotein (HDL), triglycerides, and systolic and diastolic blood pressure. For the alcohol behaviour trait, we obtained the results from GSCAN phase 2 of drinks per week (continuous; Saunders et al., 2022). Colocalisation analyses of gene expression used lung tissue expression quantitative trait loci (eQTL) summary statistics from the Genotype-Tissue Expression (GTEx) data version 8.
 
@@ -60,51 +60,242 @@ Analyses of molecular phenotypes were performed using 343 lung adenocarcinoma sa
 
 Tumour genomic characteristics were defined by the analyses of the TCGA data, including gene expression-based scores of telomerase activity (Barthel et al., 2017) and cellular proliferation (Thorsson et al., 2018), as well as the observed frequency of somatic homologous recombination-related events (represented as a homologous recombination repair deficiency score), and the average number of somatic copy number alteration within the tumours (Knijnenburg et al., 2018).
 
-## Linkage disequilibrium score regression
+### Linkage disequilibrium score regression
 
 Genetic correlations across traits were calculated using linkage disequilibrium score regression (LDSC) by the LDSC package (v1.0.0; Bulik-Sullivan et al., 2015). Linkage disequilibrium (LD) scores were generated on the 1000 Genomes Project Phase 3 reference panel with the HLA region excluded as provided by the package due to long range LD patterns. The genome-wide correlations that passed Bonferroni correction (adjusted p-values<0.05) were considered statically significant.
 
-## Mendelian randomisation
+### Mendelian randomisation
 
 MR is a method for interrogating relationships between putative risk factors and health outcomes by using genetic variants associated with the exposure of interest, typically obtained from GWAS, as instrumental variables. Assuming that fundamental MR assumptions are satisfied, this approach can be said to identify unbiased causal estimates. The genetic instrument for LTL was defined as the set of 144 genetic variants that were genome-wide significant (p<5x10–08) but not in linkage disequilibrium with each other (r2<0.01) and restricted to common genetic variation (minor allele frequency >1%) in European populations. Proxy variants in LD (r2>0.8, whenever possible) were chosen when a genetic variant was not available in the lung cancer GWAS. Primary MR analyses were conducted using the inverse-variance method with multiplicative random-effects (Yavorska and Burgess, 2017). Sensitivity analyses to horizontal pleiotropy and other violations of MR assumptions were performed using other MR estimation methods, such as weighted median, MR-Egger, contamination mixture model, MR-PRESSO, and MR-RAPS (Yavorska and Burgess, 2017; Sanderson et al., 2022). Multivariable MR (MVMR) methods included the inverse-variance weighted, MR-Egger, and least absolute shrinkage and selection operator (LASSO)-based methods (Yavorska and Burgess, 2017; Sanderson et al., 2019).
 
-## Colocalisation methods
+### Colocalisation methods
 
 Unlike MR, where the goal is to assess the evidence for a causal effect of an exposure on an outcome, colocalisation is agnostic with respect to direction of effect and only assesses the probability that the two traits are affected by the same genetic variants at a given locus. Colocalisation can be viewed as a complementary approach for evaluating MR assumptions within specific genes or regions since strong evidence of colocalisation indicates overlap in genetic mechanisms affecting LTL and lung cancer. We used COLOC (v5.1.0; Wallace, 2020) to estimate the posterior probability for two traits sharing the same causal variant (PP4) in a 150 kb LD window, with PP4 >0.70 corresponding to strong evidence of colocalisation, as previously suggested (Wallace, 2020; Lopes et al., 2022). Priors chosen for the colocalisation analyses were p1=10–3, p2=10–4, and p12=10–5, or approximately, a 75% prior belief that a signal will only be observed in the LTL GWAS and less than 0.01% prior belief in favour of colocalisation between the two traits at a given locus (Giambartolomei et al., 2014). Conditioning and masking colocalisation methods were also used as they may identify putative shared causal variants in the presence of multiple causal variants present in a defined LD window (Wallace, 2021). We present the average PP4 from all methods as our posterior belief in favour of colocalisation between LTL and lung cancer risk. Multi-trait colocalisation based on a clustering algorithm was also performed using HyPrColoc (v1.0) to identify shared genetic signals with other lung cancer-related traits (Foley et al., 2021).
 
-## Principal component analysis based on RNA-sequencing data
+### Principal component analysis based on RNA-sequencing data
 
 Read counts of RNA-sequencing data were normalised within (GC-content and gene length) and between (sequencing depth) lane procedures by EDASeq R package (version 2.28.0; Risso et al., 2011) and excluding low read counts. Principal component analysis was applied using singular value decomposition method, after excluding extreme outliers. Pathway analyses were conducted using Gene Set Enrichment Analysis software (GSEA, version 4.2.3; Subramanian et al., 2005) on gene annotations from Gene Ontology database. Pathway analyses were restricted to the top 500 genes positively and negatively correlated with each principal component that passed multiple-testing correction (Bonferroni-adjusted p-value<0.05 for 74,465 tests), which is the maximum number of genes supported by the online software.
 
 The PRS for LTL was composed of the same 144 variants used in the MR analysis and was computed as the sum of the individual’s beta-weighted genotypes using PRSice-2 software (Choi and O’Reilly, 2019). Associations were estimated per SD increase in the PRS, which was normalised to have a mean of zero across lung adenocarcinoma samples of European ancestry within the TCGA cohort. The associations between the eigenvalues of the gene expression principal components (outcome) and demographic, clinical, and genomic features related to genome stability (predictors derived from TCGA published papers and TCGA data portal, except for the DNA mutational signatures [Gabriel et al., 2022]) were calculated using a multivariate linear regression model.
 
-## Inferring PC2 gene expression signature based on RNA-sequencing data
+### Inferring PC2 gene expression signature based on RNA-sequencing data
 
 The TCGA-lung adenocarcinoma (LUAD) tumour samples were split into training (70%, N=255) and validation (30%, N=108) datasets. Principal components analysis based on RNA-sequencing data was performed to summarise the gene expression profiles of lung adenocarcinoma tumours into five principal components in the training and validation datasets separately, as previously described (see ‘Principal component analysis based on RNA-sequencing data’ section in methods). Subsequently, we applied the partial least squares-based method called rigid transformation (Hubert and Branden, 2003) to align the first five principal components in both datasets. This method compares embeddings, low-dimensional representations in both datasets, performing a slightly rotation of principal components in order to translate and match them in both training and validation datasets. To select the most informative genes of PC2 in the training dataset, RNA levels of the genes correlated with PC2 (N=3914 out of 14,893 genes, FDR <0.05 for 14,893 tests) were selected as variables for the LASSO regression models. The LASSO tune parameters were chosen by resampling the training dataset (1000 bootstraps: root mean of SE=0.12 ± 0.0004, Lambda = 10 x 10–10, r2=0.99 ± 0.00007) using the tidymodels metapackage in R (v1.0.0; wrapper of glmnet). The 10 genes selected by the LASSO model were used to infer the gene expression signature of PC2 by adding up the scaled values of the log-normalised read counts of each gene multiplied by the respective LASSO regression coefficients. For validation purpose, the inferred PC2 signature was calculated in the validation dataset and compared with the observed principal components. After validation in the subset of the TCGA-LUAD cohort, the inferred PC2 signature was calculated in TCGA-LUSC dataset to compare differences between lung cancer histological subtypes.
 
 ## Results
 
-## Genome-wide genetic correlations
+### Genome-wide genetic correlations
 
 The design of the study is represented in Figure 1—figure supplement 1. We first assessed the shared genetic basis of telomere length, lung cancer risk, and other putative lung cancer risk factors, such as smoking behaviours (age start smoking, smoking cessation, smoking initiation, and cigarettes per day) and lung function (FEV1 and FVC) using genome-wide correlations (Figure 1A). There was little evidence for genetic correlations by LDSC between LTL variants and lung cancer (rg = −0.01, p=0.88) or when stratified by histologic subtypes (Figure 1A). Increasing LTL was genetically correlated with older age at smoking initiation (rg = 0.13, p=3.0 × 10–3), and negatively correlated with smoking cessation: (rg = −0.21, p=6.9 × 10–09), smoking initiation (rg = −0.16, p=1.3 × 10–10), and cigarettes per day (rg = −0.19, p=2.1 × 10–08). Longer LTL was genetically correlated with improved lung function, as indicated by increasing values of FEV1 (rg = 0.09, p=5.1 × 10–07) and FVC (rg = 0.09, p=1.1 × 10–05). To better understand the absence of genome-wide correlations between LTL and lung cancer, we visualised the Z-scores for each trait for approximately 1.2 million variants included in the LDSC analyses (Figure 1B). A subgroup of variants associated with longer LTL was correlated with increased lung adenocarcinoma risk, while the subgroup of smoking-behaviour associated variants, which also conferred an increased risk of lung adenocarcinoma, tended to have lower LTL.
 
-## MR analyses
+![Figure 1.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig1-v1.jpg)
+
+**Figure 1.:** (A) Heatmap representing the genetic correlation analyses (rg) for LTL across LC, histological subtypes (lung adenocarcinoma [ADE], squamous cell carcinoma [SQC], and small-cell carcinoma [SCC]), smoking propensity (cigarettes per day [CPD], smoking cessation [SmkCes], Smoking initiation [SmkInit], and age of smoking initiation [AgeSmk]), and lung function related (forced vital capacity [FVC] and forced expiratory volume [FEV1]) traits. The black star indicates correlations that passed Bonferroni correction (p<4x10–04). Heritability (h2) as the proportion of the phenotypic variance caused by SNPs. (B) Plot of Z-scores (ADE versus LTL), restricting to the Hapmap SNPs (~1.2 million) but excluding HLA region. Genome-wide significant SNPs (p<5x10–08) for each trait were coloured (CPD in red, SmkInit in dark red, LTL in dark blue, AgeSmk in blue, SmkCes in lightblue, and not genome-wide hits for LTL or any other selected trait in white). Linear regression line was coloured in red.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Upper: the leukocyte telomere length (LTL) variants were derived from the latest genome-wide association study (GWAS) in UK Biobank (UKBB) participants by Codd et al. Genome-wide correlations between LTL and lung cancer related traits were performed. Focus on a subset of LTL variants selected for Mendelian randomisation (MR) framework. Middle: selection of independent SNPs as LTL instrument for causal inference of LTL on lung cancer risk. Explore biological meaning of these variants using colocalisation methods and principal component analyses to summarise gene expression data. Bottom: calculate LTL polygenic risk score (PRS) based on the 144 SNPs and evaluate its association with principal components and epidemiological, and molecular data of lung adenocarcinoma tumours from The Cancer Genome Atlas (TCGA) dataset (TCGA-lung adenocarcinoma [LUAD]).
+
+### MR analyses
 
 From the 490 genetic instruments associated with LTL at genome-wide significance (p<5x10–08), 144 LTL genetic instruments, that explained ~3.5% of the variance in LTL, and were in low-linkage disequilibrium (r2<0.01) were used in MR analysis (Supplementary file 1a). As a sensitivity analysis, a PRS composed of these genetic instruments was associated with TL estimated from WGS in blood samples across TCGA cohorts (Beta = 0.03, 95%CI = 0.01–0.05, p=0.001) but was not associated with TL in tumour material from the same patients (Figure 2—figure supplement 1).
 
 MR analyses demonstrated that longer genetically predicted LTL was associated with increased lung cancer risk (OR = 1.62, 95% CI = 1.44–1.84, p=9.91 × 10–15) (Figure 2; Supplementary file 1). Longer LTL conferred the largest increase in risk for lung adenocarcinoma tumours (OR = 2.43, 95% CI = 2.02–2.92, p=3.76 × 10–21), but there was limited evidence of a causal relationship for other histologic subtypes, such as squamous cell carcinoma (OR = 1.00, 95% CI = 0.84–1.19, p=0.98) and small-cell carcinoma (OR = 1.13, 95% CI = 0.87–1.45, p=0.34; Figure 2, Supplementary file 1). However, our study was underpowered to detect an association between lung small-cell carcinoma and LTL at OR of 1.13 and considering alpha type-1 error rate of 5% (Figure 2—figure supplement 1). When stratifying the analyses by smoking status, LTL was associated with lung cancer risk in both never (OR = 2.02, 95% CI = 1.45–2.83, p=3.78 × 10–05) and ever smokers (OR = 1.54, 95% CI = 1.34–1.76, p=7.75 × 10–10; Figure 2, Supplementary file 1). Evidence for negative pleiotropy (supplementary file 1c) and heterogeneity (supplementary file 1d) was observed for all lung cancer outcomes except for squamous cell carcinoma. However, a significant association for LTL and lung cancer risk was found for methods robust to the significant directional pleiotropy (MR-Egger: lung cancer [OR = 2.35, p=3.37 × 10–13]; lung adenocarcinoma [OR = 4.48, p=7.30 × 10–17]; never smokers [OR = 6.84, p=2.07 × 10–10]; supplementary file 1b). Leave-one-out analyses detected only one outlier, rs7705526 in TERT, resulting in >10% change in MR effect size for associated lung cancer subtypes (supplementary file 1e). MVMR analyses considering instruments related to LTL and WHR, HDL, total triglycerides, systolic blood pressure, smoking, and alcohol intake, as well as multiple traits combined, suggested that the association between LTL and lung adenocarcinoma risk is independent of smoking propensity, obesity-related, and alcohol intake-related traits (supplementary file 1f, 1g).
 
-## Colocalisation analyses
+![Figure 2.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig2-v1.jpg)
+
+**Figure 2.:** Lung cancer (by histology or by smoking status) risk associations with the LTL instrument from the inverse-variance-weighted MR analyses are expressed as OR per SD increase in genetically predicted LTL. Statistically significant associations with p-values<0.05 (red square). Heterogeneity is estimated by the statistic I2, tau variance of subgroups (τ2), and p-values for Cochran’s Q heterogeneity measure.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Telomere length (TL) was measured by Barthel et al. in a subset of high-confident samples from The Cancer Genome Atlas (TCGA) cohorts using whole-genome sequencing (n=655). TL was directly measured in blood and tumour samples, and log(tTL/nTL) were also obtained from several TCGA cohorts. Associations were expressed as beta estimate per SD longer LTL in log scale. p-Values<0.05 (red square). Sex, age at diagnosis, cohort, and principal components of genetic ancestry (PC1-5) were used as covariates in the linear regression model. Heterogeneity is estimated by the statistic I2, tau variance of subgroups (τ2), and p-values for Cochran’s Q heterogeneity measure. (B) Power calculation by lung cancer strata considering a variance explained by the LTL instrument of 3.5% and alpha type-1 error rate of 5%.
+
+### Colocalisation analyses
 
 We investigated whether there was evidence of shared genetic signals between LTL and lung adenocarcinoma at loci centred on the 144 genetic instruments used in MR analyses using colocalisation methods (Figure 3A, supplementary file 1h). Loci with evidence of colocalisation between LTL and lung adenocarcinoma tended to be near genes that encode telomerase subunits and its associated complex, including genetic variants at TERT (5p15.33; rs116539972, rs7705526, rs61748181, rs71593392, and rs140648021), TERC (3q26.2; rs12638862 and rs146546514), and OBFC1 (10q24.33; rs9419958 and rs139122544). Several colocalised loci mapped to genes that have not been previously linked to lung cancer risk at genome-wide significant level: MPHOSPH6 (16q23.3; rs2303262), PRPF6 (20q13.33; rs80150989), and POLI (18q21.2; rs2276182). Other telomere maintenance genes showed limited evidence of colocalisation with lung adenocarcinoma (i.e. TERF1 and PIF1). For instance, while the RTEL1 locus (20q13.33: rs117238689, rs115610405, rs35640778, and rs35902944) harboured variants associated with both LTL and lung adenocarcinoma (Figure 3—figure supplement 1), these signals appeared to be distinct and independent of each other (avg_PP3=0.999, avg_PP4=0.001; Figure 3A, supplementary file 1h).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig3-v1.jpg)
+
+**Figure 3.:** (A) Distribution of the average posterior probability for shared genetic loci between LTL and lung adenocarcinoma, highlighting in orange the telomere maintenance loci that colocalised (avg_PP4≥0.70) and in blue the ones where there was limited evidence for colocalisation (avg_PP4<0.70). Dashed red line represents the arbitrary avg_PP4 cutoff of 0.70. Representative stack plots for the multi-trait colocalisation results within (B) MPHOSPH6 and (C) OBFC1 loci, centred on a 150 kb LD window of rs2303262 and rs9419958 variants, respectively. Left Y-axis represents the –log10(p-values) of the association in the respective genome-wide association study for a given trait. The right Y-axis represents the recombination rate for the genetic loci. The X-axis represents the chromosome position. SNPs are coloured by the linkage disequilibrium correlation threshold (r2) with the query labelled SNP in European population. Sentinel SNPs within the defined LD window were labelled in each trait.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Z-score plots for genetically predicted LTL and lung adenocarcinoma risk for the four LTL variants annotated for RTEL1. The genetic variants were coloured by the linkage disequilibrium correlation threshold (r2) with the query labelled SNP in a defined LD window of 150 kb centred on the query SNP in European populations. Z-score defined as the beta estimate divided by SE for each SNPs in the respective genome-wide association study.
+
 We further evaluated whether the loci colocalised between LTL and lung adenocarcinoma also shared genetic signals with other traits related to lung cancer susceptibility (supplementary file 1i). Multi-trait analyses at the 16q23.3 locus colocalised rs2303262 with MPHOSPH6 expression in lung tissue, FVC and FEV1, but not with any of the traits related to smoking behaviour (p=0.72; Figure 3B, supplementary file 1i). We additionally identified evidence of colocalisation (p=0.74) between lung adenocarcinoma, LTL, and gene expression in lung epithelial cells for two variants at the OBFC1 locus: rs139122544 and rs9419958 (Figure 3C, supplementary file 1i).
 
-## Genetically predicted LTL association with tumour features
+### Genetically predicted LTL association with tumour features
 
 We investigated the impact of genetically predicted LTL on lung adenocarcinoma tumour features by estimating molecular expression patterns within 343 lung adenocarcinomas tumours using principal component analysis in RNA-sequencing data. The first five components explained ~54% of the observed variance in the RNA-sequencing data (Figure 4, Figure 4—figure supplement 1). To explore the biological meaning of the five components, we performed pathway analyses for the top 500 genes with the highest loadings in each component (supplementary file 1j, supplementary file 1k). Overall, the genes correlated with each component tended to be enriched for specific cell signaling pathways (PC1: RNA processing; PC2: cell-cycle; PC3: metabolic processes; PC4: immune response; PC5: cellular response to stress and DNA damage; false discovery rate <5%; supplementary file 1l).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig4-v1.jpg)
+
+**Figure 4.:** (A) LTL PRS association with the first five principal components based on RNA-sequencing data of lung adenocarcinomas tumours (n=343). Results are expressed as beta estimate per SD increase in genetically predicted LTL. Linear regression model adjusted by sex, age, smoking status, and PC1-5 (genetic ancestry) covariates. Statistically significant associations with p-values<0.05 (red square). (B) Heatmap representing the correlations among PC2 and selected molecular features related to telomere length canonical roles. LTL = leukocyte telomere length; PRS = polygenic risk score; PC = principal component; TMB = tumour total mutation burden; HRD = homologous recombination deficiency, SBS (single base substitution DNA mutational signatures). SBS1 and SBS5 are DNA mutational signatures associated with age-related processes, and SBS4 is associated with tobacco smoking exposure. X-shaped marker to cross correlations with p-value>0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The RNA sequencing data from 343 primary lung adenocarcinoma tumour samples were retrieved. (A) Principal components analysis was applied to the centred log-transformed gene read counts, and the first five principal components were represented, which explained 53.5% of the variance in the gene expression for those samples. (B) The distributions of the first five principal components are represented in the density plots.
+
 We then tested the association between the PRS composed of the 144 genetic instruments selected for MR analysis and the five components of gene expression within lung adenocarcinoma tumours (Figure 4A). The LTL PRS was positively associated with the second component (PC2) of tumour expression (Beta = 0.17, 95% CI = 0.12–0.19, p=1.0 × 10–3; Figure 4A). In multivariate analysis, higher values of PC2 tended to be associated with patients older at diagnosis (p=0.001), female (p=0.005), being never smokers (p=0.04), and diagnosed with early-stage tumours (p=0.002; Table 1). PC2 was also highly correlated with gene expression-based measure of cell proliferation and several genomic features related to genomic stability (Figure 4B). In multivariate analysis, higher values of PC2 were associated with reduced tumour proliferation (p=3.7 × 10–30), lower somatic copy number alternations (p=1.6 × 10–05), and higher tumour telomerase activity scores (p=1.6 × 10–5). Multivariate analysis also indicated that LTL PRS remained an independent predictor of PC2 when considering these genomic features (p=0.009; Table 1). It is noteworthy only nominal associations between LTL PRS and above-mentioned features and none remained statistically significant after correction for multiple testing (supplementary file 1m). We next inferred the gene expression signature of PC2, based on 10 genes informative of this component selected by the LASSO regression models, in both lung adenocarcinoma (TCGA-LUAD) and squamous cell carcinoma (TCGA-LUSC) cohorts (Figure 5, Figure 5—figure supplement 1). The association between LTL PRS and inferred PC2 was observed in TCGA-LUAD (p=0.001) but not in TCGA-LUSC (p=0.729) cases (Figure 5A). The inferred PC2 signature levels were higher in TCGA-LUAD than in TCGA-LUSC (Figure 5B), while higher proliferation rate (Figure 5C, p=1.45 × 10–141) and TERT activity (Figure 5D, p=1.36 × 10–20) were observed in TCGA-LUSC than in TCGA-LUAD cases. Of note, the low RNA levels of the telomere-related genes (less than five read counts), such as TERT and TERC, in both TCGA-LUAD and TCGA-LUSC tumour samples limited the direct comparison of these genes between these cohorts.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig5-v1.jpg)
+
+**Figure 5.:** (A) Leukocyte telomere length (LTL) polygenic risk score (PRS) association with the 10-gene expression signature of PC2 in lung adenocarcinoma (The Cancer Genome Atlas [TCGA]-LUAD, N=343) and squamous cell carcinoma (TCGA-LUSC, N=338) cases from TCGA dataset. Results are expressed as beta estimate per SD increase in genetically predicted LTL. Linear regression model adjusted by sex, age, and PC1-5 (genetic ancestry) covariates, PC2 signature as outcome. Statistically significant associations with -values<0.05. Values per SD of (B) PC2, (C) proliferation score, and (D) telomerase/TERT activity gene expression signatures by lung cancer histological subtypes (TCGA-LUAD and TCGA-LUSC). p-Values derived from Student’s t-tests.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83118/elife-83118-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Workflow for the generation of the PC2 signature. Calculate principal components based on RNA-sequencing data in both The Cancer Genome Atlas (TCGA)-lung adenocarcinoma (LUAD) training (N=255, 70%) and validation (N=108, 30%) datasets and use partial least square (PLS)-based method to align principal components (upper). Select the most informative genes correlated with the observed PC2 in the training dataset using least absolute shrinkage and selection operator (LASSO) regression model and validate it in the validation set (middle). Apply the PC2 signature to the TCGA-LUSC (lung squamous cell carcinoma) and TCGA-LUAD cohorts. (B) The ranked absolute coefficients/importance of the 10 genes selected by the LASSO models. Negative coefficients in red and positive ones in blue. (C) Scatter plot for the correlations between PC2 gene expression signature and observed principal components (PC1-5) based on RNA-sequencing data in the validation set. PC1 in light blue, PC2 in red, PC3 in grey, PC4 in blue, and PC5 in salmon colours.
+
+**Table 1.**
+ Association between PC2 (outcome) and lung adenocarcinoma tumour features in univariate and multivariate models (n=343).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Non-molecular features</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Predictors</td>
+      <td colspan="2">Univariate model</td>
+      <td colspan="2">Multivariate model</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>OR/Beta (SE)</td>
+      <td>p-value</td>
+      <td>OR/Beta (SE)</td>
+      <td>p-value</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Age at diagnosis*</td>
+      <td>0.17±0.05</td>
+      <td>0.001</td>
+      <td>0.17±0.05</td>
+      <td>0.001</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gender (male)†</td>
+      <td>0.73±0.11</td>
+      <td>0.005</td>
+      <td>0.74±0.11</td>
+      <td>0.005</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Smoking status (ever)†</td>
+      <td>0.67±0.16</td>
+      <td>0.013</td>
+      <td>0.72±0.15</td>
+      <td>0.035</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Tumour stage (late)†</td>
+      <td>0.67±0.13</td>
+      <td>0.002</td>
+      <td>0.67±0.13</td>
+      <td>0.002</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="5">Molecular features</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Predictors</td>
+      <td colspan="2">Univariate model</td>
+      <td colspan="2">Multivariate model</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Beta (SE)</td>
+      <td>p-value</td>
+      <td>Beta (SE)</td>
+      <td>p-value</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>LTL PRS ‡</td>
+      <td>0.17±0.05</td>
+      <td>0.001</td>
+      <td>0.10±0.04</td>
+      <td>0.009</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Telomerase activity</td>
+      <td>–0.37±0.05</td>
+      <td>9.34E-13</td>
+      <td>0.25±0.06</td>
+      <td>1.32E-05</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Proliferation</td>
+      <td>–0.69±0.04</td>
+      <td>3.30E-46</td>
+      <td>–0.80±0.06</td>
+      <td>3.66E-30</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Copy number alteration</td>
+      <td>–0.41±0.05</td>
+      <td>6.36E-16</td>
+      <td>–0.23±0.05</td>
+      <td>1.62E-05</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Homologous recombination deficiency</td>
+      <td>–0.4±0.05</td>
+      <td>8.32E-15</td>
+      <td>0.12±0.06</td>
+      <td>0.048</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Tumour total mutation burden</td>
+      <td>–0.28±0.05</td>
+      <td>1.37E-07</td>
+      <td>–0.09±0.24</td>
+      <td>0.695</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>SBS1</td>
+      <td>–0.18±0.05</td>
+      <td>0.001</td>
+      <td>0.01±0.05</td>
+      <td>0.827</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>SBS4</td>
+      <td>–0.24±0.05</td>
+      <td>6.36E-06</td>
+      <td>0.04±0.18</td>
+      <td>0.814</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>SBS5</td>
+      <td>–0.27±0.05</td>
+      <td>4.84E-07</td>
+      <td>0.03±0.09</td>
+      <td>0.770</td>
+      <td colspan="2"></td>
+    </tr>
+  </tbody>
+</table>
+
+_SBS (single base substitution DNA mutational signatures); LTL = leukocyte telomere length; PC = principal component; PRS = polygenic risk score.*age of diagnosis represented as beta estimate per 1 unit of SD.†OR per 1 unit of SD.‡LTL PRS is adjusted by first five PC of genetic ancestry in the univariate model._
 
 ## Discussion
 

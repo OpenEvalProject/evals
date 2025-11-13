@@ -12,14 +12,14 @@
 
 ### Affiliations
 
-1. https://ror.org/041nk4h53 Chemical and Isotopic Signatures Group, Division of Nuclear and Chemical Sciences, Lawrence Livermore National Laboratory Livermore United States
-2. https://ror.org/046rm7j60 Center for Diverse Leadership in Science, University of California, Los Angeles Berkeley, California United States
-3. https://ror.org/03efmqc40 Department of Integrative Biology and Museum of Paleontology, University of California, Berkeley Berkeley United States
-4. https://ror.org/046rm7j60 Department of Earth, Planetary, and Space Sciences, Department of Atmospheric and Oceanic Sciences, Institute of the Environment and Sustainability, and American Indian Studies Center, University of California, Los Angeles Los Angeles United States
-5. https://ror.org/0524sp257 Department of Earth Sciences, University of Bristol Bristol United Kingdom
-6. https://ror.org/01wspgy28 Department of Oceanography and Sea Grant College Program, Daniel K Inouye Center for Microbial Oceanography: Research and Education, University of Hawaiʻi at Mānoa Honolulu United States
-7. https://ror.org/03efmqc40 School of Mathematical and Natural Sciences, New College of Interdisciplinary Arts and Sciences, Arizona State University Phoenix United States
-8. https://ror.org/01an7q238 Department of City and Regional Planning, College of Environmental Design, University of California, Berkeley Berkeley United States
+1. Chemical and Isotopic Signatures Group, Division of Nuclear and Chemical Sciences, Lawrence Livermore National Laboratory Livermore United States ([ROR:041nk4h53](https://ror.org/041nk4h53))
+2. Center for Diverse Leadership in Science, University of California, Los Angeles Berkeley, California United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+3. Department of Integrative Biology and Museum of Paleontology, University of California, Berkeley Berkeley United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
+4. Department of Earth, Planetary, and Space Sciences, Department of Atmospheric and Oceanic Sciences, Institute of the Environment and Sustainability, and American Indian Studies Center, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+5. Department of Earth Sciences, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+6. Department of Oceanography and Sea Grant College Program, Daniel K Inouye Center for Microbial Oceanography: Research and Education, University of Hawaiʻi at Mānoa Honolulu United States ([ROR:01wspgy28](https://ror.org/01wspgy28))
+7. School of Mathematical and Natural Sciences, New College of Interdisciplinary Arts and Sciences, Arizona State University Phoenix United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
+8. Department of City and Regional Planning, College of Environmental Design, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
 
 † Corresponding author
 
@@ -39,9 +39,25 @@ Here we ask whether racial funding disparities are observed at the NSF, the flag
 
 ## Results
 
-## Racial disparities in NSF funding rates
+### Racial disparities in NSF funding rates
 
 The NSF receives tens of thousands of high-quality submissions each year, many more than it can fund (Figure 1A). From 1996 to 2019, the overall funding rate, or the proportion of proposals that were awarded, fluctuated between 22% and 34% due to factors such as changing budgets and proposal submission numbers. For example, stimulus funding in 2009 from the American Recovery and Reinvestment Act raised the funding rate to 32%, whereas a significant increase in proposals in 2010 lowered the funding rate to 23%.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig1-v2.jpg)
+
+**Figure 1.:** (A) Overall funding rates (black line) and total number of proposals (gray bars) have fluctuated on a yearly basis over time. (B) Racial disparities in funding rates have persisted for more than 20 years. Funding rates by PI race and ethnicity are normalized to the overall rate for each year. Groups represented by thinner lines submitted on average fewer than 500 proposals annually. Data for white and Asian PIs are only available starting in 1999, and for multiracial PIs starting in 2005. Source data: Data S1 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Each gray dot shows the data for one year. The colored horizontal bars with error bars represent the average and standard deviation of the annual overall relative funding rate for all available data for each group. Averages are reported for each group along the bottom of the chart. Note that only 15 years of data are available for proposals by multiracial PIs (2005–2019). While data for Black/AA, AI/AN, NH/PI and Hispanic or Latino PIs exist for the years 1996–1998, averages are only calculated for the years 1999–2019 to allow for comparability with data for white and Asian PIs, for which data are only available since 1999. Source data: Data S1 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Source data: Data S1 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Comparison of the overall funding rate (black) and the funding rate for proposals by PIs who are underrepresented racial and ethnic minorities (URMs; blue). NSF defines URM as a category that includes American Indian/Alaska Native (AI/AN), Black/African American (Black/AA), Hispanic or Latino, and Native Hawaiian/Pacific Islander (NH/PI) PIs, and excludes Asian and non-Hispanic white PIs. (B) Comparison of the relative funding rate for proposals by URM PIs (thick blue line with markers) and the relative funding rate for proposals by PIs of other racial and ethnic groups (thin lines; from Figure 1B). Source data: Data S6 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
 
 Despite year-to-year variability in the overall funding rate, there are persistent and significant differences in funding rates between proposals submitted by PIs from each racial and ethnic group. To investigate these differences, for each year, we calculated relative funding rates for each group, normalizing by the annual overall funding rate. We find that proposals by white PIs were consistently funded at rates higher than the overall rate, with an average relative funding rate of +8.5% from 1999 to 2019 (Figure 1B; Figure 1—figure supplement 1). The relative funding rate for proposals by white PIs also steadily increased during this period, from +2.8% in 1999 to +14.3% in 2019. In contrast, proposals by most non-white PIs, specifically Asian, Black/AA, and NH/PI PIs, were consistently funded below the overall rate, with average relative funding rates of –21.2%, –8.1%, and –11.3%, respectively.
 
@@ -53,9 +69,17 @@ The relative contributions of proposals by PIs from each group remain unchanged 
 
 These persistent funding rate disparities are realized as large differences in the absolute number of proposals awarded to PIs in each group. For example, of the 41,024 proposals considered in 2019, the NSF selected 11,243 for funding, or 27.4%. Proposals by white PIs were funded above this overall rate at 31.3%, yielding 6,389 awards (Figure 2). If proposals by white PIs had been funded instead at the overall rate of 27.4%, only 5,591 proposals would have been awarded. Thus, an “award surplus” of 798 awards was made to white PIs above the overall funding rate in 2019. In contrast, proposals submitted by the next largest racial group, Asian PIs, were funded at a 22.7% rate, yielding 2,073 awards. If the funding rate for proposals by Asian PIs had been equal to the overall rate, one would instead expect 2,505 awards, or 432 additional awards. We refer to the number of awards required to bridge such gaps in funding rate as the “award deficit.”
 
-## Racial stratification in award types
+### Racial stratification in award types
 
 Research awards are the standard mechanism through which the NSF funds PIs and institutions, comprising 71–76% of all awards from 2013 to 2019 (Figure 3B). The remaining 24–29% of awards consist of grants for other activities and expenses, such as exploratory or early concept work; education and training; equipment, instrumentation, conferences, and symposia; and operation costs for facilities. The funding rate for these types of proposals, categorized by NSF as “Non-Research,” is generally 1.4–1.9 times higher than that for “Research” proposals (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig3-v2.jpg)
+
+**Figure 3.:** (A) Overall funding rates for Research proposals (dark dashed line) are more competitive than overall funding rates for Non-Research proposals (light dotted line). (B) 80–84% of all proposals and 71–76% of all awards were for Research activities. (C) Both Research and Non-Research proposals by white PIs were funded above overall rates. In contrast, Research proposals by PIs of most other groups were funded below overall rates, and at rates generally lower than those for Non-Research. (D) Only 46–63% of all awards to Black/AA PIs were for Research, far below overall proportions of awards for Research for all groups combined (black horizontal lines; panel B), contributing to a stratification of awarded activities by race. White text denotes the number of Research proposals or awards for each group per year; asterisk indicates that numbers are estimates based on available data. Non-Research data for AI/AN and NH/PI PIs were not available 2017–2019. Source data: Data S2–3 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Research proposals are the typical mechanism through which NSF funds PIs. NSF defines Non-Research proposals as those for education and training; operation costs for facilities; grants for equipment, instrumentation, conferences, and symposia; and grants in the Small Business Innovation Research program. (B) The “Externally Reviewed” category includes proposals reviewed by panels and/or ad hoc external reviews. The “Internally Reviewed” category includes proposals that were reviewed by NSF program managers and experts, but did not receive external reviews. Proposal types which are not externally reviewed include RAPID, EAGER, RAISE proposals, and small grants for travel and symposia. Proposals that are not included in these charts and are not evaluated in this study are proposals that are returned without review (770 in 2019) and proposals withdrawn by the PI (280 in 2019), which NSF describes as proposals without an award or decline decision.
 
 When we examine racial disparities in the context of Research and Non-Research proposals from 2013 to 2019 (the years with available data), we find that disparities for Research proposals are generally larger (Figure 3C). White PIs were the only group whose Research and Non-Research proposals were consistently funded above overall rates. The relative funding rates for Research and Non-Research proposals by white PIs also gradually increased, from +9.0% and +5.6% in 2013 to +14.8% and +13.2% in 2019, respectively. In addition, for most years, Research proposals by white PIs had higher relative funding rates than Non-Research proposals.
 
@@ -65,11 +89,103 @@ These Research funding rate disparities contribute to a stratification in awarde
 
 These results show that larger racial disparities in Research proposal funding rates are masked within the funding rates for all proposals. For example, in 2013, the difference in relative funding rate for Research proposals versus all proposals for Black/AA PIs is large, –35.2% for Research compared to –18.3% for all proposals (Figures 1B and 3C). In addition, these results suggest that the magnitude of disparities for Asian and Black/AA PIs is more similar when considering only Research proposals: on average for the 2013–2019 period, Research proposals by white PIs had a 1.37- and 1.40-fold funding rate advantage over those by Asian and Black/AA PIs, respectively (Data S14). Thus, disaggregating funding statistics by proposal type reveals a more complete picture of these racial funding disparities and their impacts.
 
-## Racial disparities across directorates
+### Racial disparities across directorates
 
 Likewise, examining funding rate disparities by research discipline also adds crucial context. NSF divides its research and education portfolio into seven grant-making directorates: Education and Human Resources (EHR); Social, Behavioral, and Economic Sciences (SBE); Biological Sciences (BIO); Geosciences (GEO); Computer and Information Science and Engineering (CISE); Engineering (ENG); and Mathematical and Physical Sciences (MPS). All award and decline decisions are issued through program offices and divisions specializing in distinct subfields within each directorate. Aside from differences in scientific purview, each directorate also handles varying numbers of proposals and funds them at different rates depending on their budget. As a result, overall funding rates differ between directorates, with some more competitive than others (e.g., 14.8% in EHR versus 25.5% in GEO for Research, 2012–2016). Despite these differences, from 2012 to 2016 (years with available data), after normalizing by overall directorate funding rates, we find that all directorates exhibited racial funding rate disparities and stratification patterns, albeit to varying degrees.
 
 Most patterns for overall funding rates were also observed at the directorate level. In every directorate, proposals by white PIs were consistently funded above overall directorate funding rates, regardless of type (Figure 4A), and for all non-white groups, relative funding rates for Research proposals were also below those for Non-Research, with rare exceptions (e.g., GEO for Black/AA PIs). The proportion of Research awards to Black/AA PIs was also consistently below overall directorate proportions across all directorates (Figure 4C). Within each directorate, relative funding rates for proposals by white and Asian PIs exhibited less year-to-year variability, owing to larger submission numbers. For other groups with fewer proposals, funding rates were more volatile, and in the case of AI/AN and NH/PIs, data were often missing (in most merit review reports, proposal or award sums fewer than 10 were omitted to protect the identities of individual investigators).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-v2.jpg)
+
+**Figure 4.:** (A) Relative funding rates by directorate for Research (top) versus Non-Research (bottom) proposals by PI race and ethnicity. Gray circles mark relative funding rates for each available year; colored rectangles represent the multi-year average. To aid visual comparison, the multi-year average relative funding rate for Research proposals is superimposed on the Non-Research panel as a dotted rectangle. For Research proposals, data are available for at most 5 years (2012–2016); for Non-Research proposals, data are available for at most 4 years (2013–2016). (B) Multi-year average annualized award surplus or deficit per directorate by PI race and ethnicity, for Research (top) and Non-Research (bottom). The upper-left number in each sub-panel is the multi-year average annualized award surplus or deficit for each group for all seven directorates, excluding awards made by the Office of the Director. For AI/AN and NH/PI PIs, only data for Research awards in 2012 are shown; no directorate data for Non-Research awards are available. (C) Proportion of awards for Research by directorate and PI race and ethnicity, compared to overall directorate proportions (black horizontal lines), 2013–2016. White text denotes average annual number of Research awards per directorate to each group. (D) Percentage of all proposals submitted to each directorate by white (red), Black/AA (blue), Asian (green), and Hispanic or Latino PIs (yellow) versus the multi-year average relative funding rate for all proposals by each group, 2013–2016. Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** From left to right: white PIs (red), Black/AA PIs (blue); Asian PIs (green); and Hispanic or Latino PIs (yellow). Abbreviations: Education and Human Resources (EHR); Social, Behavioral, and Economic Sciences (SBE); Biological Sciences (BIO); Geosciences (GEO); Computer and Information Science and Engineering (CISE); Engineering (ENG); and Mathematical and Physical Sciences (MPS). Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp8-v2.jpg)
+
+**Figure 4—figure supplement 8.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 9.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp9-v2.jpg)
+
+**Figure 4—figure supplement 9.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 10.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp10-v2.jpg)
+
+**Figure 4—figure supplement 10.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 11.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp11-v2.jpg)
+
+**Figure 4—figure supplement 11.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 12.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp12-v2.jpg)
+
+**Figure 4—figure supplement 12.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 13.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp13-v2.jpg)
+
+**Figure 4—figure supplement 13.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 14.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp14-v2.jpg)
+
+**Figure 4—figure supplement 14.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 15.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp15-v2.jpg)
+
+**Figure 4—figure supplement 15.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 16.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp16-v2.jpg)
+
+**Figure 4—figure supplement 16.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 17.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp17-v2.jpg)
+
+**Figure 4—figure supplement 17.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 18.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp18-v2.jpg)
+
+**Figure 4—figure supplement 18.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 19.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp19-v2.jpg)
+
+**Figure 4—figure supplement 19.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 20.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp20-v2.jpg)
+
+**Figure 4—figure supplement 20.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 21.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp21-v2.jpg)
+
+**Figure 4—figure supplement 21.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 4—figure supplement 22.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig4-figsupp22-v2.jpg)
+
+**Figure 4—figure supplement 22.:** Source data: Data S4 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
 
 Between directorates, the magnitude of disparities and the group with the lowest funding rate varied. For Research proposals with available data, Black/AA PIs had the lowest multi-year average funding rate in CISE, EHR, ENG, SBE, and MPS, whereas Asian PIs had the lowest in BIO and GEO. Considering disparities by each year, while Research proposals by Black/AA PIs were consistently the lowest funded in CISE for every year between 2012 and 2016, the group with the lowest funding rate occasionally changed in other directorates. In comparing the magnitude of disparities for Research proposals across directorates, white PIs experienced the largest funding rate advantage over Asian PIs in BIO (1.5-fold, multi-year average) and the largest advantage over Black/AA PIs in SBE (1.7-fold, multi-year average; Data S14).
 
@@ -77,7 +193,7 @@ The impact of these disparities in terms of the award surpluses and deficits bro
 
 These directorate funding data also reveal a paradoxical trend: relative funding rates for proposals by Black/AA PIs are lower for directorates with proportionally more proposals from Black/AA PIs (Figure 4D), with the exception of EHR. Although 2.4% and 2.5% of all proposals to SBE and ENG were submitted by Black/AA PIs, the multi-year average relative funding rates for proposals by Black/AA PIs in SBE and ENG were the lowest of all directorates, at –26.5% and –19.6%, respectively (Data S4). The same trend is observed for Research proposals (Figure 4—figure supplement 1).
 
-## Racial disparities in external review scores
+### Racial disparities in external review scores
 
 To guide funding decisions, NSF program officers within each directorate oversee the vast majority of proposals through a 6-month-long external peer review process, wherein outside experts with field-specific expertise provide feedback on the merits of a proposed project. Through individual written input and/or panel deliberations, external reviewers are instructed to assess a proposal’s potential to advance knowledge (intellectual merit), its potential to benefit society (broader impact), and the qualifications of the PI, collaborators, and institution (National Science Foundation, 2021). In addition to narrative comments, external reviewers must also give an overall rating on a scale from ‘Poor’ (numerically 1, “proposal has serious deficiencies”) to ‘Excellent’ (numerically 5, “outstanding proposal in all respects”). A minimum of three pieces of external input are required for complete evaluation. While self-reported demographic data are not visible to the reviewers, PI race or ethnicity may be inferred from proposal content or personal knowledge.
 
@@ -89,7 +205,7 @@ Data on average review scores of externally reviewed Research proposals show tha
 
 Accompanying information on the success rates of proposals based on average review score highlights the impact of programmatic decision-making. In 2016, although average scores for Research proposals by Black/AA PIs were lower, the relative funding rate for Research proposals by Asian PIs was worse, –20.9% for Asian PIs compared to –17.3% for Black/AA PIs (Figure 3C). This counterintuitive result may be attributed to differences in success rates for proposals with comparable scores. Although proposals with higher scores are more likely to be awarded, the success rates for Research proposals by Black/AA PIs were generally higher than those for white and Asian PIs with the same score (Figure 5B). For Asian PIs, success rates for Research proposals are not as high, closer to the rates for white PIs. These decisions to fund proposals outside of their rank order by score reflect NSF’s discretion to consider scores alongside other factors when making funding decisions, such as reviewer comments, panel discussion summaries, and a need to balance a diverse research portfolio in line with the agency’s statutory mission and national interest (National Science Foundation, 2021). Although proposals by white PIs generally experience lower success rates by score compared to most other groups, the large absolute number of proposals by white PIs combined with their above average scores still resulted in relative Research funding rates of +8.2% and +12.0% for white PIs in 2015 and 2016.
 
-## Limitations of data
+### Limitations of data
 
 These racial funding disparities raise many questions about their underlying causes and mechanisms, but limitations of current publicly available data reported by NSF restrict such inquiries from being robustly investigated. Since 2003, NSF has used the racial and ethnic categories and definitions set by the Office of Management and Budget in 1997, following government-wide standards for federal data collection. However, racial and ethnic categories are understood to be social constructs with no biological basis, and as such, are complex and highly mutable over time, subject to changes in social perceptions of race and self-identification (Clair and Denis, 2015). Furthermore, because our data are limited to those published in annual merit review reports, which change in content and organization each year, disaggregated information on funding outcomes by directorate and award type are only available for short time intervals, limiting our ability to fully characterize long-term trends. Lastly, modifications to the way race and ethnicity information are tabulated in merit review reports also impact data consistency (see Methods; Figure 6—figure supplements 1–2).
 
@@ -99,9 +215,41 @@ Another consideration is that data on funding outcomes by PI race and ethnicity 
 
 We also observe an emerging trend in the non-reporting of demographic information: from 1999 to 2020, the proportion of proposals submitted by PIs who provided information on their race decreased from 96% to 66% (Figure 6). This trend is accelerating, with a 10% drop in response rate between 2019 and 2020, the largest year-to-year decrease observed in available data. This pattern coincides with similar decreasing trends in the response rate for ethnicity and gender (Figure 6—figure supplement 7). The cause of this phenomenon and its prevalence elsewhere is unclear, as it has not been widely reported. Regardless, these trends are concerning, as further decreases in the proportion of respondents will undermine the statistical effectiveness of reported information, impeding future efforts to track disparities.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig6-v2.jpg)
+
+**Figure 6.:** Source data: Data for 1999–2019 are collated in Data S1 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt); data for the year 2020 are available from the 2020 NSF report on the Merit Review Process (National Science Board, 2021a).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Data are organized by organizational level (NSF-wide or directorate-level) and then by proposal and activity type (all proposals, Research proposals, and external review scores and success rates). Information reported within the datasets available from NSF include Ethnicity (exclusive of race), Race and Ethnicity, Early Career and Later Career PIs, New and Prior PIs, and PIs from minority serving institutions, historically black colleges and universities, and tribal colleges and universities (MSIs, HBCUs, TCUs). Data collated from merit review reports are available in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Graphical representation of the time spans pertaining to the two ways NSF reported race and ethnicity data in the NSF Merit Review Reports, before and after 2012. (B) Comparison of the two datasets in terms of relative funding rates by PI race and ethnicity. The solid line with markers outlined in black represents data from 2005–2019 (Merit Review Reports after and including 2012) where individuals self-identifying as a particular race are included regardless of their ethnicity (Non-Hispanic, Hispanic, or Unknown). The dashed line with solid colored markers represents data from 1996–2011 where individuals are only included in a particular race category if they are Non-Hispanic. Source data: Data S1 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (Left column) NSF currently defines a New PI is an individual who has not served as the PI or Co-PI on any award from NSF (with the exception of doctoral dissertation awards, graduate or post-doctoral fellowships, research planning grants, or conferences, symposia and workshop grants). The old definition for a New PI, which is applicable to data shown for 1990–2000,, is any individual who had not previously been a PI on any NSF award. (Right column) NSF defines an Early Career PI as an individual within seven years of receiving their last degree at the time of the award. Source data: Data S9 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (Top) Relative funding rate for proposals by PIs at minority serving institutions (MSIs). Solid line with no markers is the relative funding rate for all proposals; dark dashed line for Research proposals; and light dotted line for Non-Research proposals. (Middle) Estimated number of Research (dark) and Non-Research (light) proposals from and awards to PIs at MSIs. (Bottom) Estimated proportion of Research vs. Non-Research proposals from and awards to PIs at MSIs. These data should be treated as estimates as they are calculated from values extracted via plot digitization of charts in NSF merit review reports, rather than calculations made from numerical data reported in tabular format. Source data: Data S10 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** Top: proposals (blue) and awards (orange) for PIs at EPSCoR jurisdictions. Middle: funding rate for all proposals at NSF (black) and for all proposals by PIs in EPSCoR jurisdictions (blue). Bottom: relative funding rate for all proposals by PIs in EPSCoR jurisdictions. Source data: Data S11 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** (A) Total number of unique PIs applying for Research funding in 3 year windows, 1995–2019. (B) Percentage of PIs awarded funding for Research in each 3 year window. Blue line represents the percentage of PIs with at least one award; orange line represents the percentage of PIs with at least two awards. (C) For PIs with an active Research award, the green line represents trends in average number of awards per PI. (D) The average number of proposals submitted before a PI is successfully awarded funding for a Research proposal. Source data: Data S12 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig6-figsupp7-v2.jpg)
+
+**Figure 6—figure supplement 7.:** (A) Percentage of proposals submitted by PIs who provided information about their race, 1999–2019. (B) Percentage of PIs for Research proposals who provided demographic information about their race (blue), ethnicity (orange), and gender (yellow), 2004–2019. This panel differs from A in that the percentages are reported on a per PI-basis, rather than by proposals. No data is available for 2017. Source data: Data S13 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
 ## Discussion
 
-## Over 20 years of racial funding disparities at NSF, NIH, and other funding bodies
+### Over 20 years of racial funding disparities at NSF, NIH, and other funding bodies
 
 Our analysis shows that for at least two decades, there has been a consistent disparity in funding rate between proposals by white PIs and those by most other racial groups. The relative funding rate for proposals by white PIs has also been increasing with time. We further show that disparities are even greater for Research awards, a result obscured within overall statistics by higher Non-Research funding rates. Differences in the allocation of awards for Research versus Non-Research activities by racial group reveal a stratification of funded activities by race. These patterns are also observed within each directorate. Identifying the underlying causes and mechanisms for these disparities requires further study, but information on average external review scores from two recent years sheds light on processes that influence outcomes.
 
@@ -117,7 +265,7 @@ Future work that leverages differences and similarities in review processes and 
 
 One explanation for this difference may lie in the panel discussion and decision-making phases of the merit review process. At NSF, success rates based on review scores in 2015 and 2016 indicate that funding decisions partially countered the lower scores of proposals by Black/AA PIs, with a smaller effect on proposals by Asian PIs (Figure 5B). This effect has also been observed in other funding contexts where unequal evaluations by gender were counteracted by panels, leading to gender-equal funding outcomes (Bol et al., 2022; van de Besselaar and Mom, 2020). In contrast, at NIH, proposals by white PIs are often funded at higher rates than those by Black/AA PIs with comparable scores, a pattern that persists within research topic clusters (Table 1 and Figure S6 in Hoppe et al., 2019). Whether the countering effect at NSF is primarily occurring at the panel discussion stage, when NSF program officers issue an award or decline recommendation, or when division directors make a final decision is unknown with currently available information. Nevertheless, differences in the way NIH exercises their prerogative to fund proposals outside of rank order likely contributes to the discrepancy in Black/AA PI funding outcomes between NSF and NIH (Taffe and Gilpin, 2021).
 
-## The need for disaggregation and expanded approaches to evaluating demographic progress
+### The need for disaggregation and expanded approaches to evaluating demographic progress
 
 The importance of data disaggregation is not only demonstrated by the finding of larger racial disparities for Research proposals and directorate-level patterns, but also by funding rates for proposals by PIs who are underrepresented racial and ethnic minorities (URMs). At NSF, the URM category consists of Black/AA, AI/AN, NH/PI, and Hispanic or Latino (excluding non-Hispanic white and Asian), and is used to track and allocate resources to programs aimed at broadening participation in STEM. While the relative funding rate for URM PIs has improved and remained close to the overall rate for many years (average relative funding rate of –0.2% in 2015–2019; Figure 1—figure supplement 3), this metric masks important funding rate differences between constituent groups, aliasing the negative relative funding rates experienced by Black/AA PIs. In this way, URM aggregation diverts focus away from specific interventions that might address unique barriers to the success of Black/AA PIs (Williams et al., 2015; Leslie et al., 2015; McGee, 2021). URM aggregation also compounds the erasure of groups with relatively low numbers, such as AI/AN and NH/PI PIs, hindering our ability to understand and mitigate racial disparities that affect Indigenous groups (Peters, 2011).
 
@@ -129,11 +277,23 @@ Notably, these data counter the common assumption that achieving representation 
 
 The cause of this inverse trend across directorates requires further examination, but a recent study showing author-reviewer homophily in peer review suggests that reviewer, panel, and program manager demographics may play a role (Murray et al., 2019). Preferences for shared characteristics may benefit PI applicants with identity markers that are overrepresented amongst evaluators, producing a feedback loop if prior funding success is a desired qualification for reviewer or panel participation (National Institutes of Health, 2015). We note however that some studies have shown an opposite effect, in which women reviewers and panelists exhibit a stronger bias against women applicants (van de Besselaar and Mom, 2020; Broder, 1993), indicating that author-reviewer dynamics are complex and require further study.
 
-## Decades of cumulative advantage and disadvantage at the NSF
+### Decades of cumulative advantage and disadvantage at the NSF
 
 These results paint a stark picture of racial inequality in scientific funding, a finding that is more alarming when considering their compounding impact. At the individual level, because grant reviewers must use past achievements as indicators of a proposing investigator’s qualifications, increased research productivity from previous awards contributes positively to subsequent grant-seeking pursuits. This “rich-get-richer” phenomenon or “Matthew effect,” in which past success begets future success, has been widely documented in science since the 1960s (Merton, 1968; Merton, 1988; Petersen et al., 2011; Way et al., 2019). A recent study of an early career funding program found that winning applicants just above a threshold later secured twice as much funding than non-winners narrowly below the cutoff, highlighting the divergent impacts of early funding success or failure (Bol et al., 2018). Such effects have contributed to rising inequality in biomedical research funding, where a decades-long continuous drop in the number of young PIs in biomedicine has coincided with an increasing concentration of NIH funding given to elite PIs and institutions (Levitt and Levitt, 2017; Wahls, 2019; Katz and Matter, 2020; Lauer and Roychowdhury, 2021; Lauer, 2022). Because non-white PIs must invest more time and energy than white PIs for funding access at every career stage (Ginther et al., 2011; Hoppe et al., 2019; Erosheva et al., 2020; Ginther et al., 2018; Ginther et al., 2016; Wellcome Trust, 2021; National Academies of Sciences, Engineering, and Medicine, 2022; UK Research and Innovation, 2020; Lauer, 2021), non-white PIs are less likely to be the beneficiaries of such additive advantages.
 
 While additional work is required to understand the full consequences of the multi-decadal racial funding disparities at NSF, some elements of their cumulative impact are quantifiable. If we consider the annual award surplus or deficit to each group from 1999 to 2019, white PIs received between 203 and 904 awards in surplus each year (Figure 7A), a number that has increased with time due to a steady increase in relative funding rate (Figure 1B). Meanwhile, Asian PIs were consistently underfunded relative to the number of proposals submitted, with annual award deficits between 239 and 625 over the same period. For Black/AA, Hispanic or Latino, NH/PI, and AI/AN PIs, the average annual number of awards granted above or below overall rates was −20, –8, –1, and +4, respectively (Figure 7—figure supplement 1). Considered cumulatively, these quantities amount to thousands of funded or rejected proposals over the past two decades (Figure 7B and C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig7-v2.jpg)
+
+**Figure 7.:** (A) Both the annual award surplus to white PIs and the annual award deficit to Asian PIs has increased over time. All other groups have annual award surpluses or deficits between –60 and +30 (Figure 7—figure supplement 1). (B) The cumulative award surplus or deficit to various groups represents thousands of awards received or not given. The small inset shows cumulative numbers for AI/AN, NH/PI, Hispanic or Latino, and Black/AA PIs. (C) Relative to the total number of proposals submitted by each group from 1999 to 2019, the net award surplus or deficit for white, Asian, Black/AA, and Hispanic or Latino PIs.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) These trends appear in Figure 7 but are shown here with an adjusted y-axis. (B) This panel is a larger version of the small inset of cumulative trends for AI/AN, NH/PI, Hispanic or Latino, and Black/AA PIs in Figure 7. Source data: Data S1 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/83071/elife-83071-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Top: the average (orange) and median (blue) annualized award size for all awards in nominal dollars (left) and constant, inflation-adjusted 2019 dollars (right). Middle: annualized award size for Research awards. Bottom: average award duration for all awards (left) and Research awards (right). Error bars are present for years for which the average award duration was reported only to the tenth decimal place, and thus accounts for uncertainty due to rounding. Source data: Data S7 in the accompanying data repository (https://doi.org/10.5061/dryad.2fqz612rt).
 
 In terms of grant dollars, this cumulative award disparity may represent several billions of dollars in unbalanced funding, based on average award size data from NSF financial reports from 1999 to 2019. In inflation-adjusted dollars, the average annualized award size for competitive grants increased from $138,300 in 1999 to $197,500 in 2019, while the average award duration varied between 2.5 and 3.5 years (Figure 7—figure supplement 2). Moreover, the median award size for Research awards is larger than the median for Non-Research awards. Given the previous observation that racially disparate funding outcomes for Research proposals are larger (Figure 3C) and that proportionally more awards to Black/AA, AI/AN, and NH/PI are Non-Research awards (Figure 3D), the long-term pecuniary disadvantages for Black/AA, NH/PI, and AI/AN PIs may be further compounded. While these award surpluses and deficits must be considered by proposal type and program, the general picture of cumulative impacts from persistent funding rate differences is indisputable.
 
@@ -143,25 +303,25 @@ Given the central role that funding plays in the longevity of a researcher’s c
 
 ## Conclusions
 
-## Grand challenges in achieving racial equity at the NSF
+### Grand challenges in achieving racial equity at the NSF
 
 As the federal steward for basic research and science workforce development, the NSF must lead efforts to achieve racial equity in STEM, modeling the change it aspires to see in other organizations and sectors. We highlight key areas that must be addressed to make funding more equitable, to the benefit of the scientific workforce and all of society. We note that these recommendations are process-oriented rather than prescriptive.
 
-## Improve data transparency and use equity metrics
+#### Improve data transparency and use equity metrics
 
 Historically, NSF leads most research funding organizations in data transparency. The funding data that made this study possible is publicly available and accessible in a way that has not been emulated at most other funding bodies. NSF must continue to set an example and improve transparency by making all funding data disaggregated by race and ethnicity consistent, comprehensive, and publicly available, where possible (de Souza Briggs and McGahey, 2022). Privacy concerns around disaggregating and releasing data for groups with small numbers can be ameliorated by releasing data as multi-year averages or obtaining PI consent (Taffe and Gilpin, 2021). Additional work to understand underlying causes of funding disparities will require an intersectional approach (Crenshaw, 1989), investigating outcomes along multiple axes of identity and background, including but not limited to race, gender, disability, age, career stage, citizenship status, educational history, institution, and socioeconomic background (Rissler et al., 2020; Williams et al., 2015; Leggon, 2006; Institute of Medicine, 2013; National Academics of Sciences, Engineering, and Medicine, 2019; CEOSE, 2020). NSF must also expand approaches to measuring and evaluating progress towards equity (Metcalf et al., 2018; Dean-Coffey, 2018). Such research is critical for informing policies and programs aimed at addressing disparities, which risk being overly simplistic or even counterproductive without such contextualizing information.
 
-## Increase funding and accountability for equity efforts
+#### Increase funding and accountability for equity efforts
 
 We are encouraged by ongoing conversations that focus on improved guidance for broadening participation in proposal review criteria and expanded programming that enhances inclusion. Past outcomes from broadening participation activities should be reported as part of grant applications. Proposals can include evidence of healthy work environments, from the establishment and tracking of equity metrics (de Souza Briggs and McGahey, 2022; de Souza Briggs et al., 2022), to improved diversity of leadership, workforce, and trainees. NSF should continue to expand opportunities for direct funding towards equity research (e.g., INCLUDES, TCUP), both to better understand disparities and their causal mechanisms, as well as to address bias inherent to how racial disparities are commonly studied and funded. These measures must be combined with intentional efforts to create equitable funding outcomes.
 
-## Eliminate the impacts of racial funding disparities
+#### Eliminate the impacts of racial funding disparities
 
 Changes in funding agency policies, practices, and resource allocation are essential to addressing disparities, as outlined by numerous calls to action by coalitions of scientists (Stevens et al., 2021; No Time for Silence, 2020; Tilghman et al., 2021; Graves et al., 2022). A decade of efforts by NIH and more recent efforts by the Wellcome Trust have demonstrated that interventions focused solely on individual actions, such as increased bias-awareness training, or specific decision points within the merit review process, like blinding peer review, are inadequate as standalone cure-all solutions (Taffe and Gilpin, 2021; Wellcome Trust, 2022; Carter et al., 2020; Onyeador et al., 2021; Stemwedel, 2016). The failure of these and other good-faith attempts to eradicate disparities underscores the need for multiple levels of intervention informed by a wide array of evidence-based strategies that emphasize structural change.
 
 We urge NSF to critically reflect on these past attempts while also acting swiftly to pilot reparative measures that address these longstanding funding disparities, especially strategies that will meaningfully increase resources to diverse science and scientists. Like with public health crises and other issues of immediacy, uncertainties surrounding the exact causal mechanisms of these racial disparities should not preclude an urgent response based on what is already known (Stemwedel, 2016; Kington and Ginther, 2018). Meaningful actions can be taken while recognizing that further research and insights from intentional assessments of program efficacy will improve or change implemented strategies (de Souza Briggs and McGahey, 2022; Carter et al., 2020). Recognizing the importance of immediate actions on redressing and mitigating ongoing and future harms, in August of 2022, the Wellcome Trust announced a dedicated funding stream for researchers who are Black and people of color (Wellcome Trust, 2022). In the context of NSF, we note that the directorate-level data show that the number of awards needed to bridge some racial disparities is small (Figure 4), and that such disparities could be eliminated in a timely manner by targeted programs aimed at impacted groups.
 
-## Examining the culture of meritocracy
+### Examining the culture of meritocracy
 
 Racial funding disparities in STEM are a mirror of and magnifying glass on the ethos of meritocracy that permeates the practice of science. The use of merit review criteria to find and fund “the best ideas and the best people” is motivated by a shared understanding that the integrity of research knowledge relies on individual and collective adherence to principles of objectivity, honesty, and fairness. However, a vast body of research shows that systems designed to facilitate impartiality and merit-based rewarding can instead perpetuate the very biases they seek to prevent. For example, the issuing of a single overall rating for proposal reviews at the NSF introduces personal interpretations on the relative importance of the intellectual merit and broader impacts criteria (Lee, 2015; Intemann, 2009; Roberts, 2009). Additional well-documented social phenomena in evaluative STEM contexts, like “halo effects” favoring reputable scientists and institutions (Huber et al., 2022; Sine et al., 2003; Hsiang Liao, 2017; Tomkins et al., 2017) and increased bias in individuals with stronger self-perceptions of objectivity (Begeny et al., 2020; Sheltzer and Smith, 2014; Moss-Racusin et al., 2012; Uhlmann and Cohen, 2007), build on findings that environments characterized by explicit overtures of meritocracy are paradoxically more likely to produce and legitimize non-meritorious outcomes (Moss-Racusin et al., 2012; Uhlmann and Cohen, 2007; Castilla and Benard, 2010; Handley et al., 2015; Norton et al., 2004; Uhlmann and Cohen, 2005; Apfelbaum et al., 2012; White-Lewis, 2020). In this context, the racial funding disparities can be viewed as the product of a system and culture operating under an assumed meritocracy, rather than an aspiring one.
 
@@ -169,7 +329,7 @@ Other adverse impacts of a presumed meritocracy include the underfunding, under-
 
 Given that structural racism is defined as the totality of policies, processes, and social norms that interact to produce racially disparate impacts, the occurrence of racial funding disparities across STEM funding bodies serves as a warning beacon of systemic racism in science (Rucker and Richeson, 2021). Future efforts to understand and address these disparities must foreground the structural nature of the problem and resist conflating systemic issues with interpersonal racism (Rucker and Richeson, 2021; Byrd, 2011), like in previous responses to NIH racial funding gaps that reduced findings to a result “for” or “against” reviewer bias (Kington and Ginther, 2018; Dzirasa, 2020). While simulations of peer review show that significant differences in funding rate can result from even subtle biases (Day, 2015), these disparities are a reflection of the larger system of science that has conferred advantages and disadvantages in research support, publications, recognition, and influence across innumerable careers, with downstream implications for the promotion or diminishment of certain ideas. No amount of intervention focused on individual mindset change alone will undo this legacy and its influence (Kolluri and Tichavakunda, 2022; Carter et al., 2020; Onyeador et al., 2021; Ray, 2019b; Bonilla‐Silva, 2021). Without a transformation of the historical structures that distribute power and resources for knowledge production in STEM, even in the complete absence of individual racial animus or unintended bias, these racial disparities and their harmful impacts on scientific progress will continue.
 
-## Reimagining scientific funding
+### Reimagining scientific funding
 
 The current structures of scientific funding reflect, reinforce, and legitimate racial inequities found across society at large. Given that NSF was originally established in service of a postwar 1940s–50s America (Wang, 1995; Mazuzan, 1994; Kevles, 1977), in a time and place that had not yet abolished racial segregation and disenfranchisement through civil rights legislation, let alone achieved a societal shift away from attitudes favoring a strict racial hierarchy (Rucker and Richeson, 2021), this finding is unsurprising. The existence of widespread funding disparities both within NSF and across STEM shows that institutional racism remains readily identifiable in science and illustrates how white supremacy is maintained in contemporary contexts (Bonilla‐Silva, 2021; McGee, 2020; Bonilla-Silva, 2006; Bonilla-Silva, 2001). The complete adverse consequences of these disparities on marginalized scholars, higher education, innovation in science, the scientific workforce, and society are immense and unquantifiable, but no less real. NSF and STEM at large must reckon with its own historical injustices to meaningfully challenge the status quo. To perpetuate processes that privilege whiteness is to accept as collateral damage the transgenerational loss and devaluation of contributions from marginalized groups.
 
@@ -177,7 +337,7 @@ Many take progress for granted and believe that issues of discrimination, bias, 
 
 ## Methods
 
-## Data sources
+### Data sources
 
 All data on NSF funding outcomes were extracted from annual reports on the NSF proposal review system, which are publicly available online (accessed from https://www.nsf.gov/nsb/publications/pubmeritreview.jsp). By mandate, these documents are submitted by the Director of the NSF to the National Science Board, the independent governing body of the NSF, and commonly contain information on the funding outcomes—number of proposals considered versus number of awards given—of PIs by various demographic categories like gender, race, disability, and career stage.
 
@@ -197,17 +357,17 @@ Estimates of cumulative disparities from award surpluses and deficits in terms o
 
 Some data on the demographic composition of reviewers are available but are limited in scope and completeness. As for PIs submitting proposals, the self-reporting of demographic information by reviewers is voluntary. According to the merit review reports, the proportion of reviewers reporting demographic information increased from 9% in 2002 to 37.5% in 2015. Limited information about the demographics of reviewers is available only for the 2009–2015 period. Due to the incompleteness of these data, we do not examine reviewer demographics in our analysis.
 
-## Data tabulation changes for Hispanic or Latino PIs in NSF merit review reports
+### Data tabulation changes for Hispanic or Latino PIs in NSF merit review reports
 
 Two major changes in the reporting of funding outcomes by PI race and ethnicity occurred in the 2012 merit review report (Figure 6—figure supplement 2). In one change, PIs who identified as Hispanic or Latino were included in both their selected racial group(s) and within the Hispanic or Latino ethnicity category. Prior to 2012, PIs who identified as Hispanic or Latino were only counted as Hispanic or Latino in merit review reports, and not included in any other race category, regardless of their selection for race. Because each report includes data from previous years, the 2012 report includes data from 2005 to 2012 with this change retroactively applied. Although not explicitly stated, this change also indicates that in reports released prior to 2012, all funding outcomes reported by PI race are for PIs who are also Non-Hispanic (e.g., white, Non-Hispanic; Asian, Non-Hispanic).
 
 We note that although NSF describes the change in counting of Hispanic or Latino respondents as described above, there is still a mismatch between the two datasets in the number of reported proposals, awards, and funding rates for proposals by Hispanic or Latino PIs during the period of overlap 2005–2012. Given their description of the change, we would expect no discrepancies; the cause for this mismatch is unknown to the authors.
 
-## Data tabulation changes for multiracial PIs in NSF merit review reports
+### Data tabulation changes for multiracial PIs in NSF merit review reports
 
 In the second major change to demographic reporting in the 2012 merit review report, the NSF reported funding outcomes for PIs who selected two or more races in a separate multiracial category. PIs counted in the multiracial category are not included in any other category (i.e., an individual who selects both “white” and “Asian” for their race is placed in the multiracial category, rather than double-counted in both “white” and “Asian”). Because the 2012 report includes data on previous years, funding outcomes for multiracial PIs are available from 2005 to 2019. According to text in the 2012 report, in all reports released prior to 2012, “except for those who were Hispanic or Latino, individuals who identified multiple races were not included in [data tables].”
 
-## Treatment of proposals by multiple PIs in merit review reports
+### Treatment of proposals by multiple PIs in merit review reports
 
 When PIs respond to a solicitation for proposals at NSF, PIs may submit a collaborative proposal with multiple PIs or a non-collaborative proposal as a single PI (National Science Foundation, 2021). In the case of collaborative proposals with multiple PIs, these may be submitted in one of two ways: as a single proposal or as multiple proposals submitted simultaneously from different organizations.
 
@@ -217,7 +377,7 @@ For a submission of a collaborative proposal via simultaneous submissions from m
 
 Although determining the impact of collaborative research on racial funding rate disparities is of interest, currently available data do not allow for a differentiation between proposals submitted as collaborative work with multiple PIs or proposals by single PIs.
 
-## Categories of proposals and levels of aggregation by organizational level
+### Categories of proposals and levels of aggregation by organizational level
 
 All proposals for which an “award” or “decline” decision has been made are sometimes categorized or referred to as “competitive” proposals in merit review reports. This category of proposals includes standard research and education proposals; conference, equipment, infrastructure, travel, and research coordination network proposals; proposals for exploratory research or in rapid response to issues of severe urgency; and other related categories. This category of proposals does not include applications for the NSF Graduate Research Fellowship, preliminary proposals, contracts, continuing grant increments, intergovernmental personnel act agreements, and other similar categories. This category also does not include proposals which were withdrawn by PIs or returned without review by program officers for not meeting certain requirements (e.g., ineligible proposals or PIs; incompliance with solicitation requirements or other policies and procedures). According to the Fiscal Year 2020 NSF Merit Review Report, typically, 1–3% of submitted proposals are returned without review.
 
@@ -227,21 +387,33 @@ All proposals for which NSF made an award or decline decision can be disaggregat
 
 Data on funding outcomes for all proposals disaggregated by PI race and ethnicity are available from 1996 to 2019 (Data S1). For all Research and Non-Research proposals disaggregated by PI race and ethnicity, data is available 2013–2019 (Data S2 and S3). For data disaggregated by directorate, funding outcomes for Research proposals are available 2012–2016, and for all proposals and Non-Research proposals, 2013–2016. Although we discuss results only for the seven disciplinary directorates, data are also available for other programs under the Office of the Director, such as the Office of Integrative Activities (Data S4).
 
-## Data compilation and analysis
+### Data compilation and analysis
 
 As described earlier, changes to data tabulation influence the internal consistency of some data. Two continuous and internally self-consistent datasets can be extracted from the merit review reports: a dataset for 1996–2012, in which data by race pertain to Non-Hispanic individuals only, and 2005–2019, in which data by race pertain to individuals regardless of ethnicity. Figure 6—figure supplement 2 compares the differences between these datasets in terms of relative funding rates for proposals. For the period 2005–2012 in which there is overlap, the difference in relative funding rates between the two datasets is smaller for groups with greater numbers of proposals. To create the dataset on relative funding rates for all proposals from 1996 to 2019 (Figure 1), these two datasets are combined as depicted in Figure 6—figure supplement 2, in which data by PI race from 2005 to 2019 are regardless of ethnicity (Hispanic, Non-Hispanic, or Unknown) and data by PI race from 1996 to 2004 are only for Non-Hispanic individuals.
 
-Funding rates for each racial and ethnic group or other categories are calculated by dividing the number of awards by the number of proposals:FundingRateCategory=AwardsCategoryProposalsCategory
+Funding rates for each racial and ethnic group or other categories are calculated by dividing the number of awards by the number of proposals:
 
-Relative funding rates for each racial or ethnic group are calculated by subtracting the overall funding rate from each group’s funding rate and dividing the difference by the overall funding rates. Depending on the proposal type and organizational level being compared, the overall funding rate may be that for all proposals across NSF, all Research proposals, Research proposals in a specific directorate, et cetera:RelativeFundingRateCategory=FundingRateCategory−FundingRateOverallFundingRateOverall
+$$
+FundingRate_{Category}=\frac{Awards_{Category}}{Proposals_{Category}}
+$$
 
-We also express the impact of funding rate differences by calculating the “award surplus” or “award deficit” for each group. This quantity represents the number of awards received above the overall funding rate (award surplus) by a group or the number of additional awards required for a group to be funded at the overall rate (award deficit). We calculate the award surplus or deficit by subtracting the overall funding rate from each group’s funding rate and multiplying this difference by the number of proposals by each group:AwardSurplusorDeficitCategory=ProposalsCategory×(FundingRateCategory−FundingRateOverall)
+Relative funding rates for each racial or ethnic group are calculated by subtracting the overall funding rate from each group’s funding rate and dividing the difference by the overall funding rates. Depending on the proposal type and organizational level being compared, the overall funding rate may be that for all proposals across NSF, all Research proposals, Research proposals in a specific directorate, et cetera:
+
+$$
+RelativeFundingRate_{Category}=\frac{FundingRate_{Category}−FundingRate_{Overall}}{FundingRate_{Overall}}
+$$
+
+We also express the impact of funding rate differences by calculating the “award surplus” or “award deficit” for each group. This quantity represents the number of awards received above the overall funding rate (award surplus) by a group or the number of additional awards required for a group to be funded at the overall rate (award deficit). We calculate the award surplus or deficit by subtracting the overall funding rate from each group’s funding rate and multiplying this difference by the number of proposals by each group:
+
+$$
+AwardSurplusorDeficit_{Category}=Proposals_{Category}\times(FundingRate_{Category}−FundingRate_{Overall})
+$$
 
 A negative number indicates that the group has an award deficit whereas a positive number indicates that the group has an award surplus (Figure 2). Award surpluses or deficits can be calculated for specific proposal types and at different organizational levels: all proposals at NSF (e.g., Figures 2 and 7), for all Research proposals, Research and Non-Research proposals in a specific directorate (e.g., Figure 4), et cetera.
 
 As previously discussed, the examination of funding rate disparities by Research proposals and by directorate illustrates the necessity of data disaggregation, as several patterns are hidden within overall funding statistics for all proposals NSF-wide. Similarly, the same is true for award surpluses and deficits. Because each group has different submission patterns in terms of the proportion of Research versus Non-Research proposals and their distribution across directorates, total award surpluses and deficits for each group that are calculated at more granular levels will differ from those calculated at broader levels. For example, for the 2019 fiscal year, if we calculate the total award surplus or deficit for white, Asian, and Black/AA PIs by separately calculating the award surplus or deficit for Research and Non-Research proposals and then summing these values, we arrive at totals of +807 for white (+637 Research, +171 Non-Research; note rounded values), –364 for Asian (–369 Research, +4 Non-Research), and –18 for Black/AA PIs (–17 Research, –1 Non-Research). These values differ from those calculated using overall funding rates for all proposals: +798 for white, –432 for Asian, and –9 for Black/AA PIs (Figure 2). As a similar exercise, for the 2015 fiscal year, if we calculate the total Research award surplus for white PIs by summing the award surplus from each directorate and office (Data S4), we arrive at a total Research award surplus of +393 compared to +447 if calculated based on overall funding rates for all Research proposals. Award surpluses and deficits should be calculated at more granular organizational levels (i.e., divisions and programs) and proposal types (e.g., CAREER grants), but such data are not currently available.
 
-## Limitations of data for PIs from racial or ethnic groups with low submission numbers
+### Limitations of data for PIs from racial or ethnic groups with low submission numbers
 
 For PIs from groups with high overall submission numbers, the changes to data tabulation had a minimal to negligible overall effect on the funding rates calculated from data pre- and post-reporting scheme change. However, due to the low sample proposal numbers from AI/AN and NH/PI PIs, these data are relatively more affected by minimal changes, which include annual fluctuations in the total number of proposals awarded to these groups as well as differences in data reporting (Figure 6—figure supplement 2). These data are also affected by privacy and identity protection concerns in NSF reporting; information on NH/PI and AI/AN funding outcomes are often not reported when numbers are fewer than 10.
 

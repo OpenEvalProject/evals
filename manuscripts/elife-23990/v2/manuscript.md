@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.23990.001 Mutations in FAM20A cause tooth enamel defects known as Amelogenesis Imperfecta (AI) and renal calcification. We previously showed that Fam20A is a secretory pathway pseudokinase and allosterically activates the physiological casein kinase Fam20C to phosphorylate secreted proteins important for biomineralization (Cui et al., 2015). Here we report the nucleotide-free and ATP-bound structures of Fam20A. Fam20A exhibits a distinct disulfide bond pattern mediated by a unique insertion region. Loss of this insertion due to abnormal mRNA splicing interferes with the structure and function of Fam20A, resulting in AI. Fam20A binds ATP in the absence of divalent cations, and strikingly, ATP is bound in an inverted orientation compared to other kinases. Fam20A forms a dimer in the crystal, and residues in the dimer interface are critical for Fam20C activation. Together, these results provide structural insights into the function of Fam20A and shed light on the mechanism by which Fam20A mutations cause disease. DOI: http://dx.doi.org/10.7554/eLife.23990.001
+Mutations in FAM20A cause tooth enamel defects known as Amelogenesis Imperfecta (AI) and renal calcification. We previously showed that Fam20A is a secretory pathway pseudokinase and allosterically activates the physiological casein kinase Fam20C to phosphorylate secreted proteins important for biomineralization (Cui et al., 2015). Here we report the nucleotide-free and ATP-bound structures of Fam20A. Fam20A exhibits a distinct disulfide bond pattern mediated by a unique insertion region. Loss of this insertion due to abnormal mRNA splicing interferes with the structure and function of Fam20A, resulting in AI. Fam20A binds ATP in the absence of divalent cations, and strikingly, ATP is bound in an inverted orientation compared to other kinases. Fam20A forms a dimer in the crystal, and residues in the dimer interface are critical for Fam20C activation. Together, these results provide structural insights into the function of Fam20A and shed light on the mechanism by which Fam20A mutations cause disease.
 
 ## Introduction
 
@@ -36,41 +36,209 @@ Here, we report the nucleotide-free and ATP-bound crystal structures of Fam20A. 
 
 ## Results
 
-## Fam20A displays a unique disulfide pattern
+### Fam20A displays a unique disulfide pattern
 
-We determined the crystal structure of human Fam20A at 2.5 Å resolution (
+We determined the crystal structure of human Fam20A at 2.5 Å resolution (Figure 1A, Table 1). The kinase core of Fam20A (residues 160–525) is structurally similar to that of ceFam20, and can be superimposed onto ceFam20 with a rmsd (root-mean-square difference) of 2.1 Å over 322 aligned Cα atoms. Most secondary structures in the kinase core of Fam20A aligned well with the equivalent structural elements in ceFam20 except for three regions: the Kβ1-Kβ2 loop, the Kβ6-Kβ7 loop, and the Kβ3-Kα3 loop (hereafter we use ‘K’ to denote the secondary structures in the kinase core of the Fam20 proteins, and ‘N’ to denote the secondary structures in their unique N-terminal segments. Figure 1A and B; Figure 1—figure supplement 1). An insertion of seventeen residues specifically exists in the Kβ1-Kβ2 loop of Fam20A (Figure 1—figure supplement 1, Figure 1—figure supplement 2). This insertion forms two short α-helices (Kα2A, Kα2B) and forces an upswing of the Kβ1-Kβ2 loop. The Kβ1-Kβ2 loop in turn levers up the Kβ6-Kβ7 loop and induces the formation of a short helix (Kα5A) in this region. The Kβ3-Kα3 loop also swings up to engage with the Kβ6-Kβ7 loop. Gln258Fam20A, which replaces a Glu essential for the catalytic activity of Fam20C (Glu213ceFam20), resides at the C-terminal end of the Kβ3-Kα3 loop. As a result of the upswing of this loop, Gln258Fam20A is dislodged from the ‘active site’ of Fam20A (Figure 1A). The N-terminal segment of Fam20A contains two α-helices and adopts a different topology compared to that of ceFam20. A long helix, Nα2, is held alongside the kinase core and is involved in binding to ATP as described below.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/23990/elife-23990-fig1-v2.jpg)
 
-**Figure 1.:** (A) Structure of human Fam20A. The N-terminal segment was colored in green. The Kβ1-Kβ2, Kβ6-Kβ7, and Kβ3-Kα3 loops were colored in red, teal, and magenta, respectively. The rest of the kinase core is shown in white. The side chains of Cys209, Cys211, Cys319, Cys323, and Gln258 are shown as sticks. The N- and C-termini of the molecule are indicated. (B) Structure of ceFam20 (PDB ID: 4KQA) is shown in the same orientation as Fam20A in (A) and colored in the same color scheme. The side chains Cys273, Cys277, and Glu213 are shown as sticks. The active site of ceFam20 is indicated with an oval in dashed line. (C) The schematic of the human Fam20A gene structure and RNA splicing. Exon three is highlighted in red. Relevant amino acid sequences are shown at the bottom. The two Cys residues in the Kβ1-Kβ2 loop are highlighted in red. (D) Effect of Fam20A exon three deletion on OPN phosphorylation. C-terminal V5-tagged OPN was expressed alone or co-expressed with Flag-tagged Fam20A WT or Δexon3 in U2OS cells that were metabolically labeled with 32P orthophosphate. OPN-V5 was immunoprecipitated from the medium. Total OPN and 32P incorporation were detected by anti-V5 immunoblotting and autoradiography. Expression of Fam20A was monitored by anti-Flag immunoblotting. (E) Effect of exon three deletion on Fam20A secretion. Flag-tagged Fam20A WT or Δexon3 was expressed in U2OS cells and immunoprecipitated from conditioned media using anti-Flag antibody. (F) Effect of C209A/C211A mutation (CC/AA) on Fam20A secretion and OPN phosphorylation.DOI: http://dx.doi.org/10.7554/eLife.23990.002
+**Figure 1.:** (A) Structure of human Fam20A. The N-terminal segment was colored in green. The Kβ1-Kβ2, Kβ6-Kβ7, and Kβ3-Kα3 loops were colored in red, teal, and magenta, respectively. The rest of the kinase core is shown in white. The side chains of Cys209, Cys211, Cys319, Cys323, and Gln258 are shown as sticks. The N- and C-termini of the molecule are indicated. (B) Structure of ceFam20 (PDB ID: 4KQA) is shown in the same orientation as Fam20A in (A) and colored in the same color scheme. The side chains Cys273, Cys277, and Glu213 are shown as sticks. The active site of ceFam20 is indicated with an oval in dashed line. (C) The schematic of the human Fam20A gene structure and RNA splicing. Exon three is highlighted in red. Relevant amino acid sequences are shown at the bottom. The two Cys residues in the Kβ1-Kβ2 loop are highlighted in red. (D) Effect of Fam20A exon three deletion on OPN phosphorylation. C-terminal V5-tagged OPN was expressed alone or co-expressed with Flag-tagged Fam20A WT or Δexon3 in U2OS cells that were metabolically labeled with 32P orthophosphate. OPN-V5 was immunoprecipitated from the medium. Total OPN and 32P incorporation were detected by anti-V5 immunoblotting and autoradiography. Expression of Fam20A was monitored by anti-Flag immunoblotting. (E) Effect of exon three deletion on Fam20A secretion. Flag-tagged Fam20A WT or Δexon3 was expressed in U2OS cells and immunoprecipitated from conditioned media using anti-Flag antibody. (F) Effect of C209A/C211A mutation (CC/AA) on Fam20A secretion and OPN phosphorylation.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/23990/elife-23990-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** The Kβ1-Kβ2, Kβ6-Kβ7, and Kβ3-Kα3 loops of the three proteins are highlighted in red, teal, and magenta, respectively. The Cys residues are highlighted in orange. Disulfide bonds conserved in Fam20A and ceFam20 are indicated with black dots and lines. Disulfide bonds specific for Fam20A or ceFam20 are indicated with orange dots and lines. The secondary structures of Fam20A and ceFam20 are shown above and below the sequence blocks, respectively. Residues in Fam20A that are involved in ATP-binding and dimer formation are highlighted with unfilled rhombuses and triangles, respectively, at the top. Residues involved in binding to Mn/ADP in ceFam20 are highlighted with filled gray rhombuses at the bottom.DOI: http://dx.doi.org/10.7554/eLife.23990.003
+**Figure 1—figure supplement 1.:** The Kβ1-Kβ2, Kβ6-Kβ7, and Kβ3-Kα3 loops of the three proteins are highlighted in red, teal, and magenta, respectively. The Cys residues are highlighted in orange. Disulfide bonds conserved in Fam20A and ceFam20 are indicated with black dots and lines. Disulfide bonds specific for Fam20A or ceFam20 are indicated with orange dots and lines. The secondary structures of Fam20A and ceFam20 are shown above and below the sequence blocks, respectively. Residues in Fam20A that are involved in ATP-binding and dimer formation are highlighted with unfilled rhombuses and triangles, respectively, at the top. Residues involved in binding to Mn/ADP in ceFam20 are highlighted with filled gray rhombuses at the bottom.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/23990/elife-23990-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** Conserved residues are highlighted with black rectangles. The Fam20A-specific insertion is highlighted using a red rectangle, and the two conserved Cys are shaded in red. The secondary structures of Fam20A are shown above the sequence blocks and labeled.DOI: http://dx.doi.org/10.7554/eLife.23990.004
+**Figure 1—figure supplement 2.:** Conserved residues are highlighted with black rectangles. The Fam20A-specific insertion is highlighted using a red rectangle, and the two conserved Cys are shaded in red. The secondary structures of Fam20A are shown above the sequence blocks and labeled.
+
+**Table 1.**
+ Data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Fam20A (PDB ID: 5WRR)</th>
+      <th>Fam20A with ATP (PDB ID: 5WRS)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 32 2 1</td>
+      <td>P 32 2 1</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td>a = 156.854 Å, b = 156.854 Å, c = 143.655 Å</td>
+      <td>a = 157.202 Å, b = 157.202 Å, c = 144.802 Å</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.979</td>
+      <td>1.009</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>2.50</td>
+      <td>2.75</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.172 (1.804)</td>
+      <td>0.168 (1.470)</td>
+    </tr>
+    <tr>
+      <td>Rpim</td>
+      <td>0.055 (0.566)</td>
+      <td>0.053 (0.472)</td>
+    </tr>
+    <tr>
+      <td>CC1/2 (highest-resolution shell)</td>
+      <td>0.841</td>
+      <td>0.788</td>
+    </tr>
+    <tr>
+      <td>I / σI</td>
+      <td>28.8 (2.8)</td>
+      <td>21.2 (2.4)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.9 (100.0)</td>
+      <td>99.9 (100.0)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>10.9 (11.1)</td>
+      <td>10.7 (10.6)</td>
+    </tr>
+    <tr>
+      <td>Wilson B-factor</td>
+      <td>54.1</td>
+      <td>57.9</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reflections used in refinement</td>
+      <td>70216 (6906)</td>
+      <td>53997 (5329)</td>
+    </tr>
+    <tr>
+      <td>Reflections used for Rfree</td>
+      <td>1994 (197)</td>
+      <td>1946 (193)</td>
+    </tr>
+    <tr>
+      <td>Rwork / Rfree</td>
+      <td>0.215/0.231</td>
+      <td>0.203/0.238</td>
+    </tr>
+    <tr>
+      <td>No. of non-hydrogen atoms</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>7039</td>
+      <td>7018</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>98</td>
+      <td>146</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>876</td>
+      <td>874</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>75.1</td>
+      <td>72.3</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>116.7</td>
+      <td>101.4</td>
+    </tr>
+    <tr>
+      <td>R.m.s deviations</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.002</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.62</td>
+      <td>1.01</td>
+    </tr>
+    <tr>
+      <td>Ramachandran</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>96.8</td>
+      <td>96.5</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>3.1</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_Each dataset was collected from a single crystal. Values in parentheses are for highest-resolution shell._
 
 Fam20A displays a distinct disulfide pattern compared to ceFam20. As we previously described, four pairs of disulfide bonds exist in ceFam20 (Xiao et al., 2013). Three of them are also present in Fam20A (Figure 1—figure supplement 1). However, a disulfide bond corresponding to Cys273ceFam20-Cys277ceFam20 in the Kβ6-Kβ7 loop is absent in Fam20A. Instead, Cys209Fam20A and Cys211Fam20A in the Kβ1-Kβ2 loop form two disulfide bonds with Cys319Fam20A and Cys323Fam20A (the two Cys that align with Cys273ceFam20 and Cys277ceFam20), respectively (Figure 1A, Figure 1—figure supplement 1). These two disulfide bonds tether the Kβ1-Kβ2 loop to the Kβ6-Kβ7 loop, imposing a strong restraint on the structural flexibility of this region. Notably, Cys209Fam20A and Cys211Fam20A are within the 17-residue insertion in the Kβ1-Kβ2 loop and are specifically conserved in Fam20A orthologs (Figure 1—figure supplement 2), suggesting that this unique disulfide pattern of Fam20A is evolutionarily conserved.
 
 The functional importance of these two Fam20A-specific disulfide bonds is further demonstrated by a patient-derived Fam20A splicing variant. The N-terminal portion of the Kβ1-Kβ2 loop, including Cys209Fam20A and Cys211Fam20A, is encoded by a small exon, exon 3, of the FAM20A gene. In an AI patient with compound heterozygous mutations in FAM20A (Cho et al., 2012), one allele has an A-G transition at the acceptor site of intron 2 (c.590-2A-G), resulting in exon three skipping. The expressed Fam20A variant has amino acids 197–214 substituted with a Val (Fam20A-Δexon3, Figure 1C). Since the other allele has a nonsense mutation (R276X) that abrogates the majority of the kinase domain, Fam20A-Δexon3 is the only form of Fam20A present in the patient that gave rise to the disease. To evaluate the function of Fam20A-Δexon3, we co-expressed V5-tagged osteopontin (OPN) with Flag-tagged Fam20A-WT or Fam20A-Δexon3 in U2OS cells, metabolically labeled the cells with 32P orthophosphate, and analyzed incorporation of radiolabeled phosphate into the V5-immunoprecipitates. Consistent with our previous observation, ectopic expression of Fam20A-WT significantly enhanced the kinase activity of endogenous Fam20C towards OPN, resulting in a higher level of OPN phosphorylation (Figure 1D) (Cui et al., 2015). In contrast, expression of Fam20A-Δexon3 failed to increase OPN phosphorylation. Compared with Fam20A-WT, Fam20A-Δexon3 was poorly secreted and thus probably misfolded (Figure 1E). Similarly, Fam20A-CC/AA, a Fam20A mutant having both Cys209Fam20A and Cys211Fam20A mutated to Ala, also showed attenuated secretion and diminished ability to enhance OPN phosphorylation (Figure 1F). Thus, the unique disulfide pattern in Fam20A plays an important role in maintaining its structure and function.
 
-## Fam20A binds ATP without cations
+### Fam20A binds ATP without cations
 
-We have previously demonstrated that both Fam20A and Fam20C could bind ATP by means of thermal stability shift assays (
+We have previously demonstrated that both Fam20A and Fam20C could bind ATP by means of thermal stability shift assays (Cui et al., 2015). Consistent with the fact that metal ions such as Mn2+ are required for the kinase activity of Fam20C, Fam20C bound ATP in the presence of Mn2+, whereas ATP alone induced little changes in its melting temperature (Tm) (Figure 2A). In contrast, ATP alone caused dramatic Tm increase of Fam20A, indicating that ATP binding to Fam20A could be cation-independent (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/23990/elife-23990-fig2-v2.jpg)
 
-**Figure 2.:** (A) Thermal stability shift assays of ATP binding to Fam20A or Fam20C in the presence or absence of Mn2+. ATP, 250 μM; MnCl2, 1 mM. (B) Fam20A thermal stability shift assay. The ΔTm values are plotted against ATP concentration. Data points are represented as mean ± SD and fitted by non-linear regression of the equation Y = ΔTm max*X/(Kd + X). (C) Thermal stability shift assays of ATP, GTP, CTP or UTP binding to Fam20A or Fam20C. Nucleotide concentration is 10 μM for Fam20A and 250 μM for Fam20C. (D) Thermal stability shift assays of ATP or ADP binding to Fam20A without cations. Data were plotted and fitted as in (B). (E) Gel filtration analyses of the Fam20A/Fam20C complex in the absence or presence of 250 μM ATP. (F) 2D class averages of the negatively stained Fam20A/20C complexes. Representative 2D class averages of the complex assembled in the presence or absence of ATP (250 μM) are shown at the same pixel size to highlight the overall size changes between the two samples. Scale bar, 200 Å.DOI: http://dx.doi.org/10.7554/eLife.23990.006
+**Figure 2.:** (A) Thermal stability shift assays of ATP binding to Fam20A or Fam20C in the presence or absence of Mn2+. ATP, 250 μM; MnCl2, 1 mM. (B) Fam20A thermal stability shift assay. The ΔTm values are plotted against ATP concentration. Data points are represented as mean ± SD and fitted by non-linear regression of the equation Y = ΔTm max*X/(Kd + X). (C) Thermal stability shift assays of ATP, GTP, CTP or UTP binding to Fam20A or Fam20C. Nucleotide concentration is 10 μM for Fam20A and 250 μM for Fam20C. (D) Thermal stability shift assays of ATP or ADP binding to Fam20A without cations. Data were plotted and fitted as in (B). (E) Gel filtration analyses of the Fam20A/Fam20C complex in the absence or presence of 250 μM ATP. (F) 2D class averages of the negatively stained Fam20A/20C complexes. Representative 2D class averages of the complex assembled in the presence or absence of ATP (250 μM) are shown at the same pixel size to highlight the overall size changes between the two samples. Scale bar, 200 Å.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/23990/elife-23990-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Scale bar, 200 Å.DOI: http://dx.doi.org/10.7554/eLife.23990.007
+**Figure 2—figure supplement 1.:** Scale bar, 200 Å.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/23990/elife-23990-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Scale bar, 200 nm.DOI: http://dx.doi.org/10.7554/eLife.23990.008
+**Figure 2—figure supplement 2.:** Scale bar, 200 nm.
 
 To determine the binding affinity of Fam20A/ATP interaction, we measured the ΔTm of Fam20A at different ATP concentrations in the presence or absence of Mn2+, and deduced apparent dissociation constant (Kdapp) values. This method has been validated by Murphy et al. to evaluate the affinity of ATP for a number of kinases (Murphy et al., 2014b). Our results show that Fam20A binds ATP with a Kdapp of 3 μM in the absence of cations as compared to 156 μM in the presence of saturating amount of Mn2+ (Figure 2B). This suggests that Fam20A preferably binds ATP without cations.
 
@@ -80,29 +248,29 @@ The significant Tm increase of Fam20A upon ATP binding suggests that ATP stabili
 
 To further assess the effect of ATP on the assembly of the Fam20A/Fam20C complex, we performed single particle electron microscopy on negatively stained samples of Fam20A/Fam20C. Two-dimensional (2D) class averages of the complex exhibited a clover-shaped structure that is consistent in size with a Fam20A/Fam20C tetramer (Figure 2F). By comparing 2D class averages for each condition, we observed that addition of ATP rendered the Fam20A/Fam20C particles smaller in size (Figure 2F, Figure 2—figure supplement 1 and Figure 2—figure supplement 2), indicating a more compact and less flexible conformation of the complex. Collectively, these results suggest that ATP binding to Fam20A stabilizes Fam20A as well as the Fam20A/Fam20C complex.
 
-## ATP binds to Fam20A in an inverted orientation
+### ATP binds to Fam20A in an inverted orientation
 
-To elucidate how Fam20A binds ATP, we soaked ATP into the Fam20A crystals obtained above and determined the complex structure at 2.75 Å resolution (
+To elucidate how Fam20A binds ATP, we soaked ATP into the Fam20A crystals obtained above and determined the complex structure at 2.75 Å resolution (Figure 3A, Table 1). Surprisingly, ATP binds to Fam20A in an unusual orientation in the structure. In an independent experiment, we also co-crystallized Fam20A with ATP and determined the structure at 2.9 Å. The co-crystal structure is almost identical to the soaked one, suggesting that the unexpected ATP-binding mode is not an artifact caused by the soaking experiment.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/23990/elife-23990-fig3-v2.jpg)
 
-**Figure 3.:** (A) The Fo-Fc difference electron density map (calculated before ATP is built and contoured at 3σ) is shown as a green mesh, revealing the presence of ATP. Fam20A is shown as ribbons and colored in the same scheme as Figure 1A (the Kβ1-Kβ2 loop in red). The ATP molecule built afterwards is shown in sticks, and its carbon atoms are colored in magenta. (B) Superimposition of Fam20A/ATP and ceFam20/ADP. Fam20A and ceFam20 are shown in white and cyan, respectively. The carbons in ATP and ADP are colored in magenta and cyan, respectively. (C) An enlarged image of the ATP-binding pocket of Fam20A showing the detailed molecular interactions with ATP. Fam20A is colored in the same scheme as in Figure 1A, with the Nα2 helix highlighted in green. Salt-bridge and hydrogen-bond interactions are shown as dashed lines. (D) Thermal stability shift assays of ATP binding to Fam20C or Fam20A. 100 μM and 250 μM ATP were used to assay Fam20A and Fam20C, respectively. 5 mM MnCl2 was present in the Fam20C assay conditions. (E) Thermal stability shift assays of ATP binding to Fam20A WT, K129A, K233A, S346E, and M235W. Data were plotted and fitted as in Figure 2B.DOI: http://dx.doi.org/10.7554/eLife.23990.009
+**Figure 3.:** (A) The Fo-Fc difference electron density map (calculated before ATP is built and contoured at 3σ) is shown as a green mesh, revealing the presence of ATP. Fam20A is shown as ribbons and colored in the same scheme as Figure 1A (the Kβ1-Kβ2 loop in red). The ATP molecule built afterwards is shown in sticks, and its carbon atoms are colored in magenta. (B) Superimposition of Fam20A/ATP and ceFam20/ADP. Fam20A and ceFam20 are shown in white and cyan, respectively. The carbons in ATP and ADP are colored in magenta and cyan, respectively. (C) An enlarged image of the ATP-binding pocket of Fam20A showing the detailed molecular interactions with ATP. Fam20A is colored in the same scheme as in Figure 1A, with the Nα2 helix highlighted in green. Salt-bridge and hydrogen-bond interactions are shown as dashed lines. (D) Thermal stability shift assays of ATP binding to Fam20C or Fam20A. 100 μM and 250 μM ATP were used to assay Fam20A and Fam20C, respectively. 5 mM MnCl2 was present in the Fam20C assay conditions. (E) Thermal stability shift assays of ATP binding to Fam20A WT, K129A, K233A, S346E, and M235W. Data were plotted and fitted as in Figure 2B.
 
 In the Fam20A/ATP structure, the adenine moiety of ATP occupies a similar pocket as that of ADP in the ceFam20/ADP structure; however, the entire nucleotide is inverted in such a way that the ribose is turned ‘upside down’, and the phosphate groups point to the opposite direction, reaching to the Nα2 helix (Figure 3B and C). The adenine ring of ATP is sandwiched by several hydrophobic residues in Fam20A, including Met235 and Phe343 from the top, and Pro279, Leu344, and Leu429 from the bottom (Figure 3C). It also forms three hydrogen bonds with the side chain of Ser341 and the main chain atoms of Ala342 and Leu344. The ribose is coordinated by Arg352. The triphosphate group, especially the γ-phosphate, is surrounded by extensive salt-bridge and hydrogen-bond interactions contributed by Tyr125 and Lys129 from the Nα2 helix, as well as Lys233, Ser346, and the main chain amide group of Leu347.
 
 To confirm the inverted ATP-binding mode of Fam20A, we performed a series of mutagenesis experiments. We have previously shown that the adenine nucleotide binds to Fam20C in the conventional conformation, and is coordinated by a number of conserved residues, including Lys271Fam20C and Asp478Fam20C (Xiao et al., 2013). Lys271Fam20C is one of the two critical Lys that are involved in binding to the phosphate groups of the adenine nucleotide. Asp478Fam20C aligns with the DFG Asp in canonical kinases and is involved in binding to the metal ions that engage the phosphate groups of ATP. Indeed, neither Fam20C-K271A nor Fam20C-D478A mutant could bind ATP, as shown by the thermal stability shift assay (Figure 3D). This is consistent with our previous result showing that these mutants have greatly diminished kinase activity. In contrast, substitution of the corresponding residues in Fam20A (Lys223Fam20A and Asp430Fam20A, respectively) with Ala has little effect on the ability of Fam20A to bind ATP (Figure 3D). Furthermore, we generated several Fam20A mutants to test the importance of residues involved in ATP-binding, including Fam20A-K129A, Fam20A-K233A, Fam20A-M235W, and Fam20A-S346E. Lys129Fam20A and Lys233Fam20A interact with the phosphate groups of ATP and help maintain the ATP in the inverted orientation (Figure 3C). In addition, substituting Met235Fam20A that is positioned near the ATP binding site with a bulkier Trp would interfere with adenine binding. Finally, mutating Ser346Fam20A to a negatively charged Glu would likely repel the phosphate groups of ATP. All four mutants showed attenuated ATP binding as compared to the wildtype protein (Figure 3E). Taken together, these mutation results corroborate our structural analyses, demonstrating that Fam20A binds ATP in a novel, inverted conformation that is fundamentally different from Fam20C and other kinases.
 
-## Dimerization of Fam20A
+### Dimerization of Fam20A
 
-Fam20A dimerizes/oligomerizes in solution in a concentration-dependent manner (
+Fam20A dimerizes/oligomerizes in solution in a concentration-dependent manner (Figure 4A). Also, V5-tagged Fam20A, but not Fam20B, co-immunoprecipitated with Flag-tagged Fam20A when co-expressed in U2OS cells, suggesting that Fam20A can form dimers/oligomers in the cell (Figure 4B). In the crystal, Fam20A forms a symmetrical, face-to-face dimer (Figure 4C). Each molecule in the dimer buries a ~2000 Å2 interface, which accounts for 9.5% of its total solvent-accessible surfaces. The dimer is mediated by a number of hydrogen bonds and hydrophobic interactions between the two protomers (Figure 4—figure supplement 1). The Kβ1-Kβ2 loop from the two molecules facing each other, and the two pairs of short helices Kα2A and Kα2B are involved in forming a small four-helix bundle. The Kβ3-Kα3 loop of each protomer docks onto the C-lobe of the other protomer in the dimer (Figure 4C). In particular, Val249, Phe251, and Phe254 protrude out of the Kβ3-Kα3 loop to make strong hydrophobic contacts with the other molecule.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/23990/elife-23990-fig4-v2.jpg)
 
-**Figure 4.:** (A) Fam20A dimerizes in solution in a concentration-dependent manner. 1 mg or 100 µg purified Fam20A (both in 500 µl) were individually loaded on a Superdex 200 increase 10/300 GL column (GE healthcare) and eluted using 20 mM HEPES, pH 7.5, and 100 mM NaCl. The peak positions of the two runs are highlighted with dashed lines. The elution volumes of the molecular weight standards are indicated. (B) Co-immunoprecipitation of Fam20A-Flag and Fam20A-V5 (or Fam20B-V5) from U2OS cells. AAA, Fam20A V249A/F251A/F254A mutant. (C) The structure of Fam20A dimer. One protomer in the dimer is shown in ribbons, and the other is shown in surface representation. The Kβ1-Kβ2 and Kβ3-Kα3 loops are highlighted in red and magenta, respectively. The rest of the two molecules are shown in white and cyan. A close view of the Kβ3-Kα3 loop interaction is shown on the right. The side chains of Val249, Phe251, Phe254 are shown as sticks. (D) Secretion of Fam20A WT and V249A/F251A/F254A. (E) Effect of V249A/F251A/F254A mutation on Fam20A-Fam20C interaction. Fam20A-V5 (WT or AAA) and Fam20C-Flag were co-expressed in U2OS cells and coimmunoprecipitated from the cell lysate. (F and G) Effect of Fam20A-AAA on ENAM phosphorylation by Fam20C in vitro. (H) Effect of Fam20A-AAA on OPN phosphorylation in metabolically 32P radiolabeled U2OS cells.DOI: http://dx.doi.org/10.7554/eLife.23990.010
+**Figure 4.:** (A) Fam20A dimerizes in solution in a concentration-dependent manner. 1 mg or 100 µg purified Fam20A (both in 500 µl) were individually loaded on a Superdex 200 increase 10/300 GL column (GE healthcare) and eluted using 20 mM HEPES, pH 7.5, and 100 mM NaCl. The peak positions of the two runs are highlighted with dashed lines. The elution volumes of the molecular weight standards are indicated. (B) Co-immunoprecipitation of Fam20A-Flag and Fam20A-V5 (or Fam20B-V5) from U2OS cells. AAA, Fam20A V249A/F251A/F254A mutant. (C) The structure of Fam20A dimer. One protomer in the dimer is shown in ribbons, and the other is shown in surface representation. The Kβ1-Kβ2 and Kβ3-Kα3 loops are highlighted in red and magenta, respectively. The rest of the two molecules are shown in white and cyan. A close view of the Kβ3-Kα3 loop interaction is shown on the right. The side chains of Val249, Phe251, Phe254 are shown as sticks. (D) Secretion of Fam20A WT and V249A/F251A/F254A. (E) Effect of V249A/F251A/F254A mutation on Fam20A-Fam20C interaction. Fam20A-V5 (WT or AAA) and Fam20C-Flag were co-expressed in U2OS cells and coimmunoprecipitated from the cell lysate. (F and G) Effect of Fam20A-AAA on ENAM phosphorylation by Fam20C in vitro. (H) Effect of Fam20A-AAA on OPN phosphorylation in metabolically 32P radiolabeled U2OS cells.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/23990/elife-23990-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** Residues involved in forming hydrophobic interactions are indicated, and the hydrophobic contacts are represented by spoked arcs. Residues participating in hydrogen bonds are shown in ball-and-stick representation, and the hydrogen bonds are shown as green dashed lines. Note that the Fam20A dimer is symmetrical, therefore, two sets of interactions shown in the picture are present in the dimer structure.DOI: http://dx.doi.org/10.7554/eLife.23990.011
+**Figure 4—figure supplement 1.:** Residues involved in forming hydrophobic interactions are indicated, and the hydrophobic contacts are represented by spoked arcs. Residues participating in hydrogen bonds are shown in ball-and-stick representation, and the hydrogen bonds are shown as green dashed lines. Note that the Fam20A dimer is symmetrical, therefore, two sets of interactions shown in the picture are present in the dimer structure.
 
 To determine whether the dimer interface seen in the crystal is important for Fam20A function, we substituted Val249, Phe251 and Phe254 with Ala (Fam20A-AAA). As demonstrated by the coimmunoprecipitation experiment, interaction between Flag-tagged Fam20A-AAA and V5-tagged Fam20A-AAA was significantly reduced compared to that between wild-type Fam20A (Figure 4B). Secretion of Fam20A-AAA was not obviously changed, suggesting that the mutations did not dramatically affect protein folding or stability (Figure 4D). Importantly, Fam20A-AAA showed impaired interaction with Fam20C (Figure 4E). Consistently, it failed to enhance Fam20C kinase activity in vitro (Figure 4F and G), nor could it increase Fam20C-catalyzed OPN phosphorylation in the cell (Figure 4H). Taken together, our results demonstrate that an intact dimer interface reported here is critical for Fam20A to bind Fam20C and allosterically enhance Fam20C activity.
 
@@ -120,38 +288,38 @@ In conclusion, we have solved the crystal structure of Fam20A, a secretory pathw
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 DNA fragment encoding Human Fam20A residues 69–529 was cloned into a modified pI-secSUMOstar vector (LifeSensors, Malvern, PA) containing a tobacco etch virus (TEV) protease cleavage site. Bacmids were generated using the Bac-to-Bac system (Invitrogen, Carlsbad, CA). Recombinant baculoviruses were generated and amplified using the Sf21 insect cells (RRID: CVCL_0518), maintained in the SIM SF medium (Sino Biological Inc., Beijing, China). For protein production, Hi5 cells (RRID: CVCL_C190) grown in the SIM HF medium (Sino Biological Inc.) were infected at a density of 1.5–2.0 × 106 cells/ml. 48 hr post infection, 2 liters of conditioned medium were collected by centrifugation at 200x g. The medium was concentrated using a Hydrosart Ultrafilter (Sartorius, Göttingen, Germany) and exchanged into the binding buffer containing 25 mM Tris-HCl, pH 8.0, 200 mM NaCl. The proteins were then purified using the Ni-NTA resin (GE healthcare, Chicago, IL). The N-terminal 6xHis-SUMO fusion tag was removed by the TEV protease. Untagged Fam20A was further purified by the anion exchange chromatography using a Resource Q column (GE healthcare), followed by the size-exclusion chromatography using a Superdex 200 increase 10/300 GL column (GE healthcare).
 
-## Thermal stability shift assay
+### Thermal stability shift assay
 
 For the thermal stability shift assays, proteins were diluted to a final concentration of 2 μM in a buffer containing 20 mM HEPES, pH 7.5, 100 mM NaCl. Different concentrations of nucleotides or metal ions were added as indicated. SYPRO Orange dye (Molecular Probes, Eugene, OR; S6650) was added to a final concentration of 5× to monitor protein denaturation. Thermal scanning (25–85°C at 0.6 °C/min) was performed using a LightCycler 480 System (Roche, Pleasanton, CA) with the combination filters of 465 nm (excitation) and 580 nm (emission). Data were analyzed using the software provided by the manufacture.
 
-## Crystallization
+### Crystallization
 
 Fam20A in 20 mM HEPES, pH 7.5, 100 mM NaCl was concentrated to 7 mg/ml and used for crystallization. The crystals were grown at 20°C using the hanging-drop vapor-diffusion method. The precipitant solution contained 1.7 M ammonium sulfate, 0.1 M HEPES, pH 7.5, and 6% (w/v) PEG 400. The crystals reached full size in 10–14 days, and were then transferred into a cryo-protection solution containing 20% (v/v) glycerol, 1.7 M ammonium sulfate, 0.1 M HEPES, pH 7.5, and 6% (w/v) PEG 400 and flash-frozen in liquid nitrogen. To obtain the ATP-bound structure, both co-crystallization and soaking experiments were performed. For co-crystallization, Fam20A protein solution was supplemented with 20 mM ATP before mixed with above precipitant solution and crystallized. For soaking, the apo crystal obtained above was soaked in the cryo-protection solution supplemented with 10 mM ATP for 1 hr before frozen.
 
-## Data collection and structure determination
+### Data collection and structure determination
 
 Diffraction data were collected at Shanghai Synchrotron Radiation Facility beamline BL17U and processed with HKL2000 (HKL Research). The structure of Fam20A was determined by molecular replacement using the ceFam20 structure as the search model in Phaser (McCoy et al., 2007), RRID: SCR_014219). The structural model was then manually built in Coot (Emsley et al., 2010), RRID: SCR_014222) and refined with Phenix (Adams et al., 2010), RRID: SCR_014224). Five percent randomly selected reflections were used for cross-validation (Brünger et al., 1998).
 
-## Bioinformatics and structural analysis
+### Bioinformatics and structural analysis
 
 Multiple sequence alignment was performed using PROMALS3D (Pei et al., 2008). Structural alignment between Fam20A and ceFam20 was performed using Dali server (Holm and Rosenström, 2010), RRID: SCR_013433). Interaction between the two protomers in the Fam20A dimer was analyzed using DIMPLOT (Laskowski and Swindells, 2011). Molecular graphics were prepared using PyMol (Schrödinger, LLC., RRID: SCR_000305).
 
-## Negative stain grid preparation and electron microscopy
+### Negative stain grid preparation and electron microscopy
 
 FAM20A/20C complexes were mixed with or without ATP and further purified using size exclusion chromatography. After determining the concentration of peak fractions, we diluted the sample in gel filtration buffer to 40 nM and incubated on continuous carbon grids (Electron Microscopy Sciences, Hatfield, PA; CF400-Cu) for 30 s. After incubation, the grid was transferred directly onto 5 × 75 µl droplets of 2% uranyl acetate and then blotted dry.
 
 Negative stain grids were imaged on an Tecnai Sphera (FEI Company, Hillsboro, OR) at 200 kV using a US4000 CCD detector (Gatan Inc., Pleaston, CA) with the Leginon automated data collection software (Suloway et al., 2005) over a defocus range of 1–2.5 µm and a dose of 40 e-/Å2 at a nominal magnification of 62,000X (1.90 Å/pix). 93 micrographs were collected from the –ATP grid and 88 micrographs were collected from the +ATP grid, representative micrographs are shown in Figure 2—figure supplement 2.
 
-## Single particle image analysis
+### Single particle image analysis
 
 The Appion processing pipeline was used for particle picking and extraction, as well as CTF estimation (Lander et al., 2009). For each dataset, particles were initially picked using DoG Picker (Voss et al., 2009), extracted at a pixel size of 3.80 Å/pix (64 × 64 pixels), and subjected to 2D classification using Imagic (van Heel et al., 1996). From the resulting class averages, representative class averages were used to re-pick particles using template-based picking with FindEM (Roseman, 2004). The CTF for each micrograph was estimated using CTFFIND4 (Rohou and Grigorieff, 2015). Particles were extracted from phase-flipped micrographs and binned to a pixel size of 3.80 Å/pix (64 × 64 pixels). This yielded 6051 particles for the ‘ATP-’ dataset and 9116 particles for the ‘ATP+’ dataset. 2D class averages shown in Figure 2—figure supplement 1 were calculated from iterative rounds of 2D classification and alignment using Imagic (van Heel et al., 1996) to finish with approximately 100 particles per 2D average.
 
 For the alignment of ‘ATP−’ and ‘ATP+’ class averages in Figure 2F, SPIDER (Frank et al., 1996) was used to find the highest cross correlation score between class averages from each dataset. Following this comparison, the best matching pair were aligned and shown in Figure 2F to illustrate the overall size difference between the two datasets.
 
-## Others
+### Others
 
 In vitro kinase assay, mammalian cell culture, transfection, immunoprecipitation, 32P orthophosphate metabolic labeling, as well as the antibodies used in this study were described previously (Cui et al., 2015). U2OS cells (RRID: CVCL_0042) were originally obtained from and authenticated by the American Type Culture Collection (ATCC, Manassas, VA). Rabbit anti-V5 polyclonal antibody (Millipore, Billerica, MA; AB3792; RRID: AB_91591) was used for immunoprecipitation. Monoclonal anti-V5 antibody (Life Technologies, Carlsbad, CA; R960-25; RRID: AB_2556564) and anti-FLAG antibody (Sigma, St. Louis, MO; F3165; RRID: AB_259529) were used for Western blotting.

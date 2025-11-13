@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.46156.001 Patients with hippocampal amnesia play a central role in memory neuroscience but the neural underpinnings of amnesia are hotly debated. We hypothesized that focal hippocampal damage is associated with changes across the extended hippocampal system and that these, rather than hippocampal atrophy per se, would explain variability in memory between patients. We assessed this hypothesis in a uniquely large cohort of patients (n = 38) after autoimmune limbic encephalitis, a syndrome associated with focal structural hippocampal pathology. These patients showed impaired recall, recognition and maintenance of new information, and remote autobiographical amnesia. Besides hippocampal atrophy, we observed correlatively reduced thalamic and entorhinal cortical volume, resting-state inter-hippocampal connectivity and activity in posteromedial cortex. Associations of hippocampal volume with recall, recognition, and remote memory were fully mediated by wider network abnormalities, and were only direct in forgetting. Network abnormalities may explain the variability across studies of amnesia and speak to debates in memory neuroscience.
+Patients with hippocampal amnesia play a central role in memory neuroscience but the neural underpinnings of amnesia are hotly debated. We hypothesized that focal hippocampal damage is associated with changes across the extended hippocampal system and that these, rather than hippocampal atrophy per se, would explain variability in memory between patients. We assessed this hypothesis in a uniquely large cohort of patients (n = 38) after autoimmune limbic encephalitis, a syndrome associated with focal structural hippocampal pathology. These patients showed impaired recall, recognition and maintenance of new information, and remote autobiographical amnesia. Besides hippocampal atrophy, we observed correlatively reduced thalamic and entorhinal cortical volume, resting-state inter-hippocampal connectivity and activity in posteromedial cortex. Associations of hippocampal volume with recall, recognition, and remote memory were fully mediated by wider network abnormalities, and were only direct in forgetting. Network abnormalities may explain the variability across studies of amnesia and speak to debates in memory neuroscience.
 
 ## Introduction
 
@@ -43,47 +43,1281 @@ Our analysis approach is summarized in Figure 1. We first (1) identified cogniti
 
 **Figure 1.:** We first (1) identified cognitive deficits by comparing patients with healthy controls in a broad range of tests of neuropsychological assessment. We identified regions in which patients showed (2) reduced gray matter volumes and (3) resting-state functional connectivity and activity relative to healthy controls; (4) we also identified relationships between structural/functional abnormalities and performance in tests in which patients showed impairment as compared with healthy controls; 'connectome-MVPA': connectome ‘multi-variate pattern analysis’ (Whitfield-Gabrieli and Nieto-Castanon, 2012); MRI: Magnetic Resonance Imaging; MTL: medial temporal lobe; n: number of participants; rsALFF: resting-state amplitude of low-frequency fluctuations; rsFC: resting-state functional connectivity; VBM: voxel-based morphometry.
 
-## Neuropsychological assessment
+### Neuropsychological assessment
 
 The patients included in this study (n = 38) had been diagnosed with autoimmune LE, and were recruited post-acutely, after reassessment by an experienced neurologist (CRB) prior to study inclusion (see Materials and methods).
 
 Patients did not differ from healthy controls (n = 41; matched for age and M:F ratio) in premorbid intelligence, semantic memory and language, visuomotor and executive function. Their cognitive profile was characterized by highly focal episodic memory impairment. Patients were impaired in both recall and recognition of both verbal and visual material (including scenes), and showed pronounced forgetting of visual material – verbal forgetting was marginally impaired. A clear exception was patients’ preserved face recognition memory. They also showed impaired remote autobiographical memory for both childhood and early adulthood epochs, but preserved remote personal semantic memory. Although they showed higher scores on the depression sub-scale of the Hospital Anxiety and Depression Scale (HADS) (Zigmond and Snaith, 1983), the median score was well below the clinical cut-off, and none of the patients scored within the severe range (mild range: three patients; moderate range: four patients; non-case range: rest of patients and all controls) (Table 1).
 
+**Table 1.**
+ Neuropsychological profile of autoimmune LE patients (post-acute phase) and healthy controls
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2">Domain</th>
+      <th rowspan="2">Test</th>
+      <th rowspan="2">Subtest</th>
+      <th colspan="2">Controls</th>
+      <th colspan="2">Patients</th>
+      <th colspan="3">Controls vs patients</th>
+      <th colspan="3">‘Impaired' range</th>
+    </tr>
+    <tr>
+      <th>M</th>
+      <th>IQR</th>
+      <th>M</th>
+      <th>IQR</th>
+      <th>Test</th>
+      <th>Statistic</th>
+      <th>p-corr</th>
+      <th>cut-off score</th>
+      <th>Patients (n)</th>
+      <th>Controls (n)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="18">Episodic Memory</td>
+      <td rowspan="3">Immediate Verbal Recall</td>
+      <td rowspan="2">WMS-III</td>
+      <td>Logical Memory I (z)</td>
+      <td>0.33</td>
+      <td>1.92</td>
+      <td>−1.00</td>
+      <td>1.34</td>
+      <td>t</td>
+      <td>6.78</td>
+      <td>&lt;0.0005</td>
+      <td>≤ - 1.67</td>
+      <td>14</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Word List I (z)</td>
+      <td>0.67</td>
+      <td>1.83</td>
+      <td>−1.00</td>
+      <td>1.51</td>
+      <td>U</td>
+      <td>178.00</td>
+      <td>&lt;0.0005</td>
+      <td>≤ - 1.67</td>
+      <td>11</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>D and P</td>
+      <td>People (z)</td>
+      <td>−0.33</td>
+      <td>1.59</td>
+      <td>−1.33</td>
+      <td>1.00</td>
+      <td>U</td>
+      <td>266.00</td>
+      <td>&lt;0.0005</td>
+      <td>≤ - 1.67</td>
+      <td>15</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Delayed Verbal Recall</td>
+      <td rowspan="2">WMS-III</td>
+      <td>Logical Memory II (z)</td>
+      <td>0.67</td>
+      <td>1.67</td>
+      <td>−2.00</td>
+      <td>2.00</td>
+      <td>U</td>
+      <td>106.50</td>
+      <td>&lt;0.0005</td>
+      <td>≤ - 1.67</td>
+      <td>23</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Word List II (z)</td>
+      <td>1.33</td>
+      <td>1.00</td>
+      <td>−0.67</td>
+      <td>1.83</td>
+      <td>U</td>
+      <td>179.00</td>
+      <td>&lt;0.0005</td>
+      <td>≤ - 1.67</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Verbal Forgetting</td>
+      <td rowspan="2">D and P</td>
+      <td>Verbal Forgetting (z)</td>
+      <td>0.67</td>
+      <td>1.00</td>
+      <td>−0.33</td>
+      <td>1.75</td>
+      <td>U</td>
+      <td>415.50</td>
+      <td>0.0584</td>
+      <td>≤ - 1.67</td>
+      <td>8</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Verbal Recognition</td>
+      <td>Names (z)</td>
+      <td>0.33</td>
+      <td>2.00</td>
+      <td>−1.00</td>
+      <td>2.00</td>
+      <td>t</td>
+      <td>5.16</td>
+      <td>&lt;0.0005</td>
+      <td>≤ - 1.67</td>
+      <td>13</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>RMT</td>
+      <td>Words (z)</td>
+      <td>1.00</td>
+      <td>1.51</td>
+      <td>0.00</td>
+      <td>2.26</td>
+      <td>U</td>
+      <td>317.50</td>
+      <td>&lt;0.0005</td>
+      <td>≤ - 1.67</td>
+      <td>9</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>WMS-III</td>
+      <td>Word List II Recognition (z)</td>
+      <td>0.67</td>
+      <td>1.00</td>
+      <td>−0.67</td>
+      <td>2.16</td>
+      <td>U</td>
+      <td>266.50</td>
+      <td>&lt;0.0005</td>
+      <td>≤ - 1.67</td>
+      <td>9</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Immediate Visual Recall</td>
+      <td>D and P</td>
+      <td>Shapes (z)</td>
+      <td>0.67</td>
+      <td>1.00</td>
+      <td>−0.84</td>
+      <td>2.08</td>
+      <td>Wt</td>
+      <td>5.78</td>
+      <td>&lt;0.0005</td>
+      <td>≤ - 1.67</td>
+      <td>13</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ROCFT</td>
+      <td>Immediate Recall (z)</td>
+      <td>1.26</td>
+      <td>1.93</td>
+      <td>−0.93</td>
+      <td>2.58</td>
+      <td>U</td>
+      <td>255.50</td>
+      <td>&lt;0.0005</td>
+      <td>≤ - 1.67</td>
+      <td>12</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Delayed Visual Recall</td>
+      <td>Delayed Recall (z)</td>
+      <td>1.26</td>
+      <td>1.98</td>
+      <td>−1.37</td>
+      <td>3.55</td>
+      <td>U</td>
+      <td>258.00</td>
+      <td>&lt;0.0005</td>
+      <td>≤ - 1.67</td>
+      <td>16</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Visual Forgetting</td>
+      <td rowspan="2">D and P</td>
+      <td>Visual Forgetting (z)</td>
+      <td>0.33</td>
+      <td>0.00</td>
+      <td>0.33</td>
+      <td>1.83</td>
+      <td>U</td>
+      <td>433.00</td>
+      <td>0.0098</td>
+      <td>≤ - 1.67</td>
+      <td>8</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Visual Recognition</td>
+      <td>Doors (z)</td>
+      <td>0.67</td>
+      <td>1.33</td>
+      <td>−0.67</td>
+      <td>1.75</td>
+      <td>t</td>
+      <td>3.74</td>
+      <td>0.0072</td>
+      <td>≤ - 1.67</td>
+      <td>7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">RMT</td>
+      <td>Scenes (z)</td>
+      <td>1.00</td>
+      <td>0.99</td>
+      <td>−0.35</td>
+      <td>2.65</td>
+      <td>U</td>
+      <td>281.00</td>
+      <td>0.0025</td>
+      <td>≤ - 1.67</td>
+      <td>9</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Faces (z)</td>
+      <td>0.00</td>
+      <td>2.33</td>
+      <td>−0.33</td>
+      <td>1.66</td>
+      <td>t</td>
+      <td>1.29</td>
+      <td>0.6536</td>
+      <td>≤ - 1.67</td>
+      <td>8</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Autobiographical Memory</td>
+      <td rowspan="4">AMI</td>
+      <td>Childhood (9)</td>
+      <td>9.00</td>
+      <td>3.00</td>
+      <td>5.00</td>
+      <td>4.00</td>
+      <td>U</td>
+      <td>174.50</td>
+      <td>&lt;0.0005</td>
+      <td>≤3.00 *</td>
+      <td>11</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Early Adulthood (9)</td>
+      <td>9.00</td>
+      <td>1.50</td>
+      <td>4.00</td>
+      <td>4.00</td>
+      <td>U</td>
+      <td>123.00</td>
+      <td>&lt;0.0005</td>
+      <td>≤3.00 *</td>
+      <td>14</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Intelligence, Semantic Memory, and Language</td>
+      <td rowspan="2">Personal Semantic Memory</td>
+      <td>Childhood (21)</td>
+      <td>19.50</td>
+      <td>3.00</td>
+      <td>18.00</td>
+      <td>5.00</td>
+      <td>U</td>
+      <td>267.00</td>
+      <td>0.0835</td>
+      <td>≤11.00 *</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Early Adulthood (21)</td>
+      <td>20.50</td>
+      <td>2.00</td>
+      <td>19.00</td>
+      <td>2.50</td>
+      <td>U</td>
+      <td>263.00</td>
+      <td>0.0687</td>
+      <td>≤14.00 *</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="5"></td>
+      <td>NART</td>
+      <td>p-FSIQ (z)</td>
+      <td>1.44</td>
+      <td>0.85</td>
+      <td>1.04</td>
+      <td>1.05</td>
+      <td>U</td>
+      <td>486.00</td>
+      <td>0.1281</td>
+      <td>≤ - 1.67</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>WASI/</td>
+      <td>Vocabulary (z)</td>
+      <td>1.40</td>
+      <td>1.25</td>
+      <td>0.70</td>
+      <td>1.20</td>
+      <td>t</td>
+      <td>3.05</td>
+      <td>0.0584</td>
+      <td>≤ - 1.67</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>WASI-II</td>
+      <td>Similarities (z)</td>
+      <td>1.05</td>
+      <td>0.80</td>
+      <td>0.70</td>
+      <td>0.85</td>
+      <td>U</td>
+      <td>378.00</td>
+      <td>0.1024</td>
+      <td>≤ - 1.67</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GNT</td>
+      <td>(z)</td>
+      <td>0.63</td>
+      <td>0.98</td>
+      <td>0.15</td>
+      <td>1.89</td>
+      <td>U</td>
+      <td>423.50</td>
+      <td>0.0683</td>
+      <td>≤ - 1.67</td>
+      <td>5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>C and CT</td>
+      <td>(z)</td>
+      <td>0.34</td>
+      <td>1.22</td>
+      <td>0.02</td>
+      <td>1.22</td>
+      <td>U</td>
+      <td>496.50</td>
+      <td>0.1484</td>
+      <td>≤ - 1.67</td>
+      <td>5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="2" colspan="2">Executive Function</td>
+      <td>WMS-III</td>
+      <td>Digit Span (z)</td>
+      <td>0.84</td>
+      <td>1.25</td>
+      <td>0.33</td>
+      <td>1.67</td>
+      <td>t</td>
+      <td>2.70</td>
+      <td>0.1024</td>
+      <td>≤ - 1.67</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="3">DKEFS Trails</td>
+      <td>Number-Letter Switching (z)</td>
+      <td>0.67</td>
+      <td>0.67</td>
+      <td>0.33</td>
+      <td>1.00</td>
+      <td>U</td>
+      <td>470.00</td>
+      <td>0.1024</td>
+      <td>≤ - 1.67</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="6" colspan="2">Visuomotor Function</td>
+      <td>Visual Scanning (z)</td>
+      <td>0.67</td>
+      <td>1.50</td>
+      <td>0.00</td>
+      <td>1.34</td>
+      <td>U</td>
+      <td>584.00</td>
+      <td>0.6536</td>
+      <td>≤ - 1.67</td>
+      <td>5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Motor Speed (z)</td>
+      <td>0.67</td>
+      <td>1.00</td>
+      <td>0.33</td>
+      <td>1.34</td>
+      <td>U</td>
+      <td>552.00</td>
+      <td>0.4915</td>
+      <td>≤ - 1.67</td>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>ROCFT</td>
+      <td>copy rank</td>
+      <td>&gt; 16th %ile</td>
+      <td>0.00</td>
+      <td>&gt; 16th %ile</td>
+      <td>0.00</td>
+      <td>U</td>
+      <td>619.00</td>
+      <td>0.4915</td>
+      <td>≤ 16th %ile</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="3">VOSP</td>
+      <td>Cube Analysis (z)</td>
+      <td>10.00</td>
+      <td>1.00</td>
+      <td>9.00</td>
+      <td>2.00</td>
+      <td>U</td>
+      <td>548.00</td>
+      <td>0.3116</td>
+      <td>≤6.00 **</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Dot Counting (z)</td>
+      <td>10.00</td>
+      <td>0.00</td>
+      <td>10.00</td>
+      <td>0.00</td>
+      <td>U</td>
+      <td>655.50</td>
+      <td>0.6536</td>
+      <td>≤8.00 **</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Position Discrimination (z)</td>
+      <td>20.00</td>
+      <td>0.00</td>
+      <td>20.00</td>
+      <td>1.00</td>
+      <td>U</td>
+      <td>673.00</td>
+      <td>0.6536</td>
+      <td>≤18.00 **</td>
+      <td>4</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="2" colspan="2">Mood</td>
+      <td rowspan="2">HADS</td>
+      <td>Anxiety (21)</td>
+      <td>4.00</td>
+      <td>4.00</td>
+      <td>5.00</td>
+      <td>5.50</td>
+      <td>U</td>
+      <td>420.00</td>
+      <td>0.0910</td>
+      <td>≥15.00 ***</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Depression (21)</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>3.00</td>
+      <td>4.50</td>
+      <td>U</td>
+      <td>298.00</td>
+      <td>0.0006</td>
+      <td>≥15.00 ***</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_AMI: Autobiographical Memory Interview; D and P: Doors and People Test; DKEFS: Delis-Kaplan Executive Function System; GNT: Graded Naming Test; HADS: Hospital Anxiety and Depression Scale; IQR: Inter-Quartile Range; M: median; NART: National Adult Reading Test; p-corr: p values are corrected using the Holm-Bonferroni sequential correction for multiple comparisons (n = 35); RMT: Warrington Recognition Memory Tests (words, faces) and Warrington Topographical Memory test (scenes); ROCFT: Rey-Osterrieth Complex Figure Test; t: Student’s t-test; U: Mann-Whitney U; VOSP: Visual Object and Space Perception Battery; WASI/WASI-II Wechsler Abbreviated Scale of Intelligence; WMS-III: Wechsler Memory Scale III; Wt: Welch’s t-test; *,**,***: no standardized scores available for these subtests; *: highest score of ‘definitely abnormal’ range, that is scores at or below which none of the healthy controls scored in Kopelman et al. (1989); **: 5% cut-off score; ***: cut-off score for severe range._
+
 For further correlational analyses, and in order to minimize the contribution of measurement error and maximize the generalizability of our findings, we derived three composite memory scores per participant, in relation to the aforementioned debates in the literature of HPC amnesia. These composite measures comprised scores on individual tests in which patients showed impaired performance at group level compared with controls: i) a composite score for anterograde retrieval, comprising scores on tests of verbal recall, verbal recognition, visual recall, and visual recognition, derived by averaging the corresponding standardized age-scaled scores; ii) a score for anterograde retention (‘forgetting’), which was the visual forgetting score in the Doors and People test (Baddeley et al., 1994); iii) a remote autobiographical memory score, calculated by summing the scores on autobiographical memories for childhood and early adulthood epochs from the Autobiographical Memory Interview (Kopelman et al., 1989) (Supplementary Table 1 in Supplementary file 1).
 
-## Structural abnormalities
+### Structural abnormalities
 
-## Volumetry
+#### Volumetry
 
 Consistent with the neuroradiological reports on patients’ acute clinical T2-weighted MRI scans (Table 2) and the fact that acute HPC T2 hyperintensity and oedema are followed by post-acute HPC atrophy in autoimmune LE (Finke et al., 2017; Irani et al., 2013; Loane et al., 2019), volumetric analysis of patients’ post-acute MRIs revealed pronounced bilateral HPC atrophy (left HPC: F = 46.02, p-corr <0.0005; right HPC: F = 63.38, p-corr <0.0005). We also observed right entorhinal (F = 10.76, p-corr = 0.0308) and left thalamic volume reduction (F = 15.41, p-corr = 0.0003; Table 3).
 
-## Whole-brain VBM: GM volume
+**Table 2.**
+ Clinical details of autoimmune LE patients (acute phase).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Code</th>
+      <th rowspan="3">Age (years)</th>
+      <th rowspan="3">Sex</th>
+      <th rowspan="3">Antibody type</th>
+      <th colspan="3">Acute T2 scan notes</th>
+    </tr>
+    <tr>
+      <th colspan="2">HPC</th>
+      <th rowspan="2">Other structures</th>
+    </tr>
+    <tr>
+      <th>R</th>
+      <th>L</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>65.75</td>
+      <td>M</td>
+      <td>LGI1</td>
+      <td>Normal T2 signal and volume; facilitated diffusion</td>
+      <td>High T2 signal; swelling; normal diffusion</td>
+      <td>L AMG: high T2 signal</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>69.98</td>
+      <td>F</td>
+      <td>VGKCC</td>
+      <td>Normal T2 signal; mild atrophy; facilitated diffusion</td>
+      <td>High T2 signal; normal volume; facilitated diffusion</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>62.23</td>
+      <td>M</td>
+      <td>VGKCC</td>
+      <td>Normal T2 signal and volume; facilitated diffusion</td>
+      <td>High T2 signal; swelling; normal diffusion</td>
+      <td>L AMG, L ERC: high T2 signal</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>46.41</td>
+      <td>M</td>
+      <td>LGI1</td>
+      <td>High T2 signal; normal volume; normal diffusion</td>
+      <td>Normal T2 signal and volume; facilitated diffusion</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>56.65</td>
+      <td>M</td>
+      <td>LGI1</td>
+      <td colspan="2">L/R: high T2 signal</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>58.18</td>
+      <td>M</td>
+      <td>LGI1</td>
+      <td colspan="3">No abnormalities</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>56.13</td>
+      <td>M</td>
+      <td>LGI1</td>
+      <td>Normal volume and signal</td>
+      <td>High T2 signal; swelling</td>
+      <td>L/R AMG: high T2 signal</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>76.54</td>
+      <td>M</td>
+      <td>LGI1</td>
+      <td>High T2 signal; normal volume and diffusion</td>
+      <td>High T2 signal; normal volume; facilitated diffusion</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>54.94</td>
+      <td>M</td>
+      <td>LGI1</td>
+      <td>High T2 signal; swelling; normal diffusion</td>
+      <td>High T2 signal; swelling; normal diffusion</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>44.81</td>
+      <td>M</td>
+      <td>LGI1</td>
+      <td colspan="2">L/R: high T2 signal; swelling</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>45.77</td>
+      <td>M</td>
+      <td>LGI1</td>
+      <td>High T2 signal; normal volume</td>
+      <td>High T2 signal; normal volume</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>46.06</td>
+      <td>M</td>
+      <td>LGI1/Caspr2</td>
+      <td>High T2 signal; atrophy</td>
+      <td>Normal T2 signal and volume</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>35.75</td>
+      <td>M</td>
+      <td>LGI1/Caspr2</td>
+      <td colspan="2">L/R: normal T2 signal; mild atrophy; normal diffusion</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>72.08</td>
+      <td>M</td>
+      <td>LGI1</td>
+      <td>High T2 signal; mild atrophy; facilitated diffusion</td>
+      <td>Normal T2 signal; atrophy; facilitated diffusion</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>52.28</td>
+      <td>M</td>
+      <td>LGI1</td>
+      <td>High T2 signal; normal volume; facilitated diffusion</td>
+      <td>Normal T2 signal and volume; facilitated diffusion</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>52.48</td>
+      <td>M</td>
+      <td>LGI1/Caspr2</td>
+      <td>High T2 signal; swelling; facilitated diffusion</td>
+      <td>Normal T2 signal and volume; facilitated diffusion</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>51.62</td>
+      <td>M</td>
+      <td>VGKCC</td>
+      <td>High T2 signal; swelling</td>
+      <td>Normal T2 signal and volume</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>75.18</td>
+      <td>M</td>
+      <td>LGI1</td>
+      <td colspan="2">L/R: high T2 signal; swelling; normal diffusion</td>
+      <td>L/R AMG: high T2 signal; swelling</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>78.73</td>
+      <td>M</td>
+      <td>LG1/Caspr2</td>
+      <td>High T2 signal; mild atrophy; normal diffusion</td>
+      <td>High T2 signal; normal volume; normal diffusion</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>53.75</td>
+      <td>F</td>
+      <td>LGI1</td>
+      <td colspan="2">L/R: high T2 signal; normal volume and diffusion</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>73.68</td>
+      <td>F</td>
+      <td>VGKCC</td>
+      <td colspan="2">L/R: high T2 signal; swelling; facilitated diffusion</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>63.59</td>
+      <td>M</td>
+      <td>LGI1</td>
+      <td colspan="2">L/R: high T2 signal; normal volume and diffusion</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>60.35</td>
+      <td>M</td>
+      <td>VGKCC</td>
+      <td colspan="3">No abnormalities</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>54.30</td>
+      <td>M</td>
+      <td>VGKCC</td>
+      <td colspan="2">L/R: high T2 signal; atrophy</td>
+      <td>L/R AMG: high T2 signal; atrophy</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>52.70</td>
+      <td>M</td>
+      <td>seronegative</td>
+      <td colspan="2">L/R: high T2 signal</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>47.43</td>
+      <td>F</td>
+      <td>seronegative</td>
+      <td colspan="3">No abnormalities</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>58.60</td>
+      <td>M</td>
+      <td>seronegative</td>
+      <td colspan="2">L/R: high T2 signal</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>25.42</td>
+      <td>M</td>
+      <td>Anti-Ma2</td>
+      <td colspan="2">L/R: high T2 signal and swelling</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>45.77</td>
+      <td>F</td>
+      <td>seronegative</td>
+      <td colspan="2">L/R: high T2 signal</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>16.64</td>
+      <td>F</td>
+      <td>GAD</td>
+      <td colspan="3">No abnormalities</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>71.35</td>
+      <td>M</td>
+      <td>seronegative</td>
+      <td colspan="2">L/R: high T2 signal; atrophy</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>60.44</td>
+      <td>M</td>
+      <td>VGKCC</td>
+      <td colspan="2">L/R: atrophy</td>
+      <td>PHC atrophy</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>53.48</td>
+      <td>M</td>
+      <td>seronegative</td>
+      <td colspan="2">L/R: atrophy</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>64.87</td>
+      <td>F</td>
+      <td>seronegative</td>
+      <td colspan="2">L/R: atrophy</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>47.32</td>
+      <td>F</td>
+      <td>seronegative</td>
+      <td colspan="2">L/R: high T2 signal</td>
+      <td>R AMG: high T2 signal; swelling</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>61.88</td>
+      <td>F</td>
+      <td>seronegative</td>
+      <td colspan="2">L/R: high T2 signal; atrophy</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>71.90</td>
+      <td>F</td>
+      <td>seronegative</td>
+      <td colspan="2">L/R: high T2 signal (especially R)</td>
+      <td>No abnormalities</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>34.49</td>
+      <td>F</td>
+      <td>GAD</td>
+      <td colspan="2">L/R: high T2 signal</td>
+      <td>No abnormalities</td>
+    </tr>
+  </tbody>
+</table>
+
+_Age: age at symptom onset (years); AMG: Amygdala; Caspr2: anti-contactin-associated protein-like 2; ERC: entorhinal cortex; F = female; GAD: anti-glutamic acid decarboxylase autoantibody; HPC: hippocampus; L: left hemisphere; LGI1: anti-leucine-rich glioma-inactivated1; M = male; PHC: parahippocampal cortex; R: right hemisphere; VGKCC: anti-voltage-gated potassium channel complex. The clinical details of patients 1–24 have also been presented in Loane et al. (2019)._
+
+**Table 3.**
+ Volumetry of MTL and subcortical structures in autoimmune LE patients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Structure</th>
+      <th colspan="2">Controls</th>
+      <th colspan="2">Patients</th>
+      <th rowspan="2">Mean % reduction</th>
+      <th rowspan="2">F</th>
+      <th rowspan="2">Partial η2</th>
+      <th rowspan="2">p-corr</th>
+    </tr>
+    <tr>
+      <th>Mean (mm3)</th>
+      <th>SD (mm3)</th>
+      <th>Mean (mm3)</th>
+      <th>SD (mm3)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R HPC</td>
+      <td>3648.99</td>
+      <td>459.59</td>
+      <td>2733.87</td>
+      <td>751.09</td>
+      <td>−25.08</td>
+      <td>63.38</td>
+      <td>0.390</td>
+      <td>&lt;0.0005</td>
+    </tr>
+    <tr>
+      <td>L HPC</td>
+      <td>3439.48</td>
+      <td>431.91</td>
+      <td>2671.18</td>
+      <td>710.65</td>
+      <td>−22.34</td>
+      <td>46.02</td>
+      <td>0.317</td>
+      <td>&lt;0.0005</td>
+    </tr>
+    <tr>
+      <td>R ERC</td>
+      <td>1602.69</td>
+      <td>324.07</td>
+      <td>1254.97</td>
+      <td>404.70</td>
+      <td>−21.70</td>
+      <td>10.76</td>
+      <td>0.119</td>
+      <td>0.0308</td>
+    </tr>
+    <tr>
+      <td>L ERC</td>
+      <td>1508.83</td>
+      <td>326.07</td>
+      <td>1200.18</td>
+      <td>432.07</td>
+      <td>−20.46</td>
+      <td>9.48</td>
+      <td>0.106</td>
+      <td>0.0534</td>
+    </tr>
+    <tr>
+      <td>R Thalamus</td>
+      <td>7407.51</td>
+      <td>762.15</td>
+      <td>7072.79</td>
+      <td>845.09</td>
+      <td>−4.52</td>
+      <td>8.23</td>
+      <td>0.077</td>
+      <td>0.0900</td>
+    </tr>
+    <tr>
+      <td>L Thalamus</td>
+      <td>7633.09</td>
+      <td>788.11</td>
+      <td>7194.76</td>
+      <td>797.73</td>
+      <td>−5.74</td>
+      <td>15.41</td>
+      <td>0.135</td>
+      <td>0.0034</td>
+    </tr>
+    <tr>
+      <td>R PRC</td>
+      <td>1791.42</td>
+      <td>378.97</td>
+      <td>1561.61</td>
+      <td>403.86</td>
+      <td>−12.83</td>
+      <td>7.11</td>
+      <td>0.082</td>
+      <td>0.1575</td>
+    </tr>
+    <tr>
+      <td>L PRC</td>
+      <td>1812.50</td>
+      <td>523.31</td>
+      <td>1601.39</td>
+      <td>478.78</td>
+      <td>−11.65</td>
+      <td>2.88</td>
+      <td>0.035</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>R PHC</td>
+      <td>1900.73</td>
+      <td>423.85</td>
+      <td>1665.68</td>
+      <td>331.28</td>
+      <td>−12.37</td>
+      <td>6.36</td>
+      <td>0.074</td>
+      <td>0.2240</td>
+    </tr>
+    <tr>
+      <td>L PHC</td>
+      <td>2016.52</td>
+      <td>435.92</td>
+      <td>1851.53</td>
+      <td>445.52</td>
+      <td>−8.18</td>
+      <td>1.53</td>
+      <td>0.019</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>R AMG</td>
+      <td>1395.67</td>
+      <td>267.38</td>
+      <td>1313.76</td>
+      <td>406.51</td>
+      <td>−5.87</td>
+      <td>5.15</td>
+      <td>0.060</td>
+      <td>0.3899</td>
+    </tr>
+    <tr>
+      <td>L AMG</td>
+      <td>1321.96</td>
+      <td>217.40</td>
+      <td>1268.47</td>
+      <td>384.22</td>
+      <td>−4.05</td>
+      <td>4.43</td>
+      <td>0.053</td>
+      <td>0.5320</td>
+    </tr>
+    <tr>
+      <td>R Nacc</td>
+      <td>339.42</td>
+      <td>107.77</td>
+      <td>318.53</td>
+      <td>109.69</td>
+      <td>−6.16</td>
+      <td>0.25</td>
+      <td>0.003</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>L Nacc</td>
+      <td>433.79</td>
+      <td>127.41</td>
+      <td>381.89</td>
+      <td>153.66</td>
+      <td>−11.96</td>
+      <td>3.70</td>
+      <td>0.036</td>
+      <td>0.7410</td>
+    </tr>
+    <tr>
+      <td>R TPC</td>
+      <td>4558.60</td>
+      <td>846.26</td>
+      <td>4520.16</td>
+      <td>1026.08</td>
+      <td>−0.84</td>
+      <td>0.12</td>
+      <td>0.002</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>L TPC</td>
+      <td>4331.40</td>
+      <td>742.35</td>
+      <td>4512.95</td>
+      <td>795.76</td>
+      <td>4.19</td>
+      <td>1.90</td>
+      <td>0.023</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>R Putamen</td>
+      <td>4332.54</td>
+      <td>548.04</td>
+      <td>4157.00</td>
+      <td>630.21</td>
+      <td>−4.05</td>
+      <td>0.85</td>
+      <td>0.008</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>L Putamen</td>
+      <td>4382.39</td>
+      <td>705.40</td>
+      <td>4151.89</td>
+      <td>662.93</td>
+      <td>−5.26</td>
+      <td>1.67</td>
+      <td>0.017</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>R Caudate</td>
+      <td>3403.96</td>
+      <td>440.42</td>
+      <td>3369.16</td>
+      <td>453.63</td>
+      <td>−1.02</td>
+      <td>0.06</td>
+      <td>0.001</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>L Caudate</td>
+      <td>3211.40</td>
+      <td>438.40</td>
+      <td>3134.26</td>
+      <td>497.42</td>
+      <td>−2.40</td>
+      <td>0.12</td>
+      <td>0.001</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>R Pallidum</td>
+      <td>1705.61</td>
+      <td>260.63</td>
+      <td>1630.00</td>
+      <td>251.08</td>
+      <td>−4.43</td>
+      <td>0.90</td>
+      <td>0.009</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>L Pallidum</td>
+      <td>1720.40</td>
+      <td>297.86</td>
+      <td>1661.13</td>
+      <td>308.18</td>
+      <td>−3.45</td>
+      <td>0.41</td>
+      <td>0.004</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>brainstem</td>
+      <td>22119.06</td>
+      <td>2258.25</td>
+      <td>21931.42</td>
+      <td>2647.93</td>
+      <td>−0.85</td>
+      <td>0.23</td>
+      <td>0.002</td>
+      <td>&gt;0.9999</td>
+    </tr>
+  </tbody>
+</table>
+
+_Volumetry of manually and automatically delineated MTL and other subcortical structures of all patients (n = 38). Volumes for each structure are compared between patients and controls, using age, sex, TIV, and scan source (MAP, OPTIMA) as between-subjects covariates in a series of univariate ANCOVAs; AMG: amygdala; ANCOVA: analysis of covariance; ; ERC: entorhinal cortex; HPC: hippocampus; L: left hemisphere; MAP: Memory and Amnesia Project; MTL: medial temporal lobe; Nacc: nucleus accumbens; OPTIMA: Oxford Project To Investigate Memory and Aging; p-corr: p values are adjusted with the Holm-Bonferroni sequential correction method for multiple comparisons (n = 23); PHC: parahippocampal cortex; PRC: perirhinal cortex; R: right hemisphere; SD: standard deviation; TIV: total intracranial volume; TPC: temporopolar cortex._
+
+#### Whole-brain VBM: GM volume
 
 Strongly consistent with the volumetric findings above, a whole-brain VBM contrast disclosed reduced GM volume in patients’ left and right HPC, as well as in the anterior/mediodorsal, and right dorsolateral regions of the thalamus (Figure 2a; Table 4).
 
-## Functional abnormalities
+![Figure 2.](https://cdn.elifesciences.org/articles/46156/elife-46156-fig2-v2.jpg)
+
+**Figure 2.:** (a) A whole-brain VBM on GM volume (contrast: controls > patients) showed volume reduction in patients’ HPC bilaterally, as well as in mediodorsal-anterior and right dorsolateral thalamic regions (Table 4); clusters survive FWE peak-level correction (p<0.05) over p<0.001 unc; color bar indicates t values; b-c: Reduced rsALFF in patients in (b) the posterior cingulate (kE = 89, p-FWE = 0.033; peak voxel coordinates: −4,–36, 28) and (c) precuneus (kE = 137; p-FWE = 0.003; peak voxel coordinates: 4,–60, 26); d-j: reduced rsFC in patients; d: a whole-brain MVPA (omnibus F) showed abnormal rsFC for patients in a cluster in the right HPC (kE = 178, p-FWE = 0.001; peak voxel coordinates: 28,–16,−20; color bar indicates F values); e-g: reduced rsFC of the right HPC (whole-brain seed-to-voxel analysis; seed: right HPC, anatomically delineated in native space, unsmoothed timeseries; contrast: controls > patients); e: medial prefrontal cortex (kE = 1152, p-FWE <0.0001, peak voxel coordinates: 4, 56, 2); f: posteromedial cortex (posterior cingulate, retrosplenial cortex, precuneus; kE = 986, p-FWE <0.0001, peak voxel coordinates: 6,–50, 8); g: left HPC (kE = 393, p-FWE <0.0001, peak voxel coordinates: −12,–36, 2). All rsFC and rsALFF clusters survive FWE correction (p<0.05) for cluster size over an individual voxel threshold of p<0.001; FWE: family-wise error; HPC: hippocampus; kE: cluster size (number of voxels); rsALFF: Resting-state amplitude of low frequency fluctuations; rsFC: Resting-state functional connectivity; VBM: voxel-based morphometry.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46156/elife-46156-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Given the reciprocal connectivity of thalamic nuclei with both the HPC and the cingulate cortex (Aggleton, 2014; Aggleton et al., 2010; Bubb et al., 2017) and our hypothesis that HPC atrophy is followed by structural and functional abnormalities in interconnected areas within the HPC-diencephalic-cingulate networks, we assumed a causal chain of events, whereby HPC damage has remote effects on thalamic volume, which, in turn, lead to abnormalities in the cingulate cortex, observed here in the form of reduced rsALFF in the PCC. We used a series of bivariate correlations and mediation analyses, with HPC volume as the independent variable, thalamic volume as the mediator variable, and rsALFF in the PCC as the dependent variable. A mediation analysis supported this hypothesis, showing that the effects of the average GM volume reduction in the HPC VBM clusters on patients’ reduced rsALFF in the PCC were fully mediated by the correlative reduction of the average GM volume of the thalamic VBM clusters (direct effect: β = 0.26, p=0.064; indirect effect: β = 0.16, 95% CI: 0.004,0.403); a: mean GM volume of the two HPC clusters correlated with the mean GM volume of the two thalamic clusters across patients; b: mean PCC rsALFF correlated across patients with the mean GM volume of the two thalamic clusters; the mediation analysis demonstrates that this effect held when the correlation of thalamic GM volume with the mean GM volume of the HPC clusters was accounted for; c: mean GM volume of the HPC clusters correlated with PCC rsALFF; the mediation analysis demonstrated that this relationship did not hold over and above the correlation of the mean GM volume of the thalamic clusters with the HPC clusters; there was thus no direct effect of reduced HPC GM volume on PCC rsALFF (within parenthesis: 95% confidence intervals); GM: gray matter; HPC: hippocampus; MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; PCC: posterior cingulate cortex; rsALFF: resting-state amplitude of low frequency fluctuations; TIV: total intracranial volume; VBM: voxel-based morphometry; z-res: GM volumes from VBM clusters are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants; mean rsALFF is residualized against age and sex across participants.
+
+**Table 4.**
+ GM volume reduction in autoimmune LE patients (whole-brain VBM).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">kE</th>
+      <th colspan="5">Peak</th>
+      <th colspan="3">Center of mass</th>
+      <th rowspan="2">Structure</th>
+    </tr>
+    <tr>
+      <th>p-FWE</th>
+      <th>T</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2574</td>
+      <td>&lt;0.0005</td>
+      <td>7.53</td>
+      <td>28</td>
+      <td>−17</td>
+      <td>−20</td>
+      <td>28</td>
+      <td>−16</td>
+      <td>−18</td>
+      <td>R HPC</td>
+    </tr>
+    <tr>
+      <td>910</td>
+      <td>&lt;0.0005</td>
+      <td>6.81</td>
+      <td>−29</td>
+      <td>−12</td>
+      <td>−18</td>
+      <td>−27</td>
+      <td>−15</td>
+      <td>−19</td>
+      <td>L HPC</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>0.002</td>
+      <td>6.18</td>
+      <td>19</td>
+      <td>−28</td>
+      <td>5</td>
+      <td>18</td>
+      <td>−26</td>
+      <td>6</td>
+      <td>R lateral thalamus</td>
+    </tr>
+    <tr>
+      <td>414</td>
+      <td>0.006</td>
+      <td>5.85</td>
+      <td>-1</td>
+      <td>−16</td>
+      <td>0</td>
+      <td>3</td>
+      <td>−12</td>
+      <td>7</td>
+      <td>anterior/mediodorsal thalamus</td>
+    </tr>
+  </tbody>
+</table>
+
+_Contrast: controls > patients; covariates: age, sex, scan source (MAP, OPTIMA), and TIV. Clusters are FWE-corrected at peak-voxel level (p<0.05) over an individual voxel threshold of p<0.001 (unc.); voxel size: 1 mm3 isotropic; spatial smoothing kernel: 4 mm FWHM; FWHM: Full-width at half-maximum; HPC: hippocampus; kE: cluster size (number of voxels; minimum cluster size: 50 voxels); L: Left hemisphere; mm: millimeter; MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; R: Right hemisphere; TIV: total intracranial volume; x, y, z: coordinates in mm._
+
+### Functional abnormalities
 
 We also investigated resting-state functional abnormalities in patients with respect to hemodynamic activity in local regions (resting-state amplitude of low-frequency fluctuations; rsALFF) and functional connectivity between regions, in the form of resting-state functional connectivity (rsFC) (see Materials and methods section), across the whole brain and in a data-driven fashion.
 
-## Resting-state hemodynamic activity
+#### Resting-state hemodynamic activity
 
 In order to identify specific brain regions that show abnormal hemodynamic activity at rest in patients, similar to resting-state CBF and glucose metabolic rate in PET studies, we analyzed rsALFF, that is the intensity of slow spontaneous fluctuations of hemodynamic activity at rest across the whole brain (Zang et al., 2007).
 
 As compared with healthy controls, patients showed reduced rsALFF in the posterior cingulate cortex (PCC) and the precuneus (Figure 2b–c). Consistent with the reciprocal connectivity of thalamic nuclei with both the HPC and the cingulate cortex (Aggleton, 2014; Aggleton et al., 2010; Bubb et al., 2017) and our hypothesis that HPC atrophy is followed by structural and functional abnormalities in interconnected areas within the HPC-diencephalic-cingulate networks, we observed that the effect of average HPC volume reduction on the rsALFF of the PCC was fully mediated by average thalamic volume reduction (Figure 2—figure supplement 1; Figure 2—figure supplements 1—source data 1).
 
-## Resting-state functional connectivity
+#### Resting-state functional connectivity
 
-## Voxel-to-Voxel rsFC: connectome-MVPA
+##### Voxel-to-Voxel rsFC: connectome-MVPA
 
 Capitalizing on the size of our patient cohort, we conducted a data-driven, whole-brain, principal components-based analysis, (‘connectome-MVPA’), implemented in the Conn toolbox (Whitfield-Gabrieli and Nieto-Castanon, 2012). This method is used to identify the voxel clusters in which healthy controls and patient groups differ significantly with respect to their rsFC with the rest of the brain, instead of selecting seed/target regions or networks in an a priori fashion.
 
 This analysis showed group differences in the whole-brain rsFC of a right HPC cluster (Figure 2d).
 
-## Seed-to-Voxel rsFC
+##### Seed-to-Voxel rsFC
 
 In order to identify the specific brain regions showing reduced rsFC with the right HPC in patients, the right HPC was then selected for a whole-brain seed-to-voxel rsFC analysis (Biswal et al., 1995; Margulies et al., 2007). The spatially unsmoothed timeseries data were extracted from participants’ manually delineated right HPC in native space, ensuring that rsFC differences were not an artefact of insufficient co-registration of the atrophic HPC. This seed region showed reduced rsFC with clusters in the medial prefrontal and posteromedial (PCC, retrosplenial, and precuneus) cortices, and the left HPC (Figure 2e–g). We also wanted to ensure that the left HPC cluster that showed reduced rsFC with the right HPC was not a result of suboptimal co-registration of the functional images with the atrophic HPC. For further correlational analyses (section below), we thus used the mean rsFC values between the right and left HPC in native space (unsmoothed time series) instead of the left HPC cluster. Patients’ reduced inter-HPC rsFC (of all 13 structural and functional abnormalities) negatively correlated, across patients, with the delay between the onset of their symptoms and the time they underwent our research MRI (Supplementary Table 2 in Supplementary file 1).
 
-## Structure/Function-Behavior Correlations
+### Structure/Function-Behavior Correlations
 
 Having identified the core brain abnormalities in our patient group, we investigated the contributions of these to explaining memory impairment.
 
@@ -91,15 +1325,15 @@ We first applied a stringent correction for multiple testing for the total numbe
 
 Given the striking lack of correlations with HPC volume, we addressed the possibility of false negatives in our original approach by iterating the correlational analyses above after introducing three amendments: i) we fragmented the anterograde retrieval composite score into four composite scores (visual/verbal recall/recognition), taking into account the possibility of different relationships of recall vs. recognition memory scores with brain abnormalities; ii) we applied a more lenient correction for the number of structural/functional abnormalities (n = 13), separately for each composite score examined (n = 6; visual/verbal recall/recognition, remote autobiographical memory, visual forgetting; Supplementary Table 4 in Supplementary file 1); iii) in a post-hoc fashion, we examined the relationship of these memory scores with the manually delineated anterior vs. posterior HPC portions at uncorrected levels (Supplementary Table 5 in Supplementary file 1).
 
-## Anterograde memory: Verbal recognition
+### Anterograde memory: Verbal recognition
 
 Verbal recognition scores correlated with patients’ reduced inter-HPC rsFC (r = 0.498, p-corr = 0.039; rest of ps, p-corr ≥0.18; Figure 3b; Figure 3—source data 1). Out of the HPC volumes, only the volume expressed by the left HPC VBM cluster correlated with verbal recognition scores at uncorrected levels (r = 0.360, p-unc = 0.029; Figure 3a; rest of rs, 0.281 ≥ r ≥ 0.276; rest of ps, 0.098 ≥ p unc ≥ 0.092). None of the HPC volumes examined (left/right HPC VBM clusters; manually delineated left/right HPC) correlated with inter-HPC rsFC across patients (all rs, |r| ≤ 0.135; all ps, p-unc ≥ 0.441). We thus entered mean inter-HPC rsFC and one of those four HPC volume measures as independent variables in four separate multiple step-wise linear regressions, with verbal recognition scores as the dependent variable. In all four analyses, the regression terminated in a single step, with inter-HPC rsFC as the only predictor of patients’ performance (R2 = 0.25; β(z) = 0.50; F = 10.53, p = 0.003).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/46156/elife-46156-fig3-v2.jpg)
 
-**Figure 3.:** ( a) GM volume expressed by the left HPC VBM cluster correlated across patients with their verbal recognition composite memory scores only at uncorrected levels (r = 0.36, p-unc = 0.029); (b) mean inter-HPC rsFC correlated across patients with their verbal recognition composite memory scores and survived correction for multiple (structural/functional brain abnormalities examined: n = 13) testing (r = 0.50, p-corr = 0.039); GM: gray matter; HPC: hippocampus; L, R: left, right (hemisphere); MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; p: significance values are presented at uncorrected levels; rho: Spearmann’s rank correlation coefficient; rsFC: resting-state functional connectivity; VBM: voxel-based morphometry; z: memory scores are averaged age-scaled and standardized scores of participants’ performance in the subtests of interest; z-res: GM volume from VBM clusters is residualized against age, sex, scan source (MAP, OPTIMA) and TIV across participants; mean rsFC is residualized across participants against age and sex.10.7554/eLife.46156.010Figure 3—source data 1.Figure 3; GM: gray matter; HPC: hippocampus; MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; rsFC: resting-state functional connectivity; VBM: voxel-based morphometry; z: memory scores are averaged age-scaled and standardized scores of participants’ performance in the subtests of interest; z-res: GM volumes from VBM clusters are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants; mean rsFC is residualized against age and sex across participants. These data can be opened with Microsoft Excel or with open-source alternatives such as OpenOffice.
+**Figure 3.:** ( a) GM volume expressed by the left HPC VBM cluster correlated across patients with their verbal recognition composite memory scores only at uncorrected levels (r = 0.36, p-unc = 0.029); (b) mean inter-HPC rsFC correlated across patients with their verbal recognition composite memory scores and survived correction for multiple (structural/functional brain abnormalities examined: n = 13) testing (r = 0.50, p-corr = 0.039); GM: gray matter; HPC: hippocampus; L, R: left, right (hemisphere); MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; p: significance values are presented at uncorrected levels; rho: Spearmann’s rank correlation coefficient; rsFC: resting-state functional connectivity; VBM: voxel-based morphometry; z: memory scores are averaged age-scaled and standardized scores of participants’ performance in the subtests of interest; z-res: GM volume from VBM clusters is residualized against age, sex, scan source (MAP, OPTIMA) and TIV across participants; mean rsFC is residualized across participants against age and sex.
 
-## Anterograde memory: Visual recognition
+### Anterograde memory: Visual recognition
 
 Visual recognition scores correlated with patients’ reduced rsALFF in the PCC (r = 0.543, p-corr = 0.014), and only marginally with the volume of the left HPC VBM cluster (r = 0.449, p-corr = 0.072; rest of ps, p-corr ≥0.110). The volume of the left HPC VBM cluster correlated with the rsALFF in the PCC across patients (r = 0.449, p=0.007).
 
@@ -107,43 +1341,83 @@ Patients’ reduced rsALFF in the PCC correlated with visual recognition memory 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/46156/elife-46156-fig4-v2.jpg)
 
-**Figure 4.:** (a) mean GM volume of the left HPC cluster correlated with the mean rsALFF of the PCC cluster across patients; (b) visual recognition memory scores correlated across patients with their mean rsALFF in the PCC cluster, surviving correction for multiple testing for the 13 structural/functional abnormalities examined (r = 0.54, p-corr = 0.014); the mediation analysis demonstrates that this effect held over and above the correlation of PCC rsALFF with the mean GM volume of the left HPC cluster; (c) mean GM volume of the left HPC cluster correlated with visual recognition memory scores across patients, but did not survive correction for multiple testing (r = 0.45, p-corr = 0.072); however, the mediation analysis demonstrated that this relationship did not hold over and above the correlation of the mean GM volume of the left HPC cluster with the mean PCC rsALFF; there was only an indirect effect of reduced HPC GM volume on visual recognition memory (within parenthesis: 95% confidence intervals); GM: gray matter; HPC: hippocampus; L: left (hemisphere); MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; p: significance values are presented at uncorrected levels; PCC: posterior cingulate cortex; rsALFF: resting-state amplitude of low frequency fluctuations; TIV: total intracranial volume; VBM: voxel-based morphometry; z: memory scores are averaged age-scaled and standardized scores of participants’ performance in the subtests of interest; z-res: GM volumes from VBM clusters are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants; mean rsALFF values are residualized across participants against age and sex.10.7554/eLife.46156.012Figure 4—source data 1.Figure 4; GM: gray matter; HPC: hippocampus; MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; PCC: posterior cingulate cortex; rsALFF: resting-state amplitude of low-frequency fluctuations; VBM: voxel-based morphometry; z: memory scores are averaged age-scaled and standardized scores of participants’ performance in the subtests of interest; z-res: GM volumes from VBM clusters are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants; mean rsALFF is residualized against age and sex across participants. These data can be opened with Microsoft Excel or with open-source alternatives such as OpenOffice.
+**Figure 4.:** (a) mean GM volume of the left HPC cluster correlated with the mean rsALFF of the PCC cluster across patients; (b) visual recognition memory scores correlated across patients with their mean rsALFF in the PCC cluster, surviving correction for multiple testing for the 13 structural/functional abnormalities examined (r = 0.54, p-corr = 0.014); the mediation analysis demonstrates that this effect held over and above the correlation of PCC rsALFF with the mean GM volume of the left HPC cluster; (c) mean GM volume of the left HPC cluster correlated with visual recognition memory scores across patients, but did not survive correction for multiple testing (r = 0.45, p-corr = 0.072); however, the mediation analysis demonstrated that this relationship did not hold over and above the correlation of the mean GM volume of the left HPC cluster with the mean PCC rsALFF; there was only an indirect effect of reduced HPC GM volume on visual recognition memory (within parenthesis: 95% confidence intervals); GM: gray matter; HPC: hippocampus; L: left (hemisphere); MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; p: significance values are presented at uncorrected levels; PCC: posterior cingulate cortex; rsALFF: resting-state amplitude of low frequency fluctuations; TIV: total intracranial volume; VBM: voxel-based morphometry; z: memory scores are averaged age-scaled and standardized scores of participants’ performance in the subtests of interest; z-res: GM volumes from VBM clusters are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants; mean rsALFF values are residualized across participants against age and sex.
 
-## Anterograde memory: Verbal recall
+#### Anterograde memory: Verbal recall
 
 Verbal recall memory composite scores correlated across patients with their reduced PCC rsALFF (r = 0.582, p-corr = 0.004) and with the volume of the left HPC VBM cluster (r = 0.495, p-corr = 0.024; rest of ps, p-corr ≥0.290). Patients’ reduced rsALFF in the PCC correlated with verbal recall scores over and above the left HPC volume reduction (VBM cluster) (partial correlation: r = 0.474, p=0.005). Consistent with our hypothesis, the effects of HPC atrophy on verbal recall were fully mediated by the reduction in PCC rsALFF (direct effect: β = 0.16, p=0.124; indirect effect: β = 0.14, 95% CI: 0.03, 0.29; Figure 5; Figure 5—source data 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/46156/elife-46156-fig5-v2.jpg)
 
-**Figure 5.:** (a) mean GM volume of the left HPC cluster correlated with the mean rsALFF of the PCC cluster across patients; (b) verbal recall memory scores correlated across patients with their mean rsALFF in the PCC cluster, surviving corrections for multiple testing across the 13 structural/functional abnormalities examined (r = 0.582, p-corr = 0.004); the mediation analysis demonstrates that this effect held over and above the correlation of PCC rsALFF with the mean GM volume of the left HPC cluster; (c) mean GM volume of the left HPC cluster correlated with verbal recall memory scores across patients (r = 0.495, p-corr = 0.024); however, the mediation analysis demonstrated that this relationship did not hold over and above the correlation of the mean GM volume of the left HPC cluster with the mean PCC rsALFF; there was only an indirect effect of reduced HPC GM volume on verbal recall memory (within parenthesis: 95% confidence intervals); GM: gray matter; HPC: hippocampus; L: left (hemisphere); MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; PCC: posterior cingulate cortex; rsALFF: resting-state amplitude of low frequency fluctuations; TIV: total intracranial volume; VBM: voxel-based morphometry; z: memory scores are averaged age-scaled and standardized scores of participants’ performance in the subtests of interest; z-res: GM volumes from VBM clusters are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants; mean rsALFF values are residualized across participants against age and sex.10.7554/eLife.46156.014Figure 5—source data 1.Figure 5; GM: gray matter; HPC: hippocampus; MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; PCC: posterior cingulate cortex; rsALFF: resting-state amplitude of low-frequency fluctuations; VBM: voxel-based morphometry; z: memory scores are averaged age-scaled and standardized scores of participants’ performance in the subtests of interest; z-res: GM volumes from VBM clusters are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants; mean rsALFF is residualized against age and sex across participants. These data can be opened with Microsoft Excel or with open-source alternatives such as OpenOffice.
+**Figure 5.:** (a) mean GM volume of the left HPC cluster correlated with the mean rsALFF of the PCC cluster across patients; (b) verbal recall memory scores correlated across patients with their mean rsALFF in the PCC cluster, surviving corrections for multiple testing across the 13 structural/functional abnormalities examined (r = 0.582, p-corr = 0.004); the mediation analysis demonstrates that this effect held over and above the correlation of PCC rsALFF with the mean GM volume of the left HPC cluster; (c) mean GM volume of the left HPC cluster correlated with verbal recall memory scores across patients (r = 0.495, p-corr = 0.024); however, the mediation analysis demonstrated that this relationship did not hold over and above the correlation of the mean GM volume of the left HPC cluster with the mean PCC rsALFF; there was only an indirect effect of reduced HPC GM volume on verbal recall memory (within parenthesis: 95% confidence intervals); GM: gray matter; HPC: hippocampus; L: left (hemisphere); MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; PCC: posterior cingulate cortex; rsALFF: resting-state amplitude of low frequency fluctuations; TIV: total intracranial volume; VBM: voxel-based morphometry; z: memory scores are averaged age-scaled and standardized scores of participants’ performance in the subtests of interest; z-res: GM volumes from VBM clusters are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants; mean rsALFF values are residualized across participants against age and sex.
 
-## Anterograde memory: Visual recall
+#### Anterograde memory: Visual recall
 
 Visual recall scores correlated at uncorrected levels with PCC rsALFF (rho = 0.446, p-unc = 0.008; p-corr = 0.107), and the left HPC volume (VBM cluster) (rho = 0.370, p-unc = 0.026; p-corr = 0.312; rest of ps, p-corr ≥0.594). Across patients, the reduced rsALFF in the PCC marginally correlated with visual recall memory scores over and above their reduced left HPC volume (VBM cluster) (partial correlation: rho = 0.33, p=0.058). The effects of HPC atrophy on visual recall were fully mediated by the reduction in PCC rsALFF (direct effect: β = 0.23, p=0.272; indirect effect: β = 0.19, 95% CI:0.01,0.46) (Figure 6; Figure 6—source data 1).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/46156/elife-46156-fig6-v2.jpg)
 
-**Figure 6.:** (a) mean GM volume of the left HPC cluster correlated with the mean rsALFF of the PCC cluster across patients; (b) visual recall memory scores correlated at uncorrected levels across patients with their mean rsALFF in the PCC cluster; the mediation analysis demonstrates that this effect held over and above the correlation of PCC rsALFF with the mean GM volume of the left HPC cluster; (c) mean GM volume of the left HPC cluster correlated with visual recall memory scores across patients at uncorrected levels; however, the mediation analysis demonstrated that this relationship did not hold over and above the correlation of the mean GM volume of the left HPC cluster with the mean PCC rsALFF; there was only an indirect effect of reduced HPC GM volume on visual recall memory (within parenthesis: 95% confidence intervals); GM: gray matter; HPC: hippocampus; L: left (hemisphere); MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; p: significance values are presented at uncorrected levels; PCC: posterior cingulate cortex; rsALFF: resting-state amplitude of low frequency fluctuations; TIV: total intracranial volume; VBM: voxel-based morphometry; z: memory scores are averaged age-scaled and standardized scores of participants’ performance in the subtests of interest; z-res: GM volumes from VBM clusters are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants; mean rsALFF values are residualized across participants against age and sex.10.7554/eLife.46156.016Figure 6—source data 1.GM volume of the left HPC VBM cluster and the mean rsALFF in the PCC (z-res) and the visual recall memory composite scores (z) of healthy controls and patients that are plotted in Figure 6; GM: gray matter; HPC: hippocampus; MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; PCC: posterior cingulate cortex; rsALFF: resting-state amplitude of low-frequency fluctuations; VBM: voxel-based morphometry; z: memory scores are averaged age-scaled and standardized scores of participants’ performance in the subtests of interest; z-res: GM volumes from VBM clusters are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants; mean rsALFF is residualized against age and sex across participants. These data can be opened with Microsoft Excel or with open-source alternatives such as OpenOffice.
+**Figure 6.:** (a) mean GM volume of the left HPC cluster correlated with the mean rsALFF of the PCC cluster across patients; (b) visual recall memory scores correlated at uncorrected levels across patients with their mean rsALFF in the PCC cluster; the mediation analysis demonstrates that this effect held over and above the correlation of PCC rsALFF with the mean GM volume of the left HPC cluster; (c) mean GM volume of the left HPC cluster correlated with visual recall memory scores across patients at uncorrected levels; however, the mediation analysis demonstrated that this relationship did not hold over and above the correlation of the mean GM volume of the left HPC cluster with the mean PCC rsALFF; there was only an indirect effect of reduced HPC GM volume on visual recall memory (within parenthesis: 95% confidence intervals); GM: gray matter; HPC: hippocampus; L: left (hemisphere); MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; p: significance values are presented at uncorrected levels; PCC: posterior cingulate cortex; rsALFF: resting-state amplitude of low frequency fluctuations; TIV: total intracranial volume; VBM: voxel-based morphometry; z: memory scores are averaged age-scaled and standardized scores of participants’ performance in the subtests of interest; z-res: GM volumes from VBM clusters are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants; mean rsALFF values are residualized across participants against age and sex.
 
-## Anterograde memory: Retention (Forgetting)
+#### Anterograde memory: Retention (Forgetting)
 
 Anterograde retention (visual forgetting) scores correlated only with volume reduction in the right HPC VBM cluster (rho = 0.556, p-corr = 0.008) and in the manually delineated right HPC (rho = 0.508, p-corr = 0.026; an alternative analysis, comparing patients that scored at ceiling with the rest of the patient group, is reported in Supplementary Table 6 in Supplementary file 1, disclosing the same relationships). No extra-HPC abnormalities correlated significantly with visual forgetting (rest of ps, p-corr ≥0.171). Nevertheless, at uncorrected levels, patients’ reduced rsALFF in the PCC correlated with their visual forgetting scores (rho = 0.399, p-unc = 0.024), as well as with right HPC volume (r = 0.517, p=0.001). Right HPC volume correlated with visual forgetting scores over and above rsALFF in the PCC (partial correlation: rho = 0.460, p=0.009). The strong relationship of visual forgetting scores with right HPC volumes across patients was further demonstrated by a mediation analysis, whereby the effect of right HPC volume reduction on visual forgetting scores remained unmediated by the correlative reduction in PCC rsALFF across patients (direct effect: β = 0.43, p=0.036; indirect effect: β = 0.10, 95% CI: −0.11,0.32; Figure 7; Figure 7—source data 1).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/46156/elife-46156-fig7-v2.jpg)
 
-**Figure 7.:** (a) mean GM volume of the right HPC cluster correlated with the mean rsALFF of the PCC cluster across patients; (b) visual forgetting scores correlated across patients with their mean rsALFF in the PCC cluster, without, however, surviving correction for multiple tests (rho = 0.40, p-corr = 0.216); the mediation analysis demonstrates that this effect did not hold when the correlation of PCC rsALFF with the mean GM volume of the right HPC cluster was accounted for; (c) mean GM volume of the right HPC cluster correlated with visual forgetting scores across patients, surviving correction across the 13 structural/functional abnormalities examined (rho = 0.56, p-corr = 0.008); the mediation analysis demonstrated that this relationship held over and above the correlation of the mean GM volume of the right HPC cluster with the mean PCC rsALFF; there was thus a direct effect of reduced HPC GM volume on visual forgetting (within parenthesis: 95% confidence intervals); D and P: Doors and People (Baddeley et al., 1994); GM: gray matter; HPC: hippocampus; MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; p: significance values are presented at uncorrected levels; PCC: posterior cingulate cortex; R: right (hemisphere); rsALFF: resting-state amplitude of low frequency fluctuations; TIV: total intracranial volume; VBM: voxel-based morphometry; z: age-scaled and standardized scores on Visual Forgetting (D and P); z-res: GM volumes from VBM clusters are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants; mean rsALFF values are residualized across participants against age and sex.10.7554/eLife.46156.018Figure 7—source data 1.GM volume of the right HPC VBM cluster and the mean rsALFF in the PCC (z-res) and the visual forgetting scores (z) of healthy controls and patients that are plotted in Figure 7; GM: gray matter; HPC: hippocampus; MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; PCC: posterior cingulate cortex; rsALFF: resting-state amplitude of low-frequency fluctuations; VBM: voxel-based morphometry; z: age-scaled and standardized scores for visual forgetting [Doors and People (Baddeley et al., 1994)]; z-res: GM volumes from VBM clusters are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants; mean rsALFF is residualized against age and sex across participants. These data can be opened with Microsoft Excel or with open-source alternatives such as OpenOffice.
+**Figure 7.:** (a) mean GM volume of the right HPC cluster correlated with the mean rsALFF of the PCC cluster across patients; (b) visual forgetting scores correlated across patients with their mean rsALFF in the PCC cluster, without, however, surviving correction for multiple tests (rho = 0.40, p-corr = 0.216); the mediation analysis demonstrates that this effect did not hold when the correlation of PCC rsALFF with the mean GM volume of the right HPC cluster was accounted for; (c) mean GM volume of the right HPC cluster correlated with visual forgetting scores across patients, surviving correction across the 13 structural/functional abnormalities examined (rho = 0.56, p-corr = 0.008); the mediation analysis demonstrated that this relationship held over and above the correlation of the mean GM volume of the right HPC cluster with the mean PCC rsALFF; there was thus a direct effect of reduced HPC GM volume on visual forgetting (within parenthesis: 95% confidence intervals); D and P: Doors and People (Baddeley et al., 1994); GM: gray matter; HPC: hippocampus; MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; p: significance values are presented at uncorrected levels; PCC: posterior cingulate cortex; R: right (hemisphere); rsALFF: resting-state amplitude of low frequency fluctuations; TIV: total intracranial volume; VBM: voxel-based morphometry; z: age-scaled and standardized scores on Visual Forgetting (D and P); z-res: GM volumes from VBM clusters are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants; mean rsALFF values are residualized across participants against age and sex.
 
 Of the three composite memory scores, anterograde retention correlated with scores for depression (HADS) across patients (rho = −0.425, p-corr = 0.045; rest of ps, p-corr >0.248). We thus also examined the relationship among scores for depression, anterograde retention and HPC atrophy, with which anterograde retention scores strongly correlated. No correlation of scores for depression with HPC volumes (VBM clusters, manually delineated volumes) reached significance even at uncorrected levels (all rhos, |rho| ≤ 0.25; all ps, p-unc ≥0.158), and right HPC volumes correlated with visual forgetting scores over and above depression scores (right HPC VBM cluster: rho = 0.564, p=0.001; manually delineated right HPC: rho = 0.530, p=0.002).
 
-## Remote autobiographical memory
+#### Remote autobiographical memory
 
 Remote autobiographical memory scores correlated across patients with their reduced left thalamic volume (r = 0.558, p-corr = 0.015), and only marginally with the volume expressed by the left HPC VBM cluster (r = 0.467, p-corr = 0.096). The volumes of the left thalamus and the left HPC VBM cluster correlated across patients (r = 0.47, p=0.003). Patients’ reduced left thalamic volume correlated with their remote autobiographical memory scores over and above their reduced left HPC volume (VBM cluster) (partial correlation: r = 0.422, p=0.020). Moreover, the effects of left HPC atrophy on remote autobiographical memory were fully mediated by volume reduction in the left thalamus (direct effect: β = 0.94, p=0.165; indirect effect: β = 0.82, 95% CI: 0.20, 1.89; Figure 8; Figure 8—source data 1).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/46156/elife-46156-fig8-v2.jpg)
 
-**Figure 8.:** (a) GM volume of the left HPC VBM cluster correlated with the left thalamic volume across patients; (b) remote autobiographical memory (AMI) scores correlated across patients with the volume of the left thalamus, surviving correction across the 13 structural/functional abnormalities examined (r = 0.558, p-corr = 0.015); the mediation analysis demonstrates that this effect held when the correlation of thalamic volume with the volume expressed by the left HPC VBM cluster was accounted for; (c) the volume expressed by the left HPC VBM cluster correlated with remote autobiographical memory scores, albeit this correlation did not survive correction for multiple testing (r = 0.467, p-corr = 0.096); the mediation analysis demonstrated that this relationship did not hold over and above the correlation of the left thalamic volume with the HPC clusters; there was thus no direct effect of reduced HPC GM volume on remote autobiographical memory (within parenthesis: 95% confidence intervals); ‘18’: remote autobiographical memory scores are the sums of the AMI scores for autobiographical memories for childhood and early adulthood (max = 18); AMI: Autobiographical Memory Interview; GM: gray matter; HPC: hippocampus; MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; p: significance values are presented at uncorrected levels; TIV: total intracranial volume; VBM: voxel-based morphometry; z-res: volumes are residualized against age, sex, scan source (MAP, OPTIMA) and TIV across participants.10.7554/eLife.46156.020Figure 8—source data 1.Kopelman et al., 1989)] of healthy controls and patients (over the age of 50 at the time of assessment; See Materials and methods section) that are plotted in Figure 8; GM: gray matter; HPC: hippocampus; MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; VBM: voxel-based morphometry; z-res: volumes are residualized against age, sex, scan source (MAP, OPTIMA), and TIV across participants. These data can be opened with Microsoft Excel or with open-source alternatives such as OpenOffice.
+**Figure 8.:** (a) GM volume of the left HPC VBM cluster correlated with the left thalamic volume across patients; (b) remote autobiographical memory (AMI) scores correlated across patients with the volume of the left thalamus, surviving correction across the 13 structural/functional abnormalities examined (r = 0.558, p-corr = 0.015); the mediation analysis demonstrates that this effect held when the correlation of thalamic volume with the volume expressed by the left HPC VBM cluster was accounted for; (c) the volume expressed by the left HPC VBM cluster correlated with remote autobiographical memory scores, albeit this correlation did not survive correction for multiple testing (r = 0.467, p-corr = 0.096); the mediation analysis demonstrated that this relationship did not hold over and above the correlation of the left thalamic volume with the HPC clusters; there was thus no direct effect of reduced HPC GM volume on remote autobiographical memory (within parenthesis: 95% confidence intervals); ‘18’: remote autobiographical memory scores are the sums of the AMI scores for autobiographical memories for childhood and early adulthood (max = 18); AMI: Autobiographical Memory Interview; GM: gray matter; HPC: hippocampus; MAP: Memory and Amnesia Project; OPTIMA: Oxford Project To Investigate Memory and Aging; p: significance values are presented at uncorrected levels; TIV: total intracranial volume; VBM: voxel-based morphometry; z-res: volumes are residualized against age, sex, scan source (MAP, OPTIMA) and TIV across participants.
 
 Table 5 summarizes the relationships identified between memory impairment and structural and functional abnormalities in patients, as related to the effects of HPC atrophy. We did not identify any additional relationships when examining the volumes of manually delineated HPC portions (left/right anterior/posterior HPC; Supplementary Table 5 in Supplementary file 1). Moreover, these relationships were not driven by the subset of patients (n = 7) who had not received immunosuppressive therapy (Supplementary Tables 7-8 in Supplementary file 1).
+
+**Table 5.**
+ Summary of relationships between memory impairment and structural/functional abnormalities across patients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Memory composite score</th>
+      <th>Effects of HPC atrophy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Anterograde retrieval</td>
+      <td>Verbal recognition</td>
+      <td>Does not explain additional variance beyond that explained by inter-HPC rsFC reduction</td>
+    </tr>
+    <tr>
+      <td>Visual Recognition</td>
+      <td rowspan="3">Fully mediated by PCC rsALFF reduction</td>
+    </tr>
+    <tr>
+      <td>Verbal Recall</td>
+    </tr>
+    <tr>
+      <td>Visual Recall</td>
+    </tr>
+    <tr>
+      <td colspan="2">Anterograde Retention (Visual Forgetting)</td>
+      <td>Direct effect - not mediated by extra-HPC abnormalities</td>
+    </tr>
+    <tr>
+      <td colspan="2">Remote Autobiographical Memory</td>
+      <td>Fully mediated by thalamic volume reduction</td>
+    </tr>
+  </tbody>
+</table>
+
+_HPC: hippocampus; PCC: posterior cingulate cortex; rsALFF: resting-state amplitude of low frequency fluctuations; rsFC: resting-state functional connectivity._
 
 ## Discussion
 
@@ -155,7 +1429,7 @@ The focal HPC high T2 signal on clinical MRI from the acute disease phase was fo
 
 These wider network abnormalities were associated with memory performance over and above HPC atrophy, and also fully mediated the relationships between HPC atrophy and memory performance. The only direct effect of HPC atrophy we observed was on forgetting, and no other brain abnormalities showed such an effect. Our results highlight the need to take into account remote changes in brain structure and function associated with HPC damage (Aggleton, 2014), since these may explain specific aspects of anterograde and retrograde amnesia and help identify others that may be a direct function of HPC atrophy per se.
 
-## Abnormalities in the extended HPC system following HPC atrophy
+### Abnormalities in the extended HPC system following HPC atrophy
 
 We found bilaterally marked HPC atrophy and less significant right entorhinal cortical volume reduction using the gold standard of manual volumetry for MTL structures (Grimm et al., 2015). Automated segmentation of other subcortical structures disclosed left thalamic volume reduction.
 
@@ -163,7 +1437,7 @@ However, our uniquely large cohort also enabled us to examine subtle structural 
 
 Patients also showed functional abnormalities in the posteromedial cortex, and the relationship between HPC atrophy and PCC rsALFF was fully mediated by the correlative volume reduction in the thalamic regions. This is consistent with the functional abnormalities previously observed in posteromedial cortical regions in both HPC and diencephalic amnesias in humans (Aggleton, 2014; Reed et al., 1999). Patients also showed reduced inter-HPC rsFC. In healthy individuals, the spontaneous activity of the HPC is coupled with that of the contralateral HPC at rest and these regions form part of the default-mode network. This is also the case for the medial prefrontal and posteromedial cortical regions which showed reduced rsFC with the HPC (Buckner et al., 2008; Greicius et al., 2004). The decrease in inter-HPC rsFC across patients as a function of delay since symptom onset is consistent with the idea that these network-wide abnormalities follow focal HPC damage. In future, this needs replication in longitudinal studies.
 
-## Anterograde memory: Retrieval
+### Anterograde memory: Retrieval
 
 Patients showed impairment across all tests of visual and verbal recall and recognition memory. The only unimpaired form of memory was face recognition. This would be predicted by some material-specific accounts of recognition memory (Bird and Burgess, 2008) and is consistent with the view that recognition of unfamiliar faces is exceptional in several regards – according to some approaches, faces may be holistically processed and difficult to label verbally, and adequate performance levels may be attained in the absence of capacities to associate faces with a study list (Smith et al., 2014). Ours is the largest study to date to confirm preserved face recognition memory in HPC amnesia.
 
@@ -173,7 +1447,7 @@ It should be noted that our neuropsychological assessment did not explicitly att
 
 It is important to acknowledge an alternative interpretation of the relationship that we observed between resting-state functional abnormalities and memory measures. McCormick and colleagues recently showed that HPC amnesic patients differ in the form and content of their ‘mind-wandering’ compared with healthy adults (McCormick et al., 2018). It is possible that ‘resting-state’ functional abnormalities in our patients actually reflect (and are perhaps therefore mediated by) differences between healthy controls and patients with respect to the extent of mind wandering in the scanner, rather than differences in neurovascular functioning in these regions per se. Anterior and posterior midline structures are strongly implicated in mind-wandering. Nevertheless, rsfMRI measures (predominantly rsFC) have repeatedly provided reliable correlates of memory impairment in HPC amnesia [e.g. (Heine et al., 2018; Henson et al., 2016)]. Moreover, this interpretation is not inconsistent with the basic premise of our argument, namely, that the effects of HPC damage on memory are mediated by other processes that are compromised following HPC damage. Our study was not designed to disambiguate the level of disruption that is mediating the effects of HPC atrophy. In other words, the disruption could be at the cognitive level, or at the neurovascular level, or at both levels. Further work is needed to disambiguate those two interpretations.
 
-## Anterograde memory: Forgetting
+### Anterograde memory: Forgetting
 
 The only aspect of amnesia upon which HPC atrophy showed a direct effect was that of visual forgetting (of abstract shapes). Patients showed only a marginal increase in verbal forgetting. In particular, it was the atrophy in the right HPC that was associated with visual forgetting. This is consistent with evidence for HPC lateralization of maintenance processes for verbal (left HPC) (Frisk and Milner, 1990) and visual material (right HPC) (Smith and Milner, 1989). Indeed, rapid forgetting of visual information in right HPC damage was noted quite early (Jones-Gotman, 1986), as was, in general, the nature of forgetting in HPC amnesia (Huppert and Piercy, 1979). This has recently been re-emphasized (Sadeh et al., 2014), with functional neuroimaging studies in healthy young adults attributing a central role to the HPC in constraining the forgetting that occurs by new learning (Kuhl et al., 2010).
 
@@ -181,7 +1455,7 @@ Our results go beyond these studies and demonstrate an exclusive relationship be
 
 These findings suggest that the HPC role in amnesia may be much less direct than has previously been held, at least with respect to performance on widely used, standardized neuropsychological tests of memory. In contrast with the majority of such tests, the measurements of forgetting such as that used here partially control for factors that may confound simple recall scores, such as variability in attention, initial learning or retrieval strategy, factors that may depend on regions outside the HPC. Instead, measurements of forgetting may provide the most sensitive and specific way to detect HPC damage. This proposal does not preclude the possibility that the HPC mechanisms underlying the retention of newly formed memories are process- or material-specific. As our forgetting rates were derived only from a recall-based test (Baddeley et al., 1994), we are unable to comment on the relationship of HPC atrophy with forgetting in recognition memory, a relationship which has recently been questioned (Sadeh et al., 2014). Likewise, material-specificity in rapid forgetting should be examined with finer-grained behavioral tasks, involving different types of stimuli (e.g. scenes vs. faces). Nevertheless, the direct relationship of (right) HPC atrophy with (visual) forgetting highlights the utility of tests of accelerated forgetting in detecting HPC pathology in other disorders. Recent studies have emphasized a possible role for such tests in the early detection of Alzheimer's disease pathology (Weston et al., 2018; Zimmermann and Butler, 2018).
 
-## Remote autobiographical memory
+### Remote autobiographical memory
 
 Patients showed spared remote personal semantic memory, in the face of impaired remote autobiographical memories. To date, research in autoimmune LE patients has focused on anterograde memory (Butler et al., 2014; Finke et al., 2017; Henson et al., 2016; Malter et al., 2014; Miller et al., 2017), with very little evidence on retrograde amnesia (Chan et al., 2007). Our study is also one of the very few to examine the relationship of HPC damage with both anterograde and retrograde amnesia.
 
@@ -193,17 +1467,17 @@ The absence of direct effects of HPC atrophy on remote memory, in combination wi
 
 Finally, our finding that thalamic volume was reduced in our patient group is consistent with the literature on developmental amnesia due to early hypoxic-ischaemic encephalopathy, where HPC damage has been noted along with atrophy in the thalamus and the mammillary bodies [e.g. (Dzieciol et al., 2017)]. A question for future research is therefore whether adult-onset HPC damage is accompanied by atrophy in the mammillary bodies, or whether thalamic atrophy may occur in the absence of changes to the mammillary bodies, given the evidence for direct forniceal projections from the HPC/subiculum to the anterior thalamus in human and non-human primates (Bubb et al., 2017).
 
-## Conclusion
+### Conclusion
 
 Our study, probably the largest in human HPC amnesia, shows that abnormalities in the integrity of and connectivity within the extended HPC system may occur after focal HPC damage, and that these play a central role in explaining the variability in the anterograde and retrograde amnesia of patients with HPC atrophy. We found that the neuropsychological measure most sensitive and specific to HPC atrophy was the forgetting of newly learned information. Understanding the impact of network-wide changes following HPC damage will be key to resolving long-standing controversies in the literature on human amnesia.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
-## Patients
+#### Patients
 
-## Inclusion and exclusion criteria
+##### Inclusion and exclusion criteria
 
 We identified 38 patients (26M:12F; age at research MRI: M = 63.06; IQR = 16.16 years; Table 2) who i) had undergone neuropsychological assessment during the acute phase of the illness at the Russell Cairns Unit, Oxford (2013–2018); ii) had been diagnosed with LE according to the diagnostic criteria described in (Graus et al., 2016): a) subacute onset of memory deficits [(Graus et al., 2016) mention ‘working memory deficits’. However, other studies have used ‘short-term memory’ as a criterion (Graus, 2004) and the classical deficit is generally held to be in episodic memory (Vincent et al., 2004)], seizures, or psychiatric symptoms suggesting involvement of the limbic system; b) bilateral brain abnormalities on T2-weighted MRI, restricted within the MTL; c) CSF pleocytosis (white blood cells > 5/mm3) and/or EEG with epileptic or slow-wave activity involving the temporal lobes; d) reasonable exclusion of alternative causes (e.g. CNS infections, septic encephalopathy, metabolic encephalopathy, drug toxicity, cerebrovascular disease, neoplastic disorders, Creutzfeldt-Jakob disease, epileptic disorders, rheumatologic disorders, Kleine-Levin, mitochondrial diseases); e) detection of antibodies against cell-surface, synaptic, or onconeural proteins. According to Graus et al. (2016), criteria (a-d) are required for a diagnosis of ‘definite LE’, unless, in the absence of one of (a-c), criterion (e) is satisfied.
 
@@ -213,27 +1487,27 @@ Furthermore, all patients i) had undergone MRI at the time of initial clinical p
 
 Patients were all recruited in the post-acute phase of the illness (M = 5.41; IQR = 5.36 years since symptom onset) and were re-assessed by an experienced neurologist (CRB) prior to study inclusion.
 
-## Acute clinical MRI
+##### Acute clinical MRI
 
 Neuroradiological reports of patients’ MRI scans from the time of initial clinical presentation were consulted to identify abnormalities in T2 signal, volume, and diffusion, within and beyond the MTL. 34/38 patients showed abnormal signal, volume (swelling or atrophy) and/or (facilitated) diffusion in the HPC. High signal in the amygdala was noted in 6/38 patients. One patient showed abnormalities in the entorhinal cortex, and one patient in the parahippocampal cortex (Table 2). No acute abnormalities were detected in 4/38 patients who nonetheless had clinical features characteristic of autoimmune LE. Only one patient showed extra-MTL abnormalities (bright caudate), and four patients had mild microangiopathic changes, which are commonly found with aging.
 
-## Healthy controls
+### Healthy controls
 
 Healthy controls were recruited through local advertisement and through the Oxford Project To Investigate Memory and Aging. Of the healthy controls that underwent neuropsychological assessment (see below), all were fluent in English (40 Native speakers; one non-native speaker; Supplementary Table 9 in Supplementary file 1).
 
 All participants provided written informed consent according to the Declaration of Helsinki. Ethical approval was received from South Central Oxford Research Ethics Committee (REC no: 08/H0606/133).
 
-## Neuropsychological assessment
+### Neuropsychological assessment
 
 All 38 patients (26M:12F; age at assessment: M = 61.32; IQR = 15.82 years) were assessed with neuropsychological tests, along with 41 control participants (27M:14F; age at assessment: M = 61.50; IQR = 16.93 years; controls vs. patients: age: U = 706, p=0.477; M:F ratio: χ2 = 0.059, p=0.808).
 
 Neuropsychological tests were administered to assess the following domains: premorbid intelligence [National Adult Reading Test (NART) (Nelson and Willison, 1991)]; executive function [Wechsler Memory Scale III (WMS-III) digit span (Wechsler, 1997); Delis-Kaplan Executive Function System (DKEFS) Trails (Delis et al., 2001)]; semantic memory and language [Camel and Cactus Test (C and CT) (Bozeat et al., 2000); Graded Naming Test (GNT) (McKenna and Warrington, 1980); Weschler Abbreviate Scale of Intelligence (WASI/WASI-II) Vocabulary and Similarity (Wechsler, 2011)]; visuospatial and motor function [Rey-Osterrieth Complex Figure Test (ROCFT) copy (Rey, 1959); DKEFS trails visual scanning, motor speed (Delis et al., 2001); Visual Object and Space Perception (VOSP) cube analysis, dot counting, position discrimination (Warrington and James, 1991)]; anxiety and depression [Hospital Anxiety and Depression Scale (HADS) (Zigmond and Snaith, 1983)].
 
-## Anterograde memory
+#### Anterograde memory
 
 Anterograde memory was examined using a range of memory tests: WMS-III (Wechsler, 1997); ROCFT (Rey, 1959); the Warrington Recognition Memory Tests for faces and words (Warrington, 1984) and the Warrington Topographical Memory test for scenes (RMT) (Warrington, 1996); the Doors and People test (D and P) (Baddeley et al., 1994).
 
-## Retrograde memory
+#### Retrograde memory
 
 In order to assess patients’ remote autobiographical memory, we administered the most commonly used clinical test of autobiographical memory, the Autobiographical Memory Interview [AMI; (Kopelman et al., 1989)]. The AMI assesses semantic autobiographical memory (‘personal semantics’) through a structured interview concerning autobiographical facts. Episodic autobiographical memory is examined through the free recall of events and is scored (0–3) for specificity and richness of episodic recall. Following the AMI manual, three points were given for episodic memories produced in a highly detailed fashion, with mention of specific time and place; 0–2 points were given to memories recalled with poor episodic detail, that is two points were credited when the episodic memory was not recalled in detail or did not involve mention of time and place, or where the memory was not recalled; one point was given for a vague personal memory; and 0 points when a response was not provided or when general semantic information was provided instead (Kopelman et al., 1989). Memories of three periods are assessed: childhood (up to 18 years of age), early adulthood (up to participants’ mid 30’s), and recent memories (0–5 years from the time of the interview). We identified 31 patients (23M:8F; age at assessment: M = 63.79, IQR = 15.16 years) and 29 controls who were over the age of 50 at the time of assessment (19M:10F; age: M = 65.74, IQR = 17.23; controls vs. patients: age: U = 431.00, p=0.789; M:F ratio: χ2 = 0.537, p=0.464). As such, recent memories did not overlap with those of early adulthood (recent autobiographical/semantic memories probed by this test pertain to 0–5 years before the time of assessment), and involved a minimum of 10 years between the earliest recent memory and the latest memory for early adulthood that the AMI probed.
 
@@ -241,35 +1515,35 @@ Scores in the ‘recent memory’ conditions, which cover a period of 0–5 year
 
 For the purposes of data reduction, minimization of measurement error, maximization of generalizability of our findings, and simplification of correlational analyses, we used i) an anterograde memory composite score for visual recall (D and P Shapes, ROCFT Immediate and Delayed Recall), verbal recall (WMS-III Logical Memory I,II, Word List I,II, D and P People), visual recognition (RMT Scenes, D and P Doors), and verbal recognition memory (RMT Words, D and P Names, WMS-III Word List Recognition), reflecting ‘anterograde retrieval’, by averaging the age-scaled, standardized scores of each patient across the tests of anterograde memory in which patients showed group-level impairment; ii) a remote autobiographical memory score, by summing patients’ AMI scores for autobiographical memories in childhood and early adulthood; iii) the D and P scores for verbal and/or visual forgetting - unlike other tests of immediate and delayed recall memory that involve no mechanism for equating participants on immediate recall, the D and P quantifies forgetting on the basis of participants’ performance in the last trial of immediate recall relative to their performance in delayed recall.
 
-## Brain imaging
+### Brain imaging
 
-## Scanning procedures
+#### Scanning procedures
 
 Image acquisition was conducted on a Siemens 3T Trio system using a 32-channel head coil (University of Oxford Centre for Clinical Magnetic Resonance Research).
 
-## Structural MRI
+#### Structural MRI
 
 3D T1-weighted images were acquired using a Magnetization Prepared Rapid Gradient Echo (MPRAGE) sequence (echo time = 4.7 ms, repetition time = 2040 ms, 8° flip angle, field of view = 192 mm, voxel size = 1×1×1 mm). All 38 patients (26M:12F; age at imaging: M = 63.06; IQR = 16.06 years) underwent structural brain imaging, along with 67 control participants (35 recruited by the Memory and Amnesia Project; 32 datasets were made available through the Oxford Project To Investigate Memory and Aging; 40M:27F; age at imaging: M = 64.70; IQR = 19.87 years; controls vs. patients: M:F ratio: χ2 = 0.79, p=0.374; age at imaging: U = 1239.5, p=0.825).
 
-## Resting-state fMRI
+#### Resting-state fMRI
 
 BOLD-weighted fMRI data were acquired using a Gradient Echo EPI sequence. Participants were instructed to lay still, keep their eyes open to watch the fixation cross presented on the in-scanner projector, and not to fall asleep. Whole-brain data were acquired (180 volumes; slice thickness = 3.5 mm, echo time = 28 ms, repetition time = 2410 ms, 89° flip angle, field of view = 192 mm, voxel size = 3×3×3.5 mm). 35/38 patients (three datasets were discarded due to acquisition errors and/or movement; 24M:11F; age at imaging: M = 61.45; IQR = 15.85 years) underwent resting-state fMRI, along with 32 control participants (three datasets discarded due to acquisition errors and/or movement; only structural MRIs were available for the remaining 32 controls that were made available through the Oxford Project To Investigate Memory and Aging; 23M:9F; median = 55.71; IQR = 17.18 years; controls vs. patients: M:F ratio: χ2 = 0.087, p=0.768; age at imaging: U = 425.00, p=0.091).
 
-## GM volume, hemodynamic activity, and functional connectivity
+### GM volume, hemodynamic activity, and functional connectivity
 
-## Volumetry
+#### Volumetry
 
-## Manual segmentation of MTL
+##### Manual segmentation of MTL
 
 Manual segmentation of the MTL (38/38 patients; 48/67 healthy controls) was carried out in native space using ITK-SNAP (Yushkevich et al., 2006) by a trained researcher (ARF) (protocol: https://www.ndcn.ox.ac.uk/files/research/segmentation_protocol_medial_temporal_lobes.pdf). Segmentation procedures were based on published atlases and protocols (Insausti et al., 1998; Pruessner et al., 2002). The structures delineated were the HPC, amygdala, and the perirhinal, entorhinal, parahippocampal, and temporopolar cortices. Structures were segmented in each hemisphere. As originally reported in Loane et al. (2019), intra-rater reliability was measured using intra-class coefficient correlations [ICC(3)] on a random selection of 24 hemispheres (12 patients and 12 controls) segmented twice by ARF with an interval of at least 4 months between segmentations. Intra-rater reliability matched that reported for manual MTL segmentations (Olsen et al., 2013) (HPC: 0.98; amygdala: 0.80; perirhinal cortex: 0.90; entorhinal cortex: 0.82; parahippocampal cortex: 0.93; temporopolar cortex: 0.96).
 
-## Automated segmentation of other subcortical structures
+##### Automated segmentation of other subcortical structures
 
 The brainstem, thalamus, caudate nucleus, putamen, nucleus accumbens and pallidum were also automatically segmented using FSL-FIRST (v. 6.0; http://www.fmrib.ox.ac.uk/fsl) (Patenaude et al., 2011) for all participants.
 
 We compared healthy controls and patients on the volumes of all structures in a series of ANCOVAs, using age, sex, scan source [MAP (Memory and Amnesia Project), or OPTIMA (Oxford Project To Investigate Memory and Aging)], and total intra-cranial volume (TIV; derived from the unified segmentation procedure in SPM12; see below) as between-subjects covariates. Volumes that were reduced in our patient group were residualized against these four variables (z-res) and entered in a series of bivariate correlations with patients’ memory scores.
 
-## Voxel-based morphometry
+### Voxel-based morphometry
 
 To identify GM volume discrepancies between groups at a whole-brain level, the T1-weighted images were analysed with VBM (Ashburner and Friston, 2000), using the Statistical Parametric Mapping software (SPM12 v7219; http://www.fil.ion.ucl.ac.uk/spm/software/spm12) running in Matlab R2017b.
 
@@ -277,11 +1551,11 @@ Images were examined for scanner artefacts, reoriented to have the same point of
 
 The mean GM volumes of VBM clusters were extracted using the Marsbar toolbox in SPM12 (Brett et al., 2002), were residualized across participants against age, sex, scan source (MAP, OPTIMA), and TIV, and were used in a series of bivariate correlations with memory scores across patients.
 
-## fMRI analysis
+### fMRI analysis
 
 Resting-state fMRI preprocessing and connectivity analyses were conducted using the CONN toolbox version 18.a (https://www.nitrc.org/projects/conn) (Whitfield-Gabrieli and Nieto-Castanon, 2012) in SPM.
 
-## Preprocessing
+#### Preprocessing
 
 The EPIs were spatially realigned to correct for interscan movement and were slice time-corrected. The structural MRIs were coregistered to the EPIs, segmented and normalized along with EPIs in MNI space, followed by motion outlier detection (ART-based scrubbing). Denoising including the anatomical component-based correction method (CompCor) (Behzadi et al., 2007) was used to remove sources of noise in the BOLD time series data, deriving principal components from WM and CSF. WM, CSF and the six movement parameters were included as first-level nuisance covariates. A temporal band pass filter (0.01–0.1 Hz) was applied to this residual BOLD signal to remove low-frequency drift and high-frequency respiratory and cardiac noise. Images were smoothed using a Gaussian filter (8 mm FWHM).
 
@@ -289,23 +1563,23 @@ We explored resting-state functional abnormalities in patients with respect to b
 
 The same pre-processing pipeline was used for both rsALFF and rsFC analyses, including denoising with a temporal band pass filter (0.01–0.1 Hz), as in the majority of studies examining rsALFF [e.g. (Cui et al., 2014; Dai et al., 2012; Satterthwaite et al., 2012; Yao et al., 2012; Yi et al., 2012)].
 
-## Resting-state hemodynamic activity: rsALFF
+#### Resting-state hemodynamic activity: rsALFF
 
 We examined local abnormalities in the intensity of slow spontaneous fluctuations of hemodynamic activity at rest across the whole brain, using an analysis of rsALFF (Zang et al., 2007). RsALFF is defined as the total power within the low-frequency range (0.01–0.1 Hz), and thus indexes the strength or intensity of low frequency oscillations; rsALFF has been linked to neuronal glucose metabolism (Tomasi et al., 2013) and correlates with local field potential activity (Logothetis et al., 2001). Alterations in rsALFF have been shown in a number of disorders (Küblböck et al., 2014; Kwak et al., 2012; Lui et al., 2015), and can also reflect individual differences in performance in a large variety of cognitive tasks (Mennes et al., 2011; Wei et al., 2012). We opted for ALFF over fALFF (fractional amplitude of low frequency fluctuations, that is the total power within the low-frequency range, divided by the total power in the entire detectable frequency range), as the former demonstrates higher test–retest reliability in GM regions, which suggests that it is potentially more sensitive for discerning differences between individuals and groups (Zuo et al., 2010).
 
-## Resting-state functional connectivity: Multivariate pattern analysis
+#### Resting-state functional connectivity: Multivariate pattern analysis
 
 Instead of selecting seed/target ROIs or networks in an a priori fashion for our rsFC analyses, we chose to capitalize on the size of our patient cohort and use a PCA-based approach, commonly referred to as ‘connectome-MVPA’ (‘multivariate pattern analysis’) [e.g. (Arnold Anteraper et al., 2019; Flodin et al., 2016; Kazumata et al., 2017; Thompson et al., 2016; Whitfield-Gabrieli et al., 2016; Yankouskaya et al., 2017); implemented in the Conn toolbox (Whitfield-Gabrieli and Nieto-Castanon, 2012) https://sites.google.com/view/conn/measures/networks-voxel-level], in order to identify seed regions for post-hoc seed-to-voxel connectivity analyses in a data-driven fashion. This method has been extensively used to identify the regions in which groups of patients differ significantly from healthy controls with respect to their rsFC with the rest of the brain (e.g. Flodin et al., 2016; Kazumata et al., 2017; Thompson et al., 2016). As outlined in other papers [e.g. (Whitfield-Gabrieli et al., 2016)], the strength of this approach is the use of a massive data set (connectivity between all pairs of recorded voxels) for the purposes of identifying the most reliable difference in rsFC across the whole brain between groups of participants. In other words, it is an agnostic, unbiased approach used to define data-driven regions of interest (seeds) prior to performing a post-hoc analysis on the seeds to analyse brain connectivity patterns. This PCA-based method is more reproducible than conventional seed-based approaches (Song et al., 2016). As this approach is both data-driven and conducted across the whole brain, it is strongly preferable to approaches examining a priori defined networks or seed/target regions of interest, commonly employed by studies of HPC amnesia with substantially smaller sample sizes.
 
 In particular, the ‘connectome-MVPA’ method assesses the multivariate pattern of pairwise connections between voxels across the whole brain by performing a PCA separately for each voxel that characterizes its rsFC with the rest of the brain, in two steps. In the first step, separately for each participant, a default number (n = 64) of Singular Value Decomposition (SVD) components characterizing each participant’s voxel-to-voxel correlation matrix is retained. The resulting component scores are stored as first-level voxel-to-voxel covariance matrices for each participant. In the second step, a low-dimensional representation of the entire pattern of seed-based correlations between this voxel and the rest of the brain is derived for each voxel across participants by retaining a certain number of principal components that explain most of the variance of the connectivity matrix. In our study, we retained the first seven principal components, in keeping with a conventionally used conservative 1:10 ratio between the number of components extracted and the number of subjects (n = 67). These seven resulting component score volumes best represented the whole-brain connectivity pattern for each participant, explaining the maximum inter-subject variability. They were simultaneously included in a second-level analysis F-test at group-level (an omnibus test, equivalent to seed-level F-tests in ROI-to-ROI analyses of rsFC), testing for clusters that differ between healthy controls and patients with respect to whole-brain connectivity, as represented by the PCA component volumes, while also including age and sex as between-subjects covariates. This method was then followed by post-hoc analyses to determine specific connectivity patterns in the data.
 
-## Resting-state FC: Seed-to-voxel connectivity analysis
+#### Resting-state FC: Seed-to-voxel connectivity analysis
 
 The omnibus F-test above was followed up by post-hoc analyses to determine specific connectivity patterns in the data. We therefore conducted a whole-brain seed-to-voxel rsFC analysis, seeding from the regions identified from the omnibus F-test above (controls vs. patients; covariates: age, sex), to explore connectivity between those regions and the rest of the brain.
 
 Both seed-to-voxel rsFC and rsALFF analyses involved a t contrast (controls > patients; covariates: age, sex), with statistical parametrical connectivity maps thresholded at a voxel level of p<0.001 and FWE-corrected (p<0.05) at cluster- or voxel peak-level.
 
-## Structure/Function-Behavior Correlations
+### Structure/Function-Behavior Correlations
 
 Given our a priori hypothesis regarding the relationship of HPC atrophy with memory impairment, correlations of HPC volumes (GM volume expressed by HPC VBM clusters or manually delineated HPC volumes) with memory scores were investigated at uncorrected levels (p-unc <0.05). Correlations of extra-HPC abnormalities with memory scores were corrected for multiple testing (see below).
 
@@ -315,16 +1589,16 @@ Given our hypothesis that HPC atrophy gives rise to a series of correlative abno
 
 Measures of structural or functional abnormality that did not correlate with each other across patients but were both associated with impaired memory scores were entered as independent variables in a series of multiple step-wise linear regression analyses (dependent variable: memory scores), in order to investigate the portion of the variance of memory impairment that could be explained by each of those abnormalities (see below).
 
-## Experimental design and statistical analysis
+### Experimental design and statistical analysis
 
 Non-imaging statistical analyses were performed using SPSS (version 25.0, SPSS Inc). Variance homogeneity was assessed using Levene’s test, and normal distribution using the Shapiro-Wilk test. Parametric (Student t-test; Welch t-test used when the assumption of homogeneity of variances was violated) and non-parametric tests (Mann-Whitney U employed when the assumption of normal distribution was not met in a group) were used appropriately. Pearson correlation coefficient (r) and Spearman’s rho (ρ) (when variables were not normally distributed) were used to examine the relationship among measures of structural, functional abnormality, and memory scores in a series of bivariate and partial correlations. Significance values were corrected (‘p-corr’) for multiple comparisons and correlations with the Holm-Bonferroni sequential correction method (Holm, 1979), unless otherwise stated (‘p-unc’), as in the case of correlations between HPC volumes and memory scores. In cases where correction for multiple comparisons does not apply, ‘p’ was used instead.
 
-## Mediation analyses
+### Mediation analyses
 
 Mediation is a hypothesis about a causal relation among variables (Judd and Kenny, 1981; Baron and Kenny, 1986; MacKinnon et al., 2007). Four conditions are required to be met to establish mediation: i) the independent variable must be associated with the dependent variable; ii) the independent variable must be associated with the mediator; iii) the mediator variable must be associated with the dependent variable; iv) the mediator variable mediates the relationship between the independent and the dependent variable if controlling for the mediator variable reduces the variance of the dependent variable explained by the independent variable.
 
 Mediation models were computed utilizing PROCESS v. 3.0 (Hayes, 2012). Since the product of the two variables is normally distributed only in large samples, we used bootstrapping (5000 samples) to construct bias-corrected and accelerated 95% confidence intervals (CIs) around a point estimate of the indirect effect (Mackinnon et al., 2004; Preacher and Hayes, 2008). This procedure tested the null hypothesis that the indirect path from the interaction term to the dependent variable via the mediator does not differ from 0. If 0 is not contained within the CIs computed by the bootstrapping procedure, the indirect effect is inferred to differ from 0 at p<0.05.
 
-## Multiple step-wise linear regression analyses
+### Multiple step-wise linear regression analyses
 
 We assessed the proportion of the variance of memory scores that was explained by structural and functional abnormalities across patients by entering measures of such abnormalities (that were not significantly correlated across patients) in a series of multiple step-wise linear regression analyses as independent variables (default alpha level of 0.05 for entry to model and 0.1 for removal).

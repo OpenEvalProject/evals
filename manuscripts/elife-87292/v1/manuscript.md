@@ -21,12 +21,12 @@
 
 ### Affiliations
 
-1. https://ror.org/00thqtb16 Eppley Institute for Research in Cancer and Allied Diseases, University of Nebraska Medical Center Omaha United States
-2. https://ror.org/0457zbj98 Department of Oncology Science, University of Oklahoma Health Sciences Center Oklahoma City United States
-3. https://ror.org/036jqmy94 Department of Biochemistry and Molecular Biology, University of Iowa Iowa City United States
-4. https://ror.org/002pd6e78 Center for Regenerative Medicine, Massachusetts General Hospital Boston United States
-5. https://ror.org/04kj1hn59 Harvard Stem Cell Institute Cambridge United States
-6. https://ror.org/02bmcqd02 OU Health Stephenson Cancer Center, University of Oklahoma Health Sciences Center Oklahoma City United States
+1. Eppley Institute for Research in Cancer and Allied Diseases, University of Nebraska Medical Center Omaha United States ([ROR:00thqtb16](https://ror.org/00thqtb16))
+2. Department of Oncology Science, University of Oklahoma Health Sciences Center Oklahoma City United States ([ROR:0457zbj98](https://ror.org/0457zbj98))
+3. Department of Biochemistry and Molecular Biology, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
+4. Center for Regenerative Medicine, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+5. Harvard Stem Cell Institute Cambridge United States ([ROR:04kj1hn59](https://ror.org/04kj1hn59))
+6. OU Health Stephenson Cancer Center, University of Oklahoma Health Sciences Center Oklahoma City United States ([ROR:02bmcqd02](https://ror.org/02bmcqd02))
 
 † Corresponding author
 
@@ -46,17 +46,33 @@ While previous reports have shown that pyrimidine nucleotide depletion triggers 
 
 ## Results
 
-## Brequinar induces upregulation of MHC-I and APP genes
+### Brequinar induces upregulation of MHC-I and APP genes
 
 We examined gene expression changes following transient or prolonged DHODH inhibition by culturing human pancreatic ductal adenocarcinoma cell lines S2-013 and CFPAC-1 in the presence of brequinar (BQ) at two different doses for 16 hr and for a 2-week duration (Figure 1A). Gene set enrichment analysis (GSEA) using Hallmark and KEGG gene sets from MSigDB (Liberzon et al., 2011; Subramanian et al., 2005) revealed 17 gene sets that were significantly upregulated (FDR q < 0.25) across both cell lines following 2-week BQ exposure (Figure 1B). Twelve of these gene sets (highlighted in purple) are ontologically related to antigen presentation and contain MHC class I, MHC class II, and/or APP genes such as TAP1 in the leading edge. Certain gene sets, such as allograft rejection (KEGG), graft versus host disease (KEGG), and antigen processing and presentation (KEGG), are composed almost entirely of APP genes (Figure 1C). Heatmap analysis showed that APP genes were robustly upregulated in a dose- and duration-dependent manner in CFPAC-1 (Figure 1D) and S2-013 (Figure 1—figure supplement 1A) cells. The effect size was generally smaller for S2-013 cells, likely because they are resistant to DHODH inhibition due to efficient nucleoside salvage, as we previously reported (Mullen et al., 2023). Publicly available RNA-seq data from human A375 melanoma cells treated with the clinically approved DHODH inhibitor teriflunomide (Tan et al., 2016) corroborated our findings, as teriflunomide caused a rapid (within 12 hr) and duration-dependent increase in MHC-I/II and APP transcript levels (Figure 1E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/87292/elife-87292-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of RNA sequencing experiment for panels (B–D), with de novo pyrimidine pathway shown to highlight the role of DHODH. (B) Normalized enrichment scores for gene sets commonly enriched (FDR q < 0.25) in S2-013 and CFPAC-1 cells following 2-week BQ treatment (250 nM for CFPAC-1; 500 nM for S2-013), as assessed by gene set enrichment analysis (GSEA). (C) GSEA plots for indicated gene sets following 2-week BQ treatment of CFPAC-1 (left) or S2-013 (right) cells at the indicated doses. (D) Heatmap showing log2 fold change mRNA expression measured by RNA sequencing of APP genes in CFPAC-1 cells treated with BQ for indicated dose and duration. (E) Heatmap showing log2 fold change mRNA expression measured by RNA sequencing for APP genes in A375 melanoma cells treated with the DHODH inhibitor teriflunomide (25 µM) for indicated durations, data extracted from Tan et al., 2016. (F) RT-qPCR quantification of HLA-A, HLA-B, and HLA-C mRNA levels in cancer cell lines after 24 hr BQ treatment. Numbers represent fold change relative to vehicle control for each cell line. Data are representative of at least three independent experiments. HLA-B was not detectable in MiaPaCa2 cells. (G, H) Flow cytometry analysis of cell surface MHC-I in live CFPAC-1 (G) or B16F10 (H) cells following 10-day treatment with BQ (250 nM for CFPAC-1 and 10 µM for B16F10). (I, J) Liquid chromatography-tandem mass spectrometry metabolomics quantification of de novo pyrimidine pathway metabolites in CFPAC-1 (I) or B16F10 (J) cells following 8 hr BQ treatment at indicated doses. Data represent mean ± SD of four (CFPAC-1) or six (B16F10) biological replicates. ***p<0.001 by one-way ANOVA with Dunnett’s multiple-comparison test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87292/elife-87292-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Heatmap showing log2 fold change mRNA expression measured by RNA sequencing of APP genes in S2-013 cells treated with BQ for indicated dose and duration. (B, C) RT-qPCR quantification of mRNA levels for indicated APP genes after 2-week BQ treatment of CFPAC-1 (250 nM) (B) or B16F10 (10 µM) (C) cells. **p<0.01, ***p<0.001 by unpaired t-test with Holm–Sidak correction for multiple comparisons. (D, E) LC-MS/MS quantification of indicated pyrimidine metabolites in CFPAC-1 (C) or B16F10 (D) cells treated with BQ for 8 hr at indicated doses. Data represent mean ± SD of four (CFPAC-1) or six (B16F10) biological replicates. **p<0.01, ***p<0.001 by one-way ANOVA with Dunnett’s multiple-comparison test.
 
 We validated these gene expression changes in CFPAC-1 cells by RT-qPCR (Figure 1—figure supplement 1B) and then performed RT-qPCR to assess the mRNA levels of genes coding for MHC-I across a panel of human cancer cell lines treated with BQ for 24 hr (Figure 1F). This confirmed that MHC-I heavy chain transcripts (HLA-A, HLA-B, and HLA-C) are consistently upregulated in response to BQ across diverse cancer types (Figure 1F). To optimize conditions for in vivo studies, we tested the long-term response and observed that 2-week BQ treatment of B16F10 murine melanoma cells also caused dramatic APP gene upregulation (Figure 1—figure supplement 1C). Flow cytometry confirmed a marked increase in cell surface MHC-I levels in nonpermeabilized live CFPAC-1 (Figure 1G) and B16F10 (Figure 1H) cells following a 2-week BQ treatment, confirming that transcriptional upregulation of APP genes results in greater cell surface antigen presentation.
 
 In parallel, we confirmed pyrimidine nucleotide depletion upon treatment with BQ at different doses by performing metabolomics analysis of CFPAC-1 and B16F10 cells following BQ treatment. The results demonstrated a rapid (8 hr treatment) and dose-dependent accumulation of dihydroorotate and N-carbamoyl-aspartate (upstream of DHODH) as well as depletion of pyrimidine nucleotides UTP and CTP (Figure 1I and J) and other pyrimidine species (Figure 1—figure supplement 1D and E). These results confirm that on-target DHODH inhibition and resultant pyrimidine nucleotide depletion correlates with the transcriptional induction of APP genes and enhanced antigen presentation via MHC-I.
 
-## BQ-mediated APP induction depends on pyrimidine nucleotide depletion
+### BQ-mediated APP induction depends on pyrimidine nucleotide depletion
 
 To confirm that BQ- or teriflunomide-mediated APP induction was specifically caused by DHODH inhibition (i.e., on-target effect), we asked whether the effect could be reversed by restoring pyrimidine nucleotides in B16F10 mouse melanoma cells. As we previously observed (Mullen et al., 2023), media supplementation with uridine rescued cell viability (Figure 2A) and pyrimidine levels (Figure 2B) following BQ treatment and partially rescued viability following teriflunomide treatment (Figure 2—figure supplement 1A). Uridine supplementation likewise blocked mRNA induction of mouse MHC-I transcripts (H2-Db, H2-Kb, and B2m), as well as Nlrc5 (a major MHC-I transcriptional coactivator) and Tap1 (required for peptide import into the ER, a key step in MHC-I antigen presentation) by BQ (Figure 2C) or teriflunomide (Figure 2—figure supplement 1B), while uridine alone had no effect (Figure 2—figure supplement 1C). This same phenotype was observed in HCT116 human colorectal cancer cells (Figure 2—figure supplement 1D). Concordantly, cell surface MHC-I upregulation by BQ or teriflunomide (24 hr treatment) was abrogated by uridine supplementation (Figure 2D), while uridine alone again had no effect (Figure 2—figure supplement 1E). These results demonstrate that DHODH inhibitor-mediated APP induction is caused by pyrimidine nucleotide depletion.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87292/elife-87292-fig2-v1.jpg)
+
+**Figure 2.:** (A) Dose–response cell viability experiment in B16F10 cells treated with BQ ± uridine (100 µM) for 72 hr. Data represent mean ± SEM of three biological replicates. One representative result of three independent experiments is shown. (B) Quantification of pyrimidine metabolites following 24 hr treatment of B16F10 cells with vehicle, BQ (10 µM), or BQ + uridine (1 mM). Data represent mean ± SD of six biological replicates. ***p<0.001 by one-way ANOVA with Tukey’s multiple-comparison test. (C) RT-qPCR quantification of mRNA levels for indicated APP genes in B16F10 cells following 24 hr treatment with BQ (10 µM) ± uridine (1 mM). Data represent mean ± SD of three technical replicates. One representative result of three independent experiments is shown. **p<0.01, ***p<0.001, and ‘ns’ p>0.05 by one-way ANOVA with Tukey’s multiple-comparison test. (D) Left: flow cytometry analysis of cell surface MHC-I (H2-Db) on live B16F10 cells following 24 hr treatment with indicated agents (BQ 10 µM, teriflunomide 100 µM, uridine 1 mM). Right: quantification of H2-Db mean fluorescence intensity normalized to vehicle control. Data represent mean ± SD of three independent experiments. ***p<0.001 and ‘ns’ p>0.05 by one-way ANOVA with Tukey’s multiple-comparison test. (E) RT-qPCR quantification of mRNA levels for indicated APP genes in S2-013 cells with DHODH knockout (sgDHODH) or non-targeting control vector (sgNT) treated with indicated agents for 72 hr. Data represent mean ± SD of four determinations. One representative result of three independent experiments is shown. **p<0.01, ***p<0.001, and ‘ns’ p>0.05 by one-way ANOVA with Tukey’s multiple-comparison test. (F) RT-qPCR quantification of mRNA levels for indicated APP genes in CFPAC-1 cells following 72 hr treatment with indicated agents. Numbers in the heatmap represent mean fold change versus vehicle control with four determinations.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87292/elife-87292-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Dose–response cell viability experiment as in Figure 2A but with teriflunomide (Ter) instead of brequinar (BQ). (B) RT-qPCR analysis of indicated genes following treatment with teriflunomide (100 µM) ± uridine (1 mM) for 24 hr. Data represent mean ± SEM of three or four determinations. One representative result of three independent experiments is shown. *p<0.05, **p<0.01, and ***p<0.001 by one-way ANOVA with Tukey’s multiple-comparison test. (C) RT-qPCR analysis of indicated genes after treatment with vehicle or uridine (1 mM) for 24 hr. Data represent mean ± SD of four determinations. One representative result of three independent experiments is shown. The ‘ns’ label indicates p>0.05 by unpaired t-test with Holm–Sidak correction for multiple comparisons. (D) RT-qPCR analysis of indicated genes following treatment with BQ (10 µM) ± uridine (1 mM) for 24 hr. Data represent mean ± SD of three independent experiments. *p<0.05, **p<0.01, and ***p<0.001, and ‘ns’ indicates p>0.05 by one-way ANOVA with Tukey’s multiple-comparison test. (E) Flow cytometry analysis of cell surface MHC-I (H2-Db) following 24 hr uridine (1 mM) treatment. Data represent mean ± SD of three independent experiments. The ‘ns’ label indicates p>0.05 by one-way ANOVA with Tukey’s multiple-comparison test. The vehicle control in (E) is the same as shown in Figure 2D, as all six conditions were tested in parallel. (F) RT-qPCR quantification of mRNA levels for indicated APP genes in B16F10 cells following 24 hr treatment with MPA (5 µM) or vehicle control. Data represent mean ± SD of four determinations. One representative result of three independent experiments is shown. * p<0.05 and ***p<0.001 by unpaired t-test with Holm–Sidak correction for multiple comparisons.
 
 To further validate this finding, we assessed MHC-I heavy chain mRNA levels in S2-013 cells with DHODH deletion (sgDHODH). We have previously demonstrated that these cells require exogenous uridine for viability and experience profound pyrimidine depletion (>95% depletion of UTP and CTP) after 8 hr incubation in nucleoside-free media (Mullen et al., 2023). After growing these cells with supplemented uridine (1 mM), we withdrew exogenous nucleosides by changing to new media containing 10% dialyzed fetal bovine serum (FBS). After 72 hr exposure to nucleoside-free media, sgDHODH cells upregulated HLA-A, HLA-B, and HLA-C, and this was reversed by adding back uridine (Figure 2E). Importantly, treatment with BQ did not further increase MHC-I mRNA expression (Figure 2E, compare blue and red bars). Together with our other data, these results indicate that BQ-mediated APP induction is an on-target phenomenon with respect to DHODH inhibition.
 
@@ -64,19 +80,35 @@ Since uridine addback rescued BQ- and teriflunomide-mediated loss of viability (
 
 The other drugs screened included nucleotide synthesis inhibitors (5-fluorouracil, methotrexate, gemcitabine, and hydroxyurea), DNA damage inducers (oxaliplatin, irinotecan, and cytarabine), a microtubule targeting drug (paclitaxel), a DNA methylation inhibitor (azacytidine), and other small molecule inhibitors (Figure 2F). While we cannot rule out the possibility that these agents induce APP transcription in other cell lines or under other dose/duration conditions, the inertness of these compounds (with respect to APP gene expression) in our screen suggests that BQ-mediated APP induction in CFPAC-1 cells is not a general phenomenon that occurs downstream of DNA damage or some other response to therapy-induced stress.
 
-## BQ-mediated APP induction does not depend on canonical APP transcriptional regulators
+### BQ-mediated APP induction does not depend on canonical APP transcriptional regulators
 
 To elucidate the molecular pathway leading to APP induction downstream of pyrimidine depletion, we extended our findings to HEK-293T cells, which also display rapid (within 4 hr) transcriptional induction of MHC-I upon BQ treatment (Figure 3—figure supplement 1A). Reasoning that the mechanism of this phenomenon in HEK-293T cells is less likely to involve idiosyncratic genetic aberrations than in cancer cell lines, we chose to conduct our initial mechanistic studies in this system and then extend our findings to cancer cell lines if possible.
 
 We used a candidate-based chemical biology screening approach to ask if drugs targeting suspected pathways might block BQ-mediated APP induction in HEK-293T cells. We first interrogated pathways that are known to control MHC/APP expression, including IFN-JAK-STAT (Zhou, 2009), NF-κB (Gu et al., 2021; Dejardin et al., 1998), and cGAS-STING-TBK1 (Li et al., 2019b). Neither ruxolitinib (a JAK1/2 inhibitor with activity against STAT3) nor GSK8612 (a TBK1 inhibitor) (Thomson et al., 2019), nor TPCA-1 (an IKK2 inhibitor) (Podolin et al., 2005) abrogated BQ-mediated APP induction (Figure 3A), despite blocking APP induction downstream of poly(dA:dT) and interferon gamma (Figure 3—figure supplement 1B) as expected. This indicates that these canonical regulators of MHC/APP expression are dispensable for APP induction downstream of DHODH inhibition.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87292/elife-87292-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) HEK-293T cells were treated with indicated agents for 24 hr and then subjected to RT-qPCR quantification of mRNA levels for indicated APP genes. Numbers in the heatmap represent mean of four determinations. (C–E, G) B16F10 (C), CFPAC-1 (D), HCT116 (E), or MiaPaCa2-IKK2-KO (G) cells were treated with indicated agents for 24 hr and subjected to RT-qPCR analysis of indicated genes. Data in (D, E, G) represent mean ± SD of three independent experiments. *p<0.05, **p<0.01, and ***p<0.001 by one-way ANOVA with Tukey’s multiple-comparison test. For (C), numbers in the heatmap represent mean fold change versus vehicle with three determinations; representative results for three independent experiments are shown. (F) Flow cytometry analysis of cell surface MHC-I in live HCT116 cells treated with indicated agents for 24 hr.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87292/elife-87292-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) RT-qPCR quantification of mRNA levels for indicated APP genes in HEK-293T cells treated for indicated times with brequinar (BQ) (10 µM). Data represent mean ± SD of four determinations. (B) RT-qPCR analysis for Nlrc5 (left) or Tap1 (right) in B16F10 cells treated for 24 hr with indicated agents. Data represent mean ± SD of four determinations. ***p<0.001 by one-way ANOVA with Tukey’s multiple-comparison test. Representative results for one of three independent experiments are shown. (C) Heatmap showing fold change in mRNA expression (normalized to wild-type vehicle control) of indicated genes by RT-qPCR analysis in wild-type or IKK2-KO MiaPaCa2 cells treated with indicated agents for 24 hr. Numbers in the heatmap represent mean of four determinations.
+
 Interestingly, the IKK2 inhibitor BMS-345541 (Burke et al., 2003) mostly abrogated BQ-mediated APP induction (Figure 3A). BMS-345541 effectively blocked BQ- and Ter-mediated APP induction at concentrations of 10 µM and 40 µM, but not 2.5 µM (Figure 3B). The effect of BMS-345541 was confirmed in B16F10 (Figure 3C), CFPAC-1 (Figure 3D), and HCT116 (Figure 3E) cells. Furthermore, BQ treatment (24 hr) of HCT116 cells caused increased cell surface expression of MHC-I, which could be reversed by either uridine supplementation or by treatment with BMS-345541; neither uridine nor BMS-345541 alone affected cell surface MHC-I expression (Figure 3F).
 
 Given that TPCA-1 (an established IKK2 inhibitor; Podolin et al., 2005) did not block BQ-mediated APP induction (Figure 3A and C), we suspected that this effect of BMS-345541 was independent of IKK2. To test this, we used previously reported MiaPaCa2 cells with CRISPR-Cas9 deletion of IKK2 (MiaPaCa2-IKK2-KO) (Napoleon et al., 2022). Increased APP mRNA expression was observed upon BQ, teriflunomide, or GSK983 treatment (all DHODH inhibitors) of either wild-type or IKK2-KO MiaPaCa2 cells (Figure 3—figure supplement 1C). However, while TNF-alpha stimulation induced APP and CCL5 a canonical NF-κB target gene downstream of TNF-alpha (Yeo et al., 2020) expression in wild-type cells, this was not observed in IKK2-KO cells, as expected (Figure 3—figure supplement 1C, far right). Finally, BQ-mediated APP induction in IKK2-KO cells was significantly reversed with concurrent BMS-345541 treatment (Figure 3G). Together, these results demonstrate that IKK2 is dispensable for BQ-mediated APP induction and that the observed reversal effect of BMS-345541 is independent of IKK2.
 
-## Nucleotide starvation induces APP transcription in a P-TEFb-dependent manner
+### Nucleotide starvation induces APP transcription in a P-TEFb-dependent manner
 
 To further investigate the mechanism by which BMS-345541 blocks APP induction downstream of pyrimidine starvation, we leveraged publicly available data on the target profile of BMS-345541 and other agents tested in the cell-free KINOMEscan assay (Davis et al., 2011). BMS-345541 reproducibly bound more than 20 kinases, with dissociation constants (kd) ranging from 130 to 8100 nM (Figure 4A). We prioritized potential targets with a kd in the low micromolar range, given that 2.5 µM BMS-345541 did not block BQ-mediated APP induction in our previous experiments, and the effect seemed to be maximal at 10 µM, with no significant increase in the magnitude of the effect between 10 µM and 40 µM (Figure 3B). Additionally, we prioritized targets that were >50% inhibited with 10 µM BMS-345541 treatment. These two conditions correspond to the upper left quadrant of Figure 4A.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87292/elife-87292-fig4-v1.jpg)
+
+**Figure 4.:** (A) Plot of percent inhibition (10 µM treatment) vs. -log(dissociation constant) for kinases bound by BMS-345541 in cell-free KINOMEscan assays; data derived from Davis et al., 2011. Each data point represents an individual kinase. (B, C) RT-qPCR quantification of mRNA levels for indicated APP genes in HEK-293T cells treated with indicated agents for 24 hr. Data represent mean ± SD of three independent experiments. **p<0.01, ***p<0.001 and ‘ns’ p>0.05 by one-way ANOVA with Tukey’s multiple-comparison test (C). ( D) Western blot analysis for CDK9 performed on HEK-293T cells treated with CDK9-targeted PROTAC (PROTAC2) and/or pomalidomide (POM) for 24 hr. Beta actin was used as a loading control. (E) RT-qPCR quantification of mRNA levels for indicated APP genes after 24 hr treatment with indicated agents. Data represent mean ± SD of three independent experiments. *p<0.05, **p<0.01, and ***p<0.001 by one-way ANOVA Tukey’s multiple-comparison test. (F) Western blot analysis for CDK9 performed on HCT116 cells treated with the indicated concentrations of PROTAC2 for 24 hr. Heat shock protein 70 (HSP70) was used as a loading control. (G) Linear regression analysis of fold change (teriflunomide/DMSO) in Pol II occupancy (assessed by ChIP-seq) vs. fold change (teriflunomide/DMSO) in mRNA abundance (assessed by RNAseq) following 48 hr treatment of A375 cells with teriflunomide (25 µM) or DMSO vehicle control; data derived from Tan et al., 2016.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87292/elife-87292-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) RT-qPCR quantification of mRNA levels for indicated APP genes in HCT116 cells treated with indicated agents in the presence or absence of flavopiridol (1 µM). Numbers in the heatmap represent mean of three determinations.
 
 One potential target that met the selection criteria was CDK9, which together with cyclin T1 or T2 forms positive transcription elongation factor B (P-TEFb). P-TEFb is required for the release of promoter-proximal paused RNA polymerase II (Pol II) into productive elongation and therefore is essential for Pol II transcription from paused promoters (Price, 2000; Ni et al., 2008). The potent P-TEFb inhibitor flavopiridol (Chao et al., 2000) phenocopied BMS-345541 in our assays as it blocked APP induction downstream of DHODH, IMPDH1/2 (by mycophenolate), or CTP synthase (by 3-deazauridine McPartland et al., 1974) inhibition (Figure 4—figure supplement 1A). This suggests that APP induction downstream of nucleotide starvation requires P-TEFb-mediated paused Pol II release. It also suggests that the BMS-345541 effect of reversing BQ-induced APP upregulation is due to P-TEFb inhibition.
 
@@ -86,11 +118,19 @@ To further probe whether the observed effect of flavopiridol was due to CDK9 inh
 
 The dependence of BQ-mediated APP induction on CDK9 strongly suggests that nucleotide starvation enforces nascent transcription of APP genes, as opposed to increased mRNA stability. This is further supported by the rapid buildup of APP transcripts following DHODH inhibitor treatment (within 4 hr, Figure 3—figure supplement 1A). Additionally, ChIP-seq analysis of global Pol II occupancy following 48 hr teriflunomide treatment in A375 cells (Tan et al., 2016) shows increased Pol II occupancy across many APP genes, and fold change in Pol II occupancy significantly correlated with fold change in mRNA expression under the same conditions (Figure 4G). Overall, these results show that nucleotide starvation induces an antigen presentation gene expression program that is independent of canonical APP regulators but depends on CDK9/P-TEFb.
 
-## BQ suppresses tumor growth, induces MHC-I expression, and increases immunotherapy efficacy in a syngeneic melanoma model
+### BQ suppresses tumor growth, induces MHC-I expression, and increases immunotherapy efficacy in a syngeneic melanoma model
 
 Enforced MHC-I upregulation by various interventions can facilitate anticancer immunity and enhance the efficacy of ICB by antibodies directed at PD-(L)1 and/or CTLA-4 (Yamamoto et al., 2020; Goel et al., 2017; Kalbasi et al., 2020; Gu et al., 2021). Moreover, high MHC-I expression has been proposed as a predictor of ICB response (Rodig et al., 2018; Liu et al., 2019; Grasso et al., 2020; Shklovskaya et al., 2020), and high expression of MHC-I and other APP genes, including NLRC5 and TAP1, correlates with better survival in patients with melanoma (Figure 5—figure supplement 1A), for whom ICB is a first-line therapy. Therefore, we asked if BQ could improve anticancer immunity in the B16F10 melanoma immunocompetent mouse model, which is typically refractory to dual ICB (i.e., anti-PD-1 plus anti-CTLA-4) (Twyman-Saint Victor et al., 2015).
 
 BQ (10 mg/kg daily IP injection) markedly suppressed tumor growth and led to reduced tumor burden (Figure 5A and B). Historically, the lead tool compound that was ultimately modified to BQ (called NSC 339768) was prioritized in part based on its activity against B16 melanoma Dibner et al., 1985; however, to our knowledge, this is the first direct demonstration of BQ activity in this model system. Consistent with our in vitro metabolomics data (Figure 1I and J, Figure 1—figure supplement 1D and E), BQ treatment caused marked buildup of metabolites upstream of DHODH and depletion of downstream pyrimidine nucleotide species in B16F10 tumors (Figure 5C), confirming target engagement in vivo. Metabolomics analysis of BQ- and vehicle-treated tumors separated in principal component analysis (Figure 5—figure supplement 1B) and unsupervised hierarchical clustering (Figure 5—figure supplement 1C), confirming the perturbation of tumor metabolism following DHODH inhibition.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87292/elife-87292-fig5-v1.jpg)
+
+**Figure 5.:** (A–D) B16F10 cells were injected subcutaneously into syngeneic C57Bl/6J hosts. Tumor-bearing mice were treated with BQ (10 mg/kg, administered intraperitoneally daily) or vehicle control starting at day 7 post implantation. (A) Longitudinal estimation of tumor volume using digital caliper measurement of B16F10 subcutaneous tumors in BQ-treated and vehicle-treated tumor-bearing mice. Data represent mean ± SD of n = 5 mice per group. *p<0.05, **p<0.01, ***p<0.001 by unpaired t-tests with Benjamini and Hochberg FDR correction. (B) Weight (left) and volume (right) of tumors at necropsy. Data represent mean ± SD of n = 5 mice per group. *p<0.05 by unpaired t-test. (C) Quantification of indicated metabolites from B16F10 tumors harvested at necropsy. Data represent mean ± SD of n = 5 mice in control group and n = 4 for BQ group; one sample was excluded due to sample attrition during processing, leading to insufficient metabolite recovery. *p<0.05, **p<0.01, ***p<0.001 by unpaired t-test. (D) RT-qPCR quantification of mRNA expression for indicated APP genes performed on tumors harvested at necropsy. Data represent mean ± SD of n = 5 mice per group. * p<0.05 and **p<0.01 by unpaired t-test. (E) Kaplan–Meier survival analysis for mice implanted with B16F10 tumors as in (A–D) and treated with indicated regimens; see Figure 5—figure supplement 1D for treatment timeline. *p<0.05, ***p<0.001 by Mantel–Cox logrank test. Sample size (n): vehicle (black), n = 15; immune checkpoint blockade (ICB; Anti-CTLA-4 and anti-PD-1; 100 µg/mouse each, IP twice per week) (red), n = 15; BQ + concurrent ICB (green), n = 14; BQ monotherapy (blue), n = 7; BQ + delayed ICB (brown), n = 8.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87292/elife-87292-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Kaplan–Meier overall survival analysis of melanoma patients (SKCM) from the Cancer Genome Atlas (TCGA) with above median (indicated in red) and below median (indicated in blue) tumor mRNA expression of indicated genes. Logrank test p values are shown for each gene. (B, C) Principal component analysis (PCA) plot (B) and unsupervised hierarchical clustering (C) from metabolomics analysis of B16F10 tumors at necropsy (Figure 5C). (D) Treatment regimen of mice for experiment shown in Figure 5E.
 
 BQ-treated B16F10 tumors showed increased mRNA expression of MHC-I (H2-Db and H2-Kb) and Nlrc5 (Figure 5D). We thus addressed whether BQ could augment the efficacy of dual ICB (anti-CTLA-4 plus anti-PD-1) with the knowledge that enforced MHC-I antigen presentation has also been shown to boost the effect of ICB (Yamamoto et al., 2020; Kalbasi et al., 2020; Gu et al., 2021). While BQ is not an approved medication, two FDA-approved low-potency DHODH inhibitors (leflunomide, teriflunomide) are effective in treating autoimmune conditions such as rheumatoid arthritis and multiple sclerosis and act to decrease the activity of auto-reactive T-lymphocytes (Klotz et al., 2019; Fox et al., 1999; Miller, 2021). It was possible that BQ treatment may actually impair the effectiveness of ICB by inhibiting T-lymphocytes despite augmented cancer cell antigen presentation. We, therefore, tested both concurrent, upfront administration of BQ plus dual ICB and sequential administration of BQ followed by dual ICB (Figure 5—figure supplement 1D).
 
@@ -114,25 +154,210 @@ Overall, our study establishes P-TEFb and Pol II elongation control as a mechani
 
 ## Materials and methods
 
-## Cell culture and cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>JAX</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td>Mouse strain used for tumor implantation experiments</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A375</td>
+      <td>ATCC</td>
+      <td>CRL-1619</td>
+      <td>Source: malignant melanoma, 54-year-old female</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>CCL-185</td>
+      <td>Source: lung carcinoma, 58-year-old male</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>CFPAC-1</td>
+      <td>ATCC</td>
+      <td>CRL-1918</td>
+      <td>Source: pancreas adenocarcinoma, 26-year-old male</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HCT116</td>
+      <td>ATCC</td>
+      <td>CCL-247</td>
+      <td>Source: colorectal carcinoma, adult male (age unspecified)</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK-293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td>Source: kidney, female embryo</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MDA-MB-231</td>
+      <td>ATCC</td>
+      <td>HTB-26</td>
+      <td>Source: breast adenocarcinoma, 51-year-old female</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Panc1</td>
+      <td>ATCC</td>
+      <td>CRL-1469</td>
+      <td>Source: pancreas adenocarcinoma, 56-year-old male</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MiaPaCa2 (wild-type parental cell line for MiaPaCa2-IKK2-KO)</td>
+      <td>Gift from Amar Natarajan laboratory; Napoleon et al., 2022, originally from ATCC</td>
+      <td>CRL-1420</td>
+      <td>Source: pancreas adenocarcinoma, 65-year-old male</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MiaPaCa2-IKK2-KO</td>
+      <td>Gift from Amar Natarajan laboratory; Napoleon et al., 2022</td>
+      <td></td>
+      <td>Please see Napoleon et al., 2022 for information on how the cell line was generated</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>S2-013</td>
+      <td>Tony Hollingsworth laboratory; Mullen et al., 2023</td>
+      <td>RRID:CVCL_B280</td>
+      <td>Source: liver metastasis from pancreas carcinoma, 73-year-old male</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>S2-013 sgNT</td>
+      <td>Mullen et al., 2023</td>
+      <td></td>
+      <td>S2-013 stably transduced with non-targeting sgRNA vector and Cas9</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>S2-013 sgDHODH</td>
+      <td>Mullen et al., 2023</td>
+      <td></td>
+      <td>S2-013 stably transduced with DHODH-targeting sgRNA vector and Cas9</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>B16F10</td>
+      <td>ATCC</td>
+      <td>CRL-6475</td>
+      <td>Source: malignant melanoma, male C57BL/6 mouse</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSP70(host: rabbit polyclonal)</td>
+      <td>CST</td>
+      <td>Ca# 4872</td>
+      <td>Dilution factor 1:1000 for western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CDK9(host: rabbitmonoclonal)</td>
+      <td>CST</td>
+      <td>Cat# 2316Clone: C12F7</td>
+      <td>Dilution factor 1:1000 for western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ACTB(host: mousemonoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-4778Clone: C4</td>
+      <td>Dilution factor 1:500 for western blot</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H2-Db(host: mousemonoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 111508Clone: HK95</td>
+      <td>Conjugated to phycoerythrin for flow cytometryDilution factor 2 µl in 100 µl final volume</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MHC-I(host: mousemonoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 311418Clone: W6/32</td>
+      <td>Conjugated to Pacific Blue fluorescent marker for flow cytometryDilution factor 2 µl in 100 µl final volume</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MHC-I(host: mousemonoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 311406</td>
+      <td>Conjugated to phycoerythrin for flow cytometryDilution factor 2 µl in 100 µl final volume</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Please see Supplementary file 1 for complete list of all biologically active chemical compounds used in this study</td>
+      <td>Please see Supplementary file 1 for complete list of all biologically active chemical compounds used in this study</td>
+      <td>Please see Supplementary file 1 for complete list of all biologically active chemical compounds used in this study</td>
+      <td>Please see Supplementary file 1 for complete list of all biologically active chemical compounds used in this study</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>Please see Supplementary file 2 for complete list of all genes mentioned in this study</td>
+      <td>Please see Supplementary file 2 for complete list of all genes mentioned in this study</td>
+      <td>Please see Supplementary file 2 for complete list of all genes mentioned in this study</td>
+      <td>Please see Supplementary file 2 for complete list of all genes mentioned in this study</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Please see Supplementary file 2 for complete list of all genes mentioned in this study</td>
+      <td></td>
+      <td>Please see Supplementary file 2 for complete list of all genes mentioned in this study</td>
+      <td>Please see Supplementary file 2 for complete list of all genes mentioned in this study</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent: RT-qPCR primer sets(H. sapiens)</td>
+      <td>Please see Supplementary file 2 for complete list of all primer sets used in this study</td>
+      <td>Please see Supplementary file 2 for complete list of all genes mentioned in this study</td>
+      <td>Please see Supplementary file 2 for complete list of all primer sets used in this study</td>
+      <td>Please see Supplementary file 2 for complete list of all primer sets used in this study</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and cell lines
 
 The S2-013 cell line is a clonal derivative of the Suit2 cell line and was a kind gift from the Tony Hollingsworth laboratory at the University of Nebraska Medical Center. The MiaPaCa2 IKK2-KO and parental wild-type MiaPaCa2 cell lines were a kind gift from the Amar Natarajan laboratory at the University of Nebraska Medical Center. All other cell lines in this study were obtained from American Type Culture Collection (Manassas, VA). All human cell lines were authenticated by STR profiling by the Genetics Core at the University of Arizona. Cells were routinely (at the time of initial revival from liquid nitrogen storage and at least every 6 months) determined to be free of mycoplasma contamination by PCR-based methods. Cells were cultured in Dulbecco’s modified Eagle medium (Sigma-Aldrich, St Louis, MO) supplemented with 50 IU/mL penicillin, 50  μg/mL streptomycin, and incubated at 37°C in a humidified incubator with 5% CO2. Cells were maintained at 10% FBS. Upon reaching 70–80% confluency, cells were passaged by washing with phosphate-buffered saline (PBS) before adding 0.25% trypsin (Caisson Labs, Smithfield, UT) and plating at 25% confluency.
 
-## Drug treatment of cultured cells for RT-qPCR and flow cytometry experiments
+### Drug treatment of cultured cells for RT-qPCR and flow cytometry experiments
 
 Drug treatment dose and duration are indicated for each experiment. A table of manufacturer and catalog number for each agent described can be found in Supplementary file 1. For stimulation with poly(dA:dT), 2 µg of poly(dA:dT) and 2 µL of Lipofectamine2000 (Invitrogen #11668027) were incubated in 400 µL Opti-MEM (Gibco #11058021) for 30 min at room temperature and then added to cells in 2 mL final volume of complete media.
 
-## Cell viability assays
+### Cell viability assays
 
 Cells were seeded in 96-well plates (1000 cells per well in 90 µL media) and allowed to equilibrate overnight. Cells were then treated with indicated compounds (final volume 100 µL) for 72 hr, and viability was assessed by CellTiter-Glo assay (Promega, Madison, WI). Luminescence values for each condition were normalized to the average luminescence of the vehicle-treated control replicates. Experiments were performed at least three times using biological triplicates for each condition. Dose–response curves were fit to a nonlinear regression model using Prism9 software.
 
-## Liquid chromatography–tandem mass spectrometry-based metabolomics analysis
+### Liquid chromatography–tandem mass spectrometry-based metabolomics analysis
 
 For in vitro metabolomics experiments, 5 × 105 cells were seeded in 6-well plates and allowed to equilibrate overnight. At the start of each assay, the cell culture media was changed, and fresh media with desired conditions was added (to eliminate metabolite depletion from overnight equilibration as a confounding variable). Following 8 hr treatment of cancer cell lines with BQ (or in the case of Figure 2B, 24-hr treatment with BQ ± 1 mM uridine), polar metabolites were extracted and quantified as previously described (Olou et al., 2020). For B16F10 tumor metabolomics, subcutaneous tumors were harvested at necropsy and immediately snap frozen in liquid nitrogen and stored at –80°C. Tumors were subsequently ground into fine powder in liquid nitrogen using a mortar and pestle, and metabolites were extracted using the same method as for cultured cells. Peak areas were normalized to the mass of tumor tissue that was input.
 
 Datasets were processed using Skyline (MacCoss Lab Software), and Metaboanalyst5.0 web tool was used to generate principal component analysis and heatmap visualizations of resulting datasets. Relative metabolite abundances were normalized to the average peak area of the experimental control group.
 
-## Mice studies
+### Mice studies
 
 All procedures were approved by the Institutional Animal Care and Use Committee (IACUC) at the University of Nebraska Medical Center (protocol number: 20-112-03-FC). For tumor xenograft studies, 104 B16F10 cells in a 1:1 vol/vol ratio (100 µL final volume) with Matrigel were injected subcutaneously into the right flank of 10-week-old female C57BL/6J mice (Jackson Labs). Tumors of live mice were serially measured in two dimensions using digital calipers, and tumor volume for Figure 5A was calculated as (0.5 L × W2), where L is the longest measurable tumor dimension and W is the longest tumor dimension that is perpendicular to L. For Figure 5B and C, tumors were harvested at necropsy, weighed on an analytical balance (for Figure 5B), and measured in three perpendicular dimensions by calipers to generate volume measurements for Figure 5C, which were calculated as (dimension 1 × dimension 2 × dimension 3).
 
@@ -140,7 +365,7 @@ For survival experiments (Figure 5E), mice were monitored daily for signs of eut
 
 BQ was obtained from Clear Creek Bio and dissolved in 0.9% NaCl. For both endpoint and survival studies, BQ (10 mg/kg) or vehicle solvent (0.9% NaCl) was injected intraperitoneally daily. Anti-CTLA-4 and anti-PD-1 antibodies, as well as their respective isotype controls, were obtained from BioXCell. Antibodies were dosed at 100 µg/mouse IP twice per week. See Figure 5—figure supplement 1D for treatment regimen timeline.
 
-## RNA sequencing and gene set enrichment analysis
+### RNA sequencing and gene set enrichment analysis
 
 For RNA sequencing experiments, S2-013 or CFPAC-1 cells were treated with BQ for the indicated dose and duration (Figure 1 and S1). For 2-week drug treatment experiments, cells were passaged every 3 days and 5 × 105 cells were reseeded in a new 10 cm tissue culture dish. RNA was isolated using RNEasy Mini kit (QIAGEN, Cat# 74104).
 
@@ -148,27 +373,27 @@ Samples were processed by BGI Genomics (San Jose, CA) according to their proprie
 
 Fold change FPKM (BQ/vehicle control) values for all expressed genes were subjected to gene set enrichment analysis (Subramanian et al., 2005) with GSEA prerank using HALLMARK and KEGG genes sets from the Molecular Signatures Database (MSigDB) as previously described (Dasgupta et al., 2020). Gene sets positively enriched with FDR q < 0.25 are shown in Figure 1B.
 
-## Real-time quantitative PCR analysis for mRNA expression
+### Real-time quantitative PCR analysis for mRNA expression
 
 For in vitro RT-qPCR experiments, RNA was harvested using Trizol reagent (Thermo Fisher Scientific, Waltham, MA) according to manufacturer’s instructions. For tumor RT-qPCR, tumors were crushed with mortar and pestle in liquid nitrogen, and Trizol was used to extract RNA from the resulting powder, just as for cultured cells. cDNA synthesis was performed (1 µg RNA input) using Bio-Rad (Hercules, CA) iScript cDNA synthesis kit (Cat# 1708891) according to manufacturer’s instructions. For RT-qPCR reactions, 3 µL of diluted cDNA, 2 µL of primer mix (diluted to a final concentration of 200 nM for forward and reverse primers), and 5 µL SYBR green master mix (Thermo Fisher Cat# A25776) were mixed (10 µL final volume), and reactions were analyzed using Applied Biosystems QuantStudio5 instrument with previously reported thermocycling parameters (Shukla et al., 2015).
 
 18S rRNA was used as a loading control to generate delta Ct values, and each sample was normalized to the experimental control delta Ct values to generate delta delta Ct values, which were converted to fold change by (fold change = 2^-ddCt). For all experiments, ACTB (beta-actin) mRNA expression was quantified and used as an additional loading control, and results were concordant regardless of whether 18S or ACTB was used for normalization. Primer sequences for RT-qPCR reactions are provided in Supplementary file 2.
 
-## Flow cytometry measurement of cell surface MHC-I
+### Flow cytometry measurement of cell surface MHC-I
 
 Cells were treated as described and then detached with Accutase (Sigma Aldrich #A6964), washed twice with PBS, stained with fluorescent dye-conjugated antibodies against H2-Db (BioLegend #111508) or intact MHC-I, a heterodimer consisting of B2M and either HLA-A, HLA-B, or HLA-C (BioLegend #311418, BioLegend #311406) for 30 min at 4°C in PBS (2 µL antibody in final volume of 100 µL), washed once more with PBS, and then resuspended in FACS buffer and subjected to flow cytometry analysis for fluorescence intensity. Aqua live/dead dye (Invitrogen #L34957) or propidium iodide was used to exclude dead cells from the analysis.
 
-## Western blot
+### Western blot
 
 Protein isolation from cultured cells and western blotting procedure were described previously (Olou et al., 2020). CDK9 antibody was obtained from Cell Signaling Technology (#2316, clone C12F7), HSP70 antibody was obtained from Cell Signaling Technology (#4872), and beta-actin antibody was obtained from Santa Cruz Biotechnology (#sc-4778, clone C4). Blots were incubated with primary antibody overnight at 4°C in TBST with 5% milk protein, washed with TBST three times (5 min per wash), incubated with secondary antibody conjugated with horseradish peroxidase for 45 min at room temperature, again washed with TBST three times (5 min per wash), developed with ECL reagent, and visualized by autoradiography using plain film.
 
-## Procurement and analysis of previously published datasets
+### Procurement and analysis of previously published datasets
 
 All datasets reported by Tan and colleagues (Tan et al., 2016) were obtained from Gene Expression Omnibus, accession numbers GSE68053 and GSE68039. Processed RNA sequencing data for human A375 melanoma cells treated with DMSO vehicle control (GSM1661518, GSM1661518), or teriflunomide (25 µM) for 12 hr (GSM1661510, GSM1661511), 24 hr (GSM1661512, GSM1661513), 48 hr (GSM1661514, GSM1661515), or 72 hr (GSM1661516, GSM1661517) was downloaded as an Excel file from GSE68039 (GSE6809_A375.FPKM.xls) and directly analyzed by manual inspection. The two FPKM values for each experimental condition were averaged, and these average values were used to calculate the fold change (teriflunomide/DMSO) values presented in Figures 1E and 4G.
 
 For chromatin immunoprecitation sequencing (ChIP-seq) datasets (used to generate Figure 4G), Fastq files for human A375 melanoma cells treated for 48 hr with DMSO (GSM1661790) or teriflunomide (GSM1661791) were downloaded from GSE68053, trimmed of adapter sequences at the 3′ends with trim_galore v0.6 (https://github.com/FelixKrueger/TrimGalore; Krueger, 2023), and aligned to hg38 using Bowtie (v1.2.3) (Langmead et al., 2009; Langmead and Rone, 2019) with parameters --minins 18 --maxins 1000 --fr --best --allow-contain. Reads overlapping with the longest transcript of each gene (Genecode v32 and https://github.com/GeoffSCollins/PolTools/blob/master/PolTools/static/longest_transcript_with_downstream_start_codon.txt; Collins, 2021) were counted with BEDtools intersect (v2.27.1). Library size correction factors were calculated separately for the ChIP-seq datasets. The correction factor for a given ChIP-seq sample was computed by dividing the number of mapped reads in that sample by the average number of mapped reads across all ChIP samples (DMSO, A771726). After normalization, the total number of read counts (now corrected for total number of mapped reads per sample) aligned to each gene of interest were used to calculate fold change (teriflunomide/DMSO) in Pol II occupancy values presented in Figure 4G.
 
-## Statistical analysis, hypothesis testing, and exclusion of data
+### Statistical analysis, hypothesis testing, and exclusion of data
 
 For comparison of means between exactly two experimental groups, an unpaired t-test was used. For comparison of means between three or more experimental groups, a ANOVA was used. If the one-way ANOVA rejected the null hypothesis of all means being equivalent, a multiple comparison test was used to accept or reject the null hypothesis of equivalent means for each experimentally relevant pair-wise comparison. For each experiment, the chosen multiple comparison test set the family-wise type I error rate (i.e., alpha level) to 0.05 and computed multiplicity-adjusted p values for each pair-wise comparison. The choice of multiple comparison test was based on which pair-wise comparisons were of interest; this was prespecified during the design of each experiment. If each experimental group was to be compared to a single control group (e.g., for Figure 1I and J), Dunnett’s multiple-comparison test was used, with each experimental group compared with the control group but not with the other non-control experimental groups. In all other cases, each experimental group (including the control group) was compared to every other experimental group (e.g., for Figures 2B, C, D, E—4B, C and E) using Tukey’s multiple-comparison test. Data were assumed to follow a Gaussian distribution.
 

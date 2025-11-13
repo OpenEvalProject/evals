@@ -30,9 +30,7 @@ We are sorry for the confusion but all analyses presented in the previous versio
 
 For analysis of the neuron data is should be clear that on what segment the firing rate is measured. If the firing rate is measured on the entire duration of the pressing sequence then it is liable to the same criticism as pointed out above. Namely, measuring the firing rate in longer time windows will have smaller variance.
 
-Firing rate was measured on the entire duration of the sequence for all the analyses presented in the manuscript. It is pointed out that this could lead to changes in variance that could be dependent on the duration of the sequences. To control for this, we also measured firing rate in 200ms bins shifted by 1ms. The results from measuring the firing rate and Fano factor in fixed width bins (Author response image 1) were no different from the measurement on the entire duration of the sequence, hence pointing to the fact that the changes in variance observed were not dependent on sequence duration.10.7554/eLife.09423.021Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.09423.021
-
-DOI: http://dx.doi.org/10.7554/eLife.09423.021
+Firing rate was measured on the entire duration of the sequence for all the analyses presented in the manuscript. It is pointed out that this could lead to changes in variance that could be dependent on the duration of the sequences. To control for this, we also measured firing rate in 200ms bins shifted by 1ms. The results from measuring the firing rate and Fano factor in fixed width bins (Author response image 1) were no different from the measurement on the entire duration of the sequence, hence pointing to the fact that the changes in variance observed were not dependent on sequence duration.10.7554/eLife.09423.021Author response image 1.
 
 Furthermore, there was no correlation between firing rate during sequence
 
@@ -64,15 +62,11 @@ Firing rate was calculated using the time window of each sequence, but as clarif
 
 (3) Provide a correlation analysis done on a per-neuron basis.
 
-Besides the correlations done with the average Fano factor for the neuronal data (Figure 6), we have also calculated the correlations between behavioral variability and neuronal variability on a per-neuron basis (see Author response image 2). Despite the overall comparable results these results should be interpreted with care since skewed distributions of correlation coefficients can lead to biases in statistics (Corey, David M, Dunlap, William P, Burke, Michael J, Journal of General Psychology, Vol 125(3), Jul 1998, 245-262). Therefore we prefer to present the results in the manuscript per animal (and mention just in the text).10.7554/eLife.09423.022Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.09423.022
-
-DOI: http://dx.doi.org/10.7554/eLife.09423.022
+Besides the correlations done with the average Fano factor for the neuronal data (Figure 6), we have also calculated the correlations between behavioral variability and neuronal variability on a per-neuron basis (see Author response image 2). Despite the overall comparable results these results should be interpreted with care since skewed distributions of correlation coefficients can lead to biases in statistics (Corey, David M, Dunlap, William P, Burke, Michael J, Journal of General Psychology, Vol 125(3), Jul 1998, 245-262). Therefore we prefer to present the results in the manuscript per animal (and mention just in the text).10.7554/eLife.09423.022Author response image 2.
 
 (4) Indicate if lever-press related neurons show the same correlation, as well as what happen to other task-unrelated M1/DS neurons.
 
-This is a good point that we should have clarified. Comparable correlations between neuronal variability and behavior variability were observed when dividing the data between task-related and non-task related neurons (Author response image 3). Due to the absence of a specific effect between conditions and groups of neurons, all the analyses used in the manuscript include all neurons recorded, regardless of the firing rate modulations during sequence performance. But we now mention in the manuscript that the results are comparable between task-related and non-task related neurons.10.7554/eLife.09423.023Author response image 3.DOI: http://dx.doi.org/10.7554/eLife.09423.023
-
-DOI: http://dx.doi.org/10.7554/eLife.09423.023
+This is a good point that we should have clarified. Comparable correlations between neuronal variability and behavior variability were observed when dividing the data between task-related and non-task related neurons (Author response image 3). Due to the absence of a specific effect between conditions and groups of neurons, all the analyses used in the manuscript include all neurons recorded, regardless of the firing rate modulations during sequence performance. But we now mention in the manuscript that the results are comparable between task-related and non-task related neurons.10.7554/eLife.09423.023Author response image 3.
 
 3) The number of animals in Figure 7 seems very small, there are no error bars and the effects seem to be governed, in some cases by 1-2 animals. The authors should demonstrate that the main result is not due to these animals only.
 
@@ -90,9 +84,7 @@ A number of other issues were also raised by the reviewers, as outlined below in
 
 We apologize for not having introduced this before but we thought we just had to address the comments in the summary. In order to clarify this point, we present additional analyses on the behavioral data (See Author response image 4 and Figure 1). We have calculated both the probability of a reinforcement preceding a magazine check for individual sessions (see Author response image 4, left plot), and the percentage of magazine checks that follow reinforced lever presses vs. non-reinforced lever presses for all the training data (see Author response image 4, right plot). The probability of a magazine check after a reinforced lever-press was rather low (∼0.25) and did not change from early to late sessions (Post hoc comparison: t144=1.184, p=0.283, Figure 1E, right) and the percentage of magazine checks following reinforced presses was significantly lower than for non-reinforced presses (t19=12.10, p<0.0001, Figure 1E, right).
 
-Both these analysis provide support to the idea that reinforcement delivery does not provide an external cue that could be used by the animals to anticipate a reward.10.7554/eLife.09423.024Author response image 4.DOI: http://dx.doi.org/10.7554/eLife.09423.024
-
-DOI: http://dx.doi.org/10.7554/eLife.09423.024
+Both these analysis provide support to the idea that reinforcement delivery does not provide an external cue that could be used by the animals to anticipate a reward.10.7554/eLife.09423.024Author response image 4.
 
 Furthermore, as requested by the reviewers we further show no correlation between sequence frequency and sequence duration per se (Figure 2–figure supplement 1), and a strong correlation between sequence frequency and sequence length (showing that duration and length are not orthogonal).
 

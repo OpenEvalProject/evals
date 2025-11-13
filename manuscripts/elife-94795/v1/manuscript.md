@@ -12,7 +12,7 @@
 
 ### Affiliations
 
-1. https://ror.org/011dv8m48 Intercollegiate Faculty of Biotechnology of University of Gdańsk and Medical University of Gdańsk, University of Gdańsk Gdańsk Poland
+1. Intercollegiate Faculty of Biotechnology of University of Gdańsk and Medical University of Gdańsk, University of Gdańsk Gdańsk Poland ([ROR:011dv8m48](https://ror.org/011dv8m48))
 
 † Corresponding author
 
@@ -40,9 +40,25 @@ Here, we demonstrate that the interplay between Hsp110 and Hsp70 in disaggregati
 
 ## Results
 
-## Stimulation of the Hsp70 disaggregation activity by Hsp110 depends on the class of JDP
+### Stimulation of the Hsp70 disaggregation activity by Hsp110 depends on the class of JDP
 
 Our recent studies showed that during the recovery of aggregated proteins, the Hsp70 chaperone system exhibits different mechanisms of action with class A and class B JDP co-chaperones (Wyszkowski et al., 2021). To better understand the interplay within the Hsp70 chaperone network, we addressed how Hsp110 affects Hsp70 with members of different JDP classes. First, we tested the effect of Sse1, the most abundant yeast NEF, on the recovery of a model protein substrate, aggregated luciferase, by Hsp70 (Ssa1) and class A (Ydj1) or class B (Sis1) JDPs. Compared with Ssa1-Sis1, which exhibits delayed start of disaggregation characteristic for class B JDPs, the initial luciferase recovery was significantly faster, with higher overall output, in the presence of Sse1 (Figure 1A). In contrast, Sse1 slightly decreased the disaggregation efficacy in the case of Ssa1-Ydj1 (Figure 1A). With another aggregated substrate, GFP, Sse1 improved the disaggregation activity with either of the JDPs, albeit for Ssa1-Sis1, the stimulation was almost four times higher than with Ydj1 (Figure 1—figure supplement 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/94795/elife-94795-fig1-v1.jpg)
+
+**Figure 1.:** (A) Refolding of aggregated luciferase by Ssa1-Sis1 (1 µM Ssa1, 1 µM Sis1)±µM Sse1 (0.1 µM) (left) or Ssa1-Ydj1 (1 µM Ssa1, 1 µM Ydj1)±Sse1 (0.1 µM) (right). Error bars show SD from three independent repeats. Luciferase activity was measured at indicated time points and normalised to the native activity. (B) Sensor-bound luciferase aggregates incubated with Ssa1-Sis1 (1 µM Ssa1, 1 µM Sis1)±Sse1 (0.1 µM) or Ssa1-Ydj1 (1 µM Ssa1, 1 µM Ydj1)±Sse1 (0.1 µM), with or without ATP, as indicated. (C) Binding of Hsc70-DNAJB4 (3 μM Hsc70, 1 μM DNAJB4) or Hsc70-DNAJA2 (3 μM Hsc70, 1 μM DNAJA2) with or without Hsp105 (0.3 μM) to the heat-aggregated luciferase immobilised on the biolayer interferometry (BLI) biosensor. (B, C) The lines represent the average of three replicates, the shades designate SD, and the dashed lines indicate the start of the chaperone binding and dissociation steps.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94795/elife-94795-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Renaturation of heat-aggregated GFP by Ssa1-Sis1±Sse1 or Ssa1-Ydj1±Sse1 (1 µM Ssa1, 1 µM Sis1, 1 µM Ydj1, and 0,1 µM Sse1). (B) Refolding of aggregated luciferase by Ssa1-Sis1±Sse1 (left) or Ssa1-Ydj1±Sse1 (right) in the presence of Hsp104 (1 µM Ssa1, 1 µM Sis1, 1 µM Ydj1, 1 µM Hsp104, and 0.1 µM Sse1). (C) Renaturation of heat-aggregated GFP in the presence of Hsp104 with Ssa1-Sis1±Sse1 or Ssa1-Ydj1±Sse1 Hsp104 (1 µM Ssa1, 1 µM Sis1, 1 µM Ydj1, 1 µM Hsp104, and 0.1 µM Sse1). (D) Spontaneous folding of non-aggregated luciferase diluted from 5 M GuHCl, alone or assisted by the Hsp70 system (1 µM Ssa1, 1 µM Sis1, 1 µM Ydj1, and 0.1 µM Sse1). (E) Sensor covered with GFP aggregates or (F) yeast lysate incubated with Ssa1-Sis1±Sse1 or Ssa1-Ydj1±Sse1 (1 µM Ssa1, 1 µM Sis1, 1 µM Ydj1, and 0.1 µM Sse1). (G) Binding of the indicated combination of chaperones to luciferase aggregates immobilised on the biolayer interferometry (BLI) sensor (1 µM Ssa1, 1 µM Sis1, 1 µM Ydj1, and 0.1 µM Sse1). (H) Recovery of aggregated luciferase performed upon addition of human system comprising Hsc70-DNAJB4±Hsp105 (left) or Hsc70-DNAJA2±Hsp105 (right) (3 µM Hsc70, 1 µM DNAJB4, 1 µM DNAJA2, and 0.3 µM Hsp105). (I) Refolding of aggregated luciferase by Sis1 E50A and Ssa1 ΔEEVD±Sse1. (J) Binding of Sis1 E50A and Ssa1 ΔEEVD±Sse1 to luciferase aggregates immobilised on the BLI sensor (1 µM Ssa1 ΔEEVD, 1 µM Sis1 E50A, and 0.1 µM Sse1). Shades and error bars represent SD from three independent repeats. The BLI experiments show a result representative for at least two independent repeats. Data from all the replicates are available in Figure 1—figure supplement 1—source data 1–10.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/94795/elife-94795-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Upper panel shows the scheme of the biolayer interferometry (BLI) experiment. Sensors covered with luciferase aggregates incubated with Ssa1 labelled with Alexa 488 and Sis1 ±Sse1 or Ydj1±Sse1 (1 µM Ssa1 (A488*), 1 µM Sis1, 1 µM Ydj1, and 0.1 µM Sse1). Right panel shows fluorescence of Ssa1 (A488*) measured after the dissociation step. Two-tailed t-test: ** p<0.01, ns p>0.05 (B) Sensor-bound luciferase aggregates incubated with constant concentration of Sis1 (1 µM) and changing concentration of Ssa1 (1 µM, 5 µM, and 6 µM)±0.1 µM Sse1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/94795/elife-94795-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Refolding of aggregated luciferase by Ssa1-Sis1 with 0.1 µM concentration of Sse1 or increasing concentrations of Fes1 measured after 1 hr. (B) Sensor with immobilized luciferase aggregates incubated with Ssa1-Sis1 in the presence of the indicated concentrations Fes1 in comparison to Ssa1-Sis1 with 0.1 µM Sse1. (C) Sensor covered with luciferase aggregates incubated with Ssa1 labelled with Alexa 488 and Sis1 in the presence of 1 µM Fes1. Right panel shows fluorescence of Ssa1 (A488*) measured after the dissociation step. Binding kinetics together with fluorescence of Ssa1 (A488*) and Sis-Ssa1 (A488*) was adapted from Figure 1G. Error bars show SD from three independent repeats. Biolayer interferometry (BLI) curves show a result representative for at least two independent repeats. Data from all the replicates are available in Figure 1—figure supplement 3—source data 1–3.
 
 Addition of the Hsp104 disaggregase to the system increased the total disaggregation efficacy and enhanced the positive effects of Sse1 in the case of either of JDPs and either of aggregated substrates (Figure 1—figure supplement 1B and C). The chaperone system comprising Hsp104-Ssa1-Sis1 with Sse1 yielded approximately three times higher luciferase and GFP recovery rates than without the NEF, while in the case of Hsp104-Ssa1-Ydj1, the simulation by Sse1 was much weaker, from marginal to twofold, depending on the protein substrate (Figure 1—figure supplement 1B and C). Thus, the positive effect of the Hsp110 NEF on protein recovery from aggregates is substantially more pronounced when the Hsp70 chaperone system comprises a class B JDP.
 
@@ -60,9 +76,17 @@ Since the presence of Sse1 substantially increased the association of Ssa1 with 
 
 To explore whether the observed effects are unique to Hsp110, we examined another cytosolic NEF that belongs to the Armadillo type family, Fes1. It is structurally distinct from Hsp110, with a C-terminal armadillo domain that triggers nucleotide exchange in Hsp70 through a different mechanism (Gowda et al., 2018). Fes1 has weaker affinity for Hsp70 and lower nucleotide exchange activity than Sse1 (Dragovic et al., 2006). Unlike Sse1, Fes1 does not directly bind protein substrates, but its N-terminal RD domain is involved in substrate release from Hsp70 (Gowda et al., 2018). When we carried out luciferase disaggregation by Ssa1-Sis1, the level of stimulation achieved by Sse1 required 10 times more Fes1 (Figure 1—figure supplement 3A). Similarly, 1 µM Fes1 stimulated Ssa1 binding to luciferase aggregates on the BLI sensor to the level achieved with 0.1 µM Sse1 (Figure 1—figure supplement 3B and C, Figure 1—figure supplement 2A). This result suggests that the substrate-binding activity specific to Hsp110 is not necessary to increase the Sis1-Ssa1 binding to aggregates and that the effective NEF concentration is negatively correlated with its affinity for Hsp70.
 
-## Sse1 leads to Hsp70-dependent reduction of aggregate size
+### Sse1 leads to Hsp70-dependent reduction of aggregate size
 
 Recently, we have reported that larger Hsp70-JDP assemblies at the aggregate surface, dependent on Sis1 and its interaction with EEVD, can modify aggregates into misfolded protein species that are more amenable to disaggregation (Wyszkowski et al., 2021). To assess whether Hsp110 further stimulates such aggregate-remodelling activity, and this way contributes to the more efficient protein recovery, we used a variant of Hsp104 with abrogated interaction with Hsp70, D484K F508A (Hsp104mut). Hsp104mut does not require Hsp70 for allosteric activation and aggregate binding and it can serve as an indicator of Hsp70-dependent aggregate modification by facilitating final reactivation of its products (Chamera et al., 2019). When heat-aggregated GFP was initially incubated with Ssa1-Sis1-Sse1, which yielded very low protein recovery, we added Hsp104mut and observed much faster and more effective GFP reactivation than when the substrate was first incubated with Ssa1-Sis1 only (Figure 2A). In an analogous experiment with Ydj1, we also observed stimulation by Sse1, yet not as strong as in the presence of Sis1 (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/94795/elife-94795-fig2-v1.jpg)
+
+**Figure 2.:** (A) Initial incubation of heat-aggregated GFP aggregates with the Hsp70 system, followed by the addition of the Hsp104 D484K F508A variant (0.15 µM). Recovery was initiated by the addition of the mix of indicated chaperones: 1 µM Ssa1, 1 µM Sis1, 1 µM Ydj1, or 0.1 µM Sse1. Dashed lines indicate the beginning of the incubation with the Hsp104 variant. Curves show average values and shades indicate SD from three replicates. (B) Fluorescence microscopy images of luc-GFP monitored upon addition of Ssa1-Sis1±Sse1 or Ssa1-Ydj1±Sse1. Chaperones were used at 1 µM concentration, except for 0.1 µM Sse1. Left panels show controls of the luciferase-GFP aggregates alone and upon the addition of the Hsp70 system without ATP. Quantification of the fraction of aggregates >2 µm is from three independent replicates. Two-tailed t test was performed: *p<0.05, ns: not significant.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94795/elife-94795-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Recovery of FLUC-EGFP aggregates (0.3 µM) by Hsp70 system with indicated combination of Ssa1 (1 µM), Sis1 (1 µM), Ydj1 (1 µM), Hsp104 (1 µM), or Sse1 (0.1 µM). luc-GFP activity was measured after 1 hr incubation and normalised to the native activity. Error bars indicate SD from three repeats. (B) Size distribution measured with dynamic light scattering. Diameter of luciferase aggregates incubated alone or with Ssa1-Sis1±Sse1 or Ssa1-Ydj1±Sse1, as indicated in the figure, with ATP, unless stated otherwise, was measured after 1 hr incubation. Proteins were used at the same concentrations as in A. Additionally, measurements with native luciferase, chaperones, or chaperones with native luciferase were performed (lower panels). Lines are the average of three replicates while the shades indicate standard deviation. Dashed lines designate the size distribution of the luciferase aggregates prior to the addition of chaperones. Upper right panel shows the height of the peak at 40 nm and 2000 nm for Ssa1-Sis1 with or without 0.1 µM Sse1, analysed with the two-tailed t test: *p<0,05, **p<0,01 using the GraphPad Prism software.
 
 Aggregate remodelling by Hsp70-JDP, improved by Hsp110, might induce changes limited to the aggregate surface, such as partial polypeptide disentanglement that uncovers additional chaperone-binding sites, or also lead to global rearrangements, changing aggregate size and total exposed surface area, e.g., through partial aggregate dissolution and fragmentation. To shed light on this, we visualised the aggregates of luciferase C-terminally fused with GFP using fluorescence microscopy. After heat denaturation, approximately 80% of luciferase-GFP aggregates had the size of 2 µm or more (Figure 2B). Incubation with Ssa1-Sis1 for 1 hr decreased the fraction of aggregates larger than 2 µm to 25.8%, whereas the addition of Sse1 reduced it to 12.5% (Figure 2B). At the same time, the activity remained at the level of 1–2% of the native luciferase-GFP and only the presence of Hsp104-Hsp70 led to its substantial recovery (Figure 2—figure supplement 1A). The reduced size of luciferase-GFP aggregates by Hsp70 depended on ATP and the aggregate size was only moderately affected by Ssa1-Ydj1, irrespective of the presence of Sse1 (Figure 2B).
 
@@ -70,9 +94,17 @@ We also measured the size of aggregates using dynamic light scattering (DLS). He
 
 Taken together, Sse1 boosts the aggregate-remodelling activity of Ssa1, specifically with class B JDP Sis1, causing major reduction in aggregate size.
 
-## Hormetic effects of Sse1 in Hsp70 disaggregation activity
+### Hormetic effects of Sse1 in Hsp70 disaggregation activity
 
 Contrary to the strong stimulation by Hsp110 of the Hsp70 system comprising class B JDP, its impact on Hsp70 with class A JDP strongly varied with experimental setup (Figure 1A and B, Figure 1—figure supplement 1A–C). Knowing that the effects of Sse1 on the disaggregation by Ssa1-Ydj1 are concentration-dependent, with stimulation at sub-stoichiometric amount of Sse1 (Dragovic et al., 2006), we asked, to what degree the optimum Hsp110 level depends on the class of a JDP. When we titrated the Hsp70 system comprising either Sis1 or Ydj1, we observed an inhibition of luciferase disaggregation at increased Sse1 concentrations, yet the system with Ydj1 was much more sensitive to Sse1 (IC50=0.1 µM), while Ssa1-Sis1 was still stimulated at 0.3 µM Sse1 (molar ratio Ssa1:Sse1 1:0.3) (Figure 3A). When we included the Hsp104 disaggregase, both Hsp104-Ssa1-Ydj1 and Hsp104-Ssa1-Sis1 systems were stimulated at low and inhibited at high Sse1 levels, with the highest yield at 0.05 µM and 0.2 µM of Sse1, respectively (Figure 3—figure supplement 1A). A similar biphasic effect was observed for human orthologs, with Hsc70-DNAJB4 tolerating higher Hsp105 concentration than Hsc70-DNAJA2 (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/94795/elife-94795-fig3-v1.jpg)
+
+**Figure 3.:** (A) Titration of Sse1 in the refolding of aggregated luciferase by Ssa1-Sis1 (1 µM Ssa1, 1 µM Sis1) (red) or Ssa1-Ydj1 (1 µM Ssa1, 1 µM Ydj1) (blue). Activity of luciferase was measured after 1 hr and normalised to that of the native protein. (B) Incubation of Hsc70-DNAJB4 (3 µM Hsc70, 1 µM DNAJB4) (green) or Hsc70-DNAJA2 (3 µM Hsc70, 1 µM DNAJA2) (orange) with luciferase aggregates at increasing concentrations of Hsp105. Luciferase activity was measured after 4 hr and normalised to the activity of the native protein. (C) Folding of non-aggregated luciferase diluted from 5 M GuHCl (grey), spontaneous or mediated by the Hsp70 system comprising Ssa1-Sis1 (1 µM Ssa1, 1 µM Sis1) (red) or Ydj1-Ssa1 (1 µM Ssa1, 1 µM Ydj1) (blue) with increasing concentrations of Sse1. Activity of luciferase was measured after 2 hr and normalised to the native protein. (D) Binding of Ssa1-Sis1 (1 µM Ssa1, 1 µM Sis1) or Ssa1-Ydj1 Ssa1 (1 µM Ssa1, 1 µM Ydj1) in the presence of Sse1 at the indicated concentrations to the sensor covered with luciferase aggregates. Right panel shows a plot of the binding signal prior to the dissociation step. (E) Renaturation of heat-aggregated GFP by Ssa1-Sis1 (1 µM Ssa1, 1 µM Sis1) in the presence of Sse1 or Sse1-2 at the indicated concentrations. Right panel shows the plot of the recovered GFP activity after 2 hr of incubation with the Hsp70 system in the presence of Sse1 (orange) or Sse1-2 (red). (D, E) Dashed lines show the fitting of the [Agonist] vs response model to the data from the stimulation and inhibition phases separately using the GraphPad Prism software. (A–E) Error bars and shades indicate SD from three repeats.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94795/elife-94795-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Titration of Sse1 in the refolding of aggregated luciferase by Ssa1-Sis1 (red) or Ssa1-Ydj1 (blue) with Hsp104 (1 µM Ssa1, 1 µM Sis1, 1 µM Ydj1, 1 µM Hsp104, and indicated concentrations of Sse1). Activity of luciferase was measured after 1 hr and normalised to the native activity. Shown is average and SD from three repeats. (B) Fluorescence microscopy images of luciferase-GFP aggregates incubated with Ssa1 (1 µM) and Sis1 (1 µM) in the presence of 1 µM Sse1. Scale is as in Figure 2B. Error bars show SD from three repeats. Quantification of the fraction of aggregates >2 µm is from three independent replicates. Data for aggregates alone are from Figure 2B. (C) Size distribution of luciferase aggregates incubated with Ssa1 (1 µM) and Sis1 (1 µM) in the presence of 1 µM Sse1 measured by dynamic light scattering. (D) Dissociation constant is determined based on the level of Ssa1 binding to Sse1 or Sse1-2. Sse1 or Sse1-2 was immobilised on the biolayer interferometry (BLI) sensor through His6-SUMO tag and Ssa1 was used at concentrations: 16,000, 8000, 4000, 2000, 1000, 500, 250, 125, 63, and 32 nM. Points indicate mean with SD from three independent experiments. The One site-specific binding model was fitted to the data with the GraphPad Prism software. (E) Titration of Sse1-2 in the refolding of luciferase aggregates assay with Ssa1-Sis1 (1 µM Ssa1, 1 µM Sis1). (F) Luciferase aggregates immobilised on the BLI sensor were incubated with Ssa1-Sis1 with either Sse1 or Sse1-2 at the indicated concentrations (1 µM Ssa1, 1 µM Sis1).
 
 In contrast to protein disaggregation, the reactivation of denatured, non-aggregated luciferase by Ssa1 with either Sis1 or Ydj1 was only negatively affected across a range of Sse1 concentrations (Figure 3C), suggesting that the positive contribution of Hsp110 takes place before polypeptides get released from an aggregate. The negative effect of Sse1 on protein folding could potentially mask a positive effect of saturating Sse1 on aggregate modification, e.g., through entropic pulling. We thus analysed the size of aggregates after their incubation with Ssa1-Sis1 and 1 μM Sse1, however it was unaffected (Figure 3—figure supplement 1B and C), suggesting that higher Sse1 levels also limit the aggregate-remodelling activity of Hsp70. Consistently, when we measured Hsp70 association with luciferase aggregated on the BLI sensor across Sse1 concentrations, we observed the biphasic effect for Ssa1-Ydj1 and Ssa1-Sis1, with the maximum binding at 0.05 µM and 0.2 µM of Sse1, respectively (Figure 3D). Thus, Hsp110 promotes Hsp70 assembly at aggregates and their modification only at sub-stoichiometric concentrations, with peak performance at higher levels of Sse1 in the presence of class B than class A JDPs.
 
@@ -80,11 +112,19 @@ To establish whether the inhibition that occurs at higher Sse1 concentrations is
 
 This suggests that it is the high-affinity interaction between Hsp70 and the NEF that enables strong stimulation already at very low Hsp110 levels. On the other hand, such strong interaction is associated with the inhibition of the disaggregation activity when Hsp110 concentration exceeds sub-stoichiometric proportion to Hsp70.
 
-## Hsp110 limits JDP interaction with Hsp70
+### Hsp110 limits JDP interaction with Hsp70
 
 Since all NEFs induce polypeptide release from Hsp70, excessive dissociation from the substrate seems the most apparent explanation of Hsp70 inhibition by Hsp110. However, the strong dependence of the impact of Hsp110 on the class of JDP prompted us to search for other potential mechanisms behind the low Hsp70 chaperone activity under high Hsp110 concentration. Knowing that the sensitivity to Sse1 (Figure 3A and D) is negatively correlated with the strength of the Hsp70-JDP interaction, higher in the case class B JDP due to its binding of the EEVD motif of Hsp70 (Wyszkowski et al., 2021), we explored the possibility that Hsp110 restricts the formation of the Hsp70-JDP complex.
 
 To test this, we immobilised Sis1 on the BLI sensor and monitored Ssa1 binding across a range of Sse1 concentrations. The incubation with 0.1 µM Sse1 was almost inert, however, at 1:1 Ssa1:Sse1 ratio, the binding greatly diminished (Figure 4A). The reduced affinity of Sse1-2 for Ssa1 resulted in its milder negative effect on Ssa1 binding to Sis1 (Figure 4—figure supplement 1A), in agreement with its impact on disaggregation (Figure 3E). The degree of inhibition by the two Sse1 variants (Figure 4—figure supplement 1B) correlated with their capacity to exchange nucleotides (Dragovic et al., 2006; Polier et al., 2008).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/94795/elife-94795-fig4-v1.jpg)
+
+**Figure 4.:** (A) Upper panel shows the scheme of the biolayer interferometry (BLI) experiment. Binding of Ssa1 (1 µM) in the presence of increasing concentrations of Sse1 to Sis1 immobilised on the BLI sensor through the His6-SUMO tag. Dashed lines indicate the moment of addition of chaperones to the sensor-bound Sis1 and the dissociation step. (B) Renaturation of heat-aggregated GFP by Ssa1-Sis1 (1 µM Ssa1, 0.1 µM, or 1 µM Sis1) at increasing concentrations of Sse1. (C) Plot of GFP activity after 3 hr recovered from aggregates by Ssa1 at different concentrations of Sis1 and Sse1 (left). IC50 was determined by fitting the [Inhibitor] versus response model to the data from three experiments using the GraphPad Prism software (dashed lines). Two-tailed t test: *p<0.05, **p<0.01. Lines are the average of three replicates and the error bars and shades designate standard deviation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94795/elife-94795-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Titration of Sse1-2 in the presence of 1 µM Ssa1 in the binding to the immobilised Sis1 on the biolayer interferometry (BLI) sensor. (B) Comparison of the binding signal prior to the dissociation of Ssa1 in the presence of the indicated concentrations of Sse1 or Sse1-2. The binding signal of Ssa1-Sse1 wild type (WT) was adapted from Figure 4A. (C) Incubation of His6-SUMO-DNAJB4 immobilised on the BLI sensor with Hsc70 and the indicated concentrations of Hsp105. (D) Titration of Sse1 in the GFP reactivation assay with Ssa1 (1 µM) and Sis1 at different concentrations: 0.05 µM, 0.25 µM, 2 µM. (E) Comparison of GFP fluorescence monitored after 3 hr of incubation with Ssa1, Sis1, and Sse1. The values were adapted from (D) and for 0.1 µM and 1 µM Sis1 they were adapted from Figure 4B. Dashed lines show fitting of the [Agonist] versus response model to the data from three experiments using the GraphPad Prism software. Lines and points represent average values and error bars and shades indicate SD from three independent replicates.
 
 In an analogous way, we analysed the interaction between the human Hsc70 and sensor-bound DNAJB4. With an increasing Hsp105 concentration, the binding signal declined to reach 85% at 1:1 Hsc70:Hsp105 ratio (Figure 4—figure supplement 1C), indicating that the negative Hsp110 impact on the Hsp70-JDP interaction exhibits a similar pattern across Fungi and Metazoa.
 
@@ -120,50 +160,256 @@ An abundant association of Hsp70-JDPB with aggregate surface, although generatin
 
 ## Materials and methods
 
-## Proteins
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3) CodonPlus</td>
+      <td>Agilent</td>
+      <td>Cat # 230250;RRID:SCR_013575</td>
+      <td>Genotype: E. coli B F- ompT hsdS(rB- mB-) dcm +Tetr gal endA Hte [argU proL Camr]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>RosettaBL21(DE3)</td>
+      <td>Novagen</td>
+      <td>Cat # 70954;RRID:SCR_008441</td>
+      <td>Genotype: E. coli F- ompT hsdSB(rB- mB-) gal dcm (DE3) pRARE (CamR)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>W303</td>
+      <td>Laboratory collection</td>
+      <td></td>
+      <td>Genotype: MATa/MATα {leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15} [phi+]</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ssa1</td>
+      <td>DOI:10.1073/pnas.0804187105</td>
+      <td>Uniprot ID:P10591</td>
+      <td>Expressed from pCA533-His6-SUMO-SSA1 plasmid, KanR, T7</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ssa1 ∆EEVD</td>
+      <td>DOI:10.1016/j.jmb.2015.02.007</td>
+      <td></td>
+      <td>Expressed from pCA533-His6-SUMO-SSA1 ∆EEVD plasmid, KanR, T7</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Sse1</td>
+      <td>DOI:10.1073/pnas.0804187105</td>
+      <td>Uniprot ID:P32589</td>
+      <td>Expressed from pCA534-SSE1 plasmid KanR, T7</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Sse1-2(N572Y N575A)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Variant generated based on DOI:10.1016/j.jmb.2010.07.004, expressed from pCA534-SSE1-2 plasmid KanR, T7</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Fes1</td>
+      <td>DOI:10.1073/pnas.0804187105</td>
+      <td>Uniprot ID:P38260</td>
+      <td>Expressed from pCA707-FES1 plasmid KanR, T7</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ydj1</td>
+      <td>DOI:10.1074/jbc.M112.387589</td>
+      <td>Uniprot ID:P25491</td>
+      <td>Expressed from pET21a-YDJ1 plasmid AmpR, T7</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Sis1</td>
+      <td>DOI:11810.1073/pnas.2108163118</td>
+      <td>Uniprot ID:P25294</td>
+      <td>Expressed from pPROEX-TEV-SIS1 plasmid AmpR, T7</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Sis1 E50A</td>
+      <td>DOI:10.1016/j.jmb.2015.02.007</td>
+      <td></td>
+      <td>Expressed from pPROEX-TEV-SIS1 E50A plasmid AmpR, trc</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Hsp104</td>
+      <td>DOI:10.1074/jbc.M112.387589</td>
+      <td>Uniprot ID:P31539</td>
+      <td>Expressed from pET5a-HSP104 plasmid AmpR, T7</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Hsp104 D484K F508A</td>
+      <td>DOI:10.1016/j.jmb.2019.04.014</td>
+      <td></td>
+      <td>Expressed from pET5a-HSP104 D484K F508A plasmid AmpR, T7</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Hsc70</td>
+      <td>DOI:10.1038/nature14884</td>
+      <td>Uniprot ID:P11142</td>
+      <td>Expressed from pPROEX-His-TEV-HSC70 plasmid AmpR, trc</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DNAJA2</td>
+      <td>DOI:10.1038/nature14884</td>
+      <td>Uniprot ID:O60884</td>
+      <td>Expressed from pPROEX-His-TEV-DNAJA2 plasmid AmpR, trc</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DNAJB1</td>
+      <td>DOI:10.1038/nature14884</td>
+      <td>Uniprot ID:P25685</td>
+      <td>Expressed from pPROEX-His-TEV-DNAJB1 plasmid AmpR, trc</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Hsp105</td>
+      <td>DOI:10.1038/nature14884</td>
+      <td>Uniprot ID:Q92598</td>
+      <td>Expressed from pPROEX-His-TEV-HSP105 plasmid AmpR, trc</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GFP</td>
+      <td>DOI:10.1074/jbc.M402405200</td>
+      <td></td>
+      <td>Expressed from pGFPuv plasmid (TaKaRa, RRID:SCR_003960)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Fluc-EGFP</td>
+      <td>This study</td>
+      <td></td>
+      <td>EGFP fusion with firefly luciferase, expressed from pET22b-Fluc-GFP plasmid AmpR, T7</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His-tagged EGFP</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>OuantiLum Recombinant Luciferase</td>
+      <td>Promega</td>
+      <td>Cat # E1701;RRID:SCR_006724</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His-tagged Luciferase</td>
+      <td>DOI:10.1371/journal.pgen.1008479</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Creatine Kinase</td>
+      <td>Roche</td>
+      <td>Cat # 10127566001;RRID:SCR_001326</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>Cat # E151A;RRID:SCR_006724</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 488 C5 Maleimide</td>
+      <td>Invitrogen</td>
+      <td>Cat # A10254;RRID:SCR_013378</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange Site-Directed Mutagenesis Kit</td>
+      <td>Agilent</td>
+      <td>Cat # 200513;RRID:SCR_013575</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ni-NTA BLI sensors</td>
+      <td>Sartorius</td>
+      <td>Cat # 18-5101;RRID:SCR_003935</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Proteins
 
 Sse1 (Andréasson et al., 2008a), Ssa1 (Andréasson et al., 2008a), Sis1 (Wyszkowski et al., 2021), Ydj1 (Lipińska et al., 2013), Hsp104 (Lipińska et al., 2013), His-tagged luciferase (Chamera et al., 2019), GFP (Zietkiewicz et al., 2004) were purified using published protocols. The same protocol as for Sse1 was used for Fes1 (Andréasson et al., 2008a). DNAJB4, DNAJA2, Hsc70, and Hsp105 were purified as described in the work by Nillegoda et al., 2015. To obtain His-tagged chaperones, a step of proteolytic cleavage of the tag was omitted. Sse1 N572Y N575A was constructed by introduction of point mutations using PCR-specific mutagenesis (Agilent) and confirmed with sequencing. Fluc-EGFP and EGFP (parent vector pCIneo-Fluc-EGFP) were cloned into pET22b plasmid. Fluc-EGFP and His-tagged EGFP were purified using Ni-NTA agarose (Protino), followed by anion exchange chromatography using Q-Sepharose (Q Sepharose Fast Flow, GE Healthcare). Untagged luciferase and its substrate were purchased from Promega (E1702).
 
-## Heat-aggregated luciferase and luciferase-GFP reactivation
+### Heat-aggregated luciferase and luciferase-GFP reactivation
 
 Luciferase or luciferase-GFP (30 µM) was denatured in the buffer A (25 mM HEPES-KOH pH 8.0, 75 mM KCl, and 15 mM MgCl2) supplemented with 6 M urea at 25°C for 15 min. Next, it was transferred to 48°C for 10 min and subsequently 25-fold diluted into the buffer A. After 15 min of incubation at 25°C, the reactions were initiated by the addition of the mix of chaperones, which were used at the following concentrations: 1 μM Ssa1, 1 μM Sis1, 1 μM Ydj1, 0.1 μM Sse1, 1 μM Fes1, 3 μM Hsc70, 1 μM DNAJB4, 1 μM DNAJA2, and 0.3 μM Hsp105, if not stated otherwise. Luminescence was measured using Sirius Luminometer (Berthold).
 
-## Unfolded luciferase reactivation
+### Unfolded luciferase reactivation
 
 Method for spontaneous folding of luciferase was adapted from Imamoglu et al., 2020. Briefly, 10 µM of luciferase was denatured in 5 M GuHCl and 10 mM DTT at 25°C for 1 hr. To initiate the spontaneous folding, the luciferase was 100-fold diluted into the folding buffer (25 mM HEPES-KOH pH 7.5, 100 mM KCl, 10 mM Mg(OAc)2, 2 mM DTT, 0.05% Tween 20). Folding was performed with chaperones used at 1 μM concentration, except for 0.1 µM Sse1, unless it was stated otherwise.
 
-## Renaturation of heat-aggregated GFP
+### Renaturation of heat-aggregated GFP
 
 Recovery of GFP aggregates was performed as previously described (Zietkiewicz et al., 2004). Briefly, GFP (74 μM) was thermally inactivated at 85°C for 15  min. The reactivation reaction was carried out at 25 °C in the renaturation buffer (25 mM HEPES-KOH [pH 8.0], 7% [vol/vol] glycerol, 60  mM potassium glutamate, 7 mM DTT, 15 mM MgOAc, 10 mM ATP), with an ATP regeneration system comprising 1.2 μM creatine kinase and 20 mM creatine phosphate. Disaggregation of the 100 times diluted GFP aggregates was initiated by adding the chaperone proteins at the following concentrations: Ssa1 (1  μM), Ydj1 (1 μM), Sis1 (1  μM), Sse1 (0.1 μM), Hsp104 WT (1 μM), Hsp104mut (0.15 μM), unless indicated otherwise. GFP fluorescence was detected in a Beckman Coulter DTX880 microplate reader.
 
-## Fluorescent transmitted light microscopy
+### Fluorescent transmitted light microscopy
 
 Luciferase-GFP (14.6 μM) was incubated in the buffer A with 6 M urea at 25°C for 15 min. Then, it was transferred to 48°C for 10 min and 10-fold diluted into the buffer A containing 5 mM ATP and 2 mM DTT. After 15 min of incubation at 25°C, the reaction was initiated upon addition of the mix of chaperones at 1 μM concentration, except for Sse1 used at 0.1 μM. The final concentration of luciferase-GFP aggregates in the reaction was 0.3 μM. After 1 hr of incubation with the chaperones, the reaction was arrested upon addition of 200 mM NaCl and transferred on ice. Specimens were imaged using a confocal laser scanning microscope Leica SP8X with a ×100 oil immersion lens (Leica, Germany). Presented data show results from three independent experiments. Each sample within the repeat was photographed 10 times. Data analysis was performed with Leica LAS X software.
 
-## Dynamic light scattering
+### Dynamic light scattering
 
 Luciferase (23,7 µM) was incubated in the buffer A with 6 M urea at 25°C for 15 min, then it was transferred to 48°C for 10 min. Subsequently, it was 10× diluted with the buffer A containing 5 mM ATP and 1 mM DTT and incubated for 15 min at 25°C. Then, it was subjected to a DLS measurement to confirm the presence of the aggregates, size of which ranged between 1000 nm and 3000 nm. The reaction was initiated upon an addition of a mix of chaperones used at 1 μM concentration, except for Sse1 used at 0.1 μM. The final concentration of luciferase was 0.6 μM. DLS was measured using the ZetaSizer NanoS instrument (Malvern) after 1 hr of incubation with chaperones at 25°C. For each sample, three independent measurements were performed, and particle size distributions were calculated as percent within a range between 0.4 nm and 10,000 nm.
 
-## BLI experiments
+### BLI experiments
 
 All the BLI experiments described below were performed as previously described (Wyszkowski et al., 2021) using the BLItz and Octet K2 instruments.
 
-## Binding of chaperones to luciferase aggregates
+### Binding of chaperones to luciferase aggregates
 
 Initially, the Ni-NTA biosensor (ForteBio Dip and Read) was hydrated in the buffer A for 10 min and subsequently immersed in the same buffer containing 6 M urea and 8.2 μM His-tagged luciferase for 10 min, resulting in an anchoring layer of ~6 nm. Next, the biosensor was washed with the buffer A and immersed in the buffer A with 1.6 μM of native His-tagged luciferase and incubated for 10 min at 44°C. Finally, the biosensor was equilibrated with the buffer A supplemented with 5 mM ATP and 2 mM DTT for 5 min. The layer of luciferase aggregates reached ~16 nm and was stable. Binding and dissociation of chaperones were performed in the buffer A supplemented with 5 mM ATP and 2 mM DTT at 25°C.
 
-## Binding of chaperones to the GFP aggregates
+### Binding of chaperones to the GFP aggregates
 
 To prepare the sensor with GFP aggregates, after the initial hydration of the Ni-NTA biosensor (ForteBio Dip and Read) in the buffer A (25 mM HEPES-KOH pH 8.0, 75 mM KCl, and 15 mM MgCl2) for 10 min, it was immersed in the buffer A with 9 M urea containing 12.5 μM of His-tagged GFP and incubated at 85°C for 15 min. After washing with the buffer A for 5 min, it was immersed in the buffer A containing 4.2 μM of His-tagged GFP and incubated at 85°C. Next, the sensor was equilibrated with the buffer A supplemented with 5 mM ATP and 2 mM DTT for 5 min. The aggregate layer thickness was ~40 nm. Association and dissociation of chaperones were performed in the same buffer at 25°C.
 
-## Binding of chaperones to the immobilised yeast lysate
+### Binding of chaperones to the immobilised yeast lysate
 
 Yeast lysate was prepared from overnight culture of W303 yeasts in the YPD medium, according to the published protocol (Wyszkowski et al., 2021). The Ni-NTA biosensor (ForteBio Dip and Read) was initially hydrated in the buffer A for 10 min, following incubation in the same buffer supplemented with 6 M urea and 8.2 μM His-tagged luciferase for 10 min, which resulted in biolayer thickness of ~6 nm. Next, the biosensor was washed with the buffer A and immersed in the same buffer containing soluble yeast proteins (5 mg/ml). After 15 min of incubation at 55°C, the biosensor was equilibrated with the buffer A supplemented with 5 mM ATP and 2 mM DTT, reaching biolayer thickness of ~30 nm. Association and dissociation of chaperones were performed in the same buffer at 25°C.
 
-## BLI with fluorescently labelled protein
+### BLI with fluorescently labelled protein
 
 Ssa1 was incubated with 10× molar excess of Alexa Fluor 488 C5 maleimide (Invitrogen) for 2 hr at 4°C. An excess of the label was removed with a desalting column (PD-10, GE Healthcare). The BLI experiment was performed as with unlabelled proteins and the fluorescence of the dissociated Ssa1 (A488*) was measured using Beckman Coulter DTX 880.
 
-## BLI of direct protein-protein interactions
+### BLI of direct protein-protein interactions
 
 The biosensor was initially hydrated in the buffer A for 10 min. Next, it was immersed in the buffer A containing the indicated protein (0.4 μM His-Sis1, 2.5 μM His-Sse1, or 1 μM His-Sse1-2) until binding reached saturation, which corresponded to a layer thickness of ~15 nm for His-Sis1, ~6 nm for His-See1 and ~4 nm for His-Sse1-2. Subsequently, it was washed with the buffer A supplemented with 5 mM ATP and 2 mM DTT for 5 min and then immersed in the same buffer with the mix of chaperones at the indicated concentrations.

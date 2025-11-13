@@ -30,7 +30,7 @@
 
 ## Abstract
 
-Meiosis is conserved across eukaryotes yet varies in the details of its execution. Here we describe a new comparative model system for molecular analysis of meiosis, the nematode Pristionchus pacificus , a distant relative of the widely studied model organism Caenorhabditis elegans. P. pacificus shares many anatomical and other features that facilitate analysis of meiosis in C. elegans . However, while C. elegans has lost the meiosis-specific recombinase Dmc1 and evolved a recombination-independent mechanism to synapse its chromosomes, P. pacificus expresses both DMC-1 and RAD-51. We find that SPO-11 and DMC-1 are required for stable homolog pairing, synapsis, and crossover formation, while RAD-51 is dispensable for these key meiotic processes. RAD-51 and DMC-1 localize sequentially to chromosomes during meiotic prophase and show nonoverlapping functions. We also present a new genetic map for P. pacificus that reveals a crossover landscape very similar to that of C. elegans , despite marked divergence in the regulation of synapsis and crossing-over between these lineages.
+Meiosis is conserved across eukaryotes yet varies in the details of its execution. Here we describe a new comparative model system for molecular analysis of meiosis, the nematode Pristionchus pacificus, a distant relative of the widely studied model organism Caenorhabditis elegans. P. pacificus shares many anatomical and other features that facilitate analysis of meiosis in C. elegans. However, while C. elegans has lost the meiosis-specific recombinase Dmc1 and evolved a recombination-independent mechanism to synapse its chromosomes, P. pacificus expresses both DMC-1 and RAD-51. We find that SPO-11 and DMC-1 are required for stable homolog pairing, synapsis, and crossover formation, while RAD-51 is dispensable for these key meiotic processes. RAD-51 and DMC-1 localize sequentially to chromosomes during meiotic prophase and show nonoverlapping functions. We also present a new genetic map for P. pacificus that reveals a crossover landscape very similar to that of C. elegans, despite marked divergence in the regulation of synapsis and crossing-over between these lineages.
 
 ## Introduction
 
@@ -50,13 +50,35 @@ Using genome editing, cytogenetic analysis, and recombination mapping, we have c
 
 ## Results
 
-## P. pacificus as a comparative model system for meiosis
+### P. pacificus as a comparative model system for meiosis
 
 The morphology and organization of the P. pacificus germline are very similar to that of C. elegans. Hermaphrodites have two tubelike gonad arms in which sperm and ova are produced sequentially, while males have a single arm (Rudel et al., 2005). These are organized as a cylindrical monolayer of cells abutting a central core, or rachis. The distal tip is populated by proliferating germline stem cells (Figure 1A, B and D), as confirmed by the incorporation of microinjected fluorescently labeled nucleotides into replicating DNA (Figure 1B). The injected nucleotides label nuclei at various stages of S-phase; some preferentially incorporate fluorescence into the X-chromosomes, which are silenced in the germline, as in C. elegans (Kelly et al., 2002). The onset of meiotic prophase is marked by an obvious change in nuclear organization in which fluorescently stained chromosomes form a conspicuous crescent-shaped mass (Figure 1A). Immediately proximal to this ‘transition zone,’ DAPI staining reveals parallel tracks, indicative of paired and synapsed homologous chromosomes at the pachytene stage. Gametogenesis switches from spermatogenesis to oogenesis during early adulthood. As oocytes approach maturation, chromosomes undergo striking decondensation between diplotene and diakinesis, a stage that has been referred to as the ‘growth zone’ (Rudel et al., 2005). Similar chromosome morphology is observed during a late ‘diffuse stage’ of meiotic prophase in many other eukaryotes (Zickler and Kleckner, 1999), but is rarely seen in C. elegans. We use the term ‘diffuse stage’ for consistency with other organisms. In the most proximal region of the hermaphrodite gonad, oocytes mature and form a single row of large cells, and chromosomes condense dramatically as the nuclei grow in size. Six bivalents can be detected as compact DAPI-staining bodies in oocytes at diakinesis, the last stage of meiotic prophase preceding the first meiotic division (Figure 1A and C, Rudel et al., 2005; Sommer et al., 1996).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig1-v2.jpg)
+
+**Figure 1.:** (A) Projection image of the distal arm of a P. pacificus hermaphrodite gonad stained with DAPI. Scale bar, 30 μm. Insets show representative nuclei from the premeiotic region (PM), transition zone (TZ), pachytene (Pach), diplotene (Dip), diffuse stage (Diff), and diakinesis. Scale bar, 5 μm. (B) Distal region of a P. pacificus germline following injection of fluorescent nucleotides to label replicating DNA. Scale bar, 30 μm. (C) Metaphase I oocyte expressing CENP-C::V5, stained with anti-V5, DAPI, and anti-tubulin. Scale bar, 10 μm. (D) Mitotic chromosomes (DAPI) in the premeiotic germline of adult hermaphrodites and a 2–4 cell stage embryo and expressing CENP-C::V5 (magenta). Scale bar, 2 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Sequences from species other than nematodes were obtained from Uniprot; nematode sequences were from Wormbase (wormbase.org) and pristionchus.org (see Figure 1—figure supplement 1—source data 1, Figure 1—figure supplement 2—source data 1, Figure 1—figure supplement 3—source data 1, Figure 1—figure supplement 4—source data 1, Figure 1—figure supplement 5—source data 1, Figure 1—figure supplement 6—source data 1, Figure 1—figure supplement 7—source data 1, Figure 1—figure supplement 8—source data 1). For Pristionchus pacificus (Ppa) proteins, ‘El Paco’ gene predictions were refined by our own alignments and in some cases, RNA sequence data. For broadly conserved proteins, homologs from Caenorhabditis elegans (Cele), humans (Hsap), mouse Mus musculus (Mmus), Arabidopsis thaliana (Athal), the budding yeast Saccharomyces cerevisiae (Scer), the fission yeast Schizosaccharomyces pombe (Spom), and, where available, the fruit fly Drosophila melanogaster (Dmel) were included. Recognizable homologs of the meiotic cyclin COSA-1/CNTD-1 are restricted to metazoans and are not found in Drosophila. Homologs of SYP-4 are only found in nematodes, so an expanded group of nematode sequences was included in the alignment, including three Caenorhabditis species, C. elegans (Cele), C. briggsae (Cbri), C. remanei (Crem), plus Haemonchus contortus (Hcon), and Dictyocaulus viviparus (Dviv). Multiple sequence alignments were computed using MAFFT (Katoh et al., 2019) with default settings and displayed using Jalview (Waterhouse et al., 2009).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig1-figsupp4-v2.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig1-figsupp5-v2.jpg)
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig1-figsupp6-v2.jpg)
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig1-figsupp7-v2.jpg)
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig1-figsupp8-v2.jpg)
+
 It has been assumed that chromosomes in P. pacificus are holocentric, as in C. elegans, but we are unaware of direct evidence to support this idea. We thus identified a gene encoding CENP-C (HCP-4 in C. elegans), a conserved kinetochore protein, in the P. pacificus genome and inserted a V5 epitope tag at its 3′ end. The distribution of CENP-C on mitotic chromosomes in embryos and mitotic germ cells confirmed their holocentric organization (Figure 1D). Kinetochores appeared as linear structures along the full length of each chromatid on mitotic chromosomes, rather than discrete foci. CENP-C also coated the chromosomes during meiotic metaphase I (Figure 1C), as in C. elegans (Shakes et al., 2009).
 
-## Stable homolog pairing requires early recombination factors
+### Stable homolog pairing requires early recombination factors
 
 BLAST searches of the P. pacificus genome revealed an open-reading frame encoding an unambiguous ortholog of Dmc1, a meiosis-specific paralog of Rad51 (Supplementary file 1). Orthologs of the Dmc1 cofactors Mnd1 and Hop2 were also identified by homology searches (Figure 1—figure supplements 3–5; Figure 2—figure supplement 2). By contrast, Dmc1/Mnd1/Hop2 are absent from both C. elegans and D. melanogaster, two model organisms that have evolved recombination-independent mechanisms of homolog pairing and synapsis (Villeneuve and Hillers, 2001). We analyzed the genome sequences of other nematodes to determine the evolutionary history of these genes within the nematode lineage. This analysis revealed that Dmc1/Mnd1/Hop2 have been lost several times during the evolution of nematodes, including the entire Caenorhabditis genus and all sequenced members of Clade IV (Figure 2—figure supplement 1). As expected in light of its essential function in DNA repair, the recombinase Rad51 was detected in all genomes examined (data not shown).
 
@@ -68,15 +90,27 @@ As expected, disruption of either spo-11 or dmc-1 resulted in the detection of 1
 
 To visualize and quantify homolog pairing, we generated FISH probes against two short tandem repeats found on chromosomes X and IV (Figure 2A). We measured the distance between pairs of homologous FISH signals in individual nuclei for each genotype. To analyze pairing kinetics, we divided the distal gonads into five zones of equal length. In zone 1 in wild-type P. pacificus hermaphrodites, which contains mostly proliferating germ cells, pairs of FISH signals remained far apart, with an average distance of 2.4 ± 1.0 μm (SD) and 2.5 ± 0.8 μm for chromosomes X and IV, respectively (Figure 2B and D). In zone 2, which spans the transition zone, the average distances between homologous loci decreased significantly (1.2 ± 1.1 μm and 1.1 ± 1.1 μm for probes on chromosomes X and IV, respectively). Surprisingly, homologous FISH probes were more frequently separated in zones 4 and 5 (Figure 2B and D). This differs from what is seen in C. elegans, where homologous loci remain closely apposed throughout an extended pachytene stage spanning most of the distal region (before the ‘loop’) of the gonad (MacQueen, 2002). Together with our analysis of synapsis (below), this indicated that desynapsis initiates soon after completion of synapsis in P. pacificus, resulting in partial separation of homologs.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig2-v2.jpg)
+
+**Figure 2.:** (A) Diagram showing the locations of tandem repeat sequences used to generate DNA FISH probes for pairing analysis in P. pacificus. (B) Representative images show the progression of homolog pairing of chromosome X (magenta) and chromosome IV (yellow) during meiotic prophase in wild-type hermaphrodites. Premeiotic region (PM), transition zone (TZ), and pachytene (Pach). Scale bar, 5 μm. (C) Representative images of FISH probe signals in spo-11, dmc-1, and rad-51 mutants during mid-prophase stage (roughly equivalent to the pachytene stage in wild-type germlines). Scale bar, 5 μm. (D) Temporal progression of X and IV chromosome pairing in WT, spo-11, dmc-1, and rad-51 mutants. Graphs show the distribution of distances within each of five equally sized zones spanning meiotic prophase. (E) Distance between pairs of heterologous FISH signals was measured in premeiotic (PM) and transition zone (TZ) nuclei in WT, spo-11, dmc-1, and rad-51 mutants (spanning zones 1 and 2 only). Distances between pairs of homologous FISH signals (Chr. X and IV combined) in TZ nuclei are included for comparison. ***p<0.0001, by Student’s t-test. See also Figure 2—figure supplement 1, Figure 2—figure supplement 2, and Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** D: Dmc1; M: Mnd1; H: Hop2; Z: HIM-8/ZIM-1,2,3. Circles indicate the presence of a homolog; solid outlines indicate homologs identified via orthology clustering; dashed outlines represent evidence of a homolog from TBLASTN searches of the genome sequence. C. elegans and P. pacificus are highlighted in blue. Major nematode clades are highlighted. Phylogeny rooted on two tardigrade species (Hysibius exemplaris and Ramazzottius varieornatus); not shown. Branch lengths are not shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Composite projection images of whole gonads stained with DAPI from WT, spo-11, dmc-1, and rad-51 mutants. The extent of the transition zone of each gonad is indicated with dashed lines. Scale bar, 30 μm. (B) Quantification of transition zone length as a fraction of the distance from meiotic onset to the end of pachytene in WT (n = 7), spo-11 (n = 7), dmc-1 (n = 7), and rad-51 (n = 10). Error bars indicate mean ± SD. spo-11 and dmc-1 mutants show significant differences from WT (p<0.0001) but not Ppa-rad-51 (p=0.8426) by ordinary one-way ANOVA.
+
 We noted that the average distances between pairs of homologous FISH signals in spo-11 and dmc-1 mutants also decreased markedly upon meiotic entry, although clearly less so than in wild type (Figure 2D). In contrast, rad-51 mutants showed distributions of probe distances more similar to wild-type animals (Figure 2C and D). We considered the possibility that the proximity between FISH signals might reflect the clustering of all chromosomes during leptotene/zygotene, rather than specific homologous interactions. If so, the extended transition zone morphology in spo-11 and dmc-1 might obscure a pairing defect that would be more apparent in the absence of clustering (Figure 2—figure supplement 2). To address this, we measured the distances between pairs of heterologous FISH signals in the premeiotic region (dispersed) versus the transition zone (clustered). We observed that FISH signals on different chromosomes were also significantly closer to each other in the transition zone compared to premeiotic nuclei in both wild-type and mutant animals (Figure 2E). The distances between heterologous versus homologous pairs of FISH loci were not significantly different in spo-11 and dmc-1 mutants (p=0.1777 and p=0.6774, respectively, by Student’s t-test), but homologous signals were clearly closer than heterologous signals in wild-type and rad-51 mutant animals (p<0.0001 by Student’s t-test; Figure 2E). These data support the idea that clustering, rather than specific pairing, promotes proximity between both homologous and heterologous loci during leptotene/zygotene in spo-11 and dmc-1 mutants. Although we cannot conclude that transient homologous pairing is absent in these mutants, it is evident that these early recombination factors are required for stable pairing and extended association of homologous loci throughout prophase. In contrast, rad-51 is dispensable for homolog pairing, as in C. elegans.
 
-## SPO-11 and DMC-1 are required for homologous synapsis
+### SPO-11 and DMC-1 are required for homologous synapsis
 
 To further investigate meiotic progression in P. pacificus and to probe the role of early recombination factors in synapsis, we developed cytological markers for the chromosome axis, which normally assembles upon meiotic entry, and the SC, which assembles between paired axes during early prophase. Identification of a candidate axial element component was straightforward due to the presence of the easily recognized HORMA (Hop1, Rev7, Mad2) domain among members of this family of proteins (Aravind and Koonin, 1998; Vader and Musacchio, 2014). We identified a gene encoding a HORMA domain protein that is most closely related to C. elegans HIM-3 by reciprocal BLAST analysis (Supplementary file 1; Figure 1—figure supplement 6). We refer to this protein as Ppa-HOP-1, after the founding member of the meiotic HORMA proteins, S. cerevisiae Hop1 (Hollingsworth and Byers, 1989). Using genetic immunization, we raised a polyclonal antibody against a 100-amino acid segment of the predicted protein including part of the HORMA domain and found that it indeed recognized chromosome axes from meiotic entry through late prophase (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig3-v2.jpg)
 
-**Figure 3.:** P. pacificus, while RAD-51 is dispensable.(A) Composite projection image of a wild-type strain expressing SYP-4::HA, stained with DAPI (gray), anti-HOP-1 (red), and anti-HA (green). Meiosis progresses from left to right. Scale bar, 30 μm. (B) Higher magnification images of wild-type nuclei in the premeiotic region (PM), transition zone (TZ), pachytene (Pach), and diplotene (D) stages. (C) Localization of SYP-4::HA and HOP-1 in WT, spo-11, dmc-1, and rad-51 mutants during early and mid-prophase (roughly equivalent to the TZ and pachytene regions in wild-type germlines, respectively). Synapsis fails in the absence of spo-11 and dmc-1 function but occurs normally in rad-51 mutants. Scale bar, 5 μm. See also Figure 3—source data 1.Figure 3—source data 1.Epitope-tagged alleles were generated by in-frame insertion into the endogenous gene loci using CRISPR/Cas9 (see Materials and methods) and homozygosed by selfing of successfully edited progeny. Fidelity of meiotic segregation in the resulting strains was analyzed by counting the frequency of viable embryos and male progeny among whole broods from self-fertilizing hermaphrodites, as indicated. Quantification of wild-type broods is also reported in Figure 5D.
+**Figure 3.:** (A) Composite projection image of a wild-type strain expressing SYP-4::HA, stained with DAPI (gray), anti-HOP-1 (red), and anti-HA (green). Meiosis progresses from left to right. Scale bar, 30 μm. (B) Higher magnification images of wild-type nuclei in the premeiotic region (PM), transition zone (TZ), pachytene (Pach), and diplotene (D) stages. (C) Localization of SYP-4::HA and HOP-1 in WT, spo-11, dmc-1, and rad-51 mutants during early and mid-prophase (roughly equivalent to the TZ and pachytene regions in wild-type germlines, respectively). Synapsis fails in the absence of spo-11 and dmc-1 function but occurs normally in rad-51 mutants. Scale bar, 5 μm. See also Figure 3—source data 1.
 
 To enable cytological detection of SC assembly, we searched for homologs of SC proteins. This was not straightforward due to rapid divergence of these proteins in nematodes as well as their extensive regions of coiled-coil potential, which constrains their amino acid composition. C. elegans expresses six known SC proteins, SYP-1–6. SYP-1–4 are all required for assembly of the SC, while SYP-5 and SYP-6 are partially redundant (Hurlock et al., 2020; Rog and Dernburg, 2013). SYP-4 has a distinctive C-terminal domain containing several unusual motifs enriched in glycine and phenylalanine residues, which enabled us to identify it with confidence among the predicted proteins in P. pacificus (Figure 1—figure supplement 2). We inserted an HA epitope tag at the C-terminus of the endogenous coding sequence and found that immunofluorescence with an epitope-specific antibody localized specifically between paired meiotic chromosomes, confirming SYP-4::HA as a useful marker for the SC (Figure 3A and B). A likely P. pacificus ortholog of C. elegans SYP-1 has also recently been identified, and an epitope-tagged allele displays an identical dynamic distribution (Kursel et al., 2021). The tagged SYP-4::HA protein supports normal meiosis, as indicated by the low percentage of inviable embryos and males among the progeny of homozygotes (Figure 3—source data 1).
 
@@ -84,9 +118,21 @@ HOP-1 was detected in the nucleoplasm in the premeiotic region of the germline a
 
 HOP-1 localized normally to chromosome axes in spo-11 and dmc-1 mutants, but extensive SC assembly failed. Instead, small, dispersed puncta of SYP-4 were observed along chromosome axes, with occasional longer tracks (Figure 3C). The number of these tracks was variable. They did not appear to associate preferentially with specific chromosomes, and our pairing analysis indicates that they represent nonhomologous synapsis. In contrast to spo-11 and dmc-1 mutants, rad-51 mutants displayed robust synapsis with a distribution of stages similar to that seen in wild-type hermaphrodites (Figure 3C). These observations indicate that homologous synapsis depends on SPO-11 and DMC-1 in P. pacificus, in contrast to the recombination-independent synapsis seen in C. elegans.
 
-## DMC-1 and RAD-51 localize sequentially during distinct stages of meiotic prophase
+### DMC-1 and RAD-51 localize sequentially during distinct stages of meiotic prophase
 
 To investigate the functions of and interplay between DMC-1 and RAD-51 in P. pacificus, we inserted a V5 epitope tag at the C-terminus of DMC-1 using CRISPR/Cas9 and raised a polyclonal antibody that recognizes RAD-51 (see Materials and methods). DMC-1::V5 supported normal meiosis, as evidenced by a normal brood size, high embryonic viability, and low percentage of males (Figure 3—source data 1). Surprisingly, the two proteins showed distinct and nonoverlapping patterns of localization. DMC-1 localized very broadly along chromosomes in transition zone nuclei and disappeared immediately upon completion of synapsis. RAD-51 displayed a much more restricted, punctate distribution along chromosomes, which was only detected in nuclei in which DMC-1 no longer coated the chromosomes (Figure 4A and B). Occasional nuclei at the border between the transition zone and pachytene region exhibited both DMC-1 and RAD-51, although DMC-1 was very faint in these nuclei and did not overlap with RAD-51 (Figure 4C). Additionally, DMC-1 remained strongly associated with chromosomes in some late nuclei that retained clustered DAPI morphology, presumably either ‘straggler’ nuclei with delays in synapsis or CO designation, or apoptotic cells, both of which are typically observed in the germlines of wild-type C. elegans (Figure 4D). Differences between the localization of DMC-1 and RAD-51 were further validated by inserting a V5 epitope tag at the C-terminus of RAD-51. Staining of this strain with anti-V5 recapitulated the sparse, punctate localization seen with anti-RAD-51 antibodies, demonstrating that the broader distribution of DMC-1 is not an artifact of the V5 epitope tag or antibody (Figure 4—figure supplement 1A). RAD-51::V5 also supported normal meiosis, with a normal brood size, high embryonic viability, and low frequency of male self-progeny (Figure 3—source data 1). We also tagged DMC-1 at its C-terminus with an alternate epitope, 3xFLAG. While this tagged protein was not fully functional in homozygotes, we stained dmc-1::3xflag/+ heterozygotes with anti-FLAG antibodies and observed a distribution indistinguishable from the DMC-1::V5 staining pattern (Figure 4—figure supplement 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig4-v2.jpg)
+
+**Figure 4.:** (A) Composite projection image of a wild-type gonad expressing DMC-1::V5, stained with DAPI (blue), anti-V5 (magenta), and anti-RAD-51 (yellow). Meiotic progression is from left to right. Scale bar, 30 μm. Inset shows the distinct localization of DMC-1 (magenta) and RAD-51 (yellow) in the transition zone and pachytene regions, respectively. Scale bar, 5 μm. (B) Higher magnification images of nuclei in the transition zone and pachytene region. DMC-1 is present along chromatin in the transition zone and disappears at pachytene. By contrast, RAD-51 localizes to discrete foci starting at pachytene. Scale bar, 5 μm. (C) Occasional nuclei at the transition from leptotene-zyogtene to pachytene are positive for both DMC-1 and RAD-51. The signals do not completely overlap. Scale bar, 2 μm. (D) Example of a nucleus with polarized DAPI morphology and strong DMC-1 signal during later prophase. Such ‘straggler’ cells may be delayed in completing synapsis or undergoing apoptosis. Scale bar, 2 μm. See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Localization of RAD-51::V5. Composite projection image of a wild-type gonad expressing RAD-51::V5, stained with DAPI and anti-V5. Meiotic progression is from left to right. Scale bar, 30 μm. (B) DMC-1 (magenta) is abundant on chromosomes in transition zone nuclei of rad-51 mutants. Anti-RAD-51 immunofluorescence was used to identify homozygous mutants among the progeny of heterozygotes. (C) RAD-51 foci are observed in late pachytene nuclei of dmc-1 mutants, proximal to the extended transition zone. RAD-51 foci appear larger and more numerous than in wild-type pachytene nuclei. (D) DMC-1 forms nuclear aggregates in spo-11 mutants and does not localize along chromosomes. (E, F). RAD-51 foci are detected in premeiotic nuclei of spo-11 mutants but are absent during meiotic prophase. Scale bar, 5 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Maximum-intensity projection images showing DAPI-stained nuclei and anti-FLAG immunofluorescence as grayscale images, and combined in a pseudocolored image. (B) Enlarged views of the regions outlined in (A) for both grayscale and merged images.
 
 We also tested the interdependence of DMC-1 and RAD-51 recombinases for their localization. In S. cerevisiae and A. thaliana, Dmc1 functions as an essential catalyst for interhomolog JM formation during meiotic DSB repair, while Rad51 acts as an accessory protein for Dmc1 nucleofilament formation (Cloud et al., 2012; Da Ines et al., 2013). We did not detect RAD-51 in transition zone nuclei, where DMC-1 was abundant on chromatin, and we found that DMC-1::V5 localization was normal in rad-51 mutants, indicating that RAD-51 does not play an essential role in the recruitment of DMC-1 (Figure 4—figure supplement 1B). Conversely, in dmc-1 mutants we detected RAD-51 foci only in late prophase nuclei, proximal to the very extended transition zone (Figure 4—figure supplement 1C). RAD-51 foci were more abundant and larger in dmc-1 mutants than in wild-type pachytene nuclei, perhaps due to delays in repair due to the failure of homolog pairing and synapsis. Alternatively, the bright foci of RAD-51 observed in late prophase nuclei could reflect an apoptotic response to unrepaired breaks and/or extensive asynapsis.
 
@@ -96,7 +142,7 @@ In contrast, RAD-51 foci are much sparser along chromosomes, suggesting that the
 
 Together these observations indicate that DMC-1 and RAD-51 bind to chromatin at distinct stages of meiotic prophase and are not interdependent, although both require DSBs for their localization to chromosomes.
 
-## RAD-51 is not required for CO formation or completion of meiosis
+### RAD-51 is not required for CO formation or completion of meiosis
 
 To assess the roles of DMC-1 and RAD-51 in CO formation, we quantified the number of DAPI-staining bodies at diakinesis in dmc-1 and rad-51 mutants. Wild-type oocytes at this stage usually have six bivalents that can be resolved as discrete DAPI-staining bodies (average = 5.6), while in spo-11 mutants, ~12 DAPI-staining bodies were detected (average = 11.5), consistent with an absence of COs (Figure 5A and B). Interestingly, we frequently failed to detect oocytes at diakinesis in dmc-1 mutant germlines, indicative of a defect in meiotic progression and the likely activation of a checkpoint in response to unrepaired DSBs. In cases when we did see nuclei at diakinesis, we observed an average of 11.6 DAPI-staining bodies, reflecting an absence of COs, as in spo-11 mutants (Figure 5A–C).
 
@@ -106,9 +152,21 @@ To assess the roles of DMC-1 and RAD-51 in CO formation, we quantified the numbe
 
 Unexpectedly, disruption of rad-51 resulted in homozygous mutant hermaphrodites that were viable and fertile, although animals produced smaller broods and their embryos showed greatly reduced viability, likely due to an inability to repair damage arising during DNA replication (Figure 5D). This was surprising because RAD-51 is essential for completion of meiosis in most organisms where it has been examined. Homozygous rad-51 mutant gonads also displayed diakinesis nuclei more frequently than dmc-1 mutants, although they were absent in 2 out of 20 gonads scored, indicating that loss of DMC-1 function impairs meiotic progression more severely than loss of RAD-51 (Figure 5C). Consistent with this observation, while self-fertilizing rad-51 mutants had a lower average brood size than wild-type hermaphrodites, dmc-1 mutants had even smaller broods, ranging from 0 to 35 embryos laid per mutant homozygote (Figure 5D). In striking contrast to C. elegans rad-51 mutants, which display chromatin aggregates and fragments at diakinesis (Martin et al., 2005; Rinaldo et al., 2002), Ppa-rad-51 mutants displayed an average of six DAPI-staining bodies, similar to wild-type (Figure 5B). Together with the relatively high viability of progeny of rad-51 homozygous mutants, this indicates that RAD-51 does not play an essential role in CO formation in P. pacificus.
 
-## COSA-1 marks designated CO sites during throughout early prophase
+### COSA-1 marks designated CO sites during throughout early prophase
 
 To further analyze CO formation in P. pacificus, we identified the gene encoding the metazoan meiotic cyclin-related protein COSA-1 (Crossover Site Associated)/Cntd1 (Cyclin N-terminal Domain Containing 1; Figure 1—figure supplement 8) and inserted a 3xFLAG epitope tag at the C-terminus of the coding sequence. The strain expressing COSA-1::3xFLAG yielded progeny with high embryonic viability and few males, indicating that the tagged protein supports normal meiosis (Figure 3—source data 1). Immunostaining with anti-FLAG antibodies revealed discrete foci along the SC, beginning as early as zygotene, which decreased in number and became brighter within the short pachytene region (Figure 6A and B). Most pachytene nuclei displayed six COSA-1 foci, each of which was associated with an individual SC, indicating the presence of a single designated CO site between each pair of homologs (Figure 6C and Figure 6—video 1). We stained J4 larval-stage hermaphrodites whose germlines had not yet undergone the switch from spermatogenesis to oogenesis and found that pachytene spermatocytes also displayed approximately six COSA-1 foci (Figure 6—figure supplement 1A). This suggests that P. pacificus, like C. elegans, has robust chromosome-wide CO interference in both spermatogenesis and oogenesis.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig6-v2.jpg)
+
+**Figure 6.:** (A) Composite projection image of a wild-type strain expressing three epitope-tagged proteins (COSA-1::3xFLAG, DMC-1::V5, and SYP-4::HA), stained with anti-FLAG, anti-V5, and anti-HA antibodies. Scale bar, 30 μm. (B) Higher magnification images of nuclei from the transition zone (TZ), pachytene (pach), mid- and late diplotene (D). COSA-1::3xFLAG (green) foci are detected in transition zone nuclei but do not colocalize with DMC-1::V5 (cyan). Foci peak in brightness in pachytene nuclei and gradually become dimmer until they are no longer detected during late diplotene. In early to mid-diplotene nuclei, six short stretches of SYP-4::HA (magenta) are observed per nucleus, each associated with a single COSA-1::3xFLAG focus. Scale bar, 5 μm. (C) Histogram showing the number of COSA-1::3xFLAG foci observed per nucleus in the pachytene region. Analysis was restricted to 15 nuclei per gonad immediately proximal to the transition zone and lacking DMC-1::V5 signal. Five individual gonads were analyzed, for a total of 75 nuclei scored. (D) Partial projection of a representative nucleus in mid to late diplotene, stained with anti-HOP-1 (blue), anti-HA (marking the synaptonemal complex [SC], magenta), and anti-FLAG (marking COSA-1, green). A single COSA-1::3xFLAG focus is observed at a junction (marked with a red arrowhead) between the ‘short arm,’ where SYP-4::HA is retained, and splayed ‘long arms’ lacking SC but positive for HOP-1. Scale bar, 2 μm. See also Figure 6—figure supplement 1, Figure 6—video 1, and Figure 6—figure supplement 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Composite projection image of a wild-type gonad from a J4-stage hermaphrodite expressing COSA-1::3xFLAG (green) and SYP-4::HA (magenta). Scale bar, 30 μm. At this stage, the germline is still undergoing spermatogenesis. Inset shows a higher magnification image of nuclei in the pachytene region. As during oogenesis, approximately six COSA-1::3xFLAG foci are observed in pachytene nuclei during spermatogenesis. Scale bar, 5 μm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Projection images of representative wild-type diplotene nuclei expressing SYP-4::HA, hybridized with a fluorescent probe specific for the left end of chromosome X (magenta), and stained with anti-HA (yellow) and DAPI (blue). (A) Nuclei in which the FISH signal recognizes the ‘long arm’ lacking SYP-4::HA. (B) Nuclei in which the probe recognizes the ‘short arm’ that retains SYP-4::HA. Scale bar, 2 μm.
 
 Intriguingly, SC disassembly appeared to be regulated by the position of the designated CO site, as in C. elegans. By mid-prophase, six short stretches of SYP-4::HA were observed, each associated with a single COSA-1::3xFLAG focus near one end (Figure 6B). As meiosis progressed further, COSA-1::3xFLAG foci became undetectable, although short stretches of SYP-4::HA could still be observed. We also observed splaying of chromosome axes along the ‘long arms’ on one side of the COSA-1 focus upon disappearance of the SC from those regions (Figure 6D). HOP-1 was retained on both arms following SC disassembly, although the signal appeared fainter along the long arms, perhaps due to separation of the two axes. At this stage, short stretches of SYP-4::HA colocalize with corresponding bright stretches of HOP-1 (Figures 3B and 6D). Bivalents at diakinesis and meiotic metaphase I also displayed a cruciform structure similar to that seen in C. elegans, consistent with a single chiasma per chromosome pair (Figure 1C).
 
@@ -120,11 +178,19 @@ We examined the localization of COSA-1::3xFLAG in various mutant backgrounds. As
 
 **Figure 7.:** (A) Nuclei from hermaphrodites of the indicated genotype displaying COSA-1::3xFLAG (green) in early and mid-prophase (roughly equivalent to the transition zone and pachytene regions in wild-type germlines, respectively). COSA-1 foci are absent in dmc-1 mutants, but six foci per nucleus are detected in wild-type and rad-51 mutants. Occasional foci are detected in spo-11 mutants. Scale bar, 5 μm.
 
-## A genetic map for P. pacificus reveals conservation of the CO landscape
+### A genetic map for P. pacificus reveals conservation of the CO landscape
 
 Prior work has led to divergent estimates of the meiotic recombination frequency in P. pacificus. By summing over measured genetic intervals on the same linkage group, the Sommer lab initially concluded that the map length of each chromosome exceeded 100 cM, with a maximum length of 215 cM for chromosome I, which is also physically the longest (Hong and Sommer, 2006; Srinivasan et al., 2003; Srinivasan et al., 2002). However, a map derived by the same group based on RNA sequencing of~ F10 recombinant inbred lines (RILs) yielded markedly shorter genetic lengths, below 100 cM per chromosome (Rödelsperger et al., 2017).
 
 Since an understanding of the CO landscape is an important reference for analysis of meiosis, we addressed this ambiguity by constructing a new genetic map for P. pacificus. We used three divergent parental strains from different geographic regions: PS312 from California (CA), PS1843 from Washington State (WA), and RSB001 from La Réunion island (LR), and mated them using a double-cross hybrid strategy. A total of 93 progeny from a cross between CA/WA hybrid males and CA/LR hybrid hermaphrodites were sequenced (Figure 8A). This strategy allowed us to simultaneously map COs that occur during hermaphrodite oogenesis and male spermatogenesis from the same progeny (Figure 8B).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig8-v2.jpg)
+
+**Figure 8.:** (A) Crossing scheme to generate a recombination map using three parental strains. California PS312 (CA), Washington PS1843 (WA), and La Réunion Island RSB001 (LR) strains were crossed to obtain F1 hybrids, which were then crossed to each other. Whole-genome sequencing of progeny from crosses between hybrid F1s enabled the analysis of meiotic recombination events in each F1 parent. (B) Genotype transitions along a chromosome in F2 correspond to recombination in the male or hermaphrodite F1 parent. (C) Marey plots show genetic map position in centimorgans vs. the physical position in megabases for male (green) and hermaphrodite (magenta) meiosis. Each bin was treated as a single locus and dots were plotted at the center of each marker bin. Map positions were computed with OneMap as described. The observed map length of ~50 cM indicates that chromosomes undergo an average of one crossover (CO) per meiosis. The X chromosome lacks a homolog in males, so there is no male-specific map for the X in our data. See also Figure 8—figure supplement 1 and Figure 8—source data 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/70990/elife-70990-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Genotyping. For each 100 kb genomic block, progeny were genotyped based on the number of California PS312 (CA), Washington PS1843 (WA), and La Réunion Island RSB001 (LR)-specific variants they contained, given the expectation of four possible genotypes CA/CA, CA/LR, WA/CA, WA/LR. In scatterplot, each point represents a single bin in a specific individual, with X = fWA + fLR - 2fCA, and Y = fLR fWA. Gray dots represent genotypes that are conservatively left as ‘not called.’ (B) Genotypes of the mapping panel. F2 genotypes inherited from male (left) and hermaphrodite (right) parents. Each thin row is one progeny. White vertical stripes represent 100 kb windows that could not be reliably genotyped due to low numbers of P0-specific variant sites and/or sequencing depth of progeny.
 
 We draw several conclusions from the resulting CO maps (Figure 8C). First, the map lengths for each chromosome are close to 50 cM for both oocyte and spermatocyte meiosis, very similar to genetic map lengths in C. elegans. This indicates that a single CO usually occurs between each pair of chromosomes per meiosis, consistent with our cytological observations. Close to half of all chromatids inherited from each parent were nonrecombinant as expected if a single CO occurs between two of the four possible chromatids. We did observe a few examples of double COs in our data, but such events were rare (6/1012 chromatids), and were most prevalent on the longest chromosome (chromosome I; Supplementary file 5). Second, the distal regions (‘arms’) show higher recombination rates than the central regions of each chromosome, as in Caenorhabditis (Barnes et al., 1995; Rockman and Kruglyak, 2009). This bias was also evident in a map constructed using RNA sequencing data (Rödelsperger et al., 2017) and seems to be a widely conserved feature among Rhabditids and perhaps other nematode clades (Doyle et al., 2018; Gonzalez de la Rosa et al., 2021).
 
@@ -136,7 +202,7 @@ Finally, we detected pronounced segregation distortion for chromosomes I and II 
 
 ## Discussion
 
-## Distinct roles for DMC-1 and RAD-51
+### Distinct roles for DMC-1 and RAD-51
 
 Comparison of the activities of Rad51 and Dmc1 in vitro has revealed similar profiles: both RecA homologs bind preferentially to single-stranded DNA and can mediate strand exchange reactions. However, Dmc1 is uniquely required during meiosis. The distinct requirements for Rad51 and Dmc1 are thought to be due in part to the activity of Dmc1-specific cofactors Mnd1 and Hop2, which confer different activities, and/or a higher tolerance for mismatches by Dmc1, which may enable it to promote recombination between nonidentical homologs (Steinfeld et al., 2019).
 
@@ -146,7 +212,7 @@ The sequential localization of DMC-1 and RAD-51 first suggested that they functi
 
 Taken together, it appears that DMC-1 and RAD-51 have specialized functions in P. pacificus: formation of interhomolog CO intermediates by DMC-1 prior to completion of synapsis, followed by a more generic mode of DSB repair mediated by RAD-51. Our observations that nuclei in rad-51 mutants display cruciform bivalents and lack fragmented chromatin at diakinesis suggest that excess DSBs can be repaired through an alternate pathway that does not depend on RAD-51 activity, such as non-homologous end joining, or that DMC-1 can compensate for loss of RAD-51 but not vice versa. Future studies may reveal how the activities of RAD-51 and DMC-1 are regulated to accomplish an orderly hand-off during meiotic prophase.
 
-## Comparative analysis of meiosis reveals variations and similarities within the nematode lineage
+### Comparative analysis of meiosis reveals variations and similarities within the nematode lineage
 
 In addition to establishing key aspects of meiosis in P. pacificus, this work also illuminates the evolutionary history of meiosis in C. elegans. A body of prior work has revealed that recombination-independent homologous synapsis in C. elegans relies on PCs, specialized chromosome regions that interact with nuclear envelope and drive chromosome movement during early prophase. Similar roles in chromosome movement and pairing during meiosis are typically mediated by telomeres, but have shifted to a unique region on each chromosome in C. elegans. PCs in C. elegans mediate synapsis-independent pairing and also act as the sites of synapsis initiation (MacQueen et al., 2005; Rog and Dernburg, 2013). In most other organisms, telomere-led chromosome movement is thought to promote homologous interactions, but stabilization of pairing and initiation of synapsis require and often occur at early recombination intermediates, which depend on Spo11 and Dmc1.
 
@@ -168,29 +234,228 @@ Inexpensive genome sequencing and the adaptability of CRISPR/Cas-based genome ed
 
 ## Materials and methods
 
-## P. pacificus strains and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene(Pristionchus pacificus)</td>
+      <td>cenp-c</td>
+      <td>El Paco genome reference, v1, 2017/Wormbase/this paper</td>
+      <td>El Paco genome reference, v1, 2017 ID:UMMS71-6.7mRNA-1; Wormbase ID:PPA37734</td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Gene(Pristionchus pacificus)</td>
+      <td>cosa-1</td>
+      <td>El Paco genome reference, v1, 2017/Wormbase/this paper</td>
+      <td>El Paco genome reference, v1, 2017 ID:UMMS57-3.22mRNA-1; Wormbase ID:PPA23791</td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Gene(Pristionchus pacificus)</td>
+      <td>dmc-1</td>
+      <td>El Paco genome reference, v1, 2017/this paper</td>
+      <td>El Paco genome reference, v1, 2017 ID:UMMS442-1.74mRNA-1</td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Gene(Pristionchus pacificus)</td>
+      <td>hop-1</td>
+      <td>El Paco genome reference, v1, 2017/Wormbase/this paper</td>
+      <td>El Paco genome reference, v1, 2017 ID:UMMS341-6.31mRNA-1; Wormbase ID:PPA10281</td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Gene(Pristionchus pacificus)</td>
+      <td>rad-51</td>
+      <td>El Paco genome reference, v1, 2017/Wormbase/this paper</td>
+      <td>El Paco genome reference, v1, 2017 ID:UMMS442-1.74mRNA-1; Wormbase ID:PPA42255</td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Gene(Pristionchus pacificus)</td>
+      <td>spo-11</td>
+      <td>El Paco genome reference, v1, 2017/Wormbase/this paper</td>
+      <td>El Paco genome reference, v1, 2017 ID: UMMS230-10.9mRNA-1; Wormbase ID:PPA33054</td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Gene(Pristionchus pacificus)</td>
+      <td>syp-4</td>
+      <td>El Paco genome reference, v1, 2017/this paper</td>
+      <td>El Paco genome reference, v1, 2017 ID: UMMS245-8.16mRNA-1</td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pristionchus pacificus)</td>
+      <td>PS312, isolate 97</td>
+      <td>Sommer Lab, MPI</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pristionchus pacificus)</td>
+      <td>PS1843</td>
+      <td>Sommer Lab, MPI</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pristionchus pacificus)</td>
+      <td>RSB001</td>
+      <td>Sommer Lab, MPI</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pristionchus pacificus)</td>
+      <td>P. pacificus allele and strain information</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse polyclonal) anti-Ppa-RAD-51</td>
+      <td>Pocono Rabbit Farm and Laboratory, Canadensis, PA</td>
+      <td></td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-Ppa-HOP-1</td>
+      <td>SDIX, Newark, DE</td>
+      <td></td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) anti-FLAG M2</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#F1804; RRID:AB_262044</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) anti-V5</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#R960-25; RRID:AB_2556564</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-V5</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#V8137; RRID:AB_261889</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat polyclonal) anti-HA</td>
+      <td>Novus Biologicals</td>
+      <td>Cat##NB600-362; RRID:AB_10124937</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) anti-a-tubulin, clone DM1A</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#05-829; RRID:AB_310035</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FISH probe to the center of Chromosome IV</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and methods, FISH probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FISH probe to the left end of chromosone X</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and methods, FISH probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Alt-R CRISPR tracrRNA</td>
+      <td>Integrated DNA Technologies, Coralville, IA</td>
+      <td>Cat#1072534</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Guide RNAs, DNA repair templates and genotyping primers</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptococcus pyogenes Cas9-NLS purified protein</td>
+      <td>QB3 MacroLab at UC Berkeley</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy Blood &amp; Tissue Kit</td>
+      <td>Qiagen</td>
+      <td>Cat#69504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>plexWell LP384 Library Preparation Kit</td>
+      <td>seqWell</td>
+      <td>LP384</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>For a list of used software and relevant parameters, see Supplementary file 4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### P. pacificus strains and maintenance
 
 Animals were cultured on NGM media with Escherichia coli OP50 at 20°C under the standard conditions developed for C. elegans (Brenner, 1974). The wild-type strain in which most mutations were generated was a derivative of PS312 designated as ‘97.’ The Sommer lab found that this isolate was more amenable to genome editing by CRISPR-Cas9 than the parental strain. Mutant alleles were maintained in unbalanced heterozygotes. Every few generations and immediately prior to any analysis, single adult hermaphrodites were picked to new plates and allowed to lay embryos for 2 days, after which the genotype of the parent was determined by PCR genotyping. Progeny from heterozygous mothers, 25% of which are homozygous for the meiotic mutation, were analyzed using the assays described here; heterozygous and wild-type siblings were frequently used as controls, in addition to unedited wild-type animals.
 
-## CRISPR/Cas9-mediated genome editing
+### CRISPR/Cas9-mediated genome editing
 
 To modify the P. pacificus genome, we adapted our preferred CRISPR/Cas9 protocol from C. elegans to P. pacificus. Equimolar quantities of Alt-RCRISPR-Cas9 crRNA and tracrRNA molecules (Integrated DNA Technologies, Coralville, IA) were hybridized using a thermocycler (95°C for 5 min, then 25°C for 5 min). 4 µl of 100 µM hybridized tracrRNA/crRNA was combined with 4 µl of 40 µM Streptococcus pyogenes Cas9-NLS purified protein (QB3 MacroLab, UC Berkeley, Berkeley, CA) and incubated at room temperature for 5 min. 2 µl of 100 µM stock of an Ultramer DNA oligo (IDT) repair template containing 50–60 bp homology arms and the desired epitope or mutation sequence was added to the mixture, for a total volume of 10 µl, and injected into the gonads of young adult hermaphrodites aged 24 hr from the final larval (J4) stage. Following a 2–4 hr recovery period, injected animals were allowed to lay embryos at 20°C for 16–20 hr. 4 days later, a fraction of the F1 population (typically 150–200 progeny from 6 to 8 injected P0s) was screened for the presence of the desired mutation or epitope tag sequence by PCR, and candidate alleles were verified by Sanger sequencing. A complete list of crRNA, repair template, and genotyping primer sequences used to generate alleles in this study is provided as Supplementary file 1.
 
 TALEN constructs used in our initial analysis of dmc-1 and spo-11 were generated using a protocol adapted from Zhang et al., 2011 and designed using the TAL Effector Nucleotide Targeter 2.0 website (https://tale-nt.cac.cornell.edu/).
 
-## Brood analysis
+### Brood analysis
 
 To quantify embryonic viability, brood size, and male progeny of wild-type and rad-51 mutants, J4 (virgin) hermaphrodites were picked onto individual plates and transferred every 24 hr over 72 hr total. Embryos were counted each day, after transferring the adult hermaphrodite to a new plate, and kept at 20°C. 3–4 days later, adults were counted on each plate. To analyze spo-11 and dmc-1 mutants, 24 individual J4 hermaphrodites were picked from progeny of a verified heterozygous mutant hermaphrodite. Quantification was performed as in wild type, but after 72 hr, the adult hermaphrodite was lysed and genotyped for the presence of the mutation. Thus, although 24 animals total were quantified from a mixed population of spo-11/+ or dmc-1/+ animals, data from five homozygous spo-11 and 7 homozygous dmc-1 mutant animals are reported in the data table (Figure 5D).
 
-## FISH probes
+### FISH probes
 
 Probes targeting a central locus on chromosome IV and the left end of chromosome X were designed based on two short tandem repeat motifs. Tandem Repeat Finder v4.09 (Benson, 1999) was used to identify tandem repeats in P. pacificus ‘El Paco’ genome assembly (Rödelsperger et al., 2017) using default parameters and a maximum periodicity of 200 bp. The output was then filtered to identify repeats that spanned more than 8 kb. These were compared to the genome sequence using BLAST to identify the subset of sequences restricted to a single major locus per genome. A subset of these repeats was then tested for specific and robust hybridization with oligonucleotide probes. The chromosome IV probe (TCATTGAAATGATCACAATCATTGA) targets a 30-base repeated motif ATGATCATTGAAATGATCACAATCATTGAG, which spans 40.1 kb at a position 11.3 Mb from the left end of chromosome IV. The chromosome X probe (GGTGGTCGACGGCTGCGTCG) targets the 30-base repeat motif GGTGGTCGACGGCTGCGTCGACTGAAGAGT that spans two very close regions of 29.3 kb and 11.1 kb on the left end of the X chromosome. Single-stranded oligonucleotides labeled at the 3′ end with 6-FAM or Cy3 dyes were purchased from IDT and used directly as FISH probes.
 
-## Antibodies
+### Antibodies
 
 Antibodies against Ppa-RAD-51 were generated against a 6xHis-tagged N-terminal fusion protein (aa 1–103) purified from E. coli. Four mice were immunized with the antigen. Serum from one animal, designated S148, was used without purification at 1:300 dilution (Pocono Rabbit Farm and Laboratory, Canadensis, PA). Antibodies against Ppa-HOP-1 were generated by genetic immunization against aa 177–276 (SDIX, Newark, DE) and used in the following experiments at 1:300 dilution. Additional antibodies were purchased from commercial sources and diluted as follows: mouse anti-FLAG (1:500, Sigma #F1804), mouse anti-V5 (1:500, Thermo Fisher #R960-25), rabbit anti-V5 (1:250, Millipore Sigma #V8137), goat anti-HA (1:500, Novus Biologicals #NB600-362), and mouse anti α-tubulin, and clone DM1A (1:400, Millipore #05-829). Secondary antibodies raised in donkey and labeled with Alexa 488, Cy3, or Cy5 were used at 1:400 dilution (Jackson ImmunoResearch Laboratories).
 
-## Cytological analysis
+### Cytological analysis
 
 To stage animals for each experiment, 30–40 J4 larvae were picked from a PCR-verified heterozygous mother onto a fresh plate and allowed to develop for an additional 24 or 48 hr at 20°C. Immunofluorescence and FISH methods for germline tissue were adapted from C. elegans (Phillips et al., 2009a), with minor modifications. Briefly, adult hermaphrodites were dissected on a clean coverslip in egg buffer containing 0.05% tetramisole and 0.1% Tween-20. Samples were fixed for 2 min in egg buffer containing 1% formaldehyde and then transferred to a 1.5 ml tube containing PBST. After 5 min, the buffer was replaced with ice-cold methanol and incubated at room temperature for an additional 5 min. Worms were washed twice with PBST, blocked with Roche blocking reagent, and stained with primary antibodies diluted in Roche blocking solution for 1.5–2 hr at room temperature. Samples were washed with PBST and incubated with secondary antibodies raised in donkeys and conjugated with Alexa-488, Cy3 or Cy5 (Jackson ImmunoResearch Laboratories, West Grove, PA). Worms were then incubated with 1 μg/ml DAPI in PBST, washed with PBST, and mounted in ProLong Gold (Invitrogen) before imaging.
 
@@ -202,7 +467,7 @@ For FISH experiments, age-matched animals were dissected and fixed as for immuno
 
 Images were acquired as stacks of optical sections at 0.2 µm z-spacing using a DeltaVision Elite microscope (GE) with an Olympus 100× NA 1.4 objective. All data were deconvolved using the constrained iterative algorithm included with the softWoRx package (GE) using default cycle numbers and other settings, and maximum-intensity projections were generated for most images presented here. Distances between FISH probes were calculated using 3D peak finding and distance calculation functions within softWoRx. Images were pseudocolored using softWoRx, Fiji (Schindelin et al., 2012), or Adobe Photoshop.
 
-## Genetic map construction
+### Genetic map construction
 
 We generated a genetic map of P. pacificus using a double-cross hybrid strategy that allowed the simultaneous mapping of meiotic COs in male spermatocytes and hermaphrodite oocytes (Figure 8A). We began with three parental lines (P0): ‘CA,’ the ‘wild type’ reference strain PS312 from California; ‘WA,’ PS1843 from Washington State; and ‘LR,’ RSB001 from La Réunion Island. These three strains have been previously used to generate genetic linkage maps (Rödelsperger et al., 2017; Srinivasan et al., 2003; Srinivasan et al., 2002). We crossed these P0 lines to obtain F1 hybrid CA/WA males and CA/LR hermaphrodites. These F1 hybrid types were then mated to produce the F2 generation, so that each F2 inherits a recombinant genome from both of its F1 parents.
 
@@ -216,7 +481,7 @@ By design, our cross generates sex-specific genetic maps since WA haplotypes can
 
 All sequencing data have been submitted to the NIH Sequence Read Archive under accession number PRJNA734516.
 
-## Orthology analysis and phylogenetic inference
+### Orthology analysis and phylogenetic inference
 
 Accessions to all data used in the orthology analysis and phylogenetic inference are available in Supplementary file 2. We downloaded the genomes and annotation files for 66 nematode species (selecting a maximum of two species per genus) from WormBase ParaSite (Howe et al., 2017) and two tardigrade outgroup taxa (Hysibius dujardini and Ramazzottius varieornatus) from tardigrades.org. We selected the longest isoform of each protein-coding gene in each species using AGAT (version 0.5.1; Dainat et al., 2020). To infer the nematode phylogeny, we ran BUSCO (version 5.0.0; using the ‘metazoa_odb10’ dataset; Simão et al., 2015) on all filtered proteomes and used busco2fasta.py (available at https://github.com/lstevens17/busco2fasta; Stevens, 2021, Camacho et al., 2009) to extract 534 single-copy orthologs that were present in at least 70% of species. We aligned the orthologous sequences using MAFFT (version 7.475; Katoh and Standley, 2013) and inferred gene trees using IQ-TREE (version 2.1.2; Nguyen et al., 2015), allowing the substitution model to be automatically selected (Kalyaanamoorthy et al., 2017). We provided the resulting gene trees to ASTRAL-III (version 5.7.4; Zhang et al., 2018) to infer a species tree. The resulting tree was visualized using iTOL (Letunic and Bork, 2016).
 

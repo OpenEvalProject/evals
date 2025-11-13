@@ -89,7 +89,15 @@ Diseases: Wikidata has items for over 16 thousand diseases, the majority of whi
 
 References: Whenever practical, the provenance of each statement added to Wikidata was also added in a structured format. References are part of the core data model for a Wikidata statement. References can either cite the primary resource from which the statement was retrieved (including details like version number of the resource), or they can link to a Wikidata item corresponding to a publication as provided by a primary resource (as an extension of the WikiCite project; Ayers et al., 2019), or both. Wikidata contains over 20 million items corresponding to publications across many domain areas, including a heavy emphasis on biomedical journal articles.
 
-## Bot automation
+![Figure 1.](https://cdn.elifesciences.org/articles/52614/elife-52614-fig1-v1.jpg)
+
+**Figure 1.:** Each box represents one type of biomedical entity. The header displays the name of that entity type (e.g., pharmaceutical product) and the number of Wikidata items for that entity type. The lower portion of each box displays a partial listing of attributes about each entity type and the number of Wikidata items for each attribute. Edges between boxes represent the number of Wikidata statements corresponding to each combination of subject type, predicate, and object type. For example, there are 1505 statements with 'pharmaceutical product' as the subject type, 'therapeutic area' as the predicate, and 'disease' as the object type. For clarity, edges for reciprocal relationships (e.g., 'has part' and 'part of') are combined into a single edge, and scientific articles (which are widely cited in statement references) have been omitted. All counts of Wikidata items are current as of September 2019. The most common data sources cited as references are available in Figure 1—source data 1. Data are generated using the code in https://github.com/SuLab/genewikiworld (archived at Mayers et al., 2020). A more complete version of this graph diagram can be found at https://commons.wikimedia.org/wiki/File:Biomedical_Knowledge_Graph_in_Wikidata.svg.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52614/elife-52614-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Wikidata edits are categorized into four categories: anonymous edits with no user account ('anonymous'), edits from formally registered bots ('group bot'), edits from user accounts that are presumed to be bots based on the user account name ('name bot'), and all other edits from registered, logged-in users. The top graph shows that Wikidata receives substantial contributions from both automated bots and individual users. While the overall number of edits is relatively balanced between these two groups, the lower graph shows that the number of user accounts is much higher than the number of automated bot accounts. Statistics are shown for the periods between December 2017 through December 2019. More statistics are available at https://stats.wikimedia.org/v2/#/wikidata.org.
+
+### Bot automation
 
 To programmatically upload biomedical knowledge to Wikidata, we developed a series of computer programs, or bots. Bot development began by reaching a consensus on data modeling with the Wikidata community, particularly the Molecular Biology WikiProject. We then coded each bot to retrieve, transform, normalize and upload data from a primary resource to Wikidata via the Wikidata application programming interface (API).
 
@@ -111,7 +119,7 @@ There are a number of other tools that are also aimed at solving the identifier 
 
 Moreover, Wikidata is also unique as it is the only tool that allows real-time community editing. So while Wikidata is certainly not complete with respect to identifier mappings, it can be continually improved independent of any centralized effort or curation authority. As a database of assertions and not of absolute truth, Wikidata is able to represent conflicting information (with provenance) when, for example, different curation authorities produce different mappings between entities. (However, as with any bioinformatics integration exercise, harmonization of cross-references between resources can include relationships other than ‘exact match’. These instances can lead to Wikidata statements that are not explicitly declared, but rather the result of transitive inference.)
 
-## Integrative Queries
+### Integrative Queries
 
 Wikidata contains a much broader set of information than just identifier cross-references. Having biomedical data in one centralized data resource facilitates powerful integrative queries that span multiple domain areas and data sources. Performing these integrative queries through Wikidata obviates the need to perform many time-consuming and error-prone data integration steps.
 
@@ -125,7 +133,7 @@ Almost any competent informatician can perform the query described above by inte
 
 This query, and other example SPARQL queries that take advantage of the rich, heterogeneous knowledge network in Wikidata are available at https://www.wikidata.org/wiki/User:ProteinBoxBot/SPARQL_Examples. That page additionally demonstrates federated SPARQL queries that perform complex queries across other biomedical SPARQL endpoints. Federated queries are useful for accessing data that cannot be included in Wikidata directly due to limitations in size, scope, or licensing.
 
-## Crowdsourced curation
+### Crowdsourced curation
 
 Ontologies are essential resources for structuring biomedical knowledge. However, even after the initial effort in creating an ontology is finalized, significant resources must be devoted to maintenance and further development. These tasks include cataloging cross references to other ontologies and vocabularies, and modifying the ontology as current knowledge evolves. Community curation has been explored in a variety of tasks in ontology curation and annotation (see, for example, Bunt et al., 2012; Gil et al., 2017; Putman et al., 2019; Putman et al., 2017; Wang et al., 2016). While community curation offers the potential of distributing these responsibilities over a wider set of scientists, it also has the potential to introduce errors and inconsistencies.
 
@@ -137,7 +145,7 @@ Addition of identifier mappings represents the most common community contributio
 
 The Wikidata crowdsourcing curation model is generalizable to any other external resource that is automatically synced to Wikidata. The code to detect changes and assemble reports is tracked online at https://github.com/SuLab/scheduled-bots (archived at Stupp et al., 2020) and can easily be adapted to other domain areas. This approach offers a novel solution for integrating new knowledge into a biomedical ontology through distributed crowdsourcing while preserving control over the expert curation process. Incorporation into Wikidata also enhances exposure and visibility of the resource by engaging a broader community of users, curators, tools, and services.
 
-## Interactive pathway pages
+### Interactive pathway pages
 
 In addition to its use as a repository for data, we explored the use of Wikidata as a primary access and visualization endpoint for pathway data. We used Scholia, a web app for displaying scholarly profiles for a variety of Wikidata entries, including individual researchers, research topics, chemicals, and proteins (Nielsen et al., 2017). Scholia provides a more user-friendly view of Wikidata content with context and interactivity that is tailored to the entity type.
 
@@ -145,7 +153,7 @@ We contributed a Scholia profile template specifically for biological pathways (
 
 With Scholia template views of Wikidata, we were able to generate interactive pathway pages with comparable content and functionality to that of dedicated pathway databases. Wikidata provides a powerful interface to access these biological pathway data in the context of other biomedical knowledge, and Scholia templates provide rich, dynamic views of Wikidata that are relatively simple to develop and maintain.
 
-## Phenotype based disease diagnosis
+### Phenotype based disease diagnosis
 
 Phenomizer is a web application that suggests clinical diagnoses based on an array of patient phenotypes (Köhler et al., 2009). On the back end, the latest version of Phenomizer uses BOQA, an algorithm that uses ontological structure in a Bayesian network (Bauer et al., 2012). For phenotype-based disease diagnosis, BOQA takes as input a list of phenotypes (using the Human Phenotype Ontology [HPO; Köhler et al., 2017]) and an association file between phenotypes and diseases. BOQA then suggests disease diagnoses based on semantic similarity (Köhler et al., 2009). Here, we studied whether phenotype-disease associations from Wikidata could improve BOQA’s ability to make differential diagnoses for certain sets of phenotypes. We modified the BOQA codebase to accept arbitrary inputs and to be able to run from the command line (code available at https://github.com/SuLab/boqa; archived at Köhler and Stupp, 2020) and also wrote a script to extract and incorporate the phenotype-disease annotations in Wikidata (code available at https://github.com/SuLab/Wikidata-phenomizer; archived at Tu et al., 2020).
 
@@ -157,11 +165,19 @@ As of September 2019, there were 273 phenotype-disease associations in Wikidata 
 
 This result demonstrated an example scenario in which Wikidata-derived annotations could be a useful complement to expert curation. This example was specifically chosen to illustrate a favorable case, and the benefit of Wikidata would likely not currently generalize to a random sampling of other diseases. Nevertheless, we believe that this proof-of-concept demonstrates the value of the crowd-based Wikidata model and may motivate further community contributions.
 
-## Drug repurposing
+### Drug repurposing
 
 The mining of graphs for latent edges has been an area of interest in a variety of contexts from predicting friend relationships in social media platforms to suggesting movies based on past viewing history. A number of groups have explored the mining of knowledge graphs to reveal biomedical insights, with the open source Rephetio effort for drug repurposing as one example (Himmelstein et al., 2017). Rephetio uses logistic regression, with features based on graph metapaths, to predict drug repurposing candidates.
 
 The knowledge graph that served as the foundation for Rephetio was manually assembled from many different resources into a heterogeneous knowledge network. Here, we explored whether the Rephetio algorithm could successfully predict drug indications on the Wikidata knowledge graph. Based on the class diagram in Figure 1, we extracted a biomedically-focused subgraph of Wikidata with 19 node types and 41 edge types. We performed five-fold cross validation on drug indications within Wikidata and found that Rephetio substantially enriched the true indications in the hold-out set. We then downloaded historical Wikidata versions from 2017 and 2018 and observed marked improvements in performance over time (Figure 5). We also performed this analysis using an external test set based on Drug Central, which showed a similar improvement in Rephetio results over time (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/52614/elife-52614-fig5-v1.jpg)
+
+**Figure 5.:** We analyzed three snapshots of Wikidata using Rephetio, a graph-based algorithm for predicting drug repurposing candidates (Himmelstein et al., 2017). We evaluated the performance of the Rephetio algorithm on three historical versions of the Wikidata knowledge graph, quantified based on the area under the receiver operator characteristic curve (AUC). This analysis demonstrated that the performance of Rephetio in drug repurposing improved over time based only on improvements to the underlying knowledge graph. Details of this analysis can be found at https://github.com/SuLab/WD-rephetio-analysis (archived at Mayers and Su, 2020).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52614/elife-52614-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The analysis in Figure 5 was based on a cross-validation of indications that were present in Wikidata. This time-resolved analysis was run using an external gold standard set of indications from Drug Central (Ursu et al., 2017).
 
 This analysis demonstrates the value of a community-maintained, centralized knowledge base to which many researchers are contributing. It suggests that scientific analyses based on Wikidata may continually improve irrespective of any changes to the underlying algorithms, but simply based on progress in curating knowledge through the distributed, and largely uncoordinated efforts of the Wikidata community.
 

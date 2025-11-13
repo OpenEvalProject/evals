@@ -10,15 +10,15 @@
 
 ### Affiliations
 
-1. https://ror.org/02f009v59 Department of Evolutionary and Environmental Biology and Institute of Evolution, University of Haifa Haifa Israel
-2. https://ror.org/04mhzgx49 Blavatnik School of Computer Science, Tel-Aviv University Tel Aviv Israel
-3. https://ror.org/03qxff017 Department of Ecology, Evolution, and Behaviour, Alexander Silberman Institute of Life Sciences, The Hebrew University of Jerusalem Jerusalem Israel
+1. Department of Evolutionary and Environmental Biology and Institute of Evolution, University of Haifa Haifa Israel ([ROR:02f009v59](https://ror.org/02f009v59))
+2. Blavatnik School of Computer Science, Tel-Aviv University Tel Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))
+3. Department of Ecology, Evolution, and Behaviour, Alexander Silberman Institute of Life Sciences, The Hebrew University of Jerusalem Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))
 
 † Corresponding author
 
 ## Abstract
 
-Optimal foraging theory posits that foragers adjust their movements based on prey abundance to optimize food intake. While extensively studied in terrestrial and marine environments, aerial foraging has remained relatively unexplored due to technological limitations. This study, uniquely combining BirdScan-MR1 radar and the Advanced Tracking and Localization of Animals in Real-Life Systems biotelemetry system, investigates the foraging dynamics of Little Swifts ( Apus affinis ) in response to insect movements over Israel’s Hula Valley. Insect movement traffic rate (MoTR) substantially varied across days, strongly influencing swift movement. On days with high MoTR, swifts exhibited reduced flight distance, increased colony visit rate, and earlier arrivals at the breeding colony, reflecting a dynamic response to prey availability. However, no significant effects were observed in total foraging duration, flight speed, or daily route length. Notably, as insect abundance increased, inter-individual distances decreased. These findings suggest that Little Swifts optimize their foraging behavior in relation to aerial insect abundance, likely influencing reproductive success and population dynamics. The integration of radar technology and biotelemetry systems provides a unique perspective on the interactions between aerial insectivores and their prey, contributing to a comprehensive understanding of optimal foraging strategies in diverse environments.
+Optimal foraging theory posits that foragers adjust their movements based on prey abundance to optimize food intake. While extensively studied in terrestrial and marine environments, aerial foraging has remained relatively unexplored due to technological limitations. This study, uniquely combining BirdScan-MR1 radar and the Advanced Tracking and Localization of Animals in Real-Life Systems biotelemetry system, investigates the foraging dynamics of Little Swifts (Apus affinis) in response to insect movements over Israel’s Hula Valley. Insect movement traffic rate (MoTR) substantially varied across days, strongly influencing swift movement. On days with high MoTR, swifts exhibited reduced flight distance, increased colony visit rate, and earlier arrivals at the breeding colony, reflecting a dynamic response to prey availability. However, no significant effects were observed in total foraging duration, flight speed, or daily route length. Notably, as insect abundance increased, inter-individual distances decreased. These findings suggest that Little Swifts optimize their foraging behavior in relation to aerial insect abundance, likely influencing reproductive success and population dynamics. The integration of radar technology and biotelemetry systems provides a unique perspective on the interactions between aerial insectivores and their prey, contributing to a comprehensive understanding of optimal foraging strategies in diverse environments.
 
 ## Introduction
 
@@ -32,9 +32,203 @@ To test these predictions, we studied how Little Swifts adjust their aerial fora
 
 The movement traffic rate (MoTR) (1207.7 ± 566.7 insects km–1 hr–1) varied substantially between different days during the swifts’ breeding season, with a minimum of 164.4 and a maximum of 2518.9 insects km–1 hr–1 (n = 31 days; Figure 1A). No seasonal trend was found in MoTR (Spearman’s rank correlation between the ordinal date and the MoTR, ρ = −0.007, p=0.971, n = 31 days; Table 1). We found a significant negative effect of the MoTR on the swifts’ average distance from the breeding colony (Prediction 1) (estimate <−0.001, t = −5.27, p<0.001, n = 31 days, Gamma Generalized Linear Model [GLM]; Figure 1B). Similarly, a significant negative effect of MoTR was also found in relation to the birds’ maximum distance from the breeding colony (Prediction 2) (estimate = −1.818, t = −3.52, p=0.001, n = 31 days, Gaussian GLM; Figure 1C). We found no effect of MoTR on the daily route (Prediction 3) (estimate <−0.001, t = −1.65, p=0.123, n = 15 days, Gamma GLM) and on the duration of foraging (Prediction 4) (estimate = 0.029, t = 1.05, p=0.315, n = 15 days, Gaussian GLM). The frequency of visits at the breeding colony (Prediction 5) (see the average model in Table 2) was significantly and positively affected by MoTR (estimate = 0.001, t = 3.78, p<0.001, n = 31 days, Gamma GLM; Figure 1D) and negatively affected by the distance of the birds from the breeding colony (estimate <−0.001, t = 2.03, p=0.043, n = 31 days). We found that there was no effect of MoTR on the average flight speed (Prediction 6) (estimate <−0.001, t = −1.33, p=0.193, n = 31 days, Gaussian GLM). The time of arrival at the breeding colony for nighttime roosting was significantly and negatively affected by the MoTR (Prediction 7) (estimate = −0.011, t = −2.27, p=0.034, n = 23 days, Gaussian GLM), such that birds arrived earlier to roost in days characterized by abundant insect prey. The departure time from the breeding colony following overnight roosting has resulted in a consistently observed duration of nighttime roosting (10.45 ± 0.68 hr). This duration showed no correlation with the preceding day’s MoTR (Prediction 8) (estimate = 0.002, t = 0.26, p=0.801, n = 20, Gaussian GLM). Conversely, it was significantly and positively influenced by the evening arrival time to the colony on the prior day (Prediction 9a) (estimate = 0.634, t = 2.81, p=0.016, n = 14 days, Gaussian GLM; Figure 1E). Furthermore, the departure time from the roost exhibited no association with MoTR of the same day (Prediction 9b) (estimate = −0.005, t = −1.07, p=0.297, n = 20, Gaussian GLM). MoTR significantly and negatively affected (estimate <−0.001, t = −3.12, p=0.004, n = 31 days, Gamma GLM) the distance between individuals (Prediction 10), while, as expected, the distance between individuals was significantly and positively correlated with the distance from the colony (estimate <0.001, t = 5.02, p<0.001, n = 31 days; Figure 1F).
 
+**Table 1.**
+ Summary of the statistical analyses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dependent variable</th>
+      <th>Independent variable</th>
+      <th>Estimate</th>
+      <th>t value</th>
+      <th>p value</th>
+      <th>Sample size (days)</th>
+      <th>Statistical test</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Seasonal trend: average daily MoTR</td>
+      <td>Ordinal date</td>
+      <td>–0.007</td>
+      <td></td>
+      <td>0.971</td>
+      <td>31</td>
+      <td>Spearman’s rank correlation</td>
+    </tr>
+    <tr>
+      <td>Prediction 1: Average distance from breeding colony</td>
+      <td>Average daily MoTR</td>
+      <td>&lt;−0.001</td>
+      <td>–5.27</td>
+      <td>&lt;0.001</td>
+      <td>31</td>
+      <td>Gamma GLM</td>
+    </tr>
+    <tr>
+      <td>Prediction 2: Maximum distance from breeding colony</td>
+      <td>Average daily MoTR</td>
+      <td>–1.818</td>
+      <td>–3.52</td>
+      <td>0.001</td>
+      <td>31</td>
+      <td>Gaussian GLM</td>
+    </tr>
+    <tr>
+      <td>Prediction 3: Daily route</td>
+      <td>Average daily MoTR</td>
+      <td>&lt;−0.001</td>
+      <td>–1.65</td>
+      <td>0.123</td>
+      <td>15</td>
+      <td>Gamma GLM</td>
+    </tr>
+    <tr>
+      <td>Prediction 4: Daily duration of foraging</td>
+      <td>Average daily MoTR</td>
+      <td>0.029</td>
+      <td>1.05</td>
+      <td>0.315</td>
+      <td>15</td>
+      <td>Gaussian GLM</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Prediction 5: Frequency of visits at breeding colony</td>
+      <td>Average daily MoTR (the first of two independent variables)</td>
+      <td>0.001</td>
+      <td>3.78</td>
+      <td>&lt;0.001</td>
+      <td>31</td>
+      <td rowspan="2">Gamma GLM</td>
+    </tr>
+    <tr>
+      <td>Distance from breeding colony (the second of two independent variables)</td>
+      <td>&lt;−0.001</td>
+      <td>2.03</td>
+      <td>0.043</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>Prediction 6: Average flight speed</td>
+      <td>Average daily MoTR</td>
+      <td>&lt;−0.001</td>
+      <td>–1.33</td>
+      <td>0.193</td>
+      <td>31</td>
+      <td>Gaussian GLM</td>
+    </tr>
+    <tr>
+      <td>Prediction 7: Evening arrival time to breeding colony</td>
+      <td>Average daily MoTR</td>
+      <td>–0.011</td>
+      <td>–2.27</td>
+      <td>0.034</td>
+      <td>23</td>
+      <td>Gaussian GLM</td>
+    </tr>
+    <tr>
+      <td>Prediction 8: Departure from breeding colony (overnight stay)</td>
+      <td>MoTR on the previous day</td>
+      <td>0.002</td>
+      <td>0.26</td>
+      <td>0.801</td>
+      <td>20</td>
+      <td>Gaussian GLM</td>
+    </tr>
+    <tr>
+      <td>Prediction 9a: Departure from breeding colony (overnight stay)</td>
+      <td>Evening arrival time to breeding colony (previous day)</td>
+      <td>0.634</td>
+      <td>2.81</td>
+      <td>0.016</td>
+      <td>14</td>
+      <td>Gaussian GLM</td>
+    </tr>
+    <tr>
+      <td>Prediction 9b: Departure from breeding colony (overnight stay)</td>
+      <td>MoTR on the same day</td>
+      <td>–0.005</td>
+      <td>–1.07</td>
+      <td>0.297</td>
+      <td>20</td>
+      <td>Gaussian GLM</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Prediction 10: Distance between individuals</td>
+      <td>Average daily MoTR (the first of two independent variables)</td>
+      <td>&lt;−0.001</td>
+      <td>–3.12</td>
+      <td>0.004</td>
+      <td>31</td>
+      <td rowspan="2">Gamma GLM</td>
+    </tr>
+    <tr>
+      <td>Distance from breeding colony (the second of two independent variables)</td>
+      <td>&lt;0.001</td>
+      <td>5.02</td>
+      <td>&lt;0.001</td>
+      <td>31</td>
+    </tr>
+  </tbody>
+</table>
+
+_GLM, Generalized Linear Model; MoTR, movement traffic rate._
+
+**Table 2.**
+ Top models (ΔAIC <2) for colony visit frequency.The best model includes ‘Distance from breeding colony’ and ‘Average daily MoTR’.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Intercept</th>
+      <th>Distance frombreeding colony</th>
+      <th>Average dailyMoTR</th>
+      <th>df</th>
+      <th>LogLik</th>
+      <th>AICc</th>
+      <th>Delta</th>
+      <th>Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4</td>
+      <td>2.174</td>
+      <td>&lt;−0.001</td>
+      <td>0.001</td>
+      <td>4</td>
+      <td>–108.2</td>
+      <td>225.9</td>
+      <td>0.00</td>
+      <td>0.626</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1.093</td>
+      <td></td>
+      <td>0.001</td>
+      <td>3</td>
+      <td>–110.1</td>
+      <td>227.1</td>
+      <td>1.13</td>
+      <td>0.356</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 1.](https://cdn.elifesciences.org/articles/96573/elife-96573-fig1-v1.jpg)
+
+**Figure 1.:** (A) Average daily insect abundance in relation to an ordinal date. Triangles represent days when data allowed examining swift movement in relation to MoTR. MoTR varied across days within the swifts’ breeding season by more than an order of magnitude. (B) The effect of MoTR on the average flight distance from the breeding colony. (C) The effect of MoTR on the maximal flight distance from the breeding colony. (D) The effect of MoTR on the average daily frequency of visits at the breeding colony; inset: coefficient value and confidence intervals of the coefficient resulting from the model testing the effects of MoTR and distance from the breeding colony on the frequency of visits. (E) The relationship between the time of departure from the breeding colony in the morning after the overnight stay and the time of arrival to the colony prior to the overnight stay the previous evening. (F) The effect of MoTR on the daily average distance between foraging individuals; inset: coefficient value and confidence intervals of the coefficient resulting from the model testing the effects of MoTR and distance from the colony on the distance between individuals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96573/elife-96573-fig1-figsupp1-v1.jpg)
+
 ## Discussion
 
-## Movement optimization during breeding
+### Movement optimization during breeding
 
 Our study provides novel insights regarding the optimal foraging of aerial insectivores by uniquely employing advanced tools to simultaneously track the movement and behavior of insectivore foragers and the dynamics of their insect prey aloft. We observed a reduction in average and maximum flight distance (Predictions 1 and 2) from the breeding colony in relation to MoTR, indicating that swifts can identify insect prey abundance and accordingly modify their flight distance and avoid using distant foraging locations when sufficient prey is found near the breeding colony. These results indicate that a significant decrease in insect abundance may lead swifts to expend more energy foraging in distant areas from the breeding colony, potentially impacting parental flight efficiency. Providing food to the young is a critical and enduring activity in bird life, influencing physiology (Karell et al., 2009; Bukaciński et al., 1998), immunity (Appleby et al., 1999), and survival (Bukaciński et al., 1998; Brinkhof and Cavé, 1997). Consequently, a reduction in flying insect abundance forcing birds to forage farther from the colony could have broad implications for the reproduction, survival, and population ecology of insectivores. Nevertheless, we investigated the impact of MoTR on the total daily route and foraging duration (Predictions 3 and 4). Our findings revealed no significant effects, suggesting that daily energy expenditure attributed to flight behavior does not exhibit a consistent pattern in response to the highly variable insect prey abundance and the associated shifts in swift flight behavior (higher proximity to the colony when prey is abundant).
 
@@ -42,7 +236,7 @@ While the theory of central-place foraging suggests that traveling to a distant 
 
 The availability of resources in a bird’s habitat may affect the length of its daily route (Stauss et al., 2005), while others show no significant correlation (Tremblay et al., 2005). We found that the swifts maintained rather constant flight effort, regardless of the abundance of their prey. Similarly, foraging duration was also not related to MoTR. Further, our results suggest that food abundance had no significant impact on flight speed (Prediction 6). Consequently, our results support the idea that birds optimize food provisioning to the young during breeding, which could increase the birds’ reproductive success at the expense of foraging energetics considerations. Another property of food provisioning to the young that may affect energy intake is the size of the load, but unfortunately, we have no information on whether the load size brought to the nest varied with insect abundance.
 
-## Behavior optimization during breeding
+### Behavior optimization during breeding
 
 Birds may adjust their foraging timing to optimize food intake (Bednekoff and Houston, 1994; Bonter et al., 2013; Amichai and Kronfeld-Schor, 2019; Salamolard and Weimerskirch, 1993). Our findings reveal that when insect prey was abundant in the airspace, the swifts’ evening arrival time (Prediction 7) at the breeding colony was earlier than in days when insects were scarce. This result aligns with prior research on the predation risk-food availability trade-off, indicating that birds tend to avoid foraging during twilight hours due to elevated predation risk during this period (Bonter et al., 2013; Lima, 1988).
 
@@ -54,11 +248,11 @@ The influence of resource abundance on social foraging in aerial insectivorous b
 
 **Figure 2.:** Differences in the movement routes of two individuals (marked in light blue and orange) on two consecutive days that were characterized by large differences in movement traffic rate (MoTR). (A) 09.04.2019 (average MoTR = 1904.2 insects km–1 hr–1). (B) 10.04.2019 (average MoTR = 983.5 insects km–1 hr–1).
 
-## Central-place foraging
+### Central-place foraging
 
 Many studies on central-place foraging examined foraging characteristics in relation to the distance and quality of the foraging patch (Holder and Polis, 1987; Charnov, 1976; Bell, 1990; Olsson et al., 2008; Bryant and Turner, 1982; Kacelnik and Cuthill, 1990; Rosenberg and McKelvey, 1999; Elgin et al., 2020). Our research deals with the abundance of food in the aerial habitat, which is highly dynamic, as corroborated by our findings that insect abundance varied greatly, by more than an order of magnitude, between different days during the swifts’ breeding period. Although insect abundance aloft varies with time, it is not clear to what extent it varies in space as several studies suggested that insect bioflow is correlated over large spatial scales (Chapman et al., 2002; Welti et al., 2022; Goulson et al., 2005). Hence, patches of high insect concentration might be transient and spatially variable; thus, further study is needed to characterize the spatial properties of insect bioflow. It is known that insect concentrations occur under specific meteorological conditions, for example, on the edges of air fronts (Reynolds et al., 2018), as well as near topographic features where the wind may subside (Drake and Reynolds, 2012). We call for a better description of the spatial properties of insects in the aerial habitat, specifically the horizontal and vertical distribution of insects in the airspace and how it might be affected by different factors, including topography, coastlines, and weather conditions. Our study, with its primary focus elsewhere, did not delve into this aspect. Nonetheless, the availability of today’s advanced technological tools attests to the feasibility of conducting such research.
 
-## Integrating advanced tracking systems for ecological research
+### Integrating advanced tracking systems for ecological research
 
 Due to its nature, aeroecological research is limited by the paucity of appropriate tools to track aerial animals and their dynamic environment in detail (Nathan, 2005; Kunz et al., 2008). Several recent technological developments facilitated a better grasp of the aerial environment, allowing the examination of various aspects of aerial ecology that were impossible to test in the past or that were explored only with coarse resolution (Nathan et al., 2005). The combination of two advanced systems, namely ATLAS and the BirdScan-MR1 radar, allows, for the first time, a detailed investigation of fundamental aspects of animal foraging in the airspace through the study of predator–prey interactions between Little Swifts and their insect prey. Recent progress in wildlife tracking technologies enables new insights into the movement patterns of animals, including their causes, consequences, and underlying mechanisms, facilitated by the integration of complementary tools (Nathan et al., 2022), as demonstrated here. Specifically, the unique combination of advanced technologies to expand the boundaries of aeroecological research can be expanded and further utilized for understanding how changes in the aerial habitat that are related to human activities may affect organisms that live in this unique and dynamic habitat (Hallmann et al., 2014; Møller, 2019). These insights may play a crucial role in the conservation of aerial insectivores that are dramatically affected by human related alteration, including habitat degradation and the use of pesticides (Stanton et al., 2016; Nocera et al., 2012).
 
@@ -66,7 +260,7 @@ Due to its nature, aeroecological research is limited by the paucity of appropri
 
 Little Swifts breed in Israel between March and September, during which they complete two breeding cycles. In the swifts' breeding colony, dozens of pairs inhabit interconnected nests crafted from feathers and stems. Each nest features a narrow entrance designed to deter predators and obscure visibility inside. This setup presents challenges in accurately assessing nesting conditions and determining the age of chicks within the nests. Both partners incubate alternately, and during the night, they both stay in the nest. The incubation period lasts 18–22 days, and fledging occurs 35–40 days after hatching. Both parents participate in the feeding of the young (Shirihai et al., 1996; Paz, 1987). We studied swifts in a breeding colony located in the center of the Hula Valley in northeastern Israel (33.05°N/35.59°E). The valley consists of a mosaic of agricultural land with various crops, mainly deciduous tree plantations and open field crops, as well as wetlands and urbanized areas. Our field observations suggest that there are about 30–40 nesting pairs in the colony.
 
-## Swift movement data collection
+### Swift movement data collection
 
 During March–May of 2019 and 2021, employing a 9 m mist net outside the breeding colony, we captured Little Swifts during their early morning departure after the night stay. Our bird-trapping activities were conducted under permits (2019-42174 and 2021-42762) of the Israel Nature and Parks Authority. Captured swifts were measured and ringed with a standard aluminum ring to allow individual identification. We equipped 32 swifts with ATLAS transmitters weighing 1–1.15 g, less than 5% of the body mass of each individual.
 
@@ -78,18 +272,18 @@ The ATLAS is a reverse GPS-like system that operates using time-difference-of-ar
 
 We analyzed a total of 841,342 localizations during days in which we obtained both bird movement data from the ATLAS and insect abundance data from the radar (see below). The data were collected over a total of 31 days (19 days in 2019 and 12 days in 2021). Because swifts are active during the daytime, we used only ATLAS data from the main activity hours of the swifts during the day, from sunrise to sunset (Thieurmel and Elmarhraoui, 2019) (personal observations and movement data obtained from the ATLAS).
 
-We applied several filters to reduce inaccuracies in the movement tracks as a result of localization errors (Gupte et al., 2022). Since there is no accurate information about the maximum flight speed of Little Swifts, we relied on the maximum flight speed of the Common Swift (Henningsson et al., 2010) to filter out tracks with a flight speed that exceeded 30 m/s (9.6% of the raw data). We additionally utilized the standard error of the localization (StdLoc) to assess position quality, identifying outliers (1.5 times the interquartile range) of StdLoc (Tukey, 1977). Setting an upper limit at 30.1 m, we filtered out positions with low accuracy, amounting to 10.7% of the data. Additionally, we applied a minimum threshold of 4 (Arnon et al., 2023) for the Number of ATLAS Base Stations (NBS) receiving a tag’s signals during each transmission to filter out localizations with low confidence of accuracy (4.0% of the data; range of NBS after filtering: 4–14, X¯=6.6±1.9 NBS). We then excluded tracks in which consecutive locations were more than 500 m away from each other (0.7% of the data), likely representing an error in the automatic calculation of the tag’s position. The filtering process removed a total of 24.5% of the raw data. To ensure the overall dataset represented the movement of all birds without being influenced by the unusual behavior of a few, we excluded data from days with fewer than four active tags (range of number of tags after filtering: 4–10, mean ± SD = 6.9 ± 1.5 tags per day). This threshold eliminated days with a small number of tagged birds recorded (24.8% of the data). As a result, a total of 49.4% of the original raw data was excluded to maintain a high level of reliability and accuracy; analysis was based on 415,420 positions, with a mean of 1491 ± 899 locations per tag per day.
+We applied several filters to reduce inaccuracies in the movement tracks as a result of localization errors (Gupte et al., 2022). Since there is no accurate information about the maximum flight speed of Little Swifts, we relied on the maximum flight speed of the Common Swift (Henningsson et al., 2010) to filter out tracks with a flight speed that exceeded 30 m/s (9.6% of the raw data). We additionally utilized the standard error of the localization (StdLoc) to assess position quality, identifying outliers (1.5 times the interquartile range) of StdLoc (Tukey, 1977). Setting an upper limit at 30.1 m, we filtered out positions with low accuracy, amounting to 10.7% of the data. Additionally, we applied a minimum threshold of 4 (Arnon et al., 2023) for the Number of ATLAS Base Stations (NBS) receiving a tag’s signals during each transmission to filter out localizations with low confidence of accuracy (4.0% of the data; range of NBS after filtering: 4–14, $X¯=6.6\pm1.9$ NBS). We then excluded tracks in which consecutive locations were more than 500 m away from each other (0.7% of the data), likely representing an error in the automatic calculation of the tag’s position. The filtering process removed a total of 24.5% of the raw data. To ensure the overall dataset represented the movement of all birds without being influenced by the unusual behavior of a few, we excluded data from days with fewer than four active tags (range of number of tags after filtering: 4–10, mean ± SD = 6.9 ± 1.5 tags per day). This threshold eliminated days with a small number of tagged birds recorded (24.8% of the data). As a result, a total of 49.4% of the original raw data was excluded to maintain a high level of reliability and accuracy; analysis was based on 415,420 positions, with a mean of 1491 ± 899 locations per tag per day.
 
-## Movement analysis
+### Movement analysis
 
 To examine bird movement (Figure 2) and behavior, we calculated the average and maximum distance from the breeding colony. To determine the average daily route and duration of foraging, we analyzed data from 15 days with a minimum of 10 hr of consistent tag activity, excluding cases of tag malfunction or battery issues. There was no tag reception when the swifts entered the building that housed their breeding colony, allowing easy determination of when they visited the colony. To standardize the effect of day length on the foraging duration, we calculated and subtracted the day length from the total daily foraging time (Day duration – Daily foraging duration = Net foraging duration). The resulting data represent the foraging duration in relation to sunrise and sunset, independent of day length. To characterize the rate of visitation to the breeding colony, we defined visits as events in which birds stayed in the colony for at least 60 s. The time of arrival to the breeding colony for night roosting was calculated as minutes after sunset, within a 60 min window around sunset, and the same was done for the morning departure time, but in relation to sunrise. We calculated the average departure and arrival time of all active tags for each day.
 
 We omitted days when the nighttime arrival to the colony was missing (e.g., days when the battery ran out during the day) or days when the morning departure time from the colony was missing. Consequently, we were left with 23 days of arrival data, 20 days of departure data, and 20 days of departure in which data existed regarding the abundance of insects (below) on the previous day. To compute the average distance between individuals, we calculated the average position every 5 min for each bird and omitted cases where we had simultaneous location data of less than four individuals. We then calculated the daily average of the distance between individuals.
 
-## Radar measurements of insect abundance
+### Radar measurements of insect abundance
 
 Studies have shown that environmental variables like temperature and wind significantly influence the spatial abundance of insects across different crop areas (Goulson et al., 2005; Gruebler et al., 2008). To estimate the abundance of insects aloft, we used the daily average MoTR of aerial insects recorded by the BirdScan-MR1 radar (Knop et al., 2023) (Swiss-birdradar, Winterthur, Switzerland) located in the Hula Valley (33.06°N/35.35°E), 6.5 km north of the Little Swifts’ breeding colony. The radar is capable of detecting flying animals, including songbirds, waterbirds, bird flocks, large single birds, and insects, by classifying them according to the patterns of the echo (Zaugg et al., 2008; Zaugg et al., 2017). The Radar Cross Section (RCS) quantifies the reflectivity of a target, serving as a proxy for size by representing the cross-sectional area of a sphere with identical reflectivity to water, whose diameter equals the target’s body length (Chilson et al., 2018). Recent findings indicate that the BirdScan-MR1 radar can detect insects with an RCS as low as 3 mm² (Haest et al., 2024), with decreasing detection probability at increasing altitudes. The detection threshold, defined by the STC setting, was 93 dBm, and the transmit power was 25 kW (Haest et al., 2024). These capabilities make the radar suitable for locating the primary prey of swifts, which typically range in size from 1 to 16 mm (Collins et al., 2010). In addition, the radar automatically calculates the height, speed, and direction of movement of the object. The radar has an upward-pointing antenna that picks up objects passing within a 90–120° vertical cone over it. Insects are recorded by the radar from a height of about 50 m above ground level up to a height of about 700 m above the ground. We calculated the daily averaged MoTR from 5 am to 8 pm local time as a standard measure of insect abundance rates. This was done by counting insects per hour across a 1 km cross-section and averaging these counts over a single day, allowing for comparisons of aerial movement between different days (Liechti et al., 2019). We matched the insect data obtained from the radar with the swift movement data obtained from the ATLAS.
 
-## Statistical analysis
+### Statistical analysis
 
 Using the ‘stats’ package in R (R Development Core Team, 2021), we applied GLMs and Spearman’s correlations to explore the effects of the MoTR (continuous independent variable) on the movement and behavior parameters of the swifts during the breeding season. If the GLM, with more than one explanatory variable, had a ΔAIC <2 relative to other models, we employed the MuMIn (Barton, 2021) package to generate an average model. Specifically, we investigated how the distance between individuals is influenced by both the distance of birds from the colony and MoTR. Accounting for the expected increase in individual distance when flying farther from the breeding colony due to a larger air volume occupied by the moving birds, these factors were integrated into our GLM analysis. The same approach was applied in modeling the frequency of visits to the colony. To distinguish the effects of breeding colony distance and insect abundance on the distance between individuals, our GLM incorporated both variables, ensuring a comprehensive understanding of the impact of distance from the colony (Figure 1—figure supplement 1). In the model testing which factors affected the time of arrival at the colony, the frequency of visits was highly correlated with MoTR and was therefore removed from the model at an initial stage. The departure time from the colony and the length of the daily route did not significantly affect the arrival time and were left out of the model at a later stage. Consequently, the final model included only MoTR as an explanatory factor for colony arrival time. We additionally tested if the time of departure from the breeding colony after the overnight stay was related to three explanatory variables, MoTR, MoTR on the previous day, and the arrival time to the colony for the overnight stay on the previous day. We used the fitdistrplus package (Delignette-Muller and fitdistrplus, 2015) to identify the appropriate distribution for each GLM. We used R version 4.1.2, R Development Core Team, 2021 for all the statistical analyses. Data reported are average ± SD unless noted otherwise, and the analyses were two-tailed with a critical α = 0.05.

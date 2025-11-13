@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01bmjkv45 Friedrich Miescher Institute for Biomedical Research Basel Switzerland
-2. https://ror.org/02s6k3f65 Faculty of Science, University of Basel Basel Switzerland
+1. Friedrich Miescher Institute for Biomedical Research Basel Switzerland ([ROR:01bmjkv45](https://ror.org/01bmjkv45))
+2. Faculty of Science, University of Basel Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
 
 † Corresponding author
 
@@ -26,9 +26,29 @@ In humans, externally driven and self-generated activity patterns can be experim
 
 ## Results
 
-## Tlx3 positive L5 IT neurons distinguished closed and open loop visuomotor coupling
+### Tlx3 positive L5 IT neurons distinguished closed and open loop visuomotor coupling
 
 To investigate neuron type-specific differences in activity patterns at locomotion onsets with and without self-generated visual feedback in mouse dorsal cortex, we quantified locomotion onset activity using widefield calcium imaging (Wekselblatt et al., 2016). A GCaMP variant was expressed using either a retro-orbital injection of an AAV-PHP.eB vector (Chan et al., 2017), or a cross between a Cre line and the Ai148 GCaMP6 reporter line (Daigle et al., 2018) (see Methods; Figure 1A, Supplementary file 2). Mice expressed a GCaMP variant either brain wide (C57BL/6), or in genetically identified subsets of excitatory or inhibitory neurons using Cre driver lines. Please note, we use the term ‘brain wide’ here to describe an expression pattern that was determined by the intersection of the AAV-PHP.eB tropism and the expression pattern of EF1α or hSyn1 promoters but that was otherwise brain wide (see Discussion). Prior to the start of the imaging experiments, mice were implanted with a crystal skull cranial window (Kim et al., 2016). We used crystal skull preparations as we found that hemodynamic artifacts were smaller in this preparation compared to those observed in clear skull preparations (Figure 1—figure supplement 1A and B). For all experiments, mice were head-fixed and free to locomote on a spherical treadmill (Figure 1B). Activity from dorsal cortex was imaged while mice were in a closed loop visuomotor condition, in which locomotion on the spherical treadmill controlled forward movement in a virtual corridor. Following this, mice were exposed to an open loop condition during which mice were presented with a replay of the visual flow they had self-generated in the preceding closed loop condition.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/86805/elife-86805-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of GCaMP expression strategy. We either injected an AAV-PHP.eB virus retro-orbitally to express GCaMP brain wide (C57BL/6), in cortical excitatory neurons (Emx1-Cre) or in a subset of SST positive interneurons (see Methods and Supplementary file 2), or used the progeny of a cross of a cell type-specific Cre driver line (NeuronalCre: Cux2-CreERT2, Scnn1a-Cre, Tlx3-Cre, Ntsr1-Cre, PV-Cre, VIP-Cre, or SST-Cre) with the Ai148 GCaMP6 reporter line. All mice were then implanted with a crystal skull cranial window prior to imaging experiments. (B) Schematic of the experimental setup. We imaged GCaMP fluorescence under 470 nm LED illumination with an sCMOS camera through a macroscope. Mice were free to locomote on an air-supported spherical treadmill while coupled (closed loop), uncoupled (open loop), or no (dark) visual flow in the form of movement along a virtual corridor was displayed on a toroidal screen placed in front of the mouse. Walls of the virtual corridor were patterned with vertical sinusoidal gratings. In a separate condition, we then presented drifting grating stimuli (grating session, see Methods). (C) Average response in an example C57BL/6 mouse that expressed GCaMP6 brain wide during closed loop locomotion onsets (top row, 83 onsets) and open loop locomotion onsets (bottom row, 153 onsets). Locomotion onsets in both conditions activated dorsal cortex similarly. (D) As in C, but in an example Tlx3-Cre × Ai148 mouse that expressed GCaMP6 in layer 5 (L5) intratelencephalic (IT) neurons during closed loop locomotion onsets (top row, 88 onsets) and open loop locomotion onsets (bottom row, 83 onsets). Note that activity decreased in posterior regions of dorsal cortex during closed loop locomotion onsets. (E) Example crystal skull craniotomy marking the six regions of interest in each hemisphere we selected: primary visual cortex (V1, red), retrosplenial cortex (RSC, blue), antero-medial secondary visual cortex (V2am, green), primary motor cortex (M1, yellow), anterior cingulate cortex (A24b, purple), and secondary motor cortex (M2, cyan). The white cross marks bregma. (F) Average response during closed loop locomotion onsets in C57BL/6 mice that expressed GCaMP brain wide in the six regions of interest (activity was averaged across corresponding regions in both hemispheres). Mean (lines) and 90% confidence interval (shading) are calculated as a hierarchical bootstrap estimate for each time bin (see Methods and Supplementary file 1). (G) As in F, but for open loop locomotion onsets. (H) As in F, but for visual flow onsets in the open loop condition restricted to times when the mice were not locomoting. (I) Average response during closed loop locomotion onsets in Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons, activity was averaged across corresponding regions in both hemispheres. Mean (lines) and 90% confidence interval (shading) are calculated as a hierarchical bootstrap estimate for each time bin (see Methods and Supplementary file 1). (J) As in I, but for open loop locomotion onsets. (K) As in J, but for visual flow onsets during open loop sessions restricted to times when the mice were not locomoting. (L) Similarity of the average closed and open loop locomotion onset responses quantified as the correlation coefficient between the two in a window –5 s to +3 s around locomotion onset (see Methods). Error bars indicate SEM over the 12 (6 per hemisphere) cortical regions. Statistical comparisons are against the Tlx3 data and were corrected for family-wise error rate (see Methods and Supplementary file 1): adjusted significance thresholds, n.s.: not significant, *: p<0.05/9, **: p<0.01/9, ***: p<0.001/9.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86805/elife-86805-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Average responses during locomotion onsets in C57BL/6 mice that expressed eGFP brain wide using a crystal skull preparation or in similarly transfected mice using a clear skull preparation (see Methods). Top row shows the average activity of corresponding regions in dorsal cortex. Mean (lines) and 90% confidence interval (shading) are calculated as a hierarchical bootstrap estimate for each time bin (see Methods and Supplementary file 1). The heatmaps in the bottom row show the responses for individual regions of interest. Heatmaps are scaled to the y-axis limits of the plot above (blue low, red high). Note, the fast onset transient apparent in the clear skull preparation was absent in the crystal skull preparation, while the slow decrease of activity was present in both. The increase in fluorescence at locomotion onset, which was primarily apparent in the clear skull preparation, is driven by hemodynamic occlusion. (B) As in A, but for mismatches. Orange shading (top) or white dashed lines (bottom) indicate the duration of the mismatch stimulus. (C) As in A, left, but for Tlx3-Cre that had been retro-orbitally injected with an AAV-PHP.eB-DIO-eGFP to express eGFP in layer 5 (L5) intratelencephalic (IT) neurons. (D) As in B, left, but for Tlx3-Cre that had been retro-orbitally injected with an AAV-PHP.eB-DIO-eGFP to express eGFP in L5 IT neurons.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86805/elife-86805-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Average responses during closed (red) and open loop (blue) locomotion onsets, as well as open loop visual flow (turquoise) onsets, and the sum of open loop locomotion and open loop visual flow onsets (black) in C57BL/6 mice that expressed GCaMP brain wide (6 mice). Closed loop locomotion onset responses in V1 were larger than open loop locomotion onset responses, and part of this difference could be explained by the visual flow onset responses. Shading indicates SEM over mice. (B) Average response during mismatch (red) and full-field drifting grating onsets (blue) in six C57BL/6 mice that expressed GCaMP brain wide. Same data as in Figure 3B and C. Shading indicates SEM over mice. (C) As in A, but for Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons (15 mice). Closed loop locomotion onset responses in V1 could not be explained as the sum of open loop locomotion and visual flow onset responses. (D) As in B, but for Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons (15 mice). Same data as in Figure 3E and F.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/86805/elife-86805-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Average response of V1 recorded with the widefield macroscope during closed (solid) or open loop (dashed) locomotion onsets in Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons. Mean (lines) and 90% confidence interval (shading) are calculated as a hierarchical bootstrap estimate for each time bin (see Methods and Supplementary file 1). (B) Average response of L5 soma in V1, recorded with two-photon imaging in the same Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons as in A, during either closed loop (solid) or open loop (dashed) locomotion onsets. Shading indicates SEM over 8434 neurons. (C) As in A, but for responses to mismatches (solid), open loop halts (dashed) or drifting grating onsets (dotted). Mean (lines) and 90% confidence interval (shading) are calculated as a hierarchical bootstrap estimate for each time bin (see Methods and Supplementary file 1). (D) As in B, but for responses to mismatches (solid), open loop halts (dashed) or drifting grating onsets (dotted). Shading indicates SEM over 8434 neurons.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/86805/elife-86805-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Average response during closed loop locomotion onsets (top) and open loop locomotion onsets (bottom) in Emx1-Cre mice that expressed GCaMP6 in excitatory cortical neurons. Mean (lines) and 90% confidence interval (shading) are calculated as a hierarchical bootstrap estimate for each time bin (see Methods and Supplementary file 1). Heatmaps are scaled to the y-axis limits of the plot above (blue low, red high). (B) As in A, but for Cux2-CreERT2 × Ai148 mice that expressed GCaMP6 in upper layer excitatory neurons. (C) As in A, but for Scnn1a-Cre × Ai148 mice that expressed GCaMP6 in L4 excitatory. (D) As in A, but for Tlx3-Cre × Ai148 mice that expressed GCaMP6 specifically in L5 IT neurons. Data are the same as in Figure 1I and K. (E) As in A, but for Ntsr1-Cre × Ai148 mice that expressed GCaMP6 in excitatory L6 neurons. (F) As in A, but for C57BL/6 mice that expressed GCaMP brain wide. Data are the same as in Figure 1F and G. (G) As in A, but for PV-Cre × Ai148 mice that expressed GCaMP6 in PV neurons. (H) As in A, but for VIP-Cre × Ai148 mice that expressed GCaMP6 in VIP neurons. (I) As in A, but for SST-Cre mice that expressed GCaMP6 in SST neurons. (J) Similarity of the average closed and open loop locomotion onset responses in V1 quantified as the correlation coefficient between the two in a window –5 s to +3 s around locomotion onset (left and right V1 were averaged, see Methods). Error bars indicate SEM over mice that had an average locomotion onset response of at least 1% ΔF/F in either the closed or the open loop condition (open circles: individual data points; 6 C57BL/6 mice, 4 Emx1-Cre mice, 7 Scnn1a-Cre mice, 14 Tlx3-Cre mice, 3 Ntsr1-Cre mice, 2 PV-Cre mice, 6 VIP-Cre mice, 6 SST-Cre mice, 3 Cux2-CreERT2 mice). Statistical comparisons are against the Tlx3 data and were corrected for family-wise error rate (see Methods and Supplementary file 1): adjusted significance thresholds, n.s.: not significant, *: p<0.05/9, **: p<0.01/9, ***: p<0.001/9.
 
 To test whether there are differences between closed and open loop locomotion onset responses, we first compared these in mice that expressed GCaMP brain wide (C57BL/6). Consistent with previous findings (Musall et al., 2019; Stringer et al., 2019), we found that locomotion onset resulted in broad activation across most of dorsal cortex in both conditions (Figure 1C). However, comparing locomotion onsets in mice that expressed GCaMP6 only in Tlx3 positive layer 5 (L5) IT neurons, we found that the activation pattern was strikingly different between closed and open loop conditions (Figure 1D). While locomotion onset in the open loop condition resulted in an increase in activity across dorsal cortex, similar to that observed in C57BL/6 mice with brain wide GCaMP expression, locomotion onset in the closed loop condition resulted in a very different activation pattern: In posterior parts of dorsal cortex, the activity decreased, while in anterior parts of the dorsal cortex, the activity increased. To quantify these activation patterns across mice, we selected six regions of interest (ROIs): primary visual cortex (V1), antero-medial secondary visual cortex (V2am), retrosplenial cortex (RSC), primary motor cortex (M1), anterior cingulate cortex at the level of bregma (A24b), and secondary motor cortex (M2) (Figure 1E). In C57BL/6 mice that expressed GCaMP brain wide, closed loop locomotion onset resulted in similar activity patterns across these six regions (Figure 1F). This activity pattern was not markedly different from that observed during locomotion onsets in an open loop condition (Figure 1G). To quantify the contribution of visual flow onset to the closed loop locomotion onset activity, we measured responses to visual flow onsets that occurred in the absence of locomotion in the open loop condition (Figure 1H). In C57BL/6 mice with brain wide GCaMP expression, visual flow onsets resulted in responses that were small compared to those observed during locomotion onset, even in V1. Note that a visual flow onset is a relatively weak visual stimulus compared to a drifting grating stimulus. A grating stimulus is typically composed of a gray screen or a standing grating stimulus that suddenly transitions to a drifting grating, and thus the visual flow undergoes a very high acceleration. A visual flow onset in an open loop condition is the replay of previously self-generated visual flow and thus exhibits much lower visual flow acceleration. The absence of a strong visual flow onset response in C57BL/6 mice that expressed GCaMP brain wide is consistent with a high similarity of closed and open loop locomotion onset responses.
 
@@ -42,7 +62,7 @@ To quantify how the interaction between locomotion and visual flow feedback chan
 
 **Figure 2.:** (A) Correlation between calcium activity and locomotion speed in the closed loop (left) and open loop (right) conditions, calculated for each pixel in the image for one example C57BL/6 mouse that expressed GCaMP brain wide. The black cross marks bregma. Activity in most of dorsal cortex correlates positively with locomotion speed in both closed and open loop conditions. (B) Average correlation between calcium activity and locomotion speed in the six regions of interest in closed loop (red), open loop (blue), or dark (black) conditions in six C57BL/6 mice that expressed GCaMP brain wide (308, 316, and 68 five-min recording sessions, respectively). Error bars indicate SEM over recording sessions. Bars above the plot indicate significant differences between conditions (compared conditions are indicated by colored line segments to the left, black: p<0.05, gray: n.s., see Supplementary file 1 for all information on statistical testing). On average, the correlation was highest in posterior dorsal cortex and was not different between conditions. (C) As in A, but for an example Tlx3-Cre × Ai148 mouse that expressed GCaMP6 in L5 IT neurons. Correlations of calcium activity and locomotion speed were lower in the closed loop condition compared to the open loop condition, most prominently in posterior regions of dorsal cortex. (D) As in B, but for 15 Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons (data from 420 closed loop, 394 open loop, and 194 dark 5 min recording sessions). Error bars indicate SEM over recording sessions. Correlation differed significantly between the closed and the open loop condition and was lowest in posterior dorsal cortex during the closed loop condition.
 
-## Visuomotor prediction errors originated in visual cortical regions and had opposing effects on Tlx3 positive L5 IT activity
+### Visuomotor prediction errors originated in visual cortical regions and had opposing effects on Tlx3 positive L5 IT activity
 
 A consequence of the natural coupling of locomotion and visual flow feedback is that movements are a good predictor of self-generated sensory feedback. In our closed loop experiments, forward locomotion was a strong predictor of backward visual flow. It has been speculated that such predictions are used to compute prediction errors in L2/3 of cortex (Jordan and Keller, 2020). Prediction errors come in two variants: Positive prediction errors that signal more visual flow than predicted and negative prediction errors that signal less visual flow than predicted (Keller and Mrsic-Flogel, 2018; Rao and Ballard, 1999). To probe for negative and positive prediction error signals, we quantified the responses to visuomotor mismatch events and to unexpected visual stimuli (representing less and more visual flow input than expected, respectively). Visuomotor mismatch was introduced by briefly (1 s) halting visual flow during self-generated feedback in the closed loop condition. Visual responses were elicited by presenting full-field (covering the entire toroidal screen) drifting grating stimuli to a passively observing mouse (see Methods). Please note, both types of prediction errors can be probed using a variety of stimuli, but the two we are using here, in our experience, are the most robust at eliciting strong responses in V1. In C57BL/6 mice that expressed GCaMP brain wide, both visuomotor mismatch and grating stimuli resulted in increases of activity that were strongest and appeared first in visual regions of dorsal cortex (Figure 3A–C and Figure 1—figure supplement 2B). In mice that expressed GCaMP6 in Tlx3 positive L5 IT neurons, visuomotor mismatch resulted in an increase of activity in V1, while grating onsets resulted in a decrease of activity in V1 (Figure 3D–F and Figure 1—figure supplement 2D). Thus, in dorsal cortex, both mismatch and drifting grating stimuli primarily activated visual cortex but resulted in opposing activation patterns in Tlx3 positive L5 IT neurons. An increase in activity to negative prediction errors and a decrease to positive prediction errors would be consistent with either a population of negative prediction error neurons or a type of internal representation neuron (Rao and Ballard, 1999). Given that L5 neurons in V1 do not exhibit the opposing influence of top-down and bottom-up inputs necessary to compute prediction errors (Jordan and Keller, 2020), we speculated that Tlx3 positive L5 IT neurons might function as a type of internal representation neuron.
 
@@ -50,13 +70,41 @@ A consequence of the natural coupling of locomotion and visual flow feedback is 
 
 **Figure 3.:** (A) Average responses to mismatches (top row, 230 onsets) and drifting gratings (bottom row, 86 onsets) in an example C57BL/6 mouse that expressed GCaMP brain wide. (B) Left: Average response to mismatches in C57BL/6 mice that expressed GCaMP brain wide in six cortical regions (activity was averaged across corresponding regions in both hemispheres). Mean (lines) and 90% confidence interval (shading) are calculated as a hierarchical bootstrap estimate for each time bin (see Methods and Supplementary file 1). Orange shading indicates duration of mismatch event. Right: Average response map to mismatch in six C57BL/6 mice (see Methods). Black cross marks bregma. (C) As in B, but for drifting grating responses. (D) As in A, but in an example Tlx3-Cre × Ai148 mouse that expressed GCaMP6 in L5 IT neurons (top row: mismatch, 292 onsets; bottom row: drifting gratings, 171 onsets). (E) As in B, but for Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons. (F) As in C, but for Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons.
 
-## The antipsychotic drug clozapine alters visuomotor integration in L5
+### The antipsychotic drug clozapine alters visuomotor integration in L5
 
 The activation of an internal representation is the brain’s best guess at what the stimuli in the environment are. We speculated that the activation of such an internal representation would be particularly susceptible to substances that are known to reduce illusory percepts, like antipsychotic drugs. We thus quantified the changes in dorsal cortex activity associated with a single intraperitoneal injection of an antipsychotic drug (clozapine). In C57BL/6 mice that expressed GCaMP brain wide, we found that closed and open loop locomotion onsets were almost unaffected by clozapine (Figure 4A and B), while there was a small increase in open loop visual flow onset responses (Figure 4C). In mice that expressed GCaMP6 in Tlx3 positive L5 IT neurons, however, clozapine fundamentally changed both closed and open loop locomotion onset responses. In V1, both types of locomotion onset now resulted in a massive increase in activity (Figure 4D and E). Conversely, open loop visual flow onset responses remained largely unchanged (Figure 4F). These effects could not be explained by clozapine-induced changes in hemodynamic occlusion (Figure 4—figure supplement 1A) or locomotion behavior (Figure 4—figure supplement 1B and C). Clozapine also had an opposing effect on the average correlation of activity with locomotion speed in Tlx3 positive L5 IT neurons. While the average correlation between activity and locomotion speed was increased in C57BL/6 mice that expressed GCaMP brain wide, the same measure was decreased in mice that expressed GCaMP6 in Tlx3 positive L5 IT neurons (Figure 4—figure supplement 1D). Finally, we confirmed that this effect was also present when recording somatic activity in V1. Using two-photon imaging, after clozapine administration we observed an increase of somatic responses during locomotion onsets that was very similar to that observed with widefield imaging (Figure 4—figure supplement 1E and F). Thus, consistent with the speculation that Tlx3 positive L5 IT neurons might function as internal representation neurons, clozapine exhibited a substantially stronger influence on locomotion onset responses in Tlx3 positive L5 IT neurons than would be expected from the effect of clozapine on brain wide responses.
 
-## Antipsychotic drugs decouple long-range cortico-cortical activity
+![Figure 4.](https://cdn.elifesciences.org/articles/86805/elife-86805-fig4-v1.jpg)
+
+**Figure 4.:** (A) Average response during closed loop locomotion onsets in C57BL/6 mice that expressed GCaMP brain wide (activity was averaged across corresponding regions in both hemispheres) after a single injection of the antipsychotic drug clozapine (see Methods). Mean (lines) and 90% confidence interval (shading) are calculated as a hierarchical bootstrap estimate for each time bin (see Methods and Supplementary file 1). Inset: Comparison of responses for V1 in naive C57BL/6 mice (dashed red) and the same mice after clozapine injection (dark red, same data as in main panel). (B) As in A, but for open loop locomotion onsets after a clozapine injection. (C) As in A, but for open loop visual flow onsets restricted to times when the mice were not locomoting. (D) Average response during closed loop locomotion onsets in Tlx3-Cre × Ai148 mice that expressed GCaMP6 in layer L5 IT neurons (activity was averaged across corresponding regions in both hemispheres) after a single injection of the antipsychotic drug clozapine (see Methods). Mean (lines) and 90% confidence interval (shading) are calculated as a hierarchical bootstrap estimate for each time bin (see Methods and Supplementary file 1). Inset: Comparison of responses for V1 in naive Tlx3-Cre × Ai148 mice (dashed red) and the same mice after clozapine injection (dark red, same data as in main panel). (E) As in D, but for open loop locomotion onsets. (F) As in D, but for open loop visual flow onsets restricted to times when the mice were not locomoting.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86805/elife-86805-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Average hemodynamic response during locomotion onsets in Tlx3-Cre mice that had been retro-orbitally injected with an AAV-PHP.eB-DIO-eGFP to express eGFP in layer 5 (L5) intratelencephalic (IT) neurons (responses were averaged across corresponding regions in both hemispheres) after a single injection of the antipsychotic drug clozapine (see Methods). Mean (lines) and 90% confidence interval (shading) are calculated as a hierarchical bootstrap estimate for each time bin (see Methods and Supplementary file 1). Inset: Comparison of responses to locomotion onsets in the same mice before clozapine injection (same data as in Figure 1—figure supplement 1C, top panel). (B) Average locomotion speed in 21 naive mice (black) and 22 mice that had been injected with either of the antipsychotic drugs clozapine, aripiprazole, or haloperidol (gray), for the data acquisition timepoint +1 hr after injection. Shading indicates SEM over mice. (C) Fraction of time spent locomoting above threshold (see Methods) for the 21 naive mice (black) and 22 mice that had been injected with either of the antipsychotic drugs clozapine, aripiprazole, or haloperidol, for the data acquisition timepoint +1 hr after injection (gray). Boxes represent the median and the interquartile range. The open circles indicate the mean of the distributions. The whiskers mark 1.5 times the interquartile range. Dots are the individual data points. (D) Average correlation of activity and locomotion speed in dorsal cortex was increased after a single injection of the antipsychotic drug clozapine in four C57BL/6 mice that expressed GCaMP brain wide but decreased in five Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons, for all types of visual feedback. Error bars indicate SEM over mice and corresponding dorsal cortex regions (see Methods). n.s.: not significant, *: p<0.05, ***: p<0.001. See Supplementary file 1 for all information on statistical testing. (E) Average response of primary visual cortex (V1) recorded with the widefield microscope during locomotion onsets in closed loop (solid) or open loop (dashed) in Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons and that had received an injection of the antipsychotic drug clozapine. Mean (lines) and 90% confidence interval (shading) are calculated as a hierarchical bootstrap estimate for each time bin (see Methods and Supplementary file 1). (F) As in E, for the same three Tlx3-Cre × Ai148 mice, but for responses recorded at L5 IT soma with two-photon imaging. Shading indicates SEM over 5595 neurons.
+
+### Antipsychotic drugs decouple long-range cortico-cortical activity
 
 L5 IT neurons are likely the primary source of long-range cortical communication (Chen et al., 2019; Harris et al., 2019; Leinweber et al., 2017). Given that clozapine increased locomotion onset responses in L5 IT neurons in V1, we wondered whether clozapine might more generally change the long-range influence between L5 IT neurons. To investigate this possibility, we computed the correlations of calcium activity between the six ROIs across both hemispheres and all recording conditions. We did this first in C57BL/6 mice that expressed GCaMP brain wide before (Figure 5A) and after a single intraperitoneal injection of clozapine (Figure 5B). Overall, clozapine resulted in a relatively modest decrease in correlations. On repeating this experiment in mice that expressed GCaMP6 in Tlx3 positive L5 IT neurons, we found a larger decrease in correlations that appeared to be stronger for regions that were further apart (Figure 5C and D). To quantify these changes, we plotted the correlations as a function of linear distance between the regions as measured in a top-down view of dorsal cortex (Figure 5—figure supplement 1A). Note, this is only an approximation of the actual axonal path length between the regions. To visualize the distribution of correlations, we interpolated the data and represented them as heatmaps (Figure 5—figure supplement 1B). The resulting representation for the data from C57BL/6 mice that expressed GCaMP brain wide before and after clozapine injection is shown in Figure 6A and B, respectively. We then split the data into approximately equal portions of short- and long-range correlations using a cutoff of 0.9 times the bregma-lambda distance (approximately 3.8 mm). While both short- and long-range correlations were reduced, this reduction was not significant in either case (Figure 6C). We also found no evidence of a difference between short- and long-range correlation changes. In mice that expressed GCaMP6 in Tlx3 positive L5 IT neurons, however, we found a significant reduction in both short- and long-range correlations (Figure 6D and E), and both were more strongly reduced than in C57BL/6 mice that expressed GCaMP brain wide (C57BL/6 vs Tlx3-Cre × Ai148, short-range: p<0.05; long-range: p<10–5; rank-sum test). Moreover, the reduction in activity correlations was stronger for long-range correlations than it was for short-range correlations (Figure 6F). To control for possible clozapine-induced changes in hemodynamic occlusion, we repeated the experiment and analyses in Tlx3-Cre mice that expressed eGFP in L5 IT neurons and found that alterations in hemodynamic occlusion could not account for the decrease in correlations but resulted in a small increase of the same metric (Figure 5—figure supplement 1C–E). To test whether the stress of injection, or simply passage of time, could explain the observed effects, we conducted a separate set of experiments in which we injected saline in a cohort of Tlx3-Cre × Ai148 mice and performed the same analysis. We found no evidence of a change in correlations with saline injections (Figure 5—figure supplement 1F–H). To further dissect the spatial scale at which this decorrelation occurred, we repeated the experiments in Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons, recording calcium activity using both a widefield and a two-photon microscope. We found that while the activity correlations measured with the widefield imaging decreased (Figure 6—figure supplement 1A–C), pairwise somatic activity correlations measured by two-photon imaging did not (Figure 6—figure supplement 1D). This is consistent with the idea that decorrelation primarily occurs for long-range interactions. Finally, to confirm that the clozapine-induced reduction in correlation was stronger in deep cortical layers, we repeated the experiment in a population of L2/3 and L4 excitatory neurons using Cux2-CreERT2 × Ai148 mice. We found that clozapine also decreased correlations of cortical activity in superficial excitatory neurons (Figure 6—figure supplement 2). However, this reduction was significantly weaker than the reduction we observed in mice that expressed GCaMP6 in Tlx3 positive L5 IT neurons (Cux2-CreERT2 × Ai148 vs Tlx3-Cre × Ai148, short-range: p<0.005, long-range: p<10–8, rank-sum test). Thus, administration of the antipsychotic drug clozapine resulted in a decorrelation of activity across dorsal cortex that was stronger in L5 IT neurons (Tlx3) than it was in either upper layer excitatory neurons (Cux2) or in the brain wide average (C57BL/6).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/86805/elife-86805-fig5-v1.jpg)
+
+**Figure 5.:** (A) Average correlation of activity between the 12 regions of interest in four C57BL/6 mice that expressed GCaMP brain wide. (B) As in A, but after a single injection of the antipsychotic drug clozapine in the same four C57BL/6 mice. (C) Average correlation of activity between the 12 regions of interest in five Tlx3-Cre × Ai148 mice that expressed GCaMP6 in layer L5 IT neurons. (D) As in C, but after a single injection of the antipsychotic drug clozapine in the same five Tlx3-Cre × Ai148 mice.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86805/elife-86805-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) For each pair of dorsal cortex regions, we calculated the distance between the regions in a top-down view of dorsal cortex, normalized by the distance between bregma and lambda for each mouse (data are from an example C57BL/6 mouse that expressed GCaMP6 brain wide). (B) For each pair, we then plotted the activity correlation against this distance as calculated in A (black dots). We then interpolated this distribution using a 40-by-40 2D grid to obtain the density plots (faded background), shown for all mice and pairs of regions in Figures 6 and 7, and Figure 5—figure supplement 1, Figure 6—figure supplements 1 and 2. (C) Density map of correlation coefficients as a function of distance between the regions, normalized across mice by the bregma-lambda distance (see panel B and Methods), for 6 Tlx3-Cre mice that had been retro-orbitally injected with an AAV-PHP.eB-DIO-eGFP to express eGFP in layer 5 (L5) intratelencephalic (IT) neurons. Peak density is indicated at the bottom right of the plot and corresponds to the maximum value of the color scale (dark red). The white line is a contour line drawn at 50% of peak value. (D) As in C, but for the same six Tlx3-Cre mice that expressed eGFP in L5 IT neurons after a single injection of the antipsychotic drug clozapine. The white line is the contour from panel C for comparison. (E) Clozapine-induced change in the fluorescence correlation between regions, normalized to the correlation coefficient in the naive state, in six Tlx3-Cre mice that expressed eGFP in L5 IT neurons. Data were split into short- and long-range activity correlations (see Methods). Boxes represent the median and the interquartile range. The open circle indicates the mean of the distribution. The whiskers mark 1.5 times the interquartile range. Dots are the individual data points (short-range: 204 pairs of regions, long-range: 192 pairs of regions). ***: p<0.001, n.s.: not significant. See Supplementary file 1 for all information on statistical testing. (F) As in C, but for three Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons. (G) As in F, but after a single injection of saline. The white line is the contour line from panel F for comparison. (H) Saline-induced change in the activity correlation between regions, normalized to the correlation coefficient in the naive state, in three Tlx3-Cre × Ai148 mice. Data were split into short- and long-range activity correlations (see Methods). Boxes represent the median and the interquartile range. The open circle indicates the mean of the distribution. The whiskers mark 1.5 times the interquartile range. Dots are the individual data points (short-range: 93 pairs of regions, long-range: 105 pairs of regions). n.s.: not significant. See Supplementary file 1 for all information on statistical testing.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/86805/elife-86805-fig6-v1.jpg)
+
+**Figure 6.:** (A) Density map of correlation coefficients as a function of distance between the regions, normalized across mice by the bregma-lambda distance (see Figure 5—figure supplement 1A and B, and Methods), for four naive C57BL/6 mice that expressed GCaMP brain wide. Peak density is indicated at the bottom right of the plot and corresponds to the maximum value of the color scale (dark red). The white line is a contour line drawn at 50% of peak value. (B) As in A, but for the same four C57BL/6 mice after a single injection of the antipsychotic drug clozapine. The white line is the contour line from panel A for comparison. (C) Clozapine-induced change in the activity correlation between regions, normalized to the correlation coefficient in the naive state, in four C57BL/6 mice. Data were split into short- and long-range activity correlations (see Methods). Boxes represent the median and the interquartile range. The open circle indicates the mean of the distribution. The whiskers mark 1.5 times the interquartile range. Dots are the individual data points (short-range: 122 pairs of regions, long-range: 142 pairs of regions). n.s.: not significant. See Supplementary file 1 for all information on statistical testing. (D) As in A, but for five Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons. (E) As in B, but for five Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons. The white line is the contour line from panel D for comparison. (F) As in C, but for 5 Tlx3-Cre × Ai148 mice that expressed GCaMP6 in L5 IT neurons (short-range: 182 pairs of regions, long-range: 148 pairs of regions). ***: p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/86805/elife-86805-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Density map of correlation coefficients as a function of distance between the regions, normalized across mice by the bregma-lambda distance (see Figure 5—figure supplement 1A and B, and Methods), for 3 Tlx3-Cre × Ai148 mice that expressed GCaMP6 in layer 5 (L5) intratelencephalic (IT) neurons. Peak density is indicated at the bottom right of the plot and corresponds to the maximum value of the color scale (dark red). The white line is a contour line drawn at 50% of peak value. (B) As in A, but for the same three Tlx3-Cre × Ai148 mice after a single injection of the antipsychotic drug clozapine. The white line is the contour line from panel A for comparison. (C) Clozapine-induced change in the activity correlation between regions, normalized to the correlation coefficient in the naive state, in three Tlx3-Cre × Ai148 mice. Data were split into short- and long-range activity correlations (see Methods). Boxes represent the median and the interquartile range. The open circle indicates the mean of the distribution. The whiskers mark 1.5 times the interquartile range. Dots are the individual data points (short-range: 114 pairs of regions, long-range: 84 pairs of regions). ***, p<0.001. See Supplementary file 1 for all information on statistical testing. (D) Distribution of pairwise neuronal activity correlations recorded with two-photon imaging at the L5 soma, in the same three Tlx3-Cre × Ai148 mice as in panels A–C, before (naive, black, 1991 neurons and 384,108 pairs of neurons) and after injection of the antipsychotic drug clozapine (dark gray, 7863 neurons and 885,596 pairs of neurons or pale gray, 1 field of view excluded, 7534 neurons and 831,640 pairs of neurons remaining). Dashed lines mark the mean of the respective distributions as indicated by the arrows on top. Note that after clozapine injection, we observed aberrantly high neuronal synchrony in 1 out of 25 recorded fields of view that substantially increased the average pairwise correlation as indicated by the two curves that compare the clozapine data. In either comparison, clozapine significantly increased local pairwise activity correlations.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/86805/elife-86805-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Average correlation of activity between the 12 regions of interest in four Cux2-CreERT2 × Ai148 mice that expressed GCaMP6 in upper layer excitatory neurons. (B) As in A, but for the same four Cux2-CreERT2 × Ai148 mice after a single injection of the antipsychotic drug clozapine. (C) Density map of correlation coefficients as a function of distance between the regions, normalized across mice by the bregma-lambda distance (see Figure 5—figure supplement 1A and B, and Methods), for four naive Cux2-CreERT2 × Ai148 mice that expressed GCaMP6 in upper layer excitatory neurons. Peak density is indicated at the bottom right of the plot and corresponds to the maximum value of the color scale (dark red). The white line is a contour line drawn at 50% of peak value. (D) As in C, but for the same four Cux2-CreERT2 × Ai148 mice after a single injection of the antipsychotic drug clozapine. The white line is the contour line from panel C for comparison. (E) Clozapine-induced change in the activity correlation between regions, normalized to the correlation coefficient in the naive state, in four Cux2-CreERT2 × Ai148 mice. Data were split into short- and long-range activity correlations (see Methods). Boxes represent the median and the interquartile range. The open circle indicates the mean of the distribution. The whiskers mark 1.5 times the interquartile range. Dots are the individual data points (short-range: 137 pairs of regions, long-range: 127 pairs of regions). n.s.: not significant, *: p<0.05, **: p<0.01. See Supplementary file 1 for all information on statistical testing.
 
 To test whether the decorrelation of the activity of L5 IT neurons is specific to clozapine or might more generally be a functional signature of antipsychotic drugs, we repeated the experiments with two additional antipsychotic drugs, aripiprazole and haloperidol. We found that the principal effect of decorrelation of the activity patterns of Tlx3 positive L5 IT neurons was preserved with both drugs (Figure 7A–F). These changes in correlation were absent upon injection of a psychostimulant, amphetamine (Figure 7G–I). Thus, it is possible that a decrease in long-range correlations between cortical L5 IT neurons might be a common mechanism of action for antipsychotic drugs.
 
@@ -84,31 +132,307 @@ One of the diseases treated with antipsychotic drugs is schizophrenia. It has be
 
 ## Methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV-PHP.eB-hSyn1-jGCaMP7f (1013 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV-PHP.eB-EF1α-GCaMP6s (1013 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV-PHP.eB-DIO-EF1α-GCaMP6s (1013 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV-PHP.eB-DIO-EF1α-jGCaMP7f (1012 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV-PHP.eB-EF1α-eGFP (1013 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (adeno-associated virus)</td>
+      <td>AAV-PHP.eB-EF1α-DIO-eGFP (1015 GC/ml)</td>
+      <td>FMI vector core</td>
+      <td>vector.fmi.ch</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fentanyl citrate</td>
+      <td>Actavis</td>
+      <td>CAS 990-73-8</td>
+      <td>Anesthetic compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Midazolam (Dormicum)</td>
+      <td>Roche</td>
+      <td>CAS 59467-96-8</td>
+      <td>Anesthetic compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Medetomidine (Domitor)</td>
+      <td>Orion Pharma</td>
+      <td>CAS 86347-14-0</td>
+      <td>Anesthetic compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ropivacaine</td>
+      <td>Presenius Kabi</td>
+      <td>CAS 132112-35-7</td>
+      <td>Analgesic compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lidocaine</td>
+      <td>Bichsel</td>
+      <td>CAS 137-58-6</td>
+      <td>Analgesic compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Buprenorphine</td>
+      <td>Reckitt Benckiser Healthcare</td>
+      <td>CAS 52485-79-7</td>
+      <td>Analgesic compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ophthalmic gel (Humigel)</td>
+      <td>Virbac</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Flumazenil (Anexate)</td>
+      <td>Roche</td>
+      <td>CAS 78755-81-4</td>
+      <td>Anesthetic antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Atipamezole (Antisedan)</td>
+      <td>Orion Pharma</td>
+      <td>CAS 104054-27-5</td>
+      <td>Anesthetic antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Butyl-2-cyanoacrylate</td>
+      <td>Braun</td>
+      <td>CAS 6606-65-1</td>
+      <td>Histoacryl</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dental cement</td>
+      <td>Heraeus Kulzer</td>
+      <td>CAS 9066-86-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Metacam</td>
+      <td>Boehringer Ingelheim</td>
+      <td>CAS 71125-39-8</td>
+      <td>Analgesic compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine (powder)</td>
+      <td>Novartis</td>
+      <td>CAS 5786-21-0</td>
+      <td>Antipsychotic drug</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aripiprazole (intramuscular injection solution 7.5 mg/ml)</td>
+      <td>Otsuka Pharmaceutical</td>
+      <td>CAS 129722-12-9</td>
+      <td>Antipsychotic drug</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Haloperidol (intramuscular injection solution 5 mg/ml)</td>
+      <td>Janssen</td>
+      <td>CAS 52-86-8</td>
+      <td>Antipsychotic drug</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amphetamine (powder)</td>
+      <td>Hänseler</td>
+      <td>CAS 60-13-9</td>
+      <td>Psychostimulant</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen food</td>
+      <td>Envigo</td>
+      <td>CAS 10540-29-1 (TD.55125)</td>
+      <td>Compound to induce Cre expression in CreER mouse lines</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>C57BL/6</td>
+      <td>Charles River</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>Emx1tm1(cre)KrjAlias used here: Emx1-Cre</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:005628</td>
+      <td>Cre expression in excitatory forebrain neurons</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>B6(Cg)-Cux2tm3.1(cre/ERT2)Mull/MmmhAlias used here: Cux2-CreERT2</td>
+      <td>MMRRC</td>
+      <td>RRID:MMRRC_032779-MU</td>
+      <td>Cre expression in cortical L2/3/4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>Scnn1a-cre3Aibs/JAlias used here: Scnn1a-Cre</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:009613</td>
+      <td>Cre expression in cortical L4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>Tg(Tlx3-cre)PL56Gsat/Mmucd, Alias used here: Tlx3-Cre</td>
+      <td>MMRRC</td>
+      <td>RRID:MMRRC_041158-UCD</td>
+      <td>Cre expression in cortical L5 IT</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>Ntsr1GN220Gsat/MmucdAlias used here: Ntsr1-Cre</td>
+      <td>MMRRC</td>
+      <td>RRID:MMRRC_017266-UCD</td>
+      <td>Cre expression in cortical L6</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>Pvalbtm1(cre)ArbrAlias used here: PV-Cre</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:008069</td>
+      <td>Cre expression in PV interneurons</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>Viptm1(cre)ZjhAlias used here: VIP-Cre</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:010908</td>
+      <td>Cre expression in VIP interneurons</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>Ssttm2.1(cre)ZjhAlias used here: SST-Cre</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:018973</td>
+      <td>Cre expression in Sst interneurons</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>Igs7tm148.1(tetO-GCaMP6f,CAG-tTA2)Hze/JAlias used here: Ai148</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:030328</td>
+      <td>GCaMP6f reporter line</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB (2021a)</td>
+      <td>The MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>Data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabVIEW</td>
+      <td>National Instruments</td>
+      <td>RRID:SCR_014325</td>
+      <td>Hardware control</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>python.org</td>
+      <td>RRID:SCR_008394</td>
+      <td>Virtual reality</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Panda3D</td>
+      <td>panda3d.org</td>
+      <td>N/A</td>
+      <td>Virtual reality</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animal procedures were approved by and carried out in accordance with the guidelines of the Veterinary Department of the Canton Basel-Stadt, Switzerland (licence no. 2573). The mice used for cell type-specfic targeting and subsequent widefield imaging in this study were kept on a C57BL/6 background and were of the following genotype: 6 C57BL/6 (Charles River Laboratories), 4 Emx1tm1(cre)Krj (alias: Emx1-Cre) to target expression to cortical excitatory neurons (Gorski et al., 2002), 4 B6(Cg)-Cux2tm3.1(cre/ERT2)Mull/Mmmh (alias: Cux2-CreERT2) to target expression to L2/3 and L4 excitatory neurons (Franco et al., 2012), 7 Scnn1a-cre3Aibs/J (alias: Scnn1a-Cre) to target expression to a subset of L4 excitatory neurons (Madisen et al., 2010), 25 Tg(Tlx3-cre)PL56Gsat/Mmucd (alias: Tlx3-Cre) to target expression to a subset of L5 IT neurons (Gerfen et al., 2013), 3 Ntsr1GN220Gsat/Mmucd (alias: Ntsr1-Cre) to target expression to a subset of L6 excitatory neurons (Gong et al., 2007), and, to target inhibitory subpopulations, we used 2 Pvalbtm1(cre)Arbr (alias: PV-Cre) (Hippenmeyer et al., 2005), 6 Viptm1(cre)Zjh (alias: VIP-Cre) (Taniguchi et al., 2011), and 5 Ssttm2.1(cre)Zjh (alias: SST-Cre) (Taniguchi et al., 2011) mice. Igs7tm148.1(tetO-GCaMP6f,CAG-tTA2)Hze/J (alias: Ai148) (Daigle et al., 2018, Jackson Laboratories, stock #030328) mice were used as breeders to drive GCaMP6f expression in Cre positive neurons. An additional 8 C57BL/6 and 7 Tlx3-Cre mice were used in experiments controlling for hemodynamic responses. To induce expression of Cre in the Cux2-CreERT2 line, mice were provided for at least 1 week with tamoxifen containing food (Envigo, 400 mg tamoxifen per kg of food) as their sole food source. Mice were group-housed in a vivarium (light/dark cycle: 12/12 hr). Experimental mice were of either sex.
 
-## Surgery and virus injections
+### Surgery and virus injections
 
 For all surgical procedures, mice were anesthetized using a mixture of fentanyl (0.05 mg/kg; Actavis), midazolam (5.0 mg/kg; Dormicum, Roche), and medetomidine (0.5 mg/kg; Domitor, Orion). In a subset of mice (6 C57BL/6, 4 Emx1-Cre, and 4 SST-Cre mice), we injected an AAV vector based on the PHP.eB capsid (Chan et al., 2017) retro-orbitally (6 μl each eye of at least 1013 GC/ml) to drive expression of GCaMP under either the EF1α or hSyn1 promoter pan-neuronally, or in a cell type-specific manner using a double-floxed inverted open reading frame (DIO) construct. For hemodynamic response control experiments, we used an AAV-PHP.eB-EF1α-eGFP to pan-neuronally express eGFP (Figure 1—figure supplement 1A and B) or an AAV-PHP.eB-EF1α-DIO-eGFP to restrict eGFP expression to L5 IT neurons in Tlx3-Cre mice (Figure 1—figure supplement 1C and D, Figure 4—figure supplement 1A, Figure 5—figure supplement 1C–E). To improve optical access to the cortex, we implanted crystal skull cranial windows (Kim et al., 2016). Prior to removing the skull plate overlying dorsal cortex, we recorded the location of bregma relative to other landmarks on the skull. Superglue (Pattex) was used to glue the crystal skull in place in the craniotomy. In a subset of mice, for the comparison of hemodynamic responses (Figure 1—figure supplement 1A and B), we used a clear skull preparation (Guo et al., 2014). To do this, we attached the crystal skull coverslip directly onto the cleaned skull surface with a three-component polymer (C&B Metabond, Parkell). A custom-machined titanium head bar was attached to the skull using dental cement (Paladur, Heraeus). An epifluorescence overview image was taken to mark reference points on the dorsal cortical surface. Anesthesia was antagonized by an intraperitoneal injection of a mixture of flumazenil (0.5 mg/kg; Anexate, Roche) and atipamezole (2.5 mg/kg; Antisedan, Orion Pharma). For peri- and post-operative analgesia, we injected buprenorphine (0.1 mg/kg; Reckitt Benckiser Healthcare (UK) Ltd.) and Metacam (5 mg/kg; Boehringer Ingelheim). Imaging commenced at the earliest 1 week after head bar implantation or 3 weeks after retro-orbital AAV injection. Clozapine (Novartis), aripiprazole (Otsuka Pharmaceutical), haloperidol (Janssen), amphetamine (Hänseler), or saline (0.9% NaCl in H2O) was intraperitoneally injected at 0.2 μg/g - 10 μg/g, 0.2 μg/g, 0.1 μg/g, 4 μg/g body weight, or undiluted, respectively.
 
-## Virtual reality setup and stimulus design
+### Virtual reality setup and stimulus design
 
 For all experiments we used a virtual reality setup as previously described (Leinweber et al., 2014). Mice were head-fixed and free to run on a spherical, air-supported Styrofoam ball. A virtual corridor was projected (using a Samsung SP-F10M projector) onto a toroidal screen positioned in front of the mouse covering a field of view of approximately 240 degrees horizontally and 100 degrees vertically. Recordings were blocked into 5 min sessions. Experiments typically commenced with four sessions of a closed loop condition in which the rotation of the spherical treadmill was coupled to the movement in a virtual corridor. To introduce mismatches, we broke the coupling between locomotion and visual flow by briefly halting visual flow for 1 s at random times. Closed loop sessions were followed by four sessions of an open loop condition, in which rotation of the spherical treadmill and movement in the virtual corridor were decoupled. The visual stimulus consisted of a replay of the visual flow recorded in the previous closed loop condition. Following this we recorded two sessions of what we refer to as a dark condition in which the virtual reality was switched off. Please note, this was not complete darkness, primarily because the shielding of the blue excitation light was not light proof. Finally, we recorded activity in two sessions of a grating condition in which we presented drifting grating stimuli covering the full toroidal screen placed in front of the mouse (eight directions of 6 s±2 s [mean ± SD] duration each with an inter-grating interval of 4.5 s±1.5 s [mean ± SD] gray screen, presented in randomized order). These sessions, totaling approximately 1 hr of recording time per day, were acquired for 3 consecutive days. For mice in which we went on to test the effect of drugs on dorsal cortex activity, the first post-drug injection data were acquired +1 hr after drug injection (+30 min in the case of amphetamine because of faster onset kinetics of the drug) and further data were collected at the +24 hr and +48 hr timepoints. Data in the manuscript are shown as the combined data over either all data collected before drug injection (labeled as naive) or after substance injection (labeled as clozapine, aripiprazole, haloperidol, amphetamine, or saline, respectively).
 
-## Data acquisition
+### Data acquisition
 
 All widefield imaging experiments were performed on a custom-built macroscope consisting of commercially available objectives mounted face-to-face (Nikon 85 mm/f1.8 sample side, Nikon 50 mm/f1.4 sensor side). We used a 470 nm LED (Thorlabs) powered by a custom-built LED driver for exciting GCaMP (or eGFP) fluorescence through an excitation filter (SP490, Thorlabs) reflected off a dichroic mirror (LP490, Thorlabs) placed in the parfocal plane of the objectives. Green fluorescence was collected through a 525/50 emission filter on an sCMOS camera (PCO edge 4.2). Apertures on objectives were usually kept maximally open and the current at the LED driver was used to adjust fluorescence intensity to a value that was kept below 25% of the maximum dynamic range of the sensor. In cases where this was not possible (e.g. transfection of eGFP yielded extremely bright fluorescence, often visible with the naked eye), objective apertures were gradually reduced to avoid overexposure of the sensor. LED illumination was adjusted with a collimator (Thorlabs SM2F32-A) to achieve homogenous illumination across the surface of the cranial window. The resulting Gaussian profile of the illumination cone was further trimmed with black tape on the sample side objective to avoid light shining directly into the mouse’s eye. An Arduino board (Arduino Mega 2560) was used to control LED onsets synced to the frame trigger signal of the camera. The duty cycle of the 470 nm LED was 90%. Raw images were acquired at full speed (100 Hz; except for eGFP controls, which were acquired at 50 Hz effective frame rate) and full dynamic range (16 bit) of the sensor. The raw images were cropped on-sensor and the resulting data was streamed to disk with custom-written software in LabVIEW (National Instruments), resulting in an effective pixel size of 60 μm2 at a standardized imaging resolution of 1108 pixels × 1220 pixels (1.35 MP).
 
 Two-photon calcium imaging was performed using a custom-built microscope based on a Thorlabs B-scope (Leinweber et al., 2014). Illumination source was a tunable femtosecond laser (Coherent Chameleon) tuned to 930 nm. Emission light was band-pass filtered using a 525/50 filter for GCaMP and detected using a GaAsP photomultiplier (H7422, Hamamatsu). Photomultiplier signals were amplified (DHPCA-100, Femto), digitized (NI5772, National Instruments) at 800 MHz, and band-pass filtered around 80 MHz using a digital Fourier-transform filter implemented in custom-written software on an FPGA (NI5772, National Instruments). The scanning system of the microscope was based on a 12 kHz resonant scanner (Cambridge Technology). Images were acquired at a resolution of 750 pixels × 400 pixels at a 60 Hz frame rate and a piezoelectric linear actuator (P-726, Physik Instrumente) was used to move the objective (Nikon 16×, 0.8 NA) in steps of 15 µm between frames to acquire images at four different depths. This resulted in an effective frame rate of 15 Hz. The field of view was 350 µm × 350 µm.
 
-## Data processing
+### Data processing
 
 Off-line data processing and data analysis (section below) were done with custom-written MATLAB (2021a) scripts. For widefield macroscope imaging, raw movie data was manually registered across days by aligning subsequent mean projections of the data to the first recorded image sequence. We placed ROIs relative to readily identifiable anatomical landmarks that had been previously noted during cranial window surgery (see above). This resulted in the selection of six 20 pixels × 20 pixels ROIs per hemisphere. Of those ROIs, we calculated the activity as the ΔF/F0, wherein F0 was the median fluorescence of the recording (approximately 30,000 frames in a 5 min recording). ΔF/F0 was corrected for slow fluorescence drift caused by thermal brightening of the LED using 8th percentile filtering with a 62.5 s moving window similar to what was described previously for two-photon imaging (Dombeck et al., 2007).
 
 Raw two-photon imaging data were full-frame registered to correct for brain motion. Neurons were manually selected based on mean and maximum fluorescence images. Raw fluorescence traces were corrected for slow drift in fluorescence using an 8th percentile filtering with a 15 s window (Dombeck et al., 2007). ΔF/F traces were calculated as mean fluorescence in a selected region of every imaging frame and subsequently subtracted and normalized by the median fluorescence.
 
-## Data analysis
+### Data analysis
 
 Locomotion and visual flow onsets were determined based on threshold crossing of locomotion or visual flow speed. To select only well-isolated onsets, we used a speed threshold of 30 cm/s and excluded all onsets with locomotion or visual flow in the 3 s window preceding the onset. To increase the number of locomotion onsets that passed the speed threshold criterion for the eGFP imaging data (Figure 1—figure supplement 1, Figure 4—figure supplement 1A), we excluded only those onsets if there was locomotion in the 1 s window preceding onset.
 

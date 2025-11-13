@@ -16,16 +16,16 @@
 
 ### Affiliations
 
-1. https://ror.org/0190ak572 Neuroscience Institute, New York University Grossman School of Medicine New York United States
-2. https://ror.org/0190ak572 Center for Neural Science, New York University New York United States
-3. https://ror.org/0190ak572 Department of Neuroscience and Physiology, New York University Grossman School of Medicine New York United States
-4. https://ror.org/0190ak572 Department of Anesthesiology, Perioperative Care and Pain Medicine, New York University Grossman School of Medicine New York United States
+1. Neuroscience Institute, New York University Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+2. Center for Neural Science, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+3. Department of Neuroscience and Physiology, New York University Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+4. Department of Anesthesiology, Perioperative Care and Pain Medicine, New York University Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 
 † Corresponding author
 
 ## Abstract
 
-Cortical GABAergic interneurons (INs) represent a diverse population of mainly locally projecting cells that provide specialized forms of inhibition to pyramidal neurons and other INs. Most recent work on INs has focused on subtypes distinguished by expression of Parvalbumin (PV), Somatostatin (SST), or Vasoactive Intestinal Peptide (VIP). However, a fourth group that includes neurogliaform cells (NGFCs) has been less well characterized due to a lack of genetic tools. Here, we show that these INs can be accessed experimentally using intersectional genetics with the gene Id2 . We find that outside of layer 1 (L1), the majority of Id2 INs are NGFCs that express high levels of neuropeptide Y (NPY) and exhibit a late-spiking firing pattern, with extensive local connectivity. While much sparser, non-NGFC Id2 INs had more variable properties, with most cells corresponding to a diverse group of INs that strongly expresses the neuropeptide CCK. In vivo, using silicon probe recordings, we observed several distinguishing aspects of NGFC activity, including a strong rebound in activity immediately following the cortical down state during NREM sleep. Our study provides insights into IN diversity and NGFC distribution and properties, and outlines an intersectional genetics approach for further study of this underappreciated group of INs.
+Cortical GABAergic interneurons (INs) represent a diverse population of mainly locally projecting cells that provide specialized forms of inhibition to pyramidal neurons and other INs. Most recent work on INs has focused on subtypes distinguished by expression of Parvalbumin (PV), Somatostatin (SST), or Vasoactive Intestinal Peptide (VIP). However, a fourth group that includes neurogliaform cells (NGFCs) has been less well characterized due to a lack of genetic tools. Here, we show that these INs can be accessed experimentally using intersectional genetics with the gene Id2. We find that outside of layer 1 (L1), the majority of Id2 INs are NGFCs that express high levels of neuropeptide Y (NPY) and exhibit a late-spiking firing pattern, with extensive local connectivity. While much sparser, non-NGFC Id2 INs had more variable properties, with most cells corresponding to a diverse group of INs that strongly expresses the neuropeptide CCK. In vivo, using silicon probe recordings, we observed several distinguishing aspects of NGFC activity, including a strong rebound in activity immediately following the cortical down state during NREM sleep. Our study provides insights into IN diversity and NGFC distribution and properties, and outlines an intersectional genetics approach for further study of this underappreciated group of INs.
 
 ## Introduction
 
@@ -43,7 +43,31 @@ Here, we show that Id2 is a marker for the INs in the neocortex that do not expr
 
 We examined cortical single-cell transcriptome data (scRNAseq) from the Allen Institute (Tasic et al., 2016) and observed that expression of the Id2 gene was highly enriched in the INs in their collection that do not express PV, SST, or VIP (Figure 1A; Mayer et al., 2018). The Id2 IN population includes cells that express markers known to be present in non-VIP CGE INs such as Reelin (Miyoshi et al., 2010), and NPY (Kubota et al., 2011b), as well as the more recently identified markers NDNF, Lamp5 and Sncg (Tasic et al., 2016). Updated and expanded cortical and hippocampal scRNAseq data from the Allen Institute (Yao et al., 2021; Allen Institute for Brain Science, 2023) confirms that Id2 is a useful marker for studying non-PV, SST, or VIP INs (Figure 1—figure supplement 1). To develop a transgenic approach to target Id2 INs, we took advantage of an existing Id2-CreER driver line (Rawlins et al., 2009) that expresses a tamoxifen-inducible form of Cre recombinase (Metzger et al., 1995). Since Id2 is also expressed in pyramidal and non-neuronal cell types in the cortex, we crossed the Id2-CreER driver with a pan-IN Flp driver (Dlx5/6-Flpe; Miyoshi et al., 2010) such that only Id2 INs would be targeted with intersectional reporters (Figure 1B). In combination with the Cre and Flp dependent tdTomato reporter Ai65 (Madisen et al., 2015), this intersectional genetics approach yielded labeling of INs in all cortical layers of the somatosensory cortex barrel field (S1BF) following tamoxifen administration (3–4 doses between P21 and P35; see Materials and methods) to activate the CreER (Figure 1C).
 
-## Histological analysis of Id2 Ins
+![Figure 1.](https://cdn.elifesciences.org/articles/85893/elife-85893-fig1-v2.jpg)
+
+**Figure 1.:** (A) Public scRNAseq data (from Tasic et al., 2016; comprised of ~3000 INs purified from the visual cortex, with transcriptome diversity represented as tSNE plots; see Mayer et al., 2018) underlying the hypothesis that the non-VIP CGE-derived IN population can be distinguished by the expression of Id2. Primary IN lineages originating from the medial (MGE) and caudal (CGE) ganglionic eminences express Lhx6 and Adarb2, respectively. To a first approximation, MGE-derived INs are comprised of parvalbumin (Pvalb) and somatostatin (Sst) subtypes, whereas CGE-derived INs consist of vasoactive intestinal peptide (Vip) and inhibitor of DNA binding 2 (Id2) subtypes. Expression of the marker genes Reelin (Reln), neuron-derived neurotrophic factor (Ndnf), neuropeptide Y (Npy) and cholecystokinin (Cck) is evident within the Id2 population, which roughly corresponds to the lysosomal associated membrane protein 5 (Lamp5) plus synuclein-γ (Sncg) IN categories in Tasic et al., 2016. (B) Intersectional genetic strategies for targeting Id2 INs. The Id2-CreER knock in driver line combined with the Dlx5/6-Flpe transgenic line allows for labeling of Id2 INs with tdTomato when crossed with the Ai65 intersectional reporter (or the channelrhodopsin CatCh when crossed with Ai80). The use of the intersectional/subtractive reporter FLTG enables the dual color labeling of Id2 and non-Id2 INs. (C) Image of a coronal cryosection (20 μm thick) of an Id2-CreER; Dlx5/6-Flpe; Ai65 labeled brain (P30) reveals the distribution of Id2 INs throughout the layers of the cortical S1 barrel field (S1BF). (D) Image of a coronal field in S1BF of Id2-CreER; Dlx5/6-Flpe; FLTG labeled brain with Id2 INs in green and non-Id2 INs in red. (E) Proportion of Id2 vs. non-Id2 INs across the layers of S1BF determined from cell counts of the cross in (D). Id2 INs comprise 18% of the overall IN population (3812 cells counted across 4 brains; see also Figure 1—source data 1). (F) Distribution of Id2 and non-Id2 IN somas across S1BF lamina. Scale bars in panels C and D represent 100 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85893/elife-85893-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Annotated dendrogram and gene expression heat maps based on combined cortical and hippocampal IN scRNAseq data published by the Allen Institute (Yao et al., 2021; portal.brain-map.org/atlases-and-data/rnaseq). Heat maps illustrate mRNA expression levels (trimmed mean (25%–75%) LOG2(CPM + 1)) for each gene listed: Lhx6 (pan-MGE), Adarb2 (pan-CGE), Vip, Id2, Npy, Reln, Ndnf, Lamp5, Cck, and Sncg. Based on our interpretation of these and other gene expression patterns, we added assignments beneath the major branches of the dendrogram to indicate the putative IN subtypes that correspond with each set of color-coded bins. The annotated dendrogram has been adapted from Figure 2A from Yao et al., 2021. The heat maps are reproduced from the Allen Institute for Brain Science, Allen Brain Map, available from https://portal.brain-map.org/atlases-and-data/rnaseq, scRNAseq portal https://celltypes.brain-map.org/rnaseq/mouse_ctx-hpf_10x. (B) Pie chart of the nine IN bins (numbered in (A)) where trimmed mean Id2 mRNA levels are >300 counts per million illustrates the main populations in L2-6 that are expected to be labeled in the Id2-CreER; Dlx5/6-Flpe; Ai65 intersectional cross. NDNF and α7 bins were excluded since these cells are primarily located in L1. Cells in the NGFC (MGE) branch (i.e. Lamp5/Lhx6) and NtnG1 HPF branch were also excluded since these cells are almost entirely located in the hippocampus. The number of cells in each bin was obtained from the Allen scRNAseq data portal (portal.brain-map.org/altlases-and-data/rnaseq) and includes cells isolated from throughout the cortex and hippocampus. (C) Plots of expression levels (counts per million) of Cck, Sncg, Npy, and Id2 transcripts across the nine Id2 IN bins shown in (B). Cck exhibits variable levels of expression across the non-NGFC bins, with the highest levels in bin 35. Sncg is weakly expressed or absent in all but bin 35. Bin 12 (NGFC) shows the highest Npy level, as expected. See also Figure 1—figure supplement 1—source data 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/85893/elife-85893-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative image of dual color labeling of Id2 INs (green) and non-Id2 INs (red) in the mPFC of the Id2-CreER; Dlx5/6-Flpe; FLTG cross. The prelimbic area (PrL) is denoted by the white dotted lines. The scale bar indicates 100 μm. (B) Quantification of the distribution and proportion of Id2 INs in PrL. Due to the difficulty in identifying precise layer boundaries in PrL, green and red cells were counted across 20 equally spaced bins across the pia to the white matter (438/2424 cells counted; n=3 brains; error bars indicate SEM). The overall fraction of Id2 INs/total INs was 18% (represented as a pie chart). See also Figure 1—figure supplement 2—source data 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/85893/elife-85893-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Tissue section of the cortical column in S1BF of an Id2-CreER; Nkx2.1-Flpo; Ai65 brain. Arrows point to the two labeled cells in this field, both located in L6. (B) Tissue section of the cortical column in S1BF of an Id2-CreER; VIP-Flpo; Ai65 brain. The white arrow indicates the one labeled cell in this field, located in upper L2/3. Cell labeling was extremely sparse in both crosses. (C) Tissue section of the mPFC of an Id2-CreER; Nkx2.1-Flpo; Ai65 brain. Arrows point to the two labeled cells in this field. (D) Tissue section of the mPFC of an Id2-CreER; VIP-Flpo; Ai65 brain. The white arrows indicate the labeled cells in this field, mostly located along the L1/L2 border. DAPI counterstain (blue) is present in all images. All tissue sections are 20 μm thick. Scale bars indicate 100 μm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/85893/elife-85893-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Expression levels of Cck mRNA across all GABAergic INs from Tasic et al., 2016 (~3000 INs individually purified from V1), represented on a log scale. The top bar shows the IN subtype categories described in Tasic et al., 2016, with a heat map for Cck mRNA shown underneath. On the right, a schematic depiction of the hypothetical extent of cell labeling using immunohistochemistry (IHC), in situ hybridization (ISH), or CCK-Cre cumulative reporter labeling (e.g. Cck-Cre; Ai14) is shown. (B) Dual fluorescence in situ hybridization (FISH) for Cck (red) and Pvalb (green) on a brain tissue section (S1BF; 20 μm thick) does not indicate substantial overlap between these markers. However, as shown in (C), the use of CCK-Cre with a tdTomato reporter (in this case, CCK-Cre; Dlx5/6-Flpe; Ai65) in combination with IHC for PV (green) results in substantial labeling of PV INs (white arrows). (D) CCK-Cre cumulative recombination can also label putative NGFC (NPY+), as shown in an intersectional CCK-Cre; Htr3a-Flpo; Ai65; NPY-hrGFP cross (white arrows indicate tdTomato/NPY + cells). Scale bars indicate 100 μm.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/85893/elife-85893-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Images of cell labeling in S1BF obtained with one copy of Htr3a-Flpo (het: Htr3a-Flpo/+; Ai65F/+) or two copies (hom: Htr3a-Flpo/Htr3a-Flpo; Ai65F/+), compared with Htr3a(BAC)-Cre; Ai9 and Htr3a(BAC)-EGFP. Dashed lines indicate approximate layer boundaries. (B) The density of cell labeling (cells/mm2) obtained from the four Htr3a transgenic labeling strategies across all layers in S1BF. (C) The comparative density of cell labeling obtained from the four Htr3a transgenic labeling strategies across all layers in S1BF, normalized to Htr3a(BAC)-EGFP (100%). Overall, one copy of Htr3a-Flpo yielded about 30% of the cell labeling as that seen in Htr3a(BAC)-EGFP animals, with two copies of Htr3a-Flpo doubling this labeling. This observation is consistent with a broad but transient expression of Htr3a mRNA in most CGE INs during embryonic development. The ephemeral nature of Htr3a expression in many CGE INs limits the efficiency of labeling with Htr3a-Flpo, although this can be partially compensated for with two copies of the driver. The Htr3a(BAC)-Cre driver in combination with Ai9 labels ~80% of the cells of the Htr3a(BAC)-EGFP line. Scale bars indicate 100 μm.
+
+### Histological analysis of Id2 Ins
 
 To determine the proportion of Id2 vs. non-Id2 INs, we utilized the intersectional/subtractive reporter FLTG (Plummer et al., 2015) where Flp activity results in tdTomato expression, but Flp + Cre results in EGFP labeling (Figure 1D). Quantification of Id2 INs (green) and non-Id2 INs (red) in the S1BF of well-labeled brains (see Materials and methods) yielded an overall fraction of 18% (680/3812 cells, n=4 brains), with the majority of Id2 INs located in superficial layers (L1-3; Figure 1E–F). This proportion and distribution was consistent with our previous estimates for non-VIP 5HT3aR or CGE INs (Tremblay et al., 2016), indicating that this genetic strategy was efficiently targeting this population. We observed a similar overall proportion of Id2 INs in other sensory areas (e.g. V1), consistent with a recent comprehensive survey of interneuron subtype distribution (Yao et al., 2021), as well as in a higher order cortical area, the prelimbic cortex (18%; Figure 1—figure supplement 2).
 
@@ -51,11 +75,136 @@ To assess any potential overlap between Id2 INs and PV, SST, or VIP INs, we perf
 
 In superficial layers (L1-3), expression of neuropeptide Y (NPY) has been utilized successfully as a proxy to identify NGFCs (Schuman et al., 2019; Kubota et al., 2011b; Chittajallu et al., 2013; Neske et al., 2015). We evaluated the overlap between Id2 INs and NPY by performing fluorescence ISH (FISH) for tdTomato and NPY on tissue cryosections from Id2-CreER; Dlx5/6; Ai65 brains (S1BF; Figure 2A–B). The proportion of Id2/NPY cells vs. the total Id2 labeled population in S1BF ranged from 29% in L1 to 82% in L2/3, 95% in L4-5, and 61% in L6, with a combined proportion in L2-5 of 87% (638 cells counted, sections from three brains), suggesting that in contrast to L1, where Id2 INs consist of several subtypes (Schuman et al., 2019), the vast majority of Id2 cells outside of L1 are NGFCs. Within L1, our findings are consistent with our previous analysis that about 30% of L1 INs are NPY-expressing NGFCs, with the remainder of the Id2 population being comprised of canopy cells (NDNF/non-NPY) and α7 cells (Schuman et al., 2019). We further confirmed that most Id2 INs in L2-6 are NPY-expressing throughout different sensory cortical areas by generating Id2-CreER; Dlx5/6-Flpe; Ai65; NPY-hrGFP animals and comparing labeling in S1BF, V1 and A1 (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/85893/elife-85893-fig2-v2.jpg)
+
+**Figure 2.:** (A–B) Assessment of Npy expression in Id2 INs (Id2-CreER; Dlx5/6-Flpe; Ai65). Fluorescent in situ hybridization (FISH) with cRNA probes for tdTomato (red; panel A) and Npy (green; both red and green channels shown in panel B) mRNAs on brain cryosections (20 μm thick) reveals that outside of L1, the vast majority of Id2 INs express Npy (L2-5: 87%). The percentages of Id2/Npy cells (yellow) in each layer are represented as pie charts on the right. (C–D) Assessment of CCK expression in Id2 INs (Id2-CreER; Dlx5/6-Flpe; Ai65). Immunofluorescent histochemistry (IHC) for tdTomato (red; panel A) and CCK (green) reveals that a fraction (15%) of Id2 cells in L2-6 express high levels of CCK (CCKhi; white arrowheads), with the highest proportion of Id2/CCK cells observed in L2 and L6. The percentages of Id2/CCK cells (yellow) in each layer are represented as pie charts on the right. Scale bars in panels B and D represent 100 μm. See also Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85893/elife-85893-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Examples of Id2 IN labeling and NPY expression (tdTomato and NPY-hrGFP expression in Id2-CreER; Dlx5/6-Flpe; Ai65; NPY-hrGFP animals) in brain tissue sections from S1BF, V1 and A1. Id2 INs labeled with tdTomato are shown on the left panels, with the NPY-hrGFP signal included in the right panels from each cortical area. Red cells indicate Id2 INs without NPY expression, and yellow cells indicate Id2/NPY INs. The approximate locations of layer boundaries are labeled on the right. DAPI counterstain (blue) is present in all images. All tissue sections are 20 μm thick. Scale bars indicate 100 μm.
+
 To explore the nature of the non-NPY Id2 neurons in L2-6, we examined the overlap between Id2 labeled cells and relatively high levels of CCK expression as the latter is a proxy for a sparse population of INs that include the large CCK basket cells (Freund and Katona, 2007; Freund, 2003; Kawaguchi and Kubota, 1997). Using IHC for CCK (Figure 2C–D), overall, in L2-6 of S1BF we observed that 15% of Id2 labeled INs exhibited strong CCK expression (165/1123 cells, sections from three brains), with Id2/CCK cells being most abundant in L2 (14% of Id2 cells) and L6 (25%). No overlap was observed between strong CCK IHC and NPY-hrGFP expression, consistent with previous work (Kubota and Kawaguchi, 1997) and the current Allen scRNAseq data (Figure 1—figure supplement 1; Yao et al., 2021). Thus, a significant fraction of the Id2/non-NPY population in cortical layers outside of L1 appear to be CCK +IN subtypes (~80% in L2/3), such that Id2/NPY and Id2/CCK populations account for nearly all of the Id2 INs in L2-5.
 
-## Electrophysiological and morphological properties of Id2 Ins
+### Electrophysiological and morphological properties of Id2 Ins
 
 Our FISH analysis (Figure 2A–B) suggested that the majority (87%) of Id2 INs in L2-5 are NPY-expressing NGFCs. To test this hypothesis, we characterized the firing properties of Id2 INs in L2-5 of S1BF in acute brain slices. The cells were filled with biocytin during electrophysiological recording for post-hoc morphological analysis. NGFCs in L2/3 and L1 have been shown to have a late-spiking (LS) firing pattern characterized by delayed firing following a slow ramp depolarization when depolarized with step current injections to near-threshold membrane potentials (Tremblay et al., 2016; Schuman et al., 2019; Tamás et al., 2003; Oláh et al., 2009; Overstreet-Wadiche and McBain, 2015). NGFCs in these layers were also found to fire spike trains with little spike frequency adaptation, or even spike frequency acceleration, during depolarizations close to threshold, and mild adaptation during suprathreshold depolarizations. Action potentials in NGFCs have a large AHP and a slow ADP (Schuman et al., 2019; Tamás et al., 2003; Oláh et al., 2009; Hestrin and Armstrong, 1996; Wozny and Williams, 2011; Kawaguchi, 1995). We found that in a sample of randomly recorded Id2 cells (n=76), the large majority in L2-5 had a LS firing pattern (36/45; 80% in L2/3 and 28/31; 90% in L4-L5; Figure 3). These proportions are similar to the proportion of Id2/NPY cells (Figure 2). The Id2 LS cells also showed weak spike frequency adaptation during near threshold membrane depolarizations and had other electrophysiological properties typical of NGFCs (Table 1). In paired recordings of L2/3 LS Id2 cells and PCs, we observed a very high connection probability (70%; 19/27 pairs tested), consistent with previous observations and the hypothesis that NGFCs mediate volume transmission of GABA (Oláh et al., 2009). Finally, the decay of the IPSC elicited by NGFCs is known to be prolonged compared to that mediated by other INs (Tamás et al., 2003; Oláh et al., 2007). Consistent with this, we found that the decay rate (80 to 20% of peak) of the IPSC in LS-PC pairs was significantly slower than that in non-LS-PC pairs (LS-PC: 51±8ms, n=6 pairs; non-LS-PC: 16±3ms, n=5 pairs; p=0.005, two-tailed unpaired t-test).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85893/elife-85893-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) Four examples of the types of cells encountered in this survey and their respective locations in the cortical column: (A–B) Late-spiking (LS), (C) Irregular-spiking (IS), and (D) Burst-spiking (BS). For electrophysiological characterization, cells were injected with current to bring them to –70 mV. Each voltage trace shows the response of the cell to a 1 s long current injection at the indicated levels which are: (i) a negative current to hyperpolarize the cell to –100 mV [black-lower trace], (ii) current steps just below [grey trace], at [blue trace], and just above rheobase [red trace], and (iii) current at roughly double the rheobase [black-upper trace]. To the right of each cell’s voltage traces is the morphological reconstruction from biocytin fills of the same recorded cell with the cortical layers and barrel fields indicated with dashed lines. Dendrites are shown in black and axons are shown in gray. (E) Overlay of first action potential waveforms at rheobase from the three described cell types. (F) Proportions of the three main cell types encountered in L2/3 and L4/5. For L2/3, 45 randomly selected cells were patched and characterized electrophysiologically. The proportions of the cell types were: 80% LS, 18% IS, and 2% BS. For L4/5, 31 randomly selected cells were characterized, and the proportions of the cell types were: 90% LS, 10% IS, and 0% BS. (G) 3D plot of LS, BS, and IS Id2 INs resolved by AP half-width, rheobase, and AP latency.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85893/elife-85893-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Reconstructions of three additional Id2 late-spiking (LS) INs and one Id2 α7 IN in L2-4 of S1BF. Approximate layer boundaries and barrel locations are indicated by dashed lines. (B) Images of ten filled Id2 LS INs aligned to their respective laminar locations. (C) Images of four filled Id2 irregular spiking (IS) INs and pyramidal cell recorded pairs located in L2/3. (D) Images of three filled Id2 burst spiking (BS) INs and pyramidal cell recorded pairs located in L2/3. (E) Image of an α7 IN and pyramidal cell recorded pair. Arrows in (C–E) indicate cell soma of the respective filled Id2 cells. Note: neuronal images are better appreciated by zooming in (especially axonal arbors).
+
+**Table 1.**
+ Electrophysiological properties of Id2 INs in S1BF.Table 1—source data 1.Electrophysiological parameters source data.This excel spreadsheet lists all of the cells patched alongside their electrophysiological parameters. The file consists of two workbooks, ‘tabulation’ containing the parameters for each cell, and ‘summary’ containing the summary data (average, sem, n) for each cell type. For some cells, no values are reported for some parameters and these cells are marked ‘n/a.’ A small number of cells were patched with an internal solution different than that reported in the methods. Electrophysiology parameters for these cells were not reported, as differences in internal solution can have significant impacts on electrophysiological parameters, but the cells were counted alongside the rest for the proportions reported in Figure 3. These cells were marked as ‘0’ in the ‘Internal’ column or ‘1’ otherwise. Several cells categorized as LS do not have a value for the AP latency as for these cells a voltage trace bearing a single AP was not obtained. Nevertheless, these cells were confidently labeled LS as the late-onset of the APs is evident even in multiple AP traces. Cells patched in slices with NPY-GFP (i.e. Id2-CreER; Dlx5/6-Flpe; Ai65; NPY-hrGFP) are not listed in this file as the parameters summarized in Table 1 were only taken from the unbiased cross (i.e. Id2-CreER; Dlx5/6-Flpe; Ai65).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Electrophysiological property</th>
+      <th>LS in L2/3(n≥15)</th>
+      <th>LS in L4-5(n≥5)</th>
+      <th>IS in L2/3(n≥5)</th>
+      <th>BS in L2/3(n≥5)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First AP latency (ms)</td>
+      <td>805±22</td>
+      <td>827±32</td>
+      <td>53±4</td>
+      <td>143±37</td>
+    </tr>
+    <tr>
+      <td>Input Resistance (MΩ)</td>
+      <td>188±7</td>
+      <td>130±11***</td>
+      <td>199±32</td>
+      <td>301±32***</td>
+    </tr>
+    <tr>
+      <td>Membrane τ (ms)</td>
+      <td>12±0.5</td>
+      <td>11±0.8</td>
+      <td>13±1.2</td>
+      <td>17±1.4**</td>
+    </tr>
+    <tr>
+      <td>AP half-width (ms)</td>
+      <td>0.70±0.02</td>
+      <td>0.63±0.08</td>
+      <td>0.48±0.04***</td>
+      <td>0.57±0.05*</td>
+    </tr>
+    <tr>
+      <td>AP threshold (mV)</td>
+      <td>35±1</td>
+      <td>33±2</td>
+      <td>38±2</td>
+      <td>41±2*</td>
+    </tr>
+    <tr>
+      <td>AP rise slope (mV/ms)</td>
+      <td>283±15</td>
+      <td>367±61</td>
+      <td>404±60</td>
+      <td>322±46</td>
+    </tr>
+    <tr>
+      <td>AP fall slope (mV/ms)</td>
+      <td>84±4</td>
+      <td>108±20</td>
+      <td>150±19***</td>
+      <td>135±29*</td>
+    </tr>
+    <tr>
+      <td>AHP amplitude (mV)</td>
+      <td>14.4±0.5</td>
+      <td>12.9±1.1</td>
+      <td>9.9±0.9***</td>
+      <td>6.6±1.3***</td>
+    </tr>
+    <tr>
+      <td>Rheobase (pA)</td>
+      <td>139±14</td>
+      <td>205±44</td>
+      <td>155±18</td>
+      <td>51±7***</td>
+    </tr>
+    <tr>
+      <td>Firing rate (Hz)(at 2 x rheobase)</td>
+      <td>38±3</td>
+      <td>29±4</td>
+      <td>40±6</td>
+      <td>31±7</td>
+    </tr>
+    <tr>
+      <td>Firing Regularity(at 2 x rheobase)</td>
+      <td>0.053±0.004</td>
+      <td>0.050±0.008</td>
+      <td>0.112±0.029**</td>
+      <td>0.262±0.124**</td>
+    </tr>
+    <tr>
+      <td>Adaptation Index(near rheobase)</td>
+      <td>1.14±0.08</td>
+      <td>1.06±0.11</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Adaptation Index(at 2 x rheobase)</td>
+      <td>0.76±0.03</td>
+      <td>0.72±0.03</td>
+      <td>0.26±0.05***</td>
+      <td>0.24±0.14**</td>
+    </tr>
+  </tbody>
+</table>
 
 Morphologically, the LS cells in L2-5 had the characteristic features of NGFCs with short multipolar dendrites emanating around the cell body and a significantly larger, dense axonal arbor surrounding the cell body and dendritic arbor (Figure 3A–B and Figure 3—figure supplement 1; n=15), consistent with previous descriptions of NGFC in these layers across several neocortical areas (Tamás et al., 2003; Oláh et al., 2007; Oláh et al., 2009; Overstreet-Wadiche and McBain, 2015; Kawaguchi, 1995). NGFCs in L1 resemble NGFCs in L2-5 in having short dendrites and dense axonal arborization, but their axonal arbor extends for longer horizontal distances, spanning several columns (Jiang et al., 2013; Jiang et al., 2015; Schuman et al., 2019; Hestrin and Armstrong, 1996; Kubota et al., 2011a; Zhou and Hablitz, 1996) and have been called ‘‘elongated neurogliaform cells’’ (Jiang et al., 2013; Jiang et al., 2015). We found that in the LS cells located in deeper layers, the axonal arbor was also asymmetrical, but often extended in the vertical (columnar) direction. These differences between NGFCs across cortical layers are also evident in the NGFC morphologies illustrated in a recent patch-seq study (Gouwens et al., 2020).
 
@@ -65,9 +214,9 @@ To test the hypothesis that non-LS Id2 neurons include CCK basket cells, we firs
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85893/elife-85893-fig4-v2.jpg)
 
-**Figure 4.:** (A) Protocol used for revealing depolarization-induced suppression of inhibition (DSI). DSI was first assessed via optogenetics in L2/3 pyramidal cells (PCs) in the following manner: PCs were recorded in voltage-clamp mode in cortical slices from Id2-CreER; Dlx5/6-Flpe; Ai80 animals, in which the channelrhodopsin CatCh is widely expressed in the Id2 IN population. Control IPSCs were elicited by light pulses of 2ms in duration. Then, after a 60 s interval, the PC was stepped to +10 mV for 5 s, and after a 2 s recovery, another IPSC was elicited in the same manner. (B) Sample traces from optogenetic experiments. In the drug-free condition (left panel), the peak current decreases slightly but noticeably and recovers by the next stim 60 s later. However, in the presence of the CB1 receptor antagonist AM251 (10 µM) [right panel], this decrease was not observed. (C) Summary data from all cells tested as in (B). Thin, faint lines are the averages for each cell across three or more repetitions. Dark, solid lines are the averages across all cells. The average decrease in IPSC amplitude in the control condition was 16 ± 2% (n=18 cells, N=8 animals). Two-tailed paired t-tests of Post vs. Pre and Recovery vs. Post were significant (p=1e-6, p=6e-6). The average decrease in IPSC amplitude in the AM251 condition was 8 ± 1% (n=11 cells, N=4 animals). Also, the average decrease post-depolarization in Control vs. AM251 was significant by a two-tailed unpaired t-test (p=0.002). (D) A subset of five cells was tested in which the DSI protocol was carried out with (dp+) or without (dp-) a depolarization to +10 mV to control for variability or rundown of the synaptic current. Trials that incorporated the depolarization step exhibited significantly greater decreases in IPSC amplitude than those that lacked it (p=0.014, two-tailed paired t-test). (E) DSI was also detected in nonLS-PC pairs but not in LS-PC pairs. Recording configuration and sample current traces from two PCs: a post-synaptic PC to a nonLS cell (left) and a post-synaptic PC to an LS cell (right). Current traces represent a DSI experiment. Several probe stimuli were given to obtain a baseline average (black trace), then the depolarization step to +10 mV was delivered to the PC, and 1–2 s later, the PC was probed again (red trace). The cell was then probed several times afterwards to assess recovery (grey trace). The mouse lines used for these experiments were Id2-CreER; Dlx5/6-Flpe; Ai65 or the same with the addition of an NPY-hrGFP allele to facilitate the identification of nonLS cells. Out of 46 nonLS-PC pairs tested, only 9 (20%) were connected (compared to 24% for CB1IS→P in Galarreta et al., 2008). Out of 27 LS-PC pairs tested, 19 (70%) were connected. DSI was assessed in 9 LS-PC pairs and not observed in any of them, whereas out of 5 nonLS-PC pairs tested for DSI, 3 pairs exhibited it. See also Figure 4—source data 1.Figure 4—source data 1.This excel file consists of three workbooks, ‘Figure 4C (opto; AM251)’, ‘Figure 4D (opto; dp +-)’, and ‘Figure 4E (paired recordings)’. ‘dp’ refers to the 5 s depolarization step to +10 mV delivered to the PC to induce DSI. Cells discarded from the final data set are not listed. For optogenetics experiments, traces were discarded if the series resistance was too high (>40 MΩ), or if the holding current was too negative (<-100 pA). Cells were discarded if there were fewer than three acceptable traces, if the cell patched was clearly not a PC, or if the recording parameters deviated from the standard protocol (e.g. non-standard internal, interstim interval not 60 s, etc.).
+**Figure 4.:** (A) Protocol used for revealing depolarization-induced suppression of inhibition (DSI). DSI was first assessed via optogenetics in L2/3 pyramidal cells (PCs) in the following manner: PCs were recorded in voltage-clamp mode in cortical slices from Id2-CreER; Dlx5/6-Flpe; Ai80 animals, in which the channelrhodopsin CatCh is widely expressed in the Id2 IN population. Control IPSCs were elicited by light pulses of 2ms in duration. Then, after a 60 s interval, the PC was stepped to +10 mV for 5 s, and after a 2 s recovery, another IPSC was elicited in the same manner. (B) Sample traces from optogenetic experiments. In the drug-free condition (left panel), the peak current decreases slightly but noticeably and recovers by the next stim 60 s later. However, in the presence of the CB1 receptor antagonist AM251 (10 µM) [right panel], this decrease was not observed. (C) Summary data from all cells tested as in (B). Thin, faint lines are the averages for each cell across three or more repetitions. Dark, solid lines are the averages across all cells. The average decrease in IPSC amplitude in the control condition was 16 ± 2% (n=18 cells, N=8 animals). Two-tailed paired t-tests of Post vs. Pre and Recovery vs. Post were significant (p=1e-6, p=6e-6). The average decrease in IPSC amplitude in the AM251 condition was 8 ± 1% (n=11 cells, N=4 animals). Also, the average decrease post-depolarization in Control vs. AM251 was significant by a two-tailed unpaired t-test (p=0.002). (D) A subset of five cells was tested in which the DSI protocol was carried out with (dp+) or without (dp-) a depolarization to +10 mV to control for variability or rundown of the synaptic current. Trials that incorporated the depolarization step exhibited significantly greater decreases in IPSC amplitude than those that lacked it (p=0.014, two-tailed paired t-test). (E) DSI was also detected in nonLS-PC pairs but not in LS-PC pairs. Recording configuration and sample current traces from two PCs: a post-synaptic PC to a nonLS cell (left) and a post-synaptic PC to an LS cell (right). Current traces represent a DSI experiment. Several probe stimuli were given to obtain a baseline average (black trace), then the depolarization step to +10 mV was delivered to the PC, and 1–2 s later, the PC was probed again (red trace). The cell was then probed several times afterwards to assess recovery (grey trace). The mouse lines used for these experiments were Id2-CreER; Dlx5/6-Flpe; Ai65 or the same with the addition of an NPY-hrGFP allele to facilitate the identification of nonLS cells. Out of 46 nonLS-PC pairs tested, only 9 (20%) were connected (compared to 24% for CB1IS→P in Galarreta et al., 2008). Out of 27 LS-PC pairs tested, 19 (70%) were connected. DSI was assessed in 9 LS-PC pairs and not observed in any of them, whereas out of 5 nonLS-PC pairs tested for DSI, 3 pairs exhibited it. See also Figure 4—source data 1.
 
-## In vivo properties of Id2 INs
+### In vivo properties of Id2 INs
 
 Although NGFCs are a substantial population of GABAergic INs, particularly in the superficial layers of the cortex (where they are slightly more abundant than SST INs), the lack of genetic strategies to study these cells has limited the characterization of their in vivo properties. Nevertheless, given their broad output connectivity, these neurons are likely to contribute significantly to inhibition throughout the cortical column. We utilized our intersectional genetics approach to express CatCh in Id2 INs (Id2-CreER; Dlx5/6-Flpe; Ai80; also see Figure 4) in order to optogenetically identify and stimulate these cells in multichannel silicon probe recordings in the posterior parietal cortex and V1 of freely moving and behaving animals (Figure 5A). Single units were isolated (n=571 units from 5 mice) and separated into putative pyramidal cells (PC), narrow waveform (NW) INs and wide waveform (WW) INs (Petersen et al., 2021). Id2 INs expressing CatCh were distinguished from other cells adjacent to the probes by measuring their firing rates in response to light stimulation (Figure 5B). Applying stringent filtering criteria (see Methods), we selected 11 Id2 INs that exhibited robustly increased firing following light stimulation for further analysis (Figure 5B–C). We then characterized the firing properties of these Id2 INs identified in vivo in relation to PCs and other INs. These Id2 INs exhibited WW characteristics, and were readily distinguishable from NW cells, previously identified as PV fast-spiking INs and some SST INs (Valero et al., 2021; Figure 5B and D). Consistent with this, these 11 Id2 INs had wider auto-correlograms than other PC and NW INs, similar to the overall WW group (Figure 5E). These results indicate that the previously described WW group (Petersen et al., 2021) includes an unknown proportion of Id2 INs.
 
@@ -103,69 +252,247 @@ The genetic strategies described here have also facilitated the in vivo recordin
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Id2-CreER</td>
+      <td>Jax</td>
+      <td>016222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Dlx5/6-Flpe</td>
+      <td>Jax</td>
+      <td>010815</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>NPY-hrGFP</td>
+      <td>Jax</td>
+      <td>006417</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Nkx2.1-Flpo</td>
+      <td>Jax</td>
+      <td>028577</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>VIP-Flpo</td>
+      <td>Jax</td>
+      <td>028578</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Ai65</td>
+      <td>Jax</td>
+      <td>021875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Ai80</td>
+      <td>Jax</td>
+      <td>025109</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>FLTG</td>
+      <td>Jax</td>
+      <td>026932</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-CCK</td>
+      <td>Frontier Institute</td>
+      <td>Af350</td>
+      <td>1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-rabbit AlexaFluor-488</td>
+      <td>Invitrogen</td>
+      <td>A-21206</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cre primer (fwd)</td>
+      <td>Invitrogen</td>
+      <td>custom</td>
+      <td>caacgagtgatgaggttcgca</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cre primer (rev)</td>
+      <td>Invitrogen</td>
+      <td>custom</td>
+      <td>cgccgcataaccagtgaaaca</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Flpe primer (fwd)</td>
+      <td>Invitrogen</td>
+      <td>custom</td>
+      <td>tctttagcgcaaggggtagga</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Flpe primer (rev)</td>
+      <td>Invitrogen</td>
+      <td>custom</td>
+      <td>aagcacgcttatcgctccaa</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Flpo primer (fwd)</td>
+      <td>Invitrogen</td>
+      <td>custom</td>
+      <td>ccacattcatcaactgcggc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Flpo primer (rev)</td>
+      <td>Invitrogen</td>
+      <td>custom</td>
+      <td>gggccgttcttgatagcgaa</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NPY-hrGFP primer (fwd)</td>
+      <td>Invitrogen</td>
+      <td>custom</td>
+      <td>atgtggacggggcagaagatc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NPY-hrGFP primer (rev)</td>
+      <td>Invitrogen</td>
+      <td>custom</td>
+      <td>gtgcggttgccgtactgga</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NPY cRNA antisense probe primer (fwd)</td>
+      <td>Invitrogen</td>
+      <td>custom</td>
+      <td>tcacagaggcacccagagc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NPY cRNA antisense probe primer (rev +T7)</td>
+      <td>Invitrogen</td>
+      <td>custom</td>
+      <td>attaatacgactcactatag cggagtccagcctagtggtg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tdTomato cRNA antisense probe primer (fwd)</td>
+      <td>Invitrogen</td>
+      <td>custom</td>
+      <td>atcaaagagttcatgcgcttc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tdTomato cRNA antisense probe primer (rev +T7)</td>
+      <td>Invitrogen</td>
+      <td>custom</td>
+      <td>cattaatacgactcactataggg ttccacgatggtgtagtcctc</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tamoxifen</td>
+      <td>Sigma</td>
+      <td>T5648</td>
+      <td>Prepare 20 mg/ml stock in corn oil</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 The following primary lines of mice were used to generate the compound transgenic crosses described in this paper: Id2-CreER (Jax #016222) (Rawlins et al., 2009), Dlx5/6-Flpe (Jax #010815) (Miyoshi et al., 2010), NPY-hrGFP (Jax #006417) (van den Pol et al., 2009), Nkx2.1-Flpo (Jax #028577) (He et al., 2016), VIP-Flpo (Jax #028578) (He et al., 2016), Ai65 (Jax #021875) (Madisen et al., 2015), Ai80 (Jax #025109) (Daigle et al., 2018), and FLTG (Jax #026932) (Plummer et al., 2015). The reporter lines Ai65, Ai80 and FLTG were maintained as homozygous stocks prior to crossing with compound heterozygous driver lines (e.g. Id2-CreER; Dlx5/6-Flpe X Ai65 homozygous), with the resulting pups genotyped for Cre and Flpe to obtain experimental animals (e.g. Id2-CreER; Dlx5/6-Flpe; Ai65). To generate Id2-CreER; Dlx5/6-Flpe; Ai65; NPY-hrGFP animals, a stock of Ai65 (homozygous); NPY-hrGFP (heterozygous) animals was established and then crossed with Id2-CreER; Dlx5/6-Flpe breeders. Genotyping was performed on genomic DNA extracted from pup toe clippings using the following primers (sequences are 5’ to 3’): Cre (fwd primer: caacgagtgatgaggttcgca, rev primer: cgccgcataaccagtgaaaca, product = 304 bp), Flpe (fwd primer: tctttagcgcaaggggtagga, rev primer: aagcacgcttatcgctccaa, product = 312 bp), Flpo (fwd primer: ccacattcatcaactgcggc, rev primer: gggccgttcttgatagcgaa, product = 355 bp), and NPY-hrGFP (fwd primer: atgtggacggggcagaagatc, rev primer: gtgcggttgccgtactgga, product = 400 bp). To activate CreER, a stock solution of tamoxifen (Sigma T5648; dissolved in corn oil at 20 mg/ml on a shaker at 55 °C for several hours) was administered to P21-P35 animals by oral gavage (4 mg/20 g mouse) 3–4 x over 5–7 days. The efficacy of tamoxifen induction of CreER mediated reporter activation was assessed by histology (see below); well labeled brains typically exhibited >50 labeled cells in a 20 μm thick tissue section of S1BF encompassing 4–5 barrels (~1300 μm x 1700 μm field). All animals were group housed in an SPF barrier facility on a 12 hr light/dark cycle, with unlimited access to food and water. All experiments were performed in accordance with protocols approved by the Department of Comparative Medicine at the NYU Grossman School of Medicine.
 
-## Histology
+### Histology
 
 To obtain brain tissue for histology, animals (P40-P60) were transcardially perfused with 4% paraformaldehyde/PBS (diluted from a 32% stock; Electron Microscopy Sciences cat#15714) and the brain dissected, with a post-dissection fix period of 0–16 hr. For the preparation of thin cryosections, brains were equilibrated in 30% sucrose/PBS overnight before freezing in mounting medium (Tissue-Plus O.C.T. compound; Scigen 4583). For the quantification of Id2 vs non-Id2 interneurons in Figure 1, vibratome sections (50 μm) were generated following perfusion/PBS washes using a Leica vibratome (VT1000S). Brain cryosections (20 μm) were generated using a Leica CM3050 cryostat, collected on glass slides (Shandon ColorFrost Plus; ThermoScientific cat#9991013), and stored at –20 °C. For immunohistochemistry (IHC), tissue sections were washed in PBS, blocked for 1 hr at room temperature with PBS/0.1% Triton-X 100/2% normal donkey serum, incubated overnight at 4 °C with primary antibody (rabbit anti-CCK; Frontier Institute cat#Af350; 1:500 dilution) in blocking solution, washed in PBS, incubated 1 hr at RT with secondary antibodies (for CCK IHC: donkey anti-rabbit AlexaFluor-488; Invitrogen cat#A-21206; 1:1000 dilution). Fluorescence in situ hybridization for NPY and tdTomato (Figure 2A–B) was performed as described previously (Schuman et al., 2019), with the following primers used to amplify templates for labeled cRNA antisense probe synthesis: NPY fwd primer: 5’-tcacagaggcacccagagc-3’; NPY rev primer (w/T7 sequence): 5’-attaatacgactcactatagcggagtccagcctagtggtg-3’; tdTomato fwd: 5’-atcaaagagttcatgcgcttc-3’; tdTomato rev primer (w/T7 sequence): 5’-cattaatacgactcactatagggttccacgatggtgtagtcctc-3’.
 
-## Slice preparation
+### Slice preparation
 
 Adult transgenic mice of either sex (postnatal day range 30–120; mean age = 52 days) were terminally anesthetized with isoflurane, and once unresponsive, were transcardially perfused with ice-cold sucrose-ACSF containing the following (in mM): 87 NaCl, 75 sucrose, 2.5 KCl, 26 NaHCO3, 1.25 NaH2PO4, 10 glucose, 1.0 CaCl2, and 2.0 MgCl2, saturated with 95% O2/5% CO2. Next, the mice were decapitated and the brains were extracted. The caudal part of the brain was glued to a stage, such that the rostral part of the brain was pitched forward 15⁰. The stage was then placed into a chamber filled with bubbled ice-cold sucrose ACSF, and the brain was sliced into 300 µm-thick coronal sections using a Leica VT1200S vibratome. The slices were incubated at 35 °C for 30 min in the above sucrose solution or the recording-ACSF described below and then transferred to room temperature for at least 1 hr before recording commenced.
 
-## Electrophysiology recordings
+### Electrophysiology recordings
 
 Slices were transferred to a recording chamber perfused with ACSF containing (in mM): 120 NaCl, 2.5 KCl, 25 NaHCO3, 1.4 NaH2PO4, 21 glucose, 0.4 Na-Ascorbate, 2 Na-Pyruvate, 2 CaCl2, and 1 MgCl2, saturated with 95% O2/5% CO2 and maintained at 29–32°C. For some experiments, the bath solution contained the NMDA receptor blocker D-AP5 (25 µM; Abcam), the AMPA receptor blocker CNQX (10 µM; Abcam), or the GABAB receptor blocker CGP-35348 (60 µM; Tocris). Neurons were visualized on an upright Olympus microscope (BX50WI or BX51WI) using DIC and fluorescence illumination from an LED power source (Mightex) for tdTomato and/or GFP. All neurons were recorded in the barrel field of the primary somatosensory cortex in layers 2–5. Layers were identified visually under DIC optics using several features. The L1-2 border was marked by a sharp increase in soma density from L1. The L3-4 border was identified under 4 x power by the top of the barrels, the presence of horizontal fibers under 40 x (in L4), and the absence of pyramidal cells (PCs) seen in L2/3. L5a was a clear band below L4 and the L5b-6 border was determined under 40 x by a sharp drop in PCs. Neurons were recorded in whole-neuron patch-clamp in current clamp and voltage clamp mode using an internal solution containing (in mM): 130 K-Gluconate, 10 HEPES, 1.1 EGTA, 2 Mg-ATP, 0.4 Na-GTP, 10 Na-phosphocreatine, and 1.5 MgCl2, 0.3–0.5% biocytin, and titrated with 1 M KOH to a final pH of 7.3. Glass pipettes were pulled on a horizontal puller (Sutter Instruments) using borosilicate glass (inner/outer diameter 1.5 mm / 0.86 mm) and had resistances of 2–6 MΩ. Before gaining whole-neuron access, a gigaseal was obtained, and the pipette capacitance was compensated. Access resistances were monitored throughout recordings and were completely compensated. The intrinsic properties of neurons with access resistances >40 MΩ were not analyzed. All data were collected using a Multiclamp 700B amplifier (Molecular Devices), a Digidata digitizer (1440 A or 1550B series, Molecular Devices), and Clampex version (10.6 or 10.7) software (Molecular Devices); data were sampled at 20 kHz and low-pass filtered at 10 kHz.
 
-## Electrophysiological characterization and analysis
+### Electrophysiological characterization and analysis
 
 A total of 178 cells were recorded. This includes a sample of 76 cells that were randomly selected for patching, and this group was used to determine the proportions of each type. In addition, neurons were recorded in the same Id2-CreER; Dlx5/6-Flpe; Ai65 mice but recordings were biased to superficial layer 2/3 to maximize the chances of obtaining non-LS Id2 INs. Lastly, a third group included cells from animals where NPY cells were labeled with GFP (i.e., Id2-CreER; Dlx5/6-Flpe; Ai65; NPY-hrGFP) to facilitate the identification of non-LS Id2 INs. Neurons were characterized for intrinsic and active properties in current-clamp mode from a resting potential of ~–70 mV. Neurons were injected with 1 s long square pulses of increasing current. Parameters relating to the neuron’s intrinsic and active properties were assessed as follows:
 
-## First spike latency and cell type classification
+#### First spike latency and cell type classification
 
 Once rheobase was determined, several current steps were delivered at rheobase to characterize the behavior of the cell. The recorded cells fell into three readily separable groups. The first and most numerous group exhibited a single-spike at rheobase with latencies of >500ms and were termed late-spiking (LS). The second group displayed a high-frequency (>100 Hz) burst of two or more APs at rheobase and were termed burst-spiking (BS). The third group of cells had single spikes at rheobase with short latencies (<100ms) consistent with the charging of the membrane capacitance (first AP latency normalized to membrane τ, mean ± SEM: 4.3±0.5 compared to LS: 70.1±4.1). These cells also exhibited irregular spiking (CV of ISI: 0.112±0.029 vs 0.053±0.004 in LS, p=0.0066, Mann-Whitney Test, see the section below for how CV of ISI was measured) and were classified as irregular-spiking (IS).
 
-## Input resistance
+#### Input resistance
 
 This was determined from Ohm’s Law based on the voltage response to a 150ms long negative voltage step of typically 20 pA.
 
-## Membrane time constant (τ)
+#### Membrane time constant (τ)
 
 This was determined by fitting an exponential decay to the voltage response from 1 s long current pulses below rheobase.
 
-## AP waveform properties
+#### AP waveform properties
 
 To measure these properties, only the first APs from each sweep were considered, as APs in neurons with initial bursts tended to widen significantly for subsequent APs, and all such APs from sweeps with total AP counts <50 were considered. AP threshold and peak were calculated first and then t=0 was defined at the time of AP peak. AP threshold was the voltage reading when the voltage derivative was 20 mV/ms. AP peak amplitude was the maximum voltage reached in the 2ms after the threshold was passed. AP half-width was the time of the AP when the voltage was above the midpoint between the threshold and peak. The afterhyperpolarization (AHP) was calculated as the difference in voltage between the AP threshold and AP reset (minimum voltage in 10ms window after AP peak). Finally, AP max and decay slopes were the maximum and minimum values for dV/dt reached in the 10ms after the threshold was passed. Parameters were calculated separately for each AP and then averaged together for the mean neuronal value.
 
-## Rheobase and firing rates
+#### Rheobase and firing rates
 
 Rheobase was determined to be the current step that resulted in a single spike, or for bursting cells, a single burst. The firing rate was measured for each voltage sweep by counting the number of spikes in the sweep and taking or interpolating the value at 2 x rheobase.
 
-## Spike frequency adaptation
+#### Spike frequency adaptation
 
 For LS cells, spike frequency adaptation was measured at 2 x rheobase and near rheobase, during the first depolarization where a spike train was observed throughout the pulse (1.3 x rheobase). For IS and BS cells, the adaptation index was only measured at 2 x rheobase, since near rheobase, firing was often highly irregular. The adaptation index was measured as follows: For each voltage sweep during which the neuron spiked at least six times (five ISIs), an exponential function, fadap(t), was fit to the firing-rate vs. time plot. The adaptation index (AI) for that sweep was defined as AI = fadap(1000ms) / fadap(100ms), and the values at 1.3 x rheobase or 2 x rheobase were taken or interpolated to represent adaptation for the cell.
 
-## Spiking regularity
+#### Spiking regularity
 
 For each voltage sweep, all inter-spike intervals (ISIs) from the last 500ms of the current step were considered. The spiking regularity was measured as the coefficient of variation (CV) for these ISIs, and the reported value was taken from the sweeps at 2 x rheobase.
 
-## DSI – optogenetics and paired recordings
+### DSI – optogenetics and paired recordings
 
 For optogenetics experiments, L2/3 PCs were identified visually under DIC, patched in whole-cell mode, and then confirmed as PCs by a brief electrophysiological characterization. Blue light (470 nm) pulses (2 ms />100 mA) were delivered to the slice using TTL-pulses to a Mightex brand LED under 40 x power with the PC soma centered. Optically evoked IPSCs were recorded under a voltage clamp at a holding potential of –50 mV with D-AP5 and CNQX present to block glutamatergic transmission and CGP 35348 to block the large GABAB component of the current characteristic of NGFCs (Oláh et al., 2009). Cannabinoid dependence of DSI was assessed by optogenetic experiments carried out in the presence of the CB1 receptor blocker AM251 (10 µM; Abcam).
 
 For paired recordings, Id2 neurons were identified as tdT +soma in the Id2-CreER; Dlx5/6-Flpe; Ai65 mouse line or tdT+/GFP ± somas in the Id2-CreER; Dlx5/6-Flpe; Ai65; NPY-hrGFP cross. The Id2 firing pattern was briefly characterized, and the neuron was tagged as late-spiking (LS), irregular-spiking (IS), or burst-spiking (BS). A nearby PC was also patched (Id2-PC inter-soma distance range 10–130 µm, average distance ± SEM = 53±4), and connectivity to the Id2 cell was assessed under voltage-clamp for both cells by eliciting escape spikes from the Id2 cell and looking for the presence of IPSCs in the PC at a holding voltage of –50 mV. If a connection was not seen, either a new Id2-PC pair was tested, or the PC pipette was withdrawn with the Id2 neuron still held, and another nearby PC was patched and tested. If a connection was identified, then the DSI protocol was run as described in Figure 4.
 
-## Morphology
+### Morphology
 
 During whole-cell electrophysiological recordings, neurons were held for at least 15 min with an internal solution containing ~0.4 or~1.0% biocytin. Some slices, especially the ones with neurons held close to 15 min, were retransferred to the incubation chamber to allow for more biocytin diffusion inside the recorded cell. After filling, the slices were fixed with 4% paraformaldehyde/PBS (diluted from a 32% stock; Electron Microscopy Sciences cat#15714) for 1–7 days at 4 °C. Fixed slices were then thoroughly washed with PBS and left overnight at 4 °C in a 0.4% streptavidin (AlexaFluor 647 conjugate; Invitrogen) solution (498 µl 0.3% Triton X-100 in PBS, 2 µl streptavidin per slice). Slices were then washed in PBS, mounted with Fluoromount-G (Invitrogen) on a glass microscope slide, and imaged under a 40–63 x oil-immersion objective using a confocal microscope (Zeiss). Confocal images were then used to morphologically reconstruct neurons in three dimensions using Neurolucida. In a few cases, cells were juxtacellularly labeled and processed using CUBIC before morphological reconstruction (Schuman et al., 2019).
 
-## Silicon probe implantation and recordings
+### Silicon probe implantation and recordings
 
 Mice (n=5, 28–35 g, 3–10 months old) were implanted with 64-site silicon probes (NeuroNexus, Cambridge NeuroTech or Diagnostic Biochips) in the PPC (AP 2.0 mm, ML 1.75 mm, DL 0.6 mm), as described previously (Valero et al., 2021). Ground and reference wires were implanted in the skull above the cerebellum, and a grounded copper mesh hat was constructed, protecting, and electrically shielding, the probes. Probes were mounted on plastic microdrives that were advanced to layer 6 over the course of 5–8 d after surgery. A 100–200 μm fiber optic was attached to one of the shanks of the silicon probe. After implantation, animals were allowed to recover for at least 1 week and were housed individually under standard conditions (71–73 °F and 40–50% relative humidity) in the animal facility and kept on a 12 h reverse light/dark cycle. We recorded the mice while they slept or walked around freely in the home cage, and the recording session started 1–2 hr after the onset of the dark phase. Electrophysiological data were acquired using an Intan RHD2000 system (Intan Technologies LLC) digitized with a 30 kHz rate. The wide-band signal was downsampled to 1.25 kHz and used as the LFP signal. For optogenetic tagging of specific neuron types, blue laser light (450 nm, Osram) pulses were delivered in the PPC/V1. The maximum light power at the tip of the optic fiber was 1–4 mW. 100 ms light pulses with 70% of the maximum power were delivered (n=500–1000 times at each intensity at 400±200 ms random intervals).
 
-## Unit activity analysis
+### Unit activity analysis
 
 Spike sorting was performed semi-automatically with KiloSort 1 (https://github.com/cortex-lab/KiloSort; RRID:SCR_016422), as previously described (Valero et al., 2021) and using our own pipeline KilosortWrapper (a wrapper for KiloSort, DOI; https://github.com/brendonw1/KilosortWrapper; Peterson et al., 2020). This was followed by manual adjustment of the waveform clusters using the software Phy 2 (https://github.com/kwikteam/phy; Cyrille, 2021) and plugins for phy designed in the laboratory (https://github.com/petersenpeter/phy-plugins; Petersen, 2019). Unit clustering generated three clearly separable groups based on their spike autocorrelograms, waveform characteristics and firing rate (Petersen et al., 2021). Pyramidal cell (PC), narrow waveform (NW) INs and wide waveform interneurons (WW) were tentatively separated based on these two clusters. A more reliable cell identity was assigned after inspection of all features, assisted by monosynaptic excitatory and inhibitory interactions between simultaneously recorded, well-isolated units and light responses (Valero et al., 2021; Valero et al., 2022). Units were defined as optogenetically responsive cells based on the combination of three criteria (https://github.com/valegarman/hippoCookBook; Manuel and Abad , 2022): (Garcia-Munoz and Arbuthnott, 2015) an average firing response higher than 2SD, (D’Souza and Burkhalter, 2017) significant modulation using a p-value cutoff of 10–3 (Lim et al., 2018) and (Ibrahim et al., 2020) against randomly shuffled pulse times (500 replicates) and testing for significant difference between the observed value and the random distribution. To calculate the layer identity of the units, we aligned depth profiles of electrophysiological landmarks. These included the largest amplitude peak of high-frequency LFP power (500 Hz–5 kHz) corresponding to mid-layer 5 and four prominent sinks and sources from the averaged down–up current-source density (CSD) maps for each animal, as previously described (Valero et al., 2021).
 
@@ -173,6 +500,6 @@ Rank-order estimation was used to identify the position of units repeating consi
 
 Brain state scoring was performed as previously described (Valero et al., 2021; Valero et al., 2022; Watson et al., 2016) with the MATLAB resource SleepScoreMaster (https://github.com/valegarman/hippoCookBook). Briefly, spectrograms were constructed with a 1 s sliding 10 s window FFT of 1250 Hz data at log-spaced frequencies between 1 and 100 Hz. Three types of signals were used for state scoring: broadband LFP, narrowband theta frequency LFP, and electromyogram (EMG). For broadband LFP signal, principal components analysis (PCA) was applied to the z-transformed (1–100 Hz) spectrogram. The first principal components in all cases were based on power in the low (<20 Hz) frequency range and had negatively weighted power in the higher (>32 Hz) frequencies. The state scoring algorithm was performed by a series of divisions with thresholds set at the trough between the peaks of distributions in these three metrics. After automated brain state scoring, all states were manually reviewed by the experimenter. The awake-sleep index was estimated as (rateAwake - rateSleep)/ (rateAwake +rateSleep), where rateAwake is the average between the firing rate during Run and Quiet, and rateSleep was the average between REM sleep and NREM sleep.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed with standard MATLAB functions or GraphPad Prism. No specific analysis was used to estimate a minimal population sample, but the number of animals, trials, in vitro and in vivo recorded cells were larger or similar to those employed in previous works (Valero et al., 2022). All data presented were obtained from experimental replicates with at least four independent experimental repeats for each assay. All attempts of replication were successful. Data collection was not performed blinded to the subject conditions. Data analysis was performed blinded to the scorer or did not require manual scoring. Unless otherwise noted, for all tests, non-parametric two-tailed Wilcoxon’s paired signed-rank test and Kruskal-Wallis one-way analysis of variance were used. For multiple comparisons, Tukey’s honestly significant difference (HSD) test was employed, and the corrected *p<0.05, **p<0.01, ***p<0.001 are indicated. p-Values for Spearman’s correlations are computed using a Student’s t distribution for a transformation of the correlation. Results are displayed as median +/-25th/75th percentiles, unless indicated otherwise. Dispersion represents ± IC95.

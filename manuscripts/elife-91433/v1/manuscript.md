@@ -17,11 +17,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Department of Biology, Johns Hopkins University Baltimore United States
-2. https://ror.org/00za53h95 Department of Biophysics and Biophysical Chemistry, Johns Hopkins University School of Medicine Baltimore United States
-3. https://ror.org/006w34k90 Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States
-4. https://ror.org/006w34k90 Howard Hughes Medical Institute Boston United States
-5. https://ror.org/037zgn354 Department of Molecular Biology and Genetics, Johns Hopkins School of Medicine Baltimore United States
+1. Department of Biology, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Department of Biophysics and Biophysical Chemistry, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+3. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States ([ROR:006w34k90](https://ror.org/006w34k90))
+4. Howard Hughes Medical Institute Boston United States ([ROR:006w34k90](https://ror.org/006w34k90))
+5. Department of Molecular Biology and Genetics, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
 
 † Corresponding author
 
@@ -39,25 +39,57 @@ Here, we investigate RSC and ISW2 remodeler 1D diffusion using naked DNA and spa
 
 ## Results
 
-## 1D diffusion of RSC and ISW2 on DNA reveal distinct hopping and sliding modes
+### 1D diffusion of RSC and ISW2 on DNA reveal distinct hopping and sliding modes
 
 DNA helicases and the chromatin remodeler SWR1 have been shown to undergo 1D diffusion on dsDNA (Carcamo et al., 2022; Ramírez Montero et al., 2023). Given the enrichment of RSC and ISW2 at NDRs and flanking +1 and −1 nucleosomes (Ng et al., 2002; Kubik et al., 2019), we hypothesized that both remodelers should be capable of free 1D Brownian diffusion on dsDNA (Figure 1A). Accordingly, we employed dual optical tweezers and scanning confocal microscopy at 72 nm (225 bp) 1D spatial resolution with laminar flow microfluidics (Figure 1—figure supplement 1A) to directly visualize and quantify diffusion of RSC and ISW2 complexes on stretched lambda DNA (48.6 kbp) (Materials and methods). We observed 1D dynamics of purified, functionally active, RSC and ISW2 fused to a HaloTag moiety on the catalytic ATPase subunit (Figure 1—figure supplement 1B, C; Figure 1—figure supplement 2A, B; Materials and methods). Fluorescent labeling efficiency was high; proteins were purified using standard glycerol gradient centrifugation methods (Figure 1—figure supplement 2C–F). In contrast to the stationary dCas9 control (Sternberg et al., 2014), both ISW2 and RSC display visible movements on DNA, as evidenced by the overlay of compiled kymographs exhibiting diffusion away from their initial binding sites (Figure 1B). We used 20-frame (0.85 s) rolling windows along the length of the trajectory to quantify instantaneous diffusion coefficients [short-range diffusion] (Figure 1C, Materials and methods), classifying trajectory segments into ‘non-diffusive’, low-diffusive, and high-diffusive groups for RSC (Figure 1C) and ISW2 (Figure 1—figure supplement 1D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/91433/elife-91433-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic: RSC and ISW2 bind nucleosome-free DNA at yeast promoters. (B) Aligned trajectories for RSC, ISW2, and dCas9. (C) Rolling-window analysis assigns diffusion coefficients (Dcoef) and percentages for non-diffusive, low, and high diffusion. (D) Heterogeneous one-dimensional (1D) diffusion of RSC and ISW2 on lambda DNA (50 mM KCl, no ATP). Scatter violin plots show mean Dcoef per diffusion type. Mann–Whitney tests compare RSC vs ISW2 distributions in the high-diffusive category, asterisks indicate significance. Median Dcoef values with 95% confidence intervals are shown. (E) Dwell times for RSC and ISW2 at varying KCl concentrations; single-exponential decay fit to the 1-cumulative distribution function (CDF) and half-lives shown. (F) Ionic strength impact on high-mobility diffusion at different KCl concentrations. Scatter violin plots depict median values and 95% confidence intervals, asterisks indicate significance. (G) Model: RSC primarily undergoes 1D hopping, while ISW2 performs helically coupled 1D sliding.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91433/elife-91433-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the microfluidics chamber used, with four solution compartments (1–3 separated by laminar flow, 4 as reservoir). (B) Construct map displaying RSC and ISW2 labeling via 3x-FLAG tag and HaloTag at C-terminus of ATPase subunits. (C) Sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gel showing JFX650-labeled purified RSC (left) and ISW2 (right) complexes, with protein visualization using Flamingo dye. (D) Proportion of dCas9, RSC, and ISW2 traces in three diffusion categories under baseline conditions (50 mM KCl, no ATP). K-means clustering identifies five distinct diffusion behaviors (C1–5), with percentage of traces in each group. (E, G) Scatter violin plots show mean diffusion coefficients for 'non-diffusive', low, and high diffusion groups. Mann–Whitney tests compare RSC and ISW2 distributions in the high-diffusive category, asterisks indicate significance. Median Dcoef values and 95% confidence intervals are represented. (F, H) Proportion of traces in the three diffusion categories; K-means clustering identifies five diffusion classes (C1–5) with percentage of each group printed. (E, F) Effects of salt on diffusion: 50, 100, and 200 mM KCl for RSC, and 50, 75, and 100 mM KCl for ISW2 (no binding detected at 200 mM KCl for ISW2). (G, H) Effects of nucleotide on diffusion: no ATP, 1 mM ATP, and 1 mM ATPγS.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91433/elife-91433-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Native PAGE analysis of nucleosome sliding by HaloTagged RSC (A) and ISW2 (B). RSC shifts centered nucleosomes (43N43; Cy5-DNA) to end positions, while ISW2 moves end-positioned nucleosomes (80N3; Cy5-DNA, Cy3-H2A) to a centered position. (C) Assessment of protein labeling efficiency using fluorescence intensity of the fluorophore label; protein resolved via sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gel and scanned using a Typhoon imager. (D) Flow-chart of protein labeling and purification. Fractions from glycerol gradient purification of labeled protein run on SDS–PAGE gels and imaged for fluorophore label and total protein content using a Typhoon imager for (E) RSC-JFX650 and (F) ISW2-JFX650 preparations.
 
 The ‘non-diffusive’ group, with diffusion coefficients less than 0.01 µm²/s, is indistinguishable from dCas9 and represents either no diffusion or very slow diffusion below the detection limit (Figure 1D). As an important note, directional movements with speeds slower than ~300 bp/s on linear DNA could not be detected using the rolling-window method and were only revealed when detection is extended over a longer duration (e.g., long-range translocation, described in greater detail later). Thus, rolling-window analysis groups short-range translocation and stationary colocalizations in the same ‘non-diffusive’ category. On average, one-third of time traces are classified as ‘non-diffusive’ for both remodelers (Figure 1—figure supplement 1D). The high-diffusive group, with diffusion coefficients equal to or greater than 0.04 µm²/s, represents the upper-limit diffusion for both RSC and ISW2 (Figure 1D). The data show that remodelers undergo frequent transitions during 1D scanning between non-diffusion, low, and high diffusion (Figure 1C). These diffusive transitions, including the presence of the intermediate, low-diffusive category, could be due to differences in interaction energies with the underlying DNA sequence and intrinsic remodeler conformations that vary in DNA affinity along the lambda genome sequence (Visnapuu and Greene, 2009; Lorch and Kornberg, 2017; Behe, 1995).
 
 Under the same buffer conditions, RSC is more diffusive than ISW2, as evidenced by its larger diffusion coefficient (Dcoef) (Figure 1D) and increased frequency in the high-diffusive category (Figure 1—figure supplement 1D). Considering the larger size of RSC (~1 MDa) compared to ISW2 (~300 kDa), our observation is inconsistent with the predicted diffusion based on the Stokes–Einstein equation relating Dcoef to the particle size, suggesting that the two remodelers utilize different diffusive mechanisms (von Hippel and Berg, 1989; Schurr, 1979; Bagchi et al., 2008; Ahmadi et al., 2018). Of the two main types of 1D diffusion, hopping and sliding (Berg et al., 1981; Bonnet et al., 2008; Mirny et al., 2009), 1D hopping, but not 1D sliding, is sensitive to screening ions, and is not constrained to the DNA helical axis. In contrast, 1D sliding is constrained to follow the helical axis and is speed limited by rotational drag (Blainey et al., 2009). We measured diffusion for each remodeler under increasing salt conditions and found that both RSC and ISW2 exhibit shorter bound lifetimes at higher salt (Figure 1E). Importantly, however, RSC displays elevated high diffusion coefficients (Figure 1F, Figure 1—figure supplement 1E) and longer durations in the high-diffusive category (Figure 1—figure supplement 1F) while these parameters for ISW2 remain unaffected by elevated salt up to 100 mM KCl; binding is lost at 150 mM KCl (Figure 1F, Figure 1—figure supplement 1E, F). These findings suggest that RSC largely utilizes a 1D hopping mode of diffusion, whereas ISW2 employs helically-coupled sliding (Figure 1G). Additionally, we found that RSC displays a substantially higher diffusion with ATPγS, suggesting that conformational changes associated with nucleotide binding may induce a more diffusion-competent state (Figure 1—figure supplement 1G, H).
 
-## Remodeler–remodeler collisions during 1D search
+### Remodeler–remodeler collisions during 1D search
 
 Yeast gene promoters are bustling double-helical thoroughfares for transcription and chromatin regulators, the latter displaying macroscopic promoter occupancies of 10–90%, despite rapid on–off kinetics, for any temporal period in live cells, compared to the ~5% occupancies of most general transcription factors (Kim et al., 2021; Ranjan et al., 2020). This raises the possibility of encounters or collisions in 1D between two or more remodelers on the same piece of accessible DNA. We used differentially labeled RSC and ISW2 to directly visualize heterotypic ISW2–RSC (Figure 2A) and homotypic RSC–RSC (Figure 2B) collisions, identifying three types of interactions (Figure 2C–E). The first, a short-lived colocalization followed by recoil (Figure 2C), had half-lives of t1/2 0.033 s for ISW2–RSC and t1/2 0.031 s for RSC–RSC (Figure 2F, G). The second type, longer-lived colocalization events involving brief co-diffusion of two remodelers (Figure 3D), had half-lives of t1/2 0.68 s for ISW2–RSC and t1/2 0.70 s for RSC–RSC (Figure 2H, I). These event types and their durations were confirmed by simulation analysis (Figure 2—figure supplement 1A–F). The third type, rare bypass events (Figure 2E), constituted only 0.2–0.3% of all colocalizations for both ISW2–RSC and RSC–RSC encounters. The distribution in event types (Figure 2J, K) suggests that remodelers act not only as mutual roadblocks but surprisingly, also exhibit mutual affinity upon encounter on DNA, resulting in transient 1D diffusion jointly.
 
-## Nucleosomes halt 1D diffusion and sequester RSC and ISW2
+![Figure 2.](https://cdn.elifesciences.org/articles/91433/elife-91433-fig2-v1.jpg)
+
+**Figure 2.:** Two-color kymographs of RSC-JFX554 and ISW2-JFX650 (A) or RSC-JFX554 and RSC-JFX650 (B) diffusing together on naked DNA. Three types of encounter events are observed: short colocalizations (C), long colocalizations (D), and bypass events (E). Representative kymograph sections and corresponding cartoons illustrate each interaction. Dwell times of short colocalization events for RSC–ISW2 (F) and RSC–RSC (G). Dwell times of long colocalization events for RSC–ISW2 (H) and RSC–RSC (I). Interaction lifetimes are determined by measuring the time remodelers spend in close proximity. Interaction half-lives (τ) are calculated from single-exponential fits to probability distribution functions (PDF) plots of lifetimes. Proportions of each event type quantified as pie charts for RSC–ISW2 (J) and RSC–RSC (K).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91433/elife-91433-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Simulated images illustrating diffusive molecules and camera noise, with distinct molecule types shown in different colors. (B) Single-molecule trajectories obtained from the analysis of images in (A). (C) Plot of the distance between the two molecules (blue) with interaction length indicated by gray (longer-lived) or red (short-lived) shaded regions. Short interactions are defined as lasting less than 5 frames and showing higher distance changes compared to the mean displacement. (D–F) Magnified versions of (A–C) for improved visualization.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91433/elife-91433-fig3-v1.jpg)
+
+**Figure 3.:** (A) Optical tweezers and confocal microscopy assay for measuring remodeler diffusion on lambda DNA nucleosome arrays. (B) Force distance plots are used to assess the number of nucleosomes on arrays, with ~25 nm lengthening per nucleosome at 15 pN (inset). (C) Histograms show nucleosome numbers per array for three arrays used, with mean values and standard deviations. Kymograph segments of RSC (D) and ISW2 (E) encountering a nucleosome on the array with 1 mM ATP. Diffusion levels are binned on time trace plots. As a note, nucleosome translocation occurs in each example with the original position of the nucleosome marked by the dashed green line and the changing nucleosome position is marked by the solid green line. Translocation events fall into the ‘non-diffusive’ category due to their slow motion. Survival plots of dwell times in the ‘non-diffusive’ state for RSC (F) and ISW2 (G) on naked DNA or nucleosome array. (H–K) Half-lives are determined using double exponential fits and are indicated for the slow and fast percentages (pie charts). Values are given for various ATP conditions and for diffusion on naked DNA (RSC; H-ISW2; II) and nucleosome array (RSC; J-ISW2; K).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91433/elife-91433-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Electrophoretic mobility shift assay (EMSA) of lambda nucleosome arrays with increasing octamer concentration. The asterisk indicates a condition that produced ~10 nucleosomes/array. (B) Representative kymograph of remodeler diffusion on a nucleosome array, accompanied by a schematic for interpretation. The green laser is pulsed to extend the fluorophore’s lifetime. Remodeler–nucleosome interactions are indicated within the kymograph, with additional examples shown in panels C–F. (C, D) Examples of RSC–nucleosome interactions, which share visual similarities with ISW2–nucleosome interactions. (C) Remodelers colliding with nucleosomes without extended interaction. (D) Prolonged colocalization events without translocation. (E) Bypass events where the remodeler passes a nucleosome. (F) Observable nucleosome translocation events, with the starting position marked as a reference.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91433/elife-91433-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** 1-Cummulative distribution function (CDF) survival curves of nucleosome translocation events for (A) RSC and (B) ISW2 in the presence of 1 mM ATP. Half-lives from single-exponential fitting printed in graph.
+
+### Nucleosomes halt 1D diffusion and sequester RSC and ISW2
 
 How do remodelers behave upon encountering a nucleosome via 1D diffusion? We investigated remodeler–nucleosome collisions using sparse-density nucleosome arrays reconstituted with site-specifically labeled histone octamers and imaged by pulsed (Cy3) or continuous (JFX554) laser excitation (Figure 3A–C; Figure 3—figure supplement 1A). We estimated the number of nucleosomes by counting force-induced unwrapping events at 15 pN or higher [25 nm length extension per nucleosome unwrapping] (Figure 3B; Spakman et al., 2020; Brower-Toland et al., 2002; Ngo et al., 2015) and collected data on fibers containing ~10 nucleosomes/array (RSC and ISW2) and ~30 nucleosomes/array (RSC) (Figure 3C). Independent of nucleotide conditions, we documented several types of nucleosome encounters on the stretched template (Figure 3—figure supplement 1B) including collisions with recoil (Figure 3—figure supplement 1C), stable colocalization (Figure 3—figure supplement 1D), and nucleosome bypass (Figure 3—figure supplement 1E). Only in the presence of ATP, did we observed translocation events, to be further described in the following section (Figure 3—figure supplement 1F). In some examples, all event types are observed within a single temporal trace (Figure 3D, E). Importantly, owing to low nucleosome density, direct 3D encounter with a nucleosome was not observed, and because protein–DNA interactions are mostly equilibrated in the timeframe (~1 min) between protein introduction, and image acquisition, few new binding events are observed.
 
 As noted earlier, in addition to high and low levels of diffusion, remodelers frequently transition into a ‘non-diffusive' state [static sequestration or undetectable movements] of variable duration with a half-life on the order of 3–5 s on naked linear DNA (RSC; T = 3.8 s no ATP, T = 3.3 s ATPγS and ISW2; T = 5.3 s no ATP, T = 3.5 s ATPγS) (Figure 3F–I). However, upon nucleosome encounter by either RSC or ISW2, non-diffusive remodeler dwell times increase substantially (fivefold with no ATP; ~eightfold with ATPγS) (RSC; T = 18 s no ATP, T = 28 s ATPγS) (Figure 3F, J) (ISW2; T = 28 s no ATP, T = 28 s ATPγS) (Figure 3G, K). Of note, in the presence of hydrolysable ATP, we found little substantive change for RSC ‘non-diffusive’ dwell-time (T = 23 s, ATP), whereas the ‘non-diffusive’ dwell-time for ISW2 decreased by ~twofold (T = 12 s, ATP) (Figure 3F, G, J, K). This could be due to the binding turnover reported for ISW2 in biochemical assays (Fitzgerald et al., 2004). Irrespective, we conclude that encounters in 1D between diffusing remodelers and static nucleosomes can result in remodeler sequestration, in all nucleotide conditions. The dwell-time survival plots are best fit to a double exponential decay, with two components showing long and short half-lives of e.g. ~20 and ~2 s for RSC. The basis for a fast-decay component is unclear, but it might be due to a pre-engagement state where RSC is sampling the nucleosome for a more stable interaction.
 
-## ATP-dependent, processive, and directional nucleosome translocation by RSC and ISW2
+### ATP-dependent, processive, and directional nucleosome translocation by RSC and ISW2
 
 Since the above short-range analysis of 1D diffusion through the automated rolling-window mean squared displacement (MSD) analysis masks potential ATP-dependent nucleosome translocations within the non-diffusive category (Figure 3D, E), we visually screened for long-range nucleosome movements >300 bp (>5 s) over the entire period of fluorophore detection before photobleaching (up to several minutes). Accordingly, we observed numerous ATP hydrolysis-dependent nucleosome translocation events comprising 42% of RSC–nucleosome and 21% of ISW2–nucleosome encounters (Figure 4A–D). The relatively low yield of observed translocations may be due to short-range translocation events which may go undetected, and may also be caused by experimental variability including nucleosome and enzyme preparations. Finally, we caution that our data were collected using nucleosomes under tension (~5 pN) which may have helped reveal an activity otherwise not observable without tension.
 
@@ -71,9 +103,17 @@ We calculated the average translocation speeds for both RSC and ISW2. Of all tra
 
 In the presence of ATP, for RSC, 28% of ‘non-diffusive’ times are periods of visible translocation whereas for ISW2 this value is only 14% (these percentages were extracted from the non-diffusive [Figure 3J, K] and translocating half-lives [Figure 4J]). The lower value for ISW2 could be caused by the known ATP hydrolysis-driven nucleosome-binding turnover. Furthermore, half-lives of translocation events (20 s for RSC and 17 s for ISW2) are comparable to remodeler ‘non-diffusive’ half-lives on nucleosome arrays (Figure 3—figure supplement 2A, B). Thus, the inclusion of translocation events into the non-diffusive category did not impact our reported effects of ATP on nucleosome-bound half-lives.
 
-## RSC pushes whereas ISW2 pulls nucleosomes relative to 1D search on DNA
+### RSC pushes whereas ISW2 pulls nucleosomes relative to 1D search on DNA
 
 Both RSC and ISW2 remodelers, acting on promoter nucleosomes, have competing effects on +1 nucleosome positioning in vivo (Kubik et al., 2019). RSC widens the NDR by pushing the +1 nucleosome further downstream, while ISW2 narrows the NDR by pulling it in the opposite direction (Kubik et al., 2019). We sought to directly visualize nucleosome pushing and pulling relative to 1D remodeler search on DNA. Traces containing both 1D diffusion and translocation events can be used for addressing this question (Figure 5A, B). This analysis showed a higher frequency of observed ATP-dependent nucleosome translocation events at the start of RSC imaging as compared to ISW2 (Figure 5A, B; blue bars). Given the time lag between remodeler introduction and image acquisition, the higher frequency for RSC may be due to its higher 1D diffusivity. Alternatively, ISW2 is often found in 1D diffusive search mode at the start of imaging due to its faster ATP-dependent turnover after nucleosome encounter (Figure 3K). We also note that translocation events often terminate in stable, non-diffusive colocalization of remodeler with nucleosomes (Figure 5A, B, red bars) rather than loss of remodeler or nucleosome fluorescence (histone ejection).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/91433/elife-91433-fig5-v1.jpg)
+
+**Figure 5.:** Trace fragmentation plots illustrate translocating regardless of changes in speed or changes in direction (blue), non-translocating (red), and free diffusion (green) segments for RSC (A) and ISW2 (B). Examples of translocation events following 1D encounter for RSC (C) and ISW2 (D) shown alongside single-particle traces for clarity. (E, F) Additional examples of RSC and ISW2 encountering a nucleosome through 1D diffusion and directionally translocating it. Arrows indicate the direction of the remodeler’s approach and subsequent nucleosome translocation. Pie charts of ‘pushing’ and ‘pulling’ counts for RSC (G) and ISW2 (H); all types of observations considered. (I) Summary schematic.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91433/elife-91433-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Pie charts of ‘pushing’ and ‘pulling’ counts for RSC (A) and ISW2 (B); various translocation scenarios are displayed separately within the pie chart. The identities of the wedges are indicated with a legend shown alongside schematics of the various scenarios (C, D), where (C) shows scenarios that support the push model whereas (D) shows scenarios that support the pull model. A key to interpret the schematic is displayed below.
 
 For the limited subset of RSC and ISW2 kymographs that display both 1D diffusion and translocation, we considered four scenarios: (1) 1D search leading directly to translocation; (2) translocation leading directly to 1D disengagement; (3) 1D search leading to stable non-translocation engagement followed by translocation; and (4) the reverse order of the third scenario (Figure 5—figure supplement 1A–D). The results reveal a distinct bias in the direction of translocation relative to 1D diffusion (Figure 5C–F). RSC shows a preference for translocation in the same direction as diffusive approach to the nucleosome or translocation in the opposite direction of diffusive disengagement from the nucleosome (20/25 events) (Figure 5G). Conversely, ISW2 exhibits a bias for translocation in the opposite direction to its approach (19/21 events) (Figure 5H). While more data are required for a conclusive statement, the observed bias provides the first direct visual evidence in support of opposing directions of nucleosome translocation that is a central feature of the push–pull model for expansion and contraction of the NDR (Figure 5I).
 
@@ -93,13 +133,13 @@ Indeed, the recent cryoEM structures of RSC (Wagner et al., 2020; Ye et al., 201
 
 ## Materials and methods
 
-## Dual optical tweezers and confocal microscopy
+### Dual optical tweezers and confocal microscopy
 
 Imaging was performed using a commercial optical tweezer combined with fluorescence microscope, C-Trap (LUMICKS, Amsterdam). A laminar flow-based microfluidics chamber was used for data collection, and reproducible measurements of remodeler diffusion were made in the absence of flow in the channel 4 protein reservoir (Figure 1—figure supplement 1A). The microfluidics system was passivated before imaging: bovine serum albumin (BSA; 0.1% wt/vol in phosphate-buffered saline [PBS]) and Pluoronics F128 (0.5% wt/vol in PBS) were each flowed for 30 min, followed by a 30 min flush with PBS. Bacteriophage λ DNA, dual labeled with 3x-Biotin at one end and 3x-Digoxigenin at the other, was tethered between 4.38 µm SPHERO Streptavidin Coated polystyrene beads (Spherotech, Cat. No. SVP-40-5) in Trap1 and 2.12 µm SPHERO Anti-Dig polystyrene beads (Spherotech, Cat. No. DIGP-20-2) in Trap2. The trapping laser was set to 100% and overall power to 30%, with a Trap 1 split power of 60%. The tethered λ DNA was stretched to 5 pN force, and trap positions were fixed during kymograph acquisition.
 
 Either 500 pM or 1 nM RSCSth1-3xFlag-Halo, or 136.6 pM ISW2Isw2-3xFlag-Halo in imaging buffer, were flowed at low pressure. Imaging buffer consisted of saturated Trolox solution and RSC reaction buffer (10 mM Tris, pH 7.4, 50 mM KCl, 3 mM MgCl2, 0.1 mg/ml BSA). The same imaging buffer was used for both RSC and ISW2. For confocal microscopy, a 42.4-ms line time, 6.5% red laser power, and 15% green laser power were utilized. Emission filters for blue (500/525 nm), green (545/620 nm), and red (650/750 nm) lasers were employed.
 
-## Purification and labeling of chromatin remodeling complexes
+### Purification and labeling of chromatin remodeling complexes
 
 Catalytic subunit genes Sth1 and Isw2 were C-terminally tagged with 3xFlag-HaloTag at their endogenous loci in S. cerevisiae for native remodeler complex purification (Figure 1—figure supplement 1B). Yeast cultures (4 l) were grown in YPAD medium (1% Bacto yeast extract, 2% Bacto peptone, 3% dextrose, 0.004% Adenine hemisulfate) to an optical density (OD600) of 3.5–4.0. Cells were harvested by centrifugation, washed twice in water, once in resuspension buffer (200 mM (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid) (HEPES), 1 mM ethylenediaminetetraacetic acid (EDTA), 40% glycerol, 100 mM KOAc, 0.284 µg ml−1 leupeptin, 1.37 µg ml−1 pepstatin A, 0.17 mg ml−1 phenylmethylsulfonyl fluoride (PMSF), 0.33 mg ml−1 benzamidine). The cell pellet was flash-frozen in liquid nitrogen. Lysis was achieved by cryo-milling (Spex Freezer/Mill 6870) for 15 cycles with alternating 1 min ‘on’ and 1 min rest periods. The resulting powder was resuspended in approximately half of the powder volume of lysis buffer (150 mM HEPES pH 7.6, 1 mM EDTA, 2 mM MgCl2, 20% glycerol, 100 mM KOAc, 5 mM β-mercaptoethanol, 0.284 µg ml−1 leupeptin, 1.37 µg ml−1 pepstatin A, 0.17 mg ml−1 PMSF, 0.33  mg ml−1 benzamidine, 0.5 mM NaF, 5 mM β-glycerophosphate). Protein extraction was carried out with the addition of 0.3 M KCl and incubated at 4°C for 30 min. The extract was cleared by centrifugation at 25,000 rpm at 4°C for 2 hr, and the supernatant was incubated with pre-equilibrated 1 ml anti-FLAG M2 agarose (Sigma-Aldrich) for 4 hr at 4°C with gentle rotation.
 
@@ -107,17 +147,21 @@ The agarose resin was washed five times with high-salt wash buffer (20 mM HEPES 
 
 For fluorescent labeling, the eluate was thawed on ice, incubated with 2 µM JFX650 or JFX554 (sourced from Luke Lavis) for 2 hr at 4°C with gentle shaking. The eluate was then applied to a 20–60% glycerol gradient in gradient buffer (25 mM HEPES–KOH pH 7.6, 1 mM EDTA, 2 mM MgCl2, 0.01% NP-40, 300 mM KOAc) for velocity sedimentation, allowing further purification of complexes and separation from unbound free dyes. Centrifugation was performed at 45,000 rpm for 20 hr at 4°C in an SW 60 T rotor. Peak fractions were analyzed by sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) and Flamingo Fluorescent Stain (Bio-Rad) (Figure 1—figure supplement 1C). Protein concentration was determined by comparing to a serially diluted BSA standard in SDS–PAGE. Remodeler labeling efficiency was deemed to be high based on comparison to protein labeled with large excesses of dye (Figure 1—figure supplement 2C).
 
-## Gel-based nucleosome sliding assay
+### Gel-based nucleosome sliding assay
 
 RSC nucleosome sliding reactions were performed using 20 nM nucleosome [43N43, Cy5DNA], 10 nM RSCSth1-3F-Halo, and 1 mM ATP in a buffer containing 10 mM Tris (pH 7.4), 50 mM KCl, 3 mM MgCl2, and 0.1 mg/ml BSA (Schlichter et al., 2020). ISW2 nucleosome sliding reactions were conducted with 33.3 nM nucleosome [80N3, Cy5-DNA, Cy3-H2A], 6.15 nM ISW2Isw2-3F-Halo, and 1 mM ATP in a buffer composed of 25 mM HEPES–KOH (pH 7.6), 50 mM KCl, 5 mM MgCl2, 0.1 mg/ml BSA, and 5% glycerol. All reactions had a 10-µl total volume and were incubated at 30°C with gentle mixing. At designated time points, reactions were quenched by adding 3 µg of salmon sperm DNA and 5 mM EDTA. Samples were subsequently loaded onto 4.5% or 6% native polyacrylamide gels, and the gels were imaged using Cy5 excitation on a Typhoon Imager System (Figure 1—figure supplement 2A, B).
 
-## Single-molecule tracking and analysis
+### Single-molecule tracking and analysis
 
 Kymographs were analyzed using the Pylake KymoTracker widget (Lumicks.pylake, ver. 0.10.0) in Python. The following parameters were applied for particle tracking: line width: 0.4 µm, minimum length: 8 pixels, pixel threshold (minimum pixel intensity): 3, window (maximum frames of gap allowed to connect two lines as one track): 8, sigma (fluctuation in the molecule’s position over time): 0.14, velocity: 0.00, Refine lines: yes. For tracks with gaps that could not be connected by the default parameters (more commonly observed for long-lived tracks), the 'Connect line' function was used to manually connect two lines. Notably, all movies were acquired without laminar flow, resulting in rare protein-binding events during the movie. Sigma and/or velocity parameters were increased to track highly diffusive molecules.
 
-## Rolling-window diffusion analysis pipeline
+### Rolling-window diffusion analysis pipeline
 
-To capture transitions in diffusive states, 20-frame window sub-trajectories were made from the beginning to the end of each trajectory. The 20-frame window size was determined by trial-and-error, with shorter windows (e.g., 5, 10 frames) resulting in noisy detection of spurious diffusion peaks and longer windows (e.g., 35, 50 frames) causing averaging of diffusion peaks. Diffusion coefficients (D) were calculated for each window using a MATLAB class called msdanalyzer (Tarantino et al., 2014), where D was estimated from the linear regression fitting of the MSD plots of rolling windows using the first five time points. D is calculated as:D=12d×MSD(dt)dt
+To capture transitions in diffusive states, 20-frame window sub-trajectories were made from the beginning to the end of each trajectory. The 20-frame window size was determined by trial-and-error, with shorter windows (e.g., 5, 10 frames) resulting in noisy detection of spurious diffusion peaks and longer windows (e.g., 35, 50 frames) causing averaging of diffusion peaks. Diffusion coefficients (D) were calculated for each window using a MATLAB class called msdanalyzer (Tarantino et al., 2014), where D was estimated from the linear regression fitting of the MSD plots of rolling windows using the first five time points. D is calculated as:
+
+$$
+D=\frac{1}{2d}\times\frac{MSD(dt)}{dt}
+$$
 
 where d is the number of dimensions (1 in this case).
 
@@ -125,19 +169,76 @@ Each window was then classified as non-diffusive, low-diffusive, or high-diffusi
 
 Four crRNAs specific to lambda DNA were used (Table 1) to immobilize dCas9 bound to lambda DNA in standard Cas9 cleavage buffer. To quantify state durations and relative percentages of the three diffusive states per trajectory, two additional filtering steps were applied to reduce the detection of spurious diffusive transitions, which mainly arise from tracking errors and noise in raw kymographs. First, the ‘smooth()’ MATLAB function (default parameter) was used to smooth the position vector using a moving average filtering method. The smoothed data were then used to classify each window into three diffusive states. The ‘bwconncomp.m’ MATLAB function was used to connect neighboring windows with the same diffusive states into segments of non-diffusive, low-diffusive, and high-diffusive states. A second filtering step removed segments shorter than 10 consecutive windows as spurious detections. Finally, the lengths of each segment were used to compute state durations, and the net lengths of each of the three diffusive segments over the total trajectory length were used to determine the relative percentages of the three diffusive states per trajectory.
 
-## Localization precision calculation
+**Table 1.**
+ crRNA sequences for dCas9-binding oligonucleotide sequences used for lambda DNA preparation.
 
-There are various methods to calculate precision, but the most commonly used one is based on calculations of the standard deviation of the Gaussian fit for localization:σ0≥sN
+
+<table>
+  <thead>
+    <tr>
+      <th>Identity</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cas9 crRNA sequence ‘lambda 1’</td>
+      <td>5′-/ AltR 1/rGrUrG rArUrA rArGrU rGrGrA rArUrG rCrCrA rUrGrG rUrUrU rUrArG rArGrC rUrArU rGrCrU / AltR2/-3′</td>
+    </tr>
+    <tr>
+      <td>Cas9 crRNA sequence ‘lambda 2’</td>
+      <td>5′-/ AltR 1/rCrUrG rGrUrG rArArC rUrUrC rCrGrA rUrArG rUrGrG rUrUrU rUrArG rArGrC rUrArU rGrCrU / AltR2/-3′</td>
+    </tr>
+    <tr>
+      <td>Cas9 crRNA sequence ‘lambda 3’</td>
+      <td>5′-/AltRl /rCrArG rArUrA rUrArG rCrCrU rGrGrU rGrGrU rUrCrG rUrUrU rUrArG rArGrC rUrArU rGrCrU / AltR2/-3′</td>
+    </tr>
+    <tr>
+      <td>3x-biotin-cos1 oligo</td>
+      <td>5′-/5Phos/ AGG TCG CCG CCC TT/iBiodT/TT/iBiodT/TT/3BiodT/-3′</td>
+    </tr>
+    <tr>
+      <td>3x-digoxigenin-cos2 oligo</td>
+      <td>5′-/5Phos/ GGG CGG CGA CCT TT/iDigN/TT/iDigN/TT/3DigN/-3′</td>
+    </tr>
+    <tr>
+      <td>Adapter oligo for lambda DNA dual end biotin labeling</td>
+      <td>5′-/5Phos/ GGG CGG CGA CCT TGC A-3′</td>
+    </tr>
+  </tbody>
+</table>
+
+### Localization precision calculation
+
+There are various methods to calculate precision, but the most commonly used one is based on calculations of the standard deviation of the Gaussian fit for localization:
+
+$$
+\sigma_{0}\geq\frac{s}{\sqrt{N}}
+$$
 
 where s is the standard deviation of the Gaussian fit, and N is the total number of photons emitted. According to this relationship, we calculate a precision of greater than 72 nm. This calculation is based on 40 single-molecule trajectories, each approximately 400 data points long.
 
-## Bimolecular remodeler–remodeler imaging and interaction analysis
+### Bimolecular remodeler–remodeler imaging and interaction analysis
 
 Remodeler–remodeler interactions were assessed by imaging single-molecule concentrations of remodelers labeled in two colors (red and green) together on the same piece of DNA. The same concentrations of RSC-JFX650 and ISW2-JFX650 were used for the two-color imaging experiments as was used in the single-color imaging experiments.
 
-To define colocalizations, we performed the following steps. Firstly, we calculated the diffusion coefficient for each molecule over time using time windows, specifically utilizing 20 exposure time intervals in our study. Next, we determined the mean diffusion coefficient for each molecule. Based on the mean diffusion coefficients, we determined the maximum displacements that can occur between two molecules assuming independent movement, employing a simple Brownian motion model. The maximum distance between two molecules was calculated using:x1=2μD1Δtx2=2μD2Δt
+To define colocalizations, we performed the following steps. Firstly, we calculated the diffusion coefficient for each molecule over time using time windows, specifically utilizing 20 exposure time intervals in our study. Next, we determined the mean diffusion coefficient for each molecule. Based on the mean diffusion coefficients, we determined the maximum displacements that can occur between two molecules assuming independent movement, employing a simple Brownian motion model. The maximum distance between two molecules was calculated using:
 
-where μ1 and μ2 represent the mean diffusion coefficients of the first and second molecules, respectively, and Δt denotes the camera exposure time. Consequently, the maximum distance between two molecules is given by:d=x1+x2
+$$
+x_{1}=\sqrt{2\mu_{D1}Δt}
+$$
+
+
+
+$$
+x_{2}=\sqrt{2\mu_{D2}Δt}
+$$
+
+where μ1 and μ2 represent the mean diffusion coefficients of the first and second molecules, respectively, and Δt denotes the camera exposure time. Consequently, the maximum distance between two molecules is given by:
+
+$$
+d=x_{1}+x_{2}
+$$
 
 For RSC–RSC interactions, the average threshold was found to be 0.31 μm, and for RSC–ISW2 interactions, it was 0.29 μm.
 
@@ -145,36 +246,40 @@ To reduce noise arising from shot noise, we applied a Gaussian filter to smooth 
 
 To validate the short colocalizations, we examined the diffusion coefficient for this part of the trajectories, ensuring that the molecular distance remained within the threshold and subsequently exited it. If the calculated diffusion coefficient for this segment was greater than the average diffusion coefficient, we classified the colocalization as a short colocalization; otherwise, it was considered a long colocalization. In summary, our colocalization analysis involved calculating diffusion coefficients, determining thresholds, smoothing trajectories, identifying colocalized time points, categorizing colocalizations into short and long durations, and verifying short colocalizations based on the diffusion coefficient. These steps allowed us to define colocalizations and evaluate their durations in our study (Figure 2—figure supplement 1A–F).
 
-Dwell-time analysis was performed using the Akaike information criterion to determine the most probable number of lifetime models. In this case, a single-exponential model was identified. Subsequently, lifetime estimation was carried out using the maximum likelihood estimation (MLE) method with the XYZ package in MATLAB. The likelihood is expressed asP(t|τ)= ∏i=1IExp(ti ; τ ) = ∏i=1I1τe−tiτ= 1τIexp(−1τ∑i=1Iti).
+Dwell-time analysis was performed using the Akaike information criterion to determine the most probable number of lifetime models. In this case, a single-exponential model was identified. Subsequently, lifetime estimation was carried out using the maximum likelihood estimation (MLE) method with the XYZ package in MATLAB. The likelihood is expressed as
 
-## Lambda DNA preparation with biotin and digoxigenin labeling
+$$
+P(t|\tau)= \prodi=1IExp(t_{i} ; \tau ) = \prodi=1I\frac{1}{\tau}e^{−\frac{t_{i}}{\tau}}= \frac{1}{\tau^{I}}exp(−\frac{1}{\tau}\sumi=1It_{i}).
+$$
+
+### Lambda DNA preparation with biotin and digoxigenin labeling
 
 Lambda DNA was prepared with three biotins on one end and three digoxigenins on the other end using the following protocol. Custom oligos (Table 1) were sourced from IDT, and lambda DNA was acquired from NEB (cat# N3011S). Oligo 1 was annealed to lambda DNA by adding a 25-fold molar excess to the DNA in an annealing buffer containing 30 mM HEPES (pH 7.5) and 100 mM KCl. The mixture was heated at 70°C for 10 min and cooled gradually to room temperature. Subsequently, 2 µl of NEB T4 DNA ligase (400 U, cat# M0202S) and its corresponding buffer with ATP were added, followed by a 30-min incubation at room temperature. A 50-fold molar excess of oligo 2 was then introduced, along with an additional 1 µl of T4 DNA ligase and its buffer containing ATP, with volume adjustments. The mixture was incubated at room temperature for another 30 min and heat-inactivated at 65°C for 10 min. The end-labeled lambda DNA was purified using the Qiaex II gel-extraction DNA clean-up kit, as per the manufacturer’s instructions (QIAGEN, cat# 20021).
 
-## Lambda DNA preparation with biotin labeling on both ends
+### Lambda DNA preparation with biotin labeling on both ends
 
 Lambda DNA was also prepared with three biotins on each end using an adapter oligo (Table 1) to recycle the 3x-Biotin Cos1 Oligo. The protocol mentioned above was followed, with some modifications. An equimolar mixture of adapter oligo and the 3x-Biotin Cos1 Oligo were annealed by heating and gradually cooling using IDT protocols and buffers. This adapted oligo was then used instead of oligo 2 in the aforementioned protocol.
 
-## Lambda nucleosome array preparation
+### Lambda nucleosome array preparation
 
 A salt gradient dialysis method was employed to reconstitute nucleosomes onto lambda DNA, using optimized laboratory procedures based on established protocols (Luger et al., 1999; Vary et al., 2003). The buffers used in this reconstitution included high-salt buffer (10 mM Tris–HCl pH 7.5, 1 mM EDTA pH 8.0, 2 M NaCl, 5 mM 2-mercaptoethanol [BME]) and low-salt buffer (10 mM Tris–HCl pH 7.5, 1 mM EDTA pH 8.0, 50 mM NaCl, 5 mM BME). Cy3-labeled H2A-containing octamer, prepared as formerly described (Ranjan et al., 2013), was titrated onto lambda DNA (either 0.5 or 1 µg DNA) at molar ratios of 40:1, 20:1, 10:1, 5:1, and 2.5:1. Reconstitution reactions were carried out in 10 mM Tris pH 7.5, 1 mM EDTA pH 8.0, 0.1 mg/ml BSA Roche (cat# 10711454001), and 1 mM BME. A 16-hr dialysis was set up using a 7-kDa MWCO Slide-A-Lyzer MINI Dialysis Device (cat# 69560), placed in a flotation device in high-salt buffer. Low-salt buffer was gradually added to the high-salt buffer throughout the dialysis, with constant stirring. After the dialysis period, the solution was replaced with 100% low-salt buffer and allowed to dialyze for an additional hour. The reconstitution efficiency was assessed using an electrophoretic mobility shift assay by running lambda nucleosome arrays on a 0.5% agarose gel in 0.5× Tris-borate-EDTA (TBE) (Figure 3—figure supplement 1A).
 
-## Histone labeling, octamer reconstitution, and purification
+### Histone labeling, octamer reconstitution, and purification
 
 H2A(K120C)/H2B dimers, prepared in-house, were labeled with maleimide-JFX554 using a standard protein maleimide labeling protocol with a 50-fold molar excess of dye to protein. The reaction was allowed to proceed for 3 hr at room temperature before quenching with BME. A small aliquot was reserved to assess labeling efficiency, and excess free dye was removed through three successive buffer exchanges using a 10 K MWCO Amicon spin filter. Labeling efficiency was estimated at 61% based on nanodrop spectral absorption readings at 554 and 280 nm, and the extinction coefficients of the dye and protein. The labeled H2A/H2B dimer was then denatured overnight in denaturing buffer (7 M guanidinium chloride, 10 mM DTT, 20 mM Tris pH 7.5). The following day, a 1.5-fold molar excess of denatured H2A/H2B was mixed with H3 and H4, both solubilized in denaturing buffer, and incubated for 1 hr at room temperature. 0.5 mg of histones H2A and H2B were used in this step.
 
 Octamer refolding was conducted by successively dialyzing the mixture into 1 l of refolding buffer (2 M NaCl, 5 mM BME, 1 mM EDTA, 10 mM Tris–HCl pH 7.5) four times, with each dialysis separated by approximately 12 hr. The samples were then fractionated by size-exclusion chromatography on a Superdex 200 column equilibrated with refolding buffer using an AKTA Fast Protein Liquid Chromatograph (FPLC). Octamer fractions were collected, and SDS–PAGE was employed to determine which peak fractions to pool. A second estimation of labeling efficiency at 68% was obtained after octamer purification. Octamer samples were stored at 1 mg/ml concentrations in 2 M NaCl and 50% glycerol at −20°C until further use.
 
-## Lambda nucleosome array imaging and validation
+### Lambda nucleosome array imaging and validation
 
 Lambda nucleosome arrays (biotin labeled on both ends) were captured by oscillating the distance between two trap centers (traps 1 and 2 with a ~4.38 µm diameter streptavidin-coated polystyrene bead under buffer flow (<0.2 bar)) containing approximately 63 pg/µl lambda nucleosome array. When the force measured on trap 2 exceeded 5 pN, the oscillation and buffer flow were stopped. The distance between the beads was adjusted to achieve a force of ~0 pN on trap 2, and the traps were moved into the protein channel. Buffer flow was maintained at <0.1 bar for a maximum of 30 s to refresh protein in the channel and promote remodeler binding. This flow did not disrupt the nucleosome array stability. The DNA was then pulled to a tension of 5pN, at which point the distance between the two traps was fixed and imaging was started. For imaging Cy3-labeled nucleosomes, a time-lapse scheme in the green channel was used to preserve fluorescence signal lifetime, despite poorer photostability compared to JFX-labeled remodelers. Green excitation (15% of maximum) was intermittently applied to visualize nucleosome positions on the array, with approximately 1 s of green excitation used at various time points. For imaging JFX554-labeled nucleosomes, initially the same intermittent excitation protocol was implemented, but was soon after switched to continuous excitation at lower laser intensity (10% of maximum) due to the brightness and superior photostability of the JFX dye. To note, JFX554-labeled nucleosomes blink as well as dim in and out their intensity prior to an ultimate photobleaching event (visible in Figure 4D). For imaging JFX650-labeled remodelers, red excitation (6.5% of maximum) was applied continuously. After JFX650-labeled remodelers bleached, green excitation continued until the remaining green signal photobleached. Lambda nucleosome arrays contained a variable number of nucleosomes. To determine the mean number of nucleosomes per array, the following procedure was employed. After imaging, the lambda nucleosome array was moved to a buffer-only channel, and nucleosomes were forcibly unwrapped. A force-clamp between 15 and 20 pN was applied to visualize individual unwrapping events (Figure 3B, C). Once unwrapping events ceased, the force was increased to 40 pN and then 60 pN + to denature the DNA. If the DNA remained intact, a second force–distance curve was collected to visualize DNA free of nucleosomes.
 
-## Remodeler–nucleosome colocalization analysis pipeline
+### Remodeler–nucleosome colocalization analysis pipeline
 
 To colocalize remodeler signals with nucleosome signals, we first processed nucleosome signals by performing linking analysis and marking signals to be excluded from colocalization based on specific criteria. As mentioned previously, the green laser was pulsed to extend the fluorescence lifetime of Cy3-labeled nucleosomes, which constituted 2/3 of the data collected in this study. A JFX-nucleosome was created to extend the fluorescence lifetime of the nucleosome, achieving a duration comparable to that of the remodeler. For data involving pulsed green lasers, we extended nucleosome positional information by using the last visible fluorescence signal before laser pulsing or photobleaching. This approach enabled generation of positional information for all nucleosome datasets, regardless of fluorophore used, facilitating remodeler–nucleosome colocalization analysis.
 
 Nucleosome fluorescent signals were omitted from consideration if unstable, likely due to non-specific adsorption of fluorescently labeled histones remaining after reconstitution of lambda nucleosome arrays. These signals were also considered in linking analysis, and stable signals that later linked to an unstable signal were removed from colocalization analysis. Remodelers colocalizing within 0.17 pixels (~500 bps) of the nucleosome signal were considered colocalized, and their molecular identifiers were recorded for immobility analysis.
 
-## Translocation analysis pipeline
+### Translocation analysis pipeline
 
 Kymographs obtained in the presence of 1 mM ATP were evaluated for translocation based on directional motion exhibited by either remodeler or nucleosome signals, or their colocalization. Traces were manually categorized into segments displaying 1D search, stable non-translocating engagement, or translocation. Stable nucleosome colocalized signals in kymographs with 1 mM ATPγS were used as a control condition, as translocation should not occur due to its ATP hydrolysis dependence. Time trace information for translocating segments was fitted to a linear regression model. In cases of poor fits, traces were re-evaluated for speed changes. Translocation events with speed changes were fitted separately using linear regressions for each segment of uniform speed. Translocation events lasting less than 5 s, spanning less than 300 bps, or exhibiting an R² value below 0.5 were excluded from reporting, as they could not be distinguished from fits in the ATPγS control condition.

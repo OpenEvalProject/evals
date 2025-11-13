@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.29145.001 The neural crest is a dynamic progenitor cell population that arises at the border of neural and non-neural ectoderm. The inductive roles of FGF, Wnt, and BMP at the neural plate border are well established, but the signals required for subsequent neural crest development remain poorly characterized. Here, we conducted a screen in primary zebrafish embryo cultures for chemicals that disrupt neural crest development, as read out by crestin:EGFP expression. We found that the natural product caffeic acid phenethyl ester (CAPE) disrupts neural crest gene expression, migration, and melanocytic differentiation by reducing Sox10 activity. CAPE inhibits FGF-stimulated PI3K/Akt signaling, and neural crest defects in CAPE-treated embryos are suppressed by constitutively active Akt1. Inhibition of Akt activity by constitutively active PTEN similarly decreases crestin expression and Sox10 activity. Our study has identified Akt as a novel intracellular pathway required for neural crest differentiation.
+The neural crest is a dynamic progenitor cell population that arises at the border of neural and non-neural ectoderm. The inductive roles of FGF, Wnt, and BMP at the neural plate border are well established, but the signals required for subsequent neural crest development remain poorly characterized. Here, we conducted a screen in primary zebrafish embryo cultures for chemicals that disrupt neural crest development, as read out by crestin:EGFP expression. We found that the natural product caffeic acid phenethyl ester (CAPE) disrupts neural crest gene expression, migration, and melanocytic differentiation by reducing Sox10 activity. CAPE inhibits FGF-stimulated PI3K/Akt signaling, and neural crest defects in CAPE-treated embryos are suppressed by constitutively active Akt1. Inhibition of Akt activity by constitutively active PTEN similarly decreases crestin expression and Sox10 activity. Our study has identified Akt as a novel intracellular pathway required for neural crest differentiation.
 
 ## Introduction
 
@@ -46,15 +46,429 @@ In this study we took advantage of chemical screening in zebrafish to better und
 
 ## Results
 
-## An in vitro screen for chemicals that decrease crestin:EGFP expression
+### An in vitro screen for chemicals that decrease crestin:EGFP expression
 
 To better understand the signals essential for neural crest development, we looked for small molecules that decreased expression of the neural crest reporter crestin_1 kb:EGFP (hereafter referred to as crestin:EGFP). The 1 kb crestin promoter fragment recapitulates endogenous crestin mRNA expression, thus marking the neural crest lineage in vivo (Kaufman et al., 2016). We developed a neural crest culture protocol to facilitate rapid and automated chemical screening while maintaining this transient cell population in heterogeneous cultures (Figure 1A,B) (Ciarlo and Zon, 2016). This approach allowed us to distinguish broadly toxic chemicals from those with selective effects on the neural crest. Crestin:EGFP; ubi:mCherry transgenic zebrafish embryos were grown to the 5 somite stage (ss), mechanically homogenized, and plated on standard tissue culture-coated plastic in media optimized for neural crest growth and survival, containing fetal bovine serum (FBS), epidermal growth factor (EGF), fibroblast growth factor 2 (FGF2), and insulin (Kinikoglu et al., 2014). Under these conditions, crestin:EGFP+ cells arose and proliferated, accounting for approximately 20% of total cells after 24 hr in culture (Figure 1—figure supplement 1A–B). These cells were highly proliferative and migratory, expressed key neural crest genes, and could differentiate into pigmented melanocytes in vivo (Figure 1—figure supplement 1C–F and Video 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig1-v2.jpg)
+
+**Figure 1.:** (A) CAPE decreases crestin:EGFP+ cells in culture while leaving ubi:mCherry+ cells unchanged. Scale bar: 100 μm. Characterization of cultured crestin:EGFP+ cells is shown in Figure 1—figure supplement 1. (B) Chemical screen design. Whole embryos were mechanically homogenized and plated on standard tissue culture coating in neural crest medium with chemicals. After 24 hr of culture, Hoechst 33342 was added to stain nuclei before imaging. (C) Screen hits were validated in the primary screen assay and tested for an effect on crestin:EGFP expression in vivo. (D) Structure of CAPE. (E) CAPE shows a greater than 10-fold selectivity for crestin:EGFP+ cells versus ubi:mCherry+ cells in vitro.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Cell size and morphology visualized by crestin:EGFP. (B) Percentage of crestin:EGFP+ cells determined by FACS. Bars indicate mean and points indicate independent experiments. (C) Crestin:EGFP+ cells are more migratory than a random population of cells. Points indicate individual cells in a single experiment. (D) Crestin:EGFP+ cells are slightly more proliferative than the culture average, as determined by EdU staining after 4 hr of EdU treatment. Mean and standard deviation of three frames from the same experiment are shown. Similar results were obtained in two independent experiments. (E) Crestin:EGFP+ cells cultured for 24 hr express neural crest genes comparable to freshly isolated (24 hpf) crestin:EGFP+ cells and do not express markers of more differentiated tissues. Gene expression was determined by qPCR and normalized to β-actin. The highest expressing sample for each group was assigned a value of 1. Average and standard deviation of three technical replicates are shown. Myf5 and runx1 are negative controls. Results are representative of three independent experiments. (F) Crestin:EGFP+ cells form pigmented melanocytes in vivo. Cells were sorted for crestin:EGFP after two days of culture and injected under the scale of a casper fish lacking endogenous melanocytes. Pigmented cells were observed at 4 days post transplant in 4/8 EGFP+ transplants and 0/10 EGFP- transplants. Student’s t-test was used for statistical analyses.
+
+![Video 1.](https://cdn.elifesciences.org/articles/29145/elife-29145-video1.mp4.jpg)
+
 We used this primary cell culture system to screen 3400 compounds at two concentrations, including bioactives libraries, FDA approved drugs, and Chembridge novel compounds. Chemical hits were identified based on toxicity and specificity cutoffs, taking into account both total cell number as determined by Hoechst staining of nuclei and ubi:mCherry+ cells representing a random population of cells (Figure 1A,B). All hits were verified by eye, resulting in a hit rate of 1.0–1.8%. Of 86 non-redundant, commercially available hit chemicals, 72 reproduced a specific, dose-dependent decrease in number of crestin:EGFP+ cells in culture (Figure 1C, Table 1). We next tested the effect of hit chemicals on crestin:EGFP transgenic zebrafish embryos treated at 2 ss (10.6 hpf), early in neural crest specification but after the neural plate border is established. Sixteen chemicals decreased crestin:EGFP in vivo, including CAPE, a natural product with multiple reported biological activities and targets (Figure 1D–E, Table 1).
 
-## CAPE disrupts neural crest gene expression in vivo by reducing Sox10 activity
+**Table 1.**
+ In vitro validated screen hits.Hits that also validated in vivo are bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Compound</th>
+      <th>Library</th>
+      <th>Target/category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CAPE</td>
+      <td>ICCB</td>
+      <td>NFkB/multiple</td>
+    </tr>
+    <tr>
+      <td>raloxifene</td>
+      <td>LOPAC</td>
+      <td>Estrogen receptor</td>
+    </tr>
+    <tr>
+      <td>mianserin</td>
+      <td>LOPAC</td>
+      <td>5-HT receptor antagonist</td>
+    </tr>
+    <tr>
+      <td>GANT61</td>
+      <td>LOPAC</td>
+      <td>Hedgehog</td>
+    </tr>
+    <tr>
+      <td>MnTBAP</td>
+      <td>ICCB</td>
+      <td>SOD mimetic</td>
+    </tr>
+    <tr>
+      <td>loperamide</td>
+      <td>FDA approved</td>
+      <td>Mu opiod receptor agonist</td>
+    </tr>
+    <tr>
+      <td>latanoprost</td>
+      <td>FDA approved</td>
+      <td>prostaglandin F2a analogue</td>
+    </tr>
+    <tr>
+      <td>tetraethylthiuram disulfide</td>
+      <td>LOPAC</td>
+      <td>alcohol dehydrogenase</td>
+    </tr>
+    <tr>
+      <td>dopamine</td>
+      <td>LOPAC</td>
+      <td>dopamine receptor</td>
+    </tr>
+    <tr>
+      <td>mycophenolate mofetil</td>
+      <td>LOPAC</td>
+      <td>IMPH</td>
+    </tr>
+    <tr>
+      <td>genistein</td>
+      <td>LOPAC</td>
+      <td>kinase inhibitor</td>
+    </tr>
+    <tr>
+      <td>albendazole</td>
+      <td>FDA approved</td>
+      <td>antihelminthic</td>
+    </tr>
+    <tr>
+      <td>JFD00244</td>
+      <td>LOPAC</td>
+      <td>sirt2 inhibitor</td>
+    </tr>
+    <tr>
+      <td>perphenazine</td>
+      <td>FDA approved</td>
+      <td>5-HT receptor</td>
+    </tr>
+    <tr>
+      <td>5-NOT</td>
+      <td>FDA approved</td>
+      <td>5-HT agonist</td>
+    </tr>
+    <tr>
+      <td>SKF95282</td>
+      <td>LOPAC</td>
+      <td>histamine H2 receptor antagonist</td>
+    </tr>
+    <tr>
+      <td>bicalutamide</td>
+      <td>FDA approved</td>
+      <td>anti-androgen</td>
+    </tr>
+    <tr>
+      <td>capsazepine</td>
+      <td>LOPAC</td>
+      <td>sodium channels</td>
+    </tr>
+    <tr>
+      <td>triflupromazine</td>
+      <td>LOPAC</td>
+      <td>monoamine transporters</td>
+    </tr>
+    <tr>
+      <td>flubendazole</td>
+      <td>FDA approved</td>
+      <td>antihelminthic</td>
+    </tr>
+    <tr>
+      <td>GDC-0941</td>
+      <td>LOPAC</td>
+      <td>PI3K</td>
+    </tr>
+    <tr>
+      <td>imatinib</td>
+      <td>FDA approved</td>
+      <td>RTK inhibitor</td>
+    </tr>
+    <tr>
+      <td>indatraline</td>
+      <td>LOPAC</td>
+      <td>dopamine uptake inhibitor</td>
+    </tr>
+    <tr>
+      <td>MBCQ</td>
+      <td>ICCB</td>
+      <td>PDE5</td>
+    </tr>
+    <tr>
+      <td>MDL-28170</td>
+      <td>ICCB</td>
+      <td>calpain inhibitor</td>
+    </tr>
+    <tr>
+      <td>NS8593</td>
+      <td>LOPAC</td>
+      <td>potassium channels</td>
+    </tr>
+    <tr>
+      <td>NU6027</td>
+      <td>LOPAC</td>
+      <td>ATR/CDK2 inhibitor</td>
+    </tr>
+    <tr>
+      <td>PD180970</td>
+      <td>LOPAC</td>
+      <td>RTK inhibitor</td>
+    </tr>
+    <tr>
+      <td>PD173074</td>
+      <td>LOPAC</td>
+      <td>src inhibitor</td>
+    </tr>
+    <tr>
+      <td>PI-103</td>
+      <td>LOPAC</td>
+      <td>PI3K</td>
+    </tr>
+    <tr>
+      <td>rapamycin</td>
+      <td>LOPAC</td>
+      <td>mTOR</td>
+    </tr>
+    <tr>
+      <td>SB242084</td>
+      <td>LOPAC</td>
+      <td>5-HT receptor antagonist</td>
+    </tr>
+    <tr>
+      <td>triptolide</td>
+      <td>FDA approved</td>
+      <td>RNA pol II</td>
+    </tr>
+    <tr>
+      <td>tyrphostin AG698</td>
+      <td>LOPAC</td>
+      <td>tyrosine kinase inhibitor</td>
+    </tr>
+    <tr>
+      <td>wiskostatin</td>
+      <td>LOPAC</td>
+      <td>actin</td>
+    </tr>
+    <tr>
+      <td>PAC-1</td>
+      <td>LOPAC</td>
+      <td>proapoptotic zinc chelator</td>
+    </tr>
+    <tr>
+      <td>PD407824</td>
+      <td>LOPAC</td>
+      <td>chk1 inhibitor</td>
+    </tr>
+    <tr>
+      <td>PD173952</td>
+      <td>LOPAC</td>
+      <td>src inhibitor</td>
+    </tr>
+    <tr>
+      <td>sanguinarine</td>
+      <td>LOPAC</td>
+      <td>Na/K ATPase</td>
+    </tr>
+    <tr>
+      <td>tyrphostin AG835</td>
+      <td>LOPAC</td>
+      <td>EGFR</td>
+    </tr>
+    <tr>
+      <td>(-)-alpha-methylnorepinephrine</td>
+      <td>LOPAC</td>
+      <td>sympathomimetic</td>
+    </tr>
+    <tr>
+      <td>chloroquine</td>
+      <td>LOPAC</td>
+      <td>antimalarial</td>
+    </tr>
+    <tr>
+      <td>M-344</td>
+      <td>LOPAC</td>
+      <td>HDAC inhibitor</td>
+    </tr>
+    <tr>
+      <td>olmesartan medoxomil</td>
+      <td>FDA approved</td>
+      <td>angiotensin II receptor antagonist</td>
+    </tr>
+    <tr>
+      <td>1,10-phenanthroline</td>
+      <td>LOPAC</td>
+      <td>chelator, MMP</td>
+    </tr>
+    <tr>
+      <td>2,3-dimethoxy-1,4-naphthoquinone</td>
+      <td>LOPAC</td>
+      <td>ROS</td>
+    </tr>
+    <tr>
+      <td>amiloride</td>
+      <td>ICCB</td>
+      <td>calcium channels</td>
+    </tr>
+    <tr>
+      <td>fluvastatin</td>
+      <td>FDA approved</td>
+      <td>HMG co-A reductase</td>
+    </tr>
+    <tr>
+      <td>CHM-1</td>
+      <td>LOPAC</td>
+      <td>antimitotic</td>
+    </tr>
+    <tr>
+      <td>SAHA</td>
+      <td>LOPAC</td>
+      <td>HDAC inhibitor</td>
+    </tr>
+    <tr>
+      <td>nimesulide</td>
+      <td>LOPAC</td>
+      <td>COX-2</td>
+    </tr>
+    <tr>
+      <td>mibefradil</td>
+      <td>LOPAC</td>
+      <td>calcium channels</td>
+    </tr>
+    <tr>
+      <td>KB-R7493</td>
+      <td>LOPAC</td>
+      <td>sodium calcium exchanger</td>
+    </tr>
+    <tr>
+      <td>LY165163</td>
+      <td>LOPAC</td>
+      <td>5-HT receptor antagonist</td>
+    </tr>
+    <tr>
+      <td>dequalinium</td>
+      <td>LOPAC</td>
+      <td>potassium channels</td>
+    </tr>
+    <tr>
+      <td>AM92016</td>
+      <td>ICCB</td>
+      <td>potassium channels</td>
+    </tr>
+    <tr>
+      <td>2-[4-(1,3-benzodioxol-5-yl)−1H-pyrazol-1-yl]-N-(2-ethyl-2H-1,2,3-triazol-4-yl)acetamide</td>
+      <td>Chembridge</td>
+      <td>predicted adenosine kinase</td>
+    </tr>
+    <tr>
+      <td>N-(2-ethyl-2H-1,2,3-triazol-4-yl)−2-{4-[3-(1H-pyrazol-1-yl)phenyl]−1H-pyrazol-1-yl}acetamide</td>
+      <td>Chembridge</td>
+      <td>predicted adenosine kinase</td>
+    </tr>
+    <tr>
+      <td>2,2,6,6-tetramethyl-N-(1-methyl-3-phenylpropyl)−4-piperidinamine</td>
+      <td>Chembridge</td>
+      <td>predicted vitamin D receptor</td>
+    </tr>
+    <tr>
+      <td>N-[(5-chloro-1H-indol-2-yl)methyl]−2-(3-hydroxyphenyl)acetamide</td>
+      <td>Chembridge</td>
+      <td>predicted TK(FLT3)</td>
+    </tr>
+    <tr>
+      <td>5-(1H-indol-2-ylcarbonyl)−4,5,6,7-tetrahydrothieno[3,2 c]pyridine</td>
+      <td>Chembridge</td>
+      <td>predicted TK(FLT3)</td>
+    </tr>
+    <tr>
+      <td>1-acetyl-4-{4-[1-(2-fluorophenyl)−1H-pyrazol-4-yl]pyrimidin-2-yl}−1,4-diazepane</td>
+      <td>Chembridge</td>
+      <td>predicted JNK</td>
+    </tr>
+    <tr>
+      <td>4-(4-butyl-1H-1,2,3-triazol-1-yl)−1-{[(1S*,4S*)−3,3-dimethyl-2-methylenebicyclo[2.2.1]hept-1-yl]carbonyl}piperi</td>
+      <td>Chembridge</td>
+      <td>predicted liver X receptor</td>
+    </tr>
+    <tr>
+      <td>1-(3-methylbenzyl)−4-thieno[2,3-d]pyrimidin-4-yl-2-piperazinone</td>
+      <td>Chembridge</td>
+      <td>predicted TK(EGFR, PDGFR, CSFR1); PKC; PKA</td>
+    </tr>
+    <tr>
+      <td>1-(2-methoxyphenyl)−2,2-dimethyl-4-(4-methylpentanoyl)piperazine</td>
+      <td>Chembridge</td>
+      <td>predicted androgen receptor</td>
+    </tr>
+    <tr>
+      <td>5,6-dimethyl-2-[4-({methyl[(2-methylpyridin-4-yl)methyl]amino}methyl)phenyl]pyrimidin-4(3 hr)-one</td>
+      <td>Chembridge</td>
+      <td>predicted estrogen receptor</td>
+    </tr>
+    <tr>
+      <td>N-[1-(1,5-dimethyl-1H-pyrazol-4-yl)ethyl]thieno[2,3-d]pyrimidin-4-amine</td>
+      <td>Chembridge</td>
+      <td>predicted EGFR</td>
+    </tr>
+    <tr>
+      <td>N-(1-cyclohexyl-1H-pyrazol-5-yl)−2-[3-(2-thienyl)−1H-pyrazol-1-yl]acetamide</td>
+      <td>Chembridge</td>
+      <td>predicted VEGFR2, EGF/KDR</td>
+    </tr>
+    <tr>
+      <td>2-[1-(3-isobutyl-1,2,4-oxadiazol-5-yl)−2-methylbutyl]−1-isoindolinone</td>
+      <td>Chembridge</td>
+      <td>predicted RAR(gamma)</td>
+    </tr>
+    <tr>
+      <td>1-propyl-N-{1-[4-(1H-pyrazol-1-yl)phenyl]piperidin-4-yl}piperidin-4-amine</td>
+      <td>Chembridge</td>
+      <td>predicted estrogen receptor</td>
+    </tr>
+    <tr>
+      <td>5-[5-methyl-4-(1-methyl-1H-pyrazol-4-yl)pyrimidin-2-yl]−4,5,6,7-tetrahydrothieno[3,2 c]pyridine</td>
+      <td>Chembridge</td>
+      <td>predicted TK(VEGFR, KDR, FLK1)</td>
+    </tr>
+    <tr>
+      <td>2-[5-(2,6-dimethylphenyl)−1H-indazol-1-yl]-N-(1,3-dimethyl-1H-pyrazol-5-yl)acetamide</td>
+      <td>Chembridge</td>
+      <td>predicted TK(PDGFR, EGFR, FGFR)</td>
+    </tr>
+  </tbody>
+</table>
+
+### CAPE disrupts neural crest gene expression in vivo by reducing Sox10 activity
 
 Embryos treated with 10 μM CAPE at 2 ss showed a consistent and dramatic reduction in crestin:EGFP expression (Figure 2A). We saw a similar effect using the minimal 296 base pair crestin promoter (crestin_296bp:EGFP) (Figure 2—figure supplement 1A). To determine whether CAPE affects crestin:EGFP during or after neural crest specification, we conducted time lapse microscopy of crestin:EGFP transgenic embryos. In treated embryos, crestin:EGFP arose at a severely reduced level, and most crestin:EGFP+ cells that did emerge quickly disappeared, indicating that they had either died or turned off crestin:EGFP expression (Videos 2 and 3). Time course experiments confirmed that CAPE acts quickly and early in neural crest development. As determined by whole mount in situ hybridization (ISH), crestin expression was decreased after two hours of CAPE treatment, and CAPE had no effect on crestin expression in embryos treated at 15 ss or later (Figure 2—figure supplement 1B–C) .
+
+![Figure 2.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig2-v2.jpg)
+
+**Figure 2.:** (A) CAPE dramatically reduces crestin:EGFP expression at 26 hpf. Figure 2—figure supplement 1 shows the response of a smaller (396 bp) crestin promoter fragment to CAPE and the timing of crestin response to CAPE. (B) CAPE decreases neural crest gene expression as determined by whole mount in situ hybridization (ISH) at 15–17 ss. Expression of some genes is decreased ubiquitously while others are only altered in specific anatomic locations (arrows). Images are representative of at least two independent experiments. (C) Scoring of ISH in (B). (D) CAPE reduces expression of pigment cell genes at 24 hpf. (E) FPKM values from RNA-sequencing of sox10:Kaede+ cells confirmed decreases in neural crest genes, though to a lesser extent than by ISH. Cells were sorted from control or CAPE-treated embryos at 17 ss. Figure 2—figure supplement 2 shows neural crest genes with no significant change by ISH. Figure 2—figure supplement 3 shows that a change in cell number does not account for neural crest gene expression changes. Figure 2—figure supplement 4 shows other gene expression changes in neural crest cells. *p<0.001, **p<0.0001, chi-square test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) CAPE decreases expression of crestin_296bp:EGFP. Embryos were treated at 2 ss and imaged at 24 hpf. A single clutch is shown. (B) CAPE reduces crestin expression within two hours of treatment. Embryos were treated at 2 ss for the indicated amount of time and fixed for ISH. (C) CAPE has no effect on crestin expression after 15 ss. Embryos were treated for 2 hr at the indicated developmental stage.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative embryos from ISH. Images are representative of at least two independent experiments. Arrows point to regions with subtle decreases in expression. (B) Scoring of ISH in (A). Images with arrows were scored only in the region of interest. No statistically significant changes were observed in the genes listed (p>0.05, chi-square test). (C) Expression as determined by RNA-seq of sox10:Kaede+ cells. Some genes that appeared unchanged by ISH were decreased by RNA-seq.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Embryos were treated continuously starting at 2 ss. (A) CAPE does not affect proliferation of neural crest cells as determined by phospho-histone H3 in the sox10:GFP+ region of embryos. Flat mounts of representative embryos are shown. Results are representative of two independent experiments. (B) Quantification of images in (A). Images were quantified using Imaris. Bars indicate the average and SEM of 6 embryos per condition from the same clutch. (C) CAPE does not increase cell death in the neural crest region of embryos after 5–6 hr of treatment. Representative embryos show whole mount TUNEL (brown) and crestin ISH (purple). (D) Quantification of embryos in (C). Quantification was conducted manually. Average and standard deviation of two independent experiments are shown. (E) 10 μM but not 5 μM CAPE broadly increases cell death after 19 hr of treatment. (F) 5 μM CAPE does not substantially alter cell death at 48 hpf.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) IPA analysis pointed to increased inflammatory signaling with CAPE treatment. (B) CAPE alters morphogen expression. Red indicates upregulation while green indicates downregulation. Fold change was determined using FPKM values.
+
+![Video 2.](https://cdn.elifesciences.org/articles/29145/elife-29145-video2.mp4.jpg)
+
+**Video 2.:** Embryos were treated at 2 ss and mounted for imaging at 10 ss. Embryos were imaged for 16.25 hr, and images were collected every 9 min.
+
+![Video 3.](https://cdn.elifesciences.org/articles/29145/elife-29145-video3.mp4.jpg)
+
+**Video 3.:** Embryos were treated at 2 ss and mounted for imaging at 10 ss. Embryos were imaged for 16.25 hr, and images were collected every 9 min.
 
 We further analyzed the effect of CAPE on neural crest gene expression by ISH. Embryos were treated with CAPE at 2 ss and fixed at 15–17 ss for analysis. We found a decrease in expression of crestin, sox10, pax7a, dlx2a, and the Ap-2α target gene inka1a (Figure 2B,C). These genes are expressed in both premigratory and migratory neural crest. We observed little to no change in the levels of nr2f2, msxb, pax3a, ets1, ap2a, ap2c, snai1b, dlx5a, and foxd3 (Figure 2—figure supplement 2A,B). In addition to being expressed in the premigratory and migratory neural crest, a subset of these genes are expressed earlier in development at the neural plate border (msxb, pax3a, dlx5a). Our data indicate that neural crest-like cells are present in CAPE-treated embryos but exhibit abnormal gene expression, particularly for genes expressed after the neural plate border is established. Later in development, at 24 hpf, CAPE treatment caused a dramatic decrease in pigment cell-specific gene expression, including mitfa and its target gene dct, which mark melanoblasts, and fms, which marks xanthophore precursors (Figure 2D).
 
@@ -64,33 +478,81 @@ To confirm CAPE’s effect on neural crest gene expression and identify potentia
 
 To better understand the mechanism by which CAPE leads to changes in gene expression, we conducted ATAC-seq (Assay for Transposase-Accessible Chromatin) in sox10:Kaede+ cells isolated from control and CAPE-treated embryos (Buenrostro et al., 2013). We observed a reduction in chromatin accessibility specifically at the mitfa promoter with CAPE treatment (Figure 3A). Changes in mitfa expression and chromatin accessibility could be downstream of Sox10, as Sox10 is known to bind to the promoter of mitfa and regulate its expression (Elworthy et al., 2003). Indeed, ChIP-seq in a zebrafish melanoma cell line (zcrest 1) showed strong Sox10 binding at the mitfa promoter (Figure 3A) (Kaufman et al., 2016). Other Sox10-bound genes including crestin did not show a reduction in chromatin accessibility even though their expression was decreased (Figure 3B). Therefore chromatin closing is likely not the primary mechanism by which CAPE decreases gene expression, but we used the ATAC-seq dataset to identify transcription factors of potential importance to CAPE’s mechanism.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig3-v2.jpg)
+
+**Figure 3.:** (A) ATAC-seq was conducted on sox10:Kaede+ cells from DMSO- or CAPE-treated embryos at two stages. CAPE reduces chromatin accessibility at the mitfa promoter in sox10:Kaede+ cells, and Sox10 binds the mitfa promoter in a zebrafish tumor cell line. (B) Crestin binds Sox10 but does not show a change in chromatin accessibility with CAPE treatment. Bar indicates region of crestin sequence similarity (chr4:41,270,000). (C) HOMER analysis of 20 ss ATAC-seq peaks revealed an enrichment for Sox and MITF motifs when comparing unique peaks in DMSO-treated embryos (% target) to all peaks in CAPE-treated embryos (% background). (D) CAPE (5 μM) prevents sox10 RNA (30 pg) from increasing crestin:EGFP expression. (E) Quantification of experiment shown in (D). Sum of three clutches from two independent experiments is shown. Figure 3—figure supplement 1 shows that tfap2c RNA increases crestin:EGFP expression in both DMSO- and CAPE-treated embryos, and that the number of sox10:Kaede+ cells does not change with CAPE treatment.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Crestin:EGFP expression in representative embryos. (B) Embryos were scored as in Figure 3E. Sum of three clutches from two independent experiments is shown. (C) Based on flow cytometric analysis at 17 ss, the percentage of sox10:Kaede+ live cells does not change with CAPE treatment. Mean and standard deviation of three independent experiments is shown.
+
 To identify transcription factors that could mediate CAPE’s effects on gene expression in a genome-wide unbiased manner, we used Hypergeometric Optimization of Motif EnRichment (HOMER) (Heinz et al., 2010). Of 81,140 total ATAC peaks, we identified 585 peaks (0.7%) unique to the DMSO control sample as compared to the CAPE-treated sample. We used these peak sequences as input to HOMER, with all peak sequences in the CAPE-treated sample as background. The most enriched motifs were those of Sox transcription factors, including Sox10, and MITF (Figure 3C). To determine whether CAPE affects Sox10 transcriptional activity, we overexpressed sox10 in zebrafish embryos by RNA microinjection. While sox10 injection increased crestin:EGFP expression in untreated embryos, it had no effect on crestin:EGFP expression in CAPE-treated embryos, indicating that CAPE reduces Sox10 activity (Figure 3D–E). Reduced expression of crestin:EGFP in CAPE-treated embryos was not due to a reduction in sox10-expressing cells, as the percentage of sox10:Kaede+ cells was identical in treated and control embryos (Figure 3—figure supplement 1C). In contrast to sox10, injection of tfap2c RNA increased crestin:EGFP in both control and CAPE-treated embryos, though its effect was subtle in both cases (Figure 3—figure supplement 1A,B). These data support a role for Sox10 in mediating the transcriptional effects of CAPE.
 
-## CAPE inhibits neural crest migration and pigment cell differentiation in vivo
+### CAPE inhibits neural crest migration and pigment cell differentiation in vivo
 
 We found that neural crest migration is also disrupted by CAPE. While crestin:EGFP is dramatically reduced upon CAPE treatment, sox10:GFP intensity is indistinguishable between control and treated embryos. This may be due to the strength of the sox10 promoter or persistence of stable GFP. Sox10:GFP transgenic embryos allowed us to follow neural crest cells after CAPE treatment. These cells failed to reach the ventral half of the trunk in CAPE-treated embryos (Figure 4A, Videos 4 and 5). The cells remained rounded instead of extending projections and elongating ventrally, as was observed in control embryos (Videos 4 and 5). At 2 days post fertilization (dpf), pigmentation in CAPE-treated embryos was dramatically reduced, indicating that CAPE interferes with the production of differentiated melanocytes (Figure 4B,C). A migration defect was also apparent in the increased fraction of dorsal melanocytes at 2 dpf (Figure 4D). We found that CAPE’s effect on neural crest migration co-occurred with decreased mitfa:GFP expression. A melanocyte migration defect was still evident when embryos were treated with CAPE at 15 ss (Figure 4D). Therefore the melanocyte migration defect induced by CAPE may be downstream of decreased mitfa expression.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig4-v2.jpg)
+
+**Figure 4.:** Embryos were treated at 2 ss unless otherwise indicated. (A) Sox10:Kaede+ cells in the trunk of zebrafish embryos are more dorsally located at 24 hpf. Dotted line indicates top of yolk sac extension. CAPE-treated embryos were allowed to develop for 4 hr longer than control embryos for stage matching. Numbers indicate fraction of embryos for which images are representative. Some DMSO control embryos showed a pattern similar to 5 μM CAPE. Similar results were observed in three independent experiments. (B) Morphology and pigmentation of CAPE-treated embryos at 2 dpf. Treated embryos showed reduced pigmentation and defects such as pericardial edema and a curved tail. (C) Melanocyte counts corresponding to (B). Trunk melanocytes were counted from the yolk sac extension to the end of the tail. Error bars represent standard deviation of 10 embryos from two independent experiments. (D) CAPE increases the fraction of dorsal melanocytes at 2 dpf. Melanocytes were counted as in (C). Embryonic stage at drug treatment is indicated. *p<0.05, **p<0.0005, unpaired t-test. Figure 4—figure supplement 1 shows the effect of CAPE on xanthophores and iridophores at 3 dpf. Figure 4—figure supplement 2 shows the effect of CAPE on otic vesicle development.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Embryos were treated with the indicated concentration of CAPE at 2 ss either continuously (5 μM) or until 48 hpf (7.5 μM washout) to reduce toxicity. (A) Pigment cell phenotypes at 3 dpf. (B) Iridophore counts at 3 dpf. Iridophores were counted from the yolk sac extension to the end of the tail. Iridophore number is slightly reduced by CAPE. Error bars represent standard deviation of 10 embryos from a single clutch. (C) Fraction of dorsal iridophores is slightly increased by CAPE. *p<0.05, **p<0.005, ***p<0.0005, unpaired t-test.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Embryos were treated continuously from 2 ss. (A) Otic vesicles of control and CAPE-treated embryos at 24 hpf. (B) Otic vesicles of control and CAPE-treated embryos at 48 hpf. Note lack of semicircular canal projections (arrows). Scale bar: 50 μm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/29145/elife-29145-video4.mp4.jpg)
+
+**Video 4.:** Sox10:GFP transgenic embryos were treated at 2 ss and mounted for imaging at 15 ss. Embryos were imaged for 12 hr, and images were collected every 10 min.
+
+![Video 5.](https://cdn.elifesciences.org/articles/29145/elife-29145-video5.mp4.jpg)
+
+**Video 5.:** Sox10:GFP transgenic embryos were treated at 2 ss and mounted for imaging at 15 ss. Embryos were imaged for 12 hr, and images were collected every 10 min.
 
 We further evaluated the effect of CAPE on xanthophores and iridophores at 3 dpf. We found that CAPE reduces iridophore number, size, and pigmentation, though this effect was not as dramatic as the effect of CAPE on melanocytes (Figure 4—figure supplement 1A,B). As for melanocytes, we saw an increase in the fraction of dorsal iridophores, but this effect was again less pronounced than the melanocyte position defect (Figure 2D, Figure 4—figure supplement 1C). Though we saw reduced fms expression at 24 hpf, we found that by 3 dpf, xanthophores had recovered. CAPE-treated embryos in fact showed more intense yellow pigmentation that control embryos, particularly in the head (Figure 4—figure supplement 1A). These data indicate that CAPE treatment has selective effects on different pigment cell lineages.
 
 Since Sox10 plays an important role in otic placode development, we evaluated the effect of CAPE on the otic vesicle at 24 and 48 hpf (Dutton et al., 2009). We found that CAPE causes a subtle defect in otic vesicle shape at 24 hpf. At 48 hpf, CAPE-treated embryos lack semicircular canal projections and have more closely spaced otoliths (Figure 4—figure supplement 2). These defects are consistent with a reduction in Sox10 activity, since they have been observed in sox10 mutants (Dutton et al., 2009).
 
-## Inhibition of Akt signaling contributes to CAPE-induced defects in neural crest development
+### Inhibition of Akt signaling contributes to CAPE-induced defects in neural crest development
 
 CAPE has previously been reported to inhibit Akt signaling in melanoma cell lines by inhibition of PI3K activity (Pramanik et al., 2013). In addition to CAPE, we identified the PI3K inhibitors PI-103 and GDC-0941 as strong hits in our screen and confirmed that they specifically reduce crestin:EGFP+ cell number in a dose-responsive manner (Figure 5—figure supplement 1A). To determine whether inhibition of Akt signaling might contribute to the effects of CAPE on the zebrafish neural crest, we overexpressed constitutively active, membrane-targeted human Akt1 (myr-Akt1) in zebrafish embryos by RNA microinjection. Injection of myr-Akt1 increased Akt phosphorylation independent of CAPE treatment and rescued crestin expression in CAPE-treated embryos (Figure 5A–C). Myr-Akt1 injection also partially rescued both melanocyte number and melanocyte migration at 2 dpf (Figure 5D–F). Defects such as pericardial edema and curved tail showed a slight but consistent decrease with myr-Akt1 injection (Figure 5—figure supplement 1B). Overall these data indicate that inhibition of Akt signaling contributes to CAPE’s effects on both gene expression and migration of neural crest cells.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig5-v2.jpg)
+
+**Figure 5.:** (A) Injection of myr-Akt1 RNA results in high phospho-Akt in heterogeneous neural crest cultures regardless of CAPE treatment. The same result was observed in four independent experiments. (B) Scoring system for crestin in situ hybridization. (C) Myr-Akt1 injection increases crestin expression in CAPE-treated embryos. Each point represents the average score of embryos from a single clutch (23–66 embryos per clutch). Three independent experiments are shown. (D) Morphology and pigmentation of CAPE-treated and injected embryos at 2 dpf. Images are representative of three independent experiments. (E) Myr-Akt1 increases melanocyte number in CAPE-treated embryos. Trunk melanocytes were counted as in Figure 4. Each point represents one embryo from the same clutch; bars indicate mean. (F) Myr-Akt1 reduces the fraction of dorsal melanocytes in CAPE-treated embryos. *p<0.05, **p<0.005, (C) paired t-test, (E–F) unpaired t-test. Figure 5—figure supplement 1 shows the effect of PI3K inhibitors on crestin:EGFP expression in vitro and the effect of myr-Akt1 on CAPE-induced embryonic defects.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) PI3K inhibitors selectively reduce crestin:EGFP+ cells compared to ubi:mCherry+ controls representing a random population of cells. Cells were plated with the indicated concentration of inhibitor and cultured for 24 hr. (B) Myr-Akt1 injection slightly reduces CAPE-induced defects. 23–30 embryos were analyzed per condition from the same injection.
+
 To more precisely elucidate the mechanism of Akt inhibition by CAPE, we returned to the in vitro culture system we used for chemical screening. This system provides an opportunity to control chemical cues received by prospective neural crest cells. In addition to FBS, which contains unknown factors required for neural crest induction in vitro, two growth factors in the culture medium promoted neural crest induction: FGF2 and insulin (Figure 6A,B). We studied two pathways known to be activated downstream of these factors: PI3K/Akt and Mek/Erk. We found that while insulin primarily activated Akt, FGF primarily activated Erk (Figure 6C,D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig6-v2.jpg)
+
+**Figure 6.:** Embryos were plated in neural crest medium and cultured for 2 hr for western blotting. (A) Heterogeneous neural crest cultures after 24 hr in neural crest medium with or without FGF and insulin. Scale bar: 100 μm. Images are representative of three independent experiments. (B) Quantification of crestin:EGFP+ cells for (A). Number of cells was determined by thresholding and normalized to ubi:mCherry fluorescence representing total cell number. Mean and standard deviation of at least 4 wells is shown. (C) Ratio of phosphorylated to total Akt. Each point represents an independent experiment corresponding to color. Samples were normalized within an experiment so that p-Akt to Akt ratio with FGF and insulin but without CAPE (condition 5) had a value of 1. Insulin but not FGF stimulation leads to Akt phosphorylation. CAPE inhibits Akt only in FGF-stimulated cells. (D) Ratio of phosphorylated to total Erk. Values were normalized as in (C). FGF but not insulin stimulation leads to Erk phosphorylation. ‡ no signal detected *p<0.05, **p<0.005, ***p<0.0005, paired t-test. Figure 6—figure supplement 1 shows a model for CAPE’s mechanism of action based on the effects of a Mek inhibitor (CI-1040) and a PI3K inhibitor (PI-103) on Akt and Erk phosphorylation. Figure 6—figure supplement 2 shows the effect of RTK inhibitors on crestin expression in vivo.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Whole embryos were cultured for two hours in neural crest medium with the indicated growth factors and inhibitors for all experiments. Unless otherwise noted, cultures contained insulin and FGF. CI-1040 was used to inhibit Mek (10 μM), and PI-103 (5 μM) was used to inhibit PI3K. Blots are representative of three independent experiments. (A) Mek inhibition leads to increased Akt phosphorylation. FGF stimulates Akt phosphorylation only in the context of Mek inhibition. Mek inhibition more strongly stimulates Akt phosphorylation with FGF stimulation. (B) PI-103 prevents p-Akt induction upon Mek inhibition, but CAPE does not. (C) PI3K inhibition reduces phospho-Akt regardless of FGF stimulation. (D) Model for CAPE’s mechanism of action based on data in (A–C). FGF stimulation acts like a pendulum that swings between Akt activation and Erk activation. (E) CAPE reduces crestin expression regardless of pten status based on ISH and scoring system in Figure 5B. All embryos were ptenb -/- and ptena genotypes are indicated. The sum of two independent experiments is shown.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Treatment of embryos with Chembridge novel kinase inhibitors at 2 ss decreases crestin expression at 15 ss. (B) Quantification of crestin expression in drug-treated embryos based on the scoring system in (A). The combined results of two independent experiments are shown. **p<0.0005, chi-square test (C) Structures of Chembridge kinase inhibitors. (D) Receptor tyrosine kinase inhibitors that had no effect on crestin expression. Chemicals were tested up to 100 μM.
 
 Surprisingly, we found that CAPE inhibited Akt phosphorylation only in the presence of FGF, even though FGF itself did not promote Akt activation (Figure 6C, Figure 6—figure supplement 1A). This was not true for the PI3K inhibitor PI-103 that prevented Akt phosphorylation regardless of FGF stimulation (Figure 6—figure supplement 1C). We hypothesized that the apparent lack of Akt stimulation by FGF could be explained by Akt inhibition by another pathway. Addition of a Mek inhibitor to the cultures resulted in a dramatic increase in p-Akt, leading us to postulate that Mek/Erk negatively regulates PI3K/Akt (Figure 6—figure supplement 1A, last two lanes). In the context of Mek inhibition, we saw that FGF activated Akt to a similar extent as insulin (Figure 6—figure supplement 1A, first three lanes). FGF treatment enhanced the ability of Mek inhibition to stimulate p-Akt (Figure 6—figure supplement 1A, compare lanes 4 and 6). Mek inhibition also blunted the ability of CAPE to reduce p-Akt (Figure 6—figure supplement 1B, compare lanes 2 and 6). Finally, the induction of p-Akt by Mek inhibition was PI3K-dependent, since it was blocked by a PI3K inhibitor (Figure 6—figure supplement 1B, lanes 1–4). These observations led us to formulate a model in which FGF modulates Akt activation through a mechanism distinct from insulin-stimulated Akt activation and sensitive to CAPE activity (Figure 6—figure supplement 1D). Since the phosphorylation of membrane-targeted Akt1 (myr-Akt1) is not affected by CAPE, CAPE acts upstream of Akt membrane recruitment by PIP3 (Figure 5A). CAPE could function through inhibition of PI3K or activation of Pten, a negative regulator of PIP3. We ruled out the latter hypothesis, since CAPE had the same effect on crestin expression in wild type or ptena-/-;ptenb-/- embryos (Figure 6—figure supplement 1E).
 
 While FGF2 and insulin were used to induce neural crest in culture, we asked what growth factors regulate neural crest development in vivo. Many kinase inhibitors scored as hits in our initial screen, including two chemicals from the Chembridge KINAcore library that were generated as structural analogs to receptor tyrosine kinase (RTK) inhibitors. These two chemicals also decreased crestin expression in vivo, while EGFR, FGFR, insulin-like growth factor receptor, and insulin receptor inhibitors had no effect when added at 2 ss (Figure 6—figure supplement 2). Importantly we tested SU5402, an FGFR inhibitor with demonstrated activity in zebrafish embryos (Molina et al., 2007). This data suggests that a growth factor other than FGF activates Akt in neural crest cells in vivo.
 
-## Akt signaling regulates neural crest gene expression in vivo
+### Akt signaling regulates neural crest gene expression in vivo
 
 To confirm that Akt activation plays a role in zebrafish neural crest development, we expressed constitutively active human PTEN-mCherry fusion (PTEN S370A, S380A, T382A, T383A, S385A or PTEN QMA) in crestin:EGFP transgenic zebrafish embryos (Gil et al., 2006; Stumpf et al., 2016). After sorting embryos based on mCherry fluorescence at 24 hpf, we found that PTEN QMA-mCherry decreases both phospho-Akt and crestin:EGFP expression (Figure 7A–C). We found a similar decrease in crestin expression by ISH (Figure 7D). The PI3K inhibitor LY294002 also decreased crestin:EGFP expression in vivo in a dose responsive manner (Figure 7E). Similar to CAPE treatment, we found that co-injection of PTEN QMA prevented sox10 from stimulating crestin:EGFP expression (Figure 7F–G). These data support a role for Akt activation in Sox10-dependent neural crest gene transcription.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/29145/elife-29145-fig7-v2.jpg)
 
-**Figure 7.:** (A) PTEN QMA-mCherry (300 pg) reduces phospho-Akt level in whole embryos. (B) Morphology, PTEN QMA-mCherry expression, and crestin:EGFP expression of PTEN QMA-mCherry injected embryos. Scoring system for crestin:EGFP levels is indicated. (C) Quantification based on scoring in (B). Each point represents a single clutch (5–53 embryos per condition), and mean is indicated. One clutch generated less than 5 PTEN QMA-mCherry low embryos and is not shown. *p<0.01, Student’s t-test (D) PTEN QMA-mCherry decreases crestin expression by ISH. Embryos were scored as in Figure 5B. Average score normalized to uninjected control is indicated. Error bars represent SEM of four clutches (7–28 embryos per condition) from three independent experiments. One clutch was excluded because of abnormally low staining in both control and injected embryos. (E) The PI3K inhibitor LY294002 decreases crestin:EGFP expression. Points indicate the average of two independent experiments. (F) PTEN QMA-mCherry prevents Sox10 from stimulating crestin:EGFP expression. Representative embryos from the same clutch are shown. (G) Three clutches (8–19 embryos per condition) from two independent experiments were scored as in (B).10.7554/eLife.29145.053Figure 7—source data 1.crestin:EGFP expression in PTEN QMA-mCherry-injected embryos.10.7554/eLife.29145.054Figure 7—source data 2.crestin expression by ISH in PTEN QMA-injected embryos.10.7554/eLife.29145.055Figure 7—source data 3.crestin:EGFP expression in LY294002-treated embryos.10.7554/eLife.29145.056Figure 7—source data 4.crestin:EGFP in sox10- and PTEN-injected embryos.
+**Figure 7.:** (A) PTEN QMA-mCherry (300 pg) reduces phospho-Akt level in whole embryos. (B) Morphology, PTEN QMA-mCherry expression, and crestin:EGFP expression of PTEN QMA-mCherry injected embryos. Scoring system for crestin:EGFP levels is indicated. (C) Quantification based on scoring in (B). Each point represents a single clutch (5–53 embryos per condition), and mean is indicated. One clutch generated less than 5 PTEN QMA-mCherry low embryos and is not shown. *p<0.01, Student’s t-test (D) PTEN QMA-mCherry decreases crestin expression by ISH. Embryos were scored as in Figure 5B. Average score normalized to uninjected control is indicated. Error bars represent SEM of four clutches (7–28 embryos per condition) from three independent experiments. One clutch was excluded because of abnormally low staining in both control and injected embryos. (E) The PI3K inhibitor LY294002 decreases crestin:EGFP expression. Points indicate the average of two independent experiments. (F) PTEN QMA-mCherry prevents Sox10 from stimulating crestin:EGFP expression. Representative embryos from the same clutch are shown. (G) Three clutches (8–19 embryos per condition) from two independent experiments were scored as in (B).
 
 ## Discussion
 
@@ -114,43 +576,170 @@ Our data suggests that CAPE treatment and inhibition of Akt signaling block neur
 
 ## Materials and methods
 
-## Zebrafish husbandry and strains
+### Zebrafish husbandry and strains
 
 Zebrafish were maintained under standard protocols approved by the Boston Children’s Hospital (BCH) Institutional Animal Care and Use Committee (IACUC). Unless indicated otherwise, AB strain embryos were used for all experiments. Additional zebrafish strains included crestin_1 kb:EGFP (referred to as crestin:EGFP here) (Kaufman et al., 2016) (RRID:ZFIN_ ZDB-TGCONSTRCT-160208–1), crestin_296bp:EGFP (Kaufman et al., 2016) (RRID:ZFIN_ ZDB-TGCONSTRCT-160208–2), sox10:GFP (Curtin et al., 2011) (RRID:ZFIN_ ZDB-ALT-110411–1), sox10:Kaede (Dougherty et al., 2012) (RRID:ZFIN_ ZDB-FISH-150901–26827), mitfa:GFP (Curran et al., 2009) (RRID:ZFIN_ ZDB-FISH-150901–12193), ubi:mCherry (Mosimann et al., 2011) (RRID:ZFIN_ ZDB-ALT-110317–3), and casper (White et al., 2008) (RRID:ZFIN_ ZDB-FISH-150901–6638, ptena-/-ptenb-/- (Faucherre et al., 2008) (RRID:ZFIN_ ZDB-FISH-150901–12142). Zebrafish embryos were staged according to (Kimmel et al., 1995).
 
-## Heterogeneous neural crest cell culture
+### Heterogeneous neural crest cell culture
 
 Crestin:EGFP; ubi:mCherry transgenic zebrafish embryos were grown to the 5 somite stage, decontaminated in 0.05% bleach for 2 min, and dechorionated in 2.5 mg/ml pronase for 5 min. Embryos were then mechanically homogenized in neural crest medium using a rotor-stator homogenizer (Omni TH) at 5000 rpm for 10 s. Neural crest medium consisted of a base medium of DMEM/F12 with L-glutamine and 2.438 g/l sodium bicarbonate (Invitrogen #11320) supplemented with 12% FBS, 1% N2 supplement (Invitrogen #17502), 20 μg/ml insulin (Gemini Bioproducts #700–112P), 20 ng/ml FGF2 (R and D Systems #233-FB-025/CF), 20 ng/ml EGF (R and D Systems #236-EG-200), and 0.2% Primocin (InVivoGen). Embryos were plated at a density of 0.6–1 embryos per 0.1 cm2 (1 well of a 384 well plate) on standard tissue culture-coated plates and cultured for 24–48 hr under 5% CO2 at 28.5°C. N2 was excluded for short term (2 hr) cultures to test the effects of growth factor stimulation since it contains insulin.
 
-## In vitro immunofluorescence, EdU staining, and migration speed measurement
+### In vitro immunofluorescence, EdU staining, and migration speed measurement
 
 EdU staining was conducted using the Click-iT EdU Flow Cytometry Assay Kit (Invitrogen). Zebrafish embryonic cells were plated on collagen, allowed to attach for 24 hr, and treated with 10 μM EdU for 4 hr. Cells were then fixed in 2% PFA for 30 min at RT, permeabilized in 0.5% Triton-X100/PBS, and blocked in 5% lamb serum in 0.1% Triton X-100/PBS for 1 hr at RT. Cells were incubated with primary antibody (AnaSpec anti-GFP #55423, 1:500) in blocking buffer overnight. Cells were washed 4 times and incubated for 2 hr at RT in secondary antibody (Alexa Fluor 488 goat anti-chicken, 1:2000). Cells were washed once, and the Click-iT reaction was performed with Alexa Fluor 647 azide. Cell speed was determined using time lapse fluorescence microscopy of crestin:EGFP+ and ubi:mCherry+ cells with images acquired every 2 min. The center of each cell was manually tracked using ImageJ over a period of 4 hr, and the sum of distances migrated per frame was divided by total imaging time.
 
-## Quantitative PCR
+### Quantitative PCR
 
 RNA was isolated using the RNeasy Plus Mini Kit (Qiagen) according to the manufacturer’s instructions. RNA was quantified by absorbance at 260 nm and a standard amount was used as input to an iScript reverse transcriptase reaction (Bio-Rad). The product of this reaction was used for quantitative PCR at a maximum volume of 1 μl per 10 μl final reaction volume. Quantitative PCR was conducted using SsoFast EvaGreen Supermix (Bio-Rad) and run on a CFX384 Real-Time System/C1000 Thermal Cycler (Bio-Rad). Reactions were conducted in triplicate and normalized to β-actin. For each gene, the sample with the highest expression was assigned a value of 1 and other samples were normalized accordingly. Primer sequences are displayed in Table 2.
 
-## Intradermal cell transplantation
+**Table 2.**
+ Primer sequences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Use</th>
+      <th>Gene</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>qPCR</td>
+      <td>bactin1</td>
+      <td>CGAGCAGGAGATGGGAACC</td>
+      <td>CAACGGAAACGCTCATTGC</td>
+      <td>(McCurley and Callard, 2008)</td>
+    </tr>
+    <tr>
+      <td>qPCR</td>
+      <td>sox10</td>
+      <td>ATATCCGCACCTGCACAA</td>
+      <td colspan="2">CGTTCAGCAGTCTCCACAG</td>
+    </tr>
+    <tr>
+      <td>qPCR</td>
+      <td>crestin</td>
+      <td>AGTGCCTGCCAATGTTCAC</td>
+      <td colspan="2">CTGAAAAAGGCCGATGAGTT</td>
+    </tr>
+    <tr>
+      <td>qPCR</td>
+      <td>foxd3</td>
+      <td>CATGCAAAACAAGCCCAAG</td>
+      <td colspan="2">ATGAGGGCGATGTACGAGTAG</td>
+    </tr>
+    <tr>
+      <td>qPCR</td>
+      <td>mitfa</td>
+      <td>GGCGGTTTAATATCAATGACAGA</td>
+      <td colspan="2">GGTGCCTTTATTCCACCTCA</td>
+    </tr>
+    <tr>
+      <td>qPCR</td>
+      <td>neurog1</td>
+      <td>CGTGCCATTATCTTCAACACA</td>
+      <td colspan="2">CGATCTCCATTGTTGATAACCTT</td>
+    </tr>
+    <tr>
+      <td>qPCR</td>
+      <td>myf5</td>
+      <td>GCTACAACTTTGACGCACAAAA</td>
+      <td colspan="2">CACGATGCTGGACAAACACT</td>
+    </tr>
+    <tr>
+      <td>qPCR</td>
+      <td>runx1</td>
+      <td>CGTCTTCACAAACCCTCCTCAA</td>
+      <td colspan="2">GCTTTACTGCTTCATCCGGCT</td>
+    </tr>
+    <tr>
+      <td>ISH</td>
+      <td>tfap2a</td>
+      <td>TAATACGACTCACTATAGGGAATCT TCACAGATGTTAGTGCACAGTTTTTCCGCGAT</td>
+      <td colspan="2">AATTAACCCTCACTAAAGGTCAC TTTCTGTGCTTCTCATCTT</td>
+    </tr>
+    <tr>
+      <td>ISH</td>
+      <td>tfap2c</td>
+      <td>TAATACGACTCACTATAGGGACAG AAACAACATGTTGTGGAAATTAGCAGATAA</td>
+      <td colspan="2">AATTAACCCTCACTAAAGGTCA CTTTCGGTGTTTGTCCATCTT</td>
+    </tr>
+    <tr>
+      <td>ISH</td>
+      <td>inka1a</td>
+      <td>AATTAACCCTCACTAAAGGG GAATCGGGTGACTGTCTGC</td>
+      <td colspan="2">TAATACGACTCACTATAGGGATGG GTGTTCTGCTCCCAG</td>
+    </tr>
+    <tr>
+      <td>ISH</td>
+      <td>dlx2a</td>
+      <td>AATTAACCCTCACTAAAGGACAA CAGCATGAACAGCGTC</td>
+      <td colspan="2">TAATACGACTCACTATAGGGACAGGC GCATGAAACACAT</td>
+    </tr>
+    <tr>
+      <td>ISH</td>
+      <td>pax7a</td>
+      <td>AATTAACCCTCACTAAAGGAGAA CTACCCACGAACCGGA</td>
+      <td colspan="2">TAATACGACTCACTATAGGTTGATC TGTGAAGCGTGCTG</td>
+    </tr>
+    <tr>
+      <td>ISH</td>
+      <td>myca</td>
+      <td>TAATACGACTCACTATAGGGCAAG TGTCAAAATGCCGGTGAGTGCGAGTTTGGCGT</td>
+      <td colspan="2">AATTAACCCTCACTAAAGGTTAATGTG AACTCCGCAGCTGCTGAA</td>
+    </tr>
+    <tr>
+      <td>ISH</td>
+      <td>ets1</td>
+      <td>TAATACGACTCACTATAGGGTGTA CGTTTGAATGCGTGACCATGACGGCAGCTGT</td>
+      <td colspan="2">AATTAACCCTCACTAAAGGTCAGGAGC TCCAACAGGAACTGCCAGA</td>
+    </tr>
+    <tr>
+      <td>ISH</td>
+      <td>nr2f2</td>
+      <td>TAATACGACTCACTATAGGGTAGATATGGC AATGGTAGTGTGGAGAGGCTCCCA</td>
+      <td colspan="2">AATTAACCCTCACTAAAGGCTACTGAAT CGACATATAAGGCCAGTT</td>
+    </tr>
+    <tr>
+      <td>ISH</td>
+      <td>msx1b</td>
+      <td>TAATACGACTCACTATAGGGGATGGTTAA CGATGAATTCTCCTAAGGGACCCGTT</td>
+      <td colspan="2">AATTAACCCTCACTAAAGGTTAAGAC AAATAATACATCCCATA</td>
+    </tr>
+    <tr>
+      <td>ISH</td>
+      <td>dlx5a</td>
+      <td>TAATACGACTCACTATAGGGTTATCCAA ACTATGACTGGAGTATTCGACAGAAGGA</td>
+      <td colspan="2">AATTAACCCTCACTAAAGGTCAGTACAAC GTTCCTGATCCGAGTGCCAA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Intradermal cell transplantation
 
 Heterogeneous neural crest cell cultures were sorted for DAPI negative, crestin:EGFP+ cells and resuspended in PBS at a concentration of 10,000 cells/μl. Cell suspension was loaded into a glass syringe with a 33 gauge needle (Hamilton), and 0.5 μl was injected underneath a scale on the dorsal flank of a casper fish irradiated with 15 Gy per day for two consecutive days. Transplants were conducted on the third day.
 
-## Chemical screening and hit determination
+### Chemical screening and hit determination
 
 Embryos were plated with chemicals at 5 ss in 384-well plates as described in heterogeneous NC cultures. Cells were cultured for 1 day, Hoechst 33342 was added at a final concentration of 0.3 μg/ml, and wells were imaged in red, green, and blue channels on a Nikon Eclipse Ti Spinning Disk Confocal. Chemicals libraries included LOPAC1280, a custom bioactives library, FDA-approved drugs, and Chembridge KINAcore and NHRcore libraries. Chemicals were screened in triplicate at two concentrations depending on the library. Hits were identified based on deviation from plate controls in two values: ratio of crestin:EGFP+/ubi:mCherry+ cells and crestin:EGFP+/total nuclei. All hits were verified by eye.
 
-## Chemical treatment of zebrafish embryos
+### Chemical treatment of zebrafish embryos
 
 Unless otherwise indicated, embryos were treated at 2 ss. To reach this time point, embryos fertilized in the morning were either incubated at 28.5°C for 12 hr or 23°C for the first 6 hr of development, then transferred to 19°C overnight. Embryos fertilized in the afternoon were incubated at 23°C overnight. Chemical stocks were maintained in DMSO, resulting in a final concentration of no more than 0.3% DMSO in E3 embryo medium. Embryos at a maximum density of 20/well were treated in 24 well plates in 1 ml of chemical solution at 28.5°C protected from light. CAPE was obtained from Tocris (cat #2743) and used at a concentration of 10 μM unless otherwise indicated.
 
-## Fluorescence activated cell sorting
+### Fluorescence activated cell sorting
 
 Cell sorting was conducted on a BD FACSAria IIu using a nozzle diameter of 80 μm. For whole embryo FACS, embryos were mechanically homogenized in FACS buffer (2% FBS in PBS), passed through a 40 μm cell strainer and kept on ice until sorting. DAPI was added at a final concentration of 1 μg/ml to distinguish live from dead cells. Cells were collected in media or FACS buffer and kept on ice until further analysis. For crestin:EGFP sorting, the ratio of GFP to PE signal was used to distinguish autofluorescence from GFP fluorescence.
 
-## Imaging of zebrafish embryos
+### Imaging of zebrafish embryos
 
 Epifluorescence and bright field images were obtained using a Zeiss Discovery V.8 Stereoscope with an Axiocam HRc. Confocal microscopy of flat-mounted embryos was conducted on a Nikon C2si Laser Scanning Confocal. Time lapse confocal microscopy of live embryos was conducted on a Nikon Eclipse Ti Spinning Disk Confocal. Embryos were mounted on 6 well imaging plates in 0.8% low melting point agarose containing 0.003% 1-phenyl-2-thiourea (PTU) to prevent pigmentation, 1.6 μg/ml tricaine (MS-222) to immobilize fish, and the relevant concentration of CAPE. Embryos were maintained at 28.5°C during imaging.
 
-## Whole mount in situ hybridization, immunofluorescence, and TUNEL
+### Whole mount in situ hybridization, immunofluorescence, and TUNEL
 
 Whole mount in situ hybridization was conducted as described (Tallquist and Soriano, 2003; Thisse and Thisse, 2008; Liu et al., 2002). The following probes were generated from established plasmids: crestin (Rubinstein et al., 2000), pax3 (Seo et al., 1998), foxd3, sox10, and snai1b (Thisse et al., 1995). Plasmid templates were linearized using an appropriate restriction enzyme and PCR purified prior to in vitro transcription. Other in situ probes were generated from PCR products containing a T7 promoter: tfap2a, tfap2c, inka1a, dlx2a, pax7a, myca, ets1, nr2f2, msx1b, dlx5a. See Table 2 for primer sequences. RNA was isolated from 17 ss embryos using the RNeasy Plus Mini Kit (Qiagen). A cDNA library was synthesized using the SuperScript III First Strand Synthesis System (Invitrogen). PCR was conducted using Phusion High-Fidelity DNA Polymerase (NEB), and products were purified prior to in vitro transcription with the following components: Roche Dig 11277073910, BCIP/NBT S3771, Roche T3 or T7 polymerase, RNaseIn (Promega).
 
@@ -158,22 +747,22 @@ For whole mount immunofluorescence, zebrafish embryos were fixed in 4% PFA overn
 
 Whole mount TUNEL was conducted after crestin in situ hybridization using the ApopTag Peroxidase In Situ Apoptosis Detection Kit (EMD Millipore) with extended incubation times. Signal was visualized with SIGMAFAST 3,3-Diaminobenzidine tablets (Sigma).
 
-## RNA-seq
+### RNA-seq
 
 Total RNA was extracted from sorted sox10:GFP+ cells using Trizol LS according to the manufacturer's instructions. Libraries were prepared using the Ribogone kit (Clontech) and the SMARTer Universal Low RNA Kit (Clontech) according to the manufacturer’s instructions. Libraries were analyzed on a Fragment Analyzer (Advanced Analytical) and quantified using the Qubit (Invitrogen) prior to sequencing on the Illumina HiSeq 2500. Quality control of RNA-Seq datasets was performed by FastQC and Cutadapt to remove adaptor sequences and low quality regions. The high-quality reads were aligned to UCSC build danRer7 of the zebrafish genome using Tophat 2.0.11 without novel splicing form calls. Transcript abundance and differential expression were calculated with Cufflinks 2.2.1. FPKM values were used to normalize and quantify each transcript.
 
-## Plasmids
+### Plasmids
 
 Myr-Akt1 was a gift from William Sellers (Addgene plasmid #9008) (Ramaswamy et al., 1999). pCSDest was a gift from Nathan Lawson (Addgene plasmid # 22423). PTEN QMA-mCherry was from Stumpf et al., 2016.
 
-## Western blotting
+### Western blotting
 
 Cultured cells were collected on ice, pelleted at 500 rcf for 3 min at 4°C, washed once with ice-cold PBS, and lysed in RIPA buffer containing protease and phosphatase inhibitors. Embryos were dechorionated, deyolked on ice in 55 mM NaCl, 1.8 mM KCl, 1.3 mM NaHCO3, centrifuged at 500 rcf for 3 min at 4°C, and washed once in 110 mM NaCl, 3.5 mM KCl, 2.7 mM CaCl2, 10 mM Tris pH 8.5 prior to lysis as for cultured cells. Lysate was centrifuged at 20,000 rcf for 10 min and the supernatant was collected for analysis of protein concentration with the DC Protein Assay (Bio-Rad). Samples were boiled in Laemelli buffer before loading of 10 μg protein per well of a 4–20% polyacrylamide gel. Protein was transferred to a PVDF membrane using the iBlot dry blotting system (Invitrogen), blocked in 5% milk in TBS with 0.1% Tween 20, and incubated in primary antibody in 5% BSA overnight at 4°C. Blots were washed, incubated in horse radish peroxidase (HRP)-conjugated secondary antibody for 1 hr at room temperature, washed again, and developed using Amersham ECL Prime Western Blotting Detection Reagent (GE Healthcare) or Pierce ECL Western Blotting Reagent (Thermo Fisher Scientific). Antibodies were obtained from Cell Signaling: Erk (#9102, RRID:AB_330744, 1:1000), Akt (#9272, RRID:AB_329827, 1:1000), phospho-Akt (#9271, RRID:AB_329825, 1:1000), phospho-Erk (#9101, RRID:AB_331646, 1:1000), GAPDH (#2118, RRID:AB_561053, 1:2000), HRP-linked anti-rabbit IgG (#7074, RRID:AB_2099233, 1:2000).
 
-## RNA microinjection
+### RNA microinjection
 
 Constructs were cloned into pCSDest (Villefranc et al., 2007), linearized, transcribed using the Ambion mMessage mMachine SP6 Kit (Thermo Fisher Scientific), and purified with the RNeasy MinElute RNA Cleanup Kit (Qiagen). RNA was quantified based on absorbance at 260 nm and injected with 0.1% phenol red into 1–2 cell embryos in a volume of 1–2 nl.
 
-## ATAC-seq
+### ATAC-seq
 
 Cells (12,000–40,000) were pelleted at 500 rcf for 5 min at 4°C, washed once in ice cold PBS, and permeabilized in 10 mM Tris-HCl pH 7.4, 10 mM NaCl, 3 mM MgCl2, 0.1% IGEPAL CA-360. Libraries were prepared using the Nextera DNA Preparation Kit (Illumina) with a transposase reaction time of 30–45 min and purified with the MinElute PCR Purification Kit (Qiagen). Quantitative PCR was used to estimate the total number of cycles needed for library amplification. Libraries were analyzed on a Fragment Analyzer (Advanced Analytical) and quantified using the Qubit (Invitrogen) prior to sequencing on the Illumina HiSeq 2500. ATAC-Seq datasets were aligned to UCSC build danRer7 of the zebrafish genome using Bowtie2 (version 2.2.1) with the following parameters: --end-to-end, -N0, -L20. We used the MACS2 version 2.1.0 peak finding algorithm to identify regions of ATAC-Seq peaks, with the following parameter --nomodel --shift −100 --extsize 200. A q-value threshold of enrichment of 0.05 was used for all datasets. HOMER was used for peak motif analysis (RRID:SCR_010881).

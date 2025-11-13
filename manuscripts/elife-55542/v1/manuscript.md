@@ -34,37 +34,77 @@ In this work, we show that V2 from TYLCV interacts with the central RdDM compone
 
 ## Results
 
-## V2 from TYLCV interacts with AGO4 from Nicotiana benthamiana and tomato
+### V2 from TYLCV interacts with AGO4 from Nicotiana benthamiana and tomato
 
 With the aim of gaining insight into the functions of V2 from TYLCV in the plant cell, we used transient expression of GFP-tagged V2 in infected leaf patches of N. benthamiana followed by affinity purification and mass spectrometry (AP-MS) to identify plant interactors of this viral protein in the context of the infection (Wang et al., 2017a). Interestingly, we identified the two AGO4 paralogs in N. benthamiana (NbAGO4-1 and NbAGO4-2) as associated to V2-GFP (Figure 1A; Wang et al., 2017a); these interactions were confirmed by co-immunoprecipitation (co-IP) and split-luciferase assays (Figure 1B,C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig1-v1.jpg)
 
-**Figure 1.:** N. benthamiana.(A) Unique peptide count, protein coverage, and best Mascot Score of NbAGO4-1 and NbAGO4-2 co-immunoprecipitated with V2-GFP, as identified by affinity purification followed by mass spectrometry (AP-MS). Results from three independent biological repeats are shown. "-” indicates no peptide was detected. (B) 3xHA-NbAGO4-1 and 3xHA-NbAGO4-2 specifically interact with V2-GFP in co-immunoprecipitation (co-IP) assays upon transient expression in N. benthamiana. Free GFP was used as negative control. CBB, Coomassie brilliant blue staining. Three independent biological replicates were performed with similar results. (C) NbAGO4-1 and NbAGO4-2 interact with V2 in split-luciferase assays. V2-N-luc and C-luc-NbAGO4-1/2 were transiently co-expressed in N. benthamiana; C-luc-SlWRKY75 is used as negative control. The luciferase bioluminescence from at least three independent leaves per experiment was imaged 2 days after infiltration. The average bioluminescence, measured in counts per second (cps), as well as an image of a representative leaf are shown. Values represent the mean of three independent biological replicates; error bars indicate SEM. Asterisks indicate a statistically significant difference (according to Student’s t-test, **: p<0.01, ***: p<0.001) compared to the negative control.
+**Figure 1.:** (A) Unique peptide count, protein coverage, and best Mascot Score of NbAGO4-1 and NbAGO4-2 co-immunoprecipitated with V2-GFP, as identified by affinity purification followed by mass spectrometry (AP-MS). Results from three independent biological repeats are shown. "-” indicates no peptide was detected. (B) 3xHA-NbAGO4-1 and 3xHA-NbAGO4-2 specifically interact with V2-GFP in co-immunoprecipitation (co-IP) assays upon transient expression in N. benthamiana. Free GFP was used as negative control. CBB, Coomassie brilliant blue staining. Three independent biological replicates were performed with similar results. (C) NbAGO4-1 and NbAGO4-2 interact with V2 in split-luciferase assays. V2-N-luc and C-luc-NbAGO4-1/2 were transiently co-expressed in N. benthamiana; C-luc-SlWRKY75 is used as negative control. The luciferase bioluminescence from at least three independent leaves per experiment was imaged 2 days after infiltration. The average bioluminescence, measured in counts per second (cps), as well as an image of a representative leaf are shown. Values represent the mean of three independent biological replicates; error bars indicate SEM. Asterisks indicate a statistically significant difference (according to Student’s t-test, **: p<0.01, ***: p<0.001) compared to the negative control.
 
 There are four AGO4 orthologues in tomato (SlAGO4a-d) (Bai et al., 2012), the natural and economically relevant host of TYLCV (Figure 2A,B). All four SlAGO4-encoding genes are expressed in basal conditions in tomato leaves, although SlAGO4c and d show low expression levels; SlAGO4b, c, and d are slightly upregulated by TYLCV infection (Figure 2—figure supplement 1). SlAGO4a, SlAGO4b, and SlAGO4d were cloned and the encoded proteins confirmed as interactors of V2 in co-IP and split-luciferase assays (Figure 2C,D). Our results therefore show that V2 interacts with AGO4 in two host species, tomato and N. benthamiana.
 
-## V2 counters the AGO4-dependent methylation of the viral genome to promote virulence
+![Figure 2.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig2-v1.jpg)
+
+**Figure 2.:** (A) Phylogenetic tree of AtAGO4, NbAGO4, and SlAGO4 proteins. The phylogenetic analysis was performed with phylogeny.fr (Dereeper et al., 2010; Dereeper et al., 2008). (B) Pairwise identity and genetic distance matrix among AtAGO4, NbAGO4 and SlAGO4 proteins. The analysis was performed by Geneious (https://www.geneious.com). (C) 3xHA-SlAGO4a, 3xHA-SlAGO4b, and 3xHA-SlAGO4d specifically interact with V2-GFP in co-immunoprecipitation (co-IP) assays upon transient expression in N. benthamiana. Free GFP was used as negative control. CBB, Coomassie brilliant blue staining. Three independent biological replicates were performed with similar results. (D) SlAGO4a and SlAGO4b interact with V2 in split-luciferase assays. V2-N-luc and C-luc-SlAGO4a/b were transiently co-expressed in N. benthamiana; C-luc-SlWRKY75 is used as negative control. The luciferase bioluminescence from at least three independent leaves per experiment was imaged two days after infiltration. The average bioluminescence, measured in counts per second (cps), as well as an image of a representative leaf are shown. Values represent the mean of three independent biological replicates; error bars indicate SEM. Asterisks indicate a statistically significant difference (according to Student’s t-test, ***: p<0.001) compared to the negative control.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** SlAGO4a/b/c/d expression in TYLCV-infected or control (mock-inoculated) tomato plants at 3 weeks post-inoculation (wpi), as measured by qRT-PCR. Gene expression was normalized to SlActin. Values are the mean of three independent biological replicates; error bars indicate SEM.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Design of the V2 null TYLCV mutant used in this work. The second codon of the V2 ORF, originally encoding a Trp (TGG), is mutated to a STOP codon (TAG). (B) Representative pictures of tomato plants infected with TYLCV wild-type or V2 null mutant (TYLCV-V2null) or mock-inoculated. Photographs were taken at 3 weeks post-inoculation (wpi). Bar, 5 cm. (C) Height of tomato plants infected with TYLCV wild-type or V2 null mutant (TYLCV-V2null) or mock-inoculated at 3 wpi. Values are the mean of five independent biological replicates; error bars indicate SEM. (D) Viral (TYLCV) accumulation in tomato plants infected with TYLCV wild-type or V2 null mutant (TYLCV-V2null), or mock-inoculated at 3 wpi, measured by qPCR. Each sample corresponds to the apical leaves from six plants. The accumulation of viral DNA is normalized to the 25S ribosomal RNA interspacer (ITS). Values are the mean of six independent biological replicates; error bars indicate SEM. (E) Representative pictures of N. benthamiana plants infected with TYLCV wild-type or V2 null mutant (TYLCV-V2null) or mock-inoculated. Photographs were taken at 3 weeks post-inoculation (wpi). Bar, 5 cm. (F) Viral (TYLCV) accumulation in N. benthamiana plants infected with TYLCV wild-type or V2 null mutant (TYLCV-V2null) or mock-inoculated at 3 wpi, measured by qPCR. Each sample corresponds to the apical leaves from six plants. The accumulation of viral DNA is normalized to the 25S ribosomal RNA interspacer (ITS). Values are the mean of six independent biological replicates; error bars indicate SEM.
+
+### V2 counters the AGO4-dependent methylation of the viral genome to promote virulence
 
 In order to evaluate the contribution of V2 to the viral infection, we generated an infectious TYLCV clone carrying a G-to-A mutation in the fifth nucleotide of the V2 open reading frame (ORF), which converts the second codon (encoding tryptophan) to a stop codon (Figure 2—figure supplement 2), making it unable to produce the V2 protein (TYLCV-V2null). In agreement with previous results (Wartig et al., 1997), V2 is required for full infectivity in both tomato and N. benthamiana, since the V2 null mutant accumulates to very low levels and produces no noticeable symptoms in systemic infections (Figure 2—figure supplement 2).
 
 Next, we sought out to test whether knock-down of AGO4 could partially complement the lack of V2 during the TYLCV infection. For this purpose, we employed virus-induced gene silencing (VIGS) to silence both NbAGO4-1 and NbAGO4-2. VIGS efficiently knocked-down both NbAGO4 orthologues, but did not affect accumulation of the transcript of the close homologue NbAGO6 (Figure 3A); AGO4-silenced plants did not display any obvious developmental abnormalities (Figure 3B). Expression of NbAGO4-1 or NbAGO4-2 was not affected by TYLCV infection, neither in silenced nor in non-silenced plants (Figure 3C,D). Mutation in V2 does not affect viral replication (Wartig et al., 1997), and therefore viral accumulation in local infections in N. benthamiana (leaf patch agroinfiltration assays; see Figure 3—figure supplement 1) was not different between the wild-type virus and the V2 null mutant virus (Figure 3E); in both cases, AGO4 silencing led to a not statistically significant but reproducible trend to higher viral accumulation, suggesting an antiviral role for AGO4 (Figure 3E). Interestingly, in systemic infections (see Figure 3—figure supplement 1), AGO4 silencing mildly increased viral accumulation of the wild-type TYLCV (1.33-fold), but dramatically improved performance of the V2 null mutant virus (3.23-fold), suggesting that one of the main roles of V2 during the viral infection is the suppression of AGO4 function (Figure 3F).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig3-v1.jpg)
+
+**Figure 3.:** (A) Expression of NbAGO4-1, NbAGO4-2, and NbAGO6 in N. benthamiana plants infected with TRV-EV (empty vector) or TRV-NbAGO4, measured by reverse transcription quantitative real-time PCR (RT-qPCR). Gene expression was normalized to NbTubulin. Values are the mean of four independent biological replicates; error bars indicate SEM. Asterisks indicate a statistically significant difference according to Student’s t-test. **: p<0.01, ***: p<0.001, ns: not significant. (B) Representative pictures of N. benthamiana plants infected with the indicated combinations of viruses. Photographs were taken at 3 weeks post-inoculation (wpi). (C) NbAGO4-1 expression in NbAGO4-silenced plants and control plants infected with TYLCV, TYLCV-V2null, or mock-inoculated at 3 wpi measured by RT-qPCR. Gene expression was normalized to NbTubulin. Values are the mean of six independent biological replicates; error bars indicate SEM. Asterisks indicate a statistically significant difference according to Student’s t-test. *: p<0.05, **: p<0.01, ****: p<0.0001. (D) NbAGO4-2 expression in NbAGO4-silenced plants and control plants infected by TYLCV, TYLCV-V2null, or mock-inoculated at 3 wpi measured by RT-qPCR. Gene expression was normalized to NbTubulin. Values are the mean of six independent biological replicates; error bars indicate SEM. Asterisks indicate a statistically significant difference according to Student’s t-test. *: p<0.05, **: p<0.01, ***: p<0.001. (E) Viral (TYLCV) accumulation in local infections in NbAGO4-silenced or control plants, measured by qPCR. Infiltrated leaf patches from different plants were collected at 4 dpi. The experimental design is shown in Figure 3—figure supplement 1A. The accumulation of viral DNA is normalized to the 25S ribosomal RNA interspacer (ITS). Values are the mean of eight independent biological replicates; error bars indicate SEM. (F) Viral (TYLCV) accumulation in systemic infections in NbAGO4-silenced or control plants, measured by qPCR. Apical leaves from six plants were collected at 3 wpi. The experimental design is shown in Figure 3—figure supplement 1B. The accumulation of viral DNA is normalized to the 25S ribosomal RNA interspacer (ITS). Four independent biological replicates were performed with similar results; one representative result is shown. Values are the mean of six independent biological replicates; error bars indicate SEM. Asterisks indicate a statistically significant difference according to Student’s t-test. *: p<0.05, ***: p<0.001. The relative fold change of viral accumulation between NbAGO4-silenced plants and control plants is shown above each column.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Experimental design for local TYLCV infection assays. A. tumefaciens carrying the TRV-EV or TRV-NbAGO4 infectious clones were inoculated on 18-day-old N. benthamiana cotyledons. Two weeks later, young leaves were infiltrated with A. tumefaciens carrying the TYLCV infectious clone (wild-type or V2null) and leaf patches were collected at 3, 4, or 9 days post-inoculation (dpi). (B) Experimental design for systemic TYLCV infection assays. A. tumefaciens carrying the TRV-EV, TRV-NbAGO4, or TRV-Nbcoilin infectious clones were inoculated on 18-day-old N. benthamiana cotyledons. At the same time, A. tumefaciens carrying the TYLCV infectious clone (wild-type or V2null) were injected into plant stems. The top three leaves were collected at 3 weeks post-inoculation (wpi).
+
 In light of the role of AGO4 in RdDM and to directly assess the impact of V2 and AGO4 on the methyl-state of the viral DNA, we used bisulfite sequencing (BS-seq) to measure DNA methylation of the intergenic region (IR) of the viral genome, which presents the highest methylation levels during the infection (Piedra-Aguilera et al., 2019). As shown in Figure 4A, cytosine methylation in this region in all contexts (CG, CHG, and CHH) was almost undetectable in the wild-type viral genome in local infections at 3 or 9 days post-inoculation (dpi), while it reached ~60% and~80%, respectively, in the V2 null mutant (Figure 4A; Figure 4—figure supplement 1A; Supplementary file 1). These results indicate that V2 can prevent or revert methylation of the viral genome during the infection, which occurs rapidly in the absence of this protein.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig4-v1.jpg)
+
+**Figure 4.:** (A) Percentage of methylated cytosines in the intergenic region (IR) of TYLCV in local infection assays with TYLCV wild-type or V2 null mutant (TYLCV-V2null) in N. benthamiana at 3 or 9 days post-inoculation (dpi), as detected by bisulfite sequencing. The original single-base resolution bisulfite sequencing data are shown in Figure 4—figure supplement 1A. Values are the mean of three independent biological replicates; error bars indicate SEM. Asterisks indicate a statistically significant difference according to Student’s t-test. ***: p<0.001. The values of cytosine methylation in each biological replicate are shown in Supplementary file 1. (B) Percentage of methylated cytosines in the intergenic region (IR) of TYLCV in local infection assays with the V2 null mutant TYLCV (TYLCV-V2null) in AGO4-silenced (TRV-NbAGO4) or control (TRV-EV) N. benthamiana plants at 4 dpi, as detected by bisulfite sequencing. Samples come from the same plants used in Figure 3E. The original single-base resolution bisulfite sequencing data are shown in Figure 4—figure supplement 1B. Values are the mean of four independent biological replicates; error bars indicate SEM. Asterisks indicate a statistically significant difference according to Student’s t-test. *: p<0.05. The values of cytosine methylation in each biological replicate are shown in Supplementary file 1. (C) Percentage of methylated cytosines in the intergenic region (IR) of TYLCV in systemic infection assays with TYLCV wild-type or V2 null mutant (TYLCV-V2null) in AGO4-silenced (TRV-NbAGO4) or control (TRV-EV) N. benthamiana plants at 3 weeks post-inoculation (wpi), as detected by bisulfite sequencing. Samples come from the same plants used in Figure 3F. The original single-base resolution bisulfite sequencing data are shown in Figure 4—figure supplement 2. Values are the mean of four independent biological replicates; error bars indicate SEM. Asterisks indicate a statistically significant difference according to Student’s t-test. *: p<0.05. The values of cytosine methylation in each biological replicate are shown in Supplementary file 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Original single-base resolution bisulfite sequencing data for Figure 4A. At least five individual clones were sequenced per replicate and sample at 3 dpi, and >18 individual were sequenced per replicate and sample at 9 dpi. Each single circle, corresponding to a cytosine, is colored in blue, red, or green, representing the CHG, CG, or CHH contexts, respectively. Methylated cytosines are represented by filled circles, while unmethylated cytosines are represented by empty circles. Values of IR methylation in independent biological replicates is shown in Supplementary file 1. (B) Original single-base resolution bisulfite sequencing data for Figure 4B. At least seven individual clones were sequenced per sample at 4 dpi in the first replicate, and >15 individual clones were sequenced per sample at 4 dpi in replicates second to fourth. Each single circle, corresponding to a cytosine, is colored in blue, red, or green, representing the CHG, CG, or CHH contexts, respectively. Methylated cytosines are represented by filled circles, while unmethylated cytosines are represented by empty circles. Values of IR methylation in independent biological replicates are shown in Supplementary file 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Original single-base resolution bisulfite sequencing data for Figure 4C. >14 individual clones were sequenced per sample and replicate. Each single circle, corresponding to a cytosine, is colored in blue, red, or green, representing the CHG, CG, or CHH contexts, respectively. Methylated cytosines are represented by filled circles, while unmethylated cytosines are represented by empty circles. Values of IR methylation in independent biological replicates are shown in Supplementary file 1.
 
 We then compared the percentage of cytosine methylation in the intergenic region in local infections with the V2 null mutant TYLCV in basal conditions or upon AGO4 silencing. Strikingly, AGO4 silencing resulted in a ~30% decrease in the percentage of methylated cytosines in all contexts (Figure 4B; Figure 4—figure supplement 1B; Supplementary file 1), indicating that knock-down of AGO4 can partially complement the lack of V2 at the level of the viral methylation state. This complementation suggests that (a) methylation of the viral DNA at least partially depends on AGO4 function and (b) V2 can at least partially counter AGO4-dependent methylation of the viral DNA.
 
 As opposed to short-timed local infections, in systemic infections in N. benthamiana, which require longer timespans and involve viral cell-to-cell and long-distance movement, methylation of the wild-type viral genome could be detected at ~8–23% in all contexts (Figure 4C; Figure 4—figure supplement 2; Supplementary file 1). Interestingly, the methylation level tends to decrease upon AGO4 silencing; this reduction (~12–31%) brings the methylation of the V2 null mutant genome back to wild type-like levels, again supporting the idea that AGO4-dependent methylation of the viral genome occurs during the infection and is partially countered by V2. Notably, the detected decrease in methylation correlates with the enhanced viral accumulation in the AGO4-silenced plants (Figure 3F).
 
-## V2 does not hamper production or loading of vsiRNA but interferes with AGO4 binding to the viral RNA and to the viral genome
+### V2 does not hamper production or loading of vsiRNA but interferes with AGO4 binding to the viral RNA and to the viral genome
 
 The canonical function of AGO4 in the RdDM pathway requires loading of siRNA and association to Pol V/the Pol V-dependent scaffold RNA, and results in the recruitment of DRM2 to the target loci and the subsequent methylation of the adjacent DNA (Matzke et al., 2015; Matzke and Mosher, 2014). Through physical interaction, V2 could affect AGO4 function on the viral genome in different ways, for example by impairing loading of viral siRNA (vsiRNA) onto this protein or by displacing endogenous interactors, such as Pol V or DRM2. In order to shed light on the molecular mechanism underlying the V2-mediated interference of AGO4-dependent methylation of the viral genome, we tested binding of AGO4 to the viral DNA in the presence or absence of V2 in local infections with TYLCV wild-type and the V2 null mutant, respectively, by Chromatin immunoprecipitation (ChIP). As shown in Figure 5A, 3xFLAG-NbAGO4-1 could bind both the IR and the V2-encoding region of the viral genome in the absence of V2 (TYLCV-V2null), but the signal decreased to background levels when V2 was present (TYLCV). Therefore, AGO4 has the capacity to bind the viral DNA molecule, but this binding is impaired by the virus-encoded V2 protein. AGO4 binding in the TYLCV V2 null mutant hence correlates with the detected increase in viral DNA methylation (Figure 4A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig5-v1.jpg)
+
+**Figure 5.:** (A) 3xFLAG-NbAGO4-1 binds the viral (TYLCV) genome. Binding was detected by chromatin immunoprecipitation (ChIP) upon transient expression in N. benthamiana followed by qPCR. Two regions of the viral genome, the IR and the V2 ORF, were analyzed; Actin was used as negative control. Values represent the mean of four independent biological replicates; error bars represent SEM. Asterisks indicate a significant difference according to Student’s t-test; the P-value for the different comparisons is shown. *: p<0.05. (B) RNA immunoprecipitation (RIP)-based detection of viral RNA bound by NbAGO4-1 upon transient expression in N. benthamiana leaves infected by TYLCV or TYLCV-V2 null. Tubulin serves as an unbound loading control. Samples without reverse transcriptase (-RT) are used as control for DNA contamination. Values represent average qRT-PCR signal normalized to inputs of three technical replicates; error bars represent SEM. This experiment was repeated three times with similar results; additional independent biological replicates can be found in Figure 5—figure supplement 1. (C) NbAGO4-1 binds viral small interfering RNA (vsiRNA) independently of V2. Northern blot of vsiRNA in total extracts or 3xFLAG-NbAGO4-1 immunoprecipitates (NbAGO4-IP) of N. benthamiana leaf patches infiltrated with TYLCV wild-type or V2 null mutant infectious clones (TYLCV, TYLCV-V2null) at 2 days after infiltration. Detection was performed with a 32P-labeled DNA probe for the intergenic region (IR).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) and (B) show independent additional replicates of the RIP experiments shown in Figure 5B.
 
 Binding of AGO4 to the Pol V subunit NRPE1 has been previously detected and proposed to contribute to its recruitment to the target DNA (Li et al., 2006); however, we did not detect quantitative differences in the association of 3xFLAG-NbAGO4-1 with NRPE1 in the presence or absence of V2 in the context of the infection by AP-MS (Supplementary file 2). Therefore, we next evaluated whether V2 interferes with the binding of AGO4 to the viral RNA that could act as scaffold. For this purpose, we performed RNA immunoprecipitation (RIP) using 3xFLAG-NbAGO4-1 in locally infected samples; our results indicate that the presence of V2 in the wild-type virus causes a decrease in the binding of AGO4 to RNA molecules derived from the non-coding intergenic region (IR) and the adjacent V2 ORF (Figure 5B; Figure 5—figure supplement 1).
 
 Several viral silencing suppressors encoded by different viruses have been shown to inhibit formation of AGO/sRNA complexes (e.g. Burgyán and Havelda, 2011; Rawlings et al., 2011; Schott et al., 2012). To test whether this strategy is also employed by V2, we immunoprecipitated 3xFLAG-NbAGO4-1 co-expressed with wild-type or V2 null mutant TYLCV in local infection assays in N. benthamiana, and visualized AGO4-bound vsiRNA by sRNA northern blotting. While infected samples contained both 21- and 24-nt vsiRNA, and the occurrence and accumulation of these sRNA species was not affected by the presence of virus-encoded V2, mostly 24-nt vsiRNA co-immunoprecipitated with AGO4 (Figure 5C). Interestingly, a higher amount of vsiRNA associated to AGO4 in the samples infected with the wild-type virus (Figure 5C). Taken together, these results demonstrate that V2 does not affect the production or accumulation of vsiRNA, nor does it hamper loading of the vsiRNA molecules into AGO4, but it interferes with binding of this protein to the viral RNA and genome in order to suppress DNA methylation and promote virulence.
 
-## Methylation of the viral genome and its suppression by V2 occur in a Cajal body-dependent manner
+### Methylation of the viral genome and its suppression by V2 occur in a Cajal body-dependent manner
 
 In Arabidopsis, AGO4 has been shown to co-localize with its interactor NRPE1 (NRPD1b), a subunit of Pol V, in the Cajal body, which was then suggested to be a center for the assembly of AGO4/NRPE1/siRNA complexes, enabling RdDM at target loci (Li et al., 2008; Li et al., 2006). However, the functional significance of this subnuclear localization has so far remained elusive. Interestingly, both V2-GFP and the different RFP-AGO4 orthologues from N. benthamiana and tomato co-localize in a distinct subnuclear compartment, identified as the Cajal body by the accumulation of the nucleolus and Cajal body marker fibrillarin (Barneche et al., 2000), upon transient expression in N. benthamiana (Figure 6A). Of note, most of nuclear V2-GFP accumulates in the Cajal body, although some fluorescence can be detected in the nucleoplasm. All AGO4 orthologues are distributed throughout the nucleoplasm and absent from the nucleolus; clear Cajal body localization can be detected for NbAGO4-1, NbAGO4-2, SlAGO4a, and SlAGO4b, while Cajal body localization of SlAGO4d is less conspicuous (Figure 6A). Analysis of the V2/AGO4 interaction by bimolecular fluorescence complementation (BiFC), which is based on visualization and hence provides spatial information, unveiled that, strikingly, the association between these two proteins occurs mostly or exclusively in the Cajal body, where V2 homotypic interactions also occur (Figure 6B).
 
@@ -73,6 +113,30 @@ In Arabidopsis, AGO4 has been shown to co-localize with its interactor NRPE1 (NR
 **Figure 6.:** (A) V2-GFP and RFP-AGO4 co-localize in the Cajal body. CFP-Fibrillarin, V2-GFP and RFP-NbAGO4-1/2 or RFP-SlAGO4a/b/d were transiently co-expressed in N. benthamiana epidermal cells. CFP-Fibrillarin is used as nucleolus and Cajal body marker. Confocal images were taken at two days after infiltration. Arrowheads indicate the position of the Cajal body. Bar, 5 μm. This experiment was repeated more than three times with similar results. (B) V2 interacts with AGO4 in the Cajal body. The N-terminal half of the YFP fused to V2 (V2-nYFP) was transiently co-expressed with the C-terminal half of the YFP alone (cYFP, as negative control), or cYFP-NbAGO4, cYFP-SlAGO4, or cYFP-V2 (as positive control) in N. benthamiana leaves. CFP-Fibrillarin was used as nucleolus and Cajal body marker. Confocal images were taken at two days after infiltration. Yellow fluorescence indicates a positive interaction. Arrowheads indicate the position of the Cajal body. Bar, 5 μm. This experiment was repeated more than three times with similar results.
 
 In order to evaluate the relevance of the Cajal body localization of the V2-AGO4 interaction, we took advantage of the fact that a GFP-V2 fusion protein, as opposed to the previously mentioned V2-GFP, does not localize to the Cajal body (Figure 7A,B; Figure 7—videos 1 and 2), otherwise showing an indistinguishable subcellular distribution pattern. Importantly, GFP-V2 still interacts with AGO4 in co-IP assays (Figure 7—figure supplement 1A). Nevertheless, only the Cajal body-localized V2-GFP, but not GFP-V2, can complement a null mutation in V2 in terms of suppression of methylation of the viral genome (Figure 7C; Figure 7—figure supplement 1B and C), indicating that the Cajal body localization of the V2-AGO4 interaction is essential for V2 to exert its function.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig7-v1.jpg)
+
+**Figure 7.:** (A) V2-GFP co-localizes with Fibrillarin-RFP (nucleolus and Cajal body marker) in the Cajal body, while GFP-V2 does not. RFP-Fibrillarin and V2-GFP or GFP-V2 were transiently co-expressed in N. benthamiana epidermal cells. Confocal images were taken at two days after infiltration. Arrowheads indicate the position of the Cajal body. Bar, 5 μm. This experiment was repeated three times with similar results. (B) Quantification of Cajal body localization of V2-GFP or GFP-V2. (C) V2-GFP, but not GFP-V2, can restore the suppression of viral DNA methylation of a V2 null TYLCV mutant in local infection assays. Cytosine methylation in the intergenic region (IR) of the V2 null mutant genome in locally infected leaf patches of N. benthamiana expressing V2, V2-GFP, or GFP-V2 was detected by bisulfite sequencing at 3 days post-inoculation (dpi). TYLCV or TYLCV-V2null alone were used as controls. The original single-base resolution bisulfite sequencing data are shown in Figure 7—figure supplement 1B. This experiment was repeated twice with similar results. (D) Nbcoilin expression in Nbcoilin-silenced (TRV-Nbcoilin) and control plants (TRV-EV) infected with TYLCV, TYLCV-V2null, or mock-inoculated at 3 wpi measured by RT-qPCR. Gene expression was normalized to NbTubulin. Values are the mean of six independent biological replicates; error bars indicate SEM. Asterisks indicate a statistically significant difference according to Student’s t-test. **: p<0.01. (E) Percentage of methylated cytosines in the intergenic region (IR) of TYLCV in systemic infection assays with TYLCV wild-type or V2 null mutant (TYLCV-V2null) in Nbcoilin-silenced (TRV-Nbcoilin) or control (TRV-EV) N. benthamiana plants at 3 weeks post-inoculation (wpi), as detected by bisulfite sequencing. Values are the mean of three independent biological replicates; error bars indicate SEM. The original single-base resolution bisulfite sequencing data are shown in Figure 7—figure supplement 2D.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) 3xHA-NbAGO4-1 and 3xHA-NbAGO4-2 interact with V2-GFP and GFP-V2 in co-immunoprecipitation (co-IP) assays upon transient expression in N. benthamiana. Free GFP was used as negative control. Three independent biological replicates were performed with similar results. (B) Original single-base resolution bisulfite sequencing data for Figure 7C. >16 individual clones were sequenced per sample and replicate. Each single circle, corresponding to a cytosine, is colored in blue, red, or green, representing the CHG, CG or CHH contexts, respectively. Methylated cytosines are represented by filled circles, while unmethylated cytosines are represented by empty circles. (C) V2 protein levels in N. benthamiana leaves locally infected by TYLCV or transiently expressing V2 under the 35S promoter. Empty vector (EV) was used as negative control. Three independent biological replicates were performed with similar results. Red arrowheads indicate the predicted size of the V2 protein; blue arrowheads indicate an additional specific band of higher size. hpi, hours post-inoculation.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) No Cajal body was observed in the nuclei of Nbcoilin-silenced plants, whereas in control plants at least one Cajal body was normally present in each nucleus; these results are in agreement with Shaw et al., 2014. Fibrillarin-RFP, used as a nucleolus and Cajal body marker, was transiently expressed in N. benthamiana epidermal cells of Nbcoilin-silenced (TRV-Nbcoilin) and control plants (TRV-EV). Confocal images were taken at 2 days after infiltration. Arrowheads indicate the position of the Cajal body. Bar, 5 μm. This experiment was repeated three times with similar results. (B) Representative pictures of N. benthamiana plants infected with the indicated combinations of viruses. Photographs were taken at 3 weeks post-inoculation (wpi). (C) Viral (TYLCV) accumulation in systemic infections in Nbcoilin-silenced or control plants, measured by qPCR. Apical leaves from six plants were collected at 3 wpi. The experimental design is shown in Figure 3—figure supplement 1B. The accumulation of viral DNA is normalized to the 25S ribosomal RNA interspacer (ITS). Results from three independent experiments are shown. Values are the mean of six independent biological replicates; error bars indicate SEM. The relative fold change of viral accumulation between Nbcoilin-silenced plants and control plants is shown above each column. (D) Original single-base resolution bisulfite sequencing data for Figure 7E. >11 individual clones were sequenced per sample and replicate. Each single circle, corresponding to a cytosine, is colored in blue, red, or green, representing the CHG, CG, or CHH contexts, respectively. Methylated cytosines are represented by filled circles, while unmethylated cytosines are represented by empty circles. Values of IR methylation in independent biological replicates are shown in Supplementary file 1.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** NbHDA6-GFP and V2-RFP or Fibrillarin-RFP were transiently co-expressed in N. benthamiana epidermal cells. Fibrillarin-RFP is used as nucleolus and Cajal body marker. Confocal images were taken at 2 days after infiltration. Arrowheads indicate the position of the Cajal body. Bar, 5 μm. This experiment was repeated three times with similar results.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** (A) Alignment of the amino acid sequences of V2 from Cotton Leaf Curl Multan virus (CLCuMuV) and V2 from TYLCV. The alignment was performed by Geneious (https://www.geneious.com). Black background indicates conservation. The identity of these two proteins is 65%. (B) V2L76S-GFP and RFP-AGO4 co-localize in the Cajal body. CFP-Fibrillarin, V2L76S-GFP, and RFP-NbAGO4-1/2 or RFP-SlAGO4a/b/d were transiently co-expressed in N. benthamiana epidermal cells. CFP-Fibrillarin is used as anucleolus and Cajal body marker. Confocal images were taken at two days after infiltration. Arrowheads indicate the position of the Cajal body. Bar, 5 μm. This experiment was repeated three times with similar results. (C) 3xHA-NbAGO4-1 interacts with V2-GFP and V2L76S-GFP in co-immunoprecipitation (co-IP) assays upon transient expression in N. benthamiana. Free GFP was used as negative control. CBB, Coomassie brilliant blue staining. The V2-GFP sample was diluted 1/20 for western blot to reach a protein amount comparable to that of V2L76S-GFP. Three independent biological replicates were performed with similar results. (D) V2L76S interacts with AGO4 in the Cajal body. The N-terminal half of the YFP fused to V2L76S (V2L76S-nYFP) was transiently co-expressed with the C-terminal half of the YFP alone (cYFP, as negative control), or cYFP-NbAGO4, cYFP-SlAGO4, or cYFP- V2L76S in N. benthamiana leaves. CFP-Fibrillarin was used as a nucleolus and Cajal body marker. V2 was used as control. Yellow fluorescence indicates a positive interaction. Arrowheads indicate the position of the Cajal body. Bar, 5 μm. This experiment was repeated three times with similar results.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/55542/elife-55542-fig7-figsupp5-v1.jpg)
+
+**Figure 7—figure supplement 5.:** During the viral infection, the ssDNA TYLCV genome forms dsDNA replicative intermediates, which could be targeted by the host AGO4-dependent RNA-directed DNA methylation (RdDM) pathway in a Cajal body-dependent manner as an antiviral defence mechanism. Viral small interfering RNA (vsiRNA) are generated and loaded into AGO4. In the absence of the virus-encoded V2 protein, the AGO4-vsiRNA complex could be effectively guided toward the viral genome by complementary base pairing to the scaffold RNA and association with Pol V, and recruit the methyltransferase DRM2 to catalyze methylation of the viral genome. When V2 is present, however, V2 interacts with AGO4 and interferes with the binding of this protein to the viral RNA and the viral DNA, enabling viral evasion from the AGO4-dependent DNA methylation.
 
 Since our results indicate that the suppression of the AGO4-mediated methylation of the viral genome occurs in a Cajal body-dependent manner, we decided to test if the Cajal body is required for this antiviral response. For this purpose, we eliminated Cajal bodies in the plant by silencing of their signature component coilin through VIGS; the effect of knocking down coilin on the formation of Cajal bodies has been previously demonstrated (Shaw et al., 2014). As expected, silencing coilin (Figure 7D) resulted in the apparent disappearance of Cajal bodies (Figure 7—figure supplement 2A). Coilin-silenced plants were then inoculated with TYLCV wild-type or V2 null mutant, and viral accumulation and methylation of the IR of the viral genome were evaluated at 3 weeks post-inoculation (Figure 7—figure supplement 2B,C; Figure 7E). A tendency toward higher viral accumulation in coilin-silenced plants was observed, but not statistically significant (Figure 7—figure supplement 2C). Strikingly, however, methylation of the IR of the viral genome in the V2 mutant virus was largely decreased by silencing of coilin (Figure 7E; Figure 7—figure supplement 2D; Supplementary file 1), suggesting that efficient methylation of the viral genome requires intact Cajal bodies. Notably, the described V2 interactor HDA6 does not localize to the Cajal body (Figure 7—figure supplement 3) and the V2-HDA6 complexes seem to localize outside of the nucleus (Wang et al., 2018), supporting the idea that the detected Cajal body-dependent effects rely on AGO4 and not HDA6.
 
@@ -92,19 +156,183 @@ Based on our results, we propose a scenario in which antiviral methylation of in
 
 ## Materials and methods
 
-## Plasmids and cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Nicotiana benthamiana)</td>
+      <td>NbAGO4-1</td>
+      <td>GenBank</td>
+      <td>DQ321490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Nicotiana benthamiana)</td>
+      <td>NbAGO4-2</td>
+      <td>GenBank</td>
+      <td>DQ321491</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Solanum lycopersicum)</td>
+      <td>SlAGO4a</td>
+      <td>Sol Genomics</td>
+      <td>SOLYC01G008960</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Solanum lycopersicum)</td>
+      <td>SlAGO4b</td>
+      <td>Sol Genomics</td>
+      <td>SOLYC06G073540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Solanum lycopersicum)</td>
+      <td>SlAGO4d</td>
+      <td>Sol Genomics</td>
+      <td>SOLYC01G096750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V2 (Rabbit polyclonal)</td>
+      <td>This work</td>
+      <td>N/A</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Actin (Rabbit polyclonal)</td>
+      <td>Agrisera</td>
+      <td>Cat# AS13 2640</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# F3165</td>
+      <td>IP: (5 µg per gram of tissue) WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (12CA5) (Mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>Cat# 11583816001</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (Mouse monoclonal)</td>
+      <td>Abiocode</td>
+      <td>Cat# M0802-3a</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ClonExpress MultiS One Step Cloning Kit</td>
+      <td>Vazyme</td>
+      <td>Cat# C113-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>pENTR/D-TOPO Cloning Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# K240020SP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway LR Clonase II Enzyme Mix</td>
+      <td>Invitrogen</td>
+      <td>Cat# 11791100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuickChange Lightning Site-Directed Mutagenesis Kit</td>
+      <td>Agilent Technologies</td>
+      <td>Cat# 210518</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Plant RNA kit</td>
+      <td>OMEGA Bio-tek</td>
+      <td>Cat# R6827</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScriptTM cDNA Synthesis Kit</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1708890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy Plant Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 69104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EpiTect Plus DNA Bisulfite Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 59124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAquick PCR Purification Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 28106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superscript III ﬁrst-strand synthesis system</td>
+      <td>Thermo Fisher Scientiﬁc</td>
+      <td>Cat# 18080051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytosine methylation analysis Kismeth</td>
+      <td>Gruntman et al., 2008</td>
+      <td>PMID:18786255</td>
+      <td>http://katahdin.mssm.edu/kismeth/revpage.pl</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids and cloning
 
 All primers and plasmids used for cloning are summarized in Supplementary files 3 and 4, respectively. To generate binary vectors to express AGO4 from N. benthamiana and tomato (cv. Money maker), the full-length coding sequence of AGO4 genes was amplified using cDNA as template. NbAGO4-1, NbAGO4-2, SlAGO4a, SlAGO4b, SlAGO4d, and SlWRKY75 were cloned into pENTR/D-TOPO (Invitrogen) following the manufacturer’s instructions. The binary plasmids to express RFP and 3xHA N-terminal fusions were generated by Gateway cloning the AGO4 coding sequence into pGWB555 and pGWB515, respectively (Nakagawa et al., 2007). V2-GFP, GFP-V2 and the TYLCV infectious clone have been previously described (Rosas-Diaz et al., 2018; Wang et al., 2017a). The V2 null TYLCV mutant was generated with the QuickChange Lightning Site-Directed Mutagenesis Kit (Agilent Technologies, Cat #210518) using the wild-type infectious clone as template. For the plasmids used for biomolecular ﬂuorescence complementation (BiFC), NbAGO4, SlAGO4, V2/V2L76S were cloned into entry vector pDONR221-P1P4/pDONR221-P3P2 (Invitrogen) and then Gateway-cloned into the pBiFC-2in1-CN vector (Grefen and Blatt, 2012) as shown in Supplementary file 4. The binary plasmids for split-luciferase complementation imaging assay were generated by Gateway cloning the NbAGO4, SlAGO4, SlWRKY75 or V2 from pENTR/D-TOPO into pGWB-N-luc and pGWB-C-luc (Yu et al., 2019). To generate pCAMBIA1300-3xFLAG-NbAGO4-1, pCAMBIA1300 was digested with XbaI and XmaI, and then the 3xFLAG and NbAGO4-1 coding sequences were amplified by PCR and Infusion-cloned into pCAMBIA1300 with ClonExpress MultiS One Step Cloning Kit (Vazyme). pDONR207-Fibrillarin (Kim et al., 2007b) was used to Gateway-clone Fibrillarin to pGWB545 (Nakagawa et al., 2007). NbHDA6-GFP is described in Wang et al., 2018.
 
-## Plant materials and growth conditions
+### Plant materials and growth conditions
 
 N. benthamiana and tomato plants (cv. Money maker) were grown in a controlled growth chamber under long day conditions (LD, 16 hr light/8 hr dark) at 25℃.
 
-## Agrobacterium-mediated transient gene expression in N. benthamiana
+### Agrobacterium-mediated transient gene expression in N. benthamiana
 
 All binary plasmids were transformed into Agrobacterium tumefaciens strain GV3101, with the exception of pBINTRA6, which was transformed into A. tumefaciens strain C58c1. A. tumefaciens clones carrying the constructs of interest were liquid-cultured in LB with appropriate antibiotics at 28°C overnight. Bacterial cultures were then centrifuged at 4000 g for 10 min and resuspended in the infiltration buffer (10 mM MgCl2, 10 mM MES pH 5.6, 150 μM acetosyringone) and adjusted to an OD600 = 0.5. Next, the bacterial suspensions were incubated in the buffer at room temperature and in the dark for 2–4 hr and then infiltrated into 3- to 4-week-old N. benthamiana plants. For co-expression experiments, the different Agrobacterium suspensions were mixed at 1:1 ratio before infiltration.
 
-## Protein extraction and immunoprecipitation assays
+### Protein extraction and immunoprecipitation assays
 
 Protein extraction and co-immunoprecipitation assays were performed as described in Wang et al., 2017a. V2 and actin were detected by western blot with anti-V2 (custom-made by ABclonal with V21-116aa) and anti-Actin (Agrisera AS13 2640) antibodies, respectively.
 
@@ -112,31 +340,31 @@ Protein extracts were immunoprecipitated with GFP-Trap beads (Chromotek, Germany
 
 For 3xFLAG-NbAGO4-1 IP followed by vsiRNA extraction, 6 grams of N. benthamiana leaves transiently expressing 3xFLAG-NbAGO4-1 were collected, ground in liquid nitrogen and homogenized in 6x (w:v) extraction buffer (20 mM Tris HCl pH7.5, 25 mM MgCl2, 300 mM NaCl, 5 mM DTT, 0.5% NP-40, 1x complete Protease Inhibitor Cocktail (Roche)) at 4°C with rotation for 30 min. The extract was subjected to centrifugation (14,000 rpm, 25 min) at 4°C. 5 μg anti-FLAG antibody (Sigma, F3165) per gram of tissue were added to the supernatant in a new tube and incubated at 4°C overnight. The next day, 20 μl of slurry Protein G beads (Invitrogen) per gram of tissue were added and subjected to a further incubation for 2 hr with rotation at 4°C. After incubation, Protein G beads were washed three times in 3x (v:v) homogenate wash buffer (20 mM Tris pH7.5, 25 mM MgCl2, 300 mM NaCl, 0.5% NP-40). The quality of purification was examined by SDS-PAGE followed by immunoblotting.
 
-## Split-luciferase complementation imaging assay
+### Split-luciferase complementation imaging assay
 
 Split-luciferase complementation imaging assays were performed as described (Chen et al., 2008). Equal volumes of A. tumefaciens harboring V2-N-luc or C-luc-NbAGO4-1/2, C-luc-SlAGO4a/b, or C-luc-SlWRKY75 at OD600 = 0.5 were mixed at 1:1 ratio. Three different combinations of A. tumefaciens were infiltrated on the same N. benthamiana leaf. 1 mM luciferin (in H2O) was infiltrated into the inoculated leaves 2 days after Agrobacterium infiltration. A low-light cooled CCD imaging apparatus (NightShade LB985 with IndiGO software) was used to capture and analyze the luciferase signal at 2 dpi.
 
-## Confocal imaging
+### Confocal imaging
 
 Confocal imaging for co-localization of V2-GFP, RFP-AGO4, and CFP-Fibrillarin upon transient expression in N. benthamiana epidermal cells was performed on a Leica TCS SP8 point scanning confocal microscope using the pre-set sequential scan settings for GFP (Ex:488 nm, Em:500–550 nm), RFP (Ex:561 nm, Em:600–650 nm), and CFP (Ex:442 nm, Em:452–482 nm). Confocal imaging for co-localization of Fibrillarin-RFP (Kim et al., 2007b) or V2-RFP and NbHDA6-GFP, or Fibrillarin-RFP and V2-GFP or GFP-V2, was performed in the same way.
 
-## Bimolecular fluorescence complementation
+### Bimolecular fluorescence complementation
 
 For bimolecular fluorescence complementation (BiFC) analyses, A. tumefaciens clones carrying pBiFC-2in1-CN binary constructs (Grefen and Blatt, 2012) and CFP-Fibrillarin were mixed at 1:1 ratio and infiltrated into 3- to 4-week-old N. benthamiana plants. Imaging was performed 2 days later under a Leica TCS SP8 confocal microscope by using the pre-set sequential scan settings for YFP (Ex: 514 nm, Em: 525–575 nm) and for CFP (Ex:442 nm, Em:452–500 nm).
 
-## Virus-induced gene silencing
+### Virus-induced gene silencing
 
 The vectors used for virus-induced gene silencing (VIGS) were pBINTRA6 (Ratcliff et al., 2001) and pTRV2-GW (Taylor et al., 2012). A 362 bp fragment of NbAGO4-1 cDNA (from nt 1920 to 2281) and a 389 bp fragment of Nbcoilin cDNA (from nt 2222 to 2610) were amplified using specific primers shown in Supplementary file 3, cloned into pENTR/D-TOPO (Invitrogen), and subcloned into pTRV2-GW through an LR reaction (Invitrogen) to yield TRV-NbAGO4 and TRV-Nbcoilin. VIGS assays were performed as described in Lozano-Durán et al., 2011. For TYLCV local infection assays, A. tumefaciens carrying pBINTRA6 and TRV-NbAGO4 or TRV-EV were mixed and inoculated into 18-day-old N. benthamiana plants. Two weeks later, fully expanded young leaves were infiltrated with A. tumefaciens carrying the TYLCV infectious clone and samples were collected at 4 days post-inoculation (dpi) to detect viral accumulation. For TYLCV systemic infection assays, A. tumefaciens carrying pBINTRA6 and TRV-NbAGO4 or TRV-EV (empty vector) and the TYLCV infectious clone were mixed and inoculated into 18-day-old N. benthamiana plants. The three most apical leaves of each plant were collected at 3 weeks post-inoculation (wpi) to detect viral accumulation. TYLCV systemic infection assays in Nbcoilin-silenced plants were performed as previously described for NbAGO4-silenced plants.
 
-## Quantitative PCR (qPCR) and reverse transcription PCR (RT-qPCR)
+### Quantitative PCR (qPCR) and reverse transcription PCR (RT-qPCR)
 
 To determine viral accumulation, total DNA was extracted from N. benthamiana leaves (from infiltrated leaves in local infection assays and from apical leaves in systemic infection assays) using the CTAB method (Minas et al., 2011). Quantitative PCR (qPCR) was performed with primers to amplify Rep (Wang et al., 2017b). As internal reference for DNA detection, the 25S ribosomal DNA interspacer (ITS) was used (Mason et al., 2008). To detect NbAGO4-1, NbAGO4-2, Nbcoilin, and NbAGO6 transcripts, total RNA was extracted from N. benthamiana leaves by using Plant RNA kit (OMEGA Bio-tek # R6827). RNA was reverse-transcribed into cDNA by using the iScriptTM cDNA Synthesis Kit (Bio-Rad #1708890) according to the manufacturer’s instructions. NbTubulin was used as reference gene (Liu et al., 2012). Relative expression was calculated by the comparative Ct method (2-ΔΔCt). qPCR and RT-qPCR were performed in a BioRad CFX96 real-time system as described previously (Wang et al., 2017b). Total RNA was extracted from the leaves of tomato plants mock-inoculated or infected with TYLCV at 3 weeks post-inoculation (wpi). SlActin was used as reference gene (Expósito-Rodríguez et al., 2008). Similarly, RT-qPCR was performed on RNA extracted from tomato to detect the expression of SlAGO4a/d/c/d. All primers used for qPCR and qRT-PCR are listed in Supplementary file 5.
 
-## DNA bisulfite sequencing analysis
+### DNA bisulfite sequencing analysis
 
 DNA from virus-infected plant tissues was extracted by DNeasy Plant Mini Kit (QIAGEN, Cat. No. 69104), and 500 ng of purified DNA was subjected to bisulfite treatment using EpiTect Plus DNA Bisulfite Kit (QIAGEN, Cat. No. 59124) according to the manufacturer’s handbook. The selected fragment (viral IR) of the bisulfite-treated DNA was amplified by PCR (Fw: TTTGATGTATTTTTTATTTGTTGGGGTTT, Rv: CCCTTACAACARATATAARATCCCT); amplified fragments were cloned into the pMD18-T vector by TA ligation and sequenced (>15 clones per experiment). Cytosine methylation analysis was performed with Kismeth (http://katahdin.mssm.edu/kismeth/revpage.pl) (Gruntman et al., 2008). Values obtained in all independent biological replicates are shown in Supplementary file 1; please note that despite the instrinsic variation in these experiments, the same trends in relative values (compared to control samples) consistently emerge, supporting the reliability of the results.
 
-## RNA immunoprecipitation
+### RNA immunoprecipitation
 
 The Agrobacterium clone carrying the binary vector to express 3xFLAG-NbAGO4-1 was co-infiltrated with those carrying the TYLCV or TYLCV-V2null infectious constructs in N. benthamiana leaves, and tissues were collected at 2 dpi. RNA immunoprecipitation (RIP) assays were performed as previously described (Köster and Staiger, 2014). In brief, 0.6 g of leaves without crosslinking were used as the input samples, while 1.5 g of leaves were subjected to crosslinking and used as for immunoprecipitation (IP). For IP samples, leaves were ﬁxed for 15 min in 1% formaldehyde in 1xPBS buffer under vacuum; crosslinking was terminated by adding 125 mM glycine for 5 min. Then the tissue was ground to powder and homogenized in 5 ml of lysis buffer (50 mM Tris-HCl (pH 7.6), 150 mM NaCl, 25 mM MgCl2, 5 mM DTT, 0.5% NP-40, 5 mM EDTA, 2 mM PMSF, 8 unit/ml Ribolock RNase inhibitor (Fisher Scientiﬁc, FEREO0384), and 1% Protease Inhibitor Cocktail (Sigma)). The samples were then centrifuged at 16,000 g for 20 min. The extract was subjected to immunoprecipitation with FLAG antibody (Sigma, F3165) bound to Dynabeads Protein G (Invitrogen) for 2 hr with gentle rotation at 4°C. After incubation, beads were washed three times in lysis buffer.
 
@@ -144,10 +372,10 @@ Immunocomplexes were eluted with 200 µl of Elution buffer (1% SDS, 0.1 M NaHCO3
 
 Input and immunoprecipitated RNA were extracted with TRIzol reagent (Thermo Fisher Scientiﬁc) and resuspended in 200 µl or 20 µl ddH2O, respectively. 20 µl RNA from IP samples and 5 µl RNA from input samples were treated with Turbo DNase (Fisher Scientiﬁc, NC9075048) at 37°C for 1 hr and then reverse-transcribed with Superscript III ﬁrst-strand synthesis system (Thermo Fisher Scientiﬁc) with random hexamers. qPCR was used to determine the relative enrichment for each sample, which was calculated by normalizing the value of immunoprecipitated RNA to that of the input.
 
-## Chromatin immunoprecipitation (ChIP) assay
+### Chromatin immunoprecipitation (ChIP) assay
 
 The Agrobacterium clone carrying the binary vector to express 3xFLAG-NbAGO4-1 was co-infiltrated with those carrying the TYLCV or TYLCV-V2null infectious clones in N. benthamiana leaves, and tissues were collected at 2 dpi. Chromatin immunoprecipitation (ChIP) assays were performed as described (He et al., 2018). In brief, the cross-linking of 2 g of leaves was performed with 1% formaldehyde in 1xPBS buffer and stopped with 1/15 vol of 2 M glycine by vacuum infiltration. Then the tissue was ground to powder and resuspended in HB buffer (2.5% Ficoll 400, 5% Dextran T40, 0.4 M Sucrose, 25 mM Tris pH 7.4, 10 mM MgCl2, 0.035% β-mercaptoethanol, 1% Protease Inhibitor Cocktail (Sigma)), homogenized and ﬁltered through Miracloth (Milli-pore). Triton x-100 was added to the supernatant to a final concentration of 0.5%. After spinning at 2000 g for 20 min at 4°C, the pellet was re-suspended in HB buffer containing 0.1% Triton x-100 and spun at 2000 g for 10 min at 4°C. Isolated nuclei were re-suspended in 500 µl of Nuclei Lysis buffer and sonicated by BioruptorTM UCD-200 sonicator (Diagenode) for 30 min. Following centrifugation at 21,130 g for 5 min at 4°C, the supernatant was separated and used for input and immunoprecipitation. After adding 9 vol of ChIP dilution buffer to the supernatant, this was pre-cleared with 10 µl of Dynabeads Protein G (Invitrogen) for 1 hr at 4°C. After removing the beads from the mixture, the supernatant was incubated with anti-FLAG antibody (Sigma, F3165), or anti-IgG antibody (Sigma, I5006) overnight at 4°C. The following day, after adding 20 µl of Dynabeads Protein G, the mixture was incubated for 2 hr at 4°C. Beads were sequentially washed with 1 ml of the following buffers: Low-Salt Wash buffer (150 mM NaCl, 0.1% SDS, 1% Triton x-100, 2 mM EDTA, 20 mM Tris pH 8.0), High-Salt Wash buffer (500 mM NaCl, 0.1% SDS, 1% Triton x-100, 2 mM EDTA, 20 mM Tris pH 8.0), LiCl wash buffer (250 mM LiCl, 1% Igepal, 1% Sodium Deoxycholate, 1 mM EDTA, 10 mM Tris pH 8.0), TE buffer (10 mM Tris pH 8.0, 1 mM EDTA). Immunocomplexes were eluted with 250 µl of Elution buffer (1% SDS, 0.1 M NaHCO3) at 65°C for 15 min. After reverse crosslinking, 10 µl of 0.5 M EDTA, 20 µl of 1 M Tris pH 6.5 and 1 µl of proteinase K (Invitrogen) were added to each sample, which was incubated at 45°C for 2 hr. DNA was then purified using QIAquick PCR Purification Kit (QIAGEN, Cat. No. 28106). The products were eluted into 200 µl of ddH2O, and analyzed by qPCR. The primers used in this experiment are listed in Supplementary file 5; the primers for Actin are taken from Maimbo et al., 2010.
 
-## Small RNA (sRNA) extraction and northern blot analysis
+### Small RNA (sRNA) extraction and northern blot analysis
 
 Small RNA (sRNA) extraction and northern blot were performed as described (Yang et al., 2016). Briefly, sRNAs were purified from total extracts or AGO4 immunoprecipitates and subjected to northern blot analysis. For each sample, sRNAs were separated on a 17% polyacrylamide gel, which was electrotransferred to a Hybond N+ membrane (GE Lifesciences). Membranes were cross-linked, incubated for 2 hr at 65°C, and hybridized overnight at 38°C with 32P-labeled probes for the intergenic region (IR) of the viral genome amplified by PCR (Fw: TCCTCTTTAGAGAGAGAACAATTGGGA, Rv: ACAACGAAATCCGTGAACAG) or oligonucleotides in PerfectHyb buffer (Sigma). Washed membranes were exposed to X-ray films at −80°C for 3 days.

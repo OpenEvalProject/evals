@@ -56,15 +56,39 @@ We focused on the mitochondrial-targeted tetrapeptide SS-31 (elamipretide), a ph
 
 ## Results
 
-## 8-week SS-31 treatment rescues cardiac dysfunction and hypertrophy in old mice
+### 8-week SS-31 treatment rescues cardiac dysfunction and hypertrophy in old mice
 
 Diastolic function and myocardial performance decline significantly with age (Dai et al., 2009; Chiao et al., 2012; Dai et al., 2014b). Compared to young mice, old mice exhibit a reduced ratio of early to late diastolic mitral annulus velocities (Ea/Aa), indicating a decline in diastolic function, and they have an increased (poorer) myocardial performance index (MPI), indicating an increased fraction of the cardiac cycle that is not accompanied by a change in volume (Dai et al., 2009; Chiao et al., 2012; Dai et al., 2014b). To determine the effects of SS-31 treatment on cardiac function in old mice, we treated 24-month-old mice with the SS-31 peptide or saline control and examined cardiac function by echocardiography after 4 and 8 weeks of treatment. We found that Ea/Aa increased and MPI decreased in old mice treated with SS-31 for 8 weeks, reversing the age-related changes, and both parameters were significantly different compared to saline controls at 8 weeks of treatment (Figure 1a,b, Figure 1—figure supplement 1). Systolic function, measured as fractional shortening, was not altered by SS-31 treatment and remained similar between old control and old SS-31 treated mice (Figure 1c, Figure 1—figure supplement 1). At the 8-week necropsy, we observed a higher heart weight normalized to tibia length (HW/TL) in old control mice compared to young control mice, while HW/TL of old SS-31 treated mice was lower than that of old controls (Figure 1d), suggesting a regression of age-related cardiac hypertrophy after SS-31 treatment. A decline in diastolic cardiac function in the elderly is associated with exercise intolerance, so we studied whether exercise performance was improved by SS-31 treatment. We observed reduced treadmill running time in old mice compared to young mice, and old mice treated with SS-31 for 8 weeks ran significantly longer than old control mice (Figure 1e, Figure 1—figure supplement 2), consistent with recent observations (Campbell et al., 2019). As in male mice, we observed a similar improvement in Ea/Aa in 24 month old female mice treated with SS-31 for 8 weeks (Figure 1f, Figure 1—figure supplement 3), suggesting that the treatment is effective in both sexes. To evaluate the persistence of the SS-31-induced cardiac benefit, we continued to monitor cardiac function in these mice after cessation of treatment. We found that the improved Ea/Aa in SS-31 treated mice was maintained at 2 weeks, but dropped by approximately half at 4 weeks after treatment ceased (Figure 1f, Figure 1—figure supplement 3).
 
-## SS-31 treatment suppresses mitochondrial ROS production in old cardiomyocytes
+![Figure 1.](https://cdn.elifesciences.org/articles/55513/elife-55513-fig1-v2.jpg)
+
+**Figure 1.:** Doppler echocardiography showed that 8-week SS-31 treatment (a) improved diastolic function (increased Ea/Aa) and (b) enhanced myocardial performance (reduced myocardial performance index, MPI) of old male mice. (c) Fractional shortening (FS) was not altered by SS-31 treatment. (a–c) n = 7 male mice/group were analyzed by repeated measure ANOVA with Tukey’s multiple comparison test between time points and Sidak post hoc analysis between treatment groups. (d) 8- week SS-31 treatment reversed the age-related increase in normalized heart weight. n = 10 (for young saline, young SS-31 and old saline) and n = 8 (for old SS-31) male mice. Data were analyzed by one-way ANOVA with SNK post hoc analysis. (e) Treadmill running was impaired (reduced running time) in old control male mice but was rescued by SS-31 treatment. n = 10 (for young saline, young SS-31 and old saline) and n = 9 (for old SS-31) male mice, analyzed by one-way ANOVA with SNK post hoc analysis. (f) The improved diastolic function in old female mice (increased Ea/Aa) after 8 week of SS-31 treatment persisted for 2–4 weeks after cessation of treatment. n = 3 for saline control and n = 7 for SS-31 treatment, analyzed by repeated measure ANOVA with Tukey’s multiple comparison test between time points and Sidak post hoc analysis between treatment groups.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55513/elife-55513-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** 8-week SS-31 treatment improved diastolic function and myocardial performance over time. Linear regression analyses treating each mouse in a group as a separate point revealed increased Ea/Aa (a) over time in old SS-31 treated (R = 0.45, p<0.001) but not old control mice (p=0.23) and reduced MPI (b) in old SS-31 treated (R = 0.30, p=0.011) but not old control mice (p=0.98). (c) FS remained unchanged in old SS-31 treated (p=0.26) and old control mice (p=0.42) during the 8-week treatment. N = 7 mice per group.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55513/elife-55513-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Treadmill running time trended to decline in majority of old saline control mice (p=0.11) but not in old SS-31 treated mice (p=0.48); n = 10 for old control and n = 9 for old SS-31, analyzed by Wilcoxon signed-rank test with pairing of 0 week and 8 week data.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55513/elife-55513-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** 8-week SS-31 treatment improved diastolic function in old female mice (p<0.001 between 0 week and 8 week by paired T-test); this improvement persisted 2 weeks after cessation of treatment (p=0.006 between 0 week and 10 week by paired T-test). At 4 weeks after treatment cessation, some mice displayed declined Ea/Aa, but overall, Ea/Aa was not significantly different from baseline (p=0.38 between 0 week and 12 week by paired T-test); n = 3 for saline control and n = 7 for SS-31 treatment.
+
+### SS-31 treatment suppresses mitochondrial ROS production in old cardiomyocytes
 
 The SS-31 peptide has been shown to attenuate mitochondrial oxidative stress in multiple disease models (Dai et al., 2011b; Dai et al., 2014a; Tarantini et al., 2018). To investigate its effect on mitochondrial ROS production in cardiomyocytes, we isolated cardiomyocytes from old control and old SS-31 treated mice and measured mitochondrial ROS production with fluorescent indicators of ROS. Confocal microscopy revealed reduced MitoSOX intensity in cardiomyocytes from old SS-31 treated mice, indicating reduced mitochondrial superoxide production (Figure 2a), as well as reduced MitoPY1 fluorescence, a measure of mitochondrial hydrogen peroxide production (Figure 2b).
 
-## Increased mitochondrial proton leak in old cardiomyocytes is normalized by SS-31 treatment
+![Figure 2.](https://cdn.elifesciences.org/articles/55513/elife-55513-fig2-v2.jpg)
+
+**Figure 2.:** (a) SS-31 treated cardiomyocytes showed reduced mitochondrial superoxide, indicated by reduced MitoSox signal (normalized to mitochondrial content by the ratio to MitoTracker Green), compared to old controls. *p<0.05 vs old saline; n = 67 cells from three female mice for old saline and n = 71 cells from three female mice for old SS-31, compared by unpaired T-test. (b) SS-31 treated cardiomyocytes showed reduced hydrogen peroxide, indicated by reduced mitoPY1 signal (normalized to mitochondrial content using MitoTracker Deep Red), compared to old controls. *p<0.05 vs old saline; n = 31 cells from three female mice for old saline and n = 29 cells from three female mice for old SS-31, compared by unpaired T-test. Images for MitoSox and MitoPY1 measurements can found in Figure 2—source data 1 and Figure 2—source data 2. (c) Averaged traces of oxygen consumption rate (OCR, + / - SEM) of isolated cardiomyocytes from young, old, and old SS-31 treated male and female mice measured by the Seahorse XF Cell Mito Stress Test. Cardiomyocytes from old mice exhibited increased basal respiration (d) and proton leak (e) compared to that of young mice, and these age-related increases were reversed in cardiomyocytes from 8-week SS-31 treated old mice. (f) Old cardiomyocytes exhibited reduced respiratory control ratio (RCR) compared to young cardiomyocytes and this decrease was partially restored by 8-week SS-31 treatment. (d–f) *p<0.05 vs. young saline; #p<0.05 vs. old saline; n = 16 wells from four mice for young, n = 29 wells from six mice for old and n = 35 wells from six mice for old SS-31, analyzed by one-way ANOVA with SNK post hoc analysis.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55513/elife-55513-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** *p<0.05 vs old saline. n = 19 (Control) and 18 (SS-31) cells were analyzed by unpaired T-test.
+
+### Increased mitochondrial proton leak in old cardiomyocytes is normalized by SS-31 treatment
 
 To determine the effect of SS-31 treatment on mitochondrial respiration, we assessed the oxygen consumption rate (OCR) in isolated adult cardiomyocytes using the Seahorse Bioscience XF Cell Mito Stress Test assay. Basal respiration was significantly higher in cardiomyocytes from old control mice compared to cardiomyocytes from young mice, and this age-related increase in basal respiration was normalized in cardiomyocytes from old SS-31 treated mice (Figure 2c,d). These changes in basal respiration were almost entirely the result of altered proton leak, which increased in old cardiomyocytes and was normalized by SS-31 treatment (Figure 2c,e). In addition, the respiratory control ratio (RCR) decreased in old cardiomyocytes, and this was partially restored by SS-31 treatment. We also measured mitochondrial membrane potential in old cardiomyocytes treated with SS-31, as measured with the dye JC-1. We found increased membrane potential in cardiomyocytes from old SS-31 treated mice ( Figure 2—figure supplement 1), which is consistent with the observed decreased proton leak. We tested whether the improved RCR and reduced proton leak in SS-31 were accompanied by changes in levels of oxidative phosphorylation (OXPHOS) complexes; however, we observed no change in abundance of subunits of OXPHOS complexes after 8-week SS-31 treatment (Figure 3).
 
@@ -72,23 +96,33 @@ To determine the effect of SS-31 treatment on mitochondrial respiration, we asse
 
 **Figure 3.:** Immunoblotting using anti-OXPHOS antibody detected no differences in expression levels of OXPHOS subunits (NDUFB8, SDHB, UQCRC2, MTCO1, and ATP5A) in hearts of old male mice treated with SS-31 for 8 weeks. Only transient changes in NDUFB8 levels were detected at 1 and 2 weeks after SS-31 treatment. *p<0.05 vs Control; +p<0.05 vs 1-week SS-31; #p<0.05 vs 2-week SS-31 treatment; n = 6 for Control, n = 7 for 1 week and 2 week and n = 5 for 8 week, analyzed by one-way ANOVA with SNK post hoc analysis.
 
-## SS-31 treatment reduces protein oxidation and cellular senescence in old hearts
+### SS-31 treatment reduces protein oxidation and cellular senescence in old hearts
 
 Mitochondrial oxidative stress can lead to oxidative modifications of cellular proteins. We studied whether the extent of Cys S-glutathionylation, an important reversible oxidative posttranslational modification in response to oxidative stress (Shelton and Mieyal, 2008), was affected by aging or SS-31 treatment. Overall, proteins in young control hearts have an average of 5.3% occupancy by glutathionylation; this increased by 33% to 7.1% occupancy in old control hearts, but 8-week SS-31 treatment reduced the glutathionylation occupancy of old heart proteins to 5.9%. At the individual peptide level, cardiac proteins from old control mice have increased levels of glutathionylation in the majority of detected peptides compared to young controls, indicating a general age-related increase in protein glutathionylation, substantially and broadly reduced by SS-31 treatment (Figure 4a). We also assessed levels of protein carbonylation, another protein oxidative modification, often viewed as a hallmark of oxidative damage (Dalle-Donne et al., 2003; Fedorova et al., 2014). We detected an increase in protein carbonylation in old control compare to young hearts, and this age-related increase was abolished by SS-31 treatment (Figure 4b).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55513/elife-55513-fig4-v2.jpg)
 
-**Figure 4.:** (a) A histogram of the distribution of changes in glutathionylation levels in peptides from old control and old SS-31 treated hearts; n = 3 female mice per group, analyzed as described in the Materials and method section. (b) Increased levels of protein carbonylation were detected in hearts of old control mice, but not old SS-31 treated mice, when compared to young control mice; n = 5 female mice per group, analyzed by one-way ANOVA with SNK post hoc analysis. (c–d) IHC staining of cellular senescence markers, p16 (c) and p19 (d), detected reduced p16 and p19 positive nuclei in old SS-31 treated heart compared to old control hearts; n = 5 male mice per group, analyzed by unpaired T-test. Images for p16 and p19 staining can be found in Figure 4—source data 1 and Figure 4—source data 2.Figure 4—source data 1.Figure 4c.Figure 4—source data 2.Figure 4d.
+**Figure 4.:** (a) A histogram of the distribution of changes in glutathionylation levels in peptides from old control and old SS-31 treated hearts; n = 3 female mice per group, analyzed as described in the Materials and method section. (b) Increased levels of protein carbonylation were detected in hearts of old control mice, but not old SS-31 treated mice, when compared to young control mice; n = 5 female mice per group, analyzed by one-way ANOVA with SNK post hoc analysis. (c–d) IHC staining of cellular senescence markers, p16 (c) and p19 (d), detected reduced p16 and p19 positive nuclei in old SS-31 treated heart compared to old control hearts; n = 5 male mice per group, analyzed by unpaired T-test. Images for p16 and p19 staining can be found in Figure 4—source data 1 and Figure 4—source data 2.
 
 Mitochondrial dysfunction can induce cellular senescence (Wiley et al., 2016). To determine if the improved mitochondrial respiration and reduced oxidative stress in old SS-31 treated mice was associated with reduced cellular senescence, we examined cellular senescence by immunostaining of senescent markers, p16 and p19, in hearts of old control and old SS-31 treated mice. And indeed, there were fewer senescence cells with p16-positive nuclei or p19-positive nuclei in the SS-31 treated old hearts (Figure 4c and d).
 
-## SS-31 treatment partially restored aging-induced changes in the proteome and metabolome
+### SS-31 treatment partially restored aging-induced changes in the proteome and metabolome
 
 We performed global proteomic analyses by mass spectrometry to study the changes in protein abundance induced by SS-31 treatment. We detected 277 proteins with altered expression levels with aging (q < 0.05 for old controls compared to young controls) and 192 proteins with altered levels in old mice after 8 weeks of SS-31 treatment (q < 0.05 for old SS-31 compared to old controls) . Expression levels of 88 proteins were significantly altered by both aging and SS-31 treatment, and SS-31 attenuated the aging-induced changes for a majority of these proteins (Figure 5). The Ingenuity Pathway Analysis (IPA) top canonical pathways affected by both aging and SS-31 included mitochondrial dysfunction, oxidative phosphorylation, GP6 signaling pathway and sirtuin signaling pathway (p<2.8E-06). However, in comparison with results previously reported for SS-31 treatment in hypertensive heart failure (Dai et al., 2013), these changes were much smaller in magnitude.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/55513/elife-55513-fig5-v2.jpg)
+
+**Figure 5.:** A heatmap of z-scores the 88 proteins that were significantly altered by both aging (q < 0.05 for old control vs. young control) and SS-31 treatment (q < 0.05 for old SS-31 vs. old control); n = 9, 10, and eight male mice for young control, old control and old SS-31, respectively, analyzed as described in the method section. We computed the z-scores of the average log2 abundance values for each of the three groups, where we adjusted the data, by protein, to have a mean of zero and a standard deviation of 1. The heatmap was generated using the ComplexHeatmap (v.1.20.0) R package (Gu et al., 2016), where both the sample groups and the proteins were clustered via the hclust function with the ‘complete’ agglomeration method. Distance matrix for clustering were computed using ‘Euclidean’ distance. The resulting heatmap presents the proteins in rows and sample groups in columns, both of which were grouped according to the clustering results. Row labels on the right are the UniProt ID_Gene Name of each protein. The identities and fold changes of all protein identified are listed in Supplementary file 3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55513/elife-55513-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** A heat map of the relative levels of the 18 metabolites that were significantly (FDR < 0.05) different among treatment groups; n = 10 (for YCL, YSS, OCL) and n = 8 (for OSS) were male mice were analyzed as described in the method section.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55513/elife-55513-fig5-figsupp2-v2.jpg)
+
 We also performed targeted metabolic profiling on cardiac tissue from young and old mice with SS-31 or saline treatment. Out of the 160 metabolites measured, 112 metabolites were detected in all samples (Supplementary file 1) and the levels of 18 metabolites were significantly different among the groups (FDR < 0.05, Supplementary file 2 and Figure 5—figure supplement 1). Age-related reductions in metabolite levels were significant in 11 of the 18 metabolites and while none of these were significantly different between old control and old SS-31 groups, SS-31 partially attenuated these age-related metabolic changes (Supplementary file 2 and Figure 5—figure supplement 1). Enrichment analysis was performed to gain biological insight into the age-related metabolic changes and revealed that two metabolite sets, aspartate metabolism and urea cycle, were significantly enriched (FDR < 0.05) in the 11 metabolites showing age-related changes. A network view of the Enrichment Analysis is shown in Figure 5—figure supplement 2.
 
-## SS-31 treatment normalized age-related hypo-phosphorylation of cMyBP-C at Ser282
+### SS-31 treatment normalized age-related hypo-phosphorylation of cMyBP-C at Ser282
 
 Myofilament proteins are important regulators of cardiac muscle contraction and relaxation. Phosphorylation of myofilament proteins modulates myofilament properties and regulates the relaxation behavior of cardiac muscle (Biesiadecki et al., 2014). More specifically, phosphorylation of cardiac myosin binding protein C (cMyBP-C) can modulate cross-bridge detachment and diastolic function (Tong et al., 2014). Old hearts displayed hypo-phosphorylation of MyBP-C at Ser282, and SS-31 treatment normalized this age-related decrease in cMyBP-C Ser282 phosphorylation (Figure 6a), consistent with its association with improved relaxation. Cardiac troponin I (cTnI) is an inhibitory subunit of troponin, and phosphorylation of cTnI has been shown to increase the rate of cardiac relaxation (Zhang et al., 1995). Phosphorylation of Ser23/24 and Ser150 of cTnI was not altered in old murine hearts, and SS-31 treatment had no effect on Ser23/24 and Ser150 phosphorylation (Figure 6b and c). Titin is a giant myofilament protein in the sarcomere and titin isoform ratio (N2BA/N2B ratio) can modulate passive myocardial and diastolic function (Nagueh et al., 2004). However, we observed no changes in N2BA/N2B ratio with SS-31 treatment (Figure 6d).
 
@@ -96,7 +130,7 @@ Myofilament proteins are important regulators of cardiac muscle contraction and 
 
 **Figure 6.:** (a) Old murine hearts displayed reduced levels of MyBP-C phosphorylation at Ser282, which is normalized by SS-31 treatment. (b–c) Aging and SS-31 treatment did not alter phosphorylation of cTnI at Ser23/24 (b) and Ser150 (c) in hearts For panel a-c, n = 5, 6, and five male mice for young control, old control and old SS-31, respectively, analyzed by one-way ANOVA Dunnett’s post hoc analysis for panel a-c. (d) Titin isoform ratio (N2BA/N2B ratio) did not change with SS-31 treatment; n = 8 and 6 female mice were used for old control and old SS-31, respectively, and were compared by unpaired T-test.
 
-## Late-life mCAT expression also improved diastolic function and SS-31 treatment cannot further improve cardiac function in old mCAT mice
+### Late-life mCAT expression also improved diastolic function and SS-31 treatment cannot further improve cardiac function in old mCAT mice
 
 To determine if reducing mtROS in late-life is sufficient to rescue age-related cardiac dysfunction, we administered an adeno-associated virus serotype-9 vector expressing mitochondrial-targeted catalase (AAV9-mCAT) (Li et al., 2009) to old C57Bl/6 mice to induce expression of catalase in cardiac mitochondria. We observed improved diastolic function at 12 weeks after AAV9-mCAT administration (Figure 7a), suggesting that late-life reduction of mtROS is sufficient to initiate the molecular changes required to reverse age-related diastolic dysfunction. Life-long expression of mCAT was previously shown to prevent age-related mitochondrial ROS accumulation and substantially attenuate declines in cardiac function in old mCAT mice (Dai et al., 2009). To determine if SS-31 treatment would have additive impact on mCAT mice, we administered SS-31 to old mCAT mice, but observed no further improvement in diastolic function at up to 8 weeks (Figure 7b), although the SS-31 induced improvement in diastolic function seen previously in old wild-type mice was fully recapitulated. These results suggest that the cardiac benefits induced by SS-31 and mCAT are mechanistically overlapping.
 
@@ -104,7 +138,7 @@ To determine if reducing mtROS in late-life is sufficient to rescue age-related 
 
 **Figure 7.:** (a) Diastolic function (Ea/Aa) improved at both 8 and 12 weeks after AAV9-mCAT administration. n = 3 (saline) and n = 5 (AAV-mCAT) female mice were analyzed by repeated measure ANOVA with Tukey’s multiple comparison test between time points and Sidak post hoc analysis between treatment groups. (b) 8-week SS-31 improved diastolic function in old WT but did not further improve the function of old mCAT mice; n = 5 (for SS-WT and SS-mCAT) and n = 6 (for Saline-WT) mixed-sex mice were analyzed by repeated measure ANOVA with Tukey’s multiple comparison test between time points. (c) Late-life mCAT expression reduced Ser282 phosphorylation of MyBP-C. (d–e) Late-life mCAT expression increased phosphorylation of cTnI at Ser23/24 (d) and Ser150 (e). For panel c-e, n = 3 and 5 female mice were used for saline and AAV-mCAT, respectively, and were analyzed by unpaired T-test.
 
-## SS-31 treatment and mCAT expression have differential effects on myofilament protein phosphorylation
+### SS-31 treatment and mCAT expression have differential effects on myofilament protein phosphorylation
 
 To investigate the mechanism by which mCAT expression improves diastolic function, we assessed how late-life mCAT expression altered phosphorylation of myofilament proteins. Unlike SS-31, late-life mCAT expression resulted in slight reduction in Ser282 phosphorylation of cMyBP-C (Figure 7c). Interestingly, late-life mCAT expression increased phosphorylation of cTnI at Ser23/24 and Ser150 (Figure 7d and e), which may contribute to the improved diastolic function. While SS-31 treatment and mCAT expression have differential effects on regulation of myofilament protein phosphorylation, both interventions mediate improved diastolic function in old mice.
 
@@ -116,7 +150,7 @@ Mitochondrial dysfunction is a hallmark of aging and has been implicated in the 
 
 **Figure 8.:** While mCAT and SS-31 both inhibit electron transport chain produced ROS, they do so by different mechanisms. Both inhibit a ROS-mediated vicious cycle (ROS induced mtDNA and protein damage leads to greater ROS generation; striped arrows) and ROS-Induced redox signaling. However, by promoting electron transport, preventing proton leakage and augmenting ATP production, SS-31 also improves mitochondrial energetics. By improving mitochondrial energetics and reducing pathologic redox signaling, SS-31 promotes phosphorylation of cMyBP-C to enhance myofilament relaxation kinetics, while mCAT expression does so through promoting phosphorylation of cTnI.
 
-## Targeting mitochondrial oxidative stress in late-life reverses cardiac aging phenotypes
+### Targeting mitochondrial oxidative stress in late-life reverses cardiac aging phenotypes
 
 Transgenic mCAT expression reduces mitochondrial oxidative stress and attenuates cardiac aging phenotypes in mice (Dai et al., 2009). While life-long mCAT expression has many positive effects (Dai et al., 2017), including prevention of pressure-overload induced cardiac hypertrophy or failure (Dai et al., 2011a; Dai et al., 2012) and attenuating the decline in cardiac function during aging (Dai et al., 2009), there may be negative pleotropic effects at young age (Basisty et al., 2016). For this, and practical reasons, a treatment that can be started at old age to reverse cardiac aging is a much more desirable therapeutic strategy. Here, we demonstrated that both SS-31 treatment and mCAT expression starting at late-life can reverse the age-related decline in diastolic function. This result suggests that reducing mitochondrial oxidative stress at late-life can be sufficient to initiate molecular changes, including phosphorylation of myofilament proteins, to improve diastolic function.
 
@@ -128,13 +162,13 @@ In contrast to the benefits detected in old mice after SS-31 treatment, we did n
 
 A recent study by Cieslik and colleagues showed that combined treatment with glutathione precursors, N-Acetyl Cysteine (NAC) and Glycine, but not NAC alone, can reverse age-related diastolic dysfunction (Cieslik et al., 2018). While the study suggests that aged mice may benefit from increased glutathione content, the effects of the combined treatment on in vivo cardiac glutathione contents and S-glutathionylation remain to be established. Here, we showed that SS-31 can reverse diastolic dysfunction and normalized the age-related increase in protein S-glutathionylation without the necessity to exogenously alter glutathione levels. This supports the primary importance of reducing mitochondrial ROS in redox homeostasis. A follow-up protein-by-protein analysis of SS-31 effects on S-glutathionylation will provide further insights on how SS-31 regulates redox homeostasis in the aging hearts (unpublished). In addition, the fact that SS-31 treatment or late-life mCAT expression can reverse age-related diastolic dysfunction but NAC alone fails to do so supports the importance of mitochondrial localization of the ROS combating action in cardiac aging protection.
 
-## Normalization of proton leak in aged cardiomyocytes is a protective mechanism of SS-31
+### Normalization of proton leak in aged cardiomyocytes is a protective mechanism of SS-31
 
 Mitochondrial oxidative phosphorylation is the major source of ATP production in the cell. When electrons from substrate oxidation pass through electron transport chain complexes, the energy generated is used to pump protons from the mitochondrial matrix to the intermembrane space to generate a proton gradient. The resulting protonmotive force drives protons back to mitochondrial matrix through ATP synthase, while converting ADP to ATP. However, this coupling of substrate oxidation and ATP synthesis is incomplete as protons can also re-enter mitochondrial matrix independent of ATP synthesis in a process termed ‘proton leak’ (Jastroch et al., 2010). In this study, we showed that cardiomyocytes from old mice exhibited increased proton leak when compared to cardiomyocytes from young mice. This age-related increase in proton leak is consistent with previous observations that aging increases proton leak in mouse hepatocytes and in mitochondria from rat heart, kidney and liver (Harper et al., 1998; Serviddio et al., 2007). The increased proton leak implicates that aging reduces coupling of substrate oxidation to ATP synthesis, and agrees with the reduced mitochondrial coupling observed in aged skeletal muscle (Campbell et al., 2019; Siegel et al., 2013). Strikingly, 8-week treatment with SS-31 completely reversed the age-related increase in mitochondrial proton leak in cardiomyocytes (Figures 2c, e and 8).
 
 While the molecular mechanisms of proton leak are not fully understood, it has been shown that basal leak through mitochondrial inner membrane or around inner membrane proteins, and inducible leak through adenine nucleotide translocase (ANT) or uncoupling proteins (UCPs) contribute to mitochondrial proton leak (Jastroch et al., 2010). Because SS-31 interacts with cardiolipin in the inner mitochondrial membrane, it is possible that SS-31 can regulate basal leak by preserving inner membrane integrity and normalizing the function of inner membrane spanning proteins. ROS has been shown to induce mitochondrial uncoupling and increase proton leak (Brookes and Mitochondrial, 2005; Brookes et al., 1998; Echtay et al., 2002), and thus, reduced ROS production following SS-31 treatment may also contribute to the lowered proton leak. A protective function of ROS-induced proton leak has been suggested, where increased ROS level promotes proton leak to reduce mitochondrial membrane potential and decrease further ROS production and oxidative damage (Brookes and Mitochondrial, 2005). However, the reduced RCR and increased oxidative damage seen in the aged heart suggest that this increased proton leak is maladaptive and a result of compromised mitochondria function. In addition to suppressing proton leak, SS-31 partially restores the RCR and increases mitochondrial membrane potential in aged cardiomyocytes, suggesting that SS-31 treatment reverses age-related mitochondrial dysfunction. It has been shown that mitochondrial dysfunction induces cellular senescence, and PolG mutator mice, which have increased mtDNA mutation and mtROS, also have accumulation of senescent cells (Wiley et al., 2016). Compared to old controls, SS-31 treated hearts have reduced numbers of p16- or p19-positive senescent cells and this may be a direct result of the restoration of mitochondrial function (Wiley et al., 2016).
 
-## SS-31 and mCAT expression differentially regulate phosphorylation of myofilament proteins to improve diastolic function
+### SS-31 and mCAT expression differentially regulate phosphorylation of myofilament proteins to improve diastolic function
 
 SS-31 treatment reduces cardiac dysfunction in models of pressure-overload induced heart failure, and this is accompanied by marked proteomic changes (Dai et al., 2013). In comparison, however, SS-31 induces more modest changes in protein expression in the aging heart (Figure 5), and no changes in expression of OXPHOS subunits (Figure 3). In this study, we also investigated the effect of SS-31 treatment on the cardiac metabolite profile and detected modest changes in metabolite levels, with SS-31 treatment showing a tendency of attenuation of the age-related metabolic changes.
 
@@ -148,7 +182,234 @@ In conclusion, this study demonstrated that late-life SS-31 treatment can revers
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus; male and female)</td>
+      <td>C57BL/6J</td>
+      <td>National Institute of Aging Charles River colony</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>mCAT</td>
+      <td>Rabinovitch Lab; PMID:15879174</td>
+      <td>RRID:IMSR_JAX:016197; Tg(CAG-OTC/CAT)4033Prab</td>
+      <td>Now available at The Jackson Lab</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AAV9-mCAT</td>
+      <td>Duan Lab, PMID:19690612</td>
+      <td>AV.RSV.MCAT</td>
+      <td>Adeno-associated virus construct to transfect and express mCAT transgene</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-OXPHOS (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab110413 RRID:AB_2629281</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Troponin I (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#4002 RRID:AB_2206278</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pSer23/24-Troponin I (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#4004 RRID:AB_2206275</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pSer150-Troponin I (Rabbit polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>PA5-35410 RRID:AB_2552720</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- cMyBP-C (Mouse monoclonal)</td>
+      <td>Santa Cruz SC-137237</td>
+      <td>SC-137237 RRID:AB_2148327</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pSer282-cMyBP-C (Rabbit polyclonal)</td>
+      <td>Enzo</td>
+      <td>ALX-215–057 R050 RRID:AB_2050502</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p19 (Rabbit polyclonal)</td>
+      <td>LSBio</td>
+      <td>LS-C49180 RRID:AB_1192824</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p16 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab211542</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit Secondary Antibody, HRP</td>
+      <td>ThermoFisher</td>
+      <td>A16035 RRID:AB_2534709</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse Secondary Antibody, HRP</td>
+      <td>ThermoFisher</td>
+      <td>A16072 RRID:AB_2534745</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SS-31 peptide (Elamipretide)</td>
+      <td>Stealth BioTherapeutics</td>
+      <td></td>
+      <td>3 µg/g body weight/day</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>OxiSelect protein carbonyl ELISA kit</td>
+      <td>Cell Biolabs</td>
+      <td>STA-310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ImmPRESS-VR Anti-Rabbit IgG HRP Polymer Detection Kit</td>
+      <td>Vector Laboratories</td>
+      <td>MP-6401–15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Seahorse XF Cell Mito Stress Test Kit</td>
+      <td>Aligent/Seahorse Bioscience</td>
+      <td>103015–100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MitoSOX Red</td>
+      <td>ThermoFisher</td>
+      <td>M36008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MitoPY1</td>
+      <td>Fisher Scientific/Tocris Bioscience</td>
+      <td>44-281-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MitoTracker Green</td>
+      <td>ThermoFisher</td>
+      <td>M7514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MitoTracker Deep Red</td>
+      <td>ThermoFisher</td>
+      <td>M22426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>JC-1 Dye</td>
+      <td>ThermoFisher</td>
+      <td>T3168</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA protein assay</td>
+      <td>Thermo Scientific</td>
+      <td>23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce Reversible Protein Stain Kit for PVDF Membranes</td>
+      <td>Thermo Scientific</td>
+      <td>24585</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Pico PLUS Chemiluminescent Substrate</td>
+      <td>Thermo Scientific</td>
+      <td>34580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaView Software</td>
+      <td>ProteinSimple</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metaboanalyst 4.0</td>
+      <td>www.metaboanalyst.ca; PMID:29762782</td>
+      <td>RRID:SCR_015539</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Topograph</td>
+      <td>MacCoss Lab software; PMID:22865922</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ComplexHeatmap</td>
+      <td>https://github.com/jokergoo/ComplexHeatmap PMID:27207943</td>
+      <td>RRID:SCR_017270</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Young (3–5 month-old) and old (24-month-old) C57BL/6 male and female mice were obtained from the National Institute of Aging Charles River colony. All mice were handled according to the guidelines of the Institutional Animal Care and Use Committee of the University of Washington. Mice were housed at 20°C in an AAALAC accredited facility under Institutional Animal Care Committee supervision.
 
@@ -164,19 +425,19 @@ For treadmill running, male mice were acclimated to the treadmill for two consec
 
 At the endpoint, mice were euthanized by cervical dislocation. The heart was immediately removed, weighed and processed for downstream analyses.
 
-## Cardiomyocyte isolation from adult mice
+### Cardiomyocyte isolation from adult mice
 
 Ventricular myocytes were enzymatically isolated from the hearts of C57BL/6 mice using a protocol modified from that described previously (Zhang et al., 2013). Briefly, the animal was euthanized by cervical dislocation. The heart was immediately removed from the chest, raised and perfused with oxygenated modified Ca2+ free-Tyrode's solution for 5 min. Then the heart was perfused with 50 ml low Ca2+ solution containing 300 U/ml collagenase II + 0.5 mg/ml hyaluronidase at 37°C for 20–30 min. The ventricle was cut into small pieces and further digested under gentle agitation. Rod-shaped adult cardiomyocytes were collected by settling down of cells and plated in 24 well plates for XF24e Extracellular Flux Analyzer analysis (Seahorse Bioscience) or on glass coverslips for confocal imaging.
 
-## Cardiomyocyte imaging
+### Cardiomyocyte imaging
 
 For confocal imaging, we used modified Tyrode’s solution (in mM: 138 NaCl, 0.5 KCl, 20 HEPES, 1.2 MgSO4, 1.2 KH2PO4, 1 CaCl2, 5 Glucose, pH 7.4) and a Leica SP8 (Leica, Germany) inverted confocal microscope for confocal imaging at room temperature. For mitochondrial superoxide quantitation, we used the ratio of MitoSOX Red (5 μM, excited at 540 nm and emissions collected at >560 nm) to MitoTracker Green (200 nM, excited at 488 nm and emission collected at 505–530 nm). For mitochondrial H2O2 measurement, we used the ratio of MitoPY1 (5 μM, excited at 488 nm and emission collected at 520–640 nm) and MitoTracker Deep Red (100 nM, excited at 633 nm and emission collected >660 nm). For mitochondrial membrane potential measurement, JC-1 was excited by 488 nm laser and emission collected at 510–545 nm and 570–650 nm.
 
-## Cardiomyocyte respiration measurement
+### Cardiomyocyte respiration measurement
 
 For intact cardiomyocyte respiration measurement, 800 cardiomyocytes were plated in each well of XF24e Extracellular Flux Analyzer 24 well plates (Seahorse Bioscience) and mitochondrial respiration was assessed in 3 hr after plating. Mitochondrial respiration was assessed using the Seahorse Bioscience XF Cell Mito Stress Test assay, with OCR values measured at baseline and after the sequential addition of 1 μM oligomycin, 0.5 mM FCCP and 1 μM rotenone +1 μM antimycin A (Zhang et al., 2017). The OCR values for basal respiration, proton leak, ATP turnover, maximum respiration and non-mitochondrial respiration were thereby determined. Respiratory control ratio (RCR) was calculated as the ratio of maximum respiration to proton leak.
 
-## Immunoblotting
+### Immunoblotting
 
 Proteins were extracted from frozen heart tissues with K150T buffer (150 mM KCl, 50 mM Tris-HCl pH7.4, 0.125% Na deoxycholate, 0.375%Triton X-100, 0.15% NP-40, 4 mM EDTA, 50 mM NaF) and quantified by BCA protein assay (Thermo Scientific). Equal amount of proteins (15 µg) were resolved on 4–12% NuPAGE Bis-Tris gel and transferred to PVDF membrane. A Pierce Reversible Protein Stain Kit was used to detect total proteins for normalization of loading.
 
@@ -184,32 +445,32 @@ Primary antibodies used in immunoblotting were OXPHOS (Abcam ab110413, at 1:500)
 
 Secondary antibodies used were donkey anti-rabbit IgG secondary antibody and goat anti-mouse IgG secondary antibody (both from Thermo Scientific). SuperSignal West Pico Chemiluminescent Substrate was used for detection and AlphaView Software (Protein Simple, San Jose, CA), was used for image acquisition and quantification.
 
-## Measurement of protein S-glutathionylation
+### Measurement of protein S-glutathionylation
 
 Quantification of protein-S-glutathionylation was performed using an established redox proteomics workflow (Kramer et al., 2018). Briefly, nine heart samples (young, aged with SS-31 treatment, and aged control, n = 3 for each) were subjected to protein extraction, selective reduction and enrichment, trypsin digestion and isobaric labeling with tandem mass tags 10-plex. For occupancy analysis, the levels of total thiol were quantified in a pooled sample. Mass spectrometry was performed on a Q Exactive Plus (Thermo Fisher Scientific), and data processing was conducted as previously described (Kramer et al., 2018). The raw mass spectrometry files for proteomics analysis of S-glutathionylation were uploaded to MassIVE (massive.ucsd.edu) with an accession ID: MSV000085329.
 
-## Protein carbonyl assay
+### Protein carbonyl assay
 
 Protein carbonyl levels in heart tissues were measured using OxiSelect protein carbonyl ELISA kit (Cell Biolabs, San Diego, CA) according to the manufacturer’s instructions.
 
-## Metabolite profiling measurement
+### Metabolite profiling measurement
 
 Pulverized cardiac tissues were homogenized in 200 µl of water and 800 µl of methanol were added to the homogenates. The homogenates were incubated on dry ice for 30 min and then sonicated in ice water bath for 10 min. The homogenates were centrifuged at 13000 rpm at 4°C for 5 min and the soluble extracts were dried by speed vac. The extracts were reconstituted and analyzed by LC-MS as described (Dai et al., 2014b).
 
 The results of metabolite profiling were analyzed using Metaboanalyst 4.0 (Chong et al., 2018). After normalizing to input tissue weight, the relative peak intensities of metabolites were median normalized, log transformed and auto-scaled. One-way ANOVA was used for comparisons among all groups and Tukey’s HSD was used for pairwise comparisons. A heatmap was generated for all metabolites with significantly different levels among groups (FDR < 0.05). For the 11 metabolites that showed age-related changes in levels (p<0.05 by Tukey’s HSD), enrichment analysis was performed by Metaboanalyst 4.0 using the Pathway-associated metabolite sets as library.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Hearts were fixed overnight in 4% paraformaldehyde, paraffin embedded and 4 μm sections deparaffinized, treated with ethylenediamine tetraacetic acid (EDTA) buffer pH eight and incubated with rabbit anti-p16 antibody (1:300, Abcam ab211542) or anti-p19 antibody (1:300, LSBio LS-C49180), Seattle, WA) overnight at 4°C. Secondary antibody detection was performed with ImmPRESS VR Anti-Rabbit IgG HRP Polymer Detection Kit (Vector Laboratories, Burlingame, CA), developed with diaminobenzidine (Sigma-Aldrich, St. Louis, MO) and counterstained with Mayer’s Hematoxylin (Sigma-Aldrich, St. Louis, MO). Positive nuclear stain was expressed as a percentage of p16 positive or p19 positive nuclei (brown) versus total nuclei (brown + blue).
 
-## Mass spectrometry for proteomic analysis
+### Mass spectrometry for proteomic analysis
 
 Pulverized heart tissues were homogenized in ice-cold extraction buffer (250 mM sucrose, 1 mM EGTA, 10 mM HEPES, 10 mM Tris-HCl pH7.4). Lysates were centrifuged at 800 x g for 10 min to remove debris. Samples were trypsin digested and purified by MCX column (Waters). LC-MS/MS analysis was performed with a Waters nanoAcquity UPLC and a Thermo Scientific Q Exactive mass spectrometer. Topograph software was used for peptide abundance measurement as previously described (Dai et al., 2014b). The statistical analysis of relative protein abundance between experimental groups was performed using a linear model of peptide abundance to calculate fold changes of proteins between experimental groups using the R/Bioconductor software. The p-values were adjusted for multiple comparison with the Bioconductor package q-value (Dai et al., 2014b). The fold changes and statistics of all identified proteins were shown in Supplementary file 3. In order to generate the heatmap, we computed a z-score of the average log2-abundance, where we adjusted the data, by protein, to have a mean of zero and a standard deviation of 1. The heatmap was generated using the Complex Heatmap (v.1.20.0) R package. We used IPA (https://www.qiagenbioinformatics.com/products/ingenuity-pathway-analysis/) to identify pathways that were significantly altered by both aging and SS-31 treatment within the dataset. The raw mass spectrometry files were uploaded to MassIVE (massive.ucsd.edu/) with an accession ID: MSV000084961.
 
-## Measurement of titin isoforms
+### Measurement of titin isoforms
 
 Relative expression of N2B and N2BA isoforms of titin was assessed in heart tissues using a vertical SDS-agarose gel system as previously described (Tonino et al., 2017; Warren et al., 2003). The ratio of intensities of N2BA band and N2B band was then determined.
 
-## Statistical analyses
+### Statistical analyses
 
 Echocardiographic results were analyzed by repeated measure ANOVA with Tukey’s multiple comparison test between time points and Sidak post hoc analysis between treatment groups. Results of cardiomyocyte imaging, immunohistochemistry and AAV9-mCAT immunoblotting were analyzed by unpaired T-test compared to old saline control. HW/Tibia, mitochondrial respiration and immunoblotting results of SS-31 experiments were analyzed by one-way ANOVA with SNK or Dunnett’s post hoc analysis. Graphpad Prism 8 was used for statistical analyses and data were plotted as mean with SEM. Results of metabolite profiling and proteomic analysis were analyzed as described in above sections. Data from mice that died before the designed endpoints were excluded from the study.

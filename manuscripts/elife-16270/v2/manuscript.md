@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.16270.001 Mitosis occurs efficiently, but when it is disturbed or delayed, p53-dependent cell death or senescence is often triggered after mitotic exit. To characterize this process, we conducted CRISPR-mediated loss-of-function screens using a cell-based assay in which mitosis is consistently disturbed by centrosome loss. We identified 53BP1 and USP28 as essential components acting upstream of p53, evoking p21-dependent cell cycle arrest in response not only to centrosome loss, but also to other distinct defects causing prolonged mitosis. Intriguingly, 53BP1 mediates p53 activation independently of its DNA repair activity, but requiring its interacting protein USP28 that can directly deubiquitinate p53 in vitro and ectopically stabilize p53 in vivo. Moreover, 53BP1 can transduce prolonged mitosis to cell cycle arrest independently of the spindle assembly checkpoint (SAC), suggesting that while SAC protects mitotic accuracy by slowing down mitosis, 53BP1 and USP28 function in parallel to select against disturbed or delayed mitosis, promoting mitotic efficiency. DOI: http://dx.doi.org/10.7554/eLife.16270.001
+Mitosis occurs efficiently, but when it is disturbed or delayed, p53-dependent cell death or senescence is often triggered after mitotic exit. To characterize this process, we conducted CRISPR-mediated loss-of-function screens using a cell-based assay in which mitosis is consistently disturbed by centrosome loss. We identified 53BP1 and USP28 as essential components acting upstream of p53, evoking p21-dependent cell cycle arrest in response not only to centrosome loss, but also to other distinct defects causing prolonged mitosis. Intriguingly, 53BP1 mediates p53 activation independently of its DNA repair activity, but requiring its interacting protein USP28 that can directly deubiquitinate p53 in vitro and ectopically stabilize p53 in vivo. Moreover, 53BP1 can transduce prolonged mitosis to cell cycle arrest independently of the spindle assembly checkpoint (SAC), suggesting that while SAC protects mitotic accuracy by slowing down mitosis, 53BP1 and USP28 function in parallel to select against disturbed or delayed mitosis, promoting mitotic efficiency.
 
 ## Introduction
 
@@ -31,101 +31,282 @@ In addition to aforementioned damages, p53-dependent cell death or senescence ha
 
 ## Results
 
-## A cell-based assay for centrosome loss-induced mitotic stress
+### A cell-based assay for centrosome loss-induced mitotic stress
 
-Using diploid, non-transformed retinal pigment epithelial (RPE) cells, we constructed a stable
+Using diploid, non-transformed retinal pigment epithelial (RPE) cells, we constructed a stable PLK4as cell line in which the endogenous PLK4, a kinase specifically required for centrosome duplication (Habedanck et al., 2005; Bettencourt-Dias et al., 2005), was replaced with an analog-sensitive mutant (PLK4as) that could be chemically inactivated by the ATP analog 3MBPP1 (see Materials and methods) (Kim, 2016). Upon PLK4 inactivation, cells were gradually depleted of centrosomes (Figure 1—figure supplement 1), and started to divide more slowly with mitotic duration increasing to ~100 min instead of ~30 min observed in control cells (Figure 1A). Within a few days, all acentrosomal cells stopped proliferating (Figure 1B), and were arrested in G1 with high levels of nuclear p53 and p21 (Figure 1C and D), consistent with a previous report (Wong, 2015). Removal of p53 (Figure 1—figure supplement 2), however, alleviated both the growth arrest (Figure 1E) and nuclear accumulation of p21 (Figure 1F), but not mitotic delay (Figure 1G), allowing acentrosomal cells to continue proliferating in the presence of mitotic stress at rates not significantly different from control or unstressed cells (Figure 1E). We thus established a genetically defined, chemically inducible assay in which the p53-dependent G1 arrest induced by centrosome loss could be uniformly activated and thus systematically dissected.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig1-v2.jpg)
 
-**Figure 1.:** (A) Acentrosomal cells exhibits prolonged mitosis. Measurement of mitotic duration of wild type RPE1 and PLK4 cells dividing in the presence or absence of 3MBPP1 with live-cell imaging. With 3MBPP1 treatment, cells gradually lost centrosomes and ceased to proliferate; the duration of acentrosomal mitosis was measured four days after 3MBPP1 addition. Data are means ± SD. asn>30, N = 3. (B) Cell proliferation ceases in acentrosomal cells. Growth curve of wild type RPE1 and PLK4 cells with or without 3MBPP1 treatment. Data are means ± SD. asn>50, N = 3. (C) p53 and p21 accumulate in the nucleus of acentrosomal cells. Quantification of p53 (left) and p21 (right) nuclear accumulation in wild type RPE1 and PLK4 cells after 3MBPP1 addition. Data are means ± SD. asn>100, N = 3. (D) Representative immunofluorescence images of cells in (C) on day 6 stained with antibodies against p53 and p21. Scale bar, 5 μm. (E) Acentrosomal cells continue to proliferate when p53 is removed. The growth curve of PLK4 cells following 3MBPP1 addition. Refer to (as; p53-/-B) for growth curves of PLK4cells. Data are means ± SD. asn>50, N = 3. (F) p21 does not accumulate in PLK4 cells during acentrosomal cell division. Immunofluorescence images of cells stained with the antibodies indicated. Scale bar, 5 μm. (as; p53-/-G) PLK4 cells divide by prolonged mitosis in the absence of the centrosome. Graph showing mitotic duration of centrosomal and acentrosomal as; p53-/-PLK4 cells measured with live-cell imaging. Data are means ± SD. as; p53-/-n>30, N = 3.DOI: http://dx.doi.org/10.7554/eLife.16270.002
+**Figure 1.:** (A) Acentrosomal cells exhibits prolonged mitosis. Measurement of mitotic duration of wild type RPE1 and PLK4as cells dividing in the presence or absence of 3MBPP1 with live-cell imaging. With 3MBPP1 treatment, cells gradually lost centrosomes and ceased to proliferate; the duration of acentrosomal mitosis was measured four days after 3MBPP1 addition. Data are means ± SD. n>30, N = 3. (B) Cell proliferation ceases in acentrosomal cells. Growth curve of wild type RPE1 and PLK4as cells with or without 3MBPP1 treatment. Data are means ± SD. n>50, N = 3. (C) p53 and p21 accumulate in the nucleus of acentrosomal cells. Quantification of p53 (left) and p21 (right) nuclear accumulation in wild type RPE1 and PLK4as cells after 3MBPP1 addition. Data are means ± SD. n>100, N = 3. (D) Representative immunofluorescence images of cells in (C) on day 6 stained with antibodies against p53 and p21. Scale bar, 5 μm. (E) Acentrosomal cells continue to proliferate when p53 is removed. The growth curve of PLK4as; p53-/- cells following 3MBPP1 addition. Refer to (B) for growth curves of PLK4ascells. Data are means ± SD. n>50, N = 3. (F) p21 does not accumulate in PLK4as; p53-/- cells during acentrosomal cell division. Immunofluorescence images of cells stained with the antibodies indicated. Scale bar, 5 μm. (G) PLK4as; p53-/- cells divide by prolonged mitosis in the absence of the centrosome. Graph showing mitotic duration of centrosomal and acentrosomal PLK4as; p53-/- cells measured with live-cell imaging. Data are means ± SD. n>30, N = 3.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Wild type RPE1 and PLK4 cell line treated with 3MBPP1 for seven days stained with antibodies against centrin-2 and γ-tub to mark centrosomes. Scale bar, 5 μm.asDOI: http://dx.doi.org/10.7554/eLife.16270.003
+**Figure 1—figure supplement 1.:** Wild type RPE1 and PLK4as cell line treated with 3MBPP1 for seven days stained with antibodies against centrin-2 and γ-tub to mark centrosomes. Scale bar, 5 μm.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** Positions of sgRNA target site within the ORF of the p53 gene is depicted in the map. Descriptions of mutant indels are depicted below. Green colored nucleotides are insertions. sgRNA target site is underlined. All indels are frameshift mutations that lead to a premature stop codon. Immunofluorescence images of wild type and CRISPR cell line stained with p53 antibody are shown to the right. The percentage in the merged panel indicates the proportion of cells with positive staining of p53. Also shown to the right is a western blot of p53 levels in wild type and p53 CRISPR cell line. Scale bar, 5 μm.DOI: http://dx.doi.org/10.7554/eLife.16270.004
+**Figure 1—figure supplement 2.:** Positions of sgRNA target site within the ORF of the p53 gene is depicted in the map. Descriptions of mutant indels are depicted below. Green colored nucleotides are insertions. sgRNA target site is underlined. All indels are frameshift mutations that lead to a premature stop codon. Immunofluorescence images of wild type and CRISPR cell line stained with p53 antibody are shown to the right. The percentage in the merged panel indicates the proportion of cells with positive staining of p53. Also shown to the right is a western blot of p53 levels in wild type and p53 CRISPR cell line. Scale bar, 5 μm.
 
-## CRISPR-mediated, loss-of-function screens for components acting upstream or downstream of p53 in response to centrosome loss
+### CRISPR-mediated, loss-of-function screens for components acting upstream or downstream of p53 in response to centrosome loss
 
-Using this system, we carried out a genome-wide CRISPR-mediated loss-of-function screen for genes whose inactivation enabled
+Using this system, we carried out a genome-wide CRISPR-mediated loss-of-function screen for genes whose inactivation enabled PLK4as; p53+/+ cells to survive and proliferate in the absence of centrosomes (Figure 2A). Eight independent screens were performed using a pooled lentivirus sgRNA library covering >95% of human genes (Sanjana et al., 2014; Shalem et al., 2014), with each gene targeted by at least 6 different sgRNAs. sgRNAs carried or enriched by survivors were analyzed by deep sequencing to reveal the targeted genes, and 27 candidate genes were identified (Figure 2B and Table 1). sgRNAs for 5 genes were most highly enriched (Figure 2B and Table 1), including the previously known p53 and p21, and three novel genes, 53BP1, USP28, and TRIM37 that have not been linked to centrosome loss-induced G1 arrest. Moreover, for these 5 genes, at least 3 out of the 6 sgRNAs were repeatedly enriched in independent screens (Table 1), suggesting that they are unlikely false positive hits. 53BP1 is a known key player in DNA double-strand break (DSB) repair (Panier and Boulton, 2014), but was first characterized as a binding partner of p53, albeit with unclear functions (Thukral et al., 1994; Iwabuchi et al., 1994). USP28 is a deubiquitinating enzyme known to interact with 53BP1 (Zhang et al., 2006), but it puzzlingly has minor or no role in DSB repair (Knobel et al., 2014), raising an interesting possibility that perhaps 53BP1 and USP28 have a specific role in centrosome loss-induced G1 arrest. Apart from 53BP1, no other sgRNAs targeting major DNA damage response (DDR) components such as ATM, MDC1, RNF8 or BRCA1 were enriched in our screen (Figure 2B), even though they could be repeatedly detected in the baseline reads in all independent screens. To ensure the specificity of the results, we verified these top hits by creating individual CRISPR cell lines in the PLK4as background (see Materials and methods; Figure 2—figure supplement 1) and assessed their growth in the presence or absence of centrosomes. Similar to p53-/- cells, clonal 53BP1-/-, USP28-/-, TRIM37-/-, and p21-/- cell lines continued to proliferate regardless of whether the centrosomes are present or not (Figure 2C), validating our screen. Analyses of TRIM37, however, indicate that it is involved in a distinct cellular process (not shown), and thus will be addressed elsewhere. Here we focus our report on 53BP1 and USP28, and their relationships with p53 and p21.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig2-v2.jpg)
 
-**Figure 2.:** (A) Schematic representation of the loss-of-function screen for components required for centrosome loss induced G1 arrest using the human genome-scale CRISPR knockout library (GeCKO). (B) Binary logarithm of sgRNA enrichment for genes potentially involving in centrosome loss induced G1 arrest, normalized to the top scoring hit p53. The HiSeq data was collected from eight independent screens. A candidate gene must be hit repeatedly with high scores (HiSeq reads) by two or more of its six sgRNAs in independent screens. Interesting negative hits were also shown, including critical DDR components whose sgRNAs were not enriched but detected only in the baseline reads. (C) Validation of top five scoring hits from the screen other than the p53 control. The results shown here used clonal 53BP1-/-, USP28-/-, and p21-/- CRISPR knockout cell lines derived from PLK4as knock-in cells (PLK4) obtained from A. Holland (as-KIMoyer et al., 2015) (see Materials and methods). The growth curve of the indicated individual CRISPR cell lines in the presence or absence of 3MBPP1 was shown. Data are means ± SD. n>50, N = 3. (D) Acentrosomal 53BP1, -/-USP28 and -/-p21 cells proliferate in the presence of mitotic delay. Graph showing mitotic duration of the indicated CRISPR cell lines dividing with or without centrosomes measured with live-cell imaging. Data are means ± SD. -/-n>30, N = 3. (E) 53BP1 and USP28 function upstream of p53 to activate G1 arrest. Immunofluorescence images of CRISPR cell lines grown in 3MBPP1 stained with the indicated antibodies. The percentage in the merged panel indicates the proportion of cells with p53 nuclear accumulation. Scale bar, 5 μm. (F) Total p53 levels are not elevated in acentrosomal 53BP1 cells. Immunoblot for p53 protein of the indicated cell lines grown in the presence or absence of 3MBPP1 for seven days. (-/-, USP28-/-G) p53 protein elevation during centrosome loss-induced G1 arrest is not due to increased p53 transcription. Quantification of p53 mRNA levels relative to GAPDH in (F) by qRT-PCR. Data are means ± SD. n = 6 from two independent experiments. (H) 53BP1 cells do not arrest in G1 despite experiencing mitotic stresses induced by different drug treatments. BrdU incorporation assay for 24 hr showing proportion of proliferating cells in the indicated CRISRP cell lines following release into mitosis with different duration of Eg5 inhibitor (top panels) and MG132 (bottom panels) treatment and washout. Percentages are normalized to the untreated control. Data are means ± SD. -/-, USP28-/-n>250, N = 3.DOI: http://dx.doi.org/10.7554/eLife.16270.005
+**Figure 2.:** (A) Schematic representation of the loss-of-function screen for components required for centrosome loss induced G1 arrest using the human genome-scale CRISPR knockout library (GeCKO). (B) Binary logarithm of sgRNA enrichment for genes potentially involving in centrosome loss induced G1 arrest, normalized to the top scoring hit p53. The HiSeq data was collected from eight independent screens. A candidate gene must be hit repeatedly with high scores (HiSeq reads) by two or more of its six sgRNAs in independent screens. Interesting negative hits were also shown, including critical DDR components whose sgRNAs were not enriched but detected only in the baseline reads. (C) Validation of top five scoring hits from the screen other than the p53 control. The results shown here used clonal 53BP1-/-, USP28-/-, and p21-/- CRISPR knockout cell lines derived from PLK4as knock-in cells (PLK4as-KI) obtained from A. Holland (Moyer et al., 2015) (see Materials and methods). The growth curve of the indicated individual CRISPR cell lines in the presence or absence of 3MBPP1 was shown. Data are means ± SD. n>50, N = 3. (D) Acentrosomal 53BP1-/-, USP28-/- and p21-/- cells proliferate in the presence of mitotic delay. Graph showing mitotic duration of the indicated CRISPR cell lines dividing with or without centrosomes measured with live-cell imaging. Data are means ± SD. n>30, N = 3. (E) 53BP1 and USP28 function upstream of p53 to activate G1 arrest. Immunofluorescence images of CRISPR cell lines grown in 3MBPP1 stained with the indicated antibodies. The percentage in the merged panel indicates the proportion of cells with p53 nuclear accumulation. Scale bar, 5 μm. (F) Total p53 levels are not elevated in acentrosomal 53BP1-/-, USP28-/- cells. Immunoblot for p53 protein of the indicated cell lines grown in the presence or absence of 3MBPP1 for seven days. (G) p53 protein elevation during centrosome loss-induced G1 arrest is not due to increased p53 transcription. Quantification of p53 mRNA levels relative to GAPDH in (F) by qRT-PCR. Data are means ± SD. n = 6 from two independent experiments. (H) 53BP1-/-, USP28-/- cells do not arrest in G1 despite experiencing mitotic stresses induced by different drug treatments. BrdU incorporation assay for 24 hr showing proportion of proliferating cells in the indicated CRISRP cell lines following release into mitosis with different duration of Eg5 inhibitor (top panels) and MG132 (bottom panels) treatment and washout. Percentages are normalized to the untreated control. Data are means ± SD. n>250, N = 3.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Positions of sgRNA target sites within the ORF of each gene are depicted on maps. Descriptions of mutant indels are depicted below. Red colored bases represent deleted nucleotides. Green colored nucleotides are insertions. sgRNA target sites are underlined. All indels are frameshift mutations that lead to a premature stop codon. Immunofluorescence images of wild type and CRISPR cell lines stained with antibodies indicated are shown to the right. The percentage in the merged panel indicates the proportion of cells with positive staining of the respective antibodies. Also shown to the right are western blots of the indicated proteins in wild type and CRISPR cell lines. The endogenous level of USP28 in RPE1 cells is too low to be detected by western blot (can be detected when overexpressed, not shown), and can only be seen by immunofluorescence. Scale bar, 5 μm.DOI: http://dx.doi.org/10.7554/eLife.16270.006
+**Figure 2—figure supplement 1.:** Positions of sgRNA target sites within the ORF of each gene are depicted on maps. Descriptions of mutant indels are depicted below. Red colored bases represent deleted nucleotides. Green colored nucleotides are insertions. sgRNA target sites are underlined. All indels are frameshift mutations that lead to a premature stop codon. Immunofluorescence images of wild type and CRISPR cell lines stained with antibodies indicated are shown to the right. The percentage in the merged panel indicates the proportion of cells with positive staining of the respective antibodies. Also shown to the right are western blots of the indicated proteins in wild type and CRISPR cell lines. The endogenous level of USP28 in RPE1 cells is too low to be detected by western blot (can be detected when overexpressed, not shown), and can only be seen by immunofluorescence. Scale bar, 5 μm.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** BrdU incorporation assay for Figure 2H.DOI: http://dx.doi.org/10.7554/eLife.16270.007
+**Figure 2—figure supplement 2.:** BrdU incorporation assay for Figure 2H.
+
+**Table 1.**
+ Candidate genes enriched in the eight independent screens for genes involved in centrosome loss-induced G1 arrest.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Enrichment compared to p53</th>
+      <th>Gene symbol</th>
+      <th>Gene name or description</th>
+      <th>Number of sgRNAs enriched out of total 6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.0000</td>
+      <td>TP53</td>
+      <td>Tumor Protein P53</td>
+      <td>5/6</td>
+    </tr>
+    <tr>
+      <td>0.9386</td>
+      <td>TP53BP1</td>
+      <td>Tumor Protein P53 Binding Protein 1</td>
+      <td>4/6</td>
+    </tr>
+    <tr>
+      <td>0.9039</td>
+      <td>TRIM37</td>
+      <td>Tripartite Motif Containing 37</td>
+      <td>3/6</td>
+    </tr>
+    <tr>
+      <td>0.8895</td>
+      <td>USP28</td>
+      <td>Ubiquitin Specific Peptidase 28</td>
+      <td>4/6</td>
+    </tr>
+    <tr>
+      <td>0.8858</td>
+      <td>P21</td>
+      <td>Cyclin-Dependent Kinase Inhibitor 1A (P21, Cip1)</td>
+      <td>6/6</td>
+    </tr>
+    <tr>
+      <td>0.7559</td>
+      <td>CHD8</td>
+      <td>Chromodomain Helicase DNA Binding Protein 8</td>
+      <td>4/6</td>
+    </tr>
+    <tr>
+      <td>0.6945</td>
+      <td>FBXO42</td>
+      <td>F-Box Protein 42</td>
+      <td>3/6</td>
+    </tr>
+    <tr>
+      <td>0.6846</td>
+      <td>RNF20</td>
+      <td>Ring Finger Protein 20, E3 Ubiquitin Protein Ligase</td>
+      <td>3/6</td>
+    </tr>
+    <tr>
+      <td>0.6665</td>
+      <td>PCDHGC5</td>
+      <td>Protocadherin Gamma Subfamily C, 5</td>
+      <td>2/6</td>
+    </tr>
+    <tr>
+      <td>0.6604</td>
+      <td>TSPY8</td>
+      <td>Testis Specific Protein, Y-Linked 8</td>
+      <td>3/6</td>
+    </tr>
+    <tr>
+      <td>0.6395</td>
+      <td>RWDD3</td>
+      <td>RWD Domain Containing 3</td>
+      <td>2/6</td>
+    </tr>
+    <tr>
+      <td>0.6364</td>
+      <td>UGT1A9</td>
+      <td>UDP Glucuronosyltransferase 1 Family, Polypeptide A9</td>
+      <td>2/6</td>
+    </tr>
+    <tr>
+      <td>0.6285</td>
+      <td>PDSS1</td>
+      <td>Prenyl (Decaprenyl) Diphosphate Synthase, Subunit 1</td>
+      <td>2/6</td>
+    </tr>
+    <tr>
+      <td>0.6275</td>
+      <td>BPIFB4</td>
+      <td>BPI Fold Containing Family B, Member 4</td>
+      <td>2/6</td>
+    </tr>
+    <tr>
+      <td>0.6240</td>
+      <td>PCDHAC2</td>
+      <td>Protocadherin Alpha Subfamily C, 2</td>
+      <td>3/6</td>
+    </tr>
+    <tr>
+      <td>0.6218</td>
+      <td>CSNK2A1</td>
+      <td>Casein Kinase 2, Alpha 1 Polypeptide</td>
+      <td>2/6</td>
+    </tr>
+    <tr>
+      <td>0.6201</td>
+      <td>GAGE7</td>
+      <td>G Antigen 7</td>
+      <td>3/6</td>
+    </tr>
+    <tr>
+      <td>0.6119</td>
+      <td>WTAP</td>
+      <td>Wilms Tumor 1 Associated Protein</td>
+      <td>2/6</td>
+    </tr>
+    <tr>
+      <td>0.6093</td>
+      <td>PRDM11</td>
+      <td>PR Domain Containing 11</td>
+      <td>2/6</td>
+    </tr>
+    <tr>
+      <td>0.6086</td>
+      <td>OR56A1</td>
+      <td>Olfactory Receptor, Family 56, Subfamily A, Member 1</td>
+      <td>2/6</td>
+    </tr>
+    <tr>
+      <td>0.6059</td>
+      <td>TBCEL</td>
+      <td>Tubulin Folding Cofactor E-Like</td>
+      <td>2/6</td>
+    </tr>
+    <tr>
+      <td>0.5997</td>
+      <td>DNAJC9</td>
+      <td>DnaJ (Hsp40) Homolog, Subfamily C, Member 9</td>
+      <td>2/6</td>
+    </tr>
+    <tr>
+      <td>0.5991</td>
+      <td>NPIPL3</td>
+      <td>Nuclear Pore Complex Interacting Protein Family, Member B3</td>
+      <td>3/6</td>
+    </tr>
+    <tr>
+      <td>0.5987</td>
+      <td>SYDE1</td>
+      <td>Synapse Defective 1, Rho GTPase, Homolog 1</td>
+      <td>2/6</td>
+    </tr>
+    <tr>
+      <td>0.5959</td>
+      <td>TECPR2</td>
+      <td>Tectonin Beta-Propeller Repeat Containing 2</td>
+      <td>2/6</td>
+    </tr>
+    <tr>
+      <td>0.5683</td>
+      <td>STOML3</td>
+      <td>Stomatin (EPB72)-Like 3</td>
+      <td>2/6</td>
+    </tr>
+    <tr>
+      <td>0.5507</td>
+      <td>DVL3</td>
+      <td>Dishevelled Segment Polarity Protein 3</td>
+      <td>2/6</td>
+    </tr>
+  </tbody>
+</table>
+
+_Log2 scaling of sgRNAs enrichment normalized to the top scoring hit p53. The sgRNAs for genes highlighted in red were validated in this study. For a gene to be scored as a candidate, at least two of its six sgRNAs were repeatedly enriched in independent screens, with the HiSeq reads at least 3 times higher than the average of the baseline read._
 
 Similar to p53-/- cells, 53BP1-/-, USP28-/- and p21-/- cells were found to actively proliferate with normal mitotic duration in the presence of centrosomes (Figure 2D), indicating that these genes do not have a direct role in regulating mitotic progression. In the absence of centrosomes, however, 53BP1-/-, USP28-/- and p21-/- cells experienced a similar 90-minute mitotic delay (Figure 2D), an indication of mitotic disturbance or stress, but could not activate cell cycle arrest (Figure 2C), suggesting that 53BP1, USP28 and p21, together with p53, have an important role in centrosome loss-induced G1 arrest. To test whether 53BP1 and USP28 act downstream or upstream of p53 in the pathway, we examined p53 accumulation in cells. Upon centrosome removal, nuclear p53 was detected in nearly all PLK4as cells arrested in G1 (Figure 1C, left). The same result was seen for acentrosomal p21-/- cells (Figure 2E) albeit actively proliferating, consistent with p21 acting downstream of p53 to execute G1 arrest (Wong, 2015; Stewart et al., 1999). Conversely, the frequency of nuclear p53 accumulation in acentrosomal 53BP1-/- or USP28-/- cells (Figure 2E) was no different from that of unstressed, centrosomal cells (Figure 1C, left). Similarly, western blot analyses revealed that the total p53 levels in 53BP1-/- or USP28-/- cells were kept low during acentrosomal cell division in the presence of mitotic delay (Figure 2F), indicating that 53BP1 and USP28 function upstream of p53 to initiate cell cycle arrest in response to centrosome loss. Note that the elevation in p53 protein levels during centrosome loss-induced G1 arrest was likely due to a post-transcription event, as we observed no increase in p53 mRNA levels during the arrest (Figure 2G). We have thus established the first vertebrate cell lines, 53BP1-/- or USP28-/- cells, in which centrosomes can be stably lost without abolishing the entire p53 network.
 
-## 53BP1 and USP28 are required for G1 arrest induced by different mitotic stresses
+### 53BP1 and USP28 are required for G1 arrest induced by different mitotic stresses
 
 We next asked whether 53BP1 and USP28 are part of the G1 arrest machinery specific to the loss of centrosome or more general to other cellular damages that induce mitotic stress/delay. We tested the ability of 53BP1-/- and USP28-/- cells to proliferate after experiencing mitotic delay caused by an Eg5 inhibitior (dimethylenastron) or proteasome inhibitor (MG132) treatment. Eg5 inhibitor and MG132 induce mitotic delay through distinct mechanisms, with the former a spindle poison disrupting spindle bipolarity, and the latter blocking cyclin B destruction without affecting spindle assembly. To this end, cells were synchronized at G2-M transition by CDK1 inhibitor RO-3306, after which they were released into mitosis in the presence of Eg5 inhibitor or MG132. Mitotic cells were then shaken off at defined time points, washed of the drugs and cultured for 24 hr in the presence of bromodeoxyuridine (BrdU) (Figure 2—figure supplement 2). While most wild-type cells exposed to Eg5 inhibitor or MG132 for 2 hr or more did not show BrdU incorporation, an indication of a cell cycle arrest in G1, p53-/- cells continued to proliferate under the same conditions (Figure 2H). Strikingly, similar to p53-/- cells, most 53BP1-/- and USP28-/- cells also continued to progress through the cell cycle after exposure to the drugs (Figure 2H), demonstrating that 53BP1 and USP28 are broadly required for G1 arrest induced by different mitotic stresses.
 
-## 53BP1 mediates centrosome loss-induced G1 arrest independent of its DNA repair activity
+### 53BP1 mediates centrosome loss-induced G1 arrest independent of its DNA repair activity
 
-It was intriguing that a critical component of DDR was identified in our screen after several reports had suggested that DDR is not involved in the G1 arrest induced by acentrosomal division (
+It was intriguing that a critical component of DDR was identified in our screen after several reports had suggested that DDR is not involved in the G1 arrest induced by acentrosomal division (Bazzi and Anderson, 2014; Wong, 2015). This led us to hypothesize that 53BP1 mediates the G1 arrest independently of its DDR role. Inspection of 53BP1 sequence revealed that apart from the multiple domains and motifs that are critical for DDR function (Panier and Boulton, 2014), the C-terminal tandem BRCT domain is not (Ward et al., 2006) (Figure 3A). Interestingly, the tandem BRCT domain is known to interact with p53 and USP28 (Iwabuchi et al., 1994; Knobel et al., 2014; Joo et al., 2002; Derbyshire et al., 2002). We hence speculated that the tandem BRCT domain is required for the G1 arrest induced by centrosome loss. To test this, we stably expressed exogenous wild type 53BP1 or 53BP1 BRCT-deletion mutant (53BP1ΔBRCT) in PLK4as; 53BP1-/- cells (Figure 3—figure supplement 1), inactivated PLK4 to induce centrosome loss, and assessed whether the G1 arrest could be rescued (Figure 3—figure supplement 2). While ~90% of the cells expressing wild-type 53BP1 arrested in G1 upon centrosome removal, reintroduction of the 53BP1ΔBRCT mutant failed to do so, allowing acentrosomal cells to proliferate in the presence of mitotic stress/delay (Figure 3B and C). DDR response in cells expressing the 53BP1ΔBRCT was intact as the mutant protein localized to DNA damage sites marked by γ-H2AX (Figure 3—figure supplement 3), consistent with previous reports (Ward et al., 2006). Our results thus demonstrate that centrosome loss-induced G1 arrest requires the DDR-independent tandem BRCT domain of 53BP1.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig3-v2.jpg)
 
-**Figure 3.:** (A) Domain organization of 53BP1. BRCT (BRCA1 carboxy-terminal), UDR (ubiquitylation-dependent recruitment). p53 and USP28 interact with 53BP1 through the tandem BRCT domain. (B) 53BP1ΔBRCT mutant does not rescue the G1 arrest in PLK4 cells after centrosome removal. Wild-type or indicated mutant 53BP1 were mildly expressed under the tetracycline inducible promoter in stable, clonal, centrosomal as; 53BP1-/-PLK4 cells (see Materials and methods), during which centrosome loss was induced by 3MBPP1 addition. BrdU was added on day six after 3MBPP1 addition and cells were harvested 24 hr later for BrdU incorporation assay (3MBPP1 treatment for seven days in total). Data are means ± SD. as; 53BP1-/-n>150, N = 3. (C) Representative immunofluorescence images of cells in (B) stained with the indicated antibodies seven days after 3MBPP1 treatment. 53BP1 was stained with anti-GFP FITC conjugated antibody. Scale bar, 5 μm.DOI: http://dx.doi.org/10.7554/eLife.16270.009
+**Figure 3.:** (A) Domain organization of 53BP1. BRCT (BRCA1 carboxy-terminal), UDR (ubiquitylation-dependent recruitment). p53 and USP28 interact with 53BP1 through the tandem BRCT domain. (B) 53BP1ΔBRCT mutant does not rescue the G1 arrest in PLK4as; 53BP1-/- cells after centrosome removal. Wild-type or indicated mutant 53BP1 were mildly expressed under the tetracycline inducible promoter in stable, clonal, centrosomal PLK4as; 53BP1-/- cells (see Materials and methods), during which centrosome loss was induced by 3MBPP1 addition. BrdU was added on day six after 3MBPP1 addition and cells were harvested 24 hr later for BrdU incorporation assay (3MBPP1 treatment for seven days in total). Data are means ± SD. n>150, N = 3. (C) Representative immunofluorescence images of cells in (B) stained with the indicated antibodies seven days after 3MBPP1 treatment. 53BP1 was stained with anti-GFP FITC conjugated antibody. Scale bar, 5 μm.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** PLK4 cells.as; 53BP1-/-Western blot of PLK4 cells mildly expressing (10 ng/ml doxycycline) wild type and mutant 53BP1.as; 53BP1-/-DOI: http://dx.doi.org/10.7554/eLife.16270.010
+**Figure 3—figure supplement 1.:** Western blot of PLK4as; 53BP1-/- cells mildly expressing (10 ng/ml doxycycline) wild type and mutant 53BP1.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** BrdU incorporation assay for Figure 3B.DOI: http://dx.doi.org/10.7554/eLife.16270.011
+**Figure 3—figure supplement 2.:** BrdU incorporation assay for Figure 3B.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** 53BP1WT,ΔBRCT and 53BP1TASA, but not in 53BP1TESE.53BP1TESE delocalizes from the DNA damage sites marked by γ-H2AX. Mutant proteins of 53BP1 were mildly expressed under the tetracycline inducible promoter in stable, clonal, centrosomal PLK4 cells, and stained with the indicated antibodies. 53BP1 was stained with anti-GFP FITC conjugated antibody. Scale bar, 5 μm.as; 53BP1-/-DOI: http://dx.doi.org/10.7554/eLife.16270.012
+**Figure 3—figure supplement 3.:** 53BP1TESE delocalizes from the DNA damage sites marked by γ-H2AX. Mutant proteins of 53BP1 were mildly expressed under the tetracycline inducible promoter in stable, clonal, centrosomal PLK4as; 53BP1-/- cells, and stained with the indicated antibodies. 53BP1 was stained with anti-GFP FITC conjugated antibody. Scale bar, 5 μm.
 
 Next, we sought to determine if the DDR activity of 53BP1 is required for centrosome loss-induced G1 arrest. 53BP1 is phosphorylated by mitotic kinases at T1609 and S1618 within the UDR motif to inhibit its recruitment to DSB sites during mitosis, an important regulatory mechanism preventing deleterious telomeric fusion that otherwise can occur during prolonged mitosis (Hayashi et al., 2012; Orthwein et al., 2014). Capitalizing on this inhibitory mechanism, we asked whether reintroduction of a phosphomimetic mutant of 53BP1 (53BP1TESE) could rescue the G1 arrest of PLK4as; 53BP1-/- cells dividing in the absence of the centrosome. We found that despite lacking DDR function as indicated by its delocalization from DNA damage sites (Figure 3—figure supplement 3), the 53BP1TESE mutant could robustly rescue G1 arrest in response to mitotic stress (Figure 3B and C), indicating that the DDR function of 53BP1 is not required for the G1 arrest. To further determine if the mitotis-specific phosphorylation of 53BP1, which inactivates its DDR function, is required for 53BP1 to mediate G1 arrest, we expressed the constitutively active, phosphonull form of 53BP1 (53BP1TASA) in PLK4as; 53BP1-/- cells. Intriguingly, 53BP1TASA efficiently rescued the arrest in G1 upon centrosome loss (Figure 3B,C and Figure 3—figure supplement 3). Together, our results indicate that 53BP1 can efficiently mediate the centrosome loss-induced G1 arrest regardless of whether it is active for DDR.
 
-## USP28 mediates centrosome loss-induced G1 arrest through its deubiquitinase activity, and acts downstream of 53BP1 to stabilize p53
+### USP28 mediates centrosome loss-induced G1 arrest through its deubiquitinase activity, and acts downstream of 53BP1 to stabilize p53
 
-USP28 is a deubiquitinating enzyme carrying two conserved catalytic domains – UCH-1 (Cys box) and UCH-2 (His box) (
+USP28 is a deubiquitinating enzyme carrying two conserved catalytic domains – UCH-1 (Cys box) and UCH-2 (His box) (Figure 4A). To test whether USP28 mediates centrosome loss-induced G1 arrest through its enzymatic activity, we mutated the catalytic cysteine (C171) and histidine (H600) to alanine and examined the consequence on the G1 arrest. We found that unlike wild-type USP28, expression of the catalytic-inactive USP28 (USP28CI) in PLK4as; USP28-/- cells (Figure 4—figure supplements 1 and 2) failed to rescue the G1 arrest induced by centrosome loss, phenocopying the loss of USP28 (Figure 4B,C), indicating that the catalytic activity of USP28 is essential for the G1 arrest. Moreover, purified USP28 was found to directly deubiquitinate p53 in vitro (Figure 4D), raising potentially a direct role of USP28 in stabilizing p53 in vivo. Consistently, overexpression of the wild type USP28 but not USP28CI in normal, unstressed cells caused ectopic nuclear p53 accumulation and cell cycle arrest uniformly across the entire population (100%, Figure 4E; not shown). The nuclear p53 accumulation caused by overexpression of wild type USP28 was not due to a specific increase in p53 mRNA levels (Figure 4F), further supporting our observation that USP28 deubiquitinates p53 for protein stabilization. To determine the relationship between 53BP1 and USP28, we examined whether the ectopic stabilization of p53 by USP28 depends on 53BP1, and vice versa. We found that upon USP28 overexpression, p53 was robustly stabilized even in 53BP1-/- cells (Figure 4G), indicating that USP28 does not act upstream of 53BP1 to control p53 level. Intriguingly, similar to USP28, overexpression of wild type 53BP1 but not 53BP1ΔBRCT also efficiently induced ectopic p53 stabilization in unstressed cells (Figure 4H). However, unlike USP28 that can act without 53BP1, overexpression of 53BP1 had no effect on p53 level in USP28-/- cells (Figure 4I). Thus, consistent with the known interaction of 53BP1 with USP28, we show that while 53BP1 has no deubiquitinase activity, it can function upstream of USP28 to stabilize p53.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig4-v2.jpg)
 
-**Figure 4.:** (A) Organization of the conserved catalytic domains in USP28. UCH-1 (Cys box, amino acids 162–196) and UCH-2 (His box, amino acids 580–649). (B) Catalytic-inactive USP28CI cannot rescue the G1 arrest in PLK4 cells after centrosome removal. Wild type UPS8 or USP28as; USP28-/-CI was mildly expressed under the tetracycline inducible promoter in stable, clonal, centrosomal PLK4 cells (see Materials and methods) during which centrosome loss was induced by 3MBPP1 addition. BrdU was added on day six after 3MBPP1 addition and cells were harvested 24 hr later for BrdU incorporation assay (3MBPP1 treatment for seven days in total). Data are means ± SD. as; USP28-/-n>150, N = 3. (C) Representative immunofluorescence images of cells in (B) stained with the indicated antibodies seven days after 3MBPP1 treatment. USP28 was stained with anti-HA antibody. Scale bar, 5 μm. (D) USP28 deubiquitinates p53 in vitro. Immunoblot of ubiquitinated p53 incubated with or without USP28 in an in vitro deubiquitination assay (see Materials and methods). Note the reduction in the polyubiquitinated form of p53 in the presence of USP28. (E) High levels of USP28 can ectopically stabilize nuclear p53 in the absence of mitotic stress. Immunofluorescence images of cells stained with the indicated antibodies. Expression of wild type USP28 or USP28CI was induced in PLK4 cells with 10 ng/μl (low level expression) or 100 ng/μl (overexpression) of doxycycline for two days before cell fixing and staining. The percentage in the merged panel indicates the proportion of cells with p53 nuclear accumulation. Scale bar, 5 μm. (as; USP28-/-F) Nuclear p53 accumulation caused by USP28WT overexpression is not due to increased p53 transcription. Quantification of p53 mRNA levels relative to GAPDH in (E) by qRT-PCR. Data are means ± SD. n = 6 from two independent experiments. (G) USP28 ectopically stabilizes nuclear p53 independently of 53BP1. Immunofluorescence images of cells stained with the indicated antibodies. Wild type USP28 was induced in PLK4 cells with 10 ng/μl (low level expression) or 100 ng/μl (overexpression) of doxycycline for two days. The percentage in the merged panel indicates the proportion of cells with p53 nuclear accumulation. Scale bar, 5 μm. (as; 53BP1-/-H) Overexpression of 53BP1 can ectopically stabilize nuclear p53 in the absence of mitotic stress. Immunofluorescence images of cells stained with the indicated antibodies. Expression of wild type 53BP1 or 53BP1ΔBRCT was induced in PLK4 cells with 10 ng/μl (low level expression) or 1 μg/μl (overexpression) of doxycycline for two days before cell fixing and staining. The percentage in the merged panel indicates the proportion of cells with p53 nuclear accumulation. Scale bar, 5 μm. (as; 53BP1-/-I) Ectopic stabilization of nuclear p53 by 53BP1 requires USP28. Immunofluorescence images of cells stained with the indicated antibodies. Wild type 53BP1 was induced in PLK4 cells with 10 ng/μl (low level expression) or 1 μg/μl (overexpression) of doxycycline for two days. The percentage in the merged panel indicates the proportion of cells with p53 nuclear accumulation. Scale bar, 5 μm.as; USP28-/-DOI: http://dx.doi.org/10.7554/eLife.16270.013
+**Figure 4.:** (A) Organization of the conserved catalytic domains in USP28. UCH-1 (Cys box, amino acids 162–196) and UCH-2 (His box, amino acids 580–649). (B) Catalytic-inactive USP28CI cannot rescue the G1 arrest in PLK4as; USP28-/- cells after centrosome removal. Wild type UPS8 or USP28CI was mildly expressed under the tetracycline inducible promoter in stable, clonal, centrosomal PLK4as; USP28-/- cells (see Materials and methods) during which centrosome loss was induced by 3MBPP1 addition. BrdU was added on day six after 3MBPP1 addition and cells were harvested 24 hr later for BrdU incorporation assay (3MBPP1 treatment for seven days in total). Data are means ± SD. n>150, N = 3. (C) Representative immunofluorescence images of cells in (B) stained with the indicated antibodies seven days after 3MBPP1 treatment. USP28 was stained with anti-HA antibody. Scale bar, 5 μm. (D) USP28 deubiquitinates p53 in vitro. Immunoblot of ubiquitinated p53 incubated with or without USP28 in an in vitro deubiquitination assay (see Materials and methods). Note the reduction in the polyubiquitinated form of p53 in the presence of USP28. (E) High levels of USP28 can ectopically stabilize nuclear p53 in the absence of mitotic stress. Immunofluorescence images of cells stained with the indicated antibodies. Expression of wild type USP28 or USP28CI was induced in PLK4as; USP28-/- cells with 10 ng/μl (low level expression) or 100 ng/μl (overexpression) of doxycycline for two days before cell fixing and staining. The percentage in the merged panel indicates the proportion of cells with p53 nuclear accumulation. Scale bar, 5 μm. (F) Nuclear p53 accumulation caused by USP28WT overexpression is not due to increased p53 transcription. Quantification of p53 mRNA levels relative to GAPDH in (E) by qRT-PCR. Data are means ± SD. n = 6 from two independent experiments. (G) USP28 ectopically stabilizes nuclear p53 independently of 53BP1. Immunofluorescence images of cells stained with the indicated antibodies. Wild type USP28 was induced in PLK4as; 53BP1-/- cells with 10 ng/μl (low level expression) or 100 ng/μl (overexpression) of doxycycline for two days. The percentage in the merged panel indicates the proportion of cells with p53 nuclear accumulation. Scale bar, 5 μm. (H) Overexpression of 53BP1 can ectopically stabilize nuclear p53 in the absence of mitotic stress. Immunofluorescence images of cells stained with the indicated antibodies. Expression of wild type 53BP1 or 53BP1ΔBRCT was induced in PLK4as; 53BP1-/- cells with 10 ng/μl (low level expression) or 1 μg/μl (overexpression) of doxycycline for two days before cell fixing and staining. The percentage in the merged panel indicates the proportion of cells with p53 nuclear accumulation. Scale bar, 5 μm. (I) Ectopic stabilization of nuclear p53 by 53BP1 requires USP28. Immunofluorescence images of cells stained with the indicated antibodies. Wild type 53BP1 was induced in PLK4as; USP28-/- cells with 10 ng/μl (low level expression) or 1 μg/μl (overexpression) of doxycycline for two days. The percentage in the merged panel indicates the proportion of cells with p53 nuclear accumulation. Scale bar, 5 μm.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** WT and USP28CI are exogenously expressed to similar levels in PLK4 cells.as; USP28-/-Western blot of PLK4 cells mildly expressing (10 ng/ml doxycycline) USP28as; USP28-/-WT and USP28CI. USP28 was probed with anti-HA antibody.DOI: http://dx.doi.org/10.7554/eLife.16270.014
+**Figure 4—figure supplement 1.:** Western blot of PLK4as; USP28-/- cells mildly expressing (10 ng/ml doxycycline) USP28WT and USP28CI. USP28 was probed with anti-HA antibody.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** BrdU incorporation assay for Figure 4B.DOI: http://dx.doi.org/10.7554/eLife.16270.015
+**Figure 4—figure supplement 2.:** BrdU incorporation assay for Figure 4B.
 
-## 53BP1 disassociates from kinetochores irreversibly in a time-dependent manner, and forms nuclear foci with p53 and USP28 in response to mitotic stress
+### 53BP1 disassociates from kinetochores irreversibly in a time-dependent manner, and forms nuclear foci with p53 and USP28 in response to mitotic stress
 
-To explore how 53BP1 or USP28 might respond to mitotic stress, we examined their localizations in mitosis. In normal cells, 53BP1, but not USP28, was found to localize to kinetochores during early mitosis when spindle assembly checkpoint (SAC) was on (
+To explore how 53BP1 or USP28 might respond to mitotic stress, we examined their localizations in mitosis. In normal cells, 53BP1, but not USP28, was found to localize to kinetochores during early mitosis when spindle assembly checkpoint (SAC) was on (Figure 5A left, bright BubR1 signal), and delocalize at anaphase when SAC was off (Figure 5A left, weak BubR1), a pattern resembling that of SAC components as documented previously (Jullien et al., 2002). We next examined if 53BP1 behaves like SAC components during mitotic stress. Upon centrosome loss (Figure 5A right) or Eg5 inhibition (Figure 5—figure supplement 1A), cells were delayed in prometaphase during which SAC was on, as indicated by bright BubR1 (Figure 5A right; Figure 5—figure supplement 1A) or Mad2 (Figure 5—figure supplement 1B) at kinetochores. Strikingly, under the same conditions, 53BP1 was often seen to be absent from the kinetochore, suggesting that 53BP1 is not a typical SAC component. To test whether 53BP1 disassociates from kinetochore in a time-dependent manner, cells were synchronized at G2/M, released into stressed mitosis with activated SAC, and examined for kinetochore 53BP1 (Figure 5—figure supplement 2A). Intriguingly, in cells stressed with centrosome loss (Figure 5B left) or Eg5 inhibition (Figure 5B right), 53BP1 gradually disassociated from kinetochores, starting from ~30 min after mitotic entry, whereas the SAC components BubR1 or Mad2 were consistently detected at kinetochores during the lengthened prometaphase. These results suggest that the kinetochore localization of 53BP1 is time-sensitive, rather than dependent on SAC. To further examine the relationship between kinetochore 53BP1 and SAC, we asked whether reactivation of SAC after it was turned off could relocalize 53BP1 to mitotic kinetochores. We inactivated SAC by arresting cells in metaphase with MG132 treatment, as indicated by the weak BubR1 or the absence of Mad2 signals at the kinetochores, and then reactivated SAC with a transient pulse of nocodazole treatment (Figure 5—figure supplement 2B). We found that reactivation of SAC efficiently targeted both BubR1 and Mad2 back to the kinetochore, but had no effect on 53BP1 (Figure 5C), further demonstrating that unlike SAC, the disassociation of 53BP1 from kinetochore is irreversible, a distinct property that can potentially be used to mark the duration of mitotic stress independent of SAC.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig5-v2.jpg)
 
-**Figure 5.:** (A) 53BP1 normally disassociates from the kinetochores during anaphase, but can do so prematurely in prometaphase upon mitotic stress/delay. Immunofluorescence images of centrosomal (left) or acentrosomal (right) cells going through mitosis stained with the indicated antibodies. Bright BubR1 signals in prophase and prometaphase indicate SAC activation. Scale bar, 5 μm. (B) Disassociation of 53BP1 from mitotic kinetochores in cells experiencing mitotic stress/delay is time dependent. Quantification of proportion of mitotic cells with 53BP1 localization at the kinetochores. Cells arrested in G2/M were released into mitosis without centrosome (left), or with the spindle poison Eg5 inhibitor (right) as indicated, and then harvested at various time points after the release. Cells were stained with DAPI and antibodies against 53BP1 and BubR1 for scoring. Data are means ± SD. n>130, N = 3. (C) Disassociation of 53BP1 from kinetochores during mitotic stress is not reversible. Cells arrested in metaphase with MG132 for 4 hr followed by reactivation of SAC with nocodazole treatment for 10 min were stained with the indicated antibodies. Bright BubR1 or Mad2 signals indicate SAC activation. Scale bar, 5 μm. (D) 53BP1, USP28 and p53 form large nuclear foci in response to mitotic delay. PLK4 cells proliferating with or without 3MBPP1 stained with the indicated antibodies. Scale bar, 5 μm. (as; p21-/-E) SAC is inactive in MPS1 cells treated with 3MBPP1. asMPS1 cells treated with 3MBPP1 and Cdk1 inhibitor (RO-3306) for 18 hr were released into mitosis and were processed for immunofluorescence to visualize BubR1 and CREST. Note that SAC activation was disabled by MPS1 inhibition (weak BubR1 signals). Scale bar, 5 μm. (asF) MG132 treated cells arrest in G1 in the absence of SAC activity. BrdU incorporation assay showing proportion of proliferating MPS1 or asMPS1 cells, with or without 3MBPP1, following release into mitosis with different length of MG132 treatment. Data are means ± SD. Percentages are normalized to the untreated control. as; 53BP1-/-n>250, N = 3. (G) Model of 53BP1 and USP28 transducing mitotic stresses into p53 stabilization and p21 dependent cell cycle arrest. (H) A model proposing that the independent collaboration of SAC and 53BP1/USP28 drives efficient mitosis and cell fitness.DOI: http://dx.doi.org/10.7554/eLife.16270.016
+**Figure 5.:** (A) 53BP1 normally disassociates from the kinetochores during anaphase, but can do so prematurely in prometaphase upon mitotic stress/delay. Immunofluorescence images of centrosomal (left) or acentrosomal (right) cells going through mitosis stained with the indicated antibodies. Bright BubR1 signals in prophase and prometaphase indicate SAC activation. Scale bar, 5 μm. (B) Disassociation of 53BP1 from mitotic kinetochores in cells experiencing mitotic stress/delay is time dependent. Quantification of proportion of mitotic cells with 53BP1 localization at the kinetochores. Cells arrested in G2/M were released into mitosis without centrosome (left), or with the spindle poison Eg5 inhibitor (right) as indicated, and then harvested at various time points after the release. Cells were stained with DAPI and antibodies against 53BP1 and BubR1 for scoring. Data are means ± SD. n>130, N = 3. (C) Disassociation of 53BP1 from kinetochores during mitotic stress is not reversible. Cells arrested in metaphase with MG132 for 4 hr followed by reactivation of SAC with nocodazole treatment for 10 min were stained with the indicated antibodies. Bright BubR1 or Mad2 signals indicate SAC activation. Scale bar, 5 μm. (D) 53BP1, USP28 and p53 form large nuclear foci in response to mitotic delay. PLK4as; p21-/- cells proliferating with or without 3MBPP1 stained with the indicated antibodies. Scale bar, 5 μm. (E) SAC is inactive in MPS1as cells treated with 3MBPP1. MPS1as cells treated with 3MBPP1 and Cdk1 inhibitor (RO-3306) for 18 hr were released into mitosis and were processed for immunofluorescence to visualize BubR1 and CREST. Note that SAC activation was disabled by MPS1 inhibition (weak BubR1 signals). Scale bar, 5 μm. (F) MG132 treated cells arrest in G1 in the absence of SAC activity. BrdU incorporation assay showing proportion of proliferating MPS1as or MPS1as; 53BP1-/- cells, with or without 3MBPP1, following release into mitosis with different length of MG132 treatment. Data are means ± SD. Percentages are normalized to the untreated control. n>250, N = 3. (G) Model of 53BP1 and USP28 transducing mitotic stresses into p53 stabilization and p21 dependent cell cycle arrest. (H) A model proposing that the independent collaboration of SAC and 53BP1/USP28 drives efficient mitosis and cell fitness.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A and B) Cells arrested or delayed in prometaphase due to Eg5 inhibitor treatment or acentrosomal cell division stained with the antibodies indicated. Bright BubR1 or Mad2 signals indicate SAC activation. Scale bar, 5 μm.DOI: http://dx.doi.org/10.7554/eLife.16270.017
+**Figure 5—figure supplement 1.:** (A and B) Cells arrested or delayed in prometaphase due to Eg5 inhibitor treatment or acentrosomal cell division stained with the antibodies indicated. Bright BubR1 or Mad2 signals indicate SAC activation. Scale bar, 5 μm.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/16270/elife-16270-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** (A) Assay for 53BP1 mitotic kinetochore localization for Figure 5B. (B) SAC reactivation assay for Figure 5C. (C) BrdU incorporation assay for Figure 5F.DOI: http://dx.doi.org/10.7554/eLife.16270.018
+**Figure 5—figure supplement 2.:** (A) Assay for 53BP1 mitotic kinetochore localization for Figure 5B. (B) SAC reactivation assay for Figure 5C. (C) BrdU incorporation assay for Figure 5F.
 
 We next examined the localization of 53BP1 or USP28 in interphase cells that have gone through either stressed or normal mitosis. To avoid cell cycle interference, we examined the localization of 53BP1 and USP28 in cycling p21-/- cells with or without centrosomes. In this setup, cells in both conditions are actively proliferating, but with one experiencing mitotic stress and p53 activation, and the other not. Strikingly, unlike unstressed p21-/- cells that mostly lacked nuclear p53, in the stressed condition, p53 not only was stabilized in the nucleus, but also formed bright nuclear foci of various sizes co-localizing with 53BP1 and USP28 in ~30% of the cell population (Figure 5D), suggesting that 53BP1, USP28 and p53 interact with each other after a stressed mitosis, consistent with the known interaction between 53BP1 and p53 or USP28 (Thukral et al., 1994; Iwabuchi et al., 1994; Zhang et al., 2006).
 
-## 53BP1/USP28 acts independent of SAC, and vice versa
+### 53BP1/USP28 acts independent of SAC, and vice versa
 
 53BP1/USP28 selects against stressed or delayed mitosis while SAC ensures correct mitosis by delaying mitotic progression. The contrary nature of the two processes suggests that 53BP1/USP28 and SAC may act independent of each other. Indeed, SAC-dependent mitotic delay caused by centrosome loss or Eg5 inhibition can still occur normally in p53-/-, 53BP1-/-, USP28-/- and p21-/- cells (Figures 1G, 2C, 5A right and Figure 5—figure supplement 1B; not shown). Similarly, we found that the proteasome inhibitor MG132 could arrest cells at metaphase without activating SAC, as indicated by the weak BubR1 or lack of Mad2 signals at the kinetochores (Figure 5C), but efficiently trigger G1 arrest as shown above (Figure 2H, bottom panels), consistent with a previous report (Uetake and Sluder, 2010). To further test if a transient SAC activation during early prometaphase is required for the G1 arrest, we repeated the MG132-induced mitotic delay assay in the presence or absence of MPS1 activity, a kinase essential for SAC activation (Maciejowski et al., 2010) (Figure 5—figure supplement 2C). Using MPS1as cells, we found that inactivation of MPS1, which disabled SAC (Figure 5E), caused all cells to rapidly progress through mitosis in 12 min (Maciejowski et al., 2010) (not shown), and became fully arrested in the following G1 (Figure 5F, top panel, 0 hr), likely due to erroneous chromosome segregation or cell division which resulted from the drastically shortened mitosis (Maciejowski et al., 2010). Consistent with this notion, we found that such MPS1 deficiency-induced G1 arrest could be reversed by a short treatment of MG132 in mitosis for 0.5 hr (Figure 5F, top panel), allowing cells sufficient time to assemble spindles for cell division. Intriguingly, however, longer MG132 treatments of 2 hr or more, which allowed cells more than enough time for spindle assembly, uniformly arrested cells in G1 after mitosis, regardless of whether MPS1 activity was present or not (Figure 5F, top panel). Consistently, removal of 53BP1 rescued the G1 arrest induced by the prolonged MG132 treatment in the absence of MPS1 activity (Figure 5F, bottom panel). These results together suggest that a prolonged mitotic stress can activate G1 arrest without ever activating SAC. Thus, 53BP1/USP28 and SAC are two in-parallel mitotic programs, with SAC protecting the accuracy of mitosis (at the expense of speed), and 53BP1/USP28 selecting against stressed/delayed mitosis (see Figure 5H).
 
@@ -137,54 +318,54 @@ The accuracy of mitosis is guarded by SAC at the expense of speed. That is, when
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 RPE1 cells were cultured in DME/F-12 (1:1) medium supplemented with 10% FBS and 1% penicillin-streptomycin. The RPE1 tetracycline-inducible PLK4as cells (PLK4-/-; tet-PLK4as) were grown under a constant supply of 5 ng/ml of doxycycline replaced every two days to support centrosome biogenesis. We also obtained PLK4as knock-in RPE1 cells (see below) in which centrosomes biogenesis are supported by PLK4as expressed under the endogenous promoter. The PLK4-/-; tet-PLK4as cell line was used in our eight independent CRISPR-mediated screens, and PLK4as-KI cells were used to validate our screen in other assays. To inhibit PLK4as, 2 μM of 3MBPP1 was added to the media. Cells were arrested in mitosis with Eg5 inhibitor III, Dimethylenastron, or MG132 at 1 μM or 10 μM, respectively. Microtubule depolymerization was achieved through 200 ng/ml nocodazole treatment. BrdU was added to the culture medium at 30 μM for 24 hr before fixation to label proliferating cells. Cdk1 inhibitor RO-3306 was used at 10 μM to arrest cells at G2/M boundary.
 
-## Cell lines and plasmid constructs
+### Cell lines and plasmid constructs
 
 The RPE1 tetracycline-inducible PLK4as cell line (PLK4-/-; tet-PLK4as) was generated in our lab (see below for details) (Kim, 2016). The RPE1 cell line carrying a knock-in PLK4as allele (PLK4as-KI) was a kind gift from Andrew J. Holland (Moyer et al., 2015). PLK4-/-; tet-PLK4as was used in the genome-wide CRISPR screen and the experiments in Figure 1, whereas PLK4as-KI was used for the experiments in Figures 2–5. We obtained the RPE1 MPS1as cells from Prasad V. Jallepalli (Maciejowski et al., 2010). RPE1 is not a commonly misidentified cell line and we have not authenticated the RPE1 cell lines we used. There is no mycoplasma contamination in the RPE1 cell lines. Stable p53-/-, 53BP1-/-, USP28-/-, and p21-/- knockout cell lines derived from both PLK4-/-; tet-PLK4as and PLK4as-KI cells were made by CRISPR (see below) for validation and rescue experiments, and results from PLK4as-KI derived cells were shown. For rescue experiments, clonal PLK4as-KI; 53BP1-/- or PLK4as-KI; USP28-/- cell lines stably carrying various constructs expressing 53BP1WT, 53BP1ΔBRCT, 53BP1TESE, 53BP1TASA, USP28WT or USP28CI from the tetracycline-inducible promoter were made through in vivo gene delivery using the lentiviral vector pLVX-Tight-Puro vector (Clonetech). 53BP1WT, 53BP1ΔBRCT, 53BP1TESE and 53BP1TASA cDNA constructs were kind gifts from Daniel Durocher (Orthwein et al., 2014), and were used for subcloning into pLVX-Tight-Puro vector. Wild type USP28 construct (pDZ50, Addgene plasmid #41948) was a gift from Stephen Elledge (Zhang et al., 2006), and was used for subcloning into pLVX-Tight-Puro vector. USP28CI was created with site-directed mutagenesis (Stratagene).
 
-## Tetracycline-inducible PLK4as cell line generation
+### Tetracycline-inducible PLK4as cell line generation
 
 Both PLK4 loci in RPE1 cells were modified through homologous recombination using adeno-associated virus vectors as described previously (Tsou et al., 2009). A region covering exon 3 and 4 of PLK4 loci, which contains the catalytic site of the kinase domain, was flanked with LoxP (or floxed). After generating the PLK4flox/neoflox clones, we utilized the lentiviral pLVX-Tight-Puro vector system (Clonetech) to transduce a tetracycline inducible, analog sensitive construct of PLK4 (PLK4as). These PLK4flox/neoflox; tet-PLK4as cells were then infected with an adenovirus expressing Cre recombinase to delete the endogenous PLK4, plated in 96 well plates, and cultured in media containing 5 ng/ml of doxycycline. Clonal PLK4-/-; tet-PLK4as cell lines that exhibited the normal number of centrosomes were selected and maintained under 5 ng/ml of doxycycline.
 
-## Genome-wide CRISPR-mediated loss-of-function screen
+### Genome-wide CRISPR-mediated loss-of-function screen
 
 The human Genome-scale CRISPR Knock-Out (GeCKO) v2.0 pooled libraries generated by Zhang Lab were acquired from Addgene (#1000000049, 2 vector system - lentiCas9-Blast and lentiGuide-Puro) (http://www.addgene.org/crispr/libraries/geckov2/) (Sanjana et al., 2014; Shalem et al., 2014). Amplification of the libraries was performed as recommended using MegaX DH10B T1 Electrocomp Cells (Invitrogen). Lentivirus library was produced using calcium-phosphate transfection in HEK293T cells. For each CRISPR screen, five 10 cm plates were seeded with the tetracycline-inducible PLK4as cells (PLK4-/-; tet-PLK4as) expressing Cas9 at 1 × 106 cells/plate. Cells were transduced with the lentivirus library the next day at 500 μl/plate for 5 hr. The five 10 cm plates with the transduced cells were split into thirty 15 cm plates the day after. Three days later, to induce centrosome loss, doxycycline was removed to turn off PLK4as expression and 3MBPP1 was added to inactivate any basal level PLK4as activity. Cells were cultured and propagated for an additional four weeks before genomic DNA was extracted for deep sequencing to identify enriched sgRNAs. Cells were also harvested two days after PLK4 inactivation to monitor baseline sgRNA distribution. Eight independent CRISPR screens were performed to facilitate discrimination between true and false positive hits. Because off-target effects and passenger mutations can cause spuriously high reads for some sgRNAs in each experiment, a single high count for one sgRNA against a gene in one experiment should not be regarded as a true hit. For a gene to be scored as a ‘positive’ hit, at least two of its six sgRNAs needed to be repeatedly enriched (greater than 1000 HiSeq reads) in independent screens, with the HiSeq reads at least three times higher than the average of the baseline read.
 
-## CRISPR-mediated gene targeting
+### CRISPR-mediated gene targeting
 
 RNA-guided targeting of p53, 53BP1, USP28, and p21 in human cells was achieved through coexpression of the Cas9 protein with gRNAs using reagents prepared by the Church group (Mali, 2013), which are available from Addgene (http://www.addgene.org/crispr/church/). Sequences of gRNAs used are as follows: p53 (5’-GGGCAGCTACGGTTTCCGTCTGG-3’), 53BP1 (5’-GTATACCTGCTTGTCCTGTT-3’, 5’-CTGCTCAATGACCTGACTGA-3’), USP28 (5’-ATCAACTCTCCTCCAGTCAT-3’, 5’-TGAGCGTTTAGTTTCTGCAG-3’), and p21 (5’-CCATTAGCGCATCACAGTCG-3’, 5’-AGTCGAAGTTCCATCGCTCA-3’). All gRNAs were cloned into the gRNA Cloning Vector (Addgene plasmid #41824) via the Gibson assembly method (New England Biolabs) as described previously (Mali, 2013). 5 μg Cas9 plasmid (Addgene plasmid #41815) and 5 μg gRNA were nucleofected according to manufacturer’s instructions (Lonza, Basel, Switzerland). Cells were examined for the loss of proteins 7 days after nucleofection.
 
-## CRISPR cell line genotyping
+### CRISPR cell line genotyping
 
 Primers were designed for PCR amplification of genomic DNA containing each sgRNA target site: 53BP1 (5’-ACAGCTGGAGAAGAACGAGG-3’, 5’-CCTCCCAGGTTCAAGCAACT-3’), USP28 (5’-TGGGCAATTTGGAGGCTCTT-3’, 5’-TGTCGCCTACCTGGATAGCT-3’) and p21 (5’-CCAGGGCTGCGATTAGGAAA-3’, 5’-GCAAAGGGCCTGGCATAATG-3’). PCR products of ~800–1100 bp were cloned into PCR-TOPO-TA cloning vector (Invitrogen). Plasmids were then sequenced and indels identified through sequence alignment.
 
-## Antibodies
+### Antibodies
 
 Antibodies used in this study were listed with the information on working dilution and source in parentheses – anti-p53 (rabbit, 1:500, sc-6243, Santa Cruz Biotechnology; mouse, 1:200, sc-2025, Santa Cruz Biotechnology), anti-p21 (rabbit, 1:200, ab7960, Abcam), anti-actin (rabbit, 1:10000, A2066, Sigma), anti-53BP1 (rabbit, 1:1000, NB100-304, Novus Biologicals; mouse 1:1000, MAB3802, Millipore), anti-USP28 (rabbit, 1:200, A300-898A, Bethyl Laboratories), anti-BrdU (rat, 1:500, MCA2060T, AbD Serotec), anti-BubR1 (mouse, 1:200, ab4637, Abcam), anti-Mad2 (rabbit, 1:500, A300-301A, Bethyl Laboratories), anti-CREST (human, 1:1000, HCT-0100, ImmunoVision), anti-HA (mouse, 1:1000, MMSH101P, Covance), anti-GFP FITC conjugated (goat, 1:1000, 600-102-215, Rockland), anti-centrin2 (mouse, 1:1000, 04–1624, Millipore), anti-γ-tub (mouse, 1:500, sc-51715, Santa Cruz Biotechology) and anti-γ-H2AX (mouse, 1:200, 05–636, Millipore). Secondary antibodies Alexa-Fluor 488, 594, and 680 were from Molecular Probes.
 
-## Immunofluorescence and microscopy
+### Immunofluorescence and microscopy
 
 Cells were washed once in phosphate-buffered saline (PBS) then fixed in ice-cold methanol at−20°C for 10 min. Slides were blocked with 3% bovine serum albumin (w/v) with 0.1% Triton X-100 in PBS before incubating with primary antibodies. For BrdU staining, cells were treated with 2N HCl at room temperature for 30 min followed by rinsing in PBS before anti-BrdU incubation. DNA was visualized using 4′,6-diamidino-2-phenylindole (DAPI). Fluorescent images were acquired on an upright microscope (Axio imager; Carl Zeiss) equipped with 100x oil objectives, NA of 1.4, and a camera (ORCA ER; Hamamatsu Photonics). Captured images were processed with Axiovision (Carl Zeiss) and Photoshop CS5 (Adobe).
 
-## Mitotic duration assay
+### Mitotic duration assay
 
 Cells were plated in 6-wells plates with or without 3MBPP1 the day prior to live-cell imaging. Images were acquired on an inverted miscroscope (Axiovert; Carl Zeiss) equipped with a 10x phase objective, motorized temperature-controlled stage, environmental chamber, CO2 enrichment system (Carl Zeiss), and a camera (ORCA ER; Hamamatsu Photonics). Image acquisition and processing were performed using Axiovision software (Carl Zeiss). Images were acquired every 7 min for a duration of 24 hr. Mitotic duration was defined as the period between cell rounding and cell division.
 
-## Growth curve analysis
+### Growth curve analysis
 
 Cells were seeded at 500,000 cells per 10 cm plates at day 0. 3MBPP1 was added accordingly. Cells were trypsinized for cell counting using a haemocytometer every two days for eight days, and reseeded with appropriate dilution for subsequent counting.
 
-## Determination of p53 protein levels
+### Determination of p53 protein levels
 
 Acentrosomal cells were harvested seven days after 3MBPP1 treatment. All cells were washed once in PBS and directly lysed on plates with SDS loading buffer (125 mM Tris-HCl pH 6.8, 50% (v/v) glycerol, 4% (w/v) SDS, 0.02% (w/v) bromophenol blue, 100 mM DTT). Genomic DNA was sheared by passing through a 27G needle. Lysates were resolved by SDS-PAGE.
 
-## p53 in vitro deubiquitination assay
+### p53 in vitro deubiquitination assay
 
 Recombinant USP28 protein was purchased from BostonBiochem. To perform the deubiquitination assay, USP28 protein (2 μM) was incubated in the reaction buffer containing 10 mM DTT for 30 min followed by addition of ubiquitinated p53 as the substrate (100 nM) produced with the MDM2 Ubiquitin Ligase Kit (BostonBiochem, MA; K200b). Reaction was done at 37°C for 90 min. Reaction was terminated by addition of 5X loading buffer (SDS-PAGE sample buffer) and 1M DTT, and heated for 5 min at 90°C. Ubiquitinated-p53 was detected using standard western blot technique with anti-p53 antibodies.
 
-## qRT-PCR
+### qRT-PCR
 
 Total RNA was isolated using RNeasy Plus Mini Kit (Qiagen). cDNA was generated using qScript cDNA SuperMix (Quanta Biosciences). Real-time PCR was carried out using PerfeCTa SYBR Green SuperMix (Quanta Biosciences) on ViiA 7 Real-Time PCR System (Applied Biosystems). GAPDH was used as an endogenous normalization control. Primers used were p53 (5’-AGAGTCTATAGGCCCACCCC-3’, 5’-GCTCGACGCTAGGATCTGAC-3’) and GAPDH (5’-GCGAGATCCCTCCAAAATCAA-3’, 5’-GTTCACACCCATGACGAACAT-3’).

@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/014ye1258 Department of Pathology, Immunology and Laboratory Medicine, Center for Immunity and Inflammation, Rutgers New Jersey Medical School Newark United States
+1. Department of Pathology, Immunology and Laboratory Medicine, Center for Immunity and Inflammation, Rutgers New Jersey Medical School Newark United States ([ROR:014ye1258](https://ror.org/014ye1258))
 
 † Corresponding author
 
@@ -59,9 +59,100 @@ Ultimately, the shift toward trained immunity or tolerance depends on multiple c
 
 ## Cell types involved in trained immunity in the airway and the impact on lung infections and immunity
 
-## Macrophages and monocytes
+### Macrophages and monocytes
 
 In the airway, several immune cell types, including macrophages and monocytes, play a central role in trained immunity (Table 1; Foster et al., 2007; Quintin et al., 2012; Saeed et al., 2014). This adaptation is crucial for defending the respiratory system against the continuous exposure to bacterial, fungal, and viral pathogens. In response to bacterial infections, particularly in the lung, macrophages and monocytes undergo epigenetic and functional reprogramming. For example, exposure to S. pneumoniae alters AMs, leading to long-lasting epigenetic changes that enhance their protective responses during secondary challenges (Aegerter et al., 2020). However, this protection is time-sensitive and can vary depending on the stage of infection (McCullers and Rehg, 2002; Shahangian et al., 2009; Siegel et al., 2014; Sharma-Chawla et al., 2016). This trained immunity has been observed in both mouse and human models of lung infections, underscoring its critical role in maintaining lung health and bolstering immunity against recurrent respiratory threats (Kleinnijenhuis et al., 2012; Quintin et al., 2012; Cheng et al., 2014; Arts et al., 2018).
+
+**Table 1.**
+ Summary of trained immunity studies and lung diseases.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell type(s)</th>
+      <th>Stimulus</th>
+      <th>Mechanism(s)</th>
+      <th>Outcomes</th>
+      <th>Notes</th>
+      <th>Study</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alveolar macrophages (AMs), monocyte-derived AMs (Mo-AMs)</td>
+      <td>Sequential infections: influenza virus followed by Streptococcus pneumoniae</td>
+      <td>Influenza leads to depletion of resident AMs through apoptosis, migration, or functional inactivation (‘alveolar macrophage disappearance reaction’). CCR2-dependent monocyte recruitment replenishes the AM niche with Mo-AMs. Mo-AMs undergo IL-6-mediated epigenetic training, enhancing early antibacterial responses.</td>
+      <td>Improved survival and reduced bacterial burden after secondary pneumococcal infection. Mo-AMs persist but gradually lose protective traits over time.</td>
+      <td>Trained immunity is transient (~2 months post-influenza).</td>
+      <td>Aegerter et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Resident alveolar macrophages (AMs)</td>
+      <td>PepO protein from Streptococcus pneumoniae</td>
+      <td>PepO protein stimulates complement C3 secretion and G-CSF production by AMs, without full activation. Establishes a trained phenotype by enhancing innate bactericidal function against unrelated pathogens.</td>
+      <td>Central-trained immunity established; increased resistance to bacterial pneumonia without inducing systemic inflammation.</td>
+      <td>Highlights possibility of trained immunity via non-lethal microbial components.</td>
+      <td>Xu et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Tissue-resident alveolar macrophages (TR-AMs)</td>
+      <td>Intranasal adenoviral vector administration</td>
+      <td>Local viral infection stimulates CD8+ T cells to produce IFN-γ, which primes TR-AMs to upregulate MIP-2 and KC chemokines. This enhances neutrophil recruitment to the airways during secondary bacterial infections. Training occurs without monocyte input (local imprinting).</td>
+      <td>Improved early bacterial clearance upon Streptococcus pneumoniae challenge.</td>
+      <td>Provides evidence that viral infections can directly induce trained immunity in TR-AMs.</td>
+      <td>Yao et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Mo-AMs replacing TR-AMs (especially in aged lungs)</td>
+      <td>Aging process, prior respiratory viral infections (influenza)</td>
+      <td>Aging leads to impaired TR-AM survival and impaired self-renewal capacity. Viral infections exacerbate depletion. CCR2-mediated recruitment of monocytes leads to replacement by Mo-AMs. Mo-AMs show increased glycolysis and a hyper-inflammatory phenotype compared to TR-AMs, contributing to tissue damage and chronic inflammation.</td>
+      <td>In aged mice, infections cause more severe lung injury due to predominance of glycolytic, inflammatory Mo-AMs rather than quiescent TR-AMs.</td>
+      <td>Emphasizes metabolic reprogramming (Warburg effect) and its detrimental effects in elderly lung immunity.</td>
+      <td>Li et al., 2022</td>
+    </tr>
+    <tr>
+      <td>Resident airway macrophages</td>
+      <td>SARS-CoV-2 infection</td>
+      <td>Persistent chromatin remodeling around type I interferon (IFN-I) response genes, even after viral clearance. Increased accessibility of IRF and STAT transcription factor motifs. Suggests formation of ‘innate immune memory’ following viral pattern recognition.</td>
+      <td>Enhanced baseline antiviral state, potential impact on future respiratory infections.</td>
+      <td>Mechanisms still under investigation; likely involve both direct viral sensing and damage signals (DAMPs).</td>
+      <td>Lercher et al., 2024; Simonis et al., 2025</td>
+    </tr>
+    <tr>
+      <td>Natural killer (NK) cells</td>
+      <td>Viral infections, BCG vaccination</td>
+      <td>NK cells acquire memory-like properties after infections. Enhanced IFN-γ, IL-1β, and IL-6 production upon secondary stimulation. Primed for faster and stronger responses.</td>
+      <td>Improved clearance of respiratory viruses; enhanced responses to secondary challenges.</td>
+      <td>NK cell-trained immunity impacts airway antiviral defense and broader innate immune memory.</td>
+      <td>Sun et al., 2009; Romee et al., 2012; Kleinnijenhuis et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Dendritic cells (DCs)</td>
+      <td>Cryptococcus neoformans infection, RSV infection</td>
+      <td>Exposure leads to epigenetic reprogramming of DCs. Increased IFN-γ and pro-inflammatory cytokine production upon secondary encounters. DC-mediated protection relies on cytokine production like IFN-γ, TNF-α, and IL-17a, as well as STAT1 pathway activation.</td>
+      <td>DCs play a crucial role in trained immunity and protection against reinfection.</td>
+      <td>Proper activation of DCs is crucial for protective immunity; impaired DC responses can lose protection.</td>
+      <td>Hole et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Dendritic cells (DCs)</td>
+      <td>Respiratory syncytial virus (RSV) infection</td>
+      <td>RSV-triggered TSLP induces epigenetic reprogramming in bone marrow-derived DCs, altering cytokine production and upregulating costimulatory molecules. This leads to an enhanced inflammatory phenotype and exacerbated allergic responses.</td>
+      <td>RSV-induced trained immunity via TSLP alters immune cell responses and can promote allergic diseases.</td>
+      <td>Innate immune memory may amplify allergic susceptibility and interfere with appropriate antiviral responses.</td>
+      <td>Hole et al., 2019; Malinczak et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Alveolar macrophages (AMs) and epithelial cells</td>
+      <td>β-glucan exposure, bleomycin-induced injury</td>
+      <td>β-glucan primes AMs and epithelial cells via soluble mediators. This leads to enhanced efferocytosis, increased SIRT1 expression, and tissue protection by reducing fibrosis and apoptosis.</td>
+      <td>β-glucan-induced trained immunity protects against injury and fibrosis, particularly in lung epithelial cells.</td>
+      <td>Enhanced tissue resilience, reduced apoptosis, and increased resistance to lung fibrosis.</td>
+      <td>Kang et al., 2024</td>
+    </tr>
+  </tbody>
+</table>
 
 AMs primarily originate from embryonic precursors and self-renew in the lung under steady-state conditions. However, during infections or inflammatory insults, bone marrow-derived monocytes can be recruited to the lung and differentiate into Mo-AMs, altering the lung’s immune landscape. The functional characteristics of AMs and Mo-AMs differ significantly. Resident AMs maintain immune homeostasis by clearing surfactant and apoptotic cells while exhibiting a tolerogenic phenotype under normal conditions. In contrast, Mo-AMs, which arise during inflammation or after infections like influenza, display distinct transcriptional, epigenetic, and functional profiles (Aegerter et al., 2022; Campo et al., 2024).
 
@@ -85,11 +176,11 @@ IFN-Is have also shown to be important with another bacterial ligand, peptidogly
 
 Roles for tissue-resident AMs in trained immunity to primary bacterial challenge have also been identified. AMs trained with S. pneumoniae as the primary challenge display distinct metabolic and signaling changes, including increased phosphocreatine and heightened immune gene activity upon re-infection. Specifically, transcriptomic analysis revealed that prior pneumococcal infection resulted in increased expression of immune mediators, such as Cxcl9, while others, including Cxcl14, Ccl22, and Cx3cl1, were reduced. Phagocytosis receptors such as MSR1 (scavenger receptor A) and CLEC12A were upregulated and CD36 and MARCO were downregulated. These changes in immune gene activity differed from those observed after viral infections, where chemokines like CXCL1 and CXCL2 are typically elevated (Guillon et al., 2020). This highlights the context-specific nature of trained immunity in the lung, where different pathogens and stimuli induce varying immune responses. Arafa et al., 2022 expanded on these findings, demonstrating that Mo-AMs recruited during pneumonia recovery underwent profound long-term remodeling, enhancing protection against secondary infections. These modifications persisted for up to 6 months, altering surface markers, transcriptomes, and metabolomes. Mechanistically, IFN-γ and CCR2 were implicated in this process, with IFN-γ produced by CD4+ T cells and other cell types playing a pivotal role in AM phenotype changes. CCR2-dependent monocyte recruitment contributed to the early development of these Mo AMs but was not essential for long-term remodeling. This compartmentalized reprogramming was observed primarily in the affected lung lobes, indicating localized immune adaptations (Arafa et al., 2022). A role for AM in Mycobacterium tuberculosis infection, particularly regarding vaccine-mediated immunity, has also been detailed. Respiratory mucosal immunization with a viral-vectored TB vaccine alters the airway innate immune landscape, imprinting AMs with enhanced protective functions. This immunization increases interstitial and monocyte-derived macrophages (IM and MdM) in the lungs, enhancing bacterial clearance. AMs in respiratory mucosal-immunized hosts control M. tuberculosis more effectively, with lower bacterial counts in bronchoalveolar lavage fluid (BALF) and lung tissues. This innate immune remodeling offers prolonged, T cell-independent protection against TB, emphasizing the potential for targeting airway innate immunity in vaccine strategies (D’Agostino et al., 2020).
 
-## Role for AM in trained immunity towards cancer
+### Role for AM in trained immunity towards cancer
 
 Studies suggest that respiratory viral infections, like influenza, can reprogram AMs to develop sustained antitumor immunity in the lungs. Trained AMs infiltrate tumor sites, eliminating tumor cells and resisting immune suppression, a process driven by IFN-γ and NK cells. In human lung cancer, trained AMs are associated with stronger immune responses, suggesting the potential for leveraging trained immunity in lung macrophages for antitumor therapies (Wang et al., 2023b). Trained immunity in myeloid cells using whole beta-glucan particles (WGP) has been demonstrated to inhibit cancer metastasis. WGP-trained macrophages became more responsive to inflammatory and tumor-derived signals, and in mouse models, WGP treatment reduced tumor metastasis and extended survival. The metabolite sphingosine-1-phosphate and mitochondrial fission drove these effects, and blocking these pathways negated the antitumor benefits (Ding et al., 2023).
 
-## Vaccinations that utilize trained immunity and alveolar macrophages
+### Vaccinations that utilize trained immunity and alveolar macrophages
 
 BCG vaccination has been shown to induce trained immunity within AMs. Jeyanathan et al., 2022 discovered that 5 weeks after subcutaneous BCG administration, AMs in vaccinated mice showed increased expression of MHCII and TLR2 compared to controls, indicating a heightened immune readiness. Upon stimulation with M. tuberculosis lysate, these AMs produced significantly more IL-6, IL-12p40, MCP-1, and MIP-1α, demonstrating a robust pro-inflammatory response. The metabolic reprogramming of these AMs was notable: BCG-trained AMs exhibited increased glycolysis without major changes in oxidative phosphorylation, a hallmark of trained immunity. Furthermore, BCG-trained AMs proliferated at a higher rate, as indicated by increased BrdU incorporation, but this was independent of their elevated MHC II expression. This glycolytic shift and increased proliferation suggest that BCG vaccination primes AMs for rapid and sustained responses to infection. Interestingly, this memory phenotype developed over time. At 2 weeks’ post-vaccination, AMs did not yet exhibit these trained characteristics, pointing to a time-dependent process likely linked to the dissemination of BCG to lymph nodes. Only viable BCG, not heat-inactivated BCG, induced this trained phenotype, reinforcing the role of mycobacterial viability in shaping immune memory. Beyond the lungs, BCG also induced a trained phenotype in peritoneal macrophages, which similarly exhibited enhanced MHCII expression and increased cytokine production. This study highlights the systemic impact of subcutaneous BCG on macrophage populations, emphasizing its role in promoting trained immunity across different tissue environments, including the lung, by altering both local and systemic macrophage function (Jeyanathan et al., 2022).
 

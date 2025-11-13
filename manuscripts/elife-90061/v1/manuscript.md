@@ -17,13 +17,13 @@
 
 ### Affiliations
 
-1. https://ror.org/035b05819 Linderstrøm-Lang Centre for Protein Science, Department of Biology, University of Copenhagen Copenhagen Denmark
-2. https://ror.org/004raaa70 Institut de Pharmacologie et Biologie Structurale, CNRS, Université de Toulouse Toulouse France
-3. https://ror.org/02c5gc203 Université Paris Cité, CNRS, Institut Jacques Monod Paris France
+1. Linderstrøm-Lang Centre for Protein Science, Department of Biology, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
+2. Institut de Pharmacologie et Biologie Structurale, CNRS, Université de Toulouse Toulouse France ([ROR:004raaa70](https://ror.org/004raaa70))
+3. Université Paris Cité, CNRS, Institut Jacques Monod Paris France ([ROR:02c5gc203](https://ror.org/02c5gc203))
 4. Independent researcher Amsterdam Netherlands
-5. https://ror.org/05f0yaq80 Department of Biochemistry and Biophysics, Science for Life Laboratory, Stockholm University Stockholm Sweden
-6. https://ror.org/026vcq606 Department of applied physics, Science for Life Laboratory, KTH Royal Institute of Technology Stockholm Sweden
-7. https://ror.org/00nvjgv40 Laboratoire de Biochimie Théorique, CNRS, Université Paris Cité Paris France
+5. Department of Biochemistry and Biophysics, Science for Life Laboratory, Stockholm University Stockholm Sweden ([ROR:05f0yaq80](https://ror.org/05f0yaq80))
+6. Department of applied physics, Science for Life Laboratory, KTH Royal Institute of Technology Stockholm Sweden ([ROR:026vcq606](https://ror.org/026vcq606))
+7. Laboratoire de Biochimie Théorique, CNRS, Université Paris Cité Paris France ([ROR:00nvjgv40](https://ror.org/00nvjgv40))
 
 † Corresponding author
 
@@ -47,17 +47,83 @@ With the rise of open science, researchers increasingly share their data and dep
 
 One immediate strategy to index MD simulation files available in data repositories is to perform a text-based Google-like search. For that, one queries these repositories with keywords such as ‘molecular dynamics’ or ‘Gromacs’. Unfortunately, we experienced many false positives with this search strategy. This could be explained by the strong discrepancy we observed in the quantity and quality of metadata (title, description) accompanying datasets and queried in text-based search. For instance, a description text could be composed of a couple of words to more than 1200 words. Metadata is provided by the user depositing the data, with no incentive to issue relevant details to support the understanding of the simulation. For the three data repositories studied, no human curation other by that of the providers is performed when submitting data. It is also worth mentioning that title and description are provided as free-text and do not abide to any controlled vocabulary such as a specific MD ontology.
 
-To circumvent this issue, we developed an original and specific search strategy that we called Explore and Expand (Ex2) (see Figure 1A and Materials and methods section) and that relies on a combination of file types and keywords queries. In the Explore phase, we searched for files based on their file types (for instance: .xtc, .gro, etc) with MD-related keywords (for instance: ‘molecular dynamics’, ‘Gromacs’, ‘Martini’, etc). Each of these hit files belonged to a dataset, which we further screened in the Expand phase. There, we indexed all files found in a dataset identified in the previous Explore phase with, this time, no restriction to the collected file types (see Figure 1A and details on the data scraping procedure in the Materials and methods section).
+To circumvent this issue, we developed an original and specific search strategy that we called Explore and Expand ($Ex^{2}$) (see Figure 1A and Materials and methods section) and that relies on a combination of file types and keywords queries. In the Explore phase, we searched for files based on their file types (for instance: .xtc, .gro, etc) with MD-related keywords (for instance: ‘molecular dynamics’, ‘Gromacs’, ‘Martini’, etc). Each of these hit files belonged to a dataset, which we further screened in the Expand phase. There, we indexed all files found in a dataset identified in the previous Explore phase with, this time, no restriction to the collected file types (see Figure 1A and details on the data scraping procedure in the Materials and methods section).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/90061/elife-90061-fig1-v1.jpg)
 
-**Figure 1.:** (A) Explore and Expand () strategy used to index and collect MD-related files. Within the explore phase, we search in the respective data repositories for datasets that contain specific keywords (e.g. ‘molecular dynamics’, ‘md simulation’, ‘namd’, ‘martini’...) in conjunction with specific file extensions (e.g. ‘mdp’, ‘psf’, ‘parm7’...), depending on their uniqueness and level of trust to not report false-positives (i.e. not MD related). In the expand phase, the content of the identified datasets is fully cataloged, including files that individually could result in false positives (such as e.g. ‘.log’ files). (Ex2B) Number of deposited files in generalist data repositories, identified by our  strategy.Ex2
+**Figure 1.:** (A) Explore and Expand ($Ex^{2}$) strategy used to index and collect MD-related files. Within the explore phase, we search in the respective data repositories for datasets that contain specific keywords (e.g. ‘molecular dynamics’, ‘md simulation’, ‘namd’, ‘martini’...) in conjunction with specific file extensions (e.g. ‘mdp’, ‘psf’, ‘parm7’...), depending on their uniqueness and level of trust to not report false-positives (i.e. not MD related). In the expand phase, the content of the identified datasets is fully cataloged, including files that individually could result in false positives (such as e.g. ‘.log’ files). (B) Number of deposited files in generalist data repositories, identified by our $Ex^{2}$ strategy.
 
 Globally, we indexed about 250,000 files and 2000 datasets that represented 14 TB of data deposited between August 2012 and March 2023 (see Table 1). One major difficulty were the numerous files stored in zipped archives, about seven times more than files steadily available in datasets (see Table 1). While this choice is very convenient for depositing the files (as one just needs to provide one big zip file to upload to the data repository server), it hinders the analysis of MD files as data repositories only provide a limited preview of the content of the zip archives and completely inhibits, for example, data streaming for remote analysis and visualization. Files within zip files are not indexed and cannot be searched individually. The use of zip archives also hampers the reusability of MD data, since a specific file cannot be downloaded individually. One has to download the entire zip archive (sometimes with a size up to several gigabytes) to extract the one file of interest.
 
+**Table 1.**
+ Statistics of the MD-related datasets and files found in the data repositories Figshare, OSF, and Zenodo.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data repository</th>
+      <th>datasets</th>
+      <th>first dataset</th>
+      <th>latest dataset</th>
+      <th>files</th>
+      <th>total size (GB)</th>
+      <th>zip files</th>
+      <th>files within zip</th>
+      <th>total files</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Zenodo</td>
+      <td>1011</td>
+      <td>19/11/2014</td>
+      <td>05/03/2023</td>
+      <td>20,250</td>
+      <td>12,851</td>
+      <td>1780</td>
+      <td>141,304</td>
+      <td>161,554</td>
+    </tr>
+    <tr>
+      <td>Figshare</td>
+      <td>913</td>
+      <td>20/08/2012</td>
+      <td>03/03/2023</td>
+      <td>3336</td>
+      <td>736</td>
+      <td>590</td>
+      <td>74,720</td>
+      <td>78,056</td>
+    </tr>
+    <tr>
+      <td>OSF</td>
+      <td>55</td>
+      <td>24/05/2017</td>
+      <td>05/02/2023</td>
+      <td>6146</td>
+      <td>495</td>
+      <td>14</td>
+      <td>0</td>
+      <td>6146</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>1979</td>
+      <td>–</td>
+      <td>–</td>
+      <td>29,732</td>
+      <td>14,082</td>
+      <td>2384</td>
+      <td>216,024</td>
+      <td>245,756</td>
+    </tr>
+  </tbody>
+</table>
+
 The first dataset we found related to MD data that has been deposited in August 2012 in Figshare and corresponds to the work of Fuller et al., 2012 (see Table 1) but we may consider the start of more substantial deposition of the MD data to be 2016 with more than 20,000 files deposited, mainly in Figshare (see Figure 1B). While the number of files deposited in Zenodo was first relatively limited, the last few years (2020–2022) saw a steep increase, passing from a few thousands files in 2018 to almost 50,000 files in 2022 (see Figure 1B). In 2018, the number of MD files deposited in OSF was similar to those in the two other data repositories, but did not take off as much as the other data repositories. Zenodo seems to be favored by the MD community since 2019, even though Figshare in 2022 also saw a sharp increase in deposited MD files. The preference for Zenodo could also be explained by the fact that it is a publicly funded repository developed under the European OpenAIRE program and operated by CERN (European Organization For Nuclear Research, 2013). Overall, the trend showed a rise of deposited data with a steep increase in 2022 (Figure 1B). We believe that this trend will continue in future years, which will lead to a greater amount of MD data available. It is thus urgent to deploy a strategy to index this vast amount of data, and to allow the MD community to easily explore and reuse such gigantic resource. The following describes what is already feasible in terms of meta analysis, in particular what types of data are deposited in data repositories and the simulation setup parameters used by MD experts that have deposited their data.
 
-With our Ex2 strategy (see Figure 1A), we assigned the deposited files to the MD packages: AMBER (Salomon‐Ferrer et al., 2013), DESMOND (Bowers et al., 2006), Gromacs (Berendsen et al., 1995; Abraham et al., 2015), and NAMD/CHARMM (Phillips et al., 2020; Brooks et al., 2009), based on their corresponding file types (see Materials and methods section). In the case of NAMD/CHARMM, file extensions were mostly identical, which prevented us from distinguishing the respective files from these two MD programs. With 87,204 files deposited, the Gromacs program was most represented (see Figure 2A), followed by NAMD/CHARMM, AMBER, and DESMOND. This statistic is limited as it does not consider more specific databases related to a particular MD program. For example, the DE Shaw Research website contains a large amount of simulation data related to SARS-CoV-2 that has been generated using the ANTON supercomputer (https://www.deshawresearch.com/downloads/download_trajectory_sarscov2.cgi/) or other extensively simulated systems of interest to the community. However, this in itself might also serve as a good example, since few automated search strategies will be able to find custom stand-alone web servers as valuable repositories. Here, our goal was not to compare the availability of all data related to each MD program but to give a snapshot of the type of data available at a given time (i.e. March 2023) in generalist data repositories. Interestingly, many files (>133,000) were not directly associated to any MD program (see Figure 2A label ‘Unknown’). We categorized these files based on their extensions (see Figure 2B). While 10% of these files were without file extension (Figure 2B, column none), we found numerous files corresponding to structure coordinates such as .pdb (∼12,000) and .xyz (∼6800) files. We also got images (.tiff files) and graphics (.xvg files). Finally, we found many text files such as .txt, .dat, and .out which can potentially hold details about how simulations were performed. Focusing further on files related to the Gromacs program, being currently most represented in the studied data repositories, we demonstrated in the following present possibilities to retrieve numerous information related to deposited MD simulations.
+With our $Ex^{2}$ strategy (see Figure 1A), we assigned the deposited files to the MD packages: AMBER (Salomon‐Ferrer et al., 2013), DESMOND (Bowers et al., 2006), Gromacs (Berendsen et al., 1995; Abraham et al., 2015), and NAMD/CHARMM (Phillips et al., 2020; Brooks et al., 2009), based on their corresponding file types (see Materials and methods section). In the case of NAMD/CHARMM, file extensions were mostly identical, which prevented us from distinguishing the respective files from these two MD programs. With 87,204 files deposited, the Gromacs program was most represented (see Figure 2A), followed by NAMD/CHARMM, AMBER, and DESMOND. This statistic is limited as it does not consider more specific databases related to a particular MD program. For example, the DE Shaw Research website contains a large amount of simulation data related to SARS-CoV-2 that has been generated using the ANTON supercomputer (https://www.deshawresearch.com/downloads/download_trajectory_sarscov2.cgi/) or other extensively simulated systems of interest to the community. However, this in itself might also serve as a good example, since few automated search strategies will be able to find custom stand-alone web servers as valuable repositories. Here, our goal was not to compare the availability of all data related to each MD program but to give a snapshot of the type of data available at a given time (i.e. March 2023) in generalist data repositories. Interestingly, many files (>133,000) were not directly associated to any MD program (see Figure 2A label ‘Unknown’). We categorized these files based on their extensions (see Figure 2B). While 10% of these files were without file extension (Figure 2B, column none), we found numerous files corresponding to structure coordinates such as .pdb (∼12,000) and .xyz (∼6800) files. We also got images (.tiff files) and graphics (.xvg files). Finally, we found many text files such as .txt, .dat, and .out which can potentially hold details about how simulations were performed. Focusing further on files related to the Gromacs program, being currently most represented in the studied data repositories, we demonstrated in the following present possibilities to retrieve numerous information related to deposited MD simulations.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/90061/elife-90061-fig2-v1.jpg)
 
@@ -99,13 +165,13 @@ To encourage further analysis of the collected files, we shared our data collect
 
 **Figure 5.:** (A) General view of the web application. (B) Focus on the .mdp and .gro files sets of data exported as.tsv files. The web application also includes links to their original repository.
 
-## Towards a better sharing of MD data
+### Towards a better sharing of MD data
 
-With this work, we have shown that it was possible to not only retrieve MD data from the generalist data repositories Zenodo, Figshare and OSF, but to shed light onto the dark matter of MD data in terms of learning current scientific practice, extracting valuable topology information, and analysing how the field is developing. Our objective was not to assess the quality of the data but only to show what kind of data was available. The Ex2 strategy to find files related to MD simulations relied on the fact that many MD software output files with specific file extensions. This strategy could not be applied in research fields where data exhibits non-specific file types. We experienced this limitation while indexing zip archives related to MD simulations, where we were able to decide if a zip archive was pertinent for this work only by accessing the list of files contained in the archive. This valuable feature is provided by data repositories like Zenodo and Figshare, with some caveats, though.
+With this work, we have shown that it was possible to not only retrieve MD data from the generalist data repositories Zenodo, Figshare and OSF, but to shed light onto the dark matter of MD data in terms of learning current scientific practice, extracting valuable topology information, and analysing how the field is developing. Our objective was not to assess the quality of the data but only to show what kind of data was available. The $Ex^{2}$ strategy to find files related to MD simulations relied on the fact that many MD software output files with specific file extensions. This strategy could not be applied in research fields where data exhibits non-specific file types. We experienced this limitation while indexing zip archives related to MD simulations, where we were able to decide if a zip archive was pertinent for this work only by accessing the list of files contained in the archive. This valuable feature is provided by data repositories like Zenodo and Figshare, with some caveats, though.
 
 As of March 2023, we managed to index 245,756 files from 1979 datasets, representing altogether 14 TB of data. This is a fraction of all files stored in data repositories. For instance, as of December 2022, Zenodo hosted about 9.9 million files for ∼1.3 PB of data (Panero and Benito, 2022). All these files are stored on servers available 24/7. This high availability costs human resources, IT infrastructures and energy. Even if MD data represents only 1% of the total volume of data stored in Zenodo, we believe it is our responsibility, as a community, to develop a better sharing and reuse of MD simulation files - and it will neither have to be particularly cumbersome nor expensive. To this end, we are proposing two solutions. First, improve practices for sharing and depositing MD data in data repositories. Second, improve the FAIRness of already available MD data notably by improving the quality of the current metadata.
 
-## Guidelines for better sharing of MD simulation data
+### Guidelines for better sharing of MD simulation data
 
 Without a community-approved methodology for depositing MD simulation files in data repositories, and based on the current experience we described here, we propose a few simple guidelines when sharing MD data to make them more FAIR (Findable, Accessible, Interoperable and Reusable):
 
@@ -115,11 +181,11 @@ These guidelines are complementary to the reliability and reproducibility checkl
 
 Converging on a set of metadata and format requires a large consensus of different stakeholders, from users, to MD program developers, and journal editors. It would be especially useful to organize specific workshops with representatives of all these communities to collectively tackle this specific issue.
 
-## Improving metadata of current MD data
+### Improving metadata of current MD data
 
 While indexing about 2000 MD datasets, we found that title and description accompanying these datasets were very heterogeneous in terms of quality and quantity and were difficult for machines to process automatically. It was sometimes impossible to find even basic information such as the identity of the molecular system simulated, the temperature or the length of the simulation. Without appropriate metadata, sharing data is pointless, and its reuse is doomed to fail (Musen, 2022). It is thus important to close the gap between the availability of MD data and its discoverability and description through appropriate metadata. We could gradually improve the metadata by following two strategies. First, since MD engines produce normalized and well-documented files, we could extract parameters of the simulation by parsing specific files. We already explored this path with Gromacs, by extracting the molecular size and composition from .gro files and the simulation time (with some limitations), thermostat and barostat from .mdp files. We could go even further, by extracting for instance Gromacs version from .log file (if provided) or by identifying the simulated system from its atomic topology stored in.gro files. This strategy can in principle be applied to files produced by other MD engines. A second approach that we are currently exploring uses data mining and named entity recognition (NER) methods (Perera et al., 2020) to automatically identify the molecular system, the temperature, and the simulation length from existing textual metadata (dataset title and description), providing they are of sufficient length. Finally, the possibilities afforded by large language models supplemented by domain-specific tools (Bran et al., 2023) might help interpret the heterogenous metadata that is often associated with the simulations.
 
-## Future works
+### Future works
 
 In the future, it is desirable to go further in terms of analysis and integrate other data repositories, such as Dryad and Dataverse instances (for example Recherche Data Gouv in France). The collaborative platform for source code GitHub could also be of interest. Albeit dedicated to source code and not designed to host large-size binary files, GitHub handles small to medium-size text files like tabular .csv and .tsv data files and has been extensively used to record cases of the Ebola epidemic in 2014 (Perkel, 2016) and the Covid-19 pandemic (Johns Hopkins University, 2020). Thus, GitHub could probably host small text-based MD simulation files. For Gromacs, we already found 70,000 parameter .mdp files and 55,000 structure .gro files. Scripts found along these files could also provide valuable insights to understand how a given MD analysis was performed. Finally, GitHub repositories might also be an entry point to find other datasets by linking to simulation data, such as institutional repositories (see for instance Pesce and Lindorff-Larsen, 2023). However, one potential point of concern is that repositories like GitHub or GitLab do not make any promises about long-term availability of repositories, in particular ones not under active development. Archiving of these repositories could be achieved in Zenodo (for data-centric repositories) or Software Heritage (Di Cosmo and Zacchiroli, 2017; for source-code-centric repositories).
 
@@ -127,21 +193,21 @@ An obvious next step is the enrichment of metadata with the hope to render open 
 
 Eventually, front-end solutions such as the MDverse data explorer tool can evolve to being more user-friendly by interfacing the structures and dynamics with interactive 3D molecular viewers (Tiemann et al., 2017; Kampfrath et al., 2022; Martinez and Baaden, 2021).
 
-## Conclusion
+### Conclusion
 
 In this work, we showed that sharing data generated from MD simulations is now a common practice. From Zenodo, Figshare and OSF alone, we indexed about 250,000 files from 2000 datasets, and we showed that this trend is increasing. This data brings incentive and opportunities at different levels. First, for researchers who cannot access high-performance computing (HPC) facilities, or do not want to rerun a costly simulation to save time and energy, simulations of many systems are already available. These simulations could be useful to reanalyze existing trajectories, to extend simulations with already equilibrated systems or to compare simulations of a dedicated molecular system modelled with different settings. Second, building annotated and highly curated datasets for artificial intelligence will be invaluable to develop dynamic generative deep-learning models. Then, improving metadata along available data will foster their reuse and will mechanically increase the reproducibility of MD simulations. At last, we see here the occasion to push for good practices in the setup and production of MD simulations.
 
 ## Materials and methods
 
-## Initial data collection
+### Initial data collection
 
 We searched for MD-related files in the data repositories Zenodo, Figshare and Open Science Framework (OSF). Queries were designed with a combination of file types and optionally keywords, depending on how a given file type was solely associated to MD simulations. We therefore built a list of manually curated and cross-checked file types and keywords (https://github.com/MDverse/mdws/blob/main/params/query.yml; Poulain et al., 2023). All queries were automated by Python scripts that utilized Application Programming Interfaces (APIs) provided by data repositories. Since APIs offered by data repositories were different, all implementations were performed in dedicated Python (van Rossum, 1995) (version 3.9.16) scripts with the NumPy (Oliphant, 2007) (version 1.24.2), Pandas (McKinney, 2010) (version 1.5.3) and Requests (version 2.28.2) libraries.
 
-We made the assumption that files deposited by researchers in data repositories were coherent and all related to a same research project. Therefore, when an MD-related file was found in a dataset, all files belonging to this dataset were indexed, regardless of whether their file types were actually identified as MD simulation files. This is the core of the Explore and Expand strategy (Ex2) we applied in this work and illustrated in Figure 1. By default, the last version of the datasets was collected.
+We made the assumption that files deposited by researchers in data repositories were coherent and all related to a same research project. Therefore, when an MD-related file was found in a dataset, all files belonging to this dataset were indexed, regardless of whether their file types were actually identified as MD simulation files. This is the core of the Explore and Expand strategy ($Ex^{2}$) we applied in this work and illustrated in Figure 1. By default, the last version of the datasets was collected.
 
 When a zip file was found in a dataset, its content was extracted from a preview provided by Zenodo and Figshare. This preview was not provided through APIs, but as HTML code, which we parsed using the Beautiful Soup library (version 4.11.2). Note that the zip file preview for Zenodo was limited to the first 1000 files. To avoid false-positive files collected from zip archives, a final cleaning step was performed to remove all datasets that did not share at least one file type with the file type list mentioned above. In the case of OSF, there was no preview for zip files, so their content has not been retrieved.
 
-## Gromacs files
+### Gromacs files
 
 After the initial data collection, Gromacs .mdp and .gro files were downloaded with the Pooch library (version 1.6.0). When a .mdp or .gro file was found to be in a zip archive, the latter was downloaded and the targeted .mdp or .gro file was selectively extracted from the archive. The same procedure was applied for a subset of .xtc files that consisted of about one .xtc file per Gromacs datasets.
 
@@ -151,48 +217,48 @@ The .gro files were parsed with the MDAnalysis library (Michaud-Agrawal et al., 
 
 The .xtc files were analyzed using the gmxcheck command (https://manual.gromacs.org/current/onlinehelp/gmx-check.html) to extract the number of particles and the number of frames.
 
-## MDverse data explorer web app
+### MDverse data explorer web app
 
 The MDverse data explorer web application was built in Python with the Streamlit library. Data was downloaded from Zenodo (see the Data availability statement).
 
-## System visualization and molecular graphics
+### System visualization and molecular graphics
 
 Molecular graphics were performed with VMD (Humphrey et al., 1996) and Chimera (Pettersen et al., 2004). For all visualizations, .gro files containing molecular structure were used. In the case of the two structures in Figure 3B, .xtc files were manually assigned to their corresponding .gro (for the TonB protein) or .tpr (for the T4 Lysozyme) files based on their names in their datasets.
 
 Origin of the structures displayed in this work:
 
-## TonB
+### TonB
 
-## T4 Lyzozyme
+### T4 Lyzozyme
 
-## Benzene
+### Benzene
 
-## Ammonia
+### Ammonia
 
-## Peptide with membrane
+### Peptide with membrane
 
-## Kir channels
+### Kir channels
 
-## Gasdermin
+### Gasdermin
 
-## Protein-RNA
+### Protein-RNA
 
-## G-quadruplex
+### G-quadruplex
 
-## Ptb
+### Ptb
 
-## EPI-7170
+### EPI-7170
 
-## Gold nanoparticle
+### Gold nanoparticle
 
-## Gd(DOTA)
+### Gd(DOTA)
 
-## Metalo cage
+### Metalo cage
 
-## AL1
+### AL1
 
-## PTEG-1 (all-atom)
+### PTEG-1 (all-atom)
 
-## PTEG-1 (coarse-grain)
+### PTEG-1 (coarse-grain)
 
-## Theophylline
+### Theophylline

@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.36392.001 Proper kinetochore-microtubule attachments, mediated by the NDC80 complex, are required for error-free chromosome segregation. Erroneous attachments are corrected by the tension dependence of kinetochore-microtubule interactions. Here, we present a method, based on fluorescence lifetime imaging microscopy and Förster resonance energy transfer, to quantitatively measure the fraction of NDC80 complexes bound to microtubules at individual kinetochores in living human cells. We found that NDC80 binding is modulated in a chromosome autonomous fashion over prometaphase and metaphase, and is predominantly regulated by centromere tension. We show that this tension dependency requires phosphorylation of the N-terminal tail of Hec1, a component of the NDC80 complex, and the proper localization of Aurora B kinase, which modulates NDC80 binding. Our results lead to a mathematical model of the molecular basis of tension-dependent NDC80 binding to kinetochore microtubules in vivo.
+Proper kinetochore-microtubule attachments, mediated by the NDC80 complex, are required for error-free chromosome segregation. Erroneous attachments are corrected by the tension dependence of kinetochore-microtubule interactions. Here, we present a method, based on fluorescence lifetime imaging microscopy and Förster resonance energy transfer, to quantitatively measure the fraction of NDC80 complexes bound to microtubules at individual kinetochores in living human cells. We found that NDC80 binding is modulated in a chromosome autonomous fashion over prometaphase and metaphase, and is predominantly regulated by centromere tension. We show that this tension dependency requires phosphorylation of the N-terminal tail of Hec1, a component of the NDC80 complex, and the proper localization of Aurora B kinase, which modulates NDC80 binding. Our results lead to a mathematical model of the molecular basis of tension-dependent NDC80 binding to kinetochore microtubules in vivo.
 
 ## Introduction
 
@@ -32,15 +32,39 @@ The highly conserved NDC80 complex is the major coupler of the kinetochore to mi
 
 ## Results
 
-## FLIM-FRET measures the fraction of donor-labeled NDC80 complexes engaged in FRET with acceptor-labeled microtubules
+### FLIM-FRET measures the fraction of donor-labeled NDC80 complexes engaged in FRET with acceptor-labeled microtubules
 
 Inspired by previous work (Posch et al., 2010), we sought to develop a Förster Resonance Energy Transfer (FRET) based approach to directly measure the association between the NDC80 complex and kinetochore microtubules (kMTs) in living cells. We engineered U2OS cells stably expressing Nuf2, a subunit of the NDC80 complex, N-terminally labeled with a cyan fluorescent protein, mTurquoise2 (Figure 1A). In this same cell line, we also inserted a tetracysteine (TC) motif at the C-terminus of β-tubulin (TUBB) using CRISPR-induced homologous recombination, which becomes fluorescent after binding to the membrane-permeable dye FlAsH (Hoffmann et al., 2005) (Figure 1A and B). The small size (six amino acids) of the TC motif minimizes the negative effects of labeling the C-terminus of tubulin, allowing the engineered cells to successfully pass through mitosis (Andresen et al., 2004). CRISPR-mediated endogenous tubulin tagging ensures low cell-to-cell variation and a high fraction of labeled β-tubulin, which was estimated to be 26.1 ± 5.4% (SD) (Figure 1—figure supplement 1 and see Supplemental experiments in Materials and methods).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36392/elife-36392-fig1-v3.jpg)
+
+**Figure 1.:** (A) Engineered U2OS cell expressing mTurquoise2-NDC80 and β-tubulin-TC-FlAsH. NDC80 (gray), mTurquoise2 (blue) and TC-FlAsH (green). (B) Two-photon microscopy images of the engineered U2OS cells not exposed to FlAsH (top) and exposed to FlAsH (bottom). 3 μm scale bar. mTurquoise2 (blue) and FlAsH (green). (C) Example fluorescence decay curves of mTurquoise2-NDC80 in the engineered U2OS cells not exposed to FlAsH (left, green circle) and exposed to FlAsH (right, orange triangle), plotted with the best-fit single-exponential decay models (black and blue dotted lines). Corresponding weighted residuals (the deviation of data from model, divided by the square root of the number of photons) are plotted below after being smoothened to display systematic deviations. (D) The fluorescence decay curve of mTurquoise2-NDC80 in the presence of FlAsH labeling (orange triangle, same as (C)), plotted with the best-fit two-exponential model (blue solid line). The single-exponential model fit to the fluorescence decay curve in the absence of FlAsH labeling (black dotted line) plotted together for comparison. Corresponding smoothened weighted residual (described above) for the two-exponential model is plotted below. Long- and short-lifetime exponentials correspond to the mTurquoise2-NDC80 populations in non-FRET state and FRET state, respectively, and their relative amplitudes give the fraction of each population. To facilitate the comparison, the fluorescence decay curves in the absence and presence of FlAsH labeling were normalized such that they asymptotically overlap. Data points and source FLIM data are available in Figure 1-Data (Yoo et al., 2018).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36392/elife-36392-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Two-photon fluorescent microscopy images of 9 mitotic cells with β-tubulin-TC-FlAsH. 5 μm scale bar. (B) Example 3D segmentation using active contour algorithm. (C) (top left) The number of voxels in segmented 3D cell images, (top right) the total number of photons collected from entire cells, (bottom left) the total number of photons divided by the number of voxels and the measurement time, and (bottom right) the number of photons collected per second at a voxel in the cytoplasmic region. Gray lines are the average over the 9 different cells. (D) and (E) FCS measurements on Alexa Fluor 488 and TC-FlAsH in solution, respectively. Black circles are averaged over 5 or 6 autocorrelation functions, and red lines are a single-component FCS model fit to the averages. Corresponding weighted residuals (the difference between data and model, divided by the standard deviation of data) are plotted below to show any systematic deviations of the fitted models from the data.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36392/elife-36392-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Illustration of fluorescence decay acquisition in a TCSPC (time-correlated single photon counting) FLIM system. A Ti:Sapphire pulsed laser is used for excitation and a photomultiplier tube (PMT) for detection. The photon arrival time, the difference in timing between the emitted photon and excitation laser pulse, is measured by TCSPC, which is accumulated to a fluorescence decay curve over many laser repetition periods. (B) The fluorescence lifetime is the average time the fluorophore stays in the excited state. (left) When the donor fluorophore (D) is not engaged in FRET with an acceptor (A) fluorophore, the donor fluorophore has a single-exponential fluorescence decay with fluorescence lifetime τD=1/(kr + knr), where kr and knr are the radiative and non-radiative decay rates, respectively. (middle) FRET provides an additional relaxation pathway to the excited donor, reducing the fluorescence lifetime of the donor to τFRET = 1/(kr + knr + kFRET), where kFRET is the FRET rate. (right) The fluorescence decay of a mixture of donors engaged in FRET and not engaged in FRET is a sum of two exponentials with two different lifetimes, τD and τFRET, which corresponds to the non-FRET and FRET populations, respectively. The relative amplitude of the short-lifetime exponential decay provides the fraction of the FRET population, and the lifetime ratio provides the intrinsic FRET efficiency. (C) TCSPC FLIM provides fluorescence decay curve at each pixel, and the total photon counts in each pixel provides a two-photon fluorescence intensity image. To quantify the FRET fraction at each kinetochore, kinetochores were identified based on the intensity image, then the fluorescence decay curves in the pixels within each kinetochore were summed. Then we performed a Bayesian analysis to obtain the posterior distribution of the FRET fraction at each kinetochore. The posterior distributions of the kinetochores in a group of kinetochores were combined by multiplication to compute the mean and SEM of the FRET fraction for the group.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36392/elife-36392-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A) to (D) Schematic descriptions, example cell images, and example mTurquoise2 fluorescence decay curves from three different FRET-negative control experiments and a nocodazole treatment experiment. mTurquoise2 fluorescence decay curves (blue circles) are plotted with best-fit single- (black dotted line) or two-exponential decay model (black solid line), and the associated weighted residuals are plotted below (blue curve). 3 μm scale bar. (A) Negative control 1. Nuf2 N-terminally labeled with mTurquoise2, and no FlAsH labeling. (B) Negative control 2. Nuf2 C-terminally labeled with mTurquoise2 (far from kMT), and no FlAsH labeling. (C) Negative control 3. Nuf2 C-terminally labeled with mTurquoise2 (far from kMT), and β-tubulin C-terminally labeled with FlAsH. (D) Nocodazole treatment experiment. Nuf2 N-terminally labeled with mTurquoise2, and β-tubulin C-terminally labeled with FlAsH. Cell was incubated with 5 µM nocodazole for >10 min to depolymerize microtubules. (E) Boxplot of fluorescence lifetimes estimated from single-exponential models fit to the negative control fluorescence decays. n = 32, 11, and 6 cells for Neg Ctrl 1, 2, and 3, respectively.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/36392/elife-36392-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Fluorescence decay curves of cells expressing mTurquoise2-TC in the absence (green circle) and the presence (orange triangle) of FlAsH. A single-exponential model (black solid line) was fit to the fluorescence decay curve in the absence of FlAsH. For easier comparison, the fluorescence decay curves were normalized such that they asymptotically overlap. (B) The conformational ensemble of the flexible tether between mTurquiose2 and TC were modeled by Monte Carlo protein simulations, and the distance, r, between mTurquiose2 (blue cartoon) and TC-FlAsH (green ball) was estimated. This distribution is denoted by p(r). (C) The measured fluorescence decay of mTurquoise2-TC-FlAsH (orange triangles, same as (A) but not normalized) plotted with the best-fit decay model (black dotted line, model described in the box and derived in Materials and methods). Associated weighted residual (deviation of model from data, divided by the square root of the number of photons) plotted below. Fitting the decay model to the data estimated the Förster radius to be 5.90 ± 0.10 nm (SE).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/36392/elife-36392-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** (A) The conformational ensemble of the flexible tether between mTurquoise2 and Nuf2 (red) and the disordered C-terminal tails of beta-tubulins around the NDC80 (green) were modeled by large-scale Monte Carlo protein simulations, which were then used to calculate the distances, ri, between the mTurquoise2 and the TC motifs. FlAsH labeling was assigned to the TC motifs with 26.1% probability (which is the measured labeling fraction of beta-tubulin). Fluorescence lifetimes of the mTurquoise2 were calculated for randomly sampled sets of distances, $r→=(r_{i})$, based on which fluorescence decay curves were simulated. (B) (top) Fluorescence decay curves for various distances between NDC80 and MT were simulated and then were fit using single- and two-exponential decay models. Difference in Bayesian information criteria (BIC) between single- and double-exponential models is plotted against the NDC80-MT distance. Data points are mean and SD. (bottom) Example simulated fluorescence decay curves (green dots) for 0, 4, and 9 nm NDC80-MT distances are plotted with the best-fit single- (blue line) and two-exponential (red line) models. Corresponding smoothened weighted residuals plotted below. (C) Fluorescence decay curves for various NDC80 binding fractions (fb) were simulated and fit by using two-exponential decay model to estimate FRET fraction (fFRET). (left) Three example simulated fluorescence decay curves (green dots) for 0, 30, and 60% binding fractions with the best-fit two-exponential models (red line), and the corresponding smoothened weighted residuals plotted below. (right) NDC80 FRET fractions (fFRET) plotted against NDC80 binding fractions (fb) (blue dots), and the linear fit (black line). Gray-shaded area represents the uncertainty in the slope, which was determined from the uncertainties in the measured beta-tubulin labeling fraction and Förster radius (see Supplemental experiments in Materials and methods).
 
 We used time-correlated single photon counting (TCSPC) fluorescence lifetime imaging microscopy (FLIM) to quantitatively measure FRET between mTurquoise2 and TC-FlAsH in tissue culture cells (Figure 1—figure supplement 2). TCSPC FLIM-FRET provides fluorescence decay curves of the donor fluorophore at each pixel location. If a donor fluorophore has a single-exponential fluorescence decay curve when not engaged in FRET, then when it is engaged in FRET the fluorescence decay curve will also be single-exponential, but with a shorter lifetime. A pixel containing a mixture of such donor fluorophores engaged in FRET and not engaged in FRET displays a fluorescence decay curve that is a sum of two exponentials. Bayesian analysis of the fluorescence decay curves provides a bias-free measurement of the relative fraction of the two exponentials, and hence the fraction of donor fluorophores engaged in FRET (Yoo and Needleman, 2016; Kaye et al., 2017). In contrast to intensity-based FRET methods, FLIM-FRET is capable of quantifying the fraction of donor fluorophores engaged in FRET when donors and acceptors are differentially distributed in cells, and it is less prone to errors arising from instrumental artefacts and photobleaching (Berezin and Achilefu, 2010).
 
 We first characterized the fluorescence decay of mTurquoise2-NDC80 in the absence of FRET by performing FLIM measurement on the engineered U2OS cells (mTurquoise2-NDC80/β-tubulin-TC) that were not exposed to FlAsH (Figure 1B, top). We found that their fluorescence decays are well described as a single exponential with a lifetime of 3.75 ± 0.09 ns (SD) (Figure 1C, left, and Figure 1—figure supplement 3A). As discussed above, this single exponential decay profile is expected when the donor fluorophores do not engage in FRET. We next measured the fluorescence decay of the mTurquoise2-NDC80 in the presence of FlAsH labeling of microtubules. In this case, a single exponential provided a poor fit to the data, exhibiting significant systematic deviations (Figure 1C, right). The fluorescence decay in the presence of FlAsH labeling was well fit by a sum of two exponentials with lifetimes 3.71 ± 0.04 ns (SE) and 0.75 ± 0.12 ns (SE) (Figure 1D). The long lifetime of the two-exponential fit was indistinguishable from the lifetime in the absence of FRET (p=0.68, two-sided Z-test), and thus corresponds to the non-FRET donor population. Therefore, the short-lifetime species is the FRET donor population. The relative amplitude of the short- and long-lifetime exponentials are 0.13 ± 0.01 (SE) and 0.87 ± 0.01 (SE), respectively, thus 13 ± 1% (SE) of donor fluorophores are engaged in FRET.
 
-## FRET between mTurquoise2-NDC80 and FlAsH results from the NDC80-kMT binding
+### FRET between mTurquoise2-NDC80 and FlAsH results from the NDC80-kMT binding
 
 Having demonstrated our ability to measure FRET between mTurquoise2-NDC80 and FlAsH in tissue culture cells, we explored if the FRET is due to the binding of NDC80 to kMTs. We first engineered an alternative construct with mTurquoise2 conjugated to the distally located C-terminus of Nuf2, far removed from kMTs. This alternative construct displayed only a single long-lifetime state in either the presence or absence of TC-FlAsH, arguing that FRET does not result from non-specific interactions (Figure 1—figure supplement 3B,C and E). Incubating cells with nocodazole to depolymerize microtubules caused a reduction (p<10−10, two-sided Z-test) of NDC80 FRET fraction from 13 ± 1% (SE) to 3 ± 1% (SE) (Figure 1—figure supplement 3D). Thus, FRET strongly depends on the presence of microtubules.
 
@@ -48,7 +72,7 @@ We next investigated if NDC80 that is close to kMTs, but not bound to them, can 
 
 Even though FRET results only from NDC80 bound to kMTs, the measured FRET fraction is not identical to the fraction of NDC80 bound to kMTs because not all tubulin heterodimers are labeled with TC-FlAsH. Using large scale Monte Carlo simulations of mTurquoise2-NDC80 bound to FlAsH-labeled microtubules, we generated fluorescence decay curves for various NDC80 binding fractions, and estimated the resulting NDC80 FRET fractions from a fit to a two-exponential decay (see Figure 1—figure supplement 5C and Supplemental experiments in Materials and methods). We found that the NDC80 FRET fraction increases linearly with the NDC80 binding fraction with a slope of 0.42 ± 0.08, indicating that 42% of attached mTurquoise2-NDC80 contribute to the short-lifetime FRET state (Figure 1—figure supplement 5C). Thus, the measured FRET fraction of 13% in Figure 1D corresponds to 31% of NDC80 complexes being bound to kMTs.
 
-## NDC80-kMT binding is regulated in a chromosome-autonomous fashion throughout prometaphase
+### NDC80-kMT binding is regulated in a chromosome-autonomous fashion throughout prometaphase
 
 Using the FLIM-FRET measurements of NDC80-kMT binding, we first investigated how NDC80-kMT binding evolves over the course of mitosis. We found that the average NDC80-kMT binding gradually increases as mitosis progresses, with NDC80 FRET fraction rising from 7% in early prometaphase to 14% in late metaphase, and reaching about 18% in anaphase (corresponding to NDC80 binding fractions of 17% in prometaphase; 33% in late metaphase; and 43% in anaphase) (Figure 2A). This temporal change in NDC80-kMT binding may underlie the previously observed decrease in kMT turnover throughout mitosis (Kabeche and Compton, 2013; Zhai et al., 1995).
 
@@ -58,31 +82,59 @@ Using the FLIM-FRET measurements of NDC80-kMT binding, we first investigated how
 
 The change in the average NDC80-kMT binding over the course of error correction in prometaphase could be due to a cell cycle-dependent coordinated regulation of NDC80 across kinetochores (coordinated regulation), an independent modulation of NDC80 on different chromosomes (chromosome-autonomous regulation), or a combination of both. To investigate the contribution of chromosome-autonomous regulation, we sought to determine if different populations of kinetochores in prometaphase exhibit different NDC80-kMT binding. We compared the extent of the NDC80-kMT binding of kinetochores centered at the metaphase plate to those located off-centered (Figure 2B), and found that the centered kinetochores exhibit 2.0 ± 0.4 times higher NDC80 binding than the off-centered kinetochores. We next investigated how the NDC80-kMT binding of centered and off-centered kinetochores change with time in prometaphase. As mitosis progresses and the chromosomes align to the metaphase plate, the number of kinetochores in the center region increases while the number of kinetochores in the off-center region decreases (Figure 2C). NDC80-kMT binding continuously increases over time for the kinetochores located in the center region, but remains constant with the FRET fraction of ~7% for the kinetochores in the off-center region (Figure 2D). The observation of differences in NDC80 binding between different subpopulations of kinetochores strongly argues for the existence of chromosome-autonomous regulation, which might be modulated by tension, Aurora kinases A and B, pathways that control the conversion of lateral to end-on kMT attachments, or other factors (Godek et al., 2015; DeLuca et al., 2018). We speculate that the temporal increase in NDC80-kMT binding of centered kinetochores is due to the gradual decrease in the number of kinetochores with erroneous attachment that transiently lie on the metaphase plate (Magidson et al., 2011). The constant NDC80-kMT binding of off-centered kinetochores argues for a lack of temporal regulation of this subpopulation.
 
-## NDC80-kMT binding is positively correlated with centromere tension
+### NDC80-kMT binding is positively correlated with centromere tension
 
 After demonstrating that different population of kinetochores exhibits different NDC80-kMT binding throughout prometaphase, we next investigated the factors contributing to chromosome-autonomous regulation of the interaction between NDC80 and kMTs. Aligned chromosomes in U2OS cells oscillate around the metaphase plate, with microtubules attached to the leading and trailing kinetochores primarily depolymerizing and polymerizing, respectively (Tirnauer et al., 2002; Armond et al., 2015) (Figure 3A). The distance between sister kinetochores (referred to as K-K distance) fluctuates during the oscillation (Magidson et al., 2011), as the centromere deforms in response to the dynamic change in tension (Figure 3A). Therefore, chromosome oscillation provides a window to study how NDC80 binding is related to kMT dynamics and centromere tension in a physiologically relevant condition.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/36392/elife-36392-fig3-v3.jpg)
+
+**Figure 3.:** (A) (left) kMTs predominantly depolymerize at leading kinetochores and polymerize at trailing kinetochores. (right) K-K distance is a proxy for centromere tension. Measuring NDC80-kMT binding along with the kinetochore movement and K-K distance therefore reveals how NDC80-kMT binding is related to the kMT dynamics and centromere tension. (B) Image of a metaphase cell with mTurquoise2-NDC80 (blue) and β-tubulin-TC-FlAsH (green), and kinetochore tracking (yellow circles) and pairing (red lines) results. 3 μm scale bar. (C) NDC80 FRET fraction vs. kinetochore speed for leading (green circle) and trailing (orange triangle) kinetochores (n = 17 cells, 681 kinetochores/data point). Data points are the mean, y-error bars the SEM, and the x-error bars the interquartile ranges within groups of kinetochores with similar velocities. (D) NDC80 FRET fraction vs. K-K distance for untreated cells (green circle, n = 17 cells, 984 kinetochores/data point), cells treated with 10 μM taxol (orange triangle, n = 7 cells, 525 kinetochores/data point), and cells treated with 5 μM STLC (purple square, n = 16 cells, 493 kinetochores/data point). For STLC data, only poleward-facing kinetochores are plotted (see Figure 3—figure supplement 2 for comparison between poleward and anti-poleward kinetochores). Data points are the mean, y-error bars the SEM, and the x-error bars the interquartile ranges within groups of kinetochores with similar K-K distances. Gray area is the 95% confidence interval for the linear fit to the combined data. (E) Histograms of K-K distances for the untreated (top, green), taxol-treated (middle, orange), and STLC-treated (bottom, purple) cells. 3 μm scale bar in the cell images of mTurquoise2-NDC80 (blue) and beta-tublin-TC-FlAsH (green). ***p-value (Welch’s t-test) less than 10−30. Data points and source FLIM data are available in Figure 3-Data (Yoo et al., 2018).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36392/elife-36392-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Each data point represents the fraction of leading kinetochores within a group of kinetochores with similar K-K distances. Gray region is the 95% confidence interval of the linear fit. (B) Histogram of K-K distances of leading (green) and trailing (orange) kinetochores.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/36392/elife-36392-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** NDC80 FRET fraction vs. K-K distance for poleward-facing kinetochores (purple square, same as Figure 3D) and anti-poleward-facing kinetochores (pink triangles) in cells treated with 5 μM STLC (n = 16 cells, 493 kinetochores/data point). Data points are the mean, y-error bars the SEM, and the x-error bars the interquartile ranges within groups of kinetochores with similar K-K distances. 3 µm scale bar. Gray area is the 95% confidence interval for the linear fit.
 
 We first asked whether NDC80 binding is different on leading and trailing kinetochores. We acquired time-lapse movies of 17 metaphase cells, tracked their kinetochores, identified sister kinetochores by their relative motions (Figure 3B), and quantified the NDC80 binding fraction in groups of kinetochores with similar velocities using FLIM-FRET analysis. We found that the NDC80 FRET fraction is higher at trailing kinetochores (12.8 ± 0.5%, SEM) than leading kinetochores (11.4 ± 0.5%, SEM), regardless of their speeds (Figure 3C), suggesting that NDC80 preferentially binds to polymerizing kMTs in vivo. The preferential binding is statistically significant (p<0.02, two-sided Z-test), yet small, presumably because leading and trailing kinetochores have a mixture of both polymerizing and depolymerizing MTs (Armond et al., 2015). This differential binding of NDC80 provides an explanation for the higher detachment rate of depolymerizing microtubules from kinetochores in vitro (Akiyoshi et al., 2010), and may give insight into the nature of kMT attachments (Dumont et al., 2012).
 
 The detachment rate of kMTs from kinetochores was shown to be reduced when tension was increased using glass needles in classic micromanipulation experiments by Bruce Nicklas (Nicklas and Koch, 1969). Since the NDC80 complex is the predominant coupler of the kinetochore to microtubules (Cheeseman et al., 2006; DeLuca et al., 2006), we hypothesized that the tension-dependent detachment of kMTs results from tension-dependent NDC80-kMT binding. To test this possibility, we next investigated the correlation between NDC80 FRET fraction and centromere tension, inferred by K-K distance, during chromosome oscillations. We used FLIM-FRET analysis to measure the NDC80 binding in groups of sister kinetochores with similar K-K distances, and observed a highly significant positive correlation (p<0.005) between NDC80 FRET fraction and K-K distance (Figure 3D). We observed no significant correlation between K-K distance and kinetochore velocity (p=0.75), arguing that NDC80 binding is independently regulated by these two factors (Figure 3—figure supplement 1). In the absence of microtubules, the rest length of K-K distance in human cell is 0.73 ± 0.04 μm (Tauchman et al., 2015), significantly shorter than the K-K distances during metaphase oscillations. Thus, in order to investigate a wider range of K-K distance, we treated cells with taxol, a microtubule-stabilizing drug, which greatly reduced K-K distances (0.90 ± 0.10 μm, taxol vs. 1.19 ± 0.19 μm, untreated, SD, p<10−30) (Figure 3E) as well as NDC80 FRET fraction (Figure 3D). As an alternative way to reduce the tension, we inhibited Eg5 with 5 μM S-trityl-L-cysteine (STLC) (Skoufias et al., 2006). STLC-treated cells form monopolar spindles with reduced K-K distances (0.87 ± 0.10 μm, SD, p<10−30) (Figure 3E). In these monopolar spindles, NDC80 FRET fractions from poleward-facing kinetochores was positively correlated with the K-K distance (p<0.05), while anti-poleward-facing kinetochores displayed reduced NDC80 FRET fraction with no significant correlation with K-K distance (p=0.46), presumably because many of these kinetochores are monotelically attached from the poleward side (Figure 3—figure supplement 2). The correlation between NDC80 FRET fraction and K-K distance was similar between taxol- and STLC-treated cells (p=0.15, see Figure 3D), arguing that the relation between NDC80 FRET fraction and K-K distance is insensitive to the precise perturbation used to reduce tension. Combining the data of untreated, taxol-treated and STLC-treated (only poleward-facing kinetochores) cells, we found that the NDC80 FRET fraction continually increases with K-K distance over the full range of K-K distance (positive correlation, p<0.00005) (Figure 3D). The extent of variation of NDC80-kMT binding with K-K distance is comparable to the extent of variation over the course of mitosis, from prometaphase to anaphase onset, as well as the extent of difference between centered and off-centered kinetochores in late prometaphase (compare Figure 3D with 2A and D).
 
-## Aurora B kinase regulates NDC80-kMT binding in a graded fashion in vivo
+### Aurora B kinase regulates NDC80-kMT binding in a graded fashion in vivo
 
 Aurora B kinase is one of the best characterized components of the error correction process, and the N-terminal tail of the Hec1/Ndc80 protein in the NDC80 complex is a known substrate of Aurora B kinase that contains nine phosphorylation sites (Tanaka et al., 2002; Biggins et al., 1999; Cheeseman et al., 2006; DeLuca et al., 2006; Ciferri et al., 2008; Hauf et al., 2003). Previous biochemistry experiments demonstrated that the phosphorylation state of Hec1 modulates its binding to microtubules in vitro (Cheeseman et al., 2006; Zaytsev et al., 2014, 2015). We used our FLIM-FRET technique to investigate the relationship between Aurora B kinase activity and NDC80-kMT binding in cells. We first added the ATP-competitive Aurora B inhibitor, ZM447439, to late prometaphase cells, and observed a gradual increase in NDC80 FRET fraction over ~10 min, from 9% to nearly 18% (corresponding to 21% NDC80 binding fraction before Aurora B inhibition and 43% after the inhibition) (Figure 4A and Figure 4—figure supplement 1A). Thus, Aurora B is a major modulator of NDC80-kMT binding in cells. This modulation of NDC80-kMT binding could occur directly, through phosphorylation of the N-terminal tail of the Hec1/Ndc80 protein, or indirectly, through other Aurora B substrates which are at kinetochores or which influence spindle assembly (Carmena et al., 2012; Krenn and Musacchio, 2015). To further investigate the Aurora B modulation of NDC80 binding, we used non-phosphorylatable mutants of Hec1/Ndc80 protein, in which all nine identified Aurora B target sites are mutated to either aspartic acid (a phospho-mimicking mutation) or alanine (a phospho-null mutation) (DeLuca et al., 2011). We replaced the endogenous Hec1 with wild-type Hec1 or the phosphomimetic mutant of Hec1 by RNAi knockdown and rescue (Figure 4B, see Materials and methods). The NDC80 FRET fraction decreased with the number of phospho-mimicking mutations, from 16.0 ± 0.5% with 9A-Hec1 (all nine phosphorylation sites substituted with Ala) to 5.8 ± 0.5% with 2D-Hec1 (two sites, S44 and S55, substituted with Asp while the others with Ala) and to 4.8 ± 0.3% with 9D-Hec1 (all nine sites substituted with Asp) (mean ± SEM, Figure 4C). The average NDC80 FRET fraction of WT-Hec1 (9.3 ± 0.9%) was similar, but slightly higher than 2D-Hec1, consistent with previous results arguing that on average there are zero to two sites phosphorylated per Hec1/Ndc80 protein in prometaphase and metaphase (Zaytsev et al., 2014).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36392/elife-36392-fig4-v3.jpg)
+
+**Figure 4.:** (A) (top) Cell images showing mTurquoise2-NDC80 (blue) and beta-tubulin-TC-FlAsH (green). (bottom) Time course of NDC80 FRET fraction in response to Aurora B inhibition by 3 μM ZM447439 (n = 15 cells). (B) Images of cells with mTurquoise2-NDC80 (blue) and beta-tubulin-TC-FlAsH (green) after depleting endogenous Hec1 by siRNA and expressing siRNA-insensitive WT or three different phosphomimetic mutants of Hec1: 9A-, 2D-, and 9D-Hec1 (see Materials and methods). (C) NDC80 FRET fraction of cells whose endogenous Hec1 are replaced with WT or phosphomimetic Hec1 (see Materials and methods). Black dots are from individual cells and red error bars are mean ± SEM. n = 19, 22, 12, and 17 cells for WT-, 9A-, 2D-, and 9D-Hec1. *p<0.1; **p<0.01; ***p<0.001; ****p<0.0001. (D) Time course of NDC80 FRET fraction of 2D-Hec1-expressing cells in response to Aurora B inhibition by 3 μM ZM447439 (n = 12 cells). (E) (top) Cell images color-coded with Aurora B sensor non-FRET fraction. (bottom) Time course of the non-FRET fraction of the cytoplasmic Aurora B FRET sensor in response to 3 μM ZM447439 (n = 10 cells). In (A), (D) and (E), black squares and error bars are the weighted mean and SEM of the data points (green circles) in equally spaced time intervals of 1 min. Red solid and dashed lines are the best-fit exponential decay models and their 95% confidence intervals, respectively. 5 μm scale bar for all images. (F)NDC80 FRET fraction (from (A)) and NDC80 binding fraction (converted from the FRET fraction) plotted against the fraction of phosphorylated Aurora B phosphorylation sites in NDC80 (converted from Aurora B FRET sensor non-FRET fraction in (E)). Red solid and dashed lines are the best-fit NDC80-kMT binding model (derived in Mathematical modeling in Materials and methods) and its 95% confidence interval. Data points and source FLIM data are available in Figure 4-Data (Yoo et al., 2018).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36392/elife-36392-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Time course of NDC80 FRET fraction in response to 0.03% DMSO (n = 5 cells, negative control for Figure 4A). (B) The design of Aurora B FRET biosensor. The FRET sensor contains a kinesin-13 family Aurora B substrate (gray) whose phosphorylation results in its binding to the forkhead-associated domain (FHA2, green) in the sensor, which constrains the sensor in the open non-FRET state. Therefore, measuring the non-FRET fraction of the FRET sensor allows the quantification of Aurora B activity. (C) Time course of the non-FRET fraction of cytoplasmic Aurora B FRET sensor in response to 0.03% DMSO (n = 3 cells, negative control for Figure 4E). (D) Time course of the non-FRET fraction of Nuf2-targeted Aurora B FRET sensor in response to 3 μM ZM447439 (n = 9 cells). Black squares and error bars are the weighted mean and SEM of the data points (green circles) in equally spaced time intervals of 1 min. Red solid and dashed lines are the best-fit exponential model and its 95% confidence interval, respectively. 5 μm scale bars.
 
 We next sought to determine if the increased binding of NDC80 to kMTs upon Aurora B inhibition is caused by a change of phosphorylation of the N-terminal tail of Hec1/Ndc80 protein. To this end, we added the Aurora B inhibitor, ZM447439, to cells with endogenous Hec1 replaced with 2D-Hec1, whose nine identified Aurora B target sites in the N-terminal tail cannot be phosphorylated. After the addition of ZM447439, the NDC80 FRET fraction increases by only 0.02 ± 0.01 (SE), which is statistically significant (p<0.001), but substantially smaller than the increase observed in cells with endogenous Hec1 (0.09 ± 0.01 (SE)) (compare Figure 4D–4A). Thus, the modulation of NDC80 binding to kMTs by Aurora B predominantly occurs through the phosphorylation of the N-terminal tail of Hec1/Ndc80.
 
 We next quantified how Aurora B inhibition influences Aurora B activity in cells. We performed FLIM measurement on a cytoplasmic Aurora B FRET biosensor (Fuller et al., 2008), which contains a kinesin-13 family Aurora B substrate whose phosphorylation obstructs intramolecular FRET between mTurquoise2 and YPet (Figure 4—figure supplement 1B). During ZM447439 treatment, we found a continual reduction in the fraction of the Aurora B sensors in the non-FRET state, a proxy for Aurora B phosphorylation, from 0.540 ± 0.007 (SEM) to 0.368 ± 0.012 (SEM) (Figure 4E and Figure 4—figure supplement 1C). Nuf2-targeted Aurora B sensor responded to the ZM447439 treatment with similar kinetics, arguing that the time scale of response to Aurora B inhibition is insensitive to the spatial location of the substrate (Figure 4—figure supplement 1D). As the typical time scale of drug uptake is far slower than typical phosphorylation/dephosphorylation kinetics (Thurber et al., 2014; Huang et al., 1997), it is reasonable to assume that the phosphorylation level of Aurora B substrate is at steady state at each time point, so plotting the measured NDC80 binding fraction (converted from FRET fraction) vs. phosphorylated level (converted from Aurora B sensor non-FRET fraction) at each time point reveals their relationship. This analysis showed a graded dependence of NDC80-kMT binding on phosphorylation (Figure 4F), which is consistent with the impact of phosphomimetic Hec1 mutants on NDC80 binding (compare Figure 4C and F) and results from previous in vitro assays (Zaytsev et al., 2014, 2015). The increased NDC80-kMT binding after Aurora B inhibition may underlie the reduction in detachment of kMTs from kinetochores after Aurora B inhibition, observed in photoactivation experiments (Cimini et al., 2006).
 
-## Haspin-dependent centromere-localized Aurora B is responsible for the tension dependency of NDC80-kMT binding
+### Haspin-dependent centromere-localized Aurora B is responsible for the tension dependency of NDC80-kMT binding
 
 Aurora B regulates kinetochore-microtubule interactions, but its contribution to the tension-dependent stabilization of kinetochore-microtubule attachments is controversial (Campbell and Desai, 2013; Salimian et al., 2011; Akiyoshi et al., 2010; Liu et al., 2009; Tanaka et al., 2002; Zaytsev et al., 2016; Godek et al., 2015; Lampson and Cheeseman, 2011; Haase et al., 2017). We next sought to determine if the correlation between NDC80-kMT binding and centromere tension that we observed (Figure 3D) is caused by the phospho-regulation of NDC80 by Aurora B. After replacing the endogenous Hec1 protein with 9A-Hec1, which cannot be phosphorylated on the nine mutated target sites, we no longer observed a significant correlation between NDC80 FRET fraction and K-K distance (p=0.20) (Figure 5A). 9A-Hec1-expressing cells displayed significantly larger K-K distance than unperturbed cells (1.36 ± 0.21 µm, SD, p<10−30) (Figure 5B), consistent with previous studies (Tauchman et al., 2015; Zaytsev et al., 2014). To investigate a wider range of K-K distance, we treated cells with taxol or STLC (Figure 5-supplement figure 1A), as described above, and found no correlation over the full range of K-K distance (p=0.29, Figure 5A and B). Since the strong correlation between NDC80 binding and K-K distance (Figure 3D) is eliminated in the non-phosphorylatable Hec1 mutant 9A-Hec1 (Figure 5A), this argues that the phosphorylation of the N-terminal tail of Hec1 is responsible for the correlation between NDC80-kMT binding and K-K distance. As Aurora B is believed to be the primary kinase that phosphorylates the N-terminal tail, this further suggests that the activity of Aurora B is responsible for the correlation between NDC80-kMT binding and K-K distance.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/36392/elife-36392-fig5-v3.jpg)
+
+**Figure 5.:** (A) NDC80 FRET fraction vs. K-K distance for 9A-Hec1-expressing cells with no drug treatment (green circle, n = 12 cells, 803 kinetochores/data point), with 10 μM taxol treatment (orange triangle, n = 9 cells, 1113 kinetochores/data point), or with 5 μM STLC treatment (purple square, n = 10 cells, 855 kinetochores/data point). For STLC data, only poleward-facing kinetochores are included (see Figure 5—figure supplement 1A for comparison between poleward-facing and anti-poleward-facing kinetochores). Data points are the mean, y-error bars the SEM, and the x-error bars the interquartile ranges within groups of kinetochores with similar K-K distances. Gray area is the 95% confidence interval for the linear fit to the combined data. (B) Histograms of K-K distances for the untreated 9A-Hec1 cells (top, green), untreated cells with endogenous Hec1 (top, black line), 9A-Hec1 cells treated with taxol (middle, orange), and 9A-Hec1 cells treated with STLC (bottom, purple). 3 μm scale bar in the cell images of mTurquoise2-NDC80 (blue) and beta-tubulin-TC-FlAsH (green). ***p<10−6 (Welch’s t-test). (C) Haspin kinase phosphorylates histone H3 at Thr3 (H3T3), which recruits the chromosome passenger complex (CPC, red) to centromeres. 5-Iodotubercidin (5-ITu) inhibits haspin kinase, thereby displacing Aurora B from centromeres. (D) Spinning-disk confocal microscopy images of cells expressing mNeonGreen-Nuf2 (green) and INCENP-mCherry (red) before (top) and after (bottom) haspin inhibition by 10 μM 5-ITu treatment. 3 μm scale bar. (E) NDC80 FRET fraction vs. K-K distance for cells treated with 10 μM 5-ITu (green circle, n = 15 cells, 1170 kinetochores/data point), for cells treated with both 10 μM 5-ITu and 10 μM taxol (orange triangle, n = 3 cells, 359 kinetochores/data point), and for cells treated with 10 μM 5-ITu and 5 μM STLC (purple square, n = 12 cells, 564 kinetochores/data point). For 5-ITu + STLC data, only poleward-facing kinetochores are included (see Figure 5—figure supplement 1B for comparison between poleward-facing and anti-poleward-facing kinetochores). Data points are the mean, y-error bars the SEM, and the x-error bars the interquartile ranges within groups of kinetochores with similar K-K distances. Gray area is the 95% confidence interval for the linear fit to the combined data. (F) Histograms of K-K distances for the 5-ITu-treated (top, green), untreated (top, black line), 5-ITu + taxol treated (middle, orange), and 5-ITu + STLC treated cells (bottom, purple). 3 μm scale bar in the cell images of mTurquoise2-NDC80 (blue) and beta-tubulin-TC-FlAsH (green). ***p<10−6 (Welch’s t-test). (G) NDC80 FRET fraction and (H) the non-FRET fraction of Nuf2-targeted Aurora B FRET sensor (proxy for Aurora B activity at NDC80) for different drug treatments. Each data point (gray circle) corresponds to an individual cell, and the error bar (red) shows the mean and SEM. P-values from two-sided Welch’s t-test. Data points and source FLIM data are available in Figure 5-Data (Yoo et al., 2018).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36392/elife-36392-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** NDC80 FRET fraction vs. K-K distance for poleward-facing kinetochores (purple squares, same as Figure 5) and anti-poleward-facing kinetochores (pink triangles) in (A) 9A-Hec1-expressing cells treated with 5 μM STLC (n = 10 cells, 855 kinetochores/data point) and (B) endogenous-Hec1-expressing cells treated both with 10 μM 5-ITu and 5 μM STLC (n = 12 cells, 564 kinetochores/data point). Data points are the mean, y-error bars the SEM, and the x-error bars the interquartile ranges within groups of kinetochores with similar K-K distances. 3 µm scale bar.
 
 Aurora B is localized to centromeres in prometaphase and metaphase (Carmena et al., 2012). We next investigated if this localization is important for the correlation between NDC80-kMT binding and K-K distance. We used the haspin kinase inhibitor, 5-iodotubercidin (5-ITu), which has previously been shown to compromise the recruitment of Aurora B to inner-centromeres (Wang et al., 2012) (Figure 5C). After 10 min of exposure of cells to 5-ITu, INCENP, a member of the chromosome passenger complex (CPC), which also includes Aurora B (Carmena et al., 2012), was drastically reduced at centromeres (Figure 5D). Treating cells with 5-ITu for over 15 min did not significantly alter the average K-K distance (1.16 μm ± 0.18 μm, 5-ITu vs. 1.19 μm ± 0.19 μm, untreated, SD) or the overall average fraction of NDC80 bound to kMTs (FRET fraction, 11.79 ± 0.02% 5-ITu vs. 11.87 ± 0.02%, untreated, SEM), but eliminated the correlation between K-K distance and NDC80-kMT binding (p=0.41, Figure 5E and F). In order to investigate a wider range of K-K distance, we treated cells with both taxol and 5-ITu or with both STLC and 5-ITu (Figure 5—supplement figure 1B), and found no correlation over the full range of K-K distance (p=0.96, Figure 5E and F). Our observation that the mislocalization of Aurora B from centromeres does not affect the K-K distance but compromises the correlation between NDC80 binding and K-K distance argues that the correlation shown in Figure 3D is due to tension causing an increase in NDC80-kMT binding, rather than NDC80-kMT binding causing an increase in tension. Moreover, the tension dependency of NDC80-kMT binding in human tissue culture cells depends on Aurora B recruitment to centromeres by haspin kinase, further arguing in favor of models in which phosphorylation by Aurora B plays a central role in chromosome autonomous error correction.
 
 We were surprised that the average NDC80-kMT binding does not significantly change after mislocalizing Aurora B with 5-ITu (compare Figures 3D and 5E, and see Figure 5G). This suggests that Aurora B can still act on NDC80 even after the concentration of Aurora B at centromeres is greatly reduced. Consistent with this hypothesis, the Aurora B activity at kinetochores assessed by Nuf2-targeted Aurora B FRET sensor was not changed by 5-ITu treatment (Figure 5H). Furthermore, when cells treated with 5-ITu were exposed to the Aurora B inhibitor ZM447439, NDC80-kMT binding increased (to NDC80 FRET fraction of 0.17 ± 0.01, SEM) and Aurora B activity at kinetochores decreased (to Aurora B FRET sensor non-FRET fraction of 0.55 ± 0.01, SEM), indistinguishable from the levels in cells not subject to 5-ITu exposed to ZM447439 (Figure 5G and H). Thus, tension dependency of NDC80-kMT binding is conferred by Aurora B recruited to centromeres through a haspin-dependent pathway, while the average level of NDC80-kMT binding is also set by Aurora B, but in a manner that is not dependent on haspin.
 
-## The concentration of Aurora B at the location of NDC80 is dependent on centromere tension
+### The concentration of Aurora B at the location of NDC80 is dependent on centromere tension
 
 The extent to which Aurora B phosphorylates NDC80 depends on the activity of Aurora B and the concentration of Aurora B at NDC80. To further investigate how the haspin-dependent pool of Aurora B confers tension dependency to NDC80-kMT binding, we next examined how Aurora B localization depends on K-K distance. We used spinning-disk confocal microscopy to image mNeonGreen-Nuf2, to locate NDC80, and INCENP-mCherry, to measure the distribution of Aurora B. We localized NDC80 to sub-pixel accuracy and identified sister kinetochore pairs (see Figure 6A and Materials and methods). For each pair of kinetochores, we measured the intensity of INCENP-mCherry at the location of NDC80, normalized on a cell-by-cell basis. Plotting the intensity of INCENP-mCherry at NDC80 as a function of K-K distance revealed a highly significant anti-correlation (p<10−4, Figure 6B). To explore a larger range of K-K distances, we treated cells with 10 μM taxol. Combining the data of untreated and taxol-treated cells, we found that the intensity of INCENP-mCherry at NDC80 linearly decreases with K-K distance over the full range of K-K distance (p<10−6). This observation suggests that the tension dependency of NDC80 binding may result from the decrease of Aurora B at NDC80 with increasing K-K distance.
 
@@ -92,7 +144,7 @@ The extent to which Aurora B phosphorylates NDC80 depends on the activity of Aur
 
 We next investigated how the concentration of Aurora B at the location of NDC80 is influenced by haspin inhibition. In the presence of 10 μM 5-ITu, the concentration of Aurora B at NDC80 was greatly reduced and independent of K-K distance (Figure 6B). The lack of correlation between Aurora B concentration at NDC80 and K-K distance may explain the lack of tension dependency between NDC80-kMT binding and K-K distance upon haspin inhibition. We speculate that the finite concentration of Aurora B at NDC80 after haspin inhibition is the pool of Aurora B that maintains the average level of NDC80-kMT binding as described above.
 
-## A biophysical model of tension dependent NDC80-kMT binding
+### A biophysical model of tension dependent NDC80-kMT binding
 
 Taking together, our data suggest that the concentration of Aurora B at NDC80 determines the extent of NDC80 phosphorylation, which in turn determines the level of NDC80-kMT binding. To further explore this possibility, we sought to determine the relationship between Aurora B concentration at NDC80 and NDC80-kMT binding. We plotted the NDC80-kMT binding (converted from the NDC80 FRET fraction in Figures 3D and 5E) vs. the Aurora B concentration (converted from the normalized INCENP-mCherry intensity in Figure 6D) for each K-K distance, both with and without haspin inhibition (Figure 7A, see Materials and methods). This revealed a highly nonlinear relationship: when the Aurora B concentration is lower than ~5 µM, the NDC80 binding fraction is independent of the Aurora B concentration, while for higher concentrations, the NDC80 binding fraction decreases with the Aurora B concentration (Figure 7A). We constructed a mathematical model to determine if this nonlinear relationship can be explained by the known biochemistry of Aurora B and NDC80 (Figure 7A) and observed change in the concentration of Aurora B at NDC80 (Figure 6B). In this model, we assume that there are two independent pools of Aurora B, haspin-dependent and haspin-independent, both of which engage in intermolecular autoactivation by phosphorylation in trans (Zaytsev et al., 2016; Xu et al., 2010; Sessa et al., 2005; Bishop and Schumacher, 2002), and are inactivated by phosphatases (Zaytsev et al., 2016; Sessa et al., 2005; Kelly et al., 2007; Rosasco-Nitcher et al., 2008). The activated Aurora B phosphorylates NDC80, which changes the binding affinity of NDC80 for kMTs (Cheeseman et al., 2006; Zaytsev et al., 2014; Zaytsev et al., 2015). This model can be solved analytically, and is sufficient to account for the relationship between NDC80 phosphorylation and NDC80-kMT binding (Figure 4F), and the relationship between Aurora B concentration at NDC80 and NDC80-kMT binding (Figure 7A). In this model, the nonlinear relationship between Aurora B concentration at NDC80 and NDC80-kMT binding ultimately results from the activation dynamics of Aurora B: at low concentrations, dephosphorylation by phosphatases overwhelm the in trans autoactivation, but above a threshold Aurora B concentration, A*, these two processes balance, leading to steady state level of activated Aurora B that further increases with increasing Aurora B concentration.
 
@@ -114,156 +166,671 @@ Error correction is believed to result from the regulation of the detachment of 
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS</td>
+      <td>ATCC</td>
+      <td>HTB-96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pBABE-puro mTurquoise2-Nuf2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Nuf2 N-terminally labeled with mTurquoise2; in retroviral vector with puromycin selection marker</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pBABE-hygro mTurquoise2-Nuf2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Same as above, but with hygromycin selection marker</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pBABE-blast mTurquoise2-Nuf2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Same as above, but with blasticidin marker</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pBABE-blast Aurora B FRET sensor (mTurquoise2/YPet)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>modified from Addgene #45215; Fuller et al. (2008)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>Nuf2-targeted Aurora B FRET sensor (mTurquoise2/Ypet)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>modified from Addgene #45215; Fuller et al. (2008)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>mTurquoise2-TC</td>
+      <td>this paper</td>
+      <td></td>
+      <td>mTurquoise2 with tetracysteine motif at the C-terminus</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>WT-Hec1-LSSmOrange</td>
+      <td>this paper</td>
+      <td></td>
+      <td>modified from WT-Hec1-GFP from Jennifer DeLuca</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>9A-Hec1-LSSmOrange</td>
+      <td>this paper</td>
+      <td></td>
+      <td>modified from 9A-Hec1-GFP from Jennifer DeLuca</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>2D(S44,55D)-Hec1 -LSSmOrange</td>
+      <td>this paper</td>
+      <td></td>
+      <td>modified from 2D-Hec1-GFP from Jennifer DeLuca</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>9D-Hec1-LSSmOrange</td>
+      <td>this paper</td>
+      <td></td>
+      <td>modified from 9D-Hec1-GFP from Jennifer DeLuca</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>INCENP-mCherry</td>
+      <td>other</td>
+      <td></td>
+      <td>Gift from Michael Lampson</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSpCas9(BB)−2A-GFP (pX458)</td>
+      <td>Ran et al. (2013)</td>
+      <td>Addgene: #48138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Donor single-stranded DNA for TC tag insertion at the C-terminus of TUBB</td>
+      <td>IDT</td>
+      <td></td>
+      <td>ssDNA: cgtctctgagtatcagcagtacca ggatgccaccgcagaagaggaggaggattt cggtgaggaggccgaagaggaggcctGCT GTCCCGGCTGTTGctaaggcagagcccc catcacctcaggcttctcagttcccttagccgtc ttactcaactgcccctttcctctccctcaga; sgRNA target sequence: GAGGCCGAA GAGGAGGCCTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hec1 siRNA</td>
+      <td>Qiagen</td>
+      <td>Cat#: SI02653567</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TC-peptide</td>
+      <td>Genscript</td>
+      <td>Custom designed</td>
+      <td>Synthesized, Ac-AEEEACCPGCC-NH2</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Amaxa Cell Line Nucleofector Kit V</td>
+      <td>Lonza</td>
+      <td>Cat#:VCA-1003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ingenio Electroporation Kit</td>
+      <td>Mirus</td>
+      <td>Cat#: MIR 50118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine RNAiMax</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#:13778075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FlAsH-EDT2</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#:T34561</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-Ethanedithiol (EDT)</td>
+      <td>Alfa Aesar</td>
+      <td>Cat#:540-63-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZM447439</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#:BML-EI373</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paclitaxel (Taxol)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#:BML-T104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-iodotubercidin (5-ITu)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#:BML-EI29</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S-Trityl-L-cysteine</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#:164739–5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 488</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#:A20000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium 2- mercaptoethanesulfonate</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#:M1511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Interactive kinetochore FLIM-FRET analysis GUI (MATLAB 2016)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>http://doi.org/10.5281/zenodo.1198705; copy archived at https://github.com/elifesciences-publications/FLIM-Interactive-Data-Analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Aurora B concentration at NDC80 analysis (Python 3)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>http://doi.org/10.5281/zenodo.1198702;copy archived at https://github.com/elifesciences-publications/AuroraConcentrationAnalysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CAMPARI (v2)</td>
+      <td>Pappu Lab</td>
+      <td></td>
+      <td>http://campari.sourceforge.net/V2/index.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rosetta 3.8</td>
+      <td>RosettaCommons</td>
+      <td></td>
+      <td>RRID:SCR_015701</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>25 mm #1.5 poly-D-lysine coated round coverglass</td>
+      <td>neuVitro</td>
+      <td>Cat#:GG-25–1.5-pdl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FluoroBrite DMEM</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#:A1896701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Microtubule structure</td>
+      <td>Zhang et al. (2015)</td>
+      <td>PDB 3JAS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human NDC80 bonsai decorated tubulin dimer</td>
+      <td>Alushin et al. (2010)</td>
+      <td>PDB 3IZ0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>mTurquoise structure</td>
+      <td>Stetten et al. (unpublished)</td>
+      <td>PDB 4B5Y</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 U2OS cell lines (ATCC, HTB-96) were maintained in Dulbecco’s modified Eagle’s medium (DMEM, Thermo Fisher) supplemented with 10% Fetal Bovine Serum (FBS, Thermo Fisher), and 50 IU ml−1 penicillin and 50 μg ml−1 streptomycin (Thermo Fisher) at 37°C in a humidified atmosphere with 5% CO2. Cells were validated as mycoplasma free by PCR-based mycoplasma detection kit (Sigma Aldrich).
 
-## Live-cell imaging
+### Live-cell imaging
 
 All live-cell FLIM and spinning-disk confocal microscopy imaging were performed as follows. Cells were grown on a 25 mm diameter, #1.5-thickness, round coverglass coated with poly-D-lysine (GG-25–1.5-pdl, neuVitro) to 80~90% confluency. The cells were incubated in imaging media, which is FluoroBrite DMEM (Thermo Fisher) supplemented with 4 mM L-glutamine (Thermo Fisher) and 10 mM HEPES, for 15 ~ 30 min before imaging. The coverglass was mounted on a custom-built temperature controlled microscope chamber at 37°C, while covered with 1 ml of imaging media and 2 ml of white mineral oil (VWR). An objective heater (Bioptech) was used to maintain the objective at 37°C. We confirmed that the cells can normally divide longer than 6 hr in this condition. Only cells displaying proper chromosome alignment, normal spindle morphology, and high signal-to-noise ratio were selected for imaging and analysis.
 
-## NDC80-kMT FLIM-FRET measurement mTurquoise2-NDC80/β-tubulin-TC-FlAsH stable U2OS cell line
+### NDC80-kMT FLIM-FRET measurement mTurquoise2-NDC80/β-tubulin-TC-FlAsH stable U2OS cell line
 
 A tetracysteine (TC) tag, CCPGCC, was genetically attached to the C-terminal end of tubulin beta class I (TUBB), an isotype of β-tubulin that is predominantly expressed in U2OS (assessed by qPCR, data not shown) and most other cancer cells (Leandro-García et al., 2010). The attachment of the TC tag was achieved by CRISPR-induced homologous recombination to ensure the consistent expression of labeled β-tubulin. ssDNA (IDT) with TC tag (5’-TGCTGTCCCGGCTGTTGC-3’) and ~80 bp-long homology arms was used as a donor DNA. pSpCas9(BB)−2A-GFP (Addgene plasmid # 48138) (Ran et al., 2013) was utilized as a backbone for the plasmid carrying a sgRNA (5’-GAGGCCGAAGAGGAGGCCUA-3’) and Cas9. The plasmid and the donor ssDNA were simultaneously delivered into U2OS cells by electroporation (Nucleofector 2b and Amaxa Cell Line Nucleofector Kit V, Lonza). The insertion of the TC tag was verified through a PCR-based genotyping with primers 5'-GCATGGACGAGATGGAGTTCAC-3' and 5'-CCAGCCGTGTTTCCCTAAATAAG-3', qPCR, and a fluorescence imaging after FlAsH-EDT2 staining.
 
 The U2OS cells expressing TC-tagged β-tubulin were further engineered to stably express Nuf2 N-terminally labeled with mTurquoise2 (Goedhart et al., 2012) by retroviral transfection, three times with different antibiotic selections, 1 μg ml−1 puromycin, 2 μg ml−1 blasticidin, and 200 μg ml−1 hygromycin (all from Thermo Fisher). The retroviral vectors and their information are available on Addgene (plasmid #: 80760, 80761, 80762). Monoclonal cell line was obtained by single cell sorting.
 
-## FlAsH-EDT2 staining
+### FlAsH-EDT2 staining
 
 The protocol for the association of FlAsH-EDT2 with β-tubulin-TC in cell was adapted from the previous study (Hoffmann et al., 2010) so as to maximize the labeling fraction while maintaining cell viability. The engineered U2OS cells expressing β-tubulin-TC were grown to 80~90% confluency in a 30 mm cell culture dish, and then were gently washed with Opti-MEM (Thermo Fisher) twice, and then stained in 2 ml Opti-MEM with 1 μM FlAsH-EDT2 (Thermo Fisher) for 2 hr. To reduce the non-specific binding of FlAsH, the stained cells were subsequently incubated in Opti-MEM containing 250 μM 1,2-Ethanedithiol (EDT, Alfa Aesar) for 10 min, followed by a gentle wash with Opti-MEM. The cells were incubated in DMEM with 10% FBS for 6~10 hr before imaging, because they were found to be interphase-arrested for the first ~5 hr after the incubation with 250 μM EDT. Every buffers and media above were pre-warmed at 37°C before use. All incubation steps were performed at 37°C in a humidified atmosphere with 5% CO2.
 
-## FLIM measurement
+### FLIM measurement
 
 Schematic instrumental setup of FLIM is shown in Figure 1—figure supplement 2A, and more details can be found in previous work (Yoo and Needleman, 2016). FLIM measurements were performed on a Nikon Eclipse Ti microscope using two-photon excitation from a Ti:Sapphire pulsed laser (Mai-Tai, Spectral-Physics) with an 80-MHz repetition rate and ~70 fs pulse width, a galvanometer scanner (DCS-120, Becker and Hickl), TCSPC module (SPC-150, Becker and Hickl) and two hybrid detectors (HPM-100–40, Becker and Hickl). Objective piezo stage (P-725, Physik Instrumente) and motorized stage (ProScan II, Prior Scientific) were used to perform multi-dimensional acquisition, and a motor-driven shutter (Sutter Instrument) was used to block the excitation laser between acquisitions. The wavelength of the excitation laser was set to 865 nm. 470/24 and 525/30 bandpass emission filters (Chroma) were mounted on each detector, and a dichroic beam splitter (FF506-Di03, Semrock) was used for the simultaneous detection of mTurquoise2 and FlAsH fluorescence. The excitation laser was expanded to overfill the back-aperture of a water-immersion objective (CFI Apo 40 × WI, NA 1.25, Nikon). The power of the excitation laser was adjusted to 1.1~1.5 mW at the objective. All the electronics were controlled by SPCM software (Becker and Hickl) and μManager (Edelstein et al., 2014). Scanning area was set to either 13.75 × 13.75 μm or 27.5 × 27.5 μm, and the pixel size was set to 107 nm. Each image was acquired for 3~5 s of integration time. Acquisition interval was set to 13 s for the FLIM-FRET data in Figures 3 and 5, and 60~90 s for the FLIM-FRET data in Figures 2 and 4. Three or four z-sections, separated by 1 μm, were acquired for each time point. No photo-bleaching or photo-damage was observed in this imaging condition. Mitotic phases were judged by the arrangement of kinetochores.
 
-## Kinetochore tracking and pairing
+### Kinetochore tracking and pairing
 
-For the kinetochore FLIM-FRET measurements shown in Figure 2–5, custom-built MATLAB graphical user interphase (GUI) (available at http://doi.org/10.5281/zenodo.1198705 [Yoo, 2018b]; copy archived at https://github.com/elifesciences-publications/FLIM-Interactive-Data-Analysis) was used to import Becker and Hickl FLIM data, track kinetochores, identify kinetochore pairs, extract the FLIM curve from each kinetochore, and estimate the FLIM parameters using a nonlinear least-squared fitting or Bayesian FLIM analysis, as described below and in previous work (Yoo and Needleman, 2016). The GUI also allows the users to scrutinize and manually correct the kinetochore trajectories and pairing. The kinetochore tracking algorithm was adapted from a particle tracking algorithm (Pelletier et al., 2009), and the pair identification was performed by selecting pairs of kinetochores with distances and velocity correlations in predefined ranges. Drift correction was done by measuring correlation between two consecutive spindle images. The velocity vt of kinetochore (in Figure 3) was estimated from the position x(t) using the five-point method:v(t)≈ −x(t+2Δt)+8x(t+Δt)−8(t−Δt)+x(t−2Δt)12Δt
+For the kinetochore FLIM-FRET measurements shown in Figure 2–5, custom-built MATLAB graphical user interphase (GUI) (available at http://doi.org/10.5281/zenodo.1198705 [Yoo, 2018b]; copy archived at https://github.com/elifesciences-publications/FLIM-Interactive-Data-Analysis) was used to import Becker and Hickl FLIM data, track kinetochores, identify kinetochore pairs, extract the FLIM curve from each kinetochore, and estimate the FLIM parameters using a nonlinear least-squared fitting or Bayesian FLIM analysis, as described below and in previous work (Yoo and Needleman, 2016). The GUI also allows the users to scrutinize and manually correct the kinetochore trajectories and pairing. The kinetochore tracking algorithm was adapted from a particle tracking algorithm (Pelletier et al., 2009), and the pair identification was performed by selecting pairs of kinetochores with distances and velocity correlations in predefined ranges. Drift correction was done by measuring correlation between two consecutive spindle images. The velocity $vt$ of kinetochore (in Figure 3) was estimated from the position $x(t)$ using the five-point method:
+
+$$
+v(t)≈ \frac{−x(t+2Δt)+8x(t+Δt)−8(t−Δt)+x(t−2Δt)}{12Δt}
+$$
 
 Leading and trailing kinetochores (in Figure 3) were determined based on the velocities and the relative positions of paired sister kinetochores. The metaphase plate (in Figure 2) was determined by finding an equidistant plane between the two spindle poles (that were manually located based on spindle images). Poleward-facing and anti-poleward-facing kinetochores (in Figures 3 and 5) in STLC-treated cells were determined based on the relative positions of paired sister kinetochores and the position of the spindle pole, which was approximated by the average of the positions of kinetochores in each time point.
 
-## Bayesian FLIM analysis
+### Bayesian FLIM analysis
 
 Fluorescence decay curves from individual kinetochores at each time point contain only a few hundreds of photons. In this low photon count regime, FLIM analysis with conventional least-squared nonlinear regressions results in significantly biased estimate for the parameters (Kaye et al., 2017; Rowley et al., 2016). Therefore, we used a Bayesian approach, which has been described and tested previously (Yoo and Needleman, 2016; Kaye et al., 2017), and is briefly explained below.
 
-Let θ be the set of parameters of the FLIM-FRET model, and y=yi be the observed FLIM data, where yi is the number of photons detected in the i-th time bin of the FLIM curve. Then the posterior distribution of θ (assuming a uniform prior distribution) isp(θ|y)∝∏i=1NP(tar∈[(i−1)Δt,iΔt]|θ)yiwhere tar is the photon arrival time, and N is the number of time bins. Since the size of the time bin (Δt, ~50 ps) is much smaller than the time scale of fluorescence decay (~ns), the probability that the arrival time tar falls in the i-th time bin can be approximated by a Riemann sum:P(tar∈[(i−1)Δt,iΔt]|θ)≅∑k=(i−1)K+1k=iKhθ(kΔt∼)Δt∼where hθ is the discretized FLIM model, Δt~ is the size of time bin with which instrument response function (IRF) is measured, and the ratio K=ΔtΔt~ is the ADC ratio, which is set to 16 for our data. hθkΔt~ can be written as the convolution between the IRF and an exponential decay model, gθ:hθ(kΔt∼)=(IRF∗(Agθ+(1−A))(kΔt∼)≅∑lmIRF[l−bshift](Agθ((k−l)Δt∼)+(1−A))where mIRF is the IRF measured with the finest time bins of size Δt~, and bshift is an integer parameter that determines the approximate shift of measured IRF relative to the theoretical IRF. 1-A indicates the relative contribution of noise that is uniformly distributed over time. The exponential decay model gθ(td) is set to exp⁡-tdτ for the single-exponential decay model or 1-fFRETe-tdτD⁡+fFRETe-tdτFRET for the two-exponential decay model, where 0≤fFRET≤1 is the FRET fraction. The posterior distribution was computed by Gibbs sampling if the number of free parameters is greater than 3, or by grid sampling otherwise (for example, when both long and short lifetimes are fixed).
+Let $\theta$ be the set of parameters of the FLIM-FRET model, and $y=y_{i}$ be the observed FLIM data, where $y_{i}$ is the number of photons detected in the i-th time bin of the FLIM curve. Then the posterior distribution of $\theta$ (assuming a uniform prior distribution) is
 
-## NDC80 FRET fraction measurement procedures
+$$
+p(\theta|y)∝\prodi=1NP(t_{ar}\in[(i−1)Δt,iΔt]|\theta)^{y_{i}}
+$$
+
+where $t_{ar}$ is the photon arrival time, and $N$ is the number of time bins. Since the size of the time bin ($Δt$, ~50 ps) is much smaller than the time scale of fluorescence decay (~ns), the probability that the arrival time $t_{ar}$ falls in the i-th time bin can be approximated by a Riemann sum:
+
+$$
+P(t_{ar}\in[(i−1)Δt,iΔt]|\theta)≅\sumk=(i−1)K+1k=iKh_{\theta}(kΔt∼)Δt∼
+$$
+
+where $h_{\theta}$ is the discretized FLIM model, $Δt~$ is the size of time bin with which instrument response function (IRF) is measured, and the ratio $K=\frac{Δt}{Δt~}$ is the ADC ratio, which is set to 16 for our data. $h_{\theta}kΔt~$ can be written as the convolution between the IRF and an exponential decay model, $g_{\theta}$:
+
+$$
+h_{\theta}(kΔt∼)=(IRF∗(Ag_{\theta}+(1−A))(kΔt∼)≅\sumlmIRF[l−b_{shift}](Ag_{\theta}((k−l)Δt∼)+(1−A))
+$$
+
+where $mIRF$ is the IRF measured with the finest time bins of size $Δt~$, and $b_{shift}$ is an integer parameter that determines the approximate shift of measured IRF relative to the theoretical IRF. $1-A$ indicates the relative contribution of noise that is uniformly distributed over time. The exponential decay model $g_{\theta}(t_{d})$ is set to $exp⁡-\frac{t_{d}}{\tau}$ for the single-exponential decay model or $1-f_{FRET}e^{-\frac{t_{d}}{\tau_{D}}}⁡+f_{FRET}e^{-\frac{t_{d}}{\tau_{FRET}}}$ for the two-exponential decay model, where $0\leqf_{FRET}\leq1$ is the FRET fraction. The posterior distribution was computed by Gibbs sampling if the number of free parameters is greater than 3, or by grid sampling otherwise (for example, when both long and short lifetimes are fixed).
+
+### NDC80 FRET fraction measurement procedures
 
 The instrument response function (IRF) was acquired by measuring second-harmonic generation from a urea crystal. Negative control FLIM measurements on the engineered cells (mTurquoise2-NDC80/β-tubulin-TC) not incubated with FlAsH were performed for every experiment and the fluorescence decay curves extracted from kinetochores were analyzed with a single-exponential FLIM-FRET model to determine the long non-FRET lifetime, which is usually 3.7 to 3.8 ns. The short FRET lifetime was estimated by performing a two-exponential Bayesian FLIM-FRET analysis on the aggregated FLIM data of kinetochores in each cell stained with FlAsH while fixing the non-FRET lifetime to the value pre-determined from the negative control. Then we performed a two-exponential Bayesian FLIM-FRET analysis, with both FRET and non-FRET lifetimes fixed to the predetermined values, on FLIM data from each kinetochore. Kinetochores were grouped by time (Figures 2 and 4), positions (Figure 2B–D), velocities (Figure 3C), and K-K distances (Figures 3D, 5A and E). The posterior distributions in a group of kinetochores were multiplied and then marginalized to obtain the mean and SEM of the FRET fraction. We previously confirmed that this way of combining posterior distribution gives an unbiased estimate of the mean FRET fraction (Kaye et al., 2017). NDC80 binding fraction was calculated by dividing NDC80 FRET fraction by the conversion factor 0.42, which had been determined by the calibration shown in Figure 1—figure supplement 5C.
 
-## Aurora B kinase activity measurement
+### Aurora B kinase activity measurement
 
-An Aurora B FRET sensor was constructed by replacing CyPet in a previous construct (Addgene plasmid # 45215) (Fuller et al., 2008) with mTurquoise2. The FRET sensor contains a kinesin-13 family Aurora B substrate whose phosphorylation results in its binding to the forkhead-associated domain in the sensor, which constrains the sensor to be in an open conformation and obstructs intramolecular FRET between mTurquoise2 and YPet (Figure 4—figure supplement 1B). Hence, the non-FRET fraction of the Aurora B FRET sensor is proportional to the Aurora B activity. The cytoplasmic Aurora B FRET sensor was stably expressed in U2OS cells by retroviral transfection (plasmid available on Addgene, plasmid # 83286). The Nuf2-targeted Aurora B FRET sensor was transiently transfected by electroporation (Nucleofector 2b, Lonza; Ingenio Electroporation Kit, Mirus) a day before imaging. The non-FRET fraction of the Aurora B FRET sensor was measured by FLIM-FRET in the same way as NDC80 FRET measurements described above. The exponential decay models ybinding(t)=A1-exp⁡-It≥0tτ+c and yAurorat=Aexp⁡-It≥0tτ+c were fitted to the time courses of NDC80 FRET fraction and FRET sensor non-FRET fraction after ZM447439, respectively (Figure 4A,D and E and Figure 4—figure supplement 1D), where It≥0  is equal to 0 if t is less than zero, and 1 otherwise. The estimated parameter values are given in Table 1:
+An Aurora B FRET sensor was constructed by replacing CyPet in a previous construct (Addgene plasmid # 45215) (Fuller et al., 2008) with mTurquoise2. The FRET sensor contains a kinesin-13 family Aurora B substrate whose phosphorylation results in its binding to the forkhead-associated domain in the sensor, which constrains the sensor to be in an open conformation and obstructs intramolecular FRET between mTurquoise2 and YPet (Figure 4—figure supplement 1B). Hence, the non-FRET fraction of the Aurora B FRET sensor is proportional to the Aurora B activity. The cytoplasmic Aurora B FRET sensor was stably expressed in U2OS cells by retroviral transfection (plasmid available on Addgene, plasmid # 83286). The Nuf2-targeted Aurora B FRET sensor was transiently transfected by electroporation (Nucleofector 2b, Lonza; Ingenio Electroporation Kit, Mirus) a day before imaging. The non-FRET fraction of the Aurora B FRET sensor was measured by FLIM-FRET in the same way as NDC80 FRET measurements described above. The exponential decay models $y_{binding}(t)=A1-exp⁡-\frac{I_{t\geq0}t}{\tau}+c$ and $y_{Aurora}t=Aexp⁡-\frac{I_{t\geq0}t}{\tau}+c$ were fitted to the time courses of NDC80 FRET fraction and FRET sensor non-FRET fraction after ZM447439, respectively (Figure 4A,D and E and Figure 4—figure supplement 1D), where $I_{t\geq0}$ is equal to 0 if $t$ is less than zero, and 1 otherwise. The estimated parameter values are given in Table 1:
 
-The fraction of Aurora B phosphorylation sites in NDC80, fphos (x-axis of Figure 4F), was converted from the non-FRET fraction of Aurora B FRET sensor, fsensor  (y-axis of Figure 4E), as follows. First, we assumed that fsensor increases linearly with fphos. Our result (Figure 4C) and previous work (Zaytsev et al., 2014) suggest that Ndc80 has about one phospho-residue out of nine phosphorylation sites in late prometaphase, based on which we assumed that fphosWT=1/9 before Aurora B inhibition, and fphosZM=0 after the full Aurora B inhibition. Since fsensor were measured to be fsensorWT=0.540±0.007 (SEM) before Aurora B inhibition and fsensorZM=0.368±0.012 (SEM) after the full Aurora B inhibition (Figure 4E), we converted fsensor to fphos by:fphos=fsensor-fsensorZMfsensorWT-fsensorZMfphosWT-fphosZM+fphosZM=0.646fsensor-0.368
+**Table 1.**
 
-The fbound vs fphos data in Figure 4F was fit using a NDC80 binding model:fbound=1+K0+K0'fphos-1which is derived in Mathematical modeling section below.
 
-## Phosphomimetic Hec1 mutant experiments
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Parameter</th>
+      <th>Mean</th>
+      <th>95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">4A</td>
+      <td>A</td>
+      <td>0.088</td>
+      <td>(0.069,0.106)</td>
+    </tr>
+    <tr>
+      <td>τ (min)</td>
+      <td>3.26</td>
+      <td>(1.31,5.21)</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>0.089</td>
+      <td>(0.080,0.099)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">4D</td>
+      <td>A</td>
+      <td>0.024</td>
+      <td>(0.011,0.038)</td>
+    </tr>
+    <tr>
+      <td>τ (min)</td>
+      <td>0.50</td>
+      <td>(−0.70,1.71)</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>0.059</td>
+      <td>(0.048,0.071)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">4E</td>
+      <td>A</td>
+      <td>0.17</td>
+      <td>(0.16,0.18)</td>
+    </tr>
+    <tr>
+      <td>τ (min)</td>
+      <td>1.95</td>
+      <td>(1.46,2.45)</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>0.37</td>
+      <td>(0.36,0.38)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">4-S1D</td>
+      <td>A</td>
+      <td>0.076</td>
+      <td>(0.061,0.090)</td>
+    </tr>
+    <tr>
+      <td>τ (min)</td>
+      <td>1.12</td>
+      <td>(0.23,2.00)</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>0.56</td>
+      <td>(0.55,0.57)</td>
+    </tr>
+  </tbody>
+</table>
+
+The fraction of Aurora B phosphorylation sites in NDC80, $f_{phos}$ (x-axis of Figure 4F), was converted from the non-FRET fraction of Aurora B FRET sensor, $f_{sensor}$ (y-axis of Figure 4E), as follows. First, we assumed that $f_{sensor}$ increases linearly with $f_{phos}$. Our result (Figure 4C) and previous work (Zaytsev et al., 2014) suggest that Ndc80 has about one phospho-residue out of nine phosphorylation sites in late prometaphase, based on which we assumed that $f_{phos}^{WT}=1/9$ before Aurora B inhibition, and $f_{phos}^{ZM}=0$ after the full Aurora B inhibition. Since $f_{sensor}$ were measured to be $f_{sensor}^{WT}=0.540\pm0.007$ (SEM) before Aurora B inhibition and $f_{sensor}^{ZM}=0.368\pm0.012$ (SEM) after the full Aurora B inhibition (Figure 4E), we converted $f_{sensor}$ to $f_{phos}$ by:
+
+$$
+f_{phos}=\frac{f_{sensor}-f_{sensor}^{ZM}}{f_{sensor}^{WT}-f_{sensor}^{ZM}}f_{phos}^{WT}-f_{phos}^{ZM}+f_{phos}^{ZM}=0.646f_{sensor}-0.368
+$$
+
+The fbound vs fphos data in Figure 4F was fit using a NDC80 binding model:
+
+$$
+f_{bound}=1+K_{0}+K_{0}^{'}f_{phos}^{-1}
+$$
+
+which is derived in Mathematical modeling section below.
+
+### Phosphomimetic Hec1 mutant experiments
 
 We used three different non-phosphorylable mutant Hec1 (gift from Jennifer DeLuca) in which all nine identified Aurora B target sites in the N-terminal tail are mutated to either Asp (phospho-mimicking mutation) or Ala (phospho-null mutation) (DeLuca et al., 2011; Zaytsev et al., 2015, 2014): 9A-Hec1 (all nine sites substituted with Ala), 2D-Hec1 (two sites, S44 and S55, substituted with Asp, while the other seven sites with Ala), and 9D-Hec1 (all nine sites substituted with Asp). WT-Hec1 and the mutant Hec1 are C-terminally labeled with LSSmOrange. LSSmOrange signal at kinetochores were assessed to ensure the expression of the substituting Hec1 in cells.
 
 Cells were grown to 50% confluence on a 10 cm petri dish in DMEM supplemented with 10% FBS and penicillin-streptomycin (P/S) as described above. To knock down endogenous Hec1/Ndc80 protein, we used a FlexiTube siRNA duplex targeted to the 5’ UTR of the Hec1 gene (5’-TCCCTGGGTCGTGTCAGGAAA-3’, QIAGEN Hs_KNTC2_7 SI02653567). We incubated 240 pmol of the siRNA in 1.2 mL Opti-MEM (ThermoFisher 51985091) for 5 min with periodic flicking. We simultaneously incubated 8 μL of Lipofectamine RNAiMax (ThermoFisher 13778030) in 1.2 mL Opti-MEM for 5 min. We then combined the siRNA and Lipofectamine solutions and incubated at room temperature for 30 min with periodic flicking. Prior to adding the siRNA-lipid complex, we washed the cells once with PBS and then replaced the media with 8 mL Opti-MEM supplemented with 10% FBS. We then added the entire 2.4 mL siRNA mixture to the cells dropwise and incubated the cells at 37°C for 30 hr. Following the incubation, we nucleofected 2 μg of plasmid encoding WT-, 9A-, 2D-, or 9D-Hec1 along with an additional 30 pmol of Hec1 siRNA into 1 million cells using a Lonza Nucleofector 2b. We spread these cells evenly over three 35 mm dishes containing 25 mm poly-D-lysine coated coverslips and 2 mL of Opti-MEM supplemented with 10% FBS and P/S. We incubated overnight at 37°C for 18 hr before staining with TC-FlAsH and FLIM-FRET imaging as described above.
 
-## Aurora B concentration at NDC80 measurement
+### Aurora B concentration at NDC80 measurement
 
-## mNeonGreen-Nuf2/INCENP-mCherry U2OS cell
+#### mNeonGreen-Nuf2/INCENP-mCherry U2OS cell
 
 mNeonGreen fluorescent protein (Shaner et al., 2013) was genetically attached to the N-terminal end of Nuf2 by CRISPR-induced homologous recombination with an sgRNA (5’-GAAAGACAAAGTTTCCATCTTGG-3’) and mNeonGreen sequence (Allele Biotechnology) flanked by 2 kb homology arms as a donor template. Monoclonal cell line was obtained by fluorescence-activated cell sorting and screened by fluorescent microscopy imaging. The mNeonGreen-Nuf2 U2OS cell line was transiently transfected with INCENP-mCherry (gift from Michael Lampson) by electroporation (Nucleofector 2b and Amaxa Cell Line Nucleofector Kit V, Lonza) a day before imaging, using the manufacturer’s protocol.
 
-## Spinning-disk confocal microscopy imaging
+#### Spinning-disk confocal microscopy imaging
 
 Cells were imaged using a spinning-disk confocal microscope (Nikon Ti2000, Yokugawa CSU-X1) with 1.5x magnification lens and 1.2x tube lens, an EM-CCD camera (Hamamatsu), a 60x water-immersion objective (Nikon), an objective piezo stage (P-725, Physik Instrumente), and motorized x-y stage (ProScan II, Prior Scientific) controlled by μManager (Edelstein et al., 2014). A 488 nm laser and 514/30 filter were used to image mNeonGreen-Nuf2, and a 560 nm laser and 593/40 filter were used to image INCENP-mCherry. 11–15 z-slices, separated by 2 μm, were taken for each time point. Three time points, separated by a minute, were acquired before and after DMSO (for untreated data), 10 μM taxol, or 10 μM 5-ITu treatment.
 
-## Aurora B concentration at NDC80 measurement
+#### Aurora B concentration at NDC80 measurement
 
-Image analysis was performed by a custom Python code, available at http://doi.org/10.5281/zenodo.1198702 (Yoo, 2018a; copy archived at https://github.com/elifesciences-publications/AuroraConcentrationAnalysis). Kinetochore identification was achieved by applying trackpy package (github.com/soft-matter/trackpy) to mNeonGreen-Nuf2 fluorescence images. The sub-pixel location of NDC80 was calculated by centroid estimation. Sister kinetochore pairs were determined based on the relative positions of kinetochores and the INCENP-mCherry intensity between kinetochores. For each identified kinetochore pair, INCENP-mCherry intensities at the NDC80 centroid locations, INDC80, and INCENP-mCherry intensity at the midpoint between two sister kinetochores, Imid, were measured by two-dimensional cubic interpolation with scipy.interpolate.griddata function. For each cell, we used Imid-, which is Imid averaged over kinetochores in the images before chemical treatments, and cytoplasmic background level, Ibg, to obtain normalized the INCENP-mCherry intensities at NDC80, INDC80norm, by:INDC80norm=INDC80−Imid− Imid−−Ibg
+Image analysis was performed by a custom Python code, available at http://doi.org/10.5281/zenodo.1198702 (Yoo, 2018a; copy archived at https://github.com/elifesciences-publications/AuroraConcentrationAnalysis). Kinetochore identification was achieved by applying trackpy package (github.com/soft-matter/trackpy) to mNeonGreen-Nuf2 fluorescence images. The sub-pixel location of NDC80 was calculated by centroid estimation. Sister kinetochore pairs were determined based on the relative positions of kinetochores and the INCENP-mCherry intensity between kinetochores. For each identified kinetochore pair, INCENP-mCherry intensities at the NDC80 centroid locations, INDC80, and INCENP-mCherry intensity at the midpoint between two sister kinetochores, Imid, were measured by two-dimensional cubic interpolation with scipy.interpolate.griddata function. For each cell, we used $I_{mid}-$, which is $I_{mid}$ averaged over kinetochores in the images before chemical treatments, and cytoplasmic background level, Ibg, to obtain normalized the INCENP-mCherry intensities at NDC80, $I_{NDC80}^{norm}$, by:
 
-Kinetochores with similar K-K distances were grouped in the same way as in Figures 3D and 5E, and then the normalized INCENP-mCherry intensities at NDC80, INDC80norm, were averaged within each group. The normalized INCENP-mCherry intensity was converted to Aurora B concentration in Figures 7A by assuming that Imid- corresponds to the peak Aurora B concentration, which was previously estimated to be 10 μM (Zaytsev et al., 2016).
+$$
+I_{NDC80}^{norm}=\frac{I_{NDC80}−I_{mid}− }{I_{mid}−−I_{bg}}
+$$
 
-## Drug treatments
+Kinetochores with similar K-K distances were grouped in the same way as in Figures 3D and 5E, and then the normalized INCENP-mCherry intensities at NDC80, $I_{NDC80}^{norm}$, were averaged within each group. The normalized INCENP-mCherry intensity was converted to Aurora B concentration in Figures 7A by assuming that $I_{mid}-$ corresponds to the peak Aurora B concentration, which was previously estimated to be 10 μM (Zaytsev et al., 2016).
+
+### Drug treatments
 
 Cells were incubated with 5 μM Nocodazole (Sigma Aldrich) for >10 min for microtubule depolymerization. Aurora B inhibition was performed by adding 3 μM of ZM447439 (Enzo Life Sciences) during imaging. Taxol (Enzo Life Sciences) treatment was performed at 10 μM final concentration for >10 min. S-Trityl-L-cysteine (STLC, Sigma Aldrich) treatment was performed at 5 μM final concentration for >60 min to induce monopolar spindles. For the haspin kinase inhibition, cells were treated with 10 μM 5-iodotubercidin (5-ITu, Enzo Life Sciences) for >10 min. The double treatment of 5-ITu and taxol or STLC was performed sequentially by treating cells with 10 μM taxol or 5 μM STLC and then adding 10 μM 5-ITu.
 
-## Mathematical modeling
+### Mathematical modeling
 
 Here we describe the mathematical model presented in Figure 7 in detail. The model predicts NDC80 binding fraction from Aurora B concentration at NDC80 in three steps: (1) Aurora B activation dynamics, consisting of autoactivation in trans and deactivation, which determines the concentration of active Aurora B from the concentration of Aurora B; (2) NDC80 phosphorylation, which is dependent on the active Aurora B concentration; and (3) NDC80-kMT binding, which is governed by the phosphorylation level of NDC80.
 
-## (1) Aurora B activation
+#### (1) Aurora B activation
 
 In this section, we present a quantitative model for the relationship between the Aurora B concentration (which we measured in Figure 6) and the active Aurora B concentration (which determines the steady-state level of NDC80 phosphorylation). It has been previously argued that Aurora B activation is predominately due to active Aurora B phosphorylating inactive Aurora B in trans (Zaytsev et al., 2016; Xu et al., 2010; Sessa et al., 2005; Bishop and Schumacher, 2002), which we incorporate into our model. We model Aurora B at the location of NDC80 as consisting of two separate pools: one that is dependent on haspin, and the other that is not. We assume that those two Aurora B pools do not interact with each other, and independently undergo auto-activation in trans. We further assume that the phosphatase activity proceeds at a constant rate for each pool.
 
-We denote the haspin-dependent and haspin-independent pools of Aurora B by Ahd and Ahi, respectively. Then the inter-molecular autoactivation by in trans phosphorylation and inactivation by dephosphorylation for each of the two Aurora B pools are described by:{Axactive+Axinactive→kxaAxactive+AxactiveAxactive→kxdAxinactive x=hd or hiwhere Axactive and Axinactive are the active and inactive Aurora B in pool x, respectively, and kxa and kxd are the rates of Aurora B activation and deactivation for the pool x, respectively. Thus, an ordinary differential equation (ODE) for active Aurora B concentration can be written as:∂[Axactive]∂t=kxa[Axactive][Axinactive]−kxd[Axactive]=kxa[Axactive]([Ax]−[Axactive])−kxd[Axactive]=kxa[Axactive]([Ax]−kxdkxa−[Axactive])where Ax=Axactive+Axinactive is the concentration of the pool x. The steady-state solution for this ODE is:[Axactive]={0, [A]<Kx[Ax]−Kx, [A]≥Kxwhere Kx≡kxd/kxa is the equilibrium constant for the Aurora B activation for pool x. We can infer that Ahiactive=Ahi-Khi is positive, because Aurora B still acts on NDC80 after the removal of the haspin-dependent pool (Figure 5). Therefore, the total concentration of active Aurora B at NDC80 can be written as:(1)[Aactive]=[Ahdactive]+[Ahiactive]={[Ahi]−Khi,[A]<Khd+[Ahi][A]−Khd−Khi,[A]≥Khd+[Ahi]={A∗−K,[A]<A∗[A]−K,[A]≥A∗where A=Ahd+Ahi is the total concentration of Aurora B at NDC80, K=Khd+Khi, and A*=Khd+Ahi is a threshold Aurora B concentration, which is the minimum concentration of Aurora B required for the activity of Aurora B to increase with its concentration.
+We denote the haspin-dependent and haspin-independent pools of Aurora B by Ahd and Ahi, respectively. Then the inter-molecular autoactivation by in trans phosphorylation and inactivation by dephosphorylation for each of the two Aurora B pools are described by:
 
-## (2) NDC80 phosphorylation
+$$
+{A_{x}^{active}+A_{x}^{inactive}→k_{x}^{a}A_{x}^{active}+A_{x}^{active}A_{x}^{active}→k_{x}^{d}A_{x}^{inactive} x=hd or hi
+$$
 
-In this section, we present a mathematical model to relate the total concentration of active Aurora B at NDC80, Aactive, to the phosphorylation level of NDC80. Active Aurora B may phosphorylate multiple Aurora B phosphorylation sites in each Ndc80 N-terminal tail (Guimaraes et al., 2008), which we describe with the equations:{Aactive+(dephosphorylated site)→kp Aactive+(phosphorylated site) (phosphorylated site)→kdp(dephosphorylated site)
+where $A_{x}^{active}$ and $A_{x}^{inactive}$ are the active and inactive Aurora B in pool x, respectively, and $k_{x}^{a}$ and $k_{x}^{d}$ are the rates of Aurora B activation and deactivation for the pool x, respectively. Thus, an ordinary differential equation (ODE) for active Aurora B concentration can be written as:
 
-The corresponding ODE for the number of phosphorylated sites is:∂Np∂t=kp[Aactive]Ndp−kdpNp=kp[Aactive](N−Np)−kdpNpwhere Np, Ndp, and N=Np+Ndp is the number of phosphorylated sites, dephosphorylated sites, and the total number of sites per kinetochore, respectively. The steady-state solution for the ODE gives:(2)fphos=NpN=1+KphosAactive-1where fphos is the fraction of phosphorylated sites, and Kphos≡kdpkp is the equilibrium constant for NDC80 phosphorylation. Plugging Equation 1 into Equation 2 yields:(3)fphos={(1+KphosA∗−K)−1,[A]<A∗(1+Kphos[A]−K)1,[A]≥A∗
+$$
+\frac{∂[A_{x}^{active}]}{∂t}=k_{x}^{a}[A_{x}^{active}][A_{x}^{inactive}]−k_{x}^{d}[A_{x}^{active}]=k_{x}^{a}[A_{x}^{active}]([A_{x}]−[A_{x}^{active}])−k_{x}^{d}[A_{x}^{active}]=k_{x}^{a}[A_{x}^{active}]([A_{x}]−\frac{k_{x}^{d}}{k_{x}^{a}}−[A_{x}^{active}])
+$$
 
-## (3) NDC80 binding
+where $A_{x}=A_{x}^{active}+A_{x}^{inactive}$ is the concentration of the pool x. The steady-state solution for this ODE is:
 
-In this section, we present a model to relate the fraction of phosphorylated sites in NDC80 per kinetochore, fphos, to the fraction of NDC80 bound to kMTs (which we measure using FLIM-FRET). Assuming that the number of available binding sites for NDC80 is constant, we may describe the NDC80 binding and unbinding by the following equations:{(NDC80 unbound)→kon(NDC80 bound)(NDC80 bound)→koff(NDC80 unbound)
+$$
+[A_{x}^{active}]={0, [A]<K_{x}[A_{x}]−K_{x}, [A]\geqK_{x}
+$$
 
-The corresponding ODE for the number of NDC80 bound to kMTs is:∂non∂t=konnoff−koffnon=kon(n−non)−koffnonwhere non and noff are the number of NDC80 bound and unbound to kMTs, respectively, and n=non+noff the total number of NDC80 per kinetochore. Solving for the steady state gives:(4)fbound≡nonn=(1+Kbinding)−1where Kbinding=koff/kon is the equilibrium constant for the NDC80 binding, and fbound is the NDC80 binding fraction.
+where $K_{x}≡k_{x}^{d}/k_{x}^{a}$ is the equilibrium constant for the Aurora B activation for pool x. We can infer that $A_{hi}^{active}=A_{hi}-K_{hi}$ is positive, because Aurora B still acts on NDC80 after the removal of the haspin-dependent pool (Figure 5). Therefore, the total concentration of active Aurora B at NDC80 can be written as:
 
-The binding affinity of NDC80 decreases with the phosphorylation level of NDC80 (Figure 4) (Zaytsev et al., 2015), arguing that Kbinding is a function of fphos. Since fphos is small in late prometaphase and metaphase (< 1/9), we approximate the function by a first-order polynomial, that is, Kbindingfphos≈K0+K0'fphos, and consequently Equation 4 becomes:(5)fbound=(1+K0+K0′fphos)−1
+$$
+[A^{active}]=[A_{hd}^{active}]+[A_{hi}^{active}]={[A_{hi}]−K_{hi},[A]<K_{hd}+[A_{hi}][A]−K_{hd}−K_{hi},[A]\geqK_{hd}+[A_{hi}]={A^{∗}−K,[A]<A^{∗}[A]−K,[A]\geqA^{∗}
+$$
 
-Combining Equations 3 and 5, we have the relationship between the total Aurora B concentration [A] and the NDC80 binding fraction fbound as:(6)fbound={(1+K0+K0′(1+KphosA∗−K)−1)−1,[A]<A∗(1+K0+K0′(1+Kphos[A]−K)−1)−1,[A]≥A∗
+where $A=A_{hd}+A_{hi}$ is the total concentration of Aurora B at NDC80, $K=K_{hd}+K_{hi}$, and $A^{*}=K_{hd}+A_{hi}$ is a threshold Aurora B concentration, which is the minimum concentration of Aurora B required for the activity of Aurora B to increase with its concentration.
 
-We first determined the parameters K0 and K0' by fitting Equation 5 to the NDC80 binding fraction vs. phosphorylation level data in Figure 4F, which yielded K0=1.43±0.06 (SE) and K0'=18±2 (SE). To estimate the remaining three free parameters, K, Kphos, and A*, we fit Equation 6 to the NDC80 binding fraction vs. Aurora B concentration at NDC80 data (Figure 7), and obtained K=3.5±0.4 μM (SE), Kphos=19±5 μM (SE), and A*=4.6±0.2 μM (SE).
+#### (2) NDC80 phosphorylation
 
-## Supplemental experiments
+In this section, we present a mathematical model to relate the total concentration of active Aurora B at NDC80, $A^{active}$, to the phosphorylation level of NDC80. Active Aurora B may phosphorylate multiple Aurora B phosphorylation sites in each Ndc80 N-terminal tail (Guimaraes et al., 2008), which we describe with the equations:
 
-## Measurement of the fraction of β-tubulin labeled with TC-FlAsH
+$$
+{A^{active}+(dephosphorylated site)→k_{p} A^{active}+(phosphorylated site) (phosphorylated site)→k_{dp}(dephosphorylated site)
+$$
+
+The corresponding ODE for the number of phosphorylated sites is:
+
+$$
+\frac{∂N_{p}}{∂t}=k_{p}[A^{active}]N_{dp}−k_{dp}N_{p}=k_{p}[A^{active}](N−N_{p})−k_{dp}N_{p}
+$$
+
+where $N_{p}$, $N_{dp}$, and $N=N_{p}+N_{dp}$ is the number of phosphorylated sites, dephosphorylated sites, and the total number of sites per kinetochore, respectively. The steady-state solution for the ODE gives:
+
+$$
+f_{phos}=\frac{N_{p}}{N}=1+\frac{K_{phos}}{A^{active}}^{-1}
+$$
+
+where $f_{phos}$ is the fraction of phosphorylated sites, and $K_{phos}≡\frac{k_{dp}}{k_{p}}$ is the equilibrium constant for NDC80 phosphorylation. Plugging Equation 1 into Equation 2 yields:
+
+$$
+f_{phos}={(1+\frac{K_{phos}}{A^{∗}−K})^{−1},[A]<A^{∗}(1+\frac{K_{phos}}{[A]−K})^{1},[A]\geqA^{∗}
+$$
+
+#### (3) NDC80 binding
+
+In this section, we present a model to relate the fraction of phosphorylated sites in NDC80 per kinetochore, $f_{phos}$, to the fraction of NDC80 bound to kMTs (which we measure using FLIM-FRET). Assuming that the number of available binding sites for NDC80 is constant, we may describe the NDC80 binding and unbinding by the following equations:
+
+$$
+{(NDC80 unbound)→k_{on}(NDC80 bound)(NDC80 bound)→k_{off}(NDC80 unbound)
+$$
+
+The corresponding ODE for the number of NDC80 bound to kMTs is:
+
+$$
+\frac{∂n_{on}}{∂t}=k_{on}n_{off}−k_{off}n_{on}=k_{on}(n−n_{on})−k_{off}n_{on}
+$$
+
+where $n_{on}$ and $n_{off}$ are the number of NDC80 bound and unbound to kMTs, respectively, and $n=n_{on}+n_{off}$ the total number of NDC80 per kinetochore. Solving for the steady state gives:
+
+$$
+f_{bound}≡\frac{n_{on}}{n}=(1+K_{binding})^{−1}
+$$
+
+where $K_{binding}=k_{off}/k_{on}$ is the equilibrium constant for the NDC80 binding, and $f_{bound}$ is the NDC80 binding fraction.
+
+The binding affinity of NDC80 decreases with the phosphorylation level of NDC80 (Figure 4) (Zaytsev et al., 2015), arguing that $K_{binding}$ is a function of $f_{phos}$. Since $f_{phos}$ is small in late prometaphase and metaphase (< 1/9), we approximate the function by a first-order polynomial, that is, $K_{binding}f_{phos}≈K_{0}+K_{0}^{'}f_{phos}$, and consequently Equation 4 becomes:
+
+$$
+f_{bound}=(1+K_{0}+K_{0}^{′}f_{phos})^{−1}
+$$
+
+Combining Equations 3 and 5, we have the relationship between the total Aurora B concentration [A] and the NDC80 binding fraction $f_{bound}$ as:
+
+$$
+f_{bound}={(1+K_{0}+K_{0}^{′}(1+\frac{K_{phos}}{A^{∗}−K})^{−1})^{−1},[A]<A^{∗}(1+K_{0}+K_{0}^{′}(1+\frac{K_{phos}}{[A]−K})^{−1})^{−1},[A]\geqA^{∗}
+$$
+
+We first determined the parameters $K_{0}$ and $K_{0}^{'}$ by fitting Equation 5 to the NDC80 binding fraction vs. phosphorylation level data in Figure 4F, which yielded $K_{0}=1.43\pm0.06$ (SE) and $K_{0}^{'}=18\pm2$ (SE). To estimate the remaining three free parameters, $K$, $K_{phos}$, and $A^{*}$, we fit Equation 6 to the NDC80 binding fraction vs. Aurora B concentration at NDC80 data (Figure 7), and obtained $K=3.5\pm0.4\mu$M (SE), $K_{phos}=19\pm5\muM$ (SE), and $A^{*}=4.6\pm0.2\muM$ (SE).
+
+### Supplemental experiments
+
+#### Measurement of the fraction of β-tubulin labeled with TC-FlAsH
 
 To measure the fraction of β-tubulin labeled with TC-FlAsH, we sought to determine the concentration of labeled β-tubulin in the cell, and divide it by the total concentration of β-tubulin. We calculated the concentration of labeled β-tubulin by combining 3D fluorescence microscopy to measure the total fluorescence of β-tubulin-TC-FlAsH per cell, and fluorescence correlation spectroscopy (FCS) to measure the fluorescence per molecule of TC-FlAsH.
 
-## 3D fluorescence microscopy
+##### 3D fluorescence microscopy
 
 We acquired z-stacks of β-tubulin-TC-FlAsH in mitotic cells using two-photon fluorescence microscopy (Figure 1—figure supplement 1A), and then segmented the 3D images using an active contour approach (Figure 1—figure supplement 1B). Assuming that the cytoplasmic background results from FlAsH binding specifically to monomeric β-tubulin and nonspecifically to cysteine-rich proteins freely diffusing in the cytoplasm, the average number of photons emitted from β-tubulin-TC-FlAsH in microtubules is the difference between the average photon rate throughout the entire cell (423 ± 33 ms−1) and the average photon rate in the cytoplasm (determined from the mode of fluorescence distribution within each segmented image, 327 ± 30 ms−1), which is 96 ± 12 ms−1 (Figure 1—figure supplement 1C). The instrumental setting of two-photon fluorescence microscopy was identical to that of the FLIM system described above, where the imaging parameters are: laser wavelength, 865 nm; excitation intensity, 3 mW; integration time, 3 s; z-stack separation, 0.5 μm; scanning area, 27.5 × 27.5 μm.
 
-## Fluorescence correlation spectroscopy
+##### Fluorescence correlation spectroscopy
 
 To convert the measured photon rate from fluorescence microscopy to a measurement of the absolute concentration of β-tubulin-TC-FlAsH, we used two-photon FCS to determine the volume of the point spread function (PSF) and the molecular brightness (i.e. the number of photons emitted per molecule per second) of TC-FlAsH (Hess and Webb, 2002).
 
-First, we performed an FCS measurement on 97 nM Alexa Fluor 488 (Thermo Fisher) in water. FCS measurements were performed on the same instrumental setting as the 3D fluorescence microscopy described above, with laser intensity 5 mW. five autocorrelation functions, each of which had been collected for 300 s, were averaged, and then the following FCS model, GD(τ), was fitted to the average autocorrelation function:GDτ=1Veffχ2C11+8Dτ/wxy2 11+8Dτ/wz212+G∞where Veff is the effective volume of PSF, C the concentration of fluorophores (which is 97 nM), χ2 the background noise correction factor (Hess and Webb, 2002), D the diffusion coefficient of Alexa Fluor 488, which was previously estimated to be 435 μm2/s (Petrásek and Schwille, 2008), and wxy and wz are the radial and axial beam waists, respectively (Figure 1—figure supplement 1D). wz can be written in terms of Veff and wxy:wz=2π3/2 Veffwxy2
+First, we performed an FCS measurement on 97 nM Alexa Fluor 488 (Thermo Fisher) in water. FCS measurements were performed on the same instrumental setting as the 3D fluorescence microscopy described above, with laser intensity 5 mW. five autocorrelation functions, each of which had been collected for 300 s, were averaged, and then the following FCS model, GD(τ), was fitted to the average autocorrelation function:
+
+$$
+G_{D}\tau=\frac{1}{V_{eff}χ^{2}C}\frac{1}{1+8D\tau/w_{xy}^{2}}\frac{1}{1+8D\tau/w_{z}^{2}}^{\frac{1}{2}}+G_{∞}
+$$
+
+where Veff is the effective volume of PSF, C the concentration of fluorophores (which is 97 nM), χ2 the background noise correction factor (Hess and Webb, 2002), D the diffusion coefficient of Alexa Fluor 488, which was previously estimated to be 435 μm2/s (Petrásek and Schwille, 2008), and wxy and wz are the radial and axial beam waists, respectively (Figure 1—figure supplement 1D). wz can be written in terms of Veff and wxy:
+
+$$
+w_{z}=\frac{2}{\pi}^{3/2}\frac{V_{eff}}{w_{xy}^{2}}
+$$
 
 Fitting the FCS model to the Alexa 488 FCS data estimated Veff and wxy to be 0.364 ± 0.004 μm3 and 278 ± 4 nm, respectively (Figure 1—figure supplement 1D).
 
-We next performed an FCS measurement on a synthesized TC peptide labeled with FlAsH. 50 μM synthesized TC peptide (Ac-AEEEACCPGCC-NH2, Genscript), 100 μM FlAsH-EDT2, and 10 mM 2-mercaptoethanesulfonate (Sigma Aldrich) were incubated for an hour to associate TC peptide with FlAsH, then diluted in the imaging buffer by 500 times, and prepared on a coverslip for FCS measurement. The laser intensity was set to 3 mW. six autocorrelation functions, each of which had been collected for 300 s, were averaged, and the following FCS model was fitted to the average autocorrelation function to determine the number of fluorophores N in a focal volume Veff:GDτ=1Nχ211+τ/τD 11+(wxy2/wz2)(τ/τD)12+G∞while wxy and wz were fixed to the values determined from the FCS measurement on Alexa Fluor 488 (Figure 1—figure supplement 1E). The photon count collected during the FCS measurement was corrected for background noise, and then divided by N to yield the molecular brightness of TC-FlAsH, 233.4 ± 9.3 s−1. Using the estimated molecular brightness and the effective volume of the PSF, we calculated the average concentration of the polymerized β-tubulin-TC-FlAsH to be9.6×104 s-1233.4 s-1(0.364 μm3)=1.13×1021m-3=1.88±0.13 μM
+We next performed an FCS measurement on a synthesized TC peptide labeled with FlAsH. 50 μM synthesized TC peptide (Ac-AEEEACCPGCC-NH2, Genscript), 100 μM FlAsH-EDT2, and 10 mM 2-mercaptoethanesulfonate (Sigma Aldrich) were incubated for an hour to associate TC peptide with FlAsH, then diluted in the imaging buffer by 500 times, and prepared on a coverslip for FCS measurement. The laser intensity was set to 3 mW. six autocorrelation functions, each of which had been collected for 300 s, were averaged, and the following FCS model was fitted to the average autocorrelation function to determine the number of fluorophores N in a focal volume Veff:
 
-## Calculating labeling ratio
+$$
+G_{D}\tau=\frac{1}{Nχ^{2}}\frac{1}{1+\tau/\tau_{D}}\frac{1}{1+(w_{xy}^{2}/w_{z}^{2})(\tau/\tau_{D})}^{\frac{1}{2}}+G_{∞}
+$$
+
+while wxy and wz were fixed to the values determined from the FCS measurement on Alexa Fluor 488 (Figure 1—figure supplement 1E). The photon count collected during the FCS measurement was corrected for background noise, and then divided by N to yield the molecular brightness of TC-FlAsH, 233.4 ± 9.3 s−1. Using the estimated molecular brightness and the effective volume of the PSF, we calculated the average concentration of the polymerized β-tubulin-TC-FlAsH to be
+
+$$
+\frac{9.6\times10^{4}s^{-1}}{233.4s^{-1}(0.364\mum^{3})}=1.13\times10^{21}m^{-3}=1.88\pm0.13\muM
+$$
+
+##### Calculating labeling ratio
 
 A previous study (Dumontet et al., 1996) estimated the percentage of polymerized β-tubulin in a mitotic human tissue culture cell to be 36 ± 7%. Combining this information with our estimate of an average concentration of polymerized β-tubulin-TC-FlAsH of 1.88 ± 0.13 μM leads to a total concentration of β-tubulin-TC-FlAsH of 1.88 μM × 100/36 ≈ 5.22 ± 1.08 μM. Since the total concentration of tubulin dimer in a tissue culture cell is ~ 20 μM (Hiller and Weber, 1978), we estimated the fraction of labeled β-tubulin to be 5.22 μM/20 μM ≈ 26.1 ± 5.4%. This estimate makes use of data obtained in different cell types, which may introduce inaccuracies. Systematic errors in the total concentration of tubulin or the concentration of the β-tubulin-TC-FlAsH will produce proportional errors in the estimates of the fraction of labeled β-tubulin, resulting in proportional systematic errors in the conversion of NDC80 FRET fraction to NDC80 binding fraction.
 
-## Förster radius estimation
+#### Förster radius estimation
 
-To measure the Förster radius R0 of FRET between mTurquiose2 and TC-FlAsH, we created a construct containing mTurquoise2 tethered to TC (mTurquoise2-TC), expressed it in U2OS cells, and acquired fluorescence decays of mTurquoise2 using FLIM, which were well-described by a single-exponential fluorescence decay with a lifetime of 3.75 ± 0.03 ns (SD) in the absence of FlAsH labeling (Figure 1—figure supplement 4A). When FlAsH is added to these cells, FLIM measurements revealed the presence of additional shorter-lifetime species, corresponding to mTurquoise2 molecules engaged in FRET with TC-FlAsH (Figure 1—figure supplement 4A). Then we performed Monte Carlo protein simulations (which are described below) to model the conformational ensemble of the flexible tether between mTurquoise2 and TC-FlAsH and obtain the distribution pr of the distance r between mTurquoise2 and FlAsH (Figure 1–figure supplement 4B). The fluorescence lifetime τ of donors engaged in FRET is related to the donor-acceptor distance r by:τ(r;R0)=τD1+R0r6where τD is the fluorescence lifetime of the donor in non-FRET state (3.75 ± 0.03 ns), and R0 is the Förster radius. Therefore, the fluorescence decay y(t) of mTurquoise2-TC-FlAsH can be modeled as:yt=ADexp⁡-tτD+AFRET∫prexp⁡-tτr;R0drwhere AD is the population in the non-FRET state and AFRET is that in the FRET state, both of which are free parameters of the model along with R0. This model (after convolved with the IRF) was fit to the measured fluorescence decay curve of mTurquoise2-TC-FlAsH, allowing us to estimate the Förster radius R0 to be 5.90 ± 0.10 nm (Figure 1—figure supplement 4C).
+To measure the Förster radius R0 of FRET between mTurquiose2 and TC-FlAsH, we created a construct containing mTurquoise2 tethered to TC (mTurquoise2-TC), expressed it in U2OS cells, and acquired fluorescence decays of mTurquoise2 using FLIM, which were well-described by a single-exponential fluorescence decay with a lifetime of 3.75 ± 0.03 ns (SD) in the absence of FlAsH labeling (Figure 1—figure supplement 4A). When FlAsH is added to these cells, FLIM measurements revealed the presence of additional shorter-lifetime species, corresponding to mTurquoise2 molecules engaged in FRET with TC-FlAsH (Figure 1—figure supplement 4A). Then we performed Monte Carlo protein simulations (which are described below) to model the conformational ensemble of the flexible tether between mTurquoise2 and TC-FlAsH and obtain the distribution $pr$ of the distance $r$ between mTurquoise2 and FlAsH (Figure 1–figure supplement 4B). The fluorescence lifetime $\tau$ of donors engaged in FRET is related to the donor-acceptor distance r by:
 
-## Characterization and calibration of NDC80-kMT FLIM-FRET measurements by Monte Carlo simulations
+$$
+\tau(r;R_{0})=\frac{\tau_{D}}{1+\frac{R_{0}}{r}^{6}}
+$$
 
-## Characterization of NDC80-kMT FRET vs NDC80-MT distance relationship
+where $\tau_{D}$ is the fluorescence lifetime of the donor in non-FRET state (3.75 ± 0.03 ns), and R0 is the Förster radius. Therefore, the fluorescence decay $y(t)$ of mTurquoise2-TC-FlAsH can be modeled as:
 
-To characterize the FRET between mTurquoise2-NDC80 and FlAsH-labeled microtubule when NDC80 is not bound to the microtubule, we performed large-scale, atomistic Monte Carlo protein simulations to model the conformational ensemble of the tether between mTurquoise2 and NDC80 and the disordered C-terminal tails of twelve β-tubulins near the NDC80 complex (which is described below) (Figure 1—figure supplement 5A). 4000 sets of positions of mTurquoise2 and TC were generated for each case where the NDC80 bound to an inter- or intra-tubulin dimer interface was translated away from the microtubule by a certain distance (0~15, 0.5 nm increment) in a direction perpendicular to the microtubule surface. For each randomly sampled set of distances between mTurquoise2 and TC-FlAsH, r→=ri, the fluorescence lifetime was calculated by:τr→=τD1+∑i=112IiR0ri6where Ii~Bernoulliflabel indicates whether or not the i-th TC motif is labeled with FlAsH-EDT2; R0 is the Förster radius between mTurquoise2 and TC-FlAsH; and τD=3.75 ns is the non-FRET lifetime of mTurquoise2 (Figure 1—figure supplement 5A). The estimated labeling fraction 26.1% and the Förster radius 5.90 nm were used for flabel and R0, respectively. For each NDC80-kMT distance, 2 million fluorescence lifetimes were sampled, based on which we simulated 30 fluorescence decay curves of mTurquoise2 by:PoissonA∫pr→exp⁡-tτr→dr→ where the amplitude A of the fluorescence decay was set to 5000 (Figure 1—figure supplement 5A). Single- and double-exponential decay models were fit to the simulated fluorescence decays (by maximum likelihood method) (Figure 1—figure supplement 5B, bottom). The Bayesian information criterion (BIC) was used as a criterion for model selection between the single- and double-exponential decay models. The difference in BIC between single- and double-exponential models, ΔBIC=BIC1expo-BIC2expo, was plotted against the NDC80-kMT distance (Figure 1—figure supplement 5B, top right). ΔBIC is negative when NDC80-kMT distance is larger than 8 nm, indicating that single-exponential model performs better than double-exponential model in terms of the goodness of fit and the complexity of model (Figure 1—figure supplement 5B).
+$$
+yt=A_{D}exp⁡-\frac{t}{\tau_{D}}+A_{FRET}\intprexp⁡-\frac{t}{\taur;R_{0}}dr
+$$
 
-## NDC80-kMT FRET fraction calibration
+where AD is the population in the non-FRET state and AFRET is that in the FRET state, both of which are free parameters of the model along with R0. This model (after convolved with the IRF) was fit to the measured fluorescence decay curve of mTurquoise2-TC-FlAsH, allowing us to estimate the Förster radius R0 to be 5.90 ± 0.10 nm (Figure 1—figure supplement 4C).
 
-To obtain the relationship between NDC80 FRET fraction and NDC80 binding fraction, we performed large-scale Monte Carlo simulations to obtain 4000 sets of distances between mTurquoise2 and TC-FlAsH, r→=ri, for each case where mTurquoise2-NDC80 is bound to the TC-tagged microtubule at the inter- or intra-dimer interface. Then we sampled 0.5 million fluorescence lifetimes τ as described above, and simulated a fluorescence decay curve for the situation where a fraction fb of mTurquoise2-NDC80 are bound to microtubules and have lifetime τr→, while the other 1-fb are not bound and have lifetime τD (Figure 1—figure supplement 5C, green dots):PoissonA1-fbexp⁡-tτD+fb∫pr→exp⁡-tτr→dr→where the amplitude A of the fluorescence decay curve was set to 10,000 (Figure 1—figure supplement 5C, left). The simulated fluorescence decay curve was then fit by two-exponential fluorescence decay model (Figure 1—figure supplement 5C, red lines):A'1-fFRETexp⁡-tτD+fFRETexp⁡-tτFRETto acquire the FRET fraction, fFRET. The data of NDC80 FRET fraction, fFRET, vs NDC80 binding fraction, fb, was fit using a linear model fFRET=afb (Figure 1—figure supplement 5C, right). To determine the uncertainty in the slope a (gray area in Figure 1—figure supplement 5C, right), we repeated the process above with the mean ± error values of R0 and beta-tubulin labeling fraction flabel. As a result, we obtained a = 0.42 ± 0.08, and used this calibration to convert NDC80 FRET fraction to NDC80 binding fraction.
+#### Characterization and calibration of NDC80-kMT FLIM-FRET measurements by Monte Carlo simulations
 
-## Monte Carlo protein simulations
+##### Characterization of NDC80-kMT FRET vs NDC80-MT distance relationship
+
+To characterize the FRET between mTurquoise2-NDC80 and FlAsH-labeled microtubule when NDC80 is not bound to the microtubule, we performed large-scale, atomistic Monte Carlo protein simulations to model the conformational ensemble of the tether between mTurquoise2 and NDC80 and the disordered C-terminal tails of twelve β-tubulins near the NDC80 complex (which is described below) (Figure 1—figure supplement 5A). 4000 sets of positions of mTurquoise2 and TC were generated for each case where the NDC80 bound to an inter- or intra-tubulin dimer interface was translated away from the microtubule by a certain distance (0~15, 0.5 nm increment) in a direction perpendicular to the microtubule surface. For each randomly sampled set of distances between mTurquoise2 and TC-FlAsH, $r→=r_{i}$, the fluorescence lifetime was calculated by:
+
+$$
+\taur→=\frac{\tau_{D}}{1+\sumi=112I_{i}\frac{R_{0}}{r_{i}}^{6}}
+$$
+
+where $I_{i}~Bernoullif_{label}$ indicates whether or not the i-th TC motif is labeled with FlAsH-EDT2; $R_{0}$ is the Förster radius between mTurquoise2 and TC-FlAsH; and $\tau_{D}$=3.75 ns is the non-FRET lifetime of mTurquoise2 (Figure 1—figure supplement 5A). The estimated labeling fraction 26.1% and the Förster radius 5.90 nm were used for $f_{label}$ and $R_{0}$, respectively. For each NDC80-kMT distance, 2 million fluorescence lifetimes were sampled, based on which we simulated 30 fluorescence decay curves of mTurquoise2 by:
+
+$$
+PoissonA\intpr→exp⁡-\frac{t}{\taur→}dr→
+$$
+
+where the amplitude A of the fluorescence decay was set to 5000 (Figure 1—figure supplement 5A). Single- and double-exponential decay models were fit to the simulated fluorescence decays (by maximum likelihood method) (Figure 1—figure supplement 5B, bottom). The Bayesian information criterion (BIC) was used as a criterion for model selection between the single- and double-exponential decay models. The difference in BIC between single- and double-exponential models, $ΔBIC=BIC_{1expo}-BIC_{2expo}$, was plotted against the NDC80-kMT distance (Figure 1—figure supplement 5B, top right). $ΔBIC$ is negative when NDC80-kMT distance is larger than 8 nm, indicating that single-exponential model performs better than double-exponential model in terms of the goodness of fit and the complexity of model (Figure 1—figure supplement 5B).
+
+##### NDC80-kMT FRET fraction calibration
+
+To obtain the relationship between NDC80 FRET fraction and NDC80 binding fraction, we performed large-scale Monte Carlo simulations to obtain 4000 sets of distances between mTurquoise2 and TC-FlAsH, $r→=r_{i}$, for each case where mTurquoise2-NDC80 is bound to the TC-tagged microtubule at the inter- or intra-dimer interface. Then we sampled 0.5 million fluorescence lifetimes $\tau$ as described above, and simulated a fluorescence decay curve for the situation where a fraction $f_{b}$ of mTurquoise2-NDC80 are bound to microtubules and have lifetime $\taur→$, while the other $1-f_{b}$ are not bound and have lifetime $\tau_{D}$ (Figure 1—figure supplement 5C, green dots):
+
+$$
+PoissonA1-f_{b}exp⁡-\frac{t}{\tau_{D}}+f_{b}\intpr→exp⁡-\frac{t}{\taur→}dr→
+$$
+
+where the amplitude A of the fluorescence decay curve was set to 10,000 (Figure 1—figure supplement 5C, left). The simulated fluorescence decay curve was then fit by two-exponential fluorescence decay model (Figure 1—figure supplement 5C, red lines):
+
+$$
+A^{'}1-f_{FRET}exp⁡-\frac{t}{\tau_{D}}+f_{FRET}exp⁡-\frac{t}{\tau_{FRET}}
+$$
+
+to acquire the FRET fraction, $f_{FRET}$. The data of NDC80 FRET fraction, $f_{FRET}$, vs NDC80 binding fraction, $f_{b}$, was fit using a linear model $f_{FRET}=af_{b}$ (Figure 1—figure supplement 5C, right). To determine the uncertainty in the slope a (gray area in Figure 1—figure supplement 5C, right), we repeated the process above with the mean ± error values of R0 and beta-tubulin labeling fraction $f_{label}$. As a result, we obtained a = 0.42 ± 0.08, and used this calibration to convert NDC80 FRET fraction to NDC80 binding fraction.
+
+#### Monte Carlo protein simulations
 
 Atomistic simulations were performed by the CAMPARI (v2) package (Vitalis and Pappu, 2009b), employing the ABSINTH implicit solvation model and forcefield paradigm (Vitalis and Pappu, 2009a) at the intrinsic solvation (IS) limit (Das and Pappu, 2013) (unless stated otherwise), where the energy function is simply a combination of Lennard-Jones energy and ABSINTH solvation energy. mTurquoise2-TC construct simulation: For the Förster radius estimation, we ran 50 independent simulations on the mTurquoise2-TC construct in spherical soft-wall boundary conditions with radius 100 Å. An input structure was used only for the folded mTurquoise2 domain (adapted from PDB 4B5Y), and we employed CAMPARI to generate the tether and TC domains (GMDELYKYSDLFLNCCPGCCMEP) from scratch. To prevent unphysical unfolding and/or conformational change of mTurquoise2, we imposed constraints on internal degrees of freedom of residues in the folded region. Each simulation consisted of 2 × 106 MC steps with sampling frequency of (5000 steps)−1, and the simulation temperature was set to 400 K to scan a large structural ensemble. Note that the system is quickly relaxed in the intrinsic solvation (IS) limit, and hence it does not require a long simulation time to reach equilibration. The average coordinate of the alpha carbons of 4 residues before and after Trp66 was used as the location of mTurquoise2 chromophore, and the average coordinate of alpha carbons of the four cysteine residues in the TC motif was used as the location of TC-FlAsH.
 
-## mTurquoise2-NDC80 and TC-labeled microtubule simulation
+##### mTurquoise2-NDC80 and TC-labeled microtubule simulation
 
-We constructed a system consisting of the NDC80 complex, 12 tubulin dimers as described in Figure 1—figure supplement 5A. The initial structures of the system were constructed by combining the structures of microtubule (PDB 3JAS) (Zhang et al., 2015) and one of bonsai-NDC80s attached to a tubulin dimer at the inter- and intra-dimer interfaces (PDB 3IZ0) (Alushin et al., 2010), and then incorporating the structures of disordered regions (tether, GMDEL YKYSD LMET, and C-terminal tail+TC, SEYQQ YQDAT AEEEE DFGEE AEEEA CCPGC C) generated by the loop modeling module of Rosetta 3.8 (Mandell et al., 2009; Leaver-Fay et al., 2011). Clashes in the initial structure were removed by the Rosetta relaxation module (Nivón et al., 2013). For folded regions (where we have structure information from PDB), we imposed constraints on internal degrees of freedom as before. To prevent dissociation of microtubule into individual tubulins, we also imposed a harmonic restraint potential on atoms at the interface of two different chains. If two atoms from different chains are closer than 20 Å, the pair contributes an additional potentialEdrest(i,j)=k(rij−rij0)2,where i and j are atomic indices, rij is the distance between two atoms i and j, rij0 is the initial distance between i and j, and k is a force constant (set to 3.0 kcal/mol/Å2). We employed spherical soft-wall boundary conditions with radius 200 Å, and the simulation temperature of 400 K. We ran a relaxation simulation for 2 × 106 MC steps, and a production simulation for another 2 × 106 MC steps with sampling frequency of (500 steps)−1. For the FRET efficiency vs NDC80-MT data (Figure 1—figure supplement 5B), we used the final structure of the relaxation simulation and translated the NDC80 complex along the axis orthogonal to the microtubule surface by several distance values: from 0 to 15 nm by increment of 0.5 nm. For each system, a simulation of 2 × 106 MC steps was conducted to generate data with sampling frequency of (500 steps)−1.
+We constructed a system consisting of the NDC80 complex, 12 tubulin dimers as described in Figure 1—figure supplement 5A. The initial structures of the system were constructed by combining the structures of microtubule (PDB 3JAS) (Zhang et al., 2015) and one of bonsai-NDC80s attached to a tubulin dimer at the inter- and intra-dimer interfaces (PDB 3IZ0) (Alushin et al., 2010), and then incorporating the structures of disordered regions (tether, GMDEL YKYSD LMET, and C-terminal tail+TC, SEYQQ YQDAT AEEEE DFGEE AEEEA CCPGC C) generated by the loop modeling module of Rosetta 3.8 (Mandell et al., 2009; Leaver-Fay et al., 2011). Clashes in the initial structure were removed by the Rosetta relaxation module (Nivón et al., 2013). For folded regions (where we have structure information from PDB), we imposed constraints on internal degrees of freedom as before. To prevent dissociation of microtubule into individual tubulins, we also imposed a harmonic restraint potential on atoms at the interface of two different chains. If two atoms from different chains are closer than 20 Å, the pair contributes an additional potential
 
-## Protein structure illustration
+$$
+E_{drest}(i,j)=k(r_{ij}−r_{ij}^{0})^{2},
+$$
+
+where i and j are atomic indices, rij is the distance between two atoms i and j, rij0 is the initial distance between i and j, and k is a force constant (set to 3.0 kcal/mol/Å2). We employed spherical soft-wall boundary conditions with radius 200 Å, and the simulation temperature of 400 K. We ran a relaxation simulation for 2 × 106 MC steps, and a production simulation for another 2 × 106 MC steps with sampling frequency of (500 steps)−1. For the FRET efficiency vs NDC80-MT data (Figure 1—figure supplement 5B), we used the final structure of the relaxation simulation and translated the NDC80 complex along the axis orthogonal to the microtubule surface by several distance values: from 0 to 15 nm by increment of 0.5 nm. For each system, a simulation of 2 × 106 MC steps was conducted to generate data with sampling frequency of (500 steps)−1.
+
+### Protein structure illustration
 
 Protein structure illustrations were generated by The PyMOL Molecular Graphics System, Version 2.0 Schrödinger, LLC.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-The statistical test used, sample size (number of cells and kinetochores), dispersion and precision measures can be found in figure legends, Results, or below. All curve fittings, except FLIM data analysis (which is separately explained above), were performed by Levenberg-Marquardt algorithm with residuals weighted by the inverse of y-errors, and the corresponding 95% confidence intervals were calculated by predint function in MATLAB. To assess the significance of correlation, we determined p-value from 1-α, where α is the smallest confidence level that makes zero contained in the confidence interval of the slope of the linear fit.
+The statistical test used, sample size (number of cells and kinetochores), dispersion and precision measures can be found in figure legends, Results, or below. All curve fittings, except FLIM data analysis (which is separately explained above), were performed by Levenberg-Marquardt algorithm with residuals weighted by the inverse of y-errors, and the corresponding 95% confidence intervals were calculated by predint function in MATLAB. To assess the significance of correlation, we determined p-value from $1-\alpha$, where α is the smallest confidence level that makes zero contained in the confidence interval of the slope of the linear fit.

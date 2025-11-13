@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.28927.001 The neurophysiological processes underlying non-invasive brain activity measurements are incompletely understood. Here, we developed a connectome-based brain network model that integrates individual structural and functional data with neural population dynamics to support multi-scale neurophysiological inference. Simulated populations were linked by structural connectivity and, as a novelty, driven by electroencephalography (EEG) source activity. Simulations not only predicted subjects' individual resting-state functional magnetic resonance imaging (fMRI) time series and spatial network topologies over 20 minutes of activity, but more importantly, they also revealed precise neurophysiological mechanisms that underlie and link six empirical observations from different scales and modalities: (1) resting-state fMRI oscillations, (2) functional connectivity networks, (3) excitation-inhibition balance, (4, 5) inverse relationships between α-rhythms, spike-firing and fMRI on short and long time scales, and (6) fMRI power-law scaling. These findings underscore the potential of this new modelling framework for general inference and integration of neurophysiological knowledge to complement empirical studies.
+The neurophysiological processes underlying non-invasive brain activity measurements are incompletely understood. Here, we developed a connectome-based brain network model that integrates individual structural and functional data with neural population dynamics to support multi-scale neurophysiological inference. Simulated populations were linked by structural connectivity and, as a novelty, driven by electroencephalography (EEG) source activity. Simulations not only predicted subjects' individual resting-state functional magnetic resonance imaging (fMRI) time series and spatial network topologies over 20 minutes of activity, but more importantly, they also revealed precise neurophysiological mechanisms that underlie and link six empirical observations from different scales and modalities: (1) resting-state fMRI oscillations, (2) functional connectivity networks, (3) excitation-inhibition balance, (4, 5) inverse relationships between α-rhythms, spike-firing and fMRI on short and long time scales, and (6) fMRI power-law scaling. These findings underscore the potential of this new modelling framework for general inference and integration of neurophysiological knowledge to complement empirical studies.
 
 ## Introduction
 
@@ -41,6 +41,14 @@ Brain network models are dynamical systems of coupled neural mass models for sim
 
 **Figure 2.:** (a) Neuron firing is inversely related to the phase of α-waves: during peaks of α-waves, neurons fire the least, while they fire maximally during troughs (adapted from Haegens et al., 2011). (b) Our simulations indicate that the inverse relationship between firing and α-phase is related to the ongoing balancing of neural excitation and inhibition (adapted from Atallah and Scanziani, 2009). Reprinted with permission of Elsevier.). (c) On a longer time scale (<0.25 Hz), oscillations of firing rates are inversely related to α-band power fluctuations (adapted from Haegens et al., 2011). (d) Model simulations suggest a mechanism that transforms α-band power oscillations into fMRI oscillations, predicting subject-specific resting-state fMRI time series, corresponding spatial network patterns and the inverse correlation between α-power and fMRI (adapted from de Munck et al., 2008. Reprinted with permission of Elsevier.). (e) Emergence of scale-free fMRI power spectra (adapted from He, 2011) resulted from long-range network input. (f) Individual functional connectivity matrices were predicted over long and short time windows (adapted from Allen et al., 2014).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/28927/elife-28927-fig3-v2.jpg)
+
+**Figure 3.:** (a) Example time series of the hybrid model and the three control scenarios from one subject. (b) Box plots of average correlation coefficients between all simulated and empirical region time series (20.7 min) for each subject (n = 15; α-regressor values were inverted for illustration purposes). (c) Scatter plot of RSN time course standard deviation (s.d.) versus prediction quality. Dots depict data from the nine RSN time courses for each subject. (d) Comparison of prediction quality during upper versus lower quartile of epoch-wise RSN time course s.d.s. Upper row: spatial activation patterns of nine RSNs. Middle row: correlation coefficients between RSN temporal modes and hybrid model simulation results and the three control scenarios. Lower row: sliding window (length: 100 fMRI scans = 194 s; step width: one fMRI scan) correlations for the upper (first and third boxplot per panel) and lower quartiles (second and fourth boxplot per panel) of window-wise RSN temporal mode for the hybrid model and the α-regressor. Asterisks indicate significantly increased prediction quality of the hybrid model compared to control scenarios in one-tailed Wilcoxon rank sum test (*p<0.05, **p<0.01). Additionally, all hybrid model correlations in (b) and (d) were tested for the null hypothesis that they come from a distribution whose median is zero at the 5% significance level. All tests rejected the null hypothesis of zero medians except for RSN correlations over 20 min for the executive control and the frontoparietal networks (middle row).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/28927/elife-28927-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a–c) 2d parameter space heat maps show average time series correlation obtained from the hybrid model for different combinations of the three parameters G, ωBGE, ωBGI (the latter depicted as ratio ωBGI / ωBGE); results were averaged over all subjects and brain regions. Parameter values that yielded the highest average correlation were used for simulations with artificial α-input (marked with an asterisk). We confirmed identifiability of the model by showing that parameter space search converges toward a single optimal solution yielding best predictions.
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/28927/elife-28927-fig4-v2.jpg)
 
 **Figure 4.:** (a, b) Box plots show correlation coefficients obtained from correlating all subdiagonal entries of empirical and simulated FC matrices. FC was computed for long epochs (static FC; computed over 20.7 min) and short epochs (dynamic FC; average sliding window correlation; 100 fMRI scans window length; one fMRI scan step width). Results were compared for (a) the parameter set that generated the best fMRI time series prediction and (b) the parameter set that yielded the best FC predictions for each subject. (c) Scatter plots compare empirical and simulated average FC for hybrid model simulations and the α-regressor. Dots depict all pair-wise region time series correlations averaged over all subjects. Asterisks in (a) and (b) indicate significantly increased prediction quality of the hybrid model compared to control conditions in one-tailed Wilcoxon rank sum test (*p<0.05, **p<0.01).
@@ -48,6 +56,30 @@ Brain network models are dynamical systems of coupled neural mass models for sim
 ![Figure 5.](https://cdn.elifesciences.org/articles/28927/elife-28927-fig5-v2.jpg)
 
 **Figure 5.:** (a) Histogram of population firing rates divided into six bins according to α-cycle segments and normalized relative to the mean firing rate of each cycle. Population firing rates were highest during the trough and lowest during the peak of α-cycles. (b) Grand average waveforms of population inputs and outputs time locked to α-cycles of injected EEG source activity (black, column II). Left and right axes denote input currents to excitatory and inhibitory populations, respectively. Please refer to the main text for a description of the mechanism that explains the inverse relationship between α-cycles and firing rates.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/28927/elife-28927-fig6-v2.jpg)
+
+**Figure 6.:** Grand average waveforms of population inputs and outputs on longer time scales. (a) Hybrid models were injected with artificial α-activity consisting of 10 Hz sine oscillations that contained a single brief high-power burst (black, column I; orange: signal envelope). While positive deflections of the α-wave generated positive deflections of inhibitory population firing rates, large negative deflections were bounded by the physiological constraint of 0 Hz (blue, fifth column; black: moving average). (b) Hybrid models were injected models with 10 Hz sine waves where ongoing power was modulated similar to empirical α-rhythms (0.01–0.03 Hz). Similarly to (a), but for a longer time frame, inhibitory populations rectified negative deflections, which introduced the α-power modulation as a new frequency component into firing rates and fMRI time series.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/28927/elife-28927-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Similar to the electrophysiological results shown in Haegens et al. (2011), all time series for each subject and brain region were divided into five equal-sized bins on the basis of α-power level and average firing rate (normalized with average firing rate per brain region) was computed per bin. Firing rate decreased with increasing α-power (Kruskal-Wallis/Tukey’s post-hoc multiple comparison; p<0.001).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/28927/elife-28927-fig7-v2.jpg)
+
+**Figure 7.:** (a) Power spectral densities of simulated and empirical fMRI and empirical α-band activity (straight-line fits of power spectra are for illustration purposes only; scale-invariance was determined in the time domain using rigorous model selection criteria, see Materials and methods). (b) As in Figure 6b, but with disabled long-range coupling. In contrast to Figure 6b, the amplitudes of firing rates, synaptic gating and fMRI are equally large, while in Figure 6b amplitudes were larger during slower α-band power modulations.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/28927/elife-28927-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Empirical and simulated fMRI spectra have a large power-law exponent, that is a steeper slope, compared to ongoing α-power or wide-band power (βα-band = −0.53, βwide-band = −0.47). To analyze the effect of long-range network interaction, simulated fMRI was computed with and without long-range coupling. To exclude that power-law spectra emerge despite absent long-range coupling, local inhibition was tuned such that the model produced highest fMRI time series predictions. Without long-range coupling, simulated fMRI showed a similar exponent as injected EEG source activity. When long-range coupling was activated and global excitation was properly balanced with local inhibition, the exponent was closer to the exponent of empirical fMRI (Figure 7—figure supplement 2).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/28927/elife-28927-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Here, global coupling and a single value for all local inhibitory connection parameters Ji were tuned. Colors indicate the average correlations between simulated and empirical data (a–c) and the absolute difference between exponents of power-law fits with empirical and simulated power spectral densities (d, colormap was flipped to indicate highest fits in red to be consistently with the other subplots), averaged over all regions.
+
+![Video 1.](https://cdn.elifesciences.org/articles/28927/elife-28927-video1.mp4.jpg)
+
+**Video 1.:** The video shows how computational brain network models are constructed from individual neuroimaging data, how these models can be used to simulate different types of neural activity of individual subjects on multiple temporal scales and how model activity can be used to derive mechanisms of brain function.
 
 Resting-state fMRI studies identified so-called ‘resting-state networks’ (RSNs), which are widespread networks of coherent activity that spontaneously emerge across a variety of species in the absence of an explicit task (Biswal et al., 1995; Fox and Raichle, 2007; Raichle et al., 2001). Despite correlations between fMRI and intracortical recordings (He et al., 2008; Logothetis et al., 2001), EEG (Becker et al., 2011; Goldman et al., 2002; Mantini et al., 2007; Moosmann et al., 2003; Ritter et al., 2009) and magnetoencephalography (Brookes et al., 2011; de Pasquale et al., 2010) the link between RSNs and electrical neural activity is not fully understood. A prominent feature of electrical neural activity are oscillations in the α-band, which is rhythmic activity in the 8 to 12 Hz frequency range first discovered by Hans Berger (Berger, 1929). A growing body of research indicates that changes in information processing, attention, perceptual awareness, and cognitive performance are accompanied by rhythmic modulation of α-power and phase (Busch et al., 2009; Klimesch, 1999; Mathewson et al., 2009). The observed inverse relationship between α-band activity and neural firing is central to hypotheses on its functional significance termed ‘gating by inhibition’ and ‘pulsed inhibition’ (Jensen and Mazaheri, 2010; Klimesch et al., 2007). Interestingly, intracellular recordings showed that inhibitory events are inseparable from excitatory events, resulting in an ongoing excitation-inhibition balance (E/I balance) (Isaacson and Scanziani, 2011; Okun and Lampl, 2008). The significance of the α-rhythm is underscored by strong negative correlations between ongoing α-band power fluctuation and resting-state fMRI amplitude fluctuation (de Munck et al., 2008; Feige et al., 2005; Goldman et al., 2002; Moosmann et al., 2003). Lastly, despite wide-spread interest in critical dynamics (Bak, 2013), the key determinants of emergent power-law scaling, a signal pattern that is ubiquitous in nature and commonly observed in neural activity, are unclear (Beggs and Timme, 2012; Marković and Gros, 2014).
 
@@ -57,7 +89,7 @@ In summary, our biophysically grounded brain model has the potential to test mec
 
 ## Results
 
-## Hybrid models predict subject-specific fMRI time series
+### Hybrid models predict subject-specific fMRI time series
 
 The used brain network models are dynamical systems where individual brain areas are simulated by coupled neural mass models. Long-range coupling was weighted by heterogeneous strength estimates obtained from white-matter tractography, a method that estimates neural tracts from diffusion-weighted MRI data. The used neural mass models approximate the average ensemble behaviour of networks of spiking neuron models and were derived in a previous study (Deco et al., 2013) using a dynamic mean-field technique (Deco et al., 2008; Wong and Wang, 2006). In contrast to previous brain network models that used noise as input, the neural mass models of our ‘hybrid’ model are driven by EEG source activity that was simultaneously acquired with fMRI (Figure 1). Simulation results predicted a considerable part of the variance of ongoing subject-specific resting-state fMRI time series (Figure 3) and spatial network topologies, that is, fMRI functional connectivity (Figure 4; functional connectivity is here defined as the pair-wise correlation matrix between region time series). Furthermore, fitted models reproduced a variety of empirical phenomena observed with EEG and invasive electrophysiology (Figure 2) and, more importantly, simulation results revealed mechanistic explanations for the emergence of these phenomena (Figures 5, 6 and 7).
 
@@ -69,7 +101,7 @@ To estimate the ability of the four scenarios to predict the time courses of dif
 
 Next, we compared the ability of all four setups to predict the spatial topology of empirical fMRI networks. In contrast to time series prediction, the α-regressor showed low correlations with empirical functional connectivity (FC). Compared to the α-regressor, all three model-based approaches provided significantly better predictions of subjects’ individual long-epoch FC and short-epoch FC (Figure 4). Furthermore, hybrid model simulation results correlated significantly better with empirical network topology than predictions obtained from the noise-driven model (Figure 4a,b). Interestingly, correlations for hybrid and random permutation models were effectively the same, likely because the long-range network dynamics, which drive the emergence of FC by structural coupling, would be relatively preserved when permuting injected activity. Prediction of group-average FC (all pairwise FC values averaged over all subjects) was better for the hybrid model compared to the α-regressor (Figure 4c).
 
-## E/I balance generates the inverse relationship between α-phase and firing
+### E/I balance generates the inverse relationship between α-phase and firing
 
 After fitting the individual hybrid models for each of the 15 subjects, we analyzed the local population activity to infer neurodynamic mechanisms underlying predicted fMRI time series. We found that on the fast time scale of individual α-cycles (~100 ms) the optimized hybrid model reproduced the inverse relationship between α-phase and firing rates observed in invasive recordings (Haegens et al., 2011) (Figure 5a). To investigate these fast-acting dynamics related to α-phase, we computed grand average waveforms of modeled synaptic inputs, population firing rates, and synaptic gating time-locked to the zero-crossings of α-cycles. Resulting waveforms illustrate how the ongoing balancing of excitatory and inhibitory inputs generated the inverse relation between α-oscillations and neural firing (Figure 5b).
 
@@ -77,7 +109,7 @@ In hybrid models, individual subject’s (Figure 5, column I) source activity (c
 
 In summary, the fast population activity underlying fMRI predictions showed a rhythmic modulation of firing rates on the fast time scale of individual α-cycles in accordance with empirical observations (Haegens et al., 2011). Analyses revealed that periodically alternating states of excitation and inhibition resulted from the ongoing balancing of EPSCs by feedback IPSCs, which explains α-phase-related neural firing.
 
-## α-power fluctuations generate fMRI oscillations
+### α-power fluctuations generate fMRI oscillations
 
 Similar to intracranial recordings in monkey (Haegens et al., 2011), we found that increased α-power of injected EEG source activity was accompanied by decreased firing rates (Figure 6—figure supplement 1). Furthermore, we also observed the empirically observed inverse relationship between α-power and fMRI amplitude (Goldman et al., 2002; Moosmann et al., 2003) in our empirical data in the form of negative correlations between the α-regressor and fMRI activity (Figure 3). Our findings raised the question what physiological mechanism led to this inverse relationship between α-power and firing rate, respectively, fMRI amplitude. We therefore analyzed model activity on the longer time scale of α-power fluctuations. To isolate the effects of α-waves from other EEG rhythms, we replaced the injected EEG-source activity in the 15 individual hybrid models with artificial α-activity (Figure 6a, column I) and simulated all 15 hybrid models using the single parameter set that previously generated the highest average fMRI time series prediction quality (Figure 3—figure supplement 1). Injected activity consisted of a 10 Hz sine wave that contained a single brief high-power burst in its center in order to allow for model activity to stabilize for sufficiently long phases before and after the high-power burst. After simulation, we computed grand average waveforms of model state variables over all simulated region time series and found that input currents, firing rates, synaptic activity and fMRI activity of excitatory populations decreased in response to the α-burst (Figure 6a). Notably, this behavior emerged despite the fact that injected activity (column I) was centered at zero, that is, positive and negative deflections of input currents were balanced. The reason for the observed asymmetric response to increasing input α-power levels originated from inhibitory population dynamics: while positive deflections of α-cycles generated large peaks in ongoing firing rates of inhibitory populations, negative deflections were bounded by 0 Hz (column V). Because of this rectification of high-amplitude negative half-cycles, average per-cycle firing rates of inhibitory populations increased with increasing α-power. As a result, also feedback inhibition (IPSC, column II) had increased for increasing α-power, which in turn led to increased inhibition of excitatory populations, decreased average firing rates, synaptic gating variables (column VI) and ultimately fMRI amplitudes (column VII).
 
@@ -85,7 +117,7 @@ We next analyzed the relationship between α-power fluctuations and fMRI oscilla
 
 In summary, we found that increased α-power led to increased feedback inhibition of excitatory populations introducing a slow modulation of population firing, which can explain the empirically observed anticorrelation between α-power and fMRI.
 
-## Long-range coupling controls fMRI power-law scaling
+### Long-range coupling controls fMRI power-law scaling
 
 Empirical fMRI power spectra follow a power-law distribution P ∝ f β, where P is power, f is frequency and β the power-law exponent. In accordance with systematic analyses of empirical data (He, 2011), average power spectra of our empirical fMRI data obeyed power-law distributions with exponent βemp = −0.82 (Figure 7a and Figure 7—figure supplement 1). We tested for the existence of power-law scaling in the time domain by using rigorous model selection criteria that overcome the limitations of simple straight-line fits to power spectra (see Materials and methods; for illustration purposes straight-line fits are shown in Figure 7a and Figure 7—figure supplement 1).
 
@@ -121,35 +153,265 @@ A wide range of disorders like autism, schizophrenia, intellectual disabilities,
 
 ## Materials and methods
 
-## Computational model
+### Computational model
 
-The model used in this study is based on the large-scale dynamical mean field model used by Deco and colleagues (Deco et al., 2014; Wong and Wang, 2006). Brain activity is modeled as the network interaction of local population models that represent cortical areas. Cortical regions are modelled by interconnected excitatory and inhibitory neural mass models. In contrast to the original model, excitatory connections were replaced by injected EEG source activity. The dynamic mean field model faithfully approximates the time evolution of average synaptic activities and firing rates of a network of spiking neurons by a system of coupled non-linear differential equations for each node i:(1)Ii(E)=WEI0+G∑jCijSj(E)−JiSi(I)+wBG(E)IBG(2)Ii(I)=WII0−Si(I)+wBG(I)IBG(3)ri(E)=aEIi(E)−bE1−exp(−dE(aEIi(E)−bE))(4)ri(I)=aIIi(I)−bI1−exp(−dI(aIIi(I)−bI))(5)dSi(E)(t)dt=−Si(E)τE+(1−Si(E))γEri(E)(6)dSi(I)(t)dt=−Si(I)τI+γIri(I)
+The model used in this study is based on the large-scale dynamical mean field model used by Deco and colleagues (Deco et al., 2014; Wong and Wang, 2006). Brain activity is modeled as the network interaction of local population models that represent cortical areas. Cortical regions are modelled by interconnected excitatory and inhibitory neural mass models. In contrast to the original model, excitatory connections were replaced by injected EEG source activity. The dynamic mean field model faithfully approximates the time evolution of average synaptic activities and firing rates of a network of spiking neurons by a system of coupled non-linear differential equations for each node i:
 
-Here, ri(E,I) denotes the population firing rate of the excitatory (E) and inhibitory (I) population of brain area i. Si(E,I) identifies the average excitatory or inhibitory synaptic gating variables of each brain area, while their input currents are given by Ii(E,I). In contrast to the model used by Deco et al. (2014) that has recurrent and feedforward excitatory coupling, we approximate excitatory postsynaptic currents IBG using region-wise aggregated EEG source activity that is added to the sum of input currents Ii(E,I). This approach is based on intracortical recordings that suggest that EPSCs are non-random, but strongly correlated with electric fields in their vicinity, while IPSCs are anticorrelated with EPSCs (Haider et al., 2016). The weight parameters ωBG(E,I) rescale the z-score normalized EEG source activity independently for excitatory and inhibitory populations. G denotes the long-range coupling strength scaling factor that rescales the structural connectivity matrix Cij that denotes the strength of interaction for each region pair i and j. All three scaling parameters are estimated by fitting simulation results to empirical fMRI data by exhaustive search. Initially, parameter space (n-dimensional real space with n being the number of optimized parameters) was constrained such that the strength of inhibition was larger than the strength of excitation, satisfying a biological constraint. Furthermore, for each tested parameter set (containing the three scaling parameters mentioned above), the region-wise parameters Ji that describe the strength of the local feedback inhibitory synaptic coupling for each area i (expressed in nA) are fitted with the algorithm described below such that the average firing rate of each excitatory population in the model was close to 3.06 Hz (i.e. the cost function for tuning parameters Ji was solely based on average firing rates and not on prediction quality). The overall effective external input I0 = 0.382 nA is scaled by WE and WI, for the excitatory and inhibitory pools, respectively. ri(E,I) denotes the neuronal input-output functions (f-I curves) of the excitatory and inhibitory pools, respectively. All parameters except those that are tuned during parameter estimation are set as in Deco et al. (2014). Please refer to Table 1 for a specification of state variables and parameters. BOLD activity was simulated on the basis of the excitatory synaptic activity S(E) using the Balloon-Windkessel hemodynamic model (Friston et al., 2003), which is a dynamical model that describes the transduction of neuronal activity into perfusion changes and the coupling of perfusion to BOLD signal. The model is based on the assumption that the BOLD signal is a static non-linear function of the normalized total deoxyhemoglobin voxel content, normalized venous volume, resting net oxygen extraction fraction by the capillary bed, and resting blood volume fraction. Please refer to Deco et al. (2013) for the specific set of Ballon-Windkessel model equations that we used in this study.
+$$
+I_{i}^{(E)}=W_{E}I_{0}+G\sumjC_{ij}S_{j}^{(E)}−J_{i}S_{i}^{(I)}+w_{BG}^{(E)}I_{BG}
+$$
 
-## Parameter optimization
+
+
+$$
+I_{i}^{(I)}=W_{I}I_{0}−S_{i}^{(I)}+w_{BG}^{(I)}I_{BG}
+$$
+
+
+
+$$
+r_{i}^{(E)}=\frac{a_{E}I_{i}^{(E)}−b_{E}}{1−exp(−d_{E}(a_{E}I_{i}^{(E)}−b_{E}))}
+$$
+
+
+
+$$
+r_{i}^{(I)}=\frac{a_{I}I_{i}^{(I)}−b_{I}}{1−exp(−d_{I}(a_{I}I_{i}^{(I)}−b_{I}))}
+$$
+
+
+
+$$
+\frac{dS_{i}^{(E)}(t)}{dt}=−\frac{S_{i}^{(E)}}{\tau_{E}}+(1−S_{i}^{(E)})\gamma_{E}r_{i}^{(E)}
+$$
+
+
+
+$$
+\frac{dS_{i}^{(I)}(t)}{dt}=−\frac{S_{i}^{(I)}}{\tau_{I}}+\gamma_{I}r_{i}^{(I)}
+$$
+
+Here, ri(E,I) denotes the population firing rate of the excitatory (E) and inhibitory (I) population of brain area i. Si(E,I) identifies the average excitatory or inhibitory synaptic gating variables of each brain area, while their input currents are given by Ii(E,I). In contrast to the model used by Deco et al. (2014) that has recurrent and feedforward excitatory coupling, we approximate excitatory postsynaptic currents IBG using region-wise aggregated EEG source activity that is added to the sum of input currents Ii(E,I). This approach is based on intracortical recordings that suggest that EPSCs are non-random, but strongly correlated with electric fields in their vicinity, while IPSCs are anticorrelated with EPSCs (Haider et al., 2016). The weight parameters ωBG(E,I) rescale the z-score normalized EEG source activity independently for excitatory and inhibitory populations. G denotes the long-range coupling strength scaling factor that rescales the structural connectivity matrix Cij that denotes the strength of interaction for each region pair $i$ and j. All three scaling parameters are estimated by fitting simulation results to empirical fMRI data by exhaustive search. Initially, parameter space (n-dimensional real space with n being the number of optimized parameters) was constrained such that the strength of inhibition was larger than the strength of excitation, satisfying a biological constraint. Furthermore, for each tested parameter set (containing the three scaling parameters mentioned above), the region-wise parameters Ji that describe the strength of the local feedback inhibitory synaptic coupling for each area $i$ (expressed in nA) are fitted with the algorithm described below such that the average firing rate of each excitatory population in the model was close to 3.06 Hz (i.e. the cost function for tuning parameters Ji was solely based on average firing rates and not on prediction quality). The overall effective external input I0 = 0.382 nA is scaled by WE and WI, for the excitatory and inhibitory pools, respectively. ri(E,I) denotes the neuronal input-output functions (f-I curves) of the excitatory and inhibitory pools, respectively. All parameters except those that are tuned during parameter estimation are set as in Deco et al. (2014). Please refer to Table 1 for a specification of state variables and parameters. BOLD activity was simulated on the basis of the excitatory synaptic activity S(E) using the Balloon-Windkessel hemodynamic model (Friston et al., 2003), which is a dynamical model that describes the transduction of neuronal activity into perfusion changes and the coupling of perfusion to BOLD signal. The model is based on the assumption that the BOLD signal is a static non-linear function of the normalized total deoxyhemoglobin voxel content, normalized venous volume, resting net oxygen extraction fraction by the capillary bed, and resting blood volume fraction. Please refer to Deco et al. (2013) for the specific set of Ballon-Windkessel model equations that we used in this study.
+
+**Table 1.**
+ State variables and parameters of the hybrid brain network model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Quantity</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">State variables</td>
+    </tr>
+    <tr>
+      <td>ri(E,I)</td>
+      <td rowspan="4"></td>
+      <td>Population firing rate of the excitatory (E) or inhibitory (I) population in brain area i</td>
+    </tr>
+    <tr>
+      <td>Si(E,I)</td>
+      <td>Average synaptic gating</td>
+    </tr>
+    <tr>
+      <td>Ii(E,I)</td>
+      <td>Sums of all input currents</td>
+    </tr>
+    <tr>
+      <td>IBG</td>
+      <td>EEG-derived input currents</td>
+    </tr>
+    <tr>
+      <td colspan="3">Parameters</td>
+    </tr>
+    <tr>
+      <td>w+</td>
+      <td>1.4</td>
+      <td>Local excitatory recurrence</td>
+    </tr>
+    <tr>
+      <td>Cij</td>
+      <td>Obtained from diffusion tractography</td>
+      <td>Structural connectivity matrix</td>
+    </tr>
+    <tr>
+      <td>γE, γI</td>
+      <td>6.41 × 10−4, 1.0 × 10−3</td>
+      <td>Kinetic parameters</td>
+    </tr>
+    <tr>
+      <td>aE, bE, dE, τE, WE</td>
+      <td>310 (nC−1), 125 (Hz), 0.16 (s), 100 (ms), 1</td>
+      <td>Excitatory gating variables</td>
+    </tr>
+    <tr>
+      <td>aI, bI, dI, τI, WI</td>
+      <td>615 (nC−1), 177 (Hz), 0.087 (s), 10 (ms), 0.7</td>
+      <td>Inhibitory gating variables</td>
+    </tr>
+    <tr>
+      <td>JNMDA</td>
+      <td>0.15 (nA)</td>
+      <td>Excitatory synaptic coupling</td>
+    </tr>
+    <tr>
+      <td>JI</td>
+      <td>Obtained by FIC heuristic (nA)</td>
+      <td>Feedback inhibitory synaptic coupling</td>
+    </tr>
+    <tr>
+      <td>I0</td>
+      <td>0.382 (nA)</td>
+      <td>overall effective external input</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>Obtained from model fitting</td>
+      <td>Global coupling scaling factor</td>
+    </tr>
+    <tr>
+      <td>wBG(E), wBG(I)</td>
+      <td>Obtained from model fitting</td>
+      <td>Weights for scaling EEG-derived input currents</td>
+    </tr>
+  </tbody>
+</table>
+
+### Parameter optimization
 
 For each brain network model, three parameters were varied to maximize the fit between empirical and simulated fMRI: the scaling of excitatory white-matter coupling and the strengths of the inputs injected into excitatory and inhibitory populations (please refer to Table 2 for an overview over the obtained parameter values). Following in vivo observations (Xue et al., 2014), we ensured that at excitatory populations EPSC amplitudes are smaller than IPSC amplitudes by constraining the range of values for the ratio ωBG(I) / ωBG(E) between 5 and 200, which we found through initial pilot simulations. Note that the ratio ωBG(I) / ωBG(E) is not identical to the amplitude ratio of IPSCs vs. EPSCs, but depends also on the specific settings of all other varied parameters. For example, a large ratio ωBG(I) / ωBG(E) can still lead to a small ratio of IPSCs vs. EPSCs amplitudes if the local feedback inhibition parameter Ji is small. Apart from these initial pilot simulations to restrict the ratio of postsynaptic currents to a biologically plausible range, the specific combination of all varied parameters was exclusively found through fitting simulated to empirical fMRI time series under the constraint of plausible firing rates. That is, besides tuning these three global parameters using the sole optimization criterion of maximizing the fit between simulated and empirical fMRI time series, we adjusted local inhibitory coupling strengths in order to obtain biologically plausible firing rates in excitatory populations. For this second form of tuning, termed feedback inhibition control (FIC), average population firing rates were the sole optimization criterion, without any consideration of prediction quality, which was only dependent on the three global parameters. FIC modulates the strengths of inhibitory connections that is required to compensate for excess or lack of excitation resulting from the large variability in white-matter coupling strengths obtained by MRI tractography, which is a prerequisite to obtain plausible ranges of population activity that is relevant for some results (Figure 5 and Figure 6). Prediction quality was measured as the average correlation coefficient between all simulated and empirical region-wise fMRI time series of a complete cortical parcellation over 20.7 min length (TR = 1.94 s, 640 data points) thereby quantifying the ability of the model to predict the activity of 68 parcellated cortical regions. Accounting for the large-scale nature of fMRI resting-state networks, the chosen parcellation size provides a parsimonious trade-off between model complexity and the desired level of explanation. What this parcellation may lack in spatial detail, it gains in providing a full-brain coverage that can reliably reproduce ubiquitous large-scale features of empirical data, which we further present below. To exclude overfitting and limited generalizability, a five-fold cross-validation scheme was performed on the hybrid model simulation results. Therefore, the data was randomly divided into two subsets: 80% as training subset and 20% as testing subset. Prediction quality was estimated using the training set, before trained models were asked to predict the testing set. Resulting prediction quality was compared between training and test data set and between test data set and the data obtained from fitting the full time series. Furthermore, despite the large range of possible parameters, the search converged to a global maximum (Figure 3—figure supplement 1). Therefore, we ensured that when the model has been fit to a subset of empirical data, that it was able to generalize to new or unseen data. In contrast to model selection approaches, where the predictive power of different models and their complexity are compared against each other, we here use only a single type of model.
 
-## Feedback inhibition control
+**Table 2.**
+ Parameters of the 15 hybrid brain network models obtained by parameter tuning.
 
-The excitatory populations of isolated nodes of the original model described in Deco et al. (2014) have an average firing rate of 3.06 Hz. That is, without long-range coupling G∑jCijSj(E) and without injected activity wBG(E)IBG and wBG(I)IBG (cf. Equations 1 and 2), the used excitatory populations have an average firing rate of 3.06 Hz. This value conforms to the empirically measured Poisson-like cortical in vivo activity of ~3 Hz (Softky and Koch, 1993; Wilson et al., 1994) and results from the dynamic mean field approximation of the average ensemble behaviour of a large-scale spiking neuron model used in Deco et al. (2014). In contrast to isolated nodes, the firing rate of coupled nodes change in dependence of the employed structural connectivity matrix and the injected input. To compensate for a resulting excess or lack of excitation, a local regulation mechanism, called feedback inhibition control (FIC), was used. The approach was previously successfully used to significantly improve FC prediction as well as for increasing the dynamical repertoire of evoked activity and the accuracy of external stimulus encoding (Deco et al., 2014). Despite the mentioned advantages of FIC tuning, it has the disadvantage of increasing the number of open parameters of the model. To prove that prediction quality is not due to FIC, but solely due to the three global parameters and to exclude concerns about over-parameterization or that FIC may be a potentially necessary condition for the emergence of scale-freeness, we devised a control model that did not implement FIC, but used a single global parameter for inhibitory coupling strength. Instead of tuning the 68 individual local coupling weights individually, only a single global value for all inhibitory coupling weights Ji was varied. We compared the effect of FIC on time series prediction quality and found no significant difference in prediction quality to simulations that used only a single value for all local coupling weights Ji per subject (one-tailed Wilcoxon rank sum test, p=0.36, z = −0.37, Cliffs’s delta d = −0.15). In contrast to simulations that are driven by noise (Deco et al., 2014), FIC parameters for injected input must be estimated for the entire simulated time series, since the non-stationarity of stimulation time series leads to considerable fluctuations of firing rates. Therefore, we developed a local greedy search algorithm for fast FIC parameter estimation based on the algorithm in Deco et al. (2014). To exert FIC, local inhibitory synaptic strength is iteratively adjusted until all excitatory populations attained a firing rate close to the desired mean firing rates for the entire ~20 min of activity. During each iteration, the algorithm performs a simulation of the entire time series. Then, it computes the mean firing activity over the entire time series for each excitatory population and adapts Ji values accordingly, that is, it increases local Ji values if the average firing rate over all excitatory populations during the k-th iteration r̂k is larger than 3.06 Hz and vice versa. In order to reduce the number of iterations the value by which Ji is changed is, in contrast to the algorithm by Deco et al. (2014), dynamically adapted in dependence of the firing rate obtained during the current iteration(7)Jik+1=Jik+(r^k−3.06)τkwhere Jik denotes the value of feedback inhibition strength of node i and τk denotes the adaptive tuning factor during the k-th iteration. In the first iteration, all Ji values are initialized with one and τk is initialized with 0.005. The adaptive tuning factor is dynamically changed during each iteration based on the result of the previous iteration:(8)τk+1=(∑i(Jik−1−Jk))/(r^k−1−r^k).
 
-For the case that the result did not improve during the current iteration, that is,(9)|r^−3.06|≥|r^k−1−3.06|,the adaptive tuning factor is decreased by multiplying it with 0.5 and the algorithm continues with the next iteration. After 12 iterations, all Ji values are set to the values they had during the iteration k where |r̂k – 3.06| was minimal.
+<table>
+  <thead>
+    <tr>
+      <th>G</th>
+      <th>wBG(I)</th>
+      <th>wBG(I)/wBG(E)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.12</td>
+      <td>0.13</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>0.1</td>
+      <td>0.03</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>0.14</td>
+      <td>0.08</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>0.09</td>
+      <td>0.03</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>0.13</td>
+      <td>0.15</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>0.44</td>
+      <td>0.03</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>0.15</td>
+      <td>0.05</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>0.09</td>
+      <td>0.12</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>0.48</td>
+      <td>0.04</td>
+      <td>125</td>
+    </tr>
+    <tr>
+      <td>0.2</td>
+      <td>0.15</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>0.11</td>
+      <td>0.12</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>0.12</td>
+      <td>0.02</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>0.25</td>
+      <td>0.04</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>0.44</td>
+      <td>0.07</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>0.09</td>
+      <td>0.04</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
 
-## MRI preprocessing
+### Feedback inhibition control
+
+The excitatory populations of isolated nodes of the original model described in Deco et al. (2014) have an average firing rate of 3.06 Hz. That is, without long-range coupling $G\sum_{j}C_{ij}S_{j}^{(E)}$ and without injected activity $w_{BG}^{(E)}I_{BG}$ and $w_{BG}^{(I)}I_{BG}$ (cf. Equations 1 and 2), the used excitatory populations have an average firing rate of 3.06 Hz. This value conforms to the empirically measured Poisson-like cortical in vivo activity of ~3 Hz (Softky and Koch, 1993; Wilson et al., 1994) and results from the dynamic mean field approximation of the average ensemble behaviour of a large-scale spiking neuron model used in Deco et al. (2014). In contrast to isolated nodes, the firing rate of coupled nodes change in dependence of the employed structural connectivity matrix and the injected input. To compensate for a resulting excess or lack of excitation, a local regulation mechanism, called feedback inhibition control (FIC), was used. The approach was previously successfully used to significantly improve FC prediction as well as for increasing the dynamical repertoire of evoked activity and the accuracy of external stimulus encoding (Deco et al., 2014). Despite the mentioned advantages of FIC tuning, it has the disadvantage of increasing the number of open parameters of the model. To prove that prediction quality is not due to FIC, but solely due to the three global parameters and to exclude concerns about over-parameterization or that FIC may be a potentially necessary condition for the emergence of scale-freeness, we devised a control model that did not implement FIC, but used a single global parameter for inhibitory coupling strength. Instead of tuning the 68 individual local coupling weights individually, only a single global value for all inhibitory coupling weights Ji was varied. We compared the effect of FIC on time series prediction quality and found no significant difference in prediction quality to simulations that used only a single value for all local coupling weights Ji per subject (one-tailed Wilcoxon rank sum test, p=0.36, z = −0.37, Cliffs’s delta d = −0.15). In contrast to simulations that are driven by noise (Deco et al., 2014), FIC parameters for injected input must be estimated for the entire simulated time series, since the non-stationarity of stimulation time series leads to considerable fluctuations of firing rates. Therefore, we developed a local greedy search algorithm for fast FIC parameter estimation based on the algorithm in Deco et al. (2014). To exert FIC, local inhibitory synaptic strength is iteratively adjusted until all excitatory populations attained a firing rate close to the desired mean firing rates for the entire ~20 min of activity. During each iteration, the algorithm performs a simulation of the entire time series. Then, it computes the mean firing activity over the entire time series for each excitatory population and adapts Ji values accordingly, that is, it increases local Ji values if the average firing rate over all excitatory populations during the k-th iteration r̂k is larger than 3.06 Hz and vice versa. In order to reduce the number of iterations the value by which Ji is changed is, in contrast to the algorithm by Deco et al. (2014), dynamically adapted in dependence of the firing rate obtained during the current iteration
+
+$$
+J_{i}^{k+1}=J_{i}^{k}+(r^_{k}−3.06)\tau_{k}
+$$
+
+where Jik denotes the value of feedback inhibition strength of node i and τk denotes the adaptive tuning factor during the k-th iteration. In the first iteration, all Ji values are initialized with one and τk is initialized with 0.005. The adaptive tuning factor is dynamically changed during each iteration based on the result of the previous iteration:
+
+$$
+\tau_{k+1}=(\sum_{i}(J_{i}^{k−1}−J^{k}))/(r^^{k−1}−r^^{k}).
+$$
+
+For the case that the result did not improve during the current iteration, that is,
+
+$$
+|r^−3.06|\geq|r^^{k−1}−3.06|,
+$$
+
+the adaptive tuning factor is decreased by multiplying it with 0.5 and the algorithm continues with the next iteration. After 12 iterations, all Ji values are set to the values they had during the iteration k where |r̂k – 3.06| was minimal.
+
+### MRI preprocessing
 
 Structural and functional connectomes from 15 healthy human subjects (age range: 18–31 years, eight female) were extracted from full data sets (diffusion-weighted MRI, T1-weighted MRI, EEG-fMRI) using a local installation of a pipeline for automatic processing of functional and diffusion-weighted MRI data (Schirner et al., 2015). From a local database of 49 subjects (age range 18–80 years, 30 female) that was acquired for a previous study (Schirner et al., 2015), we selected the 15 youngest subjects that fulfilled highest EEG quality standards after applying MR artefact correction routines. EEG quality was assessed by standards that were defined prior to the experimental design and that are routinely used in the field (Becker et al., 2011; Freyer et al., 2009b; Ritter et al., 2010; Ritter et al., 2007): occurrence of spikes in frequencies > 20 Hz in power spectral densities, excessive head motion and cardio-ballistic artefacts. Research was performed in compliance with the Code of Ethics of the World Medical Association (Declaration of Helsinki). Written informed consent was provided by all subjects with an understanding of the study prior to data collection, and was approved by the local ethics committee in accordance with the institutional guidelines at Charité Hospital Berlin. Subjects with a self-reported history of neurological, cognitive, or psychiatric conditions were excluded from the experiment. Structural (T1-weighted high-resolution three-dimensional MP-RAGE sequence; TR = 1,900 ms, TE = 2.52 ms, TI = 900 ms, flip angle = 9°, field of view (FOV) = 256 mm x 256 mm x 192 mm, 256 × 256 × 192 Matrix, 1.0 mm isotropic voxel resolution), diffusion-weighted (T2-weighted sequence; TR = 7500 ms, TE = 86 ms, FOV = 192 mm x 192 mm, 96 × 96 Matrix, 61 slices, 2.3 mm isotropic voxel resolution, 64 diffusion directions), and fMRI data (two-dimensional T2-weighted gradient echo planar imaging blood oxygen level-dependent contrast sequence; TR = 1,940 ms, TE = 30 ms, flip angle = 78°, FOV = 192 mm x 192 mm, 3 mm x 3 mm voxel resolution, 3 mm slice thickness, 64 × 64 matrix, 33 slices, 0.51 ms echo spacing, 668 TRs, 7 initial images were acquired and discarded to allow magnetization to reach equilibrium; eyes-closed resting-state) were acquired on a 12-channel Siemens 3 Tesla Trio MRI scanner at the Berlin Center for Advanced Neuroimaging, Berlin, Germany. Extracted structural connectivity matrices intend to give an aggregated representation of the strengths of interaction between regions as mediated by white matter fiber tracts. As in the original model by Deco et al. (2014), conduction delays were neglected in this study as they were non-essential for the described features. Strength matrices Cij were divided by their respective maximum value for normalization. In short, the pipeline proceeds as follows: for each subject a three-dimensional high-resolution T1-weighted image image was used to divide cortical gray matter into 68 regions according to the Desikan-Killiany atlas using FreeSurfer’s (Fischl, 2012) automatic anatomical segmentation and registered to diffusion data. The gyral-based brain parcellation is generated by an automated probabilistic labeling algorithm that has been shown to achieve a high level of anatomical accuracy for identification of regions while accounting for a wide range of inter-subject anatomical variability (Desikan et al., 2006). The atlas was successfully used in previous modelling studies and provided highly significant structure-function relationships (Honey et al., 2009; Ritter et al., 2013; Schirner et al., 2015). Details on diffusion-weighted and fMRI preprocessing can be found in Schirner et al. (Schirner et al., 2015) Briefly, probabilistic white matter tractography and track aggregation between each region-pair was performed as implemented in the automatic pipeline and the implemented distinct connection metric extracted. This metric weights the raw track count between two regions according to the minimum of the gray matter/white matter interface areas of both regions used to connect these regions in distinction to other metrics that use the unweighted raw track count, which was shown to be biased by subject-specific anatomical features (see Schirner et al. (2015) for a discussion). After preprocessing, the cortical parcellation mask was registered to fMRI resting-state data of subjects and average fMRI signals for each region were extracted. The first five images of each scanning run were discarded to allow the MRI signal to reach steady state. To identify RSN activity a spatial Group ICA decomposition was performed for the fMRI data of all subjects using FSL MELODIC (Beckmann and Smith, 2004) (MELODIC v4.0; FMRIB Oxford University, UK) with the following parameters: high pass filter cut off: 100 s, MCFLIRT motion correction, BET brain extraction, spatial smoothing 5 mm FWHM, normalization to MNI152, temporal concatenation, dimensionality restriction to 30 output components. ICs that correspond to RSNs were automatically identified by spatial correlation with the 9 out of the 10 well-matched pairs of networks of the 29,671-subject BrainMap activation database as described in Smith et al. (2009) (excluding the cerebellum network). All image processing were performed in the native subject space of the different modalities and the brain atlas was transformed from T1-space of the subject into the respective spaces of the different modalities.
 
-## EEG preprocessing
+### EEG preprocessing
 
 Details of EEG preprocessing are described in supplementary material of Schirner et al. (Schirner et al., 2015). First, to account for slow drifts in EEG channels and to improve template construction during subsequent MR imaging acquisition artefact (IAA) correction all channels were high-pass filtered at 1.0 Hz (standard FIR filter). IAA correction was performed using Analyser 2.0 (v2.0.2.5859, Brain Products, Gilching, Germany). The onset of each MRI scan interval was detected using a gradient trigger level of 300 µV/ms. Incorrectly detected markers, for example due to shimming events or heavy movement, were manually rejected. To assure the correct detection of the resulting scan start markers each inter-scan interval was controlled for its precise length of 1940 ms (TR). For each channel, a template of the IAA was computed using a sliding average approach (window length: 11 intervals) and subsequently subtracted from each scan interval. For further processing, the data were down sampled to 200 Hz, imported to EEGLAB and low-pass filtered at 60 Hz. ECG traces were used to detect and mark each instance of the QRS complex in order to identify ballistocardiogram (BCG) artefacts. The reasonable position and spacing of those ECG markers was controlled by visual inspection and corrected if necessary. To correct for BCG and artefacts induced by muscle activity, especially movement of the eyes, a temporal ICA was computed using the extended Infomax algorithm as implemented in EEGLAB. To identify independent components (ICs) that contain BCG artefacts the topography plot, activation time series, power spectra and heartbeat triggered average potentials of the resulting ICs were used as indication. Based on established characteristics, all components representing the BCG were identified and rejected, that is, the components were excluded from back-projection. The remaining artificial, non-BCG components, accounting for primarily movement events especially eye movement, were identified by their localization, activation, power spectral properties and ERPs. Detailed descriptions of EEG and fMRI preprocessing have been published elsewhere (Becker et al., 2011; Freyer et al., 2009a; Ritter et al., 2010; Ritter et al., 2007).
 
-## Biologically based model input
+### Biologically based model input
 
 EEG source imaging was performed with the freely available MATLAB toolbox Brainstorm using default settings and standard procedure for resting-state EEG data as described in the software documentation (Tadel et al., 2011). Source space models were based on the individual cortical mesh triangulations as extracted by FreeSurfer from each subject’s T1-weighted MRI data and downsampled by Brainstorm. From the same MRI data, head surface triangulations were computed by Brainstorm. Standard positions of the used EEG caps (Easy-cap; 64 channels, MR compatible) were aligned by the fiducial points used in Brainstorm and projected onto the nearest point of the head surface. Forward models are based on Boundary Element Method head models computed using the open-source software OpenMEEG and 15002 perpendicular dipole generator models located at the vertices of the cortical surface triangulation. The sLORETA inverse solution was used to estimate the distributed neuronal current density underlying the measured sensor data since it has zero localization error (Pascual-Marqui, 2002). EEG data were low-pass filtered at 30 Hz and imported into Brainstorm. There, the epochs before the first and after the last fMRI scan were discarded and the EEG signal was time-locked to fMRI scan start markers. Using brainstorm routines, EEG data were projected onto the cortical surface using the obtained inversion kernel and averaged according to the Desikan-Killiany parcellation that was also used for the extraction of structural and functional connectomes and region-averaged fMRI signals. The resulting 68 region-wise source time series were imported to MATLAB, z-score normalized and upsampled to 1000 Hz using spline interpolation as implemented by the Octave function interp1. To enable efficient simulations, the sampling rate of the injected activity was ten times lower than model sampling rate. Hence, during simulation identical values have been injected during each sequence of 10 integration steps.
 
-## Simulation and analysis
+### Simulation and analysis
 
 Simulations were performed with a highly optimized C implementation of the previously described model on the JURECA supercomputer at the Juelich Supercomputing Center. Simulation and analyses code and used data is open source and available from online repositories (Schirner et al., 2017a, see ‘Data and code availability’). An exhaustive brute-force parameter space scan using 3888 combinations of the parameters G and ωBG(E,I) was performed for each subject. Each of these combinations was computed 12 times to iteratively tune Ji values. As control setup, further simulations were performed with random permutations of the input time series. Therefore, the individual time points of each source activity time series were randomly permuted (individually for each region and subject) using the Octave function randperm() and injected into simulations using all parameter combinations that were previously used. As an additional control situation the original dynamic mean field model as described in Deco et al. (2014) was simulated for the 15 SCs. Here, the parameters G and JNMDA were varied and FIC tuning was performed using the same algorithm as used for the source activity injection model. The simulation and FIC optimization process was identical for all three models. The length of the simulated time series for each subject was 21.6 min. Simulations were performed at a model sampling rate of 10,000 Hz. BOLD time series were computed for every 10th time step of excitatory synaptic gating activity using the Balloon-Windkessel model (Friston et al., 2003). Since the Balloon-Windkessel model acts like a low-pass filter that attenuates frequencies above ~0.15 Hz (Robinson et al., 2006), additional low-pass filtering was unnecessary for downsampling of simulated fMRI time series. Hence, from the resulting time series every 1940th step was stored in order to obtain a sampling rate of simulated fMRI that conforms to the empirical fMRI TR of 1.94 s. The first 11 scans (21.34 s) of activity were discarded to allow model activity and simulated fMRI signal to stabilize. For each subject and modelling approach the simulation result that yielded the highest average correlation between all 68 empirical and simulated region time series for all tested parameters was used for all analyses. To ensure region-specificity of simulation results only corresponding simulated and empirical region time series were correlated in the case of raw fMRI, respectively, for resting-state networks only simulated regions that overlap with the spatial activation pattern of the respective network were used for estimating prediction quality. Specifically, for RSN analysis, only those regions were compared with the temporal modes of RSNs that had a spatial overlap of at least 40% of all voxels belonging to the respective region. To assess time-varying prediction quality, a correlation analysis was performed in which a window with a length of 100 scans (194 s) was slid over the 68 pairs of empirical and simulated time series and the average correlation over all 68 regions was computed for each window. For the estimation of signal correlation, the computation of entries of FC matrices and as a measure of similarity of FC matrices Pearson’s linear correlation coefficient was used. FC matrices were compared by stacking all elements below the main diagonal into vectors and computing the correlation coefficient of these vectors. Short-epoch FC prediction quality was estimated by computing the mean correlation obtained for all window-wise correlations of a sliding window analysis of empirical and simulated time series (window-size: 100 scans = 194 s).
 
@@ -159,10 +421,10 @@ In order to adequately determine the existence of scale invariance we applied ri
 
 To compute grand average waveforms, state-variables were averaged over all 15 subjects and 68 regions (N = 1020 region time series) time-locked to the zero crossing of the α-amplitude, which was obtained by band-pass filtering source activity time series between 8 and 12 Hz; to obtain sharp average waveforms, all α-cycle epochs with a cycle length between 95 and 105 ms were used (N = 4,137,994 α-cycle). For computing ongoing α-power time courses, instantaneous power time series were computed by taking the absolute value of the analytical signal (obtained by the Hilbert transform) of band-pass filtered source activity in the 8–10 Hz frequency range; the first and last ~50 s were discarded to control for edge effects. To compute the α-regressor, power time series were convolved with the canonical hemodynamic response function, downsampled to fMRI sampling rate and shifted relative to fMRI time series to account for the lag of hemodynamic response. The highest negative average correlation over all 68 region-pairs obtained within a range of ±3 scans shift was used for comparison with simulation results.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed using MATLAB (The MathWorks, Inc., Natick, Massachusetts, United States). Data are represented as box-and-whisker plots. As normality was not achieved for the majority of data sets (assessed by Lilliefors test at significance level of 0.05), differences between groups were compared by non-parametric statistical tests, using either two-tailed Wilcoxon rank sum test or, in case of directional prediction, one-tailed Wilcoxon rank sum test; a value p<0.05 was considered significant.
 
-## Data and code availability
+### Data and code availability
 
 Brain network models are implemented in the open source neuroinformatics platform The Virtual Brain (Ritter et al., 2013; Sanz-Leon et al., 2015, Sanz Leon et al., 2013) that can be downloaded from thevirtualbrain.org. Code and data that support the findings of this study can be obtained from https://github.com/BrainModes/The-Hybrid-Virtual-Brain (Schirner et al., 2017b; copy archived at https://github.com/elifesciences-publications/The-Hybrid-Virtual-Brain) and https://osf.io/mndt8/ (Schirner et al., 2017a).

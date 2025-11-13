@@ -14,22 +14,22 @@
 
 ### Affiliations
 
-1. https://ror.org/0190ak572 Department of Anthropology, New York University New York United States
-2. https://ror.org/03yghzc09 Department of Psychology, University of Exeter Exeter United Kingdom
-3. https://ror.org/03efmqc40 School of Life Sciences, Center for Evolution and Medicine, School of Human Evolution and Social Change, and the ASU-Banner Neurodegenerative Disease Research Center, Arizona State University Tempe United States
-4. https://ror.org/012bxv356 Biopsychological Laboratory, University of Mysore Mysuru India
-5. https://ror.org/01rb75107 National Institute for Advanced Studies Bengaluru India
-6. https://ror.org/02e22ra24 Ashoka Trust for Research in Ecology and the Environment Bengaluru India
-7. https://ror.org/0038zp908 Institute of Genetics and Animal Biotechnology, Polish Academy of Sciences Garbatka Poland
-8. https://ror.org/028wp3y58 Department of Biology, Chulalongkorn University Bangkok Thailand
-9. https://ror.org/028wp3y58 National Primate Research Center of Thailand, Chulalongkorn University Saraburi Thailand
-10. https://ror.org/02frt9q65 Key Laboratory of Ecology of Rare and Endangered Species and Environmental Protection, Guangxi Normal University Guilin China
+1. Department of Anthropology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+2. Department of Psychology, University of Exeter Exeter United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))
+3. School of Life Sciences, Center for Evolution and Medicine, School of Human Evolution and Social Change, and the ASU-Banner Neurodegenerative Disease Research Center, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
+4. Biopsychological Laboratory, University of Mysore Mysuru India ([ROR:012bxv356](https://ror.org/012bxv356))
+5. National Institute for Advanced Studies Bengaluru India ([ROR:01rb75107](https://ror.org/01rb75107))
+6. Ashoka Trust for Research in Ecology and the Environment Bengaluru India ([ROR:02e22ra24](https://ror.org/02e22ra24))
+7. Institute of Genetics and Animal Biotechnology, Polish Academy of Sciences Garbatka Poland ([ROR:0038zp908](https://ror.org/0038zp908))
+8. Department of Biology, Chulalongkorn University Bangkok Thailand ([ROR:028wp3y58](https://ror.org/028wp3y58))
+9. National Primate Research Center of Thailand, Chulalongkorn University Saraburi Thailand ([ROR:028wp3y58](https://ror.org/028wp3y58))
+10. Key Laboratory of Ecology of Rare and Endangered Species and Environmental Protection, Guangxi Normal University Guilin China ([ROR:02frt9q65](https://ror.org/02frt9q65))
 
 † Corresponding author
 
 ## Abstract
 
-Of all the non-human primate species studied by researchers, the rhesus macaque ( Macaca mulatta ) is likely the most widely used across biological disciplines. Rhesus macaques have thrived during the Anthropocene and now have the largest natural range of any non-human primate. They are highly social, exhibit marked genetic diversity, and display remarkable niche flexibility (which allows them to live in a range of habitats and survive on a variety of diets). These characteristics mean that rhesus macaques are well-suited for understanding the links between sociality, health and fitness, and also for investigating intra-specific variation, adaptation and other topics in evolutionary ecology.
+Of all the non-human primate species studied by researchers, the rhesus macaque (Macaca mulatta) is likely the most widely used across biological disciplines. Rhesus macaques have thrived during the Anthropocene and now have the largest natural range of any non-human primate. They are highly social, exhibit marked genetic diversity, and display remarkable niche flexibility (which allows them to live in a range of habitats and survive on a variety of diets). These characteristics mean that rhesus macaques are well-suited for understanding the links between sociality, health and fitness, and also for investigating intra-specific variation, adaptation and other topics in evolutionary ecology.
 
 ## Introduction
 
@@ -45,7 +45,7 @@ Rhesus macaques are Asian monkeys, sharing a common ancestor with humans roughly
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/78169/elife-78169-fig1-v3.jpg)
 
-**Figure 1.:** Macaca) species based on molecular data.The Macaca genus diverged from other members of the primate tribe Papionini approximately 7 million years ago. The position of the rhesus macaque (Macaca mulatta) is highlighted by the red box. Phylogeny constructed using TimeTree (Kumar et al., 2017).
+**Figure 1.:** The Macaca genus diverged from other members of the primate tribe Papionini approximately 7 million years ago. The position of the rhesus macaque (Macaca mulatta) is highlighted by the red box. Phylogeny constructed using TimeTree (Kumar et al., 2017).
 
 The phylogenetic history of the macaque genus has been notoriously difficult to ascertain given the rapid diversification and significant introgression between macaque species (Liedigk et al., 2014; Fan et al., 2018; Roos et al., 2019; Osada et al., 2021). For example, based on mitochondrial DNA sequences, Chinese rhesus macaques appear more similar to Taiwanese macaques (Macaca cyclopis) and Japanese macaques (Macaca fuscata) than to Indian rhesus macaques, contradicting the taxonomic classification of the rhesus macaque species (Roos et al., 2019). However, based on the most complete nuclear genomic data currently available, a phylogeny of rhesus macaques and six of their most closely related sister species indicates that Indian and Chinese rhesus macaques are most closely related to one another, followed by Taiwanese macaques (Macaca cyclopis) and Japanese macaques (Macaca fuscata; Figure 1, Osada et al., 2021).
 
@@ -57,7 +57,7 @@ Rhesus macaques, a relatively new species with many closely-related competitors,
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/78169/elife-78169-fig2-v3.jpg)
 
-**Figure 2.:** Macaca mulatta) and 9 other extant sister species in the Macaca genus.The 10 species shown in different colors represent a complete monophyletic group, with the exception of Macaca leucogenys, which is missing because its complete range information is not yet known with high confidence. Rhesus macaques (blue shaded area) have the largest natural range of any non-human primate, which stretches from Afghanistan in the west, through Pakistan, India, Nepal, Bangladesh, Bhutan, Myanmar, Thailand, Laos, Vietnam, and across a large swathe of China in the east. Figure based on ICUN Red List species range estimates.
+**Figure 2.:** The 10 species shown in different colors represent a complete monophyletic group, with the exception of Macaca leucogenys, which is missing because its complete range information is not yet known with high confidence. Rhesus macaques (blue shaded area) have the largest natural range of any non-human primate, which stretches from Afghanistan in the west, through Pakistan, India, Nepal, Bangladesh, Bhutan, Myanmar, Thailand, Laos, Vietnam, and across a large swathe of China in the east. Figure based on ICUN Red List species range estimates.
 
 ## Intra-specific diversity and variation
 

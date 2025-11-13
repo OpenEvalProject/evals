@@ -32,39 +32,59 @@ Recently, preclinical investigation has demonstrated the prelimbic (PrL) cortex
 
 ## Results
 
-## Targeting mPFC → PAG neurons in the PrL cortex
+### Targeting mPFC → PAG neurons in the PrL cortex
 
 To make selective manipulations of mPFC neurons that project to the PAG, we expressed the excitatory light- activated ion channel, channelrhodopsin-2 (ChR2), and the inhibitory ligand gated G protein–coupled receptor, hM4Di, in mPFC pyramidal neurons using an intersectional and Cre-dependent approach (Figure 1A). This approach led to the expression of hM4Di-mCherry and/or Chr2-YFP on average in 248±71 mPFC pyramidal neurons (n=3 rats) that were located in layer 5/6 (Figure 1B and C). Colocalisation of hM4Di-mCherry and Chr2-EYFP was found in 76.1±3.3% of labelled neurons with 23.9±3.3% expressing hM4Di only and no cells that expressed ChR2-EYFP alone. The majority of labelled neurons were found in the PrL cortex (PrL vs medial orbital 72±1.5% vs 10.8±4.6%; Figure 1D and E). Successful targeting of the PrL-P neurons was confirmed by the presence of hM4Di-mCherry and Chr2-EYFP labelled fibres within the ventrolateral (vl)PAG (Figure 1F). In control animals, in which no CAV–CMV–CRE was delivered to the vlPAG, there was negligible expression of actuator protein in the mPFC after delivery of Cre-dependent AAV vectors (Figure 1—figure supplement 1).
 
-## PrL-P neurons bidirectionally regulate nociception in naive rats
+![Figure 1.](https://cdn.elifesciences.org/articles/65156/elife-65156-fig1-v2.jpg)
+
+**Figure 1.:** (A) Intersectional viral vector strategy. We used a retrograde canine adenovirus and Cre-dependent adeno-associated viral vectors to express genetically encoded actuators (both channelrhodopsin-2 [ChR2] and hMD4i) within medial prefrontal cortex (mPFC) neurons that project to the periaqueductal grey (PAG). (B) Photomicrograph of mPFC showing labelled neurons residing mainly in the PrL cortex. (C) PrL cortex with colocalisation of mCherry (hM4Di) and EYFP (ChR2) in neurons projecting to PAG (many examples but several marked with white arrows). (D) Conjunction plot illustrating location of mPFC→PAG neurons throughout the mPFC (n=3 rats). Darker shading indicates positional overlap of positively labelled (hM4Di) neurons from more than one animal (light=1 animal, mid=2, and dark=3). Dotted red line demarks the PrL cortex. (E) Comparative distribution of mPFC→PAG neurons throughout the cortex (mean ± SEM). (F) Photomicrograph showing ChR2-EYFP and hM4Di-mCherry containing fibres from mPFC projecting to the ventrolateral region of PAG (many examples but several marked with white arrows).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65156/elife-65156-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Photomicrograph of medial prefrontal cortex showing negligible expression of ChR2-EYFP (A) or hM4Di-mCherry (B) in PrL.Control rats.
+
+### PrL-P neurons bidirectionally regulate nociception in naive rats
 
 To determine the effect of PrL-P neurons on noxious withdrawal threshold in healthy animals, ChR2/hM4Di-expressing (NaivePrL-P.ChR2:hM4Di) and control (NaivePrL-P.Control) rats underwent Hargreaves’ testing with opto-activation or chemo-inhibition of PrL-P neurons (Figure 2A–F). Opto-activation of PrL-P neurons (10–15 mW, 20 Hz, 10 ms pulse) in NaivePrL-P.ChR2-hM4Di rats produced a significant increase in thermal withdrawal latencies ipsilateral, but not contralateral, to the transfected PrL-P pathway (baseline vs PrL-P opto-activation=7.5±0.4 vs 10.4±0.9 s, p=0.008, paired t-test, n=10; ; Figure 2B and C). The equivalent illumination paradigm in NaivePrL-P.Control rats did not alter ipsilateral or contralateral withdrawal latencies (Figure 2B, C and D). Conversely, chemo-inhibition (2.5 mg·kg−1 CNO i.p.) of PrL-P neurons in the same NaivePrL-P.ChR2-hM4Di rats that received opto-activation significantly decreased the average withdrawal ipsilateral, but not contralateral, to the transfected PrL-P pathway. (Baseline vs chemo-inhibition of PrL-P=10.3±0.6 vs 8.3±0.6s, p=0.006, paired t-test, n=15; Figure 2E and F.) CNO had no significant effect on withdrawal thresholds in NaivePrL-P.ChR2-hM4Di rats (Figure 2E and F). These findings demonstrate that there is a tonic level of activity within the PrL-P pathway that dynamically regulates nociception in the absence of any process of sensitization.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/65156/elife-65156-fig2-v2.jpg)
 
-**Figure 2.:** (A) Experimental timeline. (B) Illumination of PrL (445 nm, 20 Hz, 10–15 mW, 10 ms pulse, concomitant with hind-paw heating) in NaivePrL.ChR2:hM4Di rats increased thermal withdrawal latencies of the ipsilateral hindpaw but not in NaivePrL.Control rats that did not express channelrhodopsin-2 (ChR2; paired t-test, t(9)=3.37, p=0.008, n=10 for ChR2:hM4Di group; t(6)=0.63, p=0.55, n=7 for control group). (C) Equivalent illumination of PrL had no effect on the thermal withdrawal latency of the contralateral hindpaw in either NaivePrL.ChR2:hM4Di or NaivePrL.Control rats (paired t-test, t(9)=0.86, p=0.40, n=10 for NaivePrL.ChR2:hM4Di rats; t(6)=0.14, p=0.90, n=7 for NaivePrL.Control rats). (D) Optic fibre tip locations in the medial prefrontal cortex from NaivePrL.ChR2:hM4Di (●) and NaivePrL.Control (○) rats. For simplicity, fibre placements are depicted in a single hemisphere. (E) Systemic CNO (2.5 mg·kg−1 i.p.) in NaivePrL.ChR2:hM4Di rats decreased withdrawal latencies (mean value at 20–40 min post-injection) of the ipsilateral paw but not in NaivePrL.Control rats (paired t-test, t(14)=3.26, p=0.006, n=15 for NaivePrL.ChR2:hM4Di rats; t(6)=0.63, p=0.55, n=7 for NaivePrL.Control rats). (F) CNO had no effect on the thermal withdrawal latency of the contralateral hindpaw in either NaivePrL.ChR2:hM4Di rats or NaivePrL.Control rats (paired t-test, t(14)=1.22, p=0.24, n=15 for NaivePrL.ChR2:hM4Di rats; t(6)=0.43 p=0.68, n=7 for NaivePrL.Control rats).Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Experimental timeline. (B) Illumination of PrL (445 nm, 20 Hz, 10–15 mW, 10 ms pulse, concomitant with hind-paw heating) in NaivePrL.ChR2:hM4Di rats increased thermal withdrawal latencies of the ipsilateral hindpaw but not in NaivePrL.Control rats that did not express channelrhodopsin-2 (ChR2; paired t-test, t(9)=3.37, p=0.008, n=10 for ChR2:hM4Di group; t(6)=0.63, p=0.55, n=7 for control group). (C) Equivalent illumination of PrL had no effect on the thermal withdrawal latency of the contralateral hindpaw in either NaivePrL.ChR2:hM4Di or NaivePrL.Control rats (paired t-test, t(9)=0.86, p=0.40, n=10 for NaivePrL.ChR2:hM4Di rats; t(6)=0.14, p=0.90, n=7 for NaivePrL.Control rats). (D) Optic fibre tip locations in the medial prefrontal cortex from NaivePrL.ChR2:hM4Di (●) and NaivePrL.Control (○) rats. For simplicity, fibre placements are depicted in a single hemisphere. (E) Systemic CNO (2.5 mg·kg−1 i.p.) in NaivePrL.ChR2:hM4Di rats decreased withdrawal latencies (mean value at 20–40 min post-injection) of the ipsilateral paw but not in NaivePrL.Control rats (paired t-test, t(14)=3.26, p=0.006, n=15 for NaivePrL.ChR2:hM4Di rats; t(6)=0.63, p=0.55, n=7 for NaivePrL.Control rats). (F) CNO had no effect on the thermal withdrawal latency of the contralateral hindpaw in either NaivePrL.ChR2:hM4Di rats or NaivePrL.Control rats (paired t-test, t(14)=1.22, p=0.24, n=15 for NaivePrL.ChR2:hM4Di rats; t(6)=0.43 p=0.68, n=7 for NaivePrL.Control rats).
 
-## Tonic activity in PrL-P neurons delays the development of neuropathic hypersensitivity
+### Tonic activity in PrL-P neurons delays the development of neuropathic hypersensitivity
 
 The tibial nerve transection (TNT) model of neuropathic pain was used to assess the contribution of PrL-P neurons to the development of sensitisation (Figure 3A–D). TNTPrL-P.ChR2-hM4Di and TNTPrL-P.Control rats had nociceptive sensory testing before and after CNO (2.5 mg·kg−1 i.p., Figure 3C) longitudinally up to 42 days post-nerve injury (Figure 3—figure supplement 1). Chemo-inhibition of PrL-P neurons unmasked mechanical and cold hypersensitivity in TNT PrL-P.ChR2-h M4Di rats, for the ipsilateral, nerve-injured, hindpaw at day 3 post-nerve injury (Figure 3E and I). The mechanical withdrawal threshold (von Frey [vF]) was reduced on average by 80% on day 3 post-TNT, from 6.0±1.3 g (pre-CNO) to 1.2±0.5 g (post-CNO) (two-way ANOVA, CNO F(1,30)=20.09, p=0.0001; Sidak’s post-test day 3 pre-CNO vs post-CNO, p=0.008, n=16; Figure 3E). Similarly, the number of cold-evoked nocicifensive behaviours (foot flicking, biting, and grooming) was significantly increased ipsilaterally by PrL-P chemo-inhibition at day 3 post-TNT from 2.8±0.5 to 5.8±0.7 events (two-way ANOVA, CNO F(1,30)=9.6, p=0.004; Sidak’s post-test day 3 pre-CNO vs post-CNO, p=0.003, n=16; Figure 3I). At 7 days post-nerve injury, PrL-P chemo-inhibition also significantly decreased the ipsilateral mechanical withdrawal threshold from 2.5±0.5 to 0.30±0.06 g (two-way ANOVA, CNO F(1,30)=20.09, p=0.0001; Sidak’s post-test p=0.001, n = 16; Figure 3E). For the contralateral (uninjured) paw, PrL-P chemo-inhibition significantly reduced mechanical withdrawal thresholds at day 3 post-TNT from 13.5±0.7 to 9.0±1.4 g (two-way ANOVA, CNO F(1,30)=5.77, p=0.02; Sidak’s post-test day 3 pre-CNO vs post-CNO, p=0.03, n=16) but not thereafter (Figure 3F). From 14 days post-nerve injury and up to 42 days, PrL-P chemo-inhibition ceased to significantly change either mechanical or cold-evoked nocifensive behaviour on the ipsilateral hindpaw (Figure 3E and I, Figure 3—figure supplement 1). In TNTPrL-P.Control rats, CNO failed to significantly change either mechanical withdrawal thresholds or cold (acetone)-evoked nocicfensive behaviour on either the ipsilateral or contralateral paw at any timepoint post-TNT (Figure 3G,H,I, and K). Additonally, an equivalent vehicle injection delivered at 7 days post-nerve injury did not affect pain-like behaviour in TNTPrL-P.ChR2-hM4Di rats (Figure 3—figure supplement 2) These results suggest that PrL-P neurons provide a tonic descending drive to oppose peripheral sensitisation during the early stages of the development of neuropathic pain, but this effect is lost as sensitisation becomes established after 14 days.
 
-## Chemogenetic inhibition of PrL-P neuronal activity is aversive in TNT rats with latent sensitisation
+![Figure 3.](https://cdn.elifesciences.org/articles/65156/elife-65156-fig3-v2.jpg)
+
+**Figure 3.:** (A) Experimental timeline. (B) Tibial nerve transection (TNT) was used to produce the neuropathic injury. (C)- Sensory testing was conducted at 30 min after systemic delivery of CNO and (D) testing was conducted on the lateral plantar surface of the hindpaw in a receptive field adjacent to injured tibial nerve. (E) In TNTPrL.ChR2:hM4Di rats, CNO (2.5 mg·kg−1 i.p.) reduced the mechanical withdrawal threshold at 3 and 7 days post nerve injury on the ipsilateral (injured) hindpaw (two-way ANOVA, main effect CNO, F(1,30)=20.09, p=0.0001; timexCNO, F(2, 60)=6.892, p=0.002; Sidak’s post-test day 3, p=0.008; day 7, p=0.001, n = 16) and (F) on the contralateral paw at 3 days post-injury (two-way ANOVA, CNO F(1,30)=5.77, p=0.02; Sidak’s post-test, p=0.02, n = 16). (G and H) In TNTPrL.Control rats, the same dose of CNO did not alter mechanical withdrawal thresholds on either the ipsilateral or contralateral hindpaw (two-way ANOVA, main effect; ipsilateral CNO, F(1,14)=0.02, p=0.90, n=8 and contralateral CNO, F(1,14)=0.15, p=0.71, n=8, respectively). (I and J) In TNTPrL.ChR2:hM4Di rats, CNO increased acetone-evoked nocifensive events at 3 days post-injury on the ipsilateral paw (two-way ANOVA, main effect CNO, F(1,30)=9.6, p=0.004; Sidak’s post-test, p=0.003, n=16) but not contralaterally (two-way ANOVA, main effect CNO, F(1,29)=1.3, p=0.26, n=16). (K and I) In TNTPrL.Control rats, CNO did not alter acetone-evoked nocicfensive behaviour (two-way ANOVA, main effect CNO ipsilateral, F(1,12)=0.02, p=0.89, n=7 and main effect CNO contralateral, F(1,12)=2.2, p=0.16, n=7).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65156/elife-65156-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) In TNTPrL.ChR2:hM4Di rats, systemic delivery of CNO (2.5 mg·kg−1 i.p.) significantly reduced the mechanical withdrawal threshold at 3 and 7 days post-injury on the ipsilateral (injured) hindpaw (mixed model [REML], fixed effects CNO, F(1,28)=7.26, p=0.002; timexCNO, F(5,95)=4.92, p=0.0005; Sidak’s post-test, *p<0.05, n=16). (B) In TNTPrL.ChR2:hM4Di rats, systemic delivery of CNO (2.5 mg·kg−1 i.p.) significantly increased the cold (acetone)-evoked nocicfensive events at 3 days post-injury on the ipsilateral (injured) hindpaw (mixed model [REML], fixed effects CNO, F(1,30)=6.3, p=0.02; timexCNO, F(5,98)=0.6, p=0.70; Sidak’s post-test, ***p=0.0006, n=16).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65156/elife-65156-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Delivery of vehicle (sterile saline with 5% DMSO, i.p.) didnot alter mechanical withdrawal thresholds (paired t-test, t=0.4, n=3) (A) or cold-evoked nocicfensive behaviour (paired t-test, t=0.86, (B) in TNTPrL.ChR2:hM4Di rats [n = 3]).
+
+### Chemogenetic inhibition of PrL-P neuronal activity is aversive in TNT rats with latent sensitisation
 
 Neuropathic sensitisation is associated with negative affect (King et al., 2009; Hirschberg et al., 2017), which raises the possibility that PrL-P neurons act to oppose the development of negative affect. If so, then chemo-inhibition of PrL-P neurons in the early phase after nerve injury would be expected to cause aversion. To test this proposition, TNTPrL-P.ChR2-hM4Di and TNTPrL-P.Control rats had place aversion testing with CNO conditioning between days 2 and 5 post-TNT (Figure 4A). TNTPrL-P.ChR2-hM4Di animals showed an aversion to the CNO paired chamber (post-conditioning–pre-conditioning time=−82.9±24.7 s, n=8; Figure 4B and C). We calculated the preference of each rat for the CNO or vehicle paired chamber and found TNTPrL-P.ChR2-hM4Di animals showed a significantly reduced preference score compared to the vehicle paired chamber (Figure 4C; CNO paired vs vehicle paired=0.8±0.04 vs 1.06±0.06, paired t-test, p=0.04, n = 8). TNTPrL-P.Control animals showed no difference in preference score for CNO and vehicle paired chambers (Figure 4D, CNO paired vs vehicle paired=1.1±0.18 vs 1.00±0.21, paired t-test, p=0.81, n=9). These findings are consistent with PrL-P neuronal activity opposing the development of negative affect in the immediate period after nerve injury.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/65156/elife-65156-fig4-v2.jpg)
 
-**Figure 4.:** (A) Conditioned place aversion protocol. (B) Example heatmap visualisation of the time spent within the testing chambers prior (top) and following conditioning with CNO or vehicle. (C) Group data showing conditioning with CNO in TNTPrL.ChR2:hM4Di rats 2–5 days after tibial nerve transection (TNT) produced place aversion (paired t-test, t(7)=2.43, p=0.04, n=8). (D) CNO administration to TNTPrL.Control rats did not produce place aversion (paired t-test, t(8)=0.25, p=0.81, n=9).Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Conditioned place aversion protocol. (B) Example heatmap visualisation of the time spent within the testing chambers prior (top) and following conditioning with CNO or vehicle. (C) Group data showing conditioning with CNO in TNTPrL.ChR2:hM4Di rats 2–5 days after tibial nerve transection (TNT) produced place aversion (paired t-test, t(7)=2.43, p=0.04, n=8). (D) CNO administration to TNTPrL.Control rats did not produce place aversion (paired t-test, t(8)=0.25, p=0.81, n=9).
 
-## Restoration of PrL-P neuronal tone attenuates allodynia in established neuropathic sensitisation
+### Restoration of PrL-P neuronal tone attenuates allodynia in established neuropathic sensitisation
 
 To test whether the loss of function by PrL-P neurons in later stage neuropathic sensitisation could be reversed, we employed opto-activation of PrL-P neurons to test if it was still able to suppress sensitisation (Figure 5). Opto-activation in TNTPrL-P.ChR2:hM4Di rats (20 Hz, 10 ms, 10–15 mW) produced an increase in the mechanical withdrawal threshold (baseline vs opto-activation vs recovery=1.7±0.5 vs 5.2±1.4 vs 2.1±0.5 g, one-way repeated-measures (RM) ANOVA, p=0.02; Sidak’s post-test baseline vs opto-activation, p=0.01, n=9; Figure 5B). Equivalent illumination in TNTPrL-P.control rats did not change the mechanical withdrawal threshold (baseline vs opto-activation vs recovery=1.4±0.5 vs 1.0±0.4 vs 1.4±0.3, one-way RM ANOVA, p=0.61, n=3; Figure 5B). This data indicates that the PrL-P neurons are still capable of supressing neuropathic sensitization in late-stage TNT rats.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/65156/elife-65156-fig5-v2.jpg)
 
-**Figure 5.:** (A) Experimental timeline. (B) Delivery of blue light (445 nm, 20 Hz, 10–15 mW, 10 ms pulse, concomitant with hind-paw stimulation) produced a significant increase in mechanical withdrawal threshold of the injured (ipsilateral) hind-paw in TNTPrL.ChR2:hM4Di rats (repeated-measures [RM] ANOVA, treatment, F(1.12, 8.96)=8.07, p=0.02; Sidak’s post-test, *p<0.05, n=9) but not in TNTPrL.Controlrats (RM ANOVA, treatment, F(1, 2)=0.35, p=0.61, n=3). (C) Example raw data trace illustrating suppression of von Frey hair evoked spinal dorsal horn neuron activity during blue light (420 nm, 10–15 mW, 10 ms duration, concomitant with hind-paw stimulation) delivery to the PrL in TNTPrL.ChR2:hM4Di rats (arrows demark beginning and end of stimulus). (D) Group data illustrating suppression of 4 g evoked spinal dorsal horn neuronal activity by illumination of the PrL in TNTPrL.ChR2:hM4Di rats (mixed model [REML], fixed effect opto-activation, F[1.99, 13.98]=7.18, p=0.007; Dunnet’s post-test baseline vs opto-activation, p=0.009, n=10). (E) Illumination of the PrL in TNTPrL.ChR2:hM4Di rats also supressed 15 g evoked spinal dorsal horn neuronal activity (mixed model [REML], fixed effect opto-activation, F(1.52, 10.64)=2.94, p=0.10, Dunnet’s post-test baseline vs opto-activation, p=0.046, n=10.) (F) Delivery of blue light to the Prl in TNTPrL.ChR2:hM4Di rats decreased acetone-evoked spinal dorsal horn neuronal activity (paired t-test, t(3)=3.58, p=0.04, n=4).Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Experimental timeline. (B) Delivery of blue light (445 nm, 20 Hz, 10–15 mW, 10 ms pulse, concomitant with hind-paw stimulation) produced a significant increase in mechanical withdrawal threshold of the injured (ipsilateral) hind-paw in TNTPrL.ChR2:hM4Di rats (repeated-measures [RM] ANOVA, treatment, F(1.12, 8.96)=8.07, p=0.02; Sidak’s post-test, *p<0.05, n=9) but not in TNTPrL.Controlrats (RM ANOVA, treatment, F(1, 2)=0.35, p=0.61, n=3). (C) Example raw data trace illustrating suppression of von Frey hair evoked spinal dorsal horn neuron activity during blue light (420 nm, 10–15 mW, 10 ms duration, concomitant with hind-paw stimulation) delivery to the PrL in TNTPrL.ChR2:hM4Di rats (arrows demark beginning and end of stimulus). (D) Group data illustrating suppression of 4 g evoked spinal dorsal horn neuronal activity by illumination of the PrL in TNTPrL.ChR2:hM4Di rats (mixed model [REML], fixed effect opto-activation, F[1.99, 13.98]=7.18, p=0.007; Dunnet’s post-test baseline vs opto-activation, p=0.009, n=10). (E) Illumination of the PrL in TNTPrL.ChR2:hM4Di rats also supressed 15 g evoked spinal dorsal horn neuronal activity (mixed model [REML], fixed effect opto-activation, F(1.52, 10.64)=2.94, p=0.10, Dunnet’s post-test baseline vs opto-activation, p=0.046, n=10.) (F) Delivery of blue light to the Prl in TNTPrL.ChR2:hM4Di rats decreased acetone-evoked spinal dorsal horn neuronal activity (paired t-test, t(3)=3.58, p=0.04, n=4).
 
-## PrL-P produces antinociception in neuropathic pain by inhibition of dorsal horn nociceptive responses
+### PrL-P produces antinociception in neuropathic pain by inhibition of dorsal horn nociceptive responses
 
 To better understand the mechanism by which the PrL-P neurons suppress neuropathic sensitisation, TNTPrL-P.ChR2:hM4Di rats were tested in acute spinal electrophysiology experiments. Opto-activation of PrL-P neurons attenuated the evoked responses of spinal dorsal horn wide dynamic range (WDR) neurons (Figure 5C–F). The number of action potentials evoked by a punctate mechanical stimulus with a 4 and 15 g vF hair was reduced on average by 43 and 23%, respectively (Figure 5D and E; 4 g vF, baseline vs opto-activation vs recovery=25.7±5.0 vs 14.63±3.1 vs 25.0±45.0 action potentials; mixed model [REML], fixed effect treatment, p=0.007; Dunnett’s post-test baseline vs opto-activation, p=0.009, n=9; Figure 5E; 15 g vF, baseline vs opto-activation vs recovery=45.17±6.9 vs 34.5±6.9 vs 43.9±7.8; mixed model [REML], p=0.10, Dunnett’s post-test baseline vs opto-activation, p=0.04, n=9). Similarly, cold-evoked spinal WDR neuron activity was significantly reduced by opto-activation of PrL-P neurons (Figure 5F, average reduction of 47%, baseline vs opto-activation=172.0±38.8 vs 91.7±42.2 action potentials, paired t-test, p=0.04, n=4). This data indicates that the PrL-P neurons are acting to suppress neuropathic sensitisation (punctate and cold allodynia) at a spinal level through the engagement of the DPMS.
 
@@ -90,11 +110,147 @@ In summary, we have identified specific contributions of PrL-P neurons to regula
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>Wistar (rat) male</td>
+      <td>Envigo, NL</td>
+      <td>RCCHan</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Canine adenoviralvector</td>
+      <td>IGMM, FR</td>
+      <td>CAV2-CMV-CRE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Adeno-associatedviral vector</td>
+      <td>UNC Vector Core, USA</td>
+      <td>AAV2-EF1a-DIO- hChR2-EYFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Adeno-associatedviral vector</td>
+      <td>Addgene, USA</td>
+      <td>AAV2-hSyn-DIO- hM4Di-mCherry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Clozepine-N-oxide</td>
+      <td>Tocris Bioscience, UK</td>
+      <td>4936</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Abcam, USA</td>
+      <td>Ab13970</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry (rabbit polyclonal)</td>
+      <td>BioVision</td>
+      <td>5993</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Optic fibre</td>
+      <td>Optogenix, IT</td>
+      <td>Lambda-B</td>
+      <td>NA 0.66, length 4.4 mm, and light-emitting length 2 mm</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Q-probes</td>
+      <td>Neuronexus, USA</td>
+      <td>Q1 × 1-tet-10mm-121-Q4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Headstage chip</td>
+      <td>Intan Technologies, USA</td>
+      <td>RHD2132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Diode laser</td>
+      <td>Omricon Laserage, DE</td>
+      <td>LuxX445-100</td>
+      <td>445 nm/100 mW</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>OpenEphys Acquisition System</td>
+      <td>OpenEphys, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OpenEphys GUI</td>
+      <td>OpenEphys, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EthovisionXT</td>
+      <td>Noldus, NL</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GNU Image Manipulation Program</td>
+      <td>GIMP, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BORIS event logging software</td>
+      <td>BORIS, IT</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All experimental and surgical procedures were conducted in accordance with the UK Animals (Scientific Procedures) Act (1998) and local ethical review. Adult male Wistar rats (n=56, 250–275 g; Envigo, NL) were housed in the University of Bristol’s Animal Services Unit with cage enrichment (e.g. cardboard tubes and wooden chews) on a reversed light cycle and with food/water provided ad libitum. Where possible, animals were group-housed but were singly housed for up to 7 days while healing from surgery occurred.
 
-## Experimental design
+### Experimental design
 
 This study’s primary objective was to investigate the contribution of PrL-P neurons to the development of sensory and affective aspects of neuropathic pain. To achieve this, opto- and chemogenic actuator proteins were expressed in PrL-P neurons to enable interrogation of the behavioural and neurophysiological consequences of their selective and specific opto-activation and chemo-inhibition. To selectively express actuator proteins in only PrL-P afferents, we used an intersectional, Cre-dependent viral vector approach (Boender et al., 2014). Twelve animals were used to develop the intersectional viral vector methodology in vivo. Briefly, Cre-dependent adenoviral vectors encoding ChR2 or the inhibitory DREADD, hM4Di, were delivered to the PrL. To restrict their expression to only those PrL neurons that project to the PAG, we delivered a retrograde canine adenoviral vector (CAV2) that encodes Cre-recombinase to the PAG (Hnasko et al., 2006). CAV2 gains access to neurons primarily via their synaptic terminals (Soudais et al., 2001) before being transported retrogradely to the neuronal cell body leading to Cre expression. Thus, Cre-dependent expression of actuator proteins will only occur in those PrL neurons that synapse in the PAG. Control animals had injection of Cre-dependent vectors to the cortex but no CAV-CMV-CRE to the PAG. Without Cre, there should be no expression of actuator proteins allowing the evaluation of off-target effects of CNO (as well as identification of nonspecific expression of actuators). Following the expression of actuator proteins, the effect of selective opto-activation and chemo-inhibition of PrL-P neurons on sensory (n=24) and affective aspects (n=20) of pain-like behaviour was assessed in neuropathic (TNTPrL-P.ChR2-hM4Di and TNTPrL-P.Control) and uninjured (NaivePrL-P.ChR2-hM4Di and NaivePrL-P.Control) rats. This investigation used a longitudinal design in which the contribution of PrL-P neurons to pain-like behaviour and nociceptive processing were assessed before and up to 42 days following peripheral nerve injury. Five neuropathic rats were then used in acute spinal electrophysiological experiments to assess the effects of PrL-P neurons on nociceptive processing in the spinal dorsal horn.
 
@@ -104,13 +260,51 @@ Where appropriate, removal from one experimental protocol did not mean removal f
 
 Final experimental group numbers were as follows:
 
-FigureExperimentRats (n)2Opto-activation of PrL-P neurons in uninjured rats for Plantar Test10 NaivePrL-P.ChR2-hM4Di 7 NaivePrL-P.ControlChemo-inhibition of PrL-P neurons in uninjured rats for Plantar Test16 NaivePrL-P.ChR2-hM4Di 7 NaivePrL-P.Control3Chemo-inhibition of PrL-P neurons in tibial nerve transection (TNT) rats for sensory testing16 TNTPrL-P.ChR2-hM4Di 7 TNTPrL-P.Control4Chemo-inhibition of PrL-P neurons in TNT rats for place aversion8 TNTPrL-P.ChR2-hM4Di 9 TNTPrL-P.Control5Opto-activation of PrL-P neurons in TNT rats for sensory testing9 TNTPrL-P.ChR2-hM4Di 3 TNTPrL-P.ControlOpto-activation of PrL-P neurons for acute spinal electrophysiology5 TNTPrL-P.ChR2-hM4Di
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Experiment</th>
+      <th>Rats (n)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">2</td>
+      <td>Opto-activation of PrL-P neurons in uninjured rats for Plantar Test</td>
+      <td>10 NaivePrL-P.ChR2-hM4Di 7 NaivePrL-P.Control</td>
+    </tr>
+    <tr>
+      <td>Chemo-inhibition of PrL-P neurons in uninjured rats for Plantar Test</td>
+      <td>16 NaivePrL-P.ChR2-hM4Di 7 NaivePrL-P.Control</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Chemo-inhibition of PrL-P neurons in tibial nerve transection (TNT) rats for sensory testing</td>
+      <td>16 TNTPrL-P.ChR2-hM4Di 7 TNTPrL-P.Control</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Chemo-inhibition of PrL-P neurons in TNT rats for place aversion</td>
+      <td>8 TNTPrL-P.ChR2-hM4Di 9 TNTPrL-P.Control</td>
+    </tr>
+    <tr>
+      <td rowspan="2">5</td>
+      <td>Opto-activation of PrL-P neurons in TNT rats for sensory testing</td>
+      <td>9 TNTPrL-P.ChR2-hM4Di 3 TNTPrL-P.Control</td>
+    </tr>
+    <tr>
+      <td>Opto-activation of PrL-P neurons for acute spinal electrophysiology</td>
+      <td>5 TNTPrL-P.ChR2-hM4Di</td>
+    </tr>
+  </tbody>
+</table>
 
-## Surgery
+### Surgery
 
 All surgeries were conducted using sterile technique. Throughout procedures, animals were kept hydrated and maintained at 37°C using a thermostatically controlled heat mat. Post-surgery, all animals were monitored closely until wounds had healed and the animal reached pre-surgery body weight.
 
-## Stereotaxic injection/implants
+### Stereotaxic injection/implants
 
 Animals underwent recovery surgery for the delivery of viral vectors to the PAG and mPFC, and implantation of optic fibres over the PrL. Rats were anesthetised with Ketamine (50 mg·kg−1; Zoetis, UK)/Medetomidine (0.3 mg·kg−1; Vetoquinol, UK), prepared for surgery, and placed in a stereotaxic frame (Kopff, Germany). PrL-P projections extend bilaterally from each hemisphere with the ipsilateral projection being denser than the contralateral projection (~60 vs 40% of total labelled cells from retrograde tracing; Floyd et al., 2000). We targeted this denser ipsilateral PrL-P projection, and the targeting of left or right PrL-P pathways was counterbalanced among animals. The TNT experiments were similarly counterbalanced, and the tibial nerve in the hindlimb contralateral to the transfected PrL-P was ligated and transected, as has been done for similar investigations (Lee et al., 2015; Huang et al., 2019).
 
@@ -126,27 +320,27 @@ Viral vectors were delivered using a pulled glass pipette (Broomall, USA) attach
 
 An optic fibre (Lambda B, NA 0.66, length 4.4 mm, light-emitting length 2 mm, tapering from a width 200 to <5 µm at the tip, Optogenix, Italy) was inserted to AP +4.2, ML ±0.6, DV −3.3 mm from the cortical surface to enable light delivery across the full dorsoventral extent of the rostral PrL. Four skull screws were placed within separate cranial plates (M1, 1 mm diameter, 3 mm length; NewStar Fastenings, UK). The optic fibre was secured to an adjacent scull screw using Gentamicin CMW DePuy bone cement (DuPuy Synthes; Johnson and Johnson, USA). The craniotomies from the vector injections were then filled with artificial dura (duraGel; Cambridge Neurotech, UK), the skull’s surface covered with bone cement and the skin incision closed using adsorbable suture (Vicryl; Ethicon Inc, Johnson and Johnson, USA) leaving the optic fibre ferrule connector protruding.
 
-## Tibial nerve transection
+### Tibial nerve transection
 
 Rats underwent recovery surgery for TNT to produce a neuropathic pain state (Richardson, 2015). This model was chosen for its gradual development of hypersensitivity as well as known contributions of DPMS (Hughes et al., 2013; Hughes et al., 2015). Briefly, rats had induction of anaesthesia using isoflurane (5% in O2; Henry Schinn, UK) and maintained at a surgical plane of anaesthesia using 2–3% isoflurane in O2. The tibial nerve contralateral to the transfected PrL-P pathway was exposed and transected before the wound closed. An incision was made from below the hip, parallel to the femur, and toward the knee. The underlying connective tissue was dissected away, and the fascial plane between gluteus superficialis and bicep femoris was dissected to expose the branches of the sciatic nerve. The Tibial nerve was identified and carefully freed from connective tissue. Two ligatures of sterile 5.0 braided silk (Fine Science Tools, Germany) were tightly ligated ∼5 mm apart. The length of nerve between the two sutures was then transected and removed leaving the ligatures in place. The overlying muscle and skin were closed using adsorbable suture. Post-surgery, no analgesic was provided so as to not interfere with pain state development.
 
-## Nociceptive testing
+### Nociceptive testing
 
 Rats underwent longitudinal nociceptive sensory testing before and after TNT. This was conducted with/without opto-activation and chemo-inhibition of PrL-P neurons to investigate their contribution to nociceptive threshold/pain-like behaviour in naive and TNT rats. Neuropathic animals underwent testing for mechanical (vF) before cold allodynia (acetone). There was more than 30 min between pre-CNO and post-CNO. All behaviours were recorded using a video camera (c930; Logitech, Switzerland) attached to a computer running video acquisition software (OBS Studio, Open Broadcaster Software) for offline analysis.
 
-## Heat sensitivity
+### Heat sensitivity
 
 Thermal withdrawal latencies were measured for the hindpaw (Hargreaves et al., 1988). Animals were habituated to the testing apparatus and experimenter for 10 min for at least 5 days prior to the start of the experiment. On experimental days, animals were placed in a Plexiglass chamber on top of a raised glass plate so that the infrared (IR) beam (Ugo Basile Plantar test, Italy) could be positioned under the plantar surface of the hindpaws. The IR beam intensity was adjusted individually for each animal so that animals withdrew their paws at a latency of ~8 s (mean IR intensity=57±0.6). Animals had IR light delivered to both left and right hindpaw with ~4 min interstimulus interval between paws and hence >8 min interstimulus interval between consecutive stimuli on the same paw to prevent sensitisation. A cut-off latency of 15 s was used to prevent tissue damage and subsequent sensitisation. Stability of baseline withdrawal latency was considered to have been achieved when three consecutive latencies were within 2 s of each other.
 
-## Punctate mechanical sensitivity
+### Punctate mechanical sensitivity
 
 To assess mechanical sensitivity, animals were placed in a Plexiglass chamber on top of a raised metal grid to allow access to the plantar surface of the hindpaw. Rats were habituated to the testing apparatus and experimenter for 10 min at least 5 days before the start of the experiment. vF filaments (range 2.36–5.18 mN; Ugo Basile, Italy) were applied to the lateral aspect of the plantar surface of the hindpaw. The 50% withdrawal threshold was determined using the Massey-Dixon up-down method (Chaplan et al., 1994).
 
-## Acetone
+### Acetone
 
 To assess cold sensitivity, rats were placed in a Plexiglass chamber on top of a raised metal grid to allow access to the plantar surface of the hindpaw. Using a 1-ml syringe, a drop of acetone (~0.1 ml) was applied to the lateral aspect of the hindpaw and the number of nocicfensive events (paw shakes, licks, and/or bites) recoded for up to 1 min following application using event logging software (Friard and Gamba, 2016). This was repeated three times for each paw with an ISI of 2 min.
 
-## Manipulation of PrL-P neurons
+### Manipulation of PrL-P neurons
 
 For experiments involving opto-activation of PrL-P neurons NaivePrL-P.ChR2:hM4Di, NaivePrL-P.Control, TNTPrL-P.ChR2:hM4Di, and TNTPrL-P.Control rats were tethered to a light source (445 nm diode laser; Omicron Laserage, Germany) using an optical fibre patch cable (FT200EMT; Thorlabs, USA) to connect the head-mounted ferrule to the laser source allowing blue light to be delivered to the PrL via the implanted optic fibre. Once stable baseline withdrawal latencies were obtained, two light stimulation rounds (445 nm, 10–15 mW, 20 hz, 10 ms pulse width, starting 1 min before initiation of the IR beam) and two no light rounds were delivered to the PrL in a randomised order. Output of optic fibres was determined prior to implant by measuring the light power at the fibre tip over a range of laser strengths using a monitor (PM120D; Thorlabs, USA). The average withdrawal latency for light stimulation rounds was compared to the average withdrawal latency for low-light stimulation rounds.
 
@@ -156,32 +350,32 @@ The effect of chemo-inhibition of PrL-P neurons on mechanical withdrawal thresho
 
 The effect of opto-activation of PrL-P neurons on the 50% withdrawal thresholds was assessed in TNTPrL-P.ChR2-hM4Di and TNTPrL-P.Control rats at a late state (>21 days). Rats underwent baseline vF testing prior to blue light delivery as previously described. Then, blue light (445 nm, 10–15 mW, 20 hz, 10 ms pulse width) was delivered continuously starting 1 min prior to vF testing and continuing to the end of testing. The 50% withdrawal threshold of the ipsilateral (injured) paw was compared with and without opto-activation of PrL-P neurons.
 
-## Behavioural testing
+### Behavioural testing
 
 Conditioned place aversion: A second cohort of TNT rats that did not have longitudinal sensory testing was tested in a conditioned place aversion paradigm to assess the contributions of PrL-P neurons to affective state. TNTPrL-P.ChR2:hM4Di and TNTPrL-P.Control rats were habituated to a three-compartment box with a neutral central compartment connecting two larger conditioning chambers. Chambers differed in their visual and tactile cues (‘bars’ or ‘holes’ for flooring and vertically or horizontally striped wallpaper with equal luminosity) to maximise their differentiation. A Baslar camera (acA1300-60 gm) with a varifocal lens (Computar H3Z4512CS-IR) connected to EthovisionXT (Noldus, NL) was used to record the time rats spent in each compartment. Rats were allowed to freely explore all three compartments for 20 min on day 1 to obtain baseline preference. No rats exhibited excessive chamber bias (>80% total time in a single chamber). After habituation, rats had TNT surgery and 2 days later started conditioning sessions (over 4 days) in which a compartment was paired with CNO (2.5 mg·kg−1 i.p.) or vehicle (two sessions each). The chamber–drug pairings and the order in which they were presented were randomised and counterbalanced among animals. For each pairing session, rats received CNO or vehicle and were returned to their home cage for 10 min to prevent any negative association between restraint/injection and conditioning compartment. Rats were then placed in the conditioning compartment for 35 min. A single pairing session was conducted on each of the 4 days to prevent carry over of any CNO effects. Pairing sessions for each rat were conducted at the same time on each day. On the test day, animals were placed in the neutral compartment and allowed to freely explore all three compartments for a total of 20 min and the time spent in each compartment recorded. A ‘preference score’ was calculated by taking the percentage of time spent in the CNO-paired compartment on the test day (relative to the total time spent in all three chambers), normalised by the percentage time spent in the same chamber on pre-test day (relative to total time spent in all three chambers; Meda et al., 2019). Preference scores for CNO- and vehicle-paired chambers were compared within each animal. Preference or aversion to CNO-paired chamber is expected to be influenced by the valence of chemo-inhibition of PrL-P neurons. Preference scores of <1 indicate place aversion and those >1 indicate preference.
 
-## Electrophysiology
+### Electrophysiology
 
 In vivo spinal dorsal horn recordings: TNTPrL-P.ChR2:hM4Di rats were terminally anaesthetised with urethane (1.2–2 g·kg−1 i.p., Sigma). The spinal cord was exposed by laminectomy over T13–L3 spinal segments to allow access to the spinal cord (Leith et al., 2014; Drake et al., 2016). The animal was placed in a stereotaxic frame with spinal clamps (Narishige, Japan) and the spinal cord stabilised at T12 and L4, and a bath formed by skin elevation. A reference electrode was placed in nearby musculature. The spinal dura matter was carefully removed using bent-tipped needles (25G) under binocular vision. The skin pool was filled with warm agar and, once cool, a recording window cut out and the void filled with warm (~37°C) mineral oil. Using a hydraulic manipulator (Narishige, Japan), a four contact silicon probe (Q-probe; NeuroNexus, USA) was advanced into the spinal dorsal horn and recordings of single dorsal horn neurons made between 250 and 800 µm deep to the surface. Neural activity was amplified and digitised on a headstage microchip (RHD2132; Intan technology) and captured to computer at 30 kHz using an Open Ephys acquisition system and associated software (OpenEphys, USA).
 
 Low threshold brush and touch applied to the paw were used as a search stimulus as the recording electrode was advanced into the spinal dorsal horn. Once single units were isolated, non-noxious and/or noxious mechanical (vF filaments) and cold (acetone) were applied to the receptive field on the lateral aspect of the ipsilateral hind leg/paw. WDR neurons were identified by their graded response to non-noxious and noxious stimuli (≥15 g vF). A baseline stimulus–response relationship was obtained by applying 4 and 15 g vF filaments and a single drop of acetone to the receptive field. This was repeated three times for each stimulus with a 10 s inter-stimulus interval between vF filaments and 1 min between acetone drops. To optogenetically activate the PrL-P neurons, blue light was delivered via the implanted optic fibre (445 nm, 10–15 mW, 20 Hz, 10 ms pulse width) continuously starting 1 min prior to peripheral stimulation and lasting until the end of the stimulus set (4 and 15 g vF hairs and acetone stimuli were reapplied three times). The average number of evoked action potentials for each stimulus was compared before, during, and 5 mins following opto-activation of PrL-P neurons.
 
-## Histological processing
+### Histological processing
 
 Tissue collection and processing: Rats were killed with an overdose of pentobarbital (20 mg/100 g, i.p., Euthalal, Merial Animal Health) and perfused trans-cardially with 0.9% NaCl (1 ml/g) followed by 4% formaldehyde in phosphate buffer (PB). The brains were dissected and post-fixed overnight in the same solution before cryoprotection in 30% sucrose in PB. Coronal sections were cut at 40 µm using a freezing microtome and left free floating for fluorescent immunohistochemistry or mounted on slides to identify optic fibre tracts and/or injection sites for viral vector delivery using light microscopy.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Tissue sections were incubated free floating on a shaking platform with PB containing 0.3% Triton-X100, 5% normal goat serum (Sigma), and primary antibodies to detect EGFP (ab13970, Abcam) or mCherry (5993–100, BioVision) for 24 hr at room temperature. After washing with PB, sections were incubated for 3 hr at room temperature with an appropriate Alexa Fluor secondary antibody. Then, sections were washed before mounting on glass slides in 1% gelatin solution and, once dried, cover slipped using FluroSave reagent (345789; Merck-Millipore, Germany). Sections were imaged on a Leica DM16000 inverted epifluorescence microscope equipped with Leica DFC365FX digital camera and LAS-X acquisition software.
 
-## Transduction mapping
+### Transduction mapping
 
 To create maps of the distribution of transfected neurons within the mPFC, a series of coronal mPFC sections from three animals were manually plotted. Each section was paired to a matching coronal diagram from the Rat Brain Atlas (Paxinos and Watson, 2007), at ~120 µm intervals (every third section). Using an epiflurescent microscope (Zeiss Axioskop II inverted microscope equipped with a CooLED pE-100 excitation system, filter blocks – red: filter set number 15 [DM 580 nm, BP 546/12 nm, LP 590 nm] and green: filter set number 09 [DM 510 nm, BP 450–490 nm, LP 515 nm]), mCherry+ cells were plotted. The diagrams were digitised into the photo editing software GIMP.2 (Creative Commons), allowing superimposition to create conjunction maps indicating the extent of labelled areas of the mPFC within each cohort. A digital grid was used to divide up the cortical field and the number of positively labelled neurons counted within each 0.2 mm2 grid from each animal. The consistency of positively labelled neurons within each grid square was represented on a grayscale with black indicating positively labelled cells in all rats and white indicating no cells. To determine the proportion of transfected neurons that co-expressed both ChR2-EYFP and hM4Di-mCherry composite widefield images were taken at 20× magnification of every sixth section in a series of consecutive mPFC section from ~+5.10 to +2.8 mm from bregma and from three experimental animals. From these images, the distribution of EYFP, mCherry, and colocalised neurons were quantified.
 
-## Drugs
+### Drugs
 
 ClozepineN-Oxide (Tocris, UK) was purchased and made up on the day of use in Dimethyl sulfoxide (DMSO) and diluted with 0.9% NaCl to a final concentration of 2.5 mg·ml−1 and 5% DMSO.
 
-## Quantification and statistics
+### Quantification and statistics
 
 All statistical analyses were conducted using GraphPad Prism 8. All data are presented as mean ± standard error of mean (SEM). Sample sizes were calculated using online power calculators with alpha set at 0.05, power >0.9 and using effect sizes and sample variation estimated from previous experience and with reference to literature (Hughes et al., 2013; Lee et al., 2015; Zhang et al., 2015; Drake et al., 2016; Hirschberg et al., 2017). Student's t-test (paired and unpaired), RM one- and two-way ANOVAs, or mixed model were used to compare groups as appropriate. This mixed model uses a compound symmetry covariance matrix and is fit using restricted maximum likelihood (REML). Sidak’s or Dunnett’s post-test was used for comparisons between multiple groups and where appropriate. The number of replications (n) is the number of data points used in the statistical test that is either the number of animals for behavioural testing or the number of neurons for electrophysiological experiments.

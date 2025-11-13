@@ -12,7 +12,7 @@
 
 ## Abstract
 
-10.7554/eLife.45696.001 The non-destructive collection of ultrathin sections on silicon wafers for post-embedding staining and volumetric correlative light and electron microscopy traditionally requires exquisite manual skills and is tedious and unreliable. In MagC introduced here, sample blocks are augmented with a magnetic resin enabling the remote actuation and collection of hundreds of sections on wafer. MagC allowed the correlative visualization of neuroanatomical tracers within their ultrastructural volumetric electron microscopy context.
+The non-destructive collection of ultrathin sections on silicon wafers for post-embedding staining and volumetric correlative light and electron microscopy traditionally requires exquisite manual skills and is tedious and unreliable. In MagC introduced here, sample blocks are augmented with a magnetic resin enabling the remote actuation and collection of hundreds of sections on wafer. MagC allowed the correlative visualization of neuroanatomical tracers within their ultrastructural volumetric electron microscopy context.
 
 ## Introduction
 
@@ -24,31 +24,95 @@ The invention of MagC was motivated by the wish to collect sections directly ont
 
 ## Results
 
-## Magnetic resin
+### Magnetic resin
 
 Magnetic epoxy-based resin containing 8% (w/w) iron oxide superparamagnetic nanoparticles (Puig et al., 2012) was produced for remote actuation. The resin also contained fluorescent polymer beads for post-collection section order retrieval, and a fluorescent dye to ease section segmentation (Figure 1a, Figure 1—figure supplement 1, Figure 1—figure supplement 2). A piece of this resin was glued with an epoxy that is usually used for EM studies (durcupan) to a sample block of interest, with the help of a small mechanical device (Figure 1—figure supplement 3), thereby maintaining the position of the blocks during curing in an oven. The resulting blocks were trimmed, and a second piece of resin (the ‘dummy’), consisting of a piece of heavy-metal stained and resin-embedded brain tissue, was glued to the magnetic resin to enhance cutting quality. The final block assembly was trimmed for ultrathin sectioning (Figure 1a).
 
-## Sectioning
+![Figure 1.](https://cdn.elifesciences.org/articles/45696/elife-45696-fig1-v3.jpg)
+
+**Figure 1.:** (a) Augmentation of a polymerized sample block with resin containing superparamagnetic nanoparticles (for remote magnetic actuation) and fluorescent beads (for section order retrieval). (b) Setup for MagC: a diamond knife with a large bath and a mobile overhanging magnet. (c) 507 consecutive ultrathin sections collected on a silicon wafer: wafer overview, close-up (merge of whitefield and three fluorescent channels: blue for coumarin stain, plus green- and red-fluorescent beads) and montage of all sections. Scale bars: (a) 200 μm; (b) 2 cm; (c) 2 mm (top left), 200 μm (bottom left), 1 mm (right).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45696/elife-45696-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Widefield LM of the collected sections. The intensity differences come from section thickness inhomogeneity. As documented by Harris et al. (2006) , the lack of an hermetic enclosure during sectioning typically induces section inhomogeneity. (b) Close-up around one section, showing merged multichannel fluorescent imagery: blue for Coumarin, with green- and red-fluorescent beads. (c) Montage of all sections with the same orientation. Scale bars: (a) 4 mm; (b) 500 μm; (c) 2 mm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/45696/elife-45696-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Electron micrograph of numerous sections collected on wafer. Most of the collected sections exhibit a dummy (like that highlighted in the yellow box) that is attached to their tissue part and that comes from the previous section, which is explained by the following mechanism: with this sample block, the dummy part often detached from the section during sectioning or immediately after landing on the water surface. The main part (magnetic resin and tissue) of the last cut section was then floating freely while its dummy remained attached to the edge. Then the main part of the next cut section stuck to the previous dummy and so on. (b) EM of a section. The yellow dashed square highlights the region that has been imaged with the electron microscope and became darker due to the beam irradiation. (c) EM of well-dispersed superparamagnetic nanoparticles in the appended resin. (d) Small contaminations with the appearance of oily droplet can sometimes be found in the magnetic resin. These could be unreacted oleic acids, an oily compound from handling during preparation, or something unknown to the author. Scale bars: (a) 1 mm; (b) 100 µm; (c) 500 nm; (d) 2 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/45696/elife-45696-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Mounting helper device. The manual manipulator allows the experimenter to precisely place the needle in contact with the block to be glued onto the sample. The iron plate together with the base magnet of the needle holder maintain the position set by the manipulator. (b) The detachable part is placed in an oven for temperature curing. (c) The biological sample is trimmed manually with a razor blade. (d) The magnetic resin is glued to the sample and maintained in place with a needle. (e) Overlay of color and fluorescent imagery showing the fluorescent particles contained in the magnetic resin. (f) The magnetic resin is manually trimmed down to achieve roughly a 50/50 ratio of sample surface to magnetic surface suitable for sectioning at 50 nm nominal thickness. (g) An additional dummy piece of heavy-metal-stained brain tissue embedded in resin is glued to the block. Scale bars: (a, b) 20 mm; (c–g): 500 μm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/45696/elife-45696-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** Scale bar: 5 mm.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/45696/elife-45696-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** (a) Overview of the 15 consecutive sections collected with MagC that were used for the first MultiSEM experiment. (b) Overview of 91 stitched tiles. (c) A tile produced by one of the 91 beams. The image quality is representative of the quality observed in the whole section. (d) An inset from a tile acquired with a Zeiss MultiSEM of a section from Dataset 1 after the complete CLEM pipeline and an additional wafer-wide broad ion beam milling of about 25 nm (Templier, in preparation). Imaging conditions: silicon wafer chip glued to the EM stub with carbon glue, 4 nm pixel size, 400 ns dwell time, Scale bars: (a) 2 mm; (b) 20 μm; c) 2 μm; d) 1 μm.
+
+### Sectioning
 
 A custom diamond knife was built with an enlarged bath to let many hundreds of sections float at the water's surface (Figure 1b). A hole was drilled in the bottom to fill and empty the bath with a motorized syringe pump. A piece of silicon wafer was immersed in the bath and was slightly tilted relative to the water level (by about two degrees) to avoid accumulation of water surface dust in the center of the wafer at the end of the water withdrawal. After alignment of the knife and cutting a few sections, automatic sectioning was started and allowed to continue uninterrupted until the last section was cut. A ionizer whose tip was placed close to the diamond knife created a very soft air current that gently detached sections from each other every few sections without impairing the cutting process. The sections floated freely at the water surface.
 
-## Magnetic collection
+### Magnetic collection
 
 To collect the floating sections after the sectioning, a permanent magnet (cylindric, 15 mm diameter x 8 mm) was placed above the water surface with a 1 mm air gap (Figure 1b). A few sections (about a dozen) that were loosely attached to the walls of the bath were gently detached with an eyelash probe and remained undamaged. The magnet, actuated by a robotic arm, scanned the surface of the water bath, taking a snaking path. At the end of the scan, the sections were accumulated in the center of the bath. Water was then withdrawn with a motorized syringe pump, while the 1 mm air gap was maintained by lowering the magnet with manual robotic control. Two small heating pads placed below the bath were turned on when the water level reached the level of the substrate. The elevated wafer temperature generated by the heating pads (about 40 oC) accelerated the evaporation of the water left at the wafer surface and avoided the formation of wrinkles in the deposited sections. The wafer was finally placed on a hot plate at 50 oC for 30 min. I report here on two wafers of 507 (Dataset 1, Figure 1c) and 203 consecutive 50-nm-thick sections (Dataset 2, Figure 1—figure supplement 1). The magnetic collection of these datasets was not video recorded, but Video 1 shows another small complete MagC experiment with 100 consecutive 50 nm thick sections, and Figure 1—figure supplement 4 shows the sections on the silicon wafer.
 
-## Order retrieval
+![Video 1.](https://cdn.elifesciences.org/articles/45696/elife-45696-video1.mp4.jpg)
+
+**Video 1.:** Video available here: https://youtu.be/o13r-tHT9-c. Timeline:1. 00:02 - Ultramicrotome start, 2. 00:19 - Cutting ..., 3. 06:21 - Cutting stopped, 4. 06:32 - Removal of ionizer, 5. 07:02 - Magnet scanning ..., 6. 17:25 - Blowing away 2 sections from wall, 7. 20:42 - Blowing away 1 section from wall, 8. 27:15 - Water removal ..., 9. 31:33 - Heating ..., 10. 45:41 - Wafer pickup.
+
+### Order retrieval
 
 The serial order was lost during the sectioning and had to be retrieved. After low-resolution (5x) reflection whitefield and fluorescent imaging of the wafers, the location and orientation of the sections was semi-automatically inferred. After calibration of four landmarks, medium resolution (20x) fluorescent imaging was automatically performed on the magnetic portion of each section. The cloud of fluorescent beads (2 μm mean diameter) contained in the magnetic resin was revealed in this imagery. As the section thickness (50 nm) was smaller than the diameter of the beads, each bead was visible in at least a dozen consecutive sections, so that the pairwise similarity of all sections could be computed. Solving a traveling salesman problem on the graph of pairwise similarities retrieved the serial order (which was confirmed later manually with EM) with only a single error occurring when a high concentration of beads (1% w/w) was used (Figure 2a). A lower concentration yielded more errors (0.2% w/w, Figure 2—figure supplement 1). With the same methodology, the serial order could also be retrieved using the brain tissue EM imagery (Figure 2a). Note that order retrieval using fluorescent beads contained in the magnetic resin does not depend on the processed sample, which makes MagC suitable for collecting samples that, for example, would not show sufficient information for order retrieval by LM or EM.
 
-## Imaging
+![Figure 2.](https://cdn.elifesciences.org/articles/45696/elife-45696-fig2-v3.jpg)
+
+**Figure 2.:** (a) Section-order retrieval for Dataset 2 (1% fluorescent beads) obtained with EM imagery (panels 1 and 2 show the pairwise similarity matrices before and after reordering, respectively) and with fluorescent beads imagery (panels 3 and 4). Darker pixels depict higher similarity whereas white pixels depict no similarity. The two red lines in panel 4 indicate a single flip in the computed order that was later corrected with EM imagery. (b) Volumetric correlative stack for Dataset 1 with three fluorescent channels and 507 consecutive ultrathin sections. Insets: close-ups of cell bodies and a neurite carrying different neuroanatomical tracers. The cell bodies in the right panel are outlined with colored dashed lines. Blue: tracer injected into Area X. Green: tracer injected into the nucleus Robustus of the arcopallium (RA). Red: tracer injected into Avalanche. (c) The EM imagery was connectomics-grade and enabled neurite tracing. Yellow dots: skeletons stemming from nine seed points placed in a 3×3 grid in the first section of Dataset 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45696/elife-45696-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Matrix of pairwise similarities of unordered sections computed with EM imagery. Darker pixels depict higher similarity whereas white pixels depict no similarity. (b) Reordered EM matrix. (c) Matrix of pairwise similarities of unordered sections computed with fluorescent bead imagery. The original order is the order provided by the section segmentation pipeline. (d) Similarity matrix of the reordered sections. The order overall looks to be consistent, except for slight deviations at the end of the dataset (around section number 500) that can be seen in the lower left of the matrix.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/45696/elife-45696-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Histogram of the numbers of matching inliers found for each of the 203 LM-EM pairs of Dataset 2. (b) A reflection brightfield light micrograph after simple thresholding. (c) Downscaled EM mosaic. (d) Same micrograph as in (a) after local contrast normalization. Note the high similarity with its EM counterpart micrograph in (c). (e, f) Same micrographs as in (c) and (d), respectively. The yellow crosses show the locations of SIFT features that match between the two images. The dashed yellow lines in (e) show the outline of the LM micrograph when affine transformed to match its EM counterpart. Scale bars: 50 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/45696/elife-45696-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Section number #100. The yellow box indicates the region acquired at high resolution for the sections up to number #~3500 (see panel (c) for sections above #4000). (b) Montage of the high-resolution regions acquired. The corresponding indices are shown on the right. The insets numbered 1 to 4 are shown in panel (d). Insets 1, 2 and 3 are the only locations where vertical streaks resulting from sectioning were found. Inset 4 in section #~5000 is representative of the streak-free sectioning quality manually observed in all acquired high-resolution regions. The insets illustrating restart continuity (labeled e, f, and g) are shown below in panels with corresponding lettering. (c) Complete or partial sections collected after the restart. The yellow box shows the region acquired in section numbers above #4000. The nature of the cuts was observed through the binocular microscope simultaneously during the sectioning restart and is as follows (#1 refers to #~4000 + 1 and so on): #1, partial tissue; #2, partial tissue; #3, partial tissue; #4, partial tissue connected with partial magnet; #5, partial tissue connected with partial magnet (but disconnected during manual pickup, the magnetic and dummy parts remained stuck to the bottom of section #6); #6, partial tissue with disconnected partial magnet (the tissue/ magnet separation occurred immediately upon sectioning); #7, full tissue connected with full magnet (but disconnected during manual pickup, the magnetic portion is visible immediately to the right of the section); #8 to #15, full normal sections (not collected). (d) Insets 1, 2 and 3 from panel (b) showing (with yellow arrows) the only vertical streaks found after manual inspection among the entire high-resolution imagery from panel (b). Inset 4 from section #~5000 shows a representative image of the lack of image quality impairment that might occur due to a potentially damaged knife. (e– g) Four consecutive insets from the restart sections shown in yellow in panel (b). The interior of three small neuronal processes are painted in red, green and blue. There is no issue in tracing fine processes across the 20 hr long restart. The good continuity in panels (e–g) indicates that no material was lost despite the partial sections. Scale bars: (a) 200 mm; (b) 100 mm; (c) 500 mm; (d–g) 2 mm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/45696/elife-45696-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** The axon is delineated with dashed yellow lines (every second section). Black arrows indicate the synapse. Scale bar: 1 µm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/45696/elife-45696-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** (a) Schematic of the immersed tilted silicon wafer chip. Side view from the experimenter looking towards the ultramicrotome (same point of view as in Figure 1b). A few microscopy coverslips are asymmetrically stacked to slightly tilt the wafer chip in order to avoid accumulation of water surface dust in the center of the wafer at the end of the water withdrawal. (b) The single tear found in Dataset 2, which was present in the magnetic portion of section #22. (c–e) tear in Dataset one in sections #258, #359 and #481, respectively. (f) Schematic of the interaction of water with a hydrophobic substrate, a partially hydrophobic substrate, and a substrate with nearby walls. All three configurations present a risk of impairing sections upon drying.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/45696/elife-45696-fig2-figsupp6-v3.jpg)
+
+**Figure 2—figure supplement 6.:** Multicolor correlative LM-EM imagery (Dataset 1) of zebra finch HVC nucleus showing three neuroanatomical tracers injected in Area X (blue), the nucleus Robustus of the Arcopallium (green), and Avalanche (red). The two panes on the right show x and y re-slices through the volume.
+
+### Imaging
 
 The high packing density of the collected sections on wafer allowed convenient staining procedures (simply exchanging a few microliters of staining solution repetitively on an area smaller than 2 cm x 2 cm), and easy loading into LM and EM microscopes for uninterrupted automated imaging. After immunostaining against neuroanatomical tracers previously injected into the brain of two zebra finches, multichannel fluorescent imaging (3 and 1 fluorescent channels in Datasets 1 and 2, respectively, and one widefield channel) was automatically performed with custom scripts. Note that the small wafers were easily coverslipped with mounting medium underneath and oil on top to enable reflection LM with high magnification immersion objectives (63x). After washing off the mounting medium on the wafer followed by heavy metal poststaining, automated scanning EM was performed with custom scripts, acquiring the same portion of each section (Video 2). Volumetric EM imagery was assembled (contrast enhancement, stitching, affine then elastic alignment) and the LM modality was registered to its EM counterpart (Figure 2—figure supplement 2). The whole processing chain was entirely automated with custom scripts (Templier, 2019) (https://github.com/templiert/MagC; copy archived at https://github.com/elifesciences-publications/MagC) operating in the Fiji/TrakEM2 environment (Schindelin et al., 2012; Cardona et al., 2012). Multibeam scanning EM was also used successfully to image magnetically collected sections (Figure 1—figure supplement 5) in two settings: without intermediate treatments after collection (no immunostaining, no mounting, no LM, no poststaining), and after performing the entire CLEM pipeline on the wafer of Dataset 1 (immunostaining, mounting, LM, washing, poststaining, single beam EM) and an additional wafer-wide broad ion beam milling of about 25 nm (Templier, in preparation).
 
-## Data analysis
+![Video 2.](https://cdn.elifesciences.org/articles/45696/elife-45696-video2.mp4.jpg)
 
-The experiments yielded correlative LM-EM stacks of brain tissue ready for connectomic analysis (Figure 2b and Video 3). For convenient use, the data were converted to the neuroglancer format and hosted online for seamless browsing and annotation with the web-based tool neuroglancer, also using the enhancements for multichannel overlay offered by neurodataviz (Figure 2—figure supplement 6). To demonstrate the suitability of the data for connectomic analysis, I traced nine neurites with starting points located on a 3 × 3 grid within a central area of the first section  (Figure 2c). The neurites spanned the whole depth of the dataset across all sections (10 μm) and exhibited a rather axial orientation, amounting to a total length of at least about 90 μm. I also identified structures that were tagged with an injected neuroanatomical tracer such as an axon, making an en passant synapse (Figure 2—figure supplement 4).
+**Video 2.:** Video available here: https://youtu.be/UC8Zrl2Xud4.
 
-## Assessment of sectioning quality and restart experiment
+### Data analysis
+
+The experiments yielded correlative LM-EM stacks of brain tissue ready for connectomic analysis (Figure 2b and Video 3). For convenient use, the data were converted to the neuroglancer format and hosted online for seamless browsing and annotation with the web-based tool neuroglancer, also using the enhancements for multichannel overlay offered by neurodataviz (Figure 2—figure supplement 6). To demonstrate the suitability of the data for connectomic analysis, I traced nine neurites with starting points located on a 3 × 3 grid within a central area of the first section (Figure 2c). The neurites spanned the whole depth of the dataset across all sections (10 μm) and exhibited a rather axial orientation, amounting to a total length of at least about 90 μm. I also identified structures that were tagged with an injected neuroanatomical tracer such as an axon, making an en passant synapse (Figure 2—figure supplement 4).
+
+![Video 3.](https://cdn.elifesciences.org/articles/45696/elife-45696-video3.mp4.jpg)
+
+**Video 3.:** Video available here: https://youtu.be/VL0F9DkZVaQ and associated data available at https://neurodata.io/data/templier2019/.
+
+### Assessment of sectioning quality and restart experiment
 
 In Dataset 1, three tears were found in the EM imagery spanning a total of nine sections out of the 507 sections. A first tear was present in a single section #258 (Figure 2—figure supplement 5c), then a similar tear was visible in section numbers #480, #481, #482, #483, #484 and #485 (#481 shown in Figure 2—figure supplement 5e). The location of the tears looked identical, indicating a potential knife weakness at this location. A third tear was present at a different location in sections #359 and #360 (Figure 2—figure supplement 5d). Nevertheless, the EM imagery in the dataset (and especially before and after the tears) did not exhibit the usual vertical streaks caused by knife defects, hinting at a mild temporary knife defect. In Dataset 2, no tears were present in the tissue portion of the sections. Just a single tear was present in the magnetic portion of one section (section #22, Figure 2—figure supplement 5b).
 
@@ -62,27 +126,27 @@ For the restart, sectioning was interrupted at section #~4000 and the last cut s
 
 ## Discussion
 
-## MagC as a new CLEM platform
+### MagC as a new CLEM platform
 
 Since the introduction of Array Tomography in 2007 by the Smith laboratory (Micheva and Smith, 2007), volumetric postembedding correlative light and electron microscopy has been performed on manually collected ultrathin sections on flat substrates. Here, I magnetically collected hundreds of consecutive sections of nominal thickness 50 nm directly onto silicon wafers, offering both excellent fluorescent LM (no autofluorescence, easy to immunostain and coverslip) and excellent EM (no charging thanks to good conductivity, very flat substrate).
 
 The high packing density of the sections collected with MagC has allowed the imaging of more than 500 sections from a single piece of silicon wafer, as small as about 2 cm x 2 cm. Such substrates are easy to handle, process, load into microscopes, and store. The high packing density presented advantages for postembedding immunostaining: a few drops of liquids were easily and conveniently deposited at the wafer surface to simultaneously stain hundreds of sections. The packing density also enabled seamless automated light and electron microscopy imaging: after loading the small silicon wafer chip into the microscope of interest and after a simple wafer coordinate calibration, automated acquisition was performed for several hours to several days without interruption.
 
-## Block orientation and use of a dummy
+### Block orientation and use of a dummy
 
 I tested different block orientations (magnetic/tissue parts in left/right, bottom/top, top/bottom and oblique orientations) and found that cutting quality was best when the tissue was placed at the bottom and the magnetic resin at the top. The learned precept is that the most important part of the block, the tissue part, should be cut first. However, in this configuration and with nominal cutting thicknesses below about 60 nm, I noticed that sections tended to go back slightly towards the knife edge at the end of the cutting of some sections, so that the top of the cut section covered the knife edge. This covering tended to impair the sectioning quality (compression) of the bottom of the next section, which was the precious tissue part. To solve this issue, I glued a dummy piece of heavy metal-stained resin-embedded brain tissue at the top of the block, which prevented the knife-covering effect.
 
-## Quality of the section cutting
+### Quality of the section cutting
 
 A potential concern with MagC is that the iron oxide nanoparticles might damage the fragile diamond edge, thus shortening its longevity compared to that when sectioning a block without magnetic resin. Three tears were found in Dataset 1, spanning nine sections in total, and a single tear was found in the magnetic portion of one section in Dataset 2. In the additional cutting experiment with 5000 sections, no tear was noticed among the ~1000 sections observed between sections #4000 and #5000.
 
 Overall, neither in Datasets 1 and 2 nor in the 5000 sections experiment did major section quality issues arise from knife defects potentially resulting from the magnetic nanoparticles. The maximum number of magnetic sections that can be cut reliably on a same knife slot at a given thickness remains to be assessed, but the experiments showed that MagC is well suited at least for moderate (500 sections) and large-scale experiments (5000 sections).
 
-## Quality of the section collection
+### Quality of the section collection
 
 The folding or warping of sections during deposition onto a substrate is a common ultramicrotomy concern. These unwanted effects typically arise when the water surface shows strong convexity profiles produced by hydrophobic substrate portions and walls, as sketched in Figure 2—figure supplement 5f. The three main precepts to avoid folding or warping drawn from my own experience and from the literature (Kubota et al., 2018; Horstmann et al., 2012; Burel et al., 2018; Koike et al., 2017; Templier and Hahnloser, 2019; Harris et al., 2006; Wacker et al., 2016; Lee et al., 2018) are to handle sections far from walls, to have a low contact angle between the water surface and the substrate, and to heat the substrate. These three precepts were followed in MagC by maintaining the sections in the center of the knife boat, by making the silicon wafer hydrophilic with a plasma treatment, and by heating the wafer with heating pads placed below the knife boat. As a result, the absence of fold in the collected sections was confirmed in the LM wafer overviews (Figure 1c, Figure 1—figure supplement 1) and when browsing the correlative LM-EM stacks.
 
-## Automation of MagC and comparison with ATUM
+### Automation of MagC and comparison with ATUM
 
 How far can MagC be automated? Magnetic augmentation is unlikely to become an automated procedure even though it is not a complicated manual one. It requires manual handling of the tissue and magnetic blocks, and of the easy-to-use mounting helper device (Figure 1—figure supplement 3). Final trimming of the block requires solely moderate ultramicrotomy skills. In comparison, ATUM solely requires standard ultramicrotomy trimming.
 
@@ -98,7 +162,7 @@ ATUM, unlike MagC, requires the additional manual cutting of the tape into strip
 
 MagC might therefore be fully automated with the exception of three manual steps: manual magnetic augmentation, manual initiation of sectioning, and final insertion of a wafer into a light microscope for automated section mapping and ordering.
 
-## Upscaling
+### Upscaling
 
 Can MagC reach the axial depths and volumes currently obtained with other volumetric EM techniques (Kornfeld and Denk, 2018), such as the ~15,000 ATUM-collected sections reported by Hildebrand et al. (2017)?
 
@@ -118,29 +182,154 @@ Regarding the sample block sizes, the edge lengths of the magnetically collected
 
 Uneven section thickness in serial sectioning is common when no enclosure around the ultramicrotome is used (Harris et al., 2006) and occasional missed cuts were observed with a nominal cutting thickness of 30 nm. Most of the work on MagC was performed with a nominal thickness of 50 nm and a definitive lower limit for section thickness was not thoroughly assessed.
 
-## Conclusion
+### Conclusion
 
 In conclusion, MagC solves the challenge of collecting hundreds of serial ultrathin sections with a high packing density directly onto silicon wafers. I expect MagC to be used in high-throughput volumetric microscopy beyond connectomics for ultrastructural biology in general. Combined with broad (Templier, 2018) or gas cluster (Hayworth et al., 2019) ion beam milling and next-generation multibeam EM, MagC could become an ideal platform for large-volume EM connectomics.
 
 ## Materials and methods
 
-## Animal experiments
+### Animal experiments
 
 Animal experiments were approved by the Veterinary office of Canton Zurich (207/2013). Two zebra finches were anesthetized with isoflurane and placed in a stereotaxic device. Fluorescent tracers were bilaterally injected (0.5–1 μL) into different areas (Oberti et al., 2010) as described in Tables 1, 2 and 3. Three to five days after tracer injection, the animals were sacrificed by perfusion fixation with fixative concentrations of 2% formaldehyde and 2.5% glutaraldehyde in buffer with 0.1M cacodylate and 2 mM calcium chloride (referred to as cacodylate buffer). The brain was extracted and slices of 150 µm thickness were cut with a vibratome (Thermoscientific, #Microm HM650V) in cold cacodylate buffer.
 
+**Table 1.**
+ Coordinates of adult male zebra finch nuclei targeted with tracer injections.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>RA</th>
+      <th>AreaX</th>
+      <th>Avalanche</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Head angle (degrees)</td>
+      <td>65</td>
+      <td>45</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>Pipette angle (degrees)</td>
+      <td>45</td>
+      <td>-20</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Anterior-Posterior (mm)</td>
+      <td>3</td>
+      <td>6.45*</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>Media-Lateral (mm)</td>
+      <td>2.45</td>
+      <td>1.55</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Dorso-Ventral (mm)</td>
+      <td>1.3</td>
+      <td>2.95</td>
+      <td>1.05</td>
+    </tr>
+    <tr>
+      <td>*with a 0 degree pipette angle</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Characteristics of the two presented datasets.BDA: biotinylated dextran amines
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Section number</th>
+      <th>Anatomical region</th>
+      <th>Tracer</th>
+      <th>Injection site</th>
+      <th>Primary antibody</th>
+      <th>Secondary antibody</th>
+      <th>EM size (μm x μm)</th>
+      <th>EM dwell time (ns)</th>
+      <th>Pixel size (nm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>507</td>
+      <td>HVC</td>
+      <td>Alexa 488FITCTexas red</td>
+      <td>RAAreaXAvalanche</td>
+      <td>Rat anti-488Mouse anti-FITCGoat anti-rhodamine</td>
+      <td>488 anti-rat647 anti-mouse546 anti-rhodamine</td>
+      <td>275 x 205</td>
+      <td>820</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>203</td>
+      <td>Dorsal RA</td>
+      <td>BDA</td>
+      <td>Caudal RA</td>
+      <td>mouse anti-BDA</td>
+      <td>647 anti-mouse</td>
+      <td>185 x 140</td>
+      <td>6000</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Tracer-antibody library.LT: Life Technologies. VL: Vector Laboratories. JI: Jackson Immunoresearch.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Alexa 488LT #D-22910</th>
+      <th>FITCLT #D-1820</th>
+      <th>Texas RedLT #D-3328</th>
+      <th>BDALT #D-1956</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody species</td>
+      <td>rabbit (LT #A-11094)rat (Biotem #custom)</td>
+      <td>mouserabbit (LT #A-889)</td>
+      <td>goat (VL #SP-0602)</td>
+      <td>mouse (JI #200-002-211)</td>
+    </tr>
+  </tbody>
+</table>
+
 Portions of the slices containing the nucleus HVC were dissected out with a surgical scalpel and processed similarly as in the protocols described by Deerinck et al. (2010) and Tapia et al. (2012). The sections were washed with cacodylate buffer, stained with heavy metals (2% osmium tetroxide reduced with 1.5% potassium ferrocyanide, washed in ddH2O, 1% thiocarbohydrazide, washed in ddH2O, 2% osmium tetroxide, washed in ddH2O, 1% uranyl acetate at 4 oC overnight, washed in ddH2O, 0.6% lead aspartate, washed in ddH2O), dehydrated with increasing ethanol concentrations (50%, 70%, 80%, 90%, 95%, 100%, 100%), infiltrated in epoxy durcupan resin (10 g component A/M, 10 g B, 0.3 g C, 0.2 g D), and finally cured in an oven at 52oC for 48 hr.
 
-## Resin preparation
+### Resin preparation
 
 To produce a magnetically augmented sample block with homogeneous cutting properties, a magnetic resin was sought that ideally had the same resin formulation as that used for tissue embedding (durcupan), or at least similarly based on epoxy, as well as well-dispersed superparamagnetic nanoparticles. A literature search with these criteria yielded only the publication by Puig et al. (2012), which I decided to reproduce without modifying the epoxy formulation, using the highest reported particle concentration (8% wt) with well-dispersed particles. In addition, a fluorescent dye and fluorescent beads were added. The procedure is as follows.
 
 800 μL of superparamagnetic iron oxide nanoparticles (CAN Hamburg, #SMB-0–038, 10 mg/mL) dispersed in tetrahydrofuran (Sigma-Aldrich, #401757) was mixed for a few seconds with 28 μL oleic acid (Sigma-Aldrich, #O1008) in a small glass vial (VWR, 66030–668) using a glass stirring rod and was left overnight in a fume hood. Then 0.1 g of the epoxy resin DGEBA (Diglycidylether of Bisphenol A, #D3415 Sigma Aldrich) and 5 μL BDMA (Sigma-Aldrich, #185582) were added to the vial. In addition to the original protocol published by Puig et al. (2012), fluorescent particles (Cospheric, mean diameter 2 µm, #FMG, #FMR, 0.2% and 1% wt concentration in Datasets 1 and 2, respectively) and coumarin dye (SigmaAldrich, #257370, 7-Amino-4-methylcoumarin, 0.5% wt concentration) were added to the resin mixture. The vial was then placed on a 90 oC hot plate for 15–20 min while its content was manually stirred with a glass stirring rod until the mix became homogeneous. The resin mixture was poured between a glass slide (bottom) and a piece of aclar sheet (top), both coated with mold separating agent (#62407445, Glorex, as used by Knott et al., 2011). A PDMS spacer of about 600 μm thickness surrounded the resin and a small weight was put on top of the aclar sheet for flattening. The resin was cured for 6 hr at 70 oC.
 
-## Block augmentation
+### Block augmentation
 
 For block augmentation, a piece of magnetic resin and a dummy were successively glued to the sample of interest using the durcupan formulation described above for brain tissue preparation. The execution details of the procedure are described in Figure 1—figure supplement 3.
 
-## Section collection
+### Section collection
 
 The collection procedure is described in the main text. The custom diamond knife with a bath of dimensions 55 mm x 44 mm (35 degrees clearance angle, now commercially available, #Ultra ATS, Diatome, Switzerland) was placed in an ultramicrotome (Leica, UC6) with a 0 degrees knife angle in the ultramicrotome holder. Sections were produced at the water surface at the rate of about eight sections/min using a vertical sectioning speed of 0.4 mm/s in the cutting window, and using the ‘fast’ return setting of the ultramicrotome arm outside the cutting window.
 
@@ -150,9 +339,9 @@ The water level in the bath was set with a motorized syringe pump (KDScientific,
 
 Silicon wafers (Ted Pella, #16015) were cleaved to approximately 40 mm x 45 mm chips, hydrophilized with oxygen plasma (1 min, 25 mA, Emitech #K100X) and placed in the knife bath at an ~ 2 degree angle relative to the water level thanks to asymmetrically stacked microscopy coverslips below the wafer chip, as sketched in Figure 2—figure supplement 5a.
 
-## Postembedding staining
+### Postembedding staining
 
-## Immunostaining
+#### Immunostaining
 
 I deposited and exchanged staining solutions manually with graduated pipettes on the sections collected on flat substrate. All steps were performed at room temperature. The blocking solution was:
 
@@ -160,17 +349,17 @@ I deposited and exchanged staining solutions manually with graduated pipettes on
 
 Proceed to fluorescent imaging within the next few hours to avoid decay of staining as reported by Micheva et al. (2010), Fig. Sup. S3.
 
-## Heavy metal post-staining
+#### Heavy metal post-staining
 
 Heavy metal post-staining was performed by exposing sections on wafer to a few drops of 2% aqueous uranyl acetate, then to a few drops of Reynold’s lead citrate (lead 4.4% wt concentration), both for 90 s. Between the two stains and after the second stain, the entire piece of wafer was immersed consecutively in three small Petri dishes of double distilled water for 30 s each. After the second washing, the wafer was dried with a manual air blower.
 
-## Section segmentation
+### Section segmentation
 
 The sections on wafer acquired with low-resolution LM (5x air objective, Figure 1c, Figure 1—figure supplement 1) were segmented semi-automatically with help of the Trainable Weka Segmentation plugin (Arganda-Carreras, 2016) in Fiji/TrakEM2 and custom scripts.
 
-## Section order retrieval with fluorescent beads
+### Section order retrieval with fluorescent beads
 
-## Metric
+#### Metric
 
 A metric was defined to assess the quality of the reordering process based on the imagery of fluorescent beads. This metric requires the knowledge of the ground truth order, which I obtained from the section order retrieval performed with EM imagery, and which I call the ‘EM order’.
 
@@ -178,25 +367,25 @@ For each section of a reordered dataset, a cost is given to the link between the
 
 0,1,0,1,4,1,0. A single flip such as 1-2-4-3-5-6 has the cost 0,1,0,1,0,0. The frequency of these costs gives an estimate of how precise the reordering is.
 
-## Section order retrieval
+#### Section order retrieval
 
 After preprocessing, the fluorescent bead imagery (‘Normalize local contrast’ Fiji plugin, thresholding), the center location of the beads was extracted (Maxima Finder) for each fluorescent channel. The locations of the beads from the two fluorescent channels were merged into a single final channel. I computed a dissimilarity value for every pair of sections. For each pair of bead center sets, descriptor matching was performed (using the descriptor-based bead alignment available in Fiji [Preibisch et al., 2009a]). If no geometric match was found for a given pair of sections, then the dissimilarity value was set to a fixed large number. If a geometric match was found, then a matching affine transform was computed and applied to the first bead set, thus bringing the pair of bead sets into a same coordinate system. In this common coordinate system, the bead centers contained outside a central bounding box were excluded from further calculations to avoid considering beads that are present in one section but not in the other one due to a limited field of view and due to the different orientations of the section. The pair of remaining bead sets was then matched again with the descriptor-based tool. For each match, that is each pair of two matching beads, the absolute difference of the diameters of the matching beads was computed. The dissimilarity of two sections was then defined as the sum of these diameter differences across all matching beads. A traveling salesman problem was formulated using the dissimilarities as distances between nodes of a graph, and the problem was solved with the Concorde solver (Applegate et al., 2003).
 
-## Section-order retrieval with EM
+### Section-order retrieval with EM
 
 An EM section was made of a mosaic of EM tiles (3 × 3 or 2 × 2). For a given pair of EM sections, a dissimilarity was computed for each pair of corresponding mosaic tiles and averaged across the tiles to yield the complete dissimilarity between two EM sections. The dissimilarity of two tiles was calculated as follows: an affine transform matching was sought between the pair of images using the SIFT matching algorithms implemented in Fiji. If no affine transform was found, then the pair of tiles was given an arbitrary high dissimilarity. If a transform was found, then it was used to align the two tiles and a normalized cross-correlation was computed in a central box of 2000 × 2000 pixels. The value (2 – correlation) was used as the dissimilarity value between the two tiles. When averaging the dissimilarities across tiles for a given pair of EM sections, the non-matching tiles were excluded if other tiles were matching. It made the dissimilarity value more robust to artifacts that may have prevented a match from being found in one of the tiles. As with the beads, an open traveling salesman problem was solved with the computed dissimilarities that yielded the original order, as confirmed with manual inspection of the EM stack.
 
-## Imaging
+### Imaging
 
-## Wafer overview
+#### Wafer overview
 
 The sections on wafers were imaged in mosaics at low resolution (5x air objective) with widefield reflection brightfield and fluorescent light microscopy (so-called DAPI, GFP, and RFP channels) using a Zeiss Z1 microscope. Tiles were stitched with the Fiji stitching plugin (Preibisch et al., 2009b) on the brightfield channel.
 
-## Fluorescent beads
+#### Fluorescent beads
 
 The silicon wafer chip was installed in the holder of an inverted LM microscope (Nikon Ti Eclipse; inverted; Objective — 20x-0.7 NA; illumination — Lumencor, #Spectra). Using a python script controlling the microscope through Micromanager (Stuurman et al., 2010; Edelstein et al., 2014), landmarks were mapped to generate a rigid transform between the coordinates of the low-resolution wafer overview imagery and the coordinates of the wafer in the microscope stage. The mapping consisted of manually driving the x-y stage to the first two landmarks and clicking a button. The custom software then conveniently placed the stage at the calculated locations of the remaining landmarks for the user to adjust the exact location. After manual calibration of the hardware autofocus (Nikon, #PerfectFocusSystem), fluorescent LM acquisition was performed automatically with the same script controlling the microscope through Micromanager. Depending on the cross-sectional area of the magnetic resin, a single field of view or a mosaic of fields of views can be acquired at each section. A single field of view was used for the datasets presented here. Hardware autofocus was performed at each field of view. The channels that were used were the standard so-called GFP and RFP for the fluorescent beads, and DAPI for visualization of the coumarin dye.
 
-## Fluorescently stained tissue
+#### Fluorescently stained tissue
 
 Drops of mounting medium (Molecular Probes, #S36937) were deposited on the freshly stained sections and were subsequently covered with standard microscope coverslips of appropriate size to cover the area of collected sections. The coverslip was maintained in place with a pair of small magnets (one below the wafer, one above the coverslip, supermagnete, #S-04–01 N, neodymium cylinder, 1 mm thickness, 4 mm diameter).
 
@@ -206,7 +395,7 @@ We defined all imaging parameters in our custom python software: fluorescent cha
 
 After LM imaging, the pair of small magnets was gently removed before removing the cover slip while taking care that the immersion oil did not come into contact with the wafer. The wafer was immersed three times for 5 min each in a small dish of double-distilled water to wash away the mounting medium. The wafer was finally dried at room temperature with a hand blower.
 
-## Electron microscopy
+#### Electron microscopy
 
 The wafers were mounted on standard EM stubs (Tedpella, #16111, #16144) with double-sided carbon tape (Tedpella, #16084–1, #16084–2) and inserted into a scanning electron microscope (Zeiss, Merlin).
 
@@ -216,13 +405,13 @@ As with LM imaging, four previously defined landmarks were mapped onto the wafer
 
 Mosaics of 3 × 3 (Dataset 1) and 2 × 2 (Dataset 2) tiles were acquired for each section. An autofocus-autostigmation-autofocus sequence was performed at the center of each mosaic. To avoid performing that sequence on a low-contrast area, such as a large cell body or a blood vessel, a subregion was automatically selected around the center of the mosaic that contained maximal contrast (as determined by the intensity after applying an edge filter). The main EM imaging parameters were: two keV incident energy, secondary electron inlens detector, 800 pA current probe, 3.5 mm working distance, and 750 ns and 6000 ns dwell time for Datasets 1 and 2, respectively.
 
-## Multibeam EM
+#### Multibeam EM
 
 In another small experiment, 15 sections were collected with MagC on a small silicon wafer chip (Figure 1—figure supplement 5a). One section was acquired at 4 nm/pixel resolution with a 91-beam Zeiss MultiSEM scanning electron microscope and 400 ns dwell time (there was no intermediate immunostaining and no heavy-metal poststaining).
 
 In another experiment, after the single-beam EM acquisition of Dataset 1 (that is, after the entire CLEM pipeline including immunostaining, LM, washing, poststaining, single beam EM), the wafer chip (Figure 1c) was submitted to wafer-wide homogeneous broad ion beam milling (Veeco Nexus IBE350, two degrees glancing angle, 12 s, 0.8 kV ion energy, 10 rpm rotation) resulting in homogeneous section etching of about 25 nm (Templier, in preparation). One section was then acquired with a Zeiss MultiSEM, with the same imaging conditions as mentioned above.
 
-## Data assembly
+### Data assembly
 
 The brightfield channel of the LM imagery was used for the stitching, alignment and registration operations (with an initial ‘Normalize local contrast’ from Fiji with blocks of about 100 pixels x 100 pixels) performed in Fiji. The stitching was then propagated to all fluorescent channels. Stitching and alignment (Saalfeld et al., 2012) of the EM imagery was done with custom scripts in TrakEM2.
 
@@ -230,11 +419,11 @@ For cross-modality registration, the stitched mosaics of the brightfield channel
 
 For visualization purposes, the correlative LM-EM imagery was converted to the neuroglancer format and hosted online for convenient in-browser visualization and annotation (see Methods, paragraph K). Datasets 1 and 2 are available at https://neurodata.io/data/templier2019/.
 
-## Conversion of correlative LM-EM imagery for neuroglancer
+### Conversion of correlative LM-EM imagery for neuroglancer
 
 The EM imagery assembled in TrakEM2, along with all transforms (affine, elastic and moving least squares), was converted into a Render (https://github.com/saalfeldlab/render) project (Zheng et al., 2018) with custom scripts and the TrakEM2 converter script of the Render project. Similarly, TrakEM2 projects were created for each LM channel that contained stitching and moving least square transforms. These TrakEM2 projects were converted to separate Render projects. The imagery of the EM and LM Render projects was rendered to files using a custom script and the Render script for mipmap creation (render_catmaid_boxes). With a custom script, these mipmaps were then used to create chunks at different resolutions in the ‘precomputed format’ of Neuroglancer (https://github.com/google/neuroglancer). The chunks were uploaded to an online cloud storage service (Google storage) and an instance of the Neuroglancer software hosted online (neurodataviz from the MICrONS project) was used to visualize the data. The EM imagery and each fluorescent LM channel were added into a neuroglancer session as separate data sources. After online visualization with neuroglancer, stacks of correlative imagery were fetched using the cloud-volume library (https://github.com/seung-lab/cloud-volume). Neurite tracings were performed in neuroglancer (line annotations).
 
-## Sectioning quality and restart experiment
+### Sectioning quality and restart experiment
 
 The following experiment was performed to assess the potential knife damage caused by magnetic particles and whether next-day sectioning restart of magnetically augmented blocks leads to section losses.
 
@@ -244,7 +433,7 @@ About 20 hr later, the sample block was moved back a few microns away from the k
 
 Sectioning was resumed for 1000 more sections, during which the experimenter visually inspected sectioning through the binocular of the ultramicrotome and counted failed sectioning attempts. Finally, section number #~5000 was manually collected.
 
-## Video-recorded magnetic collection
+### Video-recorded magnetic collection
 
 A different setup was used for Video 1 but it had no important differences compared to the setup used for Datasets 1 and 2. The ultramicrotome used was a Reichert-Jung Ultracut E, the custom knife bath was larger (11 cm x 11 cm), a cylindric magnet (15 mm diameter x 8 mm) and a silicon wafer of 100 mm diameter (P-type; Boron-doped; <100> OFF; resistivity 0.1–100 Ohm.cm) were used. Sections were manually blown away from the bath walls with a glass pipette, which was used to produce very gentle puffs of air. 100 consecutive sections were cut with a nominal thickness of 50 nm. The first section had only a small partial magnetic part, which nevertheless remained stuck to the second section, therefore it was still successfully magnetically collected with all of the other sections.
 

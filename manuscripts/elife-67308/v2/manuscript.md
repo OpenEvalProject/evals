@@ -85,9 +85,21 @@ Applying our method to these data, we generated maximum likelihood reconstructio
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig1-v2.jpg)
 
-**Figure 1.:** Squares indicate the extent to which an individual-to-individual transmission event is consistent with the data collected, when considered on a pairwise level. Our analysis highlighted multiple potential transmission events occurring within each ward, but transmission between individuals on different wards was uniformly assessed as unlikely. Further analyses of the data considered wards as independent and isolated locations.Figure 1—source data 1.
+**Figure 1.:** Squares indicate the extent to which an individual-to-individual transmission event is consistent with the data collected, when considered on a pairwise level. Our analysis highlighted multiple potential transmission events occurring within each ward, but transmission between individuals on different wards was uniformly assessed as unlikely. Further analyses of the data considered wards as independent and isolated locations.
 
 Reconstructed transmission networks for the four green wards are shown in Figure 2. Our method requires each transmission in a network to be consistent with a statistical model of pairwise viral transmission (Illingworth, 2020). As such, a broad range of possibilities could in theory be inferred. At one extreme, the infections on a ward could all arise from a single introduction of the virus, with all cases arising via transmission from a single individual. At the other extreme, the infections could all be entirely independent of one another, with no transmission between cases at all. Our approach uses sequence data and epidemiological information to identify cases that are plausibly linked by direct transmission, before inferring the maximum likelihood network reconstruction of events. Across the green wards, the majority of cases were inferred to be connected to at least one other via transmission, with 42 out of 54 cases being joined into networks. These networks involved between 2 and 11 cases each (mean 5.9 cases). This contrasts with results from the single red ward (Figure 3), in which only 9 of 19 cases were inferred to be linked to others via transmission (mean inferred network size 2.3 cases). Our result corresponds to the nature of the wards studied; the repeated transfer of infected patients onto a red ward leads to an increased number of independent introductions.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig2-v2.jpg)
+
+**Figure 2.:** Circles represent individuals and arrows show transmission events. White circles represent patients while grey circles represent health care workers. Individuals for which no transmission events were inferred are represented as isolated circles.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Statistics were calculated across maximum likelihood network reconstructions. The great majority of patient infections were inferred to arise from other patients, while HCWs were infected roughly equally by patients and other HCWs.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Data were compiled over sets of plausible reconstructions, weighted by likelihood. The width of each arrow is proportional to the probability that a specific transmission event occurred. Arrows are shown for events with a 4% or greater probability of having occurred. Red and blue lines indicate mutually incompatible events; D3 could have infected D5 or D8, but the data precluded both of these occurring in the same reconstruction.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig3-v2.jpg)
 
@@ -100,6 +112,30 @@ Some of the wards analysed appeared to show uneven patterns of viral transmissio
 A statistical analysis of the inferred networks provided evidence for a role for superspreading behaviour during transmission. As a first step in evaluating this, we calculated the level of uncertainty in each inferred network, combining data from the maximum likelihood network with that from other plausible, but lower-likelihood networks. Figure 2—figure supplement 2 shows statistical ensembles of networks inferred for the green wards. In this figure, the width of an arrow is proportional to the probability that transmission occurred between each pair of individuals. The maximum likelihood network inferred for Ward E was the only plausible solution given by our reconstruction method.
 
 In a second step, we fitted models to data from these ensembles, calculating probability distributions of the number of individuals infected by each person in the dataset. A negative binomial model, in which the extent of viral spreading was overdispersed, gave a better explanation of the data, measured using the Bayesian Information Criterion, than a simpler model in which all individuals transmitted equally (Figure 4). In the best-performing model of viral spreading, 87% of individuals either did not transmit the virus, or transmitted only to one other. Taken across all individuals, 21% of individuals were responsible for 80% of viral transmission, a result very similar to that found among the general population (Adam et al., 2020). A repeat of this calculation for the green wards alone gave similar statistics (Figure 4—figure supplement 1), with 23% of individuals in these wards being responsible for 80% of transmission (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig4-v2.jpg)
+
+**Figure 4.:** (A) Fit of the output of the Poisson model (black dots) to the ensemble data (yellow bars). The weighted number of transmissions per individual reflects the uncertainty in the network reconstruction across the ensemble. (B) Fit of the output of the negative binomial model (black dots) to the ensemble data (yellow bars). (C) Proportions of individuals causing different proportions of infections. A negative binomial model (red line) fitted to all ward data produces a result similar to that of Adam et al., 2020 (blue dot), with 20% of individuals being responsible for 80% of infections. A Poisson model fitted to the same data (dashed grey line) has 20% of individuals being responsible for 60% of infections.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Fit of the output of a Poisson model (black dots) to the ensemble data (yellow bars). The weighted number of transmissions per individual reflects the uncertainty in the network reconstruction across the ensemble. (B) Fit of the output of the negative binomial model (black dots) to the ensemble data (yellow bars). (C) Proportions of individuals causing different proportions of infections. A negative binomial model (green line) fitted to data from the green wards suggests that 20% of individuals were responsible for 75% of infections. A Poisson model fitted to the same data (dashed gray line) has 20% of individuals being responsible for 58% of infections.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Distributions of known Ct values collected from all samples from the wards studied (yellow) and from individuals identified as superspreaders (grey). Samples from superspreaders were not statistically different from those from the population as a whole. Ct values were not available for all samples.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Maximum likelihood network of transmission events. (B) Maximum likelihood spread of infection given this network. (C) Distributions of the times at when transmission occurred were calculated relative to the time of the first transmission event, in this case from A1 to A6. Timings account for infection dynamics and the locations of individuals during the course of the outbreak.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Maximum likelihood network of transmission events. (B) Maximum likelihood spread of infection given this network. Timings are shown relative to the first transmission event. Infection of the first individual (B0) is not included. (C) Distributions of the times at when transmission occurred were calculated relative to the time of the first transmission event. Timings account for infection dynamics and the locations of individuals during the course of the outbreak.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Maximum likelihood network of transmission events. (B) Maximum likelihood spread of infection given this network. Timings are shown relative to the first transmission event. Infection of the first individual (D1) is not included. (C) Distributions of the times at when transmission occurred were calculated relative to the time of the first transmission event. Timings account for infection dynamics and the locations of individuals during the course of the outbreak.
 
 In our maximum likelihood reconstructions, a total of five individuals infected three or more others, including one HCW and four patients. Clinical characteristics of these individuals were explored, but are not described in detail or assigned to their anonymised ward clusters to preserve patient anonymity. Of the four patients, all had suspected hospital-acquired COVID-19 and significant comorbidities: two had a history of chronic liver disease, and two had previous haematological malignancies, one of whom was still on immunosuppressive treatment. Immunosuppression has been associated with prolonged viral shedding (Italiano et al., 2020; Avanzato et al., 2020). One superspreader was confused and mobile on the ward. Another had a fever for several days before being tested for SARS-CoV-2, which had been attributed to a pre-existing community-acquired bacterial infection. The only HCW superspreader exclusively infected other HCWs, and shared accommodation with several of these individuals. Cycle threshold (Ct) values of samples collected from identified superspreader individuals were not statistically distinct from those from individuals in the study in general (Figure 4—figure supplement 2).
 
@@ -127,11 +163,11 @@ In conclusion, we have here applied a combined statistical approach to infer and
 
 ## Materials and methods
 
-## Study design, setting, and participants
+### Study design, setting, and participants
 
 Prospective surveillance studies of COVID-19 infection in patients and healthcare workers (HCW) were conducted at Cambridge University Hospitals NHS Foundation Trust (CUH), as previously described (Rivett et al., 2020; Meredith et al., 2020). Nasopharyngeal swab samples were collected and submitted to the Public Health England (PHE) Clinical Microbiology and Public Health Laboratory (CMPHL) or the Department of Medicine, University of Cambridge for SARS-CoV-2 diagnostic testing, as detailed below. Samples included in this study were collected during the first epidemic wave, between 22nd March and 14th June 2020. Clinical, laboratory, and patient location data were extracted from the hospital information system (EPIC Systems Corporation, Verona, USA). HCW ward location data were collected by members of the HCW screening team. PHE recommendations for COVID-19 infection prevention and control, including PPE use, were followed throughout the course of the study.
 
-## Testing criteria
+### Testing criteria
 
 Patients and HCW had separate testing criteria and sample workflows. HCW were tested in the CUH HCW screening programme, which included both asymptomatic screening and symptomatic testing arms. Asymptomatic screening at the time of this study was focused on staff working on COVID-19 ‘red’ wards (designated for patients with confirmed COVID-19 infection), wards with hospital-acquired infection outbreaks, and wards with high rates of staff positivity. Suggested symptomatology to prompt staff testing are described in Rivett et al., 2020, divided into ‘major’ criteria (e.g. fever and/or new persistent cough) and ‘minor’ criteria (e.g. coryzal symptoms, headache, myalgia).
 
@@ -141,15 +177,15 @@ There was no systematic asymptomatic screening for inpatients in CUH during the 
 
 Visitor restrictions were introduced on 25th March 2020 and so were present for almost all of this study (first positive swab was for Ward E, collected a few days before this). After 25th March, visitors to adult patients were only permitted in exceptional circumstances: for patients at the end of life or visitors with a direct care role for the patient.
 
-## Laboratory methods
+### Laboratory methods
 
 Samples underwent nucleic acid extraction and were tested for presence of SARS-CoV-2 using a validated in-house RT qPCR assay, as previously described (Price et al., 2021). The test was reported as SARS-CoV-2 PCR positive if the cycle threshold (Ct) value was less than or equal 36. A 15 microlitre aliquot of the RNA extract of each positive sample was transferred to the Department of Pathology, University of Cambridge, for sequencing.
 
-## Sequencing and genomic analysis
+### Sequencing and genomic analysis
 
 Samples were assigned COG-UK sequencing codes and sequenced using a multiplex PCR based approach according to the modified ARTIC v2 protocol with v3 primer set (artic-ncov, 2019; Quick, 2020). Amplicon libraries were sequenced using MinION flow cells v9.4.1 (Oxford Nanopore Technologies, Oxford, UK). Genomes were assembled using reference-based assembly and a bioinformatic pipeline (Artic Network, 2021). All sequences underwent quality control (QC) filtering, including a 20x minimum coverage cut-off for any region of the genome and 50.1% cut-off for calling single nucleotide polymorphisms (SNP).
 
-## Sample selection
+### Sample selection
 
 Patients from CUH were determined to have indeterminate, suspected or definite hospital-acquired infections (HAI) on the basis of days from admission to first positive SARS-CoV-2 test, using the same definitions as in Meredith et al., 2020; Price et al., 2021: indeterminate = positive test after 48 hr and less than 7 days post admission; suspected = positive test 7 to 14 days post admission; definite = positive test greater than 14 days post admission. Wards were ranked by their combined number of indeterminate, suspected and definite HAI cases plus HCW cases (taking the HCW ward to be any ward each HCW had worked on within the preceding 14 days before testing positive). 15 wards at CUH had two or more HAI and HCW cases occur within 14 days of each-other. The five wards with the largest number of combined HAI and HCW cases were chosen for this study and named wards A to E (Supplementary file 1).
 
@@ -157,49 +193,152 @@ Each of the selected wards had 10 or more HAI plus HCW cases, therefore represen
 
 An initial network analysis of patient bed movements was conducted to add patients to each ward cluster that may have been in contact with the HAI cases, either with community onset infections on the same ward or while they were co-located on other wards outside of the ‘outbreak wards’ themselves. This analysis was undertaken in two steps using SQL v18.5.1 and FoodChain-Lab (an extension of the Knime Analytics Platform v3.6.1). The first step involved utilising SQL to process case and ward movements data from CUH patients, creating a list of ward-based case co-locations that were within the set parameters of the network analysis model. These parameters were (1) an infectious period that included the 4 days prior to symptom onset up until 7 days after symptom onset, and (2) a susceptibility period of 14 days prior to symptom onset. Where symptom onset date was not available, the case positive specimen date was used instead. The second step was to import the case co-locations data into FoodChain-Lab, which was used to draw a social network diagram of cases and their ward co-locations with one another that met the set parameters. This network diagram was used to identify any clustering of cases by ward that had not met the original criteria of HAI and HCW cases but could have been involved in shared transmission with those individuals based on their co-location within the infection period of the virus. This yielded the final case set for each ward cluster taken forward for analysis using the transmission reconstruction model.
 
-## Data collection
+### Data collection
 
 Data were collected on COVID-19 symptom onset dates for all included individuals from the five ward clusters. These were collected separately for HCW and patients. HCW testing was part of the CUH HCW screening programme, and testing criteria are described in Rivett et al (Sikkema et al., 2020). (Table 1). Staff who tested positive were then contacted by members of the HCW screening team and asked retrospectively about their symptoms, and onset dates were recorded by the HCW screening team and used in this analysis. For patients, symptom onset dates were collected by retrospective review of patients’ electronic hospital records (EPIC Systems), usually noted at presentation by the clerking doctor but all records were examined for any suggestion of symptoms. Symptom definitions followed the standard national recommendations at the time: initially fever, breathlessness, and new continuous cough; muscle aches were added in early May and loss of taste or smell was included from mid-May. If the infection was asymptomatic, or symptom onset dates could not be determined, then the date of first positive SARS-CoV-2 test was used instead.
+
+**Table 1.**
+ Case numbers in the five major ward clusters. ‘Total cases before network analysis’ were derived by adding patients with potential hospital-acquired COVID-19 infections and HCW cases from each ward. The five wards with the largest combined number of HAI and HCW cases within the study period were analysed, with anonymised ward names A to E. ‘Ward type’ refers to whether wards were ‘green’ (intended for patients negative for COVID-19), or ‘red’ (intended for COVID-19 patients). The breakdown of HAI and HCW cases for each of the included wards is shown in columns ‘HAI cases before network analysis’ and ‘HCW cases before network analysis’, respectively. The ‘network analysis’ at this stage identified additional patients that could have been involved in transmission with the HAI patients on the basis of co-location on the same or other wards within a plausible timeframe for SARS-CoV-2 transmission (described in Materials and methods). This yielded the final cases analysed for each ward cluster using the transmission reconstruction model. The final column shows the number of cases from each ward cluster for which genomic data were available. In total, there were 98 cases with genomic data and 129 SARS-CoV-2 genomes analysed in the study (the larger number of genomes than cases is because of multiple samples per patient that underwent SARS-CoV-2 sequencing). Three patients were included in two ward clusters each (which is why the total of the ‘Cases after network analysis with genomic data’ column is 101). HAI = hospital-acquired infection (definition in Methods); HCW = healthcare worker.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Ward name</th>
+      <th>Ward type</th>
+      <th>Total cases before network analysis</th>
+      <th>HAI cases before network analysis</th>
+      <th>HCW cases before network analysis</th>
+      <th>Cases after network analysis</th>
+      <th>Cases after network analysis with genomic data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>Green</td>
+      <td>14</td>
+      <td>12</td>
+      <td>2</td>
+      <td>16</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>Green</td>
+      <td>11</td>
+      <td>2</td>
+      <td>9</td>
+      <td>15</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>Green</td>
+      <td>12</td>
+      <td>5</td>
+      <td>7</td>
+      <td>20</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>Green</td>
+      <td>14</td>
+      <td>4</td>
+      <td>10</td>
+      <td>16</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>Red</td>
+      <td>13</td>
+      <td>3</td>
+      <td>10</td>
+      <td>47</td>
+      <td>39</td>
+    </tr>
+  </tbody>
+</table>
 
 Patient ward movement data through the hospital was downloaded from the hospital electronic records system (EPIC). Data on HCW shift patterns were collected manually using hospital shift rostering information and, in some cases, directly contacting the HCW. HCW were defined as being either present or absent on each ‘outbreak’ ward within each 24 hr period (i.e. time of day or shift length was not taken into account). No HCW worked on multiple outbreak wards, although staff contact outside of wards (during lunch, outside of work etc) cannot be excluded.
 
 Each anonymised patient code was linked to COG-UK sequencing codes, with sample collection date and laboratory receive dates recorded for each sample that was sequenced. Dates of symptom onset and sample collection for each individual are shown in Figure 5.
 
-## Model development
+![Figure 5.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig5-v2.jpg)
+
+**Figure 5.:** Blue squares show days on which individuals became symptomatic, while green squares show inferred days of individuals becoming symptomatic when these dates were unknown or not applicable. Red circles show days on which samples were collected from individuals for genome sequencing. Dates within each ward are normalised so that the first event on any ward is day zero. We note that not all collected samples led to genome sequences of sufficient quality to be useful in this study.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Data were compiled over sets of plausible reconstructions, weighted by likelihood. The width of each arrow is proportional to the probability that a specific transmission event occurred. Arrows are shown for events with a 4% or greater probability of having occurred. Ensembles for wards A and C were not sufficiently changed by removing the extension for the change to be visible within our plotting framework.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Fit of the output of a Poisson model (black dots) to the ensemble data (yellow bars). (B) Fit of the output of the negative binomial model (black dots) to the ensemble data (yellow bars). (C) Proportions of individuals causing different proportions of infections. A negative binomial model (blue line) fitted to data from the green wards suggests that 21% of individuals were responsible for 80% of infections.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Case of the last transmission event. Transmission occurs from A to B at time tAB. Viral sequence data is collected from A at time DA and from B at time DB. Grey markers show points which may be located in multiple places on the tree. (B) General case of transmission from A to B. The notation A* denotes a lineage that includes the individual A plus potentially further individuals downstream to whom A transmits the virus.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Here sequences collected from the individuals B and C (i.e. in the set Ia) have the variant a, but no other sequences have this variant. Data from individual i was collected at time Di. We assume that variants can be gained only once, and that variants never revert. Then 1: There can be only one transmission into the set Ia. Suppose that A, who is not in Ia, transmits to B, who is in Ia. Then the gain of the variant must occur between the earlier of tAB and DA and the latter of DB and tBC. 2: B can transmit to D not in Ia, but no other individual in Ia can transmit out of Ia. Transmission from B can occur before the gain of the variant, but transmission from any other C in Ia would involve the reversion of the variant. 3. All transmissions from B to D not in Ia must occur before all transmissions from B to C in Ia.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/67308/elife-67308-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** Comparisons of the number of infections per individual and the probabilities of specific edges being found in the transmission network for a ‘partial’ set of networks and for a more complete, ‘full’ set of networks. The full set contains approximately 30% more networks than the partial set, adding in likelihoods calculated for networks within three steps of the maximum likelihood network. Statistics calculated over the two sets are extremely similar, suggesting convergence to the true statistical ensemble.
+
+### Model development
 
 Given a set of data from infected individuals, comprising viral genome sequences collected from each infection, dates on which individuals became symptomatic, and when individuals were co-located, we sought to identify whether and how these cases are linked by transmission. We noted that, prior to analysis, we did not know whether the cases for which we had data were connected via transmission; a set of cases may be anything from completely unlinked to a single connected transmission network.
 
 As a first stage in our method, we partitioned our data into subsets of cases that might plausibly be linked by transmission events. This step was conducted using a pairwise measure of the consistency of the data observed from two individuals with the hypothesis of direct transmission having occurred between these two individuals; calculation of this measure was previously implemented in the A2B-COVID software package (Illingworth, 2020). The mathematical principles of this pairwise measure of consistency are explained fully elsewhere (Illingworth, 2020); below we provide a summary.
 
-## Pairwise likelihood of transmission
+### Pairwise likelihood of transmission
 
-Our pairwise likelihood function combines information from a broad variety of sources. Firstly, dates on which individuals first reported symptoms give an indication of the likelihood of transmission between individuals. Previous publications have characterised the infectivity profile of SARS-CoV-2 (i.e. the time between becoming symptomatic to transmitting the virus to another person conditional on causing infection), by fitting a shifted gamma distribution to data from confirmed infection, inferring the distribution parameters α=97.185, β=0.2689, and shift s=25.625 (Ashcroft et al., 2020; He et al., 2020). Further, the time between an individual being infected with SARS-CoV-2 and developing symptoms has been described as a lognormal distribution, with inferred parameters μ=1.434 and σ=0.6612 (He et al., 2020; Li et al., 2020). We use these distributions to assess the extent to which the observed symptom-onset times are compatible with transmission. Specifically, we denote by XT the event that transmission from i to j occurred on day T, and by X the event that transmission from i to j occurred at all. For convenience we collect together parameters, writing θ1={α, β, s, μ, σ}. Supposing that individuals i and j became symptomatic on the days Si and Sj respectively, we then derive the expression:P(T|θ1,Si,X)PSj|θ1,XT=∫T-Si-0.5T-Si+0.5e-(x+s)/β(x+s)α-1β-αΓαdx∫Sj-T-0.5Sj-T+0.5e-logx-μ22σ2xσ2πdxwhere a time of becoming symptomatic was unknown, the date at which that individual tested positive was used, corrected by a constant term estimated from the distribution of known times between positive test dates and dates of becoming symptomatic (Illingworth, 2020).
+Our pairwise likelihood function combines information from a broad variety of sources. Firstly, dates on which individuals first reported symptoms give an indication of the likelihood of transmission between individuals. Previous publications have characterised the infectivity profile of SARS-CoV-2 (i.e. the time between becoming symptomatic to transmitting the virus to another person conditional on causing infection), by fitting a shifted gamma distribution to data from confirmed infection, inferring the distribution parameters α=97.185, β=0.2689, and shift s=25.625 (Ashcroft et al., 2020; He et al., 2020). Further, the time between an individual being infected with SARS-CoV-2 and developing symptoms has been described as a lognormal distribution, with inferred parameters μ=1.434 and σ=0.6612 (He et al., 2020; Li et al., 2020). We use these distributions to assess the extent to which the observed symptom-onset times are compatible with transmission. Specifically, we denote by XT the event that transmission from i to j occurred on day T, and by X the event that transmission from i to j occurred at all. For convenience we collect together parameters, writing θ1={α, β, s, μ, σ}. Supposing that individuals i and j became symptomatic on the days Si and Sj respectively, we then derive the expression:
+
+$$
+P(T|\theta_{1},S_{i},X)PS_{j}|\theta_{1},X_{T}=\int_{T-S_{i}-0.5}^{T-S_{i}+0.5}\frac{e^{-(x+s)/\beta}(x+s)^{\alpha-1}\beta^{-\alpha}}{Γ\alpha}dx\int_{S_{j}-T-0.5}^{S_{j}-T+0.5}\frac{e^{-\frac{logx-\mu^{2}}{2\sigma^{2}}}}{x\sigma\sqrt{2\pi}}dx
+$$
+
+where a time of becoming symptomatic was unknown, the date at which that individual tested positive was used, corrected by a constant term estimated from the distribution of known times between positive test dates and dates of becoming symptomatic (Illingworth, 2020).
 
 We elaborate on this model by incorporating data describing the location of individuals, noting that transmission can only occur when people are co-located, and viral genome sequences collected from individuals in the study.
 
-## Incorporating location data
+### Incorporating location data
 
 We have, for individuals in our study, information describing the wards on which patients were hosted, and the wards on which HCWs worked shifts. Given individuals i and j we defined a contact metric wij(T) equal to the probability that i and j were co-located on any given day T.
 
 Ward data describing patient locations and health care worker shift dates were used to calculate values wij for each pair of individuals. For any given ward, we set the value wi(W,T) to equal one if the individual i was known to be on ward W on day T. If a healthcare worker worked a shift on ward W on day T, we further assigned a minimum value of 0.5 to the values wi(W,T-1) and wi(W,T+1), accounting for night shifts overlapping days, and the potential for fomite transmission. Removing these additional days led to some small alterations in the inferred networks (Figure 5—figure supplement 1), but did not substantially affect our primary result, with again 80% of cases being caused by 21% of individuals (Figure 5—figure supplement 2). For all other dates, we set wi(W,T) to be zero. In the event that location data was unknown, we assigned a value for wi(W,T) of 1 for patients for the most common ward on which individuals in a cluster were located, and a value for wi(W,T) of 4/7 for health care workers, reflecting common shift patterns of work. The value wij(T) for any two individuals i and j was then defined as the maximum of the product of wi(X,T) and wj(X,T) calculated across all wards X for that value of T.
 
-## Incorporating viral genome sequences
+### Incorporating viral genome sequences
 
 Our pairwise likelihood accounted for data from viral genome sequencing using a separate likelihood function. For each pair of individuals, sequences were assessed according to the number of nucleotides by which they differed from a pairwise consensus, calculated from the two sequences, with reference to the broader set of sequences collected from a ward. At a given genome position, the consensus was defined as the nucleotide shared by the two sequences if they were identical, or by the most common nucleotide in the broader set if the two sequences differed.
 
-The Hamming distances between each individual sequence and the pairwise consensus were measured. Each distance reflects both the potential evolution of the virus and the extent of measurement error inherent to the sequencing process. Using data from CUH, an estimate of the measurement error was previously calculated as E=0.414 nucleotides per pair of sequences, or 0.212 nucleotides per sequence (Illingworth, 2020). To model viral evolution we adopted the rate γG=0.0655 nucleotide substitutions per day, equal to the global rate of viral adaptation (Hadfield et al., 2018). We then derived a Poisson model for the observed number of nucleotide changes resulting from evolution and error. We denote the days on which viral sequence data was collected from the individuals i and j as D = {Di, Dj}, and the Hamming distances of each sequence from their consensus as Hi and Hj, and again use a shorthand expression θ2={E, γG}. We then have the result thatPHi,Hj|θ2,D,XT=E/2+γGPiHie-E/2+γGPiHi!E/2+γGDj-QiHje-E/2+γGDj-QiHj!
+The Hamming distances between each individual sequence and the pairwise consensus were measured. Each distance reflects both the potential evolution of the virus and the extent of measurement error inherent to the sequencing process. Using data from CUH, an estimate of the measurement error was previously calculated as E=0.414 nucleotides per pair of sequences, or 0.212 nucleotides per sequence (Illingworth, 2020). To model viral evolution we adopted the rate γG=0.0655 nucleotide substitutions per day, equal to the global rate of viral adaptation (Hadfield et al., 2018). We then derived a Poisson model for the observed number of nucleotide changes resulting from evolution and error. We denote the days on which viral sequence data was collected from the individuals i and j as D = {Di, Dj}, and the Hamming distances of each sequence from their consensus as Hi and Hj, and again use a shorthand expression θ2={E, γG}. We then have the result that
 
-We now combine the above terms, writing y = {Si, Sj, Hi, Hj}, θ = {θ1,θ2}, and denoting by X the event that transmission occurred from i to j at any time to obtainP(y|θ,D,X)=∑TP(T|Si,θ1)PSj|θ1,XTwij(T)PHi,Hj|θ2,D,XT
+$$
+PH_{i},H_{j}|\theta_{2},D,X_{T}=\frac{E/2+\gamma_{G}P_{i}^{H_{i}}e^{-E/2+\gamma_{G}P_{i}}}{H_{i}!}\frac{E/2+\gamma_{G}D_{j}-Q_{i}^{H_{j}}e^{-E/2+\gamma_{G}D_{j}-Q_{i}}}{H_{j}!}
+$$
+
+We now combine the above terms, writing y = {Si, Sj, Hi, Hj}, θ = {θ1,θ2}, and denoting by X the event that transmission occurred from i to j at any time to obtain
+
+$$
+P(y|\theta,D,X)=\sum_{T}^{}P(T|S_{i},\theta_{1})PS_{j}|\theta_{1},X_{T}w_{ij}(T)PH_{i},H_{j}|\theta_{2},D,X_{T}
+$$
 
 This expression was used to assess the consistency of the data y from each pair of individuals with the hypothesis of transmission from i to j.
 
-## Pairwise thresholds
+### Pairwise thresholds
 
 The value p(y|θ,D,X) is defined over a discrete space of symptom times and sequence measurements. Calculating this over all feasible terms within this discrete space, we derived threshold values, conditional upon D, for which 95% and 99% of genuine transmission events would obtain values greater than the threshold. In this way, potential transmission events were classified into ‘consistent’ events (probability greater than the 95% threshold), ‘borderline’ events (probability between the 95% and 99% thresholds) and ‘unlikely’ events (probability below the 99% threshold).
 
 The pairwise analysis, described to this point, was used to assess the data for potential between-ward transmission events.
 
-## Inferring a maximum likelihood transmission network
+### Inferring a maximum likelihood transmission network
 
 As a first step in identifying transmission networks in our data, we clustered individuals using the pairwise thresholds. By way of notation we denote the transmission event from individual i to individual j as i→j.
 
@@ -207,11 +346,15 @@ Beginning with a single subset containing an arbitrary individual, we added an i
 
 If clustering identified individuals that were alone within a subset, these individuals were removed from the analysis at this point, giving further attention to clusters that contained at least two individuals.
 
-## Network likelihood of transmission
+### Network likelihood of transmission
 
 Building upon our pairwise method, we calculated the likelihood of a transmission network. A transmission network must contain at least one transmission event. We consider the network N, comprising transmission events i1→j1, i2→j2, etc, in which the transmission even ik→jk occurs on day Tk. We here write T* = {Tk} to represent the set of all transmission times.
 
-Similar to the calculation above, we consider symptom onset times, the locations of individuals, and sequence components, using these to derive an expression for a particular network of transmission events. Considering the non-genetic data, we make the assumption that the intrinsic dynamics of each transmission are independent of one another, so that the joint distribution of the observed symptom times Si given a particular network and set ot transmission times XTk, isPSi|θ1,XTk=∏kwikjkTkP(Tk|θ1,Sik)PSjk|θ1,XTk
+Similar to the calculation above, we consider symptom onset times, the locations of individuals, and sequence components, using these to derive an expression for a particular network of transmission events. Considering the non-genetic data, we make the assumption that the intrinsic dynamics of each transmission are independent of one another, so that the joint distribution of the observed symptom times $S_{i}$ given a particular network and set ot transmission times $X_{T_{k}}$, is
+
+$$
+PS_{i}|\theta_{1},X_{T_{k}}=\prod_{k}^{}w_{i_{k}j_{k}}T_{k}P(T_{k}|\theta_{1},S_{i_{k}})PS_{j_{k}}|\theta_{1},X_{T_{k}}
+$$
 
 For the sequence component of the likelihood, we consider the transmission tree defined by our network. Adopting an infinite sites model (Kimura, 1969), we assume that each observed nucleotide substitution occurred only once, with the reversion of substitutions being impossible. Further, we assumed that, while a substitution that was observed in only one sequence could have arisen from measurement error, substitutions that were observed in two or more sequences could not have resulted from error. Under these assumptions, we classified potential substitutions by the sequences they would be observed in, then adopted a Poisson likelihood model, comparing the periods of time in which sets of substitutions could have occurred to the numbers of substitutions that were observed in the data (Felsenstein, 1981).
 
@@ -231,13 +374,29 @@ Finally, if DA < tAB, it is impossible for mutations to be observed in precisely
 
 In all the above scenarios, mutations which are observed in B and C, plus individuals downstream of B and C, must occur in the window between tAB and the latter of DB and tBC. In each case, we calculate the likelihood of having observed the given number of substitutions from a Poisson distributed variable with expectation given by the rate of evolution γG multiplied by the time available for substitutions to occur, plus the measurement error E/2 where a variant was observed in only one sequence.
 
-In this manner, we derived a phylogenetic hierarchy, dividing the transmission tree into sets of individuals that would be expected to share genetic substitutions; we denote these sets Ia, for a=0, 1, 2, etc. For each such set, we calculate the length of time in which these substitutions would have to occur; we denote these times ta, counting the number of substitutions in each set, denoted Ma. We then have thatPIa,ta,Ma|θ2=∏aδaE/2+γGtaMae-δaE/2+γGtaMa!where the term δa is equal to one if Ia contains a single individual and 0 otherwise.
+In this manner, we derived a phylogenetic hierarchy, dividing the transmission tree into sets of individuals that would be expected to share genetic substitutions; we denote these sets Ia, for a=0, 1, 2, etc. For each such set, we calculate the length of time in which these substitutions would have to occur; we denote these times ta, counting the number of substitutions in each set, denoted Ma. We then have that
 
-We now construct our final expression. We write G = {{Ia}, {ta}, {Ma}}, and note that G, through the values ta, is dependent on the times of transmission T* and the times of sample collection, which we denote more generally by D = {Dk}. Denoting by y the set of all data collected from the individuals in the network, we then have the resultPy|θ,D,XN=∑T*=Tk∏k=1nwikjkTkP(Tk|θ1,Sik)PSjk|θ1,XTkPG|θ2,D,XT*where XN is the event that the transmission events in the network occurred at some set of times. We convert this into a log likelihood, calculating the likelihood of a given network N:log⁡LN|y=log⁡Py|θ,D,XN
+$$
+PI_{a},t_{a},M_{a}|\theta_{2}=\prod_{a}^{}\frac{\delta_{a}E/2+\gamma_{G}t_{a}^{M_{a}}e^{-\delta_{a}E/2+\gamma_{G}t_{a}}}{M_{a}!}
+$$
+
+where the term δa is equal to one if Ia contains a single individual and 0 otherwise.
+
+We now construct our final expression. We write G = {{Ia}, {ta}, {Ma}}, and note that G, through the values ta, is dependent on the times of transmission T* and the times of sample collection, which we denote more generally by D = {Dk}. Denoting by y the set of all data collected from the individuals in the network, we then have the result
+
+$$
+Py|\theta,D,X_{N}=\sum_{T*=T_{k}}^{}\prod_{k=1}^{n}w_{i_{k}j_{k}}T_{k}P(T_{k}|\theta_{1},S_{i_{k}})PS_{j_{k}}|\theta_{1},X_{T_{k}}PG|\theta_{2},D,X_{T*}
+$$
+
+where XN is the event that the transmission events in the network occurred at some set of times. We convert this into a log likelihood, calculating the likelihood of a given network N:
+
+$$
+log⁡LN|y=log⁡Py|\theta,D,X_{N}
+$$
 
 We find the maximum likelihood network N, and using likelihoods calculated for multiple networks generate statistical ensembles of networks, to estimate, for example, the number of individuals infected by a specific person on a ward.
 
-## Identifying plausible networks and orderings
+### Identifying plausible networks and orderings
 
 The likelihood calculation above presupposes the existence of an ordered transmission network with times assigned to each transmission event. Calculations were performed in order to derive these networks.
 
@@ -255,34 +414,46 @@ A third criterion was imposed by the existence of shared substitutions in the se
 
 Potential times for transmission events were determined by the first and last time points for which each event had a non-zero pairwise symptomatic likelihood. These times, in addition to the ordering constraints, impose a combinatorial set of possible times at which transmission occurred.
 
-Finally, the likelihood of a transmission network was calculated as the sum over all orderings of the sum over all sets of times of the timings-dependent network likelihood. Denoting the set of all orderings of transmission events as O, and the set of possible sets T* as T**, we havelog⁡Ln=log⁡∑O∑T**LnT**
+Finally, the likelihood of a transmission network was calculated as the sum over all orderings of the sum over all sets of times of the timings-dependent network likelihood. Denoting the set of all orderings of transmission events as O, and the set of possible sets T* as T**, we have
 
-## Maximum likelihood and uncertainty
+$$
+log⁡L_{n}=log⁡\sum_{O}^{}\sum_{T^{**}}^{}L_{n}^{T^{**}}
+$$
+
+### Maximum likelihood and uncertainty
 
 Calculating likelihoods for plausible transmission networks, the maximum likelihood network was identified. Uncertainty about properties of the network, for example whether a network includes a particular transmission event, and the number of individuals infected by each individual, was quantified by Bayesian methods. Assuming a uniform prior over the space of possible networks, the posterior probability that each potential network is the true network is obtained as the likelihood of this specific network divided by the sum of the likelihoods of all possible networks. Further statistics were calculated using these network probabilities. For example, the probability that individual A infected individual B was calculated as the sum of the probabilities of networks for which A infected B, while the probability that A infected a total of n other individuals was calculated as the sum of the probabilities of the networks in which A infected n other individuals.
 
 Where in the initial subsetting of individuals disjoint subsets were identified, independent network reconstructions were calculated for each subset. Where the largest complete network in a subset omitted more than one individual from the subset, repeat calculations, removing those individuals inferred to be in that network, were performed, aiming to identify transmission events between other individuals in the subset.
 
-## Computational considerations
+### Computational considerations
 
 Our algorithm runs at a combinatorial level of complexity dependent upon the number of individuals and the number of plausible paths through the network. We adopted different computational methods to identify maximum likelihood networks and statistical properties. For wards other than A, a rapid and comprehensive calculation of likelihoods for all plausible networks was possible. Uncertainty about properties of the network was then computed over the complete space of possible networks. For ward A, a first calculation was performed, generating likelihoods for a systematically chosen set of 0.2% of the plausible networks. From these networks, a heuristic likelihood threshold was chosen, identifying 10 networks with the highest likelihood values. These networks were used as starting points for independent downhill optimisation calculations. Given each network, the set of adjacent networks was identified, each constructed by the breaking and replacement of a single transmission event. Likelihoods were calculated for these networks, choosing the maximum likelihood network among these before repeating the calculation. Across these independent calculations, convergence to the reported maximum likelihood network was observed.
 
 Uncertainty calculations for ward A were performed initially over the systematic sample of network space, plus networks sampled in the downhill optimisation, plus all networks one or two steps adjacent from the maximum likelihood network; this included a total of 14,040 networks. A second calculation of statistics describing network uncertainty was performed across all these networks but also including any remaining networks three steps adjacent from the maximum likelihood network; this included a total of 19,238 networks. Statistics derived from the smaller and larger ensembles of networks were then compared. The high degree of similarity between these statistics suggests convergence towards the true statistical average (Figure 5—figure supplement 5).
 
-## Evaluating superspreading
+### Evaluating superspreading
 
 Estimates of the distribution of the number of individuals infected by each person in each ward were used to assess the existence of superspreader individuals, comparing the fit of two models to the data.
 
-Our network inference provided for each individual a distribution of the number of people infected, so we could say that each individual i infected j others with probability pij. We used these values to define ‘latent data’ to which we can fit Poisson models describing different hypotheses about heterogeneity in transmission rates. Under a model with no superspreading, the number of individuals infected by each person would be expected to follow a Poisson distribution with some rate R of transmission. The marginal likelihood of this model, defined as the Poisson likelihood integrated over the distribution of the latent number of individuals infected by each person, is derived aslog⁡L1=∑ilog⁡∑jpijrje-rj!
+Our network inference provided for each individual a distribution of the number of people infected, so we could say that each individual i infected j others with probability pij. We used these values to define ‘latent data’ to which we can fit Poisson models describing different hypotheses about heterogeneity in transmission rates. Under a model with no superspreading, the number of individuals infected by each person would be expected to follow a Poisson distribution with some rate R of transmission. The marginal likelihood of this model, defined as the Poisson likelihood integrated over the distribution of the latent number of individuals infected by each person, is derived as
 
-This was maximised to estimate the common transmission rate r. We compared this hypothesis to an alternative, negative binomial model. This is equivalent to a model where the transmission rate is different for each person, so that each person infects a number of people described by a Poisson with a random rate drawn from a gamma distribution. We found parameters p and r maximising the marginal likelihoodlog⁡L2=∑ilog⁡∑jpijr+j-1r-11-pjpr
+$$
+log⁡L_{1}=\sum_{i}^{}log⁡\sum_{j}^{}p_{ij}\frac{r^{j}e^{-r}}{j!}
+$$
+
+This was maximised to estimate the common transmission rate r. We compared this hypothesis to an alternative, negative binomial model. This is equivalent to a model where the transmission rate is different for each person, so that each person infects a number of people described by a Poisson with a random rate drawn from a gamma distribution. We found parameters p and r maximising the marginal likelihood
+
+$$
+log⁡L_{2}=\sum_{i}^{}log⁡\sum_{j}^{}p_{ij}\frac{r+j-1}{r-1}1-p^{j}p^{r}
+$$
 
 The marginal likelihoods L1 and L2 were then compared using the Bayesian Information Criterion (Schwarz, 1978) to account for the additional parameters in the second model.
 
-## Source of patient infections
+### Source of patient infections
 
 In the maximum likelihood networks, of 22 cases of patients being infected, two were inferred to originate from HCWs, with 20 of these being infected by other patients. We compared these values using a one-tailed test, calculating the cumulative density function of a binomial distribution with N=22 and probability 0.5 for the observed sample.
 
-## Data availability statement
+### Data availability statement
 
 This study utilised 129 SARS-CoV-2 genomes from 98 individuals across the five outbreak wards. The COG-UK and GISAID sequence IDs for these samples are shown in Supplementary files 1 and 2. Genomic data are publicly accessible through the COG-UK website data section (https://www.cogconsortium.uk/data/) and GISAID (https://www.gisaid.org/). Sequences generated through the COG-UK consortium have associated public metadata, including age, sex, collection date (if available), and location to the level of UK county. COG-UK samples are sequenced under statutory powers granted to the UK Public Health Agencies. Matched patient data is securely released to the COG-UK consortium under a data sharing framework which strictly controls the handling of patient data. Information on whether individuals are healthcare workers or patients, and groupings of patients into their shared ward locations in hospital, are not for public release linked to their sequencing identifiers (eg. COG-UK sequence codes). This is because of the risk of deductive disclosure, potentially compromising study participant anonymity. However, code to fully reproduce the transmission network analysis using anonymised metadata and altered SARS-CoV-2 sequences is available via GitHub at https://github.com/cjri/a2bnetwork (Illingworth, 2021; copy archived at swh:1:rev:2c08d1a789b7f1a9ce758a86db27fc3d78b9d003) If a researcher requires access to restricted metadata (including healthcare worker status and patient ward locations) linked to the COG-UK sequence codes, then this will require a formal data sharing agreement with the COG-UK Consortium and Cambridge University Hospitals NHS Foundation Trust (CUH). Data will only be shared for public health and research purposes, not for commercial enterprise, and only to individuals working at reputable research and public health institutions for which data security can be assured. Should this be required researchers should contact the study corresponding authors in the first instance.

@@ -15,12 +15,12 @@
 
 ### Affiliations
 
-1. https://ror.org/0546hnb39 Department of Biology, University of Konstanz Konstanz Germany
-2. https://ror.org/02dn9h927 Agroengineering Department/Department of Landscape Design and Sustainable Ecosystems, Agrarian and Technological Institute, RUDN University Moscow Russian Federation
+1. Department of Biology, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+2. Agroengineering Department/Department of Landscape Design and Sustainable Ecosystems, Agrarian and Technological Institute, RUDN University Moscow Russian Federation ([ROR:02dn9h927](https://ror.org/02dn9h927))
 3. Laboratory of Carbon Monitoring in Terrestrial Ecosystems, Institute of Physicochemical and Biological Problems of Soil Science of the Russian Academy of Sciences Pushchino Russian Federation
-4. https://ror.org/032e6b942 Alfred Wegener Institute Helmholtz Centre for Polar and Marine Research, Polar Terrestrial Environmental Systems Potsdam Germany
-5. https://ror.org/03s65by71 Department of Ecology and Evolutionary Biology, University of California, Santa Cruz Santa Cruz United States
-6. https://ror.org/03s65by71 Howard Hughes Medical Institute, University of California, Santa Cruz Santa Cruz United States
+4. Alfred Wegener Institute Helmholtz Centre for Polar and Marine Research, Polar Terrestrial Environmental Systems Potsdam Germany ([ROR:032e6b942](https://ror.org/032e6b942))
+5. Department of Ecology and Evolutionary Biology, University of California, Santa Cruz Santa Cruz United States ([ROR:03s65by71](https://ror.org/03s65by71))
+6. Howard Hughes Medical Institute, University of California, Santa Cruz Santa Cruz United States ([ROR:03s65by71](https://ror.org/03s65by71))
 7. Embark Veterinary, Inc Boston United States
 
 † Corresponding author
@@ -41,11 +41,46 @@ In 2019, we retrieved short subsurface sediment cores from two Arctic thermokars
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/89992/elife-89992-fig1-v1.jpg)
 
-**Figure 1.:** Mammuthus in recent lake sediments.(A) Read counts assigned to Mammuthus (square-root-transformed proportion of the respective number of raw reads per library) after hybridization capture enrichment of aeDNA of core LK-001 (shown are results of 22 libraries; one library was excluded as it did not produce any reads assigned to mammals); square-root transformation of percentage. Indicated are sample depths (in cm; 1.5–80 cm) and approximate ages as per 210Pb chronology (Appendix 1—table 7; to a maximum depth of 39.5 cm). The solid line indicates the general trend. Across the 22 libraries: (B) Fragment length distribution and (C) damage patterns (red indicates C-to-T transitions, blue G-to-A transitions. the Y-axis indicates the percentage of positions with a nucleotide change, the X-axis indicates the position along the fragment).
+**Figure 1.:** (A) Read counts assigned to Mammuthus (square-root-transformed proportion of the respective number of raw reads per library) after hybridization capture enrichment of aeDNA of core LK-001 (shown are results of 22 libraries; one library was excluded as it did not produce any reads assigned to mammals); square-root transformation of percentage. Indicated are sample depths (in cm; 1.5–80 cm) and approximate ages as per 210Pb chronology (Appendix 1—table 7; to a maximum depth of 39.5 cm). The solid line indicates the general trend. Across the 22 libraries: (B) Fragment length distribution and (C) damage patterns (red indicates C-to-T transitions, blue G-to-A transitions. the Y-axis indicates the percentage of positions with a nucleotide change, the X-axis indicates the position along the fragment).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/89992/elife-89992-fig2-v1.jpg)
 
-**Figure 2.:** Appendix 1—table 6).The bar chart indicates a maximum-likelihood estimate of the haplogroup proportions derived from the reads from the three sediment core libraries with the most mammoth reads.
+**Figure 2.:** The bar chart indicates a maximum-likelihood estimate of the haplogroup proportions derived from the reads from the three sediment core libraries with the most mammoth reads.
+
+**Table 1.**
+ Sediment cores retrieved from two lakes on the Yamal peninsula, Siberia.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Lake</th>
+      <th>Coordinates</th>
+      <th>m above sea level</th>
+      <th>Area</th>
+      <th>Water depth</th>
+      <th>Core length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LK-001</td>
+      <td>70°16'45.6" N, 68°53'02.8" E</td>
+      <td>28</td>
+      <td>38 ha</td>
+      <td>17 m</td>
+      <td>80 cm</td>
+    </tr>
+    <tr>
+      <td>LK-007</td>
+      <td>70°16'02.8" N, 68°59'35.7" E</td>
+      <td>36</td>
+      <td>39 ha</td>
+      <td>14 m</td>
+      <td>75 cm</td>
+    </tr>
+  </tbody>
+</table>
 
 As these results were entirely incongruent with the temporal occurrence of these two species, we employed several methods to confirm their validity, that is conventional PCR and Sanger sequencing of a mammoth cytochrome c oxidase subunit I (COI) fragment, mammal metabarcoding, and droplet digital PCR (ddPCR) of a mammoth cytochrome b fragment. We performed these analyses on core LK-001 and, to evaluate whether this is a locally isolated phenomenon, on a second short core, LK-007, from a nearby lake, which had been opened and processed under the same conditions indicated above to prevent contamination. Additionally, we screened the core LK-001 for plant macrofossils, of which three were sent for 14C AMS dating.
 
@@ -63,12 +98,12 @@ In the case reported here, the simultaneous finding of a Pb210 chronology indica
 
 ## Materials and methods
 
-## Field sites, DNA isolation and hybridization capture enrichment
+### Field sites, DNA isolation and hybridization capture enrichment
 
 In 2019, sediment cores (6 cm diameter; Table 1) were retrieved from two lakes (LK-001 and LK-007, respectively, Table 1) on the Yamal peninsula, Siberia, using a UWITEC piston corer (UWITEC, Mondsee, Austria). The lakes were located approximately 5 km apart. The cores were transported to the aDNA laboratories of the University of Konstanz, Germany; from lake LK-001, a secondary core was taken which was sliced in the field at 1 cm steps for radiometric dating from 0 to 39.5 cm depth, performed at the Environmental Radioactivity Research Centre, University of Liverpool (Supplement section 9). Additional 14 C dating of three specimens of plant remains, extracted at 36.5 cm, 51 cm, and 74 cm, was performed (Supplement section 9).
 
 Sedimentary DNA was isolated from 23 samples of core LK-001 and from 16 samples of core LK-007 using commercially available kits with modified protocols (Supplement section 1). The extracts of core LK-001 were subjected to library preparation for capture enrichment. Enrichment probes were designed from mitogenomes of 17 herbivorous mammal species that currently or previously occurred in the Arctic (Appendix 1—table 2) and few lichen sequences (Appendix 1—table 3). Genomic libraries were produced according to Li et al., 2013 with some modifications (Seeber et al., 2019; Seeber et al., 2023; Li et al., 2023; Supplement section 2). Filtered reads were mapped to mammalian mitogenomes, followed by BLASTn alignment against the complete NCBI nucleotide database and subsequent metagenomic analyses using MEGAN (Huson et al., 2016). Reads assigned to Mammuthus were mapped to a complete M. primigenius reference mitogenome (NCBI accession NC_007596.2); reads assigned to Coelodonta antiquitatis were mapped to the NCBI reference mitogenome NC_012681.1 2. The reads mapped to mammoth from the top three libraries were assigned to haplogroup using mixemt (https://github.com/svohr/mixemt, Copy archieved at Vohr, 2024) with a custom-made representative panel of 15 mammoth mitogenomes (Figure 2; Appendix 1—table 6).
 
-## Conventional PCR, mammal metabarcoding, and ddPCR
+### Conventional PCR, mammal metabarcoding, and ddPCR
 
 Based on the enriched fragments with the highest coverage, PCR primers specific to M. primigenius were designed using Geneious Prime 2022.1.1 (Kearse et al., 2012), that is mamm801 (5`- CCCATGCAGGAGCTTCTGTAGA-3`) and mamm800r (5`-GACATAGCTGGAGGTTTTATGT-3`) to produce a 121 bp amplicon of the CO1 gene. The specific PCR conditions are described in Supplement section 6. Mammal metabarcoding PCRs were performed on 21 DNA extracts of core LK-001 and 27 samples of core LK-007, with eight independent replicates, each. Each batch of PCRs included one non-template control. Established metabarcoding primers were used (Giguet-Covex et al., 2014), and human blocking primers (Garcés-Pastor et al., 2021) were included. PCR conditions are described in the supplementary material. Sequencing was performed on an Illumina NovaSeq platform, with 2x150 reads. The raw data were processed as described in the supplement. We used the sample LK-001_66.5 of core LK-001 which had produced one of the highest Mammuthus read counts after enrichment. The specific target amplified by the primer pair were used to design a probe (5`-GGATACTCCTGCAAGGTGAAGTG-3`). With this probe, ddPCR was performed with 24 extracts of core LK-001 and with 30 extracts of core LK-007, with three replicates, each (Supplement section 8).

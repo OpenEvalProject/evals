@@ -44,27 +44,100 @@ In this study, we show that using just the amino acid sequences of antibodies fr
 
 ## Results
 
-## Database
+### Database
 
 Our aggregate database of over 1000 antibody sequences is compiled from our own previously published and new data, in addition to data from published studies by the Mouquet and Nussenzweig labs (Table 1; Mouquet et al., 2010; Bunker et al., 2017; Planchais et al., 2019; Mouquet et al., 2011; Prigent et al., 2018). Using an ELISA-based assay, the reactivity of each antibody is tested against a panel of 4–7 biochemically diverse target antigens: DNA, insulin, lipopolysaccharide (LPS), flagellin, albumin, cardiolipin, and keyhole limpet hemocyanin (KLH). This panel has become increasingly prevalent in the literature for experimental measures of polyreactivity in antibodies (Mouquet et al., 2010; Prigent et al., 2016; Bunker et al., 2017; Planchais et al., 2019; Mouquet et al., 2011; Andrews et al., 2015; Prigent et al., 2018; Jain et al., 2017b; Neu et al., 2019; Wrammert et al., 2011). The ligands represent a diverse sampling of biophysical and biochemical properties: for example, enrichment in negative charge (DNA, insulin, LPS, albumin), amphipathic in nature (LPS, cardiolipin), exceptionally polar (KLH), or large in size (KLH, flagellin). From this panel, a general rating of ‘polyreactive’ or ‘non-polyreactive’ is given to 529 and 524 antibodies, respectively. For the purposes of this study, antibodies are determined to be polyreactive if the authors of the original studies determined a particular clone binds to two or more ligands in the panel. Those that bind to one or none of the ligands in the panel are deemed non-polyreactive.
 
+**Table 1.**
+ A quantification of the antibodies used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th># Polyreactive</th>
+      <th># Non-Polyreactive</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse IgA</td>
+      <td>205</td>
+      <td>240</td>
+      <td>445</td>
+    </tr>
+    <tr>
+      <td>HIV reactive</td>
+      <td>172</td>
+      <td>124</td>
+      <td>296</td>
+    </tr>
+    <tr>
+      <td>Influenza reactive</td>
+      <td>152</td>
+      <td>160</td>
+      <td>312</td>
+    </tr>
+    <tr>
+      <td>Complete dataset</td>
+      <td>529</td>
+      <td>524</td>
+      <td>1053</td>
+    </tr>
+  </tbody>
+</table>
+
 A limitation of this full polyreactivity dataset is that there exists an intermediate between the two classes. As discussed in the introduction, it is not immediately obvious where the line for polyreactivity should be drawn. An antibody that binds to 2–3 ligands may not necessarily achieve broad reactivity through the same mechanism as an antibody that binds four or more ligands from a panel of 6 or 7. To remove these ambiguities, a so-called 'parsed' dataset is generated whereby antibodies that bind 4–7 ligands are labeled polyreactive, antibodies that bind 0 panel ligands are labeled non-polyreactive, and those that bind 1–3 are removed from the analysis. The results presented below utilize the full dataset of 1053 antibody sequences, unless otherwise noted. Analysis of the parsed dataset can be found in the supplementary figures.
 
-## A surface-level analysis of polyreactive antibody sequences
+### A surface-level analysis of polyreactive antibody sequences
 
 As a first pass at the given dataset, we focus on the most simplistic of the possible explanations for differences between polyreactive and non-polyreactive antibodies, specifically the J- and V-gene usage of each group. Figure 1A and B, rendered with code adapted from the Dash et al. derived program TCRdist (Dash et al., 2017), represents each antibody V-gene as a line connecting a single heavy and light chain gene for the full human-derived antibody dataset (685 sequences). We repeat this analysis in Figure 1—figure supplement 1 using the parsed human-derived antibody dataset (472 sequences). Direct comparisons between mouse and human derived antibodies is difficult at the gene usage level. A similar analysis highlighting differences between mouse polyreactive and non-polyreactive antibodies can be found in the supplement (Figure 1—figure supplement 2).
 
-Genes are identified from nucleotide sequences using NCBI’s IgBLAST command line tool (Ye et al., 2013). Heavy and light chain genes that are shared between polyreactive and non-polyreactive sequences are colored for the top labeled instances. Genes that are labeled but not found above a 2% threshold in the opposite population are colored gray, whereas those that do not have a visible name are colored randomly to highlight variation in gene usage. From this comparison, it is clear that the variable gene usage is skewed between polyreactive and non-polyreactive sequences, with an enrichment of VH⁢1⁢-⁢69, VH⁢1⁢-⁢46, and VH⁢4⁢-⁢59 in the polyreactive population, a trend that persists in the parsed dataset (Figure 1—figure supplement 1). In contrast, no qualitative differences in the J-gene usage are readily discernible between these two groups (Figure 1—figure supplement 3).
+![Figure 1.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig1-v2.jpg)
 
-While the full alignment of these most used heavy chain variable genes shows a high degree of sequence similarity (Figure 1—figure supplement 4), Figure 1C highlights the regions of highest dissimilarity between the biophysical properties of amino acids in prevalent genes within each population. VH⁢3⁢-⁢23, the most prevalent gene in the non-polyreactive human dataset and the second most prevalent gene in the polyreactive human dataset, can be used as a reference for comparisons between genes enriched in each individual population. This reference gene shares a high degree of sequence similarity with the second and third most frequently occurring genes in the non-polyreactive dataset, VH⁢3⁢-⁢7 and VH⁢3⁢-⁢9, save for a lysine and aspartic acid pair in framework 2 of VH⁢3⁢-⁢7. The genes enriched in the polyreactive dataset, however, are quite different from this reference. All three of the polyreactive enriched genes have charged residues where the non-polyreactive enriched genes have hydrophilic residues (or vice versa) at IMGT positions 1, 13, and 90. These initial results hint at some systematic differences between the polyreactive and non-polyreactive antibody populations.
+**Figure 1.:** Gene usage diagrams comparing (A) human polyreactive and (B) non-polyreactive sequences show a qualitative difference in the VH gene usage. Shared colors indicate identical genes, gray indicates genes that are not seen in the other population at a level over 2%. Unlabeled genes are colored randomly to highlight genetic variation in the populations. (C) Sequence alignment of the most prevalent genes in the polyreactive and non-polyreactive populations compared to a reference gene common to each population. Hydrophobic amino acids are colored white, hydrophilic amino acids are colored gray, and positively or negatively charged amino acids are colored blue or red, respectively. (D) Percentage and raw count of observed gene usage for the polyreactive and non-polyreactive sequences.
 
-Figure 1D quantifies the extent of the difference in gene usage in each population by comparing these most prominent genes from our accumulated dataset of HIV- and influenza virus-reactive antibodies. While the two most common genes in the polyreactive dataset account for 27% of the human polyreactive antibodies in this study, the top three most common genes in the non-polyreactive dataset account for just over 17% of the total population. In addition to being the most prevalent gene in the polyreactive dataset, VH1−69∗01 has also been found historically to be more prevalent in broadly neutralizing antibodies against influenza viruses, in line with the previously mentioned overlap between bnAbs and polyreactivity (Andrews et al., 2015; Wrammert et al., 2011).
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Heavy chain gene usage plots comparing human polyreactive (A) and non-polyreactive (B) clones from the parsed dataset. Shared colors indicate identical genes, gray indicates genes that are not seen in the other population at a level over 2%. Unlabeled genes are colored randomly to highlight genetic variation in the populations.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Gene usage plots comparing mouse polyreactive (A) and non-polyreactive clones (B) including J-gene usage. Colors represent the most commonly used genes in each individual dataset, with colors not necessarily consistent between panels. Sequence alignments comparing the amino acids of these most common genes for polyreactive and non-polyreactive mouse antibodies for the heavy chain (C) and the light chain (D). Prevalent genes are present in both populations. Cysteine is colored yellow, hydrophobic amino acids are colored white, hydrophilic amino acids are colored gray, and positively or negatively charged amino acids are colored blue or red, respectively.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Gene usage plots comparing human polyreactive (A) and non-polyreactive clones (B). Colors represent the most commonly used genes in each individual dataset, with colors not necessarily consistent between panels.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Alignment uses IMGT numbering scheme and displays the entirety of the heavy chain variable gene’s amino acid sequence. Boxes represent the sections highlighted in Figure 1C. Cysteine is colored yellow, hydrophobic amino acids are colored white, hydrophilic amino acids are colored gray, and positively or negatively charged amino acids are colored blue or red, respectively.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Amino acid usage plot highlighting the occurrence of each amino acid in non-polyreactive (A) and polyreactive (B) CDR loops. Each line represents an individual clone, and each point along the line represents the count of each amino in that given clone. Black dots represent the average counts per clone.
+
+Genes are identified from nucleotide sequences using NCBI’s IgBLAST command line tool (Ye et al., 2013). Heavy and light chain genes that are shared between polyreactive and non-polyreactive sequences are colored for the top labeled instances. Genes that are labeled but not found above a 2% threshold in the opposite population are colored gray, whereas those that do not have a visible name are colored randomly to highlight variation in gene usage. From this comparison, it is clear that the variable gene usage is skewed between polyreactive and non-polyreactive sequences, with an enrichment of $V_{H}⁢1⁢-⁢69$, $V_{H}⁢1⁢-⁢46$, and $V_{H}⁢4⁢-⁢59$ in the polyreactive population, a trend that persists in the parsed dataset (Figure 1—figure supplement 1). In contrast, no qualitative differences in the J-gene usage are readily discernible between these two groups (Figure 1—figure supplement 3).
+
+While the full alignment of these most used heavy chain variable genes shows a high degree of sequence similarity (Figure 1—figure supplement 4), Figure 1C highlights the regions of highest dissimilarity between the biophysical properties of amino acids in prevalent genes within each population. $V_{H}⁢3⁢-⁢23$, the most prevalent gene in the non-polyreactive human dataset and the second most prevalent gene in the polyreactive human dataset, can be used as a reference for comparisons between genes enriched in each individual population. This reference gene shares a high degree of sequence similarity with the second and third most frequently occurring genes in the non-polyreactive dataset, $V_{H}⁢3⁢-⁢7$ and $V_{H}⁢3⁢-⁢9$, save for a lysine and aspartic acid pair in framework 2 of $V_{H}⁢3⁢-⁢7$. The genes enriched in the polyreactive dataset, however, are quite different from this reference. All three of the polyreactive enriched genes have charged residues where the non-polyreactive enriched genes have hydrophilic residues (or vice versa) at IMGT positions 1, 13, and 90. These initial results hint at some systematic differences between the polyreactive and non-polyreactive antibody populations.
+
+Figure 1D quantifies the extent of the difference in gene usage in each population by comparing these most prominent genes from our accumulated dataset of HIV- and influenza virus-reactive antibodies. While the two most common genes in the polyreactive dataset account for 27% of the human polyreactive antibodies in this study, the top three most common genes in the non-polyreactive dataset account for just over 17% of the total population. In addition to being the most prevalent gene in the polyreactive dataset, $V_{H}1−69^{∗}01$ has also been found historically to be more prevalent in broadly neutralizing antibodies against influenza viruses, in line with the previously mentioned overlap between bnAbs and polyreactivity (Andrews et al., 2015; Wrammert et al., 2011).
 
 Overall, there is a noticeable difference between the gene usage frequency of polyreactive and non-polyreactive antibodies, but the overlap in the usage of the two populations suggests that gene usage alone is not sufficient to distinguish the two groups. While there exist qualitative differences between framework sequences enriched in the polyreactive dataset compared to the non-polyreactive population, a look at the amino acid usage of the CDR loops of each group shows no significant differences (Figure 1—figure supplement 5). This implies that the positional context of a given amino acid is critical to tease out differences in antibody binding properties.
 
-## A position-sensitive matrix representation of sequences provides further insights into polyreactivity
+### A position-sensitive matrix representation of sequences provides further insights into polyreactivity
 
 To identify deeper trends in the biophysical properties of polyreactive antibodies, we utilize a new methodology to analyze and represent a range of different properties inherent to these sequences. Although the framework regions of antibodies are highly conserved, the CDR loops vary significantly in length and show very low conservation between populations. This makes alignment of CDR loops difficult without creating subgroups for loops of identical length. To overcome this, the sequence data is reorganized into a matrix representation (Figure 2A). Each sequence is aligned by the center of each CDR loop, with spaces between the loops set to zero and each amino acid encoded as a number from 1 to 21. While this alignment method excludes the framework regions of the antibodies and slightly averages out some of the properties at the edge of the CDR loops, we reason that most of these differences are evident in the gene usage analysis of the previous section. From this simple alignment, no obvious patterns emerge separating polyreactive and non-polyreactive antibodies; however, we can clearly see that mouse gut-derived IgA antibodies have generally shorter CDR3H loops, and more conserved CDR3L sequences when compared to the human-derived antibody sequences. All subsequent analysis is derived from this matrix representation of the sequences.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig2-v2.jpg)
+
+**Figure 2.:** (A) Matrix representation of the amino acid sequences used in this study provides a framework for further analysis. Each amino acid is encoded as a number from 1 to 21, represented by a distinct color in the matrix. A 0-value is used as a buffer between loops and is represented by the dark blue regions. The red line separates polyreactive and non-polyreactive sequences. (B) Amino acid frequency difference between polyreactive and non-polyreactive sequences for all six CDR loops. Residues more common in polyreactive sequences are shown in green, while those more common in non-polyreactive sequences are shown in pink. Loop positions correspond to the numerical position within the matrix of panel (A). (C) An in-depth representation highlighting the amino acid frequencies used to create panel (B). Only frequency changes greater than 10% are shown for clarity.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Matrix representation of the amino acid sequences used in this study provides a framework for further analysis. Each amino acid is encoded as a number from 1 to 21, represented by a distinct color in the matrix. A 0-value is used as a buffer between loops and is represented by the dark blue regions. The red line separates polyreactive and non-polyreactive sequences. (B) Amino acid frequency difference between polyreactive and non-polyreactive sequences for all six CDR loops. Residues more common in polyreactive sequences are shown in green, while those more common in non-polyreactive sequences are shown in pink. Loop positions correspond to the numerical position within the matrix of panel (A). (C) An in-depth representation highlighting the amino acid frequencies used to create panel (B). Only frequency changes greater than 10% are shown for clarity.
 
 With this new positionally sensitive and quantitative alignment method, we are able to further dissect the differences in amino acid sequences presented in Figure 1. Figure 2B uses this positional sequence encoding to determine the amino acid frequency difference between polyreactive and non-polyreactive sequences. For example, phenylalanine is found at position 93 in roughly 40% of polyreactive sequences and nearly 60% of non-polyreactive sequences. Therefore position 93, amino acid F has an intensity of −0.2 in Figure 2B.
 
@@ -72,13 +145,25 @@ From this panel it is evident that most of the major differences are in the germ
 
 This increased prevalence in loop hydrophobicity of polyreactive antibodies has been suggested before in the literature (Prigent et al., 2018) along with a net increase in positive charge (Rabia et al., 2018), so we next aimed to analyze this matrix systematically using biophysical properties inherent to the loops. A simple analysis of the full human and mouse-derived dataset investigating classical parameters explored previously by other groups (CDR loop length, net charge, net hydrophobicity, and gene usage) and some new properties (side chain flexibility, side chain bulk, and the Kidera Factors from Kidera et al., 1985) show some significant differences between polyreactive and non-polyreactive antibodies (Figure 3A,B). The versatility of the positionally sensitive amino acid matrix allows for the application of multiple 'property masks' to tease out the specific regions of each CDR loop that contributes most to these significant differences. Given a property, amino acid charge for example, we can replace each simple 1–21 representation with a distinct representation based upon amino acid properties.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig3-v2.jpg)
+
+**Figure 3.:** Plotting the average CDR loop lengths (A) and net antibody biophysical properties (B) show small but significant differences when analyzed in bulk. Basic properties 1–5 are hydrophobicity1, charge, hydrophobicity2, side chain flexibility, and side chain bulk. Plotting the average net charge (C) and hydrophobicity (D) as a function of position of polyreactive and non-polyreactive sequences highlights significant differences in CDR3H. Light shadow around lines represent bootstrap standard errors. All uncertainties obtained via bootstrapping. Stars indicate p-value ≤ 0.05 calculated via nonparametric Studentized bootstrap test. Bars with a single star above represent contiguous regions of significance. p-values in panels (A) and (B) corrected for multiple tests using the Bonferroni correction.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Plotting the average CDR loop lengths (A) and net antibody biophysical properties (B) show small but significant differences when analyzed in bulk. Basic properties 1–5 are hydrophobicity1, charge, hydrophobicity2, side chain flexibility, and side chain bulk. Plotting the average net charge (C) and hydrophobicity (D) as a function of position of polyreactive and non-polyreactive sequences highlights significant differences in CDR3H. Light shadow around lines represent bootstrap standard errors. All uncertainties obtained via bootstrapping. Stars indicate p-value ≤ 0.05 calculated via nonparametric Studentized bootstrap test. Bars with a single star above represent contiguous regions of significance.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Labels are still provided as 'non-polyreactive' and 'polyreactive' due to conservation of the number of sequences in each class. Plotting the average CDR loop lengths (A) and net antibody biophysical properties (B) show no differences between the null classes. Basic properties 1–5 are hydrophobicity1, charge, hydrophobicity2, side chain flexibility, and side chain bulk. Plotting the average net charge (C) and hydrophobicity (D) as a function of position of polyreactive and non-polyreactive similarly shows expected similarity between two groups of null distributed data. Light shadow around lines represent bootstrap standard errors. All uncertainties obtained via bootstrapping.
+
 In the matrix of Figure 2A leucine, histidine, and arginine are represented by the integers 3, 16, and 17. As an example, when the charge property mask is applied, the matrix representations of these three amino acids in all sequences is changed to 0.00, 0.091, and 1.00, respectively. We apply 62 such masks to this matrix, including simple metrics like charge, hydrophobicity, side chain flexibility, and side chain bulkiness to go along with more carefully curated metrics from the works of Kidera et al., 1985; Liu et al., 2018. A complete description of these properties can be found in the 'Key resources table' and in Appendix 1—table 1. The application of these masks gives an entirely new matrix describing the localization of amino acids with a given property.
 
 By averaging across all sequences in the polyreactive or non-polyreactive dataset when these masks are applied, we can readily see differences in charge patterning and hydrophobicity when comparing polyreactive and non-polyreactive sequences (Figure 3C,D).
 
 Including errors obtained via bootstrapping, we see that these differences are most pronounced in the center of CDR3H, with some differences also apparent in the remaining five loops. This analysis shows an overall bias toward neutrality in these regions; that is neither positively nor negatively charged, neither strongly hydrophilic nor hydrophobic. These results also contextualize the findings of Figure 2C. The trend toward hydrophobic residues in CDR2H of polyreactive antibodies importantly does not make these regions net hydrophobic, but instead make these regions slightly less hydrophilic on average. This effect is yet again more pronounced in the parsed dataset (Figure 3—figure supplement 1), with a strong trend toward interface neutrality. Conversely, when comparing bootstrap samples drawn from the null distribution, that is the 'polyreactive' or 'non-polyreactive' labels are given to antibody sequences at random, we see no difference between the biophysical properties of the two populations (Figure 3—figure supplement 2).
 
-## Systematic determination of the key contributions to polyreactivity
+### Systematic determination of the key contributions to polyreactivity
 
 Along with simple property averaging, these masks also give a high dimensional space from which we can determine, in an unbiased way, the primary factors that discriminate polyreactive and non-polyreactive antibodies. As a first pass, we apply a principal component analysis (PCA) to the matrix of all antibody sequences in an attempt to separate the polyreactive or non-polyreactive populations along the axes of highest variation in the dataset. Unfortunately, the principal components of these data do not effectively distinguish between the two populations (Figure 4—figure supplement 1).
 
@@ -86,25 +171,69 @@ To further investigate the physical and sequence-based properties of polyreactiv
 
 Figure 4A shows the results of LDA when applied to the parsed dataset comprised of 311 polyreactive antibodies and 362 non-polyreactive antibodies. As discussed in the introduction, the framing of polyreactivity as a binary problem is not a perfect assumption. The inclusion of intermediate levels of polyreactivity further confounds this issue. Indeed, the application of LDA to the full dataset shows a reduced ability to split polyreactive and non-polyreactive antibodies (Figure 4—figure supplement 2), likely due to this spectrum of polyreactivity. By considering only the parsed dataset for these classification analyses, we can improve confidence that the differences identified are those that separate strongly polyreactive and strongly non-polyreactive antibodies.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig4-v2.jpg)
+
+**Figure 4.:** (A) LDA applied individually to the complete parsed, Influenza, HIV, and mouse datasets. Percentages indicate the accuracy of the linear discriminant in labeling polyreactive and non-polyreactive antibodies. For these data, the plotted linear discriminants are comprised of different linear weights. (B) Accuracies of a polyreactivity classifier with a separate test and training dataset. Groupings in this figure are the same as those in panel (A). A support vector machine is generated for each individual population, and the reported values are accuracies calculated through leave one out cross validation. Shown are test data and a scrambled dataset where the labels of ‘polyreactive’ or ‘non-polyreactive’ are applied randomly (gray bars). The dotted line indicates 50% accuracy threshold. (C) Property matrices highlighting the top 10 weights of the linear discriminants in panel A for the parsed dataset with 75 vectors (C) and the HIV dataset with 75 vectors (D). Color bar represents the normalized weight of each property, where pink rectangles represent properties correlated with increased polyreactivity, and green rectangles represent properties correlated with decreased polyreactivity.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The analysis shows an inability to distinguish the two populations when showing the first three (A) and first two (B) principal components. (C) Examination of the weights of these first three components shows there is no one property disproportionately contributing to the variance in the dataset. The vector normal of each set of weights is equivalent to 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Linear discriminant analysis (LDA) applied to this full dataset is still capable of splitting the data with 70.4% accuracy in LDA mode I and 65% accuracy in the canonical classification LDA mode II. (B) A projection of the data in (A) on to the first two principal components rather than a linear discriminant highlights the shortcomings of PCA in its ability to effectively separate these two classes. (C) Plotting the linear weights from the linear discriminant in (A) shows the properties and CDR loops most important for discriminating polyreactive and non-polyreactive antibodies.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** The x-axes each represent a single biophysical property selected after parsing down the full feature list using a maximal difference algorithm and a correlation analysis.
+
 LDA analysis is versatile in its applications, and in this work, we utilize the method in two distinct modes. In the first mode, all available data is used as input with the output vector representing the features that best distinguish between the two complete populations. Plots of the data projected onto this vector (as in Figure 4A) represent the maximum achievable separation between the two populations for a defined number of input components from the given biophysical property matrix. In the second mode, we utilize LDA as a more canonical classification algorithm separating the data randomly into training and test groups. In this classification mode of operation, a combination of correlation analysis coupled with maximal average differences is used to parse input features, and a support vector machine (SVM) is used to generate the final classifier from these features. Accuracy of the resultant classifiers is assessed via leave one out cross validation, these accuracies are shown in Figure 4B.
 
 In the first mode, we find that the data can be split more effectively when the parsed dataset is broken up into the distinct ‘reactivity’ groups, that is those antibodies specific for influenza viruses, HIV, or found in the mouse gut (Figure 4A). This suggests there may be some bias due to antigen specificity, or lack thereof, whereby influenza virus-specific antibodies take a slightly different path toward polyreactivity compared to HIV reactive or mouse gut IgA antibodies. However, when using the classification mode, the classification accuracy is roughly equivalent across all tested datasets (Figure 4B). Testing this classifier with a scrambled dataset, where the labels are randomly assigned, shows the expected decrease in classification accuracy for each individual dataset for all ranges of input features.
 
 When applying LDA in the first mode (Figure 4A), we can directly pull the linear weights of each component comprising linear discriminant one and reveal which biophysical properties at each CDR position best distinguish between the two populations. The differences in the linear weights from the heavy chain CDR loops comprising each discriminant show clear differences when comparing the complete parsed dataset (Figure 4C) to the HIV only dataset (Figure 4D). In the parsed dataset, the discriminating weights are heavily concentrated in CDR2H. Whereas in the HIV dataset, these weights are centered around the CDR3H loop. Only the top 10 linear weights are shown in Figure 4C,D. The full matrix of linear weights can be found in Figure 4—figure supplement 3. The predominant discriminating factors between datasets might be due to the significant difference in CDR3H length between the mouse (IgA) and the human datasets, which confounds the analysis in this region. However, when examining each individual subset of the complete dataset we do find that there are common properties that seem to be the primary discriminators (i.e. largest linear weights). These are hydrophobicity 1, hydrophobicity 2, and hotspot variable 6 (a structural parameter related to α-helix propensity).
 
-## An information theoretic approach
+### An information theoretic approach
 
 While analysis of the biophysical property differences between polyreactive and non-polyreactive sequences provides some insight into the molecular basis for the polyreactivity phenomenon, a broad unifying pattern which could discern the biophysical mechanism behind polyreactivity was not readily evident across all types of antibodies. To probe these polyreactive sequences in a quantitative yet more coarse manner, we applied the formalism of information theory to our dataset of antibody sequences. Information theory, a theory classically applied to communication across noisy channels, is incredibly versatile in its applications, with high potential for further applications in immunology (Shannon, 1948; Román-Roldán et al., 1996; Cheong et al., 2011; Vinga, 2014; Mora et al., 2010; Murugan et al., 2012). In this work, we utilize two powerful concepts from information theory, namely Shannon entropy and mutual information.
 
-Shannon entropy, in its simplest form, can be used as a proxy for the diversity in a given input population. This entropy, denoted as H, has the general form shown in Equation 1:(1)H⁢(X)=-∑Xp⁢(x)⁢log2⁡p⁢(x)where p⁢(x) is the occurrence probability of a given event, and X is the set of all events. We can then calculate this entropy at every position along the CDR loops, where X is the set of all amino acids, and p⁢(x) is the probability of seeing a specific amino acid at the given position. In other words, we want to determine, for a given site in a CDR loop, how much diversity (or entropy) is present. Figure 5A shows this Shannon entropy distribution for the full dataset of polyreactive and non-polyreactive antibodies. Given there are only 20 amino acids used in naturally derived antibodies, we can calculate a theoretical maximum entropy of 4.2 bits, which assumes that every amino acid occurs at a given position with equal probability. Although the observed entropy of the CDR3H loop approaches this theoretical maximum, it hovers below it (3.5 Bits) due to the relative absence of the amino acids cysteine and proline in the center of this loop. The difference in the entropy distributions in CDR1H are consistent with the bias in amino acid usage in this region, shown previously in Figure 2.
+Shannon entropy, in its simplest form, can be used as a proxy for the diversity in a given input population. This entropy, denoted as H, has the general form shown in Equation 1:
 
-Importantly, from this entropy we can calculate an equally interesting property of the dataset, namely the mutual information. Mutual information is similar, but not identical to, correlation. Whereas correlations are required to be linear, if two amino acids vary in any linked way, this will be reflected as an increase in mutual information. In addition, due to some of the highly conserved residues in the non-CDR3H loops, high covariance can be achieved for residues that have not been specifically selected for in the germinal center. Using this information theory framework, these conserved residues have a mutual information of 0. Overall, the mutual information can be used to identify patterns in antibody sequences that were not readily evident through the previous analysis in this or other studies. If there is some coevolution or crosstalk between residues undergoing some selection pressure in the antibody maturation process, it will be reflected as an increase in the mutual information. In this work, mutual information I⁢(X;Y) is calculated by subtracting the Shannon entropy described above by the conditional Shannon entropy H⁢(X|Y) at each given position as seen in Equations 2 and 3:(2)H⁢(X|Y)=-∑y∈Yp⁢(y)⁢∑x∈Xp⁢(x|y)⁢log2⁡p⁢(x|y)(3)I⁢(X;Y)=H⁢(X)-H⁢(X|Y)
+$$
+H⁢(X)=-\sumXp⁢(x)⁢log_{2}⁡p⁢(x)
+$$
 
-To orient ourselves in physical space, Figure 5B gives an example crystal structure (PDB: 5UGY)(Whittle et al., 2011; Ziegler et al., 2014) highlighting the lateral arrangements of the CDR loops. The matrix in Figure 5C shows that the mutual information between CDR loops on this binding surface is increased in the heavy chains of polyreactive antibodies over non-polyreactive ones, suggesting an increase in loop crosstalk in antibodies that exhibit polyreactivity. Interestingly, it appears that there is a corresponding decrease of loop crosstalk in the light chains of polyreactive antibodies. Importantly, this crosstalk is increased across and within all loops when analyzing the parsed dataset (Figure 5—figure supplement 1). This observed crosstalk persists across all polyreactive antibodies within all subsets of our tested dataset and is evident both in intra-loop and inter-loop interactions. Figure 5D highlights some examples of the interesting significant differences of this crosstalk at distinct given positions within CDR1L, CDR1H, and CDR3H. A complete plot of the statistically significant differences (p≤0.05) of Figure 5C shows that a large portion of these differences are in fact significant (Figure 5—figure supplement 2).
+where $p⁢(x)$ is the occurrence probability of a given event, and X is the set of all events. We can then calculate this entropy at every position along the CDR loops, where X is the set of all amino acids, and $p⁢(x)$ is the probability of seeing a specific amino acid at the given position. In other words, we want to determine, for a given site in a CDR loop, how much diversity (or entropy) is present. Figure 5A shows this Shannon entropy distribution for the full dataset of polyreactive and non-polyreactive antibodies. Given there are only 20 amino acids used in naturally derived antibodies, we can calculate a theoretical maximum entropy of 4.2 bits, which assumes that every amino acid occurs at a given position with equal probability. Although the observed entropy of the CDR3H loop approaches this theoretical maximum, it hovers below it (3.5 Bits) due to the relative absence of the amino acids cysteine and proline in the center of this loop. The difference in the entropy distributions in CDR1H are consistent with the bias in amino acid usage in this region, shown previously in Figure 2.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig5-v2.jpg)
+
+**Figure 5.:** (A) The sequence diversity of the polyreactive and non-polyreactive datasets, quantified using Shannon Entropy, highlight similar diversities between the two groups. (B) A crystal structure (PDB: 5UGY) provides a visual representation of the lateral organization of the CDR loops on the antibody binding surface. (C) The difference in mutual information between polyreactive and non-polyreactive sequences shows that CDR loops of the heavy chain have more crosstalk in polyreactive antibodies. Each individual row represents the given condition, whereas each column gives the location the mutual information is calculated. (D) Singular slices of the mutual information show the data in (C), projected from the matrix onto a line, highlighting the significance of the differences at these particular locations. The positions of the ‘given’ amino acid, that is the particular Y in $H⁢(X|Y)$, are highlighted by gray boxes in panel C. Solid black lines indicate where on the X-axis this ‘given’ amino acid is located. Stars indicate statistical significance (p ≤ 0.05) calculated through a nonparametric permutation test. Bars with a single star above represent contiguous regions of significance.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The difference in mutual information between polyreactive and non-polyreactive sequences shows that CDR loops have more crosstalk in polyreactive antibodies. Each individual row represents the given condition, whereas each column gives the location the mutual information is calculated (left). Singular slices of the mutual information show the data projected from the matrix onto a line, highlighting the significance of the differences at these particular locations. The positions of the ‘given’ amino acid, that is the particular Y in $H⁢(X|Y)$, are highlighted by gray boxes (right). Solid black lines indicate where on the X-axis this ‘given’ amino acid is located. Stars indicate statistical significance (p ≤ 0.05) calculated through a nonparametric permutation test. Bars with a single star above represent contiguous regions of significance.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/61393/elife-61393-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Each black dot represents statistical significance (p ≤ 0.05) at that given location. Significance was calculated using a non-parametric permutation test.
+
+Importantly, from this entropy we can calculate an equally interesting property of the dataset, namely the mutual information. Mutual information is similar, but not identical to, correlation. Whereas correlations are required to be linear, if two amino acids vary in any linked way, this will be reflected as an increase in mutual information. In addition, due to some of the highly conserved residues in the non-CDR3H loops, high covariance can be achieved for residues that have not been specifically selected for in the germinal center. Using this information theory framework, these conserved residues have a mutual information of 0. Overall, the mutual information can be used to identify patterns in antibody sequences that were not readily evident through the previous analysis in this or other studies. If there is some coevolution or crosstalk between residues undergoing some selection pressure in the antibody maturation process, it will be reflected as an increase in the mutual information. In this work, mutual information $I⁢(X;Y)$ is calculated by subtracting the Shannon entropy described above by the conditional Shannon entropy $H⁢(X|Y)$ at each given position as seen in Equations 2 and 3:
+
+$$
+H⁢(X|Y)=-\sumy\inYp⁢(y)⁢\sumx\inXp⁢(x|y)⁢log_{2}⁡p⁢(x|y)
+$$
+
+
+
+$$
+I⁢(X;Y)=H⁢(X)-H⁢(X|Y)
+$$
+
+To orient ourselves in physical space, Figure 5B gives an example crystal structure (PDB: 5UGY)(Whittle et al., 2011; Ziegler et al., 2014) highlighting the lateral arrangements of the CDR loops. The matrix in Figure 5C shows that the mutual information between CDR loops on this binding surface is increased in the heavy chains of polyreactive antibodies over non-polyreactive ones, suggesting an increase in loop crosstalk in antibodies that exhibit polyreactivity. Interestingly, it appears that there is a corresponding decrease of loop crosstalk in the light chains of polyreactive antibodies. Importantly, this crosstalk is increased across and within all loops when analyzing the parsed dataset (Figure 5—figure supplement 1). This observed crosstalk persists across all polyreactive antibodies within all subsets of our tested dataset and is evident both in intra-loop and inter-loop interactions. Figure 5D highlights some examples of the interesting significant differences of this crosstalk at distinct given positions within CDR1L, CDR1H, and CDR3H. A complete plot of the statistically significant differences ($p\leq0.05$) of Figure 5C shows that a large portion of these differences are in fact significant (Figure 5—figure supplement 2).
 
 The ordering of these entropy and information plots was chosen to reflect the spatial arrangement of the loops on the antibody surface; as such they show also that mutual information between loops drops off with physical distance between these loops. In other words, loops (and residues) that are located close to each other will have more of an effect on their direct neighbors as opposed to those that are more physically distant. This increased mutual information suggests that in the heavy chains of polyreactive antibodies, there is enhanced cooperativity or co-evolution of the amino acids of intra- and inter-CDR loop pairs.
 
-## Extension of the analysis to MHC and MHC-like molecules
+### Extension of the analysis to MHC and MHC-like molecules
 
 Given the ability of this analysis pipeline to find nuanced differences between polyreactive and non-polyreactive antibodies, we next sought to expand the range of applications of our approach. Extension of the pipeline to the analysis of TCR sequences is trivial, due to the similar arrangement of CDR loops on the binding surface and the capability of IgBLAST to annotate TCR sequences (Ye et al., 2013). Instead, we sought to significantly expand the scope of this software by applying a similar approach to the analysis of MHC and MHC-like molecules. MHC molecules are encoded by a large superfamily of genes that are spread throughout the genome (Adams and Parham, 2001; Piertney and Oliver, 2006). MHC and MHC-like genes are found across a wide range of divergent species, and these genes have diversified extensively over time, making the distinction between orthologs and instances of convergent evolution difficult. In some cases, the divergence is extreme enough that phylogenetics cannot provide predictions of function. Given that these MHC molecules have evolved to present different antigen subtypes, such as lipid molecules in the case of CD1 proteins (Borg et al., 2007; Luoma et al., 2013; Adams, 2014), we explored the use of our pipeline as a classifier based on biophysical properties rather than phylogeny. In achieving this new functionality, the critical step lies in the transformation of the MHC sequences into a numeric form as in Figure 2A.
 
@@ -120,7 +249,7 @@ Once the data are in this form, all downstream analysis outlined previously can 
 
 Previous research has highlighted the importance of hydrophobicity, charge, and CDR loop flexibility on antibody specificity. In this work, we expand upon these previous results with a new bioinformatic and biophysical characterization of polyreactive antibodies. The software generated for this study provides a powerful computational tool which can be utilized by researchers interested in discerning differences between populations of adaptive immune molecules in broad contexts. Building off of the efforts of our own work and that of experimental collaborators, we were able to aggregate to date one of the largest publicly available datasets of antibodies tested for polyreactivity. Differences in the germline gene frequency and amino acid frequencies show there exists some underlying differences between polyreactive and non-polyreactive antibodies. A surface level analysis of this dataset is able to discriminate certain features of polyreactive and non-polyreactive antibodies, namely that on average, polyreactive antibodies are less strongly negatively charged, less hydrophilic, and have a higher prevalence of antibodies with longer CDR loops of the heavy chain. Importantly, however, these binding surfaces do not have a net positive charge nor are they net hydrophobic.
 
-Our results highlight an increase in VH⁢1⁢-⁢69 gene usage in polyreactive antibodies, an interesting finding given the substantial literature outlining its importance in diverse immune environments. In addition to the aforementioned role of VH⁢1⁢-⁢69 in broadly neutralizing anti-influenza and anti-HIV antibodies (Haynes et al., 2005; Mouquet et al., 2011; Andrews et al., 2015; Prigent et al., 2018), autoreactive chronic lymphocytic leukemic B cells commonly express receptors bearing VH⁢1⁢-⁢69 (Sasso et al., 1993; Forconi et al., 2010), and anti-HIV antibodies which target the membrane-proximal external region of HIV-1 envelope glycoproteins frequently utilize VH⁢1⁢-⁢69 (IAVI Protocol G Investigators et al., 2019). While previous reports suggest that the key feature permitting these auto-reactive or polyreactive interactions of VH⁢1⁢-⁢69 is an exceptionally hydrophobic CDR2H loop (Chen et al., 2019) our results suggest this does not explain the over-representation of this antibody in the polyreactive dataset, as on average the CDR2H of polyreactive antibodies is strongly hydrophilic. Instead, certain structural or dynamic features of the antibody may contribute to its out-sized role in critical biological contexts.
+Our results highlight an increase in $V_{H}⁢1⁢-⁢69$ gene usage in polyreactive antibodies, an interesting finding given the substantial literature outlining its importance in diverse immune environments. In addition to the aforementioned role of $V_{H}⁢1⁢-⁢69$ in broadly neutralizing anti-influenza and anti-HIV antibodies (Haynes et al., 2005; Mouquet et al., 2011; Andrews et al., 2015; Prigent et al., 2018), autoreactive chronic lymphocytic leukemic B cells commonly express receptors bearing $V_{H}⁢1⁢-⁢69$ (Sasso et al., 1993; Forconi et al., 2010), and anti-HIV antibodies which target the membrane-proximal external region of HIV-1 envelope glycoproteins frequently utilize $V_{H}⁢1⁢-⁢69$ (IAVI Protocol G Investigators et al., 2019). While previous reports suggest that the key feature permitting these auto-reactive or polyreactive interactions of $V_{H}⁢1⁢-⁢69$ is an exceptionally hydrophobic CDR2H loop (Chen et al., 2019) our results suggest this does not explain the over-representation of this antibody in the polyreactive dataset, as on average the CDR2H of polyreactive antibodies is strongly hydrophilic. Instead, certain structural or dynamic features of the antibody may contribute to its out-sized role in critical biological contexts.
 
 To dig deeper into the biophysical differences between polyreactive and non-polyreactive antibodies, we created an adaptable software for the automated analysis of large antibody datasets and the application of a new analysis pipeline for the study of polyreactive antibodies. Overall, the improvements of this software to the current state of antibody sequence analysis are sufficient to highlight key differences in the two populations with improved spatial resolution. The position sensitive sequence alignment is able to further parse through the genetic differences and show that in general, polyreactive antibodies have a tendency to have more hydrophobic residues in CDR2H, and a decreased preference for phenylalanine in CDR1H. While these observational differences provided some initial insight, a more rigorous biophysical treatment was necessary. With the addition of 62 biophysical properties analyzed using the position sensitive alignment, significant differences between the CDR3H loops in polyreactive and non-polyreactive antibodies become immediately evident, providing a more detailed depiction of the antigen binding surface of polyreactive antibodies.
 
@@ -142,14 +271,111 @@ The software generated for this study is publicly available as a python applicat
 
 ## Materials and methods
 
-## Software
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Jupyter notebook</td>
+      <td>DOI:10.3233/978-1-61499-649-1-87</td>
+      <td>RRID:SCR_018413</td>
+      <td>https://pypi.org/project/jupyter-client/5.2.3/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MatPlotLib</td>
+      <td>DOI:10.1109/MCSE.2007.55</td>
+      <td>RRID:SCR_008624</td>
+      <td>http://matplotlib.sourceforge.net</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seaborn</td>
+      <td>DOI:10.5281/zenodo.12710</td>
+      <td>RRID:SCR_018132</td>
+      <td>https://seaborn.pydata.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pandas</td>
+      <td>https://github.com/pandas-dev/pandas</td>
+      <td>RRID:SCR_018214</td>
+      <td>https://pandas.pydata.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SciPy</td>
+      <td>DOI:10.1038/s41592-019-0686-2</td>
+      <td>RRID:SCR_008058</td>
+      <td>http://www.scipy.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scikit-Learn</td>
+      <td>DOI:10.5555/1953048.2078195</td>
+      <td>RRID:SCR_002577</td>
+      <td>http://scikit-learn.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AIMS</td>
+      <td>This Paper</td>
+      <td>Boughter et al. 2020</td>
+      <td>https://github.com/ctboughter/AIMS</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TCRdist</td>
+      <td>Dash et al., 2017 DOI:10.1038/nature22383</td>
+      <td></td>
+      <td>https://github.com/phbradley/tcr-dist</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IgBLAST</td>
+      <td>DOI:10.1093/nar/gkt382</td>
+      <td>RRID:SCR_002873</td>
+      <td>http://www.ncbi.nlm.nih.gov/igblast/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BLAST</td>
+      <td>DOI:10.1093/nar/gkv1290</td>
+      <td>RRID:SCR_004870</td>
+      <td>http://blast.ncbi.nlm.nih.gov/Blast.cgi</td>
+    </tr>
+  </tbody>
+</table>
+
+### Software
 
 All analyses were performed in python, with code tested and finalized using Jupyter Notebooks (Kluyver et al., 2016). Figures were generated with MatPlotLib (Hunter, 2007) or seaborn (Ziegler et al., 2014), while the majority of data analysis was carried out using Pandas (McKinney, 2015), SciPy (Virtanen et al., 2020), and SciKit-learn (Pedregosa et al., 2011). All code and data is available at https://github.com/ctboughter/AIMS, including the original Jupyter Notebooks used to generate the data in this manuscript as well as generalized Notebooks and a python-based GUI application for analysis of novel datasets (Boughter, 2020; copy archived at swh:1:rev:f6c855ef4a7ce63f72dba6b34e9d0e9edd9200ce).
 
-## Statistical analysis
+### Statistical analysis
 
-Error bars in all plots are provided by the standard deviation of 1000 bootstrap iterations. Statistical significance is calculated using either a two-sided nonparametric Studentized bootstrap or a two-sided nonparametric permutation test as outlined in ‘Bootstrap Methods and Their Application’ (Davison and Hinkley, 2011). For the Studentized bootstrap, the bootstrapped data are drawn from a resampling of the null distribution of the data, with replacement. Practically, this entails combining the polyreactive and non-polyreactive antibodies into a single matrix, without labels, and using the Scikit-learn resample module to randomly separate this matrix into two classes, preserving the number of sequences in each population. To calculate bootstrapped averages, we draw from the empirical rather than null distribution. Statistical significance is estimated by calculating the p-value using the relation:(4)p=1+♯(z2≥z02)R+1
+Error bars in all plots are provided by the standard deviation of 1000 bootstrap iterations. Statistical significance is calculated using either a two-sided nonparametric Studentized bootstrap or a two-sided nonparametric permutation test as outlined in ‘Bootstrap Methods and Their Application’ (Davison and Hinkley, 2011). For the Studentized bootstrap, the bootstrapped data are drawn from a resampling of the null distribution of the data, with replacement. Practically, this entails combining the polyreactive and non-polyreactive antibodies into a single matrix, without labels, and using the Scikit-learn resample module to randomly separate this matrix into two classes, preserving the number of sequences in each population. To calculate bootstrapped averages, we draw from the empirical rather than null distribution. Statistical significance is estimated by calculating the p-value using the relation:
 
-Here, we calculate the p-value by counting the number of bootstrap iterations where z2 is greater than or equal to z02.z2 and z02 are Studentized test statistics taken from the null and empirical and distributions, respectively. R is the number of times this bootstrapping process is repeated. The general form of z is given by:(5)z=Y¯2−Y¯1(σ22n2−σ11n1)1/2where Y¯ represents the bootstrapped sample mean of each population, σ is the bootstrapped sample standard deviation, and n is the number of samples. Populations 1 and 2 in this case correspond to polyreactive and non-polyreactive antibodies. To calculate z for the empirical distribution (z0), all values correspond to the empirical rather than bootstrapped values.
+$$
+p=\frac{1+♯(z^{2}\geqz_{0}^{2})}{R+1}
+$$
+
+Here, we calculate the p-value by counting the number of bootstrap iterations where $z^{2}$ is greater than or equal to $z_{0}^{2}.z^{2}$ and $z_{0}^{2}$ are Studentized test statistics taken from the null and empirical and distributions, respectively. R is the number of times this bootstrapping process is repeated. The general form of z is given by:
+
+$$
+z=\frac{Y¯_{2}−Y¯_{1}}{(\frac{\sigma_{2}^{2}}{n_{2}}−\frac{\sigma_{1}^{1}}{n_{1}})^{1/2}}
+$$
+
+where $Y¯$ represents the bootstrapped sample mean of each population, σ is the bootstrapped sample standard deviation, and n is the number of samples. Populations 1 and 2 in this case correspond to polyreactive and non-polyreactive antibodies. To calculate z for the empirical distribution (z0), all values correspond to the empirical rather than bootstrapped values.
 
 To calculate p-values for differences in mutual information, the permutation test was used rather than the Studentized bootstrap. Here, the test statistic t is set to a simple difference of means, and rather than sampling with replacement from the empirical or null distributions with replacement, we randomly permute the data into ‘polyreactive’ or ‘non-polyreactive’ bins. We then count the number of permutations where the randomly permuted test statistic is greater than or equal to the empirical test statistic. This count then replaces the count (#) in the above equation for p.

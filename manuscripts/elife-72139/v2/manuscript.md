@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02vm5rt34 Department of Psychology, Center for Integrative and Cognitive Neuroscience, Vanderbilt Vision Research Center, Vanderbilt Brain Institute, Vanderbilt University Nashville United States
-2. https://ror.org/05fq50484 Centre for Vision Research, Vision: Science to Applications Program, Departments of Biology and Psychology, York University Toronto Canada
+1. Department of Psychology, Center for Integrative and Cognitive Neuroscience, Vanderbilt Vision Research Center, Vanderbilt Brain Institute, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
+2. Centre for Vision Research, Vision: Science to Applications Program, Departments of Biology and Psychology, York University Toronto Canada ([ROR:05fq50484](https://ror.org/05fq50484))
 
 † Corresponding author
 
@@ -31,23 +31,67 @@ Here, we show that visual cortex generates dipoles through layer-specific transs
 
 ## Results
 
-## Attention task
+### Attention task
 
 To investigate extracortical manifestations of attention-associated electric fields, we trained macaque monkeys to perform a visual search task (Figure 1A). Three macaque monkeys (designated Ca, He, and Z) performed visual search for an oddball color target (red or green), presented within an array of five or seven uniform distractors (green or red) (N sessions for each monkey: Ca 21, He 9, Z 18). A fourth monkey (P) performed visual search for an oddball shape (T or L) presented within an array of up to seven uniform distractors (L or T) (N sessions: monkey P, 22). Each animal performed well above chance (chance level for monkeys Ca, He: 16.6%; P, Z: 12.5%) (behavioral accuracy in color search: Ca 88%, He 81%, Z 85%, shape search monkey P 66%). We sampled cortical neural signals during the color pop-out search to be certain of which item received the benefit of attention in the array. We used the more difficult search data to determine the generality of our findings. Two different recording types were used, necessitating four monkeys total, as described below and summarized in Supplementary file 1.
 
-## Inverse modeling of attention-associated extracortical electric fields points to visual cortex
+![Figure 1.](https://cdn.elifesciences.org/articles/72139/elife-72139-fig1-v2.jpg)
+
+**Figure 1.:** (A) EEG was recorded from electrodes arranged according to the 10–20 system in monkeys performing visual search by shifting gaze to a colored oddball stimulus (monitor diagrams show two example arrays). Blue and red shading highlights mapping between visual hemifield and cerebral hemisphere. (B) Trial-averaged P5 and P6 EEG traces from monkey Z following presentation of search arrays with the target in either the right (blue) or left (red) visual hemifield as well as the difference (orange). The voltage difference between the target in the left versus right hemifields reveals the N2pc ~150 ms after array presentation. The N2pc was significant (dependent samples t test between polarizations averaged between 125 and 250 ms after array presentation (t(35) = 2.42, p = 0.02)). (C) Inverse solution of current distribution consistent with difference in voltage distribution during the N2pc (113–182 ms) when the target was in the left hemifield versus right hemifield using sLORETA. Current density is displayed over the three-dimensional (3D) boundary element model derived from a magnetic resonance scan of monkey Z. Data was clipped below the 85% maximum value for display purposes. Cyan disks indicate EEG electrode positions. Current density is concentrated beneath electrode P6 caudal to the lunate sulcus and in area V4 on the prelunate gyrus. Results are reproduced for a second monkey in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72139/elife-72139-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) EEG traces for right (blue) and left (red) visual hemifield target presentations. Organization of traces reflects electrode positions. Scale is consistent across traces and is indicated by OL. N2pc was found to be significant through an ANOVA measured as the interaction between posterior electrode sites, the target position in the array, and the set size sites (sites OR and OL, F(2,42) = 8.39, p < 0.001). (B) Inverse solution using sLORETA for N2pc (difference function mean 190–300 ms following array onset) during a right visual hemifield target presentation displayed over the three-dimensional (3D) render of MR scan for monkey P. Data clipped below 30% maximum value. Cyan cylinders indicate EEG electrode positions.
+
+### Inverse modeling of attention-associated extracortical electric fields points to visual cortex
 
 Once animals could perform visual search, we implanted an array of electrodes approximating the human 10–20 system in monkeys P and Z (Figure 1A). Using these electrodes, we observed extracortical electric dynamics in both monkeys. An index of attention known as the N2pc manifests during visual search. The N2pc electric field indexes attention allocation in this task. The magnitude of the N2pc was largest over occipital sites (Figure 1B, Figure 1—figure supplement 1), consistent with previous reports in humans and macaques (Luck and Hillyard, 1994; Eimer, 1996; Woodman and Luck, 1999; Hopf et al., 2000; Woodman et al., 2007; Cohen et al., 2009; Purcell et al., 2013). We used sLORETA inverse modeling for source localization. Previous source estimates for the N2pc identified the human homologue of V4 (Luck and Hillyard, 1990; Luck and Hillyard, 1994; Hopf et al., 2000). These findings are consistent with numerous reports that areas in mid-level visual cortex in monkeys produce robust attention signals (Moran and Desimone, 1985; Luck et al., 1997a; McAdams and Maunsell, 1999; Reynolds et al., 1999; Fries et al., 2001; see Roe et al., 2012 for review) across cortical layers (Engel et al., 2016; Nandy et al., 2017). Consistent with these earlier studies, the inverse model showed that current sources include V4 on the prelunate gyrus (Figure 1C, Figure 1—figure supplement 1). However, the modeled current sources also included other cortical regions, as is common for inverse solutions. Notably, the inverse solution identifies V1 to be about as strong as V4 in contributing to the N2pc, which is unlikely given current knowledge on attentional modulation for each area (Motter, 1993; Luck et al., 1997a; Kastner et al., 1999; Buffalo et al., 2011). Given the primary feature used in the search task was color, we investigated the laminar profile of attention-associated electric field generation in V4 where color is better represented (Roe et al., 2012).
 
-## V4’s laminar microcircuit produces dipoles that predict the attention-associated electric field
+### V4’s laminar microcircuit produces dipoles that predict the attention-associated electric field
 
 Guided by magnetic resonance imaging (MRI), linear multielectrode arrays (LMAs) were inserted into area V4 of monkeys Ca and He. LMAs were placed perpendicular to the cortical surface, spanning supragranular (L2/3), granular (L4), and infragranular (L5/6) cortical layers (Figure 2—figure supplement 1). We confirmed that attentional modulation of spiking activity could be observed during pop-out search performance consistent with previous reports (Westerberg et al., 2020a). Moreover, the laminar profile of attentional modulation matched that of attentional modulation in a different task with spiking activity in the middle layers being the most highly enhanced with attention (Figure 2; Nandy et al., 2017). Critically, while attentional modulation is present in the laminar data prior to the emergence of extracortical attention-associated fields such as the N2pc, that cross-laminar modulation persists through this interval.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/72139/elife-72139-fig2-v2.jpg)
+
+**Figure 2.:** Responses were averaged across sessions (n = 30) at each of the depths (n = 15) relative to the L4/5 boundary (magenta to green). Difference between target (attended) and distractor (unattended) responses represented by the fill color corresponding to the recording channels’ laminar compartment. Top line of each trace combination is the attended condition, bottom trace is the unattended condition. Significant differences in magnitude of attention effect, averaged 150–190 ms after search array onset, across laminar compartment were detected through an ANOVA for both LFP (F(2, 442) = 22.43, p = 5.2e–10) and MUA (F(2, 442) = 3.87, p = 0.022). Note the effect of attention in the MUA was largest in the middle layers (ML2/3 = 2.68, ML4 = 3.50, ML5/6 = 2.38), consistent with previous reports (Nandy et al., 2017). Time of the N2pc as measured throughout the main text (150–190 ms following array onset) indicated with orange.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72139/elife-72139-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative receptive fields (RFs) measured with gamma power across recording sites of a single array penetration. RFs across recording sites (z axis) are well aligned, indicating perpendicular penetration. Electrode positioned at left for reference. (B) Current source density (CSD) profile for the same session as (C). The initial sink following visual stimulation was used as a functional marker to determine the layer 4/5 boundary. Current sinks are indicated in red and sources in blue. The black horizontal line indicates the bottom of the granular input sink. Data are smoothed along depth and across time for visualization purposes. (C) Mean CSD profile following alignment of the 30 sessions (monkey Ca 21; He 9). Formatting identical to (B). (D) Columns’ RF locations across sessions and monkeys (cyan, monkey Ca; magenta, He). RF centers determined online, and diameters estimated from previous reports (see V4 RF mapping and electrode orthogonality for details). Concentric circles indicate eccentricities in degrees of visual angle (dva). Radial lines indicate angular positions relative to central fixation (black dot at top center). (E) Additional RF alignments using the magnitude of local field potential (LFP) response along depth, rather than gamma power as in (A), for electrodes found to be in cortex. Leftmost six are examples from monkey Ca (indicated with cyan bar at bottom) and rightmost two are from monkey He (indicated with magenta bar at bottom). Magnitude of LFP response was found for each recording site and normalized from smallest to largest response across visual space leading to the 0–1 normalization. Contours show the location of the largest LFP response along depth. Red vertical line through three-dimensional plot, and red point shown at the top of each plot, indicates the RF measured along depth with black vertical line indicating central fixation. Note the angle for monkey Ca indicates RF’s between 270 degrees (lower visual field vertical meridian) and 0 degrees (right-hand visual field horizontal meridian) and for monkey He indicates RF’s between 180 degrees (left-hand visual field horizontal meridian) and 270 degrees – both consistent with the contralateral positioning of recording chambers for each monkey (monkey Ca left V4, He right V4).
+
 Simultaneous with LMA recording, an extracortical electric signal was recorded immediately above V4 – critically the recording took place outside of the cortical column itself. Current source density (CSD) was derived from the local field potentials (LFPs) sampled across V4 layers. To relate the extracortical signal (Figure 3A) to synaptic currents estimated as CSD (Figure 3B–D), we employed information theory to capture multivariate factors and nonlinearities between signals (Shannon, 1948; Cover and Thomas, 2006). Importantly, information theory analyses are model independent (Timme and Lapish, 2018). Information theory is thus superior to standard linear models since these models cannot capture all potential relationships between signals. The relationship between the extracortical signal and CSD was assessed in four distinct steps, as illustrated by a representative session (Figure 3E–F, Figure 3—figure supplement 1). We use the interval of the N2pc to determine whether laminar circuitry in V4 can contribute to the attention-associated electric fields. This interval occurred before the median response times for each monkey contributing laminar V4 data ([median± standard deviation]: monkey Ca 227 ± 49 ms, He 225 ± 44 ms).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/72139/elife-72139-fig3-v2.jpg)
+
+**Figure 3.:** (A) Extracortical event-related potential (ERP) voltages after search array presentation, averaged over all trials when the target was presented contra- (solid) or ipsilateral (dashed) to the electrode. Inset magnifies the N2pc interval defined as the difference in potentials 150–190 ms after the array appeared (orange highlight). (B) Simultaneous current source density (CSD) when the target appeared in the population receptive field of the column. Dashed lines indicate boundaries between supragranular (L2/3), granular (L4), and infragranular (L5/6) layers. CSD values were interpolated and smoothed along depth for display only. Current sinks have hotter hues, and current sources, cooler. The earliest sink arises in putative L4, likely from rapid feedforward transmission, followed by intense, prolonged sinks in L2/3 accompanied by weaker source in L5/6. (C) CSD evoked by distractor in the receptive field has similar pattern. (D) Subtraction of CSD responses to target versus distractor in receptive field. The only statistically significant differences (determined through a t test across time-depth with p < 0.05, outlined by magenta line) were due to a current sink in L2/3 that arose gradually ~100 ms after array presentation. This relative sink was associated with a weak relative source in L5/6. (E) Simultaneous mutual information between CSD and the extracortical signal for L2/3 (blue), L4 (purple), and L5/6 (green). Times with significant mutual information were computed through Monte Carlo shuffle simulations (MCS). N2pc interval is highlighted. Intervals with significant mutual information persisting for at least 10 ms are indicated by horizontal bars. No mutual information with EEG was observed in L4. (F) Information transmission about target position from V4 CSD to the extracortical signal. Conventions as in E.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72139/elife-72139-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mutual information between target position (binarily coded contra- or ipsi-presentation) and the extracortical signal along time (top) aligned on array onset with 95% confidence interval (CI) cloud estimated from subsampling 75% of the data 100 times and recomputing. Significance established through Monte Carlo simulations is indicated below. Only intervals where significance >10 ms were included. Orange region indicates N2pc. (B) Mutual information between target position (binarily coded inside or opposite column receptive field [RF]) and each laminar compartment (L2/3 [blue], L4 [purple], and L5/6 [green]). Panel organization identical to (A). (C) Mutual information between the extracortical signal and each laminar compartment. Panel organization identical to (A). (D–F) Population averages (n = 30) mutual information measures. Same organization as representative session, (A–C) respectively. Clouds around averages denote 95% CI across sessions. Statistical measures for population averages reflect interval’s where 75% sessions were found to be significant through Monte Carlo simulations for >10 ms.
 
 First, we employed Monte Carlo simulations of the mutual information analysis to verify that the extracortical signal exhibited significantly enhanced information about target position during the time window of the N2pc. Second, we measured target information across the layers of V4 during the N2pc interval. This analysis revealed enhanced information in L2/3 and L5/6 but not in L4. Third, we computed the mutual information between the extracortical signal and CSD during the N2pc window, irrespective of target position. This analysis showed a significant relationship between the extracortical signal and the CSD in L2/3 and L5/6 but not in L4. Fourth, we measured the transmitted information about target location from CSD to extracortical signal during the N2pc interval (Timme and Lapish, 2018). This analysis demonstrated significant information transmission to the extracortical signal from L2/3 and L5/6, but not L4.
 
 Averaged across sessions, we observed that the electric field during the N2pc interval (Figure 4A) was associated with a consistent CSD pattern (Figure 4B). This relationship was observed in each monkey (Figure 4—figure supplement 1). Presentation of the search array in any configuration elicited an early current sink in L4, followed by a prolonged sink in L2/3 that was associated with a briefer source in L5/6.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72139/elife-72139-fig4-v2.jpg)
+
+**Figure 4.:** Conventions as in Figure 3. (A) Average event-related potential (ERP) across all sessions and animals with the target contra- (solid) or ipsilateral (dashed). The N2pc interval is indicated by orange shading. (B) Average V4 CSD with the target in (top) or out of the receptive field (RF) (center) with the difference between the two at the bottom. (C) Grand average information transmission about target position from V4 layers to the extracortical signal as a function of time (left). Average +2 SEM of information transmission during the N2pc window (right). Panel below shows that information transmission from L2/3 and in L5/6 was significantly greater than that from L4 (t test p < 0.05). Timepoints with significant information transmission were assessed through Monte Carlo simulations during >75% of sessions. Intervals with significance persisting for at least 10 ms are indicated by horizontal bars, color coded for each laminar compartment (bottom).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72139/elife-72139-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Results for monkey Ca (n = 21) in left column and He (n = 9) in right column. (A) Extracortical signal traces for target contralateral (solid line) and ipsilateral (dashed line) to recording site. Orange highlight represents the average time of N2pc used throughout the rest of the manuscript (150–190 ms). (B) Current source density (CSD) profile for target in receptive field (RF) (top), outside RF (center), and the difference between the two (bottom). Horizontal boundaries indicate laminar compartments. (C) Information transmission computed at each timepoint regarding target position from laminar CSD to the extracortical signal (top). Blue represents L2/3, purple represents L4, and green represents L5/6. Timepoints where 66% of recorded sessions showed significant information transmission for more than 10 consecutive milliseconds through Monte Carlo simulations for each laminar compartment are shown at the bottom.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/72139/elife-72139-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Conventions as in Figure 3. (A) Average event-related potential (ERP) across all sessions and animals with the target contra- (solid) or ipsilateral (dashed). The N2pc interval is indicated by orange shading. (B) Average V4 current source density (CSD) with the target in (top) or out of the receptive field (RF) (center) with the difference between the two at the bottom. (C) Grand average information transmission about target position from V4 layers to the extracortical signal as a function of time (left). Average +2 SEM of information transmission during the N2pc window (right). Panel below shows that information transmission from L2/3 and in L5/6 was significantly greater than that from L4 (t test p < 0.05). Timepoints with significant information transmission were assessed through Monte Carlo simulations during >75% of sessions. Intervals with significance persisting for at least 10 ms are indicated by horizontal bars, color coded for each laminar compartment (bottom). Note that elevated information transmission persists into the 200–250 ms interval. Coupled with the sustained sink/source pattern observed along V4 layers and the inversion of the ERP polarization, this might indicate the coexistence of the N2pc and Pd during this interval with the polarization of the Pd masking the persistent N2pc in the ERP.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/72139/elife-72139-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Grand average information transmission about target position from V4 layers to the extracortical signal as a function of time (left). Information transmission was calculated twice for each recording session – once only taking into account only trials when the item in the receptive field (RF) was red (e.g., red target in RF and red distractor in RF trials) and once only taking into account trials when the item in the RF was green. The average of those two computations was taken for each session and the traces shown here are the average across sessions (n = 30). Average +2 SEM of information transmission during the N2pc window (right). Panel below shows that information transmission from L2/3 and in L5/6 was significantly greater than that from L4 (t test p < 0.05). Timepoints with significant information transmission were assessed through Monte Carlo simulations during >75% of sessions. Intervals with significance persisting for at least 10 ms are indicated by horizontal bars, color coded for each laminar compartment (bottom).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/72139/elife-72139-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Example saccade main sequence from one session in monkey Ca. Microsaccades detected during task performance highlighted in lower left. (B) Grand average information transmission about target position from V4 layers to the extracortical signal as a function of time (left). Information transmission was calculated across all sessions (n = 30) from both monkeys. Only trials where no microsaccades were detected between array onset and saccade for behavioral choice were included in the information theoretic computation. Average +2 SEM of information transmission during the N2pc window (right). Panel below shows that information transmission from L2/3 and in L5/6 was significantly greater than that from L4 (t test p < 0.05). Timepoints with significant information transmission were assessed through Monte Carlo simulations during >75% of sessions. Intervals with significance persisting for at least 10 ms are indicated by horizontal bars, color coded for each laminar compartment (bottom).
 
 We next computed information transmission about target location from the CSD to the extracortical signal for each session (Figure 4C). All cortical layers provided significant information transmission in >75% of sessions during the N2pc window (150–190 ms following array onset). However, the magnitude of transmitted target information was significantly greater in L2/3 and L5/6 relative to L4 (L2/3-L4: t(29) = 2.15, p = 0.040; L5/6-L4: t(29) = 2.20, p = 0.036). The magnitude of information transmission was not significantly different between L2/3 and L5/6 (t(29) = 0.21, p = 0.84). Across sessions, the three other information theoretic analyses were consistent with the example session (Figure 3—figure supplement 1). Moreover, significant information transmission during the N2pc was observed in each monkey (Figure 4—figure supplement 1).
 
@@ -55,9 +99,21 @@ To verify the results, we applied the information theoretic analysis over a long
 
 Last, we performed two additional analyses to determine whether the observed information theoretic relationship is confounded by spurious factors. First, we measured the contribution of V4 neuron selectivity for stimulus color. We computed information transmission separately for trials with a red stimulus and with a green stimulus in the receptive field (RF). In the population average of the two calculations for each session, we observed significant information transmission during the N2pc (Figure 4—figure supplement 3). Hence, the relationship between V4 activity and the EEG does not depend on color specificity. Second, we measured the contribution of microsaccades, which have been linked to attentional modulation in V4 (Lowet et al., 2018). We computed information transmission separately for trials without microsaccades (Figure 4—figure supplement 4). In the population average of the two calculations for each session, we observed significant information transmission during the N2pc. Hence, microsaccade production was not responsible for the observed information theoretic associations between signals. The outcomes of these control analyses engender more confidence that the current dipole in V4 generated by the L2/3 CSD sink and the L5/6 CSD source contributes to the N2pc measured in the extracortical electric field.
 
-## Columnar feature selectivity influences contribution to N2pc
+### Columnar feature selectivity influences contribution to N2pc
 
 Given the columnar organization of color tuning of V4 neurons (Figure 5A; Roe et al., 2012; Zeki, 1973; Zeki, 1980; Tootell et al., 2004; Conway and Tsao, 2009; Kotake et al., 2009), we investigated the association between the N2pc and the CSD in columns with different color preferences. To quantify color selectivity through depth, we computed the response ratio between red and green stimuli (Figure 5B). Responses were measured as power in the gamma range (30–150 Hz) because this signal reflects local circuit interactions (Ray and Maunsell, 2011) and feature selectivity in visual cortex (Berens et al., 2008) and is more reliably measured than spiking activity across all LMA contacts. This analysis collapses across differences in color tuning across layers, so although the interlaminar specificity of gamma activity is not fully understood, recent work indicates that laminar gamma power can reliably reflect feature selectivity in a spatially specific fashion (Westerberg et al., 2021b).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/72139/elife-72139-fig5-v2.jpg)
+
+**Figure 5.:** Conventions as in Figure 3. (A) Visual search array configurations used for color selectivity analyses. (B) Laminar profiles of red/green color selectivity across all sessions. The hue of each point across cortical depth signifies the value of a color selectivity index (CSI), derived from local gamma power. CSI values < 0 (>0) indicate preference for green (red). CSI is smoothed across adjacent channels for display. Sessions are sorted from left to right based on a column color selectivity index (CCSI) that estimates each column’s combined selectivity. A bar plot of session-wise CCSI is plotted below. Asterisks indicate columns with significant color-selectivity (Wilcoxon signed rank, p < 0.05). Asterisk color indicates monkey (Ca cyan; He magenta). (C) Average event-related potentials (ERPs) for trials when a red (top) or green (bottom) target or distractor appeared in the receptive field (RF) of the 17 color selective columns. Conventions as in Figure 3. (D) Difference in current source density (CSD) when the target relative to distractor appeared in the columnar population RF when a red (top) or green (bottom) stimulus appeared in the RF (n = 17). (E) Average ERP for trials when the preferred color (top) or non-preferred color (bottom) target or distractor appeared in the RF (n = 17). Conventions as in Figure 3. (F) Difference in CSD when the target relative to distractor appeared in the RF with the preferred (top) or non-preferred (bottom) color. (G) Average difference in information transmission between laminar CSD and N2pc when preferred relative to non-preferred stimulus color appeared in RF. Conventions as before. More information was transmitted when a stimulus of the preferred color appeared in the RF. (H) Correlation between difference in information transmission across color columns and CCSI for each session for L2/3 (blue, top), L4 (purple, center), and L5/6 (green, bottom). Spearman correlation reported in lower right of each plot with data from all 30 sessions. Color-specific information transmission scaled with magnitude of color selectivity. (I) Information transmission for columns with (solid, n = 17) and without (dashed line, n = 13) feature selectivity for L2/3 (top), L4 (middle), and L5/6 (bottom). Intervals with significant differences are plotted below at two alpha levels for a two-sample t test (filled: 0.05; unfilled: 0.1). Bars plot average with upper 95% confidence interval of information transmission during the N2pc for columns with (left) and without (right) feature selectivity. Significant differences are indicated with a bracket and p value from a two-sample t test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72139/elife-72139-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Extracortical event-related potential averaged across correctly performed trials (n = 2992) for a single session with the target stimulus presented contralateral to the recording electrode (solid line; nred = 742, ngreen = 766) or ipsilateral to the recording electrode (dashed line; nred = 752, ngreen = 732) for trials where the target is red (top) or green (bottom). (B) Average difference in current source density (CSD) profile for correctly performed trials between target present in receptive field (RF) and distractor present in RF for red item in RF trials (top) and green item in RF trials (bottom). (C) Difference in information transmission between the preferred color and the non-preferred color for the same single session as in panels A and B.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/72139/elife-72139-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Cortical columns found to be non-selective for red or green were identified across both monkeys (n = 2) and selected for further analysis (n = 13). (B) The N2pc was observable in the sessions where no significant feature selectivity was present. Contra- versus ipsilateral target presentations (relative to the recording electrode) were plotted in time relative to the search array onset. Intervals of N2pc as measured in the main text (150–190 ms following array onset) is highlighted in orange. (C) Current source density (CSD) profiles for the target in receptive field (RF) (top), outside RF (middle), and the difference between the two (bottom) for the feature non-selective columns (n = 13). (D) Multiunit spiking activity averaged across non-selective columns (n = 13). Recording channels shown for upper (blue), middle (magenta), and lower (green) laminar compartments. Top line of each trace is the response in the attended condition with the bottom line being the unattended condition. Fill reflects the difference between attention conditions.
 
 To identify columns with significant selectivity for either red or green, we performed Wilcoxon signed rank tests between the distribution of ratios in each column against bootstrapped null distributions. Each bootstrapped null distribution contained 15 randomly selected ratios from the full dataset (450 experimental values) from which 1000 distributions were generated. The bootstrapped distributions represent the range of possible values observed across V4, but do not capture any difference in the homogeneity of feature selectivity within a column.
 
@@ -69,7 +125,7 @@ We also tested whether feature selective columns, on average, transmitted more i
 
 Importantly, we tested whether the N2pc varied across sessions with or without color-selective columns sampled. We found no difference between N2pc polarization (150–190 ms after the array) between sessions with (n = 17) or without (n = 13) sampling of color selective columns (two sample t test: t(28) = –0.75, p = 0.46). This invariance is expected because extracortical EEG spatially integrates signals from multiple cortical columns.
 
-## Translaminar currents in V4 recapitulate the N2pc
+### Translaminar currents in V4 recapitulate the N2pc
 
 CSD is computed by differentiating between LFPs to eliminate volume-conducted signals that do not arise from local circuit activity. Using an inverse procedure (i.e., summing the CSD), it is possible to estimate the LFP without contamination by volume-conducted activity (Nicholson and Llinas, 1971; Kajikawa and Schroeder, 2011). We used this approach to compute an estimated extracortical ERP. Specifically, we computed the sum of currents produced by a cortical column to estimate the extracortical signal at a position directly above. The resultant potential (ERPcal) distinguished the target from a distractor in the RF throughout the N2pc (Figure 6). In other words, the summed potential generated by currents along V4 columns differentiates between attention conditions simultaneous with the extracortically measured attention-associated signal. Note that the shape of the observed extracortical ERP (ERPobs) differs from the estimated extracortical ERPcal. This is expected because the ERPobs reflects several more variables such as volume-conducted contributions of nearby columns as well as the filtering and attenuating effects of the tissue and cranium above the gray matter (Nunez and Srinivasan, 2006). Moreover, the ERPcal does not reflect the potential contributions of other visual areas. Given these expected differences, it is remarkable how well the difference in ERPcal predicts the timing of the attention-associated electric field.
 
@@ -101,66 +157,209 @@ As a final note, it is important to consider what comes next for this program of
 
 ## Materials and methods
 
-## Animal care
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Macaca radiata)</td>
+      <td>Bonnet macaque; Ca, He</td>
+      <td>Wake Forest University, NC, USA</td>
+      <td></td>
+      <td>V4 laminar neurophysiology subjects</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Macaca radiata)</td>
+      <td>Bonnet macaque; P</td>
+      <td>University of Colorado, CO, USA</td>
+      <td></td>
+      <td>10/20 EEG subject</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Macaca mulatta)</td>
+      <td>Rhesus macaque; Z</td>
+      <td>Lovelace Biomedical: http://www.lovelacebiomedical.org/</td>
+      <td></td>
+      <td>10/20 EEG subject</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks: https://www.mathworks.com/</td>
+      <td></td>
+      <td>Analysis software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CURRY</td>
+      <td>Compumedics Neuroscan: http://www.compumedicsneuroscan.com/</td>
+      <td></td>
+      <td>Analysis software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Brainstorm</td>
+      <td>Brainstorm: http://www.neuroimage.usc.edu/brainstorm</td>
+      <td></td>
+      <td>Analysis software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TEMPO</td>
+      <td>Reflective computing: http://www.greatislandsoftware.com/</td>
+      <td></td>
+      <td>Behavioral control software</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>S-probe</td>
+      <td>Plexon: http://www.plexon.com/</td>
+      <td></td>
+      <td>Recording electrode array</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Electrophysiology equipment; MAP</td>
+      <td>Plexon: http://www.plexon.com/</td>
+      <td></td>
+      <td>10/20 EEG recording system</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Electrophysiology equipment; RZ2; PZ5</td>
+      <td>Tucker-Davis Technologies: http://www.tdt.com/</td>
+      <td></td>
+      <td>V4 laminar neurophysiology recording system</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Eye tracker; Eye Link II</td>
+      <td>SR Research: http://www.sr-research.com/</td>
+      <td></td>
+      <td>Monocular eye tracking system</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ceramic screws</td>
+      <td>Thomas Recording: http://www.thomasrecording.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dental acrylic</td>
+      <td>Lang Dental: http://www.langdental.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Recording chamber</td>
+      <td>Crist Instrument: http://www.cristinstrument.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal care
 
 Procedures were in accordance with National Institutes of Health Guidelines, Association for Assessment and Accreditation of Laboratory Animal Care Guide for the Care and Use of Laboratory Animals, and approved by the Vanderbilt Institutional Animal Care and Use Committee following United States Department of Agriculture and Public Health Services policies. Animals were socially housed. Animals were on a 12 hr light-dark cycle and all experimental procedures were conducted in the daytime. Each monkey received nutrient-rich, primate-specific food pellets twice a day. Fresh produce and other forms of environmental enrichment were given at least five times a week.
 
-## Surgical procedures
+### Surgical procedures
 
 Two male macaque monkeys (Macaca mulatta monkey Z, 12.5 kg; Macaca radiata monkey P, 9 kg) were implanted with head posts and skull-embedded EEG arrays using previously described techniques (Woodman et al., 2007). One monkey (monkey P) was implanted with a subconjunctive eye coil. Two male macaque monkeys (Macaca radiata; monkey Ca, 7.5 kg; He, 7.3 kg) were implanted with head posts and MR compatible recording chambers with craniotomy over V4. Anesthetic induction was performed with ketamine (10 mg/kg). Monkeys were then catheterized and intubated. Surgeries were conducted aseptically with animals under O2, isoflurane (1–5%) anesthesia. EKG, temperature, and respiration were monitored. Postoperative antibiotics and analgesics were administered. Further detail is documented elsewhere (Woodman et al., 2007; Westerberg et al., 2020a; Westerberg et al., 2020b).
 
-## Magnetic resonance imaging
+### Magnetic resonance imaging
 
 Anesthetized animals were placed in a 3 T MRI scanner. T1-weighted three-dimensional (3D) MPRAGE scans were acquired with a 32-channel head coil equipped for SENSE imaging. Images were acquired using 0.5 mm isotropic voxel resolution with parameters: repetition 5 s, echo 2.5 ms, ﬂip angle 7 degrees.
 
-## Visual search tasks
+### Visual search tasks
 
 Monkeys performed a color pop-out (monkeys Ca, He, and Z) or T/L (monkey P) search. Search arrays were presented on a CRT monitor at 60 Hz, at 57 cm distance. Stimulus generation and timing were done with TEMPO (Reflective Computing). Event times were assessed with a photodiode on the CRT. We used isoluminant red and green disks on a gray background (pop-out) or uniform gray T’s and L’s on a black background (T/L). Target feature varied within session for monkeys Ca, He, and Z. Monkey P identified the same target on any given session (T or L) but changed specific targets session to session. Trials were initiated by fixating within 1 (monkeys Ca and He) or 2 (monkeys P and Z) degrees of visual angle (dva) of a fixation dot. Time between fixation and array onset was at least 500 ms (monkey P: 500–1000 ms; Z: 500 ms; Ca and He: 750–1250 ms). For monkeys experiencing a range of fixation periods (monkeys Ca, He, P), a nonaging foreperiod function was used to determine the fixation period on a trial-by-trial basis. Arrays comprised of six (monkeys Ca and He) or eight (monkeys P and Z) items. Monkeys P and Z experienced invariable array eccentricity (10 dva) and item size (monkey P: 1.3 × 1.3 dva; Z: 1 × 1 dva). Two items were positioned on the vertical meridian, two on the horizontal, and the four remaining items equally spaced between. Monkeys Ca and He viewed items where size scaled with eccentricity at 0.3 dva per 1 dva eccentricity so that they were smaller than the average V4 RF (Freeman and Simoncelli, 2011). The angular position of items relative to fixation varied session to session so that one item was positioned at the center of the RF. Items were equally spaced relative to each other and located at the same eccentricity. Each trial, one array item was different from the others. Monkeys saccaded to the oddball within 1 (monkeys Ca and He) or 2 s (monkeys P and Z) and maintained fixation within 2–5 dva of the target for more than 400 ms (monkeys Ca, He, and Z: 500 ms; monkey P: 400–800 ms). Note that monkeys Ca, P, and Z were trained to versions of their respective search tasks that included catch trials where no target was present and they were tasked to remain fixating. Monkey He did not experience catch trials. Juice reward was administered following successful completion of the trial. The target item had an equal probability of being located at any of the six or eight locations. Eye movements were monitored at 1 kHz or 250 Hz using a corneal reflection system (monkeys Ca, He, and Z) or a scleral search coil (monkey P), respectively. Microsaccades were detected using an automatic algorithm (Otero-Millan et al., 2014). If the monkey failed to saccade to the target, they experienced a timeout (1–5 s).
 
-## 10-20 EEG recordings
+### 10-20 EEG recordings
 
 Two monkeys with intact skulls (i.e., lacking craniotomies) were implanted with an array of electrodes approximating the human 10–20 system locations (monkey P: FpFz, C3, C4, P3, P4, OL, OR, Oz; monkey Z: FpFz, Fpz, F3, F4, FCz, Cz, C3, C4, Pz, P5, P6, POz, O1, O2, Oz) (Jasper, 1958). Referencing was done using either the FpFz electrode (monkey P) or through linked ears (Z). The impedance of the individual electrodes was confirmed to be between 2 and 5 kOhm at 30 Hz, resembling electrodes used for human EEG. EEG was recorded using a Multichannel Acquisition Processor (Plexon) at 1 kHz and filtered between 0.7 and 170 Hz. Data was aligned to array onset and baseline corrected by subtracting the average activity during the 50 ms preceding the array onset from all timepoints. Data was clipped 20 ms prior to saccade to eliminate eye movement artifacts.
 
-## Simultaneous laminar V4 and extracortical recordings
+### Simultaneous laminar V4 and extracortical recordings
 
-The extracortical electric fields and laminar V4 neurophysiology were acquired at 24 kHz using a PZ5 and RZ2 (Tucker-Davis). Electric signals between 0.1 Hz and 12 kHz were observable with this system. V4 data was collected from two monkeys (monkey Ca: left hemisphere; He: right) across 30 sessions (monkey Ca: 21; monkey He: 9) using 32-channel linear electrode arrays with 0.1 mm interelectrode spacing (Plexon) introduced through the intact dura mater each session. Recordings were conducted with the electrode in a tube-grounded, reference-grounded configuration which grounds the stainless-steel support tube of the electrode and grounds the reference of the headstage. Arrays spanned layers of V4 with a subset of electrode contacts deliberately left outside of cortex. The extracortical electric field was derived from the most superficial electrode outside the brain (above the dura mater) using the same tube-grounded, referenced-grounded configuration and filtered between 1 and 100 Hz. CSD was computed from the raw signal by first extracting the LFP (signal filtered between 1 and 100 Hz, identical to the extracortical signal) and then taking the second spatial derivative along electrodes (Nicholson and Freeman, 1975; Schroeder et al., 1998; Mehta et al., 2000; Westerberg et al., 2019) and converting voltage to current (Logothetis et al., 2007). We computed the CSD by taking the second spatial derivative of the LFP:CSD(t,d)=−σ⟮x(t,d−z)+x(t,d+z)−2x(t,d)z2⟯
+The extracortical electric fields and laminar V4 neurophysiology were acquired at 24 kHz using a PZ5 and RZ2 (Tucker-Davis). Electric signals between 0.1 Hz and 12 kHz were observable with this system. V4 data was collected from two monkeys (monkey Ca: left hemisphere; He: right) across 30 sessions (monkey Ca: 21; monkey He: 9) using 32-channel linear electrode arrays with 0.1 mm interelectrode spacing (Plexon) introduced through the intact dura mater each session. Recordings were conducted with the electrode in a tube-grounded, reference-grounded configuration which grounds the stainless-steel support tube of the electrode and grounds the reference of the headstage. Arrays spanned layers of V4 with a subset of electrode contacts deliberately left outside of cortex. The extracortical electric field was derived from the most superficial electrode outside the brain (above the dura mater) using the same tube-grounded, referenced-grounded configuration and filtered between 1 and 100 Hz. CSD was computed from the raw signal by first extracting the LFP (signal filtered between 1 and 100 Hz, identical to the extracortical signal) and then taking the second spatial derivative along electrodes (Nicholson and Freeman, 1975; Schroeder et al., 1998; Mehta et al., 2000; Westerberg et al., 2019) and converting voltage to current (Logothetis et al., 2007). We computed the CSD by taking the second spatial derivative of the LFP:
+
+$$
+CSD(t,d)=−\sigma⟮\frac{x(t,d−z)+x(t,d+z)−2x(t,d)}{z^{2}}⟯
+$$
 
 where x is the extracellular voltage at time t measured at an electrode contact at depth d and z is the interelectrode distance and σ is conductivity. Both EEG and CSD were baseline corrected at the trial level by subtracting the average activation during the 300 ms preceding array onset from the response at all timepoints. Extracortical electric field potentials and CSD profiles were clipped 10 ms prior to saccade at the trial level to eliminate the influence of eye movements.
 
 Population spiking was measured and analyzed to supplement primary LFP and CSD results. Multiunit activity was derived through well-documented means (Legatt et al., 1980) and has been demonstrated to be effective across multiple brain areas (Logothetis et al., 2001; Roelfsema et al., 2004; Self et al., 2013; Shapcott et al., 2016; Tovar et al., 2020; Westerberg et al., 2020a; Xing et al., 2009). The broadband neural signal was lowpass filtered at 3 kHz, highpass filtered at 300 Hz, full-wave rectified, and lastly, lowpass filtered at 150 Hz. This signal reliably reflect neural population dynamics (Trautmann et al., 2019). Additionally, multiunit activity in V4 has been shown to reliably reflect attentional modulation (Mehta et al., 2000; Nandy et al., 2017).
 
-## Laminar alignment
+### Laminar alignment
 
 Orthogonal array penetrations were confirmed online through a reverse-correlation RF mapping procedure (Nandy et al., 2017; Westerberg et al., 2019; Cox et al., 2019a; Cox et al., 2019b; Dougherty et al., 2019; Figure 2—figure supplement 1). RFs were found to represent portions of visual space consistent with previous reports of V4 (Gattass et al., 1988). Positions of recording sites relative to V4 layers were determined using CSD (Schroeder et al., 1998; Nandy et al., 2017). Current sinks following visual stimulation first appear in the granular input layers of cortex, then ascend to the supragranular compartment. Previously described observations of laminar V4 CSD include a sink in the infragranular layers following the ascent to the supragranular layers (Nandy et al., 2017), an observation we do not observe in our data. This is likely because we used task-evoked CSD for alignment with stimulus presentation persisting throughout the measurement interval whereas the descending sink observation was found with very brief stimulus presentations. It is likely that the strength of the persistent supragranular sink is masking the previously reported infragranular sink (Mitzdorf, 1985). We computed CSD and identified the granular input sink session-wise. Sessions were aligned by this input sink. ‘L4’ refers to granular input layer, ‘L2/3’ – supragranular layers, and ‘L5/6’ – infragranular layers. Each laminar compartment was assigned the same number of recording sites to alleviate biases during analysis.
 
-## Inverse modeling
+### Inverse modeling
 
 Inverse modeling of 10–20 EEG recordings was performed in CURRY 8 (Compumedics Neuroscan). 3D head reconstruction was created for each monkey (P and Z) using the boundary element method (Hämäläinen and Sarvas, 1989). This method takes into account individual monkey’s surface morphologies to create models of cortex surface, inner and outer skull, and skin boundaries. This model was used in conjunction with EEG to compute a voltage distribution over the cortical surface. We calculated the current density with sLORETA, which calculates a minimum norm least squares that divides current by the size of its associated error bar, yielding F scores of activation. sLORETA produces blurred but accurate localizations of point sources (Pascual-Marqui, 2002). Other algorithms such as minimum norm and SWARM were modeled as well, with agreement between models sufficient not to change any conclusions.
 
-## Information theory analyses
+### Information theory analyses
 
-Information theory (Shannon, 1948) analyses were chosen for several reasons. First, information theory analyses yield results in terms of ‘bits’ which can be used to directly compare effect sizes across measurement methods (e.g., CSD, extracortical signal, and array composition [directed spatial attention]). Next, these analyses are inherently multivariate and able to capture linear and nonlinear relationships. Furthermore, information theory is model independent and does not necessitate a specific hypothetical structure in order to detect relationships between signals. This combination allows us to detect relationships between the extracortical signal and CSD signal that might not be linear and therefore would not be captured by linear models or correlation analyses. We chose to measure pairwise mutual information and information transmission to gauge the relationships between our three ‘signals’ (e.g., extracortical, CSD, and array composition [directed spatial attention]). Mutual information is the reduction in uncertainty in one variable afforded by another known variable. That is, mutual information is greater when you know the state of one variable covaries with the state of the other variable. If the two variables do not correspond well, mutual information is low. Therefore, the reduction in uncertainty is formalized as ‘information’ which is relayed in bits. Mathematically, mutual information is captured by the following equation (Cover and Thomas, 2006; Beer and Williams, 2015):I(X;Y)=H(X)−H(X|Y)
+Information theory (Shannon, 1948) analyses were chosen for several reasons. First, information theory analyses yield results in terms of ‘bits’ which can be used to directly compare effect sizes across measurement methods (e.g., CSD, extracortical signal, and array composition [directed spatial attention]). Next, these analyses are inherently multivariate and able to capture linear and nonlinear relationships. Furthermore, information theory is model independent and does not necessitate a specific hypothetical structure in order to detect relationships between signals. This combination allows us to detect relationships between the extracortical signal and CSD signal that might not be linear and therefore would not be captured by linear models or correlation analyses. We chose to measure pairwise mutual information and information transmission to gauge the relationships between our three ‘signals’ (e.g., extracortical, CSD, and array composition [directed spatial attention]). Mutual information is the reduction in uncertainty in one variable afforded by another known variable. That is, mutual information is greater when you know the state of one variable covaries with the state of the other variable. If the two variables do not correspond well, mutual information is low. Therefore, the reduction in uncertainty is formalized as ‘information’ which is relayed in bits. Mathematically, mutual information is captured by the following equation (Cover and Thomas, 2006; Beer and Williams, 2015):
 
-where H(X) and H(X|Y) are the entropy X and X given Y, respectively. Entropy for a signal (S) is computed by:H(S)=∑ip(si)log1p(si)
+$$
+I(X;Y)=H(X)−H(X|Y)
+$$
 
-where p(s) is the probability distribution for signal s and i is the signal state. Therefore, mutual information can be computed probabilistically by:I(X;Y)=∑i∑jp(xiyj)logp(xiyj)p(xi)p(yj)
+where H(X) and H(X|Y) are the entropy X and X given Y, respectively. Entropy for a signal (S) is computed by:
+
+$$
+H(S)=\sumip(s_{i})log\frac{1}{p(s_{i})}
+$$
+
+where p(s) is the probability distribution for signal s and i is the signal state. Therefore, mutual information can be computed probabilistically by:
+
+$$
+I(X;Y)=\sumi\sumjp(x_{i}y_{j})log\frac{p(x_{i}y_{j})}{p(x_{i})p(y_{j})}
+$$
 
 where p(x), p(y) are the probability distributions for X and Y, and p(x,y) is the joint probability distribution of X and Y across signal states i and j for X and Y, respectively.
 
-While mutual information describes the relationship between the two signals (for our purpose: CSD and the extracortical signal, CSD and directed spatial attention, or the extracortical signal and directed spatial attention), it does not allow for the evaluation of two signals regarding a third (e.g., CSD and the extracortical signal regarding directed spatial attention). For analyses where we want to understand information regarding the allocation of directed attention from the synaptic currents in V4 to the extracortical signal, we use a modified equation rooted in the same entropy/mutual information principles. In computing information transmission, we are interested in the information about X (directed spatial attention), transferred from Y (CSD in V4) to Z (extracortical signal) formalized as:IT(X;Ypast→Zfuture)=Imin(X;Zfuture,{Zpast,Ypast})−Imin(X;Zfuture,Zpast)
+While mutual information describes the relationship between the two signals (for our purpose: CSD and the extracortical signal, CSD and directed spatial attention, or the extracortical signal and directed spatial attention), it does not allow for the evaluation of two signals regarding a third (e.g., CSD and the extracortical signal regarding directed spatial attention). For analyses where we want to understand information regarding the allocation of directed attention from the synaptic currents in V4 to the extracortical signal, we use a modified equation rooted in the same entropy/mutual information principles. In computing information transmission, we are interested in the information about X (directed spatial attention), transferred from Y (CSD in V4) to Z (extracortical signal) formalized as:
 
-where past and future describe the timepoints when the data is taken from. The information transmission (IT) is taken as the difference between two minimum information calculations. The minimum information (Imin) is computed regarding the combination of the individual signals (S1 and S2) at the specified intervals as:Imin(X;S1,S2)=∑xp(x)min{I(X=x;S1),I(X=x;S2)}
+$$
+I_{T}(X;Y_{past}→Z_{future})=I_{min}(X;Z_{future},{Z_{past},Y_{past}})−I_{min}(X;Z_{future},Z_{past})
+$$
+
+where past and future describe the timepoints when the data is taken from. The information transmission (IT) is taken as the difference between two minimum information calculations. The minimum information (Imin) is computed regarding the combination of the individual signals (S1 and S2) at the specified intervals as:
+
+$$
+I_{min}(X;S_{1},S_{2})=\sumxp(x)min{I(X=x;S_{1}),I(X=x;S_{2})}
+$$
 
 where p(x) is the probability distribution for signal X and x are the possible states of X. By taking into account different timepoints for the signals, we can interpret this computation as the information about X (directed spatial attention) shared by Ypast (e.g., earlier CSD in V4) and Zfuture (e.g., later extracortical signal) that was not already in Zpast (e.g., earlier extracortical signal).
 
 Above information theory analyses were performed using the Neuroscience Information Theory Toolbox (Timme and Lapish, 2018). Pairwise mutual information and information transmission were computed at each timepoint across trials for each session using default parameters. Five uniform count bins were used for data binning; 10 ms was used for time lag for information transmission. Only correct trials were included. Information theory measures were computed for each millisecond for the entire interval displayed in each analyses’ respective figure panel. CSD for each laminar compartment was computed by taking the average activity of five sites at the trial level included in each laminar compartment. For mutual information between target position and the extracortical signal, target position was binary where target was either contra- or ipsilaterally presented. For computations within V4, target position was binary where target was either in the RF or positioned opposite the RF; 5000 Monte Carlo simulations were used to generate a distribution of null model values which experimental values were compared to (α = 0.05).
 
-## Feature selectivity
+### Feature selectivity
 
 For each recording site within a column, gamma power (30–150 Hz) (Maier et al., 2010) responses were computed when either a red distractor was presented to the RF of the column or when a green distractor was present to the RF. Responses were taken as the average activation 75–200 ms following array onset. An index was computed from these responses by subtracting the 2 and dividing by their sum (CSI). Values were therefore bounded between –1 and 1 where larger magnitude indicates greater selectivity for green (toward –1) or red (toward 1). CCSI was computed as the average of CSIs along the entire column. We performed Wilcoxon signed rank tests on the distribution of CSIs across the recording sites of a given cortical column to determine whether a column was significantly color selective (α = 0.05). The selective columns were included in feature selectivity analyses where the preferred color and non-preferred color were defined as the color that elicited greater and lesser responses, respectively.
 
-## Estimating field potential from CSD
+### Estimating field potential from CSD
 
-We calculated the ERP at arbitrary positions from the measured laminar CSD (ERPcal) using a previously described model (Nicholson and Llinas, 1971; Kajikawa and Schroeder, 2011).ERPcal(di,t)=A∑iCSD(dj,t)h2+|dj−di|2
+We calculated the ERP at arbitrary positions from the measured laminar CSD (ERPcal) using a previously described model (Nicholson and Llinas, 1971; Kajikawa and Schroeder, 2011).
+
+$$
+ERP_{cal}(d_{i},t)=A\sumi\frac{CSD(d_{j},t)}{\sqrt{h^{2}+|d_{j}−d_{i}|^{2}}}
+$$
 
 where ERPcal at depth i (dt) for each timepoint (t) is taken as the sum of CSD at depths j (dj) for each timepoint divided by the Euclidean distance to account for the diminishing impact of local currents on more distant field potentials. The factor A acts only as a scaling factor and we cannot accurately estimate the magnitude of the 1D CSD-derived waveform, so we eliminate this parameter from the calculation. This omission is consistent with previous reports (Kajikawa and Schroeder, 2011) and limits our comparisons of observed ERP and ERPcal to only shape. However, magnitude differences can be observed between conditions for ERPobs and ERPcal, independently. Also, for our purposes, we set h to 0 as we assume that our observed CSD and the calculated ERP are in the same vertical plane.

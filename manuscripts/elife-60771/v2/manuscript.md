@@ -26,7 +26,7 @@
 
 ## Abstract
 
-The soluble isoform of leptin receptor (sOb-R), secreted by the liver, regulates leptin bioavailability and bioactivity. Its reduced levels in diet-induced obesity (DIO) contribute to hyperleptinemia and leptin resistance, effects that are regulated by the endocannabinoid (eCB)/CB 1 R system. Here we show that pharmacological activation/blockade and genetic overexpression/deletion of hepatic CB 1 R modulates sOb-R levels and hepatic leptin resistance. Interestingly, peripheral CB 1 R blockade failed to reverse DIO-induced reduction of sOb-R levels, increased fat mass and dyslipidemia, and hepatic steatosis in mice lacking C/EBP homologous protein (CHOP), whereas direct activation of CB 1 R in wild-type hepatocytes reduced sOb-R levels in a CHOP-dependent manner. Moreover, CHOP stimulation increased sOb-R expression and release via a direct regulation of its promoter, while CHOP deletion reduced leptin sensitivity. Our findings highlight a novel molecular aspect by which the hepatic eCB/CB 1 R system is involved in the development of hepatic leptin resistance and in the regulation of sOb-R levels via CHOP.
+The soluble isoform of leptin receptor (sOb-R), secreted by the liver, regulates leptin bioavailability and bioactivity. Its reduced levels in diet-induced obesity (DIO) contribute to hyperleptinemia and leptin resistance, effects that are regulated by the endocannabinoid (eCB)/CB1R system. Here we show that pharmacological activation/blockade and genetic overexpression/deletion of hepatic CB1R modulates sOb-R levels and hepatic leptin resistance. Interestingly, peripheral CB1R blockade failed to reverse DIO-induced reduction of sOb-R levels, increased fat mass and dyslipidemia, and hepatic steatosis in mice lacking C/EBP homologous protein (CHOP), whereas direct activation of CB1R in wild-type hepatocytes reduced sOb-R levels in a CHOP-dependent manner. Moreover, CHOP stimulation increased sOb-R expression and release via a direct regulation of its promoter, while CHOP deletion reduced leptin sensitivity. Our findings highlight a novel molecular aspect by which the hepatic eCB/CB1R system is involved in the development of hepatic leptin resistance and in the regulation of sOb-R levels via CHOP.
 
 ## Introduction
 
@@ -40,9 +40,17 @@ The endocannabinoid (eCB) system, a major regulator of energy homeostasis (Crist
 
 ## Results
 
-## Hepatic CB1R regulates sOb-R levels and leptin signaling
+### Hepatic CB1R regulates sOb-R levels and leptin signaling
 
 To evaluate the direct contribution of CB1R to the regulation of sOb-R levels, we first utilized a pharmacological inhibition paradigm of CB1R in DIO mice by using the peripherally restricted CB1R inverse agonist JD5037. Similar to previous findings (Mazor et al., 2018), a significant reduction in serum levels of sOb-R was documented in obese mice, an effect that was ameliorated by JD5037 treatment (Figure 1A). Since sOb-R is mainly produced by the liver (Lammert et al., 2001), we also analyzed the content of sOb-R in liver homogenates from these animals and found a similar trend as in serum (Figure 1B). Measurements of the Lepr-s (Ob-Re) isoform revealed that JD5037 treatment also affected its transcription and protein levels (Figure 1C–E). Moreover, the protein expression of two additional isoforms of LEPR (Ob-Rb and Ob-Ra) in liver homogenates was also decreased in DIO mice and normalized following JD5037 treatment (Figure 1D–E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60771/elife-60771-fig1-v2.jpg)
+
+**Figure 1.:** Serum (A, n = 7–21) and liver (B, n = 6–9) levels of sOb-R are reduced following a 14 weeks consumption of high-fat diet (HFD) in wild-type (WT), but not LCB1 cKO mice. JD5037 (3 mg/kg, for 7 days) reverses the reduction in WT mice. The same trend observed in hepatic mRNA levels of Lepr-s (C, n = 3–12) as well as protein levels of Ob-Rb, Ob-Ra, and Ob-Re (D and E, n = 5–10; G and H, n = 8–10). Despite a comparable weight gain following HFD consumption in WT and LCB1 cKO mice (F, n = 4–20), obese mice that lack CB1R in hepatocytes remain leptin sensitive indicated by increased pSTAT3 levels (I–L, n = 3–4). Transgenic mice, expressing CB1R only in hepatocytes, are protected from DIO (M, n = 3–4). An exclusive hepatic overexpression of CB1R is sufficient for HFD feeding to induce reduction in serum, liver mRNA, and protein levels of sOb-R (N–Q, n = 4) as well as to reduce hepatic leptin sensitivity in response to exogenous leptin stimulation (R and S, n = 7). Data represent mean ± SEM of indicated number of replicates in each panel. The blots are representative. *p<0.05 relative to standard diet-fed animals from the same strain. #p<0.05 relative to HFD-fed mice from the same strain. ^p<0.05 relative to the same treatment group of WT mice.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60771/elife-60771-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Western blot analysis and quantification (A and B, n = 3) of LEPR expression levels in HK-2 cell line, infected with either empty vector or mouse LEPR expressing AAV. Vector also expressed eGFP and infection efficiency was approximately 30%, as assessed by fluorescent microscopy (not shown). Data represent mean ± SEM of indicated number of replicates in each panel. *p<0.05 relative to control cells.
 
 To further establish the contribution of hepatic CB1R to the HFD-induced decrease in sOb-R levels, we utilized the liver-specific CB1R null (LCB1 cKO) mice, a genetic deletion model of mice that lacks CB1R specifically in hepatocytes (mouse model generation is described in Osei-Hyiaman et al., 2008). When fed with a HFD, these mice gain similar weight to their wild-type (WT) littermate controls [(Osei-Hyiaman et al., 2008) and Figure 1F]; however, they are less prone to develop liver steatosis, dyslipidemia, and leptin resistance (Osei-Hyiaman et al., 2008), making hepatic CB1R a central regulator of obesity-related liver complications. We were therefore not surprised to find that the liver specific deletion of CB1R was sufficient to maintain normal circulating levels of sOb-R in obese LCB1 cKO mice (Figure 1A). Similarly, the hepatic gene and protein expression of sOb-R and the other LEPR isoforms were not affected by the HFD feeding (Figure 1B,C and G,H), suggesting that hepatic CB1R most likely regulates sOb-R levels.
 
@@ -52,29 +60,61 @@ Additional support for the regulation of sOb-R by hepatic CB1R derived from anot
 
 Next, we assessed whether a direct activation of CB1R in hepatocytes induces a reduction in sOb-R levels. To test this, we treated cultured hepatocytes with the synthetic CB1R agonist noladin ether (NE) for 24 hr. We analyzed both culture media and cell lysates and found that, similar to obesity, direct activation of CB1R also decreased sOb-R levels in the culture media. This was also the case with intracellular levels of other LEPR isoforms measured. This CB1R-mediated reduction in ObR levels was completely reversed by blocking CB1R using JD5037 (Figure 2).
 
-## CHOP contributes to the metabolic response to peripheral CB1R blockade
+![Figure 2.](https://cdn.elifesciences.org/articles/60771/elife-60771-fig2-v2.jpg)
+
+**Figure 2.:** 24 hr treatment with the synthetic CB1R agonist noladin ether (NE, 2.5 μM) induced reduction in sOb-R levels in the culture media of immortalized hepatocytes (blot was quantified using Ponceau staining as a loading control). This was completely ameliorated by 1 hr pretreatment with 100 nM JD5037 (A and B, n = 12–13). Similar results were observed in both mRNA (C, n = 12–17) and protein (D and E, n = 4) levels in hepatocytes lysate (for Ob-Rb, the lower band was quantified). Data represent mean ± SEM of indicated number of biological replicates. Blots are representative. *p<0.05 relative to vehicle-treated cells. #p<0.05 relative to NE-treated cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60771/elife-60771-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Hepatic mRNA expression levels of Adam10 (A) and Adam17 (B) in wild-type mice fed with standard diet (STD) or high-fat diet (HFD) for 14 weeks and treated with JD5037 (3 mg/kg, for 7 days) as well as in LCB1 cKO mice fed either STD or HFD for the same period. Data represent mean ± SEM of five to six animals per group.
+
+### CHOP contributes to the metabolic response to peripheral CB1R blockade
 
 DIO-induced ER stress in the development of leptin resistance has been previously suggested (Ozcan et al., 2009; Ramírez and Claret, 2015). Similar to our previous findings (Tam et al., 2010), treatment of HFD-fed mice with JD5037 normalized p-eIF2α levels (Figure 3—figure supplement 1A,B), suggesting relieved ER stress following CB1R blockade. In agreement with these findings, a comparable ratio of hepatic phospho-to-total eIF2α ratio was documented in lean and obese LCB1 cKO mice (Figure 3—figure supplement 1C,D).
 
 Measuring the expression levels of the ER stress marker C/EBP homologous protein (CHOP) revealed surprising findings, since both the hepatic mRNA (Ddit3) and protein levels of CHOP were downregulated in obese WT mice, despite the suggested ER stress. Its expression levels were reversed above control levels by JD5037, and remained comparable between lean and obese LCB1 cKO mice (Figure 3A–D). In fact, CHOP levels were positively correlated with the levels of sOb-R in both our experimental paradigms, leading us to hypothesize that CHOP may directly be involved in the regulation of sOb-R.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/60771/elife-60771-fig3-v2.jpg)
+
+**Figure 3.:** mRNA (A, n = 5–19) and protein (B–D, n = 4–6) levels of CHOP show reduced expression following 14 weeks on high-fat diet (HFD) in wild-type (WT), but not LCB1 cKO mice. JD5037 (3 mg/kg, for 7 days) treatment reverses the HFD-induced reduction in CHOP levels. Metabolic assessment of mice revealed diminished effect of JD5037 in CHOP KO mice. Weight (E, n = 10–23), fat and lean mass (F and G, n = 5–19), serum HDL, LDL as well as hepatic triglycerides (TG) (H–J, n = 9–26) were comparable in lean and obese WT and CHOP KO mice. JD5037 treatment was significantly more efficient in reducing weight, fat mass, LDL, and TG in WT mice. Data represent mean ± SEM of indicated number of replicates in each panel. *p<0.05 relative to standard diet-fed animals from the same strain. #p<0.05 relative to HFD-fed mice from the same strain. ^p<0.05 relative to the same treatment group of WT mice.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60771/elife-60771-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Western blot analysis (A, C) and quantification (B, D) show increased hepatic ratio between phosphorylated and total eIF2α in WT, but not LCB1 cKO mice. Data represent mean ± SEM of five to six samples in each group. *p<0.05 relative to standard diet-fed animals from the same strain. Blots are representative.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60771/elife-60771-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Measurements of hepatic AEA (A, n = 6–12) and 2-AG (B, n = 6–12) levels in mice demonstrate an expected elevation of eCB levels in obese mice, and decreased levels following JD5037 treatment (3 mg/kg, for 7 days) in wild-type (WT), but not CHOP KO mice. This observation is partly explained by the changes measured in the mRNA expression levels of their synthesis and degradating enzymes (C–F, n = 6–15). Data represents mean ± SEM of indicated number of replicates in each panel. *p<0.05 relative to standard diet-fed animals from the same strain. #p<0.05 relative to HFD-fed mice from the same strain. ^p<0.05 relative to the same treatment group of WT mice.
+
 To test our hypothesis, we compared the metabolic efficacy of JD5037 in obese CHOP KO mice and their littermate controls. Whereas JD5037 was almost equieffective in reducing body weight and fat mass in both obese mouse strains (Figure 3E–G), it improved plasma cholesterol levels as well as hepatic steatosis in WT mice only (Figure 3H–J). The reduced ability of peripherally restricted CB1R blockade to improve dyslipidemia and hepatic steatosis in CHOP KO mice led us to measure the hepatic eCB 'tone' in these mice. Strikingly, we found that the basal levels of AEA and 2-AG were markedly higher in CHOP KO mice than in the WT control group. Moreover, the increased eCB levels in CHOP KO mice remained unchanged following a consumption of HFD as well as JD5037 treatment (Figure 3—figure supplement 2A,B). This could be partially explained by the differences documented in the mRNA expression patterns of fatty acid amide hydrolase (Faah), monoacylglycerol lipase (Mgll), N-acyl phosphatidylethanolamine phospholipase D (Napepld), and diacylglycerol lipase alpha (Dagla), the degrading and synthesizing enzymes of both eCBs, respectively (Figure 3—figure supplement 2C–F). Overall, these data indicate that CHOP may play a pivotal role in modulating hepatic eCB 'tone', and that it is required for the beneficial effects of CB1R blockade on dyslipidemia and hepatic steatosis.
 
-## CHOP plays a key role in the regulation of sOb-R by the eCB/CB1R system
+### CHOP plays a key role in the regulation of sOb-R by the eCB/CB1R system
 
 Measuring the effect of CHOP deficiency on sOb-R levels revealed comparable circulating levels of sOb-R in lean and obese mice in the two mouse strains. However, JD5037 failed to restore sOb-R levels in CHOP KO mice (Figure 4A). The assessment of Lepr-s mRNA expression and sOb-R protein content in the livers of both strains documented reduced baseline levels in CHOP KO mice, compared to WT, which still remained low following HFD consumption and/or JD5037 treatment (Figure 4B,C). A similar trend was observed in the protein level of two more LEPR isoforms (Compare Figure 1D, E to Figure 4D,E). The HFD-induced hyperleptinemia was vastly reduced by JD5037 treatment in WT mice, whereas it was only partially ameliorated by JD5037 in CHOP KO animals (Figure 4F). Interestingly, the hepatic pSTAT3/STAT3 ratio in lean CHOP KO mice was comparable before and after stimulation with exogenous leptin (Figure 4G,H). Taken together, our data suggest that the regulation of sOb-R levels is CHOP-dependent. In addition, regulation of the soluble isoform by CHOP can consequently affect circulating leptin levels and hepatic leptin sensitivity, possibly, in a CB1R-dependent manner.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/60771/elife-60771-fig4-v2.jpg)
 
-**Figure 4.:** 1R system.Serum (A, n = 11–18) levels of sOb-R were reduced following a 14 weeks consumption of high-fat diet (HFD). JD5037 (3 mg/kg, for 7 days) reversed the reduction in wild-type (WT), but not CHOP KO mice. Basal hepatic levels of sOb-R were lower in CHOP KO mice and did not change following HFD or JD5037 treatment (B, n = 5–8). A similar trend was observed in hepatic mRNA levels (C, n = 9–17) and protein level of Ob-Rb, Ob-Ra, and Ob-Re (D and E, n = 5–6). Whereas DIO-related hyperleptinemia was comparable between WT and CHOP KO mice, JD5037 was more efficacious in reducing it in WT mice (F, n = 8–16). Lean CHOP KO mice failed to increase the hepatic pSTAT3/STAT3 ratio in response to exogenous leptin administration (G and H, n = 5). Western blots are representative. Data represent mean ± SEM of indicated number of replicates in each panel. *p<0.05 relative to standard diet-fed animals from the same strain. #p<0.05 relative to HFD-fed mice from the same strain. ^p<0.05 relative to the same treatment group of WT mice.Figure 4—source data 1.Figure 4.
+**Figure 4.:** Serum (A, n = 11–18) levels of sOb-R were reduced following a 14 weeks consumption of high-fat diet (HFD). JD5037 (3 mg/kg, for 7 days) reversed the reduction in wild-type (WT), but not CHOP KO mice. Basal hepatic levels of sOb-R were lower in CHOP KO mice and did not change following HFD or JD5037 treatment (B, n = 5–8). A similar trend was observed in hepatic mRNA levels (C, n = 9–17) and protein level of Ob-Rb, Ob-Ra, and Ob-Re (D and E, n = 5–6). Whereas DIO-related hyperleptinemia was comparable between WT and CHOP KO mice, JD5037 was more efficacious in reducing it in WT mice (F, n = 8–16). Lean CHOP KO mice failed to increase the hepatic pSTAT3/STAT3 ratio in response to exogenous leptin administration (G and H, n = 5). Western blots are representative. Data represent mean ± SEM of indicated number of replicates in each panel. *p<0.05 relative to standard diet-fed animals from the same strain. #p<0.05 relative to HFD-fed mice from the same strain. ^p<0.05 relative to the same treatment group of WT mice.
 
 To further investigate this concept, we directly activated CB1R (with NE) in immortalized hepatocytes originated from WT or CHOP KO mice. Similar to a HFD consumption in mice (Figure 3A), a direct activation of CB1R downregulated CHOP mRNA expression (Figure 5A). We validated this by measuring the expression levels of Ppp1r15a, a downstream target of CHOP (Hu et al., 2018), and found that its expression was also reduced in NE-treated WT hepatocytes, and remained unchanged in CHOP KO cells (Figure 5B), suggesting that CB1R activation in fact leads to reduced CHOP expression and activity. Whereas NE was able to reduce sOb-R levels in WT hepatocytes, it had the opposite effect in CHOP KO hepatocytes, suggesting that CB1R may regulate sOb-R levels in other mechanisms independently of CHOP (Figure 5C–E).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/60771/elife-60771-fig5-v2.jpg)
 
-**Figure 5.:** In vitro, 24 hr treatment with noladin ether (NE; 2.5 μM) induced reduction in mRNA levels of Ddit3. (ND – not detected) (A), Ppp1r15a (B), and Lepr-s (C) in wild-type (WT), but not CHOP KO hepatocytes. A similar trend was observed in soluble isoform of leptin receptor protein levels secreted into the culture media of hepatocytes (blot was quantified using Ponceau staining as a loading control) (D and E). Data represent mean ± SEM of 8–20 biological replicates. Blots are representative. *p<0.05 relative to vehicle-treated cells in the same genotype. ^p<0.05 relative to same treatment paradigm in WT.Figure 5—source data 1.Figure 5.
+**Figure 5.:** In vitro, 24 hr treatment with noladin ether (NE; 2.5 μM) induced reduction in mRNA levels of Ddit3. (ND – not detected) (A), Ppp1r15a (B), and Lepr-s (C) in wild-type (WT), but not CHOP KO hepatocytes. A similar trend was observed in soluble isoform of leptin receptor protein levels secreted into the culture media of hepatocytes (blot was quantified using Ponceau staining as a loading control) (D and E). Data represent mean ± SEM of 8–20 biological replicates. Blots are representative. *p<0.05 relative to vehicle-treated cells in the same genotype. ^p<0.05 relative to same treatment paradigm in WT.
 
 The consistent correlation between CHOP and sOb-R levels implies that CHOP is a positive regulator of Ob-Re. To validate this further, we analyzed Ob-Re levels in WT and CHOP KO hepatocytes treated with tunicamycin (TM), a potent inducer of ER stress. Treatment with TM for 6 hr led to an expected and robust expression of CHOP mRNA and protein in WT cells (Figure 6A,B). Importantly, this was accompanied with elevated mRNA expression levels of Lepr-s as well as secreted levels of sOb-R into the culture media in WT, but not CHOP KO hepatocytes (Figure 6C–E). Increased levels of sOb-R in culture media were also documented when we exogenously overexpressed myc-tagged CHOP in WT hepatocytes (Figure 6F,G), supporting a direct role for CHOP in Lepr gene regulation. By using a luciferase reporter assay, in which the −650 to +850 (relative to transcription start site) region of the LEPR promoter was cloned into firefly luciferase expressing vector, we found that CHOP expression and luciferase activity in transfected cells was induced using TM (Figure 6H), while CB1R activation using NE (which downregulates CHOP expression as seen in Figure 5A) had an opposite effect in WT, but not in CHOP KO cells. These data support the involvement of CHOP in CB1R-dependent regulation of sOb-R.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60771/elife-60771-fig6-v2.jpg)
+
+**Figure 6.:** Induction of CHOP mRNA (A, n = 14) and protein (B, n = 3) expression using a 6 hr treatment with tunicamycin (TM; 2.5 µG/mL) was accompanied by elevated soluble isoform of leptin receptor (sOb-R) levels in the culture media (blot was quantified using Ponceau staining as a loading control) (C and D, n = 3) as well as mRNA levels (E, n = 8–21) of wild-type (WT) hepatocytes. A transient CHOP overexpression induced elevation in sOb-R levels in the culture media of WT hepatocytes (F and G, n = 3). Luciferase reporter assay (H, n = 14–16) and chromatin immunoprecipitation (ChIP) (I, n = 2–7) show increased Lepr promoter activity and CHOP binding to this promoter in WT hepatocytes treated with TM. Data represent mean ± SEM of indicated number of biological replicates. Blots are representative. *p<0.05 relative to vehicle-treated cells. ^p<0.05 relative to the same treatment group of WT hepatocytes.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60771/elife-60771-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Western blot analysis and quantification (A–C, n = 5) and mRNA of hepatic Trib3 expression levels (D, n = 5) in wild-type (WT) and CHOP KO mice show increased expression in obese WT, but not LCB1 cKO mice. A direct activation of CB1R by using noladin ether (NE) upregulated the mRNA expression of Trib3 in WT, but not in CHOP KO hepatocytes. In vivo: Data represent mean ± SEM of indicated number of replicates in each panel. Western blots are representative. *p<0.05 relative to standard diet-fed animals from the same strain. #p<0.05 relative to high-fat diet-fed mice from the same strain. ^p<0.05 relative to the same treatment group of WT mice. In vitro: Data represent mean ± SEM of 12–15 replicates from at least three independent experiments. *p<0.05 relative to vehicle-treated cells in the same genotype. ^p<0.05 relative to same treatment paradigm in WT.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/60771/elife-60771-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Hepatic mRNA levels (A) of Atf4 are similarly reduced in wild-type (WT) and LCB1 cKO obese mice. However, western blot analysis and quantification (B–D, n = 5–6) revealed that the ATF4 protein levels in the WT mice are reduced on a high-fat diet (HFD), and reversed by JD5037, whereas they remain unchanged in obese LCB1 cKO mice. Like in WT mice, transgenic mice with CB1R overexpression in the liver (hTgCB1 cKO) have lower levels of hepatic Atf4 mRNA (E) and ATF4 protein (F and G, n = 6–10) levels when fed with a HFD. Data represent the mean ± SEM of the indicated number of replicates in each panel. *p<0.05 relative to standard diet-fed animals from the same strain. #p<0.05 relative to the HFD-fed mice from the same strain.
 
 To further explore the possibility that CHOP can directly bind the Lepr promoter and control its expression, we performed several chromatin immunoprecipitation (ChIP) experiments. In silico analysis of the Lepr promoter region revealed a putative binding site, corresponding to five of six nucleotides that compose a core sequence for CHOP binding (GRCm38:CM000997.2. Chromosome 4: 101,717,929–101,717,934) (Ubeda et al., 1996). As seen in the CHOP precipitates (Figure 6I), there was a twofold increase in the recovery of the qPCR product amplified with a primer set flanking the putative CHOP binding site, in cells that were treated with TM. A similar enrichment was seen in Ppp1r15a (GADD34), a well-known target of CHOP. This increase was limited to WT hepatocytes, validating the specificity of CHOP IP. Taken together, our data suggests that CHOP is able to occupy the Lepr promoter and directly regulate sOb-R levels in response to HFD consumption and/or CB1R activation.
 
@@ -102,19 +142,239 @@ In conclusion, we report a new role for the hepatic eCB/CB1R in the development 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/60771/elife-60771-fig7-v2.jpg)
 
-**Figure 7.:** 1R and C/EBP homologous protein (CHOP) in the regulation of soluble isoform of leptin receptor (sOb-R) levels.(Left) When overexpressed in the liver, activated by endocannabinoids during diet-induced obesity (DIO) or synthetic cannabinoids, such as noladin ether (NE, green squares), CB1R attenuates cAMP (pink circles) production by inhibiting adenylate cyclase (AC). CB1R also represses the expression of ATF4, as well as upregulates Trib3 expression. As a consequence, CHOP levels are reduced, transcribing less Lepr. (Right) Blocking CB1R in hepatocytes reverses these changes, leading to the activation and translocation of CHOP to the nucleus, which, in turn, directly binds the Lepr promoter and promotes the expression of sOb-R. Red arrows represent downregulation, whereas green arrows represent upregulation. Colored triangles represent activation.
+**Figure 7.:** (Left) When overexpressed in the liver, activated by endocannabinoids during diet-induced obesity (DIO) or synthetic cannabinoids, such as noladin ether (NE, green squares), CB1R attenuates cAMP (pink circles) production by inhibiting adenylate cyclase (AC). CB1R also represses the expression of ATF4, as well as upregulates Trib3 expression. As a consequence, CHOP levels are reduced, transcribing less Lepr. (Right) Blocking CB1R in hepatocytes reverses these changes, leading to the activation and translocation of CHOP to the nucleus, which, in turn, directly binds the Lepr promoter and promotes the expression of sOb-R. Red arrows represent downregulation, whereas green arrows represent upregulation. Colored triangles represent activation.
 
 ## Materials and methods
 
-## Animals and experimental protocol
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Lepr</td>
+      <td>e!Ensembl</td>
+      <td>ENSMUSG00000057722</td>
+      <td>Leptin receptor</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Wild type</td>
+      <td>Envigo Israel</td>
+      <td>C57Bl/6N</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>LCB1 cKO</td>
+      <td>Osei-Hyiaman et al., 2008</td>
+      <td></td>
+      <td>Liver-specific CB1R KO</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>hTgCB1 cKO</td>
+      <td>Tam et al., 2010</td>
+      <td></td>
+      <td>CB1R KO, overexpressing CB1R in hepatocytes</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>CHOP KO</td>
+      <td>The Jackson Laboratory</td>
+      <td>B6.129S(Cg)-Ddit3tm2.1Dron/J, #005530 RRID:IMSR_JAX:005530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>mCHOP-9E10</td>
+      <td>Addgene</td>
+      <td>CHOP6: mCHOP-WT-9E10-pCDNA, #21913 RRID:Addgene_21913</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Firefly,sv40)</td>
+      <td>pGL3</td>
+      <td>Promega</td>
+      <td>pGL3-basic vector, E1751</td>
+      <td>Luciferase Assay vector</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>Ad-GFP-mLEPR</td>
+      <td>VECTOR BIOSYSTEMS Inc</td>
+      <td>ADV-263380</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Wild type</td>
+      <td>Uzi et al., 2013</td>
+      <td></td>
+      <td>Immortalized mouse hepatocytes</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>CHOP KO</td>
+      <td>Uzi et al., 2013</td>
+      <td></td>
+      <td>Immortalized mouse hepatocytes</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LEPR (rabbit polyclonal)</td>
+      <td>Novus</td>
+      <td>NB-120–5593 RRID:AB_791038</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pSTAT3 (rabbit monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>#9145 RRID:AB_2491009</td>
+      <td>Phosphorylated Stat3 (Tyr705), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>STAT3 (mouse monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>#9139 RRID:AB_331757</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p-eIF2α (rabbit polyclonal)</td>
+      <td>Cell signaling</td>
+      <td>#9721 RRID:AB_330951</td>
+      <td>Phosphorylated eIF2α (Ser51), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>t-eIF2α (rabbit polyclonal)</td>
+      <td>Cell signaling</td>
+      <td>#9722 RRID:AB_2230924</td>
+      <td>Total eIF2α WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ATF4 (rabbit monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>#11815 RRID:AB_2616025</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CHOP (mouse monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>#2895S RRID:AB_2089254</td>
+      <td>WB (1:1000) ChIP (2.5 µg/sample)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Trib3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab137526 RRID:AB_2876352</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Actin (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab49900 RRID:AB_867494</td>
+      <td>WB (1:30,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab1791 RRID:AB_302613</td>
+      <td>ChIP (2.5 µg/sample)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit HRP (donkey polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab97085 RRID:AB_10679957</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse HRP (donkey polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab98799 RRID:AB_10675068</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SLR ELISA</td>
+      <td>Shanghai Bluegene Biotech</td>
+      <td>E03S0226</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Triglyceride Assay Kit</td>
+      <td>Abcam</td>
+      <td>ab65336</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Glo Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>E2920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JD5037</td>
+      <td>Haoyuan Chemexpress Co., Ltd</td>
+      <td>HY-18697</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NE</td>
+      <td>Cayman Chemicals</td>
+      <td>62165</td>
+      <td>2-Arachidonyl glycerol ether</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tunicamycin (TM)</td>
+      <td>Holland Moran</td>
+      <td>11089-65-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and experimental protocol
 
 All animal studies were approved by the Institutional Animal Care and Use Committee of the Hebrew University of Jerusalem (AAALAC accreditation #1285; Ethic approval numbers MD-14–14008 and MD-19–15951). Animal studies are reported in compliance with the ARRIVE guidelines (NC3Rs Reporting Guidelines Working Group et al., 2010), and are based on the rule of the replacement, refinement, or reduction. All the animals used in this study were housed under specific pathogen‐free (SPF) conditions, up to five per cage, in standard plastic cages with natural soft sawdust as bedding. The animals were maintained under controlled temperature of 22–24°C, humidity at 55 ± 5%, and alternating 12 hr light/dark cycles (lights were on between 7:00 and 19:00 hr), and provided with food and water ad libitum. C57Bl/6 (Envigo, Israel), LCB1 cKO, and hTgCB1 cKO (kindly provided by Dr. George Kunos, NIH) or B6.129S(Cg)-Ddit3tm2.1Dron/J (CHOP KO, The Jackson Laboratory #005530), and their WT littermate controls were used for in vivo experiments. All mice were male and 8–10 weeks old at the beginning of each experiment. To generate DIO (body weight >42 g), mice were fed with a standard diet (STD; 14% Kcal fat, 24% Kcal protein, 62% Kcal carbohydrates; NIH-31 rodent diet) or a HFD (60% Kcal fat, 20% Kcal protein, and 20% Kcal carbohydrates; Research Diet, D12492) for 14 weeks. Then, obese mice were randomly divided into the experimental groups. Treatment with JD5037 (3 mg/kg, ip) or vehicle (1% Tween80, 4% DMSO, 95% Saline) was conducted for 7 days, and 12 hr following the last dose, the mice were euthanized by a cervical dislocation under anesthesia, and blood and livers were harvested for further analyses. For leptin sensitivity test, mice were fasted for 24 hr before an ip administration of recombinant mouse leptin (3 mg/kg). One hour following leptin administration, mice were euthanized and livers were harvested and processed for phosphorylated STAT3 detection using western blot.
 
-## Cell culture
+### Cell culture
 
 WT or CHOP KO immortalized hepatocytes (described in Uzi et al., 2013), confirmed to be mycoplasma-negative, were maintained in DMEM (01-100-1A; Biological Industries, Israel) supplemented with 5% FCS, 100 mM glutamine, 100 mM Na-Pyruvate, and Pen/Strep. Cells were cultured at 37°C in a humidified atmosphere of 5% CO2/95% air. To test the effect of CB1R activation, cells were seeded in 6-well plates (25 × 104 cells/well) for 24 hr. Then, growth medium was replaced with a serum-free medium (SFM) for an additional 12 hr. At the morning of the experiment the medium was replaced with fresh SFM containing either vehicle (EtOH), 2.5 µM NE (Cayman Chemicals, Ann Arbor, Michigan) or a combination of 100 nM JD5037 (Haoyuan Chemexpress Co., Ltd) and 2.5 µM NE. After 24 hr, cells were harvested for further analyses as described below.
 
-## Measurements of sOb-R
+### Measurements of sOb-R
 
 Soluble leptin receptor was quantified by an ELISA kit, capable to differentiate the soluble isoform from other isoforms, according to manufacturer’s instructions (E03S0226; Shanghai Bluegene Biotech, China). Briefly, for serum measurements, we diluted serum in saline (1:2) and 100 µL from the diluted samples were analyzed. For hepatic measurements, 50–100 mg tissue samples were homogenized in 300 µL of 1× PBS and centrifuged for 5 min in 5000 rpm; 100 µL of cleared lysates were analyzed. Data were normalized to sample protein content, determined using the Pierce BCA Protein Assay Kit (Thermo Scientific, IL).
 
@@ -122,40 +382,40 @@ To measure sOb-R protein content in cell culture media, we used trichloroacetic 
 
 Validation of LEPR antibody. The specificity of the anti-LEPR antibody was validated in a control experiment (Figure 1—figure supplement 1), where mouse LEPR was overexpressed in kidney cell line by using a viral infection. The viral vector encoded Ad-GFP-mLEPR (ADV-263380, VECTOR BIOSYSTEMS Inc) was used in a multiplicity of infection of 50, and cells were harvested for western blot analysis 24 hr post infection.
 
-## Real-time PCR
+### Real-time PCR
 
 For total mRNA isolation, tissue samples or hepatocytes were washed in 1× PBS and harvested using Bio-Tri RNA lysis buffer (Bio-Lab, Israel). Extracted RNA was treated with DNase I (Thermo Scientific, IL), and reverse transcribed using the Iscript cDNA kit (Bio-Rad Laboratories, CA). Quantitative PCR reactions for Lepr-s, Ddit3, or Ppp1r15a were performed using iTaq Universal SYBR Green Supermix (Bio-Rad Laboratories, CA), and the CFX connect ST system (Bio-Rad Laboratories, CA). Relative quantity (RQ) values of all tested genes were normalized to Ubc. Primers are listed in Supplementary file 1.
 
-## Western blot analysis
+### Western blot analysis
 
 Tissue samples or hepatocytes were washed in cold 1× PBS, and harvested in a RIPA buffer (25 mM Tris-HCl pH 7.6, 150 mM NaCl, 1% NP-40, 1% sodium deoxycholate, 0.1% SDS), vortexed and incubated for 30 min at 4°C, and then centrifuged for 10 min at 14,000 rpm. Protein concentrations were determined using the Pierce BCA Protein Assay Kit (Thermo Scientific, IL). Cleared lysates were supplemented with protein sample buffer, resolved by SDS-PAGE (4–15% acrylamide, 150 V) and transferred to PVDF membranes using the Trans-Blot Turbo Transfer System (Bio-Rad Laboratories, CA). Membranes were incubated for 1 hr in 5% milk (in TBS-T) to block unspecific binding, washed briefly, and incubated overnight at 4°C with the following primary antibodies: LEPR (NB-120–5593, Novus), phosphorylated STAT3 (9145, Cell Signaling), STAT3 (9139, Cell Signaling), phosphorylated eIF2α (9721, Cell Signaling), eIF2α (9722, Cell Signaling), ATF4 (11815, Cell Signaling), CHOP (2895S, Cell Signaling), Trib3 (ab137526, Abcam), or β-Actin (ab49900, Abcam). Anti-rabbit (ab97085, Abcam) or mouse (ab98799, Abcam) horseradish peroxidase (HRP)-conjugated secondary antibodies were used for 1 hr at room temperature, followed by chemiluminescence detection using Clarity Western ECL Blotting Substrate (Bio-Rad Laboratories, CA). Densitometry was quantified using ImageLab software. Protein RQ was calculated as the ratio between LEPR to total protein signal (ponceau) in culture media supernatants and to β-actin in cell and tissue lysates.
 
-## Body composition and biochemical analysis
+### Body composition and biochemical analysis
 
 Total body fat and lean masses were determined by EchoMRI-100H (Echo Medical Systems LLC, Houston, TX, USA).
 
 HDL and LDL measurements were done using the Cobas C-111 chemistry analyzer (Roche, Switzerland).
 
-## Hepatic triglycerides measurements
+### Hepatic triglycerides measurements
 
 Tissue lipids were extracted as described in Folch et al., 1957, and quantified using Triglyceride Assay Kit (ab65336; Abcam). Data were normalized to tissue weight.
 
-## eCB measurements by LC-MS/MS
+### eCB measurements by LC-MS/MS
 
 eCBs were extracted, purified, and quantified in liver homogenates, as described previously (Drori et al., 2019; Udi et al., 2017). LC-MS/MS was analyzed on an AB Sciex (Framingham, MA, USA) Triple Quad 5500 mass spectrometer coupled with a Shimadzu (Kyoto, Japan) UHPLC System. eCBs were detected in a positive ion mode using electron spray ionization (ESI) and the multiple reaction monitoring (MRM) mode of acquisition. The levels of each compound were analyzed by monitoring multiple reactions. The molecular ion and fragment for each compound were measured as follows: m/z 348.3→62.1 (quantifier) and 91.1 (qualifier) for AEA, m/z 379.3→287.3 (quantifier) and 91.1 (qualifier) for 2-AG. The levels of AEA and 2-AG in samples were measured against standard curves and normalized to tissue weight.
 
-## Chop overexpression
+### Chop overexpression
 
 WT hepatocytes were transfected with mCHOP-WT-9E10-pCDNA1 vector (Addgene plasmid #21913) using Lipofectamin 3000. Cells were harvested 24 hr post-transfection and CHOP expression was validated by western blot analysis.
 
-## Luciferase promoter assay
+### Luciferase promoter assay
 
 Mus musculus Ob-R promoter sequence (GRCm38:CM000997.2. Chromosome 4: 101,716,750–101,718,250 forward strand) was cloned into pGL3-basic vector (E1751, Promega). Reporter vector and Renilla luciferase vector were then co-transfected into WT or CHOP KO hepatocytes using Lipophectamin 3000. Twenty-four hours post transfection, cells were treated with either vehicle, 2.5 µg/mL tunicamycin (11089-65-9; Holland Moran, Israel) or 2.5 µM NE for indicated period. At the end of the experiment, luciferase activity was measured using Dual-Glo Luciferase Assay System (E2920, Promega). Data are presented as the ratio between Firefly and Renilla luciferase activity.
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 WT or CHOP KO hepatocytes were seeded in 100 mm plate and left to adhere (5 × 106 cells per plate; three plates for each sample). The next day, cells were treated with either DMSO or 2.5 µg/mL tunicamycin for 6 hr to induce CHOP expression. At the end of incubation, cells were washed in 1× PBS, fixed with 1% formaldehyde for 10 min, then quenched with 125 mM glycine and harvested from plates. Following centrifugation, cells were resuspended in a lysis buffer and sonicated for 12 cycles of 30 s pulse followed by 30 s rest in 70% amplitude. Sheared DNA was diluted in a ChIP dilution buffer and pre-cleared with magnetic ProteinG-sepharose beads for 4 hr at 4°C. Ten percent of the lysate was removed and saved as ‘Input’. The rest of the lysate was divided and each part was incubated overnight at 4°C with 2.5 µg of either anti-H3 (ab1791, Abcam), anti-CHOP (2895S, Cell Signaling), or IgG isotype control. Antibody-chromatin complexes were precipitated with magnetic protein G-Sepharose beads, washed with low salt, high salt, lithium chloride, and Tris-EDTA buffers. DNA was then eluted from beads, digested with proteinase K, and purified; 1.5 µL of clean DNA was used in a qPCR reaction using specific primers for Gapdh or Lepr promoter region. For a positive control, Ppp1r15a primers were used. For each sample, we calculated the ratio between the RQ (expressed as % of input) of ObR promoter qPCR product in αCHOP IP relative to αH3 IP. This ratio was normalized to the ratio of Gapdh qPCR product to control for nonspecific binding. Data are expressed as the fold-change of this ratio in tunicamycin-treated compared to vehicle-treated cells. ChIP primers are listed in Supplementary file 1.
 
-## Statistics
+### Statistics
 
 The data and statistical analysis comply with the recommendations on experimental design and analysis as reported previously (Curtis et al., 2018). Randomization was used to assign samples to the experimental groups and treatment conditions for all in vivo studies. Data collection and acquisition of all in vivo and in vitro experimental paradigms were performed in a blinded manner. Data are presented as mean ± SEM. Unpaired two-tailed Student’s t-test was used to determine variations between two groups. Results in multiple groups were compared by ANOVA followed by a Bonferroni post hoc analysis using GraphPadPrism v6 for Windows. Post hoc tests were conducted only if F was significant, and there was no variance inhomogeneity. Significance was set at p<0.05.

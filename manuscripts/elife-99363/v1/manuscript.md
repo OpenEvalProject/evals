@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02ttsq026 Institute for Behavioral Genetics, University of Colorado Boulder Boulder United States
-2. https://ror.org/02ttsq026 Department of Psychology and Neuroscience, University of Colorado Boulder Boulder United States
-3. https://ror.org/02ttsq026 Crnic Institute Boulder Branch, BioFrontiers Institute, University of Colorado Boulder Boulder United States
+1. Institute for Behavioral Genetics, University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))
+2. Department of Psychology and Neuroscience, University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))
+3. Crnic Institute Boulder Branch, BioFrontiers Institute, University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))
 
 † Corresponding author
 

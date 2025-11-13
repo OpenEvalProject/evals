@@ -10,15 +10,15 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Department of Biochemistry and Biophysics, University of California, San Francisco San Francisco United States
+1. Department of Biochemistry and Biophysics, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 2. Cancer Immunology, Genentech, Inc South San Francisco United States
-3. https://ror.org/043mz5j54 Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States
+3. Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
 ## Abstract
 
-Protein folding homeostasis in the endoplasmic reticulum (ER) is regulated by a signaling network, termed the unfolded protein response (UPR). Inositol-requiring enzyme 1 (IRE1) is an ER membrane-resident kinase/RNase that mediates signal transmission in the most evolutionarily conserved branch of the UPR. Dimerization and/or higher-order oligomerization of IRE1 are thought to be important for its activation mechanism, yet the actual oligomeric states of inactive, active, and attenuated mammalian IRE1 complexes remain unknown. We developed an automated two-color single-molecule tracking approach to dissect the oligomerization of tagged endogenous human IRE1 in live cells. In contrast to previous models, our data indicate that IRE1 exists as a constitutive homodimer at baseline and assembles into small oligomers upon ER stress. We demonstrate that the formation of inactive dimers and stress-dependent oligomers is fully governed by IRE1’s lumenal domain. Phosphorylation of IRE1’s kinase domain occurs more slowly than oligomerization and is retained after oligomers disassemble back into dimers. Our findings suggest that assembly of IRE1 dimers into larger oligomers specifically enables trans- autophosphorylation, which in turn drives IRE1’s RNase activity.
+Protein folding homeostasis in the endoplasmic reticulum (ER) is regulated by a signaling network, termed the unfolded protein response (UPR). Inositol-requiring enzyme 1 (IRE1) is an ER membrane-resident kinase/RNase that mediates signal transmission in the most evolutionarily conserved branch of the UPR. Dimerization and/or higher-order oligomerization of IRE1 are thought to be important for its activation mechanism, yet the actual oligomeric states of inactive, active, and attenuated mammalian IRE1 complexes remain unknown. We developed an automated two-color single-molecule tracking approach to dissect the oligomerization of tagged endogenous human IRE1 in live cells. In contrast to previous models, our data indicate that IRE1 exists as a constitutive homodimer at baseline and assembles into small oligomers upon ER stress. We demonstrate that the formation of inactive dimers and stress-dependent oligomers is fully governed by IRE1’s lumenal domain. Phosphorylation of IRE1’s kinase domain occurs more slowly than oligomerization and is retained after oligomers disassemble back into dimers. Our findings suggest that assembly of IRE1 dimers into larger oligomers specifically enables trans-autophosphorylation, which in turn drives IRE1’s RNase activity.
 
 ## Introduction
 
@@ -28,39 +28,111 @@ One such oligomer-forming protein is the ER membrane-resident stress sensor IRE1
 
 Early work on yeast IRE1 revealed that both the lumenal (Credle et al., 2005) and cytosolic (Korennykh et al., 2009) domains can individually crystallize as helical filaments, and that IRE1 molecules assemble into puncta in the ER membrane upon induction of ER stress (Kimata et al., 2007). Similarly, fluorescently tagged human IRE1α (‘IRE1’ hereafter) was observed to reversibly assemble into large, topologically complex puncta in a stress-dependent fashion (Li et al., 2010; Belyy et al., 2020; Tran et al., 2021). The Hill coefficients for purified yeast (Korennykh et al., 2009) and human (Li et al., 2010) IRE1 kinase/RNase domains were measured to be ~8 and ~ 3.4, respectively, indicating that the cooperative formation of oligomers larger than dimers plays an important role in IRE1’s enzymatic cycle. The lumenal domain, while itself lacking catalytic activity, was also observed to assemble into dimers and larger oligomers in vitro (Gardner and Walter, 2011; Karagöz et al., 2017). This assembly occurs across two predicted interfaces: IF1L (L for lumenal), generally accepted to be the primary dimerization interface, and IF2L (Figure 1A), which mediates higher order oligomerization.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of IRE1 with a C-terminal HaloTag, the construct used for tagging IRE1 at the endogenous locus. IF1L and IF2L refer to the primary dimerization and oligomerization interfaces of the lumenal domain, respectively. (B) RT-PCR analysis of stress-dependent XBP1 mRNA splicing in WT U-2 OS cells, IRE1 knock-out (KO) U-2 OS cells, and U-2 OS cells in which IRE1 has been fully edited with a C-terminal HaloTag. Tm indicates treatment with 5 μg/ml tunicamycin. (C) Immunoblot of UPR activation in response to 5 μg /ml tunicamycin (left) and 100 nM thapsigargin (right) treatments in the three cell lines shown in panel B. (D) Maximum intensity projections of representative spinning-disk confocal images of live cells expressing endogenously tagged IRE1-HaloTag, labeled with the JF549 dye. Regions shown with yellow boxes are enlarged below. (E) Same as D, except the cells have been treated with 5 μg/ml tunicamycin for 5 hr.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Immunoblot showing IRE1 expression levels and UPR activation in WT U-2 OS cells, IRE1 KO U-2 OS cells, partial KO cells used as the parental cell line for generating HaloTag knock-ins, and two clones of endogenously labeled HaloTag (with high and low IRE1 expression levels). Note the shift in protein size due to the addition of the HaloTag and the absence of a WT IRE1 band in the two clones on the right. (B) Flow cytometry analysis of the low-and high-expressing clones shown in panel A. Cells were labeled with 5 nM JF549-HaloTag dye for 1 hr prior to the start of the flow cytometry experiment. Note the unimodal intensity distributions of both clones, ruling out the possibility that the lower-expressing clone simply contains a bimodal mixture of low- and high-expressing cells. Error bars represent 95% confidence intervals.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Relative abundance of XBP1u (A), XBP1s (B), DGAT2 (C), BCAM (D) and TGOLN2 (E) mRNA. HPRT1 mRNA expression was used as housekeeping gene. All values are normalized to the amount of mRNA present in unstressed WT cells.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Representative confocal microscopy images of IRE1 KO U-2 OS cells transiently transfected with IRE1-HaloTag (the same construct used throughout this study) and treated with 5 µg/ml tunicamycin for 4 hr. Expression levels following transient transfections are highly variable, and cells expressing visibly high amounts of IRE1-HaloTag readily form clusters detectable by confocal microscopy in response to pharmacologically induced ER stress.
+
 Despite this wealth of information, the oligomeric state of both active and inactive IRE1 complexes in mammalian cells remains unclear. It has been alternatively proposed that the monomer-to-dimer transition serves as the main activation signal and that the formation of high-order oligomers is instead the primary regulatory step. The former is supported by the observation of stress-induced increase in crosslinking of a Q105C mutant engineered into the IF1L interface (Amin-Wetzel et al., 2017), while the latter rests on the observation of large clusters of fluorescently tagged IRE1 in stressed cells and on the finding that genetic disruption of the IF2L interface abrogates IRE1 activity (Karagöz et al., 2017). However, crosslinking of a single residue is not necessarily proportional to the degree of dimerization. Indeed, the dimer of IRE1’s lumenal domains has been predicted to undergo substantial conformation changes upon peptide binding (Karagöz et al., 2017), which alongside the biochemical changes in the lumen of an acutely stressed ER may alter crosslinking efficiency. Most other studies relied on exogenous overexpression of tagged IRE1, which may in turn bias the equilibrium of an oligomerization-prone protein away from physiologically relevant levels. To pursue an orthogonal strategy, we set out to directly measure the oligomerization of endogenously labeled IRE1 in live human cells. To this end, we developed a single-molecule microscopy approach that proved useful to reveal the precise oligomeric changes that underpin IRE1 activation. More broadly, this approach promises to provide a powerful tool to study the oligomerization of other proteins residing on internal membranes in eukaryotic cells.
 
 ## Results
 
-## Endogenously tagged IRE1 Is fully active despite not forming large clusters
+### Endogenously tagged IRE1 Is fully active despite not forming large clusters
 
 To study the oligomerization of endogenous IRE1, we inserted a C-terminal HaloTag (Los et al., 2008) into IRE1’s genomic locus in U-2 OS cells using CRISPR/Cas9-based gene editing (Figure 1A). Following clonal selection, we chose a clone that satisfied the following criteria: 1) comparable IRE1 expression levels to unedited U-2 OS cells, 2) absence of wild-type (WT) IRE1 protein lacking the HaloTag, and 3) intact UPR activation in response to ER stress. Additionally, we selected a second clone with lower levels of IRE1-HaloTag protein to evaluate effects of expression level and rule out clonal artifacts (Figure 1—figure supplement 1). Comparing expression of IRE1-HaloTag in the two clones to endogenous IRE1 levels by gel band densitometry, we found that the higher-expressing clone has ~3.5-fold higher levels of IRE1-HaloTag protein than WT (averaged across stress conditions) while the lower-expressing clone contains levels of IRE1-HaloTag ~ 30% lower than WT. UPR activation in IRE1-HaloTag clones was ascertained by the detection of ER stress-dependent XBP1 mRNA splicing (Figure 1B and Figure 1—figure supplement 2), IRE1 phosphorylation, production of XBP1s protein, upregulation of the CHOP and ATF4 transcription factors, and cleavage of ATF6 (Figure 1C and Figure 1—figure supplement 1). Furthermore, we found that IRE1-HaloTag cells exhibited RIDD activity, as demonstrated by the decay of the previously described RIDD targets DGAT2, BCAM, and TGOLN2 (Le Thomas et al., 2021; Figure 1—figure supplement 2).We concluded that the endogenous C-terminal HaloTag does not substantially interfere with IRE1’s kinase or RNase activity and could provide an excellent way to image IRE1 dynamics in live cells.
 
 A key advantage of HaloTag fusion proteins stems from the fact that they can be labeled with bright and photostable cell-permeable dyes. Thus, despite IRE1 being a comparatively low-abundance protein, we could readily image it by spinning-disk confocal microscopy after labeling it with the JF549 dye conjugated with the HaloTag ligand (Grimm et al., 2017). As expected, IRE1-HaloTag exhibited a reticulated distribution characteristic of ER-localized proteins (Figure 1D). We were surprised to observe that IRE1-HaloTag did not assemble into large clusters upon induction of ER stress (Figure 1E; also see “Detection of Large IRE1 Clusters” in Materials and Methods), in direct contrast to previous work by us and others that relied on ectopic expression of GFP-tagged IRE1 protein (Li et al., 2010; Belyy et al., 2020; Ricci et al., 2019; Ricci et al., 2021; Cohen et al., 2017; Wu et al., 2021; Li et al., 2020). The lack of clustering was not due to a defect of the IRE1-HaloTag fusion construct, since overexpression of the same IRE1-HaloTag protein by transient transfection resulted in readily observed stress-induced clusters (Figure 1—figure supplement 3). While unexpected, this observation does not rule out lower-order IRE1 oligomerization at endogenous expression levels, since the limited sensitivity of confocal microscopy would preclude the detection of small oligomers such as dimers or tetramers as distinct morphological features. We therefore sought to devise a more sensitive approach for detecting small oligomers in the ER membrane.
 
-## Development of a two-color tracking algorithm for the detection of small oligomers
+### Development of a two-color tracking algorithm for the detection of small oligomers
 
 Detection of small protein oligomers inside intact cells is a notoriously challenging task. A range of approaches, each carrying a unique set of strengths and limitations, has been employed in the past (Berggård et al., 2007; Shashkova and Leake, 2017; Sekar and Periasamy, 2003; Gell et al., 2012). We leveraged the fact that the HaloTag protein can be labeled with cell-permeable fluorophores of different colors.
 
 In principle, if a protein is stochastically labeled by fluorophores with distinct spectra and subsequently imaged with single-molecule resolution, its average oligomeric state can be determined by quantifying the fraction of particles that fluoresce in more than one color. For a diffusing protein in live cells, identification of correlated trajectories over multiple frames can boost the accuracy of the analysis (Figure 2A, B). However, to date this approach has been limited to reconstituted in vitro systems and plasma membrane-bound proteins (Low-Nam et al., 2011; Coban et al., 2015; Schlager et al., 2014; Hänselmann and Herten, 2017; Valley et al., 2015; Steinkamp et al., 2014; Li et al., 2021; Stüber et al., 2021). Furthermore, previous implementations lacked experimental controls of defined stoichiometry, relying on a number of physical assumptions to estimate the degree of oligomerization. To overcome these challenges, we developed a fully automated image analysis pipeline for identification of co-localizing, two-color trajectories of ER membrane-resident proteins.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic depiction of the assay. Cells expressing low levels of HaloTag-conjugated proteins are labeled with a mixture of HaloTag-conjugated dyes and imaged by oblique angle illumination. (B) Principle behind the analysis of single-particle data. Fluorescent spots are independently tracked in two channels, and correlated trajectories are identified computationally. (C) Design of the 1 x and 2 x HaloTag controls. (D) Representative frame from a movie of a cell expressing an ER-tethered 2 x tandem HaloTag and labeled with a mixture of JF549 (cyan) and JF646 (red) dyes. (E) Several frames of the boxed region in panel D, with co-localizing spots identified with arrows. (F) Percentage of correlated trajectories from cells expressing the 1 x and 2 x HaloTag controls, comparing data collected in 10 independent experimental replicates. Each data point represents a single cell, typically comprising several hundred trajectories. Error bars represent 95% confidence intervals.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic representation of the genetic dimerization strategy used as a primary control throughout the manuscript. A dual-HaloTag construct is engineered by fusing two HaloTag proteins in tandem, separated by a flexible GS linker, to the C-terminus of a single transmembrane helix targeted to the ER membrane. (B) Orthogonal dimerization control used to rule out the possibility that the internal and C-terminal HaloTags of the construct shown in panel A may have different labeling efficiencies. In this control, ER membrane-tethered HaloTag proteins assemble into constitutive dimers via an internal GST tag. (C) Tetramerization control created by combining the genetic and constitutive dimerization approaches (D) Single-particle tracking results comparing the fraction of correlated trajectories for the constructs shown in panels A, B, and C. Each data point represents a single cell. Error bars represent 95% confidence intervals.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Representative IRE1 KO cells transiently transfected with the 1 x HaloTag control (A), 2 x HaloTag control (B), 4 x HaloTag control (C), and untransfected (D), labeled with JF549 and JF646 dyes and imaged by spinning-disk confocal microscopy in the JF549 channel. Note the faint ‘clusters’ visible in the untransfected cell in panel D; these are common and illustrate the autofluorescent background that contributes to small apparent ‘clusters’ in cells expressing HaloTag controls of IRE1-HaloTag.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Data points represent mean observed values for % correlated trajectories from monomeric (1 x), dimeric (2 x), and tetrameric (4 x) HaloTag control constructs. Error bars represent standard errors of the mean. The orange line is a fit of the model equation to the three data points shown (refer to “Estimation of IRE1 cluster stoichiometry” section of Materials and methods).
+
 First, we calibrated our tracking-based approach using ER membrane-tethered proteins with well-defined oligomeric states. We expressed in U-2 OS cells synthetic constructs containing either one, two, or four ER-targeted HaloTag proteins (Figure 2C and Figure 2—figure supplement 1), under control of a weakened CMVd3 promoter (Slater et al., 2008). After labeling to saturation with a mixture of JF-549 HaloTag and JF-646 HaloTag dyes, we imaged the cells by oblique angle illumination microscopy. In longer-exposure movies, it was apparent that all HaloTag constructs exhibited a reticulated distribution characteristic of the ER; ER localization was also confirmed by confocal microscopy (Figure 2—figure supplement 2). The thin, spread-out morphology of U-2 OS cells, together with the exceptional photophysical properties of the JF dyes, allowed us to readily distinguish single diffusing molecules in both channels and track them over multiple frames (Figure 2D, E). As expected, a large number of seconds-long correlated two-color trajectories were observed in cells expressing the tandem 2 x HaloTag construct (Figure 2D, Video 1), but not in cells expressing the single HaloTag construct.
+
+![Video 1.](https://cdn.elifesciences.org/articles/74342/elife-74342-video1.mp4.jpg)
+
+**Video 1.:** A cropped and annotated movie recorded from an IRE1 KO cells transiently transfected with the 2 x tandem HaloTag construct and labeled with a mixture of JF549 and JF646 dyes. Two separate co-localizing spots (as determined by the automated analysis pipeline) are annotated.
 
 To quantify the fraction of co-localizing spots, we employed the following algorithm. First, spots were automatically detected and tracked in both channels. Then, the tracks were binned into short trajectories using a sliding window of either 12 or 14 frames (0.72 or 0.84 s) to minimize the ambiguity in assignment of crossing tracks. Pearson’s correlation coefficients were then calculated between both the x- and y-coordinates of adjacent tracks within each sliding window. Every track in the JF-549 channel that contained at least one window with a correlation coefficient above a predetermined threshold was classified as a co-localizer (see Materials and methods for details). By repeating this analysis on data collected from cells expressing the 1 x and 2 x HaloTag controls in ten independent replicates ( > 10 cells and >1500 trajectories per condition in each replicate), we verified that the algorithm robustly and reproducibly distinguishes between monomeric and dimeric molecules in the ER membrane (Figure 2F). To rule out the remote possibility that the 2 x tandem HaloTag protein may be an imperfect control due to differential ligand accessibility of the internal and C-terminal HaloTag proteins, we repeated the analysis with a construct that instead relies on GST dimerization to bring two ER-bound C-terminal HaloTag proteins together (Figure 2—figure supplement 1). The measured percentage of co-localized trajectories for this construct was statistically indistinguishable (P = 0.58, two-tailed T-test) from that of the tandem 2 x HaloTag protein, indicating that both HaloTag binding sites of a tandem construct remain fully accessible to dye molecules. The 4 x HaloTag construct, created by GST-induced dimerization of tandem HaloTag dimers, exhibited a substantial further increase in the percentage of correlated trajectories (Figure 2—figure supplement 1). Using a simple combinatoric model relating the observed correlated trajectories to true oligomeric state (See Materials and methods for details), we demonstrated that our assay provides excellent sensitivity for oligomers in the monomer to tetramer range, with sensitivity likely decreasing for oligomers comprised of more than ~10 protomers (Figure 2—figure supplement 3).
 
-## IRE1 transitions from dimers to small oligomers upon ER stress
+### IRE1 transitions from dimers to small oligomers upon ER stress
 
 Having validated the ability to robustly detect changes in oligomeric state, we applied our analysis to cells expressing endogenously tagged IRE1 (Figure 3A). We could clearly observe individual fluorescent spots corresponding to single IRE1 molecules moving along ER tubules (Figure 3B, C). A fraction of diffusing spots co-localized between the two channels, indicating a significant degree of IRE1 oligomerization even in the absence of stress induction (Figure 3D, E). In fact, upon quantification, the fraction of co-localized IRE1 trajectories in non-stressed cells appeared nearly identical to that of the 2 x HaloTag control, strongly suggesting that nearly all IRE1 proteins are pre-assembled into dimers at baseline (Figure 3F). Treatment with the glycosylation inhibitor and potent UPR activator tunicamycin (Tm) resulted in a pronounced increase in the fraction of correlated trajectories after 4 hr, indicating that a significant fraction of IRE1 dimers assembled into higher order oligomers. Our model estimates that the mean number of molecules per cluster increases from ~1.8 to ~ 2.5 upon Tm stress (see Materials and methods for details). Since our approach does not reveal the individual oligomeric state of any given tracked protein, this observed change is most readily explained by a Tm-dependent shift in equilibrium towards a mixture of dimers and tetramers. Extending the treatment to 24 hr reversed the shift in correlated trajectories, suggesting that IRE1 oligomers dissociate back into dimers under prolonged stress. This finding parallels the previously observed attenuation of IRE1 activity upon prolonged, unmitigated ER stress (Li et al., 2010; Belyy et al., 2020; Chang et al., 2018; Lin et al., 2007) (Figure 3F).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic depiction of the assay. IRE1-HaloTag is simultaneously labeled with HaloTag dyes of two different colors, JF549 and JF646. If the protein is purely monomeric, all single-molecule tracks are expected to be either one color or the other. If it is purely dimeric, a fraction of tracks will contain both colors. Such dual-color tracks can then be identified as correlated trajectories. (B) Single frame from a long-exposure movie (100ms per frame) of a cell in which IRE1-HaloTag is labeled with a mixture of JF549 (cyan) and JF646 (red) dyes. (C) Maximum intensity projection of the entire movie from panel B showing that single IRE1 molecules diffuse along ER tubules. (D) Single frame from a short-exposure movie (50ms per frame) of a cell in which IRE1-HaloTag is labeled with a mixture of JF549 (cyan) and JF646 (red) dyes. (E) Kymograph (time vs. position plot) along the line shown in panel D. Co-localizing diffusional IRE1 trajectory is shown with a yellow arrow. (F) Stress-induced changes in IRE1 oligomerization in response to treatment with 5 μg/ml tunicamycin (Tm), as quantified by the fraction of correlated trajectories. Green bars on the left correspond to the 1 x, 2 x, and 4 x HaloTag controls, respectively. Error bars represent 95% confidence intervals.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Single-particle tracking data showing the fraction of correlated trajectories for the 1 x and 2 x HaloTag controls, with and without a 4-hr treatment with tunicamycin. (B) Number of trajectories per movie for the four conditions shown in panel A, demonstrating that the changes in % correlated trajectories are independent of construct expression levels. Each data point represents a single cell. Error bars represent 95% confidence intervals.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Single-particle tracking data showing the fraction of correlated trajectories for the 1 x, 2 x, and 4 x HaloTag controls, as well as endogenously tagged IRE1-HaloTag cells with dye added at different times relative to the induction of ER stress. ‘Before’ indicates that cells were first treated with tunicamycin and then labeled with a mixture of JF549 and JF646 dyes, while ‘after’ indicates that cells were first labeled with the dye mixture and then stressed with tunicamycin. Each data point represents a single cell. Error bars represent 95% confidence intervals.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Kernel density estimates of apparent diffusion constants of HaloTag controls and IRE1-HaloTag with and without stress, obtained by conventional MSD analysis of single particle trajectories. (B) Mean posterior occupation of single-particle diffusion constants of the same four conditions as shown in panel A (see Materials and methods for details).
 
 Because our analysis is rooted in actively identifying correlated diffusive trajectories from single-molecule data, we needed to verify that the induction of ER stress does not substantially alter the efficiency of dye labeling or the diffusion of our proteins of interest. Addition of Tm did not induce an increase in the fraction of correlated trajectories of the 1 x and 2 x HaloTag controls (Figure 3—figure supplement 1) and did not affect the efficiency of labeling IRE1-HaloTag with JF dyes (Figure 3—figure supplement 2). To examine IRE1 diffusion, we measured apparent diffusion coefficients from single-particle tracks using both the mean-squared displacement (MSD) approach and a recently published state array (SA) method, which is specifically optimized for extracting diffusion coefficients from noisy single-molecule data (Heckert et al., 2021). Both approaches showed that diffusion coefficients remain nearly identical among HaloTag controls and IRE1-HaloTag molecules in stressed and unstressed cells (Figure 3—figure supplement 3). As expected, the SA method resulted in a far tighter distribution than the MSD method and yielded a mean apparent diffusion coefficient of 0.18 ± 0.02 µm2 s–1 for unstressed IRE1-HaloTag, which is remarkably close to the value of 0.24 ± 0.02 µm2 s–1 that we obtained previously for IRE1-mNeonGreen by FRAP (Belyy et al., 2020). Collectively, these data demonstrated that the existence of resting-state dimers and their transient assembly into small oligomers are bona fide features of IRE1 signaling rather than consequences of stress-dependent remodeling of the ER membrane.
 
 A key aspect of IRE1 activation is its trans-autophosphorylation. Intriguingly, thapsigargin (Tg), which disrupts ER calcium homeostasis by blocking sarco/endoplasmic reticulum Ca2+ pumps (Lu et al., 2014), induced IRE1 phosphorylation much more rapidly and strongly than Tm, despite leading to similar overall levels of XBP1s production (Figure 1C). This observation prompted us to test whether oligomerization is directly proportional to IRE1 phosphorylation by comparing the effects of different ER stressors. Treatment with dithiothreitol (DTT), which causes protein misfolding by reducing disulfide bonds, induced IRE1 oligomerization to the same extent as Tm (Figure 4). However, to our surprise, treatment with a high concentration (100 nM) of Tg did not induce a detectable change in oligomeric state either 2 or 4 hr after treatment. Since Tg is a fast-acting stressor compared to Tm, we reasoned that the apparent lack of oligomerization in response to Tg might be explained by a rapid formation and dissolution of IRE1 oligomers, which could be effectively complete by the 2 hr time-point. Indeed, imaging cells only 10 min after the addition of 100 nM Tg revealed a robust increase in IRE1 oligomerization, as indicated by an increase in the fraction of correlated trajectories (Figure 4). Furthermore, a lower concentration of 1 nM Tg led to IRE1 oligomerization at the longer 2- and 4 hr time-points. Meanwhile, when 100 nM Tg was combined with saturating Tm, there was no detectable IRE1 oligomerization 4 hr after treatment, demonstrating that the repressive effect of extended Tg treatment overrides the pro-oligomerization effect of Tm. Taken together, our results show that IRE1 phosphorylation lags behind oligomerization and that all commonly used ER stressors induce IRE1 oligomerization, albeit on different temporal scales. Next, we sought to exclude the formal possibility that the observed dimer-to-oligomer transition was either a clonal artifact or a consequence of differences in expression levels of IRE1 and the control constructs. To this end, we applied our single-particle analysis to the clonal population of cells expressing low levels of IRE1-HaloTag (Figure 1—figure supplement 1). IRE1 remained dimeric in unstressed cells even at this decreased expression level (Figure 4—figure supplement 1). Meanwhile, the extent of stress-induced oligomerization was markedly reduced, mirroring the decrease in production of XBP1s protein by these cells (Figure 1—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig4-v1.jpg)
+
+**Figure 4.:** Oligomerization of endogenously tagged IRE1-HaloTag in U-2 OS cells treated with the indicated ER stressors for the indicated amounts of time. Tunicamycin (Tm) inhibits glycosylation in the ER lumen, thapsigargin (Tg) blocks sarco/endoplasmic reticulum Ca2+ pumps, and dithiothreitol (DTT) triggers reduction of disulfide bonds. Green bars on the left correspond to the 1 x, 2 x, and 4 x HaloTag controls, respectively. Error bars represent 95% confidence intervals.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Single-particle tracking data showing stress-dependent oligomerization of the high- and low-expressing IRE1-HaloTag clones. IRE1 in the lower-expressing clone remains dimeric in unstressed cells, while the shift to higher-order oligomers upon stress is less prominent than in the higher-expressing clone. Each data point represents a single cell. Error bars represent 95% confidence intervals.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** A plot showing the relationship between the percentage of a calculated trajectories in a given cell against the number of trajectories in the movie collected from that cell, for the four conditions indicated in the box. Solid lines represent linear fits, with the shaded regions around them showing 95% confidence intervals. Each data point represents a single cell.
+
 To specifically address any potential discrepancies between expression levels of IRE1 and the HaloTag controls, we plotted the measured fraction of correlated trajectories against the total number of trajectories in a given movie. The total number of trajectories served as a proxy for the density of fluorescent spots and, by extension, for the relative abundance of the protein in a cell. We found that protein abundance was comparable for IRE1-HaloTag and the HaloTag controls, and that the differences in the fraction of correlated trajectories remained robustly detectable across a wide range of spot densities (Figure 4—figure supplement 2). Finally, to exclude the possibility that labeling with JF dyes could somehow impact the activity of IRE1-HaloTag, we repeated the immunoblot experiment shown in Figure 1C under conditions mirroring those used for imaging. We grew cells in clear FluoroBrite medium on collagen-coated glass sufaces and labeled them with a mixture of JF549 and JF646 dyes exactly as if it were an imaging experiment, finding that activation of IRE1-HaloTag remained intact. We concluded that both the formation of stable IRE1 dimers in non-stressed cells and the assembly of IRE1 into larger oligomers upon stress induction were neither peculiarities of a single clone nor artifacts of expression level or imaging technique, but rather genuine features of IRE1 biology.
 
-## The lumenal domain governs the formation of both dimers and oligomers
+### The lumenal domain governs the formation of both dimers and oligomers
 
 To determine which regions of IRE1 are responsible for assembling the protein into dimers and oligomers, we applied our trajectory analysis to a number of key IRE1 mutants (Figure 5). Since constructing each mutant by CRISPR technology would have been impractical, we first checked whether the dimer-to-oligomer transition could be measured with transiently transfected IRE1-HaloTag. Indeed, when we expressed IRE1-HaloTag under the control of the truncated CMVd3 promoter in IRE1 KO U-2 OS cells, our method unambiguously detected both the presence of IRE1 dimers in the non-stressed cells and a shift towards larger oligomers upon treatment with Tm. This result paved the way for testing IRE1 mutants in a similar fashion. The first revealing pair of functional mutants comprised K121Y, which disrupts the IF1L interface of the IRE1 lumenal domain (Li et al., 2010), and WLLI359-362-GSGS, which disrupts the lumenal domain’s oligomerization interface IF2L (Karagöz et al., 2017). These two mutations yielded two starkly different outcomes. The oligomeric state of K121Y remained similar to that of the 1 x HaloTag control, both with and without induction of ER stress. In contrast, WLLI359-362-GSGS retained the same oligomeric state as unstressed WT IRE1 both with (p = 0.74) and without (p = 0.18) ER stress (two-tailed t-test). Thus, both lumenal domain mutants fail to change their oligomeric states in response to ER stress, with K121Y remaining mostly monomeric and WLLI359-362-GSGS remaining mostly dimeric.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig5-v1.jpg)
+
+**Figure 5.:** Oligomerization of the indicated IRE1 mutants transiently transfected into IRE1 KO U-2 OS cells and expressed under the control of the weak CMVd3 promoter. ‘IRE1-HaloTag (endogenous)’ refers to the endogenously tagged IRE1 cells that are shown in Figure 4. Error bars represent 95% confidence intervals.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74342/elife-74342-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Number of trajectories per movie for all mutants shown in Figure 5, demonstrating that all constructs are expressed at comparable levels and that the changes in % correlated trajectories are independent of construct expression levels. Each data point represents a single cell. Error bars represent 95% confidence intervals.
 
 Next, we probed the potential contribution of the kinase/RNase domain. K599A, a mutation that abrogates IRE1’s kinase activity (Tirasophon et al., 1998), closely resembled the phenotype of WT IRE1, with only a slightly reduced difference in oligomerization between the non-stress and stress conditions (Figure 5). We then tested a pair of more radical mutations: delta-KR, a complete deletion of the kinase/RNase domain, and delta-LD, a complete deletion of the lumenal domain. Remarkably, the delta-LD construct remained purely monomeric regardless of ER stress (p = 0.92 and p = 0.64 for unstressed and stressed cells, respectively, when compared to the 1 x HaloTag control; two-tailed t-test), while the delta-KR construct recapitulated the stress-dependent transition from dimers to higher order oligomers (Figure 5). Particle density analysis confirmed that results from all IRE1 mutants examined are not correlated with the expression levels of the different constructs and represent the mutants’ intrinsic propensities for oligomerization (Figure 5—figure supplement 1). Taken together, the mutant data confirm the previously proposed role of the lumenal domain as the central governor of IRE1 oligomerization, consistent with its role as the ER stress sensor domain. Both constitutive dimerization and the dimer-to-oligomer transition appear to be entirely controlled by the lumenal domain of IRE1, with the kinase and RNase domains acting downstream.
 
@@ -84,33 +156,334 @@ Protein oligomerization is a universal mechanism that enables biological communi
 
 ## Materials and methods
 
-## Cell culture and experimental reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>ERN1</td>
+      <td>HUGO Gene Nomenclature Committee</td>
+      <td>HGNC:3,449</td>
+      <td>Gene encoding human IRE1a</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Stellar Competent Cells</td>
+      <td>Takara Bio</td>
+      <td>636,763</td>
+      <td>High-efficiency competent cells for cloning</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>U-2 OS WT Flp-In T-REx</td>
+      <td>Ivan Dikic lab; verified by ATCC STR service; published in Belyy et al., 2020</td>
+      <td>PWM253</td>
+      <td>Parental line for all cells in this study, denoted as “WT”</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>U-2 OS IRE1α KO</td>
+      <td>Belyy et al., 2020</td>
+      <td>PWM254</td>
+      <td>CRISPR knock-out of IRE1α in PWM253</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>U-2 OS IRE1α partial KO</td>
+      <td>This paper</td>
+      <td>PWM359</td>
+      <td>Partial CRISPR knock-out of IRE1α in PWM253, containing one intact ERN1 allele</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>U-2 OS IRE1a-HaloTag endogenously tagged</td>
+      <td>This paper</td>
+      <td>PWM360</td>
+      <td>Introduction of a C-terminal HaloTag into the endogenous ERN1 locus of PWM359 cells. Clonal population.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>U-2 OS IRE1a-HaloTag endogenously tagged, low expression clone</td>
+      <td>This paper</td>
+      <td>PWM361</td>
+      <td>Introduction of a C-terminal HaloTag into the endogenous ERN1 locus of PWM359 cells. clonal population with lower IRE1 expression level than PWM360.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>SpCas9 and gRNA targeting the C-terminus of HsIRE11</td>
+      <td>This paper</td>
+      <td>pPW3754</td>
+      <td>Used for endogenous CRISPR editing of ERN1 gene.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>HDR-HsIRE1a-10xGS-HaloTag</td>
+      <td>This paper</td>
+      <td>pPW3755</td>
+      <td>Used for endogenous CRISPR editing of ERN1 gene.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>CMVd3-ERmembrane-HaloTag-KKMP</td>
+      <td>This paper</td>
+      <td>pPW3756</td>
+      <td>Used for transient transfections</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>CMVd3-ERmembrane-2xHaloTag-KKMP</td>
+      <td>This paper</td>
+      <td>pPW3757</td>
+      <td>Used for transient transfections</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>CMVd3-HsIRE1-HaloTag</td>
+      <td>This paper</td>
+      <td>pPW3758</td>
+      <td>Used for transient transfections</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>CMVd3-HsIRE1deltaLD-HaloTag</td>
+      <td>This paper</td>
+      <td>pPW3759</td>
+      <td>Used for transient transfections</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>CMVd3-HsIRE1-K599A_KinaseDead-HaloTag</td>
+      <td>This paper</td>
+      <td>pPW3760</td>
+      <td>Used for transient transfections</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>CMVd3-HsIRE1(WLLI-GSGS)[359-362]-HaloTag</td>
+      <td>This paper</td>
+      <td>pPW3761</td>
+      <td>Used for transient transfections</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>CMVd3-HsIRE1(K121Y)-HaloTag</td>
+      <td>This paper</td>
+      <td>pPW3762</td>
+      <td>Used for transient transfections</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>CMVd3-HsIRE1dLKR-HaloTag</td>
+      <td>This paper</td>
+      <td>pPW3763</td>
+      <td>Used for transient transfections</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>CMVd3-ERmembrane-GST-HaloTag-KKMP</td>
+      <td>This paper</td>
+      <td>pPW3781</td>
+      <td>Used for transient transfections</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>CMVd3-ERmembrane-GST-2xHaloTag-KKMP</td>
+      <td>This paper</td>
+      <td>pPW3783</td>
+      <td>Used for transient transfections</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- IRE1α (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>3294</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- PERK (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>3192</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- ATF4 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>11,815</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- CHOP (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2895</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- ATF6 (Mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>66563–1</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- β-actin (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>5125</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IRE1p (Rabbit monoclonal)</td>
+      <td>Chang et al., 2018</td>
+      <td>N/A</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-XBP1s (Rabbit monoclonal)</td>
+      <td>Chang et al., 2018</td>
+      <td>N/A</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hs00176385_m1</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td>qPCR primer for IRE1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hs02856596_m1</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td>qPCR primer for XBP1u</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hs03929085_g1</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td>qPCR primer for XBP1s</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hs01045913_m1</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td>qPCR primer for DGAT2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hs00170663_m1</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td>qPCR primer for BCAM</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hs00197728_m1</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td>qPCR primer for TGOLN2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>s02800695_m1</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td>qPCR primer for HPRT1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan RNA-to-CT 1-Step Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>4392938</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus kit</td>
+      <td>Qiagen</td>
+      <td>74,134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning</td>
+      <td>Clontech</td>
+      <td>Clontech:639,647</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>saSPT</td>
+      <td>Heckert et al., 2021</td>
+      <td>https://github.com/alecheckert/saspt</td>
+      <td>Open-source software package used for extracting diffusion coefficients from single-particle trajectories.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>JF549 dye conjugated with HaloTag ligand</td>
+      <td>Luke Lavis Lab; Grimm et al., 2017</td>
+      <td>Promega: GA1110</td>
+      <td>Kind gift of Luke Lavis; also available commercially from Promega</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>JF646 dye conjugated with HaloTag ligand</td>
+      <td>Luke Lavis Lab; Grimm et al., 2017</td>
+      <td>Promega: GA1120</td>
+      <td>Kind gift of Luke Lavis; also available commercially from Promega</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and experimental reagents
 
 U-2 OS Flp-In T-REx cells were a kind gift of the Ivan Dikic lab and were independently authenticated through the human STR profiling service offered by the American Type Culture Collection (ATCC). Cells were cultured at 37 °C with 5% CO2 in high-glucose DMEM (Thermo Fisher) supplemented with 10% tetracycline-free fetal bovine serum (FBS; Takara Bio), 6 mM L-glutaminfe, and 100 U/ml penicillin/streptomycin. All cell lines used in the study tested negative for mycoplasma contamination when assayed with either the Universal Mycoplasma Detection Kit (ATCC 30–1012 K) or the MycoAlert Detection Kit (Lonza LT07-418). Tunicamycin and thapsigargin were purchased from Sigma-Aldrich or from Tocris and dissolved in DMSO. JF549 and JF646 dyes conjugated with the HaloTag ligand were a kind gift of Luke Lavis (Janelia Farms). The antibodies used for immunoblotting are listed in the Immunoblotting section.
 
-## Endogenous tagging of IRE1 in U-2 OS cells
+### Endogenous tagging of IRE1 in U-2 OS cells
 
 To achieve full editing despite the hyperploid nature of the U-2 OS cells, we first generated a partial IRE1α knockout cell line harboring a single intact allele of ERN1, the gene encoding IRE1α (cell line ID: PWM359). This was done using the same CRISRP/Cas9-based approach that we used to generate a complete IRE1α knockout in our previous paper (Belyy et al., 2020), except that rather than looking for a clone that contained no copies of WT ERN1, we identified clones that contained a single unedited allele. The presence of a single intact ERN1 allele was confirmed by TOPO cloning and immunoblotting. These partial knock-out cells were then co-transfected with a plasmid encoding Cas9 with the guide RNA and a homology-directed repair (HDR) template plasmid targeted at C-terminus of ERN1. Design of both plasmids followed the protocol published elsewhere (McKinley, 2018). Edited cells were selected by fluorescence-activated cell sorting (FACS), separated into clonal populations by limiting dilution, and assayed for IRE1α expression and UPR activation by immunoblotting and RT-PCR. Two clones were selected for further study: a somewhat higher expressing clone (cell line ID: PWM360) and a somewhat lower expressing clone (cell line ID: PWM361). When immunoblotted against IRE1α, both clones produced a clear band that ran slower than WT IRE1α, indicating a successful integration of the full-length HaloTag.
 
-## Sample preparation for microscopy
+### Sample preparation for microscopy
 
 Cells were seeded at a density of 1.6 × 104 cells/cm2 into glass-bottom 8 well chamber slides (ibidi 80827), which were pre-coated with rat tail collagen type I (Corning 354236) at 10 µg/cm2 in accordance with the manufacturer’s instructions (briefly, a 2 hr incubation at room temperature). Twenty-four hours prior to imaging, the growth medium was replaced with ‘Imaging medium’: FluoroBrite DMEM (ThermoFisher) supplemented with 10% tetracycline-free fetal bovine serum (FBS; Takara Bio) and 6 mM L-glutamine, without antibiotics. For experiments requiring transfection, cells were transfected with a mixture of 50 ng of plasmid DNA and 50 ng of carrier salmon sperm DNA per well immediately following medium change (i.e. 24 hr prior to the start of imaging). Transfections were carried out in “Imaging medium” using the Fugene HD transfection reagent (Promega).
 
 On the day of imaging, cells were treated with ER stressors at the indicated time points. Labeling with JF549 and JF646 dyes conjugated with the HaloTag ligand was initiated 1.5 hr prior to the start of imaging. First, the dyes were added to pre-warmed ‘Imaging medium’, and this medium was used to replace the cells’ growth medium. We experimentally found the optimal molar dye ratio to achieve ~50% labeling with each ligand to be 1:20 (5 nM JF549-HaloTag and 100 nM JF646-HaloTag). The large difference in required concentrations is likely due to the difference in membrane permeability between the two dyes. We experimentally found the 5 nM JF549 /100 nM JF646 concentrations to be saturating under our labeling conditions since further increases in dye amounts did not lead to a further increase in the density of diffusing spots in IRE1-HaloTag cells. Following addition of the medium containing the two dyes (and any required ER stressors), cells were returned to the incubator for 1 hr. Then, cells were washed twice with warm PBS, washed once with pre-warmed ‘Imaging medium’, and returned to the incubator for an additional 5 min to give any unbound dye time to diffuse out of the cells. The medium was replaced one more time with pre-warmed ‘Imaging medium’ containing any required ER stressors to finish sample preparation.
 
-## Microscopy
+### Microscopy
 
 All imaging was carried out on one of two Nikon Ti-E inverted microscopes (#1 and #2 hereafter), each equipped with a Nikon motorized TIRF module, an Agilent/Keysight MLC400 fiber-coupled laser light source, a Perfect Focus System (PFS, Nikon), a 100 × 1.49 NA oil immersion objective (Apo TIRF, Nikon), and a Hamamatsu Flash 4.0 CMOS camera. Microscope #1 held a ZET405/488/561/640m-TRFv2 quadruple bandpass filter cube (Chroma), while microscope #2 held a ZET488/561/640 m triple bandpass filter cube (Chroma). Additionally, microscope #1 included a Yokogawa CSU-X high-speed confocal scanner unit and an Andor iXon 512 × 512 EMCCD camera, which were used for spinning-disk confocal microscopy experiments. Both microscopes featured full temperature and CO2 control to maintain the samples at 37 °C and 5% CO2, one using a custom-built enclosure (#1) and the other using an OkoLab Live stage insert (#2). All components of microscope #1 were controlled by the µManager open-source platform (Edelstein et al., 2010), while microscope #2 was controlled with NIS-Elements software (Nikon).
 
 Oblique-angle illumination conditions were achieved by focusing on a cell, engaging the PFS, and gradually increasing illumination angle with the motorized TIRF lens until single-molecule spots along the bottom surface of the cell became clearly visible. Videos were acquired with a 60ms combined frame time, split into a 25ms exposure in the JF549 channel (561 nm laser, operated at 25 mW) and a 25ms exposure in the JF646 channel (640 nm laser, operated at 40 mW), with the remaining 10ms accounting for channel switching times. The two channels were imaged sequentially by the same camera using camera-triggered switching of the acousto-optic tunable filter (AOTF) built into the light source. Frames were cropped to approximately 500 × 500 pixels prior to acquisition since the full camera sensor could not be read out fast enough to support the required frame rate. Typically, 100 combined frames were acquired per cell (6 s total movie duration), which in our hands provided a good number of trajectories per cell while avoiding extensive photobleaching of the dyes. To locate and choose cells for imaging, we used the full size of the camera sensor and acquired a series of tiled snapshots of an area containing ~100 cells. We then selected cells that were morphologically normal, well-adhered, and spread out. When imaging transiently transfected cells, we chose cells in which the HaloTag-labeled proteins were expressed at sufficiently low levels to allow us to clearly see individual spots corresponding to single molecules.
 
-## Data analysis
+### Data analysis
 
 Single-molecule data were analyzed to identify co-localizing two-color trajectories using a pipeline developed in house, described in detail below. First, each movie was split into the two individual channels, JF549 and JF646. Next, spots were located using the Laplacian of Gaussian (LoG) detector implemented in the TrackMate plugin (Tinevez et al., 2017) for ImageJ. Then, identified spots were tracked using the Linear Assignment Problem (LAP) algorithm (Jaqaman et al., 2008), also implemented within the TrackMate plugin. All input parameters for both the LoG detector and the LAP tracker were chosen empirically to match the expected output in a subset of randomly selected single-molecule movies; afterwards, they were kept constant for the analysis of all data used to construct the plots presented in this paper. To speed up analysis and ensure that the exact same settings are used to process every movie, we scripted TrackMate to read all settings from a standardized JSON configuration file and perform both spot detection and tracking on all movie files contained within a given folder. The TrackMate output files containing spot and track data for each channel were then saved to disk in the XML format for further analysis.
 
 All subsequent analysis was performed in Python. The broad goal of this analysis was to identify tracks that correlated well in space and time between the JF549 and JF646 channels. To avoid problems imposed by uneven track durations and trajectories crossing each other, we decided to perform the analysis using a short sliding window. In other words, instead of considering the entire movie at once, we binned each movie into overlapping shorter movies containing a fixed number of frames each, and looked for co-localizing trajectories in each of the shorter movies. To achieve this, the TrackMate output files were parsed and filtered to only include tracks that span at least as many frames as the length of the sliding window. The sliding window was then moved across the duration of the movie in 1 frame increments. In each of the resulting windows, only tracks that were fully defined within that window (i.e. had position information for each frame) were selected for correlation analysis.
 
-Pearson’s correlation coefficients (PCC) were then individually calculated for the X- and Y-coordinates of every pair of spatially adjacent tracks (adjacent meaning that at least a subset of data points of track B are contained within the rectangle that bounds track A). The requirement for tracks being spatially adjacent both increased the computational efficiency of the algorithm and helped eliminate false positives from short tracks of similar shapes that occurred by chance in different parts of the cell. A pair of tracks was determined to be correlated if all of the following conditions were met: 1) the two tracks share at least one window N frames long in which the position of each spot is well-defined in every frame, 2) At least one such window yields a PCC value greater than T for both the X- and Y- coordinates of the tracked spot, and 3) The two tracks are at least partially overlapping in space. The value plotted in the figures, ‘% correlated trajectories’, is defined as follows:% correlated trajectories≡nJF549corrnJF549total*100  ,
+Pearson’s correlation coefficients (PCC) were then individually calculated for the X- and Y-coordinates of every pair of spatially adjacent tracks (adjacent meaning that at least a subset of data points of track B are contained within the rectangle that bounds track A). The requirement for tracks being spatially adjacent both increased the computational efficiency of the algorithm and helped eliminate false positives from short tracks of similar shapes that occurred by chance in different parts of the cell. A pair of tracks was determined to be correlated if all of the following conditions were met: 1) the two tracks share at least one window N frames long in which the position of each spot is well-defined in every frame, 2) At least one such window yields a PCC value greater than T for both the X- and Y- coordinates of the tracked spot, and 3) The two tracks are at least partially overlapping in space. The value plotted in the figures, ‘% correlated trajectories’, is defined as follows:
+
+$$
+% correlated trajectories≡\frac{n_{JF549corr}}{n_{JF549total}}*100  ,
+$$
 
 where nJF549total is the total number of trajectories in the JF549 channel that are at least as long as the length of the sliding window (N), while nJF549corr is the number of trajectories in the JF549 channel that are found to have correlated trajectories in the JF646 channel as described above.
 
@@ -118,31 +491,59 @@ In our analysis, the only user-selected parameters that tune the sensitivity of 
 
 To speed up data processing and enhance reproducibility, we again scripted the analysis to read a single JSON configuration file that specifies the N and T parameters, along with a full list of folders containing the TrackMate XML files for each condition. The code reports the fraction of correlated tracks for each condition with 95% confidence intervals determined by bootstrapping. The README.md file included with the source code (Belyy, 2022) contains detailed instructions for running this analysis and replicating all plots in the paper from source data (Belyy, 2021a; Belyy, 2021b). In organizing the analysis software, we sought to make reproducing our data and adapting the code to different single-molecule co-localization studies as straightforward as possible.
 
-## Measurement of diffusion coefficients from single-molecule data
+### Measurement of diffusion coefficients from single-molecule data
 
 Apparent diffusion coefficients were obtained from single-particle trajectories from tracking data using one of two methods: mean squared displacement (MSD) or state array (SA). In MSD analysis, each single-particle trajectory was broken up into 5-frame segments that were then aligned and averaged to obtain the final MSD plot for that particle. Particles that were tracked for fewer than 15 frames were excluded from MSD analysis. Each MSD plot was then fitted to a straight line(<r2 ≥ 4 Dt) to determine the respective particle’s diffusion coefficient. SA analysis was performed as described in the original manuscript (Heckert et al., 2021) through a direct implementation of the ‘saspt’ Python module. Additional analysis details for both approaches can be found in the README.md file included with the source code(Belyy, 2022).
 
-## Estimation of IRE1 cluster stoichiometry
+### Estimation of IRE1 cluster stoichiometry
 
-A simple yet useful model for estimating cluster stoichiometry based on the fraction of correlated tracks works as follows. Assume that each HaloTag-conjugated protein can occupy one of three states: bound to an unbleached JF549 dye molecule, bound to an unbleached JF646 dye molecule, or undetectable. The latter category is a catch-all for every possible reason a protein may escape detection such as dye bleaching, incomplete labeling, new protein synthesis after labeling reaction, and false negatives in the spot detection algorithm. Let the probabilities of these three states be denoted as P1 (JF549-bound), P2 (JF646-bound), and Pu (undetectable). Because the combined probabilities must add up to unity, Pu = 1 – P1 – P2. Then, for a cluster comprised of n individual molecules, we can express the total probability that the cluster contains at least one dye of each color as follows:Pboth=1-PJF549 only-PJF646 only-Pno dye==1-1-P1n-1-P2n+(1-P1-P2)n
+A simple yet useful model for estimating cluster stoichiometry based on the fraction of correlated tracks works as follows. Assume that each HaloTag-conjugated protein can occupy one of three states: bound to an unbleached JF549 dye molecule, bound to an unbleached JF646 dye molecule, or undetectable. The latter category is a catch-all for every possible reason a protein may escape detection such as dye bleaching, incomplete labeling, new protein synthesis after labeling reaction, and false negatives in the spot detection algorithm. Let the probabilities of these three states be denoted as P1 (JF549-bound), P2 (JF646-bound), and Pu (undetectable). Because the combined probabilities must add up to unity, Pu = 1 – P1 – P2. Then, for a cluster comprised of n individual molecules, we can express the total probability that the cluster contains at least one dye of each color as follows:
 
-However, in our experiment, the clusters containing no detectable dyes are invisible, and what we measure experimentally is instead the observed fraction of all visible clusters that contain at least one dye of each color. Let’s call this quantity the fraction of observed co-localizers, Fobs:Fobs=Pboth1-Pno dye==1-1-P1n-1-P2n+(1-P1-P2)n1-(1-P1-P2)n
+$$
+P_{both}=1-P_{JF549 only}-P_{JF646 only}-P_{no dye}=
+$$
 
-To estimate cluster stoichiometry based on the experimentally measurable Fobs, we first need a measurement of P1 and P2, which can be done using data from the constitutive 2 x HaloTag homodimer construct, where we know that n = 2. Let’s assume that P1 = P2 = PL (labeling probability), since all our experiments are done in a regime where the labeling densities with the two different dyes are nearly identical. Plugging these assumptions into the expression for Fobs, we obtain:Fobs=1-21-PL2+(1-2PL)21-(1-2PL)2=PL2(1-PL)
 
-Rearranging this expression, we find that PL can be expressed in terms of Fobs:PL=2Fobs2Fobs+1
+
+$$
+=1-1-P_{1}^{n}-1-P_{2}^{n}+(1-P_{1}-P_{2})^{n}
+$$
+
+However, in our experiment, the clusters containing no detectable dyes are invisible, and what we measure experimentally is instead the observed fraction of all visible clusters that contain at least one dye of each color. Let’s call this quantity the fraction of observed co-localizers, Fobs:
+
+$$
+F_{obs}=\frac{P_{both}}{1-P_{no dye}}=
+$$
+
+
+
+$$
+=\frac{1-1-P_{1}^{n}-1-P_{2}^{n}+(1-P_{1}-P_{2})^{n}}{1-(1-P_{1}-P_{2})^{n}}
+$$
+
+To estimate cluster stoichiometry based on the experimentally measurable Fobs, we first need a measurement of P1 and P2, which can be done using data from the constitutive 2 x HaloTag homodimer construct, where we know that n = 2. Let’s assume that P1 = P2 = PL (labeling probability), since all our experiments are done in a regime where the labeling densities with the two different dyes are nearly identical. Plugging these assumptions into the expression for Fobs, we obtain:
+
+$$
+F_{obs}=\frac{1-21-P_{L}^{2}+(1-2P_{L})^{2}}{1-(1-2P_{L})^{2}}=\frac{P_{L}}{2(1-P_{L})}
+$$
+
+Rearranging this expression, we find that PL can be expressed in terms of Fobs:
+
+$$
+P_{L}=\frac{2F_{obs}}{2F_{obs}+1}
+$$
 
 Once we have an estimate of PL from the 2 x homodimer control (in our experiment, this value is typically around 0.14), it can be simply plugged into the earlier expression for Fobs and plotted as a function of n to yield an estimate of average cluster stoichiometry for any value of Fobs. Of course, this model is a significant oversimplification of the true underlying processes (mainly due to lumping all possible sources of error into the single term Pu), but it does provide a useful ballpark estimate.
 
-## Detection of large IRE1 clusters
+### Detection of large IRE1 clusters
 
 While we did not observe the formation of stress-induced IRE1 clusters in cells expressing IRE1-HaloTag from the endogenous genomic locus, some small punctate structures were occasionally visible in confocal images of these cells both with and without stress. Such small puncta were also present in some cells expressing HaloTag control constructs. We attribute these puncta to autofluorescence, local enrichment of ER membrane components in organelles such as lysosomes or autophagosomes, and/or dense regions of dense ER folds that cannot be adequately resolved by confocal microscopy. We sought to distinguish between these spots and the visually distinct “classic” IRE1 clusters (as described by us and others) by developing a quantitative definition of IRE1 clustering. We define a cell as exhibiting IRE1 clustering if greater than 1% of the integrated IRE1 fluorescence intensity is contained within small punctate structures. To identify such structures automatically, the image is first smoothened with a Gaussian filter with a sigma of 1 pixel. Then, the image is background-corrected and its intensity normalized such that the mean pixel intensity becomes 1. The normalized image is then processed with a Laplacian filter with a 3x3 pixel kernel to identify regions of maximal contrast and thresholded with an empirically found value of 5. Any areas contained by pixels that pass this threshold cutoff are considered to be potential puncta. These areas are then dilated with a 3x3 pixel mask and the combined fluorescence intensity contained in the potential puncta is compared against the total fluorescence intensity of the cell. If the tentative puncta contain more than 1% of the cell’s total fluorescence, we conclude that IRE1 clusters are present in the cell. We find that these criteria robustly pass the visual test for a range of images across different illumination intensities and magnification levels.
 
-## XBP1 mRNA splicing assays
+### XBP1 mRNA splicing assays
 
 Cells were grown in wells of a 12-well plate, treated with ER stressors as indicated in the figure, and harvested at ~70% confluency with TRIzol (Thermo Fisher) in accordance with the manufacturer’s instructions. RNA was then extracted from the aqueous phase using a spin column-based purification kit (RNA Clean & Concentrator-5, Zymo Research # R1015) and reverse-transcribed into cDNA using SuperScript VILO Master Mix (Thermo Fisher # 11755050). The cDNA was diluted 1:10 and used as a template for PCR with the following primer pair: VB_pr259 (CGGAAGCCAAGGGGAATGAA) and VB_pr167 (ACTGGGTCCAAGTTGTCCAG). PCR was carried out with Taq polymerase (Thermo Fisher # 10342020) in the manufacturer-supplied Taq buffer supplemented with 1.5 µM Mg2+. The following PCR program was used: (Gurevich and Gurevich, 2018) Initial denaturation: 95 °C for 2 min (Shattil and Newman, 2004), 95 °C for 30 s (Chung, 2017), 60 °C for 30 s (Reich et al., 1997), 72 °C at 30 s (Ashkenazi and Dixit, 1998). Repeat steps 2–4 27 more times, for 28 total PCR cycles. PCR products were visualized on a 3% agarose gel stained with SYBR Safe (Thermo Fisher S33102) and imaged on a ChemiDoc gel imaging system (BioRad).
 
-## Immunoblotting and RT-qPCR
+### Immunoblotting and RT-qPCR
 
 Cells were grown in 6-well plates in RPMI1640 or DMEM media supplemented with 10% (v/v) FBS (Sigma), 2 mM glutamine (Gibco), and 100 U/mL penicillin plus 100 μg/mL streptomycin (Gibco), and treated as indicated. Thapsigargin (Tocris) was used at a concentration of 100 nM and tunicamycin (Tocris) at 5 μg/mL, dissolved in DMSO. DMSO was used as the untreated control. When 70–80% confluent, cells were washed in PBS and trypsinized using Trypsin-EDTA 0.05%. Cells were pelleted and stored at –20 for protein or RNA extraction.
 
@@ -152,10 +553,10 @@ Equal amounts of protein (40 µg/condition) were run with SDS-PAGE and electrotr
 
 For RT-qPCR, RNA extraction was performed with the RNeasy Plus kit (Qiagen #74134). 50 ng of RNA per sample, in technical triplicates, were reverse transcribed and amplified on the ABI QuantStudio 7 Flex Real-Time PCR System, using TaqMan RNA-to-CT 1-Step Kit (ThermoFisher Scientific #4392938). The RQ (relative quantification, 2-ΔΔϹt) was calculated by relating each individual CT value to the expression of the housekeeping HPRT1 gene and the control of the experiment. Taqman primers for IRE1 (Hs00176385_m1), XBP1u (Hs02856596_m1), XBP1s (Hs03929085_g1), DGAT2 (Hs01045913_m1), BCAM (Hs00170663_m1), TGOLN2 (Hs00197728_m1), and HPRT1 (Hs02800695_m1) were from ThermoFisher Scientific.
 
-## Statistics
+### Statistics
 
 All single-particle tracking data are reported as mean values of cell-by cell percent correlated trajectories (as defined in the Data Analysis section) with 95% confidence intervals. For pairwise comparisons of individual conditions, p-values for each pair of conditions were calculated both by two-tailed t-test and by an approximate permutation test with 10,000 iterations. Tables containing all pairwise p-values are included with every figure as source data. Individual data points are overlaid on the graphs, with each point representing the percent of correlated trajectories in one cell. Data for individual conditions were pooled from multiple experiments conducted on separate days (biological replicates). The exact data points and raw files going into each condition can be obtained from the human-readable JSON files that are published alongside the manuscript. The only files that were excluded from analysis were movies in which the cell was clearly out of focus, TIRF illumination was clearly out of alignment, or the expression level of the transfected construct was so high that individual spots were not resolvable. Otherwise, no data were excluded and no outliers were removed. No explicit power analysis to determine sample size was conducted prior to the start of the experiment; instead, sample sizes were chosen to comprise no fewer than ten individual cells (in most cases, many more), corresponding to ~100,000 or more individual particle trajectories.
 
-## Availability of materials, data, and software
+### Availability of materials, data, and software
 
 The code used to analyze raw data and generate all figures in this paper is freely available from Zenodo (Belyy, 2022). All raw single-molecule microscopy data are available from Dryad (Belyy, 2021a). All other raw data, including full gel images, together with processed single-molecule microscopy data, are available from Zenodo (Belyy, 2021b). All cell lines and constructs used in this paper are available upon request.

@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.26022.001 The sense of ownership of one’s body is important for survival, e.g., in defending the body against a threat. However, in addition to affecting behavior, it also affects perception of the world. In the case of visuospatial perception, it has been shown that the sense of ownership causes external space to be perceptually scaled according to the size of the body. Here, we investigated the effect of ownership on another fundamental aspect of visual perception: visual awareness. In two binocular rivalry experiments, we manipulated the sense of ownership of a stranger’s hand through visuotactile stimulation while that hand was one of the rival stimuli. The results show that ownership, but not mere visuotactile stimulation, increases the dominance of the hand percept. This effect is due to a combination of longer perceptual dominance durations and shorter suppression durations. Together, these results suggest that the sense of body ownership promotes visual awareness.
+The sense of ownership of one’s body is important for survival, e.g., in defending the body against a threat. However, in addition to affecting behavior, it also affects perception of the world. In the case of visuospatial perception, it has been shown that the sense of ownership causes external space to be perceptually scaled according to the size of the body. Here, we investigated the effect of ownership on another fundamental aspect of visual perception: visual awareness. In two binocular rivalry experiments, we manipulated the sense of ownership of a stranger’s hand through visuotactile stimulation while that hand was one of the rival stimuli. The results show that ownership, but not mere visuotactile stimulation, increases the dominance of the hand percept. This effect is due to a combination of longer perceptual dominance durations and shorter suppression durations. Together, these results suggest that the sense of body ownership promotes visual awareness.
 
 ## Introduction
 
@@ -30,15 +30,15 @@ Here, we investigated whether ownership can increase the perceptual dominance of
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 We tested a total of 60 healthy volunteers, who were equally divided between Experiment 1 (mean age = 24.6; 18 women) and Experiment 2 (mean age = 26.2, 13 women), and who were naive to the purpose of the study. Participants were recruited through advertisements on the campus of the Karolinska Institutet. They received a cinema voucher as compensation. All participants had normal or corrected-to-normal sight. The number of participants for each experiment (N = 30) was based on previous studies in which body ownership was manipulated to investigate its effect on another variable of interest and to allow for correlation analyses (Gentile et al., 2013; Guterstam et al., 2011; Kalckert and Ehrsson, 2012).
 
-## Ethics statement
+### Ethics statement
 
 Each participant signed an informed consent form before the onset of the experiment. The Regional Ethical Review Board of Stockholm approved the experimental procedures.
 
-## Apparatus and stimuli
+### Apparatus and stimuli
 
 Visual stimuli were created with Final Cut Pro X (Apple, California, USA) (Figure 1). The hand image was a photographed hand that was isolated using a green screen and had a homogeneous red background added. Next, a video was made of the same hand being covered by a green screen (by folding the green screen back over the hand) while it was being touched with a Styrofoam sphere (37 mm in diameter) attached to a wooden stick (25 cm long, 4 mm in diameter) that approached the hand from the left side. This setup allowed the moving object to be isolated and presented in both the hand image and the mask image. Thus, in conditions in which the moving stick was present, it was present in both images and was therefore visible at all times.
 
@@ -46,7 +46,7 @@ The mask image consisted of 1000 Mondrian images, created with MATLAB, that rand
 
 Tactile stimulation of a participant’s veridical hand consisted of single continuous strokes with the same object used to create the visual stimuli, from the back of the right hand to the tip of the right index finger (Figure 1A). The duration of each stroke was 0.67 s. These strokes were synchronous and spatially congruent with the moving stick from the visual stimuli. One stroke was applied every 1.5 s with the following pattern: three strokes (4.5 s), one rest (1.5 s), two strokes (3 s), one rest (1.5 s). During rest, the object was stationary next to the hand. In order to synchronize tactile stimulation with the visual stimuli, the experimenter, wearing headphones (not shown in Figure 1A), listened to a click track that contained an audio-cue for each stroke.
 
-## Task and procedure
+### Task and procedure
 
 Participants wore a set of head-mounted displays (HMDs; VR1280, Virtual Realities LLC, Texas, USA, with color displays showing 1280 × 1024 pixels with a 60-degree diagonal field of view) and placed their right hands on a diagonal platform on the table in front of them. They tilted their heads such that they would be looking straight at their own hand if they were not wearing the HMDs. Before the main experiment, they underwent a training session in which the distance between the displays could be adjusted to each participant’s individual interocular distance. Participants fixated on the fixation cross at all times. Their task was to press and hold a button when they perceived the hand and to release the button when they perceived the mask. If they perceived a mix of both images, they were instructed to press the button only if more than half of their percept consisted of the hand image. Between blocks, participants had the option to take a short break.
 
@@ -56,43 +56,43 @@ Each condition was tested in a separate block that lasted 270 s. The order of co
 
 Experiment 2 was designed to manipulate ownership by rotation of the hand image in two otherwise equivalent conditions, thereby isolating the effect of ownership from that of synchronous visuotactile stimulation itself. To this end, the one condition in which ownership was present was identical to the visuotactile condition from Experiment 1 (‘congruent visuotactile’) (Figure 1D). In the ‘incongruent visuotactile’ condition, the only difference was the orientation of the hand image, which was rotated 180 degrees (Figure 1E). The movement direction of the object that was touching the hand in the image was identical in retinal space to that in the congruent condition (but antidirectional in hand-centered space). In addition, two control conditions were included in which the hand image was presented in the two orientations to serve as a baseline for the visual stimuli in the absence of tactile stimulation. The moving object was still visible in these conditions, and the visual stimuli were therefore identical to those in the two visuotactile conditions. Thus, Experiment 2 had a 2 × 2 design in which congruency and tactile stimulation were manipulated. The hand image was congruent (as in Experiment 1) or incongruent (rotated 180 degrees) to each participant’s real hand, which received tactile stimulation (congruent visuotactile and incongruent visuotactile) or did not (‘congruent visual-only’ and ‘incongruent visual-only’). As in Experiment 1, the duration of each condition was 270 s, and the order of conditions was semi-randomized. After the four blocks of the main experiment, participants repeated both visuotactile conditions (congruent and incongruent) and were given the same questionnaire as in Experiment 1.
 
-## Data analysis and statistics
+### Data analysis and statistics
 
-## Hand ownership illusion
+#### Hand ownership illusion
 
 Across different analyses, we performed Kolmogorov-Smirnov tests to assess the normality of the data. For the questionnaire data, we used Wilcoxon signed-rank tests because the data were measured on an ordinal Likert scale. In Experiment 1, only the visuotactile condition had a questionnaire included. Therefore, we compared the median scores for the illusion-related questions Q1 (‘It felt as if the hand I saw was my own hand’) and Q2 (‘The touch I felt seemed to be caused by the white ball I saw’) with those for control questions Q3 (‘My own hand started to feel digital’) and Q4 (‘I felt as if I had two right hands at the same time’) (see 'Task and procedure'). In addition, we calculated each participant’s individual illusion score as (Q1 + Q2) – (Q3 + Q4). In Experiment 2, we included a questionnaire in both visuotactile conditions (congruent and incongruent), which allowed us to assess differences in each item of the questionnaire directly by using Wilcoxon signed-rank tests.
 
-## Total dominance hand percept
+#### Total dominance hand percept
 
 The total time that the hand was seen was converted to a percentage of the total 270 s per condition. Next, we performed planned t-tests between conditions that used identical visual stimuli. Thus, for Experiment 1 we compared visuotactile versus visual-only; and tactile-only versus no-stimulation. Similarly, for Experiment 2 we compared congruent visuotactile versus congruent visual-only; and incongruent visuotactile versus incongruent visual-only. In addition, for Experiment 1, we performed a full factorial 2 × 2 repeated-measures ANOVA, with vision and touch being either present or absent, to assess the main effects of the visual component and the tactile component of a touch as well as their interaction effect. For Experiment 2, we performed a full-factorial 2 × 2 repeated-measures ANOVA with the factors of congruency (congruent versus incongruent) and tactile stimulation (visuotactile versus visual-only). Finally, we normalized the effect of the visuotactile condition to participants’ overall mean ((visuotactile – mean)/mean) and correlated this perceptual effect with individual illusion scores (see previous paragraph) using a non-parametric Spearman correlation analysis.
 
-## Switch rate
+#### Switch rate
 
 Next, we analyzed how often participants switched their percept from the hand to the mask and vice versa. This ‘switch rate’ is a measure of the overall perceptual stability and should be identical for conditions with identical visual stimuli and similar attentional demands. To test whether conditions with identical visual stimuli indeed had identical switch rates, we counted the total number of switches between the hand percept and the mask percept in each condition for every participant. This number was divided by the total duration of each block (270 s), thus yielding the switch rate per participant and per condition. We performed a 2 × 2 repeated-measures ANOVA as well as paired t-tests between conditions with identical visual input to analyze the effects of the visual and tactile components of touch on switch rates in Experiment 1 and the effects of congruency and tactile stimulation in Experiment 2.
 
-## Duration of single percepts
+#### Duration of single percepts
 
 The last step of the main analysis examined individual percept durations. To control for individual differences and improve statistical power, we normalized dominance durations to participants’ mean percept duration. Thus, separately for hand percepts and mask percepts, we subtracted the participants’ mean percept duration across all conditions from that of individual conditions and divided this difference by that same mean ((condition-mean – mean)/mean). We performed paired sample t-tests to analyze the difference between conditions with matched visual stimuli and used a 2 × 2 repeated-measures ANOVA to analyze the interaction effect across conditions.
 
 To obtain a better estimate of the magnitude of the effect of visuotactile stimulation on percept durations, we collapsed the data from both experiments for the (congruent) visuotactile and (congruent) visual-only conditions (which were identical across experiments). The other conditions were not identical and therefore we re-normalized the data by dividing by the mean of only the visuotactile condition and the visual-only condition; ((visuotactile – visual-only)/mean) (mean = 0.5*(visuotactile +visual only)).
 
-## The effect of individual touches on overall dominance
+#### The effect of individual touches on overall dominance
 
 In addition to the analyses described above, all of which are common in binocular rivalry research, we performed some more advanced analyses that made use of the onset and duration of individual touches. For the first of these analyses, for each condition we plotted how dominance changed as a function of time around a single touch by flagging the onset of each touch and calculating the average dominance of the hand-percept between 667 ms before touch onset and 1334 ms after touch onset (see Figure 7A and Figure 9A). Next, we created the difference-waves between conditions that used identical visual stimuli by subtracting those conditions (Experiment 1: [visuotactile – visual-only] (see Figure 7B); and [tactile-only – no-stimulation] (see Figure 7C); Experiment 2: [congruent visuotactile – congruent visual-only] (see Figure 9B); and [incongruent visuotactile – incongruent visual-only] (see Figure 9C)). Finally, we created an interaction-wave for each experiment by subtracting the two difference-waves (Experiment 1: [(visuotactile – visual-only) – (tactile-only – no-stimulation)] (see Figure 7D); Experiment 2: [(congruent visuotactile – congruent visual-only) – (incongruent visuotactile – incongruent visual-only)] (see Figure 9D)). For the analysis, we averaged the dominance for each of six time bins, T-1 (−667 to −333 ms), T0 (−333–0 ms), T1(0–333 ms), T2(333–667 ms), T3(667–1000 ms), and T4(1000–1333 ms), to reduce multiple comparisons. The effect of time was assessed with a 6 × 1 repeated-measures ANOVA for each condition and for each of the difference and interaction waves. Additionally, we performed paired t-tests between identical time bins in different conditions. We applied Bonferroni corrections based on the number of time bins. To create the plots (Figure 7 and Figure 9), we smoothed the data with a 33 ms moving average for clarity (analyses were performed on the raw data).
 
-## The effect of individual touches on single percepts
+#### The effect of individual touches on single percepts
 
 A second analysis that made use of the onset of individual touches investigated whether changes in dominance durations and suppression durations were affected by these individual touches (Lunghi et al., 2010). We flagged the onset of the 667 ms pretouch phase (T-1 – T0) and the onset of the 667 ms touch phase (T1 – T2). For each phase separately, we divided the data on the basis of whether the hand percept or the mask percept was dominant at the flag. For the resulting four groups of data (pretouch hand percept, pretouch mask percept, touch hand percept, and touch mask percept), we calculated how often the current percept was maintained, how often it had switched, and how often it had switched more than once. We ignored epochs in which the percept switched more than once. We analyzed the probability of maintaining a hand percept and the probability of switching when seeing a mask percept during both the pretouch phase and the touch phase. We performed a 2 × 2 repeated-measures ANOVA on each of those probabilities with the factors phase (pretouch and touch) and condition (visuotactile versus visual-only). Subsequently, for each phase, we performed paired t-tests between conditions with identical visual stimuli.
 
-## Additional information
+#### Additional information
 
 Effect sizes for Wilcoxon signed rank tests were calculated as r = Z/√N, where N is the total sample size of a given test (i.e., N = 2×30=60 for all tests) (Fritz et al., 2012). For paired t-tests, we calculated the effect size as Cohen’s d, corrected for cross-condition correlations (Morris and DeShon, 2002). Effect sizes for independent t-tests were calculated as Cohen’s d. For repeated-measures ANOVAs, we calculated the effect sizes of the main effects and interaction effect as partial eta squared (η2). Finally, for Spearman correlations, the test statistic ρS itself is the effect size. In addition to effect sizes, we report the 95% confidence interval (CI) for each statistical analysis. All statistical tests were two tailed, and no outliers were removed from analyses.
 
 ## Results
 
-## Experiment 1
+### Experiment 1
 
-## Hand ownership illusion
+#### Hand ownership illusion
 
 Nineteen participants out of the total group of 30 reported ratings of at least +1 on questionnaire statement Q1 (‘It felt as if the hand I saw was my own hand’), and the median response was +1 (Figure 2A). In addition, 23 participants reported ratings of at least +1 on Q2 (‘The touch I felt seemed to be caused by the white ball I saw’), and the median was +2. These proportions of participants affirming the illusion-related statements and the median scores are comparable to previous experiments with the rubber hand illusion (Kalckert and Ehrsson, 2014). The median rating of the control statements was lower than zero (Q3: Mdn = −1; Q4: Mdn = −2.5). Crucially, participants rated the illusion statements significantly higher than the control statements (Z = 4.44, p <0.001, r = 0.57). Thus, on a group level, these questionnaire results suggest ownership of the hand was successfully induced during the visuotactile condition.
 
@@ -104,7 +104,7 @@ Nineteen participants out of the total group of 30 reported ratings of at least�
 
 **Figure 2.:** Median ratings of the different items of the questionnaire in Experiment 1 (A) and Experiment 2 (B). Q1: ‘It felt as if the hand I saw was my own hand’; Q2: ‘The touch I felt seemed to be caused by the white ball I saw’; Q3: ‘My own hand started to feel digital’; Q4: ‘I felt as if I had two right hands at the same time.’ Q1 and Q2 capture the ownership illusion, and Q3 and Q4 control for expectancy effects and response bias. Blue indicates the congruent visuotactile condition; red indicates the incongruent visuotactile condition. Error bars indicate the interquartile range.
 
-## Total dominance hand percept
+#### Total dominance hand percept
 
 During the visuotactile condition, in which participants experienced ownership of the hand, participants observed the hand 43.6% of the time, which was more than in any other condition (baseline = 33.9%, no-stimulation = 34.5%, tactile-only = 36.5%, visual-only = 39.1%). Planned comparison revealed that the overall dominance of the hand was significantly larger in the visuotactile condition compared to the visual only condition (mean difference ± SEM = 4.48 ± 1.76, CI = 0.87–8.08, t(29) = 2.54, p = 0.017, d = 0.47). Additional post hoc tests showed significantly larger dominance in the visuotactile condition compared to the three other conditions as well (visuotactile vs baseline: mean difference ± SEM = 9.70 ± 2.36, CI = 4.88–14.53, t(29) = 4.11, p = 0.003, d = 0.75; vs no-stimulation: mean difference ± SEM = 9.10 ± 1.99, CI = 5.03–13.16 d = 0.85, t(29) = 4.58, p = 0.002; vs tactile-only: mean difference ± SEM = 7.07 ± 1.61, CI = 3.78–10.36, t(29) = 4.40, p <0.001, d = 0.80) (Figure 3A). Interestingly, the hand percept was not more dominant in the tactile-only condition than in the no-stimulation condition as revealed by our planned comparison (mean difference ± SEM = 2.02 ± 2.04, CI = −2.15–6.19, t(29) = 1.30, p = 0.204, d = 0.18). This result suggests that it is ownership of the hand, rather than mere tactile stimulation, that increases hand-percept dominance. However, the interaction between the visual and tactile components was not significant (F(1,29) = 0.99, p = 0.329, η2 = 0.03; main effect of visual component: F(1,29) = 27.12, p <0.001, η2 = 0.48; main effect of tactile component: F(1,29) = 5.03, p = 0.033, η2 = 0.15). A final planned comparison was conducted between the no-stimulation condition, in which each participant’s real hand was in the same spatial location as that of the observed hand image, and the baseline condition, in which the participant’s real hand was retracted next to the body in an incongruent position. The dominance of the hand percept was similar in both conditions (mean difference ± SEM = 0.61 ± 2.22, CI = −3.94–5.15, t(29) = 0.27, p > 0.25, d = 0.05), thus indicating that the mere congruent position of a participant’s veridical hand did not increase the dominance of the hand image.
 
@@ -118,7 +118,7 @@ In a post hoc correlation analysis, we found that participants with higher owner
 
 **Figure 4.:** Correlation between illusion scores (Q1 +Q2 - Q3 - Q4) and the normalized overall dominance in the visuotactile condition for Experiment 1 (A) and Experiment 2 (B). **p <0.01.
 
-## Switch rate
+#### Switch rate
 
 The presence of the moving object in the visuotactile and visual-only conditions changed the overall switching rate, that is, we found a main effect of the visual component of touch on the switch rate (F(1,29) = 39.97, p < 0.001, η2 = 0.58) (Figure 5A). However, we did not find a main effect for the tactile component (F(1,29) = 1.129, p = 0.297, η2 = 0.04) or an interaction effect (F(1,29) = 0.26, p = 0.616, η2 = 0.01). The mean switch rate was higher for visuotactile (mean = 0.443 s−1) than for tactile-only (0.367 s−1) (mean difference ± SEM = 0.075 ± 0.015, CI = 0.045–0.106, t(29) = 5.11, p < 0.001, d = 0.94) and was higher for visual-only (0.424 s−1) than for no-stimulation (0.360 s−1) (mean difference ± SEM = 0.065 ± 0.016, CI = 0.032–0.097, t(29) = 4.10, p < 0.001, d = 0.76), but we found no differences between conditions with matched visual stimuli (visuotactile versus visual-only: mean difference ± SEM = 0.018 ± 0.015, CI = 0.045–0.106, t(29) = 1.25, p = 0.221, d = 0.23; tactile-only versus no-stimulation: mean difference ± SEM = 0.001 ± 0.018, CI = −0.029–0.044, t(29) = 0.435, p = 0.667, d = 0.10). Because conditions with different visual stimuli had different switch rates, it is difficult to interpret differences in percept durations between these conditions, that is, to dissociate overall perceptual stability (switch rate) from duration changes specific to one of the rival images. Therefore, the main focus of our individual percept duration analysis (see next paragraph) was on conditions with identical visual stimuli.
 
@@ -126,7 +126,7 @@ The presence of the moving object in the visuotactile and visual-only conditions
 
 **Figure 5.:** The mean switch rate in the different conditions of Experiment 1 (A) and Experiment 2 (B). Error bars indicate SEM. ***p < 0.001.
 
-## Duration of single percepts
+#### Duration of single percepts
 
 After normalizing the mean durations, we found that the visuotactile condition tended to increase the durations of the hand percept compared with the visual-only condition (mean difference ± SEM = 0.092 ± 0.046, CI = −0.003–0.044, t(29) = 1.98, p = 0.057, d = 0.36) (Figure 6A). In addition, the durations of suppression were significantly shorter in the visuotactile condition than in the visual-only condition (mean difference ± SEM = −1.01 ± 0.046, CI = −0.194 – −0.007, t(29) = −2.21, p = 0.035, d = 0.40). Importantly, these differences were not observed when the tactile-only condition was compared with the no-stimulation condition (hand percepts: mean difference ± SEM = 0.063 ± 0.066, CI = −0.072–0.199, t(29) = 0.96, p = 0.347, d = 0.18; mask percepts: mean difference ± SEM = −0.038 ± 0.081, CI = −0.203–0.127, t(29) = −0.47, p = 0.641, d = 0.10). Thus, the increased overall dominance of the hand image appears to be driven by a combination of prolonged hand percepts and shortened mask percepts. Furthermore, these changes in percept duration appear to be specific to visuotactile stimulation because tactile stimulation without a congruent visual component of touch did not significantly change percept durations compared with those in the no-stimulation condition. However, for both percepts, the interaction effect between the visual and tactile components was not significant (hand percepts: F(1,29) = 0.15, p = 0.700, η2 = 0.01; mask percepts: F(1,29) = 0.50, p = 0.485, η2 = 0.02).
 
@@ -134,7 +134,7 @@ After normalizing the mean durations, we found that the visuotactile condition t
 
 **Figure 6.:** The mean normalized durations of the hand percept and the mask percept for Experiment 1 (A) and Experiment 2 (B) and the duration difference between the visuotactile condition and the visual-only condition across experiments (C). † p = 0.057, ‡ p = 0.063, *p < 0.05, ***p < 0.001.
 
-## The effect of individual touches on overall dominance
+#### The effect of individual touches on overall dominance
 
 Next, we analyzed how dominance of the hand image changed as a result of an individual touch (Figure 7A). For the visuotactile condition, there was a strong effect of time regarding individual touches (F(5,145) = 35.46, p < 0.001, η2 = 0.55). Hand dominance was significantly higher from the second half of a touch (T2) onward than it was before a touch (T0) (see Table 1). A similar effect of time was present for the visual-only condition (F(5,145) = 56.89, p < 0.001, η2 = 0.66), and dominance was also significantly higher from T2 onward (see Table 1). Surprisingly, individual touches did not affect dominance in the tactile-only condition (F(5,145) = 1.40, p = 0.227, η2 = 0.05). Thus, the onset of tactile stimulation did not significantly increase hand dominance. Together, these results indicate that the visual impression of a touch causes a transient dominance increase of the hand image but that this effect is independent of ownership of that hand.
 
@@ -142,13 +142,76 @@ Next, we analyzed how dominance of the hand image changed as a result of an indi
 
 **Figure 7.:** Dominance of the hand percept as a function of time around individual touches (t = 0–667 ms) for the different conditions of Experiment 1 (A). The difference between the visuotactile condition and the visual-only condition (B), the difference between the tactile-only condition and the no-stimulation condition (C), and the difference between B and C (D). The gray zone indicates the period of touch (0–667 ms). For panels B-D: pp indicates percentage points (y-axis) and shading indicates SEM.
 
+**Table 1.**
+ Paired t-test statistics.Comparison of hand-image dominance between T0 and T1-4 (see Figure 7 and Figure 9); p-values are Bonferroni corrected for multiple comparisons. Significant differences are displayed in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>T1 (0–333 ms)</th>
+      <th>T2 (333–667 ms)</th>
+      <th>T3 (667–1000 ms)</th>
+      <th>T4 (1000–1334 ms)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Experiment 1</td>
+      <td>Visuotactile</td>
+      <td>t(29) = 0.21 p &gt; 0.50</td>
+      <td>t(29) = 3.49 p = 0.008</td>
+      <td>t(29) = 7.12 p &lt; 0.001</td>
+      <td>t(29) = 7.72 p &lt; 0.001</td>
+    </tr>
+    <tr>
+      <td>Visual-only</td>
+      <td>t(29) = 1.83 p = 0.31</td>
+      <td>t(29) = 4.68 p &lt; 0.001</td>
+      <td>t(29) = 10.05 p &lt; 0.001</td>
+      <td>t(29) = 9.58 p &lt; 0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Experiment 2</td>
+      <td>Congruent Visuotactile</td>
+      <td>t(29) = 1.86 p = 0.29</td>
+      <td>t(29) = 3.85 p = 0.002</td>
+      <td>t(29) = 6.18 p &lt; 0.001</td>
+      <td>t(29)=7.81 p &lt; 0.001</td>
+    </tr>
+    <tr>
+      <td>Congruent Visual-only</td>
+      <td>t(29) = 1.02 p &gt; 0.50</td>
+      <td>t(29) = 3.84 p = 0.002</td>
+      <td>t(29) = 6.75 p &lt; 0.001</td>
+      <td>t(29) = 8.85 p &lt; 0.001</td>
+    </tr>
+    <tr>
+      <td>Incongruent Visuotactile</td>
+      <td>t(29) = 1.15 p &gt; 0.50</td>
+      <td>t(29) = 2.91 p = 0.027</td>
+      <td>t(29) = 5.15 p &lt; 0.001</td>
+      <td>t(29) = 7.53 p &lt; 0.001</td>
+    </tr>
+    <tr>
+      <td>Incongruent Visual-only</td>
+      <td>t(29) = 0.31 p &gt; 0.50</td>
+      <td>t(29) = 1.53 p &gt; 0.50</td>
+      <td>t(29) = 5.11 p &lt; 0.001</td>
+      <td>t(29) = 8.55 p &lt; 0.001</td>
+    </tr>
+  </tbody>
+</table>
+
 Next, we analyzed how the increased dominance in the visuotactile condition compared with the visual-only condition varied as a function of individual touches. Figure 7B shows the difference wave for the visuotactile condition and the visual-only condition. There was no effect of time on the difference between the visuotactile condition and the visual-only condition (F(5,145) = 1.50, p = 0.195, η2 = 0.05). Instead, their difference was greater than zero throughout (see Figure 7B). If anything, the difference between these conditions appears to decrease during each individual touch. Thus, the overall dominance increase of the hand image in the visuotactile condition did not appear to be caused by individual touches.
 
 Finally, we analyzed how the interaction effect changed in response to a single touch. Figure 7D shows the difference wave for Figure 7B and Figure 7C. Positive values indicate that the effect of tactile stimulation is larger when an object moves synchronously across the hand in the image, that is, it depicts the superadditive effect of visuotactile stimulation. We found a small effect of time on this interaction (F(5,145) = 2.31, p = 0.047, η2 = 0.07). However, instead of the interaction effect being enhanced by individual touches, it weakened upon single touches (see Figure 7D).
 
 This pattern of results is indicative of a continuous effect of ownership with an additional transient effect of single touches that is independent of ownership. To be more specific, these analyses show that visual information on the moving object causes a transient dominance increase for the hand image. However, this transient increase is not specific to the visuotactile condition, and single touches therefore cannot explain the continuous increase in ownership elicited by the visuotactile stimulation. In contrast, after visual input and tactile stimulation are controlled for, the effect of the visuotactile condition seems largest before the onset of a touch, a result consistent with a continuing ownership effect. These findings provide additional evidence that ownership of a hand, a continuous experience, but not the visual or tactile component of touch alone, increases the overall dominance of that hand in the visuotactile condition.
 
-## The effect of individual touches on single percepts
+#### The effect of individual touches on single percepts
 
 In addition to the effect of individual touches on overall dominance, we also analyzed how they affected single percepts. In a previous paragraph ('Duration of single percepts') we showed that hand percepts were maintained longer while mask percepts were shortened in the visuotactile condition compared with the visual-only condition. Here, we investigated whether these effects are driven by individual touches. To this end, we first calculated the probability of maintaining a hand percept during a touch, that is, when the visible stick was moving over the hand in the image (‘touch’ period: T1 + T2), and before the onset of a touch (‘pretouch’ period: T-1 + T0), for the visuotactile and the visual-only condition (Figure 8A). The probability of maintaining a hand percept was higher overall during a touch than before a touch (F(1,29) = 23.83, p < 0.001, η2 = 0.45). Furthermore, we found that the visuotactile condition had a tendency toward higher overall probabilities of maintaining a hand percept (F(1,29) = 3.21, p = 0.084, η2 = 0.10). Although this effect seemed larger during a touch than before a touch (pretouch: mean difference ± SEM = 1.87 ± 2.34, CI = −2.93–6.66, t(29) = 0.80, p = 0.432, d = 0.15; touch: mean difference ± SEM = 3.92 ± 1.66, CI = 0.53–7.32, t(29) = 2.36, p = 0.025, d = 0.44), the interaction between phase and condition was not significant (F(1,29) = 0.67, p = 0.411, η2 = 0.02). Thus, maintaining the hand percept was more likely in the visuotactile condition, but this effect did not rely on individual touches. When comparing the tactile-only condition with the no-stimulation condition, we found no main effect of condition (F(1,29) = 4.93, p = 0.160, η2 = 0.07) and no interaction effect with individual touches (F(1,29) = 0.53, p = 0.472, η2 = 0.02) (pretouch: mean difference ± SEM = 1.52 ± 2.39, CI = −3.37–6.41, t(29) = 0.64, p = 0.529, d = 0.14; touch: mean difference ± SEM = 3.73 ± 2.34, CI = −1.06–8.52, t(29) = 1.59, p = 0.122, d = 0.30).
 
@@ -162,29 +225,29 @@ In addition to the effect of individual touches on overall dominance, we also an
 
 In addition, we assessed how individual touches changed the likelihood of switching to dominance if the hand percept was suppressed (Figure 8B). We found that if the hand was suppressed, it was overall more likely to switch to dominance in the visuotactile condition than in the visual-only condition (F(1,29) = 4.60, p = 0.046, η2 = 0.14). Across these conditions, switching was not more likely to occur during a touch (F(1,29) = 1.89, p = 0.181, η2 = 0.06). Although the higher likelihood of switching in the visuotactile condition appeared to be more pronounced during individual touches (pretouch: mean difference ± SEM = 1.68 ± 1.71, CI = −1.83–5.19, t(29) = 0.98, p = 0.335, d = 0.18; touch: mean difference ± SEM = 4.38 ± 2.14, CI = 0.01–8.75, t(29) = 2.05, p = 0.050, d = 0.38), the interaction between phase and condition was not significant (F(1,29) = 1.04, p = 0.317, η2 = 0.03). Thus, the likelihood of recovering a hand percept from suppression was greater in the visuotactile condition, and there was no significant change in this effect during touches. Furthermore, when comparing the tactile-only condition with the no-stimulation condition, we found no main effect of condition (F(1,29) = 0.82, p = 0.37, η2 = 0.03) and no interaction effect (F(1,29) = 0.52, p = 0.45, η2 = 0.02) with individual touches (pretouch: mean difference ± SEM = 1.91 ± 1.31, CI = −0.78–4.59, t(29) = 1.45, p = 0.157, d = 0.27; touch: mean difference ± SEM = 0.55 ± 1.93, CI = −3.39–4.50, t(29) = 0.29, p = 0.78, d = 0.05).
 
-## Experiment 2
+### Experiment 2
 
-## Hand-ownership illusion
+#### Hand-ownership illusion
 
 In the congruent visuotactile condition, 21 participants of the total group of 30 reported ratings of at least +1 on questionnaire statement Q1 (‘It felt as if the hand I saw was my own hand’; Mdn =+2), and 26 participants reported ratings of at least +1 on Q2 (‘The touch I felt seemed to be caused by the white ball I saw’; Mdn =+3) (Figure 2B). The ratings for Q1 and Q2 were significantly higher in the congruent condition than in the incongruent condition (Q1: Z = 3.13, p = 0.002, r = 0.40; Q2: Z = 2.36, p = 0.018, r = 0.30), whereas there were no differences for the control statements (Q3: Z = −0.59, p = 0.557, r = 0.08; Q4: Z = 1.73, p = 0.173, r = 0.22). In accordance with this, the illusion score was significantly higher in the congruent visuotactile condition than in the incongruent condition (Z = 2.73, p < 0.006, r = 0.35). Thus, the experimental manipulation of ownership was successful.
 
-## Overall dominance hand percept
+#### Overall dominance hand percept
 
 Planned comparisons showed that the overall dominance of the hand image was higher in the congruent visuotactile condition (mean = 39.9%) than in the congruent visual-only condition (35.6%) (mean difference ± SEM = 4.28 ± 1.16, CI = 1.90–6.65, t(29) = 3.68, p < 0.001, d = 0.68), but no such difference in hand dominance was observed for the incongruent conditions (visuotactile = 36.5%, visual-only = 36.4%, mean difference = 0.06 ± 1.40, CI = −2,92–2.80, t(29) = 0.04, p = 0.97, d = 0.01) (Figure 3B). In fact, there was no main effect of congruency of the hand (F(1,29) = 0.54, p = 0.470, η2 = 0.02), and the congruent visual-only condition did not differ from the incongruent visual-only condition in a post hoc comparison (mean difference ± SEM = 0.81 ± 2.11, CI = −5.11–3.50, t(29) = 0.38, p = 0.70, d = 0.01) (Figure 3B). Thus, mere spatial congruency did not increase the dominance of the hand percept. Crucially, the interaction effect between visuotactile stimulation and congruency was significant (F(1,29) = 6.63, p = 0.015, η2 = 0.19). This result indicates that visuotactile stimulation has an effect on dominance only if the hand is in a congruent position. Therefore, these results suggest that dominance is increased by the resulting body ownership and not by the visuotactile stimulation itself.
 
 In a post hoc correlation analysis, we found that, in contrast to Experiment 1, the positive correlation between participants’ ownership illusion scores and the increased dominance of the hand-image in the congruent visuotactile condition did not reach significance (ρS = 0.24, p = 0.197) (Figure 4B).
 
-## Switch rate
+#### Switch rate
 
 In contrast to Experiment 1, the moving object (ball on a stick) was visible in all four conditions. However, the orientation of the hand image was different between the congruent conditions and the incongruent conditions. We found no effect of congruency on the switch rate (F(1,29) = 0.62, p = 0.437, η2 = 0.02) (Figure 5B). In addition, as in Experiment 1, there was no main effect of tactile stimulation (F(1,29) = 0.05, p = 0.83, η2 = 0.00) and no interaction effect (F(1,29) = 0.02, p = 0.88, η2 = 0.00). As in Experiment 1, we found no differences between conditions with matched visual stimuli (visuotactile congruent versus visual-only congruent: mean difference ± SEM = 0.004 ± 0.013, CI = −0.022–0.029, t(29) = 0.29, p = 0.771, d = 0.02; visuotactile incongruent versus visual-only incongruent: mean difference ± SEM = 0.001 ± 0.018, CI = −0.030–0.032, t(29) = 0.07, p = 0.947, d = 0.01). Thus, participants had similar switch rates in all four conditions, indicating that the conditions were well matched in terms of perceptual stability of the visual stimuli.
 
-## Duration of single percepts
+#### Duration of single percepts
 
 As in Experiment 1, individual hand percepts lasted longer in the congruent visuotactile condition than in the congruent visual-only condition (mean difference ± SEM = 0.15 ± 0.04, CI = 0.07–0.22, t(29) = 4.05, p < 0.001, d = 0.74) (Figure 6B). In addition, suppression durations tended to be shorter in the visuotactile condition than in the congruent visual-only condition (mean difference ± SEM = −0.09 ± 0.04, CI = −0.18–0.00, t(29) = −1.94, p = 0.063, d = 0.37). Importantly, these differences were not observed between the incongruent conditions (hand percept: mean difference ± SEM = 0.00 ± 0.04, CI = −0.08–0.08, t(29) = −0.01, p = 0.994, d = 0.00; mask percept: mean difference ± SEM = −0.02 ± 0.08, CI = −0.18–0.14, t(29) = −0.23, p = 0.803, d = 0.06). In accordance with this finding, the interaction between congruency and visuotactile stimulation was significant for hand-dominance durations (F(1,29) = 10.38, p = 0.003, η2 = 0.26), but this interaction was not significant for suppression durations (F(1,29) = 0.56, p = 0.461, η2 = 0.02). Thus, only when the hand image was congruent with the participant’s real hand did visuotactile stimulation lead to changes in percept durations. This result is consistent with our hypothesis that it is ownership of the hand, not synchronous visuotactile stimulation, that causes these changes in binocular rivalry dynamics.
 
 The congruent conditions in Experiment 2 were identical to the visuotactile and visual-only conditions in Experiment 1 (the experiments differed only in their additional control conditions). Hence, we were able to collapse the data of both experiments for these two conditions to obtain more robust estimates of the magnitude of the effect of visuotactile stimulation, and the resulting presence of ownership, on percept durations. Across experiments, the congruent visuotactile condition, in which participants experienced ownership of the hand image, yielded longer hand-percept durations and shorter mask-percept durations than the congruent visual-only condition (hand percept: mean difference ± SEM = 0.14 ± 0.03, CI = 0.07–0.21, t(59) = 4.06, p < 0.001, d = 0.62; mask percept: mean difference ± SEM = 0.09 ± 0.04, CI = 0.02–0.17, t(59) = −2.50, p = 0.015, d = 0.32) (Figure 6C).
 
-## The effect of individual touches on overall dominance
+#### The effect of individual touches on overall dominance
 
 We assessed whether individual touches affected the dominance of the hand in different conditions (Figure 9A). As in Experiment 1, we found that individual touches affected the overall dominance of the hand image in the congruent conditions, that is, we found a main effect of time during the period surrounding a touch (visuotactile: F(5,145) = 32.66, p < 0.001, η2 = 0.53; visual-only: F(5,145) = 51.17, p < 0.001, η2 = 0.64). The onset of the dominance increase from T0 was at T2 (see Table 1), which is strikingly similar to the results of Experiment 1.
 
@@ -194,7 +257,7 @@ Figure 9B and C show the difference waves for the congruent and incongruent cond
 
 Finally, we analyzed the interaction wave (Figure 9D), that is, the difference between the congruent difference wave and the incongruent difference wave, in which a positive value indicates a larger effect of visuotactile stimulation in the congruent conditions. Individual touches did not modulate this interaction (F(5,145) = 0.923, p = 0.468, η2 = 0.03). As in Experiment 1, the interaction effect seems highest before the onset of touch and decreases during and after a touch (Figure 9D). In both experiments, the interaction effect seemed to decrease upon single touches, probably because the effects of seeing the moving object (and perhaps that of tactile stimulation) set in, reducing the relative effect of ownership. In the congruent visuotactile condition, the continuous effect that was independent of single touches was most likely caused by the continuous presence of ownership in these conditions, which was independent of single touches.
 
-## The effect of individual touches on single percepts
+#### The effect of individual touches on single percepts
 
 For each of the four conditions in Experiment 2, we calculated the probability that a hand percept was maintained for the duration of a touch (667 ms). As a baseline, we also calculated that probability for the same time interval before the onset of a touch. First, we analyzed the difference between the congruent visuotactile condition and the congruent visual-only condition. We found that, overall, maintaining a hand percept was more likely in the congruent visuotactile condition than in the congruent visual-only condition (F(1,29) = 12.05, p = 0.002, η2 = 0.29) (Figure 8C). In addition, across these two conditions, the probability of maintaining a hand percept was greater during a touch than before a touch (F(1,29) = 38.52, p < 0.001, η2 = 0.57). However, the difference in the probability of maintaining the hand percept between the visuotactile and visual-only congruent conditions did not change over time (F(1,29) = 0.26, p = 0.618, η2 = 0.01) (pretouch: mean difference ± SEM = 8.65 ± 2.49, CI = 3.55–13.74, t(29) = 3.47, p = 0.002, d = 0.74; touch: mean difference ± SEM = 7.12 ± 2.95, CI = 1.10–13.15, t(29) = 2.42, p = 0.022, d = 0.45). Thus, as in Experiment 1, the likelihood of maintaining the hand percept was higher in the congruent visuotactile condition than in the congruent visual-only condition, but this effect did not depend on single touches.
 

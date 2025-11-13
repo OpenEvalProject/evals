@@ -27,25 +27,61 @@ A number of recent studies used multivariate pattern analysis (MVPA) (Haxby et a
 
 To determine the structure of the similarity in meaning (which we will refer to as semantic similarity in the remainder of this paper), we used inverse multidimensional scaling (MDS) (Kriegeskorte and Mur, 2012) of a range of different actions (Figure 1). To test the prediction that the LOTC and the IPL reflect the semantic similarity structure determined behaviorally (using inverse MDS), we carried out an fMRI study in the same group of participants. To control for action components that often covary with action semantics, we carried out inverse MDS in the same group of participants for the similarity of actions with respect to (a) the body parts involved in the action (body model), (b) the scenes in which these actions typically take place (scene model), (c) movement kinematics involved in the actions (movement model), and (d) objects involved in these actions (object model).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/47686/elife-47686-fig1-v1.jpg)
+
+**Figure 1.:** (A) Stimuli used in the behavioral and the fMRI experiment, depicting static images of 28 everyday actions. To increase perceptual variability, actions were shown from different viewpoints, in different scenes, using two different actors (see text for details) and different objects (for actions involving an object). For a full set of stimuli used in the fMRI experiment, see Figure 1—figure supplement 1. (B) Illustration of the behavioral experiment used for inverse multidimensional scaling. In the first trial of the experiment, participants were presented with an array of images arranged on the circumference of a gray circle (left panel). In each subsequent trial, an adaptive algorithm determined a subset of actions that provided optimal evidence for the pairwise dissimilarity estimates (see Kriegeskorte and Mur, 2012 and Materials and methods, for details). In different parts of the experiment, participants were asked to rearrange the images according to their perceived similarity with respect to a specific aspect of the action, namely, their meaning (or semantics), the body part(s) involved, the scene/context in which the action typically takes place, movement kinematics, and objects involved in the action. Right panel: Example arrangement resulting from the semantic task of one representative participant. Using inverse multidimensional scaling, we derived a behavioral model (see Figure 2) from this arrangement, individually for each participant, that we then used for the representational similarity analysis to individuate those brain regions that showed a similar representational geometry (for details, see Materials and methods section).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47686/elife-47686-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Different actions are depicted in rows (for corresponding labels, see words printed in bold font in Supplementary file 3). Different exemplars for each action are shown in the columns. Exemplars varied in terms of the actor (2), scene (2), and viewing angle (3).
+
 To be able to relate our results to a previous study (Wurm et al., 2017) explicitly comparing actions directed towards an object and actions directed towards another person, we included two additional models capturing the transitivity and sociality of the actions, respectively (see Materials and methods, section Construction of Representational Dissimilarity Matrices, for details). Moreover, to account for the fact that some of the images depicting actions were photographed at a shorter distance to the actor(s) than other images, and since some actions included two actors, whereas the majority of actions depicted one actor only, we included additional models capturing the distance to the actor (near, medium, far) and the number of actors involved in the action (one vs two; see Materials and methods, section Construction of Representational Dissimilarity Matrices for details). Finally, to be able to rule out that any differences obtained in the RSA are not due to low-level differences between the actions, we included the second level (C1) of the HMAX model (Riesenhuber and Poggio, 1999; Serre et al., 2007) (see Methods, section Construction of Representational Dissimilarity Matrices, for details).
 
 In the fMRI study, we examined which brain regions capture the semantic similarity structure determined in the behavioral experiment, using representational similarity analysis (Kriegeskorte et al., 2008a) (RSA). Moreover, to examine which brain areas capture semantic similarity over and beyond the action components described above, and to control for potential confounds and low level differences in the stimulus material, we carried out a multiple regression RSA for each of the models while accounting for all the remaining models (see Materials and methods, section Representational Similarity Analysis, for details).
 
 ## Results
 
-## Behavioral
+### Behavioral
 
-## Inverse multidimensional scaling experiment (Behavioral)
+#### Inverse multidimensional scaling experiment (Behavioral)
 
 To obtain representational dissimilarity matrices (RDMs) for the semantic model, we extracted the pairwise Euclidean distances from the participants’ inverse MDS arrangements (see Materials and methods, section Inverse Multidimensional Scaling, for details). Figure 2 shows the resulting RDM (averaged across participants).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/47686/elife-47686-fig2-v1.jpg)
+
+**Figure 2.:** Bluish colors indicate high similarity between pairwise combinations of actions, whereas reddish colors indicate high dissimilarity.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47686/elife-47686-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** For each participant, we computed the pairwise cross-correlation matrix across models. We then computed (A) the averaged correlation values across participants; and reported (B) the maximum and (C) the minimum correlation values across participants. For a corresponding analysis of collinearity using the variance inflation factor, see Materials and methods, multiple regression RSA.
+
 We found significant (all p-values were smaller than p<0.0001 and survived false discovery rate correction) inter-observer correlations, that is the individual RDMs significantly correlated with the average RDM of the remaining participants (mean leave-one-subject-out correlation coefficient: 0.61, min individual correlation coefficient: 0.46, max individual correlation coefficient: 0.78), suggesting that the participants’ arrangements were reliable and based on comparable principles.
 
-## Principal Component Analysis (PCA) and Clustering analysis: K-means
+### Principal Component Analysis (PCA) and Clustering analysis: K-means
 
 To better characterize the dimensions along which the actions were organized and the clusters resulting from inverse MDS for the semantic task, we carried out a K-means clustering analysis and a Principal Component Analysis (PCA; see Materials and methods for details). A Silhouette analysis (see Materials and methods and Figure 3—figure supplement 1) revealed that the optimal number of clusters for the semantic task was six. As can be seen in Figure 3—figure supplement 2, the first three components account for the largest amount of variance. For ease of visualization, we show the first two components in Figure 3. A visualization of the first three principal components is shown in Figure 3—figure supplement 3. The analysis revealed clusters related to locomotion (e.g. biking, running), social/communicative actions (e.g. handshaking, talking on the phone), leisure-related actions (e.g. painting, reading), food-related actions (e.g. eating, drinking), and cleaning-related actions (e.g. showering, washing the dishes).
 
-## RSA
+![Figure 3.](https://cdn.elifesciences.org/articles/47686/elife-47686-fig3-v1.jpg)
+
+**Figure 3.:** Clusters resulting from the K-means clustering analysis for the semantic task. The 2D-plot shows component 1 and 2, the corresponding labels of individual actions and the suggested labels for the categories resulting from the K-means clustering. For a visualization of the organization of these actions along the third component, which explained 23.4% of the variance, please refer to Figure 3—figure supplement 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47686/elife-47686-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Silhouette analysis revealed that the optimal number of clusters for the Semantic model was 6. The analysis was performed using the fviz_nbclust function of the R package ‘factoextra’. The silhouette width is a measure of how well each item fits within its cluster with higher values indicating better fit. The average silhouette width is the average of the all items. The algorithm computes the average silhouette width as a function of the number of clusters (k). The highest value of the average silhouette width is taken and the corresponding k is selected as the optimal number of clusters.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/47686/elife-47686-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The PCA shows that the first three components accounted for the largest amount of variance.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/47686/elife-47686-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Clusters resulting from the K-means clustering analysis for the semantic model. (A) 2D-plot showing component 1 and 2, corresponding labels of individual actions and suggested labels for the categories resulting from the K-means clustering. (B) 2D-plot showing component 2 and 3. (C) 2D-plot showing component 1 and 3. (D) 3D-plot showing components 1–3.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/47686/elife-47686-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Clusters were distinguished using K-means clustering as implemented in R. Number of clusters used as input were 6 (based on the Silhouette analysis of the semantic model; see Figure 3—figure supplement 1). Colors are used to distinguish between the six resulting clusters in each analysis.
+
+### RSA
 
 To identify neural representations of observed actions that are organized according to semantic similarity, we performed a searchlight correlation-based RSA using the semantic model derived from the behavioral experiment. We thereby targeted brain regions in which the similarity of activation patterns associated with the observed actions matches the participants’ individual behavioral semantic similarity arrangement. We identified significant clusters in bilateral LOTC extending ventrally into inferior temporal cortex, bilateral posterior intraparietal sulcus (pIPS), and bilateral inferior frontal gyrus/ventral premotor cortex (Figure 4, Supplementary file 1).
 
@@ -60,6 +96,18 @@ Given that a number of action components covary to some extent with semantic fea
 **Figure 5.:** Group representational dissimilarity matrices for body, scene, movement, and object model, derived from inverse MDS carried out in the same group of participants after the fMRI experiment. The sociality, transitivity and distance model were based on ratings in a separate group of participants. For construction of the 1 vs 2 people and the HMAX-C1 model, and further details on the construction of the remaining models, see Materials and methods, section Construction of Representational Dissimilarity Matrices. Bluish colors indicate high similarity between pairwise combinations of actions, whereas reddish colors indicate high dissimilarity. For ease of comparison, we used the ordering of actions resulting from the semantic task (see Figure 2).
 
 As can be seen in Figure 6, the semantic model explained significant amounts of variance over and above the six models for the different action components and the three control models in the left anterior LOTC at the junction to the posterior middle temporal gyrus (see also Figure 6—figure supplement 1 and Supplementary file 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/47686/elife-47686-fig6-v1.jpg)
+
+**Figure 6.:** Group results of the searchlight-based multiple regression RSA, in which the ten different models (see Materials and methods, section Construction of Representational Dissimilarity Matrices, for details) were used as regressors in a multiple regression RSA conducted at the individual level. The resulting beta estimates were converted to t scores across participants and then corrected for multiple comparisons using cluster-based nonparametric permutation analysis (Stelzer et al., 2013) (see Materials and methods for details). Accounting for the behavioral (body, scene, movement, object, sociality, transitivity) and the control models (distance, 1 vs 2 People, HMAX-C1) in the multiple regression analysis, the semantic model explained observed variance in the left LOTC. For ease of comparison, the black outlines in the bottom part of the figure (flat maps) depict the clusters revealed by the standard RSA for the semantic model (Figure 4).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47686/elife-47686-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Significant clusters resulting from the searchlight multiple-regression RSA (see Figures 6 and 7), with Glasser brain parcellation (Glasser et al., 2016) superimposed on the statistical maps. The top panel shows the cluster revealed by the semantic model, and labels of ROIs as reported in Glasser et al. (2016). The remaining panels show the significant clusters explained by the other models.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/47686/elife-47686-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Cluster identified by the multiple regression-based RSA using the body model, with coordinates of the extrastriate body area (EBA) reported by a number of studies that used a functional localizer to identify this region. The coordinates for some studies (Downing et al., 2001; Downing et al., 2006; Hodzic et al., 2009; Downing et al., 2007; Peelen and Downing, 2005; Peelen et al., 2006; Astafiev et al., 2004; Jastorff and Orban, 2009; Kontaris et al., 2009; Atkinson et al., 2012; Taylor et al., 2010) were taken from Ferri et al. (2013). The remaining foci were taken from Ma et al. (2018), Myers and Sowden (2008), Hummel et al. (2013) and Aleong and Paus (2010). As shown on the inflated maps, EBA in both hemispheres is typically reported in a region of the posterior LOTC which is more ventral than the cluster that we observed in our study. However, In the left hemisphere, three of the selected studies (Downing et al., 2001; Ma et al., 2018 and Myers and Sowden, 2008) reported the EBA foci within or near the dorsal sector of the cluster reported in the current study. Furthermore, in the right hemisphere, two of the selected studies (Downing et al., 2007 and Ma et al., 2018) also reported coordinates for EBA within the right cluster found in the current study.
 
 Figure 7 shows the results of the multiple regression RSA for the other models (for a visualization of the same results together with the outlines of the Glasser multi-modal parcellation [Glasser et al., 2016] superimposed on the flat maps, see Figure 6—figure supplement 1). All models except the sociality and the scene model revealed significant clusters (see Supplementary file 2 for details). The clusters obtained for the body, movement distance, and the 1 vs 2 people models that explained significant amounts of variance over and above the remaining models partially overlapped with the cluster revealed by the semantic model (Figure 6; outlines superimposed in black in Figure 7 for ease of comparison). For the body model (Figure 7A), the cluster was obtained predominantly in the left angular gyrus, slightly more dorsal than the cluster revealed by the semantic model, and the right pMTG. Note that the cluster revealed by the body model in the left hemisphere was more dorsal than Extrastriate Body Area (EBA) (Downing et al., 2001) (for a comparison with coordinates revealed by previous studies that used a functional localizer to identify EBA, see Figure 6—figure supplement 2). The movement model revealed clusters in the left SPL, the left inferior occipital gyrus (posterior to the cluster revealed by the semantic model) and the right MTG (Figure 7B). The object model explained variance in the right intraparietal sulcus area 1 (IPS1; Hagler et al., 2007) and the left fusiform gyrus area (Figure 7C). The transitivity model revealed a small cluster in the left inferior occipital gyrus, posterior to the cluster revealed by the semantic cluster (Figure 7D). The distance (Figure 7E) and the 1 vs 2 people model (Figure 7F) revealed a number of clusters, mostly posterior to the cluster revealed by the semantic model, both in the left and right hemisphere (for a full set of labels and peak coordinates, see Supplementary file 2). The HMAX-C1 model revealed clusters (distinct from the cluster revealed by the semantic model) in the calcarine cortex (left hemisphere), the right occipital fusiform gyrus, the right inferior occipital gyrus, the right lingual gyrus and the left fusiform gyrus (Figure 7G and Supplementary file 2).
 
@@ -93,21 +141,21 @@ Whereas the standard RSA revealed strong clusters not only in the LOTC but also 
 
 Our results call for a comparison with the object domain, where similar questions have been addressed for decades. In line with the results of the multiple regression-based RSA, the LOTC has been demonstrated to represent the similarity structure of object categories (Bracci and Op de Beeck, 2016). Regarding the results of the cluster analysis, salient distinctions at the behavioral and neural level have been found between animate and inanimate objects (for example Kriegeskorte et al., 2008b; Chao et al., 1999; Caramazza and Shelton, 1998) which have been further segregated into human and nonhuman objects (Mur et al., 2013), and manipulable and non-manipulable objects (Mecklinger et al., 2002), respectively. The division between animate and inanimate objects, supported by neuropsychological, behavioral and neuroimaging findings, has been suggested to have a special status, likely due to evolutionary pressures that favored fast and accurate recognition of animals (Caramazza and Shelton, 1998; Mur et al., 2013; New et al., 2007). We conjecture that similar evolutionary mechanisms might have produced the distinction between actions belonging to different categories, such as locomotion (which might indicate the approach of an enemy), food-related actions (which might be critical for survival) and communicative actions (critical for survival within a group).
 
-## Conclusions
+### Conclusions
 
 Using a combination of behavioral and fMRI data, we identified a number of meaningful semantic categories according to which participants arrange observed actions. The corresponding similarity structure was captured in left LOTC over and above the major components of perceived actions (body parts, scenes, movements, and objects) and other related features of the observed action scenes, in line with the view that the LOTC hosts a variety of different, partially overlapping action components that can be integrated flexibly. Together, our results support the view that the LOTC plays a critical role in accessing the meaning of actions beyond the mere perceptual processing of action-relevant components.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Twenty healthy participants (13 females; mean age: 28 years; age range: 20–46) took part in an fMRI and a behavioral experiment carried out at the Combined Universities Brain Imaging Centre (CUBIC) at Royal Holloway University of London (RHUL). The experiment was approved by the ethics committee at the Department of Psychology, RHUL (REF 2015/088). Participants provided written informed consent before starting the experiment. All participants were right-handed with normal or corrected-to-normal vision and no history of neurological or psychiatric disease. All participants but one (RT, one of the authors) were naïve to the purpose of the study.
 
-## Inverse multidimensional scaling
+### Inverse multidimensional scaling
 
 Participants sat in front of a monitor (LCD 16.2 × 19.2 inches; distance 60 cm). In trial 1, all action images (one exemplar per action) appeared on the screen in a circular arrangement (with the order of actions randomly selected; see Figure 1B). Participants were instructed to arrange the pictures by drag-and-drop using the mouse according to their perceived similarity in meaning (e.g. walking and running would be placed closer to each other than walking and drinking) and to press a button once they were satisfied with the arrangement. In each subsequent trial (trial two to Np, where Np is the total number of trials for participant p), a subset of stimuli was sampled from the original stimulus set. The subset of actions was defined using an adaptive algorithm that provided the optimal evidence for the pairwise dissimilarity estimates (which are inferred from the 2D arrangement of the items on the screen, see Kriegeskorte and Mur, 2012 for details). Participants were given 15 minutes in total to complete the task.
 
-## Stimulus selection
+### Stimulus selection
 
 In contrast to previous studies that used a small set of actions, we aimed to cover a wide range of actions that we encounter on a daily basis. To this aim, we initially carried out an online survey using Google Forms. The aim of the survey was to identify actions that are considered common by a large sample of people. We thus asked 36 participants (different from those that took part in the fMRI study) to spontaneously write down all the actions that came to their mind within 10 min that they or other people are likely to do or observe. As expected, participants often used different words to refer to similar meanings (e.g. talking and discussing) or used different specific objects associated with the same action (e.g. drinking coffee and drinking water). Two of the authors (EB, AL) thus assigned these different instances of similar actions to a unique label. Actions were selected if they were mentioned by at least 20% of the participants. In total, we identified 37 actions (see Supplementary file 3).
 
@@ -123,7 +171,7 @@ To ensure that the final set of pictures were comprehensible and identified as t
 
 Note that we decided to use static images instead of videos of actions for two reasons. First of all, we wished to avoid systematic differences between conditions based on the kinematic profiles of videos of actions. Second, we aimed to use stimuli that are suitable both for the fMRI experiment and for the inverse MDS experiment. We considered static stimuli more suitable for the latter, given that the participant had to judge the similarity of a large set of actions simultaneously. We examine the consequences of this choice in the discussion.
 
-## Experimental design and setup
+### Experimental design and setup
 
 The fMRI experiment consisted of twelve functional runs and one anatomical sequence halfway through the experiment. Each functional run started and ended with 15 s of fixation. In between runs, the participants could rest.
 
@@ -135,17 +183,17 @@ To ensure that participants paid attention to the stimuli, we included seven (ou
 
 Before entering the scanner, participants received written instructions about their task and familiarized with the stimulus material for a couple of minutes. Next, participants carried out a short practice run to ensure that they properly understood the task.
 
-## MRI data acquisition
+### MRI data acquisition
 
 Functional and structural data were acquired using a Siemens TIM Trio 3T MRI scanner. For the acquisition of the functional images, we used a T2*-weighted gradient EPI sequence. The repetition time (TR) was 2.5 s, the echo time (TE) was 30 milliseconds, the flip angle was 85°, the field of view was 192 × 192 mm, the matrix size was 64 × 64, and the voxel resolution was 3 × 3 × 3 mm. A total of 37 slices were acquired in ascending interleaved order. Each functional run lasted 5 min and 55 s and consisted of 142 volumes.
 
 For the structural data, we used a T1*-weighted MPRAGE sequence (image size 256 × 256 × 176 voxels, voxel size 1 × 1 × 1 mm, TR 1.9 s, TE 3.03, flip angle 11), lasting 5 min and 35 s.
 
-## MRI data preprocessing
+### MRI data preprocessing
 
 Anatomical data were segmented using FreeSurfer (Fischl et al., 1999). Preprocessing of the functional data was carried out using SPM12 (http://www.fil.ion.ucl.ac.uk/spm/software/spm12/). The slices of each functional volume were slice time corrected and then spatially realigned to correct for head movements. Functional volumes were then coregistered to the individual anatomical image. Analyses were conducted in individual volume space, but using the inner and outer surfaces obtained with FreeSurfer as a constraint to select the voxels included in each searchlight as implemented in CoSMoMVPA (Oosterhof et al., 2011; Oosterhof et al., 2016). The resulting maps were resampled to the surface level on the Human Connectome Project common space FS_LR 32 k (Glasser et al., 2013) using FreeSurfer and workbench connectome (Marcus et al., 2011). Multivariate analyses were conducted using unsmoothed data.
 
-## Behavioral experiment
+### Behavioral experiment
 
 Following the fMRI experiment, either on the same or the next day, participants took part in an additional behavioral experiment in which they carried out an inverse MDS task using similar procedures as described above (see Materials and methods section and Figure 1B). The actions were similar to those used during the fMRI experiment. In separate blocks of the experiment, participants were asked to arrange the actions according to their perceived similarity in terms of (a) meaning (referred to as 'semantics' in the remainder of the text), (b) the body part(s) involved, (c) scene, (d) movement kinematics, (e) the object involved.
 
@@ -153,7 +201,7 @@ The order of blocks was counterbalanced across participants. Participants were p
 
 To further characterize the structure that emerged from the inverse MDS, we adopted principal component analysis (PCA) as implemented in the R package cluster to individuate the principal components along which the actions were organized. To characterize the observed clusters, we furthermore used a model-based approach using the K-means (Hartigan and Wang, 1979) clustering method. The K-means method requires the number of clusters as an input, which was one of the parameters we wished to estimate from the data. To this aim, we used the Silhouette method (Rousseeuw, 1987) as implemented in the R package factoextra to estimate the optimal number of clusters. Specifically, this method provides an estimate of the averaged distance between clusters as a function of the number of clusters used and selects the value which provides the maximal distance.
 
-## Construction of representational dissimilarity matrices (RDMs)
+### Construction of representational dissimilarity matrices (RDMs)
 
 To construct RDMs for the semantic, body, scene, movement, and object model used in the behavioral experiment, we used the same procedure described in the section Stimulus selection, that is we determined the Euclidean distance between each pair of actions that resulted from inverse MDS, and normalized the dissimilarity matrices by dividing each value by the maximum value of each matrix. Individual dissimilarity matrices were used as a model for the multiple regression-based representational similarity analysis of fMRI data (see section Representational Similarity Analysis). We found significant (all p-values were smaller than p<0.0001 and survived false discovery rate correction) inter-observer correlations, that is the individual RDMs significantly correlated with the average RDMs of the remaining participants (mean leave-one-subject-out correlation coefficients [min – max individual correlation coefficients]; semantic model: 0.61 [0.46–0.78], body model: 0.57 [0.31–0.70]; scene model: 0.63 [0.40–0.78]; movement model: 0.47 [0.26–0.67]; object model: 0.51 [0.22–0.71]. Clusters obtained from the body, scene, movement, and object model using PCA can be found in Figure 3—figure supplement 4A–D.
 
@@ -163,17 +211,17 @@ The model controlling for the number of people depicted in the action was constr
 
 To examine correlations between the different model representational dissimilarity matrices, we computed correlations between each pairwise comparison of RDMs, both averaged across participants (Figure 2—figure supplement 1A) and separately for each participant (Figure 2—figure supplement 1B,C). As can be seen, not surprisingly, there are modest correlations between the different models (in particular when averaged across participants). However, as shown in the Materials and methods section on multiple regression RSA, the Variance Inflation Factor indicated a low risk of collinearity and thus justified the use of these models for multiple regression RSA.
 
-## Representational Similarity Analysis (RSA)
+### Representational Similarity Analysis (RSA)
 
 The aim of the RSA was to individuate those brain regions that were best explained by the models obtained behaviorally and thus to infer the representational geometry that these areas encoded. We therefore conducted an RSA over the entire cortical surface using a searchlight approach (Kriegeskorte et al., 2006) at the individual brain space. Each searchlight consisted of 100 features (one central vertex + 99 neighbors) and was approximately 12 mm in radius. All multivariate analyses were carried out using custom written Matlab functions (available at: osf.io/cvrb2 ; Tucciarelli, 2019) and CoSMoMVPA (Oosterhof et al., 2016).
 
 For the multivariate analysis, the design matrix consisted of 142 volumes X 28 predictors of interest (resulting from the 28 actions) plus nuisance predictors consisting of the catch trials, the parameters resulting from motion correction, and a constant term. Thus, for each participant, we obtained 28 beta maps at the volume level. We adopted two approaches for the representational similarity analysis, a standard and a multiple regression RSA approach.
 
-## Standard RSA
+### Standard RSA
 
 First, to identify clusters in which the neural data reflected the dissimilarity pattern captured by the semantic model, we conducted a standard RSA. For this analysis, the beta maps were averaged across runs. For each searchlight, we derived the normalized RDM using squared Euclidian distance as distance metric (note that we chose this distance metric, rather than Spearman correlation, for a more straightforward comparison of the results of the standard and multiple regression RSA; see also next paragraph). For each searchlight, the RDM was correlated with the normalized RDM of the semantic model. The correlation values were assigned to the central node of each searchlight, thus leading to a correlation map for the semantic model, separately for each participant. The correlation maps of this first-level analysis were then resampled to the common space and Fisher transformed to normalize the distribution across participants to run a second-level analysis. Specifically, the correlation maps for the semantic model of all N participants were tested against zero using a one-tailed t-test at each vertex. The resulting t maps were corrected using a cluster-based nonparametric Monte Carlo permutation analysis (5000 iterations; initial threshold p<0.001 ; Stelzer et al., 2013).
 
-## Multiple regression RSA
+### Multiple regression RSA
 
 To determine clusters in which the neural RDM correlated with a given RDM (with a specific focus on the semantic model) while accounting for the remaining RDMs, we conducted a multiple regression RSA at each searchlight. For this analysis, the beta patterns were first normalized across images and then averaged across runs. Before computing the neural RDM, the betas of a searchlight were also normalized across features. Following the procedure used by Bonner and Epstein (2018), the neural RDM for each searchlight was computed using the squared Euclidean distance. Using the squared Euclidian distance as distance metric for multiple regression RSA, which models distances from a brain RDM as linear combinations of the distances from a number of predictor RDMs, guarantees that the distance metric sums linearly.
 

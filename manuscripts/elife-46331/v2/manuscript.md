@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.46331.001 Perceptual choices depend not only on the current sensory input but also on the behavioral context, such as the history of one’s own choices. Yet, it remains unknown how such history signals shape the dynamics of later decision formation. In models of decision formation, it is commonly assumed that choice history shifts the starting point of accumulation toward the bound reflecting the previous choice. We here present results that challenge this idea. We fit bounded-accumulation decision models to human perceptual choice data, and estimated bias parameters that depended on observers’ previous choices. Across multiple task protocols and sensory modalities, individual history biases in overt behavior were consistently explained by a history-dependent change in the evidence accumulation, rather than in its starting point. Choice history signals thus seem to bias the interpretation of current sensory input, akin to shifting endogenous attention toward (or away from) the previously selected interpretation.
+Perceptual choices depend not only on the current sensory input but also on the behavioral context, such as the history of one’s own choices. Yet, it remains unknown how such history signals shape the dynamics of later decision formation. In models of decision formation, it is commonly assumed that choice history shifts the starting point of accumulation toward the bound reflecting the previous choice. We here present results that challenge this idea. We fit bounded-accumulation decision models to human perceptual choice data, and estimated bias parameters that depended on observers’ previous choices. Across multiple task protocols and sensory modalities, individual history biases in overt behavior were consistently explained by a history-dependent change in the evidence accumulation, rather than in its starting point. Choice history signals thus seem to bias the interpretation of current sensory input, akin to shifting endogenous attention toward (or away from) the previously selected interpretation.
 
 ## Introduction
 
@@ -47,25 +47,61 @@ We fit different variants of the DDM (Figure 3—figure supplement 1) to data fr
 
 **Figure 2.:** (a) Schematics of perceptual decision-making tasks used in each dataset. See also Materials and methods section Datasets: behavioral tasks and participants. (b) Distributions of individual choice history biases for each dataset. Gray bars show individual observers, with colored markers indicating the group mean. (c) Each individual’s tendency to repeat their choices after correct vs. error trials. The position of each observer in this space reflects their choice- and outcome-dependent behavioral strategy.
 
-The DDM fits matched several aspects of the behavioral data (Figure 3—figure supplement 1). First, RT distributions matched the model predictions reasonably well (shown separately for each combination of stimuli and choices in Figure 3—figure supplement 1, darker colors indicate predicted RTs obtained through model simulations). Second, for the fits obtained with a hierarchical Bayesian fitting procedure (see Figure 3—figure supplement 1 and Materials and methods), used for Figures 3–5, the R^ for group-level parameters ranged between 0.9997 and 1.0406 across datasets, indicating good convergence of the sampling procedure (Wiecki et al., 2013). Third, individual drift rate estimates correlated with individual perceptual sensitivity (d’, Figure 3—figure supplement 1a) and monotonically increased with stronger sensory evidence (Figure 3—figure supplement 1a). In fixed duration tasks, the decision-maker does not need to set a bound for terminating the decision (Bogacz et al., 2006), so the bounded diffusion process described by the DDM might seem inappropriate. Yet, the success of the DDM in fitting these data was consistent with previous work (e.g. Ratcliff, 2006; Bode et al., 2012; Jahfari et al., 2012) and might have reflected the fact that observers set implicit decision bounds also when they do not control the stimulus duration (Kiani et al., 2008; but see Tsetsos et al., 2015).
+The DDM fits matched several aspects of the behavioral data (Figure 3—figure supplement 1). First, RT distributions matched the model predictions reasonably well (shown separately for each combination of stimuli and choices in Figure 3—figure supplement 1, darker colors indicate predicted RTs obtained through model simulations). Second, for the fits obtained with a hierarchical Bayesian fitting procedure (see Figure 3—figure supplement 1 and Materials and methods), used for Figures 3–5, the $R^$ for group-level parameters ranged between 0.9997 and 1.0406 across datasets, indicating good convergence of the sampling procedure (Wiecki et al., 2013). Third, individual drift rate estimates correlated with individual perceptual sensitivity (d’, Figure 3—figure supplement 1a) and monotonically increased with stronger sensory evidence (Figure 3—figure supplement 1a). In fixed duration tasks, the decision-maker does not need to set a bound for terminating the decision (Bogacz et al., 2006), so the bounded diffusion process described by the DDM might seem inappropriate. Yet, the success of the DDM in fitting these data was consistent with previous work (e.g. Ratcliff, 2006; Bode et al., 2012; Jahfari et al., 2012) and might have reflected the fact that observers set implicit decision bounds also when they do not control the stimulus duration (Kiani et al., 2008; but see Tsetsos et al., 2015).
 
-## History-dependent accumulation bias, not starting point bias, explains individual differences in choice repetition behavior
+### History-dependent accumulation bias, not starting point bias, explains individual differences in choice repetition behavior
 
 Models with history-dependent biases better explained the data than the baseline model without such history dependence (Figure 3a), corroborating the observation that observers’ behavior showed considerable dependence on previous choices (Figure 2f). The model with both history-dependent starting point and drift bias provided the best fit to five out of six datasets (Figure 3a), based on the Akaike Information Criterion (AIC; Akaike, 1974 - note that we obtained the same results when instead using the hierarchical Deviance Information Criterion).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig3-v2.jpg)
+
+**Figure 3.:** (a) For each dataset, we compared the AIC between models where drift bias, starting point bias or both were allowed to vary as a function of previous choice. The AIC for a model without history dependence was used as a baseline for each dataset. Lower AIC values indicate a model that is better able to explain the data, taking into account the model complexity; a ΔAIC of 10 is generally taken as a threshold for considering one model a sufficiently better fit. (b) Conditional bias functions (Figure 1c; White and Poldrack, 2014). For the history-dependent starting point, drift bias and hybrid models, as well as the observed data, we divided all trials into five quantiles of the RT distribution. Within each quantile, the fraction of choices in the direction of an individual’s history bias (repetition or alternation) indicates the degree of choice history bias. Error bars indicate mean ± s.e.m. across datasets. (c) Choice bias on slow response trials can be captured only by models that include history-dependent drift bias. Black error bars indicate mean ± s.e.m. across datasets, bars indicate the predicted fraction of choices in the first and last RT quantiles.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Graphical representation of the hierarchical model structure. The full model (with both history-dependent drift bias and starting point) is depicted. Round nodes represent random variables, and the shaded node x represented the observed data (choices and RTs for all observers within each task). Subject-specific parameter estimates were distributed according to the group-level posterior values, thereby ‘shrinking’ individual values toward the group average. Colors indicate the distributions used for each node. For the datasets with multiple stimulus difficulty levels, we additionally estimated a separate drift rate (v) for each (Figure 3—figure supplement 2a, inset). Between-trial variability in non-decision time was only included in the model shown in Figure 4—figure supplement 2b. (b) Prior distributions used for each node, with colors indicating their distribution. See (Wiecki et al., 2013) for the full set of prior specifications.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Correlation between drift rate ($v$) and d’. In the two datasets with multiple stimulus difficulty levels (Visual motion 2AFC (FD) and Visual motion 2IFC (FD) #1), drift rates were estimated separately for each level of stimulus difficulty. In these two datasets, the correlation coefficient displayed is a partial correlation between $v$and d’, while accounting for stimulus difficulty (inset, colors indicate discrete stimulus difficulty levels). As expected, the mean drift rate increased monotonically as a function of evidence strength. (b) Measured and predicted RT distributions, across all trials and observers within each dataset. Observed (light) and predicted (dark) RT distributions are separately shown for each combination of stimulus and choice (green/purple), with the low-probability distributions indicating error trials.
+
 The above model comparison pointed to the importance of including a history-dependency into the model. We further examined the ability of each model to explain specific diagnostic features in the data (Palminteri et al., 2017) that distinguished starting point from drift bias. A history-dependent shift in the starting point leads to biased choices primarily when responses are fast (early RT quantiles), whereas a history-dependent shift in drift leads to biased choices across all trials, including those with slow responses (Figure 1). We simulated choices and RTs from the three different model variants and computed so-called ‘conditional bias functions’ (White and Poldrack, 2014): the fraction of choices in line with each observer’s choice repetition tendency (i.e. repetition probability), in each quantile of their RT distribution. For observers whose choice repetition probability was >0.5, this was the fraction of repetitions; for the other observers, this was the fraction of alternations. Consistent with a shift in drift bias, observers exhibited history-dependent choice biases across the entire range of RTs (Figure 3b). In particular, the biased choices on slow RTs could only be captured by models that included a history-dependent shift in drift bias (Figure 3c, blue and dark green bars).
 
-We used the parameter estimates obtained from the full model (with both history-dependent starting point and drift bias) to investigate how history-dependent variations in starting point and drift bias related to each individual’s tendency to repeat their previous choices. We call each bias parameter’s dependence on the previous choice its ‘history shift’. For instance, in the left vs. right motion discrimination task, the history shift in starting point was computed as the difference between the starting point estimate for previous ‘left’ and previous ‘right’ choices, irrespective of the category of the current stimulus. The history shift in drift bias, but not the history shift in starting point, was robustly correlated to the individual probability of choice repetition (Figure 4a, significant correlations indicated with solid regression lines). In five out of six datasets, the correlation with the history shift in drift bias was significantly stronger than the correlation with the history shift in starting point (Figure 4b, Δρ values).
+We used the parameter estimates obtained from the full model (with both history-dependent starting point and drift bias) to investigate how history-dependent variations in starting point and drift bias related to each individual’s tendency to repeat their previous choices. We call each bias parameter’s dependence on the previous choice its ‘history shift’. For instance, in the left vs. right motion discrimination task, the history shift in starting point was computed as the difference between the starting point estimate for previous ‘left’ and previous ‘right’ choices, irrespective of the category of the current stimulus. The history shift in drift bias, but not the history shift in starting point, was robustly correlated to the individual probability of choice repetition (Figure 4a, significant correlations indicated with solid regression lines). In five out of six datasets, the correlation with the history shift in drift bias was significantly stronger than the correlation with the history shift in starting point (Figure 4b, Δ$ρ$ values).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig4-v2.jpg)
+
+**Figure 4.:** (a) Relationship between individual choice repetition probabilities, P(repeat), and history shift in starting point (left column, green) and drift bias (right column, blue). Parameter estimates were obtained from a model in which both bias terms were allowed to vary with previous choice. Horizontal and vertical lines, unbiased references. Thick black crosses, group mean ± s.e.m. in both directions. Black lines: best fit of an orthogonal regression (only plotted for correlations significant at p<0.05). (b) Summary of the correlations (Spearman’s ρ) between individual choice repetition probability and the history shifts in starting point (green; left) and drift bias (blue; right). Error bars indicate the 95% confidence interval of the correlation coefficient. Δρ quantifies the degree to which the two DDM parameters are differentially able to predict individual choice repetition (p-values from Steiger’s test). The black diamond indicates the mean correlation coefficient across datasets. The Bayes factor (BF10) quantifies the relative evidence for the alternative over the null hypothesis, with values < 1 indicating evidence for the null hypothesis of no correlation, and >1 indicating evidence for a correlation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) We computed post-error slowing as the difference in average RT after error and correct trials. In four of the six datasets, observers showed significant post-error slowing (permutation test against zero; ***p<0.001, **p<0.01, n.s. p>0.05). We then fit an HDDM model where the overall drift rate, as well as the boundary separation, were allowed to vary depending on the outcome (correct vs. error) of the previous trial. (b) Changes in boundary separation after error vs. correct trials. (c) Changes in drift rate after error vs. correct trials. For the two datasets with multiple levels of stimulus strength, the effect of previous error vs. correct on drift rate is shown separately for each discrete level of stimulus strength (weak to strong evidence from left to right; see also Materials and methods and Figure 3—figure supplement 2a). (d–e) as (b–c), but from a HDDM model where we simultaneously allowed choice history to affect starting point and drift bias, as well as previous accuracy to affect boundary separation and drift rate. Distributions were smoothed using kernel density fits. Shaded regions represent the 95% BCI, and white lines indicate the posterior mean. Errors were succeeded by a decrease in mean drift rate in most datasets and by an increased boundary separation in some datasets: both effects conspired to slow down decisions after an error. (f) Correlations between P(repeat) and history shifts in starting point and drift bias, from the model where previous accuracy was also allowed to affect boundary separation and drift rate.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Summary figure based on non-hierarchical G2 fits (Ratcliff and Tuerlinckx, 2002). Rather than the full RT distribution, we fit each observers’ RT quantiles (0.1, 0.3, 0.5, 0.7, 0.9) and correlated history shifts in the DDM bias parameters to individual P(repeat), as in Figure 4. (b) Summary figure based on the full hierarchical model, where across-trial variability in non-decision time (st) was added as a free parameter. Like the across-trial variability in drift rate (sv) and starting point (sz), the st parameter was only estimated at the group level (Ratcliff and Childers, 2015). (c) Fits of the two datasets with multiple evidence strengths, allowing non-decision time to vary with these discrete levels (see Materials and methods). (i) Posterior distributions of group-level non-decision time for each level of evidence strength. (ii) Comparison between models accounting for choice history bias through a starting point, drift bias or both, while allowing for non-decision time to vary with levels of stimulus strength. (iii) Correlations between individual history shifts in starting point or drift bias and repetition probability, from a model where non-decision time was separately estimated per level of stimulus strength.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Participants in the MEG study were assigned to one of three pharmacological groups. At the start of each experimental session, they orally took 40 mg atomoxetine (Strattera), 5 mg donepezil (Aricept), or placebo. Since the time of peak plasma concentration is 3 hr for donepezil (Rogers and Friedhoff, 1998) and 1–2 hr for atomoxetine (Sauer et al., 2005), we used a placebo-controlled, double-blind, double-dummy design, entailing an identical number of pills at the same times before every session for all participants. Participants in the donepezil group took 5 mg of donepezil 3 hr, and placebo 1.5 hr before starting the experimental session. Participants in the atomoxetine group took placebo 3 hr, and 40 mg of atomoxetine 1.5 hr before the experimental session. Those in the placebo group took identical-looking sugar capsules both 3 and 1.5 hr before starting the session. This ensured that either drug reached its peak plasma concentration at the start of the experimental training. The drug doses were based on previous studies with healthy participants (Chamberlain et al., 2009; Rokem and Silver, 2010). Blood pressure and heart rate were measured and registered before subjects took their first and second pill. In the 3 hr before any MEG or training session, participants waited in a quiet room. In total, 19 people in the placebo, 22 in the atomoxetine, and 20 in the donepezil group completed the full study. (b, c) Choice history biases separately for each pharmacological group. Since we did not observe differences in choice history bias between these groups, we pooled all observers for the main analyses.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (a) Correlations between individual history shifts in starting point or drift bias and repetition probability, fit separately for groups of ‘repeaters’ (P(repeat)>0.5) and ‘alternators’ (P(repeat)<0.5). (b) Summary of correlations (as in Figure 4c) separately for repeaters and alternators. Error bars indicate the 95% confidence interval of the correlation coefficient. Δρ quantifies the degree to which the two DDM parameters are differentially able to predict individual choice repetition, p-values from Steiger’s test. The black diamond indicates the mean correlation coefficient across datasets. In the Visual contrast yes/no RT dataset there were no alternators, so this dataset was excluded from the overview.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** History shift in (a) starting point and drift bias, as well as the effect of previous choice outcome on (b) starting point and drift bias, separately for each dataset. The posteriors were taken from the model where history-dependent z and vbias were fit simultaneously. Distributions were smoothed using kernel density fits. Shaded regions represent the 95% BCI, and white lines indicate the posterior mean. p-Values indicate the overlap with zero (a), or between the two conditions (b). (c) Repetition probability for five quantiles of the RT distribution, separately for each dataset (colors) and averaged across datasets (black). For those RTs < 600 ms, group-level behavior tended towards choice alternation.
 
 We quantified the total evidence by computing a Bayes factor for each correlation (Wetzels and Wagenmakers, 2012), and multiplying these across datasets (Scheibehenne et al., 2016). This further confirmed that individual choice history biases were not captured by history shifts in starting point, but consistently captured by history shifts in drift (Figure 4b). Specifically, the Bayes factor for the history shift in starting point approached zero, indicating strong evidence for the null hypothesis of no correlation. The Bayes factor for the history shift in drift indicated strong evidence for a correlation (Kass and Raftery, 1995).
 
-Correlations between estimated history shifts in starting point and drift bias were generally negative (mean ρ: −0.2884, range −0.4130 to −0.0757), but reached statistical significance (p<0.05) in only one dataset. The combined Bayes Factor (BF10) was 0.0473, indicating strong evidence for H0. We thus remain agnostic about the relationship between the history shifts of both parameters.
+Correlations between estimated history shifts in starting point and drift bias were generally negative (mean $ρ$: −0.2884, range −0.4130 to −0.0757), but reached statistical significance (p<0.05) in only one dataset. The combined Bayes Factor (BF10) was 0.0473, indicating strong evidence for H0. We thus remain agnostic about the relationship between the history shifts of both parameters.
 
 The same qualitative pattern of results was obtained with an alternative fitting procedure (non-hierarchical G2 optimization, Figure 4—figure supplement 2a), as well as a model that allowed for additional across-trial variability in non-decision time (Figure 4—figure supplement 2b). Letting non-decision time vary with each level of sensory evidence strength (in the two datasets including multiple such levels) did not change the pattern of model comparison and correlation results (Figure 4—figure supplement 2c). These findings are thus robust to specifics of the model and fitting method. The Visual motion 2IFC #2 also included pharmacological interventions in two sub-groups of participants (see Materials and methods); we found the same effects for both drug groups as well as the placebo group (Figure 4—figure supplement 3). A significant positive correlation between history shift in drift bias and P(repeat) was present for two sub-groups of participants, defined as ‘repeaters’ and ‘alternators’ (based on P(repeat) being larger or smaller than 0.5, respectively; Figure 4—figure supplement 4).
 
 The lack of a correlation between history-dependent starting point shifts and individual choice repetition is surprising in light of previous accounts (Yu and Cohen, 2008; Gao et al., 2009). History shifts in starting point were mostly negative (a tendency toward choice alternation) across participants, regardless of their individual tendency toward choice repetition or alternation (Figure 4—figure supplement 5, significant in two out of six datasets). This small but consistent effect likely explains why our formal model comparison favored a model with both history-dependent drift and starting point over one with only drift bias (see also Discussion). Critically, only the history-dependent shift in drift bias accounted for individual differences in choice repetition (Figure 4).
 
-## History-dependent accumulation bias explains individual choice repetition behavior irrespective of previous choice outcome
+### History-dependent accumulation bias explains individual choice repetition behavior irrespective of previous choice outcome
 
 In four out of six tasks, participants received explicit outcome feedback (correct, error) after each choice. It is possible that participants experienced positive feedback as rewarding and (erroneously) assumed that a rewarded choice is more likely to be rewarded on the next trial. Manipulations of reward (probability or magnitude) have been found to change starting point (Voss et al., 2008; Leite and Ratcliff, 2011; Mulder et al., 2012), but might also bias drift (Liston and Stone, 2008; Afacan-Seref et al., 2018; Fan et al., 2018). Given that there were far more correct (i.e. rewarded) choices than errors, the history-dependent drift bias could reflect the expectation of reward for the choice that was correct on the previous trial.
 
@@ -77,7 +113,7 @@ Two findings refute this idea. First, the same result holds in the two datasets 
 
 Correlations tended to be smaller for previous erroneous choices. However, directly comparing the correlation coefficients between post-correct and post-error trials (after subsampling the former to ensure equal trial numbers per participant) did not allow us to refute nor confirm a difference (Figure 5d). In sum, history-dependent drift biases did not require external feedback about choice outcome and were predominantly induced by the previous choice. These choice history-dependent biases in evidence accumulation were accompanied by effects on drift rate and boundary separation (Figure 4—figure supplement 1), in line with previous work on post-error slowing (Dutilh et al., 2012; Goldfarb et al., 2012; Purcell and Kiani, 2016a).
 
-## Accumulation bias correlates with several past choices
+### Accumulation bias correlates with several past choices
 
 Does the history shift in evidence accumulation depend on events from one past trial only? Recent work has exposed long-lasting choice history biases that span several trials and tens of seconds (Urai et al., 2017; Braun et al., 2018; Hermoso-Mendizabal et al., 2018). We thus estimated the influence of past events on the evidence accumulation process in a more comprehensive fashion. We fit a family of models in which correct and incorrect choices from up to six previous trials were used as predictors, and estimated their contribution to current starting point and drift bias.
 
@@ -85,13 +121,37 @@ Inclusion of further lags improved the model’s ability to account for the data
 
 Previous choices shifted drift bias in line with individual history bias across several trials, whereas starting point did not consistently shift in the direction of history bias. The hybrid models showed that the effect of choice history on drift bias decayed over approximately three past trials (Figure 6a), with a slower decay than for starting point (Figure 6a). The regression weights for past trials (from lag two through each dataset’s best-fitting lag) for drift bias – but not starting point - significantly correlated with the probability of repeating past choices at these same lags (Figure 6b). This was true after both correct and error trials (Figure 6b), similarly to the effects at lag 1 (Figure 5b–c).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig6-v2.jpg)
+
+**Figure 6.:** (a) History kernels, indicating different parameters’ tendency to go in the direction of each individual’s history bias (i.e. sign-flipping the parameter estimates for observers with P(repeat)<0.5). For each dataset, regression weights from the best-fitting model (lowest AIC, Figure 6—figure supplement 1) are shown in thicker lines; thin lines show the weights from the largest model we fit. Black errorbars show the mean ± s.e.m. across models, with white markers indicating timepoints at which the weights are significantly different from zero across datasets (p<0.05, FDR corrected). Black lines show an exponential fit $Vt=Ae^{-t/\tau}$ to the average. (b) Correlations between individual P(repeat) and regression weights, as in Figure 5b–c. Regression weights for the history shift in starting point and drift bias were averaged from lag two until each dataset’s best-fitting lag. P(repeat) was corrected for expected repetition at longer lags given individual repetition, and averaged from lag two to each dataset’s best-fitting lag. Δρ quantifies the degree to which the two DDM parameters are differentially able to predict individual choice repetition (p-values from Steiger’s test). The black diamond indicates the mean correlation coefficient across datasets. The Bayes factor (BF10) quantifies the relative evidence for the alternative over the null hypothesis, with values < 1 indicating evidence for the null hypothesis of no correlation, and >1 indicating evidence for a correlation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Model comparison (ΔAIC from a baseline model without history) between models where previous correct and incorrect choices affected only starting point (light green squares), only drift bias (blue diamonds), or both (blue-green circles), up to six past trials. The best-fitting model is indicated by a black outline.
+
 In sum, the biasing effect of choice history on evidence accumulation is long-lasting (longer than the effects on starting point), dependent on preceding choices several trials into the past, but independent of their correctness. This analysis corroborates the previous findings from our simpler models focusing on only the preceding trial, and further dissociate the effects of choice history on starting point and evidence accumulation.
 
-## History-dependent accumulation bias explains individual choice repetition behavior irrespective of specifics of bounded-accumulation models
+### History-dependent accumulation bias explains individual choice repetition behavior irrespective of specifics of bounded-accumulation models
 
 We next set out to test the generality of our conclusions and gain deeper mechanistic insight into the nature of the dynamic (i.e. time-increasing) bias. We used a variety of bounded-accumulation models with more complex dynamics than the standard DDM. We focused on the preceding trial only, which our previous analyses had identified as exerting the same effect on history bias as the longer lags (Figure 6). These models included variants of the DDM (i.e. a perfect accumulator) with more complex dynamics of the bias or the decision bounds, as well as variants of a leaky accumulator (Busemeyer and Townsend, 1993; Usher and McClelland, 2001; Brunton et al., 2013). We focused on the Visual motion 2AFC (FD) dataset because it entailed small random dot stimuli (diameter 5° of visual angle), leading to large within- and across-trial fluctuations in the sensory evidence which we estimated through motion energy filtering (Adelson and Bergen, 1985; Urai and Wimmer, 2016; Figure 7—figure supplement 1). These fluctuating motion energy estimates were used as time-varying sensory input to the models, providing key additional constraints over and above nominal sensory evidence levels, choices and RT distributions (Brunton et al., 2013).
 
 We first re-fit the standard DDM where the two biasing parameters were allowed to vary with previous choice (see Figure 1), now using single-trial motion energy estimates and a non-hierarchical fitting procedure (see Materials and methods). This made these fits directly comparable to both the hierarchical fits in Figures 3–4, and the more complex models described below. As expected (Figure 3a), the data were better explained by a history-dependent bias in the drift, rather than the starting point (Figure 7b1). In these non-hierarchical fits, the hybrid DDM (i.e. both bias terms free to vary as a function of previous choice) lost against the drift bias-only model (indicated by its higher AIC). Yet thi hybrid model allowed for a direct comparison of the correlations between these (jointly fit) bias parameters and individual choice repetition probability. As in our previous analysis (Figure 4), individual choice repetition probability was more strongly predicted by drift than starting point bias (Figure 6c1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig7-v2.jpg)
+
+**Figure 7.:** (a) Model schematics. In the third panel from the left, the stimulus-dependent mean drift is shown in black, overlaid by the biased mean drift in color (as in Figure 1a,b). (b) AIC values for each history-dependent model, as compared to a standard (left) or dynamic (right) DDM without history. The winning model (lowest AIC value) within each model class is shown with a black outline. (c) Correlation (Spearman’s ρ) of parameter estimates with individual repetition behavior, as in Figure 4b. Error bars, 95% confidence interval. ***p<0.0001, **p<0.01, n.s. p>0.05. (d) Within-trial time courses of effective bias (cumulative bias as a fraction of the decision bound) for the winning leaky accumulator model. Effective bias time courses are indistinguishable between both dynamical regimes (λ < 0 and λ > 0) and are averaged here.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Within each generative coherence level, the average motion energy traces were rescaled to express motion energy in % coherence. The initial 200 ms of the trial fall within the rise-time of the spatiotemporal motion energy filter. (b) The average motion energy is a linear function of coherence, with substantial trial-by-trial fluctuations that arise from the stochastically generated noise dots. Note that while we previously used motion energy filtering on the dot coordinates in the Visual motion 2IFC (FD) #1 dataset (Urai et al., 2017), the large stimulus display in that study resulted in most noise fluctuations being averaged out over space. This resulted in only small trial-by-trial differences in the effective decision-relevant input). (c) Psychophysical kernels, indicating the effect of fluctuations in motion energy (using the three weakest coherence levels) on observers’ choice over time. Shaded errorbars indicate group s.e.m., black dots show significant (p<0.05, FDR-corrected) group-level deviations from zero. (d) Individual effective leak parameters, estimated from an leaky accumulator model either without (left) or with (right) collapsing. A positive λ indicates that the accumulators accelerate towards the decision bound, depending on the value of the decision variable. When including a collapsing bound in the model, which captures an overall urgency in the decision process, overall effective leak biases are no longer significantly different from zero. ***p<0.001, **p<0.01, n.s. p>0.05, permutation test against zero.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** To match the empirical data (Figure 7—figure supplement 1d), we choose the overall leak parameter $\lambda$ to be > 0, producing a primacy effect through self-excitatory accumulators, whereby evidence early on in the trials has a stronger leverage on choice. We verified that the same conclusions hold for $\lambda\leq0$ (data not shown). All simulations included collapsing bounds. (a) Model schematics. Left to right: (i) The effect of a biased starting point on choice declines rapidly with elapsed time, as the decision variable is increasingly governed by the input. (ii) The effect of biased input to the accumulation stage within the leaky accumulator model is uniquely captured by drift bias within the DDM. Also, the effect input bias on choice increases with elapsed time, as the decision variable is increasingly governed by the $\lambda$ bias. (iii) The effect of biased leak of the accumulators (henceforth termed ‘$\lambda$ bias’) on choice increases with elapsed time, as the decision variable is increasingly governed by the $\lambda$ bias. (b) Conditional bias functions, for synthetic individuals with increasing bias magnitude (indicated by color intensity). (c) Parameter estimates of a hybrid HDDM (with both starting point and drift bias) fit on simulated data. (d) Model comparison from a baseline model without history. The best-fitting model is indicated with a black outline. (e) Correlations between P(bias) of each synthetic individual, and their respective parameter estimates for both starting point and drift bias. It noteworthy that $\lambda$ bias in the leaky accumulator model predicts the strongest choice bias for long RTs, while both DDM starting point and drift bias predict the strongest choice bias for short RTs. This implies that if a major source of choice bias in any dataset is due to a leak bias, the DDM is not going to be able to easily account for this. Our simulations show that the best-fitting DDM such data shows: (i) a drift bias, in order to explain the choice bias for relatively long RTs, and (ii) a starting point of opposite sign, in order to push down the expected choice bias for relatively short RTs. Indeed, these opposing effects of starting point and drift bias can be observed in the bars in (h), and are present in some of the datasets used here (Figure 4—figure supplement 5a). The present simulation results suggest that even stronger choice repetition (or alternation) effects as measured here would give rise to opposite effects on starting point and drift bias in DDM fits.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/46331/elife-46331-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (a) Model schematics. (b) Conditional bias functions, for synthetic individuals with increasing bias magnitude (indicated by color intensity). (c) Parameter estimates of a hybrid HDDM (with both starting point and drift bias) fit on simulated data. (d) Model comparison from a baseline model without history. The best-fitting model (lowest BIC) is indicated by a black outline. (e) Correlations between P(bias) of each synthetic individual, and their respective parameter estimates for both starting point and drift bias.
 
 A previous study of reward effects on speeded decisions reported that reward asymmetries induced supra-linear bias dynamics (Afacan-Seref et al., 2018). Temporal integration of a constant drift bias produces a linearly growing effective bias in the decision variable (Figure 1b), whereas integration of a ramping drift bias produces a supra-linear growth of effective bias (Figure 7a, yellow). In our data, a standard DDM with constant drift bias provided a better fit than DDMs with either a ramping drift bias, or a combination of constant and ramping drift bias (Figure 7b2). Furthermore, in the latter (hybrid) model, the constant drift bias best predicted individual choice repetition behavior (Figure 7c2), in line with the constant accumulation bias inferred from the standard DDM fits. For the fits shown in Figure 7b2/c2, we used the same fitting protocol as for the standard DDM, in which the time-varying sensory evidence fluctuations during stimulus presentation were replaced by their average over time to compute a single-trial drift rate (called ‘default protocol’, Materials and methods section Extended bounded accumulation models: General assumptions and procedures). The same qualitative pattern of results also held for another fitting protocol (‘dynamic protocol’, see Materials and methods), in which the time-varying sensory evidence was fed into the integrator (ΔAIC relative to no-history model: −1103, –985, −995, for constant drift bias, ramping drift bias, and hybrid, respectively; correlation with P(repeat): ρ(30)= 0.5458, p=0.0012; ρ(30)= 0.3600, p=0.0429 for constant and ramping drift bias, respectively). We next used this dynamic protocol for a set of more complex dynamical models.
 
@@ -101,7 +161,7 @@ In the brain, a neural representation of the momentary sensory evidence feeds in
 
 We fit a family of bounded, leaky accumulator models, in which the starting point of the accumulators, their input, or their effective leak λ could be biased as a function of previous choice (Figure 7a, right). Note that a bias of the accumulator starting point would also translate into an accumulation bias, due to the model dynamics (see Materials and methods section Extended bounded accumulation models: General assumptions and procedures). Even so, comparing this regime with other two biasing mechanism was informative. Also note that we here use the term ‘leaky accumulator model’ to denote that the model dynamics consisted of a free effective leak parameter λ, without implying that λ < 0 (corresponding to activation decay). Our fits allowed λ to take either negative (‘forgetful’ regime) or positive (‘unstable’ regime) values (Figure 7—figure supplement 1d; see also Brunton et al., 2013). Critically, in order to test for choice history-dependent accumulation bias, we allowed λ of each accumulator to vary as a function of the previous choice, before computing the difference between the two accumulator activations. Choice-history dependent biases in accumulator starting point or accumulator input were directly applied to the accumulator difference (akin to starting point and drift bias within the DDM). Due to the simplicity of its dynamics, the DDM cannot distinguish between input and leak bias. Indeed, when simulating behavior of leaky accumulator models with either of these two accumulation biases and fitting it with the DDM, both input and λ bias loaded onto DDM drift bias (Figure 7—figure supplement 2). Critically, the leaky accumulator with biased accumulator input best explained the data, among all the models considered (Figure 7b4). Furthermore, the individually estimated input bias predicted individual choice repetition (Figure 7c4). This suggests that choice history might specifically bias the internal representation of sensory evidence feeding into the evidence accumulation process.
 
-## Dynamics of effective bias signal approximates rational combination of prior information with current evidence
+### Dynamics of effective bias signal approximates rational combination of prior information with current evidence
 
 Taken together, fits and simulations of more complex models provided additional insight into the mechanism underlying choice history bias. They also corroborated the conclusion that choice history biases are mediated by a biased accumulation of evidence, rather than a biased starting point. As a final step, we estimated the time course of the effective bias, computed as the fraction of cumulative bias signal and bound height (Hanks et al., 2011). We simulated this signal based on the group average parameters for the best-fitting leaky accumulator model (Figure 7d). In this leaky accumulator (with collapsing bound), the effective bias accelerated (Figure 7d).
 
@@ -129,103 +189,129 @@ A growing body of evidence points to the interplay of multiple timescales for ne
 
 ## Materials and methods
 
-## Datasets: behavioral tasks and participants
+### Datasets: behavioral tasks and participants
 
 We analyzed six different datasets, four of which were previously published. These spanned different modalities (visual or auditory), decision-relevant sensory features (motion direction, contrast, tone presence, motion coherence), and tasks (detection or discrimination). In each dataset, the number of participants was determined to allow for robust estimation of the original effects of interest. No participants were excluded from the analyses.
 
 Those tasks where the decision-relevant sensory evidence was presented until the observer generated a response were called response time (RT) tasks; those tasks where the sensory evidence was presented for a fixed duration, and its offset cues the observer’s response, were called fixed duration (FD) tasks in line with the terminology from Mazurek et al. (2003). These two protocols have also been termed ‘free response protocol’ and ‘interrogation protocol’ (Bogacz et al., 2006). In all datasets, stimulus strength (i.e., decision difficulty) was kept constant, or varied systematically across levels, within all main experimental sessions that were used for fitting the DDM.
 
-## 2AFC visual motion direction discrimination task (RT)
+### 2AFC visual motion direction discrimination task (RT)
 
 These data were previously published (Murphy et al., 2014), and are available at https://doi.org/10.5061/dryad.tb542. The study was approved by the ethics committee of the Leiden University Cognitive Psychology department, and all subjects provided written informed consent before taking part. Twenty-six observers (22 women and 4 men, aged 18–29) performed a motion direction (left vs. right) discrimination task. Stationary white dots were presented on a black screen for an interval of 4.3–5.8 s. After this fixation interval, the decision-relevant sensory evidence was presented: some percentage of dots (the ‘motion coherence’ level) moved to the left or the right. The coherence was individually titrated to yield an accuracy level of 85% correct (estimated from a psychometric function fit) before the start of the main experiment, and kept constant afterwards. The moving dots were presented until observers indicated their choice with a button press. After the response, the fixation cross changed color for 700 ms to indicate single-trial feedback. Each observer performed 500 trials of the task in one session. We refer to this task as ‘Visual motion 2AFC (RT)’.
 
-## 2AFC visual motion direction discrimination task (FD)
+### 2AFC visual motion direction discrimination task (FD)
 
-## Participants and informed consent
+#### Participants and informed consent
 
 Thirty-two participants (aged 19–35 years, 43 women and 21 men) participated in the study after giving their informed consent. The experiment was approved by the ethical review board of the University Medical Center Hamburg-Eppendorf (PV4714).
 
-## Task and procedure
+#### Task and procedure
 
 Observers performed a fixed duration version of the random dot motion discrimination (up vs. down) task in the MEG scanner. White dots were displayed on a gray background screen, with a density of 6 dots/degree2, resulting in 118 dots on the screen at each frame. The stimuli were confined to a circle of 2.5° radius, which was placed in the lower half of the visual field at 3.5° from fixation. After a fixation interval of 0.75–1.5 s, random dot motion stimuli (0, 3, 9, 27 or 81% motion coherence) were displayed for 750 ms. Signal dots moved with a speeds of 11.5 degree/s, and noise dots were randomly displaced within the circle on each frame. We used the single-trial dot coordinates to construct time courses of fluctuating external evidence (see Materials and methods section Motion energy filtering and psychophysical kernels; Figure 7—figure supplement 1a–c). Observers received auditory feedback 1.5–2.5 s after their response, and the ISI started 2–2.5 s after feedback. Observed performed 1782 trials over three sessions, in which the stimulus transition probability varied (0.2, 0.5 or 0.8) between blocks of 99 trials. To maximize trial counts for the non-hierarchical leaky accumulator fits, we here collapsed across blocks. We refer to this task as ‘Visual motion 2AFC (FD)’.
 
-## Visual motion coherence discrimination 2IFC task (FD): dataset 1
+### Visual motion coherence discrimination 2IFC task (FD): dataset 1
 
 These data were previously published in Urai et al. (2017), and are available at http://dx.doi.org/10.6084/m9.figshare.4300043. The ethics committee at the University of Amsterdam approved the study, and all observers gave their informed consent before participation. Twenty-seven observers (17 women and 10 men, aged 18–43) performed a two-interval motion coherence discrimination task. They viewed two consecutive intervals of random dot motion, containing coherent motion signals in a constant direction towards one of the four diagonals (counterbalanced across participants) and judged whether the second test interval (variable coherence) contained stronger or weaker motion than the first reference (constant coherence) interval. After a fixation interval of 0.5–1 s, they viewed two consecutive intervals of 500 ms each, separated by a delay of 300–700 ms. The decision-relevant sensory evidence (i.e. the difference in motion coherence between intervals), was chosen pseudo-randomly for each trial from the set (0.625, 1.25, 2.5, 5, 10, 20, 30%). Observers received auditory feedback on their choice after a delay of 1.5–2.5 s. After continuing to view noise dots for 2–2.5 s, stationary dots indicated an inter-trial interval. Observers self-initiated the start of the next trial (range of median inter-trial intervals across observers: 0.68–2.05 s). Each observer performed 2500 trials of the task, divided over five sessions. We refer to this task as ‘Visual motion 2IFC (FD) #1’.
 
-## 2IFC visual motion coherence discrimination task (FD): dataset 2
+### 2IFC visual motion coherence discrimination task (FD): dataset 2
 
-## Participants and informed consent
+#### Participants and informed consent
 
 Sixty-two participants (aged 19–35 years, 43 women and 19 men) participated in the study after screening for psychiatric, neurological or medical conditions. All subjects had normal or corrected to normal vision, were non-smokers, and gave their informed consent before the start of the study. The experiment was approved by the ethical review board of the University Medical Center Hamburg-Eppendorf (PV4648).
 
-## Task protocol
+#### Task protocol
 
 Observers performed five sessions, of which the first and the last took place in the MEG scanner (600 trials divided over 10 blocks per session) and the three sessions in between took place in a behavioral lab (1500 trials divided over 15 blocks per session). The task was as described above for ‘Visual motion 2IFC (FD) #1’, with the following exceptions. The strength of the decision-relevant sensory evidence was individually titrated to an accuracy level of 70% correct, estimated from a psychometric function fit, before the start of the main experiment and kept constant for each individual throughout the main experiment. Each stimulus was presented for 750 ms. In the MEG sessions, auditory feedback was presented 1.5–3 s after response, and an inter-trial interval with stationary dots started 2–3 s after feedback. Participants initiated the next trial with a button press (across-subject range of median inter-trial interval duration: 0.64 to 2.52 s, group average: 1.18 s). In the training sessions, auditory feedback was presented immediately after the response. This was followed by an inter-trial interval of 1 s, after which the next trial started. In this experiment, three sub-groups of observers received different pharmacological treatments prior to each session, receiving placebo, atomoxetine (a noradrenaline reuptake inhibitor), or donepezil (an acetylcholinesterase inhibitor). These groups did not differ in their choice history bias and were pooled for the purpose of the present study (Figure 4—figure supplement 3). We refer to this task as ‘Visual motion 2IFC (FD) #2’.
 
-## Visual contrast yes/no detection task (RT)
+### Visual contrast yes/no detection task (RT)
 
 These data were previously published (de Gee et al., 2014), and are available at https://doi.org/10.6084/m9.figshare.4806559. The ethics committee of the Psychology Department of the University of Amsterdam approved the study. All participants took part after giving their written informed consent. Twenty-nine observers (14 women and 15 men, aged 18–38) performed a yes/no contrast detection task. During a fixation interval of 4–6 s, observers viewed dynamic noise (a binary noise pattern that was refreshed each frame, at 100 Hz). A beep indicated the start of the decision-relevant sensory evidence. On half the trials, a vertical grating was superimposed onto the dynamic noise; on the other half of trials, only the dynamic noise was shown. The sensory evidence (signal +noise or noise-only) was presented until the observers reported their choice ('yes', grating was present; or 'no', grating was absent), or after a maximum of 2.5 s. The signal contrast was individually titrated to yield an accuracy level of 75% correct using a method of constant stimuli before the main experiment, and kept constant throughout the main experiment. Observers performed between 480–800 trials over 6–10 sessions. Six observers in the original paper (de Gee et al., 2014) performed a longer version of the task in which they also reported their confidence levels and received feedback; these were left out of the current analysis, leaving 23 subjects to be included. We refer to this task as ‘Visual contrast yes/no (RT)’.
 
-## Auditory tone yes/no detection task (RT)
+### Auditory tone yes/no detection task (RT)
 
 These data were previously published (de Gee et al., 2017) and are available at https://doi.org/10.6084/m9.figshare.4806562. All subjects gave written informed consent. The ethics committee of the Psychology Department of the University of Amsterdam approved the experiment. Twenty-four observers (20 women and four men, aged 19–23) performed an auditory tone detection task. After an inter-trial interval of 3–4 s, decision-relevant sensory evidence was presented: on half the trials, a sine wave (2 KHz) superimposed onto dynamic noise (so-called TORCS; McGinley et al., 2015) was presented; on the other half of trials only the dynamic noise was presented. The sensory evidence was presented until the participant reported their choice button press or after a maximum of 2.5 s. No feedback was provided. Each individual’s signal volume was titrated to an accuracy level of 75% correct using an adaptive staircase procedure before the start of the main experiment, and kept constant throughout the main experiment. Participants performed between 1320 and 1560 trials each, divided over two sessions. We refer to this task as ‘Auditory yes/no (RT)’.
 
-## Model-free analysis of sensitivity and choice history bias
+### Model-free analysis of sensitivity and choice history bias
 
-We quantified perceptual sensitivity in terms of signal detection-theoretic d’ (Green and Swets, 1966):(1)d′=Φ−1(H)−Φ−1(FA)where Φ was the normal cumulative distribution function, H was the fraction of hits and FA the fraction of false alarms. In the 2AFC and 2IFC datasets, one of the two stimulus categories was arbitrarily treated as signal absent. Both H and FA were bounded between 0.001 and 0.999 to allow for computation of d’ in case of near-perfect performance (Stanislaw and Todorov, 1999). We estimated d’ separately for each individual and, for the two datasets with varying difficulty levels, for each level of sensory evidence.
+We quantified perceptual sensitivity in terms of signal detection-theoretic d’ (Green and Swets, 1966):
+
+$$
+d′=Φ^{−1}(H)−Φ^{−1}(FA)
+$$
+
+where $Φ$ was the normal cumulative distribution function, H was the fraction of hits and FA the fraction of false alarms. In the 2AFC and 2IFC datasets, one of the two stimulus categories was arbitrarily treated as signal absent. Both H and FA were bounded between 0.001 and 0.999 to allow for computation of d’ in case of near-perfect performance (Stanislaw and Todorov, 1999). We estimated d’ separately for each individual and, for the two datasets with varying difficulty levels, for each level of sensory evidence.
 
 We quantified individual choice history bias in terms of the probability of repeating a choice, termed P(repeat), regardless of the category of the (previous or current) stimulus. This yielded a measure of bias that ranged between 0 (maximum alternation bias) and 1 (maximum repetition bias), whereby 0.5 indicated no bias.
 
-## Drift diffusion model (DDM) fits
+### Drift diffusion model (DDM) fits
 
-## General
+#### General
 
-This section describes the general DDM, with a focus on the biasing mechanisms described in Results and illustrated in Figure 1 (Ratcliff and McKoon, 2008). Ignoring non-decision time, drift rate variability, and starting point variability (see below), the DDM describes the accumulation of noisy sensory evidence:(2)dy=s∙v∙dt+cdWwhere y is the decision variable (gray example traces in Figure 1), s is the stimulus category (coded as -1,1), v is the drift rate, and cdW is Gaussian distributed white noise with mean 0 and variance c2dt (Bogacz et al., 2006). In an unbiased case, the starting point of the decision variably y0=z, is situated midway between the two decision bounds 0 and a:(3)y0= z=a2where a is the separation between the two decision bounds. A bias in the starting point is implemented by an additive offset zbias from the midpoint between the two bounds (Figure 1a):(4)y0= z=a2+zbias
+This section describes the general DDM, with a focus on the biasing mechanisms described in Results and illustrated in Figure 1 (Ratcliff and McKoon, 2008). Ignoring non-decision time, drift rate variability, and starting point variability (see below), the DDM describes the accumulation of noisy sensory evidence:
 
-A drift bias can be implemented by adding a stimulus-independent constant vbias, also referred to as drift bias (Ratcliff and McKoon, 2008), to the (stimulus-dependent) mean drift (Figure 1b). This adds a bias to the drift that linearly grows with time:(5)dy=(s∙v+vbias)dt+cdW
+$$
+dy=s∙v∙dt+cdW
+$$
 
-We allowed both bias parameters to vary as a function of observers’ previous choice. These two biasing mechanisms result in the same (asymmetric) fraction of choices, but they differ in terms of the resulting shapes of RT distributions (Figure 1). In previous work, zbias and vbias have also been referred to as ‘prior’ and ‘dynamic’ bias (Moran, 2015) or ‘judgmental’ and ‘perceptual’ bias (Liston and Stone, 2008).
+where $y$ is the decision variable (gray example traces in Figure 1), $s$ is the stimulus category (coded as -1,1), v is the drift rate, and $cdW$ is Gaussian distributed white noise with mean 0 and variance $c^{2}dt$ (Bogacz et al., 2006). In an unbiased case, the starting point of the decision variably $y0=z$, is situated midway between the two decision bounds 0 and $a$:
 
-## Estimating HDDM Bias parameters
+$$
+y0=z=\frac{a}{2}
+$$
 
-We used hierarchical drift diffusion modeling as implemented in the HDDM toolbox (Wiecki et al., 2013) to fit the model and estimate its parameters. As recommended by the HDDM toolbox, we specified 5% of responses to be contaminants, meaning they arise from a process other than the accumulation of evidence - for example, a lapse in attention (Ratcliff and Tuerlinckx, 2002). We fit the DDM to RT distributions for the two choice categories, conditioned on the stimulus category for each trial (s in Equation 2) - a procedure referred to as ‘stimulus coding’. This fitting method deviates from a widely used expression of the model, where RT distributions for correct and incorrect choices are fit (also called ‘accuracy coding’). Only the former can fit decision biases towards one choice over the other.
+where $a$ is the separation between the two decision bounds. A bias in the starting point is implemented by an additive offset $z_{bias}$ from the midpoint between the two bounds (Figure 1a):
+
+$$
+y0=z=\frac{a}{2}+z_{bias}
+$$
+
+A drift bias can be implemented by adding a stimulus-independent constant $v_{bias}$, also referred to as drift bias (Ratcliff and McKoon, 2008), to the (stimulus-dependent) mean drift (Figure 1b). This adds a bias to the drift that linearly grows with time:
+
+$$
+dy=(s∙v+v_{bias})dt+cdW
+$$
+
+We allowed both bias parameters to vary as a function of observers’ previous choice. These two biasing mechanisms result in the same (asymmetric) fraction of choices, but they differ in terms of the resulting shapes of RT distributions (Figure 1). In previous work, $z_{bias}$ and $v_{bias}$ have also been referred to as ‘prior’ and ‘dynamic’ bias (Moran, 2015) or ‘judgmental’ and ‘perceptual’ bias (Liston and Stone, 2008).
+
+#### Estimating HDDM Bias parameters
+
+We used hierarchical drift diffusion modeling as implemented in the HDDM toolbox (Wiecki et al., 2013) to fit the model and estimate its parameters. As recommended by the HDDM toolbox, we specified 5% of responses to be contaminants, meaning they arise from a process other than the accumulation of evidence - for example, a lapse in attention (Ratcliff and Tuerlinckx, 2002). We fit the DDM to RT distributions for the two choice categories, conditioned on the stimulus category for each trial ($s$ in Equation 2) - a procedure referred to as ‘stimulus coding’. This fitting method deviates from a widely used expression of the model, where RT distributions for correct and incorrect choices are fit (also called ‘accuracy coding’). Only the former can fit decision biases towards one choice over the other.
 
 First, we estimated a model without history-dependence. Overall drift rate, boundary separation, non-decision time, starting point, and drift bias were estimated for each individual (Figure 3—figure supplement 1). Across-trial variability in drift rate and starting point were estimated at the group-level only (Ratcliff and Childers, 2015). For the datasets including variations of sensory evidence strength (Visual motion 2AFC (FD) and Visual motion 2IFC (FD) #1), we separately estimated drift rate for each level of evidence strength. This model was used to confirm that the DDM was able to fit all datasets well, and to serve as a baseline for model comparison.
 
 Second, we estimated three different models of history bias, allowing (i) starting point, (ii) drift or (iii) both to vary as a function of the observer’s immediately preceding choice (thus capturing only so-called first-order sequential effects; cf Gao et al., 2009; Wilder et al., 2009). The effect of the preceding choice on each bias parameter was then termed its ‘history shift’. For example, for the visual motion direction discrimination task we separately estimated the starting point parameter for trials following ‘left’ and ‘right’ choices. The difference between these two parameters then reflected individual observers’ history shift in starting point, computed such that a positive value reflected a tendency towards repetition and a negative value a tendency towards alternation. The history shift in drift bias was computed in the same way.
 
-## HDDM regression models
+#### HDDM regression models
 
-We estimated the effect of up to six previous stimuli and choices on history bias using a HDDM regression model. We first created a design matrix X with dimensions trials x 2 * lags, which included pairs of regressors coding for previous stimuli and choices (coded as -1,1), until (and including) each model’s lag. Two distinct replicas of X were then used as design matrices to predict drift bias (Xv) and starting point (Xz). Drift bias was defined as v ~ 1+s+Xv, where 1 captured an overall bias for one choice over the other and s indicated the signed stimulus strength. Starting point was defined as z ~ 1+Xz, with a logistic link function 11+e-X.
+We estimated the effect of up to six previous stimuli and choices on history bias using a HDDM regression model. We first created a design matrix $X$ with dimensions trials x 2 * lags, which included pairs of regressors coding for previous stimuli and choices (coded as $-1,1$), until (and including) each model’s lag. Two distinct replicas of $X$ were then used as design matrices to predict drift bias ($X_{v}$) and starting point ($X_{z}$). Drift bias was defined as $v~1+s+X_{v}$, where 1 captured an overall bias for one choice over the other and $s$ indicated the signed stimulus strength. Starting point was defined as $z~1+X_{z}$, with a logistic link function $\frac{1}{1+e^{-X}}$.
 
 After fitting, parameter estimates were recombined to reflect the effect of previous correct (choice + stimuli) or error (choice – stimuli) trials. We sign-flipped the weight values for alternators (i.e. those participants with a repetition tendency at lag one < 0.5); this makes all the panels in Figure 6 a interpretable as a change in each parameter in the direction of individual history bias.
 
-## HDDM model fitting procedures
+#### HDDM model fitting procedures
 
 The HDDM (Wiecki et al., 2013) uses Markov-chain Monte Carlo sampling for generating posterior distributions over model parameters. Two features of this method deviate from more standard model optimization. First, the Bayesian MCMC generates full posterior distributions over parameter estimates, quantifying not only the most likely parameter value but also the uncertainty associated with that estimate. Second, the hierarchical nature of the model assumes that all observers in a dataset are drawn from a group, with specific group-level prior distributions that are informed by the literature (Figure 3—figure supplement 1; Wiecki et al., 2013). In practice, this results in more stable parameter estimates for individual subjects, who are constrained by the group-level inference. Note that we also repeated our model fits with more traditional G2 optimization (Ratcliff and Tuerlinckx, 2002) and obtained similar results (Figure 4—figure supplement 2a).
 
-For each variant of the model, we ran 30 separate Markov chains with 5000 samples each. Of those, half were discarded as burn-in and every second sample was discarded for thinning, reducing autocorrelation in the chains. This left 1250 samples per chain, which were concatenated across chains. Individual parameter estimates were then estimated from the posterior distributions across the resulting 37500 samples. All group-level chains were visually inspected to ensure convergence. Additionally, we computed the Gelman-Rubin R^ statistic (which compares within-chain and between-chain variance) and checked that all group-level parameters had an R^ between 0.9997 and 1.0406.
+For each variant of the model, we ran 30 separate Markov chains with 5000 samples each. Of those, half were discarded as burn-in and every second sample was discarded for thinning, reducing autocorrelation in the chains. This left 1250 samples per chain, which were concatenated across chains. Individual parameter estimates were then estimated from the posterior distributions across the resulting 37500 samples. All group-level chains were visually inspected to ensure convergence. Additionally, we computed the Gelman-Rubin $R^$ statistic (which compares within-chain and between-chain variance) and checked that all group-level parameters had an $R^$ between 0.9997 and 1.0406.
 
-Formal comparison between the different model variants was performed using the Akaike Information Criterion (Akaike, 1974): AIC=-2ℒ+2k, where ℒ is the total loglikelihood of the model and k denotes the number of free parameters. The AIC was computed for each observer, and summed across them. Lower AIC values indicate a better fit, while taking into account the complexity of each model. A difference in AIC values of more than 10 is considered evidence for the winning model to capture the data significantly better. The conclusions drawn from AIC also hold when using the Deviance Information Criterion for the hierarchical models.
+Formal comparison between the different model variants was performed using the Akaike Information Criterion (Akaike, 1974): $AIC=-2ℒ+2k$, where $ℒ$ is the total loglikelihood of the model and $k$ denotes the number of free parameters. The AIC was computed for each observer, and summed across them. Lower AIC values indicate a better fit, while taking into account the complexity of each model. A difference in AIC values of more than 10 is considered evidence for the winning model to capture the data significantly better. The conclusions drawn from AIC also hold when using the Deviance Information Criterion for the hierarchical models.
 
-## Conditional bias functions
+### Conditional bias functions
 
 For each variant of the model and each dataset, we simulated data using the best-fitting parameters. Specifically, we simulated 100 responses (choices and RTs) for each trial performed by the observers. These predicted patterns for the ‘baseline model’ (without history-dependence) were first used to compare the observed and predicted patterns of choices and RTs (Figure 3—figure supplement 2).
 
 We used these simulated data, as well as the participants’ choices and RTs, to visualize specific features in our data that distinguish the different biased models (Palminteri et al., 2017). Specifically, we computed conditional bias functions (White and Poldrack, 2014) that visualize choice history bias as a function of RTs. Each choice was recoded into a repetition (1) or alternation (0) of the previous choice. We then expressed each choice as being either in line with, or against the observer’s individual bias (classified into ‘repeaters’ and ‘alternators’ depending on choice repetition probability). Note that given the transformation of the data (sign-flipping the bias data for alternators in order to merge the two groups), the fact the average P(bias)>0.5 is trivial, and would occur for any generative model of history bias. Conditional bias functions instead focus on the effect of choice history bias as a function of time within each trial, the shape of which distinguishes between different bias sources (Figure 1c).
 
-To generate these conditional bias functions, we divided each (simulated or real) observer’s RT distribution into five quantiles (0.1, 0.3, 0.5, 0.7 and 0.9) and computed the fraction of biased choices within each quantile. The shape of the conditional bias functions for models with z and vbias confirm that z predominantly produces biased choices with short RTs, whereas vbias leads to biased choices across the entire range of RTs (Figure 3b).
+To generate these conditional bias functions, we divided each (simulated or real) observer’s RT distribution into five quantiles (0.1, 0.3, 0.5, 0.7 and 0.9) and computed the fraction of biased choices within each quantile. The shape of the conditional bias functions for models with $z$ and $v_{bias}$ confirm that $z$ predominantly produces biased choices with short RTs, whereas $v_{bias}$ leads to biased choices across the entire range of RTs (Figure 3b).
 
-## Motion energy filtering and psychophysical kernels
+### Motion energy filtering and psychophysical kernels
 
-For the Visual motion 2AFC (FD) dataset, we used motion energy filtering (using the filters described in Urai and Wimmer, 2016) to reconstruct the time-course of fluctuating sensory evidence over the course of each individual trial, averaging over the spatial dimensions of the display (Figure 7—figure supplement 1a, b). These single-trial traces then served as the time-resolved input to a set of extended DDM and leaky accumulator models (Figure 7). Specifically, filtering the stimuli at 60 Hz (the refresh rate of the LCD projector) resulted in 45 discrete samples for the 750 ms viewing period of each trial. The first 13 samples of the motion energy filter output (first 200 ms of the viewing interval) corresponded to the ‘rise time’ of the filter (Kiani et al., 2008), yielding outputs that were a poor representation of the actual motion energy levels (see also Figure 7—figure supplement 1a). In order to prevent those uninterpretable filter outputs from contributing, we discarded the first 15 samples (250 ms) before model fitting (see below). Using constant interpolation, we expanded the remaining 30 samples onto 150 samples, which, given that the simulation Euler step was 5 ms (dt= 0.005), corresponded to a 750 ms long input time series. In the model descriptions below we denote the input time series with M={Mt:t∈T} and T={1,2,…,150}.
+For the Visual motion 2AFC (FD) dataset, we used motion energy filtering (using the filters described in Urai and Wimmer, 2016) to reconstruct the time-course of fluctuating sensory evidence over the course of each individual trial, averaging over the spatial dimensions of the display (Figure 7—figure supplement 1a, b). These single-trial traces then served as the time-resolved input to a set of extended DDM and leaky accumulator models (Figure 7). Specifically, filtering the stimuli at 60 Hz (the refresh rate of the LCD projector) resulted in 45 discrete samples for the 750 ms viewing period of each trial. The first 13 samples of the motion energy filter output (first 200 ms of the viewing interval) corresponded to the ‘rise time’ of the filter (Kiani et al., 2008), yielding outputs that were a poor representation of the actual motion energy levels (see also Figure 7—figure supplement 1a). In order to prevent those uninterpretable filter outputs from contributing, we discarded the first 15 samples (250 ms) before model fitting (see below). Using constant interpolation, we expanded the remaining 30 samples onto 150 samples, which, given that the simulation Euler step was 5 ms (dt= 0.005), corresponded to a 750 ms long input time series. In the model descriptions below we denote the input time series with $M={M_{t}:t\inT}$ and $T={1,2,…,150}$.
 
 We also used these motion energy traces to construct so-called psychophysical kernels. Within each stimulus identity (motion direction and coherence, excluding the easiest 81% coherence trials), we subtracted the average motion energy traces corresponding to ‘up’ vs. ‘down’ choices. The resulting trace represents the excess motion energy that drives choices, over and above the generative stimulus coherence (Figure 7—figure supplement 1c).
 
-## Extended bounded accumulation models
+### Extended bounded accumulation models
 
-## General assumptions and procedures
+#### General assumptions and procedures
 
 In the 2AFC (FD) visual motion experiment participants viewed the stimulus for 0.75 s (hereafter called ‘viewing period’) and could respond only after the stimulus offset. This required specifying the input to the evidence accumulation process. In the models described below, we used separate simulation protocols, based on different assumptions about this input. In the ‘dynamic’ protocol, where the input was the time-varying sensory evidence from each trial, the accumulation process was assumed to start at stimulus onset, and responses could happen during the motion viewing interval. The average activity of the accumulator(s) at stimulus offset served as input for accumulation during the post-offset period. For fitting models using this protocol, empirical RTs were calculated relative to the stimulus onset. Motion energy estimates were used as time-resolved input to the model.
 
@@ -233,122 +319,252 @@ By contrast, in the ‘default’ protocol, the motion energy fluctuations were 
 
 The AIC scores of models using the default protocol were generally lower (i.e. better) compared to the respective models that used the dynamic protocol. This difference is likely due to the fact that the dynamic protocol is more constrained by using as input to the models the exact motion energy traces rather than just their mean for each trial. AIC is blind to such latent flexibility differences that do not map onto differences in number of parameters. Thus, AIC may have ‘under-penalized’ models in the default protocol relative to those in the dynamic protocol.
 
-In all models and in both simulation protocols, model predictions were derived via Monte Carlo simulation. The variance of the processing noise was set to c2=1. One simulation time-step corresponded to 5 ms (Euler step, dt=0.005). Finally, in the standard protocol the accumulation process could last for a maximum of 300 time-steps (or 1500 ms) and in the dynamic protocol for a maximum of 450 time-steps (or 2250 ms). After these time points, the process timed-out and a response was assigned to the alternative according to the state of the diffusion variable (e.g. in the standard DDM right if y>a2 and left if y<a2).
+In all models and in both simulation protocols, model predictions were derived via Monte Carlo simulation. The variance of the processing noise was set to $c^{2}=1$. One simulation time-step corresponded to 5 ms (Euler step, $dt=0.005$). Finally, in the standard protocol the accumulation process could last for a maximum of 300 time-steps (or 1500 ms) and in the dynamic protocol for a maximum of 450 time-steps (or 2250 ms). After these time points, the process timed-out and a response was assigned to the alternative according to the state of the diffusion variable (e.g. in the standard DDM right if $y>\frac{a}{2}$ and left if $y<\frac{a}{2}$).
 
-## DDM variants with default simulation protocol
+#### DDM variants with default simulation protocol
 
-For all basic DDM variants described in this section, we used the default simulation protocol: the time-averaged motion energy for each trial provided the drift-rate (v) driving the subsequent diffusion process. DDM models had five generic parameters: threshold (a), noise scaling (g), non-decision time (Ter), drift-rate variability (sv) and starting-point variability (sz).
+For all basic DDM variants described in this section, we used the default simulation protocol: the time-averaged motion energy for each trial provided the drift-rate ($v$) driving the subsequent diffusion process. DDM models had five generic parameters: threshold ($a$), noise scaling ($g$), non-decision time ($Ter$), drift-rate variability ($sv$) and starting-point variability ($sz$).
 
-Naïve DDM. We denote with ythe state of the diffusion variable. At time 0:(6)y0=z=a2+U(-sz,sz)where U was a uniform random variable (rectangular distribution) in the (-sz,sz) range. The evolution of y was described by:(7)dy=g⋅v¨⋅dt+cdW
+Naïve DDM. We denote with $y$the state of the diffusion variable. At time 0:
 
-Above, g was the scaling parameter that controls the signal-to-noise-ration (given that c is fixed at 1). The variable v¨ was the effective drift-rate, that is a Gaussian variable with N(m,sz2) where sz was the drift-rate variability and m was the average of the motion energy on each trial. A response was generated when the decision variable y exceeded a (right choice) or surpassed 0 (left choice). The moment that either of these boundaries was crossed plus a non-decision time Ter, determined the per-trial RT.
+$$
+y0=z=\frac{a}{2}+U(-sz,sz)
+$$
 
-Starting point DDM. This model was the same as the naïve model but with an extra parameter zbias such that at time 0:(8)y0=a2+U-sz,sz+zbias∙prev
+where U was a uniform random variable (rectangular distribution) in the $(-sz,sz$) range. The evolution of y was described by:
 
-The variable prev here encoded the previous choice (1: right, -1: left). If zbias was positive the model implemented repetition and if negative it implemented alternation.
+$$
+dy=g⋅v¨⋅dt+cdW
+$$
 
-Drift bias DDM. Same as the naïve model but with an extra biasing parameter vbias such that:(9)dy=(g⋅v¨+vbias⋅prev)dt+cdW
+Above, $g$ was the scaling parameter that controls the signal-to-noise-ration (given that $c$ is fixed at 1). The variable $v¨$ was the effective drift-rate, that is a Gaussian variable with $N(m,sz^{2})$ where $sz$ was the drift-rate variability and $m$ was the average of the motion energy on each trial. A response was generated when the decision variable y exceeded a (right choice) or surpassed 0 (left choice). The moment that either of these boundaries was crossed plus a non-decision time $Ter$, determined the per-trial RT.
+
+Starting point DDM. This model was the same as the naïve model but with an extra parameter $z_{bias}$ such that at time 0:
+
+$$
+y0=\frac{a}{2}+U-sz,sz+z_{bias}∙prev
+$$
+
+The variable $prev$ here encoded the previous choice (1: right, -1: left). If $z_{bias}$ was positive the model implemented repetition and if negative it implemented alternation.
+
+Drift bias DDM. Same as the naïve model but with an extra biasing parameter $v_{bias}$ such that:
+
+$$
+dy=(g⋅v¨+v_{bias}⋅prev)dt+cdW
+$$
 
 Hybrid DDM. This version combined the starting point DDM and drift bias DDM using two biasing parameters.
 
-Simple Ramping DDM. This model was the same as the naïve model but with an extra parameter sramp such that:(10)dy=(g⋅v¨+sramp⋅t⋅prevtmax)dt+cdWwhere t denoted time elapsed in terms of Monte-Carlo time-steps and tmax = 300 time-steps, which was the maximum duration that a given trial could run for.
+Simple Ramping DDM. This model was the same as the naïve model but with an extra parameter $s_{ramp}$ such that:
 
-Hybrid Ramping DDM. Same as the naïve model but with 2 extra parameters sramp and sconstant such that:(11)dy=(g⋅v¨+(sconstant+sramp⋅ttmax)prev)⋅dt+cdW
+$$
+dy=(g⋅v¨+\frac{s_{ramp}⋅t⋅prev}{t_{max}})dt+cdW
+$$
 
-This model thus implemented a drift bias that is nonzero at the start of the trial (sconstant), and also linearly increases until the end of the trial (with slope sramp).
+where $t$ denoted time elapsed in terms of Monte-Carlo time-steps and tmax = 300 time-steps, which was the maximum duration that a given trial could run for.
 
-## Extended models with dynamic simulation protocol
+Hybrid Ramping DDM. Same as the naïve model but with 2 extra parameters $s_{ramp}$ and $s_{constant}$ such that:
 
-For all subsequently described models, we used the dynamic simulation protocol (see section General Assumptions and Procedures), with the motion energy time courses serving as input to the accumulation process. To illustrate the details of the dynamic protocol, we next describe how the decision variable was updated in the case of the naïve DDM. The decision variable during the viewing period evolved according to the following differential equation:(12)dy(t)=g∙Mt∙dt+cdWwhere Mt was the value of the input signal at time t. Following stimulus offset (at t = T), after 150 time-steps, the diffusion variable carried on being updated as follows:(13)dy(t)=y(T)T+cdW
+$$
+dy=(g⋅v¨+(s_{constant}+\frac{s_{ramp}⋅t}{t_{max}})prev)⋅dt+cdW  
+$$
+
+This model thus implemented a drift bias that is nonzero at the start of the trial ($s_{constant}$), and also linearly increases until the end of the trial (with slope $s_{ramp}$).
+
+#### Extended models with dynamic simulation protocol
+
+For all subsequently described models, we used the dynamic simulation protocol (see section General Assumptions and Procedures), with the motion energy time courses serving as input to the accumulation process. To illustrate the details of the dynamic protocol, we next describe how the decision variable was updated in the case of the naïve DDM. The decision variable during the viewing period evolved according to the following differential equation:
+
+$$
+dy(t)=g∙M_{t}∙dt+cdW
+$$
+
+where $M_{t}$ was the value of the input signal at time t. Following stimulus offset (at t = T), after 150 time-steps, the diffusion variable carried on being updated as follows:
+
+$$
+dy(t)=\frac{y(T)}{T}+cdW
+$$
 
 In other words, after the stimulus disappeared, accumulation was driven by the average evidence accumulated up to the point of stimulus offset. This post-stimulus accumulation could continue for a maximum of 300 extra time-steps, at which point the process timed-out.
 
 Simple and Hybrid Ramping DDM. This model was the same as the above Simple and Hybrid Ramping DDMs, only now fit by using the dynamic simulation protocol (i.e. the ramping drift-criterion bias is applied for the viewing period only and, following stimulus offset, the decision variable is updated according to Equation 13).
 
-## Dynamic DDM with collapsing bounds
+### Dynamic DDM with collapsing bounds
 
-In the ‘collapsing bounds’ DDM models, a response was generated when the diffusion variable (y) exceeds bup (right choice) or surpasses bdown (left choice). The two thresholds, bup and bdown, vary over time as follows:(14.1) bupt=a-att+ca/2a(14.2)bdown(t)=att+c0a/2
+In the ‘collapsing bounds’ DDM models, a response was generated when the diffusion variable (y) exceeds $b_{up}$ (right choice) or surpasses $b_{down}$ (left choice). The two thresholds, $b_{up}$ and $b_{down}$, vary over time as follows:
 
-In the above, the notation xminmax indicates that x was clamped such that x∈[min,max].
+$$
+b_{up}t=a-a\frac{t}{t+c}_{a/2}^{a}
+$$
 
-The moment that either of these boundaries was reached, plus a non-decision time Ter, determined the per-trial RT. The dynamic DDM model had five basic parameters: threshold initial value (a), threshold collapse rate (c), noise scaling (g), non-decision time (Ter), and starting-point variability (sz).
 
-## Starting point dynamic DDM
 
-Here, the state of the diffusion variable was initialized according to Equation 8. Thus, the starting point model had 6 free parameters (the five basic ones plus the starting point bias, zbias).
+$$
+b_{down}(t)=a\frac{t}{t+c}_{0}^{a/2}
+$$
 
-## Drift-bias dynamic DDM
+In the above, the notation $x_{min}^{max}$ indicates that x was clamped such that $x\in[min,max]$.
 
-The diffusion variable at time 0 was initialized according to Equation 8. Also, the diffusion variable in the viewing period was not updated according to Equation 9 but according to:(15)dy(t)=(g∙Mt+vbias∙prev)∙dt+cdW
+The moment that either of these boundaries was reached, plus a non-decision time $Ter$, determined the per-trial RT. The dynamic DDM model had five basic parameters: threshold initial value ($a$), threshold collapse rate ($c$), noise scaling ($g$), non-decision time ($Ter$), and starting-point variability ($sz$).
 
-The drift-bias model had the five basic parameters plus the drift-bias parameter (vbias). Finally, the hybrid dynamic DDM had two biasing parameters (zbias and vbias) and overall seven free parameters. The diffusion variable was initialized according to Equation 8 and evolved in the viewing period according to Equation 12 and in the post-stimulus period according to Equation 13.
+#### Starting point dynamic DDM
 
-## Leaky Accumulator Models – General
+Here, the state of the diffusion variable was initialized according to Equation 8. Thus, the starting point model had 6 free parameters (the five basic ones plus the starting point bias, $z_{bias}$).
 
-The leaky accumulator model was based on models described before (Busemeyer and Townsend, 1993; Zhang and Bogacz, 2010), constituting an extension of the DDM:(16)dy=(s⋅v+λ⋅y)dt+cdWwhere the rate of change of y now also depends on its current value, with a magnitude controlled by the additional parameter λ, the effective leak which reflects the time constant of the accumulation process.
+#### Drift-bias dynamic DDM
+
+The diffusion variable at time 0 was initialized according to Equation 8. Also, the diffusion variable in the viewing period was not updated according to Equation 9 but according to:
+
+$$
+dy(t)=(g∙M_{t}+v_{bias}∙prev)∙dt+cdW
+$$
+
+The drift-bias model had the five basic parameters plus the drift-bias parameter ($v_{bias}).$ Finally, the hybrid dynamic DDM had two biasing parameters ($z_{bias}$ and $v_{bias}$) and overall seven free parameters. The diffusion variable was initialized according to Equation 8 and evolved in the viewing period according to Equation 12 and in the post-stimulus period according to Equation 13.
+
+#### Leaky Accumulator Models – General
+
+The leaky accumulator model was based on models described before (Busemeyer and Townsend, 1993; Zhang and Bogacz, 2010), constituting an extension of the DDM:
+
+$$
+dy=(s⋅v+\lambda⋅y)dt+cdW
+$$
+
+where the rate of change of $y$ now also depends on its current value, with a magnitude controlled by the additional parameter $\lambda$, the effective leak which reflects the time constant of the accumulation process.
 
 We defined three dynamic variants (c.f. dynamic DDM above) of the leaky accumulator model in order to account for history biases. These different biasing mechanisms were further crossed with two different bound regimes: static or collapsing bounds, as described for the DDM above.
 
-## Leaky Accumulator with Starting Point Bias
+#### Leaky Accumulator with Starting Point Bias
 
-Here, the diffusion variable was initiated according to Equation 8. During the viewing period, it was updated according to:(17.1)dy(t)=(λ⋅y(t)+g⋅Mt)⋅dt+cdW
+Here, the diffusion variable was initiated according to Equation 8. During the viewing period, it was updated according to:
 
-After stimulus offset, accumulation continued according to:(17.2)dy(t)=λ⋅y(t)+y(T)T+cdW
+$$
+dy(t)=(\lambda⋅y(t)+g⋅Mt)⋅dt+cdW
+$$
 
-## Leaky Accumulator with Input Bias
+After stimulus offset, accumulation continued according to:
 
-Here, the diffusion variable was initiated according to Equation 6. The evolution of the decision variable during the viewing period was described by:(18)dy(t)=(λ⋅y(t)+g⋅Mt+vbias⋅prev)⋅dt+cdW
+$$
+dy(t)=\lambda⋅y(t)+\frac{y(T)}{T}+cdW
+$$
+
+#### Leaky Accumulator with Input Bias
+
+Here, the diffusion variable was initiated according to Equation 6. The evolution of the decision variable during the viewing period was described by:
+
+$$
+dy(t)=(\lambda⋅y(t)+g⋅Mt+v_{bias}⋅prev)⋅dt+cdW
+$$
 
 After stimulus offset accumulation continued according to Equation 17.2. Responses were determined by a static threshold crossing mechanism, as in the standard DDM models described above.
 
-The third leaky accumulator model we defined, the λ-bias model, accounted for history biases by introducing an asymmetry in the dynamics of evidence accumulation. In this model, we followed a different implementation in order to enable biasing the effective leak (λ) parameter: we reformulated the model to describe two separate accumulators that integrate the sensory evidence. We define the diffusion variable as y=yA-yB, with yA and yB being two independent accumulators coding for the right and left choice. The two accumulators were initialized as follows:(19.1)yA0=U-sz,sz(19.2)yB0=0
+The third leaky accumulator model we defined, the λ-bias model, accounted for history biases by introducing an asymmetry in the dynamics of evidence accumulation. In this model, we followed a different implementation in order to enable biasing the effective leak (λ) parameter: we reformulated the model to describe two separate accumulators that integrate the sensory evidence. We define the diffusion variable as $y=y_{A}-y_{B}$, with $y_{A}$ and $y_{B}$ being two independent accumulators coding for the right and left choice. The two accumulators were initialized as follows:
+
+$$
+y_{A}0=U-sz,sz
+$$
+
+
+
+$$
+y_{B}0=0
+$$
 
 Starting point variability was thus applied only to one accumulator, which was equivalent to applying this variability on their difference (diffusion variable y).
 
-During the viewing period the two accumulators were updated according to:(20.1)dyA(t)=[λA⋅yA(t)+g⋅fA(Mt)]⋅dt+cdW2(20.2)dyB(t)=[λB⋅yB(t)+g⋅fB(Mt)]⋅dt+cdW2
+During the viewing period the two accumulators were updated according to:
+
+$$
+dy_{A}(t)=[\lambda_{A}⋅y_{A}(t)+g⋅f_{A}(M_{t})]⋅dt+\frac{cdW}{\sqrt{2}}
+$$
+
+
+
+$$
+dy_{B}(t)=[\lambda_{B}⋅y_{B}(t)+g⋅f_{B}(M_{t})]⋅dt+\frac{cdW}{\sqrt{2}}
+$$
 
 The variance of the processing noise applied to each accumulator was divided by two such as the processing variance of the accumulators’ difference (variable y) is c2, as in the DDM.
 
-The functions fA and fB were threshold linear functions, with fA setting negative values to 0 and fB setting positive values to 0. Specifically:(20.3)fA(x)={x, if x>00, if x≤0(20.4)fB(x)={0, if x>0−x, if x≤0
+The functions $f_{A}$ and $f_{B}$ were threshold linear functions, with $f_{A}$ setting negative values to 0 and $f_{B}$ setting positive values to 0. Specifically:
 
-Thus, the yA accumulator 'listened' only to the negative values of the input stream while the yB only to positive values. The effective leak parameters for each accumulator were defined as follows:(20.5)λA=λ+fA(prev)⋅λbias(20.6)λB=λ+fB(prev)⋅λbias
+$$
+f_{A}(x)={x, if x>00, if x\leq0
+$$
 
-## Leaky Accumulator with Static Bounds
 
-A response was initiated when the difference between the two accumulators (y) exceeded a positive threshold +a (right choice) or surpassed a negative threshold –a (left choice). These leaky accumulator models had one biasing parameter each as well as the following five basic parameters: threshold value (a), effective leak (λ), noise scaling (g), non-decision time (Ter), and starting-point variability (sz).
 
-## Leaky Accumulator with Collapsing Bounds
+$$
+f_{B}(x)={0, if x>0−x, if x\leq0
+$$
 
-We implemented versions of the leaky accumulator models described above using collapsing bounds. For the input and starting point bias models, the time-varying bounds are described in Equations 14.1 and 14.2. For the λ bias model, collapsing bounds had the same functional form but their asymptote was set to 0 (mirroring the fact that in this model the neutral point of the y=yA-yB decision variable was at 0, rather than at a/2 as in all other models involving a single accumulator):(21.1) bupt=a-att+c0a(21.2)bdown(t)=att+c-a-a0
+Thus, the $y_{A}$ accumulator 'listened' only to the negative values of the input stream while the $y_{B}$ only to positive values. The effective leak parameters for each accumulator were defined as follows:
 
-## Model fitting procedures
+$$
+\lambda_{A}=\lambda+f_{A}(prev)⋅\lambda_{bias}
+$$
 
-We fit the extended models using a Quantile Maximal Likelihood (QMPE) approach. Under this approach, empirical RT values are classified into bins defined by the 0.1, 0.3, 0.5, 0.7 and 0.9 quantiles of the RT distribution (six bins overall). RT quantiles were derived separately for the various coherence levels. We excluded the 81% coherence trials and pooled together the 0% and 3% coherence trials as RT quantiles in these trials were not distinguishable. This resulted in quantiles for each of three difficulty levels (0% and 3%, 9% and 27%), for each of the two responses (correct/error), and for two history conditions (motion direction in current trial consistent or inconsistent with the previous response), leading to 6 bins x 3 coherence x 2 response x two history = 72 bins per participant. Denoting the number of empirical observations in a particular bin k by nk and the probability predicted by the model to derive a response in a particular bin k by Pk, the likelihood L of the data given the model is defined as:(22)L=∏kPknk
 
-We applied a commonly used multi-stage approach to fit our simulation-based models (e.g. Teodorescu et al., 2016). First, each fitting session started by generating 20 random parameter sets, drawn from a uniform distribution bounded by the range of each parameter. To improve the precision of likelihood estimates, we generated 10 synthetic trials for each experimental trial, replicating the trials for a given participant. We then computed the likelihood of the model parameters given the data. The parameter set with the best fit out of the initial 20 was used as the starting point for a standard optimization routine (fminsearchbnd function in Matlab, which implements a constrained version of the Nelder-Mead simplex algorithm). In total, we ran 50 of such fitting sessions, each with a different random seed. Second, we chose the best-fitting parameter set from each of the 50 sessions and recomputed the likelihood while replicating 20 synthetic trials for each experimental trial. Third, the five best-fitting of these 50 sets were used as starting points fminsearchbnd, which further refined the local minima of the fit. Fourth, we recalculated the likelihood of the single best parameter set in simulations with 30 synthetic trials for each experimental trial (see Equations 6). For each model f, AIC values were calculated at the group level:(23)AICf=−2∑SNIn(ℒs)+2mfwhere N is the total number of participants and s is the participants index. ℒs denotes the maximum likelihood estimate for each participant. Finally, mf is the number of free parameters for a given model f.
 
-## Effective bias signal
+$$
+\lambda_{B}=\lambda+f_{B}(prev)⋅\lambda_{bias}
+$$
+
+#### Leaky Accumulator with Static Bounds
+
+A response was initiated when the difference between the two accumulators (y) exceeded a positive threshold +$a$ (right choice) or surpassed a negative threshold –$a$ (left choice). These leaky accumulator models had one biasing parameter each as well as the following five basic parameters: threshold value ($a$), effective leak ($\lambda$), noise scaling ($g$), non-decision time ($Ter$), and starting-point variability ($sz$).
+
+#### Leaky Accumulator with Collapsing Bounds
+
+We implemented versions of the leaky accumulator models described above using collapsing bounds. For the input and starting point bias models, the time-varying bounds are described in Equations 14.1 and 14.2. For the $\lambda$ bias model, collapsing bounds had the same functional form but their asymptote was set to 0 (mirroring the fact that in this model the neutral point of the $y=y_{A}-y_{B}$ decision variable was at 0, rather than at a/2 as in all other models involving a single accumulator):
+
+$$
+b_{up}t=a-a\frac{t}{t+c}_{0}^{a}
+$$
+
+
+
+$$
+b_{down}(t)=a\frac{t}{t+c}-a_{-a}^{0}
+$$
+
+### Model fitting procedures
+
+We fit the extended models using a Quantile Maximal Likelihood (QMPE) approach. Under this approach, empirical RT values are classified into bins defined by the 0.1, 0.3, 0.5, 0.7 and 0.9 quantiles of the RT distribution (six bins overall). RT quantiles were derived separately for the various coherence levels. We excluded the 81% coherence trials and pooled together the 0% and 3% coherence trials as RT quantiles in these trials were not distinguishable. This resulted in quantiles for each of three difficulty levels (0% and 3%, 9% and 27%), for each of the two responses (correct/error), and for two history conditions (motion direction in current trial consistent or inconsistent with the previous response), leading to 6 bins x 3 coherence x 2 response x two history = 72 bins per participant. Denoting the number of empirical observations in a particular bin $k$ by $n_{k}$ and the probability predicted by the model to derive a response in a particular bin $k$ by $P_{k}$, the likelihood $L$ of the data given the model is defined as:
+
+$$
+L=\prodkP_{k}^{n_{k}}
+$$
+
+We applied a commonly used multi-stage approach to fit our simulation-based models (e.g. Teodorescu et al., 2016). First, each fitting session started by generating 20 random parameter sets, drawn from a uniform distribution bounded by the range of each parameter. To improve the precision of likelihood estimates, we generated 10 synthetic trials for each experimental trial, replicating the trials for a given participant. We then computed the likelihood of the model parameters given the data. The parameter set with the best fit out of the initial 20 was used as the starting point for a standard optimization routine (fminsearchbnd function in Matlab, which implements a constrained version of the Nelder-Mead simplex algorithm). In total, we ran 50 of such fitting sessions, each with a different random seed. Second, we chose the best-fitting parameter set from each of the 50 sessions and recomputed the likelihood while replicating 20 synthetic trials for each experimental trial. Third, the five best-fitting of these 50 sets were used as starting points fminsearchbnd, which further refined the local minima of the fit. Fourth, we recalculated the likelihood of the single best parameter set in simulations with 30 synthetic trials for each experimental trial (see Equations 6). For each model $f$, AIC values were calculated at the group level:
+
+$$
+AIC_{f}=−2\sumSNIn(ℒ_{s})+2m_{f}
+$$
+
+where $N$ is the total number of participants and $s$ is the participants index. $ℒ_{s}$ denotes the maximum likelihood estimate for each participant. Finally, $m_{f}$ is the number of free parameters for a given model $f$.
+
+### Effective bias signal
 
 We calculated the effective bias signal (as in Hanks et al., 2011) for the winning leaky accumulator model with collapsing bounds (Figure 7d). We assumed that the current choice is biased in the direction of the previous choice (repetition bias). We arbitrarily set the previous choice to ‘right’ (prev = 1), which means that the biasing mechanisms pushes the decision variable closer to the upper boundary. In both models, the effective bias signal at time t was obtained by dividing the value of the cumulative bias signal by the value of the upper bound on that moment.
 
 We took the average of the absolute input bias parameter, so as to emulate a repetition bias. Participants were divided in two groups based on the sign of the fitted parameter λ. We calculated the effective bias signal in two instances: a) by averaging parameters across participants with λ > 0, and b) by averaging parameters across participants with λ < 0. Because the time courses were very similar in these two cases, in Figure 6d we show the average of the two effective bias signals.
 
-## Model simulations
+### Model simulations
 
 We simulated various biasing mechanisms within the frameworks of the DDM and the leaky accumulator models. Per biasing mechanism, we simulated 100K traces in timesteps of 10 ms using Equations 2 (DDM) and Equation 18 (leaky accumulator).
 
 For the DDM simulations (Figure 7—figure supplement 3), the main parameters were: boundary separation = 1; drift rate = 1; non-decision time = 0.1; starting point = 0.5 (expressed as a fraction of the boundary separation); drift bias = 0; drift rate variability = 0.5. We simulated three levels of starting point bias (0.56, 0.62 and 0.68), three levels of constant drift bias (0.2, 0.5 and 0.8), three levels of a time-dependent linear increase in drift bias (1.5/s, 2.5/s and 3.5/s), three levels of constant drift bias (0.2, 0.5 and 0.8) in combination with hyperbolically collapsing bounds (given by Equation 16 and using c = 3), and three levels of one time-dependent collapsing and one expanding bound: 0.2/s, 0.5/s and 0.8/s.
 
-For the leaky accumulator simulations (Figure 7—figure supplement 2), the main parameters for each accumulator were: input = 1; boundary = 0.42; λ = -2.5; starting point = 0; input bias = 0. The negative λ’s determined that the accumulators were self-excitatory in nature (as opposed to leaky). We choose this to match the primacy effects observed in the data (Figure 7—figure supplement 1d). We simulated three levels of starting point bias (0.05, 0.10 and 0.15), three levels of input bias (0.2, 0.5 and 0.8), and three levels of λ-bias between the two accumulators: (-3 vs -2, -4 vs -1, and -5 vs 0).
+For the leaky accumulator simulations (Figure 7—figure supplement 2), the main parameters for each accumulator were: input = 1; boundary = 0.42; $\lambda$ = -2.5; starting point = 0; input bias = 0. The negative $\lambda$’s determined that the accumulators were self-excitatory in nature (as opposed to leaky). We choose this to match the primacy effects observed in the data (Figure 7—figure supplement 1d). We simulated three levels of starting point bias (0.05, 0.10 and 0.15), three levels of input bias (0.2, 0.5 and 0.8), and three levels of $\lambda$-bias between the two accumulators: (-3 vs -2, -4 vs -1, and -5 vs 0).
 
 We then fit DDM models separately to each of the simulated datasets and fit the parameters boundary separation, drift rate, non-decision time, starting point, drift bias and drift rate variability.
 
-## Statistical tests
+### Statistical tests
 
-We quantified across-subject correlations between P(repeat) and the individual history components in DDM bias parameter estimates using Spearman’s rank correlation coefficient ρ. The qualitative pattern of results does not depend on the choice of a specific correlation metric. Even though individual subject parameter estimates are not independent due to the hierarchical nature of the HDDM fit, between-subject variance in parameter point estimates can reliably be correlated to an external variable - in our case, P(repeat) - without inflation of the false positive rate (Katahira, 2016). The difference between two correlation coefficients that shared a common variable, and its associated p-value, was computed using Steiger’s test (Steiger, 1980).
+We quantified across-subject correlations between P(repeat) and the individual history components in DDM bias parameter estimates using Spearman’s rank correlation coefficient $ρ$. The qualitative pattern of results does not depend on the choice of a specific correlation metric. Even though individual subject parameter estimates are not independent due to the hierarchical nature of the HDDM fit, between-subject variance in parameter point estimates can reliably be correlated to an external variable - in our case, P(repeat) - without inflation of the false positive rate (Katahira, 2016). The difference between two correlation coefficients that shared a common variable, and its associated p-value, was computed using Steiger’s test (Steiger, 1980).
 
 We used Bayes factors to quantify the strength of evidence across our different datasets. We first computed the Bayes factor for each correlation (between P(repeat) and the history shift in starting point, and between P(repeat) and the history shift in drift bias) (Wetzels and Wagenmakers, 2012). We then multiplied these Bayes factors across datasets to quantify the total evidence in favor or against the null hypothesis of no correlation (Scheibehenne et al., 2016). BF10 quantifies the evidence in favor of the alternative versus the null hypothesis, where BF10 = 1 indicates inconclusive evidence to draw conclusions from the data. BF10 <1/10 or >10 is taken to indicate substantial evidence for H0 or H1 (Kass and Raftery, 1995).
 
-## Data and code availability
+### Data and code availability
 
 All behavioral data, model fits and analysis code are available under a CC-BY 4.0 license at https://doi.org/10.6084/m9.figshare.7268558. Analysis code is also available on GitHub (https://github.com/anne-urai/2018_Urai_choice-history-ddm; copy archived at https://github.com/elifesciences-publications/2018_Urai_choice-history-ddm; Urai and de Gee, 2019).

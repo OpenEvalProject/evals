@@ -57,11 +57,450 @@ Here, we report new cryo-EM polymorphic structures of in vitro generated amyloid
 
 ## Results and discussion
 
-## The structure of α-Syn fibril polymorphs
+### The structure of α-Syn fibril polymorphs
 
 Fibrils of recombinant, full-length, human α-Syn were prepared using the conditions summarized in Table 1. Preformed fibrils (PFFs) were quick-frozen in holey carbon-coated copper grids and imaged with a Titan Krios electron microscope at 300kV, equipped with a Quantum-LS energy filter. Micrographs were acquired with a K2 Summit direct electron detector, drift-corrected and dose-weighted through the FOCUS interface (Biyani et al., 2017).
 
+**Table 1.**
+ Growth conditions for α-Syn fibrils.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>Buffer composition</th>
+      <th>pH</th>
+      <th>Temp–erature</th>
+      <th>Time</th>
+      <th>Concen–tration</th>
+      <th>Method</th>
+      <th>α-Syn type</th>
+      <th>Poly–morph</th>
+      <th>PDB</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>This study</td>
+      <td>50 mM Tris-HCl 150 mM KCl</td>
+      <td>7.5</td>
+      <td>37°C</td>
+      <td>1 week (600 r.p.m.)</td>
+      <td>700 µM</td>
+      <td>Cryo-EM + NMR</td>
+      <td>Full-length (‘named fibrils’)</td>
+      <td>2a, 2b</td>
+      <td>6ssx 6sst</td>
+    </tr>
+    <tr>
+      <td>(Guerrero-Ferreira et al., 2018)</td>
+      <td>DPBS (Gibco) 2.66 mM KCl, 1.47 mM KH2PO4, 137.93 mM NaCl, 8.06 mM Na2HPO4</td>
+      <td>7 to 7.3</td>
+      <td>37°C</td>
+      <td>5 days (1000 r.p.m.)</td>
+      <td>360 µM (5 mg/mL)</td>
+      <td>Cryo-EM</td>
+      <td>Truncated (1-121)</td>
+      <td>1a</td>
+      <td>6h6b</td>
+    </tr>
+    <tr>
+      <td>(Li et al., 2018a)</td>
+      <td>50 mM Tris, 150 mM KCl, 0.05% NaN3</td>
+      <td>7.5</td>
+      <td>37°C</td>
+      <td>3 days (900 r.p.m.)</td>
+      <td>500 µM</td>
+      <td>Cryo-EM</td>
+      <td>Full-length, N-terminal acetylated</td>
+      <td>1a</td>
+      <td>6a6b</td>
+    </tr>
+    <tr>
+      <td>(Li et al., 2018b)</td>
+      <td>15 mM tetrabutyl–phosphonium bromide</td>
+      <td>Not speci–fied</td>
+      <td>Room tempe–rature</td>
+      <td>14–30 days (quiescent)</td>
+      <td>300 µM</td>
+      <td>Cryo-EM</td>
+      <td>Full-length</td>
+      <td>1a,b</td>
+      <td>6cu7 6cu8</td>
+    </tr>
+    <tr>
+      <td>(Tuttle et al., 2016)</td>
+      <td>50 mM sodium phosphate 0.12 mM EDTA 0.02% sodium azide (w/v)</td>
+      <td>7.4</td>
+      <td>37°C</td>
+      <td>3 weeks (200 r.p.m.)</td>
+      <td>1000 µM (15 mg/mL)</td>
+      <td>NMR</td>
+      <td>Full-length</td>
+      <td>1a</td>
+      <td>2n0a</td>
+    </tr>
+    <tr>
+      <td>(Rodriguez et al., 2015)</td>
+      <td>5 mM lithium hydroxide 20 mM sodium phosphate 0.1 M NaCl</td>
+      <td>7.5</td>
+      <td>37°C</td>
+      <td>72 hr</td>
+      <td>500 µM</td>
+      <td>Micro-ED</td>
+      <td>Peptides: SubNACore, NACore, PreNAC</td>
+      <td></td>
+      <td>4rik 4ril 4znn</td>
+    </tr>
+    <tr>
+      <td>(Rodriguez et al., 2015)</td>
+      <td>50 mM Tris 150 mM KCl</td>
+      <td>7.5</td>
+      <td>37°C</td>
+      <td>72 hr</td>
+      <td>500 µM</td>
+      <td>No structure</td>
+      <td>Full-length</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Gath et al., 2014a)</td>
+      <td>50 mM Tris-HCl 150 mM KCl</td>
+      <td>7.5</td>
+      <td>37°C</td>
+      <td>4 days (600 r.p.m.)</td>
+      <td>300 µM</td>
+      <td>NMR secondary structure</td>
+      <td>Full-length</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Gath et al., 2012)</td>
+      <td>5 mM Tris-HCl</td>
+      <td>7.5</td>
+      <td>37°C</td>
+      <td>7 days (600 r.p.m.)</td>
+      <td>300 µM</td>
+      <td>NMR secondary structure</td>
+      <td>Full-length</td>
+      <td>Different from 1, 2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Verasdonck et al., 2016)</td>
+      <td>5 mM NaPO4</td>
+      <td>9</td>
+      <td>37°C</td>
+      <td>4 days (600 r.p.m.)</td>
+      <td>300 µM</td>
+      <td>NMR secondary structure</td>
+      <td>Full-length</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>This study</td>
+      <td>DPBS (Gibco): 2.66 mM KCl, 1.47 mM KH2PO4, 137.93 mM NaCl, 8.06 mM Na2HPO4</td>
+      <td>7 to 7.3</td>
+      <td>37°C</td>
+      <td>5 days (1000 r.p.m.)</td>
+      <td>360 µM (5 mg/mL)</td>
+      <td>Cryo-EM</td>
+      <td>Full-length, E46K</td>
+      <td>2a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>This study</td>
+      <td>DPBS (Gibco): 2.66 mM KCl, 1.47 mM KH2PO4, 137.93 mM NaCl, 8.06 mM Na2HPO4</td>
+      <td>7 to 7.3</td>
+      <td>37°C</td>
+      <td>5 days (1000 r.p.m.)</td>
+      <td>360 µM (5 mg/mL)</td>
+      <td>Cryo-EM</td>
+      <td>Full-length, N-terminal acetylated</td>
+      <td>2a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>This study</td>
+      <td>DPBS (Gibco): 2.66 mM KCl, 1.47 mM KH2PO4, 137.93 mM NaCl, 8.06 mM Na2HPO4</td>
+      <td>7 to 7.3</td>
+      <td>37°C</td>
+      <td>5 days (1000 r.p.m.)</td>
+      <td>360 µM (5 mg/mL)</td>
+      <td>Cryo-EM</td>
+      <td>Full-length, Phosphorylation at position S129</td>
+      <td>2a</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Helical image processing of 100’323 fibril segments extracted from 1’143 micrographs, revealed the presence of two distinct fibril polymorphs at the step of 3D classification. These polymorphs, termed α-Syn polymorph 2a and α-Syn polymorph 2b to distinguish them from the previously described α-Syn fibrils (α-Syn polymorphs 1a and 1b; Guerrero-Ferreira et al., 2018; Li et al., 2018a; Li et al., 2018b), were separately refined, resulting in 3D reconstructions at overall resolutions of 3.0 Å and 3.4 Å respectively (Table 2, Table 3, Figure 1, Figure 1—figure supplement 1 and Video 1). The left-twisting handedness of the fibrils was confirmed by AFM imaging, as done previously (Guerrero-Ferreira et al., 2018). The maps show clear side-chain densities and ß-strand separation along the helical axis, and indicate that both fibril types are formed by two protofilaments of approximately 5 nm diameter, which are composed of distinct rungs of density.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/48907/elife-48907-fig1-v2.jpg)
+
+**Figure 1.:** (A) Sequence of human α-Syn with familial PD mutation sites indicated in red. ß strands are indicated by arrows colored from blue to orange. Cryo-EM densities and atomic models of polymorph 2a (B) and polymorph 2b (C) of α-Syn. Each cryo-EM map shows two protofilaments (blue and orange) forming a fibril. PD-associated mutations sites, and first and last residues of the NAC regions are indicated. (D and E) Rainbow rendering views of the secondary structure elements in five successive rungs of both polymorphs. A view perpendicular to the helical axis is shown to illustrate the height differences in a single α-Syn fibril. Colors correspond to the arrows in the sequence displayed in panel (A).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48907/elife-48907-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Cryo EM maps with local resolution estimations for α-Syn polymorph 2a (A) and α-Syn polymorph 2b (F). The color scales indicate the resolution values within each map. (B) and (J) Fourier shell correlation curves between two independently refined half-maps. Overall resolutions are indicated. (C and G) Reference-free 2D class averages with their power spectra. (D) and (H) 2D projections of the cryo-EM maps with their power spectra. (E and I) 2D projection of the atomic models with their power spectra. White arrows in spectrum panels indicate the layer line at 1/4.8 Å with either a meridional n = 0 Bessel function peak (α-Syn polymorph 2a, panels (C) (D) and (E)), or off-meridional n = 1 Bessel function peak intensities (α-Syn polymorph 2b, panels (G) (H) and (I)).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48907/elife-48907-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A and B) Views along the axis of the α-Syn polymorph 2a and 2b fibrils, respectively. The area shown is highlighted with squares in the ribbon diagrams (inserts). (C and D) Side views of the fibrils showing the side-by-side alignment of α-Syn molecules in polymorph 2a (C), compared to the staggered packing of α-Syn molecules in polymorph 2b (D). Viewing directions in (C) and (D) are indicated by arrows in the ribbon diagrams.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/48907/elife-48907-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) NMR secondary chemical shift plot according to reference (Gath et al., 2014b). β-strands are revealed when three or more residues in a row show a negative difference of the secondary shifts Δδ (the difference between the chemical-shift deviations of the observed Cα and Cβ shifts from the random coil shift). This information is plotted on the cryo-EM structure in red. (B) Extract of a 2D 13C-13C PAR spectrum (full aliphatic region shown in (D) of the cross peaks assigned to S87-A17, A18, A19 interactions, for which all assignment possibilities within 0.15 ppm are indicated. (C) Structural restraints resulting from the cross signals in (B), and from the A19S87 peak highlighted by a box in (D), where the full 2D 13C-13C PAR NMR spectrum is shown with assigned peaks corresponding to at least i, i ± 3 contacts (non-trivial structural restraints). Most of these peaks are ambiguous, that is, they have several assignment possibilities within 0.15 ppm, which were lifted here by comparison with the cryo-EM structures. This illustrates that the PAR spectrum indeed contains numerous structurally meaningful inter-β-strand restraints that confirm the interpretation of the electron densities, even if the assignment ambiguities did not allow for an NMR 3D structure determination.
+
+**Table 2.**
+ Cryo-EM structure determination statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>E46K mutant</th>
+      <th>Phosphorylated</th>
+      <th>N-terminal acetylated</th>
+      <th>α-Syn polymorph 2a</th>
+      <th>α-Syn polymorph 2b</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pixel size [Å]</td>
+      <td>0.831</td>
+      <td>0.831</td>
+      <td>0.831</td>
+      <td>0.629</td>
+      <td>0.629</td>
+    </tr>
+    <tr>
+      <td>Defocus Range [µm]</td>
+      <td>−0.8 to −2.5</td>
+      <td>−0.8 to −2.5</td>
+      <td>−0.8 to −2.5</td>
+      <td>−0.8 to −2.5</td>
+      <td>−0.8 to −2.5</td>
+    </tr>
+    <tr>
+      <td>Voltage [kV]</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Exposure time [s per frame]</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Number of frames</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Total dose [e-/Å2]</td>
+      <td>69</td>
+      <td>69</td>
+      <td>69</td>
+      <td>69</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>Reconstruction</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Box width [pixels]</td>
+      <td>280</td>
+      <td>280</td>
+      <td>280</td>
+      <td>280</td>
+      <td>280</td>
+    </tr>
+    <tr>
+      <td>Inter-box distance [pixels]</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>Micrographs</td>
+      <td>843</td>
+      <td>1’887</td>
+      <td>948</td>
+      <td>1’143</td>
+      <td>1’143</td>
+    </tr>
+    <tr>
+      <td>Manually picked fibrils</td>
+      <td>2’702</td>
+      <td>5’095</td>
+      <td>3’751</td>
+      <td>5’233</td>
+      <td>5’233</td>
+    </tr>
+    <tr>
+      <td>Initially extracted segments</td>
+      <td>65’893</td>
+      <td>107’144</td>
+      <td>43’276</td>
+      <td>100’323</td>
+      <td>100’323</td>
+    </tr>
+    <tr>
+      <td>Segments after 2D classification</td>
+      <td>50’514</td>
+      <td>107’126</td>
+      <td>35342</td>
+      <td>100’193</td>
+      <td>100’193</td>
+    </tr>
+    <tr>
+      <td>Segments after 3D classification</td>
+      <td>50’514</td>
+      <td>21’685</td>
+      <td>35342</td>
+      <td>19’937</td>
+      <td>3’989</td>
+    </tr>
+    <tr>
+      <td>Resolution after 3D refinement [Å]</td>
+      <td>4.65</td>
+      <td>4.65</td>
+      <td>4.75</td>
+      <td>3.34</td>
+      <td>3.75</td>
+    </tr>
+    <tr>
+      <td>Final resolution [Å]</td>
+      <td>4.56</td>
+      <td>4.31</td>
+      <td>4.39</td>
+      <td>2.99</td>
+      <td>3.39</td>
+    </tr>
+    <tr>
+      <td>Estimated map sharpening B-factor [Å2]</td>
+      <td>−208.6</td>
+      <td>−104.3</td>
+      <td>−178.1</td>
+      <td>−67.1</td>
+      <td>−76.4</td>
+    </tr>
+    <tr>
+      <td>Helical rise [Å]</td>
+      <td>4.85</td>
+      <td>4.84</td>
+      <td>4.78</td>
+      <td>4.80</td>
+      <td>2.40</td>
+    </tr>
+    <tr>
+      <td>Helical twist [°]</td>
+      <td>−0.79</td>
+      <td>−0.77</td>
+      <td>−0.71</td>
+      <td>−0.80</td>
+      <td>179.55</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Model building statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>α-Syn polymorph 2a</th>
+      <th>α-Syn polymorph 2b</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Initial model used [PDB code]</td>
+      <td>6ssx</td>
+      <td>6sst</td>
+    </tr>
+    <tr>
+      <td>Model resolution [Å] (FSC = 0.143)</td>
+      <td>2.98</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td>Model resolution range [Å]</td>
+      <td>2.98</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor [Å2]</td>
+      <td>−67.1</td>
+      <td>−76.4</td>
+    </tr>
+    <tr>
+      <td>Model composition Non-hydrogen atoms Protein residues Ligands</td>
+      <td>4900 730 0</td>
+      <td>4900 730 0</td>
+    </tr>
+    <tr>
+      <td>B-factors [Å2] (non-hydrogen atoms) Protein Ligand</td>
+      <td>48.18 -</td>
+      <td>70.32 -</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations Bond lengths [Å] Bond angles [°]</td>
+      <td>0.008 0.938</td>
+      <td>0.009 0.941</td>
+    </tr>
+    <tr>
+      <td>Validation MolProbity score Clashscore Poor rotamers [%]</td>
+      <td>2.43 6.14 4.26</td>
+      <td>2.11 5.73 2.13</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot Favored [%] Allowed [%] Disallowed [%]</td>
+      <td>87.39 12.61 0.00</td>
+      <td>89.86 10.14 0.00</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 1.](https://cdn.elifesciences.org/articles/48907/elife-48907-video1.mp4.jpg)
+
+**Video 1.:** Cryo-EM reconstructions of α-Syn fibrils at 3.0 Å (polymorph 2a) and 3.4 Å (polymorph 2b) resolution detailing the interaction between two protofilaments (blue and orange) in each fibril, the 4.8 Å spacing between ß-strands and the topology of α-Syn monomers within a single protofilament.
 
 Refined atomic models of the fibril cores indicate that polymorph 2a and polymorph 2b in terms of their local atomic structure share a common protofilament kernel, and which is clearly distinct from the one described previously in polymorphs 1a and 1b. However, the packing between the two protofilaments is different. Therefore, α-Syn fibrils exhibit assembly polymorphism as defined by Riek (2017) and described in Tau between paired helical filaments (PHFs) and straight filaments (SFs) (Fitzpatrick et al., 2017). In each protofilament of the new α-Syn polymorph 2a, successive rungs of ß-strands are related by helical symmetry with a rise of 4.8 Å and a twist of −0.80° with the subunits within the two protofilaments packed in the same plane, facing each other (Figure 1D, Figure 1—figure supplement 2C) in two-fold symmetry. Distinctively, the two protofilaments in α-Syn polymorph 2b are offset by 2.4 Å in height between each other, related by an approximate 21 screw symmetry with a twist of 179.55° (Figure 1E, Figure 1—figure supplement 2D). In α-Syn polymorph 2a, residue K45 of one protofilament forms a salt-bridge with residue E57 of the other protofilament, and vice-versa (Figure 1B, Figure 1—figure supplement 2A). In α-Syn polymorph 2b, the interaction between protofilaments occurs only through salt-bridges between residues K45 and E46 from adjacent protofilaments (Figure 1C, Figure 1—figure supplement 2B).
 
@@ -89,9 +528,21 @@ Our structural cryo-EM analysis of α-Syn fibrils prepared with E46K mutant or p
 
 **Figure 3.:** Fibrils formed by E46K mutant α-Syn protein (A), Ser129 phosphorylated α-Syn protein (B), and N-terminally acetylated α-Syn protein (C) were analyzed by cryo-EM. Image processing did not allow reaching sufficient resolution for model building, but the cross-sections of the obtained 3D reconstructions are compatible with polymorph 2a for all three forms.
 
-## Comparison with previous structures
+### Comparison with previous structures
 
 At first glance, the back-to-back arranged β-arches of polymorphs 2a and 2b appear similar to that of polymorph 1a, wrongly proposing that a mere protofilament rearrangement defines the difference between them. However, closer inspection and comparison with secondary structure elements identified in previous NMR studies on equivalent fibril preparations (Bousset et al., 2013; Gath et al., 2014a) revealed that polymorphs 2a and 2b radically differ from the construction of polymorphs 1. Figure 4 shows the backbones of the polymorphs with different color codes for N-terminus, NAC region, and C-terminus, and Figure 4—figure supplement 1 shows each 10 residues in a different color. When compared to polymorphs 1, the new structures of polymorphs 2a and 2b show an inverted bend of the first β-arch motif, comprising mainly the black and cyan segments in Figure 4—figure supplement 1. This motif is largely conserved between polymorphs 1a and 1b (Li et al., 2018a) (Figure 4, Figure 4—figure supplement 1 and Video 2), where it forms part of the interfilament interface, once via the black segment in polymorph 1a, and once via the cyan/light green segments in polymorph 1b. In polymorphs 2, this β-arch is formed by an inverted amino-acid sequence: when the two motifs are superimposed, the chain runs from cyan to black in one case, in the other from black to cyan. This inversion profoundly changes the amino acid distribution within the arch between polymorphs 1 and 2. Also, the β-arch in polymorph two is extended with a second bend followed by a β-strand region, comprising part of the orange segment largely unobserved in polymorphs 1.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/48907/elife-48907-fig4-v2.jpg)
+
+**Figure 4.:** (A) Diagram representing α-Syn regions with the N-terminus in blue, the NAC region in red and the C-terminus in yellow. (B) Representation of α-Syn fibril polymorphs 1a (PDB ID 6h6b; Guerrero-Ferreira et al., 2018), 1b (PDB ID 6cu8; Li et al., 2018a), 2a (PDB ID 6rt0, this work), and 2b (PDB ID 6rtb, this work), highlighting the striking differences in protofilament folding in α-Syn polymorphs 1a and 1b, compared to α-Syn polymorphs 2a and 2b. The atomic models obtained by cryo-EM of α-Syn polymorph 1a, polymorph 1b (Li et al., 2018a; Li et al., 2018b) and α-Syn polymorphs 2a and 2b (this work). Protein Data Bank (PDB) accession numbers are indicated.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48907/elife-48907-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Structures of polymorphs 1a, b and 2a, b with backbone shown in alternating colors in order to distinguish the location of the segments in the different structures. (A) Diagram representing α-Syn color coding from N-terminus to C-terminus: 1–10, yellow; 11–20, blue; 21–30, pink; 31–40, orange; 41–50 green; 51–60, black; 61–70, cyan; 71–80, light green; 81–90, red; 91–100 magenta; 101–140, gray. (B) Worm representation of α-Syn fibril polymorphs 1a, 1b, 2a and 2b. N-terminal and C-terminal residues number are indicated. Residues E53 and A53 are shown by van-der-Waals representation of the residues in green and blue respectively. Other residues are given in stick representation. Polymorph type, and PDB accession codes are indicated.
+
+![Video 2.](https://cdn.elifesciences.org/articles/48907/elife-48907-video2.mp4.jpg)
+
+**Video 2.:** Atomic models of α-Syn fibrils represented as rounded ribbons with the N-terminus in blue and the NAC region in red.
 
 In polymorphs 1, the light green chain segment form, together with parts of the above-described first β-arch, a second bent β-arch, completed by the red segment. This motif again exists in polymorphs 2, but is located on the outside of the first arch, while in polymorph 1a it is located at the inside. Also, the arch is inverted, and the amino acid distribution again differs, as shown by the different arrangement of the colored segments. Polymorph 1b is devoid of this motif. A hydrophilic cavity identified in polymorph 1a (located in the bend between the black and light green segments) is also present in polymorphs 2, but there between the partly disordered pink/orange segments, and the red segment.
 
@@ -99,7 +550,7 @@ The different arrangements result in a radically changed interface between the p
 
 Furthermore, the presence of an additional ß-strand ß0 on the periphery of the fibril (in the blue segment) is a remarkable difference between polymorphs 1 and polymorphs 2. This stretch of residues, V16-E20, forms a hydrophobic steric-zipper geometry with residues S87-A91, which are part of ß7, at the end of the amyloidogenic NAC region. In polymorphs 2a and 2b, this results in the N-terminus wrapping around the fibril and enclosing the NAC region (cyan, light green and red segments). This buries the serine residue at position 87, a phosphorylation site located within the NAC region, inside this interface. This is in contrast to α-Syn polymorph 1a, where approximately 40 residues on both ends of the α-Syn fibril are flexible and surround the fibril with a fuzzy coat, leaving part of the NAC region (that is, K80 to V95, red and magenta segments), including S87, exposed (Figure 1B and C, Figure 4—figure supplement 1B).
 
-## Origin of distinct α-Syn polymorphs
+### Origin of distinct α-Syn polymorphs
 
 Presently, there are four different polymorphs of α-Syn fibrils known at atomic resolution, including the structures presented here. They can be classified into two groups with each group having a distinct fold (folds 1 and 2) (that is, at the protofilament level). Within each group there are two distinct protofilament packings or assembly polymorphisms (polymorphs a and b; Figure 4).
 
@@ -109,7 +560,7 @@ The fibrils of the familial variant E46K (Figure 3) were also grown under phosph
 
 The fact that the polymorphs found both by Li et al. (Li et al., 2018a) and here by us are distinct, further accentuates this remark as they grew under similar conditions (except for the salt composition and additives, see Table 1). While the packing interfaces between polymorphs 1a and 1b are both hydrophobic, they still substantially differ, as in polymorph 1a residues V66-A78 form the interface, and in polymorph 1b residues H50-E57 form the interface (Figure 4). The difference is smaller in the case of polymorphs 2, where the protofilament interactions are of inter-protofilament salt-bridge character but are packed differently. It is evident that the energy differences between the two polymorphs are therefore very minute, but still the structures are distinct.
 
-## Familial PD mutation sites in the new α-Syn polymorphs
+### Familial PD mutation sites in the new α-Syn polymorphs
 
 A series of familial mutations have been identified in families with a history of PD. Based on Fujioka et al. (2014) and Flagmeier et al. (2016), these mutations may lead to sporadic PD (A30P, E46K, A53E), early-onset (G51D, A53T) or late-onset (H50Q) forms of Parkinson’s disease. The localization of the different sites in the structures is compared in Figure 4—figure supplement 1. Fundamentally different folds between polymorphs 1 and 2 place the familial PD mutation sites into an entirely different environment.
 
@@ -119,17 +570,17 @@ Heterozygous mutations in residues H50, G51, and A53 are associated with familia
 
 The A30P mutation leads to a form of PD with an age of onset between 54 and 76 years (Flagmeier et al., 2016; Fujioka et al., 2014; Krüger et al., 1998). In our structures of polymorphs 2a and 2b, a steric-zipper interface between V16-E20 and I88-A91 causes the α-Syn N-terminus to wrap around the NAC region. Under these conditions, residue A30 might be surface-exposed in a defined manner, as it forms part of the fibrillar core in the sense that it is on both sides linked to nearby structured regions. The disordered nature of the region between K21 and G37 results in weak density in the cryo-EM map, and makes accurate model building in this region difficult. Nevertheless, in α-Syn polymorph 1a, A30 is not part of the fibril core but instead is found in the disordered region corresponding to residues M1 to V37 (Guerrero-Ferreira et al., 2018).
 
-## Post translational modifications (PTMs) and fibrillization in α-Syn polymorphs
+### Post translational modifications (PTMs) and fibrillization in α-Syn polymorphs
 
 Certain post-translational modifications of α-Syn associated with neuropathology inhibit the process of α-Syn fibril formation in vitro, suggesting that they are late events rather than occurring before protein aggregation (Oueslati et al., 2010). Most of these modifications take place at the C-terminal region (Mahul-Mellier et al., 2019), with the exception of acetylation and ubiquitination, which mostly affect residues in the N-terminal region. Ubiquitination alters mostly N-terminal lysines between residues 1 and 36, with K21, K23, K32 and K34 being the major sites for ubiquitin conjugation (Nonaka et al., 2005). The phosphorylated and acetylated forms determined here fold into polymorph 2a (Figure 3). In this polymorph, the amino-acid stretch, which appears disordered in polymorph 1a fibrils, is more distinct, as the interaction of ß-strand ß0 with the fibril core brings the N-terminal region back to the fibril. While the involvement of the N-terminal region has been suggested by NMR for two different polymorphs (Bousset et al., 2013; Gath et al., 2012; Gath et al., 2014a; Gath et al., 2014b), our structure for the first time shows how this N-terminal region that is important in the context of post-translational modifications, can be positioned in the protofilament.
 
-## Implications for fibril preparation protocols
+### Implications for fibril preparation protocols
 
 When pre-formed fibrils (PFFs) are to be studied, the protocol used for their preparation is crucial. Conditions used to prepare such samples vary (Table 1). It has been previously shown that α-Syn polymorphism may arise when different fibrillization methods are used (Lv et al., 2012; Verasdonck et al., 2016). NMR has shown to be able to distinguish fibrils in polymorphic mixtures in samples, when the monomer fold differs substantially (Bousset et al., 2013; Gath et al., 2012; Gath et al., 2014a; Gath et al., 2014b; Verasdonck et al., 2016). Still, NMR could for instance not distinguish between the two assembly polymorphs 2a and 2b. The here reported fibril polymorphism raises questions regarding the structural consistency of recombinant fibrils generated to study α-syn in vitro and calls to investigate the structures resulting from different fibril preparation conditions, or to screen fibril polymorphism in samples prepared by a single preparation protocol, in order to compile a library of α-Syn polymorphs to inform studies using PFFs on cell culture or animal models.
 
 Recently, fibrillar aggregates of Tau protein were purified from human postmortem brain from Alzheimer's, Pick's disease, and chronic traumatic encephalopathy patients, showing variations in Tau fibril conformations between diseases (Falcon et al., 2018; Falcon et al., 2019; Fitzpatrick et al., 2017), and these fibrils all differed from the in-vitro generated, heparin-induced tau fibrils (Zhang et al., 2019). However, to our knowledge, purification of α-Syn fibrils from human brain of Parkinson's disease patients is more challenging. Existing protocols so far have only been able to produce filamentous material that co-fractionated with numerous contaminants (e.g., lipofuscin, amyloid, etc.), including membranes (Iwatsubo et al., 1996). Light microscopy and electron microscopy approaches to analyze the ultrastructural composition of LBs show location maps by fluorescence or structural features at the nanometer scale (Lewis et al., 2019; Moors et al., 2018; Shahmoradian et al., 2019). But methods to study the presence and polymorph of α-Syn fibrils in the diseased human brain and cerebrospinal fluid, and the mechanisms by which α-Syn may be causing Parkinson's disease and contribute to progression of the disease, remain to be developed.
 
-## Conclusion
+### Conclusion
 
 We present here two new structures of α-Syn fibril polymorphs (polymorph 2a (PDB ID 6ssx), and polymorph 2b (PDB ID 6sst)). These differ in their protofilament interfaces but are formed by the same protofibril subunit structure, which is distinct from previously described α-Syn folds.
 
@@ -139,7 +590,115 @@ Determination of the structural space of fibril polymorphs, including those of �
 
 ## Materials and methods
 
-## α-Syn expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Stratagene</td>
+      <td>Agilent Technology #200131</td>
+      <td>Expression performed in LB medium</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (pET-3a)</td>
+      <td>pET3a</td>
+      <td>Novagen</td>
+      <td>https://www.addgene.org/vector-database/2637/</td>
+      <td>Encoding full length human alpha synuclein asyn (UniProtKB - P37840) with a silent mutagenesis of codon 136 (TAC to TAT)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (pRT21)</td>
+      <td>pRT21</td>
+      <td>(Masuda et al., 2006)</td>
+      <td></td>
+      <td>Full length human alpha synuclein asyn (UniProtKB - P37840) with a silent mutagenesis of codon 136 (TAC to TAT)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (pNatB)</td>
+      <td>pNatB</td>
+      <td>(Johnson et al., 2010)</td>
+      <td>http://www.addgene.org/53613/</td>
+      <td>Expression of the fission yeast NatB complex - chloramphenicol marker</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DEAE sepharose fast flow</td>
+      <td>GE Healthcare, #17-0709-01</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Copper/carbon grids</td>
+      <td>https://www.quantifoil.com/</td>
+      <td>R 2/2 grids</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>(Pettersen et al., 2004)</td>
+      <td>https://www.cgl.ucsf.edu/chimera</td>
+      <td>RRID:SCR_004097</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>(Mastronarde, 2005)</td>
+      <td>https://bio3d.colorado.edu/SerialEM/</td>
+      <td>RRID:SCR_017293</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FOCUS</td>
+      <td>(Biyani et al., 2017)</td>
+      <td>http://focus-em.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>(Zheng et al., 2017)</td>
+      <td>https://emcore.ucsf.edu/ucsf-motioncor2</td>
+      <td>RRID:SCR_016499</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 2, 3</td>
+      <td>(Scheres, 2012; Zivanov et al., 2018)</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/relion</td>
+      <td>RRID:SCR_016274</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>(Emsley and Cowtan, 2004)</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+      <td>RRID:SCR_014222</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Molprobity</td>
+      <td>(Williams et al., 2018)</td>
+      <td>http://molprobity.biochem.duke.edu</td>
+      <td>RRID:SCR_014226</td>
+    </tr>
+  </tbody>
+</table>
+
+### α-Syn expression and purification
 
 The fibrillary polymorph of WT full length unmodified α-Syn polymorph 2a and 2b were assembled from monomeric α-Syn expressed and purified as described in Bousset et al. (2013) and Gath et al. (2014a). Briefly recombinant, wild-type α-Syn was expressed in E. coli strain BL21(DE3), transformed with the expression vector pET3a (Novagen) encoding wild-type, full-length α-Syn. Expression was induced by 0.5 mM IPTG for 2 hr, when the bacteria grown in LB medium at 37°C had reached an optical density of 1.0 at 660 nm. Soluble, monomeric α-Syn was purified from the bacterial lysate as previously described (Ghee et al., 2005). α-Syn concentration was determined spectrophotometrically using an extinction coefficient of 5960 M−1*cm−1 at 280 nm. Pure α-Syn (0.7 mM) in 50 mM Tris-HCl, pH 7.5, 150 mM KCl was filtered through sterile 0.22 μm filters and stored at −80°C.
 
@@ -147,32 +706,32 @@ For preparation of fibrils carrying post-translationally modifications, full-len
 
 Disease-linked E46K mutant α-Syn was expressed and purified using a periplasmic purification protocol as described earlier (Campioni et al., 2014; Huang et al., 2005). Briefly, plasmid pRK172 was co-expressed with N-terminal acetyltransferase B (NatB) complex as described earlier (Johnson et al., 2010). Colonies containing both plasmids (NatB and pRK172) were selected using two different antibiotics and grown in 1 liter of lysogeny broth at 37°C. After reaching an optical density of 1.0 at 600 nm, expression was induced with 1 mM IPTG for 5 hr. Cells were harvested and α-Syn collected from the periplasmic space of the cells, using osmotic shock methods described earlier (Huang et al., 2005). Protein was further purified using ion exchange chromatography and hydrophobic interaction chromatography (Campioni et al., 2014).
 
-## Fibrillization
+### Fibrillization
 
 Full-length, wildtype unmodified α-Syn was incubated at 37°C for one week under continuous shaking in an Eppendorf Thermomixer set at 600 r.p.m., to assemble into fibrillar form. 700 μM α-Syn was assembled in 50 mM Tris-HCl, pH 7.5, 150 mM KCl buffer (Table 1).
 
 To prepare fibrils of full-length, phosphorylated, N-terminally acetylated, N-terminally acetylated and the E46K mutant α-Syn, recombinant protein (dialyzed and lyophilized) was diluted to 5 mg/mL in 200 µL of Dulbecco’s phosphate buffered saline (DPBS) buffer (Gibco; 2.66 mM KCL, 1.47 mM KH2PO4, 137.93 mM NaCl, 8.06 mM Na2HPO4-7H2O pH 7.0–7.3). After 5 days of incubation at 37°C with constant agitation (1,000 rpm) in an orbital mixer (Eppendorf), reactions were sonicated for 5 min in a Branson 2510 water bath, aliquoted, and stored at −80°C. All fibrils were created in the presence of an air-water interface. The presence of amyloid fibrils was confirmed by thioflavin T fluorimetry and high molecular weight assemblies were visualized by gel electrophoresis.
 
-## Electron microscopy
+### Electron microscopy
 
 Cryo-EM grids were prepared using a Leica EM GP automatic plunge freezer (Leica Microsystems) with 80% humidity at 20°C. 3 µL aliquots were applied onto 60 s glow-discharged, 300 mesh, copper Quantifoil grids (R2/1). After blotting, grids were plunge frozen in liquid ethane cooled by liquid nitrogen.
 
 Micrographs were acquired on a Titan Krios (ThermoFisher Scientific) transmission electron microscope, operated at 300 kV and equipped with a Gatan Quantum-LS imaging energy filter (GIF, 20 eV zero loss energy window; Gatan Inc). Images were recorded on a K2 Summit electron counting direct detection camera (Gatan Inc) in dose fractionation mode (50 frames) using the Serial EM software (Mastronarde, 2005) at pixel sizes of 0.831 Å or 0.629 Å, and a total dose of ~69 electrons per square Angstrom (e-/Å2) for each micrograph. Micrographs were processed and analyzed during data collection with FOCUS (Biyani et al., 2017), applying drift-correction and dose-weighting using MotionCor2 (Zheng et al., 2017). Specific data collection parameters for the various datasets are detailed in Table 2.
 
-## Image processing
+### Image processing
 
 Computer image processing and helical reconstruction was carried out with RELION 2.1 (Scheres, 2012) and RELION 3.0 ß (Zivanov et al., 2018), using the methods described in Zheng et al. (2017). Filament selection per micrograph was done manually in RELION 2.1. Segments were extracted with a box size of 280 pixels and an inter-box distance of 28 pixels. A summary of the number of micrographs and segments that went into the various steps of processing are presented in Table 2. After 2D classification with a regularization value of T = 2, 2D class averages with a visible separation of individual rungs were selected for further processing. For class averages formed by segments from polymorph 2, the calculated power spectra showed a meridional peak intensity (Bessel order n = 0) at the layer line of 1/ (4.8 Å). For polymorph 2b, power spectra showed peak intensities on both sides of the meridian (Bessel order n = 1). This is the result of an approximate 21 screw symmetry between α-Syn subunits on the two protofilaments (Figure 1—figure supplement 1). The best 2D classes were selected for a round of 3D classification with T = 8 and optimization of the helical twist and rise using a helical_z_percentage parameter (He and Scheres, 2017) of 10%. A cylinder generated via the helix toolbox tool was used as initial model. This resulted in three classes where ß-sheets perpendicular to the fibril axis were clearly separated. Segments contributing to classes 1 and 2, which corresponded to α-Syn polymorphs 2a and 2b, respectively, were then processed separately. The 3D maps from their respective classes were used as initial models after applying a low-pass filter to 30 Å. Then, a 3D classification with a single class (K = 1) and T = 20, which has allowed the successful reconstruction of amyloid filaments, was carried out (Falcon et al., 2018; Fitzpatrick et al., 2017; Guerrero-Ferreira et al., 2018).
 
 The 3D auto-refine procedure in RELION 3.0, with optimization of helical twist and rise, resulted in structures with overall resolutions of 3.34 Å (α-Syn polymorph 2a) and 3.75 Å (α-Syn polymorph 2b). Post-processing with soft-edge masks and estimated map sharpening B-factors of −67.1 and −76.4 Å2, respectively, gave maps with resolutions of 3.0 Å (α-Syn polymorph 2a) and 3.4 Å (α-Syn polymorph 2b) (by the FSC 0.143 criterion). Local resolution values and local-resolution-filtered maps were obtained in RELION 3.0. (Table 2, Figure 1—figure supplement 1).
 
-## Model building and refinement
+### Model building and refinement
 
 A model for the α-Syn polymorph 2a fibril was built into the RELION local resolution-filtered map with COOT (Emsley and Cowtan, 2004), by conserving as many secondary structure elements as possible from our previous α-Syn polymorph one model (PDB ID 6h6b) (Guerrero-Ferreira et al., 2018), together with the use of secondary structure information derived from ssNMRs, which served as an initial model. The structure was then refined against the same map with PHENIX real space refine (Afonine et al., 2013) using rotamer and Ramachandran restraints, and non-crystallographic symmetry and beta strand geometry constraints. The building and refinement of the α-Syn polymorph 2b model was more challenging due to the lower resolution of the map. An initial structure was built into the α-Syn polymorph 2b local resolution-filtered map by fitting of the α-Syn polymorph 2a model using COOT. To successfully refine the structure, it was necessary to generate secondary structure restraints in Phenix, based on CA backbone and intermolecular beta sheets to refine the structure. All structures were validated using Molprobity (Williams et al., 2018). Figures were prepared using UCSF Chimera (Pettersen et al., 2004).
 
-## NMR spectroscopy
+### NMR spectroscopy
 
 NMR spectra were recorded at 20.0 T static magnetic field using 3.2 mm rotors and a triple-resonance probe. The reproducibility of the sample preparation was previously verified with 20 ms DARR fingerprint spectra (Gath et al., 2014a). The secondary chemical-shift analysis was based on the sequential assignments (BMRB accession code 18860) and was presented before (Gath et al., 2014a; Gath et al., 2014b). The PAR spectrum (De Paëpe et al., 2008; Lewandowski et al., 2007) was recorded using a mixing time of 8 ms. The assignments for the S87/A17-19 cross peaks are unambiguous within a range of 0.15 ppm, corresponding to about ½ of the 13C line width. Assignments of restraints given for reference on the full aliphatic region of the PAR spectrum in the Figure 1—figure supplement 3 are mostly ambiguous, which prevented structure determination by NMR. Ambiguities were lifted by comparison to the here determined cryo-EM structure.
 
-## Data availability
+### Data availability
 
 Raw cryo-EM micrographs are available in EMPIAR, entry numbers EMPIAR-10323. The 3D maps are available in the EMDB, entry numbers EMD-10307 (α-Syn polymorph 2a) and EMD-10305 (α-Syn-polymorph 2b). Atomic coordinates are available at the PDB with entry numbers PDB 6SSX (α-Syn polymorph 2a) and PDB 6SST (α-Syn polymorph 2b).

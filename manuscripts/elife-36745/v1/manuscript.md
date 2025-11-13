@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.36745.001 Cortical dynein generates pulling forces via microtubule (MT) end capture-shrinkage and lateral MT sliding mechanisms. In Saccharomyces cerevisiae , the dynein attachment molecule Num1 interacts with endoplasmic reticulum (ER) and mitochondria to facilitate spindle positioning across the mother-bud neck, but direct evidence for how these cortical contacts regulate dynein-dependent pulling forces is lacking. We show that loss of Scs2/Scs22, ER tethering proteins, resulted in defective Num1 distribution and loss of dynein-dependent MT sliding, the hallmark of dynein function. Cells lacking Scs2/Scs22 performed spindle positioning via MT end capture-shrinkage mechanism, requiring dynein anchorage to an ER- and mitochondria-independent population of Num1, dynein motor activity, and CAP-Gly domain of dynactin Nip100/p150 Glued subunit. Additionally, a CAAX-targeted Num1 rescued loss of lateral patches and MT sliding in the absence of Scs2/Scs22. These results reveal distinct populations of Num1 and underline the importance of their spatial distribution as a critical factor for regulating dynein pulling force.
+Cortical dynein generates pulling forces via microtubule (MT) end capture-shrinkage and lateral MT sliding mechanisms. In Saccharomyces cerevisiae, the dynein attachment molecule Num1 interacts with endoplasmic reticulum (ER) and mitochondria to facilitate spindle positioning across the mother-bud neck, but direct evidence for how these cortical contacts regulate dynein-dependent pulling forces is lacking. We show that loss of Scs2/Scs22, ER tethering proteins, resulted in defective Num1 distribution and loss of dynein-dependent MT sliding, the hallmark of dynein function. Cells lacking Scs2/Scs22 performed spindle positioning via MT end capture-shrinkage mechanism, requiring dynein anchorage to an ER- and mitochondria-independent population of Num1, dynein motor activity, and CAP-Gly domain of dynactin Nip100/p150Glued subunit. Additionally, a CAAX-targeted Num1 rescued loss of lateral patches and MT sliding in the absence of Scs2/Scs22. These results reveal distinct populations of Num1 and underline the importance of their spatial distribution as a critical factor for regulating dynein pulling force.
 
 ## Introduction
 
@@ -31,9 +31,37 @@ In this study, we set out to determine how changes in cortical Num1 localization
 
 ## Results
 
-## Loss of Scs2/22 disrupts Num1 localization and reveals a distinct pool of Num1 at the polarized cell ends
+### Loss of Scs2/22 disrupts Num1 localization and reveals a distinct pool of Num1 at the polarized cell ends
 
 In WT cells, Num1 forms dim and bright patches throughout the cell cortex (Figure 1A; Video 1, top) (Heil-Chapdelaine et al., 2000; Tang et al., 2009). We found that cells lacking both cortical ER tethers Scs2 and Scs22 exhibited a dramatic loss of dim Num1 patches (Figure 1A; Video 1, bottom) and a significant reduction in the number of bright Num1 patches (Figure 1B). More than 70.0% of scs2/22∆ budded cells displayed ≤2 bright patches compared to only 6.0% in WT budded cells. The remaining Num1 patches in scs2/22∆ were observed as stationary foci at the polarized ends of the cell (i.e. the distal bud tip and the mother cell apex; Figure 1A and C) and as motile foci in the cytoplasm (Figure 1—figure supplement 1A). Loss of Scs2 alone had a similar effect, whereas loss of Scs22 alone had no effect (Figure 1—figure supplement 1B–D). However, loss of both proteins was worse than the loss of Scs2 alone (Figure 1—figure supplement 1C; 2.03 ± 1.1 versus 2.8 ± 1.3 patches per cell for scs2/22∆ and scs2∆, respectively), suggesting that Scs22 may have a redundant role when Scs2 is absent. Thus, we carried out all subsequent analysis in the scs2/22∆ double mutant background.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig1-v1.jpg)
+
+**Figure 1.:** (A) 2D projections of 3D confocal stack images of Num1-GFP in WT and scs2/22∆ cells. (B) Fraction of cells with indicated number of Num1-GFP patches. $x-$, average number of patches per cell (n ≥ 50 cells per strain). (C) Distribution of Num1-GFP patches along the cortex. The position of each patch was projected on the mother-bud axis and normalized to the bud neck. Positive distances indicate that the patch was in the mother cell, whereas negative distances indicate that the patch was in the daughter cell (n = 46 and 16 cells for scs2/22∆ and WT, respectively). (D) Western blots showing Num1-13myc levels in whole cell lysates of indicated strains. (E) Sucrose gradient sedimentation analysis of Num1-13myc in WT and scs2/22∆ strains. Whole cell lysates from each strain were loaded onto 20-60% sucrose gradients, sedimented, and analyzed by Western blot using anti-c-Myc (for Num1-13myc) and anti-Sac1 (for ER) antibodies. Top, representative sedimentation profiles from two independent experiments. Middle, Num1-13myc band intensity plotted against fraction number. Bottom, Western blot showing Num1-13myc in fractions 17 through 21. (F) Deconvolved wide-field images of Num1-GFP and Scs2-mRuby2 in WT cells. Each image is a 2D projection of 11 optical sections spaced 0.5 µm apart. Green and red arrows indicate Num1-GFP patches that do and do not colocalize with Scs2-mRuby2 foci, respectively. B, bud; M, mother. Bottom, histogram of Pearson’s correlation coefficients for the colocalization of Num1-GFP with Scs2-mRuby2 (n = 200 cortical Num1 patches found in either bud or mother cell).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Percentage of cells exhibiting motile Num1 patches during a ≥3-min movie in WT and scs2/22∆ backgrounds. Error bars are SEP (n ≥ 171 for each strain). ***p<0.0001 determined by unpaired t test. (B) Confocal images of live cells expressing Num1-GFP in single mutants of scs2∆ and scs22∆. (C) Average number of cortical patches per cell in each indicated strain (n ≥ 40 cells per strain). Error bars are SEM. ***p<0.0001 by unpaired t test. (D) Histogram of relative frequency of cortical Num1 patches in single mutants of scs2∆ (n = 68) and scs22∆ (n = 40). $ x−$, average number of patches per cell. (E) Total whole-cell fluorescence intensity of WT and scs2/22∆ double mutant expressing Num1-GFP (n ≥ 79 cells for each strain). Error bars depict SEM. n.s. not statistically significant by unpaired t test. (F) Fluorescence intensity measurement of Num1-GFP patches in the mother and bud cortex (n ≥ 81 foci for each). Error bars indicate SEM. **p<0.005; ***p < 0.0001 by unpaired t test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Photobleached foci are indicated by a circle at t = −30 s (n = 6 for WT, 10 for scs2/22∆). Non-photobleached foci (as control for fluorescence decay) are indicated by a box (n = 4 for WT, nine for scs2/22∆). Right, fluorescence intensity plots for bleached and non-bleached Num1-GFP foci. No recovery after photobleaching was observed for Num1-GFP foci in WT or scs2/22∆ cells over the course of 8 min. Error bars represent SEM.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Equatorial confocal sections of WT and scs2/22∆ cells expressing the ER-marker GFP-HDEL. Dashed lines indicate cell periphery without cortical ER. Right, plot showing fraction of cell perimeter with cortical ER labeled with GFP-HDEL in WT and scs2/22∆ cells. (B) Quantification as in (A) for WT and num1∆ cells. Error bars indicate SEM for (A) and (B). ***p<0.0001 by unpaired t test. n.s., not statistically significant.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Num1 is absent from the bud in small budded stage and accumulates at the bud tip in medium to large budded stages.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Deconvolved movie frames of mmr1∆ and mmr1∆ gem1∆ cells expressing Num1-GFP and Cox4-mCherry in the scs2/22∆ background. Cell cortex is outlined with red dotted line. Time is in minutes.
+
+![Video 1.](https://cdn.elifesciences.org/articles/36745/elife-36745-video1.mp4.jpg)
+
+**Video 1.:** Full 3D reconstructions of confocal stacks showing Num1-GFP localization in single WT (top row) and scs2/22∆ (bottom row) cells. Each stack consists of 18 optical sections spaced 0.3 µm apart encompassing the entire thickness of the cell.
 
 We asked whether Num1 stability is affected in scs2/22∆ cells. Immunoblot analysis revealed that Num1-13myc levels in scs2/22∆ were similar to WT cells (Figure 1D). Additionally, whole-cell intensity measurements showed that Num1-GFP levels were quantitatively the same as WT (Figure 1—figure supplement 1E). However, the mean intensity of individual Num1-GFP patches was approximately 2–3 folds higher in scs2/22∆ compared to WT (Figure 1—figure supplement 1F). Thus, loss of Scs2/22 affected Num1 distribution along the cell cortex but not Num1 stability.
 
@@ -41,27 +69,129 @@ We next examined whether Num1 mobility is affected in scs2/22∆ cells. FRAP ana
 
 To assess whether the Num1 population distributed along the cell cortex was associated with ER, we analyzed sedimentation profiles of Num1-13myc in sucrose density gradients and colocalization of Num1-GFP with Scs2-mRuby2. Sucrose gradient sedimentation analysis showed that a pool of Num1-13myc co-fractionated with ER in an Scs2/22-dependent manner (Figure 1E). Colocalization analysis revealed that most Num1-GFP patches (155 out of 200; 77.5%) exhibited intensities that were correlated with the signal intensities of Scs2-mRuby2 (Figure 1F; 0.5 ≤ Pearson’s correlation coefficient ≤ 1). However, a minority of Num1-GFP patches (45 out of 200; 22.5%) did not co-localize with Scs2-mRuby2 (Pearson’s correlation coefficient < 0.5). These results, when combined with our analysis of Num1 localization in scs2/22∆ cells, implicate the existence of distinct populations of Num1 patches at the cell cortex.
 
-## A small number of Num1 patches is sufficient for dynein pathway function
+### A small number of Num1 patches is sufficient for dynein pathway function
 
 Next, we asked whether the observed change in Num1 localization in scs2/22∆ affects dynein targeting and function, as would be expected if Num1 functions as a cortical anchor for dynein. In WT cells, Dyn1-3GFP localizes to the SPB, astral MT plus ends, and to cortical foci where it has been offloaded from the MT plus ends (Lee et al., 2003; Sheeman et al., 2003). In scs2/22∆ cells, we observed that Dyn1-3GFP localized similarly to the SPB and astral MT plus ends (Figure 2A) but the levels of Dyn1-3GFP at the MT plus ends were significantly enhanced compared to WT cells (Figure 2B), consistent with a reduced number of available offloading sites. In accord with the change in Num1 localization, cortical Dyn1-3GFP foci were found at the bud tip and mother apex of scs2/22∆ cells (Figure 2—figure supplement 1A). However, the mean fluorescence intensity of individual cortical Dyn1-3GFP foci was enhanced in scs2/22∆ relative to WT (2.1 and 3.1-fold higher for cortical foci found in the bud and mother, respectively; Figure 2C). A similar enhancement was observed for Jnm1-3mCherry (dynactin p50dynamitin subunit) at the MT plus ends and cortex (Figure 2D and Figure 2—figure supplement 1B). The difference in dynein targeting between scs2/22∆ and WT could not be attributed to changes in the expression level or the stability of dynein or dynactin (which is required for dynein-offloading), as determined by immunoblotting (Figure 2E). Furthermore, in scs2/22∆ cells, as reported for WT cells (Markus et al., 2011; Moore et al., 2008), plus end targeting of Dyn1-3GFP depended on Pac1/LIS1 (Figure 2—figure supplement 1C), and cortical targeting of Dyn1-3GFP depended on dynactin (Figure 2—figure supplement 1C), suggesting that regulation of dynein targeting remains intact even though dynein anchoring is limited to the polar ends of the cell.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig2-v1.jpg)
+
+**Figure 2.:** (A) Wide-field images of live cells expressing Dyn1-3GFP and mRuby2-Tub1 in WT and scs2/22∆ cells. (B and C) Dyn1-3GFP fluorescence intensity at the SPB (n ≥ 32), plus end (n ≥ 60), and cortex (n ≥ 110). Error bars depict the standard error of the mean (SEM). n.s., not statistically significant; **p<0.005; ***p<0.0001 by unpaired t test. (D) Jnm1-3mCherry fluorescence intensity at the plus end (n ≥ 50) and cortex (n ≥ 29). Error bars indicate SEM. ***p<0.0001 by unpaired t test. (E) Western blots of Dyn1-TAP and Jnm1-13myc levels in total cell lysates of indicated strains. (F) Percentage of misaligned anaphase spindle (n > 110 for each strain). Error bars indicate the standard error of proportion (SEP). ***p<0.0001 by one-way ANOVA test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Distribution of cortical Dyn1-3GFP foci in scs2/22∆ cells. The position of each patch was normalized as in Figure 1C (59 foci were analyzed). (B) Wide-field images of Jnm1-3mCherry and CFP-Tub1 in WT and scs2/22∆ cells. (C) Wide-field images showing loss of cortical Dyn1-3GFP in scs2/22∆ cells upon deletion of Arp1, Nip100/p150Glued, and Pac1/LIS1. (D–F) Num1LL-GFP localization and effects of num1LL on dynein localization and function in scs2/22∆. (D) num1LL and num1LL scs2/22∆ cells expressing Dyn1-3GFP and mRuby2-Tub1. (E) Wide-field images showing cortical localization of Num1LL-GFP in WT and scs2/22∆ cells. (F) Cold nuclear segregation assay for indicated strains (n ≥ 221 cells per strain). Cultures were grown at 16°C for 15 hr, fixed and stained with DAPI and then imaged. Error bars indicate SEP.
 
 We first assessed dynein pathway function using a single-time point spindle orientation assay. Strikingly, scs2/22∆ strain had only 0.7% of cells with a misoriented anaphase spindle phenotype, quantitatively similar to that observed for WT (0.9%; Figure 2F), indicating that dynein pathway is functional. In contrast, scs2/22∆ strain expressing Num1L167E+L170E (hereafter referred to as Num1LL), which harbors two point mutations that abolish the Num1-dynein interaction but does not interfere with the Num1 cluster formation (Figure 2—figure supplement 1D and E) (Tang et al., 2012), exhibited a high level of misoriented anaphase spindle phenotype (42.6%; Figure 2F) similar to that observed for a dyn1∆ or num1∆ strain (40.2 and 48.2%, respectively; Figure 2F), indicating that Num1-dynein interaction is required for proper spindle orientation in the scs2/22∆ background. The same results were obtained when nuclear segregation was assayed by DAPI staining (Figure 2—figure supplement 1F). These data demonstrate that the remaining Num1 patches in scs2/22∆, albeit few in number, appear to be sufficient for dynein pathway function.
 
 We further assessed dynein function by assaying for synthetic growth defects with kar9∆ and cin8∆. Budding yeast lacking Kar9 or Cin8 requires the dynein pathway for normal growth (Geiser et al., 1997; Gerson-Gurwitz et al., 2009; Miller and Rose, 1998). Tetrad dissection analysis revealed that scs2/22∆ kar9∆ and scs2/22∆ cin8∆ triple mutant progeny formed viable colonies, exhibiting no growth defects when compared with scs2/22∆ double mutant (Table 1), consistent with the dynein pathway being functional in scs2/22∆. Additionally, no synthetic effect on growth was observed for triple mutant of scs2/22∆ with dyn1∆ (Table 1). These genetic data further support the notion that the residual Num1 patches in scs2/22∆ cells are sufficient for dynein pathway function.
 
-## Dynein mediates spindle movements via capture-shrinkage of astral MTs at the bud tip
+**Table 1.**
+ Viability of scs2/22∆ mutant in combination with kar9∆, dyn1∆, or cin8∆ mutant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Mutant combination</th>
+      <th rowspan="2">Number of tetrads analyzed</th>
+      <th rowspan="2">Number of predicted double or triple mutants</th>
+      <th colspan="2">Viability of mutants</th>
+    </tr>
+    <tr>
+      <th>Viable</th>
+      <th>Microcolony</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>scs2/22∆</td>
+      <td>22</td>
+      <td>16</td>
+      <td>16</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>scs2/22∆ kar9∆</td>
+      <td>13</td>
+      <td>5</td>
+      <td>5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>scs2/22∆ dyn1∆</td>
+      <td>22</td>
+      <td>9</td>
+      <td>9</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>scs2/22∆ cin8∆</td>
+      <td>29</td>
+      <td>17</td>
+      <td>17</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>dyn1∆ cin8∆</td>
+      <td>10</td>
+      <td>7</td>
+      <td>0</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+
+_For scs2/22∆ and scs2/22∆ dyn1∆ combinations, YWL4865 was crossed with YWL521. For scs2/22∆ kar9∆ combination, YWL4865 was crossed with YWL4949. For scs2/22∆ cin8∆ and dyn1∆ cin8∆ combinations, YWL3955 was crossed with YWL4866 and YWL504, respectively. The resulting diploid strains were sporulated and tetrads were dissected._
+
+### Dynein mediates spindle movements via capture-shrinkage of astral MTs at the bud tip
 
 Given the dramatic change in Num1 localization, we wondered how dynein would mediate spindle positioning in scs2/22∆ cells. We assessed dynein-dependent spindle movements by assaying for anaphase spindle re-alignment from a misoriented position, hereafter referred to as spindle correction (Yeh et al., 2000). Kar9 was deleted to increase the frequency of spindle misalignment and to enhance dynein-dependent spindle movements (Moore et al., 2009; Yeh et al., 2000). The mechanism of spindle correction was scored based on time-lapse images of astral MT interaction with the bud cortex (as detailed in Materials and methods). In kar9∆ cells, spindle correction was predominantly mediated by MT sliding along the bud cortex (86.7%, n = 30 events; Figure 3A and B; Video 2, top), as previously reported (Adames and Cooper, 2000; Yeh et al., 2000). In contrast, in scs2/22∆ kar9∆ cells, we observed that spindle correction was primarily mediated by capture-shrinkage of the astral MT plus end at the bud tip (77.8%, n = 63 events; Figure 3A and B). Two-color movies of mRuby2-Tub1 and Num1-GFP revealed that capture-shrinkage of the astral MT occurred upon ‘end-on’ interaction of the plus end with a Num1 patch at the bud tip (Video 2, bottom). Notably, the plus end stayed in contact with the Num1 patch while shrinking, pulling the minus-end-attached spindle into the bud, causing spindle correction. In separate experiments, we acquired movies with a larger number of optical sections confirming that the astral MT did not slide over the surface of the bud tip (Video 3; displayed as XY and XZ frames). The same capture-shrinkage phenomenon was also observed when hydroxyurea (HU)-arrested preanaphase scs2/22∆ kar9∆ cells were examined. These data indicate that the change in the distribution of cortical Num1 in scs2/22∆ cells has apparently altered the mechanism of dynein-mediated spindle positioning.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative movie frames of mRuby2-Tub1 showing dynein-dependent spindle correction via sliding or capture-shrinkage mechanism in kar9∆ and scs2/22∆ kar9∆ cells during a 10-min movie. No spindle correction was observed in num1LL scs2/22∆. Dashed line marks the bud neck position. (B) Quantification of spindle correction mechanisms for kar9∆ (n = 30), scs2/22∆ kar9∆ (n = 63), dyn1∆ scs2/22∆ (n = 138), num1LL scs2/22∆ (n = 91), and dyn1K2424A scs2/22∆ (n = 99). Error bars depict SEP. (C) Kymograph analysis of Dyn1-3GFP and mRuby2-Tub1 in scs2/22∆ kar9∆ showing persistence of dynein at the bud tip during a MT shrinkage event. Green arrow, position of bud tip; red arrow, initial contact of Dyn1-3GFP with the bud tip; yellow arrow, start of spindle movement. (D) Percentage of spindle correction by end-on capture-shrinkage mechanism in kar9∆, scs2/22∆ kar9∆, kar3∆ scs2/22∆ kar9∆, and kip3∆ scs2/22∆ kar9∆ during a 10-min movie. Error bars indicate SEP (n ≥ 65). **p<0.005 by unpaired t test. (E) Histogram of the duration of plus end attachment at the bud tip (∆t) for each indicated strain. $x-$, average duration of contact (n ≥ 25 per strain).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Movie frames of mRuby2-Tub1 showing defective spindle translocation into the bud neck in the absence of dynein or dynein motor activity. Horizontal dashed line marks the position of the bud neck. Arrowheads indicate MT buckling events. (B) Anaphase astral MT length for each indicated strain (n ≥ 38 MTs per strain). Plot shows mean ± SEM. ***p<0.0001 by one-way ANOVA test. (C) Dyn1K2424A-3YFP localization in WT and scs2/22∆ backgrounds. Arrowheads indicate dynein foci at the cortex, SPB, and MT plus ends.
+
+![Video 2.](https://cdn.elifesciences.org/articles/36745/elife-36745-video2.mp4.jpg)
+
+**Video 2.:** Num1-GFP (left) and mRuby2-Tub1 (middle) showing lateral MT sliding (kar9∆, top) and end-on MT capture-shrinkage at a Num1 site (scs2/22∆ kar9∆, bottom) as the spindle translocates into the bud neck during spindle correction. Merge image shows MT in red and Num1 in green. Each frame is a maximum intensity projection of 3 optical sections spaced 0.5 µm apart. Movie was captured at 10 s intervals.
+
+![Video 3.](https://cdn.elifesciences.org/articles/36745/elife-36745-video3.mp4.jpg)
+
+**Video 3.:** Full 3D time-lapse images displayed in XY and XZ views showing end-on interaction of the astral MT plus end in scs2/22∆ kar9∆ cells. Each frame is a maximum intensity projection of 7 µm (cell 1) or 9 µm (cell 2) optical sections spaced 0.5 µm apart. Movie was captured at 5 or 7 s intervals.
+
 Kymograph analysis of MT capture-shrinkage events revealed that Dyn1-3GFP persisted at the shrinking MT plus end contacting the bud tip (15 out of 16 events; Figure 3C; Video 4, top), supporting the idea that dynein is involved in generating the cortex-coupled pulling force during MT depolymerization at the Num1 site. Consistent with this notion, loss of Dyn1 abolished spindle correction in scs2/22∆ cells (0 out of 138 spindles were corrected; Figure 3B and Figure 3—figure supplement 1A).
+
+![Video 4.](https://cdn.elifesciences.org/articles/36745/elife-36745-video4.mp4.jpg)
+
+**Video 4.:** Top, Dyn1-3GFP persists at the bud tip cortex during shrinkage of a captured astral MT plus end in a scs2/22∆ kar9∆ cell. Bottom, Dyn1-3GFP accumulates at the MT plus end but fails to attach to the bud tip to mediate MT capture-shrinkage in a num1LL scs2/22∆ cell. Each frame is a maximum intensity projection of 3 optical sections spaced 0.5 µm apart. Movie was captured at 10 s intervals.
 
 We considered the possibility that other MT plus end depolymerases might also be involved in force generation at the Num1 site. However, we found that the frequency of observing MT capture-shrinkage was unaffected in scs2/22∆ kar9∆ cells lacking Kip3 (kinesin-8) or Kar3 (kinesin-14) (Figure 3D; Video 5, top), two kinesin motors with known plus end depolymerase activity (Gupta et al., 2006; Sproul et al., 2005), indicating that these motors are not responsible for the capture-shrinkage phenomenon seen at the Num1 site. On the other hand, we found that disrupting dynein-anchoring using the num1LL allele abolished MT capture-shrinkage and prevented spindle correction (0 out of 91 spindles were corrected; Figure 3A and B; Video 4, bottom). In num1LL scs2/22∆ cells, no capture-shrinkage events occurred despite the fact that astral MT plus ends with accumulated Dyn1-3GFP were seen sweeping along the bud tip (Video 4, bottom), indicating that cortical anchoring is required for dynein to generate the cortex-coupled pulling force at the Num1 site. These results contradict a previous study postulating that dynein does not need to attach to the cortex to destabilize MT ends (Estrem et al., 2017). Moreover, we noted that the mean astral MT length in num1LL scs2/22∆ was not only longer than in scs2/22∆ kar9∆, but also quantitatively the same as in dyn1∆ scs2/22∆ (Figure 3—figure supplement 1B), which further supports the model in which dynein acts as a MT destabilizer at the cortical Num1 site.
 
+![Video 5.](https://cdn.elifesciences.org/articles/36745/elife-36745-video5.mp4.jpg)
+
+**Video 5.:** Top, movement and realignment of anaphase spindle into the bud neck upon end-on interaction of the astral MT plus end with the bud tip in a kar3∆ scs2/22∆ kar9∆ or kip3∆ scs2/22∆ kar9∆ cell. Bottom, captured astral MT plus ends fail to undergo shrinkage at the bud tip to mediate spindle realignment in dyn1K2424A scs2/22∆ cells. Each frame is a maximum intensity projection of 3 optical sections spaced 0.5 µm apart. Movie was captured at 10 s intervals.
+
 To investigate whether dynein’s motor activity is required for MT capture-shrinkage at the Num1 site, we made use of the established dyn1K2424A mutant, in which ATP binding was inhibited by a point mutation in the Walker A motif of the AAA3 domain (Reck-Peterson and Vale, 2004). We found that, while dynein targeting to the plus ends and cortex was not significantly affected (Figure 3—figure supplement 1C), spindle correction was abolished by the dyn1K2424A mutation in scs2/22∆ cells (0 out of 99 spindles were corrected; Figure 3B and Figure 3—figure supplement 1A), indicating that motor activity is required for the production of cortex-coupled pulling forces. Notably, in dyn1K2424A scs2/22∆ cells, astral MT plus ends that grew into the bud appeared to remain stably attached upon reaching the bud tip (Video 5, bottom). To quantitate MT attachment at the bud tip, we tracked the position of the plus ends over time (see Materials and methods). Compared with WT DYN1, dyn1K2424A mutant increased the duration of attachment by nearly three folds (∆t = 111.2 ± 12.1 vs. 297.7 ± 31.3 s, n ≥ 25 for each; Figure 3E). Despite having a prolonged end-on interaction with the bud tip, the astral MTs were never observed to undergo shrinkage that led to a productive spindle movement. Conversely, we often observed the attached MTs to continue to grow and buckle while their plus ends stayed in contact with the bud tip (69.2% of dyn1K2424A scs2/22∆ cells compared to 3.8% of DYN1 scs2/22∆ kar9∆ cells exhibited buckling phenotype, n ≥ 52 cells for each). These observations suggest that dynein’s motor activity is needed to destabilize MT plus ends at the bud tip, possibly by enhancing catastrophes, as previously suggested by in vitro studies (Laan et al., 2012). It is possible, however, that dynein’s motor activity is only needed to maintain a dynamic connection between the MT plus end and the cortex at the bud tip, as the work to pull the spindle may be performed entirely by the shrinking MTs themselves (Grishchuk et al., 2005; Kozlowski et al., 2007).
 
-## CAP-Gly domain of Nip100/p150Glued is required for dynein-mediated capture-shrinkage of astral MTs
+### CAP-Gly domain of Nip100/p150Glued is required for dynein-mediated capture-shrinkage of astral MTs
 
 Next, we examined how dynactin might be required for the observed MT capture-shrinkage events at the bud tip Num1 site. The vertebrate p150Glued subunit of dynactin contains a CAP-Gly domain and a basic region, both of which have been shown to bind MTs and enhance the processivity of dynein in vitro (Ayloo et al., 2014; Culver-Hanlon et al., 2006; King and Schroer, 2000; Kobayashi et al., 2006; Waterman-Storer et al., 1995). MT tethering by these domains might prevent dynein from dissociating from a shrinking MT end during capture-shrinkage events at the cortex (Figure 4A). To test this, we excised codons 2–103 from the endogenous NIP100 gene, the budding yeast homologue of p150Glued, to remove the analogous CAP-Gly and basic region of the protein (Figure 4B). To assess how capture-shrinkage was affected, we recorded time-lapse movies of spindle correction in kar9∆ background, as above. The number of scs2/22∆ kar9∆ cells, in which spindle correction occurred via MT capture-shrinkage at the bud tip, was dramatically decreased by the truncated Nip100 (Figure 4C). The reduction could not be attributed to a defect in MT growth toward the cell cortex, as we often observed astral MTs grow into the bud, making frequent contacts with the cell cortex (Video 6). Also, the average length of astral MTs was quantitatively the same for scs2/22∆ kar9∆ cells expressing the truncated or full-length version of Nip100 (Figure 4D), indicating that loss of the CAP-Gly domain did not affect the stability of astral MTs. Additionally, immunoblot analysis showed that the truncation did not affect the expression level of Nip100 (Figure 4B), indicating that the observed reduction in capture-shrinkage events could not be attributed to an overall reduction in protein stability.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig4-v1.jpg)
+
+**Figure 4.:** (A) Model showing MT tethering by Nip100/p150Glued during MT capture-shrinkage at the bud tip. (B) Schematic diagram of full-length and truncated Nip100/p150Glued. Western blot showing the expression levels of full-length Nip100-13myc in WT cells and CAP-Gly∆-13myc in scs2/22∆ cells. (C) Spindle correction events that occurred via MT capture-shrinkage at the bud tip for each indicated strain during a 10-min movie (23 ≤ n ≤ 63 events per strain). Percentage was normalized as in Figure 3B. Error bars depict SEP. n.s., not statistically significant; ***p<0.0001 by one-way ANOVA test. (D) Quantification of astral MT length (mean ± SD, n ≥ 95 for each strain). n.s., not statistically significant by unpaired t test. (E) Representative traces showing the position of the MT plus end relative to the bud neck (position = 0) and the bud tip (position = 1) over time. $x-$, average duration of contact (∆t) between the plus end and the bud tip (n ≥ 21). (F) Percentage of cells displaying a misaligned anaphase spindle phenotype for each indicated strain (n ≥ 216 cells per strain). Error bars indicate SEP. n.s., not statistically significant; ***p<0.0001 by one-way ANOVA test. (G) CAP-Gly∆ mutation displays synthetic growth defects with scs2/22∆ mutation. Serial dilutions of indicated strains in the kar9∆ background were spotted on rich medium plate and grown for 2 days at 30°C.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Histogram of the duration of plus end attachment at the bud tip (∆t) in CAP-Gly∆ scs2/22∆ kar9∆ background. $x-$, average ∆t (n = 21). (B) Wide-field images of Dyn1-3GFP and mRuby2-Tub1 in scs2/22∆ and CAP-Gly∆ scs2/22∆ cells. (C) Quantification of Dyn1-3GFP fluorescence intensity at the plus end and cortex. Error bars indicate SEM. n.s., not statistically significant by unpaired t test.
+
+![Video 6.](https://cdn.elifesciences.org/articles/36745/elife-36745-video6.mp4.jpg)
+
+**Video 6.:** Movie frames of CAP-Gly∆ scs2/22∆ kar9∆ cells expressing mRuby2-Tub1 showing failure to initiate MT capture-shrinkage at the bud tip (cell 1) or failure to maintain stable interaction between the plus end and the bud tip during a MT capture-shrinkage event (cell 2). Each frame is a maximum intensity projection of 3 optical sections spaced 0.5 µm apart. Movie was captured at 10 s intervals.
 
 To examine the contribution of the CAP-Gly domain more closely, we tracked the position of the astral MT plus ends in the time-lapse movies and quantitated their interaction with the bud tip. In CAP-Gly∆ scs2/22∆ kar9∆ cells, we observed the plus ends to interact with the bud tip for a significantly shorter duration compared with scs2/22∆ kar9∆ cells expressing the full-length Nip100 (∆t = 55.2 ± 7.2 vs. 111.2 ± 12.1 s, n ≥ 21 for each; Figure 4E and Figure 4—figure supplement 1A). In these abbreviated interactions, we could sometimes observe how an astral MT plus end, after making contact with the bud tip, underwent a brief capture-shrinkage event (coupled with SPB movement) that was suddenly aborted by its release from the cortex (Video 6, cell 2). This suggests that the MT tethering activity of the CAP-Gly domain of Nip100 is needed for the persistence of dynein-dependent MT capture-shrinkage events that power spindle correction through the bud neck.
 
@@ -69,23 +199,87 @@ As an alternative, we considered whether decreased spindle correction could be d
 
 Our results thus far suggest that dynein has two modes of cortical pulling mechanisms for controlling spindle movement into the bud cell compartment. To examine the relationship between these two modes, we quantitated the extent and consequence of losing dynein function in CAP-Gly∆ scs2/22∆ kar9∆ mutant, where both MT capture-shrinkage and sliding were presumably defective. The number of cells, in which the anaphase spindle was misaligned in the mother cell compartment, was significantly enhanced for CAP-Gly∆ scs2/22∆ kar9∆ mutant compared with scs2/22∆ kar9∆ (47.2 vs. 35.7%, n ≥ 300; Figure 4F). Additionally, CAP-Gly∆ mutation (capture-shrinkage disrupting) displayed severe synthetic viability defects with scs2/22∆ mutation (sliding disrupting) (Figure 4G). These data provide strong evidence indicating that loss of both dynein-mediated pulling activities could result in additive consequences to spindle positioning and cell viability.
 
-## Lateral patches of Num1 along the bud cortex facilitate MT sliding
+### Lateral patches of Num1 along the bud cortex facilitate MT sliding
 
 Our data suggest that changes in Num1 localization affect dynein pulling mechanism but not dynein pathway function. We next tested whether distribution of Num1 along the bud cortex could dictate the mechanism of dynein-mediated spindle positioning. To investigate this, we asked whether spindle correction via MT sliding could be rescued in the scs2/22∆ mutant if lateral patches of Num1 were restored along the bud cortex. We attached a CAAX motif to Num1-GFP and assessed dynein-dependent astral MT interaction with the bud cortex using a spindle correction assay.
 
 Previous work showed that Num1-GFP-CAAX assembles functional cortical patches similar to those observed for Num1-GFP (Tang et al., 2009). We found that, unlike Num1-GFP patches (Figure 1A), Num1-GFP-CAAX patches were not affected by deletion of Scs2/22 and were distributed throughout the cell cortex (Figure 5A). Cortical foci of Dyn1-3mCherry and Jnm1-3mCherry were observed colocalizing with lateral Num1-GFP-CAAX patches in scs2/22∆ cells (Figure 5—figure supplement 1A and B). Interestingly, as lateral Num1 patches along the bud cortex were restored, we observed that dynein-dependent MT sliding became the primary mechanism for spindle correction in NUM1-GFP-CAAX scs2/22∆ kar9∆ cells: 80.0% (32 out of 40) of misaligned spindles were corrected by MT sliding mechanism compared with 22.2% (14 out of 63) when Num1-GFP was expressed in the same background (Figure 5B versus Figure 3B; Video 7). Consistent with the rescue of MT sliding mechanism, we found that the angles of interaction between the astral MT and the cortical surface for productive MT-cortex interactions (i.e. those followed by spindle correction) were significantly more oblique in scs2/22∆ kar9∆ cells expressing Num1-GFP-CAAX (54.0 ± 20°) compared with those expressing Num1-GFP (83.7 ± 12.8°) (Figure 5C). In control kar9∆ background, the angles for productive MT-cortex interactions for Num1-GFP-CAAX (40.3 ± 14.2) was similar to those observed for Num1-GFP (54.0 ± 16°), in agreement with the idea that Num1-GFP-CAAX forms functional patches like Num1-GFP. Additionally, considering all MT-Num1 interactions in the bud, we found that sliding was correlated with MT interacting with a Num1 patch located within the proximal three quarters of the bud cortex, whereas end-on pulling was correlated with MT interacting with a Num1 patch located within the distal quarter of the bud (Figure 5D).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig5-v1.jpg)
+
+**Figure 5.:** (A) Maximum intensity projections of deconvolved wide-field images of kar9∆ and scs2/22∆ kar9∆ cells expressing Num1-GFP-CAAX. (B) Quantification of spindle correction mechanisms (n ≥ 26 cells per strain). Error bars indicate SEP. (C) Top, schematic showing the angle of interaction between the astral MT and the bud cortex. Bottom, rose histograms of the angle of interaction for each indicated strain (n ≥ 26 per strain). (D) Plot depicting the frequency of observing MT sliding or capture-shrinkage for MT-Num1 interaction occurring within the proximal three quarters versus the distal quarter of the bud cortex. (E) Percentage of HU-arrested spindles that crossed the bud neck over the course of a 10 min movie. Error bars indicate SEP (n ≥ 298 per strain). n.s., not statistically significant. ***p<0.0001 by unpaired t test. (F) Penetration distance of HU-arrested spindles. Penetration distance is defined as the farthest distance traveled by the preanaphase spindle moving across the bud neck during a 10 min video. Error bars indicate SD (n ≥ 27). n.s., not statistically significant. **p<0.005 by unpaired t test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Deconvolved wide-field single focal plane images of NUM1-GFP-CAAX and NUM1-GFP-CAAX scs2/22∆ cells expressing Dyn1-3mCherry (A) or Jnm1-3mCherry (B). Right, fluorescence intensity of individual Dyn1-3mCherry and Jnm1-3mCherry foci. Error bars indicate SEM. n.s., not statistically significant by unpaired t test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Percentage of HU-arrested spindles that crossed the bud neck by MT sliding over the course of a 10 min movie. Error bars indicate SEP. ****p<0.0001 by unpaired t test. (B) Quantification of the velocity of spindle movements in (A). Error bars are SEM. **p<0.005 by unpaired t test.
+
+![Video 7.](https://cdn.elifesciences.org/articles/36745/elife-36745-video7.mp4.jpg)
+
+**Video 7.:** Time-lapse images of mRuby2-Tub1 in kar9∆ and scs2/22∆ kar9∆ cells expressing Num1-GFP-CAAX showing astral MT sliding along the bud cortex as the anaphase spindle translocated into the bud neck during its realignment. Each frame is a maximum intensity projection of 3 optical sections spaced 0.5 µm apart. Movie was captured at 10 s intervals for 6 min.
+
 Thus, when combined with our results in Figure 3B, wherein spindle correction is primarily mediated by MT capture-shrinkage mechanism when Num1 is limited to the bud tip, the aforementioned observations indicate that the distribution of Num1 along the bud cortex could govern the mechanism of dynein-mediated spindle positioning. Moreover, the rescue of MT sliding by Num1-GFP-CAAX in the absence of Scs2/22 suggests that the primary role of Scs2/22 in the dynein pathway is to distribute Num1 along the cell cortex to facilitate dynein-dependent MT sliding.
 
-## MT sliding enhances efficiency of nuclear migration compared to MT capture-shrinkage
+### MT sliding enhances efficiency of nuclear migration compared to MT capture-shrinkage
 
 To examine the contribution of MT sliding to dynein pathway function in nuclear migration more closely, we quantitated spindle oscillation in HU-arrested cells, scoring for preanaphase spindle movements through the bud neck in a kar9∆ background. In kar9∆ cells, these movements coincided with lateral sliding of an astral MT along the cell cortex (Moore et al., 2009). Lateral distribution of Num1 along the cortex might be necessary to promote efficient spindle movement across the bud neck. Compared with kar9∆, scs2/22∆ kar9∆ mutant lacking lateral Num1 patches exhibited a significantly lower number of cells in which the preanaphase spindle moved from the mother cell compartment through the bud neck (22.5 vs. 11.2%, p<0.0001; Figure 5E, left). Moreover, in cells where the spindle was able to penetrate the bud neck, it moved for a significantly shorter distance (Figure 5F, left). The observed differences could not be attributed to changes in astral MT dynamics in scs2/22∆ kar9∆ mutant (Table 2). However, we found that Num1-GFP-CAAX, which restored lateral Num1 patches and lateral MT sliding in scs2/22∆ kar9∆ (Figure 5A and B), rescued the frequency of spindle movement across the bud neck to a level similar to that observed in kar9∆ (12.8 versus 16.7%, p=0.096; Figure 5E, right). Num1-GFP-CAAX also rescued the spindle penetration distance to a kar9∆ level (Figure 5F, right), consistent with a role for lateral Num1 patches and MT sliding in increasing the efficiency of nuclear migration. These analyses uncovered a compromised dynein function in the scs2/22∆ cells, albeit without resulting in a spindle misorientation phenotype (Figure 2F).
 
-## Num1 localization at the bud tip in scs2/22∆ cells depends on the formin Bni1
+**Table 2.**
+ Parameters of MT dynamics for free astral MTs (i.e. unattached to cortex) in kar9∆ and scs2/22∆ kar9∆ mutants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>kar9∆</th>
+      <th>scs2/22∆ kar9∆</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Growth rate (µm/min)</td>
+      <td>1.38 ± 0.12 (n = 70)</td>
+      <td>1.07 ± 0.07 (n = 61)</td>
+    </tr>
+    <tr>
+      <td>Shrinkage rate (µm/min)</td>
+      <td>1.63 ± 0.12 (n = 59)</td>
+      <td>1.70 ± 0.14 (n = 67)</td>
+    </tr>
+    <tr>
+      <td>Catastrophe frequency (event/min)</td>
+      <td>0.56 ± 0.07 (n = 19)</td>
+      <td>0.42 ± 0.09 (n = 17)</td>
+    </tr>
+    <tr>
+      <td>Rescue frequency (event/min)</td>
+      <td>0.59 ± 0.08 (n = 18)</td>
+      <td>0.40 ± 0.06 (n = 16)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Num1 localization at the bud tip in scs2/22∆ cells depends on the formin Bni1
 
 We next investigated how Num1 is targeted to the bud tip in scs2/22∆ cells. Our results thus far indicate that Num1 redistributes to the bud tip when cortical ER tethering (along the cell periphery) is disrupted by deletion of Scs2/22. Interestingly, a previous study using overexpressed epitope-tagged proteins showed that Num1 co-precipitated with the formin Bni1 (Farkasovsky and Küntzel, 2001), a polarisome component that nucleates actin cables in the bud (Evangelista et al., 2002; Sagot et al., 2002), suggesting that Bni1 and/or actin may play a role in Num1 targeting to the bud tip. We found that the percentage of scs2/22∆ cells exhibiting a Num1-GFP patch at the bud tip was significantly decreased upon deletion of Bni1 (72.3 to 33.3%; Figure 6A and B; Video 8). The reduction in Num1 bud tip localization was accompanied by a striking spindle misalignment phenotype (Figure 6C): 64.3% of bni1∆ scs2/22∆ cells exhibited a misaligned anaphase spindle compared with 2.5% of scs2/22∆ and 1.5% of WT cells. Notably, the levels of the spindle misalignment phenotype in bni1∆ scs2/22∆ cells were enhanced significantly (by ~3.3 fold) relative to those observed in bni1∆ single mutant (Figure 6C), indicating a synergistic defect between bni1∆ and scs2/22∆ in anaphase spindle alignment. Furthermore, we found that depolymerization of F-actin using latrunculin A did not perturb Num1 localization at the bud tip (Figure 6D), even though F-actin was completely disassembled, as judged by rhodamine-phalloidin staining (Figure 6—figure supplement 1). These data show that maintenance of Num1-GFP patches is independent of F-actin in scs2/22∆ cells, consistent with a previous study in WT cells (Heil-Chapdelaine et al., 2000). Together, these results support that Bni1 itself, rather than its actin nucleation activity, is required for Num1 localization and function at the bud tip. Alternatively, Bni1 might be required early in the cell cycle to establish a binding site for Num1 attachment later in the cell cycle.
 
-## Dynein-dependent MT capture-shrinkage regulates MT sliding in the bud
+![Figure 6.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig6-v1.jpg)
+
+**Figure 6.:** (A) Wide-field images of Num1-GFP in WT, scs2/22∆, bni1∆, and bni1∆ scs2/22∆ cells. Each image is a maximum intensity projection of 7 optical sections spaced 0.5 µm apart. (B) Percentage of cells with Num1-GFP patch at the bud tip is decreased in bni1∆ scs2/22∆ mutant relative to scs2/22∆ mutant (n ≥ 81 cells per strain). Error bars indicate SEP. ****p<0.0001 by unpaired t test. (C) Percentage of misaligned anaphase spindle for WT, scs2/22∆, bni1∆, and bni1∆ scs2/22∆ cells (n ≥ 83 per strain). Error bars indicate SEP. ***p<0.0001 by one-way ANOVA test. (D) Num1-GFP localization in WT and scs2/22∆ cells treated with DMSO or 200 µM latrunculin A for 20 min.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Rhodamine-phalloidin staining of WT cells treated with DMSO or 200 µM latrunculin A for 10 min (top row) and 20 min (bottom row).
+
+![Video 8.](https://cdn.elifesciences.org/articles/36745/elife-36745-video8.mp4.jpg)
+
+**Video 8.:** Time-lapse images of Num1-GFP and mRuby2-Tub1 in the bni1∆ scs2/22∆ background. Each frame is a maximum intensity projection of 5 optical sections spaced 0.5 µm apart. Movie was captured at 10 s intervals.
+
+### Dynein-dependent MT capture-shrinkage regulates MT sliding in the bud
 
 Given the dual modes of dynein pulling mechanisms, we wondered whether they might function together to regulate spindle movement into the bud neck in WT cells. Interestingly, MT sliding movies from previous studies showed that productive sliding events in WT cells were often initiated along the lateral bud cortex and terminated when the plus end of the sliding MT encountered the bud tip (see Video 1 in Lee et al., 2003). Additionally, Yeh et al. (2000) reported that astral MTs frequently undergo depolymerization at the bud tip after a dynein-dependent sliding event that pulled the anaphase spindle into the bud neck (see Figure 7 in Yeh et al., 2000).
 
@@ -94,6 +288,22 @@ To interrogate this further, we examined MT behavior during the end of MT slidin
 ![Figure 7.](https://cdn.elifesciences.org/articles/36745/elife-36745-fig7-v1.jpg)
 
 **Figure 7.:** (A) Movie frames of representative MT sliding events in kar9∆ background. Top, confocal; bottom, deconvolved wide-field. Each frame is a maximum intensity projection of 7–9 optical sections spaced 0.5 µm apart. Red arrows indicate the transition from side-on to end-on conformation at the MT capture site. (B) Movie frames of MT oversliding phenotype in the bni1∆ kar9∆ background. Each frame is a maximum intensity projection of wide-field images with five optical sections spaced 0.5 µm apart. Yellow arrows indicate the position of the MT plus end. (C) Frequency of observing MT oversliding phenotype during spindle correction in kar9∆ and bni1∆ kar9∆ cells. Error bars indicate SEP. (D) Model showing regulation of dynein pulling mechanism by two spatially distributed populations of Num1. (Step 1) ER-associated Num1 mediates lateral dynein-dependent MT-cortex interaction, pulling the astral MT along the bud cortex toward the bud tip. (Step 2) MT plus end is captured by dynein anchored at the bud tip by Scs2/22-independent Num1, stopping MT sliding. (Step 3) The motor activity of dynein induces MT depolymerization at the bud tip, causing the plastered astral MT to shorten and straighten out. As the MT shrinks, the spindle is moved closer to the bud tip, further aligning the spindle along the mother-bud axis. For clarity, plus end-targeted dynein and cortical ER are omitted from the diagram. See Videos 9–12 and text for further discussion.
+
+![Video 9.](https://cdn.elifesciences.org/articles/36745/elife-36745-video9.mp4.jpg)
+
+**Video 9.:** Time-lapse images of mRuby2-Tub1 in kar9∆ background showing examples of MT sliding events being terminated at the bud tip. Each frame is a maximum intensity projection of 7 optical sections spaced 0.5 µm apart. Movie was captured at 5 s intervals.
+
+![Video 10.](https://cdn.elifesciences.org/articles/36745/elife-36745-video10.mp4.jpg)
+
+**Video 10.:** Time-lapse images of Num1-GFP and mRuby2-Tub1 in kar9∆ showing an example of MT sliding being halted when the plus end of the sliding MT reaches a Num1 cluster at the bud tip. Arrow indicates the position of the Num1 cluster (visible in the initial frames before photobleaching) where stoppage of MT sliding occurs. Each frame is a maximum intensity projection of deconvolved wide-field images with five optical sections spaced 0.5 µm apart. Movie was captured at 15 s intervals. Note that mRuby2 fluorescence (mRuby2-Tub1) appears to crossover slightly into the GFP channel (Num1-GFP).
+
+![Video 11.](https://cdn.elifesciences.org/articles/36745/elife-36745-video11.mp4.jpg)
+
+**Video 11.:** Time-lapse images of Num1-GFP and mRuby2-Tub1 in kar9∆ ist2∆ background showing a clear example of MT sliding being halted when the plus end of the sliding MT reaches a Num1 patch at the bud tip. KAR9 and IST2 deletions did not affect Num1 localization in WT cells (data not shown). Each frame is a maximum intensity projection of 3 optical sections spaced 0.5 µm apart. Movie was captured at 10 s intervals.
+
+![Video 12.](https://cdn.elifesciences.org/articles/36745/elife-36745-video12.mp4.jpg)
+
+**Video 12.:** Time-lapse images of mRuby2-Tub1 showing three examples of MT oversliding phenotype at the bud tip in the bni1∆ kar9∆ background. Each frame is a maximum intensity projection of 5 optical sections spaced 0.5 µm apart. Movie was captured at 10 s intervals.
 
 ## Discussion
 
@@ -107,7 +317,241 @@ How Num1 switches the dynein motor from a side-on motor to an end-on motor remai
 
 ## Materials and methods
 
-## Media and strain construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-c-Myc (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>BioLegend:626802; RRID:AB_2148451</td>
+      <td>(1:250 or 500 or 1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG</td>
+      <td>GenScript</td>
+      <td>GenScript:A01008; RRID:AB_2732863</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP goat anti-mouse IgG</td>
+      <td>BioLegend</td>
+      <td>BioLegend:405306; RRID:AB_315009</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP goat anti-rabbit IgG</td>
+      <td>Jackson Immuno Research Labs</td>
+      <td>Jackson ImmunoResearch Labs: 111-035-144; RRID:AB_2307391</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sac1 (rabbit polyclonal)</td>
+      <td>Charles Barlowe Lab</td>
+      <td>NA</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>NUM1</td>
+      <td>NA</td>
+      <td>SGD:S000002557</td>
+      <td>Systematic name: YDR150W</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>SCS2</td>
+      <td>NA</td>
+      <td>SGD:S000000922</td>
+      <td>Systematic name: YER120W</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>SCS22</td>
+      <td>NA</td>
+      <td>SGD:S000007228</td>
+      <td>Systematic name: YBL091C-A</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>DYN1</td>
+      <td>NA</td>
+      <td>SGD:S000001762</td>
+      <td>Systematic name: YKR054C</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>NIP100</td>
+      <td>NA</td>
+      <td>SGD:S000006095</td>
+      <td>Systematic name: YPL174C</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>JNM1</td>
+      <td>NA</td>
+      <td>SGD:S000004908</td>
+      <td>Systematic name: YMR294W</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>ARP1</td>
+      <td>NA</td>
+      <td>SGD:S000001171</td>
+      <td>Systematic name: YHR129C</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>KAR9</td>
+      <td>NA</td>
+      <td>SGD:S000006190</td>
+      <td>Systematic name: YPL269W</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>BNI1</td>
+      <td>NA</td>
+      <td>SGD:S000005215</td>
+      <td>Systematic name: YNL271C</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>MMR1</td>
+      <td>NA</td>
+      <td>SGD:S000004180</td>
+      <td>Systematic name: YLR190W</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>GEM1</td>
+      <td>NA</td>
+      <td>SGD:S000000046</td>
+      <td>Systematic name: YAL048C</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>PAC1</td>
+      <td>NA</td>
+      <td>SGD:S000005795</td>
+      <td>Systematic name: YOR269W</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>CIN8</td>
+      <td>NA</td>
+      <td>SGD:S000000787</td>
+      <td>Systematic name: YEL061C</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>KIP3</td>
+      <td>NA</td>
+      <td>SGD:S000003184</td>
+      <td>Systematic name: YGL216W</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>KAR3</td>
+      <td>NA</td>
+      <td>SGD:S000006345</td>
+      <td>Systematic name: YPR141C</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxyurea</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: AC151680250</td>
+      <td>(200 mM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Latrunculin A</td>
+      <td>Millipore Sigma</td>
+      <td>Millipore Sigma:L5163</td>
+      <td>(200 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hygromycin B</td>
+      <td>Gold Biotechnology</td>
+      <td>Gold Biotechnology: H-270–5</td>
+      <td>(400 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>G-418 sulfate</td>
+      <td>Gold Biotechnology</td>
+      <td>Gold Biotechnology: G-418–10</td>
+      <td>(400 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIS-Elements</td>
+      <td>Nikon</td>
+      <td>RRID:SCR_014329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 7</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Rhodamine-phalloidin</td>
+      <td>Cytoskeleton</td>
+      <td>Cytoskeleton:PHDR1</td>
+      <td>(1.4 µM)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protease inhibitor cocktail tablet</td>
+      <td>Millipore Sigma</td>
+      <td>Millipore Sigma:5892970001</td>
+      <td>(1 tablet per 7 ml)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Media and strain construction
 
 All strains used in this study are listed in Supplementary file 1 and were derived from the genetic background of WT strains YWL36 and YWL37 (Vorvis et al., 2008) or the protease-deficient strain BJ5457 (Jones, 1990). Strains were generated by standard genetic crosses or by PCR product-mediated transformations (Longtine et al., 1998). Diploids resulted from each cross were sporulated and tetrad dissected and the progeny were then examined by marker analysis. Transformations were performed using lithium acetate protocol (Knop et al., 1999). Transformants were purified twice by streaking to single colonies on selective media plates. Proper deletion or insertion of fluorescent protein tagging cassette at the genomic locus was confirmed by diagnostic PCR and fluorescence microscopy. All fluorescent protein tagging was done at the chromosomal locus and imaging was performed using live cells unless stated otherwise. At least two independent transformants were chosen from each disruption or tagging procedure for subsequent experiments.
 
@@ -115,7 +559,7 @@ To label MTs, strains were transformed with HindIII-digested HIS3p::mCherry-TUB1
 
 To generate in-frame deletion of the CAP-Gly and basic domain of Nip100 at the endogenous chromosomal locus, we used the two-step approach for constructing unmarked genomic mutagenesis (Gray et al., 2005). Briefly, the URA3 marker was amplified from pRS306 with primers containing sequences flanking the targeted region of Nip100 (amino acid 2–103). We verified the substitution of the targeted sequence with URA3 by diagnostic PCR from the genomic DNA. The resulting strain was transformed with a second PCR product containing an in-frame fusion of the sequences flanking the targeted region (60 bp on one side of the URA3 insertion and 1209 bp on the other side), amplified from WT genomic DNA, along with a carrier plasmid containing the LEU2 marker (pRS315). Transformants were replica plated to 5-fluoroorotic acid (5-FOA) plates to select for the removal of URA3. Deletion of the targeted sequence was confirmed by diagnostic colony PCR and DNA sequencing.
 
-## Image acquisition and analysis
+### Image acquisition and analysis
 
 Confocal images and fluorescence recovery after photobleaching (FRAP) experiments were acquired using a 1.4 NA 60X oil immersion objective on a Nikon A1R confocal microscope equipped with a LU-NB laser launch system housed in the IALS Nikon Center of Excellence microscopy facility at UMass Amherst. Pinhole size was set to 0.7 airy unit. To FRAP, we bleached for 3 s using 488 nm laser at 5% laser power. After photobleaching, single focal plane images were acquired every 30 s at 0.3% laser power. Wide-field fluorescence images were acquired using either a 1.45 NA 100X objective on a Nikon 80i upright microscope equipped with piezo Z control (Physik Instrumente) and a cooled electron-multiplying charged-coupled device (EMCCD) camera (Cascade II; Photometrics) or a 1.49 NA 100X objective on a Nikon TiE inverted microscope system equipped with a laser launch (405/488/561/640 nm; LUN4; Nikon) and a EMCCD camera (iXon 888; Andor). Filter cube sets (31000 v2, 49002, 49008, and TRF89901; Chroma) were used for imaging DAPI, GFP and mRuby2/mCherry fluorescence. All three microscope systems were controlled by NIS-Elements software (Nikon). Yeast strains were grown to mid-log phase in synthetic-defined media (Sunrise Science Products, CA) at 30°C and mounted on 1.7% agarose pad for imaging. All images were acquired at room temperature. For three-dimensional reconstruction of Num1-GFP localization, we acquired up to 25 optical confocal sections spaced 0.3 µm apart encompassing the entire thickness of cells. Image stacks were deconvolved where indicated using the 3D Deconvolution tool in NIS-Elements software. To minimize phototoxicity to cells and photobleaching during time-lapse imaging, we acquired frames at intervals as indicated in the videos and with up to seven optical sections spaced 0.5 µm apart.
 
@@ -123,12 +567,12 @@ To quantify the number of cortical Num1 patches per cell, we used the analyze pa
 
 For cold spindle misorientation assay, mid-log cultures expressing fluorescently-labeled tubulin were grown in YPD and then shifted to 16°C for 15 hr before imaging. For cold nuclear segregation assay, mid-log cultures were grown in YPD and then shifted to 16°C for 15 hr, fixed with 70% ethanol and stained with DAPI. For spindle oscillation assay, strains expressing mRuby2-Tub1 were grown to mid-log and arrested with 200 mM hydroxyurea for 1–1.5 hr before imaging, as described (Moore et al., 2009; Tang et al., 2012). The velocity of spindle movement was defined as ∆D/∆T, in which ∆D was the distance the spindle traveled in a continuous bud-directed movement, and ∆T was the time for the movement. For spindle correction assay, we scored for misoriented anaphase spindles that moved into the bud neck and became aligned along the mother-bud axis during a 10 min movie in the kar9∆ background. Spindle correction was scored as mediated by ‘sliding mechanism’ if the astral MT displayed lateral association with the bud cortex while the spindle moved into the bud neck during its realignment, and by ‘capture-shrinkage mechanism’ if the astral MT exhibited end-on interaction with the bud tip followed by depolymerization of the astral MT concomitant with spindle movement into the bud neck. MT growth rate, shortening rate, catastrophe frequency, and rescue frequency were measured as described (Gupta et al., 2006). The angle of interaction between astral MT and the bud tip was measured using the angle tool in ImageJ. Rose histograms were plotted using MATLAB. For growth assays, strains were grown to mid-log phase in YPD media, then ten-fold serial dilutions were spotted on YPD plates and grown at 30°C for 2 days. To depolymerize F-actin, cells were grown to early log phase, collected by centrifugation, and resuspended in synthetic-defined medium containing 200 µM latrunculin A or 0.5% DMSO for 20 min before imaging. To verify loss of F-actin, cells were fixed and stained with rhodamine-phalloidin as previously described (Waddle et al., 1996).
 
-## Cell lysis, Western blotting, and sucrose gradient sedimentation
+### Cell lysis, Western blotting, and sucrose gradient sedimentation
 
 To immunoblot for Num1-13myc, Dyn1-TAP, Jnm1-13myc, Nip100-13myc, and CAP-Gly∆−13myc, yeast strains were grown overnight in 5 ml of rich media (YPD) at 30°C. Cell pellets were resuspended in ice cold lysis buffer containing 20 mM Tris pH 7.5, 150 mM NaCl, 1 mM EDTA, 1.5% Triton X-100, supplemented with protease inhibitor cocktail tablet (Millipore Sigma). Equal amount of cells were lysed by bead beating in round-bottom glass tubes for 6 × 30 s with 2 min interval between beatings. Following centrifugation (at 21,130 g for 10 min at 4°C), the resulting supernatants were separated on 8% (for Num1-13myc and Jnm1-13myc) or 6% (for Dyn1-TAP) or 4–15% (for Nip100-13myc and CAP-Gly∆−13myc) SDS-PAGE and then electro-blotted to PVDF or nitrocellulose membrane in 25 mM Tris, 192 mM glycine, 0.05% SDS, and 20% methanol for 80 min. Membranes were probed with either mouse 9E10 anti-c-Myc antibody (BioLegend) at 1:250 or 1:500 or 1:1000 dilution, or rabbit IgG antibody (GenScript) at 1:5000 dilution. Goat HRP-conjugated anti-mouse (BioLegend) and anti-rabbit antibodies (Jackson ImmunoResearch) were used at 1:10,000 dilutions. Chemiluminescence signals were acquired and imaged using a ChemiDoc Imaging System (Bio-Rad) or a G:BOX Chemi HR16 (Syngene) equipped with a 16-bit CCD camera (Sony ICX285AL; pixel size of 6.45 x 6.45 µm). Immunoblots were exposed for durations ranging from 3 s to 5 min without saturating the camera’s pixels.
 
 For sedimentation analysis of Num1-13myc, we poured 10 ml 20–60% sucrose step gradients and allowed them to equilibrate for 9 hr at 4°C before use. Each step of the gradient contained 2 ml of 20, 30, 40, 50, or 60% sucrose in sedimentation buffer (10 mM Tris pH 7.5, 10 mM EDTA, and 50 mM NaCl). WT and scs2/22∆ strains expressing Num1-13myc were grown to mid-log phase in 60 ml of YPD media, collected by centrifugation, and resuspended in ice cold lysis buffer containing 20 mM Tris pH 7.5, 1 mM EDTA, and 50 mM NaCl supplemented with protease inhibitor cocktail tablet. Cells were then lysed by glass bead beating for 6 times 30 s with 2 min intervals between beatings. Lysates were clarified at 500 g for 10 min at 4°C and 0.5 ml of the supernatant was loaded directly onto a 10 ml sucrose gradient prepared as above. Centrifugation was performed in a Beckman SW41 Ti rotor at 36,000 rpm for 17.5 hr at 4°C. Fractions of 0.5 ml were collected from the top of each gradient for analysis by Western blot using the mouse 9E10 anti-c-Myc antibody (for Num1-13myc) and the anti-Sac1 antibody (a kind gift from Dr. Charles Barlowe for detection against the ER marker Sac1).
 
-## Statistical methods
+### Statistical methods
 
 All statistical analyses were performed using GraphPad Prism software. A two-tailed Student’s t test or one-way ANOVA test was used to determine statistical significance where indicated. At least two independent experiments were performed for each analysis.

@@ -27,22 +27,22 @@
 
 ### Affiliations
 
-1. https://ror.org/0011qv509 Department of Medicine, Division of Hematology and Oncology, College of Medicine, The University of Tennessee Health Science Center Memphis United States
-2. https://ror.org/0011qv509 Department of Pharmaceutical Sciences, College of Pharmacy, The University of Tennessee Health Science Center Memphis United States
-3. https://ror.org/0011qv509 Integrative Muscle Biology Laboratory, Laboratory, Division of Rehabilitation Sciences, College of Health Professions, University of Tennessee Health Science Center Memphis United States
-4. https://ror.org/0011qv509 Office of Vice Chancellor for Research, University of Tennessee Health Science Center Memphis United States
-5. https://ror.org/0011qv509 Department of Microbiology, Immunology, and Biochemistry, College of Medicine, The University of Tennessee Health Science Center Memphis United States
-6. https://ror.org/0011qv509 Department of Pathology, University of Tennessee Health Science Center Memphis United States
-7. https://ror.org/0011qv509 UTHSC Center for Cancer Research, College of Medicine, The University of Tennessee Health Science Center Memphis United States
-8. https://ror.org/0011qv509 Department of Surgery, Division of Bariatric Surgery, College of Medicine, The University of Tennessee Health Science Center Memphis United States
-9. https://ror.org/0207ad724 Department of Surgery, Comprehensive Cancer Center, Wake Forest University School of Medicine Winston Salem United States
-10. https://ror.org/01y2jtd41 Department of Nutritional Sciences, College of Agricultural and Life Sciences, University of Wisconsin-Madison Madison United States
+1. Department of Medicine, Division of Hematology and Oncology, College of Medicine, The University of Tennessee Health Science Center Memphis United States ([ROR:0011qv509](https://ror.org/0011qv509))
+2. Department of Pharmaceutical Sciences, College of Pharmacy, The University of Tennessee Health Science Center Memphis United States ([ROR:0011qv509](https://ror.org/0011qv509))
+3. Integrative Muscle Biology Laboratory, Laboratory, Division of Rehabilitation Sciences, College of Health Professions, University of Tennessee Health Science Center Memphis United States ([ROR:0011qv509](https://ror.org/0011qv509))
+4. Office of Vice Chancellor for Research, University of Tennessee Health Science Center Memphis United States ([ROR:0011qv509](https://ror.org/0011qv509))
+5. Department of Microbiology, Immunology, and Biochemistry, College of Medicine, The University of Tennessee Health Science Center Memphis United States ([ROR:0011qv509](https://ror.org/0011qv509))
+6. Department of Pathology, University of Tennessee Health Science Center Memphis United States ([ROR:0011qv509](https://ror.org/0011qv509))
+7. UTHSC Center for Cancer Research, College of Medicine, The University of Tennessee Health Science Center Memphis United States ([ROR:0011qv509](https://ror.org/0011qv509))
+8. Department of Surgery, Division of Bariatric Surgery, College of Medicine, The University of Tennessee Health Science Center Memphis United States ([ROR:0011qv509](https://ror.org/0011qv509))
+9. Department of Surgery, Comprehensive Cancer Center, Wake Forest University School of Medicine Winston Salem United States ([ROR:0207ad724](https://ror.org/0207ad724))
+10. Department of Nutritional Sciences, College of Agricultural and Life Sciences, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
 
 † Corresponding author
 
 ## Abstract
 
-Bariatric surgery is a sustainable weight loss approach, including vertical sleeve gastrectomy (VSG). Obesity exacerbates tumor growth, while diet-induced weight loss impairs progression. It remains unknown how bariatric surgery-induced weight loss impacts cancer progression or alters response to therapy. Using a pre-clinical model of obesity followed by VSG or diet-induced weight loss, breast cancer progression and immune checkpoint blockade therapy were investigated. Weight loss by VSG or weight-matched dietary intervention before tumor engraftment protected against obesity-exacerbated tumor progression. However, VSG was not as effective as diet in reducing tumor burden despite achieving similar weight and adiposity loss. Leptin did not associate with changes in tumor burden; however, circulating IL-6 was elevated in VSG mice. Uniquely, VSG tumors displayed elevated inflammation and immune checkpoint ligand PD-L1+ myeloid and non-immune cells. VSG tumors also had reduced T lymphocytes and markers of cytolysis, suggesting an ineffective anti-tumor microenvironment which prompted investigation of immune checkpoint blockade. While obese mice were resistant to immune checkpoint blockade, anti-PD-L1 potently impaired tumor progression after VSG through improved anti-tumor immunity. Thus, in formerly obese mice, surgical weight loss followed by immunotherapy reduced breast cancer burden. Finally, we compared transcriptomic changes in adipose tissue after bariatric surgery from patients and mouse models. A conserved b ariatric s urgery- a ssociated weight loss s ignature (BSAS) was identified which significantly associated with decreased tumor volume. Findings demonstrate conserved impacts of obesity and bariatric surgery-induced weight loss pathways associated with breast cancer progression.
+Bariatric surgery is a sustainable weight loss approach, including vertical sleeve gastrectomy (VSG). Obesity exacerbates tumor growth, while diet-induced weight loss impairs progression. It remains unknown how bariatric surgery-induced weight loss impacts cancer progression or alters response to therapy. Using a pre-clinical model of obesity followed by VSG or diet-induced weight loss, breast cancer progression and immune checkpoint blockade therapy were investigated. Weight loss by VSG or weight-matched dietary intervention before tumor engraftment protected against obesity-exacerbated tumor progression. However, VSG was not as effective as diet in reducing tumor burden despite achieving similar weight and adiposity loss. Leptin did not associate with changes in tumor burden; however, circulating IL-6 was elevated in VSG mice. Uniquely, VSG tumors displayed elevated inflammation and immune checkpoint ligand PD-L1+ myeloid and non-immune cells. VSG tumors also had reduced T lymphocytes and markers of cytolysis, suggesting an ineffective anti-tumor microenvironment which prompted investigation of immune checkpoint blockade. While obese mice were resistant to immune checkpoint blockade, anti-PD-L1 potently impaired tumor progression after VSG through improved anti-tumor immunity. Thus, in formerly obese mice, surgical weight loss followed by immunotherapy reduced breast cancer burden. Finally, we compared transcriptomic changes in adipose tissue after bariatric surgery from patients and mouse models. A conserved bariatric surgery-associated weight loss signature (BSAS) was identified which significantly associated with decreased tumor volume. Findings demonstrate conserved impacts of obesity and bariatric surgery-induced weight loss pathways associated with breast cancer progression.
 
 ## Introduction
 
@@ -54,7 +54,7 @@ Here, to investigate the impacts of obesity and bariatric surgery-induced weight
 
 ## Results
 
-## Surgical and dietary weight loss interventions reduced weight to the same extent
+### Surgical and dietary weight loss interventions reduced weight to the same extent
 
 To quantify impacts of bariatric surgery on cancer progression, weight loss was induced prior to tumor implantation (study design, Figure 1A). Female C57BL/6J mice were weaned onto low fat diet (LFD) to remain lean or onto high fat diet (HFD) to become obese. After 16 weeks on diet, HFD-fed mice displayed marked diet-induced obesity (DIO, Figure 1B). A subset of DIO mice then underwent surgical or dietary weight loss interventions. Surgically treated DIO mice received the VSG bariatric procedure, wherein the lateral 80% of the stomach was removed, and the remaining stomach was sutured creating a tubular gastric sleeve (Yin et al., 2012). VSG induced a significant and sustained weight loss of 20% of the starting body weight, despite being continuously maintained on HFD (HFD-VSG, Figure 1C, detailed statistical comparisons within Supplementary file 1a). HFD-VSG mice lost weight to within a few grams of lean LFD-sham treated control mice. Importantly, mice did not regain weight after the VSG. Weight rebound has often been recorded in other studies in this time course (Arble et al., 2015; Yin et al., 2011). To control for the effects of surgery, all other groups that did not undergo a VSG received a sham surgery including perioperative procedures, abdominal laparotomy, anesthesia, and analgesics with minimal impacts on weight maintenance (Figure 1A and C). To compare the impact of VSG on breast cancer outcomes to weight loss per se, we employed a dietary weight loss intervention initiated after sham surgery wherein mice were fed calorically restricted amounts of HFD to match the weight loss and diet exposure of HFD-VSG treated mice, termed WM-Sham. As designed, WM-Sham body weight loss was not significantly different from HFD-VSG (Figure 1C). By endpoint, 5 weeks after surgical and diet interventions, both weight loss groups (HFD-VSG and WM-Sham) displayed significantly reduced body weights compared to HFD-Sham obese control mice (Figure 1C). These results demonstrate successful generation of complementary weight loss approaches to next investigate the impacts of bariatric surgery-mediated weight loss on tumor progression.
 
@@ -62,11 +62,11 @@ To quantify impacts of bariatric surgery on cancer progression, weight loss was 
 
 **Figure 1.:** (A) Schematic of diet-induced obesity, weight loss intervention, and breast cancer cell injection in female C57BL/6J mice. Mice were fed obesogenic diets or kept lean for 16 weeks. At 20 weeks of age, mice were subjected to bariatric surgery or dietary intervention and sham surgery to stably reduce weights, while control high fat diet (HFD) and low fat diet (LFD) fed mice received sham surgery to remain obese or lean, respectively. E0771 breast cancer cells were injected at 22 weeks of age when weight loss stabilized. Tumor progression was quantified, and mice were sacrificed at endpoint 3 weeks later. (B) Weekly body weights are shown as diet-induced obesity (DIO) is established over 16 weeks on HFD compared to lean control mice fed LFD (n=15). (C) Body weights were measured biweekly after DIO mice were subjected to either bariatric surgery or dietary weight loss interventions. Four groups include: HFD-fed and vertical sleeve gastrectomy (HFD-VSG, red) and weight-matched (WM) caloric restricted HFD-fed and sham (WM-Sham, blue) to mirror weight loss in VSG group. These interventions were compared to controls continuously HFD-fed and sham (HFD-Sham, black) or continuously LFD-fed and sham (LFD-Sham, gray). (D) Tumor volume quantified over 3 weeks. (C–D) Two-way ANOVA Fisher’s LSD test for individual comparisons with *p<0.05, and **p<0.01 signifying HFD-Sham compared to all other groups and detailed in Supplementary file 1a and b, respectively. (E) Tumor volume and (F) tumor weight at endpoint. (E–F) Mean ± SEM one-way ANOVA with Fisher’s LSD test. (B–F) n=15 LFD-Sham, n=17 HFD-Sham, n=14 HFD-VSG, and n=13 WM-Sham. Mean ± SEM *p<0.05, **p<0.01, and ***p<0.001.
 
-## Obesity-accelerated breast cancer progression was reversed by VSG and dietary weight loss
+### Obesity-accelerated breast cancer progression was reversed by VSG and dietary weight loss
 
 To determine if surgical weight loss corrected obesity-associated breast cancer progression, E0771 syngeneic breast cancer cells were orthotopically implanted into the fourth mammary fat pad 2 weeks following weight loss interventions, when weight loss was stabilized (Figure 1A and C). Tumor progression was quantified over 3 weeks (Figure 1A and D, detailed statistics within Supplementary file 1b). Breast cancer cell implantation and progression did not adversely impact body weight (Figure 1C). HFD-Sham tumors were significantly larger than LFD-Sham by 1 week after cell implantation. In mice that had lost weight, reduced tumor progression was observed compared to HFD-Sham from 1.5 weeks after implantation (Figure 1D). At endpoint, tumors were measured by caliper, then excised to quantify tumor mass. HFD-VSG tumors were significantly smaller than HFD-Sham by volume and weight (Figure 1D–F). However, tumors in the WM-Sham group were significantly smaller than HFD-VSG, despite identical body weights between the two weight loss approaches (Figure 1C–F). In fact, tumor progression was blunted in WM-Sham controls such that at endpoint, tumors in WM-Sham were not significantly different from tumors in LFD-Sham lean controls by volume or weight (Figure 1D–F). Thus, dietary intervention in formerly obese mice was most impactful to restore a lean-like tumor phenotype with minimal tumor progression evident and the smallest tumor burden, while weight loss by VSG proved to be less impactful to blunt tumor progression compared to weight-matched controls.
 
-## Adiposity and leptin were reduced in formerly obese mice
+### Adiposity and leptin were reduced in formerly obese mice
 
 Increased adiposity is associated with obesity-worsened breast cancer (Houghton et al., 2021). Surgical and dietary interventions resulted in a significant reduction in adiposity compared to HFD-Sham obese control mice as early as week 1 post-surgery that stabilized 2 weeks after intervention and persisted until endpoint (Figure 2A). Breast cancer cell implantation and progression from weeks 2 to 5 did not impact adiposity in any group (Figure 2A). In line with adiposity, HFD-Sham mice had about 10-fold greater mammary fat pad and gonadal adipose mass compared to lean LFD-Sham controls (Figure 2B–C). HFD-VSG and WM-Sham groups lost significant adipose mass compared to HFD-Sham obese controls but not to the extent quantified in lean LFD-Sham mice (Figure 2A–C). Enlarged adipocyte size in the mammary fat pad is a mediator of obesity-associated inflammation and impacts breast cancer progression (Laforest et al., 2021). Adipocyte size in the mammary fat pad was enlarged in HFD-Sham compared to LFD-Sham mice (Figure 2D). HFD-VSG mammary fat pads contained significantly smaller adipocytes compared to HFD-Sham but did not reduce size to that of LFD-Sham (Figure 2D). Interestingly, WM-Sham mice retained significantly larger adipocytes compared to HFD-VSG, despite similar loss of adiposity and identical mammary fat pad and gonadal adipose depot weights (Figure 2A–D). Therefore, the association with greater adipocyte size and larger tumor burden did not hold true in these models of formerly obese mice.
 
@@ -76,11 +76,11 @@ Increased adiposity is associated with obesity-worsened breast cancer (Houghton 
 
 Leptin is associated with adiposity and adipocyte size and can signal to activate breast cancer cell proliferation (Lengyel et al., 2018). Plasma leptin concentrations (Figure 2E) and leptin mRNA expression in the mammary fat pad (Figure 2F) paralleled findings for endpoint adipocyte size (Figure 2D), with HFD-Sham displaying the greatest leptin plasma concentrations and mammary fat pad expression. HFD-VSG reduced leptin concentrations in plasma and in adipose tissue compared to HFD-Sham obese controls (Figure 2E–F). As in adipocyte size, despite comparable weight loss and adipose mass between VSG and WM-Sham groups, WM-Sham had twofold greater leptin concentration in plasma or expression in mammary fat pad compared to HFD-VSG (Figure 2E–F). Thus, leptin-mediated signaling does not account for why VSG is less effective in reducing tumor burden compared to weight loss alone.
 
-## Elevated inflammation was evident in mammary fat pad uniquely after VSG weight loss intervention
+### Elevated inflammation was evident in mammary fat pad uniquely after VSG weight loss intervention
 
 Increased inflammation in the adipose has been reported in mouse models of VSG, with persistent elevations in adipose tissue macrophages despite improvements in obesity-associated parameters (Griffin et al., 2019; Frikke-Schmidt et al., 2017; Ahn et al., 2021; Poitou et al., 2015; Lengyel et al., 2018). Thus, we investigated if inflammatory changes in the mammary fat pad reflect pathways that could impact tumor burden using RNA sequencing (RNA-seq) analysis, database for annotation, visualization, and integrated discovery (DAVID) pathway analysis, and gene set enrichment analysis (GSEA). Compared to WM-Sham controls, HFD-VSG mammary fat pads reflected 5–10-fold elevation of immune pathways, such as leukocyte migration, chemotaxis, and inflammatory response, among others (Figure 2G). Examining key genes common to the inflammatory response pathways, compared to LFD-Sham lean controls, HFD-Sham obese mice displayed elevated expression of many inflammatory genes such as chemokine receptor Ccr2 and growth factor receptor Csf1r, among others, as expected with DIO (Figure 2H). Despite significant reductions in adiposity and adipocyte size after VSG, mammary fat pads from HFD-VSG mice displayed evidence of persistent or exacerbated inflammation compared to all groups including HFD-Sham obese controls (Figure 2H). In stark contrast, compared to both HFD-Sham and HFD-VSG groups, mammary fat pads from WM-Sham treated mice displayed greatly reduced inflammatory gene expression to levels similar to, or lower than, lean LFD-Sham controls (Figure 2H). Taken together, the increased inflammatory response signature in the mammary fat pads of HFD-VSG mice suggests the possibility of a more tumor permissive environment, particularly compared to WM-Sham controls.
 
-## Tumors displayed elevated inflammation and immune checkpoint ligand expression in mice receiving VSG
+### Tumors displayed elevated inflammation and immune checkpoint ligand expression in mice receiving VSG
 
 Like the mammary fat pad, transcriptome analysis of tumors in mice after VSG intervention displayed increased enrichment of inflammatory response as well as response to hypoxia pathways compared to HFD-Sham tumors, indicating an inflamed and hypoxic tumor microenvironment (Figure 3A), whereas these pathways were downregulated in tumors from WM-Sham mice (Figure 3A). Elevated pathways in VSG tumors (Figure 3A) contain genes - specifically Tlr2, Tlr13, Ifngr1, Ccl9, Hif1a, and Cybb - that are established to increase immune checkpoint ligand PD-L1 expression (Figure 3B; Noman et al., 2014; Yi et al., 2021). Therefore, we next queried immune checkpoint expression in the tumor microenvironment to determine if elevated pathways and genes in the VSG-treated group could lead to increased immune checkpoint ligand expression. Indeed, flow cytometry analysis revealed that the frequency of PD-L1+ cells was significantly and uniquely elevated in tumors after VSG intervention compared to all other groups in the CD45− fraction (Figure 3C). The CD45− fraction contains tumor cells as well as other stromal cells such as fibroblasts, endothelial cells, adipose stromal cells, etc. Furthermore, expression of PD-L1 quantified by mean fluorescent intensity (MFI) was also significantly elevated in the CD45− fraction from HFD-VSG tumors (Figure 3D). In contrast, WM-Sham intervention significantly reduced frequency of PD-L1+ non-immune cells and PD-L1 MFI relative to tumors from HFD-VSG treated mice by 60 and 30%, respectively (Figure 3C–D). Pro-inflammatory cytokines are associated with elevated PD-L1 through increased protein stability (Yi et al., 2021; Chan et al., 2019; Li et al., 2020b; Lim et al., 2016). Therefore, we examined circulating IL-6 using Luminex. Compared to HFD-Sham, circulating IL-6 was significantly elevated in HFD-VSG (Figure 3E). In contrast, WM-Sham mice displayed a 3.3-fold significantly reduced concentration of IL-6 compared to mice in the HFD-VSG group (Figure 3E). In E0771 breast cancer cells, treatment with IL-6 increased PD-L1 MFI as quantified by flow cytometry. Similarly, GSEA revealed significant enrichment of the hallmark IL-6/Jak/STAT3 signaling pathway in tumors from HFD-VSG group compared to WM-Sham tumors (Figure 3G). Overall, surgically induced weight loss increased tumor cell specific and circulating inflammation and elevated the immune checkpoint ligand PD-L1 in the tumor microenvironment suggesting the presence of impaired anti-tumor immunity (Ngiow and Young, 2020; Muenst et al., 2014).
 
@@ -88,21 +88,37 @@ Like the mammary fat pad, transcriptome analysis of tumors in mice after VSG int
 
 **Figure 3.:** (A) Database for annotation, visualization, and integrated discovery (DAVID) analysis of regulated pathways and false discovery rate (FDR) for high fat diet (HFD)-vertical sleeve gastrectomy (VSG) (red) and weight-matched sham (WM-Sham) (blue) relative to tumors from HFD-Sham mice is shown. N=6–8. (B) Heat map of row mean centered gene expression in tumor by RNA sequencing (RNA-seq) of genes contributing to significantly regulated inflammatory response pathway (GO:0006954) and response to hypoxia pathway (GO:0001666) determined by DAVID analysis. N=6–8. (C) Flow cytometric analysis of CD45 negative (CD45−) PD-L1+ non-immune cells in tumor is plotted as frequency of total live cells. (D) Mean fluorescent intensity (MFI) of PD-L1 on CD45− PD-L1+ cells in tumor is shown. N=4–5. (E) Circulating IL-6 concentration in plasma was measured at endpoint after 4 hr of fasting by Luminex. N=8–14. (F) Flow cytometric analysis of PD-L1 MFI in E0771 breast cancer cells after treatment with recombinant mouse IL-6 (200 pg/mL) for 4 hr. Mean ± SEM is shown. One-way ANOVA with Fisher’s LSD test. *p<0.05, **p<0.01, and ***p<0.001. (G) Gene set enrichment analysis (GSEA) of the hallmark pathway for IL6/JAK/STAT3 gene set from the Molecular Signatures Database of the Broad Institute is reported in HFD-VSG tumors compared to WM-Sham controls. The normalized enrichment score (NES) and FDR are shown.
 
-## T cell tumor content and cytolysis were impaired after VSG
+### T cell tumor content and cytolysis were impaired after VSG
 
 In the tumor microenvironment, high PD-L1 expression by tumor cells can dampen T cell-mediated anti-tumor immune responses (Yi et al., 2021; Ngiow and Young, 2020; Muenst et al., 2014). Therefore, we next investigated T cell content and associated activation pathways by flow cytometry and RNA-seq (Wang et al., 2019). CD3+ T cell frequency in tumors from HFD-VSG mice was significantly decreased compared to tumors from LFD-Sham control mice (Figure 4A). In contrast, CD3+ T cell frequency in weight-matched controls was significantly greater compared to content in tumors after VSG (Figure 4A). Obesity has been shown to decrease CD8+ cytotoxic tumor T cells (Wang et al., 2019; Pingili et al., 2021) which was evident, but not significant, in this study comparing lean LFD-Sham to obese HFD-Sham controls (Figure 4B–C). Obesity-driven CD8+ T cell reductions were not corrected in tumors from formerly obese HFD-VSG mice by both flow and RNA-seq cell-type identification estimating relative subsets of RNA transcripts (CIBERSORT) analysis using TIMER2.0 (Figure 4B–C). Importantly, obesity-driven reductions in CD8+ T cell frequencies were reversed in tumors from WM-Sham control mice and corrected to levels found in tumors from lean LFD-Sham controls (Figure 4B–C). Transcriptomic analysis revealed that T cell specific signaling pathways and genes in the tumor mirrored T cell content (Figure 4D–E). Lowest T cell signaling gene signature expression was evident in tumors from HFD-Sham and HFD-VSG mice, with some correction in WM-Sham mice toward levels detected in lean LFD-Sham controls (Figure 4D–E). Of note, CD3+ and CD8+ T cell frequencies were unchanged in the tumor adjacent mammary fat pad and tumor draining lymph node (TdLN) (Figure 4—figure supplement 1A-B), suggesting T cell changes were specific to the tumor microenvironment. Furthermore, neither T cells in tumor nor TdLN displayed changes in PD-1 expression measured by MFI (Figure 4—figure supplement 1C-D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/79143/elife-79143-fig4-v2.jpg)
+
+**Figure 4.:** (A–B) Flow cytometric analysis of tumor (A) CD3+ T cells and (B) CD8+ T cells is shown as frequency of total live cells. N=8–12. (C) Analysis of tumor CD8+ T cell content from RNA sequencing (RNA-seq) data using the cell-type identification estimating relative subsets of RNA transcripts (CIBERSORT)-Abs algorithm in TIMER2.0. N=6–8. (D) Database for annotation, visualization, and integrated discovery (DAVID) analysis of regulated pathways for low fat diet (LFD)-Sham (gray), high fat diet (HFD)-VSG (red), and weight-matched sham (WM-Sham) (blue) relative to tumors from HFD-Sham mice. N=6–8. (E) Heat map of row mean centered gene expression in tumor by RNA-seq of genes contributing to the significantly regulated T cell signaling pathway (mmu04660 and false discovery rate [FDR] 6.83) and (F) cytolysis (GO:0019835 and FDR 1.25) as determined by DAVID analysis. N=6–8. (G) Flow cytometric analysis of tumor PD-L1+ monocytic myeloid derived suppressor cells (M-MDSC) shown as frequency of total M-MDSC. N=5. (H) Flow cytometric analysis of tumor PD-L1+ macrophages shown as frequency of total macrophages. N=5. (A–C and G–H) Mean ± SEM are shown. One-way ANOVA with Fisher’s LSD test *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79143/elife-79143-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Flow cytometric analysis of TdLN and tumor adjacent mammary fat pad (MFP) tissue (A) CD3+ T cells and (B) CD8+ T cells are shown as frequency of total live cells. Mean fluorescent intensity (MFI) of PD-1 on CD3+ T cells in (C) TdLN and tumor adjacent MFP and in (D) tumor is shown. (A–D) Mean ± SEM N=5. One-way ANOVA with Fisher’s LSD test.
 
 A critical function of anti-tumor immune cells is effective cytolytic activity (Wang et al., 2019). RNA-seq analysis showed that the cytolysis pathway was significantly and potently downregulated by 17-fold in HFD-VSG tumors compared to obese HFD-Sham controls (Figure 4D). In contrast, tumors from the WM-Sham intervention group displayed the greatest activation with over 20-fold increase in the cytolysis pathway (Figure 4D). Genes in the cytolytic pathway were greatly downregulated in HFD-VSG tumors compared to all other groups including granzymes and fas ligand (Gzmb, Prf1, Fasl, Gzme, and Gzmf), while gene expression was reversed to lean-like levels in tumors from WM-Sham mice (Figure 4F).
 
 To investigate potential mechanisms known to impact T cell signaling and activation such as elevated cytolysis markers including granzymes, we next examined immune cells that impair T cell activation by flow cytometric analysis. HFD-VSG tumors displayed elevated PD-L1+ monocytic myeloid derived suppressor cells (M-MDSC, Figure 4G) and macrophages (Figure 4H) relative to all other diet and surgical groups. Compared to HFD-VSG tumors, M-MDSC displayed a significant 2.9-fold reduction in tumors in the WM-Sham group. Similarly, compared to HFD-VSG tumors, PD-L1+ macrophages displayed a significant 1.76-fold reduction in tumors in the WM-Sham group (Figure 4G–H, respectively). PD-L1+ is a marker of immunosuppressive capacity. PD-L1+ M-MDSCs and macrophages would impair T cell activation by inducing apoptosis or exhaustion (Crespo et al., 2013; Adeshakin et al., 2022; Hou et al., 2020). Taken together, weight-matched control mice displayed uniquely restored T cell content and signaling pathways that were depressed by obesity which suggests an apparent effective anti-tumor response aligning with reduced tumor burden. Plus, PD-L1+ cells associated with immunosuppressive capacity were greatly reduced in WM-Sham tumors. In contrast, mice after VSG displayed a tumor microenvironment that resembled persistent obesity or elevated presence of PD-L1+ immunosuppressive MDSCs and macrophages, with reduced T cell content and cytolytic markers, despite comparable weight loss with weight-matched controls.
 
-## Anti-PD-L1 therapy was more efficacious in VSG mice
+### Anti-PD-L1 therapy was more efficacious in VSG mice
 
 The elevation of tumor immune checkpoint ligand PD-L1 after bariatric surgery may be one mechanism that underlies why surgical weight loss was less effective in reducing obesity-worsened tumor growth compared to weight loss alone. Therefore, we hypothesized that ICB would re-invigorate the anti-tumor immune response in mice after VSG to reduce tumor burden. Higher expression of PD-L1 in tumors is associated with longer overall survival in patients treated with ICB (Liu et al., 2020). Mice were weaned onto diets and received surgical or dietary weight loss interventions prior to tumor engraftment as above (Figure 1A). Mice were then treated with anti-PD-L1 or isotype control IgG2b. Anti-PD-L1 did not affect body weight, mammary fat pad, or gonadal adipose weight, suggesting no negative impacts on systemic homeostasis (Figure 5—figure supplement 1). In LFD-Sham lean controls, despite the tumor being sixfold smaller than in obese mice at baseline, anti-PD-L1 significantly reduced tumor growth over time (Figure 5A). HFD-Sham mice were completely resistant to ICB (Figure 5A–B). Notably, anti-PD-L1 significantly reduced tumor progression in HFD-VSG (Figure 5A), with significantly reduced tumor volume at endpoint (Figure 5B). In line with an already active anti-tumor immune response, ICB was moderately and insignificantly effective in WM-Sham mice (Figure 5A–B). Thus, ICB was efficacious in reducing tumor progression in mice after HFD-VSG to sizes comparable to tumors found in lean mice.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/79143/elife-79143-fig5-v2.jpg)
+
+**Figure 5.:** Diet-induced obesity (DIO) mice were subjected to either surgical or dietary weight loss interventions and compared to lean or obese controls similar to Figure 1A. After weight stabilization at 2 weeks, mice were injected with E0771 cells, as above. Mice were either treated with anti-PD-L1 or IgG2b isotype control every 3 days until sacrifice at 3 weeks after cell injection. (A) Mean tumor growth in each diet group treated with anti-PD-L1 or IgG2b isotype control is shown. (B) Tumor volume at endpoint. (C) Flow cytometric analysis of CD8+ T cells as frequency of total live cells in tumor. (D) Relative gene expression normalized to 18S of Ifng (E), Gzmb, and (F) Prf1 in tumors. (A–F) Mean ± SEM. N=5–8. Two-way ANOVA with Fisher’s LSD test. Only relevant statistical comparisons are shown for clarity. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79143/elife-79143-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Percent body weight change in mice after weight-loss interventions is reported until endpoint. (B) Tumor adjacent mammary fat pad and (C) gonadal adipose weight at endpoint are reported. Mean ± SEM. N=5–8. Two-way ANOVA with Fisher’s LSD test. *p<0.05, **p<0.01, and ***p<0.001.
+
 ICB restores cytotoxic T cell function, thus re-establishing effective anti-tumor immunity (Ngiow and Young, 2020). While there were not significant differences in mean CD8+ T cell content at endpoint (Figure 5C), evidence of cytolytic capacity is upregulated in VSG tumors treated with anti-PD-L1 with increased Ifng, Gzmb, and Prf1 expression (Figure 5D–F). Our results suggest that ICB compensates for an ineffective anti-tumor immunity associated with elevated PD-L1 expression in the tumors of VSG mice to restore markers of cytotoxic T cell response, which leads to reduced tumor burden.
 
-## A BSAS derived from patient and murine adipose tissue associates with tumor burden
+### A BSAS derived from patient and murine adipose tissue associates with tumor burden
 
 To determine if genes associated with weight loss after bariatric surgery are conserved across species, we compared subcutaneous adipose tissue biopsies from female human subject samples before and after bariatric surgery using a publicly available dataset (Poitou et al., 2015) with mammary fat pad tissue isolated from HFD-Sham and HFD-VSG mice in study 1 above (Figure 6A). When comparing transcriptomic changes in adipose tissue after bariatric surgery from both humans and mouse models, there were 54 differentially expressed genes (DEGs) in common (Figure 6A), which we termed the BSAS (Supplementary file 1c). Overlapping DEGs identified pathways involved in metabolism and adipose tissue remodeling after weight loss and immune system processes by DAVID pathway analysis (Figure 6B). We next examined the relationship between BSAS and tumor burden in our models with divergent tumor growth patterns. Of the 54 genes in this BSAS, 11 genes significantly correlated to volumes of HFD-Sham and HFD-VSG tumors, which is shown in Figure 6C. We termed these 11 genes the tumor associated BSAS (T-BSAS) gene signature (Figure 6C). Seven of the genes were downregulated by obesity and reversed by VSG specific weight loss including Ido1, Aldoc, Tmem125, Dgki, Slc7a4, Msc, and Ephb3, while four were inversely regulated with obesity elevating Klhl5, Nek6, Arhgap20, and Hp. For example, Ido1 expression relative to tumor size shows a significant negative correlation (Figure 6D). Overall, compared to the HFD-Sham obese group, the T-BSAS signature in HFD-VSG tumor largely resembled tumors from LFD-Sham (Figure 6C). This multi-species approach uniquely demonstrates conserved transcriptional responses impacted by bariatric surgery that associates with tumor burden.
 
@@ -128,66 +144,209 @@ In sum, despite successful and sustained weight loss, tumors in formerly obese m
 
 ## Materials and methods
 
-## Reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain and strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX:000664</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Breast cancer</td>
+      <td>Korkaya (Ouzounova et al., 2017)</td>
+      <td>E0771-luciferase</td>
+      <td>Cell purchased from ATCC and transfected with luciferase (Ouzounova et al., 2017) were a generous gift from Korkaya.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45violetFluor 450(Rat monoclonal)</td>
+      <td>Tonbo Biosciences</td>
+      <td>Cat#75–0451 U025</td>
+      <td>(1:40)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD3εBrilliant Violet 785(Armenian Hamster monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#100,355</td>
+      <td>(1:40)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD8aFITC(Rat monoclonal)</td>
+      <td>Tonbo Biosciences</td>
+      <td>Cat#35–0081 U025</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD274Brilliant Violet 711(Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#124,319</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse PD-1Brilliant Violet 421(Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#135,217</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11bRed-Fluor 710(Rat monoclonal)</td>
+      <td>Tonbo Biosciences</td>
+      <td>Cat#80–0112 U025</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ly-6CAPC(Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#128,015</td>
+      <td>(1:40)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ly-6GPerCP-Cyanine 5.5(Rat monoclonal)</td>
+      <td>Tonbo Biosciences</td>
+      <td>Cat#65–1276 U025</td>
+      <td>(1:40)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse F4/80PE(Rat monoclonal)</td>
+      <td>Tonbo Biosciences</td>
+      <td>Cat#50–4801 U025</td>
+      <td>(1:40)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Interleukin-6</td>
+      <td>Shenandoah Biotechnology Inc</td>
+      <td>Cat# 200–02</td>
+      <td>(200 pg/mL)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IfngPrimer</td>
+      <td>IDT</td>
+      <td>F:GGATGCATTCATGAGTATTGCR:GTGGACCACTCGGATGAG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Prf1Primer</td>
+      <td>IDT</td>
+      <td>F:GAGAAGACCTATCAGGACCA, R:AGCCTGTGGTAAGCATG,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GzmbPrimer</td>
+      <td>IDT</td>
+      <td>F:CCTCCTGCTACTGCTGAC, R:GTCAGCACAAAGTCCTCTC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GzmbPrimer</td>
+      <td>IDT</td>
+      <td>F:TTCGGAACTGAGGCCATGATT, R:TTTCGCTCTGGTCCGTCTTG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PD-L1(Rat monoclonal)</td>
+      <td>BioXcell</td>
+      <td>Clone 10 F.9G2, #BE0101</td>
+      <td>(8 mg/kg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG2b isotype control(Rat monoclonal)</td>
+      <td>BioXcell</td>
+      <td>Clone LTF-2, #BE0090</td>
+      <td>(8 mg/kg)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents
 
 All reagents were obtained from Sigma-Aldrich (St. Louis, MO) unless otherwise noted. Fetal bovine serum (FBS, Gibco, Waltham, MA), RPMI 1640 (Corning, Tewksbury, MA), 100× L-glutamine, 100× penicillin/streptomycin HyClone (Pittsburgh, PA), and Gibco 100× antibiotic mix were obtained from Thermo Fisher (Waltham, MA). Matrigel is from Corning (Tewksbury, MA). Antibodies for flow are described in key resources table and purchased from Tonbo (San Diego, CA), Thermo Fisher, and Biolegend (San Diego, CA).
 
-## Mice and diets
+### Mice and diets
 
 Animal studies were performed with approval and in accordance with the guidelines of the Institutional Animal Care and Use Committee (IACUC) at the University of Tennessee Health Science Center (Animal Welfare Assurance Number A3325-01) and in accordance with the National Institutes of Health Guide for the Care and Use of Laboratory Animals. The protocol was approved under the protocol identifier 21.0224. All animals were housed in a temperature-controlled facility with a 12 hr light/dark cycle and ad libitium access to food and water, except where indicated. Three-week-old female C57BL/6J (Jackson stock number: 000664) mice were shipped to UTHSC and acclimated 1 week. Four-week-old mice were randomized to either obesogenic HFD (D12492i – 60% kcal derived from fat) or LFD (D12450Ji- 10% kcal derived from fat) from Research Diets Inc (New Brunswick, NJ) for 16 weeks (age 4 weeks to 20 weeks old, study design Figure 1A). Mice resistant to DIO, as defined by less than 28 g after 16 weeks of HFD, were excluded from the study. DIO mice received either a bariatric surgery or sham control surgery and dietary intervention as described below.
 
-## Body weight and composition
+### Body weight and composition
 
 Body weight was measured 2×/week. Body composition including lean mass, fat mass, free water content, and total water content of non-anesthetized mice was measured weekly using EchoMRI-100 quantitative magnetic resonance whole body composition analyzer (Echo Medical Systems, Houston, TX).
 
-## Vertical sleeve gastrectomy
+### Vertical sleeve gastrectomy
 
 To reduce bariatric surgery-associated weight loss, perioperative measures included providing liquid diet (Ensure Original Milk Chocolate Nutrition Shake, Abbott, Chicago, IL) and DietGel recovery (Clear H2O, Portland, ME, ID# 72-06-5022) 1 day before surgery to all mice. At 4 hr before surgery, solid food was removed to reduce stomach contents. For 4 hr pre-surgery, mice were maintained half on half off a heat pad in clean new cages. Surgery was performed under isoflurane anesthesia. VSG was performed as previously described (Yin et al., 2012) with additional control dietary intervention for comparison of weight loss approaches. The stomach was clamped, and the lateral 80% of the stomach was removed with scissors. The remaining stomach was sutured with 8–0 to create a tubular gastric sleeve. All treatment groups not receiving VSG had a sham surgery performed. For sham, an abdominal laparotomy was performed with exteriorization of the stomach. Light pressure with forceps was applied to the exteriorized stomach. For both VSG and sham surgeries, the abdominal wall was closed with 6–0 sutures and skin closed with staples. Mice received carprofen (5 mg/kg, subcutaneous, once daily) as an analgesic immediately prior to and once daily for 3 days following surgery. Mice were given 1 mL saline at time of surgery. Perioperative procedures were performed in accordance with the literature (Doerning et al., 2018; Stevenson et al., 2019). For 12 hr post-surgery, mice were maintained half on half off a recovery heat pad. Mice were provided Ensure liquid diet (as above), DietGel recovery, and solid food pellets ad libitium for 48 hr post-surgery. HFD-fed DIO mice receiving VSG (‘HFD-VSG’) were maintained on the same HFD for 5 weeks following surgery until euthanasia at study endpoint (Figure 1A). Control groups that were lean (‘LFD-Sham’) or DIO (‘HFD-Sham’) were maintained on respective LFD or HFD diets following sham surgery. For dietary intervention weight loss, DIO mice received sham surgery and were subjected to weight loss intervention following sham surgery for 5 weeks until endpoint. ‘Weight-matched’ (WM) mice were controls to the HFD-VSG mice by weight matching through restricting intake of HFD (Sipe et al., 2017). On average, mice consumed 1.7 g (ranging from 1.0 to 2.5 g or 8.84 kcal [5.2–13.0 kcal]) per day of HFD. Mice were fed at the start of the dark cycle. 78.9% of VSG mice survived to endpoint (30/38).
 
-## Tumor cell implantation
+### Tumor cell implantation
 
 E0771 murine adenocarcinoma breast cancer cell line was originally isolated from a spontaneous tumor from C57BL/6 mouse. E0771 cells were purchased from ATCC (CRL-3461) and stable transfected to express luciferase (luc) (Ouzounova et al., 2017) by the Korkaya group at Augusta University (Pingili et al., 2021; Ouzounova et al., 2017). Cells tested negative for mycoplasma (Lonza, Basel) and were cultured as described previously, cell identity verified by breast cancer subtype expression analysis (Pingili et al., 2021). Briefly, cells were cultured in RPMI containing 10% FBS, 100 U/mL of penicillin, and 100 μg/mL streptomycin in a humidified chamber at 37°C under 5% CO2. E0771 cells were injected in the left fourth mammary fat pad of 22-week-old C57BL/6J females at 250,000 cells in 100 μL of 75% RPMI/25% Matrigel. When tumors became palpable (typically 1 week after implantation), tumor growth was monitored 2×/week by measuring the length and width of the tumor using digital calipers. Tumor volume was calculated using the following formula: volume = (width)2 × (length)/2 (Pingili et al., 2021). No tumors failed to take, and tumor regression was not detected. At the endpoint on day 21 after tumor cell injection, excised tumor mass was determined.
 
-## Immune checkpoint blockade
+### Immune checkpoint blockade
 
 In a separate experimental cohort limited to HFD-VSG and controls including LFD-Sham, HFD-Sham, and WM-Sham, mice were subjected to the same dietary and surgical study design above (Figure 1A). After 20 weeks on LFD or HFD, 24-week-old mice received either a sham or VSG surgery. Two weeks following surgery, mice were injected with E0771-luc cells as above. ICB included anti-PD-L1 antibody (Clone 10 F.9G2, #BE0101) and IgG2b isotype control (Clone LTF-2, #BE0090), purchased from BioXcell (West Lebanon, NH). Antibody administration by intraperitoneal injection began 3 days after E0771 cell injection when tumors were palpable (width of >2.5 mm). Mice were injected every third day for 21 days until endpoint (8 mg/kg) (Rigo et al., 2017).
 
-## Tissue and blood collection
+### Tissue and blood collection
 
 Three weeks after tumor implantation (i.e. 5 weeks after surgery), mice were fasted for 4 hr and anesthetized. Blood was collected via cardiac puncture into EDTA-coated vials. Plasma was separated from other blood components by centrifugation at 1200×g for 45 min at 12°C. Mammary tumors, tumor adjacent mammary fat pad, unaffected inguinal mammary fat pad, and gonadal adipose were weighed and either flash frozen in liquid nitrogen, placed into a cassette and formalin-fixed, or digested into a single cell suspension for flow cytometry. All frozen samples were stored at −80°C until analyzed.
 
-## Plasma adipokines and cytokines
+### Plasma adipokines and cytokines
 
 Plasma collected at sacrifice was used for measuring leptin and IL-6 using the Milliplex MAP Mouse Metabolic Hormone Magnetic Bead Panel in the Luminex MAGPIX system (EMD Millipore, Billerica, MA).
 
-## Flow cytometric analysis of tumors and adjacent mammary adipose tissue
+### Flow cytometric analysis of tumors and adjacent mammary adipose tissue
 
 Flow cytometry analysis was done as previously described (Pingili et al., 2021). In brief, excised tumors (200 mg) were dissociated in RPMI media containing enzyme cocktail mix from the mouse tumor dissociation kit (Miltenyi Biotec, Auburn, CA) and placed into gentleMACS dissociators per manufacturer’s instructions. Spleen single cell suspensions were obtained by grinding spleens against 70 μm filter using a syringe plunger. Following red blood cell lysis (Millipore Sigma, St. Louis, MO), viability was determined by staining with Ghost dye (Tonbo Biosciences Inc) followed by FcR-blocking (Tonbo). Antibodies were titrated, and separation index was calculated using FlowJo v. 10 software. Cells were stained with fluorescently labeled antibodies and fixed in Perm/fix buffer (Tonbo). Stained cells were analyzed using Bio-Rad ZE5 flow cytometer. Fluorescence minus one (FMO) stained cells and single color Ultracomp Beads (Invitrogen, Carlsbad, CA) were used as negative and positive controls, respectively. Data was analyzed using FlowJo v. 10 software (Treestar, Woodburn, OR). Total immune cells from tumor and tumor adjacent mammary fat pad (including TdLN) were gated by plotting forward scatter area versus side scatter area, single cells by plotting side scatter height versus side scatter area, live cells by plotting side scatter area versus Ghost viability dye, and immune cells by plotting CD45 versus Ghost viability dye. T cells were gated as follows in tumor CD3+ T cells (CD3+) and CD8+ T cells (CD3+ and CD8+). Macrophages are gated as CD11b+ and F480+. M-MDSC are gated as CD11b+ Ly6Chigh, Ly6G−. Non-immune cells were gated as CD45− and MFI for PD-L1. Gates were defined by FMO stained controls and verified by back-gating of cell populations. Gating schema is shown in supplementary file 2.
 
-## Flow cytometric analysis of E0771 breast cancer cells
+### Flow cytometric analysis of E0771 breast cancer cells
 
 E0771-luc cells were treated with recombinant mouse IL-6 (200 pg/mL) for 4 hr. Representative biological replicate plotted with N=3 biological replicates with significance. Following trypsinization, cells were stained with Ghost dye (Tonbo Biosciences Inc) followed by FcR-blocking (Tonbo) and fluorescent PD-L1 antibody. Flow cytometry performed and analyzed as above for PD-L1 MFI.
 
-## Tumor and mammary fat pad RNA-seq
+### Tumor and mammary fat pad RNA-seq
 
 mRNA was extracted from tumor tissue using RNeasy mini kit (QIAGEN, Germantown, MD) and mammary fat pad tissue using a kit specific for lipid rich tissue (Norgen Biotek, Ontario, Canada). The integrity of RNA was assessed using Agilent Bioanalyzer and samples with RIN >8.0 were used. Libraries were constructed using NEBNext Ultra RNA Library Prep Kits (non-directional) for Illumina, following manufacturer protocols. mRNA was enriched using oligo-dT beads. Libraries were sequenced on NovaSeq 6000 using paired-end 150 bp reads. There was no PhiX spike-in. Data was analyzed as described previously (Pingili et al., 2021; Choi et al., 2021). RNA-seq statistical differences between experimental groups were determined as described previously (Pingili et al., 2021). In brief, Benjamini-Hochberg procedure was used to control false discovery rate (FDR) for adjusted p value . RNA-seq data has been uploaded as GEO GSE174760, GSE174761, and GSE174762. Transcript-level abundance was imported into gene-level abundance with the R package tximport. Genes with low expression were identified and filtered out from further analysis using filterByExpr function of the edgeR package in R software. Voom transformation function was applied to normalize log2-cpm values using mean-variance trend in the limma software package. ClaNC was used to create classifier genes that characterize the groups of interest for semi-supervised heatmaps. DAVID v6.8 was used for pathway analysis and enriched pathways defined as an FDR less than 10 percent (Huang et al., 2009). Immune infiltration estimations based on bulk gene expression data from RNA-seq were plotted using TIMER2.0 (Li et al., 2020a) and CIBERSORT (Newman et al., 2015).
 
-## Bariatric surgery patient RNA-seq
+### Bariatric surgery patient RNA-seq
 
 Patient gene expression from subcutaneous adipose tissue pre- and post-bariatric surgery was downloaded from GSE65540 (Poitou et al., 2015), and counts were normalized using counts per million. EdgeR was used for differential expression analysis, and significance was defined as adjusted p value of <0.1. Benjamini-Hochberg was used to calculate the FDR. Mouse and human Venn diagram was created using the interactive Venn website.
 
-## Gene expression
+### Gene expression
 
 Total RNA was isolated from tumors and reversed transcribed to cDNA using High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems). Quantitative RT-PCR was performed with iTaq Universal SYBR Green Supermix (Bio-Rad). Primers span an exon-exon junction and were designed with Primer-BLAST (NCBI). Relative gene expression was calculated normalized to 18S transcript with 2–∆∆Ct. Primer sequences are:
 
-## Histology and quantification
+### Histology and quantification
 
 Tumors and normal fourth mammary fat pads (contralateral to the injected tumor bearing mammary fat pad) were isolated at the time of sacrifice and fixed in 10% formalin. Formalin fixed paraffin embedded (FFPE) sections from tumors and adipose were cut at 5 µm thickness. FFPE sections were stained with hematoxylin and eosin and scanned by Thermo Fisher (Panoramic 250 Flash III, Thermo Fisher, Tewksbury, MA) scanner, and adipocyte area of N=50 adipocytes were quantified using software (Case Viewer) along the longest diameter per adipocyte.
 
-## Statistics
+### Statistics
 
 Statistical differences between experimental groups were determined using one-way or two-way ANOVA (as noted in figure legends) with Fisher’s LSD test for individual comparisons. Outliers were identified and excluded based on the ROUT method with Q=1%. For body weight, body composition, and tumor volume over time within animals, data was treated as repeated measures. All statistics were performed using statistical software within Graphpad Prism (Graphpad Software, Inc, La Jolla CA). All data are shown as mean ± SEM. p Values less than 0.05 were considered statistically significant. Sample size was determined by power analysis calculations and pilot experiments. Group allocation was done to ensure equal distribution of starting body weight between groups.
 
-## Study approval
+### Study approval
 
 Animal studies were performed with approval and in accordance with the guidelines of the IACUC at the University of Tennessee Health Science Center and in accordance with the National Institutes of Health Guide for the Care and Use of Laboratory Animals.

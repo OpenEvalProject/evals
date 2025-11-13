@@ -38,11 +38,91 @@ In this study, we implanted percutaneous SCS leads into the lateral epidural spa
 
 ## Results
 
-## SCS evokes sensory percepts localized to the missing limb
+### SCS evokes sensory percepts localized to the missing limb
 
 Three SCS leads were implanted in the cervical epidural space in each of four individuals with upper-limb amputation (Table 1). The percutaneous implant was maintained for the full 29 day duration of the study for all subjects except Subject 2, who requested removal of the leads after two weeks due to personal factors and discomfort from caudal migration of one of the leads. We stimulated with both monopolar and multipolar electrode configurations. Stimulus amplitudes, frequencies, and pulse widths ranged 0–6 mA, 1–300 Hz, and 50–1000 µs, respectively.
 
+**Table 1.**
+ Subject information.Demographic, amputation, and study-related information for each subject.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th colspan="4">Amputation characteristics</th>
+      <th>Implant duration (days)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Years since</th>
+      <th>Side</th>
+      <th>Level</th>
+      <th>Cause</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>67</td>
+      <td>Female</td>
+      <td>&gt;5</td>
+      <td>Right</td>
+      <td>Shoulder disarticulation</td>
+      <td>Necrotizing fasciitis</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>33</td>
+      <td>Male</td>
+      <td>&gt;16</td>
+      <td>Left</td>
+      <td>Transhumeral</td>
+      <td>Trauma</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>38</td>
+      <td>Female</td>
+      <td>&gt;2</td>
+      <td>Right</td>
+      <td>Transhumeral</td>
+      <td>Trauma</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>44</td>
+      <td>Female</td>
+      <td>&gt;3</td>
+      <td>Right</td>
+      <td>Transradial</td>
+      <td>Compartment syndrome</td>
+      <td>29</td>
+    </tr>
+  </tbody>
+</table>
+
 In all four subjects, epidural SCS evoked sensory percepts in distinct regions of the missing limb including the fingers, palm, and forearm. While some sensory percepts were diffuse and covered the entire missing limb, other percepts were localized to a very specific area, such as the ulnar region of the palm or wrist, or individual fingers. Figure 1 shows select representative percepts for all subjects; for an interactive visualization of all evoked percepts localized to the missing limb, see Supplementary file 1. In Subjects 1 and 2, only multipolar stimulation evoked sensory percepts that were localized to focal regions of the missing hand and fingers (Figure 1—figure supplement 1). In Subjects 2 and 3, most percepts were accompanied by a sensation on the residual limb. This was the case even when there was a percept that was focally restricted to a distal region of the missing limb, such as a finger (e.g. purple thumb/shoulder sensation in Subject 2, Figure 1). These additional proximal sensations emanated predominantly from the end of the residual limb. The incidence rate of such simultaneous sensations varied from 0% and 8% for Subjects 1 and 4 to 92% and 98% for Subjects 2 and 3. There were also a subset of mono- and multi-polar electrodes that evoked sensations bilaterally or only in the contralateral intact limb (14.3% and 15.4% of all electrodes that generated a sensation across all subjects; n = 447). While these sensations might be useful in a neuroprosthesis for people with bilateral amputation, they were not a focus of this study and were not included in any of the analyses presented here.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/54349/elife-54349-fig1-v1.jpg)
+
+**Figure 1.:** Colored areas represent selected projected fields that were reported for more than two testing sessions and remained stable for at least two weeks. Each color represents a unique stimulation electrode per subject. If a pair of percepts had more than 70% overlap, only the more focal percept is shown here (Charkhkar et al., 2018). For a complete presentation of all sensations included in this study, see interactive Supplementary file 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54349/elife-54349-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The number of electrodes that evoked a sensory percept at a specific anatomical location. Lighter, hatched colored bars indicate multipolar electrodes and darker colored bars indicate monopolar electrodes.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/54349/elife-54349-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Panel for free hand drawing to show the location and extent of the sensory percept. (B and C) Questionnaire to describe the modality and intensity of the sensory percept and associated phantom limb pain, if any.
 
 We sought to determine if stimulation of specific regions of the spinal cord consistently evoked sensations that were perceived to emanate from specific regions of the arm and hard across subjects. We hypothesized that the location of the perceived sensation would be driven by the location of the cathodic electrode with respect to the spinal cord according to expected dermatomes. Figure 2 shows the proportion of sensory percepts in a specific anatomical region (dashed lines, Figure 2A) evoked by electrodes situated at each spinal level (Figure 2B,C). There were notable similarities between the perceived locations and dermatomes (Foerster, 1933; Lee et al., 2008), however there was considerable inter-subject variability and sensations were not evoked in all regions of the hand in all subjects (Figure 2C). For example, sensations reported in the thumb were predominantly evoked by electrodes located near the C6 root in Subjects 2 and 4 (0%, 67%, 26%, and 50% for Subjects 1–4 respectively). Similarly, a high proportion of the percepts localized to the 2nd and 3rd digits were evoked by electrodes near the C7 root in Subjects 2 and 3 (0%, 50%, 66%, and 23%, for Subjects 1–4, respectively). However, sensations in 4th and 5th digits (within the C8 dermatome) were evoked predominantly by electrodes near the C7 root in Subjects 2 and 3 (0%, 75%, 78%, and 23% in Subjects 1–4, respectively). Interestingly, for Subject 4, electrodes near the C6 root produced most of the percepts in the hand (2nd and 3rd digits: 52%, 4th and 5th digits: 45%). Moreover, almost all the electrodes in Subject 1, including those that evoked focal percepts in the fingers and palm, were located near the T1 root. Overall, these results demonstrate that, while there was some consistency between the locations of stimulation and dermatomes, there was considerable inter-subject variability in many of the evoked sensations.
 
@@ -54,15 +134,76 @@ We asked the subjects to describe the evoked sensations using a set of words pro
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/54349/elife-54349-fig3-v1.jpg)
 
-**Figure 3.:** Each annulus represents a modality descriptor that the subjects could select. The innermost annulus represents sensations where a ‘tingle’ descriptor was used. The middle annulus represents the fraction of each tingle descriptor that co-occurred with a ‘mechanical’ descriptor. The outermost annulus represents the fraction of tingle and mechanical descriptors that co-occurred with a ‘movement’ descriptor. For Subjects 1, 2, and 4, most sensory percepts were either paresthetic or of mixed modality (90.2%, 75.2%, and 96.5%, respectively). Subject 3 predominantly reported naturalistic sensations (79.9%) with most of those percepts described as pure vibration. An interactive version of this figure with expandable sectors and annotations for the percent occurrence of each descriptor is available in Supplementary file 3. Source data are available in Figure 3—source data 1.Figure 3—source data 1.Figure 3.
+**Figure 3.:** Each annulus represents a modality descriptor that the subjects could select. The innermost annulus represents sensations where a ‘tingle’ descriptor was used. The middle annulus represents the fraction of each tingle descriptor that co-occurred with a ‘mechanical’ descriptor. The outermost annulus represents the fraction of tingle and mechanical descriptors that co-occurred with a ‘movement’ descriptor. For Subjects 1, 2, and 4, most sensory percepts were either paresthetic or of mixed modality (90.2%, 75.2%, and 96.5%, respectively). Subject 3 predominantly reported naturalistic sensations (79.9%) with most of those percepts described as pure vibration. An interactive version of this figure with expandable sectors and annotations for the percent occurrence of each descriptor is available in Supplementary file 3. Source data are available in Figure 3—source data 1.
+
+**Table 2.**
+ Descriptors provided for characterizing the evoked percepts.The various descriptors that subjects were asked to choose from while describing the modality and intensity of the evoked sensory percept. Visual analog scales (VAS) were presented as a slider bar and no specific numbers were shown.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Naturalness</th>
+      <th>Depth</th>
+      <th>Mechanical</th>
+      <th>Tingle</th>
+      <th>Movement</th>
+      <th>Temperature</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">VAS (Totally Unnatural to Totally Natural)</td>
+      <td>Skin surface</td>
+      <td>Touch</td>
+      <td>Electrical</td>
+      <td>Vibration</td>
+      <td rowspan="5">VAS (Very Cold to Very Hot)</td>
+    </tr>
+    <tr>
+      <td>Below skin</td>
+      <td>Pressure</td>
+      <td>Tickle</td>
+      <td>Body/limb/joint</td>
+    </tr>
+    <tr>
+      <td>Diffuse</td>
+      <td>Sharp</td>
+      <td>Itch</td>
+      <td>Across skin</td>
+    </tr>
+    <tr>
+      <td>Both</td>
+      <td></td>
+      <td>Pins and Needles</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VAS (intensity)</td>
+      <td>VAS (intensity)</td>
+      <td>VAS (intensity)</td>
+    </tr>
+  </tbody>
+</table>
 
 More naturalistic modalities, like ‘touch’ and ‘pressure’, were elicited to varying degrees among the subjects (0.5%, 60.5%, 25.2% and 75.8% of unique stimulation parameter combinations for Subjects 1–4, respectively). Interestingly, sensations described as purely touch or pressure were reported in 8.25% and 19.5% of all evoked percepts in Subjects 2 and 3, respectively. Otherwise, these naturalistic sensations were commonly accompanied by a paresthesia, as particularly seen in Subject 4. Percepts containing a dynamic (‘movement’) component that may be described as proprioceptive were evoked at least once in all subjects. Subjects were able to describe distinct proprioceptive sensations in the phantom limb such as opening and closing of the hand, movement of the thumb, and flexing of the elbow. However, unlike the tactile percepts that were predominantly stable across days, these proprioceptive sensations could be repeatedly evoked only for a few minutes even with consistent stimulus parameters. Only in the case of Subject 4 (the subject with trans-radial amputation), were we able to evoke sensations of thumb and wrist movement reliably over longer time courses, spanning multiple days and weeks. Interestingly, these proprioceptive percepts were elicited by a set of three closely situated electrodes over a narrow range of stimulus parameters (stimulus amplitude = 3 mA, stimulus frequency = 1–5 Hz).
 
 Varying the stimulation frequency influenced the modality of the evoked sensation in Subject 3, but not in the other subjects. For Subject 3, the sensory percepts that were described as ‘touch’ or ‘pressure’ occurred in up to 90% of trials at low stimulation frequencies (below 20 Hz) while stimulation frequencies above 50 Hz evoked percepts that were always characterized as mixed modality. Subject 1 never reported these naturalistic sensations, which could be because we never stimulated at frequencies below 20 Hz, while Subjects 2 and 4 reported naturalistic, mixed, and paresthetic sensations independent of the stimulus frequency.
 
-## Psychophysical assessment of evoked percepts
+### Psychophysical assessment of evoked percepts
 
 We quantified the detection threshold for sensations in the missing limb in all four subjects using a two-alternative forced-choice paradigm. Because Subjects 2 and 3 frequently experienced co-evoked sensations in the phantom and on the residual limb, for psychophysical assessments, we asked them to focus only on the distal phantom percept whenever stimulation co-evoked a sensation in the residual limb. In this task, the subject reported which of two intervals contained the stimulus train. With a randomized presentation of various stimulation amplitudes, we measured the detection threshold as the minimum amplitude at which the subject could correctly report the interval containing the stimulation train with 75% accuracy (Figure 4A). Mean detection thresholds (Figure 4B) for Subjects 1–4 were 3.75 mA (n = 2 electrodes), 1.25 ± 0.36 mA (n = 5 electrodes), 1.58 ± 0.39 mA (n = 14 electrodes) and 1.94 ± 0.27 mA (n = 14 electrodes), respectively.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/54349/elife-54349-fig4-v1.jpg)
+
+**Figure 4.:** (A) Example data from a detection task for a single electrode from Subject 2. Data were collected using a threshold tracking method and a psychometric function was fit to the data. The detection threshold was determined to be 982 µA. (B) Scatter plot showing the distribution of all the detection thresholds for Subjects 1 (blue), 2 (orange), 3 (green) and 4 (purple). (C) Example data for the just-noticeable differences at two different standard amplitudes for one electrode in Subject 3 and (D) Subject 4. Error bars represent SD. (E) Example data from Subject 3 of a free magnitude estimation task carried out on two different days (light and dark green circles) for a single electrode. Data from multiple days were compared after normalizing each electrode to its mean response. Perceived intensity varied linearly with stimulus amplitude for each individual testing session (dashed and solid green lines) as well as when taken together (black solid line). The slope of these lines was measured in units of mA-1 (F) Distribution of the stimulation amplitude and the reported intensity of the evoked percept for all subjects. Stimulation amplitude and reported intensity were independently discretized into three linearly spaced (low, medium, and high) bins and subject ratings of sensation intensity accurately predicted these bins. The stacked bar graph represents the percentage of times a binned magnitude response occurred for the corresponding discretized amplitude. Source data for panels B and F are available in Figure 4—source data 1 and Figure 4—source data 2 , respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54349/elife-54349-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/54349/elife-54349-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Stimulation amplitude and reported intensity were independently discretized into five linearly spaced bins. The stacked bar graph represents the percentage of times a binned magnitude response occurred for the corresponding discretized amplitude. Overall accuracy of predicting stimulation bins from subject ratings of sensation intensity was lower than the three-target task shown in Figure 4F. Source data are available in Figure 4—figure supplement 2—source data 1.
 
 We measured just-noticeable differences (JND) in stimulation amplitude with a two-alternative forced choice task in Subjects 3 and 4. We evaluated the goodness-of-fit using the probability of transformed likelihood ratio (pTLR), which spans 0–1 with a higher value signifying a better fit and values below 0.05 signifying an unacceptable fit. In Subject 3, for one electrode, the subject could perceive a change of 86 µA (slope, β = 0.045, pTLR = 0.58) at 75% accuracy when the standard amplitude was 2.5 mA, and a higher standard amplitude of 4 mA increased the JND to 280 µA (slope, β = 0.073, pTLR = 0.83; Figure 4C). In Subject 4, the JNDs showed a similar dependence on standard amplitude with mean JND2.5=60 ± 21 µA (median slope, β = 0.040, median pTLR = 0.79) and mean JND4.0=338 ± 98 µA (median slope, β = 0.005, median pTLR = 0.40, n = 5 electrodes; Figure 4D and Figure 4—figure supplement 1). To put these numbers in context, for Subject 4, with mean threshold at approximately 2 mA and maximum stimulation amplitude at 6 mA, the JNDs represent 1.3% (at standard amplitude of 2.5 mA) and 9% (at standard amplitude of 4 mA) of the available stimulation range.
 
@@ -74,9 +215,9 @@ Since we found a consistent linear relationship between percept intensity and st
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/54349/elife-54349-fig5-v1.jpg)
 
-**Figure 5.:** (A) Example of the stability of percept area with increasing amplitude for one electrode in Subject 3. (B) Summary of the relationship between stimulation amplitude and percept characteristics for each electrode that evoked a percept in the phantom hand. The slope of the linear fit between stimulation amplitude and reported intensity was obtained from magnitude estimation trials. The slope of the linear fit between stimulation amplitude and percept area was obtained from percept mapping trials. Lighter shades represent electrodes where p. The null hypothesis is that the slope of the linear fit is zero. Source data for panel B are available in area < 0.01Figure 5—source data 1.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Example of the stability of percept area with increasing amplitude for one electrode in Subject 3. (B) Summary of the relationship between stimulation amplitude and percept characteristics for each electrode that evoked a percept in the phantom hand. The slope of the linear fit between stimulation amplitude and reported intensity was obtained from magnitude estimation trials. The slope of the linear fit between stimulation amplitude and percept area was obtained from percept mapping trials. Lighter shades represent electrodes where parea < 0.01. The null hypothesis is that the slope of the linear fit is zero. Source data for panel B are available in Figure 5—source data 1.
 
-## Stability of SCS electrodes and evoked sensory percepts
+### Stability of SCS electrodes and evoked sensory percepts
 
 Lead migration is a common clinical complication for SCS, with an incidence rate as high as 15–20% (Cameron, 2004; Kinfe et al., 2014; Mekhail et al., 2011; Mironer et al., 2004). Lead migration would change the location and modality of evoked sensations, which could limit the long-term viability of SCS and would also complicate the scientific utility of percutaneous SCS as a testbed for novel neuroprosthetic techniques. We performed weekly X-rays that allowed us to monitor the position of the leads and quantify migration over the duration of the implant. Superimposing the intraoperative fluoroscopy image and the final X-ray (Figure 6A) revealed that lead migration was largely restricted to the rostro-caudal axis. In all subjects, the largest caudal migration was observed when comparing the intraoperative fluoroscopy image with the X-ray at the end of first week (Figure 6B). One of the leads in Subject 2 almost completely migrated out of the epidural space in this post-operative period (Figure 6B), rendering it unusable for stimulation experiments. In contrast to the migration that occurred during the first week, X-rays from the first and last week of testing showed minimal lead migration (Figure 6B). In the weeks following the initial migration, the median migration in the rostro-caudal direction across the three leads in any subject never exceeded 5 mm. For all subjects, the initial placement of the leads rostral to the target cervical levels prevented loss of coverage of those spinal levels following the caudal migration of the leads.
 
@@ -88,7 +229,7 @@ We assessed the stability of each evoked percept throughout the duration of the 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/54349/elife-54349-fig7-v1.jpg)
 
-**Figure 7.:** (A) Example sensory percepts from the hand for a single electrode in Subjects 1–4. For Subject 2, the percepts are shown for weeks 1 and 2 only, as the leads were explanted after that. The percepts shown were evoked by the minimum stimulus amplitude that was tested at least once per week for the maximal number of weeks. Each column shows the location of all percepts evoked for that week of testing. Multiple examples of the percepts evoked during the week are superimposed on each other as indicated by different shades. (B) Time course of the average stimulation threshold (in nC) for evoking a percept in the phantom hand for each subject. Weeks with a significant change in threshold are annotated with an asterisk. (C) Stability of the location of the evoked percept in the phantom hand. For each electrode, the centroid location of the evoked percept was compared between successive weeks. (D) Stability of the area of the evoked percept in the phantom hand. For each electrode, the area of the evoked percept was compared between successive weeks. Source data for panels B-D are available in Figure 7—source data 1, Figure 7—source data 2, and Figure 7—source data 3, respectively.Figure 7—source data 1.Figure 7B.Figure 7—source data 2.Figure 7C.Figure 7—source data 3.Figure 7D.
+**Figure 7.:** (A) Example sensory percepts from the hand for a single electrode in Subjects 1–4. For Subject 2, the percepts are shown for weeks 1 and 2 only, as the leads were explanted after that. The percepts shown were evoked by the minimum stimulus amplitude that was tested at least once per week for the maximal number of weeks. Each column shows the location of all percepts evoked for that week of testing. Multiple examples of the percepts evoked during the week are superimposed on each other as indicated by different shades. (B) Time course of the average stimulation threshold (in nC) for evoking a percept in the phantom hand for each subject. Weeks with a significant change in threshold are annotated with an asterisk. (C) Stability of the location of the evoked percept in the phantom hand. For each electrode, the centroid location of the evoked percept was compared between successive weeks. (D) Stability of the area of the evoked percept in the phantom hand. For each electrode, the area of the evoked percept was compared between successive weeks. Source data for panels B-D are available in Figure 7—source data 1, Figure 7—source data 2, and Figure 7—source data 3, respectively.
 
 We also characterized stability in terms of the size (area) and location (centroid) of percepts evoked in the missing hand. The centroid and area were calculated for all percepts evoked at the minimum stimulus amplitude that was tested at least once each week during the implant. If no stimulus amplitude was tested during every week of testing, the lowest stimulus amplitude that was tested for the next highest number of weeks (for at least two weeks) was chosen. We quantified the migration of the mean centroid location across all stimulus repetitions for each week with respect to the mean centroid location of the previous week for each electrode (Figure 7C). Across all subjects, the evoked percepts exhibited a median migration of 25.2 mm between weeks 1 and 2, 11.6 mm between weeks 2 and 3, and 9.9 mm between weeks 3 and 4. This week-to-week decrease in centroid migration follows the trend of decreased week-to-week vertical electrode migration (Figure 7B). Similarly, the change in area for each week was calculated with respect to the mean area of the previous week for each electrode (Figure 7D). Across all subjects, the median change in area of percepts evoked in the missing hand was 8.1 cm2 between weeks 1 and 2, 0.14 cm2 between weeks 2 and 3, and 1.1 cm2 between weeks 3 and 4. We constructed two separate auto-regressive time series model to examine the changes in distributions of area and centroid distance over time, adjusting for autocorrelations in the data. We found a significant decrease in area over time across all weeks, (β = −0.201, p<0.01). For centroid migration, there was a decrease during weeks 2 (β = −23.224, p<0.05) and 3 (β = −40.585, p<0.01).
 
@@ -96,7 +237,7 @@ We also characterized stability in terms of the size (area) and location (centro
 
 In this work, we show that epidural SCS has the potential to be an effective and stable approach for restoring sensation in people with upper-limb amputations. Further, we believe that percutaneous SCS can be used as an effective platform for development of somatosensory neuroprostheses, especially for labs that focus on advanced prosthetic control but have not developed their own stimulation technologies. The electrodes used in this study are commercially available and were implanted using standard surgical techniques under local anesthesia during a procedure spanning 3–4 hr. In all subjects, we were able to evoke sensory percepts that were focal and localized to the distal missing limb. Critically, this included people with amputations ranging from trans-radial through shoulder disarticulation. The repertoire of sensory percepts elicited varied across subjects and thus, this approach would require user-dependent characterization, which is similar to the results reported by other studies of peripheral somatosensory neuroprostheses (Charkhkar et al., 2018; Graczyk et al., 2018; Petrini et al., 2019c; Tan et al., 2015). While most of the stimulation parameters evoked paresthesias, some of the percepts were more naturalistic. The intensity of the evoked sensations could be modulated by varying stimulation amplitude with little or no increase in the perceived area of the evoked sensations. Below we summarize these results and discuss their implications for the design of a somatosensory neuroprosthesis.
 
-## Epidural SCS evokes sensations localized to the missing hand and arm
+### Epidural SCS evokes sensations localized to the missing hand and arm
 
 SCS-evoked sensory percepts were perceived to emanate from the missing limb in all subjects. Some percepts were highly localized to a single finger or focal region of the palm, while others were diffuse, covering large regions of the limb. In our second and third subjects, distal sensations were often accompanied by a secondary sensation at the residual limb. It is unclear whether these secondary sensations are a result of neuroplastic changes in the representation of the amputated hand in the cortex or are a limitation of the selectivity of the SCS electrodes used in this study. Future studies in people with intact limbs undergoing lateral SCS may help to differentiate these effects, since those subjects would not have similar neuroplastic changes. Factors that may limit stimulation selectivity with our approach include the thickness of the cerebrospinal fluid in the subdural space and the relatively large size of the contacts on the SCS leads. Consequently, the sensory percepts evoked in this study were sometimes more diffuse than those reported in other studies using peripheral neurostimulation approaches (Charkhkar et al., 2018; Davis et al., 2016; Raspopovic et al., 2014; Tan et al., 2015). Importantly though, they are comparable in focality to those used to effectively deliver sensory feedback during recent long-term take-home studies of bidirectional prosthesis using peripheral nerve stimulation (Cuberovic et al., 2019) or targeted reinnervation (Schofield et al., 2020).
 
@@ -104,7 +245,7 @@ In all except Subject 4, monopolar stimulation primarily evoked sensations in th
 
 The relationship between the locations of the electrodes and that of the evoked percepts showed marked inter-subject variability and deviation from expected dermatomes. For example, all electrodes in Subject 1 were in the T1 region, but the reported sensations were in the missing hand, a region covered by the C6–C8 dermatomes. Recently, it has been recognized that dermatomes inadequately reflect inter-individual variability in dermatome coverage and overlap, suggesting that the variability observed in our study may reflect natural inter-subject differences (Lee et al., 2008). However, a limitation of this study is that we did not directly image the spinal cord or dorsal roots. As such, we could not determine the exact spatial arrangement of the implanted SCS electrodes relative to target neural structures. Several research groups have developed highly detailed computational modeling techniques to study how the electric fields generated in SCS interact with neural structures (Capogrosso et al., 2013; Greiner et al., 2020; Lempka et al., 2015). These techniques could potentially help illuminate the specific neural targets and pathways that were activated in this study. These observations combined with simulation studies could also inform the design of stimulation schemes and novel electrodes to improve the selectivity of our somatosensory neuroprosthesis.
 
-## Stimulation parameters primarily modulate intensity of sensation
+### Stimulation parameters primarily modulate intensity of sensation
 
 With respect to the perceptual qualities of evoked sensations in this study, we observed a robust relationship between stimulus amplitude and percept intensity. Every electrode tested across all four subjects demonstrated a statistically significant linear relationship between stimulation amplitude and perceived intensity. This is similar to what has been observed with peripheral nerve stimulation (Graczyk et al., 2016; Petrini et al., 2019b). Interestingly, we observed JNDs to be proportional to the stimulation amplitude with higher stimulation amplitudes resulting in larger JNDs. Such a relationship between JNDs and stimulus amplitude is consistent with Weber’s law which governs the behavior of most peripheral sensory receptors (Gös, 1959). We also observed that subject responses could be separated into three, but not five, intensity categories (i.e. low, medium, and high) based on the stimulation amplitude, which suggests that they would be able to successfully perform a 3-level discrimination task based only on perceived intensity, such as identifying three different force levels exerted by objects of different stiffnesses. These expected performance levels are similar to the success rates for object stiffness experiments demonstrated by others using peripheral nerve stimulation to restore somatosensation (Raspopovic et al., 2014), and it is possible that they could improve with time, training, continuous (rather than discrete) modulation of amplitude, and the addition of active efferent control of a prosthesis. Future work should focus on demonstration of such closed-loop control with sensory feedback using lateral SCS.
 
@@ -114,11 +255,11 @@ A primary aim of providing artificial somatosensory feedback has been to evoke n
 
 Only one subject (Subject 4, trans-radial amputation) reported proprioceptive percepts that were repeatedly evoked over more than a few minutes. This result aligns with other studies, which often report only limited examples of proprioceptive percepts (George et al., 2019), or which describe proprioceptive sensations that result directly from muscle contractions in the residual limb (Petrini et al., 2019a). While SCS did not evoke overt reflexive movements of the residual limb in any subject at the stimulation amplitudes used in this study, it is possible that these proprioceptive percepts result from small reflexive contractions of residual limb muscles which themselves activate muscle spindle afferents. Complex coordination of activation of muscle spindle and cutaneous (e.g. slowly adapting type II) afferents may be required for directly evoking realistic kinesthetic percepts. Future work should explore the downstream effects of stimulation of proprioceptive and cutaneous afferents on perception of kinesthesia. Regardless, we propose that even though we evoked primarily paresthetic sensations, the ability to evoke these percepts via a clinically translatable approach in individuals with high-level amputations establishes the promise of this approach towards restoring sensation.
 
-## Percutaneous SCS electrodes and evoked percepts are stable over one month
+### Percutaneous SCS electrodes and evoked percepts are stable over one month
 
 The location of the implanted SCS electrodes and the corresponding evoked percepts showed only minor migration across the duration of implantation. In clinical practice, SCS lead migration is a common complication, occurring in as many as 15–20% of cases (Cameron, 2004; Kinfe et al., 2014; Mekhail et al., 2011; Mironer et al., 2004), and is typically classified by a complete loss of paresthetic coverage of the region of interest. Repeated monitoring of both the physical location of the SCS leads and the evoked sensations demonstrated that there was some migration immediately after implantation, but minimal movement thereafter. As a preemptive measure against loss of coverage due to the initial migration, we opted to use 16-contact leads in Subjects 2–4. By placing the leads such that the most rostral contacts were above the target spinal levels, we ensured continued coverage even in the case of caudal migration. It is worth noting that we did not anchor these leads to any bony structures or nearby tissue. Future permanently implanted systems for restoring sensation using SCS can utilize these anchoring techniques and thereby reduce or eliminate lead migration (Mekhail et al., 2011). The stability in the electrodes is reflected in the stability of the evoked percepts. In the hand region, we observed a migration of evoked percepts of 10–25 mm, which is similar to the shift reported in peripheral stimulation approaches (Tan et al., 2015). Moreover, given that the spatial acuity in the palm region is approximately 8–10 mm (Catley et al., 2013; Craig and Lyle, 2001; Solomonow et al., 1977; Tong et al., 2013), the scale of migration observed is within the range that would not likely be detectable by the user.
 
-## Comparison to alternative approaches
+### Comparison to alternative approaches
 
 The techniques described in this study have both important advantages and disadvantages that should be considered when selecting an approach for restoring sensation after upper-limb amputation. A major advantage of the percutaneous approach described here is that there is a relatively low barrier to initiating clinical studies because the electrodes are commercially available from multiple manufacturers and the surgical procedures are commonly performed at most major medical centers. However, this reliance on commercially available electrodes also likely limited selectivity and focality. Regardless, a great deal of technical and scientific development can be achieved with this approach before moving on to more complex studies involving custom electrodes and implantable stimulators.
 
@@ -128,37 +269,37 @@ As compared to other techniques that focus on peripheral nerve stimulation, such
 
 An important limitation of this study is that we focused on characterizing the sensations evoked by SCS but did not demonstrate that those sensations could be used as part of a closed-loop neuroprosthetic system. While we demonstrate that many of the qualities of the evoked sensations are similar to those reported by others (e.g. sensation intensity modulates linearly with stimulation amplitude), it will be critical to demonstrate that sensations remain stable and are useful during closed-loop prosthetic applications. For example, while we did not control subject posture during any of our experiments, it will be important to demonstrate that sensations remain stable during intentional movements of the neck, shoulders, and arms. Certainly, future work will focus on achieving these demonstrations and characterizing the effects of sensory restoration via SCS on dexterous control of prosthetic limbs.
 
-## Conclusions
+### Conclusions
 
 Since this approach targets proximal neural pathways, SCS-mediated sensory restoration lends itself to use for a wide range of populations, such as individuals with proximal amputations and those with peripheral neuropathies in which stimulation of peripheral nerves may be difficult or impossible. Provided that the injury does not affect the dorsal roots and spinal cord, our results suggest that these techniques can be effective in restoring sensation, regardless of the level of limb loss. Moreover, the widespread clinical use of SCS and the well-understood risk profile provide a potential pathway towards clinical adoption of these techniques for a somatosensory neuroprosthesis.
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 The aim of this study was to investigate whether electrical stimulation of lateral structures in the cervical spinal cord could evoke sensations that are consistently perceived to emanate from the missing hand and arm. We also aimed to characterize those sensations and establish the relationship between stimulation parameters and the perceptual quality of evoked sensory percepts. Four subjects with upper-limb amputations (three females, one male; Table 1) were recruited for this study. Three amputations were between the elbow and shoulder and one was below the elbow. The time since amputation ranged from 2 to 16 years. All procedures and experiments were approved by the University of Pittsburgh and Army Research Labs Institutional Review Boards and subjects provided informed consent before participation.
 
-## Electrode implantation
+### Electrode implantation
 
 SCS leads were implanted through a minimally invasive, outpatient procedure performed under local anesthesia. With the subject in a prone position, three 8- or 16-contact SCS leads (Infinion, Boston Scientific) were percutaneously inserted into the epidural space on the dorsal side of the C5–C8 spinal cord through a 14-gauge Tuohy needle. Contacts were 3 mm long, with 1 mm inter-contact spacing. Leads were steered via a stylet under fluoroscopic guidance, and electrode placement was iteratively adjusted based on the subjects’ report of the location of sensations evoked by intraoperative stimulation. The entire procedure usually took approximately 3–4 hr. The leads were maintained for up to 29 days and subsequently explanted by gently pulling on the external portion of the lead. Subjects attended testing sessions 3–4 days per week during the implantation period. The testing sessions lasted up to a maximum of 8 hr. Lead location and migration were monitored via weekly coronal and sagittal X-rays throughout the duration of implant.
 
-## Neural stimulation
+### Neural stimulation
 
 During testing sessions, stimulation was delivered using three 32-channel stimulators (Nano 2+Stim; Ripple, Inc). The maximum current output for these stimulators was 1.5 mA per channel. In order to achieve the higher current amplitudes required for SCS, a custom-built circuit board was used to short together the output of groups of four channels, thereby increasing the maximum possible output to 6 mA per channel resulting in a total of 8 effective channels per stimulator. Custom adapters were used to connect each stimulator to eight contacts on each of the implanted leads. Custom software in MATLAB was used to trigger and control stimulation.
 
 Stimulation pulse trains were charge-balanced, cathodic-first square pulses, with either asymmetric or symmetric cathodic and anodic phases. For asymmetric pulses, the anodic phase was twice the duration and half the amplitude of the cathodic phase. Stimulation was performed either in a monopolar configuration, with the ground electrode placed at a distant location such as on the skin at the shoulder or hip, or in a multipolar configuration with one or more local SCS contacts acting as the return path. Stimulation frequencies and pulse widths ranged from 1 to 300 Hz and 50–1000 µs, respectively. The interphase interval was 60 µs. All stimulus amplitudes reported in this manuscript refer to the first phase amplitude.
 
-## Recording perceptual responses
+### Recording perceptual responses
 
 The first few sessions of testing were primarily devoted to recording the location and perceptual quality of sensory percepts evoked with various stimulation configurations. An auditory cue was provided to denote the onset of stimulation. At the offset of each stimulation train, the subject used a touchscreen interface developed in Python (Figure 1—figure supplement 2) to document the location and perceptual quality of the evoked sensation. This interface can be downloaded from Nanivadekar et al., 2020 https://github.com/pitt-rnel/perceptmapper. The location of the sensory percept was recorded by the subject using a free-hand drawing indicating the outline of the evoked percept on an image of the appropriate body segment (i.e., hand, arm, or torso). The percept quality was recorded using several descriptors: mechanical (touch, pressure, or sharp), tingle (electrical, tickle, itch, or pins and needles), movement (vibration, movement across skin, or movement of body/limb/joint), temperature, pain due to stimulation, and phantom limb pain. Each descriptor had an associated scale ranging from 0 to 10 to record the corresponding perceived intensity. Additionally, the subject was instructed to rate the naturalness (0–10) and the depth of the perceived location of the percept (on or below the skin, or both). This set of descriptors have been used previously to characterize evoked sensory percepts (Heming et al., 2010; Lenz et al., 1993). The order of stimulation electrodes and amplitudes was randomized to prevent subjects from predicting the location and perceptual qualities of sensations from previous trials. All percepts that were localized ipsilateral to the amputation were included for analysis in this work. In Figure 1, only those percepts which show less than 70% area overlap (as in Charkhkar et al., 2018) with any other percept are shown for clarity. Supplementary file 1 visualizes all the evoked percepts in an interactive fashion.
 
-## Analyzing sensory percept distribution
+### Analyzing sensory percept distribution
 
 For each trial, subjects were allowed to report more than one descriptor simultaneously. Each unique combination of ‘mechanical’, ‘movement’, and ‘tingle’ descriptors was considered a separate modality for the evoked percept. All percepts that contained a descriptor for tingle (‘electric current’, ‘tickle’, ‘sharp’, ‘pins and needles’) were considered paresthetic and were grouped together. A sunburst plot was constructed for each subject to analyze the fraction of paresthetic and non-paresthetic percepts that contained mechanical or movement components. Therefore, all unique modalities were divided in to three groups: paresthetic percepts that had ‘tingle’ but no ‘mechanical’ or ‘movement’ component (Figure 3, teal sectors), mixed percepts that had a ‘mechanical’ and/or ‘movement’ component and ‘tingle’ (Figure 3, grey sectors), and non-paresthetic percepts that only had ‘mechanical’ and/or ‘movement’ components (Figure 3 red sectors). For each sunburst plot, the inner, middle, and outer annuli represent ‘tingle’, ‘mechanical’, and ‘movement’ modality descriptors, respectively. Each sector represents a unique descriptor and the size of each sector represents the fraction of all percepts that contained the corresponding descriptor. This allows us to identify the distribution of unique modalities, such that, for a given sector in the tingle annulus (for example, n = 761 for Subject 2, ‘tingle’), we can identify the fraction of percepts that had a specific mechanical descriptor (e.g. 'sharp’ n = 245) and the fraction of these percepts that had a specific movement descriptor (e.g. ‘vibration’ n = 104). An interactive version of Figure 3 with expandable sectors for each descriptor is available in Supplementary file 3.
 
 The spinal cord segment targeted by stimulation through each electrode was inferred from the X-ray images. We used the pedicles of each vertebra to mark the boundaries that separated each spinal root (Figure 2B). These boundaries provided an anatomical marker to establish where each electrode was located, in the rostrocaudal axis. Similarly, boundaries were drawn on the body segment outline images to divide them into seven anatomical segments (Figure 2A) including thumb, D2–D3, D4–D5, wrist, forearm, elbow, and upper arm. The sensory percepts were categorized as being associated with one of the seven anatomical segments based on which segment contained the maximal area of the perceived sensation. For this analysis, only those electrodes that evoked a sensory percept ipsilateral (n = 315) to the amputation were included. Electrodes that only evoked bilateral (n = 64) and contralateral (n = 68) sensations at threshold would not be useful for neuroprosthetic applications for people with unilateral amputation and were excluded. Dermatome maps were generated per subject, by determining the proportion of electrodes situated at each spinal level that evoked a sensation in a specific anatomical region.
 
-## Quantifying lead and percept migration
+### Quantifying lead and percept migration
 
 The intraoperative fluoroscopy image, superimposed over the X-rays from the first and last week of testing, gave an indication of gross movements of the leads. Using bony landmarks, the X-ray from the first week was aligned to the intraoperative fluoroscopy image, and each subsequent X-ray was aligned to the X-ray from the previous week using an affine transformation method in MATLAB. The SCS contact that appeared to be most parallel to the plane of imaging was used to determine the scale length for the image (SCS contacts are 3 mm in length). For each lead, the distance between the rostral tips of the electrodes as seen in the aligned image pairs (Figure 6) was measured to determine the rostro-caudal migration. Positive values signified caudal migration and negative values signified rostral migration.
 
@@ -166,15 +307,15 @@ For all electrodes that evoked a percept in the missing hand, the threshold char
 
 We also constructed separate auto-regressive time series models to examine the changes in distributions for both area and centroid migration over time, adjusting for autocorrelations in the data. The AUTOREG procedure in SAS estimates and forecasts linear regression models for time series data when the errors are autocorrelated or heteroscedastic. If the error term is autocorrelated (which occurs with time series data), the efficiency of ordinary least-squares (OLS) parameter estimates is adversely affected and standard error estimates are biased, thus the autoregressive error model corrects for serial correlation. For models with time-dependent regressors, the, AUTOREG procedure performs the Durbin t-test and the Durbin h-test for first-order autocorrelation and reports marginal significance levels.
 
-## Detection thresholds
+### Detection thresholds
 
 A two-alternative forced choice task was used to determine detection thresholds. The subject was instructed to focus on a fixation cross on a screen. Two one-second-long windows, separated by a variable delay period, were presented and indicated by a change in the color of the fixation cross. Stimulation was randomly assigned to one of the two windows. After the second of the two windows, the fixation cross disappeared, and the participant was asked to report which window contained the stimulus. The stimulus amplitude for each trial was varied using a threshold tracking method (Leek, 2001; Levitt, 1971) with a ‘one-up, three-down’ design. In this design, an incorrect answer resulted in an increase in stimulus amplitude for the next trial while three consecutive correct trials were required before the stimulus amplitude was decreased. Stimulus amplitude was always changed by a factor of 2 dB. Five changes in direction of the stimulus amplitude, either increasing to decreasing or vice versa, signaled the end of the task. Using this task design, the detection threshold was determined online as the average of the last 10 trials before the fifth change in direction. A detection threshold calculated this way corresponds approximately to correctly identifying the window containing the stimulus 75% of the time (García-Pérez, 1998). To get a finer estimate of the detection threshold we also used a non-adaptive design in a subset of trials for Subject 4, where we presented a predetermined set of stimulus amplitudes. This block of stimulus amplitudes was repeated up to eight times and the presentation sequence was randomized within each block. A cumulative-normal psychometric curve was fit to both types of detection experiments post-hoc using the Palamedes toolbox (Kingdom and Prins, 2016) with the guessing rate γ and lapse rate λ held fixed at 0.5 and 0 respectively. The detection threshold was calculated as the stimulus amplitude at the 75% accuracy level. Tasks in which accuracy levels for all stimulus amplitudes were <0.6 or>0.9 were omitted from this analysis. We carried out a goodness-of-fit analysis with 1000 simulations using the Palamedes toolbox and discarded any fit with probability of transformed likelihood ratio (pTLR) less than 0.05. pTLR signifies the proportion of simulated likelihood ratios that were smaller than the likelihood ratio obtained from the data and it spans 0–1 with a higher value signifying a better fit and values below 0.05 signifying an unacceptable fit. Thresholds calculated for the same electrodes on different days were averaged together to obtain a mean detection threshold for each electrode, with all other stimulus parameters (e.g. frequency, pulse width) held constant.
 
-## Just-noticeable differences
+### Just-noticeable differences
 
 A similar two-alternative forced choice task was used to determine just-noticeable differences (JND) for stimulation amplitude. The design of the task was identical to the detection task except stimulation was provided in both the windows and the subject was instructed to choose the window where the stimulus was perceived as being at a higher intensity. One of the stimulation amplitudes in every trial was held constant while the other was chosen randomly from a list of stimulus amplitudes constituting a block. The constant amplitude was either fixed at 2.5 mA for the lower standard amplitude or at 4.0 mA for the higher standard amplitude. The windows in which standard and the test amplitude were administered was randomized as well. This block of stimulus amplitudes was repeated up to eight times and the presentation sequence was randomized within each block. A cumulative-normal psychometric curve was fit to the data post-hoc using the Palamedes toolbox (Kingdom and Prins, 2016) with the guessing rate γ and lapse rate λ held fixed at 0.5 and 0 respectively. The JND was calculated as the stimulus amplitude at the 75% accuracy level. Tasks in which accuracy levels for all stimulus amplitudes were <0.6 or>0.9 were omitted from this analysis. We carried out a goodness-of-fit analysis with 1000 simulations using the Palamedes toolbox and discarded any fit with pTLR <0.05. To determine average JNDs at the two different standard amplitudes, we included data from only those electrodes for which testing at both standard amplitudes were carried out in the same session. JNDs calculated for the same standard amplitude on different electrodes were averaged together to obtain a mean JND for each standard amplitude. As JNDs were expected to be highly subject-specific, data from different subjects were not pooled together.
 
-## Perceived intensities of the evoked sensory percepts
+### Perceived intensities of the evoked sensory percepts
 
 A free magnitude estimation task was used to determine the relationship between stimulus amplitude and perceived intensity of the evoked sensations (Ellermeier et al., 1991; Stevens, 1986; Stevens, 1956; Verrillo et al., 1969). In this task, subjects were instructed to rate the perceived intensity on an open-ended numerical scale as stimulation amplitude was varied randomly. A block of stimulus amplitudes consisted of 6–10 values linearly spaced between the detection threshold of the electrode being tested and the highest value that did not evoke a painful percept up to 6 mA. This block of chosen amplitudes was presented six times and the presentation sequence was randomized within each block. The subject was instructed to scale the response appropriately such that a doubling in perceived intensity was reported as a doubling in the numerical response. Zero was used to denote that no sensation was perceived in response to the stimulus. During the first block, the subject experienced the full range of stimulation amplitudes while establishing their subjective scale, so data from this block were not included in the analysis. Data across electrodes or across different testing sessions were compared after normalizing each electrode to its mean response.
 

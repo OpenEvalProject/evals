@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.26910.001 Influenza virus expresses transcripts early in infection and transitions towards genome replication at later time points. This process requires de novo assembly of the viral replication machinery, large ribonucleoprotein complexes (RNPs) composed of the viral polymerase, genomic RNA and oligomeric nucleoprotein (NP). Despite the central role of RNPs during infection, the factors dictating where and when they assemble are poorly understood. Here we demonstrate that human protein kinase C (PKC) family members regulate RNP assembly. Activated PKCδ interacts with the polymerase subunit PB2 and phospho-regulates NP oligomerization and RNP assembly during infection. Consistent with its role in regulating RNP assembly, knockout of PKCδ impairs virus infection by selectively disrupting genome replication. However, primary transcription from pre-formed RNPs deposited by infecting particles is unaffected. Thus, influenza virus exploits host PKCs to regulate RNP assembly, a step required for the transition from primary transcription to genome replication during the infectious cycle.
+Influenza virus expresses transcripts early in infection and transitions towards genome replication at later time points. This process requires de novo assembly of the viral replication machinery, large ribonucleoprotein complexes (RNPs) composed of the viral polymerase, genomic RNA and oligomeric nucleoprotein (NP). Despite the central role of RNPs during infection, the factors dictating where and when they assemble are poorly understood. Here we demonstrate that human protein kinase C (PKC) family members regulate RNP assembly. Activated PKCδ interacts with the polymerase subunit PB2 and phospho-regulates NP oligomerization and RNP assembly during infection. Consistent with its role in regulating RNP assembly, knockout of PKCδ impairs virus infection by selectively disrupting genome replication. However, primary transcription from pre-formed RNPs deposited by infecting particles is unaffected. Thus, influenza virus exploits host PKCs to regulate RNP assembly, a step required for the transition from primary transcription to genome replication during the infectious cycle.
 
 ## Introduction
 
@@ -38,15 +38,27 @@ Here we identify the protein kinase C (PKC) family, and PKCδ in particular, as 
 
 ## Results
 
-## Constitutively active PKC impairs viral polymerase activity by phosphorylating NP
+### Constitutively active PKC impairs viral polymerase activity by phosphorylating NP
 
 Both activators and inhibitors of the PKC family have been shown to modulate influenza virus replication (Hoffmann et al., 2008; Kistner et al., 1989). More recently we demonstrated that activating PKCs with phorbol-12-myristate-13-acetate (PMA) stimulates NP phosphorylation and inhibits its oligomerization (Mondal et al., 2015). As NP oligomerization and RNP assembly are required for replication of the viral genome, we undertook a targeted approach to investigate the role of PKCs in regulating influenza polymerase activity.
 
 The PKC family consists of at least eleven different members which can be divided into classical (α, β1, β2, γ), novel (δ, ε, η, θ) and atypical (ι/λ, ζ) isoforms based on their structure and co-factor requirements. To test the ability of PKC isoforms to phosphorylate NP and impact polymerase function, we performed polymerase activity assays in cells co-expressing a panel of PKC variants. Influenza polymerase activity was reconstituted in cells by expressing the trimeric polymerase, NP, and a vRNA-like reporter encoding luciferase. The viral reporter is replicated and transcribed only in the presence of a functional polymerase and NP, and serves as a proxy for RNP formation (Figure 1—figure supplement 1). PKCs were expressed as constitutively active truncations containing the C-terminal catalytic domain (PKC-CAT), but lacking the regulatory domains (Soh and Weinstein, 2003). In a cell, PKCs are synthesized in an inactive conformation and are activated upon binding phosphatidylserine, and in most cases also require binding to diacylglycerol, Ca2+ or phosphatidylinositol 4,5-bisphosphate (Antal and Newton, 2014). Using the constitutively active forms eliminated variability that may arise from the distinct second messenger activators required by different PKC family members. Expressing active PKCβ2, PKCδ, PKCθ and PKCη considerably reduced polymerase activity with respect to the empty vector control. While PKCβ2 and PKCη showed 60–80% decrease, PKCδ and PKCθ abrogated polymerase activity completely to background levels (Figure 1A). PKCε and PKCα showed moderate, but statistically significant reductions, whereas the remaining isoforms caused minimal changes in polymerase activity, or even minor increases in activity. Western blotting showed that slower migrating forms of NP appeared in conditions where polymerase activity was inhibited. Phosphatase treatment confirmed that these slower migrating species resulted from NP hyper-phosphorylation and quantification revealed a strong correlation between increased NP phosphorylation and decreased polymerase activity (Figure 1—figure supplement 2A–B). Blotting also showed comparable expression of all PKC isoforms and detected previously described minor bands due to differential post-translational modifications (Soh and Weinstein, 2003). Subsequent experiments were focused on PKCβ2, PKCδ, and PKCη, but not PKCθ as its expression is heavily restricted to skeletal muscle and cells of the immune system and not the lung epithelial cells where influenza virus primarily replicate (Zhang et al., 2013).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/26910/elife-26910-fig1-v2.jpg)
+
+**Figure 1.:** (A) Expression of constitutively active PKC impairs influenza virus polymerase activity. Polymerase activity assays were performed in 293T cells in the presence or absence of the catalytic domains from classical, novel or atypical PKC isoforms. Data were averaged and normalized to the empty vector control. NP and PKC were detected by western blotting whole cell lysate. A hyper-phosphorylated form of NP was detected in some conditions. (n=3 ± standard deviation, *p<0.05 one-way ANOVA when compared to the empty vector control). (B) Polymerase activity assays were performed in the presence of PKC catalytic domains, catalytically inactive mutants, or empty vector controls. Polymerase activity and protein expression were analyzed as in (A).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/26910/elife-26910-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Cells are transfected with plasmids expressing a viral genome segment encoding luciferase, NP, and polymerase proteins PB1, PB2, and PA in the presence or absence of PKC. Luciferase activity output is measured as a proxy for RNP assembly and polymerase activity.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/26910/elife-26910-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Whole cell lysates co-expressing NP with the indicated PKC catalytic fragments were treated with calf intestine alkaline phosphatase (CIP) or left untreated. Reaction products were analyzed by western blot with anti-NP antibody. (B) Quantification of NP phosphorylation in three separate replicates of the assay in Figure 1A (mean ±standard deviation). (C) Polymerase activity assays were performed in 293T cells co-expressing either PKC catalytic fragments (CAT) or mutants lacking catalytic activity (MUT) (n=3 ± standard deviation).
+
 To determine if kinase activity from different PKC isoforms drives polymerase activity inhibition, polymerase activity assays were repeated in the presence of inactive PKC mutants with single amino acid changes in their catalytic domain. Whereas the catalytic domains of PKCβ2, PKCδ and PKCη inhibited polymerase activity, this phenotype was significantly reduced for the inactive mutants (Figure 1B and Figure 1—figure supplement 1). Moreover, NP was not hyper-phosphorylated in the presence of the inactive mutants, suggesting that specific PKC isoforms inhibit influenza polymerase activity by causing the phosphorylation of NP.
 
-## PB2 stabilizes interactions between PKCδ and NP
+### PB2 stabilizes interactions between PKCδ and NP
 
 PKCs can function directly by phosphorylating a target or indirectly by activating downstream kinases that then phosphorylate the target protein. To determine if the effects of PKCs on polymerase activity were direct or indirect, we performed binding assays to test if inhibitory isoforms of PKC associate with proteins in the viral RNP. Whereas NP is phosphorylated when PKCs are expressed and this correlates with the inhibitory phenotype, co-immunoprecipitations failed to detect stable interactions between NP and PKC when co-expressed in 293T cells (Figure 2A). This was consistent with the transient interactions frequently observed between kinase and substrate. Surprisingly, NP was efficiently co-precipitated with catalytic fragments of PKCδ and PKCη when they were co-expressed with the other components of the RNP (i.e. viral polymerase and vRNA) (Figure 2A). PKCβ2 co-precipitated only limited amounts of NP. Notably, NP co-precipitated by PKCδ and PKCη was highly enriched for the hyper-phosphorylated form relative to its abundance in total cell lysate. To ensure specificity of these interactions, experiments were repeated using full-length PKC isoforms (Figure 2B). Again, NP was co-precipitated by full-length PKC when the polymerase and vRNA were co-expressed. Differences in NP co-precipitation were not due to differences in immunoprecipitation of the different PKC isoforms, as each PKC immunoprecipitated with equivalent efficiency relative to its expression in the cell lysate (Figure 2A–B). Additionally, NP showed a clear preference for interaction with PKCδ, although PKCη also co-precipitated minor amounts of NP.
 
@@ -56,9 +68,21 @@ PKCs can function directly by phosphorylating a target or indirectly by activati
 
 Interactions between NP and PKC isoforms were enhanced in the presence of the viral polymerase and vRNA (Figure 2A–B). This enhanced interaction was still observed when the vRNA template was excluded from transfections or when RNaseA was included during the immunoprecipitation (not shown), suggesting that the viral polymerase is sufficient to mediate the interaction between NP and PKC. We determined which proteins of the heterotrimeric polymerase are essential for NP-PKCδ interactions (Figure 2C). Reconstituting the complete polymerase by expressing PB1, PB2 and PA enabled strong co-precipitation of NP by PKCδ. Only minor amounts of NP were co-precipitated in the absence of the polymerase. Interestingly, co-expression of PB2 alone was sufficient to ensure significant co-precipitation of NP by PKCδ, whereas co-expression of PB1 and PA resulted in limited co-precipitation similar to that observed in the absence of the polymerase. Furthermore, the oligomerization defective NP E339A was co-precipitated by PKCδ in the presence of PB2, suggesting NP monomers also participate in this interaction. To obtain further evidence for this interaction and identify the most relevant PKC isoforms, we performed a co-immunoprecipitation experiment in cells expressing NP, PB2 and either catalytic or full-length PKC isoforms (Figure 2D). PB2 bridged interactions between NP and the catalytic domains of PKCδ and PKCη. In the context of full length protein, PKCδ showed the strongest interactions with NP and PB2. Our data suggested that PB2 anchors a hetero-oligomeric NP:PB2:PKCδ complex. NP present in this immuno-precipitated complex was significantly enriched for the hyper-phosphorylated form, suggesting that PB2 facilitates a functional interaction between NP and activated PKC resulting in NP phosphorylation.
 
-## PKC phosphorylates NP at the tail loop:groove interface and blocks oligomerization
+### PKC phosphorylates NP at the tail loop:groove interface and blocks oligomerization
 
 Phosphorylation of NP at the homotypic interface inhibits oligomerization (Chenavas et al., 2013; Mondal et al., 2015; Turrell et al., 2015). Our data implicate PKCs as the host kinases that phospho-regulate NP oligomerization. We therefore assessed the ability of PKC isoforms to directly phosphorylate NP. PKC catalytic domains were immunopurified from cell lysates and used in in vitro kinase assays with recombinant NP (Figure 3A). All three PKC isoforms that inhibited polymerase activity, i.e. PKCβ2, PKCδ and PKCη, phosphorylated NP. By contrast, PKCε, which exhibited modest inhibition of polymerase activity, showed no specific kinase activity and its activity was similar to that in the negative control. To demonstrate specificity, the PKC inhibitor 1-(5-Isoquinolinesulfonyl)−2-methylpiperazine (H7) was included in kinase reactions. H7 almost completely eliminated NP phosphorylation (Figure 3B), compared to the vehicle-only control that did not impact NP phosphorylation. These kinase assays showed that select PKC isoforms, and not other fortuitously co-precipitating kinases, directly phosphorylated NP in vitro.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/26910/elife-26910-fig3-v2.jpg)
+
+**Figure 3.:** (A) Purified PKC phosphorylates NP in vitro. Catalytic fragments of PKC were immunoprecipitated from 293T cells and used for in vitro kinase assays with recombinant NP. Immunoprecipitates from cells transfected with empty vector were used as a negative control. Kinase reactions were resolved by SDS-PAGE followed by Coomassie staining to monitor NP levels and autoradiography to detect phosphorylation. PKC levels were measured by western blotting a portion of the immunoprecipitate. (B) In vitro kinase assays were performed with purified PKC and NP supplemented with the PKC inhibitor H7 or the vehicle control. Reaction products were analyzed as described in (A). (C–D) In vitro kinase assays were performed to identify NP residues phosphorylated by PKC, using (C) WT and oligomerization-defective NP (E339A) as substrate or (D) oligomerization-defective NP (E339A) and a double-alanine mutant of NP (S165A/S407A) as substrate. (E) PKC activity reduces NP tail loop:groove interactions. An NP deletion mutant lacking the tail loop (NPΔTL) and a tail loop fused to eGFP (eGFP-TL) were co-expressed in 293T cells in the presence or absence of exogenous PKCδ. NP tail loop:groove interactions were monitored by immunoprecipitating eGFP-TL and measuring co-precipitating NPΔTL by western blot. Expression levels of interacting partners were analyzed by blotting total proteins. (F) PKCδ activity impairs RNP assembly. RNPs were reconstituted in cells expressing a vRNA, PB1, PB2, NP and PA or PA-FLAG in the presence or absence of exogenous PKCδ. RNPs were captured by FLAG immunoprecipitation. Co-precipitating and input proteins were detected by blotting NP or the polymerase proteins.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/26910/elife-26910-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Size exclusion chromatography of recombinant NP shows purified NP mutants exist as a homogenous monomeric population compared to WT NP that exists as a mixture of monomer and multimer. (B) Quantification of in vitro kinase assay products reported in Figure 2B shows mutation of NP S165 and S407 reduced phosphorylation by PKC. Data are normalized to NP E339A phosphorylation levels.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/26910/elife-26910-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Schematic representation of experimental designs to measure binary NP:NP interactions via a tail loop:binding groove assay (left) and NP oligomerization via an RNP assembly assay (right).
 
 If PKC regulates NP:NP interactions, phospho-sites at this interface are likely PKC targets. But, our in vitro kinase assays were performed with purified recombinant NP, which is a complex mixture of monomeric and multimeric species in equilibrium where many of the key phospho-regulatory sites may be concealed by NP:NP interactions (Figure 3—figure supplement 1A) (Mondal et al., 2015). To gain additional insight into the impact of PKC on NP oligomerization, we performed in vitro kinase assays with either wild-type (WT) NP or the oligomerization-defective mutant NP E339A. NP E339A purified exclusively as a monomer with the phospho-sites S165 and S407 solvent exposed compared to NP oligomers where they are concealed at the protein:protein interface (Figure 3—figure supplement 1A) (Chenavas et al., 2013; Ye et al., 2013; Ye et al., 2006). Kinase assays again demonstrated that NP is phosphorylated by the catalytic domains of PKCβ2, PKCδ and PKCη. Compared to the WT NP control, phosphorylation of NP E339A was markedly increased by all three PKC isoforms, supporting a model where PKC targets sites at the NP:NP interface (Figure 3C).
 
@@ -66,7 +90,7 @@ Multiple phospho-sites have recently been mapped to the NP:NP interface, includi
 
 We subsequently tested the functional consequences of PKC-mediated phosphorylation in cells. Each NP protomer contains a tail loop and binding groove, and can thus both insert into a growing NP chain and then receive the next incoming subunit. To understand the specific steps of NP self-association impacted by PKC phosphorylation, the complex multivalent nature of NP oligomerization was simplified to a binary interaction in our tail loop:groove interaction assay (Mondal et al., 2015). Binding was measured between an NP deletion lacking the tail loop (NPΔTL), which cannot oligomerize on its own, and the NP tail loop fused to green fluorescent protein (GFP-TL) (Figure 3—figure supplement 2). Binding partners were expressed in cells either with constitutively active PKC isoforms or controls (Figure 3E). In control experiments, GFP-TL co-precipitated NPΔTL, recapitulating NP:NP interactions. Expression of PKCδ or PKCη severely reduced NP:NP interactions and co-precipitation of NPΔTL. Moreover, this loss of function in the presence of PKCδ and PKCη was again associated with the appearance of minor hyper-phosphorylated forms of NP. Whereas PKCβ2 can phosphorylate NP in an isolated kinase assay, expression of PKCβ2 in cells did not change the amount of co-precipitated NPΔTL. This disparity perhaps reflects the enhanced specificity of substrate:kinase interactions in cells or the involvement of other cellular co-factors that affect the functional impact of NP phosphorylation. Finally, we assessed the impact of PKCδ on RNP assembly by measuring the amount of NP co-precipitated with PA during a polymerase activity assay (Figure 3—figure supplement 2). As NP does not interact directly with PA, co-precipitation can only occurs in the context of an RNP. NP was specifically co-precipitated by PA-FLAG, yet these interactions were nearly eliminated when PKCδ was co-expressed (Figure 3F). Notably, co-precipitation of the other polymerase subunits PB1 and PB2 was unaffected by PKCδ expression, suggesting that phosphorylation by PKCδ selectively impairs RNP assembly but not polymerase trimer formation. Together these results provide strong evidence that PKCδ and PKCη disrupt influenza polymerase activity by phospho-regulating NP tail loop:grove interactions, and thus have the potential to control NP oligomerization and RNP formation in cells.
 
-## Activated PKCδ associates with the viral polymerase during infection
+### Activated PKCδ associates with the viral polymerase during infection
 
 To confirm the biological importance of the NP:PB2:PKC complex, we examined its formation and activity during infection in the presence of endogenous levels of PKC. We focused on PKCδ given that NP exclusively interacts with full-length PKCδ (Figure 2B,D), PKCδ phospho-regulates NP oligomerization and RNP assembly (Figure 3), and that PKCδ is abundantly expressed in human lung tissue, typical sites of influenza virus replication, and the human lung epithelial A549 cells used here (Goldberg and Steinberg, 1996). A549 cells were infected with influenza virus, influenza virus encoding FLAG-tagged PB2, or mock treated. PB2-containing complexes were purified by anti-FLAG immunoprecipitation and blotted with anti-PKCδ antibody. Endogenous PKCδ specifically co-precipitated with PB2-FLAG (Figure 4A). The reciprocal immunoprecipitation performed on infected cell lysates showed a similar interaction; PB2 specifically co-precipitated with endogenous PKCδ, compared to background amounts precipitated by a non-specific control (Figure 4B). These data demonstrated interactions between PKCδ and PB2 during infections and validate results from our transfection assays showing that PB2 anchors interactions between NP and active PKC. This conclusion raised the possibility that PB2 isolated from infected cells contained PKC-specific kinase activity. To test this, PB2 complexes purified from infected cell lysate were used as a source of both kinase and substrate for in vitro phosphorylation. In vitro kinase assays performed with immuno-precipitated PB2 complexes revealed specific phosphorylation of NP, which was eliminated when the PKC inhibitor H7 was included in the reaction (Figure 4C). Moreover, treatment of the immunoprecipitated complex with RNase A markedly increased phosphorylation, suggesting that the lower-order NP released by RNase A treatment rather than the oligomerized RNA-associated form was a better substrate for the kinase activity associated with the complex. This parallels our prior results showing enhanced phosphorylation of monomeric NP (Figure 3C). Note that these kinase reactions did not include any exogenous second messenger activators of PKC, suggesting that PB2 is associated with activated PKCδ. Phospho-proteomics provided further evidence that PKCδ is activated during influenza. We identified peptides from PKCδ containing phosphorylated serines at residues 302 and 304 (Table 1), an autocatalytic marker of PKCδ activation (Durgan et al., 2007). Combined, these data provide multiple lines of evidence that the viral polymerase protein PB2 anchors active PKCδ during infection.
 
@@ -74,9 +98,59 @@ To confirm the biological importance of the NP:PB2:PKC complex, we examined its 
 
 **Figure 4.:** (A) A549 cells were infected with WSN, WSN PB2-FLAG, or mock treated. Cell lysates were subjected to anti-FLAG immunoprecipitation and blotted for PKCδ. Whole cell lysate were also probed for PKCδ. *=nonspecific cellular protein. (B) Infected or mock-treated A549 cell lysates were immunoprecipitated with anti-PKCδ antibodies or a non-specific control and analyzed by blotting for PB2. (C) PB2-FLAG was immunoprecipitated from infected A549 cells. Immunoprecipitates were used as a source of both kinase activity and substrate for in vitro kinase assays. Where indicated, immunoprecipitated complexes were treated with RNaseA or H7. Reactions were analyzed by SDS-PAGE followed by Coomassie staining and autoradiography. IgG was detected by Coomassie staining immunoprecipitated samples, including heavy chain in the uninfected control which co-migrates with NP.
 
-## NP phosphorylation and influenza virus replication are impaired in PKCδ-deficient cells
+**Table 1.**
+ PKCδ is activated during influenza virus infection.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Position</th>
+      <th>Phospho (STY) Probabilities</th>
+      <th>Position in peptide</th>
+      <th>Charge</th>
+      <th>Mass error [ppm]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S302</td>
+      <td>RS(0.52)DS(0.378)AS(0.097)S(0.005)EPVGIYQGFEK</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.87569</td>
+    </tr>
+    <tr>
+      <td>S304</td>
+      <td>RS(0.003)DS(0.995)AS(0.002)SEPVGIYQGFEK</td>
+      <td>4</td>
+      <td>2</td>
+      <td>0.51199</td>
+    </tr>
+  </tbody>
+</table>
+
+_Phosphoproteomic analysis was performed by mass spectrometry on lysates prepared from A549 cells at 6 hr post-inoculation. Phosphopeptides corresponding to PKCδ autocatalytic modifications at residues S302 and S304 were identified. Localization probabilities for each phosphosite are shown in parentheses._
+
+### NP phosphorylation and influenza virus replication are impaired in PKCδ-deficient cells
 
 We generated PKCδ-deficient human lung A549 cells to study NP phospho-regulation during infection. Two independent clonal cell lines with nonsense mutations in both PRKCD alleles were created using the CRIPSR-Cas9 system (Figure 5—figure supplement 1A–B). PKCδ protein expression was completely abolished in the knockout cells, while very low levels of PKCβ2 were detected by the cross-reactive antibody (Figure 5A, Figure 5—figure supplement 1C). Despite the loss of PKCδ, both lines showed regular morphology and grew similar to the parental A549 cells. Regardless, care was taken to use early passage cells to avoid compensatory changes in gene expression or phenotypic drift that may arise over time.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/26910/elife-26910-fig5-v2.jpg)
+
+**Figure 5.:** (A) Ablation of PKCδ expression in PRKCD-knockout A549 cells was confirmed by western blotting cell lysates from WT and two clonal knockout cell lines. Residual signal is due to low-level antibody cross-reactivity to PKCβ2 present in these cells (Figure 5—figure supplement 1C). *=nonspecific cellular protein. (B) Structure of NP (PDB: 2IQH) showing spatial organization of the PKCδ target sites identified by mass spectrometry. (C) Relative quantification of NP phosphorylation. Elution profiles of phosphopeptides identified by mass spectrometry were integrated to calculate the relative abundance of phosphorylation sites present in the groove (S165), tail loop (S402, S403, S407, S413), and body (T378) regions of the influenza nucleoprotein. (D–F) Loss of PKCδ impairs viral gene expression and replication. (D) Viral gene expression was measured in WT or PKCδ-knockout A549 cells infected with the indicated influenza reporter viruses or a West Nile virus (WNV) replicon. (E) Single-cycle virus replication measured 8 hpi in WT or PKCδ-knockout A549 cells infected with WSN virus. (F) Multi-cycle replication was measured in sgRNA control A549 cells or PKCδ-knockout cells. For all infections, data are shown as mean of n=3 ± standard deviation. *=p< 0.05 one-way ANOVA when compared to WT control. ns = not significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/26910/elife-26910-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) IDAA performed on genomic DNA isolated from PRKCD−/−-1 and PRKCD−/−-2 clonal cell lines identified two amplicons containing deletions for line 1 and only one amplicon for line 2. Calculated size (nt) is indicated for each peak. (B) Mutations at each locus were defined by sequencing of the IDAA amplicon and alignment to the sequence obtained from WT A549 cells. (C) The PKCδ antibody cross-reacts with PKCβ2. Constitutively active PKCs were over-expressed as HA-tagged proteins and blotted with antibodies directed against HA or PKCδ. The PKCδ antibody (Santa Cruz sc-937 C20) detects both PKCδ and PKCβ2.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/26910/elife-26910-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) WT or PKCδ-knockout A549 cells were infected with GFP-expressing vesicular stomatitis virus (VSV) or a VSV-G pseudotyped influenza virus. The number of infected (GFP+) cells was quantified by flow cytometry and normalized to WT A549 cells. Data are averages from three independent experiments ± sd. (B) WT or PKCδ-knockout A549 cells were infected with WSN, fixed at the indicated time points, and NP localization was detected by immunofluorescence assay. Nuclei were counter-stained with DAPI.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/26910/elife-26910-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Two clonal cell lines were obtained expressing Cas9 and a non-targeting sgRNA. Multicycle replication kinetics were examined in WT or sg RNA control A549 cell lines by infecting cells with WSN at an MOI of 0.01. Viral titers were determined at the indicated time points by plaque assay (n=3 independent infections ± SD).
 
 To test if PKCδ is responsible for NP phosphorylation during infection, we employed quantitative mass spectrometry to measure the extent of NP phosphorylation in the knockout cell lines (Merrill and Coon, 2013; Richards et al., 2015). NP was purified from infected WT or PRKCD−/− cell lines and analyzed by targeted mass spectrometry (Mondal et al., 2015; Peterson et al., 2012). Phosphorylation was detected at sites in the tail loop (S402, S403, S407, S413), binding groove (S165), and the body domain (T378) of NP, in agreement with prior results (Figure 5B–C) (Hutchinson et al., 2012; Mondal et al., 2015). Compared to the WT cells, NP phosphorylation was considerably reduced in the PRKCD−/− cells (Figure 5C). This was especially true at the key regulatory positions of NP S165 and S407, where phosphorylation levels decreased by 60–80%. In two out of three replicates, pS407 was barely detected in samples from knockout cells. By contrast, the relative abundance of phosphorylation at T378 in the body was only marginally affected. These data illustrate that PKCδ is an important kinase targeting phospho-regulatory sites at the site of NP:NP interface. However, as phosphorylation was not completely ablated in the absence of PKCδ, these results also suggest at least some functional redundancy for NP phosphorylation, possibly fulfilled by other PKC isoforms.
 
@@ -86,7 +160,7 @@ PKCs have been previously implicated in the process of influenza virus entry, es
 
 We next tested whether PKCδ is important for production of infectious progeny. Compared to WT cells, production of normal influenza virus in the knockout cell lines was reduced by up to 1000 fold in a single-cycle infection, consistent with the decreases in viral gene expression observed with our reporter viruses (Figure 5E). We created clonal A549 cell lines expressing a non-targeting control sgRNA to control for any effects that constitutive Cas9 expression might have on virus replication. Viral replication in these cells was indistinguishable from the pooled parental A549 cells (Figure 5—figure supplement 3). However, viral titers were reduced by over 1.5 logs in both PRKCD−/− cell lines compared to the sgRNA control line in a multi-cycle replication assay (Figure 5F). Together, these data establish that phosphorylation of NP by endogenous PKCδ is crucial for viral gene expression, production of infectious progeny and multi-cycle replication. These reductions in replication likely represent combined effects of PKCδ knockout on both viral gene expression and entry (see below). As viral gene expression and replication was not completely abolished in the absence of PKCδ, they also implicate additional PKC family members or other host kinases as playing secondary or redundant roles in regulating NP phosphorylation.
 
-## PKCδ regulates viral genome replication
+### PKCδ regulates viral genome replication
 
 Loss of PKCδ dramatically reduced NP phosphorylation and impaired viral gene expression (Figure 5). After entry, initial rounds of primary transcription occur on pre-formed viral RNPs deposited by the incoming virion and are dependent on attachment, entry and nuclear import. At later time points, the virus transitions to genome replication and secondary transcription in a process that requires NP oligomerization and formation of new RNPs. We probed the early steps during infection to identify the precise events impacted by PKCδ. Attachment and entry were measured with bioluminescent viral particles created with a reporter virus (PASN) that package the luciferase reporter into virions, allowing investigation of entry steps independent of the downstream events of vRNP nuclear import and transcription (Tran et al., 2015). Virions were bound to cells 4˚C, subsequently shifted to 37˚C to synchronize entry, and cells were then treated with cyclohexamide to ensure any detected reporter activity was derived only from incoming virions. Knockout of PKCδ reduced virion attachment or uptake ~2 fold (Figure 6A). To determine if this defect arose from attachment or fusion, a classic ‘acid bypass’ assay was performed where the viral membrane is fused to the plasma membrane by a transient low pH treatment causing vRNPs to be deposited directly into the cytoplasm (Banerjee et al., 2014; Matlin et al., 1981). Attachment and entry were indistinguishable for all cell lines in the acid bypass assay (Figure 6A), indicating that the lack of PKCδ does not alter attachment or pH-dependent fusion, but rather endosome-mediated uptake. Entry assay results agreed with prior reports showing that PKC inhibitors and mutants interfere with entry and trap influenza virions in the late endosome, suggesting that PKCδ is one of the isoforms involved in these early steps during infection (Root et al., 2000; Sieczkarski et al., 2003).
 
@@ -114,9 +188,67 @@ While PKCδ is a major kinase that phospho-regulates NP oligomerization, the RAC
 
 ## Materials and methods
 
-## Plasmids, viruses, antibodies and cells
+### Plasmids, viruses, antibodies and cells
 
 All virus related genes were derived from influenza A/WSN/33 virus. NP and polymerase proteins were expressed in cells from the plasmids pCDNA6.2-NP-V5, pCDNA3-PB2-FLAG (encoding a C-terminal FLAG tag) or pCDNA3-PA and pCDNA3-PB1. vNA-luc reporter plasmids encode firefly luciferase in the negative sense flanked by UTRs from the NA gene (Regan et al., 2006). pET28a-NΔ7NP was used for bacterial expression of NP with a C-terminal His tag as described previously (Mondal et al., 2015). Plasmids expressing full-length PKC isoforms (β2, δ, η) or just the catalytic domains (PKC-CAT α, β1, β2, γ, δ, ε, η, ι) were previously described (Table 2) (Soh and Weinstein, 2003) (Addgene plasmids #21234, 16380, 16384, 21238, 16388, 21242, 21247, 21254). PKCθ-CAT was prepared by cloning the catalytic domain from the full length isoform into pHACE. PKC-CAT domains were mutated to catalytically inactive forms replacing specific lysine residues in the catalytic domains to either arginine or to methionine following the approach used for full-length PKC (Soh and Weinstein, 2003).
+
+**Table 2.**
+ Domain boundaries and mutations for PKC variants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>PKC isoform</th>
+      <th>CAT domain (aa)</th>
+      <th>DN mutation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PKCα</td>
+      <td>326–672</td>
+      <td>K368R</td>
+    </tr>
+    <tr>
+      <td>PKCβ1</td>
+      <td>329–671</td>
+      <td>K371R</td>
+    </tr>
+    <tr>
+      <td>PKCβ2</td>
+      <td>329–673</td>
+      <td>K371R</td>
+    </tr>
+    <tr>
+      <td>PKCδ</td>
+      <td>338–697</td>
+      <td>K380R</td>
+    </tr>
+    <tr>
+      <td>PKCε</td>
+      <td>334–674</td>
+      <td>K376R</td>
+    </tr>
+    <tr>
+      <td>PKCη</td>
+      <td>342–683</td>
+      <td>K384R</td>
+    </tr>
+    <tr>
+      <td>PKCι</td>
+      <td>239–592</td>
+      <td>K281M</td>
+    </tr>
+    <tr>
+      <td>PKCζ</td>
+      <td>232–587</td>
+      <td>K273M</td>
+    </tr>
+  </tbody>
+</table>
+
+_Boundaries and mutations for PKC expression constructs: PKC catalytic fragments (CAT) are defined by the first and last amino acid residues in the expression construct. Dominant negative (DN) mutations were created by introducing the indicated mutation._
 
 Infections were performed with A/WSN/1933 (H1N1), WSN stably-encoding PB2 with a C-terminal FLAG tag (WSN-PB2-FLAG) (Dos Santos Afonso et al., 2005) or PA-2A-Swap-Nluc (PASTN) reporter viruses based on the strains A/WSN/33 (H1N1) and A/California/04/2009 (H1N1) (Karlsson et al., 2015; Tran et al., 2015; 2013). Entry assays were performed with the WSN-based reporter virus PA-SWAP-NLuc (PASN) that packages Nanoluc into virions (Tran et al., 2015). The WSN-based reporter virus encoding VSV-G in place of HA and Renilla luciferase (FVG-R) or GFP (FVG-G) in place of NA was used as described (Hao et al., 2008; Watanabe et al., 2003). The West Nile virus replicon, where structural genes were replaced with Renilla luciferase, was prepared as described (Lo et al., 2003; Shi et al., 2002).
 
@@ -124,29 +256,29 @@ Antibodies used include: anti-PKCδ (sc-937 C20, Santa Cruz Biotech), anti-HA cl
 
 293T (CRL-3216), MDCK (CCL-34), and A549 (CCL-185) cells were purchased as authenticated stocks from ATCC. All cells were maintained in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 10% FBS at 37 ˚C and 5% CO2. Cells are tested for mycoplasma contamination approximately once a month using MycoAlert (Lonza LT07-218).
 
-## Polymerase activity assay
+### Polymerase activity assay
 
 Activity assays were performed following our prior approach by transfecting 293T cells in triplicate with plasmids expressing PA, PB1, PB2, NP and negative-sense vNA-luciferase reporter (Kirui et al., 2016) (Figure 1—figure supplement 1). Where indicated, cells were co-transfected with plasmids expressing PKC catalytic domains or dominant negative versions. Polymerase activity was measured using the luciferase assay system (Promega) and NP expression was confirmed by western blotting.
 
-## Immunoprecipitations
+### Immunoprecipitations
 
 293T cells expressing HA-tagged PKC, V5-tagged NP and polymerase proteins were lysed in radio-immunoprecipitation assay (RIPA) buffer (50 mM Tris-HCl [pH 7.5], 150 mM NaCl, 2 mMEDTA, 1% NP-40, 0.5% deoxycholate, 0.1% SDS) supplemented with 5 mg/ml of BSA and clarified by centrifugation. Lysates were incubated with anti-HA antibody and immunocomplexes were captured on Protein A Dynabeads (Invitrogen), washed extensively and analyzed by western blotting.
 
-## Primer extension analysis
+### Primer extension analysis
 
 A549 cells were infected with WSN using the low pH fusion buffer as described above at an MOI of 10 to measure primary transcription or at an MOI of 1 to measure replication. After attachment and low pH-mediated entry, cells were either incubated in VGM for 8 hr to measure replication or 6 hr with 1 mM cyclohexamide to measure primary transcription or incubated. Total RNA was isolated using TRIzol reagent (Invitrogen) and primer extensions assays were performed as described using primers using primers to detect viral NA RNAs and host 5S RNA (Mehle and Doudna, 2008; Robb et al., 2009). Transcription products were resolved via UREA-PAGE, quantified by phosphorimaging, and analyzed using ImageQuant TL software (GE Healthcare).
 
-## Immunofluorescence assays
+### Immunofluorescence assays
 
 Wild type or PKCδ knockout cells grown on coverslips were infected with WSN at an MOI of 2. Virion binding was performed at 4 ˚C for 1 hr and synchronous infections were initiated by shifting cells to 37 ˚C. Cells were fixed at different time points post-inoculation with 3% formaldehyde and permeabilized with 0.1M Glycine/0.1% Triton-X 100 in PBS for 10 min at room temperature. After blocking with 4 ˚C with 3% BSA overnight, NP was detected with anti-RNP antibody and Alexa Fluor 488-conjugated donkey anti-goat IgG (Cell Signaling). Cells were imaged using Zeiss Axio Imager M2 and post-processed with ImageJ.
 
-## In vitro kinase assay
+### In vitro kinase assay
 
 The in vitro kinase assay was adapted from the protocol originally described by Soh et al. (Soh and Weinstein, 2003). Briefly, 293 T cells were transfected with PKC-CAT or control plasmids, cells were lysed in PKC extraction buffer (50 mM HEPES [pH 7.5], 150 mM NaCl, 0.1% Tween-20, 1 mM EDTA, 2.5 mM EGTA, 10% glycerol, protease and phosphatase inhibitors), and PKCs were immunoprecipitated with anti-HA antibody. Immune complexes were captured with Protein A Dynabeads, washed in extraction buffer, washed in PKC reaction buffer (50 mM HEPES [pH 7.5], 10 mM MgCl2, 1 mM dithiothreitol, 2.5 mM EGTA), and finally resuspended in 20 μl of the reaction buffer to provide the source of kinase used in each assay. Wild type or mutant recombinant NP was purified from bacteria following our existing protocol and treated with RNaseA for 2 hr prior to use as substrate (Mondal et al., 2015). 2 μg of NP was reacted with equivalent amount of kinase or control complexes in the presence of 10 μCi of γ-32P ATP at 37°C for 1 hr. Reactions were terminated by boiling in SDS sample buffer and analyzed by SDS-PAGE gel electrophoresis and autoradiography. Where mentioned, the PKC inhibitor 1-(5-isoquinolinesulfonyl)−2-methylpiperazine (H7) (Sigma) was added to the reaction.
 
 For in vitro kinase assays with endogenous PKCδ, A549 cells were infected with WSN-PB2-FLAG virus at an MOI of 5 and harvested at 6 hr of post-inoculation. Cells were lysed in PKC extraction buffer and PB2-FLAG was immunoprecipitated with M2 affinity resin (Sigma). Immuno-captured complexes were resuspended in PKC reaction buffer and used as a source of both kinase and substrate. Samples were further treated with RNaseA, RNaseA and H7, or left untreated prior to performing a kinase reaction as described above.
 
-## Virus replication and entry assays
+### Virus replication and entry assays
 
 Multicycle replication assays were performed by infecting A549 cells with WSN at an MOI of 0.001. Aliquots were collected at the indicated time points and viral titers were measured by plaque assay on MDCK cells.
 
@@ -154,14 +286,14 @@ Entry assays were performed by incubating WT or PRKCD−/− A549 cells with PAS
 
 Gene expression by West Nile virus replicons was measured by inoculating WT or PRKCD-/- A549 cells at an MOI of 0.1. Renilla luciferase activity was measured 24 hr post-inoculation. PASTN reporter virus replication assays were initiated by acid bypass at an MOI of 0.05. Cells were incubated at 37˚C for 8 and 24 hr and viral gene expression was measured using the Nano-Glo luciferase assay (Promega).
 
-## PKCδ knockout cell line preparation
+### PKCδ knockout cell line preparation
 
 sgRNAs targeting the fourth exon of PRKCD (aacgatgaaccgccgcggag) or a non-targeting control (ACGGAGGCTAAGCGTCGCAA) were cloned into lentiCRISPR v2 (Addgene plasmid # 52961, Feng Zhang (Sanjana et al., 2014)). Lentiviral particles were produced with the resulting plasmids and used to transduce A549 cells. Transduced cells were selected with puromycin and single-cell sorted by FACS. Following outgrowth, clonal lines were screened for homozygous PRKCD gene disruptions by Indel Detection by Amplicon Analysis (IDAA) using primers that amplify the edited locus to identify genomic deletions of the target locus (Yang et al., 2015) (Figure 5—figure supplement 1A). Gene disruption was confirmed by Sanger sequencing of IDAA amplicons and identified the clonal lines PRKCD−/−−1 and PRKCD−/−−2 containing homozygous non-sense mutations (Figure 5—figure supplement 1B). Knockout was confirmed by western blotting of cell lysate. All assays were performed with early passages of knockout cell lines.
 
-## Mass spectrometry
+### Mass spectrometry
 
 WT or PRKCD−/−−1 and PRKCD−/−−2 A549 cells were infected with WSN at an MOI of 5. Cells were harvested at 4 and 8 hpi, pooled, lysed and NP was purified by immunoprecipitation as described previously (Mondal et al., 2015). Purified protein samples were lyophilized, dissolved in 8 M urea, reduced and alkylated with 10 mM tris(2-carboxyethyl)phosphine and 40 mM chloroacetamide, diluted to a final concentration of 1.5 M urea using 50 mM Tris, and digested with trypsin overnight at room temperature. Resultant peptides were desalted using a C18 Strata X column (Phenomenex) and enriched for phosphorylation by immobilized metal affinity chromatography using Ni-NTA magnetic agarose beads (Qiagen) (Rose et al., 2012). Both non-phosphorylated and phosphorylated peptide samples were resuspended in 0.2% formic acid and analyzed by MS. A 100 min nano-liquid chromatography gradient was used to introduce peptides to an Oribtrap Elite mass spectrometer (Thermo Scientific) and peptides were analyzed by data dependent acquisition (DDA) using higher-energy collisional dissociation (HCD) to fragment them (Vincent et al., 2013). Spectra obtained from these DDA experiments were searched against a concatenated target-decoy database containing the protein sequences of Homo sapiens and influenza A virus (Uniprot) using both Sequest within the Proteome Discoverer software package (Thermo Fisher) and MaxQuant (Cox et al., 2011; Cox and Mann, 2008). For all samples, cysteine carbamidomethylation and methionine oxidation were searched as fixed and variable amino acid modifications, respectively, and phosphorylation of serine, threonine, and tyrosine residues were searched as variable modifications. Database searches utilized a precursor mass tolerance of 40 ppm and a fragment ion tolerance of 0.02 Da, with peptide identifications filtered to a 1% false discovery rate (FDR). Proteome Discoverer searches used PhosphoRS to localize phosphorylation to amino acid residues using a fragment mass tolerance of 0.02 Da, automatically considering neutral loss peaks for HCD and a maximum of 500 position isoforms per phosphopeptide (Taus et al., 2011). Phosphosites were determined as localized if they were scored with a localization probability >75%. Influenza NP phosphopeptides were identified from DDA MS runs, including one peptide with phosphorylation localized to the NP T378. Subsequent targeted MS experiments localized phosphorylation to the S165 site on the tryptic NP peptide MCSLMQGSTLPR. These targeted MS experiments also monitored the m/z values for this peptide with one or two oxidized methionine residues. Four phosphopeptide isoforms for the NP peptide ASSGQISIQPTFSVQR were targeted for relative quantification. Using HCD fragmentation, phosphorylation was localized to the S402, S403, S407, and S413 residues on this peptide (Mondal et al., 2015). Extracted ion chromatograms were generated for the six NP phosphopeptides modified at S165, S402, S403, S407, S413, and T378. The peak area for each peptide was normalized to the total NP protein loaded on-column for each lysate, and the relative abundance of each phosphopeptide was compared between the lysates of infected wild-type A549 or mutant PRKCD−/− KO cell lines.
 
-## Statistics
+### Statistics
 
 Data are representative of at least three independent experiments, with each experiment performed in triplicate or greater. Multiple comparisons were performed with a one-way ANOVA and statistical significance was indicated when p<0.05.

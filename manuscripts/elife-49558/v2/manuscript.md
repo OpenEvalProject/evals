@@ -23,7 +23,7 @@
 
 ## Abstract
 
-The roles of long noncoding RNAs (lncRNAs) in musculoskeletal development, disease, and regeneration remain poorly understood. Here, we identified the novel lncRNA GRASLND (originally named RNF144A-AS1 ) as a regulator of mesenchymal stem cell (MSC) chondrogenesis. GRASLND , a primate-specific lncRNA, is upregulated during MSC chondrogenesis and appears to act directly downstream of SOX9, but not TGF-β3. We showed that the silencing of GRASLND resulted in lower accumulation of cartilage-like extracellular matrix in a pellet assay, while GRASLND overexpression – either via transgene ectopic expression or by endogenous activation via CRISPR-dCas9-VP64 – significantly enhanced cartilage matrix production. GRASLND acts to inhibit IFN-γ by binding to EIF2AK2, and we further demonstrated that GRASLND exhibits a protective effect in engineered cartilage against interferon type II. Our results indicate an important role of GRASLND in regulating stem cell chondrogenesis, as well as its therapeutic potential in the treatment of cartilage-related diseases, such as osteoarthritis.
+The roles of long noncoding RNAs (lncRNAs) in musculoskeletal development, disease, and regeneration remain poorly understood. Here, we identified the novel lncRNA GRASLND (originally named RNF144A-AS1) as a regulator of mesenchymal stem cell (MSC) chondrogenesis. GRASLND, a primate-specific lncRNA, is upregulated during MSC chondrogenesis and appears to act directly downstream of SOX9, but not TGF-β3. We showed that the silencing of GRASLND resulted in lower accumulation of cartilage-like extracellular matrix in a pellet assay, while GRASLND overexpression – either via transgene ectopic expression or by endogenous activation via CRISPR-dCas9-VP64 – significantly enhanced cartilage matrix production. GRASLND acts to inhibit IFN-γ by binding to EIF2AK2, and we further demonstrated that GRASLND exhibits a protective effect in engineered cartilage against interferon type II. Our results indicate an important role of GRASLND in regulating stem cell chondrogenesis, as well as its therapeutic potential in the treatment of cartilage-related diseases, such as osteoarthritis.
 
 ## Introduction
 
@@ -39,9 +39,67 @@ In a recent publication, we used high-depth RNA sequencing to map the transcript
 
 ## Results
 
-## GRASLND is crucial to and specifically upregulated in chondrogenesis
+### GRASLND is crucial to and specifically upregulated in chondrogenesis
 
 First, we utilized our published database on MSC chondrogenesis (GSE109503) (Huynh et al., 2018b) to identify lncRNA candidates. We investigated the expression patterns of MSC markers (ALCAM, ENG, VCAM1), chondrogenic markers (ACAN, COL2A1, COMP), and SOX transcription factors (SOX5, SOX6, SOX9) (Figure 1—figure supplement 1A). Pearson correlation analysis revealed 141 lncRNAs whose expression was highly correlated to those of MSC markers, 40 lncRNAs to chondrogenic markers, and 17 lncRNAs to SOX transcription factors (Figure 1—figure supplement 1B,C). Among those, LOXL1-AS1 and MIR4435-1HG were downregulated and RP11-366L20.2 and GRASLND were upregulated upon ectopic SOX9 overexpression (Table 1 and Supplementary file 1) (GSE69110; Ohba et al., 2015). To validate the functions of these lncRNAs in chondrogenesis, we systematically designed small hairpin RNAs (shRNAs) targeting each candidate and assessed the knockdown effect after 21 days of chondrogenic induction. We successfully designed two target shRNAs for LOXL1-AS1, MIR4435-1HG, and GRASLND, and one target shRNA for RP11-366L20.2 (Figure 1B, Figure 1—figure supplement 2A–C, Figure 1—source data 1). We showed that knockdown of two out of three MSC-related lncRNAs did not influence the production of glycosaminoglycans (GAG), an important extracellular matrix component in cartilage (Figure 1—figure supplement 2A–C). Although these lncRNAs may have other regulatory functions in MSCs, their roles in chondrogenesis appeared to be minimal. Moreover, we found that lower levels of MSC-correlated lncRNAs did not prime the MSCs toward chondrogenesis. However, knockdown of GRASLND (alias RNF144A-AS1 [RNF144A Antisense RNA 1]) resulted in decreased expression of chondrogenic markers (COL2A1, ACAN) and in upregulation of apoptotic (CASP3) and cellular senescence (TP53) markers (Figure 1A,B). This effect was not due to nonspecific cytotoxicity of the examined shRNAs, as released levels of lactase dehydrogenase (LDH) were similar among control and shRNA-expressing cells (Figure 1—figure supplement 2D; Riss et al., 2004). In addition, biochemical assays indicated a reduction in both GAG deposition (p<0.0001) and DNA and GAG/DNA levels (p<0.001) (Figure 1C–E). Histologically, we observed the same phenotypic loss of GAG and collagen type II in the extracellular matrices (ECM) of pellet samples with GRASLND targeted shRNAs, while the scrambled controls displayed explicit staining of these proteins (Figure 1F). Taken together, these data indicate that GRASLND may be required for both cellular proliferation and cartilage-like matrix production.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig1-v2.jpg)
+
+**Figure 1.:** (A) Expression pattern of GRASLND in chondrogenesis (GSE109503; Huynh et al., 2018b). Log2TPM: log transformed value of transcripts per million (TPM). (B) Effect of GRASLND knockdown on chondrogenic, apoptotic, and cell-cycle-inhibition markers (n = 5). (C–E) Effect of GRASLND knockdown on pellet matrix synthesis (n = 5). (F) Representative histological images of day 21 MSC pellets. Scale bar = 200 µm. SafO-FG, SafraninO-Fast Green staining; COLII IHC, collagen type II immunohistochemistry; hOC, human osteochondral control. (G–I) qRT-PCR analysis of MSC samples cultured in (G) the adipogenic condition (n = 6), (H) the osteogenic condition (n = 6), and (I) the chondrogenic condition (n = 3–4). One-way ANOVA followed by Tukey post-hoc test (α = 0.05). Groups of different letters are statistically different from one another.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** LncRNAs whose expression patterns are correlated to crucial markers are of interest. (A) Expression patterns of previously identified MSC markers (left), chondrogenic markers (middle), and SOX transcription factors (right). Data retrieved from: GSE109503. (B) Expression patterns of correlated genes or lncRNAs (Pearson correlation >0.9) to MSC markers (left), chondrogenic markers (middle), and SOX transcription factors (right). Lower boundary, 25th percentile; upper boundary, 75th percentile; blue line, median of correlated gene set. (C) Number of correlated genes and correlated lncRNAs.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Left: expression pattern of candidates during chondrogenesis (GSE109503). Log2TPM, log-transformed value of transcripts per million (TPM). Middle: efficiency of designed target shRNAs. Individual graphs indicate that experiments on target number one and target number two were performed separately (n = 3). Welch’s t-test on log-transformed fold changes was used for panels (A, B); one-way ANOVA with Tukey post-hoc test was used for panel (C) (α = 0.05). Groups of different letters are statistically different. Right: Quantitative analysis of synthesized GAG matrix normalized to DNA amount. In panel (A) LOXL1-AS1 (n = 4–5), a one-way ANOVA with Tukey post-hoc test was used. Groups of different letters are statistically different; in panel (B) RP11-366L20.2 (n = 3–5), Welch’s t-test was used; and in panel (C) MIR4435-1HG (n = 3–4), one- way ANOVA with Tukey post-hoc test was used. Groups of different letters are statistically different. (D) Cytotoxicity assay of target shRNAs for GRASLND. Cytotoxicity level was measured indirectly by the amount of released LDH (n = 4). One-way ANOVA followed by Tukey post-hoc test (α = 0.05) was used. Groups of different letters are statistically different from one another.
+
+**Table 1.**
+ Long non-coding RNA candidates shortlist.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene symbol</th>
+      <th>Gene name</th>
+      <th>ENSEMBL gene ID</th>
+      <th>Relationship to MSC chondrogenesis</th>
+      <th>Relationship to SOX9</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LOXL1-AS1</td>
+      <td>LOXL1 antisense RNA 1</td>
+      <td>ENSG00000261801</td>
+      <td>Correlated with MSC marker expression</td>
+      <td>Downregulated upon SOX9 overexpression</td>
+    </tr>
+    <tr>
+      <td>MIR4435-2HG gene synonym: MIR4435-1HG</td>
+      <td>MIR4435-2 host gene</td>
+      <td>ENSG00000172965</td>
+      <td>Correlated with MSC marker expression</td>
+      <td>Downregulated upon SOX9 overexpression</td>
+    </tr>
+    <tr>
+      <td>HMGA2-AS1 gene synonym: RP11-366L20.2</td>
+      <td>HMGA2 antisense RNA 1</td>
+      <td>ENSG00000197301</td>
+      <td>Correlated with MSC marker expression</td>
+      <td>Upregulated upon SOX9 overexpression</td>
+    </tr>
+    <tr>
+      <td>RNF144A-AS1 Referred to as GRASLND in this manuscript</td>
+      <td>RNF144A antisense RNA 1</td>
+      <td>ENSG00000228203</td>
+      <td>Correlated with chondrogenic marker expression</td>
+      <td>Upregulated upon SOX9 overexpression</td>
+    </tr>
+  </tbody>
+</table>
 
 To establish whether GRASLND expression is specific to chondrogenesis or involved in other differentiation pathways, MSCs were induced towards adipogenic, osteogenic, or chondrogenic lineages, and GRASLND expression was measured at various timepoints throughout these processes. Successful differentiation was observed with an increase in lineage-specific markers: PPARG (Peroxisome Proliferator Activated Receptor Gamma) and ADIPOQ (Adiponectin, C1Q And Collagen Domain Containing) for adipogenesis, COL1A1 (Collagen Type I Alpha 1 Chain) and COL10A1 (Collagen Type X Alpha Chain 1) for osteogenesis, and ACAN (Aggrecan), SOX9 (SRY-Box 9) and COL2A1 (Collagen Type II Alpha Chain 1) for chondrogenesis (Figure 1G–I). We found that GRASLND expression was particularly enriched as chondrogenesis progressed (Figure 1I). By contrast, GRASLND peaked at earlier timepoints during adipogenesis but decreased at later time points (Figure 1G), and downregulated when MSCs underwent osteogenic induction (Figure 1H), indicating that GRASLND is specifically upregulated in chondrogenesis. Furthermore, we speculate that GRASLND may display inhibitory effects on osteogenesis and adipogenesis, being downregulated during these processes.
 
@@ -49,21 +107,41 @@ To validate these gene expression findings, we performed RNA fluorescence in sit
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig2-v2.jpg)
 
-**Figure 2.:** GRASLND is localized to the cytoplasm.(A) RNA in situ hybridization of MSC-derived pellets at different time points during chondrogenesis. GAPDH and GRASLND probes were hybridized on separate slides. Top three panels, scale bar = 20 µm; bottom panel, scale bar = 10 µm. (B) qRT-PCR of the nuclear versus cytoplasmic fraction of day 21 MSC pellets (n = 4). NEAT1, Nuclear Paraspeckle Assembly Transcript 1. One-way ANOVA followed by Tukey post-hoc test (α = 0.05) was used. Groups of different letters are statistically different from one another. (C) Confocal microscopy on MSC-derived pellets. Scale bar = 5 µm.Figure 2—source data 1.Figure 2—source data 2.GRASLND probe set sequences (5′ – sequence – 3′).
+**Figure 2.:** (A) RNA in situ hybridization of MSC-derived pellets at different time points during chondrogenesis. GAPDH and GRASLND probes were hybridized on separate slides. Top three panels, scale bar = 20 µm; bottom panel, scale bar = 10 µm. (B) qRT-PCR of the nuclear versus cytoplasmic fraction of day 21 MSC pellets (n = 4). NEAT1, Nuclear Paraspeckle Assembly Transcript 1. One-way ANOVA followed by Tukey post-hoc test (α = 0.05) was used. Groups of different letters are statistically different from one another. (C) Confocal microscopy on MSC-derived pellets. Scale bar = 5 µm.
 
-## Characterization of GRASLND
+### Characterization of GRASLND
 
 We examined the characteristics of GRASLND by first exploring its evolutionary conservation. Except for exon 1, the genomic region of GRASLND (displayed as RNF144A-AS1 in the UCSC Genome Browser) is highly conserved in primates (Homo sapiens, Pan troglodytes, and Rhesus macaque) whose common ancestor can be traced back to 25 million years ago (Gibbs et al., 2007), while sequences are less conserved in other mammals (Figure 3A). This suggests that GRASLND may belong to a group of previously identified primate-specific lncRNAs (Derrien et al., 2012; Necsulea et al., 2014).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig3-v2.jpg)
+
+**Figure 3.:** (A) GRASLND genomic location and conservation across different species. Data were retrieved from UCSC Genome Browser. (B) Knockdown of GRASLND and expression of RNF144A (n = 4). (C) Overexpression GRASLND and expression of RNF144A (n = 4). Welch’s t-test. (D) Protein amount of RNF144A by western blot in variation of GRASLND levels. Lanes indicate biological replicates. Full bands are shown in Figure 3—figure supplement 1. (E) GRASLND level in GFP- or SOX9-transduced MSCs under different doses of TGF-β3 (n = 6). Two-way ANOVA followed by Tukey post-hoc test (α = 0.05) was carried out on the effect of SOX9 overexpression (p<0.0001) and doses of TGF-β3 (p>0.05). The interaction between two tested factors (SOX9 overexpression and TGF-β3 doses) was not significant (p>0.05). Groups of different letters are statistically different. ns, not significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Lanes indicate biological replicates.
 
 Per GENCODE categorization, the AS (antisense) suffix indicates a group of lncRNAs that are positioned on the opposite strand, with overlapping sequences to their juxtaposed protein-coding genes. Often, these lncRNAs play a role in regulating the expression of their protein-coding counterparts (Huynh et al., 2017). Therefore, we set out to examine whether this is also the case for GRASLND (alias RNF144A-AS1) (Figure 3B–C). Neither knockdown nor overexpression of GRASLND affected RNF144A transcript levels in MSCs cultured with or without TGF-β3. Moreover, RNF144A protein levels also remained unaffected by variations of GRASLND levels, as indicated by western blot (Figure 3D and Figure 3—figure supplement 1). These results indicate that GRASLND is not involved in the regulation of RNF144A. For these reasons, we proposed that GRASLND should be used to refer to the lncRNA in place of RNF144A-AS1.
 
 Next, we explored the signaling axis of GRASLND. Data mining and computational analysis on earlier published data suggested that GRASLND was a downstream effector of SOX9 (GSE69110) (Ohba et al., 2015). When SOX9 was overexpressed in fibroblasts, GRASLND expression was increased (~2 fold). We further confirmed this by utilizing SOX9 transgene overexpression in our MSCs culture (Figure 3E). Interestingly, although TGF-β3 has been demonstrated to act upstream of SOX9, exogenous addition of this growth factor alone did not result in enhanced GRASLND expression. It is notable that SOX9 levels in GFP controls were indistinguishable between TGF-β3 conditions at the time of investigation (1 week in monolayer culture), consistent with our previous finding that SOX9 was not upregulated until later timepoints in MSC chondrogenesis (Huynh et al., 2018b). Therefore, TGF-β3, despite being a potent growth factor, is not sufficient to elevate GRASLND expression. Instead, GRASLND appeared to be a downstream target of SOX9.
 
-## Enhanced chondrogenesis for cartilage tissue engineering with GRASLND
+### Enhanced chondrogenesis for cartilage tissue engineering with GRASLND
 
 As knockdown of GRASLND inhibited GAG and collagen deposition, we investigated whether overexpression of GRASLND would enhance chondrogenesis. We assessed this question by both transgene ectopic expression and by CRISPR-dCas9 (Clustered regularly interspaced short palindromic repeats – catalytically dead Cas9) mediated in-locus activation.
 
 We designed our lentiviral transfer vector to carry a BGH-pA (Bovine Growth Hormone Polyadenylation) termination signal downstream of GRASLND to allow for its correct processing (Figure 4—figure supplement 1A). In addition, GRASLND was also driven under a doxycycline-inducible promoter, enabling the temporal control of its expression. We utilized this feature to induce GRASLND only during chondrogenic culture (Figure 4A). This experimental design focused solely on the role of GRASLND during chondrogenesis, while successfully eliminating its effect in MSC maintenance and expansion from our analysis. As control, a vector encoding the Discosoma sp. red fluorescent protein (dsRed) coding sequence in place of GRASLND was utilized. As doxycycline was most potent at 1 µg/mL (Figure 4—figure supplement 1B,C), this dose was used for all of the following experiments.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig4-v2.jpg)
+
+**Figure 4.:** (A) Experimental timeline. (B, C) Biochemical analyses of day 21 MSC pellets (n = 4). Welch’s t-test. (D, E) qRT-PCR analyses of day 21 MSC pellets (n = 5 in panel [D]; n = 6 in panel [E]). Welch’s t-test. (F) Representative histological images of day 21 MSC pellets. COLII IHC, collagen type II immunohistochemistry; hOC, human osteochondral control. Scale bar = 100 µm. (B, D, F) Transgene ectopic expression of GRASLND. (C, E, F) CRISPR-dCas9-VP64-induced activation of GRASLND. ns, not significant (p>0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Overview of designed lentiviral backbone. GRASLND is driven under a doxycycline-inducible promoter, and poly-adenylated with BGHpA signal. (B, C) Relative expression of GRASLND under different doses of doxycycline (Dox). Dox is most potent at 1 μg/mL under both conditions of TGF-β3 (n = 4). One-way ANOVA with Tukey post-hoc test (α = 0.05) were used. Groups of different letters are statistically different. (D–F) Biochemical analyses of MSC pellets cultured under chondrogenic condition with different doses of TGF-β3 (n = 3–4): 0.1 ng/mL (D), 1ng/mL (E) and 10 ng/L (F). Welch’s t-test was used. No bracket indicates that the comparison is not significant. LTR, long terminal repeat; BGHpA, bovine growth hormone polyadenylation signal; TRE/CMV, Tet responsible element fused with the minimal cytomegalovirus promoter; rtTA2, reverse tetracycline-controlled transactivator 2; IRES, internal ribosome entry site; PuroR, puromycin N-acetyl-transferase; SIN: Self inactivating.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Dunnett’s test compared to ‘No Guide’ control. ns, not significant. **, p<0.01; ***, p<0.001.
 
 To determine whether GRASLND would improve chondrogenesis at lower doses of growth factor or at earlier time points, we compared DNA and GAG levels from pellets cultured under different TGF-β3 concentrations on day 7, day 14, and day 21 (Figure 4—figure supplement 1D–F). In agreement with our knockdown data, DNA content was unaffected. On the other hand, increases in GAG were observed at higher doses and at later time points, especially at 10 ng/mL of TGF-β3. It appears that an elevated level of GRASLND alone was not sufficient to enhance GAG deposition when lower levels of TGF-β3 were used (0.1 ng/mL and 1 ng/mL) or at earlier time points (day 7 and day 14), and that GRASLND may act in concert with other downstream effectors, which were not present at lower doses of TGF-β3 or at earlier time points in the process.
 
@@ -71,9 +149,62 @@ When chondrogenesis was induced with 10 ng/mL of TGF-β3 and assessed at 21 days
 
 These findings were further confirmed using CRISPR-dCas9-VP64-mediated activation of endogenous GRASLND. This system had been previously utilized to upregulate various transcription factors that efficiently induce embryonic fibroblasts into neurons (Black et al., 2016; Perez-Pinera et al., 2013). After screening eleven synthetic gRNAs, we selected the one with the highest activation level (Figure 4—figure supplement 2). When GRASLND was transcriptionally activated with CRISPR-dCas9, chondrogenesis was enhanced as evidenced by an elevated amount of GAG deposition (p<0.01); DNA amount may also be slightly increased, albeit not to a statistically significant level (Figure 4C). Similar trends were detected by qRT-PCR (Figure 4E) and histology (Figure 4F). It is worth noting that CRISPR-dCas9-mediated activation only resulted in a moderate upregulation of GRASLND expression relative to transgene ectopic expression (2-fold vs 100-fold). However, the functional outcome was more pronounced with CRISPR-dCas9. We observed an approximately 50% increase in the level of GAG produced when normalized to DNA (9.4 ± 2.19 mg/mg vs 16.3 ± 2.08 mg/mg), compared to 30% detected with ectopic expression (10.5 ± 0.84 mg/mg vs 13.9 ± 0.52 mg/mg).
 
-## GRASLND inhibits type II interferon signaling potentially by binding to EIF2AK2 and protects engineered cartilage from interferon
+### GRASLND inhibits type II interferon signaling potentially by binding to EIF2AK2 and protects engineered cartilage from interferon
 
 To decipher the potential signaling pathways involved, we chondrogenically induced MSCs in the presence or absence of GRASLND, and then utilized RNA-seq to compare the global transcriptomic changes between two conditions. As expected, GRASLND depletion resulted in impaired expression of chondrocyte-associated genes such as TRPV4 and COL9A2 (top 20 downregulated genes ranked by adjusted p-values) (Figure 5A). Skeletal system development and extracellular matrix organization were among the pathways most affected by the knockdown (Figure 5B). Surprisingly, pathways pertaining to interferon response were highly enriched in the upregulated gene list upon silencing of GRASLND. The top 20 upregulated genes involved many IFN downstream targets (MX2, IFI44, IFI44L, IFITM1, IFI6, IFIT1, STAT1, MX1, IFIT3, OAS3, OAS2), with both type I (IFN-α, IFN-β) and type II (IFN-γ) found to be enriched in our gene ontology analysis (Figure 5B). Furthermore, upregulated genes were also found to exhibit DNA-binding motifs for transcription factors of the IFN pathways: STAT1, STAT2, IRF1, and IRF2 (Table 2). A full list of differentially expressed genes is provided in Supplementary file 2. Further bioinformatic analyses created a network of potential transcription regulators as well as gene ontology terms for the upregulated gene cohort as a result of GRASLND silencing (Figure 5C). Taken together, GRASLND may act to suppress the activities of these transcription factors, and as a result could affect IFN signaling pathways during chondrogenesis.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig5-v2.jpg)
+
+**Figure 5.:** (A) Top 20 up- and down-regulated genes in GRASLND KD pellets compared to scrambled controls. (B) Gene ontology analysis of affected pathways. (C) Upregulated targets and related gene ontology terms and potential transcription factors. (D,E) Luciferase reporter assays on MSCs transduced with: (D) ISRE promoter element (n = 3), or (E) GAS promoter element (n = 3). Two-way ANOVA followed by Tukey post-hoc test (α = 0.05). Groups of different letters are statistically different. (F) RNA pull-down followed by western blot (full bands are shown in Figure 5—figure supplement 2). (G) RNA immunoprecipitation confirmed EIF2AK2 as the binding partner of GRASLND (n = 2). (H) Biochemical assays on MSC-derived pellets cultured under 100 ng/mL of IFN-β (n = 4). (I) Biochemical assays on MSC-derived pellets cultured under 5 ng/mL of IFN-γ (n = 6). Welch’s t-test. ns, not significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) (B) IFN signal was upregulated in OA patients. Samples are indicated as disease state followed by patients’ age (GSE57218). (C) IFN was upregulated while GRASLND was downregulated in damaged cartilage. Samples are named by cartilage site followed by patients’ age (EMTAB-4304). (C) Inverse correlation between GRASLND and IFN-related genes (EMTAB-4304).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig5-figsupp2-v2.jpg)
+
+**Table 2.**
+ Top 5 enriched Cis-BP motifs and associated transcription factors for upregulated genes upon GRASLND knockdown.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Transcription factor</th>
+      <th>Cis-BP motif*</th>
+      <th>Number of genes with enriched motifs/number of upregulated genes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STAT2</td>
+      <td></td>
+      <td>212/817</td>
+    </tr>
+    <tr>
+      <td>IRF2</td>
+      <td></td>
+      <td>189/817</td>
+    </tr>
+    <tr>
+      <td>IRF1</td>
+      <td></td>
+      <td>220/817</td>
+    </tr>
+    <tr>
+      <td>IRF1</td>
+      <td></td>
+      <td>153/817</td>
+    </tr>
+    <tr>
+      <td>STAT1</td>
+      <td></td>
+      <td>262/817</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Cis-BP: Catalogue of Inferred Sequence Preferences of DNA-Binding Proteins (Weirauch et al., 2014). Curated position weight matrices were retrieved from http://motifcollections.aertslab.org._
 
 To further confirm this relationship, we performed luciferase reporter assays for interferon signaling upon GRASLND knockdown. Utilizing specific reporter constructs, we were able to determine whether GRASLND acted on type I or type II IFN. Our results indicated that a decreased level of GRASLND led to a heightened type II (IFN-γ) (Figure 5E) response but not to a heightened type I (IFN-β) response (Figure 5D). Importantly, luminescence activities between scrambled control and GRASLND knockdown were indistinguishable from each other in basal, IFN-free conditions. This indicates that at the basal level, the two groups responded similarly to lentiviral transduction, and that the observed difference in IFN signal was a consequence of GRASLND downregulation.
 
@@ -81,13 +212,13 @@ Since GRASLND was expressed in the cytoplasm (Figure 2C), we hypothesized that i
 
 Interestingly, by mining a published microarray database (GSE57218) (Ramos et al., 2014), we found that IFN-related genes (STAT1, IFNGR2, NCAM1, MID1) were highly elevated in the cartilage tissues of osteoarthritis patients (Figure 5—figure supplement 1A). As the microarray did not contain probes for GRASLND, no information on its expression could be extracted. In addition, we identified another independent study that reported changes in the transcriptomes of intact and damaged cartilage tissues (E-MTAB-4304) (Dunn et al., 2016). Similarly, a cohort of IFN-related genes was also upregulated in damaged cartilage, especially STAT1 and IFNGR1 (Figure 5—figure supplement 1B). Interestingly, we identified a negative correlation between GRASLND and a few IFN related genes (IFNGR1, ICAM1) in damaged cartilage (Figure 5—figure supplement 1C). Therefore, we proposed that GRASLND may possess some therapeutic potential through suppression of IFN signaling in osteoarthritis. To evaluate this possibility, we implemented the use of the GRASLND transgene in engineered cartilage cultured under IFN addition (100 ng/mL of IFN-β or 5 ng/mL of IFN-γ). We determined doses of IFN-β and IFN-γ by selecting the lowest concentration at which day 21 pellets exhibited GAG loss when compared to no IFN control. Consistent with luciferase reporter assays, the protective effect of GRASLND was observed upon IFN-γ challenge but not upon IFN-β challenge (Figure 5H,I). However, we observed a reduced level of GAG production compared to normal conditions, suggesting that GRASLND can protect the ECM from degradation, but not completely to control levels.
 
-## GRASLND enhanced the chondrogenesis of adipose-derived stem cells
+### GRASLND enhanced the chondrogenesis of adipose-derived stem cells
 
 To determine whether the function of GRASLND is unique to MSCs or present in other adult stem cells, we addressed whether modulating GRASLND expression could also improve chondrogenesis of adipose stem cells (ASCs). We observed an increase in GAG production when GRASLND was overexpressed in ASCs compared to control (p<0.0001) (Figure 6A), although ACAN levels were not significantly increased. Importantly, COL2A1 expression was significantly elevated (~5 fold) with overexpression of GRASLND (Figure 6B). On the basis of these data, it appears that GRASLND uses the same mechanism across these two cell types, asserting a pan effect on potentiating their chondrogenic capabilities. It is worth noting that histologic examination of the engineered cartilage showed a similar level of collagen type II in pellets with GRASLND overexpression compared to the dsRed control (Figure 6C), suggesting that the influence of GRASLND could be variable in different target cells.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig6-v2.jpg)
 
-**Figure 6.:** GRASLND enhances chondrogenesis in adipose-derived stem cells.(A) Biochemical analyses (n = 5). (B) qRT-PCR analyses (n = 6). (C) Representative histological images of day 21 ASC pellets. COLII IHC, Collagen type II immunohistochemistry; hOC, Human osteochondral control. Scale bar = 100 µm. Welch’s t-test. ns, not significant.
+**Figure 6.:** (A) Biochemical analyses (n = 5). (B) qRT-PCR analyses (n = 6). (C) Representative histological images of day 21 ASC pellets. COLII IHC, Collagen type II immunohistochemistry; hOC, Human osteochondral control. Scale bar = 100 µm. Welch’s t-test. ns, not significant.
 
 ## Discussion
 
@@ -105,29 +236,29 @@ In conclusion, we have identified GRASLND as an important regulator of MSC chond
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 Bone marrow was obtained from discarded and de-identified waste tissue from adult bone marrow transplant donors in accordance with the Institutional Review Board of Duke University Medical Center. Adherent cells were expanded and maintained in expansion medium: DMEM-low glucose (Gibco), 1% penicillin/streptomycin (Gibco), 10% fetal bovine serum (FBS) (ThermoFisher), and 1 ng/mL basic fibroblast growth factor (Roche) (Hagmann et al., 2013).
 
 Adipose-derived stem cells (ASCs) were purchased from ATCC (SCRC-4000) and cultured in complete growth medium: mesenchymal stem cells basal medium (ATCC PCS-500–030), mesenchymal stem cell growth kit (ATCC PCS-500–040) (2% FBS, 5 ng/mL basic recombinant human FGF, 5 ng/mL acidic recombinant human FGF, 5 ng/mL recombinant human EGF, 2.4 nM L-alanyl-L-glutamine), and 0.2 mg/mL G418.
 
-## Plasmid construction
+### Plasmid construction
 
-## shRNA
+#### shRNA
 
 Short hairpin RNA (shRNA) sequences for specific genes of interest were designed with the Broad Institute GPP Web Portal (Moffat et al., 2006). For each gene, six different sequences were selected for screening, after which the two most effective were chosen for downstream experiments in chondrogenic assays. Selected shRNAs were cloned into a modified lentiviral vector (Addgene #12247) using MluI and ClaI restriction sites, as described previously (Diekman et al., 2015). A complete list of effective shRNA sequences is presented in Figure 1—source data 1.
 
-## Transgene overexpression of GRASLND
+### Transgene overexpression of GRASLND
 
 A derivative vector from modified TMPrtTA (Glass et al., 2014; Barde et al., 2006) was created with NEBuilder HiFi DNA Assembly Master Mix (New England Biolabs). Backbone was digested with EcoRV-HF (New England Biolabs) and PspXI (New England Biolabs). The following resultant fragments were amplified by polymerase chain reaction and assembled into the digested plasmid: Tetracycline-responsive element and minimal CMV promoter (TRE/CMV), firefly luciferase, bGH poly(A) termination signal (BGHpA). Primers and plasmids for cloning are provided in Figure 2—source data 1.
 
 The full sequence of GRASLND transcript variant 1 (RefSeq NR_033997.1) was synthesized by Integrated DNA Technologies, Inc. GRASLND or the Discosoma sp. red fluorescent protein coding sequence (dsRed) were cloned into the above derivative tetracycline-inducible plasmid with NEBuilder HiFi DNA Assembly Master Mix (New England Biolabs) at NheI and MluI restriction sites (pLVD-GRASLND and pLVD-dsRed). Amplifying primers are listed in Figure 2—source data 1.
 
-## CRISPR-dCas9 activation of GRASLND
+### CRISPR-dCas9 activation of GRASLND
 
 Guide RNA sequences were designed using the UCSC genome browser (http://genome.ucsc.edu/) (Kent et al., 2002), integrated with the MIT specificity score calculated by CRISPOR and the Doench efficiency score (Doench et al., 2016; Haeussler et al., 2016). Oligonucleotides (Integrated DNA Technologies, Inc) were phosphorylated, annealed, and ligated into the pLV-hUbC-dCas9-VP64 lentiviral transfer vector (Addgene #53192) previously digested at BsmBI restriction sites (Kabadi et al., 2014). Eleven potential guide RNA sequences were selected and screened for their efficacy, and the gRNA with the highest activation potential was chosen for further experiments (Figure 4—figure supplement 2). The synthetic gRNA used in all CRISPR-dCas9 activation experiments has the following sequence: 5′-CCACTGGGGATAGTTCCCTG-3′.
 
-## Lentivirus production
+### Lentivirus production
 
 HEK 293T producer cells were maintained in 293T medium: DMEM-high glucose (Gibco), 10% heat inactivated FBS (Atlas), and 1% penicillin/streptomycin (Gibco). To produce lentivirus for pellet studies, HEK 293T cells were plated at 3.8 × 106 cells per 10 cm dish (Corning) or at 8.3 × 106 cells per 15 cm dish (Falcon) in 293T medium. The following day, cells were co-transfected by calcium phosphate precipitation with the appropriate transfer vector (20 µg for 10 cm dish; 60 µg for 15 cm dish), the second-generation packaging plasmid psPAX2 (Addgene #12260) (15 µg for 10 cm dish; 45 µg for 15 cm dish), and the envelope plasmid pMD2.g (Addgene #12259) (6 µg for 10 cm dish; 18 µg for 15 cm dish). Cells were incubated at 37°C overnight. The following day, fresh medium consisting of DMEM-high glucose (Gibco), 10% heat-inactivated FBS (Atlas), 1% penicillin/streptomycin (Gibco), and 4 mM caffeine (Sigma-Aldrich) was exchanged (12 mL for 10 cm dish; 36 mL for 15 cm dish). Lentivirus was harvested 24 hr post medium change (harvest 1), when fresh medium was exchanged again. 48 hr post medium change, harvest two was collected. Harvest one and harvest two supernatants were pooled, filtered through 0.45 µm cellulose acetate filters (Corning), concentrated, aliquoted, and stored at −80°C for future use.
 
@@ -135,79 +266,79 @@ To produce lentivirus for shRNA and gRNA screening, HEK 293T cells were plated a
 
 For knockdown experiments, lentivirus was titered by determining the number of antibiotic-resistant colonies after puromycin treatment. For overexpression experiments, lentivirus was titered by measuring integrated lentiviral copy number in host DNA with qRT-PCR as previously described (Sastry et al., 2002). Control and tested groups were targeted at similar MOIs.
 
-## Lentivirus transduction
+### Lentivirus transduction
 
 Cells were plated at 4500 cells/ cm2 for one day and then transduced with appropriate lentivirus in expansion medium supplemented with 4 µg/mL polybrene (Sigma-Aldrich). Twenty-four hours post transduction, cells were rinsed once in phosphate buffered saline (PBS). Cells were cultured with fresh medium exchange every three days.
 
-## Cytotoxicity assay
+### Cytotoxicity assay
 
 Seven days post viral transduction, medium was collected and the amount of lactose dehydrogenase (LDH) was measured as indirect output for cellular toxicity. Assays were performed following manufacturer’s protocol (Promega). Absorbance signal was recorded at 490 nm with the Cytation 5 instrument (BioTek).
 
-## RNA-seq library preparation
+### RNA-seq library preparation
 
 Isolated RNAs were stored at −80°C and submitted to the Genome Technology Access Center at Washington University in St Louis for library preparation and sequencing on a HiSeq 2500 (2 × 101 bp). Libraries were prepared using TruSeq Stranded Total RNA with Ribo-Zero Gold kit (Illumina).
 
-## RNA pull-down and mass spectrometry
+### RNA pull-down and mass spectrometry
 
 The full sequence of GRASLND transcript variant 1 (RefSeq NR_033997.1) was synthesized by Integrated DNA Technologies, Inc, and cloned into the pGEM-T Easy Vector System (Promega) using the EcoRV site. This served as a template for subsequent in vitro transcription using the Riboprobe Combination Systems Kit (Promega), with spiked-in biotin RNA labeling mix (Roche). Resulted biotinylated sense and control antisense transcripts of GRASLND were stored at −80°C until further processing. Cell lysates from day 21 pellets were homogenized in mRIPA buffer (Cell Signaling) and centrifuged at 14,000 rpm for 15 min. The protein concentration of cell lysates was measured and adjusted to 2 mg/mL. 500 μL of total protein (1 mg) were incubated with either 1.5 µg of GRASLND-sense or -antisense RNA transcripts tagged with biotin-16-UTP overnight (12 hr). Following incubation, the RNA–protein mixtures and cell lysates (control) were incubated with 100 μL of prewashed streptavidin beads for 3 hr at 4°C (Pierce MS-Compatible Magnetic IP Kit, Streptavidin). The streptavidin beads were then washed five times in 800 µl of ice cold PBS. Beads were eluted twice, each with 30 μL of SDS elution buffer containing 100 mM Tris/HCl (pH 8), 4% SDS, and 50 mM DTT. The elution was used either for mass spectroscopy (Proteomics Core Facility, Washington University School of Medicine) or for Western blot (RayBiotech).
 
-## RNA immunoprecipitation (RIP)
+### RNA immunoprecipitation (RIP)
 
 Day 21 pellets were harvested and stored at −80°C until further processing. Lysate was obtained by homogenizing day 21 pellets in 1.1 mL of complete RIP lysis buffer (1X RIP lysis buffer, 200X protease inhibitor cocktail, 400X RNase inhibitor) (Millipore) with a bead beater (BioSpec Products) at 2500 oscillations per minute for 3 min for a total of five times. The lysate was subsequently transferred to a new microcentrifuge tube, incubated on ice for 5 min to allow for cell swelling by the hypotonic RIP buffer, then stored at −80°C overnight.
 
 RIP assay was performed using the EZ-Magna RIP Kit (Millipore) with the rabbit anti-PKR (alias for EIF2AK2) antibodies (Abcam) following manufacturer’s protocol. Separation of beads during the procedure was carried out using the MiniMACS separator (Miltenyi Biotec). Briefly, magnetic beads were washed and prepared by incubating with 5 μg of rabbit anti-PKR antibodies or 5 μg of normal rabbit IgG (negative control) per RIP reaction with rotation. Once the beads were ready, 900 μL of fresh complete RIP immunoprecipitation buffer (1X RIP wash buffer, 0.5 M EDTA, 200X RNase inhibitor) was added to the magnetic beads, followed by 100 μL of pellet lysate per reaction. Tubes were incubated with rotation at 200 rpm overnight at 4°C (Benchmark Orbi-Sharker Jr). The next day, tubes were centrifuged briefly, and magnetic beads were washed with cold RIP wash buffer for a total of six times. Proteins were subsequently degraded from resulting pull-down with proteinase K (1X RIP wash buffer, 10% SDS, 8.3X proteinase K) at 55°C for 30 min. After the incubation, tubes were centrifuged briefly and beads were separated. Supernatant was transferred into a new microcentrifuge tube, to which 250 μL of buffer RL was added (Norgen Biotek). RNA was isolated as described below using the Norgen Total RNA Isolation Plus Micro Kit (Norgen Biotek) following the manufacturer’s protocol. An equal amount of eluted RNA was subsequently used for reverse transcription, followed by qRT-PCR as described below.
 
-## Bulk RNA-seq analysis
+### Bulk RNA-seq analysis
 
-## Alignment and read assignment
+#### Alignment and read assignment
 
 Demultiplexed raw sequencing files were generated by the Genome Technology Access Center at Washington University in St Louis. Reads were processed with trimmomatic-0.36 (Bolger et al., 2014), aligned with STAR-2.6.0 (Dobin et al., 2013) and counted with featureCounts/Subread-1.6.1 (Liao et al., 2014).
 
-## Differential expression analysis
+#### Differential expression analysis
 
 Downstream differential expression analysis was performed using DESeq2-1.16.1 (Love et al., 2014) (abs[log2 fold change]>1 and adjusted p-values<0.05).
 
-## Gene ontology analysis
+#### Gene ontology analysis
 
 Gene ontology analysis of dysregulated genes was performed with enrichR-1.0 (Chen et al., 2013; Kuleshov et al., 2016).
 
-## Transcription factor identification
+#### Transcription factor identification
 
 Potential transcription factors were identified on the basis of the presence of annotated DNA-binding motifs with RcisTarget-1.0.2 (Aibar et al., 2017). Annotation databases for the motifs in human transcription factors were previously compiled and can be downloaded at https://resources.aertslab.org/cistarget/. Cis-BP motifs were ranked by normalized enrichment score (NES), and the top five were reported in this paper.
 
-## Identification of lncRNA candidates
+#### Identification of lncRNA candidates
 
 GSE109503 is the dataset that profiles transcriptomic changes of MSC chondrogenesis, composed of six time points (day 0, day 1, day 3, day 7, day 14, and day 21) and three biological replicates. Raw sequencing files were downloaded from the GEO Omnibus, and processed as described above. Candidates were first restricted to those differentially expressed per day pair-wise (abs[log2 fold change]>1 and adjusted p-values<0.05) and of detectable abundance (TPM >1 in more than six samples across the dataset). lncRNAs whose transcripts were not analyzed for transcript support level (ENSEMBL TSL) were also excluded. For the surviving genes, Pearson correlation analysis was then performed on mean expression per day. Candidates were identified as those with Pearson correlation values >0.9 to all three investigated markers (ALCAM, VCAM1, ENG for MSC markers; COL2A1, ACAN, COMP for chondrogenic markers; SOX5, SOX6, SOX9 for SOX transcription factors). GSE69110 depicts the transcriptomic changes of fibroblasts in response to SOX9 expression levels (Supplementary file 1). Raw sequencing files were downloaded from the GEO Omnibus, and processed similarly. Genes that were expressed differentially between two conditions (SOX9 overexpression versus GFP control) were then identified (abs[log2 fold change]>1 and adjusted p-values<0.1). The shortlist of lncRNAs are the intersecting candidates between genes emerging from the above Pearson correlation analysis and dysregulated genes from this dataset.
 
-## Microarray analysis
+### Microarray analysis
 
 Microarray processed data was downloaded from the GEO Omnibus and differential expression analysis was performed with limma-3.34.6 (Ritchie et al., 2015).
 
-## Mass spectrometry analysis
+### Mass spectrometry analysis
 
 Scaffold-4.8.4 (Proteome Software Inc) was used to validate MS/MS-based peptide and protein identifications. Peptide identifications were accepted if they could be established as having a greater than 66.0% probability of achieving an FDR less than 1.0% by the Scaffold Local FDR algorithm. Protein identification was accepted if they could be established at a greater than 95.0% probability and contained at least one identified peptide. Protein probabilities were assigned by the Protein Prophet algorithm (Nesvizhskii et al., 2003). Proteins that contain similar peptides and could not be differentiated on the basis of MS/MS analysis alone were grouped to satisfy the principles of parsimony. To identify differentially bound proteins, one-tailed t-test was performed on sense samples compared to naked beads, and sense samples were compared to antisense samples.
 
-## Chondrogenesis assay
+### Chondrogenesis assay
 
 MSCs or ASCs were digested in 0.05% trypsin-EDTA (Gibco), and trypsin was inactivated with 1.5X volume of expansion medium. Dissociated cells were centrifuged at 200 x g for 5 min, and supernatant was aspirated. Subsequently, cells were washed in pre-warmed DMEM-high glucose (Gibco) three times, and resuspended at 5 × 105 cells/mL in complete chondrogenic medium: DMEM-high glucose (Gibco), 1% penicillin/streptomycin (Gibco), 1% ITS+ (Corning), 100 nM dexamethasone (Sigma-Aldrich), 50 µg/mL ascorbic acid (Sigma-Aldrich), 40 µg/mL L-proline (Sigma-Aldrich), and 10 ng/mL rhTGF-β3 (R and D Systems). 500 µL of the above cell mixture was dispensed into 15 mL conical tubes and centrifuged at 200 x g for 5 min. Pellets were cultured at 37°C in 5% CO2 for 21 days with medium exchange every three days.
 
-## Osteogenesis and adipogenesis assays
+### Osteogenesis and adipogenesis assays
 
 MSCs were plated at 2 × 104 cells/well in 6-well plates (Corning) and cultured for 4 days in MSC expansion medium, followed by induction medium for 7 days. Osteogenic induction medium includes: DMEM-high glucose (Gibco), 10% FBS, 1% penicillin/streptomycin (Gibco), 10 nM dexamethasone (Sigma-Aldrich), 50 µg/mL ascorbic acid (Sigma-Aldrich), 40 µg/mL L-proline (Sigma-Aldrich), 10 mM β-glycerol phosphate (Chem-Impex International), and 100 ng/mL rh-BMP2 (ThermoFisher). Adipogenic induction medium includes: DMEM-high glucose (Gibco), 10% FBS (ThermoFisher), 1% penicillin/streptomycin (Gibco), 1% ITS+ (Corning), 100 nM dexamethasone (Sigma-Aldrich), 450 µM 3-isobutyl-1-methylxanthine (Sigma-Aldrich), and 200 µM indomethacin (Sigma-Aldrich).
 
-## Biochemical assays
+### Biochemical assays
 
 Harvested pellets were stored at −20°C until further processing. Collected samples were digested in 125 µg/mL papain at 60°C overnight. A DMMB assay was performed as previously described to measure GAG production (Farndale et al., 1986). PicoGreen assay (ThermoFisher) was performed to measure DNA content following manufacture’s protocol.
 
-## Immunohistochemistry and histology
+### Immunohistochemistry and histology
 
 Harvested pellets were fixed in 4% paraformaldehyde for 48 hr, and processed for paraffin embedding. Samples were sectioned at 10 µm thickness, and subjected to either Safranin O – Fast Green standard staining (Estes et al., 2010) or to immunohistochemistry of collagen type II (Developmental Studies Hybridoma Bank, University of Iowa). Human osteochondral sections were stained simultaneously to serve as a positive control. Sections with no primary antibodies were used as negative control for immunohistochemistry.
 
-## Single-molecule RNA fluorescence in situ hybridization (RNA FISH)
+### Single-molecule RNA fluorescence in situ hybridization (RNA FISH)
 
 Harvested pellets were snap frozen in Tissue-Plus O.C.T. Compound (Fisher HealthCare) and stored at −80°C until further processing. Samples were sectioned at 5 µm thickness and slides were stored at −80°C until staining. Probe sets for RNA FISH were conjugated with Quasar 670 dye and were synthesized by LGC Biosearch Technologies to detect signal from a congregation of multiple probes binding to target DNA. GAPDH probe set was pre-designed by the manufacturer. Probe sets are listed in Figure 2—source data 2. Staining was carried out according to the manufacturer’s protocol for frozen tissues. Slides were mounted with Prolong Gold anti-fade mountant with DAPI (ThermoFisher) and imaged with the Virtual Slide Microscope VS120 (Olympus) at lower magnification. Confocal microscopy (Zeiss LSM 880) was used to capture images at higher magnification with the Plan-Apochromat 63x/1.40 Oil DIC M27 objective. Fluorescence signal from target RNA FISH probes was captured using a 633 nm excitation wavelength coupled with the Airyscan detector (Zeiss) to achieve the best resolution with improved signal-to-noise ratio (Weisshart, 2014). Hoechst signal was captured on the PMT detector utilizing a 405 nm excitation wavelength.
 
-## RNA isolation and quantitative RT-PCR
+### RNA isolation and quantitative RT-PCR
 
 Norgen Total RNA Isolation Plus Micro Kits (Norgen Biotek) were used to extract RNA from pellet samples, and Norgen Total RNA Isolation Plus Kits (Norgen Biotek) were used for all other RNA isolation. For monolayers, cells were lysed in buffer RL and stored at −20°C until further processing. For pellets, harvested samples were snap frozen in liquid nitrogen and stored at −80°C until further processing. On the day of RNA isolation, pellets were homogenized in buffer RL using a bead beater (BioSpec Products) at 2500 oscillations per minute for 20 s for a total of three times. Subsequent steps were performed following the manufacturer’s protocol.
 
@@ -215,14 +346,14 @@ Nuclear and cytoplasmic fractions from day 21 MSC pellets were separated with th
 
 Reverse transcription by Superscript VILO cDNA master mix (Invitrogen) was performed immediately following RNA isolation. cDNA was stored at −20°C until further processing. qRT-PCR was carried out using Fast SyBR Green master mix (Applied Biosystems) following the manufacturer’s protocol. A complete list of primer pairs (synthesized by Integrated DNA Technologies, Inc) is reported in Figure 1—source data 2.
 
-## Luminescence assay
+### Luminescence assay
 
 MSCs were plated at 8.5 × 104 cells per well in 24-well plates (Corning). Lentivirus carrying the response elements for type I (ISRE) or type II (GAS) upstream of firefly luciferase was purchased from Qiagen. 24 hours post plating, cells were co-transduced with virus in the following groups: ISRE with scrambled shRNA, ISRE with GRASLND shRNA, GAS with scrambled shRNA, and GAS with GRASLND shRNA. 24 hours post-transduction, cells were rinsed once in PBS and fresh medium was exchanged. Three days later, medium was switched to expansion medium with 100 ng/mL IFN-β (PeproTech) for wells with ISRE or with 5 ng/mL IFN-γ (PeproTech) for wells with GAS. MSCs were cultured for another 22 hr, and then harvested for luminescence assay using Bright-Glo Luciferase Assay System (Promega). Luminescence signals were measured using the Cytation 5 Plate reader (BioTek).
 
-## Western blot
+### Western blot
 
 On the day of harvest, cells were homogenized with complete lysis buffer in ice cold PBS: 10X RIPA buffer (Cell Signaling Technology), 100X phosphatase inhibitor cocktail A (Santa Cruz Biotechnology), and 100X Halt protease inhibitor cocktails (ThermoScientific). Lysates were subsequently centrifuged at 14,000 x g for 15 min at 4°C, and supernatants were collected and stored at −20°C until further processing. Western blot was serviced by RayBiotech with the following antibodies: primary anti-β-actin (RayBiotech), primary anti-RNF144A (Abcam), primary anti-PKR (alias anti-EIF2AK2) (RayBiotech) and secondary anti-rabbit-HRP (horse radish peroxidase) (RayBiotech).
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed using R (R Development Core Team, 2018). Results from biochemical assays are depicted as mean ± SD. Results from qRT-PCR are depicted as fold-change with error bars calculated per Applied Biosystems manual instruction.

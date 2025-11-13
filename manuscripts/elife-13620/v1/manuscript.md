@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.13620.001 The Reproducibility Project: Cancer Biology seeks to address growing concerns about the reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores ( Errington et al., 2014 ). This Registered Report describes the proposed replication plan of key experiments from “Systematic identification of genomic markers of drug sensitivity in cancer cells” by Garnett and colleagues, published in Nature in 2012 ( Garnett et al., 2012 ). The experiments to be replicated are those reported in Figures 4C, 4E, 4F, and Supplemental Figures 16 and 20. Garnett and colleagues performed a high throughput screen assessing the effect of 130 drugs on 639 cancer-derived cell lines in order to identify novel interactions for possible therapeutic approaches. They then tested this approach by exploring in more detail a novel interaction they identified in which Ewing’s sarcoma cell lines showed an increased sensitivity to PARP inhibitors (Figure 4C). Mesenchymal progenitor cells (MPCs) transformed with the signature EWS-FLI1 translocation, the hallmark of Ewing’s sarcoma family tumors, exhibited increased sensitivity to the PARP inhibitor olaparib as compared to MPCs transformed with a different translocation (Figure 4E). Knockdown mediated by siRNA of EWS-FLI1 abrogated this sensitivity to olaparib (Figure 4F). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange , and the results of the replications will be published by eLife . DOI: http://dx.doi.org/10.7554/eLife.13620.001
+The Reproducibility Project: Cancer Biology seeks to address growing concerns about the reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores (Errington et al., 2014). This Registered Report describes the proposed replication plan of key experiments from “Systematic identification of genomic markers of drug sensitivity in cancer cells” by Garnett and colleagues, published in Nature in 2012 (Garnett et al., 2012). The experiments to be replicated are those reported in Figures 4C, 4E, 4F, and Supplemental Figures 16 and 20. Garnett and colleagues performed a high throughput screen assessing the effect of 130 drugs on 639 cancer-derived cell lines in order to identify novel interactions for possible therapeutic approaches. They then tested this approach by exploring in more detail a novel interaction they identified in which Ewing’s sarcoma cell lines showed an increased sensitivity to PARP inhibitors (Figure 4C). Mesenchymal progenitor cells (MPCs) transformed with the signature EWS-FLI1 translocation, the hallmark of Ewing’s sarcoma family tumors, exhibited increased sensitivity to the PARP inhibitor olaparib as compared to MPCs transformed with a different translocation (Figure 4E). Knockdown mediated by siRNA of EWS-FLI1 abrogated this sensitivity to olaparib (Figure 4F). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange, and the results of the replications will be published by eLife.
 
 ## Introduction
 
@@ -37,172 +37,1483 @@ A paper published at the same time as Garnett and colleagues’ work also confir
 
 Unless otherwise noted, all protocol information and references were derived from the original paper or information obtained directly from the authors.
 
-## Protocol 1: Colony formation assay of Ewing’s sarcoma cell lines with olaparib
+### Protocol 1: Colony formation assay of Ewing’s sarcoma cell lines with olaparib
 
 This experiment assesses the sensitivity of Ewing’s sarcoma cell lines to the PARP inhibitor olaparib. A colony formation assay will be performed with Ewing’s sarcoma, osteosarcoma, and BRCA2-deficient and BRCA-proficient cells treated with a range of olaparib concentrations to determine the effective concentration (number of colonies reduced by at least 90%). This protocol replicates the experiment reported in Figure 4C and Supplemental Figure 16.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #CommentsOlaparibInhibitorSelleck ChemicalsS1060Source shared during communication with authors.DMSOChemicalSigma Aldrich472301Source shared during communication with authors.Phosphate buffered saline (PBS)BufferGibco-Life Technologies10010-023Source shared during communication with authors.Giemsa stainChemicalSigma AldrichG5637Source shared during communication with authors.MethanolChemicalFisher ScientificBP1105-4Source shared during communication with authors.DoTc2-4510 cellsCell lineATCCCRL-7920Original source not specified.MES-SA cellsCell lineATCCCRL-1976Original source not specifiedU-2-OS cellsCell lineATCCHTB-96Original source not specified.SAOS-2 cellsCell lineATCCHTB-85Original source not specified.SJSA-1 cellsCell lineATCCCRL-2098Original source not specified.HOS cellsCell lineATCCCRL-1543Original source not specified.MG-63 cellsCell lineATCCCRL-1427Original source not specified.143B cellsCell lineATCCCRL-8303Replaces osteosarcoma cells used originally; see Known Differences.G-292 cells, clone A141B1Cell lineATCCCRL-1423A673 cellsCell lineATCCCRL-1598Replaces the ES cells used originally; see Known DifferencesSK-N-MC cellsCell lineATCCHTB-10TC-71 cells2Cell lineChildren’s Oncology Group Cell Culture and Xenograft Repository CHLA-10 cells1Cell lineChildren’s Oncology Group Cell Culture and Xenograft RepositoryCHLA-9 cells3Cell lineChildren’s Oncology Group Cell Culture and Xenograft RepositoryIscove’s modified DMEM (IMDM)Cell cultureLife Technologies12440-053Not originally included.L-glutamineCell cultureLife Technologies25030-081Not originally included.Insulin-Transferrin-Selenium (ITS)Growth factorLonza17-838ZNot originally included.McCoy’s 5A Medium ModifiedCell cultureATCC30-2007Not originally included.Fetal bovine serum (FBS)Cell cultureValley BiomedicalBS3032Original source not specified.RPMI 1640 mediumCell cultureATCC30-2001Original source not specified.Eagle’s Minimum Essential Media (EMEM)Cell cultureATCC30-2003Originally not specified.5-bromo-2’-deoxyuridineNucleosideSigmaB5002Not originally included.MEM Eagle with Earle’s BSSCell cultureLonza12-125FNot originally included.DMEM – High GlucoseCell cultureGE-HealthcareE15-883Shared during communication with authors.DMEM/F12Cell cultureLife Technologies11320-033Original source not specified.1 See http://www.cogcell.org/dl/EFT_Lines_DataSheets/CHLA-10_Cell_Line_Data_Sheet_COGcell_org.pdf2 See http://www.cogcell.org/dl/EFT_Lines_DataSheets/TC- 71_Cell_Line_Data_Sheet_COGcell_org.pdf3 See http://www.cogcell.org/dl/EFT_Lines_DataSheets/CHLA- 9_Cell_Line_Data_Sheet_COGcell_org.pdf
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Olaparib</td>
+      <td>Inhibitor</td>
+      <td>Selleck Chemicals</td>
+      <td>S1060</td>
+      <td>Source shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>DMSO</td>
+      <td>Chemical</td>
+      <td>Sigma Aldrich</td>
+      <td>472301</td>
+      <td>Source shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Phosphate buffered saline (PBS)</td>
+      <td>Buffer</td>
+      <td>Gibco-Life Technologies</td>
+      <td>10010-023</td>
+      <td>Source shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Giemsa stain</td>
+      <td>Chemical</td>
+      <td>Sigma Aldrich</td>
+      <td>G5637</td>
+      <td>Source shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Methanol</td>
+      <td>Chemical</td>
+      <td>Fisher Scientific</td>
+      <td>BP1105-4</td>
+      <td>Source shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>DoTc2-4510 cells</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>CRL-7920</td>
+      <td>Original source not specified.</td>
+    </tr>
+    <tr>
+      <td>MES-SA cells</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>CRL-1976</td>
+      <td>Original source not specified</td>
+    </tr>
+    <tr>
+      <td>U-2-OS cells</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>HTB-96</td>
+      <td>Original source not specified.</td>
+    </tr>
+    <tr>
+      <td>SAOS-2 cells</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>HTB-85</td>
+      <td>Original source not specified.</td>
+    </tr>
+    <tr>
+      <td>SJSA-1 cells</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>CRL-2098</td>
+      <td>Original source not specified.</td>
+    </tr>
+    <tr>
+      <td>HOS cells</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>CRL-1543</td>
+      <td>Original source not specified.</td>
+    </tr>
+    <tr>
+      <td>MG-63 cells</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>CRL-1427</td>
+      <td>Original source not specified.</td>
+    </tr>
+    <tr>
+      <td>143B cells</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>CRL-8303</td>
+      <td rowspan="2">Replaces osteosarcoma cells used originally; see Known Differences.</td>
+    </tr>
+    <tr>
+      <td>G-292 cells, clone A141B1</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>CRL-1423</td>
+    </tr>
+    <tr>
+      <td>A673 cells</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>CRL-1598</td>
+      <td rowspan="5">Replaces the ES cells used originally; see Known Differences</td>
+    </tr>
+    <tr>
+      <td>SK-N-MC cells</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>HTB-10</td>
+    </tr>
+    <tr>
+      <td>TC-71 cells2</td>
+      <td>Cell line</td>
+      <td>Children’s Oncology Group Cell Culture and Xenograft Repository</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CHLA-10 cells1</td>
+      <td>Cell line</td>
+      <td>Children’s Oncology Group Cell Culture and Xenograft Repository</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CHLA-9 cells3</td>
+      <td>Cell line</td>
+      <td>Children’s Oncology Group Cell Culture and Xenograft Repository</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Iscove’s modified DMEM (IMDM)</td>
+      <td>Cell culture</td>
+      <td>Life Technologies</td>
+      <td>12440-053</td>
+      <td>Not originally included.</td>
+    </tr>
+    <tr>
+      <td>L-glutamine</td>
+      <td>Cell culture</td>
+      <td>Life Technologies</td>
+      <td>25030-081</td>
+      <td>Not originally included.</td>
+    </tr>
+    <tr>
+      <td>Insulin-Transferrin-Selenium (ITS)</td>
+      <td>Growth factor</td>
+      <td>Lonza</td>
+      <td>17-838Z</td>
+      <td>Not originally included.</td>
+    </tr>
+    <tr>
+      <td>McCoy’s 5A Medium Modified</td>
+      <td>Cell culture</td>
+      <td>ATCC</td>
+      <td>30-2007</td>
+      <td>Not originally included.</td>
+    </tr>
+    <tr>
+      <td>Fetal bovine serum (FBS)</td>
+      <td>Cell culture</td>
+      <td>Valley Biomedical</td>
+      <td>BS3032</td>
+      <td>Original source not specified.</td>
+    </tr>
+    <tr>
+      <td>RPMI 1640 medium</td>
+      <td>Cell culture</td>
+      <td>ATCC</td>
+      <td>30-2001</td>
+      <td>Original source not specified.</td>
+    </tr>
+    <tr>
+      <td>Eagle’s Minimum Essential Media (EMEM)</td>
+      <td>Cell culture</td>
+      <td>ATCC</td>
+      <td>30-2003</td>
+      <td>Originally not specified.</td>
+    </tr>
+    <tr>
+      <td>5-bromo-2’-deoxyuridine</td>
+      <td>Nucleoside</td>
+      <td>Sigma</td>
+      <td>B5002</td>
+      <td>Not originally included.</td>
+    </tr>
+    <tr>
+      <td>MEM Eagle with Earle’s BSS</td>
+      <td>Cell culture</td>
+      <td>Lonza</td>
+      <td>12-125F</td>
+      <td>Not originally included.</td>
+    </tr>
+    <tr>
+      <td>DMEM – High Glucose</td>
+      <td>Cell culture</td>
+      <td>GE-Healthcare</td>
+      <td>E15-883</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>DMEM/F12</td>
+      <td>Cell culture</td>
+      <td>Life Technologies</td>
+      <td>11320-033</td>
+      <td>Original source not specified.</td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+_1 See http://www.cogcell.org/dl/EFT_Lines_DataSheets/CHLA-10_Cell_Line_Data_Sheet_COGcell_org.pdf2 See http://www.cogcell.org/dl/EFT_Lines_DataSheets/TC- 71_Cell_Line_Data_Sheet_COGcell_org.pdf3 See http://www.cogcell.org/dl/EFT_Lines_DataSheets/CHLA- 9_Cell_Line_Data_Sheet_COGcell_org.pdf_
+
+#### Procedure
 
 Notes:
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The cell lines used in this experiment will undergo STR profiling to confirm identity and will be sent for mycoplasma testing to ensure there is no contamination. The DMSO concentration, although not originally reported, will be kept at a low percentage to avoid toxicity. All data obtained from the experiment will be made publicly available, either in the published manuscript or as an open access dataset available on the OSF (https://osf.io/nbryi/).
 
-## Protocol 2: Olaparib sensitivity in cells transformed with the EWS-FLI1 rearrangement
+### Protocol 2: Olaparib sensitivity in cells transformed with the EWS-FLI1 rearrangement
 
 This experiment assesses if sensitivity to PARP inhibitors is due to the presence of the EWS-FLI1 rearrangement. Mouse mesenchymal progenitor cells (MPCs) transformed with EWS-FLI1, or the related liposarcoma-associated translocation FUS-CHOP, will be analyzed for cellular viability after olaparib treatment. This protocol replicates the experiment reported in Figure 4E.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #CommentsEWS-FLI1 transformed mouse mesenchymal progenitor cells (MPCs)Cell lineAuthorsN/AProvided by the Stamenkovic labFUS-CHOP transformed mouse mesenchymal progenitor cells (MPCs)Cell lineAuthorsN/AProvided by the Stamenkovic labSK-N-MC cellsCell lineATCCHTB-10Source shared during communication with authors.OlaparibInhibitorSelleck ChemicalsS1060Source shared during communication with authors.DMSOChemicalSigmaD8418Source shared during communication with authors.4% formaldehydeChemicalUSB19943Source shared during communication with authors.Syto60 fluorescent nucleic acid stainChemicalInvitrogenS11342Catalog # shared during communication with authors.FBSCell cultureValley BiomedicalBS3032Original source not specified.RPMI 1640 mediumCell cultureATCC30-2001Original source not specified.Fluorescent plate readerEquipmentLiCorSource shared during communication with authors.DMEM, low glucose, GlutaMAX supplement, pyruvateCell cultureGibco21885-025Shared during communication with authors.MCDB 201 medium, with trace elements, L-glutamine and 30 mM HEPES; powderCell cultureSigmaM6770Shared during communication with authors.Ascorbic acid-2-phosphateCell cultureSigmaA8960Shared during communication with authors.DexamethasoneChemicalSigmaD8893Shared during communication with authors.Linoleic acid-BSAChemicalSigmaL9530Shared during communication with authors.Insulin, transferrin, sodium selenite supplementGrowth factorRoche (Sigma)1074547Shared during communication with authors.Dialyzed FCSCell cultureSigmaF0392Shared during communication with authors.EGF; humanGrowth factorSigmaE9644Shared during communication with authors.PDGF-BB, ratGrowth factorR&D Systems520-BB-050Shared during communication with authors.Penicillin-Streptomycin; 100XCell cultureSigmaP4333Original source not specified.Leukemia inhibitory factor (LIF); human; 10 µg/mlGrowth factorSigmaL5283Shared during communication with authors. Replaces LIF generated from CHO LIF720D cells.Fibronectin; 0.1% in PBSChemicalSigmaF1141Shared during communication with authors.
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EWS-FLI1 transformed mouse mesenchymal progenitor cells (MPCs)</td>
+      <td>Cell line</td>
+      <td>Authors</td>
+      <td>N/A</td>
+      <td>Provided by the Stamenkovic lab</td>
+    </tr>
+    <tr>
+      <td>FUS-CHOP transformed mouse mesenchymal progenitor cells (MPCs)</td>
+      <td>Cell line</td>
+      <td>Authors</td>
+      <td>N/A</td>
+      <td>Provided by the Stamenkovic lab</td>
+    </tr>
+    <tr>
+      <td>SK-N-MC cells</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>HTB-10</td>
+      <td>Source shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Olaparib</td>
+      <td>Inhibitor</td>
+      <td>Selleck Chemicals</td>
+      <td>S1060</td>
+      <td>Source shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>DMSO</td>
+      <td>Chemical</td>
+      <td>Sigma</td>
+      <td>D8418</td>
+      <td>Source shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>4% formaldehyde</td>
+      <td>Chemical</td>
+      <td>USB</td>
+      <td>19943</td>
+      <td>Source shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Syto60 fluorescent nucleic acid stain</td>
+      <td>Chemical</td>
+      <td>Invitrogen</td>
+      <td>S11342</td>
+      <td>Catalog # shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>FBS</td>
+      <td>Cell culture</td>
+      <td>Valley Biomedical</td>
+      <td>BS3032</td>
+      <td>Original source not specified.</td>
+    </tr>
+    <tr>
+      <td>RPMI 1640 medium</td>
+      <td>Cell culture</td>
+      <td>ATCC</td>
+      <td>30-2001</td>
+      <td>Original source not specified.</td>
+    </tr>
+    <tr>
+      <td>Fluorescent plate reader</td>
+      <td>Equipment</td>
+      <td>LiCor</td>
+      <td></td>
+      <td>Source shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>DMEM, low glucose, GlutaMAX supplement, pyruvate</td>
+      <td>Cell culture</td>
+      <td>Gibco</td>
+      <td>21885-025</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>MCDB 201 medium, with trace elements, L-glutamine and 30 mM HEPES; powder</td>
+      <td>Cell culture</td>
+      <td>Sigma</td>
+      <td>M6770</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Ascorbic acid-2-phosphate</td>
+      <td>Cell culture</td>
+      <td>Sigma</td>
+      <td>A8960</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Dexamethasone</td>
+      <td>Chemical</td>
+      <td>Sigma</td>
+      <td>D8893</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Linoleic acid-BSA</td>
+      <td>Chemical</td>
+      <td>Sigma</td>
+      <td>L9530</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Insulin, transferrin, sodium selenite supplement</td>
+      <td>Growth factor</td>
+      <td>Roche (Sigma)</td>
+      <td>1074547</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Dialyzed FCS</td>
+      <td>Cell culture</td>
+      <td>Sigma</td>
+      <td>F0392</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>EGF; human</td>
+      <td>Growth factor</td>
+      <td>Sigma</td>
+      <td>E9644</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>PDGF-BB, rat</td>
+      <td>Growth factor</td>
+      <td>R&amp;D Systems</td>
+      <td>520-BB-050</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Penicillin-Streptomycin; 100X</td>
+      <td>Cell culture</td>
+      <td>Sigma</td>
+      <td>P4333</td>
+      <td>Original source not specified.</td>
+    </tr>
+    <tr>
+      <td>Leukemia inhibitory factor (LIF); human; 10 µg/ml</td>
+      <td>Growth factor</td>
+      <td>Sigma</td>
+      <td>L5283</td>
+      <td>Shared during communication with authors. Replaces LIF generated from CHO LIF720D cells.</td>
+    </tr>
+    <tr>
+      <td>Fibronectin; 0.1% in PBS</td>
+      <td>Chemical</td>
+      <td>Sigma</td>
+      <td>F1141</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+#### Procedure
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The cell lines used in this experiment will undergo STR profiling to confirm identity and will be sent for mycoplasma testing to ensure there is no contamination. The DMSO concentration, although not originally reported, will be kept at a low percentage to avoid toxicity. The seeding density of each cell line will be empirically determined prior to conducting the replicates so cells will be still be in the growth phase at the end of the assay. Measurements will be taken at 24, 48, and 72 hr after seeding from cells not treated with drug to test for proliferation of cells during the assay. All data obtained from the experiment will be made publicly available, either in the published manuscript or as an open access dataset available on the OSF (https://osf.io/nbryi/).
 
-## Protocol 3: Olaparib sensitivity after depletion of EWS-FLI1 from A673 cells
+### Protocol 3: Olaparib sensitivity after depletion of EWS-FLI1 from A673 cells
 
 This experiment assesses the sensitivity of PARP inhibitors to the presence of the EWS-FLI1 rearrangement. EWS-FLI1 specific siRNA will be used to deplete the fusion mRNA from A673 cells, which harbor the translocation endogenously, and cell viability after olaparib treatment will be assessed. This protocol replicates the experiment reported in Figure 4F and Supplemental Figure 20.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #CommentsA673 cellsCell lineATCCCRL-1598Source shared during communication with authors.OlaparibInhibitorSelleck ChemicalsS1060Source shared during communication with authors.DMSOChemicalSigmaD2650Source shared during communication with authors.siEF1Nucleic acidQiagenCustom order5'-GGCAGCAGAACCCUUCUUACG-3’siCT control siRNANucleic acidQiagenSI03650318Catalog number shared during communication with authors.Cell Titer 96 Aqueous One Solution Cell Proliferation AssayReporter assayPromegaG3582DMEM - High GlucoseCell cultureGE-HealthcareE15-883Shared during communication with authors.FBSCell cultureValley BiomedicalBS3032Original source not specified.O-MEMCell cultureGibco31985-062Shared during communication with authors.96 well tissue culture test platesLabwareTPP92096Source shared during communication with authors.Lipofectamine RNAiMAXCell cultureLife Technologies13778-150Shared during communication with authors.High-capacity cDNA reverse transcription kitKitApplied Biosystems4368814Shared during communication with authors.NucleoSpin RNA II kitKitMachery-Nagel740955.50Shared during communication with authors.Power SYBR Green PCR mastermixKitApplied Biosystems4367659Shared during communication with authors.qPCR machineEquipmentABI/PRISM7500Shared during communication with authors.EWS-FLI1 primersNucleic acidSynthesis left to the discretion of the replicating lab and recorded laterSequence shared during communication with authors.RPLP0 primersNucleic acidSequence shared during communication with authors.GloMax Multi+ Detection System (spectrophotometer)EquipmentPromega9311-011Shared during communication with authors. Replaces BMG FLUOstar OPTIMA microplate reader.
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A673 cells</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>CRL-1598</td>
+      <td>Source shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Olaparib</td>
+      <td>Inhibitor</td>
+      <td>Selleck Chemicals</td>
+      <td>S1060</td>
+      <td>Source shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>DMSO</td>
+      <td>Chemical</td>
+      <td>Sigma</td>
+      <td>D2650</td>
+      <td>Source shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>siEF1</td>
+      <td>Nucleic acid</td>
+      <td>Qiagen</td>
+      <td>Custom order</td>
+      <td>5'-GGCAGCAGAACCCUUCUUACG-3’</td>
+    </tr>
+    <tr>
+      <td>siCT control siRNA</td>
+      <td>Nucleic acid</td>
+      <td>Qiagen</td>
+      <td>SI03650318</td>
+      <td>Catalog number shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Cell Titer 96 Aqueous One Solution Cell Proliferation Assay</td>
+      <td>Reporter assay</td>
+      <td>Promega</td>
+      <td>G3582</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DMEM - High Glucose</td>
+      <td>Cell culture</td>
+      <td>GE-Healthcare</td>
+      <td>E15-883</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>FBS</td>
+      <td>Cell culture</td>
+      <td>Valley Biomedical</td>
+      <td>BS3032</td>
+      <td>Original source not specified.</td>
+    </tr>
+    <tr>
+      <td>O-MEM</td>
+      <td>Cell culture</td>
+      <td>Gibco</td>
+      <td>31985-062</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>96 well tissue culture test plates</td>
+      <td>Labware</td>
+      <td>TPP</td>
+      <td>92096</td>
+      <td>Source shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Lipofectamine RNAiMAX</td>
+      <td>Cell culture</td>
+      <td>Life Technologies</td>
+      <td>13778-150</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>High-capacity cDNA reverse transcription kit</td>
+      <td>Kit</td>
+      <td>Applied Biosystems</td>
+      <td>4368814</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>NucleoSpin RNA II kit</td>
+      <td>Kit</td>
+      <td>Machery-Nagel</td>
+      <td>740955.50</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>Power SYBR Green PCR mastermix</td>
+      <td>Kit</td>
+      <td>Applied Biosystems</td>
+      <td>4367659</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>qPCR machine</td>
+      <td>Equipment</td>
+      <td>ABI/PRISM</td>
+      <td>7500</td>
+      <td>Shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>EWS-FLI1 primers</td>
+      <td>Nucleic acid</td>
+      <td rowspan="2" colspan="2">Synthesis left to the discretion of the replicating lab and recorded later</td>
+      <td>Sequence shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>RPLP0 primers</td>
+      <td>Nucleic acid</td>
+      <td>Sequence shared during communication with authors.</td>
+    </tr>
+    <tr>
+      <td>GloMax Multi+ Detection System (spectrophotometer)</td>
+      <td>Equipment</td>
+      <td>Promega</td>
+      <td>9311-011</td>
+      <td>Shared during communication with authors. Replaces BMG FLUOstar OPTIMA microplate reader.</td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+#### Procedure
 
 Notes:
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The cell line used in this experiment will undergo STR profiling to confirm identity and will be sent for mycoplasma testing to ensure there is no contamination. The sample purity (A260/280 ratio) of the isolated RNA from each sample will be reported. All data obtained from the experiment will be made publicly available, either in the published manuscript or as an open access dataset available on the OSF (https://osf.io/nbryi/).
 
-## Power calculations
+### Power calculations
 
 For additional details on power calculations, please see analysis scripts and associated files on the Open Science Framework: https://osf.io/j9bnk/
 
-## Protocol 1
+### Protocol 1
 
 Summary of original data estimated from graph reported in Figure 4C
 
-Cell typeCell lineEffective concentration (µM)Ewing’s sarcomaES11ES61ES70.32ES81MHH-ES-10.32OsteosarcomaCAL-7210HOS1HuO-3N13.2MG-633.2NY3.2SAOS-23.2SJSA-110U-2-OS10BRCA2-deficientDoTc2-45100.32
+<table>
+  <thead>
+    <tr>
+      <th>Cell type</th>
+      <th>Cell line</th>
+      <th>Effective concentration (µM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Ewing’s sarcoma</td>
+      <td>ES1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ES6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ES7</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>ES8</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>MHH-ES-1</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Osteosarcoma</td>
+      <td>CAL-72</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>HOS</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>HuO-3N1</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <td>MG-63</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <td>NY</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <td>SAOS-2</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <td>SJSA-1</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>U-2-OS</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>BRCA2-deficient</td>
+      <td>DoTc2-4510</td>
+      <td>0.32</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-Group 1Group 2Effect size (Cliff’s delta)A priori powerGroup 1 sample sizeGroup 2 sample sizeEwing’s sarcomaOsteosarcoma0.9250081.8%57
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size (Cliff’s delta)</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ewing’s sarcoma</td>
+      <td>Osteosarcoma</td>
+      <td>0.92500</td>
+      <td>81.8%</td>
+      <td>5</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
 
-## Protocol 2
+### Protocol 2
 
 Summary of original data reported in Figure 4E (shared by authors)
 
-Cell lineConcentration of olaparib (µM)MeanSDNEWS-FLI1 transformed MPCs010.0630.390.590.0530.780.530.0931.560.440.0533.130.340.0536.250.240.04312.50.220.043FUS-CHOP transformed MPCs010.0930.391.060.0130.781.030.0631.561.110.0833.130.980.0936.250.590.07312.50.450.043SK-N-MC010.0430.390.660.0430.780.660.0931.560.500.0133.130.400.0436.250.300.05312.50.250.033
+<table>
+  <thead>
+    <tr>
+      <th>Cell line</th>
+      <th>Concentration of olaparib (µM)</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">EWS-FLI1 transformed MPCs</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.06</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.39</td>
+      <td>0.59</td>
+      <td>0.05</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.78</td>
+      <td>0.53</td>
+      <td>0.09</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1.56</td>
+      <td>0.44</td>
+      <td>0.05</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3.13</td>
+      <td>0.34</td>
+      <td>0.05</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>6.25</td>
+      <td>0.24</td>
+      <td>0.04</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>12.5</td>
+      <td>0.22</td>
+      <td>0.04</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="7">FUS-CHOP transformed MPCs</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.09</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.39</td>
+      <td>1.06</td>
+      <td>0.01</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.78</td>
+      <td>1.03</td>
+      <td>0.06</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1.56</td>
+      <td>1.11</td>
+      <td>0.08</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3.13</td>
+      <td>0.98</td>
+      <td>0.09</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>6.25</td>
+      <td>0.59</td>
+      <td>0.07</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>12.5</td>
+      <td>0.45</td>
+      <td>0.04</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="7">SK-N-MC</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.04</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.39</td>
+      <td>0.66</td>
+      <td>0.04</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.78</td>
+      <td>0.66</td>
+      <td>0.09</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1.56</td>
+      <td>0.50</td>
+      <td>0.01</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3.13</td>
+      <td>0.40</td>
+      <td>0.04</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>6.25</td>
+      <td>0.30</td>
+      <td>0.05</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>12.5</td>
+      <td>0.25</td>
+      <td>0.03</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
 IC50 values of olaparib, determined by spline interpolation.
 
 Calculations performed with R software, version 3.2.2 (R Development Core Team, 2015).
 
-Cell lineMeanSDNEWS-FLI1 transformed MPCs1.05020.53633FUS-CHOP transformed MPCs7.79631.30243SK-N-MC1.54490.05053
+<table>
+  <thead>
+    <tr>
+      <th>Cell line</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EWS-FLI1 transformed MPCs</td>
+      <td>1.0502</td>
+      <td>0.5363</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>FUS-CHOP transformed MPCs</td>
+      <td>7.7963</td>
+      <td>1.3024</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>SK-N-MC</td>
+      <td>1.5449</td>
+      <td>0.0505</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+#### Test family
 
 Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-Group 1Group 2Effect size dA priori powerGroup 1 sample sizeGroup 2 sample sizeEWS-FLI1 transformed MPCsFUS-CHOP transformed MPCs6.7734383.8%12121SK-N-MCFUS-CHOP transformed MPCs6.7828383.8%121211 3 samples per group will be used as a minimum making the power 99.9%.
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EWS-FLI1 transformed MPCs</td>
+      <td>FUS-CHOP transformed MPCs</td>
+      <td>6.77343</td>
+      <td>83.8%1</td>
+      <td>21</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>SK-N-MC</td>
+      <td>FUS-CHOP transformed MPCs</td>
+      <td>6.78283</td>
+      <td>83.8%1</td>
+      <td>21</td>
+      <td>21</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+_1 3 samples per group will be used as a minimum making the power 99.9%._
+
+#### Test family
 
 Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
 ANOVA F test statistic and partial η2 performed with R software, version 3.2.2 (R Development Core Team, 2015).
 
-GroupsF test statisticPartial η2Effect size fA priori powerTotal sample sizeEWS-FLI1 transformed MPCs, FUS-CHOP transformed MPCs, and SK-N-MCF(2,6) = 64.060.955264.6209799.9%61 (3 groups)1 9 total samples (3 per group) will be used as a minimum.
+<table>
+  <thead>
+    <tr>
+      <th>Groups</th>
+      <th>F test statistic</th>
+      <th>Partial η2</th>
+      <th>Effect size f</th>
+      <th>A priori power</th>
+      <th>Total sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EWS-FLI1 transformed MPCs, FUS-CHOP transformed MPCs, and SK-N-MC</td>
+      <td>F(2,6) = 64.06</td>
+      <td>0.95526</td>
+      <td>4.62097</td>
+      <td>99.9%</td>
+      <td>61 (3 groups)</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+_1 9 total samples (3 per group) will be used as a minimum._
+
+#### Test family
 
 Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-Group 1Group 2Effect size dA priori powerGroup 1 sample sizeGroup 2 sample sizeEWS-FLI1 transformed MPCsFUS-CHOP transformed MPCs6.7734389.9%12121SK-N-MCFUS-CHOP transformed MPCs6.7828389.9%121211 3 samples per group will be used as a minimum making the power 99.9%.
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EWS-FLI1 transformed MPCs</td>
+      <td>FUS-CHOP transformed MPCs</td>
+      <td>6.77343</td>
+      <td>89.9%1</td>
+      <td>21</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>SK-N-MC</td>
+      <td>FUS-CHOP transformed MPCs</td>
+      <td>6.78283</td>
+      <td>89.9%1</td>
+      <td>21</td>
+      <td>21</td>
+    </tr>
+  </tbody>
+</table>
 
-## Protocol 3
+_1 3 samples per group will be used as a minimum making the power 99.9%._
 
-## Viability assay
+### Protocol 3
+
+#### Viability assay
 
 Summary of original data reported in Figure 4F (shared by authors)
 
-siRNAConcentration of olaparib (µM) or volume of DMSO (µl)MeanSDNsiControl (DMSO treatment)0 µl97.33600.9539132x10-4 µl102.2033.7001335x10-4 µl100.0880.9022630.001 µl94.86281.3002230.004 µl100.0953.8474330.012 µl107.6341.0537030.037 µl110.3784.4156130.111 µl111.4670.6819130.333 µl104.5011.9840031.000 µl107.9051.611843siControl (olaparib treatment)0 µM102.6642.8220130.0152 µM95.99211.1804830.046 µM83.18892.8098930.1371 µM81.83702.9397630.411 µM72.40563.1003031.234 µM54.90262.7452333.70 µM16.06363.50915311.11 µM1.280320.61000333.33 µM-1.455271.641013100 µM2.282312.394273siEF1 (DMSO treatment)0 µl99.09711.1343632x10-4 µl99.63971.2159835x10-4 µl95.36220.4511530.001 µl90.45994.3193430.004 µl94.31790.8689630.012 µl95.17522.3506430.037 µl96.38371.3941930.111 µl96.75761.1346730.333 µl95.47621.3849731.000 µl97.23651.248393siEF1 (olaparib treatment)0 µM100.9033.8700430.0152 µM97.90234.7706730.046 µM95.48535.4768730.1371 µM93.97132.3396530.411 µM89.44304.9709331.234 µM76.63322.43654533.70 µM45.03961.67473311.11 µM18.78151.78436333.33 µM11.75413.752203100 µM11.79972.227733
+<table>
+  <thead>
+    <tr>
+      <th>siRNA</th>
+      <th>Concentration of olaparib (µM) or volume of DMSO (µl)</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="10">siControl (DMSO treatment)</td>
+      <td>0 µl</td>
+      <td>97.3360</td>
+      <td>0.95391</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>2x10-4 µl</td>
+      <td>102.203</td>
+      <td>3.70013</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>5x10-4 µl</td>
+      <td>100.088</td>
+      <td>0.90226</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.001 µl</td>
+      <td>94.8628</td>
+      <td>1.30022</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.004 µl</td>
+      <td>100.095</td>
+      <td>3.84743</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.012 µl</td>
+      <td>107.634</td>
+      <td>1.05370</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.037 µl</td>
+      <td>110.378</td>
+      <td>4.41561</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.111 µl</td>
+      <td>111.467</td>
+      <td>0.68191</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.333 µl</td>
+      <td>104.501</td>
+      <td>1.98400</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1.000 µl</td>
+      <td>107.905</td>
+      <td>1.61184</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="10">siControl (olaparib treatment)</td>
+      <td>0 µM</td>
+      <td>102.664</td>
+      <td>2.82201</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.0152 µM</td>
+      <td>95.9921</td>
+      <td>1.18048</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.046 µM</td>
+      <td>83.1889</td>
+      <td>2.80989</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.1371 µM</td>
+      <td>81.8370</td>
+      <td>2.93976</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.411 µM</td>
+      <td>72.4056</td>
+      <td>3.10030</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1.234 µM</td>
+      <td>54.9026</td>
+      <td>2.74523</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3.70 µM</td>
+      <td>16.0636</td>
+      <td>3.50915</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>11.11 µM</td>
+      <td>1.28032</td>
+      <td>0.61000</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>33.33 µM</td>
+      <td>-1.45527</td>
+      <td>1.64101</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>100 µM</td>
+      <td>2.28231</td>
+      <td>2.39427</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="10">siEF1 (DMSO treatment)</td>
+      <td>0 µl</td>
+      <td>99.0971</td>
+      <td>1.13436</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>2x10-4 µl</td>
+      <td>99.6397</td>
+      <td>1.21598</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>5x10-4 µl</td>
+      <td>95.3622</td>
+      <td>0.45115</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.001 µl</td>
+      <td>90.4599</td>
+      <td>4.31934</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.004 µl</td>
+      <td>94.3179</td>
+      <td>0.86896</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.012 µl</td>
+      <td>95.1752</td>
+      <td>2.35064</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.037 µl</td>
+      <td>96.3837</td>
+      <td>1.39419</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.111 µl</td>
+      <td>96.7576</td>
+      <td>1.13467</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.333 µl</td>
+      <td>95.4762</td>
+      <td>1.38497</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1.000 µl</td>
+      <td>97.2365</td>
+      <td>1.24839</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="10">siEF1 (olaparib treatment)</td>
+      <td>0 µM</td>
+      <td>100.903</td>
+      <td>3.87004</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.0152 µM</td>
+      <td>97.9023</td>
+      <td>4.77067</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.046 µM</td>
+      <td>95.4853</td>
+      <td>5.47687</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.1371 µM</td>
+      <td>93.9713</td>
+      <td>2.33965</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.411 µM</td>
+      <td>89.4430</td>
+      <td>4.97093</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1.234 µM</td>
+      <td>76.6332</td>
+      <td>2.436545</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3.70 µM</td>
+      <td>45.0396</td>
+      <td>1.67473</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>11.11 µM</td>
+      <td>18.7815</td>
+      <td>1.78436</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>33.33 µM</td>
+      <td>11.7541</td>
+      <td>3.75220</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>100 µM</td>
+      <td>11.7997</td>
+      <td>2.22773</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
 IC50 values of olaparib, determined by four-parameter log-logistic function.
 
 Calculations performed with R software, version 3.2.2 (R Development Core Team, 2015).
 
-Cell lineMeanSDNsiControl1.351910.06843siEF12.745610.17153
+<table>
+  <thead>
+    <tr>
+      <th>Cell line</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>siControl</td>
+      <td>1.35191</td>
+      <td>0.0684</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>siEF1</td>
+      <td>2.74561</td>
+      <td>0.1715</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+#### Test family
 
 Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-Group 1Group 2Effect size dA priori powerGroup 1 sample sizeGroup 2 sample sizesiControlsiEF110.6749498.7%121211 3 samples per group will be used as a minimum making the power 99.9%.
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>siControl</td>
+      <td>siEF1</td>
+      <td>10.67494</td>
+      <td>98.7%1</td>
+      <td>21</td>
+      <td>21</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+_1 3 samples per group will be used as a minimum making the power 99.9%._
+
+#### Test family
 
 Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-Group 1Group 2Effect size dA priori powerGroup 1 sample sizeGroup 2 sample sizesiControlsiEF110.6749499.6%121211 3 samples per group will be used as a minimum making the power 99.9%.
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>siControl</td>
+      <td>siEF1</td>
+      <td>10.67494</td>
+      <td>99.6%1</td>
+      <td>21</td>
+      <td>21</td>
+    </tr>
+  </tbody>
+</table>
 
-## qRT-PCR
+_1 3 samples per group will be used as a minimum making the power 99.9%._
+
+#### qRT-PCR
 
 Summary of original data estimated from graph reported in Supplemental Figure 20.
 
-TreatmentsiRNAMeanSDNDMSOsiControl10022.93siEF14.750.83831.3 µM olaparibsiControl90.514.53siEF17.260.8383
+<table>
+  <thead>
+    <tr>
+      <th>Treatment</th>
+      <th>siRNA</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">DMSO</td>
+      <td>siControl</td>
+      <td>100</td>
+      <td>22.9</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>siEF1</td>
+      <td>4.75</td>
+      <td>0.838</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">1.3 µM olaparib</td>
+      <td>siControl</td>
+      <td>90.5</td>
+      <td>14.5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>siEF1</td>
+      <td>7.26</td>
+      <td>0.838</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+#### Test family
 
 Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-Group 1Group 2Effect size dA priori powerGroup 1 sample sizeGroup 2 sample sizesiControl cells treated with DMSOsiEF1 cells treated with DMSO5.8771398.3%33siControl cells treated with olaparibsiEF1 cells treated with olaparib8.0910899.9%33
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>siControl cells treated with DMSO</td>
+      <td>siEF1 cells treated with DMSO</td>
+      <td>5.87713</td>
+      <td>98.3%</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>siControl cells treated with olaparib</td>
+      <td>siEF1 cells treated with olaparib</td>
+      <td>8.09108</td>
+      <td>99.9%</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+#### Test family
 
 Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
 ANOVA F test statistic and partial η2performed with R software, version 3.2.2 (R Development Core Team, 2015).
 
-GroupsF test statisticPartial η2Effect size fA priori powerTotal sample sizeA673 cells transfected with siControl or siEF1 and treated with DMSO or olaparibF(1,8) = 129.85 (main effect: siRNA)0.941964.0287799.2%161 (4 groups)1 12 samples (3 per group) will be used based on the planned comparisons making the power 99.9%.
+<table>
+  <thead>
+    <tr>
+      <th>Groups</th>
+      <th>F test statistic</th>
+      <th>Partial η2</th>
+      <th>Effect size f</th>
+      <th>A priori power</th>
+      <th>Total sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A673 cells transfected with siControl or siEF1 and treated with DMSO or olaparib</td>
+      <td>F(1,8) = 129.85 (main effect: siRNA)</td>
+      <td>0.94196</td>
+      <td>4.02877</td>
+      <td>99.2%1</td>
+      <td>61 (4 groups)</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+_1 12 samples (3 per group) will be used based on the planned comparisons making the power 99.9%._
+
+#### Test family
 
 Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-Group 1Group 2Effect size dA priori powerGroup 1 sample sizeGroup 2 sample sizesiControl cells treated with DMSOsiEF1 cells treated with DMSO5.8771399.1%33siControl cells treated with olaparibsiEF1 cells treated with olaparib8.0910880.6%121211 3 samples per group will be used based on the other comparions making the power 99.9%.
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>siControl cells treated with DMSO</td>
+      <td>siEF1 cells treated with DMSO</td>
+      <td>5.87713</td>
+      <td>99.1%</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>siControl cells treated with olaparib</td>
+      <td>siEF1 cells treated with olaparib</td>
+      <td>8.09108</td>
+      <td>80.6%1</td>
+      <td>21</td>
+      <td>21</td>
+    </tr>
+  </tbody>
+</table>
+
+_1 3 samples per group will be used based on the other comparions making the power 99.9%._

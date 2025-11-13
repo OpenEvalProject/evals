@@ -33,15 +33,15 @@
 
 ## Abstract
 
-10.7554/eLife.25461.001 Reduced susceptibility to infectious disease can increase the frequency of otherwise deleterious alleles. In populations of African ancestry, two apolipoprotein-L1 (APOL1 ) variants with a recessive kidney disease risk, named G1 and G2, occur at high frequency. APOL1 is a trypanolytic protein that confers innate resistance to most African trypanosomes, but not Trypanosoma brucei rhodesiense or T.b. gambiense, which cause human African trypanosomiasis. In this case-control study, we test the prevailing hypothesis that these APOL1 variants reduce trypanosomiasis susceptibility, resulting in their positive selection in sub-Saharan Africa. We demonstrate a five-fold dominant protective association for G2 against T.b. rhodesiense infection. Furthermore, we report unpredicted strong opposing associations with T.b. gambiense disease outcome. G2 associates with faster progression of T.b. gambiense trypanosomiasis, while G1 associates with asymptomatic carriage and undetectable parasitemia. These results implicate both forms of human African trypanosomiasis in the selection and persistence of otherwise detrimental APOL1 kidney disease variants. DOI: http://dx.doi.org/10.7554/eLife.25461.001
+Reduced susceptibility to infectious disease can increase the frequency of otherwise deleterious alleles. In populations of African ancestry, two apolipoprotein-L1 (APOL1) variants with a recessive kidney disease risk, named G1 and G2, occur at high frequency. APOL1 is a trypanolytic protein that confers innate resistance to most African trypanosomes, but not Trypanosoma brucei rhodesiense or T.b. gambiense, which cause human African trypanosomiasis. In this case-control study, we test the prevailing hypothesis that these APOL1 variants reduce trypanosomiasis susceptibility, resulting in their positive selection in sub-Saharan Africa. We demonstrate a five-fold dominant protective association for G2 against T.b. rhodesiense infection. Furthermore, we report unpredicted strong opposing associations with T.b. gambiense disease outcome. G2 associates with faster progression of T.b. gambiense trypanosomiasis, while G1 associates with asymptomatic carriage and undetectable parasitemia. These results implicate both forms of human African trypanosomiasis in the selection and persistence of otherwise detrimental APOL1 kidney disease variants.
 
 ## Introduction
 
-Infectious disease is a major driving force of natural selection on human populations. Such evolutionary pressures can select for genetic variants that confer increased resistance to infectious agents, but may also predispose to specific genetic disorders, as exemplified by
+Infectious disease is a major driving force of natural selection on human populations. Such evolutionary pressures can select for genetic variants that confer increased resistance to infectious agents, but may also predispose to specific genetic disorders, as exemplified by Plasmodium selection for the sickle-cell trait (Allison, 1954). Like sickle-cell disease, chronic kidney disease also affects millions worldwide (Global Burden of Disease Study 2013 Collaborators, 2015), with a disproportionate risk in populations of recent sub-Saharan African ancestry (National Institutes of Health and National Institute of Diabetes and Digestive and Kidney Diseases, 2010; Norris and Agodoa, 2002; McClellan et al., 1988). In African-Americans a large component of this disparity has been attributed to two common genetic variants of APOL1 (MIM 603743), known as G1 and G2 (Genovese et al., 2010; Tzur et al., 2010). These variants are closely spaced in the C-terminal domain of APOL1 but are located on separate haplotypes (Genovese et al., 2010) (Figure 1). Individuals possessing a high-risk G1/G1, G2/G2 or G1/G2 genotype composed of two risk alleles (approximately 13% of African-Americans [Friedman et al., 2011]), are strongly predisposed to a wide spectrum of chronic kidney disorders that includes focal segmental glomerulosclerosis (Genovese et al., 2010; Kopp et al., 2011), HIV-associated nephropathy (Kopp et al., 2011; Kasembeli et al., 2015) and end-stage renal disease (Genovese et al., 2010; Tzur et al., 2010; Freedman et al., 2014). APOL1 G1 and G2 are prevalent only in populations of recent African heritage (Genovese et al., 2010; Kopp et al., 2011), with evidence for a selective sweep within the last 10,000 years (Genovese et al., 2010), indicative of strong positive selection. Human African trypanosomiasis (HAT), a deadly parasitic disease endemic to sub-Saharan Africa, has been proposed as the source of this positive selective pressure (Genovese et al., 2010). HAT is caused by two tsetse fly-transmitted African trypanosomes, Trypanosoma brucei rhodesiense and T.b. gambiense, which are responsible for the acute East African form and more chronic West Africa form of the disease, respectively (Kennedy, 2013). Both parasites have been responsible for widespread fatal epidemics in sub-Saharan Africa throughout recorded human history (Steverding, 2008) suggesting the potential to exert potent selection pressure on the human genome. A heterozygous advantage model has been proposed for APOL1 G1 and G2 (Genovese et al., 2010) in which recessive susceptibility to chronic kidney disease is balanced by dominant resistance to one or both forms of human African trypanosomiasis.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/25461/elife-25461-fig1-v3.jpg)
 
-**Figure 1.:** Human apolipoprotein-L1 (APOL1) is a 398-amino acid protein consisting of a cleavable N-terminal signal peptide, a pore-forming domain, a membrane-addressing domain, and a serum resistance-associated (SRA)-interacting domain. The polymorphisms that characterize the G1 and G2 renal risk variants are located in the SRA-interacting domain, the target site for binding of the SRA protein expressed by the human-infective T.b.rhodesiense parasite, which results in loss of APOL1 lytic function. The location of the critical binding region (residues 370–392) for this interaction is indicated by a helical graphic. G1 consists of two missense SNPs rs73885319 (p.Ser342Gly) and rs60910145 (p.Ile384Met) while the G2 polymorphism, rs71785313 (p.Asn388_Tyr389del), is found on an alternative APOL1 haplotype, and represents an in-frame two amino acid deletion.DOI: http://dx.doi.org/10.7554/eLife.25461.003
+**Figure 1.:** Human apolipoprotein-L1 (APOL1) is a 398-amino acid protein consisting of a cleavable N-terminal signal peptide, a pore-forming domain, a membrane-addressing domain, and a serum resistance-associated (SRA)-interacting domain. The polymorphisms that characterize the G1 and G2 renal risk variants are located in the SRA-interacting domain, the target site for binding of the SRA protein expressed by the human-infective T.b.rhodesiense parasite, which results in loss of APOL1 lytic function. The location of the critical binding region (residues 370–392) for this interaction is indicated by a helical graphic. G1 consists of two missense SNPs rs73885319 (p.Ser342Gly) and rs60910145 (p.Ile384Met) while the G2 polymorphism, rs71785313 (p.Asn388_Tyr389del), is found on an alternative APOL1 haplotype, and represents an in-frame two amino acid deletion.
 
 Prior to the discovery of its association with kidney disease, APOL1 had already been recognised for encoding the pore-forming serum protein Apolipoprotein L1, which inserts into trypanosome membranes and effectively lyses the Trypanosoma species that cause disease in animals (Vanhamme et al., 2003; Pérez-Morga et al., 2005; Molina-Portela et al., 2005; Thomson and Finkelstein, 2015; Vanwalleghem et al., 2015). However, the two human-infective subspecies have evolved independent mechanisms to resist APOL1-mediated lysis. In T.b. rhodesiense, this is the result of an APOL1-binding protein (Xong et al., 1998; De Greef et al., 1989) whereas for T.b. gambiense the mechanism of APOL1 resistance appears more complex and multifactorial (Capewell et al., 2013; Uzureau et al., 2013; DeJesus et al., 2013; Kieft et al., 2010). It has been hypothesised that APOL1 G1 and G2 variants could overcome one or more of these resistance mechanisms to protect against HAT. Indeed, previous studies have shown that APOL1 G2 (and to a lesser extent G1) plasma is lytic to East African T.b. rhodesiense parasites in vitro (Genovese et al., 2010), but not West African T.b. gambiense (Genovese et al., 2010). Consequently, T.b. rhodesiense is considered the most likely candidate for positive selection of both APOL1 variants in African populations (Genovese et al., 2010). Notably, however, the G1 variant appears significantly less effective at killing T.b. rhodesiense, and is found at very high frequency in West Africa (Genovese et al., 2010; Kopp et al., 2011; Ko et al., 2013; Thomson et al., 2014), where only T.b. gambiense is endemic (Simarro et al., 2010).
 
@@ -51,29 +51,553 @@ Here, we present a retrospective association study to test the relationship betw
 
 ## Results
 
-## APOL1 variants and resistance/susceptibility to T.b. rhodesiense
+### APOL1 variants and resistance/susceptibility to T.b. rhodesiense
 
 To test the heterozygous advantage hypothesis proposed for these APOL1 variants against T.b. rhodesiense infection (Genovese et al., 2010), 180 controls and 184 clinically confirmed T.b. rhodesiense patients from a principle disease focus in central-eastern Uganda were genotyped for G1 and G2 polymorphisms. The G1 haplotype comprises of two non-synonymous substitutions, rs73885319 and rs60910145 situated just 128 bp apart and in near-perfect linkage disequilibrium (Genovese et al., 2010; Kopp et al., 2011). In this study, as reported by others (Kopp et al., 2011; Behar et al., 2011), a small number of individuals were identified with only a partial G1 haplotype (the kidney disease risk genotype at one of the G1 polymorphism positions but the non-risk genotype at the other) and were excluded from the G1 haplotype association analysis. The second chronic kidney disease risk variant, G2 (rs71785313), is found on an alternative haplotype and represents a six base pair in-frame deletion.
 
-Comparing genotype frequencies in confirmed T.b. rhodesiense-infected individuals with uninfected controls found no association between the G1 haplotype and T.b. rhodesiense infection (p=0.50; Table 1). In contrast, we observed a significant dominant protective association for the G2 variant, with an odds ratio of 0.20 (95% CI: 0.07 to 0.48, p=0.0001; Table 1). This indicates a five-fold reduced susceptibility to T.b. rhodesiense infection for individuals that possess a single copy of the G2 variant, compatible with a model of heterozygous protection.10.7554/eLife.25461.004Table 1.Association between APOL1 kidney disease risk variants and T.b. rhodesiense infectionDOI: http://dx.doi.org/10.7554/eLife.25461.00410.7554/eLife.25461.005Table 1—source data 1.APOL1 genotype data for T.b. rhodesiense-infected individuals and controls*Individuals excluded from the APOL1 G1 association analysis. T.b.r: T.b. rhodesiense, G0: genotype compatible with the non-risk G0 allele for both rs73885319 and rs60910145, G1: genotype compatible with the G1 CKD risk allele for both rs73885319 and rs60910145, G1M: genotype compatible with the G1 CKD risk allele for rs60910145 and the non-risk G0 allele for rs73885319, G1G: genotype compatible with the G1 CKD risk allele for rs73885319 and the non-risk G0 allele for rs60910145, G2: genotype compatible with the G2 CKD risk allele for rs71785313.DOI: http://dx.doi.org/10.7554/eLife.25461.00510.7554/eLife.25461.006Table 1—source data 2.Association between individual APOL1 G1 kidney disease risk variants and T.b. rhodesiense infection Two-tailed Fisher's exact test with mid-P method using a dominant genetic model (carriage of 1 or 2 copies of the designated APOL1 SNP).CKD: chronic kidney disease, T.b.r: T.b. rhodesiense, OR: odds ratio, CI: confidence interval. Raw data for Table 1—source data 2 can be found in Table 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.25461.006Dominant model - InfectionAPOL1 haplotypeT.b.r infectedControlAssociation analysis* T.b.r infected/ControlNumber%Number%OR [95% CI]PG0 Ancestral Haplotype rs73885319 (A) + rs60910145 (T) + rs71785313 (TTATAA)G0184100.017999.4N.C0.49Non-G000.010.6Total184100.0180100.0G1 Haplotype† rs73885319 (A>G) + rs60910145 (T>G)G194.9126.70.73 [0.29 to 1.79]0.50Non-G117395.116893.3Total182100.0180100.0G2 Haplotype rs71785313 (TTATAA>del6)G263.32614.40.20 [0.07 to 0.48]0.0001Non-G217896.715485.6Total184100.0180100.0*Two-tailed Fisher's exact test with mid-P method using a dominant genetic model (carriage of 1 or 2 copies of the designated APOL1 haplotype),†Individuals with only a partial G1 haplotype were excluded from the analysis. T.b.r: T.b. rhodesiense, OR: odds ratio, CI: confidence interval, N.C: not calculable. All raw data for Table 1 can be found in Table 1—source data 1. The association analysis of the two individual component SNPs of the G1 haplotype can be found in Table 1—source data 2.
+Comparing genotype frequencies in confirmed T.b. rhodesiense-infected individuals with uninfected controls found no association between the G1 haplotype and T.b. rhodesiense infection (p=0.50; Table 1). In contrast, we observed a significant dominant protective association for the G2 variant, with an odds ratio of 0.20 (95% CI: 0.07 to 0.48, p=0.0001; Table 1). This indicates a five-fold reduced susceptibility to T.b. rhodesiense infection for individuals that possess a single copy of the G2 variant, compatible with a model of heterozygous protection.
 
-## APOL1 variants and resistance/susceptibility to T.b. gambiense
+**Table 1.**
+ Association between APOL1 kidney disease risk variants and T.b. rhodesiense infectionTable 1—source data 1.APOL1 genotype data for T.b. rhodesiense-infected individuals and controls*Individuals excluded from the APOL1 G1 association analysis. T.b.r: T.b. rhodesiense, G0: genotype compatible with the non-risk G0 allele for both rs73885319 and rs60910145, G1: genotype compatible with the G1 CKD risk allele for both rs73885319 and rs60910145, G1M: genotype compatible with the G1 CKD risk allele for rs60910145 and the non-risk G0 allele for rs73885319, G1G: genotype compatible with the G1 CKD risk allele for rs73885319 and the non-risk G0 allele for rs60910145, G2: genotype compatible with the G2 CKD risk allele for rs71785313.Table 1—source data 2.Association between individual APOL1 G1 kidney disease risk variants and T.b. rhodesiense infection Two-tailed Fisher's exact test with mid-P method using a dominant genetic model (carriage of 1 or 2 copies of the designated APOL1 SNP).CKD: chronic kidney disease, T.b.r: T.b. rhodesiense, OR: odds ratio, CI: confidence interval. Raw data for Table 1—source data 2 can be found in Table 1—source data 1.
 
-## Infection
 
-To evaluate the impact of these polymorphisms in driving resistance/susceptibility to T.b. gambiense infection, G1 and G2 polymorphisms were genotyped in 227 T.b. gambiense-infected individuals and 104 controls from the mangrove focus in Guinea. When compared to control genotype frequencies, neither variant demonstrated an association with susceptibility to T.b. gambiense infection (p=0.47 [G1], p=0.50 [G2], Table 2).10.7554/eLife.25461.007Table 2.Association between kidney disease risk variants and T.b. gambiense infectionDOI: http://dx.doi.org/10.7554/eLife.25461.00710.7554/eLife.25461.008Table 2—source data 1.APOL1 genotype data for T.b. gambiense-infected individuals and controls*Individuals excluded from the APOL1 G1 association analysis. T.b.g: T.b. gambiense, G0: genotype compatible with the non-risk G0 allele for both rs73885319 and rs60910145, G1: genotype compatible with the G1 CKD risk allele for both rs73885319 and rs60910145, G1M: genotype compatible with the G1 CKD risk allele for rs60910145 and the non-risk G0 allele for rs73885319, G1G: genotype compatible with the G1 CKD risk allele for rs73885319 and the non-risk G0 allele for rs60910145, G2: genotype compatible with the G2 CKD risk allele for rs71785313.DOI: http://dx.doi.org/10.7554/eLife.25461.00810.7554/eLife.25461.009Table 2—source data 2.Association between individual APOL1 G1 kidney disease risk variants and T.b. gambiense infection Two-tailed Fisher's exact test with mid-P method using a dominant genetic model (carriage of 1 or 2 copies of the designated APOL1 SNP).CKD: chronic kidney disease, T.b.g: T.b. gambiense, OR: odds ratio, CI: confidence interval. Raw data for Table 2—source data 2 can be found in Table 2—source data 1.DOI: http://dx.doi.org/10.7554/eLife.25461.009Dominant model - InfectionAPOL1 haplotypeT.b.g infectedControlAssociation analysis*  T.b.g infected/ControlNumber%Number%OR [95% CI]PG0 Ancestral Haplotype rs73885319 (A) + rs60910145 (T) + rs71785313 (TTATAA)G019686.38985.61.07 [0.54 to 2.06]0.84Non-G03113.71514.4Total227100.0104100.0G1 Haplotype† rs73885319 (A>G) + rs60910145 (T>G)G17333.53029.41.21 [0.73 to 2.03]0.47Non-G114566.57270.6Total218100.0102100.0G2 Haplotype rs71785313 (TTATAA>del6)G26830.03533.70.84 [0.51 to 1.40]0.50Non-G215970.06966.3Total227100.0104100.0*Two-tailed Fisher's exact test with mid-P method using a dominant genetic model (carriage of 1 or 2 copies of the designated APOL1 haplotype),†Individuals with a partial G1 haplotype were excluded from the analysis. T.b.g: T.b. gambiense, OR: odds ratio, CI: confidence interval. All raw data for Table 2 can be found in Table 2—source data 1. The association analysis of the two individual component SNPs of the G1 haplotype can be found in Table 2—source data 2.
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="6">Dominant model - Infection</th>
+    </tr>
+    <tr>
+      <th>APOL1 haplotype</th>
+      <th colspan="2">T.b.r infected</th>
+      <th colspan="2">Control</th>
+      <th colspan="2">Association analysis* T.b.r infected/Control</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Number</th>
+      <th>%</th>
+      <th>Number</th>
+      <th>%</th>
+      <th>OR [95% CI]</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>G0 Ancestral Haplotype rs73885319 (A) + rs60910145 (T) + rs71785313 (TTATAA)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G0</td>
+      <td>184</td>
+      <td>100.0</td>
+      <td>179</td>
+      <td>99.4</td>
+      <td>N.C</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>Non-G0</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>1</td>
+      <td>0.6</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>184</td>
+      <td>100.0</td>
+      <td>180</td>
+      <td>100.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G1 Haplotype† rs73885319 (A&gt;G) + rs60910145 (T&gt;G)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G1</td>
+      <td>9</td>
+      <td>4.9</td>
+      <td>12</td>
+      <td>6.7</td>
+      <td>0.73 [0.29 to 1.79]</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>Non-G1</td>
+      <td>173</td>
+      <td>95.1</td>
+      <td>168</td>
+      <td>93.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>182</td>
+      <td>100.0</td>
+      <td>180</td>
+      <td>100.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G2 Haplotype rs71785313 (TTATAA&gt;del6)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G2</td>
+      <td>6</td>
+      <td>3.3</td>
+      <td>26</td>
+      <td>14.4</td>
+      <td>0.20 [0.07 to 0.48]</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>Non-G2</td>
+      <td>178</td>
+      <td>96.7</td>
+      <td>154</td>
+      <td>85.6</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>184</td>
+      <td>100.0</td>
+      <td>180</td>
+      <td>100.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-## Disease outcome
+_*Two-tailed Fisher's exact test with mid-P method using a dominant genetic model (carriage of 1 or 2 copies of the designated APOL1 haplotype),†Individuals with only a partial G1 haplotype were excluded from the analysis. T.b.r: T.b. rhodesiense, OR: odds ratio, CI: confidence interval, N.C: not calculable. All raw data for Table 1 can be found in Table 1—source data 1. The association analysis of the two individual component SNPs of the G1 haplotype can be found in Table 1—source data 2._
 
-Infection with T.b. gambiense is associated with distinct clinical outcomes. T.b. gambiense-infected individuals can be subdivided into clinical stage trypanosomiasis patients who are serology and microscopy positive for trypanosomiasis (n = 167), and latent carriers (n = 60), who are defined as strongly serology positive, but asymptomatic and aparasitemic by microscopic examination for a period of at least two years. When comparing clinical cases and latent carriers, significant opposing associations were observed for the two APOL1 variants with T.b. gambiense infection outcome (Table 3). There was an association between the G1 variant and dominant protection against developing clinical stage trypanosomiasis (OR = 0.33, 95% CI: 0.17–0.62; p=0.0005). This indicates that T.b. gambiense-infected individuals possessing a copy of the G1 APOL1 variant were three-fold more likely to be latent asymptomatic carriers of T.b. gambiense. In contrast, the G2 variant was associated with a three-fold increased susceptibility to clinical stage trypanosomiasis (OR = 3.08, 95% CI: 1.45–7.06, p=0.0025), consistent with a risk of faster disease progression. This association was strengthened still further (OR = 5.87, 95% CI: 2.16–20.01; p=0.0001) when individuals with a potentially antagonistic compound heterozygous (G1/G2) genotype were excluded from the analysis (Table 4).10.7554/eLife.25461.010Table 3.Association between kidney disease risk variants and T.b. gambiense infection outcomeDOI: http://dx.doi.org/10.7554/eLife.25461.01010.7554/eLife.25461.011Table 3—source data 1.APOL1 genotype data for T.b. gambiense clinical stage trypanosomiasis patients and latent carriers*Individuals excluded from the APOL1 G1 association analysis. T.b.g: T.b. gambiense, G0: genotype compatible with the non-risk G0 allele for both rs73885319 and rs60910145, G1: genotype compatible with the G1 CKD risk allele for both rs73885319 and rs60910145, G1M: genotype compatible with the G1 CKD risk allele for rs60910145 and the non-risk G0 allele for rs73885319, G1G: genotype compatible with the G1 CKD risk allele for rs73885319 and the non-risk G0 allele for rs60910145, G2: genotype compatible with the G2 CKD risk allele for rs71785313.DOI: http://dx.doi.org/10.7554/eLife.25461.01110.7554/eLife.25461.012Table 3—source data 2.Association between individual APOL1 G1 kidney disease risk variants and T.b. gambiense infection outcome Two-tailed Fisher's exact test with mid-P method using a dominant genetic model (carriage of 1 or 2 copies of the designated APOL1 SNP).CKD: chronic kidney disease, T.b.g: T.b. gambiense, OR: odds ratio, CI: confidence interval. Raw data for Table 3—source data 2 can be found in Table 3—source data 1DOI: http://dx.doi.org/10.7554/eLife.25461.012Dominant model – infection outcomeAPOL1 haplotypeT.b.g DiseaseT.b.g CarriageAssociation analysis* T.b.g Disease/CarriageNumber%Number%OR [95% CI]PG0 Ancestral Haplotype rs73885319 (A) + rs60910145 (T) + rs71785313 (TTATAA)G014486.25286.70.96 [0.38 to 2.25]0.95Non-G02313.8813.3Total167100.060100.0G1 Haplotype†  rs73885319 (A>G) + rs60910145 (T>G)G14326.73052.60.33 [0.17 to 0.62]0.0005Non-G111873.32747.4Total161100.057100.0G2 Haplotype rs71785313 (TTATAA>del6)G25935.3915.03.08 [1.45 to 7.06]0.0025Non-G210864.75185.0Total167100.060100.0*Two-tailed Fisher's exact test with mid-P method using a dominant genetic model (carriage of 1 or 2 copies of the designated APOL1 haplotype),†Individuals with a partial G1 haplotype were excluded from the analysis. T.b.g: T.b. gambiense, OR: odds ratio, CI: confidence interval. Raw data for Table 3 can be found in Table 3—source data 1. An association analysis of the two individual component SNPs of the G1 haplotype can be found in Table 3—source data 2.10.7554/eLife.25461.013Table 4.Conditional association between kidney disease risk variants and T.b. gambiense infection outcome excluding compound heterozygotesDOI: http://dx.doi.org/10.7554/eLife.25461.01310.7554/eLife.25461.014Table 4—source data 1.APOL1 genotype data for T.b. gambiense clinical stage trypanosomiasis patients and latent carriers, excluding compound heterozygotes*Individuals excluded from the APOL1 G1 association analysis. T.b.g: T.b. gambiense, G0: genotype compatible with the non-risk G0 allele for both rs73885319 and rs60910145, G1: genotype compatible with the G1 CKD risk allele for both rs73885319 and rs60910145, G1M: genotype compatible with the G1 CKD risk allele for rs60910145 and the non-risk G0 allele for rs73885319, G1G: genotype compatible with the G1 CKD risk allele for rs73885319 and the non-risk G0 allele for rs60910145, G2: genotype compatible with the G2 CKD risk allele for rs71785313.DOI: http://dx.doi.org/10.7554/eLife.25461.01410.7554/eLife.25461.015Table 4—source data 2.Association between individual APOL1 G1 kidney disease risk variants and T.b. gambiense infection outcome, excluding compound heterozygotes Two-tailed Fisher's exact test with mid-P method using a dominant genetic model (carriage of 1 or 2 copies of the designated APOL1 SNP).Individuals with a compound heterozygote genotype (G1/G2) were excluded from the analysis. CKD: chronic kidney disease, T.b.g: T.b. gambiense, OR: odds ratio, CI: confidence interval. Raw data for Table 4—source data 2 can be found in Table 4—source data 1DOI: http://dx.doi.org/10.7554/eLife.25461.015Dominant model – infection outcomeAPOL1 haplotypeT.b.g DiseaseT.b.g CarriageAssociation analysis* T.b.g Disease/CarriageNumber%Number%OR [95% CI]PG1 Haplotype†,‡  rs73885319 (A>G) + rs60910145 (T>G)G13623.42548.10.33 [0.17 to 0.64]0.0012Non-G111876.62751.9Total154100.052100.0G2 Haplotype‡  rs71785313 (TTATAA>del6)G25031.647.35.87 [2.16 to 20.01]0.0001Non-G210868.45192.7Total158100.055100.0*Two-tailed Fisher's exact test with mid-P method using a dominant model (carriage of 1 or 2 copies of the designated APOL1 haplotype),†Individuals with a partial G1 haplotype were excluded from the analysis.‡Individuals with a compound heterozygote genotype (G1/G2) were excluded from the analysis. T.b.g: T.b. gambiense, OR: odds ratio, CI: confidence interval. Raw data for Table 4 can be found in Table 4—source data 1. An association analysis of the two individual component SNPs of the G1 haplotype can be found in Table 4—source data 2.
+### APOL1 variants and resistance/susceptibility to T.b. gambiense
 
-Together these associations, summarised in
+#### Infection
+
+To evaluate the impact of these polymorphisms in driving resistance/susceptibility to T.b. gambiense infection, G1 and G2 polymorphisms were genotyped in 227 T.b. gambiense-infected individuals and 104 controls from the mangrove focus in Guinea. When compared to control genotype frequencies, neither variant demonstrated an association with susceptibility to T.b. gambiense infection (p=0.47 [G1], p=0.50 [G2], Table 2).
+
+**Table 2.**
+ Association between kidney disease risk variants and T.b. gambiense infectionTable 2—source data 1.APOL1 genotype data for T.b. gambiense-infected individuals and controls*Individuals excluded from the APOL1 G1 association analysis. T.b.g: T.b. gambiense, G0: genotype compatible with the non-risk G0 allele for both rs73885319 and rs60910145, G1: genotype compatible with the G1 CKD risk allele for both rs73885319 and rs60910145, G1M: genotype compatible with the G1 CKD risk allele for rs60910145 and the non-risk G0 allele for rs73885319, G1G: genotype compatible with the G1 CKD risk allele for rs73885319 and the non-risk G0 allele for rs60910145, G2: genotype compatible with the G2 CKD risk allele for rs71785313.Table 2—source data 2.Association between individual APOL1 G1 kidney disease risk variants and T.b. gambiense infection Two-tailed Fisher's exact test with mid-P method using a dominant genetic model (carriage of 1 or 2 copies of the designated APOL1 SNP).CKD: chronic kidney disease, T.b.g: T.b. gambiense, OR: odds ratio, CI: confidence interval. Raw data for Table 2—source data 2 can be found in Table 2—source data 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="6">Dominant model - Infection</th>
+    </tr>
+    <tr>
+      <th>APOL1 haplotype</th>
+      <th colspan="2">T.b.g infected</th>
+      <th colspan="2">Control</th>
+      <th colspan="2">Association analysis*  T.b.g infected/Control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Number</td>
+      <td>%</td>
+      <td>Number</td>
+      <td>%</td>
+      <td>OR [95% CI]</td>
+      <td>P</td>
+    </tr>
+    <tr>
+      <td>G0 Ancestral Haplotype rs73885319 (A) + rs60910145 (T) + rs71785313 (TTATAA)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G0</td>
+      <td>196</td>
+      <td>86.3</td>
+      <td>89</td>
+      <td>85.6</td>
+      <td>1.07 [0.54 to 2.06]</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td>Non-G0</td>
+      <td>31</td>
+      <td>13.7</td>
+      <td>15</td>
+      <td>14.4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>227</td>
+      <td>100.0</td>
+      <td>104</td>
+      <td>100.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G1 Haplotype† rs73885319 (A&gt;G) + rs60910145 (T&gt;G)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G1</td>
+      <td>73</td>
+      <td>33.5</td>
+      <td>30</td>
+      <td>29.4</td>
+      <td>1.21 [0.73 to 2.03]</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <td>Non-G1</td>
+      <td>145</td>
+      <td>66.5</td>
+      <td>72</td>
+      <td>70.6</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>218</td>
+      <td>100.0</td>
+      <td>102</td>
+      <td>100.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G2 Haplotype rs71785313 (TTATAA&gt;del6)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G2</td>
+      <td>68</td>
+      <td>30.0</td>
+      <td>35</td>
+      <td>33.7</td>
+      <td>0.84 [0.51 to 1.40]</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>Non-G2</td>
+      <td>159</td>
+      <td>70.0</td>
+      <td>69</td>
+      <td>66.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>227</td>
+      <td>100.0</td>
+      <td>104</td>
+      <td>100.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Two-tailed Fisher's exact test with mid-P method using a dominant genetic model (carriage of 1 or 2 copies of the designated APOL1 haplotype),†Individuals with a partial G1 haplotype were excluded from the analysis. T.b.g: T.b. gambiense, OR: odds ratio, CI: confidence interval. All raw data for Table 2 can be found in Table 2—source data 1. The association analysis of the two individual component SNPs of the G1 haplotype can be found in Table 2—source data 2._
+
+#### Disease outcome
+
+Infection with T.b. gambiense is associated with distinct clinical outcomes. T.b. gambiense-infected individuals can be subdivided into clinical stage trypanosomiasis patients who are serology and microscopy positive for trypanosomiasis (n = 167), and latent carriers (n = 60), who are defined as strongly serology positive, but asymptomatic and aparasitemic by microscopic examination for a period of at least two years. When comparing clinical cases and latent carriers, significant opposing associations were observed for the two APOL1 variants with T.b. gambiense infection outcome (Table 3). There was an association between the G1 variant and dominant protection against developing clinical stage trypanosomiasis (OR = 0.33, 95% CI: 0.17–0.62; p=0.0005). This indicates that T.b. gambiense-infected individuals possessing a copy of the G1 APOL1 variant were three-fold more likely to be latent asymptomatic carriers of T.b. gambiense. In contrast, the G2 variant was associated with a three-fold increased susceptibility to clinical stage trypanosomiasis (OR = 3.08, 95% CI: 1.45–7.06, p=0.0025), consistent with a risk of faster disease progression. This association was strengthened still further (OR = 5.87, 95% CI: 2.16–20.01; p=0.0001) when individuals with a potentially antagonistic compound heterozygous (G1/G2) genotype were excluded from the analysis (Table 4).
+
+**Table 3.**
+ Association between kidney disease risk variants and T.b. gambiense infection outcomeTable 3—source data 1.APOL1 genotype data for T.b. gambiense clinical stage trypanosomiasis patients and latent carriers*Individuals excluded from the APOL1 G1 association analysis. T.b.g: T.b. gambiense, G0: genotype compatible with the non-risk G0 allele for both rs73885319 and rs60910145, G1: genotype compatible with the G1 CKD risk allele for both rs73885319 and rs60910145, G1M: genotype compatible with the G1 CKD risk allele for rs60910145 and the non-risk G0 allele for rs73885319, G1G: genotype compatible with the G1 CKD risk allele for rs73885319 and the non-risk G0 allele for rs60910145, G2: genotype compatible with the G2 CKD risk allele for rs71785313.Table 3—source data 2.Association between individual APOL1 G1 kidney disease risk variants and T.b. gambiense infection outcome Two-tailed Fisher's exact test with mid-P method using a dominant genetic model (carriage of 1 or 2 copies of the designated APOL1 SNP).CKD: chronic kidney disease, T.b.g: T.b. gambiense, OR: odds ratio, CI: confidence interval. Raw data for Table 3—source data 2 can be found in Table 3—source data 1
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="6">Dominant model – infection outcome</th>
+    </tr>
+    <tr>
+      <th>APOL1 haplotype</th>
+      <th colspan="2">T.b.g Disease</th>
+      <th colspan="2">T.b.g Carriage</th>
+      <th colspan="2">Association analysis* T.b.g Disease/Carriage</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Number</th>
+      <th>%</th>
+      <th>Number</th>
+      <th>%</th>
+      <th>OR [95% CI]</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>G0 Ancestral Haplotype rs73885319 (A) + rs60910145 (T) + rs71785313 (TTATAA)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G0</td>
+      <td>144</td>
+      <td>86.2</td>
+      <td>52</td>
+      <td>86.7</td>
+      <td>0.96 [0.38 to 2.25]</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>Non-G0</td>
+      <td>23</td>
+      <td>13.8</td>
+      <td>8</td>
+      <td>13.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>167</td>
+      <td>100.0</td>
+      <td>60</td>
+      <td>100.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G1 Haplotype†  rs73885319 (A&gt;G) + rs60910145 (T&gt;G)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G1</td>
+      <td>43</td>
+      <td>26.7</td>
+      <td>30</td>
+      <td>52.6</td>
+      <td>0.33 [0.17 to 0.62]</td>
+      <td>0.0005</td>
+    </tr>
+    <tr>
+      <td>Non-G1</td>
+      <td>118</td>
+      <td>73.3</td>
+      <td>27</td>
+      <td>47.4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>161</td>
+      <td>100.0</td>
+      <td>57</td>
+      <td>100.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G2 Haplotype rs71785313 (TTATAA&gt;del6)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G2</td>
+      <td>59</td>
+      <td>35.3</td>
+      <td>9</td>
+      <td>15.0</td>
+      <td>3.08 [1.45 to 7.06]</td>
+      <td>0.0025</td>
+    </tr>
+    <tr>
+      <td>Non-G2</td>
+      <td>108</td>
+      <td>64.7</td>
+      <td>51</td>
+      <td>85.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>167</td>
+      <td>100.0</td>
+      <td>60</td>
+      <td>100.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Two-tailed Fisher's exact test with mid-P method using a dominant genetic model (carriage of 1 or 2 copies of the designated APOL1 haplotype),†Individuals with a partial G1 haplotype were excluded from the analysis. T.b.g: T.b. gambiense, OR: odds ratio, CI: confidence interval. Raw data for Table 3 can be found in Table 3—source data 1. An association analysis of the two individual component SNPs of the G1 haplotype can be found in Table 3—source data 2._
+
+**Table 4.**
+ Conditional association between kidney disease risk variants and T.b. gambiense infection outcome excluding compound heterozygotesTable 4—source data 1.APOL1 genotype data for T.b. gambiense clinical stage trypanosomiasis patients and latent carriers, excluding compound heterozygotes*Individuals excluded from the APOL1 G1 association analysis. T.b.g: T.b. gambiense, G0: genotype compatible with the non-risk G0 allele for both rs73885319 and rs60910145, G1: genotype compatible with the G1 CKD risk allele for both rs73885319 and rs60910145, G1M: genotype compatible with the G1 CKD risk allele for rs60910145 and the non-risk G0 allele for rs73885319, G1G: genotype compatible with the G1 CKD risk allele for rs73885319 and the non-risk G0 allele for rs60910145, G2: genotype compatible with the G2 CKD risk allele for rs71785313.Table 4—source data 2.Association between individual APOL1 G1 kidney disease risk variants and T.b. gambiense infection outcome, excluding compound heterozygotes Two-tailed Fisher's exact test with mid-P method using a dominant genetic model (carriage of 1 or 2 copies of the designated APOL1 SNP).Individuals with a compound heterozygote genotype (G1/G2) were excluded from the analysis. CKD: chronic kidney disease, T.b.g: T.b. gambiense, OR: odds ratio, CI: confidence interval. Raw data for Table 4—source data 2 can be found in Table 4—source data 1
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="6">Dominant model – infection outcome</th>
+    </tr>
+    <tr>
+      <th>APOL1 haplotype</th>
+      <th colspan="2">T.b.g Disease</th>
+      <th colspan="2">T.b.g Carriage</th>
+      <th colspan="2">Association analysis* T.b.g Disease/Carriage</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Number</th>
+      <th>%</th>
+      <th>Number</th>
+      <th>%</th>
+      <th>OR [95% CI]</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>G1 Haplotype†,‡  rs73885319 (A&gt;G) + rs60910145 (T&gt;G)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G1</td>
+      <td>36</td>
+      <td>23.4</td>
+      <td>25</td>
+      <td>48.1</td>
+      <td>0.33 [0.17 to 0.64]</td>
+      <td>0.0012</td>
+    </tr>
+    <tr>
+      <td>Non-G1</td>
+      <td>118</td>
+      <td>76.6</td>
+      <td>27</td>
+      <td>51.9</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>154</td>
+      <td>100.0</td>
+      <td>52</td>
+      <td>100.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G2 Haplotype‡  rs71785313 (TTATAA&gt;del6)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G2</td>
+      <td>50</td>
+      <td>31.6</td>
+      <td>4</td>
+      <td>7.3</td>
+      <td>5.87 [2.16 to 20.01]</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>Non-G2</td>
+      <td>108</td>
+      <td>68.4</td>
+      <td>51</td>
+      <td>92.7</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>158</td>
+      <td>100.0</td>
+      <td>55</td>
+      <td>100.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Two-tailed Fisher's exact test with mid-P method using a dominant model (carriage of 1 or 2 copies of the designated APOL1 haplotype),†Individuals with a partial G1 haplotype were excluded from the analysis.‡Individuals with a compound heterozygote genotype (G1/G2) were excluded from the analysis. T.b.g: T.b. gambiense, OR: odds ratio, CI: confidence interval. Raw data for Table 4 can be found in Table 4—source data 1. An association analysis of the two individual component SNPs of the G1 haplotype can be found in Table 4—source data 2._
+
+Together these associations, summarised in Figure 2A, indicate that the G1 and G2 APOL1 variants exhibit distinct subspecies-specific susceptibility profiles in relation to the two causative agents of human African trypanosomiasis. The G1 variant is associated with asymptomatic carriage of T.b. gambiense, but the predicted protection against T.b. rhodesiense infection (Genovese et al., 2010) was not detected. For the G2 variant, opposing dominant associations were observed with the two different subspecies. This association is protective against T.b. rhodesiense infection, but with increased susceptibility to a more severe disease outcome for T.b. gambiense.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/25461/elife-25461-fig2-v3.jpg)
 
-**Figure 2.:** APOL1 G1 and G2 allele frequencies across sub-Saharan Africa.(A) The risk model for chronic kidney disease, T.b. rhodesiense infection, and T.b. gambiense disease outcome are summarized for the ancestral G0 APOL1 variant and heterozygous and homozygous carriers of the G1 and G2 variants. The direction of the risk association is indicated by arrow orientation and box colour: orange (increased risk), blue (reduced risk) and grey (no association). (B) WHO defines 36 countries as endemic for HAT, caused by T.b. gambiense in West Africa (blue) and T.b. rhodesiense in East Africa (green). Uganda is the only country endemic for both subspecies, although their distribution does not currently overlap (red). (C) Spatial frequency map of the APOL1 G1 variant. (D) Spatial frequency map of the APOL1 G2 variant. Spatial frequency maps were generated from merged published genotype data available for 40 populations (5287 individuals) in 21 countries (Figure 2—source data 1). Colour gradients illustrating predicted allele frequencies across Africa were extrapolated from available data using the Kriging algorithm in Surfer software version 8. The approximate locations of data points are indicated by filled black circles, a filled red triangle (Guinea study), or an inverted filled red triangle (Uganda study) next to the relative allele frequency, in percentage.DOI: http://dx.doi.org/10.7554/eLife.25461.01610.7554/eLife.25461.017Figure 2—source data 1.APOL1 G1 and G2 variants in African populations.Where data for G1 allele frequency were unavailable, data are inferred from rs73885319 only. N/A: Data not available, CEPH-HGDP: Centre d’Etude du Polymorphisme Humain - Human Genome Diversity Panel, TCGA-UCL: The Centre for Genetic Anthropology at University College London.DOI: http://dx.doi.org/10.7554/eLife.25461.017
+**Figure 2.:** (A) The risk model for chronic kidney disease, T.b. rhodesiense infection, and T.b. gambiense disease outcome are summarized for the ancestral G0 APOL1 variant and heterozygous and homozygous carriers of the G1 and G2 variants. The direction of the risk association is indicated by arrow orientation and box colour: orange (increased risk), blue (reduced risk) and grey (no association). (B) WHO defines 36 countries as endemic for HAT, caused by T.b. gambiense in West Africa (blue) and T.b. rhodesiense in East Africa (green). Uganda is the only country endemic for both subspecies, although their distribution does not currently overlap (red). (C) Spatial frequency map of the APOL1 G1 variant. (D) Spatial frequency map of the APOL1 G2 variant. Spatial frequency maps were generated from merged published genotype data available for 40 populations (5287 individuals) in 21 countries (Figure 2—source data 1). Colour gradients illustrating predicted allele frequencies across Africa were extrapolated from available data using the Kriging algorithm in Surfer software version 8. The approximate locations of data points are indicated by filled black circles, a filled red triangle (Guinea study), or an inverted filled red triangle (Uganda study) next to the relative allele frequency, in percentage.
 
-## Geographical distribution of APOL1 G1 and G2 variants
+### Geographical distribution of APOL1 G1 and G2 variants
 
 To visualize the geographic distribution of APOL1 variants in relation to HAT endemicity (Figure 2B), data generated by this study were merged with previously reported allele frequencies for 38 other sub-Saharan African populations, to produce a cohort of 5287 genotyped samples. Frequency distributions for G1 and G2 were transformed into geographical contour maps using the Kriging algorithm for data interpolation (Figure 2C and D). The allele frequencies from the Ugandan population and the mangrove foci in Guinea appear consistent with the general geographical distribution pattern for these variants in sub-Saharan Africa. Both variants are reported at higher prevalence in T.b. gambiense endemic West Africa, particularly G1, which reaches frequencies as high as 49% in the Ibo (Thomson et al., 2014) and Esan (Abecasis et al., 2012) tribes of Nigeria, decreasing to complete absence in Northeast Africa (Tzur et al., 2010; Behar et al., 2011). Allele frequency is moderately inversely correlated with longitude for both G1 (Pearson correlation: r = −0.526, p=2.0 × 10−4, N = 40) and G2 (r = −0.593, p=5.7 × 10−5, N = 37) but not latitude (G1, p=0.33, G2, p=0.30), indicating a significant decreasing relative frequency for both APOL1 variants from West to East across the continent.
 
@@ -101,34 +625,34 @@ The association between APOL1 chronic kidney disease risk variants and human Afr
 
 ## Materials and methods
 
-## Ethics statement
+### Ethics statement
 
 Participants were identified through healthcare providers, community engagement and active field surveillance in association with the national control programmes. Written informed consent for sample collection, analysis and publication of anonymised data was obtained from all participants by trained local healthcare workers. Subjects or their legal guardian gave consent as a signature or a thumbprint after receiving standardised information in English, French or their local language, as preferred, and were free to withdraw from the study at any time. Efforts were made to ensure the engagement of all local stake holders and approval was obtained from local leaders in each study area where appropriate. Ethical approvals for the study were obtained from within the TrypanoGEN Project following H3Africa Consortium guidelines for informed consent (H3Africa Consortium, 2013), from Comité Consultatif de Déontologie et d’Ethique (CCDE) at the Institut de recherche pour le développement (IRD; 10/06/2013) for the Guinea study, and from the Uganda National Council for Science and Technology (UNCST; 21/03/2013) for the Uganda study. Research procedures were also approved by the University of Glasgow MVLS Ethics Committee for Non-Clinical Research Involving Human Subjects (Reference no. 200120043).
 
-## Sample collection
+### Sample collection
 
-## Uganda
+#### Uganda
 
 A T.b. rhodesiense cohort of 184 blood samples was collected from patients presenting to local hospitals during an epidemic in the neighbouring districts of Soroti and Kaberamaido in Central Eastern Uganda, along with 180 controls, between 2002 and 2012. The majority of the population is from the Kumam ethnic group. In all cases, T.b. rhodesiense infection was confirmed by microscopic detection of trypanosomes in wet blood films, Giemsa stained thick blood films or in the buffy coat fraction after microhaematocrit centrifugation. Blood was collected by venepuncture from consenting participants, and preserved as blood spots on FTA filter cards (Whatman, NJ, USA) with air-drying. For PCR amplification, discs of 2 mm diameter were cut from each blood spot using a Harris Micro-punch (Whatman) and prepared according to the instructions provided by the manufacturer.
 
-## Guinea
+#### Guinea
 
 Samples were collected from a group of three closely positioned active T.b. gambiense HAT foci (Dubreka, Boffa and Forecariah) located in the mangrove area of coastal Guinea (Camara et al., 2005). The majority of the population is from the Soussou ethnic group. All subjects included in this study were identified during medical surveys performed between 2007 and 2011 by the National Control Program according to standard procedures described elsewhere (Ilboudo et al., 2011). For each study participant, 100 µL of plasma and 500 µL of buffy coat were taken. All samples were frozen in the field at −20°C. The highly specific T. b. gambiense immune trypanolysis (TL) test was performed on plasma samples as previously described (Jamonneau et al., 2010). We included 331 individuals in three phenotypic categories: (i) HAT patients (n = 167): card agglutination test for trypanosomiasis (CATT) positive and trypanosomes detected by the mini Anion Exchange Centrifugation technique (mAECT) followed by microscopy and / or examination of cervical lymph node aspirates by microscopy when adenopathies were present, (ii) Latent carriers (n = 60) CATT plasma titre 1/8 or higher; TL positive, no trypanosomes detected by mean of mAECT and / or examination of cervical lymph node aspirates during a two-year follow-up; (iii) Uninfected endemic controls (n = 104), CATT negative, TL negative, mAECT negative. DNA was extracted from blood collected in the field with the DNeasy Tissue kit (Qiagen, Germany) according to the instructions provided by the manufacturer.
 
-## APOL1 genotyping
+### APOL1 genotyping
 
-## Uganda
+#### Uganda
 
 The APOL1 genotype of each individual at the G1 and G2 loci was determined using PCR–restriction fragment length polymorphism (RFLP) analysis. G1 comprises two non-synonymous substitutions, rs73885319 (c.1024A>G [p.Ser342Gly]) and rs60910145 (c.1152T>G [p.Ile384Met]) in near-perfect linkage disequilibrium. The second variant, G2, is found on an alternative haplotype and represents a two amino acid in-frame deletion (c.1164_1169del [p.Asn388_Tyr389del]). Prepared FTA card discs were used as template in a PCR amplifying a 458 bp product containing the three known variant sites (primers: APOL1 F1, 5′- AGACGAGCCAGAGCCAATCTTC-3′ and APOL1_R2, 5′- CACCATTGCACTCCAACTTGGC −3′). PCR reactions were prepared in a volume of 25 µL using conditions previously described (Cooper et al., 2008) with a final primer concentration of 10 µM and 1 unit of Taq polymerase (ThermoFisher Scientific, MA, USA). Amplification was performed using 35 cycles of 95°C for 50 s, 67°C for 50 s, and 70°C for 1 min. Following PCR amplification, an independent RFLP assay was performed for each of the three polymorphisms. For SNP rs73885319 (G1S342G), the A>G substitution results in the loss of a HindIII site, for SNP rs60910145 (G1I384M) the T>G substitution creates an NspI site, and for rs71785313, the G2 6 bp deletion results in the loss of an MluCI site. For each reaction, 2 µL of PCR product was digested with 10 units of enzyme and the products separated by electrophoresis on a 2% agarose gel. Data for each SNP (rs73885319, rs60910145, and rs71785313) were combined to generate the APOL1 genotype for each individual. All individuals that were identified as containing G1 or G2 polymorphisms by RFLP, along with a similar number of randomly selected G0 homozygous individuals were verified by PCR amplification and Sanger sequencing (MWG-Biotech AG, Germany) of APOL1 protein coding exons 3–7. Sequences were evaluated using CLC genomics software (RRID:SCR_011853) for genetic variants relative to NCBI Genome reference build 38.7 (RRID:SCR_006553; Supplementary file 1). Details of the PCR and sequencing primers are provided in Supplementary file 2.
 
-## Guinea
+#### Guinea
 
 The G1S342G (rs73885319) polymorphism was detected by PCR-RFLP. PCR was carried out in a total volume of 30 µL containing 100 ng of DNA, 10 mM of dNTP, 10 µM of each primer (APOL1 319_1F: 5’-CAGCATCCTGGAAATGAGC-3’; APOL1 319_1R: 5’-GCCCTGTGGTCACAGTTCTT-3’) and 1 unit of Taq polymerase (MP Biomedical, CA, USA). The PCR conditions were: 95°C for 5 min followed by 35 cycles at 95°C for 30 s, 59°C for 30 s, 72°C for 45 s and one cycle of extension, 72°C for 5 min. The PCR products were then digested by fast digest HindIII (ThermoFisher Scientific) and digested fragments separated on 2% agarose gel electrophoresis. The G1I384M (rs60910145) polymorphism was genotyped by the Genome and Transcriptome Platform of Bordeaux using the Sequenom MassArray iplex method. Genotypes were identified with the MassARRay Typer 4.0 Analyzer software. The G2 (rs71785313) indel was detected on a Li-Cor sequencer. The PCR primers were the same as for G1S342G (rs73885319) but the forward primer had a M13 tail (M13 = 5’-CACGACGTTGTAAAACGAC-3’). PCRs were carried out in a total volume of 20 µL containing 25 ng of DNA, 10 mM of dNTP, 10 µM of each primer, 10 mM of dye (M13IR700) and 1 unit of Taq polymerase (MP Biomedical). The PCR conditions were: 95°C for 5 min followed by 35 cycles at 95°C for 30 s, 59°C for 30 s, 72°C for 45 s and one cycle of extension, 72°C for 5 min. The PCR products were then visualized on the Li-Core sequencer for the G2 indel detection. Data for each SNP (rs73885319, rs60910145, and rs71785313) were combined to generate the APOL1 genotype for each individual.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses of association between APOL1 genotypes and human African trypanosomiasis in this case-control study were performed by contingency table analyses using Fisher’s exact test with mid-P method. Statistical tests were computed using Open-epi. Calculation of the minimum detectable odds ratios was performed for the study sample size in Uganda (<0.144, >2.662 [G1], < 0.350, >2.116 [G2]) and Guinea (<0.448, >2.008 [G1], <0.471, >1.971[G2]) using Sampsize software with the parameters of 80% power, 5% alpha risk and a two-sided test.
 
-## Spatial frequency map of G1 and G2 allele frequency and human African trypanosomiasis distribution
+### Spatial frequency map of G1 and G2 allele frequency and human African trypanosomiasis distribution
 
 To visualize the geographical distribution of APOL1 G1 and G2 polymorphisms in sub-Saharan Africa, a contour map was generated by collating data from this study with previously published datasets to produce a cohort of 5287 individuals from across 40 African populations. Published datasets with a low sample size (n ≤ 19) were excluded. G1S342G (rs73885319) was used as a proxy for G1, where G1 frequency data were unavailable (rs73885319 and rs60910145 are in almost complete positive linkage disequilibrium) (Genovese et al., 2010; Kopp et al., 2011). The contour map was drawn using Surfer 8.0 (Golden Software Inc., Golden, Colorado) applying the Kriging algorithm for data interpolation. Interpolation may be inaccurate where there are few data points. G1 and G2 allele frequencies were analysed for an association with the geographical coordinates (absolute latitude and longitude) using Pearson's correlation test (GraphPad Prism version 6.0, RRID:SCR_002798). The map of T.b. rhodesiense and T.b. gambiense endemicity was drawn from the Human African trypanosomiasis endemicity classification of the Global Health Observatory data repository (World Health Organization, 2015)

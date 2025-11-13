@@ -38,7 +38,7 @@ We applied M2M on a collection of 1520 draft bacterial reference genomes from th
 
 ## Results
 
-## M2M pipeline and key species
+### M2M pipeline and key species
 
 M2M is a flexible software solution that performs automatic GSMN reconstruction and systematic screening of metabolic capabilities for up to thousands of species for which an annotated genome is available. The tool computes both the individual and collective metabolic capabilities to estimate the complementarity between the metabolisms of the species. Then based on a determined metabolic objective which can be ensuring the producibility of metabolites that need cooperation, that we call cooperation potential, M2M performs a community reduction step that aims at identifying a minimal community fulfilling the metabolic objective, as well as the set of associated key species.
 
@@ -52,19 +52,175 @@ Sets of producible metabolites for individual or communities of species are comp
 
 The inputs to the whole workflow are a set of annotated genomes, a list of nutrients representing a growth medium, and optionally a list of targeted compounds to be produced by selected communities that will bypass the default objective of ensuring the producibility of the cooperation potential. Users can use the annotation pipeline of their choice prior running M2M. The whole pipeline is called with the command m2m workflow but each step can also be run individually as described in Table 1.
 
+**Table 1.**
+ List and description of Metage2Metabo (M2M) commands.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>m2m workflow</td>
+      <td>Runs the whole m2m workflow</td>
+    </tr>
+    <tr>
+      <td>m2m metacom</td>
+      <td>Runs the workflow with already-reconstructed metabolic networks</td>
+    </tr>
+    <tr>
+      <td>m2m recon</td>
+      <td>Reconstructs metabolic networks using Pathway Tools</td>
+    </tr>
+    <tr>
+      <td>m2m iscope</td>
+      <td>Computes scopes for individual metabolic networks</td>
+    </tr>
+    <tr>
+      <td>m2m cscope</td>
+      <td>Computes the community scope</td>
+    </tr>
+    <tr>
+      <td>m2m addedvalue</td>
+      <td>Computes the cooperation potential</td>
+    </tr>
+    <tr>
+      <td>m2m mincom</td>
+      <td>Selects a minimal community and computes key species</td>
+    </tr>
+    <tr>
+      <td>m2m seeds</td>
+      <td>Creates a SBML file for nutrients</td>
+    </tr>
+    <tr>
+      <td>m2m test</td>
+      <td>Runs m2m workflow on a sample dataset</td>
+    </tr>
+    <tr>
+      <td>m2m_analysis</td>
+      <td>Runs additional analyses on community selection</td>
+    </tr>
+  </tbody>
+</table>
+
 A main characteristic of M2M is to provide at the end of the pipeline a set of key species associated to a metabolic function together with one minimal community predicted to satisfy this function. We define as key species organisms whose GSMNs are selected in at least one of the minimal communities predicted to fulfill the metabolic objective. Among key species, we distinguish those that occur in every minimal community, suggesting that they possess key functions associated to the objective, from those that occur only in some communities. We call the former essential symbionts, and the latter alternative symbionts. These terms were inspired by the terminology used in flux variability analysis (Orth et al., 2010) for the description of reactions in all optimal flux distributions. If interested, one can compute the enumeration of all minimal communities with m2m_analysis, which will provide the total number of minimal communities as well as the composition of each. Figure 1b illustrates these concepts with an initial community formed of eight species. There are four minimal communities satisfying the metabolic objective. Each includes three species, and in particular, the yellow one is systematically a member. Therefore, the yellow species is an essential symbiont whereas the four other species involved in minimal communities constitute the set of alternative symbiont. As key species represent the diversity associated to all minimal communities, it is likely that their number is greater than the size of a minimal community, as this is the case in Figure 1b.
 
-## M2M connects metagenomics to metabolism with GSMN reconstruction, metabolic complementarity screening and community reduction
+### M2M connects metagenomics to metabolism with GSMN reconstruction, metabolic complementarity screening and community reduction
 
 In order to illustrate its applicability to real data, M2M was applied to a collection of 1520 bacterial high-quality draft reference genomes from the gut microbiota presented in Zou et al., 2019. The genomes were derived from cultured bacteria, isolated from faecal samples covering typical gut phyla (Costea et al., 2018): 796 Firmicutes, 447 Bacteroidetes, 235 Actinobacteria, 36 Proteobacteria, and 6 Fusobacteria. The dereplicated genomes represent 338 species. The genomes were already annotated and could therefore directly enter M2M pipeline. The full workflow (from GSMN reconstruction to key species computation) took 155 min on a cluster with 72 CPUs and 144 Gb of memory. We illustrate in the next paragraphs the scalability of M2M and the range of analyses it proposes by applying the pipeline to this collection of genomes.
 
-## GSMN reconstruction
+#### GSMN reconstruction
 
 GSMNs were automatically reconstructed for the 1520 isolate-based genomes using their published annotation. A total of 3932 unique reactions and 4001 metabolites were included in the reconstructed GSMNs (Table 2). The reconstructed gut metabolic networks contained on average 1144 (±255) reactions and 1366 (±262) metabolites per genome. Of the reactions, 74.6% were associated to genes, the remaining being spontaneous reactions or reactions added by the PathoLogic algorithm (they can be removed in M2M using the –noorphan option).
 
+**Table 2.**
+ Results of the genome-scale metabolic network (GSMN) reconstruction step and metabolic potential analysis for the three datasets presented in the article (Avg = Average, '±' precedes standard deviation).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Gut dataset</th>
+      <th>Rumen dataset</th>
+      <th>Diabetes dataset</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Initial data</td>
+      <td>Draft reference genomes</td>
+      <td>MAGs</td>
+      <td>MAGs</td>
+    </tr>
+    <tr>
+      <td>Number of genomes</td>
+      <td>1520</td>
+      <td>913</td>
+      <td>778</td>
+    </tr>
+    <tr>
+      <td>GSMN reconstruction</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>All reactions</td>
+      <td>3932</td>
+      <td>4418</td>
+      <td>5554</td>
+    </tr>
+    <tr>
+      <td>All metabolites</td>
+      <td>4001</td>
+      <td>4466</td>
+      <td>5386</td>
+    </tr>
+    <tr>
+      <td>Avg reactions per GSMN</td>
+      <td>1144 (±255)</td>
+      <td>1155 (±199)</td>
+      <td>1640 (±368)</td>
+    </tr>
+    <tr>
+      <td>Avg metabolites per GSMN</td>
+      <td>1366 (±262)</td>
+      <td>1422 (±212)</td>
+      <td>1925 (±361)</td>
+    </tr>
+    <tr>
+      <td>Avg genes per mn</td>
+      <td>596 (±150)</td>
+      <td>543 (±107)</td>
+      <td>1658 (±469)</td>
+    </tr>
+    <tr>
+      <td>% reactions associated to genes</td>
+      <td>74.6 (±2.17)</td>
+      <td>73.8 (±2.61)</td>
+      <td>79.57 (±1.60)</td>
+    </tr>
+    <tr>
+      <td>Avg pathways per mn</td>
+      <td>163 (±49)</td>
+      <td>146 (±32)</td>
+      <td>220 (±58)</td>
+    </tr>
+    <tr>
+      <td>Metabolic potential</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of seeds</td>
+      <td>93</td>
+      <td>26</td>
+      <td>175</td>
+    </tr>
+    <tr>
+      <td>Avg scope per mn</td>
+      <td>286 (±70)</td>
+      <td>101 (±44)</td>
+      <td>508 (±83)</td>
+    </tr>
+    <tr>
+      <td>Union of individual scopes</td>
+      <td>828</td>
+      <td>368</td>
+      <td>1326</td>
+    </tr>
+  </tbody>
+</table>
+
 The metabolic potential, or scope, was computed for each individual GSMN (Table 2). Nutrients in this experiment were components of a classical diet (see Materials and methods). The union of all individual scopes is of size 828 (21% of all compounds included in the GSMNs), indicating a small part of the metabolism reachable in the chosen nutritional environment (Supplementary file 1 - Table 1). Appendix 1—figure 1h,i displays the distributions of the scopes. Across all GSMNs, individual scopes are overall stable in size. The core set of producible metabolites is small and a variety of metabolites are only reachable by a small number of organisms (Appendix 1—figure 1i). The overall small size of metabolic potentials can be explained by the restricted amount of seeds used for computation. Among metabolites that are reachable by all or almost all metabolic networks, the primary metabolism is highly represented, as expected, with metabolites derived from common sugars (glucose, fructose), pyruvate, 2-oxoglutaric acid, amino acids… On the other hand but not surprisingly, metabolites that predicted to be reached by a limited number of individual producers include compounds from secondary metabolism: (fatty) acids (e.g. oxalate, maleate, allantoate, hydroxybutanoate, methylthiopropionate), derivatives of amino acids, amines (spermidine derivatives).
 
-## Cooperation potential
+#### Cooperation potential
 
 Metabolic cooperation enables the activation of more reactions in GSMNs than what can be expected when networks are considered in isolation. By taking into account the complementarity between GSMNs in each dataset, it is possible to capture the putative benefit of metabolic cooperation on the diversity of producible metabolites. Running m2m cscope predicted 156 new metabolites as producible by the gut collection of GSMNs if cooperation is allowed.
 
@@ -72,13 +228,202 @@ We analysed the composition of the 156 newly producible metabolites for the gut 
 
 We paid a particular attention to the predicted producibility of short-chain fatty acids (SCFAs) among genomes of the gut collection. We analysed formate, acetate, propionate, and butyrate in individual and collective metabolic potentials (Supplementary file 1 - Table 25). A total of 543 metabolic networks are predicted to be able to produce all four molecules in a cooperative context, 74% of them belonging the Firmicutes, as expected. Surprisingly, predicted individual producers of the four SCFAs (n = 128) are mostly Bacteroidetes (70%) suggesting the dependency of Firmicutes to interactions in order to permit the producibility of SCFAs in this experimental setting. The same observations are made when focusing on butyrate alone, that has the particularity of belonging to the seeds. As Bacteroidetes are not the main butyrate producers in the gut, the predictions of such producibility is likely an artefact relying on alternative pathways, and further emphasises the fact that owning the genetic material for a function does not entail its expression.
 
-## Key species associated to groups of metabolites
+#### Key species associated to groups of metabolites
 
 M2M proposes by default one community composition for an objective defined by enabling the producibility of metabolic end-products. Given the functional redundancy of gut bacteria (Moya and Ferrer, 2016), there could be thousands of bacterial composition combinations, and it is computationally costly to enumerate them. To circumvent this restriction, M2M identifies key species without the need for all possible combinations of species to be enumerated, consequentially reducing computational time. Key species include all species occurring in at least one minimal community for the production of chosen end-products. They can be distinguished in two categories: essential symbionts occurring in all minimal communities, and alternative symbionts occurring in some minimal communities.
 
 To explore the spectrum of possible key species, we ran M2M community reduction step (m2m mincom command) with the above six metabolic target groups. This allowed us to compute predicted key species for each of them (Table 3). The contents of key species for each of the six groups of targets as well as for the complete set of targets is displayed in Supplementary file 1 (Tables 6 to 12). To our surprise, the size of the minimal community is relatively small for each group of metabolites (between 4 and 11), compared to the initial community of 1520 GSMNs. The number of identified key species varies between 59 and 227, which might be closer to the total taxonomic diversity found in the human gut microbiome. This strong reduction compared to the initial number of 1520 GSMNs used for the analysis illustrates the existence of groups of bacteria with specific metabolic capabilities. In particular, essential symbionts are likely of high importance for the functions as they are found in each solution. More generally, compositions vary across the target categories: a high proportion of key species for the production of lipids targets are Bacteroidetes, whereas Firmicutes were more often key species for aminoacids and derivatives production. The propensity of Bacteroidetes to metabolise lipids has been proposed previously, it has for example been observed in the Bacteroides enterotype for functions related to lipolysis (Vieira-Silva et al., 2016).
 
-## Analysis of minimal communities identifies groups of organisms with equivalent roles
+**Table 3.**
+ Community reduction analysis of the target categories in the gut.All minimal communities were enumerated, starting from the set of 1520 genome-scale metabolic networks (GSMNs). KS: key species, ES: essential symbionts, AS: alternative symbionts, Firm.: Firmicutes, Bact.: Bacteroidetes, Acti.: Actinobacteria, Prot.: Proteobacteria, Fuso.: Fusobacteria.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Firm.</th>
+      <th>Bact.</th>
+      <th>Acti.</th>
+      <th>Prot.</th>
+      <th>Fuso.</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Aminoacids and derivatives (5 targets)4 bact. per community120,329 communities</td>
+      <td>KS</td>
+      <td>142</td>
+      <td>52</td>
+      <td>0</td>
+      <td>27</td>
+      <td>6</td>
+      <td>227</td>
+    </tr>
+    <tr>
+      <td>ES</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>AS</td>
+      <td>142</td>
+      <td>52</td>
+      <td>0</td>
+      <td>27</td>
+      <td>6</td>
+      <td>227</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Aromatic compounds (11 targets)5 bact. per community950 communities</td>
+      <td>KS</td>
+      <td>52</td>
+      <td>0</td>
+      <td>0</td>
+      <td>20</td>
+      <td>0</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>ES</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>AS</td>
+      <td>50</td>
+      <td>0</td>
+      <td>0</td>
+      <td>19</td>
+      <td>0</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Carboxyacids (14 targets)9 bact. per community48,412 communities</td>
+      <td>KS</td>
+      <td>16</td>
+      <td>13</td>
+      <td>0</td>
+      <td>28</td>
+      <td>2</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>ES</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>AS</td>
+      <td>14</td>
+      <td>13</td>
+      <td>0</td>
+      <td>26</td>
+      <td>2</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td rowspan="3">CoA derivatives (10 targets)5 bact. per community95,256 communities</td>
+      <td>KS</td>
+      <td>106</td>
+      <td>0</td>
+      <td>50</td>
+      <td>17</td>
+      <td>1</td>
+      <td>174</td>
+    </tr>
+    <tr>
+      <td>ES</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>AS</td>
+      <td>106</td>
+      <td>0</td>
+      <td>50</td>
+      <td>17</td>
+      <td>0</td>
+      <td>173</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Lipids (28 targets)7 bact. per community58,520 communities</td>
+      <td>KS</td>
+      <td>3</td>
+      <td>140</td>
+      <td>22</td>
+      <td>20</td>
+      <td>0</td>
+      <td>185</td>
+    </tr>
+    <tr>
+      <td>ES</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>AS</td>
+      <td>0</td>
+      <td>140</td>
+      <td>22</td>
+      <td>19</td>
+      <td>0</td>
+      <td>181</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Sugar derivatives (58 targets)11 bact. per community7,860,528 communities</td>
+      <td>KS</td>
+      <td>11</td>
+      <td>30</td>
+      <td>78</td>
+      <td>23</td>
+      <td>0</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <td>ES</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>AS</td>
+      <td>6</td>
+      <td>30</td>
+      <td>78</td>
+      <td>23</td>
+      <td>0</td>
+      <td>137</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Analysis of minimal communities identifies groups of organisms with equivalent roles
 
 To go further, we enumerated all minimal communities for each individual group of targets using m2m_analysis. The number of optimal solutions is large, reaching more than 7 million equivalent minimal communities for the sugar-derived metabolites (Table 3). Our analysis of key species indicates that the large number of optimal communities is due to combinatorial choices among a rather small number of bacteria (Table 3).
 
@@ -86,15 +431,47 @@ In order to visualise the association of GSMNs in minimal communities, we create
 
 Figure 2 presents the compressed graphs for each set of targets. Graph nodes are the key species, coloured by their phylum. Nodes are included into power nodes that are connected by power edges, illustrating the redundant metabolic function(s) that species provide to the community when considering specific end-products. GSMNs belonging to a power node play the same role in the construction of the minimal communities. In this visualisation, essential symbionts are easily identifiable, either into power nodes with loops (Figure 2a,e) or as individual nodes connected to power nodes (Figure 2a,c,d,f).
 
-We observe that power nodes often contain GSMNs from the same phylum, indicating that phylogenetic groups encode redundant functions. Figure 3a has additional comments to guide the reader into analysing the community composition on one example. Each minimal community suitable for the production of the targeted lipids is composed of one Bacteroidetes from power node (PN) 1, one Actinobacteria from PN 2, the Firmicutes member 3, one Proteobacteria from PN 4 and finally the two Firmicutes and the Proteobacteria from PN 5. For all the target groups of this study, the large enumerations can be summarised with a boolean formula derived from the graph compressions. For instance, for the lipids of Figure 3a, the community composition as described above is the following:(∨P⁢N⁢1)∧(∨P⁢N⁢2)∧(P⁢N⁢3)∧(∨P⁢N⁢4)∧(∧P⁢N⁢5).
+![Figure 2.](https://cdn.elifesciences.org/articles/61968/elife-61968-fig2-v2.jpg)
+
+**Figure 2.:** Each category of metabolites predicted as newly producible in the gut was defined as a target set for community selection among the 1520 genome-scale metabolic networks (GSMNs) from the gut microbiota reference genomes dataset. For each metabolic group, key species and the full enumeration of all minimal communities were computed. Association graphs were built to associate members that are found together in at least one minimal community among the enumeration. These graphs were compressed as power graphs to identify patterns of associations and groups of equivalence within key species. Power graphs a., b., c., d., e., f. were generated for the sets of lipids, aminoacids and derivatives, carboxy-acids, sugar derivatives, aromatic compounds, and coenzyme A derivative compounds, respectively. Node colour describes the phylum associated to the GSMN. Figure (a) has an additional description to ease readability. Edges symbolise conjunctions ('AND’) and the co-occurrences of nodes in regular power nodes (as in power node 1, 2, 4) symbolise disjunctions ('OR’) related to alternative symbionts. Power nodes with a loop (e.g. power node 5) indicate conjunctions. Therefore, each enumerated minimal community for lipid production is composed of the two Firmicutes and the Proteobacteria from power node 5, the Firmicutes node 3 (the four of them being the essential symbionts), and one Proteobacteria from power node 4, one Actinobacteria from power node 2 and 1 Bacteroidetes from power node 1. Members from an inner power node are interchangeable with respect to the metabolic objective. A version of the figures with species identification is available in Figure 2—figure supplement 1, Figure 2—figure supplement 2, Figure 2—figure supplement 3, Figure 2—figure supplement 4, Figure 2—figure supplement 5, Figure 2—figure supplement 6 (see Supplementary file 1 - Table 4 for a mapping between identifiers and taxonomy). Power graphs can be generated with m2m_analysis. The figures display one visual representation for each power graph although such representations are not unique. The number of power edges is minimal, which leads to nesting of (power) nodes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61968/elife-61968-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Power graph associated to the minimal communities producing the sugars derivatives group of targets.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61968/elife-61968-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Power graph associated to the minimal communities producing the lipids derivatives group of targets.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/61968/elife-61968-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Power graph associated to the minimal communities producing the amino acids and derivatives group of targets.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/61968/elife-61968-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Power graph associated to the minimal communities producing the aromatic compounds group of targets.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/61968/elife-61968-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Power graph associated to the minimal communities producing the carboxy-acids group of targets.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/61968/elife-61968-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Power graph associated to the minimal communities producing the coenzyme A derivatives group of targets.
+
+We observe that power nodes often contain GSMNs from the same phylum, indicating that phylogenetic groups encode redundant functions. Figure 3a has additional comments to guide the reader into analysing the community composition on one example. Each minimal community suitable for the production of the targeted lipids is composed of one Bacteroidetes from power node (PN) 1, one Actinobacteria from PN 2, the Firmicutes member 3, one Proteobacteria from PN 4 and finally the two Firmicutes and the Proteobacteria from PN 5. For all the target groups of this study, the large enumerations can be summarised with a boolean formula derived from the graph compressions. For instance, for the lipids of Figure 3a, the community composition as described above is the following:
+
+$$
+(∨P⁢N⁢1)∧(∨P⁢N⁢2)∧(P⁢N⁢3)∧(∨P⁢N⁢4)∧(∧P⁢N⁢5).
+$$
 
 We further investigated the essential symbionts associated to carbohydrate-derived metabolites in our study: Paenibacillus polymyxa, Lactobacillus lactis, Bacillus licheniformis, Lactobacillus plantarum, and Dorea longicatena. Interestingly, out of these five species, the first four have already been studied in the context of probiotics, for animals or humans (Cutting, 2011; Monteagudo-Mera et al., 2012). In particular, the study of P. polymyxa CAZymes demonstrated its ability to assist in digesting complex carbohydrates (Soni et al., 2020). L. plantarum is also known for its role in carbohydrate acquisition (de Vries et al., 2006; Marco et al., 2010). The present analysis illustrates that within the full genome collection, these species are likely to exhibit functions related to carbohydrate synthesis and degradation that are not found in other species. Bacillus licheniformis is also an essential symbiont for the lipid metabolites. Among essential symbionts for other groups of metabolites, Burkholderiales bacterium (Proteobacteria) and Hungatella hathewayi (Firmicutes) have the particularity of occurring in predictions for the lipids, carboxy acids, and aromatic metabolites. This suggest a metabolism for these two species that differs from the other species, with non-redundant contributions to some metabolites of these categories. While Hungatella hathewayi is a relatively frequent gut commensal, little is known about this species (Manzoor et al., 2017). The Burkholderiales order is also poorly known, but its ability to degrade a variety of aromatic compounds has been established (Pérez-Pantoja et al., 2012). Finally, the only essential symbiont predicted for the coA-related metabolites is Fusobacterium varium, a butyrate producer known for its ability to ferment both sugars and amino acids (Potrykus et al., 2008).
 
 Altogether, computation of key species coupled to the visualisation of community compositions enables a better understanding of the associations of organisms into the minimal communities. In this genome collection, groups of equivalent GSMNs allow us to identify genomes that are providing specialised functions to the community, enabling metabolic pathways leading to specific end-products.
 
-## M2M is suited to the metabolic analysis of MAGs
+### M2M is suited to the metabolic analysis of MAGs
 
-## Comparison of M2M applications to MAGs and draft reference genomes
+#### Comparison of M2M applications to MAGs and draft reference genomes
 
 In order to compare the effect of genome quality on M2M predictions, we performed analyses on a collection of 913 MAGs binned from cow rumen metagenomes (Stewart et al., 2018). These MAGs were predicted to be >80% complete and <10% contaminated. The complete M2M workflow ran in 81 min on a cluster with 72 CPUs and 144 Gb of memory.
 
@@ -102,7 +479,7 @@ Results of the GSMN reconstruction are presented in Table 2. GSMNs of the cow ru
 
 M2M modelling analyses were run on the reconstructed GSMNs. Appendix 1 (Figure 1; Appendix 1—figure 1) displays the distributions of the individual scopes for each GSMN. We identified a cooperation potential of 296 metabolic end-products only reachable through the community. The minimal community consisted of 44 GSMNs, sufficient to produce all metabolites reachable through cooperation in the initial community composition. These could be described through 127 key species, consisting of 20 essential symbionts and 107 alternative ones. This indicates that each equivalent minimal community for these compounds would consist in the same 20 GSMNs, associated to 24 others selected within the 107 alternative species, thereby reaching a total of 44 GSMNs. Results are displayed in Supplementary file 1 (Table 4), together with those of an equivalent analysis (default settings of M2M with cooperation potential as targets) for the gut reference genomes.
 
-## M2M robustly identifies key species, even with degraded genomes
+#### M2M robustly identifies key species, even with degraded genomes
 
 A recurring concern in metagenomics is the completeness of reconstructed MAGs due to the possible loss of functions during the genome assembly process (Parks et al., 2015). Misidentified genes can impede GSMN reconstruction and consequently the contents of the scopes and cooperation potential. To assess the impact of MAG completeness, we altered the rumen MAGs dataset by randomly removing genes. We created four altered datasets by removing: (i) 2% of genes in all genomes, (ii) 5% of genes in 80% of the genomes, (iii) 5% of genes in all genomes and (iv) 10% of genes in 70% of the genomes. We analysed these degraded datasets with the same M2M workflow, using a community selection with the metabolic cooperation potential as a community objective.
 
@@ -112,15 +489,15 @@ The metabolic cooperation potential, the global set of reachable metabolites in 
 
 **Figure 3.:** A proportion of genes were randomly removed from all or a random subset of the 913 rumen MAGs: 2% from all genomes (2pc100), 5% from 80% of the genomes (5pc80), 5% from all genomes (5pc100) and 10% from 70% of the genomes (10pc70). M2M pipeline was ran on these four datasets and comparison was made with respect to the initial non-altered dataset of MAGs (original). Subfigures a to e each represent one piece of information computed by M2M and compared between the five experiments. (a) Set of producible compounds by all metabolic networks in a cooperative system (community scope); supervenn representation. Each dataset of metabolic networks obtained from the original or degraded genomes is represented horizontally, with a unique colour. The right panel of the supervenn diagram indicates the number of metabolites in the community scope of the corresponding dataset. Vertical overlaps between sets represent intersections (e.g groups of metabolites retrieved in several datasets) whose size is indicated on the X axis. For example, there is a set of 37 metabolites that are producible in the original dataset only, and a set of 5 metabolites predicted as producible in all datasets but the one where 70% of genomes were 10%-degraded. A full superimposition of all the coloured bars would indicate a complete stability of the community scope between datasets. (b) Comparison of the cooperation potential between the five experiments. (c) Comparison of key species that gather essential symbionts (d) and alternative symbionts (e).
 
-## Application of M2M to human shotgun metagenomic data from diabetic and healthy individuals
+### Application of M2M to human shotgun metagenomic data from diabetic and healthy individuals
 
-## Protocols and cohort effect
+#### Protocols and cohort effect
 
 In order to illustrate the applicability of M2M to metagenomic samples and cohorts of individuals, we reused the work presented in Diener et al., 2020 and analysed the gut metagenomes of 170 individuals from a Danish (MHD) cohort and a Swedish (SWE) cohort (Forslund et al., 2015) in the context of Type-1 (T1D) and Type-2 (T2D) diabetes. Based on species-level dereplicated MAGs, metagenomic species (MGS), we built GSMNs and bacterial communities for each individual. We relied only on the available metagenomic data to perform analyses, and used qualitative information (presence/absence of MGS or species in the sample) to build the communities as M2M works with qualitative information. Two experiments were performed: firstly, M2M was run on each sample using communities of newly reconstructed GSMN from MGS, and secondly using communities consisting of curated GSMNs of the AGORA resources (Magnúsdóttir et al., 2017) mapped to OTUs at the species level as described in Diener et al., 2020. A total of 778 MGS were retrieved from the dataset and used to build GSMNs (Table 2), whereas when using the mapping of OTUs to existing curated GSMNs, only 289 GSMNs were used. The distribution of phyla in the two cases is illustrated in Appendix 2—figure 2. We first focus on the results obtained with the MGS-based protocol.
 
 In average, communities were composed of 108 (±29) GSMNs. The median community size was 111 (Supplementary file 1 - Table 20). Diversity and richness analyses are available in Appendix 2 The effect of the cohort (MHD, SWE) was strong in the analyses performed with MGS, impacting community sizes, size and composition (in families of metabolites) of the set of metabolites producible by the community, as well as the cooperation potential. Results are depicted in Appendix 2—figure 3. A classification experiment using the composition of the community scope or the composition of the cooperation potential can efficiently determine the cohort of the samples (Appendix 2—figure 3 panels c and g). Similar differences between cohorts were also observed in Diener et al., 2020 and in Forslund et al., 2015 based on functional or taxonomic annotations, likely driven by the different sampling protocols used in the two datasets (Forslund et al., 2015). This indicates that the commonly observed cohort effect in metagenomics is also reflected at the metabolic modelling scale, which could be explained by the observed GSMN redundancies shared within phyla.
 
-## Impact of the disease status
+#### Impact of the disease status
 
 We studied the impact of the disease status on the community metabolism for the 115 samples of the MHD cohort. The community diversity varied between disease statuses, with a significantly higher number of MGS observed in T1D individuals forming the initial communities (anova F(2,112) = 8.346, p<0.01, eta-squared = 0.13, Tukey HSD test p<0.01 vs control). We observe that the distribution of the community sizes is broader for control individuals. The higher diversity for diseased individuals is reflected at the metabolic level through the putative producibility of a wider set of metabolites for T1D (anova F(2,112) = 6.606, p<0.01, eta-squared = 0.11, Tukey HSD p<0.01 vs control) and to a lesser extent for T2D communities (Tukey HSD p=0.05 vs control). The putative producibility of some families of metabolites (alcohols, esters, carbohydrates, amino acids, acids) in the community scopes also differed between metabolic communities derived from diseased and healthy individuals (anova p<0.05), whereas other metabolic families like lipids remained stable between cohorts. This can be at least partly explained by the number of metabolites matching these categories according to the Metacyc database (e.g. 191 metabolites tagged as 'All-carbohydrates’ in average in community scopes, and only 10 tagged as 'Lipids’ as the remaining of them are scattered in other categories). No clear difference appears between the three statuses (Figure 4e) in terms of community scope composition. Regarding the cooperation potential, two groups tend to appear, separated due to diverse secondary metabolites, but they are not driven by the disease status of the individual (Figure 4f). A classification experiment on the composition of the community scope can, to some extent (AUC = 0.75 ± 0.15), decipher between healthy or diabetes statuses (Figure 4d) but classification between T1D and T2D was not achievable (Appendix 2—figure 4). Although metagenomic data would more precisely perform such a separation, it is informative to observe that despite metabolic redundancy in the gut microbiota, there are differences at the metabolic modelling level. Qualitative differences are noticeable between healthy and diabetic individuals: it is possible to distinguish them to some extent using the set of metabolites predicted to be producible by the microorganisms found in their faeces.
 
@@ -130,7 +507,7 @@ We studied the impact of the disease status on the community metabolism for the 
 
 We then computed for each sample the key species (essential and alternative symbionts) associated to the cooperation potential. The ratio of key species (KS), essential symbionts (ES) and alternative symbionts (AS) with respect to the initial community size did not vary altogether between statuses. The exception was the ratio of AS (and of KS, which include AS) when comparing diabetes individuals and controls, differences that were not significant when distinguishing the two types of diabetes. Comparing the phylum-level taxonomy of these putative key species, in the initial communities, we noted that the occurrence of Firmicutes was broader compared to other phyla (Bacteroidota, Proteobacteria, Actinobacteria). Firmicutes are known to be phylogenetically diverse (Costea et al., 2018), and therefore their combined metabolism could also be more diverse. A notable change is the narrower distribution of Bacteroidota in the initial communities as well as in selected symbionts in diseased individuals compared to control (Figure 4g). Altogether, no clear trend was observable from metabolic modelling analyses between disease states, but we observed some difference for the taxonomic composition of minimal communities, which could be explained by the diversity discrepancies in microbiome compositions (Forslund et al., 2015).
 
-## Focus on short-chain fatty acids production
+#### Focus on short-chain fatty acids production
 
 Given the importance of SCFAs in human health (Baxter et al., 2019), we focused on the production of butyrate, propionate and acetate in communities for each sample of the dataset. A small number of MGS (N = 11) GSMNs were predicted to be able to individually produce butyrate from the nutrients. All 778 MGS were capable to ferment acetate and most of them propionate (N = 515). The putative production of butyrate in the 170 communities when allowing cooperation between GSMNs was systematic. As expected (Rivière et al., 2016), a majority (54.1%) of the unique MGS predicted as possible butyrate producers in communities (GSMNs comprising a reaction producing butyrate that could be activated in a community) belonged to the Firmicutes phylum. Altogether, in 62.6% of cases, the putative butyrate producers observed in the communities were Firmicutes. We compared the number of putative butyrate producers in communities from MHD samples according to the disease status of the individuals. Their number was significantly higher in the communities of T1D individuals compared to control and T2D (anova F(2,111) = 9.27, p<0.01, eta-squared = 0.14, and Tukey HSD test p<0.01 vs control and p=0.02 vs T2D) which could be explained by the higher MGS diversity observed in T1D communities compared to the others. We then analysed the difference between using GSMNs of MGS reconstructed from metagenomic data and using curated GSMNs mapped at the species level to OTUs as performed in Diener et al., 2020. The same increase in butyrate producers was observed when running M2M on MHD communities consisting of the mapped AGORA GSMNs (anova F(2,112) = 5.368, p<0.01, eta-squared = 0.11, and Tukey HSD test p<0.01 vs control). To conclude, similar to the analyses of Diener et al., 2020, we observe that the producibility of SCFAs, particularly butyrate, is highly driven by cooperation in the microbial communities of individuals and can be performed by heterogenous sets of commensal species. The MGS-driven approach and the systematic GSMN reconstruction permit taking advantage of the whole metagenomic information and capturing the metabolic complementarity in each sample.
 
@@ -150,7 +527,7 @@ There are limitations associated to the software solution described in this pape
 
 Despite the above mentioned limitations, M2M has multiple applications for the de novo screening of metabolism in microbial communities. The number of curated GSMNs for species found in microbiotas increases (Magnúsdóttir et al., 2017), constituting a highly valuable resource for the study of interactions by mapping metagenomic data or OTUs to the taxonomy of genomes associated to these GSMNs. Yet, the variety of (reference) genomes obtained from shotgun metagenomic experiments is such than species and strains may not belong to the ones for which a curated GSMN is available. In that case, the proportion of reads that are not mapped to a genome with an associated GSMN can be very high (Diener et al., 2020). In addition, predictions from GSMN mapping can be misleading as it is known that genomes vary a lot between genera, species, and even strains, (Ansorge et al., 2019) and so can the metabolism. Recent methods for assembling genomes directly from metagenomes lead to nearly complete genomes for possibly unknown species on which one may still want to get metabolic insights (Almeida et al., 2019). Long-reads sequencing associated with short-reads sequencing can also give access to complete microbial genomes (Moss et al., 2020). Finally, single-cell methods can be useful for the acquisition of genomes and metagenomes (Treitli et al., 2019). M2M answers to the need for de novo metabolic inference and screening, which is likely to become a routine in the rapidly evolving context of microbiota genome sequencing. While studying the metabolic potential of large communities is an iterative process that still requires biological expertise, we provide with this work means to facilitate the screening of metagenomes and reduce these large communities to key members.
 
-## Conclusion
+### Conclusion
 
 M2M allows metabolic modelling of large-scale communities, based on reference genomes or de novo constructed MAGs, inferring metabolic complementarity found within communities. M2M is a flexible framework that automates GSMN reconstruction, individually and collectively analyse GSMNs, and performs community selection for targeted functions. The large combinatorics of minimal communities due to functional redundancy in microbiotas is addressed by providing key species associated to metabolic end-products. This could allow targeting specific members of the community through pro- or prebiotics, to model the metabolites the human host will be exposed to.
 
@@ -164,59 +541,79 @@ M2M is a Python package. It can be used on a workstation or on a cluster using D
 
 We detail below the characteristics of M2M through a description of its main steps.
 
-## Parallel and large-scale metabolic network reconstruction
+### Parallel and large-scale metabolic network reconstruction
 
 M2M can process existing metabolic networks in SBML format or proposes the automatic reconstruction of non-curated metabolic networks (m2m recon). As a multi-processing solution, it facilitates the treatment of hundreds or thousands of genomes that can be retrieved from metagenomic experiments. The underlying GSMN reconstruction software is Pathway Tools (Karp et al., 2016), a graphical user interface (GUI) based software suite for the generation of individual GSMNs, called Pathway/Genome Databases (PGDBs). Typically, a PGDB is obtained from an annotated genome using PathoLogic, the software prediction component of Pathway Tools, and curated afterwards.
 
 We developed Mpwt (Multiprocessing Pathway Tools), a command-line Python wrapper (also available as a standalone tool) for Pathway Tools. Mpwt and M2M (i) format the genomic inputs, (ii) automate the reconstruction step by initialising a PathoLogic environment for each genome, and (iii) extract and convert the resulting GSMNs in PGDB and SBML (Hucka et al., 2003; Hucka et al., 2018) formats using the PADMet library (Aite et al., 2018). Mpwt handles three types of genomic inputs (Genbank, Generic Feature Format (GFF) or PathoLogic format) that must contain GO-terms and EC-numbers annotations necessary for Pathway Tools. These annotations are for example found in the Genbank files generated by Prokka (Seemann, 2014). In addition, we specifically developed Emapper2gbk, a Python package dedicated to the connection between the Eggnog-mapper annotation tool (Huerta-Cepas et al., 2017) and Mpwt in order to generate these inputs.
 
-## Analysis of metabolic producibility and calculation of the cooperation potential
+### Analysis of metabolic producibility and calculation of the cooperation potential
 
 This part of the workflow encompasses three steps: computation of the (i) individual (m2m iscope) and (ii) collective (m2m cscope) metabolic potentials, and (iii) the characterisation of the cooperation potential of the GSMN collection (m2m addedvalue). The former two rely on the network expansion algorithm (Ebenhöh et al., 2004), the latter being a set difference between the results of the first two steps.
 
 The network expansion algorithm computes the scope of a metabolic network from a description of the growth medium called seeds. The scope consists in the set of metabolic compounds which are reachable, or producible, according to a boolean abstraction of the network dynamics assuming that cycles cannot be self-activated. More precisely, the algorithm recursively considers products of reactions to be producible if all reactants of the reactions are producible, provided an initiation with a set of seed nutrients. The underlying implementation of the network expansion algorithm used in M2M relies on Answer Set Programming (ASP) (Schaub and Thiele, 2009).
 
-We define a metabolic network as a bipartite graph G=(R∪M,E), where R and M stand for reaction and metabolite nodes. When (m,r)∈E (respectively (r,m)∈E), with m∈M and r∈R, the metabolite is called a reactant (respectively product) of the reaction r. The scope of a set of seed compounds S according to a metabolic network G, denoted by scope⁡(G,S), is iteratively computed until it reaches a fixed point (Handorf et al., 2005). It is formally defined byScope(G,S)=⋃iMi, where M0=S and Mi+1=Mi∪products({r∈R∣reactants(r)⊆Mi}).
+We define a metabolic network as a bipartite graph $G=(R∪M,E)$, where $R$ and $M$ stand for reaction and metabolite nodes. When $(m,r)\inE$ (respectively $(r,m)\inE$), with $m\inM$ and $r\inR$, the metabolite is called a reactant (respectively product) of the reaction $r$. The scope of a set of seed compounds $S$ according to a metabolic network $G$, denoted by $scope⁡(G,S)$, is iteratively computed until it reaches a fixed point (Handorf et al., 2005). It is formally defined by
 
-## Individual metabolic capabilities
+$$
+Scope(G,S)=⋃iM_{i}, where M_{0}=S and M_{i+1}=M_{i}∪products({r\inR∣reactants(r)⊆M_{i}}).
+$$
+
+#### Individual metabolic capabilities
 
 The m2m iscope command predicts the set of reachable metabolites for each GSMN using the network expansion algorithm and the given nutrients as seeds. The content of each scope is exported to a json file. A summary is also provided to the user comprising the intersection (metabolites reachable by all GSMNs) and the union of all scopes, as well as the average size of the scopes, the minimal size and the maximal size of all. This command extends core functions implemented in Menetools for individual GSMNs, a Python package (also available as a standalone tool) that was previously used in Aite et al., 2018.
 
-## Collective metabolic capabilities
+#### Collective metabolic capabilities
 
-The m2m cscope command computes the metabolic capabilities of the whole microbiota by taking into account the metabolic complementarity between GSMNs. This step simulates the sharing of metabolic biosynthesis through a meta-organism composed of all GSMNs, and assesses the metabolic compounds that can be reached using network expansion. This calculation is an extension of the features of MiSCoTo (also available as a standalone tool) (Frioux et al., 2018) in which the collective scope of a collection of metabolic networks {G1,…⁢GN} is introduced. We definecollectiveScope(G1...GN,S)=Scope((⋃i∈{1...n}Ri,⋃i∈{1...n}Mi,⋃i∈{1...n}Ei),S).
+The m2m cscope command computes the metabolic capabilities of the whole microbiota by taking into account the metabolic complementarity between GSMNs. This step simulates the sharing of metabolic biosynthesis through a meta-organism composed of all GSMNs, and assesses the metabolic compounds that can be reached using network expansion. This calculation is an extension of the features of MiSCoTo (also available as a standalone tool) (Frioux et al., 2018) in which the collective scope of a collection of metabolic networks ${G_{1},…⁢G_{N}}$ is introduced. We define
 
-## Target producers
+$$
+collectiveScope(G_{1}...G_{N},S)=Scope((⋃i\in{1...n}R_{i},⋃i\in{1...n}M_{i},⋃i\in{1...n}E_{i}),S).
+$$
+
+#### Target producers
 
 If metabolic compounds of interest or targets are provided by the user, a summary of the producers for each target is generated by m2m workflow, m2m metacom, and m2m cscope: it identifies the GSMNs that are predicted to produce the targets, either intrinsically, or through cooperation with other members of the community.
 
-A metabolic network Gi is an individual target producer of t∈T if t∈scope⁡(Gi,S). The metabolic network Gi is a community target producer if (a) Gi is not an individual target producer of t (i.e. t∉scope⁡(Gi,S)), but (b) Gi contains a reaction r∈Ri which produces t (i.e. t∈𝑝𝑟𝑜𝑑𝑢𝑐𝑡𝑠⁢(r)) such that (c) all reactants are producible by the community (Gi and the other metabolic networks): reactants(r)⊂collectiveScope(G1...GN,S). This means that the metabolic network Gi has the capability of producing t through the reaction r in a cooperation context.
+A metabolic network $G_{i}$ is an individual target producer of $t\inT$ if $t\inscope⁡(G_{i},S)$. The metabolic network $G_{i}$ is a community target producer if (a) $G_{i}$ is not an individual target producer of $t$ (i.e. $t∉scope⁡(G_{i},S)$), but (b) $G_{i}$ contains a reaction $r\inR_{i}$ which produces $t$ (i.e. $t\in𝑝𝑟𝑜𝑑𝑢𝑐𝑡𝑠⁢(r)$) such that (c) all reactants are producible by the community ($G_{i}$ and the other metabolic networks): $reactants(r)⊂collectiveScope(G_{1}...G_{N},S)$. This means that the metabolic network $G_{i}$ has the capability of producing $t$ through the reaction $r$ in a cooperation context.
 
 This information can be retrieved in practice in the file 'producibility_targets.json’ under the keys 'individual_producers’ and 'com_only_producers’.
 
-## Cooperation potential
+#### Cooperation potential
 
 Given individual and community metabolic potentials, the cooperation potential consists in the set of metabolites whose producibility can only occur if several organisms participate in the biosynthesis. m2m addedvalue computes the cooperation potential by performing a set difference between the community scope and the union of individual scopes, and produces an SBML file with the resulting metabolites. This list of compounds is inclusive and could comprise false positives not necessitating cooperation for production, but selected due to missing annotations in the initial genomes. One can modify the SBML file accordingly, prior to the following M2M community reduction step.
 
-The cooperation potential (G1,...,Gn,S) of a collection of metabolic networks {G1...Gn} is defined bycooperationPotential(G1,...,Gn,S)=collectiveScope(G1,...,Gn,S)∖⋃i∈{1...n}scope(Gi,S).
+The cooperation potential $(G_{1},...,G_{n},S)$ of a collection of metabolic networks ${G_{1}...G_{n}}$ is defined by
 
-## Computation of minimal communities and identification of key species
+$$
+cooperationPotential(G_{1},...,G_{n},S)=collectiveScope(G_{1},...,G_{n},S)∖⋃i\in{1...n}scope(G_{i},S).
+$$
 
-A minimal community 𝒞 enabling the producibility of a set of targets T from the seeds S is a sub-family of the community G1,…,Gn which is solution of the following optimisation problem:minimize{Gi1...GiL} ⊂{G1...GN}size({Gi1...GiL})subject toT⊂collectiveScope(Gi1...GiL,S).
+### Computation of minimal communities and identification of key species
 
-Solutions to this optimisation problem are communities 𝒞=(Gi1⁢…,GiL) of minimal size. We define minimalCommunities(G1...Gn,S,T) to be the set of all such minimal communities. A first output of the m2m mincom command is the (minimal) size L of communities solution of the optimisation problem. The composition of one optimal community is also provided. The targets are by default the components of the cooperation potential, T=cooperationPotential(G1,...,Gn,S), but can also be a group of target metabolites defined by the user.
+A minimal community $𝒞$ enabling the producibility of a set of targets $T$ from the seeds $S$ is a sub-family of the community $G_{1},…,G_{n}$ which is solution of the following optimisation problem:
 
-Many minimal communities are expected to be equivalent for a given metabolic objective but their enumeration can be computationally costly. We define key species which are organisms occurring in at least one community among all the optimal ones. Key species can be further distinguished into essential symbionts and alternative symbionts. The former occur in every minimal community whereas the latter occur only in some minimal communities. More precisely, the key species keySpecies(G1...Gn,S,T), the essential symbionts essentialSymbionts(G1...Gn,S,T), and the alternative symbionts alternativeSymbionts(G1...Gn,S,T) associated to a set of metabolic networks, seeds S and a set of target metabolites T are defined bykeySpecies(G1...Gn,S,T)={G∣∃𝒞∈minimalCommunities(G1...Gn,S,T),G∈𝒞}.essentialSymbionts(G1...Gn,S,T)={G∣∀𝒞∈minimalCommunities(G1...Gn,S,T),G∈𝒞}.alternativeSymbionts(G1..Gn,S,T)=keySpecies(G1...Gn,S,T)∖essentialSymbionts(G1...Gn,S,T).
+$$
+minimize{G_{i_{1}}...G_{i_{L}}} ⊂{G_{1}...G_{N}}size({G_{i_{1}}...G_{i_{L}}})subject toT⊂collectiveScope(G_{i_{1}}...G_{i_{L}},S).
+$$
+
+Solutions to this optimisation problem are communities $𝒞=(G_{i_{1}}⁢…,G_{i_{L}})$ of minimal size. We define $minimalCommunities(G_{1}...G_{n},S,T)$ to be the set of all such minimal communities. A first output of the m2m mincom command is the (minimal) size $L$ of communities solution of the optimisation problem. The composition of one optimal community is also provided. The targets are by default the components of the cooperation potential, $T=cooperationPotential(G_{1},...,G_{n},S)$, but can also be a group of target metabolites defined by the user.
+
+Many minimal communities are expected to be equivalent for a given metabolic objective but their enumeration can be computationally costly. We define key species which are organisms occurring in at least one community among all the optimal ones. Key species can be further distinguished into essential symbionts and alternative symbionts. The former occur in every minimal community whereas the latter occur only in some minimal communities. More precisely, the key species $keySpecies(G_{1}...G_{n},S,T)$, the essential symbionts $essentialSymbionts(G_{1}...G_{n},S,T)$, and the alternative symbionts $alternativeSymbionts(G_{1}...G_{n},S,T)$ associated to a set of metabolic networks, seeds $S$ and a set of target metabolites $T$ are defined by
+
+$$
+keySpecies(G_{1}...G_{n},S,T)={G∣∃𝒞\inminimalCommunities(G_{1}...G_{n},S,T),G\in𝒞}.essentialSymbionts(G_{1}...G_{n},S,T)={G∣∀𝒞\inminimalCommunities(G_{1}...G_{n},S,T),G\in𝒞}.alternativeSymbionts(G_{1}..G_{n},S,T)=keySpecies(G_{1}...G_{n},S,T)∖essentialSymbionts(G_{1}...G_{n},S,T).
+$$
 
 As a strategy layer over MiSCoTo, M2M relies on the Clasp solver (Gebser et al., 2012) for efficient resolution of the underlying grounded ASP instances. Although this type of decision problem is NP-hard (Julien-Laferrière et al., 2016), as with many real-world optimisation problems worst-case asymptomatic complexity is less informative for applications than practical performance using heuristic methods. The Clasp solver implements a robust collection of heuristics (Gebser et al., 2007; Andres et al., 2012) for core-guided weighted MaxSAT (Manquinho et al., 2009; Morgado et al., 2012) that provide rapid set-based solutions to combinatorial optimisation problems, much in the same way that heuristic solvers like CPlex provide rapid numerical solutions to mixed integer programming optimisation problems. The kinds of ASP instances constructed by MiSCoTo for M2M are solved in a matter of minutes for the identification of key species and essential/alternative symbionts. Indeed the space of solutions is efficiently sampled using adequate projection modes in ASP, which enables the computation of these groups of species without the need for a full enumeration.
 
-## Analysis of enumerated communities
+#### Analysis of enumerated communities
 
 The m2m_analysis command permits the enumeration of minimal communities. If the taxonomy of species associated to the metabolic networks is provided, descriptive statistics are performed. In addition, minimal communities can be visualised as an association graph connecting GSMNs that co-occur in at least one minimal community. The association graph can itself be compressed in a power graph that enables visualising motifs such as cliques, bicliques and stars. Power graphs are generated using PowerGrASP (Bourneuf and Nicolas, 2017). In this paper, they were visualised with Cytoscape (v.2.8.3) (Shannon et al., 2003) and the CyOog plugin (v.2.8.2) developed by Royer et al., 2008.
 
-## Application to datasets
+### Application to datasets
 
-## Analysis of human gut and cow rumen published collections of genomes
+#### Analysis of human gut and cow rumen published collections of genomes
 
 In order to evaluate the influence of genome collections based on sequencing cultured isolates or metagenomic genome reconstructions, we used 1,520 high-quality draft reference genomes of bacteria from the human gut microbiota retrieved from Zou et al., 2019 and 913 MAGs from the cow rumen published in Stewart et al., 2018. The genomes from the former set were already annotated.
 
@@ -226,7 +623,7 @@ The cow rumen dataset of MAGs was not functionally annotated. Therefore, as a pr
 
 The rumen MAGs were artificially degraded to assess the robustness of M2M with respect to incomplete MAGs. This was done by randomly removing genes in all or a fraction of genomes. Four degradation scenarios were tested: removal of 2% of genes in all MAGs, removal of 5% of genes in 80% of the genomes, removal of 5% of genes in all genomes and removal of 10% of genes in 70% of the genomes. The subsequent parts of the analysis (annotation with Prokka, M2M runs) were done as described above. Supervenn diagrams presented in Figure 2 to compare the results were obtained using the Supervenn Python package (Fedor, 2021).
 
-## Shotgun metagenomic analysis of individuals
+#### Shotgun metagenomic analysis of individuals
 
 Metagenomic shotgun data from samples previously studied in Diener et al., 2020 from 186 Danish and Swedish individuals (Forslund et al., 2015) were used in this paper. Genomes were de novo reconstructed from the dataset using the MATAFILER pipeline described in Hildebrand et al., 2019. Briefly, metagenomic samples were quality-filtered using sdm (Hildebrand et al., 2014), assembled using MEGAHIT (Li et al., 2015), genes were predicted using Prodigal (Hyatt et al., 2010), and a non-redundant gene catalogue was constructed across all samples using MMseqs2 (Steinegger and Söding, 2017). MAGs were predicted from metagenomic assemblies using MetaBAT2 (Kang et al., 2019) and dereplicated into species level metagenomic species (MGS), using a combination of shared genes among MetaBAT2 bins, canopy clustering (Nielsen et al., 2014) and custom R scripts (Hildebrand et al., 2019). Abundance of MGS was estimated across samples by using the average coverage of 40 conserved, single copy marker genes associated to each MGS (Mende et al., 2013). This abundance matrix was further populated with specI species from the proGenomes database (Mende et al., 2020), that were not represented by MGS and are high-quality genomes from cultured bacteria. This pipeline is described in further detail in Hildebrand et al., 2019.
 

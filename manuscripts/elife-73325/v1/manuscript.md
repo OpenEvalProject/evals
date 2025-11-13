@@ -43,23 +43,164 @@ The new approach to analyzing arrhythmogenic propensity in HCM patients develope
 
 **Figure 1.:** (A) Flowchart summarizing the virtual-heart ventricular arrhythmia (VA) risk stratification approach for hypertrophic cardiomyopathy (HCM) patients. A combination of late gadolinium enhancement (LGE)-cardiac magnetic resonance (CMR) and postcontrast T1 mapping is used to construct personalized left ventricular (LV) geometrical models with fibrotic remodeling. Incorporating HCM-specific electrophysiological properties (action potential kinetics, conduction velocity) completes the generation of each personalized LGE-T1 virtual heart, which is then used to assess VA propensity in the substrate via rapid pacing. right ventricle (RV) is shown in transparent gray. Dense fibrosis (scar) is considered nonconductive. (B) Fusing LGE-CMR and postcontrast T1 map information to generate the personalized, geometrical virtual-heart model. Top left: LV segmentation with intermediate and high signal intensity thresholds of 3 (yellow) and 5 standard deviation (SD) (purple), respectively, on short-axis LGE-CMR. Bottom left: mid-ventricular postcontrast T1 map segmentation with relaxation time thresholds of <350 (blue) and 350–450 ms (gray). Right: the thresholds of the LGE-CMR signal intensity were adjusted to new, personalized thresholds, TDiffuse and TDense, based on the T1 map (see text for detail). The new personalized signal intensity thresholds in the matching LGE-CMR slice were then applied to all LGE-CMR short-axis slices.
 
-## Patient characteristics
+### Patient characteristics
 
 Twenty-six patients with HCM were included in this study. Demographic information for the cohort is provided in Table 1. All patients were adults (median age 53 years) and our cohort was 19% female. Thirteen of the 26 HCM patients experienced clinical VAs. Of the clinical parameters that associate with SCD in HCM (FHSCD, unexplained syncope, MWT, Max LVOTG, age, and LA diameter; see Table 1 for abbreviations), there were no statistically significant differences (p = 0.34, –, 0.65, 0.72, 0.98, 0.26) between patients with and without clinical VA. There was no statistically significant difference in any of the other common clinical characteristics between the two groups. Clinical data alone were not sufficient to accurately determine VA risk in this population.
 
+**Table 1.**
+ Patient characteristics (N = 26).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clinical characteristic</th>
+      <th>Patients without VA, n = 13</th>
+      <th>Patients with VA, n = 13</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Male</td>
+      <td>12 (92)</td>
+      <td>9 (69)</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Age at CMR, years</td>
+      <td>49.7 [19–76]</td>
+      <td>49.8 [22–78]</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td>NYHA III/IV</td>
+      <td>4 (31)</td>
+      <td>4 (31)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Myectomy</td>
+      <td>1 (8)</td>
+      <td>1 (8)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>ASA</td>
+      <td>1 (8)</td>
+      <td>2 (15)</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>Amiodarone</td>
+      <td>0 (0)</td>
+      <td>1 (8)</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>Persistent AF</td>
+      <td>3 (23)</td>
+      <td>4 (31)</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>LA diameter, mm</td>
+      <td>43.8 ± 6.3</td>
+      <td>38.3 ± 12.7</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Max LVOTG, mm Hg</td>
+      <td>57.8 [4–154]</td>
+      <td>50.8 [8–160]</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>MWT, mm</td>
+      <td>20.5 ± 5.0</td>
+      <td>19.6 ± 5.6</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>FS, %</td>
+      <td>38.0 ± 10.2</td>
+      <td>40.3 ± 10.8</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <td>FHSCD</td>
+      <td>3 (23)</td>
+      <td>4 (31)</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>Unexplained syncope</td>
+      <td>3 (23)</td>
+      <td>3 (23)</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
 Values are given as n (%), mean [range], or mean ± standard deviation (SD). p values were calculated using Student’s t-test (p ≤ 0.05 considered statistically significant). VA = ventricular arrhythmia; CMR = cardiac magnetic resonance; NYHA = New York Heart Association; ASA = alcohol septal ablation; AF = atrial fibrillation; LA = left atrium; LVOTG = left ventricular outflow tract gradient; MWT = maximum wall thickness; FS = fractional shortening; FHSCD = family history of sudden cardiac death.
 
-## Assessment of HCM structural remodeling using LGE-T1 geometrical models
+### Assessment of HCM structural remodeling using LGE-T1 geometrical models
 
 To reconstruct the geometrical model of each patient’s heart, LGE-CMR and postcontrast T1 mapping images were combined, creating a personalized LGE-T1 fusion model of HCM ventricular geometry and structural remodeling. Figure 1B presents the ‘fusing’ process, in which an initial reconstruction of ventricular geometry and scar/fibrosis was performed from the LGE-CMR images using standard ‘one-size-fits-all’ thresholds, and then the relaxation times from the short-axis T1 map were used to define personalized signal intensity thresholds to delineate areas of diffuse fibrosis and scar (see Methods for detailed description). The personalized thresholds were unique to each patient. The additional personalization of the geometrical model furnished by the usage of the T1 mapping data ensured a comprehensive representation of the individualized structural remodeling in each patient’s heart.
 
 Once the geometrical models were reconstructed, they were analyzed to determine whether the level (amount) and/or distribution of structural remodeling discriminate between patients with and without clinical VA. The level of regional hypertrophy was first assessed, as measured by the wall thickness of the heart models. No statistically significant difference in regional hypertrophy was found at the septum (p = 0.61), anterior wall (p = 0.84), posterior wall (p = 0.94), and apex (p = 0.73) between heart models of patients with and without clinical VA, as shown in Table 2. These results indicated that the level of hypertrophy does not discriminate between arrhythmogenic and nonarrhythmogenic substrates in HCM patients.
 
+**Table 2.**
+ Left ventricular (LV) wall thickness in hypertrophic cardiomyopathy (HCM) patients with and without clinical ventricular arrhythmia (VA).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Patients without VA, n = 13</th>
+      <th>Patients with VA, n = 13</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Wall thickness (mean ± standard deviation [SD])</td>
+    </tr>
+    <tr>
+      <td>Septum, mm</td>
+      <td>11.3 ± 8.4</td>
+      <td>13.1 ± 9.2</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>Anterior, mm</td>
+      <td>11.3 ± 7.4</td>
+      <td>10.7 ± 7.3</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td>Posterior, mm</td>
+      <td>11.1 ± 7.2</td>
+      <td>11.3 ± 7.3</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>Apex, mm</td>
+      <td>7.9 ± 5.3</td>
+      <td>7.2 ± 4.8</td>
+      <td>0.73</td>
+    </tr>
+  </tbody>
+</table>
+
+_p values were calculated using Student’s t-test (p ≤ 0.05 considered statistically significant)._
+
 Figure 2A and B presents a comparison between geometrical heart models of two patients (one with clinical VA and another without) reconstructed by combining LGE-CMR with T1 mapping, and by using LGE-CMR only. In the latter models, the accepted ‘one-size-fits-all’ thresholds of three and five times the SD of the low-intensity mean were used to reconstruct dense fibrosis (scar) and diffuse fibrosis distributions (see Methods). In the former models, patient-specific thresholds from the T1 mapping were used to delineate dense and diffuse fibrosis. As evident from the figure, using patient-specific signal intensity thresholding from the T1 map resulted in a significantly higher amount of diffuse fibrosis in these two models (42.9 ± 3.4% vs 9.8 ± 0.1%).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/73325/elife-73325-fig2-v1.jpg)
 
-**Figure 2.:** (A,B) Examples of hypertrophic cardiomyopathy (HCM) personalized left ventricular (LV) geometrical models with fibrotic remodeling (right ventricle [RV] shown in transparent gray) reconstructed using late gadolinium enhancement (LGE)-cardiac magnetic resonance (CMR) images with personalized T1-informed fibrosis segmentation thresholds (left) and using LGE-CMR images with one-size-fits-all fibrosis segmentation thresholds of 3 and 5 standard deviation [SD] (right). There is significantly more diffuse fibrosis in the T1-adjusted models. (A) Heart model from an HCM patient without clinical ventricular arrhythmia (VA). (B) Heart model from an HCM patient with clinical VA. (C) Boxplot of the amount of diffuse fibrosis in LGE-T1 and LGE-only HCM geometrical models without clinical VA (LGE-T1: N = 13, interquartile range [IQR] = 12.54; LGE only: N = 13, IQR = 2.41; *p < 0.0001) and with clinical VA (LGE-T1: N = 13, IQR = 14.44; LGE only: N = 13, IQR = 2.46; **p < 0.0001). The '+' denotes an outlier.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A,B) Examples of hypertrophic cardiomyopathy (HCM) personalized left ventricular (LV) geometrical models with fibrotic remodeling (right ventricle [RV] shown in transparent gray) reconstructed using late gadolinium enhancement (LGE)-cardiac magnetic resonance (CMR) images with personalized T1-informed fibrosis segmentation thresholds (left) and using LGE-CMR images with one-size-fits-all fibrosis segmentation thresholds of 3 and 5 standard deviation [SD] (right). There is significantly more diffuse fibrosis in the T1-adjusted models. (A) Heart model from an HCM patient without clinical ventricular arrhythmia (VA). (B) Heart model from an HCM patient with clinical VA. (C) Boxplot of the amount of diffuse fibrosis in LGE-T1 and LGE-only HCM geometrical models without clinical VA (LGE-T1: N = 13, interquartile range [IQR] = 12.54; LGE only: N = 13, IQR = 2.41; *p < 0.0001) and with clinical VA (LGE-T1: N = 13, IQR = 14.44; LGE only: N = 13, IQR = 2.46; **p < 0.0001). The '+' denotes an outlier.
 
 For all HCM LGE-T1 fusion models, the average threshold for diffuse fibrosis, TDiffuse, was 1.1 ± 0.7, significantly different from the corresponding LGE ‘one-size-fits-all value’, 3 SD. The average threshold for dense fibrosis, TDense, was 5.1 ± 0.5, not a significant change from the original 5 SD. The personalized threshold adjustment did not therefore result in a significant change in the amount of dense fibrosis for LGE-T1 models compared to LGE-only models (averages of 3.8 ± 2.3 vs 3.2 ± 1.3, p = 0.30). However, it resulted in a significant change in diffuse fibrosis across all models, as illustrated in Figure 2C (40.5 ± 9.4% for LGE-T1 vs 8.9 ± 1.7% for LGE only, p < 0.0001).
 
@@ -67,7 +208,7 @@ No statistical differences were found in the amounts of diffuse fibrosis between
 
 For each geometrical model used in this study, the amount of diffuse fibrosis in each LGE-T1 and LGE-only model (Figure 2—source data 1).
 
-## Assessment of propensity to VA in HCM LGE-T1 virtual-heart models
+### Assessment of propensity to VA in HCM LGE-T1 virtual-heart models
 
 Once the geometrical models of all HCM patients were reconstructed, electrophysiological models were generated and used to assess the individualized propensity to VA by pacing from distributed ventricular sites, representing potential ectopy. Full detail is in Methods. A total of 182 simulations ([26 patient heart] × [7 pacing locations]) were performed to probe propensity to VA induction in this cohort. To be able to better understand the role of T1-based diffuse fibrosis in arrhythmogenesis, we also repeated the simulations with LGE-only models.
 
@@ -83,11 +224,11 @@ Of the 26 LGE-T1 models, 14 were found inducible for VA in simulations. In contr
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/73325/elife-73325-fig4-v1.jpg)
 
-**Figure 4.:** (A) Comparison of the number of unique VA morphologies between inducible LGE-T1 and LGE-only models for all VA-inducing pacing sites (LGE-T1: N = 14, interquartile range [IQR] = 1; LGE only: N = 12, IQR = 0.75; p = 0.0538, confidence interval [CI]: [1.25, 1.75]). (B) Correlation between amount of T1-based diffuse fibrosis and the number of unique VA morphologies induced in LGE-T1 models using logistic regression (R = 0.40, p = 0.157). (C) The distribution of the pacing sites that induced VAs in LGE-T1 and LGE-only models.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Comparison of the number of unique VA morphologies between inducible LGE-T1 and LGE-only models for all VA-inducing pacing sites (LGE-T1: N = 14, interquartile range [IQR] = 1; LGE only: N = 12, IQR = 0.75; p = 0.0538, confidence interval [CI]: [1.25, 1.75]). (B) Correlation between amount of T1-based diffuse fibrosis and the number of unique VA morphologies induced in LGE-T1 models using logistic regression (R = 0.40, p = 0.157). (C) The distribution of the pacing sites that induced VAs in LGE-T1 and LGE-only models.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/73325/elife-73325-fig5-v1.jpg)
 
-**Figure 5.:** (A) Plot of the number of unique VA morphologies for patients with clinical VA using late gadolinium enhancement (LGE)-T1 and LGE-only models. (B, C) Comparison of VAs in corresponding LGE-T1 and LGE-only models. Pacing site(s) are marked with stars. Bullseye plots show the pacing site location (star) and the location of the reentrant pathway in LGE-T1 (blue) and LGE-only (purple) models.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Plot of the number of unique VA morphologies for patients with clinical VA using late gadolinium enhancement (LGE)-T1 and LGE-only models. (B, C) Comparison of VAs in corresponding LGE-T1 and LGE-only models. Pacing site(s) are marked with stars. Bullseye plots show the pacing site location (star) and the location of the reentrant pathway in LGE-T1 (blue) and LGE-only (purple) models.
 
 Figure 4A presents the number of unique VA morphologies induced by the pacing protocol. LGE-T1 models had a total of 24 unique VAs induced in them (out of total 32 VA episodes induced in the LGE-T1 models); in each model, there were between 1 and 3 different VA morphologies. LGE-only models had a total of 15 unique VAs (with a total of 17 VA episodes induced in these models), with only 1 or 2 distinct VA morphologies induced per model. These results indicate that the presence of diffuse fibrosis as reconstructed from T1 mapping increases the number of unique VAs in each substrate. Figure 4B correlates the amount of diffuse fibrosis and the number of unique VAs (R = 0.40, p = 0.157) in LGE-T1 inducible models. The moderate negative correlation indicates that the distribution of diffuse fibrosis is more important than its amount as the mechanism of VA inducibility in the HCM-remodeled substrate. Figure 4C presents two bullseye plots with the 7 AHA regions in which pacing sites were located; shown are the number of pacing sites in each segment that elicited VAs in LGE-T1 and LGE-only inducible models. In the LGE-T1 models, out of the 98 pacing sites (7 pacing sites per each of the 14 inducible models), 32 (33%) resulted in VA induction. In contrast, out of 84 pacing sites in the 12 LGE-only inducible models, 17 (20%) resulted in VA induction. Thus, the presence of T1-based diffuse fibrosis renders the substrate inducible from a larger number of ectopic locations, contributing to the overall increased vulnerability to VA. Interestingly, the sector with the pacing sites that induced most VAs (mid-anteroseptal) and that with least (basal inferolateral) were the same in LGE-T1 and LGE-only models, indicating that the additional T1-based diffuse fibrosis localizes to the sectors with arrhythmogenic substrate in the LGE-only models. Overall, the distribution of pacing sites is the same (with small exception in the basal regions), but the number of sites per sector increased with the presence of diffuse fibrosis.
 
@@ -101,9 +242,62 @@ It remains unclear why patients 1 and 2 had noninducible LGE-T1 substrates despi
 
 For each geometrical model with clinical VA, the number of unique VA morphologies in each LGE-T1 and LGE-only model (Figure 5—source data 1).
 
-## Assessment of the capability of the HCM virtual-heart VA risk prediction
+### Assessment of the capability of the HCM virtual-heart VA risk prediction
 
 After examining the mechanistic underpinning of arrhythmogenesis and the role of T1-based diffuse fibrosis in the HCM substrate, we conducted a comparison of our VA risk predictor capability with the clinical risk assessment guidelines of the ACCF/AHA and ESC. Results are presented in Table 3, illustrating that both existing clinical approaches were significantly inferior in predicting VA risk in this cohort. Of the 13 HCM patients with clinical VAs, the ACCF/AHA model predicted correctly 6 of the patients, while the ESC model predicted correctly 7 patients; the LGE-T1 virtual-heart approach predicted correctly 11 patients. Overall, our LGE-T1 virtual-heart technology exhibited higher accuracy and greater sensitivity and specificity (80.1%, 84.6%, and 76.9%) as compared to the best performing corresponding metrics of the clinical risk assessment methodologies (46.2%, 53.9%, and 46.2% for accuracy, sensitivity, and specificity, respectively).
+
+**Table 3.**
+ Predictive capability of hypertrophic cardiomyopathy (HCM) virtual-heart technology.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Sensitivity</th>
+      <th>Specificity</th>
+      <th>PPV</th>
+      <th>NPV</th>
+      <th>Accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ACCF/AHA risk model</td>
+      <td>46.2</td>
+      <td>46.2</td>
+      <td>46.2</td>
+      <td>46.2</td>
+      <td>46.2</td>
+    </tr>
+    <tr>
+      <td>ESC risk model</td>
+      <td>53.9</td>
+      <td>38.5</td>
+      <td>46.7</td>
+      <td>45.5</td>
+      <td>46.2</td>
+    </tr>
+    <tr>
+      <td>Virtual-heart technology: LGE-T1</td>
+      <td>84.6</td>
+      <td>76.9</td>
+      <td>78.8</td>
+      <td>83.3</td>
+      <td>80.1</td>
+    </tr>
+    <tr>
+      <td>Virtual-heart technology: LGE only</td>
+      <td>69.2</td>
+      <td>76.9</td>
+      <td>75.0</td>
+      <td>71.4</td>
+      <td>73.1</td>
+    </tr>
+  </tbody>
+</table>
+
+_ACCF = American College of Cardiology Foundation, AHA = American Heart Association, ESC = European Society of Cardiology, LGE = late gadolinium enhancement._
 
 For completeness, data at the bottom of Table 3 quantify the predictive capability of the substrate arrhythmogenesis approach when using LGE-only models (9 patients predicted correctly out of 13). Interestingly, even without the additional T1 personalization (i.e. without accounting for T1-based diffuse fibrosis), the LGE-only virtual-heart technology outperformed the clinical risk stratifiers in this HCM cohort. This finding indicates that assessing the arrhythmogenic propensity of the substrate is of paramount importance to HCM VA risk stratification, even when the distribution of diffuse fibrosis may not be accurately represented.
 
@@ -121,7 +315,7 @@ HCM is a genetic disease that progresses throughout the life of the patient, and
 
 The technology developed here charts a new direction in the use of biophysically detailed heart modeling in the prognosis of rhythm disorders. A number of different imaging modalities used in patient assessment such as positron emission tomography or single-photon emission computerized tomography could also be integrated with LGE-CMR to construct hybrid heart computational models. Combining such computational approaches with machine learning techniques (Shade et al., 2020a; Shade et al., 2021) will enable the incorporation of additional patient clinical data, such as genetic information, phenotypic characterization, time series, such as electrocardiography, and fibrotic distribution in the diagnosis and treatment of complex cardiac diseases with adequately sized patient cohorts.
 
-## Study limitations
+### Study limitations
 
 Our study has a small sample size, limited by the fact that a number of LGE-CMR scans of HCM patients had imaging artifact, which prevented us from reconstructing a larger number of virtual hearts. Specifically, aliasing and motion artifacts were main causes for excluding patient data as well as incomplete scans (operator did not scan the entire left ventricular [LV]). Further, there were minor discrepancies of the in-plane resolution between the postcontrast T1 map and the matching LGE-CMR short-axis scan which were mitigated by binning the regions of fibrotic remodeling and electrophysiological changes instead of using a continuum. The resolution of the CMR scan does not allow representation of small structural heterogeneities.
 
@@ -129,21 +323,21 @@ Finally, our virtual-heart technology does not incorporate cardiac mechanics int
 
 ## Materials and methods
 
-## Study overview
+### Study overview
 
 The methodology for assessing VA risk in HCM patients involves creating 3D patient-specific electrophysiological ventricular models with data from LGE-CMR and postcontrast T1 mapping. Each model represents the personalized distribution of both focal fibrosis (scar) and diffuse fibrosis, both of which contribute to the formation of the arrhythmogenic substrate. VA inducibility in each HCM patient’s substrate is probed to understand the mechanisms of arrhythmogenesis, and specifically the contributions to it of the focal and diffuse fibrosis distributions, and to determine VA risk for the patient. Conceptual overview is presented in Figure 1.
 
 The predictive capabilities of the virtual-heart HCM VA risk stratifier were evaluated retrospectively in a proof-of-concept study using data from 26 HCM patients. We chose a cohort that was balanced between patients with VAs based on appropriate ICD firings (13 patients) and without arrhythmic events (the other 13 patients). All patients underwent implantation of clinically indicated ICDs. Virtual-heart predictions of VA risk, executed blindly, were compared to clinical outcomes.
 
-## Study population
+### Study population
 
 The 26 patients were diagnosed with HCM based on the presence of LV wall thickness ≥15 mm on two-dimensional echocardiography in the absence of other ventricular diseases, including hypertrophy of the right ventricle (RV), between 2011 and 2016 at Johns Hopkins Hospital (Chu et al., 2017). All patients were clinically referred for prophylactic ICD implantation, being deemed at high risk for VA based on clinician assessment. T1 maps and LGE-CMR were obtained pre-ICD implantation. Patients were followed for the primary end point of appropriate ICD firing due to VA. As stated above, of the 26 HCM patients, 13 (50%) had known VA episodes based on appropriate ICD firing. Patient clinical characteristics are shown in Table 1.
 
-## Imaging data
+### Imaging data
 
 Patients whose imaging data were retrospectively used in this study had cardiac CMR examinations using a 1.5 T scanner (MAGNETOM Avanto; Siemens Healthcare, Erlangen, Germany) prior to ICD implantation. Short-axis LGE-CMR images with 2-mm in-plane and 8-mm z-axis resolution were acquired as previously described (Chu et al., 2017). In addition, a single mid-ventricular short-axis postcontrast T1 map with 1.5-mm in-plane and 8-mm z-axis resolution was acquired during the same scan 12 min after gadolinium injection using a MOLLI sequence (Chu et al., 2017). All patient imaging data for model generation were obtained under IRB approval.
 
-## Geometrical reconstruction of patients’ hearts from T1 maps and LGE-CMR images
+### Geometrical reconstruction of patients’ hearts from T1 maps and LGE-CMR images
 
 In generating HCM patients’ virtual hearts, a geometrical model of each patient’s heart was first reconstructed using the patient’s LGE-CMR images. The LV myocardium was segmented from short-axis LGE-CMR in the CardioViz3D software using a validated semiautomatic landmark-based method to define the boundaries of the endocardium and epicardium as described in previous virtual-heart projects by our team (Arevalo et al., 2016; Shade et al., 2020b; Cartoski et al., 2019) The RV was not reconstructed due to blood pool artifacts and the lack of hypertrophy and fibrotic substrate in HCM patients. The LGE-CMR was processed in the standard manner for reconstructing LV geometrical models of patients with ischemic (Arevalo et al., 2016) or nonischemic cardiomyopathy (Shade et al., 2020b; Cartoski et al., 2019) which incorporate the distribution of scar and surrounding gray (border) zone. Specifically, as LGE-CMR is an image of relative intensity, the mean of the low signal intensity region in each image was determined, the latter representing myocardium without detectable fibrosis. The SD of that mean value was used to threshold regions of intermediate (>3 SD above the mean) and high (>5 SD above the mean) signal intensity in the LV, representing fibrotic gray zone and focal scar. Figure 1B, top left, shows these thresholds applied to one LGE-CMR image. The same SD thresholds were used for all models.
 
@@ -155,7 +349,7 @@ High-resolution finite-element tetrahedral meshes, with an average resolution of
 
 Fiber orientations, unique to each patient-specific geometry, were applied to each computational mesh on a per-element basis using a rule-based approach (Bayer et al., 2012) validated using human fiber orientations acquired in histological and diffusion-tensor MRI studies. This methodology uses the Laplace–Dirichlet method to define apicobasal and transmural directions for every element in the personalized ventricular meshes followed by bidirectional spherical linear interpolation to assign fiber orientations based on a set of rules.
 
-## Electrophysiological properties in the HCM virtual hearts
+### Electrophysiological properties in the HCM virtual hearts
 
 The personalized 3D virtual hearts of HCM patients incorporated electrical functions from the cellular scale to the whole heart. Electrophysiological remodeling was incorporated in each virtual heart based on the reconstruction of heterogeneously distributed structural remodeling.
 
@@ -163,7 +357,7 @@ At the cellular level, in regions of nonfibrotic myocardium, the human ventricul
 
 At the tissue level, conductivity values along the longitudinal and transverse fiber directions in fibrotic and nonfibrotic myocardium were the same as previously implemented for nonischemic patient heart models (Shade et al., 2020b). Dense fibrosis was considered electrically inexcitable. Once completed, the patient-specific HCM electrophysiological heart models were used to assess the patient’s risk of arrhythmia.
 
-## Assessing VA risk in the personalized HCM computational models
+### Assessing VA risk in the personalized HCM computational models
 
 Full details regarding the simulation of electrical activity in the virtual hearts can be found in previous publications (Plank et al., 2008; Prakosa et al., 2018; Vigmond et al., 2008). Briefly, these were finite element heart models, where the simulation of electrical activity was performed in a monodomain representation of the myocardium using the software package CARP (https://carp.medunigraz.at/). Each virtual heart was paced sequentially from seven uniformly distributed endocardial LV locations using a validated rapid pacing protocol described in detail in previous studies (Prakosa et al., 2018; Arevalo et al., 2016; Cartoski et al., 2019). Similar to our work on VA risk stratifications for patients with ischemic cardiomyopathy (Arevalo et al., 2016), simulation results were analyzed to determine whether reentrant VA was induced in the LV HCM models following rapid pacing from any of the sites. If VA was induced from at least one pacing site in a given personalized HCM virtual heart, the patient was then considered at risk of VA. Simulation results were blind to clinical outcome.
 

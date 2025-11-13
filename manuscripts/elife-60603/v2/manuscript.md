@@ -25,7 +25,7 @@
 
 ## Abstract
 
-Canonical transient receptor potential channels (TRPC) are involved in receptor-operated and/or store-operated Ca 2+ signaling. Inhibition of TRPCs by small molecules was shown to be promising in treating renal diseases. In cells, the channels are regulated by calmodulin (CaM). Molecular details of both CaM and drug binding have remained elusive so far. Here, we report structures of TRPC4 in complex with three pyridazinone-based inhibitors and CaM. The structures reveal that all the inhibitors bind to the same cavity of the voltage-sensing-like domain and allow us to describe how structural changes from the ligand-binding site can be transmitted to the central ion-conducting pore of TRPC4. CaM binds to the rib helix of TRPC4, which results in the ordering of a previously disordered region, fixing the channel in its closed conformation. This represents a novel CaM-induced regulatory mechanism of canonical TRP channels.
+Canonical transient receptor potential channels (TRPC) are involved in receptor-operated and/or store-operated Ca2+ signaling. Inhibition of TRPCs by small molecules was shown to be promising in treating renal diseases. In cells, the channels are regulated by calmodulin (CaM). Molecular details of both CaM and drug binding have remained elusive so far. Here, we report structures of TRPC4 in complex with three pyridazinone-based inhibitors and CaM. The structures reveal that all the inhibitors bind to the same cavity of the voltage-sensing-like domain and allow us to describe how structural changes from the ligand-binding site can be transmitted to the central ion-conducting pore of TRPC4. CaM binds to the rib helix of TRPC4, which results in the ordering of a previously disordered region, fixing the channel in its closed conformation. This represents a novel CaM-induced regulatory mechanism of canonical TRP channels.
 
 ## Introduction
 
@@ -45,7 +45,7 @@ Recently, a novel class of small molecule modulators selective for TRPC4/5 was 
 
 ## Results and discussion
 
-## Cryo-EM structures of full-length TRPC4 in complex with small-molecule inhibitors
+### Cryo-EM structures of full-length TRPC4 in complex with small-molecule inhibitors
 
 We previously reported the high-resolution apo structure of zebrafish TRPC4 in its closed state (Vinayagam et al., 2018). To understand how channel activity is modulated by pharmacological compounds, we examined the complex of TRPC4 with the inhibitors GFB-8438, GFB-9289, and GFB-8749. All three compounds belong to the same novel class of TRPC4/5-selective modulators, which contain a common piperazinone/pyridazinone core.
 
@@ -57,15 +57,39 @@ To determine the electrophysiological effect of the compounds on TRPC4, we perfo
 
 We then formed the TRPC4 complexes with the respective small molecules. We did not add cholesteryl hemisuccinate and exogenous lipid molecules during purification to exclude potential interference with ligand binding. Using cryogenic electron microscopy (cryo-EM) and single particle analysis, we have determined the structures of GFB-8438, GFB-9289 and GFB-8749-bound TRPC4 to an average resolution of 3.6 Å, 3.2 Å, and 3.8 Å respectively (Figure 2, Figure 2—figure supplements 1–3).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig2-v2.jpg)
+
+**Figure 2.:** (A) Side and top view of the cryo-EM map of GFB-8438 inhibitor-bound TRPC4, with each subunit colored differently. Positions of the transmembrane domain (TMD) and intracellular cytosolic domain (ICD) are indicated. (B) Side and top view of the structure of GFB-8438 inhibitor-bound TRPC4, with each subunit colored differently. (C) Location of non-protein densities relative to the atomic model of TRPC4, which is shown in transparent ribbon representation in the side- and top view. Densities corresponding to lipids are depicted in red, GFB-8438 density is shown in purple. (D) Close-up of the ligand-binding pocket, showing the density corresponding to the inhibitor GFB-8438(transparent) with the ligand structure modelled inside. GFB-8438 is enclosed by the four helices S1 to S4, constituting the VSL domain. A rotated view of the ligand-binding pocket is shown in the left panel with important and interacting residues highlighted. GFB-8438 is shown in purple. In the right panel the chemical structure of the TRPC4 inhibitor GFB-8438 is shown, with important and interacting residues of TRPC4 highlighted. Non-carbon atoms are colored according to element, with halogens in green, nitrogen in blue and oxygen in red. (E) and (F) Same in (D) but for inhibitor GFB-9289 and GFB-8749 bound structures of TRPC4 respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The top panel shows a representative digital micrograph area and selected 2-D class averages of inhibitor GFB-8438 bound TRPC4. Scale bars, 50 nm and 10 nm, respectively. The initial refinement density and subsequent densities obtained after 3D classification are shown next to the 2-D class averages and in the bottom panel, respectively. (B) Angular distribution of particles used in the final refinement and Fourier shell correlation curves (FSC) between the two independently refined maps. The dotted lines indicate the 0.143 FSC criterion used for average resolution estimation. (C, D) Same as in (A) and (B), respectively, but for the inhibitor GFB 9289-TRPC4 complex. (E, F) Similar to (A) and (B), respectively representing inhibitor GFB-8749-TRPC4 complex.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Side and top view of the cryo-EM map of GFB-9289 inhibitor-bound TRPC4, with each subunit colored differently. Positions of the transmembrane domain (TMD) and intracellular cytosolic domain (ICD) are indicated. (B) Location of non-protein densities relative to the atomic model of TRPC4, which is shown in transparent ribbon representation in the side- and top view. Densities corresponding to lipids are depicted in red, GFB-9289 density is shown in blue. (C) Same as in (A), but for the cryo-EM map of GFB-8749 inhibitor-bound TRPC4. (D) Same as in (B), except the density for GFB-8749 is shown in green.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Maps of GFB-8438, GFB-9289 and GFB-8749-bound TRPC4, respectively, colored according to the local resolution. Representative regions of the density with the fitted atomic model are shown below the local resolution maps.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Structural alignment of a protomer of the inhibitor GFB-8438 bound TRPC4 with that of TRPC4 in its apo state. The protomer of the TRPC4 apo structure is shown in cartoon representation and colored in light blue while the protomer of the inhibitor bound TRPC4 structure is colored in light red. (B) Same as in (A) for the inhibitor GFB-9289 bound TRPC4. The protomer TRPC4 structure is shown in light green. (C) Similar to (A), but for inhibitor GFB-8749 bound TRPC4 structure colored in cyan. (D) Alignment of the structures of TRPC4 solubilized in amphipols or in the detergent LMNG. The protomer of apo-LMNG structure is shown in dark blue. (E) Alignment of the TRPC4-CaM complex structure with the TRPC4 apo-LMNG structure. The TRPC4-CaM complex is also solubilized in LMNG. The protomer of the TRPC4-CaM structure is shown in purple. (F) Alignment of the TRPC4-inhibitors and TRPC4-CaM structures. Note: The C-terminal helix in the apo structure (PDB ID: 6GIK) has been corrected for domain swapping (See Method section and Figure 5—figure supplement 3B for details).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Cartoon representation of a TRPC4 protomer. Each domain is shown in a different color and labeled accordingly.
+
 Overall, the structures of these complexes are similar to the previously determined TRPC4 apo structure (Figure 2A, Figure 2—figure supplements 2 and 4). The architecture is typical for the canonical TRP channel family with a transmembrane region (TM domain) where the pore region of one protomer domain-swaps with the voltage-sensor-like (VSL) domain of another. The cytosolic domain harboring the ankyrin repeat (AR) embraces the coiled coil helix in the center and the N-terminal ankyrin domain is associated with the TM domain via a helical linker domain. The C-terminal helix connects to the TM domain through the rib and TRP helix which also bridges the TM domain with the helical linker domain (Figure 2—figure supplement 5).
 
-## TRPC4 in complex with inhibitor GFB-8438
+### TRPC4 in complex with inhibitor GFB-8438
 
 In the GFB-8438-bound structure, we found an additional density compared to the apo structure inside a cavity formed by the VSL domain, TRP helix and re-entrant loop (Figure 2D). The shape of the density clearly indicated that it corresponds to the bound inhibitor. The shape and the surrounding chemical environment allowed us to build the model of the inhibitor inside this extra density (Figure 2D). Notably, the inhibitor AM-1473, which belongs to a different class of small molecules, was shown to bind to a similar region in TRPC6 (Bai et al., 2020).
 
 The chemical structure of GFB-8438 consists of three six-membered rings: a pyridazinone ring and trifluoromethyl benzyl group at opposing ends are connected by a central 1,4-disubstituted piperazinone ring (Figure 2D). Its binding to the protein is predominantly mediated by hydrophobic contacts (Figure 2D). The nitrogen, the chlorine, and the oxo group of the pyridazinone ring form hydrogen bonds as well as halogen bonds with N442 of helix S3, Y373 of helix S1 and S488 of the S4 helix, respectively. The hydrophobic part of the pyridazinone ring is stabilized by a π-π stacking interaction with F413 of helix S2 on one side and M441 of helix S3 on the opposite side. The middle piperazinone ring forms a hydrophobic interaction with the Y373 while the oxo-group of the ring is engaged in a hydrogen bond with R491 of the S4 helix. The tri-fluoromethyl benzyl group engages in a hydrophobic interaction with L495 of helix S4, and the fluoride group is involved in a hydrogen bond with H369 of S1 and Y646 from the TRP helix. The residues interacting with the inhibitor are identical between TRPC4 and TRPC5 (Figure 3—figure supplement 1) indicating a similar ligand binding mode in TRPC5, which is supported by their close IC50 values of 0.18 and 0.29 μM for human TRPC5 and human TRPC4, respectively (Yu et al., 2019).
 
-## TRPC4 in complex with inhibitor GFB-9289
+### TRPC4 in complex with inhibitor GFB-9289
 
 As in the GFB-8438 inhibitor-bound structure, we found an extra density inside the VSL domain region of GFB-9289-bound TRPC4 (Figure 2E, Figure 2—figure supplement 2A and B). In addition to the surrounding chemical environment, the high resolution of the map enabled us to unambiguously build the ligand (Figure 2E).
 
@@ -73,7 +97,15 @@ Similar to GFB-8438, the chemical structure of GFB-9289 consists of three six-me
 
 Most interactions of GFB-9289 with the S1-S4 helices are the same as they are for GFB-8438 with small residue movements to accommodate the slightly different structure of GFB-9289 (Figure 3A–C). In the case of GFB-9289, Y373 forms hydrophobic interactions with the cyclohexyl and piperazinone rings. A reconfiguration of the binding interactions to the pyridazinone ring now includes hydrogen bonds to S488 side chain via its oxygen atom, unlike the halogen bond with Y373 observed in the inhibitor complex described above. The reduced size of the cyclohexyl group results in the reorientation of interacting residues. Importantly, Y646 of the TRP helix and H369 of the S2 helix do not interact with the compound and are rotating away from the interface (Figure 3B C). This reduced stabilization of GFB-9289 is the likely cause for the weaker binding in comparison to the GFB-8438 (Figure 1).
 
-## TRPC4 in complex with inhibitor GFB-8749
+![Figure 3.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig3-v2.jpg)
+
+**Figure 3.:** (A) Close-up of ligand-binding pocket in the apo TRPC4 structure, which is enclosed by the four helices S1 to S4 of the voltage sensing-like domain. (B) Superposition of inhibitor-bound (red) and apo (blue) structure of TRPC4. A close-up of the ligand-binding pocket is shown, with important and interacting residues highlighted. The inhibitor GFB-8438 is depicted in red, positions of the surrounding helices S1 to S4 are indicated. (C) and (D) Same as in (B) for the inhibitor GFB-9289 and GFB-8749 -bound TRPC4 structures respectively. The structures of GFB-9289 and GFB-8749 are depicted in green and cyan respectively. In all the inhibitor-bound structures, several residues move away from the center of the pocket to create space for accommodating the respective ligand. (E) Position of the inhibitor AM-1473 within the VSL domain binding pocket of TRPC6 is shown. The surrounding helices S1-S3 are indicated for orientation. (F) Superposition of GFB-8438-bound TRPC4 (red) and AM-1473-bound TRPC6 (purple) channels. The location of the GFB-8438 inhibitor within the VSL domain is shown. In contrast to AM-1473, which is located in the lower part of the binding pocket (see E), GFB-8438 additionally interacts with the upper region of the pocket. The depicted residues in this region contribute to the selectivity of GFB-8438 for TRP4/5 channels. (G) Comparison of small-molecule modulators of the TRP channel family that target the ligand-binding pocket enclosed by the helices of the VSL domain (VSLD). Small molecules are depicted as space-filled spheres with inhibitors shown in red. Residues interacting with the ligand are shown in stick representation. Pore helices are colored in blue, the TRP helix in orange.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The highlighted and marked residues denote the conserved residues in TRPC4 and TRPC5 interacting with the inhibitor GFB-8438. The residues highlighted in pink color shows the critical difference between TRPC4/5 and TRPC6 for the inhibitor binding site.
+
+### TRPC4 in complex with inhibitor GFB-8749
 
 Similar to the GFB-8438 and GFB-9289 inhibitor-bound structure, an extra density was observed inside the VSL domain region of GFB-8749-bound TRPC4 (Figure 2F, Figure 2—figure supplement 2C and D). The shape, the surrounding chemical environment along with structural similarity of the ligand with GFB-8438 and GFB-9289 guided us to unambiguously build the ligand inside the density (Figure 2F).
 
@@ -81,7 +113,7 @@ The structure of GFB-8749 shares a common scaffold with GFB-8438 and GFB-9289, c
 
 Given the similar structure of all the three compounds, it is intriguing to suggest that all pyridazinone-based compounds target the VSL domain of TRPC4/5 to modulate the activity of the channel.
 
-## Structural rearrangements in the ligand-binding pocket
+### Structural rearrangements in the ligand-binding pocket
 
 To understand the structural rearrangement upon ligand binding, we compared the ligand-bound structures with the structure of TRPC4 in the apo state (Vinayagam et al., 2018; Figure 3A–D). In the apo structure, some of the residues of the ligand binding pocket interact with each other via hydrophobic (Y373, F413, M441) and hydrophilic interactions (R491 and E438) (Figure 3A). Upon ligand binding, these residues move and reshape the pocket to accommodate the ligands, indicating an induced-fit mechanism or conformational selection (Hammes et al., 2009; Figure 3B–D). Similarly, the side chains of L495 and H369 rotate, move or flip to accommodate and stabilize the interaction with the cyclohexyl group or the benzyl group (Figure 3B–D). These ligand-specific arrangements of the ligand binding pocket highlight its plasticity.
 
@@ -91,9 +123,21 @@ Interestingly, we have observed that the inhibitors GFB-8438 and GFB-8749, which
 
 Inhibitors were also shown to bind to the VSL domain in other TRP family members (Bai et al., 2020; Diver et al., 2019; Singh et al., 2018b), indicating that this domain acts in general as a regulatory region in TRP channels (Figure 3G). Interestingly, besides GFB-9289, all VSL-bound inhibitors not only interact with the VSL domain but also with the TRP helix.
 
-## Ligand-induced changes in TRPC4
+### Ligand-induced changes in TRPC4
 
 Besides the structural rearrangements in the ligand binding pockets, we did not observe major ligand-induced conformational changes in TRPC4. Similar to the apo structure, the channel is closed at the lower gate in all structures of the inhibitor-bound TRPC4. The lower gate shows a minimal constriction defined by residue N621 with a van der Waals surface diameter of approximately 0.7 Å, which is too narrow for Ca2+ to pass through (Figure 4A–B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig4-v2.jpg)
+
+**Figure 4.:** (A) Side view of the pore-forming region of TRPC4 in the apo- (blue), GFB-8438 (red) GFB-9289 (green) and GFB-8749 (cyan-blue) inhibitor-bound structures. Only the two opposing subunits of the tetrameric channel are shown as ribbon representation for clarity. The density at comparable thresholds corresponding to the selectivity filter (light blue) and the lower gate (pink) is shown. A central density is observed in all maps, except the apo structure. (B) The calculated pore-radii corresponding to the four TRPC structures in (A) are depicted. The color code is also identical to (A). The positions of important residues, constituting the selectivity filter and the lower gate, are indicated on the right. (C) Close-up of the Ca2+-binding site in the four TRPC4 structures, located in direct vicinity to the ligand binding pocket of the VSL domain. Position of ligands and coordinating residues are highlighted. Color code of TRPC4 structures is as in (A).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Phosphatidic acid (pink) that binds at the interface between two subunits near the pore region is shown in stick representation along with the corresponding density. The interacting residues from the S4, S5 and S6 helices are also shown in stick representation. The protein residues from different protomers are colored differently. The helices are shown in cartoon representation with high transparency.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Close-up view of the Ca2+-binding site in apo and ligand-bound TRPC4 determined in amphipols. The coordinating residues in the Ca2+ ion binding site and the modelled Ca2+ ion are shown in stick and sphere representation along with their densities. The oxygen atom of the ligand molecules is situated close to the bound Ca2+-ion (refer) Figure 4C (B) Close-up view of the Ca2+-binding site in apo and TRPC4-CaM complex determined in presence of lauryl maltose neopentyl glycol (LMNG). The external addition of Ca2+ ion during the TRPC4-CaM complex preparation reflects its strong density. The different structural forms shown in (A) and (B) are color coded and named accordingly.
 
 We found small differences in the selectivity filter. Surprisingly, the backbone residues F576 and G577 forming the TRPC4 selectivity filter show a slightly wider radius in the ligand-bound structures compared to the apo structure. This could be due to a density in the selectivity filter which we did not observe in the apo structure, indicating that a cation, presumably Ca2+ or Na+, resides in the filter, while the filter is empty in the apo form (Figure 4A).
 
@@ -103,7 +147,7 @@ We identified density for a putative cation in the Ca2+ binding site of the VSL 
 
 TRPC5 and TRPC4 activation has been reported to be Ca2+-dependent (Plant and Schaefer, 2003). Similar to our observation here, the binding of Ca2+ has been described for TRPM4 and TRMP8, both of which are also known to be activated by Ca2+. The structures of these channels are in a closed conformation representing the desensitized state (Autzen et al., 2018; Diver et al., 2019). Considering this, the molecular role of the VSL domain-bound calcium ion in activation or desensitization of the TRPC4 channel is a compelling topic for further investigation.
 
-## Structure of TRPC4 in complex with CaM
+### Structure of TRPC4 in complex with CaM
 
 CaM has been shown to bind and regulate the TRPC4 channel (Zhu, 2005; Tang et al., 2001). At high Ca2+ concentrations in the cytosol, CaM binds in its Ca2+-bound state to TRPC4 and inhibits Ca2+ entry. At low Ca2+ concentrations, CaM changes its conformation and dissociates from the channel. The store-operated Ca2+ entry pathway hypothesis (Tang et al., 2001) further proposes that CaM binding to the channel at resting state prevents TRPC4 from being spontaneously activated by IP3 receptors. When Ca2+ levels in the endoplasmic reticulum (ER) - but not in the cytosol - drop, the affinity of the IP3 receptor to TRPC4 increases and CaM is displaced through a conformational coupling mechanism (Rosado et al., 2015; Tang et al., 2001). This activates the TRP channel. To further understand the mechanistic process of CaM inhibition, we set out to determine the structure of the TRPC4-CaM complex.
 
@@ -111,11 +155,39 @@ We first performed a pull-down experiment using a CaM Sepharose column at high C
 
 The CaM complex sample yielded a 3.3 Å map with applied C4 symmetry (Figure 5—figure supplement 2). We observed additional density surrounding the rib-helix termini protruding from the protein core, although the resolution in this region was lower than at the core of the protein (Figure 5—figure supplement 3A). Besides its localization at the periphery we suspected that an incomplete saturation of TRPC4 by CaM could be the reason for the lower local resolution. Hence, we performed 3D sorting without applied symmetry to resolve the subpopulations with different binding stoichiometries. 13% of the TRPC4 channels had one CaM-bound, 35% and 31% had two or three bound, respectively and only 20% were fully saturated (Figure 5A). In addition, some of the densities corresponding to CaM were less defined than others. The classes with clear CaM densities were then rotated and properly aligned (Figure 5—figure supplement 2). The final local resolution of CaM improved to a resolution of 4–5 Å (Figure 5—figure supplement 3A). We could clearly identify four helices that correspond to the helices of one lobe of CaM and flexibly fitted this part of the protein (Figure 5B). The other CaM lobe was not resolved, indicating that this part of the protein is more flexible in this complex.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig5-v2.jpg)
+
+**Figure 5.:** (A) One to four CaM molecules are bound to the CIRB binding sites of the tetrameric TRPC4 channel. 13% of particles are decorated with one (yellow), 35% with two (lilac), 31% with three (grey) and 20% with four CaM molecules (turquoise). (B) Side view of the CaM-bound TRPC4 density map (transparent) with the corresponding atomic model fitted inside, in which each protomer is colored differently. Position of the horizontal helix is indicated by black arrowhead. The bottom view of the atomic model is shown in the right panel. A schematic representation for both views is provided next to the atomic models. CaM is colored in orange. (C) Close-up of the indicated region in (B), showing the CaM binding region (left panel). CaM is colored in orange, TRPC4 in green. Positions of the horizontal helix and loop region 273–277 are indicated by black and blue arrowhead, respectively. Important and the predicted interacting residues of TRPC4 and CaM based on our model are highlighted in the right panel. (D) TRPC4 (cartoon representation) and CaM (surface representation) are colored according to hydrophobicity. There is a central hydrophobic cavity in CaM that is surrounded by hydrophilic residues in its periphery. The complementary binding region of TRPC matches this profile. (E) The C-terminal helix (red), the rib-helix (red-orange), the horizontal helix (purple), the TRP helix (orange) and the pore-forming helices (blue) of a single TRPC4 promoter are shown before (left panel) and after CaM binding (right panel). CaM binding stabilizes the previously disordered region connecting the rib-helix and horizontal/TRP-helix. LMNG – lauryl maltose neopentyl glycol.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) SDS gel electrophoresis analysis of the TRPC4 pull down experiment performed with a CaM Sepharose column. Lane 1 - protein size marker, lane 2 - TRPC4 input, lane 3 - flow through, lane 4 - wash, remaining lanes - elution fractions. (B) Gel filtration analysis of the TRPC4-CaM complex. The peak fraction containing the TRPC4-CaM complex is indicated by a star were further analyzed by SDS gel electrophoresis (right panel).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) The top left panels show a representative digital micrograph area and selected class averages of the TRPC4-CaM complex. Scale bars, 50 nm and 10 nm, respectively. The initial refinement densities obtained without symmetry (red) and with C4 symmetry (blue) are shown in the top right panel. The middle panel shows densities of different subclasses obtained with 3-D classification after symmetry expansion. Four subclasses were selected, rotated as indicated and used for the final refinement after removal of duplicates. (B) Angular distribution of particles used in the final refinement and Fourier shell correlation curves (FSC) between the two independently refined maps. The dotted lines indicate the 0.143 FSC criterion used for average resolution estimation.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A, B) Maps of TRPC4-CaM and TRPC4-apo (LMNG), respectively, colored according to the local resolution. Representative regions of the density with the fitted atomic model are shown below the local resolution maps.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) The top left panels show a representative micrograph and class averages of TRPC4 solubilized in LMNG. Scale bars, 50 nm and 10 nm, respectively. The density resulting from the initial 3D refinement is shown in the top right panel. (B) Angular distribution of particles used in the final refinement and Fourier shell correlation curves (FSC) between the two independently refined maps. The dotted lines indicate the 0.143 FSC criterion used for average resolution estimation. (C) The final map, filtered using LAFTER, shows a clear density corresponding to a horizontal helix (indicated with an arrowhead) (left panel). The corresponding structure in cartoon representation with the residues of the horizontal helix shown in golden yellow (middle panel). Zoom-in view of the horizontal helix (right panel).
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Side view of the pore-forming region of TRPC4 in the apo (LMNG)- (blue), and CaM-bound (purple) structures. Only the two opposing subunits of the tetrameric channel are shown as ribbon representation for clarity. The density at comparable thresholds corresponding to the selectivity filter (light blue) and the lower gate (pink) is shown. Note, only in the TRPC4-CaM complex structure an additional density occupies the center of the selectivity filter. (B) The calculated pore radii corresponding to the structures in (A) are depicted. The color code is identical to (A). The positions of important residues, constituting the selectivity filter and the lower gate, are indicated on the right. (C) Close-up view of the Ca2+-binding site in the VSL domain of TRPC4-apo (LMNG) (left) and TRPC4-CaM (right). Ca2+ ion is shown as green sphere and interacting residues are highlighted. Color code of TRPC4 structures is as in (A).
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/60603/elife-60603-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** (A) SDS gel electrophoresis analysis of TRPC4 binding to MBP-fused N- and C-lobes of CaM after a pull-down assay using amylose resin. Lane M - protein size marker, lane 1 - TRPC4 input, lane 2 - flow through, lane 3 - wash and lane 4 - elution fractions of corresponding N- and C-lobes of CaM. (B) Superposition of the N- (light blue) and C-lobe (wheat) of CaM-bound to TRPC4 (light green). The CaM residues predicted to interact with TRPC4 are shown in stick representation with the labels colored according to the lobe. (C). Superposition of the N- and C-lobe of CaM-bound to TRPC4. The CaM residues predicted to interact with TRPC4 are colored based on the sequence conservation.
+
 Based on the flexibly fitted atomic model we observed that CaM not only binds to the tip of the rib helix (residues 691–703) and the following loop (residues 677–690) that connects the rib helix with a newly identified helix (residues 666–676), but it also interacts with the adjoining loop region comprising residues 273–277 (Figure 5C). The core region of CaM binds to TRPC4 by forming hydrophobic interactions, while the peripheral residues of CaM are stabilized by hydrophilic interactions (Figure 5D) that are typically observed in CaM-protein/peptide complexes (Villalobo et al., 2018).
 
 The interacting residues of TRPC4 partially overlap with a peptide corresponding to residues 695–724 that have been previously shown to interact with CaM (Tang et al., 2001). Since our structure revealed that CaM only interacts with residues 688–703, we conclude that the residues 695–703 are sufficient for CaM binding in vitro. Residues 704–725 of the rib helix interact with the protein core and are inaccessible for interaction with CaM.
 
-## CaM-induced changes in TRPC4
+### CaM-induced changes in TRPC4
 
 To be able to identify CaM-induced structural effects, we also solved the structure of TRPC4 in its apo state under the same conditions as for the TRPC4-CaM complex without the addition of external lipids. The apo structure of TRPC4 in LMNG reached a resolution of 2.85 Å, allowing us to build an atomic model with high accuracy (Figure 5—figure supplements 3B, 4). The overall structure is similar to the previously reported amphipol-exchanged apo structure of TRPC4 in the closed state (Vinayagam et al., 2018; Figure 2—figure supplement 4). However, in both the apo and CaM-bound structure, we observed for the first time an additional density corresponding to a horizontal helix located at the transmembrane-cytoplasmic interface outside the transmembrane core (residues 666–676) (Figure 5B–D, Figure 5—figure supplement 4). The hydrophobic residues of this helix face the transmembrane helix and the inner lipid leaflet while the hydrophilic residues project into the cytoplasm, giving the helix an amphipathic nature.
 
@@ -129,7 +201,7 @@ Importantly, this mechanism of CaM-mediated regulation completely differs from t
 
 **Figure 6.:** (A) Calmodulin (CaM) interacts with the rib helix of TRPC4. Side (upper panel) and bottom (lower panel) view of the CaM-bound TRPC4 is shown, with TRPC4 structure in cartoon representation with moderate transparency and CaM in space filling sphere representation. Only a single lobe of the double-lobed CaM molecule is resolved in the structure. This indicates that the second lobe is rather flexible. Up to four binding sites are accessible for CaM (only one binding event is shown here for clarity). (B) Same as in (A) for TRPV5. The two-lobed CaM binds into the central cytoplasmic cavity of TRPV5. While four potential binding sites are available in TRPV5, only a single CaM molecule can bind due to steric hindrance. Unlike TRPC4, in which the C-terminal helices block the access to the cytoplasmic cavity, CaM can enter into the internal cavity of TRPV5 from the cytoplasm. (C) Same as in (A) for TRPV6. Similar to TRPV5, only a single CaM molecule binds to a region within the cytoplasmic cavity of TRPV6, indicating that this binding mode is conserved among TRPV channels.
 
-## Model for TRPC4 modulation
+### Model for TRPC4 modulation
 
 In this study we determined the structure of TRPC4 in complex with the pyridazinone-based inhibitors GFB-8438, GFB-9289, and GFB-8749 as well as with its endogenous regulator CaM. Analysis of these structures allows us to propose a model describing the molecular mechanism of modulation and regulation of TRPC4 activity (Figure 7A). In our model, the channel switches between its closed and open conformation as was proposed for many other channels. Upon binding of an activator, the channel opens transiently and allows the passage of Ca2+. Binding of inhibitors locks the channel in its closed conformation and possibly results in a dissociation of the activator. In our case, all of the three inhibitors bind to the same position, namely the VSL domain which is connected to the gate by the TRP helix. Thus, subtle conformational changes in this sensitive regulatory domain appear to be sufficient to transfer the signal from the periphery to the center of the channel to modulate its activity. High concentrations of the activator can reverse this effect (Figure 1).
 
@@ -143,39 +215,301 @@ Thus, TRPC4 contains several molecular switch regions that can be modulated by t
 
 ## Materials and methods
 
-## Protein purification and expression
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (HEK293 GnTI-)</td>
+      <td>HEK293 GnTI-</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_A785</td>
+      <td>CRL-3022</td>
+    </tr>
+    <tr>
+      <td>Cell line (HEK293T)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_LF41</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Sf9)</td>
+      <td>Sf9</td>
+      <td>Oxford Expression Technologies Ltd (UK)</td>
+      <td>RRID:CVCL_0549</td>
+      <td>Cat.No.600100</td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>TRPC4DR</td>
+      <td>GenScript NCBI Reference sequence: NM_001289881</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3.1+TRPC4ZF</td>
+      <td>Vinayagam et al., 2018 PMID:29717981</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEG BacMam</td>
+      <td>Eric Gouaux Lab PMID:25299155</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEG BacMam +TRPC4 ZF (See methods section for details)</td>
+      <td>Vinayagam et al., 2018 PMID:29717981</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEMHE 22</td>
+      <td>Promega</td>
+      <td>P2151</td>
+      <td>pGEMHE 22 is a derivative of pGEM3z</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(-)-Englerin A</td>
+      <td>Carl Roth</td>
+      <td>Cat.No.6492.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPHIRE software package</td>
+      <td>Moriya et al., 2017 PMID:28570515</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>crYOLO</td>
+      <td>Wagner et al., 2019 PMID:31240256</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 2020 pro</td>
+      <td>OriginLab Corporation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TranSPHIRE</td>
+      <td>Stabrin et al., 2020 doi:https://doi.org/10.1101/2020.06.16.155275</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera</td>
+      <td>Pettersen et al., 2004 PMID:15264254</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein purification and expression
 
 Zebrafish TRPC4DR was prepared as described previously (Vinayagam et al., 2018). In brief, residues 2–915 of Danio rerio TRPC4 were cloned into the pEG BacMam vector (Goehring et al., 2014), with a C-terminal HRV-3C cleavage site followed by EGFP and a twin StrepII-tag. An 8x His-tag with a TEV cleavage site was positioned at the N-terminus. Baculovirus was produced as described previously (Goehring et al., 2014). P2 baculovirus produced in Sf9 cells was added to HEK293 GnTI- cells (mycoplasma test negative, ATCC #CRL-3022) and grown in suspension in FreeStyle medium (GIBCO-Life Technologies) supplemented with 2% FBS at 37°C and 8% CO2. After 8 hr of transduction 5 mM sodium butyrate was added to enhance protein expression and allowed the cells to grow for an additional 40 hr at 30°C.
 
 48 hr post transduction, cells were harvested by centrifugation at 1,500 g for 10 mins and washed in phosphate-buffered saline (PBS) pH 7.4. The cell pellet was resuspended and cells were lysed in an ice-cooled microfluidizer in buffer A (PBS buffer pH 7.4, 1 mM Tris(2-carboxyethyl) phosphine (TCEP), 10% glycerol) in the presence of protease inhibitors (0.2 mM AEBSF, 10 µM leupeptin). 50 ml buffer A was used per pellet obtained from 800 ml of HEK293 cell culture. The lysate was centrifuged at 5,000 g for 5 min to remove cell debris, followed by a 15,000 g centrifugation for 10 mins to remove sub-cellular organelles. The membranes were collected by ultracentrifugation using a Beckman Coulter Type 70 Ti rotor at 40,000 rpm. The membranes were then mechanically homogenized in buffer B (100 mM Tris-HCl pH 8, 150 mM NaCl, 1 mM TCEP, 10% glycerol) containing protease inhibitors, flash-frozen and stored at −80°C until further purification.
 
-## Purification of TRPC4 in DDM followed by amphipol exchange
+### Purification of TRPC4 in DDM followed by amphipol exchange
 
 Membranes were solubilized for 2 hr in buffer B supplemented with 1% dodecyl maltoside (Anatrace #D310). Insoluble material was removed by ultracentrifugation for 1 hr in a Beckman Coulter Type 70 Ti rotor at 40,000 rpm. The soluble membrane fraction was diluted 2-fold with buffer B and applied to a column packed with Strep-Tactin beads (IBA Lifesciences) by gravity flow (6–10 s/drop) at 4°C. Next, the resin was washed with ten column volumes of buffer B supplemented with 0.04% DDM solution containing protease inhibitors. Bound protein was eluted seven times with 0.5 column volumes of buffer A with 3 mM d-Desthiobiotin (Sigma-Aldrich), 0.026% DDM and 0.1 mM AEBSF protease inhibitor. The C-terminal EGFP tag was removed by incubating the eluted fractions with HRV-3C protease overnight. The next day, the detergent was replaced with amphipol A8-35 (Anatrace) 4:1 (w/w) to the cleaved protein and incubating for 6 hr at 4°C. Detergent removal was performed by adding Biobeads SM2 (BioRad) pre-equilibrated in PBS to the protein solution at 10 mg/ml final concentration for 1 hr, then replaced with fresh Biobeads at 10 mg/ml for overnight incubation at 4°C. Biobeads were removed using a Poly-Prep column (BioRad) and the solution was centrifuged at 20,000 g for 10 min to remove any precipitate. The protein was concentrated with a 100 MWCO Amicon centrifugal filter unit (Millipore) and purified by size exclusion chromatography using a Superose 6 Increase 10/300 GL column (GE Healthcare) equilibrated in buffer C (PBS pH 7.4, 1 mM TCEP). The peak corresponding to tetrameric TRPC4DR in amphipols was collected and analyzed initially with negative stain EM and then by cryo-EM.
 
-## TRPC4 pulldown assay using CaM sepharose beads
+### TRPC4 pulldown assay using CaM sepharose beads
 
 The assay was performed with manufacturer instructions using CaM as bait to bind TRPC4. Briefly, 1 ml of CaM sepharose beads were loaded into the Biorad Ployprep column and washed with 10 ml of binding buffer containing 20 mM Tris-HCl (pH 7.5), 150 mM NaCl, 2 mM CaCl2. TRPC4 prepared in LMNG (described below) was loaded onto the column by gravity flow (10 s/drop) at 4°C. After loading, the column was washed with 10 ml of binding buffer. Finally, TRPC4 was eluted with 5 ml of elution buffer containing 20 mM Tris-HCl (pH 7.5), 150 mM NaCl, 2 mM EGTA (Figure 5—figure supplement 1).
 
-## Purification of CaM
+### Purification of CaM
 
 Mouse CaM was subcloned into a pET19 vector and expressed in BL21-CodonPlus (DE3) -RIPL cells. Cells were grown in LB broth with 125 µg/ml ampicillin at 37°C until an OD600 of 0.4 was reached. Subsequently, CaM expression was induced with 1 mM IPTG and grown overnight at 20°C. Cells were harvested by centrifugation and resuspended in 50 ml (per liter of culture) of lysis buffer containing 20 mM Tris-HCl (pH 8.0), 150 mM NaCl and 5 mM imidazole. The cells were lysed in an ice-cooled microfluidizer. The soluble fraction obtained after centrifugation was loaded onto an 8 ml Talon resin column pre-equilibrated with lysis buffer. The resin was washed with 100 ml of lysis buffer containing 20 mM Tris-HCl (pH 8.0), 150 mM NaCl and 20 mM imidazole before eluting in 5 × 5 ml fractions using 25 ml of lysis buffer supplemented with 20 mM Tris-HCl (pH 8.0), 150 mM NaCl and 250 mM imidazole. CaM was further purified by size exclusion chromatography using a Superose 12 10/300 gel filtration column and stored at −80°C in a storage buffer consisting of 20 mM Tris-HCl (pH 8.0), 150 mM NaCl, 10% glycerol.
 
 To check the interaction of N- and C-lobe of CaM with TRPC4, residues 1–80 and 81–149 of CaM (forming the N-lobe and C-lobe respectively) were individually cloned into a pMAL vector as an MBP-fusion construct along with N-terminal His-tag. The clones were expressed in BL21-CodonPlus (DE3)-RIL cells. The cells were grown in LB broth with 125 µg/ml ampicillin and 34 µg/ml chloramphenicol at 37°C until an OD600 of 0.6 was reached. Then, CaM expression was induced with 0.2 mM IPTG and grown overnight at 19°C. Cells were harvested by centrifugation and resuspended in 100 ml (per 5 liter of culture) of lysis buffer containing 50 mM Tris-HCl (pH 8.0), 150 mM NaCl and 10% glycerol with the addition of Roche protease inhibitor cocktail, 2 mM β-mercaptoethanol and 0.1% NP40. The soluble fraction obtained after centrifugation was loaded onto 2 × 5 ml Ni2+ HisTrap HP columns pre-equilibrated with lysis buffer. Next the column was washed with wash buffer containing 50 mM Tris-HCl (pH 8.0), 500 mM NaCl, 10% glycerol, 10 mM imidazole 2 mM β-mercaptoethanol. Finally, the protein was eluted in a gradient fashion using lysis buffer supplemented with 500 mM imidazole. The peak eluted fractions were further concentrated and injected into a Superdex 75 16/60 gel filtration column. The protein purified after gel filtration was used for a pulldown experiment to screen for TRPC4 interaction.
 
-## TRPC4 pull-down assay using CaM N- and C-lobe MBP-fusion constructs
+### TRPC4 pull-down assay using CaM N- and C-lobe MBP-fusion constructs
 
 The assay was done using amylose resin using the N- and C-lobe of CaM as a bait to pulldown TRPC4. 100 µl of amylose resin was pipetted into a mini spin column. The resin was washed with 500 µl of equilibration buffer containing 50 mM Tris-HCl (pH 8.0), 150 mM NaCl, 100 µM CaCl2, 0.003% LMNG. Affinity purified TRPC4 at concentration of 0.2 mg/ml was mixed in a separate tube with 1.5 mg/ml N- and C-lobe CaM fused to MBP, and incubated for 30 min at 4°C. 200 µl of the TRPC4-CaM N- and C-lobe complexes were applied to the equilibrated resin in different tubes. The columns were washed with 500 µl equilibration buffer and eluted with 100 µl of equilibration buffer supplemented with 10 mM maltose. 20 µl aliquots were taken from each step and analyzed using SDS-PAGE for TRPC4 interaction with the separate CaM N- and C-lobe (Figure 5—figure supplement 6).
 
-## Preparation of the TRPC4-CaM complex
+### Preparation of the TRPC4-CaM complex
 
 TRPC4 membranes were solubilized for 2 hr in buffer B supplemented with 1% LMNG (Anatrace #NG310). Then a protocol similar to that used for DDM purification was followed, except that DDM in buffer B was replaced by LMNG with the addition of 10 µM CaM and 10 mM calcium chloride. The LMNG detergent concentration was maintained at five times the CMC for washing buffer and three times CMC for elution. The C-terminal EGFP tag was removed by incubating the eluted fractions with HRV-3C protease overnight. The complex was further purified by size exclusion chromatography using a Superose 6 Increase 10/300 GL column (GE Healthcare) equilibrated in buffer containing 20 mM Tris-HCl (pH 8.0), 150 mM NaCl, 1 mM TCEP, 10 mM calcium chloride and 5% glycerol. Complex formation was assessed by running SDS-PAGE of the peak fraction known to contain TRPC4 (Figure 5—figure supplement 1). The gel analysis indicated sub-saturation of the complex. Hence, 10 µM CaM was added to saturate the complex before concentrating it to 0.3 mg/ml for plunging. The preparation of TRPC4 -apo in LMNG was similar to the TRPC4-CaM complex except that CaM and CaCl2 were not added.
 
-## Cryo-EM grid preparation and screening
+### Cryo-EM grid preparation and screening
 
 The sample quality and integrity were evaluated by negative stain electron microscopy prior to cryo-EM grid preparation and image acquisition as described earlier (Vinayagam et al., 2018). Typically, 4 µl of TRPC4DR at a sample concentration of 0.02 mg/ml was applied onto a freshly glow-discharged copper grid with an additional thin carbon layer. After incubation for 45 s, the sample was blotted with Whatman no. 4 filter paper and stained with 0.75% uranyl formate. The images were recorded manually with a JEOL JEM-1400 TEM operated at an acceleration voltage of 120 kV, and a 4k F416 CMOS detector (TVIPS). For cryo-EM the ligands dissolved in DMSO were added to a final concentration of 100 µM (final DMSO concentration 1%) to TRPC4 exchanged in amphipols and incubated for 30 min before plunging using a Vitrobot cryo-plunger (FEI Thermo Fisher) operated at 4°C and 100% humidity. Details of the plunging conditions are summarized in Table 1.
 
-## Cryo-EM data acquisition and image processing
+**Table 1.**
+ Plunging and imaging conditions used for cryo-EM analysis of TRPC4 bound with ligands.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">1.1 Plunging conditions</th>
+    </tr>
+    <tr>
+      <th>Sample</th>
+      <th>Grid type</th>
+      <th>Volume</th>
+      <th>Concentration</th>
+      <th>Blotting time</th>
+      <th>Blotting force</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TRPC4-8438</td>
+      <td>C-Flat 2/1</td>
+      <td>3 µl</td>
+      <td>0.3 mg/ml</td>
+      <td>3 s</td>
+      <td>−10</td>
+    </tr>
+    <tr>
+      <td>TRPC4-9289</td>
+      <td>C-Flat 1.2/1.3</td>
+      <td>3 µl</td>
+      <td>0.35 mg/ml</td>
+      <td>3 s</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TRPC4-8749</td>
+      <td>C-Flat 1.2/1.3</td>
+      <td>3 ul</td>
+      <td>0.35 mg/ml</td>
+      <td>3s</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TRPC4-cam</td>
+      <td>QF 2/1</td>
+      <td>3 µl</td>
+      <td>0.3 mg/ml</td>
+      <td>3 s</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TRPC4-apo(LMNG)</td>
+      <td>C-Flat 1.2/1.3</td>
+      <td>3 µl</td>
+      <td>0.4 mg/ml</td>
+      <td>3 s</td>
+      <td>−3</td>
+    </tr>
+    <tr>
+      <td colspan="6">1.2 Imaging Conditions</td>
+    </tr>
+    <tr>
+      <td>Microscopy</td>
+      <td>TRPC4-apo</td>
+      <td>TRPC4-CaM</td>
+      <td>GFB-9289</td>
+      <td>GFB-8438</td>
+      <td colspan="2">GFB-8749</td>
+    </tr>
+    <tr>
+      <td>Microscope</td>
+      <td colspan="2">Titan Krios (X-FEG, Cs-corrected)</td>
+      <td colspan="4">Titan Krios (X-FEG, Cs 2.7 mm)</td>
+    </tr>
+    <tr>
+      <td>Voltage [kV]</td>
+      <td colspan="2">300</td>
+      <td colspan="4">300</td>
+    </tr>
+    <tr>
+      <td>Defocus range [µm]</td>
+      <td>0.65 to 3.02</td>
+      <td>0.38 to 3.48</td>
+      <td>0.68 to 3.64</td>
+      <td>0.35 to 3.52</td>
+      <td colspan="2">0.86 to 3.82</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td>K2 counting</td>
+      <td>K2 counting</td>
+      <td>K3 Super res.</td>
+      <td>K3 Super res.</td>
+      <td colspan="2">K3 Super res.</td>
+    </tr>
+    <tr>
+      <td>Pixel size [Å]</td>
+      <td>0.85</td>
+      <td>0.85</td>
+      <td>0.455 /0.91a</td>
+      <td>0.455/0.91a.</td>
+      <td colspan="2">0.455 /0.91a</td>
+    </tr>
+    <tr>
+      <td>Total electron dose [e/Å2]</td>
+      <td>88.7</td>
+      <td>88.2</td>
+      <td>65.45</td>
+      <td>66.58</td>
+      <td colspan="2">72</td>
+    </tr>
+    <tr>
+      <td>Exposure time [s]</td>
+      <td>10</td>
+      <td>10</td>
+      <td>3</td>
+      <td>3</td>
+      <td colspan="2">3</td>
+    </tr>
+    <tr>
+      <td>Frames per movie</td>
+      <td>50</td>
+      <td>80</td>
+      <td>60</td>
+      <td>60</td>
+      <td colspan="2">60</td>
+    </tr>
+    <tr>
+      <td>Number of images</td>
+      <td>2755</td>
+      <td>6937</td>
+      <td>2369</td>
+      <td>4444</td>
+      <td colspan="2">1260</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>(3079)</td>
+      <td>(7972)</td>
+      <td>(2970)</td>
+      <td>(4676)</td>
+      <td>(1290)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cryo-EM data acquisition and image processing
 
 Data sets were collected using EPU software on Titan Krios microscopes (FEI Thermo Fisher) operated at 300 kV and equipped with an X-FEG. For the dataset of the GFB-9289-bound TRPC4 the aberration-free image shift (AFIS) feature of EPU was used to speed up the data-collection process. Equally dosed frames were collected using a K2 Summit (Gatan) or K3 (Gatan) direct electron detectors in super-resolution mode in combination with a GIF quantum-energy filter set to a filter width of 20 eV. The details of all four data sets including pixel size, electron dose, exposure time, number of frames and defocus range are summarized in Table 1. Data collection was monitored live using TranSPHIRE (Stabrin et al., 2020), allowing for direct adjustments of data acquisition settings when necessary, i.e. defocus range or astigmatism. The total number of images collected is summarized in Table 1. Preprocessing included drift correction with MotionCor2 (Zheng et al., 2017b), creating aligned full-dose and dose-weighted micrographs. The super-resolution images were binned twice after motion correction to speed up further processing steps. CTF estimation was also performed within TranSPHIRE using CTFFIND 4.1.10 (Rohou and Grigorieff, 2015) on non-dose-weighted aligned micrographs. Unaligned frame averages were manually inspected and removed based on ice and image quality, resulting in a removal of 5–20% of the data sets (see Table 1 for details). Following processing steps were performed using motion-corrected dose-weighted sums in the SPHIRE software package unless otherwise indicated (Moriya et al., 2017).
 
@@ -185,11 +519,185 @@ In case of GFB-9289 bound to TRPC4 bound structure, the refinement did not impro
 
 For TRPC4 bound with CaM, 3D classification using Sort3d in SPHIRE was performed to identify subpopulations with different stoichiometries. To further improve the resolution of the CaM region, we used symmetry expansion by quadrupling the 227,693 particles to reflect the C4 symmetry of the tetramer. Thus, the resulting 910,772 particles were used for Sort3d with a focused mask comprising the four CaM regions without imposing symmetry. Ten different classes obtained with Sort3d showed different stoichiometries (TRPC4 monomer:CaM) as shown in Figure 5—figure supplement 2. Four classes showing well resolved helices for CaM were selected and oriented in the same direction in order to boost the density at single CaM site (Figure 5—figure supplement 2). This rotation was achieved by applying a rotation of (±90°, 180°, 270°) to the projection parameters of the classes using a customized script. After rotation, duplicates were removed, reducing the number of particles to 160,829. These particles were further polished and CTF-refined in RELION. The polished particles were finally refined in MERIDIEN (SPHIRE) with C1 symmetry using a mask encompassing TRPC4 with a single CaM.
 
-## Local resolution estimation and filtering
+### Local resolution estimation and filtering
 
 The final half-maps were combined using a tight mask with the application of B-factors automatically determined by the PostRefiner tool in SPHIRE and filtered to the estimated resolution. The final estimated resolution by the ‘gold standard’ FSC = 0.143 criterion between the two masked half-maps is given in Table 2. The local resolution was calculated using sp_locres in SPHIRE. In case of TRPC4-CaM, the final densities were filtered according to local resolution using the local de-noising filter LAFTER (Ramlaul et al., 2019) for the purpose of model building.
 
-## Model building, refinement and validation
+**Table 2.**
+ Refinement and model validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Refinement statistics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>TRPC4-apo</td>
+      <td>TRPC4-CaM</td>
+      <td>GFB- 9289</td>
+      <td>GFB-8438</td>
+      <td>GFB-8749</td>
+    </tr>
+    <tr>
+      <td>Number of particles</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>used in refinement</td>
+      <td>126873</td>
+      <td>160829</td>
+      <td>65811</td>
+      <td>42524</td>
+      <td>44989</td>
+    </tr>
+    <tr>
+      <td>Final resolution [Å]</td>
+      <td>2.8</td>
+      <td>3.6</td>
+      <td>3.2</td>
+      <td>3.6</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>Map sharpening factor [Å2]</td>
+      <td>-57.97</td>
+      <td>-72.37</td>
+      <td>-100</td>
+      <td>-61.35</td>
+      <td>-120</td>
+    </tr>
+    <tr>
+      <td>Electron dose particles final refinement [e-/Å2]</td>
+      <td>Polished particles</td>
+      <td>Polished particles</td>
+      <td>Polished particles</td>
+      <td>Polished particles</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>Model geometry and validation statistics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Atomic model composition</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>22,124</td>
+      <td>21,650</td>
+      <td>21,152</td>
+      <td>21,080</td>
+      <td>21,056</td>
+    </tr>
+    <tr>
+      <td>Refinement (Phenix)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RMSD bond</td>
+      <td>0.008</td>
+      <td>0.011</td>
+      <td>0.008</td>
+      <td>0.007</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>RMSD angle</td>
+      <td>0.738</td>
+      <td>0.983</td>
+      <td>0.645</td>
+      <td>0.771</td>
+      <td>0.736</td>
+    </tr>
+    <tr>
+      <td>Model-to-map fit, CC mask</td>
+      <td>0.84</td>
+      <td>0.86</td>
+      <td>0.85</td>
+      <td>0.86</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>Validation Ramachandran plot (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outliers</td>
+      <td>0.0</td>
+      <td>0.04</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Allowed</td>
+      <td>7.44</td>
+      <td>9.91</td>
+      <td>7.15</td>
+      <td>5.72</td>
+      <td>7.9</td>
+    </tr>
+    <tr>
+      <td>favored</td>
+      <td>92.56</td>
+      <td>90.05</td>
+      <td>92.85</td>
+      <td>94.28</td>
+      <td>91.94</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>0.51</td>
+      <td>0.09</td>
+      <td>8.99</td>
+      <td>0.35</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Molprobity score</td>
+      <td>1.82</td>
+      <td>2.29</td>
+      <td>2.38</td>
+      <td>1.84</td>
+      <td>1.99</td>
+    </tr>
+    <tr>
+      <td>EMRinger score</td>
+      <td>3.04</td>
+      <td>1.61</td>
+      <td>2.67</td>
+      <td>2.28</td>
+      <td>2.75</td>
+    </tr>
+  </tbody>
+</table>
+
+### Model building, refinement and validation
 
 The previously reported model of TRPC4 (Vinayagam et al., 2018) was initially docked into the density and fitted into the map as rigid body using UCSF Chimera. The model was further adjusted to fit in the density using Coot (Emsley et al., 2010) with an iterative process of real space refinement in Phenix (Adams et al., 2010) and model adjustment in Coot until convergence as evaluated by model-to-map fit with valid geometrical parameters. The high resolution obtained with the GFB-9289 and apo structure enabled accurate modelling of the structure especially in the region encompassing residues 727–731 that connects the rib helix to the C-terminal helix (Figure 5—figure supplement 3). The presence of connecting density at this region shows the swapping of helices in this region. In our previous model, the density for the corresponding area was less resolved and the C-terminal helix was modelled without the domain swapping of the C-terminal helix. For the inhibitor molecules, cif files were generated using eLBOW tool in Phenix and used as geometrical restraints in Coot and Phenix during modelling and refinement respectively.
 
@@ -201,12 +709,12 @@ Finally, validation statistics computed by Phenix using MolProbity (Chen et al.,
 
 Figures were prepared in Chimera (Pettersen et al., 2004). Multiple sequence alignment was done using Clustal Omega (Sievers et al., 2011). Figures of the sequence alignment were made in Jalview (Waterhouse et al., 2009). The radius of the TRPC4 pore was determined using HOLE (Smart et al., 1996).
 
-## Synthesis of GFB-9289
+### Synthesis of GFB-9289
 
-## 4-chloro-5-(4-cyclohexyl-3-oxopiperazin-1-yl)-2,3-dihydropyridazin-3-one (GFB-9289)
+#### 4-chloro-5-(4-cyclohexyl-3-oxopiperazin-1-yl)-2,3-dihydropyridazin-3-one (GFB-9289)
 
 To a solution of 1-cyclohexylpiperazin-2-one (150 mg, 0.8 mmol, one equivalent) in DMF (5 mL) was added 4,5-dichloro-2,3-dihydropyridazin-3-one (410 mg, 2.5 mmol, 3.0 equivalent) and DIEA (442 mg, 3.4 mmol, 4.0 equivalent) at ambient temperature under air atmosphere. The resulting mixture was stirred for 5 hr at 100°C. Then the reaction mixture was cooled and purified by reverse phase flash with the following conditions (Column: C18 OBD Column, 5 um, 19 × 330 mm; Mobile Phase A: Water (5 mmol/L NH4HCO3), Mobile Phase B: ACN; Flow rate: 45 mL/min; Gradient: 30% B to 60% B in 40 min; 254 nm; Rt: 15 min) to afford crude product (80 mg), which was further purified by Chiral-Prep-HPLC with the following conditions: Column: CHIRALPAK IG-3, Column size: 0.46 × 5 cm;3 um; Mobile phase: Hex(0.1%DEA):EtOH = 80:20; Pressure: MPA; Flow: 1.0 ml/min; Instrument: LC-08; Detector: 254 nm; Temperature: 25°C. 4-chloro-5-(4-cyclohexyl-3-oxopiperazin-1-yl)−2,3-dihydropyridazin-3-one (26.5 mg, 10.4%) was obtained at 1.436 min as a white solid (26.5 mg). 1H NMR (400 MHz, DMSO-d6) chemical shifts δ 12.91 (s, 1H), 7.86 (s, 1H), 4.23 (t, J = 12.1 Hz, 1H), 4.09 (s, 2H), 3.68 (t, J = 5.2 Hz, 2H), 3.38 (t, J = 5.3 Hz, 2H), 1.77 (d, J = 12.8 Hz, 2H), 1.61 (d, J = 15.6 Hz, 2H), 1.58–1.40 (m, 3H), 1.31 (q, J = 13.1 Hz, 2H), 1.11 (t, J = 13.1 Hz, 1H). LRMS (ESI) m/z: [M+H]+ calculated for C14H20ClN4O2 311.13; found 311.15. Purity 96%.
 
-## Electrophysiology assay
+### Electrophysiology assay
 
 TRPC4-GFP DNA fragments were inserted into pGEMHE 22. The complementary RNA (cRNA) was synthesized by in vitro transcription using the AmpliCap-MaxT7 High Yield Message Maker Kit (Epicentre Biotechnologies) and stored in nuclease-free water at −20°C. Stage V and VI oocytes were surgically removed from female Xenopus laevis by immersion in water containing 1 g/L Tricain and isolated from theca and follicle layers by digestion with 0.14 mg ml−1 collagenase I. Oocytes were injected with 8 ng cRNA and were incubated at 16°C for 3 days in ND96 solution (96 mM NaCl, 2 mM KCl, 1 mM CaCl2, 1 mM MgCl2, 10 mM HEPES, pH7.4). Two-electrodes voltage clamp measurements with Xenopus oocytes were performed at room temperature (20–23°C) in modified standard Ringer’s solution (110 mM NaCl, 5 mM KCl, 2 mM BaCl2 (to avoid Ca2+-activated current of endogenous chloride channels), 1 mM MgCl2, 10 mM HEPES, pH 7.4) with a TURBO TEC-03X amplifier (npi electronic GmbH, Tamm, Germany). Electrode capillaries (Ф=1.5 mm, Hilgenberg) were filled with 3 M KCl, with tip resistances of 0.4–1 MΩ. USB-6221 DAQ device (National Instruments) and WinWCP (v5.5.3, Strathclyde University, UK) are used for data acquisition.

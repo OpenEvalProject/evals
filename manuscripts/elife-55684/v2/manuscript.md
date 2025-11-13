@@ -56,55 +56,171 @@ In this work we aim to better understand how E:I imbalance may differentially af
 
 ## Results
 
-## Analysis of E:I balance in simulated LFPs from a recurrent network model
+### Analysis of E:I balance in simulated LFPs from a recurrent network model
 
 In a bottom-up fashion, we first worked to identify potential biomarkers of E:I imbalance from neural time-series data such as local field potentials (LFPs). Motivating our in-silico modeling of E:I effects on LFP and BOLD data, we note prior work by Gao and colleagues (Gao et al., 2017). This prior work simulated LFP time-series from non-interacting excitatory and inhibitory neuronal populations (Figure 1—figure supplement 1A) and showed that spectral properties such as the 1/f slope flatten with increasing E:I ratio (Figure 1—figure supplement 1B). Given the relationship between 1/f slope and H (Stadnitski, 2012), we show within this modeling approach that as E:I ratio increases, H decreases (Figure 1—figure supplement 1C). However, a limitation of this prior work is that it does not include interactions between excitatory and inhibitory populations nor does it allow for recurrent connections within such populations.
 
-To address these limitations, we developed a more biologically plausible recurrent network model of interacting excitatory and inhibitory integrate-and-fire neuronal populations that receive external inputs (both a sensory driven thalamic input and a sensory unrelated intracortical input) (Figure 1A; see Materials and methods for more details). From this model, we computed the network’s LFP as the sum of absolute values of all synaptic currents. The absolute value is taken because AMPA synapses are usually apical and GABA synapse are peri-somatic and thus their dipoles sum with the same sign along dendrites (Mazzoni et al., 2008; Mazzoni et al., 2010; Deco et al., 2004). We computed LFP summing presynaptic currents from both external inputs and recurrent interactions, as real LFPs capture both sources of synaptic activity (Logothetis, 2008). We have extensively validated this method of computing LFPs from integrate-and-fire networks in previous work on both real cortical data and simulations with networks of realistically-shaped 3D neurons and have shown that it works better than when using alternatives such as the sum of simulated membrane potentials, the signed sum of synaptic currents or a time integration of the spike rate (Mazzoni et al., 2008; Mazzoni et al., 2015). In this in-silico network, we manipulated the E:I ratio by independently varying the strengths of the inhibitory (gI) and excitatory (gE) synaptic conductances. We called g the relative ratio between inhibitory and excitatory conductances (g=gI/gE). We report simulation results for two levels of strength of thalamic input (υ0 = 1.5 spikes/second and υ0 = 2 spikes/second), and we verified that our results hold qualitatively for a wider range of input levels (1.5 to 4 spikes/second).
+To address these limitations, we developed a more biologically plausible recurrent network model of interacting excitatory and inhibitory integrate-and-fire neuronal populations that receive external inputs (both a sensory driven thalamic input and a sensory unrelated intracortical input) (Figure 1A; see Materials and methods for more details). From this model, we computed the network’s LFP as the sum of absolute values of all synaptic currents. The absolute value is taken because AMPA synapses are usually apical and GABA synapse are peri-somatic and thus their dipoles sum with the same sign along dendrites (Mazzoni et al., 2008; Mazzoni et al., 2010; Deco et al., 2004). We computed LFP summing presynaptic currents from both external inputs and recurrent interactions, as real LFPs capture both sources of synaptic activity (Logothetis, 2008). We have extensively validated this method of computing LFPs from integrate-and-fire networks in previous work on both real cortical data and simulations with networks of realistically-shaped 3D neurons and have shown that it works better than when using alternatives such as the sum of simulated membrane potentials, the signed sum of synaptic currents or a time integration of the spike rate (Mazzoni et al., 2008; Mazzoni et al., 2015). In this in-silico network, we manipulated the E:I ratio by independently varying the strengths of the inhibitory ($g_{I}$) and excitatory ($g_{E}$) synaptic conductances. We called g the relative ratio between inhibitory and excitatory conductances ($g=g_{I}/g_{E}$). We report simulation results for two levels of strength of thalamic input ($υ_{0}$ = 1.5 spikes/second and $υ_{0}$ = 2 spikes/second), and we verified that our results hold qualitatively for a wider range of input levels (1.5 to 4 spikes/second).
 
-Figures 1B-C show examples of LFP time-series and power spectral densities (PSDs) for two values of g, one within an excitation-dominated regime (g = 5.6) and the other within an inhibition-dominated regime (g = 14.8). The spectral profiles (Figure 1C) display two different regions of frequencies with different spectral properties: a region of steeper negative 1/f slopes at higher frequencies (> 30 Hz) and a region of shallower (small negative and sometimes positive) slopes at low frequencies (< 30 Hz). Thus, we calculated slopes for the low- and high-frequency regions with piecewise regressions of log power predicted by log frequency. Slopes from the low-frequency (Figure 1D) and high-frequency region (Figure 1E) increase when g is reduced (i.e. E:I ratio augmented). This means that lower values of g correspond to faster spectra with relatively more power at higher frequencies. Changes in slopes are more prominent in the excitation-dominated region where g is smaller (that is, E:I ratio is shifted in favor of E) than the reference value (g = 11.3), which has been shown to be a plausible reference value that reproduces cortical power spectra well (Mazzoni et al., 2008; Mazzoni et al., 2010; Mazzoni et al., 2015; Mazzoni et al., 2011; Barbieri et al., 2014; Cavallari et al., 2014). An increase in g beyond this reference value (shifting the E:I balance towards stronger inhibition) had a weaker effect on slopes. Similar results were obtained when quantifying 1/f slope using the FOOOF algorithm (Haller, 2018; Figure 1—figure supplement 2), indicating that slopes are not biased by the particular piecewise linear fit procedure. Next, we computed H from the same simulated LFPs. As expected, H decreases with decreasing g (i.e. increasing E:I ratio), but only when g is below the baseline reference value (Figure 1F). These results clearly indicate that, in a biologically plausible computational model of local cortical microcircuitry including recurrent connections between excitatory and inhibitory neuronal populations, changes in synaptic E:I ratio are reflected by and thus could be inferred from the overall LFP readout of 1/f slope or H.
+![Figure 1.](https://cdn.elifesciences.org/articles/55684/elife-55684-fig1-v2.jpg)
 
-## Simulated BOLD signal tracks with changes in E:I ratio and correlates selectively with LFP power bands
+**Figure 1.:** Panel A shows a sketch of the point-neuron network that includes recurrent connections between two types of populations: excitatory cells (E) and inhibitory cells (I). Each population receives two types of external inputs: intracortical activity and thalamic stimulation. Panels B and C show examples of normalized LFP times-series and their corresponding PSDs generated for two different ratios between inhibitory and excitatory conductances ($g=g_{I}/g_{E}$). The low- and high-frequency slopes of the piecewise regression lines that fit the log-log plot of the LFP PSDs are computed over two different frequency ranges (1-30 Hz for the low-frequency slope and 30-100 Hz for the high-frequency slope). The relationship between low-frequency slopes (panel D), high-frequency slopes (panel E) and H values (panel F) are plotted as a function of $g$ for two different firing rates of thalamic input (1.5 and 2 spikes/second). The reference value of $g$ (which has shown in previous studies to reproduce cortical data well) is represented by a dashed black line. In panel G and H, we show H values in 3 different groups of $g$ (high, medium and low $g$), with the same number of samples in each group.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55684/elife-55684-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** In silico predictions from a non-recurrent model of how 1/f slope and H change with E:I ratio ($g$).Panel A shows a schematic of the model (Gao et al., 2017) that computationally generates LFPs based on manipulated E:I ratios. For parameters utilized in this model, see Supplementary file 1. Panel B reproduces the relationship reported in Gao et al., between 1/f slope and E:I ratio. All 128 simulated channels are shown in gray, and their average is shown in blue. Panel C shows the relationship between H and E:I ratio from the Gao et al., model. Panel D shows H computed on simulated LFP where the 1/f slope is prespecified. H computed on LFP data is shown in pink. The simulated BOLD signal (simulated in the same way as data from the recurrent model) is plotted in cyan.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55684/elife-55684-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Panel A provides two examples of the LFP PSD generated from the recurrent model for different values of the E:I ratio or $g$ (blue, $g$ = 5.65; orange, $g$ = 14.8). Plotted over the PSDs are the FOOOF algorithm (Haller, 2018) model fit (dotted lines), which captures both the aperiodic signal along with the periodic oscillatory signals. Panel B shows how 1/f slope computed from FOOOF changes as a function of $g$ for two different types of thalamic input.
+
+Figures 1B-C show examples of LFP time-series and power spectral densities (PSDs) for two values of $g$, one within an excitation-dominated regime ($g$ = 5.6) and the other within an inhibition-dominated regime ($g$ = 14.8). The spectral profiles (Figure 1C) display two different regions of frequencies with different spectral properties: a region of steeper negative 1/f slopes at higher frequencies (> 30 Hz) and a region of shallower (small negative and sometimes positive) slopes at low frequencies (< 30 Hz). Thus, we calculated slopes for the low- and high-frequency regions with piecewise regressions of log power predicted by log frequency. Slopes from the low-frequency (Figure 1D) and high-frequency region (Figure 1E) increase when $g$ is reduced (i.e. E:I ratio augmented). This means that lower values of $g$ correspond to faster spectra with relatively more power at higher frequencies. Changes in slopes are more prominent in the excitation-dominated region where $g$ is smaller (that is, E:I ratio is shifted in favor of E) than the reference value ($g$ = 11.3), which has been shown to be a plausible reference value that reproduces cortical power spectra well (Mazzoni et al., 2008; Mazzoni et al., 2010; Mazzoni et al., 2015; Mazzoni et al., 2011; Barbieri et al., 2014; Cavallari et al., 2014). An increase in $g$ beyond this reference value (shifting the E:I balance towards stronger inhibition) had a weaker effect on slopes. Similar results were obtained when quantifying 1/f slope using the FOOOF algorithm (Haller, 2018; Figure 1—figure supplement 2), indicating that slopes are not biased by the particular piecewise linear fit procedure. Next, we computed H from the same simulated LFPs. As expected, H decreases with decreasing $g$ (i.e. increasing E:I ratio), but only when $g$ is below the baseline reference value (Figure 1F). These results clearly indicate that, in a biologically plausible computational model of local cortical microcircuitry including recurrent connections between excitatory and inhibitory neuronal populations, changes in synaptic E:I ratio are reflected by and thus could be inferred from the overall LFP readout of 1/f slope or H.
+
+### Simulated BOLD signal tracks with changes in E:I ratio and correlates selectively with LFP power bands
 
 Given that E:I ratio in LFP data is related to 1/f slope and H, we next asked whether simulated fMRI BOLD signal from the recurrent model would also show similar relationships. To answer this question, we first had to simulate BOLD data from the LFP data generated from the recurrent model. Our approach to simulating BOLD (see Materials and methods and Figure 2—figure supplement 1 for how BOLD was simulated from LFP), captures several key characteristics about the empirical relationship between LFP and BOLD. Studies with simultaneous LFP and BOLD measured in animals have shown that although BOLD signal correlates with both LFPs and spikes, it correlates more strongly with the LFP than with spikes (Logothetis et al., 2001; Magri et al., 2012; Rauch et al., 2008; Viswanathan and Freeman, 2007; Lauritzen and Gold, 2003). Further studies with simultaneous LFP and BOLD measured in non-human primates (Logothetis et al., 2001; Magri et al., 2012; Schölvinck et al., 2010) have considered the relationship between frequency-resolved LFPs and BOLD and indicate that LFP power shows time-lagged correlations with the time course of BOLD signal and that different frequency bands vary in how they correlate with measured BOLD signal. In particular, gamma band frequencies tend to show the strongest correlation between LFP power and BOLD signal. Frequency dependency of the EEG-BOLD relationship, with prominent predictive power of the gamma band, is also reported in humans (Scheeringa et al., 2011). Remarkably, these empirical observations are recapitulated with simulated LFP and BOLD data from the recurrent model. Figure 2A shows time-lagged correlations between time-dependent LFP power and BOLD. Figure 2B shows that all considered LFP frequency bands (e.g., alpha, beta, gamma) correlate with BOLD, but with the gamma band showing the strongest correlations. Thus, our method for simulating BOLD from recurrent model LFP data retains key empirical relationships observed between real LFP power and BOLD. Simulating BOLD with a simple hemodynamic response function (HRF) convolution of the LFP would have not respected the patterns of correlations between LFP power and BOLD observed in empirical data (i.e. the relative increase in correlation between the gamma band and BOLD with respect to other bands; Figure 2—figure supplement 2).
 
-With simulated BOLD from the recurrent model, we next computed H on these data to understand if E:I ratio in the recurrent model is associated with changes in H in BOLD. Strikingly, H in BOLD shows the same dependency on g as observed in LFP data (Figure 2C-D) - H in BOLD decreases as E:I ratio is shifted toward higher excitation by lowering the value of g with respect to the reference value. Although H in LFP and BOLD showed similar associations with respect to changes in g, it is notable that the range of H in BOLD is shifted towards smaller values (Figure 2C-D) than H in LFP (Figure 1G-H). We also verified that the dependency of H in BOLD on g was largely independent of the details of how BOLD is simulated from LFP. While the results shown in Figure 2 are computed with an HRF that reproduces the correlation function measured between the BOLD signal and the gamma band of LFP (Magri et al., 2012), it is notable that these results remained similar when using the canonical HRF instead (Figure 2—figure supplement 2). Removing the high pass filter from simulation of BOLD response did alter the relative values of correlation between LFP power and BOLD across frequency bands, making the BOLD response more in disagreement with experimental data, but did not change the relationship of decreasing H with decreasing g (Figure 2—figure supplement 2), suggesting that our conclusions are robust to the details of the model of the LFP to BOLD relationship. In sum, the inferences from the recurrent network model suggest that H in LFP and BOLD data can be utilized as a marker to track changes in underlying synaptic E:I mechanisms.
+![Figure 2.](https://cdn.elifesciences.org/articles/55684/elife-55684-fig2-v2.jpg)
 
-## Modeling the effects of chemogenetic manipulations within the recurrent network model
+**Figure 2.:** Panel A shows time-lagged Pearson correlations between LFP power across a range of different frequencies and the BOLD signal. Panel B shows the correlation between LFP power and the BOLD signal in selected frequency bands. The following four LFP bands are considered: alpha (8–12 Hz), beta (15–30 Hz), gamma (40–100 Hz) and the total LFP power (0–100 Hz). The relationship between E:I ratio (g) and H in simulated BOLD is shown in panels C and D with two different firing rates of thalamic input (1.5 and 2 spikes/second).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55684/elife-55684-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Panel A shows two example LFP time-series for different values of E:I ratio or $g$ (blue, $g$ = 5.65; orange, $g$ = 14.8). Panel B shows the hemodynamic response function (HRF) from Magri et al., 2012 (top) and the PSDs from Fast Fourier Transforms (FFT) (bottom) on the HRF (blue) and a high-pass filter (HPF) (red). Panel C shows LFP PSDs. BOLD signal was simulated from LFP data as the result of an inverse FFT of the product of multiplied HRF, HPF, and LFP spectra: FFT(BOLD) = FFT(LFP)FFT(HPF)[FFT(HRF) + η], where η is a constant white noise term. Panel D shows the simulated BOLD signals from this process. Panels E and F show the PSD when a high-pass filter was or was not used. In particular, BOLD spectra in Panel F show the distinctive properties such as peak frequency (≈ 0.03 Hz) and low frequency to high frequency power ratio (from 1.5 to 4) observed in previous resting-state fMRI studies (Alcauter et al., 2015; Allen et al., 2011).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55684/elife-55684-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Panel A shows a situation where the simulation of BOLD from LFP utilizes the HRF from Magri et al., 2012 but does not incorporate use of the high-pass filter. Panels B shows BOLD simulated from LFP with the canonical HRF without (B) and with (C) the high-pass filter. In the far left column are time-lagged correlations between LFP power over a range of frequencies as a function of the time-delay. The middle column shows LFP power correlations with BOLD in selected frequency bands. The far right column shows plots for how $g$ is related to H in BOLD for each situation.
+
+With simulated BOLD from the recurrent model, we next computed H on these data to understand if E:I ratio in the recurrent model is associated with changes in H in BOLD. Strikingly, H in BOLD shows the same dependency on $g$ as observed in LFP data (Figure 2C-D) - H in BOLD decreases as E:I ratio is shifted toward higher excitation by lowering the value of $g$ with respect to the reference value. Although H in LFP and BOLD showed similar associations with respect to changes in $g$, it is notable that the range of H in BOLD is shifted towards smaller values (Figure 2C-D) than H in LFP (Figure 1G-H). We also verified that the dependency of H in BOLD on $g$ was largely independent of the details of how BOLD is simulated from LFP. While the results shown in Figure 2 are computed with an HRF that reproduces the correlation function measured between the BOLD signal and the gamma band of LFP (Magri et al., 2012), it is notable that these results remained similar when using the canonical HRF instead (Figure 2—figure supplement 2). Removing the high pass filter from simulation of BOLD response did alter the relative values of correlation between LFP power and BOLD across frequency bands, making the BOLD response more in disagreement with experimental data, but did not change the relationship of decreasing H with decreasing $g$ (Figure 2—figure supplement 2), suggesting that our conclusions are robust to the details of the model of the LFP to BOLD relationship. In sum, the inferences from the recurrent network model suggest that H in LFP and BOLD data can be utilized as a marker to track changes in underlying synaptic E:I mechanisms.
+
+### Modeling the effects of chemogenetic manipulations within the recurrent network model
 
 We next investigated manipulations of parameters within the recurrent model that approximate the effects of empirical chemogenetic DREADD manipulations in neurons. These simulations are useful to both gain a better understanding of the empirical BOLD measures under DREADD manipulations presented in the next section, and to better characterize the specificity of the origin of changes in 1/f slopes and H with the E:I ratio. Given that as shown above, in our models changes of H in BOLD mirror those in LFPs, here we present changes in model LFP spectra when simulating these DREADD manipulations.
 
-We first studied the specific effect of solely increasing excitation within the recurrent network. This can be achieved experimentally by using the drug clozapine-N-oxide (CNO) on the DREADD receptor hM3Dq to increase the excitability of excitatory cells only (Alexander et al., 2009). We simulated this kind of increase of excitability of pyramidal cells in the recurrent network model by lowering their voltage threshold (Vth) for spike initiation. Progressively lowering Vth from -52 to -53 mV resulted in more positive low-frequency and flatter high-frequency 1/f slopes (Figure 3—figure supplement 1A) and also caused decreases in H (Figure 3A). For H, increasing Vth (i.e. decreasing excitability) from -52 to -51 mV resulted in little change in H. These results predict that specific increases of excitation, as in the application of the hM3Dq DREADD to enhance excitability of pyramidal neurons, should reduce steepness of the high-frequency slopes and lead to a decrease in H. These results also confirm our above findings that in recurrent networks in which excitatory and inhibitory neurons interact, increases in excitability are easier to detect from changes in 1/f slope or H than decreases in excitation.
+We first studied the specific effect of solely increasing excitation within the recurrent network. This can be achieved experimentally by using the drug clozapine-N-oxide (CNO) on the DREADD receptor hM3Dq to increase the excitability of excitatory cells only (Alexander et al., 2009). We simulated this kind of increase of excitability of pyramidal cells in the recurrent network model by lowering their voltage threshold ($V_{th}$) for spike initiation. Progressively lowering $V_{th}$ from -52 to -53 mV resulted in more positive low-frequency and flatter high-frequency 1/f slopes (Figure 3—figure supplement 1A) and also caused decreases in H (Figure 3A). For H, increasing $V_{th}$ (i.e. decreasing excitability) from -52 to -51 mV resulted in little change in H. These results predict that specific increases of excitation, as in the application of the hM3Dq DREADD to enhance excitability of pyramidal neurons, should reduce steepness of the high-frequency slopes and lead to a decrease in H. These results also confirm our above findings that in recurrent networks in which excitatory and inhibitory neurons interact, increases in excitability are easier to detect from changes in 1/f slope or H than decreases in excitation.
 
-To study whether the changes in 1/f slopes and H are specific to modulations in excitability of only excitatory neurons, we modeled the combined effect of silencing both excitatory and inhibitory neuronal populations. This silencing of both excitatory and inhibitory neurons can be obtained experimentally by application of the hM4Di DREADD (see next Section). In the recurrent network model, we simulated this silencing of both excitatory and inhibitory cells by decreasing the resting potential, EL, in both excitatory and inhibitory neurons. Decreasing EL from the baseline value of -70 to -75 mV produced varied effects in 1/f slopes (Figure 3—figure supplement 1B) and resulted in a slight increase of H (Figure 3B). Note that a moderate increase in H with higher input (Figure 3B) was also found when comparing two very different levels of input. Given that a possible non-local action of hM4Di might lead to less excitatory input to the considered area coming from the silencing of nearby regions, this suggests that our conclusion should still hold even in the presence of some non-local DREADD effects. In general, the effects of simulating hM4Di DREADD were far less prominent than those reported above when simulating enhanced excitation specifically (Figure 3A and Figure 3—figure supplement 1A). These results predict overall a very small effect of the hM4Di DREADD on H and 1/f slopes. These results also imply that decreases in H are more likely to result from specific increases in excitation rather than from non-specific decreases of excitability across both excitatory and inhibitory neuronal populations.
+![Figure 3.](https://cdn.elifesciences.org/articles/55684/elife-55684-fig3-v2.jpg)
 
-## Changes in H in BOLD after chemogenetic manipulation to enhance excitability of excitatory neurons in mice
+**Figure 3.:** Panel A shows how H changes after the voltage threshold for spike initiation in excitatory neurons ($V_{th}$) is reduced in the recurrent model, thereby enhancing excitability as would be achieved with hM3Dq DREADD manipulation. Panel B shows how H changes after decreasing the resting potential of excitatory and inhibitory neurons ($E_{L}$), as would be achieved with hM4Di DREADD manipulation. Panel C shows changes in H in BOLD from prefrontal cortex (PFC) after real hM3Dq DREADD manipulation in mice, while panel D shows changes in PFC BOLD H after hM4Di DREADD manipulation in mice. In panels C and D, individual gray lines indicate H for individual mice, while the colored lines indicate Baseline (pink), Transition (green), and Treatment (blue) periods of the experiment. During the Baseline period H is measured before the drug or SHAM injection is implemented. The Transition phase is the period after injection but before the period where the drug has maximal effect. The Treatment phase occurs when the drug begins to exert its maximal effect. The green star indicates a Condition*Time interaction (p<0.05) in the Transition phase, whereas the blue stars indicate a main effect of Condition within the Treatment phase (p < 0.005).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55684/elife-55684-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Panel A shows 1/f slopes computed after the voltage threshold for spike initiation ($V_{th}$) is manipulated. Panel B shows 1/f slopes computed after the resting potential for excitatory and inhibitory neurons ($E_{L}$) is manipulated. The left column shows results when computed in the low-frequency range (<30 Hz). The middle column shows results when computed in the high-frequency range (>30 Hz). The right column shows 1/f slopes as computed by the FOOOF algorithm (Haller, 2018). In each plot, salmon color indicates simulations with a thalamic input of 2 spikes/second, while the olive color indicates thalamic input of 1.5 spikes/second.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55684/elife-55684-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Individual gray lines indicate fALFF for individual mice, while the colored lines indicate Baseline (pink), Transition (green), and Treatment (blue) periods of the experiment. During the Baseline period fALFF is measured before the drug or SHAM injection is implemented. The Transition phase is the period after injection but before the period where the drug has maximal effect. The Treatment phase occurs when the drug begins to exert its maximal effect.
+
+To study whether the changes in 1/f slopes and H are specific to modulations in excitability of only excitatory neurons, we modeled the combined effect of silencing both excitatory and inhibitory neuronal populations. This silencing of both excitatory and inhibitory neurons can be obtained experimentally by application of the hM4Di DREADD (see next Section). In the recurrent network model, we simulated this silencing of both excitatory and inhibitory cells by decreasing the resting potential, $E_{L}$, in both excitatory and inhibitory neurons. Decreasing $E_{L}$ from the baseline value of -70 to -75 mV produced varied effects in 1/f slopes (Figure 3—figure supplement 1B) and resulted in a slight increase of H (Figure 3B). Note that a moderate increase in H with higher input (Figure 3B) was also found when comparing two very different levels of input. Given that a possible non-local action of hM4Di might lead to less excitatory input to the considered area coming from the silencing of nearby regions, this suggests that our conclusion should still hold even in the presence of some non-local DREADD effects. In general, the effects of simulating hM4Di DREADD were far less prominent than those reported above when simulating enhanced excitation specifically (Figure 3A and Figure 3—figure supplement 1A). These results predict overall a very small effect of the hM4Di DREADD on H and 1/f slopes. These results also imply that decreases in H are more likely to result from specific increases in excitation rather than from non-specific decreases of excitability across both excitatory and inhibitory neuronal populations.
+
+### Changes in H in BOLD after chemogenetic manipulation to enhance excitability of excitatory neurons in mice
 
 All of the results thus far report results from our in-silico model of recurrent neuronal networks and their readouts as simulated LFP or BOLD data. The in-silico modeling of BOLD data suggests that if E:I ratio is increased via enhanced excitability of excitatory neurons, then H should decrease. To empirically test this prediction in-vivo, we measured rsfMRI BOLD signal in prefrontal cortex (PFC) of mice under conditions where a chemogenetic manipulation (hM3Dq DREADD) (Alexander et al., 2009) is used to enhance excitability of pyramidal neurons. Here we used a sliding window analysis to assess dynamic changes in H over the course of 3 different phases of the experiment – 1) a ‘Baseline’ phase where the CNO drug or a SHAM injection had not yet occurred, 2) a ‘Transition’ phase directly following CNO or SHAM injection, and 3) a ‘Treatment’ phase, whereby CNO has its maximal effect. We find that H is modulated over time by the DREADD manipulation (condition*time*treatment phase interaction F = 349.03, p<0.0001). During the Baseline phase of rsfMRI scanning before the DREADD-actuator CNO was injected, H under DREADD or a SHAM control conditions are not affected (condition main effect F = 0.82, p=0.37; condition*time interaction F = 0.36, p=0.54). However, during the Transition phase of the experiment where the CNO begins to have its effects, we find a condition*time interaction (F = 4.94, p=0.0262), whereby H drops over time at a steeper rate during the DREADD condition compared to the SHAM condition (green line in Figure 3C). Finally, during the Treatment phase of the experiment, where the drug exerts its maximal effect, there is a significant main effect of condition (F = 12.92, p=0.0011) and no condition*time interaction (F = 0.66, p=0.4182) (blue line in Figure 3C) (Table 1). This effect is explained by H being reduced in the DREADD vs SHAM condition. These in-vivo results are directly in line with the in-silico prediction that enhancing E:I ratio via enhancing the excitability of excitatory neurons results in a decrease in H (i.e. Figure 1F–H, Figure 2C–D, and Figure 3A).
 
-## Chemogenetically silencing both excitatory and inhibitory neurons has no effect on H in BOLD
+**Table 1.**
+ Results from DREADD excitation manipulation.F-statistics (p-values in parentheses) for main effects of time, condition, and time*condition interaction for each of the 3 phases of the experiment (Baseline, Transition, Treatment). *=p < 0.05, **=p < 0.001.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Time</th>
+      <th>Condition (DREADD - SHAM)</th>
+      <th>Time x Condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baseline</td>
+      <td>0.82 (0.372)</td>
+      <td>0.81 (0.369)</td>
+      <td>0.36 (0.549)</td>
+    </tr>
+    <tr>
+      <td>Transition</td>
+      <td>5.65 (0.017)*</td>
+      <td>3.25 (0.081)</td>
+      <td>4.94 (0.026)*</td>
+    </tr>
+    <tr>
+      <td>Treatment</td>
+      <td>0.61 (0.433)</td>
+      <td>12.92 (0.001)**</td>
+      <td>0.66 (0.418)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemogenetically silencing both excitatory and inhibitory neurons has no effect on H in BOLD
 
 While the above results show that specific enhancement of excitability in excitatory neurons results in a decrease in BOLD H, it is an important negative control contrast to investigate whether non-specifically reducing the excitability of both excitatory and inhibitory neuronal populations might also affect H. This is an important negative control since if H were to change in a similar direction after this manipulation, it would make interpretations about decrease in H being due to increased E:I ratio via excitation problematic. The in-silico simulation of this manipulation (Figure 3B) would predict that H would not be changed much, and that if a change in H were to occur, it would be a slight increase rather than a decrease in H. By expressing the inhibitory hM4Di DREADD (Stachniak et al., 2014) under the control of a pan-neuronal promoter, we chemogenetically silenced both excitatory and inhibitory neurons in PFC of mice and re-ran the same rsfMRI neuroimaging protocol as before. While a significant 3-way interaction between condition, time, and treatment phase was present (F = 85.8, p<0.0001), there were no strong main effects of condition or condition*time interactions in any of the baseline, transition, or treatment phases of the experiment (see Table 2 and Figure 3D). Overall, these results along with the recurrent model simulation of hM4Di DREADD (Figure 3B) bolster strength of the interpretation that enhanced excitation drives decreasing H in BOLD and that H in BOLD would not change appreciably in a situation such as pan-neuronal silencing of both excitatory and inhibitory neurons.
 
+**Table 2.**
+ Results from DREADD silencing manipulation.F-statistics (p-values in parentheses) for main effects of time, condition, and time*condition interaction for each of the 3 phases of the experiment (Baseline, Transition, Treatment). *=p < 0.05, **=p < 0.001.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Time</th>
+      <th>Condition (DREADD - SHAM)</th>
+      <th>Time x Condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baseline</td>
+      <td>0.02 (0.876)</td>
+      <td>4.01 (0.054)</td>
+      <td>1.02 (0.137)</td>
+    </tr>
+    <tr>
+      <td>Transition</td>
+      <td>0.04 (0.838)</td>
+      <td>0.35 (0.561)</td>
+      <td>1.36 (0.243)</td>
+    </tr>
+    <tr>
+      <td>Treatment</td>
+      <td>0.40 (0.533)</td>
+      <td>0.20 (0.673)</td>
+      <td>0.10 (0.786)</td>
+    </tr>
+  </tbody>
+</table>
+
 Consistent with the idea that heightened excitation leads to flattening of the 1/f slope and reductions in H, we also computed a measure of the fractional amplitude of low frequency fluctuations (fALFF) (Zou et al., 2008). Given the effect of flattening 1/f slope, we expected that fALFF would show reductions due to the DREADD excitation manipulation but would show no effect for the DREADD silencing manipulation. These expectations were confirmed, as DREADD excitation results in a large drop in fALFF, which shows a stark drop off midway through the transition phase and stays markedly lower throughout the treatment phase when the drug has its maximal effects. In contrast, similar effects do not occur for the DREADD silencing manipulation (see Figure 3—figure supplement 2).
 
-## Autism-associated genes in excitatory neuronal cell types in the human brain are enriched for genes that are differentially expressed by androgen hormones
+### Autism-associated genes in excitatory neuronal cell types in the human brain are enriched for genes that are differentially expressed by androgen hormones
 
 The in-silico and in-vivo animal model findings thus far suggest that excitation affects metrics computed on neural time-series data such as 1/f slope and H. Applied to the idea of sex-related heterogeneity in E:I imbalance in autism, these results make the prediction that excitatory neuronal cell types would be the central cell type affecting such neuroimaging phenotypes in a sex-specific manner. To test this hypothesis about sex-specific effects on excitatory neuronal cell types, we examined whether known autism-associated genes that affect excitatory neuronal cell types (Satterstrom et al., 2020; Velmeshev et al., 2019) are highly overlapping with differentially expressed genes in human neuronal stem cells when treated with a potent androgen hormone, dihydrotestosterone (DHT) (Lombardo et al., 2018b; Quartier et al., 2018). Genes differentially expressed by DHT are highly prominent within the gene set of autism-associated genes that affect excitatory neurons (OR = 1.67, p=0.03), with most of the overlapping genes being those whereby DHT upregulates expression (Figure 4A). By contrast, genes associated with autism that affect inhibitory neuronal cell types or other non-neuronal cells (e.g., microglia, astrocytes, oligodendrocytes) are not enriched for DHT differentially expressed genes (inhibitory neurons: OR = 1.51, p=0.12; microglia: OR = 0.78, p=0.78; astrocytes or oligodendrocytes: OR = 1.11, p=0.49). This result suggests that autism-associated genes specifically affecting excitatory neuronal cell types are also susceptible to the male-specific influence of androgen hormones in human neuronal stem cells.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55684/elife-55684-fig4-v2.jpg)
 
-**Figure 4.:** Panel  shows a Venn diagram depicting the enrichment between autism-associated genes affecting excitatory neurons (Autism E-Genes) and DHT-sensitive genes. Panel A also includes a heatmap of these genes whereby the color indicates z-normalized expression values. The column dendrogram clearly shows that all samples with DHT treatment are clustered separately from the control (DMSO) samples. Each row depicts the expression of a different gene. Panel AB shows a t-statistic map from a whole-brain one-sample t-test on these DHT-sensitive and autism-associated genes in excitatory neurons. Results are thresholded at FDR q < 0.01. Panel C shows spatial gene expression profiles on a representative surface rendering of the medial wall of the cortex for specific genes shown in panel B. Each map shows expression as z-scores with the color scaling set to a range of −2 < z < 2.
+**Figure 4.:** Panel A shows a Venn diagram depicting the enrichment between autism-associated genes affecting excitatory neurons (Autism E-Genes) and DHT-sensitive genes. Panel A also includes a heatmap of these genes whereby the color indicates z-normalized expression values. The column dendrogram clearly shows that all samples with DHT treatment are clustered separately from the control (DMSO) samples. Each row depicts the expression of a different gene. Panel B shows a t-statistic map from a whole-brain one-sample t-test on these DHT-sensitive and autism-associated genes in excitatory neurons. Results are thresholded at FDR q < 0.01. Panel C shows spatial gene expression profiles on a representative surface rendering of the medial wall of the cortex for specific genes shown in panel B. Each map shows expression as z-scores with the color scaling set to a range of −2 < z < 2.
 
 We next additionally examined how such DHT-sensitive and autism-associated excitatory neuron genes spatially express in the adult human brain. This analysis would help shed insight on which brain areas might be more affected by such sex-specific effects in autism. A one-sample t-test of gene maps from the Allen Institute Human Brain Atlas (Hawrylycz et al., 2012) shows that this subset of DHT-sensitive and autism-associated excitatory neuron genes are highly expressed in MPFC, PCC, insula, and intraparietal sulcus, amongst other areas (Figure 4B–C).
 
-## H is on-average reduced in adult autistic men but not women
+### H is on-average reduced in adult autistic men but not women
 
 We next move to application of this work to human rsfMRI data in autistic men and women. If E:I ratio is affected by sex-related mechanisms (Lombardo et al., 2018b), we predict that H would be differentially affected in autistic males versus females and manifest as a sex-by-diagnosis interaction in a 2 × 2 factorial design (Sex: Male vs Female; Diagnosis: Autism vs Typically-Developing (TD)). More specifically, the directionality of our predictions from the in-silico and in-vivo results in Figures 1–3 are that if H reflects E:I ratio, there should be decreased H (due to enhanced E) specifically in autistic males but not autistic females. Mass-univariate analysis uncovered one region in ventromedial prefrontal cortex (vMPFC), region p32, with a sex-by-diagnosis interaction passing FDR q < 0.05 (F(5,104) = 15.13, p=0.0001, partial η2 = 0.12) (Figure 5A). In line with directionality of our predictions, this interaction effect is driven by a large TD >Autism effect in males (Cohen’s d = 1.30) and a small Autism >TD effect in females (Cohen’s d = −0.27) (Figure 5B). A similar sex-by-diagnosis interaction appeared when using another metric such as the intrinsic neural timescale (Watanabe et al., 2019; Figure 5—figure supplement 1) and when H was first calculated at each voxel and then averaged across voxels (Figure 5—figure supplement 2). While the main effects of diagnosis and sex are not the primary contrast for this study, we report that no significant regions survived FDR q < 0.05 for the main effects of diagnosis. However, 61% of brain regions showed an on-average male >female sex difference (Figure 5—figure supplement 1), which is in keeping with results from other work on sex differences in H (Dhamala et al., 2020).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/55684/elife-55684-fig5-v2.jpg)
+
+**Figure 5.:** Panel A shows unthresholded and thresholded with FDR q < 0.05 mass-univariate results for the sex-by-diagnosis interaction contrast. Panel B shows H estimates from vMPFC (area p32) across males and females with and without autism. Panel C shows partial least squares (PLS) results unthresholded and thresholded to show the top 20% of brain regions ranked by bootstrap ratio (BSR). Panel D shows the percentage of voxels within each HCP-MMP parcellation region that overlap with the DHT-sensitive AND autism-associated genes affecting excitatory neurons (Autism E-Genes) map shown in Figure 4B. Panel E shows correlation between vMPFC H and behavioral camouflaging score in autistic males (orange) and females (blue).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55684/elife-55684-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Panel A shows the unthresholded standardized effect size map for the main effect of Diagnosis in human rsfMRI data from the MRC AIMS dataset. No regions survive at FDR q < 0.05 for this comparison. Panel B shows a similar unthresholded standardized effect size map for the main effect of Sex. Panel C shows that several regions (61% of regions) pass at FDR q < 0.05 and all are in the directionality of Male >Female. Panel D shows the PLS results next to the seven cluster rsfMRI parcellation from Yeo et al., 2011. This panel shows prominent overlap between most important PLS regions and the default mode network (DMN). Panel E shows a histogram of the correlation between H and the intrinsic neural timescale (INTSC) metric reported by Watanabe et al., 2019 across all brain regions (top left). In the bottom left of panel E is a scatterplot showing the correlation between H and INTSC for vMPFC (Area p32). The far right of panel E is a plot to descriptively show the distributions and effect sizes for the sex-by-diagnosis interaction effect in area p32 for INTSC.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55684/elife-55684-fig5-figsupp2-v2.jpg)
+
 In contrast to mass-univariate analysis, we also used partial least squares (PLS) analysis as a multivariate alternative to uncover distributed neural systems that express the sex-by-diagnosis interaction. PLS analysis identified one neural system expressing the same sex-by-diagnosis interaction (d = 2.04, p=0.036) and included default mode network (DMN) areas such as MPFC and posterior cingulate cortex/precuneus (PCC) (Figure 5—figure supplement 1), and other non-DMN areas such as insula, lateral prefrontal cortex, somatosensory and motor cortices, intraparietal sulcus, amongst others (Figure 5C). Many of these regions detected by the PLS analysis were subthreshold of FDR q < 0.05 in the mass-univariate analysis, but do show heightened effect sizes in keeping with this sex-by-diagnosis interaction pattern (e.g., white and light blue areas in the unthresholded map shown in Figure 5A). Detection of these regions in a mass-univariate analysis may require a larger sample size to enhance statistical power. Given that many of these PLS-identified regions of a sex-by-diagnosis interaction appear similar to those that appear in the gene expression map in Figure 4B of DHT-sensitive and autism-associated excitatory genes, we assessed how much each HCP-MMP parcellated regions overlap with the map in Figure 4B. PLS-identified regions in vMPFC (e.g., areas p32 and 10r) overlap by about 73–75%. Areas within the insula (e.g., Pol1, Pol2, MI) overlap by around 59–69%. Parietal areas in PCC (e.g., v23ab, d23ab) and intraparietal sulcus (LIPd) overlap by around 73–85% (Figure 5D).
 
-## Correlation between vMPFC H and camouflaging in autistic women but not men
+### Correlation between vMPFC H and camouflaging in autistic women but not men
 
 In prior task-fMRI work we found a similar sex-by-diagnosis interaction in vMPFC self-representation response and a female-specific brain-behavioral correlation with camouflaging ability (Lai et al., 2019). Given that adult autistic females engage more in camouflaging on-average (Lai et al., 2017b; Hull et al., 2020; Schuck et al., 2019), we next asked whether vMPFC H would be related to camouflaging in a sex-specific manner. In autistic females, increased camouflaging was strongly associated with increased H in vMPFC (r = 0.60, p=0.001). However, no significant association was apparent in autistic males (r = −0.10, p=0.63). The strength of this brain-behavioral correlation significantly differed between autistic males and females (z = 2.58, p=0.009) (Figure 5E). This result suggests that progressively more intact vMPFC H in autistic females, which are likely reflective of more intact E:I balance, is associated with better ability to camouflage social-communicative difficulties. Beyond this hypothesis-driven comparison of the relationship between H and camouflaging in vMPFC, we also ran correlations with ADI-R, ADOS and AQ scores. ADOS social-communication (SC) was negatively correlated with vMPFC H in autistic females (r = −0.51, p=0.008) indicating higher H with lower SC severity. This relationship was not present in autistic males (r = −0.04, p=0.83). However, the difference between these correlations was not statistically significant (z = 1.70, p=0.08). ADI-R subdomains, ADOS RRB, and AQ correlations were not statistically significant.
 
@@ -134,19 +250,190 @@ In conclusion, we show that spectral properties of neural time-series data, such
 
 ## Materials and methods
 
-## Human participants
+### Human participants
 
 All procedures contributing to this work comply with the ethical standards of the relevant national and institutional committees on human experimentation and with the Helsinki Declaration of 1975, as revised in 2008. All human participants’ informed consent was obtained in accord with procedures approved by the Suffolk Local Research Ethics Committee. Adult native English speakers (n = 136, age range = 18–49 years) with normal/corrected-to-normal vision participated: n = 33 typically developing (TD) males, n = 34 autistic males, n = 34 TD females and n = 34 autistic females (Table 3). They all reported cis-gender identity based on a single item inquiring their birth-assigned sex and another on their identified gender. Groups were not statistically different on age or full-scale IQ (FIQ) on the Wechsler Abbreviated Scales of Intelligence (WASI) (Table 3). Exclusion criteria for all participants included a history of or current psychotic disorders, substance-use disorders, severe head injury, genetic disorders associated with autism (e.g. fragile X syndrome and tuberous sclerosis), intellectual disability (i.e. Full-scale IQ (FIQ) < 70), or other medical conditions significantly affecting brain function (e.g. epilepsy).
+
+**Table 3.**
+ Descriptive and inferential statistics for group comparisons of demographic and clinical variables.Values in the columns for each group represent the mean and standard deviation (in parentheses). Values in the columns labeled Sex, Diagnosis, and Sex*Diagnosis indicate the F-statistic and p-value (in parentheses). Abbreviations: TD, Typically Developing; VIQ, verbal IQ; PIQ, performance IQ; FIQ, full-scale IQ; ADI-R, Autism Diagnostic Interview–Revised; ADOS, Autism Diagnostic Observation Schedule; RRB, Restricted Repetitive Behaviors; AQ, Autism Spectrum Quotient; RMET, Reading the Mind in the Eyes Test, FD: frame-wise displacement.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>TD males (N = 29)</th>
+      <th>Autistic males (N = 23)</th>
+      <th>TD females (N = 33)</th>
+      <th>Autistic females (N = 25)</th>
+      <th>Sex</th>
+      <th>Diagnosis</th>
+      <th>Sex* diagnosis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age</td>
+      <td>28.00 (6.42)</td>
+      <td>27.13 (7.14)</td>
+      <td>26.99 (5.34)</td>
+      <td>27.35 (6.79)</td>
+      <td>0.14 (0.70)</td>
+      <td>0.03 (0.85)</td>
+      <td>0.25 (0.61)</td>
+    </tr>
+    <tr>
+      <td>VIQ</td>
+      <td>110.62 (11.53)</td>
+      <td>114.70 (13.04)</td>
+      <td>120.30 (10.06)</td>
+      <td>114.08 (12.79)</td>
+      <td>5.33 (0.02)</td>
+      <td>0.38 (0.53)</td>
+      <td>5.18 (0.02)</td>
+    </tr>
+    <tr>
+      <td>PIQ</td>
+      <td>120.00 (10.21)</td>
+      <td>114.57 (15.70)</td>
+      <td>117.39 (9.27)</td>
+      <td>110.88 (17.43)</td>
+      <td>1.49 (0.22)</td>
+      <td>5.55 (0.02)</td>
+      <td>0.04 (0.83)</td>
+    </tr>
+    <tr>
+      <td>FIQ</td>
+      <td>116.97 (10.69)</td>
+      <td>116.39 (14.15)</td>
+      <td>121.45 (8.33)</td>
+      <td>114.16 (13.82)</td>
+      <td>0.48 (0.48)</td>
+      <td>3.38 (0.06)</td>
+      <td>2.24 (0.13)</td>
+    </tr>
+    <tr>
+      <td>Camouflaging Score</td>
+      <td>-</td>
+      <td>−0.16 (0.38)</td>
+      <td>-</td>
+      <td>0.15 (0.34)</td>
+      <td>9.06 (0.004)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AQ</td>
+      <td>15.28 (6.99)</td>
+      <td>32.70 (8.47)</td>
+      <td>11.97 (4.93)</td>
+      <td>38.44 (6.34)</td>
+      <td>0.26 (0.61)</td>
+      <td>300.59 (2.2e-16)</td>
+      <td>12.48 (0.0006)</td>
+    </tr>
+    <tr>
+      <td>ADI-R Reciprocal-Social-Interaction</td>
+      <td>-</td>
+      <td>17.26 (4.77)</td>
+      <td>-</td>
+      <td>16.56 (4.52)</td>
+      <td>0.27 (0.60)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>ADI-R Communication</td>
+      <td>-</td>
+      <td>14.83 (3.50)</td>
+      <td>-</td>
+      <td>13.40 (3.96)</td>
+      <td>1.73 (0.19)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>ADI-R RRB</td>
+      <td>-</td>
+      <td>5.17 (2.35)</td>
+      <td>-</td>
+      <td>4.24 (1.61)</td>
+      <td>2.61 (0.11)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>ADOS Communication</td>
+      <td>-</td>
+      <td>3.30 (1.74)</td>
+      <td>-</td>
+      <td>1.24 (1.30)</td>
+      <td>21.85 (2.59e-5)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>ADOS Social</td>
+      <td>-</td>
+      <td>5.48 (3.45)</td>
+      <td>-</td>
+      <td>3.48 (3.06)</td>
+      <td>4.52 (0.03)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>ADOS RRB</td>
+      <td>-</td>
+      <td>1.09 (1.12)</td>
+      <td>-</td>
+      <td>4.30 (1.61)</td>
+      <td>61.84 (6.32e-10)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>ADOS Communication + Social Total</td>
+      <td>-</td>
+      <td>8.83 (4.87)</td>
+      <td>-</td>
+      <td>4.72 (4.09)</td>
+      <td>10.07 (0.002)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>RMET</td>
+      <td>27.14 (3.59)</td>
+      <td>20.83 (6.87)</td>
+      <td>28.91 (2.35)</td>
+      <td>22.84 (6.40)</td>
+      <td>3.93 (0.04)</td>
+      <td>42.30 (2.704e-9)</td>
+      <td>0.01 (0.89)</td>
+    </tr>
+    <tr>
+      <td>Mean FD</td>
+      <td>0.17 (0.05)</td>
+      <td>0.20 (0.07)</td>
+      <td>0.18 (0.06)</td>
+      <td>0.04 (0.17)</td>
+      <td>0.51 (0.47)</td>
+      <td>1.77 (0.18)</td>
+      <td>1.10 (0.29)</td>
+    </tr>
+  </tbody>
+</table>
 
 The inclusion criterion for both male and female autistic participants was a formal clinical diagnosis of International Statistical Classification of Diseases and Related Health Problems 10th Revision (ICD-10) childhood autism or Asperger’s syndrome, or Diagnostic and Statistical Manual of Mental Disorders (4th ed., text rev.; DSM-IV-TR) autistic disorder or Asperger’s disorder, as assessed by a psychiatrist or clinical psychologist in the National Health Service, UK. Since all participants were adults, we further considered available information of developmental history to include only those with clinically evident childhood autistic symptoms, for example, from information collected using the Autism Diagnostic Interview–Revised (ADI-R) (Lord et al., 1994) where possible, or from the participants’ clinical diagnosis letters shared with the research team to determine eligibility. We used this clinically based criterion for inclusion for the purpose of sampling autistic individuals currently diagnosed by specialists in mental health services in the daily practice and to align with best clinical practice as recommended by the UK National Institute for Health and Clinical Excellence (NICE) guideline (Pilling et al., 2012). For assessing levels of autism characteristics, we administered the Autism Spectrum Quotient (AQ) (Baron-Cohen et al., 2001a), module 4 of the Autism Diagnostic Observation Schedule (ADOS) (Lord et al., 2000), and ADI-R (Lord et al., 1994) where possible, before the fMRI session. Autistic male and female groups were not significantly different on any ADI-R subdomain scores or Reading the Mind in the Eyes Test (RMET) (Baron-Cohen et al., 2001b) performance (Table 3).
 
 We further used criteria for inclusion based on characteristics about data quality (see next paragraphs for data preprocessing). In particular, we excluded participants where the number of volumes was not acquired due to scanner hardware issues (n = 1), the preprocessing pipeline could not adequately preprocess the data (e.g., bad registrations; n = 5). Participants were also excluded if their head motion exceed a mean framewise displacement (meanFD) (Power et al., 2012) of >0.4 mm (n = 8). For the remaining subjects we further visually inspected plots of framewise displacement (FD) and DVARS (Power et al., 2012) traces to determine whether the wavelet despiking step sufficiently attenuated artefact-related variability that would leave DVARS spikes. Here we made a qualitative and consensus judgement amongst authors (S.T. and M.V.L) to exclude individuals (n = 9) whereby there were numerous FD spikes above 0.5 mm or numerous DVARS spikes leftover after wavelet despiking was applied. Other exclusions included any VIQ or PIQ <70 (n = 1) and co-morbid agenesis of the corpus callosum (n = 1). The final sample sizes included in all further analyses was n = 29 TD males, n = 23 autistic males, n = 33 TD females, and n = 25 autistic females. The final groups used in all analyses did not statistically differ on age (diagnosis main effect: F(3,106) = 0.03, p=0.85; sex main effect: F(3,106) = 0.14, p=0.70; sex-by-diagnosis interaction: F(3,106) = 0.25, p=0.61) or FIQ (diagnosis main effect: F(3,106) = 3.38, p=0.07; sex main effect: F(3,106) = 0.48, p=0.48; sex-by-diagnosis interaction: F(3,106) = 2.24, p=0.13) (see Table 3).
 
-## Human fMRI data acquisition
+### Human fMRI data acquisition
 
 Imaging was performed on a 3T GE Signa Scanner at the Cambridge Magnetic Resonance Imaging and Spectroscopy Unit. Participants were asked to lie quietly in the scanner awake with eyes closed for 13 min and 39 s during sequential acquisition of 625 whole-brain T2*-weighted echo planar image volumes with the following parameters: relaxation time = 1302 ms; echo time = 30 ms; flip angle = 70°; matrix size = 64×64; field of view = 24 cm; 22 anterior commissure-posterior commissure aligned slices per image volume; 4 mm axial slice thickness; 1 mm slice gap. The first five time-points were discarded to allow for T2-stabilization. During analysis of the Hurst exponent (H) for BOLD time-series, due to the discrete wavelet transform using volumes in power of 2, only the first 512 volumes (29) were utilized. A high-resolution spoiled gradient anatomical image was acquired for each participant for registration purposes.
 
-## Human fMRI data analysis
+### Human fMRI data analysis
 
 Preprocessing of the resting state data was split into two components; core preprocessing and denoising. Core preprocessing was implemented with AFNI (Cox, 1996) (http://afni.nimh.nih.gov/) using the tool speedypp.py (http://bit.ly/23u2vZp) (Kundu et al., 2012). This core preprocessing pipeline included the following steps: (i) slice acquisition correction using heptic (7th order) Lagrange polynomial interpolation; (ii) rigid-body head movement correction to the first frame of data, using quintic (5th order) polynomial interpolation to estimate the realignment parameters (3 displacements and three rotations); (iii) obliquity transform to the structural image; (iv) affine co-registration to the skull-stripped structural image using a gray matter mask; (v) nonlinear warping to MNI space (MNI152 template) with AFNI 3dQwarp; (vi) spatial smoothing (6 mm FWHM); and (vii) a within-run intensity normalization to a whole-brain median of 1000. Core preprocessing was followed by denoising steps to further remove motion-related and other artifacts. Denoising steps included: (viii) wavelet time series despiking (‘wavelet denoising’); (ix) confound signal regression including the six motion parameters estimated in (ii), their first order temporal derivatives, and ventricular cerebrospinal fluid (CSF) signal (referred to as 13-parameter regression). The wavelet denoising method has been shown to mitigate substantial spatial and temporal heterogeneity in motion-related artifact that manifests linearly or non-linearly and can do so without the need for data scrubbing (Patel et al., 2014). Data scrubbing (i.e. volume censoring) cannot be used in our time-series-based analyses here as such a procedure breaks up the temporal structure of the time-series in such a way that invalidates estimation of the Hurst exponent (H) that examine long-memory characteristics. Wavelet denoising is implemented with the Brain Wavelet toolbox (http://www.brainwavelet.org). The 13-parameter regression of motion and CSF signals was achieved using AFNI 3dBandpass with the –ort argument. To further characterize motion and its impact on the data, we computed FD and DVARS (Power et al., 2012). Between-group comparisons showed that all groups were similar with respect to head motion as measured by meanFD with no diagnosis (F(3,106) = 1.77, p=0.18) or sex (F(3,106) = 0.51, p=0.47) main effects or sex-by-diagnosis interaction (F(3,106) = 1.10, p=0.29). All groups showed average meanFD of less than 0.2 mm (see Table 3).
 
@@ -158,43 +445,184 @@ In addition to mass-univariate analysis, we also utilized multivariate partial l
 
 Relationships between H and camouflaging were conducted within autistic males and females separately. Pearson’s correlations were used to estimate the strength of the relationship and groups were compared on the strength of the relationship using Fisher’s r-to-z transform as implemented with the paired.r function in the psych library in R.
 
-## Behavioral index of camouflaging
+### Behavioral index of camouflaging
 
 Camouflaging (consciously or unconsciously compensating for and/or masking difficulties in social–interpersonal situations) was operationalized as prior work (Lai et al., 2017b; Lai et al., 2019): the discrepancy between extrinsic behavioral presentation in social–interpersonal contexts and the person’s intrinsic status. We used both the AQ score and RMET correct score as reflecting intrinsic status (i.e. self-rated dispositional traits and performance-based socio-cognitive/mentalizing capability), and the ADOS Social-Communication total score as reflecting extrinsic behavioral presentation. The three scores were first standardized (SADOS, SAQ and SRMET) within our sample of autistic men and women by mean-centering (to the whole autism sample in this study) and scaling (i.e. divided by the maximum possible score of each) to generate uniformly scaled measures that can be arithmetically manipulated. The first estimate of camouflaging was quantified as the difference between self-rated autistic traits and extrinsic behaviors (CF1 = SAQ − SADOS), and the second estimate between mentalizing ability and extrinsic behaviors (CF2 = −SRMET − SADOS). Then, using principal component analysis, the first principal component score of CF1 and CF2 (accounting for 86% of the total variance) was taken as a single, parsimonious measure of camouflaging for all subsequent analyses. This method was utilized in order to be consistent with prior work which computed the camouflaging metric in an identical fashion (Lai et al., 2017b; Lai et al., 2019). This measure should be interpreted by relative values (i.e. higher scores indicate more camouflaging) rather than absolute values. This operationalization only allows for estimating camouflaging in autistic individuals in our cohort, as it partly derives from the ADOS score which was not available in TD participants. This approach remains informative, as qualitative studies suggest that camouflaging in autism can be different from similar phenomenon (e.g. impression management) in TD individuals (Bargiela et al., 2016; Hull et al., 2017).
 
-## In vivo chemogenetic manipulation of excitation in mouse prefrontal cortex
+### In vivo chemogenetic manipulation of excitation in mouse prefrontal cortex
 
 All in vivo studies in mice were conducted in accordance with the Italian law (DL 116, 1992 Ministero della Sanità, Roma) and the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. Animal research protocols were also reviewed and consented to by the animal care committee of the Istituto Italiano di Tecnologia. The Italian Ministry of Health specifically approved the protocol of this study, authorization no. 852/17 to A.G. All surgical procedures were performed under anesthesia.
 
 Six to eight week-old adult male C57Bl6/J mice (Jackson Laboratories; Bar Harbor, ME, USA) were anesthetized with isoflurane (isoflurane 4%) and head-fixed in a mouse stereotaxic apparatus (isoflurane 2%, Stoelting). Viral injections were performed with a Hamilton syringe mounted on Nanoliter Syringe Pump with controller (KD Scientific), at a speed of 0.05 μl/min, followed by a 5–10 min waiting period, to avoid backflow of viral solution and unspecific labeling. Viral suspensions were injected bilaterally in PFC using the following coordinates, expressed in millimeter from bregma: 1.7 from anterior to posterior, 0.3 lateral, −1.7 deep. The inhibitory DREADD hM4Di was transduced using an AAV8-hSyn-hM4D(Gi)-mCherry construct. Control animals were injected with a control AAV8-hSyn-GFP virus (www.addgene.com). These viral suspensions were injected using a 0.3 μL injection volume in n = 15 hM4Di DREADD and n = 19 SHAM mice, respectively. The excitatory DREADD hM3Dq was transduced using an AAV8-CamkII-hM3D(Gq)-mCherry construct. Control animals for this experiment were injected with a control AAV8-CamkII-GFP construct. This set of injection were carried out using a 1 μL injection volume in n = 17 hM3Dq DREADD and n = 19 SHAM mice, respectively. We waited at least 3 weeks to allow for maximal viral expression.
 
-## Mouse rsfMRI data acquisition
+### Mouse rsfMRI data acquisition
 
 The animal preparation protocol for mouse rsfMRI scanning was previously described in detail (Bertero et al., 2018). Briefly, mice were anesthetized with isoflurane (5% induction), intubated and artificially ventilated (2% maintenance). Then isoflurane was discontinued and substituted with halothane (0.75%), a sedative that preserves cerebral blood flow auto-regulation and neurovascular coupling (Gozzi et al., 2007). Functional data acquisition commenced 30 min after isoflurane cessation. CNO (2 mg/kg for hM4Di and 0.5 mg/kg for hM3Dq) was administered i.v. after 15 min from the beginning of the acquisition both in virally transduced animals and in sham mice.
 
-## Mouse rsfMRI data analysis
+### Mouse rsfMRI data analysis
 
 Raw mouse rsfMRI data was preprocessed as described in previous work (Gutierrez-Barragan et al., 2019; Liska et al., 2015). Briefly, the initial 120 volumes of the time-series were removed to allow for T1 and gradient equilibration effects. Data were then despiked, motion corrected and spatially registered to a common reference template. Motion traces of head realignment parameters (three translations + three rotations) and mean ventricular signal (corresponding to the averaged BOLD signal within a reference ventricular mask) were used as nuisance covariates and regressed out from each time course. All rsfMRI time-series also underwent band‐pass filtering to a frequency window of 0.01–0.1 Hz and spatial smoothing with a full width at half maximum of 0.6 mm.
 
 The experimental design of the study allowed for computation of H during time-windows in the rsfMRI scan before drug injection (i.e. ‘Baseline’), a transition phase where the drug begins having its effect (i.e. ‘Transition’), and a treatment phase when the drug is thought to have its optimal effect (i.e. ‘Treatment’). Analysis of condition, treatment phase, time, and all interactions between such factors was achieved using a sliding window analysis. Each window was 512 volumes in length and the sliding step was 1 vol. H is computed at each window and results in an H time-series. The H time-series is used as the dependent variable in a linear mixed effect model (i.e. using the lme function within the nlme library in R) with fixed effects of condition, time, treatment phase, and all 2-way and 3-way interactions between such factors as well as a factor accounting for scan day. Random effects in the model included time within mouse as well as treatment phase within mouse, all modeled with random intercepts and slopes. This omnibus model was utilized to examine a 3-way interaction between condition, time, and treatment phase. If this interaction was present, we then split the data by the 3 levels of the treatment phase (e.g., Baseline, Transition, and Treatment), in order to examine the main effect of condition or the condition*time interaction. Plots of the data indicate each mouse (grey lines in Figure 3) as well as group trajectories for each phase, with all trajectories estimated with a generalized additive model smoother applied to individual mice and group trajectories.
 
-## In silico recurrent network modeling of LFP and BOLD data
+### In silico recurrent network modeling of LFP and BOLD data
 
-The recurrent network model we use represents a standard cortical circuit incorporating integrate-and-fire excitatory and inhibitory spiking neurons that interact through recurrent connections and receive external inputs (both a sensory driven thalamic input and a sensory unrelated intracortical input, see Figure 1A). The network structure and parameters of the recurrent network model are the same ones used in Cavallari et al., 2014 with conductance-based synapses (for full details see Cavallari et al., 2014). The network is composed of 5000 neurons, of which 4000 are excitatory (i.e. they form AMPA-like excitatory synapses with other neurons) and 1000 inhibitory (forming GABA-like synapses). Neurons are randomly connected with a connection probability between each pair of neurons of 0.2. Both populations receive two different types of external Poisson inputs: a constant-rate thalamic input and an intracortical input generated by an Ornstein-Uhlenbeck (OU) process with zero mean. A description of the baseline reference parameters used in simulations is given in Table 4. The LFP is computed as the sum of absolute values of AMPA and GABA postsynaptic currents on excitatory cells (Mazzoni et al., 2008; Mazzoni et al., 2015). This simple estimation of LFPs was shown to capture more than 90% of variance of both experimental data recorded from cortical field potentials and of simulated data from a complex three-dimensional model of the dipoles generated by cortical neurons (Mazzoni et al., 2008; Mazzoni et al., 2015; Barbieri et al., 2014). We changed the E:I ratio by independently varying the strengths of the inhibitory (gI) and excitatory (gE) synaptic conductances. We called g the relative ratio between inhibitory and excitatory conductances (g=gI/gE). We present results of simulations for two levels of strength of thalamic input (υ0 = 1.5 spikes/second and υ0 = 2 spikes/second), and we verified that our results hold qualitatively for a wider range of input levels (1.5 to 4 spikes/second).
+The recurrent network model we use represents a standard cortical circuit incorporating integrate-and-fire excitatory and inhibitory spiking neurons that interact through recurrent connections and receive external inputs (both a sensory driven thalamic input and a sensory unrelated intracortical input, see Figure 1A). The network structure and parameters of the recurrent network model are the same ones used in Cavallari et al., 2014 with conductance-based synapses (for full details see Cavallari et al., 2014). The network is composed of 5000 neurons, of which 4000 are excitatory (i.e. they form AMPA-like excitatory synapses with other neurons) and 1000 inhibitory (forming GABA-like synapses). Neurons are randomly connected with a connection probability between each pair of neurons of 0.2. Both populations receive two different types of external Poisson inputs: a constant-rate thalamic input and an intracortical input generated by an Ornstein-Uhlenbeck (OU) process with zero mean. A description of the baseline reference parameters used in simulations is given in Table 4. The LFP is computed as the sum of absolute values of AMPA and GABA postsynaptic currents on excitatory cells (Mazzoni et al., 2008; Mazzoni et al., 2015). This simple estimation of LFPs was shown to capture more than 90% of variance of both experimental data recorded from cortical field potentials and of simulated data from a complex three-dimensional model of the dipoles generated by cortical neurons (Mazzoni et al., 2008; Mazzoni et al., 2015; Barbieri et al., 2014). We changed the E:I ratio by independently varying the strengths of the inhibitory ($g_{I}$) and excitatory ($g_{E}$) synaptic conductances. We called g the relative ratio between inhibitory and excitatory conductances ($g=g_{I}/g_{E}$). We present results of simulations for two levels of strength of thalamic input ($υ_{0}$ = 1.5 spikes/second and $υ_{0}$ = 2 spikes/second), and we verified that our results hold qualitatively for a wider range of input levels (1.5 to 4 spikes/second).
+
+**Table 4.**
+ Baseline reference parameters of the recurrent network model.Parameters used in Cavallari et al., 2014 with conductance-based synapses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">A: Neuron model</th>
+    </tr>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Excitatory cells</th>
+      <th>Inhibitory cells</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vleak (mV)</td>
+      <td>Leak membrane potential</td>
+      <td>−70</td>
+      <td>−70</td>
+    </tr>
+    <tr>
+      <td>Vthreshold (mV)</td>
+      <td>Spike threshold</td>
+      <td>−52</td>
+      <td>−52</td>
+    </tr>
+    <tr>
+      <td>Vreset (mV)</td>
+      <td>Reset potential</td>
+      <td>−59</td>
+      <td>−59</td>
+    </tr>
+    <tr>
+      <td>τrefractory (ms)</td>
+      <td>Absolute refractory period</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>gleak (nS)</td>
+      <td>Leak membrane conductance</td>
+      <td>25</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Cm (pF)</td>
+      <td>Membrane capacitance</td>
+      <td>500</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>τm (ms)</td>
+      <td>Membrane time constant</td>
+      <td>20</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td colspan="4">B: Connection parameters</td>
+    </tr>
+    <tr>
+      <td>Parameter</td>
+      <td>Description</td>
+      <td>Excitatory cells</td>
+      <td>Inhibitory cells</td>
+    </tr>
+    <tr>
+      <td>EAMPA (mV)</td>
+      <td>AMPA reversal potential</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EGABA (mV)</td>
+      <td>GABA reversal potential</td>
+      <td>−80</td>
+      <td>−80</td>
+    </tr>
+    <tr>
+      <td>τr(AMPA) (ms)</td>
+      <td>Conductance rise time (AMPA)</td>
+      <td>0.4</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>τd(AMPA) (ms)</td>
+      <td>Conductance decay time (AMPA)</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>τr(GABA) (ms)</td>
+      <td>Conductance rise time (GABA)</td>
+      <td>0.25</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>τd(GABA) (ms)</td>
+      <td>Conductance decay time (GABA)</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>τl (ms)</td>
+      <td>Synapse latency</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>gAMPA(rec.) (nS)</td>
+      <td>AMPA conductance (recurrent)</td>
+      <td>0.178</td>
+      <td>0.233</td>
+    </tr>
+    <tr>
+      <td>gAMPA(tha.) (nS)</td>
+      <td>AMPA conductance (thalamic)</td>
+      <td>0.234</td>
+      <td>0.317</td>
+    </tr>
+    <tr>
+      <td>gAMPA(cort.) (nS)</td>
+      <td>AMPA conductance (intracortical)</td>
+      <td>0.187</td>
+      <td>0.254</td>
+    </tr>
+    <tr>
+      <td>gGABA (nS)</td>
+      <td>GABA conductance</td>
+      <td>2.01</td>
+      <td>2.7</td>
+    </tr>
+  </tbody>
+</table>
 
 For the simulations used to compute H and 1/f slope of LFPs, we simulated a 10 s stretch of network activity from which we extracted a 10 s LFP time series used to compute H and 1/f slopes for each individual value of g (Figure 1B). To estimate power spectral density (PSD) we computed the Fast Fourier Transform with the Welch’s method, dividing the data into ten overlapping segments with 50% overlap. 1/f slopes were computed with least-squares regressions predicting log power with log frequency. A piece-wise regression was applied to fit two line segments to the PSD – one segment to a low frequency region from 1 to 30 Hz and a second segment to a high-frequency region from 30 to 100 Hz.
 
 As a basis for our model translating BOLD from LFP data, we note that prior studies with simultaneous electrophysiological and fMRI recordings in non-human primates have established that BOLD signal amplitude is more closely correlated with LFP than with any other type of neuronal events, such as spikes (Logothetis et al., 2001; Magri et al., 2012). Similarly, simultaneous electroencephalogram (EEG)/fMRI studies in humans have found that the BOLD correlates with the EEG (Scheeringa et al., 2011; Scheeringa et al., 2009), which in turns correlates strongly with the LFP (Whittingstall and Logothetis, 2009). Importantly, the BOLD amplitude at any given time has been found to correlate preferentially with the power of high frequency bands. In particular, the BOLD amplitude correlates strongly with the gamma (40–100 Hz) band. However, the power distribution across frequency bands carries complementary information about the BOLD signal, meaning that each band contributes to the prediction of BOLD and predicting the BOLD signal directly from a wide band (i.e. the whole LFP spectrum) leads to poorer predictions of BOLD (Logothetis et al., 2001; Magri et al., 2012; Schölvinck et al., 2010; Scheeringa et al., 2011; Goense and Logothetis, 2008; Kilner et al., 2005). To account for these empirical observations, we have developed a model of BOLD signal that integrates contributions from different bands with a preferential contribution from high frequency bands.
 
-To compute the simulated BOLD through the convolutions of the simulated LFPs, we needed to generate longer time-series than the initial 10 seconds simulated for LFPs. However, it was unfeasible to simulate very long BOLD time-series due to limitations on computational resources. We thus created, from the LFP data used for evaluations of individual g values, aggregated LFP time-series corresponding to different intervals of g (rather than individual values of g), as follows. The set of 10-second LFP time-series was divided into 3 equi-populated groups of g: g < 7.5, 7.5 < g < 11 and  g > 11. A concatenated LFP time-series was created for each group by randomly concatenating 20 LFP traces, which provided 200-second LFP signals. Low frequencies of the concatenated data were log-log linearly extrapolated based on the low-frequency slopes obtained in LFP log-log linear piecewise fitting. To account for statistical variability, the process of concatenating data was repeated 20 times for each group of g, randomly changing the order in which the individual LFP traces were combined within the group.
+To compute the simulated BOLD through the convolutions of the simulated LFPs, we needed to generate longer time-series than the initial 10 seconds simulated for LFPs. However, it was unfeasible to simulate very long BOLD time-series due to limitations on computational resources. We thus created, from the LFP data used for evaluations of individual g values, aggregated LFP time-series corresponding to different intervals of g (rather than individual values of g), as follows. The set of 10-second LFP time-series was divided into 3 equi-populated groups of $g:g$ < 7.5, 7.5 < $g$ < 11 and $g$ > 11. A concatenated LFP time-series was created for each group by randomly concatenating 20 LFP traces, which provided 200-second LFP signals. Low frequencies of the concatenated data were log-log linearly extrapolated based on the low-frequency slopes obtained in LFP log-log linear piecewise fitting. To account for statistical variability, the process of concatenating data was repeated 20 times for each group of g, randomly changing the order in which the individual LFP traces were combined within the group.
 
 Once concatenated LFP time-series data was simulated, we compute the simulated BOLD time-series as the LFP data convolved not only with a hemodynamic response function (HRF), as in standard network models (Deco et al., 2004; Wijeakumar et al., 2017; Buss et al., 2014), but also with a high-pass filter (HPF) that gives more predictive power to higher LFP frequencies (Figure 2—figure supplement 1B). We have tested different parameters of the HPF, checking that changing the parameters produce qualitatively similar results and a monotonic correspondence between H of simulated LFP and H of simulated BOLD, and we opted for a HPF with a cutoff frequency (the frequency where the response is lowered by 3 dB) of 12.5 Hz and with a peak response at 20 Hz. The effect of the HPF was to attenuate low frequencies of the BOLD power distribution, partly compensating the low-frequency enhancement of HRFs, and to shift the peak frequency of BOLD power to 0.03 Hz, a value much closer to the peak frequency found in our real BOLD data and in most BOLD studies (Alcauter et al., 2015; Allen et al., 2011) with respect to the one that would have been obtained without convolution (see Figure 2—figure supplement 1).
 
-To simulate BOLD response from the LFP data generated from the recurrent model, within the frequency domain we multiplied the LFP spectrum with spectra of the high-pass filter (HPF) and the hemodynamic response function (HRF), as follows:FFTBOLD=FFTLFPFFT(HPF)FFTHRF+ η
+To simulate BOLD response from the LFP data generated from the recurrent model, within the frequency domain we multiplied the LFP spectrum with spectra of the high-pass filter (HPF) and the hemodynamic response function (HRF), as follows:
 
-Where FFT is the fast Fourier transform operation and η is a constant white noise term. This noise term summarizes neurovascular relationship at frequencies not observable because they are faster than the BOLD acquisition frequencies. We assumed that the amplitude of η was very small and we assigned small values to this noise term. We checked that the exact value of amplitude of η, or the spectral profile of this noise term (for example, simulating 1/f noise instead of white noise), did not alter the monotonic relationship between the simulated H of BOLD and LFP. Finally, the simulated BOLD time-series data was produced by applying the inverse Fourier transform of FFTBOLD and then downsampling the resulting signal to a lower sampling rate, similar to that used in BOLD experiments (e.g., 0.5 Hz). The HRF used for simulating BOLD was the HRF from Magri et al., 2012, but similar results were obtained when using a canonical HRF (see Figure 2—figure supplement 2).
+$$
+FFTBOLD=FFTLFPFFT(HPF)FFTHRF+η
+$$
 
-## Analyses examining enrichment of autism-associated genes in different cell types with genes differentially expressed by androgen hormones
+Where $FFT$ is the fast Fourier transform operation and $η$ is a constant white noise term. This noise term summarizes neurovascular relationship at frequencies not observable because they are faster than the BOLD acquisition frequencies. We assumed that the amplitude of $η$ was very small and we assigned small values to this noise term. We checked that the exact value of amplitude of $η$, or the spectral profile of this noise term (for example, simulating 1/f noise instead of white noise), did not alter the monotonic relationship between the simulated H of BOLD and LFP. Finally, the simulated BOLD time-series data was produced by applying the inverse Fourier transform of $FFTBOLD$ and then downsampling the resulting signal to a lower sampling rate, similar to that used in BOLD experiments (e.g., 0.5 Hz). The HRF used for simulating BOLD was the HRF from Magri et al., 2012, but similar results were obtained when using a canonical HRF (see Figure 2—figure supplement 2).
+
+### Analyses examining enrichment of autism-associated genes in different cell types with genes differentially expressed by androgen hormones
 
 To test hypotheses regarding cell types that may be affected by androgen influence, we examined genes linked to autism via rare de novo protein truncating variants that are enriched for expression in specific cell types (Satterstrom et al., 2020). Of the 102 genes reported by Satterstrom et al., we split these lists by enrichments in early excitatory neurons (C3), MGE derived cortical interneurons (C16), microglia (C19), and astrocytes or oligodendrocyte precursor cells (C4). In addition to high risk mutations linked to autism, we additionally used a list of genes differentially expressed (DE) in different cell types within post-mortem prefrontal and anterior cingulate cortex tissue of autistic patients (Velmeshev et al., 2019). These DE gene lists were split into cell types, and we examined DE genes in any excitatory neuronal cell class (L2/3, L4/L5/6), inhibitory cell classes (IN-PV, IN-SST, IN-VIP, IN-SV2C), microglia, astrocytes (AST-PP, AST-FB), and oligodendrocytes.
 
@@ -202,6 +630,6 @@ To test the question of whether cell type autism-associated gene lists were enri
 
 To test how the DHT-sensitive and autism-associated genes in excitatory neurons are expressed across the human adult brain, we used whole-brain maps of expression for each gene in MNI space from the Allen Institute Human Brain Atlas (Hawrylycz et al., 2012). Maps for each gene were downloaded from the Neurosynth website (https://neurosynth.org/genes/) and then submitted to a one-sample t-test in SPM12, with a threshold of FDR q < 0.01.
 
-## Data and code availability
+### Data and code availability
 
 Tidy data and analysis code are available at https://github.com/IIT-LAND/ei_hurst; Trakoshis, 2020a; copy archived at https://github.com/elifesciences-publications/ei_hurst. Source code of the recurrent network model is available at https://github.com/pablomc88/EEG_proxy_from_network_point_neurons; Trakoshis, 2020b; copy archived at https://github.com/elifesciences-publications/EEG_proxy_from_network_point_neurons. Raw RNA-seq data used to identify genes differentially expressed by DHT can be found in Gene Expression Omnibus (GSE86457). Data for the Allen Institute Human Brain Atlas can be found here: https://human.brain-map.org. Mapping of this data to MNI space can be found at the Neurosynth website (https://neurosynth.org/genes/).

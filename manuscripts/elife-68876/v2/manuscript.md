@@ -35,37 +35,228 @@ The primary aim of our current study was to assess the efficacy of sequential tr
 
 ## Results
 
-## Triple β-lactam sequential treatments favor extinction of bacterial populations
+### Triple β-lactam sequential treatments favor extinction of bacterial populations
 
 We challenged a total of 756 replicate P. aeruginosa populations with sequential treatments across three fully independent evolution experiments, each focused on a different set of three antibiotics (Figure 1, Figure 1—figure supplement 1, Supplementary file 1A, Materials and methods). The antibiotic concentrations were calibrated to an inhibitory concentration of 75% (IC75), allowing bacteria to adapt to the imposed selection pressure. We used a serial dilution protocol for experimental evolution, with 2% culture transfer after 12 hr (one transfer) across a total of 96 transfers, equivalent to approximately 500 bacterial generations. Following the previous setup (Roemhild et al., 2018), we recorded the evolutionary dynamics in response to 16 different treatments, belonging to four main treatment types: monotherapy, fast-regular, slow-regular, and random sequential therapy (Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/68876/elife-68876-fig1-v2.jpg)
+
+**Figure 1.:** (A) The evaluated antibiotic combinations comprise different types of antibiotic targets. Fluoroquinolone antibiotics (FQ) target DNA gyrase, aminoglycosides (AG) inhibit translation, and β-lactams (BL) inhibit cell-wall synthesis. (B) The evaluated treatment protocols test the effects of switching rate and temporal regularity. (C) A fraction of lineages is eradicated by the sublethal dosage sequential treatments. Lineage extinction is high for combinations of cell-wall targeting β-lactams. (D) Variation in extinction for the β-lactam combinations by treatment type (n = 3–6 protocols per treatment type). (E) The distribution of evolutionary trajectories for Exp. 3 with CAR-DOR-CEF shows that the majority of extinction events occur within the first 12 serial transfers (n = 180 lineages). Growth of evolving lineages is quantified relative to untreated reference populations using the relative area under the growth curve (AUC). AZL: azlocillin; CAR: carbenicillin; CEF: cefsulodin; CEZ: ceftazidime; CIP: ciprofloxacin; DOR: doripenem; GEN: gentamicin; STR: streptomycin; TIC: ticarcillin. The following supplementary material is available for Figure 1: Figure 1—figure supplement 1, Figure 1—source data 1, Figure 1—figure supplement 1—source data 1, Supplementary file 1A.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68876/elife-68876-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Red text and points indicate IC75 inhibitory concentrations as applied in the evolution experiments. Gray line indicates Nelder–Mead dose-response model (R package drc). The source data is provided in Figure 1—figure supplement 1—source data 1.
+
 Extinction of experimental populations differed considerably between the antibiotic sets. The two β-lactam sets produced a surprisingly high degree of extinction (CAR-CEF-DOR and TIC-AZL-CEZ; extinct fraction 27.2 and 13.3%, respectively, Figure 1C). The observed extinction frequency was comparable to that observed in the previous experiment with CAR-CIP-GEN (extinct fraction 15%, Figure 1C). CIP-DOR-STR caused no extinction, indicating that extinction was not explained by applying heterogeneous sets of antibiotics. Within the β-lactam sequential treatments, we observed that treatments that switched between antibiotics fast (every transfer) produced much higher extinction levels than those that switched slowly (every four transfers) or not at all (Figure 1D). Most of the extinction events happened early in the experiment (Figure 1E), indicating that the initial treatment steps are critical for adaptation of populations. We conclude that fast sequential β-lactam treatments showed a surprising ability to restrict bacterial adaptation. As this result was unexpected, we decided to research the mechanisms that constrain resistance emergence in β-lactam sequences. Given that the experiment involving CAR-CEF-DOR produced the highest fraction of extinct populations, we decided to focus further analyses on this set.
 
-## Resistance to doripenem was constrained in both monotherapy and switching treatments in the CAR-CEF-DOR triple β-lactam experiment
+### Resistance to doripenem was constrained in both monotherapy and switching treatments in the CAR-CEF-DOR triple β-lactam experiment
 
 The CAR-CEF-DOR triple β-lactam experiment was characterized in detail for changes in growth, evolved resistance, and whole-genome sequences in order to assess the selection dynamics involved. We calculated the relative growth yield (see Materials and methods) at the end of each transfer and found growth dynamics to be divided into three phases: an early phase of rapid adaptation (transfers 1–12), followed by a phase of gradual growth yield convergence (transfers 13–48), and a final plateau phase (transfers 49–96) (Figure 2A; the growth phases are separated by vertical dotted lines). We compared the main treatment types using general linear models (GLM) for each phase separately (this fulfills the model assumption of response linearity). The early phase dynamics were characterized by significantly decelerated adaptation dynamics of the fast-regular group compared with monotherapy and slow-regular (GLM, post hoc test, p<0.037, Supplementary file 1B), but not random treatments. The slow-regular treatment did not differ significantly from monotherapy or random treatments (GLM, post hoc test, p=0.469, Supplementary file 1B). In the subsequent phase, growth yields of the groups converged to a plateau of roughly 90% relative yield, indicating similar final levels of adaptation (the growth yields of main treatment groups showed no statistical differences in phases 2 and 3, Supplementary file 1B). Alternating between the β-lactams fast and in a regular order therefore significantly constrained the growth of the bacterial populations. Intriguingly, in these fast sequential treatments, bacterial growth in the transfers with DOR was lower than in the transfers with the other two antibiotics (Figure 2—figure supplement 1), indicating an evolutionary constraint associated with the antibiotic DOR. We can rule out the alternative hypotheses that the reduced growth is explained by a stronger initial reduction in bacterial population size by DOR in comparison to the other two drugs or increased stochastic variation in dosage effects. All treatments were initiated using specifically standardized IC75 dosage (see Materials and methods) and at the IC75, DOR showed very little variation (Figure 1—figure supplement 1). We thus hypothesize that the observed evolutionary constraint may be due to lower rate of DOR resistance emergence.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68876/elife-68876-fig2-v2.jpg)
+
+**Figure 2.:** (A) Rapid adaptive increase of biomass yields relative to the untreated reference populations (mean ± CI95; n = 3–6 protocols per treatment type and 12 biological replicates per sequence; extinct lineages excluded). Vertical dotted lines separate the three growth phases. Evolved changes in the susceptibility to the treatment antibiotics CAR, DOR, and CEF and the non-treatment antibiotics CIP and GEN after transfer 12 (B) or transfer 48 (C), evaluated with 20 isolates each for the 16 representative adapting populations at each time point. Mono 1 is monotherapy with CAR, mono 2 is monotherapy with DOR, and mono 3 is monotherapy with CEF. The evolution of resistance and hypersensitivity is indicated by red and blue colors, respectively, given for the considered isolates as horizontal lines (total of 640 isolates), sorted according to evolution treatment (main rows in the figures) and tested antibiotics (main columns; antibiotics given at the bottom). Pie charts on the right show phenotypic within-population diversity, where different colors indicate subpopulations inferred from hierarchical clustering of resistance phenotypes. CAR: carbenicillin; CEF: cefsulodin; CIP: ciprofloxacin; DOR: doripenem; GEN: gentamicin. The following supplementary material is available for Figure 2: Figure 2—figure supplement 1, Figure 2—figure supplement 2, Figure 2—figure supplement 3, Figure 2—figure supplement 4, Figure 2—figure supplement 5, Figure 2—source data 1, Figure 2—figure supplement 1—source data 1, Figure 2—figure supplement 2—source data 1, Figure 2—figure supplement 3—source data 1, Figure 2—figure supplement 5—source data 1, Supplementary file 1B.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68876/elife-68876-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Evolutionary growth improvements for fast protocol #6 (mean of the seven surviving lineages). Relative growth increased to the antibiotics at different rates, demonstrating the consecutive evolution of resistance, and thus coexistence of genetic subpopulations. The resulting clonal interference may explain the drop of growth on CEF around transfer 50, and the subsequent growth oscillations during CEF. (B) Mean difference of growth during exposures to particular antibiotics in fast sequential protocols #5–7 compared to growth in monotherapies after the same number of exposures to that drug. X-axis denotes exposures to a particular antibiotic, and thus goes to 96/3 = 32. Multidrug exposure accelerated adaptation compared to monotherapy against CAR and CEF, but slowed down adaptation against DOR. The source data is provided in Figure 2—figure supplement 1—source data 1.CAR: carbenicillin; CEF: cefsulodin; DOR: doripenem.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68876/elife-68876-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Gray lines show data from evolved isolates, magenta lines show repeated measurements of the PA14 ancestor. The source data is provided in Figure 2—figure supplement 2—source data 1. CAR: carbenicillin; CEF: cefsulodin; DOR: doripenem.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/68876/elife-68876-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The resistance values are depicted in Figure 2B, C. The boxes show interquartile range (25th to 75th percentile), the thick line indicates the median. Whiskers cover data range but are capped at maximum 1.5× the interquartile range. The source data is provided in Figure 2—figure supplement 3—source data 1.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/68876/elife-68876-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** The resistance values are depicted in Figure 2B, C. The boxes show interquartile range (25th to 75th percentile), the thick line indicates the median. Whiskers cover data range but are capped at maximum 1.5× the interquartile range. Statistical difference between time points was assessed using Wilcoxon rank-sum test as described in Supplementary file 1F. A blue shading of the background indicates significant decrease of resistance, and a yellow background shading indicates a significant increase of resistance. p-values were adjusted by Bonferroni correction. The figure is a different representation of the data shown in the heatmaps of Figure 2B, C. The source data is accordingly provided in Figure 2—source data 1. The results of the statistical analysis are provided in Supplementary file 1F.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/68876/elife-68876-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** The left column indicates the sum of resistance scores for the β-lactam antibiotics CAR, DOR, and CEF, which were used for the evolution experiment. The right column indicates the sum of collateral resistance to the antibiotics CIP and GEN, which were not used in the evolution experiment. Clones are depicted in the same order as in Figure 2B, C, and on the same color scale. The source data is provided in Figure 2—figure supplement 5—source data 1. CAR: carbenicillin; CEF: cefsulodin; CIP: ciprofloxacin; DOR: doripenem; GEN: gentamicin.
 
 To understand the dynamics of early adaptation in more detail, we measured the resistance profiles of 16 evolved populations after transfers 12 and 48 from the different antibiotic treatments (representing the end of phases 1 and 2, respectively; Figure 2B, C, Figure 2—figure supplements 2–5, Supplementary file 1B–F; see Materials and methods). We randomly sampled 20 bacterial colonies from each population and characterized their resistance profile by broth microdilution. Resistance was measured for the three antibiotics of the evolution experiment and two additional clinically relevant antibiotics from different classes, ciprofloxacin and gentamicin. The resistance profiles in the early and the mid phases were found to be distinctly different. Resistance to the used β-lactams increased across the two time points only in some treatments, but not all (Figure 2B, C, Figure 2—figure supplement 4, Figure 2—figure supplement 5, Supplementary file 1F), suggesting treatment-dependent evolutionary responses to the antibiotics. We assessed how the main treatment types varied in their β-lactam resistance using a GLM for each phase separately. Most treatment types varied significantly from each other in their multidrug β-lactam resistance in both phases (Supplementary file 1C, D). The multidrug resistance in the early phase was in most cases constrained by the susceptibility to DOR (e.g., in the switching and monotherapy treatments). We additionally observed collateral responses of the treatment to the two non-β-lactams, which increased over time. We further used hierarchical clustering of the resistance profiles to assess the presence of subpopulations, followed by calculation of Shannon diversity for each population at both transfers. We found population diversity to be significantly higher at transfer 48 as compared to transfer 12 (ANOVA, F = 6.2060, p=0.01893, Supplementary file 1E), indicating a diversification of the evolving lineages over time. Taken together, the population analysis of resistance profiles indicates that resistance evolution depends on the exact treatment protocol and that the dynamics of resistance emergence to DOR may be key for the observed deceleration of β-lactam adaptation in the fast-regular treatments.
 
 To identify the genomic changes underlying the first steps of β-lactam adaptation, we sequenced 33 whole genomes of the evolved and characterized isolates from the monotherapy, fast-regular, and slow-regular treatment types. Specifically, we sequenced three isolates from each population representing the distinct phenotypic subpopulations, assessed above. We found that all isolates, except those that received DOR monotherapy, had mutations in known resistance genes by the end of the early phase (Table 1). This agreed with the inferred resistance profiles where isolates from the DOR monotherapy did not show a noticeable amount of resistance at that stage (Figure 2B). DOR resistance was, however, found at the end of the middle phase (Figure 2C), and this was mirrored in the genomics with a non-synonymous mutation in the gene ftsI. This gene codes for the penicillin binding protein 3 (PBP3) (Liao and Hancock, 1995), a common target of the three β-lactams (Davies et al., 2008; Fontana et al., 2000; Rodriguez‐Tebár et al., 1982; Rodríguez-Tebar et al., 1982; Zimmermann, 1980). ftsI was also found to be mutated in isolates from CAR monotherapy, although at a different site within the gene and associated with a different resistance profile than the DOR-associated ftsI variant (Figure 2B). Isolates from CEF monotherapy contained mutations in pepA. This gene is responsible for the production of a protein required for cytotoxicity and virulence in P. aeruginosa (Hauser et al., 1998). Although its role in antimicrobial resistance remains to be studied in detail, it was previously found to be mutated in P. aeruginosa strains resistant to certain β-lactams (Cabot et al., 2018; Sanz-García et al., 2018). The switching treatments selected for mutations in the above-listed and also in some additional genes. In particular, we identified mutations in nalD and phoQ, a negative regulator of the MexAB-OprM efflux pump and a two-component system, respectively. Mutations in these genes account for resistance to a variety of drugs in P. aeruginosa (Barbosa et al., 2021; Sobel et al., 2005). Further mutations were identified in some non-canonical β-lactam resistance genes such as rmcA, 23srRNA, 3-oxoacyl synthase, dnaX, and zipA (Table 1). Taken together, mutations in both canonical and non-canonical targets of β-lactam selection were identified in our experiment, and among these, DOR resistance mutations were found only later in the experiment, consistent with the obtained resistance profiles (Figure 2B, C).
 
+**Table 1.**
+ Evolved genetic changes inferred from whole-genome sequencing. Table 1—source data 1.Source data for the summary of the genome sequencing analysis shown in Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Treatment type</th>
+      <th>ID*</th>
+      <th>AA change†</th>
+      <th>Gene name</th>
+      <th>Annotation</th>
+      <th>Freq‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monotherapy</td>
+      <td>1</td>
+      <td>V471G</td>
+      <td>ftsI</td>
+      <td>Peptidoglycan synthesis</td>
+      <td>3/3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2§</td>
+      <td>N242S</td>
+      <td>ftsI</td>
+      <td>Peptidoglycan synthesis</td>
+      <td>3/3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>T157P</td>
+      <td>pepA</td>
+      <td>Virulence</td>
+      <td>3/3</td>
+    </tr>
+    <tr>
+      <td>Fast-rgular</td>
+      <td>5</td>
+      <td>V471G</td>
+      <td>ftsI</td>
+      <td>Peptidoglycan synthesis</td>
+      <td>3/3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>6</td>
+      <td>K26</td>
+      <td>nalD</td>
+      <td>Efflux</td>
+      <td>3/3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>S379ISR</td>
+      <td>rmcA</td>
+      <td>Biofilm maintenance</td>
+      <td>1/3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>7</td>
+      <td>R220C</td>
+      <td>phoQ</td>
+      <td>Two-component</td>
+      <td>3/3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>PA14_55631</td>
+      <td>23srRNA, translation</td>
+      <td>1/3</td>
+    </tr>
+    <tr>
+      <td>Slow-rgular</td>
+      <td>8</td>
+      <td>V471G</td>
+      <td>ftsI</td>
+      <td>Peptidoglycan synthesis</td>
+      <td>3/3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>9</td>
+      <td>D357N</td>
+      <td>pepA</td>
+      <td>Virulence</td>
+      <td>3/3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>10</td>
+      <td>T157P</td>
+      <td>pepA</td>
+      <td>Virulence</td>
+      <td>3/3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>E115VAAWIPK</td>
+      <td>PA14_21540</td>
+      <td>Lipid metabolism (3-exoacyl ACP synthase)</td>
+      <td>1/3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Q117AEEQ</td>
+      <td>PA14_21540</td>
+      <td>Lipid metabolism (3-exoacyl ACP synthase)</td>
+      <td>1/3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>R178C</td>
+      <td>zipA</td>
+      <td>Cell division</td>
+      <td>2/3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P483PEP</td>
+      <td>dnaX</td>
+      <td>Cell division</td>
+      <td>1/3</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Individual treatment of evolution experiment.† Amino acid change.‡ Occurrence frequency of the identified variant (before slash) out of the total number of isolates sequenced (behind slash).§ Mutations listed are from isolates obtained from the populations frozen at transfer 48, no variants were found in the isolates from transfer 12._
+
 Based on our detailed characterization of the CAR-CEF-DOR triple β-lactam experiment, we conclude that DOR has a key role in restricting evolutionary rescue as evidenced by the delayed acquisition of genetic resistance to it.
 
-## Asymmetric bidirectional hysteresis was identified between doripenem and carbenicillin
+### Asymmetric bidirectional hysteresis was identified between doripenem and carbenicillin
 
 As extinction was associated with antibiotic switches, we next focused on selective events that can occur at drug switches, such as hysteresis, an inducible physiological change. We characterized the complete hysteresis landscape between the three β-lactams: CAR, DOR, and CEF. We pretreated exponential phase cells with an antibiotic for only 15 min to ensure that cells are physiologically challenged but not subject to differential killing or replication. The pretreatment was followed by a change to fresh medium containing a second antibiotic as main treatment. We included controls of no pretreatment, or no main treatment (Figure 3A). We found that negative hysteresis existed for several switches between the β-lactams (Figure 3B, C, Figure 3—figure supplement 1, Figure 3—figure supplement 2). DOR and CAR displayed asymmetric bidirectional negative hysteresis with the switch from DOR to CAR, resulting in stronger negative hysteresis than the reverse. Negative hysteresis was also observed in the switch from CAR to CEF and CEF to CEF. To our surprise, only a single case of weak positive hysteresis was observed, although we generally anticipated it given that P. aeruginosa produces the AmpC β-lactamase (Livermore, 1995). We conclude that negative hysteresis is abundant between the studied β-lactams and is a potential predictor of treatment potency in the sequential β-lactam treatments.
 
-## Probability of direct and indirect resistance was the least for doripenem
+![Figure 3.](https://cdn.elifesciences.org/articles/68876/elife-68876-fig3-v2.jpg)
+
+**Figure 3.:** (A) Hysteresis effects were measured using the previously established experimental approach (see Materials and methods). (B) Bacterial counts were plotted over time after the pretreatment to obtain time-kill curves (mean ± sem, n = 3). Level of hysteresis was quantified as the difference between the antibiotic switch and the only main curves. Negative values indicate negative hysteresis and positive values indicate positive hysteresis. (C) Heatmap of hysteresis levels between all nine combinations of the three β-lactams. DOR and CAR show asymmetric bidirectional negative hysteresis. Negative hysteresis is also observed in switches from CEF to CEF and CAR to CEF. Weak positive hysteresis is found for the switch from CEF to CAR. The following supplementary material is available for Figure 3: Figure 3—figure supplement 1, Figure 3—figure supplement 2, Figure 3—source data 1, Figure 3—figure supplement 1—source data 1. CAR: carbenicillin; CEF: cefsulodin; DOR: doripenem.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68876/elife-68876-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The source data is provided in Figure 3—figure supplement 1—source data 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68876/elife-68876-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** This figure is a different representation of the same data shown in the heatmap of Figure 3C. The source data for this figure is accordingly provided in Figure 3—source data 1.
+
+### Probability of direct and indirect resistance was the least for doripenem
 
 Since resistance to DOR was constrained in both the monotherapy and the switching treatments (Figure 2B), we hypothesized that DOR resistance was difficult to achieve compared to the other two β-lactams. Resistance against a given drug can arise because of spontaneous direct resistance and/or because of collateral resistance from the preceding antibiotics in the sequence. As a first step, we thus measured the spontaneous direct resistance rate with the classic fluctuation assay using identical inhibitory concentrations of the three antibiotics (Luria and Delbrück, 1943; Figure 4A, Supplementary file 1G). To determine the probability of indirect resistance in a second step, we isolated the obtained single-step mutants and quantified the fraction of cross-resistance towards the other two β-lactams with a patching assay (Figure 4A). We used a comparatively large number of spontaneous mutants for this analysis (n = 60 per antibiotic) to capture the stochastic nature of evolution and, in this context, the potential importance of collateral effects for bacterial adaptation, as previously emphasized (Nichol et al., 2019). We found that the spontaneous resistance rate was significantly lower for DOR than for CAR and CEF (likelihood ratio test, p<0.0001 and p<0.01, respectively; Supplementary file 1H, Figure 4B). Moreover, the resulting cross-resistance effects (Figure 4C) were particularly common towards CAR (93% of clones with spontaneous CEF resistance and 71% with DOR resistance) and CEF (73% of originally CAR-resistant clones and 67% DOR-resistant clones). By contrast, the smallest levels of cross-resistance were expressed towards DOR (36% of originally CAR-resistant clones and 50% CEF-resistant clones). The overall fraction of cross-resistant clones was significantly smaller towards DOR than either CEF or CAR (Fisher's exact test, p<0.0004; Supplementary file 1I). We conclude that of the three β-lactams DOR had the lowest probability for both direct and indirect resistance, thereby providing experimental support to the indication of constrained DOR resistance evolution obtained from the detailed phenotypic and genomic characterization of the evolved bacteria (Figure 2, Table 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/68876/elife-68876-fig4-v2.jpg)
 
-**Figure 4.:** (A) Schematic of the experimental protocol to determine spontaneous rates of resistance on each of the three β-lactams and the resulting collateral landscape. Briefly, an overnight culture was taken and split into 30 parallel cultures where bacteria were allowed to divide in the absence of an antibiotic and any other constraint. Spontaneous resistant mutants were selected on minimal inhibitory concentration (MIC) plates and restreaked to ensure genetic resistance. These mutants were then patched on MIC plates of the other two β-lactams to test for cross-resistance. (B) Comparison of rates of spontaneous resistance on the three β-lactams on a Log10 scale. Error bars depict CI95. All comparisons were found to be significantly different from each other (likelihood ratio test; CAR vs. CEF p<0.0001, CAR vs. DOR p<0.0001, and DOR vs. CEF p<0.01). (C) Landscape of collateral effects between the three β-lactams. Fraction of cross-resistant mutants per antibiotic combination is plotted. DOR has the least cases of cross-resistance of the three. A total of 60 mutants per antibiotic were used for collateral effect testing. The following supplementary material is available for Figure 4: Figure 4—source data 1, Supplementary file 1G–I. CAR: carbenicillin; CEF: cefsulodin; DOR: doripenem.  Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Schematic of the experimental protocol to determine spontaneous rates of resistance on each of the three β-lactams and the resulting collateral landscape. Briefly, an overnight culture was taken and split into 30 parallel cultures where bacteria were allowed to divide in the absence of an antibiotic and any other constraint. Spontaneous resistant mutants were selected on minimal inhibitory concentration (MIC) plates and restreaked to ensure genetic resistance. These mutants were then patched on MIC plates of the other two β-lactams to test for cross-resistance. (B) Comparison of rates of spontaneous resistance on the three β-lactams on a Log10 scale. Error bars depict CI95. All comparisons were found to be significantly different from each other (likelihood ratio test; CAR vs. CEF p<0.0001, CAR vs. DOR p<0.0001, and DOR vs. CEF p<0.01). (C) Landscape of collateral effects between the three β-lactams. Fraction of cross-resistant mutants per antibiotic combination is plotted. DOR has the least cases of cross-resistance of the three. A total of 60 mutants per antibiotic were used for collateral effect testing. The following supplementary material is available for Figure 4: Figure 4—source data 1, Supplementary file 1G–I. CAR: carbenicillin; CEF: cefsulodin; DOR: doripenem.
 
-## The rate of spontaneous resistance and resulting cross-resistance determine treatment efficacy
+### The rate of spontaneous resistance and resulting cross-resistance determine treatment efficacy
 
 We used the collected information to identify the critical determinant(s) of treatment efficacy in the CAR-CEF-DOR triple β-lactam experiment. We assessed the influence of either the two experimental predictors (switching rate, temporal irregularity) or the three biological predictors (hysteresis, probability of spontaneous resistance, and resulting cross-resistance) on each of the evolutionary responses extinction, rate of growth adaptation, and multidrug resistance, using separate GLM-based analyses (see Materials and methods; Supplementary file 1J–O). For the biological predictors, we calculated the levels of cumulative hysteresis, cumulative probability of spontaneous resistance, and the cumulative levels of cross-resistance in each of the 16 individual treatments up to transfer 12 (see Materials and methods). We focused our analysis on the early phase of evolution up to transfer 12 as it appeared most critical for treatment efficacy, especially for population extinctions that usually occurred early (Figure 1E). Our analysis revealed that extinction was significantly associated with both the experimental predictors, switching rate (GLM, F = 14.44, p=0.0042, Figure 5B, Supplementary file 1J–M) and temporal irregularity (GLM, F = 10.53, p=0.0101, Supplementary file 1M). Temporal irregularity further showed a statistical trend with multidrug resistance (GLM, F = 4.19, p=0.0711, Supplementary file 1M). From our biological predictors, the cumulative cross-resistant fraction showed a significant association with extinction (GLM, F = 10.42, p=0.0121, Supplementary file 1O), while cumulative probability of spontaneous resistance showed a statistical trend (GLM, F = 4.14, p=0.0763, Supplementary file 1O). Indeed, the cumulative cross-resistant fraction and also the cumulative probability of spontaneous resistance are strongly correlated with extinction (Figure 5B). The cumulative cross-resistant fraction is also strongly correlated with switching rate (Figure 5—figure supplement 1), most likely explaining the latter impact on extinction. By contrast, cumulative hysteresis levels did not have a significant influence on any of the evolutionary responses (GLM, F = 0.16, p=0.7015, Supplementary file 1O). Taken together, our results suggest that in our sequential CAR-CEF-DOR treatments the switching rate, temporal irregularity of antibiotics, the probability of spontaneous resistance, and especially the resulting collateral effects (maximized by switching rate) determine treatment efficacy through their effect on bacterial extinction. The limiting factor appears to be constrained evolution of resistance and low levels of cross-resistance to DOR.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68876/elife-68876-fig5-v2.jpg)
+
+**Figure 5.:** (A) Variation in experimental parameters, potential biological predictors, and the measured traits up to transfer 12. The experimental parameters include switching rate and regularity of change (high irregularity in dark). Potential biological predictors are cumulative levels of hysteresis (dark indicates protective effects), cumulative probabilities of spontaneous resistance (Spont. res., dark indicates higher probability), and cumulative level of collateral effects (Cross-res., dark indicates high fraction of cross-resistance). The evolutionary response was measured for population survival (max = 12), adaptation rate (Adapt. rate, n ≤ 12, extinct lineages excluded), evolved multidrug resistance (MDR) to treatment antibiotics CAR, DOR, and CEF (MDR, n = 16). (B) Variation in extinction was best explained by collateral effects between the antibiotics (for illustrative purposes, the red line depicts linear regression and ρS the Spearman’s rank correlation coefficient). The following supplementary material is available for Figure 5: Figure 5—figure supplement 1, Figure 5—source data 1, Supplementary file 1J–O. CAR: carbenicillin; CEF: cefsulodin; DOR: doripenem.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68876/elife-68876-fig5-figsupp1-v2.jpg)
 
 ## Discussion
 
@@ -87,56 +278,154 @@ Taken together, our study highlights that the available antibiotics offer unexpl
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Pseudomonas aeruginosa)</td>
+      <td>PA14</td>
+      <td>https://doi.org/10.1126/science.7604262</td>
+      <td>UCBPP-PA14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AZL (azlocillin)</td>
+      <td>Sigma</td>
+      <td>A7926-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CAR (carbenicillin)</td>
+      <td>Carl Roth</td>
+      <td>6344.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CIP (ciprofloxacin)</td>
+      <td>Sigma</td>
+      <td>17850-5 G-F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CEF (cefsulodin)</td>
+      <td>Carl Roth</td>
+      <td>4014.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CEZ (ceftazidime)</td>
+      <td>Sigma</td>
+      <td>C3809.1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DOR (doripenem)</td>
+      <td>Sigma</td>
+      <td>32138-25 MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GEN (gentamicin)</td>
+      <td>Carl Roth</td>
+      <td>2475.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>STR (streptomycin)</td>
+      <td>Sigma</td>
+      <td>S6501-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TIC (ticarcillin)</td>
+      <td>Sigma</td>
+      <td>T5639-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R: A language and environment for statistical computing</td>
+      <td>https://www.R-project.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 All experiments were performed with P. aeruginosa UCBPP-PA14 (Rahme et al., 1995). Bacteria were grown in M9 minimal medium supplemented with glucose (2 g/L), citrate (0.58 g/L), and casamino acids (1 g/L) or on M9 minimal agar (1.5%) or Lysogeny broth (LB) agar. Antibiotics were added as indicated. Cultures and plates were incubated at 37°C. Experiments included biological replicates (initiated with independent clones of the bacteria, which were grown separately before the start of the experiment, or independent evolutionary lineages from the respective evolution treatments) and technical replicates (initiated from the same starting culture of the bacteria), as indicated below. For the experiments, treatment groups were run in parallel and randomized. Treatment names were masked in order to minimize observer bias.
 
-## Dose-response curves of ancestor
+### Dose-response curves of ancestor
 
 We used dose-response curves based on broth microdilution in order to determine antibiotic concentration causing inhibition level of 25% growth yield relative of untreated controls (inhibitory concentration 75 [IC75]) for the antibiotics azlocillin (AZL), carbenicillin (CAR), ciprofloxacin (CIP), cefsulodin (CEF), ceftazidime (CTZ), doripenem (DOR), gentamicin (GEN), and ticarcillin (TIC; see Supplementary file 1A for details on antibiotics). Briefly, bacteria were grown to exponential phase (OD600 = 0.08) and inoculated into 96-well plates (100 µL per well, 5 × 106 CFU/mL) containing linear concentration ranges close to MIC of the antibiotics in M9 medium. Antibiotic concentrations were randomized spatially. Bacteria were incubated for 12 hr after which optical density was measured in BioTek EON plate readers at 600 nm (OD600). We included six biological replicates and 1–2 technical replicates per concentration and antibiotic. Optical density was plotted against antibiotic concentration to obtain a dose-response curve. Model fitting was carried out using the package drc (Ritz et al., 2015) in the statistical environment R (R Development Core Team, 2020) and the fitted curve was used to predict IC75 values (Figure 1—figure supplement 1).
 
-## Evolution experiments
+### Evolution experiments
 
 We carried out evolution experiments with the various combination of antibiotics according to the design described previously (Roemhild et al., 2018). A total of 16 treatments were included (Figure 1B). Treatments 1–4 were constant environments consisting of the monotherapy (#1–3) and no drug control (#4). Treatments 5–10 were the regular switching treatments. They switched between the antibiotics in a regular predictable fashion, either every transfer (fast; #5–7) or every fourth transfer (slow; #8–10). Treatments 11–16 consisted of the random treatments that switched fast in a temporally irregular fashion. The setup was designed to test the effect of switching rate and temporal irregularity.
 
 Every treatment consisted of 12 replicate populations (initiated from six biological replicates × two technical replicates). All populations were started with an inoculum of 5 × 105 cells. Populations were propagated as 100 µL batch cultures in 96-well plates, with a transfer to fresh medium every 12 hr (transfer size 2% v/v). Antibiotic selection was applied at IC75 throughout. We monitored growth by OD600 measurements taken every 15 min through the entire evolution experiment (BioTek Instruments, USA; EON; 37°C, 180 rpm double-orbital shaking). Evolutionary growth dynamics were assessed by plotting the final OD achieved in every transfer (relative to final OD of no drug control; relative yield). Adaptation rate was calculated with a sliding window approach, where adaptation rate was the inverse of the transfer at which the mean relative yield of a sliding window of 12 transfers reached 0.75 for the first time. Cases of extinction were determined at the end of the experiment by counting wells in which no growth was observed after an additional incubation in antibiotic-free medium. Samples of the populations were frozen in regular intervals in 10% (v/v) DMSO and stored at −80°C for later analysis. The evolution experiments were carried out for a total of 96 transfers.
 
-## Resistance measurements of evolved populations
+### Resistance measurements of evolved populations
 
 We characterized populations frozen at transfers 12 and 48 in detail because they represented the early and late phases of the evolution experiment. One population originating from a single biological replicate was chosen per treatment and plated onto LB agar. After incubation at 37°C, 20 colonies from each population were picked randomly and frozen in 10% (v/v) DMSO and stored at −80°C. These colonies, termed isolates, were considered to be representative biological replicates for each population. We constructed dose-response curves for the isolates using for each evolved population one technical replicate per isolate and four technical replicates of the ancestral PA14 strain, as described above, for the antibiotics CAR, CEF, DOR, GEN, and CIP. The integral of this curve for every isolate was calculated and the integral of the ancestral PA14 control subtracted. The resulting value was resistance of the isolate on the said antibiotic. We identified subpopulations in any given population by hierarchical clustering of the resistance profiles, as previously described (Roemhild et al., 2018). Resistance of a population was calculated by averaging the resistance of the isolates. Resistance of the population on CAR, CEF, and DOR was added to obtain a single value for multidrug resistance.
 
-## Whole-genome sequencing
+### Whole-genome sequencing
 
 From the frozen isolates at transfer 12, we chose three isolates per population (i.e., three biological replicates per population) for whole-genome sequencing to determine possible targets of selection. Each resistance cluster in the population was represented in the sequenced isolates. For the DOR monotherapy, isolates from transfer 48 were also sequenced as no phenotypic resistance was observed at transfer 12. Frozen isolates were thawed and grown in M9 medium at 37°C for 16–20 hr. We extracted DNA using a modified CTAB protocol (von der Schulenburg et al., 2001) and sequenced it at the Competence Centre for Genomic Analysis Kiel (CCGA Kiel; Institute for Clinical Microbiology, University Hospital Kiel), using Illumina Nextera DNA Flex library preparation and the MiSeq paired-end technology (2 × 300 bp). Quality control on the resulting raw reads was performed with FastQC (Andrews, 2010) and low-quality reads were trimmed using Trimmomatic (Bolger et al., 2014). We then used MarkDuplicates from the Picard Toolkit (http://broadinstitute.github.io/picard/) to remove duplicate reads and mapped the remaining reads to the P. aeruginosa UCBPP-PA14 genome (available at http://pseudomonas.com/strain/download) using Bowtie2 and samtools (Langmead and Salzberg, 2012; Li et al., 2009). Variant calling was done using the GATK suite (Poplin et al., 2018) and the called variants were annotated using SnpEFF (Cingolani et al., 2012) and the Pseudomonas Genome Database (https://www.pseudomonas.com/). We removed all variants that were detected in the no drug control as they likely represent adaptation to the medium and not the antibiotic. The fasta files of all sequenced isolates are available from NCBI under the BioProject number: PRJNA704789.
 
-## Hysteresis testing
+### Hysteresis testing
 
 The presence of cellular hysteresis was tested, following the previously developed protocol (Roemhild et al., 2018). Bacterial cells were grown to exponential phase (OD600 = 0.08), diluted 10-fold, and treated with IC75 of the first antibiotic. In the treatments where the pretreatment did not require an antibiotic, none was added. These cells were allowed to incubate for 15 min at 37°C and 150 rpm (pretreatment). After this, the first antibiotic was removed by centrifugation and fresh medium containing IC75 of a second antibiotic was added. In cases where the main treatment did not require an antibiotic, fresh medium without an antibiotic was added. Bacteria were now incubated for 8 hr at 37°C and 150 rpm (main treatment). Bacterial count was monitored through the main treatment by spotting assays. We used three biological replicates per treatment and, for CFU counting, four technical replicates per biological replicate and treatment. Log10 CFU/mL were plotted against time to obtain time-kill curves (Figure 3B). The level of hysteresis was calculated as the difference between the antibiotic switch and only main treatment curves.
 
-## Agar dilution
+### Agar dilution
 
 We determined the MIC on M9 agar for the antibiotics CAR, CEF, and DOR according to the EUCAST protocol (https://doi.org/10.1046/j.1469-0691.2000.00142.x) that was modified to account for inoculum effect in our fluctuation assay setup. UCBPP-PA14 was grown in M9 medium at 37°C for 20 hr. 5 × 105 cells were taken from the stationary phase cultures and spread on M9 agar plates containing doubling dilutions of the antibiotic. Plates were incubated at 37°C for 20–24 hr. MIC was read as the lowest concentration at which no growth of bacteria was seen. MIC determination for each antibiotic was done for three biological replicates (no additional technical replication).
 
-## Fluctuation assay
+### Fluctuation assay
 
 We measured resistance rates on the three β-lactams using the classic fluctuation assay (Luria and Delbrück, 1943). Briefly, a single colony of UCBPP-PA14 was inoculated to 10 mL M9 and incubated at 37°C, 150 rpm for 20 hr. This primary culture was used to start 30 parallel cultures all having a starting concentration of 102 CFU/mL. The parallel cultures were considered biological replicates and incubated at 37°C, 150 rpm for 20 hr. Thereafter, 5 × 105 cells were plated onto MIC plates of CAR, CEF, and DOR. The plates were incubated for 40 hr at 37°C. The resulting mutant colonies were taken and patched on identical antibiotic MIC plates to ensure genetic resistance. Colonies that grew after patching were counted. We used counts from all 30 cultures to estimate resistance rate on each antibiotic using the package rSalvador (Zheng, 2017) in R (R Development Core Team, 2020).
 
-## Patching assay
+### Patching assay
 
-We assessed the extent of cross-resistance associated with each β-lactam using the mutants obtained from the fluctuation assay. Sixty mutants with genetic resistance to a given β-lactam were considered biological replicates and patched onto MIC plates of the two other β-lactams. The patched plates were incubated for 16–20 hr at 37°C. If the mutant grew at MIC of the second β-lactam, it was counted as resistant. If it did not grow at the MIC of the second β-lactam, it was counted as susceptible. For each switch between two drugs, the fraction of cross-resistant mutants was calculated asNumberofmutantsthatgrewondrugBTotalmutantsisolatedondrugA
+We assessed the extent of cross-resistance associated with each β-lactam using the mutants obtained from the fluctuation assay. Sixty mutants with genetic resistance to a given β-lactam were considered biological replicates and patched onto MIC plates of the two other β-lactams. The patched plates were incubated for 16–20 hr at 37°C. If the mutant grew at MIC of the second β-lactam, it was counted as resistant. If it did not grow at the MIC of the second β-lactam, it was counted as susceptible. For each switch between two drugs, the fraction of cross-resistant mutants was calculated as
 
-## Statistical analysis for cross-resistance on secondary antibiotic
+$$
+\frac{NumberofmutantsthatgrewondrugB}{TotalmutantsisolatedondrugA}
+$$
+
+### Statistical analysis for cross-resistance on secondary antibiotic
 
 To test whether the secondary antibiotic had an influence on the degree of cross-resistance of the mutants obtained from the fluctuation assay, we conducted a Fischer’s exact test followed by post hoc comparisons using the R package rcompanion (Mangiafico, 2016). The obtained p-values were then corrected for multiple testing using false discovery rate.
 
-## Statistical analysis of adaptive growth dynamics
+### Statistical analysis of adaptive growth dynamics
 
 To test whether main treatment types were associated with altered dynamics of adaptation in non-extinct populations, we analyzed the trajectories of relative growth yield (as plotted in Figure 1E and Figure 2A) of drug-treated populations using a GLM, including sequence (##1–16) and transfer as fixed factors and preculture and replicate population as nested random factors (see Supplementary file 1B for details). Comparisons between main treatment groups were performed using pairwise post hoc tests and z statistics. All p-values were corrected for multiple testing using false discovery rate. The analysis was performed separately for the three time phases ‘early’ (transfers 2–12), ‘middle’ (transfers 13–48), and ‘late’ (transfers 49–96) of the experiment, thus fulfilling the model assumption of response linearity. All statistical analyses were carried out in the statistical environment R (R Development Core Team, 2020).
 
-## Statistical analysis of evolved multidrug β-lactam resistance
+### Statistical analysis of evolved multidrug β-lactam resistance
 
 To test whether evolved populations displayed distinct multidrug β-lactam resistance depending on their main treatment type, we analyzed multidrug β-lactam resistance of evolved isolates – the sum of resistance values against CAR, CEF, and DOR (as plotted in Figure 3B, C) – using a GLM. The model included sequence (##1–16) as fixed factor and replicate population as nested random factor (see Supplementary file 1C for detailed information). Comparisons between main treatment groups were performed using pairwise post hoc tests and z statistics. All p-values were corrected for multiple testing using false discovery rate. The analysis was performed separately for the ‘early’ (after transfers 12) and ‘middle’ (transfer 48) time points of the evolution experiment using the R statistical environment (R Development Core Team, 2020).
 
-## Statistical analysis of treatment potency predictors
+### Statistical analysis of treatment potency predictors
 
 To test whether our experimental (switching rate and temporal irregularity) and biological predictors (hysteresis, probability of direct resistance, and cross effects) were able to explain the variability in our evolutionary responses (extinction, rate of growth adaptation, and multidrug resistance) we carried out a GLM analysis. Values per treatment protocol for the biological predictors were calculated and the GLM analysis then carried out in R (R Development Core Team, 2020). We used the lm and anova commands and the main effects model: response ~ switching rate + irregularity for the experimental predictors and response ~ hysteresis + spontaneous resistance + mutant fraction cross-resistant for the biological predictors.

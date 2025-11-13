@@ -51,23 +51,265 @@ To obtain reliable and comparable AIRR-seq data, the methods for performing AIRR
 
 In the past decade, multiple molecular biology protocols and approaches have been developed by academic and industrial investigators, rendering comparisons among studies difficult. Moreover, experimental and analytical protocols are highly complex and therefore prone to intra- and inter-experimental variability (Barennes et al., 2021; Liu et al., 2016; Rosati et al., 2017; Bashford-Rogers et al., 2014). AIRR-seq can be performed either on gDNA or cDNA from multiple T/B cell populations (bulk sequencing) or on individual cells (single-cell sequencing). The starting material and sequencing method used depend on the application, as each has advantages and disadvantages (Table 1). The availability of commercial kits can be helpful, since they are produced following standards and rigorous quality control, thus offering standardized reagents and protocols across laboratories. Currently, available commercial kits include gDNA-based methods (e.g., Adaptive Biotechnologies, iRepertoire) as well as mRNA-based methods that use cDNA (e.g., Illumina, Takara Bio, iRepertoire) for bulk sequencing. Mainly mRNA-based commercial methods (e.g., 10X Genomics, Takara Bio, HiFiBio) are used for single-cell analysis, which can provide sequences for full receptors or antibodies. This is an important consideration as the determination of the isotype for IG requires a full or partial sequence of the constant region. Single-cell approaches are further helping in the detection of clonotypes because they provide both paired chains and potentially allow full-length cDNA sequencing (Stubbington et al., 2017). The fidelity of sequence is an additional factor to consider. Unique molecular identifiers (UMI) consisting of random stretches of 8–12 nucleotides are incorporated into oligonucleotides that are used to generate cDNA from mRNA, such that statistically each cDNA molecule contains a unique sequence. Analysis of sequences that share the same UMI is used to generate a consensus sequence, greatly reducing sequencing errors (Shugay et al., 2014). In contrast, multiplex PCR approaches can be associated with artifacts arising from primer competition or off-target primer binding. Although this favors RACE-PCR when considering mRNA-based methods, gDNA-based multiplex PCR may offer higher fidelity since it does not rely on reverse transcription (reverse transcriptase enzymes have higher error rates than DNA polymerases [Ellefson et al., 2016; Holland et al., 1982]). Finally, cost may influence the choice of a particular protocol. There are many factors that contribute to the cost of AIRR-seq data generation. For example, the cost of sequencing, the sequencing depth, and the number of cells analyzed per sample are variable; also, the choice between commercial kits and ‘homebrew’ methods will influence costs. In general, gDNA analysis is the most cost-effective, because it requires the lowest sequencing depth with the largest representation of cells per sample, whereas single-cell analysis is on the opposite end of the scale, with bulk cDNA sequencing in the middle.
 
+**Table 1.**
+ Current AIRR-seq methods and their typical use(s).Bulk gDNA, bulk cDNA, and single-cell cDNA-based sequencing methods are compared with respect to their general features, uses, methods, and potential issues. Each is ranked using a semi-quantitative scale (from ‘+++” for best to ‘-” for worst or non-existent).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Bulk gDNA sequencing</th>
+      <th>Bulk cDNA sequencing</th>
+      <th>Single-cell cDNA sequencing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">General Features</td>
+      <td>PCR method</td>
+      <td>Multiplex</td>
+      <td>Multiplex and 5' RACE</td>
+      <td>Multiplex and 5' RACE</td>
+    </tr>
+    <tr>
+      <td>Cell number</td>
+      <td>102–106</td>
+      <td>102–106</td>
+      <td>102–103</td>
+    </tr>
+    <tr>
+      <td>Sample throughput</td>
+      <td>Low-high</td>
+      <td>Low-moderate</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Length of receptor sequences</td>
+      <td>100–600 bp</td>
+      <td>150–600 bp</td>
+      <td>700–800 bp</td>
+    </tr>
+    <tr>
+      <td>Availability of commercial kits and service providers</td>
+      <td>++</td>
+      <td>+++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="15">Uses</td>
+      <td>Gene usage</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>CDR3 length and properties</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Somatic hypermutation (for IG)</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Repertoire diversity</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+/-</td>
+    </tr>
+    <tr>
+      <td>Clonal expansion</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Clonal evolution</td>
+      <td>++</td>
+      <td>+++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>Tracking of clonotypes</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Clinical use (e.g., MRD detection)</td>
+      <td>++</td>
+      <td>+/-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Unbiased detection of unproductive rearrangements</td>
+      <td>++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Inference of germline</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+/-</td>
+    </tr>
+    <tr>
+      <td>Determination of constant gene</td>
+      <td>-</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Structural annotation</td>
+      <td>+/-</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Linkage of both antigen receptor chains</td>
+      <td>+/-</td>
+      <td>+/-</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>Direct combination of AIRR-seq with single-cell immunophenotype (e.g., transcriptome or cell surface protein expression)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>Characterization of clonotype full antigen receptor/Functional testing</td>
+      <td>-</td>
+      <td>+/-</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rare clonotype detection</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+/-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">Methods</td>
+      <td>Simplicity of workflow (library preparation)</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Cost for library preparation commercial kits (per sample)</td>
+      <td>Low</td>
+      <td>Moderate</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Fidelity in sequences</td>
+      <td>Moderate</td>
+      <td>High</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Molecular barcoding (correcting PCR/sequencing error)</td>
+      <td>+/-</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="5">Potential Issues</td>
+      <td>V-gene amplification bias</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+/-</td>
+    </tr>
+    <tr>
+      <td>V-gene annotation issues</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>PCR and sequencing error</td>
+      <td>++</td>
+      <td>+</td>
+      <td>+/-</td>
+    </tr>
+    <tr>
+      <td>Difficulty with translation of copy number to cells</td>
+      <td>+/-</td>
+      <td>++</td>
+      <td>+/-</td>
+    </tr>
+    <tr>
+      <td>Degradation of template</td>
+      <td>+</td>
+      <td>++</td>
+      <td>++</td>
+    </tr>
+  </tbody>
+</table>
+
+_bp = base pairs; CDR3 = complementarity determining region 3; MRD = minimal residual disease; RACE = rapid amplification of cDNA ends; V = variable._
+
 Several considerations should be taken into account when designing and planning an AIRR-seq experiment. In addition to the large number of different methods and protocols, other factors including budgetary constraints, timelines, sample types, and processing are also important. Given the diversity of AIRR-seq workflows, comparisons between different data sets are challenging or even impossible. Standards and controls are needed for optimal AIRR-seq data harmonization, interpretation, and sharing (Rubelt et al., 2017; Breden et al., 2017; Vander Heiden et al., 2018). This need led to the formation in 2015 of a grassroots community of scientists and other interested parties, known as the AIRR Community (https://www.antibodysociety.org/the-airr-community/). The objective of the Biological Resources Working Group (WG) within the AIRR Community is to coordinate the assessment and development of AIRR-seq controls, ultimately providing the scientific community with controls and standards for the generation, harmonization, and rigorous comparison and interpretation of AIRR-seq data. In order to recommend biological standards that are needed and to prioritize their development, a written survey was developed asking participants about the use of and need for controls for AIRR-seq experiments. The survey gathered information on participants’ research interests, sample types, sequencing methodologies, currently available controls, and desired controls. In addition to the survey results, different AIRR-seq methods and controls were also gleaned from the literature, and finally, the WG also invited scientists with unpublished research on controls for their input. These three sources of data were then used to provide a comprehensive overview of sequencing methods, technical issues, current standards, and potential priorities for the development of future standards. Here we describe the progress of the Biological Resources WG of the AIRR Community, its information collection and proposed strategies to define, develop, and use AIRR-seq standards.
 
-## Biological controls in AIRR-seq experiments
+### Biological controls in AIRR-seq experiments
 
-## AIRR Community survey: Overview and respondent demographics
+#### AIRR Community survey: Overview and respondent demographics
 
 To address the use, needs, and requirements for AIRR-seq controls and standards, we designed and disseminated a questionnaire to researchers in the AIRR Community, as well as to users of IMGT, the international ImMunoGeneTics information system (http://www.imgt.org) (Lefranc, 2014). The questionnaire was composed of 4 sections and included 28 questions, with tick-box predefined answers and free-text options allowing for participants’ personalized answers (Supplementary material). After 6 months, 105 responses were recorded, including one incomplete response from a participant who neither produces nor analyzes AIRR-seq data. Three respondents participated twice, with consistent answers and same name and contact information, therefore only one completed form was considered for each. Answers from 101 remaining participants originated mainly from North America and Europe (Figure 1A) and were further analyzed. At the time of the survey, 96% of respondents were involved in AIRR-seq studies and 4% had plans to perform AIRR-seq studies in the future. Of the respondents, 92% were engaged in human studies, 48% in mouse studies, and 38% in the use of AIRR-seq to study other species or synthetic molecules (e.g., from phage-displayed antibody libraries; Figure 1B). Approximately half of the respondents focused exclusively on IG while a quarter each studied TR and IG or TR alone (Figure 1C). Several respondents were interested in many different topics (Figure 1D and Figure 1—figure supplement 1), with their fields of interest dominated by ‘immune system diseases’ including infection, autoimmune disease, and cancer. Furthermore, the survey results clearly indicate an interest among the majority of respondents in developing bioinformatic tools for the analysis of AIRR-seq data, followed by major interests in other research areas such as vaccinology, immune repertoire homeostasis, immunotherapy, antibody engineering, hematology, and aging (Figure 1D). In addition, respondents with bioinformatic skills tended to be those who had broader research interests (Figure 1—figure supplement 1). Finally, 89/101 of survey respondents indicated an interest in using AIRR-seq to either track clonotypes over time or across samples, whereas 88/101 were interested in identifying highly expanded clonotypes, 87/101 on analyzing diversity, and 83/101 on studying clonal selection. In conclusion, participants in this survey came from diverse backgrounds, had wet and dry bench expertise, and had a breadth of research interests covering different aspects of AIRR-seq studies.
 
-## Survey results on sequencing methodologies used
+![Figure 1.](https://cdn.elifesciences.org/articles/66274/elife-66274-fig1-v1.jpg)
+
+**Figure 1.:** (A) Map with geographic distribution of survey participants. (B) Histogram showing the principal studied organisms among the participants. The ‘Other’ category includes rat, ferret, rabbit, goat, pig, canine, bovis, cattle, chicken, fish, teleost, salmon, zebrafish, other fish species, transgenic animals. (C) Venn diagram representing the percentage of participants according to their interest in AIRR template type. (D) Pie-chart representing the distribution of survey participants according to their research interest(s). Immune system diseases and other categories are described in more detail in the bar plots (right and left). Numbers of respondents for each category are shown next to the bars.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66274/elife-66274-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Each column is a participant group and the colors represent the area studied (blue: area studied, white: area not studied). For each heatmap, areas are ordered by decreasing frequency depending on the number of participants in each group. Information about the number of areas per participant and bioinformatic skills are added below (Chi2: p=0.0064).
+
+### Survey results on sequencing methodologies used
 
 Whereas 91% (92/101) questionnaire respondents commonly perform bulk sequencing experiments, 67% (68/101) combine bulk sequencing with the use of single-cell technologies. Only 8% of respondents focused exclusively on single-cell sequencing or phage display technologies only. With respect to the input biological material used in bulk sequencing, the majority of participants (83%) preferred to sequence long amplicons that covered the entire (or almost the entire) V-(D)-J region and part of the C region despite the associated higher sequencing cost per read and restrictions on the type of compatible sequencer. AIRR-seq researchers mainly used mRNA for cDNA sequencing (69%), while both mRNA and gDNA were used by 25%, and gDNA alone by 6% of respondents. Figure 2A shows that the majority of survey respondents performing bulk sequencing used multiplex PCR or the template-switching approach with a considerable number of AIRR-seq researchers using both methods. For those using either approach, mRNA was still the preferred starting material. In addition, UMIs were more commonly used with template switching than multiplex PCR approaches (Figure 2B). The association of UMIs with template switching methods is likely related to the template choice, since UMIs are not easy to use with gDNA-based templates, due to the incorporation of the UMI into the amplified products; nevertheless, two participants in the survey reported using UMIs with gDNA (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66274/elife-66274-fig2-v1.jpg)
+
+**Figure 2.:** (A) Venn diagram representing the most important molecular approaches used and their usage and sharing among participants. Numbers of respondents in each of the four main categories are shown in parentheses. (B) Bar plots representing biological material used and molecular barcoding proportion for the two major molecular biology approaches (multiplex PCR and template switching). Only the answers of respondents who used one technology exclusively are shown (Multiplex PCR: n = 29; Template switching: n = 10). UMI = unique molecular identifier.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66274/elife-66274-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Search query (left panel): (‘single cell’[Title/Abstract] OR ‘10X’[Title/Abstract]) AND (‘VDJ’[Title/Abstract] OR ‘TCR’[Title/Abstract] OR ‘BCR’[Title/Abstract] OR ‘b cell receptor’[Title/Abstract] OR ‘t cell receptor’[Title/Abstract] OR ‘repertoire’[Title/Abstract]) Search query (right panel): (‘rna-seq’[Title/Abstract] OR ‘rna sequencing’[Title/Abstract]) AND (‘VDJ’[Title/Abstract] OR ‘TCR’[Title/Abstract] OR ‘BCR’[Title/Abstract] OR ‘b cell receptor’[Title/Abstract] OR ‘t cell receptor’[Title/Abstract] OR ‘repertoire’[Title/Abstract]).
 
 Altogether, these initial results suggest that among survey respondents bulk sequencing on mRNA and gDNA are the most frequently used methods. However, the literature reflects increasing use of single-cell approaches, including the computational construction of IG or TR from RNA-sequencing (RNA-seq) libraries (Figure 2—figure supplement 1) and the combined use of target capture plus single-cell RNA-seq (e.g., 10X Genomics’ 5′ end kits, etc.).
 
 To gain insight into which standards should be prioritized for development and sharing with the scientific community, we asked survey participants about the standards they currently use and about the types of standards they would like to use. Based on the results, we concentrate below on potential controls for bulk analysis, as this approach is being used by the majority of the respondents (91%) and because the development of standards for single-cell applications is somewhat distinct.
 
-## Survey results on controls used and desired controls
+### Survey results on controls used and desired controls
 
 Most respondents (88%) were interested in using standards or controls in AIRR-seq experiments. The 47 respondents who already use controls (n = 47) did so for protocol development (12/47 = 26%), everyday use (7/47 = 15%), or for both (15/47 = 32%), with the remaining (13/47 = 28%) not indicating their specific application. Commercial controls were used by 11, and homebrew controls were used by 23 participants, with 3 people using both and 16 not specifying their source. Figure 3A indicates that the most commonly used homebrew controls were cell lines or pooled-cell preparations. Respondents who did not use controls (black bars) were also asked how they might want to use controls. Figure 3B depicts the community survey responses to these questions.
 
@@ -77,7 +319,70 @@ Most respondents (88%) were interested in using standards or controls in AIRR-se
 
 In summary, the survey, as well as further discussions within the AIRR Biological Resources WG, identified major concerns arising from different steps in the AIRR-seq workflow (Table 2, left and middle columns). Additionally, based on these identified issues, the right column of Table 2 describes potential controls to address them. These controls are described in more detail in the subsequent sections of the manuscript.
 
-## Current concepts in the use of biological standards for RNA-seq experiments
+**Table 2.**
+ Concerns and expected errors introduced during AIRR-seq workflows and possible controls to detect them.A typical workflow consists of 5 steps: Sample collection > Extraction > Amplification > Sequencing > Analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Concern</th>
+      <th>Mechanism(s)</th>
+      <th>Example of potential controls</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequence errors</td>
+      <td>Enzyme errors (RT, DNA polymerase); Sequencing errors</td>
+      <td>UMIs for bioinformatic error correction; Spike-in controls with defined sequences to evaluate error rates</td>
+    </tr>
+    <tr>
+      <td>Sensitivity</td>
+      <td>Enzymatic inefficiencies (RT or PCR conditions/polymerase); Sample collection size (e.g., cell input number, purity); Sequencing depth</td>
+      <td>Spike-in controls (synthetic or cellular) at known concentrations</td>
+    </tr>
+    <tr>
+      <td>Specificity</td>
+      <td>Enzyme bias (RT, DNA polymerase); Analysis pipelines (annotation, error correction)</td>
+      <td>Spike-in controls with defined sequences to identify overall V/D/J gene amplification bias</td>
+    </tr>
+    <tr>
+      <td>Detection of contamination</td>
+      <td>Bench-level cross contamination (sample mixing or PCR contamination) or barcode jumping during sequencing</td>
+      <td>Unique spike-in (synthetic) for each sample; UDIs for sequencing barcode crosstalk</td>
+    </tr>
+    <tr>
+      <td>Sample quality control</td>
+      <td>Sample collection or nucleic acid purification</td>
+      <td>Identified by spectroscopy or agarose electrophoresis</td>
+    </tr>
+    <tr>
+      <td>Evaluate batch effects</td>
+      <td>Subtle differences introduced at all stages of the workflow</td>
+      <td>Spike-in controls (synthetic or cellular); Parallel biological (clonal or complex) sample</td>
+    </tr>
+    <tr>
+      <td>Linearity/accuracy of clonotype quantification</td>
+      <td>Enzymatic inefficiencies (RT or PCR conditions); Analytical error correction</td>
+      <td>Spike-in controls (synthetic or cellular) at known concentrations</td>
+    </tr>
+    <tr>
+      <td>Reproducibility/Batch effects</td>
+      <td>All stages</td>
+      <td>Spike-in controls (synthetic or cellular); Parallel biological (clonal or complex) sample; Comparison of replicate amplifications of the same sample; Comparison of sequences generated on the same sample in different sequencing runs</td>
+    </tr>
+    <tr>
+      <td>Data processing</td>
+      <td>Database/annotation limitations; filtering; error correction; collapsing/consensus algorithms</td>
+      <td>Spike-in controls (synthetic or cellular); Parallel biological (clonal or complex) sample</td>
+    </tr>
+  </tbody>
+</table>
+
+_RT, reverse transcriptase; UMIs, unique molecular identifiers; UDIs, unique dual indices._
+
+### Current concepts in the use of biological standards for RNA-seq experiments
 
 To prioritize the development of community-wide standards for AIRR data, we turned to examples of community-wide standards in the NGS space. Several such standards have been developed and are actively used, for example, the External RNA Control Consortium (ERCC) spike-in controls and the Microarray Quality Control (MAQC) RNA standards. Both of these standards were generated through broad collaborations of stakeholders including the United States government, industry, and academic researchers (Reid and External RNA Controls Consortium, 2005; Su et al., 2014).
 
@@ -87,7 +392,7 @@ The MAQC RNA standards were not generated as NGS controls initially, but instead
 
 In addition, UMIs and unique dual indices (UDIs) have been proposed in the RNA-seq field (https://perma.cc/AMB4-WC86) (Kircher et al., 2012) to control and correct for sequencing errors, as well as sequencing index crosstalk.
 
-## Current practices for controls in AIRR-seq experiments
+### Current practices for controls in AIRR-seq experiments
 
 While the standards described above cannot be directly applied to AIRR-seq experimentation, they can serve as a blueprint for the development of standards. In Table 2 (right column), we highlight different possible approaches to address the concerns of the AIRR Community. These approaches closely resemble the general standards described above, using spike-in controls or well-characterized biological samples, including UMIs or UDIs. As described below, AIRR-seq researchers have already initiated some studies to address the use of such controls.
 
@@ -103,7 +408,7 @@ Mixed-cell populations and cell lines can also be used as workflow controls, as 
 
 The second type of control used by the Euroclonality Consortium (Brüggemann et al., 2019) is designed to evaluate assay sensitivity and linearity within each library. This in-parallel control consists of a gDNA sample obtained from 59 human B/T lymphoid cell lines with a total of 46 well-defined rearrangements mixed together in different ratios and added to each processed sample. An advantage of using cell lines as in-parallel controls is that their gene rearrangements are defined and thus easily identified; theoretically allowing for the conversion of reads into cell numbers and permitting relative quantification of template abundance. In practice, however, the use of in-parallel amplification controls can be very challenging, and requires careful interpretation. For example, in samples with poor gDNA quality or low template abundance, the control templates may outcompete the test sample. The depth of sequencing and relative amounts of sample input can affect the measured abundance (Barennes et al., 2021; Chaara et al., 2018). An additional disadvantage is that cell lines do not model a fully diverse repertoire, only a fraction of V and J gene combinations are represented by the cell lines, and thus primer performance and bias, especially between samples, are not fully controlled.
 
-## Discussion and future work
+### Discussion and future work
 
 AIRR-seq experiments are becoming increasingly commonplace, in both the research and clinical settings. In contrast, the development of controls and best practices for assay validation, interpretation and standardization have lagged behind. Here, the members of the AIRR Community Biological Resources WG have summarized the current practice regarding the use of standards and controls among its members as well as among other international AIRR-seq experts and in the literature. We also have identified differences in the types of standards and controls that are used among users. Some of these differences depend on the sample type (fresh vs. fixed cells), the starting material (single cell vs. bulk), the template (mRNA vs. gDNA), as well as the quality and quantity of the relevant cells and templates. In addition, the selection of controls is influenced by the amplification method, with single cell and mRNA-based methods relying more heavily on cellular and molecular barcoding approaches, for example. Last, but certainly not least, the downstream application of the assay can profoundly influence the choice and prioritization of controls. In some cases, assays need to be sensitive and specific (e.g., a clinical grade assay that detects minimal residual disease) whereas in others quantitation (e.g., clonal size analysis for monitoring clonal expansions) or unbiased amplification (e.g., assessment of repertoire skewing during an immune response) may be more important.
 
